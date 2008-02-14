@@ -14,9 +14,11 @@ be copy-and-pasted over into the new wiki:
 
 ## More Resources
 
-\* Discussions on the
-\[<https://lists.sourceforge.net/lists/listinfo/mixxx-devel>
-mixxx-devel\] mailing list are the basis for much of the content here.
-\* The main \[<http://mixxx.sf.net> mixxx website\]. \* The Sourceforge
-\[<http://www.sf.net/projects/mixxx/> project page\]. \* The IRC
-Channel: \#mixxx on \[<http://freenode.net/> Freenode\].
+  - Discussions on the
+    [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+    mailing list are the basis for much of the content here.
+  - The main <http://www.mixxx.org Mixxx website>.
+  - Our Launchpad \[<http://www.launchpad.net/mixxx/> project page\] and
+    \[[https://bugs.launchpad.net/mixxx/|bug](https://bugs.launchpad.net/mixxx/%7Cbug)
+    tracker\].
+  - The IRC Channel: \#mixxx on \[<http://freenode.net/> Freenode\].

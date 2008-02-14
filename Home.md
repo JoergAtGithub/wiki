@@ -17,8 +17,7 @@ be copy-and-pasted over into the new wiki:
   - Discussions on the
     [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     mailing list are the basis for much of the content here.
-  - The main <http://www.mixxx.org Mixxx website>.
-  - Our Launchpad \[<http://www.launchpad.net/mixxx/> project page\] and
-    \[[https://bugs.launchpad.net/mixxx/|bug](https://bugs.launchpad.net/mixxx/%7Cbug)
-    tracker\].
-  - The IRC Channel: \#mixxx on \[<http://freenode.net/> Freenode\].
+  - The main [Mixxx website](http://www.mixxx.org).
+  - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
+    [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).

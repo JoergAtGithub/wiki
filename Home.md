@@ -8,9 +8,27 @@ hand.
 If you'd like to help, here's a running list of the pages that need to
 be copy-and-pasted over into the new wiki:
 
-## User Pages
+## User Documentation
 
-## Developer Pages
+  - [Hardware Compatibility](Hardware%20Compatibility)
+  - [FAQ](FAQ)
+  - [Tutorials](Tutorials)
+
+<!-- end list -->
+
+``` 
+* 
+```
+
+## Developer Documentation
+
+  - [Compiling on Linux](Compiling%20on%20Linux)
+  - [Compiling on Windows](Compiling%20on%20Windows)
+  - [Compiling on OS X](Compiling%20on%20OS%20X)
+  - [Submitting Patches](Submitting%20Patches)
+  - [Coding Guidelines](Coding%20Guidelines)
+  - [Feature Discussion](Feature%20Discussion)
+  - [UI/MIDI Controls and Names](UI/MIDI%20Controls%20and%20Names)
 
 ## More Resources
 

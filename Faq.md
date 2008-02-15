@@ -3,7 +3,7 @@
 If you've got a question that's not answered here, please post in the
 [forums](http://www.mixxx.org/forums)\!
 
-### What's the best hardware DJ controller to use with Mixxx?
+## What's the best hardware DJ controller to use with Mixxx?
 
 The upcoming 1.6.0 release will contain excellent support for the
 [Hercules DJ Console
@@ -17,7 +17,7 @@ the same control surface, but without the built-in soundcard.
 A complete list of tested hardware devices is available on the
 [Compatibility](Hardware) page.
 
-### Does Mixxx support multiple soundcards?
+## Does Mixxx support multiple soundcards?
 
 **Update:** Mixxx 1.6.0 includes support for multiple soundcards,
 meaning you can have the headphone output coming out of one soundcard
@@ -32,7 +32,7 @@ the "front" output as your master output, and plug your headphones into
 the "rear" output for cueing. This is what the majority of Mixxx users
 do.
 
-### Is it possible to use Mixxx with an external mixer?
+## Is it possible to use Mixxx with an external mixer?
 
 Yes. The trick is to force Mixxx's master output to playback the
 left/top track, and the headphone output to playback the right/bottom
@@ -46,7 +46,7 @@ use the headphone cue on the mixer as well as it's crossfader.) Using an
 external mixer is also described briefly in the [Threadbox
 tutorial](Threadbox%20Tutorial#Using_an_External_Mixer_or_MIDI_Device).
 
-### No soundcards appear in the preferences dialog - How can I fix this?
+## No soundcards appear in the preferences dialog - How can I fix this?
 
 When no soundcards/devices appear in the sound preferences dialog, it
 usually means that another application is using your soundcard(s). This
@@ -58,18 +58,18 @@ latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
 and "sudo fuser -v /dev/snd/\*" will show you the list of applications
 currently using your soundcards.
 
-### Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
+## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several
 users. This is due to some funky OpenGL code inside QT3. Fortunately,
 Mixxx 1.6.0 no longer uses QT3 and reportedly works very well with
 Beryl/Compiz.
 
-### What's vinyl control all about? How do I use it?
+## What's vinyl control all about? How do I use it?
 
 See the [Control](Vinyl) page.
 
-### Does Mixxx modify the files or structure of my library?
+## Does Mixxx modify the files or structure of my library?
 
 No, Mixxx does not write to or move any files in your library. It's safe
 to use Mixxx with your iTunes library - Mixxx it will not change

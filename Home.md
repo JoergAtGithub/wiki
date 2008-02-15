@@ -32,6 +32,13 @@ be copy-and-pasted over into the new wiki:
   - [Feature Discussion](Feature%20Discussion)
   - [UI/MIDI Controls and Names](UI/MIDI%20Controls%20and%20Names)
 
+### Artist Documentation
+
+  - [Creating Skins](Creating%20Skins)
+  - [Skin Guidelines](Skin%20Guidelines)
+  - [Skin Colour Scheme
+    Architecture](Skin%20Colour%20Scheme%20Architecture)
+
 ## More Resources
 
   - Discussions on the

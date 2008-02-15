@@ -31,6 +31,10 @@ be copy-and-pasted over into the new wiki:
   - [Coding Guidelines](Coding%20Guidelines)
   - [Feature Discussion](Feature%20Discussion)
   - [UI/MIDI Controls and Names](UI/MIDI%20Controls%20and%20Names)
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format)
+  - [Creating backtraces](Creating%20backtraces)
+  - [MixxxScript](MixxxScript)
 
 ## Artist Documentation
 

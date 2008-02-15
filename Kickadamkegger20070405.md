@@ -1,3 +1,5 @@
+# Kick Adam Kegger 20070405
+
 Here's a decent shot of our gear with Mixxx on the laptop. We used a
 beta of Mixxx with vinyl control support at this gig, as you can see
 from the Final Scratch vinyls:

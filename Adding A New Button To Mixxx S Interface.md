@@ -12,23 +12,23 @@ on Windows, or **/usr/share/mixxx/skins/outlineSmall** on Linux.
 
 Paste the following code in after "**\</Background\>**":
 
-\<PushButton\>
-
-    <Tooltip>n00b button</Tooltip>
-    <NumberStates>1</NumberStates>
-    <State>
-     <Number>0</Number>
-     <Pressed>sync-on-Ch1.png</Pressed>
-     <Unpressed>sync-off-Ch1.png</Unpressed>
-    </State>
-    <Pos>56,181</Pos>
-    <Connection>
-     <ConfigKey>[[Channel1]],noob</ConfigKey>
-     <EmitOnDownPress>true</EmitOnDownPress>
-     <ButtonState>LeftButton</ButtonState>
-    </Connection>
-
-\</PushButton\>
+``` 
+ <PushButton>
+  <Tooltip>n00b button</Tooltip>
+  <NumberStates>1</NumberStates>
+  <State>
+   <Number>0</Number>
+   <Pressed>sync-on-Ch1.png</Pressed>
+   <Unpressed>sync-off-Ch1.png</Unpressed>
+  </State>
+  <Pos>56,181</Pos>
+  <Connection>
+   <ConfigKey>[[Channel1]],noob</ConfigKey>
+   <EmitOnDownPress>true</EmitOnDownPress>
+   <ButtonState>LeftButton</ButtonState>
+  </Connection>
+ </PushButton>
+```
 
 \<Add explanation of what the above does here\>
 
@@ -42,37 +42,49 @@ thread-safe way of reading and storing data/states, and as you will see,
 they're very easy to use.
 
 Open up **enginebuffer.cpp**, and find the lines (near line 64) that
-say: // Play button playButton = new ControlPushButton(ConfigKey(group,
-"play"), true); connect(playButton, SIGNAL(valueChanged(double)), this,
-SLOT(slotControlPlay(double))); playButton-\>set(0);
+say:
+
+``` 
+ // Play button
+ playButton = new ControlPushButton(ConfigKey(group, "play"), true);
+ connect(playButton, SIGNAL(valueChanged(double)), this, SLOT(slotControlPlay(double)));
+ playButton->set(0);
+```
 
 After these lines, add:
 
-// n00b button noobButton = new ControlPushButton(ConfigKey(group,
-"noob"), true); connect(noobButton, SIGNAL(valueChanged(double)), this,
-SLOT(slotControlNoob(double))); noobButton-\>set(0);
+``` 
+ // n00b button
+ noobButton = new ControlPushButton(ConfigKey(group, "noob"), true);
+ connect(noobButton, SIGNAL(valueChanged(double)), this, SLOT(slotControlNoob(double)));
+ noobButton->set(0);
+```
 
 Now, scroll down to the end of the file, and let's create the event
 handler for the button press. Paste in the following code:
 
-void EngineBuffer::slotControlNoob(double) {
-
 ``` 
-   // Pops up a messagebox when the button is pressed
-   if (noobButton->get()==1.)
-      QMessageBox::warning(0, "Mixxx Warning","n00b button pressed!");
+ void EngineBuffer::slotControlNoob(double)
+ {
+     // Pops up a messagebox when the button is pressed
+     if (noobButton->get()==1.)
+        QMessageBox::warning(0, "Mixxx Warning","n00b button pressed!");
+ }
 ```
 
-}
+You may also need to add the following to the top of the file:
 
-You may also need to add the following to the top of the file: \#include
-\<qmessagebox.h\>
+``` 
+ #include <qmessagebox.h>
+```
 
 Lastly, let's add the prototypes for the function that we just created
 to **enginebuffer.h**. Open up **enginebuffer.h** and paste in the
 following code, underneath the line that says "public slots:":
 
-void slotControlNoob(double);
+``` 
+ void slotControlNoob(double);
+```
 
 ## Step 3 - Recompile Mixxx
 
@@ -87,4 +99,8 @@ the skin.xml file, and see if you can figure out how to integrate a new
 ControlPotmeter into enginebuffer.cpp.
 
 'Hint' In order to read the value from the a ControlObject, you just
-need to do something like: float value = potmeter-\>get();
+need to do something like:
+
+``` 
+ float value = potmeter->get();
+```

@@ -1,4 +1,8 @@
-# Carleton CS Bash, April 12th 2007
+# Convergence, October 13th 2006
 
-[[/media/events2007/haz1.jpg|]] [[/media/events2007/haz2.jpg|]]
-[[/media/events2007/haz3.jpg|]] [[/media/events2007/haz4.jpg|]]
+[[/media/events2006/convergence1.jpeg|]] Blurred picture of mixxx in use.
+
+[[/media/events2006/convergence2.jpeg|]] From DJ stage. Note the convergence
+of media: vinyl, CD and digital\!
+
+[[/media/events2006/convergence3.jpeg|]] From top DJ booth, end of night

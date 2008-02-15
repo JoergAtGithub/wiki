@@ -6,7 +6,7 @@ To be written...
 
 ## Example Scripts
 
-### Auto-Crossfader
+#### Auto-Crossfader
 
 var button = QPushButton();
 

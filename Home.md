@@ -3,13 +3,12 @@
 We need help moving the old MediaWiki installation off of SourceForge
 and into the new wiki on our new server. At the same time, we might as
 well cleanup and reorganize the wiki, so we're moving everything over by
-hand.
+hand. The [Mediawiki-to-Dokuwiki online markup
+converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) is useful
+for this task.
 
 If you'd like to help, here's a running list of the pages that need to
 be copy-and-pasted over into the new wiki:
-
-(Note: you will find this [Mediawiki-to-Dokuwiki online markup
-converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) useful\!)
 
 ## User Documentation
 

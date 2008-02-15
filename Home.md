@@ -6,7 +6,9 @@ well cleanup and reorganize the wiki, so we're moving everything over by
 hand.
 
 If you'd like to help, here's a running list of the pages that need to
-be copy-and-pasted over into the new wiki:
+be copy-and-pasted over into the new wiki: (Note: you will find this
+[Mediawiki-to-Dokuwiki online markup
+converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) useful\!)
 
 ## User Documentation
 

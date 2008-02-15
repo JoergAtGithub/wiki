@@ -1,4 +1,4 @@
-# Kick Adam Kegger 20070405
+# Kick Adam Kegger - April 5th, 2007
 
 Here's a decent shot of our gear with Mixxx on the laptop. We used a
 beta of Mixxx with vinyl control support at this gig, as you can see

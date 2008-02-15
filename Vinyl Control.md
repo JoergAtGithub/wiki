@@ -42,10 +42,17 @@ configuration.
 For timecoded records or CDs, you can use any of the records supported
 by Mixxx:
 
-{| style="width:400px;" border="1" |+ **Timecode Support** \! Vinyl \!\!
-Responsiveness |- | Serato CV02 || Very high |- | Serato CD || Very high
-|- | Traktor Scratch || High |- | FinalScratch (Standard) || Low |- |
-FinalScratch (Scratch) || Medium |- | MixVibes DVS CD || Untested |}
+**Timecode Support**
+
+|                         |                |
+| ----------------------- | -------------- |
+| Vinyl                   | Responsiveness |
+| Serato CV02             | Very high      |
+| Serato CD               | Very high      |
+| Traktor Scratch         | Very high      |
+| FinalScratch (Standard) | Very high      |
+| FinalScratch (Scratch)  | Very high      |
+| MixVibes DVS CD         | Untested       |
 
 At the present time, **Serato records are the ones you should purchase**
 if you're looking to buy vinyl.

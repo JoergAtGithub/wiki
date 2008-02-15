@@ -88,7 +88,7 @@ following code, underneath the line that says "public slots:":
 
 ## Step 3 - Recompile Mixxx
 
-Run **make** or compile using MSVC. After that, run your new Mixxx
+Run **scons** or compile using MSVC. After that, run your new Mixxx
 executable and play with your new button\!
 
 ## Step 4 - Beyond the ControlPushButton

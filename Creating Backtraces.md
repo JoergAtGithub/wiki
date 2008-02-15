@@ -1,3 +1,5 @@
+# Creating Backtraces for Debugging
+
 ## Linux and OS X Users
 
 Found a crash? Generate us a backtrace:

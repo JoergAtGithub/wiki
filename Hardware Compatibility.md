@@ -1,0 +1,72 @@
+Currently, we're try to compile a list of support hardware for Mixxx. If
+you've tested a hardware controller on a particular operating system,
+please update the table below to reflect the state of Mixxx's hardware
+support:
+
+|                                                             |                                                     |                       |                                                                                                                                                                     |
+| ----------------------------------------------------------- | --------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Device                                                      | Windows                                             | OS X                  | Linux                                                                                                                                                               |
+| [Hercules DJ Console Mk1/Mk2](Hercules%20PC%20DJ%20Console) | MIDI (1.6.0)                                        | MIDI (untested)       | libDJConsole (1.6.0) [2](2)                                                                                                                                         |
+| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)           | MIDI (1.6.0, untested)                              | MIDI (untested)       | HerculesLegacy (1.5.0) [3](3) via /dev/inputX device files                                                                                                          |
+| [Mixman DM2](Mixman%20DM2)                                  | [via MIDI Driver](http://www.joemattiello.com/dm2/) | ?                     | [ALSA MIDI Driver](http://mixxx.sourceforge.net/misc/dm2-jan-0.0.tgz) [Alternate ALSA MIDI driver (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2) |
+| [Tascam US-428](Tascam%20US-428)                            | MIDI (1.6.0, untested)                              | ?                     | Yes, you need the latest us428control (launch us428control -m mixxx) and the select the US428 mapping in Mixxx's options                                            |
+| [Griffin PowerMate](Griffin%20PowerMate)                    | Possibly (code exists for it)                       | ?                     | Full support (jog wheel and light visualization)                                                                                                                    |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)          | Yes (1.6.0)                                         | Yes (1.6.0)           | Yes (1.6.0)                                                                                                                                                         |
+| [Evolution X-Session](Evolution%20X-Session)                | Yes (1.6.0)                                         | Yes (1.6.0)           | Yes (1.6.0)                                                                                                                                                         |
+| [M-Audio Xponent](M-Audio%20Xponent)                        | Yes (1.6.0)                                         | Yes (1.6.0)           | Yes (1.6.0)                                                                                                                                                         |
+| [Ecler NUO4](Ecler%20NUO4)                                  | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0, untested)                                                                                                                                               |
+| [FaderFox DJ2](FaderFox%20DJ2)                              | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                         |
+| [VCI-100](Vestax)                                           | ?                                                   | ?                     | ?                                                                                                                                                                   |
+
+[2](2) UI led triggers need to be added to core
+
+[3](3) Mixxx must be compiled with the *SCons djconsole\_legacy=1*
+option, and user must have proper */dev/inputX* permissions to access
+the device. A project is underway to extract the info necessary from
+Hercules to get the MP3 Control working with libDJConsole. Please feel
+free to [contact Hercules](http://www.hercules.com/us/contact-us/) and
+voice your support for their co-operation with open source projects such
+as Mixxx & [DJPlay](http://djplay.sf.net) and our efforts to develop a
+Linux [kernel MIDI driver](Hercules_Questions) for their products.
+
+## Mixxx Sound card Compatibility Notes
+
+Mixxx is generally compatible with all sound cards, but here's some tips
+our users have given us:
+
+### Soundblaster Audigy NX and Creative X-Fi
+
+For both sound cards, ASIO is the best "Sound API" setting to use in
+Mixxx's preferences, as it enables you to use all the channels on the
+sound card for output. For more information, see [this
+thread](https://sourceforge.net/forum/forum.php?thread_id=1649679&forum_id=156157).
+
+While the Audigy NX works well on Linux, **the Creative X-Fi is
+currently incompatible with Linux**. Creative says they're releasing a
+[closed-source driver](http://opensource.creative.com/soundcard.html) in
+the \<strike\>second\</strike\> third or fourth quarter of 2007, but
+closed-source drivers often lead to headaches, so Mixxx users might be
+best to steer clear of these cards.
+
+Note: An Audigy LS user reported having to select "surround70" or
+"surround50" as the audio devices in Mixxx's preferences in order to be
+able to use both Master and Headphone outputs.
+
+### Linux and Sound cards
+
+Linux generally has very good support for sound cards, but if you'd like
+to see if there's any known issues with any sound card, take a look at
+the [ALSA sound card matrix](http://www.alsa-project.org/alsa-doc/).
+
+### Multiple Sound cards
+
+As of 1.5.0, Mixxx currently doesn't support multiple output devices
+that span different sound cards. For example, if you have two sound
+cards, you cannot currently use one sound card for headphone cueing and
+the other for master output. However, you **can** use multiple outputs
+on a single sound card. For example, if you purchase a cheap 5.1 USB
+sound card, you can use the "front" output as your master output, and
+plug your headphones into the "rear" output for cueing. This is what the
+majority of Mixxx users do.
+
+Mixxx 1.6.0 will support multiple sound cards.

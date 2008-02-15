@@ -1,7 +1,5 @@
 # Frequently Asked Questions
 
-<span class="underline">TOC</span>
-
 If you've got a question that's not answered here, please post in the
 [forums](http://www.mixxx.org/forums)\!
 

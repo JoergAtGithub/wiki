@@ -1,4 +1,6 @@
-Currently, we're try to compile a list of support hardware for Mixxx. If you've tested a hardware controller on a particular operating system, please update the table below to reflect the state of Mixxx's hardware support:
+====== Hardware Compatibility ======
+
+We're currently trying to compile a list of support hardware for Mixxx. If you've tested a hardware controller on a particular operating system, please update the table below to reflect the state of Mixxx's hardware support:
 
 | Device                                                    ^ Windows              ^ OS X                ^ Linux         ^
 ^ [[Hercules PC DJ Console|Hercules DJ Console Mk1/Mk2]]    | MIDI (1.6.0)          | MIDI (untested)    | libDJConsole (1.6.0) ((UI led triggers need to be added to core))      |

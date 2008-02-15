@@ -32,3 +32,20 @@ only for consistency.
 Please bear this in mind when writing code.
 
 ## General tips
+
+## Engine Coding Guidelines
+
+The mixing engine code inside Mixxx needs to run in realtime and must
+execute as quickly as possible in order to minimize the chance of buffer
+underruns in the soundcard.
+
+Here's some coding tips to help keep performance decent:
+
+  - Don't use signals/slots in code that gets called in the callback
+    thread - that is, use signals/slots to interact with any
+    EngineObject's process() function.
+  - Don't access ConfigKeys in code that gets called in the callback
+    thread (same as above). ConfigKey access is slow - Use a
+    ControlObject instead. In some situations, you may have to have both
+    a ConfigKey (to save a setting) and a ControlObject to access it (to
+    read the setting, in high performance code).

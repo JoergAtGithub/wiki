@@ -1,3 +1,5 @@
+# Feature Discussion
+
 This page is to discuss possible future features along with some
 implementation details. Lengthy discussions will probably get moved to
 their own page.

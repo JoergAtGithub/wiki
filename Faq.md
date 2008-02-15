@@ -14,8 +14,8 @@ cheaper, the [Hercules DJ Control
 MP3](http://www.hercules.com/showpage.php?swcty=UK&p=126&b=0&f=0) offers
 the same control surface, but without the built-in soundcard.
 
-A complete list of tested hardware devices is available on the
-[Compatibility](Hardware) page.
+A complete list of tested hardware devices is available on the [Hardware
+Compatibility](Hardware%20Compatibility) page.
 
 ## Does Mixxx support multiple soundcards?
 
@@ -67,7 +67,7 @@ Beryl/Compiz.
 
 ## What's vinyl control all about? How do I use it?
 
-See the [Control](Vinyl) page.
+See the [Vinyl Control](Vinyl%20Control) page.
 
 ## Does Mixxx modify the files or structure of my library?
 

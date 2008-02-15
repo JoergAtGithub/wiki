@@ -27,6 +27,7 @@ be copy-and-pasted over into the new wiki:
   - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
+  - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Feature Discussion](Feature%20Discussion)
@@ -35,6 +36,9 @@ be copy-and-pasted over into the new wiki:
     Format](MIDI%20Controller%20Mapping%20File%20Format)
   - [Creating backtraces](Creating%20backtraces)
   - [MixxxScript](MixxxScript)
+  - Tutorials for new developers:
+  - [Adding a new button to Mixxx's
+    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
 
 ## Artist Documentation
 

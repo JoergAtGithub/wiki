@@ -15,12 +15,7 @@ be copy-and-pasted over into the new wiki:
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
   - [Tutorials](Tutorials)
-
-<!-- end list -->
-
-``` 
-* 
-```
+  - [Vinyl Control](Vinyl%20Control)
 
 ## Developer Documentation
 

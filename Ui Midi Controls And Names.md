@@ -76,17 +76,19 @@ mixxx/src directory: \#\!/bin/sh IFS=' ' last\_control
 If you want to access one of these controls inside Mixxx, you can do so
 with something like this:
 
-ControlObjectThreadMain\* controlRightPitch = new
-ControlObjectThreadMain(ControlObject::getControl(ConfigKey("[Channel2](Channel2)",
-"rate")));
+``` 
+ ControlObjectThreadMain* controlRightPitch = new ControlObjectThreadMain(ControlObject::getControl(ConfigKey("[[Channel2]]", "rate")));
+```
 
 That line will give you a ControlObject which allows you to read and
 control the pitch of the right channel in Mixxx. For example, to
 increase the pitch of the track in the right channel, one could do
 something like this:
 
-float fRightPitch = controlRightPitch-\>get();
-controlRightPitch-\>slotSet(fRightPitch + 0.10);
+``` 
+ float fRightPitch = controlRightPitch->get();
+ controlRightPitch->slotSet(fRightPitch + 0.10);
+```
 
 This would increase the pitch of the right channel inside Mixxx, and the
 GUI controls would automatically reflect this change. Access to

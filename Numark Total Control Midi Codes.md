@@ -52,23 +52,43 @@ release. Instead, button presses are Note On messages with a velocity of
 | 2X7 (Turn)  | CC   | 25         | Relative             | Left jog wheel. |
 | 2X8 (Press) | Note | 59         | N/A                  | N/A             |
 
-Control, Type, Decimal ID, Relative/Absolute //Third Column From The
-Left 3X1 (Turn), CC, 1, Relative 3X2 (Press), Note, 50, N/A 3X3 (Turn),
-CC, 3, Relative 3X4 (Press), Note, 58, N/A 3X5 (Press), Note, 66, N/A
-3X6 (Press), Note, 74, N/A 3X7 (Press), Note, 67, N/A
+### Third Column From The Left
 
-Control, Type, Decimal ID, Relative/Absolute //Forth Column From The
-Left 4X1 (Turn), CC, 13, Absolute 4X2 (Turn), CC, 16, Absolute 4X2
-(Press), Note, 80, N/A 4X3 (Turn), CC, 18, Absolute 4X3 (Press), Note,
-85, N/A 4X4 (Turn), CC, 20, Absolute 4X4 (Press), Note, 83, N/A 4X5
-(Press), Note, 75, N/A 4X6 (Slide), CC, 8, Absolute //Vertical slider.
-(Left volume)
+| Control     | Type | Decimal ID | Relative or Absolute | Comment |
+| ----------- | ---- | ---------- | -------------------- | ------- |
+| 3X1 (Turn)  | CC   | 1          | Relative             | N/A     |
+| 3X2 (Press) | Note | 50         | N/A                  | N/A     |
+| 3X3 (Turn)  | CC   | 3          | Relative             | N/A     |
+| 3X4 (Press) | Note | 58         | N/A                  | N/A     |
+| 3X5 (Press) | Note | 66         | N/A                  | N/A     |
+| 3X6 (Press) | Note | 74         | N/A                  | N/A     |
+| 3X7 (Press) | Note | 67         | N/A                  | N/A     |
 
-Control, Type, Decimal ID, Relative/Absolute //Center Column 5X1 (Turn),
-CC, 23, Absolute 5X2 (Turn), CC, 22, Absolute 5X3 (Turn), CC, 15,
-Absolute 5X4 (Turn), CC, 26, Relative 5X4 (Press), Note, 79, N/A 5X5
-(Press), Note, 72, N/A 5X6 (Slide), CC, 10, Absolute //Horizontal
-slider. (Crossfade)
+### Forth Column From The Left
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment                        |
+| ----------- | ---- | ---------- | -------------------- | ------------------------------ |
+| 4X1 (Turn)  | CC   | 13         | Absolute             | N/A                            |
+| 4X2 (Turn)  | CC   | 16         | Absolute             | N/A                            |
+| 4X2 (Press) | Note | 80         | N/A                  | N/A                            |
+| 4X3 (Turn)  | CC   | 18         | Absolute             | N/A                            |
+| 4X3 (Press) | Note | 85         | N/A                  | N/A                            |
+| 4X4 (Turn)  | CC   | 20         | Absolute             | N/A                            |
+| 4X4 (Press) | Note | 83         | N/A                  | N/A                            |
+| 4X5 (Press) | Note | 75         | N/A                  | N/A                            |
+| 4X6 (Slide) | CC   | 8          | Absolute             | Vertical slider. (Left volume) |
+
+### Center Column
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment                        |
+| ----------- | ---- | ---------- | -------------------- | ------------------------------ |
+| 5X1 (Turn)  | CC   | 23         | Absolute             | N/A                            |
+| 5X2 (Turn)  | CC   | 22         | Absolute             | N/A                            |
+| 5X3 (Turn)  | CC   | 15         | Absolute             | N/A                            |
+| 5X4 (Turn)  | CC   | 26         | Relative             | N/A                            |
+| 5X4 (Press) | Note | 79         | N/A                  | N/A                            |
+| 5X5 (Press) | Note | 72         | N/A                  | N/A                            |
+| 5X6 (Slide) | CC   | 10         | Absolute             | Horizontal slider. (Crossfade) |
 
 Control, Type, Decimal ID, Relative/Absolute //Forth Column From The
 Right 6X1 (Turn), CC, 14, Absolute 6X2 (Turn), CC, 17, Absolute 6X2

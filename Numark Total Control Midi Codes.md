@@ -162,33 +162,79 @@ Control seems to respond to LED commands on any channel.
 | 1X4 (Slide) | 52         | Left pitch slider, center position indicator. |
 | 1X5 (Press) | 60         | N/A                                           |
 
-Control, Decimal ID //Second Column From The Left 2X2 (Press), 51 2X4
-(Press), 50 2X5 (Press), 56 2X6 (Press), 58 2X8 (Press), 61
+### Second Column From The Left
 
-Control, Decimal ID //Third Column From The Left 3X2 (Press), 49 3X4
-(Press), 48 3X5 (Press), 57 3X6 (Press), 59 3X7 (Press), 62
+| Control     | Decimal ID | Comment |
+| ----------- | ---------- | ------- |
+| 2X2 (Press) | 51         | N/A     |
+| 2X4 (Press) | 50         | N/A     |
+| 2X5 (Press) | 56         | N/A     |
+| 2X6 (Press) | 58         | N/A     |
+| 2X8 (Press) | 61         | N/A     |
 
-Control, Decimal ID //Forth Column From The Left 4X2 (Turn), 80 //EQ
-knob, center position indicator. 4X3 (Turn), 81 //EQ knob, center
-position indicator. 4X4 (Turn), 82 //EQ knob, center position indicator.
-4X5 (Press), 63
+### Third Column From The Left
 
-Control, Decimal ID //Center Column 5X5 (Press), 86
+| Control     | Decimal ID | Comment |
+| ----------- | ---------- | ------- |
+| 3X2 (Press) | 49         | N/A     |
+| 3X4 (Press) | 48         | N/A     |
+| 3X5 (Press) | 57         | N/A     |
+| 3X6 (Press) | 59         | N/A     |
+| 3X7 (Press) | 62         | N/A     |
 
-Control, Decimal ID //Forth Column From The Right 6X2 (Turn), 83 //EQ
-knob, center position indicator. 6X3 (Turn), 84 //EQ knob, center
-position indicator. 6X4 (Turn), 85 //EQ knob, center position indicator.
-6X5 (Press), 79
+### Forth Column From The Left
 
-Control, Decimal ID //Third Column From The Right 7X2 (Press), 68 7X4
-(Press), 70 7X5 (Press), 72 7X6 (Press), 74 7X7 (Press), 76
+| Control     | Decimal ID | Comment                             |
+| ----------- | ---------- | ----------------------------------- |
+| 4X2 (Turn)  | 80         | EQ knob, center position indicator. |
+| 4X3 (Turn)  | 81         | EQ knob, center position indicator. |
+| 4X4 (Turn)  | 82         | EQ knob, center position indicator. |
+| 4X5 (Press) | 63         | N/A                                 |
 
-Control, Decimal ID //Second Column From The Right 8X2 (Press), 69 8X4
-(Press), 71 8X5 (Press), 73 8X6 (Press), 75 8X8 (Press), 77
+### Center Column
 
-Control, Decimal ID //Rightmost Column 9X1 (Press), 64 9X2 (Press), 65
-9X3 (Press), 66 9X4 (Slide), 67 //Right pitch slider, center position
-indicator. 9X5 (Press), 78
+| Control     | Decimal ID | Comment |
+| ----------- | ---------- | ------- |
+| 5X5 (Press) | 86         | N/A     |
+
+### Forth Column From The Right
+
+| Control     | Decimal ID | Comment                             |
+| ----------- | ---------- | ----------------------------------- |
+| 6X2 (Turn)  | 83         | EQ knob, center position indicator. |
+| 6X3 (Turn)  | 84         | EQ knob, center position indicator. |
+| 6X4 (Turn)  | 85         | EQ knob, center position indicator. |
+| 6X5 (Press) | 79         | N/A                                 |
+
+### Third Column From The Right
+
+| Control     | Decimal ID | Comment |
+| ----------- | ---------- | ------- |
+| 7X2 (Press) | 68         | N/A     |
+| 7X4 (Press) | 70         | N/A     |
+| 7X5 (Press) | 72         | N/A     |
+| 7X6 (Press) | 74         | N/A     |
+| 7X7 (Press) | 76         | N/A     |
+
+### Second Column From The Right
+
+| Control     | Decimal ID | Comment |
+| ----------- | ---------- | ------- |
+| 8X2 (Press) | 69         | N/A     |
+| 8X4 (Press) | 71         | N/A     |
+| 8X5 (Press) | 73         | N/A     |
+| 8X6 (Press) | 75         | N/A     |
+| 8X8 (Press) | 77         | N/A     |
+
+### Rightmost Column
+
+| Control     | Decimal ID | Comment                                        |
+| ----------- | ---------- | ---------------------------------------------- |
+| 9X1 (Press) | 64         | N/A                                            |
+| 9X2 (Press) | 65         | N/A                                            |
+| 9X3 (Press) | 66         | N/A                                            |
+| 9X4 (Slide) | 67         | Right pitch slider, center position indicator. |
+| 9X5 (Press) | 78         | N/A                                            |
 
 ## Legal
 

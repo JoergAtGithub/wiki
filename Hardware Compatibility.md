@@ -19,6 +19,7 @@ support:
 | [Ecler NUO4](Ecler%20NUO4)                                  | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0, untested)                                                                                                                                               |
 | [FaderFox DJ2](FaderFox%20DJ2)                              | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                         |
 | [Vestax VCI-100](Vestax%20VCI-100)                          | ?                                                   | ?                     | ?                                                                                                                                                                   |
+| [Numark Total Control](Numark%20Total%20Control)            | Soon                                                | Soon                  | Soon                                                                                                                                                                |
 
 # Mixxx Sound card Compatibility Notes
 

@@ -116,16 +116,28 @@ release. Instead, button presses are Note On messages with a velocity of
 | 7X6 (Press) | Note | 77         | N/A                  | N/A     |
 | 7X7 (Press) | Note | 60         | N/A                  | N/A     |
 
-Control, Type, Decimal ID, Relative/Absolute //Second Column From The
-Right 8X1 (Turn), CC, 5, Relative 8X2 (Press), Note, 54, N/A 8X3 (Turn),
-CC, 7, Relative 8X4 (Press), Note, 62, N/A 8X5 (Press), Note, 70, N/A
-8X6 (Press), Note, 78, N/A 8X7 (Turn), CC, 24, Relative //Right jog
-wheel. 8X8 (Press), Note, 68, N/A
+### Second Column From The Right
 
-Control, Type, Decimal ID, Relative/Absolute //Rightmost Column 9X1
-(Press), Note, 55, N/A 9X2 (Press), Note, 63, N/A 9X3 (Press), Note, 71,
-N/A 9X4 (Slide), CC, 12, Absolute //Vertical slider. (Right pitch) 9X5
-(Press), Note, 76, N/A
+| Control     | Type | Decimal ID | Relative or Absolute | Comment          |
+| ----------- | ---- | ---------- | -------------------- | ---------------- |
+| 8X1 (Turn)  | CC   | 5          | Relative             | N/A              |
+| 8X2 (Press) | Note | 54         | N/A                  | N/A              |
+| 8X3 (Turn)  | CC   | 7          | Relative             | N/A              |
+| 8X4 (Press) | Note | 62         | N/A                  | N/A              |
+| 8X5 (Press) | Note | 70         | N/A                  | N/A              |
+| 8X6 (Press) | Note | 78         | N/A                  | N/A              |
+| 8X7 (Turn)  | CC   | 24         | Relative             | Right jog wheel. |
+| 8X8 (Press) | Note | 68         | N/A                  | N/A              |
+
+### Rightmost Column
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment                        |
+| ----------- | ---- | ---------- | -------------------- | ------------------------------ |
+| 9X1 (Press) | Note | 55         | N/A                  | N/A                            |
+| 9X2 (Press) | Note | 63         | N/A                  | N/A                            |
+| 9X3 (Press) | Note | 71         | N/A                  | N/A                            |
+| 9X4 (Slide) | CC   | 12         | Absolute             | Vertical slider. (Right pitch) |
+| 9X5 (Press) | Note | 76         | N/A                  | N/A                            |
 
 ## LED Lights (Status Indicators)
 
@@ -134,15 +146,21 @@ designed to light up.
 
 LEDs are lit by sending a 0x90 (Note On) message with a non-zero
 velocity to the appropriate note number. LEDs are turned off by either
-sending a 0x80 (Note Off) message (any velocity) \_or\_ by sending a
-0x90 (Note On) message with a zero velocity.
+sending a 0x80 (Note Off) message (any velocity) *or* by sending a 0x90
+(Note On) message with a zero velocity.
 
 While most testing was done on MIDI channel one, the Numark Total
 Control seems to respond to LED commands on any channel.
 
-Control, Decimal ID //Leftmost Column 1X1 (Press), 53 1X2 (Press), 54
-1X3 (Press), 55 1X4 (Slide), 52 //Left pitch slider, center position
-indicator. 1X5 (Press), 60
+### Leftmost Column
+
+| Control     | Decimal ID | Comment                                       |
+| ----------- | ---------- | --------------------------------------------- |
+| 1X1 (Press) | 53         | N/A                                           |
+| 1X2 (Press) | 54         | N/A                                           |
+| 1X3 (Press) | 55         | N/A                                           |
+| 1X4 (Slide) | 52         | Left pitch slider, center position indicator. |
+| 1X5 (Press) | 60         | N/A                                           |
 
 Control, Decimal ID //Second Column From The Left 2X2 (Press), 51 2X4
 (Press), 50 2X5 (Press), 56 2X6 (Press), 58 2X8 (Press), 61

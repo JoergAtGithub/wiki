@@ -104,10 +104,17 @@ release. Instead, button presses are Note On messages with a velocity of
 | 6X5 (Press) | Note | 52         | N/A                  | N/A                             |
 | 6X6 (Slide) | CC   | 9          | Absolute             | Vertical slider. (Right volume) |
 
-Control, Type, Decimal ID, Relative/Absolute //Third Column From The
-Right 7X1 (Turn), CC, 4, Relative 7X2 (Press), Note, 53, N/A 7X3 (Turn),
-CC, 6, Relative 7X4 (Press), Note, 61, N/A 7X5 (Press), Note, 69, N/A
-7X6 (Press), Note, 77, N/A 7X7 (Press), Note, 60, N/A
+### Third Column From The Right
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment |
+| ----------- | ---- | ---------- | -------------------- | ------- |
+| 7X1 (Turn)  | CC   | 4          | Relative             | N/A     |
+| 7X2 (Press) | Note | 53         | N/A                  | N/A     |
+| 7X3 (Turn)  | CC   | 6          | Relative             | N/A     |
+| 7X4 (Press) | Note | 61         | N/A                  | N/A     |
+| 7X5 (Press) | Note | 69         | N/A                  | N/A     |
+| 7X6 (Press) | Note | 77         | N/A                  | N/A     |
+| 7X7 (Press) | Note | 60         | N/A                  | N/A     |
 
 Control, Type, Decimal ID, Relative/Absolute //Second Column From The
 Right 8X1 (Turn), CC, 5, Relative 8X2 (Press), Note, 54, N/A 8X3 (Turn),

@@ -4,15 +4,15 @@ Here we document what MIDI packets you can expect from the [Numark Total
 Control](Numark%20Total%20Control) surface, as well as what packets you
 can send to do various things.
 
-The Numark Total Control does not have labelled controls. (All labels
-are on removable/swapable face cards.) In lieu of a diagram, we will
-refer to an individual control by column number, then the number from
-the top. Thus, for example, control 8X3 is the lower of the rightmost
-pair of knobs. 5X4 is the center knob. Etc..
-
 Messages sent by the Numark Total Control will be send over MIDI channel
 1. Messages sent to the Numark Total Control may be sent over any MIDI
 channel.
+
+The Numark Total Control does not have labeled controls. (All labels are
+on removable/swapable face cards.) In the tables below, we refer to an
+individual control by column number then the number from the top.
+
+[[/media/hardware/numark_totalcontrol/layout_coordinates.jpg|layout\_coordinates.jpg]]
 
 ## Buttons, Knobs, and Sliders
 

@@ -90,12 +90,19 @@ release. Instead, button presses are Note On messages with a velocity of
 | 5X5 (Press) | Note | 72         | N/A                  | N/A                            |
 | 5X6 (Slide) | CC   | 10         | Absolute             | Horizontal slider. (Crossfade) |
 
-Control, Type, Decimal ID, Relative/Absolute //Forth Column From The
-Right 6X1 (Turn), CC, 14, Absolute 6X2 (Turn), CC, 17, Absolute 6X2
-(Press), Note, 82, N/A 6X3 (Turn), CC, 19, Absolute 6X3 (Press), Note,
-81, N/A 6X4 (Turn), CC, 21, Absolute 6X4 (Press), Note, 84, N/A 6X5
-(Press), Note, 52, N/A 6X6 (Slide), CC, 9, Absolute //Vertical slider.
-(Right volume)
+### Forth Column From The Right
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment                         |
+| ----------- | ---- | ---------- | -------------------- | ------------------------------- |
+| 6X1 (Turn)  | CC   | 14         | Absolute             | N/A                             |
+| 6X2 (Turn)  | CC   | 17         | Absolute             | N/A                             |
+| 6X2 (Press) | Note | 82         | N/A                  | N/A                             |
+| 6X3 (Turn)  | CC   | 19         | Absolute             | N/A                             |
+| 6X3 (Press) | Note | 81         | N/A                  | N/A                             |
+| 6X4 (Turn)  | CC   | 21         | Absolute             | N/A                             |
+| 6X4 (Press) | Note | 84         | N/A                  | N/A                             |
+| 6X5 (Press) | Note | 52         | N/A                  | N/A                             |
+| 6X6 (Slide) | CC   | 9          | Absolute             | Vertical slider. (Right volume) |
 
 Control, Type, Decimal ID, Relative/Absolute //Third Column From The
 Right 7X1 (Turn), CC, 4, Relative 7X2 (Press), Note, 53, N/A 7X3 (Turn),

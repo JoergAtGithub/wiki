@@ -9,12 +9,12 @@ controls that can be used in any of the above contexts.
 
 The default range is 0.0 to 1.0, unless otherwise noted.
 
-[Master](Master)
+\[Master\]
 
   - crossfader: min = -1.0, max = 1.0
   - samplerate
 
-[ChannelN](ChannelN) (where N is a number 1 or 2)
+\[ChannelN\] (where N is a number 1 or 2)
 
   - play 
   - cue\_simple
@@ -43,7 +43,7 @@ The default range is 0.0 to 1.0, unless otherwise noted.
   - LoadSelectedTrack - loads selected track from the
     playlist/tracktable.
 
-[Playlist](Playlist)
+\[Playlist\]
 
   - SelectNextTrack - scrolls to the next track in the
     playlist/tracktable.

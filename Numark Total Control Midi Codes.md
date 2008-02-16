@@ -24,7 +24,8 @@ Numark Total Control will send either 0x90 (Note On) messages or 0xB0
 Some CC controls are absolute and others are relative. Absolute controls
 will report an absolute position from 0 to 127. (Unsigned 7-bit.)
 Relative controls will report a change in position from -63 to 63.
-(Signed 7-bit.)
+(Signed 7-bit.) (For more information, see [Two's
+Compliment](http://en.wikipedia.org/wiki/Two%27s_complement).)
 
 Button presses will result in two events, one for press and one for
 release. Oddly, although Numark Total Control sends a Note On message

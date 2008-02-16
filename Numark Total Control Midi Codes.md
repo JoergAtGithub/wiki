@@ -126,8 +126,7 @@ indicator. 9X5 (Press), 78
 
 ## Legal
 
-This document is copyright Alex Markley 2008. It is released to the
-public under the following terms and conditions:
+This is based on a work which is copyright (C) Alex Markley, 2008.
 
 This work is licensed under the Creative Commons Attribution-Share Alike
 3.0 United States License. To view a copy of this license, visit

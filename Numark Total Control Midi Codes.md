@@ -124,7 +124,7 @@ Control, Decimal ID //Rightmost Column 9X1 (Press), 64 9X2 (Press), 65
 9X3 (Press), 66 9X4 (Slide), 67 //Right pitch slider, center position
 indicator. 9X5 (Press), 78
 
-## LEGAL
+## Legal
 
 This document is copyright Alex Markley 2008. It is released to the
 public under the following terms and conditions:

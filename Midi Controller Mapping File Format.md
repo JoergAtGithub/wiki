@@ -53,7 +53,7 @@ Definitions of the elements:
 
   - group - The controlobject group
   - key - The controlobject key, a list of which can be found on the
-    [AnnotatedControls](AnnotatedControls) page.
+    [UI/MIDI Controls and Names](ui_midi_controls_and_names) page.
   - miditype - Midi object type: Ctrl, Key or Pitch
   - midino - The MIDI control or note number
   - midichan - The MIDI channel

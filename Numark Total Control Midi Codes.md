@@ -1,3 +1,5 @@
+# MIDI Codes
+
 Here we document what MIDI packets you can expect from the [Numark Total
 Control](Numark%20Total%20Control) surface, as well as what packets you
 can send to do various things.
@@ -27,16 +29,28 @@ for button presses, it does not send a Note Off message for button
 release. Instead, button presses are Note On messages with a velocity of
 127, and button releases are Note On messages with a velocity of 0.
 
-Control, Type, Decimal ID, Relative/Absolute //Leftmost Column 1X1
-(Press), Note, 48, N/A 1X2 (Press), Note, 56, N/A 1X3 (Press), Note, 64,
-N/A 1X4 (Slide), CC, 11, Absolute //Vertical slider. (Left pitch) 1X5
-(Press), Note, 51, N/A
+### Leftmost Column
 
-Control, Type, Decimal ID, Relative/Absolute //Second Column From The
-Left 2X1 (Turn), CC, 0, Relative 2X2 (Press), Note, 49, N/A 2X3 (Turn),
-CC, 2, Relative 2X4 (Press), Note, 57, N/A 2X5 (Press), Note, 65, N/A
-2X6 (Press), Note, 73, N/A 2X7 (Turn), CC, 25, Relative //Left jog
-wheel. 2X8 (Press), Note, 59, N/A
+| Control     | Type | Decimal ID | Relative or Absolute | Comment                       |
+| ----------- | ---- | ---------- | -------------------- | ----------------------------- |
+| 1X1 (Press) | Note | 48         | N/A                  | N/A                           |
+| 1X2 (Press) | Note | 56         | N/A                  | N/A                           |
+| 1X3 (Press) | Note | 64         | N/A                  | N/A                           |
+| 1X4 (Slide) | CC   | 11         | Absolute             | Vertical slider. (Left pitch) |
+| 1X5 (Press) | Note | 51         | N/A                  | N/A                           |
+
+### Second Column From The Left
+
+| Control     | Type | Decimal ID | Relative or Absolute | Comment         |
+| ----------- | ---- | ---------- | -------------------- | --------------- |
+| 2X1 (Turn)  | CC   | 0          | Relative             | N/A             |
+| 2X2 (Press) | Note | 49         | N/A                  | N/A             |
+| 2X3 (Turn)  | CC   | 2          | Relative             | N/A             |
+| 2X4 (Press) | Note | 57         | N/A                  | N/A             |
+| 2X5 (Press) | Note | 65         | N/A                  | N/A             |
+| 2X6 (Press) | Note | 73         | N/A                  | N/A             |
+| 2X7 (Turn)  | CC   | 25         | Relative             | Left jog wheel. |
+| 2X8 (Press) | Note | 59         | N/A                  | N/A             |
 
 Control, Type, Decimal ID, Relative/Absolute //Third Column From The
 Left 3X1 (Turn), CC, 1, Relative 3X2 (Press), Note, 50, N/A 3X3 (Turn),

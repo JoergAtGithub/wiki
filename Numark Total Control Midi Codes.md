@@ -4,13 +4,15 @@ Here we document what MIDI packets you can expect from the [Numark Total
 Control](Numark%20Total%20Control) surface, as well as what packets you
 can send to do various things.
 
-Messages sent by the Numark Total Control will be send over MIDI channel
+Messages sent by the Numark Total Control will be sent over MIDI channel
 1. Messages sent to the Numark Total Control may be sent over any MIDI
-channel.
+channel. (In testing, it appears to react to all MIDI channels equally.)
 
-The Numark Total Control does not have labeled controls. (All labels are
-on removable/swapable face cards.) In the tables below, we refer to an
-individual control by column number then the number from the top.
+The Numark Total Control does not have labeled controls. That is to say,
+all labels are on removable/swapable face cards. In the tables below, we
+refer to an individual control like "CxR," where C is the number of
+columns from the left and R is the number of controls from the top of
+the column.
 
 [[/media/hardware/numark_totalcontrol/layout_coordinates.jpg|layout\_coordinates.jpg]]
 
@@ -19,9 +21,10 @@ individual control by column number then the number from the top.
 Numark Total Control will send either 0x90 (Note On) messages or 0xB0
 (CC) messages for every control on the control surface.
 
-Some CC controls are absolute, and others are relative. Absolute
-controls will report an absolute position from 0 to 127. Relative
-controls will report a change in position from -63 to 63.
+Some CC controls are absolute and others are relative. Absolute controls
+will report an absolute position from 0 to 127. (Unsigned 7-bit.)
+Relative controls will report a change in position from -63 to 63.
+(Signed 7-bit.)
 
 Button presses will result in two events, one for press and one for
 release. Oddly, although Numark Total Control sends a Note On message
@@ -142,12 +145,16 @@ release. Instead, button presses are Note On messages with a velocity of
 ## LED Lights (Status Indicators)
 
 Most buttons, knobs, and sliders on the Numark Total Control are
-designed to light up.
+designed to light up in one way or another.
 
 LEDs are lit by sending a 0x90 (Note On) message with a non-zero
 velocity to the appropriate note number. LEDs are turned off by either
 sending a 0x80 (Note Off) message (any velocity) *or* by sending a 0x90
 (Note On) message with a zero velocity.
+
+Unfortunately, the Note Number mapping for LEDs is completely different
+from the Note Numbers documented above, so we document the LED Note
+Numbers in another set of tables below.
 
 While most testing was done on MIDI channel one, the Numark Total
 Control seems to respond to LED commands on any channel.

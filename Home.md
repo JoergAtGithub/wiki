@@ -16,6 +16,7 @@ be copy-and-pasted over into the new wiki:
   - [FAQ](FAQ)
   - [Tutorials](Tutorials)
   - [Vinyl Control](Vinyl%20Control)
+  - [System Requirements](System%20Requirements)
 
 ## Developer Documentation
 

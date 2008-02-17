@@ -31,6 +31,7 @@ input from the developers.
     backward fast. (Mixxx is misinterpreting 0x40 as a positive number,
     when it's actually a negative number.)
   - cue\_set only works every other time the button is pressed. (?\!)
+  - Pitch sliders are currently reversed from their labeled meaning.
   - Track selection knob needs to be able to send +1 for SelectNextTrack
     and -1 for SelectPrevTrack.
   - Press track selection knob should load track into first stopped

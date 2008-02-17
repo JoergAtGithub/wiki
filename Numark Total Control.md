@@ -14,6 +14,9 @@ site](http://www.alexmarkley.com/numark_totalcontrol_mixxxmap.xml).
 
 ### TODO List
 
+  - Numark Total Control comes with swappable face cards. One for
+    Traktor and one for Cue. My goal is to create one MIDI map for each
+    face card, then documenting them for end-users on this page.
   - Jog wheels are too low precision / too touchy. (Mixxx should be
     moving fewer samples per unit of rotation.) (\<sensitivity\> doesn't
     work?)
@@ -27,3 +30,12 @@ site](http://www.alexmarkley.com/numark_totalcontrol_mixxxmap.xml).
     and -1 for SelectPrevTrack.
   - Press track selection knob should load track into first stopped
     player.
+  - Map flanger buttons for both decks.
+  - Add support for LEDs. (No LED codes have been added to the MIDI map
+    yet.)
+  - Most LEDs are only supposed to light up at (or near) the center of
+    the related control. I'm informed that this will require a patch to
+    the Mixxx codebase.
+
+*Please* send any comments and/or suggestions to [Alex
+Markley](http://malexmedia.net/contact/malex).

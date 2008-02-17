@@ -10,9 +10,14 @@ Codes](Numark%20Total%20Control%20MIDI%20Codes) for details.
 
 The current (very unstable) version of the MIDI map is available [on my
 site](http://www.alexmarkley.com/numark_totalcontrol_mixxxmap.xml).
-(This is for reference *only*, as it isn't working yet.)
+(This is for reference *only*, as it isn't working properly yet.)
 
 ### TODO List
+
+Here is a list of things which still need addressed before the Numark
+Total Control will work properly with Mixxx. Many (but not all) of these
+TODO list items will require a patch against Mixxx or (at least) some
+input from the developers.
 
   - Numark Total Control comes with swappable face cards. One for
     Traktor and one for Cue. My goal is to create one MIDI map for each

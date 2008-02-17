@@ -1,14 +1,18 @@
+## Numark Total Control Support
+
 I (Alex Markley) am actively working on putting together a MIDI map for
 Mixxx which will add support for the Numark Total Control.
-Reverse-engineering of the Numark Total Control is complete as far as I
-can tell. (Please see [Numark Total Control MIDI
-Codes](Numark%20Total%20Control%20MIDI%20Codes).)
+Reverse-engineering of the Numark Total Control should be complete.
+Please see [Numark Total Control MIDI
+Codes](Numark%20Total%20Control%20MIDI%20Codes) for details.
+
+### WIP MIDI Mapping
 
 The current (very unstable) version of the MIDI map is available [on my
 site](http://www.alexmarkley.com/numark_totalcontrol_mixxxmap.xml).
 (This is for reference *only*, as it isn't working yet.)
 
-Here is my current TODO list:
+### TODO List
 
   - Jog wheels are too low precision / too touchy. (Mixxx should be
     moving fewer samples per unit of rotation.) (\<sensitivity\> doesn't

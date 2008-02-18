@@ -1,14 +1,15 @@
 # Welcome to the new Mixxx Wiki\!
 
-We need help moving the old MediaWiki installation off of SourceForge
-and into the new wiki on our new server. At the same time, we might as
-well cleanup and reorganize the wiki, so we're moving everything over by
-hand. The [Mediawiki-to-Dokuwiki online markup
-converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) is useful
-for this task.
+Mixxx has an unusually broad community for an open-source project,
+encompassing performing musicians, C++ addicts, amateur DJs and even
+just casual users. The Mixxx Wiki contains useful information for users,
+developers, and artists, and is summarized in the categories below.
 
-If you'd like to help, here's a running list of the pages that need to
-be copy-and-pasted over into the new wiki:
+Most of the old MediaWiki installation is moved off of SourceForge and
+into our new wiki. For the remaining page, the [Mediawiki-to-Dokuwiki
+online markup
+converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) will
+continue to be useful.
 
 ## User Documentation
 

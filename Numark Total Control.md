@@ -21,22 +21,12 @@ input from the developers.
 
   - Numark Total Control comes with swappable face cards. One for
     Traktor and one for Cue. My goal is to create one MIDI map for each
-    face card, then documenting them for end-users on this page.
-  - Jog wheels are too low precision / too touchy. (Mixxx should be
-    moving fewer samples per unit of rotation.) (\<sensitivity\> doesn't
-    work?)
-  - In a possibly related note, scratching is impossible with current
-    configuration. Would a lower sensitivity fix this?
-  - Mixxx thinks jog wheels are spinning forward fast when spinning
-    backward fast. (Mixxx is misinterpreting 0x40 as a positive number,
-    when it's actually a negative number.)
+    face card, then document them for end-users on this page.
   - cue\_set only works every other time the button is pressed. (?\!)
   - Pitch sliders are currently reversed from their labeled meaning.
-  - Track selection knob needs to be able to send +1 for SelectNextTrack
-    and -1 for SelectPrevTrack.
-  - Press track selection knob should load track into first stopped
-    player.
   - Map flanger buttons for both decks.
+  - Patch mixxx to allow comments in midi map files. (MIDI map files are
+    too complex not to have comments.)
   - Add support for LEDs. (No LED codes have been added to the MIDI map
     yet.)
   - Most LEDs are only supposed to light up at (or near) the center of

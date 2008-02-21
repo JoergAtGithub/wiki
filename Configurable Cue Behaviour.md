@@ -25,9 +25,12 @@ they expect it.
   - Holding down CUE plays from the cue point for as long as it's held,
     then when released it jumps straight back to cue point and stops
     there.
-  - \*Have the ability to have it continue playing if cue is held down
-    for a while/play is pressed at the same time/something like that?
-    --- *Robin*
+
+<!-- end list -->
+
+``` 
+ *Have the ability to have it continue playing if cue is held down for a while/play is pressed at the same time/something like that? --- //Robin//
+```
 
 #### Simple Mode
 

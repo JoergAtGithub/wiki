@@ -34,8 +34,13 @@ The default mode will be CDJ.
 
 ## Work Breakdown
 
-1\. Configurable Cue Behaviour 1.1 Modify Preferences dialog 1.2 Modify
-engine ???
+This [work breakdown
+structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
+will become more detailed as the design becomes more complete.
+
+    1. Configurable Cue Behaviour
+      1.1 Modify Preferences dialog
+      1.2 Modify engine ???
 
 ## Team
 

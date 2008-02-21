@@ -18,13 +18,17 @@ they expect it.
 
 ## Design
 
-**CDJ Mode** When stopped, pressing CUE sets the cue point. When
-playing, pressing CUE jumps to the cue point and stops there. Holding
-down CUE plays from the cue point for as long as it's held, then when
-released it jumps straight back to cue point and stops there.
+**CDJ Mode**
 
-**Simple Mode** ??? (Should this be what we already have coded in
-Mixxx?) --- *[Albert Santoni](albert@santoni.ca) 2008/02/21 18:35*
+When stopped, pressing CUE sets the cue point. When playing, pressing
+CUE jumps to the cue point and stops there. Holding down CUE plays from
+the cue point for as long as it's held, then when released it jumps
+straight back to cue point and stops there.
+
+**Simple Mode**
+
+??? (Should this be what we already have coded in Mixxx?) --- *[Albert
+Santoni](albert@santoni.ca) 2008/02/21 18:35*
 
 Each mode will be selectable via the Preferences dialog (which pane? -
 Albert). The dialog should explain what each behaviour does (as in the

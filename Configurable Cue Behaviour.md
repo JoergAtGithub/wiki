@@ -9,7 +9,12 @@ they expect it.
 
 ## Use Cases
 
-  - DJ Bill is considering switching from CDJs to software. He
+  - DJ Bill is considering switching from CDJs to software. He doesn't
+    like Mixxx's cue behaviour because it is different from what he's
+    used to using.
+  - DJ Paul uses the cue button for quickly jumping to a spot and
+    stopping. He would like the ability to jump to a cue point and stop
+    without having to hit multiple buttons and seeking.
 
 ## Design
 

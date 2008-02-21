@@ -39,4 +39,6 @@ The default mode will be CDJ.
 ## Team
 
 If you're interested in helping to code this feature, sign up your name
-below: \* Albert Santoni
+below:
+
+  - Albert Santoni

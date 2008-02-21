@@ -29,12 +29,8 @@ The default mode will be CDJ.
 
 ## Work Breakdown
 
-1\. Configurable Cue Behaviour
-
-``` 
- 1.1 Modify Preferences dialog
- 1.2 Modify engine ???
-```
+1\. Configurable Cue Behaviour 1.1 Modify Preferences dialog 1.2 Modify
+engine ???
 
 ## Team
 

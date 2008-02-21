@@ -41,7 +41,8 @@ depending on what's selected in the prefs.
 
 This [work breakdown
 structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
-will become more detailed as the design becomes more complete.
+will become more detailed as the design above becomes more thorough and
+complete.
 
     1. Configurable Cue Behaviour
       1.1 Modify Preferences dialog

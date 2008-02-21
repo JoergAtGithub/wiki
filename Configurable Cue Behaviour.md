@@ -18,12 +18,10 @@ they expect it.
 
 ## Design
 
-**CDJ Mode**
-
-When stopped, pressing CUE sets the cue point. When playing, pressing
-CUE jumps to the cue point and stops there. Holding down CUE plays from
-the cue point for as long as it's held, then when released it jumps
-straight back to cue point and stops there.
+**CDJ Mode** \* When stopped, pressing CUE sets the cue point. \* When
+playing, pressing CUE jumps to the cue point and stops there. \* Holding
+down CUE plays from the cue point for as long as it's held, then when
+released it jumps straight back to cue point and stops there.
 
 **Simple Mode**
 

@@ -32,6 +32,11 @@ explanation above), so users don't have to dig through documentation.
 
 The default mode will be CDJ.
 
+Both modes must be supported when using MIDI hardware and the Hercules.
+In order to facilitate this, we probably need to create a new
+ControlObject like "cue\_generic", whose behaviour gets changed
+depending on what's selected in the prefs.
+
 ## Work Breakdown
 
 This [work breakdown

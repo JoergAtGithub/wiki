@@ -66,7 +66,12 @@ complete.
 
     1. Configurable Cue Behaviour
       1.1 Modify Preferences dialog
-      1.2 Modify engine ???
+      1.2 Modify EngineBufferCue
+        1.2.1 Implement basic slotControlCueCDJ/CDJ behaviour
+        1.2.2 [Implement the link between the preferences and EngineBufferCue - need to figure this out first]
+        1.2.3 Implement slotControlCueProxy (?) that calls the correct slot (simple, CDJ) based on the prefs
+        1.2.4 Implement "play after 3 seconds" behaviour in slotControlCueCDJ
+        1.2.5 Refactor slotControlCueSimple, if necessary
 
 ## Team
 

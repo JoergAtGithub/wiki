@@ -28,6 +28,9 @@ they expect it.
   - Have the ability to have it continue playing if cue is held down for
     a while/play is pressed at the same time/something like that? ---
     *Robin*
+  - Yeah, making it just play if you held down cue for more than 3
+    seconds or something might be cool. We could probably hack that into
+    EngineBufferCue without too much trouble. -- *Albert*
 
 #### Simple Mode
 
@@ -48,7 +51,12 @@ The default mode will be CDJ.
 Both modes must be supported when using MIDI hardware and the Hercules.
 In order to facilitate this, we probably need to create a new
 ControlObject like "cue\_generic", whose behaviour gets changed
-depending on what's selected in the prefs.
+depending on what's selected in the prefs. It looks like the cueing code
+is already nicely abstracted in a file called EngineBufferCue.cpp, with
+slots that get called when existing controls like "cue\_simple" get
+fired. Each slot takes a parameter of type "double", which hopefully
+indicates whether it was a button up/down event. If it doesn't, then
+we'll have to look into adding that.
 
 ## Work Breakdown
 

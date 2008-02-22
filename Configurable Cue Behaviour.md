@@ -35,8 +35,7 @@ they expect it.
 #### Simple Mode
 
   - ???
-  - (Should this be what we already have coded in Mixxx?) --- *[Albert
-    Santoni](albert@santoni.ca) 2008/02/21 18:35*
+  - (Should this be what we already have coded in Mixxx?) --- *Albert*
 
 #### Preferences Dialog
 

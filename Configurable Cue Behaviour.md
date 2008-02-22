@@ -31,6 +31,8 @@ they expect it.
   - Yeah, making it just play if you held down cue for more than 3
     seconds or something might be cool. We could probably hack that into
     EngineBufferCue without too much trouble. -- *Albert*
+  - Robin's suggestion matches what current CDJs do, and it makes more
+    sense than it happening automatically imo. -- *Ben*
 
 #### Simple Mode
 

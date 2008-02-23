@@ -31,8 +31,10 @@ sources.list.
  ./mixxx
 ```
 
+\*\* The block below is optional and only applies if you have a Hercules
+DJ Console Mk1/Mk2\*\*
+
 ``` 
- **# The block below is optional and only applies if you have a Hercules DJ Console Mk1/Mk2**
  
  sudo aptitude install libusb-dev # libDJConsole needs this
  

@@ -53,4 +53,4 @@ to the mixxx directory and run:
 
   - [Compiling Mixxx on
     Ubuntu 7.10](http://www.transglobal-megacorp.com/doku.php?id=mixxx-compilation)
-  - \[Compiling on an Asus eeePC\]
+  - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)

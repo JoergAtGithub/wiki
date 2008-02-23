@@ -38,8 +38,8 @@ SVN:
 
 ## 3\. Compile and install
 
-Change to the newly created "mixxx" directory, and use scons to compile
-and install:
+If you got the source code from SVN, change to the newly created "mixxx"
+directory, and use scons to compile and install:
 
     cd mixxx
     sudo scons install

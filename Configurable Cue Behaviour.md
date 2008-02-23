@@ -2,6 +2,9 @@
 
 ## Summary and Rationale
 
+**Status**: This specification is in the **planning and design** stage,
+and edits are welcome.
+
 Add support for two switchable cue behaviours. Many users are familiar
 with a particular cue behaviour, and it would make it easier for users
 to transition to Mixxx if they configure the cue button to work they way

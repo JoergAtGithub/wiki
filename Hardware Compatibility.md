@@ -21,7 +21,7 @@ support:
 | [Vestax VCI-100](Vestax%20VCI-100)                          | ?                                                   | ?                     | ?                                                                                                                                                                   |
 | [Numark Total Control](Numark%20Total%20Control)            | Soon                                                | Soon                  | Soon                                                                                                                                                                |
 
-# Mixxx Sound card Compatibility Notes
+# Mixxx Soundcard Compatibility Notes
 
 Mixxx is generally compatible with all sound cards, but here's some tips
 our users have given us:

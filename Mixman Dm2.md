@@ -1,8 +1,10 @@
-<http://www.mixxx.org/wiki/lib/exe/fetch.php/hardware:dm2.gif?w=120&h=67>[[/media/hardware/dm2.gif|]]
+# Mixman DM2
 
-Link to product website:
+![http://www.mixman.com/products/images/dm2/dm2.gif](http://www.mixman.com/products/images/dm2/dm2.gif)
 
-<http://www.mixman.com/products/dm2.html>
+Link to product website: <http://www.mixman.com/products/dm2.html>
+
+## Mixman under linux
 
 For anyone interested in getting the DM2 running under Linux, Jan has
 produced a nice HOWTO video:

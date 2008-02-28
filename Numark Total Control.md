@@ -1,6 +1,7 @@
 # Numark Total Control
 
 ![http://www.numark.com/stuff/contentmgr/files/b9586647d14912401d318473b480ae91/medium/totalcontrol\_angle\_med.jpg](http://www.numark.com/stuff/contentmgr/files/b9586647d14912401d318473b480ae91/medium/totalcontrol_angle_med.jpg)
+
 Link to the website: <http://www.numark.com/totalcontrol>
 
 ## Numark Total Control Support

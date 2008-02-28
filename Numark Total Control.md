@@ -1,4 +1,9 @@
-# Numark Total Control Support
+# Numark Total Control
+
+![http://www.numark.com/stuff/contentmgr/files/b9586647d14912401d318473b480ae91/medium/totalcontrol\_angle\_med.jpg](http://www.numark.com/stuff/contentmgr/files/b9586647d14912401d318473b480ae91/medium/totalcontrol_angle_med.jpg)
+Link to the website: <http://www.numark.com/totalcontrol>
+
+## Numark Total Control Support
 
 I (Alex Markley) am actively working on putting together a MIDI map for
 Mixxx which will add support for the Numark Total Control.
@@ -6,13 +11,13 @@ Reverse-engineering of the Numark Total Control should be complete.
 Please see [Numark Total Control MIDI
 Codes](Numark%20Total%20Control%20MIDI%20Codes) for details.
 
-## WIP MIDI Mapping
+### WIP MIDI Mapping
 
 The current (very unstable) version of the MIDI map is available [on my
 site](http://www.alexmarkley.com/numark_totalcontrol_mixxxmap.xml).
 (This is for reference *only*, as it isn't working properly yet.)
 
-## TODO List
+### TODO List
 
 Here is a list of things which still need addressed before the Numark
 Total Control will work properly with Mixxx. Many (but not all) of these

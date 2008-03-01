@@ -21,8 +21,8 @@ continue to be useful.
 
 ## Developer Documentation
 
-Attention prospective GSoC students - Please visit our [GSoC 2008
-Ideas](GSoC%202008%20Ideas) page.
+Attention prospective **Google Summer of Code** students - Please visit
+our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
 
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Linux, JACKd and Hercules legacy

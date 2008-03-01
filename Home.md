@@ -21,6 +21,9 @@ continue to be useful.
 
 ## Developer Documentation
 
+Attention prospective GSoC students - Please visit our [GSoC 2008
+Ideas](GSoC%202008%20Ideas) page.
+
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Linux, JACKd and Hercules legacy
     support](Compiling%20on%20Linux,%20JACKd%20and%20Hercules%20legacy%20support),

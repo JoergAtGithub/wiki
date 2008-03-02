@@ -13,6 +13,12 @@ our developers. The ideas list "is meant to introduce contributors to
 your project's needs and to provide inspiration to would-be student
 applicants".
 
+  - Vector based UI
+  - Use SVG graphics, scale them, copy the way KDE games do scaling.
+  - MixxxCharts
+  - Collect playback stats from willing users into a DB; generate charts
+    by Genre, Promo tracks, and New tracks
+
 ## Your idea here
 
 (With thorough description)

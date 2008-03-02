@@ -20,8 +20,8 @@ applicants".
   - Scalable Vector based UI
   - Use SVG graphics, scale them, copy the way KDE games do scaling.
   - MixxxCharts
-  - Collect playback stats from willing users into a DB; generate charts
-    by Genre, Promo tracks, and New tracks
+  - Collect playback stats from willing users into a DB; generate chart
+    web pages by Genre, Promo tracks, and New tracks
 
 # Have a better idea?
 

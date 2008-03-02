@@ -63,7 +63,7 @@ eeePC. A reboot will allow you to run mixxx normally.
 bump up the processing priority for reliable skip-free playback. Or get
 the eee.ko kernel module to re-clock the CPU from 600Mhz -\> 900Mhz.
 
-#### slowmixxx
+#### slow-mixxx
 
 ``` 
  #!/bin/bash

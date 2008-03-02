@@ -17,7 +17,7 @@ applicants".
 
 (With thorough description)
 
-  - Vector based UI
+  - Scalable Vector based UI
   - Use SVG graphics, scale them, copy the way KDE games do scaling.
   - MixxxCharts
   - Collect playback stats from willing users into a DB; generate charts

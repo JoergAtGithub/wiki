@@ -26,7 +26,7 @@ support:
 Mixxx is generally compatible with all sound cards, but here's some tips
 our users have given us:
 
-## Soundblaster Audigy NX and Creative X-Fi
+## Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in
 Mixxx's preferences, as it enables you to use all the channels on the
@@ -40,6 +40,14 @@ the \<strike\>second\</strike\> third or fourth quarter of 2007, but
 closed-source drivers often lead to headaches, so Mixxx users might be
 best to steer clear of these cards.
 
+The cheaper Creative Audigy cards on the market currently (usually
+billed as the Audigy SE or Value) do not correctly support input under
+Linux, and while they have the required number of inputs for vinyl
+control, are not a good budget choice. Several users have had problems
+with these cards generally under Linux, and with Mixxx in particular.
+The driver/chipset of note is CA0106 in the [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/).
+
 Note: An Audigy LS user reported having to select "surround70" or
 "surround50" as the audio devices in Mixxx's preferences in order to be
 able to use both Master and Headphone outputs.
@@ -48,7 +56,8 @@ able to use both Master and Headphone outputs.
 
 Linux generally has very good support for sound cards, but if you'd like
 to see if there's any known issues with any sound card, take a look at
-the [ALSA sound card matrix](http://www.alsa-project.org/alsa-doc/).
+the [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/).
 
 ## Multiple Sound cards
 

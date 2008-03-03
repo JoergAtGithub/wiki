@@ -28,7 +28,10 @@ It's possible to use Mixxx's vinyl control with several hardware setups,
 but the basic ones are:
 
 **Setup 1: Vinyl DJ** Two timecoded records, two turntables with phono
-preamps (or line-out), and two "sound inputs".
+preamps (or line-out), and two "sound inputs". You can skip the phono
+amplifiers if you use the snazzy new software preamp in Mixxx, though
+this will not provide as clean a signal and may not work for everyone -
+line-level signals are preferred.
 
 **Setup 2: CDJ** Two timecoded CDs, two CD decks, and two "sound
 inputs".
@@ -37,7 +40,9 @@ Now, for the "sound inputs", you have two options: You can either use a
 fancy DJ soundcard that has multiple stereo line-inputs on it, or can
 use two soundcards (each with a single stereo line-in). Currently,
 Mixxx's vinyl control has only been tested with the latter
-configuration.
+configuration. Currently (2008-03-03) running both inputs through the
+one soundcard does not work, it will cause the song to drift randomly.
+(tested on Linux/SVN-2008-02-29/M-Audio Delta 1010LT\[envy24\])
 
 For timecoded records or CDs, you can use any of the records supported
 by Mixxx:
@@ -53,6 +58,7 @@ by Mixxx:
 | FinalScratch (Standard) | Very high      |
 | FinalScratch (Scratch)  | Very high      |
 | MixVibes DVS CD         | Untested       |
+| MixVibes DVS Vinyl      | Does not work  |
 
 At the present time, **Serato records are the ones you should purchase**
 if you're looking to buy vinyl.

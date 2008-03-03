@@ -23,6 +23,32 @@ applicants".
   - Collect playback stats from willing users into a DB; generate chart
     web pages by Genre, Promo tracks, and New tracks
 
+## Adam's (no longer) Mental Notes
+
+Not all of these may still seem like good ideas for projects in the cold
+light of day...
+
+  - More detailed MIDI controller support
+  - All this state machine transformations stuff done properly... will
+    write this into a real project asap
+  - Rewrite the waveform display\!
+  - Get LADSPA stuff finished and into GUI, don't really want to offer
+    effects again...
+  - Make it easier to develop skins
+  - Auto-testing, crash-proofing etc etc can come around again although
+    we didn't accept anyone for it last time
+  - Something to do with auto-learning midi controllers or creating
+    configs through some fancy UI or something
+  - Support for mobile devices, ipods and phones and mass storage in
+    general
+  - Sampler\!
+  - Kittens\!
+
+<!-- end list -->
+
+    * 
+    * ... out of ideas for now ...
+
 # Have a better idea?
 
 We're all ears\! Please outline your ideas in detail in your student

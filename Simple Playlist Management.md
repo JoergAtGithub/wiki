@@ -45,7 +45,7 @@ worth a damn... so it goes. This is all open source software.
     barely acceptable for [changing
     "collections"](rhythmbox%20annoyance). 
 
-# Track organization
+# Music collection organization
 
 I have a dedicated music computer; it does nothing else. Ubuntu linux,
 Intel dual core, 4GM ram, RAID1 disks, M-Audio 2496 sound card. I keep a

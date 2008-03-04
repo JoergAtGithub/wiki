@@ -112,18 +112,18 @@ here (if there is one) is consistency. I keep this in a little text file
 in my home dir and update as necessary (with comments, eg. a canonical
 track/performer that defines that category).
 
-| GENRE | DESCRIPTION                |
-| ----- | -------------------------- |
-| psy   | top level)                 |
-| best  | hot track                  |
-| deep  | Dimension 5                |
-| prog  | radio compatible           |
-| full  | a bit full-on for me       |
-| crazy | Frozen Ghost               |
-| fast  | 150bpm+                    |
-| dark  | Ka-Sol                     |
-| light | as in not dark not l-i-t-e |
-| slow  | \-140bpm                   |
+| GENRE | DESCRIPTION                 |
+| ----- | --------------------------- |
+| psy   | (top level)                 |
+| best  | hot track                   |
+| deep  | Dimension 5                 |
+| prog  | radio compatible            |
+| full  | a bit full-on for me        |
+| crazy | Frozen Ghost                |
+| fast  | 150bpm+                     |
+| dark  | Ka-Sol                      |
+| light | as in not dark, not l-i-t-e |
+| slow  | \-140bpm                    |
 
 # Making playlists
 

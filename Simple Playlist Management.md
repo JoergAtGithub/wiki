@@ -1,42 +1,39 @@
 # DJing Psytrance
 
-I'm working at DJing psytrance, at the moment with the singular goal of
-playing at 2008's Singularity event, after an abysmal music experience
-at the otherwise wonderful 2007 event.
-
 HEY LOOK\! This is in no way advice to others; these are basically notes
-to myself. I am a bottom rank shit novice with no public performance
+to myself. I am a bottom rank sh\*t novice with no public performance
 experience. I'm taking notes now for the future. You were warned. The
 only thing I'll say in defense of these ideas at this point is that I'm
-copying from people better than me, and I'm organized, and test test
+copying from people better than me, and I'm organized, and I test, test,
 test. If you use anything here and your laptop catches fire, it's your
 own stupid fault.
 
 # Software
 
 I intended to write about technique not tools, but there's few enough
-worth a damn... This is all open source software.
+worth a damn... so it goes. This is all open source software.
 
   - I'm using [mixxx](www.mixxx.org) for DJing. Two players, beat
     detection, pitch-independent matching, support for inexpensive
     control surfaces, great support culture. I'm having problems with
-    various functions within it, but I'm able to work around and work
-    with to fix them.
+    various functions within it (probably my fault), but I'm able to
+    work around and work with to fix them. Who could ask for more?
 
 <!-- end list -->
 
   - Good old [grip](http://nostatic.org/grip) for ripping audio CDs.
     It's un-fancy, been around forever, somewhat nerdly to configure,
     but it's fast, reliable, utterly trustworthy, and has worked on
-    every hardware and software platform I've ever used (freeBSD, linux,
-    openBSD, ...). And, a huge positive feature, if you're ripping a
-    disc not in the [freeDB CD database](http://www.freedb.org), your
-    work typing in artist, disc, tracknames can be shared with the rest
-    of the world literally with a click. If you don't like the named
-    grip found in freeDB, you can edit them before ripping. (iTunes uses
-    the criminal Gracenote DB; if a disc isn't there it doesn't ask, it
-    just uses "UNKNOWN"; if it comes up with a crazy name for the disc
-    and/or tracks, good luck figuring out where iTunes stored them).
+    every hardware and software platform I've ever used in the last
+    decade (freeBSD, linux, openBSD, ...). And, a huge positive feature,
+    if you're ripping a disc not in the [freeDB CD
+    database](http://www.freedb.org), your work typing in artist, disc,
+    tracknames can be shared with the rest of the world literally with a
+    click. If you don't like the named grip found in freeDB, you can
+    edit them before ripping. (iTunes uses the craptacular Gracenote DB;
+    if a disc isn't there it doesn't ask, it just uses "UNKNOWN"; if it
+    comes up with a crazy name for the disc and/or tracks, good luck
+    figuring out where iTunes stored them).
 
 <!-- end list -->
 
@@ -45,39 +42,42 @@ worth a damn... This is all open source software.
     rhythmbox since my preferred programs didn't work well for this, but
     it's turned out to be all around the best (meaning well-behaved)
     player program so far. It's fairly easy to make playlists, and
-    acceptable for changing "collections". Many (amarok, juk) seem
-    obsessed with maintaining a single collection location.
+    barely acceptable for [changing
+    "collections"](rhythmbox%20annoyance). 
 
 # Track organization
 
 I have a dedicated music computer; it does nothing else. Ubuntu linux,
 Intel dual core, 4GM ram, RAID1 disks, M-Audio 2496 sound card. I keep a
-simple file heirarchy for storing music; a directory ingeniously named
-Music/ that contains directories with tracks in various states of
+simple file hierarchy for storing music; a directory ingeniously named
+**Music/** that contains directories with tracks in various states of
 existence:
 
 ``` 
- *  **''Ripped/          ''**CDs ripped by Grip store here (Artist/Album) so I know where to find the most recent batch of new music.
- *  **''Collection/     ''**A complete copy of everything, as-ripped.
- *  **''Psy/                ''**Ready to DJ tracks (eg. pruned of tracks deemed unDJable), stored in Artist/Album directory form.
+ |  **''Incoming/''** | CDs ripped by Grip store here (Artist/Album) so I know where to find the most recent batch of new music. |
+ |  **''Collection/ ' '**| A complete copy of everything, as-ripped. |
+ |  **''Psy/ ''**       | Ready to DJ psytrance tracks (eg. pruned of tracks deemed unDJable), stored in Artist/Album directory form. |
+|  **''Trance/ ''**  | Ready to DJ trance tracks, as above. |
 ```
 
-Ripped is where the CD ripper, grip, stores its results. Things don't
-live there long. If CDDB uses crazy filenames I can at least find the
-resulting files, and not have to search for the scattered throughout the
-Collection. I rip at the highest-possible sound quality; disk space is
-cheap and getting cheaper, and bad sound sucks.
+**Incoming/** is where the CD ripper, grip, stores its results. Things
+don't live there long. If CDDB uses crazy filenames I can at least find
+the resulting files, and not have to search for the scattered throughout
+the Collection. I rip at the highest-possible sound quality; disk space
+is cheap and getting cheaper, and bad sound sucks.
 
-The Collection is simply a copy of everything unmodified. Often a disc
-will contain music that I like just fine, but is not suitable for
-dancefloor mixing. The collection is a good place to pick music for
-casual listening, or retrieving originals if I mess up in the next step.
+**Collection/** is simply a copy of everything unmodified. Often a disc
+will contain music that I like to listen to just fine, but is not
+suitable for dancefloor mixing. The collection is a good place to pick
+music for casual listening, or retrieving originals if I mess up in the
+next step.
 
-Psy is where I keep my ready-to-DJ tracks. It's a ruthlessly culled
-subset of the larger Collection; tracks are in the right beat range,
-culled of duds, and properly marked with my ID3 genre tags (see below).
+**Psy/** and **Trance/** (and any others I might alter create) are where
+I keep ready-to-DJ tracks. It's a ruthlessly edited subset of the larger
+**Collection/**; tracks are in the right beat range, culled of duds, and
+properly marked with my ID3 genre tags (see below).
 
-The DJ software, mixxx, uses \~/Music/Psy has it's music collection.
+The DJ software, mixxx, uses **Music/Psy** has it's music collection.
 
 # Collection management and tagging
 
@@ -85,14 +85,16 @@ It's been tough to find a program to manage my collection. The trick is
 to be able to listen to track(s), edit ID3 tags and delete .mp3 files.
 Many promise to do it (amarok, juk, ...) but all have some problem. So
 far, rhythmbox is the best; to change "collections" I have to Edit -\>
-Preferences, quit and restart; but at least it works. (With juk I was
+Preferences, quit and restart, and sometimes
+[more](rhythmbox%20annoyance); but at least it works. (With juk I was
 utterly unable to find a way to change the collection itself after
 initial setup. Amarok... drowning in it's own feature list.)
 
 When I get new CD(s), I deal with them like so:
 
   - Rip the new discs with grip, first thing. The ripped discs go in
-    \~/Music/Ripped.
+    **Music/Incoming**, a bunch of MP3 files stored in
+    **Music/Incoming/Artist/Album/**.
   - Run easytag to mass-edit tags and rename files. I often don't like
     (or find baffling) the names in the CDDB and immediately fix
     problems here.

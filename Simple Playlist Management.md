@@ -13,7 +13,7 @@ own stupid fault.
 I intended to write about technique not tools, but there's few enough
 worth a damn... so it goes. This is all open source software.
 
-  - I'm using [mixxx](www.mixxx.org) for DJing. Two players, beat
+  - I'm using [mixxx](http://www.mixxx.org) for DJing. Two players, beat
     detection, pitch-independent matching, support for inexpensive
     control surfaces, great support culture. I'm having problems with
     various functions within it (probably my fault), but I'm able to
@@ -41,9 +41,9 @@ worth a damn... so it goes. This is all open source software.
     [rhythmbox](rhythmbox). At first, I thought I would "put up with"
     rhythmbox since my preferred programs didn't work well for this, but
     it's turned out to be all around the best (meaning well-behaved)
-    player program so far. It's fairly easy to make playlists, and
-    barely acceptable for [changing
-    "collections"](rhythmbox%20annoyance). 
+    player program so far. It's fairly easy to make playlists, and for
+    [barely acceptable](rhythmbox%20annoyance) for changing what it
+    thinks is a collection. 
 
 # Music collection organization
 

@@ -25,7 +25,9 @@ be all software, with as few control surfaces as I can get away with; my
 days of collecting the coolest and latest hardware are long past. At the
 moment, I am using a Hercules Control MP3 (the cheap one; requires funny
 compile options; see how-to's) and an inexpensive dedicated sound
-computer.
+computer. The built-in soundcard I use for my headphones, and I bought a
+top-end soundcard, the M-Audio 2496. I also have a pair of Mackey
+powered monitors that are my (entire) sound system.
 
 # The basics
 

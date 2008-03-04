@@ -11,15 +11,9 @@ bugging them, and share what I've learned so far.
 
 Many thanks to Albert Santoni for the tips\!
 
-I assume you know that the idea is, you have a track playing live (the
-"outgoing" track), and you are readying a second track to mix in then
-switch to (the "incoming" track). You can do this to all sorts of ends,
-but a common one is simply to have a continuous stream of music,
-smoothly switching from the end of one song to the beginning of the
-next. The basic technique is the same however so start with that as the
-simplest example.
-
 # Hardware setup
+
+![http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png](http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png)
 
 Your equipment and setup will surely be different from mine; but there
 are a few things that are pretty much required before you start.
@@ -33,7 +27,15 @@ moment, I am using a Hercules Control MP3 (the cheap one; requires funny
 compile options; see how-to's) and an inexpensive dedicated sound
 computer.
 
-![http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png](http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png)
+# The basics
+
+I assume you know that the idea is, you have a track playing live (the
+"outgoing" track), and you are readying a second track to mix in then
+switch to (the "incoming" track). You can do this to all sorts of ends,
+but a common one is simply to have a continuous stream of music,
+smoothly switching from the end of one song to the beginning of the
+next. The basic technique is the same however so start with that as the
+simplest example.
 
 The idea of course is that the outgoing song will end soon, and you want
 the incoming song to start precisely as the current one ends, possibly

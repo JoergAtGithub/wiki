@@ -103,7 +103,7 @@ Ripped is incomplete.
 A copy goes into my music player (Creative Zen V) for listening, and the
 Ripped directory left empty for the next round.
 
-##### ID3 'genre' tag values
+# ID3 'genre' tag values
 
 These are the tags I use in the ID3 GENRE field to label and organize my
 music. Most of the music players I've looked at handle searching and
@@ -147,7 +147,7 @@ filename in your home directory.
 It's easier to find playlists in mixxx if you copy them into it's music
 collection root directory (in my case **\~/Music/**).
 
-### Credits
+# Credits
 
 Much of this arrangement was copied from this person:
 

@@ -25,9 +25,9 @@ Attention prospective **Google Summer of Code** students - Please visit
 our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
 
   - [Compiling on Linux](Compiling%20on%20Linux), brief
-  - [Compiling on Linux, JACKd and Hercules legacy
-    support](Compiling%20on%20Linux,%20JACKd%20and%20Hercules%20legacy%20support),
-    detailed
+  - [Compiling on Linux, detailed](Compiling%20on%20Linux,%20detailed),
+    with JACKd fix for PortAudio bug, and optionally) Hercules legacy
+    support
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
   - [Development Roadmap](Development%20Roadmap)

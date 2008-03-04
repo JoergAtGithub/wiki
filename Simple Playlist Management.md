@@ -47,9 +47,10 @@ worth a damn... so it goes. This is all open source software.
 
 # Music collection organization
 
-I have a dedicated music computer; it does nothing else. Ubuntu linux,
-Intel dual core, 4GM ram, RAID1 disks, M-Audio 2496 sound card. I keep a
-simple file hierarchy for storing music; a directory ingeniously named
+I have a dedicated, modest, music computer; it does nothing else. Ubuntu
+linux, Intel dual core, 4GM ram, two disks in RAID1, M-Audio 2496 sound
+card for the main outs, and the onboard soundcard for headphones. I keep
+a simple file hierarchy for storing music; a directory ingeniously named
 **Music/** that contains directories with tracks in various states of
 existence:
 

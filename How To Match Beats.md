@@ -19,6 +19,8 @@ smoothly switching from the end of one song to the beginning of the
 next. The basic technique is the same however so start with that as the
 simplest example.
 
+![http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png](http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png)
+
 The idea of course is that the outgoing song will end soon, and you want
 the incoming song to start precisely as the current one ends, possibly
 with some overlap, such that people dancing or listening do not

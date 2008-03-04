@@ -103,8 +103,6 @@ Ripped is incomplete.
 A copy goes into my music player (Creative Zen V) for listening, and the
 Ripped directory left empty for the next round.
 
------
-
 ##### ID3 'genre' tag values
 
 These are the tags I use in the ID3 GENRE field to label and organize my
@@ -114,10 +112,9 @@ here (if there is one) is consistency. I keep this in a little text file
 in my home dir and update as necessary (with comments, eg. a canonical
 track/performer that defines that category).
 
-|       |                            |
-| ----- | -------------------------- |
 | GENRE | DESCRIPTION                |
-| psy   | (top level)                |
+| ----- | -------------------------- |
+| psy   | top level)                 |
 | best  | hot track                  |
 | deep  | Dimension 5                |
 | prog  | radio compatible           |

@@ -1,4 +1,4 @@
-# Simple playlist management
+# Simple playlist creation and music collection management
 
 HEY LOOK\! This is in no way advice to others; these are basically notes
 to myself. I am a bottom rank sh\*t novice with no public performance

@@ -19,6 +19,20 @@ smoothly switching from the end of one song to the beginning of the
 next. The basic technique is the same however so start with that as the
 simplest example.
 
+# Hardware setup
+
+Your equipment and setup will surely be different from mine; but there
+are a few things that are pretty much required before you start.
+
+You need to have two stereo channels, one for main output to speakers,
+and another for your headphones. See the diagram to the right. I decided
+right from the start that my entire music collection and equipment would
+be all software, with as few control surfaces as I can get away with; my
+days of collecting the coolest and latest hardware are long past. At the
+moment, I am using a Hercules Control MP3 (the cheap one; requires funny
+compile options; see how-to's) and an inexpensive dedicated sound
+computer.
+
 ![http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png](http://img504.imageshack.us/img504/9613/blockdiagram2dl5.png)
 
 The idea of course is that the outgoing song will end soon, and you want

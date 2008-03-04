@@ -9,7 +9,9 @@ support to rhythmbox:
 
 \<code\> $ sudo apt-get install gstreamer0.10-plugins-ugly\</code\>
 
-This will drag in enough code to make it work.
+This will drag in enough code to make it work. You should probably do an
+apt-cache search for 'gstreamer' because by the time you read this it
+won't be version 0.10 and the filename will have changed.
 
 # Rhythmbox annoyance(s)
 

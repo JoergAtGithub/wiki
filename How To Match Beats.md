@@ -59,10 +59,10 @@ tactile, and you just gotta go do it.
 
 I suggest that initially that you mix a song with a copy of itself --
 since the first thing to learn is the 'mechanics' this will eliminate
-differences in song beat and structure.
-
-I play mainly trance music, which has the advantage for mixing that the
-beat is the same from one end of a song to the other.
+differences in song beat and structure. I play mainly trance music,
+which has the advantage for mixing that the beat is the same from one
+end of a song to the other, and also tends to have nice repetitive
+structures to play with.
 
 Start playing the first track in player 1, "live". The mix slider should
 be to the left. Once it's playing live, it's "outgoing" -- meaning it

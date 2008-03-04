@@ -42,8 +42,8 @@ worth a damn... so it goes. This is all open source software.
     rhythmbox since my preferred programs didn't work well for this, but
     it's turned out to be all around the best (meaning well-behaved)
     player program so far. It's fairly easy to make playlists, and for
-    [barely acceptable](rhythmbox%20annoyance) for changing what it
-    thinks is a collection. 
+    [barely acceptable](rhythmbox#rhythmbox_annoyance) for changing what
+    it thinks is a collection. 
 
 # Music collection organization
 

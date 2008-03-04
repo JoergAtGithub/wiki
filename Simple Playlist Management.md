@@ -70,8 +70,8 @@ to be able to listen to track(s), edit ID3 tags and delete .mp3 files.
 Many promise to do it (amarok, juk, ...) but all have some problem. So
 far, rhythmbox is the best; to change "collections" I have to Edit -\>
 Preferences, quit and restart, and sometimes
-[more](rhythmbox%20annoyance); but at least it works. (With juk I was
-utterly unable to find a way to change the collection itself after
+[more](rhythmbox#rhythmbox_annoyance); but at least it works. (With juk
+I was utterly unable to find a way to change the collection itself after
 initial setup. Amarok... drowning in it's own feature list.)
 
 When I get new CD(s), I deal with them like so:

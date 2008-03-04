@@ -53,20 +53,12 @@ simple file hierarchy for storing music; a directory ingeniously named
 **Music/** that contains directories with tracks in various states of
 existence:
 
-|   |   |   |
-| - | - | - |
-| a | b | c |
-| a | b | c |
-| a | b | c |
-| a | b | c |
-
-| Incoming/   | CDs ripped by Grip store here (Artist/Album). This where the CD ripper, grip, stores its results. Things don't live there long. If CDDB uses crazy filenames I can at least find the resulting files, and not have to search for the scattered throughout the Collection. I rip at the highest-possible sound quality; disk space is cheap and getting cheaper, and bad sound sucks. |
+| Directory   | Description                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Incoming/   | CDs ripped by Grip store here (Artist/Album). This where the CD ripper, grip, stores its results. Things don't live there long. If CDDB uses crazy filenames I can at least find the resulting files, and not have to search for the scattered throughout the Collection. I rip at the highest-possible sound quality; disk space is cheap and getting cheaper, and bad sound sucks. |
 | Collection/ | A complete copy of everything, as-ripped; a copy of everything unmodified. Often a disc will contain music that I like to listen to just fine, but is not suitable for dancefloor mixing. The collection is a good place to pick music for casual listening, or retrieving originals if I mess up later.                                                                             |
 | Psy/        | Ready to DJ psytrance tracks (eg. pruned of tracks deemed unDJable), stored in Artist/Album directory form. are where I keep ready-to-DJ tracks. It's a ruthlessly edited subset of the larger **Collection/**; tracks are in the right beat range, culled of duds, and properly marked with my ID3 genre tags (see below).                                                          |
 | Trance/     | Ready to DJ trance tracks, as above.                                                                                                                                                                                                                                                                                                                                                 |
-
-**Incoming/** i
 
 The DJ software, mixxx, uses **Music/Psy** has it's music collection.
 

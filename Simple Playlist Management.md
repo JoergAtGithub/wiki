@@ -120,10 +120,10 @@ track/performer that defines that category).
 | prog  | radio compatible            |
 | full  | a bit full-on for me        |
 | crazy | Frozen Ghost                |
-| fast  | 150bpm+                     |
+| fast  | \> 150bpm                   |
 | dark  | Ka-Sol                      |
 | light | as in not dark, not l-i-t-e |
-| slow  | \-140bpm                    |
+| slow  | \< 140bpm                   |
 
 # Making playlists
 

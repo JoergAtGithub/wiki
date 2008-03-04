@@ -1,4 +1,4 @@
-# DJing Psytrance
+# Simple playlist management
 
 HEY LOOK\! This is in no way advice to others; these are basically notes
 to myself. I am a bottom rank sh\*t novice with no public performance
@@ -53,7 +53,7 @@ simple file hierarchy for storing music; a directory ingeniously named
 **Music/** that contains directories with tracks in various states of
 existence:
 
-|                       |                                                                                                             |
+| directory             |                                                                                                             |
 | --------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **`Incoming/`**       | CDs ripped by Grip store here (Artist/Album) so I know where to find the most recent batch of new music.    |
 | **''Collection/ ' '** | A complete copy of everything, as-ripped.                                                                   |

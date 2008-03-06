@@ -25,28 +25,28 @@ Mixxx currently uses bitmap skins to allow users to change the look of
 the application. However this ties each skin to a specific window size.
 Being able to render skin elements using SVG would allow for not only a
 higher level of graphical quality but would also allow skins to fit many
-different screen sizes. A student would initially implement support for
-rendering SVG graphics within the existing skin framework and would then
-go on to implement support for changing the window size of Mixxx. This
-project might also be a good opportunity for a more artistic student as
-an optional add-on would be to design an SVG based skin to test all the
-code changes thoroughly.
+different screen sizes.
 
-## Better Support for MIDI Devices
+A student would initially implement support for rendering SVG graphics
+within the existing skin framework and would then go on to implement
+support for changing the window size of Mixxx. This project might also
+be a good opportunity for a more artistic student as an optional add-on
+would be to design an SVG based skin to test all the code changes
+thoroughly.
+
+### Better Support for MIDI Devices
 
 There are hundreds of different MIDI controllers in the world, all of
 which have different buttons and knobs. Mixxx currently relies on XML
 files which describe how to map MIDI events to user interface elements.
 At the moment these have to be created by hand and allow only the most
-basic types of mapping. Hardware support is a key aspect of Mixxx and
-one which could benefit from more dedicated attention. A successful
-student in this project would put themselves in an excellent position to
-continue as a key member of the Mixxx development team after GSoC,
-should they want to do so. We have two ideas which we think would
-significantly improve support in Mixxx given below but we'd be happy to
-discuss others:
+basic types of mapping. A successful student in this project would put
+themselves in an excellent position to continue as a key member of the
+Mixxx development team after GSoC, should they want to do so. We have
+two ideas which we think would significantly improve support in Mixxx
+below but we're happy to discuss others:
 
-### Support More Advanced Controllers
+#### Support More Advanced Controllers
 
 There are all sorts of interesting controllers out there with buttons
 that return wierd ranges of values or that when you hold down make other

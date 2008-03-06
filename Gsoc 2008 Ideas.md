@@ -99,9 +99,8 @@ and would encourage people to reapply if they did so in the past.
 
 Of course you might think all these ideas are stupid. Perhaps you played
 with Mixxx for the first time and thought, "Damn these guys are really
-missing X with bells on\!". Whatever your ideas are, no matter how crazy
-(those are the most fun to read anyway :)), we'd like to hear them. So
-go ahead and apply.
+missing X with bells on\!". Whatever your ideas are, no matter how wierd
+and wonderful, we'd like to hear them. So go ahead and apply.
 
 # Tips For Applying (PICK ME\!)
 

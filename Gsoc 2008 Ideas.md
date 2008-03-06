@@ -29,7 +29,8 @@ files which describe how to map MIDI events to user interface elements.
 At the moment these have to be created by hand and allow only the most
 basic types of mapping. There is a lot of scope for improvement in this
 area and one or more students would be able to focus on the one(s) which
-interest them the most:
+interest them the most. Some suggestions are given below, although
+you're encouraged to discuss your own with us:
 
   - Enhance the mapping file format to account for more complex
     controllers
@@ -42,6 +43,33 @@ from more dedicated attention. A successful student in this project
 would put themselves in an excellent position to continue as a key
 member of the Mixxx development team after GSoC, should they want to do
 so.
+
+## Mobile Device Support
+
+A very nice addition to Mixxx would be to auto-detect when media
+players, mobile phones and mass storage devices are connected to a
+computer and allow access to this music immediately from within the
+library view. Then next time you're DJing at a party and someone says,
+'Do you have "The Obscure Guys - Ambient Experiment \#53 (Rare Techno
+Remix)"?', you can say, 'Just plug in your iPod'.
+
+Some thought for this project would need to be put into how to detect
+media devices in a platform independant way. This is a very
+self-contained task and would therefore be suitable even for someone
+without too much experience working on large software projects.
+
+## Stability
+
+For live performances, Mixxx must never-ever die. Although Mixxx is
+pretty good at the moment, there's room for a more serious approach to
+stability than just fixing crashes as we find them. A student could for
+example write a stress testing robot for Mixxx which helps weed out
+memory links and crash bugs automatically. They could also explore
+possibilities for recovering from crashes automatically and quickly.
+There is presumably plenty of room for clever ideas here. We offered
+this project last year and had to turn down some competent people in
+favour of higher priority projects but this year we're offering it again
+and would encourage people to reapply if they did so in the past.
 
 We're currently compiling a list of ideas for potential projects from
 our developers. The ideas list "is meant to introduce contributors to

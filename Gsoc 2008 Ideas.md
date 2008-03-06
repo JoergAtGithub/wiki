@@ -8,6 +8,11 @@ going to power live performances (ie. stability is key).
 
 # Ideas
 
+Here are some of our ideas. Under GSoC you can either apply to work on
+one of these suggestions or you can come up with an idea of your own.
+Also you may like the general outline of one of our ideas but would like
+to put a different spin on it, we're happy to discuss all these things.
+
 ## Scalable Skins with SVG
 
 Mixxx currently uses bitmap skins to allow users to change the look of

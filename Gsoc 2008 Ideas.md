@@ -27,22 +27,35 @@ There are hundreds of different MIDI controllers in the world, all of
 which have different buttons and knobs. Mixxx currently relies on XML
 files which describe how to map MIDI events to user interface elements.
 At the moment these have to be created by hand and allow only the most
-basic types of mapping. There is a lot of scope for improvement in this
-area and one or more students would be able to focus on the one(s) which
-interest them the most. Some suggestions are given below, although
-you're encouraged to discuss your own with us:
+basic types of mapping. Hardware support is a key aspect of Mixxx and
+one which could benefit from more dedicated attention. A successful
+student in this project would put themselves in an excellent position to
+continue as a key member of the Mixxx development team after GSoC,
+should they want to do so. We have two ideas which we think would
+significantly improve support in Mixxx given below but we'd be happy to
+discuss others:
 
-  - Enhance the mapping file format to account for more complex
-    controllers
-  - Create a GUI for easy controller mapping for non-experts
-  - Create a system for automatically downloading mappings from a
-    central site when a new controller is connected
+### Support More Advanced Controllers
 
-Hardware support is a key aspect of Mixxx and one which could benefit
-from more dedicated attention. A successful student in this project
-would put themselves in an excellent position to continue as a key
-member of the Mixxx development team after GSoC, should they want to do
-so.
+There are all sorts of interesting controllers out there with buttons
+that return wierd ranges of values or that when you hold down make other
+buttons do certain things. Generally to support these you end up having
+to write some small piece of C++ that maps the output properly and then
+activate that from the XML somehow. This is kind of silly and means that
+if you aren't willing to compile your own version of Mixxx, it's often
+hard to get some features of your controller supported. The solution
+we're considering is to write a simple interpreter that parses commands
+in the XML file to allow simple calculations to be performed in a highly
+configurable way. This isn't as scary as it sounds and would be a really
+interesting piece of code to write.
+
+### Better Usability
+
+Some people will never write an XML text file by hand to make their
+controller work. It would be really nice to have some kind of GUI which
+would allow even a preliminary version of an XML mapping to be produced.
+This would be a highly user interface focussed project and would be
+ideal for someone who enjoys this type of work.
 
 ## Mobile Device Support
 

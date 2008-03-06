@@ -89,10 +89,13 @@ this project last year and had to turn down some competent people in
 favour of higher priority projects but this year we're offering it again
 and would encourage people to reapply if they did so in the past.
 
-We're currently compiling a list of ideas for potential projects from
-our developers. The ideas list "is meant to introduce contributors to
-your project's needs and to provide inspiration to would-be student
-applicants".
+## Something Crrrazy (Your Own Ideas\!)
+
+Of course you might think all these ideas are stupid. Perhaps you played
+with Mixxx for the first time and thought, "Damn these guys are really
+missing X with bells on\!". Whatever your ideas are, no matter how crazy
+(those are the most fun to read anyway :)), we'd like to hear them. So
+go ahead and apply.
 
 ## Your idea here
 

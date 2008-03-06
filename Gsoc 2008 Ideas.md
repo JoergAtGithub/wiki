@@ -108,21 +108,22 @@ go ahead and apply.
 People often want to know what we're looking for in applications and
 what they can do to get selected. Here are three tips.
 
-\- We aren't necessarily looking for experienced people. Show us that
-you're interested and motivated and we'll happily overlook gaps in your
-knowledge. Having said that, Mixxx is developed in a highly
-cross-platform way, using a lot of Qt. We also use PortAudio and scons.
-So if you know about them it would probably be worth letting us know.
+1.  We aren't necessarily looking for experienced people. Show us that
+    you're interested and motivated and we'll happily overlook gaps in
+    your knowledge. Having said that, Mixxx is developed in a highly
+    cross-platform way, using a lot of Qt. We also use PortAudio and
+    scons. So if you know about these things it would probably be worth
+    mentioning it :).
+2.  Get some experience with Mixxx. If you know about Mixxx, even just
+    as a user, then you'll be able to write a much better application.
+    Even just downloading it and playing for half an hour will give you
+    a sense of what the software is about.
+3.  Talk to us. We'd like to get to know you. If you're the type of
+    person we like and could work with then we'll give your application
+    more attention. You can contact us in a lot of ways but the
+    preferred ones for this are:
 
-\- Get some experience with Mixxx. If you know about Mixxx, even just as
-a user, then you'll be able to write a much better application. Even
-just downloading it and playing for half an hour will give you a sense
-of what the software is about.
-
-\- Talk to us. We'd like to get to know you. If you're the type of
-person we like and could work with then we'll give your application more
-attention. You can contact us in a lot of ways but the preferred ones
-for this are:
+<!-- end list -->
 
   - IRC: chat.freenode.net \#mixxx (look out especially for adam\_d and
     asantoni)

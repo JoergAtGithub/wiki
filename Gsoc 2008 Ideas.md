@@ -2,11 +2,12 @@
 
 [Google's Summer of Code](http://code.google.com/soc/) program provides
 funding for students who'd like to contribute to open source projects.
-Mixxx is a good project to work on because it gives you experience
-working with cross-platform development as well as writing code that's
-going to power live performances (ie. stability is key). Summer of Code
-is a great opportunity to get involved in open source software, gain
-valuable new experience and meet interesting people.
+It's a great opportunity to get involved in open source software, gain
+valuable new experience and meet interesting people. Mixxx is a good
+project to work on because it gives you experience working with
+cross-platform development as well as writing code that's going to power
+live performances (ie. stability is key). Also the interesting people
+you'll meet will be us. And we're nice.
 
 # Ideas
 

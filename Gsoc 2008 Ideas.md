@@ -34,7 +34,7 @@ be a good opportunity for a more artistic student as an optional add-on
 would be to design an SVG based skin to test all the code changes
 thoroughly.
 
-### Better Support for MIDI Devices
+## Better Support for MIDI Devices
 
 There are hundreds of different MIDI controllers in the world, all of
 which have different buttons and knobs. Mixxx currently relies on XML
@@ -60,7 +60,7 @@ in the XML file to allow simple calculations to be performed in a highly
 configurable way. This isn't as scary as it sounds and would be a really
 interesting piece of code to write.
 
-### Better Usability
+#### Better Usability
 
 Some people will never write an XML text file by hand to make their
 controller work. It would be really nice to have some kind of GUI which

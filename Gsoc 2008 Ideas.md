@@ -9,6 +9,9 @@ cross-platform development as well as writing code that's going to power
 live performances (ie. stability is key). Also the interesting people
 you'll meet will be us. And we're nice.
 
+This page has our ideas and also some tips for applicants if we get
+approved as an organisation (**Hi Leslie and GSoC team :)**)
+
 # Ideas
 
 Here are some of our ideas. Under GSoC you can either apply to work on
@@ -99,6 +102,31 @@ with Mixxx for the first time and thought, "Damn these guys are really
 missing X with bells on\!". Whatever your ideas are, no matter how crazy
 (those are the most fun to read anyway :)), we'd like to hear them. So
 go ahead and apply.
+
+# Tips For Applying (PICK ME\!)
+
+People often want to know what we're looking for in applications and
+what they can do to get selected. Here are three tips.
+
+\- We aren't necessarily looking for experienced people. Show us that
+you're interested and motivated and we'll happily overlook gaps in your
+knowledge. Having said that, Mixxx is developed in a highly
+cross-platform way, using a lot of Qt. We also use PortAudio and scons.
+So if you know about them it would probably be worth letting us know.
+
+\- Get some experience with Mixxx. If you know about Mixxx, even just as
+a user, then you'll be able to write a much better application. Even
+just downloading it and playing for half an hour will give you a sense
+of what the software is about.
+
+\- Talk to us. We'd like to get to know you. If you're the type of
+person we like and could work with then we'll give your application more
+attention. You can contact us in a lot of ways but the preferred ones
+for this are:
+
+  - IRC: chat.freenode.net \#mixxx (look out especially for adam\_d and
+    asantoni)
+  - E-mail: adamdavison --A=T-- gmail.com
 
 ## Your idea here
 

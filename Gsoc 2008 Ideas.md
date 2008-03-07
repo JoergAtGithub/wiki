@@ -120,10 +120,11 @@ what they can do to get selected. Here are three tips.
 3.  Talk to us. We'd like to get to know you. If you're the type of
     person we like and could work with then we'll give your application
     more attention. You can contact us in a lot of ways but the
-    preferred ones for this are:
+    preferred one is to come and chat to us on IRC:
 
 <!-- end list -->
 
   - IRC: chat.freenode.net \#mixxx (look out especially for adam\_d and
     asantoni)
-  - E-mail: adamdavison --A=T-- gmail.com
+  - You can also e-mail: adamdavison --A=T-- gmail.com if you have more
+    specific questions or are unable to access IRC for some reason

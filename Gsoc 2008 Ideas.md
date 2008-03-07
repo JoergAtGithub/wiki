@@ -42,10 +42,11 @@ files which describe how to map MIDI events to user interface elements.
 At the moment these have to be created by hand and allow only the most
 basic types of mapping. A successful student in this project would put
 themselves in an excellent position to continue as a key member of the
-Mixxx development team after GSoC, should they want to do so. However,
-*if you want to work on this, owning a MIDI controller would be a big
-advantage*. We have two ideas which we think would significantly improve
-support in Mixxx below but we're happy to discuss others:
+Mixxx development team after GSoC, should they want to do so. *If you
+want to work on this, we may be able to lend you MIDI hardware but
+owning a MIDI controller would be an advantage*. We have two ideas which
+we think would significantly improve support in Mixxx below but we're
+happy to discuss others:
 
 #### Support More Advanced Controllers
 

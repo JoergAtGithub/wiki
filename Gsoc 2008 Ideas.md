@@ -132,7 +132,15 @@ what they can do to get selected. Here are three tips.
     as a user, then you'll be able to write a much better application.
     Even just downloading it and playing for half an hour will give you
     a sense of what the software is about.
-3.  Talk to us. We'd like to get to know you. If you're the type of
+3.  Show us that you have some brains. We're not looking for Einstein,
+    but you should try to convince us that you're the best candidate for
+    the project you're proposing. A good way to show us that you can
+    think for yourself is by giving us a small project plan inside your
+    application. A [work breakdown
+    structure](http://en.wikipedia.org/wiki/Work_breakdown_structure)
+    can be good way to communicate the scope of your project, and will
+    also help you better understand your project's scope yourself. 
+4.  Talk to us. We'd like to get to know you. If you're the type of
     person we like and could work with then we'll give your application
     more attention. You can contact us in a lot of ways but the
     preferred one is to come and chat to us on IRC:

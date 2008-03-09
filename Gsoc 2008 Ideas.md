@@ -34,6 +34,19 @@ be a good opportunity for a more artistic student as an optional add-on
 would be to design an SVG based skin to test all the code changes
 thoroughly.
 
+## Key Detection
+
+Harmonic mixing is a technique many professional DJs use to give their
+mixes an extra edge. By mixing between songs that have "compatible"
+keys, a DJ can create interesting harmonies during their beatmixes. In
+order for a DJ to do harmonic mixing, they generally rely on a separate
+piece of software to calculate the key of the song. A project for a
+prospective student is to explore algorithms for determining the key of
+a song and implementing a suitable algorithm in Mixxx. Mixxx currently
+performs tempo (BPM) detection on songs it loads and a student may wish
+to review the BPM detection code before planning their implementation of
+key detection.
+
 ## Better Support for MIDI Devices
 
 There are hundreds of different MIDI controllers in the world, all of

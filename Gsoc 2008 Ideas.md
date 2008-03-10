@@ -30,11 +30,11 @@ higher level of graphical quality but would also allow skins to fit many
 different screen sizes.
 
 A student would initially implement support for rendering SVG graphics
-within the existing skin framework and would then go on to implement
-support for changing the window size of Mixxx. This project might also
-be a good opportunity for a more artistic student as an optional add-on
-would be to design an SVG based skin to test all the code changes
-thoroughly.
+within the existing skin framework (using Qt's SVG rendering
+capabilities) and would then go on to implement support for changing the
+window size of Mixxx. This project might also be a good opportunity for
+a more artistic student as an optional add-on would be to design an SVG
+based skin to test all the code changes thoroughly.
 
 ## Key Detection
 

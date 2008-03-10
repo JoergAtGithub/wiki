@@ -121,15 +121,18 @@ and wonderful, we'd like to hear them. So go ahead and apply.
 
 # Tips For Applying (PICK ME\!)
 
+**Again this section will only be relevant if we get accepted.**
+
 People often want to know what we're looking for in applications and
 what they can do to get selected. Here are three tips.
 
 1.  We aren't necessarily looking for experienced people. Show us that
     you're interested and motivated and we'll happily overlook gaps in
     your knowledge. Having said that, Mixxx is developed in a highly
-    cross-platform way, using a lot of Qt. We also use PortAudio and
-    scons. So if you know about these things it would probably be worth
-    mentioning it :).
+    cross-platform way, using a lot of Qt. Our main concerns are
+    real-time performance, stability and usability. We also use
+    PortAudio and scons. So if you know about these things it would
+    probably be worth mentioning it :).
 2.  Get some experience with Mixxx. If you know about Mixxx, even just
     as a user, then you'll be able to write a much better application.
     Even just downloading it and playing for half an hour will give you
@@ -138,10 +141,11 @@ what they can do to get selected. Here are three tips.
     but you should try to convince us that you're the best candidate for
     the project you're proposing. A good way to show us that you can
     think for yourself is by giving us a small project plan inside your
-    application. A [work breakdown
+    application. Do this in a way you feel is appropriate but if you've
+    never done something like this before, a [work breakdown
     structure](http://en.wikipedia.org/wiki/Work_breakdown_structure)
     can be good way to communicate the scope of your project, and will
-    also help you better understand your project's scope yourself. 
+    also help you better understand the project's scope yourself.
 4.  Talk to us. We'd like to get to know you. If you're the type of
     person we like and could work with then we'll give your application
     more attention. You can contact us in a lot of ways but the
@@ -153,3 +157,19 @@ what they can do to get selected. Here are three tips.
     asantoni)
   - You can also e-mail: adamdavison --A=T-- gmail.com if you have more
     specific questions or are unable to access IRC for some reason
+
+# The Mixxx Community
+
+The above methods of contact are recommended for discussing projects.
+However if you just want to get involved with the community, there are
+many more ways to join in:
+
+  - The mailing list is the main place for development discussion:
+    <http://lists.sourceforge.net/lists/listinfo/mixxx-devel>
+  - We've just moved our forums to a new home, this is slightly more
+    user focussed: <http://mixxx.org/forums/>
+  - Read the blog: <http://mixxxblog.blogspot.com/>
+  - Read (and edit\!) the wiki: <http://mixxx.org/wiki/doku.php>
+  - Again, the IRC channel: chat.freenode.net \#mixxx
+  - The launchpad entry is also interesting as an overview of some
+    things: <https://launchpad.net/mixxx>

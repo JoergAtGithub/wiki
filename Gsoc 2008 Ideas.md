@@ -6,7 +6,9 @@ It's a great opportunity to get involved in open source software, gain
 valuable new experience and meet interesting people. Mixxx is a good
 project to work on because it gives you experience working with
 cross-platform development as well as writing code that's going to power
-live performances (ie. stability is key). Also the interesting people
+live performances (ie. stability is key). Mixxx also relies heavily on
+multithreading, which offers students an opportunity to learn about
+threading and see it in the real-world. Also the interesting people
 you'll meet will be us. And we're nice.
 
 This page has our ideas and also some tips for applicants if we get

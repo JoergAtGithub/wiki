@@ -3,6 +3,14 @@
 If you've got a question that's not answered here, please post in the
 [forums](http://www.mixxx.org/forums)\!
 
+## How do I record my Mixxx session?
+
+Mixxx doesn't directly support recording yet. But there are plenty of
+external applications that can do it for you.
+[Audacity](http://audacity.sourceforge.net/) is generally a good
+open-source choice and has excellent editing capabilities to help you
+clean up your recording afterwards.
+
 ## What's the best hardware DJ controller to use with Mixxx?
 
 The upcoming 1.6.0 release will contain excellent support for the

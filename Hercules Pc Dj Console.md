@@ -1,7 +1,9 @@
 The Hercules PC DJ Consoles are a series of USB DJ controllers for use
 with software such as Mixxx.
 
-Currently, there are 5 models:
+Link to website: <http://www.hercules.com/us/>
+
+Currently, there are 5 different models:
 
   - Hercules DJ Console MK2 - Very popular controller with a built in
     4x4 soundcard. (Two inputs, two outputs.) 
@@ -13,6 +15,9 @@ Currently, there are 5 models:
   - Hercules DJ Console RMX - Next-generation Hercules controller,
     release date is April 2008. Will be supported in Mixxx if we can get
     our hands on one.
+
+Mixxx's support for the Hercules controllers is described on our
+[hardware compatibility](hardware_compatibility) page.
 
 [[/media/hardware/hercules_dj_console_mk2.jpg|]] The Hercules DJ Console MK2.
 The Mac Edition and Control MP3 versions are very similar.

@@ -21,7 +21,7 @@ support:
 | [FaderFox DJ2](FaderFox%20DJ2)                                  | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                      |
 | [Vestax VCI-100](Vestax%20VCI-100)                              | ?                                                   | ?                     | ?                                                                                                                                                                |
 | [Numark Total Control](Numark%20Total%20Control)                | Soon                                                | Soon                  | Soon                                                                                                                                                             |
-| [Behringer BCD3000](Behringer%20BCD3000)                        | Yes (1.6.0, untested)                               | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                      |
+| [Behringer BCD3000](Behringer%20BCD3000)\[4\]                   | Yes (1.6.0, untested)                               | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                      |
 
 # Mixxx Soundcard Compatibility Notes
 
@@ -83,3 +83,5 @@ of Mixxx users do.
     device. Hercules is currently developing a MIDI driver for their
     products for Linux, and with any luck, we'll be able to support the
     Control MP3 via MIDI in the future.
+
+4.  no jogwheels

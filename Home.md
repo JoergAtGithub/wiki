@@ -55,11 +55,13 @@ our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
 
 ## Past Events
 
+  - [Cheap as Chips, March 9th, 2008](cheapaschips20080309) -
+    Christchurch, New Zealand (Kid 90)
+  - [Carleton CS Bash, April 12th, 2007](haz200704012) - Ottawa, Canada
+    (Christian Muise)
   - [Kick Adam Kegger - April 5th, 2007](kickadamkegger20070405) -
     London, Canada (Albert Santoni and Peter Wright)
-  - [Carleton CS Bash, April 12th 2007](haz200704012) - Ottawa, Canada
-    (Christian Muise)
-  - [Convergence, October 13th 2006](convergence20061013) - Club
+  - [Convergence, October 13th, 2006](convergence20061013) - Club
     Medussa, Brixton, London, UK (Tim Jackson) 
 
 ## More Resources

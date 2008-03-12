@@ -20,7 +20,7 @@ support:
 | [FaderFox DJ2](FaderFox%20DJ2)                              | Yes (1.6.0)                                         | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                      |
 | [Vestax VCI-100](Vestax%20VCI-100)                          | ?                                                   | ?                     | ?                                                                                                                                                                |
 | [Numark Total Control](Numark%20Total%20Control)            | Soon                                                | Soon                  | Soon                                                                                                                                                             |
-| [Behringer BCD3000](Behringer%20BCD3000)                    | Yes (1.6.0, untested)                               | Soon                  | Yes (1.6.0)                                                                                                                                                      |
+| [Behringer BCD3000](Behringer%20BCD3000)                    | Yes (1.6.0, untested)                               | Yes (1.6.0, untested) | Yes (1.6.0)                                                                                                                                                      |
 
 # Mixxx Soundcard Compatibility Notes
 

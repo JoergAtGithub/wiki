@@ -27,8 +27,8 @@ our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Linux, JACKd and Hercules legacy
     support](Compiling%20on%20Linux,%20JACKd%20and%20Hercules%20legacy%20support),
-    with JACKd fix for PortAudio bug, and optionally) Hercules legacy
-    support
+    with JACKd fix for (ubuntu gutsy) PortAudio bug, and (optionally)
+    Hercules legacy support
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
   - [Development Roadmap](Development%20Roadmap)

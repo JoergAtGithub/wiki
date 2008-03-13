@@ -167,9 +167,9 @@ many more ways to join in:
   - The mailing list is the main place for development discussion:
     <http://lists.sourceforge.net/lists/listinfo/mixxx-devel>
   - We've just moved our forums to a new home, this is slightly more
-    user focussed: <http://mixxx.org/forums/>
+    user focused: <http://mixxx.org/forums/>
   - Read the blog: <http://mixxxblog.blogspot.com/>
   - Read (and edit\!) the wiki: <http://mixxx.org/wiki/doku.php>
-  - Again, the IRC channel: chat.freenode.net \#mixxx
+  - The IRC channel: chat.freenode.net **\#mixxx**
   - The launchpad entry is also interesting as an overview of some
     things: <https://launchpad.net/mixxx>

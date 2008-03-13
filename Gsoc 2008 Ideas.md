@@ -9,7 +9,7 @@ cross-platform development as well as writing code that's going to power
 live performances (ie. stability is key). Mixxx also relies heavily on
 multithreading, which offers students an opportunity to learn about
 threading and work with it in a real-world application. Also the
-interesting people you'll meet will be us. And we're nice.
+interesting people you'll meet will be us. And we're nice (honest).
 
 This page has our ideas and also some tips for applicants if we get
 approved as an organisation (**Hi Leslie and GSoC team :)**)

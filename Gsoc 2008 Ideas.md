@@ -171,5 +171,5 @@ many more ways to join in:
   - Read the blog: <http://mixxxblog.blogspot.com/>
   - Read (and edit\!) the wiki: <http://mixxx.org/wiki/doku.php>
   - The IRC channel: chat.freenode.net **\#mixxx**
-  - The launchpad entry is also interesting as an overview of some
-    things: <https://launchpad.net/mixxx>
+  - Our Launchpad page is also interesting as an overview of
+    development: <https://launchpad.net/mixxx>

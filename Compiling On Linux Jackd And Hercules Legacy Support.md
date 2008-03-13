@@ -4,8 +4,8 @@ I could have use the 1.6.0b2 binaries on my machine except for two
 problems:
 
   - I wanted Hercules Control MP3 support
-  - PortAudio has a bug that prevents JACK AUDIO from showing as a sound
-    API option
+  - ubuntu gutsy PortAudio has a bug that prevents JACK AUDIO from
+    showing as a sound API option
 
 A simple compile-time option gets Hercules support. For the latter,
 mixxx won't list Jack as a sound API choice unless `libdjconsole0` was
@@ -32,7 +32,7 @@ Hopefully you can simply paste this crap into an xterm and have it work.
 You only need to do this when changing from 1.5.x to 1.6.x, or probably
 any major revision change.
 
-    sudo aptitude purge mixxx mixxx-data
+    sudo apt-get purge mixxx mixxx-data
 
     sudo apt-get build-dep mixxx 
     sudo apt-get install subversion

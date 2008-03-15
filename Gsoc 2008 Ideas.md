@@ -121,7 +121,7 @@ and wonderful, we'd like to hear them. So go ahead and apply.
 
 # Tips For Applying (PICK ME\!)
 
-**Again this section will only be relevant if we get accepted.**
+**Again, this section will only be relevant if we get accepted.**
 
 People often want to know what we're looking for in applications and
 what they can do to get selected. Here are three tips.

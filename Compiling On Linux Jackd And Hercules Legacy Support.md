@@ -49,7 +49,7 @@ option to mixxx.
 for clarity...)
 
     cd ~/Music/Code
-    svn co https://www.portaudio.com/repos/portaudio/branches/v19-devel
+    svn co https://www.portaudio.com/repos/portaudio/trunk
     cd v19-devel
     ./configure
     make

@@ -35,9 +35,7 @@ any major revision change.
     sudo apt-get purge mixxx mixxx-data
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install subversion
-    sudo apt-get install scons
-    sudo apt-get install libqt4-dev
+    sudo apt-get install subversion scons libqt4-dev
 
 This will allow the soon-to-be-compiled PortAudio to offer JACK as an
 option to mixxx.

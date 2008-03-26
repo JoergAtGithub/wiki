@@ -42,7 +42,7 @@ If you got the source code from SVN, change to the newly created "mixxx"
 directory, and use scons to compile and install:
 
     cd mixxx
-    sudo scons install
+    sudo scons prefix=/usr install
 
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:

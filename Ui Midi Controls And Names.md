@@ -59,18 +59,20 @@ mixxx/src directory:
 \======
 
     #!/bin/sh
+    # set -x
     IFS='
     '
     last_control=
-    for ck in `grep 'ConfigKey(\"' *.cpp | grep -v "Channel2" | sed -e 's/.*ConfigKey(//g' -e 's/, */,/g' | cut -d\) -f1 | sed -e 's/\[Channel1\]/\[ChannelN\] (where N is a number 1 or 2)/g' | sort -fu`; do 
+    
+    for ck in `grep ConfigKey *.cpp | sed -e 's/ConfigKey(group/ConfigKey("[Master]"/g' | grep 'ConfigKey("' | grep -v "Channel2" | sed -e 's/.*ConfigKey(//g' -e 's/, */,/g' | cut -d\) -f1 | sed -e 's/\[Channel1\]/\[ChannelN\] (where N is a number 1 or 2)/g' | sort -fu`; do
       control=`echo $ck|cut -d\" -f2`
-      if [ "$control" != "$last_control" ]; then 
+      if [ "$control" != "$last_control" ]; then
         echo
         echo $control
         last_control=$control
       fi
       key=`echo $ck|cut -d\" -f4`
-      echo "* ${key}"
+      if [ ! -z "${key}" ]; then echo "* ${key}"; fi
     done
 
 ## Using Controls Inside Mixxx (for developers)

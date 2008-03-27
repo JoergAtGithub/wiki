@@ -32,12 +32,6 @@ Hopefully you can simply paste this crap into an xterm and have it work.
 You only need to do this when changing from 1.5.x to 1.6.x, or probably
 any major revision change.
 
-NOTE: skip this step\! On 7.10 and 8.04 apt-get wants to also purge
-'ubuntustudio-audio', which is wrong-headed and silly; also the whole
-build process works without it.
-
-    ''deprecated'' sudo apt-get purge mixxx mixxx-data
-
     sudo apt-get build-dep mixxx 
     sudo apt-get install subversion scons libqt4-dev
 

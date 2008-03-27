@@ -1,4 +1,4 @@
-# Compiling mixxx on Ubuntu 7.10
+# Compiling mixxx on Ubuntu 7.10 or 8.04
 
 I could have use the 1.6.0b2 binaries on my machine except for two
 problems:

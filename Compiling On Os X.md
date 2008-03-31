@@ -56,6 +56,9 @@ directory, and use scons to compile and install:
 
 This will generate Mixxx.app.
 
+**Note:** At the moment the Qt version in the build file is outdated.
+You might have to change it manually depending on your version of Qt.
+
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:
 

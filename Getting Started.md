@@ -13,11 +13,27 @@ Mixxx will run on the Linux, Mac OS X and Windows operating systems
 ## Hardware Guide
 
 Before you download and install Mixxx consider what your set-up will be.
-Some basic ways of using and controlling Mixxx are:
+Your PC\\Laptop, Audio Output, Operating System an
 
-  - Laptop\\PC (Stand-Alone)
-  - Laptop\\PC with DJ Controller (Deck Only)
-  - Laptop\\PC with DJ Controller DJ Controller (Audio & Deck)
+### Your Set-up
+
+Some common set-ups are
+
+**Laptop(Stand-Alone)** Just a laptop and the software. Relying on the
+onboad sound card to output your audio **Laptop with DJ Controller (Deck
+Only)**
+
+**Laptop with DJ Controller DJ Controller (Audio & Deck)** **Laptop\\PC
+with [Vinyl Control](Vinyl%20Control) (feature due in 1.6.0)**
+
+### Audio Output
+
+The ideal way for any DJ to mix live is to have 4 channels of Audio
+output. 2 for the main mix and 2 for cueing and previewing the next
+track you are trying to mix in. This means either having multiple
+soundcards or a soundcard capable of outputting 4 channels of audio.
+
+### Dj Controllers
 
 If you have made a decision about hardware make sure you consider
 [System Requirements](System%20Requirements) and [Hardware

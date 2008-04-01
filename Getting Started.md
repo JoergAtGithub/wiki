@@ -6,8 +6,9 @@ music (MP3, Ogg Vorbis, and Wave).
 The basic requirements for Mixxx are a pc or laptop with a reasonable
 amount of storage space on the hard drive for your music, at least 1
 audio card for outputting the sound and a way of controlling the
-software either by mouse keyboard or a hardware DJ Controller. See
-[System Requirements](System%20Requirements) for further details.
+software either by mouse, keyboard or a hardware DJ Controller.
+
+Mixxx will run on the Linux, Mac OS X and Windows operating systems
 
 ## Hardware Guide
 
@@ -18,6 +19,8 @@ Some basic ways of using and controlling Mixxx are:
   - Laptop\\PC with DJ Controller (Deck Only)
   - Laptop\\PC with DJ Controller DJ Controller (Audio & Deck)
 
-## Operating Systems
+If you have made a decision about hardware make sure you consider
+[System Requirements](System%20Requirements) and [Hardware
+Compatibility](Hardware%20Compatibility)
 
-### Mixxx Software
+## Operating Systems

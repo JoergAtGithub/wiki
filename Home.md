@@ -13,6 +13,7 @@ continue to be useful.
 
 ## User Documentation
 
+  - [Getting Started](Getting%20Started)
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
   - [Tutorials](Tutorials)

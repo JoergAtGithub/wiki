@@ -12,10 +12,9 @@ Mixxx will run on the Linux, Mac OS X and Windows operating systems
 
 ## Hardware Guide
 
-Before you download and install Mixxx consider what your set-up will be.
-Your PC\\Laptop, Audio Output, Operating System an
-
-### Your Set-up
+Before you download and install Mixxx consider what your harware set-up
+will be. Your PC\\Laptop, Audio Output and how you are planning to
+control the software.
 
 Some common set-ups are
 
@@ -28,7 +27,7 @@ output your audio
 
 ##### Laptop with DJ Controller DJ Controller (Audio & Deck)
 
-##### Laptop\\PC with [Vinyl Control](Vinyl%20Control) (feature due in 1.6.0)
+##### Laptop with Vinyl Control
 
 ### Audio Output
 

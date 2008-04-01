@@ -16,7 +16,8 @@ Before you download and install Mixxx consider what your harware set-up
 will be. Your PC\\Laptop, Audio Output and how you are planning to
 control the software.
 
-Some common set-ups are
+While you can run Mixxx on a PC the examples here refer to using a
+laptop.
 
 ##### Laptop(Stand-Alone)
 
@@ -24,6 +25,8 @@ Just a laptop and the software. Relying on the onboad sound card to
 output your audio
 
 ##### Laptop with DJ Controller (Deck Only)
+
+A deck only DJ Controller allows you to control the Mixxx software
 
 ##### Laptop with DJ Controller DJ Controller (Audio & Deck)
 

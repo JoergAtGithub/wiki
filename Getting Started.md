@@ -10,12 +10,13 @@ software either by mouse keyboard or a hardware DJ Controller.
 
 ## Hardware Guide
 
-Consider how are you going to use Mixxx? There are several ways of using
-Mixxx
+Before you download and install Mixxx consider what your set-up will be
+
+Some basic ways of using and controlling Mixxx are:
 
   - Laptop\\PC (Stand-Alone)
-  - DJ Controller (Deck Only)
-  - DJ Controller (Audio & Deck)
+  - Laptop\\PC with DJ Controller (Deck Only)
+  - Laptop\\PC with DJ Controller DJ Controller (Audio & Deck)
 
 ## Operating Systems
 

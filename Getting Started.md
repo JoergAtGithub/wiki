@@ -8,14 +8,15 @@ amount of storage space on the hard drive for your music, at least 1
 audio card for outputting the sound and a way of controlling the
 software either by mouse keyboard or a hardware DJ Controller.
 
-## Hardware
+## Hardware Guide
 
-### Laptop or PC
+Consider how are you going to use Mixxx? There are several ways of using
+Mixxx
 
-### Audio Cards
+  - Laptop\\PC (Stand-Alone)
+  - DJ Controller (Deck Only)
+  - DJ Controller (Audio & Deck)
 
-### DJ Controllers
+## Operating Systems
 
-#### All In One (Audio & Control)
-
-#### Deck Only Controller
+### Mixxx Software

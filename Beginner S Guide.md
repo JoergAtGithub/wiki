@@ -38,7 +38,7 @@ For an example of a 2 Deck DJ Controller see the product site for the
 Hercules DJ control MP3
 
 Link to external site:
-<http://www.hercules.com/us/DJ-Music/bdd/p/14/dj-control-mp3/>
+<http://www.hercules.com/us/DJ-Music/bdd/p/14/dj-control-mp3>
 
 ## Laptop with DJ Controller DJ Controller (Audio & Deck)
 

@@ -63,11 +63,14 @@ channels of audio.
 **What is latency?**
 
 It is the time delay between the moment something is initiated and the
-moment the change becomes detecable.
+moment the change becomes detectable.
 
 **So what does that have to do with Mixxx?**
 
-Your
+Your DJ setup must include a sound card whether internal (Onboard or PCI
+sound cards) or external (USB sound card or DJ Controller). The
+latency... If your set up includes a DJ Controller deck you may find
+that there is Midi latency to cosider.
 
 ## Audio Latency
 

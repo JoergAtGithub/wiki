@@ -46,7 +46,7 @@ controller, plug your outputs to the sound system and on some units add
 a CDJ, Turntable or Microphone.
 
 For an example of a DJ Controller with Audio & Deck control see the
-product site for [Hercules DJ Colsole
+product site for [Hercules DJ Console
 Mk2](http://www.hercules.com/us/DJ-Music/bdd/p/13/dj-console-mk2-traktor-3-le/)
 
 ### Audio Output

@@ -43,7 +43,9 @@ Link to external site:
 ##### Laptop with DJ Controller DJ Controller (Audio & Deck)
 
 A DJ Controller with Audio means that your deck controller also has
-onboard sound. This allows you to cue through your headphones and
+onboard sound. This allows you to plug your headphones into the
+controller, plug your outputs to the sound system and on some units add
+a CDJ, Turntable or Microphone
 
 ##### Laptop with Vinyl Control
 

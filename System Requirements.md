@@ -33,7 +33,7 @@ guess.
 |              | Sound     | Built-in                     |                            |       |
 |              | Other     |                              |                            |       |
 | \< 20ms      | CPU       |                              | Macbook 2.2 Ghz Core 2 Duo |       |
-|              | Sound     |                              | Built-in                   |       |
+|              | Sound     |                              | Built-in, Echo AudioFire 2 |       |
 |              | Other     |                              |                            |       |
 
 #### 1.5.0

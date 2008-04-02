@@ -58,7 +58,20 @@ the next track you are trying to mix in (to your headphones). This means
 either having multiple soundcards or a soundcard capable of outputting 4
 channels of audio.
 
-## Latency
+# Latency
+
+**What is latency?**
+
+It is the time delay between the moment something is initiated and the
+moment the change becomes detecable.
+
+**So what does that have to do with Mixxx?**
+
+Your
+
+## Audio Latency
+
+## Midi Latency
 
 Soundcards
 

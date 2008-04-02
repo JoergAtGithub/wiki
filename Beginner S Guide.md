@@ -72,12 +72,6 @@ sound cards) or external (USB sound card or DJ Controller). The
 latency... If your set up includes a DJ Controller deck you may find
 that there is Midi latency to cosider.
 
-## Audio Latency
-
-## Midi Latency
-
-Soundcards
-
 # System Requirements & Hardware Compatibility
 
 Make sure you consider [System Requirements](System%20Requirements) and

@@ -24,17 +24,17 @@ guess.
 
 #### 1.6.0-beta2
 
-| Latency Band | Component | Windows                      | Mac OS | Linux |
-| ------------ | --------- | ---------------------------- | ------ | ----- |
-| \< 100ms     | CPU       | Intel Core Duo T2300 1.66GhZ |        |       |
-|              | Sound     | Built-in                     |        |       |
-|              | Other     |                              |        |       |
-| \< 50ms      | CPU       | Intel Core Duo T2300 1.66GhZ |        |       |
-|              | Sound     | Built-in                     |        |       |
-|              | Other     |                              |        |       |
-| \< 20ms      | CPU       |                              |        |       |
-|              | Sound     |                              |        |       |
-|              | Other     |                              |        |       |
+| Latency Band | Component | Windows                      | Mac OS                     | Linux |
+| ------------ | --------- | ---------------------------- | -------------------------- | ----- |
+| \< 100ms     | CPU       | Intel Core Duo T2300 1.66GhZ |                            |       |
+|              | Sound     | Built-in                     |                            |       |
+|              | Other     |                              |                            |       |
+| \< 50ms      | CPU       | Intel Core Duo T2300 1.66GhZ |                            |       |
+|              | Sound     | Built-in                     |                            |       |
+|              | Other     |                              |                            |       |
+| \< 20ms      | CPU       |                              | Macbook 2.2 Ghz Core 2 Duo |       |
+|              | Sound     |                              | Built-in                   |       |
+|              | Other     |                              |                            |       |
 
 #### 1.5.0
 

@@ -29,10 +29,11 @@ to output your audio
 A deck only DJ Controller allows you to control the Mixxx software. They
 can be a single or twin deck setup, but generally the twin deck
 controllers will have a jog wheel, volume faders, cross fader, EQ knobs,
-play & cue buttons. DJ controller's are a MIDI controller and are now
-commonly using USB to connect to your laptop. You still need a seperate
-audio card for listening through your headphones and the outputting the
-main mix.
+play & cue buttons. DJ controller's are a MIDI controller and while some
+manufacturers use a MIDI interface and cables many are now commonly
+using USB to connect to your laptop. You still need a seperate audio
+card for listening through your headphones and the outputting the main
+mix.
 
 For an example of a 2 Deck DJ Controller see the product site for the
 [Hercules DJ control

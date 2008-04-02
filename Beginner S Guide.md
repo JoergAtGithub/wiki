@@ -49,12 +49,13 @@ For an example of a DJ Controller with Audio & Deck control see the
 product site for [Hercules DJ Console
 Mk2](http://www.hercules.com/us/DJ-Music/bdd/p/13/dj-console-mk2-traktor-3-le/)
 
-### Audio Output
+# Audio Configuration
 
 The ideal way for any DJ to mix live is to have 4 channels of Audio
-output. 2 for the main mix and 2 for cueing and previewing the next
-track you are trying to mix in. This means either having multiple
-soundcards or a soundcard capable of outputting 4 channels of audio.
+output. 2 for the main mix (to the room) and 2 for cueing and previewing
+the next track you are trying to mix in (to your headphones). This means
+either having multiple soundcards or a soundcard capable of outputting 4
+channels of audio.
 
 ### Dj Controllers
 

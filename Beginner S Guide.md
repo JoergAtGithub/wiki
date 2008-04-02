@@ -10,7 +10,7 @@ software either by mouse, keyboard or a hardware DJ Controller.
 
 Mixxx will run on the Linux, Mac OS X and Windows operating systems
 
-## Hardware Guide
+# Hardware Overview
 
 Before you download and install Mixxx consider what your harware set-up
 will be. Your PC\\Laptop, Audio Output and how you are planning to
@@ -19,12 +19,12 @@ control the software.
 While you can run Mixxx on a PC the examples here refer to using a
 laptop.
 
-##### Laptop(Stand-Alone)
+## Laptop(Stand-Alone)
 
 Just a laptop and the Mixx software. Relying on the onboard sound card
 to output your audio
 
-##### Laptop with 2 Deck DJ Controller (Deck Only)
+## Laptop with 2 Deck DJ Controller (Deck Only)
 
 A deck only DJ Controller allows you to control the Mixxx software. They
 can be a single or twin deck setup, but generally the twin deck
@@ -40,7 +40,7 @@ Hercules DJ control MP3
 Link to external site:
 <http://www.hercules.com/us/DJ-Music/bdd/p/14/dj-control-mp3/>
 
-##### Laptop with DJ Controller DJ Controller (Audio & Deck)
+## Laptop with DJ Controller DJ Controller (Audio & Deck)
 
 A DJ Controller with Audio means that your deck controller also has
 onboard sound. This allows you to plug your headphones into the

@@ -21,14 +21,19 @@ laptop.
 
 ##### Laptop(Stand-Alone)
 
-Just a laptop and the software. Relying on the onboad sound card to
-output your audio
+Just a laptop and the Mixx software. Relying on the onboard sound card
+to output your audio
 
 ##### Laptop with DJ Controller (Deck Only)
 
-A deck only DJ Controller allows you to control the Mixxx software
+A deck only DJ Controller allows you to control the Mixxx software. They
+can be a single or twin deck setup and generally will have a The Deck
+only DJ controller is a MIDI controller. It allows you to control the
 
 ##### Laptop with DJ Controller DJ Controller (Audio & Deck)
+
+A DJ Controller with Audio means that your deck controller also has
+onboard sound. This allows you to cue through your headphones and
 
 ##### Laptop with Vinyl Control
 

@@ -58,6 +58,10 @@ the next track you are trying to mix in (to your headphones). This means
 either having multiple soundcards or a soundcard capable of outputting 4
 channels of audio.
 
+## Latency
+
+Soundcards
+
 # System Requirements & Hardware Compatibility
 
 Make sure you consider [System Requirements](System%20Requirements) and

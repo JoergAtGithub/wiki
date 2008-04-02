@@ -6,20 +6,20 @@ music (MP3, Ogg Vorbis, and Wave).
 The basic requirements for Mixxx are a pc or laptop with a reasonable
 amount of storage space on the hard drive for your music, at least 1
 audio card for outputting the sound and a way of controlling the
-software either by mouse, keyboard or a hardware DJ Controller.
+software either by mouse, keyboard or hardware DJ Controller.
 
 Mixxx will run on the Linux, Mac OS X and Windows operating systems
 
 # Hardware Overview
 
-Before you download and install Mixxx consider what your harware set-up
-will be. Your PC\\Laptop, Audio Output and how you are planning to
+Before you download and install Mixxx consider what your hardware set-up
+will be. You’re PC\\Laptop, Audio Output and how you are planning to
 control the software.
 
 While you can run Mixxx on a PC the examples here refer to using a
 laptop.
 
-## Laptop(Stand-Alone)
+## Laptop (Stand-Alone)
 
 Just a laptop and the Mixx software. Relying on the onboard sound card
 to output your audio
@@ -31,7 +31,7 @@ can be a single or twin deck setup, but generally the twin deck
 controllers will have a jog wheel, volume faders, cross fader, EQ knobs,
 play & cue buttons. DJ controller's are a MIDI controller and while some
 manufacturers use a MIDI interface and cables many are now commonly
-using USB to connect to your laptop. You still need a seperate audio
+using USB to connect to your laptop. You still need a separate audio
 card for listening through your headphones and the outputting the main
 mix.
 
@@ -62,5 +62,3 @@ channels of audio.
 
 Make sure you consider [System Requirements](System%20Requirements) and
 [Hardware Compatibility](Hardware%20Compatibility)
-
-## Operating Systems

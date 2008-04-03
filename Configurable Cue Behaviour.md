@@ -2,8 +2,8 @@
 
 ## Summary and Rationale
 
-**Status**: This specification is in the **planning and design** stage,
-and edits are welcome.
+**Status**: This specification is **in progress**. Any extra features
+people think of should be sent to the mailing list.
 
 Add support for two switchable cue behaviours. Many users are familiar
 with a particular cue behaviour, and it would make it easier for users

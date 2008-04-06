@@ -36,8 +36,7 @@ inside a ifdef block
 
 Project Properties -\> Include Paths and Symbols
 
-  - Add Preprocessor Symbol -\>
-    <span class="underline">LIBDJCONSOLE</span>=1
+  - Add Preprocessor Symbol -\> ‾‾LIBDJCONSOLE‾‾ =1
 
 # See Also
 

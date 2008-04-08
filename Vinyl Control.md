@@ -117,7 +117,6 @@ properly.
   - **Windows:** Fire up "Sound Recorder" from
     Start-\>Programs-\>Accessories-\>Entertainment, then follow the
     instructions below. 
-  - **Linux:** Fire up "Audacity", then follow the instructions below.
 
 Click record and hit play on your turntable. After a few seconds, stop
 Sound Recorder and your turntable. Playback the sound that was just
@@ -127,13 +126,30 @@ tone, check your recording volume mixer and capture settings. Also,
 check that your turntable is plugged into the correct plug on your
 soundcard.
 
-The last step to try is to launch Mixxx, and go into the "Vinyl Control"
-pane in the preferences dialog. Select the soundcard with the turntable
-attached to it under "Deck 1", and select the timecode you're using.
-Click OK, then in the menu bar at the top, select "Options-\>Enable
-vinyl control". Load a track into Mixxx's top player (Player 1) and hit
-play on your turntable. Mixxx should begin playing the track in Player
-1.
+  - **Linux:** Grab a copy of [xwax](http://www.xwax.co.uk/), then
+    follow the instructions below. (If you want to use a sound editor
+    like [Audacity](http://audacity.sourceforge.net/), follow the
+    Windows instructions above.)
+
+Start xwax with the -t option set for the type of timecode vinyl/cd
+you're using, -l for the path to your music files, and -d for the sound
+device your deck is hooked to. (E.g. xwax -t serato\_cd -l
+\~/MusicFiles/ -d /dev/dsp ) [More
+info](http://www.xwax.co.uk/guide.html). Now just start your record/CD
+and watch the timecode scope (crosshairs) in the upper right corner. You
+should see a healthy double-circle display. Adjust the input levels
+using a mixer control for the device (eg. alsamixer). When settled, the
+circle should approximately fill the timecode scope display but not be
+cut off. (If you don't see anything, check the mixer program to be sure
+the Line input is selected/enabled and turned up.)
+
+**For both:** The last step to try is to launch Mixxx, and go into the
+"Vinyl Control" pane in the preferences dialog. Select the soundcard
+with the turntable attached to it under "Deck 1", and select the
+timecode you're using. Click OK, then in the menu bar at the top, select
+"Options-\>Enable vinyl control". Load a track into Mixxx's top player
+(Player 1) and hit play on your turntable. Mixxx should begin playing
+the track in Player 1.
 
 ## How can I help?
 

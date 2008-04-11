@@ -1,6 +1,6 @@
 Let's try to figure out how we want this organized...
 
-Table of Contents
+# Table of Contents
 
 1.  [Beginner's Guide](Beginner's%20Guide)
 2.  [Introduction](manual#introduction).
@@ -9,6 +9,8 @@ Table of Contents
 5.  [DJing with Mixxx](manual#djing_with_mixxx).
 6.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).
+    1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
+    2.  [MIDI Controllers](manual#midi_controllers).
 7.  [Getting Involved](manual#getting_involved).
 
 # Introduction

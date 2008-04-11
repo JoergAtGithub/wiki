@@ -14,6 +14,7 @@ continue to be useful.
 ## User Documentation
 
   - [Beginner's Guide](Beginner's%20Guide)
+  - [Manual](Manual)
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
   - [Tutorials](Tutorials)

@@ -70,7 +70,7 @@ moment the change becomes detectable.
 Your DJ setup must include a sound card whether internal (Onboard or PCI
 sound cards) or external (USB sound card or DJ Controller). The
 latency... If your set up includes a DJ Controller deck you may find
-that there is Midi latency to cosider.
+that there is Midi latency to consider.
 
 # System Requirements & Hardware Compatibility
 

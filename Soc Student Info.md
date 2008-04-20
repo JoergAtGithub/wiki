@@ -86,8 +86,8 @@ Our expectations of the GSoCers are:
     feel confined to just your project scope. Remember though, that you
     will be evaluated on your project's progress.
 
-You've been selected because you presented the great proposals, you've
-got the skills to pull them off and because we sense in each of you a
+You've been selected because you presented great proposals, you've got
+the skills to pull them off and because we sense in each of you a
 passion for Music/DJing.
 
 Mentors expectations of ourselves:

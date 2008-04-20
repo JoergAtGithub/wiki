@@ -21,7 +21,40 @@ inclusion in Summer of Code for the first time last year.
 
 ### Technical Info
 
-Qt, scons, cross-platform, kittens
+**Mixxx** was designed with a strong focus on cross-platform
+portability. **Qt** gives us a very strong cross-platform graphics
+toolkit, and has additional benefits like a thorough set of data
+structure implementations (eg. QMap, QList, etc.). Mixxx was originally
+written using Qt 3, but during the summer of 2007, Mixxx was ported to
+Qt 4. At the same time, we moved away from a custom qmake-based build
+system, instead opting for SCONS. **SCONS** is a python-based build
+system that has easy syntax, and is still very powerful. Our single
+`SConscript` file (in the "src" directory) checks all of our
+dependencies and builds Mixxx on Windows, OS X, and Linux.
+
+New experimental (and potentially unstable) features are coded such that
+they are only enabled when they are turned on at compile-time. For
+example, during its development, recording was turned on by compiling
+with `scons recording=1`. Now that recording is stable and reasonably
+well tested, the compile flag has disappeared and it is always built
+into Mixxx. For a full list of build flags, run `scons --help`
+
+One of our goals is to minimize the amount of platform-specific code we
+have. Before we moved our audio core to **PortAudio**, we had separate
+backend for ALSA, CoreAudio, ASIO, WMME, etc. This is a losing strategy
+for several reasons:
+
+1.  Our code base was inflated by a factor of X.
+2.  If we wanted to add new features (eg. multiple soundcard support),
+    it was going to require modifying 5 different audio backends.
+    Furthermore, nobody has the time/energy/computers to test Windows,
+    OS X, and Linux implementations of stuff.
+
+By switching to PortAudio, the platform-specific audio code was removed,
+and our audio core is now much more flexible. Currently, our MIDI code
+still has three different backends (Windows, CoreMidi, and ALSA-seq),
+although creating a single PortMidi-based backend is something we will
+consider in the future.
 
 ## People
 

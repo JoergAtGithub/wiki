@@ -56,6 +56,51 @@ still has three different backends (Windows, CoreMidi, and ALSA-seq),
 although creating a single PortMidi-based backend is something we will
 consider in the future.
 
+### Managing Expectations
+
+When you enter the work world, you'll hear managers drone-on about how
+with better communication all the bad things that happened could have
+been avoided.
+
+Its only partially true, problems are almost assured to crop up from
+time to time, to be successful - how you handle a technical problem must
+include how you deal with the people you report to and the clients you
+provide service to. \[Mentors and Mixxx community\]
+
+This is calling *managing expectations*.
+
+Our expectations of the GSoCers are:
+
+  - Take the initiative. Don't sit around waiting for someone to ask you
+    if you need help. If you are stuck, make an effort to understand the
+    problem so you can good questions, then ask... ask the Google, ask
+    the wiki, ask on IRC, ask a mentor, ask the mixxx-devel mailing
+    list. 
+  - We expect you to encounter problems, all of the mentors are here to
+    help all the students, so please bug us.
+  - Over-communicate rather then under-communicate.
+  - Help each other out. We are all on the same team. Everyone will
+    pass/fail on their own, but we want everyone to pass big time (we
+    hope to get some amazing contributions from all of you).
+  - Feel free to dabble in other parts of Mixxx that interest you. Don't
+    feel confined to just your project scope. Remember though, that you
+    will be evaluated on your project's progress.
+
+You've been selected because you presented the great proposals, you've
+got the skills to pull them off and because we sense in each of you a
+passion for Music/DJing.
+
+Mentors expectations of ourselves:
+
+  - Ping the students at least once a week to get a progress updates -
+    any problems, what happened last week, what's planned for the week
+    coming up. 
+  - Offer feedback on patches. 
+  - Help students find solutions to problems, brainstorming, offer
+    suggestions: approaches, better coding style, optimizations, etc.
+  - ???
+  - Profit\!
+
 ## People
 
 As with any project, there are some names which you will see. Here's a
@@ -63,8 +108,11 @@ list of some:
 
 ### Mentor Team in Alphabetical Order
 
-  - Garth Dahlstrom - Long-time Mixxx contributor \[how long... I don't
-    know?\]. Experience with MIDI control, \[feel free to add more...\]
+  - Garth Dahlstrom - Long-time Mixxx contributor (since Mixxx
+    1.4.something). Most active on Hercules device support on Linux
+    (libDJConsole)/Windows(MIDI), various interface tweaks, and
+    occasional build script tweaks. Has a Hercules Mk2 and a Hercules
+    RMX console, both do MIDI on Windows.
   - Adam Davison - Lead developer and organisation admin for GSoC. Knows
     about Windows development, MIDI control, skins and probably some
     other stuff

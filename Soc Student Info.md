@@ -73,8 +73,8 @@ Our expectations of the GSoCers are:
 
   - Take the initiative. Don't sit around waiting for someone to ask you
     if you need help. If you are stuck, make an effort to understand the
-    problem so you can good questions, then ask... ask the Google, ask
-    the wiki, ask on IRC, ask a mentor, ask the mixxx-devel mailing
+    problem so you can ask good questions, then ask... ask the Google,
+    ask the wiki, ask on IRC, ask a mentor, ask the mixxx-devel mailing
     list. 
   - We expect you to encounter problems, all of the mentors are here to
     help all the students, so please bug us.

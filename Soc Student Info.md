@@ -64,8 +64,8 @@ been avoided.
 
 Its only partially true, problems are almost assured to crop up from
 time to time, to be successful - how you handle a technical problem must
-include how you deal with the people you report to and the clients you
-provide service to. \[Mentors and Mixxx community\]
+also include how you deal with the people you report to and the clients
+you provide service to. \[Mentors and Mixxx community\]
 
 This is calling *managing expectations*.
 

@@ -95,4 +95,20 @@ On IRC, Garth is jumpkick, Albert is asantoni, Adam is adam\_d.
 
 ## Community Resources
 
-Mailing list, wiki, forum, blog, irc channel ...
+There are a bunch of places where you can interact with the Mixxx
+community, here's a list of the main ones:
+
+  - mixxx-devel - This mailing list is the centre of all development
+    related discussion. You should all subscribe here:
+    <http://lists.sourceforge.net/lists/listinfo/mixxx-devel>, right
+    away if you haven't already.
+  - IRC - More immediate than mixxx-devel if the right person is
+    available, \#mixxx on freenode although I think you've all been
+    there already
+  - Wiki - A small but growing collection of useful documentation,
+    you're already here so I won't put a link :)
+  - Forum - We now have a brand new forum which will hopefully grow and
+    bring the user community closer to the development team over the
+    next few months, have a browse here: <http://www.mixxx.org/forums/>
+  - Blog - Irregular articles about Mixxx development progress:
+    <http://mixxxblog.blogspot.com>

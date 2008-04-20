@@ -15,6 +15,8 @@ Let's try to figure out how we want this organized...
 
 # Introduction
 
+Mixxx is software for DJs that allows you to mix songs live.
+
 # Installation
 
 # Configuration

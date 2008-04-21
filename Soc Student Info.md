@@ -105,6 +105,14 @@ Mentors expectations of ourselves:
   - ???
   - Profit\!
 
+### Some Suggested First Activities
+
+  - Sign up to the mixxx-devel mailing list and briefly introduce
+    yourself to the community, who you are, where you are based out of,
+    and what you are working on for GSoC... 
+  - Check out the code base from SVN
+  - Try build Mixxx
+
 ## People
 
 As with any project, there are some names which you will see. Here's a

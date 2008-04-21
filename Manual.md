@@ -19,6 +19,25 @@ Mixxx is software for DJs that allows you to mix songs live.
 
 # Installation
 
+## Windows
+
+Windows users can install Mixxx by double-clicking on the Mixxx
+installer executable.
+
+## Linux
+
+Linux users can often find Mixxx included with their favourite
+distribution. For example, **Ubuntu** users can install Mixxx through
+the *Applications-\>Add/Remove...* menu item. If Mixxx is not packaged
+for your distribution, you can compile Mixxx from scratch. For details
+on compiling Mixxx, see: [Compiling on Linux](Compiling%20on%20Linux)
+
+## OS X
+
+OS X (Intel) users can install Mixxx by double-clicking the Mixxx zip
+archive, and then dragging-and-dropping the Mixxx bundle into their
+*Applications* folder.
+
 # Configuration
 
 # DJing with Mixxx

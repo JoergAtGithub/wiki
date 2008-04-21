@@ -3,8 +3,17 @@
   - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
     editors
-  - on Windows, [notepad++](http://notepad-plus.sourceforge.net/) is
-    quite good.
+
+## Windows
+
+  - [notepad++](http://notepad-plus.sourceforge.net/) is quite a good
+    GPL editor.
+  - [WinMerge](http://winmerge.org/) is a decent GPL diff tool.
+  - [7-zip](http://www.7-zip.org/) is a pretty handy archiver. 
+
+See Also
+
+  - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
 
 # Console Dev Tools
 

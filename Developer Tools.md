@@ -13,6 +13,8 @@
 
   - [notepad++](http://notepad-plus.sourceforge.net/) is quite a good
     GPL editor.
+  - [Tortoise SVN](http://tortoisesvn.tigris.org/) is good for doing SVN
+    checkouts and commits.
   - [WinMerge](http://winmerge.org/) is a decent GPL diff tool.
   - [7-zip](http://www.7-zip.org/) is a pretty handy archiver. 
 

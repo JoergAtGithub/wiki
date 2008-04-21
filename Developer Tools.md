@@ -98,6 +98,11 @@ On Ubuntu Linux, G uses:
 
 <!-- end list -->
 
+  - Usage: 
+  - nano somefile.cpp:326:error: some compiler error message
+
+<!-- end list -->
+
     alias nano='smart_nano'
     ## Smart nano jumps to a line number when you give it filename:nnn where nnn is the line number (like compile warnings/errors)
     function smart_nano() {

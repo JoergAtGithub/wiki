@@ -110,7 +110,7 @@ Mentors expectations of ourselves:
   - Sign up to the mixxx-devel mailing list and briefly introduce
     yourself to the broader community; who you are, where you are based
     out of, and what you are working on for GSoC... 
-  - Sign up to the wiki and read the [wiki home
+  - Sign up to to become a wiki editor and read the [wiki home
     page](http://www.mixxx.org/wiki/) to get and idea of some of the
     stuff that's on here.
   - Check out the code base from

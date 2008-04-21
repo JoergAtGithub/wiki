@@ -133,7 +133,3 @@ On Ubuntu Linux, G uses:
       done
       /usr/bin/nano -w -c "${args[@]}"
     }
-
-# See Also
-
-  - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)

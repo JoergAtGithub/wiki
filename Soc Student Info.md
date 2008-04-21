@@ -62,10 +62,11 @@ When you enter the work world, you'll hear managers drone-on about how
 with better communication all the bad things that happened could have
 been avoided.
 
-Its only partially true, problems are almost assured to crop up from
-time to time. To be really successful in handling problems, you must
-also include how you deal with the people you report to and the clients
-you provide service to. \[Mentors and Mixxx community\]
+Its only partially true... Problems are almost assured to crop up from
+time to time. To be really successful in handling them, you must also
+include how you deal with the people you report to and the clients you
+provide service to in your approach. \[In this case mentors and the
+community of Mixxx users\]
 
 This is calling *managing expectations*.
 

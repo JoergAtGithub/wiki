@@ -66,6 +66,9 @@ On Ubuntu Linux, G uses:
 ## source-highlight
 
   - [source-highlight](http://packages.ubuntu.com/hardy/source-highlight)
+  - Usage: 
+  - vs somefile.cpp
+  - vs SConscript
 
 <!-- end list -->
 

@@ -117,9 +117,8 @@ Mentors expectations of ourselves:
   - Check out the code base from
     [SVN](https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx)
   - Try build Mixxx - if you are building on a Debian/Ubuntu flavour of
-    Linux check out [these](compiling_on_linux)
-    [Wiki](mixxx-compilation) [pages](compiling_on_an_asus_eeepc), if
-    you are on Windows [check
+    Linux check out these [Wiki](compiling_on_linux)
+    [pages](compiling_on_an_asus_eeepc), if you are on Windows [check
     here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
     or on OSX [check here](compiling_on_os_x)
 

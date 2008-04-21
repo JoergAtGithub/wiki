@@ -109,9 +109,19 @@ Mentors expectations of ourselves:
 
   - Sign up to the mixxx-devel mailing list and briefly introduce
     yourself to the community, who you are, where you are based out of,
-    and what you are working on for GSoC... 
-  - Check out the code base from SVN
-  - Try build Mixxx
+    and what you are working on for GSoC to the broader Mixxx
+    community... 
+  - Sign up to the wiki and read the [wiki home
+    page](http://www.mixxx.org/wiki/) to get and idea of some of the
+    stuff that's on here.
+  - Check out the code base from
+    [SVN](https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx)
+  - Try build Mixxx - if you are building on a Debian/Ubuntu flavour of
+    Linux check out [these](compiling_on_linux)
+    [Wiki](mixxx-compilation) [pages](compiling_on_an_asus_eeepc), if
+    you are on Windows [check
+    here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
+    or on OSX [check here](compiling_on_os_x)
 
 ## People
 

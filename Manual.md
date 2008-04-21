@@ -40,6 +40,29 @@ archive, and then dragging-and-dropping the Mixxx bundle into their
 
 # Configuration
 
+The first time Mixxx is started, you are asked to select a directory
+containing your music library. This directory will be scanned and any
+music found will be indexed in Mixxx's internal library. The music
+library path can be changed at any time in the preferences, via the
+*Library and Playlists* pane.
+
+Mixxx's preferences can be accessed by selecting
+*Options-\>Preferences*.
+
+When Mixxx is launched, it tries to select a reasonable sound device for
+output. You can check the settings Mixxx has selected in the *Sound
+Hardware* pane in the preferences.
+
+FIXME
+
+  - Blurb about setting up your soundcard
+  - Headphone cueing
+  - 4 channel soundcards
+  - Multiple soundcards
+  - Latency (lower = better, but not if you start hearing pops)
+  - Samplerates
+  - Sound APIs
+
 # DJing with Mixxx
 
 # Keys and Hardware Controllers

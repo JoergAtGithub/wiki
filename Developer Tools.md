@@ -1,5 +1,7 @@
 # Non-Console Dev Tools
 
+## Linux
+
   - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
     editors

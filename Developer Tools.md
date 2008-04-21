@@ -1,6 +1,8 @@
 # Non-Console Dev Tools
 
-  - gedit (Gnome) and kate (KDE) are both decent editors
+  - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
+    (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
+    editors
   - on Windows, [notepad++](http://notepad-plus.sourceforge.net/) is
     quite good.
 

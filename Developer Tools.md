@@ -5,6 +5,9 @@
   - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
     editors
+  - Meld and KDiff are decent diff tools
+  - [KDESvn](http://kdesvn.alwins-world.de/trac.fcgi) is what I used to
+    use to sync with SVN in KDE.
 
 ## Windows
 

@@ -22,7 +22,7 @@ Mixxx is software for DJs that allows you to mix songs live.
 ## Windows
 
 Windows users can install Mixxx by double-clicking on the Mixxx
-installer executable.
+installer executable. Mixxx is supported on Windows XP and Vista.
 
 ## Linux
 

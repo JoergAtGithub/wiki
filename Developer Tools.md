@@ -1,3 +1,9 @@
+# Non-Console Dev Tools
+
+  - gedit (Gnome) and kate (KDE) are both decent editors
+  - on Windows, [notepad++](http://notepad-plus.sourceforge.net/) is
+    quite good.
+
 # Console Dev Tools
 
 On Ubuntu Linux, G uses:

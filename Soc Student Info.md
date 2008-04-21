@@ -131,7 +131,8 @@ On IRC, Garth is jumpkick, Albert is asantoni, Adam is adam\_d.
     authors of Mixxx, no longer with the project.
   - Adam Bellinson/DJ Thread - Long time Mixxx user, does a weekly live
     show with Mixxx over on dnbradio.com
-  - John Sully - 
+  - John Sully - Contributor since Spring 2007, wrote recording, new EQ
+    code, improved VU meters, and more.
   - Paweł Bartkiewicz - SoC student from last year, implemented LADSPA
     support in Mixxx
   - Micah Lee - SoC student from last year, worked on BPM detection in

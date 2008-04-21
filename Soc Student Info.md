@@ -63,7 +63,7 @@ with better communication all the bad things that happened could have
 been avoided.
 
 Its only partially true, problems are almost assured to crop up from
-time to time, to be successful - how you handle a technical problem must
+time to time. To be really successful in handling problems, you must
 also include how you deal with the people you report to and the clients
 you provide service to. \[Mentors and Mixxx community\]
 

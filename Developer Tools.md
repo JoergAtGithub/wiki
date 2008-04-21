@@ -4,7 +4,8 @@
 
   - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
-    editors. ( Gedit has a nice dark colour scheme too. )
+    editors. ( Gedit has a nice dark colour scheme you can pick to use.
+    )
   - [Meld](http://meld.sourceforge.net/) and
     [Kompare](http://www.caffeinated.me.uk/kompare/) are decent diff
     tools

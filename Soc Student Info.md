@@ -121,6 +121,8 @@ Mentors expectations of ourselves:
     [pages](compiling_on_an_asus_eeepc), if you are on Windows [check
     here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
     or on OSX [check here](compiling_on_os_x)
+  - If you are a Linux console hacker check out the [developer
+    tools](developer_tools) page
 
 ## People
 

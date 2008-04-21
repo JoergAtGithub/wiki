@@ -108,7 +108,7 @@ Mentors expectations of ourselves:
 ### Some Suggested First Activities
 
   - Sign up to the mixxx-devel mailing list and briefly introduce
-    yourself to the broader community, who you are, where you are based
+    yourself to the broader community; who you are, where you are based
     out of, and what you are working on for GSoC... 
   - Sign up to the wiki and read the [wiki home
     page](http://www.mixxx.org/wiki/) to get and idea of some of the

@@ -42,6 +42,7 @@ visit our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
     Format](MIDI%20Controller%20Mapping%20File%20Format)
   - [Creating backtraces](Creating%20backtraces)
   - [MixxxScript](MixxxScript)
+  - [LADSPA](LADSPA)
   - Tutorials for new developers:
   - [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)

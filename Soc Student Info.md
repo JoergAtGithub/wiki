@@ -122,8 +122,8 @@ expectations*.
   - We expect you to encounter problems, all of the mentors are here to
     help all the students, so please bug us.
   - Try to set realistic goals and timelines for yourself. This comes
-    with experince, knowing code base and the problem domain. (Mentors
-    should try to help with this.)
+    with experince, knowing the code base and the problem domain.
+    (Mentors should try to help with this.)
   - Over-communicate rather then under-communicate.
   - Help each other out. We are all on the same team. Everyone will
     pass/fail on their own, but we want everyone to pass big time (we

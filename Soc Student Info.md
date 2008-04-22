@@ -72,7 +72,7 @@ list of some:
     RMX console, both do MIDI on Windows.
   - Adam Davison - Lead developer and organisation admin for GSoC. Knows
     about Windows development, MIDI control, skins and probably some
-    other stuff
+    other stuff he can't remember now.
   - Albert Santoni - Has written loads of code for Mixxx. Knows about
     Mac/Linux development, wrote the scons build system, vinyl control
     and more.

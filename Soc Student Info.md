@@ -224,8 +224,3 @@ community, here's a list of the main ones:
     here: <http://www.mixxx.org/forums/>
   - [Blog](http://mixxxblog.blogspot.com) - Irregular articles about
     Mixxx development progress: <http://mixxxblog.blogspot.com>
-
-### More Developer Resources
-
-  - Check out the [dev tools page](developer_tools) for stuff that makes
-    developing under Linux easier

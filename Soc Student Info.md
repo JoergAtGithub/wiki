@@ -178,8 +178,9 @@ bonding phase. Here is a list of things:
     sign up to the mixxx-devel mailing list and briefly introduce
     yourself to the broader community; who you are, where you are based
     out of, and what you are working on for GSoC... 
-  - You might also like to find an opportunity to have a chat either on
-    IRC or by e-mail, with your mentor.
+  - You will also want to find an opportunity to have a chat either on
+    IRC or by e-mail, with your mentor, especially to let him know your
+    commitments and schedule over the next couple of months.
   - Have a browse through at least some, if not all, of the sources of
     information listed in the Community Resources section below.
   - Sign up to to become a wiki editor
@@ -194,6 +195,11 @@ bonding phase. Here is a list of things:
     here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
     or on OSX [check here](compiling_on_os_x)
   - Check out the [developer tools](developer_tools) page
+
+We understand that many of you will have varying levels of school
+commitments over the next few weeks but you should try to do as many of
+these things as possible, this will leave you in an excellent position
+to start work as soon as the coding phases begin.
 
 ## Community Resources
 

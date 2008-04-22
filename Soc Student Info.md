@@ -38,7 +38,7 @@ they are only enabled when they are turned on at compile-time. For
 example, during its development, recording was turned on by compiling
 with `scons recording=1`. Now that recording is stable and reasonably
 well tested, the compile flag has disappeared and it is always built
-into Mixxx. For a full list of build flags, run `scons --help`
+into Mixxx. For a full list of build flags, run `scons ----help`
 
 One of our goals is to minimize the amount of platform-specific code we
 have. Before we moved our audio core to **PortAudio**, we had separate

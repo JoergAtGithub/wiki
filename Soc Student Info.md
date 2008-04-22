@@ -209,7 +209,8 @@ community, here's a list of the main ones:
     mixxx-devel if the right person is available, \#mixxx on freenode
     although I think you've all been there already
   - [Wiki](http://mixxx.org/wiki/) - A small but growing collection of
-    useful documentation, you're already here so I won't put a link :)
+    useful documentation. You should definitely add to it if you learn
+    things that aren't already written here.
   - [Forum](http://www.mixxx.org/forums/) - We now have a brand new
     forum which will hopefully grow and bring the user community closer
     to the development team over the next few months, have a browse

@@ -43,7 +43,7 @@ I'm not sure if Debian package names are correct.
 ## Using
 
 The LADSPA window is hidden by default. You can enable it by activating
-LADSPA -\> Show LADSPA window from the menu.
+LADSPA \> Show LADSPA window from the menu.
 
 Currently the following skins are supported: outlineSmall, outline,
 outlineClose, traditional, hercules, nCut.

@@ -1,5 +1,6 @@
 This page collects some introductory information which we hope will be
-of use to our students.
+of use to our students, especially during the community bonding phase of
+GSoC 2008.
 
 ## Mixxx
 
@@ -21,16 +22,16 @@ inclusion in Summer of Code for the first time last year.
 
 ### Technical Info
 
-**Mixxx** was designed with a strong focus on cross-platform
-portability. **Qt** gives us a very strong cross-platform graphics
-toolkit, and has additional benefits like a thorough set of data
-structure implementations (eg. QMap, QList, etc.). Mixxx was originally
-written using Qt 3, but during the summer of 2007, Mixxx was ported to
-Qt 4. At the same time, we moved away from a custom qmake-based build
-system, instead opting for SCONS. **SCONS** is a python-based build
-system that has easy syntax, and is still very powerful. Our single
-`SConscript` file (in the "src" directory) checks all of our
-dependencies and builds Mixxx on Windows, OS X, and Linux.
+Mixxx was designed with a strong focus on cross-platform portability.
+**Qt** gives us a very strong cross-platform graphics toolkit and has
+additional benefits like a thorough set of portable data structure
+implementations (eg. QMap, QList, etc.). Mixxx was originally written
+using Qt 3, but during the summer of 2007, Mixxx was ported to Qt 4. At
+the same time, we moved away from a custom qmake-based build system,
+instead opting for SCONS. **SCONS** is a python-based build system that
+has easy syntax, and is still very powerful. Our single `SConscript`
+file (in the "src" directory) checks all of our dependencies and builds
+Mixxx on Windows, OS X, and Linux.
 
 New experimental (and potentially unstable) features are coded such that
 they are only enabled when they are turned on at compile-time. For
@@ -50,77 +51,12 @@ for several reasons:
     Furthermore, nobody has the time/energy/computers to test Windows,
     OS X, and Linux implementations of stuff.
 
-By switching to PortAudio, the platform-specific audio code was removed,
-and our audio core is now much more flexible. Currently, our MIDI code
-still has three different backends (Windows, CoreMidi, and ALSA-seq),
-although creating a single PortMidi-based backend is something we will
-consider in the future.
-
-### Managing Expectations
-
-When you enter the work world, you'll hear managers drone-on about how
-with better communication all the bad things that happened could have
-been avoided.
-
-Its only partially true... Problems are almost assured to crop up from
-time to time. To be really successful in handling them, you must also
-include how you deal with the people you report to and the clients you
-provide service to in your approach to solving them. \[In this case
-mentors and the community of Mixxx users\]
-
-This is calling *managing expectations*.
-
-Our expectations of the GSoCers are:
-
-  - Take the initiative. Don't sit around waiting for someone to ask you
-    if you need help. If you are stuck, make an effort to understand the
-    problem so you can ask good questions, then ask... ask the Google,
-    ask the wiki, ask on IRC, ask a mentor, ask the mixxx-devel mailing
-    list. 
-  - We expect you to encounter problems, all of the mentors are here to
-    help all the students, so please bug us.
-  - Try to set realistic goals and timelines for yourself. This comes
-    with experince, knowing code base and the problem domain. (Mentors
-    should try to help with this.)
-  - Over-communicate rather then under-communicate.
-  - Help each other out. We are all on the same team. Everyone will
-    pass/fail on their own, but we want everyone to pass big time (we
-    hope to get some amazing contributions from all of you).
-  - Feel free to dabble in other parts of Mixxx that interest you. Don't
-    feel confined to just your project scope. Remember though, that you
-    will be evaluated on your project's progress.
-
-You've been selected because you presented great proposals, you've got
-the skills to pull them off and because we sense in each of you a
-passion for Music/DJing.
-
-Mentors expectations of ourselves:
-
-  - Ping the students at least once a week to get a progress updates -
-    any problems, what happened last week, what's planned for the week
-    coming up. 
-  - Offer feedback on patches. 
-  - Help students find solutions to problems, brainstorming, offer
-    suggestions: approaches, better coding style, optimizations, etc.
-  - ???
-  - Profit\!
-
-### Some Suggested First Activities
-
-  - Sign up to the mixxx-devel mailing list and briefly introduce
-    yourself to the broader community; who you are, where you are based
-    out of, and what you are working on for GSoC... 
-  - Sign up to to become a wiki editor and read the [wiki home
-    page](http://www.mixxx.org/wiki/) to get and idea of some of the
-    stuff that's on here.
-  - Check out the code base from
-    [SVN](https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx)
-  - Try build Mixxx - if you are building on a Debian/Ubuntu flavour of
-    Linux check out these [Wiki](compiling_on_linux)
-    [pages](compiling_on_an_asus_eeepc), if you are on Windows [check
-    here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
-    or on OSX [check here](compiling_on_os_x)
-  - Check out the [developer tools](developer_tools) page
+By switching to PortAudio, the platform-specific audio code moves to an
+external library, our audio core is now much more flexible and any
+improvements we make to PortAudio will be of benefit to the whole open
+source community. Currently, our MIDI code still has three different
+backends (Windows, CoreMidi, and ALSA-seq), although creating a single
+PortMidi-based backend is something we will consider in the future.
 
 ## People
 
@@ -162,6 +98,102 @@ On IRC, Garth is jumpkick, Albert is asantoni, Adam is adam\_d.
     interface
   - Mark Hills/radiomark - Author of xwax, an open source vinyl control
     project which Mixxx relies on
+
+## Managing Expectations
+
+When you enter the work world, you'll hear managers drone-on about how
+with better communication all the bad things that happened could have
+been avoided.
+
+Its only partially true... Problems are almost assured to crop up from
+time to time. To be really successful in handling them, you must also
+include how you deal with the people you report to and the clients you
+provide service to in your approach to solving them. \[In this case
+mentors and the community of Mixxx users\]. This is called *managing
+expectations*.
+
+### Some Advice for Students
+
+  - Take the initiative. Don't sit around waiting for someone to ask you
+    if you need help. If you are stuck, make an effort to understand the
+    problem so you can ask good questions, then ask... ask the Google,
+    ask the wiki, ask on IRC, ask a mentor, ask the mixxx-devel mailing
+    list.
+  - We expect you to encounter problems, all of the mentors are here to
+    help all the students, so please bug us.
+  - Try to set realistic goals and timelines for yourself. This comes
+    with experince, knowing code base and the problem domain. (Mentors
+    should try to help with this.)
+  - Over-communicate rather then under-communicate.
+  - Help each other out. We are all on the same team. Everyone will
+    pass/fail on their own, but we want everyone to pass big time (we
+    hope to get some amazing contributions from all of you).
+  - Feel free to dabble in other parts of Mixxx that interest you. Don't
+    feel confined to just your project scope. Remember though, that you
+    will be evaluated on your project's progress.
+
+You've been selected because you presented great proposals, you've got
+the skills to pull them off and because we sense in each of you a
+passion for Music/DJing.
+
+### What Mentors Should Be Doing For You
+
+You all have an assigned mentor, he has the following responsibilities:
+
+  - Having contact with you at least once a week (during the coding
+    phase at least) to get a progress update - any problems, what
+    happened last week, what's planned for the week coming up
+  - Evaluating your progress for Google
+  - Getting to know you and being your first point of contact for any
+    more personal issues you may encounter
+
+In the highly unlikely event that you have a problem with your assigned
+mentor, you should attempt to discuss it with them. Should this fail,
+Adam Davison is the organisation administrator and will deal with any
+such matters in confidence. If Adam is your mentor, you're screwed...
+just kidding :) you can speak to any other member of the mentoring team
+if you feel more comfortable.
+
+In addition to this, **you will be getting support from all 3 mentors**.
+Each member of the mentoring team has different expertise, different
+insights and not least of all different timezones. The whole team will
+do the following:
+
+  - Help students find solutions to problems, brainstorming, offer
+    suggestions: approaches, better coding style, optimizations, etc...
+  - Offer feedback on patches
+  - ???
+  - Profit\!
+
+Up to a point, the more people that you discuss a technical issue with,
+the better. **The recommended ways for having technical discussions are
+in \#mixxx on IRC or on mixxx-devel**
+
+### Some First Activities
+
+You're probably wondering what exactly you can do in the community
+bonding phase. Here is a list of things:
+
+  - The absolutely first thing you should do, as soon as possible, is
+    sign up to the mixxx-devel mailing list and briefly introduce
+    yourself to the broader community; who you are, where you are based
+    out of, and what you are working on for GSoC... 
+  - You might also like to find an opportunity to have a chat either on
+    IRC or by e-mail, with your mentor.
+  - Have a browse through at least some, if not all, of the sources of
+    information listed in the Community Resources section below.
+  - Sign up to to become a wiki editor
+  - Discuss your plans and designs with the community, people may well
+    be able to suggest things you haven't thought of, or offer possible
+    refinements
+  - Check out the code base from
+    [SVN](https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx)
+  - Try building Mixxx - if you are building on a Debian/Ubuntu flavour
+    of Linux check out these [Wiki](compiling_on_linux)
+    [pages](compiling_on_an_asus_eeepc), if you are on Windows [check
+    here](http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32),
+    or on OSX [check here](compiling_on_os_x)
+  - Check out the [developer tools](developer_tools) page
 
 ## Community Resources
 

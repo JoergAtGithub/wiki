@@ -169,7 +169,7 @@ Up to a point, the more people that you discuss a technical issue with,
 the better. **The recommended ways for having technical discussions are
 in \#mixxx on IRC or on mixxx-devel**
 
-### Some First Activities
+## Some First Activities
 
 You're probably wondering what exactly you can do in the community
 bonding phase. Here is a list of things:

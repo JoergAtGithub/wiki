@@ -177,7 +177,8 @@ bonding phase. Here is a list of things:
   - The absolutely first thing you should do, as soon as possible, is
     sign up to the mixxx-devel mailing list and briefly introduce
     yourself to the broader community; who you are, where you are based
-    out of, and what you are working on for GSoC... 
+    out of, what your IRC nick is and what you are working on for
+    GSoC... 
   - You will also want to find an opportunity to have a chat either on
     IRC or by e-mail, with your mentor, especially to let him know your
     commitments and schedule over the next couple of months.

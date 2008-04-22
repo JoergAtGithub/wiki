@@ -39,3 +39,11 @@ I'm not sure if Debian package names are correct.
 | Delay5s     | delay\_5s | cmt.so or delay.so   | cmt            | ladspa-cmt     | <http://www.ladspa.org/cmt>      |
 | DJFlanger   | djFlanger | dj\_flanger\_1438.so | swh-plugins    | swh-plugins    | <http://plugin.org.uk>           |
 | Karaoke     | karaoke   | karaoke\_1409.so     | swh-plugins    | swh-plugins    | <http://plugin.org.uk>           |
+
+## Using
+
+The LADSPA window is hidden by default. You can enable it by activating
+LADSPA -\> Show LADSPA window from the menu.
+
+Currently the following skins are supported: outlineSmall, outline,
+outlineClose, traditional, hercules, nCut.

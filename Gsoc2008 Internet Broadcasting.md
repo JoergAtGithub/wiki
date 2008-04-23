@@ -18,6 +18,14 @@ and Ogg Vorbis encoder will have to be written for this project as well.
 Metadata for the tracks will be sent separately for MP3 tracks or merged
 into the Ogg-container for Ogg Vorbis-tracks.
 
+### Detailed Application
+
+A detailed application is available in Portable Document Format here:
+<http://85.17.105.113/~wesley/mixxx_gsoc2008_broadcast_application.pdf>
+- This document contains an implementation analysis, information about
+my experience, my ideas about community interaction and personal
+information about myself.
+
 ### Milestones
 
 These milestones will keep track of the development process.

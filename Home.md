@@ -36,6 +36,7 @@ visit our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
   - [Coding Guidelines](Coding%20Guidelines)
+  - [Developer Tools](Developer%20Tools)
   - [Feature Discussion](Feature%20Discussion)
   - [UI/MIDI Controls and Names](UI/MIDI%20Controls%20and%20Names)
   - [MIDI Controller Mapping File

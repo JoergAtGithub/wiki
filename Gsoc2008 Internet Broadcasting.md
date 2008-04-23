@@ -17,3 +17,37 @@ their mix over the internet on any platform supported by Mixxx. An MP3
 and Ogg Vorbis encoder will have to be written for this project as well.
 Metadata for the tracks will be sent separately for MP3 tracks or merged
 into the Ogg-container for Ogg Vorbis-tracks.
+
+### Milestones
+
+These milestones will keep track of the development process.
+
+  - **Bold items** are items that have been implemented for the most
+    part.
+  - ***Italic/Bold items*** are items that are currently being worked
+    on.
+
+#### Milestone 1: Encoding
+
+  - develop MP3 encoder using liblame
+  - abstract a generic encoder class for both encoders
+  - finish up the encoders
+  - tweak and clean up code
+  - write API documentation
+
+#### Milestone 2: Broadcasting
+
+  - find out why libshout is messing up
+  - if we can't fix libshout: write own implementation instead
+  - tweak and clean up code
+  - write API documentation
+
+#### Milestone 3: Release
+
+  - put everything in broadcast/ subdir
+  - enable by default (if code is stable)
+  - write user documentation
+
+#### Milestone 4: TAFT
+
+  - Test, Analyze, Fix, Test again...

@@ -23,9 +23,6 @@ continue to be useful.
 
 ## Developer Documentation
 
-Attention prospective **Google Summer of Code 2008** students - Please
-visit our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
-
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Linux, JACKd and Hercules legacy
     support](Compiling%20on%20Linux,%20JACKd%20and%20Hercules%20legacy%20support),
@@ -56,6 +53,17 @@ visit our [GSoC 2008 Ideas](GSoC%202008%20Ideas) page.
   - [Skin Guidelines](Skin%20Guidelines)
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture)
+
+## Google Summer of Code 2008
+
+The following projects were accepted for Google Summer of Code 2008:
+
+  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by Russell Ryan
+  - [MIDI Control](gsoc2008/midi_control) by Tom Care
+  - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
+    Stessens
+  - [Stability and Crash
+    Recovery](gsoc2008/stability_and_crash_recovery) by Zack Elko
 
 ## Past Events
 

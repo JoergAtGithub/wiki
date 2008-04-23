@@ -17,3 +17,17 @@ Important points:
   - Latest version of his patch (at the time of writing):
     <http://www.jockusch.de/dm2/dm2-pre20080225.tgz>
   - It's got cool LED lights :)
+
+## Mixman under Windows
+
+Steps to get it working:
+
+  - [DM2 Install
+    CD](http://dm2.proboards23.com/index.cgi?board=DM2CD&action=display&thread=207)
+    - The DM2 install CD download, includes the Windows drivers.
+  - [MIDIYoke](http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm)
+    - Download and install MIDIYoke junction.
+  - [dm2midi](http://www.pdoom.ch/dm2/) - Then install dm2tomidi ....
+    this is the final piece that converts USB output to midi signals
+
+Source: <http://mixxx.org/forums/viewtopic.php?f=3&t=53>

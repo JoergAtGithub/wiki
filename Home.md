@@ -87,3 +87,5 @@ Additional [SoC Student Info](SoC%20Student%20Info)
   - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
     [bug tracker](https://bugs.launchpad.net/mixxx/).
   - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
+  - The blog: mixxxblog.blogspot.com and [previous
+    polls](previous%20polls).

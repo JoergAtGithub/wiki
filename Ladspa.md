@@ -46,4 +46,5 @@ The LADSPA window is hidden by default. You can enable it by activating
 LADSPA \> Show LADSPA window from the menu.
 
 Currently the following skins are supported: outlineSmall, outline,
-outlineClose, traditional, hercules, nCut.
+outlineClose, traditional, hercules, nCut, Collusion (1280), Collusion
+(1280-WS).

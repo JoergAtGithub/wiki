@@ -83,6 +83,8 @@ Check out these videos (YouTube):
   - [Mixxx Vinyl Control
     Demo 1](http://www.youtube.com/watch?v=U2ZPSSXlK60)
   - [Mixxx Vinyl Control Demo 2](http://youtube.com/watch?v=9dRLNT2yspg)
+  - [Mixxx Vinyl Control Demo 3 -
+    Scratching](http://www.youtube.com/watch?v=nAqI4HAcQi4)
 
 (Need more YouTube videos here, and a screenshot of the prefs dialog)
 

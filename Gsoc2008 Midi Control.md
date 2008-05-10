@@ -41,7 +41,25 @@ The basic goal of the project is to improve MIDI support in Mixxx. MIDI
 in Mixxx should be:
 
   - Effortless to configure
-  - Have support for common hardware 'out of the box'
-  - Be capable of supporting even the weirdest hardware combinations
-  - Reliable
-  - Maintainable
+
+<!-- end list -->
+
+``` 
+   * A MIDI learning system will mean that if a user can use the controller, they can use Mixxx!
+   * Support for a range of common MIDI controls (knobs, faders, encoders, jog wheels, buttons, etc)
+      * (idea) Support for learning non-standard controls, eg custom controls: a keyboard key as a button or trigger
+   * A GUI for the learning system, as well as an easy way to see current bindings and import/export settings
+      * MIDI message debug could be helpful here, eg for determining behaviour of a control
+* Have support for common hardware 'out of the box'
+   * Creation of intuitive profiles/presets for hardware
+   * Clear indication of extent of support for hardware (comments in MIDI presets?)
+* Be capable of supporting even the weirdest hardware combinations
+   * Multiple MIDI controllers
+   * Multiple ways of controlling a single function, eg transition to rotary faders should be seamless
+* Reliable
+   * MIDI response should always be predictable and usable
+   * MIDI cannot stop working halfway through a performance!
+* Maintainable
+   * Code quality
+   * Commenting
+```

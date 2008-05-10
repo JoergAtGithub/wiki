@@ -38,6 +38,10 @@ You can contact Tom or read about him at this page:
 ### Project Overview
 
 The basic goal of the project is to improve MIDI support in Mixxx. MIDI
-in Mixxx should be: \* Effortless to configure \* Have support for
-common hardware 'out of the box' \* Be capable of supporting even the
-weirdest hardware combinations \* Reliable \* Maintainable
+in Mixxx should be:
+
+  - Effortless to configure
+  - Have support for common hardware 'out of the box'
+  - Be capable of supporting even the weirdest hardware combinations
+  - Reliable
+  - Maintainable

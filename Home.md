@@ -46,6 +46,7 @@ continue to be useful.
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
   - Feature Specifications:
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
+  - [Looping](Looping)
 
 ## Artist Documentation
 

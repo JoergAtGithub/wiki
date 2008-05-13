@@ -66,8 +66,9 @@ in Mixxx should be:
 
 ### Basic Use Cases
 
-**Name:** MIDI Learn **Description:** The user wishes to add a binding
-for a MIDI control.
+**Name:** MIDI Learn
+
+**Description:** The user wishes to add a binding for a MIDI control.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects 'Add new binding'.
@@ -79,8 +80,10 @@ for a MIDI control.
     custom name, and the control type.
 6.  The user saves the binding and it works instantly.
 
-**Name:** Change MIDI Binding by Learn **Description:** The user wishes
-to change an existing binding using learning.
+**Name:** Change MIDI Binding by Learn
+
+**Description:** The user wishes to change an existing binding using
+learning.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects the binding they wish to change.
@@ -91,8 +94,10 @@ to change an existing binding using learning.
     custom name, and the control type.
 6.  The user saves the binding and it works instantly.
 
-**Name:** Export MIDI Bindings to file **Description:** The user wishes
-to export some or all of the bindings to a reusable format.
+**Name:** Export MIDI Bindings to file
+
+**Description:** The user wishes to export some or all of the bindings
+to a reusable format.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects the bindings they wish to export, perhaps with the
@@ -103,8 +108,9 @@ to export some or all of the bindings to a reusable format.
 5.  The selected bindings are exported, exporting all of the bindings if
     none were originally selected.
 
-**Name:** Import MIDI Bindings from file **Description:** The user
-wishes to import a list of MIDI bindings.
+**Name:** Import MIDI Bindings from file
+
+**Description:** The user wishes to import a list of MIDI bindings.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects 'Import bindings from XML'.

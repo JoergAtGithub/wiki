@@ -26,7 +26,26 @@ prevent trainwrecks.
 
 #### Setting Loops
 
-#### Toggling Looping
+**Ben's idea:** The "In" point of a loop is the Cue Point (or we could
+implement it that they're separate, but by default the In point is set
+to the Cue point when a track is loaded). The "Out" point you set in
+real-time and as soon as it's set, it starts looping. You can move
+either point by pressing the relevant button and using the search
+buttons or jog wheel to move it, which updates it in realtime, then
+press again to store the new position. Then there's a cancel/reloop
+button, to escape from the loop (when it ends) or to restart looping
+again.
+
+Important considerations:
+
+  - How to cancel/escape from looping
+  - What happens when someone clicks on the waveform summary to seek
+    outside of the loop? (cancel the looping?)
+  - How can we make this as easy and as obvious as possible to use?
+
+#### Mixxx Skin Considerations
+
+What buttons would we need to add to the main GUI (ie. all skins)?
 
 #### Preferences Dialog Considerations
 

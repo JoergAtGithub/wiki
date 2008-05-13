@@ -63,3 +63,53 @@ in Mixxx should be:
    * Code quality
    * Commenting
 ```
+
+### Basic Use Cases
+
+**Name:** MIDI Learn **Description:** The user wishes to add a binding
+for a MIDI control.
+
+1.  The user opens the MIDI Bindings dialog.
+2.  The user selects 'Add new binding'.
+3.  The user selects which aspect of the program they would like to bind
+    to the control.
+4.  The user uses their desired MIDI Control, and the program provides
+    visual feedback that it has detected the control.
+5.  The user enters in additional information, such as parameters, a
+    custom name, and the control type.
+6.  The user saves the binding and it works instantly.
+
+**Name:** Change MIDI Binding by Learn **Description:** The user wishes
+to change an existing binding using learning.
+
+1.  The user opens the MIDI Bindings dialog.
+2.  The user selects the binding they wish to change.
+3.  The user selects 'Change existing binding'.
+4.  The user uses their desired MIDI Control, and the program provides
+    visual feedback that it has detected the control.
+5.  The user enters in additional information, such as parameters, a
+    custom name, and the control type.
+6.  The user saves the binding and it works instantly.
+
+**Name:** Export MIDI Bindings to file **Description:** The user wishes
+to export some or all of the bindings to a reusable format.
+
+1.  The user opens the MIDI Bindings dialog.
+2.  The user selects the bindings they wish to export, perhaps with the
+    help of 'Select/Deselect All' buttons and/or keyboard shortcuts.
+3.  The user selects 'Export bindings to XML'.
+4.  A file save dialog is displayed, and the user selects a destination
+    path.
+5.  The selected bindings are exported, exporting all of the bindings if
+    none were originally selected.
+
+**Name:** Import MIDI Bindings from file **Description:** The user
+wishes to import a list of MIDI bindings.
+
+1.  The user opens the MIDI Bindings dialog.
+2.  The user selects 'Import bindings from XML'.
+3.  A file open dialog is displayed, and the user selects a source path.
+4.  A prompt appears asking if the user would like to merge or overwrite
+    the existing bindings ('Yes/No/Cancel')
+5.  The bindings are appropriately imported and the interface is
+    updated.

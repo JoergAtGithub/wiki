@@ -52,18 +52,18 @@ structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
 will become more detailed as the design above becomes more thorough and
 complete.
 
-``` 
-1. Looping
-  1.1 Assess existing looping code
-    1.1.1 See if we can reuse any ControlObjects
-    1.1.2 Figure out how the old code moves the play position.
-  1.2 Create LoopingControl class
-    1.2.1 Implement skeleton class structure, following EngineBufferScale's structure 
-    1.2.2 In process() (or similar) function, check if playpos == end of loop (and move playpos to start of loop)
-    1.2.3 
-    1.2.4 
-    1.2.5 
-```
+    1. Looping
+      1.1 Assess existing looping code
+        1.1.1 See if we can reuse any ControlObjects
+        1.1.2 Figure out how the old code moves the play position.
+      1.2 Create LoopingControl class
+        1.2.1 Implement skeleton class structure, following EngineBufferScale's structure 
+        1.2.2 In process() (or similar) function, check if playpos == end of loop (and move playpos to start of loop)
+        1.2.3 If seeking occurs outside of loop, cancel the looping (?)
+        1.2.4 
+      1.3 Code hooks into waveform view and waveform summary
+        1.3.1 Talk to RJ Ryan to make sure new waveform makes this easy
+        1.3.1 Get loop in/out pos and paint highly visible markers
 
 ## Team
 

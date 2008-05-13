@@ -44,6 +44,7 @@ Important considerations:
   - How can we make this as easy and as obvious as possible to use?
 
 For reference, here are the looping buttons on the Pioneer CDJ-1000MK3:
+
 [[/media/wiki/cdj1000mk3-loop-buttons.jpg|]]
 
 #### Mixxx Skin Considerations

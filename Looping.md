@@ -43,6 +43,9 @@ Important considerations:
     outside of the loop? (cancel the looping?)
   - How can we make this as easy and as obvious as possible to use?
 
+For reference, here are the looping buttons on the Pioneer CDJ-1000MK3:
+[[/media/wiki/cdj1000mk3-loop-buttons.jpg|]]
+
 #### Mixxx Skin Considerations
 
 What buttons would we need to add to the main GUI (ie. all skins)?

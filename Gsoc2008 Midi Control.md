@@ -119,3 +119,14 @@ to a reusable format.
     the existing bindings ('Yes/No/Cancel')
 5.  The bindings are appropriately imported and the interface is
     updated.
+
+### TODO
+
+  - Review of XML format - additions? removals? changes?
+  - (Garth's suggestion) How will presets and bindings manager interact?
+  - Tom's opionion - Novice users should not have to even mess with the
+    MIDI setup from a usability point of view, but the adventurous users
+    need to be able to explore with ease whilst the advanced users hack
+    together complex setups.
+  - How do other programs currently do MIDI? What are their strong/weak
+    points?

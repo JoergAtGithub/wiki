@@ -124,9 +124,18 @@ to a reusable format.
 
   - Review of XML format - additions? removals? changes?
   - (Garth's suggestion) How will presets and bindings manager interact?
-  - Tom's opionion - Novice users should not have to even mess with the
+  - Tom's opinion - Novice users should not have to even mess with the
     MIDI setup from a usability point of view, but the adventurous users
     need to be able to explore with ease whilst the advanced users hack
     together complex setups.
-  - How do other programs currently do MIDI? What are their strong/weak
-    points?
+  - G's first use of a popular device scenario: --- Edit liberally
+
+<!-- end list -->
+
+``` 
+    * User first plugin new midi device with Mixxx
+    * User's device training mapping is populated with default values from the midi mapping files that ship with Mixxx
+    * User is invited to return to the training config screen to retrain / adjust control behavior of the device
+    * Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
+* How do other programs currently do MIDI? What are their strong/weak points?
+```

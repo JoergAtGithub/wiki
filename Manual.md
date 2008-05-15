@@ -70,7 +70,23 @@ DJs. The user interface mimics a hardware DJ mixer, but also includes
 several extra elements to gives DJs a better user experience, such as
 the parallel waveform displays.
 
-### Loading tracks
+## Loading tracks
+
+Songs can be loaded into a player in several ways:
+
+  - Right-click the library track table: Right-clicking on a track in
+    the table will present the options "Load in Player 1" and "Load in
+    Player 2", among others. Making either selection will load a track
+    into a player.
+  - Drag-and-drop from library track table: Dragging-and-dropping a song
+    from the track table onto a wavefoprm display will load a track into
+    a player.
+  - Drag-and-drop from external file browser: Dragging-and-dropping a
+    song from an external file browser directly onto a waveform display
+    in Mixxx will load that song. This function is also known to work on
+    some platforms with other applications. For example, on OS X,
+    dragging-and-dropping a track from iTunes onto one of Mixxx's
+    waveform displays will load that song into a player.
 
 ## Waveform displays
 

@@ -96,6 +96,7 @@ because they allow you to see features in a song (like a breakdown)
 before you hear them. The waveform displays are aligned parallel to each
 other in order to make beat matching easier, as it is possible to
 beatmatch visually by aligning the beats that appear in each waveform.
+
 Clicking and dragging on a waveform allows you to seek through a song in
 both directions. The waveform display is updated in realtime upon
 seeking. There are two smaller **waveform summary** displays located

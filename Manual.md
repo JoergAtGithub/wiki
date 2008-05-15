@@ -1,5 +1,3 @@
-Let's try to figure out how we want this organized...
-
 # Table of Contents
 
 1.  [Beginner's Guide](Beginner's%20Guide)

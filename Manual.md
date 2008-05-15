@@ -72,7 +72,7 @@ the parallel waveform displays.
 
 ### Loading tracks
 
-### Waveform displays
+## Waveform displays
 
 There are two main **waveform displays** in Mixxx that are used to
 display the waveform of the songs you are mixing. These are useful

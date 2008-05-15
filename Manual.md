@@ -65,6 +65,31 @@ FIXME
 
 # DJing with Mixxx
 
+Mixxx was designed to be easy to learn for both novice and experienced
+DJs. The user interface mimics a hardware DJ mixer, but also includes
+several extra elements to gives DJs a better user experience, such as
+the parallel waveform displays.
+
+### Loading tracks
+
+### Waveform displays
+
+There are two main **waveform displays** in Mixxx that are used to
+display the waveform of the songs you are mixing. These are useful
+because they allow you to see features in a song (like a breakdown)
+before you hear them. The waveform displays are aligned parallel to each
+other in order to make beat matching easier, as it is possible to
+beatmatch visually by aligning the beats that appear in each waveform.
+Clicking and dragging on a waveform allows you to seek through a song in
+both directions. The waveform display is updated in realtime upon
+seeking. There are two smaller **waveform summary** displays located
+adjacent to the main waveform displays. These smaller displays show the
+waveform envelope of the entire song, and are useful because they allow
+DJs to see breakdowns far in advance. Vinyl DJs will find this familiar
+because quiet sections of songs can be visually distinguished when
+looking at a vinyl record, and this is a useful tool when planning your
+mixes on-the-fly.
+
 # Keys and Hardware Controllers
 
 ## Keyboard Shortcuts

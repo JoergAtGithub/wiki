@@ -170,3 +170,4 @@ working Mixxx's vinyl control code.
   - [xwax](http://www.xwax.co.uk/)
   - [Scratchlib](http://www.9elements.com/scratchlib/)
   - [Digital-Scratch](http://home.gna.org/dscratch/en_index.html)
+  - **[Mixxx Download Page](http://mixxx.org/download.php)**

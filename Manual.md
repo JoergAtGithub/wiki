@@ -112,23 +112,26 @@ mixes on-the-fly.
 so that it matches the tempo of another song. Beatmatching also involves
 adjusting the *phase* of the beats in a song so that they are *aligned*
 with the beats in the other song. Matching the tempo and aligning the
-beats are the two things a DJ must do to beatmatch. In Mixxx, you can
-match the tempo of two songs by adjusting the playback rate sliders on
-left and right side of the user interface. You can adjust the phase of
-the beats by clicking-and-dragging on either waveform display to
-temporarily slow down one of the songs until the beats are aligned. The
-temporary pitch bend buttons can also be used to momentarily adjust the
-playback rate, allowing you to "shuffle" the beats in a song forwards or
-backwards, so they can be aligned with another song. Once the tempos are
-matched and the beats aligned between two songs, they are said to be
-beatmatched. A "perfect" beatmatch is near impossible - there will
-always be some tiny difference in the playback rates. A keen DJ will
-keep his or her ears open and listen for the beats drifting out of
-alignment. This has a distinct "double bass kick" sound which is often
-preceded by the kick weakening in intensity (as the two kicks drift out
-of phase). When this happens, the beats can be realigned by simply
-tapping one of the temporary pitch bend buttons a few times in the
-appropriate direction. Now get out there and make Tiesto jealous\!
+beats are the two things a DJ must do to beatmatch.
+
+In Mixxx, you can match the tempo of two songs by adjusting the playback
+rate sliders on left and right side of the user interface. You can
+adjust the phase of the beats by clicking-and-dragging on either
+waveform display to temporarily slow down one of the songs until the
+beats are aligned. The temporary pitch bend buttons can also be used to
+momentarily adjust the playback rate, allowing you to "shuffle" the
+beats in a song forwards or backwards, so they can be aligned with
+another song.
+
+Once the tempos are matched and the beats aligned between two songs,
+they are said to be beatmatched. A "perfect" beatmatch is near
+impossible - there will always be some tiny difference in the playback
+rates. A keen DJ will keep his or her ears open and listen for the beats
+drifting out of alignment. This has a distinct "double bass kick" sound
+which is often preceded by the kick weakening in intensity (as the two
+kicks drift out of phase). When this happens, the beats can be realigned
+by simply tapping one of the temporary pitch bend buttons a few times in
+the appropriate direction. Now get out there and make Tiesto jealous\!
 
 # Keys and Hardware Controllers
 

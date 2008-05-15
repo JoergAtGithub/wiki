@@ -115,9 +115,9 @@ adjusting the *phase* of the beats in a song so that they are *aligned*
 with the beats in the other song. Matching the tempo and aligning the
 beats are the two things a DJ must do to beatmatch.
 
-In Mixxx, you can match the tempo of two songs by adjusting the playback
-rate sliders on left and right side of the user interface. You can
-adjust the phase of the beats by clicking-and-dragging on either
+In Mixxx, you can match the **tempo** of two songs by adjusting the
+playback rate sliders on left and right side of the user interface. You
+can adjust the **phase** of the beats by clicking-and-dragging on either
 waveform display to temporarily slow down one of the songs until the
 beats are aligned. The temporary pitch bend buttons can also be used to
 momentarily adjust the playback rate, allowing you to "shuffle" the

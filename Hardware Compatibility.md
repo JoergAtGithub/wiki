@@ -23,6 +23,7 @@ support:
 | [Numark Total Control](Numark%20Total%20Control)                | Soon                                                                  | Soon                                                | Soon                                                                                                                                                             |
 | [Behringer BCD3000](Behringer%20BCD3000)\[4\]                   | Yes (1.6.0, untested)                                                 | Yes (1.6.0, untested)                               | Yes (1.6.0)                                                                                                                                                      |
 | [Stanton SC System](http://www.enterthesystem.com/)             | Hopefully soon (waiting on Stanton for programming info & test units) | Hopefully soon                                      | Hopefully soon                                                                                                                                                   |
+| [M-Audio Trigger Finger](M-Audio%20Trigger%20Finger)            | Yes (1.6.0)                                                           | untested                                            | untested                                                                                                                                                         |
 
 # Mixxx Soundcard Compatibility Notes
 

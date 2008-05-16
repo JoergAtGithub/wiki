@@ -57,8 +57,8 @@ by Mixxx:
 | Serato CV02             | Very high      |
 | Serato CD               | Very high      |
 | Traktor Scratch         | Very high      |
-| FinalScratch (Standard) | Very high      |
-| FinalScratch (Scratch)  | Very high      |
+| FinalScratch (Standard) | Moderate       |
+| FinalScratch (Scratch)  | High           |
 | MixVibes DVS CD         | Untested       |
 | MixVibes DVS Vinyl      | Does not work  |
 

@@ -71,12 +71,16 @@ if you're looking to buy vinyl. If you want to use CDs, you can
 Support for Final Scratch records needs work, and at the moment isn't
 nearly as good as the Serato/Traktor support.
 
-## How responsive is it?
+## How responsive is it? Does it have absolute mode?
 
 The responsiveness of Serato/Traktor records is limited only by the
 latency of your soundcard. This latency can be adjusted in Mixxx's
 preferences under the "Sound Hardware" pane. With a good soundcard which
-is properly configured, **latencies below 10 ms are possible**.
+is properly configured and a fast CPU, **latencies below 10 ms are
+possible**.
+
+Mixxx supports **absolute** and **relative** mode with all of the vinyl
+listed in the table above.
 
 ## What does it look like in action?
 

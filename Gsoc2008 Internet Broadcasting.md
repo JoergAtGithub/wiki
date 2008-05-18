@@ -26,6 +26,28 @@ A detailed application is available in Portable Document Format here:
 my experience, my ideas about community interaction and personal
 information about myself.
 
+### Timeline
+
+**May 18th:** Skype conversation with mentors: project planning, discuss
+milestones **May 26th:** Start of coding
+(<span class="underline">note</span>: not full-time because of exams
+until June 19th) **End of May:** Skype conversation with mentors: revise
+planning, discuss progress **July 7th:** Start of mid-term evaluation
+**July 14th:** Mid-term evaluation deadline **August 18th:** Start of
+final evaluation **September 1st:** Final evaluation deadline
+
+### Project Planning
+
+#### July 7th: Mid-term
+
+  - milestone 1: **user interface**
+  - milestone 2: **encoding**
+
+#### August 18th: Final
+
+  - milestone 3: **broadcasting**
+  - milestone 4: **release**
+
 ### Milestones
 
 These milestones will keep track of the development process.
@@ -35,7 +57,12 @@ These milestones will keep track of the development process.
   - ***Italic/Bold items*** are items that are currently being worked
     on.
 
-#### Milestone 1: Encoding
+#### Milestone 1: User Interface
+
+  - create a user interface for this project (probably in the Options
+    menu for now)
+
+#### Milestone 2: Encoding
 
   - develop MP3 encoder using liblame
   - abstract a generic encoder class for both encoders
@@ -43,19 +70,16 @@ These milestones will keep track of the development process.
   - tweak and clean up code
   - write API documentation
 
-#### Milestone 2: Broadcasting
+#### Milestone 3: Broadcasting
 
   - find out why libshout is messing up
   - if we can't fix libshout: write own implementation instead
   - tweak and clean up code
   - write API documentation
 
-#### Milestone 3: Release
+#### Milestone 4: Release
 
   - put everything in broadcast/ subdir
   - enable by default (if code is stable)
   - write user documentation
-
-#### Milestone 4: TAFT
-
   - Test, Analyze, Fix, Test again...

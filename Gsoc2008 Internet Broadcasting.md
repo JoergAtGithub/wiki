@@ -44,10 +44,11 @@ information about myself.
 #### July 7th: Mid-term
 
   - milestone 1: **user interface**
-  - milestone 2: **encoding**
+  - milestone 2: **encoding** (as much as time permits)
 
 #### August 18th: Final
 
+  - milestone 2: **encoding** (remaining)
   - milestone 3: **broadcasting**
   - milestone 4: **release**
 

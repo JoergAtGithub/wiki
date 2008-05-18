@@ -28,13 +28,16 @@ information about myself.
 
 ### Timeline
 
-**May 18th:** Skype conversation with mentors: project planning, discuss
-milestones **May 26th:** Start of coding
-(<span class="underline">note</span>: not full-time because of exams
-until June 19th) **End of May:** Skype conversation with mentors: revise
-planning, discuss progress **July 7th:** Start of mid-term evaluation
-**July 14th:** Mid-term evaluation deadline **August 18th:** Start of
-final evaluation **September 1st:** Final evaluation deadline
+  - **May 18th:** Skype conversation with mentors: project planning,
+    discuss milestones
+  - **May 26th:** Start of coding (<span class="underline">note</span>:
+    not full-time because of exams until June 19th)
+  - **End of May:** Skype conversation with mentors: revise planning,
+    discuss progress
+  - **July 7th:** Start of mid-term evaluation
+  - **July 14th:** Mid-term evaluation deadline
+  - **August 18th:** Start of final evaluation
+  - **September 1st:** Final evaluation deadline
 
 ### Project Planning
 

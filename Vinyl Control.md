@@ -31,9 +31,9 @@ but the basic ones are:
 
 **Setup 1: Vinyl DJ** Two timecoded records, two turntables with phono
 preamps (or line-out), and two "sound inputs". You can skip the phono
-amplifiers if you use the snazzy new **software preamp** in Mixxx,
-though this will not provide as clean a signal and may not work for
-everyone - line-level signals are preferred.
+amplifiers if you use the snazzy new software preamp in Mixxx, though
+this will not provide as clean a signal and may not work for everyone -
+line-level signals are preferred.
 
 **Setup 2: CDJ** Two timecoded CDs, two CD decks, and two "sound
 inputs".

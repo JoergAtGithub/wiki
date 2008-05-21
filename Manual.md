@@ -50,15 +50,69 @@ Mixxx's preferences can be accessed by selecting
 *Options-\>Preferences*.
 
 When Mixxx is launched, it tries to select a reasonable sound device for
-output. You can check the settings Mixxx has selected in the *Sound
+output. You can check which device Mixxx has selected in the *Sound
 Hardware* pane in the preferences.
+
+## Master and Headphone Outputs
+
+Mixxx has two audio paths: The **Master** output and the **Headphones**
+output. The Master output is what a DJ should have connected to their
+main speakers, while the Headphones output should be connected to their
+personal headphones. The headphone output is optional, and can be used
+for [Headphone Cueing](#headphone-cueing).
+
+To configure the Master and Headphones outputs, enter Mixxx's
+preferences and select the *Sound Hardware* pane. In order to select a
+headphone device, either a soundcard with at least 4 channels of output
+(two stereo outputs, as featured on 5.1 soundcards) *or* two separate
+stereo soundcards is required. The output channel mapping, which
+determines the physical jack on the soundcard that the audio comes out
+of, can be selected under "Channel".
+
+<span class="underline">**Example Soundcard Configurations**</span>
+
+**Single audio device (4 Channel Soundcard)**
+
+    Master device:    Echo Digital AudioFire4   Channels: 1/2
+    Headphone device: Echo Digital AudioFire4   Channels: 3/4
+
+**Dual audio devices (Two Stereo Soundcards)**
+
+    Master device:    ElCheapo USB Audio        Channels: 1/2
+    Headphone device: SoundBlaster Live!        Channels: 1/2
+
+## Latency
+
+The latency in Mixxx indicates the amount of time it will take for the
+audio to respond to any change in a control. For example, a latency of
+36 ms indicates that it will take approximately 36 ms for Mixxx to stop
+the audio after you toggle the play button. Generally speaking, the
+lower the latency, the more responsive Mixxx will be. A latency between
+36-64 ms is acceptable if you are using Mixxx with a keyboard/mouse or a
+MIDI controller. A latency below 16 ms is recommended when vinyl control
+is used because Mixxx will feel unresponsive otherwise.
+
+In order to tweak your latency, reduce the latency slider in the *Sound
+Hardware* preferences pane and experiment until you can reliably run
+Mixxx **without hearing any crackles, pops, or dropouts in the audio**.
+Changing your [Sound API](#sound-apis) to ASIO on Windows or JACK on
+Linux may allow you to reduce your latency setting, but this depends on
+your hardware configuration.
+
+Keep in mind that **lower latencies require better soundcards and faster
+CPUs** and that **zero latency DJ software is a myth** (although Mixxx
+is capable of \< 10 ms operation).
+
+## Samplerates
+
+## Sound APIs
 
 FIXME
 
   - Blurb about setting up your soundcard
-  - Headphone cueing
-  - 4 channel soundcards
-  - Multiple soundcards
+  - ~~Headphone cueing~~
+  - ~~4 channel soundcards~~
+  - ~~Multiple soundcards~~
   - Latency (lower = better, but not if you start hearing pops)
   - Samplerates
   - Sound APIs

@@ -1,10 +1,21 @@
 # Table of Contents
 
 1.  [Beginner's Guide](Beginner's%20Guide)
-2.  [Introduction](manual#introduction).
-3.  [Installation](manual#installation).
-4.  [Configuration](manual#configuration).
-5.  [DJing with Mixxx](manual#djing_with_mixxx).
+2.  [Introduction](manual#introduction)
+3.  [Installation](manual#installation)
+    1.  [Windows](manual#windows)
+    2.  [Linux](manual#linux)
+    3.  [OS X](manual#os_x)
+4.  [Configuration](manual#configuration)
+    1.  [manual\#master\_and\_headphone\_outputs](manual#master_and_headphone_outputs)
+    2.  [manual\#latency](manual#latency)
+    3.  [manual\#samplerates](manual#samplerates)
+    4.  [manual\#sound\_apis](manual#sound_apis)
+5.  [DJing with Mixxx](manual#djing_with_mixxx)
+    1.  [manual\#loading\_tracks](manual#loading_tracks)
+    2.  [manual\#waveform\_displays](manual#waveform_displays)
+    3.  [manual\#beatmatching\_and\_mixing](manual#beatmatching_and_mixing)
+    4.  [manual\#headphone\_cueing](manual#headphone_cueing)
 6.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).
     1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).

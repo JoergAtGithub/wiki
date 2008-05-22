@@ -228,3 +228,20 @@ before bringing it into their mix by sliding the crossfader.
 ## MIDI Controllers
 
 # Getting Involved
+
+Mixxx is a community-driven project involving many DJs worldwide.
+Without the contributions from these DJs, Mixxx would not exist, and
+we're constantly looking for more contributors.
+
+FIXME - Ideas for stuff to talk about:
+
+  - Get on IRC\!
+  - If you know C++...
+  - Take a look at our specs/projects page and see if anything catches
+    your eye. If you want to start coding one of these, go right ahead\!
+  - We're always willing to mentor and help out new coders
+  - Take a look at our bug tracker, try to fix a bug\!
+  - Send patches to Adam, Albert, or mixxx-devel\!
+  - Help answer questions in the forum
+  - Help promote Mixxx - Blog about us, etc.
+  - Send us some photos of you using Mixxx at a gig\!

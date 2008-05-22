@@ -105,6 +105,14 @@ is capable of \< 10 ms operation).
 
 ## Samplerates
 
+The soundcard samplerate describes the temporal resolution of its audio.
+Because most audio tracks are encoded at a samplerate of 44100 Hz,
+increasing the samplerate inside Mixxx beyond this may not lead to
+increased audio quality. However, users that still prefer upsampled
+audio can select a higher sampling rate in the *Sound Hardware*
+preferences pane. Keep in mind that increasing the samplerate will
+increase CPU usage and likely raise the minimum latency you can achieve.
+
 ## Sound APIs
 
 FIXME

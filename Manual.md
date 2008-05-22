@@ -115,15 +115,18 @@ increase CPU usage and likely raise the minimum latency you can achieve.
 
 ## Sound APIs
 
-FIXME
+Mixxx supports several different Sound APIs across Windows, OS X, and
+Linux. A Sound API is a tool Mixxx uses to interact with soundcards.
+Some soundcards come with drivers that are provide lower latency with
+certain Sound APIs, so different APIs can be selected from *Sound
+Hardware* preferences pane.
 
-  - Blurb about setting up your soundcard
-  - ~~Headphone cueing~~
-  - ~~4 channel soundcards~~
-  - ~~Multiple soundcards~~
-  - Latency (lower = better, but not if you start hearing pops)
-  - Samplerates
-  - Sound APIs
+On Windows, **ASIO** is generally the lowest latency API. On OS X,
+**CoreAudio** is the best choice, and on Linux, **JACK** or **ALSA**
+provide the best compatibility and performance. Linux users wishing to
+use JACK should **ensure they run the *jackd* daemon before launching
+Mixxx**, otherwise JACK will not appear as a Sound API in the
+preferences.
 
 # DJing with Mixxx
 

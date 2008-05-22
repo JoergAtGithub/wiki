@@ -7,15 +7,16 @@
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)
 4.  [Configuration](manual#configuration)
-    1.  [manual\#master\_and\_headphone\_outputs](manual#master_and_headphone_outputs)
-    2.  [manual\#latency](manual#latency)
-    3.  [manual\#samplerates](manual#samplerates)
-    4.  [manual\#sound\_apis](manual#sound_apis)
+    1.  [Master and Headphone
+        Outputs](manual#master_and_headphone_outputs)
+    2.  [Latency](manual#latency)
+    3.  [Samplerates](manual#samplerates)
+    4.  [Sound APIs](manual#sound_apis)
 5.  [DJing with Mixxx](manual#djing_with_mixxx)
-    1.  [manual\#loading\_tracks](manual#loading_tracks)
-    2.  [manual\#waveform\_displays](manual#waveform_displays)
-    3.  [manual\#beatmatching\_and\_mixing](manual#beatmatching_and_mixing)
-    4.  [manual\#headphone\_cueing](manual#headphone_cueing)
+    1.  [Loading Tracks](manual#loading_tracks)
+    2.  [Waveform Displays](manual#waveform_displays)
+    3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
+    4.  [Headphone Cueing](manual#headphone_cueing)
 6.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).
     1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).

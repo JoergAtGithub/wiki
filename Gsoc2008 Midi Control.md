@@ -142,13 +142,15 @@ to a reusable format.
 
   - Review of XML format - additions? removals? changes?
   - Traktor 3.3
-  - Mixmeister Fusion
-  - Others
-  - Strengths/weaknesses of current format
 
 <!-- end list -->
 
 ``` 
+    * Too many numbers. Hard to tell what values mean (ok in proprietary software, but not mixxx!)
+    * All attributes in one tag - probably not the best way to go about things
+* Mixmeister Fusion
+* Others
+* Strengths/weaknesses of current format
     * Backwards compatibility issues
     * Versioning
 * (Garth's suggestion) How will presets and bindings manager interact?

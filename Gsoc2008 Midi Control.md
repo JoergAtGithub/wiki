@@ -135,7 +135,7 @@ to a reusable format.
 <!-- end list -->
 
 ``` 
-   - G's original suggestion: Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
+   * G's original suggestion: Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
 ```
 
 ### TODO

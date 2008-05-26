@@ -158,7 +158,8 @@ to a reusable format.
 * Others
 * Strengths/weaknesses of current format
     * Backwards compatibility issues
-    * Versioning
+    * Versioning missing
+    * More header info needed
 * (Garth's suggestion) How will presets and bindings manager interact?
 * Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
 * Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
@@ -169,4 +170,9 @@ to a reusable format.
 * High level UML class structure
 * What can be used from the existing implementation
     * Most of the XML preset parser
+* Classes needing changing/updating:
+    * ConfigMIDI
+    * ControlObjectMIDI
+    * DlgPrefsMIDI
+    * MIDI_____
 ```

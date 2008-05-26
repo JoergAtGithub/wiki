@@ -30,7 +30,10 @@ the project. Tom believes that community input is essential\!
 **Current status of the project:**
 
 \* Week 1: ~~Forming basic use cases~~, general brainstorming, preparing
-ideas for community feedback, reading existing MIDI code.
+ideas for community feedback, reading existing MIDI code. \* Week 2: UML
+proposal, class design, XML format proposal. **NOTE:** I am away from
+Wednesday the 4th-Monday the 9th, attending Rock am Ring in Germany. I
+can only be contacted by phone during this time.
 
 ### About Tom
 

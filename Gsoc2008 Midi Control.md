@@ -27,8 +27,9 @@ This page will be used during the GSoC 2008 to let the community know
 the status of the project, in addition to getting feedback on aspects of
 the project. Tom believes that community input is essential\!
 
-**Current status of the project:** ~~Forming basic use cases~~, general
-brainstorming, preparing ideas for community feedback.
+**Current status of the project:** \* Week 1: ~~Forming basic use
+cases~~, general brainstorming, preparing ideas for community feedback,
+reading existing MIDI code.
 
 ### About Tom
 

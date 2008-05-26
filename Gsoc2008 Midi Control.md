@@ -131,8 +131,8 @@ to a reusable format.
     the midi mapping files that ship with Mixxx
 4.  User is invited to return to the training config screen to retrain /
     adjust control behavior of the device
-5.  Restore defaults for current device (user warned to save existing
-    configuration)
+5.  Option to restore defaults for current device (user warned to save
+    existing configuration)
 
 <!-- end list -->
 

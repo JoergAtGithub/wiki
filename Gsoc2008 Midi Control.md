@@ -155,4 +155,10 @@ to a reusable format.
 * Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
 * Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
 * How do other programs currently do MIDI? What are their strong/weak points?
+* Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
+* Implementation
+* GUI Mockup
+* High level UML class structure
+* What can be used from the existing implementation
+    * Most of the XML preset parser
 ```

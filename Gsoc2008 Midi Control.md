@@ -27,7 +27,7 @@ This page will be used during the GSoC 2008 to let the community know
 the status of the project, in addition to getting feedback on aspects of
 the project. Tom believes that community input is essential\!
 
-**Current status of the project:** Forming basic use cases, general
+**Current status of the project:** ~~Forming basic use cases~~, general
 brainstorming, preparing ideas for community feedback.
 
 ### About Tom
@@ -120,22 +120,39 @@ to a reusable format.
 5.  The bindings are appropriately imported and the interface is
     updated.
 
-### TODO
+**Name:** User first uses a new MIDI controller with Mixxx (thanks G\!)
 
-  - Review of XML format - additions? removals? changes?
-  - (Garth's suggestion) How will presets and bindings manager interact?
-  - Tom's opinion - Novice users should not have to even mess with the
-    MIDI setup from a usability point of view, but the adventurous users
-    need to be able to explore with ease whilst the advanced users hack
-    together complex setups.
-  - G's first use of a popular device scenario: --- Edit liberally
+1.  The user first plugs in the new midi device and starts Mixxx.
+2.  (?) Dialog: New MIDI device found, would you like to set it up now?
+    (How automatic can this be? Suggest a device straight up?)
+3.  User's device training mapping is populated with default values from
+    the midi mapping files that ship with Mixxx
+4.  User is invited to return to the training config screen to retrain /
+    adjust control behavior of the device
+5.  Restore defaults for current device (user warned to save existing
+    configuration)
 
 <!-- end list -->
 
 ``` 
-    * User first plugin new midi device with Mixxx
-    * User's device training mapping is populated with default values from the midi mapping files that ship with Mixxx
-    * User is invited to return to the training config screen to retrain / adjust control behavior of the device
-    * Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
+   - G's original suggestion: Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
+```
+
+### TODO
+
+  - Review of XML format - additions? removals? changes?
+  - Traktor 3.3
+  - Mixmeister Fusion
+  - Others
+  - Strengths/weaknesses of current format
+
+<!-- end list -->
+
+``` 
+    * Backwards compatibility issues
+    * Versioning
+* (Garth's suggestion) How will presets and bindings manager interact?
+* Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
+* Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
 * How do other programs currently do MIDI? What are their strong/weak points?
 ```

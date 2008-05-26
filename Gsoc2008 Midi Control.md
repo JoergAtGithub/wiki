@@ -150,7 +150,11 @@ to a reusable format.
 ``` 
     * Too many numbers. Hard to tell what values mean (ok in proprietary software, but not mixxx!)
     * All attributes in one tag - probably not the best way to go about things
+    * Has a versioning system
 * Mixmeister Fusion
+    * Has a file of templates
+    * Everything is in one tag - bad
+    * Clear names used to define behaviour - good
 * Others
 * Strengths/weaknesses of current format
     * Backwards compatibility issues

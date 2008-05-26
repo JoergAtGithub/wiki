@@ -163,6 +163,7 @@ to a reusable format.
     * Backwards compatibility issues
     * Versioning missing
     * More header info needed
+    * Good, modular use of tags - needs extending
 * (Garth's suggestion) How will presets and bindings manager interact?
 * Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
 * Idea: in bindings window, import preset/load preset... option to do it for current MIDI device

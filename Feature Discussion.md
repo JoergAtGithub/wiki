@@ -67,3 +67,8 @@ example xml file:
   - Should be easy to write more mappings for more devices (i.e.
     sensible xml format)
   - Shouldn't affect stability for people not using midi devices
+
+# Playqueue and Library Improvements Proposals
+
+[See the dedicated
+page](http://mixxx.org/wiki/doku.php/playqueue_and_library_improvements_proposals).

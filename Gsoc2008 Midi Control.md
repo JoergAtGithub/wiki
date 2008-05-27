@@ -30,10 +30,11 @@ the project. Tom believes that community input is essential\!
 **Current status of the project:**
 
 \* Week 1: ~~Forming basic use cases~~, general brainstorming, preparing
-ideas for community feedback, reading existing MIDI code. \* Week 2: UML
-proposal, class design, XML format proposal. **NOTE:** I am away from
-Wednesday the 4th-Monday the 9th, attending Rock am Ring in Germany. I
-can only be contacted by phone during this time.
+ideas for community feedback, reading existing MIDI code.
+
+\* Week 2: UML proposal, class design, XML format proposal. **NOTE:** I
+am away from Wednesday the 4th-Monday the 9th, attending Rock am Ring in
+Germany. I can only be contacted by phone during this time.
 
 ### About Tom
 
@@ -80,13 +81,19 @@ control.
 2.  The user selects 'Add new binding'.
 3.  The user selects which aspect of the program they would like to bind
     to the control.
-    1.  Albert's suggestion: Have a table with detailed info on the
-        control. This will reduce ambiguity and help advanced users.
-4.  The user uses their desired MIDI Control, and the program provides
+
+<!-- end list -->
+
+  - Albert's suggestion: Have a table with detailed info on the control.
+    This will reduce ambiguity and help advanced users.
+
+<!-- end list -->
+
+1.  The user uses their desired MIDI Control, and the program provides
     visual feedback that it has detected the control.
-5.  The user enters in additional information, such as parameters, a
+2.  The user enters in additional information, such as parameters, a
     custom name, and the control type.
-6.  The user saves the binding and it works instantly.
+3.  The user saves the binding and it works instantly.
 
 **Name:** Change MIDI Binding by Single Learn
 

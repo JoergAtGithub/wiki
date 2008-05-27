@@ -68,7 +68,7 @@ example xml file:
     sensible xml format)
   - Shouldn't affect stability for people not using midi devices
 
-# Playqueue and Library Improvements Proposals
+## Playqueue and Library Improvements Proposals
 
 [See the dedicated
 page](http://mixxx.org/wiki/doku.php/playqueue_and_library_improvements_proposals).

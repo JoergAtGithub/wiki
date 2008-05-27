@@ -73,31 +73,59 @@ in Mixxx should be:
 
 **Name:** MIDI Learn
 
-**Description:** The user wishes to add a binding for a MIDI control.
+**Description:** The user wishes to add a binding for a single MIDI
+control.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects 'Add new binding'.
 3.  The user selects which aspect of the program they would like to bind
     to the control.
+    1.  Albert's suggestion: Have a table with detailed info on the
+        control. This will reduce ambiguity and help advanced users.
 4.  The user uses their desired MIDI Control, and the program provides
     visual feedback that it has detected the control.
 5.  The user enters in additional information, such as parameters, a
     custom name, and the control type.
 6.  The user saves the binding and it works instantly.
 
-**Name:** Change MIDI Binding by Learn
+**Name:** Change MIDI Binding by Single Learn
 
 **Description:** The user wishes to change an existing binding using
 learning.
 
 1.  The user opens the MIDI Bindings dialog.
 2.  The user selects the binding they wish to change.
-3.  The user selects 'Change existing binding'.
-4.  The user uses their desired MIDI Control, and the program provides
+3.  The user selects 'Change existing binding(s)'.
+
+<!-- end list -->
+
+  - What about a MIDI learn toggle button, Traktor style? Would this
+    make more sense? This could be a different style of behaviour that
+    could work in unison with the group learn style.
+
+<!-- end list -->
+
+1.  The dialog provides visual feedback that the current control is
+    ready to be changed. (Fluro highlighting\!?)
+2.  The user uses their desired MIDI Control, and the program provides
     visual feedback that it has detected the control.
-5.  The user enters in additional information, such as parameters, a
-    custom name, and the control type.
-6.  The user saves the binding and it works instantly.
+3.  The user saves the binding and it works instantly.
+
+**Name:** Change MIDI Binding by Group Learn
+
+**Description:** The user wishes to change a group of existing bindings
+sequentially using learning.
+
+1.  The user opens the MIDI Bindings dialog.
+2.  The user selects several bindings they wish to change at one time.
+3.  The user selects 'Change existing binding(s)'.
+4.  The dialog provides visual feedback that the current control is
+    ready to be changed. (Fluro highlighting\!?)
+5.  The user uses their desired MIDI Control, and the program provides
+    visual feedback that it has detected the control.
+6.  Steps 4-5 are repeated for every control selected, unless the user
+    cancels (using the same button that started it)?
+7.  The user saves the binding and it works instantly.
 
 **Name:** Export MIDI Bindings to file
 

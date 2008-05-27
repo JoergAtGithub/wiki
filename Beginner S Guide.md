@@ -12,12 +12,12 @@ Mixxx will run on the Linux, Mac OS X and Windows operating systems
 
 # Hardware Overview
 
-Before you download and install Mixxx consider what your hardware set-up
-will be. You’re PC\\Laptop, Audio Output and how you are planning to
+Before you download and install Mixxx, consider what your hardware setup
+will be: your PC/Laptop, Audio Output and how you are planning to
 control the software.
 
-While you can run Mixxx on a PC the examples here refer to using a
-laptop.
+While you can run Mixxx on a desktop PC, the examples here refer to
+using a laptop.
 
 ## Laptop (Stand-Alone)
 

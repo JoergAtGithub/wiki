@@ -47,6 +47,8 @@ much steps.
 1.  the DJ cannot know easilly when browsing the Library view if a given
     song has already be played during his mix.
 2.  the user cannot easy know the Genre or the rating of a given song
+3.  the Library view is not sorted by default on startup, tracks are in
+    the order read from .mixxxtracks.xml
 
 ## Solutions
 

@@ -42,11 +42,9 @@ hopefully also have:
   - Vinyl control
   - Anything else exciting we have time for...
 
-#### Remaining TODO For 1.6.0
+#### Remaining TODO For 1.6.0 Final
 
-  - Continuing to fix up the library
-  - Adding playlist support back in
-  - Fixing any bugs that pop up from testing after beta1
+  - Fix critical bugs: <https://bugs.launchpad.net/mixxx/1.6/+bugs>
 
 ### 1.7.0
 

@@ -3,47 +3,52 @@ trunk in order to improve Play Queue and Library views
 
 # 1\) Play Queue Improvements
 
-\*\* Current Problems:\*\*
+## Current Problems:
 
 1.   the DJ can easily add several tracks on the play queue, but if he
     goes to this view, the tracks will not be displayed by play order,
     but by track name order for instance.
 
-**Solutions:**
+## Solutions:
 
 1.  display the order the track will be played (1, 2, 3, ...)
 2.  make the items in the Play Queue view reorderable
 
 # 2\) Easilly listen music in the headset:
 
-**The Problem:**
+## The Problem:
 
 1.  the user has to perform several confusing steps in order to listen
     one track in his headset : 
-    1.  stop current listing track in the headset table
-    2.  double click on a track which load it in the headset table
-    3.  then press "play" on this table.
 
-**Solution:**
+<!-- end list -->
+
+  - stop current listing track in the headset table
+  - double click on a track which load it in the headset table
+  - then press "play" on this table.
+
+## Solution:
 
 1.  double click on a track when in the configuration "one Player output
     on the master soundcard + one Player on the headset" instanteously
     stops the track played in the headset, load it in this player and
     start playback.
 
-**Note:** this is not a modification of the NEXT mode system, it is just
-a way to quickly loads a track in the headset Player in order to play
-without too much steps.
+## Note:
+
+this is not a modification of the NEXT mode system, it is just a way to
+quickly loads a track in the headset Player in order to play without too
+much steps.
 
 # 3\) Library view Improvements
 
-**Current Problems:**
+## Current Problems:
 
 1.  the DJ cannot know easilly when browsing the Library view if a given
     song has already be played during his mix.
 2.  the user cannot easy know the Genre or the rating of a given song
 
-**Solutions**
+## Solutions
 
 1.  Display a little tag on any already played track in Playlist, Browse
     and Library view (to prevent choosing several time the same track
@@ -56,7 +61,7 @@ without too much steps.
 4.  Implements a Facet-like view for the "Library" (three column
     Genre/Artist/Album like in rythmbox)
 
-**Known issue:**
+## Known issue:
 
 1.  Mixxx doesn't have ID3/ogg writing support. So rating of track must
     be performed by another software. I propose using Amarok rating

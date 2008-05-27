@@ -58,9 +58,10 @@ much steps.
     may be required to add in the interface.
 2.  Display a column in Library, Playqueue and Playlists with the Genre
     ID3 tag
-3.  Display a column with rating of the song in the Library, Playqueue
+3.  Sort Library view by default on startup, after being filled
+4.  Display a column with rating of the song in the Library, Playqueue
     and Playlists view (read only for the first step, then read/write)
-4.  Implements a Facet-like view for the "Library" (three column
+5.  Implements a Facet-like view for the "Library" (three column
     Genre/Artist/Album like in rythmbox)
 
 ## Known issue:

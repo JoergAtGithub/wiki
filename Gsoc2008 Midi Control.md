@@ -153,11 +153,11 @@ to a reusable format.
 5.  The bindings are appropriately imported and the interface is
     updated.
 
-**Name:** User first uses a new MIDI controller with Mixxx (thanks G\!)
+**Name:** User starts Mixxx with a new MIDI controller never previously
+used (thanks G\!)
 
 1.  The user first plugs in the new midi device and starts Mixxx.
-2.  (?) Dialog: New MIDI device found, would you like to set it up now?
-    (How automatic can this be? Suggest a device straight up?)
+2.  Dialog: New MIDI device found, would you like to set it up now?
 3.  User's device training mapping is populated with default values from
     the midi mapping files that ship with Mixxx
 4.  User is invited to return to the training config screen to retrain /

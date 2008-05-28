@@ -22,6 +22,20 @@ that performance is significantly different between Vista and XP or
 Intel and PPC macs or something then we'll have to make more columns I
 guess.
 
+#### 1.6.0-beta3
+
+| Latency Band | Component | Windows | Mac OS | Linux |
+| ------------ | --------- | ------- | ------ | ----- |
+| \< 100ms     | CPU       |         |        |       |
+|              | Sound     |         |        |       |
+|              | Other     |         |        |       |
+| \< 50ms      | CPU       |         |        |       |
+|              | Sound     |         |        |       |
+|              | Other     |         |        |       |
+| \< 20ms      | CPU       |         |        |       |
+|              | Sound     |         |        |       |
+|              | Other     |         |        |       |
+
 #### 1.6.0-beta2
 
 | Latency Band | Component | Windows                      | Mac OS                     | Linux |

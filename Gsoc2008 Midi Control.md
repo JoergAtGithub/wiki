@@ -180,11 +180,22 @@ previously used (thanks G\!)
    * G's original suggestion: Separate checkbox + warning to disable user configured training / use defaults only (<- not sure about this)
 ```
 
-### MIDI XML Format Changes
-
 ### UML Diagrams
 
 [[/media/mixxx_midi_system.jpg|]]
+
+### New Dialog Changes
+
+Forms:
+
+\* MIDI Device Selection
+
+  - A list of MIDI devices
+  - Status of each MIDI device: Active? Enabled? Send? Receive? Working
+    correctly?
+  - Detect new MIDI devices
+
+### MIDI XML Format Changes
 
 ### TODO
 

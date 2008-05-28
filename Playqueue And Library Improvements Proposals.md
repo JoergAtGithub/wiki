@@ -57,8 +57,9 @@ much steps.
     "TimesPlayedInThisMix". A button or a "reset played track" menu item
     may be required to be added in the interface in order to reset all
     these TimesPlayedInThisMix value to 0.
-2.  Display a column in Library, Playqueue and Playlists with the Genre
-    ID3 tag \[DONE\]:-D
+2.  **\[DONE\]** Display a column in Library, Playqueue and Playlists
+    with the Genre ID3 tag. On click on this column, tracks will be
+    sorted by Genre, then by artist then by title.
 3.  Display a column with rating of the song in the Library, Playqueue
     and Playlists view (read only for the first step, then read/write)
 4.  Implements a Facet-like view for the "Library" (three column

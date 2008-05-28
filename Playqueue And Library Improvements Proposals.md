@@ -52,12 +52,15 @@ much steps.
 
 ## Solutions
 
-1.  Display a little tag on any already played track in Playlist, Browse
-    and Library view (to prevent choosing several time the same track
-    during one session). A button or a "reset played track" menu item
-    may be required to add in the interface.
+1.  Display a little tag on any already played track in Playlist,
+    Browse(?) and Library views (to prevent choosing several time the
+    same track during one session). This may be based on the
+    "TimesPlayed" value of the trackinfoobject or a similar one, like
+    "TimesPlayedInThisMix". A button or a "reset played track" menu item
+    may be required to be added in the interface in order to reset all
+    these TimesPlayedInThisMix value to 0.
 2.  Display a column in Library, Playqueue and Playlists with the Genre
-    ID3 tag
+    ID3 tag \[DONE\]
 3.  Sort Library view by default on startup, after being filled
 4.  Display a column with rating of the song in the Library, Playqueue
     and Playlists view (read only for the first step, then read/write)

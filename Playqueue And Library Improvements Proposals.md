@@ -60,7 +60,7 @@ much steps.
     may be required to be added in the interface in order to reset all
     these TimesPlayedInThisMix value to 0.
 2.  Display a column in Library, Playqueue and Playlists with the Genre
-    ID3 tag \[DONE\]
+    ID3 tag \[DONE\]:-D
 3.  Sort Library view by default on startup, after being filled
 4.  Display a column with rating of the song in the Library, Playqueue
     and Playlists view (read only for the first step, then read/write)

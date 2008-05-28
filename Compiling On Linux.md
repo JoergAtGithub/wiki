@@ -44,6 +44,12 @@ directory, and use scons to compile and install:
     cd mixxx
     sudo scons prefix=/usr install
 
+Strongly recommended: To optimize compilation for the CPU you're on if
+using GCC 4.2 and above, add `tuned=1` to the list of scons options. To
+optimize for another CPU, use `optimize=#` where \# is in the range 1-4:
+1 is single-core (P-III and below,) 2 is for P4, 3 is for Intel Core, 4
+is for Core 2...
+
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:
 

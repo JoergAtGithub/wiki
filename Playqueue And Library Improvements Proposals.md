@@ -47,8 +47,6 @@ much steps.
 1.  the DJ cannot know easilly when browsing the Library view if a given
     song has already be played during his mix.
 2.  the user cannot easy know the Genre or the rating of a given song
-3.  the Library view is not sorted by default on startup, tracks are in
-    the order read from .mixxxtracks.xml
 
 ## Solutions
 
@@ -61,10 +59,9 @@ much steps.
     these TimesPlayedInThisMix value to 0.
 2.  Display a column in Library, Playqueue and Playlists with the Genre
     ID3 tag \[DONE\]:-D
-3.  Sort Library view by default on startup, after being filled
-4.  Display a column with rating of the song in the Library, Playqueue
+3.  Display a column with rating of the song in the Library, Playqueue
     and Playlists view (read only for the first step, then read/write)
-5.  Implements a Facet-like view for the "Library" (three column
+4.  Implements a Facet-like view for the "Library" (three column
     Genre/Artist/Album like in rythmbox)
 
 ## Known issue:
@@ -74,3 +71,11 @@ much steps.
     system (a change in Amarok source/plugins would be required in order
     to write this rating value in the mp3/ogg file itself, instead of
     just using the Amarok database).
+
+# 3\) Minor bugs to fix
+
+1.  the Library view is not well sorted by default on startup, tracks
+    are in the order read from .mixxxtracks.xml
+2.  user cannot type keyboard shortcut when the focus is on one item in
+    the paylist view. Event doesn't seem to be propagated to parent
+    window

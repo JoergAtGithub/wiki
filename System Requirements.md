@@ -17,7 +17,7 @@ If you find that say you have a slower CPU but better sound card then do somethi
 ^ Latency Band ^ Component ^ Windows ^ Mac OS ^ Linux ^
 | < 100ms      | CPU       | Intel Celeron D 2.53GHz |        | Intel Celeron D 2.53GHz |
 |              | Sound     | Realtek AC'97 integrated |        | Intel 82801DB (ICH4) integrated (same h/w as Windows) |
-|              | Other     | Windows XP SP2 |        |       | Kernel 2.6.22-686, Debian Lenny
+|              | Other     | Windows XP SP2 |        |       | Kernel 2.6.24-1-686, Debian Lenny
 | < 50ms       | CPU       | Intel Celeron D 2.53GHz |        |       |
 |              | Sound     | Realtek AC'97 integrated |        |       |
 |              | Other     | Windows XP SP2, 25ms |        |       |

@@ -251,7 +251,11 @@ Forms:
 * Classes needing changing/updating:
     * ConfigMIDI
       * Currently, MIDI values here are stored in a string. I would like a nicer OO approach to this.
+      * Class has to be updated to the new control type system. Generalised OO approach would be nicer than a whole bunch of ifelse's.
     * ControlObjectMIDI
+      * No significant changes required at this time
     * DlgPrefsMIDI
+      * Lots of changes, see Dialogs
     * MIDI_____
+      * The platform implementation classes could use some checking, but they seem to be fine for the moment.
 ```

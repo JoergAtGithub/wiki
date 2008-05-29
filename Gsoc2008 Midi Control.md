@@ -216,6 +216,8 @@ Forms:
 ### MIDI XML Format Changes
 
   - Header (Program name, version)
+  - Comments (about the controller, links to specs, etc)
+  - Nicer control (key) names, more human readable
 
 ### TODO
 
@@ -243,6 +245,7 @@ Forms:
 * Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
 * How do other programs currently do MIDI? What are their strong/weak points?
 * Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
+* LADSPA
 * Implementation
 * GUI Mockup
 * High level UML class structure

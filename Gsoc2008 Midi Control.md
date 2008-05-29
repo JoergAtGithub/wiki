@@ -215,6 +215,8 @@ Forms:
 
 ### MIDI XML Format Changes
 
+  - Header (Program name, version)
+
 ### TODO
 
   - Review of XML format - additions? removals? changes?
@@ -248,6 +250,7 @@ Forms:
     * Most of the XML preset parser
 * Classes needing changing/updating:
     * ConfigMIDI
+      * Currently, MIDI values here are stored in a string. I would like a nicer OO approach to this.
     * ControlObjectMIDI
     * DlgPrefsMIDI
     * MIDI_____

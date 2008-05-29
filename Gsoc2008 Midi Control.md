@@ -188,8 +188,7 @@ previously used (thanks G\!)
 
 Forms:
 
-\* MIDI Device Selection
-
+  - MIDI Device Selection
   - A list of MIDI devices
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
@@ -199,44 +198,38 @@ Forms:
 
 ### TODO
 
-\* Review of XML format - additions? removals? changes?
-
+  - Review of XML format - additions? removals? changes?
   - Traktor 3.3
-  - Too many numbers. Hard to tell what values mean (ok in proprietary
-    software, but not mixxx\!)
-  - All attributes in one tag - probably not the best way to go about
-    things
-  - Has a versioning system
-  - Mixmeister Fusion
-  - Has a file of templates
-  - Everything is in one tag - bad
-  - Clear names used to define behaviour - good
-  - Others
-  - Strengths/weaknesses of current format
-  - Backwards compatibility issues
-  - Versioning missing
-  - More header info needed
-  - Good, modular use of tags - needs extending
 
-\* (Garth's suggestion) How will presets and bindings manager interact?
+<!-- end list -->
 
-  - Tom's opinion - Novice users should not have to even mess with the
-    MIDI setup from a usability point of view, but the adventurous users
-    need to be able to explore with ease whilst the advanced users hack
-    together complex setups.
-  - Idea: in bindings window, import preset/load preset... option to do
-    it for current MIDI device
-
-\* How do other programs currently do MIDI? What are their strong/weak
-points? \* Address bug 234923:
-<https://bugs.launchpad.net/mixxx/+bug/234923> \* Implementation
-
-  - GUI Mockup
-  - High level UML class structure
-  - What can be used from the existing implementation
-  - Most of the XML preset parser
-  - Classes needing changing/updating:
-  - ConfigMIDI
-  - ControlObjectMIDI
-  - DlgPrefsMIDI
-  - MIDI\_\_\_\_\_
+``` 
+    * Too many numbers. Hard to tell what values mean (ok in proprietary software, but not mixxx!)
+    * All attributes in one tag - probably not the best way to go about things
+    * Has a versioning system
+* Mixmeister Fusion
+    * Has a file of templates
+    * Everything is in one tag - bad
+    * Clear names used to define behaviour - good
+* Others
+* Strengths/weaknesses of current format
+    * Backwards compatibility issues
+    * Versioning missing
+    * More header info needed
+    * Good, modular use of tags - needs extending
+* (Garth's suggestion) How will presets and bindings manager interact?
+* Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
+* Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
+* How do other programs currently do MIDI? What are their strong/weak points?
+* Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
+* Implementation
+* GUI Mockup
+* High level UML class structure
+* What can be used from the existing implementation
+    * Most of the XML preset parser
+* Classes needing changing/updating:
+    * ConfigMIDI
+    * ControlObjectMIDI
+    * DlgPrefsMIDI
+    * MIDI_____
+```

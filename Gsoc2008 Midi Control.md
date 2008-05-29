@@ -193,6 +193,25 @@ Forms:
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
   - Detect new MIDI devices
+  - MIDI Bindings
+  - Table of bindings
+
+<!-- end list -->
+
+``` 
+    * Friendly name (eg. Channel 1 pitch fader)
+    * Control name
+    * MIDI Assignment
+      * Channel, key, or pitch bend
+    * MIDI Device
+* Import, export
+* Add binding/change binding 'wizard' buttons
+* Group learn
+* Single learn
+* Sandbox Mode?
+    * When adjusting MIDI settings in the dialog, will the program be affected? Or will the MIDI window stop all events going to the program?
+    * Maybe an option (checkbox) for this? "Block MIDI messages going to the program while preferences are open"
+```
 
 ### MIDI XML Format Changes
 

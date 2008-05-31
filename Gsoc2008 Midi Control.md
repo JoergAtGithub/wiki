@@ -193,17 +193,21 @@ Forms:
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
   - Detect new MIDI devices
-  - MIDI Bindings
-  - Table of bindings
+  - Example Table
 
 <!-- end list -->
 
 ``` 
+    * {{:mididevicedlg.png|}}
+* MIDI Bindings
+* Table of bindings
     * Friendly name (eg. Channel 1 pitch fader)
     * Control name
     * MIDI Assignment
       * Channel, key, or pitch bend
     * MIDI Device
+    * Example Table
+      * {{:midibindingdlg.png|}}
 * Import, export
 * Add binding/change binding 'wizard' buttons
 * Group learn

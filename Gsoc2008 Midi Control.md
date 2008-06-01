@@ -222,6 +222,7 @@ Forms:
   - Header (Program name, version)
   - Comments (about the controller, links to specs, etc)
   - Nicer control (key) names, more human readable
+  - Example: <http://soc.corrodedreality.org/sampleMidiPreset.xml>
 
 ### TODO
 

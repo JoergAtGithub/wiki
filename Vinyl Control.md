@@ -46,6 +46,11 @@ configuration. Currently (2008-03-03) running both inputs through the
 one soundcard does not work, it will cause the song to drift randomly.
 (tested on Linux/SVN-2008-02-29/M-Audio Delta 1010LT\[envy24\])
 
+**For best scratch performance** with vinyl control, your system must be
+able to handle setting the latency to **10ms or less** otherwise the
+scratch sound will start to become distorted as latencies (and lag time)
+increase.
+
 For timecoded records or CDs, you can use any of the records supported
 by Mixxx:
 

@@ -215,6 +215,7 @@ Forms:
 * Sandbox Mode?
     * When adjusting MIDI settings in the dialog, will the program be affected? Or will the MIDI window stop all events going to the program?
     * Maybe an option (checkbox) for this? "Block MIDI messages going to the program while preferences are open"
+    * Make it block MIDI messages only when the MIDI prefs pane is open. If that's too much work, then just make it block MIDI messages while whole prefs dialog is open.  --- //[[albert@santoni.ca|Albert Santoni]] 2008/06/01 23:12//
 ```
 
 ### MIDI XML Format Changes

@@ -187,6 +187,8 @@ previously used (thanks G\!)
 
 [[/media/mixxx_midi_system.jpg|]]
 
+(needs to be updated) [[/media/class_diagram1.jpg|]]
+
 ### New Dialog Changes
 
 Forms:

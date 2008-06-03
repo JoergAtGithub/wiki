@@ -12,6 +12,7 @@
     2.  [Latency](manual#latency)
     3.  [Samplerates](manual#samplerates)
     4.  [Sound APIs](manual#sound_apis)
+    5.  [Vinyl Control](manual#vinyl_control)
 5.  [DJing with Mixxx](manual#djing_with_mixxx)
     1.  [Loading Tracks](manual#loading_tracks)
     2.  [Waveform Displays](manual#waveform_displays)
@@ -139,6 +140,22 @@ provide the best compatibility and performance. Linux users wishing to
 use JACK should **ensure they run the *jackd* daemon before launching
 Mixxx**, otherwise JACK will not appear as a Sound API in the
 preferences.
+
+## Vinyl Control
+
+Vinyl control allows a user to manipulate the playback of a song in
+Mixxx using a real turntable as a controller. In effect, it simulates
+the sound and feel of having your digital music collection on vinyl.
+Many DJs prefer the tactile feel of vinyl, and vinyl control allows that
+feel to be preserved while retaining the benefits of using digital
+audio.
+
+You can configure vinyl control through the *Vinyl Control* pane in the
+preferences.
+
+More information about Mixxx's vinyl control and supported hardware
+configurations is available on the [vinyl control wiki
+page](vinyl_control).
 
 # DJing with Mixxx
 

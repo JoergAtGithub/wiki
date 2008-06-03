@@ -36,6 +36,9 @@ ideas for community feedback, reading existing MIDI code.
 am away from Wednesday the 4th-Monday the 9th, attending Rock am Ring in
 Germany. I can only be contacted by phone during this time.
 
+\* Week 3: GUI Design, write class structure, begin XML changes, try to
+get MIDI device dialog working.
+
 ### About Tom
 
 You can contact Tom or read about him at this page:
@@ -227,36 +230,27 @@ Forms:
 
 ### TODO
 
-  - Review of XML format - additions? removals? changes?
-  - Traktor 3.3
+  - (Garth's suggestion) How will presets and bindings manager interact?
+  - Tom's opinion - Novice users should not have to even mess with the
+    MIDI setup from a usability point of view, but the adventurous users
+    need to be able to explore with ease whilst the advanced users hack
+    together complex setups.
+  - Idea: in bindings window, import preset/load preset... option to do
+    it for current MIDI device
+  - How do other programs currently do MIDI? What are their strong/weak
+    points?
+  - Address bug 234923: <https://bugs.launchpad.net/mixxx/+bug/234923>
+  - LADSPA
+  - Implementation
+  - GUI Mockup
+  - High level UML class structure
+  - What can be used from the existing implementation
 
 <!-- end list -->
 
 ``` 
-    * Too many numbers. Hard to tell what values mean (ok in proprietary software, but not mixxx!)
-    * All attributes in one tag - probably not the best way to go about things
-    * Has a versioning system
-* Mixmeister Fusion
-    * Has a file of templates
-    * Everything is in one tag - bad
-    * Clear names used to define behaviour - good
-* Others
-* Strengths/weaknesses of current format
-    * Backwards compatibility issues
-    * Versioning missing
-    * More header info needed
-    * Good, modular use of tags - needs extending
-* (Garth's suggestion) How will presets and bindings manager interact?
-* Tom's opinion - Novice users should not have to even mess with the MIDI setup from a usability point of view, but the adventurous users need to be able to explore with ease whilst the advanced users hack together complex setups.
-* Idea: in bindings window, import preset/load preset... option to do it for current MIDI device
-* How do other programs currently do MIDI? What are their strong/weak points?
-* Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
-* LADSPA
-* Implementation
-* GUI Mockup
-* High level UML class structure
-* What can be used from the existing implementation
     * Most of the XML preset parser
+    * Adam's DomNode idea
 * Classes needing changing/updating:
     * ConfigMIDI
       * Currently, MIDI values here are stored in a string. I would like a nicer OO approach to this.

@@ -50,6 +50,9 @@ optimize for another CPU, use `optimize=#` where \# is in the range 1-4:
 1 is single-core (P-III and below,) 2 is for P4, 3 is for Intel Core, 4
 is for Core 2...
 
+If you have a Hercules DJ Console, be sure you enable the `djconsole=1`
+(MK2 & RMX) or `djconsole_legacy=1` (mp3, MK1)
+
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:
 

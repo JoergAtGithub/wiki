@@ -13,8 +13,8 @@ Currently, there are 5 different models:
   - Hercules DJ Console Mac Edition - Same as the MK2, slightly
     different MIDI mapping file in Mixxx.
   - Hercules DJ Console RMX - Next-generation Hercules controller,
-    release date is April 2008. Will be supported in Mixxx if we can get
-    our hands on one.
+    release date is April 2008. ~~Will be supported in Mixxx if we can
+    get our hands on one.~~ Supported, Thanks Francois @ Hercules\!
 
 Mixxx's support for the Hercules controllers is described on our
 [hardware compatibility](hardware_compatibility) page.

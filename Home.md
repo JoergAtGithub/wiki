@@ -64,7 +64,7 @@ The following projects were accepted for Google Summer of Code 2008:
   - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
     Stessens
   - [Stability and Crash
-    Recovery](gsoc2008/stability_and_crash_recovery) by Zack Elko
+    Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
 
 Additional [SoC Student Info](SoC%20Student%20Info)
 

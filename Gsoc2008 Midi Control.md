@@ -36,8 +36,10 @@ ideas for community feedback, reading existing MIDI code.
 am away from Wednesday the 4th-Monday the 9th, attending Rock am Ring in
 Germany. I can only be contacted by phone during this time.
 
-\* Week 3: GUI Design, write class structure, begin XML changes, try to
-get MIDI device dialog working.
+\* Week 3: (Unplanned) Move back to Australia and recover from jetlag.
+
+\* Week 4: GUI Design, write class structure, begin XML changes, try to
+get MIDI device dialog working, look at proposed MIDI patches.
 
 ### About Tom
 

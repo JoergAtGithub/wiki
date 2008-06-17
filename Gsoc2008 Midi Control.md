@@ -200,12 +200,13 @@ Forms:
   - A list of MIDI devices
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
-  - Detect new MIDI devices
-  - Example Table
 
 <!-- end list -->
 
 ``` 
+    * Enabled: Probably better to let the user choose enabled for midi in and out only rather than having a redundant device enable option. If they don't want the device to be used, they can disable both midi in and out...
+* Detect new MIDI devices
+* Example Table
     * {{:mididevicedlg.png|}}
 * MIDI Bindings
 * DlgMidiBindings

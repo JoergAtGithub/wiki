@@ -196,6 +196,7 @@ previously used (thanks G\!)
 Forms:
 
   - MIDI Device Selection
+  - DlgMidiDevice
   - A list of MIDI devices
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
@@ -207,6 +208,7 @@ Forms:
 ``` 
     * {{:mididevicedlg.png|}}
 * MIDI Bindings
+* DlgMidiBindings
 * Table of bindings
     * Friendly name (eg. Channel 1 pitch fader)
     * Control name
@@ -263,6 +265,8 @@ Forms:
       * No significant changes required at this time
     * DlgPrefsMIDI
       * Lots of changes, see Dialogs
+      * Move MIDI device handling into new device dialog. Initially one device, add support for multiple later.
+      * Remove references to this dialog in the project.
     * MIDI_____
       * The platform implementation classes could use some checking, but they seem to be fine for the moment.
 ```

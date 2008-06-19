@@ -197,6 +197,7 @@ Forms:
 
   - MIDI Device Selection
   - DlgMidiDevice
+  - [[/media/midi-device-dialog-draft.jpg|]]
   - A list of MIDI devices
   - Status of each MIDI device: Active? Enabled? Send? Receive? Working
     correctly?
@@ -210,6 +211,7 @@ Forms:
     * {{:mididevicedlg.png|}}
 * MIDI Bindings
 * DlgMidiBindings
+* {{:midi-bindings-dialog-draft.jpg|}}
 * Table of bindings
     * Friendly name (eg. Channel 1 pitch fader)
     * Control name

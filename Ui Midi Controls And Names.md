@@ -97,3 +97,11 @@ something like this:
 This would increase the pitch of the right channel inside Mixxx, and the
 GUI controls would automatically reflect this change. Access to
 ControlObjects is also thread-safe when used this way.
+
+**Important note:** Different types of ControlObject wrappers must be
+used depending on what thread your code is running in. This example
+assumes the code will run in the GUI (ie. main) thread. The
+ControlObjects wrappers should be used as follows: \*
+ControlObjectThreadMain - GUI (main) thread \* ControlObject - The audio
+callback thread (most audio processing happens here) \*
+ControlObjectThread - Other threads

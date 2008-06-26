@@ -7,3 +7,5 @@ down here so you don't forget.
   - Looping controls
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate.
+  - M4A support
+  - hotkey support (maybe configurable?)

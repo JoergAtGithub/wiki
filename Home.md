@@ -60,7 +60,7 @@ continue to be useful.
 
 The following projects were accepted for Google Summer of Code 2008:
 
-  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by Russell Ryan
+  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by RJ Ryan
   - [MIDI Control](gsoc2008/midi_control) by Tom Care
   - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
     Stessens

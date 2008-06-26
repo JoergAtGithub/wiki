@@ -44,6 +44,7 @@ continue to be useful.
   - Tutorials for new developers:
   - [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
+  - [Feature Wishlist](Feature%20Wishlist)
   - Feature Specifications:
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Looping](Looping)

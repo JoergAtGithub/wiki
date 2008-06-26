@@ -9,3 +9,4 @@ down here so you don't forget.
     actually be accurate.
   - M4A support
   - hotkey support (maybe configurable?)
+  - adjustable drag sensitivity on visual waveform view

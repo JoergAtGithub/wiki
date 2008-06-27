@@ -48,6 +48,7 @@ continue to be useful.
   - Feature Specifications:
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Looping](Looping)
+  - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
 
 ## Artist Documentation
 

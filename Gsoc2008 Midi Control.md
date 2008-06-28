@@ -32,14 +32,24 @@ the project. Tom believes that community input is essential\!
 \* Week 1: ~~Forming basic use cases~~, general brainstorming, preparing
 ideas for community feedback, reading existing MIDI code.
 
-\* Week 2: UML proposal, class design, XML format proposal. **NOTE:** I
-am away from Wednesday the 4th-Monday the 9th, attending Rock am Ring in
-Germany. I can only be contacted by phone during this time.
+\* Week 2: ~~UML proposal, class design, XML format proposal.~~
+**NOTE:** I am away from Wednesday the 4th-Monday the 9th, attending
+Rock am Ring in Germany. I can only be contacted by phone during this
+time.
 
 \* Week 3: (Unplanned) Move back to Australia and recover from jetlag.
 
-\* Week 4: GUI Design, write class structure, begin XML changes, try to
-get MIDI device dialog working, look at proposed MIDI patches.
+\* Week 4: GUI Design, write class structure, begin XML changes, ~~try
+to get MIDI device dialog working~~, ~~look at proposed MIDI patches~~.
+
+\* Week 5: Add working GUI Elements (a little unproductive this week due
+to moving house and having no internet whilst getting stuck on a stupid
+bug. Thanks Garth for finding it\! :))
+
+\* Week 6: Fix GUI on Mac, Get devices showing up, Investigate/Change
+MIDI Device data storage, Work on dlgprefmididevice
+
+\* Week 7: Work on dlgprefmidibindings
 
 ### About Tom
 

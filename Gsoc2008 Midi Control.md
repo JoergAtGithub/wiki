@@ -275,5 +275,7 @@ Forms:
     * MIDI_____
       * The platform implementation classes could use some checking, but they seem to be fine for the moment.
     * DlgPrefsMIDIDevice
+      * Helper functions (outlined in the cpp in svn)
     * DlgPrefsMIDIBindings
+      * Helper functions (outlined in the cpp in svn)
 ```

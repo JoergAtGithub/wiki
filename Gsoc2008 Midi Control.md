@@ -230,6 +230,7 @@ Forms:
     * MIDI Device
     * Example Table
       * {{:midibindingdlg.png|}}
+      * Too big! Shrinkage required.
 * Import, export
 * Add binding/change binding 'wizard' buttons
 * Group learn
@@ -249,19 +250,9 @@ Forms:
 
 ### TODO
 
-  - (Garth's suggestion) How will presets and bindings manager interact?
-  - Tom's opinion - Novice users should not have to even mess with the
-    MIDI setup from a usability point of view, but the adventurous users
-    need to be able to explore with ease whilst the advanced users hack
-    together complex setups.
-  - Idea: in bindings window, import preset/load preset... option to do
-    it for current MIDI device
-  - How do other programs currently do MIDI? What are their strong/weak
-    points?
   - Address bug 234923: <https://bugs.launchpad.net/mixxx/+bug/234923>
   - LADSPA
   - Implementation
-  - GUI Mockup
   - High level UML class structure
   - What can be used from the existing implementation
 
@@ -277,9 +268,12 @@ Forms:
     * ControlObjectMIDI
       * No significant changes required at this time
     * DlgPrefsMIDI
+      * (now) Being scrapped in favour of separate Device and Bindings dialogs
       * Lots of changes, see Dialogs
-      * Move MIDI device handling into new device dialog. Initially one device, add support for multiple later.
-      * Remove references to this dialog in the project.
+      * Move MIDI device handling into new device dialog. Initially one device, add support for multiple later. (28/6) This is more to do with the lower level, and how Mixxx handles multiple MIDI devices. Needs investigation
+      * (now) Remove references to this dialog in the project.
     * MIDI_____
       * The platform implementation classes could use some checking, but they seem to be fine for the moment.
+    * DlgPrefsMIDIDevice
+    * DlgPrefsMIDIBindings
 ```

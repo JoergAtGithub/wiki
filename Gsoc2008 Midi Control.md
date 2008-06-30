@@ -46,8 +46,8 @@ to get MIDI device dialog working~~, ~~look at proposed MIDI patches~~.
 to moving house and having no internet whilst getting stuck on a stupid
 bug. Thanks Garth for finding it\! :))
 
-\* Week 6: Fix GUI on Mac, Get devices showing up, Investigate/Change
-MIDI Device data storage, Work on dlgprefmididevice
+\* Week 6: ~~Fix GUI on Mac, Get devices showing up~~,
+Investigate/Change MIDI Device data storage, Work on dlgprefmididevice
 
 \* Week 7: Work on dlgprefmidibindings
 
@@ -286,6 +286,16 @@ Forms:
       * The platform implementation classes could use some checking, but they seem to be fine for the moment.
     * DlgPrefsMIDIDevice
       * Helper functions (outlined in the cpp in svn)
+      * Work out the best way to do debug info
+        * Probably need to extract the info from the midi pointer
+          * New functions to get the MIDI log?
+          * Signals/Slots? Possible?
+          * Polling? Bad idea...
+          * Store the log in the MIDI class, and then have a enable/disable logging switch with a get function... still needs polling!
+          * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window?
+          * Do we want access to the info elsewhere, eg in console in an extremely verbose mode?
+      * Store device info in a new configobject about active devices
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
+      * Idea: row highlighting for non-active bindings due to device unavailable/disabled
 ```

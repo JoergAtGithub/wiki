@@ -51,6 +51,16 @@ MIDI Device data storage, Work on dlgprefmididevice
 
 \* Week 7: Work on dlgprefmidibindings
 
+**Upcoming Stuff**
+
+\* (Week 8) Complete Google Midterm Evaluations
+[Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)
+|
+[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions)
+
+\* (Week 9) Start a TODO list of things that need to be implemented to
+target an early August (week 12 or 13) community test release
+
 ### About Tom
 
 You can contact Tom or read about him at this page:

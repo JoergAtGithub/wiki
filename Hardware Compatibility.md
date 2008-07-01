@@ -28,8 +28,8 @@ support:
 
 # Mixxx Soundcard Compatibility Notes
 
-Mixxx is generally compatible with all sound cards, but here's some tips
-our users have given us:
+Mixxx is generally compatible with all sound cards, but here are some
+tips our users have given us:
 
 ## Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 

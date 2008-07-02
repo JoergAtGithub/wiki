@@ -256,6 +256,7 @@ Forms:
   - Header (Program name, version)
   - Comments (about the controller, links to specs, etc)
   - Nicer control (key) names, more human readable
+  - (new 3/7) Device names for the preset detection
   - Proposal: <http://soc.corrodedreality.org/newmidi.txt> 
 
 ### TODO

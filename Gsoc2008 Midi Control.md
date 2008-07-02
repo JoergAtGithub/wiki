@@ -284,6 +284,8 @@ Forms:
       * (now) Remove references to this dialog in the project.
     * MIDI_____
       * The platform implementation classes could use some checking, but they seem to be fine for the moment.
+      * Why is the receive function called send, when we have functions to send called send____? Very confusing when first reading the code!
+        * Propose we change this to recieve...
     * DlgPrefsMIDIDevice
       * Helper functions (outlined in the cpp in svn)
       * Work out the best way to do debug info

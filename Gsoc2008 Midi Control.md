@@ -297,6 +297,7 @@ Forms:
           * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window?
           * Do we want access to the info elsewhere, eg in console in an extremely verbose mode?
       * Store device info in a new configobject about active devices
+      * Preset available: display the name of the file we *think* is the preset, that way the user can decide if it was correct or not
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled

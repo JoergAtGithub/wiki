@@ -271,6 +271,7 @@ Forms:
 ``` 
     * Most of the XML preset parser
     * Adam's DomNode idea
+* Sandbox mode
 * Classes needing changing/updating:
     * ConfigMIDI
       * Currently, MIDI values here are stored in a string. I would like a nicer OO approach to this.

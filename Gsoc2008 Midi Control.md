@@ -300,4 +300,5 @@ Forms:
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled
+    * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup.
 ```

@@ -298,7 +298,7 @@ Forms:
           * Store the log in the MIDI class, and then have a enable/disable logging switch with a get function... still needs polling!
           * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window?
           * Do we want access to the info elsewhere, eg in console in an extremely verbose mode?
-      * Store device info in a new configobject about active devices
+      * Store device info in a new configobject about active devices (3/7: done, implement enabled/disabled tx/rx)
       * Preset available: display the name of the file we *think* is the preset, that way the user can decide if it was correct or not
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)

@@ -233,8 +233,8 @@ the appropriate direction. Now get out there and make Tiesto jealous\!
 Headphone cueing is a technique DJs use to listen to the next track they
 want to play in their headphones before playing it out the main
 speakers. Mixxx allows a DJ to route audio from either player to their
-headphones by toggling either of the "CUE" buttons located on the far
-left/right sides of Mixxx's interface. Headphone cueing is useful
+headphones by toggling either of the "HEADPHONE" buttons located on the
+far left/right sides of Mixxx's interface. Headphone cueing is useful
 because it allows a DJ to beatmatch the next song in their headphones
 before bringing it into their mix by sliding the crossfader.
 

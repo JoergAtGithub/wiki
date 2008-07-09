@@ -47,16 +47,17 @@ to moving house and having no internet whilst getting stuck on a stupid
 bug. Thanks Garth for finding it\! :))
 
 \* Week 6: ~~Fix GUI on Mac, Get devices showing up~~,
-Investigate/Change MIDI Device data storage, Work on dlgprefmididevice
+~~Investigate/Change MIDI Device data storage~~, Work on
+dlgprefmididevice
 
-\* Week 7: Work on dlgprefmidibindings
+\* Week 7: Work on dlgprefmidibindings, Work on dlgprefmididevice
 
-**Upcoming Stuff**
-
-\* (Week 8) Complete Google Midterm Evaluations
-[Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)
+\* (Week 8) ~~Complete Google Midterm Evaluations
+[Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)~~
 |
-[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions)
+[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions),
+midibindings: implement table 'feel' in gui, mididevice: preset
+detection
 
 \* (Week 9) Start a TODO list of things that need to be implemented to
 target an early August (week 12 or 13) community test release

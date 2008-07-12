@@ -53,11 +53,11 @@ dlgprefmididevice
 \* Week 7: Work on dlgprefmidibindings, Work on dlgprefmididevice
 
 \* (Week 8) ~~Complete Google Midterm Evaluations
-[Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)~~
+[Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)
 |
-[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions),
-midibindings: implement table 'feel' in gui, mididevice: preset
-detection
+[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions),~~
+midibindings: implement table 'feel' in gui, ~~mididevice: preset
+detection~~
 
 \* (Week 9) Start a TODO list of things that need to be implemented to
 target an early August (week 12 or 13) community test release
@@ -300,7 +300,7 @@ Forms:
           * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window?
           * Do we want access to the info elsewhere, eg in console in an extremely verbose mode?
       * Store device info in a new configobject about active devices (3/7: done, implement enabled/disabled tx/rx)
-      * Preset available: display the name of the file we *think* is the preset, that way the user can decide if it was correct or not
+      * Preset available: display the name of the file we *think* is the preset, that way the user can decide if it was correct or not (11/7: part 1 done, keywords coming soon)
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled

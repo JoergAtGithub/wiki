@@ -284,26 +284,21 @@ Forms:
       * (now) Being scrapped in favour of separate Device and Bindings dialogs
       * Lots of changes, see Dialogs
       * Move MIDI device handling into new device dialog. Initially one device, add support for multiple later. (28/6) This is more to do with the lower level, and how Mixxx handles multiple MIDI devices. Needs investigation
-      * (now) Remove references to this dialog in the project.
+      * (now) Remove references to this dialog in the project. (14/7 done)
     * MIDI_____
-      * The platform implementation classes could use some checking, but they seem to be fine for the moment.
       * Why is the receive function called send, when we have functions to send called send____? Very confusing when first reading the code!
         * Propose we change this to recieve...
+      * Refactoring - not a priority at the moment
     * DlgPrefsMIDIDevice
-      * Helper functions (outlined in the cpp in svn)
       * Work out the best way to do debug info
-        * Probably need to extract the info from the midi pointer
-          * New functions to get the MIDI log?
-          * Signals/Slots? Possible?
-          * Polling? Bad idea...
-          * Store the log in the MIDI class, and then have a enable/disable logging switch with a get function... still needs polling!
-          * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window?
-          * Do we want access to the info elsewhere, eg in console in an extremely verbose mode?
-      * Store device info in a new configobject about active devices (3/7: done, implement enabled/disabled tx/rx)
-      * Preset available: display the name of the file we *think* is the preset, that way the user can decide if it was correct or not (11/7: part 1 done, keywords coming soon)
+        * Signals/Slots? Possible? Yes, but complicated (non-gui class has to run through Qt maker...)
+        * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window? *favourite*
+        * Do we want access to the info elsewhere, eg in console in an extremely verbose mode? Not at the moment, though signal would be the easiest way to do this
+      * Detect preset by keywords
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled
+      * MIDI Learn: need midi device(s) pointer(s).
     * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup.
     * ConfigKeys: if they need square brackets to work in a configobject, why isnt this enforced or done automatically?
 ```

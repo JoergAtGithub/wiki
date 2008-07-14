@@ -52,15 +52,20 @@ dlgprefmididevice
 
 \* Week 7: Work on dlgprefmidibindings, Work on dlgprefmididevice
 
-\* (Week 8) ~~Complete Google Midterm Evaluations
+\* Week 8: ~~Complete Google Midterm Evaluations
 [Student](http://groups.google.com/group/google-summer-of-code-announce/web/student-survey-questions)
 |
-[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions),~~
-midibindings: implement table 'feel' in gui, ~~mididevice: preset
+[Mentor](http://groups.google.com/group/google-summer-of-code-announce/web/midterm-mentor-survey-questions),
+midibindings: implement table 'feel' in gui, mididevice: preset
 detection~~
 
-\* (Week 9) Start a TODO list of things that need to be implemented to
-target an early August (week 12 or 13) community test release
+\* --\> (Week 9) Start a TODO list of things that need to be implemented
+to target an early August (week 12 or 13) community test release, Single
+MIDI learn, Group MIDI Learn, dlgprefmidibindings small dialogs
+
+\* (Week 10) Multiple device support
+
+\* (Week 11) Testing
 
 ### About Tom
 

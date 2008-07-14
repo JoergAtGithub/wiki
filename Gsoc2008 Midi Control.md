@@ -262,17 +262,31 @@ Forms:
 
 ### TODO
 
-  - Address bug 234923: <https://bugs.launchpad.net/mixxx/+bug/234923>
-  - LADSPA
-  - Implementation
-  - High level UML class structure
-  - What can be used from the existing implementation
+  - Current Priorities
+  - Functionality
 
 <!-- end list -->
 
 ``` 
-    * Most of the XML preset parser
-    * Adam's DomNode idea
+    * Finish the two dialogs
+    * Get to a working state where presets can loaded/saved/etc easily
+    * Multiple device support
+    * Prepare for community release
+    * Prepare for 1.6.1 code merge
+* Testing
+    * Everything!
+    * From different points of view: SVN update, fresh install, end user upgrade...
+    * Bugfixes
+* Design (most likely post-GSoC)
+    * Refactoring
+    * Overhaul of MIDI structures
+    * Performance analysis
+* The Future
+    * What is needed next?
+    * Generalised support for weird, non-midi devices eg mouse/kb/custom controllers, design review
+* Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
+* LADSPA
+* Implementation
 * Sandbox mode
 * Classes needing changing/updating:
     * ConfigMIDI

@@ -7,6 +7,8 @@ may be done already or irrelevant.
   - Split cue/master headphone support
   - Visual 'track ending' indicator for visual waveform
   - Effects panel integration with UI
+  - SVG/Vector based skins so hitting fullscreen can automatically
+    resize the widgets.
   - Looping controls
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate.

@@ -62,6 +62,12 @@ The following are overall groups that the code can be grouped into:
   - Dialog
   - Config
 
+## Deprecated Classes
+
+  - Player, PlayerProxy, PlayerAsio, PlayerPortAudio, PlayerJack,
+    PlayerAlsa, PlayerRTAudio, need to be removed (or moved to 'old').
+  - the old visual stuff can be deleted (it lived in 'old')
+
 ## Process
 
   - All files will be moved with the 'svn move' command so that their

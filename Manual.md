@@ -6,7 +6,7 @@
     1.  [Windows](manual#windows)
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)
-4.  [User Interface Overview](manual#userinterface)
+4.  [User Interface Overview](manual#user_interface_overview)
 5.  [Configuration](manual#configuration)
     1.  [Master and Headphone
         Outputs](manual#master_and_headphone_outputs)

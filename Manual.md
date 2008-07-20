@@ -158,6 +158,8 @@ More information about Mixxx's vinyl control and supported hardware
 configurations is available on the [vinyl control wiki
 page](vinyl_control).
 
+# User Interface Overview
+
 # DJing with Mixxx
 
 Mixxx was designed to be easy to learn for both novice and experienced

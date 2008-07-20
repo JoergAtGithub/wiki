@@ -6,23 +6,24 @@
     1.  [Windows](manual#windows)
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)
-4.  [Configuration](manual#configuration)
+4.  [User Interface Overview](manual#userinterface)
+5.  [Configuration](manual#configuration)
     1.  [Master and Headphone
         Outputs](manual#master_and_headphone_outputs)
     2.  [Latency](manual#latency)
     3.  [Samplerates](manual#samplerates)
     4.  [Sound APIs](manual#sound_apis)
     5.  [Vinyl Control](manual#vinyl_control)
-5.  [DJing with Mixxx](manual#djing_with_mixxx)
+6.  [DJing with Mixxx](manual#djing_with_mixxx)
     1.  [Loading Tracks](manual#loading_tracks)
     2.  [Waveform Displays](manual#waveform_displays)
     3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
     4.  [Headphone Cueing](manual#headphone_cueing)
-6.  [Keys and Hardware
+7.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).
     1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
     2.  [MIDI Controllers](manual#midi_controllers).
-7.  [Getting Involved](manual#getting_involved).
+8.  [Getting Involved](manual#getting_involved).
 
 # Introduction
 

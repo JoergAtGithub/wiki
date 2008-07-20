@@ -52,6 +52,8 @@ OS X (Intel) users can install Mixxx by double-clicking the Mixxx zip
 archive, and then dragging-and-dropping the Mixxx bundle into their
 *Applications* folder. Mixxx requires an Intel Mac running OS 10.4+.
 
+# User Interface Overview
+
 # Configuration
 
 The first time Mixxx is started, you are asked to select a directory
@@ -157,8 +159,6 @@ preferences.
 More information about Mixxx's vinyl control and supported hardware
 configurations is available on the [vinyl control wiki
 page](vinyl_control).
-
-# User Interface Overview
 
 # DJing with Mixxx
 

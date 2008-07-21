@@ -54,6 +54,24 @@ archive, and then dragging-and-dropping the Mixxx bundle into their
 
 # User Interface Overview
 
+[[/media/manual/mixxx-overview.png|]]
+
+Mixxx's user interface is designed to be simple and easy to use when
+DJing live. This section outlines the main features of Mixxx's
+interface.
+
+## Playback Controls
+
+|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_playback.png|]] | The playback controls allow you pause, play, and otherwise manipulate the playback of a song. The REV button toggles reverse playback when pressed during regular playback. When playback is stopped, pressing the CUE button places a cue-point at the current position on the waveform. A cue-point is marked by a white vertical line in the waveform view. If the CUE button is pressed during playback, the song will seek to the cue-point and stop. Holding down the CUE button while the song is positioned on the cue-point will result in the song temporarily playing back, and seeking back to the cue-point upon release of the CUE button. This describes the "CDJ Mode" cue behaviour, which is modifiable in the preferences under *Interface-\>Default cue behaviour*. |
+
+## Tempo Controls
+
+|                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_tempo.png|]] | The tempo controls allow you to slow down and speed up a song. This is frequently useful for beatmatching songs when mixing. The RATE slider changes the tempo of a song when it is moved. The PERM buttons apply fine adjustment to the RATE slider, and the TEMP buttons apply a temporary pitch-bend when depressed. The SYNC button attempts to automatically match the tempo of the song in the corresponding channel with tempo of the song in the other channel, based on the calculated BPM. |
+
 # Configuration
 
 The first time Mixxx is started, you are asked to select a directory

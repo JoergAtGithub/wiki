@@ -72,6 +72,48 @@ interface.
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[/media/manual/uioverview/ui_tempo.png|]] | The tempo controls allow you to slow down and speed up a song. This is frequently useful for [beatmatching](manual#beatmatching_and_mixing) songs when mixing. The RATE slider changes the tempo of a song when it is moved. The PERM buttons apply fine adjustment to the RATE slider, and the TEMP buttons apply a temporary pitch-bend when depressed. The SYNC button attempts to automatically match the tempo of the song in the corresponding channel with tempo of the song in the other channel, based on the calculated BPM. |
 
+## Headphone and Flanger
+
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_headphone.png|]] | When toggled, the HEADPHONE button sends the selected channel's audio to the *Headphones* output audio device selected in the preferences under *Sound Hardware*. This feature is commonly used when [headphone cueing](manual#headphone_cueing) and [beatmatching](manual#beatmatching_and_mixing). The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully. |
+
+## Volume and EQ
+
+|                                      |                                                                                                                                                                                                                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_voleq.png|]] | The VOL slider controls the volume of the selected channel. The GAIN knob can be used to apply extra amplification to a quiet song, which can be used to match its volume with the song in the other channel. The HIGH, MID, and LOW knobs perform equalization on the channel. |
+
+## Waveform
+
+|                                         |                      |
+| --------------------------------------- | -------------------- |
+| [[/media/manual/uioverview/ui_waveform.png|]] | Put description here |
+
+## Waveform Overview
+
+|                                          |                      |
+| ---------------------------------------- | -------------------- |
+| [[/media/manual/uioverview/ui_woverview.png|]] | Put description here |
+
+## End of Track Mode
+
+|                                           |                      |
+| ----------------------------------------- | -------------------- |
+| [[/media/manual/uioverview/ui_endoftrack.png|]] | Put description here |
+
+## Master and Crossfader Controls
+
+|                                       |                      |
+| ------------------------------------- | -------------------- |
+| [[/media/manual/uioverview/ui_master.png|]] | Put description here |
+
+## Library
+
+|                                        |                      |
+| -------------------------------------- | -------------------- |
+| [[/media/manual/uioverview/ui_library.png|]] | Put description here |
+
 # Configuration
 
 The first time Mixxx is started, you are asked to select a directory

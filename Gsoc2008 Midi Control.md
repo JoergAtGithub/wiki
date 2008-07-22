@@ -273,9 +273,10 @@ Forms:
 <!-- end list -->
 
 ``` 
-    * Finish the two dialogs
+    * Finish the two dialogs (code)
     * Get to a working state where presets can loaded/saved/etc easily
     * Multiple device support
+    * Cosmetic changes
     * Prepare for community release
     * Prepare for 1.6.1 code merge
 * Testing

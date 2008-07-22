@@ -263,7 +263,8 @@ Forms:
   - Comments (about the controller, links to specs, etc)
   - Nicer control (key) names, more human readable
   - (new 3/7) Device names for the preset detection
-  - Proposal: <http://soc.corrodedreality.org/newmidi.txt> 
+  - Proposal: <http://soc.corrodedreality.org/newmidi.txt> (23/7 needs
+    to be updated)
 
 ### TODO
 
@@ -278,6 +279,7 @@ Forms:
     * Multiple device support
     * Cosmetic changes
     * Prepare for community release
+    * Documentation!
     * Prepare for 1.6.1 code merge
 * Testing
     * Everything!
@@ -298,27 +300,20 @@ Forms:
     * ConfigMIDI
       * Currently, MIDI values here are stored in a string. I would like a nicer OO approach to this.
       * Class has to be updated to the new control type system. Generalised OO approach would be nicer than a whole bunch of ifelse's.
-    * ControlObjectMIDI
-      * No significant changes required at this time
-    * DlgPrefsMIDI
-      * (now) Being scrapped in favour of separate Device and Bindings dialogs
-      * Lots of changes, see Dialogs
-      * Move MIDI device handling into new device dialog. Initially one device, add support for multiple later. (28/6) This is more to do with the lower level, and how Mixxx handles multiple MIDI devices. Needs investigation
-      * (now) Remove references to this dialog in the project. (14/7 done)
+      * Not a priority - probably post-gsoc.
     * MIDI_____
       * Why is the receive function called send, when we have functions to send called send____? Very confusing when first reading the code!
         * Propose we change this to recieve...
       * Refactoring - not a priority at the moment
     * DlgPrefsMIDIDevice
-      * Work out the best way to do debug info
-        * Signals/Slots? Possible? Yes, but complicated (non-gui class has to run through Qt maker...)
-        * When the dialog is open, enable logging and give the MIDI class a pointer to the debug info window? *favourite*
-        * Do we want access to the info elsewhere, eg in console in an extremely verbose mode? Not at the moment, though signal would be the easiest way to do this
+      * Device names (currently broken, waiting on multiple device support)
       * Detect preset by keywords
     * DlgPrefsMIDIBindings
       * Helper functions (outlined in the cpp in svn)
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled
-      * MIDI Learn: need midi device(s) pointer(s).
-    * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup.
+      * Options currently broken
+    * New device detection: implementation and design required
+      * Probably in the device dialog.
+    * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup. (23/7 will do as part of multiple device support)
     * ConfigKeys: if they need square brackets to work in a configobject, why isnt this enforced or done automatically?
 ```

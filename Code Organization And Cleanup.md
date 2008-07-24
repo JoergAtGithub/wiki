@@ -67,8 +67,14 @@ The following are overall groups that the code can be grouped into:
   - Player, PlayerProxy, PlayerAsio, PlayerPortAudio, PlayerJack,
     PlayerAlsa, PlayerRTAudio, need to be removed (or moved to 'old').
   - the old visual stuff can be deleted (it lived in 'old')
-  - ReaderExtractHFC, ReadereExtractBeat?
+  - ReaderExtractHFC, ReaderExtractBeat?
   - Mouse, MouseLinux
+
+## Deprecated Logic
+
+  - Remove 'ping' mode from EngineBuffer
+  - WOverview does tons of HFC detection stuff, and does absolutely
+    nothing with it.
 
 ## Process
 

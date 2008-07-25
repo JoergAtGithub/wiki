@@ -49,6 +49,7 @@ continue to be useful.
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Looping](Looping)
   - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
+  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
 
 ## Artist Documentation
 

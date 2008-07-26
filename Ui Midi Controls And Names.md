@@ -18,6 +18,7 @@ The default range is 0.0 to 1.0, unless otherwise noted.
 
   - play 
   - cue\_simple
+  - cue\_cdj
   - volume
   - pregain
   - pfl

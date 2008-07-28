@@ -11,6 +11,11 @@ online markup
 converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) will
 continue to be useful.
 
+## Coding Day
+
+The Mixxx 1.6.0 coding day is on Tuesday 29th of July, for things to do,
+see: [Coding Day Activities](Coding%20Day%20Activities)
+
 ## User Documentation
 
   - [Beginner's Guide](Beginner's%20Guide)

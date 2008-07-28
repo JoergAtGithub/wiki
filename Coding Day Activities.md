@@ -16,3 +16,25 @@ There's tons of stuff to do, here's a list:
     php/javascript/jquery skills should talk to **asantoni** (IRC)
   - Could use some new high quality skins if there are any designers out
     there
+
+Available Non-Coding Tasks:
+
+  - **Test Serato CD support**. Got a CDJ? Have a CD discman or anything
+    that plays CDs? Download the Serato CD wave, burn it to a CD, and
+    test to see if you can control Mixxx via your CDJ or discman. 
+  - The wave can be downloaded
+    here:<http://rane.com/scratchlivecontrol.zip>
+  - Report your findings on IRC and here:
+    <https://bugs.launchpad.net/mixxx/+bug/186341>
+  - **Create the massive 1.6.0 changelog**. Go through the [Mixxx
+    Blog](http://mixxxblog.blogspot.com/) archives, and find the release
+    announcements for 1.6.0 beta 1, 2, 3, and 4. A changelog was
+    included with each release - copy and paste the changelog bullets
+    from each announcement into one gigantic document. Email that to
+    someone on IRC. 
+
+<!-- end list -->
+
+``` 
+* 
+```

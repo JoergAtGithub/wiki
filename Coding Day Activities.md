@@ -1,7 +1,10 @@
 # Coding Day
 
 On Tuesday July 29th, we'll be having a day of code to get release 1.6.0
-ready to go. Obviously there's tons of stuff to do, here's a list:
+ready to go. If you want to help, hop on our IRC channel (**\#mixxx** on
+Freenode) and we'll get you involved.
+
+There's tons of stuff to do, here's a list:
 
   - Coding/Bug fixing obviously needs doing, visit the [launchpad
     tracker](https://launchpad.net/mixxx/) and talk to the developers
@@ -9,7 +12,7 @@ ready to go. Obviously there's tons of stuff to do, here's a list:
     throughout the day
   - Documentation needs plenty of work
   - Especially the [manual](manual) could use a lot of work
-  - New website design is in progress, anyone with useful php/javascript
-    skills should talk to asantoni
+  - New website design is in progress, anyone with useful
+    php/javascript/jquery skills should talk to **asantoni** (IRC)
   - Could use some new high quality skins if there are any designers out
     there

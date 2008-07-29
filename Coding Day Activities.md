@@ -129,3 +129,4 @@ Let's keep track of how productive we were:
   - fixed an XML parsing bug
   - new artwork for 1.6.0 website
   - QDoubleSpinbox stuff by Martin
+  - Serato CD support tested and fixed. Thanks to Sean and Mark\!

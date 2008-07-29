@@ -63,9 +63,13 @@ detection~~
 target an early August (week 12 or 13) community test release, Single
 MIDI learn, Group MIDI Learn, dlgprefmidibindings small dialogs
 
-\*--\> (Week 10) Multiple device support
+\* (Week 10) Multiple device support (delays due to IRL stuff / bindings
+dialog problems)
 
-\* (Week 11) Testing
+\* --\> (Week 11) Multiple device support, Bindings Dialog fixes,
+Testing
+
+\* (Week 12) Code cleanup, testing
 
 ### About Tom
 

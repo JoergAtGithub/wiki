@@ -17,7 +17,7 @@ There's tons of stuff to do, here's a list:
   - Could use some new high quality skins if there are any designers out
     there
 
-Available Non-Coding Tasks:
+## Available Non-Coding Tasks:
 
   - **Test Serato CD support**. Got a CDJ? Have a CD discman or anything
     that plays CDs? Download the Serato CD wave, burn it to a CD, and

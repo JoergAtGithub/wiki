@@ -113,3 +113,13 @@ There's tons of stuff to do, here's a list:
     make sure we include the "news" tag. Existing code:
     <http://senduit.com/654416>
   - assigned to mattorsky
+
+## What We Got Done
+
+Let's keep track of how productive we were:
+
+  - make ov\_fopen ifdef'd for Windows
+  - remove crufty unsupported mouse controls from the preferences
+  - added clear button to the search box
+  - many SConscript changes / fixes
+  - added support for a new MIDI controller : NuMark TotalControl

@@ -84,7 +84,7 @@ There's tons of stuff to do, here's a list:
     related to above)
   - [New playlist doesnt show up
     initially](https://bugs.launchpad.net/mixxx/+bug/248918)
-  - **Cleanup Input Controllers Prefs**. The "Input Controllers"
+  - ~~**Cleanup Input Controllers Prefs**~~. The "Input Controllers"
     preferences pane contains unsupported (broken) mouse control stuff.
     Remove this from dlgprefmidi.cpp and dlgprefmididlg.ui and send us a
     patch.

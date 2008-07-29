@@ -157,6 +157,17 @@ of, can be selected under "Channel".
     Master device:    ElCheapo USB Audio        Channels: 1/2
     Headphone device: SoundBlaster Live!        Channels: 1/2
 
+## Using external Mixers
+
+Currently Mixxx has no special mode for routing the output of a single
+deck to a separate output which is what you need for using an external
+mixer. But it's quite simple to achieve this behaviour with a simple
+trick. Turn the crossfader as well as the "Pre/Main" knob all the way
+left (this will give you only the pre-listen signal at the headphone
+output). Now enable Cueing for the second channel (hit the HeadPhone
+button). With this setup you have channel1 playing on the master- and
+channel2 playing on the headphone output.
+
 ## Latency
 
 The latency in Mixxx indicates the amount of time it will take for the

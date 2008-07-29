@@ -38,3 +38,20 @@ There's tons of stuff to do, here's a list:
 ``` 
 * 
 ```
+
+## Available Coding Tasks:
+
+  - **Cleanup Input Controllers Prefs**. The "Input Controllers"
+    preferences pane contains unsupported (broken) mouse control stuff.
+    Remove this from dlgprefmidi.cpp and dlgprefmididlg.ui and send us a
+    patch.
+  - **QSpinBox-\>QDoubleSpinBox in Interface Prefs**. The temporary and
+    permanent pitch/rate buttons options in the interface preferences
+    pane uses QSpinBox controls, which only support integer numbers. The
+    value in the spinbox controls is actually divided by 1000 before
+    being applied to Mixxx's engine (a value of 400 turns into a pitch
+    bend of 0.4%). Your task is to change the QSpinBox controls to
+    QDoubleSpinBox and remove the division by 1000, so it's WYSIWYG.
+    Make your changes to dlgprefcontrols.cpp and dlgprefcontrolsdlg.ui
+    and send us a patch. Please test the hell out of this before sending
+    us a patch because we'd rather not break this before 1.6.0.

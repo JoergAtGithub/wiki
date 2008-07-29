@@ -125,3 +125,4 @@ Let's keep track of how productive we were:
   - added support for a new MIDI controller : NuMark TotalControl
   - found and filed a lot of Windows bugs (hooray\!)
   - fixed an XML parsing bug
+  - new artwork for 1.6.0 website

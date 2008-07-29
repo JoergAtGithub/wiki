@@ -19,6 +19,20 @@ There's tons of stuff to do, here's a list:
 
 ## Available Non-Coding Tasks:
 
+  - **Help us finish the new manual**. The PDF manual currently bundled
+    with Mixxx is ancient, and the original source document for it is
+    lost to the sands of time. For 1.6.0, we've decided to rewrite the
+    manual. We need your help writing sections for it though - some of
+    you know Mixxx very well and doubtlessly have better writing skills
+    than us. Take a crack at filling in one of the empty sections of
+    [the Mixxx 1.6.0 manual](manual). In particular:
+  - Many of the interface elements in the [UI
+    Overview](manual#user_interface_overview) are incomplete - a few
+    sentences will suffice for each.
+  - Figure out what we're missing. Take a peek at what we have, and try
+    to think of any big points that we've missed in the manual. Comb
+    over [the old manual](http://mixxx.sourceforge.net/Mixxx-Manual.pdf)
+    as well for ideas.
   - **Test Serato CD support**. Got a CDJ? Have a CD discman or anything
     that plays CDs? Download the Serato CD wave, burn it to a CD, and
     test to see if you can control Mixxx via your CDJ or discman. 
@@ -32,12 +46,6 @@ There's tons of stuff to do, here's a list:
     included with each release - copy and paste the changelog bullets
     from each announcement into one gigantic document. Email that to
     someone on IRC. 
-
-<!-- end list -->
-
-``` 
-* 
-```
 
 ## Available Coding Tasks:
 

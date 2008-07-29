@@ -99,3 +99,7 @@ There's tons of stuff to do, here's a list:
     to dlgprefcontrols.cpp and dlgprefcontrolsdlg.ui and send us a
     patch. Please test the hell out of this before sending us a patch
     because we'd rather not break this before 1.6.0.
+
+## Tasks In-Progess:
+
+  - Fixing the cue button for the Hercules on Windows

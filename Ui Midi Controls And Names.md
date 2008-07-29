@@ -16,7 +16,8 @@ The default range is 0.0 to 1.0, unless otherwise noted.
 
 \[ChannelN\] (where N is a number 1 or 2)
 
-  - play 
+  - play
+  - cue\_default
   - cue\_simple
   - cue\_cdj
   - volume

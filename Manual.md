@@ -190,6 +190,51 @@ Keep in mind that **lower latencies require better soundcards and faster
 CPUs** and that **zero latency DJ software is a myth** (although Mixxx
 is capable of \< 10 ms operation).
 
+### Some tips for reducing latency on linux
+
+For detailed informations on latency in linux you should check the web
+as it is a quite complex topic. I recommend reading the Jack FAQ for
+example (<http://jackaudio.org/faq>), especially the part "How should I
+configure my Linux 2.6 Operating System?". Other interesting ressources
+are the Linux Realtime guide or maybe this page:
+<http://www.gentoo.org/proj/en/desktop/sound/realtime.xml> (this one was
+written for gentoo linux but most of the stuff should also apply to
+other distributions).
+
+The First thing you can try to reduce your latency is getting a
+realtime-kernel. If you are using a binary kernel this might be as
+simple as installing a realtime enabled kernel with your package manager
+(if your package system offers one of course). Otherwise download kernel
+sources and the realtime patch for your kernel version. The patch can be
+found here: <http://www.kernel.org/pub/linux/kernel/projects/rt/>. Untar
+the patch to your kernel source directory, apply it and
+configure/install the kernel as usual.
+
+There are basically two options for configuring the use of
+realtime-capabilities. The first and simplest one is to use the
+realtime-lsm modul. This only requires to install the kernel-modul with
+your package manager. After that you can load it and grant realtime
+privileges to particular users/groups by setting uid/gid as module
+options (for example: "modprobe realtime gid=18" gives realtime
+permissions to the audio group on my system). Unfortunately this method
+is deprecated and doesn't work any longer since Linux kernel version
+2.6.24). In current kernels you have to use rlimits with PAM to enable
+realtime priority support. (Note: this is also the preffered method for
+older 2.6 kernels that might still work with the realtime-lsm modul).
+For doing this edit /etc/security/limits.conf.
+
+Example: /etc/security/limits.conf
+
+    *               hard    rtprio      0
+    *       soft    rtprio          0
+    @audio   -  rtprio     99
+    @audio   -  memlock    unlimited
+    @audio   -  nice      -19
+
+The lines starting with \* define defualt values. The "@" in @audio
+tells pam that audio is a group, you can also set permissions per user
+by writing it without the "@"
+
 ## Samplerates
 
 The soundcard samplerate describes the temporal resolution of its audio.

@@ -33,9 +33,10 @@ There's tons of stuff to do, here's a list:
     to think of any big points that we've missed in the manual. Comb
     over [the old manual](http://mixxx.sourceforge.net/Mixxx-Manual.pdf)
     as well for ideas.
-  - **Test Serato CD support**. Got a CDJ? Have a CD discman or anything
-    that plays CDs? Download the Serato CD wave, burn it to a CD, and
-    test to see if you can control Mixxx via your CDJ or discman. 
+  - ~~**Test Serato CD support**~~. Got a CDJ? Have a CD discman or
+    anything that plays CDs? Download the Serato CD wave, burn it to a
+    CD, and test to see if you can control Mixxx via your CDJ or
+    discman. 
   - The wave can be downloaded
     here:<http://rane.com/scratchlivecontrol.zip>
   - Report your findings on IRC and here:

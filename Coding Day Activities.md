@@ -51,7 +51,8 @@ There's tons of stuff to do, here's a list:
     value in the spinbox controls is actually divided by 1000 before
     being applied to Mixxx's engine (a value of 400 turns into a pitch
     bend of 0.4%). Your task is to change the QSpinBox controls to
-    QDoubleSpinBox and remove the division by 1000, so it's WYSIWYG.
-    Make your changes to dlgprefcontrols.cpp and dlgprefcontrolsdlg.ui
-    and send us a patch. Please test the hell out of this before sending
-    us a patch because we'd rather not break this before 1.6.0.
+    [QDoubleSpinBox](http://doc.trolltech.com/4.1/qdoublespinbox.html)
+    and remove the division by 1000, so it's WYSIWYG. Make your changes
+    to dlgprefcontrols.cpp and dlgprefcontrolsdlg.ui and send us a
+    patch. Please test the hell out of this before sending us a patch
+    because we'd rather not break this before 1.6.0.

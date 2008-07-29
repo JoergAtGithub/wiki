@@ -40,7 +40,7 @@ There's tons of stuff to do, here's a list:
     here:<http://rane.com/scratchlivecontrol.zip>
   - Report your findings on IRC and here:
     <https://bugs.launchpad.net/mixxx/+bug/186341>
-  - **Create the massive 1.6.0 changelog**. Go through the [Mixxx
+  - ~~**Create the massive 1.6.0 changelog**~~. Go through the [Mixxx
     Blog](http://mixxxblog.blogspot.com/) archives, and find the release
     announcements for 1.6.0 beta 1, 2, 3, and 4. A changelog was
     included with each release - copy and paste the changelog bullets

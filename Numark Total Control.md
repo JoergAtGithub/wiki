@@ -23,5 +23,8 @@ reverse-engineered information about Numark Total Control's MIDI codes,
 see [Numark Total Control MIDI
 Codes](Numark%20Total%20Control%20MIDI%20Codes).
 
+Read more about support for the Numark Total Control [on Alex's
+blog](http://malexmedia.net/blog/malex/2008/07/29/numark_total_control_support_in_mixxx_dj_software).
+
 *Please* send any comments and/or suggestions about Numark Total Control
 support in Mixxx to [Alex Markley](http://alexmarkley.com/contact).

@@ -123,3 +123,4 @@ Let's keep track of how productive we were:
   - added clear button to the search box
   - many SConscript changes / fixes
   - added support for a new MIDI controller : NuMark TotalControl
+  - found and filed a lot of Windows bugs (hooray\!)

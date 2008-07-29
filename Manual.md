@@ -359,6 +359,8 @@ before bringing it into their mix by sliding the crossfader.
 
 # Keys and Hardware Controllers
 
+## Keyboard Shortcuts
+
 [[/media/mixxx.gif|]]
 
 The shortcuts are defined in a text file, and can be changed by the user

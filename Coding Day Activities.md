@@ -49,6 +49,19 @@ There's tons of stuff to do, here's a list:
 
 ## Available Coding Tasks:
 
+  - **Crush bugs with an iron fist**. [Baby, we've got
+    bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=status&search=Search&field.status%3Alist=NEW&field.status%3Alist=INCOMPLETE_WITH_RESPONSE&field.status%3Alist=INCOMPLETE_WITHOUT_RESPONSE&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.status%3Alist=INPROGRESS&field.status%3Alist=FIXCOMMITTED&field.assignee=&field.bug_reporter=&field.omit_dupes=on&field.has_patch=&field.has_no_package=).
+    Take a crack at any bug marked "new" or "confirmed". While most of
+    those bugs are not 1.6.0 release blockers, we'll still accept
+    patches for most of them. Bugs that are probably fixable without a
+    huge time investment:
+  - [Library rescan doesn't work
+    sometimes](https://bugs.launchpad.net/mixxx/+bug/239883)
+  - [Scanning library does not exit
+    cleanly](https://bugs.launchpad.net/mixxx/+bug/194415) (might be
+    related to above)
+  - [New playlist doesnt show up
+    initially](https://bugs.launchpad.net/mixxx/+bug/248918)
   - **Cleanup Input Controllers Prefs**. The "Input Controllers"
     preferences pane contains unsupported (broken) mouse control stuff.
     Remove this from dlgprefmidi.cpp and dlgprefmididlg.ui and send us a

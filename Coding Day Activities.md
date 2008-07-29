@@ -127,3 +127,4 @@ Let's keep track of how productive we were:
   - found and filed a lot of Windows bugs (hooray\!)
   - fixed an XML parsing bug
   - new artwork for 1.6.0 website
+  - QDoubleSpinbox stuff by Martin

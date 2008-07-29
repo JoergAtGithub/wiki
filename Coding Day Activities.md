@@ -46,6 +46,28 @@ There's tons of stuff to do, here's a list:
     included with each release - copy and paste the changelog bullets
     from each announcement into one gigantic document. Email that to
     someone on IRC. 
+  - **Help us reproduce crazy Windows bugs**. We don't have very many
+    Windows developers (or developers with Windows installed even), so
+    it's hard for us to track down certain Windows-only bugs. In
+    particular, the following three bugs have been driving us crazy:
+  - [Program fails to
+    open](https://bugs.launchpad.net/mixxx/1.6/+bug/223464) - We think
+    we've fixed this in Beta4, but we can't get in touch with the person
+    who reported the bug initially, so we don't know for sure. If anyone
+    can reproduce this on Windows, or confirmed that the problem was
+    fixed for them when upgrading from Beta3 to Beta4, please let us
+    know.
+  - [Mixxx doesn't exit
+    cleanly](https://bugs.launchpad.net/mixxx/1.6/+bug/235479) - Same
+    deal, we may have fixed this already, but we don't know. Do **you**
+    have this problem on Windows? Get in touch with us and we'll try to
+    track it down with you.
+  - [Runtime error on
+    exit](https://bugs.launchpad.net/mixxx/+bug/251128) - A user
+    reported this problem with Vista Home Premium + SP1. Are you using
+    Vista? Does Mixxx work for you? Yes or no, please let us know. If
+    you're encountering this problem too, please get in touch on IRC or
+    by email and we'll track it down with you.
 
 ## Available Coding Tasks:
 

@@ -102,9 +102,9 @@ interface.
 
 ## Waveform Overview
 
-|                                          |                      |
-| ---------------------------------------- | -------------------- |
-| [[/media/manual/uioverview/ui_woverview.png|]] | Put description here |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_woverview.png|]] | The waveform overview gives you some important information on the file currently loaded in the corresponding channel. These are from left to right: Track tempo in bpm, current playing position, track duration. The more interesting part however is the waveform visualisation of the track which can be really helpful to see breaks or other important changes in the track so you don't get surprised by them. It also allows you to jump to an arbitrary position in the track by clicking somewhere in the picture. |
 
 ## End of Track Mode
 

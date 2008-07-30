@@ -130,3 +130,5 @@ Let's keep track of how productive we were:
   - new artwork for 1.6.0 website
   - QDoubleSpinbox stuff by Martin
   - Serato CD support tested and fixed. Thanks to Sean and Mark\!
+  - Figured out this VC Manifest thing causes crashes on startup with
+    some Windows machines.

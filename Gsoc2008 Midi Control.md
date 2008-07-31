@@ -317,6 +317,7 @@ Forms:
       * Idea: row highlighting for non-active bindings due to device unavailable/disabled
       * Options currently broken
       * Lights
+      * Hercules etc
     * New device detection: implementation and design required
       * Probably in the device dialog.
     * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup. (23/7 will do as part of multiple device support)

@@ -1,20 +1,9 @@
-# Welcome to the new Mixxx Wiki\!
+# Welcome to the Mixxx Wiki\!
 
 Mixxx has an unusually broad community for an open-source project,
 encompassing performing musicians, C++ addicts, amateur DJs and even
 just casual users. The Mixxx Wiki contains useful information for users,
 developers, and artists, and is summarized in the categories below.
-
-Most of the old MediaWiki installation is moved off of SourceForge and
-into our new wiki. For the remaining page, the [Mediawiki-to-Dokuwiki
-online markup
-converter](http://johbuc6.coconia.net/mediawiki2dokuwiki.php) will
-continue to be useful.
-
-## Coding Day
-
-The Mixxx 1.6.0 coding day is on Tuesday 29th of July, for things to do,
-see: [Coding Day Activities](Coding%20Day%20Activities)
 
 ## User Documentation
 
@@ -55,6 +44,8 @@ see: [Coding Day Activities](Coding%20Day%20Activities)
   - [Looping](Looping)
   - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
+  - Past development sprints:
+  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
 
 ## Artist Documentation
 

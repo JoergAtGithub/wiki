@@ -435,15 +435,25 @@ Mixxx is a community-driven project involving many DJs worldwide.
 Without the contributions from these DJs, Mixxx would not exist, and
 we're constantly looking for more contributors.
 
-FIXME - Ideas for stuff to talk about:
+If you're interested in getting involved with Mixxx, send our
+[Developer's Mailing List](http://www.mixxx.org/support.php) an email or
+hop on our IRC channel (\#mixxx on Freenode).
 
-  - Get on IRC\!
-  - If you know C++...
-  - Take a look at our specs/projects page and see if anything catches
-    your eye. If you want to start coding one of these, go right ahead\!
+If you're interested in coding (C++):
+
+  - Take a look at our specs/projects page on the Mixxx Wiki and see if
+    anything catches your eye. If you want to start coding one of these,
+    go right ahead\!
   - We're always willing to mentor and help out new coders
   - Take a look at our bug tracker, try to fix a bug\!
   - Send patches to Adam, Albert, or mixxx-devel\!
-  - Help answer questions in the forum
-  - Help promote Mixxx - Blog about us, etc.
+
+If you're not interested in coding, there are still many ways to help
+our project:
+
+  - Help answer questions in the forum.
+  - Help promote Mixxx - If you've got a blog, write an article about
+    Mixxx. Blog about our new releases when they come out. Any exposure
+    on the web and in print helps our project grow, and is much
+    appreciated.
   - Send us some photos of you using Mixxx at a gig\!

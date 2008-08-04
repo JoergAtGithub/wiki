@@ -82,7 +82,7 @@ Mixxx's user interface is designed to be simple and easy to use when DJing live.
 
 =====End of Track Mode=====
 
-| {{:manual:uioverview:ui_endoftrack.png|}} | The end of track mode determines the behaviour of Mixxx when it reaches the end of a track. The end of track mode is changed by clicking the block to toggle between the three available options; each channel has it's own end of track mode setting that can be changed independently.  **Stop** mode will do nothing further once the end of the track is reached until you load a new track into the channel or seek backwards through the current track. **Loop** will return to the beginning of the finished track and play it again from the start. **Next** will automatically load and play the next song in the 'play queue'. |
+| {{:manual:uioverview:ui_endoftrack.png|}} | The end of track mode determines the Mixxx's behaviour when it reaches the end of a track. The end of track mode is changed by clicking the block to toggle between the three available options; each channel has it's own end of track mode setting that can be changed independently.  **Stop** mode will do nothing further once the end of the track is reached until you load a new track into the channel or seek backwards through the current track. **Loop** will return to the beginning of the finished track and play it again from the start. **Next** will automatically load and play the next song in the 'play queue'. |
 
 =====Master and Crossfader Controls=====
 

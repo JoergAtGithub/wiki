@@ -399,6 +399,31 @@ Windows: \<Mixxx directory\>\\keyboard\\Standard.kbd.cfg
 
 ## MIDI Controllers
 
+As of Mixxx 1.6.0, the following MIDI devices are supported:
+
+  - Hercules DJ Console MK2
+  - Hercules DJ Console MP3
+  - Hercules DJ Console RMX
+  - Hercules DJ Console Mac Edition
+  - Mixman DM2 
+  - Tascam US-428
+  - M-Audio X-Session Pro
+  - M-Audio Xponent
+  - Evolution X-Session
+  - Ecler NUO4
+  - FaderFox DJ2
+  - Vestax VCI-100
+  - Numark Total Control
+  - Behringer BCD3000 (\*no jog wheel support yet)
+
+Before purchasing a controller to use with Mixxx, please consult our
+[Hardware
+Compatibility](http://www.mixxx.org/wiki/doku.php/hardware_compatibility)
+wiki page. It contains the most up-to-date documentation on which
+controllers work with Mixxx and what the caveats of each device are.
+Device support varies for each supported OS, so please make sure to
+consult the documentation.
+
 # Getting Involved
 
 Mixxx is a community-driven project involving many DJs worldwide.

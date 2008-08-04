@@ -97,9 +97,9 @@ interface.
 
 ## Waveform
 
-|                                         |                      |
-| --------------------------------------- | -------------------- |
-| [[/media/manual/uioverview/ui_waveform.png|]] | Put description here |
+|                                         |                                                                                                                                                                                                                                                                                                                                            |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [[/media/manual/uioverview/ui_waveform.png|]] | The waveform display shows the loaded tracks' waveforms near the playback position. On songs with certain dynamics, the waveform displays will visibly show the beats in the song. When a cue mark is placed, it is drawn on the waveform as a vertical white line. Clicking and dragging on a waveform allows you to seek through a song. |
 
 ## Waveform Overview
 

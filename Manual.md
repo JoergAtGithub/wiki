@@ -399,6 +399,11 @@ Windows: \<Mixxx directory\>\\keyboard\\Standard.kbd.cfg
 
 ## MIDI Controllers
 
+MIDI controllers are external hardware devices used that can be used to
+control audio applications, like Mixxx. Many DJs prefer the "hands-on"
+feel of a MIDI controller with Mixxx because it can feel similar to
+using a real mixer and turntables.
+
 As of Mixxx 1.6.0, the following MIDI devices are supported:
 
   - Hercules DJ Console MK2

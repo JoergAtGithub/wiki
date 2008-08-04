@@ -37,9 +37,10 @@
 
 # Introduction
 
-Mixxx is software for DJs that allows you to mix songs live. Mixxx
-supports MP3, OGG, FLAC, and WAVE playback, and can be controlled by
-numerous DJ MIDI controllers.
+Mixxx is software designed for DJs that allows you to mix songs live.
+Mixxx supports MP3, OGG, FLAC, and WAVE playback, and can be controlled
+by numerous DJ MIDI controllers. Turntables with timecoded vinyl can
+also be used to control Mixxx through the *vinyl control* feature.
 
 # Installation
 

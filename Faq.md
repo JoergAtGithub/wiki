@@ -82,3 +82,33 @@ See the [Vinyl Control](Vinyl%20Control) page.
 No, Mixxx does not write to or move any files in your library. It's safe
 to use Mixxx with your iTunes library - Mixxx it will not change
 anything in your library.
+
+## What platforms are officially supported by Mixxx?
+
+As of release 1.6.0, the official Mixxx **binary** releases attempt to
+support the following operating systems equally:
+
+  - Windows - XP (Home/Pro) and Vista (all versions)
+  - Linux - Ubuntu (Hardy Heron)
+  - Mac - Intel Macs (OSX 10.4+)
+
+We also support the following platforms through binary releases on a
+best effort basis, not all beta releases will be built for these
+platforms and full releases often lag behind the release cycle by a
+month or so:
+
+  - Linux - Generic i386 binary
+  - Mac - PPC Macs
+
+Many Linux distributions bundle their own copy of Mixxx rather than
+relying on our official releases, check with your distribution for more
+details.
+
+Of course as an open source project, source is always available to build
+for whatever platform you work on, either a Linux distribution which
+doesn't provide Mixxx packages or something more exotic. Historically
+Mixxx has been known to compile on FreeBSD.
+
+We are always happy to hear from people building Mixxx on other
+platforms, whether you are doing a one-time build for yourself or
+maintaining a Mixxx package for a distribution please get in touch.

@@ -320,6 +320,11 @@ Forms:
       * Hercules etc
     * New device detection: implementation and design required
       * Probably in the device dialog.
-    * Why is the GUI file creating/handling MIDI objects? (later) Move all MIDI device handling into new file called by mixxx.cpp on startup. (23/7 will do as part of multiple device support)
     * ConfigKeys: if they need square brackets to work in a configobject, why isnt this enforced or done automatically?
+* MIDI Option overhaul
+* Change ConfigObjectMIDI
+     * Multiple Option Support
+     * String of options, use contains()
+     * Implement controller types
+     * Use class structure
 ```

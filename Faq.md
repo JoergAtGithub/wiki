@@ -112,3 +112,12 @@ Mixxx has been known to compile on FreeBSD.
 We are always happy to hear from people building Mixxx on other
 platforms, whether you are doing a one-time build for yourself or
 maintaining a Mixxx package for a distribution please get in touch.
+
+## What music file formats can Mixxx play?
+
+As of release 1.6.0, Mixxx supports the following file formats:
+
+  - MP3
+  - OGG
+  - FLAC - Linux and Mac OSX 10.5 only
+  - WAV, AIFF

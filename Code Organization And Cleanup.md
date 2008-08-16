@@ -69,6 +69,7 @@ The following are overall groups that the code can be grouped into:
   - the old visual stuff can be deleted (it lived in 'old')
   - ReaderExtractHFC, ReaderExtractBeat?
   - Mouse, MouseLinux
+  - MIDIObjectAlsa? (replaced by alsaseq)
 
 ## Deprecated Logic
 

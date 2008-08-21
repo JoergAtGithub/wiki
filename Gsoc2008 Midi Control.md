@@ -66,10 +66,11 @@ MIDI learn, Group MIDI Learn, dlgprefmidibindings small dialogs
 \* (Week 10) Multiple device support (delays due to IRL stuff / bindings
 dialog problems)
 
-\* --\> (Week 11) Multiple device support, Bindings Dialog fixes,
-Testing
+\* (Week 11) Multiple device support, Bindings Dialog fixes, Testing
 
 \* (Week 12) Code cleanup, testing
+
+Now: fixing up loose ends, testing, code cleanup, documentation.
 
 ### About Tom
 

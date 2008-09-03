@@ -5,11 +5,12 @@ If you've got a question that's not answered here, please post in the
 
 ## How do I record my Mixxx session?
 
-Mixxx doesn't directly support recording yet. But there are plenty of
-external applications that can do it for you.
-[Audacity](http://audacity.sourceforge.net/) is generally a good
-open-source choice and has excellent editing capabilities to help you
-clean up your recording afterwards.
+Mixxx 1.6.0 and newer versions support recording mixes to .wav files. To
+start recording your mix, click "Options", and select "Record Mix". You
+will then be prompted to enter a filename, and after that, Mixxx will
+start recording as soon as you start playing a track. When you're done
+recording, go back to "Options "and toggle "Record Mix" again, or just
+exit Mixxx.
 
 ## What's the best hardware DJ controller to use with Mixxx?
 

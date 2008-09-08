@@ -53,7 +53,7 @@ out the master out, and the second track to play out the headphone out.
 (Since both outputs are now going straight into an external mixer, you'd
 use the headphone cue on the mixer as well as it's crossfader.) Using an
 external mixer is also described briefly in the [Threadbox
-tutorial](Threadbox%20Tutorial#Using_an_External_Mixer_or_MIDI_Device).
+tutorial](http://mixxx.sourceforge.net/wiki/index.php/Threadbox_Tutorial#Using_an_External_Mixer_or_MIDI_Device).
 
 ## No soundcards appear in the preferences dialog - How can I fix this?
 

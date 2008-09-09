@@ -125,10 +125,12 @@ As of release 1.6.0, Mixxx supports the following file formats:
 
 ## What happens if a file's samplerate is different from the sound card rate?
 
-mixxx performs sample rate conversion on the fly. **N.B.:** the quality
-of the resampling depends on the setting of the *pitch behaviour* in the
-preferences. Using "vinyl emulation" will mean linear interpolation,
-which doesn't sound very good (you will notice graininess and increased
-noise, especially obvious on high, long notes). When you select "pitch
-independent time-stretch", mixxx will use a vocoder-based algorithm from
-the SoundTouch library, which sounds a lot better.
+mixxx performs sample rate conversion on the fly.
+
+Note that the quality of the resampling depends on the setting of the
+*pitch behaviour* in the preferences. Using "vinyl emulation" will mean
+linear interpolation, which doesn't sound very good (you will notice
+graininess and increased noise, especially obvious on high, long notes).
+When you select "pitch independent time-stretch", mixxx will use a
+vocoder-based algorithm from the SoundTouch library, which sounds a lot
+better.

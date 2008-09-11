@@ -36,6 +36,17 @@ that we use on OSX and Windows.
   - Nope, none of the Hercules devices from Mk1 to RMX are USB-MIDI
     class compliant. They all require OS MIDI drivers to do MIDI.
 
+### My Hercules RMX doesn't work with Mixxx on Linux
+
+  - You need to have libDJConsole 0.1.3 (which as of Aug 2008 is only
+    available from the bzr source repo on launchpad)
+
+### My Hercules device only works as root
+
+  - Check that you have the correct udev rules for the DJ Console
+    devices (these are part of libDJConsole or libdjconsole-data on
+    Ubuntu).
+
 ### Does the Joystick on the Mk1/Control MP3/Mk2 work in Mixxx?
 
   - No and it never will. The hercules joysticks are very imprecise mice

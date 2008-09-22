@@ -41,15 +41,11 @@ timecoded vinyl?
 In soundmanager.cpp, specifically in SoundManager::setupDevices(), there
 is the following snippet:
 
-\#ifdef <span class="underline">VINYLCONTROL</span>
-
 ``` 
-   //Initialize vinyl control
-   m_VinylControl[0] = new VinylControlProxy(m_pConfig, "[Channel1]");
-   m_VinylControl[1] = new VinylControlProxy(m_pConfig, "[Channel2]");
+    //Initialize vinyl control
+    m_VinylControl[0] = new VinylControlProxy(m_pConfig, "[Channel1]");
+    m_VinylControl[1] = new VinylControlProxy(m_pConfig, "[Channel2]");
 ```
-
-\#endif
 
 Each physical turntable's audio gets passed off to a VinylControlProxy
 object to be processed. The VinylControlProxy/xwax/scratchlib object
@@ -58,11 +54,9 @@ channel string parameter tells each VinylControlProxy object which
 player it should be connected to. From that string, the VinylControl
 class constructor grabs "ControlObjects" which allow it to hook into
 Mixxx's various internal controls. For example, inside the
-VinylControl::VinylControl(...) constructor, you will see:
+`VinylControl::VinylControl(...)` constructor, you will see:
 
-playPos = new
-ControlObjectThread(ControlObject::getControl(ConfigKey(group,
-"playposition"))); //Range: 0.0 to 1.0
+    playPos             = new ControlObjectThread(ControlObject::getControl(ConfigKey(group, "playposition")));    //Range: 0.0 to 1.0
 
 That "playPos" object then allows the VinylControl object change the
 playback position (eg. when needle dropping) for the player specified by
@@ -76,41 +70,34 @@ route the audio to the correct VinylControlProxy object depending on
 whichever player is supposed to be controlled.
 
 The starting point for this way would be to look at SoundManager again:
-CSAMPLE \* SoundManager::pushBuffer(QList\<AudioReceiver\> recvs, short
-\* inputBuffer,
 
-``` 
-                                  unsigned long iFramesPerBuffer, unsigned int iFrameSize)
-```
+    CSAMPLE * SoundManager::pushBuffer(QList<AudioReceiver> recvs, short * inputBuffer,
+                                        unsigned long iFramesPerBuffer, unsigned int iFrameSize)
 
-This SoundManager::pushBuffer() function gets called when a soundcard
+This `SoundManager::pushBuffer()` function gets called when a soundcard
 has given Mixxx (input) audio to be processed, like from a timecoded
 vinyl. Near the end of the function, you'll see the code:
 
-\#ifdef <span class="underline">VINYLCONTROL</span>
-
 ``` 
-      QListIterator<AudioReceiver> devItr(recvs);
-      while(devItr.hasNext())
-      {
-          AudioReceiver recv = devItr.next();
-          if (recv.type == RECEIVER_VINYLCONTROL_ONE)
-          {
-              //recv.channelBase
-              Q_ASSERT(recv.channels == 2); //Stereo data is needed for vinyl control
-              if (m_VinylControl[0])
-                  m_VinylControl[0]->AnalyseSamples(vinylControlBuffer1, iFramesPerBuffer);
-          }
-          if (recv.type == RECEIVER_VINYLCONTROL_TWO)
-          {
-              Q_ASSERT(recv.channels == 2); //Stereo data is needed for vinyl control
-              if (m_VinylControl[1])
-                  m_VinylControl[1]->AnalyseSamples(vinylControlBuffer2, iFramesPerBuffer);
-          }
-      }
+        QListIterator<AudioReceiver> devItr(recvs);
+        while(devItr.hasNext())
+        {
+            AudioReceiver recv = devItr.next();
+            if (recv.type == RECEIVER_VINYLCONTROL_ONE)
+            {
+                //recv.channelBase
+                Q_ASSERT(recv.channels == 2); //Stereo data is needed for vinyl control
+                if (m_VinylControl[0])
+                    m_VinylControl[0]->AnalyseSamples(vinylControlBuffer1, iFramesPerBuffer);
+            }
+            if (recv.type == RECEIVER_VINYLCONTROL_TWO)
+            {
+                Q_ASSERT(recv.channels == 2); //Stereo data is needed for vinyl control
+                if (m_VinylControl[1])
+                    m_VinylControl[1]->AnalyseSamples(vinylControlBuffer2, iFramesPerBuffer);
+            }
+        }
 ```
-
-\#endif
 
 This code demonstrates of how the "routing" of the input audio works.
 Each SoundDevice object has a list of AudioReceivers in it, which you
@@ -123,10 +110,10 @@ modify the list of AudioReceivers inside a SoundDevice at runtime so the
 soundcard controls the desired player.
 
 If you look at SoundDevice.cpp, it looks like you can do this with
-SoundDevice::addReceiver() and SoundDevice::clearReceivers(). This is
-roughly the end of the string here. **As a starting point, look at int
-SoundManager::setupDevices() and check out the addReceiver() calls in
-there.**
+`SoundDevice::addReceiver()` and `SoundDevice::clearReceivers()`. This
+is roughly the end of the string here. **As a starting point, look at
+`SoundManager::setupDevices()` and check out the `addReceiver()` calls
+in there.**
 
 ## Work Breakdown
 

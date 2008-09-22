@@ -119,8 +119,7 @@ in there.**
 
 This [work breakdown
 structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
-will become more detailed as the design above becomes more thorough and
-complete.
+outlines the work that needs to be done to complete this feature:
 
 ``` 
 1. Single-deck vinyl control

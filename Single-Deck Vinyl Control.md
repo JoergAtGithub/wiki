@@ -28,6 +28,9 @@ Mixxx would be more competitive with it.
 \* How does Mixxx know which player should be controlled by the
 timecoded vinyl?
 
+> Via a button on the interface and/or hotkeys. When it's depressed,
+> that player receives timecode signals.
+
 #### Preferences Dialog Considerations
 
   - There should probably be some "single-deck mode" checkbox in the

@@ -64,10 +64,10 @@ playback position (eg. when needle dropping) for the player specified by
 
 In order to allow a single deck to control either player/channel, one
 could modify VinylControl/Proxy and allow it to get the ControlObjects
-for the other channel (this is the hard approach). An easier approach is
-to keep all the VinylControl objects the way they are, and to simply
-route the audio to the correct VinylControlProxy object depending on
-whichever player is supposed to be controlled.
+for the other channel (this is the hard approach). An **easier
+approach** is to keep all the VinylControl objects the way they are, and
+to simply route the audio to the correct VinylControlProxy object
+depending on whichever player is supposed to be controlled.
 
 The starting point for this way would be to look at SoundManager again:
 

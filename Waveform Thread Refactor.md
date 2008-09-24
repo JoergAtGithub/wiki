@@ -63,3 +63,10 @@ Make the following changes to Track
 
 There will be other minor changes to other places in the codebase, but
 these are the most significant.
+
+## Current Work
+
+Who is interested in doing this: rryan
+
+Currently, the rryan-wavesummary-refactor branch is a half-done version
+of this. (9/2008)

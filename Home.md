@@ -44,6 +44,7 @@ developers, and artists, and is summarized in the categories below.
   - [Looping](Looping)
   - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
+  - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - Past development sprints:
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
 

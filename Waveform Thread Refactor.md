@@ -31,3 +31,35 @@ either deck until the processing of the first song is done.
 What should happen: A song should have its waveform displayed the second
 it is loaded to a deck. If a song leaves the deck, CPU time should not
 be wasted on it anymore.
+
+## Proposed Solution
+
+Make the following changes to WaveSummary Thread
+
+  - Eliminate the queue functionality
+  - Generate both the waveform summary and visual waveform downsampled
+    data, and store them privately
+  - Support a 'halt' method which will cause it to stop processing, and
+    shut down its thread. 
+  - Support being started at any time to generate the visual waveform or
+    waveform summary of the TrackInfoObject that it corresponds to.
+  - If work on either of the 2 buffers has already completed, it will
+    not repeat work.
+  - The WaveSummary thread will be in charge of the deletion of the
+    wavesummary buffer and visual waveform buffer
+
+Make the following changes to TrackInfoObject
+
+  - Every TrackInfoObject will have its own WaveSummary object
+  - TrackInfoObject will no longer hold pointers to the WaveSummary
+    object. The getWaveSummary and getVisualWaveform calls will remain,
+    but they will be replaced with inline calls to the corresponding get
+    method of the WaveSummary Thread.
+
+Make the following changes to Track
+
+  - Where it previously queued a track for WaveSummary processing,
+    ensure the TrackInfoObject has a WaveSummary thread, and start it
+
+There will be other minor changes to other places in the codebase, but
+these are the most significant.

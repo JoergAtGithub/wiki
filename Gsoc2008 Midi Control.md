@@ -3,6 +3,33 @@
   - Student: **Thomas Lachlan Care**
   - Mentor: **Garth Dahlstrom**
 
+# Merge to Trunk and Beyond... clean up work
+
+Bold must be completed before merge...
+
+  - \*\*Need a working "Add Control", minimal - just add an empty row
+    \*\*, nice-to-have some kind of list of available bindings which can
+    be added i.e. "\[Channel1\] Play", "\[Master\] Crossfader", etc
+  - **Fix Linux crash on midi learn caused by "emit(midiEvent(new
+    ConfigValueMidi(type,control,channel), device));" \~ 165 of
+    src/midiobject.cpp**
+  - Two different controllers in one mapping doesn't work (1 overwrites
+    the other's config object), this should be fixed or at least a
+    warning should be added.
+  - Write numbers in mapping files as hex values like old mapping format
+    (to help make for cut-and-paste transition of mappings)
+  - Hide unused buttons:
+
+<!-- end list -->
+
+``` 
+    * Load/Import Default Bindings
+    * Group Learn Selected
+    * Set Advanced Options...
+    * Change MIDI Binding...  
+* Fix Remove to support removing multiple bindings at once... refer to note at bottom of void DlgPrefMidiBindings::slotRemoveBinding() in src/dlgprefmidibindings.cpp ~ #352
+```
+
 ### Abstract from GSoC Application
 
 I am an undergraduate Software Engineer who believes he can contribute

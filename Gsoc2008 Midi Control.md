@@ -3,9 +3,38 @@
   - Student: **Thomas Lachlan Care**
   - Mentor: **Garth Dahlstrom**
 
-# Merge to Trunk and Beyond... clean up work
+### Abstract from GSoC Application
 
-Bold must be completed before merge...
+I am an undergraduate Software Engineer who believes he can contribute
+significantly to the Mixxx project on both a short term and long term
+basis. I aim to implement a combination of major and minor features, as
+well as paving the way to implement features beyond the Google SOC 2008.
+The main feature I wish to improve is general MIDI support – a task well
+suited to me, due to my personal hardware and experience with industry
+DJ equipment as a performer. I also plan to implement small features as
+a secondary objective, building on the well-designed feature set of
+Mixxx. Most of these features come from my experience as a Trance DJ –
+e.g. CDJ like interface, general customisability extensions (pitch
+increments, for example), and jog dial sensitivity. My lack of
+satisfaction with current DJ software and personal desire to experiment
+with my hardware will result in me being a long-term contributor to this
+project. I am a reliable person who is a pleasure to work with and I
+hope I can benefit the project in any way possible.
+
+### About this page
+
+This page will be used during the GSoC 2008 to let the community know
+the status of the project, in addition to getting feedback on aspects of
+the project. Tom believes that community input is essential\!
+
+### About Tom
+
+You can contact Tom or read about him at this page:
+<http://soc.corrodedreality.org/>
+
+### Merge to Trunk and Beyond... clean up work
+
+**Bold** must be completed before merge...
 
   - \*\*Need a working "Add Control", minimal - just add an empty row
     \*\*, nice-to-have some kind of list of available bindings which can
@@ -30,29 +59,7 @@ Bold must be completed before merge...
 * Fix Remove to support removing multiple bindings at once... refer to note at bottom of void DlgPrefMidiBindings::slotRemoveBinding() in src/dlgprefmidibindings.cpp ~ #352
 ```
 
-### Abstract from GSoC Application
-
-I am an undergraduate Software Engineer who believes he can contribute
-significantly to the Mixxx project on both a short term and long term
-basis. I aim to implement a combination of major and minor features, as
-well as paving the way to implement features beyond the Google SOC 2008.
-The main feature I wish to improve is general MIDI support – a task well
-suited to me, due to my personal hardware and experience with industry
-DJ equipment as a performer. I also plan to implement small features as
-a secondary objective, building on the well-designed feature set of
-Mixxx. Most of these features come from my experience as a Trance DJ –
-e.g. CDJ like interface, general customisability extensions (pitch
-increments, for example), and jog dial sensitivity. My lack of
-satisfaction with current DJ software and personal desire to experiment
-with my hardware will result in me being a long-term contributor to this
-project. I am a reliable person who is a pleasure to work with and I
-hope I can benefit the project in any way possible.
-
-### About this page
-
-This page will be used during the GSoC 2008 to let the community know
-the status of the project, in addition to getting feedback on aspects of
-the project. Tom believes that community input is essential\!
+### Project Status
 
 **Current status of the project:**
 
@@ -98,11 +105,6 @@ dialog problems)
 \* (Week 12) Code cleanup, testing
 
 Now: fixing up loose ends, testing, code cleanup, documentation.
-
-### About Tom
-
-You can contact Tom or read about him at this page:
-<http://soc.corrodedreality.org/>
 
 ### Project Overview
 
@@ -323,6 +325,9 @@ Forms:
     * Performance analysis
 * The Future
     * What is needed next?
+```
+
+``` 
     * Generalised support for weird, non-midi devices eg mouse/kb/custom controllers, design review
 * Address bug 234923: https://bugs.launchpad.net/mixxx/+bug/234923
 * LADSPA

@@ -48,3 +48,31 @@ LADSPA \> Show LADSPA window from the menu.
 Currently the following skins are supported: outlineSmall, outline,
 outlineClose, traditional, hercules, nCut, Collusion (1280), Collusion
 (1280-WS).
+
+## Integration into Trunk TODO
+
+All the LADSPA code is already in trunk, it just needs to be enabled by
+default. In order for us to do this "right", here's the stuff that needs
+to be done:
+
+  - Integrate LADSPA window into main window (in progress by Albert)
+  - Make LADSPA pane use QGridLayout
+  - Remove LADSPA menu
+  - Pick the default LADSPA plugins:
+  - Make sure we have preset XML files for all of these.
+  - Build them on Windows, OS X, and Linux
+  - Put the precompiled plugins in mixxx-winlib/linlib/maclib
+  - Add LADSPA presets and plugins to trunk
+  - Modify SConscript to install them on OS X, Linux (and move to dist
+    dir on Win32)
+  - Modify mixxx.nsi to install/uninstall them on Windows
+  - Update src/debian/rules file (might not need editing, but
+    doublecheck)
+
+<!-- end list -->
+
+``` 
+    * Figure out deployment strategy for Linux:
+       * On Windows/OS X, we'll just bundle them
+       * ... but on Linux, we may only want to ship the presets files and require users to install their distro's LADSPA plugins package (Anyone have ideas here?)
+```

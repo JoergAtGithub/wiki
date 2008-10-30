@@ -60,7 +60,7 @@ to be done:
 
   - Integrate LADSPA window into main window (in progress by Albert)
   - Make LADSPA pane use QGridLayout
-  - Remove LADSPA menu
+  - ~~Remove LADSPA menu~~ - Done
   - Pick the default LADSPA plugins:
   - Make sure we have preset XML files for all of these.
   - Build them on OS X, recommend them on Linux, repack Audacity plugin

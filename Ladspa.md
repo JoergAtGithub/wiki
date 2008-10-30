@@ -21,12 +21,15 @@ reinstall the skins (as root):
 
 (the directory can be different, e.g. /usr/share/mixxx)
 
-You'll also need some presets. Just download
+Presets are now in Trunk \<del\> You'll also need some presets. Just
+download
 [ladspa\_presets.tar.bz2](http://fatcat.ftj.agh.edu.pl/~i7bartki/files/mixxx/ladspa_presets.tar.bz2)
 and extract the directory ladspa\_presets to your Mixxx share directory
 (as root):
 
     tar -C /usr/local/share/mixxx/ -xjf ladspa_presets.tar.bz2
+
+\</del\>
 
 ## Required plugins
 

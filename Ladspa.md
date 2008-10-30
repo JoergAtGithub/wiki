@@ -63,8 +63,13 @@ to be done:
   - Remove LADSPA menu
   - Pick the default LADSPA plugins:
   - Make sure we have preset XML files for all of these.
-  - Build them on Windows, OS X, and Linux
-  - Put the precompiled plugins in mixxx-winlib/linlib/maclib
+  - Build them on OS X, recommend them on Linux, repack Audacity plugin
+    build on Windows or have installer fetch them from Audacity's site.
+  - Use pre-built plugins for Win32 ([Audacity win32 LADSPA
+    Plugins](http://audacity.sourceforge.net/download/beta_windows#optional))
+    and Linux ([cmt](http://packages.ubuntu.com/intrepid/cmt),
+    [caps](http://packages.ubuntu.com/intrepid/caps),
+    [swh-plugins](http://packages.ubuntu.com/intrepid/swh-plugins)).
   - Add LADSPA presets and plugins to trunk
   - Modify SConscript to install them on OS X, Linux (and move to dist
     dir on Win32)

@@ -1,10 +1,5 @@
 # Vinyl Control
 
-**NOTE:** This article is about a feature in the **upcoming 1.6.0
-release**. (You can play with vinyl control in our [1.6.0
-betas](http://mixxx.org/download.php) before the final release comes
-out.)
-
 ## What is it?
 
 Vinyl control allows a user to manipulate the playback of a song in

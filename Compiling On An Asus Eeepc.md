@@ -80,3 +80,5 @@ the eee.ko kernel module to re-clock the CPU from 600Mhz -\> 900Mhz.
  
  (sudo sleep 3; sudo renice ${nice_priority} `ps -C mixxx -o pid | grep -v PID`)& mixxx
 ```
+
+unfortunatly this dosent work as is on the eeepc 901

@@ -7,6 +7,8 @@ linux distributions.
 For Debian / Ubuntu, you can ignore the lines to do with editing your
 sources.list.
 
+unfortunatly this dosent work on the eeepc 901
+
 ``` 
  MIXXX_HOME=`pwd`
  sudo aptitude purge mixxx mixxx-data # remove any potential conflicts with packaged versions
@@ -80,5 +82,3 @@ the eee.ko kernel module to re-clock the CPU from 600Mhz -\> 900Mhz.
  
  (sudo sleep 3; sudo renice ${nice_priority} `ps -C mixxx -o pid | grep -v PID`)& mixxx
 ```
-
-unfortunatly this dosent work as is on the eeepc 901

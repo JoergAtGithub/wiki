@@ -42,9 +42,8 @@ hopefully also have:
   - Vinyl control
   - Anything else exciting we have time for...
 
-#### Remaining TODO For 1.6.0 Final
-
-  - Fix critical bugs: <https://bugs.launchpad.net/mixxx/1.6/+bugs>
+Update: 1.6.0 has been released. It features all of the above, plus
+about a million other things.
 
 ### 1.7.0
 

@@ -47,12 +47,14 @@ about a million other things.
 
 ### 1.7.0
 
-This will be the feature release following 1.6.0 and will probably go
-into beta some time in 2008. No fixed plans this far into the future but
-rough targets are:
+No fixed plans yet, rough targets are:
 
   - Macro/script playback
+  - Effects (definitely)
+  - SQLite-based library
+  - Looping
   - Sampler
+  - Inline track previews
   - [Internationalization?](http://doc.trolltech.com/4.3/i18n.html)
 
 ## Changelog

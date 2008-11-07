@@ -26,8 +26,12 @@ libavformat.
 ### Possible Libraries
 
   - libavformat/libavcodec (the library used by ffmpeg and mplayer)
-  - support lot's of format
+  - support lots of formats
   - support utf8
+  - libxine
+  - supports lots of formats and is extensible
+  - use to play audio from (multiplexed) video files
+  - future VJ support?
 
 ## New Hardware Controller Engine
 

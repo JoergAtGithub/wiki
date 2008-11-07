@@ -50,13 +50,14 @@ much steps.
 
 ## Solutions
 
-1.  Display a little tag on any already played track in Playlist,
-    Browse(?) and Library views (to prevent choosing several time the
-    same track during one session). This may be based on the
-    "TimesPlayed" value of the trackinfoobject or a similar one, like
-    "TimesPlayedInThisMix". A button or a "reset played track" menu item
-    may be required to be added in the interface in order to reset all
-    these TimesPlayedInThisMix value to 0.
+1.  Display a little tag (or a leading asterisk, or change the text
+    color) on any already played track in Playlist, Browse(?) and
+    Library views (to prevent choosing several time the same track
+    during one session). This may be based on the "TimesPlayed" value of
+    the trackinfoobject or a similar one, like "TimesPlayedInThisMix". A
+    button or a "reset played track" menu item may be required to be
+    added in the interface in order to reset all these
+    TimesPlayedInThisMix value to 0.
 2.  **\[DONE\]** Display a column in Library, Playqueue and Playlists
     with the Genre ID3 tag. On click on this column, tracks will be
     sorted by Genre, then by artist then by title.

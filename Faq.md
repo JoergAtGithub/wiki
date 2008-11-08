@@ -100,9 +100,9 @@ month or so:
   - Linux - Generic i386 binary
   - Mac - PPC Macs
 
-Many Linux distributions bundle their own copy of Mixxx rather than
-relying on our official releases, check with your distribution for more
-details.
+Many Linux distributions (e.g. Debian) bundle their own copy of Mixxx
+rather than relying on our official releases, check with your
+distribution for more details.
 
 Of course as an open source project, source is always available to build
 for whatever platform you work on, either a Linux distribution which

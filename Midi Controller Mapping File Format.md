@@ -58,7 +58,7 @@ Definitions of the elements:
   - midino - The MIDI control or note number
   - midichan - The MIDI channel
   - options - Can only handle one element currently but expandable,
-    these aren't well described here:
+    these aren't well described here: *(Then where?)*
   - invert
   - rot64inv
   - rot64fast

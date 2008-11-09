@@ -64,11 +64,11 @@ Definitions of the elements:
   - miditype - Midi object type: Ctrl, Key or Pitch
   - midino - The MIDI control or note number
   - midichan - The MIDI channel
-  - controltype - Hint to Mixxx what kind of control this is. For most
-    controls this will define the behaviour of the control (eg jog
-    wheel, analog knob). There is also a generic control enabling
-    someone to define the behaviour using options. *(Where are the
-    possible values for this?)*
+  - controltype - Hint to Mixxx what kind of control this is. Possible
+    values: knob, wheel, fader, button. For most controls this will
+    define the behaviour of the control (eg jog wheel, analog knob).
+    There is also a generic control enabling someone to define the
+    behaviour using options.
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options (defined
     by controltype) will have default values, eg a jogwheel might have

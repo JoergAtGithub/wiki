@@ -67,8 +67,8 @@ Definitions of the elements:
   - controltype - Hint to Mixxx what kind of control this is. For most
     controls this will define the behaviour of the control (eg jog
     wheel, analog knob). There is also a generic control enabling
-    someone to define the behaviour using options. *Where are the
-    possible values for this key?*
+    someone to define the behaviour using options. *(Where are the
+    possible values for this?)*
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options (defined
     by controltype) will have default values, eg a jogwheel might have
@@ -87,8 +87,8 @@ Definitions of the elements:
   - hercjog - Handle hercules jog wheels
   - spread64 - Exponential spread either side of 64, aka "relative"
     controller (NEW)
-  - status - Status code to send to control lights *Is this the same as
-    velocity?*
+  - status - Status code to send to control lights *(Is this the same as
+    velocity?)*
   - threshold - Turn on light when control exceeds this value
 
 ## Future

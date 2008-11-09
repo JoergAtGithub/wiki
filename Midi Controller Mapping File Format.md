@@ -51,14 +51,29 @@ The midi mapping format is xml based. It looks something like this:
 
 Definitions of the elements:
 
+    These define the part of Mixxx that is being controlled:
+
   - group - The controlobject group
   - key - The controlobject key, a list of which can be found on the
     [UI/MIDI Controls and Names](ui_midi_controls_and_names) page.
+
+<!-- end list -->
+
+    These tags define the MIDI event that Mixxx will listen for:
+
   - miditype - Midi object type: Ctrl, Key or Pitch
   - midino - The MIDI control or note number
   - midichan - The MIDI channel
-  - options - Can only handle one element currently but expandable,
-    these aren't well described here: *(Then where?)*
+  - controltype - Hint to Mixxx what kind of control this is. For most
+    controls this will define the behaviour of the control (eg jog
+    wheel, analog knob). There is also a generic control enabling
+    someone to define the behaviour using options. *Where are the
+    possible values for this key?*
+  - options - Further refine the behaviour of the control (e.g.
+    translations, sensitivity, acceleration) Necessary options (defined
+    by controltype) will have default values, eg a jogwheel might have
+    no acceleration by default. Can only handle one element currently
+    but expandable, these aren't well described here: *(Then where?)*
   - invert
   - rot64inv
   - rot64fast

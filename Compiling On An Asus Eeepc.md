@@ -7,8 +7,6 @@ linux distributions.
 For Debian / Ubuntu, you can ignore the lines to do with editing your
 sources.list.
 
-unfortunatly this dosent work on the eeepc 901
-
 ``` 
  MIXXX_HOME=`pwd`
  sudo aptitude purge mixxx mixxx-data # remove any potential conflicts with packaged versions

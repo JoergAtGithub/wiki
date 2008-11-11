@@ -32,6 +32,8 @@ libavformat.
   - supports lots of formats and is extensible
   - use to play audio from (multiplexed) video files
   - future VJ support?
+  - Is libxine cross-platform? What does Songbird use? --- *[Albert
+    Santoni](albert@santoni.ca) 2008/11/11 01:40*
 
 ## New Hardware Controller Engine
 

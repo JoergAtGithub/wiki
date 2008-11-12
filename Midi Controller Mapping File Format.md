@@ -87,8 +87,8 @@ Definitions of the elements:
   - hercjog - Handle hercules jog wheels
   - spread64 - Exponential spread either side of 64, aka "relative"
     controller (NEW)
-  - status - Status code to send to control lights *(Is this the same as
-    velocity?)*
+  - status - Status code to send to control lights (e.g. Note on (0x9x),
+    Control Change (0xBx))
   - threshold - Turn on light when control exceeds this value
 
 ## Future

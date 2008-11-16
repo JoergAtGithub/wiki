@@ -12,8 +12,8 @@
 > > > <span class="underline">Linux</span> MIDI drivers** you will need
 > > > a release of Mixxx 1.6.2 (released in Nov 2008) or higher.
 > > > Previous versions of Mixxx built for Linux will work with Hercules
-> > > devices via libDJConsole but can not be remapped via the XML
-> > > mappings.
+> > > devices via libDJConsole but can not be remapped via the [XML
+> > > mappings](midi_controller_mapping_file_format).
 
 Welcome the Mixxx page for Hercules devices, Mixxx is the world's best
 free open source DJ software and the only one that runs on Windows, Mac
@@ -28,7 +28,11 @@ should behave as you would expect (i.e. Crossfader cross fades, Play -
 plays/pauses, etc). These mappings work with Hercules MIDI drivers for
 Linux, Mac OSX and Windows. *Untested* mappings are based on MIDI code
 documentation in the Hercules manuals and have not yet been extensively
-validated by the Mixxx community.
+validated by the Mixxx community. These are default mappings and can be
+changed by editing the [XML mappings (click to see
+how)](midi_controller_mapping_file_format), in future versions of Mixxx
+(1.7.x+) we will offer a configuration screen to train/retrain/remap
+this controls from within Mixxx.
 
 Brackets indicated control position on diagrams to the Left. Diagrams
 are copyright of Hercules/Guillemot corporation.

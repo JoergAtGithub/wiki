@@ -1,3 +1,5 @@
+# Hercules/Guillemot DJ Console Series Controllers
+
 ## Mixxx Community Sites
 
 | General                       | Forums                                       | Bugs                                                     | Wiki                                     | Developer Mailing List                                                               |

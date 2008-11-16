@@ -46,7 +46,8 @@ Some of the things to look forward to in the future:
     \[ [GSoC-MIDI-Tom
     branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/GSoC-MIDI-Tom/)
     \]
-  - Realtime Sound FX processing via the LADSPA plug-in architecture
+  - Realtime Sound FX processing via the
+    [LADSPA](http://en.wikipedia.org/wiki/LADSPA) plug-in architecture
     (1.7.x) \[
     [Trunk](http://mixxx.svn.sourceforge.net/viewvc/mixxx/trunk/) \]
   - Library rewrite (1.8.x) \[ [Features\_sqlite

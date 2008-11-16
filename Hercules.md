@@ -1,46 +1,67 @@
-The following page documents where controls are mapped to different or
-non-obvious functions in Mixxx, controls not listed here should behave
-as you would expect (i.e. Crossfader cross fades, Play - plays/pauses,
-etc).
+## Mixxx Community Sites
+
+| General                       | Wiki                                         | Forums                                   | Bugs                                                     |
+| ----------------------------- | -------------------------------------------- | ---------------------------------------- | -------------------------------------------------------- |
+| [mixxx.org](http://mixxx.org) | [mixxx.org/forums](http://mixxx.org/forums/) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) |
+
+## Intro
+
+Welcome the Mixxx page for Hercules devices, Mixxx is the world's best
+open source DJ software... Hercules does not support development or
+troubleshooting of Mixxx, so please direct questions/bugs
+encountered/comments about Mixxx to the [Mixxx community
+sites](#mixxx-community-sites) at the top of this page.
+
+The purpose of this page is to document how controls have been mapped to
+different or non-obvious functions in Mixxx, controls not listed here
+should behave as you would expect (i.e. Crossfader cross fades, Play -
+plays/pauses, etc). Untested indicates that the mappings are based on
+MIDI code documentation but have not been extensively validated by the
+Mixxx community yet.
+
+Please report control mapping / Mixxx bugs at the [Mixxx launchpad
+site](https://bugs.launchpad.net/mixxx)
 
 Brackets indicated control position on diagrams to the Left.
 
-## Hercules MK2
+Diagrams are copyright of Hercules/Guillemot corporation.
+
+## Hercules MK2 (Tested)
 
 [[/media/hercules_mk2_top_face.png|]]
 
-| MK2 Controls |                      |                             |  |
-| ------------ | -------------------- | --------------------------- |  |
-| Control      | Mapping              |                             |  |
-|              | 3 (3)                | Kill High                   |  |
-|              | 2 (3)                | Kill Mid                    |  |
-|              | 1 (3)                | Kill Base                   |  |
-|              | FX/Cue/Loop (3)      | Reverse                     |  |
-|              | Master Tempo Left    | Select Prev Track in List   |  |
-|              | Master Tempo Right   | Select Next Track in List   |  |
-|              | Left Joy Button (4)  | Load selected to Left Deck  |  |
-|              | Right Joy Button (4) | Load selected to Right Deck |  |
-|              | Autobeat (11)        | Sync                        |  |
-|              | Joystick (4)         | Unmapped                    |  |
+| Hercules MK2 Controls |                      |                             |  |
+| --------------------- | -------------------- | --------------------------- |  |
+| Control               | Mapping              |                             |  |
+|                       | 3 (3)                | Kill High                   |  |
+|                       | 2 (3)                | Kill Mid                    |  |
+|                       | 1 (3)                | Kill Base                   |  |
+|                       | FX/Cue/Loop (3)      | Reverse                     |  |
+|                       | Master Tempo Left    | Select Prev Track in List   |  |
+|                       | Master Tempo Right   | Select Next Track in List   |  |
+|                       | Left Joy Button (4)  | Load selected to Left Deck  |  |
+|                       | Right Joy Button (4) | Load selected to Right Deck |  |
+|                       | Autobeat (11)        | Sync                        |  |
+|                       | Joystick (4)         | Unmapped                    |  |
 
-## Hercules RMX
+## Hercules RMX (Tested)
 
 [[/media/hercules_rmx_top_face.png|]]
 
-| Hercules RMX |                  |                           |  |
-| ------------ | ---------------- | ------------------------- |  |
-| Control      | Mapping          |                           |  |
-|              | 1 (9)            | Flanger                   |  |
-|              | 4 (9)            | Reverse                   |  |
-|              | Up (8)           | Select Prev Track in List |  |
-|              | Down (8)         | Select Next Track in List |  |
-|              | 2,3,5,6 (9)      | Unmapped                  |  |
-|              | Right, Left (8)  | Unmapped                  |  |
-|              | Stop (20)        | Unmapped                  |  |
-|              | Pitch Reset (14) | Unmapped                  |  |
-|              | Beat Lock (13)   | Unmapped                  |  |
-|              | Scratch (7)      | Unmapped                  |  |
+| Hercules RMX Controls |                  |                           |  |
+| --------------------- | ---------------- | ------------------------- |  |
+| Control               | Mapping          |                           |  |
+|                       | 1 (9)            | Flanger                   |  |
+|                       | 4 (9)            | Reverse                   |  |
+|                       | Up (8)           | Select Prev Track in List |  |
+|                       | Down (8)         | Select Next Track in List |  |
+|                       | 2,3,5,6 (9)      | Unmapped                  |  |
+|                       | Right, Left (8)  | Unmapped                  |  |
+|                       | Stop (20)        | Unmapped                  |  |
+|                       | Pitch Reset (14) | Unmapped                  |  |
+|                       | Beat Lock (13)   | Unmapped                  |  |
+|                       | Scratch (7)      | Unmapped                  |  |
 
-## Hercules DJ Control Steel
+## Hercules DJ Control Steel (Untested)
 
 [[/media/hercules_dj_control_steel_top_face.png|]]

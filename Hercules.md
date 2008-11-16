@@ -24,6 +24,45 @@ validated by the Mixxx community.
 Brackets indicated control position on diagrams to the Left. Diagrams
 are copyright of Hercules/Guillemot corporation.
 
+## The Future
+
+Mixxx is always evolving, changing and getting better... Today our MIDI
+support is rough around the edges. Mixxx is powered by a handful of part
+time developers, so it may take us a while to get where we want to go,
+but here are some of the things in the pipeline and in planning
+planning...
+
+Some of the things to look forward to in the future:
+
+  - MIDI training UI to remap controls without editing XML files (1.7.x)
+    \[ [GSoC-MIDI-Tom
+    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/GSoC-MIDI-Tom/)
+    \]
+  - Realtime Sound FX processing via the LADSPA plug-in architecture
+    (1.7.x) \[
+    [Trunk](http://mixxx.svn.sourceforge.net/viewvc/mixxx/trunk/) \]
+  - Library rewrite (1.8.x) \[ [Features\_sqlite
+    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_sqlite/)
+    \]
+  - Looping support (2.x) \[ [planning on wiki](looping) \]
+
+Join us if you want to help\!
+
+  - If you can code C++, then [build mixxx](/#build_mixxx), and [send us
+    patches](#mixxx-community-sites)
+  - If you can't code, join the [community
+    forums](#mixxx-community-sites), test Mixxx, cheer on the Mixxx dev
+    team or donate to Mixxx
+
+## Hercules MP3 (Tested)
+
+[[/media/hercules_mk2_top_face.png|]]
+
+| Hercules MP3 Controls |         |  |  |
+| --------------------- | ------- |  |  |
+| Control               | Mapping |  |  |
+|                       |         |  |  |
+
 ## Hercules MK2 (Tested)
 
 [[/media/hercules_mk2_top_face.png|]]
@@ -66,3 +105,8 @@ are copyright of Hercules/Guillemot corporation.
 ## Hercules DJ Control Steel (Untested)
 
 [[/media/hercules_dj_control_steel_top_face.png|]]
+
+| Hercules DJ Control Steel Controls |         |  |  |
+| ---------------------------------- | ------- |  |  |
+| Control                            | Mapping |  |  |
+|                                    |         |  |  |

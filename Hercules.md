@@ -9,10 +9,10 @@
 ## Intro
 
 **Linux NOTE:** To properly make use of Mixxx **via the Hercules
-\_Linux\_ MIDI drivers** you will need a release of Mixxx 1.6.2
-(released in Nov 2008) or higher. Previous versions of Mixxx built for
-Linux will work with Hercules devices via libDJConsole but can not be
-remapped via the XML mappings.
+<span class="underline">Linux</span> MIDI drivers** you will need a
+release of Mixxx 1.6.2 (released in Nov 2008) or higher. Previous
+versions of Mixxx built for Linux will work with Hercules devices via
+libDJConsole but can not be remapped via the XML mappings.
 
 Welcome the Mixxx page for Hercules devices, Mixxx is the world's best
 open source DJ software and the only one that runs on Windows, Mac OSX
@@ -62,11 +62,11 @@ Join us if you want to help\!
     forums](#mixxx-community-sites), test Mixxx, cheer on the Mixxx dev
     team or donate to Mixxx
 
-## Configuring Mixxx to use the Hercules Linux MIDI driver (Linux Only)
+## Configuring Mixxx to use a Hercules MIDI driver
 
-  - You must have a version of Mixxx \> 1.6.2 (1.6.1 is too old)
-  - You must have compiled and installed the Hercules dkms kernel module
-    into your Linux kernel
+  - **Linux NOTE:** Mixxx version \>= 1.6.2 is required (1.6.1 is too
+    old), you must also have compiled and installed the Hercules dkms
+    kernel module into your Linux kernel
 
 [[/media/hercules_midi_mapping_setup.png|]] \*\* Steps \*\*
 

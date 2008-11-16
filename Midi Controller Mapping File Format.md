@@ -8,7 +8,7 @@ commands from a controller into commands that Mixxx will understand.
 
 The MIDI mapping files are located in the following paths:
 
-  - Windows: C:Program FilesMixxxmidi
+  - Windows: C:\\Program Files\\Mixxx\\midi
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
   - OS X: /Applications/Mixxx.app/Contents/midi
 

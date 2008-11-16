@@ -58,8 +58,8 @@ Some of the things to look forward to in the future:
 
 Join us if you want to help\!
 
-  - If you can code C++, then [build mixxx](/#build_mixxx), and [send us
-    patches](#mixxx-community-sites)
+  - If you can code C++, then [build mixxx](start#build_mixxx), and
+    [send us patches](#mixxx-community-sites)
   - If you can't code, join the [community
     forums](#mixxx-community-sites), test Mixxx, cheer on the Mixxx dev
     team or [![Mixxx PayPal Donation

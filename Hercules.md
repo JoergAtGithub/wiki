@@ -61,7 +61,9 @@ Join us if you want to help\!
     patches](#mixxx-community-sites)
   - If you can't code, join the [community
     forums](#mixxx-community-sites), test Mixxx, cheer on the Mixxx dev
-    team or donate to Mixxx
+    team or donate to Mixxx:
+
+[![https://www.paypal.com/en\_GB/i/btn/btn\_donate\_LG.gif](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donations%40mixxx%2eorg&lc=GB&item_name=Mixxx&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
 
 ## Configuring Mixxx to use a Hercules MIDI driver
 

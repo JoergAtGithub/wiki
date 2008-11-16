@@ -114,21 +114,21 @@ Join us if you want to help\!
 
 [[/media/hercules_rmx_top_face.png|]]
 
-| Hercules RMX Controls |                  |                           |  |
-| --------------------- | ---------------- | ------------------------- |  |
-| Control               | Mapping          |                           |  |
-|                       | Vol Main (25)    | Master Gain               |  |
-|                       | 1 (9)            | Flanger                   |  |
-|                       | 4 (9)            | Reverse                   |  |
-|                       | Up (8)           | Select Prev Track in List |  |
-|                       | Down (8)         | Select Next Track in List |  |
-|                       | 2,3,5,6 (9)      | Unmapped                  |  |
-|                       | Right, Left (8)  | Unmapped                  |  |
-|                       | Stop (20)        | Unmapped                  |  |
-|                       | Pitch Reset (14) | Unmapped                  |  |
-|                       | Beat Lock (13)   | Unmapped                  |  |
-|                       | Scratch (7)      | Unmapped                  |  |
-|                       | Mic Functions    | Not Available in Mixxx    |  |
+| Hercules RMX Controls |                   |                           |  |
+| --------------------- | ----------------- | ------------------------- |  |
+| Control               | Mapping           |                           |  |
+|                       | Vol Main (25)     | Master Gain               |  |
+|                       | 1 (9)             | Flanger                   |  |
+|                       | 4 (9)             | Reverse                   |  |
+|                       | Up (8)            | Select Prev Track in List |  |
+|                       | Down (8)          | Select Next Track in List |  |
+|                       | 2,3,5,6 (9)       | Unmapped                  |  |
+|                       | Right, Left (8)   | Unmapped                  |  |
+|                       | Stop (20)         | Unmapped                  |  |
+|                       | Pitch Reset (14)  | Unmapped                  |  |
+|                       | Beat Lock (13)    | Unmapped                  |  |
+|                       | Scratch (7)       | Unmapped                  |  |
+|                       | Mic Functions (1) | Not Available in Mixxx    |  |
 
 ## Hercules DJ Control Steel (Untested)
 

@@ -1,30 +1,28 @@
 ## Mixxx Community Sites
 
-| General                       | Wiki                                         | Forums                                   | Bugs                                                     |
-| ----------------------------- | -------------------------------------------- | ---------------------------------------- | -------------------------------------------------------- |
-| [mixxx.org](http://mixxx.org) | [mixxx.org/forums](http://mixxx.org/forums/) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) |
+| General                       | Forums                                       | Bugs                                                     | Wiki                                     | Developer Mailing List                                                               |
+| ----------------------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
+| [mixxx.org](http://mixxx.org) | [mixxx.org/forums](http://mixxx.org/forums/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [Mixxx-devel mailing list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel) |
 
 ## Intro
 
 Welcome the Mixxx page for Hercules devices, Mixxx is the world's best
-open source DJ software... Hercules does not support development or
+open source DJ software and the only one that runs on Windows, Mac OSX
+and Linux... Hercules does not directly develop or support
 troubleshooting of Mixxx, so please direct questions/bugs
-encountered/comments about Mixxx to the [Mixxx community
+encountered/comments/praise about Mixxx to the [Mixxx community
 sites](#mixxx-community-sites) at the top of this page.
 
 The purpose of this page is to document how controls have been mapped to
 different or non-obvious functions in Mixxx, controls not listed here
 should behave as you would expect (i.e. Crossfader cross fades, Play -
-plays/pauses, etc). Untested indicates that the mappings are based on
-MIDI code documentation but have not been extensively validated by the
-Mixxx community yet.
+plays/pauses, etc). These mappings work with Hercules MIDI drivers for
+Linux, Mac OSX and Windows. *Untested* mappings are based on MIDI code
+documentation in the Hercules manuals and have not yet been extensively
+validated by the Mixxx community.
 
-Please report control mapping / Mixxx bugs at the [Mixxx launchpad
-site](https://bugs.launchpad.net/mixxx)
-
-Brackets indicated control position on diagrams to the Left.
-
-Diagrams are copyright of Hercules/Guillemot corporation.
+Brackets indicated control position on diagrams to the Left. Diagrams
+are copyright of Hercules/Guillemot corporation.
 
 ## Hercules MK2 (Tested)
 

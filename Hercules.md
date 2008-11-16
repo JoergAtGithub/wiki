@@ -35,10 +35,10 @@ are copyright of Hercules/Guillemot corporation.
 ## The Future
 
 Mixxx is always evolving, changing and getting better... Today our MIDI
-support is rough around the edges. Mixxx is powered by a handful of part
-time developers, so it may take us a while to get where we want to go,
-but here are some of the things in the pipeline and in planning
-planning...
+support is rough around the edges. Mixxx is powered by a handful of
+unpaid part-time developers, so it may take us a while to get where we
+want to go, but here are some of the things in the pipeline and in
+planning planning...
 
 Some of the things to look forward to in the future:
 

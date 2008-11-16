@@ -41,6 +41,7 @@ are copyright of Hercules/Guillemot corporation.
 |                       | Right Joy Button (4) | Load selected to Right Deck |  |
 |                       | Autobeat (11)        | Sync                        |  |
 |                       | Joystick (4)         | Unmapped                    |  |
+|                       | Mic Functions        | Not Available in Mixxx      |  |
 
 ## Hercules RMX (Tested)
 
@@ -49,6 +50,7 @@ are copyright of Hercules/Guillemot corporation.
 | Hercules RMX Controls |                  |                           |  |
 | --------------------- | ---------------- | ------------------------- |  |
 | Control               | Mapping          |                           |  |
+|                       | Vol Main (25)    | Master Gain               |  |
 |                       | 1 (9)            | Flanger                   |  |
 |                       | 4 (9)            | Reverse                   |  |
 |                       | Up (8)           | Select Prev Track in List |  |
@@ -59,6 +61,7 @@ are copyright of Hercules/Guillemot corporation.
 |                       | Pitch Reset (14) | Unmapped                  |  |
 |                       | Beat Lock (13)   | Unmapped                  |  |
 |                       | Scratch (7)      | Unmapped                  |  |
+|                       | Mic Functions    | Not Available in Mixxx    |  |
 
 ## Hercules DJ Control Steel (Untested)
 

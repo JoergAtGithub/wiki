@@ -2,9 +2,9 @@
 
 ## Mixxx Community Sites
 
-| General                       | Forums                                       | Bugs                                                     | Wiki                                     | Developer Mailing List                                                               |
-| ----------------------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
-| [mixxx.org](http://mixxx.org) | [mixxx.org/forums](http://mixxx.org/forums/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [Mixxx-devel mailing list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel) |
+| General                       | Download                                     | Forums                                       | Bugs                                                     | Wiki                                     | Developer Mailing List                                                               |
+| ----------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
+| [mixxx.org](http://mixxx.org) | [Get Mixxx\!](http://mixxx.org/download.php) | [mixxx.org/forums](http://mixxx.org/forums/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [Mixxx-devel mailing list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel) |
 
 ## Intro
 
@@ -15,11 +15,11 @@ versions of Mixxx built for Linux will work with Hercules devices via
 libDJConsole but can not be remapped via the XML mappings.
 
 Welcome the Mixxx page for Hercules devices, Mixxx is the world's best
-open source DJ software and the only one that runs on Windows, Mac OSX
-and Linux... Hercules does not directly develop or support
-troubleshooting of Mixxx, so please direct questions/bugs
-encountered/comments/praise about Mixxx to the [Mixxx community
-sites](#mixxx-community-sites) at the top of this page.
+free open source DJ software and the only one that runs on Windows, Mac
+OSX and Linux ([download it](http://mixxx.org/download.php))... Hercules
+does not directly develop or support troubleshooting of Mixxx, so please
+direct questions/bugs encountered/comments/praise about Mixxx to the
+[Mixxx community sites](#mixxx-community-sites) at the top of this page.
 
 The purpose of this page is to document how controls have been mapped to
 different or non-obvious functions in Mixxx, controls not listed here

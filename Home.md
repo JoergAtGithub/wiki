@@ -17,6 +17,8 @@ developers, and artists, and is summarized in the categories below.
 
 ## Developer Documentation
 
+### Build Mixxx
+
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Linux, JACKd and Hercules legacy
     support](Compiling%20on%20Linux,%20JACKd%20and%20Hercules%20legacy%20support),
@@ -24,6 +26,9 @@ developers, and artists, and is summarized in the categories below.
     Hercules legacy support
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
+
+### Mixxx Developer Reference Documentation
+
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
   - [Coding Guidelines](Coding%20Guidelines)

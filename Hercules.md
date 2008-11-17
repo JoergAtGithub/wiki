@@ -135,22 +135,22 @@ Join us if you want to help\!
 
 [[/media/hercules_dj_control_steel_top_face.png|]]
 
-| Hercules DJ Control Steel Controls |                     |                           |  |
-| ---------------------------------- | ------------------- | ------------------------- |  |
-| Control                            | Mapping             |                           |  |
-|                                    | FX Wet/Dry (1)      | Unmapped                  |  |
-|                                    | FX Apply Select (1) | Unmapped                  |  |
-|                                    | Bank Shift (2)      | Unmapped                  |  |
-|                                    | Pitch Bend + (12)   | Temp Rate Up              |  |
-|                                    | Pitch Bend - (13)   | Temp Rate Down            |  |
-|                                    | Vol Main (23)       | Master Gain               |  |
-|                                    | 1 (9)               | Flanger                   |  |
-|                                    | 4 (9)               | Reverse                   |  |
-|                                    | Up (8)              | Select Prev Track in List |  |
-|                                    | Down (8)            | Select Next Track in List |  |
-|                                    | 2,3,5,6 (9)         | Unmapped                  |  |
-|                                    | 7,8,9,10,11,12 (9)  | Unmapped                  |  |
-|                                    | Right, Left (8)     | Unmapped                  |  |
-|                                    | Stop (19)           | Unmapped                  |  |
-|                                    | Scratch (7)         | Unmapped                  |  |
-|                                    | Vol\_HP (11)        | Not Available in Mixxx    |  |
+| Hercules DJ Control Steel Controls |                      |                           |  |
+| ---------------------------------- | -------------------- | ------------------------- |  |
+| Control                            | Mapping              |                           |  |
+|                                    | FX Wet/Dry Knobs (1) | Unmapped                  |  |
+|                                    | FX Apply Select (1)  | Unmapped                  |  |
+|                                    | Bank Shift (2)       | Unmapped                  |  |
+|                                    | Pitch Bend + (12)    | Temp Rate Up              |  |
+|                                    | Pitch Bend - (13)    | Temp Rate Down            |  |
+|                                    | Vol Main (23)        | Master Gain               |  |
+|                                    | 1 (9)                | Flanger                   |  |
+|                                    | 4 (9)                | Reverse                   |  |
+|                                    | Up (8)               | Select Prev Track in List |  |
+|                                    | Down (8)             | Select Next Track in List |  |
+|                                    | 2,3,5,6 (9)          | Unmapped                  |  |
+|                                    | 7,8,9,10,11,12 (9)   | Unmapped                  |  |
+|                                    | Right, Left (8)      | Unmapped                  |  |
+|                                    | Stop (19)            | Unmapped                  |  |
+|                                    | Scratch (7)          | Unmapped                  |  |
+|                                    | Vol\_HP (11)         | Not Available in Mixxx    |  |

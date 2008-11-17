@@ -47,8 +47,9 @@ planning...
 
 Some of the things to look forward to in the future:
 
-  - MIDI training UI to remap controls without editing XML files (1.7.x)
-    \[ [GSoC-MIDI-Tom
+  - MIDI training UI to remap controls without [manual editing XML
+    files](midi_controller_mapping_file_format) (1.7.x) \[
+    [GSoC-MIDI-Tom
     branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/GSoC-MIDI-Tom/)
     \]
   - Realtime Sound FX processing via the

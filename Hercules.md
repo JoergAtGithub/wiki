@@ -141,8 +141,8 @@ Join us if you want to help\!
 |                                    | FX Wet/Dry (1)      | Unmapped                  |  |
 |                                    | FX Apply Select (1) | Unmapped                  |  |
 |                                    | Bank Shift (2)      | Unmapped                  |  |
-|                                    | Pitch Bend + (12)   | Unmapped                  |  |
-|                                    | Pitch Bend - (13)   | Unmapped                  |  |
+|                                    | Pitch Bend + (12)   | Temp Rate Up              |  |
+|                                    | Pitch Bend - (13)   | Temp Rate Down            |  |
 |                                    | Vol Main (23)       | Master Gain               |  |
 |                                    | 1 (9)               | Flanger                   |  |
 |                                    | 4 (9)               | Reverse                   |  |

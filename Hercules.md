@@ -150,4 +150,3 @@ Join us if you want to help\!
 |                                    | Right, Left (8)     | Unmapped                  |  |
 |                                    | Stop (19)           | Unmapped                  |  |
 |                                    | Scratch (7)         | Unmapped                  |  |
-|                                    | Mic Functions (1)   | Not Available in Mixxx    |  |

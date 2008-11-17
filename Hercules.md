@@ -74,6 +74,10 @@ Join us if you want to help\!
 
 ## Configuring Mixxx to use a Hercules MIDI driver
 
+> > **Linux NOTE:** Mixxx version \>= 1.6.2 is required (1.6.1 is too
+> > old), you must also have compiled and installed the Hercules dkms
+> > kernel module into your Linux kernel
+
 [[/media/hercules_midi_mapping_setup.png|]] \*\* Steps \*\*
 
 1.  Start Mixxx, open preferences panel (Ctrl+P).
@@ -83,10 +87,6 @@ Join us if you want to help\!
     Hercules MIDI device then the driver is not properly loaded or the
     devices is not plugged in.
 4.  Choose the ***Controller Mapping*** matching your Hercules device.
-
-> > > **Linux NOTE:** Mixxx version \>= 1.6.2 is required (1.6.1 is too
-> > > old), you must also have compiled and installed the Hercules dkms
-> > > kernel module into your Linux kernel
 
 ## Hercules DJ Console MK2 and Hercules MP3 Control (Tested)
 

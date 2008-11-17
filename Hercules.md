@@ -89,7 +89,8 @@ Join us if you want to help\!
 ## Hercules DJ Console MK2 and Hercules MP3 Control (Tested)
 
 > > Note: these controllers are mapped the same way, but have different
-> > configuration files
+> > configuration files, picking the wrong config file will result in
+> > some buttons failing to perform as indicated.
 
 [[/media/hercules_mk2_top_face.png|]]
 

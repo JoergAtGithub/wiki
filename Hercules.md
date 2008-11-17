@@ -96,20 +96,20 @@ Join us if you want to help\!
 
 [[/media/hercules_mk2_top_face.png|]]
 
-| Hercules MK2 Controls |                       |                             |  |
-| --------------------- | --------------------- | --------------------------- |  |
-| Control               | Default Mixxx Mapping |                             |  |
-|                       | 3 (3)                 | Kill High                   |  |
-|                       | 2 (3)                 | Kill Mid                    |  |
-|                       | 1 (3)                 | Kill Base                   |  |
-|                       | FX/Cue/Loop (3)       | Reverse                     |  |
-|                       | Master Tempo Left     | Select Prev Track in List   |  |
-|                       | Master Tempo Right    | Select Next Track in List   |  |
-|                       | Left Joy Button (4)   | Load selected to Left Deck  |  |
-|                       | Right Joy Button (4)  | Load selected to Right Deck |  |
-|                       | Autobeat (11)         | Sync                        |  |
-|                       | Joystick (4)          | Unmapped                    |  |
-|                       | Mic Functions         | Not Available in Mixxx      |  |
+| Hercules MP3/MK2 Controls |                       |                             |  |
+| ------------------------- | --------------------- | --------------------------- |  |
+| Control                   | Default Mixxx Mapping |                             |  |
+|                           | 3 (3)                 | Kill High                   |  |
+|                           | 2 (3)                 | Kill Mid                    |  |
+|                           | 1 (3)                 | Kill Base                   |  |
+|                           | FX/Cue/Loop (3)       | Reverse                     |  |
+|                           | Master Tempo Left     | Select Prev Track in List   |  |
+|                           | Master Tempo Right    | Select Next Track in List   |  |
+|                           | Left Joy Button (4)   | Load selected to Left Deck  |  |
+|                           | Right Joy Button (4)  | Load selected to Right Deck |  |
+|                           | Autobeat (11)         | Sync                        |  |
+|                           | Joystick (4)          | Unmapped                    |  |
+|                           | Mic Functions         | Not Available in Mixxx      |  |
 
 ## Hercules RMX (Tested)
 

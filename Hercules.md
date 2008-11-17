@@ -149,6 +149,7 @@ Join us if you want to help\!
 |                                    | Up (8)              | Select Prev Track in List |  |
 |                                    | Down (8)            | Select Next Track in List |  |
 |                                    | 2,3,5,6 (9)         | Unmapped                  |  |
+|                                    | 7,8,9,10,11,12 (9)  | Unmapped                  |  |
 |                                    | Right, Left (8)     | Unmapped                  |  |
 |                                    | Stop (19)           | Unmapped                  |  |
 |                                    | Scratch (7)         | Unmapped                  |  |

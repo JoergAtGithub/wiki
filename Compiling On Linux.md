@@ -25,6 +25,7 @@ your distribution's package manager:
   - fftw3
   - libogg, libvorbis, libvorbisfile
   - libsndfile
+  - ladspa-sdk
   - libdjconsole - optional, for Hercules MK2 users 
 
 ## 2\. Get Mixxx

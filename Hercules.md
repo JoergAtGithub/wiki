@@ -96,61 +96,61 @@ Join us if you want to help\!
 
 [[/media/hercules_mk2_top_face.png|]]
 
-| Hercules MK2 Controls |                      |                             |  |
-| --------------------- | -------------------- | --------------------------- |  |
-| Control               | Mapping              |                             |  |
-|                       | 3 (3)                | Kill High                   |  |
-|                       | 2 (3)                | Kill Mid                    |  |
-|                       | 1 (3)                | Kill Base                   |  |
-|                       | FX/Cue/Loop (3)      | Reverse                     |  |
-|                       | Master Tempo Left    | Select Prev Track in List   |  |
-|                       | Master Tempo Right   | Select Next Track in List   |  |
-|                       | Left Joy Button (4)  | Load selected to Left Deck  |  |
-|                       | Right Joy Button (4) | Load selected to Right Deck |  |
-|                       | Autobeat (11)        | Sync                        |  |
-|                       | Joystick (4)         | Unmapped                    |  |
-|                       | Mic Functions        | Not Available in Mixxx      |  |
+| Hercules MK2 Controls |                       |                             |  |
+| --------------------- | --------------------- | --------------------------- |  |
+| Control               | Default Mixxx Mapping |                             |  |
+|                       | 3 (3)                 | Kill High                   |  |
+|                       | 2 (3)                 | Kill Mid                    |  |
+|                       | 1 (3)                 | Kill Base                   |  |
+|                       | FX/Cue/Loop (3)       | Reverse                     |  |
+|                       | Master Tempo Left     | Select Prev Track in List   |  |
+|                       | Master Tempo Right    | Select Next Track in List   |  |
+|                       | Left Joy Button (4)   | Load selected to Left Deck  |  |
+|                       | Right Joy Button (4)  | Load selected to Right Deck |  |
+|                       | Autobeat (11)         | Sync                        |  |
+|                       | Joystick (4)          | Unmapped                    |  |
+|                       | Mic Functions         | Not Available in Mixxx      |  |
 
 ## Hercules RMX (Tested)
 
 [[/media/hercules_rmx_top_face.png|]]
 
-| Hercules RMX Controls |                   |                           |  |
-| --------------------- | ----------------- | ------------------------- |  |
-| Control               | Mapping           |                           |  |
-|                       | Vol Main (25)     | Master Gain               |  |
-|                       | 1 (9)             | Flanger                   |  |
-|                       | 4 (9)             | Reverse                   |  |
-|                       | Up (8)            | Select Prev Track in List |  |
-|                       | Down (8)          | Select Next Track in List |  |
-|                       | 2,3,5,6 (9)       | Unmapped                  |  |
-|                       | Right, Left (8)   | Unmapped                  |  |
-|                       | Stop (20)         | Unmapped                  |  |
-|                       | Pitch Reset (14)  | Unmapped                  |  |
-|                       | Beat Lock (13)    | Unmapped                  |  |
-|                       | Scratch (7)       | Unmapped                  |  |
-|                       | Mic Functions (1) | Not Available in Mixxx    |  |
+| Hercules RMX Controls |                       |                           |  |
+| --------------------- | --------------------- | ------------------------- |  |
+| Control               | Default Mixxx Mapping |                           |  |
+|                       | Vol Main (25)         | Master Gain               |  |
+|                       | 1 (9)                 | Flanger                   |  |
+|                       | 4 (9)                 | Reverse                   |  |
+|                       | Up (8)                | Select Prev Track in List |  |
+|                       | Down (8)              | Select Next Track in List |  |
+|                       | 2,3,5,6 (9)           | Unmapped                  |  |
+|                       | Right, Left (8)       | Unmapped                  |  |
+|                       | Stop (20)             | Unmapped                  |  |
+|                       | Pitch Reset (14)      | Unmapped                  |  |
+|                       | Beat Lock (13)        | Unmapped                  |  |
+|                       | Scratch (7)           | Unmapped                  |  |
+|                       | Mic Functions (1)     | Not Available in Mixxx    |  |
 
 ## Hercules DJ Control Steel (Untested)
 
 [[/media/hercules_dj_control_steel_top_face.png|]]
 
-| Hercules DJ Control Steel Controls |                      |                           |  |
-| ---------------------------------- | -------------------- | ------------------------- |  |
-| Control                            | Mapping              |                           |  |
-|                                    | FX Wet/Dry Knobs (1) | Unmapped                  |  |
-|                                    | FX Apply Select (1)  | Unmapped                  |  |
-|                                    | Bank Shift (2)       | Unmapped                  |  |
-|                                    | Pitch Bend + (12)    | Temp Rate Up              |  |
-|                                    | Pitch Bend - (13)    | Temp Rate Down            |  |
-|                                    | Vol Main (23)        | Master Gain               |  |
-|                                    | 1 (9)                | Flanger                   |  |
-|                                    | 4 (9)                | Reverse                   |  |
-|                                    | Up (8)               | Select Prev Track in List |  |
-|                                    | Down (8)             | Select Next Track in List |  |
-|                                    | 2,3,5,6 (9)          | Unmapped                  |  |
-|                                    | 7,8,9,10,11,12 (9)   | Unmapped                  |  |
-|                                    | Right, Left (8)      | Unmapped                  |  |
-|                                    | Stop (19)            | Unmapped                  |  |
-|                                    | Scratch (7)          | Unmapped                  |  |
-|                                    | Vol\_HP (11)         | Not Available in Mixxx    |  |
+| Hercules DJ Control Steel Controls |                       |                           |  |
+| ---------------------------------- | --------------------- | ------------------------- |  |
+| Control                            | Default Mixxx Mapping |                           |  |
+|                                    | FX Wet/Dry Knobs (1)  | Unmapped                  |  |
+|                                    | FX Apply Select (1)   | Unmapped                  |  |
+|                                    | Bank Shift (2)        | Unmapped                  |  |
+|                                    | Pitch Bend + (12)     | Temp Rate Up              |  |
+|                                    | Pitch Bend - (13)     | Temp Rate Down            |  |
+|                                    | Vol Main (23)         | Master Gain               |  |
+|                                    | 1 (9)                 | Flanger                   |  |
+|                                    | 4 (9)                 | Reverse                   |  |
+|                                    | Up (8)                | Select Prev Track in List |  |
+|                                    | Down (8)              | Select Next Track in List |  |
+|                                    | 2,3,5,6 (9)           | Unmapped                  |  |
+|                                    | 7,8,9,10,11,12 (9)    | Unmapped                  |  |
+|                                    | Right, Left (8)       | Unmapped                  |  |
+|                                    | Stop (19)             | Unmapped                  |  |
+|                                    | Scratch (7)           | Unmapped                  |  |
+|                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |

@@ -80,13 +80,13 @@ Join us if you want to help\!
 
 [[/media/hercules_midi_mapping_setup.png|]] \*\* Steps \*\*
 
-1.  Start Mixxx, open preferences panel (Ctrl+P)
-2.  Select ***Input Controllers***
+1.  Start Mixxx, open preferences panel (Ctrl+P).
+2.  Select ***Input Controllers***.
 3.  Under ***Device*** find the MIDI entry for Hercules controller and
     select it, if it is not already selected -\> If you do not see a
     Hercules MIDI device then the driver is not properly loaded or the
-    devices is not plugged in
-4.  Choose the ***Controller Mapping*** matching your Hercules device
+    devices is not plugged in.
+4.  Choose the ***Controller Mapping*** matching your Hercules device.
 
 ## Hercules DJ Console MK2 and Hercules MP3 Control (Tested)
 

@@ -152,3 +152,4 @@ Join us if you want to help\!
 |                                    | Right, Left (8)     | Unmapped                  |  |
 |                                    | Stop (19)           | Unmapped                  |  |
 |                                    | Scratch (7)         | Unmapped                  |  |
+|                                    | Vol\_HP (11)        | Not Available in Mixxx    |  |

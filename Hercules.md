@@ -86,16 +86,10 @@ Join us if you want to help\!
     devices is not plugged in
 4.  Choose the ***Controller Mapping*** matching your Hercules device
 
-## Hercules MP3 (Tested)
+## Hercules DJ Console MK2 and Hercules MP3 Control (Tested)
 
-[[/media/hercules_mk2_top_face.png|]]
-
-| Hercules MP3 Controls |         |  |  |
-| --------------------- | ------- |  |  |
-| Control               | Mapping |  |  |
-|                       |         |  |  |
-
-## Hercules MK2 (Tested)
+> > Note: these controllers are mapped the same way, but have different
+> > configuration files
 
 [[/media/hercules_mk2_top_face.png|]]
 
@@ -138,7 +132,21 @@ Join us if you want to help\!
 
 [[/media/hercules_dj_control_steel_top_face.png|]]
 
-| Hercules DJ Control Steel Controls |         |  |  |
-| ---------------------------------- | ------- |  |  |
-| Control                            | Mapping |  |  |
-|                                    |         |  |  |
+| Hercules DJ Control Steel Controls |                   |                           |  |
+| ---------------------------------- | ----------------- | ------------------------- |  |
+| Control                            | Mapping           |                           |  |
+|                                    |                   | Unmapped                  |  |
+|                                    | Vol Main (25)     | Master Gain               |  |
+|                                    | 1 (9)             | Flanger                   |  |
+|                                    | 4 (9)             | Reverse                   |  |
+|                                    | Up (8)            | Select Prev Track in List |  |
+|                                    | Down (8)          | Select Next Track in List |  |
+|                                    | 2,3,5,6 (9)       | Unmapped                  |  |
+|                                    | Right, Left (8)   | Unmapped                  |  |
+|                                    | Stop (20)         | Unmapped                  |  |
+|                                    | Pitch Reset (14)  | Unmapped                  |  |
+|                                    | Beat Lock (13)    | Unmapped                  |  |
+|                                    | Scratch (7)       | Unmapped                  |  |
+|                                    | Source Control    | Unmapped                  |  |
+|                                    | Scratch (7)       | Unmapped                  |  |
+|                                    | Mic Functions (1) | Not Available in Mixxx    |  |

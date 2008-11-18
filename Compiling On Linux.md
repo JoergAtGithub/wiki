@@ -25,8 +25,9 @@ your distribution's package manager:
   - fftw3
   - libogg, libvorbis, libvorbisfile
   - libsndfile
-  - ladspa-sdk
-  - libdjconsole - optional, for Hercules MK2 users 
+  - ~~ladspa-sdk~~ - ladspa.h header now in trunk
+  - ~~libdjconsole - optional, for Hercules MK2 users~~ - no longer
+    required as of r2380 (\~1.6.2)
 
 ## 2\. Get Mixxx
 

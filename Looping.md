@@ -68,6 +68,38 @@ position" is precisely how the EngineBufferScale classes work. The
 EngineBufferScale classes do pitch/time stretching, which affects rate
 at which the playback position changes.
 
+#### Architectural Issues
+
+##### The Sound Engine
+
+The way that the Mixxx sound engine works is that we process audio
+buffers at a time. The length of these buffers is determined by the
+latency of your soundcard. The soundcard driver asks us for audio
+buffers at a time, so we respond that way. Once we ship a buffer of
+samples off to the soundcard, we have no way of knowing exactly when a
+given sample in that buffer will actually be played. The only way to
+compensate for this is to aim for very low latency. With lower latency
+and lower buffer sizes, we can be more flexible with changes in the
+audio. Once the soundcard has asked for a section of audio, it is too
+late to go seeking through the file stream to a different place because
+that would take too long and the sound coming out of the soundcard would
+skip. Thus, we have to be ready with the data that needs to be played
+when the soundcard asks for it.
+
+##### EngineBuffer / Reader Interaction
+
+Another issue with looping is that there is no good way to ask the
+Reader to cache a given range of a song. The Reader class does buffering
+of wave audio for the EngineBuffer so that when the soundcard asks for
+the next section of data, the data is ready. If a seek happens to a
+different part of the currently playing song, then the Reader has to
+start over and buffer that region.
+
+When a loop occurs, we /know/ that once we reach the loops end we are
+going to want to jump to the start. What is desirable for the looping
+machinery is a flexible way to express that to the Reader. "Please cache
+this region of the song, because I'm going to need to loop over it".
+
 ## Work Breakdown
 
 This [work breakdown
@@ -87,6 +119,37 @@ complete.
       1.3 Code hooks into waveform view and waveform summary
         1.3.1 Talk to RJ Ryan to make sure new waveform makes this easy
         1.3.1 Get loop in/out pos and paint highly visible markers
+
+## Current Progress
+
+The Features\_rryan-looping branch contains all the work that's been
+done so far.
+
+The EngineBuffer::process method has been replaced with a very basic
+version of it that does not have all the bells and whistles of the big,
+nasty, full version of process.
+
+The EngineBuffer::process method calls LoopingControl::process to ask it
+whether it should change its current position (i.e. whether it should
+loop). If it should loop, then it asks the Reader to seek to the new
+position, and sets the play position to the new position.
+
+The LoopingControl class has the following Control Objects:
+
+  - \[ChannelX\], loop\_in 
+  - \[ChannelX\], loop\_out
+  - \[ChannelX\], reloop\_exit 
+  - \[ChannelX\], loop\_start\_position
+  - \[ChannelX\], loop\_end\_position
+
+The WaveformRenderer is setup to render WaveformRenderMarks of the
+loop\_start\_position and loop\_end\_position control objects.
+
+In order to play with the current looping setup, you need to change the
+skim.xml of one of your skins to make some buttons in the skin emit
+loop\_in, loop\_out, and reloop\_exit signals. On 'outline', it is
+convenient to change the Fast Forward, Fast Backward, and Reverse
+buttons to Loop In, Loop Out, and Reloop/Exit.
 
 ## Team
 

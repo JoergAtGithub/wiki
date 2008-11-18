@@ -60,7 +60,9 @@ Some of the things to look forward to in the future:
   - Library rewrite (1.8.x) \[ [Features\_sqlite
     branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_sqlite/)
     \]
-  - Looping support (2.x) \[ [planning on wiki](looping) \]
+  - Looping support (2.x) \[ [planning on wiki](looping)
+    [Features\_rryan-looping](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_rryan-looping/)
+    \]
 
 Join us if you want to help\!
 

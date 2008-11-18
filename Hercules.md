@@ -61,7 +61,8 @@ Some of the things to look forward to in the future:
     branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_sqlite/)
     \]
   - Looping support (2.x) \[ [planning on wiki](looping)
-    [Features\_rryan-looping](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_rryan-looping/)
+    [Features\_rryan-looping
+    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_rryan-looping/)
     \]
 
 Join us if you want to help\!

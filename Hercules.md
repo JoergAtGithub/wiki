@@ -28,8 +28,8 @@ how)](midi_controller_mapping_file_format), in future versions of Mixxx
 (1.7.x+) we will offer a configuration screen to train/retrain/remap
 this controls from within Mixxx.
 
-Brackets indicated control position on diagrams to the Left. Controller
-diagrams are copyright of Hercules/Guillemot corporation.
+Bracketed numbers indicate a control's position on the control diagrams.
+Controller diagrams are copyright of Hercules/Guillemot corporation.
 
 > > > **Linux NOTE:** To properly make use of Mixxx **via the Hercules
 > > > <span class="underline">Linux</span> MIDI drivers** you will need

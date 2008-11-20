@@ -62,14 +62,12 @@ that we use on OSX and Windows.
 
 ### Will there ever be MIDI drivers for Hercules devices on Linux?
 
-  - We sure hope so, but the best people to ask are the
-    Hercules/Guillemot folks ( hercules-english@guillemot-support.com /
-    <http://ts.hercules.com/eng> ). If you have one of these devices you
-    should drop them a note of encouraging them to do some MIDI drivers
-    for Linux. :D (Update: we are in the process of testing drivers
-    supplied by Hercules/Guillemot that will be released when they are
-    deemed to be stable. This will mean that all Herc devices appear as
-    MIDI on Linux. As yet, there is no timeline for this.)
+  - We are in the process of testing drivers supplied by
+    Hercules/Guillemot that will be released when they are deemed to be
+    stable. This will mean that all Herc devices appear as MIDI on
+    Linux. Currently they are working well, and will hopefully be
+    released in the very short term. When that happens, this page will
+    get a bit of an overhaul.
 
 ## Recommendation
 

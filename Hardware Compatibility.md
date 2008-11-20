@@ -26,8 +26,8 @@ support:
 | [Stanton SCS.1 series](http://www.enterthesystem.com/system/)   | Waiting on Stanton for programming info & test units | Ditto                                               | Ditto                                                                                                                                                                                                                                               |
 | [Stanton SCS.3d](http://www.enterthesystem.com/system/scs3d/)   | Preliminary                                          | Untested                                            | Preliminary                                                                                                                                                                                                                                         |
 | [M-Audio Trigger Finger](M-Audio%20Trigger%20Finger)            | Yes (1.6.0)                                          | untested                                            | untested                                                                                                                                                                                                                                            |
-| [Eks XP5](Eks%20XP5)/[XP10](Eks%20XP10)                         | ?                                                    | ?                                                   | ?                                                                                                                                                                                                                                                   |
-| [Eks Otus](Eks%20Otus)                                          | ?                                                    | ?                                                   | ?                                                                                                                                                                                                                                                   |
+| [Eks XP5](Eks%20XP5)/[Eks XP10](Eks%20XP10)                     | ?                                                    | ?                                                   | ?                                                                                                                                                                                                                                                   |
+| [Eks Otus](Eks%20Otus)                                          | Yes\[6\] (untested)                                  | Yes\[7\] (untested)                                 | Yes\[8\] (untested)                                                                                                                                                                                                                                 |
 
 # Mixxx Soundcard Compatibility Notes
 
@@ -93,3 +93,12 @@ of Mixxx users do.
     Control MP3 via MIDI in the future.
 
 5.  no jogwheels
+
+6.  Compatible with any software that supports MIDI learn, in Linux/Mac
+    OS X/Windows: <http://eks.fi/product.php?p=products&id=35>
+
+7.  Compatible with any software that supports MIDI learn, in Linux/Mac
+    OS X/Windows: <http://eks.fi/product.php?p=products&id=35>
+
+8.  Compatible with any software that supports MIDI learn, in Linux/Mac
+    OS X/Windows: <http://eks.fi/product.php?p=products&id=35>

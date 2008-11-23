@@ -103,6 +103,7 @@ HerculesMk2.fx_cue_loop_mode = function (msg) {
     }
     
 HerculesMk2.fx_cue_loop_button = function (msg) {
+        if (msg.midino.value == 0) return; // ignore button up
         var mode = HerculesMk2.mode_store[msg.channel];
         if (mode == 0) { HerculesMk2.fx_cue_loop_mode(msg); mode = HerculesMk2.mode_store[msg.channel]; }
         var trigger_no = HerculesMk2.fx_button_map[msg.midino];

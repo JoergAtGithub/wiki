@@ -58,11 +58,11 @@ New mapping to mode selection:
 ``` xml
         <control>
             <group>[Channel1]</group>
-            <key>HerculesMk2.fx_cue_loop_mode</key>
+            <key>HerculesMk2.fx_cue_loop_mode</key> <!-- changed -->
             <miditype>Ctrl</miditype>
             <midino>0x07</midino>
             <options>
-                <script/>
+                <script/> <!-- changed -->
             </options>
         </control>
 
@@ -169,18 +169,20 @@ Old mapping to reverse:
                 </control>
 ```
 
-New mapping to mode selection:
+New mapping to mode selection ??:
 
 ``` xml
                 <control>
                     <group>[Channel1]</group>
-                    <key>HerculesMk2.fx_cue_loop_mode</key>
+                    <key>HerculesMk2.fx_cue_loop_mode</key> <!-- changed -->
                     <miditype>Ctrl</miditype>
                     <midino>7</midino>
                     <midichan>1</midichan>
-                    <controltype>button</controltype>
+                    <controltype>script</controltype> <!-- changed -->
                     <options>
-                        <script/>
+<!--
+                        <button/>
+-->
                     </options>
                 </control>
 ```

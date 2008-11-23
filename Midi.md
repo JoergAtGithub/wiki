@@ -92,9 +92,9 @@ HerculesMk2.fx_cue_loop_mode = function (msg) {
         if (mode != 0) {
             midi.send(B0, mode, 0) // clear previous LED status
         }
-        if (mode == HerculesMk2.mode_def[msg.channel]["min"] || mode == HerculesMk2.mode_def[msg.channel]["min"] + HerculesMk2.mode_def[msg.channel]["inc"]) {
+        if (mode == HerculesMk2.mode_def[msg.channel]["min"] || mode == HerculesMk2.mode_def[msg.channel]["min"] + HerculesMk2.mode_def[msg.channel]["inc"]) { // In one of the first two modes
             mode = mode + HerculesMk2.mode_def[msg.channel]["inc"];
-        } else {
+        } else { // either uninitialized (mode == 0) or in the final mode and need to roll back to first mode.
             mode = HerculesMk2.mode_def[msg.channel]["min"];
         }
         HerculesMk2.mode_store[msg.channel] = mode;

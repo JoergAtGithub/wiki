@@ -132,11 +132,13 @@ function msg(){
 }
 msg.channel = "[Channel1]";
 msg.midino = 13;
+msg.value = 127; // button down
 
 function msg2(){
 }
 msg2.channel = "[Channel2]";
 msg2.midino = 17;
+msg.value = 127; // button down
 
 HerculesMk2.fx_cue_loop_mode(msg);
 HerculesMk2.fx_cue_loop_button(msg);

@@ -94,7 +94,7 @@ HerculesMk2.fx_cue_loop_mode = function (msg) {
         }
         if (mode == HerculesMk2.mode_def[msg.channel]["min"] || mode == HerculesMk2.mode_def[msg.channel]["min"] + HerculesMk2.mode_def[msg.channel]["inc"]) {
             mode = mode + HerculesMk2.mode_def[msg.channel]["inc"];
-            } else {
+        } else {
             mode = HerculesMk2.mode_def[msg.channel]["min"];
         }
         HerculesMk2.mode_store[msg.channel] = mode;

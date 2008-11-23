@@ -99,7 +99,7 @@ HerculesMk2.fx_cue_loop_mode = function (msg) {
             mode = HerculesMk2.mode_def[msg.channel]["min"];
         }
         HerculesMk2.mode_store[msg.channel] = mode;
-        midi.send(B0, mode, 1) // set new LED status
+        midi.send(B0, mode, 127) // set new LED status
     }
     
 HerculesMk2.fx_cue_loop_button = function (msg) {

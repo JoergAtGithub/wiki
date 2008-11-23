@@ -13,10 +13,13 @@ Scope of required changes:
 2.  Additional script option MIDI event type handlers (configobject.cpp
     midiobject.cpp)
 3.  A script file loaded at start-up that contains a library of
-    functions
+    functions, add all those functions will need to be parsed and made
+    available to midi learning.
 4.  Interface definition for arguments passed to mapped script methods
     (to include the raw MIDI event details, which channel, and any
     options associated with the mapping)
+
+## Example of Hercules Mk2 FX/Cue/Loop mode switch button
 
 [[/media/hercules_mk2_top_face.png|]] For the purposes of this document we
 will use the Hercules Mk2 controller to illustrate how these changes
@@ -25,11 +28,16 @@ FX/Cue/Loop Mode selector button (see area 3, selector is triangle
 shaped), and 3 trigger buttons numbered 1, 2, and 3 respectively (also
 part of area 3).
 
+## Old -\> New Mapping
+
+### XML
+
 Currently, Mixxx does not support modes, so the function of the mode
 selector button is mapped to reverse. The new mapping would change that
 to call a javascript function, the function would be designated by a
 "\<script/\>" option tag. Similarly the mappings for the buttons would
 be changed from their current mappings to call the second script method.
+(mapping for Tom's branch is at the bottom)
 
 Old mapping to reverse:
 
@@ -50,7 +58,7 @@ New mapping to mode selection:
 ``` xml
         <control>
             <group>[Channel1]</group>
-            <key>herculesMk2.fx_cue_loop_mode</key>
+            <key>HerculesMk2.fx_cue_loop_mode</key>
             <miditype>Ctrl</miditype>
             <midino>0x07</midino>
             <options>
@@ -60,9 +68,14 @@ New mapping to mode selection:
 
 ```
 
+### QtScript Function
+
 When a midi event arrives in controlobject/midiobject the \<script/\>
 tag triggers an evaluation of the functions stored in the library. Here
-is an example implementation of the library:
+is an example implementation of the library which shows the basics of
+managing the controller's state. The implementation isn't complete as
+the callbacks to control objects to trigger the various button actions
+or set the LED values are only comments or stubs to alert().
 
 ``` javascript
 function HerculesMk2() {}
@@ -101,6 +114,8 @@ HerculesMk2.fx_cue_loop_button = function (msg) {
     }
 ```
 
+### QtScript Test
+
 Test code, which cycles through the buttons modes and triggers a few
 button events.
 
@@ -134,4 +149,34 @@ HerculesMk2.fx_cue_loop_mode(msg);
 HerculesMk2.fx_cue_loop_button(msg);
 HerculesMk2.fx_cue_loop_mode(msg2);
 HerculesMk2.fx_cue_loop_button(msg2);
+```
+
+### Tom's branch midi mapping
+
+``` xml
+                <control>
+                    <group>[Channel1]</group>
+                    <key>reverse</key>
+                    <miditype>Ctrl</miditype>
+                    <midino>7</midino>
+                    <midichan>1</midichan>
+                    <controltype>button</controltype>
+                    <options>
+                        <button/>
+                    </options>
+                </control>
+```
+
+``` xml
+                <control>
+                    <group>[Channel1]</group>
+                    <key>HerculesMk2.fx_cue_loop_mode</key>
+                    <miditype>Ctrl</miditype>
+                    <midino>7</midino>
+                    <midichan>1</midichan>
+                    <controltype>button</controltype>
+                    <options>
+                        <script/>
+                    </options>
+                </control>
 ```

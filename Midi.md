@@ -153,6 +153,8 @@ HerculesMk2.fx_cue_loop_button(msg2);
 
 ### Tom's branch midi mapping
 
+Old mapping to reverse:
+
 ``` xml
                 <control>
                     <group>[Channel1]</group>
@@ -166,6 +168,8 @@ HerculesMk2.fx_cue_loop_button(msg2);
                     </options>
                 </control>
 ```
+
+New mapping to mode selection:
 
 ``` xml
                 <control>

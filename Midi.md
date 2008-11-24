@@ -1,8 +1,8 @@
 # MIDI Extension Proposal 2008-11-23 (Draft)
 
 To enable support for newer state based MIDI controllers (i.e.
-controllers who dynamically remap buttons by hitting buttons) the Mixxx
-MIDI mappings specs will need to be extended.
+controllers which dynamically remap buttons by hitting certain mode
+buttons) the Mixxx MIDI mappings specs will need to be extended.
 
 The extensions will enable controls to be mapped to QtScript (aka
 Javascript/EMCAScript) functions stored in a functions library file.

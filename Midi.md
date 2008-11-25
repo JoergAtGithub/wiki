@@ -185,7 +185,7 @@ New mapping to mode selection ??:
                     <miditype>Ctrl</miditype>
                     <midino>7</midino>
                     <midichan>1</midichan>
-                    <controltype>script</controltype> <!-- changed -->
+                    <controltype>script-binding</controltype> <!-- changed -->
                     <options>
 <!--
                         <button/>

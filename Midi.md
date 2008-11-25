@@ -35,10 +35,10 @@ part of area 3).
 Currently, Mixxx does not support modes, so the function of the mode
 selector button is mapped to reverse. The new mapping would change that
 to call a javascript function, the function would be designated by a
-"\<script/\>" option tag. Similarly the mappings for the buttons would
-be changed from their current mappings to call the second script method,
-though that is not shown in the snippets here. (mapping for Tom's branch
-is at the bottom)
+"\<script-binding/\>" option tag. Similarly the mappings for the buttons
+would be changed from their current mappings to call the second script
+method, though that is not shown in the snippets here. (mapping for
+Tom's branch is at the bottom)
 
 Old mapping to reverse:
 
@@ -63,7 +63,7 @@ New mapping to mode selection:
             <miditype>Ctrl</miditype>
             <midino>0x07</midino>
             <options>
-                <script/> <!-- changed -->
+                <script-binding/> <!-- changed -->
             </options>
         </control>
 

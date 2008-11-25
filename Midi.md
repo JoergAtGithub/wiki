@@ -78,6 +78,9 @@ managing the controller's state. The implementation isn't complete as
 the callbacks to control objects to trigger the various button actions
 or set the LED values are only comments or stubs to alert().
 
+(Note: you'll need to compile Mixxx with option script=1 to enable
+QtScript parsing.)
+
 ``` javascript
 function HerculesMk2() {}
 HerculesMk2.mode_store = { "[Channel1]":0, "[Channel2]":0 };

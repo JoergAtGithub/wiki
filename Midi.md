@@ -161,33 +161,33 @@ HerculesMk2.fx_cue_loop_button(msg2);
 ### Loading / Executing library of functions
 
 Library should be called something descriptive like
-'midi-mappings-scripts.js' (.js so editors highlight properly).
+'*midi-mappings-scripts.js*' (.js so editors highlight properly).
 
 Steps to loading:
 
 1.  read file 'midi-mappings-scripts.js' into a QString (refered to from
-    here on as scriptFile)
+    here on as *scriptFile*)
 2.  parse all lines matching mappable function signatures into a
-    QStringList (refered to from here on as functionsMap). Pure regex
+    QStringList (refered to from here on as *functionsMap*). Pure regex
     equivalent of this: `grep 'function' midi-mappings-scripts.js|grep
     -i '(msg)'|sed -e 's/function \(.*\)(msg).*/\1/i' -e 's//[= ]//g'`
     should just about do it.
-3.  Load mapping file, verify that all \<script-binding/\> references
-    are present in functionsMap, else pop-up an error message indicating
-    unmapped option. (don't assert, otherwise app dies and it will be
-    impossible to correct inside the learning prefs screen).
+3.  Load mapping file, verify that all *\<script-binding/\>* references
+    are present in *functionsMap*, else pop-up an error message
+    indicating unmapped option. (don't assert, otherwise app dies and it
+    will be impossible to correct inside the learning prefs screen).
 4.  QtScriptEngine works by accepting a string argument. Pass
-    scriptFile, check can evaluate -\> false throw a pop-up indicating a
-    scripting error... 
-5.  Whenever a mapping with a \<script-binding/\> option is triggered,
+    *scriptFile*, check *canEvaluate* -\> false throw a pop-up
+    indicating a scripting error... 
+5.  Whenever a mapping with a *\<script-binding/\>* option is triggered,
     evaluate that method in the QtScript, passing in the msg (w/ with
     channel data and data from raw midi event that triggered it).
 
-Phase 2: a \<script\> block will be added to the XML to hold controller
-specific QtScript functions. There are considerations such as function
-name collisions and remapping to consider, global functions generic to
-all controllers will still be loaded from the mid-mapping-script.js file
-as well.
+Phase 2: a *\<script\>* block will be added to the XML to hold
+controller specific QtScript functions. There are considerations such as
+function name collisions and remapping to consider, global functions
+generic to all controllers will still be loaded from the
+*mid-mapping-script.js* file as well.
 
 ### Tom's branch midi mapping
 

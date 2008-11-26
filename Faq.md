@@ -115,11 +115,11 @@ maintaining a Mixxx package for a distribution please get in touch.
 
 ## What music file formats can Mixxx play?
 
-As of release 1.6.0, Mixxx supports the following file formats:
+As of release 1.6.1, Mixxx supports the following file formats:
 
   - MP3
   - OGG
-  - FLAC - Linux and Mac OSX 10.5 only
+  - FLAC
   - WAV, AIFF
 
 ## What happens if a file's samplerate is different from the sound card rate?

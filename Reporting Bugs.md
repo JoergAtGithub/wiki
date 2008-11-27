@@ -22,8 +22,8 @@ information:
   - Steps to reproduce the problem
   - [Information logs](reporting_bugs#gathering_logs)
 
-Much of this information can be gathered from System Information in
-Windows (found under Control Panel-\>Administrative Tools-\>Computer
+Much of the system information can be gathered from System Information
+in Windows (found under Control Panel-\>Administrative Tools-\>Computer
 Management-\>System Information,) and with the commands uname -a and
 lspci -v on Linux.
 

@@ -14,6 +14,7 @@ developers, and artists, and is summarized in the categories below.
   - [Tutorials](Tutorials)
   - [Vinyl Control](Vinyl%20Control)
   - [System Requirements](System%20Requirements)
+  - [Reporting bugs](Reporting%20bugs)
 
 ## Developer Documentation
 

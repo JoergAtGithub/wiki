@@ -36,6 +36,11 @@ it as an attachment)
 
   - Most recent console output at the time of the error (About 50 lines
     or so.)
+  - *[back traces](creating_backtraces)* from gdb is also extremely
+    helpful. You need to install the gdb (GNU Debugger) package, from a
+    console window run `gdb --eval-command=run mixxx`Reproduce the crash
+    mixxx and then type ***bt*** at the *(gdb)* prompt and copy the
+    lines from your terminal and paste them into the bug report.
 
 #### Mac OSX
 

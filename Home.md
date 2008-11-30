@@ -96,3 +96,5 @@ Additional [SoC Student Info](SoC%20Student%20Info)
   - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
   - The blog: mixxxblog.blogspot.com and [previous
     polls](previous%20polls).
+  - SVN code browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).

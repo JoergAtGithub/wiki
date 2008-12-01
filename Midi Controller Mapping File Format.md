@@ -157,8 +157,8 @@ at which the light turns on.
   - Hercjog - Handle hercules jog wheels
   - Spread64 - Exponential spread either side of 64, aka "relative"
     controller
-  - status - Status code to send to control lights (e.g. Note on (0x9x),
-    Control Change (0xBx))
+  - status - Status code to send to control lights (e.g. Note on
+    (0x9\#), Control Change (0xB\#))
   - threshold - Turn on light when control exceeds this value
 
 ### Old format (pre-1.6.5)

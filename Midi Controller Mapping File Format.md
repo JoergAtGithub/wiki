@@ -113,7 +113,8 @@ The next section defines the outputs (lights only at the moment).
 This allows you to send any three bytes to the MIDI controller in the
 order Status, Midino, on/off. Threshold is the value at which the 'on'
 value is sent. Below this value, the 'off' value is sent. If 'off' is
-set to 0xFF, nothing will be sent. (Useful for LED sequences.)
+set to 0xFF, nothing will be sent below the threshold. (Useful for LED
+sequences.)
 
 ``` 
           </light>

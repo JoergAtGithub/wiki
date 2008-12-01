@@ -22,11 +22,10 @@ Mixxx uses a well defined XML format to store its MIDI mappings. The
 format is used for storing and distributing MIDI mappings from multiple
 scopes.
 
-\<?xml version="1.0" encoding="utf-8"?\> \<MixxxMIDIPreset
-version="1.6.2"\> \<\!-- Version number to help compatibility, should
-the MIDI format change --\>
+\<?xml version="1.0" encoding="utf-8"?\>
 
 ``` 
+  <MixxxMIDIPreset version="1.6.2"> <!-- Version number to help compatibility, should the MIDI format change -->
   <info><!-- Optional - information about the preset file -->
       <name>Example MIDI Preset for Mixxx</name>
       <author>Tom Care</author>

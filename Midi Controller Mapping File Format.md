@@ -153,13 +153,13 @@ like this:
 
 \</controller\>
 
-Definitions of the elements:
+### Definitions of the elements:
 
     These define the part of Mixxx that is being controlled:
 
   - group - The controlobject group
-  - key - The controlobject key, a list of which can be found on the
-    [UI/MIDI Controls and Names](ui_midi_controls_and_names) page.
+  - key - The controlobject key, a list of which can be found
+    [below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
 <!-- end list -->
 

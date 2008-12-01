@@ -60,8 +60,8 @@ moment).
 ```
 
 Group and key define the part of Mixxx that is being controlled. For a
-list of what these values can be, see
-<http://mixxx.org/wiki/doku.php/ui_midi_controls_and_names>.
+list of what these values can be, [see
+below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
 ``` 
               <miditype>Ctrl</miditype>

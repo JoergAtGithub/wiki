@@ -119,40 +119,6 @@ at which the light turns on.
 
 \</MixxxMIDIPreset\>
 
-### Old format (pre-1.6.5)
-
-The old midi mapping format is here for reference. It looks something
-like this:
-
-\<\!DOCTYPE controller\> \<controller\>
-
-``` 
- <controls>
-   <control>
-     <group>[[Master]]</group>
-     <key>crossfader</key>
-     <miditype>Ctrl</miditype>
-     <midino>0x31</midino>
-     <options>
-       <hercjog/>
-     </options>
-   </control>
-   ...
- </controls>
- <lights>
-   <light>
-     <group>[[Channel1]]</group>
-     <key>VuMeter</key>
-     <status>0xB0</status>
-     <midino>0x16</midino>
-     <threshold>0.5</threshold>
-   </light>
-   ...
- </lights>
-```
-
-\</controller\>
-
 ### Definitions of the elements:
 
     These define the part of Mixxx that is being controlled:
@@ -190,10 +156,44 @@ like this:
     these occur separately. (Herc)
   - hercjog - Handle hercules jog wheels
   - spread64 - Exponential spread either side of 64, aka "relative"
-    controller (NEW)
+    controller
   - status - Status code to send to control lights (e.g. Note on (0x9x),
     Control Change (0xBx))
   - threshold - Turn on light when control exceeds this value
+
+### Old format (pre-1.6.5)
+
+The old midi mapping format is here for reference. It looks something
+like this:
+
+\<\!DOCTYPE controller\> \<controller\>
+
+``` 
+ <controls>
+   <control>
+     <group>[[Master]]</group>
+     <key>crossfader</key>
+     <miditype>Ctrl</miditype>
+     <midino>0x31</midino>
+     <options>
+       <hercjog/>
+     </options>
+   </control>
+   ...
+ </controls>
+ <lights>
+   <light>
+     <group>[[Channel1]]</group>
+     <key>VuMeter</key>
+     <status>0xB0</status>
+     <midino>0x16</midino>
+     <threshold>0.5</threshold>
+   </light>
+   ...
+ </lights>
+```
+
+\</controller\>
 
 # UI/MIDI Controls and Names
 

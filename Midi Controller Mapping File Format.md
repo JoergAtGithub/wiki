@@ -102,14 +102,17 @@ The next section defines the outputs (lights only at the moment).
           <light>
               <group>[Channel1]</group>
               <key>play</key>
-              <status>0x7F</status>
-              <midino>0x08</midino>
+              <status>0x7F</status>  <!-- First byte sent to device -->
+              <midino>0x08</midino>  <!-- Second byte -->
+              <on>0x01</on>  <!-- Optional third byte to turn on the LED. If not specified, 0x7F is used. -->
+              <off>0x00</off> <!-- To extinguish. 0x00 is the default. -->
               <threshold>0.1</threshold>
               
 ```
 
-Status is the value sent to the MIDI controller. Threshold is the value
-at which the light turns on.
+This allows you to send any three bytes to the MIDI controller in the
+order Status, Midino, on/off. Threshold is the value at which the 'on'
+value is sent. Below this value, the 'off' value is sent.
 
 ``` 
           </light>

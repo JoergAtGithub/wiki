@@ -144,18 +144,18 @@ at which the light turns on.
     by controltype) will have default values, eg a jogwheel might have
     no acceleration by default. Can only handle one element currently
     but expandable, these aren't well described here: *(Then where?)*
-  - invert
-  - rot64inv
-  - rot64fast
-  - rot64
-  - diff - Add the value to the control's current value
-  - button - a button has a *Down* (non-zero) and an *Up* (zero) state,
+  - Invert
+  - Rot64inv
+  - Rot64fast
+  - Rot64
+  - Diff - Add the value to the control's current value
+  - Button - a button has a *Down* (non-zero) and an *Up* (zero) state,
     these occur together when pressed/released, this switch only
     triggers on the *Down*, *Up* is ignored. (Herc)
-  - switch - a switch has a *On* (non-zero) and an *Off* (zero) state,
+  - Switch - a switch has a *On* (non-zero) and an *Off* (zero) state,
     these occur separately. (Herc)
-  - hercjog - Handle hercules jog wheels
-  - spread64 - Exponential spread either side of 64, aka "relative"
+  - Hercjog - Handle hercules jog wheels
+  - Spread64 - Exponential spread either side of 64, aka "relative"
     controller
   - status - Status code to send to control lights (e.g. Note on (0x9x),
     Control Change (0xBx))

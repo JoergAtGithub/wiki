@@ -37,9 +37,7 @@ Now, for the "sound inputs", you have two options: You can either use a
 fancy DJ soundcard that has multiple stereo line-inputs on it, or can
 use two soundcards (each with a single stereo line-in). Currently,
 Mixxx's vinyl control has only been tested with the latter
-configuration. Currently (2008-03-03) running both inputs through the
-one soundcard does not work, it will cause the song to drift randomly.
-(tested on Linux/SVN-2008-02-29/M-Audio Delta 1010LT\[envy24\])
+configuration.
 
 **For best scratch performance** with vinyl control, your system must be
 able to handle setting the latency to **10ms or less** otherwise the

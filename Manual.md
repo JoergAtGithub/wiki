@@ -220,7 +220,13 @@ Other useful resources are the Linux Realtime guide and [Gentoo's
 documentation on the
 subject](http://www.gentoo.org/proj/en/desktop/sound/realtime.xml).
 
-The first thing one can try to reduce system latency is getting a
+The first thing to try if using ALSA is to set your Master output
+hardware to just "default" instead of specific hardware. (This made a
+huge difference on a test system with integrated Intel soundcard.) The
+drawback to this is that system sounds (KDE beeps and such) will now be
+mixed in and will come out the main output.
+
+The second thing one can try to reduce system latency is getting a
 realtime kernel. If you're using a binary kernel, this might be as
 simple as installing a realtime enabled kernel with your package manager
 (if your package system offers one of course). Otherwise download kernel

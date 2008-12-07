@@ -3,6 +3,14 @@
 If you've got a question that's not answered here, please post in the
 [forums](http://www.mixxx.org/forums)\!
 
+## I have a decently fast Linux system. Why do I have to set the latency so high?
+
+If you're using ALSA, try setting your Master output hardware to just
+"default" instead of specific hardware. (This made a huge difference on
+a test system with integrated Intel soundcard.) The drawback to this is
+that system sounds (KDE beeps and such) will now be mixed in and will
+come out the main output.
+
 ## How do I record my Mixxx session?
 
 Mixxx 1.6.0 and newer versions support recording mixes to .wav files. To

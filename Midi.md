@@ -207,7 +207,7 @@ Old mapping to reverse:
                 </control>
 ```
 
-New mapping to mode selection ??:
+New mapping to mode selection:
 
 ``` xml
                 <control>
@@ -216,11 +216,9 @@ New mapping to mode selection ??:
                     <miditype>Ctrl</miditype>
                     <midino>7</midino>
                     <midichan>1</midichan>
-                    <controltype>script-binding</controltype> <!-- changed -->
+                    <controltype>button</controltype>
                     <options>
-<!--
-                        <button/>
--->
+                        <Script-Binding/> <!-- changed -->
                     </options>
                 </control>
 ```

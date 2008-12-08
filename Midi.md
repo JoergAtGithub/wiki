@@ -33,12 +33,11 @@ part of area 3).
 ### XML
 
 Currently, Mixxx does not support modes, so the function of the mode
-selector button is mapped to reverse. The new mapping would change that
-to call a javascript function, the function would be designated by a
-"\<script-binding/\>" option tag. Similarly the mappings for the buttons
-would be changed from their current mappings to call the second script
-method, though that is not shown in the snippets here. (mapping for
-Tom's branch is at the bottom)
+selector button is mapped to reverse. The new mapping changes that to
+call a QtScript function, designated by a "\<script-binding/\>" option
+tag. Similarly the mappings for the buttons change from their current
+mappings to call the second script method, though that is not shown in
+the snippets here.
 
 Old mapping to reverse:
 

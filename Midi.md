@@ -28,7 +28,7 @@ FX/Cue/Loop Mode selector button (see area 3, selector is triangle
 shaped), and 3 trigger buttons numbered 1, 2, and 3 respectively (also
 part of area 3).
 
-## Old -\> New Mapping
+## Old -\> New Mapping (\>1.6.5 format)
 
 ### XML
 
@@ -39,6 +39,42 @@ to call a javascript function, the function would be designated by a
 would be changed from their current mappings to call the second script
 method, though that is not shown in the snippets here. (mapping for
 Tom's branch is at the bottom)
+
+Old mapping to reverse:
+
+``` xml
+                <control>
+                    <group>[Channel1]</group>
+                    <key>reverse</key>
+                    <miditype>Ctrl</miditype>
+                    <midino>7</midino>
+                    <midichan>1</midichan>
+                    <controltype>button</controltype>
+                    <options>
+                        <button/>
+                    </options>
+                </control>
+```
+
+New mapping to mode selection:
+
+``` xml
+                <control>
+                    <group>[Channel1]</group>
+                    <key>HerculesMk2.fx_cue_loop_mode</key> <!-- changed -->
+                    <miditype>Ctrl</miditype>
+                    <midino>7</midino>
+                    <midichan>1</midichan>
+                    <controltype>button</controltype>
+                    <options>
+                        <Script-Binding/> <!-- changed -->
+                    </options>
+                </control>
+```
+
+### Old (pre-1.6.5) XML format changes
+
+*(Do we still even need this?)*
 
 Old mapping to reverse:
 
@@ -188,37 +224,3 @@ controller specific QtScript functions. There are considerations such as
 function name collisions and remapping to consider, global functions
 generic to all controllers will still be loaded from the
 *mid-mapping-script.js* file as well.
-
-### Tom's branch midi mapping
-
-Old mapping to reverse:
-
-``` xml
-                <control>
-                    <group>[Channel1]</group>
-                    <key>reverse</key>
-                    <miditype>Ctrl</miditype>
-                    <midino>7</midino>
-                    <midichan>1</midichan>
-                    <controltype>button</controltype>
-                    <options>
-                        <button/>
-                    </options>
-                </control>
-```
-
-New mapping to mode selection:
-
-``` xml
-                <control>
-                    <group>[Channel1]</group>
-                    <key>HerculesMk2.fx_cue_loop_mode</key> <!-- changed -->
-                    <miditype>Ctrl</miditype>
-                    <midino>7</midino>
-                    <midichan>1</midichan>
-                    <controltype>button</controltype>
-                    <options>
-                        <Script-Binding/> <!-- changed -->
-                    </options>
-                </control>
-```

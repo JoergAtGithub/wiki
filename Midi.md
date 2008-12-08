@@ -28,7 +28,7 @@ FX/Cue/Loop Mode selector button (see area 3, selector is triangle
 shaped), and 3 trigger buttons numbered 1, 2, and 3 respectively (also
 part of area 3).
 
-## Old -\> New Mapping (\>1.6.2 format)
+## Old -\> New Mapping (\>=1.6.5 format)
 
 ### XML
 

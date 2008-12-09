@@ -35,7 +35,8 @@ developers, and artists, and is summarized in the categories below.
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
   - [Feature Discussion](Feature%20Discussion)
-  - [UI/MIDI Controls and Names](UI/MIDI%20Controls%20and%20Names)
+  - [UI/MIDI Controls and
+    Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format)
   - [Creating backtraces](Creating%20backtraces)

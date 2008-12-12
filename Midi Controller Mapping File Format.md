@@ -255,7 +255,7 @@ it's either on (non-zero) or off (zero.)
 |  | ChannelN     |  | NextTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | NextTrack               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | pfl                     |  | binary    |  | Enables the headphone cue                                                |  | Headphone button                                          |  |
-|  | ChannelN     |  | play                    |  | binary    |  | Plays (\>0) or pauses (=0) the track                                     |  | Play/pause button                                         |  |
+|  | ChannelN     |  | play                    |  | binary    |  | Toggles playing or pausing the track                                     |  | Play/pause button                                         |  |
 |  | ChannelN     |  | playposition            |  | default   |  | Sets the absolute position in the track (0=beginning, 1=end)             |  | Waveform                                                  |  |
 |  | ChannelN     |  | pregain                 |  | default   |  | Adjusts the pre-fader gain of the track (to avoid clipping)              |  | GAIN knob                                                 |  |
 |  | ChannelN     |  | PrevTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |

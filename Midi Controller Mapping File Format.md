@@ -214,76 +214,76 @@ it's either on (non-zero) or off (zero.)
 
 *Please keep the controls in alphabetical order*
 
-|  |           |  |                         |  |           |  |                                                                          |  |                                                           |  |
-|  | --------- |  | ----------------------- |  | --------- |  | ------------------------------------------------------------------------ |  | --------------------------------------------------------- |  |
-|  | **Group** |  | **Key/Control**         |  | **Range** |  | **What it does**                                                         |  | **On-screen feedback**                                    |  |
-|  | Master    |  | balance                 |  | default   |  | Adjusts the left/right channel balance on the master output              |  | Center Balance knob                                       |  |
-|  | Master    |  | crossfader              |  | default   |  | Adjusts the crossfader between players/decks                             |  | Crossfader slider                                         |  |
-|  | Master    |  | latency                 |  | ?         |  | ?                                                                        |  | none                                                      |  |
-|  | Master    |  | rate                    |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | Master    |  | Record                  |  | ?         |  | Starts/stops recording your session                                      |  | none                                                      |  |
-|  | Master    |  | samplerate              |  | ?         |  | ?                                                                        |  | none                                                      |  |
-|  | Master    |  | volume                  |  | default   |  | Adjusts the master output volume                                         |  | Center Volume knob                                        |  |
-|  | \----     |  | \----                   |  | \----     |  | \----                                                                    |  | \----                                                     |  |
-|  | Playlist  |  | SelectNextTrack         |  | binary    |  | Scrolls to the next track in the playlist/tracktable                     |  | Playlist/tracktable highlight                             |  |
-|  | Playlist  |  | SelectPrevTrack         |  | binary    |  | Scrolls to the previous track in the playlist/tracktable                 |  | Playlist/tracktable highlight                             |  |
-|  | \----     |  | \----                   |  | \----     |  | \----                                                                    |  | \----                                                     |  |
-|  | ChannelN  |  | back                    |  | binary    |  | Fast rewind (REW)                                                        |  | \< button                                                 |  |
-|  | ChannelN  |  | beatloop                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | beatsync                |  | binary    |  | Syncs the BPM to that of the other track (if BPM is detected on both)    |  | SYNC button & Pitch slider snaps to the appropriate value |  |
-|  | ChannelN  |  | cue\_default            |  | binary    |  | Same behavior as pressing the CUE button on screen                       |  | CUE button                                                |  |
-|  | ChannelN  |  | cue\_point              |  | binary    |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | cue\_preview            |  | binary    |  | Plays from the current cue point                                         |  | CUE button lights & waveform moves                        |  |
-|  | ChannelN  |  | cue\_set                |  | binary    |  | Sets a cue point?                                                        |  | Cue mark appears on the waveform?                         |  |
-|  | ChannelN  |  | cue\_simple             |  | binary    |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | duration                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | file\_bpm               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | filterHigh              |  | default   |  | Adjusts the gain of the high EQ filter                                   |  | HIGH knob                                                 |  |
-|  | ChannelN  |  | filterHighKill          |  | binary    |  | Drops the gain of the high EQ to -inf                                    |  | HIGH knob                                                 |  |
-|  | ChannelN  |  | filterLow               |  | default   |  | Adjusts the gain of the low EQ filter                                    |  | LOW knob                                                  |  |
-|  | ChannelN  |  | filterLowKill           |  | binary    |  | Drops the gain of the low EQ to -inf                                     |  | LOW knob                                                  |  |
-|  | ChannelN  |  | filterMid               |  | default   |  | Adjusts the gain of the mid EQ filter                                    |  | MID knob                                                  |  |
-|  | ChannelN  |  | filterMidKill           |  | binary    |  | Drops the gain of the mid EQ to -inf                                     |  | MID knob                                                  |  |
-|  | ChannelN  |  | flanger                 |  | binary    |  | Enables the flange effect                                                |  | FLANGER button                                            |  |
-|  | ChannelN  |  | fwd                     |  | binary    |  | Fast forward (FF)                                                        |  | \> button                                                 |  |
-|  | ChannelN  |  | HerculesN               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | Hercules2               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | Hercules3               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | Hercules4               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | LoadSelectedTrack       |  | binary    |  | Loads the currently highlighted track into the deck                      |  | Track name & waveform change                              |  |
-|  | ChannelN  |  | loop                    |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | NextTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | NextTrack               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | pfl                     |  | binary    |  | Enables the headphone cue                                                |  | Headphone button                                          |  |
-|  | ChannelN  |  | play                    |  | binary    |  | Plays (\>0) or pauses (=0) the track                                     |  | Play/pause button                                         |  |
-|  | ChannelN  |  | playposition            |  | default   |  | Sets the absolute position in the track (0=beginning, 1=end)             |  | Waveform                                                  |  |
-|  | ChannelN  |  | pregain                 |  | default   |  | Adjusts the pre-fader gain of the track (to avoid clipping)              |  | GAIN knob                                                 |  |
-|  | ChannelN  |  | PrevTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | PrevTrack               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | rate                    |  | default   |  | Pitch control                                                            |  | Pitch slider                                              |  |
-|  | ChannelN  |  | rate\_dir               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | rate\_perm\_down\_small |  | binary    |  | Sets the pitch lower by 1%                                               |  | Perm down button & Pitch slider                           |  |
-|  | ChannelN  |  | rate\_perm\_up\_small   |  | binary    |  | Sets the pitch higher by 1%                                              |  | Perm up button & Pitch slider                             |  |
-|  | ChannelN  |  | rate\_temp\_down        |  | binary    |  | Sets the pitch lower by 4% while non-zero                                |  | Temp down button & Pitch slider                           |  |
-|  | ChannelN  |  | rate\_temp\_up          |  | binary    |  | Sets the pitch higher by 4% while non-zero                               |  | Temp up button & Pitch slider                             |  |
-|  | ChannelN  |  | rateRange               |  | ?         |  | Sets the range of the pitch slider (10% by default)                      |  | none, until you move the pitch slider                     |  |
-|  | ChannelN  |  | rateSearch              |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | reverse                 |  | binary    |  | Plays track backwards                                                    |  | REV button                                                |  |
-|  | ChannelN  |  | scratch                 |  | default   |  | Affects absolute play speed & direction whether currently playing or not |  | Waveform                                                  |  |
-|  | ChannelN  |  | temporalBeatFirst       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | temporalPhaseRate       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | temporalShapeRate       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | TrackEnd                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | TrackEndMode            |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | transform               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | VinylControlInputL      |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | VinylControlInputR      |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | VinylControlQuality     |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | virtualplayposition     |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | VisualResample          |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN  |  | volume                  |  | default   |  | Adjusts the channel volume fader                                         |  | VOL fader                                                 |  |
-|  | ChannelN  |  | VuMeter                 |  | default   |  | Outputs the current instantaneous channel volume                         |  | Channel meter                                             |  |
-|  | ChannelN  |  | wheel                   |  | default   |  | Affects relative play speed & direction                                  |  | Waveform                                                  |  |
+|  |              |  |                         |  |           |  |                                                                          |  |                                                           |  |
+|  | ------------ |  | ----------------------- |  | --------- |  | ------------------------------------------------------------------------ |  | --------------------------------------------------------- |  |
+|  | **Group**    |  | **Key/Control**         |  | **Range** |  | **What it does**                                                         |  | **On-screen feedback**                                    |  |
+|  | **Master**   |  | balance                 |  | default   |  | Adjusts the left/right channel balance on the master output              |  | Center Balance knob                                       |  |
+|  | Master       |  | crossfader              |  | default   |  | Adjusts the crossfader between players/decks                             |  | Crossfader slider                                         |  |
+|  | Master       |  | latency                 |  | ?         |  | ?                                                                        |  | none                                                      |  |
+|  | Master       |  | rate                    |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | Master       |  | Record                  |  | ?         |  | Starts/stops recording your session                                      |  | none                                                      |  |
+|  | Master       |  | samplerate              |  | ?         |  | ?                                                                        |  | none                                                      |  |
+|  | Master       |  | volume                  |  | default   |  | Adjusts the master output volume                                         |  | Center Volume knob                                        |  |
+|  | \----        |  | \----                   |  | \----     |  | \----                                                                    |  | \----                                                     |  |
+|  | **Playlist** |  | SelectNextTrack         |  | binary    |  | Scrolls to the next track in the playlist/tracktable                     |  | Playlist/tracktable highlight                             |  |
+|  | Playlist     |  | SelectPrevTrack         |  | binary    |  | Scrolls to the previous track in the playlist/tracktable                 |  | Playlist/tracktable highlight                             |  |
+|  | \----        |  | \----                   |  | \----     |  | \----                                                                    |  | \----                                                     |  |
+|  | **ChannelN** |  | back                    |  | binary    |  | Fast rewind (REW)                                                        |  | \< button                                                 |  |
+|  | ChannelN     |  | beatloop                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | beatsync                |  | binary    |  | Syncs the BPM to that of the other track (if BPM is detected on both)    |  | SYNC button & Pitch slider snaps to the appropriate value |  |
+|  | ChannelN     |  | cue\_default            |  | binary    |  | Same behavior as pressing the CUE button on screen                       |  | CUE button                                                |  |
+|  | ChannelN     |  | cue\_point              |  | binary    |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | cue\_preview            |  | binary    |  | Plays from the current cue point                                         |  | CUE button lights & waveform moves                        |  |
+|  | ChannelN     |  | cue\_set                |  | binary    |  | Sets a cue point?                                                        |  | Cue mark appears on the waveform?                         |  |
+|  | ChannelN     |  | cue\_simple             |  | binary    |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | duration                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | file\_bpm               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | filterHigh              |  | default   |  | Adjusts the gain of the high EQ filter                                   |  | HIGH knob                                                 |  |
+|  | ChannelN     |  | filterHighKill          |  | binary    |  | Drops the gain of the high EQ to -inf                                    |  | HIGH knob                                                 |  |
+|  | ChannelN     |  | filterLow               |  | default   |  | Adjusts the gain of the low EQ filter                                    |  | LOW knob                                                  |  |
+|  | ChannelN     |  | filterLowKill           |  | binary    |  | Drops the gain of the low EQ to -inf                                     |  | LOW knob                                                  |  |
+|  | ChannelN     |  | filterMid               |  | default   |  | Adjusts the gain of the mid EQ filter                                    |  | MID knob                                                  |  |
+|  | ChannelN     |  | filterMidKill           |  | binary    |  | Drops the gain of the mid EQ to -inf                                     |  | MID knob                                                  |  |
+|  | ChannelN     |  | flanger                 |  | binary    |  | Enables the flange effect                                                |  | FLANGER button                                            |  |
+|  | ChannelN     |  | fwd                     |  | binary    |  | Fast forward (FF)                                                        |  | \> button                                                 |  |
+|  | ChannelN     |  | Hercules1               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | Hercules2               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | Hercules3               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | Hercules4               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | LoadSelectedTrack       |  | binary    |  | Loads the currently highlighted track into the deck                      |  | Track name & waveform change                              |  |
+|  | ChannelN     |  | loop                    |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | NextTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | NextTrack               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | pfl                     |  | binary    |  | Enables the headphone cue                                                |  | Headphone button                                          |  |
+|  | ChannelN     |  | play                    |  | binary    |  | Plays (\>0) or pauses (=0) the track                                     |  | Play/pause button                                         |  |
+|  | ChannelN     |  | playposition            |  | default   |  | Sets the absolute position in the track (0=beginning, 1=end)             |  | Waveform                                                  |  |
+|  | ChannelN     |  | pregain                 |  | default   |  | Adjusts the pre-fader gain of the track (to avoid clipping)              |  | GAIN knob                                                 |  |
+|  | ChannelN     |  | PrevTask                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | PrevTrack               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | rate                    |  | default   |  | Pitch control                                                            |  | Pitch slider                                              |  |
+|  | ChannelN     |  | rate\_dir               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | rate\_perm\_down\_small |  | binary    |  | Sets the pitch lower by 1%                                               |  | Perm down button & Pitch slider                           |  |
+|  | ChannelN     |  | rate\_perm\_up\_small   |  | binary    |  | Sets the pitch higher by 1%                                              |  | Perm up button & Pitch slider                             |  |
+|  | ChannelN     |  | rate\_temp\_down        |  | binary    |  | Sets the pitch lower by 4% while non-zero                                |  | Temp down button & Pitch slider                           |  |
+|  | ChannelN     |  | rate\_temp\_up          |  | binary    |  | Sets the pitch higher by 4% while non-zero                               |  | Temp up button & Pitch slider                             |  |
+|  | ChannelN     |  | rateRange               |  | ?         |  | Sets the range of the pitch slider (10% by default)                      |  | none, until you move the pitch slider                     |  |
+|  | ChannelN     |  | rateSearch              |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | reverse                 |  | binary    |  | Plays track backwards                                                    |  | REV button                                                |  |
+|  | ChannelN     |  | scratch                 |  | default   |  | Affects absolute play speed & direction whether currently playing or not |  | Waveform                                                  |  |
+|  | ChannelN     |  | temporalBeatFirst       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | temporalPhaseRate       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | temporalShapeRate       |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | TrackEnd                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | TrackEndMode            |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | transform               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | VinylControlInputL      |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | VinylControlInputR      |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | VinylControlQuality     |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | virtualplayposition     |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | VisualResample          |  | ?         |  | ?                                                                        |  | ?                                                         |  |
+|  | ChannelN     |  | volume                  |  | default   |  | Adjusts the channel volume fader                                         |  | VOL fader                                                 |  |
+|  | ChannelN     |  | VuMeter                 |  | default   |  | Outputs the current instantaneous channel volume                         |  | Channel meter                                             |  |
+|  | ChannelN     |  | wheel                   |  | default   |  | Affects relative play speed & direction                                  |  | Waveform                                                  |  |
 
 Note: This is an incomplete list, but contains most of the controls that
 are useful to MIDI mapping developers. (There are a ton of these

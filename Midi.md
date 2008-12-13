@@ -205,7 +205,7 @@ Steps to loading:
 2.  parse all lines matching mappable function signatures into a
     QStringList (refered to from here on as *functionsMap*). Pure regex
     equivalent of this: `grep 'function' midi-mappings-scripts.js|grep
-    -i '(msg)'|sed -e 's/function \(.*\)(msg).*/\1/i' -e 's//[= ]//g'`
+    -i '(msg)'|sed -e 's/function \(.*\)(msg).*/\1/i' -e 's/[= ]//g'`
     should just about do it.
 3.  Load mapping file, verify that all *\<script-binding/\>* references
     are present in *functionsMap*, else pop-up an error message

@@ -200,17 +200,18 @@ Library should be called something descriptive like
 
 Steps to loading:
 
-1.  read file 'midi-mappings-scripts.js' into a QString (refered to from
-    here on as *scriptFile*)
-2.  parse all lines matching mappable function signatures into a
-    QStringList (refered to from here on as *functionsMap*). Pure regex
-    equivalent of this: `grep 'function' midi-mappings-scripts.js|grep
-    -i '(msg)'|sed -e 's/function \(.*\)(msg).*/\1/i' -e 's/[= ]//g'`
-    should just about do it.
-3.  Load mapping file, verify that all *\<script-binding/\>* references
-    are present in *functionsMap*, else pop-up an error message
-    indicating unmapped option. (don't assert, otherwise app dies and it
-    will be impossible to correct inside the learning prefs screen).
+1.  ~~read file 'midi-mappings-scripts.js' into a QString (refered to
+    from here on as *scriptFile*)~~
+2.  ~~parse all lines matching mappable function signatures into a
+    QStringList (refered to from here on as *functionsMap*).~~ Pure
+    regex equivalent of this: `grep 'function'
+    midi-mappings-scripts.js|grep -i '(msg)'|sed -e 's/function
+    \(.*\)(msg).*/\1/i' -e 's/[= ]//g'` should just about do it.
+3.  ~~Load mapping file, verify that all *\<script-binding/\>*
+    references are present in *functionsMap*, else pop-up an error
+    message indicating unmapped option.~~ (don't assert, otherwise app
+    dies and it will be impossible to correct inside the learning prefs
+    screen).
 4.  QtScriptEngine works by accepting a string argument. Pass
     *scriptFile*, check *canEvaluate* -\> false throw a pop-up
     indicating a scripting error... 

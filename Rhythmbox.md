@@ -1,11 +1,10 @@
 # rhythmbox
 
-One caveat:
-[rhythmbox](http://whttp://www.gnome.org/projects/rhythmbox/ww.gnome.org/projects/rhythmbox)
-is hobbled by the legal restrictions imposed upon the MP3 format and
-decoder software; it won't play mp3's as installed. It's easy enough to
-fix however, gstreamer plugins from the "ugly" repositories add mp3
-support to rhythmbox:
+One caveat: [rhythmbox](http://projects.gnome.org/rhythmbox/) is hobbled
+by the legal restrictions imposed upon the MP3 format and decoder
+software; it won't play mp3's as installed. It's easy enough to fix
+however, gstreamer plugins from the "ugly" repositories add mp3 support
+to rhythmbox:
 
 \<code\> $ sudo apt-get install gstreamer0.10-plugins-ugly\</code\>
 

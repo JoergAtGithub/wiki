@@ -9,15 +9,18 @@ Javascript/EMCAScript) functions stored in a functions library file.
 
 Scope of required changes:
 
-1.  Changes to the current and new MIDI mapping file formats
-2.  Additional script option MIDI event type handlers (configobject.cpp
-    midiobject.cpp)
-3.  A script file loaded at start-up that contains a library of
+1.  ~~Changes to the current and new MIDI mapping file formats~~
+2.  ~~Additional script option MIDI event type handlers
+    (configobject.cpp midiobject.cpp)~~
+3.  ~~A script file loaded at start-up that contains a library of
     functions, add all those functions will need to be parsed and made
-    available to midi learning.
+    available to midi learning.~~
 4.  Interface definition for arguments passed to mapped script methods
     (to include the raw MIDI event details, which channel, and any
-    options associated with the mapping)
+    options associated with the mapping.) **Partially complete**.
+    Currently passing channel, control/note, value, and device as
+    parameters. The channel \# and device name belong in MidiObject
+    (instead of dlgprefmidibindings.)
 
 ## Example of Hercules Mk2 FX/Cue/Loop mode switch button
 

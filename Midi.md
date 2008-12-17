@@ -212,12 +212,15 @@ Steps to loading:
     message indicating unmapped option.~~ (don't assert, otherwise app
     dies and it will be impossible to correct inside the learning prefs
     screen).
-4.  QtScriptEngine works by accepting a string argument. Pass
+4.  QtScriptEngine works by accepting a string argument. ~~Pass
     *scriptFile*, check *canEvaluate* -\> false throw a pop-up
-    indicating a scripting error... 
-5.  Whenever a mapping with a *\<script-binding/\>* option is triggered,
-    evaluate that method in the QtScript, passing in the msg (w/ with
-    channel data and data from raw midi event that triggered it).
+    indicating a scripting error...~~ Using a qDebug() for now.
+5.  ~~Whenever a mapping with a *\<script-binding/\>* option is
+    triggered, evaluate that method in the QtScript, passing in the msg
+    (w/ with channel data and data from raw midi event that triggered
+    it).~~ Channel \# and MIDI device name need to be in the MidiObject
+    for script access in the future. (The init() and shutdown()
+    functions depend on it.)
 
 Phase 2: a *\<script\>* block will be added to the XML to hold
 controller specific QtScript functions. There are considerations such as

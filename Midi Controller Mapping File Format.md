@@ -238,11 +238,11 @@ it's either on (non-zero) or off (zero.)
 |  | ChannelN     |  | cue\_simple             |  | binary    |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | duration                |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | file\_bpm               |  | ?         |  | ?                                                                        |  | ?                                                         |  |
-|  | ChannelN     |  | filterHigh              |  | default   |  | Adjusts the gain of the high EQ filter                                   |  | HIGH knob                                                 |  |
+|  | ChannelN     |  | filterHigh              |  | 0.0-4.0   |  | Adjusts the gain of the high EQ filter                                   |  | HIGH knob                                                 |  |
 |  | ChannelN     |  | filterHighKill          |  | binary    |  | Holds the gain of the high EQ to -inf while active                       |  | HIGH knob                                                 |  |
-|  | ChannelN     |  | filterLow               |  | default   |  | Adjusts the gain of the low EQ filter                                    |  | LOW knob                                                  |  |
+|  | ChannelN     |  | filterLow               |  | 0.0-4.0   |  | Adjusts the gain of the low EQ filter                                    |  | LOW knob                                                  |  |
 |  | ChannelN     |  | filterLowKill           |  | binary    |  | Holds the gain of the low EQ to -inf while active                        |  | LOW knob                                                  |  |
-|  | ChannelN     |  | filterMid               |  | default   |  | Adjusts the gain of the mid EQ filter                                    |  | MID knob                                                  |  |
+|  | ChannelN     |  | filterMid               |  | 0.0-4.0   |  | Adjusts the gain of the mid EQ filter                                    |  | MID knob                                                  |  |
 |  | ChannelN     |  | filterMidKill           |  | binary    |  | Holds the gain of the mid EQ to -inf while active                        |  | MID knob                                                  |  |
 |  | ChannelN     |  | flanger                 |  | binary    |  | Enables the flange effect                                                |  | FLANGER button                                            |  |
 |  | ChannelN     |  | fwd                     |  | binary    |  | Fast forward (FF)                                                        |  | \> button                                                 |  |

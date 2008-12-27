@@ -39,6 +39,7 @@ developers, and artists, and is summarized in the categories below.
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format)
+  - [MIDI Scripting](MIDI%20Scripting)
   - [Creating backtraces](Creating%20backtraces)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)

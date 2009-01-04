@@ -137,7 +137,7 @@ called volumeLEDs, assuming you've already defined currentDeck, do:
 engine.connectControl("[Channel"+currentDeck+"]","volume","volumeLEDs");
 ```
 
-**Note:** With the flaws in the current MIDI subsystem code,
+**Note:** Due to flaws in the current MIDI subsystem code,
 <span class="underline">all signals you plan to use must be connected at
 least once before the MIDI device is opened</span> or they will have no
 effect when connected later. (They can be connected to the "nop"

@@ -117,18 +117,33 @@ StantonSCS3d.pitchSlider = function (channel, device, control, value, category) 
 
 ### Automatic reactions
 
-***This feature is not yet working***
-
 Up to this point, script functions are only called in response to the
 controller being manipulated. They can also be called automatically in
 response to some value changing within Mixxx, such as when you use the
 mouse to move the channel volume slider, you want the LEDs on the
 controller to react.
 
-Mixxx control signals are connected to script functions with \<defined
-name\>.valueChanged.connect(\<script function\>)
+Mixxx control signals are connected to script functions with
+`engine.connectControl(<control group>,<control name>,<script function
+name>)`. They are disconnected with `engine.connectControl(<control
+group>,<control name>,<script function name>,true)`. (Just tack a
+`,true` on to the list of parameters.) connectControl() returns true if
+the (dis)connection was successful.
 
-*(We're still working out what \<defined name\> will be.)*
+So to connect the volume of the current virtual deck to a function
+called volumeLEDs, assuming you've already defined currentDeck, do:
+
+``` javascript
+engine.connectControl("[Channel"+currentDeck+"]","volume","volumeLEDs");
+```
+
+**Note:** With the flaws in the current MIDI subsystem code,
+<span class="underline">all signals you plan to use must be connected at
+least once before the MIDI device is opened</span> or they will have no
+effect when connected later. (They can be connected to the "nop"
+function and disconnected immediately if you wish.) A good place to do
+this is in the init() function in your script file (since it currently
+gets called before the device is opened.)
 
 ### Init and Shutdown functions
 

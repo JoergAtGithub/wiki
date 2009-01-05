@@ -266,7 +266,7 @@ it's either on (non-zero) or off (zero.)
 |  | ChannelN     |  | rate\_perm\_up\_small   |  | binary    |  | Sets the pitch 1% higher                                                 |  | Perm up button & Pitch slider                             |  |
 |  | ChannelN     |  | rate\_temp\_down        |  | binary    |  | Holds the pitch 4% lower while active                                    |  | Temp down button & Pitch slider                           |  |
 |  | ChannelN     |  | rate\_temp\_up          |  | binary    |  | Holds the pitch 4% higher while active                                   |  | Temp up button & Pitch slider                             |  |
-|  | ChannelN     |  | rateRange               |  | ?         |  | Sets the range of the pitch slider (10% by default)                      |  | none, until you move the pitch slider                     |  |
+|  | ChannelN     |  | rateRange               |  | 0.0-3.0   |  | Sets the range of the pitch slider (0.08 = 8%)                           |  | none, until you move the pitch slider                     |  |
 |  | ChannelN     |  | rateSearch              |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | reverse                 |  | binary    |  | Toggles playing the track backwards                                      |  | REV button                                                |  |
 |  | ChannelN     |  | scratch                 |  | default   |  | Affects absolute play speed & direction whether currently playing or not |  | Waveform                                                  |  |

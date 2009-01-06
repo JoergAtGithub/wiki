@@ -1,6 +1,6 @@
 # MIDI Scripting
 
-***MIDI Scripting is currently a work in progress. This information will
+***MIDI Scripting is currently a work in progress. This information may
 change prior to release.***
 
 In order to support the advanced features of many MIDI controllers,

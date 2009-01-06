@@ -23,7 +23,10 @@ and are found in the midi/ subdirectory wherever your Mixxx shared data
 is stored. (Usually /usr/share/mixxx on Linux/Mac, and C:\\Program
 Files\\Mixxx on Windows.) Functions use the naming convention
 \<manufacturer\>\<device\>.\<function name\> (e.g.
-StantonSCS3d.pitchSlider)
+StantonSCS3d.pitchSlider). Global variables use
+\<manufacturer\>\<device\>.\<variable name\> (e.g. StantonSCS3d.deck).
+These are very important to avoid name collisions with other scripts
+that may be loaded.
 
 ## Linking scripts to device controls
 

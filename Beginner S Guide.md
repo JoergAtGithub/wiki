@@ -1,11 +1,11 @@
 # Introduction
 
 Mixxx is a DJ tool that allows for the playback and mixing of digital
-music (MP3, Ogg Vorbis, and Wave).
+music (MP3, Ogg Vorbis, FLAC and Wave).
 
-The basic requirements for Mixxx are a pc or laptop with a reasonable
-amount of storage space on the hard drive for your music, at least 1
-audio card for outputting the sound and a way of controlling the
+The basic requirements for Mixxx are a desktop computer or laptop with a
+reasonable amount of storage space on the hard drive for your music, at
+least 1 audio card for outputting the sound and a way of controlling the
 software either by mouse, keyboard or hardware DJ Controller.
 
 Mixxx will run on the Linux, Mac OS X and Windows operating systems

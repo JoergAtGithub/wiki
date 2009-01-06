@@ -145,8 +145,9 @@ engine.connectControl("[Channel"+currentDeck+"]","volume","volumeLEDs");
 least once before the MIDI device is opened</span> or they will have no
 effect when connected later. (They can be connected to the "nop"
 function and disconnected immediately if you wish.) A good place to do
-this is in the init() function in your script file (since it currently
-gets called before the device is opened.)
+this for now is in the init() function in your script file (since it
+currently erroneously gets called before the device is opened...don't
+ask. :) )
 
 ### Init and Shutdown functions
 

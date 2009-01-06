@@ -55,18 +55,6 @@ use the headphone cue on the mixer as well as it's crossfader.) Using an
 external mixer is also described briefly in the [Threadbox
 tutorial](http://mixxx.sourceforge.net/wiki/index.php/Threadbox_Tutorial#Using_an_External_Mixer_or_MIDI_Device).
 
-## No soundcards appear in the preferences dialog - How can I fix this?
-
-When no soundcards/devices appear in the sound preferences dialog, it
-usually means that another application is using your soundcard(s). This
-problem only appears on Linux. To fix it, make sure no other
-applications are using your soundcard. The usual culprits are Firefox
-and the esound daemon. Closing Firefox normally will take care of the
-former, and running "killall esd" in a terminal will take care of the
-latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
-and "sudo fuser -v /dev/snd/\*" will show you the list of applications
-currently using your soundcards.
-
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several

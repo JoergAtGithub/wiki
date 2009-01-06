@@ -17,3 +17,17 @@ the system board or computer manufacturer, since the manufacturer
 drivers aren't always the latest.) Also, if you're on Windows, make sure
 you have the latest [DirectX](http://www.microsoft.com/directx)
 installed.
+
+## No sound cards appear in the preferences dialog - How can I fix this?
+
+When no sound cards/devices appear in the sound preferences dialog, it
+usually means that another application is using your sound card(s). This
+problem only appears on Linux. To fix it, make sure no other
+applications are using your sound card. The usual culprits are Firefox
+and the esound daemon. Closing Firefox normally will take care of the
+former, and running "killall esd" in a terminal will take care of the
+latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
+and "sudo fuser -v /dev/snd/\*" will show you the list of applications
+currently using your soundcards. If you're using ALSA, you can also
+choose the "default" sound card option which will mix Mixxx's output
+with everything else.

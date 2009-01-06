@@ -11,6 +11,7 @@ developers, and artists, and is summarized in the categories below.
   - [Manual](Manual)
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
+  - [Troubleshooting](Troubleshooting)
   - [Tutorials](Tutorials)
   - [Vinyl Control](Vinyl%20Control)
   - [System Requirements](System%20Requirements)

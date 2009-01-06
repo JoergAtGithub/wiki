@@ -1,9 +1,9 @@
 # Reporting Bugs
 
-If you think you've found a bug in the software, please first check the
-[FAQ](FAQ) and the [forums](http://mixxx.org/forums) to see if there is
-a known solution or workaround or if other people are having the same
-problem.
+If you think you've found a bug in the software, **please first check
+the [FAQ](FAQ), the [Troubleshooting](Troubleshooting) page and the
+[forums](http://mixxx.org/forums)** to see if there is a known solution
+or workaround or if other people are having the same problem.
 
 If you don't find anything there, our bug tracking system is located at
 <https://bugs.launchpad.net/mixxx>. First try a few searches on various

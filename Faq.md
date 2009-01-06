@@ -11,6 +11,16 @@ a test system with integrated Intel soundcard.) The drawback to this is
 that system sounds (KDE beeps and such) will now be mixed in and will
 come out the main output.
 
+## I have a decently fast system & video card. Why does Mixxx seem to crawl or pin the CPU?
+
+We've seen this a few times and it has always been a video driver
+problem. Make sure you have the latest drivers for your card. (You may
+need to get them from the chipset maker (nVidia, AMD/ATI) rather than
+the system board or computer manufacturer, since the manufacturer
+drivers aren't always the latest.) Also, if you're on Windows, make sure
+you have the latest [DirectX](http://www.microsoft.com/directx)
+installed.
+
 ## How do I record my Mixxx session?
 
 Mixxx 1.6.0 and newer versions support recording mixes to .wav files. To

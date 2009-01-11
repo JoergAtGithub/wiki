@@ -2,8 +2,8 @@
 
 ## Main Design Principles
 
-These are some core goals which would seem to be critical for Mixxx,
-somewhat in order of importance:
+These are some core goals which are critical for Mixxx to become a
+world-class application, somewhat in order of importance:
 
   - Stability - Having a stable platform for DJs to work from is key
   - Treat every compiler warning as an error and fix it
@@ -12,6 +12,8 @@ somewhat in order of importance:
     configurations as possible
   - No lazy code\! Pretend you're coding for an embedded system or a
     Commodore 64, so it'll run well on lesser hardware
+  - Usability - Basic functions must be bonehead-easy to use. The manual
+    must not be required reading\!
 
 <!-- end list -->
 

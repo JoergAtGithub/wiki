@@ -5,13 +5,19 @@
 These are some core goals which would seem to be critical for Mixxx,
 somewhat in order of importance:
 
-  - Stability
-  - Having a stable platform for DJs to work from is key
+  - Stability - Having a stable platform for DJs to work from is key
+  - Treat every compiler warning as an error and fix it
+  - Automatic crash recovery (like Firefox's)
+  - Performance - Support a good level of latency for as many
+    configurations as possible
+  - No lazy code\! Pretend you're coding for an embedded system or a
+    Commodore 64, so it'll run well on lesser hardware
+
+<!-- end list -->
+
   - Good hardware support
   - For as many devices as possible
   - With easiest possible setup
-  - Support a good level of latency for as many configurations as
-    possible
   - Support all likely input formats
   - Features
   - Should be guided by feedback from DJs

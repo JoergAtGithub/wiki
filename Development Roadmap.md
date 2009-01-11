@@ -11,7 +11,8 @@ world-class application, somewhat in order of importance:
   - Performance - Support a good level of latency for as many
     configurations as possible
   - No lazy code\! Pretend you're coding for an embedded system or a
-    Commodore 64, so it'll run well on lesser hardware
+    Commodore 64, so it'll run well on lesser hardware (read: larger
+    user base.)
   - Usability - Basic functions must be bonehead-easy to use. The manual
     must not be required reading\!
   - Vector-based display for automatic scaling to users' screens

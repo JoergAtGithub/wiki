@@ -14,6 +14,7 @@ world-class application, somewhat in order of importance:
     Commodore 64, so it'll run well on lesser hardware
   - Usability - Basic functions must be bonehead-easy to use. The manual
     must not be required reading\!
+  - Vector-based display for automatic scaling to users' screens
 
 <!-- end list -->
 
@@ -30,40 +31,34 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.5.2
+### 2.0 (tentative numbering)
 
-Depending on developer time, we may backport some bugfixes to 1.5.0 and
-do a maintenance release of the 1.5 series while 1.6.0 is becoming
-stable.
+***"Mixxx 2.0 - Leaner, Meaner & Cleaner"***
 
-### 1.6.0
+This will be a complete, ground-up redesign and rewrite. (This is
+required because we have pushed the old codebase as far as we can
+without everything needing to be redone anyway. This will also make for
+MUCH easier future extensibility.)
 
-This will be the next feature release and will include (hopefully) all
-the stuff in the changelog below. Fast pace of development has meant
-lots of work originally slated for 1.7 will make it into this release.
-The huge number of new features mean it will probably stay in beta for
-several months. In addition to the features in the changelog, it will
-hopefully also have:
+For this release, we simply offer everything Mixxx 1.6.x does but with
+greater stability and performance, with a few new features that can be
+added as part of the reimplementation.
 
-  - More hardware controller support
-  - Build system moved to scons
-  - Vinyl control
-  - Anything else exciting we have time for...
+New features:
 
-Update: 1.6.0 has been released. It features all of the above, plus
-about a million other things.
+  - Vector-based display
+  - SQLite-based library
+  - [Internationalization](http://doc.trolltech.com/4.3/i18n.html)
 
-### 1.7.0
+### 2.1
 
-No fixed plans yet, rough targets are:
+No plans yet, rough targets are:
 
   - Macro/script playback
-  - Effects (definitely)
-  - SQLite-based library
+  - LADSPA Effects
   - Looping
   - Sampler
   - Inline track previews
-  - [Internationalization?](http://doc.trolltech.com/4.3/i18n.html)
 
 ## Changelog
 

@@ -32,26 +32,22 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 2.0 (tentative numbering)
+### 2.0 (tentative numbering, super hypothetical)
 
 ***"Mixxx 2.0 - Leaner, Meaner & Cleaner"***
 
-This will be a complete, ground-up redesign and rewrite. (This is
-required because we have pushed the old codebase as far as we can
-without everything needing to be redone anyway. This will also make for
-MUCH easier future extensibility.)
+This *might* be a ground-up redesign and rewrite of major parts of
+Mixxx's internals. (This is worthwhile because we have pushed the old
+codebase as far as we can without everything needing to be redone
+anyway. This will also make for MUCH easier future extensibility.)
 
-For this release, we simply offer everything Mixxx 1.6.x does but with
-greater stability and performance, with a few new features that can be
-added as part of the reimplementation.
-
-New features:
+Ideas for new features:
 
   - Vector-based display
   - SQLite-based library
   - [Internationalization](http://doc.trolltech.com/4.3/i18n.html)
 
-### 2.1
+### ???.???
 
 No plans yet, rough targets are:
 

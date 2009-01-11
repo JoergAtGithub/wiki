@@ -5,16 +5,16 @@
 These are some core goals which are critical for Mixxx to become a
 world-class application, somewhat in order of importance:
 
-  - Stability - Having a stable platform for DJs to work from is key
+  - **Stability** - Having a stable platform for DJs to work from is key
   - Treat every compiler warning as an error and fix it
   - Automatic crash recovery (like Firefox's)
-  - Performance - Support a good level of latency for as many
+  - **Performance** - Support a good level of latency for as many
     configurations as possible
   - No lazy code\! Pretend you're coding for an embedded system or a
     Commodore 64, so it'll run well on lesser hardware (read: larger
     user base.)
-  - Usability - Basic functions must be bonehead-easy to use. The manual
-    must not be required reading\!
+  - **Usability** - Basic functions must be bonehead-easy to use. The
+    manual must not be required reading\!
   - Vector-based display for automatic scaling to users' screens
 
 <!-- end list -->

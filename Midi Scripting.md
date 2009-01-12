@@ -58,16 +58,24 @@ called. It is then up to the function to effect all desired changes
 
 ## Script functions
 
-There is a default script function file called midi-mappings-scripts.js
-which contains functions common to all controllers and is always loaded.
+There is a default script function file called
+`midi-mappings-scripts.js` which contains functions common to all
+controllers and is always loaded.
 
-To specify additional script files to load, copy the line in
-midiobject.cpp containing the loadScript() call (around line 48,) paste
-it below, and change the file name to that you want to load. Then
-recompile Mixxx. These files will be loaded when Mixxx is started.
+To specify additional script files to load, add the following section to
+your XML file right underneath the \<controller\> tag:
 
-*(We are working out a way to specify script files to load via the
-XML.)*
+``` XML
+        <scriptfiles>
+            <file functionprefix="StantonSCS3d">
+                <filename>Stanton-SCS3d-scripts.js</filename>
+            </file>
+        </scriptfiles>
+```
+
+You can add as many \<file\> blocks as you like, but be sure to specify
+the function prefix in every one. These will all be loaded when the XML
+file is.
 
 ### Function definitions
 

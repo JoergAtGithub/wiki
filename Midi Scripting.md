@@ -151,12 +151,15 @@ engine.connectControl("[Channel"+currentDeck+"]","volume","volumeLEDs");
 
 **Note:** Due to flaws in the current MIDI subsystem code,
 <span class="underline">all signals you plan to use must be connected at
-least once before the MIDI device is opened</span> or they will have no
-effect when connected later. (They can be connected to the "nop"
+least once before any data is sent to the device</span> or they will
+have no effect when connected later. (They can be connected to the "nop"
 function and disconnected immediately if you wish.) A good place to do
-this for now is in the init() function in your script file (since it
-currently erroneously gets called before the device is opened...don't
-ask. :) )
+this is in the init() function in your script file.
+
+**Warning:** This functionality is currently unstable and will
+eventually crash when controls are manipulated, especially on faster
+systems. We are trying to figure out the problem. (We think it's either
+a buffer overflow or a bug in QtScript.)
 
 ### Init and Shutdown functions
 

@@ -74,8 +74,8 @@ your XML file right underneath the \<controller\> tag:
 ```
 
 You can add as many \<file\> blocks as you like, but be sure to specify
-the function prefix in every one. These will all be loaded when the XML
-file is.
+the appropriate function prefix in every one. These will all be loaded
+when the XML file is.
 
 ### Function definitions
 

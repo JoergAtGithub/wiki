@@ -63,7 +63,8 @@ There is a default script function file called
 controllers and is always loaded.
 
 To specify additional script files to load, add the following section to
-your XML file right underneath the \<controller\> tag:
+the device's XML MIDI mapping file right underneath the \<controller\>
+tag:
 
 ``` XML
         <scriptfiles>

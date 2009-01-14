@@ -260,7 +260,7 @@ it's either on (non-zero) or off (zero.)
 |  | ChannelN     |  | pfl                          |  | binary    |  | Enables the headphone cue                                                |  | Headphone button                                          |  |
 |  | ChannelN     |  | play                         |  | binary    |  | Toggles playing or pausing the track                                     |  | Play/pause button                                         |  |
 |  | ChannelN     |  | playposition                 |  | default   |  | Sets the absolute position in the track (0=beginning, 1=end)             |  | Waveform                                                  |  |
-|  | ChannelN     |  | pregain                      |  | default   |  | Adjusts the pre-fader gain of the track (to avoid clipping)              |  | GAIN knob                                                 |  |
+|  | ChannelN     |  | pregain                      |  | 0.0-4.0   |  | Adjusts the pre-fader gain of the track (to avoid clipping)              |  | GAIN knob                                                 |  |
 |  | ChannelN     |  | PrevTask                     |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | PrevTrack                    |  | ?         |  | ?                                                                        |  | ?                                                         |  |
 |  | ChannelN     |  | rate                         |  | default   |  | Pitch control                                                            |  | Pitch slider                                              |  |

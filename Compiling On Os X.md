@@ -31,8 +31,7 @@ compile process:
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download))
   - libogg, libvorbis ([Download page](http://xiph.org/downloads/))
-  - libFLAC ([Download
-    page](http://www.mega-nerd.com/libsndfile/#Download))
+  - libFLAC ([Download page](http://flac.sourceforge.net/download.html))
   - QT 4.3.0+ ([Download
     page](http://trolltech.com/developer/downloads/qt/mac)) -- get the
     binaries and install to the default location
@@ -66,6 +65,8 @@ to the mixxx directory and run:
     svn update
 
 ### 4\. Create an XCode project
+
+If you want to work on Mixxx with XCode for an IDE:
 
 This is taken from the Scons site, who have a pretty good description of
 how to get a scons project up and running in XCode:

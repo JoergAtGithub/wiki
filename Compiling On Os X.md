@@ -22,20 +22,24 @@ You will need to install the following before continuing with the
 compile process:
 
   - scons ([Download page](http://www.scons.org/download.php), [Install
-    guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html))
+    guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --
+    \`sudo port install scons\`
   - libid3tag, libmad ([Download
     page](http://sourceforge.net/project/showfiles.php?group_id=12349))
   - [PortAudio-v19](http://www.portaudio.com)
-  - QT 4.3.0+ ([Download
-    page](http://trolltech.com/developer/downloads/qt/mac))
   - fftw3 ([Download page](http://www.fftw.org/download.html))
-  - libogg, libvorbis ([Download page](http://xiph.org/downloads/))
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download))
+  - libogg, libvorbis ([Download page](http://xiph.org/downloads/))
+  - libFLAC ([Download
+    page](http://www.mega-nerd.com/libsndfile/#Download))
+  - QT 4.3.0+ ([Download
+    page](http://trolltech.com/developer/downloads/qt/mac)) -- get the
+    binaries and install to the default location
 
-**Important note for Qt:** In order for Mixxx to compile, you have to
-./configure Qt with the *-no-framework* option. Don't forget, Qt takes a
-long time to reconfigure and compile\!
+\<\!-- **Important note for Qt:** In order for Mixxx to compile, you
+have to ./configure Qt with the *-no-framework* option. Don't forget, Qt
+takes a long time to reconfigure and compile\! --\>
 
 ### 2\. Get Mixxx
 

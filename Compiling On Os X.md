@@ -33,10 +33,12 @@ compile process:
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download))
   - libogg, libvorbis ([Download page](http://xiph.org/downloads/))
-  - libFLAC ([Download page](http://flac.sourceforge.net/download.html),
-    [Source
-    Code](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=12677)
-    (\*XXX\* which is better??))
+  - libFLAC ([Overchan Download
+    page](http://flac.sourceforge.net/download.html), [Download
+    Page](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)
+    (don't try to compile the source directly, you'll need to mess with
+    the ld(1) options and just don't, there's enough nuisances in this
+    process))
   - QT 4.3.0+ ([Download
     page](http://trolltech.com/developer/downloads/qt/mac)) -- get the
     binaries and install to the default location

@@ -61,6 +61,7 @@ The following are overall groups that the code can be grouped into:
   - Skin
   - Dialog
   - Config
+  - MIDI
 
 ## Deprecated Classes
 
@@ -81,3 +82,12 @@ The following are overall groups that the code can be grouped into:
 
   - All files will be moved with the 'svn move' command so that their
     histories will be preserved within the SCM.
+
+## Progress
+
+  - All waveform code was put into waveform/
+  - All MixxxScript/QtScript code is currently being developed in
+    script/
+  - All BPM code was moved into bpm/
+  - All LADSPA code (except engineladspa and ladspaview) was moved into
+    ladspa/

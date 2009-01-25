@@ -173,7 +173,8 @@ or the program exits.
 # MIDI Mapping Object Design Spec
 
 *\*\*Note this block is dedicated to the internal workings of MIDI
-Mapping object and dlgprefsmidibindings \*\**
+Mapping object and dlgprefsmidibindings -- it will not be of interest to
+end users \*\**
 
 ### Use Cases
 

@@ -158,8 +158,8 @@ this is in the init() function in your script file.
 
 **Warning:** This functionality is currently unstable and will
 eventually crash when controls are manipulated, especially on faster
-systems. We are trying to figure out the problem. (We think it's either
-a buffer overflow or a bug in QtScript.)
+systems. We are trying to solve the problem. (It's related to thread
+collisions.)
 
 ### Init and Shutdown functions
 

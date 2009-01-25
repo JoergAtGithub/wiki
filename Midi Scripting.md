@@ -176,11 +176,63 @@ or the program exits.
 Mapping object and dlgprefsmidibindings -- it will not be of interest to
 end users \*\**
 
+**NOTE:** It is probably a good idea to do [deep
+copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
+passing TBAMidiControlObjectType objects between MIDI Mapping and
+dlgpref\*, it will be MIDI Mapping's responsibility to create these
+copies (since they are for its own protection).
+
 ### Use Cases
 
-1.  Load Mapping from XML file
-2.  User Edit Mapping
-3.  Save Mapping to file
+  - Auto load Mapping from XML file on start-up
+
+Mixxx Constructor: configkey with mapping name will be read on start,
+loadMapFile(configkey) will be called if the configkey is
+non-null/non-empty. Apply Mapping will be called if loadMapFile
+succeeded.
+
+  - Load Mapping from XML file
+
+dlgprefs will call loadMapFile with the file name obtained from the load
+QDialog. MIDI Mapping will open that file and return true on
+successfully loading that into a model. (Do we need to create a new MIDI
+Mapping object each load or get it from Mixxx object?)
+
+  - User Edit Mapping
+
+dlgprefs will call MIDI Mapping, obtain a copy of the model (MIDI
+Mapping - lock/copy/unlock), render the copied model as a table (using
+key as a hidden field) -\> done on open of dlg call validateBinding each
+time user edits.
+
+  - User Clear Mappings
+
+a copied model will exist in dlg from open dlgprefs will clear it's
+copied model's contents -\> then this becomes the same as editing,
+calling edit with each new addition
+
+  - Apply Mapping
+
+dlgprefs sends the replacement copied model back to MIDI Mapping, which
+must clear all old TBAMidiControlObjectType objects and create all new
+TBAMidiControlObjectType from the new returned copied model (MIDI
+Mapping - lock/delete/create/unlock).
+
+  - Save Mapping to file
+
+dlgprefs will call saveMapFile with the file name obtained from the save
+QDialog, MIDI Mapping will save to that file and return true on
+successfully save.
+
+  - Auto save mapping to file on shutdown
+
+dlgprefs will have to be destroyed ahead of MIDI Mapping Object.
+dlgprefs destructor will call saveMappingFile("\~/.MixxxMIDIBindings");
+if dlgprefs is dirty -\> dlgprefs destructor set the config to load on
+next start as "\~/.MixxxMIDIBindings". If dlgprefs is never created,
+then user never edited anything so we don't care.
+
+TODO: handle LED output mappings.
 
 ### MIDI Mapping API
 
@@ -192,32 +244,36 @@ true succeeded
 
 true succeeded
 
-It is probably a good idea to do [deep
-copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
-passing TBAMidiControlObjectType objects between MIDI Mapping and
-dlgpref\*, it will be MIDI Mapping's responsibility to create these
-copies (since they are for its own protection).
+  - `bool ApplyMapping()`
 
-#### Possible ways to access MIDI Mapping Data
+true succeeded, false Mapping has errors -\> dlgpref should iterate
+through model validating each binding and report if one has an error.
 
 ##### Model-based access
 
-  - `QHash<QString/key, TBAMidiControlObjectType> getMappingModel()`
-  - `void setMappingModel(QHash<QString/key, TBAMidiControlObjectType>
+  - `QList<TBAMidiControlObjectType> getMappingModel()`
+  - `void setMappingModel(QList<TBAMidiControlObjectType>
     newMappingModel)`
 
 ##### Binding-based access
 
-  - `QString/key createbinding(TBAMidiControlObjectType
+  - `bool validateBinding(TBAMidiControlObjectType
+    objectToBeCopiedandBound)`
+
+true mapping is valid by Midi Mapping
+
+##### Binding-based access --- thought about, but not useful
+
+  - `// QString/key createbinding(TBAMidiControlObjectType
     objectToBeCopiedandBound)`
 
 returns null if failed, else returns key string
 
-  - `bool updateBinding(QString key, TBAMidiControlObjectType
+  - `// bool updateBinding(QString key, TBAMidiControlObjectType
     objectToBeCopiedandBound)`
 
 true mapping was valid + successfully mapped
 
-  - `void deleteBinding(QString key)`
+  - `// void deleteBinding(QString key)`
 
 caller doesn't care about result

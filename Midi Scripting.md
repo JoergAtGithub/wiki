@@ -169,3 +169,14 @@ functions (called \<manufacturer\>\<device\>.init() and
 opens and closes the device, respectively. They can be empty, but are
 useful for putting controllers into known states before operation begins
 or the program exits.
+
+# MIDI Mapping Object Design Spec
+
+*\*\*Note this block is dedicated to the internal workings of MIDI
+Mapping object and dlgprefsmidibindings \*\**
+
+### Use Cases
+
+1.  Load Mapping from XML file
+2.  User Edit Mapping
+3.  Save Mapping to file

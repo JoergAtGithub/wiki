@@ -180,8 +180,9 @@ end users \*\**
 copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
 passing TBAMidiControlObjectType objects between MIDI Mapping and
 dlgpref\*, it will be MIDI Mapping's responsibility to create these
-copies (since they are for its own protection). **TODO:** handle LED
-output mappings.
+copies (since they are for its own protection).
+
+**TODO:** handle LED output mappings.
 
 ### Use Cases
 

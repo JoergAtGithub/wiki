@@ -239,6 +239,8 @@ then user never edited anything so we don't care.
 
 ### MIDI Mapping API
 
+##### File Ops access
+
   - `bool loadMapFile(QString fromFileName)`
 
 true succeeded
@@ -247,16 +249,16 @@ true succeeded
 
 true succeeded
 
-  - `bool ApplyMapping()`
-
-true succeeded, false Mapping has errors -\> dlgpref should iterate
-through model validating each binding and report if one has an error.
-
 ##### Model-based access
 
   - `QList<TBAMidiControlObjectType> getMappingModel()`
   - `void setMappingModel(QList<TBAMidiControlObjectType>
     newMappingModel)`
+  - `bool ApplyMapping()`
+
+true if MIDI Mapping object succeeded in applying the loaded or set
+model, false Mapping has errors -\> dlgpref should iterate through model
+validating each binding and report if one has an error.
 
 ##### Binding-based access
 

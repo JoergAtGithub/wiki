@@ -180,7 +180,8 @@ end users \*\**
 copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
 passing TBAMidiControlObjectType objects between MIDI Mapping and
 dlgpref\*, it will be MIDI Mapping's responsibility to create these
-copies (since they are for its own protection).
+copies (since they are for its own protection). **TODO:** handle LED
+output mappings.
 
 ### Use Cases
 
@@ -231,8 +232,6 @@ dlgprefs destructor will call saveMappingFile("\~/.MixxxMIDIBindings");
 if dlgprefs is dirty -\> dlgprefs destructor set the config to load on
 next start as "\~/.MixxxMIDIBindings". If dlgprefs is never created,
 then user never edited anything so we don't care.
-
-**TODO:** handle LED output mappings.
 
 ### MIDI Mapping API
 

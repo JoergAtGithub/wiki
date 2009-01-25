@@ -232,7 +232,7 @@ if dlgprefs is dirty -\> dlgprefs destructor set the config to load on
 next start as "\~/.MixxxMIDIBindings". If dlgprefs is never created,
 then user never edited anything so we don't care.
 
-TODO: handle LED output mappings.
+**TODO:** handle LED output mappings.
 
 ### MIDI Mapping API
 

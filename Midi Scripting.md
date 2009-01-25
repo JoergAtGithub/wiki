@@ -207,9 +207,9 @@ dlgpref\*
 
 true mapping was valid + successfully mapped
 
-  - `bool deleteBinding(QString key)`
+  - `void deleteBinding(QString key)`
 
-true mapping was valid + successfully mapped
+caller doesn't care about result
 
   - `QString/key createbinding(TBAMidiControlObjectType
     objectToBeCopiedandBound)`

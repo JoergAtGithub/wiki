@@ -261,9 +261,10 @@ through model validating each binding and report if one has an error.
 ##### Binding-based access
 
   - `bool validateBinding(TBAMidiControlObjectType
-    objectToBeCopiedandBound)`
+    tBAMidiControlObject)`
 
-true mapping is valid by Midi Mapping
+true mapping would be valid if Midi Mapping were implementing it. Having
+this does not guarantee that only valid objects will be in the model.
 
 ##### DO NOT USE: Binding-based access --- thought about, but not useful
 

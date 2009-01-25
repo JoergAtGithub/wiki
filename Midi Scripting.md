@@ -263,8 +263,9 @@ through model validating each binding and report if one has an error.
   - `bool validateBinding(TBAMidiControlObjectType
     tBAMidiControlObject)`
 
-have Midi Mapping say whether this would be bindable or not. Having this
-does not guarantee that only valid objects will be in the model.
+have Midi Mapping say whether this would be bindable or not, but don't
+actually bind it. Having this does not guarantee that only valid objects
+will be in the model.
 
 ##### DO NOT USE: Binding-based access --- thought about, but not useful
 

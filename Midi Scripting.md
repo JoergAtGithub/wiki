@@ -181,3 +181,20 @@ end users \*\**
 1.  Load Mapping from XML file
 2.  User Edit Mapping
 3.  Save Mapping to file
+
+### MIDI Mapping API
+
+  - bool loadMapFile(QString fromFileName) - true succeeded
+  - bool saveMapFile(QString asFileName) - true succeeded
+
+???
+
+  - QHash\<QString/key, TBAMidiControlObjectType\> getMappingModel()
+  - void setMappingModel(QHash\<QString/key, TBAMidiControlObjectType\>
+    newMappingModel)
+  - bool updateBinding(QString key, TBAMidiControlObjectType) - true
+    mapping was valid + successfully mapped
+  - bool deleteBinding(QString key) - true mapping was valid +
+    successfully mapped
+  - QString/key createbinding(TBAMidiControlObjectType) - returns null
+    if failed, else returns key string

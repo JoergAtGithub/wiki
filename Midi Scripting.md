@@ -265,7 +265,7 @@ through model validating each binding and report if one has an error.
 
 true mapping is valid by Midi Mapping
 
-##### Binding-based access --- thought about, but not useful
+##### DO NOT USE: Binding-based access --- thought about, but not useful
 
   - `// QString/key createbinding(TBAMidiControlObjectType
     objectToBeCopiedandBound)`

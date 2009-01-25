@@ -184,17 +184,34 @@ end users \*\**
 
 ### MIDI Mapping API
 
-  - bool loadMapFile(QString fromFileName) - true succeeded
-  - bool saveMapFile(QString asFileName) - true succeeded
+  - `bool loadMapFile(QString fromFileName)`
+
+true succeeded
+
+  - `bool saveMapFile(QString asFileName)`
+
+true succeeded
+
+It is probably a good idea to do [deep
+copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
+passing TBAMidiControlObjectType objects between MIDI Mapping and
+dlgpref\*
 
 ???
 
-  - QHash\<QString/key, TBAMidiControlObjectType\> getMappingModel()
-  - void setMappingModel(QHash\<QString/key, TBAMidiControlObjectType\>
-    newMappingModel)
-  - bool updateBinding(QString key, TBAMidiControlObjectType) - true
-    mapping was valid + successfully mapped
-  - bool deleteBinding(QString key) - true mapping was valid +
-    successfully mapped
-  - QString/key createbinding(TBAMidiControlObjectType) - returns null
-    if failed, else returns key string
+  - `QHash<QString/key, TBAMidiControlObjectType> getMappingModel()`
+  - `void setMappingModel(QHash<QString/key, TBAMidiControlObjectType>
+    newMappingModel)`
+  - `bool updateBinding(QString key, TBAMidiControlObjectType
+    objectToBeCopiedandBound)`
+
+true mapping was valid + successfully mapped
+
+  - `bool deleteBinding(QString key)`
+
+true mapping was valid + successfully mapped
+
+  - `QString/key createbinding(TBAMidiControlObjectType
+    objectToBeCopiedandBound)`
+
+returns null if failed, else returns key string

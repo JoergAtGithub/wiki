@@ -200,9 +200,19 @@ copies (since they are for its own protection).
 
 #### Possible ways to access MIDI Mapping Data
 
+##### Model-based access
+
   - `QHash<QString/key, TBAMidiControlObjectType> getMappingModel()`
   - `void setMappingModel(QHash<QString/key, TBAMidiControlObjectType>
     newMappingModel)`
+
+##### Binding-based access
+
+  - `QString/key createbinding(TBAMidiControlObjectType
+    objectToBeCopiedandBound)`
+
+returns null if failed, else returns key string
+
   - `bool updateBinding(QString key, TBAMidiControlObjectType
     objectToBeCopiedandBound)`
 
@@ -211,8 +221,3 @@ true mapping was valid + successfully mapped
   - `void deleteBinding(QString key)`
 
 caller doesn't care about result
-
-  - `QString/key createbinding(TBAMidiControlObjectType
-    objectToBeCopiedandBound)`
-
-returns null if failed, else returns key string

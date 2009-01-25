@@ -195,7 +195,8 @@ true succeeded
 It is probably a good idea to do [deep
 copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
 passing TBAMidiControlObjectType objects between MIDI Mapping and
-dlgpref\*
+dlgpref\*, it will be MIDI Mapping's responsibility to create these
+copies (since they are for its own protection).
 
 #### Possible ways to access MIDI Mapping Data
 

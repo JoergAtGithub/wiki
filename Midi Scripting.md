@@ -184,6 +184,9 @@ copies (since they are for its own protection).
 
 **TODO:** handle LED output mappings.
 
+**TODO:** replace TBAMidiControlObjectType with whatever
+data-type/class/struct should be used here.
+
 ### Use Cases
 
   - Auto load Mapping from XML file on start-up

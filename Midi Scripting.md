@@ -197,7 +197,7 @@ copies](http://en.wikipedia.org/wiki/Object_copy#Deep_copy) whenever
 passing TBAMidiControlObjectType objects between MIDI Mapping and
 dlgpref\*
 
-???
+#### Possible ways to access MIDI Mapping Data
 
   - `QHash<QString/key, TBAMidiControlObjectType> getMappingModel()`
   - `void setMappingModel(QHash<QString/key, TBAMidiControlObjectType>

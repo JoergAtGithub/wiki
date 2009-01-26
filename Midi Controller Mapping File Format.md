@@ -66,15 +66,12 @@ below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
               <miditype>Ctrl</miditype>
               <midino>7</midino>
               <midichan>3</midichan>
-              <controltype>fader</controltype>
               
 ```
 
-These tags define the MIDI event that Mixxx will listen for. Controltype
-hints to Mixxx what kind of control this is: for most controls this will
-define the behaviour of the control (eg jog wheel, analog knob). There
-is also a generic control enabling someone to define the behaviour using
-options.
+These tags define the MIDI event that Mixxx will listen for. There is
+also a generic control enabling someone to define the behaviour using
+options:
 
 ``` 
               <options>
@@ -83,11 +80,10 @@ options.
               
 ```
 
-The options further refine be behaviour of the control. The list of
+The options further refine the behavior of the control. The list of
 options will expand as Mixxx development continues. Eg - translations,
-sensitivity, acceleration. Necessary options (defined by controltype)
-will have default values, eg a jogwheel might have no acceleration by
-default.
+sensitivity, acceleration. Necessary options will have default values,
+eg a jogwheel might have no acceleration by default.
 
 ``` 
           </control>
@@ -139,16 +135,11 @@ sequences.)
   - miditype - Midi object type: Ctrl, Key or Pitch
   - midino - The MIDI control or note number
   - midichan - The MIDI channel
-  - controltype - Hint to Mixxx what kind of control this is. Possible
-    values: knob, wheel, fader, button. For most controls this will
-    define the behaviour of the control (eg jog wheel, analog knob).
-    There is also a generic control enabling someone to define the
-    behaviour using options.
   - options - Further refine the behaviour of the control (e.g.
-    translations, sensitivity, acceleration) Necessary options (defined
-    by controltype) will have default values, eg a jogwheel might have
-    no acceleration by default. Can only handle one element currently
-    but expandable, these aren't well described here: *(Then where?)*
+    translations, sensitivity, acceleration) Necessary options will have
+    default values, eg a jogwheel might have no acceleration by default.
+    Can only handle one element currently but expandable, these aren't
+    well described here: *(Then where?)*
   - Invert
   - Rot64inv
   - Rot64fast

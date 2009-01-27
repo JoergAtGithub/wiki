@@ -153,6 +153,8 @@ sequences.)
   - Hercjog - Handle hercules jog wheels
   - Spread64 - Exponential spread either side of 64, aka "relative"
     controller
+  - Script-Binding - Bind to a MIDI script function given in the "key"
+    tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
   - status - Status code to send to control lights (e.g. Note on
     (0x9\#), Control Change (0xB\#))
   - threshold - Turn on light when control exceeds this value

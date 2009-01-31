@@ -12,6 +12,8 @@ the more machines Mixxx can run on, and the larger our user base.
     <span class="underline">continuously</span> while Mixxx is idle
   - Line 43 in controlobjectthreadmain.cpp also fires incessantly
   - Line 96 (or was it 107) in controlpotmeter.cpp also fires very often
+  - EQ code takes up 50% of our current CPU usage on a Pentium 4 (with
+    static EQs\! HQ eqs are even slower...)
 
 ## Memory
 
@@ -19,3 +21,5 @@ the more machines Mixxx can run on, and the larger our user base.
 or leaks goes here)
 
   - Currently loading four copies of MP3 files into memory
+  - Vinyl control leaks part of the lookup table, or something like that
+    when it gets deleted/recreated \~\~\~\~

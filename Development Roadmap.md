@@ -34,6 +34,9 @@ world-class application, somewhat in order of importance:
 
 ### 1.6.2
 
+[1.6.2 to do list](1.6.2%20to%20do%20list) - Please submit patches for
+anything posted here to help us release sooner\!
+
 New features:
 
   - MIDI Learning

@@ -72,6 +72,9 @@ No plans yet, rough targets are:
 
 Since Mixxx 1.6.0 was released, the following changes have been made:
 
+  - MIDI Scripting functionality has been added
+  - MIDI Learning functionality has been added
+
 -----
 
 Since Mixxx 1.5.0 was released (March 4th, 2007), the following changes

@@ -25,7 +25,7 @@ scopes.
 \<?xml version="1.0" encoding="utf-8"?\>
 
 ``` 
-  <MixxxMIDIPreset version="1.6.2"> <!-- Version number to help compatibility, should the MIDI format change -->
+  <MixxxMIDIPreset version="1.6.2"> <!-- Schema version number to help compatibility, should the MIDI format change -->
   <info><!-- Optional - information about the preset file -->
       <name>Example MIDI Preset for Mixxx</name>
       <author>Tom Care</author>
@@ -41,8 +41,10 @@ and an optional info tag which contains information about the preset
 
 ``` 
   <controller id="Device name of the controller" port="Port"> <!-- Many controllers in one file supported. A controller should only appear once -->
-  
 ```
+
+The "controller id" can be obtained when you run Mixxx with the
+controller plugged in and visit the Midi Devices dialog.
 
 The core part of the file contains a definition for a single controller.
 There may be multiple controllers in one file (for more complex setups).
@@ -64,8 +66,8 @@ below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
 ``` 
               <miditype>Ctrl</miditype>
-              <midino>7</midino>
-              <midichan>3</midichan>
+              <midino>0x07</midino>
+              <midichan>0x03</midichan>
               
 ```
 

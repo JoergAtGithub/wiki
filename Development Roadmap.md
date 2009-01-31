@@ -32,9 +32,16 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 2.0 (tentative numbering, super hypothetical)
+### 1.6.2
 
-***"Mixxx 2.0 - Leaner, Meaner & Cleaner"***
+New features:
+
+  - MIDI Learning
+  - MIDI Scripting
+
+Bugs fixed:
+
+### ???.???
 
 This *might* be a ground-up redesign and rewrite of major parts of
 Mixxx's internals. (This is worthwhile because we have pushed the old
@@ -58,6 +65,10 @@ No plans yet, rough targets are:
   - Inline track previews
 
 ## Changelog
+
+Since Mixxx 1.6.0 was released, the following changes have been made:
+
+-----
 
 Since Mixxx 1.5.0 was released (March 4th, 2007), the following changes
 have been made:

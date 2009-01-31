@@ -160,7 +160,7 @@ sequences.)
     (0x9\#), Control Change (0xB\#))
   - threshold - Turn on light when control exceeds this value
 
-### Old format (pre-1.6.5)
+### Old format (pre-1.6.2)
 
 The old midi mapping format is here for reference. The same options
 apply as above. It looks something like this:

@@ -97,3 +97,5 @@ The following are overall groups that the code can be grouped into:
   - All BPM code was moved into bpm/
   - All LADSPA code (except engineladspa and ladspaview) was moved into
     ladspa/
+  - All widget code (starts with 'w' and inherits QWidget) is now in
+    widget/

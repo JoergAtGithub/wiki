@@ -18,21 +18,21 @@ the more machines Mixxx can run on, and the larger our user base.
     m_pJog->set(0.);
 
   - Line 43 in controlobjectthreadmain.cpp eventFilter() also fires
-    incessantly:
+    incessantly while idle:
 
 <!-- end list -->
 
     emit(valueChanged(ce->value()));
 
   - Line 96 in controlpotmeter.cpp setValueFromThread() also fires very
-    often:
+    often while idle:
 
 <!-- end list -->
 
     emit(valueChanged(m_dValue));
 
   - Line 107 in controlpotmeter.cpp setValueFromEngine() also fires very
-    often:
+    often while idle:
 
 <!-- end list -->
 

@@ -72,6 +72,12 @@ The following are overall groups that the code can be grouped into:
   - Mouse, MouseLinux
   - MIDIObjectAlsa? (replaced by alsaseq)
 
+<!-- end list -->
+
+  - WComboBox (replaced by library updates?)
+  - WVinylControlIndicator (unused currently -- was someone working on
+    this?)
+
 ## Deprecated Logic
 
   - Remove 'ping' mode from EngineBuffer

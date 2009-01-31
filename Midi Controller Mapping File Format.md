@@ -162,8 +162,8 @@ sequences.)
 
 ### Old format (pre-1.6.5)
 
-The old midi mapping format is here for reference. It looks something
-like this:
+The old midi mapping format is here for reference. The same options
+apply as above. It looks something like this:
 
 \<\!DOCTYPE controller\> \<controller\>
 

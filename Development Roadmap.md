@@ -53,9 +53,10 @@ anyway. This will also make for MUCH easier future extensibility.)
 
 Ideas for new features:
 
-  - Vector-based display
+  - Vector-based GUI
   - SQLite-based library
   - [Internationalization](http://doc.trolltech.com/4.3/i18n.html)
+  - [Performance improvements](Performance%20improvements)
 
 ### ???.???
 

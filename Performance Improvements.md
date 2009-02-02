@@ -8,8 +8,9 @@ the more machines Mixxx can run on, and the larger our user base.
 
 (Anything found that wastes CPU time should be listed here)
 
-  - Line 881 in enginebuffer.cpp process() fires
-    <span class="underline">continuously</span> while Mixxx is idle:
+  - ~~Line 881 in enginebuffer.cpp process() fires
+    <span class="underline">continuously</span> while Mixxx is idle:~~
+    fixed by rryan
 
 <!-- end list -->
 

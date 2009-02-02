@@ -62,6 +62,15 @@ users. This is due to some funky OpenGL code inside QT3. Fortunately,
 Mixxx 1.6.0 no longer uses QT3 and reportedly works very well with
 Beryl/Compiz.
 
+## Mixxx's waveforms eat my screen in Ubuntu
+
+See "Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?".
+Thought there is some (unknown to us) extra problem with how Ubuntu uses
+compiz, appearently. The workaround is to go
+System-\>Preferences-\>Appearence-\>Visual Effects and set them to
+"none". After you do this Mixxx should behave properly (tell us if it
+doesn't\!).
+
 ## What's vinyl control all about? How do I use it?
 
 See the [Vinyl Control](Vinyl%20Control) page.

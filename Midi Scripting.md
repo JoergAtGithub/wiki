@@ -60,7 +60,8 @@ called. It is then up to the function to effect all desired changes
 
 There is a default script function file called
 `midi-mappings-scripts.js` which contains functions common to all
-controllers and is always loaded.
+controllers and is always loaded. See
+[below](#available-common-functions) for information on these functions.
 
 To specify additional script files to load, add the following section to
 the device's XML MIDI mapping file right underneath the \<controller\>
@@ -158,6 +159,17 @@ functions (called \<manufacturer\>\<device\>.init() and
 opens and closes the device, respectively. They can be empty, but are
 useful for putting controllers into known states before operation begins
 or the program exits.
+
+### Available common functions
+
+Here is a list of functions available to you from the always-loaded
+midi-mappings-scripts.js file:
+
+  - nop() - Does nothing (No OPeration.) Empty function you can use as a
+    place-holder while developing to avoid errors.
+  - script.debug(channel, device, control, value, category) - Prints the
+    values as passed to it. Call this from anywhere in your function to
+    see what the current values of these variables are.
 
 -----
 

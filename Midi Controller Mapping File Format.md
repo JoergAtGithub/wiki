@@ -1,5 +1,7 @@
 # MIDI Controller Mapping File Format
 
+**Current XML file schema revision is: 1**
+
 ## Introduction
 
 Support for extra MIDI devices can be added to Mixxx by created a new
@@ -25,7 +27,7 @@ scopes.
 \<?xml version="1.0" encoding="utf-8"?\>
 
 ``` 
-  <MixxxMIDIPreset version="1.6.2"> <!-- Schema version number to help compatibility, should the MIDI format change -->
+  <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.6.2+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
   <info><!-- Optional - information about the preset file -->
       <name>Example MIDI Preset for Mixxx</name>
       <author>Tom Care</author>
@@ -162,7 +164,7 @@ sequences.)
     (0x9\#), Control Change (0xB\#))
   - threshold - Turn on light when control exceeds this value
 
-### Old format (pre-1.6.2)
+### Old format (before schema versioning, Mixxx 1.6.1 and prior.)
 
 The old midi mapping format is here for reference. The same options
 apply as above. It looks something like this:

@@ -169,7 +169,9 @@ midi-mappings-scripts.js file:
     place-holder while developing to avoid errors.
   - script.debug(channel, device, control, value, category) - Prints the
     values as passed to it. Call this from anywhere in your function to
-    see what the current values of these variables are.
+    see what the current values of these variables are. You can also of
+    course put it in the \<key/\> tag of your XML to make sure the
+    values being passed to the script are what you expect.
 
 -----
 

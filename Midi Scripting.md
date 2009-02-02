@@ -40,7 +40,7 @@ MIDI mapping file, put the full function name in the \<key\> tag, and a
                 <key>StantonSCS3d.pitchSlider</key>
                 <miditype>Ctrl</miditype>
                 <midino>0x04</midino>
-                <midichan>1</midichan>
+                <midichan>0x01</midichan>
                 <options>
                     <Script-Binding/>
                 </options>
@@ -85,7 +85,7 @@ control/note, value, and MIDI category (Note (0x9\#), Control Change
 (0xB\#), etc.) Therefore, function definitions should look like:
 
 ``` javascript
-StantonSCS3d.pitchSlider = function (channel, device, control, value, category) {
+ControllerName.functionName = function (channel, device, control, value, category) {
     ...
 }
 ```
@@ -111,7 +111,8 @@ engine.setValue("[Channel1]","rate",0.5);
 
 Note that since this is a script, you can do calculations and use state
 variables so a single function can work for multiple cases, such as a
-single controller working with Mixxx's two virtual decks:
+single controller working with Mixxx's two virtual decks (assuming
+you've defined currentDeck):
 
 ``` javascript
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
@@ -143,23 +144,11 @@ group>,<control name>,<script function name>,true)`. (Just tack a
 the (dis)connection was successful.
 
 So to connect the volume of the current virtual deck to a function
-called volumeLEDs, assuming you've already defined currentDeck, do:
+called SuperController.volumeLEDs, do:
 
 ``` javascript
-engine.connectControl("[Channel"+currentDeck+"]","volume","volumeLEDs");
+engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs");
 ```
-
-**Note:** Due to flaws in the current MIDI subsystem code,
-<span class="underline">all signals you plan to use must be connected at
-least once before any data is sent to the device</span> or they will
-have no effect when connected later. (They can be connected to the "nop"
-function and disconnected immediately if you wish.) A good place to do
-this is in the init() function in your script file.
-
-**Warning:** This functionality is currently unstable and will
-eventually crash when controls are manipulated, especially on faster
-systems. We are trying to solve the problem. (It's related to thread
-collisions.)
 
 ### Init and Shutdown functions
 
@@ -169,6 +158,8 @@ functions (called \<manufacturer\>\<device\>.init() and
 opens and closes the device, respectively. They can be empty, but are
 useful for putting controllers into known states before operation begins
 or the program exits.
+
+-----
 
 # MIDI Mapping Object Design Spec
 

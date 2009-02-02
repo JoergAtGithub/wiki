@@ -31,17 +31,23 @@ developers, and artists, and is summarized in the categories below.
 
 ### Mixxx Developer Reference Documentation
 
+  - **[To-do list before the next release](1.6.2_to_do_list)** - Please
+    check this and contribute where you can so we can release sooner\!
+
+<!-- end list -->
+
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
+  - [Creating backtraces](Creating%20backtraces)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
+  - [Performance improvements](Performance%20improvements)
   - [Feature Discussion](Feature%20Discussion)
   - [UI/MIDI Controls and
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format)
   - [MIDI Scripting](MIDI%20Scripting)
-  - [Creating backtraces](Creating%20backtraces)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - Tutorials for new developers:

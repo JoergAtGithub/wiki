@@ -69,13 +69,11 @@ tag:
 
 ``` XML
         <scriptfiles>
-            <file functionprefix="StantonSCS3d">
-                <filename>Stanton-SCS3d-scripts.js</filename>
-            </file>
+            <file filename="Stanton-SCS3d-scripts.js" functionprefix="StantonSCS3d"/>
         </scriptfiles>
 ```
 
-You can add as many \<file\> blocks as you like, but be sure to specify
+You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
 when the XML file is.
 

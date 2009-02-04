@@ -136,8 +136,9 @@ sequences.)
 
     These tags define the MIDI event that Mixxx will listen for:
 
-  - miditype - Midi object type: Ctrl (0xBn), Key (0x9n/0x8n), or Pitch
-    (0xEn)
+  - miditype - Midi object type: Ctrl (0xBn), Key (0x9n (On)/0x8n
+    (Off)), or Pitch (0xEn). (n is the MIDI channel 0..16 or 0x00..0x0F
+    in hex.)
   - midino - The MIDI control or note number
   - midichan - The MIDI channel
   - options - Further refine the behaviour of the control (e.g.

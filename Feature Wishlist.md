@@ -16,6 +16,7 @@ may be done already or irrelevant.
   - hotkey support (maybe configurable?)
   - adjustable drag sensitivity on visual waveform view
   - direct outs (table 1, table 2, master, headphones)
+  - [Effect plugins](PluginIdeas)
   - live input (switchable input at first, maybe a delay/pitchable input
     later)
   - OSC controlled backend [Details from Old

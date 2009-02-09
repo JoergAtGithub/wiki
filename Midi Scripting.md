@@ -163,13 +163,36 @@ or the program exits.
 Here is a list of functions available to you from the always-loaded
 midi-mappings-scripts.js file:
 
-  - nop() - Does nothing (No OPeration.) Empty function you can use as a
-    place-holder while developing to avoid errors.
-  - script.debug(channel, device, control, value, category) - Prints the
-    values as passed to it. Call this from anywhere in your function to
-    see what the current values of these variables are. You can also of
-    course put it in the \<key/\> tag of your XML to make sure the
+  - **nop**() - Does nothing (No OPeration.) Empty function you can use
+    as a place-holder while developing to avoid errors.
+  - **script.debug**(channel, device, control, value, category) - Prints
+    the values as passed to it. Call this from anywhere in your function
+    to see what the current values of these variables are. You can also
+    of course put it in the \<key/\> tag of your XML to make sure the
     values being passed to the script are what you expect.
+
+<!-- end list -->
+
+  - **scratch.enable**(currentDeck) - Initializes the variables and
+    turns on scratching for the functions detailed below. Just give it
+    the number of the deck you want to scratch.
+  - **scratch.disable**(currentDeck) - Disables scratching for the
+    specified deck.
+  - **scratch.slider**(currentDeck, sliderValue, revtime, alpha, beta) -
+    Allows you to scratch with a slider or a knob (values 0..127.) Call
+    this each time there's a new control value.
+  - Inputs:
+
+<!-- end list -->
+
+``` 
+    * The number of the deck you want to scratch (same as above)
+    * The new value of the slider/knob
+    * Revolution time of the imaginary record (typically 1.8s for a 12-inch record at 33 & 1/3 RPM, adjust for comfort)
+    * Coefficients for the filter. Alpha isn't currently used at all, but it needs to be set to something, so just use 0.1.
+    * Beta adjusts how quickly Mixxx responds to your motions. The value should be between 0 and 1, though I find that 0.9-1 works well.
+* Output: A new value for Mixxx's "scratch" control. Simply call engine.setValue("[Channel"+currentDeck+"]", "scratch", <returned value here>); in your function.
+```
 
 -----
 

@@ -69,7 +69,7 @@ matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/).
 
 ## Multiple Sound cards
 
-Mixxx 1.6.0 will support multiple sound cards.
+Mixxx 1.6.0+ supports multiple sound cards.
 
 Mixxx 1.5.0 doesn't support multiple output devices that span different
 sound cards. For example, if you have two sound cards, you cannot

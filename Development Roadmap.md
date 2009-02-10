@@ -50,7 +50,7 @@ Bugs fixed:
 New features:
 
   - Looping
-  - Better scratching
+  - Better scratching on all MIDI controllers
 
 Bugs fixed:
 

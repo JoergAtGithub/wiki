@@ -149,6 +149,16 @@ called SuperController.volumeLEDs, do:
 engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs");
 ```
 
+A function is also provided as an easy way to get a connected Mixxx
+control signal to fire so the device's LEDs update (such as when
+changing modes or decks.) It just sets the Mixxx control to its previous
+value. This is done with `engine.trigger(<control group>,<control
+name>)`. So to force the above-mentioned volumeLEDs to sync up, just do:
+
+``` javascript
+engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
+```
+
 ### Init and Shutdown functions
 
 All device script files are expected to contain initialize and shutdown

@@ -41,6 +41,16 @@ New features:
 
   - MIDI Learning
   - MIDI Scripting
+  - Some [performance improvements](performance%20improvements)
+
+Bugs fixed:
+
+### 1.6.3 (tentative)
+
+New features:
+
+  - Looping
+  - Better scratching
 
 Bugs fixed:
 

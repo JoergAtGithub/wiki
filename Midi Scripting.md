@@ -75,7 +75,7 @@ tag:
 
 You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
-when the XML file is.
+at Mixxx start-up.
 
 ### Function definitions
 

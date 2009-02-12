@@ -2,6 +2,10 @@
 
 ## I have a decently fast Linux system. Why do I have to set the latency so high?
 
+**On Linux : Disable CPU Frequency Scaling or use the 'Performance'
+mode.** CPU Frequency Scaling is a main cause of Mixxx skipping on
+laptops.
+
 If you're using ALSA, try setting your Master output hardware to just
 "default" instead of specific hardware. (This made a huge difference on
 a test system with integrated Intel soundcard.) The drawback to this is

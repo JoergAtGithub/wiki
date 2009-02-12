@@ -31,3 +31,13 @@ and "sudo fuser -v /dev/snd/\*" will show you the list of applications
 currently using your soundcards. If you're using ALSA, you can also
 choose the "default" sound card option which will mix Mixxx's output
 with everything else.
+
+## Mixxx freezes, segfaults, or otherwise misbehaves and I have an nVidia graphics card
+
+Before you try anything else, please update or reinstall your nVidia
+graphics driver. I don't care if it's the same exact version, apparently
+it is fickle and needs to be rebuilt/reinstalled any time things change
+in the OS. Try this first before going any further. 90% of the time it
+will fix your problem. You might also try getting the latest driver from
+nVidia's web site instead of your PC/card manufacturer since they may be
+newer.

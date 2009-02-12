@@ -8,6 +8,13 @@ a test system with integrated Intel soundcard.) The drawback to this is
 that system sounds (KDE beeps and such) will now be mixed in and will
 come out the main output.
 
+## I'm using Compiz and Mixxx, and sometimes the waveform view gets corrupted and slows my CPU to a halt
+
+This is a known bug with Qt and Compiz -- the only solution at this time
+is to disable Compiz when using Mixxx. In many cases, however, the two
+are able to work fine together. It seems this might be specific to
+certain graphics hardware.
+
 ## I have a decently fast system & video card. Why does Mixxx seem to crawl or pin the CPU?
 
 We've seen this a few times and it has always been a video driver
@@ -41,3 +48,8 @@ in the OS. Try this first before going any further. 90% of the time it
 will fix your problem. You might also try getting the latest driver from
 nVidia's web site instead of your PC/card manufacturer since they may be
 newer.
+
+# Mixxxcelaneous Known Issues
+
+  - Linux Intel Mobile 4 Series chipset with I965 graphics driver causes
+    segmentation fault on exit. No known workaround.

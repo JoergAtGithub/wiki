@@ -49,7 +49,7 @@ will fix your problem. You might also try getting the latest driver from
 nVidia's web site instead of your PC/card manufacturer since they may be
 newer.
 
-# Mixxxcelaneous Known Issues
+## Mixxxcelaneous Known Issues
 
   - Linux Intel Mobile 4 Series chipset with I965 graphics driver causes
     segmentation fault on exit. No known workaround.

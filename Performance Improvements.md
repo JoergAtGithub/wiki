@@ -47,6 +47,8 @@ the more machines Mixxx can run on, and the larger our user base.
 (Anything that wastes memory by inefficient storage (where unnecessary)
 or leaks goes here)
 
-  - Currently loading four copies of MP3 files into memory
+  - Currently loading ~~four~~ two copies of MP3 files into memory
   - Vinyl control leaks part of the lookup table, or something like that
-    when it gets deleted/recreated \~\~\~\~
+    when it gets deleted/recreated
+  - SoundSource's should use memory mapped IO. Making that cross
+    platform is tricky.

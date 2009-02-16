@@ -53,15 +53,6 @@ Technical Support](http://ts.hercules.com)**
     the rest of the console via libDJConsole, to fix it ditch the
     joystick driver.
 
-### Will there ever be MIDI drivers for Hercules devices on Linux?
-
-  - We are in the process of testing drivers supplied by
-    Hercules/Guillemot that will be released when they are deemed to be
-    stable. This will mean that all Herc devices appear as MIDI on
-    Linux. Currently they are working well, and will hopefully be
-    released in the very short term. When that happens, this page will
-    get a bit of an overhaul.
-
 ## Recommendation
 
 ### Which one should I buy?

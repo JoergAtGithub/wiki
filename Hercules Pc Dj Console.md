@@ -29,8 +29,10 @@ Technical Support](http://ts.hercules.com)**
 
 ### My Hercules RMX doesn't work with Mixxx on Linux
 
-  - You need to have libDJConsole 0.1.3 (which as of Aug 2008 is only
-    available from the bzr source repo on launchpad)
+  - If you are using Mixxx 1.6.1 or older, you need to have libDJConsole
+    0.1.3 (which as of Aug 2008 is only available from the bzr source
+    repo on launchpad). This is a workaround that we were forced to use
+    while Hercules was preparing their Linux driver. 
 
 ### My Hercules device only works as root
 

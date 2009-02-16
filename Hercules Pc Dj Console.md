@@ -5,7 +5,9 @@ project through donations of their hardware. We'd like to thank them for
 that support and encourage you to consider their goodwill towards Mixxx
 when you are weighing your options. ;-)
 
-Now onto the meat...
+Now onto the meat... **On 2/16/2009, Hercules released Linux MIDI
+drivers for all of their DJ product. Download them here [Hercules
+Technical Support](http://ts.hercules.com)**
 
 ## Drivers / Supportability
 
@@ -16,6 +18,12 @@ Now onto the meat...
     correspond to their names. LED support doesn't work all that
     reliably though (this is a Mixxx problem not a driver or hardware
     problem).
+  - On Linux, you can use the MK1/MK2/MP3/RMX/Steel via the official
+    MIDI driver for Linux. Download it at [Hercules Technical
+    Support](http://ts.hercules.com).
+
+<!-- end list -->
+
   - On Linux there are no MIDI Drivers and these devices are enabled to
     work with Mixxx via one of two hacks:
 

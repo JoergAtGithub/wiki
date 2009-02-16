@@ -22,23 +22,6 @@ Technical Support](http://ts.hercules.com)**
     MIDI driver for Linux. Download it at [Hercules Technical
     Support](http://ts.hercules.com).
 
-<!-- end list -->
-
-  - On Linux there are no MIDI Drivers and these devices are enabled to
-    work with Mixxx via one of two hacks:
-
-<!-- end list -->
-
-``` 
-    - The oldest hack is device file based code now relegated to legacy status - //herculeslinuxlegacy// (read not well supported, it does not work that well and we really want to ditch this code badly), the only reason the code still exists is because the Control MP3 does not initialize properly with libDJConsole.  LEDs don't work without kernel patching.
-    - The newest and better of these hacks is libDJConsole which offers support (as of 0.1.3) for Mk1, Mk2, and RMX devices via libUSB.  LEDs work on the above devices.
-```
-
-Neither *herculeslinuxlegacy* nor *libDJConsole* offer user editable
-control mappings under Linux. We would like to ditch both of these hacks
-from our code base entirely in favour of the Linux MIDI driver approach
-that we use on OSX and Windows.
-
 ### Are Hercules devices USB-MIDI class compliant?
 
   - Nope, none of the Hercules devices from Mk1 to RMX are USB-MIDI

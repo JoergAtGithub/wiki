@@ -183,12 +183,12 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 This section describes how to update your Mixxx installation with the
 latest 1.6.x compatible mapping files.
 
-  - [|http:*mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1\_6\_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Mk2.midi.xml\]\]
-    \*
-    \[\[RMX||http:*mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1\_6\_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Rmx.midi.xml](Mk2)
-  - [|http:*mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1\_6\_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20MP3.midi.xml\]\]
-    \* \[\[DJ Control
-    Steel||http:*mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1\_6\_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20Steel.midi.xml](MP3%20Control)
+  - [Mk2](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Mk2.midi.xml)
+  - [RMX](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Rmx.midi.xml)
+  - [MP3
+    Control](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20MP3.midi.xml)
+  - [DJ Control
+    Steel](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20Steel.midi.xml)
 
 On Window:
 

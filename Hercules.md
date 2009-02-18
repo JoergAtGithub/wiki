@@ -66,7 +66,7 @@ wonderful development, the Mixxx team released an updated build of Mixxx
 for Linux - 1.6.1+Herc.
 
 Users of Hercules products on Windows and OSX will want to read the
-updating mapping files section.
+[updating mapping files](#updating-mapping-files) section.
 
 ### What this Page Covers
 

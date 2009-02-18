@@ -178,7 +178,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 |                                    | Scratch (7)           | Unmapped                  |  |
 |                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |
 
-### Updating Mapping Files
+## Updating Mapping Files
 
 This section describes how to update your Mixxx installation with the
 latest 1.6.x compatible mapping files.

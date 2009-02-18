@@ -204,6 +204,14 @@ latest 1.6.x compatible mapping files.
 
 ### On OSX
 
+1.  Download the appropriate controller file to the Desktop
+2.  Open Mixxx.app/Contents/Resources/midi in Finder (you can either go
+    to your copy of Mixxx, right-click it, and click "Show Package
+    Contents" and then navigate down, or run "open
+    /Applications/Mixxx.app/Contents/Resources/midi"). 
+3.  Drag the file from Desktop to folder window
+4.  Restart Mixxx
+
 ### On Linux
 
 Currently 1.6.1+Herc has these mapping files, however in future you can

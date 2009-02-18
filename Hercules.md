@@ -63,8 +63,8 @@ Join us if you want to help\!
 On Feb 16, 2009 - Hercules released GPL Linux MIDI drivers for their
 Hercules series of DJ midi controller devices. In response to this
 wonderful development, the Mixxx team released an updated build of Mixxx
-for Linux - 1.6.1+Herc. **Thanks go out to Hercules for supporting their
-Linux users\!**
+for Linux - 1.6.1+Herc. <span class="underline">Thanks go out to
+Hercules for supporting their Linux users\!</span>
 
 Users of Hercules products on Windows and OSX will want to read the
 [updating mapping files](#updating-mapping-files) section to get the

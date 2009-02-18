@@ -190,7 +190,7 @@ latest 1.6.x compatible mapping files.
   - [DJ Control
     Steel](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20Steel.midi.xml)
 
-##### On Window
+### On Window
 
 1.  Download the appropriate controller file to the Desktop
 2.  Open a run dialog - Win+R type "%ProgramFiles%\\Mixxx\\midi\\" and
@@ -199,6 +199,6 @@ latest 1.6.x compatible mapping files.
     window
 4.  Restart Mixxx
 
-##### On OSX
+### On OSX
 
-##### On Linux
+### On Linux

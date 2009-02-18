@@ -68,7 +68,7 @@ for Linux - 1.6.1+Herc.
 Users of Hercules products on Windows and OSX will want to read the
 updating mapping files section.
 
-### Purpose
+### What this Page Covers
 
 The purpose of this document is to show how to configure Mixxx to user
 your Hercules device.

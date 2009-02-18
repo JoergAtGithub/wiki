@@ -77,9 +77,9 @@ Join us if you want to help\!
 
 ## Configuring Mixxx to use a Hercules MIDI driver
 
-> > **Linux NOTE:** Mixxx version \>= 1.6.1+Herc is required (1.6.1 is
-> > too old), you must also have compiled and installed the Hercules
-> > dkms kernel module into your Linux kernel
+> > **Linux NOTE:** On Linux Mixxx version \>= 1.6.1+Herc is required
+> > (1.6.1 is too old), you must also have compiled and installed the
+> > Hercules dkms kernel module into your Linux kernel
 
 [[/media/hercules_midi_mapping_setup.png|]] \*\* Steps \*\*
 

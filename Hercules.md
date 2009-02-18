@@ -33,7 +33,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 
 > > > **Linux NOTE:** To properly make use of Mixxx **via the Hercules
 > > > <span class="underline">Linux</span> MIDI drivers** you will need
-> > > a release of Mixxx 1.6.1+Herc (released in Nov 2008) or higher.
+> > > a release of Mixxx 1.6.1+Herc (released in Feb 2009) or higher.
 > > > Previous versions of Mixxx built for Linux will work with Hercules
 > > > devices via libDJConsole but can not be remapped via the [XML
 > > > mappings](midi_controller_mapping_file_format).

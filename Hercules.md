@@ -203,3 +203,11 @@ latest 1.6.x compatible mapping files.
 ### On OSX
 
 ### On Linux
+
+Currently 1.6.1+Herc has these mapping files, however in future you can
+update them manually by following these steps:
+
+1.  Download the appropriate controller file to the Desktop
+2.  Open a terminal
+3.  type "sudo cp \~/Desktop/Hercules\*.xml /usr/share/mixxx/midi/"
+4.  Restart Mixxx

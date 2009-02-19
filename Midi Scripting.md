@@ -189,8 +189,9 @@ midi-mappings-scripts.js file:
   - **scratch.disable**(currentDeck) - Disables scratching for the
     specified deck.
   - **scratch.slider**(currentDeck, sliderValue, revtime, alpha, beta) -
-    Allows you to scratch with a slider or a knob (values 0..127.) Call
-    this each time there's a new control value.
+    Allows you to scratch with a slider or a knob (values 0..127.)
+    0-\>127 is the forward track direction. Call this each time there's
+    a new control value.
   - Inputs:
 
 <!-- end list -->
@@ -202,6 +203,7 @@ midi-mappings-scripts.js file:
     * Coefficients for the filter. Alpha isn't currently used at all, but it needs to be set to something, so just use 0.1.
     * Beta adjusts how quickly Mixxx responds to your motions. The value should be between 0 and 1, though I find that 0.9-1 works well.
 * Output: A new value for Mixxx's "scratch" control. Simply call engine.setValue("[Channel"+currentDeck+"]", "scratch", <returned value here>); in your function.
+* **scratch.wheel**(currentDeck, wheelValue, revtime, alpha, beta) - Same thing but for a rotary control that wraps from 127 to 0 (or 0 to 127 depending on the direction.)
 ```
 
 -----

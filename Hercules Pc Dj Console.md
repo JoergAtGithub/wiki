@@ -75,14 +75,18 @@ Currently, there are 5 different models:
 
   - Hercules DJ Console MK2 - Very popular controller with a built in
     4x4 soundcard. (Two inputs, two outputs.) 
+  - Hercules DJ Console RMX - supported in Mixxx with a built in 4x4
+    soundcard. (Two inputs, two outputs.) - Thanks Francois @ Hercules\!
+
+The MK2 and RMX have headphone ports for monitoring (configure
+headphones for channels 3-4)
+
   - Hercules DJ Console MK1 - Same as the MK2, but much older. Linux
     MIDI driver does not work because of USB Quirks kernel conflict.
   - Hercules DJ Control MP3 - Very similar to the MK2, but without the
     built-in soundcard. It's also significantly cheaper.
   - Hercules DJ Console Mac Edition - Same as the MK2, slightly
     different MIDI mapping file in Mixxx.
-  - Hercules DJ Console RMX - supported in Mixxx - Thanks Francois @
-    Hercules\!
 
 Mixxx's support for the Hercules controllers is described on our
 [hardware compatibility](hardware_compatibility) page.

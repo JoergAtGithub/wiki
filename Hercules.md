@@ -45,9 +45,7 @@ or
     branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_rryan-looping/)
     \]
   - MIDI training UI to remap controls without [manual editing XML
-    files](midi_controller_mapping_file_format) \[ [GSoC-MIDI-Tom
-    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/GSoC-MIDI-Tom/)
-    \]
+    files](midi_controller_mapping_file_format) \[ Trunk \]
 
 Join us if you want to help\!
 

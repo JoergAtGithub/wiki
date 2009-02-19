@@ -8,11 +8,13 @@ world-class application, somewhat in order of importance:
   - **Stability** - Having a stable platform for DJs to work from is key
   - Treat every compiler warning as an error and fix it
   - Automatic crash recovery (like Firefox's)
-  - **Performance** - Support a good level of latency for as many
-    configurations as possible
+  - **Performance** - Optimize latency over throughput
   - No lazy code\! Pretend you're coding for an embedded system or a
     Commodore 64, so it'll run well on lesser hardware (read: larger
     user base.)
+  - Follow [Real-time application design
+    principles](http://rt.wiki.kernel.org/index.php/HOWTO:_Build_an_RT-application)
+    which will result in optimal latency even on non-RT systems
   - **Usability** - Most functions must be bonehead-easy to use. The
     manual must not be required reading\!
   - Vector-based display for automatic scaling to users' screens

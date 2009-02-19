@@ -9,6 +9,7 @@ developers, and artists, and is summarized in the categories below.
 
   - [Beginner's Guide](Beginner's%20Guide)
   - [Manual](Manual)
+  - [Hercules DJ Series Input Controllers Page](Hercules)
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)

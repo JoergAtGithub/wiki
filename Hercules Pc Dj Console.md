@@ -44,11 +44,12 @@ Support](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215
     of that have been superseded by direction buttons on the RMX and DJ
     Steel controllers, these work much better and are used to navigate
     library and playlists.
-  - If you load the joystick driver you may get an error message that
+  - ~~If you load the joystick driver you may get an error message that
     libDJConsole can not communicate with your DJ Console, because the
     kernel sees it as one device you can only use either the joystick OR
     the rest of the console via libDJConsole, to fix it ditch the
-    joystick driver.
+    joystick driver.~~ The joystick driver may mess with the MIDI
+    driver, don't know for sure though.
 
 ## Recommendation
 

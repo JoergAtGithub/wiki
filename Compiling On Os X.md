@@ -72,7 +72,7 @@ to the mixxx directory and run:
 
     svn update
 
-### 4\. Create an XCode project
+### 4\. Create an XCode project (optional)
 
 If you want to work on Mixxx with XCode for an IDE:
 

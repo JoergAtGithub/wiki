@@ -8,9 +8,10 @@ you don't, there is a basic guide available at
 
 This guide is written for Leopard (10.5.x) but should work on Tiger. You
 will need the XCode development tools installed for gcc and all the
-other sundry Unix headers. If you don't look on OS X Install Disc 2 or
-sign up at [Apple Developer Connection](http://connect.apple.com) and
-download them (warning: almost 1G). A guide is available at [this
+other sundry Unix headers. If you don't have XCode already then look on
+OS X Install Disc 2 or sign up at [Apple Developer
+Connection](http://connect.apple.com) and download them (warning: almost
+1G). A guide to getting xcode is available at [this
 page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php).
 
 ### 1\. Install build dependencies

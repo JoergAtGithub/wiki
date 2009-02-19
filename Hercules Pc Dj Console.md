@@ -40,8 +40,8 @@ Support](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215
 ### Does the Joystick on the Mk1/Control MP3/Mk2 work in Mixxx?
 
   - No and it never will. The hercules joysticks are very imprecise mice
-    that overshoot all the time, they are in no way helpful because of
-    that and have been superseded by direction buttons on the RMX and DJ
+    that overshoot all the time, they are in no way helpful and because
+    of that have been superseded by direction buttons on the RMX and DJ
     Steel controllers, these work much better and are used to navigate
     library and playlists.
   - If you load the joystick driver you may get an error message that

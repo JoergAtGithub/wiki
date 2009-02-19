@@ -92,12 +92,13 @@ controls from within Mixxx.
 Bracketed numbers indicate a control's position on the control diagrams.
 Controller diagrams are copyright of Hercules/Guillemot corporation.
 
-> > > **Linux NOTE:** To properly make use of Mixxx **via the Hercules
-> > > <span class="underline">Linux</span> MIDI drivers** you will need
-> > > a release of Mixxx 1.6.1+Herc (released in Feb 2009) or higher.
-> > > Previous versions of Mixxx built for Linux will work with Hercules
-> > > devices via libDJConsole but can not be remapped via the [XML
-> > > mappings](midi_controller_mapping_file_format).
+> > > **Linux NOTE:** To properly make use of Mixxx **via the [Hercules
+> > > <span class="underline">Linux</span> MIDI
+> > > drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)**
+> > > you will need a release of Mixxx 1.6.1+Herc (released in Feb 2009)
+> > > or higher. Previous versions of Mixxx built for Linux will work
+> > > with Hercules devices via libDJConsole but can not be remapped via
+> > > the [XML mappings](midi_controller_mapping_file_format).
 
 ## Configuring Mixxx to use a Hercules MIDI driver
 

@@ -11,10 +11,11 @@
 Welcome the [Mixxx](http://mixxx.org) page for
 [Hercules](http://www.hercules.com/) devices, Mixxx is the world's best
 free open source DJ software and the only one that runs on Windows, Mac
-OSX and Linux ([download it](http://mixxx.org/download.php))... Hercules
-does not directly develop or support troubleshooting of Mixxx, so please
-direct questions/bugs encountered/comments/praise about Mixxx to the
-[Mixxx community sites](#mixxx-community-sites) at the top of this page.
+OSX and Linux (**[download it](http://mixxx.org/download.php)**)...
+Hercules does not directly develop or support troubleshooting of Mixxx,
+so please direct questions/bugs encountered/comments/praise about Mixxx
+to the [Mixxx community sites](#mixxx-community-sites) at the top of
+this page.
 
 ## Mixxing into the Future
 

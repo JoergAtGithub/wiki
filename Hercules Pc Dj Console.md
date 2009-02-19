@@ -13,40 +13,36 @@ Technical Support](http://ts.hercules.com)**
 
 ### What is the state of Hercules device support for the different Hercules DJ Consoles?
 
-  - On Windows/OSX you can use any of Mk1, Control MP3, Mk2, or RMX via
-    MIDI. These devices are remappable via the XML config files that
-    correspond to their names. LED support doesn't work all that
-    reliably though (this is a Mixxx problem not a driver or hardware
-    problem).
-  - On Linux, you can use the MK1/MK2/MP3/RMX/Steel via the official
-    MIDI driver for Linux. Download it at [Hercules Technical
-    Support](http://ts.hercules.com).
+  - On Windows/OSX you can use any of Mk1, MP3 Control, Mk2, RMX, DJ
+    Steel Control via MIDI. These devices are remappable via the XML
+    config files that correspond to their names. LED support doesn't
+    work all that reliably though (this is a Mixxx problem not a driver
+    or hardware problem).
+  - On Linux, all devices should work with the Mk1 provided you have
+    Mixxx 1.6.1+Herc and the [Hercules Linux
+    Drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1).
+    The Mk1 needs the kernel maintainer to remove the USBQuirks put in
+    for the Mk1 which interfere with the Herc MIDI driver.
 
 ### Are Hercules devices USB-MIDI class compliant?
 
   - Nope, none of the Hercules devices from Mk1 to RMX are USB-MIDI
     class compliant. They all require OS MIDI drivers to do MIDI.
+    Fortunately MIDI drivers are available for Windows, Linux and OSX.
 
 ### My Hercules RMX doesn't work with Mixxx on Linux
 
-  - If you are using Mixxx 1.6.1 or older, you need to have libDJConsole
-    0.1.3 (which as of Aug 2008 is only available from the bzr source
-    repo on launchpad). This is a workaround that we were forced to use
-    while Hercules was preparing their Linux driver. 
-
-### My Hercules device only works as root
-
-  - Check that you have the correct udev rules for the DJ Console
-    devices (these are part of libDJConsole or libdjconsole-data on
-    Ubuntu).
+  - If you are using Mixxx 1.6.1, you need to get the +Herc pack from
+    the [downloads](http://mixxx.org/downloads/) page. If you have Linux
+    you need 1.6.1+Herc and the Hercules Linux driver installed.
 
 ### Does the Joystick on the Mk1/Control MP3/Mk2 work in Mixxx?
 
   - No and it never will. The hercules joysticks are very imprecise mice
     that overshoot all the time, they are in no way helpful because of
-    that and have been superseded by direction buttons (which are
-    supported by Mixxx/libDJConsole), these work much better and are
-    used to navigate library and playlists.
+    that and have been superseded by direction buttons on the RMX and DJ
+    Steel controllers, these work much better and are used to navigate
+    library and playlists.
   - If you load the joystick driver you may get an error message that
     libDJConsole can not communicate with your DJ Console, because the
     kernel sees it as one device you can only use either the joystick OR
@@ -57,18 +53,14 @@ Technical Support](http://ts.hercules.com)**
 
 ### Which one should I buy?
 
-  - On Windows or OSX: cost and function should drive your decision.
-    They all work pretty well, the RMX has a better sound output at low
-    volume but is heavier then the others by quite bit (it's solid metal
-    vs. the others which are plastic).
-  - On Linux: Unless Hercules releases a MIDI driver I can not recommend
-    the Control MP3 as it can only be used via the legacy hack (you will
-    have to build Mixxx from source and turn it on). The Mk1 is quite
-    old and though it works via the libDJConsole hack, it seems the
-    least likely to have a MIDI driver written for it by Hercules. That
-    leaves the Mk2 and the RMX which are both decently supported by
-    libDJConsole and seem to have the best chance at this point of their
-    product lifetime of seeing a vendor MIDI driver.
+  - Cost and function should drive your decision. They all work pretty
+    well, the RMX has a better sound output at low volume but is heavier
+    then the others by quite bit (it's solid metal vs. the others which
+    are plastic).
+  - The Mk1 is quite old and though it can be made to work with previous
+    builds of Mixxx on Linux, we would not recommend it until the
+    problem with the MIDI Drivers and USBQuirks gets sorted out and it
+    can supported.
 
 # General Info
 
@@ -83,14 +75,14 @@ Currently, there are 5 different models:
 
   - Hercules DJ Console MK2 - Very popular controller with a built in
     4x4 soundcard. (Two inputs, two outputs.) 
-  - Hercules DJ Console MK1 - Same as the MK2, but much older.
+  - Hercules DJ Console MK1 - Same as the MK2, but much older. Linux
+    MIDI driver does not work because of USB Quirks kernel conflict.
   - Hercules DJ Control MP3 - Very similar to the MK2, but without the
     built-in soundcard. It's also significantly cheaper.
   - Hercules DJ Console Mac Edition - Same as the MK2, slightly
     different MIDI mapping file in Mixxx.
-  - Hercules DJ Console RMX - Next-generation Hercules controller,
-    release date is April 2008. ~~Will be supported in Mixxx if we can
-    get our hands on one.~~ Supported, Thanks Francois @ Hercules\!
+  - Hercules DJ Console RMX - supported in Mixxx - Thanks Francois @
+    Hercules\!
 
 Mixxx's support for the Hercules controllers is described on our
 [hardware compatibility](hardware_compatibility) page.

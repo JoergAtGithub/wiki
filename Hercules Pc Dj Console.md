@@ -7,7 +7,8 @@ when you are weighing your options. ;-)
 
 Now onto the meat... **On 2/16/2009, Hercules released Linux MIDI
 drivers for all of their DJ product. Download them here [Hercules
-Technical Support](http://ts.hercules.com)**
+Technical
+Support](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)**
 
 ## Drivers / Supportability
 

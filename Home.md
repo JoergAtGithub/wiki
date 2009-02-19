@@ -9,7 +9,9 @@ developers, and artists, and is summarized in the categories below.
 
   - [Beginner's Guide](Beginner's%20Guide)
   - [Manual](Manual)
-  - [Hercules DJ Series Input Controllers Page](Hercules)
+  - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
+    about using Hercules GPL Linux MIDI driver with Mixxx, and where to
+    get updated Hercules device control mappings for Windows and OSX.
   - [Hardware Compatibility](Hardware%20Compatibility)
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)

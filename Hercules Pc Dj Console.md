@@ -18,8 +18,8 @@ Technical Support](http://ts.hercules.com)**
     config files that correspond to their names. LED support doesn't
     work all that reliably though (this is a Mixxx problem not a driver
     or hardware problem).
-  - On Linux, all devices should work with the exception of ~~Mk1~~ --
-    provided you have Mixxx 1.6.1+Herc and the [Hercules Linux
+  - On Linux, all devices should work with the exception of the ~~Mk1~~.
+    You must have Mixxx 1.6.1+Herc and the [Hercules Linux
     Drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1).
     The Mk1 needs the kernel maintainer to remove the USBQuirks put in
     for the Mk1 which interfere with the Herc MIDI driver.

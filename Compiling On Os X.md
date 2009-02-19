@@ -40,12 +40,8 @@ compile process:
     the ld(1) options and just don't, there's enough nuisances in this
     process))
   - QT 4.3.0+ ([Download
-    page](http://trolltech.com/developer/downloads/qt/mac)) -- get the
-    binaries and install to the default location
-
-\<\!-- **Important note for Qt:** In order for Mixxx to compile, you
-have to ./configure Qt with the *-no-framework* option. Don't forget, Qt
-takes a long time to reconfigure and compile\! --\>
+    page](http://www.qtsoftware.com/downloads/opensource/appdev/mac-os-cpp))
+    -- get the .dmg and install to the default location
 
 ### 2\. Get Mixxx
 

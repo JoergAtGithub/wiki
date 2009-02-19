@@ -28,11 +28,16 @@ compile process:
     \`sudo port install scons\`
   - libid3tag, libmad ([Download
     page](http://sourceforge.net/project/showfiles.php?group_id=12349))
-  - [PortAudio-v19](http://www.portaudio.com)
-  - fftw3 ([Download page](http://www.fftw.org/download.html))
+    -- \`./configure && sudo make install\`
+  - [PortAudio-v19](http://www.portaudio.com) -- \`./configure && sudo
+    make install\`
+  - fftw3 ([Download page](http://www.fftw.org/download.html)) --
+    \`./configure && sudo make install\`
   - libsndfile ([Download
-    page](http://www.mega-nerd.com/libsndfile/#Download))
-  - libogg, libvorbis ([Download page](http://xiph.org/downloads/))
+    page](http://www.mega-nerd.com/libsndfile/#Download)) --
+    \`./configure && sudo make install\`
+  - libogg, libvorbis ([Download page](http://xiph.org/downloads/)) --
+    \`./configure && sudo make install\`
   - libFLAC ([Overchan Download
     page](http://flac.sourceforge.net/download.html), [Download
     Page](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)

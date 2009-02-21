@@ -28,7 +28,8 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 5.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx* svn
     checkout you made in the previous step.
 6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type
-    "*--resourcePath ../res*" in the *Arguments* Box 
+    "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
+    Box 
 7.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:

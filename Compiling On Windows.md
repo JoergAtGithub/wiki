@@ -4,19 +4,27 @@
 
 Will move this over when I get a chance - Albert
 
+-----
+
 ## Qt Creator Build Off of Trunk
 
-The following is alternate way to build Mixxx from trunk using the Qt
-Creator IDE.
+The following is alternate way to build Mixxx from trunk using the [Qt
+Creator IDE](http://www.qtsoftware.com/developer/qt-creator). It differs
+from the normal way of building in that it uses qmake and minGW/GCC, but
+does not depend on Python, SCons, or Microsoft Visual Studio.
 
 ### Steps
 
 1.  Get the Qt Creator Bundle:
-    qtcreator-0.9.2-rc1-windows-bundle-setup.exe
-2.  Get an SVN Client (TortoseSVN)
+    [qtcreator-0.9.2-rc1-windows-bundle-setup.exe](http://www.qtsoftware.com/developer/qt-creator/qt-creator#qt-creator-binary-packages)
+    \~390MB
+2.  Get an SVN Client (i.e.
+    [TortoiseSVN](http://tortoisesvn.net/downloads))
 3.  Install both
-4.  SVN check out mixxx
-5.  Open mixxx.pro inside Qt Creator
+4.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is
+    <https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/>
+5.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx* svn
+    checkout you made in the previous step.
 6.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:

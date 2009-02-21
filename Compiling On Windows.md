@@ -42,7 +42,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     -- Only because of mixxx-winlibs/PortAudio.dll? -G
   - ~~Need to copy directories to bin folder: skins --\> create a .cmd
     file in mixxx folder to do "cd res && ../bin/mixxx.exe && cd .."~~ -
-    Fixed, see *DESTDIR\\testrun-mixxx.cmd* -G
+    Fixed, see *$$DESTDIR\\testrun-mixxx.cmd* -G
   - ~~Need to store Mixxx user data files in %USERPROFILE%/Application
     Data/Mixxx, not just %USERPROFILE%~~ -- While I agree we should
     change this, it has nothing to do with the build file setup. -G

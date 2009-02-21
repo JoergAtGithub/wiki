@@ -37,7 +37,7 @@ Creator IDE.
 To cut down on the 2GB that Qt Creator install takes, You may want to
 delete or zip-n-delete:
 
-  - C:\\Qt\\QtCreator\\qt\\examples (\~600MB)
+  - C:\\Qt\\QtCreator\\qt\\examples (\~600MB -\> zip to \~120MB)
   - C:\\Qt\\QtCreator\\qt\\bin\\QtWebKitd4.dll (\~230MB, Mixxx doesn't
-    use WebKit yet -\> zip to 30MB)
+    use WebKit yet -\> zip to \~30MB)
   - C:\\Qt\\QtCreator\\qt\\lib\\QtWebKitd4.dll (\~230MB 2nd copy)

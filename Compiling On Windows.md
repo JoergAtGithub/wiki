@@ -39,6 +39,11 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     meaning its missing dlls in *mixxx\\bin\\*, run
     *mixxx\\bin\\mixxx.exe* outside of *Qt Creator* to get a dialog
     explaining what dll file to copy into the *mixxx\\bin* dir.
+    1.  QtCreator\\mingw\\bin\\mingwm10.dll
+    2.  mixxx\\mixxx-winlib\\vorbis.dll
+    3.  mixxx\\mixxx-winlib\\ogg.dll
+    4.  mixxx\\mixxx-winlib\\vorbisfile.dll
+    5.  mixxx\\mixxx-winlib\\portaudio.dll
 
 ### Tip: Reduce Disk Space Used by Qt
 

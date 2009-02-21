@@ -41,7 +41,8 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     [ia64](http://www.microsoft.com/downloads/info.aspx?na=45&p=1&srcdisplaylang=en&srccategoryid=&srcfamilyid=90548130-4468-4bbc-9673-d6acabd5d13b&u=details.aspx?familyid=526bf4a7-44e6-4a91-b328-a4594adb70e5&displaylang=en)
     -- Only because of mixxx-winlibs/PortAudio.dll? -G
   - ~~Need to copy directories to bin folder: skins --\> create a .cmd
-    file in mixxx folder to do "cd res && ../bin/mixxx.exe && cd .."~~
+    file in mixxx folder to do "cd res && ../bin/mixxx.exe && cd .."~~ -
+    Fixed, see *DESTDIR\\testrun-mixxx.cmd* -G
   - ~~Need to store Mixxx user data files in %USERPROFILE%/Application
     Data/Mixxx, not just %USERPROFILE%~~ -- While I agree we should
     change this, it has nothing to do with the build file setup. -G

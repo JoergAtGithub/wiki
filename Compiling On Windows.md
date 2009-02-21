@@ -53,20 +53,20 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     *mixxx\\bin\\mixxx.exe* outside of *Qt Creator* to get a dialog
     explaining what dll file to copy into the *mixxx\\bin* dir.~~ --
     Fixed -G
-    1.  QtCreator\\mingw\\bin\\mingwm10.dll
-    2.  mixxx\\mixxx-winlib\\vorbis.dll
-    3.  mixxx\\mixxx-winlib\\ogg.dll
-    4.  mixxx\\mixxx-winlib\\vorbisfile.dll
-    5.  mixxx\\mixxx-winlib\\portaudio.dll
-    6.  mixxx\\mixxx-winlib\\sndfile.dll
-    7.  QtCreator\\qt\\bin\\Qt3Supportd4.dll
-    8.  QtCreator\\qt\\bin\\QtCored4.dll
-    9.  QtCreator\\qt\\bin\\QtGuid4.dll
-    10. QtCreator\\qt\\bin\\QtNetworkd4.dll
-    11. QtCreator\\qt\\bin\\QtSqld4.dll
-    12. QtCreator\\qt\\bin\\QtXmld4.dll
-    13. QtCreator\\qt\\bin\\QtOpenGLd4.dll
-    14. QtCreator\\qt\\bin\\QtScriptd4.dll
+    1.  ~~QtCreator\\mingw\\bin\\mingwm10.dll~~
+    2.  ~~mixxx\\mixxx-winlib\\vorbis.dll~~
+    3.  ~~mixxx\\mixxx-winlib\\ogg.dll~~
+    4.  ~~mixxx\\mixxx-winlib\\vorbisfile.dll~~
+    5.  ~~mixxx\\mixxx-winlib\\portaudio.dll~~
+    6.  ~~mixxx\\mixxx-winlib\\sndfile.dll~~
+    7.  ~~QtCreator\\qt\\bin\\Qt3Supportd4.dll~~
+    8.  ~~QtCreator\\qt\\bin\\QtCored4.dll~~
+    9.  ~~QtCreator\\qt\\bin\\QtGuid4.dll~~
+    10. ~~QtCreator\\qt\\bin\\QtNetworkd4.dll~~
+    11. ~~QtCreator\\qt\\bin\\QtSqld4.dll~~
+    12. ~~QtCreator\\qt\\bin\\QtXmld4.dll~~
+    13. ~~QtCreator\\qt\\bin\\QtOpenGLd4.dll~~
+    14. ~~QtCreator\\qt\\bin\\QtScriptd4.dll~~
 
 ### Tip: Reduce Disk Space Used by Qt
 

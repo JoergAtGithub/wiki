@@ -6,5 +6,8 @@ Link to the website: <http://www.enterthesystem.com/system/scs3d/>
 
 ## Support in Mixxx
 
-The latest official MIDI mappings and script files will be available
-here after Mixxx 1.6.2 is released.
+DaRouter mapping for use with Mixxx 1.6.1:
+[[/media/hardware/stantonscs/stanton_scs.3d_darouter.midi.xml.gz|]]
+
+The latest official 1.6.2 MIDI mappings and script files will be
+available here after Mixxx 1.6.2 is released.

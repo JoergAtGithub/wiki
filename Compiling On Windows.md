@@ -2,7 +2,9 @@
 
 <http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32>
 
-Will move this over when I get a chance - Albert Don't bother - Sean :P
+Will move this over when I get a chance - Albert
+
+Don't bother - Sean :P
 
 -----
 

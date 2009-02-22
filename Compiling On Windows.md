@@ -22,7 +22,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     \~390MB
 2.  Get an SVN Client (i.e.
     [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
-    win32 svn build](http://www.sliksvn.com/en/download) which can be
+    Windows svn build](http://www.sliksvn.com/en/download) which can be
     used with Qt Creator's SVN plugin)
 3.  Install both
 4.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is

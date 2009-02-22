@@ -21,7 +21,9 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     [qtcreator-0.9.2-rc1-windows-bundle-setup.exe](http://www.qtsoftware.com/developer/qt-creator/qt-creator#qt-creator-binary-packages)
     \~390MB
 2.  Get an SVN Client (i.e.
-    [TortoiseSVN](http://tortoisesvn.net/downloads))
+    [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
+    win32 svn build](http://www.sliksvn.com/en/download) which can be
+    used with Qt Creator's SVN plugin)
 3.  Install both
 4.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is
     <https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/>

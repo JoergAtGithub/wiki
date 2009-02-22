@@ -85,3 +85,60 @@ delete or zip-n-delete:
   - C:\\Qt\\QtCreator\\qt\\bin\\QtWebKitd4.dll (\~230MB, Mixxx doesn't
     use WebKit yet -\> zip to \~30MB)
   - C:\\Qt\\QtCreator\\qt\\lib\\QtWebKitd4.dll (\~230MB 2nd copy)
+
+### Optional: Building PortAudio in MinGW
+
+1.  get Msys (MSYS-1.0.10.exe), install and configuring mingw
+    (C:/Qt/QtCreator/mingw)
+2.  download PortAudio snapshot from
+    <http://www.portaudio.com/archives/pa_snapshot.tgz> to
+    C:\\msys\\1.0\\home\\%USERNAME%
+3.  download <http://trent.gamblin.ca/dx/dx9mgw.zip> to
+    C:\\msys\\1.0\\home\\%USERNAME%\\dx9mgw
+4.  Open an MSys window
+5.  tar -zxvf pa\_snapshot.tgz && cd portaudio 
+6.  patch portaudio with the
+    PA-Snapshot-20090222-mingw-DirectSound.patch patch
+7.  ./configure --with-winapi=directx --with-dxdir=../dx9mgw
+8.  copy the contents of portaudio\\lib\\.libs to
+    mixxx-winlibs\\portaudio-snapshot\\minGW-bin
+9.  copy the contents of portaudio\\include to
+    mixxx-winlibs\\portaudio-snapshot\\include
+
+#### PA-Snapshot-20090222-mingw-DirectSound.patch
+
+    \--- C:/msys/1.0/home/Administrator/portaudio-snapshot-clean/src/hostapi/dsound/pa_win_ds.c   Wed Jan 21 07:07:32 2009
+    +++ C:/msys/1.0/home/Administrator/portaudio/src/hostapi/dsound/pa_win_ds.c   Sat Feb 21 23:36:13 2009
+    @@ -95,8 +95,9 @@
+     #include "pa_win_ds.h"
+     #include "pa_win_ds_dynlink.h"
+     #include "pa_win_waveformat.h"
+    +#ifdef PAWIN_USE_WDMKS_DEVICE_INFO
+     #include "pa_win_wdmks_utils.h"
+    -
+    +#endif
+     
+     #if (defined(WIN32) && (defined(_MSC_VER) && (_MSC_VER >= 1200))) /* MSC version 6 and above */
+     #pragma comment( lib, "dsound.lib" )
+    --- C:/msys/1.0/home/Administrator/portaudio-snapshot-clean/configure Thu Mar 06 12:14:06 2008
+    +++ C:/msys/1.0/home/Administrator/portaudio/configure    Sat Feb 21 23:51:24 2009
+    @@ -21410,10 +21410,10 @@
+                 PADLL="portaudio.dll"
+                 THREAD_CFLAGS="-mthreads"
+                 SHARED_FLAGS="-shared"
+    -            DLL_LIBS="${DLL_LIBS} -lwinmm -lm -L./dx7sdk/lib -ldsound -lole32"
+    +            DLL_LIBS="${DLL_LIBS} -lwinmm -lm -L$DXDIR/lib -ldsound -lole32"
+                 #VC98="\"/c/Program Files/Microsoft Visual Studio/VC98/Include\""
+                 #CFLAGS="$CFLAGS -I$VC98 -DPA_NO_WMME -DPA_NO_ASIO"
+    -            CFLAGS="$CFLAGS -I\$(top_srcdir)/include -I$DXDIR/include -DPA_NO_WMME -DPA_NO_ASIO" -DPA_NO_WDMKS
+    +            CFLAGS="$CFLAGS -I\$(top_srcdir)/include -I$DXDIR/include -DPA_NO_WMME -DPA_NO_ASIO -DPA_NO_WDMKS"
+             elif [ $with_winapi = "asio" ] ; then
+                 if [ $with_asiodir ] ; then
+                   ASIODIR="$with_asiodir"
+
+#### TODO to get multiple windows sound APIs working:
+
+  - download asiosdk2.2.zip
+  - wimme, directsound, asio all at once patch (doesn't apply cleanly)
+    --
+    <http://www.nabble.com/configure-patch-for-MSYS-users-p20138278.html>

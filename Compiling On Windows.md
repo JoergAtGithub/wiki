@@ -89,8 +89,9 @@ delete or zip-n-delete:
 
 ### Optional: Building PortAudio in MinGW
 
-1.  get Msys (MSYS-1.0.10.exe), install and configuring mingw
-    (*C:/Qt/QtCreator/mingw*)
+1.  get Msys
+    ([MSYS-1.0.10.exe](http://sourceforge.net/project/downloading.php?group_id=2435&filename=MSYS-1.0.10.exe)),
+    install and configuring mingw (*C:/Qt/QtCreator/mingw*)
 2.  download PortAudio snapshot from
     <http://www.portaudio.com/archives/pa_snapshot.tgz> to
     *C:\\msys\\1.0\\home\\%USERNAME%*

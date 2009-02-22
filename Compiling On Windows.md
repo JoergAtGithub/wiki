@@ -90,21 +90,21 @@ delete or zip-n-delete:
 ### Optional: Building PortAudio in MinGW
 
 1.  get Msys (MSYS-1.0.10.exe), install and configuring mingw
-    (C:/Qt/QtCreator/mingw)
+    (*C:/Qt/QtCreator/mingw*)
 2.  download PortAudio snapshot from
     <http://www.portaudio.com/archives/pa_snapshot.tgz> to
-    C:\\msys\\1.0\\home\\%USERNAME%
+    *C:\\msys\\1.0\\home\\%USERNAME%*
 3.  download <http://trent.gamblin.ca/dx/dx9mgw.zip> to
-    C:\\msys\\1.0\\home\\%USERNAME%\\dx9mgw
+    *C:\\msys\\1.0\\home\\%USERNAME%\\dx9mgw*
 4.  Open an MSys window
 5.  tar -zxvf pa\_snapshot.tgz && cd portaudio 
 6.  patch portaudio with the
-    PA-Snapshot-20090222-mingw-DirectSound.patch patch
+    *PA-Snapshot-20090222-mingw-DirectSound.patch* patch
 7.  ./configure --with-winapi=directx --with-dxdir=../dx9mgw
-8.  copy the contents of portaudio\\lib\\.libs to
-    mixxx-winlibs\\portaudio-snapshot\\minGW-bin
-9.  copy the contents of portaudio\\include to
-    mixxx-winlibs\\portaudio-snapshot\\include
+8.  copy the contents of *portaudio\\lib\\.libs* to
+    *mixxx-winlibs\\portaudio-snapshot\\minGW-bin*
+9.  copy the contents of *portaudio\\include* to
+    *mixxx-winlibs\\portaudio-snapshot\\include*
 
 #### PA-Snapshot-20090222-mingw-DirectSound.patch
 

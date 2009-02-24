@@ -34,6 +34,8 @@ developers, and artists, and is summarized in the categories below.
 
 ### Mixxx Developer Reference Documentation
 
+#### 1.6.2 Development Sprint\! Wednesday February 25, 2009 in \#mixxxx on freenode.
+
   - **[To-do list before the next release](1.6.2_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 

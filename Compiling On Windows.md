@@ -33,7 +33,8 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
     Box 
 7.  ***(Need a tip here on how to compile for different architectures or
-    optimize for the current one)*** - what? why? -G
+    optimize for the current one)*** - what? why? instructions should be
+    KISS -G
 8.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:

@@ -48,7 +48,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     out of the src folder... but ifdef for MINGW may do for a quick
     workaround. -G
   - Fix the build script patch for PortAudio to enable ASIO when
-    compiling with MinGW/qmake
+    compiling with MinGW/qmake -\> see portaudio TODO
   - Update INCLUDEPATH to use the new libsndfile.h header
   - Recompile libsndfile with flac, ogg, & vorbis support
   - Package this MSVC-free version for distribution

@@ -32,7 +32,9 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type
     "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
     Box 
-7.  Hit the green run (\>) button
+7.  ***(Need a tip here on how to compile for different architectures or
+    optimize for the current one)***
+8.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:
 

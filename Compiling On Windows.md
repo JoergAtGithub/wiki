@@ -34,7 +34,8 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     Box 
 7.  ***(Need a tip here on how to compile for different architectures or
     optimize for the current one)*** - what? why? instructions should be
-    KISS -G
+    KISS, add a tip some place else (i.e. Qt disk usage) or make an
+    optional tips section -G
 8.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:

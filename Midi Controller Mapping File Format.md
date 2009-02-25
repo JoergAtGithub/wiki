@@ -98,16 +98,17 @@ messages. (For SYSEX messages, you need to use
                 <key>play</key>
                 <status>0x7F</status>  <!-- First byte sent to device -->
                 <midino>0x08</midino>  <!-- Second byte -->
-                <on>0x01</on>  <!-- Optional third byte to turn on an LED. If not specified, 0x7F is used. -->
-                <off>0x00</off> <!-- To extinguish. 0x00 is the default. If set to 0xFF, nothing is sent.-->
-                <threshold>0.1</threshold>
+                <on>0x01</on>  <!-- Third byte. If not specified, 0x7F is used. -->
+                <off>0x00</off> <!-- Alternate third byte. 0x00 is the default. If set to 0xFF, nothing is sent.-->
+                <maximum>0.99</maximum>  <!-- Optional upper value for the Mixxx control, above which the 'off' value is sent. 1.0 is the default. -->
+                <minimum>0.9</minimum>   <!-- Lower value for the Mixxx control, below which the 'off' value is sent -->
 ```
 
 This allows you to send any three bytes to the MIDI controller in the
-order Status, Midino, on/off. Threshold is the value at which the 'on'
-value is sent. Below this value, the 'off' value is sent. If 'off' is
-set to 0xFF, nothing will be sent below the threshold. (Useful for LED
-sequences.)
+order Status, Midino, on/off. Minimum and maximum define the range
+within which the 'on' value is sent. Outside this range, the 'off' value
+is sent. If 'off' is set to 0xFF, no message will be sent outside the
+range. (Useful for LED sequences.)
 
 ``` 
             </output>
@@ -151,9 +152,12 @@ These tags define the MIDI event that Mixxx will listen for:
     controller
   - Script-Binding - Bind to a MIDI script function given in the "key"
     tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
-  - status - Status code to send to control lights (e.g. Note on
-    (0x9\#), Control Change (0xB\#))
-  - threshold - Turn on light when control exceeds this value
+  - status - MIDI "Status" byte (e.g. Note on (0x9\#), Control Change
+    (0xB\#))
+  - maximum - Send the 'on' value when the Mixxx control drops below
+    this value.
+  - minimum - Send the 'on' value when the Mixxx control exceeds this
+    value. Send the 'off' value otherwise.
 
 ### Old format (before schema versioning, Mixxx 1.6.1 and prior.)
 

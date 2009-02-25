@@ -51,8 +51,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     
     1.  Portaudio was recompiled (DirectSound only) did this solve this
         or do the other vorbis and sndfile dlls still require it? -G
-    2.  sndfile.dll still requires it at least. You planning on
-        compiling PA with ASIO before release? -S
+    2.  sndfile.dll was recompiled and this solves it - S
   - ~~Need to store Mixxx user data files in %USERPROFILE%/Application
     Data/Mixxx, not just %USERPROFILE%~~ -- While I agree we should
     change this, it has nothing to do with the build file setup. -G

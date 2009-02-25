@@ -51,7 +51,20 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     
     1.  Portaudio was recompiled (DirectSound only) did this solve this
         or do the other vorbis and sndfile dlls still require it? -G
-    2.  sndfile.dll was recompiled and this solves it - S
+
+<!-- end list -->
+
+1.  sndfile.dll was recompiled and this solves it - S
+
+<!-- end list -->
+
+  - Fix the build script patch for PortAudio to enable ASIO when
+    compiling with MinGW/qmake
+  - Update INCLUDEPATH to use the new libsndfile.h header
+  - Recompile libsndfile with flac, ogg, & vorbis support
+  - ~~Recompile any other DLLs that are currently dependent on MSVC
+    runtime libraries with MinGW/qmake instead~~ - jumpkick
+  - Package this MSVC-free version for distribution
   - ~~Need to store Mixxx user data files in %USERPROFILE%/Application
     Data/Mixxx, not just %USERPROFILE%~~ -- While I agree we should
     change this, it has nothing to do with the build file setup. -G

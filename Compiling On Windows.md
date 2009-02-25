@@ -41,8 +41,8 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
   - Some users may need to install the Microsoft Visual C++ 2005
     Redistributable Package from here (depending on which CPU
     architecture Mixxx was compiled for):
-    [x86](http://go.microsoft.com/fwlink/?linkid=65127),
-    [x64](http://www.microsoft.com/downloads/details.aspx?familyid=90548130-4468-4bbc-9673-d6acabd5d13b&displaylang=en),
+    [x86](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3d200b2fd9-ae1a-4a14-984d-389c36f85647%26DisplayLang%3den),
+    [x64](http://www.microsoft.com/downloads/info.aspx?na=22&p=4&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3deb4ebe2d-33c0-4a47-9dd4-b9a6d7bd44da%26DisplayLang%3den),
     [ia64](http://www.microsoft.com/downloads/info.aspx?na=45&p=1&srcdisplaylang=en&srccategoryid=&srcfamilyid=90548130-4468-4bbc-9673-d6acabd5d13b&u=details.aspx?familyid=526bf4a7-44e6-4a91-b328-a4594adb70e5&displaylang=en)
     -- Portaudio was recompiled (DirectSound only) did this solve this
     or do the other vorbis and sndfile dlls still require it? -G

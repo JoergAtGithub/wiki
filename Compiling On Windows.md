@@ -51,13 +51,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     
     1.  Portaudio was recompiled (DirectSound only) did this solve this
         or do the other vorbis and sndfile dlls still require it? -G
-
-<!-- end list -->
-
-1.  sndfile.dll was recompiled and this solves it - S
-
-<!-- end list -->
-
+    2.  sndfile.dll was recompiled and this solves it - S
   - Fix the build script patch for PortAudio to enable ASIO when
     compiling with MinGW/qmake
   - Update INCLUDEPATH to use the new libsndfile.h header

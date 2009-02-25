@@ -33,7 +33,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
     Box 
 7.  ***(Need a tip here on how to compile for different architectures or
-    optimize for the current one)***
+    optimize for the current one)*** - what? why? -G
 8.  Hit the green run (\>) button
 
 ### Current Issues/Fixes TODO:
@@ -41,24 +41,26 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
   - You need to change "*script/ui\_scriptstudio.h*" to
     "*ui\_scriptstudio.h*" on *scriptstudio.h* line \#5. - Why can't we
     use an \#ifdef to take care of this? And why are we compiling with
-    scriptstudio on anyway? -S
-  - Some users may need to install the Microsoft Visual C++ 2005
+    scriptstudio on anyway? -S If you enable normal scripting, you get
+    script studio, proper solution is to get all of the generated crap
+    out of the src folder... but ifdef for MINGW may do for a quick
+    workaround. -G
+  - Fix the build script patch for PortAudio to enable ASIO when
+    compiling with MinGW/qmake
+  - Update INCLUDEPATH to use the new libsndfile.h header
+  - Recompile libsndfile with flac, ogg, & vorbis support
+  - Package this MSVC-free version for distribution
+  - ~~Some users may need to install the Microsoft Visual C++ 2005
     Redistributable Package from here (depending on which CPU
     architecture Mixxx was compiled for):
     [x86](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3d200b2fd9-ae1a-4a14-984d-389c36f85647%26DisplayLang%3den),
     [x64](http://www.microsoft.com/downloads/info.aspx?na=22&p=4&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3deb4ebe2d-33c0-4a47-9dd4-b9a6d7bd44da%26DisplayLang%3den),
     [ia64](http://www.microsoft.com/downloads/info.aspx?na=45&p=1&srcdisplaylang=en&srccategoryid=&srcfamilyid=90548130-4468-4bbc-9673-d6acabd5d13b&u=details.aspx?familyid=526bf4a7-44e6-4a91-b328-a4594adb70e5&displaylang=en)
-    
-    1.  Portaudio was recompiled (DirectSound only) did this solve this
-        or do the other vorbis and sndfile dlls still require it? -G
-    2.  sndfile.dll was recompiled and this solves it - S
-  - Fix the build script patch for PortAudio to enable ASIO when
-    compiling with MinGW/qmake
-  - Update INCLUDEPATH to use the new libsndfile.h header
-  - Recompile libsndfile with flac, ogg, & vorbis support
+    - Portaudio was recompiled (DirectSound only) did this solve this or
+    do the other vorbis and sndfile dlls still require it? -G -
+    sndfile.dll was recompiled and this solves it - S~~ - Fixed.
   - ~~Recompile any other DLLs that are currently dependent on MSVC
     runtime libraries with MinGW/qmake instead~~ - jumpkick
-  - Package this MSVC-free version for distribution
   - ~~Need to store Mixxx user data files in %USERPROFILE%/Application
     Data/Mixxx, not just %USERPROFILE%~~ -- While I agree we should
     change this, it has nothing to do with the build file setup. -G

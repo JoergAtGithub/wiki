@@ -75,23 +75,30 @@ options:
                 <options>
                     <!-- all control specific options should go here - sensitivity etc. Specifics to be decided by spec -->
                 </options>
-</code=xml>             
-The options further refine the behavior of the control. The list of options will expand as Mixxx development continues. Eg - translations, sensitivity, acceleration. Necessary options will have default values, eg a jogwheel might have no acceleration by default.
-<code=xml>      
+```
+
+The options further refine the behavior of the control. The list of
+options will expand as Mixxx development continues. Eg - translations,
+sensitivity, acceleration. Necessary options will have default values,
+eg a jogwheel might have no acceleration by default.
+
+``` 
             </control>
         </controls>
         <outputs>
 ```
 
-The next section defines the outputs (lights only at the moment).
+The next section defines outputs that use "short" (3-byte) MIDI
+messages. (For SYSEX messages, you need to use
+[scripting](midi_scripting).)
 
 ``` 
-            <light>
+            <output>
                 <group>[Channel1]</group>
                 <key>play</key>
                 <status>0x7F</status>  <!-- First byte sent to device -->
                 <midino>0x08</midino>  <!-- Second byte -->
-                <on>0x01</on>  <!-- Optional third byte to turn on the LED. If not specified, 0x7F is used. -->
+                <on>0x01</on>  <!-- Optional third byte to turn on an LED. If not specified, 0x7F is used. -->
                 <off>0x00</off> <!-- To extinguish. 0x00 is the default. If set to 0xFF, nothing is sent.-->
                 <threshold>0.1</threshold>
 ```
@@ -103,7 +110,7 @@ set to 0xFF, nothing will be sent below the threshold. (Useful for LED
 sequences.)
 
 ``` 
-            </light>
+            </output>
         </outputs>
     </controller>
 </MixxxMIDIPreset>

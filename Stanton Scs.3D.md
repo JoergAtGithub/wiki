@@ -41,9 +41,9 @@ the SCS.3d.
   - FF and REW are the buttons below the circle in Vinyl mode.
 
 You can change which SCS.3d controls get mapped to what Mixxx functions
-just by editing the attached file. See
-<http://mixxx.org/wiki/doku.php/midi_con> ... ile\_format for details.
-If you need any help, visit <http://mixxx.org/support.php>.
+just by editing the attached file. See the [MIDI Mapping file
+format](midi_controller_mapping_file_format#old_format_before_schema_versioning_mixxx_1.6.1_and_prior)
+for details.
 
 #### Quirks
 

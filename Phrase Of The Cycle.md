@@ -8,3 +8,4 @@
     with an ascii portrait of Homer Simpson
   - gtg bus\!
   - Does it piss on the magic?
+  - Well, it worked before.

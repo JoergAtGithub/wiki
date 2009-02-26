@@ -162,7 +162,9 @@ These tags define the MIDI event that Mixxx will listen for:
 ### Old format (before schema versioning, Mixxx 1.6.1 and prior.)
 
 The old midi mapping format is here for reference. The same options
-apply as above. It looks something like this:
+apply as above, except use \<threshold\> for \<minimum\>, there's no
+\<maximum\> (it's always 1.0,) and obviously \<Script-Binding\> won't
+work. It looks like this:
 
 ``` 
  <!DOCTYPE controller>

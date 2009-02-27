@@ -34,6 +34,9 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     Box 
 7.  Hit the green run (\>) button
 
+You can track your progress approximately by your compiler warnings
+count, a full uninterrupted build will produce \~8100 warnings. ^\_^
+
 ***(Need a tip here on how to compile for different architectures or
 optimize for the current one)*** - what? why? instructions should be
 KISS, add a tip some place else (i.e. Qt disk usage) or make an optional

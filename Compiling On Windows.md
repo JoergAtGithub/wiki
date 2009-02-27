@@ -53,6 +53,7 @@ tips section -G
     page)
   - Update INCLUDEPATH to use the new libsndfile.h header
   - Recompile libsndfile with flac, ogg, & vorbis support
+  - Figure out why application icon does not get linked.
   - ~~Package this MSVC-free version for distribution~~ --\>
     <http://mixxx.org/packages/windows/mixxx-mingw-20090226-msvc-free.zip>,
     not an msi... but people can play with it.

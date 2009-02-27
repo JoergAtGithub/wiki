@@ -52,7 +52,9 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     page)
   - Update INCLUDEPATH to use the new libsndfile.h header
   - Recompile libsndfile with flac, ogg, & vorbis support
-  - Package this MSVC-free version for distribution
+  - ~~Package this MSVC-free version for distribution~~ --\>
+    <http://mixxx.org/packages/windows/mixxx-mingw-20090226-msvc-free.zip>,
+    not an msi... but people can play with it.
   - ~~Some users may need to install the Microsoft Visual C++ 2005
     Redistributable Package from here (depending on which CPU
     architecture Mixxx was compiled for):

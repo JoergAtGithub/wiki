@@ -32,11 +32,12 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type
     "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
     Box 
-7.  ***(Need a tip here on how to compile for different architectures or
-    optimize for the current one)*** - what? why? instructions should be
-    KISS, add a tip some place else (i.e. Qt disk usage) or make an
-    optional tips section -G
-8.  Hit the green run (\>) button
+7.  Hit the green run (\>) button
+
+***(Need a tip here on how to compile for different architectures or
+optimize for the current one)*** - what? why? instructions should be
+KISS, add a tip some place else (i.e. Qt disk usage) or make an optional
+tips section -G
 
 ### Current Issues/Fixes TODO:
 

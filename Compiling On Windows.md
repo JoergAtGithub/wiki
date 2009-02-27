@@ -37,7 +37,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 You can track your progress approximately by your compiler warnings
 count, a full uninterrupted build will produce \~8100 warnings. ^\_^ (If
 the build fails only warnings after where it stopped will be shown on
-the next run)
+the next compile run)
 
 ***(Need a tip here on how to compile for different architectures or
 optimize for the current one)*** - what? why? instructions should be

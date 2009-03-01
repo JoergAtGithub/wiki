@@ -111,12 +111,12 @@ delete or zip-n-delete:
 
 ### Tip: Optimize compilation
 
-*Please fill these in, I don't know the answers\! -S* To have Qt Creator
-tell the compiler to optimize for the processor you're on, do:
+*Please fill these in, I don't know the answers\! -S*
 
-``` 
-- 
-```
+To have Qt Creator tell the compiler to optimize for the processor
+you're on, do:
+
+1.  ?
 
 To tell it to optimize for a particular processor, do:
 

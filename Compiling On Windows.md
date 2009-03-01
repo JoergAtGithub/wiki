@@ -29,20 +29,14 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
     <https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/>
 5.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx* svn
     checkout you made in the previous step.
-6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type
-    "*--resourcePath ../res*" (that is with 2 dashes) in the *Arguments*
-    Box 
+6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:
+    `--resourcePath ../res` in the *Arguments* Box 
 7.  Hit the green run (\>) button
 
 You can track your progress approximately by your compiler warnings
 count, a full uninterrupted build will produce \~8100 warnings. ^\_^ (If
 the build fails only warnings after where it stopped will be shown on
 the next compile run)
-
-***(Need a tip here on how to compile for different architectures or
-optimize for the current one)*** - what? why? instructions should be
-KISS, add a tip some place else (i.e. Qt disk usage) or make an optional
-tips section -G
 
 ### Current Issues/Fixes TODO:
 
@@ -114,6 +108,22 @@ delete or zip-n-delete:
   - C:\\Qt\\QtCreator\\qt\\bin\\QtWebKitd4.dll (\~230MB, Mixxx doesn't
     use WebKit yet -\> zip to \~30MB)
   - C:\\Qt\\QtCreator\\qt\\lib\\QtWebKitd4.dll (\~230MB 2nd copy)
+
+### Tip: Optimize compilation
+
+*Please fill these in, I don't know the answers\! -S* To have Qt Creator
+tell the compiler to optimize for the processor you're on, do:
+
+``` 
+- 
+```
+
+To tell it to optimize for a particular processor, do:
+
+  - For x86 (the default,) do nothing
+  - For AMD64, 
+  - For IA64, 
+  - For Intel ATOM, 
 
 ### Optional: Building PortAudio in MinGW
 

@@ -46,19 +46,20 @@ tips section -G
 
 ### Current Issues/Fixes TODO:
 
-  - You need to change "*script/ui\_scriptstudio.h*" to
-    "*ui\_scriptstudio.h*" on *scriptstudio.h* line \#5. - Why can't we
-    use an \#ifdef to take care of this? And why are we compiling with
-    scriptstudio on anyway? -S If you enable normal scripting, you get
-    script studio, proper solution is to get all of the generated crap
-    out of the src folder... but ifdef for MINGW may do for a quick
-    workaround. -G
   - Fix the build script patch for PortAudio to enable ASIO when
     compiling with MinGW/qmake -\> see portaudio TODO (bottom of this
     page)
   - Update INCLUDEPATH to use the new libsndfile.h header
   - Recompile libsndfile with flac, ogg, & vorbis support
   - Figure out why application icon does not get linked.
+  - \<del\>You need to change "*script/ui\_scriptstudio.h*" to
+    "*ui\_scriptstudio.h*" on *scriptstudio.h* line \#5. - Why can't we
+    use an \#ifdef to take care of this? And why are we compiling with
+    scriptstudio on anyway? -S If you enable normal scripting, you get
+    script studio, proper solution is to get all of the generated crap
+    out of the src folder... but ifdef for MINGW may do for a quick
+    workaround. -G \</del\> - using QMAKE ifdef to work around this
+    now... yuck, but works. -G
   - ~~Package this MSVC-free version for distribution~~ --\>
     <http://mixxx.org/packages/windows/mixxx-mingw-20090226-msvc-free.zip>,
     not an msi... but people can play with it.

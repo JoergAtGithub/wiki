@@ -3,10 +3,10 @@ page contains a list of the threads Mixxx runs, as of 1.6.2:
 
   - GUI thread
   - MIDI thread - Receives MIDI events from hardware and sends through
-    MIDI mapping system onto Mixxx's controls.
+    MIDI mapping system to onto Mixxx's controls or script functions.
+  - MidiScriptEngine thread - executes any MIDI scripting functions
   - Audio thread (runs from PortAudio callback) - Does all audio
     processing that eventually hits your soundcard/ears. :)
-  - MidiScriptEngine thread
   - Analyser thread - Performs BPM detection, wave summary generation
     (the mini waveforms)
   - 2 x Reader threads - Decode MP3s, OGGs, etc. asynchronously. Feeds

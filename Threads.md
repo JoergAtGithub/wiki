@@ -1,3 +1,5 @@
+# Threads in Mixxx
+
 Mixxx is a highly multithreaded program for performance reasons. This
 page contains a list of the threads Mixxx runs, as of 1.6.2:
 
@@ -12,6 +14,8 @@ page contains a list of the threads Mixxx runs, as of 1.6.2:
   - 2 x Reader threads - Decode MP3s, OGGs, etc. asynchronously. Feeds
     decoded audio into EngineBuffer ringbuffer.
   - 2 x VinylControl threads - Process timecode signals 
+  - Sidechain thread - Does non-realtime processing of audio. Used for
+    recording to disk and shoutcast broadcasting.
 
 Note that a list of threads can be seen when you [generate a backtrace
 with GDB](creating_backtraces), like this one:

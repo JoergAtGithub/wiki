@@ -34,8 +34,6 @@ developers, and artists, and is summarized in the categories below.
 
 ### Mixxx Developer Reference Documentation
 
-#### 1.6.2 Development Sprint\! Wednesday February 25, 2009 in \#mixxxx on freenode.
-
   - **[To-do list before the next release](1.6.2_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 
@@ -55,6 +53,7 @@ developers, and artists, and is summarized in the categories below.
   - [MIDI Scripting](MIDI%20Scripting)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
+  - [Threads](Threads)
   - Tutorials for new developers:
   - [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)

@@ -58,7 +58,7 @@ the next compile run)
     <http://mixxx.org/packages/windows/mixxx-mingw-20090226-msvc-free.zip>,
     not an msi... but people can play with it.
 
-### Tip: Debugging and Capturing Stacktraces on Windows
+### Tip: Debugging and Capturing Backtraces on Windows
 
 My build setup is to keep my mixxx and mixxx-winlib directories inside
 "My Documents". Unfortunately as I discovered, minGW's gdb can does not

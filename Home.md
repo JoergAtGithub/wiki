@@ -46,6 +46,8 @@ developers, and artists, and is summarized in the categories below.
   - [Developer Tools](Developer%20Tools)
   - [Performance improvements](Performance%20improvements)
   - [Feature Discussion](Feature%20Discussion)
+  - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
+    Portable HDDs)](Portable%20Mixxx)
   - [UI/MIDI Controls and
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Controller Mapping File

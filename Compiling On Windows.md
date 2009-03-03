@@ -34,7 +34,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 7.  Hit the green run (\>) button
 
 You can track your progress approximately by your compiler warnings
-count, a full uninterrupted build will produce \~8100 warnings. ^\_^ (If
+count, a full uninterrupted build will produce \~8000 warnings. ^\_^ (If
 the build fails only warnings after where it stopped will be shown on
 the next compile run)
 

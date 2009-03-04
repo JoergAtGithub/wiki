@@ -18,7 +18,9 @@ by mode.
     and track selection
   - Deck - Adjust cross-fader and switch to the other virtual deck
 
-**Common to all modes:** (except where noted)
+#### Common to all modes:
+
+(except where noted)
 
   - Gain slider (S1) adjusts deck volume
   - Pitch slider (S2) adjusts deck pitch control

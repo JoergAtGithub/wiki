@@ -18,7 +18,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 ### Steps
 
 1.  Get the Qt Creator Bundle:
-    [qtcreator-0.9.2-rc1-windows-bundle-setup.exe](http://www.qtsoftware.com/developer/qt-creator/qt-creator#qt-creator-binary-packages)
+    [qtcreator-1.0.0-windows-bundle-setup.exe](http://www.qtsoftware.com/developer/qt-creator/qt-creator#qt-creator-binary-packages)
     \~390MB
 2.  Get an SVN Client (i.e.
     [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's

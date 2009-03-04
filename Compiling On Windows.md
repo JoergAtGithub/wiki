@@ -17,21 +17,22 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 
 ### Steps
 
-1.  Get the Qt Creator Bundle:
-    [qtcreator-1.0.0-windows-bundle-setup.exe](http://www.qtsoftware.com/developer/qt-creator/qt-creator#qt-creator-binary-packages)
-    \~390MB
-2.  Get an SVN Client (i.e.
-    [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
-    Windows svn build](http://www.sliksvn.com/en/download) which can be
-    used with Qt Creator's SVN plugin)
-3.  Install both
-4.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is
+1.  Get the Qt SDK Bundle which includes Qt Creator:
+    [http:*download.qtsoftware.com/qtsdk/qt-sdk-win-opensource-2009.01.exe\]\]
+    \~200MB (-\> Someone please test the Qt SDK 1.0 downloadable and let
+    us know if it works/doesn't work. -G) - Get an SVN Client (i.e.
+    \[\[http:*tortoisesvn.net/downloads|TortoiseSVN](http://www.qtsoftware.com/downloads/sdk-windows-cpp)
+    -OR- [SilkSVN's Windows svn
+    build](http://www.sliksvn.com/en/download) which can be used with Qt
+    Creator's SVN plugin)
+2.  Install both
+3.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is
     <https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/>
-5.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx* svn
+4.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx* svn
     checkout you made in the previous step.
-6.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:
+5.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:
     `--resourcePath ../res` in the *Arguments* Box 
-7.  Hit the green run (\>) button
+6.  Hit the green run (\>) button
 
 You can track your progress approximately by your compiler warnings
 count, a full uninterrupted build will produce \~8000 warnings. ^\_^ (If

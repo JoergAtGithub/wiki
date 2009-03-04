@@ -65,9 +65,8 @@ version.)
 
 ## Trig Modes
 
-These modes configure the surface as separate banks of 12 buttons (lit
-up dim red for visibility.) The TRIG button will be red in bank 1,
-purple in bank 2, and black in bank 3.
+These modes configure the surface as 9 buttons (lit up dim red for
+visibility.)
 
 The red LEDs flash when you press the corresponding button. The outer
 blue LEDs light when a cue point is set on that button.

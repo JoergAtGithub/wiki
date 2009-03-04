@@ -3,11 +3,11 @@
 Muchas gracias go to The Stanton Group (<http://www.stantondj.com>) for
 helping us add support for their hardware\!
 
-Devices fully supported:
+Devices fully and natively supported:
 
   - [Stanton SCS.3d](Stanton%20SCS.3d)
 
-Devices for which support is in the works:
+Devices for which native support is in the works:
 
   - [Stanton SCS.1m](Stanton%20SCS.1m)
   - [Stanton SCS.1d](Stanton%20SCS.1d)

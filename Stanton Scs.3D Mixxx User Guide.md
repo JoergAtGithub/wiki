@@ -75,21 +75,21 @@ blue LEDs light when a cue point is set on that button.
   - To erase a cue, hold TRIG while pressing the button(s) you want to
     erase
 
-## Vinyl Mode (red)
+## Vinyl Modes
 
-[[/media/hardware/stantonscs/circlemode.gif|]]
+[[/media/hardware/stantonscs/circlemode.gif|]] **Vinyl mode (red)**
 
   - Outer circle (C1) allows you to bend the song's pitch, akin to
     dragging your finger on the record
   - Center slider (S4) allows you to "scratch" the song
 
-## Vinyl2 Mode (purple)
+**Vinyl2 Mode (purple)**
 
   - Outer circle (C1) allows you to "scratch" the song and perform
     juggles
   - Center slider (S4) allows you to "scratch" the song
 
-## Vinyl3 Mode (black)
+**Vinyl3 Mode (black)**
 
   - Outer circle (C1) allows you to scroll through your Library
   - Center button (anywhere on S4) loads the currently highlighted song

@@ -19,8 +19,7 @@ does not depend on Python, SCons, or Microsoft Visual Studio.
 
 1.  Get the Qt SDK Bundle which includes Qt Creator:
     [http:*download.qtsoftware.com/qtsdk/qt-sdk-win-opensource-2009.01.exe\]\]
-    \~200MB \[-\> Someone please test the Qt SDK 1.0 downloadable and
-    let us know if it works/doesn't work. -G\] - Get an SVN Client (i.e.
+    \~200MB - Get an SVN Client (i.e.
     \[\[http:*tortoisesvn.net/downloads|TortoiseSVN](http://www.qtsoftware.com/downloads/sdk-windows-cpp)
     -OR- [SilkSVN's Windows svn
     build](http://www.sliksvn.com/en/download) which can be used with Qt

@@ -48,12 +48,20 @@ directory, and use scons to compile and install:
 
 Strongly recommended: To optimize compilation for the CPU you're on if
 using GCC 4.2 and above, add `tuned=1` to the list of scons options. To
-optimize for another CPU, use `optimize=#` where \# is in the range 1-4:
-1 is single-core (P-III and below,) 2 is for P4, 3 is for Intel Core, 4
-is for Core 2...
+optimize for another CPU, use `optimize=#` where \# is in the range 1-7:
 
-If you have a Hercules DJ Console, be sure you enable the `djconsole=1`
-(MK2 & RMX) or `djconsole_legacy=1` (mp3, MK1)
+1.  single-core (P-III and below)
+2.  P4
+3.  Intel Core
+4.  Core 2
+5.  Athlon-4/XP/MP
+6.  K8/Opteron/AMD64
+7.  K8/Opteron/AMD64 w/ SSE3
+
+If you have a Hercules DJ Console, be sure you ~~enable the
+`djconsole=1` (MK2 & RMX) or `djconsole_legacy=1` (mp3, MK1)~~ first
+install the offical [Hercules Linux
+drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1).
 
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:

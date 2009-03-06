@@ -8,12 +8,13 @@ Don't bother - Sean :P
 
 -----
 
-## Qt Creator Build Off of Trunk
+## Qt Creator SDK Build from Trunk
 
-The following is alternate way to build Mixxx from trunk using the [Qt
-Creator IDE](http://www.qtsoftware.com/developer/qt-creator). It differs
-from the normal way of building in that it uses qmake and minGW/GCC, but
-does not depend on Python, SCons, or Microsoft Visual Studio.
+The following is an alternate **currently experimental** way to build
+Mixxx from trunk using the [Qt Creator
+IDE](http://www.qtsoftware.com/developer/qt-creator). It differs from
+the normal way of building in that it uses qmake and minGW/GCC, but does
+not depend on Python, SCons, or Microsoft Visual Studio.
 
 ### Steps
 

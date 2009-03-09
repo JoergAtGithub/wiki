@@ -1,9 +1,14 @@
+# Google Summer of Code 2010
+
 These might be suitable for GSoC...
 
 ## Scalable User Interface
 
-Purpose: create a user interface that can be resized by grabbing
-corners... Benefits
+### Purpose
+
+create a user interface that can be resized by grabbing corners...
+
+### Benefits
 
   - Better use of increasingly diverse screen sizes (Mixxx runs on
     netbooks with resolutions of 800x480 all the way up to Desktops with
@@ -12,7 +17,7 @@ corners... Benefits
     outline skin currently shipping with mixxx most copy the same
     artwork with different spacing or sizing).
 
-Possible approach(s):
+### Possible approach(s)
 
   - Render Mixxx on an OpenGL canvas similar to way it's done in the Qt4
     demo: [Qt Widgets enter the third dimension:
@@ -27,7 +32,7 @@ Possible approach(s):
 
 Purpose: build an audio plugin framework
 
-Benefits
+### Benefits
 
   - Increased modularity
   - 3rd parties could contribute input plug-ins by adhering to the
@@ -35,7 +40,7 @@ Benefits
   - Users in locals where software patients do not apply can add
     plug-ins that can not be distributed in other locals.
 
-Possible approach(s):
+### Possible approach(s)
 
   - Refactor the existing soundsourceproxy (and soundsourceMP3,
     soundsourceM4A, etc...) to make it into similar self-contained input

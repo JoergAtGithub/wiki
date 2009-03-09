@@ -30,7 +30,9 @@ create a user interface that can be resized by grabbing corners...
 
 ## Audio plug-in architecture
 
-build an audio plugin framework to make Mixxx's audio engine more
+### Purpose
+
+Build an audio plug-in framework to make Mixxx's audio engine more
 modular and user extensible.
 
 ### Benefits

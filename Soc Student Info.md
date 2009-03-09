@@ -1,6 +1,10 @@
-**GSoC 2009 Note:** Due to a lack of time our core developers will be
-able to dedicate to Mixxx this Summer, **Mixxx will not be participating
-in GSoC 2009**. This page contains documentation from GSoC 2008.
+## GSoC 2009 (Read)
+
+Due to a lack of time our core developers will be able to dedicate to
+Mixxx this Summer, **Mixxx will not be participating in GSoC 2009**.
+This page contains documentation from GSoC 2008.
+
+## Introduction
 
 This page collects some introductory information which we hope will be
 of use to our students, especially during the community bonding phase of

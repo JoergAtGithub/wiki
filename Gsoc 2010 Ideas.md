@@ -30,13 +30,17 @@ create a user interface that can be resized by grabbing corners...
 
 ## Audio plug-in architecture
 
-Purpose: build an audio plugin framework
+build an audio plugin framework to make Mixxx's audio engine more
+modular and user extensible.
 
 ### Benefits
 
   - Increased modularity
   - 3rd parties could contribute input plug-ins by adhering to the
     proper api
+  - 3rd parties could also bundle codecs that they have obtained
+    licenses for the benefit of their users (if a hardware vendor wanted
+    to ship Mixxx for example)
   - Users in locals where software patients do not apply can add
     plug-ins that can not be distributed in other locals.
 

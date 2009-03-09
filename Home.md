@@ -76,7 +76,11 @@ developers, and artists, and is summarized in the categories below.
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture)
 
-## Google Summer of Code 2008
+## Google Summer of Code 2008 (Archived)
+
+**Editor's Note:** Due to a lack of time our core developers will be
+able to dedicate to Mixxx this Summer, **Mixxx will not be participating
+in GSoC 2009**.
 
 The following projects were accepted for Google Summer of Code 2008:
 

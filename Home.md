@@ -39,6 +39,7 @@ developers, and artists, and is summarized in the categories below.
 
 <!-- end list -->
 
+  - [How the hell to use Bazaar](Using%20Bazaar)
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
   - [Creating backtraces](Creating%20backtraces)

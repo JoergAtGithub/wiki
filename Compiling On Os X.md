@@ -67,8 +67,16 @@ directory, and use scons to compile and install:
 
     cd mixxx
     scons
+    scons bundle
 
-This will generate Mixxx.app.
+This should generate Mixxx.app. Generating the .app has some expensive
+scanning and relinking steps so if you want to avoid this you can skip
+'scons bundle' and instead on the first run of mixxx run it as:
+
+    mixxx --resourcePath res/
+
+So that it records res/ in mixxx.cfg as where to find skins etc instead
+of dying at startup.
 
 If you wanted to update later to a newer SVN snapshot, you would go back
 to the mixxx directory and run:

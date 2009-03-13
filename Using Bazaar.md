@@ -32,7 +32,8 @@ tested:
 4.  **Register a new personal branch** with Launchpad if you haven't
     already: <https://code.launchpad.net/people/+me/+addbranch>. You can
     create as many as you want, such as when working on different
-    features.
+    features. To create new branches on launchpad you can just \`bzr
+    push lp:\~$USER/mixxx/$NEW\_BRANCH\_NAME\`.
 5.  When you're ready to share with others, or if you're doing lots of
     local commits and want to prevent losing data, issue `bzr push
     lp:~<your-lp-name>/mixxx/<your-branch-name>` which actually copies

@@ -30,9 +30,9 @@ tested:
     create as many as you want, such as when working on different
     features.
 4.  When you're ready to share with others, or if you're doing lots of
-    local commits and want to prevent losing data, issue **`bzr push`**
-    which actually copies your local store to your personal LP-hosted
-    branch.
+    local commits and want to prevent losing data, issue `bzr push
+    lp:~<your-lp-name>/mixxx/<your-branch-name>` which actually copies
+    your local store to your personal LP-hosted branch.
 5.  When your branch is stable and ready for inclusion into trunk or the
     corporate branch, go to your branch's web page and click "**Propose
     for merging** into another branch" and fill in the form. You'll want

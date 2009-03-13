@@ -26,7 +26,9 @@ compile process:
 
   - scons ([Download page](http://www.scons.org/download.php), [Install
     guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --
-    \`sudo port install scons\`
+    if you have darwinports and have already installed its version of
+    python then \`sudo port install scons\` is also a reasonable way to
+    get this installed
   - libid3tag, libmad ([Download
     page](http://sourceforge.net/project/showfiles.php?group_id=12349))
     -- \`./configure && sudo make install\`

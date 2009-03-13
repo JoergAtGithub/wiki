@@ -48,8 +48,8 @@ compile process:
     the ld(1) options and just don't, there's enough nuisances in this
     process))
   - QT 4.3.0+ ([Download
-    page](http://www.qtsoftware.com/downloads/opensource/appdev/mac-os-cpp))
-    -- get the .dmg and install to the default location
+    page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
+    the .dmg and install to the default location
 
 ### 2\. Get Mixxx
 

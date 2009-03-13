@@ -90,7 +90,7 @@ blue LEDs light when a cue point is set on that button.
     juggles
   - Center slider (S4) allows you to "scratch" the song
 
-**Vinyl3 Mode (black)**
+**Track Select Mode (black)**
 
   - Outer circle (C1) allows you to scroll through your Library
   - Center button (anywhere on S4) loads the currently highlighted song

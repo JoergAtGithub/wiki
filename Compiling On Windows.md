@@ -1,14 +1,91 @@
-**Documentation available on our old wiki:**
+## Build using Microsoft Visual Studio Express
+
+(Currently the official way to build Mixxx on Windows)
 
 <http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32>
 
-Will move this over when I get a chance - Albert
+### Steps
 
-Don't bother - Sean :P
+1.  Download prerequisites
 
------
+<!-- end list -->
 
-## Qt Creator SDK Build from Trunk
+  - Microsoft Visual Studio C++ 2005 Express
+  - Microsoft Platform SDK 2003 R2
+  - qt-win-opensource-src-4.3.0.zip source package
+  - Python
+
+Download and install SCONS: SCONS 0.97 Windows Installer
+
+Download and install TortoiseSVN
+
+2\. Get the source code
+
+Checkout the mixxx subversion repository with TortoiseSVN by the
+following link:
+\[tsvn:<https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk>
+TortoiseCheckout.png\]
+
+or use this adress in your svn client:
+<https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk>
+
+See SVN Repository for more information.
+
+3\. Prepare build environment
+
+Add to or create the following system environment variables (HowTo):
+
+QTDIR = C:\\qt\\4.3.0 INCLUDE =
+C:\\MSVC2005\\VC\\Include;C:\\PSDK\\Include;C:\\DXSDK\\Include LIB =
+C:\\MSVC2005\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
+C:\\qt\\4.3.0\\bin;C:\\Python25
+
+Instead of MSVC2005, PSDK, DXSDK, qtwin-3.3.6.6, and Python25 please use
+the paths where they're installed\!
+
+At the command prompt, change to the \\bin subdirectory of your Visual
+C++ installation. Run "vcvars32.bat" to set the Path and Environment
+Variables for Command-Line Builds
+
+Edit your C:\\Program Files\\Microsoft Visual Studio
+8\\Common7\\Tools\\vsvars32.bat:
+
+Add to it:
+
+INCLUDE=C:\\Program Files\\Microsoft Platform SDK\\Include;C:\\Program
+Files\\Microsoft Platform
+SDK\\Include\\atl;C:\\qt\\4.3.0\\include;%INCLUDE% LIB=C:\\Program
+Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.3.0\\lib;%LIB%
+
+4\. Build QT 4.3.0
+
+Start the MSVC command prompt and follow these instructions:
+<http://qtnode.net/wiki?title=Qt4_with_Visual_Studio>
+
+5\. Creating the Visual Studio Project
+
+Start the command prompt and change into your "mixxx" directory.
+
+Type
+
+scons qtdir=C:\\qt\\4.3.0 msvc
+
+On windows, I had to use scons.bat instead of scons.
+
+to generate a Visual Studio project file called mixxx.vcproj.
+
+Doubleclicking the mixxx.vcproj will open the Mixxx Visual Studio
+project.
+
+Open the Menu/Projects/mixxx Properties... Dialog Go to the C/C++ -\>
+Preprocessor/Definitions Tab and add \_DEBUG to the preprocessor
+definitions In this way your able to backtrace (debug) mixxx.
+
+6\. Build the project
+
+Press F7 to build the project Have fun\!
+
+## Build using the Qt Creator SDK (easier)
 
 The following is an alternate **currently experimental** way to build
 Mixxx from trunk using the [Qt Creator

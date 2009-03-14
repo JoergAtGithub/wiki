@@ -8,7 +8,8 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 
 ### 1.6.1 & prior
 
-Mapping for use with Mixxx up to v1.6.1 *Coming soon*
+Mapping for use with Mixxx up to v1.6.1:
+[[/media/hardware/stantonscs/stanton_scs.1m_1.6.midi.xml.gz|stanton\_scs.1m\_1.6.midi.xml.gz]]
 
 This is more of a preview release to get you started until we release
 Mixxx 1.6.2 which will feature full support and customization for the

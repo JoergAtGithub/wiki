@@ -100,24 +100,22 @@ not depend on Python, SCons, or Microsoft Visual Studio.
 
 ### Steps
 
-1.  Get the Qt SDK Bundle which includes Qt Creator:
+1.  Download & install the Qt SDK Bundle which includes Qt Creator:
     <http://www.qtsoftware.com/downloads/sdk-windows-cpp> \~200MB
-2.  Get an SVN Client (i.e.
+    download. Requires \~2GB free space on your user profile drive for
+    temporary unpacking, and \~2GB free on the target drive.
+2.  Download & install an SVN or Bazaar Client (i.e.
     [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
     Windows svn build](http://www.sliksvn.com/en/download) which can be
-    used with Qt Creator's SVN plugin)
-3.  Install both
-4.  SVN check out *mixxx* and *mixxx-winlib* from trunk - repo is
-    <https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/>
-
-<!-- end list -->
-
-``` 
-  (Or BZR branch/checkout)
-- Open //mixxx.pro// inside Qt Creator which lives in the //mixxx// svn checkout you made in the previous step.
-- Click on the //Projects// side button -> //Run Settings// tab -> type: <code>--resourcePath ../res</code> in the //Arguments// Box 
-- Hit the green run (>) button
-```
+    used with Qt Creator's SVN plugin) See the instructions above for
+    how to use TortoiseSVN & BZR.
+3.  SVN checkout or BZR branch/checkout *mixxx* and *mixxx-winlib* as in
+    the above instructions
+4.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx*
+    directory you made in the previous step.
+5.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:
+    `--resourcePath ../res` in the *Arguments* Box 
+6.  Hit the green run (\>) button
 
 You can track your progress approximately by your compiler warnings
 count, a full uninterrupted build will produce \~8000 warnings. ^\_^ (If

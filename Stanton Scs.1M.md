@@ -57,6 +57,7 @@ Windows.) In this case:
   - Pressing the encoder knob toggles reverse playback (rotating it does
     nothing)
   - A & B permanently lower/raise the pitch by 1%
+  - The slider is the pitch slider
   - The long button at the bottom temporarily raises the pitch by 4% for
     as long as you hold it (pitch bend up.)
   - The short circle button beneath that temporarily lowers the pitch by

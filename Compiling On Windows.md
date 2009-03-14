@@ -29,38 +29,33 @@ referred to as MSVC in discussions. (MicroSoft Visual C++))
 
 1.  Get the source code
 
-Checkout the mixxx subversion repository:
+<!-- end list -->
 
-  - with TortoiseSVN: right-click in the folder you want to checkout to,
-    choose SVN Checkout... and enter the following source:
-    `https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk`
-  - with TortoiseBZR: right-click in the folder you want to checkout to,
-    choose Bazaar Checkout/Branch... and enter the following source:
-    `lp:mixxx`
+  - Checkout the mixxx subversion repository:
 
 <!-- end list -->
 
-1.  Prepare build environment
-    1.  Add to or create the following system environment variables
-        ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-        adjusting the paths to match where you actually installed the
-        above:`QTDIR = C:\qt\4.5.0
-        INCLUDE =
-        C:\MSVC2008\VC\Include;C:\PSDK\Include;C:\DXSDK\Include
-        LIB = C:\MSVC2008\VC\Lib;C:\PSDK\Lib;C:\DXSDK\Lib\x86 
-        PATH = C:\qt\4.5.0\bin;C:\Python26`
-    2.  At the command prompt, change to the \\bin subdirectory of your
-        Visual C++ installation. Run "vcvars32.bat" to set the Path and
-        Environment Variables for Command-Line Builds
-    3.  Edit your C:\\Program Files\\Microsoft Visual Studio
-        8\\Common7\\Tools\\vsvars32.bat and add to
-        it:`INCLUDE=C:\Program Files\Microsoft Platform
-        SDK\Include;C:\Program Files\Microsoft Platform
-        SDK\Include\atl;C:\qt\4.5.0\include;%INCLUDE%
-        LIB=C:\Program Files\Microsoft Platform
-        SDK\Lib;C:\qt\4.5.0\lib;%LIB%`
+``` 
+    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
+    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+- Prepare build environment
+  - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed the above:<code>
+```
 
-<!-- end list -->
+QTDIR = C:\\qt\\4.5.0 INCLUDE =
+C:\\MSVC2008\\VC\\Include;C:\\PSDK\\Include;C:\\DXSDK\\Include LIB =
+C:\\MSVC2008\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
+C:\\qt\\4.5.0\\bin;C:\\Python26\</code\>
+
+``` 
+  - At the command prompt, change to the \bin subdirectory of your Visual C++ installation. Run "vcvars32.bat" to set the Path and Environment Variables for Command-Line Builds
+  - Edit your C:\Program Files\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat and add to it:<code>
+```
+
+INCLUDE=C:\\Program Files\\Microsoft Platform SDK\\Include;C:\\Program
+Files\\Microsoft Platform
+SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
+Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
 1.  Build QT
 
@@ -81,10 +76,7 @@ Checkout the mixxx subversion repository:
     4.  Open the Menu-\>Projects-\>Mixxx Properties... Dialog Go to the
         C/C++ -\> Preprocessor/Definitions Tab and add \_DEBUG to the
         preprocessor definitions. This lets you backtrace (debug) Mixxx.
-
-<!-- end list -->
-
-1.  Build the project
+2.  Build the project
 
 <!-- end list -->
 

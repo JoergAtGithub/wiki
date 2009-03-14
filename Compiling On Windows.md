@@ -3,7 +3,8 @@
 (Currently the official way to build Mixxx on Windows, frequently
 referred to as MSVC in discussions. (MicroSoft Visual C++))
 
-<http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32>
+//(Taken from
+<http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32)//>
 
 ### Steps
 

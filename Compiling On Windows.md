@@ -1,6 +1,7 @@
 ## Build using Microsoft Visual Studio Express
 
-(Currently the official way to build Mixxx on Windows)
+(Currently the official way to build Mixxx on Windows, frequently
+referred to as MSVC in discussions. (MicroSoft Visual C++))
 
 <http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32>
 

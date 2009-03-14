@@ -27,7 +27,8 @@ SCS.1m.
 
 1.  Then start Mixxx, open Preferences, choose Input Controllers, the
     "Stanton SCS.1m 1.6.0" mapping, and the "From SCS.1" device. Click
-    OK and you're good to go.
+    OK, click OK on the 'Warning: No \<midino\> defined in MIDI map
+    node: "control"' and you're good to go.
 
 **If you don't see the device in the list or Mixxx doesn't respond to
 it**, you may need to run DaRouter to get communication (this is true on

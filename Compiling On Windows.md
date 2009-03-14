@@ -99,10 +99,9 @@ not depend on Python, SCons, or Microsoft Visual Studio.
 2.  Download & install an SVN or Bazaar Client (i.e.
     [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
     Windows svn build](http://www.sliksvn.com/en/download) which can be
-    used with Qt Creator's SVN plugin) See the instructions above for
-    how to use TortoiseSVN & BZR.
+    used with Qt Creator's SVN plugin)
 3.  SVN checkout or BZR branch/checkout *mixxx* and *mixxx-winlib* as in
-    the above instructions
+    the above instructions.
 4.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx*
     directory you made in the previous step.
 5.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:

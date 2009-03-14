@@ -20,10 +20,6 @@ prevent trainwrecks.
   - DJ Fred is a novice DJ who finds that he is often unable to
     beatmatch properly before a song ends. Looping the last 4 beats or
     bars of a song would give him extra time to beatmatch.
-  - DJ Maniax reckons that AtomixMP3 has the easiest and most effective
-    loop setup he's seen. It's beatmatching setup is great too, ie, like
-    the loops its automatically on cue to the beat\! Just a thought for
-    Mixxx\!
   - **Your use case here**
 
 ## Design
@@ -51,6 +47,15 @@ For reference, here are the looping buttons on the Pioneer CDJ-1000MK3:
 
 [[/media/wiki/cdj1000mk3-loop-buttons.jpg|]]
 
+**DJ Maniax's thoughts:**
+
+AtomixMP3 has the easiest and most effective looping and beat match I
+have used, which is to say that these functions are easy to use occur
+automatically to the actual beat, not just the beat timing. A looping
+setup similar in function would be GREAT in Mixxx\! I've no idea about
+the technical issues involved, but AtomixMP3's functions work fine even
+through WINE if that helps?
+
 #### Mixxx Skin Considerations
 
 What buttons would we need to add to the main GUI (ie. all skins)?
@@ -59,6 +64,7 @@ What buttons would we need to add to the main GUI (ie. all skins)?
 
   - If possible, should we try to keep this simple and avoid having any
     settings?
+  - I agree, again re' AtomixMP3 format is hard to beat. . .
 
 #### Internal Changes
 

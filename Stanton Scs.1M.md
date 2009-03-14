@@ -43,17 +43,18 @@ Windows.) In this case:
 
   - Channel strips 1 & 2 are for decks 1 & 2.
   - The buttons above the gain knobs are the headphone cues
-  - Pressing the encoder knobs toggles the flange effect (rotating the
-    knob does nothing)
-  - A & B are REWing and FastForward, respectively
+  - The encoder knobs act as jog wheels
+  - Pressing the encoder knobs toggles the flange effect
+  - A & B are REWind and FastForward, respectively
   - The long button at the bottom is Play/Pause
   - The short circle button beneath that is Cue.
   - The pan knob isn't assigned to anything (Mixxx doesn't support
     channel panning)
   - Channel strips 3 & 4 control things for decks 1 & 2 respectively:
-  - The circle buttons at the top sync the song with that on the other
-    deck (assuming the BPM detector worked correctly)
-  - Pressing the encoder knobs toggles reverse playback
+  - The circle button at the top syncs the song with that on the other
+    deck (assuming the BPM detector worked correctly on both)
+  - Pressing the encoder knob toggles reverse playback (rotating it does
+    nothing)
   - A & B permanently lower/raise the pitch by 1%
   - The long button at the bottom temporarily raises the pitch by 4% for
     as long as you hold it (pitch bend up.)
@@ -63,7 +64,7 @@ Windows.) In this case:
   - High = Depth
   - Mid = Delay
   - Low = LFO
-  - Pan = Balance
+  - Pan = Balance (master)
   - Global knobs (upper right) do as they're labeled, except Zone which
     does nothing.
   - BPM tap buttons are just below the global knobs. Left one is for
@@ -85,7 +86,8 @@ for details.
 
 (all will be resolved in the next Mixxx release)
 
-  - The one-way knob
+  - The big track select knob only goes forwards
+  - The channel 1 & 2 jog knobs are backwards
 
 ### 1.6.2+
 

@@ -51,6 +51,8 @@ Windows.) In this case:
   - The pan knob isn't assigned to anything (Mixxx doesn't support
     channel panning)
   - Channel strips 3 & 4 control things for decks 1 & 2 respectively:
+  - The circle buttons at the top sync the song with that on the other
+    deck (assuming the BPM detector worked correctly)
   - Pressing the encoder knobs toggles reverse playback
   - A & B permanently lower/raise the pitch by 1%
   - The long button at the bottom temporarily raises the pitch by 4% for

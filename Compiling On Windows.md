@@ -6,84 +6,87 @@
 
 ### Steps
 
-1.  Download prerequisites
+1.  Download & install prerequisites
 
 <!-- end list -->
 
-  - Microsoft Visual Studio C++ 2005 Express
-  - Microsoft Platform SDK 2003 R2
-  - qt-win-opensource-src-4.3.0.zip source package
-  - Python
+  - [Microsoft Visual Studio C++
+    Express](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+    (2005 or later. You just need the vcsetup.exe file.)
+  - [Microsoft Platform SDK 2003
+    R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
+  - [Qt 4.5 for Windows source
+    package](http://download.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip)
+  - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
+  - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
+  - An SVN or BZR client like
+    [TortoiseSVN](http://tortoisesvn.net/downloads) or [Bazaar w/
+    TortoiseBZR](http://bazaar-vcs.org/Download)
 
-Download and install SCONS: SCONS 0.97 Windows Installer
+<!-- end list -->
 
-Download and install TortoiseSVN
+1.  Get the source code
 
-2\. Get the source code
+Checkout the mixxx subversion repository:
 
-Checkout the mixxx subversion repository with TortoiseSVN by the
-following link:
-\[tsvn:<https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk>
-TortoiseCheckout.png\]
+  - with TortoiseSVN: right-click in the folder you want to checkout to,
+    choose SVN Checkout... and enter the following source:
+    `https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk`
+  - with TortoiseBZR: right-click in the folder you want to checkout to,
+    choose Bazaar Checkout/Branch... and enter the following source:
+    `lp:mixxx`
 
-or use this adress in your svn client:
-<https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk>
+<!-- end list -->
 
-See SVN Repository for more information.
+1.  Prepare build environment
+    1.  Add to or create the following system environment variables
+        ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
+        adjusting the paths to match where you actually installed the
+        above:`QTDIR = C:\qt\4.5.0
+        INCLUDE =
+        C:\MSVC2008\VC\Include;C:\PSDK\Include;C:\DXSDK\Include
+        LIB = C:\MSVC2008\VC\Lib;C:\PSDK\Lib;C:\DXSDK\Lib\x86 
+        PATH = C:\qt\4.5.0\bin;C:\Python26`
+    2.  At the command prompt, change to the \\bin subdirectory of your
+        Visual C++ installation. Run "vcvars32.bat" to set the Path and
+        Environment Variables for Command-Line Builds
+    3.  Edit your C:\\Program Files\\Microsoft Visual Studio
+        8\\Common7\\Tools\\vsvars32.bat and add to
+        it:`INCLUDE=C:\Program Files\Microsoft Platform
+        SDK\Include;C:\Program Files\Microsoft Platform
+        SDK\Include\atl;C:\qt\4.5.0\include;%INCLUDE%
+        LIB=C:\Program Files\Microsoft Platform
+        SDK\Lib;C:\qt\4.5.0\lib;%LIB%`
 
-3\. Prepare build environment
+<!-- end list -->
 
-Add to or create the following system environment variables (HowTo):
+1.  Build QT
 
-QTDIR = C:\\qt\\4.3.0 INCLUDE =
-C:\\MSVC2005\\VC\\Include;C:\\PSDK\\Include;C:\\DXSDK\\Include LIB =
-C:\\MSVC2005\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
-C:\\qt\\4.3.0\\bin;C:\\Python25
+<!-- end list -->
 
-Instead of MSVC2005, PSDK, DXSDK, qtwin-3.3.6.6, and Python25 please use
-the paths where they're installed\!
+  - Start the MSVC command prompt and follow these instructions:
+    <http://doc.trolltech.com/4.5/install-win.html>
 
-At the command prompt, change to the \\bin subdirectory of your Visual
-C++ installation. Run "vcvars32.bat" to set the Path and Environment
-Variables for Command-Line Builds
+<!-- end list -->
 
-Edit your C:\\Program Files\\Microsoft Visual Studio
-8\\Common7\\Tools\\vsvars32.bat:
+1.  Create the Visual Studio Project
+    1.  Start the command prompt and change into your Mixxx source
+        directory
+    2.  Type `scons qtdir=C:\qt\4.5.0 msvc` (you may need to use
+        `scons.bat` instead of just `scons`.) This will generate a
+        Visual Studio project file called mixxx.vcproj.
+    3.  Double-click the mixxx.vcproj file to open the project.
+    4.  Open the Menu-\>Projects-\>Mixxx Properties... Dialog Go to the
+        C/C++ -\> Preprocessor/Definitions Tab and add \_DEBUG to the
+        preprocessor definitions. This lets you backtrace (debug) Mixxx.
 
-Add to it:
+<!-- end list -->
 
-INCLUDE=C:\\Program Files\\Microsoft Platform SDK\\Include;C:\\Program
-Files\\Microsoft Platform
-SDK\\Include\\atl;C:\\qt\\4.3.0\\include;%INCLUDE% LIB=C:\\Program
-Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.3.0\\lib;%LIB%
+1.  Build the project
 
-4\. Build QT 4.3.0
+<!-- end list -->
 
-Start the MSVC command prompt and follow these instructions:
-<http://qtnode.net/wiki?title=Qt4_with_Visual_Studio>
-
-5\. Creating the Visual Studio Project
-
-Start the command prompt and change into your "mixxx" directory.
-
-Type
-
-scons qtdir=C:\\qt\\4.3.0 msvc
-
-On windows, I had to use scons.bat instead of scons.
-
-to generate a Visual Studio project file called mixxx.vcproj.
-
-Doubleclicking the mixxx.vcproj will open the Mixxx Visual Studio
-project.
-
-Open the Menu/Projects/mixxx Properties... Dialog Go to the C/C++ -\>
-Preprocessor/Definitions Tab and add \_DEBUG to the preprocessor
-definitions In this way your able to backtrace (debug) mixxx.
-
-6\. Build the project
-
-Press F7 to build the project Have fun\!
+  - Press F7 to build the project
 
 ## Build using the Qt Creator SDK (easier)
 

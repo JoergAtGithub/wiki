@@ -20,6 +20,10 @@ prevent trainwrecks.
   - DJ Fred is a novice DJ who finds that he is often unable to
     beatmatch properly before a song ends. Looping the last 4 beats or
     bars of a song would give him extra time to beatmatch.
+  - DJ Maniax reckons that AtomixMP3 has the easiest and most effective
+    loop setup he's seen. It's beatmatching setup is great too, ie, like
+    the loops its automatically on cue to the beat\! Just a thought for
+    Mixxx\!
   - **Your use case here**
 
 ## Design

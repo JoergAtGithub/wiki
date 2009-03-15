@@ -36,7 +36,7 @@ it**, you may need to run DaRouter to get communication (this is true on
 Windows.) In this case:
 
 ``` 
-  - Download the "SCS.1m_thru" preset from Stanton
+  - Download the "SCS.1m_thru" preset from Stanton - //Can we post it here?//
   - Start DaRouter and browse to where you saved it. Select & open it.
   - Follow from step 2 above.
 ```

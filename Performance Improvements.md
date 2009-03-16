@@ -42,6 +42,11 @@ the more machines Mixxx can run on, and the larger our user base.
   - EQ code takes up 50% of our current CPU usage on a Pentium 4 (with
     static EQs\! HQ eqs are even slower...)
 
+### Time-critical code
+
+*(Please list all time-critical code sections here to be considered for
+assembly language reimplementation.)*
+
 ## Memory
 
 (Anything that wastes memory by inefficient storage (where unnecessary)

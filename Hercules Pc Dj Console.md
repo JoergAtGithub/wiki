@@ -95,8 +95,9 @@ Mixxx's support for the Hercules controllers is described on our
 
 ## Pictures
 
-[[/media/hardware/hercules_dj_console_mk2.jpg|]] The Hercules DJ Console MK2.
-The Mac Edition and Control MP3 versions are very similar.
+[[/media/hardware/hercules_dj_console_mk2.jpg|]] Pictured is a Hercules DJ
+Console Mk1 - the MK2, Mac Edition and Control MP3 versions are all
+similar looking.
 
 [[/media/hardware/hercules_dj_console_rmx.jpg|]] The Hercules DJ Console RMX.
 Release date is April 2008.

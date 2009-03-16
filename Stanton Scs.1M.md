@@ -8,7 +8,8 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 
 ### 1.6.1 & prior
 
-Mapping for use with Mixxx up to v1.6.1: *Coming soon*
+Mapping for use with Mixxx up to v1.6.1:
+[[/media/hardware/stantonscs/stanton_scs.1m_1.60.midi.xml.gz|]]
 
 This is more of a preview release to get you started until we release
 Mixxx 1.6.2 which will feature full support and customization for the
@@ -25,8 +26,8 @@ SCS.1m.
 
 <!-- end list -->
 
-1.  Then start Mixxx, open Preferences, choose Input Controllers, the
-    "Stanton SCS.1m 1.6.0" mapping, and the "From SCS.1" device. Click
+1.  Start Mixxx, open Preferences, choose Input Controllers, the
+    "Stanton SCS.1m 1.60" mapping, and the "From SCS.1" device. Click
     OK, click OK on the 'Warning: No \<midino\> defined in MIDI map
     node: "control"' and you're good to go.
 
@@ -35,15 +36,16 @@ it**, you may need to run DaRouter to get communication (this is true on
 Windows.) In this case:
 
 ``` 
-  - Download the "SCS.1m_thru" preset from Stanton - //Can we post it here?//
+  - Download & unpack the {{:hardware:stantonscs:scs.1m_thru.bmtp.gz|SCS.1m_thru}} DaRouter preset
   - Start DaRouter and browse to where you saved it. Select & open it.
   - Follow from step 2 above.
 ```
 
 #### Notes
 
-  - Channel strips 1 & 2 are for decks 1 & 2.
-  - The buttons above the gain knobs are the headphone cues
+  - The middle two channel columns are for decks 1 & 2. (Left for 1,
+    Right for 2)
+  - The buttons above the gain knobs at the top are the headphone cues
   - The encoder knobs act as jog wheels
   - Pressing the encoder knobs toggles the flange effect
   - A & B are REWind and FastForward, respectively
@@ -51,7 +53,7 @@ Windows.) In this case:
   - The short circle button beneath that is Cue.
   - The pan knob isn't assigned to anything (Mixxx doesn't support
     channel panning)
-  - Channel strips 3 & 4 control things for decks 1 & 2 respectively:
+  - Channel columns 1 & 4 control things for decks 1 & 2 respectively:
   - The circle button at the top syncs the song with that on the other
     deck (assuming the BPM detector worked correctly on both)
   - Pressing the encoder knob toggles reverse playback (rotating it does
@@ -62,7 +64,7 @@ Windows.) In this case:
     as long as you hold it (pitch bend up.)
   - The short circle button beneath that temporarily lowers the pitch by
     4% for as long as you hold it (pitch bend down.)
-  - Channel strip 4's knobs affect global parameters:
+  - Channel column 4's knobs affect global parameters:
   - High = Depth
   - Mid = Delay
   - Low = LFO
@@ -89,7 +91,7 @@ for details.
 (all will be resolved in the next Mixxx release)
 
   - The big track select knob only goes forwards
-  - The channel 1 & 2 jog knobs are backwards
+  - The channel jog knobs are backwards
 
 ### 1.6.2+
 

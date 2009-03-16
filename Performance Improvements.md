@@ -44,8 +44,11 @@ the more machines Mixxx can run on, and the larger our user base.
 
 ### Time-critical code
 
-*(Please list all time-critical code sections here to be considered for
-assembly language reimplementation.)*
+*(Please list all time-critical code sections/functions here to be
+considered for assembly language reimplementation.)* For reference:
+<http://www.agner.org/optimize/>
+
+  - ...
 
 ## Memory
 

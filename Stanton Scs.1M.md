@@ -23,6 +23,8 @@ SCS.1m.
 
   - Windows: C:\\Program Files\\Mixxx\\midi
   - OS X: /Applications/Mixxx.app/Contents/midi
+  - Linux is waiting on protocol support for the SCS.1 series. As soon
+    as that's ready, this'll work\!
 
 <!-- end list -->
 

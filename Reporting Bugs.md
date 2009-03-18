@@ -1,7 +1,8 @@
 # Reporting Bugs
 
-If you think you've found a bug in the software, **please first check
-the [FAQ](FAQ), the [Troubleshooting](Troubleshooting) page and the
+If you think you've found a bug in the software, first make sure you're
+using the latest version from www.mixxx.org, then **check the
+[FAQ](FAQ), the [Troubleshooting](Troubleshooting) page and the
 [forums](http://mixxx.org/forums)** to see if there is a known solution
 or workaround or if other people are having the same problem.
 

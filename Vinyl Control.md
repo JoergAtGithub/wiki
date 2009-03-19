@@ -101,7 +101,7 @@ worry about in addition to software problems.
 To begin troubleshooting any problems you have, please do the following:
 
   - Make sure your needles are clean and your records are relatively
-    dust-free. (Dirty needs will cause Mixxx to playback irregularly.)
+    dust-free. (Dirty needles will cause Mixxx to playback irregularly.)
   - Make sure your left and right RCA cables are plugged into the
     correct plugs. A swapped pair of RCA cables will cause Mixxx to also
     behave strangely, such as play songs in reverse.

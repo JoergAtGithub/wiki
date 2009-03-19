@@ -80,6 +80,13 @@ possible**.
 Mixxx supports **absolute** and **relative** mode with all of the vinyl
 listed in the table above.
 
+Note that a seemingly unresponsive effect may be caused by a feature
+called **needle-skip prevention** when spinning vinyls fast. For
+instance fast pullbacks seem to be badly detected because they shall be
+interpreted as a skipped needle and Mixxx attempts to correct the
+position. (To control this behaviour it can specifically be enabled or
+disabled in the "Vinyl Control" pane in the next version.)
+
 ## What does it look like in action?
 
 Check out these videos (YouTube):

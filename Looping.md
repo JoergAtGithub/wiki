@@ -20,6 +20,9 @@ prevent trainwrecks.
   - DJ Fred is a novice DJ who finds that he is often unable to
     beatmatch properly before a song ends. Looping the last 4 beats or
     bars of a song would give him extra time to beatmatch.
+  - DJ Dan2600 Recently started using Mixxx, its incredibly impressed by
+    it's functionality, and the lack of looping is one of the only few
+    things that set its apart from "professional" retail software. 
   - **Your use case here**
 
 ## Design

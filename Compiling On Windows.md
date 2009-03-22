@@ -146,8 +146,8 @@ default):
     workaround. -G \</del\> - using QMAKE ifdef to work around this
     now... yuck, but works. -G
   - ~~Package this MSVC-free version for distribution~~ --\>
-    <http://mixxx.org/packages/windows/mixxx-mingw-20090226-msvc-free.zip>,
-    not an msi... but people can play with it.
+    <http://mixxx.org/packages/windows/mixxx-SVN2740M-20090321_2129-win.exe>
+    installable package people can play with -G
   - Until the MSVC-free libraries are 100%, some users may need to
     install the Microsoft Visual C++ 2005 Redistributable Package from
     here (depending on which CPU architecture Mixxx was compiled for):

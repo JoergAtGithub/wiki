@@ -113,6 +113,8 @@ count, a full uninterrupted build will produce \~8000 warnings. ^\_^ (If
 the build fails only warnings after where it stopped will be shown on
 the next compile run)
 
+#### Making an Windows Installable Package
+
 To create an Windows installer package from a debug build (which is
 default):
 

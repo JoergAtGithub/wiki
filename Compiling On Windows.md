@@ -113,6 +113,20 @@ count, a full uninterrupted build will produce \~8000 warnings. ^\_^ (If
 the build fails only warnings after where it stopped will be shown on
 the next compile run)
 
+To create an Windows installer package from a debug build (which is
+default):
+
+  - Build and Run Mixxx from the above instructions so you have
+    something to package
+  - Install [NSIS](http://nsis.sourceforge.net/)
+  - open a cmd window and go to your Mixxx directory (this is where your
+    mixxx.pro file is found)
+  - C:/Qt/QtCreator/mingw/bin/mingw32-make -f Makefile.Debug nsis
+  - If everything works, you'll get an installable file with a name like
+    mixxx-SVN**REV**-**YYYYMMDD**\_**HHMM**-win.exe (where REV is the
+    SVN revision, YYYYMMDD - is year,month,day and HHMM is hour and
+    minute at packaging time)
+
 ### Current Issues/Fixes TODO:
 
   - Fix the build script patch for PortAudio to enable ASIO when

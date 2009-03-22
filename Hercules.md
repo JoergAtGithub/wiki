@@ -32,7 +32,7 @@ or
 
   - Midi Script, midi input controls bound to user definable JavaScript
     functions \[ Trunk \]
-  - Shoutcast support \[ Trunk, currently Linux only \]
+  - Shoutcast support \[ Trunk, currently Linux and MinGW Win32 only \]
   - Real-time Sound FX processing via the
     [LADSPA](http://en.wikipedia.org/wiki/LADSPA) plug-in architecture
     \[ Trunk - needs refactoring \]

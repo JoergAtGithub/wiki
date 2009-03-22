@@ -131,6 +131,11 @@ default):
 
 ### Current Issues/Fixes TODO:
 
+  - Implement a [safe NSIS
+    uninstaller](http://nsis.sourceforge.net/Advanced_Uninstall_Log_NSIS_Header),
+    currently the uninstall calls rm -rf $$INSTALLDIR, if users do
+    something silly like put their music in there or install Mixxx into
+    My Documents, very bad things can happen on an uninstall.
   - Fix the build script patch for PortAudio to enable ASIO when
     compiling with MinGW/qmake -\> see portaudio TODO (bottom of this
     page)

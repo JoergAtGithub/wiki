@@ -14,9 +14,9 @@ tested:
   - Olive (bzr-gtk) - Looks promising but is god-awful slow on large
     directories like our src/ (Tested by Pegasus)
 
-## General procedure
+## General procedure for distributed use
 
-1.  **Grab a personal copy** (called a "branch") of the Mixxx
+1.  **Create a personal copy** (called a "branch") of the Mixxx
     trunk/branch you want to work on using `bzr branch lp:mixxx` for
     trunk or `bzr branch lp:~mixxxdevelopers/mixxx/release-1.6.2` for
     the 1.6.2 release branch. This copies the code to your local system.
@@ -44,5 +44,22 @@ tested:
     to specify "mixxxdevelopers" as the reviewer. When you click the
     "Propose Merge" button, the Mixxx developers will be notified and
     will review & test your branch when they have a chance. They will
-    then either merge it with the corporate code base or E-mail you back
-    with questions or suggested changes.
+    then either merge it with the corporate code base or make notations
+    on the proposal page with questions or suggested changes.
+
+## Making it work like SVN
+
+(For those of us scared of this "distributed" thing...)
+
+  - **Check out** with `bzr checkout lp:mixxx` for trunk or `bzr
+    checkout lp:~mixxxdevelopers/mixxx/release-1.6.2` for the 1.6.2
+    release branch. (**Be patient** as the Mixxx code base is fairly
+    large and older versions of bzr sometimes have difficulty reporting
+    progress.)
+  - **Update** to latest version with `bzr update`
+  - **Create a patch** with `bzr diff` \> mychanges.patch and send it to
+    the [mixxx-devel mailing
+    list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+  - If you have commit access, **commit** with `bzr commit -m "Log
+    message"` (You'll need to register an SSH key first under your
+    personal LP page: <https://launchpad.net/people/+me/+editsshkeys>.)

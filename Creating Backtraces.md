@@ -22,7 +22,7 @@ Found a crash? Generate us a backtrace:
     application in Windows, a good thing to check if you find the app
     has stopped responding and you are running from a within a console
     window.
-  - **Linux/OSX Users** should be able to select terminal output by
+  - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 
 <!-- end list -->

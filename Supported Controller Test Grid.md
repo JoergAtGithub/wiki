@@ -6,7 +6,15 @@ controllers in the next version of Mixxx.
 Currently reporting for: **Mixxx 1.7.0-beta1**
 
 **Simply state *works* or *doesn't work* for controllers you've
-tested.** Report the reasons for not working to the mixxx-devel mailing
+tested.** If it doesn't work, please fix it using the following
+information:
+
+  - [MIDI controller mapping file
+    format](midi_controller_mapping_file_format)
+  - [MIDI Scripting](MIDI%20Scripting) if needed for tuning or complex
+    behaviors
+
+Otherwise report the reasons for not working to the mixxx-devel mailing
 list.
 
 |                                 |         |          |       |

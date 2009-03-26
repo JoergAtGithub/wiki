@@ -115,7 +115,7 @@ the next compile run)
 
 #### Making an Windows Installable Package
 
-To create an Windows installer package from a debug build (which is
+To create a Windows installer package from a debug build (which is
 default):
 
   - Build and Run Mixxx from the above instructions so you have

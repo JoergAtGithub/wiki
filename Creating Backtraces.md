@@ -18,14 +18,18 @@ Found a crash? Generate us a backtrace:
     application in Windows, a good thing to check if you find the app
     has stopped responding and you are running from a within a console
     window.
-5.  Submit the bug using the [Mixxx bug reporting system on
+
+**Linux/OSX Users** should be able to select terminal output by using
+the mouse to select, right clicking and selecting *Copy*.
+
+1.  Submit the bug using the [Mixxx bug reporting system on
     Launchpad](https://launchpad.net/mixxx). Bugs filed here are
     trackable by developers and will not fall through the cracks as
     easily as using the IRC channel or mixxx-devel. Make sure that the
     bug you are filing is new, and if you think that another bug might
     be the same one, post comments on it with your backtrace and any
     other useful info.
-6.  If you do not want to use Launchpad, post the results in the forum,
+2.  If you do not want to use Launchpad, post the results in the forum,
     email them to mixxx-devel, or [pastebin](http://www.pastebin.ca)
     them and drop the link on IRC. We'll then try to figure out where
     the crash is. Do not assume a developer will hear you in IRC, using

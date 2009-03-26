@@ -1,7 +1,6 @@
 # MIDI Scripting
 
-***MIDI Scripting is currently a work in progress. This information may
-change prior to release.***
+***This information may change prior to release.***
 
 In order to support the advanced features of many MIDI controllers,
 Mixxx offers what we call MIDI Scripting. It enables MIDI controls to be

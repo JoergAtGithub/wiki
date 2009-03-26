@@ -7,6 +7,10 @@ tested:
 
 #### Windows
 
+  - [Bazaar w/ TortoiseBZR](http://bazaar-vcs.org/Download) - Works well
+    in check-out mode. Distributed online mode is slow in large
+    directories. (Tested by Pegasus)
+
 #### Mac OS X
 
 #### Linux

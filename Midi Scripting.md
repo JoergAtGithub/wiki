@@ -78,6 +78,12 @@ at Mixxx start-up.
 
 ### Function definitions
 
+**This API will likely change before release:**
+
+  - Category & channel may be replaced with MIDI Status (which contains
+    both.)
+  - Device will be removed
+
 Data passed to functions are, in order: MIDI channel, device name,
 control/note, value, and MIDI category (Note (0x9\#), Control Change
 (0xB\#), etc.) Therefore, function definitions should look like:

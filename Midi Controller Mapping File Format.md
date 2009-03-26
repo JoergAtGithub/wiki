@@ -4,9 +4,10 @@
 
 ## Introduction
 
-Support for extra MIDI devices can be added to Mixxx by created a new
-"MIDI mapping" file. This mapping file tells Mixxx how to translate MIDI
-commands from a controller into commands that Mixxx will understand.
+Support for additional MIDI devices can be added to Mixxx by created a
+new "MIDI mapping" file. This mapping file tells Mixxx how to translate
+MIDI commands from a controller into commands that Mixxx will
+understand.
 
 The MIDI mapping files are located in the following paths:
 
@@ -47,8 +48,7 @@ controller plugged in and visit the Midi Devices dialog.
 The core part of the file contains a definition for a single controller.
 There may be multiple controllers in one file (for more complex setups).
 Each controller definition contains two sections: input bindings
-(controls) and output bindings (only lights are supported at the
-moment).
+(controls) and output bindings.
 
 ``` 
         <controls> <!-- One control group -->
@@ -78,9 +78,11 @@ options:
 ```
 
 The options further refine the behavior of the control. The list of
-options will expand as Mixxx development continues. Eg - translations,
-sensitivity, acceleration. Necessary options will have default values,
-eg a jogwheel might have no acceleration by default.
+generic options may expand as Mixxx development continues, but any
+controller-specific refinements (translations, sensitivity,
+acceleration, etc.) belong in a [MIDI script](midi_scripting). Necessary
+options will have default values, eg a jogwheel might have no
+acceleration by default.
 
 ``` 
             </control>
@@ -135,8 +137,7 @@ These tags define the MIDI event that Mixxx will listen for:
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options will have
     default values, eg a jogwheel might have no acceleration by default.
-    Can only handle one element currently but expandable, these aren't
-    well described here: *(Then where?)*
+    Can only handle one element currently.
   - Invert
   - Rot64inv
   - Rot64fast
@@ -147,11 +148,12 @@ These tags define the MIDI event that Mixxx will listen for:
     triggers on the *Down*, *Up* is ignored. (Herc)
   - Switch - a switch has a *On* (non-zero) and an *Off* (zero) state,
     these occur separately. (Herc)
-  - Hercjog - Handle hercules jog wheels
   - Spread64 - Exponential spread either side of 64, aka "relative"
     controller
   - Script-Binding - Bind to a MIDI script function given in the "key"
     tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
+  - Hercjog - Handle hercules jog wheels (**deprecated**...please
+    replace with a MIDI script function.)
   - status - MIDI "Status" byte (e.g. Note on (0x9\#), Control Change
     (0xB\#))
   - maximum - Send the 'on' value when the Mixxx control drops below

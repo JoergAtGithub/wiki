@@ -8,7 +8,11 @@ Found a crash? Generate us a backtrace:
 2.  When the gdb prompt appears, type "run".
 3.  When Mixxx crashes, type the following into the gdb prompt: "thread
     apply all bt"
-4.  **Windows users** can copy the terminal buffer by clicking on the
+4.  Copying the gdb info:
+
+<!-- end list -->
+
+  - **Windows users** can copy the terminal buffer by clicking on the
     Window's icon in the top left corner and then selecting
     *Edit*--\>*Select All*. Everything selected will be inverted (so if
     black becomes white, white becomes black, etc) and hitting *Enter*
@@ -18,9 +22,10 @@ Found a crash? Generate us a backtrace:
     application in Windows, a good thing to check if you find the app
     has stopped responding and you are running from a within a console
     window.
+  - **Linux/OSX Users** should be able to select terminal output by
+    using the mouse, and then doing a right click and selecting *Copy*.
 
-**Linux/OSX Users** should be able to select terminal output by using
-the mouse to select, right clicking and selecting *Copy*.
+<!-- end list -->
 
 1.  Submit the bug using the [Mixxx bug reporting system on
     Launchpad](https://launchpad.net/mixxx). Bugs filed here are

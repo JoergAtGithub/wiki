@@ -8,7 +8,7 @@ Found a crash? Generate us a backtrace:
 2.  When the gdb prompt appears, type "run".
 3.  When Mixxx crashes, type the following into the gdb prompt: "thread
     apply all bt"
-4.  Windows users can copy the terminal buffer by clicking on the
+4.  **Windows users** can copy the terminal buffer by clicking on the
     Window's icon in the top left corner and then selecting
     *Edit*--\>*Select All*. Everything selected will be inverted (so if
     black becomes white, white becomes black, etc) and hitting *Enter*

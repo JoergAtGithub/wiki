@@ -15,8 +15,8 @@ referred to as MSVC in discussions. (MicroSoft Visual C++))
   - [Microsoft Visual Studio C++
     Express](http://www.microsoft.com/express/download/)
     ([2005](http://www.microsoft.com/express/2005/download/default.aspx)
-    or later.) [Alternate
-    link](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+    or later.) [Alternate link
+    for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
     You just need the vcsetup.exe file.
   - [Microsoft Platform SDK 2003
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)

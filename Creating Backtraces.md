@@ -18,10 +18,8 @@ Found a crash? Generate us a backtrace:
     black becomes white, white becomes black, etc) and hitting *Enter*
     will copy the selection to the clipboard and unselect everything,
     then paste the clipboard buffer into a bug report, pastebin or
-    notepad. *Note:* selecting in the terminal can suspend execution of
-    application in Windows, a good thing to check if you find the app
-    has stopped responding and you are running from a within a console
-    window.
+    notepad. *Note:* a windows console will not update while any part of
+    it is selected.
   - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 

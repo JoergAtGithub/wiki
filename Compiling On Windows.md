@@ -84,6 +84,9 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
   - Press F7 to build the project
 
+[Generic MSVC x64 build
+info](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
+
 ## Build using the Qt Creator SDK (easier)
 
 The following is an alternate, currently experimental way to build Mixxx

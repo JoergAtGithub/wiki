@@ -119,7 +119,10 @@ As of release 1.6.1, Mixxx supports the following file formats:
   - OGG
   - FLAC
   - WAV, AIFF
-  - m4a \[in progress\]
+
+And we're currently working on:
+
+  - AAC/M4A
 
 ## What happens if a file's samplerate is different from the sound card rate?
 

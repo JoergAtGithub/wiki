@@ -55,5 +55,7 @@ newer.
 
 ## Mixxxcelaneous Known Issues
 
-  - Linux Intel Mobile 4 Series chipset with I965 graphics driver causes
-    segmentation fault on exit. No known workaround.
+  - Mobile Intel 4 Series chipset with I945/965 graphics driver causes
+    segmentation fault on exit in Windows and Linux. No known
+    workaround. (The problem appears to be in the Intel driver. See [bug
+    \#251128](https://bugs.launchpad.net/bugs/251128).)

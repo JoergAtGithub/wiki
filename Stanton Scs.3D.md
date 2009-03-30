@@ -56,9 +56,9 @@ for details.
     track select, so you can only operate them with Deck A selected.
     (Functions can only be mapped to one control at the moment.)
 
-### 1.6.2+
+### 1.7.0+
 
-The latest official 1.6.2 MIDI mappings and script files will be
-available here after Mixxx 1.6.2 is released.
+The latest official MIDI mappings and script files will be available
+here after Mixxx 1.7.0-beta1 is released.
 
 [Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)

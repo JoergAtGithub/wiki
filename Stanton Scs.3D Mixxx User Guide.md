@@ -1,7 +1,7 @@
 # Stanton SCS.3d & Mixxx User Guide
 
-This guide explains how the SCS.3d is mapped by default in Mixxx 1.6.2
-by mode.
+This guide explains how the SCS.3d is mapped by default in Mixxx by
+mode.
 
 [[/media/hardware/stantonscs/scs3d_preset.jpg|]]
 
@@ -60,7 +60,7 @@ by mode.
 
 ## Loop Mode
 
-(This does nothing in Mixxx 1.6.2. It will control looping in a future
+(This does nothing in Mixxx 1.7.0. It will control looping in a future
 version.)
 
 ## Trig Modes

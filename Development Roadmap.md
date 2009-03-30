@@ -31,24 +31,27 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.6.2
+### 1.7.0
 
-[1.6.2 to do list](1.6.2%20to%20do%20list) - Please submit patches for
+[1.7.0 to do list](1.7.0%20to%20do%20list) - Please submit patches for
 anything posted here to help us release sooner\!
 
 New features:
 
   - MIDI Learning
   - MIDI Scripting
+  - Support for new controllers added, see the [hardware
+    compatibility](hardware%20compatibility) page
   - Some [performance improvements](performance%20improvements)
 
-Bugs fixed:
+Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
-### 1.6.3 (tentative)
+### 1.8.0 (tentative)
 
 New features:
 
   - Looping
+  - LADSPA Effects
   - Better scratching on all MIDI controllers
 
 Bugs fixed:
@@ -67,13 +70,9 @@ Ideas for new features:
   - [Internationalization](http://doc.trolltech.com/4.3/i18n.html)
   - [Performance improvements](Performance%20improvements)
 
-### ???.???
-
 No plans yet, rough targets are:
 
   - Macro/script playback
-  - LADSPA Effects
-  - Looping
   - Sampler
   - Inline track previews
 

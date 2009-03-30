@@ -11,8 +11,8 @@ world-class application, somewhat in order of importance:
     possible
   - Follow [Real-time application design
     principles](http://rt.wiki.kernel.org/index.php/HOWTO:_Build_an_RT-application)
-    which will result in optimal latency even on non-RT systems. Follow
-    the [C++ software optimization
+    which will result in optimal latency even on non-RT systems.
+  - Follow the [C++ software optimization
     guide](http://www.agner.org/optimize/optimizing_cpp.pdf) to choose
     data and program structures that will compile into the most
     efficient code.

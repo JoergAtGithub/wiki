@@ -1,9 +1,8 @@
 # Hardware Compatibility
 
-We're currently trying to compile a list of support hardware for Mixxx.
-If you've tested a hardware controller on a particular operating system,
-please update the table below to reflect the state of Mixxx's hardware
-support:
+This is a list of hardware controllers that is known to work with Mixxx.
+If you've tested one on a particular operating system, please update the
+table below to reflect the state of Mixxx's hardware support:
 
 |                                                                  |                              |                                                         |                                                                                                                                                                                                                                                         |                    |
 | ---------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |

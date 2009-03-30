@@ -95,9 +95,9 @@ for details.
   - The big track select knob only goes forwards
   - The channel jog knobs are backwards
 
-### 1.6.2+
+### 1.7.0+
 
-The latest official 1.6.2 MIDI mappings and script files will be
-available here after Mixxx 1.6.2 is released.
+The latest official MIDI mappings and script files will be available
+here after Mixxx 1.7.0-beta1 is released.
 
 [Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)

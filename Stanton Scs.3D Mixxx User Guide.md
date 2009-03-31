@@ -1,9 +1,31 @@
 # Stanton SCS.3d & Mixxx User Guide
 
-This guide explains how the SCS.3d is mapped by default in Mixxx by
-mode.
+This guide explains how the SCS.3d is mapped by default in Mixxx.
 
 [[/media/hardware/stantonscs/scs3d_preset.jpg|]]
+
+***Easy customization:*** We have provided the following customization
+variables at the top of the script you can set to your liking:
+
+  - **pitchRanges** - Set the pitch slider range when the Pitch LED is
+    off, blue, purple and red (in decimal values. E.g. 0.08 = 8%, 0.5 =
+    50%)
+  - **fastDeckChange** - If set to true, changes decks instantly by
+    skipping the flashing lights. Useful for beat juggling on one unit.
+  - **spinningPlatter** - If set to true, uses the circle LEDs to show
+    the track position in vinyl and vinyl2 modes (also useful for
+    juggling.)
+  - **markHotCues** - Set to `"blue"` or `"red"` (with quotes) to choose
+    which LEDs mark the stored positions in TRIG & LOOP modes
+  - **jogOnLoad** - If true, the unit will automatically change to Vinyl
+    (jog) mode after loading a track (from Track Select mode)
+  - **globalMode** - If true, the unit will stay in the current mode on
+    deck changes (instead of switching to the mode you were in the last
+    time you controlled that deck.)
+
+Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
+editor (Wordpad works too) and you'll see these variables right near the
+top. Edit & save, then restart Mixxx and enjoy.
 
 ## Mode buttons
 
@@ -99,3 +121,7 @@ blue LEDs light when a cue point is set on that button.
   - B12 selects forward between Library, Playlist, and Browse views
   - B13 moves the highlight up one item
   - B14 moves the highlight down one item
+
+## 
+
+*Images courtesy of Stanton Magnetics, Inc.*

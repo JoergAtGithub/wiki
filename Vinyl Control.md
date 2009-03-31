@@ -164,6 +164,14 @@ timecode you're using. Click OK, then in the menu bar at the top, select
 (Player 1) and hit play on your turntable. Mixxx should begin playing
 the track in Player 1.
 
+If you'd rather watch videos on how to troubleshoot vinyl control, here
+you go:
+
+  - Part 1 shows you how to connect your turntable correctly & test for
+    audio: <http://www.youtube.com/watch?v=osnAMf04HGc>
+  - Part 2 shows you how to test in xwax and Mixxx:
+    <http://www.youtube.com/watch?v=osv1EMK9560>
+
 ## How can I help?
 
 If you're interested in adding support for more timecode records, your

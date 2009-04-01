@@ -185,6 +185,13 @@ midi-mappings-scripts.js file:
     to see what the current values of these variables are. You can also
     of course put it in the \<key/\> tag of your XML to make sure the
     values being passed to the script are what you expect.
+  - **script.pitch**(LSB, MSB, category) - Intended to be called from
+    another script function, pass this the values from a MIDI Pitch
+    control and it will return a corresponding value suitable for
+    Mixxx's pitch sliders ("rate" controls.) So if you just want to set
+    those controls, the calling function need only have the single line:
+    `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
+    value, category));`
 
 <!-- end list -->
 

@@ -29,7 +29,7 @@ drivers aren't always the latest.) Also, if you're on Windows, make sure
 you have the latest [DirectX](http://www.microsoft.com/directx)
 installed.
 
-## No sound cards appear in the preferences dialog - How can I fix this?
+## No or too few sound cards appear in the preferences dialog - How can I fix this?
 
 When no sound cards/devices appear in the sound preferences dialog, it
 usually means that another application is using your sound card(s). This

@@ -124,15 +124,15 @@ range. (Useful for LED sequences.)
 
 These define the part of Mixxx that is being controlled:
 
-  - group - The controlobject group
-  - key - The controlobject key, a list of which can be found
+  - group - The MixxxControl (controlobject) group
+  - key - The MixxxControl (controlobject) key, a list of which can be
+    found
     [below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
 These tags define the MIDI event that Mixxx will listen for:
 
   - miditype - Midi object type: Ctrl (0xBn), Key (0x9n (On)/0x8n
-    (Off)), or Pitch (0xEn). (n is the MIDI channel 0..16 or 0x00..0x0F
-    in hex.)
+    (Off)), or Pitch (0xEn).
   - midino - The MIDI control or note number (leave this out for the
     Pitch miditype)
   - midichan - The MIDI channel
@@ -156,8 +156,8 @@ These tags define the MIDI event that Mixxx will listen for:
     tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
   - Hercjog - Handle hercules jog wheels (**deprecated**...please
     replace with a MIDI script function.)
-  - status - MIDI "Status" byte (e.g. Note on (0x9\#), Control Change
-    (0xB\#))
+  - status - MIDI "Status" byte (e.g. Note on (0x9n), Control Change
+    (0xBn), Pitch (0xEn). n is the MIDI channel 0x0..0xF in hex.)
   - maximum - Send the 'on' value when the Mixxx control drops below
     this value.
   - minimum - Send the 'on' value when the Mixxx control exceeds this

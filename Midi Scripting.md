@@ -170,8 +170,8 @@ All device script files are expected to contain initialize and shutdown
 functions (called \<manufacturer\>\<device\>.init() and
 \<manufacturer\>\<device\>.shutdown() ) which will be called when Mixxx
 opens and closes the device, respectively. They can be empty, but are
-useful for putting controllers into known states before operation begins
-or the program exits.
+useful for putting controllers into known states and/or lighting certain
+LEDs before operation begins or the program exits.
 
 ### Available common functions
 

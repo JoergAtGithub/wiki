@@ -43,6 +43,13 @@ currently using your soundcards. If you're using ALSA, you can also
 choose the "default" sound card option which will mix Mixxx's output
 with everything else.
 
+You can also go into your sound manager preferences and change the
+auto-suspend feature to do so after just a second or so. (In KDE Control
+Center, go to Sound & Multimedia, Sound System, then at the bottom of
+the pane, change "Auto-suspend if idle".) This will cause the desktop to
+drop exclusive control of the card sooner so Mixxx can see it on
+startup.
+
 ## Mixxx freezes, segfaults, or otherwise misbehaves and I have an nVidia graphics card
 
 Before you try anything else, please update or reinstall your nVidia

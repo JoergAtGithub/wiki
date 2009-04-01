@@ -1,6 +1,6 @@
 # Stanton SCS.3m "DaMix"
 
-[[/media/hardware/stantonscs/scs3m_main.png|]]
+[[/media/hardware/stantonscs/scs3m_angle.jpg|]]
 
 Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 

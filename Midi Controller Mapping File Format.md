@@ -40,11 +40,12 @@ and an optional info tag which contains information about the preset
 (primarily used for distribution of presets).
 
 ``` 
-    <controller id="Device name of the controller" port="Port"> <!-- Many controllers in one file supported. A controller should only appear once -->
+    <controller id="Device name of the controller" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
 ```
 
 The "controller id" can be obtained when you run Mixxx with the
-controller plugged in and visit the Midi Devices dialog.
+controller plugged in and visit the Midi Devices dialog. Leave port
+empty.
 
 The core part of the file contains a definition for a single controller.
 There may be multiple controllers in one file (for more complex setups).

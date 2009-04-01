@@ -26,7 +26,7 @@ format is used for storing and distributing MIDI mappings from multiple
 scopes.
 
     <?xml version="1.0" encoding="utf-8"?>
-        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.6.2+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
+        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.7.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
         <info><!-- Optional - information about the preset file -->
             <name>Example MIDI Preset for Mixxx</name>
             <author>Tom Care</author>

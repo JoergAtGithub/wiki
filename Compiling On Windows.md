@@ -20,8 +20,10 @@ referred to as MSVC in discussions. (MicroSoft Visual C++))
     You just need the vcsetup.exe file.
   - [Microsoft Platform SDK 2003
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
-  - [Qt 4.5 for Windows source
-    package](http://download.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip)
+  - [Qt libraries for Windows
+    (32-bit)](http://www.qtsoftware.com/downloads/windows-cpp) (For
+    64-bit, you have to build Qt. Use
+    [CuteBuilder](http://www.cutebuilder.net/) to help.)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - An SVN or BZR client like
@@ -59,15 +61,6 @@ INCLUDE=C:\\Program Files\\Microsoft Platform SDK\\Include;C:\\Program
 Files\\Microsoft Platform
 SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
 Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
-
-1.  Build QT
-
-<!-- end list -->
-
-  - Start the MSVC command prompt and follow these instructions:
-    <http://doc.trolltech.com/4.5/install-win.html>
-
-<!-- end list -->
 
 1.  Create the Visual Studio Project
     1.  Start the command prompt and change into your Mixxx source

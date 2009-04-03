@@ -1,7 +1,10 @@
-## Build using Microsoft Visual Studio Express
+## Build the 32-bit version using Microsoft Visual Studio Express
 
 (Currently the official way to build Mixxx on Windows, frequently
-referred to as MSVC in discussions. (MicroSoft Visual C++))
+referred to as MSVC in discussions.
+(<span class="underline">M</span>icro<span class="underline">s</span>oft
+<span class="underline">V</span>isual
+<span class="underline">C</span>++))
 
 //(Taken from
 <http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32)//>
@@ -22,8 +25,7 @@ referred to as MSVC in discussions. (MicroSoft Visual C++))
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
   - [Qt libraries for Windows
     (32-bit)](http://www.qtsoftware.com/downloads/windows-cpp) (For
-    64-bit, you have to build Qt. Use
-    [CuteBuilder](http://www.cutebuilder.net/) to help.)
+    64-bit, you have to build Qt. See the next section.)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - An SVN or BZR client like
@@ -36,7 +38,7 @@ referred to as MSVC in discussions. (MicroSoft Visual C++))
 
 <!-- end list -->
 
-  - Checkout the mixxx subversion repository:
+  - Checkout the mixxx repository:
 
 <!-- end list -->
 
@@ -78,10 +80,103 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
   - Press F7 to build the project
 
+## Build a 64-bit version using Microsoft Visual Studio Express
+
+### Steps
+
+*(You may need to be running an x64 version of Windows, such as XP
+Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc. but I
+haven't checked.)*
+
+1.  Download & install prerequisites
+
+<!-- end list -->
+
+  - [Microsoft Visual Studio C++
+    Express](http://www.microsoft.com/express/download/)
+    ([2005](http://www.microsoft.com/express/2005/download/default.aspx)
+    or later.) [Alternate link
+    for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+    You just need the vcsetup.exe file.
+  - [Microsoft Windows SDK for
+    Vista](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=ff6467e6-5bba-4bf5-b562-9199be864d29)
+    (Works on all recent versions of Windows.) You only need to install
+    the following:
+
+<!-- end list -->
+
+``` 
+    * Vista Headers & x64 libraries
+    * x64 C++ compiler
+    * Debugging tools (optional, but recommended for troubleshooting)
+    * Win32 Development Tools (I don't think you need this, but I'm not sure. I installed it just incase.)
+* [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip|Qt 4.5 source for Windows]]
+* [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]
+* [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]
+* An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
+- Prepare build environment
+  - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
+```
+
+QTDIR = C:\\qt\\qt-win-opensource-src-4.5.0 PATH =
+C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
+
+1.  Tweak the Qt configuration
+    1.  Edit
+        qt-win-opensource-src-4.5.0\\mkspecs\\win32-msvc2008\\qmake.conf:
+        1.  Add to QMAKE\_CFLAGS: /favor:blend (for all x64 CPUs, or use
+            AMD64 or EM64T if you want to target), also add /MP if you
+            have more than one processor/core
+        2.  Add to QMAKE\_LFLAGS: /MACHINE:X64 (or IA64)
+        3.  (optional) Add -Ox to QMAKE\_CFLAGS\_RELEASE for extra
+            optimizations
+    2.  Edit qt-win-opensource-src-4.5.0\\qmake\\makefile.win32:
+        1.  add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,)
+            and -Ox for more speed if you want
+        2.  add to LFLAGS: /MACHINE:X64 (or IA64)
+    3.  To avoid building the examples and demos (you don't need them
+        and it saves ALOT of time,) edit
+        qt-win-opensource-src-4.5.0\\projects.pro:
+          - Remove "examples" and "demos" from QT\_BUILD\_PARTS toward
+            the top of the file.
+2.  Build Qt
+    1.  Start the SDK command prompt (Start-\>Microsoft Windows
+        SDK-\>CMD Shell)
+    2.  Type `cd %QTDIR%` and hit Enter.
+    3.  Type `configure -platform win32-msvc2008 -no-webkit` and for
+        more optimization, add `-mmx -3dnow -sse -sse2` & hit Enter.
+    4.  When it finishes (about 5-10 minutes,) just type `nmake` and
+        press Enter and you should be good (takes 1\~3 hours.)
+          - If you get `<sdkdir>\winnt.h(1831) : error C2733: second C
+            linkage of overloaded function '_interlockedbittestandset'
+            not allowed` then edit \<sdkdir\>\\VC\\INCLUDE\\intrin.h and
+            change the definition of `_interlockedbittestandset` and
+            `_interlockedbittestandreset` to `long volatile *` Do
+            `nmake` again and it should finish fine.
+3.  Get the Mixxx source code
+
+<!-- end list -->
+
+  - Checkout the mixxx repository:
+
+<!-- end list -->
+
+``` 
+    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
+    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+- Create the Visual Studio Project
+  - Start the SDK command prompt as above and change into your Mixxx source directory
+  - Type ''scons qtdir=%QTDIR% msvc'' (you may need to use ''scons.bat'' instead of just ''scons''.) This will generate a Visual Studio project file called mixxx.vcproj.
+  - Double-click the mixxx.vcproj file to open the project.
+  - Open the Menu->Projects->Mixxx Properties... Dialog Go to the C/C++ -> Preprocessor/Definitions Tab and add _DEBUG to the preprocessor definitions. This lets you backtrace (debug) Mixxx.
+- Build the project
+* Press F7 to build the project
+```
+
 [Generic MSVC x64 build
 info](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
 
-## Build using the Qt Creator SDK (easier)
+## Build a 32-bit version using the Qt Creator SDK (easier)
 
 The following is an alternate, currently experimental way to build Mixxx
 from trunk using the [Qt Creator

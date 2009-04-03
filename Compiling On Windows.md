@@ -65,8 +65,8 @@ SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
 Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
 1.  Create the Visual Studio Project
-    1.  Start the command prompt and change into your Mixxx source
-        directory
+    1.  Start the command prompt and change into the "mixxx"
+        subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `scons qtdir=C:\qt\4.5.0 msvc` (you may need to use
         `scons.bat` instead of just `scons`.) This will generate a
         Visual Studio project file called mixxx.vcproj.
@@ -165,7 +165,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Create the Visual Studio Project
-  - Start the SDK command prompt as above and change into your Mixxx source directory
+  - Start the SDK command prompt as above and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''scons qtdir=%QTDIR% msvc'' (you may need to use ''scons.bat'' instead of just ''scons''.) This will generate a Visual Studio project file called mixxx.vcproj.
   - Double-click the mixxx.vcproj file to open the project.
   - Open the Menu->Projects->Mixxx Properties... Dialog Go to the C/C++ -> Preprocessor/Definitions Tab and add _DEBUG to the preprocessor definitions. This lets you backtrace (debug) Mixxx.

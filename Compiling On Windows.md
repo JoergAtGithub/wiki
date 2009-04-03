@@ -52,7 +52,7 @@ referred to as MSVC in discussions.
 QTDIR = C:\\qt\\4.5.0 INCLUDE =
 C:\\MSVC2008\\VC\\Include;C:\\PSDK\\Include;C:\\DXSDK\\Include LIB =
 C:\\MSVC2008\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
-C:\\qt\\4.5.0\\bin;C:\\Python26\</code\>
+C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ``` 
   - At the command prompt, change to the \bin subdirectory of your Visual C++ installation. Run "vcvars32.bat" to set the Path and Environment Variables for Command-Line Builds

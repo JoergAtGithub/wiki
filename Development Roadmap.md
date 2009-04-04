@@ -68,7 +68,9 @@ Ideas for new features:
 
   - Vector-based GUI
   - SQLite-based library
-  - [Internationalization](http://doc.trolltech.com/4.3/i18n.html)
+  - [Internationalization](http://doc.trolltech.com/4.3/i18n.html), also
+    [Launchpad
+    translations](https://help.launchpad.net/Translations/YourProject)
   - [Performance improvements](Performance%20improvements)
 
 No plans yet, rough targets are:

@@ -121,60 +121,58 @@ haven't checked.)*
 QTDIR = C:\\qt\\qt-win-opensource-src-4.5.0 PATH =
 C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
-1.  Tweak the Qt configuration
-    1.  Edit
-        qt-win-opensource-src-4.5.0\\mkspecs\\win32-msvc2008\\qmake.conf:
-        1.  Add to QMAKE\_CFLAGS: /favor:blend (for all x64 CPUs, or use
-            AMD64 or EM64T if you want to target), also add /MP if you
-            have more than one processor/core
-        2.  Add to QMAKE\_LFLAGS: /MACHINE:X64 (or IA64)
-        3.  (optional) Add -Ox to QMAKE\_CFLAGS\_RELEASE for extra
-            optimizations
-    2.  Edit qt-win-opensource-src-4.5.0\\qmake\\makefile.win32:
-        1.  add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,)
-            and -Ox for more speed if you want
-        2.  add to LFLAGS: /MACHINE:X64 (or IA64)
-    3.  To avoid building the examples and demos (you don't need them
-        and it saves ALOT of time,) edit
-        qt-win-opensource-src-4.5.0\\projects.pro:
-          - Remove "examples" and "demos" from QT\_BUILD\_PARTS toward
-            the top of the file.
-2.  Build Qt
-    1.  Start the SDK command prompt (Start-\>Microsoft Windows
-        SDK-\>CMD Shell)
-    2.  Type `cd %QTDIR%` and hit Enter.
-    3.  Type `configure -platform win32-msvc2008 -no-webkit` and for
-        more optimization, add `-mmx -3dnow -sse -sse2` & hit Enter.
-    4.  When it finishes (about 5-10 minutes,) just type `nmake` and
-        press Enter and you should be good (takes 1\~3 hours.)
-          - If you get `<sdkdir>\winnt.h(1831) : error C2733: second C
-            linkage of overloaded function '_interlockedbittestandset'
-            not allowed` then edit \<sdkdir\>\\VC\\INCLUDE\\intrin.h and
-            change the definition of `_interlockedbittestandset` and
-            `_interlockedbittestandreset` to `long volatile *` Do
-            `nmake` again and it should finish fine.
-3.  Get the Mixxx source code
-
-<!-- end list -->
-
-  - Checkout the mixxx repository:
-
-<!-- end list -->
-
 ``` 
+  - Follow the instructions [[http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html|on this page]] to configure VS C++ to use the x64 compiler, includes, and libs
+- Tweak the Qt configuration
+  - Edit qt-win-opensource-src-4.5.0\mkspecs\win32-msvc2008\qmake.conf:
+    - Add to QMAKE_CFLAGS: /favor:blend (for all x64 CPUs, or use AMD64 or EM64T if you want to target), also add /MP if you have more than one processor/core
+    - Add to QMAKE_LFLAGS: /MACHINE:X64 (or IA64)
+    - (optional) Add -Ox to QMAKE_CFLAGS_RELEASE for extra optimizations
+  - Edit qt-win-opensource-src-4.5.0\qmake\makefile.win32:
+    - add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,) and -Ox for more speed if you want
+    - add to LFLAGS: /MACHINE:X64 (or IA64)
+  - To avoid building the examples and demos (you don't need them and it saves ALOT of time,) edit qt-win-opensource-src-4.5.0\projects.pro:
+    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file.
+- Build Qt
+  - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
+  - Type ''cd %QTDIR%'' and hit Enter.
+  - Type ''configure -platform win32-msvc2008 -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
+  - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
+    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
+- Get the Mixxx source code
+* Checkout the mixxx repository:
     * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Create the Visual Studio Project
   - Start the SDK command prompt as above and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''scons qtdir=%QTDIR% msvc'' (you may need to use ''scons.bat'' instead of just ''scons''.) This will generate a Visual Studio project file called mixxx.vcproj.
-  - Double-click the mixxx.vcproj file to open the project.
+    * If you get an error saying that it couldn't find portaudio, do the following:
+      - Edit C:\Python26\Lib\site-packages\scons-1.2.0\SCons\Tool\msvc.py
+      - Comment out the ''def get_msvc_paths'' function (starts around line 536)
+      - replace it with the following: <code>
+```
+
+def get\_msvc\_paths(env, version=None, use\_mfc\_dirs=0):
+
+``` 
+  """Return a 3-tuple of (INCLUDE, LIB, PATH) as the values
+  of those three environment variables that should be set
+  in order to execute the MSVC tools properly."""
+  exe_path = os.environ['PATH']
+  lib_path = os.environ['LIB']
+  include_path = os.environ['INCLUDE']
+```
+
+``` 
+  return (include_path, lib_path, exe_path)</code>
+      - Re-run ''scons qtdir=%QTDIR% msvc'' and it should work.
+  - Run the Visual C++ GUI from this command line to have it use the x64 compile tools (e.g. ''C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\VCExpress.exe'')
+  - Open the ''mixxx\trunk\mixxx\src\mixxx.vcproj'' file.
+  - Follow the instructions [[http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html|on this page again]] to modify the default settings in the project to get it to build for x64.
   - Open the Menu->Projects->Mixxx Properties... Dialog Go to the C/C++ -> Preprocessor/Definitions Tab and add _DEBUG to the preprocessor definitions. This lets you backtrace (debug) Mixxx.
 - Build the project
 * Press F7 to build the project
 ```
-
-[Generic MSVC x64 build
-info](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
 
 ## Build a 32-bit version using the Qt Creator SDK (easier)
 

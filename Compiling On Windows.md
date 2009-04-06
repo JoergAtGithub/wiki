@@ -67,18 +67,13 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 1.  Create the Visual Studio Project
     1.  Start the command prompt and change into the "mixxx"
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
-    2.  Type `scons qtdir=C:\qt\4.5.0 msvc` (you may need to use
-        `scons.bat` instead of just `scons`.) This will generate a
-        Visual Studio project file called mixxx.vcproj.
-    3.  Double-click the mixxx.vcproj file to open the project.
-    4.  Open the Menu-\>Projects-\>Mixxx Properties... Dialog Go to the
-        C/C++ -\> Preprocessor/Definitions Tab and add \_DEBUG to the
-        preprocessor definitions. This lets you backtrace (debug) Mixxx.
-2.  Build the project
-
-<!-- end list -->
-
-  - Press F7 to build the project
+    2.  Type `scons qtdir=C:\qt\4.5.0 msvcdebug=1` (you may need to use
+        `scons.bat` instead of just `scons`.) 
+2.  When Mixxx is done compiling, run it from the "mixxx/dist/"
+    directory.
+3.  (Optional) If you'd like to generate a MSVC project for use with
+    Visual Studio, run "scons qtdir=C:\\qt\\4.5.0 msvc", and open the
+    newly generated "mixxx.vcproj" file with Visual Studio.
 
 ## Build a 64-bit version using Microsoft Visual Studio Express
 

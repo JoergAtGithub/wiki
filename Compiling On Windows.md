@@ -69,8 +69,8 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `scons qtdir=C:\qt\4.5.0 msvcdebug=1` (you may need to use
         `scons.bat` instead of just `scons`.) 
-2.  When Mixxx is done compiling, run it from the "mixxx/dist/"
-    directory.
+2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
+    "mixxx/dist/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
     Visual Studio, run "scons qtdir=C:\\qt\\4.5.0 msvc", and open the
     newly generated "mixxx.vcproj" file with Visual Studio.

@@ -57,6 +57,8 @@ developers, and artists, and is summarized in the categories below.
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Threads](Threads)
+  - [Pitch percentages for half-tones and
+    notes](Pitch%20percentages%20for%20half-tones%20and%20notes)
   - Tutorials for new developers:
   - [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)

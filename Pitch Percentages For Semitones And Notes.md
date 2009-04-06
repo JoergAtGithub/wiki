@@ -3,7 +3,7 @@
 (This is useful if you're making a controller act similar to the Vestax
 Controller One.)
 
-| Note name | Half tones      | Pitch percentage |
+| Note name | Semitones       | Pitch percentage |
 | --------- | --------------- | ---------------- |
 | A         | \-12 = 1 octave | \-50%            |
 | Bb        | \-11            | \-46.83%         |

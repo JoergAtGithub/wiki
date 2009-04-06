@@ -95,6 +95,8 @@ may be done already or irrelevant.
   - SVG/Vector based skins so hitting fullscreen can automatically
     resize the widgets.
   - Looping controls
+  - A mode where the looping would start at the next beat / end of the
+    bar and would jump x beats \_backwards\_ when starting to loop
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate.
   - M4A support

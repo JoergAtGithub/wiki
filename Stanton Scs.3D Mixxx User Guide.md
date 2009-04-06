@@ -87,8 +87,8 @@ offers instant pitch change buttons in the following arrangements:
 **Fixed increment (red)** - Each button sets the pitch 3.33% above or
 below its vertical neighbors.
 
-**Key change (purple)** - Center buttons are one half tone away from
-their vertical neighbors and the outside ones are three half tones away
+**Key change (purple)** - Center buttons are one semitone away from
+their vertical neighbors and the outside ones are three semitones away
 (for harmonic key changes.)
 
 **Notes (black)** - Buttons correspond to major scale notes (ala Vestax

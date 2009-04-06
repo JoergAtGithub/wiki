@@ -100,6 +100,7 @@ may be done already or irrelevant.
   - M4A support
   - hotkey support (maybe configurable?)
   - adjustable drag sensitivity on visual waveform view
+  - also a way to change the direction ("scratching motion")
   - direct outs (table 1, table 2, master, headphones)
   - [Effect plugins](PluginIdeas)
   - live input (switchable input at first, maybe a delay/pitchable input
@@ -109,3 +110,15 @@ may be done already or irrelevant.
   - some more physically modelled turntable styles, with concepts of
     inertia, slipmat vector, and motor drive. [Details from Old
     Wiki](http://mixxx.sourceforge.net/wiki/index.php/Deck_Remodeling)
+  - Normalize to the waveform, track volume and output (over longer
+    perioid in the master output)
+  - Channel gain to affect the waveform
+  - BPM sync lock like in virtual dj (keep tracks in sync)
+  - Play lock feature so that you can't change a track that is currently
+    playing
+  - A button to switch between the vinyl emulation & pitch independent
+    time stretch ("master temp in cdjs")
+  - Remain / played time display switch
+  - "Loading" animation for the waveforms
+  - Clipping light to stay on (dimmer?) after clipping, reset by
+    clicking

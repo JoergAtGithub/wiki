@@ -33,8 +33,7 @@ top. Edit & save, then restart Mixxx and enjoy.
 
   - FX - Adjust & toggle Flanger effect, toggle reverse effect
   - EQ - Adjust channel EQ parameters
-  - Loop - nothing in this release (but flashes the button lights.
-    Impress your friends\!)
+  - Loop - Instant pitch changes (until Mixxx supports looping.)
   - Trig - Hot cues
   - Vinyl - Toggle between pitch bend, vinyl manipulation & scratching,
     and track selection
@@ -82,8 +81,28 @@ top. Edit & save, then restart Mixxx and enjoy.
 
 ## Loop Mode
 
-(This does nothing in Mixxx 1.7.0. It will control looping in a future
-version.)
+This will control looping in a future version of Mixxx. For now, it
+offers instant pitch change buttons in the following arrangements:
+
+**Fixed increment (red)** - Each button sets the pitch 3.33% above or
+below its vertical neighbors.
+
+**Key change (purple)** - Center buttons are one half tone away from
+their vertical neighbors and the outside ones are three half tones away
+(for harmonic key changes.)
+
+**Notes (black)** - Buttons correspond to major scale notes (ala Vestax
+Controller One.) This is most useful with a constant-pitch sound or
+chord. (You can generate one in Audacity.)
+
+Remember you can return to the original pitch (tonic) by holding down
+LOOP and pressing B12 (under the pitch slider.)
+
+Note that when you switch to Loop mode, the pitch range is automatically
+set to 100% in order for these buttons to work correctly.
+
+*Key change and Note modes were tuned with respect to 440Hz A (above
+middle C.)*
 
 ## Trig Modes
 

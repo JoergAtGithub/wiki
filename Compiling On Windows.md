@@ -64,7 +64,7 @@ Files\\Microsoft Platform
 SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
 Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
-1.  Create the Visual Studio Project
+1.  Build Mixxx:
     1.  Start the command prompt and change into the "mixxx"
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `scons qtdir=C:\qt\4.5.0 msvcdebug=1` (you may need to use

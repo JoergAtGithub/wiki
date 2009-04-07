@@ -24,9 +24,9 @@ Steps to get it working:
 
   - [DM2 Install
     CD](http://dm2.proboards23.com/index.cgi?board=DM2CD&action=display&thread=207)
-    - The DM2 install CD download, includes the Windows drivers.
-    (<http://www.mixman.com/products/upgrades.html][WinXP update> (won't
-    work without this\!))
+    - The DM2 install CD download, includes the Windows drivers. ([WinXP
+    update](http://www.mixman.com/products/upgrades.html) (won't work
+    without this\!))
   - [MIDIYoke](http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm)
     - Download and install MIDIYoke junction.
   - [dm2midi](http://www.pdoom.ch/dm2/) - Then install dm2tomidi ....

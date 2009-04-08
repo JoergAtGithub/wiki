@@ -1,6 +1,6 @@
 # Phrases of the development cycle / mottos
 
-### 1.6.2
+### 1.6.2/1.7.0
 
   - WTF?\!
   - Something's not right...uhh, dunno.

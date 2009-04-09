@@ -120,6 +120,17 @@ To begin troubleshooting any problems you have, please do the following:
   - Make sure the recording volume is turned up in your soundcard's
     volume mixer. Too quiet of a signal can result in pitch control
     being inverted.
+  - On Windows: ......
+  - On Ubuntu (with ALSA+gnome): double-click the volume icon in your
+    taskbar. A Volume Control should open up. Click "Preferences" and
+    turn on all the options marked 'Recording'. Do \*not\* unmute
+    Playback-\>Line-In, this will start patching your turntables through
+    your speakers and will probably confuse you. Go to the (probably
+    newly added) Recording tab and play with turning on the different
+    options while your turntables are playing in there until you find
+    the right option.
+  - On KDE: DJ Pegasus shows how to use kmix in his vinyl-control video:
+    <http://www.youtube.com/watch?v=osnAMf04HGc>
   - Make sure you don't have 50/60 Hz ground-loop hum. Ground your
     turntables to your amp/mixer. Ground-loop hum can cause choppy
     playback and otherwise unpredictable behaviour.
@@ -139,10 +150,10 @@ tone, check your recording volume mixer and capture settings. Also,
 check that your turntable is plugged into the correct plug on your
 soundcard.
 
-  - **Linux:** Grab a copy of [xwax](http://www.xwax.co.uk/), then
-    follow the instructions below. (If you want to use a sound editor
-    like [Audacity](http://audacity.sourceforge.net/), follow the
-    Windows instructions above.)
+  - **Linux:** Grab a copy of [xwax](http://www.xwax.co.uk/) then follow
+    the instructions below. (If you want to use a sound editor like
+    [Audacity](http://audacity.sourceforge.net/), follow the Windows
+    instructions above.)
 
 Start xwax with the -t option set for the type of timecode vinyl/cd
 you're using, -l for the path to your music files, and -d for the sound

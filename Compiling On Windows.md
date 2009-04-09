@@ -80,8 +80,7 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 ### Steps
 
 *(You may need to be running an x64 version of Windows, such as XP
-Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc. but I
-haven't checked.)*
+Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 
 1.  Download & install prerequisites
 
@@ -138,18 +137,14 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 * Checkout the mixxx repository:
     * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
-- Create the Visual Studio Project
-  - Start the SDK command prompt as above and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''scons qtdir=%QTDIR% msvc'' (you may need to use ''scons.bat'' instead of just ''scons''.) This will generate a Visual Studio project file called mixxx.vcproj.
-    * If you get an error saying that it couldn't find portaudio, do the following:
+- Build Mixxx
+  - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
+  - Type scons msvcdebug=1 (you may need to use scons.bat instead of just scons.)
+    * If you get an error saying that it couldn't find PortAudio, do the following:
       - Edit C:\Python26\Lib\site-packages\scons-1.2.0\SCons\Tool\msvc.py
       - Comment out the ''def get_msvc_paths'' function (starts around line 536)
       - replace it with the following: <code>
-```
-
-def get\_msvc\_paths(env, version=None, use\_mfc\_dirs=0):
-
-``` 
+      def get_msvc_paths(env, version=None, use_mfc_dirs=0):
   """Return a 3-tuple of (INCLUDE, LIB, PATH) as the values
   of those three environment variables that should be set
   in order to execute the MSVC tools properly."""
@@ -160,14 +155,37 @@ def get\_msvc\_paths(env, version=None, use\_mfc\_dirs=0):
 
 ``` 
   return (include_path, lib_path, exe_path)</code>
-      - Re-run ''scons qtdir=%QTDIR% msvc'' and it should work.
-  - Run the Visual C++ GUI from this command line to have it use the x64 compile tools (e.g. ''C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\VCExpress.exe'')
-  - Open the ''mixxx\trunk\mixxx\src\mixxx.vcproj'' file.
-  - Follow the instructions [[http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html|on this page again]] to modify the default settings in the project to get it to build for x64.
-  - Open the Menu->Projects->Mixxx Properties... Dialog Go to the C/C++ -> Preprocessor/Definitions Tab and add _DEBUG to the preprocessor definitions. This lets you backtrace (debug) Mixxx.
-- Build the project
-* Press F7 to build the project
+      - Re-run ''scons msvc'' and it should work.
+- Run it: When Mixxx is done compiling, run mixxx.exe in the “mixxx\dist\” directory.
 ```
+
+#### If you'd like to generate an MSVC project for use with Visual Studio (optional)
+
+1.  Start the SDK command prompt as above and change into the "mixxx"
+    subdirectory of the checkout directory. (E.g. trunk\\mixxx)
+2.  Type `scons msvc` (you may need to use `scons.bat` instead of just
+    `scons`.) This will generate a Visual Studio project file called
+    mixxx.vcproj.
+
+<!-- end list -->
+
+  - If you get an error saying that it couldn't find PortAudio, see
+    above
+
+<!-- end list -->
+
+1.  Run the Visual C++ GUI from this command line to have it use the x64
+    compile tools (e.g. `C:\Program Files (x86)\Microsoft Visual
+    Studio 9.0\Common7\IDE\VCExpress.exe`)
+2.  Open the `mixxx\trunk\mixxx\src\mixxx.vcproj` file.
+3.  Follow the instructions [on this page
+    again](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
+    to modify the default settings in the project to get it to build for
+    x64.
+4.  Open the Menu-\>Projects-\>Mixxx Properties... Dialog Go to the
+    C/C++ -\> Preprocessor/Definitions Tab and add \_DEBUG to the
+    preprocessor definitions. This lets you backtrace (debug) Mixxx.
+5.  Build the project: Press F7 to build the project
 
 ## Build a 32-bit version using the Qt Creator SDK (easier)
 

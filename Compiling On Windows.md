@@ -23,9 +23,10 @@ referred to as MSVC in discussions.
     You just need the vcsetup.exe file.
   - [Microsoft Platform SDK 2003
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
-  - [Qt libraries for Windows
-    (32-bit)](http://www.qtsoftware.com/downloads/windows-cpp) (For
-    64-bit, you have to build Qt. See the next section.)
+  - [Qt 4.5 source for
+    Windows](http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip)
+    (Don't get the binary package as it doesn't come with
+    MSVC-compatible libs.)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - An SVN or BZR client like
@@ -55,7 +56,7 @@ C:\\MSVC2008\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
 C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ``` 
-  - At the command prompt, change to the \bin subdirectory of your Visual C++ installation. Run "vcvars32.bat" to set the Path and Environment Variables for Command-Line Builds
+  - Start the command prompt, change to the \bin subdirectory of your Visual C++ installation. Run "vcvars32.bat" to set the Path and Environment Variables for Command-Line Builds
   - Edit your C:\Program Files\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat and add to it:<code>
 ```
 
@@ -64,16 +65,21 @@ Files\\Microsoft Platform
 SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
 Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
-1.  Build Mixxx:
-    1.  Start the command prompt and change into the "mixxx"
-        subdirectory of the checkout directory. (E.g. trunk\\mixxx)
-    2.  Type `scons qtdir=C:\qt\4.5.0 msvcdebug=1` (you may need to use
-        `scons.bat` instead of just `scons`.) 
-2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
-    "mixxx/dist/" directory.
-3.  (Optional) If you'd like to generate a MSVC project for use with
-    Visual Studio, run "scons qtdir=C:\\qt\\4.5.0 msvc", and open the
-    newly generated "mixxx.vcproj" file with Visual Studio.
+``` 
+  - To avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,) edit C:\qt\4.5.0\projects.pro:
+    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it.
+- Build Qt
+  - Start the Visual Studio command prompt (Start->Microsoft C++ Visual Studio->Visual Studio Tools->Visual Studio Command Prompt)
+  - Type ''cd %QTDIR%'' and hit Enter.
+  - Type ''configure -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
+  - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
+    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
+- Build Mixxx:
+  - Start the command prompt and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
+  - Type ''scons qtdir=C:\qt\4.5.0 msvcdebug=1'' (you may need to use ''scons.bat'' instead of just ''scons''.) 
+- Run it: When Mixxx is done compiling, run mixxx.exe in the "mixxx/dist/" directory.
+- (Optional) If you'd like to generate a MSVC project for use with Visual Studio, run "scons qtdir=C:\qt\4.5.0 msvc", and open the newly generated "mixxx.vcproj" file with Visual Studio.
+```
 
 ## Build a 64-bit version using Microsoft Visual Studio Express
 

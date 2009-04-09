@@ -131,6 +131,9 @@ To begin troubleshooting any problems you have, please do the following:
     the right option.
   - On KDE: DJ Pegasus shows how to use kmix in his vinyl-control video:
     <http://www.youtube.com/watch?v=osnAMf04HGc>
+  - On other combinations: if you run into trouble on some other setup
+    routing your soundcard lines and solve it, please add your solution
+    here
   - Make sure you don't have 50/60 Hz ground-loop hum. Ground your
     turntables to your amp/mixer. Ground-loop hum can cause choppy
     playback and otherwise unpredictable behaviour.

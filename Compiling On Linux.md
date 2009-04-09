@@ -10,7 +10,8 @@ distribution is Debian based (such as Ubuntu), you can install them by
 running:
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install subversion
+    sudo apt-get install bzr
+    sudo apt-get install subversion (being phased out)
     sudo apt-get install scons
     sudo apt-get install libqt4-dev
 
@@ -32,9 +33,13 @@ your distribution's package manager:
 ## 2\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.
-Either grab the source for the latest release off our [downloads
+Either grab the source for the latest release from our [downloads
 page](http://www.mixxx.org/download.php), or checkout a snapshot from
-SVN:
+BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
+
+    bzr checkout lp:mixxx
+
+For SVN: (being phased out)
 
     svn co https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx
 
@@ -63,8 +68,12 @@ If you have a Hercules DJ Console, be sure you ~~enable the
 install the offical [Hercules Linux
 drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1).
 
-If you wanted to update later to a newer SVN snapshot, you would go back
-to the mixxx directory and run:
+If you wanted to update later to a newer snapshot, you would go back to
+the mixxx directory and run:
+
+    bzr update
+
+For SVN:
 
     svn update
 

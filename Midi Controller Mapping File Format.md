@@ -64,9 +64,8 @@ list of what these values can be, [see
 below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
 ``` 
-                <miditype>Ctrl</miditype>
+                <status>0xB0</status> <-- CC on channel 1 -->
                 <midino>0x07</midino>
-                <midichan>0x03</midichan>
 ```
 
 These tags define the MIDI event that Mixxx will listen for. There is
@@ -132,11 +131,11 @@ These define the part of Mixxx that is being controlled:
 
 These tags define the MIDI event that Mixxx will listen for:
 
-  - miditype - Midi object type: Ctrl (0xBn), Key (0x9n (On)/0x8n
-    (Off)), or Pitch (0xEn).
+  - status - MIDI Message Category (high nibble) and channel (low
+    nibble) - CC (0xBn), NOTE\_ON (0x9n), NOTE\_OFF (0x8n), or Pitch
+    Bend (0xEn), where n is the channel number (0-15 inclusive).
   - midino - The MIDI control or note number (leave this out for the
     Pitch miditype)
-  - midichan - The MIDI channel
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options will have
     default values, eg a jogwheel might have no acceleration by default.

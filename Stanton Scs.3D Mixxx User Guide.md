@@ -12,9 +12,13 @@ variables at the top of the script you can set to your liking:
     50%)
   - **fastDeckChange** - If set to true, changes decks instantly by
     skipping the flashing lights. Useful for beat juggling on one unit.
-  - **spinningPlatter** - If set to true, uses the circle LEDs to show
-    the track position in vinyl and vinyl2 modes (also useful for
-    juggling.)
+  - **spinningPlatter** - If set to true, uses the circle LEDs to
+    accurately show the track position in record revolutions, also
+    useful for juggling.
+  - **spinningPlatterOnlyVinyl** - If set to true, only shows the
+    spinning platter LED in vinyl modes. Otherwise shows in all modes
+    except LOOP and TRIG (because they're used for other things in those
+    modes.)
   - **markHotCues** - Set to `"blue"` or `"red"` (with quotes) to choose
     which LEDs mark the stored positions in TRIG & LOOP modes
   - **jogOnLoad** - If true, the unit will automatically change to Vinyl

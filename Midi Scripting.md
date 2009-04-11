@@ -37,9 +37,8 @@ MIDI mapping file, put the full function name in the \<key\> tag, and a
             <control>    <!--    Pitch slider    -->
                 <group>[Master]</group>
                 <key>StantonSCS3d.pitchSlider</key>
-                <miditype>Ctrl</miditype>
+                <status>0xB0</status>
                 <midino>0x04</midino>
-                <midichan>0x01</midichan>
                 <options>
                     <Script-Binding/>
                 </options>
@@ -78,18 +77,19 @@ at Mixxx start-up.
 
 ### Function definitions
 
-**This API will likely change before release:**
+**This API has changed as of 10 April 2009**
 
-  - Category & channel may be replaced with MIDI Status (which contains
-    both.)
-  - Device will be removed
+  - "Device" has been removed
+  - "Category" has become "Status"
+  - The .init function now requires acceptance of an ID string parameter
+    (but you don't have to do anything with it.)
 
-Data passed to functions are, in order: MIDI channel, device name,
-control/note, value, and MIDI category (Note (0x9\#), Control Change
-(0xB\#), etc.) Therefore, function definitions should look like:
+Data passed to functions are, in order: MIDI channel, control/note,
+value, and MIDI status (Note (0x9\#), Control Change (0xB\#), etc.)
+Therefore, function definitions should look like:
 
 ``` javascript
-ControllerName.functionName = function (channel, device, control, value, category) {
+ControllerName.functionName = function (channel, control, value, status) {
     ...
 }
 ```
@@ -126,7 +126,7 @@ Tying it all together, here is an example of a function that reduces the
 sensitivity of the SCS.3d's pitch slider (in relative mode:)
 
 ``` javascript
-StantonSCS3d.pitchSlider = function (channel, device, control, value, category) {   // Lower the sensitivity of the pitch slider
+StantonSCS3d.pitchSlider = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider
     var currentValue = engine.getValue("[Channel"+StantonSCS3d.deck+"]","rate");
     engine.setValue("[Channel"+StantonSCS3d.deck+"]","rate",currentValue+(value-64)/128);
 }
@@ -167,11 +167,13 @@ engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
 ### Init and Shutdown functions
 
 All device script files are expected to contain initialize and shutdown
-functions (called \<manufacturer\>\<device\>.init() and
+functions (called \<manufacturer\>\<device\>.init(ID) and
 \<manufacturer\>\<device\>.shutdown() ) which will be called when Mixxx
 opens and closes the device, respectively. They can be empty, but are
 useful for putting controllers into known states and/or lighting certain
-LEDs before operation begins or the program exits.
+LEDs before operation begins or the program exits. The ID parameter is
+the `controller id` attribute from the XML file and is useful for
+identifying the particular controller instance in print statements.
 
 ### Available common functions
 
@@ -180,18 +182,18 @@ midi-mappings-scripts.js file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
-  - **script.debug**(channel, device, control, value, category) - Prints
-    the values as passed to it. Call this from anywhere in your function
-    to see what the current values of these variables are. You can also
-    of course put it in the \<key/\> tag of your XML to make sure the
+  - **script.debug**(channel, control, value, status) - Prints the
+    values as passed to it. Call this from anywhere in your function to
+    see what the current values of these variables are. You can also of
+    course put it in the \<key/\> tag of your XML to make sure the
     values being passed to the script are what you expect.
-  - **script.pitch**(LSB, MSB, category) - Intended to be called from
+  - **script.pitch**(LSB, MSB, status) - Intended to be called from
     another script function, pass this the values from a MIDI Pitch
     control and it will return a corresponding value suitable for
     Mixxx's pitch sliders ("rate" controls.) So if you just want to set
     those controls, the calling function need only have the single line:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
-    value, category));`
+    value, status));`
 
 <!-- end list -->
 

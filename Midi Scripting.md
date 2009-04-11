@@ -83,6 +83,9 @@ at Mixxx start-up.
   - "Category" has become "Status"
   - The .init function now requires acceptance of an ID string parameter
     (but you don't have to do anything with it.)
+  - The channel numbers passed to the script now start at zero for
+    simpler use in MIDI messages (0x00 = MIDI Channel 1..0x0F = MIDI
+    Channel 16.)
 
 Data passed to functions are, in order: MIDI channel, control/note,
 value, and MIDI status (Note (0x9\#), Control Change (0xB\#), etc.)

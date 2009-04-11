@@ -40,12 +40,11 @@ and an optional info tag which contains information about the preset
 (primarily used for distribution of presets).
 
 ``` 
-    <controller id="Device name of the controller" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
+    <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
 ```
 
-The "controller id" can be obtained when you run Mixxx with the
-controller plugged in and visit the Midi Devices dialog. Leave port
-empty.
+The "controller id" is the brand & model of the controller, e.g.
+"Stanton SCS.3d". Leave "port" empty.
 
 The core part of the file contains a definition for a single controller.
 There may be multiple controllers in one file (for more complex setups).
@@ -68,9 +67,7 @@ below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
                 <midino>0x07</midino>
 ```
 
-These tags define the MIDI event that Mixxx will listen for. There is
-also a generic control enabling someone to define the behaviour using
-options:
+These tags define the MIDI event that Mixxx will listen for.
 
 ``` 
                 <options>

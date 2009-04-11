@@ -99,11 +99,11 @@ their vertical neighbors and the outside ones are three semitones away
 Controller One.) This is most useful with a constant-pitch sound or
 chord. (You can generate one in Audacity.)
 
-Remember you can return to the original pitch (tonic) by holding down
-LOOP and pressing B12 (under the pitch slider.)
+Remember you can return to the original pitch (tonic) by pressing B12
+(under the pitch slider.)
 
-Note that when you switch to Loop mode, the pitch range is automatically
-set to 100% in order for these buttons to work correctly.
+Note that when you use one of these buttons, the pitch range is
+automatically set to 100% in order for the values to be set correctly.
 
 *Key change and Note modes were tuned with respect to 440Hz A (above
 middle C.)*

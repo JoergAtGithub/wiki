@@ -14,8 +14,8 @@ information:
   - [MIDI Scripting](MIDI%20Scripting) if needed for tuning or complex
     behaviors
 
-Otherwise report the reasons for not working to the mixxx-devel mailing
-list.
+Otherwise report the reasons for not working to [our bug
+tracker](https://launchpad.net/mixxx/+filebug).
 
 |                                 |         |          |       |
 | ------------------------------- | ------- | -------- | ----- |

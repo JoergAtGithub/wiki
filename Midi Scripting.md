@@ -178,6 +178,11 @@ LEDs before operation begins or the program exits. The ID parameter is
 the `controller id` attribute from the XML file and is useful for
 identifying the particular controller instance in print statements.
 
+### Object prototype enhancements
+
+**String**.prototype**.toInt** - returns an ASCII byte array for all the
+characters in any string. Use like so: `"Test string".toInt()`
+
 ### Available common functions
 
 Here is a list of functions available to you from the always-loaded

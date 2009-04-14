@@ -134,7 +134,8 @@ blue LEDs light when a cue point is set on that button.
 
   - Outer circle (C1) allows you to scroll through your Library
   - Center button (anywhere on S4) loads the currently highlighted song
-    into the first stopped deck
+    into the current deck, as long as it's not live (playing to the
+    master output.)
   - B11 selects backward between Library, Playlist, and Browse views
   - B12 selects forward between Library, Playlist, and Browse views
   - B13 moves the highlight up one item

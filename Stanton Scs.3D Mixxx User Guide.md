@@ -41,7 +41,7 @@ top. Edit & save, then restart Mixxx and enjoy.
   - Trig - Hot cues
   - Vinyl - Toggle between pitch bend, vinyl manipulation & scratching,
     and track selection
-  - Deck - Adjust cross-fader and switch to the other virtual deck
+  - Deck - Adjust global controls and switch to the other virtual deck
 
 #### Common to all modes:
 
@@ -59,11 +59,6 @@ top. Edit & save, then restart Mixxx and enjoy.
   - Gain slider (S1) adjusts pre-fader gain
   - Pitch slider (S2) finely adjusts pitch control
   - B12 resets pitch to center 0%
-
-**While holding down Deck button:**
-
-  - Center slider (S4) adjusts the cross-fader
-  - B12 resets cross-fader to center position
 
 ## FX Mode
 
@@ -144,6 +139,20 @@ blue LEDs light when a cue point is set on that button.
   - B12 selects forward between Library, Playlist, and Browse views
   - B13 moves the highlight up one item
   - B14 moves the highlight down one item
+
+## Deck Mode
+
+[[/media/hardware/stantonscs/slidermode.jpg|]] You are in this mode only
+**while holding down the Deck button:**
+
+  - Gain slider (S1) adjusts master volume
+  - Pitch slider (S2) adjusts master balance (pan)
+  - B11 resets master volume knob to the middle
+  - B12 resets master balance to center
+  - Left slider (S3) adjusts the cue/main headphone mix
+  - Center slider (S4) adjusts the cross-fader
+  - Right slider (S5) adjusts the headphone volume
+  - TAP resets cross-fader to center position
 
 ## 
 

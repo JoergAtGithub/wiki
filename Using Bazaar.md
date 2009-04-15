@@ -88,6 +88,29 @@ branch as an example.
     this case). 
 6.  **Push the merged feature branch upstream**: `bzr push`
 
+Your clean branch will represent the clean state of the remote Mixxx
+codebase once you `bzr pull`, but your features branch will never update
+unless you do it manually. **To bring your features branch up to date**:
+
+1.  **Make sure your features branch does not have uncommitted
+    changes\!**: This is very important, or you will end up committing
+    your changes when you commit the merge, and you usually do not want
+    to do this. You can easily temporarily put changes away by using
+    `bzr shelve`, if you do not have it then you need to install
+    `bzrtools`. `bzr shelve` is similar to `git stash`. 
+2.  **Update your clean branch**: From your clean branch (the
+    `mixxx-1.7` folder): `bzr pull`
+3.  **Merge the upstream changes from your clean branch to your features
+    branch**: From your features branch (the `mixxx-1.7-features`
+    folder): `bzr merge ../mixxx-1.7`
+4.  **Commit the merge**: Resolve any conflicts, and when you are done
+    `bzr commit`. You usually will provide a commit message with
+    something along the lines of `Merging changes from upstream.` This
+    commit message will not show up when you push your changes to
+    Launchpad using the guide above, since bzr will realize that the
+    merge was applying patches that were already applied to the remote
+    branch. 
+
 ## Making it work like SVN
 
 (For those of us scared of this "distributed" thing...)

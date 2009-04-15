@@ -51,6 +51,43 @@ tested:
     then either merge it with the corporate code base or make notations
     on the proposal page with questions or suggested changes.
 
+## General Procedure for Distributed Use With Push Access
+
+If you have push/commit permissions on Launchpad and you are using
+distributed mode (i.e. branches), **do not push from your local
+branch**. Because of the way that Launchpad represents branch history,
+this will cause the history view to bunch commits by others into single
+commits by you from when you merge changes from upstream. The proper way
+to work in this mode is to maintain two branches, a features branch, and
+a clean branch. The following example will use the Mixxx 1.7 release
+branch as an example.
+
+1.  **Create a clean branch**: `bzr branch lp:mixxx/1.7 ./mixxx-1.7`
+2.  **Create a features branch**: `bzr branch ./mixxx-1.7
+    ./mixxx-1.7-features`
+3.  **Add features/code to your features branch**: hack away at your
+    features branch, and commit whenever you want at whatever interval
+    you want. Ideally you will commit often with brief messages about
+    what the commit did. These commit messages will not be displayed to
+    everyone once you push the changes back to Mixxx. They will only
+    show up if somebody decides they want to see the details of the
+    commits you made for your feature branch. 
+4.  **When you are ready to push the changes upstream**: from your clean
+    branch (the `mixxx-1.7` folder): `bzr pull`, `bzr merge
+    ../mixxx-1.7-features`. Now your branch is merged with the latest
+    upstream changes, but it isn't committed yet. Resolve conflicts,
+    compile Mixxx, run the test suite, and make sure that the feature
+    and the upstream changes work well together.
+5.  **Commit the merge of your feature branch**: `bzr commit --fixes
+    lp:XXXXXX`. The commit message you enter here will be what the rest
+    of the developers see. They will only see this message, the commit
+    messages you made in your features branch will not be immediately
+    available unless they drill-down into the merge on the history view.
+    If you provide a `--fixes` argument to commit, then this will attach
+    the launchpad bug \#XXXXXX to the branch you commit to (mixxx-1.7 in
+    this case). 
+6.  **Push the merged feature branch upstream**: `bzr push`
+
 ## Making it work like SVN
 
 (For those of us scared of this "distributed" thing...)

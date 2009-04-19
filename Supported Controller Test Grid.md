@@ -26,7 +26,6 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | Hercules DJ Console Mk2         |         |          |       |
 | Hercules DJ Console Mac Edition |         |          |       |
 | Hercules DJ Control MP3         |         |          |       |
-| Stanton SCS.1m                  |         |          |       |
 | Stanton SCS.3d                  | Works   | Works    | Works |
 | Mixman DM2                      |         |          |       |
 | Tascam US-428                   |         |          |       |

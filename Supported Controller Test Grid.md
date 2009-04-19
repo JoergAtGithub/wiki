@@ -27,16 +27,14 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | Hercules DJ Console Mac Edition |         |          |       |
 | Hercules DJ Control MP3         |         |          |       |
 | Stanton SCS.3d                  | Works   | Works    | Works |
+| Stanton SCS.1m                  |         |          |       |
 | Mixman DM2                      |         |          |       |
 | Tascam US-428                   |         |          |       |
-| M-Audio X-Session Pro           | Works   | Works    | Works |
+| M-Audio X-Session Pro           |         | Works    | Works |
 | Evolution X-Session             |         |          |       |
 | M-Audio Xponent                 |         |          |       |
-| Ecler NUO4                      |         |          |       |
 | FaderFox DJ2                    |         |          |       |
 | Vestax VCI-100                  |         |          |       |
 | Numark Total Control            |         |          |       |
 | Behringer BCD3000               |         |          |       |
-| M-Audio Trigger Finger          |         |          |       |
-| Eks XP5/Eks XP10                |         |          |       |
-| Eks Otus                        |         |          |       |
+| Akai MPD24                      |         | Works    | Works |

@@ -29,7 +29,7 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | Stanton SCS.3d                  | Works   | Works    | Works |
 | Mixman DM2                      |         |          |       |
 | Tascam US-428                   |         |          |       |
-| M-Audio X-Session Pro           |         |          |       |
+| M-Audio X-Session Pro           | Works   | Works    | Works |
 | Evolution X-Session             |         |          |       |
 | M-Audio Xponent                 |         |          |       |
 | Ecler NUO4                      |         |          |       |

@@ -6,8 +6,8 @@ controllers in the next version of Mixxx.
 Currently reporting for: **Mixxx 1.7.0-beta1**
 
 **Simply state *works* or *doesn't work* for controllers you've
-tested.** If it doesn't work, please fix it using the following
-information:
+tested.** If any buttons/sliders do not work as expected within Mixxx's
+existing functionality, please fix them using the following information:
 
   - [MIDI controller mapping file
     format](midi_controller_mapping_file_format)

@@ -17,24 +17,24 @@ existing functionality, please fix them using the following information:
 Otherwise report the reasons for not working to [our bug
 tracker](https://launchpad.net/mixxx/+filebug).
 
-|                                 |         |          |       |
-| ------------------------------- | ------- | -------- | ----- |
-| Device                          | Windows | Mac OS X | Linux |
-| Hercules DJ Control Steel       |         |          |       |
-| Hercules DJ Console RMX         |         |          |       |
-| Hercules DJ Console Mk1         |         |          |       |
-| Hercules DJ Console Mk2         |         |          |       |
-| Hercules DJ Console Mac Edition |         |          |       |
-| Hercules DJ Control MP3         |         |          |       |
-| Stanton SCS.3d                  | Works   | Works    | Works |
-| Stanton SCS.1m                  |         |          |       |
-| Mixman DM2                      |         |          |       |
-| Tascam US-428                   |         |          |       |
-| M-Audio X-Session Pro           |         | Works    | Works |
-| Evolution X-Session             |         |          |       |
-| M-Audio Xponent                 |         |          |       |
-| FaderFox DJ2                    |         |          |       |
-| Vestax VCI-100                  |         |          |       |
-| Numark Total Control            |         |          |       |
-| Behringer BCD3000               |         |          |       |
-| Akai MPD24                      |         | Works    | Works |
+|                                 |         |          |              |
+| ------------------------------- | ------- | -------- | ------------ |
+| Device                          | Windows | Mac OS X | Linux        |
+| Hercules DJ Control Steel       |         |          |              |
+| Hercules DJ Console RMX         |         |          | Doesn't work |
+| Hercules DJ Console Mk1         |         |          |              |
+| Hercules DJ Console Mk2         |         |          |              |
+| Hercules DJ Console Mac Edition |         |          |              |
+| Hercules DJ Control MP3         |         |          |              |
+| Stanton SCS.3d                  | Works   | Works    | Works        |
+| Stanton SCS.1m                  |         |          |              |
+| Mixman DM2                      |         |          |              |
+| Tascam US-428                   |         |          |              |
+| M-Audio X-Session Pro           |         | Works    | Works        |
+| Evolution X-Session             |         |          |              |
+| M-Audio Xponent                 |         |          |              |
+| FaderFox DJ2                    |         |          |              |
+| Vestax VCI-100                  |         |          |              |
+| Numark Total Control            |         |          |              |
+| Behringer BCD3000               |         |          |              |
+| Akai MPD24                      |         | Works    | Works        |

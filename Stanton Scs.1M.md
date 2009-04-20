@@ -12,7 +12,7 @@ Mapping for use with Mixxx up to v1.6.1:
 [[/media/hardware/stantonscs/stanton_scs.1m_1.60.midi.xml.gz|]]
 
 This is more of a preview release to get you started until we release
-Mixxx 1.6.2 which will feature full support and customization for the
+Mixxx 1.7.0 which will feature full support and customization for the
 SCS.1m.
 
 #### Instructions

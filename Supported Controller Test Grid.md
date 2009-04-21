@@ -32,7 +32,7 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | Tascam US-428                   |         |          |              |
 | M-Audio X-Session Pro           |         | Works    | Works        |
 | Evolution X-Session             |         |          |              |
-| M-Audio Xponent                 |         |          |              |
+| M-Audio Xponent                 |         |          | Works        |
 | FaderFox DJ2                    |         |          |              |
 | Vestax VCI-100                  |         |          |              |
 | Numark Total Control            |         |          |              |

@@ -107,11 +107,14 @@ middle C.)*
 
 ## Trig Modes
 
-These modes configure the surface as 9 buttons (lit up dim red for
-visibility.)
+These modes configure the surface as three separate banks of 12 buttons
+(lit up dim red for visibility) giving you a total of THIRTY-SIX hot
+cues\! The TRIG button will be red in bank 1, purple in bank 2, and
+black in bank 3.
 
 The red LEDs flash when you press the corresponding button. The outer
-blue LEDs light when a cue point is set on that button.
+blue LEDs light when a cue point is set on that button. (Changeable with
+the **markHotCues** option mentioned at the top of this page.)
 
   - To set a cue, just press a free button at the desired time.
   - To recall a cue, just press a button that has a cue point set

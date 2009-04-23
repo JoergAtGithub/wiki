@@ -26,6 +26,8 @@ variables at the top of the script you can set to your liking:
   - **globalMode** - If true, the unit will stay in the current mode on
     deck changes (instead of switching to the mode you were in the last
     time you controlled that deck.)
+  - **deckChangeWait** - Time in milliseconds to hold the DECK button
+    down to avoid changing decks
 
 Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the

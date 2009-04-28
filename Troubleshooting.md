@@ -12,12 +12,28 @@ a test system with integrated Intel soundcard.) The drawback to this is
 that system sounds (KDE beeps and such) will now be mixed in and will
 come out the main output.
 
+## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
+
+Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several
+users. This is due to some funky OpenGL code inside QT3. Fortunately,
+Mixxx 1.6.0 no longer uses QT3 and reportedly works very well with
+Beryl/Compiz.
+
 ## I'm using Compiz and Mixxx, and sometimes the waveform view gets corrupted and slows my CPU to a halt
 
 This is a known bug with Qt and Compiz -- the only solution at this time
 is to disable Compiz when using Mixxx. In many cases, however, the two
 are able to work fine together. It seems this might be specific to
 certain graphics hardware.
+
+## Mixxx's waveforms eat my screen in Ubuntu
+
+See "Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?".
+Thought there is some (unknown to us) extra problem with how Ubuntu uses
+compiz, appearently. The workaround is to go
+System-\>Preferences-\>Appearence-\>Visual Effects and set them to
+"none". After you do this Mixxx should behave properly (tell us if it
+doesn't\!).
 
 ## I have a decently fast system & video card. Why does Mixxx seem to crawl or pin the CPU?
 

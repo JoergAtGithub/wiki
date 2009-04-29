@@ -12,7 +12,7 @@ DaRouter mapping for use with Mixxx up to v1.6.1:
 [[/media/hardware/stantonscs/stanton_scs.3d_darouter.midi.xml.gz|]]
 
 This is more of a preview release to get you started until we release
-Mixxx 1.6.2 which will feature full native support and customization for
+Mixxx 1.7.0 which will feature full native support and customization for
 the SCS.3d.
 
 #### Instructions

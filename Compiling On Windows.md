@@ -162,8 +162,11 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 ``` 
   return (include_path, lib_path, exe_path)</code>
       - Re-run ''scons msvcdebug=1'' and it should work.
-- Run it: When Mixxx is done compiling, run mixxx.exe in the “mixxx\dist\” directory.
 ```
+
+**Mixxx will currently fail to build** due to some of its dependencies
+(soundtouch, libmad) having inline assembly which is not supported by
+the MSVC.
 
 #### If you'd like to generate an MSVC project for use with Visual Studio (optional)
 

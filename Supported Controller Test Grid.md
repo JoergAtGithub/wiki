@@ -36,5 +36,7 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | FaderFox DJ2                         |         |          |              |
 | Vestax VCI-100                       |         |          |              |
 | Numark Total Control                 |         |          |              |
-| Behringer BCD3000                    |         |          |              |
+| Behringer BCD3000                    |         |          | Works \*     |
 | Akai MPD24                           |         | Works    | Works        |
+
+\* no lights button and no jogwheel

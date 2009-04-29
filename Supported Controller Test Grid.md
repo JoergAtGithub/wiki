@@ -17,26 +17,31 @@ existing functionality, please fix them using the following information:
 Otherwise report the reasons for not working to [our bug
 tracker](https://launchpad.net/mixxx/+filebug).
 
-|                                      |         |          |              |
-| ------------------------------------ | ------- | -------- | ------------ |
-| Device                               | Windows | Mac OS X | Linux        |
-| Hercules DJ Control Steel            |         |          |              |
-| Hercules DJ Console RMX              |         |          | Doesn't work |
-| Hercules DJ Console Mk1              |         |          |              |
-| Hercules DJ Console Mk2              |         |          |              |
-| Hercules DJ Console Mac Edition      |         |          |              |
-| Hercules DJ Control MP3              |         |          |              |
-| Stanton SCS.3d                       | Works   | Works    | Works        |
-| Stanton SCS.1m                       |         |          |              |
-| Mixman DM2                           |         |          |              |
-| Tascam US-428                        |         |          |              |
-| M-Audio X-Session Pro                |         | Works    | Works        |
-| Evolution X-Session                  |         |          |              |
-| [M-Audio Xponent](M-Audio%20Xponent) |         |          | Works        |
-| FaderFox DJ2                         |         |          |              |
-| Vestax VCI-100                       |         |          |              |
-| Numark Total Control                 |         |          |              |
-| Behringer BCD3000                    |         |          | Works \*     |
-| Akai MPD24                           |         | Works    | Works        |
+(For details on a particular controller, please visit the [hardware
+compatibility](hardware%20compatibility) page.)
 
-\* no buttons lights and no jogwheel
+|                                 |         |          |              |
+| ------------------------------- | ------- | -------- | ------------ |
+| Device                          | Windows | Mac OS X | Linux        |
+| Hercules DJ Control Steel       |         |          |              |
+| Hercules DJ Console RMX         |         |          | Doesn't work |
+| Hercules DJ Console Mk1         |         |          |              |
+| Hercules DJ Console Mk2         |         |          |              |
+| Hercules DJ Console Mac Edition |         |          |              |
+| Hercules DJ Control MP3         |         |          |              |
+| Stanton SCS.3d                  | Works   | Works    | Works        |
+| Stanton SCS.1m                  | Works   |          | \[1\]        |
+| Mixman DM2                      |         |          |              |
+| Tascam US-428                   |         |          |              |
+| M-Audio X-Session Pro           |         | Works    | Works        |
+| Evolution X-Session             |         |          |              |
+| M-Audio Xponent                 |         |          | Works        |
+| FaderFox DJ2                    |         |          |              |
+| Vestax VCI-100                  |         |          |              |
+| Numark Total Control            |         |          |              |
+| Behringer BCD3000               |         |          | Works \[2\]  |
+| Akai MPD24                      |         | Works    | Works        |
+
+1.  Waiting on FFADO support
+
+2.  No button lights and jog wheels need tuning

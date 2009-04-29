@@ -59,7 +59,11 @@ The boldface entries in the table above are the messages we are most
 concerned with since most DJ controllers use only these for all
 functions. You'll need to consult the MIDI spec for the DJ controller
 you're working with to determine which messages and note/control numbers
-correspond to the DJ controller functions & LEDs.
+correspond to the DJ controller functions & LEDs. If your controller's
+MIDI spec gives only note names and not numbers, [use this
+table](http://www.harmony-central.com/MIDI/Doc/table2.html) to convert
+them. To convert from decimal to hex, [use
+this](http://www.geocities.com/binary_converter/).
 
 (Note that in order to use System Exclusive messages, you will need
 [MIDI Scripting](MIDI%20Scripting).)

@@ -401,25 +401,22 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 <!-- end list -->
 
   - [MingW64 binary tool chain](http://www.drangon.org/mingw/)
-  - [Qt Creator for
-    Windows](http://www.qtsoftware.com/downloads/qt-creator-binary-for-windows)
-    (32-bit but works fine)
-  - [Qt 4.5 source for
-    Windows](http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip)
-  - An SVN or BZR client like
-    [TortoiseSVN](http://tortoisesvn.net/downloads) or [Bazaar w/
-    TortoiseBZR](http://bazaar-vcs.org/Download)
 
 <!-- end list -->
 
-1.  Prepare build environment
-    1.  Add to or create the following system environment variables
-        ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-        adjusting the paths to match where you actually
-        installed/unpacked the above:`QTDIR =
-        C:\qt\qt-win-opensource-src-4.5.1
-        PATH = C:\qt\qt-win-opensource-src-4.5.1\bin;C:\mingw64`
-2.  Tweak the Qt configuration
+``` 
+    * Might need stuff from [[http://www.esnips.com/web/MinGW64?docsPage=1#files|here]] as well
+* [[http://www.qtsoftware.com/downloads/qt-creator-binary-for-windows|Qt Creator for Windows]] (32-bit but works fine)
+* [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip|Qt 4.5 source for Windows]]
+* An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
+- Prepare build environment
+  - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
+```
+
+QTDIR = C:\\qt\\qt-win-opensource-src-4.5.1 PATH =
+C:\\qt\\qt-win-opensource-src-4.5.1\\bin;C:\\mingw64\</code\>
+
+1.  Tweak the Qt configuration
     1.  Edit
         qt-win-opensource-src-4.5.1\\mkspecs\\win32-g++\\qmake.conf:
         1.  Add to QMAKE\_CFLAGS: `-m64 --64 -O3 -march=k8-sse4.2
@@ -436,7 +433,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
         qt-win-opensource-src-4.5.1\\projects.pro:
           - Remove "examples" and "demos" from QT\_BUILD\_PARTS toward
             the top of the file.
-3.  Build Qt
+2.  Build Qt
     1.  Start a command prompt (Start-\>Programs-\>Accessories-\>Command
         Prompt)
     2.  Type `cd %QTDIR%` and hit Enter.
@@ -444,7 +441,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
         optimization, add `-mmx -3dnow -sse -sse2` & hit Enter.
     4.  When it finishes (about 5-10 minutes,) just type `mingw32-make`
         and press Enter and you should be good (takes 1\~3 hours.)
-4.  Configure Qt Creator
+3.  Configure Qt Creator
     1.  Open Qt Creator
     2.  Go to Tools-\>Options-\>Qt4-\>Qt Versions
     3.  Click the plus sign
@@ -452,7 +449,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
         `4.5.1-x64-mingw`
     5.  Enter `C:\qt\qt-win-opensource-src-4.5.1` in the Path field
     6.  Enter `C:\mingw64` in the MinGw directory field
-5.  Get the Mixxx source code
+4.  Get the Mixxx source code
 
 <!-- end list -->
 

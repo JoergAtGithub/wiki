@@ -387,6 +387,84 @@ To tell it to optimize for a particular processor, do:
     --
     <http://www.nabble.com/configure-patch-for-MSYS-users-p20138278.html>
 
-## Build a 64-bit version using the Qt Creator SDK
+## Build a 64-bit version using Qt Creator & MingW64
 
-***Experimental*** Get MinGW64: <http://www.esnips.com/web/MinGW64>
+***Experimental***
+
+### Steps
+
+*(You may need to be running an x64 version of Windows, such as XP
+Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
+
+1.  Download & install prerequisites
+
+<!-- end list -->
+
+  - [MingW64 binary tool chain](http://www.drangon.org/mingw/)
+  - [Qt Creator for
+    Windows](http://www.qtsoftware.com/downloads/qt-creator-binary-for-windows)
+    (32-bit but works fine)
+  - [Qt 4.5 source for
+    Windows](http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip)
+  - An SVN or BZR client like
+    [TortoiseSVN](http://tortoisesvn.net/downloads) or [Bazaar w/
+    TortoiseBZR](http://bazaar-vcs.org/Download)
+
+<!-- end list -->
+
+1.  Prepare build environment
+    1.  Add to or create the following system environment variables
+        ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
+        adjusting the paths to match where you actually
+        installed/unpacked the above:`QTDIR =
+        C:\qt\qt-win-opensource-src-4.5.1
+        PATH = C:\qt\qt-win-opensource-src-4.5.1\bin;C:\mingw64`
+2.  Tweak the Qt configuration
+    1.  Edit
+        qt-win-opensource-src-4.5.1\\mkspecs\\win32-g++\\qmake.conf:
+        1.  Add to QMAKE\_CFLAGS: `-m64 --64 -O3 -march=k8-sse4.2
+            -msse4.2 -m3dnow -fomit-frame-pointer -ffast-math
+            -funroll-loops` (or other optimization options as desired)
+        2.  (optional) Add -Ox to QMAKE\_CFLAGS\_RELEASE for extra
+            optimizations
+    2.  Edit qt-win-opensource-src-4.5.1\\qmake\\makefile.win32-g++:
+        1.  add to CFLAGS: `-m64 --64 -O3 -march=k8-sse4.2 -msse4.2
+            -m3dnow -fomit-frame-pointer -ffast-math -funroll-loops` (or
+            other optimization options as desired)
+    3.  To avoid building the examples and demos (you don't need them
+        and it saves ALOT of time,) edit
+        qt-win-opensource-src-4.5.1\\projects.pro:
+          - Remove "examples" and "demos" from QT\_BUILD\_PARTS toward
+            the top of the file.
+3.  Build Qt
+    1.  Start a command prompt (Start-\>Programs-\>Accessories-\>Command
+        Prompt)
+    2.  Type `cd %QTDIR%` and hit Enter.
+    3.  Type `configure -platform win32-g++ -no-webkit` and for more
+        optimization, add `-mmx -3dnow -sse -sse2` & hit Enter.
+    4.  When it finishes (about 5-10 minutes,) just type `mingw32-make`
+        and press Enter and you should be good (takes 1\~3 hours.)
+4.  Configure Qt Creator
+    1.  Open Qt Creator
+    2.  Go to Tools-\>Options-\>Qt4-\>Qt Versions
+    3.  Click the plus sign
+    4.  Enter something meaningful in the Name field like
+        `4.5.1-x64-mingw`
+    5.  Enter `C:\qt\qt-win-opensource-src-4.5.1` in the Path field
+    6.  Enter `C:\mingw64` in the MinGw directory field
+5.  Get the Mixxx source code
+
+<!-- end list -->
+
+  - Checkout the mixxx repository:
+
+<!-- end list -->
+
+``` 
+    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
+    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+- Build Mixxx
+  - Open //mixxx-x64-mingw.pro// (found in the //mixxx// directory you made in the previous step) in Qt Creator
+  - Click on the //Projects// side button -> //Run Settings// tab -> type: <code>--resourcePath ../res</code> in the //Arguments// Box 
+  - Hit the green run (>) button
+```

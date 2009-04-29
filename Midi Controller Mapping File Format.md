@@ -27,7 +27,7 @@ message is called the **Status** byte. The first nybble (hex digit) is
 the op-code and the second is the MIDI channel number. So if you have
 `0x90` the op-code is `0x9` and the channel number is `0x0` (Ch 1.) The
 full list of MIDI messages is below, where *n* represents the channel
-number:
+number (0..F inclusive):
 
 | Status   | Function                  | Data bytes         |                   |
 | -------- | ------------------------- | ------------------ | ----------------- |
@@ -172,12 +172,9 @@ These define the part of Mixxx that is being controlled:
 
 These tags define the MIDI event that Mixxx will listen for:
 
-  - status - MIDI Op-code (high nibble) and channel (low nibble) - CC
-    (0xBn), NOTE\_ON (0x9n), NOTE\_OFF (0x8n), or Pitch Bend (0xEn),
-    where n is the channel number (0..F inclusive). See the [table
-    above](#midi-crash-course).
+  - status - See the [MIDI crash course](#midi-crash-course) above.
   - midino - The MIDI control or note number (leave this out for the
-    Pitch Bend status.) See the [table above](#midi-crash-course).
+    Pitch Bend status.) Also see the [crash course](#midi-crash-course).
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options will have
     default values, eg a jogwheel might have no acceleration by default.

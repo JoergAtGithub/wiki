@@ -39,4 +39,4 @@ tracker](https://launchpad.net/mixxx/+filebug).
 | Behringer BCD3000                    |         |          | Works \*     |
 | Akai MPD24                           |         | Works    | Works        |
 
-\* no lights button and no jogwheel
+\* no buttons lights and no jogwheel

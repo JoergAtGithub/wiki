@@ -380,3 +380,7 @@ To tell it to optimize for a particular processor, do:
   - wimme, directsound, asio all at once patch (doesn't apply cleanly)
     --
     <http://www.nabble.com/configure-patch-for-MSYS-users-p20138278.html>
+
+## Build a 64-bit version using the Qt Creator SDK
+
+***Experimental*** Get MinGW64: <http://www.esnips.com/web/MinGW64>

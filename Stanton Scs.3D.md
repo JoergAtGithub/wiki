@@ -59,6 +59,6 @@ for details.
 ### 1.7.0+
 
 The latest official MIDI mappings and script files will be available
-here after Mixxx 1.7.0-beta1 is released.
+here after Mixxx 1.7.0 is released.
 
 [Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)

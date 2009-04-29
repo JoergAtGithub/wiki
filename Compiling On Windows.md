@@ -83,6 +83,9 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
 ## Build a 64-bit version using Microsoft Visual Studio Express
 
+***Experimental* and currently fails due to lack of support for inline
+assembly in MSVC.**
+
 ### Steps
 
 *(You may need to be running an x64 version of Windows, such as XP

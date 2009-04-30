@@ -389,7 +389,8 @@ To tell it to optimize for a particular processor, do:
 
 ## Build a 64-bit version using Qt Creator & MingW64
 
-***Experimental***
+***Experimental*** - Doesn't currently build because MinGW64 isn't
+working correctly.
 
 ### Steps
 

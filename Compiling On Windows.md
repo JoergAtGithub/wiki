@@ -419,15 +419,15 @@ C:\\qt\\qt-win-opensource-src-4.5.1\\bin;C:\\mingw64\</code\>
 1.  Tweak the Qt configuration
     1.  Edit
         qt-win-opensource-src-4.5.1\\mkspecs\\win32-g++\\qmake.conf:
-        1.  Add to QMAKE\_CFLAGS: `-m64 --64 -O3 -march=k8-sse4.2
-            -msse4.2 -m3dnow -fomit-frame-pointer -ffast-math
-            -funroll-loops` (or other optimization options as desired)
+        1.  Add to QMAKE\_CFLAGS: `-m64 -O3 -march=k8-sse3 -msse4.2
+            -m3dnow -fomit-frame-pointer -ffast-math -funroll-loops` (or
+            other optimization options as desired)
         2.  (optional) Add -Ox to QMAKE\_CFLAGS\_RELEASE for extra
             optimizations
     2.  Edit qt-win-opensource-src-4.5.1\\qmake\\makefile.win32-g++:
-        1.  add to CFLAGS: `-m64 --64 -O3 -march=k8-sse4.2 -msse4.2
-            -m3dnow -fomit-frame-pointer -ffast-math -funroll-loops` (or
-            other optimization options as desired)
+        1.  add to CFLAGS: `-m64 -O3 -march=k8-sse3 -msse4.2 -m3dnow
+            -fomit-frame-pointer -ffast-math -funroll-loops` (or other
+            optimization options as desired)
     3.  To avoid building the examples and demos (you don't need them
         and it saves ALOT of time,) edit
         qt-win-opensource-src-4.5.1\\projects.pro:

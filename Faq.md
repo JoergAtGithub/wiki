@@ -122,9 +122,10 @@ better.
 
 ## Why aren't there any 64-bit Windows builds provided?
 
-It's not for lack of trying...the 64-bit Microsoft C++ compiler doesn't
-support inline assembly code which some of our dependencies rely on
-(libmad and libid3) and MinGW64 just doesn't work the last time we
-tested it (April 2009.) See [Compiling on
-Windows](Compiling%20on%20Windows) for details and instructions if you
-want to take a crack at it.
+It's not for lack of trying...the 64-bit Microsoft C++ compiler [doesn't
+support inline assembly
+code](http://social.microsoft.com/Forums/en-US/vcgeneral/thread/ada5d412-9ddf-476e-8fe2-1c3c3078e882/)
+which some of our dependencies rely on (libmad and libid3) and MinGW64
+just doesn't work the last time we tested it (April 2009.) See
+[Compiling on Windows](Compiling%20on%20Windows) for details and
+instructions if you want to take a crack at it.

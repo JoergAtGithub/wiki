@@ -10,3 +10,5 @@
   - Does it piss on the magic?
   - Well, it worked before.
   - o\_O
+  - I bet if we made Mixxx enterprise addition, fortune 500 companies
+    would start calling us and sending us money

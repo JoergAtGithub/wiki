@@ -158,13 +158,13 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 |                       | Scratch (7)           | Unmapped                  |  |
 |                       | Mic Functions (1)     | Not Available in Mixxx    |  |
 
-| Hercules RMX Controls - Mixxx 1.7 Additions |                            |                                                                                                                       |  |
-| ------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |  |
-| Control                                     | Default Mixxx Mapping      |                                                                                                                       |  |
-|                                             | Scratch (7)                | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour                                                           |  |
-|                                             | Stop (20)                  | MIDI Script: Stop + Reset Track to beginning                                                                          |  |
-|                                             | Up (8)/Down (8) + Jog (18) | MIDI Script: Rapid Track List scrolling (buggy)                                                                       |  |
-|                                             | Cue (21) + Play (19)       | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (NOT FINISHED) |  |
+| Hercules RMX Controls - Mixxx 1.7 Additions |                            |                                                                                                                |  |
+| ------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------- |  |
+| Control                                     | Default Mixxx Mapping      |                                                                                                                |  |
+|                                             | Scratch (7)                | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour                                                    |  |
+|                                             | Stop (20)                  | MIDI Script: Stop + Reset Track to beginning                                                                   |  |
+|                                             | Up (8)/Down (8) + Jog (18) | MIDI Script: Rapid Track List scrolling (buggy)                                                                |  |
+|                                             | Cue (21) + Play (19)       | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |  |
 
 ## Hercules DJ Control Steel (Untested)
 

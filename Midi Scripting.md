@@ -54,7 +54,7 @@ When this device control is operated, the named script function is
 called. It is then up to the function to effect all desired changes
 (Mixxx properties, device LEDs, etc.)
 
-## Script functions
+## Script files & functions
 
 There is a default script function file called
 `midi-mappings-scripts.js` which contains functions common to all
@@ -132,6 +132,56 @@ sensitivity of the SCS.3d's pitch slider (in relative mode:)
 StantonSCS3d.pitchSlider = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider
     var currentValue = engine.getValue("[Channel"+StantonSCS3d.deck+"]","rate");
     engine.setValue("[Channel"+StantonSCS3d.deck+"]","rate",currentValue+(value-64)/128);
+}
+```
+
+### Sending messages to the controller
+
+You can send three-byte "short" messages and arbitrary-length
+system-exclusive "long" ones. Together, these cover virtually all types
+of MIDI messages you would need to send.
+
+For short messages:
+
+    midi.sendShortMsg(status, byte2, byte3);
+
+It's completely up to you (and your controller's MIDI spec) what those
+bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.)
+
+For system-exclusive messages:
+
+    var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
+    midi.sendSysexMsg(byteArray,byteArray.length);
+
+Here again, it's completely up to you (and your controller's MIDI spec)
+what those bytes should be for the change you wish to effect.
+
+### Example functions
+
+Here are some simple examples to get you started.
+
+To control the play button for Deck 1 and light its LED:
+
+``` javascript
+Controller.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
+    var currentlyPlaying = engine.getValue("[Channel1]","play");
+    if (currentlyPlaying == 1) {    // If currently playing
+        engine.setValue("[Channel1]","play",0);    // Stop
+        midi.sendShortMsg(0x80,0x11,0x00);    // Turn off the Play LED
+    }
+    else {    // If not currently playing,
+        engine.setValue("[Channel1]","play",1);    // Start
+        midi.sendShortMsg(0x90,0x11,0x7F);    // Turn on the Play LED
+    }
+}
+```
+
+To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
+
+``` javascript
+Controller.pitchSlider1 = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider for channel 1
+    var currentValue = engine.getValue("[Channel1]","rate");
+    engine.setValue("[Channel1]","rate",currentValue+(value-64)/128);
 }
 ```
 

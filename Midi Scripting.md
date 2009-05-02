@@ -125,16 +125,6 @@ you've defined currentDeck):
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
 
-Tying it all together, here is an example of a function that reduces the
-sensitivity of the SCS.3d's pitch slider (in relative mode:)
-
-``` javascript
-StantonSCS3d.pitchSlider = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider
-    var currentValue = engine.getValue("[Channel"+StantonSCS3d.deck+"]","rate");
-    engine.setValue("[Channel"+StantonSCS3d.deck+"]","rate",currentValue+(value-64)/128);
-}
-```
-
 ### Sending messages to the controller
 
 You can send three-byte "short" messages and arbitrary-length

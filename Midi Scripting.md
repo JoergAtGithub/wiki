@@ -133,15 +133,19 @@ of MIDI messages you would need to send.
 
 For short messages:
 
-    midi.sendShortMsg(status, byte2, byte3);
+``` javascript
+midi.sendShortMsg(status, byte2, byte3);
+```
 
 It's completely up to you (and your controller's MIDI spec) what those
 bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.)
 
 For system-exclusive messages:
 
-    var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
-    midi.sendSysexMsg(byteArray,byteArray.length);
+``` javascript
+var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
+midi.sendSysexMsg(byteArray,byteArray.length);
+```
 
 Here again, it's completely up to you (and your controller's MIDI spec)
 what those bytes should be for the change you wish to effect.

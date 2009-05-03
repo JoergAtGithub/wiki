@@ -104,8 +104,9 @@ In this instance, it's sending 0xB0, which when we look at the [table
 above](#midi-crash-course), we see that it's a Control Change message on
 channel 1. We also see that the second byte, 0x02 in this case, is the
 control number, and the third is the value, which you can ignore for the
-purposes of mapping. You would then just plug the first two bytes into
-the XML block below for \<status\> and \<midino\> respectively.
+purposes of mapping. You would then just plug the first two bytes into a
+\<control\> XML block (detailed below) for \<status\> and \<midino\>
+respectively.
 
 ## File Format
 

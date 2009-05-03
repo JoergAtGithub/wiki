@@ -114,8 +114,8 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     * Debugging tools (optional, but recommended for troubleshooting)
     * Win32 Development Tools (I don't think you need this, but I'm not sure. I installed it just incase.)
 * [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip|Qt 4.5 source for Windows]]
-* [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]
-* [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]
+* [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires x64 OS,) otherwise you'll have to manually specify which version you want to build
+* [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the x64 Python and follow the piece-of-cake instructions in the README
 * An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>

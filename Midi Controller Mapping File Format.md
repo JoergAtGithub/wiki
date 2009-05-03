@@ -100,12 +100,12 @@ For example, when you move a slider, you might see
     B0 02 3B
     B0 02 3C
 
-In this instance, it's sending 0xB0, which is a Control Change message
-on channel 1. Looking at the [table above](#midi-crash-course), we know
-the second byte, 0x02, is the control number and the third is the value,
-which you can ignore for the purposes of mapping. You would then just
-plug the first two values into the XML block below for \<status\> and
-\<midino\> respectively.
+In this instance, it's sending 0xB0, which when we look at the [table
+above](#midi-crash-course), we see that it's a Control Change message on
+channel 1. We also see that the second byte, 0x02 in this case, is the
+control number, and the third is the value, which you can ignore for the
+purposes of mapping. You would then just plug the first two bytes into
+the XML block below for \<status\> and \<midino\> respectively.
 
 ## File Format
 

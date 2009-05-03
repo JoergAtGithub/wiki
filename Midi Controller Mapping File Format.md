@@ -68,6 +68,45 @@ this](http://www.geocities.com/binary_converter/).
 (Note that in order to use System Exclusive messages, you will need
 [MIDI Scripting](MIDI%20Scripting).)
 
+### Sniffing your controller
+
+*First, try using the MIDI Learn functionality in the Preferences-\>MIDI
+Devices window at the bottom. It will help you get many of the essential
+functions mapped quickly without having to do any hacking.*
+
+If you don't have the MIDI spec for your controller, first check the
+manufacturer's web site under Support. Look for Manuals or User Guides.
+MIDI specs are usually given in an appendix at the back of the manual.
+Failing that, you can usually sniff the MIDI data the controller sends.
+
+On Linux, open a console and issue `amidi -l`. This will list the
+attached MIDI device(s) like so:
+
+    Dir Device    Name
+    IO  hw:1,0,0  SCS.3d MIDI 1
+
+Then, to dump the data, you just issue `amidi -p hw:1,0,0 -d` (Replace
+hw:1,0,0 with whatever device ID your controller shows in the list.)
+Then as you press buttons or move sliders, the MIDI commands the
+controller sends will be printed to the screen. Compare the status
+(first) byte in each line with the table above and then just write down
+which button/slider/control sends what command.
+
+For example, when you move a slider, you might see
+
+    B0 02 3D
+    B0 02 3A
+    B0 02 3D
+    B0 02 3B
+    B0 02 3C
+
+In this instance, it's sending 0xB0, which is a Control Change message
+on channel 1. Looking at the [table above](#midi-crash-course), we know
+the second byte, 0x02, is the control number and the third is the value,
+which you can ignore for the purposes of mapping. You would then just
+plug the first two values into the XML block below for \<status\> and
+\<midino\> respectively.
+
 ## File Format
 
 Mixxx uses a well defined XML format to store its MIDI mappings. The

@@ -164,6 +164,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 ``` 
   return (include_path, lib_path, exe_path)</code>
       - Re-run ''scons'' and it should work.
+* Once the build is finished, you will find everything needed to run Mixxx in the "dist" subdirectory of the checkout directory. Just double-click mixxx.exe and you're off.
 ```
 
 #### If you'd like to generate an MSVC project for use with Visual Studio (optional)

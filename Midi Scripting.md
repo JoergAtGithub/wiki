@@ -75,6 +75,17 @@ You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
 at Mixxx start-up.
 
+### Init and Shutdown functions
+
+All device script files **are expected to contain initialize and
+shutdown functions** (called `<manufacturer><device>.init(ID)` and
+`<manufacturer><device>.shutdown()` ) which will be called when Mixxx
+opens and closes the device, respectively. They can be empty, but are
+useful for putting controllers into known states and/or lighting certain
+LEDs before operation begins or the program exits. The ID parameter is
+the `controller id` attribute from the XML file and is useful for
+identifying the particular controller instance in print statements.
+
 ### Function definitions
 
 **This API has changed as of 10 April 2009**
@@ -210,17 +221,6 @@ name>)`. So to force the above-mentioned volumeLEDs to sync up, just do:
 ``` javascript
 engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
 ```
-
-### Init and Shutdown functions
-
-All device script files **are expected to contain initialize and
-shutdown functions** (called \<manufacturer\>\<device\>.init(ID) and
-\<manufacturer\>\<device\>.shutdown() ) which will be called when Mixxx
-opens and closes the device, respectively. They can be empty, but are
-useful for putting controllers into known states and/or lighting certain
-LEDs before operation begins or the program exits. The ID parameter is
-the `controller id` attribute from the XML file and is useful for
-identifying the particular controller instance in print statements.
 
 ### Object prototype enhancements
 

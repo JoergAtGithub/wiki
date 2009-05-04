@@ -83,8 +83,7 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 
 ## Build a 64-bit version using Microsoft Visual Studio Express
 
-***Experimental* - Currently fails because not all the dependencies have
-been built yet in mixxx-win64lib.**
+***Currently experimental***
 
 ### Steps
 
@@ -148,7 +147,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''scons msvcdebug=1'' (you may need to use scons.bat instead of just scons.)
+  - Type ''scons'' (you may need to use scons.bat instead of just scons.) Add ''msvcdebug=1'' to build the debug version.
     * If you get an error saying that it couldn't find PortAudio, do the following:
       - Edit C:\Python26\Lib\site-packages\scons-1.2.0\SCons\Tool\msvc.py
       - Comment out the ''def get_msvc_paths'' function (starts around line 536)
@@ -164,12 +163,8 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 
 ``` 
   return (include_path, lib_path, exe_path)</code>
-      - Re-run ''scons msvcdebug=1'' and it should work.
+      - Re-run ''scons'' and it should work.
 ```
-
-**Mixxx will currently fail to build** due to some of its dependencies
-(soundtouch, libmad) having inline assembly which is not supported by
-the MSVC.
 
 #### If you'd like to generate an MSVC project for use with Visual Studio (optional)
 

@@ -213,7 +213,7 @@ engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
 
 ### Init and Shutdown functions
 
-*All* device script files **are expected to contain initialize and
+All device script files **are expected to contain initialize and
 shutdown functions** (called \<manufacturer\>\<device\>.init(ID) and
 \<manufacturer\>\<device\>.shutdown() ) which will be called when Mixxx
 opens and closes the device, respectively. They can be empty, but are

@@ -190,6 +190,15 @@ Controller.pitchSlider1 = function (channel, control, value, status) {   // Lowe
 }
 ```
 
+To find the current elapsed time in seconds of a track on the specified
+deck (intended to be called from another function):
+
+``` javascript
+Controller.elapsedTime = function (deck) {
+    return engine.getValue("[Channel"+deck+"]","duration") * engine.getValue("[Channel"+deck+"]","playposition");
+}
+```
+
 ### Automatic reactions
 
 Up to this point, script functions are only called in response to the

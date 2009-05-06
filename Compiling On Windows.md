@@ -81,9 +81,7 @@ Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
 - (Optional) If you'd like to generate a MSVC project for use with Visual Studio, run "scons qtdir=C:\qt\4.5.0 msvc", and open the newly generated "mixxx.vcproj" file with Visual Studio.
 ```
 
-## Build a 64-bit version using Microsoft Visual Studio Express
-
-***Currently experimental***
+## Build the 64-bit version using Microsoft Visual Studio Express
 
 ### Steps
 

@@ -121,7 +121,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     - add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,) and -Ox for more speed if you want
     - add to LFLAGS: /MACHINE:X64 (or IA64)
   - To avoid building the examples and demos (you don't need them and it saves ALOT of time,) edit qt-win-opensource-src-4.5.0\projects.pro:
-    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file.
+    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file. In fact, you only need "libs" if you want to save even more time.
 - Build Qt
   - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
   - Type ''setenv /xp /x64'' and hit Enter.

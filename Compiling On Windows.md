@@ -50,26 +50,15 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed the above:<code>
 ```
 
-QTDIR = C:\\qt\\4.5.0 INCLUDE =
-C:\\MSVC2008\\VC\\Include;C:\\PSDK\\Include;C:\\DXSDK\\Include LIB =
-C:\\MSVC2008\\VC\\Lib;C:\\PSDK\\Lib;C:\\DXSDK\\Lib\\x86 PATH =
+QTDIR = C:\\qt\\4.5.0 PATH =
 C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ``` 
-  - Start the command prompt, change to the \bin subdirectory of your Visual C++ installation. Run "vcvars32.bat" to set the Path and Environment Variables for Command-Line Builds
-  - Edit your C:\Program Files\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat and add to it:<code>
-```
-
-INCLUDE=C:\\Program Files\\Microsoft Platform SDK\\Include;C:\\Program
-Files\\Microsoft Platform
-SDK\\Include\\atl;C:\\qt\\4.5.0\\include;%INCLUDE% LIB=C:\\Program
-Files\\Microsoft Platform SDK\\Lib;C:\\qt\\4.5.0\\lib;%LIB%\</code\>
-
-``` 
   - To avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,) edit C:\qt\4.5.0\projects.pro:
-    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it.
+    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
 - Build Qt
   - Start the Visual Studio command prompt (Start->Microsoft C++ Visual Studio->Visual Studio Tools->Visual Studio Command Prompt)
+  - Type ''setenv /xp /x86'' and hit Enter. (The /x86 is for those on x64 OSs to make sure it targets 32-bit platforms.)
   - Type ''cd %QTDIR%'' and hit Enter.
   - Type ''configure -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
@@ -135,6 +124,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file.
 - Build Qt
   - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
+  - Type ''setenv /xp /x64'' and hit Enter.
   - Type ''cd %QTDIR%'' and hit Enter.
   - Type ''configure -platform win32-msvc2008 -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
@@ -191,7 +181,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 4.  Open the Menu-\>Projects-\>Mixxx Properties... Dialog Go to the
     C/C++ -\> Preprocessor/Definitions Tab and add \_DEBUG to the
     preprocessor definitions. This lets you backtrace (debug) Mixxx.
-5.  Build the project: Press F7 to build the project
+5.  Press F7 to build the project
 
 ## Build a 32-bit version using the Qt Creator SDK (easier)
 

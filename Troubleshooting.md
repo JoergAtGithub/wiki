@@ -95,15 +95,15 @@ the pane, change "Auto-suspend if idle".) This will cause the desktop to
 drop exclusive control of the card sooner so Mixxx can see it on
 startup.
 
-## Mixxx freezes, segfaults, or otherwise misbehaves and I have an nVidia graphics card
+## Mixxx freezes, crashes, or otherwise misbehaves and I have an nVidia graphics card
 
 Before you try anything else, please update or reinstall your nVidia
-graphics driver. I don't care if it's the same exact version, apparently
-it is fickle and needs to be rebuilt/reinstalled any time things change
-in the OS. Try this first before going any further. 90% of the time it
-will fix your problem. You might also try getting the latest driver from
-nVidia's web site instead of your PC/card manufacturer since they may be
-newer.
+graphics driver. (This applies to all OSes.) I don't care if it's the
+same exact version, apparently it is fickle and needs to be
+rebuilt/reinstalled any time things change in the OS. Try this first
+before going any further. 90% of the time it will fix your problem. You
+might also try getting the latest driver from nVidia's web site instead
+of your PC/card manufacturer since they may be newer.
 
 ## Mixxxcelaneous Known Issues
 

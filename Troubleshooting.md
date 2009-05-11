@@ -1,16 +1,41 @@
 # Troubleshooting FAQ
 
-## I have a decently fast Linux system. Why do I have to set the latency so high?
+## Latency reduction tips
 
-**On Linux : Disable CPU Frequency Scaling or use the 'Performance'
-mode.** CPU Frequency Scaling is a main cause of Mixxx skipping on
-laptops.
+### Linux
 
-If you're using ALSA, try setting your Master output hardware to just
-"default" instead of specific hardware. (This made a huge difference on
-a test system with integrated Intel soundcard.) The drawback to this is
-that system sounds (KDE beeps and such) will now be mixed in and will
-come out the main output.
+  - **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU
+    Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
+    `ps aux | grep cpufreq` and kill any processes you find.)
+  - **Disable chipcard2.** This utility polls for smart cards every few
+    seconds, and when it does, it can cause Mixxx's audio to skip, even
+    with the latency set really high.
+  - If you're using ALSA, **try setting your Master output hardware to
+    just "default"** instead of specific hardware. (This made a huge
+    difference on a test system with integrated Intel soundcard.) The
+    drawback to this is that system sounds (KDE beeps and such) will now
+    be mixed in and will come out the main output.
+  - As a last resort, you can try using a [real-time
+    kernel](http://pkg-freebob.alioth.debian.org/lowlat.html) or a
+    distribution that includes one, like
+    [64Studio](http://www.64studio.com/) or [Ubuntu
+    Studio](http://ubuntustudio.org/).
+
+### Windows
+
+  - **Use the ASIO sound API in Preferences** This requires that you
+    have ASIO drivers installed for your sound hardware. If not, search
+    for them at the web sites of your sound card manufacturer and/or the
+    chipset manufacturer (for integrated cards.) If they don't offer
+    ASIO drivers, try using [ASIO4ALL](http://www.asio4all.com/).
+  - **Disable any anti-spyware "realtime" scanning.** It's been
+    discovered doing this for Ad-Aware makes a huge difference in
+    latency.
+  - **Disable anti-virus on-access scanning.** This hasn't been
+    confirmed but is worth a try since these programs are known to slow
+    systems down in general. **This is only recommended if your
+    system/partition is not connected to a network or the internet**
+    otherwise you put your system at risk of infection.
 
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
 

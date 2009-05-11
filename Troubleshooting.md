@@ -2,6 +2,10 @@
 
 ## Latency reduction tips
 
+*Being able to lower the Latency slider in Mixxx's Sound Hardware
+Preferences as much as possible makes a huge difference in its
+responsiveness. Here are some tips to help you do that.*
+
 ### Linux
 
   - **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU

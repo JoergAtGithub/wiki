@@ -58,7 +58,11 @@ for details.
 
 ### 1.7.0+
 
-The latest official MIDI mappings and script files will be available
-here after Mixxx 1.7.0 is released.
+The latest official MIDI mapping and script file are in the 1.7 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.3d.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
+  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
 
 [Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)

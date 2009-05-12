@@ -65,7 +65,9 @@ C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
     * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
 - Build Mixxx:
   - Start the command prompt and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''scons qtdir=C:\qt\4.5.0 msvcdebug=1'' (you may need to use ''scons.bat'' instead of just ''scons''.) 
+  - Type ''scons'' and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
+    * Add ''msvcdebug=1'' to build the debug version (with console output window.)
+    * Add ''win32=1'' if you're on a 64-bit platform with 64-bit Python installed, otherwise it will try to build the x64 version of Mixxx.
 - Run it: When Mixxx is done compiling, run mixxx.exe in the "mixxx/dist/" directory.
 - (Optional) If you'd like to generate a MSVC project for use with Visual Studio, run "scons qtdir=C:\qt\4.5.0 msvc", and open the newly generated "mixxx.vcproj" file with Visual Studio.
 ```

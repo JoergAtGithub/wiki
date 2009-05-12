@@ -135,7 +135,9 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''scons'' (you may need to use scons.bat instead of just scons.) Add ''msvcdebug=1'' to build the debug version.
+  - Type ''scons'' (you may need to use scons.bat instead of just scons.)
+    * Add ''msvcdebug=1'' to build the debug version.
+    * Add ''win64=1'' if you installed the 32-bit version of Python to force a 64-bit Mixxx build (otherwise it will think you're on a 32-bit platform and build that version.)
     * If you get an error saying that it couldn't find PortAudio, do the following:
       - Edit C:\Python26\Lib\site-packages\scons-1.2.0\SCons\Tool\msvc.py
       - Comment out the ''def get_msvc_paths'' function (starts around line 536)

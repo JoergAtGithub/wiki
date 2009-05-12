@@ -81,10 +81,10 @@ scanning and relinking steps so if you want to avoid this you can skip
 So that it records res/ in mixxx.cfg as where to find skins etc instead
 of dying at startup.
 
-If you wanted to update later to a newer SVN snapshot, you would go back
+If you wanted to update later to a newer BZR snapshot, you would go back
 to the mixxx directory and run:
 
-    svn update
+    bzr update
 
 ### 4\. Create an XCode project (optional)
 

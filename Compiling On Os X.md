@@ -61,7 +61,7 @@ Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
 1.7 code:
 
-    bzr branch lp:mixxx/1.7
+    bzr checkout lp:mixxx/1.7
 
 ### 3\. Compile and install
 

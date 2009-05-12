@@ -41,6 +41,15 @@ responsiveness. Here are some tips to help you do that.*
     system/partition is not connected to a network or the internet**
     otherwise you put your system at risk of infection.
 
+## The BPM detection is wrong
+
+We've updated the library Mixxx uses for BPM detection in 1.7.0 so you
+may need to explicitly tell it to recheck your files or just delete your
+library file (mixxxtrack.xml) and it will try to do auto-detection the
+next time you load each song. If you see values half what they should
+be, go into Preferences-\>BPM Detection, and check Allow BPM above the
+range. Click OK, then have Mixxx try to detect it again.
+
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several

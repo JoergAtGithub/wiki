@@ -35,45 +35,6 @@ libavformat.
   - Is libxine cross-platform? What does Songbird use? --- *[Albert
     Santoni](albert@santoni.ca) 2008/11/11 01:40*
 
-## New Hardware Controller Engine
-
-### Current problems
-
-  - range precision limited by MIDI 7-bit value specification
-  - it's impossible to bind different midi controller to a value
-  - it's not possible to add a new channel Focus, this channel would
-    send event to the channel you have focused (with two button to
-    select channel)
-  - midi input value could be computed, for example I added a Rot64
-    option, that increase the value if midival \> 64 and decrease if
-    midival \< 64 (a patch is already done for this)
-
-### Solution
-
-  - new XML file mapping format, allowing us to specify option easier
-    (Controller Inverted, Rot64, Value Range)
-
-example xml file:
-
-    <controller>
-      <group>ChannelA</group>
-      <value>123</value>
-      <port>1</port>
-      <range begin=0 end=127>
-      <acceleration>42</acceleration>
-      <sensitivity>42</sensitivity>
-      <option>Rot64</option>
-      <option>Invert</option>
-    </controller>
-    * add one class who does the mapping between event (midi,kbd,osc), and the real value.
-
-### Some Desirable Features
-
-  - Should be easy to map a plugged in device through the user interface
-  - Should be easy to write more mappings for more devices (i.e.
-    sensible xml format)
-  - Shouldn't affect stability for people not using midi devices
-
 ## Playqueue and Library Improvements Proposals
 
 [See the dedicated

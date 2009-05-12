@@ -47,22 +47,25 @@ compile process:
     (don't try to compile the source directly, you'll need to mess with
     the ld(1) options and just don't, there's enough nuisances in this
     process))
-  - QT 4.3.0+ ([Download
+  - QT 4.4.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
     the .dmg and install to the default location
+  - Bazaar
+    (\[[http://bazaar-vcs.org/Download|Download](http://bazaar-vcs.org/Download%7CDownload)
+    page\]\]) -- Get the installer for your version of OS X
 
 ### 2\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release off our [downloads
-page](http://www.mixxx.org/download.php), or checkout a snapshot from
-SVN:
+page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
+1.7 code:
 
-    svn co https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk/mixxx
+    bzr branch lp:mixxx/1.7
 
 ### 3\. Compile and install
 
-If you got the source code from SVN, change to the newly created "mixxx"
+If you got the source code from BZR, change to the newly created "mixxx"
 directory, and use scons to compile and install:
 
     cd mixxx

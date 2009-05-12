@@ -22,11 +22,10 @@ your distribution's package manager:
   - libid3tag
   - libmad
   - [PortAudio-v19](http://www.portaudio.com)
-  - QT 4.3.0+
+  - QT 4.4.0+
   - fftw3
   - libogg, libvorbis, libvorbisfile
   - libsndfile
-  - ~~ladspa-sdk~~ - ladspa.h header now in trunk
   - ~~libdjconsole - optional, for Hercules MK2 users~~ - no longer
     required as of r2380 (\~1.6.2)
 

@@ -31,7 +31,7 @@ compatibility](hardware%20compatibility) page.)
 | Hercules DJ Control MP3         | Beta2                 | Beta2    | Beta2       |
 | Stanton SCS.3d                  | Works                 | Works    | Works       |
 | Stanton SCS.1m                  | Works                 |          | \[1\]       |
-| Mixman DM2                      |                       |          |             |
+| Mixman DM2                      |                       |          | Beta1       |
 | Tascam US-428                   |                       |          |             |
 | M-Audio X-Session Pro           |                       | Works    | Works       |
 | Evolution X-Session             |                       |          |             |

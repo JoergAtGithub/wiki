@@ -17,4 +17,15 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
 
 # LADSPA
 
+  - Someone needs to take on this project, or else it'll never get done.
+  - Need to make effects apply to individual channels too. Where should
+    we do this? EngineBuffer? EngineMaster?
+
 # MIDI 3.0
+
+  - MIDI code is still a disaster -- needs a major refactor. 
+
+# Shoutcast
+
+  - mostly finished\!
+  - need feedback loop

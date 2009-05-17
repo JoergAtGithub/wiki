@@ -64,15 +64,9 @@ Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
 ### ???.???
 
-This *might* be a ground-up redesign and rewrite of major parts of
-Mixxx's internals. (This is worthwhile because we have pushed the old
-codebase as far as we can without everything needing to be redone
-anyway. This will also make for MUCH easier future extensibility.)
-
 Ideas for new features:
 
   - Vector-based GUI
-  - SQLite-based library
   - [Internationalization](http://doc.trolltech.com/4.3/i18n.html), also
     [Launchpad
     translations](https://help.launchpad.net/Translations/YourProject)

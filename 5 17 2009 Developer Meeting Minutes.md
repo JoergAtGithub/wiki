@@ -63,6 +63,7 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
   - Library Rewrite
   - Looping
   - Minor Focus
+  - Multi MIDI Device or MIDI Refactor
   - LADSPA
   - M4A Support
   - Shoutcast

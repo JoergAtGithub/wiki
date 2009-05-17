@@ -1,5 +1,9 @@
-On 5/17/2009 we had a developer meeting. Here are the minutes.
-[Slides](http://docs.google.com/Presentation?id=dd557nj5_28fvx8jkgx)
+# May 17, 2008 Developer Meeting
+
+On 5/17/2009 we had a developer meeting. These minutes are meant to
+supplement the slides that were presented, so make sure you check them
+out:
+**[Slides](http://docs.google.com/Present?docid=dd557nj5_28fvx8jkgx&skipauth=true)**
 
 # Status
 

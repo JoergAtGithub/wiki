@@ -46,14 +46,19 @@ New features:
 
 Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
-### 1.8.0 (tentative)
+### 1.8.0
 
-New features (tentative):
+New main features:
 
   - Looping
+  - New Library
+
+New auxiliary features: (Will be included if they're done)
+
   - LADSPA Effects
+  - Shoutcast
+  - Possible BPM detection rework
   - Multiple MIDI device support
-  - Better scratching on all MIDI controllers
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 

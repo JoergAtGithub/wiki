@@ -49,3 +49,24 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
 # Looping
 
 # Other Fun Projects
+
+# Mixxx 1.8 Feature Targets
+
+  - Major Focus
+  - Library Rewrite
+  - Looping
+  - Minor Focus
+  - M4A Support
+  - Shoutcast
+  - BPMDJ Adaptation
+  - Side Projects
+  - Build Server\!
+  - Test Evangelism
+  - SConscript Refactor
+
+# Rewrite\!?\!?
+
+  - We aren't going to be able to do this in the near future. It'll take
+    really long. 
+  - Incremental rewrites are still good.
+  - Should work towards Mixxx working headless

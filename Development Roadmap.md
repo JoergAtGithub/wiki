@@ -57,8 +57,15 @@ New auxiliary features: (Will be included if they're done)
 
   - LADSPA Effects
   - Shoutcast
+  - M4A support
   - Possible BPM detection rework
   - Multiple MIDI device support
+
+Side Projects
+
+  - Build Server\!
+  - Test Evangelism
+  - SConscript Refactor
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 

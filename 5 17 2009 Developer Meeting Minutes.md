@@ -1,5 +1,7 @@
 On 5/17/2009 we had a developer meeting. Here are the minutes.
 
+[Slides](http://docs.google.com/Presentation?id=dd557nj5_28fvx8jkgx)
+
 # Status
 
   - 1.7 is almost out the door - yay\!

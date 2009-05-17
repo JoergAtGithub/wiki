@@ -50,6 +50,13 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
 
 # Other Fun Projects
 
+# Rewrite\!?\!?
+
+  - We aren't going to be able to do this in the near future. It'll take
+    really long. 
+  - Incremental rewrites are still good.
+  - Should work towards Mixxx working headless
+
 # Mixxx 1.8 Feature Targets
 
   - Major Focus
@@ -63,10 +70,3 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
   - Build Server\!
   - Test Evangelism
   - SConscript Refactor
-
-# Rewrite\!?\!?
-
-  - We aren't going to be able to do this in the near future. It'll take
-    really long. 
-  - Incremental rewrites are still good.
-  - Should work towards Mixxx working headless

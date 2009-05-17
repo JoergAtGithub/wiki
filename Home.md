@@ -67,9 +67,7 @@ developers, and artists, and is summarized in the categories below.
   - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - Past development sprints:
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
-
-<!-- end list -->
-
+  - Past developer meetings:
   - [5/17/2009 Developer Meeting
     Minutes](5/17/2009%20Developer%20Meeting%20Minutes)
 

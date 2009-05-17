@@ -17,6 +17,7 @@ developers, and artists, and is summarized in the categories below.
   - [Troubleshooting](Troubleshooting)
   - [Tutorials](Tutorials)
   - [Vinyl Control](Vinyl%20Control)
+  - [Internet broadcasting](Internet%20broadcasting)
   - [System Requirements](System%20Requirements)
   - [Reporting bugs](Reporting%20bugs)
 

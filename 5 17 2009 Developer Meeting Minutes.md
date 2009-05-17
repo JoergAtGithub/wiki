@@ -31,3 +31,17 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
 
   - mostly finished\!
   - need feedback loop
+
+# BPM Detection
+
+  - hard\! 
+  - needs to be 100% right
+  - BPMDJ -- lets use that
+
+# Sound Sources: FFMPEG and M4a
+
+  - FFMPEG 
+  - not very friendly
+  - M4a 
+  - it works
+  - lets finish it

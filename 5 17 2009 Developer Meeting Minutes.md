@@ -15,6 +15,8 @@ On 5/17/2009 we had a developer meeting. Here are the minutes.
 
 # New Library
 
+  - Sweet
+
 # LADSPA
 
   - Someone needs to take on this project, or else it'll never get done.

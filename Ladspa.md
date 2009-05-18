@@ -52,7 +52,7 @@ Currently the following skins are supported: outlineSmall, outline,
 outlineClose, traditional, hercules, nCut, Collusion (1280), Collusion
 (1280-WS).
 
-## Integration into Trunk TODO
+## LADSPA TODO
 
 All the LADSPA code is already in trunk, it just needs to be enabled by
 default. In order for us to do this "right", here's the stuff that needs

@@ -48,6 +48,8 @@ Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
 ### 1.8.0
 
+[To-do list](1.8.0_to_do_list)
+
 New main features:
 
   - Looping

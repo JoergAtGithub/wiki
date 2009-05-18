@@ -108,6 +108,16 @@ ControllerName.functionName = function (channel, control, value, status) {
 }
 ```
 
+You can leave off any parameters at the end that you don't need; the
+function is identified only by name. For example, if you don't need the
+MIDI status or value bytes, just do:
+
+``` javascript
+ControllerName.functionName = function (channel, control) {
+    ...
+}
+```
+
 ### Reading and setting Mixxx control values
 
 Script functions can check Mixxx control values using

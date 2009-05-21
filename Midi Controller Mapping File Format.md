@@ -1,7 +1,6 @@
 # MIDI Controller Mapping File Format
 
-**Current XML file schema revision is: 1, but the spec may change before
-release**
+**Current XML file schema revision is: 1**
 
 ## Introduction
 

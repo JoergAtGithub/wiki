@@ -23,6 +23,14 @@ developers, and artists, and is summarized in the categories below.
 
 ## Developer Documentation
 
+### Creating/editing MIDI controller mappings & scripts
+
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format)
+  - [UI/MIDI Controls and
+    Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
+  - [MIDI Scripting](MIDI%20Scripting)
+
 ### Build Mixxx
 
   - [Compiling on Linux](Compiling%20on%20Linux), brief
@@ -46,11 +54,6 @@ developers, and artists, and is summarized in the categories below.
   - [Feature Discussion](Feature%20Discussion)
   - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
     Portable HDDs)](Portable%20Mixxx)
-  - [UI/MIDI Controls and
-    Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
-  - [MIDI Controller Mapping File
-    Format](MIDI%20Controller%20Mapping%20File%20Format)
-  - [MIDI Scripting](MIDI%20Scripting)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Threads](Threads)

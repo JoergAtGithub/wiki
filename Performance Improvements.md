@@ -45,10 +45,17 @@ the more machines Mixxx can run on, and the larger our user base.
 ### Time-critical code
 
 *(Please list all time-critical code sections/functions here to be
-considered for assembly language reimplementation.)* For reference:
-<http://www.agner.org/optimize/>
+considered for assembly language reimplementation.)*
 
-  - ...
+  - EQ code
+
+For reference:
+
+  - [](http://www.agner.org/optimize/)
+  - [Intel64 & IA-32
+    manuals](http://developer.intel.com/products/processor/manuals/index.htm)
+  - [AMD64
+    manuals](http://support.amd.com/us/psearch/Pages/psearch.aspx?type=2.1&product=5.7&contentType=Tech+Doc+Processor&ostype=&keywords=&items=20)
 
 ## Memory
 

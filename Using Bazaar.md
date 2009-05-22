@@ -111,7 +111,7 @@ unless you do it manually. **To bring your features branch up to date**:
     merge was applying patches that were already applied to the remote
     branch. 
 
-## Making it work like SVN
+## Making it work like SVN (a.k.a. Centralized Mode)
 
 (For those of us scared of this "distributed" thing...)
 

@@ -1,5 +1,7 @@
 # Using Bazaar
 
+**[Official documentation](http://bazaar-vcs.org/Workflows)**
+
 ## GUI clients
 
 Here's a list of graphical Bazaar clients that Mixxx developers have

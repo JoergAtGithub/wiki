@@ -9,8 +9,8 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 ### 1.6.1 & prior
 
 Mapping for use with Mixxx up to v1.6.1:
-[[/media/hardware/stantonscs/stanton_scs.1m_1.60.midi.xml.gz|]] *Updated on
-May 23, 2009 to more closely match the mapping for 1.7.0*
+[[/media/hardware/stantonscs/stanton_scs.1m_1.60.midi.xml.gz|]] ***Updated**
+on May 23, 2009 to more closely match the mapping for 1.7.0*
 
 This is more of a preview release to get you started until we release
 Mixxx 1.7.0 which will feature full support and customization for the
@@ -24,8 +24,7 @@ SCS.1m.
 
   - Windows: C:\\Program Files\\Mixxx\\midi
   - OS X: /Applications/Mixxx.app/Contents/midi
-  - Linux is waiting on protocol support for the SCS.1 series. As soon
-    as that's ready, this'll work\!
+  - Linux: /usr\[/local\]/share/mixxx/midi
 
 <!-- end list -->
 
@@ -35,14 +34,23 @@ SCS.1m.
     node: "control"' and you're good to go.
 
 **If you don't see the device in the list or Mixxx doesn't respond to
-it**, you may need to run DaRouter to get communication (this is true on
-Windows.) In this case:
+it**:
 
-``` 
-  - Download & unpack the {{:hardware:stantonscs:scs.1m_thru.bmtp.gz|SCS.1m_thru}} DaRouter preset
-  - Start DaRouter and browse to where you saved it. Select & open it.
-  - Follow from step 2 above.
-```
+  - **Windows & Mac**: you may need to run DaRouter to get communication
+    1.  Download & unpack the
+        [[/media/hardware/stantonscs/scs.1m_thru.bmtp.gz|SCS.1m\_thru]]
+        DaRouter preset
+    2.  Start DaRouter and browse to where you saved it. Select & open
+        it.
+    3.  Follow from step 2 above.
+  - **Linux**, you'll need to install [FFADO](http://www.ffado.org)
+    v2.1.
+    1.  Follow [these
+        instructions](http://subversion.ffado.org/wiki/InstallingFfadoFromSource),
+        just steps 1-5 to install FFADO from trunk (until v2.1 is
+        released.)
+    2.  Run the `libffado/tests/test-scs` tool that will be built, then
+        run Mixxx.
 
 #### Notes
 
@@ -50,7 +58,7 @@ Windows.) In this case:
     Right for 2)
   - The buttons above the gain knobs at the top are the headphone cues
   - The encoder knobs act as jog wheels
-  - Pressing the encoder knobs toggles the flange effect
+  - Pressing the encoder knobs toggles reverse playback
   - A & B are REWind and FastForward, respectively
   - The long button at the bottom is Play/Pause
   - The short circle button beneath that is Cue.
@@ -59,8 +67,8 @@ Windows.) In this case:
   - Channel columns 1 & 4 control things for decks 1 & 2 respectively:
   - The circle button at the top syncs the song with that on the other
     deck (assuming the BPM detector worked correctly on both)
-  - Pressing the encoder knob toggles reverse playback (rotating it does
-    nothing)
+  - Pressing the encoder knob toggles the flange effect (rotating it
+    does nothing)
   - A & B permanently lower/raise the pitch by 1%
   - The slider is the pitch slider
   - The long button at the bottom temporarily raises the pitch by 4% for

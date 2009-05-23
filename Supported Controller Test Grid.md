@@ -20,27 +20,27 @@ tracker](https://launchpad.net/mixxx/+filebug).
 (For details on a particular controller, please visit the [hardware
 compatibility](hardware%20compatibility) page.)
 
-|                                 |             |          |                    |
-| ------------------------------- | ----------- | -------- | ------------------ |
-| Device                          | Windows     | Mac OS X | Linux              |
-| Hercules DJ Control Steel       |             |          |                    |
-| Hercules DJ Console RMX         | Beta2       | Beta2    | Beta2              |
-| Hercules DJ Console Mk1         |             |          |                    |
-| Hercules DJ Console Mk2         | Beta2       | Beta2    | Beta2              |
-| Hercules DJ Console Mac Edition |             |          |                    |
-| Hercules DJ Control MP3         | Beta2       | Beta2    | Beta2              |
-| Stanton SCS.3d                  | Works       | Works    | Works              |
-| Stanton SCS.1m                  | Works       |          | Doesn't work \[1\] |
-| Mixman DM2                      |             |          | Works              |
-| Tascam US-428                   |             |          |                    |
-| M-Audio X-Session Pro           |             | Works    | Works              |
-| Evolution X-Session             |             |          |                    |
-| M-Audio Xponent                 |             |          | Works              |
-| FaderFox DJ2                    |             |          |                    |
-| Vestax VCI-100                  |             |          |                    |
-| Numark Total Control            | Works \[2\] |          |                    |
-| Behringer BCD3000               |             |          | Works \[3\]        |
-| Akai MPD24                      |             | Works    | Works              |
+|                                 |             |          |             |
+| ------------------------------- | ----------- | -------- | ----------- |
+| Device                          | Windows     | Mac OS X | Linux       |
+| Hercules DJ Control Steel       |             |          |             |
+| Hercules DJ Console RMX         | Beta2       | Beta2    | Beta2       |
+| Hercules DJ Console Mk1         |             |          |             |
+| Hercules DJ Console Mk2         | Beta2       | Beta2    | Beta2       |
+| Hercules DJ Console Mac Edition |             |          |             |
+| Hercules DJ Control MP3         | Beta2       | Beta2    | Beta2       |
+| Stanton SCS.3d                  | Works       | Works    | Works       |
+| Stanton SCS.1m                  | Works       |          | Works \[1\] |
+| Mixman DM2                      |             |          | Works       |
+| Tascam US-428                   |             |          |             |
+| M-Audio X-Session Pro           |             | Works    | Works       |
+| Evolution X-Session             |             |          |             |
+| M-Audio Xponent                 |             |          | Works       |
+| FaderFox DJ2                    |             |          |             |
+| Vestax VCI-100                  |             |          |             |
+| Numark Total Control            | Works \[2\] |          |             |
+| Behringer BCD3000               |             |          | Works \[3\] |
+| Akai MPD24                      |             | Works    | Works       |
 
 1.  <https://bugs.launchpad.net/mixxx/+bug/342952/comments/1>
 

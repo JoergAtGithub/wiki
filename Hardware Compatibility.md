@@ -13,9 +13,9 @@ table below to reflect the state of Mixxx's hardware support:
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.6.1 +Herc Untested)   | Yes (1.6.1 +Herc Untested)                              | Yes (1.6.1+Herc Untested) + [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)                                                                                                        | Yes                |
 | [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)  | Yes (1.6.0)                  | Yes (1.6.0)                                             | ???                                                                                                                                                                                                                                                     | Yes                |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                | Yes (1.6.1 +Herc Untested)   | Yes (1.6.1 +Herc Untested)                              | Yes (1.6.1+Herc) + [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)                                                                                                                 | Yes                |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1) \[1\] (1.7.0)    | Yes (1.7.0 Beta2, untested) \[2\] (1.7.0, untested)     | Waiting on [FFADO](http://www.ffado.org/) support                                                                                                                                                                                                       | Yes                |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1) \[1\] (1.7.0)    | Yes (1.7.0 Beta2, untested) \[2\] (1.7.0, untested)     | 1.6.0 \[3\]                                                                                                                                                                                                                                             | Yes                |
 | [Stanton SCS.1d](Stanton%20SCS.1d)                               | In Progress                  | In Progress                                             | Waiting on [FFADO](http://www.ffado.org/) support                                                                                                                                                                                                       | No                 |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[3\] (1.7.0)     | Yes (1.6.1)\[4\] (1.7.0)                                | Yes (1.7.0)                                                                                                                                                                                                                                             | Yes                |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[4\] (1.7.0)     | Yes (1.6.1)\[5\] (1.7.0)                                | Yes (1.7.0)                                                                                                                                                                                                                                             | Yes                |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | Waiting for programming info | Ditto                                                   | Ditto                                                                                                                                                                                                                                                   | No                 |
 | [Mixman DM2](Mixman%20DM2)                                       | ?                            | Yes [via MIDI Driver](http://www.joemattiello.com/dm2/) | Yes [ALSA MIDI Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz) [Alternate ALSA MIDI driver (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2) [dm2linux on sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453) | Yes                |
 | [Tascam US-428](Tascam%20US-428)                                 | MIDI (1.6.0, untested)       | ?                                                       | Yes, you need the latest us428control (launch us428control -m mixxx) and the select the US428 mapping in Mixxx's options                                                                                                                                | No                 |
@@ -27,10 +27,10 @@ table below to reflect the state of Mixxx's hardware support:
 | [FaderFox DJ2](FaderFox%20DJ2)                                   | Yes (1.6.0)                  | Yes (1.6.0, untested)                                   | Yes (1.6.0)                                                                                                                                                                                                                                             | Yes                |
 | [Vestax VCI-100](Vestax%20VCI-100)                               | Yes (1.6.0)                  | Yes (1.6.0)                                             | Yes (1.6.0)                                                                                                                                                                                                                                             | Yes                |
 | [Numark Total Control](Numark%20Total%20Control)                 | Yes (1.6.0)                  | Yes (1.6.0)                                             | Yes (1.6.0)                                                                                                                                                                                                                                             | Yes                |
-| [Behringer BCD3000](Behringer%20BCD3000)\[5\]                    | Yes (1.6.0, untested)        | Yes (1.6.0, untested)                                   | Yes (1.6.0)                                                                                                                                                                                                                                             | Yes                |
+| [Behringer BCD3000](Behringer%20BCD3000)\[6\]                    | Yes (1.6.0, untested)        | Yes (1.6.0, untested)                                   | Yes (1.6.0)                                                                                                                                                                                                                                             | Yes                |
 | [M-Audio Trigger Finger](M-Audio%20Trigger%20Finger)             | Yes (1.6.0)                  | untested                                                | untested                                                                                                                                                                                                                                                | N/A                |
 | [Eks XP5](Eks%20XP5)/[Eks XP10](Eks%20XP10)                      | ?                            | ?                                                       | No (requires Linux driver)                                                                                                                                                                                                                              | No                 |
-| [Eks Otus](Eks%20Otus)                                           | Yes\[6\] (untested)          | Yes\[7\] (untested)                                     | Yes\[8\] (untested)                                                                                                                                                                                                                                     | No                 |
+| [Eks Otus](Eks%20Otus)                                           | Yes\[7\] (untested)          | Yes\[8\] (untested)                                     | Yes\[9\] (untested)                                                                                                                                                                                                                                     | No                 |
 
 # Mixxx Soundcard Compatibility Notes
 
@@ -87,17 +87,19 @@ of Mixxx users do.
 
 2.  basic support
 
-3.  with DaRouter
+3.  with FFADO 2.1
 
 4.  with DaRouter
 
-5.  no jogwheels
+5.  with DaRouter
 
-6.  Compatible with any software that supports MIDI learn, in Linux/Mac
-    OS X/Windows: <http://eks.fi/product.php?p=products&id=35>
+6.  no jogwheels
 
 7.  Compatible with any software that supports MIDI learn, in Linux/Mac
     OS X/Windows: <http://eks.fi/product.php?p=products&id=35>
 
 8.  Compatible with any software that supports MIDI learn, in Linux/Mac
+    OS X/Windows: <http://eks.fi/product.php?p=products&id=35>
+
+9.  Compatible with any software that supports MIDI learn, in Linux/Mac
     OS X/Windows: <http://eks.fi/product.php?p=products&id=35>

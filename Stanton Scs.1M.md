@@ -47,7 +47,7 @@ it**:
     v2.1.
     1.  Follow [these
         instructions](http://subversion.ffado.org/wiki/InstallingFfadoFromSource),
-        just steps 1-5 to install FFADO from trunk (until v2.1 is
+        just steps 1-3 and 5 to install FFADO from trunk (until v2.1 is
         released.)
     2.  Run the `libffado/tests/test-scs` tool that will be built, then
         run Mixxx.

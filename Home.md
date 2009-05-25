@@ -51,7 +51,8 @@ developers, and artists, and is summarized in the categories below.
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
   - [Performance improvements](Performance%20improvements)
-  - [Feature Discussion](Feature%20Discussion)
+  - [Feature Discussion &
+    Specifications](Feature%20Discussion%20&%20Specifications)
   - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
     Portable HDDs)](Portable%20Mixxx)
   - [MixxxScript](MixxxScript)
@@ -62,12 +63,6 @@ developers, and artists, and is summarized in the categories below.
   - Tutorials for new developers:
   - [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
-  - Feature Specifications:
-  - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
-  - [Looping](Looping)
-  - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
-  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
-  - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - Past development sprints:
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
   - Past developer meetings:

@@ -11,8 +11,9 @@ overlay (C) 2009 Sean M. Pappalardo*
 
 *Refer to the image above, top to bottom*
 
-  - **a** buttons: Change the pitch of the deck so that its BPM matches
-    that of the other deck (assuming the pitch range is sufficient)
+  - **a** buttons: Sync function: change the pitch of the deck so that
+    its BPM matches that of the other deck (assuming the pitch range is
+    sufficient)
   - **b** buttons: Toggle headphone cue
   - **Gain, High, Mid, Low** knobs: as labeled
   - ***Pan** knob: unused*

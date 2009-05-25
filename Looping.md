@@ -59,6 +59,10 @@ setup similar in function would be GREAT in Mixxx\! I've no idea about
 the technical issues involved, but AtomixMP3's functions work fine even
 through WINE if that helps?
 
+**Elysion's thoughts:** Have a mode where the looping would start at the
+next beat / end of the bar and would jump x beats \_backwards\_ when
+starting to loop
+
 #### Mixxx Skin Considerations
 
 What buttons would we need to add to the main GUI (ie. all skins)?

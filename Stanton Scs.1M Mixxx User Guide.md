@@ -50,7 +50,7 @@ overlay (C) 2009 Sean M. Pappalardo*
 
 *Refer to the image above, top to bottom*
 
-  - **z** button: Toggle cross fader start
+  - **z** button: Toggle cross fader start/cue
   - **Master, Headphones, Cue Mix** knobs: as labeled
   - ***Zone** knob: unused*
   - ***Gain** knob: unused*

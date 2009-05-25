@@ -37,7 +37,9 @@ overlay (C) 2009 Sean M. Pappalardo*
     record spindle)
   - Press to toggle reverse playback
   - LEDs show current track position
-  - **d** displays: Show the current track time remaining
+  - **d** displays: Show the current track time remaining. They will
+    flash slowly when less than 30 seconds remain, quickly when less
+    than 15 seconds remain.
   - **d** A buttons: Rewind
   - **d** B buttons: Fast-forward
   - **f** sliders: Volume adjust

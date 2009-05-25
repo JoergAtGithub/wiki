@@ -51,8 +51,7 @@ developers, and artists, and is summarized in the categories below.
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
   - [Performance improvements](Performance%20improvements)
-  - [Feature Discussion &
-    Specifications](Feature%20Discussion%20&%20Specifications)
+  - [Feature Discussion & Specifications](feature_discussion)
   - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
     Portable HDDs)](Portable%20Mixxx)
   - [MixxxScript](MixxxScript)

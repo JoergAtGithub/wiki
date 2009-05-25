@@ -4,9 +4,6 @@ This guide explains how the SCS.1m is mapped by default in Mixxx.
 
 [[/media/hardware/stantonscs/scs1m-map.png|]]
 
-***Easy customization:*** We have provided the following customization
-variables at the top of the script you can set to your liking:
-
 *Image courtesy of [Stanton Magnetics, Inc.](http://www.stantondj.com),
 overlay (C) 2009 Sean M. Pappalardo*
 

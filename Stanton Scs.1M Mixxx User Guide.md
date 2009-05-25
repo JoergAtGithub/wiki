@@ -59,9 +59,9 @@ overlay (C) 2009 Sean M. Pappalardo*
   - **k** knob: Adjust flange effect period (Low Frequency Oscillator)
   - **l** knob: Adjust master pan (balance)
   - ***p** button: unused*
-  - ***m** button: unused*
+  - **m** button: BPM tap for Deck 1
   - ***n** button: unused*
-  - ***o** button: unused*
+  - **o** button: BPM tap for Deck 2
   - ***Preset** buttons: unused*
   - **Bank Down** button: select backward between Library, Playlist, and
     Browse views

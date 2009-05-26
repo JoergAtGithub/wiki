@@ -15,7 +15,8 @@ straightforward editing of the edcast configuration file, I launch it,
 specifying the configuration file and the jack sockets to stream from,
 with something like this:
 
-`~/apps/edcast$ bin/edcast -c etc/edcast.conf portaudio-0 portaudio-1`
+`~/apps/edcast$ bin/edcast -c etc/edcast.conf PortAudio:out_0
+PortAudio:out_1`
 
 And if all goes well, edcast will start telling you how many kilobits
 were sent up every second, until it is killed with ctrl+c.

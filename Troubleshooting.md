@@ -50,6 +50,13 @@ next time you load each song. If you see values half what they should
 be, go into Preferences-\>BPM Detection, and check Allow BPM above the
 range. Click OK, then have Mixxx try to detect it again.
 
+## The library doesn't see new songs
+
+First try clicking Library-\>Rescan library. Then re-sort it (by artist
+name or whatever) by clicking on the column heading. If that doesn't
+help, delete mixxxtrack.xml in your \~/.mixxx or $USERPROFILE$\\Local
+Settings\\Application Data\\Mixxx folder and restart Mixxx.
+
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several

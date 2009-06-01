@@ -113,4 +113,6 @@ branch and can be downloaded from here:
     SCS.1m.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.1m.midi.x-20090413052950-0s8dvnvezkl3lrrh-1/Stanton%20SCS.1m.midi.xml)
   - [Stanton-SCS1m-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs1mscripts.-20090413052950-0s8dvnvezkl3lrrh-2/Stanton-SCS1m-scripts.js)
 
+Just drop them in the res/midi folder (see instructions above.)
+
 [Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)

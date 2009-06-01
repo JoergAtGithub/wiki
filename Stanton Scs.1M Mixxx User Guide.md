@@ -7,6 +7,17 @@ This guide explains how the SCS.1m is mapped by default in Mixxx.
 *Image courtesy of [Stanton Magnetics, Inc.](http://www.stantondj.com),
 overlay (C) 2009 Sean M. Pappalardo*
 
+***Easy customization:*** We have provided the following customization
+variables at the top of the script you can set to your liking:
+
+  - **slippage** - Slipperiness of the virtual slipmat when scratching
+    with the select knob in Control mode. Set this to a number between
+    0.0 (perfect turntable) and 0.95 (bent record.)
+
+Just open the `midi/Stanton-SCS1m-scripts.js` file in your favorite text
+editor (Wordpad works too) and you'll see these variables right near the
+top. Edit & save, then restart Mixxx and enjoy.
+
 ## Deck controls
 
 *Refer to the image above, top to bottom*
@@ -62,12 +73,14 @@ overlay (C) 2009 Sean M. Pappalardo*
   - **m** button: BPM tap for Deck 1
   - ***n** button: unused*
   - **o** button: BPM tap for Deck 2
-  - ***Preset** buttons: unused*
+  - **Preset** buttons: Hot cue points for the selected deck (**q**
+    button)
   - **Bank Down** button: select backward between Library, Playlist, and
     Browse views
   - **Bank Up** button: select foreward between Library, Playlist, and
     Browse views
-  - ***q** button: unused*
+  - **q** button: Change which deck's hot cues are active (**Preset**
+    buttons.) Off is Deck 1, On (red) is Deck 2.
   - **r** jog wheel:
   - **Browse mode**:
 
@@ -76,10 +89,13 @@ overlay (C) 2009 Sean M. Pappalardo*
 ``` 
     * Rotate to move the track select highlight
     * Press to load the selected track into the first stopped deck, if any
-* //**Cancel** button: unused//
-* //**Enter** button: unused//
+* **Control mode**:
+    * Rotate to scratch the song on the selected deck
+    * //Pressing does nothing//
+* **Cancel** button: **Control mode**: press to select Deck 1 for scratching
+* **Enter** button: **Control mode**: press to select Deck 2 for scratching
 * //**Setup** button: unused by Mixxx but will enter the mixer's internal setup menu//
-* //**Control** button: currently unused//
+* **Control** button: Selects scratching mode for the jog wheel
 * **Browse** button: Selects track browse mode for the jog wheel
 ```
 

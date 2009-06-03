@@ -19,6 +19,9 @@ variables at the top of the script you can set to your liking:
     spinning platter LED in vinyl modes. Otherwise shows in all modes
     except LOOP and TRIG (because they're used for other things in those
     modes.)
+  - **VUMeters** - If set to true, shows a VU meter in the circular area
+    for the currently selected deck when in vinyl mode. (Left for deck
+    1, right for deck 2.)
   - **markHotCues** - Set to `"blue"` or `"red"` (with quotes) to choose
     which LEDs mark the stored positions in TRIG & LOOP modes
   - **jogOnLoad** - If true, the unit will automatically change to Vinyl

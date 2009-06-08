@@ -34,10 +34,11 @@ line-level signals are preferred.
 inputs".
 
 Now, for the "sound inputs", you have two options: You can either use a
-fancy DJ soundcard that has multiple stereo line-inputs on it, or can
-use two soundcards (each with a single stereo line-in). Currently,
-Mixxx's vinyl control has only been tested with the latter
-configuration.
+fancy DJ soundcard that has multiple stereo **line** inputs on it, or
+can use two soundcards (each with a single stereo **line in**).
+Currently, Mixxx's vinyl control has only been tested with the latter
+configuration. *Don't use mic inputs\! They're not stereo and won't
+work\!*
 
 **For best scratch performance** with vinyl control, your system must be
 able to handle setting the latency to **10ms or less** otherwise the

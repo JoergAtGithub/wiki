@@ -57,7 +57,7 @@ name or whatever) by clicking on the column heading. If that doesn't
 help, delete mixxxtrack.xml in your \~/.mixxx or $USERPROFILE$\\Local
 Settings\\Application Data\\Mixxx folder and restart Mixxx.
 
-## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?
+## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several
 users. This is due to some funky OpenGL code inside QT3. Fortunately,
@@ -73,9 +73,9 @@ certain graphics hardware.
 
 ## Mixxx's waveforms eat my screen in Ubuntu
 
-See "Mixxx behaves weird with Beryl/Compiz/Compiz Fusion - What gives?".
-Thought there is some (unknown to us) extra problem with how Ubuntu uses
-compiz, appearently. The workaround is to go
+See "Mixxx behaves weird with Beryl/Compiz/Compiz Fusion" above. Thought
+there is some (unknown to us) extra problem with how Ubuntu uses compiz,
+appearently. The workaround is to go
 System-\>Preferences-\>Appearence-\>Visual Effects and set them to
 "none". After you do this Mixxx should behave properly (tell us if it
 doesn't\!).
@@ -90,7 +90,7 @@ drivers aren't always the latest.) Also, if you're on Windows, make sure
 you have the latest [DirectX](http://www.microsoft.com/directx)
 installed.
 
-## No or too few sound cards appear in the preferences dialog - How can I fix this?
+## No or too few sound cards appear in the preferences dialog
 
 When no sound cards/devices appear in the sound preferences dialog, it
 usually means that another application is using your sound card(s). This

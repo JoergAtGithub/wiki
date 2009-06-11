@@ -1,8 +1,8 @@
 # Hardware Compatibility
 
-This is a list of hardware controllers that is known to work with Mixxx.
-If you've tested one on a particular operating system, please update the
-table below to reflect the state of Mixxx's hardware support:
+The following is a list of hardware controllers that are known to work
+with Mixxx. Mixxx comes bundled with MIDI mapping presets for the
+devices that are listed as working below.
 
 |                                                                 |                              |                                                         |                                                                                                                                                                                                                                                         |
 | --------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,6 +28,10 @@ table below to reflect the state of Mixxx's hardware support:
 | [Vestax VCI-100](Vestax%20VCI-100)                              | Yes (1.6.0)                  | Yes (1.6.0)                                             | Yes (1.6.0)                                                                                                                                                                                                                                             |
 | [Numark Total Control](Numark%20Total%20Control)                | Yes (1.6.0)                  | Yes (1.6.0)                                             | Yes (1.6.0)                                                                                                                                                                                                                                             |
 | [Behringer BCD3000](Behringer%20BCD3000)\[6\]                   | Yes (1.6.0, untested)        | Yes (1.6.0, untested)                                   | Yes (1.6.0)                                                                                                                                                                                                                                             |
+
+Please do not modify this list unless a MIDI mapping preset for a new
+controller has been added to Mixxx and it has been tested by at least
+one user and developer.
 
 # Mixxx Soundcard Compatibility Notes
 

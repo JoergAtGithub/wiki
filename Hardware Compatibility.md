@@ -32,6 +32,15 @@ Please do not modify this list unless a MIDI mapping preset for a new
 controller has been added to Mixxx and it has been tested by at least
 one user and developer.
 
+Please note that any DJ controller which is a standard MIDI device can
+be made to work with Mixxx via our mapping system. Simple controllers
+can be mapped from inside Mixxx using our MIDI learning feature, though
+more complicated devices may require additional editing by hand of a
+mapping XML file or script file. For more information, please see our
+[MIDI Controller Mapping File
+Format](MIDI%20Controller%20Mapping%20File%20Format) and our [MIDI
+Scripting](MIDI%20Scripting) pages.
+
 # Mixxx Soundcard Compatibility Notes
 
 Mixxx is generally compatible with all sound cards, but here are some

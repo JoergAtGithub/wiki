@@ -23,14 +23,6 @@ developers, and artists, and is summarized in the categories below.
 
 ## Developer Documentation
 
-### Creating/editing MIDI controller mappings & scripts
-
-  - [MIDI Controller Mapping File
-    Format](MIDI%20Controller%20Mapping%20File%20Format)
-  - [UI/MIDI Controls and
-    Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
-  - [MIDI Scripting](MIDI%20Scripting)
-
 ### Build Mixxx
 
   - [Compiling on Linux](Compiling%20on%20Linux), brief
@@ -44,24 +36,32 @@ developers, and artists, and is summarized in the categories below.
 
 <!-- end list -->
 
+  - Getting Started:
   - [How the hell to use Bazaar](Using%20Bazaar)
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
   - [Creating backtraces](Creating%20backtraces)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
+  - Tutorial: [Adding a new button to Mixxx's
+    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
+  - Editing MIDI mappings & scripts:
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format)
+  - [UI/MIDI Controls and
+    Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
+  - [MIDI Scripting](MIDI%20Scripting)
+  - Development Topics:
   - [Performance improvements](Performance%20improvements)
   - [Feature Discussion & Specifications](feature_discussion)
   - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
     Portable HDDs)](Portable%20Mixxx)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
+  - Other Resources:
   - [Threads](Threads)
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - Tutorials for new developers:
-  - [Adding a new button to Mixxx's
-    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
   - Past development sprints:
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
   - Past developer meetings:

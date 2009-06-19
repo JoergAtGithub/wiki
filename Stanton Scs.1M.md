@@ -115,4 +115,6 @@ branch and can be downloaded from here:
 
 Just drop them in the res/midi folder (see instructions above.)
 
+[See a walk-through video\!](http://www.youtube.com/watch?v=crJksOEuTx0)
+
 [Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)

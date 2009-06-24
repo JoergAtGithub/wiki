@@ -75,8 +75,11 @@ Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
 Ideas for new features:
 
-  - Vector-based GUI
-  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), also
+  - [Vector-based
+    GUI](http://doc.trolltech.com/4.5/qsvgrenderer.html#details)
+  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see
+    also [Qt
+    Linguist](http://doc.trolltech.com/4.5/linguist-manual.html) and
     [Launchpad
     translations](https://help.launchpad.net/Translations/YourProject)
   - [Performance improvements](Performance%20improvements)

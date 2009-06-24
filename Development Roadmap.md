@@ -75,8 +75,7 @@ Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
 Ideas for new features:
 
-  - [Vector-based
-    GUI](http://doc.trolltech.com/4.5/qsvgrenderer.html#details)
+  - [Vector-based GUI](Vector-based%20GUI)
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see
     also [Qt
     Linguist](http://doc.trolltech.com/4.5/linguist-manual.html) and

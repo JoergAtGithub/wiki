@@ -13,6 +13,7 @@ page.
   - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
+  - [Vector-based GUI](Vector-based%20GUI)
 
 ## Reducing Number of Input Libraries
 
@@ -62,8 +63,6 @@ may be done already or irrelevant.
     (\[Master\] headMix MixxxControl)
   - Visual 'track ending' indicator for visual waveform
   - Effects panel integration with UI
-  - SVG/Vector based skins so hitting fullscreen can automatically
-    resize the widgets.
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate. - BpmDJ engine being considered
   - ~~M4A support~~ - In progress

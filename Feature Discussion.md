@@ -38,11 +38,12 @@ libavformat.
   - libavformat/libavcodec (the library used by ffmpeg and mplayer)
   - support lots of formats
   - support utf8
-  - libxine
+  - xine-lib
   - supports lots of formats and is extensible
   - use to play audio from (multiplexed) video files
   - future VJ support?
-  - Is libxine cross-platform?
+  - It's not totally cross-platform yet but progress is ongoing:
+    <http://www.xine-project.org/about>
   - gstreamer
   - used by Songbird
   - plugins allow more formats (QuickTime, WMA, FFMPEG, etc.)

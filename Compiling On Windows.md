@@ -1,3 +1,6 @@
+*(If you're looking to build the dependencies, [go to this
+page](Build%20Windows%20dependencies).)*
+
 ## Build the 32-bit version using Microsoft Visual Studio Express
 
 (Currently the official way to build Mixxx on Windows, frequently

@@ -1,5 +1,7 @@
 # Hardware Compatibility
 
+## Controllers
+
 The following is a list of hardware controllers that are known to work
 with Mixxx. Mixxx comes bundled with MIDI mapping presets for the
 devices that are listed as working below.
@@ -41,12 +43,23 @@ mapping XML file or script file. For more information, please see our
 Format](MIDI%20Controller%20Mapping%20File%20Format) and our [MIDI
 Scripting](MIDI%20Scripting) pages.
 
-# Mixxx Soundcard Compatibility Notes
+## Sound cards
 
-Mixxx is generally compatible with all sound cards, but here are some
-tips our users have given us:
+Mixxx is generally compatible with all sound cards that are supported by
+the host operating system.
 
-## Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
+### On Linux
+
+Linux generally has very good support for sound cards, but if you'd like
+to see if there's any known issues with any sound card, take a look at
+the [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/). Also
+see [Soundcard resources for Linux
+DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
+author of xwax. If you have a Firewire/IEEE 1394 interface, you'll want
+to look at [the FFADO project](http://www.ffado.org).
+
+### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in
 Mixxx's preferences, as it enables you to use all the channels on the
@@ -72,14 +85,7 @@ Note: An Audigy LS user reported having to select "surround70" or
 "surround50" as the audio devices in Mixxx's preferences in order to be
 able to use both Master and Headphone outputs.
 
-## Linux and Sound cards
-
-Linux generally has very good support for sound cards, but if you'd like
-to see if there's any known issues with any sound card, take a look at
-the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/).
-
-## Multiple Sound cards
+## Multiple sound cards
 
 Mixxx 1.6.0+ supports multiple sound cards.
 

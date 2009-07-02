@@ -56,8 +56,9 @@ the [ALSA sound card
 matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/). Also
 see [Soundcard resources for Linux
 DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
-author of xwax. If you have a Firewire/IEEE 1394 interface, you'll want
-to look at [the FFADO project](http://www.ffado.org).
+author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
+1394 interface, you'll want to look at [the FFADO
+project](http://www.ffado.org).
 
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 

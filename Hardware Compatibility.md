@@ -53,7 +53,7 @@ the host operating system.
 Linux generally has very good support for sound cards, but if you'd like
 to see if there's any known issues with any sound card, take a look at
 the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/). Also
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main). Also
 see [Soundcard resources for Linux
 DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
 author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
@@ -70,9 +70,9 @@ thread](https://sourceforge.net/forum/forum.php?thread_id=1649679&forum_id=15615
 While the Audigy NX works well on Linux, **the Creative X-Fi is
 currently incompatible with Linux**. Creative says they're releasing a
 [closed-source driver](http://opensource.creative.com/soundcard.html) in
-the \<strike\>second\</strike\> third or fourth quarter of 2007, but
-closed-source drivers often lead to headaches, so Mixxx users might be
-best to steer clear of these cards.
+the ~~second~~ third or fourth quarter of 2007, but closed-source
+drivers often lead to headaches, so Mixxx users might be best to steer
+clear of these cards.
 
 The cheaper Creative Audigy cards on the market currently (usually
 billed as the Audigy SE or Value) do not correctly support input under
@@ -80,7 +80,7 @@ Linux, and while they have the required number of inputs for vinyl
 control, are not a good budget choice. Several users have had problems
 with these cards generally under Linux, and with Mixxx in particular.
 The driver/chipset of note is CA0106 in the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main/).
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main).
 
 Note: An Audigy LS user reported having to select "surround70" or
 "surround50" as the audio devices in Mixxx's preferences in order to be

@@ -60,6 +60,16 @@ author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 1394 interface, you'll want to look at [the FFADO
 project](http://www.ffado.org).
 
+### Behringer U-Control UCA-202
+
+[Product page](http://www.behringer.com/EN/Products/UCA202.aspx)
+
+This is one of the least expensive yet quality audio interfaces we've
+come across and it works fine in Linux, too. It's ideal for a non-vinyl
+control setup since it is very compact and has just enough channels.
+(One pair for main output, one pair for headphones/monitor, and one
+input pair.)
+
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in

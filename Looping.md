@@ -139,8 +139,9 @@ complete.
 
 ## Current Progress
 
-The Features\_rryan-looping branch contains all the work that's been
-done so far.
+The ~~Features\_rryan-looping~~
+lp:\~mixxxdevelopers/mixxx/features\_looping branch contains all the
+work that's been done so far.
 
 The EngineBuffer::process method has been replaced with a very basic
 version of it that does not have all the bells and whistles of the big,

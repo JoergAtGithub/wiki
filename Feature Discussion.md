@@ -14,6 +14,7 @@ page.
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
   - [Vector-based GUI](Vector-based%20GUI)
+  - "[DVS mode](DVS%20mode)"
 
 ## Reducing Number of Input Libraries
 

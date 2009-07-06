@@ -9,7 +9,7 @@ changes:
 
   - Enables vinyl control, obviously
   - Routes deck outputs to separate selectable sound card outputs (in
-    prefs-\>DVS mode)
+    prefs-\>DVS mode) and disables internal mixing
   - Disables gain, EQ, channel faders, cross fader, play, cue, pitch,
     master output MixxxControls and all associated processing
   - Grays out/hides applicable GUI controls (or just suggests changing

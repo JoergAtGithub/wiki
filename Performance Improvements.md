@@ -48,6 +48,7 @@ the more machines Mixxx can run on, and the larger our user base.
 considered for assembly language reimplementation.)*
 
   - EQ code
+  - EngineBufferScale: EngineBufferScaleLinear and EngineBufferScaleST
 
 For reference:
 

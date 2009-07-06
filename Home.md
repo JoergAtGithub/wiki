@@ -60,6 +60,7 @@ developers, and artists, and is summarized in the categories below.
   - [LADSPA](LADSPA)
   - **Other Resources:**
   - [Threads](Threads)
+  - [Widgets](Widgets)
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
   - **Past development sprints:**

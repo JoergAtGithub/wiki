@@ -7,6 +7,7 @@ processing for better responsiveness.
 Add a "DVS mode" checkbox to the Options menu that makes the following
 changes:
 
+  - Enables vinyl control, obviously
   - Routes deck outputs to separate selectable sound card outputs (in
     prefs-\>DVS mode)
   - Disables gain, EQ, channel faders, cross fader, play, cue, pitch,

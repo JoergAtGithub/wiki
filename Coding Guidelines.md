@@ -9,6 +9,10 @@ When you're writing code for open source projects, the most important
 rule to follow is this: **Try to make your code blend in with the
 existing code.**
 
+When in doubt, use the [Google C++ Style
+Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
+It's a treasure trove of C++ advice.
+
 That being said, there are large chunks of Mixxx that are written in
 slightly differing styles (mainly variable naming conventions). In order
 to avoid this in the future, it's best for us to have some coding
@@ -45,7 +49,4 @@ Here's some coding tips to help keep performance decent:
     thread - that is, use signals/slots to interact with any
     EngineObject's process() function.
   - Don't access ConfigKeys in code that gets called in the callback
-    thread (same as above). ConfigKey access is slow - Use a
-    ControlObject instead. In some situations, you may have to have both
-    a ConfigKey (to save a setting) and a ControlObject to access it (to
-    read the setting, in high performance code).
+    thread (same as above).

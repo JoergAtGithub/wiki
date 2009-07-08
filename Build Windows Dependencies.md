@@ -42,7 +42,8 @@ you open them in VS:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
 2.  Start the platform SDK command prompt (Start→Microsoft Windows
     SDK→CMD Shell)
-3.  Type `setenv /xp /x64 /release` and hit Enter.
+3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, telling it to use
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft

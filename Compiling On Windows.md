@@ -83,7 +83,7 @@ C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ### Steps
 
-*(You may need to be running an x64 version of Windows, such as XP
+*(You may need to be running an x64/ia64 version of Windows, such as XP
 Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 
 1.  Download & install prerequisites
@@ -109,8 +109,8 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     * Debugging tools (optional, but recommended for troubleshooting)
     * Win32 Development Tools (I don't think you need this, but I'm not sure. I installed it just incase.)
 * [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip|Qt 4.5 source for Windows]]
-* [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires x64 OS,) otherwise you'll have to manually specify which version you want to build
-* [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the x64 Python and follow the piece-of-cake instructions in the README
+* [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires 64-bit OS,) otherwise you'll have to manually specify which version you want to build
+* [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the 64-bit Python and follow the piece-of-cake instructions in the README
 * An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
@@ -133,7 +133,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file. In fact, you only need "libs" if you want to save even more time.
 - Build Qt
   - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
-  - Type ''setenv /xp /x64'' and hit Enter.
+  - Type ''setenv /xp /x64'' (or ''/ia64'') and hit Enter.
   - Type ''cd %QTDIR%'' and hit Enter.
   - Type ''configure -platform win32-msvc2008 -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
@@ -144,7 +144,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''setenv /xp /x64'' and hit Enter.
+  - Type ''setenv /xp /x64'' (or ''/ia64'') and hit Enter.
   - Type ''scons'' (you may need to use scons.bat instead of just scons.)
     * Add ''msvcdebug=1'' to build the debug version.
     * Add ''win64=1'' if you installed the 32-bit version of Python to force a 64-bit Mixxx build (otherwise it will think you're on a 32-bit platform and build that version.)
@@ -182,8 +182,8 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
 
 <!-- end list -->
 
-1.  Run the Visual C++ GUI from this command line to have it use the x64
-    compile tools (e.g. `C:\Program Files (x86)\Microsoft Visual
+1.  Run the Visual C++ GUI from this command line to have it use the
+    64-bit compile tools (e.g. `C:\Program Files (x86)\Microsoft Visual
     Studio 9.0\Common7\IDE\VCExpress.exe`)
 2.  Open the `mixxx\trunk\mixxx\src\mixxx.vcproj` file.
 3.  Follow the instructions [on this page
@@ -266,14 +266,12 @@ default):
     workaround. -G \</del\> - using QMAKE ifdef to work around this
     now... yuck, but works. -G
   - ~~Package this MSVC-free version for distribution~~ --\>
-    [http:*mixxx.org/packages/windows/\]\] \<- installable package
-    people can play with -G \* Until the MSVC-free libraries are 100%,
-    some users may need to install the Microsoft Visual C++ 2005
-    Redistributable Package from here (depending on which CPU
-    architecture Mixxx was compiled for):
-    \[\[http:*www.microsoft.com/downloads/info.aspx?na=22\&p=1\&SrcDisplayLang=en\&SrcCategoryId=\&SrcFamilyId=\&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3d200b2fd9-ae1a-4a14-984d-389c36f85647%26DisplayLang%3den|x86](http://mixxx.org/packages/windows/?C=M;O=D),
-    [x64](http://www.microsoft.com/downloads/info.aspx?na=22&p=4&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3deb4ebe2d-33c0-4a47-9dd4-b9a6d7bd44da%26DisplayLang%3den),
-    [ia64](http://www.microsoft.com/downloads/info.aspx?na=45&p=1&srcdisplaylang=en&srccategoryid=&srcfamilyid=90548130-4468-4bbc-9673-d6acabd5d13b&u=details.aspx?familyid=526bf4a7-44e6-4a91-b328-a4594adb70e5&displaylang=en)
+    [http://mixxx.org/packages/windows/](http://mixxx.org/packages/windows/?C=M;O=D)
+    \<- installable package people can play with -G
+  - Until the MSVC-free libraries are 100%, some users may need to
+    install the Microsoft Visual C++ Redistributable Package from the
+    table on [this page](build_windows_installer#preparation) (depending
+    on the CPU architecture for which Mixxx was compiled.)
 
 ### Tip: Debugging and Capturing Backtraces on Windows
 
@@ -390,7 +388,7 @@ working correctly.
 
 ### Steps
 
-*(You may need to be running an x64 version of Windows, such as XP
+*(You may need to be running an x64/ia64 version of Windows, such as XP
 Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 
 1.  Download & install prerequisites

@@ -77,6 +77,14 @@ For SVN:
 
     svn update
 
+## Troubleshooting
+
+  - If you've got an nVidia card and are on Ubuntu (9.04) and at the end
+    of the build, you see `/usr/bin/ld: cannot find -lGL
+    collect2: ld returned 1 exit status` install `nvidia-glx-dev` by
+    doing `sudo apt-get -y install nvidia-glx-dev`. Then re-run `scons`
+    and it should build fine.
+
 ## Further Reading
 
   - [Compiling Mixxx on

@@ -78,14 +78,26 @@ manufacturer's web site under Support. Look for Manuals or User Guides.
 MIDI specs are usually given in an appendix at the back of the manual.
 Failing that, you can usually sniff the MIDI data the controller sends.
 
-On Linux, open a console and issue `amidi -l`. This will list the
-attached MIDI device(s) like so:
+#### Linux
+
+Open a console and issue `amidi -l`. This will list the attached MIDI
+device(s) like so:
 
     Dir Device    Name
     IO  hw:1,0,0  SCS.3d MIDI 1
 
 Then, to dump the data, you just issue `amidi -p hw:1,0,0 -d` (Replace
-hw:1,0,0 with whatever device ID your controller shows in the list.)
+hw:1,0,0 with whatever device ID your controller shows in the list.) See
+"All" below for how to interpret this data.
+
+#### Windows
+
+[Build Mixxx](Compiling%20on%20Windows) with `scons msvcdebug=1`. This
+will cause it to pop up a console window when you run it and the MIDI
+messages received by your controller will be displayed there.
+
+#### All
+
 Then as you press buttons or move sliders, the MIDI commands the
 controller sends will be printed to the screen. Compare the status
 (first) byte in each line with the table above and then just write down
@@ -93,11 +105,19 @@ which button/slider/control sends what command.
 
 For example, when you move a slider, you might see
 
-    B0 02 3D
-    B0 02 3A
-    B0 02 3D
-    B0 02 3B
-    B0 02 3C
+| Linux                                           | Windows                                                                                                                                                                                                                                            |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `B0 02 3D
+B0 02 3A
+B0 02 3D
+B0 02 3B
+B0 02 3C
+` | `Debug: []: "MIDI status: B0, ctrl: 2, val: 3D" 
+Debug: []: "MIDI status: B0, ctrl: 2, val: 3A" 
+Debug: []: "MIDI status: B0, ctrl: 2, val: 3D" 
+Debug: []: "MIDI status: B0, ctrl: 2, val: 3B" 
+Debug: []: "MIDI status: B0, ctrl: 2, val: 3C" 
+` |
 
 In this instance, it's sending 0xB0, which when we look at the [table
 above](#midi-crash-course), we see that it's a Control Change message on

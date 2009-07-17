@@ -26,7 +26,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |
@@ -72,7 +72,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |
@@ -95,7 +95,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |
@@ -214,7 +214,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |
@@ -260,7 +260,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |
@@ -283,7 +283,7 @@ include a sample file, that would also be helpful.)
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 44.1 kHz    |               |

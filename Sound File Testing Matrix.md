@@ -82,7 +82,7 @@ include a sample file, that would also be helpful.)
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
-### WAV
+### WAV/AIFF
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
@@ -176,7 +176,7 @@ include a sample file, that would also be helpful.)
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
-### WAV
+### WAV/AIFF
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
@@ -270,7 +270,7 @@ include a sample file, that would also be helpful.)
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
-### WAV
+### WAV/AIFF
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |

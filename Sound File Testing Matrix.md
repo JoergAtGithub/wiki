@@ -63,12 +63,12 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
+|          |           | 96 kHz      | Yes           |
 |          | 32-bit    | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |

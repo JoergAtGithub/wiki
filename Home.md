@@ -58,6 +58,7 @@ developers, and artists, and is summarized in the categories below.
     Portable HDDs)](Portable%20Mixxx)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
+  - [Testing framework](Testing%20framework)
   - **Other Resources:**
   - [Threads](Threads)
   - [Widgets](Widgets)

@@ -17,22 +17,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   | Yes           |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -40,22 +46,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -63,22 +75,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    | Yes           |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    | Yes           |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      | Yes           |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -86,22 +104,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -111,22 +135,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -134,22 +164,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -157,22 +193,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -180,22 +222,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -205,22 +253,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -228,22 +282,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -251,22 +311,28 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 
@@ -274,21 +340,27 @@ include a sample file, that would also be helpful.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 44.1 kHz    |               |
+| Mono     | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 44.1 kHz    | Yes           |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 24-bit    | 44.1 kHz    |               |
+|          | 24-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-|          | 32-bit    | 44.1 kHz    |               |
+|          | 32-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |

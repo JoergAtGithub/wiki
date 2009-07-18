@@ -20,27 +20,21 @@ include a sample file, that would also be helpful.)
 | Mono     | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 | Stereo   | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 
 ### OGG Vorbis
 
@@ -130,27 +124,21 @@ include a sample file, that would also be helpful.)
 | Mono     | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 | Stereo   | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 
 ### OGG Vorbis
 
@@ -240,27 +228,21 @@ include a sample file, that would also be helpful.)
 | Mono     | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 | Stereo   | 16-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 |          | 32-bit    | 22.05 kHz   |               |
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
-|          |           | 96 kHz      |               |
 
 ### OGG Vorbis
 

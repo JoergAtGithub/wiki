@@ -29,8 +29,8 @@ include a sample file, that would also be helpful.)
 |          |           | 44.1 kHz    |               |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
-| Stereo   | 16-bit    | 22.05 kHz   | Yes           |
-|          |           | 44.1 kHz    |               |
+| Stereo   | 16-bit    | 22.05 kHz   |               |
+|          |           | 44.1 kHz    | Yes           |
 |          |           | 48 kHz      |               |
 |          |           | 96 kHz      |               |
 |          | 24-bit    | 22.05 kHz   |               |

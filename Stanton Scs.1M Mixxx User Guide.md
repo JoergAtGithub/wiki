@@ -10,9 +10,16 @@ overlay (C) 2009 Sean M. Pappalardo*
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:
 
-  - **slippage** - Slipperiness of the virtual slipmat when scratching
-    with the select knob in Control mode. Set this to a number between
-    0.0 (perfect turntable) and 0.95 (bent record.)
+1.  **scratchKnob**: *All of these values are heavily dependent on your
+    latency setting. Adjust as needed.*
+    1.  **slippage** - Slipperiness of the virtual slipmat when
+        scratching with the select knob in Control mode. Set this to a
+        number between 0.1 (perfect turntable) and 0.99 (bent record.)
+    2.  **sensitivity** - How much the audio moves for a given knob arc.
+        Set this to a number between 0.1 (slow) to 0.99 (fast)
+    3.  **stoppedMultiplier** - Correction to get the same knob
+        sensitivity when the deck is stopped (set higher for higher
+        latencies, e.g. 10ms = 2.2, 2ms = 1.5.)
 
 Just open the `midi/Stanton-SCS1m-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the

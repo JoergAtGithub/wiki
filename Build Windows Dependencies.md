@@ -217,16 +217,22 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
     `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.dll
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.lib
     (rename to vorbis.lib)
-    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.dll
-    (rename to vorbisfile.dll)
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.lib
     (rename to vorbisfile.lib)
-    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile_static.lib
-    (rename to vorbisfile_static.lib)
     `
 9.  Copy the `libvorbis-1.2.3\include\vorbis` folder from into
     `mixxx-win[64]lib`. You can delete the Makefiles inside, as we just
     need the .h files.
+10. Open the `libvorbis-1.2.3\win32\VS2008\libvorbis_static.vcproj` file
+11. Choose the Release\_SSE2 configuration and the Win32 platform
+12. Press F7 to build
+13. When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`:
+    `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis_static.lib
+    (rename to vorbis_static.lib)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile_static.lib
+    (rename to vorbisfile_static.lib)
+    `
 
 #### Troubleshooting
 

@@ -31,6 +31,17 @@ variables at the top of the script you can set to your liking:
     time you controlled that deck.)
   - **deckChangeWait** - Time in milliseconds to hold the DECK button
     down to avoid changing decks
+  - **scratching**: *All of these values are heavily dependent on your
+    latency setting. Adjust as needed.*
+    1.  **slippage** - Slipperiness of the virtual slipmat when
+        scratching with the circle and slider in Vinyl2 mode. Set this
+        to a number between 0.2 (perfect turntable) and 0.99 (bent
+        record.)
+    2.  **sensitivity** - How much the audio moves for a given circle
+        arc. Set this to a number between 0.01 (slow) to 0.99 (fast)
+    3.  **stoppedMultiplier** - Correction to get the same circle
+        sensitivity when the deck is stopped (set higher for higher
+        latencies, e.g. 10ms = 1.7, 2ms = 1.5.)
 
 Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the

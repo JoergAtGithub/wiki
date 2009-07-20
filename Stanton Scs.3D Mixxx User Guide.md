@@ -74,6 +74,7 @@ top. Edit & save, then restart Mixxx and enjoy.
 
   - Gain slider (S1) adjusts pre-fader gain
   - Pitch slider (S2) finely adjusts pitch control
+  - B11 resets pre-fader gain to center
   - B12 resets pitch to center 0%
 
 ## FX Mode

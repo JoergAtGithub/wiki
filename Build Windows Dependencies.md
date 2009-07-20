@@ -155,20 +155,19 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
     you, since that's a premium feature of non-free versions of VS.)
 5.  Choose the Release\_SSE2 configuration and the Win32 platform
 6.  Press F7 to build
-7.  When it finishes, copy the following files into `mixxx-winlib` or
+7.  Open the `libogg-1.1.4\win32\VS2008\libogg_static.vcproj` file
+8.  Choose the Release\_SSE2 configuration and the Win32 platform
+9.  Press F7 to build
+10. When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`:
     `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll
     libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.lib (rename to
     ogg.lib)
+    libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg_static.lib
+    (rename to ogg_static.lib)
     `
-8.  Copy the `.h` files from `libogg-1.1.4\include\ogg` into
+11. Copy the `.h` files from `libogg-1.1.4\include\ogg` into
     `mixxx-win[64]lib\ogg`
-9.  Open the `libogg-1.1.4\win32\VS2008\libogg_static.vcproj` file
-10. Choose the Release\_SSE2 configuration and the Win32 platform
-11. Press F7 to build
-12. When it finishes, copy
-    `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg_static.lib`
-    into `mixxx-win[64]lib` and rename it to ogg\_static.lib.
 
 ## libvorbis
 

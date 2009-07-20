@@ -213,6 +213,11 @@ Controller.elapsedTime = function (deck) {
 }
 ```
 
+**IMPORTANT NOTE:** You must always declare variables with "var" when
+you first use them since it establishes scope. If you omit this, the
+variable becomes global and will clobber anything else with the same
+name even if it's in another script file.
+
 ### Automatic reactions
 
 Up to this point, script functions are only called in response to the

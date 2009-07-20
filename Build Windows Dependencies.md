@@ -242,3 +242,70 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
     external symbol _analysis_output_always` comment the line
     `_analysis_output_always` in `libvorbis-1.2.3\win32\vorbis.def`
     (line 51 in my copy.) Press F7 again and it should build fine.
+
+## libmad
+
+[MAD](http://www.underbit.com/products/mad/) provides MSVC project
+files, which makes things nice. Just open and build. (Step-by-step is
+given below.)
+
+### Build
+
+1.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `libmad-0.15.1b\msvc++\libmad.dsp` file via
+    File-\>Open-\>Project/Solution.
+5.  Answer 'Yes' to convert & open the project
+6.  Choose the Release configuration and the Win32 platform
+7.  Press F7 to build. (You can cancel the .sln save dialog if you want
+    and it will still build.)
+8.  When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`: `libmad-0.15.1b\mad.h
+    libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
+    `
+
+## libid3tag
+
+[MAD](http://www.underbit.com/products/mad/) provides MSVC project
+files, which makes things nice. Just open and build. (Step-by-step is
+given below.)
+
+LibID3Tag needs [ZLib](http://www.zlib.net/) headers, so we have to get
+them too (detailed below.)
+
+### Build
+
+1.  Download & unpack the latest [zlib
+    source](http://www.winimage.com/zLibDll/)
+2.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+4.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+5.  Open the `libmad-0.15.1b\msvc++\libmad.dsp` file via
+    File-\>Open-\>Project/Solution.
+6.  Answer 'Yes' to convert & open the project
+7.  Choose the Release configuration and the Win32 platform
+8.  Add the ZLib paths to the compiler:
+    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
+        Directories
+    2.  Choose "Include files" on the right and add the path to the
+        directory into which you unpacked the ZLib source, e.g.
+        `c:\temp\zlib123`
+    3.  Click OK.
+9.  Press F7 to build. (You can cancel the .sln save dialog if you want
+    and it will still build.)
+10. When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`: `libid3tag-0.15.1b\id3tag.h
+    libid3tag-0.15.1b\msvc++\Release\libid3tag.lib (rename to
+    id3tag.lib)
+    `

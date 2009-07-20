@@ -57,17 +57,23 @@ you open them in VS:
 
 ### Build
 
-1.  Download and install the latest DirectX SDK:
+1.  Download and unpack the latest ASIO SDK (requires license
+    agreement):
+    <http://www.steinberg.net/en/company/3rd_party_developer.html>
+2.  Follow the instructions in the file
+    `portaudio\build\msvc\readme.txt` to prepare to build PA with ASIO
+    support.
+3.  Download and install the latest DirectX SDK:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
-2.  Start the platform SDK command prompt (Start→Microsoft Windows
+4.  Start the platform SDK command prompt (Start→Microsoft Windows
     SDK→CMD Shell)
-3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
-4.  Run the Visual Studio GUI from this command line, telling it to use
+6.  Run the Visual Studio GUI from this command line, telling it to use
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-5.  Add the DirectX SDK paths to the compiler:
+7.  Add the DirectX SDK paths to the compiler:
     1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
         Directories
     2.  Choose "Include files" on the right and add the path to the
@@ -77,7 +83,7 @@ you open them in VS:
         DirectX SDK Library directory, e.g. `C:\Program Files\Microsoft
         DirectX SDK (March 2009)\Lib\x86`
     4.  Click OK.
-6.  Open the `portaudio\build\msvc\portaudio.vcproj` file via
+8.  Open the `portaudio\build\msvc\portaudio.vcproj` file via
     File-\>Open-\>Project/Solution. After doing the upgrade, you'll only
     see "Win32" targets if you're using VS Express. (If you've made the
     changes to the project files given above, building these will
@@ -85,14 +91,14 @@ you open them in VS:
     VS Express would see the x64 targets in the file and refuse to make
     them available to you, since that's a premium feature of non-free
     versions of VS.)
-7.  Choose the Release configuration and the Win32 platform
-8.  Press F7 to build
-9.  When it finishes, copy the following files into `mixxx-winlib` or
+9.  Choose the Release configuration and the Win32 platform
+10. Press F7 to build
+11. When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`: `portaudio\include\portaudio.h
-    portaudio\build\msvc\Win32\Release\portaudio.dll (or
+    portaudio\build\msvc\Win32\Release\portaudio_x86.dll (or
     portaudio_x64.dll)
-    portaudio\build\msvc\Win32\Release\portaudio.lib (or
-    portaudio_x64.lib but rename it to portaudio.lib)
+    portaudio\build\msvc\Win32\Release\portaudio_x86.lib (or
+    portaudio_x64.lib. Rename either to portaudio.lib)
     `
 
 #### Troubleshooting

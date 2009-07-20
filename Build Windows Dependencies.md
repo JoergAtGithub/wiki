@@ -6,6 +6,25 @@ page](compiling_on_windows), and if you want to build x64 versions with
 the free Visual Studio Express, that you've done [this
 hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html).
 
+## libsndfile
+
+[libsndfile](http://www.mega-nerd.com/libsndfile/) fortunately provides
+binaries for Win32 and Win64, so all you need to do is:
+
+1.  Download & run the appropriate installer
+2.  Copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`:`libsndfile\libsndfile-1.dll
+    libsndfile\libsndfile-1.lib (rename to sndfile.lib)
+    `
+3.  Copy the `.h` files from `libsndfile\include` to `mixxx-win[64]lib`
+
+#### Troubleshooting
+
+  - If you get a crapload of `sndfile.h` errors when Mixxx's
+    `enginesidechain.cpp` is compiling, edit
+    `mixxx-win[64]lib\sndfile.h` and change the line `typedef __int64_t
+    sf_count_t ;` to: `typedef __int64 sf_count_t ;`
+
 ## PortAudio
 
 [PortAudio](http://www.portaudio.com/download.html) provides MSVC
@@ -36,7 +55,7 @@ you open them in VS:
   - Don't worry about stuff below that since they all do the same thing regardless of the platform (at the time of writing (July 2009) at least.)
 ```
 
-### To build
+### Build
 
 1.  Download and install the latest DirectX SDK:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
@@ -97,16 +116,21 @@ below.)
 ### x64 prep for VS Express
 
 If you're doing an x64 build with VS Express, you'll first need to
-change some things in the vcproj and sln file in a text editor before
+change some things in the vcproj and sln files in a text editor before
 you open them in VS:
 
-1.  For the `libogg-1.1.4\win32\VS2008\libogg_dynamic.sln` and
-    `libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj` files:
-    1.  Replace all instances of "Win32" (case-sensitive) with
-        "DontWantThis" or something similar
-    2.  Then replace all instances of "x64" with "Win32"
+1.  Replace all instances of "Win32" (case-sensitive) with
+    "DontWantThis" or something similar
+2.  Then replace all instances of "x64" with "Win32"
 
-### To build
+Do this to all of the following files:
+`libogg-1.1.4\win32\VS2008\libogg_dynamic.sln
+libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj
+libogg-1.1.4\win32\VS2008\libogg_static.sln
+libogg-1.1.4\win32\VS2008\libogg_static.vcproj
+`
+
+### Build
 
 1.  Start the platform SDK command prompt (Start→Microsoft Windows
     SDK→CMD Shell)
@@ -127,13 +151,18 @@ you open them in VS:
 6.  Press F7 to build
 7.  When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`:
-    `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll (rename to
-    ogg.dll)
+    `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll
     libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.lib (rename to
     ogg.lib)
     `
 8.  Copy the `.h` files from `libogg-1.1.4\include\ogg` into
     `mixxx-win[64]lib\ogg`
+9.  Open the `libogg-1.1.4\win32\VS2008\libogg_static.vcproj` file
+10. Choose the Release\_SSE2 configuration and the Win32 platform
+11. Press F7 to build
+12. When it finishes, copy
+    `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg_static.lib`
+    into `mixxx-win[64]lib` and rename it to ogg\_static.lib.
 
 ## libvorbis
 
@@ -155,13 +184,12 @@ Do this to all of the following files:
 `libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln
 libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_dynamic.vcproj
 libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_dynamic.vcproj
-libvorbis-1.2.3\win32\VS2008\vorbisdec\vorbisdec_dynamic.vcproj
-(optional, we don't use this)
-libvorbis-1.2.3\win32\VS2008\vorbisenc\vorbisenc_dynamic.vcproj
-(optional, we don't use this)
+libvorbis-1.2.3\win32\VS2008\vorbis_static.sln
+libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_static.vcproj
+libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
 `
 
-### To build
+### Build
 
 1.  Edit `libvorbis-1.2.3\win32\VS2008\libogg.vsprops` and make sure the
     LIBOGG\_VERSION at the bottom matches the version of libogg you
@@ -182,17 +210,19 @@ libvorbis-1.2.3\win32\VS2008\vorbisenc\vorbisenc_dynamic.vcproj
     the x64 targets in the file and refuse to make them available to
     you, since that's a premium feature of non-free versions of VS.)
 6.  Choose the Release\_SSE2 configuration and the Win32 platform
-7.  Press F7 to build
+7.  Press F7 to build. (If building for x64, ignore the errors on
+    vorbisenc and vorbisdec since we don't need them.)
 8.  When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`:
     `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.dll
-    (rename to vorbis.dll)
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.lib
     (rename to vorbis.lib)
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.dll
     (rename to vorbisfile.dll)
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.lib
     (rename to vorbisfile.lib)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile_static.lib
+    (rename to vorbisfile_static.lib)
     `
 9.  Copy the `libvorbis-1.2.3\include\vorbis` folder from into
     `mixxx-win[64]lib`. You can delete the Makefiles inside, as we just

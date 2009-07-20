@@ -8,9 +8,9 @@ hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x6
 
 ## PortAudio
 
-PortAudio provides MSVC project files, which makes things nice. Just
-have the DirectX SDK installed and open and build. (Step-by-step is
-given below.)
+[PortAudio](http://www.portaudio.com/download.html) provides MSVC
+project files, which makes things nice. Just have the DirectX SDK
+installed and open and build. (Step-by-step is given below.)
 
 ### x64 prep for VS Express
 
@@ -58,7 +58,7 @@ you open them in VS:
         DirectX SDK Library directory, e.g. `C:\Program Files\Microsoft
         DirectX SDK (March 2009)\Lib\x86`
     4.  Click OK.
-6.  Open the portaudio\\build\\msvc\\portaudio.vcproj file via
+6.  Open the `portaudio\build\msvc\portaudio.vcproj` file via
     File-\>Open-\>Project/Solution. After doing the upgrade, you'll only
     see "Win32" targets if you're using VS Express. (If you've made the
     changes to the project files given above, building these will
@@ -87,3 +87,120 @@ you open them in VS:
     "Kernel32.dll" ), "IsDebuggerPresent" );` to `IsDebuggerPresent_ =
     IsDebuggerPresentPtr(GetProcAddress( LoadLibrary( "Kernel32.dll" ),
     "IsDebuggerPresent" ));` then build again.
+
+## libogg
+
+[Xiph.org](http://www.xiph.org/downloads/) provides MSVC project files,
+which makes things nice. Just open and build. (Step-by-step is given
+below.)
+
+### x64 prep for VS Express
+
+If you're doing an x64 build with VS Express, you'll first need to
+change some things in the vcproj and sln file in a text editor before
+you open them in VS:
+
+1.  For the `libogg-1.1.4\win32\VS2008\libogg_dynamic.sln` and
+    `libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj` files:
+    1.  Replace all instances of "Win32" (case-sensitive) with
+        "DontWantThis" or something similar
+    2.  Then replace all instances of "x64" with "Win32"
+
+### To build
+
+1.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj` file via
+    File-\>Open-\>Project/Solution. You'll only see "Win32" targets if
+    you're using VS Express. (If you've made the changes to the project
+    files given above, building these will actually give you x64
+    versions. We had to do it this way otherwise VS Express would see
+    the x64 targets in the file and refuse to make them available to
+    you, since that's a premium feature of non-free versions of VS.)
+5.  Choose the Release\_SSE2 configuration and the Win32 platform
+6.  Press F7 to build
+7.  When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`:
+    `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll (rename to
+    ogg.dll)
+    libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.lib (rename to
+    ogg.lib)
+    `
+8.  Copy the `.h` files from `libogg-1.1.4\include\ogg` into
+    `mixxx-win[64]lib\ogg`
+
+## libvorbis
+
+[Xiph.org](http://www.xiph.org/downloads/) provides MSVC project files,
+which makes things nice. Just open and build. (Step-by-step is given
+below.) Libvorbis depends on libogg, so build that first.
+
+### x64 prep for VS Express
+
+If you're doing an x64 build with VS Express, you'll first need to
+change some things in the vcproj and sln files in a text editor before
+you open them in VS:
+
+1.  Replace all instances of "Win32" (case-sensitive) with
+    "DontWantThis" or something similar
+2.  Then replace all instances of "x64" with "Win32"
+
+Do this to all of the following files:
+`libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln
+libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_dynamic.vcproj
+libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_dynamic.vcproj
+libvorbis-1.2.3\win32\VS2008\vorbisdec\vorbisdec_dynamic.vcproj
+(optional, we don't use this)
+libvorbis-1.2.3\win32\VS2008\vorbisenc\vorbisenc_dynamic.vcproj
+(optional, we don't use this)
+`
+
+### To build
+
+1.  Edit `libvorbis-1.2.3\win32\VS2008\libogg.vsprops` and make sure the
+    LIBOGG\_VERSION at the bottom matches the version of libogg you
+    built above.
+2.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+4.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+5.  Open the `libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln` file via
+    File-\>Open-\>Project/Solution. You'll only see "Win32" targets if
+    you're using VS Express. (If you've made the changes to the project
+    files given above, building these will actually give you x64
+    versions. We had to do it this way otherwise VS Express would see
+    the x64 targets in the file and refuse to make them available to
+    you, since that's a premium feature of non-free versions of VS.)
+6.  Choose the Release\_SSE2 configuration and the Win32 platform
+7.  Press F7 to build
+8.  When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`:
+    `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.dll
+    (rename to vorbis.dll)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.lib
+    (rename to vorbis.lib)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.dll
+    (rename to vorbisfile.dll)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.lib
+    (rename to vorbisfile.lib)
+    `
+9.  Copy the `libvorbis-1.2.3\include\vorbis` folder from into
+    `mixxx-win[64]lib`. You can delete the Makefiles inside, as we just
+    need the .h files.
+
+#### Troubleshooting
+
+  - If you get the error `vorbis.def : error LNK2001: unresolved
+    external symbol _analysis_output_always` comment the line
+    `_analysis_output_always` in `libvorbis-1.2.3\win32\vorbis.def`
+    (line 51 in my copy.) Press F7 again and it should build fine.

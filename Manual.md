@@ -483,12 +483,15 @@ control audio applications, like Mixxx. Many DJs prefer the "hands-on"
 feel of a MIDI controller with Mixxx because it can feel similar to
 using a real mixer and turntables.
 
-As of Mixxx 1.6.0, the following MIDI devices are supported:
+As of Mixxx 1.7.0, the following MIDI devices are supported:
 
   - Hercules DJ Console MK2
   - Hercules DJ Console MP3
   - Hercules DJ Console RMX
+  - Hercules DJ Control Steel 
   - Hercules DJ Console Mac Edition
+  - Stanton SCS.3d 
+  - Stanton SCS.1m
   - Mixman DM2 
   - Tascam US-428
   - M-Audio X-Session Pro
@@ -499,6 +502,7 @@ As of Mixxx 1.6.0, the following MIDI devices are supported:
   - Vestax VCI-100
   - Numark Total Control
   - Behringer BCD3000 (\*no jog wheel support yet)
+  - Akai MPD24
 
 Before purchasing a controller to use with Mixxx, please consult our
 [Hardware

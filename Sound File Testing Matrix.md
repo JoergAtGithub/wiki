@@ -282,36 +282,36 @@ Mixxx.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     | 16-bit    | 22050 Hz    |               |
-| Mono     | 16-bit    | 32000 Hz    |               |
-| Mono     | 16-bit    | 44100 Hz    |               |
-| Mono     | 16-bit    | 48000 Hz    |               |
-| Mono     | 16-bit    | 96000 Hz    |               |
-| Mono     | 24-bit    | 22050 Hz    |               |
-| Mono     | 24-bit    | 32000 Hz    |               |
-| Mono     | 24-bit    | 44100 Hz    |               |
-| Mono     | 24-bit    | 48000 Hz    |               |
-| Mono     | 24-bit    | 96000 Hz    |               |
-| Mono     | 32-bit    | 22050 Hz    |               |
-| Mono     | 32-bit    | 32000 Hz    |               |
-| Mono     | 32-bit    | 44100 Hz    |               |
-| Mono     | 32-bit    | 48000 Hz    |               |
-| Mono     | 32-bit    | 96000 Hz    |               |
-| Stereo   | 16-bit    | 22050 Hz    |               |
-| Stereo   | 16-bit    | 32000 Hz    |               |
-| Stereo   | 16-bit    | 44100 Hz    |               |
-| Stereo   | 16-bit    | 48000 Hz    |               |
-| Stereo   | 16-bit    | 96000 Hz    |               |
-| Stereo   | 24-bit    | 22050 Hz    |               |
-| Stereo   | 24-bit    | 32000 Hz    |               |
-| Stereo   | 24-bit    | 44100 Hz    |               |
-| Stereo   | 24-bit    | 48000 Hz    |               |
-| Stereo   | 24-bit    | 96000 Hz    |               |
-| Stereo   | 32-bit    | 22050 Hz    |               |
-| Stereo   | 32-bit    | 32000 Hz    |               |
-| Stereo   | 32-bit    | 44100 Hz    |               |
-| Stereo   | 32-bit    | 48000 Hz    |               |
-| Stereo   | 32-bit    | 96000 Hz    |               |
+| Mono     | 16-bit    | 22050 Hz    | Yes           |
+| Mono     | 16-bit    | 32000 Hz    | Yes           |
+| Mono     | 16-bit    | 44100 Hz    | Yes           |
+| Mono     | 16-bit    | 48000 Hz    | Yes           |
+| Mono     | 16-bit    | 96000 Hz    | Yes           |
+| Mono     | 24-bit    | 22050 Hz    | Yes           |
+| Mono     | 24-bit    | 32000 Hz    | Yes           |
+| Mono     | 24-bit    | 44100 Hz    | Yes           |
+| Mono     | 24-bit    | 48000 Hz    | Yes           |
+| Mono     | 24-bit    | 96000 Hz    | Yes           |
+| Mono     | 32-bit    | 22050 Hz    | Yes           |
+| Mono     | 32-bit    | 32000 Hz    | Yes           |
+| Mono     | 32-bit    | 44100 Hz    | Yes           |
+| Mono     | 32-bit    | 48000 Hz    | Yes           |
+| Mono     | 32-bit    | 96000 Hz    | Yes           |
+| Stereo   | 16-bit    | 22050 Hz    | Yes           |
+| Stereo   | 16-bit    | 32000 Hz    | Yes           |
+| Stereo   | 16-bit    | 44100 Hz    | Yes           |
+| Stereo   | 16-bit    | 48000 Hz    | Yes           |
+| Stereo   | 16-bit    | 96000 Hz    | Yes           |
+| Stereo   | 24-bit    | 22050 Hz    | Yes           |
+| Stereo   | 24-bit    | 32000 Hz    | Yes           |
+| Stereo   | 24-bit    | 44100 Hz    | Yes           |
+| Stereo   | 24-bit    | 48000 Hz    | Yes           |
+| Stereo   | 24-bit    | 96000 Hz    | Yes           |
+| Stereo   | 32-bit    | 22050 Hz    | Yes           |
+| Stereo   | 32-bit    | 32000 Hz    | Yes           |
+| Stereo   | 32-bit    | 44100 Hz    | Yes           |
+| Stereo   | 32-bit    | 48000 Hz    | Yes           |
+| Stereo   | 32-bit    | 96000 Hz    | Yes           |
 
 ### OGG Vorbis
 

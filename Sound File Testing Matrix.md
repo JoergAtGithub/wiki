@@ -13,6 +13,10 @@ format, sample rate, bit depth, number of channels (stereo/mono,) and OS
 to [our bug tracker](https://launchpad.net/mixxx/+filebug). (If you can
 include a sample file, that would also be helpful.)
 
+**NOTE:** 32-bit in these tables means <span class="underline">32-bit
+integer</span>. (32-bit float files of any type do not currently work in
+Mixxx.)
+
 ## Windows
 
 ### WAVE/AIFF

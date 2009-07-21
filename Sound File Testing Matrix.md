@@ -93,16 +93,16 @@ Mixxx.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     |           | 22050 Hz    |               |
-| Mono     |           | 32000 Hz    |               |
-| Mono     |           | 44100 Hz    |               |
-| Mono     |           | 48000 Hz    |               |
-| Mono     |           | 96000 Hz    |               |
-| Stereo   |           | 22050 Hz    |               |
-| Stereo   |           | 32000 Hz    |               |
-| Stereo   |           | 44100 Hz    |               |
-| Stereo   |           | 48000 Hz    |               |
-| Stereo   |           | 96000 Hz    |               |
+| Mono     |           | 22050 Hz    | No            |
+| Mono     |           | 32000 Hz    | No            |
+| Mono     |           | 44100 Hz    | No            |
+| Mono     |           | 48000 Hz    | No            |
+| Mono     |           | 96000 Hz    | No            |
+| Stereo   |           | 22050 Hz    | Yes           |
+| Stereo   |           | 32000 Hz    | Yes           |
+| Stereo   |           | 44100 Hz    | Yes           |
+| Stereo   |           | 48000 Hz    | Yes           |
+| Stereo   |           | 96000 Hz    | Yes           |
 
 ### FLAC
 

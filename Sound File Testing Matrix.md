@@ -1,7 +1,8 @@
 # Supported sound file format test grid
 
 This grid is just used for verifying functionality of supported sound
-file formats in the next version of Mixxx.
+file formats in the next version of Mixxx. (This table can be generated
+from the `mixxx/src/test/soundFileFormats/generateFiles.sh` script.)
 
 Currently reporting for: **Mixxx 1.7.0-beta1**
 

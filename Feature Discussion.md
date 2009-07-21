@@ -37,6 +37,10 @@ libavformat.
 
 ### Possible Libraries
 
+  - [libsox](http://sox.sourceforge.net/libsox.html)
+  - supports nearly every format known to man
+  - can write many of them as well (for recording your set)
+  - has built-in effects processing
   - libavformat/libavcodec (the library used by ffmpeg and mplayer)
   - support lots of formats
   - support utf8

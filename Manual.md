@@ -303,6 +303,29 @@ page](vinyl_control).
 
 [[/media/manual/preferences/vinylcontrol.png|]]
 
+### Input Device Selection
+
+Mixxx can be controlled by up to 2 decks with either timecoded vinyl or
+timecoded CDs. In the "Deck 1" and "Deck 2" drop-down boxes, select the
+soundcard(s) which your decks are plugged into. In the channel selection
+drop-down menu, select the channel pairs corresponding to the plug on
+your soundcard that your deck(s) are plugged into.
+
+Mixxx supports vinyl control input through a single soundcard with
+4-channels of input (two stereo line-in jacks), or through two separate
+soundcards which each have 2-channels of input (a single stereo line-in
+jack). Vinyl control requires the use of stereo line-in jacks - Mono or
+microphone inputs will not work.
+
+### Turntable Input Preamp
+
+Many turntables provide unamplified "phono level" output, which must be
+boosted to a "line level" signal. Normally, a mixer provides this
+amplification, but if you're plugging a turntable's phono output
+directly into your soundcard, Mixxx can do the amplification. The
+"Turntable Input Preamp" slider allows you to adjust the level of
+preamplification applied to your decks' signal.
+
 # DJing with Mixxx
 
 Mixxx was designed to be easy to learn for both novice and experienced

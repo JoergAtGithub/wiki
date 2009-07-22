@@ -131,4 +131,4 @@ of your PC/card manufacturer since they may be newer.
   - Mobile Intel 4 Series chipset with I945/965 graphics driver
     sometimes causes segmentation fault on exit in Windows and Linux.
     This is fixed by upgrading your version of the Qt libraries on Linux
-    or getting the latest 1.7 package for Windows.
+    or getting the latest Mixxx 1.7 package for Windows.

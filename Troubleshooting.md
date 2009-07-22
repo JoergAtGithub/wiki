@@ -40,6 +40,11 @@ responsiveness. Here are some tips to help you do that.*
     systems down in general. **This is only recommended if your
     system/partition is not connected to a network or the internet**
     otherwise you put your system at risk of infection.
+  - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
+    feature called "PowerMizer" that has been reported to cause all
+    kinds of problems for audio and overall latency. It can be disabled
+    with a registry tweak:
+    <http://forum.notebookreview.com/showthread.php?t=261929>
 
 ## The BPM detection is wrong
 

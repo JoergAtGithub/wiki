@@ -3,7 +3,7 @@
 This grid is just used for verifying functionality of supported
 controllers in the next version of Mixxx.
 
-Currently reporting for: **Mixxx 1.7.0-beta1**
+Currently reporting for: **Mixxx 1.7.0-beta2**
 
 **Simply state *works* or *doesn't work* for controllers you've
 tested.** If any buttons/sliders do not work as expected within Mixxx's

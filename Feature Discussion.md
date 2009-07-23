@@ -13,7 +13,7 @@ page.
   - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
-  - [Vector-based GUI](Vector-based%20GUI)
+  - [Skinning Engine](Skinning%20Engine)
   - "[DVS mode](DVS%20mode)"
 
 ## Reducing Number of Input Libraries

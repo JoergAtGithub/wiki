@@ -24,11 +24,11 @@ compatibility](hardware%20compatibility) page.)
 | ------------------------------- | ------- | -------- | ----------- |
 | Device                          | Windows | Mac OS X | Linux       |
 | Hercules DJ Control Steel       |         |          |             |
-| Hercules DJ Console RMX         | Beta2   | Beta2    | Beta2       |
+| Hercules DJ Console RMX         | Works   | Works    | Works       |
 | Hercules DJ Console Mk1         |         |          |             |
-| Hercules DJ Console Mk2         | Beta2   | Beta2    | Beta2       |
+| Hercules DJ Console Mk2         | Works   | Works    | Works       |
 | Hercules DJ Console Mac Edition |         |          |             |
-| Hercules DJ Control MP3         | Beta2   | Beta2    | Beta2       |
+| Hercules DJ Control MP3         | Works   | Works    | Works       |
 | Stanton SCS.3d                  | Works   | Works    | Works       |
 | Stanton SCS.1m                  | Works   |          | Works       |
 | Mixman DM2                      |         |          | Works       |

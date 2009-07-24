@@ -56,6 +56,8 @@ an advanced skinning engine for Mixxx.
     pixmaps to improve performance
   - Possibility to implement a layout system (because interface elements
     should not stretch)
+  - The window itself should be themable/deformable too. Could be
+    achieved by either composite or with a mask (or both)
 
 ## Nui3 based Skinning Engine
 

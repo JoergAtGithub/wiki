@@ -5,7 +5,15 @@ Although the current skinning engine is usable, it is not very flexible.
 Developers can discuss their ideas for a new skinning engine on this
 page.
 
-Feel free to add your cons and pros for any of the ideas to this page.
+## Active discussion
+
+There's currently an active discussion going on in the forums:
+<http://mixxx.org/forums/viewtopic.php?f=1&t=729> Please check the
+forums for more up-to-date information.
+
+## Ideas for Skinning Engines
+
+Feel free to add your cons and pros for any of the ideas to this page
 
 The current ideas are:
 

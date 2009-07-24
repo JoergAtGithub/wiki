@@ -5,7 +5,7 @@ file formats in the next version of Mixxx. (These tables can be
 generated from the `mixxx/src/test/soundFileFormats/generateFiles.sh
 table` script.)
 
-Currently reporting for: **Mixxx 1.7.0-beta1**
+Currently reporting for: **Mixxx 1.7 branch**
 
 **Simply state *yes* or *no* for formats you've tested.** If any do not
 work correctly or at all, please report a bug containing the file
@@ -148,14 +148,15 @@ Mixxx.)
 
 | Channels | Bit depth | Sample Rate | Does it work? |
 | -------- | --------- | ----------- | ------------- |
-| Mono     |           | 22050 Hz    |               |
+| Mono     |           | 11025 Hz    | Yes           |
+| Mono     |           | 22050 Hz    | Yes           |
 | Mono     |           | 32000 Hz    |               |
 | Mono     |           | 44100 Hz    |               |
 | Mono     |           | 48000 Hz    |               |
-| Stereo   |           | 22050 Hz    |               |
-| Stereo   |           | 32000 Hz    |               |
-| Stereo   |           | 44100 Hz    |               |
-| Stereo   |           | 48000 Hz    |               |
+| Stereo   |           | 22050 Hz    | Yes           |
+| Stereo   |           | 32000 Hz    | Yes           |
+| Stereo   |           | 44100 Hz    | Yes           |
+| Stereo   |           | 48000 Hz    | Yes           |
 
 ### OGG Vorbis
 

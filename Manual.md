@@ -396,7 +396,7 @@ Songs can be loaded into a player in several ways:
     Player 2", among others. Making either selection will load a track
     into a player.
   - Drag-and-drop from library track table: Dragging-and-dropping a song
-    from the track table onto a wavefoprm display will load a track into
+    from the track table onto a waveform display will load a track into
     a player.
   - Drag-and-drop from external file browser: Dragging-and-dropping a
     song from an external file browser directly onto a waveform display

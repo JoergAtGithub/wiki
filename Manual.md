@@ -534,6 +534,10 @@ If you're interested in coding (C++):
 If you're not interested in coding, there are still many ways to help
 our project:
 
+  - Test beta and trunk versions of Mixxx to make sure new features and
+    fixes work well in all cases.
+  - Create mappings for MIDI controllers Mixxx doesn't yet support.
+    (Advanced functionality requires some Javascript-like programming.)
   - Help answer questions in the forum.
   - Help promote Mixxx - If you've got a blog, write an article about
     Mixxx. Blog about our new releases when they come out. Any exposure

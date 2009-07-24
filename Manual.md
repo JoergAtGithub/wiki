@@ -328,17 +328,21 @@ preamplification applied to your decks' signal.
 
 ### Vinyl Configuration
 
-Several different types of timecoded media can be used to control Mixxx.
-Configure the "Vinyl Type" drop-down menu to match what type of
-timecoded vinyl or CD you are using on your deck(s).
+Several different types of time-coded media can be used to control
+Mixxx. Configure the "Vinyl Type" drop-down menu to match what type of
+time-coded vinyl or CD you are using on your deck(s).
 
 The "Lead-in Time" setting allows you to set a dead-zone at the start of
-your vinyl or CD, where the timecode will be ignored. This is useful in
-situations where the timecode begins very close to the edge of a vinyl,
+your vinyl or CD, where the time code will be ignored. This is useful in
+situations where the time code begins very close to the edge of a vinyl,
 which can make back-cueing over the first beat in a song tricky to do
 without your turntable's needle falling off the vinyl. Setting a lead-in
 time of 20 seconds or more helps alleviate this by giving you more room
-on the vinyl to cue with.
+on the vinyl to cue with. It's also useful when you've worn the grooves
+at the edge of a control record to the point that it no longer works
+reliably: you simply set the lead-in so that the start of the songs
+begin in good groove area. You can keep doing this until you run out of
+groove area, thereby decreasing your record replacement frequency.
 
 ### Control Mode
 

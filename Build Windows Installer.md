@@ -15,17 +15,20 @@ be present in order to run. Many people have these already installed on
 their systems, but many do not (or have older versions,) so we must
 include them with our packages.
 
-To do that, you just need to copy the below files into the applicable
+To do that, you just need to copy files mentioned in the
+winXX\_build\\mixxx.exe.manifest file (and
+<span class="underline">their</span> manifests) into the applicable
 directory manually before making the installer package.
 
-The needed files are:
+The needed files are likely:
 
   - `msvcm??.dll`
   - `msvcp??.dll`
   - `msvcr??.dll`
 
 Where *??* is the version number of the Visual Studio version used to
-build Mixxx. 2005 (v8.0) is `80`, 2008 (v9.0) is `90`.
+build Mixxx or one of its dependencies. 2005 (v8.0) is `80`, 2008 (v9.0)
+is `90`.
 
 These files can usually be found in the
 `\VC\redist\xxx\Microsoft.VC??.CRT\` directory (where xxx is the machine

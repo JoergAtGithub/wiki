@@ -54,7 +54,8 @@ to the Public Hudson instance dashboard (currently found at
 
 [[/media/hudson/job-bzr-settings.png|]]
 
-  - Complete Scons + build params settings
+  - Complete Scons + build params settings (you have to choose "invoke a
+    scons script" to get blanks for these settings) 
 
 [[/media/hudson/job-scons-settings.png|]]
 

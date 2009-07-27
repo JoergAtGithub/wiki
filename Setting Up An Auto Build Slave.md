@@ -6,7 +6,14 @@ slaves, but rather independent Hudson instances that publish their info
 to the Public Hudson instance dashboard (currently found at
 <http://mixxx.org:8080/>).
 
-Hudson
+##### TODO
+
+  - Turn on SCM polling, so builds are triggered automatically when BZR
+    commits happen
+  - Fix OSX issue
+  - Add info on how to configure pbuilder and hudson on Linux hosts.
+
+### Hudson Config
 
   - Download hudson (or apt-get install it)
   - Start hudson
@@ -25,9 +32,12 @@ Hudson
   - Add the following settings (some are not shown for security
     reasons):
 
-screenshot here
+[[/media/hudson/hudson-scp-settings.png|]]
+[[/media/hudson/hudson-publish-settings.png|]]
 
-  - Next, go back to Hudson's main screen, create a "new job"
+### Creating a Build Job
+
+  - From Hudson's main screen select "new job"
   - Select *Build a free-style software project* for the job type
   - Call the job the name of the arch
   - Add a description (can include HTML markup), I recommend something
@@ -40,13 +50,15 @@ screenshot here
     Built on QNAP-NAS (Ubuntu 9.04 i386)
     http://mixxx.org/packages/autobuilds/i386
 
-  - Complete Scons build info
+  - Complete the BZR settings
 
-Screenshot
+[[/media/hudson/job-bzr-settings.png|]]
+
+  - Complete Scons + build params settings
+
+[[/media/hudson/job-scons-settings.png|]]
 
   - Tick the box to "Publish artifacts to SCP Repository"
   - Tick the box to "Publish build"
 
-Screenshot
-
-[[/media/hudson-publish-settings.png|]]
+[[/media/hudson/job-scp_and_publish-settings.png|]]

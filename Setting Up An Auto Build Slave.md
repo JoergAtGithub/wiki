@@ -48,3 +48,5 @@ Screenshot
   - Tick the box to "Publish build"
 
 Screenshot
+
+[[/media/hudson-publish-settings.png|]]

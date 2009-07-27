@@ -9,7 +9,7 @@ to the Public Hudson instance dashboard (currently found at
 ##### TODO
 
   - Turn on SCM polling, so builds are triggered automatically when BZR
-    commits happen
+    commits happen (Job-\>Build Triggers-\>Poll SCM)
   - Fix [OSX compile issue](http://mixxx.org:8080/job/osx/1/console) so
     that builds + bundles
   - Add info on how to configure pbuilder and hudson on Linux hosts.

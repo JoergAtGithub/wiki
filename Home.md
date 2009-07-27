@@ -29,6 +29,11 @@ developers, and artists, and is summarized in the categories below.
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
 
+<!-- end list -->
+
+  - [Setting up an auto build
+    "slave"](Setting%20up%20an%20auto%20build%20"slave")
+
 ### Mixxx Developer Reference Documentation
 
   - **[To-do list before the next release](1.7.0_to_do_list)** - Please

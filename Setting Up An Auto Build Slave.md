@@ -18,11 +18,13 @@ to the Public Hudson instance dashboard (currently found at
 
   - [Download hudson](http://hudson-ci.org/latest/hudson.war) (or
     apt-get install it)
-  - Start hudson - either by
-  - java webstart -\> <https://hudson.dev.java.net/hudson.jnlp> **or**
+  - Start hudson - either by:
+  - java webstart -\> <https://hudson.dev.java.net/hudson.jnlp>
+    <span class="underline">**OR**</span>
   - java -jar hudson.war \[options\] (yeah this looks odd, but hudson
     comes with embedded
-    [winstone](http://winstone.sourceforge.net/#commandLine)) **or** 
+    [winstone](http://winstone.sourceforge.net/#commandLine))
+    <span class="underline">**OR**</span> 
   - you can deploy it to a servlet container like Tomcat
   - Go to Manage Hudson
   - Go to plug-ins, install: 

@@ -44,6 +44,8 @@ to the Public Hudson instance dashboard (currently found at
 [[/media/hudson/hudson-scp-settings.png|]]
 [[/media/hudson/hudson-publish-settings.png|]]
 
+  - "/home/mixxx/public\_html/packages/autobuilds/"
+
 ### Creating a Build Job
 
   - From Hudson's main screen select "new job"

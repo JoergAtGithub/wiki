@@ -65,7 +65,9 @@ to the Public Hudson instance dashboard (currently found at
 
   - Complete Scons + build params settings (you have to choose "invoke a
     scons script" and then click on the "Advanced" button to get blanks
-    for these settings) 
+    for these settings) \*\*NOTE: \*\* These are just an example, your
+    scons args and what packages you upload will vary by build machine
+    and target OS respectively.
 
 [[/media/hudson/job-scons-settings.png|]]
 

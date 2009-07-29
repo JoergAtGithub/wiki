@@ -12,7 +12,7 @@ page.
 
 When built with MSVC, Mixxx requires that certain MSVC DLL files be
 present in order to run. Many people have these already installed on
-their systems, but many do not (or have older versions,) so we must
+their systems, but many do not (or have different versions,) so we must
 include them with our packages.
 
 To do that, you need to copy DLL files (and their manifests) mentioned

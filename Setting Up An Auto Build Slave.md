@@ -86,3 +86,13 @@ to the Public Hudson instance dashboard (currently found at
 ### Optional Adding BZR Repo polling
 
 [[/media/hudson/job-build-trigger-settings.png|]]
+
+### Installing bzr-xmloutput on OSX running macports
+
+if you run [macports](http://www.macports.org/) you can install
+bzr-xmloutput like so (there is no port for it atm):
+
+    cd /opt/local/lib/python2.5/site-packages/bzrlib/plugins
+    sudo wget http://launchpad.net/bzr-xmloutput/trunk/0.8.4/+download/bzr-xmloutput-0.8.4.tar.gz
+    sudo tar -zxvf bzr-xmloutput-0.8.4.tar.gz 
+    sudo mv bzr-xmloutput-0.8.4 xmloutput

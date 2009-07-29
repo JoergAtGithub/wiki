@@ -35,6 +35,9 @@ to the Public Hudson instance dashboard (currently found at
   - Download the BZR plug-in (from
     <https://launchpad.net/bzr-hudson/+download>) and use the plug-in
     upload feature on this screen to install it.
+  - You will also need to have bzr-xmloutput (apt-get install
+    bzr-xmloutput or install from
+    <https://launchpad.net/bzr-xmloutput/+download>)
   - Restart Hudson (every time you install plug-in(s) you have to)
   - Go to Manage Hudson
   - Go to System config

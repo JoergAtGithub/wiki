@@ -35,7 +35,7 @@ to the Public Hudson instance dashboard (currently found at
   - Download the BZR plug-in (from
     <https://launchpad.net/bzr-hudson/+download>) and use the plug-in
     upload feature on this screen to install it.
-  - Restart Hudson (every time you install a plug-in you have to)
+  - Restart Hudson (every time you install plug-in(s) you have to)
   - Go to Manage Hudson
   - Go to System config
   - Add the following settings (some are not shown for security

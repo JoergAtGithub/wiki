@@ -61,15 +61,17 @@ becomes just `Microsoft.VC80.CRT.manifest`
 
 ## Make the package
 
-Just run `scons makerelease msvcdebug=0 debug=0` and you should be good
-to go.
+Just run `scons makerelease msvcdebug=0` and you should be good to go.
+(If packaging for x64, Mixxx will be rebuilt to avoid
+architecture-specific instructions.)
 
 ## Improvements
 
 If someone feels like making this automatic, they will need to have the
 NSI script and/or SConscript:
 
-1.  Check to see what version of Visual Studio Mixxx was built with
+1.  Check the Mixxx.exe.manifest file and note which versions of which
+    DLLs are needed
 2.  Try to find the needed files in the \\VC\\redist\\ tree for the
     machine type
 3.  Failing that, include the applicable .msm file from the

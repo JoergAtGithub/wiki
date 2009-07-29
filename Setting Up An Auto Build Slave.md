@@ -74,7 +74,9 @@ to the Public Hudson instance dashboard (currently found at
 [[/media/hudson/job-scons-settings.png|]]
 
   - Tick the box to "Publish artifacts to SCP Repository"
-  - Tick the box to "Publish build"
+  - Tick the box to "Publish build" (if you want to see builds not over
+    write each other, I suggest using $JOB\_NAME/$BUILD\_ID instead of
+    just $JOB\_NAME in the destination below)
 
 [[/media/hudson/job-scp_and_publish-settings.png|]]
 

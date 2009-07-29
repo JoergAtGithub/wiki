@@ -75,3 +75,7 @@ to the Public Hudson instance dashboard (currently found at
   - Tick the box to "Publish build"
 
 [[/media/hudson/job-scp_and_publish-settings.png|]]
+
+### Optional Adding BZR Repo polling
+
+[[/media/hudson/job-build-trigger-settings.png|]]

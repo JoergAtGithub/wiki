@@ -10,36 +10,35 @@ page.
 
 ## Preparation
 
-When built with MSVC, Mixxx requires that the matching MSVCRT DLL files
-be present in order to run. Many people have these already installed on
+When built with MSVC, Mixxx requires that certain MSVC DLL files be
+present in order to run. Many people have these already installed on
 their systems, but many do not (or have older versions,) so we must
 include them with our packages.
 
-To do that, you just need to copy files mentioned in the
-winXX\_build\\mixxx.exe.manifest file (and
-<span class="underline">their</span> manifests) into the applicable
+To do that, you need to copy DLL files (and their manifests) mentioned
+in the `winXX_build\mixxx.exe.manifest` file into the applicable
 directory manually before making the installer package.
 
 The needed files are likely:
 
-  - `msvcm??.dll`
   - `msvcp??.dll`
   - `msvcr??.dll`
+  - `*Microsoft.VC??.CRT*.manifest`
 
 Where *??* is the version number of the Visual Studio version used to
-build Mixxx or one of its dependencies. 2005 (v8.0) is `80`, 2008 (v9.0)
-is `90`.
+build Mixxx, one of its dependencies, or both. 2005 (v8.0) is `80`, 2008
+(v9.0) is `90`.
 
 These files can usually be found in the
 `\VC\redist\xxx\Microsoft.VC??.CRT\` directory (where xxx is the machine
 type: x86, x64/AMD64, or IA64) under your installation of Visual C++. If
 you've installed the redistributable package (see below) on your build
 system, they can also be found in %SYSTEMROOT%\\WinSxS. You'll want to
-make sure you grab the latest version, since that directory holds many
-old versions as well.
+make sure you grab the exact version(s) specified in the
+`mixxx.exe.manifest`, since that directory holds many versions.
 
-If you're using Visual C++ Express and are doing a 64-bit build, you'll
-need to either install the vcredist\_x64 package or extract it using
+If you can't find the DLLs in those places, you'll need to either
+install the `vcredist[_x64]` package or extract it using
 [MSIX](http://blogs.msdn.com/heaths/archive/2006/04/07/571138.aspx) and
 grab the files from the `Microsoft_VCxx_CRT_xxx.msm` (CAB) file, which
 can be extracted from the MSI file packed inside the `vcredist.exe`
@@ -51,13 +50,14 @@ combination, as shown below:
 | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | [Visual Studio 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569) | [x86](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2) | [x64/amd64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=ba9257ca-337f-4b40-8c14-157cfdffee4e) | [IA64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=dcc211e6-ab82-41d6-8dec-c79937393fe8) |
 
-In any case, once you've located those three DLL files, if you're doing
-a 32-bit build, copy the x86 DLL files into mixxx-winlib. If a 64-bit
-build, copy the x64/AMD64 DLL files into mixxx-win64lib. (Note that if
-you're doing a 64-bit build, you'll want to use 64-bit version of NSIS,
-otherwise the end-user's Windows will think it's a 32-bit program (due
-to the 32-bit installer) and install it under `Program Files (x86)` by
-default.)
+In any case, once you've located the needed DLL files, if you're doing a
+32-bit build, copy the x86 DLL files and their manifest(s) (usually
+found in a nearby "Manifests" folder) into mixxx-winlib. If a 64-bit
+build, copy the x64/AMD64 DLL files and their manifest(s) into
+mixxx-win64lib. Rename the manifest files so they just say the name of
+the assembly, e.g.
+`amd64_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_9d1c6ce0.manifest`
+becomes just `Microsoft.VC80.CRT.manifest`
 
 ## Make the package
 

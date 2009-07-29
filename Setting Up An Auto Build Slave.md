@@ -16,8 +16,14 @@ to the Public Hudson instance dashboard (currently found at
 
 ### Hudson Config
 
-  - Download hudson (or apt-get install it)
-  - Start hudson
+  - [Download hudson](http://hudson-ci.org/latest/hudson.war) (or
+    apt-get install it)
+  - Start hudson - either by
+  - java webstart -\> <https://hudson.dev.java.net/hudson.jnlp> **or**
+  - java -jar hudson.war \[options\] (yeah this looks odd, but hudson
+    comes with embedded
+    [winstone](http://winstone.sourceforge.net/#commandLine)) **or** 
+  - you can deploy it to a servlet container like Tomcat
   - Go to Manage Hudson
   - Go to plug-ins, install: 
   - SCP

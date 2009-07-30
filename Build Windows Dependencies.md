@@ -291,7 +291,7 @@ them too (detailed below.)
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-5.  Open the `libmad-0.15.1b\msvc++\libmad.dsp` file via
+5.  Open the `libid3tag-0.15.1b\msvc++\libid3tag.dsp` file via
     File-\>Open-\>Project/Solution.
 6.  Answer 'Yes' to convert & open the project
 7.  Choose the Release configuration and the Win32 platform

@@ -302,9 +302,14 @@ them too (detailed below.)
         directory into which you unpacked the ZLib source, e.g.
         `c:\temp\zlib123`
     3.  Click OK.
-9.  Press F7 to build. (You can cancel the .sln save dialog if you want
+9.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+10. Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-10. When it finishes, copy the following files into `mixxx-winlib` or
+11. When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`: `libid3tag-0.15.1b\id3tag.h
     libid3tag-0.15.1b\msvc++\Release\libid3tag.lib (rename to
     id3tag.lib)

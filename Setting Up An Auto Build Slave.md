@@ -106,6 +106,7 @@ bzr-xmloutput like so (there is no port for it atm):
   - Building QMakeBuilder
   - svn co
     <https://svn.dev.java.net/svn/hudson/trunk/hudson/plugins/qmakebuilder>
+    \# username/password: guest/guest 
   - export JAVA\_HOME=$(dirname $(dirname $(ls -l
     /etc/alternatives/javac | cut -d \\\> -f2))) \# on Ubuntu, sets to
     something like JAVA\_HOME=/usr/lib/jvm/java-6-openjdk (depends on

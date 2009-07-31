@@ -87,7 +87,7 @@ to the Public Hudson instance dashboard (currently found at
 
 [[/media/hudson/job-build-trigger-settings.png|]]
 
-#### Misc
+## Misc
 
 ### Installing bzr-xmloutput on OSX running macports
 

@@ -103,15 +103,12 @@ bzr-xmloutput like so (there is no port for it atm):
 
   - TortoiseBZR appears to pull proxy settings from IE, so if changing
     networks be aware that you may not get connectivity for checkouts.
-
-<!-- end list -->
-
-``` 
-* 
-```
-
-    Building QMakeBuilder
-    * svn co https://svn.dev.java.net/svn/hudson/trunk/hudson/plugins/qmakebuilder
-    * export JAVA_HOME=$(dirname $(dirname $(ls -l /etc/alternatives/javac | cut -d \> -f2))) # on Ubuntu, sets to something like JAVA_HOME=/usr/lib/jvm/java-6-openjdk (depends on your JDK)
-    * aptitude install maven2
-    * cd qmakebuilder && mvn && cd target && ls qmakebuilder.hpi
+  - Building QMakeBuilder
+  - svn co
+    <https://svn.dev.java.net/svn/hudson/trunk/hudson/plugins/qmakebuilder>
+  - export JAVA\_HOME=$(dirname $(dirname $(ls -l
+    /etc/alternatives/javac | cut -d \\\> -f2))) \# on Ubuntu, sets to
+    something like JAVA\_HOME=/usr/lib/jvm/java-6-openjdk (depends on
+    your JDK)
+  - aptitude install maven2
+  - cd qmakebuilder && mvn && cd target && ls qmakebuilder.hpi

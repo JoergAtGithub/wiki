@@ -101,5 +101,11 @@ bzr-xmloutput like so (there is no port for it atm):
 
 ### Windows Hudson QMake
 
-\* TortoiseBZR appears to pull proxy settings from IE, so if changing
-networks be aware that you may not get connectivity for checkouts. \*
+  - TortoiseBZR appears to pull proxy settings from IE, so if changing
+    networks be aware that you may not get connectivity for checkouts.
+
+<!-- end list -->
+
+``` 
+* 
+```

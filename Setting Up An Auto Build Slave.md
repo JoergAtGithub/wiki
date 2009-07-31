@@ -87,6 +87,8 @@ to the Public Hudson instance dashboard (currently found at
 
 [[/media/hudson/job-build-trigger-settings.png|]]
 
+#### Misc
+
 ### Installing bzr-xmloutput on OSX running macports
 
 if you run [macports](http://www.macports.org/) you can install
@@ -96,3 +98,8 @@ bzr-xmloutput like so (there is no port for it atm):
     sudo wget http://launchpad.net/bzr-xmloutput/trunk/0.8.4/+download/bzr-xmloutput-0.8.4.tar.gz
     sudo tar -zxvf bzr-xmloutput-0.8.4.tar.gz 
     sudo mv bzr-xmloutput-0.8.4 xmloutput
+
+### Windows Hudson QMake
+
+\* TortoiseBZR appears to pull proxy settings from IE, so if changing
+networks be aware that you may not get connectivity for checkouts. \*

@@ -262,6 +262,10 @@ midi-mappings-scripts.js file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
+  - **secondstominutes**(seconds) - Returns the given quantity of
+    seconds in `MM:SS` format.
+  - **msecondstominutes**(milliseconds) - Returns the given quantity of
+    milliseconds in `MM:SS.ss` format.
   - **script.debug**(channel, control, value, status) - Prints the
     values as passed to it. Call this from anywhere in your function to
     see what the current values of these variables are. You can also of

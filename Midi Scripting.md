@@ -1,7 +1,5 @@
 # MIDI Scripting
 
-***This information may change prior to the 1.7.0 final release.***
-
 In order to support the advanced features of many MIDI controllers,
 Mixxx offers what we call MIDI Scripting. It enables MIDI controls to be
 mapped to [QtScript](http://doc.trolltech.com/4.5/qtscript.html) (aka

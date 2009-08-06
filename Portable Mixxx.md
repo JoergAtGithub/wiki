@@ -1,10 +1,12 @@
 # Portable Mixxx
 
-Goal to make a build option for the Windows target that will allow Mixxx
-to be run from a USB, CD/DVD, network share or other removable media
-type.
+## Windows
 
-## TODO:
+Goal: to make a build option for the Windows target that will allow
+Mixxx to be run from a USB, CD/DVD, network share or other removable
+media type.
+
+### TODO:
 
 ``` 
  * Avoid saving/reading settings & files to/from absolute paths
@@ -21,3 +23,13 @@ type.
        if exists (Music Folder + music path value) --> load // relative to music folder
        else if exists (music path value) --> load // not found, treat as absolute path 
 ```
+
+## Bare metal
+
+Goal: to make a USB stick/CD image that boots into
+[DSL](http://www.damnsmalllinux.org/),
+[DSL-N](http://www.damnsmalllinux.org/dsl-n/) or [Tiny Core
+Linux](http://tinycorelinux.com/) that contains Mixxx (and JACK and
+FFADO if possible,) ready to run. The idea is that you can walk up to
+any PC with your MixxxStixxx and music media (external HD, MP3 DVD,
+etc.) and be up & running in minutes.

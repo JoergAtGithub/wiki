@@ -59,8 +59,8 @@ developers, and artists, and is summarized in the categories below.
   - **Development Topics:**
   - [Performance improvements](Performance%20improvements)
   - [Feature Discussion & Specifications](feature_discussion)
-  - [Windows build of Mixxx for removable media (Memory Sticks, CD/DVD,
-    Portable HDDs)](Portable%20Mixxx)
+  - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
+    HDDs)](Portable%20Mixxx)
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)

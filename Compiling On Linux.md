@@ -24,9 +24,9 @@ your distribution's package manager:
   - [PortAudio-v19](http://www.portaudio.com)
   - QT 4.4.0+ (if installing from packages, make sure to get
     libqt4-opengl and libqt4-svg too.)
-  - fftw3
   - libogg, libvorbis, libvorbisfile
   - libsndfile
+  - ~~fftw3~~ - not currently used
   - ~~libdjconsole - optional, for Hercules MK2 users~~ - no longer
     required as of r2380 (\~1.6.2)
 

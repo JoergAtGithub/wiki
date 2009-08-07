@@ -1,3 +1,7 @@
+| General                       | Download                                     | Forums                                       | Bugs                                                     | Wiki                                     | IRC                                              | Developer Mailing List                                                               |
+| ----------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| [mixxx.org](http://mixxx.org) | [Get Mixxx\!](http://mixxx.org/download.php) | [mixxx.org/forums](http://mixxx.org/forums/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [\#mixxx on freenode](irc://freenode.net/#mixxx) | [Mixxx-devel mailing list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel) |
+
 ## Getting Involved with Mixxx
 
 You want to make Mixxx better, but what can you do?
@@ -10,7 +14,7 @@ Tweak it\! Skin it\!
 
 Teach it\! Test it\!
 
-Speak it\! Support it\!
+Show it\! Support it\!
 
 Harder, Better, Faster, Stronger\!
 
@@ -31,16 +35,18 @@ So you're somewhat technical but not a C++ coder, what else can you do?
 ## Tune it\!
 
 You can publish your tricks for tuning Mixxx to the max on whatever
-combination operating system/hardware you run onto the Wiki; new users
-often struggle with a getting good low-latency set-up so easy to follow
-tuning instructions are an invaluable contribution.
+combination operating system/hardware you run onto the
+[Wiki](http://mixxx.org/wiki/); new users often struggle with a getting
+good low-latency set-up so easy to follow tuning instructions are an
+invaluable contribution.
 
 ## Tweak it\!
 
-With a little knowledge javascript, you can modify the hardware
+With a little knowledge JavaScript, you can modify the hardware
 controller script files in the midi folder (remember to send patches to
-the list) do crazy-new-awesome things or just fix up a function that is
-already there.
+the [list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)) do
+crazy-new-awesome things or just fix up a function that is already
+there.
 
 ## Skin it\!
 
@@ -57,9 +63,10 @@ ain't cool and it can get us in trouble).
 
 ## Teach it\!
 
-If you already know you are a kickass DJ, please show us your awesome
+If you already know you are a kick-ass DJ, please show us your awesome
 skills and teach us a thing or two about how to use Mixxx to DJ better
-by doing a video and putting it Youtube or Vimeo.
+by doing a video and putting it up on
+[Youtube](http://www.youtube.com/results?search_query=mixxx) or Vimeo.
 
 Mixxx is looking for a resident DJ to teach the rest of us. ;)
 
@@ -67,14 +74,19 @@ Mixxx is looking for a resident DJ to teach the rest of us. ;)
 
 Grab the latest feature builds (looping, library) from our build server
 and try them out, suggest subtle improvements, figure out a method to
-crash them and then report bugs and suggestions onto launchpad.
+crash them and then [report bugs and suggestions onto
+launchpad](https://bugs.launchpad.net/mixxx).
 
-## Speak it\!
+## Show it\!
 
-If you like Mixxx, speak up, tell your friends... take Mixxx on a world
-tour. We will provide the stickers. :D
+If you love Mixxx, show it... Record a mash-up and [post
+it](http://soundcloud.com/). Show Mixxx off in a club. Show Mixxx to
+your friends.... take Mixxx on a world tour. We'll provide the Mixxx
+stickers. :D
 
-Talk to us on IRC, forums, or the mailing list.
+Then show us what you did on [IRC](irc://freenode.net/#mixxx), the
+[forums](http://mixxx.org/forums/), or the [mailing
+list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
 
 ## Support it\!
 

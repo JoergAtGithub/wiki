@@ -92,9 +92,12 @@ hw:1,0,0 with whatever device ID your controller shows in the list.) See
 
 #### Windows
 
-[Build Mixxx](Compiling%20on%20Windows) with `scons msvcdebug=1`. This
-will cause it to pop up a console window when you run it and the MIDI
-messages received by your controller will be displayed there.
+Look at the Mixxx.log file which will contain all of the MIDI messages
+Mixxx receives. You can download tail.exe to watch it as new messages
+are added. Or [build Mixxx](Compiling%20on%20Windows) with `scons
+msvcdebug=1`. This will cause it to pop up a console window when you run
+it and the MIDI messages received by your controller will be displayed
+there.
 
 #### All
 

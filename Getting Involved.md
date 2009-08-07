@@ -21,11 +21,15 @@ Harder, Better, Faster, Stronger\!
 ## Code it\!
 
 The most direct way to help Mixxx is through coding - patches that fix
-bugs are welcomed with open arms (send them to the mailing list). Mixxx
-is written in C++ and makes use of the Qt libraries, which make C++ a
-lot more like Java then C.
+bugs are welcomed with open arms (attach them to a [LP bug
+report](bugs.launchpad.net/mixxx) or send them to the [mailing
+list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)). Mixxx
+is written in C++ and makes extensive use of the
+[Qt](http://www.qtsoftware.com/) libraries, which make C++ a lot more
+like Java then C.
 
-Fixes and minor feature enhancements can be sent to the mailing list.
+Minor feature enhancements can be sent to the [mailing
+list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
 
 Bigger changes can be done by [creating a
 branch](http://mixxx.org/wiki/doku.php/using_bazaar#general_procedure_for_distributed_use)

@@ -27,8 +27,10 @@ lot more like Java then C.
 
 Fixes and minor feature enhancements can be sent to the mailing list.
 
-Bigger changes can be done by creating a branch on Launchpad and then
-proposing a merge when the changes reach a stable state.
+Bigger changes can be done by [creating a
+branch](http://mixxx.org/wiki/doku.php/using_bazaar#general_procedure_for_distributed_use)
+on [Launchpad](https://code.launchpad.net/mixxx) and then proposing a
+merge when the changes reach a stable state.
 
 So you're somewhat technical but not a C++ coder, what else can you do?
 
@@ -66,7 +68,8 @@ ain't cool and it can get us in trouble).
 If you already know you are a kick-ass DJ, please show us your awesome
 skills and teach us a thing or two about how to use Mixxx to DJ better
 by doing a video and putting it up on
-[Youtube](http://www.youtube.com/results?search_query=mixxx) or Vimeo.
+[Youtube](http://www.youtube.com/results?search_query=mixxx) or
+[Vimeo](http://www.vimeo.com/videos/search:mixxx).
 
 Mixxx is looking for a resident DJ to teach the rest of us. ;)
 

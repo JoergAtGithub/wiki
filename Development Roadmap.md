@@ -90,6 +90,7 @@ No plans yet, rough targets are:
   - Macro/script playback
   - Sampler
   - Inline track previews
+  - Rubber Band support
 
 ## Changelog
 

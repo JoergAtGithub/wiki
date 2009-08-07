@@ -44,9 +44,10 @@ invaluable contribution.
 
 ## Tweak it\!
 
-With a little knowledge JavaScript, you can modify the hardware
-controller script files in the midi folder (remember to send patches to
-the [list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)) do
+With a little knowledge JavaScript, you can [modify the hardware
+controller script files](midi_scripting) in the midi folder (remember to
+send patches to the
+[list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)) do
 crazy-new-awesome things or just fix up a function that is already
 there.
 
@@ -55,7 +56,8 @@ there.
 Are you good at graphics design? Help make Mixxx look even better by
 doing some artwork or skinning the interface.
 
-Make a skin, check out this page for how to -\> wiki link here
+Make a skin, check out this page for how to -\>
+[creating\_skins](creating_skins) \<- The page sort of sucks
 
 Make some promo artwork - i.e. T-Shirt designs, logos, etc and post them
 to the list or on our forums

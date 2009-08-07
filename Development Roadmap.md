@@ -54,6 +54,8 @@ New main features:
 
   - Looping
   - New Library
+  - True Pitchbend
+  - Timing Engine
 
 New auxiliary features: (Will be included if they're done)
 

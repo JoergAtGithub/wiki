@@ -36,7 +36,8 @@ branch](http://mixxx.org/wiki/doku.php/using_bazaar#general_procedure_for_distri
 on [Launchpad](https://code.launchpad.net/mixxx) and then proposing a
 merge when the changes reach a stable state.
 
-So you're somewhat technical but not a C++ coder, what else can you do?
+**So you're somewhat technical but not a C++ coder, what else can you
+do?**
 
 ## Tune it\!
 

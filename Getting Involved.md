@@ -22,7 +22,7 @@ Harder, Better, Faster, Stronger\!
 
 The most direct way to help Mixxx is through coding - patches that fix
 bugs are welcomed with open arms (attach them to a [LP bug
-report](bugs.launchpad.net/mixxx) or send them to the [mailing
+report](http://bugs.launchpad.net/mixxx) or send them to the [mailing
 list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)). Mixxx
 is written in C++ and makes extensive use of the
 [Qt](http://www.qtsoftware.com/) libraries, which make C++ a lot more

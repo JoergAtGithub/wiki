@@ -1,0 +1,86 @@
+## Getting Involved with Mixxx
+
+You want to make Mixxx better, but what can you do?
+
+\<cue Daft Punk synths\>
+
+Code it\! Tune it\!
+
+Tweak it\! Skin it\!
+
+Teach it\! Test it\!
+
+Speak it\! Support it\!
+
+Harder, Better, Faster, Stronger\!
+
+## Code it\!
+
+The most direct way to help Mixxx is through coding - patches that fix
+bugs are welcomed with open arms (send them to the mailing list). Mixxx
+is written in C++ and makes use of the Qt libraries, which make C++ a
+lot more like Java then C.
+
+Fixes and minor feature enhancements can be sent to the mailing list.
+
+Bigger changes can be done by creating a branch on Launchpad and then
+proposing a merge when the changes reach a stable state.
+
+So you're somewhat technical but not a C++ coder, what else can you do?
+
+## Tune it\!
+
+You can publish your tricks for tuning Mixxx to the max on whatever
+combination operating system/hardware you run onto the Wiki; new users
+often struggle with a getting good low-latency set-up so easy to follow
+tuning instructions are an invaluable contribution.
+
+## Tweak it\!
+
+With a little knowledge javascript, you can modify the hardware
+controller script files in the midi folder (remember to send patches to
+the list) do crazy-new-awesome things or just fix up a function that is
+already there.
+
+## Skin it\!
+
+Are you good at graphics design? Help make Mixxx look even better by
+doing some artwork or skinning the interface.
+
+Make a skin, check out this page for how to -\> wiki link here
+
+Make some promo artwork - i.e. T-Shirt designs, logos, etc and post them
+to the list or on our forums
+
+Keep the work original please (ripping off other people's copyrights
+ain't cool and it can get us in trouble).
+
+## Teach it\!
+
+If you already know you are a kickass DJ, please show us your awesome
+skills and teach us a thing or two about how to use Mixxx to DJ better
+by doing a video and putting it Youtube or Vimeo.
+
+Mixxx is looking for a resident DJ to teach the rest of us. ;)
+
+## Test it\!
+
+Grab the latest feature builds (looping, library) from our build server
+and try them out, suggest subtle improvements, figure out a method to
+crash them and then report bugs and suggestions onto launchpad.
+
+## Speak it\!
+
+If you like Mixxx, speak up, tell your friends... take Mixxx on a world
+tour. We will provide the stickers. :D
+
+Talk to us on IRC, forums, or the mailing list.
+
+## Support it\!
+
+Not technical? No time to spare? No worries, making a monetary donation
+only takes about 2 minutes.
+
+We also accept hardware donations from manufacturers of DJ equipment
+which we use to improve both specific and general hardware support in
+Mixxx.

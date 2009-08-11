@@ -101,7 +101,8 @@ list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
 ## Support it\!
 
 Not technical? No time to spare? No worries, making a monetary donation
-only takes about 2 minutes.
+only takes about 2 minutes. [![Mixxx PayPal Donation
+Button](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donations%40mixxx%2eorg&lc=GB&item_name=Mixxx&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
 
 We also accept hardware donations from manufacturers of DJ equipment
 which we use to improve both specific and general hardware support in

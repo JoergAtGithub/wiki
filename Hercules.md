@@ -210,15 +210,10 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 
 ## Updating Mapping Files
 
-This section describes how to update your Mixxx installation with the
-latest 1.6.x compatible mapping files.
+The most recent mapping files where included with Mixxx 1.7.0, released
+August 6th, 2009
 
-  - [Mk2](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Mk2.midi.xml)
-  - [RMX](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Console%20Rmx.midi.xml)
-  - [MP3
-    Control](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20MP3.midi.xml)
-  - [DJ Control
-    Steel](http://mixxx.svn.sourceforge.net/viewvc/mixxx/tags/Release-1_6_1%2BHerc/mixxx/src/midi/Hercules%20DJ%20Control%20Steel.midi.xml)
+\<del\>
 
 ### On Windows
 
@@ -248,3 +243,5 @@ update them manually by following these steps:
 2.  Open a terminal
 3.  type "sudo cp \~/Desktop/Hercules\*.xml /usr/share/mixxx/midi/"
 4.  Restart Mixxx
+
+\</del\>

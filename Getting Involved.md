@@ -63,8 +63,8 @@ there.
 Are you good at graphics design? Help make Mixxx look even better by
 doing some artwork or skinning the interface.
 
-Make a skin, check out this page for how to -\>
-[creating\_skins](creating_skins) \<- The page sort of sucks
+Make a skin, check out this page for how to -\> [Creating
+Skins](Creating%20Skins) \<- The page sort of sucks
 
 Make some promo artwork - i.e. T-Shirt designs, logos, etc and post them
 to the list or on our forums

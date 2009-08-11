@@ -7,6 +7,7 @@ developers, and artists, and is summarized in the categories below.
 
 ## User Documentation
 
+  - **[Getting Involved in Mixxx](Getting%20Involved)** 
   - [Beginner's Guide](Beginner's%20Guide)
   - [Manual](Manual)
   - [Hercules DJ Series Input Controllers Page](Hercules) - Find out

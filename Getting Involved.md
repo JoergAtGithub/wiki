@@ -8,15 +8,15 @@ You want to make Mixxx better, but what can you do?
 
 \<cue Daft Punk synths\>
 
-Code it\! Tune it\!
+*Code it\! Tune it\!*
 
-Tweak it\! Skin it\!
+*Tweak it\! Skin it\!*
 
-Teach it\! Test it\!
+*Teach it\! Test it\!*
 
-Show it\! Support it\!
+*Show it\! Support it\!*
 
-Harder, Better, Faster, Stronger\!
+*Harder, Better, Faster, Stronger\!*
 
 ## Code it\!
 

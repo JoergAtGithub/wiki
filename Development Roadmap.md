@@ -35,7 +35,7 @@ world-class application, somewhat in order of importance:
 
 *Released August 6, 2009*
 
-[1.7.0 historical to do list](1.7.0%20historical%20to%20do%20list)
+[1.7.0 to do list](1.7.0%20to%20do%20list) (historical)
 
 New features:
 

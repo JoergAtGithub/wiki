@@ -33,8 +33,9 @@ world-class application, somewhat in order of importance:
 
 ### 1.7.0
 
-[1.7.0 to do list](1.7.0%20to%20do%20list) - Please submit patches for
-anything posted here to help us release sooner\!
+*Released August 6, 2009*
+
+[1.7.0 historical to do list](1.7.0%20historical%20to%20do%20list)
 
 New features:
 

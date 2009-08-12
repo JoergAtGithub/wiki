@@ -64,7 +64,7 @@ For reference:
 or leaks goes here)
 
   - Currently loading ~~four~~ two copies of MP3 files into memory
-  - Vinyl control leaks part of the lookup table, or something like that
-    when it gets deleted/recreated
+  - ~~Vinyl control leaks part of the lookup table, or something like
+    that when it gets deleted/recreated~~
   - SoundSource's should use memory mapped IO. Making that cross
     platform is tricky.

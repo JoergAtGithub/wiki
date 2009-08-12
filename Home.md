@@ -38,7 +38,7 @@ developers, and artists, and is summarized in the categories below.
 
 ### Mixxx Developer Reference Documentation
 
-  - **[To-do list before the next release](1.7.0_to_do_list)** - Please
+  - **[To-do list before the next release](1.8.0_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 
 <!-- end list -->

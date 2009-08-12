@@ -28,7 +28,7 @@ report](http://bugs.launchpad.net/mixxx) or send them to the [mailing
 list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)). Mixxx
 is written in C++ and makes extensive use of the
 [Qt](http://www.qtsoftware.com/) libraries, which make C++ a lot more
-like Java then C.
+like Java than C.
 
 Minor feature enhancements can be sent to the [mailing
 list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
@@ -66,8 +66,9 @@ doing some artwork or skinning the interface.
 Make a skin, check out this page for how to -\> [Creating
 Skins](Creating%20Skins) \<- The page sort of sucks
 
-Make some promo artwork - i.e. T-Shirt designs, logos, etc and post them
-to the list or on our forums
+Make some promo artwork - eg. T-Shirt designs, DJ artwork for the
+website, etc, and post them to our mixxx-devel mailing list or on our
+forums
 
 Keep the work original please (ripping off other people's copyrights
 ain't cool and it can get us in trouble).
@@ -108,4 +109,5 @@ Button](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypa
 
 We also accept hardware donations from manufacturers of DJ equipment
 which we use to improve both specific and general hardware support in
-Mixxx.
+Mixxx. Please contact [Adam Davison](http://www.hep.ucl.ac.uk/~adamd) if
+you'd like to work with us.

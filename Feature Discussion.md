@@ -8,13 +8,16 @@ page.
 
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Looping](Looping)
+  - [Library Rewrite Using SQLite](Library%20Rewrite%20Using%20SQLite)
   - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
   - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
+    \*abandoned\*
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
+    \*abandoned\*
   - [Skinning Engine](Skinning%20Engine)
-  - "[DVS mode](DVS%20mode)"
+  - [DVS mode](DVS%20mode)
 
 ## Reducing Number of Input Libraries
 

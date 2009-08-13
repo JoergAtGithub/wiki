@@ -38,6 +38,7 @@ are:
   - Library rescanning needs work
   - Playlist support
   - Crate support
+  - Browse mode
   - tagging
   - abstraction of track sources (e.g. to allow for ipod source)
   - browse mode

@@ -110,5 +110,5 @@ homepage](http://mixxx.org/).
 
 We also accept hardware donations from manufacturers of DJ equipment
 which we use to improve both specific and general hardware support in
-Mixxx. Please contact [Adam Davison](/mailto/adamd@mixxx.org) if you'd
-like to work with us.
+Mixxx. Please contact [Adam Davison](adamd@mixxx.org) if you'd like to
+work with us.

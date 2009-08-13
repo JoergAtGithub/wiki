@@ -51,5 +51,5 @@ are:
 If you're interested in helping to code this feature, sign up your name
 below:
 
-  - RJ Ryan
   - Albert Santoni
+  - RJ Ryan

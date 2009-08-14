@@ -36,12 +36,32 @@ complete.
 The meat of the project is done. There's still a solid body of work
 left, but much of it is polish and restoring old features.
 
+From the Mixxx 1.8.0 developer meeting, what Albert has done is:
+
+  - Deleted track.cpp, the source of much pain and misery in our
+    codebase. In other words, I complete ripped out everything to do
+    with the old library code. I also took a sledge hammer to
+    TrackInfoObject, though much of it survived. TIO should be cleaned
+    up an renamed to something sane (like a new Track class) now.
+  - Written a new WTrackTableView widget from scratch.
+  - Written a new TrackCollection class from scratch, which talks to
+    SQLite through Qt. This class should be renamed TrackDatabase for
+    clarity.
+  - Written a new LibraryTableModel class which subclasses
+    QSqlTableModel, which talks to our database. This let's us display
+    our track library using model-view without writing very much code.
+  - A bunch of other little things like having the columns resize
+    persistently, making the columns rearrangeable, etc.
+
 From the Mixxx 1.8.0 developer meeting, some of the remaining issues
 are:
 
-  - rewrite the track editor
-  - searches still block the GUI, make them asynchronous
-  - Library rescanning needs work
+  - rewrite the track editor (right click-\>properties dialog)
+  - searches still block the GUI, make them asynchronous by making
+    introducing some threading into the data models somehow.
+  - Library rescanning needs work - Wes Idel sent Albert half a patch to
+    do this in a really nice way. Status of his project is currently
+    unknown though. 
   - Playlist support
   - Crate support
   - Browse mode

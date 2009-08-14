@@ -42,7 +42,34 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 
 #### Database Schemas
 
-Party
+**Library Table (as of August 14, 2009)**
+
+    55     query.exec("CREATE TABLE library (id INTEGER primary key, "
+    56                "artist varchar(20), title varchar(20), "
+    57                "filename varchar(20), location varchar(20), "
+    58                "comment varchar(20), url varchar(20), "
+    59                "duration integer, length_in_bytes integer, "
+    60                "bitrate integer, samplerate integer, "
+    61                "cuepoint integer, bpm float, "
+    62                "wavesummaryhex blob, "
+    63                "channels integer)");
+
+**Playlist Table (proposed)**
+
+| Field          | Datatype | Comments                       |
+| -------------- | -------- | ------------------------------ |
+| id             | integer  | Primary key                    |
+| playlist\_name | varchar  |                                |
+| track\_id      | integer  | Foreign key from library table |
+| position       | integer  | Position inside the playlist   |
+
+**Tags Table (proposed)**
+
+| Field     | Datatype | Comments                       |
+| --------- | -------- | ------------------------------ |
+| id        | integer  | Primary key                    |
+| tag       | varchar  | Name of the tag                |
+| track\_id | integer  | Foreign key from library table |
 
 ## Work Breakdown
 

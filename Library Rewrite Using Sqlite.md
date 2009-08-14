@@ -54,14 +54,23 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
     62                "wavesummaryhex blob, "
     63                "channels integer)");
 
+**Playlists Table (proposed)**
+
+| Field          | Datatype | Comments    |
+| -------------- | -------- | ----------- |
+| id             | integer  | Primary key |
+| name           | varchar  |             |
+| date\_created  | date     |             |
+| date\_modified | date     |             |
+
 **Playlist Table (proposed)**
 
-| Field          | Datatype | Comments                       |
-| -------------- | -------- | ------------------------------ |
-| id             | integer  | Primary key                    |
-| playlist\_name | varchar  |                                |
-| track\_id      | integer  | Foreign key from library table |
-| position       | integer  | Position inside the playlist   |
+| Field        | Datatype | Comments                              |
+| ------------ | -------- | ------------------------------------- |
+| id           | integer  | Primary key                           |
+| playlist\_id | integer  | Foreign key from playlists table      |
+| track\_id    | integer  | Foreign key from library table        |
+| position     | integer  | Position of the track in the playlist |
 
 **Tags Table (proposed)**
 

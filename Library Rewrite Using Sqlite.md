@@ -119,7 +119,6 @@ are:
     do this in a really nice way. Status of his project is currently
     unknown though. 
   - Playlist support
-  - Crate support
   - Browse mode
   - tagging
   - abstraction of track sources (e.g. to allow for ipod source)

@@ -18,7 +18,27 @@ lp:\~mixxxdevelopers/mixxx/features\_sqlite branch.
 
 ## Design
 
-Stuff
+The current library in Mixxx 1.7.0 leaves a lot to be desired. The
+design of the new library will aim to bring a significant amount of new
+functionality for all types of DJs in order to broaden our user
+demographics and to retain existing users.
+
+Using a database naturally solves the following issues with the current
+library:
+
+  - Inability of the QList-based TrackCollection to scale well for large
+    libraries (in terms of both CPU time for searching and memory usage)
+  - Start-up and shut-down times increasing with larger libraries
+  - Inability to perform advanced data manipulation like tagging
+  - Inability to sanely deal with playlists :)
+
+These were all problems that were at the core of the old library code,
+and not only has using a database solved them, but it's opened up a
+tremendous amount of other possibilities for us. We've also got more
+flexibility in how we display data in the WTrackTableView widget, as we
+can now use delegate classes to do cool stuff with very little coding.
+
+More to follow after a discussion on mixxx-devel and a Skype meeting...
 
 #### Database Schemas
 

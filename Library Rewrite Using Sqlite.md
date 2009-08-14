@@ -18,6 +18,12 @@ lp:\~mixxxdevelopers/mixxx/features\_sqlite branch.
 
 ## Design
 
+Stuff
+
+#### Database Schemas
+
+Party
+
 ## Work Breakdown
 
 This [work breakdown

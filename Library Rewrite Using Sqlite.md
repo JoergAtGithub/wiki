@@ -110,6 +110,11 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 | tag         | varchar  | Name of the tag                |
 | library\_id | integer  | Foreign key from library table |
 
+### Notes
+
+  - Not all DataSources will support all our column types
+  - We won't want to modify external sources
+
 #### Classes
 
 **TrackSource**

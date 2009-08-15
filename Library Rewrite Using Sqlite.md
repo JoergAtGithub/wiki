@@ -110,6 +110,10 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 | tag       | varchar  | Name of the tag                |
 | track\_id | integer  | Foreign key from library table |
 
+#### Classes
+
+**TrackSource**
+
 ## Work Breakdown
 
 This [work breakdown

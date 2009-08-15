@@ -51,17 +51,31 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 
 #### Database Schemas
 
-**Library Table (as of August 14, 2009)**
+**Library Table (as of August 15, 2009)**
 
-    55     query.exec("CREATE TABLE library (id INTEGER primary key, "
-    56                "artist varchar(20), title varchar(20), "
-    57                "filename varchar(20), location varchar(20), "
-    58                "comment varchar(20), url varchar(20), "
-    59                "duration integer, length_in_bytes integer, "
-    60                "bitrate integer, samplerate integer, "
-    61                "cuepoint integer, bpm float, "
-    62                "wavesummaryhex blob, "
-    63                "channels integer)");
+``` sql
+    CREATE TABLE library (
+          id INTEGER primary key,
+          artist varchar(48),
+          title varchar(48),
+          album varchar(48),
+          year varchar(16),
+          genre varchar(32),
+          tracknumber varchar(3),
+          filename varchar(512), 
+          location varchar(512),
+          comment varchar(20), 
+          url varchar(256),
+          duration integer,
+          length_in_bytes integer,
+          bitrate integer, 
+          samplerate integer,
+          cuepoint integer,
+          bpm float,
+          wavesummaryhex blob,
+          channels integer
+    )
+```
 
 **Playlists Table (proposed)**
 

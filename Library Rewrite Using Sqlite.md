@@ -159,3 +159,4 @@ below:
   - Albert Santoni
   - RJ Ryan
   - Sean Pappalardo
+  - Phillip Whelan

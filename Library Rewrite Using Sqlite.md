@@ -69,13 +69,13 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
           year varchar(16),
           genre varchar(32),
           tracknumber varchar(3),
-          filename varchar(512), 
+          filename varchar(512),
           location varchar(512),
-          comment varchar(20), 
+          comment varchar(20),
           url varchar(256),
           duration integer,
           length_in_bytes integer,
-          bitrate integer, 
+          bitrate integer,
           samplerate integer,
           cuepoint integer,
           bpm float,
@@ -84,7 +84,7 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
     )
 ```
 
-**Playlists Table (proposed)**
+**Library Table (proposed)**
 
 | Field          | Datatype | Comments    |
 | -------------- | -------- | ----------- |
@@ -95,20 +95,20 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 
 **Playlist Table (proposed)**
 
-| Field        | Datatype | Comments                              |
-| ------------ | -------- | ------------------------------------- |
-| id           | integer  | Primary key                           |
-| playlist\_id | integer  | Foreign key from playlists table      |
-| track\_id    | integer  | Foreign key from library table        |
-| position     | integer  | Position of the track in the playlist |
+| Field       | Datatype | Comments                              |
+| ----------- | -------- | ------------------------------------- |
+| id          | integer  | Primary key                           |
+| library\_id | integer  | Foreign key from playlists table      |
+| track\_id   | integer  | Foreign key from library table        |
+| position    | integer  | Position of the track in the playlist |
 
 **Tags Table (proposed)**
 
-| Field     | Datatype | Comments                       |
-| --------- | -------- | ------------------------------ |
-| id        | integer  | Primary key                    |
-| tag       | varchar  | Name of the tag                |
-| track\_id | integer  | Foreign key from library table |
+| Field       | Datatype | Comments                       |
+| ----------- | -------- | ------------------------------ |
+| id          | integer  | Primary key                    |
+| tag         | varchar  | Name of the tag                |
+| library\_id | integer  | Foreign key from library table |
 
 #### Classes
 

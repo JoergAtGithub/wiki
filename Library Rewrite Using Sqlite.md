@@ -14,7 +14,16 @@ lp:\~mixxxdevelopers/mixxx/features\_sqlite branch.
     but its library does not scale to his large collection of music. It
     is also buggy, and often gets corrupted so he cannot build up
     quality metadata about his music.
-  - **Your use case here**
+  - Meganerd Roger occasionally mixes music and also has a large
+    collection of Music, all tagged and rated in Exaile (or RhythmBox,
+    etc...). He likes mixxxx, especially since it was how he was
+    introduced to mixing, but the current library cannot get to his
+    metadata so he relies on his player for when he plays music at
+    parties.
+  - DJ Minimal does not understand tags or any of that Interweb 2 point
+    O' stuff, but has a well sorted out collection of tagged music. He
+    knows what he needs to mix, but he really needs to be able to sort
+    and search through his library to get at it.
 
 ## Design
 

@@ -23,7 +23,14 @@ lp:\~mixxxdevelopers/mixxx/features\_sqlite branch.
   - DJ Minimal does not understand tags or any of that Interweb 2 point
     O' stuff, but has a well sorted out collection of tagged music. He
     knows what he needs to mix, but he really needs to be able to sort
-    and search through his library to get at it.
+    and search through his library to get at it quickly.
+  - DJ DarkPsyPhil programs in C/C++/PHP and Python and also mixes Dark
+    Psytrance. He needs access to as much metadata as he can shake a
+    stick at. His collection of music is pretty big and at this moment
+    varies between MP3, FLAC and WAV. Most, if not all his music is
+    sorted into directories by year and in their respective albums. With
+    all the music he has not all of it is tagged properly but he still
+    needs a quick handle on it.
 
 ## Design
 

@@ -90,7 +90,7 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 | ----------------- | -------- | ------------------------------------------------------------------------------------------------- |
 | analysis\_version | integer  | Version of Mixxx that analysis was last done with (eg. BPM detection). 0 if no analysis done yet. |
 
-**Library Table (proposed)**
+**Playlists Table (proposed)**
 
 | Field          | Datatype | Comments    |
 | -------------- | -------- | ----------- |
@@ -101,12 +101,12 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 
 **Playlist Table (proposed)**
 
-| Field       | Datatype | Comments                              |
-| ----------- | -------- | ------------------------------------- |
-| id          | integer  | Primary key                           |
-| library\_id | integer  | Foreign key from playlists table      |
-| track\_id   | integer  | Foreign key from library table        |
-| position    | integer  | Position of the track in the playlist |
+| Field        | Datatype | Comments                              |
+| ------------ | -------- | ------------------------------------- |
+| id           | integer  | Primary key                           |
+| playlist\_id | integer  | Foreign key from playlists table      |
+| library\_id  | integer  | Foreign key from library table        |
+| position     | integer  | Position of the track in the playlist |
 
 **Tags Table (proposed)**
 

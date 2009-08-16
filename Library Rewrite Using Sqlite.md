@@ -166,6 +166,9 @@ are:
   - bling-bling delegates
   - XML migration strategy (is this even worth it?)
   - bulk BPM detection and other library-wide things
+  - Figure out memory management for TrackInfoObjects - They must be
+    deleted when they're not being used anymore, but stuff like the
+    analyser queue makes that tricky. (Use smart pointers?)
 
 ## Team
 

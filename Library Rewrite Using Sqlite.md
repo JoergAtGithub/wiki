@@ -84,6 +84,12 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
     )
 ```
 
+**Additional Fields for Library Table (proposed)**
+
+| Field             | Datatype | Comments                                                                                          |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| analysis\_version | integer  | Version of Mixxx that analysis was last done with (eg. BPM detection). 0 if no analysis done yet. |
+
 **Library Table (proposed)**
 
 | Field          | Datatype | Comments    |

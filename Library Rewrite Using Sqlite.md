@@ -120,6 +120,7 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 
   - Not all DataSources will support all our column types
   - We won't want to modify external sources
+  - <http://kollide.net:8060/browse/~raw,r=20283/Amarok/docs/database/amarok_db_schema.png>
 
 #### Classes
 

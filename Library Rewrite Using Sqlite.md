@@ -99,7 +99,7 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 | date\_created  | date     |             |
 | date\_modified | date     |             |
 
-**Playlist Table (proposed)**
+**PlaylistTracks Table (proposed)**
 
 | Field        | Datatype | Comments                              |
 | ------------ | -------- | ------------------------------------- |
@@ -115,6 +115,15 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
 | id          | integer  | Primary key                    |
 | tag         | varchar  | Name of the tag                |
 | library\_id | integer  | Foreign key from library table |
+
+**Cue Points Table (proposed)**
+
+| Field         | Datatype | Comments                       |
+| ------------- | -------- | ------------------------------ |
+| id            | integer  | Primary key                    |
+| library\_id   | integer  | Foreign key from library table |
+| cue\_position | integer  | Sample offset of cue point     |
+| label         | varchar  | Annotation for cue point       |
 
 ### Notes
 

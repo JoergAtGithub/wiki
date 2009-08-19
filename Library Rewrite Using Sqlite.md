@@ -84,11 +84,12 @@ More to follow after a discussion on mixxx-devel and a Skype meeting...
     )
 ```
 
-**Additional Fields for Library Table (proposed)**
+**Additional Changes to Library Table (proposed)**
 
-| Field             | Datatype | Comments                                                                                          |
-| ----------------- | -------- | ------------------------------------------------------------------------------------------------- |
-| analysis\_version | integer  | Version of Mixxx that analysis was last done with (eg. BPM detection). 0 if no analysis done yet. |
+| Field               | Datatype | Comments                                                                                          |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------- |
+| \+analysis\_version | integer  | Version of Mixxx that analysis was last done with (eg. BPM detection). 0 if no analysis done yet. |
+| \-cuepoint          | integer  | Remove this field\! The cue points table deprecates it.                                           |
 
 **Playlists Table (proposed)**
 

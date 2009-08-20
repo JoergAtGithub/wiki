@@ -117,6 +117,10 @@ going to want to jump to the start. What is desirable for the looping
 machinery is a flexible way to express that to the Reader. "Please cache
 this region of the song, because I'm going to need to loop over it".
 
+The Reader was completely ditched and rewritten as CachingReader, which
+implements this functionality. EngineBuffer was rewritten to work with
+this new reader.
+
 ## Work Breakdown
 
 This [work breakdown
@@ -124,33 +128,34 @@ structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
 will become more detailed as the design above becomes more thorough and
 complete.
 
-    1. Looping
-      1.1 Assess existing looping code
-        1.1.1 See if we can reuse any ControlObjects
-        1.1.2 Figure out how the old code moves the play position.
-      1.2 Create LoopingControl class
-        1.2.1 Implement skeleton class structure, following EngineBufferScale's structure 
-        1.2.2 In process() (or similar) function, check if playpos == end of loop (and move playpos to start of loop)
-        1.2.3 If seeking occurs outside of loop, cancel the looping (?)
-        1.2.4 
-      1.3 Code hooks into waveform view and waveform summary
-        1.3.1 Talk to RJ Ryan to make sure new waveform makes this easy
-        1.3.1 Get loop in/out pos and paint highly visible markers
+``` 
+1. Looping
+  1.1 Assess existing looping code
+    1.1.1 See if we can reuse any ControlObjects
+    1.1.2 Figure out how the old code moves the play position.
+  1.2 Create LoopingControl class
+    1.2.1 Implement skeleton class structure, following EngineBufferScale's structure 
+    1.2.2 In process() (or similar) function, check if playpos == end of loop (and move playpos to start of loop)
+    1.2.3 If seeking occurs outside of loop, cancel the looping (?)
+  1.3 Code hooks into waveform view and waveform summary
+    1.3.1 Talk to RJ Ryan to make sure new waveform makes this easy
+    1.3.2 Get loop in/out pos and paint highly visible markers
+    1.3.3 Make waveform more flexible in how it represents markers so that you can tell the difference between a loop and cue
+  1.4 Replace Reader with CachingReader
+  1.5 Rewrite EngineBuffer, remove old junk
+    1.5.1 Refactor rate control into RateControl, bpm into BpmControl, looping into LoopingControl, etc
+    1.5.2 Enable hinting of cues, loops, etc to CachingReader -- currently not done. 
+  1.6 Update the EngineBufferScale objects to work with the new system.
+    1.6.1 Use ReadAheadManager to manage reading forward in the song given looping, reverse, etc.
+    1.6.2 Need to rewrite them to no longer use a ring-buffer, but rather work in a streaming fashion.
+  1.7 Update all official skins to have loop buttons. 
+```
 
 ## Current Progress
 
 The ~~Features\_rryan-looping~~
 lp:\~mixxxdevelopers/mixxx/features\_looping branch contains all the
 work that's been done so far.
-
-The EngineBuffer::process method has been replaced with a very basic
-version of it that does not have all the bells and whistles of the big,
-nasty, full version of process.
-
-The EngineBuffer::process method calls LoopingControl::process to ask it
-whether it should change its current position (i.e. whether it should
-loop). If it should loop, then it asks the Reader to seek to the new
-position, and sets the play position to the new position.
 
 The LoopingControl class has the following Control Objects:
 
@@ -163,11 +168,15 @@ The LoopingControl class has the following Control Objects:
 The WaveformRenderer is setup to render WaveformRenderMarks of the
 loop\_start\_position and loop\_end\_position control objects.
 
-In order to play with the current looping setup, you need to change the
-skim.xml of one of your skins to make some buttons in the skin emit
-loop\_in, loop\_out, and reloop\_exit signals. On 'outline', it is
-convenient to change the Fast Forward, Fast Backward, and Reverse
-buttons to Loop In, Loop Out, and Reloop/Exit.
+The outlineNetbook skin has been changed to have loop in/out/reloop
+buttons.
+
+### Remaining Work
+
+  - Change loop/cue controls to hint the CachingReader
+  - Ensure audio quality for EngineBufferScaleLinear/SoundTouch
+  - Experiment with EngineBufferScaleRubberBand
+  - Add tests
 
 ## Team
 

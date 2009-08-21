@@ -143,6 +143,52 @@ structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
 will become more detailed as the design above becomes more thorough and
 complete.
 
+1\. New Library
+
+    1.1 SQL-based TrackCollection
+      1.2.1 Good table designs
+      1.2.2 Creation of tables at runtime
+      1.2.3 
+    1.2 SQL Relational Table Model
+      1.2.1 Threaded wrapper (async queries)
+    1.3 Abstraction of Track Sources
+      1.3.1 Library track source
+      1.3.3 Browse mode track source?
+      1.3.4 iTunes track source
+      1.3.5 Mixxx <= 1.7 track source?
+    1.4 Abstraction of Playlist Sources
+      1.4.1 Internal playlists source?
+    1.5 Abstraction of Library Features
+    1.6 Tagging
+    1.7 Triage/Manage View
+
+    * 
+        rewrite the track editor (right click→properties dialog)
+    * 
+        searches still block the GUI, make them asynchronous by making introducing some threading into the data models somehow.
+    * 
+        Library rescanning needs work - Wes Idel sent Albert half a patch to do this in a really nice way. Status of his project is currently unknown though.
+    * 
+        Playlist support
+    * 
+        Browse mode
+    * 
+        tagging
+    * 
+        abstraction of track sources (e.g. to allow for ipod source)
+    * 
+        browse mode
+    * 
+        Cue/loop storage in the DB
+    * 
+        bling-bling delegates
+    * 
+        XML migration strategy (is this even worth it?)
+    * 
+        bulk BPM detection and other library-wide things
+    * 
+        Figure out memory management for TrackInfoObjects - They must be deleted when they're not being used anymore, but stuff like the analyser queue makes that tricky. (Use smart pointers?)
+
 ## Current Progress
 
 The meat of the project is done. There's still a solid body of work

@@ -20,6 +20,10 @@ tested:
   - Olive (bzr-gtk) - Looks promising but is god-awful slow on large
     directories like our src/ (Tested by Pegasus)
 
+## List of available branches
+
+<http://code.launchpad.net/mixxx>
+
 ## General procedure for distributed use
 
 1.  **Create a personal copy** (called a "branch") of the Mixxx

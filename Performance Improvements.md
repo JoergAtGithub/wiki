@@ -63,7 +63,9 @@ For reference:
 (Anything that wastes memory by inefficient storage (where unnecessary)
 or leaks goes here)
 
-  - Currently loading ~~four~~ two copies of MP3 files into memory
+  - Currently loading ~~four~~ two copies of MP3 files into memory.
+    (r2509 in 1.7 removes the second copy as soon as the Analyser is
+    done with it, plugging a big leak.)
   - ~~Vinyl control leaks part of the lookup table, or something like
     that when it gets deleted/recreated~~
   - SoundSource's should use memory mapped IO. Making that cross

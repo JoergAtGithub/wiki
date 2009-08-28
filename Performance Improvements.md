@@ -63,6 +63,7 @@ For reference:
 (Anything that wastes memory by inefficient storage (where unnecessary)
 or leaks goes here)
 
+  - <https://bugs.launchpad.net/mixxx/1.7/+bug/410841>
   - Currently loading ~~four~~ two copies of MP3 files into memory.
     (r2509 in 1.7 removes the second copy as soon as the Analyser is
     done with it, plugging a big leak.)

@@ -195,6 +195,18 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     preprocessor definitions. This lets you backtrace (debug) Mixxx.
 5.  Press F7 to build the project
 
+## MSVC Troubleshooting
+
+  - If you get errors like `src\engine\ratecontrol.cpp(267) : error
+    C3861: 'isnan': identifier not found` then you need to edit that
+    source file and add the following at the top under the \#includes:
+    `#ifdef _MSC_VER
+    #include <float.h> // for _isnan() on VC++
+    #define isnan(x) _isnan(x) // VC++ uses _isnan() instead of isnan()
+    //#else
+    //#include <math.h> // for isnan() everywhere else
+    #endif`
+
 ## Build a 32-bit version using the Qt Creator SDK (easier)
 
 The following is an alternate, currently experimental way to build Mixxx

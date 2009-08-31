@@ -4,16 +4,28 @@
 
 Link to the website: <http://www.enterthesystem.com/system/scs3d/>
 
+[See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
+
 ## Latest MIDI mapping & script files
+
+### 1.7.0+
+
+The latest official MIDI mapping and script file are in the 1.7 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.3d.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
+  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
+
+[Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)
 
 ### 1.6.1 & prior
 
 DaRouter mapping for use with Mixxx up to v1.6.1:
 [[/media/hardware/stantonscs/stanton_scs.3d_darouter.midi.xml.gz|]]
 
-This is more of a preview release to get you started until we release
-Mixxx 1.7.0 which will feature full native support and customization for
-the SCS.3d.
+**Using Mixxx 1.7.0 and later is *strongly* recommended as you will
+realize full functionality.**
 
 #### Instructions
 
@@ -40,14 +52,9 @@ the SCS.3d.
   - Reverse play in the button under the pitch slider in Vinyl mode.
   - FF and REW are the buttons below the circle in Vinyl mode.
 
-You can change which SCS.3d controls get mapped to what Mixxx functions
-just by editing the attached file. See the [MIDI Mapping file
-format](midi_controller_mapping_file_format#old_format_before_schema_versioning_mixxx_1.6.1_and_prior)
-for details.
-
 #### Quirks
 
-(all will be resolved in the next Mixxx release)
+(all are resolved in Mixxx 1.7.0)
 
   - Scratching doesn't work well so is disabled.
   - Circle C1 acts as a jog dial, but it's backwards (relative to a
@@ -56,15 +63,6 @@ for details.
     track select, so you can only operate them with Deck A selected.
     (Functions can only be mapped to one control at the moment.)
 
-### 1.7.0+
-
-The latest official MIDI mapping and script file are in the 1.7 release
-branch and can be downloaded from here:
-
-  - [Stanton
-    SCS.3d.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
-  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
-
-[See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
-
-[Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)
+You can change which SCS.3d controls get mapped to what Mixxx functions
+just by editing the XML file. See the [MIDI Mapping file
+format](midi_controller_mapping_file_format) for details.

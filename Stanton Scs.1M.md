@@ -6,15 +6,29 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 
 ## Latest MIDI mapping & script files
 
+### 1.7.0+
+
+[See a walk-through video\!](http://www.youtube.com/watch?v=crJksOEuTx0)
+
+[Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)
+
+The latest official MIDI mapping and script file are in the 1.7 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.1m.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.1m.midi.x-20090413052950-0s8dvnvezkl3lrrh-1/Stanton%20SCS.1m.midi.xml)
+  - [Stanton-SCS1m-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs1mscripts.-20090413052950-0s8dvnvezkl3lrrh-2/Stanton-SCS1m-scripts.js)
+
+Just drop them in the res/midi folder (see instructions above.)
+
 ### 1.6.1 & prior
 
 Mapping for use with Mixxx up to v1.6.1:
 [[/media/hardware/stantonscs/stanton_scs.1m_1.60.midi.xml.gz|]] ***Updated**
 on May 23, 2009 to more closely match the mapping for 1.7.0*
 
-This is more of a preview release to get you started until we release
-Mixxx 1.7.0 which will feature full support and customization for the
-SCS.1m.
+**Using Mixxx 1.7.0 is *strongly* recommended as you will gain more
+functionality.**
 
 #### Instructions
 
@@ -99,22 +113,7 @@ for details.
 
 #### Quirks
 
-(all will be resolved in the next Mixxx release)
+(all are resolved in Mixxx 1.7.0)
 
   - The big track select knob only goes forwards
   - The channel jog knobs are backwards
-
-### 1.7.0+
-
-The latest official MIDI mapping and script file are in the 1.7 release
-branch and can be downloaded from here:
-
-  - [Stanton
-    SCS.1m.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.1m.midi.x-20090413052950-0s8dvnvezkl3lrrh-1/Stanton%20SCS.1m.midi.xml)
-  - [Stanton-SCS1m-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs1mscripts.-20090413052950-0s8dvnvezkl3lrrh-2/Stanton-SCS1m-scripts.js)
-
-Just drop them in the res/midi folder (see instructions above.)
-
-[See a walk-through video\!](http://www.youtube.com/watch?v=crJksOEuTx0)
-
-[Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)

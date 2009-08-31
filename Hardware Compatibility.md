@@ -70,6 +70,12 @@ control setup since it is very compact and has just enough channels.
 (One pair for main output, one pair for headphones/monitor, and one
 input pair.)
 
+(The description over is not true according to Behringers own
+documentation of this soundcard, the card is a one pair inn one pair out
+card and as such not a good one for DJ work. The headphone output is not
+independent, it is switchable, either it monitors the input or it
+monitors the output.)
+
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in

@@ -100,13 +100,13 @@ corresponding display shows the cue point in
   - Cross-fader adjust: will move to and allow adjustment of the
     on-screen cross-fader while the Range button is held down.
   - **Range button**:
-  - Toggles between the pitch range values from those specified in the
+  - Toggles between the pitch range values specified in the
     **pitchRanges** global variable mentioned at the top of this page
   - When held, allows the pitch slider to be used to adjust the
     cross-fader. If you do this, the pitch range will not be changed
-    when you release this button.
-  - **Reset button**: Resets the slider to the center position. This
-    happens when adjusting pitch and the cross-fader.
+    when you release the button.
+  - **Reset button**: Resets the slider to the center position when
+    adjusting pitch or the cross-fader.
 
 ## Preset section
 

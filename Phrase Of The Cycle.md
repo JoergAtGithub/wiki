@@ -1,5 +1,11 @@
 # Phrases of the development cycle / mottos
 
+### 1.8.0
+
+``` 
+* 
+```
+
 ### 1.6.2/1.7.0
 
   - WTF?\!

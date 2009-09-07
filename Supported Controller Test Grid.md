@@ -38,8 +38,12 @@ compatibility](hardware%20compatibility) page.)
 | M-Audio Xponent                 |         |          | Works       |
 | FaderFox DJ2                    |         |          |             |
 | Vestax VCI-100                  |         |          |             |
-| Numark Total Control            | Works   |          |             |
-| Behringer BCD3000               |         |          | Works \[1\] |
+| Numark Total Control            | Works   |          | Works \[1\] |
+| Behringer BCD3000               |         |          | Works \[2\] |
 | Akai MPD24                      |         | Works    | Works       |
 
-1.  No button lights and jog wheels need tuning
+1.  tested with 1.7. stable(opensuse-x86 11.0), No button lights
+    (although alex markley's midi mapping for 1.6.2 worked nearly
+    flawlessly) and crossfader needs inverting
+
+2.  No button lights and jog wheels need tuning

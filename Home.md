@@ -71,6 +71,7 @@ developers, and artists, and is summarized in the categories below.
   - [Widgets](Widgets)
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Command line options](Command%20line%20options)
   - **Past development sprints:**
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
   - **Past developer meetings:**

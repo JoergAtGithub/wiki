@@ -85,6 +85,41 @@ For SVN:
     doing `sudo apt-get -y install nvidia-glx-dev`. Then re-run `scons`
     and it should build fine.
 
+<!-- end list -->
+
+  - If you have opensuse 11.0 it can happen that youre libaries are
+    somehow named incorrectly. 
+
+following error could occour...
+
+    [after checking the dependencies...]
+    
+    Install root: /usr
+    scons: done reading SConscript files.
+    scons: Building targets ...
+    scons: *** [src/.obj/input.o] TypeError `File **/usr/share/qt4/include/QtCore** found where directory expected.' 
+    trying to evaluate `${_concat(INCPREFIX, CPPPATH, INCSUFFIX, __env__, RDirs, TARGET, SOURCE)}'
+    scons: building terminated because of errors.
+
+in this case the file QtCore linked to an non existing
+directory(../QtCore/QtCore). Fix the link in a console by following
+command(in the directory with the broken link)
+
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtCore/ QtCore
+
+with -f you force the binary to discard the old link
+
+it's likely that there are other broken links. commandos are the same
+
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtGui/ QtGui
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtXml/ QtXml
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtOpenGL/ QtOpenGL 
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtScript/ QtScript 
+    laptop:/usr/share/qt4/include # ln -sf /usr/include/Qt3Support/ Qt3Support//
+
+it worked perfectly for me using opensuse 11.0\_x86, kde
+3.5.10\_release55
+
 ## Further Reading
 
   - [Compiling Mixxx on

@@ -47,6 +47,10 @@ New features:
 
 Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
+### 1.7.1
+
+Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.1>
+
 ### 1.8.0
 
 [To-do list](1.8.0_to_do_list)

@@ -45,28 +45,28 @@ here](http://www.youtube.com/watch?v=pVjTVsjEw6Q).
 | .                                                    | Time is so unkind                                 |
 | And life is so cruel with seg-men-ta-tion faults now | And life is so cruel without you here beside me   |
 | \-                                                   | \-                                                |
-| .                                                    | Un-break my heart                                 |
-| .                                                    | Say you'll love me again                          |
-| .                                                    | Undo this hurt you caused                         |
-| .                                                    | When you walked out the door                      |
-| .                                                    | And walked out of my life                         |
-| .                                                    | Un-cry these tears                                |
-| .                                                    | I cried so many nights                            |
-| .                                                    | Un-break my heart                                 |
-| .                                                    | My heart                                          |
+| Un-break my code                                     | Un-break my heart                                 |
+| Say you'll com-pile again                            | Say you'll love me again                          |
+| Undo this hurt you caused                            | Undo this hurt you caused                         |
+| When you gave me that err'r                          | When you walked out the door                      |
+| And refused to rebuild                               | And walked out of my life                         |
+| Un-cry these tears                                   | Un-cry these tears                                |
+| I cried so many nights                               | I cried so many nights                            |
+| Un-break my code                                     | Un-break my heart                                 |
+| My code                                              | My heart                                          |
 | \-                                                   | \-                                                |
 | .                                                    | Don't leave me in all this pain                   |
 | .                                                    | Don't leave me out in the rain                    |
 | .                                                    | Bring back the nights when I held you beside me   |
 | \-                                                   | \-                                                |
-| .                                                    | Un-break my heart                                 |
-| .                                                    | Say you'll love me again                          |
-| .                                                    | Undo this hurt you caused                         |
-| .                                                    | When you walked out the door                      |
-| .                                                    | And walked out of my life                         |
-| .                                                    | Un-cry these tears                                |
-| .                                                    | I cried so many, many nights                      |
-| .                                                    | Un-break my                                       |
+| Un-break my code                                     | Un-break my heart                                 |
+| Say you'll com-pile again                            | Say you'll love me again                          |
+| Undo this hurt you caused                            | Undo this hurt you caused                         |
+| When you gave me that err'r                          | When you walked out the door                      |
+| And refused to rebuild                               | And walked out of my life                         |
+| Un-cry these tears                                   | Un-cry these tears                                |
+| I cried so many, many nights                         | I cried so many, many nights                      |
+| Un-break my                                          | Un-break my                                       |
 | \-                                                   | \-                                                |
 | .                                                    | Un-break my heart oh baby                         |
 | .                                                    | Come back and say you love me                     |

@@ -60,21 +60,26 @@ author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 1394 interface, you'll want to look at [the FFADO
 project](http://www.ffado.org).
 
-### Behringer U-Control UCA-202
+### Behringer U-Control UCA202
 
 [Product page](http://www.behringer.com/EN/Products/UCA202.aspx)
 
 This is one of the least expensive yet quality audio interfaces we've
-come across and it works fine in Linux, too. It's ideal for a non-vinyl
-control setup since it is very compact and has just enough channels.
-(One pair for main output, one pair for headphones/monitor, and one
-input pair.)
+come across and it works fine in Linux, too. It's good for a non-vinyl
+control setup (or single-deck if your turntable outputs line level)
+since it is very compact and has just enough additional channels. (One
+pair for main output and one input pair.) You would then use the
+built-in jack on your laptop for the headphone output. (This is how one
+of our developers uses it.)
 
-(The description over is not true according to Behringers own
-documentation of this soundcard, the card is a one pair inn one pair out
-card and as such not a good one for DJ work. The headphone output is not
-independent, it is switchable, it either monitors the input or the
-output.)
+### Behringer U-Phono UFO202
+
+[Product page](http://www.behringer.com/EN/Products/UFO202.aspx)
+
+For those wishing to use vinyl control on a budget, you can pick up two
+of these devices. Same idea as the UCA202 but these allow you to switch
+the input to phono for use with standard turntables. Also good for
+archiving your vinyl.
 
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 

@@ -20,8 +20,8 @@ here](http://www.youtube.com/watch?v=pVjTVsjEw6Q).
 
 | Ours                                                 | Original                                          |
 | ---------------------------------------------------- | ------------------------------------------------- |
-| .                                                    | Don't leave me in all this pain                   |
-| .                                                    | Don't leave me out in the rain                    |
+| I'm hanging my head in shame                         | Don't leave me in all this pain                   |
+| you caught me with b-z-r blame                       | Don't leave me out in the rain                    |
 | .                                                    | Come back and bring back my smile                 |
 | .                                                    | Come and take these tears away                    |
 | .                                                    | I need your arms to hold me now                   |

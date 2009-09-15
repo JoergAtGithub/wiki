@@ -70,7 +70,12 @@ control setup (or single-deck if your turntable outputs line level)
 since it is very compact and has just enough additional channels. (One
 pair for main output and one input pair.) You would then use the
 built-in jack on your laptop for the headphone output. (This is how one
-of our developers uses it.)
+of our developers uses it. Below are some screen shots from his Windows
+setup showing how to configure ASIO4ALL and Mixxx.)
+[[/media/hardware/uca202/asio4all.png|]] [[/media/hardware/uca202/prefs.png|]]
+
+Note that the SoundMAX integrated card only supports 48kHz sampling rate
+natively, so the "always resample" box is checked for that card.
 
 ### Behringer U-Phono UFO202
 

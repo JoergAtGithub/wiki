@@ -3,12 +3,11 @@
 Open-source songwriting ^\_^
 
 *This is a random act of silliness precipitated by comments Albert made
-while working on Mixxx. While we're waiting for bug reports on the beta,
-it would be fun to have this recorded in time for the 1.7.0 final
-release as a promo track.* So first, we must write lyrics\! Add wherever
-you can, but try to match the number of syllables to the original line.
-The nice thing is that many of the original lines apply unchanged to
-programming\! LOL
+while working on Mixxx. It would be fun to have this recorded in time
+for a release as a promo track.* So first, we must write lyrics\! Add
+wherever you can, but try to match the number of syllables to the
+original line. The nice thing is that many of the original lines apply
+unchanged to programming\! LOL
 
 If you have an alternate idea for something already written, add another
 column to the table so we can vote later.

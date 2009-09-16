@@ -22,6 +22,9 @@ that performance is significantly different between Vista and XP or
 Intel and PPC macs or something then we'll have to make more columns I
 guess.
 
+Don't forget to check for the latency reduction tipps
+<http://www.mixxx.org/wiki/doku.php/troubleshooting>
+
 #### 1.6.0-beta3
 
 | Latency Band | Component | Windows                  | Mac OS | Linux                                                 |

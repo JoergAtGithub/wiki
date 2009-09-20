@@ -75,6 +75,8 @@ developers, and artists, and is summarized in the categories below.
   - **Past development sprints:**
   - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
   - **Past developer meetings:**
+  - [9/20/2009 Developer Meeting
+    Minutes](9/20/2009%20Developer%20Meeting%20Minutes)
   - [5/17/2009 Developer Meeting
     Minutes](5/17/2009%20Developer%20Meeting%20Minutes)
 

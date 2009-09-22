@@ -314,3 +314,44 @@ them too (detailed below.)
     libid3tag-0.15.1b\msvc++\Release\libid3tag.lib (rename to
     id3tag.lib)
     `
+
+## libfaad2
+
+[FAAD2](http://www.audiocoding.com/faad2.html) provides MSVC project
+files, which makes things nice. Just open and build. (Step-by-step is
+given below.)
+
+**This is currently unable to build on x64 due to embedded assembly
+code.**
+
+### Build
+
+1.  Edit the `faad2-2.7\libfaad\libfaad2.def` file and add the following
+    lines to the bottom: `NeAACDecPostSeekReset @10
+    NeAACDecDecode2 @11`
+2.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+4.  Run the Visual Studio GUI from this command line, specifying the
+    `/useenv` switch to have it use the Platform SDK compile tools, libs
+    and includes. (e.g. `C:\Program Files (x86)\Microsoft Visual
+    Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+5.  Open the `faad2-2.7\libfaad\libfaad2_dll.vcproj` file via
+    File-\>Open-\>Project/Solution.
+6.  Answer 'Yes' to convert & open the project
+7.  Choose the Release configuration and the Win32 platform
+8.  Add the FAAD path to the compiler:
+    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
+        Directories
+    2.  Choose "Include files" on the right and add FAAD's include
+        directory, e.g. `c:\temp\faad2-2.7\include`
+    3.  Click OK.
+9.  Press F7 to build. (You can cancel the .sln save dialog if you want
+    and it will still build.)
+10. When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`: `faad2-2.7\libfaad\include\faad.h
+    faad2-2.7\libfaad\include\neaacdec.h
+    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
+    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib
+    `

@@ -8,3 +8,4 @@ QString to a character array. To correct it, use the following example:
 
 Then use `charableString` where the original string was used and all
 should be well.
+[Reference](http://qt.nokia.com/developer/faqs/faq.2007-01-30.9032238253)

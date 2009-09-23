@@ -64,14 +64,14 @@ C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
     * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
 - Build Qt
   - Start the Visual Studio command prompt (Start->Microsoft C++ Visual Studio->Visual Studio Tools->Visual Studio Command Prompt)
-  - Type ''setenv /xp /x86'' and hit Enter. (The /x86 is for those on x64 OSs to make sure it targets 32-bit platforms.)
+  - Type ''setenv /xp /x86 /release'' and hit Enter. (The /x86 is for those on x64 OSs to make sure it targets 32-bit platforms.)
   - Type ''cd %QTDIR%'' and hit Enter.
   - Type ''configure -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
     * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
 - Build Mixxx:
   - Start the command prompt and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''setenv /xp /x86'' and hit Enter.
+  - Type ''setenv /xp /x86 /release'' and hit Enter.
   - Type ''scons'' and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
     * Add ''msvcdebug=1'' to build the debug version (with console output window.)
     * Add ''win32=1'' if you're on a 64-bit platform with 64-bit Python installed, otherwise it will try to build the x64 version of Mixxx.

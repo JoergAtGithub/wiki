@@ -133,7 +133,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file. In fact, you only need "libs" if you want to save even more time.
 - Build Qt
   - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
-  - Type ''setenv /xp /x64'' (or ''/ia64'') and hit Enter.
+  - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
   - Type ''cd %QTDIR%'' and hit Enter.
   - Type ''configure -platform win32-msvc2008 -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
@@ -144,7 +144,7 @@ C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</co
     * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''setenv /xp /x64'' (or ''/ia64'') and hit Enter.
+  - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
   - Type ''scons'' (you may need to use scons.bat instead of just scons.)
     * Add ''msvcdebug=1'' to build the debug version.
     * Add ''win64=1'' if you installed the 32-bit version of Python to force a 64-bit Mixxx build (otherwise it will think you're on a 32-bit platform and build that version.)

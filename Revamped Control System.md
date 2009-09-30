@@ -48,10 +48,24 @@ variable in the code is protected in this manner.
 
 The original Mixxx control system, the ControlObject system, balances
 the above concerns with a hybrid approach. This amounts to a two-tier
-system. There are ControlObjects, and ControlObjectThreads.
+system. There are ControlObjects, and ControlObject proxies.
 ControlObjects, which guard a double variable, supports two main
 methods: set() and get(). The double value in the ControlObject is not
-guarded by a lock at all.
+guarded by a lock at all. The intent is that each value that is in the
+control system has an 'owner'. The owner is the section of code that
+initially created the ControlObject. The owner of the ControlObject is
+the only code which is allowed to use the raw ControlObject itself. This
+allows raw (i.e. high-speed) access to the control variable. A
+ControlObject proxy, (e.g. ControlObjectThread and
+ControlObjectThreadMain) represents a non-owner section of the code
+which wishes to be retrieve the control value, change the control value,
+and be updated of changes to the control value. The ControlObject and
+its proxies operate asynchronously. Periodically, there is a
+synchronization step which occurs. All updates to the control object and
+all updates to the proxy are queued and during the synchronization step,
+all the latest value of the control object is broadcasted to each proxy,
+and the changes from the proxy are set on the ControlObject. This
+synchronization step is currently run right before the audio callback.
 
 #### Internal Changes
 

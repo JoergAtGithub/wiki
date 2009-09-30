@@ -6,7 +6,7 @@ page.
 
 ## Specifications for planned features
 
-  - [Control System](Control%20System)
+  - [Revamped Control System](Revamped%20Control%20System)
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Looping](Looping)
   - [Library Rewrite Using SQLite](Library%20Rewrite%20Using%20SQLite)

@@ -135,6 +135,20 @@ an ideal system, these types would be supported via C++ template
 metaprogramming. Unfortunately, QObjects are incompatible with
 templates, so this is not an option.
 
+### Keep or Replace ConfigKey?
+
+All ControlObjects are currently referred to by their key, a ConfigKey.
+This system allows each Control to be named by two strings: group and
+item. The group is effectively the control's namespace. In the engine,
+for example, all controls related to the first player have the group
+\[Channel1\]. Each control for the second player has the group
+\[Channel2\]. This does not allow more granular grouping in a natural
+way. If the ConfigKey were more like a filesystem path, then grouping
+could be arbitrarily deep. This might not be useful at all.
+
+If anything, ConfigKey is really crufty and it would be nice if we could
+rename it to something nicer and more relevant.
+
 ## Proposed Design
 
 ## Work Breakdown

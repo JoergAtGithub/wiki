@@ -159,6 +159,27 @@ rename it to something nicer and more relevant.
 
 ## Proposed Design
 
+### QVariant Based, Unified Control System
+
+This system would be a unified control system. There would be a single
+Control class, and derivatives of it (e.g. ControlPushButton,
+ControlTTRotary, ControlLogPotmeter, like in the Mixxx codebase today)
+but there would be no such thing as a control proxy. All updates to
+Controls happen across Mixxx immediately.
+
+QVariant is a Qt built in type for storing a variety of data types. The
+main benefit of using QVariant as the data type for the control system
+is that we will automatically be able to support a wide variety of data
+types in controls, including things like QByteArray, which could be very
+useful. It supports all of the desired types listed above and more. A
+list can be found in the QVariant Qt documentation. To sidestep the
+annoyance of working with 'boxed' values, subclasses of Control could be
+provided that implement methods with the actual type. For example --
+ControlValue could be a subclass of Control which provides get/set
+methods for double, including add/sub methods that are currently
+provided on ControlObjects. ControlBoolean ControlInteger, and
+ControlString could be similar.
+
 ## Work Breakdown
 
 This [work breakdown

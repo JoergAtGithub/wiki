@@ -144,7 +144,11 @@ for example, all controls related to the first player have the group
 \[Channel1\]. Each control for the second player has the group
 \[Channel2\]. This does not allow more granular grouping in a natural
 way. If the ConfigKey were more like a filesystem path, then grouping
-could be arbitrarily deep. This might not be useful at all.
+could be arbitrarily deep. This might not be useful at all, but it might
+allow something like this: Select all controls with the namespace
+\[Channel1\] will return all controls with the namespace Channel1, while
+selecting with the namespace \[Channel1,FX\] will return a subset of
+those controls which are also in the FX sub-namespace of Channel1.
 
 If anything, ConfigKey is really crufty and it would be nice if we could
 rename it to something nicer and more relevant.

@@ -15,6 +15,8 @@ for thread-safe value communication across the Mixxx codebase.
     different Mixxx subsystems (MIDI, GUI, Script, OSC, etc)
   - Unified namespace for referring to control values across Mixxx 
   - Triggering on changes to control values
+  - Enumeration and logging of Control values for, e.g. crash recovery,
+    debugging, 
 
 ## Motivation and Design Issues
 
@@ -147,7 +149,10 @@ could be arbitrarily deep. This might not be useful at all, but it might
 allow something like this: Select all controls with the namespace
 \[Channel1\] will return all controls with the namespace Channel1, while
 selecting with the namespace \[Channel1,FX\] will return a subset of
-those controls which are also in the FX sub-namespace of Channel1.
+those controls which are also in the FX sub-namespace of Channel1. This
+would be useful for something like a Control inspector that lets you
+look at a table of all control values in Mixxx and select based on
+namespace.
 
 If anything, ConfigKey is really crufty and it would be nice if we could
 rename it to something nicer and more relevant.

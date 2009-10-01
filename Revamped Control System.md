@@ -1,4 +1,4 @@
-## Summary and Rationale
+## Summary
 
 **Status**: This specification is **in drafting**. Feel free to add
 ideas to this page.

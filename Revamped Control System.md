@@ -65,11 +65,43 @@ synchronization step which occurs. All updates to the control object and
 all updates to the proxy are queued and during the synchronization step,
 all the latest value of the control object is broadcasted to each proxy,
 and the changes from the proxy are set on the ControlObject. This
-synchronization step is currently run right before the audio callback.
+synchronization step is currently run at the beginning of the audio
+callback. The idea is that this is a time when no engine code can
+possibly be running. However, there is nothing preventing ControlObjects
+in other sections of Mixxx from being vulnerable to race conditions. The
+reason this is not a problem in practice is that ControlObject's are
+primarily created within the engine. In the future, this may not remain
+true as more and more features are added to Mixxx.
 
-#### Internal Changes
+### Implementation Performance
 
-#### Architectural Issues
+There are bottlenecks with the implementation of this system. The
+synchronization step is facilitated by three static queues, each with
+its own corresponding lock. The ControlObject set/get methods and the
+ControlObject proxy set/get methods all must use these static queues.
+This means that this system is actually far less performant then it
+claims to be. What it does achieve is that errant ControlObject proxies
+cannot cause lock contention on an engine ControlObject until the
+synchronization phase. Errant ControlObject code can cause Mixxx-wide
+contention for set/get operations on every ControlObject since the lock
+is static.
+
+### Overview of ControlObject Proxies
+
+ControlObjectThread and ControlObjectThreadMain are two different types
+of ControlObject proxies which can be used. ControlObjectThread uses
+locks for mutual exclusion when receiving updates from its corresponding
+ControlObject. ControlObjectThreadMain assumes that the only code which
+will be calling its methods is running in the Qt GUI thread. In order to
+ensure mutual exclusion, ControlObjectThreadMain uses the Qt event loop
+to deliver updates from the ControlObject. This allows it to forego the
+use of locks. Unfortunately, the implementation does not include a
+set/get that doesn't use locks, so there is no real performance
+increase. ControlObjectThread can be used in any context, while
+ControlObjectThreadMain can only be used when it will only be used by
+code running from the GUI thread.
+
+## Proposed Design
 
 ## Work Breakdown
 

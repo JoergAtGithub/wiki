@@ -3,10 +3,9 @@
 **Status**: This specification is **in drafting**. Feel free to add
 ideas to this page.
 
-Mixxx's ControlObject system is lacking a few desirable features. This
-project will build a new Control system for thread-safe value
-communication across the Mixxx codebase. The new control system will run
-alongside the old system as is it slowly phased out.
+Mixxx's ControlObject system is lacking a few desirable features and is
+not as fast as it could be. This project will build a new Control system
+for thread-safe value communication across the Mixxx codebase.
 
 ## Use Cases
 

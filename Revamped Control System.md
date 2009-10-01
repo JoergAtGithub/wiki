@@ -103,7 +103,7 @@ bind Mixxx widgets to ControlObject proxies. ControlObjectThread can be
 used in any context, while ControlObjectThreadMain can only be used when
 it will only be used by code running from the GUI thread.
 
-## Proposed Design
+## Design Questions
 
 ### Two-Tier System or Unified System?
 
@@ -134,6 +134,8 @@ most useful to Mixxx would be boolean, integer, double, and string. In
 an ideal system, these types would be supported via C++ template
 metaprogramming. Unfortunately, QObjects are incompatible with
 templates, so this is not an option.
+
+## Proposed Design
 
 ## Work Breakdown
 

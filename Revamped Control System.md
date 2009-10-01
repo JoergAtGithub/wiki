@@ -88,20 +88,52 @@ is static.
 
 ### Overview of ControlObject Proxies
 
-ControlObjectThread and ControlObjectThreadMain are two different types
-of ControlObject proxies which can be used. ControlObjectThread uses
-locks for mutual exclusion when receiving updates from its corresponding
-ControlObject. ControlObjectThreadMain assumes that the only code which
-will be calling its methods is running in the Qt GUI thread. In order to
-ensure mutual exclusion, ControlObjectThreadMain uses the Qt event loop
-to deliver updates from the ControlObject. This allows it to forego the
-use of locks. Unfortunately, the implementation does not include a
-set/get that doesn't use locks, so there is no real performance
-increase. ControlObjectThread can be used in any context, while
-ControlObjectThreadMain can only be used when it will only be used by
-code running from the GUI thread.
+ControlObjectThread, ControlObjectThreadMain, ControlObjectThreadWidget
+are three different types of ControlObject proxies which can be used.
+ControlObjectThread uses locks for mutual exclusion when receiving
+updates from its corresponding ControlObject. ControlObjectThreadMain
+assumes that the only code which will be calling its methods is running
+in the Qt GUI thread. In order to ensure mutual exclusion,
+ControlObjectThreadMain uses the Qt event loop to deliver updates from
+the ControlObject. This allows it to forego the use of locks.
+Unfortunately, the implementation does not include a set/get that
+doesn't use locks, so there is no real performance increase.
+ControlObjectThreadWidget is a ControlObjectThreadMain that is used to
+bind Mixxx widgets to ControlObject proxies. ControlObjectThread can be
+used in any context, while ControlObjectThreadMain can only be used when
+it will only be used by code running from the GUI thread.
 
 ## Proposed Design
+
+### Two-Tier System or Unified System?
+
+The two-tier system that is currently in Mixxx causes developer
+confusion. What kind of proxy should be used? When should a
+ControlObject be used versus a proxy? The benefit of the system is that
+it can reduce lock contention on the true ControlObject. If some
+QtScript was written that continuously set the rate of a player, then it
+is possible that the engine thread would have to stall to wait for the
+lock when calculating the rate in the engine thread.
+
+A unified system uses locks for every operation, and has no concept of a
+proxy. The cost of every operation is the cost of a single, non-static
+lock. A unified system would actually cost less in terms of performance
+than the existing control system, because every operation results in an
+object lock instead of a static lock. Switching to a unified system
+would actually result in a performance boost. The choice of whether to
+implement a two-tier system is simply to reduce lock contention on the
+Control from potentially buggy proxy users.
+
+### Supported control types
+
+The current ControlObject system only supports doubles. There has been
+recent demand for a wider range of types. The ability to store a string
+in a Control is the most useful of the type additions. If the new
+Control system will support a variety of types, then those that would be
+most useful to Mixxx would be boolean, integer, double, and string. In
+an ideal system, these types would be supported via C++ template
+metaprogramming. Unfortunately, QObjects are incompatible with
+templates, so this is not an option.
 
 ## Work Breakdown
 

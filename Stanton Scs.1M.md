@@ -8,9 +8,6 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 
 ### 1.7.0+
 
-**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
-before starting Mixxx.**
-
 [See a walk-through video\!](http://www.youtube.com/watch?v=crJksOEuTx0)
 
 [Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)

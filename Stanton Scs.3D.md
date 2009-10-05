@@ -10,6 +10,9 @@ Link to the website: <http://www.enterthesystem.com/system/scs3d/>
 
 ### 1.7.0+
 
+**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
+before starting Mixxx.**
+
 The latest official MIDI mapping and script file are in the 1.7 release
 branch and can be downloaded from here:
 

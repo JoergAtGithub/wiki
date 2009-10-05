@@ -1,16 +1,25 @@
+In the interest of speeding up the merging process as much as possible I
+am documenting the work of merging Matti's patches here.
+
+I have created a branch, from mixxx-1.7 called 1.7-matti
+(lp:\~mixxxdevelopers/mixxx/1.7-matti). The launchpad URL is:
+<https://code.launchpad.net/~mixxxdevelopers/mixxx/1.7-matti>
+
 ##### Category \#1 (bugfixes)
 
-  - mixxx-1.7.0-fixDirCols.patch 
-  - mixxx-1.7.0-fixDnD.patch
-  - mixxx-1.7.0-fixFlacUnicode.patch
-  - mixxx-1.7.0-fixM3UparserComment.patch
-  - mixxx-1.7.0-fixPLimporterCaseSensitive.patch
-  - mixxx-1.7.0-fixLoopMode.patch 
-  - mixxx-1.7.0-fixPlayButton.patch
-  - mixxx-1.7.0-playlistMutexLocking.patch
-  - mixxx-1.7.0-checkExistWhenGettingNext.patch
-  - mixxx-1.7.0-fixQ3textstream.patch
-  - mixxx-1.7.0-fixTrComboBox.patch
+| Patch                                        | Description                                                              | Status                      |
+| -------------------------------------------- | ------------------------------------------------------------------------ | --------------------------- |
+| mixxx-1.7.0-fixDirCols.patch                 | Resize the Columns for Directory Browsing                                | COMMITED by: Phillip Whelan |
+| mixxx-1.7.0-fixDnD.patch                     | Fix to DnD for reordering playlists (?)                                  | \*UNTESTED\*                |
+| mixxx-1.7.0-fixFlacUnicode.patch             | Treat FLAC metadata as UTF8                                              | \*UNTESTED\*                |
+| mixxx-1.7.0-fixM3UparserComment.patch        | Ignore Comments (lines that start with '\#') in M3U Files                | \*UNTESTED\*                |
+| mixxx-1.7.0-fixPLimporterCaseSensitive.patch | Make the comparison for M3U and PLS filename extensions case insensitive | \*UNTESTED\*                |
+| mixxx-1.7.0-fixLoopMode.patch                |                                                                          | \*UNTESTED\*                |
+| mixxx-1.7.0-fixPlayButton.patch              |                                                                          | \*UNTESTED\*                |
+| mixxx-1.7.0-playlistMutexLocking.patch       |                                                                          | \*UNTESTED\*                |
+| mixxx-1.7.0-checkExistWhenGettingNext.patch  |                                                                          | \*UNTESTED\*                |
+| mixxx-1.7.0-fixQ3textstream.patch            |                                                                          | \*UNTESTED\*                |
+| mixxx-1.7.0-fixTrComboBox.patch              |                                                                          | \*UNTESTED\*                |
 
 ##### Category \#2 (FEATUREFIX)
 

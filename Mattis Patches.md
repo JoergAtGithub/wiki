@@ -14,7 +14,7 @@ I have created a branch, from mixxx-1.7 called 1.7-matti
 | mixxx-1.7.0-fixFlacUnicode.patch             | Treat FLAC metadata as UTF8                                                                  | \*UNTESTED\*                |
 | mixxx-1.7.0-fixM3UparserComment.patch        | Ignore Comments (lines that start with '\#') in M3U Files                                    | \*UNTESTED\*                |
 | mixxx-1.7.0-fixPLimporterCaseSensitive.patch | Make the comparison for M3U and PLS filename extensions case insensitive                     | \*UNTESTED\*                |
-| mixxx-1.7.0-fixLoopMode.patch                | Do absolute seeking instead of relative seeking when reaching the end of a file in NEXT mode | \*UNTESTED\*                |
+| mixxx-1.7.0-fixLoopMode.patch                | Do absolute seeking instead of relative seeking when reaching the end of a file in NEXT mode | COMMITED by: phillip whelan |
 | mixxx-1.7.0-fixPlayButton.patch              |                                                                                              | \*UNTESTED\*                |
 | mixxx-1.7.0-playlistMutexLocking.patch       |                                                                                              | \*UNTESTED\*                |
 | mixxx-1.7.0-checkExistWhenGettingNext.patch  |                                                                                              | \*UNTESTED\*                |

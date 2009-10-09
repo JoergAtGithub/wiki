@@ -55,6 +55,13 @@ use the headphone cue on the mixer as well as it's crossfader.) Using an
 external mixer is also described briefly in the [Threadbox
 tutorial](http://mixxx.sourceforge.net/wiki/index.php/Threadbox_Tutorial#Using_an_External_Mixer_or_MIDI_Device).
 
+Alternately, if you want to mix on-screen but need to integrate with an
+external mixer, you can plug the headphone output into one channel of
+the mixer, and the main output into another. Then bring the channel
+fader of the headphone one all the way down and set it to play in your
+headphones all the time. Then use the main fader when you want to bring
+Mixxx's output into/out of the main mix.
+
 ## What's vinyl control all about? How do I use it?
 
 See the [Vinyl Control](Vinyl%20Control) page.

@@ -69,8 +69,8 @@ See the [Vinyl Control](Vinyl%20Control) page.
 ## Does Mixxx modify the files or structure of my library?
 
 No, Mixxx does not write to or move any files in your library. It's safe
-to use Mixxx with your iTunes library - Mixxx it will not change
-anything in your library.
+to use Mixxx with your iTunes library - Mixxx will not change anything
+in your library.
 
 ## What platforms are officially supported by Mixxx?
 

@@ -22,6 +22,8 @@ information:
   - Your video and sound hardware (Brands, models, options, etc.)
   - Steps to reproduce the problem
   - [Information logs](reporting_bugs#gathering_logs)
+  - [custom research
+    paper](http://research-service.com/custom-research-paper.html)
 
 Much of the system information can be gathered from System Information
 in Windows (found under Control Panel-\>Administrative Tools-\>Computer

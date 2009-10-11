@@ -101,17 +101,40 @@ you open them in VS:
     portaudio_x64.lib. Rename either to portaudio.lib)
     `
 
-#### Troubleshooting
+## PortMidi
 
-  - If you get the error `..\..\src\hostapi\asio\pa_asio.cpp(1167) :
-    error C2440: '=' : cannot convert from 'FARPROC' to
-    'IsDebuggerPresentPtr'
-                                    This conversion requires a reinterpret_cast, a C-style cast or
-    function-style cast` open `portaudio\src\hostapi\asio\asio.cpp` and
-    change the line:`IsDebuggerPresent_ = GetProcAddress( LoadLibrary(
-    "Kernel32.dll" ), "IsDebuggerPresent" );` to `IsDebuggerPresent_ =
-    IsDebuggerPresentPtr(GetProcAddress( LoadLibrary( "Kernel32.dll" ),
-    "IsDebuggerPresent" ));` then build again.
+[PortMidi](http://portmedia.sourceforge.net/portmidi/) provides MSVC
+project files, which makes things nice. Just open and build.
+(Step-by-step is given below.)
+
+### Build
+
+1.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `portmidi\portmidi-VC9.vcproj` file via
+    File-\>Open-\>Project/Solution. (If you're on VS 2005, use the
+    `portmidi.vcproj` file.)
+5.  Choose the Release {VC9\] configuration and the Win32 platform
+6.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+7.  Press F7 to build (Ignore the failed builds since they're only
+    tests. As long as two succeeded, (PortMidi and PortTime) you're
+    fine.)
+8.  When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`: `portmidi\pm_common\portmidi.h
+    portmidi\pm_win\Release[ VC9]\portmidi.lib
+    portmidi\porttime\porttime.h
+    portmidi\porttime\Release[ VC9]\porttime.lib
+    `
 
 ## libogg
 
@@ -263,9 +286,14 @@ given below.)
     File-\>Open-\>Project/Solution.
 5.  Answer 'Yes' to convert & open the project
 6.  Choose the Release configuration and the Win32 platform
-7.  Press F7 to build. (You can cancel the .sln save dialog if you want
+7.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+8.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-8.  When it finishes, copy the following files into `mixxx-winlib` or
+9.  When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`: `libmad-0.15.1b\mad.h
     libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
     `

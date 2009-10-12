@@ -120,7 +120,7 @@ project files, which makes things nice. Just open and build.
 4.  Open the `portmidi\portmidi-VC9.vcproj` file via
     File-\>Open-\>Project/Solution. (If you're on VS 2005, use the
     `portmidi.vcproj` file.)
-5.  Choose the Release {VC9\] configuration and the Win32 platform
+5.  Choose the Release\[ VC9\] configuration and the Win32 platform
 6.  If building for x64
     1.  Go to Build-\>Configuration manager
     2.  Drop down Active Solution Platform and choose New...

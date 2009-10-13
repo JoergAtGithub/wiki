@@ -2,8 +2,8 @@
 
 ## Summary and Rationale
 
-**Status**: This specification is **in progress**. Any extra features
-people think of should be sent to the mailing list.
+**Status**: This specification is **abandoned**. The WaveSummary thread
+was replaced by the AnalyserQueue in Mixxx 1.7.0.
 
 The current WaveSummary thread does not work for our purposes. There are
 specifically two problems:

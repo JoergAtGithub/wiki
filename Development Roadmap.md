@@ -33,7 +33,7 @@ world-class application, somewhat in order of importance:
 
 ### 1.7.1
 
-*Scheduled Release Date/ Mid-October 2009*
+*Scheduled Release Date: Mid-October 2009*
 
 Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.1>
 

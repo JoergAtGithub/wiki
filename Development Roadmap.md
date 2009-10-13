@@ -31,22 +31,6 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.7.0
-
-*Released August 6, 2009*
-
-[1.7.0 to do list](1.7.0%20to%20do%20list) (historical)
-
-New features:
-
-  - MIDI Learning
-  - MIDI Scripting
-  - Support for new controllers added, see the [hardware
-    compatibility](hardware%20compatibility) page
-  - Some [performance improvements](performance%20improvements)
-
-Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
-
 ### 1.7.1
 
 Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.1>
@@ -96,6 +80,24 @@ No plans yet, rough targets are:
   - Sampler
   - Inline track previews
   - Rubber Band support
+
+## Previous Release Roadmaps
+
+### 1.7.0
+
+*Released August 6, 2009*
+
+[1.7.0 to do list](1.7.0%20to%20do%20list) (historical)
+
+New features:
+
+  - MIDI Learning
+  - MIDI Scripting
+  - Support for new controllers added, see the [hardware
+    compatibility](hardware%20compatibility) page
+  - Some [performance improvements](performance%20improvements)
+
+Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
 ## Changelog
 

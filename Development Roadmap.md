@@ -76,6 +76,11 @@ Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
 ### ???.???
 
+Please don't add new features here unless there is a specification for
+them. To add to the list of ideas that would be cool in Mixxx, add them
+to [feature\_discussion](feature_discussion) or file a Wishlist bug at
+Launchpad.
+
 Ideas for new features:
 
   - [Vector-based GUI](Vector-based%20GUI)

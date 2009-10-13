@@ -48,6 +48,8 @@ makes iTunes library work less effective.
     pre-shipped codecs so we sidestep legal.
   - soundsourcem4a has some lingering memory corruption issues that need
     fixing
+  - (Update 10/2009 -- The SSM4A problems are fixed so barring licensing
+    issues, M4A is good to go)
 
 ## Library
 

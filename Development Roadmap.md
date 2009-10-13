@@ -79,6 +79,10 @@ Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 Ideas for new features:
 
   - [Vector-based GUI](Vector-based%20GUI)
+  - [Skinning Engine](Skinning%20Engine)
+  - [DVS mode](DVS%20mode)
+  - [Revamped Control System](Revamped%20Control%20System)
+  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see
     also [Qt
     Linguist](http://doc.trolltech.com/4.5/linguist-manual.html) and

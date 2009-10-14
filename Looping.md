@@ -2,8 +2,9 @@
 
 ## Summary and Rationale
 
-**Status**: This specification is **in drafting**. Feel free to add
-ideas to this page.
+**Status**: This specification is **complete**. Please do not edit this
+page. The implementation was finished in October 2009 and is pending
+merge into trunk.
 
 Add support for looping parts of songs. Looping parts of songs allows
 DJs to perform more active mixes and also serve as an easy way to

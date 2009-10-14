@@ -350,7 +350,7 @@ files, which makes things nice. Just open and build. (Step-by-step is
 given below.)
 
 **This is currently unable to build on x64 due to embedded assembly
-code.**
+code.** The MSVC x64 compiler only supports intrinsics for assembly.
 
 ### Build
 

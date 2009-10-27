@@ -86,19 +86,18 @@ identifying the particular controller instance in print statements.
 
 ### Function definitions
 
-**This API has changed as of 10 April 2009**
+**This API will change for Mixxx 1.8:**
 
-  - "Device" has been removed
-  - "Category" has become "Status"
-  - The .init function now requires acceptance of an ID string parameter
-    (but you don't have to do anything with it.)
-  - The channel numbers passed to the script now start at zero for
-    simpler use in MIDI messages (0x00 = MIDI Channel 1..0x0F = MIDI
-    Channel 16.)
+  - \<group\> from the MIDI mapping will be passed as an additional
+    function parameter, e.g. `ControllerName.functionName = function
+    (channel, control, value, status, group)` (This makes it easier to
+    work with larger controllers that allow manipulating both decks at
+    once.)
 
-Data passed to functions are, in order: MIDI channel, control/note,
-value, and MIDI status (Note (0x9\#), Control Change (0xB\#), etc.)
-Therefore, function definitions should look like:
+Data passed to functions are, in order: MIDI channel (0x00 = Channel
+1..0x0F = Channel 16,) control/note, value, and MIDI status (Note
+(0x9\#), Control Change (0xB\#), etc.) Therefore, function definitions
+should look like:
 
 ``` javascript
 ControllerName.functionName = function (channel, control, value, status) {
@@ -247,6 +246,10 @@ name>)`. So to force the above-mentioned volumeLEDs to sync up, just do:
 ``` javascript
 engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
 ```
+
+### Timed reactions
+
+Coming soon for Mixxx 1.8\!
 
 ### Object prototype enhancements
 

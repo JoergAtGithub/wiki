@@ -15,9 +15,12 @@ The MIDI mapping files are located in the following paths:
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
   - OS X: /Applications/Mixxx.app/Contents/midi
 
-The easiest way to create a new MIDI mapping is by modifying an existing
-one. When you've finished creating your MIDI mapping, **please send it
-to us** and we'll include it in Mixxx.
+By far, the easiest way to create a new MIDI mapping is by using the
+MIDI Learn wizard in the Preferences. You can then modify the XML file
+it creates (or any of the ones that ship with Mixxx) using the
+information on this page if you'd like to fine-tune it or add more
+mappings. When you've finished creating your MIDI mapping, **please send
+it to us** and we'll include it in Mixxx.
 
 ## MIDI Crash Course
 

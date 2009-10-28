@@ -2,9 +2,7 @@
 
 ### 1.8.0
 
-``` 
-* 
-```
+  - If your cat speaks MIDI, you could control Mixxx with it too\!
 
 ### 1.6.2/1.7.0
 

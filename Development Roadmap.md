@@ -31,11 +31,9 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.7.1
+### 1.7.2
 
-*Scheduled Release Date: Mid-October 2009*
-
-Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.1>
+Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.2>
 
 ### 1.8.0
 

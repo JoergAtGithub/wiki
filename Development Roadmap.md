@@ -54,14 +54,11 @@ New main features:
   - Looping
   - New Library
   - True Pitchbend
-  - Timing Engine
 
 New auxiliary features: (Will be included if they're done)
 
-  - LADSPA Effects
   - Shoutcast
   - M4A support
-  - Possible BPM detection rework
   - Multiple MIDI device support
 
 Side Projects
@@ -69,6 +66,12 @@ Side Projects
   - Build Server\!
   - Test Evangelism
   - SConscript Refactor
+
+Features that won't be in 1.8:
+
+  - LADSPA Effects
+  - Timing engine 
+  - BPM detection rework
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 

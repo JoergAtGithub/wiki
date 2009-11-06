@@ -132,3 +132,18 @@ unless you do it manually. **To bring your features branch up to date**:
   - If you have commit access, **commit** with `bzr commit -m "Log
     message"` (You'll need to register an SSH key first under your
     personal LP page: <https://launchpad.net/people/+me/+editsshkeys>.)
+
+## Troubleshooting
+
+If when trying to push/commit to a shared branch, you get an error like
+`bzr: ERROR: Cannot lock
+LockDir(http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/.bzr/branch/lock):
+Transport operation not possible: http does not support mkdir()` then
+you need to do the folllowing:
+
+1.  Register your SSH key with Launchpad:
+    <https://launchpad.net/people/+me/+editsshkeys>
+2.  Issue the command `bzr launchpad-login <your lp username>`
+3.  If it still doesn't work, issue the command `bzr bind
+    bzr+ssh://<your lp
+    username>@bazaar.launchpad.net/~mixxxdevelopers/mixxx/<branch name>`

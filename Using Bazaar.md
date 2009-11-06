@@ -141,8 +141,9 @@ LockDir(http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/.bzr/branch/lock):
 Transport operation not possible: http does not support mkdir()` then
 you need to do the folllowing:
 
-1.  Register your SSH key with Launchpad:
-    <https://launchpad.net/people/+me/+editsshkeys>
+1.  Register your SSH key with Launchpad as above and tell Bazaar about
+    it.
+    [Instructions](https://help.launchpad.net/Code/UploadingABranch#Pushing%20your%20Bazaar%20branch%20to%20Launchpad)
 2.  Issue the command `bzr launchpad-login <your lp username>`
 3.  If it still doesn't work, issue the command `bzr bind
     bzr+ssh://<your lp

@@ -82,7 +82,7 @@ them. To add to the list of ideas that would be cool in Mixxx, add them
 to [feature\_discussion](feature_discussion) or file a Wishlist bug at
 Launchpad.
 
-Ideas for new features:
+Random ideas for new features:
 
   - [Vector-based GUI](Vector-based%20GUI)
   - [Skinning Engine](Skinning%20Engine)
@@ -95,9 +95,6 @@ Ideas for new features:
     [Launchpad
     translations](https://help.launchpad.net/Translations/YourProject)
   - [Performance improvements](Performance%20improvements)
-
-No plans yet, rough targets are:
-
   - Macro/script playback
   - Sampler
   - Inline track previews

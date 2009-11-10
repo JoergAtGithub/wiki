@@ -39,7 +39,7 @@ Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.2>
 
 // Release Schedule //
 
-  - Nov 14 2009 -- Feature Freeze
+  - Nov 16 2009 -- Feature Freeze
   - Dec 14 2009 -- Mixxx 1.8.0 Beta 1
   - Jan 14 2009 -- Mixxx 1.8.0 Final 
 

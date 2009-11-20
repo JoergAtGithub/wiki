@@ -41,14 +41,16 @@ responsiveness. Here are some tips to help you do that.*
     latency.
   - **Disable anti-virus on-access scanning.** This hasn't been
     confirmed but is worth a try since these programs are known to slow
-    systems down in general. **This is only recommended if your
-    system/partition is not connected to a network or the internet**
-    otherwise you put your system at risk of infection.
+    systems down in general. ***This is only recommended if your system
+    is not connected to a network or the internet*** otherwise you put
+    your system at risk of infection.
   - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
     feature called "PowerMizer" that has been reported to cause all
     kinds of problems for audio and overall latency. It can be disabled
     with a registry tweak:
     <http://forum.notebookreview.com/showthread.php?t=261929>
+  - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
+    in the Device Manager (under Control Panel-\>System-\>Hardware.)
 
 ## The BPM detection is wrong
 

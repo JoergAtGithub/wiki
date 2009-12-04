@@ -23,9 +23,7 @@ developers, and artists, and is summarized in the categories below.
   - [System Requirements](System%20Requirements)
   - [Reporting bugs](Reporting%20bugs)
 
-## Developer Documentation
-
-### Build Mixxx
+## Build Mixxx
 
   - [Compiling on Linux](Compiling%20on%20Linux), brief
   - [Compiling on Windows](Compiling%20on%20Windows)
@@ -36,12 +34,12 @@ developers, and artists, and is summarized in the categories below.
   - [Setting up an auto build
     "slave"](Setting%20up%20an%20auto%20build%20"slave")
 
-### Mixxx Developer Reference Documentation
+## Mixxx Developer Reference Documentation
 
   - **[To-do list before the next release](1.8.0_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 
-#### Getting Started
+### Getting Started
 
   - [How the hell to use Bazaar](Using%20Bazaar)
   - [Development Roadmap](Development%20Roadmap)
@@ -52,7 +50,7 @@ developers, and artists, and is summarized in the categories below.
   - Tutorial: [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
 
-#### Editing MIDI mappings & scripts
+### Editing MIDI mappings & scripts
 
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format)
@@ -60,7 +58,7 @@ developers, and artists, and is summarized in the categories below.
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Scripting](MIDI%20Scripting)
 
-#### Development Topics
+### Development Topics
 
   - [Performance improvements](Performance%20improvements)
   - [Feature Discussion & Specifications](feature_discussion)
@@ -70,7 +68,7 @@ developers, and artists, and is summarized in the categories below.
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
 
-#### Other Resources
+### Other Resources
 
   - [Threads](Threads)
   - [Widgets](Widgets)

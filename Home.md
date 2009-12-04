@@ -41,9 +41,8 @@ developers, and artists, and is summarized in the categories below.
   - **[To-do list before the next release](1.8.0_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 
-<!-- end list -->
+#### Getting Started
 
-  - **Getting Started:**
   - [How the hell to use Bazaar](Using%20Bazaar)
   - [Development Roadmap](Development%20Roadmap)
   - [Submitting Patches](Submitting%20Patches)
@@ -52,13 +51,17 @@ developers, and artists, and is summarized in the categories below.
   - [Developer Tools](Developer%20Tools)
   - Tutorial: [Adding a new button to Mixxx's
     interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
-  - **Editing MIDI mappings & scripts:**
+
+#### Editing MIDI mappings & scripts
+
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format)
   - [UI/MIDI Controls and
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
   - [MIDI Scripting](MIDI%20Scripting)
-  - **Development Topics:**
+
+#### Development Topics
+
   - [Performance improvements](Performance%20improvements)
   - [Feature Discussion & Specifications](feature_discussion)
   - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
@@ -66,7 +69,9 @@ developers, and artists, and is summarized in the categories below.
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
-  - **Other Resources:**
+
+#### Other Resources
+
   - [Threads](Threads)
   - [Widgets](Widgets)
   - [Pitch percentages for semitones and

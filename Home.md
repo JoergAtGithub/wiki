@@ -53,10 +53,16 @@ developers, and artists, and is summarized in the categories below.
 ### Editing MIDI mappings & scripts
 
   - [MIDI Controller Mapping File
-    Format](MIDI%20Controller%20Mapping%20File%20Format)
+    Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
+    find out how to create or change a MIDI mapping file for your
+    controller
   - [UI/MIDI Controls and
     Names](midi_controller_mapping_file_format#ui_midi_controls_and_names)
-  - [MIDI Scripting](MIDI%20Scripting)
+    - This is a list of Mixxx's controls you can manipulate with your
+    MIDI controller via the mapping file and/or a script
+  - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
+    complete control over your MIDI controller and create advanced
+    behaviors.
 
 ### Development Topics
 

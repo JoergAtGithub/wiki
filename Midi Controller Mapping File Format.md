@@ -31,31 +31,31 @@ the op-code and the second is the MIDI channel number. So if you have
 full list of MIDI messages is below, where *n* represents the channel
 number (0..F inclusive):
 
-| Status   | Function                  | Data bytes         |                   |
-| -------- | ------------------------- | ------------------ | ----------------- |
-| **0x8n** | **Note off**              | **Note number**    | **Note velocity** |
-| **0x9n** | **Note on**               | **Note number**    | **Note velocity** |
-| 0xAn     | Polyphonic after-touch    | Note number        | Amount            |
-| **0xBn** | **Control/mode change**   | **Control number** | **Value**         |
-| 0xCn     | Program change            | Program number     | (n/a)             |
-| 0xDn     | Channel after-touch       | Amount             | (n/a)             |
-| **0xEn** | **Pitch wheel**           | **LSB**            | **MSB**           |
-| 0xF0     | System Exclusive message  | Vendor ID          | (data)            |
-| 0xF1     | MIDI Time Code Qtr. Frame | (see spec)         |                   |
-| 0xF2     | Song Position Pointer     | LSB                | MSB               |
-| 0xF3     | Song Select               | Song number        | (n/a)             |
-| 0xF4     | Undefined                 |                    |                   |
-| 0xF5     | Undefined                 |                    |                   |
-| 0xF6     | Tune request              | (n/a)              |                   |
-| 0xF7     | End of SysEx (EOX)        | (n/a)              |                   |
-| 0xF8     | Timing clock              | (n/a)              |                   |
-| 0xF9     | Undefined                 | (n/a)              |                   |
-| 0xFA     | Start                     | (n/a)              |                   |
-| 0xFB     | Continue                  | (n/a)              |                   |
-| 0xFC     | Stop                      | (n/a)              |                   |
-| 0xFD     | Undefined                 | (n/a)              |                   |
-| 0xFE     | Active Sensing            | (n/a)              |                   |
-| 0xFF     | System Reset              | (n/a)              |                   |
+| Status     | Function                  | Data bytes         |                   |
+| ---------- | ------------------------- | ------------------ | ----------------- |
+| **0x8*n*** | **Note off**              | **Note number**    | **Note velocity** |
+| **0x9*n*** | **Note on**               | **Note number**    | **Note velocity** |
+| 0xAn       | Polyphonic after-touch    | Note number        | Amount            |
+| **0xB*n*** | **Control/mode change**   | **Control number** | **Value**         |
+| 0xC*n*     | Program change            | Program number     | (n/a)             |
+| 0xD*n*     | Channel after-touch       | Amount             | (n/a)             |
+| **0xE*n*** | **Pitch wheel**           | **LSB**            | **MSB**           |
+| 0xF0       | System Exclusive message  | Vendor ID          | (data)            |
+| 0xF1       | MIDI Time Code Qtr. Frame | (see spec)         |                   |
+| 0xF2       | Song Position Pointer     | LSB                | MSB               |
+| 0xF3       | Song Select               | Song number        | (n/a)             |
+| 0xF4       | Undefined                 |                    |                   |
+| 0xF5       | Undefined                 |                    |                   |
+| 0xF6       | Tune request              | (n/a)              |                   |
+| 0xF7       | End of SysEx (EOX)        | (n/a)              |                   |
+| 0xF8       | Timing clock              | (n/a)              |                   |
+| 0xF9       | Undefined                 | (n/a)              |                   |
+| 0xFA       | Start                     | (n/a)              |                   |
+| 0xFB       | Continue                  | (n/a)              |                   |
+| 0xFC       | Stop                      | (n/a)              |                   |
+| 0xFD       | Undefined                 | (n/a)              |                   |
+| 0xFE       | Active Sensing            | (n/a)              |                   |
+| 0xFF       | System Reset              | (n/a)              |                   |
 
 The boldface entries in the table above are the messages we are most
 concerned with since most DJ controllers use only these for all

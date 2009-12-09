@@ -241,11 +241,15 @@ These define the part of Mixxx that is being controlled:
     found
     [below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 
-These tags define the MIDI event that Mixxx will listen for:
+These tags define the MIDI event that Mixxx will listen for or send out:
 
-  - status - See the [MIDI crash course](#midi-crash-course) above.
+  - status - MIDI "Status" byte. See the [MIDI crash
+    course](#midi-crash-course) above.
   - midino - The MIDI control or note number (leave this out for the
     Pitch Bend status.) Also see the [crash course](#midi-crash-course).
+
+Input tags:
+
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options will have
     default values, eg a jogwheel might have no acceleration by default.
@@ -266,8 +270,9 @@ These tags define the MIDI event that Mixxx will listen for:
     tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
   - Hercjog - Handle hercules jog wheels (**deprecated**...please
     replace with a MIDI script function.)
-  - status - MIDI "Status" byte (e.g. Note on (0x9n), Control Change
-    (0xBn), Pitch (0xEn). n is the MIDI channel 0x0..0xF in hex.)
+
+Output tags:
+
   - maximum - Send the 'on' value when the Mixxx control drops below
     this value.
   - minimum - Send the 'on' value when the Mixxx control exceeds this

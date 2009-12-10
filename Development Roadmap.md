@@ -41,11 +41,11 @@ Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.2>
 
   - Nov 16 2009 -- Feature Freeze
   - Dec 14 2009 -- Mixxx 1.8.0 Beta 1
-  - Jan 14 2009 -- Mixxx 1.8.0 Final 
+  - Jan 14 2010 -- Mixxx 1.8.0 Final 
 
 The release goal of January 14th is in order to sync up with the Ubuntu
 release cycle. Feature freeze for Lucid Lynx is approximately February
-14th, 2009.
+14th, 2010.
 
 [To-do list](1.8.0_to_do_list)
 

@@ -98,11 +98,13 @@ hw:1,0,0 with whatever device ID your controller shows in the list.) See
 Start Mixxx from a command prompt using the `--midiDebug` option like
 so: `C:\Program Files\Mixxx>mixxx --midiDebug` Then look at the
 Mixxx.log file which will contain all of the MIDI messages Mixxx
-receives. You can download tail.exe to watch it as new messages are
-added. Or [build Mixxx](Compiling%20on%20Windows) with `scons
-msvcdebug=1` and run it with the `--midiDebug` option. This will cause
-it to pop up a console window when you run it and the MIDI messages
-received by your controller will be displayed there.
+receives. You can download
+[tail.exe](http://www.microsoft.com/downloads/details.aspx?FamilyID=9D467A69-57FF-4AE7-96EE-B18C4790CFFD)
+to watch it as new messages are added. Or [build
+Mixxx](Compiling%20on%20Windows) with `scons msvcdebug=1` and run it
+with the `--midiDebug` option. This will cause it to pop up a console
+window when you run it and the MIDI messages received by your controller
+will be displayed there.
 
 #### All
 

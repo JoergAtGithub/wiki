@@ -112,7 +112,11 @@ As of release 1.7.x, Mixxx supports the following file formats:
   - FLAC
   - WAV, AIFF
 
-And we're currently working on:
+If your music isn't currently in one of these formats, it won't show up
+in the Mixxx library. You'll need to use a program like Sox or Audacity
+to convert it.
+
+We're currently working on:
 
   - AAC/M4A
 

@@ -22,9 +22,8 @@ Important points:
 
 Steps to get it working:
 
-  - [DM2 Install
-    CD](http://dm2.proboards23.com/index.cgi?board=DM2CD&action=display&thread=207)
-    - The DM2 install CD download, includes the Windows drivers. ([WinXP
+  - You will need both the driver from your original install CD and the
+    update from the Mixman website ([WinXP
     update](http://www.mixman.com/products/dm2_updates.html) (won't work
     without this\!))
   - [MIDIYoke](http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm)

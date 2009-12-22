@@ -83,7 +83,6 @@ Under the Hood Improvements
 
   - [Revamped Control System](Revamped%20Control%20System)
   - SSE Enhanced Engine
-  - n-Deck
   - Timing engine 
   - Rubber Band support
   - BPM detection rework
@@ -92,6 +91,7 @@ New Features
 
   - LADSPA/LV2 Effects
   - [DVS mode](DVS%20mode)
+  - n-Deck
   - External Mixer Mode
   - Incremental Library Enhancements (e.g. inline track previews)
 

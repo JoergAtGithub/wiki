@@ -75,6 +75,26 @@ Features that won't be in 1.8:
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
+### 1.8.5 .. 1.9.0 ?
+
+Release Date: September 2010
+
+Under the Hood Improvements
+
+  - [Revamped Control System](Revamped%20Control%20System)
+  - SSE Enhanced Engine
+  - n-Deck
+  - Timing engine 
+  - Rubber Band support
+  - BPM detection rework
+
+New Features
+
+  - LADSPA/LV2 Effects
+  - [DVS mode](DVS%20mode)
+  - External Mixer Mode
+  - Incremental Library Enhancements (e.g. inline track previews)
+
 ### ???.???
 
 Please don't add new features here unless there is a specification for
@@ -86,8 +106,6 @@ Random ideas for new features:
 
   - [Vector-based GUI](Vector-based%20GUI)
   - [Skinning Engine](Skinning%20Engine)
-  - [DVS mode](DVS%20mode)
-  - [Revamped Control System](Revamped%20Control%20System)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see
     also [Qt
@@ -98,7 +116,6 @@ Random ideas for new features:
   - Macro/script playback
   - Sampler
   - Inline track previews
-  - Rubber Band support
 
 ## Previous Release Roadmaps
 

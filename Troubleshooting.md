@@ -56,23 +56,30 @@ responsiveness. Here are some tips to help you do that.*
 
 We've updated the library Mixxx uses for BPM detection in 1.7.0 so you
 may need to explicitly tell it to recheck your files or just delete your
-library file (mixxxtrack.xml) and it will try to do auto-detection the
-next time you load each song. If you see values half what they should
-be, go into Preferences-\>BPM Detection, and check Allow BPM above the
-range. Click OK, then have Mixxx try to detect it again.
+library file [(see below)](#how-do-i-delete-my-library-file) and it will
+try to do auto-detection the next time you load each song. If you see
+values half what they should be, go into Preferences-\>BPM Detection,
+and check Allow BPM above the range. Click OK, then have Mixxx try to
+detect it again.
 
 ## The library doesn't see new songs
 
 First try clicking Library-\>Rescan library. Then re-sort it (by artist
 name or whatever) by clicking on the column heading. If that doesn't
-help, delete mixxxtrack.xml in your \~/.mixxx or $USERPROFILE$\\Local
-Settings\\Application Data\\Mixxx folder and restart Mixxx.
+help, [delete your library file](#how-do-i-delete-my-library-file) and
+restart Mixxx.
 
 ## How do I delete my library file?
 
-Search your computer for "mixxxtrack.xml" If on Windows, when you go to
-"Find files/folders" make sure to open "Advanced Options" and mark
-"Search Hidden Files/Folders".
+Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
+
+  - Linux: `~/.mixxx`
+  - Windows: `$USERPROFILE$\Local Settings\Application Data\Mixxx`
+  - Mac: '' ''
+
+If you can't find it, search your computer for "mixxxtrack.xml" (If on
+Windows, when you go to "Find files/folders" make sure to open "Advanced
+Options" and mark "Search Hidden Files/Folders".)
 
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 

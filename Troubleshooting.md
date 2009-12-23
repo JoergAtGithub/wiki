@@ -68,6 +68,12 @@ name or whatever) by clicking on the column heading. If that doesn't
 help, delete mixxxtrack.xml in your \~/.mixxx or $USERPROFILE$\\Local
 Settings\\Application Data\\Mixxx folder and restart Mixxx.
 
+## How do I delete my library file?
+
+Search your computer for "mixxxtrack.xml" If on Windows, when you go to
+"Find files/folders" make sure to open "Advanced Options" and mark
+"Search Hidden Files/Folders".
+
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several

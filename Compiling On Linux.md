@@ -40,6 +40,7 @@ BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 If you got the source code from BZR, change to the newly created "mixxx"
 directory, and use scons to compile and install:
 
+    cd 1.7
     cd mixxx
     sudo scons prefix=/usr install
 

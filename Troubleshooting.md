@@ -76,10 +76,13 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
   - Windows: `$USERPROFILE$\Local Settings\Application Data\Mixxx`
   - Linux/Mac OS X/BSD/Unix: `~/.mixxx`
 
-If you can't find it, search your computer for "mixxxtrack.xml" (If on
-Windows, when you go to "Find files/folders" make sure to open "Advanced
-Options" and mark "Search Hidden Files/Folders". You'll need to do the
-equivalent on OSX.)
+If you can't find it, search your computer for "mixxxtrack.xml"
+
+  - If on Windows, when you go to "Find files/folders" make sure to open
+    "Advanced Options" and mark "Search Hidden Files/Folders". You'll
+    need to do the equivalent on OSX.)
+  - If on Mac OSX, press Shift-Command-G or "Go to folder..." command in
+    the Finder's Go menu. Then enter `~/.mixxx/`
 
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 

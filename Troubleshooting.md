@@ -78,7 +78,8 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
 
 If you can't find it, search your computer for "mixxxtrack.xml" (If on
 Windows, when you go to "Find files/folders" make sure to open "Advanced
-Options" and mark "Search Hidden Files/Folders".)
+Options" and mark "Search Hidden Files/Folders". You'll need to do the
+equivalent on OSX.)
 
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 

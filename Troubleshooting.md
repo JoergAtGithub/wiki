@@ -74,7 +74,7 @@ restart Mixxx.
 Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
 
   - Windows: `$USERPROFILE$\Local Settings\Application Data\Mixxx`
-  - Linux/Mac/BSD/Unix: `~/.mixxx`
+  - Linux/Mac OS X/BSD/Unix: `~/.mixxx`
 
 If you can't find it, search your computer for "mixxxtrack.xml" (If on
 Windows, when you go to "Find files/folders" make sure to open "Advanced

@@ -37,7 +37,7 @@ time
 
 cd features\_sqlite/mixxx
 
-\#Install mixxx, this exmaple is optimized for pentium M
+\#Install mixxx, this example is optimized for pentium M
 
   - sudo scons prefix=/usr install optimize=2
 

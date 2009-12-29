@@ -113,3 +113,5 @@ it worked perfectly for me using opensuse 11.0\_x86, kde
   - [Compiling Mixxx on
     Ubuntu 7.10](http://www.transglobal-megacorp.com/doku.php?id=mixxx-compilation)
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)
+  - [Compiling on Ubuntu studio, karmic
+    kernel](Compiling%20on%20Ubuntu%20studio,%20karmic%20kernel)

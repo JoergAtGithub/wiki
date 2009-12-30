@@ -19,7 +19,7 @@ On the following steps you can use synaptic or use apt-get.
 
 CD to the directory where you want to download mixxx and download it:
 
-  - bzr branch lp:\~mixxxdevelopers/mixxx/features\_sqlite
+  - bzr checkout lp:\~mixxxdevelopers/mixxx/features\_sqlite
 
 \--\>Let it download, you can install the following packages at the same
 time

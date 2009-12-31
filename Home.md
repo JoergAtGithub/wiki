@@ -74,6 +74,11 @@ developers, and artists, and is summarized in the categories below.
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
 
+### Interfaces
+
+  - [SoundSource interface (sound
+    proxies)](SoundSource%20interface%20\(sound%20proxies\))
+
 ### Other Resources
 
   - [Threads](Threads)

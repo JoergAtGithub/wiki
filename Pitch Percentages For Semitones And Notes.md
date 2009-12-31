@@ -33,3 +33,20 @@ Controller One.)
 
 There is some margin of error here as I derived this using an electric
 keyboard which had some vibrato, but it's close enough for DJing use.
+
+Note: the exact values can be calculated fairly easily with a
+spreadsheet. Since an octave doubles (or halves) the frequency and there
+are 12 equal steps (semitones), we can find that the frequency is
+multiplied (or divided) by a certain factor
+
+mfact = 12th root of 2 = 2^(1/12) = 1.0594631
+
+So you get
+
+|     |                                |
+| --- | ------------------------------ |
+| A   | 440Hz                          |
+| A\# | 440\*1.059 = 466.2 Hz          |
+| B   | 440\*(1.059\*1.059) = 493.9 Hz |
+
+etc..

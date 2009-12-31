@@ -6,6 +6,8 @@
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
     editors. ( Gedit has a nice dark colour scheme you can pick to use.
     )
+  - [SciTE](http://www.scintilla.org/SciTE.html) light tabbed editor
+    with nice coding features
   - [Meld](http://meld.sourceforge.net/) and
     [Kompare](http://www.caffeinated.me.uk/kompare/) are decent diff
     tools

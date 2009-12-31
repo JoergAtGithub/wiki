@@ -83,11 +83,11 @@ The function must produce stereo, 16bit signed data. Mono files can be
 handled by duplicating the audio data to both channels.  
 The filled SAMPLE\* array would look like this:
 
-|                 |                                            |
-| --------------- | ------------------------------------------ |
-|                 |                                            |
-| L R L R L R ... | for a stereo file, where L or R is 2 bytes |
-| L l L l L l ... | for a mono file, where l is a copy of L.   |
+|                   |                                            |
+| ----------------- | ------------------------------------------ |
+|                   |                                            |
+| `L R L R L R ...` | for a stereo file, where L or R is 2 bytes |
+| `L l L l L l ...` | for a mono file, where l is a copy of L.   |
 
 As ::read gets called an awful lot, performance is paramount. No dynamic
 memory tricks (new, malloc, etc.), no library calls for every sample

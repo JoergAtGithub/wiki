@@ -103,14 +103,17 @@ audio samples. For a 1 minute, 44.1kHz stereo file this would be
 ## int SSX::ParseHeader( TrackInfoObject \* );
 
 This gets called when a file/track is drag-dropped to a player or the
-library.  
-Some work is being done to sanitize the functionality & behaviour.  
+library.
+
+Some work is being done to sanitize the functionality & behaviour.
+
 The function should open the specified track, make sure it is readable,
-attempt to extract tags and set the appropriate objects.  
-"return ERR;" should signal the upper level that the file is invalid or
-unreadable.  
-A file without tags should be readable, and not cause a "return ERR;".  
-  
+attempt to extract tags and set the appropriate objects.
+
+    return ERR; // should signal the upper level that the file is **invalid** or **unreadable**.
+
+A file without tags should be readable, and not cause a "return ERR;".
+
 Tags are set this way:
 
     Track->setTitle(QString(titlestring));
@@ -134,4 +137,5 @@ true:
 
 (so the upper levels therefore only need to call ::ParseHeader once.)
 
-On exit : "return OK;"
+On exit : `return OK; // If the file proved not to be corrupt, even if
+there are no headers present.`

@@ -16,8 +16,7 @@ exit Mixxx.
 ## What's the best hardware DJ controller to use with Mixxx?
 
 The 1.6.0 release has excellent support for the [Hercules DJ Console
-Mk2](http://www.hercules.com/showpage.php?swcty=UK&p=127&b=0&f=0) and
-for [online poker review](http://www.poker-rooms-review.org). The
+Mk2](http://www.hercules.com/showpage.php?swcty=UK&p=127&b=0&f=0). The
 Hercules is a portable little controller with a slick pair of jog wheels
 that's a perfect match for Mixxx. If you're looking for something
 cheaper, the [Hercules DJ Control

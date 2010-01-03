@@ -31,8 +31,8 @@ referred to as MSVC in discussions.
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
   - [Qt 4.5 source for
     Windows](http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip)
-    (Don't get the binary package as it doesn't come with
-    MSVC-compatible libs.)
+    (Qt now provides pre-built Windows libs for VS 2008, so you can get
+    those and skip the steps about building Qt below.)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - An SVN or BZR client like

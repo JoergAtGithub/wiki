@@ -44,6 +44,13 @@ directory, and use scons to compile and install:
     cd mixxx
     sudo scons prefix=/usr install
 
+If you are upgrading, it is recommended to first uninstall the previous
+version of mixxx with the following:
+
+    sudo scons -c install
+
+before compiling as described above.
+
 Strongly recommended: To optimize compilation for the CPU you're on if
 using GCC 4.2 and above, add `tuned=1` to the list of scons options. To
 optimize for another CPU, use `optimize=#` where \# is in the range 1-7:

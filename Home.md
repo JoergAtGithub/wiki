@@ -145,3 +145,4 @@ Additional [SoC Student Info](SoC%20Student%20Info)
     [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
     browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - test

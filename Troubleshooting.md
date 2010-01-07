@@ -83,6 +83,27 @@ If you can't find it, search your computer for "mixxxtrack.xml"
   - If on Mac OSX, press Shift-Command-G or "Go to folder..." command in
     the Finder's Go menu. Then enter `~/.mixxx/`
 
+## No or too few sound cards appear in the preferences dialog
+
+When no sound cards/devices appear in the sound preferences dialog, it
+usually means that another application is using your sound card(s). This
+problem only appears on Linux. To fix it, make sure no other
+applications are using your sound card. The usual culprits are Firefox
+and the esound daemon. Closing Firefox normally will take care of the
+former, and running "killall esd" in a terminal will take care of the
+latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
+and "sudo fuser -v /dev/snd/\*" will show you the list of applications
+currently using your soundcards. If you're using ALSA, you can also
+choose the "default" sound card option which will mix Mixxx's output
+with everything else.
+
+You can also go into your sound manager preferences and change the
+auto-suspend feature to do so after just a second or so. (In KDE Control
+Center, go to Sound & Multimedia, Sound System, then at the bottom of
+the pane, change "Auto-suspend if idle".) This will cause the desktop to
+drop exclusive control of the card sooner so Mixxx can see it on
+startup.
+
 ## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
 
 Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several
@@ -115,27 +136,6 @@ the system board or computer manufacturer, since the manufacturer
 drivers aren't always the latest.) Also, if you're on Windows, make sure
 you have the latest [DirectX](http://www.microsoft.com/directx)
 installed.
-
-## No or too few sound cards appear in the preferences dialog
-
-When no sound cards/devices appear in the sound preferences dialog, it
-usually means that another application is using your sound card(s). This
-problem only appears on Linux. To fix it, make sure no other
-applications are using your sound card. The usual culprits are Firefox
-and the esound daemon. Closing Firefox normally will take care of the
-former, and running "killall esd" in a terminal will take care of the
-latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
-and "sudo fuser -v /dev/snd/\*" will show you the list of applications
-currently using your soundcards. If you're using ALSA, you can also
-choose the "default" sound card option which will mix Mixxx's output
-with everything else.
-
-You can also go into your sound manager preferences and change the
-auto-suspend feature to do so after just a second or so. (In KDE Control
-Center, go to Sound & Multimedia, Sound System, then at the bottom of
-the pane, change "Auto-suspend if idle".) This will cause the desktop to
-drop exclusive control of the card sooner so Mixxx can see it on
-startup.
 
 ## Mixxx freezes, crashes, or otherwise misbehaves and I have an nVidia graphics card
 

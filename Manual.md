@@ -466,6 +466,22 @@ far left/right sides of Mixxx's interface. Headphone cueing is useful
 because it allows a DJ to beatmatch the next song in their headphones
 before bringing it into their mix by sliding the crossfader.
 
+## Recording your mix
+
+You can record Mixxx's master output in real time to a WAV (RIFF) sound
+file by doing the following:
+
+1.  On the menu bar, click "Options"
+2.  Click "Record Mix"
+3.  Choose where to save it and what to call it then click OK
+4.  Mixxx will then wait until you start playing some music before it
+    begins recording. The recording will begin about two seconds after
+    that. (If you want it to get your first sounds, just press Play then
+    Cue (or Pause) to start it, then begin mixing two seconds later. You
+    can remove the initial silence with an audio editing program like
+    [Audacity](http://audacity.sourceforge.net/) after you finish
+    mixing.)
+
 # Keys and Hardware Controllers
 
 ## Keyboard Shortcuts

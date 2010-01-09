@@ -468,8 +468,8 @@ before bringing it into their mix by sliding the crossfader.
 
 ## Recording your mix
 
-You can record Mixxx's master output in real time to a WAV (RIFF) sound
-file by doing the following:
+You can record Mixxx's master output in real time to an uncompressed
+linear PCM WAV (RIFF) sound file by doing the following:
 
 1.  On the menu bar, click "Options"
 2.  Click "Record Mix"

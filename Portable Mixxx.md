@@ -6,6 +6,9 @@ Goal: to make a build option for the Windows target that will allow
 Mixxx to be run from a USB, CD/DVD, network share or other removable
 media type.
 
+**Update:** It looks like another group may have beaten us to it:
+<http://www.winpenpack.com/main/download.php?view.828>
+
 ### TODO:
 
 ``` 

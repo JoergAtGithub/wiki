@@ -36,6 +36,7 @@ may be done already or irrelevant.
 
   - Track section marking with import/export support for DJ Notation
     (<http://www.djnotation.org/>)
+  - Could also be used to mark loops?
   - ~~Split cue/master headphone support~~ - Done: Pre/Main knob
     (\[Master\] headMix MixxxControl)
   - Visual 'track ending' indicator for visual waveform

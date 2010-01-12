@@ -34,6 +34,8 @@ down here so you don't forget.
 Some of these are copied over from the forums and the old wiki, so they
 may be done already or irrelevant.
 
+  - Track section marking with import/export support for DJ Notation
+    (<http://www.djnotation.org/>)
   - ~~Split cue/master headphone support~~ - Done: Pre/Main knob
     (\[Master\] headMix MixxxControl)
   - Visual 'track ending' indicator for visual waveform
@@ -66,6 +68,8 @@ may be done already or irrelevant.
     CDX/HDX/X^2)
   - ~~Remain / played time display switch~~ - Already in
     Preferences-\>Interface-\>Position display
+  - Would be nice if this could be done by just clicking the time field
+    and would not require opening the preferences
   - "Loading" animation for the waveforms
   - Clipping light to stay on (dimmer?) after clipping, reset by
     clicking

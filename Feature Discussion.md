@@ -37,6 +37,12 @@ may be done already or irrelevant.
   - Track section marking with import/export support for DJ Notation
     (<http://www.djnotation.org/>)
   - Could also be used to mark loops?
+  - Feature should be unobtrusive and it should be possible to disable
+    the displaying temporarily
+  - Since the markup will probably not be accurate (especially when
+    using times out of DJ notation) the visualization should not imply
+    it as 100% accurate, this also implies that these markers/sections
+    will not really double as cue points
   - ~~Split cue/master headphone support~~ - Done: Pre/Main knob
     (\[Master\] headMix MixxxControl)
   - Visual 'track ending' indicator for visual waveform

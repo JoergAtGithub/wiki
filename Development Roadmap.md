@@ -31,9 +31,9 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.7.2
+### 1.7.3
 
-Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.2>
+Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.3>
 
 ### 1.8.0
 

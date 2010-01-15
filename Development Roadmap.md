@@ -37,6 +37,8 @@ Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.3>
 
 ### 1.8.0
 
+<https://launchpad.net/mixxx/+milestone/1.8.0>
+
 // Release Schedule //
 
   - Nov 16 2009 -- Feature Freeze
@@ -53,12 +55,9 @@ New main features:
   - Looping
   - New Library
   - True Pitchbend
-
-New auxiliary features: (Will be included if they're done)
-
+  - Multiple MIDI device support
   - Shoutcast
   - M4A support
-  - Multiple MIDI device support
 
 Side Projects
 

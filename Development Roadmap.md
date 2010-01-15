@@ -37,8 +37,6 @@ Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.3>
 
 ### 1.8.0
 
-<https://launchpad.net/mixxx/+milestone/1.8.0>
-
 // Release Schedule //
 
   - Nov 16 2009 -- Feature Freeze
@@ -64,12 +62,6 @@ Side Projects
   - Build Server\!
   - Test Evangelism
   - SConscript Refactor
-
-Features that won't be in 1.8:
-
-  - LADSPA Effects
-  - Timing engine 
-  - BPM detection rework
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 

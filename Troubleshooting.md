@@ -78,8 +78,10 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
 
 If you can't find it, search your computer for "mixxxtrack.xml"
 
-  - If on Windows, when you go to "Find files/folders" make sure to open
-    "Advanced Options" and mark "Search Hidden Files/Folders".
+  - If on Windows, Click Start-\>Run, type `$USERPROFILE$\Local
+    Settings\Application Data\Mixxx` and click OK. (If you want to use
+    "Find files/folders," make sure to open "Advanced Options" and mark
+    "Search Hidden Files/Folders".)
   - If on Mac OSX, press Shift-Command-G or "Go to folder..." command in
     the Finder's Go menu. Then enter `~/.mixxx/`
 

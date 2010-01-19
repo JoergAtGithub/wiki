@@ -94,7 +94,6 @@ Launchpad.
 
 Random ideas for new features:
 
-  - [Vector-based GUI](Vector-based%20GUI)
   - [Skinning Engine](Skinning%20Engine)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see

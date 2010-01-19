@@ -26,6 +26,12 @@ your distribution's package manager:
   - libogg, libvorbis, libvorbisfile
   - libsndfile
 
+To build v1.8, you'll also need these:
+
+  - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
+  - [libmp4](http://www.mpeg4ip.net/) (or
+    [libmp4v2](http://code.google.com/p/mp4v2/))
+
 ## 2\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.

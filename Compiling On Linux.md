@@ -39,7 +39,8 @@ Either grab the source for the latest release from our [downloads
 page](http://www.mixxx.org/download.php), or checkout a snapshot from
 BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 
-    bzr checkout lp:mixxx/1.7
+  - For the latest stable release: `bzr checkout lp:mixxx/1.7`
+  - For trunk: `bzr checkout lp:mixxx`
 
 ## 3\. Compile and install
 

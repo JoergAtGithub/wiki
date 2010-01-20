@@ -69,13 +69,25 @@ greater risk from malicious code.**
 
 ## The BPM detection is wrong
 
-We've updated the library Mixxx uses for BPM detection in 1.7.0 so you
-may need to explicitly tell it to recheck your files or just delete your
-library file [(see below)](#how-do-i-delete-my-library-file) and it will
-try to do auto-detection the next time you load each song. If you see
-values half what they should be, go into Preferences-\>BPM Detection,
-and check Allow BPM above the range. Click OK, then have Mixxx try to
-detect it again.
+We've updated the library Mixxx uses for BPM detection in 1.7 which
+helps. There's also a bug with BPM schemes that's difficult to fix in
+the short term, so here is a workaround in the meantime:
+
+``` 
+ - Open Options->Preferences->BPM Detection
+ - Create or edit a BPM scheme with the range you want & click OK.
+ - Highlight that scheme in the list.
+ - Click the "Default" button. (It's only by doing this that the selected BPM scheme is activated.)
+```
+
+After doing that, you may need to explicitly tell Mixxx to re-analyze
+your files, or you can just delete your library file [(see
+below)](#how-do-i-delete-my-library-file) and it will do auto-detection
+the next time you load each song. If you see values half what they
+should be, go into Preferences-\>BPM Detection, and check Allow BPM
+above the range. Click OK, then have Mixxx try to detect it again.
+(Though you shouldn't need to use that checkbox if you set the scheme
+correctly.)
 
 ## The library doesn't see new songs
 

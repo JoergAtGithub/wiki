@@ -50,9 +50,8 @@ compile process:
   - QT 4.6.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
     the .dmg and install to the default location
-  - Bazaar
-    (\[[http://bazaar-vcs.org/Download|Download](http://bazaar-vcs.org/Download%7CDownload)
-    page\]\]) -- Get the installer for your version of OS X
+  - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
+    installer for your version of OS X
 
 ### 2\. Get Mixxx
 

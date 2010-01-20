@@ -80,3 +80,7 @@ may be done already or irrelevant.
   - "Loading" animation for the waveforms
   - Clipping light to stay on (dimmer?) after clipping, reset by
     clicking
+  - Add a single deck view optimized for track setup (as in setting cue
+    points and loops, potentially beat grid markers once we get some
+    concept of beats with the beat detection feature planned for
+    1.8.5/1.9)

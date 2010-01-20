@@ -128,6 +128,12 @@ currently using your soundcards. If you're using ALSA, you can also
 choose the "default" sound card option which will mix Mixxx's output
 with everything else.
 
+If your system has PulseAudio installed (Ubuntu,) you will want to run
+Mixxx from a console with the following command: `pasuspender mixxx`
+This suspends the PulseAudio daemon and lets it release the sound card
+so Mixxx can take exclusive control. Once Mixxx ends, PulseAudio takes
+the card over again.
+
 You can also go into your sound manager preferences and change the
 auto-suspend feature to do so after just a second or so. (In KDE Control
 Center, go to Sound & Multimedia, Sound System, then at the bottom of

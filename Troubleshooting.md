@@ -119,20 +119,20 @@ If you can't find it, search your computer for "mixxxtrack.xml"
 When no sound cards/devices appear in the sound preferences dialog, it
 usually means that another application is using your sound card(s). This
 problem only appears on Linux. To fix it, make sure no other
-applications are using your sound card. The usual culprits are Firefox
-and the esound daemon. Closing Firefox normally will take care of the
-former, and running "killall esd" in a terminal will take care of the
-latter. If it's still not working, running "sudo fuser -v /dev/dsp\*"
-and "sudo fuser -v /dev/snd/\*" will show you the list of applications
-currently using your soundcards. If you're using ALSA, you can also
-choose the "default" sound card option which will mix Mixxx's output
-with everything else.
+applications are using your sound card. If your system has PulseAudio
+installed (Ubuntu,) you will want to run Mixxx from a console with the
+following command: `pasuspender mixxx` This suspends the PulseAudio
+daemon and lets it release the sound card so Mixxx can take exclusive
+control. Once Mixxx ends, PulseAudio takes the card over again.
 
-If your system has PulseAudio installed (Ubuntu,) you will want to run
-Mixxx from a console with the following command: `pasuspender mixxx`
-This suspends the PulseAudio daemon and lets it release the sound card
-so Mixxx can take exclusive control. Once Mixxx ends, PulseAudio takes
-the card over again.
+If that doesn't help, the usual culprits are Firefox and the esound
+daemon. Closing Firefox normally will take care of the former, and
+running "killall esd" in a terminal will take care of the latter. If
+it's still not working, running "sudo fuser -v /dev/dsp\*" and "sudo
+fuser -v /dev/snd/\*" will show you the list of applications currently
+using your soundcards. If you're using ALSA, you can also choose the
+"default" sound card option which will mix Mixxx's output with
+everything else.
 
 You can also go into your sound manager preferences and change the
 auto-suspend feature to do so after just a second or so. (In KDE Control

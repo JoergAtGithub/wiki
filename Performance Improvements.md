@@ -25,6 +25,17 @@ running as root) does result in priority escalation.
 Linux. See the `rig_realtime` function in
 [rig.c](http://github.com/yadler/xwax-yadler/blob/master/rig.c).)*
 
+## Thread consolidation
+
+As Mixxx's functionality grows and it's extended to work with arbitrary
+numbers of resources, we need to consolidate the work to handle each
+resource into a single thread. This currently needs to be done for:
+
+  - **MIDI Script Engine** - currently one thread per attached
+    controller, need one thread with *n* ScriptEngines in it
+  - **(Caching)Reader** - currently one thread per deck, need one thread
+    with *n* Readers in it
+
 ## CPU
 
 (Anything found that wastes CPU time should be listed here)

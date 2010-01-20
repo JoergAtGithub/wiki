@@ -54,12 +54,16 @@ responsiveness. Here are some tips to help you do that.*
 
 ### All operating systems
 
-Run Mixxx as the root user or a user with administrative privileges.
-This allows Mixxx to increase the priority of its critical threads to
-real-time. This should greatly reduce latency on a busy system.
+As a last resort, run Mixxx as the root user or a user with
+administrative privileges. This allows Mixxx to increase the priority of
+its critical threads to real-time. This should greatly reduce latency on
+a busy system. **Be aware that running as root/admin puts your system at
+greater risk from malicious code.**
 
-  - Linux/OSX: edit limits.conf to allow Mixxx to increase its thread
-    priority, or just run it with `sudo mixxx`
+  - Linux/OSX: edit `/etc/security/limits.conf` and add `<your user
+    name> soft rtprio 99` to allow Mixxx (and other processes you run)
+    to increase their thread priority to maximum, or just run Mixxx from
+    a console with `sudo mixxx`.
 
 ## The BPM detection is wrong
 

@@ -64,10 +64,10 @@ its critical threads to real-time. This should greatly reduce latency on
 a busy system. **Be aware that running as root/admin puts your system at
 greater risk from malicious code.**
 
-  - Linux/OSX: edit `/etc/security/limits.conf` and add `<your user
-    name> soft rtprio 99` to allow Mixxx (and other processes you run)
-    to increase their thread priority to maximum, or just run Mixxx from
-    a console with `sudo mixxx`.
+Alternately and more safely, on Linux/OSX, edit
+`/etc/security/limits.conf` and add `<your user name> soft rtprio 99` to
+allow Mixxx (and other processes you run) to increase their thread
+priority to maximum, or just run Mixxx from a console with `sudo mixxx`.
 
 ## The BPM detection is wrong
 

@@ -28,8 +28,10 @@ responsiveness. Here are some tips to help you do that.*
     distribution that includes one, like
     [64Studio](http://www.64studio.com/) or [Ubuntu
     Studio](http://ubuntustudio.org/). Note that you will need to [set
-    up real-time access](#all-operating-systems) for Mixxx in order to
-    gain any benefit from a real-time kernel.
+    up real-time support (scroll down to "Real-time
+    support")](https://help.ubuntu.com/community/UbuntuStudioPreparation)
+    for audio applications in order to gain any benefit from a real-time
+    kernel.
 
 ### Windows
 

@@ -75,6 +75,7 @@ considered for assembly language reimplementation.)*
   - EngineBufferScale: EngineBufferScaleLinear and EngineBufferScaleST -
     also see
     [features\_hydra](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_hydra)
+  - SoundDevicePortAudio - also ripe for SSE reimplementation
 
 For reference:
 

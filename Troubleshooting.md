@@ -52,6 +52,15 @@ responsiveness. Here are some tips to help you do that.*
   - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
     in the Device Manager (under Control Panel-\>System-\>Hardware.)
 
+### All operating systems
+
+Run as the root user or a user with administrative privileges. This
+allows Mixxx to increase the priority of its critical threads to
+real-time. This should greatly reduce latency on a busy system.
+
+  - Linux/OSX: edit limits.conf to allow Mixxx to increase its thread
+    priority, or just run it with `sudo mixxx`
+
 ## The BPM detection is wrong
 
 We've updated the library Mixxx uses for BPM detection in 1.7.0 so you

@@ -65,7 +65,7 @@ Side Projects
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
-### 1.8.5 .. 1.9.0 ?
+### 1.9.0 .. 1.10.0 ?
 
 Release Date: September 2010
 

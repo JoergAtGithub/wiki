@@ -23,11 +23,13 @@ responsiveness. Here are some tips to help you do that.*
     difference on a test system with integrated Intel soundcard.) The
     drawback to this is that system sounds (KDE beeps and such) will now
     be mixed in and will come out the main output.
-  - As a last resort, you can try using a [real-time
+  - You can also try using a [real-time
     kernel](http://pkg-freebob.alioth.debian.org/lowlat.html) or a
     distribution that includes one, like
     [64Studio](http://www.64studio.com/) or [Ubuntu
-    Studio](http://ubuntustudio.org/).
+    Studio](http://ubuntustudio.org/). Note that you will need to [set
+    up real-time access](#all-operating-systems) for Mixxx in order to
+    gain any benefit from a real-time kernel.
 
 ### Windows
 

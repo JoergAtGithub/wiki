@@ -21,8 +21,9 @@ regular user on Linux shows that the priority range is from 0 to 0, and
 as root from 1 to 99, but it is set to 1 (the lowest) by default.
 However, calling `setPriority(QThread::TimeCriticalPriority)` (while
 running as root) does result in priority escalation.
-*([xwax](http://www.xwax.co.uk/) has been able to solve this problem,
-and a request for further information as to how is pending.)*
+*([xwax](http://www.xwax.co.uk/) has been able to solve this problem on
+Linux. See the `rig_realtime` function in
+[rig.c](http://github.com/yadler/xwax-yadler/blob/master/rig.c).)*
 
 ## CPU
 

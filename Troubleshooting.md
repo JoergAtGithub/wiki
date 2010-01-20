@@ -54,8 +54,8 @@ responsiveness. Here are some tips to help you do that.*
 
 ### All operating systems
 
-Run as the root user or a user with administrative privileges. This
-allows Mixxx to increase the priority of its critical threads to
+Run Mixxx as the root user or a user with administrative privileges.
+This allows Mixxx to increase the priority of its critical threads to
 real-time. This should greatly reduce latency on a busy system.
 
   - Linux/OSX: edit limits.conf to allow Mixxx to increase its thread

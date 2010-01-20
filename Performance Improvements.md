@@ -4,6 +4,26 @@ Here we enumerate all of the areas where Mixxx can be optimized, roughly
 in order of importance. The more things we can complete on this list,
 the more machines Mixxx can run on, and the larger our user base.
 
+## Thread scheduling
+
+The most important thread is the audio callback thread. If this misses
+its deadline (the latency period,) pops and clicks can be heard in the
+output. As a result, it needs real-time priority, preferably with a hard
+deadline matching the latency period. (And we need to make sure it runs
+as succinctly and efficiently as possible so it can complete its work
+within the latency period (which can ideally be as low as 1ms.) Taking
+any longer would be shooting itself in the foot.)
+
+**TO DO: Ensure the audio callback thread gets real-time priority when
+run as a regular user.** - RJ discovered that Mixxx's requests for
+real-time priority on this thread are having no effect. Running as a
+regular user on Linux shows that the priority range is from 0 to 0, and
+as root from 1 to 99, but it is set to 1 (the lowest) by default.
+However, calling `setPriority(QThread::TimeCriticalPriority)` (while
+running as root) does result in priority escalation.
+*([xwax](http://www.xwax.co.uk/) has been able to solve this problem,
+and a request for further information as to how is pending.)*
+
 ## CPU
 
 (Anything found that wastes CPU time should be listed here)
@@ -47,8 +67,13 @@ the more machines Mixxx can run on, and the larger our user base.
 *(Please list all time-critical code sections/functions here to be
 considered for assembly language reimplementation.)*
 
-  - EQ code
-  - EngineBufferScale: EngineBufferScaleLinear and EngineBufferScaleST
+  - EQ code - SSE-enhanced implementation is in progress in the
+    [features\_hydra
+    branch](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_hydra)
+    (unfortunately it wasn't given its own.)
+  - EngineBufferScale: EngineBufferScaleLinear and EngineBufferScaleST -
+    also see
+    [features\_hydra](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_hydra)
 
 For reference:
 

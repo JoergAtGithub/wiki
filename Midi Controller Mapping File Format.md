@@ -400,6 +400,12 @@ it's either on (non-zero) or off (zero.)
 |  | \[Channel*N*\]     |  | VuMeter                      |  | default        |  | Outputs the current instantaneous channel volume                                                     |  | Channel meter                                             |  |
 |  | \[Channel*N*\]     |  | wheel                        |  | \-3.0..3.0     |  | Affects relative play speed & direction persistently (additive offset & must manually be undone)     |  | Waveform                                                  |  |
 
+**And coming up in v1.8:**
+
+|  |               |  |                 |  |           |  |                  |  |                        |  |
+|  | ------------- |  | --------------- |  | --------- |  | ---------------- |  | ---------------------- |  |
+|  | **\[Group\]** |  | **Key/Control** |  | **Range** |  | **What it does** |  | **On-screen feedback** |  |
+
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.
 

@@ -71,7 +71,7 @@ tag:
 
 You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
-at Mixxx start-up.
+when the controller is activated.
 
 ### Init and Shutdown functions
 
@@ -151,7 +151,8 @@ engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 
 You can send three-byte "short" messages and arbitrary-length
 system-exclusive "long" ones. Together, these cover virtually all types
-of MIDI messages you would need to send.
+of MIDI messages you would need to send. (This is how you light LEDs,
+change displays, etc.)
 
 For short messages:
 
@@ -221,35 +222,116 @@ Up to this point, script functions are only called in response to the
 controller being manipulated. They can also be called automatically in
 response to some value changing within Mixxx, such as when you use the
 mouse to move the channel volume slider, you want the LEDs on the
-controller to react.
+controller to react. Here are the related functions:
 
-Mixxx control signals are connected to script functions with
-`engine.connectControl(<control group>,<control name>,<script function
-name>)`. They are disconnected with `engine.connectControl(<control
-group>,<control name>,<script function name>,true)`. (Just tack a
-`,true` on to the list of parameters.) connectControl() returns true if
-the (dis)connection was successful.
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function name*) - This connects the specified Mixxx control signal
+    to the specifed script function. It returns true if the connection
+    was successful.
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function name*, **true**) - Tacking a `,true` on to the list of
+    parameters disconnects the specified Mixxx control signal from the
+    specified script function. It returns true if the disconnection was
+    successful.
+  - **engine.trigger**(*control group*, *control name*) - An easy way to
+    cause the specified Mixxx control signal to fire so the connected
+    script function is called with the updated value, such as when
+    updating LEDs. (It just sets the Mixxx control to its previous
+    value.)
 
-So to connect the volume of the current virtual deck to a function
-called SuperController.volumeLEDs, do:
+#### Examples
+
+To connect the volume of the current virtual deck to a function called
+SuperController.volumeLEDs, do:
 
 ``` javascript
 engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs");
 ```
 
-A function is also provided as an easy way to get a connected Mixxx
-control signal to fire so the device's LEDs update (such as when
-changing modes or decks.) It just sets the Mixxx control to its previous
-value. This is done with `engine.trigger(<control group>,<control
-name>)`. So to force the above-mentioned volumeLEDs to sync up, just do:
+To force the above-mentioned volume LEDs to sync up, just do:
 
 ``` javascript
 engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
 ```
 
+If you change what the volume LEDs represent (like when switching
+modes,) you would disconnect the Mixxx "volume" control from them like
+this:
+
+``` javascript
+engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs",true);
+```
+
 ### Timed reactions
 
-Coming soon for Mixxx 1.8\!
+*Coming in v1.8*
+
+Sometimes you need to be able to do things at certain time intervals
+regardless of whether the controller is manipulated or something changes
+in Mixxx. Timed reactions let you do just that with 20ms resolution.
+Here are the functions:
+
+  - **engine.beginTimer**(*milliseconds*, `"function"`) - Starts a timer
+    that will call the specified script function (with parameters if
+    desired) repeatedly every time the given number of milliseconds
+    (1/1000 second) pass. It returns an ID number for the timer (0 on
+    failure) that you'll want to store in a variable so you can stop it
+    later. Note that the function must be enclosed in quotes.
+  - **engine.stopTimer**(*timer ID*) - Stops the specified timer.
+
+You can create and stop timers as much as you like but be aware that the
+operating system has limits on the number of timers it will allow, so
+remember to stop them as soon as you're done with them. (Not to mention
+that overall performance decreases as the number and/or frequency of
+timers increase.)
+
+**NEVER use busy-wait loops\!** (Loops that do nothing but delay. They
+can cause Mixxx to stutter.) **Always use a timer instead\!**
+
+#### Examples
+
+To start a timer to flash LEDs on a controller 4 times per second
+(250ms) and store the ID in an array for later you would do:
+
+``` javascript
+SuperController.timer[0] = engine.beginTimer(250,"SuperController.flash()");
+```
+
+When the LEDs need to stop flashing, just do:
+
+``` javascript
+engine.stopTimer(SuperController.timer[0]);
+```
+
+To create a **one-shot timer** (fires only once,) you simply call
+`engine.stopTimer` in the target function. This example causes an LED to
+light up red one second after the beginTimer call: (Note the escaped
+quotes in the target function call.)
+
+``` javascript
+...
+SuperController.timer["LED1"] = engine.beginTimer(1000,"SuperController.lightUp(\"red\")");
+...
+
+SuperController.lightUp = function (color) {
+
+    engine.stopTimer(SuperController.timer["LED1"]);
+
+    switch (color) {
+        case "red": 
+            midi.sendShortMsg(0x90,0x01,0x01);
+            break;
+        case "green": 
+            midi.sendShortMsg(0x90,0x01,0x02);
+            break;
+        default:
+            print("Warning: no color specified, using blue");
+            midi.sendShortMsg(0x90,0x01,0x03);
+            break;
+    }
+}
+...
+```
 
 ### Object prototype enhancements
 
@@ -263,10 +345,10 @@ midi-mappings-scripts.js file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
-  - **secondstominutes**(seconds) - Returns the given quantity of
+  - **secondstominutes**(*seconds*) - Returns the given quantity of
     seconds in `MM:SS` format.
-  - **msecondstominutes**(milliseconds) - Returns the given quantity of
-    milliseconds in `MM:SS.ss` format.
+  - **msecondstominutes**(*milliseconds*) - Returns the given quantity
+    of milliseconds in `MM:SS.ss` format.
   - **script.debug**(channel, control, value, status) - Prints the
     values as passed to it. Call this from anywhere in your function to
     see what the current values of these variables are. You can also of
@@ -280,14 +362,15 @@ midi-mappings-scripts.js file:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
     value, status));`
   - **script.absoluteSlider**(group, key, value, low, high) - Takes a
-    value from an absolute control (0..127,) calculates the
-    proportionate value between *low* and *high*, and sets the given
-    Mixxx control group & key with that value.
+    value from an absolute control (0..127) and returns the
+    proportionate value between *low* and *high* for a linear Mixxx
+    control like deck volume or LFO depth. You can then use this
+    returned value to set the desired Mixxx control.
   - **script.absoluteNonLin**(value, low, mid, high) - Takes a value
     from an absolute control (0..127) and returns the proportionate
     value between *low*, *mid* and *high* for a non-linear Mixxx control
-    such as EQ or volume knobs. You can then use this returned value to
-    set Mixxx controls.
+    such as EQ or master volume. You can then use this returned value to
+    set the desired Mixxx control.
 
 <!-- end list -->
 

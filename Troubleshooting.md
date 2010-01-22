@@ -116,14 +116,18 @@ If you can't find it, search your computer for "mixxxtrack.xml"
 
 ## No or too few sound cards appear in the preferences dialog
 
-When no sound cards/devices appear in the sound preferences dialog, it
-usually means that another application is using your sound card(s). This
-problem only appears on Linux. To fix it, make sure no other
-applications are using your sound card. If your system has PulseAudio
-installed (Ubuntu,) you will want to run Mixxx from a console with the
-following command: `pasuspender mixxx` This suspends the PulseAudio
-daemon and lets it release the sound card so Mixxx can take exclusive
-control. Once Mixxx ends, PulseAudio takes the card over again.
+*This also applies for the **"Audio device could not be opened"**
+error.*
+
+When no sound cards/devices appear in the sound preferences dialog or
+you get the "Audio device could not be opened" error, it usually means
+that another application is using your sound card(s). This problem only
+appears on Linux. To fix it, make sure no other applications are using
+your sound card. If your system has PulseAudio installed (Ubuntu,) you
+will want to run Mixxx from a console with the following command:
+`pasuspender mixxx` This suspends the PulseAudio daemon and lets it
+release the sound card so Mixxx can take exclusive control. Once Mixxx
+ends, PulseAudio takes the card over again.
 
 If that doesn't help, the usual culprits are Firefox and the esound
 daemon. Closing Firefox normally will take care of the former, and

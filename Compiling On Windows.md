@@ -29,10 +29,10 @@ referred to as MSVC in discussions.
     You just need the vcsetup.exe file.
   - [Microsoft Platform SDK 2003
     R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
-  - [Qt 4.5 source for
-    Windows](http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip)
-    (Qt now provides pre-built Windows libs for VS 2008, so you can get
-    those and skip the steps about building Qt below.)
+  - [Qt source for
+    Windows](http://qt.nokia.com/downloads/windows-cpp-vs2008) (Qt now
+    provides pre-built Windows libs for VS 2008, so you can get those
+    and skip the steps about building Qt below.)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - An SVN or BZR client like
@@ -108,7 +108,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     * x64 C++ compiler
     * Debugging tools (optional, but recommended for troubleshooting)
     * Win32 Development Tools (I don't think you need this, but I'm not sure. I installed it just incase.)
-* [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.0.zip|Qt 4.5 source for Windows]]
+* [[http://qt.nokia.com/downloads/windows-cpp-vs2008|Qt source for Windows]]
 * [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires 64-bit OS,) otherwise you'll have to manually specify which version you want to build
 * [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the 64-bit Python and follow the piece-of-cake instructions in the README
 * An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
@@ -414,7 +414,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 ``` 
     * Might need stuff from [[http://www.esnips.com/web/MinGW64?docsPage=1#files|here]] as well
 * [[http://www.qtsoftware.com/downloads/qt-creator-binary-for-windows|Qt Creator for Windows]] (32-bit but works fine)
-* [[http://get.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip|Qt 4.5 source for Windows]]
+* [[http://qt.nokia.com/downloads/windows-cpp-vs2008|Qt source for Windows]]
 * An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>

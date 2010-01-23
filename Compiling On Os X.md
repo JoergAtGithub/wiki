@@ -50,6 +50,8 @@ compile process:
   - libmp4v2 ([Download](http://resare.com/libmp4v2)) or port mp4v2
   - portmidi
     ([Download](http://sourceforge.net/apps/trac/portmedia/wiki/portmidi)
+  - faad2 ([Download](http://sourceforge.net/projects/faac/)) or port
+    faad2
   - QT 4.6.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
     the .dmg and install to the default location

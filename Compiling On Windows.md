@@ -1,4 +1,4 @@
-*(If you're looking to build the dependencies, [go to this
+*(If you're looking to build the dependencies including Qt, [go to this
 page](Build%20Windows%20dependencies).)*
 
 *(If you're looking to make an installable release, [go to this
@@ -33,9 +33,20 @@ referred to as MSVC in discussions.
     Windows](http://qt.nokia.com/downloads/windows-cpp-vs2008)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
-  - An SVN or BZR client like
-    [TortoiseSVN](http://tortoisesvn.net/downloads) or [Bazaar w/
+  - A Bazaar client like [Bazaar w/
     TortoiseBZR](http://bazaar-vcs.org/Download)
+
+<!-- end list -->
+
+1.  Prepare build environment
+
+<!-- end list -->
+
+  - Add to or create the following system environment variables
+    ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
+    adjusting the paths to match where you actually installed the
+    above:`QTDIR = C:\qt-windows-4.6.1
+    PATH = C:\qt-windows-4.6.1\bin;C:\Python26;C:\Python26\Scripts`
 
 <!-- end list -->
 
@@ -43,22 +54,28 @@ referred to as MSVC in discussions.
 
 <!-- end list -->
 
-  - Checkout the mixxx repository:
+  - Checkout the mixxx repository: with TortoiseBZR, right-click in the
+    folder you want to checkout to, choose Bazaar Checkout/Branch... and
+    enter the following source: `lp:mixxx`
 
 <!-- end list -->
 
-``` 
-    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
-    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
-- Build Mixxx:
-  - Start the command prompt and change into the "mixxx" subdirectory of the checkout directory. (E.g. trunk\mixxx)
-  - Type ''setenv /xp /x86 /release'' and hit Enter.
-  - Type ''scons'' and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
-    * Add ''msvcdebug=1'' to build the debug version (with console output window.)
-    * Add ''win32=1'' if you're on a 64-bit platform with 64-bit Python installed, otherwise it will try to build the x64 version of Mixxx.
-- Run it: When Mixxx is done compiling, run mixxx.exe in the "mixxx/dist/" directory.
-- (Optional) If you'd like to generate a MSVC project for use with Visual Studio, run "scons qtdir=C:\qt\4.5.0 msvc", and open the newly generated "mixxx.vcproj" file with Visual Studio.
-```
+1.  Build Mixxx:
+    1.  Start the command prompt and change into the "mixxx"
+        subdirectory of the checkout directory. (E.g. trunk\\mixxx)
+    2.  Type `setenv /xp /x86 /release` and hit Enter.
+    3.  Type `scons` and press Enter. (You may need to use `scons.bat`
+        instead of just `scons`.)
+          - Add `msvcdebug=1` to build the debug version (with console
+            output window.)
+          - Add `win32=1` if you're on a 64-bit platform with 64-bit
+            Python installed, otherwise it will try to build the x64
+            version of Mixxx.
+2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
+    "mixxx/dist/" directory.
+3.  (Optional) If you'd like to generate a MSVC project for use with
+    Visual Studio, run "scons msvc", and open the newly generated
+    "mixxx.vcproj" file with Visual Studio.
 
 ## Build the 64-bit version using Microsoft Visual Studio Express
 
@@ -89,40 +106,22 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     * x64 C++ compiler
     * Debugging tools (optional, but recommended for troubleshooting)
     * Win32 Development Tools (I don't think you need this, but I'm not sure. I installed it just incase.)
-* [[http://qt.nokia.com/downloads/windows-cpp-vs2008|Qt source for Windows]]
+* [[http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.6.1.zip|Qt source for Windows]]
 * [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires 64-bit OS,) otherwise you'll have to manually specify which version you want to build
 * [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the 64-bit Python and follow the piece-of-cake instructions in the README
-* An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
+* A Bazaar client like [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
 ```
 
-QTDIR = C:\\qt\\qt-win-opensource-src-4.5.0 PATH =
-C:\\qt\\qt-win-opensource-src-4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
+QTDIR = C:\\qt-everywhere-opensource-src-4.6.1 PATH =
+C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ``` 
   - Follow the instructions [[http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html|on this page]] to configure VS C++ to use the x64 compiler, includes, and libs
-- Tweak the Qt configuration
-  - Edit qt-win-opensource-src-4.5.0\mkspecs\win32-msvc2008\qmake.conf:
-    - Add to QMAKE_CFLAGS: /favor:blend (for all x64 CPUs, or use AMD64 or EM64T if you want to target), also add /MP if you have more than one processor/core
-    - Add to QMAKE_LFLAGS: /MACHINE:X64 (or IA64)
-    - (optional) Add -Ox to QMAKE_CFLAGS_RELEASE for extra optimizations
-  - Edit qt-win-opensource-src-4.5.0\qmake\makefile.win32:
-    - add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,) and -Ox for more speed if you want
-    - add to LFLAGS: /MACHINE:X64 (or IA64)
-  - To avoid building the examples and demos (you don't need them and it saves ALOT of time,) edit qt-win-opensource-src-4.5.0\projects.pro:
-    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file. In fact, you only need "libs" if you want to save even more time.
-- Build Qt
-  - Start the SDK command prompt (Start->Microsoft Windows SDK->CMD Shell)
-  - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
-  - Type ''cd %QTDIR%'' and hit Enter.
-  - Type ''configure -platform win32-msvc2008 -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
-  - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
-    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
+- Build Qt. [[http://mixxx.org/wiki/doku.php/build_windows_dependencies#qt|Click here for details.]]
 - Get the Mixxx source code
-* Checkout the mixxx repository:
-    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
-    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+* Checkout the mixxx repository: with TortoiseBZR, right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.

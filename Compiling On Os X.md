@@ -47,6 +47,7 @@ compile process:
     (don't try to compile the source directly, you'll need to mess with
     the ld(1) options and just don't, there's enough nuisances in this
     process))
+  - libmp4v2 ([Download](http://resare.com/libmp4v2))
   - QT 4.6.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
     the .dmg and install to the default location

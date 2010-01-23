@@ -16,18 +16,9 @@ x64,) here are the steps:
 ### Prepare build environment
 
 ``` 
-  - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed the above:<code>
-```
-
-QTDIR = C:\\qt-everywhere-opensource-src-4.6.1 PATH =
-C:\\Python26;C:\\Python26\\Scripts\</code\>
-
-``` 
-  - To avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,):
-    * For Qt 4.5: edit ''C:\qt-win-opensource-src-4.5.3\projects.pro'', remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
-    * For Qt 4.6: issue ''SET QT_BUILD_PARTS=LIBS'' (and whatever other parts you want) at the command prompt before running configure
-  - Tweak the Qt configuration: (Optional)
-    - Edit ''qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':
+  - If using Qt 4.5 & below, to avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,) edit ''C:\qt-win-opensource-src-4.5.3\projects.pro'', remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
+  - Tweak the Qt configuration: (optional)
+    - Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':
       - If you have more than one processor/core, add ''/MP'' to ''QMAKE_CFLAGS''.
       - Add -Ox to ''QMAKE_CFLAGS_RELEASE'' for extra optimizations
 ```
@@ -75,8 +66,9 @@ If you want to link Qt against Agner Fog's optimized
 * 64-bit: 
     - Start the Visual Studio command prompt (Start->Microsoft Windows SDK->CMD Shell)
     - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
-  - Type ''cd %QTDIR%'' and hit Enter.
-  - Type ''configure -opensource -platform win32-msvc2008 -ltcg -plugin-sql-sqlite -no-webkit''
+  - Type ''cd C:\qt-everywhere-opensource-src-4.6.1'' (or wherever you unpacked Qt) and hit Enter.
+  - Type ''SET QT_BUILD_PARTS=LIBS'' (and add whatever other parts you want) and hit Enter.
+  - Type ''configure -opensource -platform win32-msvc2008 -ltcg -plugin-sql-sqlite -no-webkit'' and press Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
     * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
 ```

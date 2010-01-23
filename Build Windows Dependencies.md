@@ -6,6 +6,78 @@ page](compiling_on_windows), and if you want to build x64 versions with
 the free Visual Studio Express, that you've done [this
 hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html).
 
+## Qt
+
+Qt now provides pre-built binaries for Windows for the minGW and MSVC
+2008 compilers. But if you want to build it from source yourself for
+whatever reason, here are the steps:
+
+### Prepare build environment
+
+``` 
+  - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed the above:<code>
+```
+
+QTDIR = C:\\qt\\4.5.0 PATH =
+C:\\qt\\4.5.0\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
+
+``` 
+  - To avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,) edit C:\qt\4.5.0\projects.pro:
+    * Remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
+```
+
+### 32-bit build
+
+``` 
+  - Start the Visual Studio command prompt (Start->Microsoft C++ Visual Studio->Visual Studio Tools->Visual Studio Command Prompt)
+  - Type ''setenv /xp /x86 /release'' and hit Enter. (The /x86 is for those on x64 OSs to make sure it targets 32-bit platforms.)
+  - Type ''cd %QTDIR%'' and hit Enter.
+  - Type ''configure -no-webkit'' and for more optimization, add ''-mmx -3dnow -sse -sse2'' & hit Enter.
+  - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
+    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
+```
+
+### 64-bit build
+
+1.  Prepare build environment (additional steps)
+    1.  Follow the instructions [on this
+        page](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
+        to configure VS C++ to use the x64 compiler, includes, and libs
+2.  Tweak the Qt configuration
+    1.  Edit
+        qt-win-opensource-src-4.5.0\\mkspecs\\win32-msvc2008\\qmake.conf:
+        1.  Add to QMAKE\_CFLAGS: /favor:blend (for all x64 CPUs, or use
+            AMD64 or EM64T if you want to target), also add /MP if you
+            have more than one processor/core
+        2.  Add to QMAKE\_LFLAGS: /MACHINE:X64 (or IA64)
+        3.  (optional) Add -Ox to QMAKE\_CFLAGS\_RELEASE for extra
+            optimizations
+    2.  Edit qt-win-opensource-src-4.5.0\\qmake\\makefile.win32:
+        1.  add to CFLAGS: /favor:blend (or AMD64 or EM64T as above,)
+            and -Ox for more speed if you want
+        2.  add to LFLAGS: /MACHINE:X64 (or IA64)
+    3.  To avoid building the examples and demos (you don't need them
+        and it saves ALOT of time,) edit
+        qt-win-opensource-src-4.5.0\\projects.pro:
+          - Remove "examples" and "demos" from QT\_BUILD\_PARTS toward
+            the top of the file. In fact, you only need "libs" if you
+            want to save even more time.
+3.  Build Qt
+    1.  Start the SDK command prompt (Start-\>Microsoft Windows
+        SDK-\>CMD Shell)
+    2.  Type `setenv /xp /x64 /release` (or `/ia64`) and hit Enter.
+    3.  Type `cd %QTDIR%` and hit Enter.
+    4.  Type `configure -platform win32-msvc2008 -no-webkit` and for
+        more optimization, add `-mmx -3dnow -sse -sse2` & hit Enter.
+    5.  When it finishes (about 5-10 minutes,) just type `nmake` and
+        press Enter and you should be good (takes 1\~3 hours.)
+          - If you get `<sdkdir>\winnt.h(1831) : error C2733: second C
+            linkage of overloaded function '_interlockedbittestandset'
+            not allowed` then edit \<sdkdir\>\\VC\\INCLUDE\\intrin.h and
+            change the definition of `_interlockedbittestandset` and
+            `_interlockedbittestandreset` to `long volatile *` Do
+            `nmake` again and it should finish fine.
+
 ## libsndfile
 
 [libsndfile](http://www.mega-nerd.com/libsndfile/) fortunately provides
@@ -382,4 +454,36 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
     faad2-2.7\libfaad\include\neaacdec.h
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib
+    `
+
+## libmp4v2
+
+[MP4V2](http://code.google.com/p/mp4v2/) provides MSVC solution files,
+which makes things nice. Just open and build. (Step-by-step is given
+below.)
+
+### Build - WIP
+
+1.  Start the platform SDK command prompt (Start→Microsoft Windows
+    SDK→CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `libmad-0.15.1b\msvc++\libmad.dsp` file via
+    File-\>Open-\>Project/Solution.
+5.  Answer 'Yes' to convert & open the project
+6.  Choose the Release configuration and the Win32 platform
+7.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+8.  Press F7 to build. (You can cancel the .sln save dialog if you want
+    and it will still build.)
+9.  When it finishes, copy the following files into `mixxx-winlib` or
+    `mixxx-win64lib`: `libmad-0.15.1b\mad.h
+    libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
     `

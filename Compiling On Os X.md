@@ -54,7 +54,9 @@ compile process:
     faad2
   - QT 4.6.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
-    the .dmg and install to the default location
+    the .dmg and install to the default location, for snow leopard make
+    sure to grab the [64bit cocoa
+    version](http://get.qt.nokia.com/qt/source/qt-mac-cocoa-opensource-4.6.1.dmg)
   - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
     installer for your version of OS X
 

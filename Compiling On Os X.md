@@ -35,7 +35,7 @@ compile process:
   - [PortAudio-v19](http://www.portaudio.com) -- \`./configure && sudo
     make install\`
   - fftw3 ([Download page](http://www.fftw.org/download.html)) --
-    \`./configure && sudo make install\`
+    \`./configure && sudo make install\` or port fftw-3
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download)) --
     \`./configure && sudo make install\`
@@ -47,7 +47,7 @@ compile process:
     (don't try to compile the source directly, you'll need to mess with
     the ld(1) options and just don't, there's enough nuisances in this
     process))
-  - libmp4v2 ([Download](http://resare.com/libmp4v2))
+  - libmp4v2 ([Download](http://resare.com/libmp4v2)) or port mp4v2
   - QT 4.6.0+ ([Download
     page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
     the .dmg and install to the default location

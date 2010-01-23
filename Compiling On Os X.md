@@ -28,19 +28,20 @@ compile process:
     guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --
     if you have darwinports and have already installed its version of
     python then \`sudo port install scons\` is also a reasonable way to
-    get this installed
+    get this installed or port scons
   - libid3tag, libmad ([Download
     page](http://sourceforge.net/project/showfiles.php?group_id=12349))
-    -- \`./configure && sudo make install\`
+    -- \`./configure && sudo make install\` or port libid3tag/libmad
   - [PortAudio-v19](http://www.portaudio.com) -- \`./configure && sudo
-    make install\`
+    make install\` or port portaudio
   - fftw3 ([Download page](http://www.fftw.org/download.html)) --
     \`./configure && sudo make install\` or port fftw-3
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download)) --
-    \`./configure && sudo make install\`
+    \`./configure && sudo make install\` or port libsndfile
   - libogg, libvorbis ([Download page](http://xiph.org/downloads/)) --
-    \`./configure && sudo make install\`
+    \`./configure && sudo make install\` or when using port already
+    covered by previous ports
   - libFLAC ([Overchan Download
     page](http://flac.sourceforge.net/download.html), [Download
     Page](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)

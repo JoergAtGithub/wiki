@@ -457,7 +457,7 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
 which makes things nice. Just open and build. (Step-by-step is given
 below.)
 
-### Build - WIP
+### Build
 
 1.  Start the platform SDK command prompt (Start→Microsoft Windows
     SDK→CMD Shell)
@@ -467,17 +467,19 @@ below.)
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-4.  Open the `libmad-0.15.1b\msvc++\libmad.dsp` file via
+4.  Open the `mp4v2-1.9.1\vstudio9.0\libmp4v2\libmp4v2.vcproj` file via
     File-\>Open-\>Project/Solution.
-5.  Answer 'Yes' to convert & open the project
-6.  Choose the Release configuration and the Win32 platform
-7.  If building for x64
+5.  Choose the Release configuration and the Win32 platform
+6.  If building for x64
     1.  Go to Build-\>Configuration manager
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
     4.  Choose Release on the left, x64 on the right and click Close.
-8.  Press F7 to build. (You can cancel the .sln save dialog if you want
-    and it will still build.)
+7.  Tune the project settings to your liking
+    1.  Right-click the libmp4v2 project and click Properties.
+    2.  Under Configuration Properties, Linker, Debugging, set Generate
+        Debug Info to No.
+8.  Right click `libmp4v2` and click Build.
 9.  When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`: `libmad-0.15.1b\mad.h
     libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)

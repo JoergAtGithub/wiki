@@ -501,3 +501,9 @@ optimized [ASMLIB](http://agner.org/optimize/), do the following:
     2.  Choose "Library files" on the right and add the path to the
         ASMLIB directory you set above, e.g. `C:\asmlib`
     3.  Click OK.
+4.  After opening the project/solution file, right-click each project,
+    Choose Properties and do:
+    1.  Configuration Properties-\>C/C++-\>Optimization: Set Enable
+        Intrinsic Functions to **No**.
+    2.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
+        (or `alibcof32o.lib` for 32-bit) to "Additional Dependencies"

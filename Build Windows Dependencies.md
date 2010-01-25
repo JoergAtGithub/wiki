@@ -1,4 +1,4 @@
-# Notes for building Mixxx's dependencies on Windows
+# Building Mixxx's dependencies on Windows
 
 We assume you've installed and configured Visual Studio Express and the
 Microsoft Platform SDK as described in steps 1 & 2 [on this
@@ -485,3 +485,19 @@ below.)
     (rename to mp4v2.dll)
     mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib (rename to mp4v2.lib)
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
+
+# Linking with ASMLIB
+
+If you want to link any of the VC++ projects against Agner Fog's
+optimized [ASMLIB](http://agner.org/optimize/), do the following:
+
+1.  Download the latest copy of the library from
+    [here](http://agner.org/optimize/asmlib.zip)
+2.  Unzip it to a directory of your choice, say `C:\asmlib`
+3.  Once you've started the VC++ IDE, Go to Tools-\>Options-\>Projects
+    and Solutions-\>VC++ Directories
+    1.  Choose "Include files" on the right and add the path to the
+        ASMLIB directory you set above, e.g. `C:\asmlib`
+    2.  Choose "Library files" on the right and add the path to the
+        ASMLIB directory you set above, e.g. `C:\asmlib`
+    3.  Click OK.

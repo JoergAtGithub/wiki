@@ -19,7 +19,7 @@ On the following steps you can use synaptic or use apt-get.
 
 CD to the directory where you want to download mixxx and download it:
 
-  - bzr checkout lp:\~mixxxdevelopers/mixxx/features\_sqlite
+  - bzr co lp:mixxx
 
 \--\>Let it download, you can install the following packages at the same
 time
@@ -32,12 +32,13 @@ time
   - sudo apt-get build-dep mixxx \#download mixxx dependencies
   - sudo apt-get install libmp4v2-dev
   - sudo apt-get install libfaad-dev
+  - sudo apt-get libportmidi-dev \#\<- PortTime dev header, for v1.8
 
-\#go into folder downloaded by bazaar
+\#on the folder downloaded by bzr, go into this directory:
 
-cd features\_sqlite/mixxx
+cd /mixxx/mixxx
 
-\#Install mixxx, this example is optimized for pentium M
+\#Compile mixxx, this example is optimized for pentium M
 
   - sudo scons prefix=/usr install optimize=2
 

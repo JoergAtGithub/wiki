@@ -437,11 +437,11 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
 6.  Answer 'Yes' to convert & open the project
 7.  Choose the Release configuration and the Win32 platform
 8.  Add the FAAD path to the compiler:
-    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
-        Directories
-    2.  Choose "Include files" on the right and add FAAD's include
-        directory, e.g. `c:\temp\faad2-2.7\include`
-    3.  Click OK.
+    1.  Right-click the `libfaad2_dll` project and go to Properties
+    2.  Go to Configuration Properites-\>C/C++-\>General
+    3.  Choose "Additional Include Directories" on the right and add
+        FAAD's 'include' directory, e.g. `c:\temp\faad2-2.7\include`
+    4.  Click OK.
 9.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
 10. When it finishes, copy the following files into `mixxx-winlib` or

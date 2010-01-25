@@ -481,6 +481,7 @@ below.)
         Debug Info to No.
 8.  Right click `libmp4v2` and click Build.
 9.  When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `libmad-0.15.1b\mad.h
-    libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
-    `
+    `mixxx-win64lib`: `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
+    (rename to mp4v2.dll)
+    mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib (rename to mp4v2.lib)
+    mp4v2-1.9.1\include\mp4v2 (the whole directory)`

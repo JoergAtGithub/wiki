@@ -486,7 +486,23 @@ below.)
     mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib (rename to mp4v2.lib)
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
 
-# Linking with ASMLIB
+# Optimizations
+
+Mixxx can benefit from various code optimizations. If you right-click
+each MSVC project and click Properties, you can set many optimization
+options. You can do any or all of the following:
+
+  - Configuration Properties-\>C/C++-\>Optimization
+  - Optimization: Full Optimization (/Ox)
+  - Favor Size or Speed: Favor Fast Code (/Ot) (unless building for
+    memory-constrained systems)
+  - Whole Program Optimization: Enable link-time code generation (/GL)
+  - Configuration Properties-\>C/C++-\>Code Generation
+  - Enable Enhanced Instruction Set: Streaming SIMD Extensions
+    (/arch:SSE) or Streaming SIMD Extensions 2 (/arch:SSE2) if your CPU
+    supports either
+
+## Linking with ASMLIB
 
 If you want to link any of the VC++ projects against Agner Fog's
 optimized [ASMLIB](http://agner.org/optimize/), do the following:
@@ -505,5 +521,7 @@ optimized [ASMLIB](http://agner.org/optimize/), do the following:
     Choose Properties and do:
     1.  Configuration Properties-\>C/C++-\>Optimization: Set Enable
         Intrinsic Functions to **No**.
-    2.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
+    2.  Configuration Properties-\>C/C++-\>Command Line: Add `/Oi-` to
+        Additional Options.
+    3.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
         (or `alibcof32o.lib` for 32-bit) to "Additional Dependencies"

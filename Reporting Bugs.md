@@ -40,9 +40,9 @@ it as an attachment)
   - *[back traces](creating_backtraces)* from gdb is also extremely
     helpful. To capture one you need to install the gdb package (GNU
     Debugger), then from a console window run: `gdb --eval-command=run
-    mixxx`Reproduce the crash mixxx and then type ***bt*** at the
-    *(gdb)* prompt and copy the lines from your terminal and paste them
-    into the bug report.
+    mixxx`Reproduce the crash mixxx and then type ***thread apply all
+    bt*** at the *(gdb)* prompt and copy the lines from your terminal
+    and paste them into the bug report.
 
 #### Mac OSX
 

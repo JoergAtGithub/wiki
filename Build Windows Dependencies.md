@@ -449,7 +449,7 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
     faad2-2.7\libfaad\include\neaacdec.h
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib (rename to
-    faad.lib)
+    libfaad.lib)
     `
 
 ## libmp4v2
@@ -483,8 +483,7 @@ below.)
 8.  Right click `libmp4v2` and click Build.
 9.  When it finishes, copy the following files into `mixxx-winlib` or
     `mixxx-win64lib`: `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
-    (rename to mp4v2.dll)
-    mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib (rename to mp4v2.lib)
+    mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
 
 # Optimizations

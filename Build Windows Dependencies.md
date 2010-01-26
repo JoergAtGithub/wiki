@@ -448,7 +448,8 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
     `mixxx-win64lib`: `faad2-2.7\libfaad\include\faad.h
     faad2-2.7\libfaad\include\neaacdec.h
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
-    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib
+    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib (rename to
+    faad.lib)
     `
 
 ## libmp4v2

@@ -83,13 +83,15 @@ the mixxx directory and run:
 
 ## Troubleshooting
 
-  - If you've got an nVidia card and are on Ubuntu (9.04) and at the end
-    of the build, you see `/usr/bin/ld: cannot find -lGL
-    collect2: ld returned 1 exit status` install `nvidia-glx-dev` by
-    doing `sudo apt-get -y install nvidia-glx-dev`. Then re-run `scons`
-    and it should build fine.
+#### nVidia
 
-<!-- end list -->
+If you've got an nVidia card and are on Ubuntu (9.04) and at the end of
+the build, you see `/usr/bin/ld: cannot find -lGL
+collect2: ld returned 1 exit status` install `nvidia-glx-dev` by doing
+`sudo apt-get -y install nvidia-glx-dev`. Then re-run `scons` and it
+should build fine.
+
+#### opensuse
 
   - If you have opensuse 11.0 it can happen that youre libaries are
     somehow named incorrectly. 
@@ -123,6 +125,24 @@ it's likely that there are other broken links. commandos are the same
 
 it worked perfectly for me using opensuse 11.0\_x86, kde
 3.5.10\_release55
+
+#### Ubuntu 9.04 or higher
+
+If soundmanger hangs on Ubuntu 9.04 or higher replace PortAudio with an
+older version.
+
+  - Download `pa_stable_v19_20071207.tar.gz` form
+    <http://www.portaudio.com/download.html portaudio.com>
+  - Deflate and change into PortAudio directory
+  - Run `./configure` maybe try `./configure --prefix=/usr`
+  - Run `make`
+  - Run `sudo make install`
+
+This overwrites files installed by portaudio2 and portaudio19-dev
+package from ubuntu. Thus don't reinstall them.
+
+  - See also:
+    <https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/383431 Bug #383431>
 
 ## Further Reading
 

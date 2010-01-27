@@ -131,18 +131,18 @@ it worked perfectly for me using opensuse 11.0\_x86, kde
 If soundmanger hangs on Ubuntu 9.04 or higher replace PortAudio with an
 older version.
 
-  - Download `pa_stable_v19_20071207.tar.gz` form
-    <http://www.portaudio.com/download.html portaudio.com>
+  - Download »`pa_stable_v19_20071207.tar.gz`« from
+    [portaudio.com](http://www.portaudio.com/download.html)
   - Deflate and change into PortAudio directory
-  - Run `./configure` maybe try `./configure --prefix=/usr`
-  - Run `make`
-  - Run `sudo make install`
+  - Run »`./configure`« maybe try »`./configure --prefix=/usr`«
+  - Run »`make`«
+  - Run »`sudo make install`«
 
 This overwrites files installed by portaudio2 and portaudio19-dev
 package from ubuntu. Thus don't reinstall them.
 
-  - See also:
-    <https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/383431 Bug #383431>
+  - See also: [Bug
+    \#383431](https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/383431)
 
 ## Further Reading
 

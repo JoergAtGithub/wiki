@@ -271,12 +271,14 @@ regardless of whether the controller is manipulated or something changes
 in Mixxx. Timed reactions let you do just that with 20ms resolution.
 Here are the functions:
 
-  - **engine.beginTimer**(*milliseconds*, `"function"`) - Starts a timer
-    that will call the specified script function (with parameters if
-    desired) repeatedly every time the given number of milliseconds
-    (1/1000 second) pass. It returns an ID number for the timer (0 on
-    failure) that you'll want to store in a variable so you can stop it
-    later. Note that the function must be enclosed in quotes.
+  - **engine.beginTimer**(*milliseconds*, `"function"`, *one-shot*) -
+    Starts a timer that will call the specified script function (with
+    parameters if desired) repeatedly every time (if *one-shot* is false
+    or not present) or just once (if *one-shot* is true) the given
+    number of milliseconds (1/1000 second) pass. It returns an ID number
+    for the timer (0 on failure) that you'll want to store in a variable
+    so you can stop it later if it's a repeating timer. Note that the
+    function must be enclosed in quotes.
   - **engine.stopTimer**(*timer ID*) - Stops the specified timer.
 
 You can create and stop timers as much as you like but be aware that the
@@ -294,39 +296,37 @@ To start a timer to flash LEDs on a controller 4 times per second
 (250ms) and store the ID in an array for later you would do:
 
 ``` javascript
-SuperController.timer[0] = engine.beginTimer(250,"SuperController.flash()");
+    SuperController.timer[0] = engine.beginTimer(250,"SuperController.flash()");
 ```
 
 When the LEDs need to stop flashing, just do:
 
 ``` javascript
-engine.stopTimer(SuperController.timer[0]);
+    engine.stopTimer(SuperController.timer[0]);
 ```
 
-To create a **one-shot timer** (fires only once,) you simply call
-`engine.stopTimer` in the target function. This example causes an LED to
-light up red one second after the beginTimer call: (Note the escaped
-quotes in the target function call.)
+This one-shot timer example causes an LED (note number 0x3A in this
+case) to light up red one second after the beginTimer call: (Note the
+escaped quotes in the target function call.)
 
 ``` javascript
 ...
-SuperController.timer["LED1"] = engine.beginTimer(1000,"SuperController.lightUp(\"red\")");
+    if (engine.beginTimer(1000,"SuperController.lightUp(0x3A,\"red\")",true) == 0) {
+        print("LightUp timer setup failed");
+    }
 ...
 
-SuperController.lightUp = function (color) {
-
-    engine.stopTimer(SuperController.timer["LED1"]);
-
+SuperController.lightUp = function (led,color) {
     switch (color) {
         case "red": 
-            midi.sendShortMsg(0x90,0x01,0x01);
+            midi.sendShortMsg(0x90,led,0x01);
             break;
         case "green": 
-            midi.sendShortMsg(0x90,0x01,0x02);
+            midi.sendShortMsg(0x90,led,0x02);
             break;
         default:
             print("Warning: no color specified, using blue");
-            midi.sendShortMsg(0x90,0x01,0x03);
+            midi.sendShortMsg(0x90,led,0x03);
             break;
     }
 }

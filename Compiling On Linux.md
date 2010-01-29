@@ -28,7 +28,7 @@ your distribution's package manager:
   - libogg, libvorbis, libvorbisfile
   - libsndfile
 
-To build v1.8, you'll also need these:
+To build v1.8 (branch lp:mixxx), you'll also need these:
 
   - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
   - [libmp4](http://www.mpeg4ip.net/) (or

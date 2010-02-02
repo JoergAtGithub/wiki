@@ -61,9 +61,10 @@ version of mixxx with the following:
 
 before compiling as described above.
 
-Strongly recommended: To optimize compilation for the CPU you're on if
-using GCC 4.2 and above, add `tuned=1` to the list of scons options. To
-optimize for another CPU, use `optimize=#` where \# is in the range 1-7:
+**Strongly recommended**: To optimize compilation for the CPU you're on
+if using GCC 4.2 and above, add `tuned=1` to the list of scons options.
+To optimize for another CPU, use `optimize=#` where \# is in the range
+1-7:
 
 1.  single-core (P-III and below)
 2.  P4

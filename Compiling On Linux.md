@@ -13,6 +13,7 @@ running:
     sudo apt-get install bzr
     sudo apt-get install scons
     sudo apt-get install libqt4-dev
+    sudo apt-get install libqt4-sql-sqlite #needed for 1.8
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
     sudo apt-get install libportmidi-dev # needed in 1.8 for PortMIDI and PortTime
 

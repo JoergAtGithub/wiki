@@ -68,7 +68,7 @@ If you want to link Qt against Agner Fog's optimized
     - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
   - Type ''cd C:\qt-everywhere-opensource-src-4.6.1'' (or wherever you unpacked Qt) and hit Enter.
   - Type ''SET QT_BUILD_PARTS=LIBS'' (and add whatever other parts you want) and hit Enter.
-  - Type ''configure -opensource -platform win32-msvc2008 -ltcg -plugin-sql-sqlite -no-webkit'' and press Enter.
+  - Type ''configure -opensource -platform win32-msvc2008 -ltcg -plugin-sql-sqlite'' and press Enter.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
     * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
 ```
@@ -79,18 +79,19 @@ If you want to link Qt against Agner Fog's optimized
 binaries for Win32 and Win64, so all you need to do is:
 
 1.  Download & run the appropriate installer
-2.  Copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`:`libsndfile\libsndfile-1.dll
+2.  Copy the following files into `mixxx-win32lib-msvc` or
+    `mixxx-win64lib-msvc`:`libsndfile\libsndfile-1.dll
     libsndfile\libsndfile-1.lib (rename to sndfile.lib)
     `
-3.  Copy the `.h` files from `libsndfile\include` to `mixxx-win[64]lib`
+3.  Copy the `.h` files from `libsndfile\include` to
+    `mixxx-win[32|64]lib-msvc`
 
 #### Troubleshooting
 
   - If you get a crapload of `sndfile.h` errors when Mixxx's
     `enginesidechain.cpp` is compiling, edit
-    `mixxx-win[64]lib\sndfile.h` and change the line `typedef __int64_t
-    sf_count_t ;` to: `typedef __int64 sf_count_t ;`
+    `mixxx-win[32|64]lib-msvc\sndfile.h` and change the line `typedef
+    __int64_t sf_count_t ;` to: `typedef __int64 sf_count_t ;`
 
 ## PortAudio
 
@@ -132,8 +133,8 @@ you open them in VS:
     support.
 3.  Download and install the latest DirectX SDK:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
-4.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+4.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 6.  Run the Visual Studio GUI from this command line, telling it to use
@@ -160,8 +161,9 @@ you open them in VS:
     versions of VS.)
 9.  Choose the Release configuration and the Win32 platform
 10. Press F7 to build
-11. When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `portaudio\include\portaudio.h
+11. When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `portaudio\include\portaudio.h
     portaudio\build\msvc\Win32\Release\portaudio_x86.dll (or
     portaudio_x64.dll)
     portaudio\build\msvc\Win32\Release\portaudio_x86.lib (or
@@ -176,8 +178,8 @@ project files, which makes things nice. Just open and build.
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+1.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -196,8 +198,9 @@ project files, which makes things nice. Just open and build.
 7.  Press F7 to build (Ignore the failed builds since they're only
     tests. As long as two succeeded, (PortMidi and PortTime) you're
     fine.)
-8.  When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `portmidi\pm_common\portmidi.h
+8.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `portmidi\pm_common\portmidi.h
     portmidi\pm_win\Release[ VC9]\portmidi.lib
     portmidi\porttime\porttime.h
     portmidi\porttime\Release[ VC9]\porttime.lib
@@ -228,8 +231,8 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+1.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -248,8 +251,8 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
 7.  Open the `libogg-1.1.4\win32\VS2008\libogg_static.vcproj` file
 8.  Choose the Release\_SSE2 configuration and the Win32 platform
 9.  Press F7 to build
-10. When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`:
+10. When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll
     libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.lib (rename to
     ogg.lib)
@@ -257,7 +260,7 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
     (rename to ogg_static.lib)
     `
 11. Copy the `.h` files from `libogg-1.1.4\include\ogg` into
-    `mixxx-win[64]lib\ogg`
+    `mixxx-win[32|64]lib-msvc\ogg`
 
 ## libvorbis
 
@@ -289,8 +292,8 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
 1.  Edit `libvorbis-1.2.3\win32\VS2008\libogg.vsprops` and make sure the
     LIBOGG\_VERSION at the bottom matches the version of libogg you
     built above.
-2.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+2.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, telling it to use
@@ -310,8 +313,8 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
 8.  Open the `libvorbis-1.2.3\win32\VS2008\libvorbis_static.vcproj` file
 9.  Choose the Release\_SSE2 configuration and the Win32 platform
 10. Press F7 to build
-11. When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`:
+11. When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.dll
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.lib
     (rename to vorbis.lib)
@@ -323,8 +326,8 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
     (rename to vorbisfile_static.lib)
     `
 12. Copy the `libvorbis-1.2.3\include\vorbis` folder from into
-    `mixxx-win[64]lib`. You can delete the Makefiles inside, as we just
-    need the .h files.
+    `mixxx-win[32|64]lib-msvc`. You can delete the Makefiles inside, as
+    we just need the .h files.
 
 #### Troubleshooting
 
@@ -341,8 +344,8 @@ given below.)
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+1.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -360,8 +363,9 @@ given below.)
     4.  Choose Release on the left, x64 on the right and click Close.
 8.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-9.  When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `libmad-0.15.1b\mad.h
+9.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `libmad-0.15.1b\mad.h
     libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
     `
 
@@ -378,8 +382,8 @@ them too (detailed below.)
 
 1.  Download & unpack the latest [zlib
     source](http://www.winimage.com/zLibDll/)
-2.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+2.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, telling it to use
@@ -404,8 +408,9 @@ them too (detailed below.)
     4.  Choose Release on the left, x64 on the right and click Close.
 10. Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-11. When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `libid3tag-0.15.1b\id3tag.h
+11. When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `libid3tag-0.15.1b\id3tag.h
     libid3tag-0.15.1b\msvc++\Release\libid3tag.lib (rename to
     id3tag.lib)
     `
@@ -424,8 +429,8 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
 1.  Edit the `faad2-2.7\libfaad\libfaad2.def` file and add the following
     lines to the bottom: `NeAACDecPostSeekReset @10
     NeAACDecDecode2 @11`
-2.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+2.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, specifying the
@@ -444,8 +449,9 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
     4.  Click OK.
 9.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-10. When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `faad2-2.7\libfaad\include\faad.h
+10. When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `faad2-2.7\libfaad\include\faad.h
     faad2-2.7\libfaad\include\neaacdec.h
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
     faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib (rename to
@@ -460,8 +466,8 @@ below.)
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start→Microsoft Windows
-    SDK→CMD Shell)
+1.  Start the platform SDK command prompt (Start?Microsoft Windows
+    SDK?CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -481,8 +487,9 @@ below.)
     2.  Under Configuration Properties, Linker, Debugging, set Generate
         Debug Info to No.
 8.  Right click `libmp4v2` and click Build.
-9.  When it finishes, copy the following files into `mixxx-winlib` or
-    `mixxx-win64lib`: `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
+9.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
     mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
 

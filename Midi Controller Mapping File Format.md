@@ -401,9 +401,21 @@ it's either on (non-zero) or off (zero.)
 
 **And coming up in v1.8:**
 
-|  |               |  |                 |  |           |  |                  |  |                        |  |
-|  | ------------- |  | --------------- |  | --------- |  | ---------------- |  | ---------------------- |  |
-|  | **\[Group\]** |  | **Key/Control** |  | **Range** |  | **What it does** |  | **On-screen feedback** |  |
+|  |                |  |                        |  |                   |  |                                                                                                                                  |  |                                                                     |  |
+|  | -------------- |  | ---------------------- |  | ----------------- |  | -------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------------- |  |
+|  | **\[Group\]**  |  | **Key/Control**        |  | **Range**         |  | **What it does**                                                                                                                 |  | **On-screen feedback**                                              |  |
+|  | \[Channel*N*\] |  | loop\_in               |  | binary            |  | Sets the player loop in position to the current play position.                                                                   |  | Loop-in marker changes on waveform.                                 |  |
+|  | \[Channel*N*\] |  | loop\_out              |  | binary            |  | Sets the player loop out position to the current play position.                                                                  |  | Loop-out marker changes on waveform.                                |  |
+|  | \[Channel*N*\] |  | reloop\_exit           |  | binary            |  | Toggles the current loop on or off.                                                                                              |  | Loop range in waveform activates or deactivates.                    |  |
+|  | \[Channel*N*\] |  | loop\_in\_position     |  | positive integer  |  | The player loop-in position, -1 if not set.                                                                                      |  | Loop-in marker changes on waveform.                                 |  |
+|  | \[Channel*N*\] |  | loop\_out\_position    |  | positive integer  |  | The player loop-out position, -1 if not set.                                                                                     |  | Loop-out marker shows on waveform.                                  |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_position    |  | positive integer  |  | The position of hotcue X, -1 if not set.                                                                                         |  | Hotcue X marker changes on waveform.                                |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_enabled     |  | read-only, binary |  | 1 if hotcue X is active, (position is not -1), 0 otherwise.                                                                      |  |                                                                     |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_set         |  | binary            |  | Set hotcue X to the current play position. If hotcue X was previously set, clears its hotcue status.                             |  | Hotcue X marker changes on waveform.                                |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_clear       |  | binary            |  | If hotcue X is set, clears its hotcue status.                                                                                    |  | Hotcue X marker changes on waveform.                                |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_goto        |  | binary            |  | If hotcue X is set, seeks the player to hotcue X's position.                                                                     |  | Player may change position.                                         |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_gotoandstop |  | binary            |  | If hotcue X is set, seeks the player to hotcue X's position and stops.                                                           |  | Player may change position.                                         |  |
+|  | \[Channel*N*\] |  | hotcue\_X\_activate    |  | binary            |  | If hotcue X is set, seeks the player to hotcue X's position. If hotcue X is not set, sets hotcue X to the current play position. |  | Player may change position. Hotcue X marker may change on waveform. |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.

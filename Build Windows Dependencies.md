@@ -366,7 +366,7 @@ given below.)
 9.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libmad-0.15.1b\mad.h
-    libmad-0.15.1b\msvc++\Release\libmad.lib (rename to mad.lib)
+    libmad-0.15.1b\msvc++\Release\libmad.lib
     `
 
 ## libid3tag

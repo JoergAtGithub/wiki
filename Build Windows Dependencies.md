@@ -36,7 +36,7 @@ If you want to link Qt against Agner Fog's optimized
     1.  Add `/Oi-` to `QMAKE_CFLAGS`
     2.  Add `/LIBPATH:"C:\asmlib"` to `QMAKE_LFLAGS`
     3.  Add `alibcof32o.lib` (or `alibcof64o.lib` for 64-bit) to each
-        `QMAKE_LIBS` entry with other `.lib` files
+        `QMAKE_LIBS` entry in front of other `.lib` files
 
 ### x64 prep
 

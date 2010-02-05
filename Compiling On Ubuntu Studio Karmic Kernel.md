@@ -1,3 +1,7 @@
+**Note: These instructions are for compiling a development version of
+Mixxx. These tend to be unstable. Don't compile Mixxx using these
+instructions if you intend on DJing live with it.**
+
 First remove default mixxx install.
 
 Using synaptic remove the following:

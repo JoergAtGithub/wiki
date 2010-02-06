@@ -90,6 +90,8 @@ and try them out, suggest subtle improvements, figure out a method to
 crash them and then [report bugs and suggestions onto
 launchpad](https://bugs.launchpad.net/mixxx).
 
+\[How to download and compile development version.\]
+
 ## Show it\!
 
 If you love Mixxx, show it... Record a mash-up and [post

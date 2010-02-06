@@ -63,4 +63,5 @@ How to compile in linux.
 
 Here are step by step instructions for ubuntu studio.
 
-[Compile in ubuntu studio](Compile%20in%20ubuntu%20studio)
+[Compile in ubuntu studio, karmic
+koala](Compile%20in%20ubuntu%20studio,%20karmic%20koala)

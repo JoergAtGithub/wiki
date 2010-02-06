@@ -34,6 +34,7 @@ To build v1.8 (branch lp:mixxx), you'll also need these:
   - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
   - [libmp4](http://www.mpeg4ip.net/) (or
     [libmp4v2](http://code.google.com/p/mp4v2/))
+  - Qt 4.5.0+
 
 ## 2\. Get Mixxx
 

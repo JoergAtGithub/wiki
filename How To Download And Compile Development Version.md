@@ -11,6 +11,8 @@ How to compile in linux.
  
  [[http://wiki.bazaar.canonical.com/Download|Other linux OS you can download bazaar here.]]
  
+ [[http://wiki.bazaar.canonical.com|External Link]]
+ 
 ```
 
 \-\> Download mixxx development branch using bazaar:

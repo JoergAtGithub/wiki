@@ -9,7 +9,7 @@ How to compile in linux.
  
  On ubuntu: sudo apt-get install bzr
  
- Other linux OS you can download bazaar here: [[http://wiki.bazaar.canonical.com/Download]]
+ [[http://wiki.bazaar.canonical.com/Download|Other linux OS you can download bazaar here.]]
  
 ```
 

@@ -25,6 +25,7 @@ page.
 
 [All Wishlist bugs on
 Launchpad](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&search=Search&field.importance:list=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.omit_dupes.used=&field.omit_dupes=on&field.has_patch.used=&field.has_cve.used=&field.tag=&field.tags_combinator=ANY)
+[Blueprints on Launchpad](https://blueprints.launchpad.net/mixxx)
 
 (Copied from [feature\_wishlist](feature_wishlist))
 

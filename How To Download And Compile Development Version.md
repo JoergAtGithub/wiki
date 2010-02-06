@@ -42,12 +42,12 @@ How to compile in linux.
 
 ``` 
   Compile with scons:
-  
-  ->sudo scons prefix=/usr install
+   
+       sudo scons prefix=/usr install
   
   You can also optimize for a particular CPU if you are using GCC 4.2 and above:
   
-  ->sudo scons preix=/usr install **optimize=#**
+       sudo scons preix=/usr install **optimize=#**
   
   "#" depends on your CPU. You can optimize with the following:
   

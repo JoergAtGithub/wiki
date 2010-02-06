@@ -35,8 +35,8 @@ How to compile in linux.
 3\. Compile mixxx and install.
 
 ``` 
-   ->Go to the directory where you downloaded mixxx.
-   ->Change to the directory /mixxx/mixxx.
+  ->Go to the directory where you downloaded mixxx.
+ \->Change to the directory /mixxx/mixxx.
 ```
 
 ``` 

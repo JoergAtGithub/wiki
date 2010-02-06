@@ -90,7 +90,8 @@ and try them out, suggest subtle improvements, figure out a method to
 crash them and then [report bugs and suggestions onto
 launchpad](https://bugs.launchpad.net/mixxx).
 
-\[How to download and compile development version.\]
+[How to download and compile development
+version.](How%20to%20download%20and%20compile%20development%20version.)
 
 ## Show it\!
 

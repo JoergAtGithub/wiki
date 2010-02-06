@@ -18,7 +18,7 @@ How to compile in linux.
 
   - bzr co lp:mixxx
 
-2\. Install mixxx dependencies
+**2. Install mixxx dependencies**
 
   - scons
   - libid3tag
@@ -33,7 +33,7 @@ How to compile in linux.
     [libmp4v2](http://code.google.com/p/mp4v2/))
   - sqllite
 
-3\. Compile mixxx and install.
+**3. Compile mixxx and install.**
 
 ``` 
   \->Go to the directory where you downloaded mixxx.
@@ -60,5 +60,7 @@ How to compile in linux.
   7:  K8/Opteron/AMD64 w/ SSE3
       
 ```
+
+Here are step by step instructions for ubuntu studio.
 
 [Compile in ubuntu studio](Compile%20in%20ubuntu%20studio)

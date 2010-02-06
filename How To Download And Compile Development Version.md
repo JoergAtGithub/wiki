@@ -11,7 +11,6 @@ How to compile in linux.
  
  [[http://wiki.bazaar.canonical.com/Download]]
  
- [[http://wiki.bazaar.canonical.com|External Link]]
  
 ```
 

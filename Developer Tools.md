@@ -27,6 +27,14 @@ See Also
 
   - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
 
+You can also use Qt Creator for Mixxx development by creating a Qt
+project file for the source files. You can do this by running 'qmake
+-project' under mixxx/src. When using the created project file, you are
+able to use Creators editing features such as following symbols (F2) and
+switching between code and header files (F4). When compiling you will
+still have to resort to SCons as th project file will not resolve the
+dependencies.
+
 # Console Dev Tools
 
 On Ubuntu Linux, G uses:

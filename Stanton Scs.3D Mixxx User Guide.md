@@ -149,6 +149,10 @@ the **markHotCues** option mentioned at the top of this page.)
   - Outer circle (C1) allows you to "scratch" the song and perform
     juggles
   - Center slider (S4) allows you to "scratch" the song
+  - Scratch & cue toogle: Hold the VINYL button and press CUE when in
+    Vinyl2 mode to toggle recalling the cue point when you touch either
+    C1 or S4. This makes juggling really easy since you don't have to
+    back-cue.
 
 **Track Select Mode (black)**
 

@@ -68,7 +68,9 @@ If you want to link Qt against Agner Fog's optimized
     - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
   - Type ''cd C:\qt-everywhere-opensource-src-4.6.1'' (or wherever you unpacked Qt) and hit Enter.
   - Type ''SET QT_BUILD_PARTS=LIBS'' (and add whatever other parts you want) and hit Enter.
-  - Type ''configure -opensource -platform win32-msvc2008 -ltcg -plugin-sql-sqlite'' and press Enter.
+  - Type ''configure -opensource -platform win32-msvc2008 -qt-sql-sqlite'' and press Enter.
+    - For more optimized code, also add ''-ltcg''.
+    - To configure faster, also add ''-fast -no-vcproj -no-dsp''.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
     * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
 ```

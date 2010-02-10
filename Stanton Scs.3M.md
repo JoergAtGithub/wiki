@@ -39,3 +39,8 @@ Instructions for use:
 7.  Click OK and you're good to go.
 
 [Mixxx user's guide for the SCS.3m](stanton_scs.3m_mixxx_user_guide)
+
+#### Quirks
+
+  - Only one side's LEDs will react to Flanger controls at a time (this
+    should be fixed in the next Mixxx release)

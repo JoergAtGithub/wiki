@@ -6,7 +6,7 @@ Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 
 ## Latest MIDI mapping & script files
 
-### 1.7.0+
+### 1.7.x
 
 The latest official MIDI mappings and script files will be available
 here when they're available.

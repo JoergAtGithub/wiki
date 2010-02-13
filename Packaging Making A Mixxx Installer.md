@@ -47,6 +47,8 @@ any failed builds, it will wipe out any build over a day old:
 
     20 1 * * * find /var/cache/pbuilder/build -maxdepth 1 -type d -mtime +1 -exec rm -rf {} \;
 
+# OSX
+
 # Windows
 
 see [Making a Windows installer package](build_windows_installer)

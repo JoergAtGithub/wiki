@@ -1,7 +1,3 @@
-# Windows
-
-see [Making a Windows installer package](build_windows_installer)
-
 # Debian/Ubuntu Package Builder (pbuilder)
 
 ## Installation
@@ -50,3 +46,7 @@ Recommended that you add the following to your root crontab to clean up
 any failed builds, it will wipe out any build over a day old:
 
     20 1 * * * find /var/cache/pbuilder/build -maxdepth 1 -type d -mtime +1 -exec rm -rf {} \;
+
+# Windows
+
+see [Making a Windows installer package](build_windows_installer)

@@ -54,7 +54,8 @@ To update your pbuilder environment
 ## pbuilder Clean-Up
 
 Recommended that you add the following to your root crontab to clean up
-any failed builds, it will wipe out any build over a day old:
+any failed builds, it will wipe out any pbuilder build environment over
+a day old:
 
     20 1 * * * find /var/cache/pbuilder/build -maxdepth 1 -type d -mtime +1 -exec rm -rf {} \;
 

@@ -8,11 +8,24 @@ to the Public Hudson instance dashboard (currently found at
 
 ##### TODO
 
-  - Turn on SCM polling, so builds are triggered automatically when BZR
-    commits happen (Job-\>Build Triggers-\>Poll SCM)
   - Fix [OSX compile issue](http://mixxx.org:8080/job/osx/1/console) so
     that builds + bundles
-  - Add info on how to configure pbuilder and hudson on Linux hosts.
+
+### Ubuntu Linux Prerequisite
+
+Before setting up an Ubuntu Hudson build node, you should follow the
+steps to make sure you are able to package manually --\> see the
+[Packaging](packaging_making_a_mixxx_installer#debian_ubuntu_package_builder_pbuilder)
+page.
+
+Following that you need to:
+
+1.  transfer the .pbuilderrc from your home directory to
+    /var/lib/hudson/.pbuilderrc
+2.  chown/chmod it to be readable by the "hudson" user
+3.  grant sudo permissions to the "hudson" build user to be able to [run
+    pbuilder
+    unattended](packaging_making_a_mixxx_installer#permissions). 
 
 ### Hudson Config
 

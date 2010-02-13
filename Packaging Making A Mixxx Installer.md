@@ -30,13 +30,23 @@ into ***$HOME*** of the build user as ***.pbuilderrc***
 ## Initializing pbuilder
 
 ``` 
- pbuilder create
+ sudo /usr/sbin/pbuilder create
+ 
 ```
+
+Whenever you update your .pbuilderrc file, its a good idea to also run:
+
+``` 
+ sudo /usr/sbin/pbuilder update
+```
+
+To update your pbuilder environment
 
 ## Building a Package
 
 1.  [Build Mixxx using SCons](compiling_on_linux)
-2.  next run: **scons makeubuntu**
+2.  next run: **scons -j2 makeubuntu** //\# -j for number of compiler
+    threads, i.e. use -j4 if you have a quad core cpu //
 3.  finally, if there were no errors, look for packages in the dist
     folder using: **ls ubuntu/mixxx-\*/dist/\*.deb**
 

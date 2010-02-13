@@ -31,7 +31,6 @@ into ***$HOME*** of the build user as ***.pbuilderrc***
 
 ``` 
  sudo /usr/sbin/pbuilder create
- 
 ```
 
 Whenever you update your .pbuilderrc file, its a good idea to also run:

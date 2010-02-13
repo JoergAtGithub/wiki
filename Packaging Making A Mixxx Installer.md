@@ -22,7 +22,9 @@ building
 
 [pbuilder](https://wiki.ubuntu.com/PbuilderHowto) configuration files:
 
-  - [[/media/x86_64-dot-pbuilderrc|.pbuilderrc for AMD64]]
+  - [[/media/x86_64-dot-pbuilderrc|.pbuilderrc for x86\_64]]
+  - .pbuilderrc for i386, download the above file and commented out:
+    ***export DEBIAN\_BUILDARCH=amd64*** by putting a \# in front of it
 
 The configuration appropriate file for your build arch should be put
 into ***$HOME*** of the build user as ***.pbuilderrc***

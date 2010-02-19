@@ -58,16 +58,34 @@ responsiveness. Here are some tips to help you do that.*
 
 ### All operating systems
 
-As a last resort, run Mixxx as the root user or a user with
-administrative privileges. This allows Mixxx to increase the priority of
-its critical threads to real-time. This should greatly reduce latency on
-a busy system. **Be aware that running as root/admin puts your system at
-greater risk from malicious code.**
-
-Alternately and more safely, on Linux/OSX, edit
-`/etc/security/limits.conf` and add `<your user name> soft rtprio 99` to
-allow Mixxx (and other processes you run) to increase their thread
-priority to maximum, or just run Mixxx from a console with `sudo mixxx`.
+  - **IRQ sharing** - Make sure your sound card(s) are not sharing
+    <span class="underline">I</span>nterrupt
+    <span class="underline">R</span>e<span class="underline">q</span>uest
+    ports with any other system devices (like network cards.) If they
+    are, try to change them in your OS or BIOS or disable the other
+    devices while you're DJing.
+  - *Linux:* at a console, issue `cat /proc/interrupts` If the line that
+    contains the kernel module for your sound card has something else
+    next to it, this affects you, and you may be able to change the IRQ
+    at module load time (type `man modprobe` for more information on
+    this.)
+  - *Windows:* Open Device Manager (Start-\>Control Panel-\>System,
+    Hardware tab, Device Manager button) find your sound card,
+    right-click it, choose Properties, then the Resources tab. Drop down
+    to IRQs and see if anything else is sharing it. If so, this affects
+    you, and you can try changing the IRQ assignment for your sound card
+    in this window.
+  - **Increase process priority**
+  - As a last resort, run Mixxx as the root user or a user with
+    administrative privileges. This allows Mixxx to increase the
+    priority of its critical threads to real-time. This should greatly
+    reduce latency on a busy system. **Be aware that running as
+    root/admin puts your system at greater risk from malicious code.**
+  - Alternately and more safely, on Linux/OSX, edit
+    `/etc/security/limits.conf` and add `<your user name> soft
+    rtprio 99` to allow Mixxx (and other processes you run) to increase
+    their thread priority to maximum, or just run Mixxx from a console
+    with `sudo mixxx`.
 
 ## The BPM detection is wrong
 

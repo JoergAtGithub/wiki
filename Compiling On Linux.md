@@ -163,7 +163,7 @@ Solution: build your own portaudio deb:
     
     # cd /portaudio19-*/debian
     
-    ####  ENABLE_JACK must be explicitely set to "yes"
+    ####  ENABLE_JACK must be explicitely set to "yes" in debian/rules (line 48)
     # nano debian/rules
     
     # dpkg-buildpackage -rfakeroot -b

@@ -147,6 +147,34 @@ package from ubuntu. Thus don't reinstall them.
   - See also: [Bug
     \#383431](https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/383431)
 
+#### Debian Squeeze on AMD64 jack/portaudio issues
+
+So in Ubuntu the issue is solved for Lucid and later Releases (see [Bug
+\#360590](https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/360590))  
+In debian we still hafta wait for that. Portaudio is still compiled
+without jack support  
+on AMD64. So mixxx won't detect jack :/
+
+Solution: build your own portaudio deb:
+([reference](http://forkbomb.dadacafe.org/blog/Squeeze_Mixxx_Jack_Portaudio_AMD64/))
+
+    # apt-get source portaudio19  
+    # apt-get build-dep portaudio19
+    
+    # cd /portaudio19-*/debian
+    
+    ####  ENABLE_JACK must be explicitely set to "yes"
+    # nano debian/rules
+    
+    # dpkg-buildpackage -rfakeroot -b
+    
+    # cd ../
+    # dpkg -i *.deb
+
+Now restart jack & mixxx.  
+  
+Now World domination :)
+
 ## Further Reading
 
   - [Compiling Mixxx on

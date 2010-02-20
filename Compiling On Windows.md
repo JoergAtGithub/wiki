@@ -95,7 +95,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
     You just need the vcsetup.exe file.
   - [Microsoft Windows SDK for
-    Vista](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=ff6467e6-5bba-4bf5-b562-9199be864d29)
+    Vista](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
     (Works on all recent versions of Windows.) You only need to install
     the following:
 

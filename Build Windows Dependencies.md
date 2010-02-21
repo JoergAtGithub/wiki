@@ -16,7 +16,6 @@ x64,) here are the steps:
 ### Prepare build environment
 
 ``` 
-  - If using Qt 4.5 & below, to avoid building the Qt examples and demos (you don't need them and it saves ALOT of time,) edit ''C:\qt-win-opensource-src-4.5.3\projects.pro'', remove "examples" and "demos" from QT_BUILD_PARTS toward the top of the file and save it. (In fact, you only need "libs" if you want to save even more time.)
   - Tweak the Qt configuration: (optional)
     - Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':
       - If you have more than one processor/core, add ''/MP'' to ''QMAKE_CFLAGS''.

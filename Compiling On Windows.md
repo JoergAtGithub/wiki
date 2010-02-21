@@ -27,8 +27,11 @@ referred to as MSVC in discussions.
     or later.) [Alternate link
     for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
     You just need the vcsetup.exe file.
-  - [Microsoft Platform SDK 2003
-    R2](http://www.microsoft.com/downloads/results.aspx?pocId=&freetext=platform%20sdk%20web%20install&DisplayLang=en)
+  - [Microsoft Windows SDK for
+    Vista](http://www.microsoft.com/downloads/details.aspx?familyid=ff6467e6-5bba-4bf5-b562-9199be864d29&displaylang=en)
+    [(web
+    install)](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
+    (Works on all recent versions of Windows.)
   - [Qt library for
     Windows](http://qt.nokia.com/downloads/windows-cpp-vs2008)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
@@ -95,7 +98,9 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
     You just need the vcsetup.exe file.
   - [Microsoft Windows SDK for
-    Vista](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
+    Vista](http://www.microsoft.com/downloads/details.aspx?familyid=ff6467e6-5bba-4bf5-b562-9199be864d29&displaylang=en)
+    [(web
+    install)](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
     (Works on all recent versions of Windows.) You only need to install
     the following:
 

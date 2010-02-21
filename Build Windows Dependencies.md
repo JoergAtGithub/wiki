@@ -72,9 +72,19 @@ If you want to link Qt against Agner Fog's optimized
     - For more optimized code, also add ''-ltcg''.
     - To configure faster, also add ''-fast -no-vcproj -no-dsp''.
   - When it finishes (about 5-10 minutes,) just type ''nmake'' and press Enter and you should be good (takes 1~3 hours.)
-    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long volatile *''  Do ''nmake'' again and it should finish fine.
-    * If on x64 and you get the similar ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset64' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset64'' and ''_interlockedbittestandreset64'' to ''__int64 volatile *''  Do ''nmake'' again and it should finish fine.
+    * If you get ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset'' and ''_interlockedbittestandreset'' to ''long **volatile** *'' like so:<code>__MACHINEI(unsigned char _interlockedbittestandset(long volatile *a, long b))
 ```
+
+\_\_MACHINEI(unsigned char \_interlockedbittestandreset(long volatile
+\*a, long b))\</code\> Do `nmake` again and it should finish fine.
+
+``` 
+    * If on x64 and you get the similar ''<sdkdir>\winnt.h(1831) : error C2733: second C linkage of overloaded function '_interlockedbittestandset64' not allowed'' then edit <sdkdir>\VC\INCLUDE\intrin.h and change the definition of ''_interlockedbittestandset64'' and ''_interlockedbittestandreset64'' to to ''_ _int64 **volatile** *'' like so:<code>__MACHINEX64(unsigned char _interlockedbittestandset64(__int64 volatile *a, __int64 b))
+```
+
+<span class="underline">MACHINEX64(unsigned char
+\_interlockedbittestandreset64(</span>int64 volatile \*a, \_\_int64
+b))\</code\> Do `nmake` again and it should finish fine.
 
 ## libsndfile
 

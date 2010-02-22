@@ -221,6 +221,50 @@ project files, which makes things nice. Just open and build.
     portmidi\Release\portmidi.dll
     `
 
+## PortTime
+
+[PortMidi](http://portmedia.sourceforge.net/portmidi/) provides MSVC
+project files, which makes things nice. Just open and build.
+(Step-by-step is given below.)
+
+### Build
+
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `portmidi\porttime\porttime.vcproj` file via
+    File-\>Open-\>Project/Solution. (If on VS2005, use the
+    `porttime-VC8.vcproj` file.)
+5.  Choose the Release configuration and the Win32 platform
+6.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+    5.  Edit the porttime project and change:
+        1.  C/C++-\>Preprocessor Definitions "WIN32" to "WIN64"
+7.  Press F7 to build
+
+<!-- end list -->
+
+  - If you get `portmidi\porttime\porttime.h(20) : fatal error C1083:
+    Cannot open include file: 'stdint.h': No such file or directory`
+    then edit the project properties and add `mixxx-win32lib-msvc` (or
+    64) to Additional Include Directories
+
+<!-- end list -->
+
+1.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `portmidi\porttime\porttime.h
+    portmidi\porttime\Release\porttime.lib
+    `
+
 ## libogg
 
 [Xiph.org](http://www.xiph.org/downloads/) provides MSVC project files,

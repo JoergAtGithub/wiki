@@ -508,14 +508,24 @@ code.** The MSVC x64 compiler only supports intrinsics for assembly.
     4.  Click OK.
 9.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-10. When it finishes, copy the following files into
-    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
-    `faad2-2.7\libfaad\include\faad.h
-    faad2-2.7\libfaad\include\neaacdec.h
-    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.dll
-    faad2-2.7\libfaad\include\libfaad\ReleaseDLL\libfaad2.lib (rename to
-    libfaad.lib)
-    `
+
+<!-- end list -->
+
+  - If you get `faad2-2.7\libfaad\common.h(42) : fatal error C1083:
+    Cannot open include file: 'neaacdec.h': No such file or directory`
+    then under project Configuration properties-\>C/C++-\>General:
+
+<!-- end list -->
+
+``` 
+    * Add to Additional Include Directories: ''..\include'' 
+- When it finishes, copy the following files into ''mixxx-win32lib-msvc'' or ''mixxx-win64lib-msvc'': <code>faad2-2.7\libfaad\include\faad.h
+```
+
+faad2-2.7\\libfaad\\include\\neaacdec.h
+faad2-2.7\\libfaad\\include\\libfaad\\ReleaseDLL\\libfaad2.dll
+faad2-2.7\\libfaad\\include\\libfaad\\ReleaseDLL\\libfaad2.lib (rename
+to libfaad.lib) \</code\>
 
 ## libmp4v2
 

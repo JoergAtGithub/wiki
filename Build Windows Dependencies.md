@@ -149,20 +149,14 @@ you open them in VS:
     SDK?CMD Shell)
 5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
-6.  Run the Visual Studio GUI from this command line, telling it to use
+6.  Run `dx_setenv.cmd`, the DirectX SDK environment variable setup
+    script here to add the DirectX paths. (e.g. `C:\Program
+    Files\Microsoft DirectX SDK
+    (March 2009)\Utilities\Bin\dx_setenv.cmd`)
+7.  Run the Visual Studio GUI from this command line, telling it to use
     the environment variables, to have it use the Platform SDK compile
-    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
-    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-7.  Add the DirectX SDK paths to the compiler:
-    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
-        Directories
-    2.  Choose "Include files" on the right and add the path to the
-        DirectX SDK Include directory, e.g. `C:\Program Files\Microsoft
-        DirectX SDK (March 2009)\Include`
-    3.  Choose "Library files" on the right and add the path to the
-        DirectX SDK Library directory, e.g. `C:\Program Files\Microsoft
-        DirectX SDK (March 2009)\Lib\x86`
-    4.  Click OK.
+    tools, libs and includes. (e.g. `C:\Program Files\Microsoft Visual
+    Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
 8.  Open the `portaudio\build\msvc\portaudio.vcproj` file via
     File-\>Open-\>Project/Solution. After doing the upgrade, you'll only
     see "Win32" targets if you're using VS Express. (If you've made the

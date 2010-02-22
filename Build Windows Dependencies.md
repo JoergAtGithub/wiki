@@ -480,8 +480,20 @@ them too (detailed below.)
 files, which makes things nice. Just open and build. (Step-by-step is
 given below.)
 
-**This is currently unable to build on x64 due to embedded assembly
-code.** The MSVC x64 compiler only supports intrinsics for assembly.
+### x64 prep
+
+1.  Edit `faad2-2.7\libfaad\common.h`:
+    1.  Delete line 315, `#if defined(_WIN32) && !defined(__MINGW32__)`
+        and replace it with \<code\> \#if defined(\_WIN64) &&
+        \!defined(<span class="underline">MINGW64</span>)
+
+<!-- end list -->
+
+``` 
+  // No LRINTF until someone writes an .asm file
+#elif defined(_WIN32) && !defined(__MINGW32__)</code>
+  - Save the file.
+```
 
 ### Build
 

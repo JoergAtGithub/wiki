@@ -16,7 +16,13 @@ they make these tasks easier. Here is an exhaustive list:
 
 ## 1.8
 
-| Option                  | Description                                                                                                                            | Code location                        |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| `-``-resourcePath path` | Top-level directory where Mixxx should look for its resource files such as MIDI mappings, overriding the default installation location | configobject.cpp, line 301           |
-| `-``-midiDebug`         | Causes Mixxx to display/log all of the MIDI messages it receives and script functions it loads                                         | mididevice.cpp, line 51 in PM branch |
+You can load supported sound files directly into the virtual decks by
+specifying them at the command line.
+
+| Option                  | Description                                                                                                                            | Code location              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| *filename*              | Loads the specified music file at start-up (of the types Mixxx supports.) Each file you specify will be loaded into the next deck.     | main.cpp, line 281         |
+| `-``-resourcePath path` | Top-level directory where Mixxx should look for its resource files such as MIDI mappings, overriding the default installation location | configobject.cpp, line 310 |
+| `-``-midiDebug`         | Causes Mixxx to display/log all of the MIDI messages it receives and script functions it loads                                         | mididevice.cpp, line 52    |
+| `-f`, `-``-fullScreen`  | Causes Mixxx to start in full-screen mode                                                                                              | main.cpp, line 276         |
+| `-h`, `-``-help`        | Displays all current command line options                                                                                              | main.cpp, line 249         |

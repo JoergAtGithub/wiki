@@ -27,14 +27,71 @@ Linux. See the `rig_realtime` function in
 
 ## Thread consolidation
 
+First, [are threads
+evil?](http://www.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)
+The gist is that concurrent events that threads cause are wildly
+unpredictable and are therefore extremely difficult to work with even in
+simple cases since there are an exponential number of possible race
+conditions. The paper suggests alternative proven methods that would
+work better and are easier to work *with* especially in a user-facing
+application like Mixxx.
+
+Mixxx's current [thread list](threads).
+
 As Mixxx's functionality grows and it's extended to work with arbitrary
 numbers of resources, we need to consolidate the work to handle each
 resource into a single thread. This currently needs to be done for:
 
+  - **MIDI Device** - currently one thread per attached controller, need
+    one thread to handle all MidiDevices (the MidiDeviceManager would be
+    a good place to put it.)
   - **MIDI Script Engine** - currently one thread per attached
     controller, need one thread with *n* ScriptEngines in it
   - **(Caching)Reader** - currently one thread per deck, need one thread
     with *n* Readers in it
+
+### Sean's ideas:
+
+Stepping back for a moment, what are the goals we're trying to reach? As
+I see it, we want anything user-facing to respond in a hard-limited
+amount of time. This includes:
+
+  - Audio output
+  - GUI
+  - MIDI I/O
+
+Of course audio needs to be processed as fast as possible, but that
+varies based on the user's machine capabilities, so we have the latency
+slider. So the audio needs to "refresh" within the latency period. I
+suggest that 30fps is an acceptable refresh rate for anything visual
+(GUI and MIDI output,) which translates to 33.3 (repeating)
+milliseconds. We could have a "visual latency" slider denoted in fps as
+well to help under-powered machines. Then we'd have a process() function
+for each of these user-facing items that did nothing more than the bare
+minimum to update their respective areas from a current snapshot of
+MixxxControls. (E.g. the Audio::process() would do the real-time
+processing (FX, EQ, etc.) of the current latency buffer, GUI::process()
+would simply repaint the display, and MIDI::process() would send queued
+messages to and receive queued messages from the controller(s).) These
+must finish before the applicable latency period. If they can't, they
+must defer additional work (or just abort in the case of audio) until
+the next period. (And the user will want to adjust the slider up at that
+point.)
+
+So I suggest two user-facing threads: an audio one at real-time priority
+and a GUI+MIDI update one (Qt's main thread) at high or normal priority.
+Each would set up a timer to fire every applicable latency period that
+simply called the respective process() functions. (It would be
+interesting to automatically adjust the sliders up (if the user chooses)
+if anything times out, i.e. another timer event arrives before process()
+has returned.)
+
+Then have a single additional thread at normal (if GUI+MIDI is high) or
+lower-than-normal priority for everything else (where the MixxxControls
+are actually updated,) but here too each sub-system needs a process()
+function that returns as quick as it can. This means any long
+CPU-hogging operations (like track analysis, DB and file I/O, script
+engines) must be split into time slices.
 
 ## CPU
 

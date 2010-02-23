@@ -13,12 +13,13 @@ variables at the top of the script you can set to your liking:
   - **fastDeckChange** - If set to true, changes decks instantly by
     skipping the flashing lights. Useful for beat juggling on one unit.
   - **spinningPlatter** - If set to true, uses the circle LEDs to
-    accurately show the track position in record revolutions, also
-    useful for juggling.
+    *accurately* (<span class="underline">no sticker drift\!</span>)
+    show the track position in record revolutions, also useful for
+    juggling.
   - **spinningPlatterOnlyVinyl** - If set to true, only shows the
     spinning platter LED in vinyl modes. Otherwise shows in all modes
-    except LOOP and TRIG (because they're used for other things in those
-    modes.)
+    except Instant Pitch Change and TRIG (because they're used for other
+    things in those modes.)
   - **VUMeters** - If set to true, shows a VU meter in the circular area
     for the currently selected deck when in vinyl mode. (Left for deck
     1, right for deck 2.)
@@ -46,6 +47,12 @@ variables at the top of the script you can set to your liking:
 Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the
 top. Edit & save, then restart Mixxx and enjoy.
+
+**Coming in V1.8:**
+
+  - **singleDeck** - If you've got more than one MIDI controller, set
+    this to true to have the SCS.3d stay on one deck and make Deck mode
+    non-temporary. [More on this here](#deck-mode).
 
 ## Mode buttons
 
@@ -87,6 +94,8 @@ top. Edit & save, then restart Mixxx and enjoy.
   - B11 plays track in reverse while held down
   - B12 toggles flanger effect
 
+Hold the FX button down and touch any slider to reset it to center.
+
 ## EQ Mode
 
 [[/media/hardware/stantonscs/slidermode.jpg|]]
@@ -95,7 +104,9 @@ top. Edit & save, then restart Mixxx and enjoy.
   - Center slider (S4) adjusts mid frequency equalizer
   - Right slider (S5) adjusts high frequency equalizer
 
-## Loop Mode
+Hold the EQ button down and touch any slider to reset it to center.
+
+## Instant-pitch change modes (Loop button)
 
 This will control looping in a future version of Mixxx. For now, it
 offers instant pitch change buttons in the following arrangements:
@@ -120,6 +131,16 @@ automatically set to 100% in order for the values to be set correctly.
 *Key change and Note modes were tuned with respect to 440Hz A (above
 middle C.)*
 
+**Coming in v1.8**
+
+<span class="underline">Loop Mode:</span>
+
+The surface is configured as three giant buttons:
+
+  - Left: Loop In
+  - Middle: Reloop/Exit
+  - Right: Loop Out
+
 ## Trig Modes
 
 These modes configure the surface as three separate banks of 12 buttons
@@ -135,6 +156,12 @@ the **markHotCues** option mentioned at the top of this page.)
   - To recall a cue, just press a button that has a cue point set
   - To erase a cue, hold TRIG while pressing the button(s) you want to
     erase
+
+**For v1.8**
+
+As of Feb 2010, Mixxx 1.8 internally supports 31 hot cues and the SCS.3d
+mapping has been adjusted to match. That means the center 4 buttons and
+the lower right one in the third bank (black) are inoperative.
 
 ## Vinyl Modes
 
@@ -168,7 +195,8 @@ the **markHotCues** option mentioned at the top of this page.)
 ## Deck Mode
 
 [[/media/hardware/stantonscs/slidermode.jpg|]] You are in this mode only
-**while holding down the Deck button:**
+**while holding down the Deck button**, unless the controller is in
+single-deck mode in v1.8 (see the top of this page):
 
   - Gain slider (S1) adjusts master volume
   - Pitch slider (S2) adjusts master balance (pan)
@@ -177,7 +205,16 @@ the **markHotCues** option mentioned at the top of this page.)
   - Left slider (S3) adjusts the cue/main headphone mix
   - Center slider (S4) adjusts the cross-fader
   - Right slider (S5) adjusts the headphone volume
-  - TAP resets cross-fader to center position
+  - TAP resets cross-fader to center position (only in multi-deck mode)
+
+**Coming in v1.8**
+
+  - Press Deck + Sync together to toggle between multi- and single-deck
+    modes
+  - In single-deck mode:
+  - Hold the Deck button down and touch any slider to reset it to its
+    default value
+  - Press Deck + Play together to change the active deck
 
 ## 
 

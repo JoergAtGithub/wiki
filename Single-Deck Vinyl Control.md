@@ -14,8 +14,6 @@ Mixxx would be more competitive with it.
   - DJ Fred only has one turntable but wants to use Mixxx's vinyl
     control feature. He needs a way to control both players with a
     single timecoded vinyl.
-  - DJ Jill wants to switch to Mixxx from djDecks, but can't do so
-    because she needs single-deck vinyl control.
   - DJ Laura is thinking about buying turntables and wants to experiment
     with vinyl control first. However, her parents have an old record
     player in her basement and she wants to see what it's like with

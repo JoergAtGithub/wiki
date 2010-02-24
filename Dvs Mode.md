@@ -15,3 +15,9 @@ changes:
   - Grays out/hides applicable GUI controls (or just suggests changing
     the skin)
   - Leaves LADSPA enabled on a per-deck basis
+  - Should still allow the user to load a song in a deck and play it
+    without using the timecodes, just in case of any problems with
+    timecode decks, however in this case verry small gui controls would
+    be sufficient.
+  - the gui should show relevant information about how the timecode is
+    controling the decks, e.g. connected, disconected,

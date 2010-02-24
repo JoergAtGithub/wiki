@@ -31,6 +31,16 @@ timecoded vinyl?
 > Via a button on the interface and/or hotkeys. When it's depressed,
 > that player receives timecode signals.
 
+a good default key would be the space bar. since this would be the most
+used function in a single deck setup.
+
+#### Indicating Active Deck
+
+in a single timecode setup it is essensial that it's really obvious to
+the user which deck is under timecode control. either by changing the
+colour of the active deck, or with a big symbol appearing over the
+active decks waveform.
+
 #### Preferences Dialog Considerations
 
   - There should probably be some "single-deck mode" checkbox in the

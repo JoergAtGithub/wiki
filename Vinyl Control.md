@@ -194,7 +194,7 @@ effort is best spent contributing to [xwax](http://www.xwax.co.uk/). Any
 additional timecode support added to xwax will be included in Mixxx. If
 you're interested in fixing some of the quirks that happen or adding
 extra features to the vinyl control support in Mixxx, email
-[Albert](/mailto/gamegod@users.sf.net) and he can help you get started
+[Albert](/mailto/alberts@mixxx.org) and he can help you get started
 working Mixxx's vinyl control code.
 
 ## Links

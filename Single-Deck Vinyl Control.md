@@ -152,3 +152,5 @@ below:
 
   - Josh Matthews
   - Luis de Bethencourt
+  - Owen Williams (is actively working on this issue in his tree:
+    lp:\~ywwg/mixxx/features\_xwax)

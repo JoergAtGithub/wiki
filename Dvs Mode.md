@@ -21,3 +21,7 @@ changes:
     be sufficient.
   - the gui should show relevant information about how the timecode is
     controling the decks, e.g. connected, disconected,
+  - integration with single deck vinyl control [Single-Deck Vinyl
+    Control](single-deck_vinyl_control) 
+  - any skins made for dvs mode should also support single deck vinyl
+    control.

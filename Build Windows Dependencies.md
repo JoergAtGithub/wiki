@@ -20,6 +20,7 @@ x64,) here are the steps:
     - Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':
       - If you have more than one processor/core, add ''/MP'' to ''QMAKE_CFLAGS''.
       - Add -Ox to ''QMAKE_CFLAGS_RELEASE'' for extra optimizations
+      - Change ''QMAKE_LFLAGS_LTCG'' to ''/LTCG:STATUS'' so it tells you how long it will take to generate each executable (Some of them take a loooong time (WebKit and QtScript) so it's nice to know.)
 ```
 
 #### Linking with ASMLIB

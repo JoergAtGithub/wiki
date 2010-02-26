@@ -146,8 +146,8 @@ you open them in VS:
     support.
 3.  Download and install the latest DirectX SDK:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
-4.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+4.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 6.  Run `dx_setenv.cmd`, the DirectX SDK environment variable setup
@@ -291,8 +291,8 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -352,8 +352,8 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
 1.  Edit `libvorbis-1.2.3\win32\VS2008\libogg.vsprops` and make sure the
     LIBOGG\_VERSION at the bottom matches the version of libogg you
     built above.
-2.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+2.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, telling it to use
@@ -404,8 +404,8 @@ given below.)
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -442,8 +442,8 @@ them too (detailed below.)
 
 1.  Download & unpack the latest [zlib
     source](http://www.winimage.com/zLibDll/)
-2.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+2.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, telling it to use
@@ -501,8 +501,8 @@ given below.)
 1.  Edit the `faad2-2.7\libfaad\libfaad2.def` file and add the following
     lines to the bottom: `NeAACDecPostSeekReset @10
     NeAACDecDecode2 @11`
-2.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+2.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 4.  Run the Visual Studio GUI from this command line, specifying the
@@ -548,8 +548,8 @@ below.)
 
 ### Build
 
-1.  Start the platform SDK command prompt (Start?Microsoft Windows
-    SDK?CMD Shell)
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
 2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 3.  Run the Visual Studio GUI from this command line, telling it to use
@@ -574,6 +574,47 @@ below.)
     `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
     mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
+
+## libHSS1394
+
+Stanton's HSS1394 is GPL and provides MSVC solution files which makes
+things nice, but you need to make a couple of changes to the project to
+get it to work correctly with Mixxx. (Step-by-step below.)
+
+### Build
+
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `HSS1394\code\builds\win32\libHSS1394.vcproj` file via
+    File-\>Open-\>Project/Solution.
+5.  Choose the Release configuration and the Win32 platform
+6.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+7.  Edit the `CVhpdThread.cpp` source file (expand the `libHSS1394`
+    project, then `VPHD1394` and it's under that) and comment out line
+    166 like
+    so:`//::PostMessage(mParentWnd,WM_USER_THREAD_TERMINATED,0,0);`
+8.  Save the file.
+9.  Tune the project settings
+    1.  Right-click the libHSS1394 project and click Properties.
+    2.  Under Configuration Properties, General, set Use of MFC to "Use
+        MFC in a Shared DLL"
+10. Right click `libHSS1394` and click Build.
+11. When it finishes, you'll see that it failed, but that's just the
+    Doxygen generation which you don't need. Try to build it again and
+    it should say "1 up to date." If so, you're good. Copy the following
+    files into `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `HSS1394\lib\libHSS1394_Win32_Release.lib (rename to hss1394.lib)
+    HSS1394\inc (the whole directory, and rename it to HSS1394)`
 
 # Optimizations
 

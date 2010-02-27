@@ -93,17 +93,24 @@ Then, to dump the data, you just issue `amidi -p hw:1,0,0 -d` (Replace
 hw:1,0,0 with whatever device ID your controller shows in the list.) See
 "All" below for how to interpret this data.
 
-#### Windows
+#### Windows & All OSs using Mixxx \>=1.8.0
 
 Start Mixxx from a command prompt using the `--midiDebug` option like
 so: `C:\Program Files\Mixxx>mixxx --midiDebug` Then look at the
 Mixxx.log file which will contain all of the MIDI messages Mixxx
-receives. You can download
+receives.
+
+On Windows, you can download
 [tail.exe](http://tailforwin32.sourceforge.net/) to watch it as new
-messages are added. Or [build Mixxx](Compiling%20on%20Windows) with
+messages are added or [build Mixxx](Compiling%20on%20Windows) with
 `scons msvcdebug=1` and run it with the `--midiDebug` option. This will
 cause it to pop up a console window when you run it and the MIDI
 messages received by your controller will be displayed there.
+
+#### Mac OSX
+
+Download the free [MIDI Monitor](http://www.snoize.com/MIDIMonitor/)
+utility and run it.
 
 #### All
 
@@ -114,7 +121,7 @@ which button/slider/control sends what command.
 
 For example, when you move a slider, you might see
 
-| Linux                                           | Windows                                                                                                                                                                                                                                            |
+| Linux & Mac                                     | Windows                                                                                                                                                                                                                                            |
 | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `B0 02 3D
 B0 02 3A

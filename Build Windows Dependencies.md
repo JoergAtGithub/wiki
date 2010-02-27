@@ -603,7 +603,7 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     project, then `VPHD1394` and it's under that) and comment out line
     166 like
     so:`//::PostMessage(mParentWnd,WM_USER_THREAD_TERMINATED,0,0);`
-8.  Save the file.
+8.  Save the file
 9.  Tune the project settings
     1.  Right-click the libHSS1394 project and click Properties.
     2.  Under Configuration Properties, General, set Use of MFC to "Use
@@ -615,6 +615,10 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     files into `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `HSS1394\lib\libHSS1394_Win32_Release.lib (rename to hss1394.lib)
     HSS1394\inc (the whole directory, and rename it to HSS1394)`
+12. Edit the `mixxx-win[32|64]lib-msvc\HSS1394\HSS1394Types.h` source
+    file and change line 65 to:\<code\> \#ifdef
+    <span class="underline">WINDOWS</span>\</code\>
+13. Save the file
 
 # Optimizations
 

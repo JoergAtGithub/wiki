@@ -23,7 +23,7 @@ file are in trunk and can be downloaded from here:
 Look at the "Coming in v1.8" sub-sections of the [Mixxx user's guide for
 the SCS.3d](stanton_scs.3d_mixxx_user_guide) for the new features.
 
-### 1.7.0+
+### 1.7.x
 
 **Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
 before starting Mixxx.**

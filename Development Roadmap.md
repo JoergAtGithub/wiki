@@ -1,5 +1,9 @@
 # Development Roadmap
 
+This page represents the opinion of the Mixxx development team, as such
+it is not editable by general users. If you have comments or
+suggestions, please [contact us](http://www.mixxx.org/support.php).
+
 ## Main Design Principles
 
 These are some core goals which are critical for Mixxx to become a
@@ -9,13 +13,6 @@ world-class application, somewhat in order of importance:
   - **Performance** - Optimize latency over throughput
   - Support a good level of latency for as many configurations as
     possible
-  - Follow [Real-time application design
-    principles](http://rt.wiki.kernel.org/index.php/HOWTO:_Build_an_RT-application)
-    which will result in optimal latency even on non-RT systems.
-  - Follow the [C++ software optimization
-    guide](http://www.agner.org/optimize/optimizing_cpp.pdf) to choose
-    data and program structures that will compile into the most
-    efficient code.
   - **Usability** - Most functions must be bonehead-easy to use. The
     manual must not be required reading\!
   - Good hardware support
@@ -67,48 +64,40 @@ Side Projects
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
-### 1.9.0 .. 1.10.0 ?
+### 1.9.0
 
-Release Date: September 2010
+Release Date: Late-2010/Early-2011
 
-Under the Hood Improvements
+No firm roadmap beyond 1.8.x as yet, will be decided once 1.8.0 cycle is
+complete.
 
-  - [Revamped Control System](Revamped%20Control%20System)
+Ideas for possible improvements include:
+
   - SSE Enhanced Engine
-  - Timing engine 
-  - Rubber Band support
-  - BPM detection rework
-
-New Features
-
-  - LADSPA/LV2 Effects
+  - Script Timing
+  - Finish LADSPA effects
   - [DVS mode](DVS%20mode)
   - n-Deck
   - External Mixer Mode
   - Incremental Library Enhancements (e.g. inline track previews)
 
-### ???.???
+### Probably Longer Term
 
-Please don't add new features here unless there is a specification for
-them. To add to the list of ideas that would be cool in Mixxx, add them
-to [feature\_discussion](feature_discussion) or file a Wishlist bug at
+To add to the list of ideas that would be cool in Mixxx, add them to
+[feature\_discussion](feature_discussion) or file a Wishlist bug at
 Launchpad.
 
-Random ideas for new features:
+Some reasonably sensible sample of wishlist ideas for new features:
 
   - [Skinning Engine](Skinning%20Engine)
-  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
-  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html), see
-    also [Qt
-    Linguist](http://doc.trolltech.com/4.5/linguist-manual.html) and
-    [Launchpad
-    translations](https://help.launchpad.net/Translations/YourProject)
-  - [Performance improvements](Performance%20improvements)
+  - [Revamped Control System](Revamped%20Control%20System)
+  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
   - Macro/script playback
   - Sampler
   - Inline track previews
+  - Better BPM detection
 
-## Previous Release Roadmaps
+## Historical Release Roadmaps
 
 ### 1.7.0
 

@@ -129,7 +129,7 @@ The following projects were accepted for Google Summer of Code 2008:
   - [Stability and Crash
     Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
 
-Additional [SoC Student Info](SoC%20Student%20Info)
+Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 
 ## Past Events
 

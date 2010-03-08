@@ -206,6 +206,15 @@ are:
     deleted when they're not being used anymore, but stuff like the
     analyser queue makes that tricky. (Use smart pointers?)
 
+## Tuning/Optimization
+
+Links to information on tuning DB access for best
+
+  - <http://katastrophos.net/andre/blog/2007/01/04/sqlite-performance-tuning-and-optimization-on-embedded-systems/>
+    (see links at the bottom of this page as well)
+  - <http://theocacao.com/document.page/70>
+  - <http://www.sqlite.org/cvstrac/wiki?p=PerformanceTuning>
+
 ## Team
 
 If you're interested in helping to code this feature, sign up your name

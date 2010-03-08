@@ -208,7 +208,7 @@ are:
 
 ## Tuning/Optimization
 
-Links to information on tuning DB access for best
+Links to information on tuning DB access for best performance:
 
   - <http://katastrophos.net/andre/blog/2007/01/04/sqlite-performance-tuning-and-optimization-on-embedded-systems/>
     (see links at the bottom of this page as well)

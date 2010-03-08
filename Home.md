@@ -5,6 +5,11 @@ encompassing performing musicians, C++ addicts, amateur DJs and even
 just casual users. The Mixxx Wiki contains useful information for users,
 developers, and artists, and is summarized in the categories below.
 
+Most of the contents of this wiki can be edited by anyone, the main
+exception to this is the [development\_roadmap](development_roadmap)
+which is a fairly authoritative description of the development team's
+plans.
+
 ## User Documentation
 
   - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make

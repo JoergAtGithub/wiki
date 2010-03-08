@@ -112,11 +112,13 @@ plans.
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture)
 
-## Google Summer of Code 2008 (Archived)
+## Google Summer of Code
 
-**GSoC 2009 (Read):** Due to a lack of time our core developers will be
-able to dedicate to Mixxx this Summer, **Mixxx will not be participating
-in GSoC 2009**.
+GSoC 2010: Mixxx is planning to apply for GSoC 2010, our project ideas
+page will appear here: [gsoc2010ideas](gsoc2010ideas)
+
+GSoC 2009: Due to a lack of core developer time Mixxx did not
+participate in GSoC 2009.
 
 The following projects were accepted for Google Summer of Code 2008:
 

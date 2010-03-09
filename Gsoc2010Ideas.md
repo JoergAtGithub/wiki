@@ -4,14 +4,14 @@
 
 #### Sampler Decks
 
-### Overview
+##### Overview
 
 Mixxx currently has 2 main decks for playing audio tracks. Many DJs like
 to incorporate sample tracks into their sets so that they can enhance
 their sets by playing extra samples on command. The goal of this project
 is to support this workflow by adding multiple samplers into Mixxx.
 
-### Project Deliverables
+##### Project Deliverables
 
   - Implement Mixxx-engine support for multiple samplers
     1.  Model a new Sampler class off of the Player

@@ -49,6 +49,29 @@ engine to support enabling or disabling various mixing features.
 
 #### Plug and Play MIDI Mode / Community MIDI Mappings
 
+##### Overview
+
+Mixxx currently supports a wide-range of hardware MIDI controllers that
+DJs can use to perform with. Each supported MIDI controller has a
+"mapping" file that is bundled with Mixxx, but this mapping must be
+manually selected by the user before their controller works. The aim of
+this project is to increase the usability for new users by automatically
+selecting the correct MIDI mapping and to provide an intelligent
+workflow for when an unsupported MIDI device is connected.
+
+##### Project Deliverables
+
+  - Implement auto-selection of MIDI mappings based on connected MIDI
+    devices.
+  - For unsupported devices, provide a UI that helps make that
+    controller functional.
+  - Must check mixxx.org for additional community-provided mappings.
+  - Must allow ratings and comments to be made on community-provided
+    mappings.
+  - Must allow the creation of mappings using our existing MIDI Learning
+    Wizard.
+  - Must allow user-created mappings to be uploaded to mixxx.org.
+
 #### Finish LADSPA Effects Work
 
 #### Ardour or Ableton Live Integration

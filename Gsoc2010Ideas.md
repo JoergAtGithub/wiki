@@ -74,4 +74,23 @@ workflow for when an unsupported MIDI device is connected.
 
 #### Finish LADSPA Effects Work
 
+##### Overview
+
+A previous GSoC student wrote a LADSPA plugin interface, but did not
+finish integrating it into Mixxx. Effects are one of our top requested
+features so this project is very high impact and will allow Mixxx's
+users to be much more creative with their DJ sets.
+
+##### Project Deliverables
+
+  - Complete plugin integration into the GUI
+    1.  Must allow selection and mapping of available LADSPA plugins
+        into GUI effects slots
+    2.  Must connect GUI controls to the mixing engine to change
+        parameters of loaded plugins
+  - Design out user-friendly way to load new LADSPA plugins downloaded
+    from the Internet into Mixxx
+    1.  Must allow a user to select a LADSPA plugin to load from their
+        hard drive
+
 #### Ableton Live Integration

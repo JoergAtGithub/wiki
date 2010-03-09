@@ -26,6 +26,27 @@ is to support this workflow by adding multiple samplers into Mixxx.
 
 #### DVS Mode / External Mixer Mode
 
+##### Overview
+
+Many Mixxx users would like to use Mixxx with an external mixer instead
+of making use of Mixxx's mixing engine to mix the output of each audio
+deck. The user may optionally want to disable CPU-intense processing
+such as Effects and EQ processing in favor of using their mixer. This
+project entails redesigning the master mixing portion of the Mixxx
+engine to support enabling or disabling various mixing features.
+
+##### Project Deliverables
+
+  - Implement Mixxx-engine support for granularly enabling or disabling
+    features such as the mixing of deck outputs and the EQ or effects
+    processing of each deck.
+  - Enhance the Mixxx preferences dialog to provide a UI for configuring
+    the mixing engine. 
+    1.  Must allow for configuring the output soundcard of each Mixxx
+        deck
+    2.  Must provide options for enabling and disabling engine features
+        such as Effects and EQ
+
 #### Plug and Play MIDI Mode / Community MIDI Mappings
 
 #### Finish LADSPA Effects Work

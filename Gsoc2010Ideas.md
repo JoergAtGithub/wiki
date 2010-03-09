@@ -74,4 +74,4 @@ workflow for when an unsupported MIDI device is connected.
 
 #### Finish LADSPA Effects Work
 
-#### Ardour or Ableton Live Integration
+#### Ableton Live Integration

@@ -14,7 +14,7 @@ is to support this workflow by adding multiple samplers into Mixxx.
 ##### Project Deliverables
 
   - Implement Mixxx-engine support for multiple samplers
-    1.  Model a new Sampler class off of the Player
+    1.  Model a new Sampler class off of the Player class
     2.  Provide code for other parts of Mixxx (e.g. the GUI widget) to
         control the Sampler 
   - Implement a Sampler GUI widget that displays: 

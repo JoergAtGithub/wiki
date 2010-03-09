@@ -18,7 +18,8 @@ is to support this workflow by adding multiple samplers into Mixxx.
     2.  Provide code for other parts of Mixxx (e.g. the GUI widget) to
         control the Sampler 
   - Implement a Sampler GUI widget that displays: 
-    1.  The overview waveform of the sample audio
+    1.  The overview waveform of the sample audio (using our
+        pre-existing waveform widgets)
     2.  Buttons to play/pause the sample, and a button to enable looping
         of the sample 
     3.  Button to eject the current track from the sampler

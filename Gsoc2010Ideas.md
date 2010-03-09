@@ -88,8 +88,8 @@ users to be much more creative with their DJ sets.
         into GUI effects slots
     2.  Must connect GUI controls to the mixing engine to change
         parameters of loaded plugins
-  - Design out user-friendly way to load new LADSPA plugins downloaded
-    from the Internet into Mixxx
+  - Design user-friendly way to load new LADSPA plugins downloaded from
+    the Internet into Mixxx
     1.  Must allow a user to select a LADSPA plugin to load from their
         hard drive
 

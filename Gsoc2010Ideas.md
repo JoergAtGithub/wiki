@@ -65,12 +65,12 @@ workflow for when an unsupported MIDI device is connected.
     devices.
   - For unsupported devices, provide a UI that helps make that
     controller functional.
-  - Must check mixxx.org for additional community-provided mappings.
-  - Must allow ratings and comments to be made on community-provided
-    mappings.
-  - Must allow the creation of mappings using our existing MIDI Learning
-    Wizard.
-  - Must allow user-created mappings to be uploaded to mixxx.org.
+    1.  Must check mixxx.org for additional community-provided mappings.
+    2.  Must allow ratings and comments to be made on community-provided
+        mappings.
+    3.  Must allow the creation of mappings using our existing MIDI
+        Learning Wizard.
+    4.  Must allow user-created mappings to be uploaded to mixxx.org.
 
 #### Finish LADSPA Effects Work
 

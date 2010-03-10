@@ -78,8 +78,8 @@ workflow for when an unsupported MIDI device is connected.
 
 A previous GSoC student wrote a LADSPA plugin interface, but did not
 finish integrating it into Mixxx. Effects are one of our top requested
-features so this project is very high impact and will allow Mixxx's
-users to be much more creative with their DJ sets.
+features so this project is very high impact and will allow Mixxx users
+to be much more creative with their DJ sets.
 
 ##### Project Deliverables
 

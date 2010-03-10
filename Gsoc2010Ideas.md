@@ -2,6 +2,39 @@
 
 #### Skinning Engine Prototype
 
+##### Overview
+
+Over the last 5 years, Mixxx has grown to provide useful functionality
+for an increasingly diverse group of DJs. Some of our commercial
+competitors adapted to meet the needs of these same types of DJs at a
+cost of increasing their user interface complexity. As we like to put
+it, the number of knobs per square inch of UI in audio applications
+tends to infinity. As a result, the learning curve for audio
+applications is often quite steep, and in order to keep Mixxx accessible
+to new DJs, Mixxx's UI must not suffer the same fate.
+
+The goal of this project is to explore and develop a scalable user
+interface that allows different types of DJs to always have the
+simplest, easiest possible UI. This project will also aim to solve
+technical shortcomings present in Mixxx's existing skinning engine.
+Regular feedback from Mixxx's skin artists during development will help
+ensure the project direction is aligned with the vision of our artists.
+
+##### Project Deliverables
+
+  - Analysis of existing user interface, commercial competitors' UIs,
+    and existing proposed solutions
+    [1](http://mixxx.org/forums/viewtopic.php?f=1&t=729)
+    [2](http://mixxx.org/wiki/doku.php/skinning_engine)
+    [3](http://www.mail-archive.com/mixxx-devel@lists.sourceforge.net/msg02654.html)
+    [4](http://article.gmane.org/gmane.comp.multimedia.mixxx.devel/2804).
+  - Implement a working prototype user interface for Mixxx
+    1.  Must provide widget grouping for like controls
+    2.  Widget groups' visibility must be toggleable (eg. so that
+        looping controls can be hidden)
+    3.  Widget groups must be re-arrangeable.
+    4.  Must provide resizable main window
+
 #### Sampler Decks
 
 ##### Overview

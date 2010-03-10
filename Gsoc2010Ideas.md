@@ -34,6 +34,7 @@ ensure the project direction is aligned with the vision of our artists.
         looping controls can be hidden)
     3.  Widget groups must be re-arrangeable.
     4.  Must provide resizable main window
+    5.  Must provide layout or other consideration for fullscreen mode.
 
 #### Sampler Decks
 

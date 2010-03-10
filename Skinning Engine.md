@@ -5,11 +5,11 @@ Although the current skinning engine is usable, it is not very flexible.
 Developers can discuss their ideas for a new skinning engine on this
 page.
 
-## Active discussion
+## Forum discussion
 
-There's currently an active discussion going on in the forums:
+There was a productive discussion that happened in the forums:
 <http://mixxx.org/forums/viewtopic.php?f=1&t=729> Please check the
-forums for more up-to-date information.
+forums for additional information.
 
 ## Ideas for Skinning Engines
 
@@ -67,6 +67,28 @@ an advanced skinning engine for Mixxx.
   - The window itself should be themable/deformable too. Could be
     achieved by either composite or with a mask (or both)
 
+## Vector-based Skinning Engine
+
+A vector graphics based GUI (like with SVG files) which would allow
+dynamic resizing and storage efficiency.
+
+  - [Qt SVG Renderer class
+    info](http://doc.trolltech.com/4.5/qsvgrenderer.html#details)
+
+#### Pro
+
+  - Qt supports SVG functionality.
+
+#### Con
+
+  - Interface elements will stretch - a layout system instead would look
+    much cleaner and would be more usable on most systems.
+  - Current skins will have to be abandoned or recreated using SVG
+  - Slow. Must implement pre-rendering and caching layer for any hope of
+    this being usable.
+
+# Ideas that are no longer under consideration
+
 ## Nui3 based Skinning Engine
 
 Libnui is a cross-platform 3D accelerated GUI library. More information
@@ -85,21 +107,3 @@ is available at <http://www.libnui.net/>
     want a responsive GUI
   - There is a software renderer included, but it is very slow at the
     moment. *Developers are improving it, but it's not a big priority.*
-
-## Vector-based Skinning Engine
-
-A vector graphics based GUI (like with SVG files) which would allow
-dynamic resizing and storage efficiency.
-
-  - [Qt SVG Renderer class
-    info](http://doc.trolltech.com/4.5/qsvgrenderer.html#details)
-
-#### Pro
-
-  - Qt supports SVG functionality, so it's not too hard to implement
-
-#### Con
-
-  - Interface elements will stretch - a layout system instead would look
-    much cleaner and would be more usable on most systems
-  - Current skins will have to be abandoned or recreated using SVG

@@ -114,8 +114,8 @@ plans.
 
 ## Google Summer of Code
 
-GSoC 2010: Mixxx is planning to apply for GSoC 2010, our project ideas
-page will appear here: [gsoc2010ideas](gsoc2010ideas)
+GSoC 2010: \*Mixxx is planning to apply for GSoC 2010\* -- for a list of
+potential ideas see [gsoc2010ideas](gsoc2010ideas)
 
 GSoC 2009: Due to a lack of core developer time Mixxx did not
 participate in GSoC 2009.

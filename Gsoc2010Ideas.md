@@ -1,4 +1,4 @@
-### Google Summer of Code 2010 Project Ideas
+# Google Summer of Code 2010 Project Ideas
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of Code 2010](http://socghop.appspot.com/). Each
@@ -8,9 +8,9 @@ excited about. Detailed contact and preparation advice for students will
 appear shortly if we are accepted, for the really eager please contact
 Adam Davison at adamd -A-T- mixxx.org if you require more information.
 
-#### Skinning Engine Prototype
+## Skinning Engine Prototype
 
-##### Overview
+### Overview
 
 Over the last 5 years, Mixxx has grown to provide useful functionality
 for an increasingly diverse group of DJs. Some of our commercial
@@ -29,7 +29,7 @@ technical shortcomings present in Mixxx's existing skinning engine.
 Regular feedback from Mixxx's skin artists during development will help
 ensure the project direction is aligned with the vision of our artists.
 
-##### Project Deliverables
+### Project Deliverables
 
   - Analysis of existing user interface, commercial competitors' UIs,
     and existing proposed solutions
@@ -45,16 +45,16 @@ ensure the project direction is aligned with the vision of our artists.
     4.  Must provide resizable main window
     5.  Must provide layout or other consideration for fullscreen mode.
 
-#### Sampler Decks
+## Sampler Decks
 
-##### Overview
+### Overview
 
 Mixxx currently has 2 main decks for playing audio tracks. Many DJs like
 to incorporate sample tracks into their sets so that they can enhance
 their sets by playing extra samples on command. The goal of this project
 is to support this workflow by adding multiple samplers into Mixxx.
 
-##### Project Deliverables
+### Project Deliverables
 
   - Implement Mixxx-engine support for multiple samplers
     1.  Model a new Sampler class off of the Player class
@@ -67,9 +67,9 @@ is to support this workflow by adding multiple samplers into Mixxx.
         of the sample 
     3.  Button to eject the current track from the sampler
 
-#### DVS Mode / External Mixer Mode
+## DVS Mode / External Mixer Mode
 
-##### Overview
+### Overview
 
 Many Mixxx users would like to use Mixxx with an external mixer instead
 of making use of Mixxx's mixing engine to mix the output of each audio
@@ -78,7 +78,7 @@ such as Effects and EQ processing in favor of using their mixer. This
 project entails redesigning the master mixing portion of the Mixxx
 engine to support enabling or disabling various mixing features.
 
-##### Project Deliverables
+### Project Deliverables
 
   - Implement Mixxx-engine support for granularly enabling or disabling
     features such as the mixing of deck outputs and the EQ or effects
@@ -90,9 +90,9 @@ engine to support enabling or disabling various mixing features.
     2.  Must provide options for enabling and disabling engine features
         such as Effects and EQ
 
-#### Plug and Play MIDI Mode / Community MIDI Mappings
+## Plug and Play MIDI Mode / Community MIDI Mappings
 
-##### Overview
+### Overview
 
 Mixxx currently supports a wide-range of hardware MIDI controllers that
 DJs can use to perform with. Each supported MIDI controller has a
@@ -102,7 +102,7 @@ this project is to increase the usability for new users by automatically
 selecting the correct MIDI mapping and to provide an intelligent
 workflow for when an unsupported MIDI device is connected.
 
-##### Project Deliverables
+### Project Deliverables
 
   - Implement auto-selection of MIDI mappings based on connected MIDI
     devices.
@@ -115,16 +115,16 @@ workflow for when an unsupported MIDI device is connected.
         Learning Wizard.
     4.  Must allow user-created mappings to be uploaded to mixxx.org.
 
-#### Finish LADSPA Effects Work
+## LADSPA Effects
 
-##### Overview
+### Overview
 
 A previous GSoC student wrote a LADSPA plugin interface for Mixxx, but
 did not have time to write a user interface. Effects are one of our top
 requested features so this project is very high impact and will allow
 Mixxx users to be much more creative with their DJ sets.
 
-##### Project Deliverables
+### Project Deliverables
 
   - Complete plugin integration into the GUI
     1.  Must allow selection and mapping of available LADSPA plugins
@@ -136,8 +136,14 @@ Mixxx users to be much more creative with their DJ sets.
     1.  Must allow a user to select a LADSPA plugin to load from their
         hard drive
 
-#### Something Else\!
+## Something Else\!
+
+### Overview
 
 As always with Summer of Code, you aren't limited to the suggestions
 we've made here. If you've got a great idea for a project involving
 Mixxx then we're looking forward to hearing about it.
+
+### Project Deliverables
+
+  - Something awesome

@@ -14,12 +14,12 @@ Adam Davison at adamd -A-T- mixxx.org if you require more information.
 
 Over the last 5 years, Mixxx has grown to provide useful functionality
 for an increasingly diverse group of DJs. Some of our commercial
-competitors adapted to meet the needs of these same types of DJs at a
-cost of increasing their user interface complexity. As we like to put
-it, the number of knobs per square inch of UI in audio applications
-tends to infinity. As a result, the learning curve for audio
-applications is often quite steep, and in order to keep Mixxx accessible
-to new DJs, Mixxx's UI must not suffer the same fate.
+competitors have adapted to meet the needs of these same types of DJs,
+but at a cost of increasing their user interface complexity. As we like
+to put it, the number of knobs per square inch of UI in audio
+applications tends to infinity. As a result, the learning curve for
+audio applications is often quite steep, and in order to keep Mixxx
+accessible to new DJs, Mixxx's UI must not suffer the same fate.
 
 We recognise that changing the whole UI is a huge task, so the goal of
 this project is to explore and develop a prototype of a more scalable

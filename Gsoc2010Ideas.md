@@ -122,7 +122,9 @@ workflow for when an unsupported MIDI device is connected.
 A previous GSoC student wrote a LADSPA plugin interface for Mixxx, but
 did not have time to write a user interface. Effects are one of our top
 requested features so this project is very high impact and will allow
-Mixxx users to be much more creative with their DJ sets.
+Mixxx users to be much more creative with their DJ sets. This project
+will require a student with a willingness to learn about creating user
+interfaces with Qt.
 
 ### Project Deliverables
 

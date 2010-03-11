@@ -1,4 +1,12 @@
-### Google Summer of Code 2010 Project Ideas Page
+### Google Summer of Code 2010 Project Ideas
+
+This page lists the suggested projects for students working on Mixxx as
+part of [Google Summer of Code 2010](http://socghop.appspot.com/). Each
+of these projects represents something that we think would make a really
+big difference to our users and that we as a development team are really
+excited about. Detailed contact and preparation advice for students will
+appear shortly if we are accepted, for the really eager please contact
+Adam Davison at adamd -A-T- mixxx.org if you require more information.
 
 #### Skinning Engine Prototype
 
@@ -13,8 +21,9 @@ tends to infinity. As a result, the learning curve for audio
 applications is often quite steep, and in order to keep Mixxx accessible
 to new DJs, Mixxx's UI must not suffer the same fate.
 
-The goal of this project is to explore and develop a scalable user
-interface that allows different types of DJs to always have the
+We recognise that changing the whole UI is a huge task, so the goal of
+this project is to explore and develop a prototype of a more scalable
+user interface that allows different types of DJs to always have the
 simplest, easiest possible UI. This project will also aim to solve
 technical shortcomings present in Mixxx's existing skinning engine.
 Regular feedback from Mixxx's skin artists during development will help
@@ -110,10 +119,10 @@ workflow for when an unsupported MIDI device is connected.
 
 ##### Overview
 
-A previous GSoC student wrote a LADSPA plugin interface, but did not
-finish integrating it into Mixxx. Effects are one of our top requested
-features so this project is very high impact and will allow Mixxx users
-to be much more creative with their DJ sets.
+A previous GSoC student wrote a LADSPA plugin interface for Mixxx, but
+did not have time to write a user interface. Effects are one of our top
+requested features so this project is very high impact and will allow
+Mixxx users to be much more creative with their DJ sets.
 
 ##### Project Deliverables
 
@@ -127,4 +136,8 @@ to be much more creative with their DJ sets.
     1.  Must allow a user to select a LADSPA plugin to load from their
         hard drive
 
-#### Ableton Live Integration
+#### Something Else\!
+
+As always with Summer of Code, you aren't limited to the suggestions
+we've made here. If you've got a great idea for a project involving
+Mixxx then we're looking forward to hearing about it.

@@ -125,7 +125,7 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
 
 If you can't find it, search your computer for "mixxxtrack.xml"
 
-  - If on Windows, Click Start-\>Run, type `$USERPROFILE$\Local
+  - If on Windows, Click Start-\>Run, type `%USERPROFILE%\Local
     Settings\Application Data\Mixxx` and click OK. (If you want to use
     "Find files/folders," make sure to open "Advanced Options" and mark
     "Search Hidden Files/Folders".)

@@ -261,6 +261,14 @@ The lines starting with \* define default values. The "@" in @audio
 tells PAM that audio is a group. One can also set permissions per user
 by writing it without the "@".
 
+Another great tip is to use the new BFS scheduler by Con Kolivas. This
+new scheduler was designed for CPUs with a small number of logical cores
+(1-16). It gives much lower latencies for these kinds of setups.
+
+The FAQ for the BFS Scheduler is at:
+<http://ck.kolivas.org/patches/bfs/bfs-faq.txt>. The launchpad page for
+a PPA by Darxus is at: <https://launchpad.net/~darxus/+archive/bfsbfq>.
+
 ## Samplerates
 
 The soundcard samplerate describes the temporal resolution of its audio.

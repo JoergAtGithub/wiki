@@ -29,6 +29,10 @@ technical shortcomings present in Mixxx's existing skinning engine.
 Regular feedback from Mixxx's skin artists during development will help
 ensure the project direction is aligned with the vision of our artists.
 
+This project will involve working heavily with Qt. It is a very open
+ended project ideal for an ambitious student who is interested in user
+interface design.
+
 ### Project Deliverables
 
   - Analysis of existing user interface, commercial competitors' UIs,
@@ -43,7 +47,6 @@ ensure the project direction is aligned with the vision of our artists.
         looping controls can be hidden)
     3.  Widget groups must be re-arrangeable.
     4.  Must provide resizable main window
-    5.  Must provide layout or other consideration for fullscreen mode.
 
 ## Sampler Decks
 
@@ -53,6 +56,11 @@ Mixxx currently has 2 main decks for playing audio tracks. Many DJs like
 to incorporate sample tracks into their sets so that they can enhance
 their sets by playing extra samples on command. The goal of this project
 is to support this workflow by adding multiple samplers into Mixxx.
+
+This project will require the student to work on both the audio core and
+user interface of Mixxx. It will give the student an opportunity to take
+their design all the way through implementation to real-world use and to
+hear user feedback on their work.
 
 ### Project Deliverables
 
@@ -78,6 +86,10 @@ such as Effects and EQ processing in favor of using their mixer. This
 project entails redesigning the master mixing portion of the Mixxx
 engine to support enabling or disabling various mixing features.
 
+This project is focussed on the audio processing parts of Mixxx. Ideal
+for a student interested in the technical aspects of low-latency audio
+software development.
+
 ### Project Deliverables
 
   - Implement Mixxx-engine support for granularly enabling or disabling
@@ -102,18 +114,22 @@ this project is to increase the usability for new users by automatically
 selecting the correct MIDI mapping and to provide an intelligent
 workflow for when an unsupported MIDI device is connected.
 
+This project will involve a lot of time thinking about use cases,
+dealing with users and understanding their requirements. It would be a
+great opportunity for a student to get involved with the Mixxx
+community. The student will also have the opportunity to borrow a MIDI
+controller from the development team for the duration of the project.
+
 ### Project Deliverables
 
   - Implement auto-selection of MIDI mappings based on connected MIDI
     devices.
-  - For unsupported devices, provide a UI that helps make that
-    controller functional.
-    1.  Must check mixxx.org for additional community-provided mappings.
-    2.  Must allow ratings and comments to be made on community-provided
+  - For unsupported devices, implement a UI and simple server-side
+    functionality to:
+    1.  Check mixxx.org for additional community-provided mappings.
+    2.  Allow ratings and comments to be made on community-provided
         mappings.
-    3.  Must allow the creation of mappings using our existing MIDI
-        Learning Wizard.
-    4.  Must allow user-created mappings to be uploaded to mixxx.org.
+    3.  Allow user-created mappings to be uploaded to mixxx.org.
 
 ## LADSPA Effects
 
@@ -122,9 +138,11 @@ workflow for when an unsupported MIDI device is connected.
 A previous GSoC student wrote a LADSPA plugin interface for Mixxx, but
 did not have time to write a user interface. Effects are one of our top
 requested features so this project is very high impact and will allow
-Mixxx users to be much more creative with their DJ sets. This project
-will require a student with a willingness to learn about creating user
-interfaces with Qt.
+Mixxx users to be much more creative with their DJ sets.
+
+This project will involve working heavily with Qt in a highly visible
+role and would be ideal for a student interested in user interface
+design and dealing with users.
 
 ### Project Deliverables
 

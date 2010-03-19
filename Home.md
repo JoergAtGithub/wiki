@@ -114,8 +114,13 @@ plans.
 
 ## Google Summer of Code
 
-GSoC 2010: **Mixxx is planning to apply for GSoC 2010** -- for a list of
-potential ideas see [gsoc2010ideas](gsoc2010ideas)
+GSoC 2010: Mixxx is happy to announce that we are taking part in GSoC
+2010, the student application period opens shortly
+
+  - See the list of projects on offer on our ideas page:
+    [gsoc2010ideas](gsoc2010ideas)
+  - Some advice for students thinking of applying:
+    [gsoc2010advice](gsoc2010advice)
 
 GSoC 2009: Due to a lack of core developer time Mixxx did not
 participate in GSoC 2009.

@@ -10,6 +10,9 @@ exception to this is the [development\_roadmap](development_roadmap)
 which is a fairly authoritative description of the development team's
 plans.
 
+\*\*Mixxx will be participating in Google Summer of Code 2010: \*\* See
+[below](start#summer_of_code) for more info.
+
 ## User Documentation
 
   - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make

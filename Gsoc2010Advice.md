@@ -43,4 +43,60 @@ is relatively small, students' work often makes a large impact. During
 and after your Summer of Code project you will have the opportunity to
 put your work in the hands of real DJs and hear how they've used it.
 Past students have had a lot of fun working on Mixxx and learned a lot
-at the same time.
+at the same time. If you want challenging problems, freedom to develop
+your ideas, interesting people and an all-round brilliant Summer, then
+apply to work on Mixxx.
+
+## Am I Experienced Enough?
+
+This is a common question asked by prospective students, the answer is
+generally: "Yes". The Mixxx Summer of Code team value intelligence and
+enthusiasm above specific knowledge of the libraries or algorithms we
+use. We have found in the past that an interested and motivated student
+who is willing to learn is more valuable than anything else.
+
+We also value general software design and development experience above
+specific knowledge of a library or API. For example, if you've never
+used Qt before but have done lots of Java and Gtk+ UI development then
+you should make sure you let us know about it in your application.
+
+Of course if you do have direct experience with the tools we use, you
+should definitely tell us about that too. The main external tools we
+rely on are Qt, scons, portaudio and bzr.
+
+## How Do I Write A Great Application?
+
+Firstly, think about your choice of project carefully, you're going to
+be doing it for a couple of months, so it's important that you choose
+something you're going to enjoy. Once you've made your mind up:
+
+1.  Make sure you've thought about the project and understand what it
+    entails
+2.  Don't be afraid to come up with original solutions to the problem
+3.  Don't be afraid to give us lots of detail about how you would
+    approach the project
+    1.  Things like UI mockups are very much encouraged where
+        appropriate
+4.  Consider how much time you need for each part of the project
+
+Overall, your application should make us believe that you are capable of
+completing the project and delivering the functionality to our users. If
+you aren't sure about anything, get in touch with us, we're happy to
+advise you.
+
+Some other (entirely optional) things you might consider doing:
+
+1.  Why not introduce yourself on the mailing list? Even just to say
+    hello, your name and what you're applying to work on
+2.  If you don't have Mixxx already, download it, play around with it
+    for a while, let us know what you like or don't like
+3.  For lots of bonus points, check out [the source](using_bazaar) and
+    compile it, play around with the code a little
+    1.  Be sure to write about what you did in your application
+    2.  If you can't get it to compile, it's probably our fault not
+        yours, don't be embarrased to ask for help
+4.  As mentioned in the contact section above, hang around on IRC at
+    freenode.net \#mixxx
+5.  Sign up for [the forums](http://www.mixxx.org/forums)
+
+We look forward to your application :) - The Mixxx Development Team

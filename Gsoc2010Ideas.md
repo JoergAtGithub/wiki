@@ -4,23 +4,8 @@ This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of Code 2010](http://socghop.appspot.com/). Each
 of these projects represents something that we think would make a really
 big difference to our users and that we as a development team are really
-excited about.
-
-If you'd like to discuss the details of an idea with our mentors or just
-introduce yourself, there are several options:
-
-1.  Send an email to our public developers' mailing list:
-    [mixxx-devel](http://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-2.  Contact any of our mentors directly via email: 
-    1.  Adam Davison (adamd -A-T- mixxx.org)
-    2.  Albert Santoni (alberts -A-T- mixxx.org)
-    3.  RJ Ryan (rryan -A-T- mixxx.org)
-3.  Hop on our IRC channel (\#mixxx on Freenode) and see if our mentors
-    are around (adam\_d, asantoni, rryan). We encourage idling in our
-    IRC channel to get acquainted with the wider Mixxx community as
-    well.
-
-*Application preparation advice to come... *
+excited about. For advice on how to get in touch and how to apply, you
+should read [gsoc2010advice](gsoc2010advice).
 
 ## Skinning Engine Prototype
 

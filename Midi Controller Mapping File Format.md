@@ -16,11 +16,11 @@ The MIDI mapping files are located in the following paths:
   - OS X: /Applications/Mixxx.app/Contents/midi
 
 By far, the easiest way to create a new MIDI mapping is by using the
-MIDI Learn wizard in the Preferences. You can then modify the XML file
-it creates (or any of the ones that ship with Mixxx) using the
-information on this page if you'd like to fine-tune it or add more
-mappings. When you've finished creating your MIDI mapping, **please send
-it to us** and we'll include it in Mixxx.
+MIDI Learn wizard in the Preferences (available in Mixxx 1.7.0 and
+higher.) You can then modify the XML file it creates (or any of the ones
+that ship with Mixxx) using the information on this page if you'd like
+to fine-tune it or add more mappings. When you've finished creating your
+MIDI mapping, **please send it to us** and we'll include it in Mixxx.
 
 ## MIDI Crash Course
 
@@ -73,8 +73,9 @@ this](http://www.geocities.com/binary_converter/).
 ### Sniffing your controller
 
 *First, try using the MIDI Learn functionality in the Preferences-\>MIDI
-Devices window at the bottom. It will help you get many of the essential
-functions mapped quickly without having to do any hacking.*
+Devices window at the bottom (in Mixxx 1.7.0 and higher.) It will help
+you get many of the essential functions mapped quickly without having to
+do any hacking.*
 
 If you don't have the MIDI spec for your controller, first check the
 manufacturer's web site under Support. Look for Manuals or User Guides.

@@ -1,4 +1,4 @@
-New skin Engine :
+# New skin Engine :
 
 I want to allow users to organize their Mixxx window their own way if
 they want too, other users can use the default skin.
@@ -8,8 +8,8 @@ community feedbacks but here are some thoughts :
 
   - How I intent to do it :
 
-(The following picture helps understanding :
-<http://www.hostingpics.net/viewer.php?id=310975layout.jpg>)
+The following picture helps understanding :
+<http://www.hostingpics.net/viewer.php?id=310975layout.jpg>
 
   - A window contains resizable widgets, ultimately the user could have
     more than one window, for example to help planning the sets or

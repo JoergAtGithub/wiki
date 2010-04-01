@@ -6,7 +6,7 @@ they want too, other users can use the default skin.
 My ideas may still evolve with my comprehension of the problem and
 community feedbacks but here are some thoughts :
 
-How I intent to do it :
+  - How I intent to do it :
 
 (The following picture helps understanding :
 <http://www.hostingpics.net/viewer.php?id=310975layout.jpg>)

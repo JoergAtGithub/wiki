@@ -55,11 +55,14 @@ may be done already or irrelevant.
   - adjustable drag sensitivity on visual waveform view
   - also a way to change the direction ("scratching motion")
   - direct outs (table 1, table 2, master, headphones)
+  - Cheap mode (main out left, cue out right) so users can get started
+    using mixxx without any extra soundcard.
   - [Effect plugins](PluginIdeas)
   - Live input (switchable input at first, maybe a delay/pitchable input
     later)
   - OSC controlled backend [Details from Old
     Wiki](http://mixxx.sourceforge.net/wiki/index.php/OSC_Backend)
+  - generic usb hid input support.
   - some more physically modeled turntable styles, with concepts of
     inertia, slipmat vector, and motor drive. [Details from Old
     Wiki](http://mixxx.sourceforge.net/wiki/index.php/Deck_Remodeling)

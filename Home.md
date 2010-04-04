@@ -26,6 +26,7 @@ plans.
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
   - [Tutorials](Tutorials)
+  - [Add-ons](Add-ons)
   - [Vinyl Control](Vinyl%20Control)
   - [Internet broadcasting](Internet%20broadcasting)
   - [System Requirements](System%20Requirements)

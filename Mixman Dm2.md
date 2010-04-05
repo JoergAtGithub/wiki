@@ -32,3 +32,11 @@ Steps to get it working:
     this is the final piece that converts USB output to midi signals
 
 Source: <http://mixxx.org/forums/viewtopic.php?f=3&t=53>
+
+## Mixman under OSX
+
+<http://code.google.com/p/dm2usbmididriver/>
+
+## Mixman under Linux
+
+<http://sourceforge.net/projects/dm2linux/>

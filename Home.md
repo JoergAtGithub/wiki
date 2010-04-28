@@ -129,6 +129,7 @@ GSoC 2010: Mixxx is happy to announce that we are taking part in GSoC
 The following projects were accepted for Google Summer of Code 2010:
 
   - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
+  - [Sampler](gsoc2010/sampler) by Ryan Baker
 
 GSoC 2009: Due to a lack of core developer time Mixxx did not
 participate in GSoC 2009.

@@ -7,7 +7,8 @@ To adjust beatmarks send "beatmark\_set"
 
 **Adjust beatmark**
 
-  - signal "beatmark\_set" is send by ControlPushButton
+  - signal "beatmark\_set" is send by ControlPushButton (or
+    Standard.kbd.cfg)
   - slot BeatmarkSet is raised an signal "beatmark\_point" is trigger
     with current sample position
   - waveformrendererbeat.cpp receives signal "beatmark\_point" and
@@ -28,3 +29,5 @@ To adjust beatmarks send "beatmark\_set"
 
   - cues aren't saved after leaving MIXXX (general problem)
   - drawing button for skin
+  - document about database issue beat type cue
+  - mention files touched

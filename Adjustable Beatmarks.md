@@ -3,6 +3,8 @@ works.
 
 # Signal flow
 
+To adjust beatmarks send "beatmark\_set"
+
 **Adjust beatmark**
 
   - signal "beatmark\_set" is send by ControlPushButton

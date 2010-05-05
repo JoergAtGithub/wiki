@@ -40,10 +40,11 @@ be bumped by 1.8.0 release.
   - Nov 16 2009 -- Feature Freeze
   - Feb 5 2010 -- private(-ish) beta testing
   - Feb 15 2010 -- Mixxx 1.8.0 Beta 1
-  - Mar 2010 -- Mixxx 1.8.0 Final 
+  - May-July -- Mixxx 1.8.0 Final 
 
-We're trying to sync up with the Ubuntu release cycle. Feature freeze
-for Lucid Lynx is February 18th, 2010.
+We tried to sync up with the Ubuntu release cycle, but were unable to
+commit enough developer time to fixing bugs, despite our best efforts.
+(Feature freeze for Lucid Lynx was February 18th, 2010.)
 
 [To-do list](1.8.0_to_do_list)
 
@@ -51,9 +52,9 @@ New main features:
 
   - Looping
   - New Library
-  - True Pitchbend
+  - Ramping Pitchbend
   - Multiple MIDI device support
-  - Shoutcast
+  - ~~Shoutcast~~
   - M4A support
 
 Side Projects

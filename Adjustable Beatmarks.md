@@ -24,6 +24,21 @@ To adjust beatmarks send "beatmark\_set" e. g. via Standard.kbd.cfg
   - slot unloadTrack is raised and cues are loaded from TrackInfoObject
   - beat type cue is sorted out and set to current beatmark position
 
+# Changes
+
+**Touched files**
+
+  - player.h
+  - player.cpp
+  - dlgmidilearning.cpp
+  - waveform/waveformrendererbeat.h
+  - waveform/waveformrendererbeat.cpp
+
+\*\*Added files \*\*
+
+  - engine/beatmarkcontrol.h
+  - engine/beatmarkcontrol.cpp
+
 # TODO
 
   - cues aren't saved after leaving MIXXX (general problem)

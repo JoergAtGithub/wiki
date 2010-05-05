@@ -3,12 +3,11 @@ works.
 
 # Signal flow
 
-To adjust beatmarks send "beatmark\_set"
+To adjust beatmarks send "beatmark\_set" e. g. via Standard.kbd.cfg
 
 **Adjust beatmark**
 
-  - signal "beatmark\_set" is send by ControlPushButton (or
-    Standard.kbd.cfg)
+  - signal "beatmark\_set" is send by ControlPushButton
   - slot BeatmarkSet is raised an signal "beatmark\_point" is trigger
     with current sample position
   - waveformrendererbeat.cpp receives signal "beatmark\_point" and

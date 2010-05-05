@@ -23,6 +23,7 @@ To adjust beatmarks send "beatmark\_set" e. g. via Standard.kbd.cfg
 
   - slot unloadTrack is raised and cues are loaded from TrackInfoObject
   - beat type cue is sorted out and set to current beatmark position
+  - cue dao should automatically save these changes in database
 
 # Changes
 

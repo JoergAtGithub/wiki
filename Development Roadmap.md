@@ -40,7 +40,8 @@ be bumped by 1.8.0 release.
   - Nov 16 2009 -- Feature Freeze
   - Feb 5 2010 -- private(-ish) beta testing
   - Feb 15 2010 -- Mixxx 1.8.0 Beta 1
-  - May-July -- Mixxx 1.8.0 Final 
+  - May-July -- Mixxx 1.8.0 Beta 2
+  - ??? - Mixxx 1.8.0 Final 
 
 We tried to sync up with the Ubuntu release cycle, but were unable to
 commit enough developer time to fixing bugs, despite our best efforts.

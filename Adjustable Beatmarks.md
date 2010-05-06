@@ -46,3 +46,6 @@ To adjust beatmarks send "beatmark\_set" e. g. via Standard.kbd.cfg
   - drawing button for skin
   - document about database issue beat type cue
   - mention files touched
+  - describe what it's good for and how to use it
+  - what about multiple beat type cues
+  - managable cues? -\> change type

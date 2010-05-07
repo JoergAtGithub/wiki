@@ -263,11 +263,15 @@ Input tags:
     translations, sensitivity, acceleration) Necessary options will have
     default values, eg a jogwheel might have no acceleration by default.
     Can only handle one element currently.
-  - Invert
-  - Rot64inv
-  - Rot64fast
-  - Rot64
-  - Diff - Add the value to the control's current value
+  - Normal - No modifications
+  - Invert - Subtracts the value from 127, giving an inverted control
+    (-127..0)
+  - Rot64inv - 
+  - Rot64fast - 
+  - Rot64 - 
+  - SelectKnob - For relative controls centered on 64 (0x40)
+  - Diff - Adds the current value of a relative control to the previous
+    value
   - Button - a button has a *Down* (non-zero) and an *Up* (zero) state,
     these occur together when pressed/released, this switch only
     triggers on the *Down*, *Up* is ignored. (Herc)

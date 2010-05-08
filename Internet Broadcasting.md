@@ -1,6 +1,18 @@
 # Broadcasting your Mixxx over the Internet
 
-Hello, all\! It's thread here with a quick description of how I have
+We are working on including direct Shoutcast/Icecast support in Mixxx.
+It currently has [some
+problems](http://mixxx.org/wiki/doku.php/1.8.0_to_do_list#shoutcast)
+that are serious enough to prevent us from turning it on by default.
+However, the more adventurous among you are free to build Mixxx v1.7.x
+or later with the `shoutcast=1` flag to give it a try.
+
+In the meantime, please use the following method that has worked well
+for one of our users for years.
+
+## Linux via JACK and edcast
+
+Hello, all\! It's **thread** here with a quick description of how I have
 Mixxx stream out to dnbradio.com's shoutcast servers every Tuesday.
 
 I run mixxx under the Ubuntu-based linux distribution, Crunchbang Linux.

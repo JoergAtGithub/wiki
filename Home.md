@@ -130,6 +130,7 @@ The following projects were accepted for Google Summer of Code 2010:
 
   - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
   - [Sampler](gsoc2010/sampler) by Ryan Baker
+  - [gsoc2010/dvs\_mode](gsoc2010/dvs_mode) by Bill Good
 
 GSoC 2009: Due to a lack of core developer time Mixxx did not
 participate in GSoC 2009.

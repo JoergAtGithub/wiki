@@ -24,4 +24,4 @@ time for other threads, and UI recognition of unwanted features.
 
 Digging through the mixxx code base to try to further figure out
 implementation details, plus learning a bit about how sampling (digital
-represenation of analog signals works and skimming a book on Qt.
+represenation of analog signals) works and skimming a book on Qt.

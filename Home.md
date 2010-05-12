@@ -34,7 +34,7 @@ plans.
 
 ## Build Mixxx
 
-  - [Compiling on Linux](Compiling%20on%20Linux), brief
+  - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
 

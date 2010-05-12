@@ -27,7 +27,7 @@ plans.
   - [Troubleshooting](Troubleshooting)
   - [Tutorials](Tutorials)
   - [Add-ons](Add-ons)
-  - [Vinyl Control](Vinyl%20Control)
+  - [Vinyl (and audio CDJ) control](Vinyl%20Control)
   - [Internet broadcasting](Internet%20broadcasting)
   - [System Requirements](System%20Requirements)
   - [Reporting bugs](Reporting%20bugs)

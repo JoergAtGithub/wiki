@@ -361,11 +361,11 @@ midi-mappings-scripts.js file:
     those controls, the calling function need only have the single line:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
     value, status));`
-  - **script.absoluteSlider**(group, key, value, low, high) - Takes a
-    value from an absolute control (0..127) and returns the
-    proportionate value between *low* and *high* for a linear Mixxx
-    control like deck volume or LFO depth. You can then use this
-    returned value to set the desired Mixxx control.
+  - **script.absoluteSlider**(value, low, high) - Takes a value from an
+    absolute control (0..127) and returns the proportionate value
+    between *low* and *high* for a linear Mixxx control like deck volume
+    or LFO depth. You can then use this returned value to set the
+    desired Mixxx control.
   - **script.absoluteNonLin**(value, low, mid, high) - Takes a value
     from an absolute control (0..127) and returns the proportionate
     value between *low*, *mid* and *high* for a non-linear Mixxx control

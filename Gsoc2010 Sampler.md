@@ -13,6 +13,12 @@ add flair and creativity to their mixes. I believe this will be a major
 addition to Mixxx and feel that it is a feature that many users will
 appreciate.
 
+### Contact Info
+
+  - Email: bakerry@onid.orst.edu
+  - IRC Handle: ryan\_baker
+  - Skype Handle: baker1990
+
 ### Sampler Specification
 
 #### Summary and Rationale

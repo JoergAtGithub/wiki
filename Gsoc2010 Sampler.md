@@ -1,6 +1,9 @@
 # Creating a Sampler for Mixxx (GSoC 2010 Project)
 
   - Student: **Ryan Baker**
+  - Email: bakerry@onid.orst.edu
+  - IRC Handle: ryan\_baker
+  - Skype Handle: baker1990
   - Mentor: **Albert Santoni**
 
 ### Abstract
@@ -12,12 +15,6 @@ loops, vocals, and other samples on command. This will allow users to
 add flair and creativity to their mixes. I believe this will be a major
 addition to Mixxx and feel that it is a feature that many users will
 appreciate.
-
-### Contact Info
-
-  - Email: bakerry@onid.orst.edu
-  - IRC Handle: ryan\_baker
-  - Skype Handle: baker1990
 
 ### Sampler Specification
 

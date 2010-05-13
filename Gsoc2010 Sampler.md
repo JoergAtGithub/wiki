@@ -15,7 +15,9 @@ appreciate.
 
 ### Sampler Specification
 
-#### Use Cases
+#### Summary and Rationale
+
+##### Use Cases
 
   - DJ Bill wants to send a sample bank to his friend, DJ Jane. Being
     able to export sample banks will make it easy for Bill to share his
@@ -30,7 +32,7 @@ appreciate.
     to create on the fly remixes and loops. You should be able to sample
     directly from a playing song.
 
-#### Design
+##### Design
 
   - Feature ideas:
   - Simple playback (start/stop)
@@ -54,3 +56,5 @@ appreciate.
   - User Interface
   - How do we deal with skinning?
   - Simple/Minimal Controls
+
+##### Work Breakdown

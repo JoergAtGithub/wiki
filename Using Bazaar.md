@@ -135,6 +135,18 @@ unless you do it manually. **To bring your features branch up to date**:
 
 ## Troubleshooting
 
+### Pull or Checkout
+
+If when trying to pull/checkout a shared branch, you get an error like
+`bzr: ERROR: Connection closed:
+Unexpected end of message. Please check connectivity and permissions,
+and report a bug if problems persist.` then you need to either:
+
+  - Edit \~/.bazzar/bazzar.conf and remove the `launchpad_username` line
+  - Or register your SSH key with Launchpad. (See details below.)
+
+### Push or Commit
+
 If when trying to push/commit to a shared branch, you get an error like
 `bzr: ERROR: Cannot lock
 LockDir(http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/.bzr/branch/lock):

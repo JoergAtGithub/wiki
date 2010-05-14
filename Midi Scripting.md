@@ -121,9 +121,17 @@ parameters.)*
 
 ### Reading and setting Mixxx control values
 
-Script functions can check Mixxx control values using
-engine.getValue(\<group\>,\<key\>), where \<group\> and \<key\> are
-Mixxx controls, a list of which can be found
+Script functions can check and set Mixxx control values using the
+following functions:
+
+``` c++
+engine.getValue(string group, string key);
+engine.setValue(string group, string key, double newValue);
+```
+
+To check a Mixxx control value, call `engine.getValue()` with the
+"`group`" and "`key`" values for a particular Mixxx control, a list of
+which can be found
 [here](midi_controller_mapping_file_format#ui_midi_controls_and_names).
 So for example:
 
@@ -131,8 +139,8 @@ So for example:
 var currentValue = engine.getValue("[Channel1]","rate");
 ```
 
-Values can be set just as easily, using
-engine.setValue(\<group\>,\<key\>,\<new value\>):
+Values can be set just as easily by calling `engine.setValue()` with the
+`group` and `key` as above, and the new value to set, like so:
 
 ``` javascript
 engine.setValue("[Channel1]","rate",0.5);
@@ -140,30 +148,127 @@ engine.setValue("[Channel1]","rate",0.5);
 
 Note that since this is a script, you can do calculations and use state
 variables so a single function can work for multiple cases, such as a
-single controller working with Mixxx's two virtual decks (assuming
-you've defined currentDeck):
+single controller working with Mixxx's multiple virtual decks (assuming
+you've defined `currentDeck` and `currentValue` here):
 
 ``` javascript
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
 
+### Scratching
+
+*Coming in v1.8*
+
+We have an easy way to scratch with any MIDI control that sends relative
+(+1/-1) signals. (Others can be scaled to work as well.) The applicable
+functions are:
+
+``` c++
+engine.scratchEnable(int deck, int intervalsPerRev, float rpm, float alpha, float beta);
+engine.scratchTick(int deck, int interval);
+engine.scratchDisable(int deck);
+```
+
+Here is how to use them:
+
+1.  When you want to start scratching, call `engine.scratchEnable()`
+    with:
+
+<!-- end list -->
+
+  - the virtual deck number you want to scratch
+  - the resolution of the MIDI control (in intervals per revolution,
+    typically 128.)
+  - the speed of the imaginary record at 0% pitch (in revolutions per
+    minute (RPM) typically 33+1/3, adjust for comfort)
+  - the filter coefficients (these affect responsiveness and looseness
+    of the imaginary slipmat)
+
+<!-- end list -->
+
+``` 
+    * the alpha value for the filter (start with 1/8 (0.125) and tune from there)
+    * the beta value for the filter (start with alpha/32 and tune from there)
+- Each time the MIDI control is moved, call ''engine.scratchTick()'' with:
+* the virtual deck number this control is currently scratching
+* the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
+- When you're done scratching, just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching.
+```
+
+Here is an example for the two most common types of wheels:
+
+``` javascript
+// The button that enables/disables scratching
+MyController.wheelTouch = function (channel, control, value, status) {
+    if ((status & 0xF0) == 0x90) {    // If button down
+        engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, 1.0/8, (1.0/8)/32);
+        // Keep track of whether and what deck we're scratching
+        MyController.scratching = MyController.currentDeck;
+    }
+    else {    // If button up
+        engine.scratchDisable(MyController.currentDeck);
+        MyController.scratching = -1;  // Not scratching any more
+    }
+}
+
+// The wheel that actually controls the scratching
+MyController.wheelTurn = function (channel, control, value, status) {
+    // See if we're scratching. If not, skip this.
+    if (MyController.scratching == -1) return;
+    
+    // For a control that centers on 0:
+    var newValue;
+    if (value-64 > 0) newValue = value-128;
+    else newValue = value;
+    
+    // For a control that centers on 0x40 (64):
+    var newValue=(value-64);
+    
+    // In either case, register the movement
+    engine.scratchTick(MyController.currentDeck,newValue);
+}
+```
+
+And that's it\! Just make sure to map the button/touch sensor and wheel
+to these script functions [as described
+above](#linking-scripts-to-device-controls) and you'll be ready to tear
+up some tracks.
+
 ### Sending messages to the controller
 
 You can send three-byte "short" messages and arbitrary-length
-system-exclusive "long" ones. Together, these cover virtually all types
-of MIDI messages you would need to send. (This is how you light LEDs,
-change displays, etc.)
+system-exclusive "long" ones to the controller using the following
+functions:
 
-For short messages:
-
-``` javascript
+``` c++
 midi.sendShortMsg(status, byte2, byte3);
+midi.sendSysexMsg(data, length);
 ```
 
-It's completely up to you (and your controller's MIDI spec) what those
-bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.)
+Together, these cover virtually all types of MIDI messages you would
+need to send. (This is how you light LEDs, change displays, etc.)
 
-For system-exclusive messages:
+For short messages, call `midi.sendShortMsg()` with:
+
+  - the MIDI status byte
+  - the second data byte
+  - the third data byte
+
+It's completely up to you (and your controller's MIDI spec) what those
+bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.) For example:
+
+``` javascript
+midi.sendShortMsg(0x90,0x11,0x01);   // This might light an LED
+```
+
+For system-exclusive messages, call `midi.sendSysexMsg()` with:
+
+  - An array of data bytes to send, always leading with `0xF0` and
+    ending with `0xF7`
+  - The number of bytes in the array, including the 0xF0 and 0xF7 (start
+    counting with 1 or just use the .length property as below)
+
+<!-- end list -->
 
 ``` javascript
 var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
@@ -180,7 +285,7 @@ Here are some simple examples to get you started.
 To control the play button for Deck 1 and light its LED:
 
 ``` javascript
-Controller.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
+MyController.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
     var currentlyPlaying = engine.getValue("[Channel1]","play");
     if (currentlyPlaying == 1) {    // If currently playing
         engine.setValue("[Channel1]","play",0);    // Stop
@@ -196,7 +301,7 @@ Controller.playButton1 = function (channel, control, value, status) {    // Play
 To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
 
 ``` javascript
-Controller.pitchSlider1 = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider for channel 1
+MyController.pitchSlider1 = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider for channel 1
     var currentValue = engine.getValue("[Channel1]","rate");
     engine.setValue("[Channel1]","rate",currentValue+(value-64)/128);
 }
@@ -206,7 +311,7 @@ To find the current elapsed time in seconds of a track on the specified
 deck (intended to be called from another function):
 
 ``` javascript
-Controller.elapsedTime = function (deck) {
+MyController.elapsedTime = function (deck) {
     return engine.getValue("[Channel"+deck+"]","duration") * engine.getValue("[Channel"+deck+"]","playposition");
 }
 ```
@@ -242,16 +347,16 @@ controller to react. Here are the related functions:
 #### Examples
 
 To connect the volume of the current virtual deck to a function called
-SuperController.volumeLEDs, do:
+MyController.volumeLEDs, do:
 
 ``` javascript
-engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs");
+engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs");
 ```
 
 To force the above-mentioned volume LEDs to sync up, just do:
 
 ``` javascript
-engine.trigger("[Channel"+SuperController.currentDeck+"]","volume");
+engine.trigger("[Channel"+MyController.currentDeck+"]","volume");
 ```
 
 If you change what the volume LEDs represent (like when switching
@@ -259,7 +364,7 @@ modes,) you would disconnect the Mixxx "volume" control from them like
 this:
 
 ``` javascript
-engine.connectControl("[Channel"+SuperController.currentDeck+"]","volume","SuperController.volumeLEDs",true);
+engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs",true);
 ```
 
 ### Timed reactions
@@ -296,13 +401,13 @@ To start a timer to flash LEDs on a controller 4 times per second
 (250ms) and store the ID in an array for later you would do:
 
 ``` javascript
-    SuperController.timer[0] = engine.beginTimer(250,"SuperController.flash()");
+    MyController.timer[0] = engine.beginTimer(250,"MyController.flash()");
 ```
 
 When the LEDs need to stop flashing, just do:
 
 ``` javascript
-    engine.stopTimer(SuperController.timer[0]);
+    engine.stopTimer(MyController.timer[0]);
 ```
 
 This one-shot timer example causes an LED (note number 0x3A in this
@@ -311,12 +416,12 @@ escaped quotes in the target function call.)
 
 ``` javascript
 ...
-    if (engine.beginTimer(1000,"SuperController.lightUp(0x3A,\"red\")",true) == 0) {
+    if (engine.beginTimer(1000,"MyController.lightUp(0x3A,\"red\")",true) == 0) {
         print("LightUp timer setup failed");
     }
 ...
 
-SuperController.lightUp = function (led,color) {
+MyController.lightUp = function (led,color) {
     switch (color) {
         case "red": 
             midi.sendShortMsg(0x90,led,0x01);
@@ -381,7 +486,9 @@ midi-mappings-scripts.js file:
     track having the correct original BPM value.) If more than two
     seconds pass between taps, the history is erased.
 
-<!-- end list -->
+*The below functions are for scratching with absolute value controls.
+These functions do not work as well as the [new ones for Mixxx
+v1.8](#scratching) and you are advised to use those instead.*
 
   - **scratch.enable**(deck) - Initializes the variables and turns on
     scratching for the functions detailed below. Just give it the number

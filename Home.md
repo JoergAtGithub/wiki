@@ -76,7 +76,7 @@ plans.
     MIDI controller via the mapping file and/or a script
   - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
     complete control over your MIDI controller and create advanced
-    behaviors.
+    behaviors including easy wheel scratching.
 
 ### Development Topics
 

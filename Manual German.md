@@ -285,8 +285,8 @@ mit der das Audiosignal abgetastet wird. Da die meisten Audiodateien mit
 einer Samplerate von 44100 Hz codiert sind, bringt das Erhöhen der
 Samplerate in Mixxx selten verbesserte Audioqualität. Eine höhere
 Samplerate kann in den Einstellungen unter *Sound Hardware* eingestellt
-werden. Bedenken Sie das ein Erhöhen der Samplerate die CPU Last erhöht
-und wahrscheinlich die geringstmöglich erreichbare Latenz erhöht.
+werden. Bedenken Sie das ein Erhöhen der Samplerate die CPU Last und
+wahrscheinlich die geringstmöglich erreichbare Latenz erhöht.
 
 ## Sound API
 

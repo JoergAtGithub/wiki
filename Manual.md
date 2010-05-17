@@ -1,3 +1,9 @@
+# Available Languages
+
+This manual is also available in:
+
+  - [German (Deutsch)](manual_german)
+
 # Table of Contents
 
 1.  [Beginner's Guide](Beginner's%20Guide)

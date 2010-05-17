@@ -4,7 +4,7 @@
 
 Link to product website: <http://www.mixman.com/products/dm2.html>
 
-## Mixman under linux
+## Mixman under Linux
 
 For anyone interested in getting the DM2 running under Linux, Jan has
 produced a nice HOWTO video:
@@ -17,6 +17,12 @@ Important points:
   - Latest version of his patch (at the time of writing):
     <http://www.jockusch.de/dm2/dm2-pre20080225.tgz>
   - It's got cool LED lights :)
+
+#### Mapping under Linux (as of Mixxx 1.8.0)
+
+[[/media/hardware/mixman_dm2_linux_map.png|Click to enlarge]]
+
+(Click to enlarge)
 
 ## Mixman under Windows
 

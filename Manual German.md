@@ -1,9 +1,9 @@
 **This is a English-German translation from the current [Mixxx
-manual](manual), as close as possible to the original. Missing
-translations are maked with ~~striked-trough text~~.**
+manual](manual), as close as possible to the original.  
+Missing translations are maked with ~~striked-trough text~~.**
 
 **Dies ist eine Englisch-Deutsch Übersetzung für das aktuelle [Mixxx
-manual](manual) sich so genau wie möglich am Original orientiert.
+manual](manual) die sich so genau wie möglich am Original orientiert.  
 Fehlende Übersetzungen sind mit ~~durchgestrichenem Text~~ markiert.**
 
 # Mixxx 1.7 Handbuch

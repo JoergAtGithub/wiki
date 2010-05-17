@@ -1,49 +1,57 @@
-**This work in progress is a English-German translation for the current
-[Mixxx manual](manual). Missing Translation are maked with
-~~striked-trough text~~.**
+**This is a English-German translation from the current [Mixxx
+manual](manual), as close as possible to the original. Missing
+translations are maked with ~~striked-trough text~~.**
+
+**Dies ist eine Englisch-Deutsch Übersetzung für das aktuelle [Mixxx
+manual](manual) sich so genau wie möglich am Original orientiert.
+Fehlende Übersetzungen sind mit ~~durchgestrichenem Text~~ markiert.**
+
+# Mixxx 1.7 Handbuch
 
 # Inhaltsverzeichnis
 
-1.  [Beginner's Guide](Beginner's%20Guide)
-2.  [Einleitung](manual#introduction)
-3.  [Installation](manual#installation)
-    1.  [Windows](manual#windows)
-    2.  [Linux](manual#linux)
-    3.  [OS X](manual#os_x)
-4.  [User Interface Overview](manual#user_interface_overview)
-    1.  [Playback Controls](manual#playback_controls)
-    2.  [Tempo Controls](manual#tempo_controls)
-    3.  [Headphone and Flanger](manual#headphone_and_flanger)
-    4.  [Lautstärke und Equalizer](manual#volume_and_eq)
-    5.  [Wellenform](manual#waveform)
-    6.  [Waveform-Übersicht](manual#waveform_overview)
-    7.  [End of Track Modus](manual#end_of_track_mode)
-    8.  [Master and Crossfader
-        Controls](manual#master_and_crossfader_controls)
-    9.  [Library](manual#library)
-5.  [Konfiguration](manual#configuration)
-    1.  [Master and Headphone
-        Outputs](manual#master_and_headphone_outputs)
-    2.  [Latenzen](manual#latency)
-    3.  [Sampleraten](manual#samplerates)
-    4.  [Sound APIs](manual#sound_apis)
-    5.  [Vinyl Control](manual#vinyl_control)
-6.  [DJing with Mixxx](manual#djing_with_mixxx)
-    1.  [Loading Tracks](manual#loading_tracks)
-    2.  [Waveform Displays](manual#waveform_displays)
-    3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
-    4.  [Headphone Cueing](manual#headphone_cueing)
-7.  [Keyboard und Controller](manual#keys_and_hardware_controllers).
-    1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
-    2.  [MIDI-Controller](manual#midi_controllers).
-8.  [Mitmachen](manual#mitmachen).
+1.  [Beginner\`s Guide](Beginner\`s%20Guide)
+2.  [Einleitung](manual_german#introduction)
+3.  [Installation](manual_german#installation)
+    1.  [Windows](manual_german#windows)
+    2.  [Linux](manual_german#linux)
+    3.  [OS X](manual_german#os_x)
+4.  [Benutzeroberfläche](manual_german#Benutzeroberfläche)
+    1.  [Wiedergabesteuerung](manual_german#WiedergabesteuerunG)
+    2.  [Temposteuerung](manual_german#Temposteuerung)
+    3.  [Kopfhörer und Flanger](manual_german#Kopfhörer%20und%20Flanger)
+    4.  [Lautstärke und
+        Equalizer](manual_german#Lautstärke%20und%20Equalizer)
+    5.  [Wellenform](manual_german#Wellenform)
+    6.  [Waveform-Übersicht](manual_german#Waveform-Übersicht)
+    7.  [Wiedergabemodus](manual_german#Wiedergabemodus)
+    8.  [Master und Crossfader](manual_german#Master%20und%20Crossfader)
+    9.  [Bibliothek](manual_german#Bibliothek)
+5.  [Konfiguration](manual_german#konfiguration)
+    1.  [Master- und
+        Kopfhörer-Ausgänge](manual_german#Master-%20und%20Kopfhörer-Ausgänge)
+    2.  [Latenzen](manual_german#Latenzen)
+    3.  [Sampleraten](manual_german#samplerates)
+    4.  [Sound APIs](manual_german#sound_apis)
+    5.  [Vinyl Steuerung](manual_german#Vinyl%20Steuerungl)
+6.  [DJing mit Mixxx](manual_german#djing_mit_mixxx)
+    1.  [Tracks laden](manual_german#Tracks%20laden)
+    2.  [Wellenform](manual_german#Wellenform)
+    3.  [Beatmatching und
+        Mixen](manual_german#Beatmatching%20und%20Mixen)
+    4.  [Vorhören](manual_german#Vorhören)
+7.  [Keyboard und
+    Controller](manual_german#Keyboard%20und%20Controller).
+    1.  [Keyboard Shortcuts](manual_german#Keyboard%20Shortcuts).
+    2.  [MIDI-Controller](manual_german#MIDI-Controller).
+8.  [Mitmachen](manual_german#mitmachen).
 
 # Einleitung
 
-Mixxx ist eine für DJ\`s entwickelte Software die das live Mixen von
-Songs ermöglicht. Mixxx unterstützt die Wiedergabe von MP3, OGG, FLAC
-sowie WAVE Dateien. Mixxx kann mit diversen DJ MIDI-Controllern sowie
-Plattenspielern und Timecode Vinyls gesteuert werden.
+Mixxx ist eine für DJ\`s entwickelte Software die das Mixen von
+Audiodateien ermöglicht. Mixxx unterstützt die Wiedergabe von MP3, OGG,
+FLAC sowie WAVE Dateien. Mixxx kann mit diversen DJ MIDI-Controllern
+sowie Plattenspielern und Timecode Vinyls gesteuert werden.
 
 # Installation
 
@@ -57,44 +65,51 @@ und 64 bit. (Sollte auch auf Windows 2000 laufen.)
 ## Linux
 
 Linux Nutzer finden Mixxx in der Paketverwaltung der Distribution Ihrer
-Wahl. **Ubuntu** Nutzer können beispielsweise Mixxx über das
-*Programme-\>Hinzufügen/Entfernen...* Menü installieren. Ist Mixxx nicht
-als Paket für ihre Distribution vorhanden kann es aus den Quelldateien
+Wahl. **Ubuntu** Nutzer können beispielsweise Mixxx über das Menü
+*Programme-\>Hinzufügen/Entfernen...* installieren. Ist Mixxx nicht als
+Paket für ihre Distribution vorhanden kann es aus den Quelldateien
 kompiliert werden. Details zur Kompilierung von Mixxx sind zu finden
 unter: [Compiling on Linux](Compiling%20on%20Linux).
 
 ## OS X
 
 OS X (Intel) Nutzer installieren Mixxx durch das Mounten des Mixxx
-Disk-Image (dmg) per Doppelklick. Dann das Mixxx Bundle per Drag\&Drop
+Disk-Images (dmg) per Doppelklick. Dann das Mixxx Bundle per Drag\&Drop
 in den Ordner *Programme* ziehen. Mixxx läuft auf Intel Mac unter OS
 10.4 und höher.
 
-# Übersicht Benutzeroberfläche
+# Benutzeroberfläche
 
 [[/media/manual/mixxx-overview.png|]]
 
 Die Benutzeroberfläche von Mixxx ist schlicht gestaltet, so das sie beim
 live DJing einfach zu bedienen ist. Dieser Abschnitt beschreibt die
-wichtigsten Merkmale der Oberfläche.
+wichtigsten Merkmale der Oberfläche.  
+*Mixxx ist in englischer Sprache beschriftet.*
 
-## Playback Controls
+## Wiedergabesteuerung
 
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_playback.png|]] | ~~The Steuerelemente für die Wiedergabe ermöglichen playback controls allow you pause, play, and otherwise manipulate the playback of a song. The REV button toggles reverse playback when pressed during regular playback. When playback is stopped, pressing the CUE button places a cue-point at the current position on the waveform. A cue-point is marked by a white vertical line in the waveform view. If the CUE button is pressed during playback, the song will seek to the cue-point and stop. Holding down the CUE button while the song is positioned on the cue-point will result in the song temporarily playing back, and seeking back to the cue-point upon release of the CUE button. This describes the "CDJ Mode" cue behaviour, which is modifiable in the preferences under *Interface-\>Default cue behaviour*.~~ |
+|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_playback.png|]] | Diese Steuerelemente ermöglichen es einen Track wiederzugeben, zu pausieren oder die Wiedergabe anderweitig zu beeinflussen. Der "REV" Button lässt den Track während der Wiedergabe rückwärts laufen. Ist die Wiedergabe gestoppt und wird der "CUE" Button gedrückt, so wird ein Cuepunkt an der aktuellen Wiedergabeposition gesetzt. Er wird als (weisse) Linie auf der Wellenform dargestellt. Wird der "CUE" Button gedrückt wenn die Wiedergabe läuft, so springt der Track zum Cuepunkt und stoppt. Wird der "CUE" Button dann gedrückt gehalten, startet die Wiedergabe vorläufig, der Track springt erst zurück zum Cuepunkt und stoppt wenn der Button wieder losgelassen wird. Dieser Cue-Modus ist als "CDJ" bekannt, er kann in den Einstellungen unter *Interface-\>Default cue behaviour* geändert werden. |
 
-## Tempo Controls
+## Temposteuerung
 
-|                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_tempo.png|]] | ~~The tempo controls allow you to slow down and speed up a song. This is frequently useful for [beatmatching](manual#beatmatching_and_mixing) songs when mixing. The RATE slider changes the tempo of a song when it is moved. The PERM buttons apply fine adjustment to the RATE slider, and the TEMP buttons apply a temporary pitch-bend when depressed. The amount by which the PERM and TEMP buttons alter the pitch of the track can be changed in the *Options-\>Preferences-\>Interface* menu. The SYNC button attempts to automatically match the tempo of the song in the corresponding channel with tempo of the song in the other channel, based on the calculated BPM.~~ |
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="/manual/uioverview/ui_tempo.png" /></td>
+<td>Diese Steuerelemente ermöglichen es die Wiedergabe eine Tracks zu verlangsamen oder zu beschleunigen. Es wird oft für das <a href="manual_german#Beatmatching und Mixen">Beatmatching</a> beim Mixen von Tracks benutzt. Der "RATE" Regler verändert das Tempo eines Tracks wenn er bewegt wird. Der "PERM" Buttom ermöglicht eine Feineinstellung der Änderungen , der "TEMP" Button bewirkt eine vorrübergehende Änderung de Tempos solange er gedrückt ist.<br />
+Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks beeinflussen, kann in den Einstellungen unter <em>Options-&gt;Preferences-&gt;Interface</em> festgelegt werden. Basiered auf den berechneten BPM versucht der "SYNC" Button automatisch das Tempo des Tracks in einem Kanal mit das Tempo des Tracks in dem anderen Kanal zu syncronisieren.</td>
+</tr>
+</tbody>
+</table>
 
-## Headphone and Flanger
+## Kopfhörer und Flanger
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_headphone.png|]] | ~~When toggled, the HEADPHONE button sends the selected channel's audio to the *Headphones* output audio device selected in the preferences under *Sound Hardware*. This feature is commonly used when [headphone cueing](manual#headphone_cueing) and [beatmatching](manual#beatmatching_and_mixing). The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully.~~ |
+|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_headphone.png|]] | Ist der "HEADPHONE" Button aktiviert, sendet er das Audiosignal des jeweiligen Kanals an das Ausgabegerät, welches in den Einstellungen unter *Sound Hardware-Headphones* gewählt wurde. Dieses Feature wird meistens beim [Vorhören](manual_german#Vorhören) und [Beatmatching](manual_german#Beatmatching%20und%20Mixen) genutzt. Der "FLANGER" Button aktiviert den intergrierten Flanger Effekt auf dem gewählten Kanal. Ein Flanger erzeugt einen "Pseudo-Stereo" Effekt und kann dem Mix zusätzliche Tiefe geben wenn er diskret eingesetzt wird. |
 
 ## Lautstärke und Equalizer
 
@@ -104,9 +119,9 @@ wichtigsten Merkmale der Oberfläche.
 
 ## Wellenform
 
-|                                         |                                                                                                                                                                                                                                                                                                                                                |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_waveform.png|]] | ~~The waveform display shows the loaded tracks' waveforms near the playback position. On songs with certain dynamics, the waveform displays will visibly show the beats in the song. When a cue mark is placed, it is drawn on the waveform as a vertical white line. Clicking and dragging on a waveform allows you to seek through a song.~~ |
+|                                         |                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_waveform.png|]] | Die Wellenform Anzeige zeigt die Wellenformen der geladenen Tracks nahe ihrer aktuellen Wiedergabeposition. Bei Tracks mit gewisser Dynamik sind die einzelnen Beats zu erkennen. Wird ein Cuepunkt gesetzt, wird er als (weisse) Linie auf der Wellenform dargestellt. Durch Klicken und Ziehen auf der Wellenform kann der Track durchsucht werden. |
 
 ## Wellenform-Übersicht
 
@@ -114,26 +129,42 @@ wichtigsten Merkmale der Oberfläche.
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[/media/manual/uioverview/ui_woverview.png|]] | Die Wellenform-Übersicht liefert wesentliche Informationen über den geladenen Track des jeweiligen Kanals. Von Rechts nach Links sind das: Tempo des Tracks in BPM, aktuelle Wiedergabeposition und die Laufzeit des Tracks. Am interessantesten ist aber die Darstellung des Tracks als Wellenform - nützlich um z.B. Pausen zu sehen um nicht beim DJing davon überrascht zu werden. Außerdem kann man durch einen Klick in die Wellenform innerhalb des Tracks an einen beliebige Position springen. |
 
-## End of Track Modus
+## Wiedergabemodus
 
-|                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_endoftrack.png|]] | Der "End of Track" Modus definiert, wie sich Mixxx\` verhält wenn das Ende eines Tracks erreicht wird. Verändert wird der "End of Track" Modus durch Klick auf das Symbol um zwischen den drei verfügbaren Optionen zu wechseln. Jeder Kanal hat seinen eigenen "End of Track" Modus der unabhängig voneinander geändert werden kann. **Stop** macht nichts weiter sobald der Track beendet ist, möglich wäre einen neuen Track in den Kanal zu laden oder rückwärts durch den aktuellen Track zu scrollen. **Loop** geht zurück zum Anfang des gerade beendeten Tracks und spielt ihn nochmals. **Next** lädt und spielt automatisch den nächsten Track in der Wiedergabeliste/Bibliothek. |
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="/manual/uioverview/ui_endoftrack.png" /></td>
+<td>Der Wiedergabemodus ("End of Track" Modus) definiert, wie sich Mixxx` verhält wenn das Ende eines Tracks erreicht wird. Verändert wird der Wiedergabemodus durch Klick auf das Symbol um zwischen den drei verfügbaren Optionen zu wechseln. Jeder Kanal hat seinen eigenen Wiedergabemodus der unabhängig voneinander geändert werden kann.<br />
+<strong>Stop</strong> macht nichts weiter sobald der Track beendet ist, möglich wäre einen neuen Track in den Kanal zu laden oder rückwärts durch den aktuellen Track zu scrollen. <strong>Loop</strong> geht zurück zum Anfang des gerade beendeten Tracks und spielt ihn nochmals. <strong>Next</strong> lädt und spielt automatisch den nächsten Track in der Wiedergabeliste/Bibliothek.</td>
+</tr>
+</tbody>
+</table>
 
-## Master and Crossfader Controls
+## Master und Crossfader
 
-|                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [[/media/manual/uioverview/ui_master.png|]] | ~~The crossfader (in the center of the picture) enables you to smoothly fade between the two channels and defines what you hear through the master output. When set all the way to the left, only channel 1 is heard, and set to the right, only channel 2 will be heard. Every position in between gives you the mixed output of both channels. (Note: The actual volume of each channel depends on the crossfader curve, defined in the *Crossfader* preferences pane.) The Volume and Balance knobs control the volume and the balance (stereo distribution) of the master output. The Pre/Main knob controls what you hear on the headphone output. It works like the crossfader but instead of crossfading between channel 1 and 2, it crossfades between the Master and Cueing signal. If the Pre/Main knob is set to the left, one only hears the cueing signal, which can be useful for prelistening tracks. The HeadVol knob controls the volume of the headphone output. The Depth, Delay and LFO knobs control the flanger. A flanger is an effect that mixes the input signal with a delayed copy of itself which leads to interferences in the signal and creates a comb-filter like effect. By routing the output of the effect back into the input (feedback), this effect can be enhanced. In Mixxx, the volume of the output signal that is routed back into the input can be controlled with the depth knob, which controls the intensity of the effect. The delay knob sets the initial value for the delay length. Inside the effect however, this value is not constant but modulated by an LFO (low frequency oscillator), controllable with the corresponding knob. If this is too technically for you just play around with it and see how the different parameters affect the sound. :)~~ |
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="/manual/uioverview/ui_master.png" /></td>
+<td>Mit dem "Crossfader" (Bildmitte) kann flüssig zwischen den beiden Kanälen hin- und her geblendet werden, ausserdem definiert er was aus dem Master-Ausgang zu hören ist. Wird der Crossfader ganz nach links geschoben ist nur Kanal 1 zu hören, ist er ganz nach rechts geschoben so ist nur Kanal 2 zu hören. Jede Position dazwischen ergibt ein Mix aus den beiden Kanälen.(Hinweis: Die tatsächliche Lautstärke der einzelnen Kanäle bei Bewegen des Crossfaders wird über die "Crossfader Curve" eingestellt. Diese findet man in den Einstellungen unter <em>Crossfader</em>.<br />
+Der "VOLUME" und "BALANCE" Regler kontrollieren die Laufstärke und Stereo-Balance des Master-Ausgangs. Der "PRE/MAIN" Regler kontrollirt was im Kopfhörer-Ausgang zu hören ist. Dieser Regler funktioniert wie der Crossfader, nur wird hier zwischen Master und Cue (Vorhören) hin- und her geblendet. Ist "PRE/MAIN" ganz nach links gedreht kann nur das Cue-Signal gehört werden, nützlich um z.B. Tracks vorzuhören. Der "HEADVOL" Regler kontrolliert die Lautstärke des Kopfhörer-Signals.<br />
+Der "DEPTH","DELAY" und "LFO" Regler kontrollieren den Flanger. Bei diesem Effekt wird das Eingangssignal mit einer verzögerten Kopie gemixt, was zu Interferenzen führt und eine Art Kammfilter-Effekt ergibt. Wird nun das Ausgangssignal des Effekts wieder in in der Eingang geleitet, kann der Effekt verstärkt werde. In Mixxx wird die Intensität des Effekts vom Ausgangssignal zurück in den Eingang geleitet und kann mit dem "DEPTH" Regler angepasst werden.Der "DELAY" Regler gibt die eigentlichen Wert der Verzögerung an. Innerhalb des Effekts wird dieser Wert nochmals durch ein LFO (low frequency oscillator) moduliert, der entsprechend mit dem "LFO" Regler kontrolliert wird.<br />
+Wenn sich das Ganze zu technisch anhört, einfach mit den verschiedenen Parametern experimentieren und hören wie es den Sound beeinflusst.</td>
+</tr>
+</tbody>
+</table>
 
-## Library
+## Bibliothek
 
 <table>
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_library.png" /></td>
-<td><del>The library manages all your music files. This is where you can find the tracks you want to play and load them into a channel. Alternatively, you can also use your external filemanager and drop files onto the waveform display. The Library offers different viewing modes that can be switched with the combobox in the upper left corner. The second available viewing mode is the Play Queue which is like a playlist for the tracks you plan to play next. The Browse mode basically works like a usual file-manager and should be self explaining. In the Playlist mode, you can view and load playlists you've created. There is also a search function that filters the current view in realtime. The main viewing mode is the library view, which shows all files in your library. One must first create a library to use this view, but this will be done automatically during the first time Mixxx is run. If you want to rebuild your library (for example because you added or moved files) you can do this with \\Library-&gt;Rescan Library<br />
-in the menu. To load a track into a player, you can either simply drag it to the waveform display or use the context menu (right-click on a track). The context menu also allows you to add a track to the play queue or a playlist (the playlist must be created first). Lastly, the context menu allows one to access a song's properties to check ID3 tags or set the BPM of the track manually.</del></td>
+<td>Die Bibliothek verwaltet alle Ihre Musikdateien. Dort befinden sich die Tracks, welche Sie abspielen und in einen der Kanäle laden können. Alternativ können auch Tracks aus einem externen Dateimanager auf die Wellenform Anzeige gezogen werden. Die Bibliothek bietet verschiedene Ansichten, welche über das Auswahlmenü oben links verändert werden können.<br />
+Die zweite Ansichtsoption ist "Play Queue" (Warteschlange), der wie eine Wiedergabeliste für die Tracks funktioniert die als nächstes gespielt werden sollen. Der "Browse" Modus arbeitet grundsätzlich wie ein Dateimanager und sollte selbst erklärend sein. Im "Playlists" Modus können selbst erstellte Wiedergabelisten geladen und angezeigt werden. Außerdem gibt es eine Suchfunktion, die aktuelle Ansicht wird in Echtzeit gefiltert. Die Hauptansicht ist die "Library", sie zeigt alle in der Bibliothek vorhandenen Tracks an. Um diese Ansicht nutzen zu können muss erst eine Bibliothek angelegt werden, das wird beim ersten Start von Mixxx erledigt.<br />
+Falls Ihre Bibliothek wiederhergestellt werden muss, da bespielsweise Dateien hinzugefügt oder verschoben wurden, kann dass in der Menüleiste unter <em>Library-&gt;Rescan Library</em> gemacht werden.<br />
+Um einen Track in einen Player zu laden, ihn einfach auf Wellenform Anzeige ziehen oder das Kontextmenü benutzen (Rechtsklick auf einem Track). Das Kontextmenü ermöglich es Tracks zur Warteschlange ("Play Queue") oder Wiedergabelisten ("Playlist") hinzuzufügen ( die Wiedergabeliste muss vorher angelegt werden). Zu guter Letzt kann über das Kontextmenü auf die Eigenschaften ("Properties") eines Tracks zugegriffen werden um ID3 Tags zu überprüfen oder die BPM manuell zu ermitteln.</td>
 </tr>
 </tbody>
 </table>
@@ -152,47 +183,47 @@ Mixxx versucht beim Start eine geeignete Soundkarte für die Wiedergabe
 auzuwählen. Welche Soundkarte ausgewählt wurde, kann in den
 Einstellungen unter *Sound Hardware* überprüft werden.
 
-## Master and Headphone Outputs
+## Master- und Kopfhörer-Ausgänge
 
-\<del\>Mixxx has two audio paths: The **Master** output and the
-**Headphones** output. The Master output is what a DJ should have
-connected to their main speakers, while the Headphones output should be
-connected to their personal headphones. The headphone output is
-optional, and can be used for [Headphone Cueing](#headphone-cueing).
+Mixxx verfügt über zwei Audio Pfade: den **Master-Ausgang** und den
+**Kopfhörer-Ausgang**. Der DJ sollte die Lautsprecher an den
+Master-Ausgang angeschlossen haben, während die Kopfhörer an den
+Kopfhörer-Ausgang angeschlossen werden. Der Kopfhörer-Anschluss ist
+optional, er kann beispielsweise für das
+[Vorhören](manual_german#Vorhören) benutzt werden.
 
-To configure the Master and Headphones outputs, enter Mixxx's
-preferences and select the *Sound Hardware* pane. In order to select a
-headphone device, either a soundcard with at least 4 channels of output
-(two stereo outputs, as featured on 5.1 soundcards) *or* two separate
-stereo soundcards is required. The output channel mapping, which
-determines the physical jack on the soundcard that the audio comes out
-of, can be selected under "Channel".\</del\>
+Um die Master- und Kopfhörer-Ausgänge zu konfigurieren, öffnen Sie die
+Einstellungen unter *Sound Hardware*. Um einen Kopfhörer-Ausgänge
+einrichten zu können, ist entweder eine Soundkarte mit mind. 4 Ausgängen
+( 2 Stereo Ausgänge , wie bei 5.1 Soundkarten ) *oder* zwei separate
+Stereo-Soundkarten erforderlich. Unter "Channel" kann man die Kanäle
+wählen, aus denen das Audiosignal ausgegeben wird (und ggf. externe
+Lautsprecher angeschlossen werden).
 
-<span class="underline">**Example Soundcard Configurations**</span>
+<span class="underline">**Beispiel Konfigurationen**</span>
 
-**Single audio device (4 Channel Soundcard)**
+**Einzelnes Audiogerät (4 Kanal Soundkarte)**
 
-    Master device:    Echo Digital AudioFire4   Channels: 1/2
-    Headphone device: Echo Digital AudioFire4   Channels: 3/4
+    Master Gerät:     Echo Digital AudioFire4   Channels: 1/2
+    Kopfhörer Gerät:  Echo Digital AudioFire4   Channels: 3/4
 
-**Dual audio devices (Two Stereo Soundcards)**
+**Mehrere Audiogeräte (Zwei Stereo Soundkarten)**
 
-    Master device:    ElCheapo USB Audio        Channels: 1/2
-    Headphone device: SoundBlaster Live!        Channels: 1/2
+    Master Gerät:     Billig USB Audio          Channels: 1/2
+    Kopfhörer Gerät:  SoundBlaster Live!        Channels: 1/2
 
-## Using External Mixers
+## Externe Mixer benutzen
 
-~~Currently, Mixxx has no special mode for routing the output of a
-single deck to a separate output, which is what you need when using an
-external mixer. However, this behaviour can be achieved with a simple
-trick. Move the crossfader all the way to the left and turn the
-"Pre/Main" knob all the way left as well. This will give you only the
-pre-listen signal on the headphone output. Now, enable Cueing for the
-second channel by toggling channel 2's HEADPHONE button. With this
-setup, channel 1 will be playing on the master output and channel 2 will
-be playing on the headphone output. The master and headphone outputs of
-your soundcard should then be plugged into channel 1 and channel 2 of
-your external mixer.~~
+Momentan hat Mixxx keinen speziellen Modus um das Signal von einem
+einzelnen Kanal an einen separaten Ausgang zu schicken (was benötigt
+wird wenn externe Mixer benutzt werden). Dafür gibt es aber einen
+einfachen Trick. Den Crossfader und auch den "Pre/Main" Regler komplett
+nach links bewegen. Jetzt mit dem "HEADPHONES" Button auf Kanal 2 das
+Vorhören aktivieren. Auf diese Weise wird Kanal 1 (Channel 1) auf dem
+Master-Ausgang und Kanal 2 (Channel 2) auf dem Kopfhörer-Ausgang
+ausgegeben. Nun sollten der Master-Ausgang (Kanal 1) und auch der
+Kopfhörer-Ausgang ( Kanal 2) der Soundkarte mit Kanal 1 und Kanal 2 des
+externen Mixers verbunden werden.
 
 ## Latenzen
 
@@ -227,20 +258,23 @@ nützliche Ressourcen sind der Linux Realtime Guide und [Gentoo's
 Dokumentation zu dem
 Thema](http://www.gentoo.org/proj/en/desktop/sound/realtime.xml).
 
-\<del\>The first thing to try if using ALSA is to set your Master output
-hardware to just "default" instead of specific hardware. (This made a
-huge difference on a test system with integrated Intel soundcard.) The
-drawback to this is that system sounds (KDE beeps and such) will now be
-mixed in and will come out the main output.
+Wird ALSA benutzt, sollte als erstes versucht werden in den
+Einstellungen den "Master Output" auf "default" zu setzen anstatt eine
+bestimmte Hardware. (Auf einem Testsystem mit integrierter
+Intel-Soundkarte machte das einen großen Unterschied.) Der Nachteil
+dieser Methode ist, dass der Systemsound ( wie eventuell aktivierte KDE
+Beeps) mit in Mixxx\` Mastersignal einfließt und auch entsprechend
+ausgegeben wird.
 
-The second thing one can try to reduce system latency is getting a
-realtime kernel. If you're using a binary kernel, this might be as
-simple as installing a realtime enabled kernel with your package manager
-(if your package system offers one of course). Otherwise download kernel
-sources and the realtime patch for your kernel version. The patch can be
-found [here](http://www.kernel.org/pub/linux/kernel/projects/rt/). Untar
-the patch to your kernel source directory, apply it and
-configure/install the kernel as usual.\</del\>
+Eine zweite Möglichkeit die Latenzen auf dem System zu reduzieren ist
+die Benutzung eines Realtime-Kernel. Nutzen Sie bisher einen binären
+Kernel, reicht oft bereits die Installation eines Realtime-Kernels über
+Ihre Paketverwaltung (sofern diese einen Realtime-Kernel bereitstellt).
+Ist dies nicht der Fall, laden Sie die Kernel Quellen und den
+entsprechenden Realtime-Patch für Ihre Kernel Version. Der Patch ist
+[hier](http://www.kernel.org/pub/linux/kernel/projects/rt/) zu finden.
+Den Patch in das Kernel-Verzeichnis entpacken, den Patch ausführen und
+dann den Kernel wie gewohnt konfigurieren/installieren.
 
 Grundsätzlich gibt es zwei Möglichkeiten die Realtime Unterstützung zu
 aktivieren. Die erste und einfachste Option ist die Nutzung des
@@ -281,14 +315,14 @@ ein PPA von Darxus ist zu finden unter:
 ## Sampleraten
 
 Die Samplerate (Abtastrate) einer Soundkarte bezeichnet die Häufigkeit,
-mit der das Audiosignal abgetastet wird. Da die meisten Audiodateien mit
+mit der ein Audiosignal abgetastet wird. Da die meisten Audiodateien mit
 einer Samplerate von 44100 Hz codiert sind, bringt das Erhöhen der
 Samplerate in Mixxx selten verbesserte Audioqualität. Eine höhere
 Samplerate kann in den Einstellungen unter *Sound Hardware* eingestellt
 werden. Bedenken Sie das ein Erhöhen der Samplerate die CPU Last und
 wahrscheinlich die geringstmöglich erreichbare Latenz erhöht.
 
-## Sound API
+## Sound APIs
 
 Mixxx unterstützt diverse Sound APIs unter Windows, OS X und Linux. Eine
 Sound API ist a Tool welches Mixxx benutzt um mit Soundkarten zu
@@ -303,25 +337,23 @@ Nutzer die JACK nutzen wollen, sollten **sicherstellen das der *jackd*
 daemon läuft bevor Mixxx gestartet wird** sonst kann JACK nicht als
 Sound API in den Einstellungen ausgewählt werden.
 
-## Vinyl Control
+## Vinyl Steuerung
 
-\<del\>Vinyl control allows a user to manipulate the playback of a song
-in Mixxx using a real turntable as a controller. In effect, it simulates
-the sound and feel of having your digital music collection on vinyl.
-Many DJs prefer the tactile feel of vinyl, and vinyl control allows that
-feel to be preserved while retaining the benefits of using digital
-audio.
+Die Vinyl Steuerung ermöglicht die Wiedergabe von Tracks in Mixxx mit
+Hilfe eines echten Platten- oder CD-Spielers. Es hört und fühlt sich an
+als ob man seine ganze digitale Musiksammlung auf Vinyl hat. Viele DJs
+bevorzugen das typische Gefühl von Vinyl, die Vinyl Steurung ermöglicht
+es gleichzeitig von den Vorzügen digitalen Audios zu profitieren.
 
-You can configure vinyl control through the *Vinyl Control* pane in the
-preferences.
+Die Vinyl Steuerung kann in den Einstellungen unter *Vinyl Control*
+konfiguriert werden.
 
-More information about Mixxx's vinyl control and supported hardware
-configurations is available on the [vinyl control wiki
-page](vinyl_control).\</del\>
+Weitere Informationen über die Vinyl Steuerung in Mixxx und unterstützte
+Hardware befindet sich auf der [Vinyl control wiki page](vinyl_control).
 
 [[/media/manual/preferences/vinylcontrol.png|]]
 
-### Input Device Selection
+### Auswahl Eingabegerät
 
 Mixxx kann mit max. 2 Decks und Timecode Vinyls oder Timecode CDs
 gesteuert werden. Wählen Sie in den "Deck 1" und "Deck 2" Auswahlmenüs
@@ -329,78 +361,82 @@ die Soundkarte(n), an welche die Decks angeschlossen sind. Im "Channel
 selection" Auswahlmenü wählen Sie die Kanäle entsprechend so wie die
 Decks an die Soundkarte(n) angeschlossen sind.
 
-~~Mixxx supports vinyl control input through a single soundcard with
-4-channels of input (two stereo line-in jacks), or through two separate
-soundcards which each have 2-channels of input (a single stereo line-in
-jack). Vinyl control requires the use of stereo line-in jacks - Mono or
-microphone inputs will not work.~~
+Mixxx unterstützt die Vinyl Steuerung durch eine Soundkarte mit mind. 4
+Eingängen (2 Stereo Eingänge) *oder* durch zwei separate Soundkarten mit
+je 2 Eingängen (1 Stereo Eingang). erforderlich. Für die Vinyl Steuerung
+müssen Stereo Line-In Stecker benutzt werden, Mono- oder
+Mikrofon-Stecker funktionieren nicht.
 
-### Plattenspieler Vorverstärker
+### Vorverstärker
 
 Viele Plattenspieler liefern nur ein unverstärktes Phono-Signal welches
-zu einem Line-Signal verstärkt werden muss.Normalerweise erledigt ein
-Mixer diese Verstärkung, wenn Sie aber Ihr unverstärktes Phono-Signal
+zu einem Line-Signal verstärkt werden muss. Normalerweise erledigt ein
+Mixer diese Verstärkung, wenn Sie aber das unverstärkte Phono-Signal
 direkt aus dem Plattenspieler in die Soundkarte schicken kann Mixxx die
 Verstärkung übernehmen. Mit dem "Turntable Input Preamp" Regler kann die
 Vorverstärkung des Phono-Signals eingestellt werden.
 
-### Vinyl Konfiguration
+### Timecode Konfiguration
 
 Verschiedene Timecode Medien können benutzt werden um Mixxx zu steuern.
 Wählen Sie im "Vinyl Type" Menü aus welche Art von Timecode-Vinyl oder
-CD Sie benutzen wollen.
+Timecode-CD Sie benutzen wollen.
 
-Mit der "Lead-in Time" Einstellung kann ein Bereich am Beginn der
-Vinyls/CDs eingestellt werden, in welchem der Timecode ignoriert wird.
-Das ist nützlich wenn der Timecode sehr nah an der Kante beginnt, was
-das Back-Cueing am Anfang eines Tracks manchmal schwierig macht und die
+Mit der "Lead-in Time" Einstellung kann ein Bereich am Beginn der Vinyls
+eingestellt werden, in welchem der Timecode ignoriert wird. Das ist
+nützlich wenn der Timecode sehr nah an der Kante beginnt, was das
+Back-Cueing am Anfang eines Tracks manchmal schwierig macht und die
 Nadel des Plattenspielers herunterrutschen läßt. Wird eine "Lead-in
 Time" von 20 Sekunden oder mehr eingestellt hat man also mehr Platz auf
-dem Vinyl zum Cueing. Es ist auch hilfreich wenn das Timecode-Vinyl am
-Beginn abgenutzt ist und nicht mehr zuverlässig funktioniert - einfach
-die "Lead-in Time" bis zu einem Bereich erhöhen der intakt ist. Die
-"Lead-in Time" kann so schrittweise erhöht werden und die Vinyls bleiben
-länger benutzbar.
+dem Vinyl zum Cueing. Es ist auch hilfreich wenn das Vinyl am Beginn
+abgenutzt ist und nicht mehr zuverlässig funktioniert - einfach die
+"Lead-in Time" bis zu einem Bereich erhöhen der intakt ist. Die "Lead-in
+Time" kann so schrittweise erhöht werden und die Vinyls bleiben länger
+benutzbar.
 
-### Control Mode
+### Timecode Modus
 
-~~Mixxx supports three control types on *all* of the timecodes we
-support. "Absolute Mode" provides Mixxx with both pitch and position
-information from the timecode, and allows you to seek by needle dropping
-on your vinyl or seeking on your CDJ. "Relative Mode" takes the position
-to be relative to your deck's starting point, and only controls the
-pitch in Mixxx. It is not possible to seek using your deck in relative
-mode. "Scratch Mode" is an enhanced version of relative mode, and only
-applies to FinalScratch vinyl. Scratch mode improves performance
-slightly while scratching, but is not necessary for better performing
-timecodes like Serato. Finally, "Needle-skip Prevention" allows Mixxx to
-detect and ignore small changes in needle position, such as when you've
-accidentally bumped your turntable. This can be advantageous in a live
-performance environment, but the downside is that it reduces
-responsiveness during scratching. Consequently, disabling needle-skip
-prevention is recommended for scratch performances.~~
+Mixxx unterstützt drei Arten von Steuerung auf *allen* unterstützten
+Timecode-Medien. Der "Absolute" Modus sendet Tempo und Position des
+Timecodes an Mixxx und ermöglicht so das Suchen innerhalb eines Track
+(needle dropping) mit dem Vinyl oder der CD. Der "Relative" Modus
+berechnet die aktuelle Postion des Timecodes relativ zum Startpunkt und
+beeinflusst nur das Tempo der Wiedergabe in Mixxx. Es ist also nicht
+möglich einen Track im "Relative" Modus zu durchsuchen. Der "Scratch"
+Modus ist eine erweiterte Version des "Relative" Modus speziell für die
+FinalScratch Vinyls. Der "Scratch" Modus verbessert die Performance beim
+Scratchen geringfüging, aber nicht für die von Hause aus besseren
+Timecode-Medien wie Serato. Die "Needle-skip Prevention" erkennt kleine
+Änderungen in der Position der Nadel und ignoriert sie, die
+Wiedergabeposition springt dadurch nicht wenn jemand versehentlich an
+den Plattenspieler stößt. Das kann im Livebetrieb hilfreich sein,
+verringert aber gleichzeitig die Reaktionsgeschwindigkeit beim
+Scratchen. Demnach sollte die "Needle-Skip Prevention" beim Scratchen
+ausgeschaltet sein.
 
 ### Signal Qualität
 
-\<del\>A successful vinyl control setup hinges on good signal quality.
-Many factors can affect signal quality, but the most important one is
-ensuring the volume level of your timecode signal is moderate. A signal
-that is too loud or too quiet will cause adverse performance, often
-characterized by a loss of position data causing absolute mode to behave
-like relative mode. For more information on improving signal quality and
-troubleshooting, please see the [vinyl control wiki
-page](vinyl_control).
+Eine funktionierende Vinyl Steuerung hängt von einer guten
+Signalqualität ab. Viele Faktoren können die Signalqualität
+beeinflussen, am wichtigsten ist aber dass die korrekte Lautstärke des
+Timecode Signal. Is es zu laut oder zu leise wird die Vinyl Steuerung
+nicht zuverlässig funktionieren. Es kommt zum Verlust von
+Positionsdaten, dadurch verhält sich z.B. der "Absolute" Modus wie der
+"Relative" Modus. Weitere Informationen zur Verbesserung der
+Signalqualität und zur Behebung von Fehlern befinden sich auf der [vinyl
+control wiki page](vinyl_control).
 
-Mixxx represents your timecode signal quality as a pair of real-time bar
-graphs. The two graphs correspond to your "Deck 1" and "Deck 2" input
-devices. The left-most column in each graph represents the overall
-status of the *timecode signal*. A full bar with an "OK\!" indicates
-everything is working well. The latter two columns in the graph
-represent the raw, unprocessed stereo signal coming from your decks. A
-good signal will appear as a pair of fluctuating green bars, each of
-which will be out of phase. Red bars indicate the volume is too low or
-two high, and the "Turntable Input Preamp" setting can be adjusted to
-boost the volume.\</del\>
+Mixxx stellt die Qualität des Timecode Signals in Echtzeit als ein Paar
+von Diagrammen dar. Die zwei Diagramme entsprechen den Eingabegeräten
+"Deck 1" und "Deck 2". Der linke Balken in einem Diagramm zeigt den
+Gesamtstatus des *Timecodesignals* an. Ein grüner Balken mit der
+Aufschrift "OK\!" bedeutet das alles gut funktioniert. Die anderen
+beiden Balken in dem Diagramm stellen das unbearbeitete Stereosignal
+dar, welches von den Plattenspielern/CD-Playern kommt. Ein gutes Signal
+wird als ein Paar von schwankenden grünen Balken angezeigt, ~~each of
+which will be out of phase~~. Rote Balken zeigen eine zu hohe oder zu
+niedrige Signalstärke an, die Einstellung "Turntable Input Preamp" kann
+die Signalstärke anheben.
 
 # DJing mit Mixxx
 
@@ -411,71 +447,71 @@ erhöhen (z.B. die paralle Darstellung der Wellenformen).
 
 ## Tracks laden
 
-Tracks können auf verschiedene Weise in den Player geladen werden: ~~ \*
-Per Rechtsklick the library track table: Right-clicking on a track in
-the table will present the options "Load in Player 1" and "Load in
-Player 2", among others. Making either selection will load a track into
-a player. \* Drag-and-drop from library track table:
-Dragging-and-dropping a song from the track table onto a waveform
-display will load a track into a player. \* Drag-and-drop from external
-file browser: Dragging-and-dropping a song from an external file browser
-directly onto a waveform display in Mixxx will load that song. This
-function is also known to work on some platforms with other
-applications. For example, on OS X, dragging-and-dropping a track from
-iTunes onto one of Mixxx's waveform displays will load that song into a
-player.~~
+Tracks können auf verschiedene Weise einen der beiden Player geladen
+werden:
 
-## Waveform displays
+  - Per Rechtsklick in der Bibliothek (im "Library" Modus): Ein
+    Rechts-Klick auf einen Track in der Bibliothek gibt einem u.a. die
+    Möglichkeit diesen per "Load in Player 1" oder "Load in Player 2"
+    in den jeweiligen Player zu laden.
+  - Per Drag-and-Drop aus der Bibliothek (im "Library" Modus): Wird ein
+    Track per Drag-and-Drop aus der Bibliothek auf eine Wellenform
+    Anzeige gezogen, wird er in dem jeweiligen Player geladens.
+  - Per Drag-and-Drop aus einem externen Dateimanager: Wird ein Track
+    per Drag-and-Drop aus einem externen Dateimanager heraus auf eine
+    Wellenform Anzeige gezogen, wird er in dem jeweiligen Player
+    geladens. Das funktioniert auch mit anderen Anwendungen unter
+    manchen Betriebssystemen. Zum Beispiel kannn unter OSX ein Track auf
+    diese Weise aus iTunes heraus in Mixxx geladen werden.
 
-\<del\>There are two main **waveform displays** in Mixxx that are used
-to display the waveform of the songs you are mixing. These are useful
-because they allow you to see features in a song (like a breakdown)
-before you hear them. The waveform displays are aligned parallel to each
-other in order to make beat matching easier, as it is possible to
-beatmatch visually by aligning the beats that appear in each waveform.
+## Wellenform
 
-Clicking and dragging on a waveform allows you to seek through a song in
-both directions. The waveform display is updated in realtime upon
-seeking. There are two smaller **waveform summary** displays located
-adjacent to the main waveform displays. These smaller displays show the
-waveform envelope of the entire song, and are useful because they allow
-DJs to see breakdowns far in advance. Vinyl DJs will find this familiar
-because quiet sections of songs can be visually distinguished when
-looking at a vinyl record, and this is a useful tool when planning your
-mixes on-the-fly.\</del\>
+Es gibt zwei grosse **Wellenform Anzeigen** in Mixxx, welche die
+Wellenform der Tracks zeigen die gerade gespielt werden. Hilfreich um
+Details in Tracks , wie Steigerungen oder Pausen, im Voraus zu erkennen.
+Die Anzeigen sind parallel zueinander angeordnet um das Beatmatching zu
+erleichtern, so kann mann auch durch das Anordnen der in beiden
+Wellenformen sichtbaren Beats die Tracks syncron laufen lassen. Durch
+Klicken und Ziehen auf eine Wellenform kann ein Track in beide
+Richtungen durchsucht werden. Die Anzeige der Wellenform wird dabei in
+Echtzeit aktualisiert. Es git zwei kleinere Elemente mit der
+**Wellenform-Übersicht** . Diese zeigen die Hüllkurve des gesamten
+Tracks und sind nützlich für den DJ um z.B. Pausen auf einen Blick zu
+erkennen. Vinyl DJs wird das bekannt vorkommen, denn auch auf Vinyl
+können stille Abschnitte entsprechend erkannt werden. Eine nützliche
+Sache beim Mixen on-the-fly.
 
 ## Beatmatching und Mixen
 
 Als **Beatmatching** bezeichnet man das taktgenaue Synchronisieren des
-Tempos zweier Tracks. \<del\> In Mixxx kann das **Tempo** von zwei
-Tracks angepasst werden indem der jeweiligen "RATE" (Playback Rate)
-Regler bewegt wird. You can adjust the **phase** of the beats by
-clicking-and-dragging on either waveform display to temporarily slow
-down one of the songs until the beats are aligned. Die "TEMP"(Temporary
-Pitch Bend) Buttons ermöglichen die vorübergehende Anpassung des Tempos.
-So kann can also be used to momentarily adjust the playback rate,
-allowing you to "shuffle" the beats in a song forwards or backwards, so
-they can be aligned with another song.
+Tempos zweier Tracks.
 
-Once the tempos are matched and the beats aligned between two songs,
-they are said to be beatmatched. A "perfect" beatmatch is near
-impossible - there will always be some tiny difference in the playback
-rates. A keen DJ will keep his or her ears open and listen for the beats
-drifting out of alignment. This has a distinct "double bass kick" sound
-which is often preceded by the kick weakening in intensity (as the two
-kicks drift out of phase). When this happens, the beats can be realigned
-by simply tapping one of the temporary pitch bend buttons a few times in
-the appropriate direction. Now get out there and make Tiesto
-jealous\!\</del\>
+In Mixxx kann das **Tempo** von zwei Tracks angepasst werden indem der
+jeweiligen "RATE" Regler bewegt wird. Die **Phase** der Beats kann durch
+Klicken und Ziehen auf die jeweilige Wellenform verändert werden, das
+Tempo wird so vorubergehend bei einem Track vermindert bis die Beats
+passen.// Die "TEMP" Buttons ermöglichen auch eine vorübergehende
+Änderung des Tempos (Nudging). Sie können benutzt werden um die Beats
+vorwärts oder rückwärts zu "schieben" um sie zu syncronisieren.
 
-## Headphone Cueing
+Zwei Tracks sind "beatmatched", sobald das Tempo und die Beats der
+beiden yncronisiert sind sie. Ein "perfektes" Beatmatching is nahezu
+unmöglich - es werden immer kleinste Tempounterschiede sein.// Ein DJ
+der fit ist hält seine Ohren offen und hört ob die Beats auseinander
+driften. In dem Fall hat man diesen typischen "Double Bass Kick" Sound
+und lasche Kicks, da diese driften auseinander driften. Wenn dass
+passiert können die Beats mit ein paar Klicks auf den entsprechenden
+"TEMP" Button wieder syncronisiert werden. Und jetzt fange an und mache
+TIESTO neidisch\!
 
-Mit dem Headphone Cueing (Vorhören) hört der DJ den nächsten Track in
+## Vorhören
+
+Beim Vorhören (Headphone Cueing) hört der DJ den nächsten Track in
 seinem Kopfhörer ab bevor er live gespielt wird. Mixxx ermöglicht dem DJ
 das Audiosignal von beiden Kanälen vorzuhören indem der jeweilige
-"HEADPHONE" Button aktiviert wird. Durch das Headphone Cueing kann der
-DJ die Geschwindigkeit des nächsten Tracks an den aktuellen Track
-anpassen bevor er sie mit Hilfe des Crossfaders mixt.
+"HEADPHONE" Button aktiviert wird. Durch das Vorhören kann der DJ die
+Geschwindigkeit des nächsten Tracks an den aktuellen Track anpassen
+bevor er sie mit Hilfe des Crossfaders mixt.
 
 ## Einen Mix aufnehmen
 
@@ -487,7 +523,7 @@ Mixxx's Master Signal kann folgendermaßen in Echtzeit als Audiodatei
 3.  Speicherort und Dateiname angeben, dann "OK" klicken
 4.  Mixxx beginnt erst dann mit der Aufnahme wenn 2 Sekunden Sound zu
     hören sind. Um auch die ersten 2 Sekunden aufzunehmen - einfach die
-    PLAY Taste , dann sofort CUE (oder PAUSE ) drücken, 2 Sekunden
+    "PLAY" Taste , dann sofort "CUE" oder "PAUSE" drücken, 2 Sekunden
     warten und mit dem Mixen beginnen. Eine eventuelle Pause am Anfang
     der Aufnahme kann nachträglich mit einem Audio Editor wie
     [Audacity](http://audacity.sourceforge.net/) entfernt werden.
@@ -540,9 +576,9 @@ Vor dem Kauf eines Controllers für die Verwendung mit Mixxx lesen Sie
 bitte unsere Wiki Seite zur [Hardware
 Kompatibilität](http://www.mixxx.org/wiki/doku.php/hardware_compatibility).
 Sie enthält die aktuellste Dokumentation zu den einzelnen von Mixxx
-unterstützten Controller und ihrer Beschränkungen . Die Unterstützung
-für die Geräte variiert je nach Betriebssystem, also stellen Sie sicher
-das die Dokumentation gelesen wurde.
+unterstützten Controller und ihrer Beschränkungen. Die Unterstützung für
+die Geräte variiert je nach Betriebssystem, also stellen Sie sicher das
+die Dokumentation gelesen wurde.
 
 # Mitmachen
 

@@ -1,10 +1,7 @@
-**This is a English-German translation from the current [Mixxx
-manual](manual), as close as possible to the original.  
-Missing translations are maked with ~~striked-trough text~~.**
-
-**Dies ist eine Englisch-Deutsch Übersetzung für das aktuelle [Mixxx
-manual](manual) die sich so genau wie möglich am Original orientiert.  
-Fehlende Übersetzungen sind mit ~~durchgestrichenem Text~~ markiert.**
+**Die Benutzeroberfäche von Mixxx ist in englischer Sprache
+beschriftet.**  
+Dies ist die deutsche Übersetzung für das aktuelle [Mixxx manual
+(english)](manual).
 
 # Mixxx 1.7 Handbuch
 
@@ -84,8 +81,7 @@ in den Ordner *Programme* ziehen. Mixxx läuft auf Intel Mac unter OS
 
 Die Benutzeroberfläche von Mixxx ist schlicht gestaltet, so das sie beim
 live DJing einfach zu bedienen ist. Dieser Abschnitt beschreibt die
-wichtigsten Merkmale der Oberfläche.  
-*Mixxx ist in englischer Sprache beschriftet.*
+wichtigsten Merkmale der Oberfläche.
 
 ## Wiedergabesteuerung
 
@@ -433,10 +429,10 @@ Gesamtstatus des *Timecodesignals* an. Ein grüner Balken mit der
 Aufschrift "OK\!" bedeutet das alles gut funktioniert. Die anderen
 beiden Balken in dem Diagramm stellen das unbearbeitete Stereosignal
 dar, welches von den Plattenspielern/CD-Playern kommt. Ein gutes Signal
-wird als ein Paar von schwankenden grünen Balken angezeigt, ~~each of
-which will be out of phase~~. Rote Balken zeigen eine zu hohe oder zu
-niedrige Signalstärke an, die Einstellung "Turntable Input Preamp" kann
-die Signalstärke anheben.
+wird als ein Paar von schwankenden grünen Balken angezeigt, der eine
+geht hoch während der anderer runtergeht (out-of-phase). Rote Balken
+zeigen eine zu hohe oder zu niedrige Signalstärke an, die Einstellung
+"Turntable Input Preamp" kann die Signalstärke anheben.
 
 # DJing mit Mixxx
 

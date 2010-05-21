@@ -43,20 +43,25 @@ will be exposed via accessor methods so that SoundManager can choose
 between the master and headphone mixes or the individual samples.
 Changes made will be conscious of eventual merge of n-decks branch, i.e.
 will want to look at exposing the various decks using a `CSAMPLE*
-EngineMaster::getDeckByIndex(uint index);` method in place of a
-`CSAMPLE* EngineMaster::getDeck1();`, `CSAMPLE*
-EngineMaster::getDeck2();` etc. There is, of course, an upper-bound
-given the finite nature of PCI slots, USB ports, and sound cards, but a
-DJ could easily use four decks (8 channels) of output (of course,
-there's currently only 2 inputs of vinyl control... not sure if n-decks
-extends that). The other major aspect of the mode is UI, preferences
-will have to be extended to support routing audio to an external instead
-of using an internal mixer. This will likely include a bit of
-refactoring.
+EngineMaster::getDeckByIndex(uint index);` method in place of
 
-#### Work breakdown structure ([see en:wp](http://en.wikipedia.org/wiki/Work_breakdown_structure))
+``` cpp-qt
+CSAMPLE* EngineMaster::getDeck1();
+CSAMPLE* EngineMaster::getDeck2(); // etc
+```
 
-  - To be completed :)
+There is, of course, an upper-bound given the finite nature of PCI
+slots, USB ports, and sound cards, but a DJ could easily use four decks
+(8 channels) of output (of course, there's currently only 2 inputs of
+vinyl control... not sure if n-decks extends that). The other major
+aspect of the mode is UI, preferences will have to be extended to
+support routing audio to an external instead of using an internal mixer.
+This will likely include a bit of refactoring.
+
+#### Work breakdown structure
+
+  - To be completed :) See
+    [Work\_breakdown\_structure](https://en.wikipedia.org/wiki/Work_breakdown_structure)
 
 ### Links
 

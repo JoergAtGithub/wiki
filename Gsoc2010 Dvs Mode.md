@@ -39,7 +39,7 @@ represenation of analog signals) works and skimming a book on Qt.
 #### Design
 
 Currently, the sample buffers are only accessible to EngineMaster. These
-will be exposed via acessor methods so that SoundManager can choose
+will be exposed via accessor methods so that SoundManager can choose
 between the master and headphone mixes or the individual samples.
 Changes made will be conscious of eventual merge of n-decks branch, i.e.
 will want to look at exposing the various decks using a `CSAMPLE*

@@ -17,9 +17,9 @@
 -----
 
   
-Skin can change Mixxx\`look and feel‚ some skins merely make the program
-more aesthetically pleasing while others rearrange elements of the
-interface, potentially making the program easier to use.
+Skins can change Mixxx\`look and feel‚ some skins merely make the
+program more aesthetically pleasing while others rearrange elements of
+the interface, potentially making the program easier to use.
 
 ### Getting started
 

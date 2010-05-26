@@ -380,8 +380,8 @@ Time a peak  is displayed (in ms)
 Time a peak falls down (in ms)
 Number of steps a peaks falls down in <PeakFallTime>
 
-Defines connected Channel & Stereo-balance (X = Channel1 or Channel2 or Master) (Y= VuMeter or VuMeterL or VuMeterR)
-
+Defines connected Channel & Stereo-balance (X = Channel1 or Channel2 or Master),
+(Y= VuMeter or VuMeterL or VuMeterR)
 
 ` |
 

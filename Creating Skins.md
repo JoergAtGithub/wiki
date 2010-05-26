@@ -11,7 +11,7 @@
   - Howto install skins
   - FAQ
   - Licensing
-  - Update Skinning Guidelines
+  - ~~Update Skinning Guidelines~~
   - Proof reading
 
 -----

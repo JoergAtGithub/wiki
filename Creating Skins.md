@@ -760,360 +760,390 @@ Which mouse button must be clicked so the action is performed
 
 ### Reverse playback
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text for **all <strong>states&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;1&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],reverse&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],reverse&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;false&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;|Reverse playback Channel X while playing<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (</strong>X =** 1 <strong>or</strong> 2) , performed action (reverse)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>Helpful text for all states</Tooltip>
+    <NumberStates>1</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],reverse</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],reverse</ConfigKey>
+    <EmitOnDownPress>false</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+</PushButton>
+` | `
+Reverse playback Channel X while playing
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (reverse)
+
+
+
+
+
+
+
+
+
+` |
 
 ### Fast forward (or rewind)
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text for **all <strong>states&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;1&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[ChannelX],fwd&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;false&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;RightButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;|Fast forward (rewind), Right-click: Jump to end (start) of track<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (</strong>X =** 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>=fwd <strong>or</strong> back)<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>=end <strong>or</strong> start)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<PushButton>
+    <Tooltip>Helpful text for all states</Tooltip>
+    <NumberStates>1</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>false</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>RightButton</ButtonState>
+    </Connection>
+</PushButton>` | `
+Fast forward (rewind),  Right-click: Jump to end (start) of track
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (Y=fwd or back)
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (Y=fwd or back)
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (Y=end or start)
+
+
+
+
+` |
 
 ### Beat sync
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text for **all <strong>states&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;1&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],beatsync&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;|Synchronize tempo with other channel<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (</strong>X =** 1 <strong>or</strong> 2) , performed action (beatsync)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>Helpful text for all states</Tooltip>
+    <NumberStates>1</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],beatsync</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+</PushButton>` | `
+Synchronize tempo with other channel
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (beatsync)
+
+
+
+
+` |
 
 ### Pitch control (up and down)
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text for **all <strong>states&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;1&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;RightButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;|Left Click: Increase (decrease) pitch, Right Click: Increase (decrease) pitch in small step<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (</strong>X =** 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>= rate_perm_up <strong>or</strong> rate_perm_down)<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>= rate_perm_up_small <strong>or</strong> rate_perm_down_small)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>Helpful text for all states</Tooltip>
+    <NumberStates>1</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>RightButton</ButtonState>
+    </Connection>
+</PushButton>` | `Left Click: Temporary increase (decrease) pitch,
+Right Click: Temporary increase (decrease) pitch in small step
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2),
+performed action (Y= rate_temp_up or rate_temp_down)
+
+
+
+Defines connected Channel (X = 1 or 2),
+performed action (Y= rate_temp_up_small or rate_temp_down_small)
+
+
+
+` |
 
 ### Pitch bend (Nudge)
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text for **all <strong>states&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;1&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>Y<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;false&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;LeftButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],</strong>X<strong>&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;true&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;RightButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel</strong>X<strong>],rate_temp_up_small&lt;/ConfigKey&gt;<br />
-&lt;EmitOnDownPress&gt;false&lt;/EmitOnDownPress&gt;<br />
-&lt;ButtonState&gt;RightButton&lt;/ButtonState&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;|Left Click: Temporary increase (decrease) pitch, Right Click: Temporary increase (decrease) pitch in small step<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (</strong>X =** 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>= rate_temp_up <strong>or</strong> rate_temp_down)<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (<strong>Y</strong>= rate_temp_up_small <strong>or</strong> rate_temp_down_small)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>Helpful text for all states</Tooltip>
+    <NumberStates>1</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>false</EmitOnDownPress>
+    <ButtonState>LeftButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>true</EmitOnDownPress>
+    <ButtonState>RightButton</ButtonState>
+    </Connection>
+    <Connection>
+    <ConfigKey>[ChannelX],Y</ConfigKey>
+    <EmitOnDownPress>false</EmitOnDownPress>
+    <ButtonState>RightButton</ButtonState>
+    </Connection>
+</PushButton>
+` | `Left Click: Temporary increase (decrease) pitch, 
+Right Click: Temporary increase (decrease) pitch in small step
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2) , 
+performed action (Y= rate_temp_up or rate_temp_down)
+
+
+
+
+
+
+
+
+Defines connected Channel (X = 1 or 2) , 
+performed action (Y= rate_temp_up_small or rate_temp_down_small)
+
+
+
+
+
+
+
+
+` |
 
 ### Prelisten / Monitoring
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;2&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;1&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel<strong>X</strong>],pfl&lt;/ConfigKey&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;</td>
-<td>Headphone prelisten for Channel X<br />
-<br />
-<br />
-Default button visible<br />
-<br />
-<br />
-<br />
-<br />
-Button visible when active<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (beatsync)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>Helpful text</Tooltip>
+    <NumberStates>2</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <State>
+    <Number>1</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],pfl</ConfigKey>
+    </Connection>
+</PushButton>
+` | `
+Headphone prelisten for Channel X
+
+
+
+Default button visible
+
+
+
+
+Button visible when active
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (beatsync)
+
+
+` |
 
 ### End of track mode
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;3&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;stop.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;stop.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;1&lt;/Number&gt;<br />
-&lt;Pressed&gt;next.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;next.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;2&lt;/Number&gt;<br />
-&lt;Pressed&gt;loop.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;loop.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel<strong>X</strong>],TrackEndMode&lt;/ConfigKey&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;</td>
-<td>End of track mode control (see manual)<br />
-<br />
-<br />
-Button visible in STOP mode<br />
-<br />
-<br />
-<br />
-<br />
-Button visible in NEXT mode<br />
-<br />
-<br />
-<br />
-<br />
-Button visible in LOOP mode<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (TrackEndMode)</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<PushButton>
+    <Tooltip>Helpful text</Tooltip>
+    <NumberStates>3</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>stop.png</Pressed>
+    <Unpressed>stop.png</Unpressed>
+    </State>
+    <State>
+    <Number>1</Number>
+    <Pressed>next.png</Pressed>
+    <Unpressed>next.png</Unpressed>
+    </State>
+    <State>
+    <Number>2</Number>
+    <Pressed>loop.png</Pressed>
+    <Unpressed>loop.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
+    </Connection>
+</PushButton>
+` | `
+End of track mode control (see manual)
+
+
+
+Button visible in STOP mode
+
+
+
+
+Button visible in NEXT mode
+
+
+
+
+Button visible in LOOP mode
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (TrackEndMode)
+
+
+` |
 
 ### FX (Flanger)
 
-<table>
-<tbody>
-<tr class="odd">
-<td>&lt;PushButton&gt;<br />
-&lt;Tooltip&gt;Helpful text&lt;/Tooltip&gt;<br />
-&lt;NumberStates&gt;2&lt;/NumberStates&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;0&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;State&gt;<br />
-&lt;Number&gt;1&lt;/Number&gt;<br />
-&lt;Pressed&gt;pressed.png&lt;/Pressed&gt;<br />
-&lt;Unpressed&gt;unpressed.png&lt;/Unpressed&gt;<br />
-&lt;/State&gt;<br />
-&lt;Pos&gt;X,Y&lt;/Pos&gt;<br />
-&lt;Connection&gt;<br />
-&lt;ConfigKey&gt;[Channel<strong>X</strong>],flanger&lt;/ConfigKey&gt;<br />
-&lt;/Connection&gt;<br />
-&lt;/PushButton&gt;</td>
-<td>Apply flanger effect to Channel <strong>X</strong><br />
-<br />
-<br />
-Default button visible<br />
-<br />
-<br />
-<br />
-<br />
-Button visible when active<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , performed action (flanger)\\</td>
-</tr>
-</tbody>
-</table>
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<PushButton>
+    <Tooltip>Helpful text</Tooltip>
+    <NumberStates>2</NumberStates>
+    <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <State>
+    <Number>1</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[ChannelX],flanger</ConfigKey>
+    </Connection>
+</PushButton>` | `
+Apply flanger effect to Channel X
+
+
+
+Default button visible
+
+
+
+
+Button visible when active
+
+
+
+
+Defines connected Channel (X = 1 or 2) , performed action (flanger)
+
+
+` |
 
 ### Frequency Kill
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <Tooltip>Helpful text</Tooltip>
     <NumberStates>2</NumberStates>
@@ -1138,6 +1168,7 @@ Defines connected Channel (<strong>X =</strong> 1 <strong>or</strong> 2) , perfo
 Cuts the high, mid and low frequencies on Channel X
 
 
+
 Default button visible
 
 
@@ -1148,7 +1179,11 @@ Button visible when active
 
 
 
-Defines connected Channel (X = 1 or 2) , performed action (Y= filterHighKill or filterMidKill or filterLowKill)
+Defines connected Channel (X = 1 or 2), 
+performed action (Y= filterHighKill or filterMidKill or filterLowKill)
+
+
+
 ` |
 
 ## Section: Knobs (RotaryFader)

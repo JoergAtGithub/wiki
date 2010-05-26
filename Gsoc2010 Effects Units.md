@@ -103,10 +103,9 @@ both on a channel, a unit per channel or even both on master.
 
 ### Activity
 
-**Current:** Working my way through designing the structure for this
-project as well as organizing myself.
-
-#### History
-
+  - **Current:** Digging through Mixxxs Core to study if the Effects
+    Units should also abstract the communication with the engine.
+  - Working my way through designing the structure for this project as
+    well as organizing myself.
   - Community Bonding Period:
     [features\_midi\_learn](https://code.launchpad.net/~bruno-buccolo/mixxx/features_midi_learn)

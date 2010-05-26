@@ -62,7 +62,7 @@ both on a channel, a unit per channel or even both on master.
     LADSPA\_PATH?)
   - Save/Load Configuration
 
-### TO-DO (Updated Frequently)
+### To-Do
 
 #### Effects Units
 
@@ -101,7 +101,12 @@ both on a channel, a unit per channel or even both on master.
 
   - See [LADSPA page](ladspa).
 
-### Activity Log
+### Activity
+
+**Current:** Working my way through designing the structure for this
+project as well as organizing myself.
+
+#### History
 
   - Community Bonding Period:
     [features\_midi\_learn](https://code.launchpad.net/~bruno-buccolo/mixxx/features_midi_learn)

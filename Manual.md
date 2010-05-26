@@ -3,6 +3,7 @@
 This manual is also available in:
 
   - [German (Deutsch)](manual_german)
+  - [Spanish (Español)](manual_spanish)
 
 # Table of Contents
 

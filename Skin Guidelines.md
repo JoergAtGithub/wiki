@@ -27,6 +27,112 @@ Mixxx and be able to move it around the skin to get rid of the title
 bar/menu bar entirely. [DJSynthe](/User/DJSynthe) 23:25, 25 November
 2007 (CST)
 
+### The optimal size for Skins
+
+#### Intro
+
+One of the biggest drawbacks of the current skinning engine (as of Mixxx
+1.8) is that it **can not handle skins resolution independent**. Every
+skin needs to be redrawn by hand which is a lot of work for skin
+designers.
+
+Here are some suggestions for skin designers what may be the best skin
+size for the targeted screen resolution. It is based on user feedback
+for skins i made and measurements on the different platforms Mixxx is
+available for.
+
+#### Goal
+
+The goal is to have some kind of **standard** so skin designers have a
+**starting point** when they start drawing a skin.
+
+Mixxx is available for different Operations Systems (OS) - but every OS
+handles the window decoration differently.
+
+Imho the whole interface should be completely visible to the user even
+when not in full screen mode. So the effective **skin dimensions depends
+on the usable free space** on the OS with the biggest window decoration.
+Which is Linux with the Gnome desktop environment.
+
+#### Example
+
+Default window decoration as seen on the *Outline Netbook 1024x768*
+skin  
+Notice how different the available vertical space on the screen is. |
+
+| MacOSX                                      | Linux / Gnome                                | Linux / KDE                                | Windows XP                                   | Windows 7                                   |  |
+| ------------------------------------------- | -------------------------------------------- | ------------------------------------------ | -------------------------------------------- | ------------------------------------------- |  |
+| [[/media/skinning/skin_resolution_tut_osx2.png|]] | [[/media/skinning/skin_resolution_tut_gnome.png|]] | [[/media/skinning/skin_resolution_tut_kde.png|]] | [[/media/skinning/skin_resolution_tut_winxp.png|]] | [[/media/skinning/skin_resolution_tut_win7.png|]] |  |
+
+#### Fullscreen Mode
+
+Default window decoration for various Operating Systems
+
+|                            |        |        |        |        |        |
+| -------------------------- | ------ | ------ | ------ | ------ | ------ |
+|                            | MacOSX | Gnome  | KDE    | WinXP  | Win7   |
+| Taskbar Top                | 0      | 0      | 0      | 0      | 0      |
+| Window Titlebar            | 0      | 0      | 0      | 0      | 0      |
+| Window decoration Top      | 0      | 25     | 24     | 20     | 22     |
+| Window decoration Bottom   | 0      | 0      | 0      | 0      | 0      |
+| Taskbar Bottom             | 0      | 0      | 0      | 0      | 0      |
+| **Horizontal decorations** | **0**  | **25** | **24** | **20** | **22** |
+|                            |        |        |        |        |        |
+| Window decoration left     | 0      | 0      | 0      | 0      | 0      |
+| Window decoration right    | 0      | 0      | 0      | 0      | 0      |
+| **Horizontal decorations** | **0**  | **0**  | **0**  | **0**  | **0**  |
+
+#### Window Mode (Non-Fullscreen)
+
+Default window decoration for various Operating Systems
+
+|                            |        |         |        |        |        |
+| -------------------------- | ------ | ------- | ------ | ------ | ------ |
+|                            | MacOSX | Gnome   | KDE    | WinXP  | Win7   |
+| Taskbar Top                | 22     | 25      | 0      | 0      | 0      |
+| Window Titlebar            | 22     | 22      | 24     | 22     | 30     |
+| Window decoration Top      | 0      | 25      | 24     | 20     | 22     |
+| Window decoration Bottom   | 0      | 3       | 8      | 4      | 8      |
+| Taskbar Bottom             | 0      | 25      | 30     | 30     | 30     |
+| **Vertical decorations**   | **44** | **100** | **86** | **76** | **90** |
+|                            |        |         |        |        |        |
+| Window decoration left     | 0      | 3       | 4      | 4      | 8      |
+| Window decoration right    | 0      | 3       | 4      | 4      | 8      |
+| **Horizontal decorations** | **0**  | **6**   | **8**  | **8**  | **16** |
+
+Note: If a window in Win7 is maximized the horizontal decoration is only
+2\*4 instead 2\*8 pixel.
+
+Max. Horizontal Pixel lost:8 (**subtract 2x8 pixel for max. Skin
+width**)  
+Max. Vertical Pixel lost:100 (**subtract 100 pixel for max. Skin
+height**)
+
+#### Which resolution to choose?
+
+|                  |       |        |                 |       |        |
+| ---------------- | ----- | ------ | --------------- | ----- | ------ |
+| Screen Dimension | Width | Height | Skin Dimensions | Width | Height |
+| Netbook          | 1024  | 600    | \=              | 1008  | 500    |
+| XGA – standard   | 1024  | 768    | \=              | 1008  | 668    |
+| WXGA – wide      | 1280  | 800    | \=              | 1264  | 700    |
+| WXGA+ - wide     | 1440  | 900    | \=              | 1424  | 800    |
+| SXGA – standard  | 1280  | 1024   | \=              | 1264  | 924    |
+| SXGA+ - standard | 1400  | 1050   | \=              | 1384  | 950    |
+| WSXGA+ - wide    | 1680  | 1050   | \=              | 1664  | 950    |
+| UXGA – standard  | 1600  | 1200   | \=              | 1584  | 1100   |
+| WUXGA – wide     | 1920  | 1200   | \=              | 1904  | 1100   |
+
+#### Conclusion
+
+As a skin designer you will have less work afterwards if you choose the
+right dimension for your skin.  
+More contribution from other users based on your good work may follow.
+
+Have a look at the documentation on [how to create
+skins](creating_skins) and start drawing ;-)  
+\--- *[jus](jus@justmail.de) 2010/05/26 04:06*
+
 ## Waveform Display and Waveform Summaries
 
 The waveform display should be central to any skin. I personally think

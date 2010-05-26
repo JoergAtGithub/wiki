@@ -5,6 +5,10 @@ This manual is also available in:
   - [German (Deutsch)](manual_german)
   - [Spanish (Español)](manual_spanish)
 
+*These translations were graciously provided by Mixxx fans and we depend
+on you to keep them up to date\! (The Mixxx development team speaks
+English primarily.)*
+
 # Table of Contents
 
 1.  [Beginner's Guide](Beginner's%20Guide)

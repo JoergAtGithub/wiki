@@ -4,15 +4,15 @@
 
   
 **Skinning Documentation - Work in progress** ---
-*[jus](jus@justmail.de) 2010/05/25 17:16*  
+*[jus](jus/justmail/de) 2010/05/27 11:33*  
 <span class="underline">todo:</span>  
-\* Cleanup Wiki syntax
+\* Complete Skin.xml in-depth review
 
-  - Howto install skins
-  - FAQ
+  - ~~Howto install skins~~
+  - ~~FAQ~~
   - Licensing
   - ~~Update Skinning Guidelines~~
-  - Proof reading
+  - Cleanup Wiki syntax / Proof reading
 
 -----
 
@@ -43,12 +43,41 @@ editing the skin.xml.
 Keep in mind the [Mixxx Skinning
 Guidelines](http://mixxx.org/wiki/doku.php/skin_guidelines)
 
+### Things to know
+
 Images are in the .png format and Mixxx does support png transparency.
 Element colors are defined in hexadecimal values.  
 Element positions are defined with **X,Y** coordinates (from upper left
-). Element sizes are defined with **W,H** coordinates (width,heigh).
+). Element sizes are defined with **W,H** values (width,heigh).
 
 [[/media/mixxx1.8_gui_positioning_shadedark.png|]]
+
+General structure of the skin.xml. More in-depth informations for each
+element and their attributes defined in the skin.xml can be found
+[here](#skinxml-in-depth-review)
+
+| syntax                                                                                                                                                                                                             | Info                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<!--Comment-->
+<!DOCTYPE skin>           
+<skin>
+<elementname>
+<position>X,Y</position>
+<size>W,H</size>
+<options>values(depends)</options>
+<tooltips>helpful text</tooltips>
+</elementname>           
+</skin>
+` | ` Optional comments (i.e. skin license or changelog)
+Doctype declaration so Mixxx "know"
+Skin opening tag
+Elements opening tag
+Position on the screen
+Size (depending on the element)
+Options(depending on the element)
+Tooltips to display on mouse-over
+Elements closing tag
+Skin closing tag  ` |
 
 ### Tools
 
@@ -73,10 +102,11 @@ Free knob tools - Windows only, MacOSX & Linux via
 ([Knobman](http://www.g200kg.com/en/software/knobman.html), [Knob
 Render](http://www.otiumfx.com/knobrender))
 
-### Mixxx skin overview
+### Skin 101
 
 Lets have a look at the Mixxx user interface (with ShadeDark skin
-applied). The various elements of the skin are marked.
+applied). The various elements of the skin are marked and explained
+below.
 
 [[/media/mixxx1.8_gui_explained_shadedark.png|]]
 
@@ -147,22 +177,122 @@ applied). The various elements of the skin are marked.
   - Channel filter - perform equalization on the high, mid and low
     frequencies
 
-# skin.xml in-depth
+### Skin licensing
 
-| General skin.xml element syntax                                                                                                                | Info                                                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<elementname>
-<position>X,Y</position>
-<size>W,H</size>
-<options>values(depends)</options>
-<tooltips>helpful text</tooltips>
-</elementname>
-` | ` Elements opening tag
-Position on the screen
-Size (depending on the element)
-Options(depending on the element)
-Tooltips to display on mouse-over
-Elements closing tag  ` |
+FIXME
+
+### Skin FAQ
+
+#### How to install a skin
+
+Additional skins for Mixxx can be downloaded in the
+[forum](http://mixxx.org/forums/viewforum.php?f=8).
+
+    In this example we are going to install the file "Shade.zip"
+    
+    1. Close Mixxx.
+    2. Download & unzip "Shade.zip" and copy the whole unzipped folder "Shade" to the corresponding path:
+    
+    Linux
+    *************
+    /usr/share/mixxx/skins/
+    so you get 
+    /usr/share/mixxx/skins/Shade
+    
+    Note that you may get permission error while copying, 
+    make sure you have root privileges
+    
+    Windows
+    *************
+    C:\Program Files\Mixxx\skins
+    so you get 
+    C:\Program Files\Mixxx\skins\Shade
+    
+    Mac OSX
+    *************
+    -  In the Finder, go to the Applications folder and select Mixxx.
+    -  Right Click and choose "Show Package Contents" from the Action menu.
+    -  goto Contents/Resources/skins
+    
+    or straight via Terminal 
+    /Applications/Mixxx.app/Contents/Resources/skins
+    so you get
+    /Applications/Mixxx.app/Contents/Resources/skins/Shade
+    
+    3. Start Mixxx , goto "Preferences-->Interface" and select "Skin-->Shade"
+       Make sure you have "Waveform Display-->Waveform" selected
+       Save preferences with OK.   
+    
+    4. The new skin should now be displayed.
+    
+    5. Restart Mixxx. Done.
+
+#### How to resize a skin
+
+As of Mixxx 1.8 it is not possible to resize a skin automatically, Mixx
+can not handle skins resolution independent. Every skin needs to be
+redrawn by hand.  
+<span class="underline">Example:</span> Your skin is 1024x768 but your
+screen is 1280x1024. When going into fullscreen Mixxx will fill your
+screen around the 1024x768 used by the skin with the skin\`s background
+color. This background color is defined in skin.xml using the
+*\<Horizontal\>* key . See [example](#main-background).  
+So if you would like to have your skin fill the whole screen ( i.e. to
+have more space for the library), you need another variant of your skin
+for 1280x1024.  
+Also see the [Skin guidelines](skin_guidelines) .
+
+#### How to change the size of the library
+
+Same thing as with resizing a skin , as of Mixxx 1.8 it is not possible
+to resize the library automatically. You need another variant of your
+skin  
+Also see the [Skin guidelines](skin_guidelines) .
+
+#### How to change the players orientation (vertical or horizontal)
+
+As of Mixxx 1.8 this is not possible. You can change the orientation of
+Volume level display & Fader using the *\<Horizontal\>* key. See
+[example](#channel-volume).
+
+#### How to change the font size or color for the text (i.e. artist)
+
+The text attributes are defined skin.xml using the *\<Style\>* key. Use
+CSS syntax. See [example](#track-information).
+
+#### How to change the font size or font color for the playlist
+
+As of Mixxx 1.8 it is not possible to chage these values. The font size
+is fixed, the font color inverts the library background colors from
+the*\<BgColorRowEven\>* key. See [example](#library-display)
+
+#### How to change the size or color of the waveform
+
+The values are defined in skin.xml using the *\<Pos\>* and
+*\<SignalColor\>* key. See [example](#waveform).
+
+#### How to use a custom symbol for markers ( i.e. Hotcues)
+
+Custom symbols for markers can be defined for Hotcues, Cues , LoopIn and
+LoopOut in skin.xml using the *\<Pixmap\>* key. See
+[example](##waveform).  
+Notice that your custom markers only show up in the big waveforms.
+
+#### How to use sliders instead of knobs ( i.e. for eq\`s )
+
+~~All elements that are sliders could be knobs an vis a vis. Think of
+some house hardware mixers , sometimes you have no channel line fader
+(slider) but rather rotary fader (knobs).  
+Same for EQ\`s , they could be slider instead knobs.~~ Is that really
+possible?FIXME
+
+# Skin.xml in-depth review
+
+In this section all elements and the values of their keys are explained
+on the example of
+[ShadeDark](http://mixxx.org/forums/viewtopic.php?f=8&t=918) skin.xml.  
+So open up the skin.xml with your favorite [text editor](#tools) and get
+started :-)
 
 ## Section: General
 
@@ -180,8 +310,8 @@ Defines a background color ( Example: # = #000000)
 
 ### Library display
 
-|                                                                                                                                                                                                        |                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<TableView>
     <Pos>X,Y</Pos>
     <Size>W,H</Size>
@@ -192,8 +322,8 @@ Defines a background color ( Example: # = #000000)
 </TableView>` | `
 Defines the elements position
 Defines the elements size
-Background color library widget 
-Foreground color library widget 
+Background color library widget (i.e. background color search widget)
+Foreground color library widget (i.e. text in "Analyze" widget)
 Background color even line right library pane 
 Background color uneven lines right library pane
 
@@ -236,68 +366,76 @@ Default color of Cuepoint marker
 
 ` |
 
-|                                                                                                                                                               |                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ` <Mark>
         <Control>cue_point</Control>
+        <Pixmap>custom_marker.png</Pixmap>
         <Text>CUEPOINT</Text>
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
 </Mark>  ` | `
 Defines the Cuepoint , max. one cuepoint per channel 
-Text visible when Cuepoint is set 
+Optional: Defines a custom marker for given element, if available it overrides the default triangle
+Text visible when Cuepoint is set (and no custom marker is defined)
 Defines where text is positioned (Y=top or center or bottom) 
 Defines text background color 
 Defines text color
 
 ` |
 
-|                                                                                                                                                                    |                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Mark>
         <Control>hotcue_X_position</Control>
+        <Pixmap>custom_marker.png</Pixmap>
         <Text>HOTCUE X</Text>
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
 </Mark>` | `
 max. 32 Hotcues(X=1-32), define every Hotcue for its own 
-Text visible when Hotcue point is set 
+Optional: Defines a custom marker for given element, if available it overrides the default triangle
+Text visible when Hotcue point is set (and no custom marker is defined)
 Defines where text is positioned (Y= top or center or bottom) 
 Defines text background color 
 Defines text color
 
 ` |
 
-|                                                                                                                                                                         |                                                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Mark>
         <Control>loop_start_position</Control>
+        <Pixmap>custom_marker.png</Pixmap>
         <Text>LOOP IN</Text>    
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
 </Mark>` | `
 Defines a loops starting point
-Text visible when starting point is set
+Optional: Defines a custom marker for given element, if available it overrides the default triangle
+Text visible when starting point is set (and no custom marker is defined)
 Defines where text is positioned (Y= top or center or bottom)
 Defines text background color
 Defines text color
 
 ` |
 
-|                                                                                                                                                                |                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Mark>
         <Control>loop_end_position</Control>
+        <Pixmap>custom_marker.png</Pixmap>
     <Text>LOOP OUT</Text>
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
 </Mark>` | `
 Defines a loops end point
-Text visible when end point is set
+Optional: Defines a custom marker for given element, if available it overrides the default triangle
+Text visible when end point is set (and no custom marker is defined)
 Defines where text is positioned (Y= top or center or bottom)
 Defines text background color
 Defines text color
@@ -754,6 +892,8 @@ Which mouse button must be clicked so the action is performed
 ` |
 
 ### Looping
+
+FIXME
 
 |  |  |
 |  |  |

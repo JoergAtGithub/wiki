@@ -123,6 +123,13 @@ height**)
 | UXGA – standard  | 1600  | 1200   | \=              | 1584  | 1100   |
 | WUXGA – wide     | 1920  | 1200   | \=              | 1904  | 1100   |
 
+**The overall size of a skin is defined by the size of its [background
+image](creating_skins#sectiongeneral).** The background image is the
+image file which all elements will be displayed on.  
+<span class="underline">Example:</span> You would like to make a skin
+which works on all OS for 1280x1024-SXGA screens. The background image
+should be 1264x924 in size (see table).
+
 #### Conclusion
 
 As a skin designer you will have less work afterwards if you choose the
@@ -131,7 +138,7 @@ More contribution from other users based on your good work may follow.
 
 Have a look at the documentation on [how to create
 skins](creating_skins) and start drawing ;-)  
-\--- *[jus](jus@justmail.de) 2010/05/26 04:06*
+\--- *\[\[|jus\]\] 2010/05/26 04:06*
 
 ## Waveform Display and Waveform Summaries
 

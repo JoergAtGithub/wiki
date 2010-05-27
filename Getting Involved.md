@@ -63,12 +63,12 @@ there.
 Are you good at graphics design? Help make Mixxx look even better by
 doing some artwork or skinning the interface.
 
-Make a skin, check out this page for how to -\> [Creating
-Skins](Creating%20Skins) \<- The page sort of sucks
+Make a skin, check out this page for how to [Creating
+Skins](Creating%20Skins).
 
 Make some promo artwork - eg. T-Shirt designs, DJ artwork for the
 website, etc, and post them to our mixxx-devel mailing list or on our
-forums
+forums.
 
 Keep the work original please (ripping off other people's copyrights
 ain't cool and it can get us in trouble).

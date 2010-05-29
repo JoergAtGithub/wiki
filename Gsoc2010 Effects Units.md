@@ -6,8 +6,8 @@
 
 ``` 
     * Email: bruno.buccolo.gmail.com
-    * IRC Handle: Buccolo
-    * Skype Handle: bruno.buccolo
+    * Freenode: Buccolo
+    * Skype: bruno.buccolo
 * Mentor: **Russell Ryan**
 ```
 
@@ -101,12 +101,3 @@ both on a channel, a unit per channel or even both on master.
 #### Extra
 
   - See [LADSPA page](ladspa).
-
-### Activity
-
-  - **Current:** Digging through Mixxxs Core to study if the Effects
-    Units should also abstract the communication with the engine.
-  - Working my way through designing the structure for this project as
-    well as organizing myself.
-  - Community Bonding Period:
-    [features\_midi\_learn](https://code.launchpad.net/~bruno-buccolo/mixxx/features_midi_learn)

@@ -61,3 +61,17 @@ appreciate.
   - Simple/Minimal Controls
 
 #### Work Breakdown
+
+Note: This work breakdown structure (WBS) will be refined as the scope
+of this project becomes better determined.
+
+``` 
+  - Sampler
+    - Playback Engine
+      - Recycled EngineBuffer
+      - Simple playback (play/stop)
+      - Looping
+    - Sample Bank Manager
+      - GUI for loading, saving, deleting
+      - 
+```

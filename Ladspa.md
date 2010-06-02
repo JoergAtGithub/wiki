@@ -3,6 +3,9 @@
 Note that LADSPA support is experimental currently so this page is
 intended mainly for developers.
 
+A GSoC '2010 Project is using LADSPA as a backend for an EffectsUnit
+Project. [Check it out\!](gsoc2010_effects_units)
+
 ## Compiling with LADSPA support enabled
 
 Required packages: ladspa-sdk

@@ -111,3 +111,27 @@ At the very least, all the GUI problems and knobs-not-working need to be
 resolved before LADSPA is ready.
 
 ## Brief Documentation
+
+### LADSPALibrary
+
+### LADSPAPlugin
+
+### LADSPADescriptor
+
+### LADSPAInstance
+
+### LADSPAControl
+
+### LADSPALoader
+
+### LADSPAView
+
+### LADSPAPresetManager
+
+### LADSPAPreset
+
+### LADSPAPresetInstance
+
+### LADSPAPresetSlot
+
+### EngineLADSPA

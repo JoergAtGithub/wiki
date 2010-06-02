@@ -109,3 +109,5 @@ to be done:
 
 At the very least, all the GUI problems and knobs-not-working need to be
 resolved before LADSPA is ready.
+
+## Brief Documentation

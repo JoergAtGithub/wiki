@@ -113,6 +113,21 @@ This will likely include a bit of refactoring.
 * For voice-over. Really has nothing to do with DVS since any mixer worth its salt will have a mic in but mixxx needs it.
 ```
 
+### Notes
+
+#### For you
+
+  - DVS mode will probably have negligible effect on CPU usage. Some
+    profiling I did
+    \[<http://article.gmane.org/gmane.comp.multimedia.mixxx.devel/2998>\]
+    seems to indicate the enginemaster stuff (which includes all the
+    audio processing) isn't actually all that expensive.
+
+#### For me
+
+  - [revamped\_control\_system](revamped_control_system) has an
+    excellent review of the controlobject system.
+
 ### Links
 
   - Branch at (fill me in)

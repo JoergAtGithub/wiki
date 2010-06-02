@@ -114,24 +114,59 @@ resolved before LADSPA is ready.
 
 ### LADSPALibrary
 
+Given a file, load every plugin this file has. LADSPA plugins may be
+bundled inside one library (small varations of fx plugins)
+
 ### LADSPAPlugin
+
+Holds the descriptor, has few operations to interface with the
+descriptor. Has the instantiate method, to create a LADSPAInstance.
 
 ### LADSPADescriptor
 
+The LADSPA API.
+
 ### LADSPAInstance
+
+Has the process method to process samples. Has the connect method to
+bind the ports of the plugins to LADSPAControl variables. Creates
+ConfigKeys and ControlObjects for Enable/Disable and for the Wet\&Dry.
 
 ### LADSPAControl
 
+Holds a pointer to a LADSPA\_Data. Has operation to get a value and put
+into the buffer for LADSPA\_Data smoothly.
+
 ### LADSPALoader
+
+Will load all plugins available (uses LADSPALibrary) Returns
+LADSPAPlugins by slot \# or label.
 
 ### LADSPAView
 
+Handles display/ui, instantiates LADSPAPresetManager.
+
 ### LADSPAPresetManager
+
+Load XML into LADSPAPresets, instantiates LADSPALoader
 
 ### LADSPAPreset
 
+Has the port names, knobs much like LADSPAPlugin. Has the instantiate
+method that will LADSPAPlugin::instantiate() -\> LADSPAInstance
+LADSPAPreset::instantiate() -\> LADSPAPresetInstance
+
 ### LADSPAPresetInstance
+
+Instantiates the LADSPAPlugin into LADSPAInstance Run the connect method
+for every control port Adds everything to the EngineLADSPA
 
 ### LADSPAPresetSlot
 
+Part of the UI, is where you drag the plugins to.
+
 ### EngineLADSPA
+
+Has all the LADSPAInstances, configurations, knobs, connections,
+everything. Will update the value for every control port (ControlObject
+-\> LADSPAControl) Will process the samples.

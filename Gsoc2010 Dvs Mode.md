@@ -142,8 +142,6 @@ They need work. See
 
 ### Notes
 
-#### For you
-
   - DVS mode will probably have negligible effect on CPU usage. Some
     profiling I did
     \[<http://article.gmane.org/gmane.comp.multimedia.mixxx.devel/2998>\]
@@ -152,9 +150,6 @@ They need work. See
   - Ok, the hifi eq's can eat CPU really well. May be a bug in eq
     though, as it stutters real bad on my system without ever peaking
     out my CPU.
-
-#### For me
-
   - [revamped\_control\_system](revamped_control_system) has an
     excellent review of the controlobject system.
 

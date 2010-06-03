@@ -93,6 +93,7 @@ N-Decks.**
 * Bruno Buccolo is working on this. He will take the potential of N-Decks into account.
 * External Mixer Mode
 * Bill Good is working on this. He will take the potential of N-Decks into account.
+* Vinyl Control is all 2-deck centric.
 
 ```
 

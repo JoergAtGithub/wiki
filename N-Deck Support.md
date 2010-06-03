@@ -75,6 +75,9 @@ N-Decks.**
 
   - ~~Parts of mixxx.cpp~~
   - Now, only the "File -\> Load to Player" drop-downs.
+  - Mixing Engine
+  - EngineBuffer beat sync'ing is hard-coded to 2-decks. Working on this
+    in features\_hydra.
   - Skinning engine
   - This project is looking for project lead\!
   - Library

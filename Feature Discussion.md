@@ -8,6 +8,7 @@ page.
 
   - [Revamped Control System](Revamped%20Control%20System)
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
+  - [N-Deck Support](N-Deck%20Support)
   - [Skinning Engine](Skinning%20Engine)
   - [DVS mode](DVS%20mode)
   - [SoundSource Refactor/Merge](SoundSource%20Refactor/Merge)

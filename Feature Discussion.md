@@ -26,6 +26,17 @@ page.
     Proposals](playqueue_and_library_improvements_proposals)
   - [SoundSource Refactor/Merge](SoundSource%20Refactor/Merge)
 
+## Good Intro Projects
+
+**Looking to contribute to Mixxx? Here are some projects we think could
+be done in a weekend, and would be a great introduction to the Mixxx
+codebase.**
+
+  - "Loading" animation for the waveforms
+  - adjustable drag sensitivity on visual waveform view
+  - also a way to change the direction ("scratching motion")
+  - Visual 'track ending' indicator for visual waveform
+
 ## Other Ideas
 
 [All Wishlist bugs on
@@ -34,8 +45,8 @@ Launchpad](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-imp
 
 (Copied from [feature\_wishlist](feature_wishlist))
 
-If you think of a feature that we need to implement at some time, jot it
-down here so you don't forget.
+**If you think of a feature that we need to implement at some time, jot
+it down here so you don't forget.**
 
 Some of these are copied over from the forums and the old wiki, so they
 may be done already or irrelevant.
@@ -51,15 +62,11 @@ may be done already or irrelevant.
     will not really double as cue points
   - ~~Split cue/master headphone support~~ - Done: Pre/Main knob
     (\[Master\] headMix MixxxControl)
-  - Visual 'track ending' indicator for visual waveform
   - Effects panel integration with UI
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate. - BpmDJ engine being considered
   - ~~M4A support~~ - In progress
   - hotkey support (maybe configurable?)
-  - adjustable drag sensitivity on visual waveform view
-  - also a way to change the direction ("scratching motion")
-  - direct outs (table 1, table 2, master, headphones)
   - Cheap mode (main out left, cue out right) so users can get started
     using mixxx without any extra soundcard.
   - [Effect plugins](PluginIdeas)
@@ -86,7 +93,6 @@ may be done already or irrelevant.
     Preferences-\>Interface-\>Position display
   - Would be nice if this could be done by just clicking the time field
     and would not require opening the preferences
-  - "Loading" animation for the waveforms
   - Clipping light to stay on (dimmer?) after clipping, reset by
     clicking
   - Add a single deck view optimized for track setup (as in setting cue

@@ -22,9 +22,31 @@ time for other threads, and UI recognition of unwanted features.
 
 ### Current status
 
-Digging through the mixxx code base to try to further figure out
-implementation details, plus learning a bit about how sampling (digital
-represenation of analog signals) works and skimming a book on Qt.
+I'll update this at least weekly, to make sure I'm keeping up with what
+needs done. May do a blogger on this too, never have done a blog before
+though. I'm going to try to include \_everything\_ mixxx-related I do so
+on days where I dink around with something other than my project I know
+I didn't totally waste the day :)
+
+  - Digging through the mixxx code base to try to further figure out
+    implementation details, plus learning a bit about how sampling
+    (digital represenation of analog signals) works and skimming a book
+    on Qt. (sometime prior to 2-6-2010)
+  - Added preferences option to dlgprefsounddlg.ui for external mixer.
+    Based it on QStackedWidget, so we just move though the stack to
+    select between internal/external mixer devices. 1-6-2010
+  - Read through features\_hydra merge diff. Looks like a step in the
+    right direction (lots of silly stuff gone from mixxxapp::mixxxapp,
+    yay\!). Going to write up thoughts on preferences diag. Preferences
+    diag limited in size so mixxx can run and be useful on netbooks.
+    Would really like to make the audio preferences (and ideally all
+    preferences) such that settings would be reverted if user doesn't
+    click "OK." Would also like to make a "test" button to send either
+    white noise or a sine wave to a specific channel pair on a device so
+    that the user can be sure he's got the right channel going to the
+    right mixer (or amp) input. dlgprefsound.cpp is a bloody mess, can't
+    wait to go after it once I've got the dialog looking like I want it.
+    2-6-2010
 
 ### Specification
 

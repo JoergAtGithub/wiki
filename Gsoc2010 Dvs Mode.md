@@ -3,7 +3,7 @@
   - Student: **Bill Good**
   - Mentor: **Adam Davison**
 
-### Abstract
+## Abstract
 
 Adding an external mixer mode to Mixxx will greatly improve Mixxx's
 ability to act as a part of a digital vinyl system. Mixxx's current
@@ -13,14 +13,14 @@ externally. However, no features, such as the equalizer, can be
 disabled. Benefits of disabling various features include increased CPU
 time for other threads, and UI recognition of unwanted features.
 
-### More info
+## More info
 
   - [dvs\_mode](dvs_mode) has some good ideas, as does [GSOC2010
     page](gsoc2010ideas).
   - I'm bkgood on launchpad and freenode
   - To contact me by email, use my irc name @gmail.com
 
-### Current status
+## Current status
 
 I'll update this at least weekly, to make sure I'm keeping up with what
 needs done. May do a blogger on this too, never have done a blog before
@@ -48,9 +48,9 @@ I didn't totally waste the day :)
     wait to go after it once I've got the dialog looking like I want it.
     2-6-2010
 
-### Specification
+## Specification
 
-#### Use cases
+### Use cases
 
   - DJ Joe doesn't like lugging around crates of vinyl or CDs, but
     enjoys using his vinyl turntables (or DJ CD players) and mixer. DVS
@@ -58,7 +58,7 @@ I didn't totally waste the day :)
     and then mix the outputs with his own mixer, his his own effect
     modules, etc.
 
-#### Design
+### Design
 
 Currently, the sample buffers are only accessible to EngineMaster. These
 will be exposed via accessor methods so that SoundManager can choose
@@ -80,7 +80,7 @@ aspect of the mode is UI, preferences will have to be extended to
 support routing audio to an external instead of using an internal mixer.
 This will likely include a bit of refactoring.
 
-#### Work breakdown structure
+### Work breakdown structure
 
   - To be completed :) See
     [Work\_breakdown\_structure](https://en.wikipedia.org/wiki/Work_breakdown_structure)
@@ -135,7 +135,7 @@ This will likely include a bit of refactoring.
 * For voice-over. Really has nothing to do with DVS since any mixer worth its salt will have a mic in but mixxx needs it.
 ```
 
-### Notes
+## Notes
 
   - DVS mode will probably have negligible effect on CPU usage. Some
     profiling I did
@@ -148,6 +148,6 @@ This will likely include a bit of refactoring.
   - [revamped\_control\_system](revamped_control_system) has an
     excellent review of the controlobject system.
 
-### Links
+## Links
 
   - Branch at (fill me in)

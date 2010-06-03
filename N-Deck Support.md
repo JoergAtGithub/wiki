@@ -83,6 +83,7 @@ N-Decks.**
   - Library
   - The right-click context menus all only list players 1 and 2 to load
     a track.
+  - widget/wbrowsetableview.cpp
   - MIDI Scripts
   - All MIDI scripts are only written for Player1 and Player2, but this
     is because most only have 2 decks worth of controls.
@@ -97,7 +98,9 @@ N-Decks.**
 * External Mixer Mode
 * Bill Good is working on this. He will take the potential of N-Decks into account.
 * Vinyl Control is all 2-deck centric.
-
+* Auto-DJ is 2-deck centric
+* Preferences have some internal logic that hard-codes Channel1 and Channel2
+* MIDI Learning has some hard-coded Channel1/Channel2 stuff
 ```
 
 ## Team

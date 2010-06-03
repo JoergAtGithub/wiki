@@ -30,14 +30,16 @@ being mixed together.
 
 The UI and skin file are heavily 2-deck centric. The skinning system
 must be either heavily modified or re-written with N-decks in mind from
-the start.
+the start. A feature specification for this is in drafting: [Skinning
+Engine](skinning_engine)
 
 #### Preferences Dialog Considerations
 
-Bill Good is currently working on External Mixer Mode. This will allow
-Mixxx users to detail where they would like outputs to be routed and
-mixed. Pending his design, there will be a flexible way for users to
-route additional sources to their preferred sinks.
+Bill Good is currently working on [External Mixer
+Mode](gsoc2010_dvs_mode). This will allow Mixxx users to detail where
+they would like outputs to be routed and mixed. Pending his design,
+there will be a flexible way for users to route additional sources to
+their preferred sinks.
 
 ## Work Breakdown
 
@@ -57,33 +59,40 @@ complete.
 ## Current Progress
 
 The lp:\~mixxxdevelopers/mixxx/features\_hydra branch contains all the
-work that's been done so far. This branch has completed steps 1.1 and
-parts of 1.2.
+work that's been done so far.
 
-### List of Places in Mixxx That are 2-Deck Centric
+  - The features\_hydra branch has completed steps 1.1 and parts of 1.2.
+  - A feature specification for 1.4 is in drafting: [Skinning
+    Engine](skinning_engine)
+  - A GSOC 2010 project is addressing 1.3: [External Mixer
+    Mode](gsoc2010_dvs_mode)
 
-If you are looking for a place to contribute to this project, please
+## List of Places in Mixxx That are 2-Deck Centric
+
+**If you are looking for a place to contribute to this project, please
 tackle making a part of Mixxx on this list flexible enough to handle
-N-Decks.
+N-Decks.**
 
   - ~~Parts of mixxx.cpp~~
+  - Now, only the "File -\> Load to Player" drop-downs.
+  - Skinning engine
+  - This project is looking for project lead\!
+  - Library
+  - The right-click context menus all only list players 1 and 2 to load
+    a track.
+  - MIDI Scripts
+  - All MIDI scripts are only written for Player1 and Player2, but this
+    is because most only have 2 decks worth of controls.
 
 <!-- end list -->
 
 ``` 
-    * Now, only the "File -> Load to Player" drop-downs.
-* Skinning engine
-    * This project is looking for project lead!
-* Library
-    * The right-click context menus all only list players 1 and 2 to load a track.
-* MIDI Scripts
-    * All MIDI scripts are only written for Player1 and Player2, but this is because most only have 2 decks worth of controls.
-      * The easiest way to tackle this is to make the two live decks on a MIDI device switchable to one of the 1-N decks.
+    * The easiest way to tackle this is to make the two live decks on a MIDI device switchable to one of the 1-N decks.
 * PlayerInfo class, which is used to share loaded-track metadata with things like Shoutcast. 
 * LADSPA
-    * Bruno Buccolo is working on this. He will take the potential of N-Decks into account.
+* Bruno Buccolo is working on this. He will take the potential of N-Decks into account.
 * External Mixer Mode
-    * Bill Good is working on this. He will take the potential of N-Decks into account.
+* Bill Good is working on this. He will take the potential of N-Decks into account.
 
 ```
 

@@ -80,11 +80,6 @@ aspect of the mode is UI, preferences will have to be extended to
 support routing audio to an external instead of using an internal mixer.
 This will likely include a bit of refactoring.
 
-##### Preferences
-
-They need work. See
-[gsoc2010\_dvs\_mode/preferences\_rework](gsoc2010_dvs_mode/preferences_rework)
-
 #### Work breakdown structure
 
   - To be completed :) See

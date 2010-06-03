@@ -11,6 +11,10 @@ specifications. Please feel free to add comments.
   - DJ Bill is considering switching from Traktor to Mixxx. However, he
     makes heavy use of Traktor's 4-decks and cannot use Mixxx since it
     only allows 2. 
+  - DJ Cassandra creates crazy mashups and sometimes wants more than 2
+    songs to be playing at once. She needs Mixxx to support \>2 decks.
+  - DJ Danny wants to prepare the next 2 songs he will mix while the
+    first 2 are playing. To do this, he needs \>2 decks.
   - **Your use case here**
 
 ## Design

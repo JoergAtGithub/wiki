@@ -11,7 +11,6 @@ page.
   - [N-Deck Support](N-Deck%20Support)
   - [Skinning Engine](Skinning%20Engine)
   - [DVS mode](DVS%20mode)
-  - [SoundSource Refactor/Merge](SoundSource%20Refactor/Merge)
 
 ## Implemented Specifications
 
@@ -25,6 +24,7 @@ page.
   - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
+  - [SoundSource Refactor/Merge](SoundSource%20Refactor/Merge)
 
 ## Other Ideas
 

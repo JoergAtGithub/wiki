@@ -92,6 +92,8 @@ N-Decks.**
 
 ``` 
     * The easiest way to tackle this is to make the two live decks on a MIDI device switchable to one of the 1-N decks.
+    * See the Stanton SCS.3d script for examples of how to do this...in a nutshell, replace every hard-coded call containing ''"[Channel//N//]"'' with ''"[Channel"+Controller.Deck+"]"'')
+    * Need to create a "[Master],activeDecks" CO containing the number of available virtual decks for the MIDI scripts to poll
 * PlayerInfo class, which is used to share loaded-track metadata with things like Shoutcast. 
 * LADSPA
 * Bruno Buccolo is working on this. He will take the potential of N-Decks into account.

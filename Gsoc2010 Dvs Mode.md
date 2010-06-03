@@ -148,6 +148,24 @@ This will likely include a bit of refactoring.
   - [revamped\_control\_system](revamped_control_system) has an
     excellent review of the controlobject system.
 
+### Preferences
+
+  - Currently there's a bunch of different stuff under "Sound Hardware":
+  - Audio Output
+
+<!-- end list -->
+
+``` 
+    * Master device/channel pair
+    * Headphone device/channel pair
+    * Sample rate
+    * Sound API
+* Pitch Behaviour
+    * Vinyl emulation or PITS (and disclaimer about PITS)
+* Latency
+    * Slider -- dynamic. Might be a nicer solution than a slider., as the current one is very jerky so doesn't really represent the continuum a slider implies. Might be nicer to use a combobox since it seems to be a pretty discrete set of values.
+```
+
 ## Links
 
   - Branch at (fill me in)

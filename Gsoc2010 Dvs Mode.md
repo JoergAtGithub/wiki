@@ -58,6 +58,11 @@ aspect of the mode is UI, preferences will have to be extended to
 support routing audio to an external instead of using an internal mixer.
 This will likely include a bit of refactoring.
 
+##### Preferences
+
+They need work. See
+[gsoc2010\_dvs\_mode/preferences\_rework](gsoc2010_dvs_mode/preferences_rework)
+
 #### Work breakdown structure
 
   - To be completed :) See
@@ -122,6 +127,9 @@ This will likely include a bit of refactoring.
     \[<http://article.gmane.org/gmane.comp.multimedia.mixxx.devel/2998>\]
     seems to indicate the enginemaster stuff (which includes all the
     audio processing) isn't actually all that expensive.
+  - Ok, the hifi eq's can eat CPU really well. May be a bug in eq
+    though, as it stutters real bad on my system without ever peaking
+    out my CPU.
 
 #### For me
 

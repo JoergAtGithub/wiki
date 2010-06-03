@@ -75,10 +75,13 @@ CSAMPLE* EngineMaster::getDeck2(); // etc
 There is, of course, an upper-bound given the finite nature of PCI
 slots, USB ports, and sound cards, but a DJ could easily use four decks
 (8 channels) of output (of course, there's currently only 2 inputs of
-vinyl control... not sure if n-decks extends that). The other major
-aspect of the mode is UI, preferences will have to be extended to
-support routing audio to an external instead of using an internal mixer.
-This will likely include a bit of refactoring.
+vinyl control... not sure if n-decks extends that).
+
+  - This is all done by hydra, once it gets merged it's all golden :)
+
+The other major aspect of the mode is UI, preferences will have to be
+extended to support routing audio to an external instead of using an
+internal mixer. This will likely include a bit of refactoring.
 
 ### Work breakdown structure
 

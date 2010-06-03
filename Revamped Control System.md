@@ -136,6 +136,15 @@ an ideal system, these types would be supported via C++ template
 metaprogramming. Unfortunately, QObjects are incompatible with
 templates, so this is not an option.
 
+### Support type constraints
+
+The current ControlObject class has a number of subclasses,
+ControlPotmeter, ControlLogPotmeter, etc., which determine the semantic
+behavior of the control and the range of values that are acceptable for
+the control. This is a desirable feature for a control system. A new
+system must support the validation of set()'s against a series of
+constraints which are determined by the type of the control.
+
 ### Keep or Replace ConfigKey?
 
 All ControlObjects are currently referred to by their key, a ConfigKey.

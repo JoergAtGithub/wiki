@@ -135,8 +135,8 @@ resolved before LADSPA is ready.
 ### LADSPALibrary
 
   - Given a file, load every plugin this file has.
-  - LADSPA plugins may be bundled inside one library (small varations of
-    fx plugins)
+  - LADSPA plugins may be bundled inside one library (small variations
+    of each other, usually)
 
 ### LADSPAPlugin
 

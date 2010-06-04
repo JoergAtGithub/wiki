@@ -161,9 +161,59 @@ Load XML into LADSPAPresets, instantiates LADSPALoader
 
 ### LADSPAPreset
 
-Has the port names, knobs much like LADSPAPlugin. Has the instantiate
-method that will LADSPAPlugin::instantiate() -\> LADSPAInstance
-LADSPAPreset::instantiate() -\> LADSPAPresetInstance
+  - Has the port names, knobs much like LADSPAPlugin.
+  - Has the instantiate method that will 
+  - LADSPAPlugin::instantiate() -\> LADSPAInstance
+  - LADSPAPreset::instantiate() -\> LADSPAPresetInstance
+
+This is loaded from XML. An example of a LADSPA preset xml for
+DJFlanger:
+
+``` xml
+<DJFlanger>
+ <Plugin ID="0">djFlanger</Plugin>
+ <Knob>
+  <Label>LFO sync</Label>
+  <Min>-1.0</Min>
+  <Max>1.0</Max>
+  <Default>0.0</Default>
+  <Connection>
+   <Plugin>0</Plugin>
+   <Port>0</Port>
+  </Connection>
+ </Knob>
+ <Knob>
+  <Label>LFO period</Label>
+  <Min>0.1</Min>
+  <Max>32.0</Max>
+  <Default>1.0</Default>
+  <Connection>
+   <Plugin>0</Plugin>
+   <Port>1</Port>
+  </Connection>
+ </Knob>
+ <Knob>
+  <Label>LFO depth</Label>
+  <Min>1.0</Min>
+  <Max>5.0</Max>
+  <Default>4.0</Default>
+  <Connection>
+   <Plugin>0</Plugin>
+   <Port>2</Port>
+  </Connection>
+ </Knob>
+ <Knob>
+  <Label>Feedback</Label>
+  <Min>-100.0</Min>
+  <Max>100.0</Max>
+  <Default>0.0</Default>
+  <Connection>
+   <Plugin>0</Plugin>
+   <Port>3</Port>
+  </Connection>
+ </Knob>
+</DJFlanger>
+```
 
 ### LADSPAPresetInstance
 

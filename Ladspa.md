@@ -146,7 +146,8 @@ resolved before LADSPA is ready.
 
 ### LADSPADescriptor
 
-  - The LADSPA API. 
+  - The LADSPA API. [Check out the header
+    file.](http://www.ladspa.org/ladspa_sdk/ladspa.h.txt)
 
 ### LADSPAInstance
 

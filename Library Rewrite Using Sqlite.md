@@ -206,6 +206,47 @@ are:
     deleted when they're not being used anymore, but stuff like the
     analyser queue makes that tricky. (Use smart pointers?)
 
+## QA Procedure
+
+### Library Scanner
+
+Changes that Occur to Media Library
+
+  - Media file is deleted or moved outside of the Media Library.
+  - Verify file shows up in Missing Files section.
+  - Media file is renamed.
+  - Verify track is re-associated with its metadata upon library scan. 
+  - Verify no duplicate of the track shows up in the library.
+  - Verify that the track does not show up in Missing Tracks section.
+  - Verify that playing the file works.
+  - Media file is moved to another folder within the Media Library
+  - Verify track is re-associated with its metadata upon library scan. 
+  - Verify no duplicate of the track shows up in the library.
+  - Verify that the track does not show up in Missing Tracks section.
+  - Verify that playing the file works.
+  - Folder in Media Library is deleted
+  - Verify all files in the folder and all of its subfolders show up in
+    the Missing Files section.
+  - Folder in Media Library is renamed
+  - Verify all conditions under "Media File is renamed" step apply to
+    all files in the folder and all of its subfolders.
+
+<!-- end list -->
+
+  - Verify renamed files are re-attached to metadata.
+  - Track location is updated to reflect moved file.
+  - File does not show up in Missing Files section. 
+  - Playing file works. 
+  - Verify deleted files show up in Missing Files section. 
+  - Will also show up in regular library, so as not to cause confusion
+    of 'Where did my track go?'
+
+<!-- end list -->
+
+``` 
+* 
+```
+
 ## Tuning/Optimization
 
 Links to information on tuning DB access for best performance:

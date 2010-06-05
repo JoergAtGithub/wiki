@@ -230,22 +230,15 @@ Changes that Occur to Media Library
   - Folder in Media Library is renamed
   - Verify all conditions under "Media File is renamed" step apply to
     all files in the folder and all of its subfolders.
-
-<!-- end list -->
-
-  - Verify renamed files are re-attached to metadata.
-  - Track location is updated to reflect moved file.
-  - File does not show up in Missing Files section. 
-  - Playing file works. 
-  - Verify deleted files show up in Missing Files section. 
-  - Will also show up in regular library, so as not to cause confusion
-    of 'Where did my track go?'
-
-<!-- end list -->
-
-``` 
-* 
-```
+  - File in Media Library deleted/missing, then is restored
+  - Verify track shows in Missing Files upon deletion.
+  - Verify track is removed from Missing Files after restore.
+  - Verify track is playable after restore.
+  - Folder in Media Library deleted/missing, then is restored. (e.g.
+    removable thumb drive)
+  - Verify tracks in folder show in Missing Files upon deletion.
+  - Verify tracks in folder are removed from Missing Files after restore
+  - Verify tracks in folder are playable after restore. 
 
 ## Tuning/Optimization
 

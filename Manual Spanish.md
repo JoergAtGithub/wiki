@@ -8,7 +8,7 @@ Este manual tambien esta disponible en:
 # Tabla de Contenidos
 
 1.  [Guia de Principiantes](Guia%20de%20Principiantes)
-2.  [Introduccion](manual_spanish#introduction)
+2.  [Introduccion](manual_spanish#introduccion)
 3.  [Instalacion](manual_spanish#installation)
     1.  [Windows](manual_spanish#windows)
     2.  [Linux](manual_spanish#linux)

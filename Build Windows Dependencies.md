@@ -625,7 +625,7 @@ get it to work correctly with Mixxx. (Step-by-step below.)
 Libshout is a library for live broadcasting audio over the Internet. It
 is developed by the icecast.org project. The following instruction set
 is based on Prokoba's blog, see
-<http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll2-windows-libshoutdll>
+<http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll>
 
 Unfortunately, libshout does not compile on Windows out of the box. The
 following steps are necessary:

@@ -43,12 +43,13 @@ Este manual tambien esta disponible en:
     2.  [Controladores MIDI](manual_spanish#midi_controllers).
 8.  [Involucrandose con Mixxx](manual_spanish#getting_involved).
 
-# Introduction
+# Introduccion
 
-Mixxx is software designed for DJs that allows you to mix songs live.
-Mixxx supports MP3, OGG, FLAC, and WAVE playback, and can be controlled
-by numerous DJ MIDI controllers. Turntables with timecoded vinyl can
-also be used to control Mixxx through the *vinyl control* feature.
+Mixxx es un programa de computacion disenyado para DJs y que es capaz de
+mezclar dos canciones juntas y en tiempo real. Mixxx soporta los
+formatos MP3, OGG, FLAC y WAVE y puede ser controlado por numerosos
+controladores MIDI. Tambien se puede utilizar una torna mesa con vinilos
+codificados con Timecode para controlar Mixxx con *Control por Vinilos*.
 
 # Installation
 

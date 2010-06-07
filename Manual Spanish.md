@@ -1,4 +1,4 @@
-# Table of Contents
+# Tabla de Contenidos
 
 1.  [Guia de Principiantes](Guia%20de%20Principiantes)
 2.  [Introduccion](manual_spanish#introduction)

@@ -51,7 +51,7 @@ formatos MP3, OGG, FLAC y WAVE y puede ser controlado por numerosos
 controladores MIDI. Tambien se puede utilizar una torna mesa con vinilos
 codificados con Timecode para controlar Mixxx con *Control por Vinilos*.
 
-# Installation
+# Instalacion
 
 ## Windows
 

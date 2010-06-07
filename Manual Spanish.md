@@ -1,3 +1,10 @@
+# Traducciones Disponibles
+
+Este manual tambien esta disponible en:
+
+  - [Ingles (English)](manual)
+  - [Aleman (Deutsch)](manual_german)
+
 # Tabla de Contenidos
 
 1.  [Guia de Principiantes](Guia%20de%20Principiantes)

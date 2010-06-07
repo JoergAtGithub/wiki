@@ -40,8 +40,8 @@ Este manual tambien esta disponible en:
 7.  [Keys and Hardware
     Controllers](manual_spanish#keys_and_hardware_controllers).
     1.  [Keyboard Shortcuts](manual_spanish#keyboard_shortcuts).
-    2.  [MIDI Controllers](manual_spanish#midi_controllers).
-8.  [Getting Involved](manual_spanish#getting_involved).
+    2.  [Controladores MIDI](manual_spanish#midi_controllers).
+8.  [Involucrandose con Mixxx](manual_spanish#getting_involved).
 
 # Introduction
 

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Support for additional MIDI devices can be added to Mixxx by created a
+Support for additional MIDI devices can be added to Mixxx by creating a
 new "MIDI mapping" file. This mapping file tells Mixxx how to translate
 MIDI commands from a controller into commands that Mixxx will
 understand.

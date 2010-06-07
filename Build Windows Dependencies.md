@@ -620,6 +620,42 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     <span class="underline">WINDOWS</span>\</code\>
 13. Save the file
 
+# libshout
+
+Libshout is a library for live broadcasting audio over the Internet. It
+is developed by the icecast.org project. The following instruction set
+is based on Prokoba's blog, see
+<http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll2-windows-libshoutdll>
+
+Unfortunately, libshout does not compile on Windows out of the box. The
+following steps are necessary:
+
+### Build
+
+1.  Get all the dependencies: ogg & vorbis from xiph.org (the headers,
+    libs and Dlls are already shipped with Mixxx). You’ll also need
+    Win32 pthreads from <ftp://sourceware.org/pub/pthreads-win32/>. For
+    x86 there are precompiled packages, e.g.,
+    pthreads-w32-2-8-0-release.exe
+2.  Open the VC6 project file and configure the VS2005 solution so that
+    it can find the header and .lib files for ogg, vorbis and pthreads.
+3.  You need to manually add vorbis.c to the project after the migration
+    to VS2005.
+4.  Add \<MS Windows SDK\>/include and \<MS Windows SDK\>/libs to
+    Compiler options
+5.  In header timing.h
+    1.  Remove the *\#ifdef \_mangle* block
+    2.  Add *\#undef int64\_t* before the typedefs within \_WIN32 MACRO
+    3.  Add *\#undef uint64\_t* before the typedefs within \_WIN32 MACRO
+6.  In shout.c
+    1.  Replace keyword 'inline' with `__inline`
+    2.  Change line 1016 to `ret = sock_write_bytes (self->socket,
+        (char*)data + pos, len - pos);`
+7.  In shout.c and socket.c: Add directive `#ifndef __WIN32__ #define
+    va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list)) #endif`
+8.  Copy file *combat.h* from icecast-server sources to \<libshout\>/src
+    1.  Include the file to *shout.h*
+
 # Optimizations
 
 Mixxx can benefit from various code optimizations. If you right-click
@@ -664,4 +700,6 @@ optimized [ASMLIB](http://agner.org/optimize/), do the following:
     2.  Configuration Properties-\>C/C++-\>Command Line: Add `/Oi-` to
         Additional Options.
     3.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
-        (or `alibcof32o.lib` for 32-bit) to "Additional Dependencies"
+        (or `alibcof32o.lib` for 32-bit) to "Additional
+        Dependencies"\_<span class="underline">\_Underlined
+        Text</span>\_\_

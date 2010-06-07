@@ -55,9 +55,9 @@ codificados con Timecode para controlar Mixxx con *Control por Vinilos*.
 
 ## Windows
 
-Windows users can install Mixxx by double-clicking on the Mixxx
-installer executable. Mixxx is supported on Windows XP and Vista, 32 and
-64 bit. (It may also run on Windows 2000.)
+Usuarios de Windows pueden instalar Mixxx haciendo doble click en el
+instalador de Mixxx. Mixxx esta soportado en Windowx XP y Vista para 32
+y 64 bits. (Tambien puede ser que corra en Windows 2000).
 
 ## Linux
 

@@ -1,7 +1,9 @@
-**Die Benutzeroberfäche von Mixxx ist in englischer Sprache
-beschriftet.**  
-Dies ist die deutsche Übersetzung für das aktuelle [Mixxx manual
-(english)](manual).
+# Verfügbare Sprachen
+
+Dieses Handbuch ist außerdem verfügbar in:
+
+  - [Englisch (English)](manual)
+  - [Spanisch (Español)](manual_spanish)
 
 # Mixxx 1.7 Handbuch
 
@@ -79,9 +81,10 @@ in den Ordner *Programme* ziehen. Mixxx läuft auf Intel Mac unter OS
 
 [[/media/manual/mixxx-overview.png|]]
 
-Die Benutzeroberfläche von Mixxx ist schlicht gestaltet, so das sie beim
-live DJing einfach zu bedienen ist. Dieser Abschnitt beschreibt die
-wichtigsten Merkmale der Oberfläche.
+Die **in englischer Sprache beschriftete** Benutzeroberfläche von Mixxx
+ist schlicht gestaltet, so das sie beim live DJing einfach zu bedienen
+ist. Dieser Abschnitt beschreibt die wichtigsten Merkmale der
+Oberfläche.
 
 ## Wiedergabesteuerung
 

@@ -68,10 +68,14 @@ of this project becomes better determined.
 ``` 
   - Sampler
     - Playback Engine
-      - Recycled EngineBuffer
+      - Sampler class (aggregates Player)
       - Simple playback (play/stop)
       - Looping
+      - Tempo sync
     - Sample Bank Manager
       - GUI for loading, saving, deleting
-      - 
+      - Bank export
+    - Sampler widget
+      - Waveform
+      - Playback control
 ```

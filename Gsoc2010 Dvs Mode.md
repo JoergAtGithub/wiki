@@ -88,6 +88,11 @@ I didn't totally waste the day :)
   - What's implemented in the commit is not nearly what's in my head or
     even coded in files elsewhere on my hard-drive, as I tried to convey
     with all this senseless typing ;)
+  - Commit at
+    <http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2413>
+    for the interested, for comments (on what I've typed here or the
+    commit, since the commit is in actuality quite short) hit me up on
+    IRC or email me.
   - Ok think that's all for now. Cheers\! And I'm off to bed :) -- Bill
     7-9-2010
 

@@ -47,6 +47,49 @@ I didn't totally waste the day :)
     right mixer (or amp) input. dlgprefsound.cpp is a bloody mess, can't
     wait to go after it once I've got the dialog looking like I want it.
     2-6-2010
+  - Quick update as I'm tired as hell: decided (final change of
+    heart/mind, I promise) that I didn't want to start from the top
+    (ie., UI) down and I'd much rather just build a nice and pretty
+    backend, so I uncommitted my UI file change and finally figured out
+    how to reflect that in LP, and then committed and pushed a new
+    change set. AudioSource and Receiver now have an index attribute, to
+    distinguish between different deck sources or vinyl control
+    receivers. This became necessary because I changed the
+    Audio{Source,Receiver}Type enums to not list discrete decks or vinyl
+    control inputs as that approach will likely prove unextendable (not
+    a real word) in the future, this mainly caught my eye because the
+    number of CSAMPLE\*'s being allocated at runtime were hard-set to
+    the number of source types (not good when you have a variable number
+    of sources, and one of my goals with all this is to keep \>2 sources
+    in mind, especially since another GSOC student's project uses them.
+  - Will (tentatively, haven't thought all the way through this one) be
+    using a QHash (hash table-based dictionary/mapping) to implement the
+    assocation of Audio{Source,Receiver}'s to buffers; that's committed
+    as well. 
+  - Committed a couple of static methods that generate an identifying
+    QString from an (new-style) Audio{S,R} (shorthand for
+    Audio{Source,Receiver} I'll continue to use if I remember it as
+    typing all that is a pita). These will probably get moved into their
+    respective structs, which will likely become classes (not that
+    there's any real difference in cpp, but whatever) with ctor's
+    instead of public fields (because I want to make sure
+    Audio{S,R}.index is zero if the type doesn't lend itself to
+    indexing, like SOURCE\_MASTER) and some other methods: operator==
+    for QHash (it needs that, plus it needs qHash(AudioSource) and
+    qHash(AudioReceiver) globals defined to generate hashes), and a
+    method to detect whether or not one source's or receiver's channel
+    selection clashes with another (bad\!).
+  - This isn't really worth mentioning as it's said plainly enough in
+    the commit log but I'll paste it: Made the array of
+    VinylControlProxy's a QList, so the number of instances isn't
+    hardcoded. (end paste) It was previously hard-coded to 2, and there
+    shouldn't be any appreciable loss in speed for the \[hopefully later
+    realized\] gain.
+  - What's implemented in the commit is not nearly what's in my head or
+    even coded in files elsewhere on my hard-drive, as I tried to convey
+    with all this senseless typing ;)
+  - Ok think that's all for now. Cheers\! And I'm off to bed :) -- Bill
+    7-9-2010
 
 ## Specification
 

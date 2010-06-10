@@ -1512,7 +1512,7 @@ The XSL file can be used by running xsltproc like so:
 
 This is what the output looks like:
 
-[Xsltpreview.png](/Image/Xsltpreview.png)
+[[/media/skinning/shadedark_xsl_preview.png|]]
 
 ## Useful Links
 

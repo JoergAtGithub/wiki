@@ -28,27 +28,27 @@ though. I'm going to try to include \_everything\_ mixxx-related I do so
 on days where I dink around with something other than my project I know
 I didn't totally waste the day :)
 
-  - Digging through the mixxx code base to try to further figure out
-    implementation details, plus learning a bit about how sampling
-    (digital represenation of analog signals) works and skimming a book
-    on Qt. (sometime prior to 2-6-2010)
-  - Added preferences option to dlgprefsounddlg.ui for external mixer.
-    Based it on QStackedWidget, so we just move though the stack to
-    select between internal/external mixer devices. 1-6-2010
-  - Read through features\_hydra merge diff. Looks like a step in the
-    right direction (lots of silly stuff gone from mixxxapp::mixxxapp,
-    yay\!). Going to write up thoughts on preferences diag. Preferences
-    diag limited in size so mixxx can run and be useful on netbooks.
-    Would really like to make the audio preferences (and ideally all
-    preferences) such that settings would be reverted if user doesn't
-    click "OK." Would also like to make a "test" button to send either
-    white noise or a sine wave to a specific channel pair on a device so
-    that the user can be sure he's got the right channel going to the
-    right mixer (or amp) input. dlgprefsound.cpp is a bloody mess, can't
-    wait to go after it once I've got the dialog looking like I want it.
-    2-6-2010
-  - Quick update as I'm tired as hell: decided (final change of
-    heart/mind, I promise) that I didn't want to start from the top
+  - sometime prior to 20100601: Digging through the mixxx code base to
+    try to further figure out implementation details, plus learning a
+    bit about how sampling (digital representation of analog signals)
+    works and skimming a book on Qt.
+  - 20100601: Added preferences option to dlgprefsounddlg.ui for
+    external mixer. Based it on QStackedWidget, so we just move though
+    the stack to select between internal/external mixer devices.
+  - 20100602: Read through features\_hydra merge diff. Looks like a step
+    in the right direction (lots of silly stuff gone from
+    mixxxapp::mixxxapp, yay\!). Going to write up thoughts on
+    preferences diag. Preferences diag limited in size so mixxx can run
+    and be useful on netbooks. Would really like to make the audio
+    preferences (and ideally all preferences) such that settings would
+    be reverted if user doesn't click "OK." Would also like to make a
+    "test" button to send either white noise or a sine wave to a
+    specific channel pair on a device so that the user can be sure he's
+    got the right channel going to the right mixer (or amp) input.
+    dlgprefsound.cpp is a bloody mess, can't wait to go after it once
+    I've got the dialog looking like I want it.
+  - 20100609: Quick update as I'm tired as hell: decided (final change
+    of heart/mind, I promise) that I didn't want to start from the top
     (ie., UI) down and I'd much rather just build a nice and pretty
     backend, so I uncommitted my UI file change and finally figured out
     how to reflect that in LP, and then committed and pushed a new
@@ -90,11 +90,21 @@ I didn't totally waste the day :)
     with all this senseless typing ;)
   - Commit at
     <http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2413>
-    for the interested, for comments (on what I've typed here or the
-    commit, since the commit is in actuality quite short) hit me up on
-    IRC or email me.
-  - Ok think that's all for now. Cheers\! And I'm off to bed :) -- Bill
-    7-9-2010
+  - 20100612
+  - Commit
+    <http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2414>
+
+<!-- end list -->
+
+``` 
+    * Moved AudioSource and AudioReceiver to audiopath.{h,cpp}
+    * Refactored the classes -- instead of having channelBase and channels as members, they now have a member object of type ChannelGroup which has this data, and also includes methods for comparing channel groups to make sure they don't clash (the method implementation in this commit is actually poorly thought out, but an updated one is in a subsequent commit). AudioSource and AudioReceiver also now have a base class AudioPath which basically just has a channel group as the type member is specific to the source or receiver distinction (**note to self: move index data member to audiopath as protected**)
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2415
+    * Added qHash fuctions (and related methods to classes) to allow QHash to get hash values for AudioSources and Receivers. Given that qHash must return an unsigned int, and working under the assumptions that an int is 4 bytes and the four unsigned int values which make up an AudioSource or receiver will normally be small and therefore easily representable using 4 1-byte values. If an int is only 2 bytes, some precision will be lost, but QHash can deal with this, with minor slowdowns.
+    * ChannelGroup::clashesWith is now fixed from revision 2414.
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2416
+    * Gave EngineMaster a getDeckBuffer method to get the unmixed buffers. Required hack until hydra is merged.
+```
 
 ## Specification
 

@@ -370,6 +370,12 @@ started :-)
 
 ## Section: General
 
+### Skin Colour Scheme
+
+advanced technique not used in this example, see [colour
+schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
+for details
+
 ### Main background
 
 |                                                                                       |                                                                                                                                                                                                                             |

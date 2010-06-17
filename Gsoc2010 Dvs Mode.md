@@ -226,7 +226,3 @@ internal mixer. This will likely include a bit of refactoring.
 * Latency
     * Slider -- dynamic. Might be a nicer solution than a slider., as the current one is very jerky so doesn't really represent the continuum a slider implies. Might be nicer to use a combobox since it seems to be a pretty discrete set of values.
 ```
-
-## Links
-
-  - Branch at (fill me in)

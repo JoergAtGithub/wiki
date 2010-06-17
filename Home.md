@@ -81,6 +81,7 @@ plans.
 ### Development Topics
 
   - [Performance improvements](Performance%20improvements)
+  - [Code cleanup & cruft removal task list](code_cleanup)
   - [Feature Discussion & Specifications](feature_discussion)
   - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
     HDDs)](Portable%20Mixxx)

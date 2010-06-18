@@ -32,4 +32,5 @@ Here is a high-level list of things to do to make this happen:
   - Save the compiler output from a clean build
   - Search for "''warning''"
   - Determine if the warning is avoidable (unused variables for example,) and if so, fix it. If not, make note of why. 
+    * For unused variables, use ''Q_UNUSED(name);'' in the method body: <code cpp-qt>void MyClass::MyMethod(int myArg) { Q_UNUSED(myArg); }</code> This suppresses compiler warnings and has the added nicety of documenting that the argument is intended to go unused.
 ```

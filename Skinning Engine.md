@@ -42,13 +42,20 @@ Base Widget
 
 Widgets
 
-  - Push button
+  - Buttons
+  - Allow multi-state button or push-button.
   - Support pixmaps for each button position
   - Allow non-pixmap buttons. Use QSS to styling.
   - Slider 
   - Allow vertical or horizontal orientation 
   - Separate image for slider and knob
   - Allow non-pixmap sliders. Use QSS for styling.
+  - Drop-down Chooser
+  - Allow styling via QSS. 
+  - No pixmap option, as it's text-only. 
+  - Requires [Control 2.0](revamped_control_system), since if you
+    connect it to a text control it must know what values it may take
+    on. 
   - Knobs
   - Single knob image that is rotated plus background image.
   - Allow specification of 'translation' function (i.e. log-potmeter or
@@ -64,8 +71,18 @@ Widgets
   - Needs overhaul to be as configurable as the waveform widget.
   - Text labels
   - Make use of Controls to display text instead of hard-coding text.
-    (Depends on Control 2.0)
+    (Depends on [Control 2.0](revamped_control_system))
   - Potentially allow scripts to dynamically affect what is shown. 
+  - VU Meter
+  - Allow QSS styling (how???) or pixmaps.
+  - Status light
+  - ??
+  - Sampler Widget
+  - Requirements unknown.
+  - Effects Widget
+  - Requirements unknown. 
+  - Potentially with a much better control system we can support neat
+    things, e.g. A Traktor like dynamic effect control.
 
 ## Forum discussion
 

@@ -310,6 +310,19 @@ Mixxx widget.
       </children>
     </window>
 
+### Widget Group
+
+A Widget Group is a container for widgets. It is a normal WWidget and
+can have a name.
+
+**Example:**
+
+    <group name="PlayerGroup">
+      <children>
+        <!-- Widgets for this group go here. -->
+      </children>
+    </group>
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

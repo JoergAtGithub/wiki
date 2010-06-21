@@ -194,6 +194,71 @@ For more information about QSS, please refer the following:
     #Channel1BpmDisplay { font: bold large "Sans Mono"; }
     </style>
 
+#### How can QSS be used to dynamically represent Mixxx controls?
+
+One way that we can use QSS to style dynamic elements of the Mixxx user
+interface works like this:
+
+QSS selectors can select based on a property of a widget. Let's say we
+have a button widget that represents the End of Track mode. The
+`[ChannelX],TrackEndMode` control takes on different values based on the
+current end of track mode. The WPushButton that is connected to this
+control will provide a [Qt
+property](http://doc.trolltech.com/latest/properties.html) named `value`
+that indicates the current value of the control. We can style this using
+QSS using QSS selectors:
+
+The old skin XML for this button was previously defined as this:
+
+    <PushButton>
+        <Tooltip>Helpful text</Tooltip>
+        <NumberStates>3</NumberStates>
+        <State>
+        <Number>0</Number>
+        <Pressed>stop.png</Pressed>
+        <Unpressed>stop.png</Unpressed>
+        </State>
+        <State>
+        <Number>1</Number>
+        <Pressed>next.png</Pressed>
+        <Unpressed>next.png</Unpressed>
+        </State>
+        <State>
+        <Number>2</Number>
+        <Pressed>loop.png</Pressed>
+        <Unpressed>loop.png</Unpressed>
+        </State>
+        <Pos>X,Y</Pos>
+        <Connection>
+        <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
+        </Connection>
+    </PushButton>
+
+So it's clear the button showed a different PNG based on the state of
+the control. The new specification will go something like this:
+
+    <PushButton name="Channel1EndOfTrack">
+    ...
+    </PushButton>
+
+And its corresponding QSS will be as follows:
+
+    WPushButton#Channel1EndOfTrack {
+      background-image: url(button_bg.png);
+    }
+    
+    WPushButton#Channel1EndOfTrack[value=0] {
+      background-image: url(stop.png);
+    }
+    
+    WPushButton#Channel1EndOfTrack[value=1] {
+      background-image: url(next.png);
+    }
+    
+    WPushButton#Channel1EndOfTrack[value=2] {
+      background-image: url(loop.png);
+    }
+
 ### Layout
 
 The layout section is the root description of the skin's layout. Each

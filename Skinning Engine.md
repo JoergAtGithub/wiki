@@ -166,7 +166,14 @@ an advanced skinning engine for Mixxx.
   - The window itself should be themable/deformable too. Could be
     achieved by either composite or with a mask (or both)
 
+# Ideas that are no longer under consideration
+
 ## Vector-based Skinning Engine
+
+\*\*Supporting SVG as an image format does not mean we cannot do the Qt4
+based skinning engine approach above. We can support a number of
+formats, including SVG. Making an exclusively vector-based skinning
+engine is too limiting for skin designers. \*\*
 
 A vector graphics based GUI (like with SVG files) which would allow
 dynamic resizing and storage efficiency.
@@ -185,8 +192,6 @@ dynamic resizing and storage efficiency.
   - Current skins will have to be abandoned or recreated using SVG
   - Slow. Must implement pre-rendering and caching layer for any hope of
     this being usable.
-
-# Ideas that are no longer under consideration
 
 ## Nui3 based Skinning Engine
 

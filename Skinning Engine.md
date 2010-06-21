@@ -171,6 +171,8 @@ file. For more information about QSS, please refer the following:
     Types](http://doc.trolltech.com/latest/stylesheet-syntax.html#selector-types)
   - [QSS
     Reference](http://doc.trolltech.com/latest/stylesheet-reference.html)
+  - [List of All
+    Properties](http://doc.trolltech.com/latest/stylesheet-reference.html#list-of-properties)
 
 **Example:**
 
@@ -183,7 +185,7 @@ file. For more information about QSS, please refer the following:
     QLineEdit { border: 1px solid #333; }
     
     /* Can style individually named elements like this: */
-    #Channel1BpmDisplay { font-face: Sans Mono; }
+    #Channel1BpmDisplay { font: bold large "Sans Mono"; }
     </style>
 
 ### Layout

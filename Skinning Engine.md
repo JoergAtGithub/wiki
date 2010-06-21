@@ -162,7 +162,13 @@ manifest is allowed, and it must be the first immediate child of the
 
 Style controls the styling and presentation of on-screen widgets. The
 Style tag can directly embed QSS or provide a relative path to a QSS
-file. For more information about QSS, please refer the following:
+file.
+
+**Should styles provided by a skin apply to Mixxx dialogs as well? Pro:
+Better skin integration. Con: Potentially poor user experience if the
+skin does not work well on the dialogs.**
+
+For more information about QSS, please refer the following:
 
   - [Qt Style Sheet
     Documentation](http://doc.trolltech.com/latest/stylesheet.html)

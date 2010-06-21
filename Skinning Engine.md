@@ -5,6 +5,28 @@ Although the current skinning engine is usable, it is not very flexible.
 Developers can discuss their ideas for a new skinning engine on this
 page.
 
+## Current System
+
+See description of XML format here:
+
+Supported Widgets
+
+  - Push-buttons
+  - Multi-state push buttons
+  - Sliders
+  - horizontal or vertical
+  - Text labels
+  - hardcoded to duration, track title, bpm, rate, etc
+  - Knobs
+  - Waveform overview
+  - Waveform display
+  - VU meter
+  - Embed library widget
+
+## Requirements
+
+Widgets
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

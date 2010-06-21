@@ -54,6 +54,18 @@ Widgets
   - Allow specification of 'translation' function (i.e. log-potmeter or
     potmeter)
   - Allow non-pixmap knobs. Use QSS for styling.
+  - Library Widget
+  - Still a monolithic widget. Don't think it adds value to allow much
+    customization here. 
+  - Use QSS for all appearance styling.
+  - Waveform Widget
+  - Still monolithic, but configurable as in current system.
+  - Waveform Overview
+  - Needs overhaul to be as configurable as the waveform widget.
+  - Text labels
+  - Make use of Controls to display text instead of hard-coding text.
+    (Depends on Control 2.0)
+  - Potentially allow scripts to dynamically affect what is shown. 
 
 ## Forum discussion
 

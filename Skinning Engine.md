@@ -73,10 +73,13 @@ Widgets
   - Make use of Controls to display text instead of hard-coding text.
     (Depends on [Control 2.0](revamped_control_system))
   - Potentially allow scripts to dynamically affect what is shown. 
+  - Allow Marquee effect so you can read text that goes out of the
+    control.
   - VU Meter
   - Allow QSS styling (how???) or pixmaps.
   - Status light
-  - ??
+  - Connects to a control and dynamically switches its pixmap or QSS
+    property based on the control's value
   - Sampler Widget
   - Requirements unknown.
   - Effects Widget

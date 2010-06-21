@@ -104,6 +104,14 @@ Widgets
   - Potentially with a much better control system we can support neat
     things, e.g. A Traktor like dynamic effect control.
 
+## New On-Disk Format
+
+Given the above requirements, we can begin to hash out the new XML
+format:
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE skin SYSTEM "http://mixxx.org/skin.dtd">
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

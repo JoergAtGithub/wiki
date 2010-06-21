@@ -358,6 +358,22 @@ example below cannot handle this.**
       </children>
     </group>
 
+## How QT Quick and QML might be used in QT 4.7.x
+
+It might be possible to describe a Mixxx skin by using pure QML.
+According to
+<http://doc.qt.nokia.com/4.7-snapshot/qml-extending-tutorial-index.html>
+QML can be extended to match our own language concepts. In other words,
+we may extend our existing widget classes in a way they can be accessed
+by QML,see
+<http://doc.qt.nokia.com/4.7-snapshot/declarative-tutorials-extending-chapter1-basics.html>
+for a simple example.
+
+Tobias Rafreider has created a branch for that purpose.
+
+More information about Qt Quick and QML may be found on
+<http://doc.qt.nokia.com/4.7-snapshot/declarativeui.html>
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

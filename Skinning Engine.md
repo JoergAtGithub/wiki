@@ -230,6 +230,9 @@ Mixxx widget.
         -->
         color: red;
       </style>
+      <children>
+        <!-- Widgets for this window go here. -->
+      </children>
     </window>
 
 ## Forum discussion

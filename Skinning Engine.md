@@ -109,18 +109,16 @@ Widgets
 Given the above requirements, we can begin to hash out the new XML
 format:
 
-All skins must include a reference to the mixxx.org skin DTD:
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <!DOCTYPE skin SYSTEM "http://mixxx.org/skin.dtd">
-
-### Skin Tag
+### Document Root
 
 As in the legacy skinning system, the `<skin>` tag is the root document
-element.
+element. All valid skins must include a doctype with a reference to the
+Mixxx.org skin DTD.
 
 **Example:**
 
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE skin SYSTEM "http://mixxx.org/skin.dtd">
     <skin>
       <manifest>..</manifest>
       <style>..</style>
@@ -131,7 +129,12 @@ element.
 ### Skin Manifest
 
 The skin manifest contains various metadata about the skin. Only one
-manifest is allowed, and it is a child of the \<skin\>
+manifest is allowed, and it must be the first immediate child of the
+`<skin>` tag.
+
+  - Supports basic attributes: title, author, language, url, version
+  - Supports attributes. Control system properties that are set to the
+    given values on skin load.
 
 **Example:**
 
@@ -141,6 +144,12 @@ manifest is allowed, and it is a child of the \<skin\>
       <language>en</language>
       <url>http://rustyryan.net/mixxx/skins/rainbow.zip</url>
       <version>1.0</version>
+      <attributes>
+        <attribute name="mixxx.master.enabled">false</attribute>
+        <attribute name="mixxx.headphone.enabled">false</attribute>
+        <attribute name="mixxx.vinylcontrol.enabled">true</attribute>
+        <attribute name="mixxx.players.count">4</attribute>
+      </attributes>
     </manifest>
 
 ## Forum discussion

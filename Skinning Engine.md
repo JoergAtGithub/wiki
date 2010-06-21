@@ -109,8 +109,39 @@ Widgets
 Given the above requirements, we can begin to hash out the new XML
 format:
 
+All skins must include a reference to the mixxx.org skin DTD:
+
     <?xml version="1.0" encoding="utf-8"?>
     <!DOCTYPE skin SYSTEM "http://mixxx.org/skin.dtd">
+
+### Skin Tag
+
+As in the legacy skinning system, the `<skin>` tag is the root document
+element.
+
+**Example:**
+
+    <skin>
+      <manifest>..</manifest>
+      <style>..</style>
+      <window>..</window>
+      <window>..</window>
+    </skin>
+
+### Skin Manifest
+
+The skin manifest contains various metadata about the skin. Only one
+manifest is allowed, and it is a child of the \<skin\>
+
+**Example:**
+
+    <manifest>
+      <title>Rainbow Mixin'</title>
+      <author>RJ Ryan</author>
+      <language>en</language>
+      <url>http://rustyryan.net/mixxx/skins/rainbow.zip</url>
+      <version>1.0</version>
+    </manifest>
 
 ## Forum discussion
 

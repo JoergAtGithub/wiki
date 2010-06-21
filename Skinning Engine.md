@@ -26,7 +26,33 @@ Supported Widgets
 
 ## Requirements
 
+Base Widget
+
+  - Nameable
+  - Tooltip
+  - Connections
+  - EmitOnDownPress and EmitOnRelease properties (to obviate need for
+    double-connections)
+  - Choose mouse button.
+  - Tab ordering?
+
 Widgets
+
+  - Push button
+  - Support pixmaps for each button position
+  - Slider 
+  - Allow vertical or horizontal orientation 
+  - Separate image for slider and knob
+  - Knobs
+  - Single knob image that is rotated plus background image.
+  - Allow specification of 'translation' function (i.e. log-potmeter or
+    potmeter)
+
+<!-- end list -->
+
+``` 
+* 
+```
 
 ## Forum discussion
 

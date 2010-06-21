@@ -1,9 +1,12 @@
 # Skinning Engine
 
+## Summary and Rationale
+
+**Status**: This specification is **in drafting**. Please feel free to
+add comments.
+
 Mixxx has used the same old skinning engine for a long time now.
 Although the current skinning engine is usable, it is not very flexible.
-Developers can discuss their ideas for a new skinning engine on this
-page.
 
 ## Current System
 

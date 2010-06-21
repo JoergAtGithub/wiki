@@ -40,19 +40,16 @@ Widgets
 
   - Push button
   - Support pixmaps for each button position
+  - Allow non-pixmap buttons. Use QSS to styling.
   - Slider 
   - Allow vertical or horizontal orientation 
   - Separate image for slider and knob
+  - Allow non-pixmap sliders. Use QSS for styling.
   - Knobs
   - Single knob image that is rotated plus background image.
   - Allow specification of 'translation' function (i.e. log-potmeter or
     potmeter)
-
-<!-- end list -->
-
-``` 
-* 
-```
+  - Allow non-pixmap knobs. Use QSS for styling.
 
 ## Forum discussion
 

@@ -22,6 +22,7 @@ Supported Widgets
   - Waveform display
   - VU meter
   - Embed library widget
+  - Status light
 
 ## Requirements
 

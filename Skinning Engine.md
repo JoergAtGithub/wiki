@@ -122,8 +122,7 @@ Mixxx.org skin DTD.
     <skin>
       <manifest>..</manifest>
       <style>..</style>
-      <window>..</window>
-      <window>..</window>
+      <layout>..</layout>
     </skin>
 
 ### Skin Manifest
@@ -158,6 +157,21 @@ manifest is allowed, and it must be the first immediate child of the
         <attribute name="mixxx.players.count">4</attribute>
       </attributes>
     </manifest>
+
+### Style
+
+Style controls the styling and presentation of on-screen widgets. The
+Style tag can directly embed QSS or provide a relative path to a QSS
+file. For more information about QSS, please refer to the [Qt Style
+Sheet Documentation](http://doc.trolltech.com/latest/stylesheet.html)
+
+**Example:**
+
+    <style>
+      
+    </style>
+
+### Layout
 
 ## Forum discussion
 

@@ -29,6 +29,10 @@ Supported Widgets
 Base Widget
 
   - Nameable
+  - Position, Size
+  - Potentially offer absolute positioning mode for legacy support, but
+    in general deprecate absolute positioning. 
+  - Use size-hints (max-min size) instead of single size.
   - Tooltip
   - Connections
   - EmitOnDownPress and EmitOnRelease properties (to obviate need for

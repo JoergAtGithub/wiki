@@ -244,19 +244,26 @@ the control. The new specification will go something like this:
 And its corresponding QSS will be as follows:
 
     WPushButton#Channel1EndOfTrack {
-      background-image: url(button_bg.png);
+      background-image: url(eot_bg.png);
     }
     
+    /* Show a border while hovering */
+    WPushButton#Channel1EndOfTrack:hover {
+      border: 1px solid red;
+    }
+    
+    /* Show a different background based on the widget's 'value' property. */
+    
     WPushButton#Channel1EndOfTrack[value=0] {
-      background-image: url(stop.png);
+      background-image: url(eot_stop.png);
     }
     
     WPushButton#Channel1EndOfTrack[value=1] {
-      background-image: url(next.png);
+      background-image: url(eot_next.png);
     }
     
     WPushButton#Channel1EndOfTrack[value=2] {
-      background-image: url(loop.png);
+      background-image: url(eot_loop.png);
     }
 
 ### Layout

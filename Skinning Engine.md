@@ -308,7 +308,7 @@ All widget declarations will take a form similar to the following:
       </Size>
       <Connections> <!-- Control connections to the widget. -->
         <Connection>
-          <Control>mixxx.player.play_button</Control>
+          <Control>mixxx.player1.play_button</Control>
           <EmitOnDownPress>true</EmitOnDownPress>
           <ButtonState>LeftButton</ButtonState>
         </Connection>

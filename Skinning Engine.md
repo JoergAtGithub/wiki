@@ -52,6 +52,10 @@ Widget Layout
   - Allow a widget group to have a layout assigned to it.
   - Windows
   - Windows are the root of each hierarchy of widgets
+  - Widget Templates
+  - Ability to specify some template for a widget for saving time,
+    sanity.
+  - Seems a lot like CSS. Can we use QSS to get the same effect? 
 
 Widgets
 

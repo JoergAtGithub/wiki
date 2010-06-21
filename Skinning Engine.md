@@ -169,6 +169,8 @@ file. For more information about QSS, please refer the following:
   - [QSS Syntax](http://doc.trolltech.com/latest/stylesheet-syntax.html)
   - [QSS Selector
     Types](http://doc.trolltech.com/latest/stylesheet-syntax.html#selector-types)
+  - [QSS
+    Reference](http://doc.trolltech.com/latest/stylesheet-reference.html)
 
 **Example:**
 

@@ -162,13 +162,26 @@ manifest is allowed, and it must be the first immediate child of the
 
 Style controls the styling and presentation of on-screen widgets. The
 Style tag can directly embed QSS or provide a relative path to a QSS
-file. For more information about QSS, please refer to the [Qt Style
-Sheet Documentation](http://doc.trolltech.com/latest/stylesheet.html)
+file. For more information about QSS, please refer the following:
+
+  - [Qt Style Sheet
+    Documentation](http://doc.trolltech.com/latest/stylesheet.html)
+  - [QSS Syntax](http://doc.trolltech.com/latest/stylesheet-syntax.html)
+  - [QSS Selector
+    Types](http://doc.trolltech.com/latest/stylesheet-syntax.html#selector-types)
 
 **Example:**
 
     <style>
-      
+    /* Can style Mixxx-classes with these selectors: */
+    WWidget { color: #FA0; }
+    WPushButton { background-color: #FFF; }
+    
+    /* Can style Qt widget classes like this: */
+    QLineEdit { border: 1px solid #333; }
+    
+    /* Can style individually named elements like this: */
+    #Channel1BpmDisplay { font-face: Sans Mono; }
     </style>
 
 ### Layout

@@ -7,7 +7,7 @@ page.
 
 ## Current System
 
-See description of XML format here:
+See description of XML format here: [Creating Skins](creating_skins)
 
 Supported Widgets
 

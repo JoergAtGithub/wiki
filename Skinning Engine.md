@@ -132,7 +132,13 @@ The skin manifest contains various metadata about the skin. Only one
 manifest is allowed, and it must be the first immediate child of the
 `<skin>` tag.
 
-  - Supports basic attributes: title, author, language, url, version
+  - Supports basic attributes: title, author, language, description,
+    uri, version
+  - The URI attribute allows specifying a URI from which to download a
+    skin update file. 
+  - The update file will contain a list of versions available. 
+  - Mixxx may check the skin version against the list of available
+    versions and notify the user of an update.
   - Supports attributes. Control system properties that are set to the
     given values on skin load.
 
@@ -142,7 +148,8 @@ manifest is allowed, and it must be the first immediate child of the
       <title>Rainbow Mixin'</title>
       <author>RJ Ryan</author>
       <language>en</language>
-      <url>http://rustyryan.net/mixxx/skins/rainbow.zip</url>
+      <description>Mixxxin' on Rainbows</description>
+      <uri>http://rustyryan.net/mixxx/skins/rainbow.skin</uri>
       <version>1.0</version>
       <attributes>
         <attribute name="mixxx.master.enabled">false</attribute>

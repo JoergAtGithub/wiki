@@ -313,11 +313,16 @@ Mixxx widget.
 ### Widget Group
 
 A Widget Group is a container for widgets. It is a normal WWidget and
-can have a name.
+can have a name. The group can use a Qt layout to manage its children.
+
+The options for layouts are simply the main Qt layouts: VBoxLayout,
+HBoxLayout, GridLayout, StackedLayout. **TODO: For things like
+GridLayout, adding a widget takes arguments (e.g. row, column). The
+example below cannot handle this.**
 
 **Example:**
 
-    <group name="PlayerGroup">
+    <group name="PlayerGroup" layout="VBoxLayout">
       <children>
         <!-- Widgets for this group go here. -->
       </children>

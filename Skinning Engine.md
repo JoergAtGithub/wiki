@@ -39,6 +39,8 @@ Base Widget
     double-connections)
   - Choose mouse button.
   - Tab ordering?
+  - Support hovering MIDI-assign. Can we do this with some QSS :hover
+    attribute? 
 
 Widgets
 
@@ -86,6 +88,17 @@ Widgets
   - Requirements unknown. 
   - Potentially with a much better control system we can support neat
     things, e.g. A Traktor like dynamic effect control.
+
+Widget Layout
+
+  - Widget Grouping
+  - Nameable
+  - Have a size hint and optionally an absolute position.
+  - Provide a hide/show-control. Uses the group's name.
+  - Layouts
+  - Allow a widget group to have a layout assigned to it.
+  - Windows
+  - Windows are the root of each hierarchy of widgets
 
 ## Forum discussion
 

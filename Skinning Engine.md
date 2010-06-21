@@ -286,6 +286,35 @@ how many windows the skin would like to create.
       </window>
     </layout>
 
+### Generic Widget
+
+All widgets (children of WWidget) will have the following properties:
+
+  - objectName (inherited property of QObject)
+  - maximumSize (inherited from QWidget)
+  - minimumSize (inherited from QWidget)
+  - toolTip (inherited from QWidget)
+  - whatsThis (inherited from QWidget)
+  - [QWidget
+    Properties](http://doc.qt.nokia.com/latest/qwidget.html#properties)
+
+All widget declarations will take a form similar to the following:
+
+    <WidgetType name="MyWidget">
+      <Tooltip>Helpful text for MyWidget</Tooltip>
+      <Size> <!-- Size hints for the widget. Make max the same as min for a fixed size widget. -->
+        <MaxSize>100,100</MaxSize>
+        <MinSize>10,10</MinSize> 
+      </Size>
+      <Connections> <!-- Control connections to the widget. -->
+        <Connection>
+          <Control>mixxx.player.play_button</Control>
+          <EmitOnDownPress>true</EmitOnDownPress>
+          <ButtonState>LeftButton</ButtonState>
+        </Connection>
+      </Connections>
+    </WidgetType>
+
 ### Window
 
 A window is a normal WWidget with all the same attibutes as the base

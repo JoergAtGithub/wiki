@@ -196,6 +196,42 @@ For more information about QSS, please refer the following:
 
 ### Layout
 
+The layout section is the root description of the skin's layout. Each
+layout section is made up of a number of `<window>` tags depending on
+how many windows the skin would like to create.
+
+**Example:**
+
+    <layout>
+      <window name="Window1">
+        <!-- Widgets/layout for window 1 go here -->
+      </window>
+      <window name="Window2">
+        <!-- Widgets/layout for window 2 go here -->
+      </window>
+    </layout>
+
+### Window
+
+A window is a normal WWidget with all the same attibutes as the base
+Mixxx widget.
+
+**Example:**
+
+    <window name="Window 1">
+      <size> <!-- Fixed size of 100x100 -->
+        <maxsize>100,100</maxsize>
+        <minsize>100,100</minsize>
+      </size>
+      <style>
+        <!-- 
+        This style is set via http://doc.trolltech.com/latest/qwidget.html#styleSheet-prop
+        Is this a good idea? Perhaps it should be considered poor form. 
+        -->
+        color: red;
+      </style>
+    </window>
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

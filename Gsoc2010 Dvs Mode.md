@@ -112,8 +112,7 @@ I didn't totally waste the day :)
     * Gave AudioPath classes some accessors.
 * Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2422
     * Made SoundDevice and SoundDevicePortAudio AudioPath-using. I got a little carried away with tabs-to-spaces around some code I had to modify but I hope it's all ok :)
-* 20100622
-* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2423
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2423 (this and the next commit are dated the 22th but it still feels like the 21st to my body :))
     * Beginnings of SoundManager w/AudioPath and some include/forward decs in SoundDevice.
 * Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2424
     * Rather large commit that includes some error-fixes and finished SoundManager modification to use AudioPath classes. Many of the internal structures are now QHashes or QLists, which provide a degree of extendability not previously available but shouldn't have any noticeable overhead as both data structures are implicitly shared. QHash was chosen over QMap for its faster operation.

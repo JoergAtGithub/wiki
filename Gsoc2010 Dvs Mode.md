@@ -104,6 +104,21 @@ I didn't totally waste the day :)
     * ChannelGroup::clashesWith is now fixed from revision 2414.
 * Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2416
     * Gave EngineMaster a getDeckBuffer method to get the unmixed buffers. Required hack until hydra is merged.
+* 20100617
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2417
+    * Nothing exciting, a couple of formatting fixes and commenting.
+* 20100621
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2421
+    * Gave AudioPath classes some accessors.
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2422
+    * Made SoundDevice and SoundDevicePortAudio AudioPath-using. I got a little carried away with tabs-to-spaces around some code I had to modify but I hope it's all ok :)
+* 20100622
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2423
+    * Beginnings of SoundManager w/AudioPath and some include/forward decs in SoundDevice.
+* Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2424
+    * Rather large commit that includes some error-fixes and finished SoundManager modification to use AudioPath classes. Many of the internal structures are now QHashes or QLists, which provide a degree of extendability not previously available but shouldn't have any noticeable overhead as both data structures are implicitly shared. QHash was chosen over QMap for its faster operation.
+    * The branch now compiles. Audio output is normal, and I don't see any increased CPU with htop. I need to ask someone else to check out vinyl control as I don't have a 2-channel sound card at the moment.
+    * Commit has a nicer log of what was in it.
 ```
 
 ## Specification

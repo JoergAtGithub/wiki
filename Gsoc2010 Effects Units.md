@@ -34,6 +34,8 @@ both on a channel, a unit per channel or even both on master.
   - Check out the [LADSPA page](ladspa).
   - See this project's code:
     [features\_ladspa](https://code.launchpad.net/~bruno-buccolo/mixxx/features_ladspa)
+  - See diagrams, specificacions and screenies: [My
+    Picasa](http://picasaweb.google.com/bruno.buccolo/GoogleSummerOfCode2010)
   - Read my Activity Log: [Buccolo's Mixxx Diary](http://bit.ly/ac1jYO)
   - Read my GSoC posts here: [My
     Blog](http://blog.brunobuccolo.com/tagged/GSoC)

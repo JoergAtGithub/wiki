@@ -113,7 +113,17 @@ to be done:
 At the very least, all the GUI problems and knobs-not-working need to be
 resolved before LADSPA is ready.
 
-## Brief Documentation
+## Documentation
+
+### LADSPA: How is it loaded into Mixxx?
+
+[[/media/ladspa_init.png|]]
+
+### LADSPA: How does Mixxx activate and process a LADSPA effect?
+
+[[/media/ladspa_process.png|]]
+
+## LADSPA Classes
 
 ### EngineLADSPA
 

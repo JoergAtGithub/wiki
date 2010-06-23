@@ -70,9 +70,10 @@ compilar Mixxx vease: [Compiling on Linx](Compiling%20on%20Linx)
 
 ## OS X
 
-OS X (Intel) users can install Mixxx by double-clicking the Mixxx zip
-archive, and then dragging-and-dropping the Mixxx bundle into their
-*Applications* folder. Mixxx requires an Intel Mac running OS 10.4+.
+Los usiarios de Mac OS X (Intel) pueden instalar Mixxx haciendo doble
+click en el archivo Zip de Mixxx, luego arrastrando el paquete de Mixxx
+al directorio *Applications*. Mixxx require un Mac Intel corriendo OS
+10.4+.
 
 # User Interface Overview
 

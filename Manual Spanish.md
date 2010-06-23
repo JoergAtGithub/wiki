@@ -75,7 +75,7 @@ click en el archivo Zip de Mixxx, luego arrastrando el paquete de Mixxx
 al directorio *Applications*. Mixxx require un Mac Intel corriendo OS
 10.4+.
 
-# User Interface Overview
+# Resumen del Interfaz de Usuarios
 
 [[/media/manual/mixxx-overview.png|]]
 

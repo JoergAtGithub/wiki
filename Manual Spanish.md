@@ -61,11 +61,12 @@ y 64 bits. (Tambien puede ser que corra en Windows 2000).
 
 ## Linux
 
-Linux users can often find Mixxx included with their favourite
-distribution. For example, **Ubuntu** users can install Mixxx through
-the *Applications-\>Add/Remove...* menu item. If Mixxx is not packaged
-for your distribution, you can compile Mixxx from scratch. For details
-on compiling Mixxx, see: [Compiling on Linux](Compiling%20on%20Linux)
+Mixxx esta incluid con la mayoria de las distribuciones populares de
+Linux. Por ejemplo, en **Ubuntu** se puede instalar Mixx desde el centro
+de Programas de Ubuntu. Si Mixxx no esta empaquetado para tu
+distribucion, usted puede compilar Mixxx. Para detalles sobre como
+compilar Mixxx vease: [Compiling on Linx](Compiling%20on%20Linx)
+(necesita traduccion).
 
 ## OS X
 

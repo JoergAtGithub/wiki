@@ -61,7 +61,7 @@ y 64 bits. (Tambien puede ser que corra en Windows 2000).
 
 ## Linux
 
-Mixxx esta incluid con la mayoria de las distribuciones populares de
+Mixxx esta incluido con la mayoria de las distribuciones populares de
 Linux. Por ejemplo, en **Ubuntu** se puede instalar Mixx desde el centro
 de Programas de Ubuntu. Si Mixxx no esta empaquetado para tu
 distribucion, usted puede compilar Mixxx. Para detalles sobre como

@@ -166,6 +166,8 @@ resolved before LADSPA is ready.
     LADSPAControl variables.
   - Creates ConfigKeys and ControlObjects for Enable/Disable and for the
     Wet\&Dry.
+  - LADSPAInstanceStereo/Mono: If a Plugin is Mono, Mixxx makes 2
+    instances to process Right/Left signals separetely.
 
 ### LADSPAControl
 

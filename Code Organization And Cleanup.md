@@ -99,3 +99,5 @@ The following are overall groups that the code can be grouped into:
     ladspa/
   - All widget code (starts with 'w' and inherits QWidget) is now in
     widget/
+  - All MIDI code is in midi/
+  - All engine code is in engine/

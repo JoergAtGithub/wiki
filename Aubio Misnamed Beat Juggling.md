@@ -67,8 +67,21 @@ You can see it at:
 <http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/features_beatjuggling/annotate/head:/mixxx/src/trackinfobeats.h>
 
 Each beat is mapped in m\_beats using the sample offset to point to
-itself.. (yeah, I don't remember why). m\_beatIndex works as a sparse
-index for the first beat sample offset in a certain range.
+itself. m\_beatIndex works as a sparse index for the first beat sample
+offset in a certain range.
+
+This may not be the best way to implement this but in essence it was the
+fastest way I thought of being able to do a lookup for a range of sample
+offsets. The algorithm for a lookup is such:
+
+  - Take your starting offset of interest and make them modulo to what
+    is used to generate m\_beatIndex.
+  - Get the matching sample offset from m\_beatIndex (it's a direct
+    lookup).
+  - Lookup the resulting offset in m\_beats (direct lookup again from
+    our indirect index).
+  - Forward track through m\_beats until you reach or exceed your end
+    offset to get all desired sample offsets.
 
 ## Current Issues
 

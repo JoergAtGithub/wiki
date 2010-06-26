@@ -87,6 +87,15 @@ offsets. The algorithm for a lookup is such:
 
   - TrackInfoBeats is not stored in the Database
   - Analysis takes 90%+ CPU and around 15 seconds for a typical
-    Psytrance Song (not good for live performance)
+    Psytrance Song (not good for live performance).
   - There is no fallback implementatio to fill in TrackInfoBeats with
-    SoundTouch
+    SoundTouch.
+
+## Notes
+
+  - We could easily avoid the CPU and time penalty for analysis by only
+    using aubio in the analysis section.
+  - Although the implementation so far deals with beat detection and
+    quantization aubio also does other forms of analysis.
+  - We could color waveforms on peaks (onset detection)
+  - We could color waveforms according to pitch (pitch detection)

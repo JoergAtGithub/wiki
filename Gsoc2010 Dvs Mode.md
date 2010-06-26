@@ -116,7 +116,7 @@ I didn't totally waste the day :)
     * Beginnings of SoundManager w/AudioPath and some include/forward decs in SoundDevice.
 * Commit http://bazaar.launchpad.net/~bkgood/mixxx/features_external_mixer/revision/2424
     * Rather large commit that includes some error-fixes and finished SoundManager modification to use AudioPath classes. Many of the internal structures are now QHashes or QLists, which provide a degree of extendability not previously available but shouldn't have any noticeable overhead as both data structures are implicitly shared. QHash was chosen over QMap for its faster operation.
-    * The branch now compiles. Audio output is normal, and I don't see any increased CPU with htop. I need to ask someone else to check out vinyl control as I don't have a 2-channel sound card at the moment.
+    * The branch now compiles. Audio output is normal, and I don't see any increased CPU with htop. I need to ask someone else to check out vinyl control as I don't have a 2-channel sound card at the moment. **update: tested this with jack, seems to work.**
     * Commit has a nicer log of what was in it.
 ```
 

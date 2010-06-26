@@ -66,7 +66,7 @@ declaration is the following:
 You can see it at:
 <http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/features_beatjuggling/annotate/head:/mixxx/src/trackinfobeats.h>
 
-### Current Issues
+## Current Issues
 
   - TrackInfoBeats is not stored in the Database
   - Analysis takes 90%+ CPU and around 15 seconds for a typical

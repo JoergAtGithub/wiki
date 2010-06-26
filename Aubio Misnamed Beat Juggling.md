@@ -66,6 +66,10 @@ declaration is the following:
 You can see it at:
 <http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/features_beatjuggling/annotate/head:/mixxx/src/trackinfobeats.h>
 
+Each beat is mapped in m\_beats using the sample offset to point to
+itself.. (yeah, I don't remember why). m\_beatIndex works as a sparse
+index for the first beat sample offset in a certain range.
+
 ## Current Issues
 
   - TrackInfoBeats is not stored in the Database

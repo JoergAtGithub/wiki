@@ -12,7 +12,7 @@ allow us to do man cool tricks including:
   - Do full Automatic Beat Syncing
   - Beat Smashing/Splicing (ala Aphex Twin)
 
-### Current Status
+## Current Status
 
 There is currently a branch at
 <https://code.launchpad.net/~mixxxdevelopers/mixxx/features_beatjuggling>.

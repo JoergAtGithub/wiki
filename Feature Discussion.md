@@ -11,6 +11,8 @@ page.
   - [N-Deck Support](N-Deck%20Support)
   - [Skinning Engine](Skinning%20Engine)
   - [DVS mode](DVS%20mode)
+  - [Aubio (misnamed Beat
+    Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
 
 ## Implemented Specifications
 

@@ -19,9 +19,10 @@ x64,) here are the steps:
   - Tweak the Qt configuration:
     - **Full-text search:** Edit ''C:\qt-everywhere-opensource-src-4.6.1\src\plugins\sqldrivers\sqlite\sqlite.pro''
       - Add this, after the first DEFINES += :<code>DEFINES += SQLITE_ENABLE_FTS3 SQLITE_ENABLE_FTS3_PARENTHESIS</code>
-    - **Speed** (optional): Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':
+    - **Speed** (optional): Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2005\qmake.conf'':
       - If you have more than one processor/core, add ''/MP'' to ''QMAKE_CFLAGS''.
       - Add -Ox to ''QMAKE_CFLAGS_RELEASE'' for extra optimizations
+      - Add ''/arch:SSE'' to ''QMAKE_CFLAGS_RELEASE'' for SSE support (use SSE2 if your CPU supports it)
       - Change ''QMAKE_LFLAGS_LTCG'' to ''/LTCG:STATUS'' so it tells you how long it will take to generate each executable (Some of them take a loooong time (WebKit and QtScript) so it's nice to know.)
 ```
 
@@ -34,7 +35,7 @@ If you want to link Qt against Agner Fog's optimized
     [here](http://agner.org/optimize/asmlib.zip)
 2.  Unzip it to a directory of your choice, say `C:\asmlib`
 3.  Edit
-    qt-everywhere-opensource-src-4.6.1\\mkspecs\\win32-msvc2008\\qmake.conf:
+    qt-everywhere-opensource-src-4.6.1\\mkspecs\\win32-msvc2005\\qmake.conf:
     1.  Add `/Oi-` to `QMAKE_CFLAGS`
     2.  Add `/LIBPATH:"C:\asmlib"` to `QMAKE_LFLAGS`
     3.  Add `alibcof32o.lib` (or `alibcof64o.lib` for 64-bit) to each

@@ -45,8 +45,10 @@ manifest is allowed, and it must be the first immediate child of the
       <uri>http://rustyryan.net/mixxx/skins/rainbow.skin</uri>
       <version>1.0</version>
       <license>CC-3.0-by-sa-nc</license>
-      <mixxx_min_version>1.9.0</mixxx_min_version>
-      <mixxx_max_version>2.0.0</mixxx_max_version>
+      <mixxx-version>
+        <min>1.9.0</min>
+        <max>2.0.0</max>
+      </mixxx-version>
       <resolution>
         <min>1024x768</min>
         <recommended>1440x900</recommended>

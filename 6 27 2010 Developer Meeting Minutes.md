@@ -55,4 +55,12 @@ Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
     * Allow artists to submit patches 
     * Create staging.mixxx.org, allow them to do whatever they want. 
     * If it looks good, commit. 
+* Fundraising and Financials
+* Not much!
+* Spent $50 on the bounty, $30 to ship something back to Stanton.
+* Hosting covered by Garth, Downloads covered by Albert
+    * Thanks guys!
+* Hopefully we grow this somehow in the future.
+    * Promo Tracks
+    * Gear (tshirts, hats, record bags, stickers, etc)
 ```

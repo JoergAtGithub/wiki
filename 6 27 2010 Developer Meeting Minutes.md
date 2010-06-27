@@ -7,6 +7,8 @@ project financials, and future release management.
 
 Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
 
+**[Slides](http://docs.google.com/a/mixxx.org/present/view?id=dd557nj5_58cxns8zd5)**
+
   - Project Planning
   - Fewer colossal releases\!
   - Art and Community Planning Changes

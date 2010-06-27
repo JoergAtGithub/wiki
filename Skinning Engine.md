@@ -34,10 +34,14 @@ Metadata/Manifest
   - Include the following metadata:
   - author
   - title
+  - description
+  - language
+  - skin version
   - license
   - update-URL
   - mixxx version required (min/max)
-  - suggested min screen resolution
+  - suggested screen resolution
+  - min screen resolution
 
 Base Widget
 

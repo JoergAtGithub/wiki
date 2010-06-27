@@ -65,4 +65,7 @@ Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
 * Hopefully we grow this somehow in the future.
     * Promo Tracks
     * Gear (tshirts, hats, record bags, stickers, etc)
+* Skins in 1.8.0
+* Include Deere, Shade, Phony
+* What will be the default?
 ```

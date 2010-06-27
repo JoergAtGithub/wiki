@@ -5,7 +5,7 @@ that will follow in the 1.8.x series, and the potential plans for the
 1.9 and 2.0 series. Additionally, we discussed growing the team, the
 project financials, and future release management.
 
-Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
+Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam, Bruno
 
 **[Slides](http://docs.google.com/a/mixxx.org/present/view?id=dd557nj5_58cxns8zd5)**
 

@@ -67,5 +67,5 @@ Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
     * Gear (tshirts, hats, record bags, stickers, etc)
 * Skins in 1.8.0
 * Include Deere, Shade, Phony
-* What will be the default?
+* Maybe auto-detect screen size and pick a nice one if it's big enough, otherwise default to outlineNetbook.
 ```

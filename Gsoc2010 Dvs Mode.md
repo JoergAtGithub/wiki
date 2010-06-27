@@ -207,7 +207,7 @@ internal mixer. This will likely include a bit of refactoring.
 - Single vinyl deck
 * See [[single-deck_vinyl_control]]. Has implementation suggestions.
 - Microphone input
-* For voice-over. Really has nothing to do with DVS since any mixer worth its salt will have a mic in but mixxx needs it.
+* For voice-over. Really has nothing to do with DVS since any mixer worth its salt will have a mic in but mixxx needs it. See https://blueprints.launchpad.net/mixxx/+spec/external-passthru
 ```
 
 ## Notes

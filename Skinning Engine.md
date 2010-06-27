@@ -29,6 +29,16 @@ Supported Widgets
 
 ## Requirements
 
+Metadata/Manifest
+
+  - Include the following metadata:
+  - author
+  - title
+  - license
+  - update-URL
+  - mixxx version required (min/max)
+  - suggested min screen resolution
+
 Base Widget
 
   - Nameable
@@ -107,10 +117,12 @@ Widgets
   - Potentially with a much better control system we can support neat
     things, e.g. A Traktor like dynamic effect control.
 
-## New On-Disk Format
+## Skinning Engine Proposals
 
-Given the above requirements, we can begin to hash out the new XML
-format:
+Given the above requirements, list various proposals for skin formats
+here.
+
+  - [Qt4, Qt Style Sheet-based approach](skinning_engine_qt4)
 
 ### Document Root
 

@@ -31,5 +31,8 @@ Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
 * OpenGL waveform corruption and performance
 * No forethought about art and community planning.
     * Jus is singlehandedly running this department! 
-* 
+* 1.8 Release Series
+* Rename all those point releases to major releases.
+* 1.9 will be a quick release (see [[https://docs.google.com/Doc?docid=0ARIm4hmnULELZGQ1NTduajVfNDZjdDdxZjJobg&hl=en&authkey=CIn17ssG|Mixxx 1.8/1.9/2.0 Project Plan]]
+    * Shoutcast, Hydra, bugfixes, whatever else is ready.
 ```

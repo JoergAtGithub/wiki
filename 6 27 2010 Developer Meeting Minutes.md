@@ -49,7 +49,10 @@ Present: Tobias, Bill, Albert, RJ, Sean, Garth, Adam
     * blogging 
     * proactive recruiting
     * more tutorials on the wiki
-* How to trust new developers?
-* Patches build trust
-* Add Community Coordinator?
+* How to trust new non-developers?
+* Patches build trust, how do you do this with non-developers? 
+* Commit the website to source control
+    * Allow artists to submit patches 
+    * Create staging.mixxx.org, allow them to do whatever they want. 
+    * If it looks good, commit. 
 ```

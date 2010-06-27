@@ -44,6 +44,13 @@ manifest is allowed, and it must be the first immediate child of the
       <description>Mixxxin' on Rainbows</description>
       <uri>http://rustyryan.net/mixxx/skins/rainbow.skin</uri>
       <version>1.0</version>
+      <license>CC-3.0-by-sa-nc</license>
+      <mixxx_min_version>1.9.0</mixxx_min_version>
+      <mixxx_min_version>2.0.0</mixxx_min_version>
+      <resolution>
+        <min>1024x768</min>
+        <recommended>1440x900</recommended>
+      </resolution>
       <attributes>
         <attribute name="mixxx.master.enabled">false</attribute>
         <attribute name="mixxx.headphone.enabled">false</attribute>

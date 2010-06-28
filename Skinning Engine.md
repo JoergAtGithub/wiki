@@ -127,6 +127,8 @@ Given the above requirements, list various proposals for skin formats
 here:
 
   - [Qt4, Qt Style Sheet-based approach](skinning_engine_qt4)
+  - [Qt 4.7 QML/Kinetic-based approach](skinning_engine_qml)
+  - [HTML/CSS Based Skins](skinning_engine_webkit)
 
 ## How QT Quick and QML might be used in QT 4.7.x
 

@@ -7,9 +7,10 @@ make future work easier and help fix current and avoid future bugs.
 
 Here is a high-level list of things to do to make this happen:
 
-  - Remove all Qt version 3 code
-  - Search the code for "`Qt3`" and "`QT3`" and replace with Qt4
-    equivalents
+  - Remove all Qt version 3 code - See code branch
+    <https://code.launchpad.net/~mixxxdevelopers/mixxx/qt3-removal>
+  - Search the code for "`Qt3`", "`QT3`", and "`Q3`" and replace with
+    Qt4 equivalents
   - Address all developer questions and concerns in code comments
   - Search the code for each of the following and fix (discuss with
     others as needed):

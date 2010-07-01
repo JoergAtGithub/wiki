@@ -6,17 +6,16 @@ Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 
 ## Latest MIDI mapping & script files
 
-### 1.8.0\~beta
+### 1.8.0
 
-**Stanton's DaRouter is not used with Mixxx. Close it before starting
-Mixxx.**
+**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
 
-For those testing the v1.8.0 betas, the latest MIDI mapping and script
-file are in trunk and can be downloaded from here:
+The latest official MIDI mapping and script file are in the 1.8 release
+branch and can be downloaded from here:
 
   - [Stanton
-    SCS.3m.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/trunk/download/head%3A/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
-  - [Stanton-SCS3m-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/trunk/download/head%3A/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
+    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
+  - [Stanton-SCS3m-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
 
 ### 1.7.x
 

@@ -4,32 +4,11 @@
 
 Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 
+**[Mixxx user's guide for the SCS.3m](stanton_scs.3m_mixxx_user_guide)**
+
 ## Latest MIDI mapping & script files
 
-### 1.8.0
-
-**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
-
-The latest official MIDI mapping and script file are in the 1.8 release
-branch and can be downloaded from here:
-
-  - [Stanton
-    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
-  - [Stanton-SCS3m-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
-
-### 1.7.x
-
-**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
-before starting Mixxx.**
-
-The latest official MIDI mapping and script file are in the 1.7 release
-branch and can be downloaded from here:
-
-  - [Stanton
-    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
-  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
-
-Instructions for use:
+**Instructions for use:**
 
 1.  Save the above files into:
 
@@ -49,9 +28,33 @@ Instructions for use:
 6.  Drop down the list and choose the "Stanton SCS.3m" mapping
 7.  Click OK and you're good to go.
 
-[Mixxx user's guide for the SCS.3m](stanton_scs.3m_mixxx_user_guide)
+### 1.8.x
+
+**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
+
+The latest official MIDI mapping and script file are in the 1.8 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
+  - [Stanton-SCS3m-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
 
 #### Quirks
 
-  - Only one side's LEDs will react to Flanger controls at a time (this
-    should be fixed in the next Mixxx release)
+  - Only one side's LEDs will react to Flanger controls at a time
+
+### 1.7.x
+
+**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
+before starting Mixxx.**
+
+The latest official MIDI mapping and script file are in the 1.7 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
+  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
+
+#### Quirks
+
+  - Only one side's LEDs will react to Flanger controls at a time

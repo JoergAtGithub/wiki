@@ -1,8 +1,15 @@
 # Mixxx Add-ons
 
-This page contains user-contributed add-ons for Mixxx.
+This page will contain user-contributed add-ons for Mixxx.
 
-# Install Locations
+# Audio Playback Plugins
+
+If you write an audio playback plugin, here's a good place to link to
+it.
+
+## Technical Details
+
+#### Install Locations
 
 This where Mixxx will look for plugins on each OS:
 
@@ -20,7 +27,7 @@ OSX:
 
   - /Library/Application Support/Mixxx/Plugins/soundsource/
 
-# Additional Locations
+#### Additional Locations
 
 Tell mixxx to look for plugins in additional locations by calling it
 with the `--pluginPath` argument (for instance, if one wants to be able

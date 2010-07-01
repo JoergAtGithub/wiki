@@ -68,7 +68,7 @@ When the Master button is held down:
 
 From top to bottom on both sides:
 
-  - Reverse/rewind
+  - Rewind
   - Fast forward
   - Cue
   - Play

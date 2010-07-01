@@ -36,6 +36,12 @@ conditions. The paper suggests alternative proven methods that would
 work better and are easier to work *with* especially in a user-facing
 application like Mixxx.
 
+Next, [read this Qt blog
+post](http://labs.trolltech.com/blogs/2010/06/17/youre-doing-it-wrong/)
+regarding proper use of QThread. (It's my impression that we are in fact
+doing what he says not to do which is the reason for all the threads we
+have.)
+
 Mixxx's current [thread list](threads).
 
 As Mixxx's functionality grows and it's extended to work with arbitrary

@@ -123,7 +123,8 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
   - Windows: `%USERPROFILE%\Local Settings\Application Data\Mixxx`
   - Linux/Mac OS X/BSD/Unix: `~/.mixxx`
 
-If you can't find it, search your computer for "mixxxtrack.xml"
+If you can't find it, search your computer for "mixxxtrack.xml" (or
+"mixxxdb.sqlite" if using Mixxx 1.8.0 or later)
 
   - If on Windows, Click Start-\>Run, type `%USERPROFILE%\Local
     Settings\Application Data\Mixxx` and click OK. (If you want to use

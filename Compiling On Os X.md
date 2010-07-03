@@ -66,9 +66,11 @@ compile process:
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
-1.7 code:
+code:
 
-    bzr checkout lp:mixxx/1.7
+    bzr checkout lp:mixxx/1.7 (for current stable v1.7)
+    bzr checkout lp:mixxx/1.8 (for current beta v1.8)
+    bzr checkout lp:mixxx (for latest trunk)
 
 ### 3\. Compile and install
 

@@ -118,7 +118,8 @@ restart Mixxx.
 
 ## How do I delete my library file?
 
-Make sure Mixxx is closed, then look for "mixxxtrack.xml" in:
+Make sure Mixxx is closed, then look for "mixxxtrack.xml" (or
+"mixxxdb.sqlite" if using Mixxx 1.8.0 or later) in:
 
   - Windows: `%USERPROFILE%\Local Settings\Application Data\Mixxx`
   - Linux/Mac OS X/BSD/Unix: `~/.mixxx`

@@ -1,7 +1,5 @@
 # Welcome to the Mixxx Wiki\!
 
-[anal toys](http://www.njoyz.com/anal-toys.html)
-
 Mixxx has an unusually broad community for an open-source project,
 encompassing performing musicians, C++ addicts, amateur DJs and even
 just casual users. The Mixxx Wiki contains useful information for users,

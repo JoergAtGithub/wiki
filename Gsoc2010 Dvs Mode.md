@@ -35,7 +35,7 @@ time for other threads, and UI recognition of unwanted features.
 ### Work breakdown structure
 
 1.  External mixer (in lp:\~bkgood/mixxx/features\_external\_mixer).
-    ONLY concerned with taking deck samples and outputting them to two
+    Only concerned with taking deck samples and outputting them to two
     different channel pairs (same or different audio devices).
     EngineMaster will likely still apply the XF and produce headphone
     and master buffers and do all the various things it does.

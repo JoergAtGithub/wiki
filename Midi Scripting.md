@@ -171,8 +171,8 @@ engine.scratchDisable(int deck);
 
 Here is how to use them:
 
-1.  When you want to start scratching, call `engine.scratchEnable()`
-    with:
+1.  When you want to start scratching (such as when the wheel is
+    touched,) call `engine.scratchEnable()` with:
 
 <!-- end list -->
 
@@ -192,7 +192,7 @@ Here is how to use them:
 - Each time the MIDI control is moved, call ''engine.scratchTick()'' with:
 * the virtual deck number this control is currently scratching
 * the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
-- When you're done scratching, just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching.
+- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching.
 ```
 
 Here is an example for the two most common types of wheels:

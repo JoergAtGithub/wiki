@@ -48,6 +48,11 @@ it still needs to be valid ("\[Master\]" or "\[Channel\#\]") or the XML
 parser will report an error. No tags or options are considered other
 than those shown above, so you can leave them out.
 
+***Coming in 1.8**: The \<group\> value is passed as an additional
+parameter to the script function. (Useful for dual-deck controllers
+since you only need one function that checks the passed Channel \# and
+reacts appropriately.)*
+
 When this device control is operated, the named script function is
 called. It is then up to the function to effect all desired changes
 (Mixxx properties, device LEDs, etc.)

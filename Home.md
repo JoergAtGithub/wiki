@@ -118,6 +118,7 @@ plans.
   - [Skin Guidelines](Skin%20Guidelines)
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture)
+  - [On Icons and Images](On%20Icons%20and%20Images)
 
 ## Google Summer of Code
 

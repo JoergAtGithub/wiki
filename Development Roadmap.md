@@ -43,6 +43,10 @@ be bumped by 1.8.0 release.
   - May-July -- Mixxx 1.8.0 Beta 2
   - ??? - Mixxx 1.8.0 Final 
 
+Keep in mind that as we have no full-time developers, this schedule is
+likely to change due to external pressures. Don't plan anything
+important around it.
+
 We tried to sync up with the Ubuntu release cycle, but were unable to
 commit enough developer time to fixing bugs, despite our best efforts.
 (Feature freeze for Lucid Lynx was February 18th, 2010.)
@@ -55,8 +59,9 @@ New main features:
   - New Library
   - Ramping Pitchbend
   - Multiple MIDI device support
-  - ~~Shoutcast~~
-  - M4A support
+  - M4A support via SoundSource plugin architecture
+  - Hot cues, multiple cue points
+  - New skins
 
 Side Projects
 
@@ -66,22 +71,23 @@ Side Projects
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
 
-### 1.9.0
+### 1.9
 
 Release Date: Late-2010/Early-2011
 
 No firm roadmap beyond 1.8.x as yet, will be decided once 1.8.0 cycle is
 complete.
 
-Ideas for possible improvements include:
+Preliminary plan is:
 
-  - SSE Enhanced Engine
-  - Script Timing
-  - Finish LADSPA effects
-  - [DVS mode](DVS%20mode)
-  - n-Deck
-  - External Mixer Mode
-  - Incremental Library Enhancements (e.g. inline track previews)
+  - Shoutcast/Icecast
+  - SampleUtil / Hydra (optimizations)
+  - Fixes for iTunes/Rhythmbox slowness, tiling waveform?
+
+### 1.10
+
+  - Vinyl control updates
+  - Sampler, Effects, External mixer mode?
 
 ### Probably Longer Term
 
@@ -89,15 +95,9 @@ To add to the list of ideas that would be cool in Mixxx, add them to
 [feature\_discussion](feature_discussion) or file a Wishlist bug at
 Launchpad.
 
-Some reasonably sensible sample of wishlist ideas for new features:
-
   - [Skinning Engine](Skinning%20Engine)
   - [Revamped Control System](Revamped%20Control%20System)
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
-  - Macro/script playback
-  - Sampler
-  - Inline track previews
-  - Better BPM detection
 
 ## Historical Release Roadmaps
 

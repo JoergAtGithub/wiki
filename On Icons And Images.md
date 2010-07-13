@@ -4,11 +4,10 @@ While working on icons in my dev branch
 <https://code.launchpad.net/~jus/mixxx/skins> i found out the
 //res/images/ // folder in Mixxx sources needs a clean-up. Lot of
 old/unused images with confusing name in there. The information provided
-here are as of now only applicably to the dev branch.
+here are as of now only applicable to the dev branch.
 
 If this branch gets merged with trunk i\`ll update the informations
-accordingly. Some changes mentioned here might not be pushed to
-Launchpad yet--- *[jus](jus-AT-justmail.de) 2010/07/10 06:21*
+accordingly. --- *[jus](jus-AT-justmail.de) 2010/07/10 06:21*
 
 ## Tips for Designers
 
@@ -55,10 +54,10 @@ to use a common prefix for each icon type. For example:
   - [QT Desktop File
     Standard](http://doc.qt.nokia.com/qtextended4.4/desktopfiles.html)
 
-**ic\_mixxx\_16x16.png**
+**ic\_mixxx\_window.png**
 
   - Window icon displayed in the corner of an application's top-level
-    windows. Primary size for Window icons 16x16
+    windows. Recommend size for Window icons 48x48
   - [Setting the application icon in
     QT 4](http://doc.trolltech.com/4.6/appicon.html)
 

@@ -1,23 +1,6 @@
 # Creating Skins
 
------
-
-  
-**Skinning Documentation - Work in progress** ---
-*[jus](jus/justmail/de) 2010/06/13 09:56*  
-\---
-
-  - ~~Complete Skin.xml in-depth review~~
-  - ~~Howto install skins~~
-  - ~~FAQ~~
-  - ~~Licensing~~
-  - ~~Update Skinning Guidelines~~
-  - ~~Cleanup Wiki syntax~~ / Proof reading
-
------
-
-  
-Skins can change Mixxx\`look and feel‚ some skins merely make the
+Skins can change the look and feel of Mixxx. Some skins merely make the
 program more aesthetically pleasing while others rearrange elements of
 the interface, potentially making the program easier to use.
 
@@ -1663,7 +1646,7 @@ performed action (Y= pregain or filterHigh or filterMid or filterLow)
 
 ` |
 
-## Skin.xsl
+# Skin.xsl
 
 The skin.xsl file (contributed by Dave Jarvis) in the "skins" directory
 allows you to do XSL transform which converts a Mixxx skin.xml into
@@ -1681,7 +1664,7 @@ This is what the output looks like:
 
 [[/media/skinning/shadedark_xsl_skin.html.png|]]
 
-## Useful Links
+# Useful Links
 
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture) - Explains how

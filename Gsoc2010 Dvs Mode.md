@@ -58,7 +58,7 @@ time for other threads, and UI recognition of unwanted features.
             update related code.
         2.  Add to SoundManager a way to keep track of audio hardware
             configuration (ConfigObject key-value system too limiting)
-2.  DVS mode:
+2.  DVS mode: (on hold until a new design materializes)
     1.  Add a vinyl control checkbox to a preferences page, in addition
         to its place in the options menu.
     2.  Make EQs, gains, faders, flanger etc. toggle-able.
@@ -66,7 +66,8 @@ time for other threads, and UI recognition of unwanted features.
         current skinning subsystem.
 3.  External audio pass-through and microphone input
     1.  Microphone input for voice-over.
-    2.  See
+    2.  Pass-through of stereo signals into engine mixing.
+    3.  See
         <https://blueprints.launchpad.net/mixxx/+spec/external-passthru>
         
 

@@ -22,7 +22,10 @@ responsiveness. Here are some tips to help you do that.*
     just "default"** instead of specific hardware. (This made a huge
     difference on a test system with integrated Intel soundcard.) The
     drawback to this is that system sounds (KDE beeps and such) will now
-    be mixed in and will come out the main output.
+    be mixed in and will come out the main output. Note that, depending
+    on your ALSA configuration, this can add a significant (about 20 ms
+    on my system) amount of latency **in addition to** the latency value
+    chosen in Mixxx.
   - You can also try using a [real-time
     kernel](http://pkg-freebob.alioth.debian.org/lowlat.html) or a
     distribution that includes one, like

@@ -182,9 +182,9 @@ be using Mixxx in clubs with very dim lighting, and it kills your eyes
 to stare at a bright screen. The darker the skin, the easier it will be
 on DJs' eyes. It's also important to keep fonts, text labels, and the
 library view visible against a dark background. I'd leave this up to the
-artist [writer jobs](http://www.writers.ph) to figure out, but keep in
-mind that some fonts are way easier to read than others when they're
-small. [GameGod](/User/GameGod) 21:03, 25 November 2007 (PST)
+artist to figure out, but keep in mind that some fonts are way easier to
+read than others when they're small. [GameGod](/User/GameGod) 21:03, 25
+November 2007 (PST)
 
 It might be a good idea to be able to change the background color when
 you go into fullscreen mode (not sure if this is a windows only thing

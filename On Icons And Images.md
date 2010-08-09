@@ -43,8 +43,12 @@ to use a common prefix for each icon type. For example:
   - [Microsoft Vista+ Icons
     Guide](http://msdn.microsoft.com/en-us/library/aa511280.aspx) 
 
-**ic\_mixxx.png**
+**~~ic\_mixxx.png~~** **mixxx-icon.png**
 
+  - Note: Original name *mixxx-icon.png* restored since Linux seems not
+    to like underscores for icon file names in *.desktop* files. This
+    resulted in missing application icons on Gnome/KDE with
+    *mixxx.desktop* .
   - Application icon for Linux .desktop file . Primary size for
     application icons 48x48
   - [Desktop Entry

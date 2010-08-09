@@ -176,4 +176,3 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
     [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
     browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
-  - [essay help](http://uk.bestessays.com/)

@@ -55,6 +55,8 @@ resource into a single thread. This currently needs to be done for:
     controller, need one thread with *n* ScriptEngines in it
   - **(Caching)Reader** - currently one thread per deck, need one thread
     with *n* Readers in it
+  - **VinylControl** - currently one thread per deck, need one thread
+    with *n* timecode-decoders in it
 
 ### Sean's ideas:
 

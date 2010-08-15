@@ -45,6 +45,7 @@ BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 
   - For the latest stable release: `bzr checkout lp:mixxx/1.7`
   - For trunk: `bzr checkout lp:mixxx`
+  - For the 1.8 release branch: `bzr checkout lp:mixxx/1.8`
 
 ## 3\. Compile and install
 

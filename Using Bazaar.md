@@ -15,6 +15,16 @@ tested:
 
 #### Mac OS X
 
+  - [Bazaar Explorer](http://wiki.bazaar.canonical.com/MacOSXDownloads)
+    - Full featured desktop application providing an easy-to-use
+    interface to the Bazaar version control system for MacOS 10.5+.
+    (Tested by Jus)
+
+<!-- end list -->
+
+  - Launch Bazaar Explorer after install from the terminal with *bzr
+    explorer*
+
 #### Linux
 
   - Olive (bzr-gtk) - Looks promising but is god-awful slow on large

@@ -35,6 +35,10 @@ responsiveness. Here are some tips to help you do that.*
     support")](https://help.ubuntu.com/community/UbuntuStudioPreparation)
     for audio applications in order to gain any benefit from a real-time
     kernel.
+  - network-manager is known to cause xruns with Mixxx. If you're
+    experiencing dropouts every few seconds during regular playback, try
+    right-clicking the network widget in your GNOME tray, and unchecking
+    the Enable Networking" box. 
 
 ### Windows
 

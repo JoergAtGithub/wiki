@@ -105,7 +105,7 @@ specification.
   - beaTunes 
   - Supports 'TKEY' and 'TBPM' frames in ID3v2. 
   - Handling of Xiph, APE, and MP4 is unknown.
-  - MixMeister
+  - MixMeister BPM Analyzer
   - Supports 'TBPM' frames in ID3v2. 
   - Handling of Xiph, APE, and MP4 is unknown.
 

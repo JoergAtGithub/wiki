@@ -43,8 +43,8 @@ Some metadata formats have standard (or non-standard) ways that people
 have gone about storing extra metadata such as the harmonic key of a
 song or its average beats per minute.
 
-When possible, Mixxx SoundSource's must extract the following metadata
-from available tag structures:
+When possible, Mixxx SoundSource's must extract the following additional
+metadata from available tag structures:
 
   - Average BPM
   - Overall Harmonic Key of a song

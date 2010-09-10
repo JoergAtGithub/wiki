@@ -60,8 +60,8 @@ metadata from available tag structures:
     'TEMPO'. 
   - In APE metadata tags, we do not currently know the standard for
     storing BPMs.
-  - In MP4 tags, we do not currently know the frame used for storing
-    BPM, though tempo it is part of the MP4 standard.
+  - In MP4 tags, the tempo is stored in a 'tmpo' frame. This is part of
+    the MP4 standard.
 
 ### Harmonic Key
 

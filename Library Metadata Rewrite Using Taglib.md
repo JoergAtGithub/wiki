@@ -47,7 +47,6 @@ When possible, Mixxx SoundSource's must extract the following additional
 metadata from available tag structures:
 
   - Average BPM
-  - Overall Harmonic Key of a song
 
 ### BPM
 
@@ -126,6 +125,16 @@ complete.
         2.1.1 In particular check MP3 VBR files
       2.2 Get a copy of every file format we support with a BPM tag attached. Verify BPM loads on library scan.
       2.3 Test the library on Albert's Library From Hell.
+
+## Current Progress
+
+The Launchpad branch
+[lp:\~mixxxdevelopers/mixxx/features\_taglib](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_taglib)
+currently has the work from steps 1.1 to 1.5 completed. It is stable and
+works well.
+
+RJ has verified that BPM extraction works on MP3 and FLAC, but doesn't
+have examples of other files with BPM tags for the moment.
 
 ## Team
 

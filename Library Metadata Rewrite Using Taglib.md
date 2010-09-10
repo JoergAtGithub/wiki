@@ -22,12 +22,12 @@ structure](http://en.wikipedia.org/wiki/Work_breakdown_structure) (WBS)
 will become more detailed as the design above becomes more thorough and
 complete.
 
-    1 <del>Use TagLib to process the metadata of every file format we support</del>
-      1.1 <del>Implement parsing for TagLib's generic Tag interface.</del>
-      1.2 <del>Implement custom parsing for ID3v2 tags</del>
-      1.3 <del>"" APE tags</del>
-      1.4 <del>"" Xiph comment tags</del>
-      1.5 <del>"" MP4 tags</del>
+    1 Use TagLib to process the metadata of every file format we support
+      1.1 Implement parsing for TagLib's generic Tag interface.
+      1.2 Implement custom parsing for ID3v2 tags
+      1.3 "" APE tags
+      1.4 "" Xiph comment tags
+      1.5 "" MP4 tags
     2 Verify that nothing broke
       2.1 Verify new duration handling works
         2.1.1 In particular check MP3 VBR files

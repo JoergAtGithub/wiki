@@ -49,7 +49,7 @@ from available tag structures:
   - Average BPM
   - Overall Harmonic Key of a song
 
-# BPM
+### BPM
 
   - In ID3v1 tags, there is no possible way to store the BPM.
   - In ID3v2 tags, the BPM is stored in the 'TBPM' frame. This is part
@@ -63,7 +63,7 @@ from available tag structures:
   - In MP4 tags, we do not currently know the frame used for storing
     BPM, though tempo it is part of the MP4 standard.
 
-# Harmonic Key
+### Harmonic Key
 
   - In ID3v1 tags, there is no possible way to store the key.
   - In ID3v2 tags, the initial key of the song is stored in a 'TKEY'

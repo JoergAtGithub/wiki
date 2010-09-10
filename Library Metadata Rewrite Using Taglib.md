@@ -13,7 +13,22 @@ many different metadata formats. Currently it supports both ID3v1 and
 ID3v2 for MP3 files, Ogg Vorbis comments and ID3 tags and Vorbis
 comments in FLAC, MPC, Speex, WavPack and TrueAudio files.
 
-## Use Cases
+## Metadata to Extract
+
+The new metadata extraction system will extract the following metadata
+from every file regardless of file format:
+
+  - Artist
+  - Title
+  - Album
+  - Comment
+  - Genre
+  - Year (integer)
+  - Track Number (integer)
+
+Additionally, the system must extract the following properties of each
+audio file for use in the GUI to present to the user and for use by the
+Mixxx engine to calculate
 
 ## Work Breakdown
 

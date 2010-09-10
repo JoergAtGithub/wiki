@@ -18,17 +18,82 @@ comments in FLAC, MPC, Speex, WavPack and TrueAudio files.
 The new metadata extraction system will extract the following metadata
 from every file regardless of file format:
 
-  - Artist
-  - Title
-  - Album
-  - Comment
-  - Genre
+  - Artist (string) 
+  - Title (string) 
+  - Album (string)
+  - Comment (string)
+  - Genre (string)
   - Year (integer)
   - Track Number (integer)
 
 Additionally, the system must extract the following properties of each
 audio file for use in the GUI to present to the user and for use by the
 Mixxx engine to calculate
+
+  - Bitrate (int, best estimate) Only used for GUI purposes.
+  - Length in Seconds (int, best estimate) Only used for GUI purposes.
+  - Samplerate (int, must be correct) Used for various calculations
+    within Mixxx
+  - Channels (int) Not used. All SoundSource's upsample mono to stereo
+    in SoundSource::read()
+
+## Extra / Non-Standard Metadata
+
+Some metadata formats have standard (or non-standard) ways that people
+have gone about storing extra metadata such as the harmonic key of a
+song or its average beats per minute.
+
+When possible, Mixxx SoundSource's must extract the following metadata
+from available tag structures:
+
+  - Average BPM
+  - Overall Harmonic Key of a song
+
+# BPM
+
+  - In ID3v1 tags, there is no possible way to store the BPM.
+  - In ID3v2 tags, the BPM is stored in the 'TBPM' frame. This is part
+    of the [ID3v2.3
+    standard](http://www.id3.org/id3v2.3.0#head-42b02d20fb8bf48e38ec5415e34909945dd849dc).
+  - In Xiph comment tags, the BPM is conventionally stored in a field
+    with the key 'BPM'. It is also potentially stored under the key
+    'TEMPO'. 
+  - In APE metadata tags, we do not currently know the standard for
+    storing BPMs.
+  - In MP4 tags, we do not currently know the frame used for storing
+    BPM, though tempo it is part of the MP4 standard.
+
+# Harmonic Key
+
+  - In ID3v1 tags, there is no possible way to store the key.
+  - In ID3v2 tags, the initial key of the song is stored in a 'TKEY'
+    frame. This is part of the [ID3v2.3
+    standard](http://www.id3.org/id3v2.3.0#head-42b02d20fb8bf48e38ec5415e34909945dd849dc).
+  - **In Xiph comment tags, the conventional way to store the key is
+    currently unknown.** Is it 'KEY'?
+  - **In APE metadata tags, the conventional way to store the key is
+    currently unknown.**
+  - **In MP4 tags, the conventional way to store the key is currently
+    unknown.**
+
+## Integration with Other Software
+
+  - Serato Scratch Live stores and reads BPM and key tags from the
+    'TBPM' and 'TKEY' frames in ID3v2. SSL's handling of Xiph, APE, and
+    MP4 is unknown.
+  - Traktor Pro reads BPM and key tags from the 'TBPM' and 'TKEY' frames
+    in ID3v2. It is unknown if it writes to these tags. Traktor's
+    handling of Xiph, APE, and MP4 is unknown.
+  - Mixed In Key is configurable to write key tags to the 'TKEY' frame
+    in ID3v2. Its handling of Xiph, APE, and MP4 is unknown.
+  - Rapid Evolution writes to 'TKEY' and 'TBPM' frames in ID3v2 by
+    default. Its handling of Xiph, APE, and MP4 is unknown.
+  - iTunes currently reads 'TBPM' frames from ID3v2 by default. It does
+    not support FLAC or OGG. iTunes does not support the 'TKEY' frame.
+  - beaTunes supports 'TKEY' and 'TBPM' frames in ID3v2. Its handling of
+    Xiph, APE, and MP4 is unknown.
+  - MixMeister supports 'TBPM' frames in ID3v2. Its handling of Xiph,
+    APE, and MP4 is unknown.
 
 ## Work Breakdown
 

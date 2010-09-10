@@ -13,6 +13,8 @@ page.
   - [DVS mode](DVS%20mode)
   - [Aubio (misnamed Beat
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
+  - [Library Metadata Rewrite using
+    TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
 
 ## Implemented Specifications
 

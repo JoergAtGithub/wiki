@@ -76,24 +76,38 @@ from available tag structures:
   - **In MP4 tags, the conventional way to store the key is currently
     unknown.**
 
+### Cover Art
+
+TagLib makes it much easier to load cover art from the formats so this
+is a good avenue for a sideproject. It is not a requirement of this
+specification.
+
 ## Integration with Other Software
 
-  - Serato Scratch Live stores and reads BPM and key tags from the
-    'TBPM' and 'TKEY' frames in ID3v2. SSL's handling of Xiph, APE, and
-    MP4 is unknown.
-  - Traktor Pro reads BPM and key tags from the 'TBPM' and 'TKEY' frames
-    in ID3v2. It is unknown if it writes to these tags. Traktor's
-    handling of Xiph, APE, and MP4 is unknown.
-  - Mixed In Key is configurable to write key tags to the 'TKEY' frame
-    in ID3v2. Its handling of Xiph, APE, and MP4 is unknown.
-  - Rapid Evolution writes to 'TKEY' and 'TBPM' frames in ID3v2 by
-    default. Its handling of Xiph, APE, and MP4 is unknown.
-  - iTunes currently reads 'TBPM' frames from ID3v2 by default. It does
-    not support FLAC or OGG. iTunes does not support the 'TKEY' frame.
-  - beaTunes supports 'TKEY' and 'TBPM' frames in ID3v2. Its handling of
-    Xiph, APE, and MP4 is unknown.
-  - MixMeister supports 'TBPM' frames in ID3v2. Its handling of Xiph,
-    APE, and MP4 is unknown.
+  - Serato Scratch Live 
+  - Stores and reads BPM and key tags from the 'TBPM' and 'TKEY' frames
+    in ID3v2. 
+  - Handling of Xiph, APE, and MP4 is unknown.
+  - Traktor Pro
+  - Reads BPM and key tags from the 'TBPM' and 'TKEY' frames in ID3v2. 
+  - It is unknown if it writes to these tags. 
+  - Handling of Xiph, APE, and MP4 is unknown.
+  - Mixed In Key 
+  - Configurable to write key tags to the 'TKEY' frame in ID3v2. 
+  - Handling of Xiph, APE, and MP4 is unknown.
+  - Rapid Evolution 
+  - Writes to 'TKEY' and 'TBPM' frames in ID3v2 by default. 
+  - Handling of Xiph, APE, and MP4 is unknown.
+  - iTunes
+  - Reads 'TBPM' frames from ID3v2 by default. 
+  - Does not support FLAC or OGG. 
+  - Does not support the 'TKEY' frame.
+  - beaTunes 
+  - Supports 'TKEY' and 'TBPM' frames in ID3v2. 
+  - Handling of Xiph, APE, and MP4 is unknown.
+  - MixMeister
+  - Supports 'TBPM' frames in ID3v2. 
+  - Handling of Xiph, APE, and MP4 is unknown.
 
 ## Work Breakdown
 

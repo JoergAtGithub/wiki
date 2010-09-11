@@ -76,8 +76,6 @@ may be done already or irrelevant.
   - [Effect plugins](PluginIdeas)
   - Live input (switchable input at first, maybe a delay/pitchable input
     later)
-  - OSC controlled backend [Details from Old
-    Wiki](http://mixxx.sourceforge.net/wiki/index.php/OSC_Backend)
   - generic usb hid input support.
   - some more physically modeled turntable styles, with concepts of
     inertia, slipmat vector, and motor drive. [Details from Old

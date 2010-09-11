@@ -85,10 +85,11 @@ offsets. The algorithm for a lookup is such:
 
 ## Current Issues
 
-  - TrackInfoBeats is not stored in the Database
+  - ~~TrackInfoBeats is not stored in the Database~~ Implemented in the
+    latest changes.
   - Analysis takes 90%+ CPU and around 15 seconds for a typical
     Psytrance Song (not good for live performance).
-  - There is no fallback implementatio to fill in TrackInfoBeats with
+  - There is no fallback implementation to fill in TrackInfoBeats with
     SoundTouch.
 
 ## Notes

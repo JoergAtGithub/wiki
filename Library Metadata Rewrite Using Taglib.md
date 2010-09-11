@@ -28,7 +28,7 @@ from every file regardless of file format:
 
 Additionally, the system must extract the following properties of each
 audio file for use in the GUI to present to the user and for use by the
-Mixxx engine to calculate
+mixing engine.
 
   - Bitrate (int, best estimate) Only used for GUI purposes.
   - Length in Seconds (int, best estimate) Only used for GUI purposes.

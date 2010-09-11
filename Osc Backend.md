@@ -23,7 +23,7 @@ server excepts. I base this assumption on
 
 As such we could use this simple format:
 
-/\[Group\]/\[Key\]
+/Control/\[Group\]/\[Key\]
 
 We of course would expect the typical floating point values or integer
 values.
@@ -34,7 +34,20 @@ Therefore an example of many of our controls as OSC URLs:
   - /Channel1/rate
   - /Channel1/rate\_temp\_up
 
-etc...
+We prepend Control in the path so we can separate it from other possible
+entry points, ie: a direct to MIDI Script connection. This MIDI Script
+connection would look something like:
+
+/Script/\[Channel\]/
+
+That's all I got for that. The problems here are many:
+
+  - MIDI Script has no global state
+  - You can have duplicate machines hooked up
+
+One way around them would be to include the name of the device's
+instance itself in the path but that could be quite brittle. I'm sure
+Sean can provide some insight here.
 
 ## Team
 

@@ -8,7 +8,7 @@ first offered in Mixxx 1.8.0.
 
 |                                                |         |          |       |
 | ---------------------------------------------- | ------- | -------- | ----- |
-| Test                                           | Windows | Mac OS X | Linux |
+| \*Feature to Test\*                            | Windows | Mac OS X | Linux |
 | DND track from Library tab to sidebar playlist | ?       | ?        | ?     |
 | DND track from Library tab to sidebar crate    | ?       | ?        | ?     |
 

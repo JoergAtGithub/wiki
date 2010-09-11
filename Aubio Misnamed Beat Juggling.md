@@ -23,9 +23,7 @@ Currently it does:
   - Quantized loops
   - Jumping beats backwards and forwards (quantized and not...)
   - Rendering of the Beats on the Waveform
-
-Tracked beats are now saved in the database as a column in library as a
-loooooooong bitmap of integers.
+  - Saving Tracked beats (column in library table as a bitmap)
 
 ## Design
 

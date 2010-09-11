@@ -15,6 +15,7 @@ page.
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
   - [Library Metadata Rewrite using
     TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
+  - [OSC Backend](OSC%20Backend)
 
 ## Implemented Specifications
 

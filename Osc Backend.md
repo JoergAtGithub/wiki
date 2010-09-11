@@ -40,14 +40,7 @@ connection would look something like:
 
 /Script/\[Channel\]/
 
-That's all I got for that. The problems here are many:
-
-  - MIDI Script has no global state
-  - You can have duplicate machines hooked up
-
-One way around them would be to include the name of the device's
-instance itself in the path but that could be quite brittle. I'm sure
-Sean can provide some insight here.
+This would link to a script instance specific to the OSC backend.
 
 ## Team
 

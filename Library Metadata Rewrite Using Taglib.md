@@ -56,9 +56,8 @@ metadata from available tag structures:
     standard](http://www.id3.org/id3v2.3.0#head-42b02d20fb8bf48e38ec5415e34909945dd849dc).
   - In Xiph comment tags, the BPM is conventionally stored in a field
     with the key 'TEMPO' but has also been seen as 'BPM'. 
-  - In APE metadata tags, we do not currently know the standard for
-    storing BPMs.
-  - In MP4 tags, the tempo is stored in a 'tmpo' frame. This is part of
+  - In APE metadata tags, the BPM is stored in an atom named 'BPM'.
+  - In MP4 tags, the tempo is stored in a 'tmpo' atom. This is part of
     the MP4 standard.
 
 ### Harmonic Key

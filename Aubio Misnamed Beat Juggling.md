@@ -24,6 +24,11 @@ Currently it does:
   - Jumping beats backwards and forwards (quantized and not...)
   - Rendering of the Beats on the Waveform
 
+Tracked beats are now saved in the database as a column in library as a
+loooooooong bitmap of integers.
+
+## Design
+
 Analyzed beats are stored in a TrackInfoBeats class. The class
 declaration is the following:
 

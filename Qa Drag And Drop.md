@@ -29,6 +29,4 @@ first offered in Mixxx 1.8.0.
 | DND track from Browse view to sidebar AutoDJ     | ?       | ?        | ?     |
 | Verify cannot drag tracks in Missing view at all | ?       | ?        | ?     |
 
-^ Verify cannot
-
 ## Mixxx 1.8.0 Test Grid

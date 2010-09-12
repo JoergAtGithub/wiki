@@ -13,7 +13,7 @@ as intended.
 |                                                                                                                  |    |      |
 | ---------------------------------------------------------------------------------------------------------------- | -- | ---- |
 | Behaviour to Test                                                                                                | VE | PITS |
-| Pitch Shift a Track down by 90% \[1\]                                                                            | ?  |      |
+| Pitch Shift a Track down by 90% \[1\]                                                                            | ?  | ?    |
 | Pitch Shift a Track up by 90% \[1\]                                                                              | ?  | ?    |
 | Pitch bend a track down to the minimum with 90% pitch range \[1\]                                                | ?  | ?    |
 | Pitch bend a track up to the maximum with 90% pitch range \[1\]                                                  | ?  | ?    |

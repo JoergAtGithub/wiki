@@ -20,8 +20,6 @@ as intended.
 | Pitch shift a track up and down with 90% pitch range \[1\]                                                       | ?     |
 | Mix a track at 121 BPM on deck 1 with a track at 120 BPM on deck 2 by shifting the pitch on deck 2 by 0.8% \[2\] | ?     |
 | Mix a track at 146 BPM on deck 1 with a track at 145 BPM on deck 2 by shifting the pitch on deck 2 by 0.7% \[2\] | ?     |
-|                                                                                                                  | ?     |
-|                                                                                                                  | ?     |
 
 \[1\] Listen for crackles, sharp transients or harmonic distortion \[2\]
 Beat should be in sync for a decent amount of time but not perfect.

@@ -15,7 +15,7 @@ Scanner are working as intended.
 | Move the file back                                            | Should not see a duplicate entry for the file                            | ?       | ?        | ?     |
 | Add a song to a library subdirectory, rescan                  | Song should appear in Mixxx library                                      | ?       | ?        | ?     |
 | Cancel a fresh library scan                                   | some tracks should appear, no tracks should be marked as missing         | ?       | ?        | ?     |
-| After a fresh scan, cancel a rescan                           | no tracks should be marked as missing                                    | ?       | ?        | ?     |
+| After a fresh scan, cancel a rescan half-way through          | no tracks should be marked as missing or disappear                       | ?       | ?        | ?     |
 | Delete a song from disk, rescan                               | Song should be marked as missing                                         | ?       | ?        | ?     |
 | Remove song from Mixxx library (right-click-\>Remove), rescan | Song should not appear after rescan                                      | ?       | ?        | ?     |
 | Drag-and-drop removed song onto Mixxx library                 | Song should be re-added to Mixxx                                         | ?       | ?        | ?     |

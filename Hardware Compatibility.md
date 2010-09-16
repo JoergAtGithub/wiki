@@ -16,15 +16,15 @@ devices in Mixxx: **Mixxx Certified Support** and **Community Support**.
 
 ### Mixxx Certified Mappings
 
-|                                                         |                          |                          |                                                                                                                                       |
-| ------------------------------------------------------- | ------------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Device                                                  | Windows                  | Mac OS X                 | Linux                                                                                                                                 |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console) | Yes (1.7.0) +            | Yes (1.7.0) +            | Yes (1.7.0) + [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
-| [Hercules DJ Console RMX](Hercules%20PC%20DJ%20Console) | Yes (1.7.0) +            | Yes (1.7.0 Untested) +   | Yes (1.7.0) + [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
-| [Hercules DJ Control MP3 e2](Hercules_PC_DJ_Console)    | Yes (1.8.0) +            | Yes (1.8.0) +            | Yes (1.8.0) +                                                                                                                         |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                      | Yes (1.6.1)\[1\] (1.7.0) | Yes (1.6.1)\[2\] (1.7.0) | Yes (1.7.0)                                                                                                                           |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                      | Yes (1.7.0)              | Yes (1.7.0)              | Yes (1.7.0)                                                                                                                           |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)      | Yes (1.6.0)              | Yes (1.6.0)              | Yes (1.6.0)                                                                                                                           |
+|                                                         |                           |                           |                                                                                                                                      |
+| ------------------------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Device                                                  | Windows                   | Mac OS X                  | Linux                                                                                                                                |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console) | Yes (1.7.0+)              | Yes (1.7.0+)              | Yes (1.7.0+) [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
+| [Hercules DJ Console RMX](Hercules%20PC%20DJ%20Console) | Yes (1.7.0+)              | Yes (1.7.0+)              | Yes (1.7.0+) [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
+| [Hercules DJ Control MP3 e2](Hercules_PC_DJ_Console)    | Yes (1.8.0+)              | Yes (1.8.0+)              | Yes (1.8.0+)                                                                                                                         |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                      | Yes (1.6.1)\[1\] (1.7.0+) | Yes (1.6.1)\[2\] (1.7.0+) | Yes (1.7.0+)                                                                                                                         |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                      | Yes (1.7.0+)              | Yes (1.7.0+)              | Yes (1.7.0+)                                                                                                                         |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)      | Yes (1.6.0+)              | Yes (1.6.0+)              | Yes (1.6.0+)                                                                                                                         |
 
 ### Community Supported Mappings
 

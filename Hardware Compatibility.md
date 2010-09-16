@@ -68,6 +68,40 @@ mapping XML file or script file. For more information, please see our
 Format](MIDI%20Controller%20Mapping%20File%20Format) and our [MIDI
 Scripting](MIDI%20Scripting) pages.
 
+### Devices We Don't Have Mappings For
+
+#### Do you own one of these? Consider contributing back to Mixxx by making a mapping
+
+|                           |
+| ------------------------- |
+| Device                    |
+| American Audio VMS4       |
+| Allen and Heath Xone:1D   |
+| Allen and Heath Xone:2D   |
+| Allen and Heath Xone:3D   |
+| Allen and Heath Xone:4D   |
+| Allen and Heath Xone:DX   |
+| Ecler Evo4                |
+| Ecler Evo5                |
+| Korg NanoPad              |
+| Korg NanoKontrol          |
+| Korg NanoKey              |
+| Korg PadKontrol           |
+| Vestax VCI-300            |
+| Vestax Spin               |
+| Vestax Typhoon            |
+| Vestax TR-1               |
+| Vestax VCM-100            |
+| Vestax VCM-600            |
+| Numark Stealth Control    |
+| Numark Omni Control       |
+| Numark MixDeck            |
+| Numark Mixmeister Control |
+| Numark MixTrack           |
+| Numark iDJ2               |
+| Numark NS7                |
+| Numark NSFX               |
+
 ## Sound cards
 
 Mixxx is generally compatible with all sound cards that are supported by

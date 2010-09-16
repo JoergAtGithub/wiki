@@ -152,7 +152,7 @@ of Mixxx users do.
 
 1.  DaRouter Required
 
-2.  with DaRouter
+2.  DaRouter Required
 
 3.  basic support
 

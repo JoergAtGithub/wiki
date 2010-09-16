@@ -11,7 +11,9 @@ listed below.
 team has no way of judging the quality of the mappings because we don't
 own the devices ourselves.** There are two different levels of support
 for devices in Mixxx: **Mixxx Certified Support** and **Community
-Support**.
+Support**. Mixxx Certified mappings whose quality is verified by the
+Mixxx Team. Community Supported mappings are mappings provided by the
+Mixxx Community, but the Mixxx team is unable the verify their quality.
 
 ### Mixxx Certified Mappings
 

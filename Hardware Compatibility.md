@@ -7,12 +7,11 @@ you simply need a mapping file to tell Mixxx how to understand it. Mixxx
 comes bundled with a number of MIDI mapping presets for the devices
 listed below.
 
-### How good are the mappings? We don't know\!
-
-Often times these mappings are contributed by users, but the Mixxx team
-has no way of judging the quality of the mappings because we don't own
-the devices ourselves. There are two different levels of support for
-devices in Mixxx: **Mixxx Certified Support** and **Community Support**.
+**Often times these mappings are contributed by users, but the Mixxx
+team has no way of judging the quality of the mappings because we don't
+own the devices ourselves.** There are two different levels of support
+for devices in Mixxx: **Mixxx Certified Support** and **Community
+Support**.
 
 ### Mixxx Certified Mappings
 

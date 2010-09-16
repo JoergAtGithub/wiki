@@ -150,7 +150,7 @@ can use the "front" output as your master output, and plug your
 headphones into the "rear" output for cueing. This is what the majority
 of Mixxx users do.
 
-1.  with DaRouter
+1.  DaRouter Required
 
 2.  with DaRouter
 

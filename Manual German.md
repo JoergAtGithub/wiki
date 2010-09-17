@@ -576,38 +576,42 @@ Mixxx's Master Signal kann folgendermaßen in Echtzeit als Audiodatei
 
 Durch Shortcuts können Sie Mixxx mit der Tastatur steuern.
 
-| Funktion           | Deck 1   | Deck 2   | Master |
-| ------------------ | -------- | -------- | ------ |
-| Crossfader Links   |          |          | H      |
-| Crossfader Rechts  |          |          | G      |
-| Seek Backwards     | A        | J        |        |
-| Seek Forwards      | S        | K        |        |
-| Cue                | E        | O        |        |
-| Cue Go-to-and-stop | Shift+E  | Shift+O  |        |
-| Cuepunkt setzen    | Shift+D  | Shift+L  |        |
-| Tempo (BPM) Sync   | 1        | 0        |        |
-| Tempo hoch         | F1       |          |        |
-| Tempo runter       | F2       |          |        |
-| Tempo fein runter  | Shift+F1 | Shift+F5 |        |
-| Tempo fein hoch    | Shift+F2 | Shift+F6 |        |
-| Anschieben         | Shift+F3 | Shift+F7 |        |
-| Abstoppen          | Shift+F4 | Shift+F8 |        |
-| Vorhören (PFL)     | T        | Y        |        |
-| Bass EQ Kill       | 5        | 6        |        |
-| Mitten EQ Kill     | 4        | 7        |        |
-| Höhen EQ Kill      | 3        | 8        |        |
-| Flanger            | 2        | 9        |        |
-| BPM Tap Tempo      | Q        | U        |        |
-| Hotcue 1           | Z        | M        |        |
-| Hotcue 2           | X        | ,        |        |
-| Hotcue 3           | C        | .        |        |
-| Hotcue 4           | V        | /        |        |
-| Hotcue 1 löschen   | Shift+Z  | Shift+M  |        |
-| Hotcue 2 löschen   | Shift+X  | Shift+,  |        |
-| Hotcue 3 löschen   | Shift+C  | Shift+.  |        |
-| Hotcue 4 löschen   | Shift+V  | Shift+/  |        |
+| Funktion                      | Deck 1   | Deck 2   | Master |
+| ----------------------------- | -------- | -------- | ------ |
+| Crossfader Links              |          |          | H      |
+| Crossfader Rechts             |          |          | G      |
+| Wiedergabe                    | D        | L        |        |
+| Cuepunkt setzen               | Shift+D  | Shift+L  |        |
+| Schnell Rückwärts             | A        | J        |        |
+| Rückwärts                     | Shift+A  | Shift+J  |        |
+| Schnell Vorwärts              | S        | K        |        |
+| Zum Cuepunkt                  | E        | O        |        |
+| Zum Cuepunkt und stop         | Shift+E  | Shift+O  |        |
+| Tempo (BPM) Sync              | 1        | 0        |        |
+| Tempo runter                  | F1       | F5       |        |
+| Tempo hoch                    | F2       | F6       |        |
+| Tempo fein runter             | Shift+F1 | Shift+F5 |        |
+| Tempo fein hoch               | Shift+F2 | Shift+F6 |        |
+| Tempo runter (Abbremsen)      | F3       | F7       |        |
+| Tempo hoch (Anschieben)       | F4       | F8       |        |
+| Tempo fein runter (Abbremsen) | Shift+F3 | Shift+F7 |        |
+| Tempo fein hoch (Anschieben)  | Shift+F4 | Shift+F8 |        |
+| Vorhören (PFL)                | T        | Y        |        |
+| Bass EQ Kill                  | 5        | 6        |        |
+| Mitten EQ Kill                | 4        | 7        |        |
+| Höhen EQ Kill                 | 3        | 8        |        |
+| Flanger                       | 2        | 9        |        |
+| BPM Tap Tempo                 | Q        | U        |        |
+| Hotcue 1                      | Z        | M        |        |
+| Hotcue 2                      | X        | ,        |        |
+| Hotcue 3                      | C        | .        |        |
+| Hotcue 4                      | V        | /        |        |
+| Hotcue 1 löschen              | Shift+Z  | Shift+M  |        |
+| Hotcue 2 löschen              | Shift+X  | Shift+\< |        |
+| Hotcue 3 löschen              | Shift+C  | Shift+\> |        |
+| Hotcue 4 löschen              | Shift+V  | Shift+?  |        |
 
-FIXME*(missing keys (play,reverse++) & de-de keyboard layout)*FIXME
+FIXME// change table for de-de keyboard layout//FIXME
 
 ### Quick Reference
 

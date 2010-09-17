@@ -75,24 +75,18 @@ Scripting](MIDI%20Scripting) pages.
 |                           |
 | ------------------------- |
 | Device                    |
-| American Audio VMS4       |
 | Allen and Heath Xone:1D   |
 | Allen and Heath Xone:2D   |
 | Allen and Heath Xone:3D   |
 | Allen and Heath Xone:4D   |
 | Allen and Heath Xone:DX   |
+| American Audio VMS4       |
 | Ecler Evo4                |
 | Ecler Evo5                |
 | Korg NanoPad              |
 | Korg NanoKontrol          |
 | Korg NanoKey              |
 | Korg PadKontrol           |
-| Vestax VCI-300            |
-| Vestax Spin               |
-| Vestax Typhoon            |
-| Vestax TR-1               |
-| Vestax VCM-100            |
-| Vestax VCM-600            |
 | Numark Stealth Control    |
 | Numark Omni Control       |
 | Numark MixDeck            |
@@ -101,6 +95,12 @@ Scripting](MIDI%20Scripting) pages.
 | Numark iDJ2               |
 | Numark NS7                |
 | Numark NSFX               |
+| Vestax VCI-300            |
+| Vestax Spin               |
+| Vestax Typhoon            |
+| Vestax TR-1               |
+| Vestax VCM-100            |
+| Vestax VCM-600            |
 
 ## Sound cards
 

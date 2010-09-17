@@ -565,9 +565,8 @@ linear PCM WAV (RIFF) sound file by doing the following:
 
 ## Keyboard Shortcuts
 
-|                             |          |          |        |
-| --------------------------- | -------- | -------- | ------ |
 | Function                    | Deck 1   | Deck 2   | Master |
+| --------------------------- | -------- | -------- | ------ |
 | Crossfade Left              |          |          | H      |
 | Crossfade Right             |          |          | G      |
 | Seek Backwards              | A        | J        |        |

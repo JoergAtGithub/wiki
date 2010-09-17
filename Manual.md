@@ -601,10 +601,10 @@ linear PCM WAV (RIFF) sound file by doing the following:
 
 ### Quick Reference
 
-[[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]
+[Printable (large) keyboard reference
+sheet](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
 
-[Printable large
-version](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
+[[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]
 
 ### Customizing
 

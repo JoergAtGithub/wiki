@@ -568,36 +568,40 @@ linear PCM WAV (RIFF) sound file by doing the following:
 
 ## Keyboard Shortcuts
 
-| Function                    | Deck 1   | Deck 2   | Master |
-| --------------------------- | -------- | -------- | ------ |
-| Crossfade Left              |          |          | H      |
-| Crossfade Right             |          |          | G      |
-| Seek Backwards              | A        | J        |        |
-| Seek Forwards               | S        | K        |        |
-| Cue                         | E        | O        |        |
-| Cue Go-to-and-stop          | Shift+E  | Shift+O  |        |
-| Set Cuepoint                | Shift+D  | Shift+L  |        |
-| Tempo (BPM) Sync            | 1        | 0        |        |
-| Tempo Adjust Down           | F1       |          |        |
-| Tempo Adjust Up             | F2       |          |        |
-| Small Tempo Adjust Down     | Shift+F1 | Shift+F5 |        |
-| Small Tempo Adjust Up       | Shift+F2 | Shift+F6 |        |
-| Temporary Tempo Adjust Up   | Shift+F3 | Shift+F7 |        |
-| Temporary Tempo Adjust Down | Shift+F4 | Shift+F8 |        |
-| Headphone Cue (PFL)         | T        | Y        |        |
-| Low EQ Kill                 | 5        | 6        |        |
-| Mid EQ Kill                 | 4        | 7        |        |
-| High EQ Kill                | 3        | 8        |        |
-| Flanger                     | 2        | 9        |        |
-| BPM Tap Tempo Adjust        | Q        | U        |        |
-| Hotcue 1                    | Z        | M        |        |
-| Hotcue 2                    | X        | ,        |        |
-| Hotcue 3                    | C        | .        |        |
-| Hotcue 4                    | V        | /        |        |
-| Clear Hotcue 1              | Shift+Z  | Shift+M  |        |
-| Clear Hotcue 2              | Shift+X  | Shift+,  |        |
-| Clear Hotcue 3              | Shift+C  | Shift+.  |        |
-| Clear Hotcue 4              | Shift+V  | Shift+/  |        |
+| Function                          | Deck 1   | Deck 2   | Master |
+| --------------------------------- | -------- | -------- | ------ |
+| Crossfade Left                    |          |          | H      |
+| Crossfade Right                   |          |          | G      |
+| Playback                          | D        | L        |        |
+| Set Cuepoint                      | Shift+D  | Shift+L  |        |
+| Seek Backwards                    | A        | J        |        |
+| Reverse Playback                  | Shift+A  | Shift+J  |        |
+| Seek Forwards                     | S        | K        |        |
+| Cue                               | E        | O        |        |
+| Cue Go-to-and-stop                | Shift+E  | Shift+O  |        |
+| Tempo (BPM) Sync                  | 1        | 0        |        |
+| Tempo Adjust Down                 | F1       | F5       |        |
+| Tempo Adjust Up                   | F2       | F6       |        |
+| Small Tempo Adjust Down           | Shift+F1 | Shift+F5 |        |
+| Small Tempo Adjust Up             | Shift+F2 | Shift+F6 |        |
+| Temporary Tempo Adjust Down       | F3       | F7       |        |
+| Temporary Tempo Adjust Up         | F4       | F8       |        |
+| Small Temporary Tempo Adjust Down | Shift+F3 | Shift+F7 |        |
+| Small Temporary Tempo Adjust Up   | Shift+F4 | Shift+F8 |        |
+| Headphone Cue (PFL)               | T        | Y        |        |
+| Low EQ Kill                       | 5        | 6        |        |
+| Mid EQ Kill                       | 4        | 7        |        |
+| High EQ Kill                      | 3        | 8        |        |
+| Flanger                           | 2        | 9        |        |
+| BPM Tap Tempo Adjust              | Q        | U        |        |
+| Hotcue 1                          | Z        | M        |        |
+| Hotcue 2                          | X        | ,        |        |
+| Hotcue 3                          | C        | .        |        |
+| Hotcue 4                          | V        | /        |        |
+| Clear Hotcue 1                    | Shift+Z  | Shift+M  |        |
+| Clear Hotcue 2                    | Shift+X  | Shift+\< |        |
+| Clear Hotcue 3                    | Shift+C  | Shift+\> |        |
+| Clear Hotcue 4                    | Shift+V  | Shift+?  |        |
 
 ### Quick Reference
 

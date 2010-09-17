@@ -612,25 +612,50 @@ control audio applications, like Mixxx. Many DJs prefer the "hands-on"
 feel of a MIDI controller with Mixxx because it can feel similar to
 using a real mixer and turntables.
 
-As of Mixxx 1.7.0, the following MIDI devices are supported:
+Mixxx can work with any MIDI controller that has drivers for your OS, as
+long as there is a MIDI mapping file to tell Mixxx how to understand it.
+Mixxx comes bundled with a number of MIDI mapping presets for the
+devices listed below.
 
-  - Hercules DJ Console MK2
-  - Hercules DJ Console MP3
+Often times these mappings are contributed by users, but the Mixxx team
+has no way of judging the quality of the mappings because we don't own
+the devices ourselves. There are two different levels of support for
+devices in Mixxx: Mixxx Certified Support and Community Support. Mixxx
+Certified mappings are verified by the Mixxx Team. Community Supported
+mappings are mappings provided by the Mixxx Community, but the Mixxx
+team is unable the verify their quality.
+
+### Mixxx Certified Mappings
+
   - Hercules DJ Console RMX
+  - Hercules DJ Console MK2
+  - Hercules DJ Control MP3 e2
+  - Stanton SCS.3d 
+  - Stanton SCS.3m
+  - Stanton SCS.1m
+  - M-Audio X-Session Pro
+  - DJ TechTools MIDIFighter 
+
+### Community Supported Mappings
+
+These mappings have been verified as working by the Mixxx community.
+However, they might have bugs or rough edges. If you run into issues
+with these mappings, please file a bug on our [bug
+tracker](http://bugs.launchpad.net/mixxx) or tell us about it on our
+mailing list, forums, or IRC channel.
+
+  - Hercules DJ Console MP3
   - Hercules DJ Control Steel 
   - Hercules DJ Console Mac Edition
-  - Stanton SCS.3d 
-  - Stanton SCS.1m
   - Mixman DM2 
-  - Tascam US-428
-  - M-Audio X-Session Pro
+  - Tascam US-428 
   - M-Audio Xponent
   - Evolution X-Session
   - Ecler NUO4
   - FaderFox DJ2
   - Vestax VCI-100
   - Numark Total Control
-  - Behringer BCD3000 (\*no jog wheel support yet)
+  - Behringer BCD3000
   - Akai MPD24
 
 Before purchasing a controller to use with Mixxx, please consult our

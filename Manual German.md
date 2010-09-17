@@ -574,7 +574,7 @@ Mixxx's Master Signal kann folgendermaßen in Echtzeit als Audiodatei
 
 ## Keyboard Shortcuts
 
-Durch Shortcuts können Sie Mixxx mit der Tastatur steuern.
+Durch Shortcuts kann Mixxx mit der Tastatur gesteuert werden.
 
 | Funktion                      | Deck 1   | Deck 2   | Master |
 | ----------------------------- | -------- | -------- | ------ |
@@ -611,23 +611,25 @@ Durch Shortcuts können Sie Mixxx mit der Tastatur steuern.
 | Hotcue 3 löschen              | Shift+C  | Shift+\> |        |
 | Hotcue 4 löschen              | Shift+V  | Shift+?  |        |
 
-FIXME// change table for de-de keyboard layout//FIXME
+**Die Anordnung der Shortcuts von Mixxx basieren auf einem
+<span class="underline">englische</span> Keyboard. Es muss also die
+Konfigurationsdatei geändert werden um sinnvoll mit einem deutschen
+Keyboard zu arbeiten oder einige Shortcuts sind vertauscht.**
 
-### Quick Reference
+Den Keyboard Chart für die deutsche Tastatur incl. Druckversion gibt es
+[hier im Forum](http://mixxx.org/forums/viewforum.php?f=7).
 
-[Printable (large) keyboard reference
-sheet](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
+### Schnellreferenz
+
+[Druckversion - Keyboard Chart (für englische
+Tastatur)](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
 
 [[[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
-FIXME*(picture & download for de-de keyboard layout)*FIXME
 
 ### Anpassen
 
-Die Shortcuts sind in einer Textdatei gespeichert die Sie frei verändern
-können. Wichtig: Mixxx hat standardmäßig Shortcuts für die **englische**
-Tastater. Es muss also die Konfigurationsdatei geändert werden um
-sinnvoll mit einem deutschen Keyboard zu arbeiten oder einige Shortcuts
-sind vertauscht.FIXME*(missing forum Link de-de keyboard layout)*FIXME
+Die Shortcuts sind in einer Textdatei gespeichert die frei verändert
+werden kann.
 
 Linux: /usr/share/mixxx/keyboard/Standard.kbd.cfg
 

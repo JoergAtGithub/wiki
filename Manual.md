@@ -105,7 +105,9 @@ The Hot Cue buttons allow you to place additional cue-points inside a song, whic
 <td><img src="/manual/uioverview/ui_tempo.png" /></td>
 <td>The tempo controls allow you to slow down and speed up a song. This is frequently useful for <a href="manual#beatmatching_and_mixing">beatmatching</a> songs when mixing. The RATE slider changes the tempo of a song when it is moved. The PERM buttons apply fine adjustment to the RATE slider, and the TEMP buttons apply a temporary pitch-bend when depressed. The amount by which the PERM and TEMP buttons alter the pitch of the track can be changed in the <em>Options-&gt;Preferences-&gt;Interface</em> menu. The SYNC button attempts to automatically match the tempo of the song in the corresponding channel with tempo of the song in the other channel, based on the calculated BPM.<br />
 <br />
-The IN, OUT, and RELOOP/EXIT buttons let you create a loop within a song. The IN button places a starting marker for a loop at the current playback position, and the OUT button places an ending marker and begins looping. The RELOOP/EXIT button is used to break out of a loop if you're in one, or seek back inside the loop if you're outside of it. Loops can be very useful when you're approaching the end of a song, but you don't have the next song ready yet. Try placing a loop in a song's outro during your next mix.</td>
+The IN, OUT, and RELOOP/EXIT buttons let you create a loop within a song. The IN button places a starting marker for a loop at the current playback position, and the OUT button places an ending marker and begins looping. The RELOOP/EXIT button is used to break out of a loop if you're in one, or seek back inside the loop if you're outside of it. Loops can be very useful when you're approaching the end of a song, but you don't have the next song ready yet. Try placing a loop in a song's outro during your next mix.<br />
+<br />
+See also the SYNC button below.</td>
 </tr>
 </tbody>
 </table>

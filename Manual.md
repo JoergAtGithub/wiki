@@ -599,6 +599,12 @@ linear PCM WAV (RIFF) sound file by doing the following:
 | Clear Hotcue 3              | Shift+C  | Shift+.  |        |
 | Clear Hotcue 4              | Shift+V  | Shift+/  |        |
 
+### Quick Reference
+
+[[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]
+
+### Customizing
+
 The shortcuts are defined in a text file, and can be changed by the user
 -
 

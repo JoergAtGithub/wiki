@@ -565,7 +565,37 @@ linear PCM WAV (RIFF) sound file by doing the following:
 
 ## Keyboard Shortcuts
 
-[[/media/mixxx.gif|]]
+|                             |          |          |        |
+| --------------------------- | -------- | -------- | ------ |
+| Function                    | Deck 1   | Deck 2   | Master |
+| Crossfade Left              |          |          | H      |
+| Crossfade Right             |          |          | G      |
+| Seek Backwards              | A        | J        |        |
+| Seek Forwards               | S        | K        |        |
+| Cue                         | E        | O        |        |
+| Cue Go-to-and-stop          | Shift+E  | Shift+O  |        |
+| Set Cuepoint                | Shift+D  | Shift+L  |        |
+| Tempo (BPM) Sync            | 1        | 0        |        |
+| Tempo Adjust Down           | F1       |          |        |
+| Tempo Adjust Up             | F2       |          |        |
+| Small Tempo Adjust Down     | Shift+F1 | Shift+F5 |        |
+| Small Tempo Adjust Up       | Shift+F2 | Shift+F6 |        |
+| Temporary Tempo Adjust Up   | Shift+F3 | Shift+F7 |        |
+| Temporary Tempo Adjust Down | Shift+F4 | Shift+F8 |        |
+| Headphone Cue (PFL)         | T        | Y        |        |
+| Low EQ Kill                 | 5        | 6        |        |
+| Mid EQ Kill                 | 4        | 7        |        |
+| High EQ Kill                | 3        | 8        |        |
+| Flanger                     | 2        | 9        |        |
+| BPM Tap Tempo Adjust        | Q        | U        |        |
+| Hotcue 1                    | Z        | M        |        |
+| Hotcue 2                    | X        | ,        |        |
+| Hotcue 3                    | C        | .        |        |
+| Hotcue 4                    | V        | /        |        |
+| Clear Hotcue 1              | Shift+Z  | Shift+M  |        |
+| Clear Hotcue 2              | Shift+X  | Shift+,  |        |
+| Clear Hotcue 3              | Shift+C  | Shift+.  |        |
+| Clear Hotcue 4              | Shift+V  | Shift+/  |        |
 
 The shortcuts are defined in a text file, and can be changed by the user
 -

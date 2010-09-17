@@ -174,8 +174,31 @@ The Depth, Delay and LFO knobs control the flanger. A flanger is an effect that 
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_library.png" /></td>
-<td>The library manages all your music files. This is where you can find the tracks you want to play and load them into a channel. Alternatively, you can also use your external filemanager and drop files onto the waveform display. The Library offers different viewing modes that can be switched with the combobox in the upper left corner. The second available viewing mode is the Play Queue which is like a playlist for the tracks you plan to play next. The Browse mode basically works like a usual file-manager and should be self explaining. In the Playlist mode, you can view and load playlists you've created. There is also a search function that filters the current view in realtime. The main viewing mode is the library view, which shows all files in your library. One must first create a library to use this view, but this will be done automatically during the first time Mixxx is run. If you want to rebuild your library (for example because you added or moved files) you can do this with \\Library-&gt;Rescan Library<br />
-in the menu. To load a track into a player, you can either simply drag it to the waveform display or use the context menu (right-click on a track). The context menu also allows you to add a track to the play queue or a playlist (the playlist must be created first). Lastly, the context menu allows one to access a song's properties to check ID3 tags or set the BPM of the track manually.</td>
+</tr>
+<tr class="even">
+<td>The library manages all your music files. This is where you can find the tracks you want to play and load them into a channel. Alternatively, you can also use your external filemanager and drop files onto the waveform display. The sidebar on the left contains different collections of music. The view on the right displays the songs in those collections.<br />
+<br />
+The Search box in the top-left the current view for songs that match your query.<br />
+<br />
+The Library is displays a sortable list of all the songs in your music library. Mixxx imports your music library automatically when it is run for the first time, and automatically detects newly added songs on each subsequent run. If you want to manually refresh your library without exiting (for example because you added or moved files) you can do this with <em>Library-&gt;Rescan Library</em> in the menu.<br />
+<br />
+To load a track into a player, you can either simply drag it to the waveform display or use the context menu (right-click on a track). The right-click context menu also allows you to add a track to the Auto DJ queue, playlists, or crates.<br />
+<br />
+The Missing Songs view is accessible by expanding Library tree item in the sidebar. Any songs that were previously loaded into your library, but were later detected to be missing from your hard disk by Mixxx will appear here. Mixxx does not automatically delete records of missing songs so that extra metadata Mixxx might have (such as hot cues and the BPM) will not be lost if the file is replaced.<br />
+<br />
+The Featured Artists view contains free promotional music that may come bundled with your version of Mixxx. These songs are DJ friendly, and you are licensed to perform live with these songs at any event you'd like.<br />
+<br />
+The Auto DJ queue is a special playlist that contains extra controls for enabling automatic mixing. Toggling the "Enable Auto DJ" button within this view will tell Mixxx to automatically load the next song from this playlist when the current song is nearly finished, and crossfade into it. Mixxx will continue to automatically mix until the Auto DJ playlist is empty.<br />
+<br />
+Playlists can be created by right-clicking on the "Playlists" sidebar item, and selecting "New Playlist". Songs can be added to a playlist by finding them in the Library, and drag-and-dropping them onto the name of a playlist in the sidebar, or by selecting a song in the library and right-clicking on it. Playlists are not directly loadable into Mixxx's players as Mixxx is primarily intended for live, attended performance use. However, you can add the contents of a playlist to the Auto DJ queue, and use automatic mixing.<br />
+<br />
+Crates are unordered collections of songs, and are similar to playlists. A crate can be created by right-clicking on "Crates" in the sidebar, and selecting "New Crate".<br />
+<br />
+Browse mode works like a file-manager and allows you to load songs that are not necessarily already in your Mixxx library.<br />
+<br />
+The Analyze view allows you to see a list of recently added tracks, and to run BPM detection on them in advance.<br />
+<br />
+The iTunes (Windows and Mac OS X only) and Rhythmbox (Linux only) views allow you to view the music libraries you have created in 3rd party applications.</td>
 </tr>
 </tbody>
 </table>

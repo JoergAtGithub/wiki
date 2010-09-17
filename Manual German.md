@@ -5,7 +5,7 @@ Dieses Handbuch ist außerdem verfügbar in:
   - [Englisch (English)](manual)
   - [Spanisch (Español)](manual_spanish)
 
-# Mixxx 1.7 Handbuch
+# Mixxx 1.8 Handbuch
 
 # Inhaltsverzeichnis
 
@@ -49,8 +49,11 @@ Dieses Handbuch ist außerdem verfügbar in:
 
 Mixxx ist eine für DJ\`s entwickelte Software die das Mixen von
 Audiodateien ermöglicht. Mixxx unterstützt die Wiedergabe von MP3, OGG,
-FLAC sowie WAVE Dateien. Mixxx kann mit diversen DJ MIDI-Controllern
-sowie Plattenspielern und Timecode Vinyls gesteuert werden.
+FLAC, WAVE und AIFF Dateien. Weitere Formate werden durch
+[Plugins](add-ons) unterstützt. Mixxx kann mit diversen [DJ
+MIDI-Controllern](manual_german#MIDI-Controller) sowie Plattenspielern
+und [Timecode Vinyls](manual_german#Vinyl%20Steuerungl) gesteuert
+werden.
 
 # Installation
 
@@ -58,8 +61,8 @@ sowie Plattenspielern und Timecode Vinyls gesteuert werden.
 
 Windows Nutzer installieren Mixxx per Doppelklick auf die ausführbahre
 Mixxx Installationdatei. Das Setup-Programm führt dann durch den
-Installationsvorgang. Mixxx ist lauffähig auf Windows XP und Vista, 32
-und 64 bit. (Sollte auch auf Windows 2000 laufen.)
+Installationsvorgang. Mixxx ist lauffähig auf Windows XP, Vista und
+Windows 7. Mixxx bietet spezielle 32 und 64 bit Versionen.
 
 ## Linux
 
@@ -86,25 +89,36 @@ ist schlicht gestaltet, so das sie beim live DJing einfach zu bedienen
 ist. Dieser Abschnitt beschreibt die wichtigsten Merkmale der
 Oberfläche.
 
-## Wiedergabesteuerung
+## Wiedergabesteuerung und Hotcues
 
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_playback.png|]] | Diese Steuerelemente ermöglichen es einen Track wiederzugeben, zu pausieren oder die Wiedergabe anderweitig zu beeinflussen. Der "REV" Button lässt den Track während der Wiedergabe rückwärts laufen. Ist die Wiedergabe gestoppt und wird der "CUE" Button gedrückt, so wird ein Cuepunkt an der aktuellen Wiedergabeposition gesetzt. Er wird als (weisse) Linie auf der Wellenform dargestellt. Wird der "CUE" Button gedrückt wenn die Wiedergabe läuft, so springt der Track zum Cuepunkt und stoppt. Wird der "CUE" Button dann gedrückt gehalten, startet die Wiedergabe vorläufig, der Track springt erst zurück zum Cuepunkt und stoppt wenn der Button wieder losgelassen wird. Dieser Cue-Modus ist als "CDJ" bekannt, er kann in den Einstellungen unter *Interface-\>Default cue behaviour* geändert werden. |
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="/manual/uioverview/ui_playback.png" /></td>
+<td>Diese Steuerelemente ermöglichen es einen Track wiederzugeben, zu pausieren oder die Wiedergabe anderweitig zu beeinflussen. Der "REV" Button lässt den Track während der Wiedergabe rückwärts laufen. Ist die Wiedergabe gestoppt und wird der "CUE" Button gedrückt, so wird ein Cuepunkt an der aktuellen Wiedergabeposition gesetzt. Er wird als (weisse) Linie auf der Wellenform dargestellt. Wird der "CUE" Button gedrückt wenn die Wiedergabe läuft, so springt der Track zum Cuepunkt und stoppt. Wird der "CUE" Button dann gedrückt gehalten, startet die Wiedergabe vorläufig, der Track springt erst zurück zum Cuepunkt und stoppt wenn der Button wieder losgelassen wird. Dieser Cue-Modus ist als "CDJ" bekannt, er kann in den Einstellungen unter <em>Interface-&gt;Default cue behaviour</em> geändert werden.<br />
+<br />
+Mit den Hotcue Buttons können weitere Cuepunkte innerhalb des Tracks gesetzt werden. Beim ersten Klick auf einen der Buttons wird ein Hotcue an der aktuellen Wiedergabeposition des Tracks gesetzt. Klickt man nochmals auf diesen Button, startet die Wiedergabe von diesem Hotcue. Hotcues sind nützlich um leicht auf verschieden Sektionen innerhalb eines Tracks zugreifen zu können. Setzt man beispielsweise Hotcues an den Beginn verschiedener Drums innerhalb eines Tracks, erhält man ein Mini-Drumkit (funktioniert auch bei gestoppter Wiedergabe). Setzt man Hotcues an verschiedene Stellen einer Melodie, so kann man den Track on-the-fly remixen.</td>
+</tr>
+</tbody>
+</table>
 
-## Temposteuerung
+## Temposteuerung und Looping
 
 <table>
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_tempo.png" /></td>
-<td>Diese Steuerelemente ermöglichen es die Wiedergabe eine Tracks zu verlangsamen oder zu beschleunigen. Es wird oft für das <a href="manual_german#Beatmatching und Mixen">Beatmatching</a> beim Mixen von Tracks benutzt. Der "RATE" Regler verändert das Tempo eines Tracks wenn er bewegt wird. Der "PERM" Buttom ermöglicht eine Feineinstellung der Änderungen , der "TEMP" Button bewirkt eine vorrübergehende Änderung de Tempos solange er gedrückt ist.<br />
-Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks beeinflussen, kann in den Einstellungen unter <em>Options-&gt;Preferences-&gt;Interface</em> festgelegt werden. Basiered auf den berechneten BPM versucht der "SYNC" Button automatisch das Tempo des Tracks in einem Kanal mit das Tempo des Tracks in dem anderen Kanal zu syncronisieren.</td>
+<td>Die Temposteuerung ermöglichen es die Wiedergabe eine Tracks zu verlangsamen oder zu beschleunigen. Es wird oft für das <a href="manual_german#Beatmatching und Mixen">Beatmatching</a> beim Mixen von Tracks benutzt. Der "RATE" Regler verändert das Tempo eines Tracks wenn er bewegt wird. Der "PERM" Buttom ermöglicht eine Feineinstellung der Änderungen , der "TEMP" Button bewirkt eine vorrübergehende Änderung de Tempos solange er gedrückt ist.<br />
+Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks beeinflussen, kann in den Einstellungen unter <em>Options-&gt;Preferences-&gt;Interface</em> festgelegt werden. Basiered auf den berechneten BPM versucht der "SYNC" Button automatisch das Tempo des Tracks in einem Kanal mit das Tempo des Tracks in dem anderen Kanal zu syncronisieren.<br />
+<br />
+Mit dem "IN" , "OUT" und "RELOOP-EXIT" Buttons kann man innerhalb eines Tracks einen Loop erzeugen. Der IN Button setzt einen Startpunkt an der aktuellen Wiedergabeposition des Tracks, der OUT Button setzt den Endpunkt und startet den Loop sobald er gesetzt wird. Der "RELOOP-EXIT" Button deaktiviert den Loop wenn man sich in ihm befindet oder aktiviert ihn wenn man ausserhalb ist. Loops können sinnvoll sein wenn man am Ende eines Tracks angelangt ist aber den Nächsten noch nicht bereit hat.<br />
+<br />
+Siehe auch den "SYNC" Button weiter unten.</td>
 </tr>
 </tbody>
 </table>
 
-## Kopfhörer und Flanger
+## Kopfhörer, Flanger und Tempo Synronisation
 
 |                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,9 +126,9 @@ Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks 
 
 ## Lautstärke und Equalizer
 
-|                                      |                                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_voleq.png|]] | Der "VOL" Regler kontrolliert die Lautstärke des jeweiligen Kanals. Der "GAIN" Regler bringt extra Verstärkung um z.B. bei leisen Tracks die Lautstärke an die des Tracks auf dem anderen Kanal anzupassen. Die "HIGH", "MID" und "LOW" Regler funktionieren als Equalizer für den entsprechenden Kanal. Sie reduzieren oder erhöhen die hohen, mittleren und tiefen Frequenzen entsprechend. |
+|                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[/media/manual/uioverview/ui_voleq.png|]] | Der "VOL" Regler kontrolliert die Lautstärke des jeweiligen Kanals. Der "GAIN" Regler bringt extra Verstärkung um z.B. bei leisen Tracks die Lautstärke an die des Tracks auf dem anderen Kanal anzupassen. Die "HIGH", "MID" und "LOW" Regler funktionieren als Equalizer für den entsprechenden Kanal. Sie reduzieren oder erhöhen die hohen, mittleren und tiefen Frequenzen entsprechend. Der Indikator überhalb der Volumenanzeige leuchtet wenn der jeweilige Kanal übersteuert ist. Dann einfach mit dem "GAIN" Regler oder den EQ\`s die Lautstärke reduzieren. |
 
 ## Wellenform
 
@@ -146,10 +160,16 @@ Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks 
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_master.png" /></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>Mit dem "Crossfader" (Bildmitte) kann flüssig zwischen den beiden Kanälen hin- und her geblendet werden, ausserdem definiert er was aus dem Master-Ausgang zu hören ist. Wird der Crossfader ganz nach links geschoben ist nur Kanal 1 zu hören, ist er ganz nach rechts geschoben so ist nur Kanal 2 zu hören. Jede Position dazwischen ergibt ein Mix aus den beiden Kanälen.(Hinweis: Die tatsächliche Lautstärke der einzelnen Kanäle bei Bewegen des Crossfaders wird über die "Crossfader Curve" eingestellt. Diese findet man in den Einstellungen unter <em>Crossfader</em>.<br />
+<br />
 Der "VOLUME" und "BALANCE" Regler kontrollieren die Laufstärke und Stereo-Balance des Master-Ausgangs. Der "PRE/MAIN" Regler kontrollirt was im Kopfhörer-Ausgang zu hören ist. Dieser Regler funktioniert wie der Crossfader, nur wird hier zwischen Master und Cue (Vorhören) hin- und her geblendet. Ist "PRE/MAIN" ganz nach links gedreht kann nur das Cue-Signal gehört werden, nützlich um z.B. Tracks vorzuhören. Der "HEADVOL" Regler kontrolliert die Lautstärke des Kopfhörer-Signals.<br />
+<br />
 Der "DEPTH","DELAY" und "LFO" Regler kontrollieren den Flanger. Bei diesem Effekt wird das Eingangssignal mit einer verzögerten Kopie gemixt, was zu Interferenzen führt und eine Art Kammfilter-Effekt ergibt. Wird nun das Ausgangssignal des Effekts wieder in in der Eingang geleitet, kann der Effekt verstärkt werde. In Mixxx wird die Intensität des Effekts vom Ausgangssignal zurück in den Eingang geleitet und kann mit dem "DEPTH" Regler angepasst werden.Der "DELAY" Regler gibt die eigentlichen Wert der Verzögerung an. Innerhalb des Effekts wird dieser Wert nochmals durch ein LFO (low frequency oscillator) moduliert, der entsprechend mit dem "LFO" Regler kontrolliert wird.<br />
 Wenn sich das Ganze zu technisch anhört, einfach mit den verschiedenen Parametern experimentieren und hören wie es den Sound beeinflusst.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -160,10 +180,33 @@ Wenn sich das Ganze zu technisch anhört, einfach mit den verschiedenen Paramete
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_library.png" /></td>
-<td>Die Bibliothek verwaltet alle Ihre Musikdateien. Dort befinden sich die Tracks, welche Sie abspielen und in einen der Kanäle laden können. Alternativ können auch Tracks aus einem externen Dateimanager auf die Wellenform Anzeige gezogen werden. Die Bibliothek bietet verschiedene Ansichten, welche über das Auswahlmenü oben links verändert werden können.<br />
-Die zweite Ansichtsoption ist "Play Queue" (Warteschlange), der wie eine Wiedergabeliste für die Tracks funktioniert die als nächstes gespielt werden sollen. Der "Browse" Modus arbeitet grundsätzlich wie ein Dateimanager und sollte selbst erklärend sein. Im "Playlists" Modus können selbst erstellte Wiedergabelisten geladen und angezeigt werden. Außerdem gibt es eine Suchfunktion, die aktuelle Ansicht wird in Echtzeit gefiltert. Die Hauptansicht ist die "Library", sie zeigt alle in der Bibliothek vorhandenen Tracks an. Um diese Ansicht nutzen zu können muss erst eine Bibliothek angelegt werden, das wird beim ersten Start von Mixxx erledigt.<br />
-Falls Ihre Bibliothek wiederhergestellt werden muss, da bespielsweise Dateien hinzugefügt oder verschoben wurden, kann dass in der Menüleiste unter <em>Library-&gt;Rescan Library</em> gemacht werden.<br />
-Um einen Track in einen Player zu laden, ihn einfach auf Wellenform Anzeige ziehen oder das Kontextmenü benutzen (Rechtsklick auf einem Track). Das Kontextmenü ermöglich es Tracks zur Warteschlange ("Play Queue") oder Wiedergabelisten ("Playlist") hinzuzufügen ( die Wiedergabeliste muss vorher angelegt werden). Zu guter Letzt kann über das Kontextmenü auf die Eigenschaften ("Properties") eines Tracks zugegriffen werden um ID3 Tags zu überprüfen oder die BPM manuell zu ermitteln.</td>
+</tr>
+<tr class="even">
+<td>Die Bibliothek ("LIBRARY") verwaltet alle Ihre Musikdateien. Dort befinden sich die Tracks, welche Sie abspielen und in einen der Player laden können. Alternativ können auch Tracks aus einem externen Dateimanager auf die Wellenform Anzeige gezogen werden.<br />
+Auf der linken Seite (in der "Sidebar") befinden sich die verschiedenen Kollektionen. Auf der rechten Seite befinden sich die einzelnen Tracks diese Kollektionen.<br />
+<br />
+Benutzt man das Suchfeld oben links, wird eine geordnete Liste der Tracks gemäß des Suchbegriffs angezeigt.<br />
+<br />
+Mixxx importiert Ihre Musik Bibliothek automatisch beim ersten Start und erkenn neu hinzugefügte Dateien beim nächsten Start. Falls Sie während der Session ihre Bibliothek manuell aktualisieren wollen, da z.B. Dateien hinzugefügt oder verschoben wurden, kann dass in der Menüleiste unter <em>Library-&gt;Rescan Library</em> gemacht werden.<br />
+<br />
+Um einen Track in einen Player zu laden, ihn einfach auf eine Wellenform Anzeige ziehen oder das Kontextmenü benutzen (Rechtsklick auf einem Track). Das Kontextmenü ermöglich es Tracks zum Auto Dj ("AUTO DJ QUEUE"), Wiedergabelisten ("PLAYLISTS") oder "CRATES" hinzuzufügen ( Playlists und Crates müssen zuerst angelegt werden).<br />
+<br />
+Klappt man die "LIBRARY" Anzeige auf , ist dort "MISSING SONGS" gelistet. Alle Tracks die bereits in Mixxx geladen wurden aber fehlen werden dort aufgelistet (da z.B. verschoben oder gelöscht). Mixxx löscht Einträge über fehlende Tracks nicht automatisch, so das eventuell vorhandene Metadaten ( wie Hotcues oder Tempoinformationen) nicht verloren sind wenn die Tracks ersetzt werden.<br />
+<br />
+Das "FEATURED ARTISTS" Menü enthält ggf. kostenlose Tracks die zusammen mit Ihrer Version von Mixxx ausgeliefert werden. Die Tracks sind DJ freundlich und lizensiert, so das sie bei jeder Gelegenheit gespielt werden können.<br />
+<br />
+Das "AUTO DJ" Menü ist eine spezielle Wiedergabeliste für das automatische Mixen. Mit einem Klick auf "ENABLE AUTO DJ" wird Mixxx automatisch den nächsten Track von dieser Wiedergabeliste laden ( sofern der aktuelle Track fast zu Ende ist) und automatisch zwischen den Tracks faden. Mixxx spielt continuierlich alle Tracks auf "AUTO DJ" Wiedergabeliste ab.<br />
+<br />
+Wiedergabelisten können mit einem Rechtsklick auf "PLAYLISTS" erstellt werden. Dort einfach "NEW PLAYLIST" wählen und einen Namen vergeben. Hinweis: Umbenennen ist z.Zt. nicht möglich, also einfach eine Liste mit dem gewünschten Namen erstellen und den Inhalt aus der alten Liste hinüberziehen.<br />
+Tracks können per Drag-und-Drop aus der Bibliothek in die jeweilige Wiedergabeliste gezogen werden. Alternativ kann man den jeweiligen Track in der Bibliothek auswählen und per Rechtsclick "ADD TO PLAYLIST" klicken. Wiedergabelisten können nicht direkt in einen der Player geladen werden da Mixxx eher als Live Mixing-Tool konzipiert ist. Denkbar ist aber den Inhalt einer Wiedergabeliste in den "AUTO DJ" zu ziehen und dort abzuspielen.<br />
+<br />
+Crates sind ungeordnete Kollektionen von Tracks und den Wiedergabelisten ähnlich. Crates können mit einem Rechtsklick auf "CRATES" erstellt werden. Dort einfach "NEW CRATE" wählen und einen Namen vergeben. Hinweis: Umbenennen ist z.Zt. nicht möglich, also einfach ein Crate mit dem gewünschten Namen erstellen und den Inhalt aus dem alten Crate hinüberziehen.<br />
+<br />
+"BROWSER MODE" arbeitet wie ein Dateimanager und ermöglicht es Tracks zu laden die noch nicht in Mixxx` Bibliothek sind.<br />
+<br />
+Das "ANALYZE" Menü listet die kürzlich neu hinzugefügten Tracks und ermöglicht die BPM (Tempo) Bestimmung.<br />
+<br />
+Das "ITUNES" (Windows und Mac OSX) oder "RHYTMBOX" (Linux) Menü zeigt Wiedergabelisten an die in diesen Programmen erstellt wurden.</td>
 </tr>
 </tbody>
 </table>
@@ -527,14 +570,60 @@ Mixxx's Master Signal kann folgendermaßen in Echtzeit als Audiodatei
     der Aufnahme kann nachträglich mit einem Audio Editor wie
     [Audacity](http://audacity.sourceforge.net/) entfernt werden.
 
-# Keyboard und Controller
+# Keyboard und Midi Controller
 
 ## Keyboard Shortcuts
 
-[[/media/mixxx.gif|]]
+Durch Shortcuts können Sie Mixxx mit der Tastatur steuern.
 
-Durch Shortcuts können Sie Mixxx mit der Tastatur steuern. Die Shortcuts
-sind in einer Textdatei gespeichert die Sie frei verändern können.
+| Funktion           | Deck 1   | Deck 2   | Master |
+| ------------------ | -------- | -------- | ------ |
+| Crossfader Links   |          |          | H      |
+| Crossfader Rechts  |          |          | G      |
+| Seek Backwards     | A        | J        |        |
+| Seek Forwards      | S        | K        |        |
+| Cue                | E        | O        |        |
+| Cue Go-to-and-stop | Shift+E  | Shift+O  |        |
+| Cuepunkt setzen    | Shift+D  | Shift+L  |        |
+| Tempo (BPM) Sync   | 1        | 0        |        |
+| Tempo hoch         | F1       |          |        |
+| Tempo runter       | F2       |          |        |
+| Tempo fein runter  | Shift+F1 | Shift+F5 |        |
+| Tempo fein hoch    | Shift+F2 | Shift+F6 |        |
+| Anschieben         | Shift+F3 | Shift+F7 |        |
+| Abstoppen          | Shift+F4 | Shift+F8 |        |
+| Vorhören (PFL)     | T        | Y        |        |
+| Bass EQ Kill       | 5        | 6        |        |
+| Mitten EQ Kill     | 4        | 7        |        |
+| Höhen EQ Kill      | 3        | 8        |        |
+| Flanger            | 2        | 9        |        |
+| BPM Tap Tempo      | Q        | U        |        |
+| Hotcue 1           | Z        | M        |        |
+| Hotcue 2           | X        | ,        |        |
+| Hotcue 3           | C        | .        |        |
+| Hotcue 4           | V        | /        |        |
+| Hotcue 1 löschen   | Shift+Z  | Shift+M  |        |
+| Hotcue 2 löschen   | Shift+X  | Shift+,  |        |
+| Hotcue 3 löschen   | Shift+C  | Shift+.  |        |
+| Hotcue 4 löschen   | Shift+V  | Shift+/  |        |
+
+FIXME*(missing keys (play,reverse++) & de-de keyboard layout)*FIXME
+
+### Quick Reference
+
+[Printable (large) keyboard reference
+sheet](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
+
+[[[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
+FIXME*(picture & download for de-de keyboard layout)*FIXME
+
+### Anpassen
+
+Die Shortcuts sind in einer Textdatei gespeichert die Sie frei verändern
+können. Wichtig: Mixxx hat standardmäßig Shortcuts für die **englische**
+Tastater. Es muss also die Konfigurationsdatei geändert werden um
+sinnvoll mit einem deutschen Keyboard zu arbeiten oder einige Shortcuts
+sind vertauscht.FIXME*(missing forum Link de-de keyboard layout)*FIXME
 
 Linux: /usr/share/mixxx/keyboard/Standard.kbd.cfg
 
@@ -550,25 +639,49 @@ Audio-Anwendungen wie Mixxx zu steuert. Viele DJs bevorzugen das
 weil es sich ähnlich anfühlt wie ein echtes Mischpult und
 Plattenspieler.
 
-Folgende MIDI Geräte werden unterstützt (Stand Mixxx 1.7.0):
+Mixxx funktioniert grundsätzlich mit allen MIDI Controllern für die es
+Treiber für das jeweilige Betriebssystem gibt. Mixxx benötigt lediglich
+ein Midi Mapping (=Midi Konfigurations-Datei)um mit dem Controller zu
+kommunizieren. Mixxx bringt von Hause aus diverse Midi Mappings für die
+gelisteten Geräte mit.
 
-  - Hercules DJ Console MK2
-  - Hercules DJ Console MP3
+Es gibt es einen zweistufigen Support für Mappings :
+
+1.  Mixxx Certified support (offizielle, geprüfte Mappings) 
+2.  Mixxx Community Support (von Nutzern bereitgestellt Mappings, das
+    Mixxx Team hat keine Möglichkeit die Qualität der Mappings zu
+    beurteilen da es die Geräte nicht besitzt.) 
+
+### Mixxx Certified Mappings
+
   - Hercules DJ Console RMX
-  - Hercules DJ Control Steel 
-  - Hercules DJ Console Mac Edition
-  - Stanton SCS.3d 
+  - Hercules DJ Console MK2
+  - Hercules DJ Console MK2
+  - Stanton SCS.3d
+  - Stanton SCS.3m
   - Stanton SCS.1m
-  - Mixman DM2 
-  - Tascam US-428
   - M-Audio X-Session Pro
+  - DJ TechTools MIDIFighter
+
+### Community Supported Mappings
+
+Die Mappings wurden von der Mixxx Community überprüft. Trotzdem kann es
+hier und da einen Fehler geben. Fällt Ihnen einer auf, schreiben Sie
+einen Report auf dem [Bug Tracker](http://bugs.launchpad.net/mixxx) bzw.
+auf der Mailing-Liste, dem Forum oder IRC Channel.
+
+  - Hercules DJ Console MP3
+  - Hercules DJ Control Steel
+  - Hercules DJ Console Mac Edition
+  - Mixman DM2
+  - Tascam US-428
   - M-Audio Xponent
   - Evolution X-Session
   - Ecler NUO4
   - FaderFox DJ2
   - Vestax VCI-100
   - Numark Total Control
-  - Behringer BCD3000 (\*bisher ohne Jog-Wheel Unterstützung)
+  - Behringer BCD3000
   - Akai MPD24
 
 Vor dem Kauf eines Controllers für die Verwendung mit Mixxx lesen Sie
@@ -582,8 +695,8 @@ die Dokumentation gelesen wurde.
 # Mitmachen
 
 Mixxx ist ein Gemeinschafts-Projekt vieler DJs weltweit. Ohne die
-Mitwirkung dieser DJs würde Mixxx nicht existieren. Wir suchen ständig
-weitere Mitwirkende.
+Mitwirkung dieser DJs würde Mixxx nicht existieren. **Wir suchen ständig
+weitere Mitwirkende**.
 
 Wenn Sie interessiert sind am Mixxx Projekt mitzumachen, senden Sie eine
 Email an unsere [Developer Mailing
@@ -592,14 +705,15 @@ channel (\#mixxx on Freenode) vorbei.
 
 Wenn Sie Interesse an Programmierung (C++) haben:
 
-  - Werfen Sie einen Blick auf unsere Specs/Projects Seite im Mixxx Wiki
-    und schauen ob Ihnen etwas ins Auge fällt. Wenn Sie etwas davon
-    programmieren wollen - nur zu\!
+  - Werfen Sie einen Blick auf unsere Specs/Projects Seite im [Mixxx
+    Wiki](http://www.mixxx.org/wiki) und schauen ob Ihnen etwas ins Auge
+    fällt. Wenn Sie etwas davon programmieren wollen - nur zu\!
   - Wir sind immer bereit als Mentor zur Verfügung zu stehen oder neuen
     Programmierern zu helfen.
-  - Werfen Sie einen Blick auf den Bug Tracker vorbei und versuchen
-    einen Bug zu fixen\!
-  - Senden Sie Patches an Adam, Albert oder mixxx-devel\!
+  - Werfen Sie einen Blick auf den [Bug
+    Tracker](https://bugs.launchpad.net/mixxx) und fixen einen Bug\!
+  - Senden Sie Patches an mixxx-devel oder poste Sie Bugs auf
+    [Launchpad](https://bugs.launchpad.net/mixxx)\!
 
 Kein Interesse an Programmierung? Es gibt es trotzdem viele
 Möglichkeiten unserem Projekt zu helfen:

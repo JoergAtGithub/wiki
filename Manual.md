@@ -564,7 +564,7 @@ linear PCM WAV (RIFF) sound file by doing the following:
     [Audacity](http://audacity.sourceforge.net/) after you finish
     mixing.)
 
-# Keys and Hardware Controllers
+# Keyboard and MIDI Controllers
 
 ## Keyboard Shortcuts
 

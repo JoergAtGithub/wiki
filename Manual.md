@@ -112,11 +112,18 @@ See also the SYNC button below.</td>
 </tbody>
 </table>
 
-## Headphone and Flanger
+## Headphone, Flanger, and Tempo Synchronization
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_headphone.png|]] | When toggled, the HEADPHONE button sends the selected channel's audio to the *Headphones* output audio device selected in the preferences under *Sound Hardware*. This feature is commonly used when [headphone cueing](manual#headphone_cueing) and [beatmatching](manual#beatmatching_and_mixing). The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully. |
+<table>
+<tbody>
+<tr class="odd">
+<td><img src="/manual/uioverview/ui_headphone.png" /></td>
+<td>When toggled, the HEADPHONE button sends the selected channel's audio to the <em>Headphones</em> output audio device selected in the preferences under <em>Sound Hardware</em>. This feature is commonly used when <a href="manual#headphone_cueing">headphone cueing</a> and <a href="manual#beatmatching_and_mixing">beatmatching</a>.<br />
+The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully.<br />
+The tempo SYNC button SYNC will change the tempo of the song in the current channel to match the song in the opposite channel. SYNC can be used to beatmatch songs quicker, and is useful for DJs of all skill levels.</td>
+</tr>
+</tbody>
+</table>
 
 ## Volume and EQ
 

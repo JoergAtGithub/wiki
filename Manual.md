@@ -603,6 +603,9 @@ linear PCM WAV (RIFF) sound file by doing the following:
 
 [[/media/manual/keyboard_quickreference.png|keyboard\_quickreference.png]]
 
+[Printable large
+version](http://mixxx.org/wiki/lib/exe/fetch.php/manual:keyboard_quickreference.png?cache=)
+
 ### Customizing
 
 The shortcuts are defined in a text file, and can be changed by the user

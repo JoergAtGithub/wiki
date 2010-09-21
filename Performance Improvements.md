@@ -14,6 +14,22 @@ as succinctly and efficiently as possible so it can complete its work
 within the latency period (which can ideally be as low as 1ms.) Taking
 any longer would be shooting itself in the foot.)
 
+Note that there are currently many places the callback thread does or
+can call QMutex::lock(), which \*will\* block until the mutex becomes
+free for locking. This cannot happen in the callback thread, it almost
+guarantees a missed deadline (and consequently an underrun). Here's a
+list (add if you find another, I'll add the callstacks when I'm more
+awake):
+
+  - CachingReader::m\_readerMutex
+  - EngineBuffer::m\_engineLock
+  - EngineSidechain::m\_waitLock
+  - EngineWorkerScheduler::m\_mutex
+
+Any locking of mutexes done in the callback \_must\_ be done with
+QMutex::tryLock(), which does not block if the mutex is already locked.
+Program logic will need to change accordingly.
+
 **TO DO: Ensure the audio callback thread gets real-time priority when
 run as a regular user.** - RJ discovered that Mixxx's requests for
 real-time priority on this thread are having no effect. Running as a

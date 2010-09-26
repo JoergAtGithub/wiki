@@ -17,6 +17,13 @@ running:
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
     sudo apt-get install libportmidi-dev # needed in 1.8 for PortMIDI and PortTime
 
+On Fedora 13 you need enable rpmfusion repo and then:
+
+    yum install scons alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
+    libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
+    portaudio-devel ffmpeg-devel libshout-devel python-devel lua-devel \
+    tolua++-devel portmidi-devel
+
 For other distributions, you will need to install the following through
 your distribution's package manager:
 

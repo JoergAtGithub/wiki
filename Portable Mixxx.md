@@ -36,7 +36,7 @@ Goal: to make a USB stick/CD image that boots into
 Linux](http://tinycorelinux.com/) that contains Mixxx (and JACK and
 FFADO if possible,) ready to run. The idea is that you can walk up to
 any PC with your MixxxStixxx and music media (external HD, MP3 DVD,
-etc.) and be up & running about a minute.
+etc.) and be up & running in about a minute.
 
 ## MixxxOS
 

@@ -29,6 +29,7 @@ Community, but the Mixxx team is unable the verify their quality.
 | [Stanton SCS.1d](Stanton%20SCS.1d)                      | In Progress                    | In Progress               | In Progress                                                                                                                          |
 | [DJ TechTools MIDIFighter](http://midifighter.com)      | Yes (1.8.0+)                   | Yes (1.8.0+)              | Yes (1.8.0+)                                                                                                                         |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)      | Yes (1.6.0+)                   | Yes (1.6.0+)              | Yes (1.6.0+)                                                                                                                         |
+| [eks Otus](eks%20Otus)                                  | In Progress                    | In Progress               | In Progress                                                                                                                          |
 
 ### Community Supported Mappings
 

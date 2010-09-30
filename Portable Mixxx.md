@@ -1,6 +1,7 @@
-# Portable Mixxx
+This page contains information on making portable versions of Mixxx to
+use from a USB stick, LiveCD, etc.
 
-## Windows
+# Windows
 
 Goal: to make a build option for the Windows target that will allow
 Mixxx to be run from a USB, CD/DVD, network share or other removable
@@ -27,7 +28,7 @@ media type.
        else if exists (music path value) --> load // not found, treat as absolute path 
 ```
 
-## Bare metal
+# Bare metal
 
 Goal: to make a USB stick/CD image that boots into
 [DSL](http://www.damnsmalllinux.org/),
@@ -37,7 +38,9 @@ FFADO if possible,) ready to run. The idea is that you can walk up to
 any PC with your MixxxStixxx and music media (external HD, MP3 DVD,
 etc.) and be up & running about a minute.
 
-### MixxxOS 1.1 out for testing
+## MixxxOS
+
+**Update: v1.1 is available for testing**
 
 I'm proud to announce to you the new MixxxOS. MixxxOS is a minimal
 Ubuntu 10.04 LTS base system including just enough to run Mixxx, copy
@@ -97,7 +100,7 @@ disk or partition for storing music you can mount it at /home/music, if
 you like to create users you can simply link this folder in their homes
 if you like.
 
-### Download
+#### Download
 
 [MixxxOS 1.1
 x86](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.1.iso)

@@ -105,6 +105,7 @@ if you like.
 [MixxxOS 1.1
 x86](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.1.iso)
 [MD5SUM](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.1.iso.md5)
+[Torrent](http://dl.btjunkie.org/torrent/MixxxOS-the-OS-created-for-digital-DJs/3676516823cbbc61916ec67214eaf0f8b7673f664c02/download.torrent)
 
 Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
 get spammed a lot) or the mixxx forums to sent me bugs and feature

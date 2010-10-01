@@ -424,11 +424,19 @@ it's either on (non-zero) or off (zero.)
 |  | \[Channel*N*\]     |  | scratch2\*                   |  | \-3.0..3.0        |  | Affects **absolute** play speed & direction whether currently playing or not when *scratch2\_enabled* is active. (multiplicative)                                                                   |  | Waveform                                                            |  |
 |  | \[Channel*N*\]     |  | scratch2\_enable\*           |  | binary            |  | Takes over play speed & direction for *scratch2*.                                                                                                                                                   |  | Waveform                                                            |  |
 |  | \[Channel*N*\]     |  | transform                    |  | ?                 |  | ?                                                                                                                                                                                                   |  | ?                                                                   |  |
+|  | \[Channel*N*\]     |  | track\_samples               |  | absolute value    |  | (Read-only) Number of sound samples in the track loaded on the specified deck                                                                                                                       |  | n/a                                                                 |  |
 |  | \[Channel*N*\]     |  | volume                       |  | default           |  | Adjusts the channel volume fader                                                                                                                                                                    |  | VOL fader                                                           |  |
 |  | \[Channel*N*\]     |  | VuMeter                      |  | default           |  | Outputs the current instantaneous channel volume                                                                                                                                                    |  | Channel meter                                                       |  |
 |  | \[Channel*N*\]     |  | wheel                        |  | \-3.0..3.0        |  | Affects relative play speed & direction persistently (additive offset & must manually be undone)                                                                                                    |  | Waveform                                                            |  |
 
 \* introduced in Mixxx v1.8.0
+
+**Coming up in v1.9:**
+
+|  |                |  |                   |  |                |  |                                                                   |  |                        |  |
+|  | -------------- |  | ----------------- |  | -------------- |  | ----------------------------------------------------------------- |  | ---------------------- |  |
+|  | **\[Group\]**  |  | **Key/Control**   |  | **Range**      |  | **What it does**                                                  |  | **On-screen feedback** |  |
+|  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck |  | n/a                    |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.

@@ -704,6 +704,4 @@ optimized [ASMLIB](http://agner.org/optimize/), do the following:
     2.  Configuration Properties-\>C/C++-\>Command Line: Add `/Oi-` to
         Additional Options.
     3.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
-        (or `alibcof32o.lib` for 32-bit) to "Additional
-        Dependencies"\_<span class="underline">\_Underlined
-        Text</span>\_\_
+        (or `alibcof32o.lib` for 32-bit) to "Additional Dependencies"

@@ -675,7 +675,8 @@ options. You can do any or all of the following:
     (/arch:SSE) or Streaming SIMD Extensions 2 (/arch:SSE2) if your CPU
     supports either
   - On x64, Configuration Properties-\>C/C++-\>Command Line
-  - Add `/favor:AMD64` (works for all (non-Itanium) x86-64 CPUs)
+  - Add `/favor:AMD64`, `/favor:EM64T` (Intel64,) or `/favor:blend`
+    (about the same on both)
   - Configuration Properties-\>Linker-\>Optimization
   - Use Link Time Code Generation (/ltcg)
   - Configuration Properties-\>Librarian-\>Command line

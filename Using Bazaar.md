@@ -38,7 +38,7 @@ tested:
 
 1.  **Create a personal copy** (called a "branch") of the Mixxx
     trunk/branch you want to work on using `bzr branch lp:mixxx` for
-    trunk or `bzr branch lp:mixxx/1.7` for the 1.7 release branch. This
+    trunk or `bzr branch lp:mixxx/1.8` for the 1.8 release branch. This
     copies the code to your local system. (**Be patient** as the Mixxx
     code base is fairly large and older versions of bzr sometimes have
     difficulty reporting progress.)
@@ -75,12 +75,12 @@ branch**. Because of the way that Launchpad represents branch history,
 this will cause the history view to bunch commits by others into single
 commits by you from when you merge changes from upstream. The proper way
 to work in this mode is to maintain two branches, a features branch, and
-a clean branch. The following example will use the Mixxx 1.7 release
+a clean branch. The following example will use the Mixxx 1.8 release
 branch as an example.
 
-1.  **Create a clean branch**: `bzr branch lp:mixxx/1.7 ./mixxx-1.7`
-2.  **Create a features branch**: `bzr branch ./mixxx-1.7
-    ./mixxx-1.7-features`
+1.  **Create a clean branch**: `bzr branch lp:mixxx/1.8 ./mixxx-1.8`
+2.  **Create a features branch**: `bzr branch ./mixxx-1.8
+    ./mixxx-1.8-features`
 3.  **Add features/code to your features branch**: hack away at your
     features branch, and commit whenever you want at whatever interval
     you want. Ideally you will commit often with brief messages about
@@ -89,8 +89,8 @@ branch as an example.
     show up if somebody decides they want to see the details of the
     commits you made for your feature branch. 
 4.  **When you are ready to push the changes upstream**: from your clean
-    branch (the `mixxx-1.7` folder): `bzr pull`, `bzr merge
-    ../mixxx-1.7-features`. Now your branch is merged with the latest
+    branch (the `mixxx-1.8` folder): `bzr pull`, `bzr merge
+    ../mixxx-1.8-features`. Now your branch is merged with the latest
     upstream changes, but it isn't committed yet. Resolve conflicts,
     compile Mixxx, run the test suite, and make sure that the feature
     and the upstream changes work well together.
@@ -100,7 +100,7 @@ branch as an example.
     messages you made in your features branch will not be immediately
     available unless they drill-down into the merge on the history view.
     If you provide a `--fixes` argument to commit, then this will attach
-    the launchpad bug \#XXXXXX to the branch you commit to (mixxx-1.7 in
+    the launchpad bug \#XXXXXX to the branch you commit to (mixxx-1.8 in
     this case). 
 6.  **Push the merged feature branch upstream**: `bzr push`
 
@@ -115,10 +115,10 @@ unless you do it manually. **To bring your features branch up to date**:
     `bzr shelve`, if you do not have it then you need to install
     `bzrtools`. `bzr shelve` is similar to `git stash`. 
 2.  **Update your clean branch**: From your clean branch (the
-    `mixxx-1.7` folder): `bzr pull`
+    `mixxx-1.8` folder): `bzr pull`
 3.  **Merge the upstream changes from your clean branch to your features
-    branch**: From your features branch (the `mixxx-1.7-features`
-    folder): `bzr merge ../mixxx-1.7`
+    branch**: From your features branch (the `mixxx-1.8-features`
+    folder): `bzr merge ../mixxx-1.8`
 4.  **Commit the merge**: Resolve any conflicts, and when you are done
     `bzr commit`. You usually will provide a commit message with
     something along the lines of `Merging changes from upstream.` This
@@ -132,7 +132,7 @@ unless you do it manually. **To bring your features branch up to date**:
 (For those of us scared of this "distributed" thing...)
 
   - **Check out** with `bzr checkout lp:mixxx` for trunk or `bzr
-    checkout lp:mixxx/1.7` for the 1.7 release branch. (**Be patient**
+    checkout lp:mixxx/1.8` for the 1.8 release branch. (**Be patient**
     as the Mixxx code base is fairly large and older versions of bzr
     sometimes have difficulty reporting progress.)
   - **Update** to latest version with `bzr update`

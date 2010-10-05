@@ -8,30 +8,35 @@ Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 
 ## Latest MIDI mapping & script files
 
+**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
+
 **Instructions for use:**
 
-1.  Save the above files into:
+1.  Download the files for the applicable version of Mixxx below.
+2.  Save the files into:
 
 <!-- end list -->
 
-  - Windows: `C:\Program Files\Mixxx\midi`
+  - Windows: `C:\Program Files\Mixxx\midi` (technically
+    `%PROGRAMFILES%\Mixxx\midi`)
   - OS X: `/Applications/Mixxx.app/Contents/midi`
   - Linux: `/usr[/local]/share/mixxx/midi`
 
 <!-- end list -->
 
-1.  Start Mixxx
-2.  Open Preferences
-3.  Choose Midi Controllers
-4.  Select the "Stanton SCS.3m" or "USB Audio Device"
-5.  Click the Enabled checkbox in the right pane ("Activate" button on
+1.  Plug the controller in and wait for it to settle. (Remember to use
+    its power adapter if you're connecting other devices to it.)
+2.  Start Mixxx
+3.  Open Preferences
+4.  Expand Midi Controllers
+5.  Select the "Stanton SCS.3m" or "USB Audio Device"
+6.  Click the Enabled checkbox in the right pane ("Activate" button on
     1.7)
-6.  Drop down the list and choose the "Stanton SCS.3m" mapping
-7.  Click OK and you're good to go.
+7.  Click the drop-down and choose the "Stanton SCS.3m" mapping
+8.  Click OK and you're good to go. (The controller should initialize
+    and light up.)
 
 ### 1.8.x
-
-**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
 
 The latest official MIDI mapping and script file are in the 1.8 release
 branch and can be downloaded from here:
@@ -45,9 +50,6 @@ branch and can be downloaded from here:
   - Only one side's LEDs will react to Flanger controls at a time
 
 ### 1.7.x
-
-**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
-before starting Mixxx.**
 
 The latest official MIDI mapping and script file are in the 1.7 release
 branch and can be downloaded from here:

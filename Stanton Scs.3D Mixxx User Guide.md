@@ -20,6 +20,8 @@ variables at the top of the script you can set to your liking:
     spinning platter LED in vinyl modes. Otherwise shows in all modes
     except Instant Pitch Change and TRIG (because they're used for other
     things in those modes.)
+  - **spinningLights** - The number of lights used for the spinning
+    platter effect, 1 or 2. (1 is best for juggling.)\*
   - **VUMeters** - If set to true, shows a VU meter in the circular area
     for the currently selected deck when in vinyl mode. (Left for deck
     1, right for deck 2.)
@@ -30,8 +32,20 @@ variables at the top of the script you can set to your liking:
   - **globalMode** - If true, the unit will stay in the current mode on
     deck changes (instead of switching to the mode you were in the last
     time you controlled that deck.)
+  - **singleDeck** - If you've got more than one MIDI controller, set
+    this to true to have the SCS.3d stay on one deck and make Deck mode
+    non-temporary. [More on this here](#deck-mode).\*
   - **deckChangeWait** - Time in milliseconds to hold the DECK button
     down to avoid changing decks
+
+\* Introduced in Mixxx v1.8.0
+
+Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
+editor (Wordpad works too) and you'll see these variables right near the
+top. Edit & save, then restart Mixxx and enjoy.
+
+**The following were present in 1.7 but are now obsolete:**
+
   - **scratching**: *All of these values are heavily dependent on your
     latency setting. Adjust as needed.*
     1.  **slippage** - Slipperiness of the virtual slipmat when
@@ -44,23 +58,13 @@ variables at the top of the script you can set to your liking:
         sensitivity when the deck is stopped (set higher for higher
         latencies, e.g. 10ms = 1.7, 2ms = 1.5.)
 
-Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
-editor (Wordpad works too) and you'll see these variables right near the
-top. Edit & save, then restart Mixxx and enjoy.
-
-**Coming in V1.8:**
-
-  - **singleDeck** - If you've got more than one MIDI controller, set
-    this to true to have the SCS.3d stay on one deck and make Deck mode
-    non-temporary. [More on this here](#deck-mode).
-
 ## Mode buttons
 
 [[/media/hardware/stantonscs/modebuttons.jpg|]]
 
   - FX - Adjust & toggle Flanger effect, toggle reverse effect
   - EQ - Adjust channel EQ parameters
-  - Loop - Instant pitch changes (until Mixxx supports looping.)
+  - Loop - Loop controls and Instant pitch changes
   - Trig - Hot cues
   - Vinyl - Toggle between pitch bend, vinyl manipulation & scratching,
     and track selection
@@ -106,13 +110,19 @@ Hold the FX button down and touch any slider to reset it to center.
 
 Hold the EQ button down and touch any slider to reset it to center.
 
+## Loop mode (red)
+
+(Introduced in Mixxx v1.8.0)
+
+The surface is configured as three giant buttons:
+
+  - Left: Loop In (mark the start of a loop)
+  - Middle: Reloop/Exit (toggle looping)
+  - Right: Loop Out (mark the end of a loop)
+
 ## Instant-pitch change modes (Loop button)
 
-This will control looping in a future version of Mixxx. For now, it
-offers instant pitch change buttons in the following arrangements:
-
-**Fixed increment (red)** - Each button sets the pitch 3.33% above or
-below its vertical neighbors.
+This offers instant pitch change buttons in the following arrangements:
 
 **Key change (purple)** - Center buttons are one semitone away from
 their vertical neighbors and the outside ones are three semitones away
@@ -131,22 +141,19 @@ automatically set to 100% in order for the values to be set correctly.
 *Key change and Note modes were tuned with respect to 440Hz A (above
 middle C.)*
 
-**Coming in v1.8**
+**1.7 also offered the following** since looping was not available:
 
-<span class="underline">Loop Mode:</span>
-
-The surface is configured as three giant buttons:
-
-  - Left: Loop In
-  - Middle: Reloop/Exit
-  - Right: Loop Out
+**Fixed increment (red)** - Each button sets the pitch 3.33% above or
+below its vertical neighbors.
 
 ## Trig Modes
 
 These modes configure the surface as three separate banks of 12 buttons
 (lit up dim red for visibility) giving you a total of THIRTY-SIX hot
-cues\! The TRIG button will be red in bank 1, purple in bank 2, and
-black in bank 3.
+cues\! (Though Mixxx 1.8.0 internally supports just 32, so the center 4
+buttons and the lower right one in the third bank (black) are
+inoperative.) The TRIG button will be red in bank 1, purple in bank 2,
+and black in bank 3.
 
 The red LEDs flash when you press the corresponding button. The outer
 blue LEDs light when a cue point is set on that button. (Changeable with
@@ -156,12 +163,6 @@ the **markHotCues** option mentioned at the top of this page.)
   - To recall a cue, just press a button that has a cue point set
   - To erase a cue, hold TRIG while pressing the button(s) you want to
     erase
-
-**For v1.8**
-
-As of Feb 2010, Mixxx 1.8 internally supports 31 hot cues and the SCS.3d
-mapping has been adjusted to match. That means the center 4 buttons and
-the lower right one in the third bank (black) are inoperative.
 
 ## Vinyl Modes
 
@@ -196,7 +197,7 @@ the lower right one in the third bank (black) are inoperative.
 
 [[/media/hardware/stantonscs/slidermode.jpg|]] You are in this mode only
 **while holding down the Deck button**, unless the controller is in
-single-deck mode in v1.8 (see the top of this page):
+single-deck mode\*:
 
   - Gain slider (S1) adjusts master volume
   - Pitch slider (S2) adjusts master balance (pan)
@@ -207,7 +208,7 @@ single-deck mode in v1.8 (see the top of this page):
   - Right slider (S5) adjusts the headphone volume
   - TAP resets cross-fader to center position (only in multi-deck mode)
 
-**Coming in v1.8**
+<!-- end list -->
 
   - Press Deck + Sync together to toggle between multi- and single-deck
     modes
@@ -215,6 +216,8 @@ single-deck mode in v1.8 (see the top of this page):
   - Hold the Deck button down and touch any slider to reset it to its
     default value
   - Press Deck + Play together to change the active deck
+
+\* Introduced in v1.8.0
 
 ## 
 

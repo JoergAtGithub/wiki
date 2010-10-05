@@ -24,7 +24,8 @@ Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 2.  Open Preferences
 3.  Choose Midi Controllers
 4.  Select the "Stanton SCS.3m" or "USB Audio Device"
-5.  Click Activate in the right pane
+5.  Click the Enabled checkbox in the right pane ("Activate" button on
+    1.7)
 6.  Drop down the list and choose the "Stanton SCS.3m" mapping
 7.  Click OK and you're good to go.
 

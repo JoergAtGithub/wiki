@@ -13,9 +13,9 @@ running:
     sudo apt-get install bzr
     sudo apt-get install scons
     sudo apt-get install libqt4-dev
-    sudo apt-get install libqt4-sql-sqlite #needed for 1.8
+    sudo apt-get install libqt4-sql-sqlite
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
-    sudo apt-get install libportmidi-dev # needed in 1.8 for PortMIDI and PortTime
+    sudo apt-get install libportmidi-dev
 
 On Fedora 13 you need enable rpmfusion repo and then:
 
@@ -31,17 +31,14 @@ your distribution's package manager:
   - libid3tag
   - libmad
   - [PortAudio-v19](http://www.portaudio.com)
-  - QT 4.4.0+ (if installing from packages, make sure to get
+  - QT 4.6.0+ (if installing from packages, make sure to get
     libqt4-opengl and libqt4-svg too.)
   - libogg, libvorbis, libvorbisfile
   - libsndfile
-
-To build v1.8 (branch lp:mixxx), you'll also need these:
-
   - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
   - [libmp4](http://www.mpeg4ip.net/) (or
-    [libmp4v2](http://code.google.com/p/mp4v2/))
-  - Qt 4.5.0+
+    [libmp4v2](http://code.google.com/p/mp4v2/)) (optional, for M4A file
+    support)
 
 ## 2\. Get Mixxx
 
@@ -50,16 +47,15 @@ Either grab the source for the latest release from our [downloads
 page](http://www.mixxx.org/download.php), or checkout a snapshot from
 BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 
-  - For the latest stable release: `bzr checkout lp:mixxx/1.7`
+  - For the latest stable release: `bzr checkout lp:mixxx/1.8`
   - For trunk: `bzr checkout lp:mixxx`
-  - For the 1.8 release branch: `bzr checkout lp:mixxx/1.8`
 
 ## 3\. Compile and install
 
 If you got the source code from BZR, change to the newly created "mixxx"
 directory, and use scons to compile and install:
 
-    cd 1.7  # or  cd mixxx  if you downloaded trunk
+    cd 1.8  # or  cd mixxx  if you downloaded trunk
     cd mixxx  # (again)
     sudo scons prefix=/usr install
     # or just  scons  if you want to run Mixxx from the current directory.

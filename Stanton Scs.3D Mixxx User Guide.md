@@ -20,8 +20,8 @@ variables at the top of the script you can set to your liking:
     spinning platter LED in vinyl modes. Otherwise shows in all modes
     except Instant Pitch Change and TRIG (because they're used for other
     things in those modes.)
-  - **spinningLights** - The number of lights used for the spinning
-    platter effect, 1 or 2. (1 is best for juggling.)\*
+  - **spinningLights**\* - The number of lights used for the spinning
+    platter effect, 1 or 2. (1 is best for juggling.)
   - **VUMeters** - If set to true, shows a VU meter in the circular area
     for the currently selected deck when in vinyl mode. (Left for deck
     1, right for deck 2.)
@@ -32,9 +32,9 @@ variables at the top of the script you can set to your liking:
   - **globalMode** - If true, the unit will stay in the current mode on
     deck changes (instead of switching to the mode you were in the last
     time you controlled that deck.)
-  - **singleDeck** - If you've got more than one MIDI controller, set
+  - **singleDeck**\* - If you've got more than one MIDI controller, set
     this to true to have the SCS.3d stay on one deck and make Deck mode
-    non-temporary. [More on this here](#deck-mode).\*
+    non-temporary. [More on this here](#deck-mode).
   - **deckChangeWait** - Time in milliseconds to hold the DECK button
     down to avoid changing decks
 

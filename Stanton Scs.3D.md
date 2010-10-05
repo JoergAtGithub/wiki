@@ -13,23 +13,29 @@ Link to the website: <http://www.enterthesystem.com/system/scs3d/>
 **Stanton's DaRouter is not used with Mixxx 1.7.0 and up. Close it
 before starting Mixxx.**
 
-  - Download the files for the applicable version of Mixxx below.
-  - Save the files into:
+1.  Download the files for the applicable version of Mixxx below.
+2.  Save the files into:
+
+<!-- end list -->
+
   - Windows: `C:\Program Files\Mixxx\midi` (technically
     `%PROGRAMFILES%\Mixxx\midi`)
   - OS X: `/Applications/Mixxx.app/Contents/midi`
-  - Linux: `/usr/share/mixxx/midi`
-  - Then do the following:
-  - Plug in the controller and wait for it to settle to the all-blue
+  - Linux: `/usr[/local]/share/mixxx/midi`
+
+<!-- end list -->
+
+1.  Plug the controller in and wait for it to settle to the all-blue
     state.
-  - Start Mixxx
-  - Open Preferences
-  - Expand "MIDI Controllers"
-  - Select the "Stanton SCS.3d" device (or "USB Audio Device" in
+2.  Start Mixxx
+3.  Open Preferences
+4.  Expand "MIDI Controllers"
+5.  Select the "Stanton SCS.3d" device (or "USB Audio Device" in
     Windows)
-  - Click the Enable checkbox
-  - Click the drop-down and choose the "Stanton SCS.3d" mapping
-  - Click OK and you're good to go. (The controller should initialize
+6.  Click the Enable checkbox in the right pane ("Activate" button on
+    1.7)
+7.  Click the drop-down and choose the "Stanton SCS.3d" mapping
+8.  Click OK and you're good to go. (The controller should initialize
     and light up.)
 
 ### 1.8.x

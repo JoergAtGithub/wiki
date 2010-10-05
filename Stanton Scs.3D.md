@@ -8,25 +8,42 @@ Link to the website: <http://www.enterthesystem.com/system/scs3d/>
 
 ## Latest MIDI mapping & script files
 
-### 1.8.0\~beta
+#### Instructions
 
-**Stanton's DaRouter is not used with Mixxx. Close it before starting
-Mixxx.**
+**Stanton's DaRouter is not used with Mixxx 1.7.0 and up. Close it
+before starting Mixxx.**
 
-For those testing the v1.8.0 betas, the latest MIDI mapping and script
-file are in trunk and can be downloaded from here:
+  - Download the files for the applicable version of Mixxx below.
+  - Save the files into:
+  - Windows: `C:\Program Files\Mixxx\midi` (technically
+    `%PROGRAMFILES%\Mixxx\midi`)
+  - OS X: `/Applications/Mixxx.app/Contents/midi`
+  - Linux: `/usr/share/mixxx/midi`
+  - Then do the following:
+  - Plug in the controller and wait for it to settle to the all-blue
+    state.
+  - Start Mixxx
+  - Open Preferences
+  - Expand "MIDI Controllers"
+  - Select the "Stanton SCS.3d" device (or "USB Audio Device" in
+    Windows)
+  - Click the Enable checkbox
+  - Click the drop-down and choose the "Stanton SCS.3d" mapping
+  - Click OK and you're good to go. (The controller should initialize
+    and light up.)
+
+### 1.8.x
+
+The latest official MIDI mapping and script file are in the 1.8 release
+branch and can be downloaded from here:
 
   - [Stanton
-    SCS.3d.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/trunk/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
-  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/trunk/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
+    SCS.3d.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.8.x/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
+  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.8.x/download/head%3A/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
 
-Look at the "Coming in v1.8" sub-sections of the [Mixxx user's guide for
-the SCS.3d](stanton_scs.3d_mixxx_user_guide) for the new features.
+[Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)
 
 ### 1.7.x
-
-**Stanton's DaRouter is not used with Mixxx 1.7.0 and higher. Close it
-before starting Mixxx.**
 
 The latest official MIDI mapping and script file are in the 1.7 release
 branch and can be downloaded from here:

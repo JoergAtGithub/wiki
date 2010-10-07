@@ -28,11 +28,6 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
-### 1.7.3
-
-Bug-fix release. See <https://launchpad.net/mixxx/+milestone/1.7.3> May
-be bumped by 1.8.0 release.
-
 ### 1.8.0
 
 // Release Schedule //

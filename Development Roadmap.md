@@ -1,6 +1,4 @@
-``` 
- ====== Development Roadmap ======
-```
+# Development Roadmap
 
 This page represents the opinion of the Mixxx development team, as such
 it is not editable by general users. If you have comments or

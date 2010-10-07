@@ -1,4 +1,6 @@
-# Development Roadmap
+``` 
+ ====== Development Roadmap ======
+```
 
 This page represents the opinion of the Mixxx development team, as such
 it is not editable by general users. If you have comments or
@@ -28,6 +30,51 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
+### 1.9
+
+Release Date: Late-2010/Early-2011
+
+No firm roadmap beyond 1.8.x as yet, will be decided once 1.8.0 cycle is
+complete.
+
+Plan as of October 7th, 2010:
+
+  - Shoutcast/Icecast
+  - SampleUtil / Hydra (optimizations)
+  - Fixes for iTunes/Rhythmbox slowness, tiling waveform?
+  - Deprecated Qt3 code removal
+  - Random incremental improvements (library?)
+  - Tentative freeze: November 1st
+  - Release: \~End of 2010
+
+Side projects:
+
+  - SConscript Refactor
+  - Build server
+  - Reading with Taglib
+
+### 1.10
+
+Tentatively:
+
+  - Vinyl control updates
+  - External mixer mode
+
+### Probably Longer Term
+
+To add to the list of ideas that would be cool in Mixxx, add them to
+[feature\_discussion](feature_discussion) or file a Wishlist bug at
+Launchpad.
+
+  - Sampler, Effects
+  - [Skinning Engine](Skinning%20Engine)
+  - [Revamped Control System](Revamped%20Control%20System)
+  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
+
+## Historical Release Roadmaps
+
+*Released October 5th, 2010*
+
 ### 1.8.0
 
 // Release Schedule //
@@ -44,9 +91,8 @@ important around it.
 
 We tried to sync up with the Ubuntu release cycle, but were unable to
 commit enough developer time to fixing bugs, despite our best efforts.
-(Feature freeze for Lucid Lynx was February 18th, 2010.)
-
-[To-do list](1.8.0_to_do_list)
+(Feature freeze for Lucid Lynx was February 18th, 2010.) *We did get
+Mixxx 1.8.0 into Ubuntu 10.10 though\!* [To-do list](1.8.0_to_do_list)
 
 New main features:
 
@@ -60,41 +106,9 @@ New main features:
 
 Side Projects
 
-  - Build Server\!
-  - Test Evangelism
-  - SConscript Refactor
+  - Unit Testing
 
 Bugs fixed: <https://bugs.launchpad.net/mixxx/+milestone/1.8.0>
-
-### 1.9
-
-Release Date: Late-2010/Early-2011
-
-No firm roadmap beyond 1.8.x as yet, will be decided once 1.8.0 cycle is
-complete.
-
-Preliminary plan is:
-
-  - Shoutcast/Icecast
-  - SampleUtil / Hydra (optimizations)
-  - Fixes for iTunes/Rhythmbox slowness, tiling waveform?
-
-### 1.10
-
-  - Vinyl control updates
-  - Sampler, Effects, External mixer mode?
-
-### Probably Longer Term
-
-To add to the list of ideas that would be cool in Mixxx, add them to
-[feature\_discussion](feature_discussion) or file a Wishlist bug at
-Launchpad.
-
-  - [Skinning Engine](Skinning%20Engine)
-  - [Revamped Control System](Revamped%20Control%20System)
-  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
-
-## Historical Release Roadmaps
 
 ### 1.7.0
 
@@ -112,69 +126,6 @@ New features:
 
 Bugs fixed: See <https://launchpad.net/mixxx/+milestone/1.7.0>
 
-## Changelog
+## Changelogs
 
-Since Mixxx 1.6.0 was released, the following changes have been made:
-
-  - MIDI Scripting functionality has been added
-  - MIDI Learning functionality has been added
-
------
-
-Since Mixxx 1.5.0 was released (March 4th, 2007), the following changes
-have been made:
-
-  - New MIDI mappings for Tascam US-428, M-Audio X-Session Pro,
-    Evolution X-Session, FaderFox DJ2, and the M-Audio Torq Xponent
-  - ALSA Sequencer MIDI support courtesy of Cedric Gestes
-  - A couple of MIDI bug fixes (knobs now center properly, thanks to
-    Sacha Berger)
-  - Added support for 14-bit MIDI pitch wheel controllers (thanks to
-    Adam Sugerman)
-  - Hercules support on Linux improved (jog wheels work again)
-  - New nCut skin from Frank Willascheck
-  - (Trancer skin?)
-  - Big stability improvements (3 bug fixes)
-  - Multiple soundcards can now be used for output (master/headphones),
-    in case you don't have a soundcard with 4 outputs on it.
-  - Adam's wicked colour scheme support for skins
-  - Can now change skins without restarting Mixxx (more hard work from
-    Adam)
-  - Channel VU meters are now pre-fader
-  - VU meters are now much more smooth
-  - Added clipping indicators (courtesy of John Sully)
-  - Higher quality EQs and other sound quality improvements (also from
-    John Sully)
-  - Adjustable EQ shelves
-  - New MIDI mapping format now in XML, supports controlling LEDs
-  - Better Hercules support on Windows and Linux
-  - Initial support for recording output
-  - New BPM detection algorithm (Micah Lee/GSoC)
-  - New media library (Nathan Prado/GSoC)
-  - LADSPA effects support (Pawel Bartkiewicz/GSoC)
-  - BPM Tap tempo 
-  - Library search function
-  - Ported to QT4 (\!)
-  - Moved build system to SCONS
-  - Redesigned preferences dialogs
-  - Rewritten audio core (Albert)
-  - Vinyl control support for Serato, Traktor Scratch, and FinalScratch
-    (FS needs work, but the others are good)
-  - Software preamp for vinyl control (can use turntables without a
-    preamp)
-  - Track info editor (double-click in library)
-  - New library browse mode (CTAF)
-  - Starts in fullscreen mode if launched with the -f flag.
-  - Several MP3 decoder performance and stability improvements (John
-    Sully)
-  - Support for merengue
-  - Reorganized "File" menu
-  - NEXT mode now works as expected (plays the next track in the table)
-  - Lots of little OS X improvements
-  - Improved consistency of fullscreen mode
-  - Customizable constant power crossfader curve
-  - Slow fade and fast cut crossfader curves
-  - Play queue
-  - Revamped playlist interface, editing
-  - Experimental Shoutcast support
-  - Somewhat intelligent library rescanning
+Available on the [Mixxx blog](http://mixxxblog.blogspot.com)

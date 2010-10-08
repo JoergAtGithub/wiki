@@ -40,7 +40,7 @@ etc.) and be up & running in about a minute.
 
 ## MixxxOS
 
-**Update: v1.1 is available for testing**
+**Update: v1.2 is available for testing**
 
 I'm proud to announce to you the new MixxxOS. MixxxOS is a minimal
 Ubuntu 10.04 LTS base system including just enough to run Mixxx, copy
@@ -57,7 +57,45 @@ updates or whatever you like. MixxxOS was build using
 included on the cd so it's pretty simple to add extra software and
 create a custom installable livecd.
 
-Installation on a usb stick is also quite simple, there are two ways:
+##### What's new in 1.2?
+
+**Changes:**
+
+``` 
+    updated Mixxx to the latest 1.8 release
+    replaced GDM with LXDM (saves 100MB in gnome deps)
+```
+
+**New:**
+
+``` 
+    realtime kernel (linux-rt)
+    jack and qjackctl
+    Ubuntu software center
+    Update manager
+    Gnome ppp (for connecting 3G dongles)
+```
+
+The next release will be the 1.3 final for wich I need your help so
+please test the 1.2 release and tell me what you do and don't like about
+it so we can make the 1.3 release just perfect. Also the next release
+will contain MixxxOS boot screens and a decent login theme. If you feel
+like creating some artwork please do for I'm no Gimping genious. We need
+a Grub2 splash, a plymouth boot splash and an LXDM theme.
+
+-----
+
+**==Installation==**
+
+-----
+
+For hard disk installation the Ubuntu system installer Ubiquity is
+includes, you can follow the easy installation steps on the [Ubuntu
+wiki](https://help.ubuntu.com/community/GraphicalInstall)
+
+-----
+
+**Installation on a usb stick is also quite simple:**
 
 ##### Live system on small USB key 500MB+
 
@@ -89,23 +127,15 @@ a 512MB swap and formatted the remaining space FAT32 and mounted it on
 the user's home. Make sure before starting the install in the final
 screen to check if the bootloader will be installed to the MBR of your
 usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
-1.4GB installation that can be used on multiple computers.
+1.7GB installation that can be used on multiple computers.
 
-##### HD installation
+#### Downloads
 
-Just boot it up and install, it's easy as pie but for now use mixxx as
-your login name otherwise you will not have the livecd settings afther
-installation, the realname may be anything. If you like to set up a big
-disk or partition for storing music you can mount it at /home/music, if
-you like to create users you can simply link this folder in their homes
-if you like.
+[MixxxOS 1.1 x86
+(530MB)](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
+[MD5SUM](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso.md5)
 
-#### Download
-
-[MixxxOS 1.1
-x86](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.1.iso)
-[MD5SUM](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.1.iso.md5)
-[Torrent](http://linuxtracker.org/download.php?id=bf3e66fad4c114490889423e6df7e09d6d6df96f&f=MixxxOS%201.1%2C%20designed%20just%20for%20Mixxxing.torrent)
+[Torrent](http://linuxtracker.org/index.php?page=torrent-details&id=5f2ced88cda90a7ae6d0acc4628160446462f4ec)
 
 Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
 get spammed a lot) or the mixxx forums to sent me bugs and feature

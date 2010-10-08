@@ -104,7 +104,17 @@ Next format your USB key and mount it. Open Unetbootin and point it to
 the MixxxOS iso file and your USB drive and click install. Nothing to it
 ;)
 
-##### Full HD install on external USB disk or SD card
+##### Persistant usb install
+
+(this allows changes to be saved on the usb key, ie mixxx database,
+installed applications, updates etc..) Just install usb-creator in
+MixxxOS or use the one on your Ubuntu or Linux Mint desktop, just point
+it to the iso file and correct usb key and tell the program how much
+space to use for saving changes and that's it. (more info @
+\[url=[https://wiki.ubuntu.com/usb-creator\]the](https://wiki.ubuntu.com/usb-creator%5Dthe)
+ubuntu wiki\[/url\])
+
+##### Full install on external USB disk or SD card
 
 I've just tested this and it works great\!\! I had this 8GB slim USB key
 laying around for a while now and wanted to use it with what has become

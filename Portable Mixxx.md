@@ -43,19 +43,21 @@ etc.) and be up & running in about a minute.
 **Update: v1.2 is available for testing**
 
 I'm proud to announce to you the new MixxxOS. MixxxOS is a minimal
-Ubuntu 10.04 LTS base system including just enough to run Mixxx, copy
-your files around and use the internet.
+Ubuntu 10.04 LTS base system which includes everything a Mixxx DJ would
+ever need and also it's really easy to use. Also there are plans to
+create a Mini MixxxOS including just enough to run Mixxx, copy your
+files around and use the internet.
 
 This release can be used as a livecd/usb but is also perfect for
 installation on netbooks and tablets for it does not load a full desktop
 but you can login right into Mixxx if you like, also the openbox window
-manager is included as the "MixxxOS settings" session available on the
+manager is included as the "MixxxOS Desktop" session available on the
 login screen, this session provides nice lightweight graphical tools to
 configure the system, copy files and archives and install codecs,
 updates or whatever you like. MixxxOS was build using
-[Remastersys](http://www.geekconnection.org/remastersys/) wich is also
+[Remastersys](http://www.geekconnection.org/remastersys/) wich is
 included on the cd so it's pretty simple to add extra software and
-create a custom installable livecd.
+create a custom MixxxOS respin.
 
 ##### What's new in 1.2?
 

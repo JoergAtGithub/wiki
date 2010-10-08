@@ -85,15 +85,11 @@ a Grub2 splash, a plymouth boot splash and an LXDM theme.
 
 -----
 
-**==Installation==**
-
------
+##### Installation
 
 For hard disk installation the Ubuntu system installer Ubiquity is
-includes, you can follow the easy installation steps on the [Ubuntu
+included, you can follow the easy installation steps on the [Ubuntu
 wiki](https://help.ubuntu.com/community/GraphicalInstall)
-
------
 
 **Installation on a usb stick is also quite simple:**
 

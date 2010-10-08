@@ -112,9 +112,8 @@ the MixxxOS iso file and your USB drive and click install. Nothing to it
 installed applications, updates etc..** Just install usb-creator in
 MixxxOS or use the one on your Ubuntu or Linux Mint desktop, just point
 it to the iso file and correct usb key and tell the program how much
-space to use for saving changes and that's it. (more info @
-\[url=[https://wiki.ubuntu.com/usb-creator\]the](https://wiki.ubuntu.com/usb-creator%5Dthe)
-ubuntu wiki\[/url\])
+space to use for saving changes and that's it. (more info @ [the ubuntu
+wiki](https://wiki.ubuntu.com/usb-creator))
 
 ##### Full install on external USB disk or SD card
 

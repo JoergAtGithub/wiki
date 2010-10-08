@@ -141,6 +141,8 @@ usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
 
 [MixxxOS 1.2 x86
 (530MB)](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
+| [Mirror 2](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.2.iso) |
+[Mirror 3](http://www.megaupload.com/?d=S8ZCUG25) (Megaupload) |
 [MD5SUM](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso.md5)
 
 [Torrent](http://linuxtracker.org/index.php?page=torrent-details&id=5f2ced88cda90a7ae6d0acc4628160446462f4ec)

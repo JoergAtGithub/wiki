@@ -146,6 +146,11 @@ usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
 
 [Torrent](http://linuxtracker.org/index.php?page=torrent-details&id=5f2ced88cda90a7ae6d0acc4628160446462f4ec)
 
+**Tiny bug: the autologin does not seem to work. For now just login
+with:**
+
+username **mixxx** passwd: **mixxxlive**
+
 -----
 
 #### Installer and debs

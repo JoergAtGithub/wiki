@@ -44,9 +44,9 @@ etc.) and be up & running in about a minute.
 
 I'm proud to announce to you the new MixxxOS. MixxxOS is a minimal
 Ubuntu 10.04 LTS base system which includes everything a Mixxx DJ would
-ever need and also it's really easy to use. Also there are plans to
-create a Mini MixxxOS including just enough to run Mixxx, copy your
-files around and use the internet.
+ever need and it's really easy to use. Also there are plans to create a
+Mini MixxxOS including just enough to run Mixxx, copy your files around
+and use the internet.
 
 This release can be used as a livecd/usb but is also perfect for
 installation on netbooks and tablets for it does not load a full desktop

@@ -93,16 +93,16 @@ wiki](https://help.ubuntu.com/community/GraphicalInstall)
 
 **Installation on a usb stick is also quite simple:**
 
-##### Live system on small USB key 500MB+
+##### Live system on small USB key 1GB+
 
 This is not really ideal for it does not save your settings but if you
 include the audio codecs on the iso or only use flac and ogg files it's
-a nice way to bring your old 512MB or 1GB stick back to use. Just
-download [Unetbootin](http://unetbootin.sourceforge.net) for the OS of
-your choice (included in most Linux distribution repositories) and
-install. Next format your USB key and mount it. Open Unetbootin and
-point it to the MixxxOS iso file and your USB drive and click install.
-Nothing to it ;)
+a nice way to bring your old 1GB stick back to use. Just download
+[Unetbootin](http://unetbootin.sourceforge.net) for the OS of your
+choice (included in most Linux distribution repositories) and install.
+Next format your USB key and mount it. Open Unetbootin and point it to
+the MixxxOS iso file and your USB drive and click install. Nothing to it
+;)
 
 ##### Full HD install on external USB disk or SD card
 

@@ -76,12 +76,12 @@ create a custom installable livecd.
     Gnome ppp (for connecting 3G dongles)
 ```
 
-The next release will be the 1.3 final for wich I need your help so
+**The next release will be the 1.3 final for wich I need your help so
 please test the 1.2 release and tell me what you do and don't like about
 it so we can make the 1.3 release just perfect. Also the next release
 will contain MixxxOS boot screens and a decent login theme. If you feel
 like creating some artwork please do for I'm no Gimping genious. We need
-a Grub2 splash, a plymouth boot splash and an LXDM theme.
+a Grub2 splash, a plymouth boot splash and an LXDM theme.**
 
 -----
 
@@ -132,6 +132,24 @@ usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
 [MD5SUM](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso.md5)
 
 [Torrent](http://linuxtracker.org/index.php?page=torrent-details&id=5f2ced88cda90a7ae6d0acc4628160446462f4ec)
+
+-----
+
+#### Installer and debs
+
+**If you don't know how to work the Linux command line please do not use
+the installer and just download the iso or torrent file above. The deb
+package can safely be installed on Ubuntu 10.04 simply by clicking it
+(did not test 10.10 yet) and can also be removed with the package
+manager if you like.**
+
+[MixxxOS installation
+script](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/installer/MixxxOS-installer.sh)
+(for use on a minimal Ubuntu installation (netinstall)
+[MixxxOS-desktop](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/packages/MixxxOS-desktop-1.2-lucid.deb)
+Can be used to upgrade your MixxxOS to the latest version and can be
+used on Ubuntu to pull in all apps, Artwork and user settings included
+in MixxxOS.
 
 Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
 get spammed a lot) or the mixxx forums to sent me bugs and feature

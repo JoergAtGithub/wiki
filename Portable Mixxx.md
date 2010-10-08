@@ -158,11 +158,12 @@ manager if you like.**
 [MixxxOS installation
 script](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/installer/MixxxOS-installer.sh)
 (for use on a minimal Ubuntu installation (netinstall)
+
 [MixxxOS-desktop](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/packages/MixxxOS-desktop-1.2-lucid.deb)
 Can be used to upgrade your MixxxOS to the latest version and can be
 used on Ubuntu to pull in all apps, Artwork and user settings included
 in MixxxOS.
 
-Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
+**Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
 get spammed a lot) or the mixxx forums to sent me bugs and feature
-requests. Have fun, Socialdefect aka Arjan van Lent
+requests. Have fun, Socialdefect aka Arjan van Lent**

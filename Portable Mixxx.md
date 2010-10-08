@@ -108,8 +108,8 @@ the MixxxOS iso file and your USB drive and click install. Nothing to it
 
 ##### Persistant usb install
 
-(this allows changes to be saved on the usb key, ie mixxx database,
-installed applications, updates etc..) Just install usb-creator in
+**this one allows changes to be saved on the usb key, ie mixxx database,
+installed applications, updates etc..** Just install usb-creator in
 MixxxOS or use the one on your Ubuntu or Linux Mint desktop, just point
 it to the iso file and correct usb key and tell the program how much
 space to use for saving changes and that's it. (more info @
@@ -139,7 +139,7 @@ usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
 
 #### Downloads
 
-[MixxxOS 1.1 x86
+[MixxxOS 1.2 x86
 (530MB)](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
 [MD5SUM](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso.md5)
 

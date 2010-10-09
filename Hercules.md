@@ -184,8 +184,10 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 |                                             | Up (8)/Down (8) + Jog (18) | MIDI Script: Rapid Track List scrolling (buggy)                                                                |  |
 |                                             | Cue (21) + Play (19)       | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |  |
 
-## Hercules DJ Control Steel (Untested)
+## Hercules DJ Control Steel (tested)
 
+You need to update the mapping with followings files : [Link to mapping
+files](http://slist.lilotux.net/linux/deejay/mixxx/)
 [[/media/hercules_dj_control_steel_top_face.png|]]
 
 | Hercules DJ Control Steel Controls |                       |                           |  |
@@ -197,14 +199,20 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 |                                    | Pitch Bend + (12)     | Temp Rate Up              |  |
 |                                    | Pitch Bend - (13)     | Temp Rate Down            |  |
 |                                    | Vol Main (23)         | Master Gain               |  |
-|                                    | 1 (9)                 | Flanger                   |  |
+|                                    | 1 (9)                 | Flanger on/off            |  |
+|                                    | 2 (9)                 | Hotcue 1 set              |  |
+|                                    | 3 (9)                 | Hotcue 2 set              |  |
 |                                    | 4 (9)                 | Reverse                   |  |
+|                                    | 5 (9)                 | Hotcue 1 goto             |  |
+|                                    | 6 (9)                 | Hotcue 2 goto             |  |
+|                                    | 7 (9)                 | loop in                   |  |
+|                                    | 8 (9)                 | loop exit                 |  |
+|                                    | 10 (9)                | loop out                  |  |
+|                                    | 9,11,12 (9)           | Unmapped                  |  |
 |                                    | Up (8)                | Select Prev Track in List |  |
 |                                    | Down (8)              | Select Next Track in List |  |
-|                                    | 2,3,5,6 (9)           | Unmapped                  |  |
-|                                    | 7,8,9,10,11,12 (9)    | Unmapped                  |  |
-|                                    | Right, Left (8)       | Unmapped                  |  |
-|                                    | Stop (19)             | Unmapped                  |  |
+|                                    | Right, Left (8)       | Navigate                  |  |
+|                                    | Stop (19)             | stop                      |  |
 |                                    | Scratch (7)           | Unmapped                  |  |
 |                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |
 

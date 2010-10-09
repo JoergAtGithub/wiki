@@ -184,7 +184,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 |                                             | Up (8)/Down (8) + Jog (18) | MIDI Script: Rapid Track List scrolling (buggy)                                                                |  |
 |                                             | Cue (21) + Play (19)       | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |  |
 
-## Hercules DJ Control Steel (tested)
+## Hercules DJ Control Steel (Tested)
 
 You need to update the mapping with following files : [Link to mapping
 files](http://slist.lilotux.net/linux/deejay/mixxx/)

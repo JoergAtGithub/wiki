@@ -186,7 +186,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 
 ## Hercules DJ Control Steel (tested)
 
-You need to update the mapping with followings files : [Link to mapping
+You need to update the mapping with following files : [Link to mapping
 files](http://slist.lilotux.net/linux/deejay/mixxx/)
 [[/media/hercules_dj_control_steel_top_face.png|]]
 

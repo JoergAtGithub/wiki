@@ -45,11 +45,11 @@ Este manual tambien esta disponible en:
 
 # Introduccion
 
-Mixxx es un programa de computacion disenyado para DJs y que es capaz de
-mezclar dos canciones juntas y en tiempo real. Mixxx soporta los
-formatos MP3, OGG, FLAC y WAVE y puede ser controlado por numerosos
-controladores MIDI. Tambien se puede utilizar una torna mesa con vinilos
-codificados con Timecode para controlar Mixxx con *Control por Vinilos*.
+Mixxx es un programa de computacion diseñado para DJs y que permite
+mezclar dos canciones juntas en tiempo real. Mixxx soporta los formatos
+MP3, OGG, FLAC y WAVE y puede ser controlado por numerosos controladores
+MIDI. Tambien se puede utilizar una tornamesa con vinilos codificados
+con Timecode para controlar Mixxx con *Control por Vinilos*.
 
 # Instalacion
 

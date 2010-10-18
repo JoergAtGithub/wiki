@@ -50,7 +50,7 @@ plans.
 
 ## Mixxx Developer Reference Documentation
 
-  - **[To-do list before the next release](1.8.0_to_do_list)** - Please
+  - **[To-do list before the next release](1.9.0_to_do_list)** - Please
     check this and contribute where you can so we can release sooner\!
 
 ### Getting Started

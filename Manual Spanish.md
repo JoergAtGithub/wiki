@@ -51,7 +51,7 @@ MP3, OGG, FLAC y WAVE y puede ser controlado por numerosos controladores
 MIDI. Tambien se puede utilizar una tornamesa con vinilos codificados
 con Timecode para controlar Mixxx con *Control por Vinilos*.
 
-# Instalacion
+# Instalación
 
 ## Windows
 

@@ -78,9 +78,9 @@ al directorio *Applications*. Mixxx require un Mac Intel corriendo OS
 
 [[/media/manual/mixxx-overview.png|]]
 
-Mixxx esta disenyado para ser simple y facil de usar para mezclar en
-vivo. Esta seccion contiene un resumen de las funciones mas prominentes
-de su interfaz.
+Mixxx esta diseñado para ser simple y facil de usar en vivo. Esta
+seccion contiene un resumen de las funciones mas importantes de su
+interfaz.
 
 ## Playback Controls
 

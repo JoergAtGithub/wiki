@@ -113,6 +113,8 @@ To begin troubleshooting any problems you have, please do the following:
   - Make sure your left and right RCA cables are plugged into the
     correct plugs. A swapped pair of RCA cables will cause Mixxx to also
     behave strangely, such as play songs in reverse.
+  - Ensure "Master Tempo", "Pitch Lock", or "Key Lock" is turned OFF on
+    your turntable or CD deck. 
   - Make sure your tonearm is balanced. 
   - Make sure your soundcards have stereo line-in. Many on-board
     soundcards only have mono line-in and won't function correctly with

@@ -6,7 +6,7 @@ Questo manuale è disponibile anche in:
   - [Spagnolo (Español)](manual_spanish)
 
 *Tali traduzioni sono state cortesemente fornite dai sostenitori di
-Mixxx e noi contiamo su di te per mantenerle aggiornate\! (Il team di
+MIXXX e noi contiamo su di te per mantenerle aggiornate\! (Il team di
 sviluppo di MIXXX parla principalmente inglese)*
 
 # Table of Contents

@@ -1,9 +1,9 @@
-# Available Languages
+# Lingue Disponibili
 
-This manual is also available in:
+Questo manuale è disponibile anche in:
 
-  - [German (Deutsch)](manual_german)
-  - [Spanish (Español)](manual_spanish)
+  - [Tedesco (Deutsch)](manual_german)
+  - [Spagnolo (Español)](manual_spanish)
 
 *These translations were graciously provided by Mixxx fans and we depend
 on you to keep them up to date\! (The Mixxx development team speaks

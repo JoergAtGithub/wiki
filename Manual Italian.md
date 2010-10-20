@@ -5,9 +5,9 @@ Questo manuale è disponibile anche in:
   - [Tedesco (Deutsch)](manual_german)
   - [Spagnolo (Español)](manual_spanish)
 
-*These translations were graciously provided by Mixxx fans and we depend
-on you to keep them up to date\! (The Mixxx development team speaks
-English primarily.)*
+*Tali traduzioni sono state cortesemente fornite dai sostenitori di
+Mixxx e noi contiamo su di te per mantenerle aggiornate\! (Il team di
+sviluppo di MIXXX parla principalmente inglese)*
 
 # Table of Contents
 

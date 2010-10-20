@@ -11,13 +11,13 @@ sviluppo di MIXXX parla principalmente inglese)*
 
 # Indice dei Contenuti
 
-1.  [Beginner's Guide](Beginner's%20Guide)
+1.  [Guida per i principianti](Guida%20per%20i%20principianti)
 2.  [Introduzione](manual#introduction)
 3.  [Installazione](manual#installation)
     1.  [Windows](manual#windows)
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)
-4.  [User Interface Overview](manual#user_interface_overview)
+4.  [Panoramica sull'Interfaccia Utente](manual#user_interface_overview)
     1.  [Playback Controls](manual#playback_controls)
     2.  [Tempo Controls](manual#tempo_controls)
     3.  [Headphone and Flanger](manual#headphone_and_flanger)

@@ -9,11 +9,11 @@ Questo manuale è disponibile anche in:
 MIXXX e noi contiamo su di te per mantenerle aggiornate\! (Il team di
 sviluppo di MIXXX parla principalmente inglese)*
 
-# Table of Contents
+# Indice dei Contenuti
 
 1.  [Beginner's Guide](Beginner's%20Guide)
-2.  [Introduction](manual#introduction)
-3.  [Installation](manual#installation)
+2.  [Introduzione](manual#introduction)
+3.  [Installazione](manual#installation)
     1.  [Windows](manual#windows)
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)

@@ -35,8 +35,8 @@ English primarily.)*
     5.  [Funzionalità "Vinyl Control"](manual#vinyl_control)
 6.  [Mixare con Mixxx](manual#djing_with_mixxx)
     1.  [Caricamento Tracce](manual#loading_tracks)
-    2.  [Waveform Displays](manual#waveform_displays)
-    3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
+    2.  [Display delle Forme d'Onda](manual#waveform_displays)
+    3.  [Beatmatching e Mixaggio](manual#beatmatching_and_mixing)
     4.  [Headphone Cueing](manual#headphone_cueing)
 7.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).

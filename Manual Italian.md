@@ -20,9 +20,9 @@ sviluppo di MIXXX parla principalmente inglese)*
 4.  [Panoramica sull'Interfaccia Utente](manual#user_interface_overview)
     1.  [Playback Controls](manual#playback_controls)
     2.  [Tempo Controls](manual#tempo_controls)
-    3.  [Headphone and Flanger](manual#headphone_and_flanger)
-    4.  [Volume and EQ](manual#volume_and_eq)
-    5.  [Waveform](manual#waveform)
+    3.  [Cuffie e Flanger](manual#headphone_and_flanger)
+    4.  [Volume ed equalizzatore](manual#volume_and_eq)
+    5.  [Forma d'onda](manual#waveform)
     6.  [Waveform Overview](manual#waveform_overview)
     7.  [End of Track Mode](manual#end_of_track_mode)
     8.  [Master and Crossfader

@@ -30,7 +30,7 @@ English primarily.)*
 5.  [Configurazione](manual#configuration)
     1.  [Uscite Master e Cuffie](manual#master_and_headphone_outputs)
     2.  [Latenza](manual#latency)
-    3.  [Samplerates](manual#samplerates)
+    3.  [Frequenza di Campionatura](manual#samplerates)
     4.  [Sound APIs](manual#sound_apis)
     5.  [Vinyl Control](manual#vinyl_control)
 6.  [DJing with Mixxx](manual#djing_with_mixxx)

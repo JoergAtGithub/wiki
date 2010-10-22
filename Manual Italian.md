@@ -55,7 +55,7 @@ diversi [controller MIDI](manual#midi_controllers). Anche i giradischi
 dotati di *timecoded vinyl* possono essere utilizzati per controllare
 Mixxx grazie alla funzionalità [vinyl control](manual#vinyl_control).
 
-# Installation
+# Installazione
 
 ## Windows
 

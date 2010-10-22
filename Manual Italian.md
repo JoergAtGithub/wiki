@@ -48,7 +48,7 @@ sviluppo di MIXXX parla principalmente inglese)*
 # Introduzione
 
 Mixxx è un software ideato per i DJ che permette di mixare live delle
-tracce musicali. Mixxx supporta nativamente la riproduzione di formati
+tracce musicali. Mixxx supporta nativamente la riproduzione dei formati
 MP3, OGG, FLAC, WAVE, ed AIFF (esistono inoltre dei plugins per il
 supporto di [ulteriori formati](add-ons)) e può essere utilizzato con
 diversi [controller MIDI](manual#midi_controllers). Anche i giradischi

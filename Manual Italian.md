@@ -66,11 +66,13 @@ Windows 7, versioni 32 e 64 bit. (Può anche funzionare con Windows
 
 ## Linux
 
-Linux users can often find Mixxx included with their favourite
-distribution. For example, **Ubuntu** users can install Mixxx through
-the *Applications-\>Add/Remove...* menu item. If Mixxx is not packaged
-for your distribution, you can compile Mixxx from scratch. For details
-on compiling Mixxx, see: [Compiling on Linux](Compiling%20on%20Linux)
+Gli utenti Linux spesso trovano Mixxx già incluso nelle proprie
+distribuzioni preferite. Ad esempio, chi utilizza **Ubuntu** può
+installare Mixxx tramite la voce di menù
+*Applicazioni-\>Aggiungi/Rimuovi...*. Se Mixxx non è incluso nella
+vostra distribuzione, potete sempre compilarlo da zero. Per i dettagli
+su come compilare Mixxx vedi [Compilare su
+Linux](Compilare%20su%20Linux).
 
 ## OS X
 

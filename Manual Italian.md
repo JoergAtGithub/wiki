@@ -18,33 +18,32 @@ sviluppo di MIXXX parla principalmente inglese)*
     2.  [Linux](manual#linux)
     3.  [OS X](manual#os_x)
 4.  [Panoramica sull'Interfaccia Utente](manual#user_interface_overview)
-    1.  [Playback Controls](manual#playback_controls)
+    1.  [Funzionalità di Riproduzione](manual#playback_controls)
     2.  [Tempo Controls](manual#tempo_controls)
     3.  [Cuffie e Flanger](manual#headphone_and_flanger)
     4.  [Volume ed equalizzatore](manual#volume_and_eq)
     5.  [Forma d'onda](manual#waveform)
-    6.  [Waveform Overview](manual#waveform_overview)
-    7.  [End of Track Mode](manual#end_of_track_mode)
-    8.  [Master and Crossfader
-        Controls](manual#master_and_crossfader_controls)
-    9.  [Library](manual#library)
-5.  [Configuration](manual#configuration)
-    1.  [Master and Headphone
-        Outputs](manual#master_and_headphone_outputs)
-    2.  [Latency](manual#latency)
-    3.  [Samplerates](manual#samplerates)
-    4.  [Sound APIs](manual#sound_apis)
-    5.  [Vinyl Control](manual#vinyl_control)
-6.  [DJing with Mixxx](manual#djing_with_mixxx)
-    1.  [Loading Tracks](manual#loading_tracks)
-    2.  [Waveform Displays](manual#waveform_displays)
-    3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
-    4.  [Headphone Cueing](manual#headphone_cueing)
+    6.  [Waveform: vista d'insieme](manual#waveform_overview)
+    7.  [Modalità Fine Traccia](manual#end_of_track_mode)
+    8.  [Controlli Master e
+        Crossfader](manual#master_and_crossfader_controls)
+    9.  [Catalogo tracce](manual#library)
+5.  [Configurazione](manual#configuration)
+    1.  [Uscite Master e Cuffie](manual#master_and_headphone_outputs)
+    2.  [Latenza](manual#latency)
+    3.  [Frequenza di campionamento](manual#samplerates)
+    4.  [Interfacce Audio (API)](manual#sound_apis)
+    5.  [Funzionalità "Vinyl Control"](manual#vinyl_control)
+6.  [Mixare con Mixxx](manual#djing_with_mixxx)
+    1.  [Caricamento Tracce](manual#loading_tracks)
+    2.  [I display delle waveform](manual#waveform_displays)
+    3.  [Beatmatching e Mixaggio](manual#beatmatching_and_mixing)
+    4.  [Cueing in Cuffia](manual#headphone_cueing)
 7.  [Keys and Hardware
     Controllers](manual#keys_and_hardware_controllers).
-    1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
+    1.  [Shortcuts da Tastiera](manual#keyboard_shortcuts).
     2.  [MIDI Controllers](manual#midi_controllers).
-8.  [Getting Involved](manual#getting_involved).
+8.  [Collaborare con Mixxx](manual#getting_involved).
 
 # Introduction
 

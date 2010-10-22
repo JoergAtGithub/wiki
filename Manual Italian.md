@@ -81,13 +81,13 @@ sull'archivio zippato di Mixxx; dopodichè è necessario trascinare il
 pacchetto di Mixxx nella propria cartella *Applicazioni*. Mixxx richiede
 un Mac Intel con OS 10.4 o superiore.
 
-# User Interface Overview
+# Panoramica sull'Interfaccia Utente
 
 [[/media/manual/mixxx-overview.png|]]
 
-Mixxx's user interface is designed to be simple and easy to use when
-DJing live. This section outlines the main features of Mixxx's
-interface.
+L'interfaccia di Mixxx è pensata per essere semplice ed immediata da
+utilizzare durante un mixaggio live. Questa sezione illustra le
+caratteristiche principali dell'interfaccia grafica di Mixxx.
 
 ## Playback and Hot Cue Controls
 

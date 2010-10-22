@@ -50,11 +50,10 @@ sviluppo di MIXXX parla principalmente inglese)*
 Mixxx è un software ideato per i DJ che permette di mixare live delle
 tracce musicali. Mixxx supporta nativamente la riproduzione di formati
 MP3, OGG, FLAC, WAVE, ed AIFF (esistono inoltre dei plugins per il
-supporto di altri formati [additional formats](add-ons)) e può essere
-utilizzato con diversi controller MIDI [DJ MIDI
-controllers](manual#midi_controllers). Anche i giradischi con *timecoded
-vinyl* possono essere utilizzati per controllare Mixxx grazie alla
-funzionalità [vinyl control](manual#vinyl_control).
+supporto di [ulteriori formati](add-ons)) e può essere utilizzato con
+diversi [controller MIDI](manual#midi_controllers). Anche i giradischi
+dotati di *timecoded vinyl* possono essere utilizzati per controllare
+Mixxx grazie alla funzionalità [vinyl control](manual#vinyl_control).
 
 # Installation
 

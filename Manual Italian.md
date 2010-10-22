@@ -102,7 +102,7 @@ I pulsanti Hot Cue permettono di impostare cue-points addizionali all'interno di
 </tbody>
 </table>
 
-## Tempo and Looping Controls
+## Pulsanti di gestione Loop e Tempo
 
 <table>
 <tbody>

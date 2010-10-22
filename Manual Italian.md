@@ -39,8 +39,8 @@ sviluppo di MIXXX parla principalmente inglese)*
     2.  [I display delle waveform](manual#waveform_displays)
     3.  [Beatmatching e Mixaggio](manual#beatmatching_and_mixing)
     4.  [Cueing in Cuffia](manual#headphone_cueing)
-7.  [Keys and Hardware
-    Controllers](manual#keys_and_hardware_controllers).
+7.  [Tastiera e Controller
+    Hardware](manual#keys_and_hardware_controllers).
     1.  [Shortcuts da Tastiera](manual#keyboard_shortcuts).
     2.  [MIDI Controllers](manual#midi_controllers).
 8.  [Collaborare con Mixxx](manual#getting_involved).

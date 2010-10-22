@@ -76,10 +76,10 @@ Linux](Compilare%20su%20Linux).
 
 ## OS X
 
-OS X (Intel) users can install Mixxx by double-clicking the Mixxx zip
-archive, and then dragging-and-dropping the Mixxx bundle into their
-*Applications* folder. Mixxx requires an Intel Mac running OS 10.4 or
-newer.
+Gli utenti OS X (Intel) possono installare Mixxx tramite doppio click
+sull'archivio zippato di Mixxx; dopodichè è necessario trascinare il
+pacchetto di Mixxx nella propria cartella *Applicazioni*. Mixxx richiede
+un Mac Intel con OS 10.4 o superiore.
 
 # User Interface Overview
 

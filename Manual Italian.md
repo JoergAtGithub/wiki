@@ -59,10 +59,10 @@ Mixxx grazie alla funzionalità [vinyl control](manual#vinyl_control).
 
 ## Windows
 
-Windows users can install Mixxx by double-clicking on the Mixxx
-installer executable. Mixxx is supported on Windows XP, Vista, and
-Windows 7, with native 32 and 64 bit versions. (It may also run on
-Windows 2000.)
+Gli utenti Windows possono installare Mixxx tramite doppio click sul
+file installer eseguibile. Mixxx è compatibile con Windows XP, Vista, e
+Windows 7, con le versioni 32 e 64 bit. (Può anche funzionare con
+Windows 2000).
 
 ## Linux
 

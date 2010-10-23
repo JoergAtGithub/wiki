@@ -108,11 +108,11 @@ I pulsanti Hot Cue permettono di impostare cue-points addizionali all'interno di
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_tempo.png" /></td>
-<td>The tempo controls allow you to slow down and speed up a song. This is frequently useful for <a href="manual#beatmatching_and_mixing">beatmatching</a> songs when mixing. The RATE slider changes the tempo of a song when it is moved. The PERM buttons apply fine adjustment to the RATE slider, and the TEMP buttons apply a temporary pitch-bend when depressed. The amount by which the PERM and TEMP buttons alter the pitch of the track can be changed in the <em>Options-&gt;Preferences-&gt;Interface</em> menu. The SYNC button attempts to automatically match the tempo of the song in the corresponding channel with tempo of the song in the other channel, based on the calculated BPM.<br />
+<td>Le funzionalità di gestione del tempo ti permettono di accelerare e rallentare un brano. Questo è spesso utile per sincronizzare <a href="manual#beatmatching_and_mixing">(beatmatching)</a> i brani durante il mixaggio. Muovendo il cursore RATE si modifica la velocità di un brano. I pulsanti PERM consentono una regolazione più precisa del cursore RATE, mentre i pulsanti TEMP applicano una modifica di tonalità temporanea quando vengono premuti. Il grado di variazione con il quale i pulsanti PERM e TEMP alterano la tonalità del brano può essere impostato nel menù <em>Options-&gt;Preferences-&gt;Interface</em>. Il pulsante SYNC tenta di sincronizzare automaticamente la velocità di un brano del canale corrispondente con la velocità del brano dell'altro canale, basandosi sui BPM che sono stati calcolati.<br />
 <br />
-The IN, OUT, and RELOOP/EXIT buttons let you create a loop within a song. The IN button places a starting marker for a loop at the current playback position, and the OUT button places an ending marker and begins looping. The RELOOP/EXIT button is used to break out of a loop if you're in one, or seek back inside the loop if you're outside of it. Loops can be very useful when you're approaching the end of a song, but you don't have the next song ready yet. Try placing a loop in a song's outro during your next mix.<br />
+I pulsanti IN, OUT, e RELOOP/EXIT ti permettono di creare un loop all'interno di un brano. Il pulsante IN inserisce, nella posizione di riproduzione corrente, un marcatore di inizio per un loop, mentre il pulsante OUT inserisce un marcatore di fine ed inizia a riprodurre il loop. Il pulsante RELOOP/EXIT è utilizzato per uscire dal loop, se ci si trova dentro, o per ritornarci dentro quando se ne è fuori. I loop possono essere molto utili quando ti trovi alla fine di un brano ma non hai ancora pronta la prossima traccia. Prova a impostare un loop nel finale di un pezzo durante il tuo prossimo mix.<br />
 <br />
-See also the SYNC button below.</td>
+Vedi anche il pulsante SYNC più in basso.</td>
 </tr>
 </tbody>
 </table>

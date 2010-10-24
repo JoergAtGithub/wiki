@@ -7,8 +7,8 @@ Windows (XP, Vista, 7), and MAC OS X (10.4.11 (Tiger)/ 10.5.x (Leopard)/
 
 ## Audio
 
-The sound card has 4 inputs and 4 outputs (2 stereo in/out). The two
-inputs are switchable between line-in and phono, so you can connect both
+The sound card has 4 inputs and 4 outputs (2 stereo in/out). The inputs
+are switchable between line-in and phono, so you can connect both
 cd-players and turntables on the inputs. The inputs require a high input
 signal (\~10mV+) for turntables if you want to record or mix audio to
 output. Time-coded vinyls, for Vinyl Control, should work ok with lower

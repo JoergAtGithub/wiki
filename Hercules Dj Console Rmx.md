@@ -34,8 +34,8 @@ reason it requires specific drivers to be working on each OS.
 
 ### Linux
 
-Hercules released a common MIDI-driver for their DJ controllers. Read
-more on the page for [Hercules Linux kernel
+Hercules has released a common MIDI-driver for their DJ controllers.
+Read more on the page for [Hercules Linux kernel
 module](Hercules%20Linux%20kernel%20module)
 
 ### MAC OS / Windows

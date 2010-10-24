@@ -44,8 +44,8 @@ Drivers for MAC OS X and Windows can be found on [Hercules support
 page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
 Same package for both Audio and MIDI.
 
-### Mappings
+## MIDI Mappings
 
-#### Hercules DJ Console RMX
+### Hercules DJ Console RMX
 
-#### Hercules DJ Console RMX Advanced
+### Hercules DJ Console RMX Advanced

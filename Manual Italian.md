@@ -117,15 +117,15 @@ Vedi anche il pulsante SYNC più in basso.</td>
 </tbody>
 </table>
 
-## Headphone, Flanger, and Tempo Synchronization
+## Cuffie, Flanger, e Sincronizzazione della Velocità
 
 <table>
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_headphone.png" /></td>
-<td>When toggled, the HEADPHONE button sends the selected channel's audio to the <em>Headphones</em> output audio device selected in the preferences under <em>Sound Hardware</em>. This feature is commonly used when <a href="manual#headphone_cueing">headphone cueing</a> and <a href="manual#beatmatching_and_mixing">beatmatching</a>.<br />
-The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully.<br />
-The tempo SYNC button SYNC will change the tempo of the song in the current channel to match the song in the opposite channel. SYNC can be used to beatmatch songs quicker, and is useful for DJs of all skill levels.</td>
+<td>Quando è attivato, il pulsante HEADPHONE invia il segnale audio del canale selezionato all'output <em>Cuffie</em> della periferica audio indicata nelle preferenze in <em>Sound Hardware</em>. Questa funzionalità è solitamente utilizzata durante il <a href="manual#headphone_cueing">cueing in cuffia</a> ed il <a href="manual#beatmatching_and_mixing">beatmatching</a>.<br />
+Il pulsante FLANGER attiva un effetto flanger incorporato sul canale selezionato. Un effetto flanger applica un suono "evanescente" al canale e può aggiungere ulteriore profondità ad un mix se viene usato sapientemente.<br />
+Il pulsante di SYNC della velocità cambia la velocità del brano eseguito nel canale corrente, al fine di coincidere con il brano dell'altro canale. Il SYNC può essere utilizzato per sincronizzare più velocemente dei brani, ed è utile per i DJ di qualsiasi livello.</td>
 </tr>
 </tbody>
 </table>

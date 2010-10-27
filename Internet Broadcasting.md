@@ -32,3 +32,16 @@ PortAudio:out_1`
 
 And if all goes well, edcast will start telling you how many kilobits
 were sent up every second, until it is killed with ctrl+c.
+
+## Linux via JACK and IDJC
+
+This is Madjester (pwhelan). I broadcast from Mixxx using JACK and IDJC.
+IDJC is a fully featured program for Streaming like a Radio Jockey.
+
+I fire up Jack using the qjackctl frontend, just like thread. Next step,
+I fire up Mixxx. I then connect the Mixxx Portaudio:out\_0 and
+Portaudio:out\_1 connectors to idjc:aux\_lt and idjc:aux\_rt using
+Patchage.
+
+You should be able to press the Auxilary button in IDJC to hear and/or
+broadcast Mixxx.

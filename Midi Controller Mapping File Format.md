@@ -111,7 +111,15 @@ messages received by your controller will be displayed there.
 #### Mac OSX
 
 Download the free [MIDI Monitor](http://www.snoize.com/MIDIMonitor/)
-utility and run it.
+utility and run it. MIDI Monitor is a utility for Mac OS X which
+displays MIDI signals in a variety of formats. It can watch both
+incoming and outgoing MIDI streams, and can filter them by message type
+and channel.
+
+Download the free
+[MIDISimulator](http://www.macupdate.com/info.php/id/35645/midisimulator/)
+utility and run it. MidiSimulator is a tool to test midi devices like
+pianos or dj controllers. It allows you to receive and send midi events.
 
 #### All
 

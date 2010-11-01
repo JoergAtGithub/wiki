@@ -446,10 +446,11 @@ it's either on (non-zero) or off (zero.)
 |  |                |  |                   |  |                |  |                                                                                                      |  |                                              |  |
 |  | -------------- |  | ----------------- |  | -------------- |  | ---------------------------------------------------------------------------------------------------- |  | -------------------------------------------- |  |
 |  | **\[Group\]**  |  | **Key/Control**   |  | **Range**      |  | **What it does**                                                                                     |  | **On-screen feedback**                       |  |
-|  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck                                    |  | n/a                                          |  |
+|  | \[Channel*N*\] |  | eject             |  | binary         |  | Eject currently loaded track                                                                         |  | track is ejected from player                 |  |
 |  | \[Channel*N*\] |  | keylock           |  | binary         |  | Enable key-lock for the specified deck (rate changes only affect tempo, not key)                     |  | key-lock button activates                    |  |
-|  | \[Channel*N*\] |  | repeat            |  | binary         |  | Enable repeat-mode for the specified deck                                                            |  | when track finishes, song loops to beginning |  |
 |  | \[Channel*N*\] |  | orientation       |  | 0-2            |  | Set channel's mix orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader |  | N/A                                          |  |
+|  | \[Channel*N*\] |  | repeat            |  | binary         |  | Enable repeat-mode for the specified deck                                                            |  | when track finishes, song loops to beginning |  |
+|  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck                                    |  | n/a                                          |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.

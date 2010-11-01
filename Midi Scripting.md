@@ -16,13 +16,13 @@ text displays on the controller.
 ## Naming conventions
 
 Script files use the naming convention
-\<manufacturer\>-\<device\>-scripts.js (e.g. Stanton-SCS3d-scripts.js)
+`<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`)
 and are found in the midi/ subdirectory wherever your Mixxx shared data
-is stored. (Usually /usr/share/mixxx on Linux/Mac, and C:\\Program
-Files\\Mixxx on Windows.) Functions use the naming convention
-\<manufacturer\>\<device\>.\<function name\> (e.g.
-StantonSCS3d.pitchSlider). Global variables use
-\<manufacturer\>\<device\>.\<variable name\> (e.g. StantonSCS3d.deck).
+is stored. (Usually `/usr/share/mixxx` on Linux/Mac, and `C:\Program
+Files\Mixxx` on Windows.) Functions use the naming convention
+`<manufacturer><device>.<function name>` (e.g.
+`StantonSCS3d.pitchSlider`). Global variables use
+`<manufacturer><device>.<variable name>` (e.g. `StantonSCS3d.deck`).
 These are very important to avoid name collisions with other scripts
 that may be loaded.
 
@@ -45,14 +45,11 @@ MIDI mapping file, put the full function name in the \<key\> tag, and a
 ```
 
 The value for \<group\> doesn't matter when using a script function, but
-it still needs to be valid ("\[Master\]" or "\[Channel\#\]") or the XML
-parser will report an error. No tags or options are considered other
-than those shown above, so you can leave them out.
-
-***Coming in 1.8**: The \<group\> value is passed as an additional
-parameter to the script function. (Useful for dual-deck controllers
-since you only need one function that checks the passed Channel \# and
-reacts appropriately.)*
+it still needs to be valid or the XML parser will report an error. It is
+also passed to the function as an extra parameter (since v1.8.) (This is
+useful for dual-deck controllers since you only need one function that
+checks the \<group\> and reacts appropriately.) No tags or options are
+considered other than those shown above, so you can leave them out.
 
 When this device control is operated, the named script function is
 called. It is then up to the function to effect all desired changes
@@ -92,28 +89,27 @@ identifying the particular controller instance in print statements.
 
 ### Function definitions
 
-**This API will change for Mixxx 1.8:**
+Data passed to functions are, in order:
 
-  - \<group\> from the MIDI mapping will be passed as an additional
-    function parameter, e.g. `ControllerName.functionName = function
-    (channel, control, value, status, group)` (This makes it easier to
-    work with larger controllers that allow manipulating both decks at
-    once.)
+1.  MIDI channel (0x00 = Channel 1..0x0F = Channel 16,)
+2.  Control/note number (byte 2)
+3.  Value of the control (byte 3)
+4.  MIDI status byte (Note (0x9\#), Control Change (0xB\#), Pitch
+    (0xE\#) etc.)
+5.  MixxxControl group (from the \<group\> value in the XML file, since
+    v1.8)
 
-Data passed to functions are, in order: MIDI channel (0x00 = Channel
-1..0x0F = Channel 16,) control/note, value, and MIDI status (Note
-(0x9\#), Control Change (0xB\#), etc.) Therefore, function definitions
-should look like:
+Therefore, function definitions should look like:
 
 ``` javascript
-ControllerName.functionName = function (channel, control, value, status) {
+ControllerName.functionName = function (channel, control, value, status, group) {
     ...
 }
 ```
 
 You can leave off any parameters at the end that you don't need; the
 function is identified only by name (so make sure it's unique\!) For
-example, if you don't need the MIDI status or value bytes, just do:
+example, if you only need the MIDI channel and control number, just do:
 
 ``` javascript
 ControllerName.functionName = function (channel, control) {
@@ -163,7 +159,7 @@ engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 
 ### Scratching
 
-*Coming in v1.8*
+*Introduced in v1.8*
 
 We have an easy way to scratch with any MIDI control that sends relative
 (+1/-1) signals. (Others can be scaled to work as well.) The applicable
@@ -305,11 +301,12 @@ MyController.playButton1 = function (channel, control, value, status) {    // Pl
 ```
 
 To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
+(assuming \<group\> is specified appropriately in the XML file)
 
 ``` javascript
-MyController.pitchSlider1 = function (channel, control, value, status) {   // Lower the sensitivity of the pitch slider for channel 1
-    var currentValue = engine.getValue("[Channel1]","rate");
-    engine.setValue("[Channel1]","rate",currentValue+(value-64)/128);
+MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
+    var currentValue = engine.getValue(group,"rate");
+    engine.setValue(group,"rate",currentValue+(value-64)/128);
 }
 ```
 
@@ -375,7 +372,7 @@ engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyContro
 
 ### Timed reactions
 
-*Coming in v1.8*
+*Introduced in v1.8*
 
 Sometimes you need to be able to do things at certain time intervals
 regardless of whether the controller is manipulated or something changes
@@ -460,10 +457,10 @@ midi-mappings-scripts.js file:
     seconds in `MM:SS` format.
   - **msecondstominutes**(*milliseconds*) - Returns the given quantity
     of milliseconds in `MM:SS.ss` format.
-  - **script.debug**(channel, control, value, status) - Prints the
-    values as passed to it. Call this from anywhere in your function to
-    see what the current values of these variables are. You can also of
-    course put it in the \<key/\> tag of your XML to make sure the
+  - **script.debug**(channel, control, value, status, group) - Prints
+    the values as passed to it. Call this from anywhere in your function
+    to see what the current values of these variables are. You can also
+    of course put it in the \<key/\> tag of your XML to make sure the
     values being passed to the script are what you expect.
   - **script.pitch**(LSB, MSB, status) - Intended to be called from
     another script function, pass this the values from a MIDI Pitch

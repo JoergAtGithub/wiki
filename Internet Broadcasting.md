@@ -1,14 +1,12 @@
 # Broadcasting your Mixxx over the Internet
 
-We are working on including direct Shoutcast/Icecast support in Mixxx.
-It currently has [some
-problems](http://mixxx.org/wiki/doku.php/1.8.0_to_do_list#shoutcast)
-that are serious enough to prevent us from turning it on by default.
-However, the more adventurous among you are free to build Mixxx v1.7.x
-or later with the `shoutcast=1` flag to give it a try.
+Direct Shoutcast/Icecast support is planned for Mixxx 1.9.0. (However,
+an unstable version is present in the 1.7-1.8 source code that the more
+adventurous among you are free to try by building with the `shoutcast=1`
+flag.)
 
-In the meantime, please use the following method that has worked well
-for one of our users for years.
+In the meantime, please use one of the following methods that our users
+have used for years:
 
 ## Linux via JACK and edcast
 

@@ -441,10 +441,12 @@ it's either on (non-zero) or off (zero.)
 
 **Coming up in v1.9:**
 
-|  |                |  |                   |  |                |  |                                                                   |  |                        |  |
-|  | -------------- |  | ----------------- |  | -------------- |  | ----------------------------------------------------------------- |  | ---------------------- |  |
-|  | **\[Group\]**  |  | **Key/Control**   |  | **Range**      |  | **What it does**                                                  |  | **On-screen feedback** |  |
-|  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck |  | n/a                    |  |
+|  |                |  |                   |  |                |  |                                                                                  |  |                                              |  |
+|  | -------------- |  | ----------------- |  | -------------- |  | -------------------------------------------------------------------------------- |  | -------------------------------------------- |  |
+|  | **\[Group\]**  |  | **Key/Control**   |  | **Range**      |  | **What it does**                                                                 |  | **On-screen feedback**                       |  |
+|  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck                |  | n/a                                          |  |
+|  | \[Channel*N*\] |  | keylock           |  | binary         |  | Enable key-lock for the specified deck (rate changes only affect tempo, not key) |  | key-lock button activates                    |  |
+|  | \[Channel*N*\] |  | repeat            |  | binary         |  | Enable repeat-mode for the specified deck                                        |  | when track finishes, song loops to beginning |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.

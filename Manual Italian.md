@@ -154,7 +154,7 @@ Il pulsante di SYNC della velocità cambia la velocità del brano eseguito nel c
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[/media/manual/uioverview/ui_endoftrack.png|]] | La modalità fine traccia determina il comportamento di Mixxx al raggiungimento della fine di un brano. Si può modificare la modalità di fine traccia cliccandoci sopra per scegliere una delle tre opzioni disponibili; ciascun canale ha la propria impostazione di fine traccia che può essere modificata in modo indipendente dall'altro canale. L'opzione **Stop** non farà altro dopo la fine del brano fino a quando verrà caricato un nuovo brano sul canale o verrà ricercata una posizione sulla traccia corrente. L'opzione **Loop** tornerà all'inizio della traccia appena terminata e la riprodurrà di nuovo da capo. L'opzione **Next** caricherà e riprodurrà automaticamente il brano successivo della coda di riproduzione. |
 
-## Master and Crossfader Controls
+## Controlli Master e Crossfader
 
 <table>
 <tbody>
@@ -163,7 +163,7 @@ Il pulsante di SYNC della velocità cambia la velocità del brano eseguito nel c
 <td></td>
 </tr>
 <tr class="even">
-<td>The crossfader (in the center of the picture) enables you to smoothly fade between the two channels and defines what you hear through the master output. When set all the way to the left, only channel 1 is heard, and set to the right, only channel 2 will be heard. Every position in between gives you the mixed output of both channels. (Note: The actual volume of each channel depends on the crossfader curve, defined in the <em>Crossfader</em> preferences pane.)<br />
+<td>Il crossfader (al centro dell'immagine) ti permette di sfumare con fluidità tra due canali e determina che cosa si sente dall'uscita master. When set all the way to the left, only channel 1 is heard, and set to the right, only channel 2 will be heard. Every position in between gives you the mixed output of both channels. (Note: The actual volume of each channel depends on the crossfader curve, defined in the <em>Crossfader</em> preferences pane.)<br />
 <br />
 The Volume and Balance knobs control the volume and the balance (stereo distribution) of the master output. The Pre/Main knob controls what you hear on the headphone output. It works like the crossfader but instead of crossfading between channel 1 and 2, it crossfades between the Master and Cueing signal. If the Pre/Main knob is set to the left, one only hears the cueing signal, which can be useful for prelistening tracks. The HeadVol knob controls the volume of the headphone output.<br />
 <br />

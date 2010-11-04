@@ -38,9 +38,6 @@ Hercules has released a common MIDI-driver for their DJ controllers.
 Read more on the page for [Hercules Linux kernel
 module](Hercules%20Linux%20kernel%20module)
 
-For Ubuntu 10.04 and up, you'll want lightrush's patched version
-<https://sites.google.com/site/lightrush/random-1/herculesdjconsoleonkernel2635orubuntumaverick>.
-
 ### MAC OS / Windows
 
 Drivers for MAC OS X and Windows can be found on [Hercules support

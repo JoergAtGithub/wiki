@@ -30,50 +30,61 @@ lspci -v on Linux.
 
 ## Gathering logs
 
-Copy the following information and paste it into your bug report (or add
-it as an attachment)
+Obtain the following information and add it as an attachment to your bug
+report:
 
-#### Linux
+### Linux & Mac OSX
 
   - Most recent console output at the time of the error (About 50 lines
     or so.)
-  - *[back traces](creating_backtraces)* from gdb is also extremely
+  - *[Back-traces](creating_backtraces)* from gdb are also extremely
     helpful. To capture one you need to install the gdb package (GNU
     Debugger), then from a console window run: `gdb --eval-command=run
     mixxx`Reproduce the crash mixxx and then type ***thread apply all
     bt*** at the *(gdb)* prompt and copy the lines from your terminal
     and paste them into the bug report.
 
-#### Mac OSX
+### Windows
 
-  - Most recent console output at the time of the error (About 50 lines
-    or so.)
+#### Mixxx.log
 
-#### Windows
+This file can be found in the folder where you installed Mixxx
+(Typically C:\\Program Files\\Mixxx). If you can't find it, open
+Computer and type %PROGRAMFILES% in the location bar and press Enter.
+You should see the Mixxx folder there.
 
-  - **Mixxx.log**, which can be found in the program folder (Typically
-    C:\\Program Files\\Mixxx)
+#### Debugging Log
 
-<!-- end list -->
+If Mixxx crashes on you and you know how to reproduce the crash, please
+do the following:
 
-  - Windows event logs
-    1.  Go to Control Panel -\> Administrative Tools -\> Event Viewer
-    2.  Click Application Log and System Log. Make note of what the most
-        recent event is in both.
-    3.  Start Mixxx, make it give the error
-    4.  Refresh the display of both logs (F5 key) and look at any new
-        events logged (double click them.)
-    5.  Click the Copy button (looks like two pieces of paper)
-    6.  Paste the text into your bug report (do this for each new event
-        logged since you started the program.)
+1.  Download & install the [Microsoft debug diagnostic
+    tool](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=28bd5941-c458-46f1-b24d-f60151d875a3&displaylang=en)
+    
+2.  Start Mixxx from inside the tool (or attach it to a running Mixxx
+    process)
+3.  Make Mixxx crash
+4.  Save the output from the debugging tool to a text file and attach it
+    to your bug report
 
-<!-- end list -->
+#### Event logs
 
-  - Windows error reporting (if it comes up)
-    1.  Click Send
-    2.  Click View Details
-    3.  Save the files to a folder of your choice
-    4.  Attach the files **WER*xxxx*.tmp.appcompat.txt** and
-        **WER*xxxx*.tmp.version.txt** to your bug report. (*xxxx* is
-        some number.) **Do not** include the .dmp file\! (You can just
-        delete that since it's very large.)
+1.  Go to Control Panel -\> Administrative Tools -\> Event Viewer
+2.  Click Application Log and System Log. Make note of what the most
+    recent event is in both.
+3.  Start Mixxx, make it give the error
+4.  Refresh the display of both logs (F5 key) and look at any new events
+    logged (double click them.)
+5.  Click the Copy button (looks like two pieces of paper)
+6.  Paste the text into your bug report (do this for each new event
+    logged since you started the program.)
+
+#### Windows error reporting (if it comes up)
+
+1.  Click Send
+2.  Click View Details
+3.  Save the files to a folder of your choice
+4.  Attach the files **WER*xxxx*.tmp.appcompat.txt** and
+    **WER*xxxx*.tmp.version.txt** to your bug report. (*xxxx* is some
+    number.) **Do not** include the .dmp file\! (You can just delete
+    that since it's very large.)

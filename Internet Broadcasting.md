@@ -1,9 +1,9 @@
 # Broadcasting your Mixxx over the Internet
 
-Direct Shoutcast/Icecast support is planned for Mixxx 1.9.0. (However,
-an unstable version is present in the 1.7-1.8 source code that the more
-adventurous among you are free to try by building with the `shoutcast=1`
-flag.)
+Direct Shoutcast/Icecast support will be included in Mixxx 1.9.0.
+(However, an unstable version is present in the 1.7-1.8 source code that
+the more adventurous among you are free to try by building with the
+`shoutcast=1` flag.)
 
 In the meantime, please use one of the following methods that our users
 have used for years:

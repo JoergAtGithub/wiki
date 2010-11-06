@@ -16,6 +16,8 @@ running:
     sudo apt-get install libqt4-sql-sqlite
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
     sudo apt-get install libportmidi-dev
+    sudo apt-get install libshout-dev
+    sudo apt-get install libtag1-dev
 
 On Fedora 13 you need enable rpmfusion repo and then:
 
@@ -39,6 +41,8 @@ your distribution's package manager:
   - [libmp4](http://www.mpeg4ip.net/) (or
     [libmp4v2](http://code.google.com/p/mp4v2/)) (optional, for M4A file
     support)
+  - libshout 
+  - taglib
 
 ## 2\. Get Mixxx
 

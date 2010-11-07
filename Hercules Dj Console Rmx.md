@@ -205,7 +205,7 @@ normal and advanced mappings are described here.
 <tr class="odd">
 <td>Scratch</td>
 <td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
-Effect Shift when held down:<br />
+<strong>Effect Shift</strong> when held down:<br />
 -Shifts function of each decks Bass, Medium, Treble to control effect parameters<br />
 -Shifts the Keypad (1-6) functions to effects. Currently flanger and reverse</td>
 </tr>
@@ -223,84 +223,62 @@ Effect Shift when held down:<br />
 </thead>
 <tbody>
 <tr class="odd">
-<td>Play/Pause</td>
-<td>Starts playing a loaded track if stopped. If track is currently playing it stops the track</td>
-</tr>
-<tr class="even">
 <td>Stop</td>
-<td>Stops a currently playing track and moves to the beginning.</td>
-</tr>
-<tr class="odd">
-<td>Cue</td>
-<td>Sets the cue point if a track is stoped and not at the current cue point<br />
-Stops track and returns to the current cue point if a track is playing.<br />
-Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+<td><strong>Deck shift</strong> changes behaviour of other controls related to this deck when held down</td>
 </tr>
 <tr class="even">
-<td>Jog wheel</td>
-<td>Seeks forwards and backwards in a stopped track<br />
-Temporarily changes the playback speed for playing tracks<br />
-Scratches both stopped and playing tracks when scratch mode is on<br />
-Moves up / down in the tracklist if either Up or Down is held down</td>
-</tr>
-<tr class="odd">
 <td>Forward / Backward</td>
-<td>Seeks at high speed in a track</td>
-</tr>
-<tr class="even">
-<td>Load Deck A/B</td>
-<td>Loads the currently selected track in the track list to the related deck</td>
-</tr>
-<tr class="odd">
-<td>Cue Select</td>
-<td>Toggles this decks output to the monitor (headphones) on and off</td>
-</tr>
-<tr class="even">
-<td>Pitch</td>
-<td>Adjusts playback speed +/-10% (can be adjusted in the preferences)</td>
-</tr>
-<tr class="odd">
-<td>Sync</td>
-<td>Automatically sets pitch so the BPM of the other deck is matched</td>
-</tr>
-<tr class="even">
-<td>Pitch Reset</td>
-<td>Resets the pitch to the tracks normal playback speed</td>
+<td>Adjusts position of loop in/out and hot cues when a loop / hot cue button is held down</td>
 </tr>
 <tr class="odd">
 <td>Bass</td>
 <td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
 Adjusts flanger period when Scratch is held down</td>
 </tr>
 <tr class="even">
 <td>Medium</td>
 <td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
 Adjusts flanger delay when Scratch is held down</td>
 </tr>
 <tr class="odd">
 <td>Treble</td>
 <td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
 Adjusts flanger depth when Scratch is held down</td>
 </tr>
 <tr class="even">
-<td>Kill (Bass / Medium / Treble)</td>
-<td>Toggles output of a frequency band on and off</td>
-</tr>
-<tr class="odd">
-<td>Gain</td>
-<td>Controls a decks input volume</td>
-</tr>
-<tr class="even">
-<td>Vol. Deck A/B</td>
-<td>Controls a decks output volume</td>
-</tr>
-<tr class="odd">
 <td>Keypad 1</td>
-<td>Toggles a channels flanger effect on and off</td>
+<td>Go to hotcue 1<br />
+Set hotcue 1 when Deck Shift is held down<br />
+Toggles a channels flanger effect on and off when Effect Shift is held down</td>
+</tr>
+<tr class="odd">
+<td>Keypad 2</td>
+<td>Go to hotcue 2<br />
+Set hotcue 2 when Deck Shift is held down</td>
 </tr>
 <tr class="even">
+<td>Keypad 3</td>
+<td>Go to hotcue 3<br />
+Set hotcue 3 when Deck Shift is held down</td>
+</tr>
+<tr class="odd">
 <td>Keypad 4</td>
-<td>Reveses playback direction when held down</td>
+<td>Hold down to adjust loop in position with Forward / Backward<br />
+Set loop in when Deck Shift is held down<br />
+Reveses playback direction when held down if Effect Shift is held down</td>
+</tr>
+<tr class="even">
+<td>Keypad 5</td>
+<td>Hold down to adjust loop out position with Forward / Backward<br />
+Set loop out when Deck Shift is held down</td>
+</tr>
+<tr class="odd">
+<td>Keypad 6</td>
+<td>Re-loop / exit turns looping on and off<br />
+Half loop when Deck Shift is held down</td>
 </tr>
 </tbody>
 </table>

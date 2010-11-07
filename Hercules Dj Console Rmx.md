@@ -48,11 +48,56 @@ Same package for both Audio and MIDI.
 
 ### Hercules DJ Console RMX
 
+#### Global controls
+
 <table>
 <thead>
 <tr class="header">
 <th>Control</th>
-<th>Default Mixxx Mapping</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cross-Fader</td>
+<td>Fades between left and right deck</td>
+</tr>
+<tr class="even">
+<td>Vol. Main</td>
+<td>Controls output volume of your mix</td>
+</tr>
+<tr class="odd">
+<td>Balance</td>
+<td>Controls balance between left and right audio channel of your mix</td>
+</tr>
+<tr class="even">
+<td>Scratch</td>
+<td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
+Effect Shift function when held down.Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
+</tr>
+<tr class="odd">
+<td>Up / Down</td>
+<td>Moves up and down in the library track list<br />
+When held down changes the jog wheels behaviour to scroll the library list</td>
+</tr>
+<tr class="even">
+<td>Left / Right</td>
+<td>Moves up and down between the library sections</td>
+</tr>
+<tr class="odd">
+<td>Monitor</td>
+<td>Fades monitor output (headphones) between cue selected tracks output and the main mix</td>
+</tr>
+</tbody>
+</table>
+
+#### Deck / Channel specific controls
+
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Function</th>
 </tr>
 </thead>
 <tbody>

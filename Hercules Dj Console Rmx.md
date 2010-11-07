@@ -288,6 +288,8 @@ Half loop when Deck Shift is held down</td>
 
 ## Mappings for Mixxx 1.6.1+herc - 1.7.2
 
+### 1.6
+
 [[/media/hercules_rmx_top_face.png|]]
 
 | Hercules RMX Controls |                           |
@@ -305,6 +307,8 @@ Half loop when Deck Shift is held down</td>
 | Beat Lock (13)        | Unmapped                  |
 | Scratch (7)           | Unmapped                  |
 | Mic Functions (1)     | Not Available in Mixxx    |
+
+### 1.7
 
 | Hercules RMX Controls - Mixxx 1.7 Additions |                                                                                                                |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |

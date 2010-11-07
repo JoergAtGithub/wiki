@@ -73,7 +73,8 @@ Same package for both Audio and MIDI.
 <tr class="even">
 <td>Scratch</td>
 <td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
-Effect Shift when held down. Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
+Effect Shift when held down:<br />
+-Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
 </tr>
 <tr class="odd">
 <td>Up / Down</td>

@@ -122,9 +122,48 @@ Temporarily changes the playback speed for playing tracks<br />
 Scratches both stopped and playing tracks when scratch mode is on<br />
 Moves up / down in the tracklist if either Up or Down is held down</td>
 </tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td>Seeks at high speed in a track</td>
+</tr>
+<tr class="even">
+<td>Load Deck A/B</td>
+<td>Loads the currently selected track in the track list to the related deck</td>
+</tr>
+<tr class="odd">
+<td>Cue Select</td>
+<td>Toggles this decks output to the monitor (headphones) on and off</td>
+</tr>
+<tr class="even">
+<td>Pitch</td>
+<td>Adjusts playback speed +/-10% (can be adjusted in the preferences)</td>
+</tr>
+<tr class="odd">
+<td>Sync</td>
+<td>Automatically sets pitch so the BPM of the other deck is matched</td>
+</tr>
+<tr class="even">
+<td>Pitch Reset</td>
+<td>Resets the pitch to the tracks normal playback speed</td>
+</tr>
+<tr class="odd">
+<td>Bass</td>
+<td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
+Adjusts flanger period</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td>Adjusts the volume of a channels mid frequency content (ex. vocals)</td>
+</tr>
+<tr class="odd">
+<td>Treble</td>
+<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)</td>
+</tr>
+<tr class="even">
+<td>Kill (Bass / Medium / Treble)</td>
+<td>Toggles output of a frequency band on and off</td>
+</tr>
 </tbody>
 </table>
-
-^
 
 ### Hercules DJ Console RMX Advanced

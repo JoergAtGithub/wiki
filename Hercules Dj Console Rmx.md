@@ -73,7 +73,7 @@ Same package for both Audio and MIDI.
 <tr class="even">
 <td>Scratch</td>
 <td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
-Effect Shift function when held down.Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
+Effect Shift when held down. Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
 </tr>
 <tr class="odd">
 <td>Up / Down</td>
@@ -113,7 +113,7 @@ When held down changes the jog wheels behaviour to scroll the library list</td>
 <td>Cue</td>
 <td>Sets the cue point if a track is stoped and not at the current cue point<br />
 Stops track and returns to the current cue point if a track is playing.<br />
-Plays preview if a track is stopped at the cue point</td>
+Plays preview if a track is stopped at the cue point for as long as it's held down</td>
 </tr>
 <tr class="even">
 <td>Jog wheel</td>
@@ -149,19 +149,37 @@ Moves up / down in the tracklist if either Up or Down is held down</td>
 <tr class="odd">
 <td>Bass</td>
 <td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
-Adjusts flanger period</td>
+Adjusts flanger period when Scratch is held down</td>
 </tr>
 <tr class="even">
 <td>Medium</td>
-<td>Adjusts the volume of a channels mid frequency content (ex. vocals)</td>
+<td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
+Adjusts flanger delay when Scratch is held down</td>
 </tr>
 <tr class="odd">
 <td>Treble</td>
-<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)</td>
+<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
+Adjusts flanger depth when Scratch is held down</td>
 </tr>
 <tr class="even">
 <td>Kill (Bass / Medium / Treble)</td>
 <td>Toggles output of a frequency band on and off</td>
+</tr>
+<tr class="odd">
+<td>Gain</td>
+<td>Controls a decks input volume</td>
+</tr>
+<tr class="even">
+<td>Vol. Deck A/B</td>
+<td>Controls a decks output volume</td>
+</tr>
+<tr class="odd">
+<td>Keypad 1</td>
+<td>Toggles a channels flanger effect on and off</td>
+</tr>
+<tr class="even">
+<td>Keypad 4</td>
+<td>Reveses playback direction when held down</td>
 </tr>
 </tbody>
 </table>

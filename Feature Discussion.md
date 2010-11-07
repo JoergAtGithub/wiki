@@ -56,6 +56,10 @@ it down here so you don't forget.**
 Some of these are copied over from the forums and the old wiki, so they
 may be done already or irrelevant.
 
+  - Button in Auto DJ to start fading into new track (could come in
+    handy if the current piece isn't going down to well)
+  - Slider in Auto DJ to determine length of time of crossfade (e.g. 1s
+    - 20s)
   - Track section marking with import/export support for DJ Notation
     (<http://www.djnotation.org/>)
   - Could also be used to mark loops?

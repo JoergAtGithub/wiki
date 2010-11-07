@@ -115,7 +115,16 @@ When held down changes the jog wheels behaviour to scroll the library list</td>
 Stops track and returns to the current cue point if a track is playing.<br />
 Plays preview if a track is stopped at the cue point</td>
 </tr>
+<tr class="even">
+<td>Jog wheel</td>
+<td>Seeks forwards and backwards in a stopped track<br />
+Temporarily changes the playback speed for playing tracks<br />
+Scratches both stopped and playing tracks when scratch mode is on<br />
+Moves up / down in the tracklist if either Up or Down is held down</td>
+</tr>
 </tbody>
 </table>
+
+^
 
 ### Hercules DJ Console RMX Advanced

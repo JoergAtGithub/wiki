@@ -48,10 +48,29 @@ Same package for both Audio and MIDI.
 
 ### Hercules DJ Console RMX
 
-| Control | Default Mixxx Mapping |                                                                                            |  |
-| ------- | --------------------- | ------------------------------------------------------------------------------------------ |  |
-|         | Play/Pause            | Starts playing a loaded track if stopped. If track is currently playing it stops the track |  |
-|         | Stop                  | Stops a currently playing track and moves to the beginning.                                |  |
-|         | Cue                   | Cue behaviour is change-able from preferences.                                             |  |
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Default Mixxx Mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Play/Pause</td>
+<td>Starts playing a loaded track if stopped. If track is currently playing it stops the track</td>
+</tr>
+<tr class="even">
+<td>Stop</td>
+<td>Stops a currently playing track and moves to the beginning.</td>
+</tr>
+<tr class="odd">
+<td>Cue</td>
+<td>Sets the cue point if a track is stoped and not at the current cue point<br />
+Stops track and returns to the current cue point if a track is playing.<br />
+Plays preview if a track is stopped at the cue point</td>
+</tr>
+</tbody>
+</table>
 
 ### Hercules DJ Console RMX Advanced

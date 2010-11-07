@@ -73,7 +73,7 @@ Same package for both Audio and MIDI.
 <tr class="even">
 <td>Scratch</td>
 <td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
-Effect Shift when held down:<br />
+<strong>Effect Shift</strong> when held down:<br />
 -Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
 </tr>
 <tr class="odd">
@@ -150,17 +150,17 @@ Moves up / down in the tracklist if either Up or Down is held down</td>
 <tr class="odd">
 <td>Bass</td>
 <td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
-Adjusts flanger period when Scratch is held down</td>
+Adjusts flanger period when Effect Shift is held down</td>
 </tr>
 <tr class="even">
 <td>Medium</td>
 <td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
-Adjusts flanger delay when Scratch is held down</td>
+Adjusts flanger delay when Effect Shift is held down</td>
 </tr>
 <tr class="odd">
 <td>Treble</td>
 <td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
-Adjusts flanger depth when Scratch is held down</td>
+Adjusts flanger depth when Effect Shift is held down</td>
 </tr>
 <tr class="even">
 <td>Kill (Bass / Medium / Treble)</td>

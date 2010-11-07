@@ -158,31 +158,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 
 ## Hercules RMX (Tested)
 
-[[/media/hercules_rmx_top_face.png|]]
-
-| Hercules RMX Controls |                       |                           |  |
-| --------------------- | --------------------- | ------------------------- |  |
-| Control               | Default Mixxx Mapping |                           |  |
-|                       | Vol Main (25)         | Master Gain               |  |
-|                       | 1 (9)                 | Flanger                   |  |
-|                       | 4 (9)                 | Reverse                   |  |
-|                       | Up (8)                | Select Prev Track in List |  |
-|                       | Down (8)              | Select Next Track in List |  |
-|                       | 2,3,5,6 (9)           | Unmapped                  |  |
-|                       | Right, Left (8)       | Unmapped                  |  |
-|                       | Stop (20)             | Unmapped                  |  |
-|                       | Pitch Reset (14)      | Unmapped                  |  |
-|                       | Beat Lock (13)        | Unmapped                  |  |
-|                       | Scratch (7)           | Unmapped                  |  |
-|                       | Mic Functions (1)     | Not Available in Mixxx    |  |
-
-| Hercules RMX Controls - Mixxx 1.7 Additions |                            |                                                                                                                |  |
-| ------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------- |  |
-| Control                                     | Default Mixxx Mapping      |                                                                                                                |  |
-|                                             | Scratch (7)                | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour                                                    |  |
-|                                             | Stop (20)                  | MIDI Script: Stop + Reset Track to beginning                                                                   |  |
-|                                             | Up (8)/Down (8) + Jog (18) | MIDI Script: Rapid Track List scrolling (buggy)                                                                |  |
-|                                             | Cue (21) + Play (19)       | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |  |
+Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)
 
 ## Hercules DJ Control Steel (Tested)
 

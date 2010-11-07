@@ -186,3 +186,121 @@ Adjusts flanger depth when Scratch is held down</td>
 </table>
 
 ### Hercules DJ Console RMX Advanced
+
+The advanced mapping works similar to the normal RMX mapping, but also
+has support loops and hot cues. This mapping was added to not brake the
+previous (Mixxx -1.7.2) behaviour. Controls that differ between the
+normal and advanced mappings are described here.
+
+#### Global controls
+
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Scratch</td>
+<td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
+Effect Shift when held down:<br />
+-Shifts function of each decks Bass, Medium, Treble to control effect parameters<br />
+-Shifts the Keypad (1-6) functions to effects. Currently flanger and reverse</td>
+</tr>
+</tbody>
+</table>
+
+#### Deck / Channel specific controls
+
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Play/Pause</td>
+<td>Starts playing a loaded track if stopped. If track is currently playing it stops the track</td>
+</tr>
+<tr class="even">
+<td>Stop</td>
+<td>Stops a currently playing track and moves to the beginning.</td>
+</tr>
+<tr class="odd">
+<td>Cue</td>
+<td>Sets the cue point if a track is stoped and not at the current cue point<br />
+Stops track and returns to the current cue point if a track is playing.<br />
+Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+</tr>
+<tr class="even">
+<td>Jog wheel</td>
+<td>Seeks forwards and backwards in a stopped track<br />
+Temporarily changes the playback speed for playing tracks<br />
+Scratches both stopped and playing tracks when scratch mode is on<br />
+Moves up / down in the tracklist if either Up or Down is held down</td>
+</tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td>Seeks at high speed in a track</td>
+</tr>
+<tr class="even">
+<td>Load Deck A/B</td>
+<td>Loads the currently selected track in the track list to the related deck</td>
+</tr>
+<tr class="odd">
+<td>Cue Select</td>
+<td>Toggles this decks output to the monitor (headphones) on and off</td>
+</tr>
+<tr class="even">
+<td>Pitch</td>
+<td>Adjusts playback speed +/-10% (can be adjusted in the preferences)</td>
+</tr>
+<tr class="odd">
+<td>Sync</td>
+<td>Automatically sets pitch so the BPM of the other deck is matched</td>
+</tr>
+<tr class="even">
+<td>Pitch Reset</td>
+<td>Resets the pitch to the tracks normal playback speed</td>
+</tr>
+<tr class="odd">
+<td>Bass</td>
+<td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
+Adjusts flanger period when Scratch is held down</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
+Adjusts flanger delay when Scratch is held down</td>
+</tr>
+<tr class="odd">
+<td>Treble</td>
+<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
+Adjusts flanger depth when Scratch is held down</td>
+</tr>
+<tr class="even">
+<td>Kill (Bass / Medium / Treble)</td>
+<td>Toggles output of a frequency band on and off</td>
+</tr>
+<tr class="odd">
+<td>Gain</td>
+<td>Controls a decks input volume</td>
+</tr>
+<tr class="even">
+<td>Vol. Deck A/B</td>
+<td>Controls a decks output volume</td>
+</tr>
+<tr class="odd">
+<td>Keypad 1</td>
+<td>Toggles a channels flanger effect on and off</td>
+</tr>
+<tr class="even">
+<td>Keypad 4</td>
+<td>Reveses playback direction when held down</td>
+</tr>
+</tbody>
+</table>

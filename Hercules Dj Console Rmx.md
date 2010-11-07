@@ -188,7 +188,7 @@ Adjusts flanger depth when Effect Shift is held down</td>
 ### Hercules DJ Console RMX Advanced
 
 The advanced mapping works similar to the normal RMX mapping, but also
-has support loops and hot cues. This mapping was added to not brake the
+supports loops and hot cues. This mapping was added to not brake the
 previous (Mixxx -1.7.2) behaviour. Controls that differ between the
 normal and advanced mappings are described here.
 

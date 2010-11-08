@@ -61,7 +61,7 @@ Side projects:
 Tentatively:
 
   - Vinyl control updates
-  - External mixer mode
+  - ~~External mixer mode~~ (fast tracked into 1.9\!)
 
 ### Probably Longer Term
 

@@ -32,24 +32,29 @@ world-class application, somewhat in order of importance:
 
 Release Date: Late-2010/Early-2011
 
-No firm roadmap beyond 1.8.x as yet, will be decided once 1.8.0 cycle is
-complete.
-
-Plan as of October 7th, 2010:
+Plan as of November 8th, 2010:
 
   - Shoutcast/Icecast
   - SampleUtil / Hydra (optimizations)
-  - Fixes for iTunes/Rhythmbox slowness, tiling waveform?
+  - External Mixer Mode
+  - HSS1394 controller support
+  - Random incremental improvements
+  - Library improvements:
+  - Taglib for faster scanning, better metadata
+  - Fixes for iTunes/Rhythmbox slowness
+  - ??? (Ratings widget, played column?)
   - Deprecated Qt3 code removal
-  - Random incremental improvements (library?)
-  - Tentative freeze: November 1st
+  - Feature freeze: November 14th
+  - Strings freeze: November 24th
+  - GUI freeze: November 30th
   - Release: \~End of 2010
 
 Side projects:
 
-  - SConscript Refactor
-  - Build server
-  - Reading with Taglib
+  - ~~SConscript Refactor~~
+  - Build server - You can help by
+    [donating](http://www.pledgie.com/campaigns/13624)\!
+  - ~~Reading with Taglib~~
 
 ### 1.10
 

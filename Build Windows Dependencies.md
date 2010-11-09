@@ -623,7 +623,7 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     <span class="underline">WINDOWS</span>\</code\>
 13. Save the file
 
-# libshout
+## libshout
 
 Libshout is a library for live broadcasting audio over the Internet. It
 is developed by the icecast.org project. The following instruction set

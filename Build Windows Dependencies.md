@@ -728,13 +728,10 @@ for guidance\!*
 9.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libshout-2.2.2\win32\Release\libshout.lib
+    libshout-2.2.2\include\shout\shout.h (copy to shout folder)
     `
 
-## taglib
-
-WIP
-
-FIXME
+## TagLib
 
 [TagLib](http://developer.kde.org/~wheeler/taglib.html) uses the
 [CMake](http://www.cmake.org/) build system to build on Windows.
@@ -743,15 +740,55 @@ FIXME
 
 1.  [Download CMake](http://www.cmake.org/cmake/resources/software.html)
     (the binary installer is all you need)
-2.  Install it
-
-### Build
-
-    - 
-    - When it finishes, copy the following files into ''mixxx-win[32|64]lib-msvc'': <code>mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
-
-mp4v2-1.9.1\\vstudio9.0\\Release\\libmp4v2.lib
-mp4v2-1.9.1\\include\\mp4v2 (the whole directory)\</code\>
+2.  Install it (The 32-bit version is fine for 64-bit systems)
+3.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+4.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+5.  `cd` to where taglib is extracted, e.g. `C:\sources\taglib-1.6.3`
+6.  Type ''cmake -DWITH\_ASF=ON -DWITH\_MP4=ON -G "Visual Studio 9 2008"
+    (if on 64-bit use "Visual Studio 9 2008 Win64")
+7.  For VS Express on x64:
+    1.  The above command will return a failure. Run it again but hit
+        CTRL-C before it finishes.
+    2.  Run it a third time and it will generate the x64 project files.
+        ^\_^
+    3.  For all of the following files
+        1.  Search and replace all instances of "x64" with "Win32"
+        2.  Then search & replace `machine:Win32` with `machine:x64`:
+            `taglib-1.6.3\taglib.sln
+            taglib-1.6.3\taglib\tag.vcproj
+            /code>
+                                                            
+            ==== Build ====
+                                    
+                                    - Run the Visual Studio GUI from this command line, telling
+            it to use the environment variables, to have it use the
+            Platform SDK compile tools, libs and includes. (e.g.
+            ''C:\Program Files (x86)\Microsoft Visual
+            Studio 9.0\Common7\IDE\VCExpress.exe /useenv'')
+                                    - Open the ''taglib-1.6.3\taglib\tag.vcproj'' file via
+            File->Open->Project/Solution.
+                                    - Choose the Release configuration and the Win32 platform
+                                    - Right click ''tag'' and click Build.
+                                    - When it finishes, copy the following files into
+            ''mixxx-win32lib-msvc'' or ''mixxx-win64lib-msvc'':
+            <code>taglib-1.6.3\taglib\Release\tag.lib
+            `
+8.  Copy every `.h` file from the taglib source tree into
+    `mixxx-win[32|64]lib-msvc\taglib`
+9.  ~~Copy the following files into a `taglib` folder in
+    `mixxx-win[32|64]lib-msvc`: `taglib-1.6.3\taglib\toolkit\tfile.h
+    taglib-1.6.3\taglib\toolkit\taglib.h
+    taglib-1.6.3\taglib\toolkit\tbytevector.h
+    taglib-1.6.3\taglib\taglib_export.h
+    taglib-1.6.3\taglib_config.h
+    taglib-1.6.3\taglib\ape\apetag.h
+    taglib-1.6.3\taglib\tag.h
+    taglib-1.6.3\taglib\toolkit\tstring.h
+    taglib-1.6.3\taglib\toolkit\tmap.h
+    taglib-1.6.3\taglib\toolkit\tmap.tcc
+    `~~
 
 # Optimizations
 

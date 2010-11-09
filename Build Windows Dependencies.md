@@ -633,6 +633,11 @@ for live audio broadcasting over the Internet. It is developed by the
 
 ### Preparation
 
+#### Dependencies
+
+You must first download and unpack the [libogg](#libogg) and
+[libvorbis](#libvorbis) source code.
+
 #### Download/build PThreads
 
 libshout requires [POSIX threads for
@@ -719,28 +724,24 @@ for guidance\!*
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
     4.  Choose Release on the left, x64 on the right and click Close.
-7.  Add the paths to needed include & library files:
-    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
-        Directories
-    2.  Choose "Include files" on the right
-        1.  Add the path to the pthreads .h files, e.g.
-            `C:\sources\pthreads-w32-2-8-0-release`
-        2.  Add the path to the ogg.h file from the mixxx source,
-            `C:\mixxx\mixxx-win[32|64]lib-msvc\ogg`
-        3.  If you didn't copy it, add the path to the compat.h file
-            from the Icecast server source, e.g.
-            `C:\sources\icecast-2.3.2\src`
-    3.  Choose "Library files" on the right and add the path to the
-        pthreads .lib files, e.g. `C:\windows
-        sources\pthreads-w32-2-8-0-release`
-    4.  Click OK.
-8.  Right click `libshout` and click Build.
-9.  When it finishes, copy the following files into
+7.  Find `libshout-2.2.2\src\vorbis.c` and drag it to the `Source Files`
+    folder in the project
+8.  Add the paths to the dependencies:
+    1.  Right-click `libshout` and choose Properties.
+    2.  Under Configuration Properties-\>C/C++-\>General, add the
+        following paths under `Additional Include Directories`:
+        `..\..\pthreads-w32-2-8-0-release,..\..\libvorbis-1.2.3\include,..\..\libogg-1.1.4\include,..\..\libvorbis-1.2.3\include\vorbis,
+        `
+        1.  If you didn't copy `compat.h`, add the path to the Icecast
+            server source as well, `..\..\icecast-2.3.2\src`
+    3.  Click OK.
+9.  Right click `libshout` and click Build.
+10. When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libshout-2.2.2\win32\Release\libshout.lib
     libshout-2.2.2\include\shout\shout.h (copy to shout folder)
     `
-10. Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
+11. Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
     `#ifdef __WINDOWS__`
 
 ## TagLib

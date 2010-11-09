@@ -626,39 +626,106 @@ get it to work correctly with Mixxx. (Step-by-step below.)
 ## libshout
 
 [Libshout](http://downloads.us.xiph.org/releases/libshout/) is a library
-for live broadcasting audio over the Internet. It is developed by the
-[icecast.org](http://www.icecast.org/) project. The following
-instructions are based on Prokoba's blog, see
-<http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll>
+for live audio broadcasting over the Internet. It is developed by the
+[icecast.org](http://www.icecast.org/) project.
 
-Unfortunately, libshout does not compile on Windows out of the box. The
-following steps are necessary:
+### Preparation
+
+#### Download/build PThreads
+
+libshout requires [POSIX threads for
+Windows](http://sourceware.org/pthreads-win32/).
+
+##### 32-bit
+
+*[Download link for latest version of 32-bit
+DLLs](ftp://sourceware.org/pub/pthreads-win32/dll-latest)*
+
+Download the following and save to `mixxx-win32lib-msvc`:
+
+1.  [All of the .h files from
+    here](ftp://sourceware.org/pub/pthreads-win32/dll-latest/include/)
+2.  [The pthreadVC2.dll and .lib files from
+    here](ftp://sourceware.org/pub/pthreads-win32/dll-latest/lib/)
+
+##### 64-bit
+
+You'll have to build pthreads for Windows x64. Here's how to do it:
+
+1.  [Download the source tree](ftp://sourceware.org/pub/pthreads-win32/)
+    (look for files named like `pthreads-w32-2-8-0-release.tar.gz` and
+    pick the latest one.)
+2.  Unpack the directory
+3.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+4.  Type `setenv /xp /x64 /release` and hit Enter.
+5.  `cd` to the directory you unpacked it to
+6.  Type `nmake clean VC` and hit Enter.
+7.  When it finishes, copy the following files into
+    `mixxx-win64lib-msvc`: `pthreads-w32-2-8-0-release\pthreadVC2.dll
+    pthreads-w32-2-8-0-release\pthreadVC2.lib
+    pthreads-w32-2-8-0-release\pthread.h
+    pthreads-w32-2-8-0-release\semaphore.h
+    pthreads-w32-2-8-0-release\sched.h`
+
+#### Both
+
+*Thanks to [Prokoba's
+blog](http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll)
+for guidance\!*
+
+1.  [Download the Icecast server source](http://www.icecast.org/)
+2.  Extract the file `icecast-2.3.2\src\compat.h` to
+    `libshout-2.2.2\include`
+3.  Rename/copy `libshout-2.2.2\include\shout\shout.h.in` to
+    `libshout-2.2.2\include\shout\shout.h`
+4.  Edit the file `libshout-2.2.2\src\timing\timing.h`:
+    1.  Remove the `#ifdef _mangle` block
+    2.  Before the first `#ifdef _WIN32` line, add `#undef int64_t
+        #undef uint64_t`
+5.  Edit the file `libshout-2.2.2\src\shout.c`:
+    1.  Search and replace all instances of the word `inline` with
+        `__inline`
+    2.  Change line 1016 to `ret = sock_write_bytes (self->socket,
+        (char*)data + pos, len - pos);`
 
 ### Build
 
-1.  Get all the dependencies: ogg & vorbis from xiph.org (the headers,
-    libs and Dlls are already shipped with Mixxx). You’ll also need
-    Win32 pthreads from <ftp://sourceware.org/pub/pthreads-win32/>. For
-    x86 there are precompiled packages, e.g.,
-    pthreads-w32-2-8-0-release.exe
-2.  Open the VC6 project file and configure the VS2005 solution so that
-    it can find the header and .lib files for ogg, vorbis and pthreads.
-3.  You need to manually add vorbis.c to the project after the migration
-    to VS2005.
-4.  Add \<MS Windows SDK\>/include and \<MS Windows SDK\>/libs to
-    Compiler options
-5.  In header timing.h
-    1.  Remove the *\#ifdef \_mangle* block
-    2.  Add *\#undef int64\_t* before the typedefs within \_WIN32 MACRO
-    3.  Add *\#undef uint64\_t* before the typedefs within \_WIN32 MACRO
-6.  In shout.c
-    1.  Replace keyword 'inline' with `__inline`
-    2.  Change line 1016 to `ret = sock_write_bytes (self->socket,
-        (char*)data + pos, len - pos);`
-7.  In shout.c and socket.c: Add directive `#ifndef __WIN32__ #define
-    va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list)) #endif`
-8.  Copy file *combat.h* from icecast-server sources to \<libshout\>/src
-    1.  Include the file to *shout.h*
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `libshout-2.2.2\win32\libshout.dsp` file via
+    File-\>Open-\>Project/Solution.
+5.  Choose the Release configuration and the Win32 platform
+6.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+7.  Add the paths to needed include & library files:
+    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
+        Directories
+    2.  Choose "Include files" on the right
+        1.  Add the path to the pthreads .h files, e.g.
+            `C:\sources\pthreads-w32-2-8-0-release`
+        2.  Add the path to the ogg.h file from the mixxx source,
+            `C:\mixxx\mixxx-win[32|64]lib-msvc\ogg`
+        3.  If you didn't copy it, add the path to the compat.h file
+            from the Icecast server source, e.g.
+            `C:\sources\icecast-2.3.2\src`
+    3.  Choose "Library files" on the right and add the path to the
+        pthreads .lib files, e.g. `C:\windows
+        sources\pthreads-w32-2-8-0-release`
+    4.  Click OK.
+8.  Right click `libshout` and click Build.
+9.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`: `
+    `
 
 ## taglib
 

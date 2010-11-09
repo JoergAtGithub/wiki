@@ -746,7 +746,7 @@ for guidance\!*
 4.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 5.  `cd` to where taglib is extracted, e.g. `C:\sources\taglib-1.6.3`
-6.  Type ''cmake -DWITH\_ASF=ON -DWITH\_MP4=ON -G "Visual Studio 9 2008"
+6.  Type `cmake -DWITH_ASF=ON -DWITH_MP4=ON -G "Visual Studio 9 2008"`
     (if on 64-bit use "Visual Studio 9 2008 Win64")
 7.  For VS Express on x64:
     1.  The above command will return a failure. Run it again but hit
@@ -755,29 +755,25 @@ for guidance\!*
         ^\_^
     3.  For all of the following files
         1.  Search and replace all instances of "x64" with "Win32"
-        2.  Then search & replace `machine:Win32` with `machine:x64`:
+        2.  Then search & replace `machine:Win32` with `machine:x64`
             `taglib-1.6.3\taglib.sln
             taglib-1.6.3\taglib\tag.vcproj
-            /code>
-                                                            
-            ==== Build ====
-                                    
-                                    - Run the Visual Studio GUI from this command line, telling
-            it to use the environment variables, to have it use the
-            Platform SDK compile tools, libs and includes. (e.g.
-            ''C:\Program Files (x86)\Microsoft Visual
-            Studio 9.0\Common7\IDE\VCExpress.exe /useenv'')
-                                    - Open the ''taglib-1.6.3\taglib\tag.vcproj'' file via
-            File->Open->Project/Solution.
-                                    - Choose the Release configuration and the Win32 platform
-                                    - Right click ''tag'' and click Build.
-                                    - When it finishes, copy the following files into
-            ''mixxx-win32lib-msvc'' or ''mixxx-win64lib-msvc'':
-            <code>taglib-1.6.3\taglib\Release\tag.lib
             `
-8.  Copy every `.h` file from the taglib source tree into
-    `mixxx-win[32|64]lib-msvc\taglib`
-9.  ~~Copy the following files into a `taglib` folder in
+
+### Build
+
+1.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+2.  Open the `taglib-1.6.3\taglib\tag.vcproj` file via
+    File-\>Open-\>Project/Solution.
+3.  Choose the Release configuration and the Win32 platform
+4.  Right click `tag` and click Build.
+5.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `taglib-1.6.3\taglib\Release\tag.lib`
+6.  ~~Copy the following files into a `taglib` folder in
     `mixxx-win[32|64]lib-msvc`: `taglib-1.6.3\taglib\toolkit\tfile.h
     taglib-1.6.3\taglib\toolkit\taglib.h
     taglib-1.6.3\taglib\toolkit\tbytevector.h
@@ -789,6 +785,8 @@ for guidance\!*
     taglib-1.6.3\taglib\toolkit\tmap.h
     taglib-1.6.3\taglib\toolkit\tmap.tcc
     `~~
+7.  Just copy <span class="underline">every</span> `.h` file from the
+    taglib source tree into `mixxx-win[32|64]lib-msvc\taglib`
 
 # Optimizations
 

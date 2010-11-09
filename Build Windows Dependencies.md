@@ -658,17 +658,24 @@ You'll have to build pthreads for Windows x64. Here's how to do it:
     (look for files named like `pthreads-w32-2-8-0-release.tar.gz` and
     pick the latest one.)
 2.  Unpack the directory
-3.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+3.  Edit the file `pthread_cancel.c`
+    1.  Change line 195 to `ptw32_register_cancelation
+        ((PAPCFUNC)ptw32_cancel_callback, threadH, 0);`
+4.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
-4.  Type `setenv /xp /x64 /release` and hit Enter.
-5.  `cd` to the directory you unpacked it to
-6.  Type `nmake clean VC` and hit Enter.
-7.  When it finishes, copy the following files into
+5.  Type `setenv /xp /x64 /release` and hit Enter.
+6.  `cd` to the directory you unpacked it to
+7.  Type `nmake clean VC` and hit Enter.
+8.  Type `nmake clean VCE` and hit Enter.
+9.  Type `nmake clean VSE` and hit Enter.
+10. When it finishes, copy the following files into
     `mixxx-win64lib-msvc`: `pthreads-w32-2-8-0-release\pthreadVC2.dll
     pthreads-w32-2-8-0-release\pthreadVC2.lib
-    pthreads-w32-2-8-0-release\pthread.h
-    pthreads-w32-2-8-0-release\semaphore.h
-    pthreads-w32-2-8-0-release\sched.h`
+    pthreads-w32-2-8-0-release\pthreadVCE2.dll
+    pthreads-w32-2-8-0-release\pthreadVCE2.lib
+    pthreads-w32-2-8-0-release\pthreadVSE2.dll
+    pthreads-w32-2-8-0-release\pthreadVSE2.lib
+    `
 
 #### Both
 

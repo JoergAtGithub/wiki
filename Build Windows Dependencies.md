@@ -4,7 +4,9 @@ We assume you've installed and configured Visual Studio Express and the
 Microsoft Platform SDK as described in steps 1 & 2 [on this
 page](compiling_on_windows), and if you want to build x64 versions with
 the free Visual Studio Express, that you've done [this
-hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html).
+hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
+or [this
+one.](http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/)
 
 ## Qt
 

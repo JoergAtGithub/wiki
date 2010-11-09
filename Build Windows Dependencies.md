@@ -724,7 +724,8 @@ for guidance\!*
     4.  Click OK.
 8.  Right click `libshout` and click Build.
 9.  When it finishes, copy the following files into
-    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`: `
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `libshout-2.2.2\win32\Release\libshout.lib
     `
 
 ## taglib

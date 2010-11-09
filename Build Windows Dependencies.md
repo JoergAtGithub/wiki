@@ -698,8 +698,7 @@ for guidance\!*
     2.  Change line 1016 to `ret = sock_write_bytes (self->socket,
         (char*)data + pos, len - pos);`
     3.  Add the following at the top: `#ifndef __MINGW32__
-                                        #define va_copy(ap1, ap2) memcpy(&ap1, &amp;ap2,
-        sizeof(va_list))
+                                        #define va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list))
         #endif` 
 
 ### Build

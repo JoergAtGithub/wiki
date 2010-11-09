@@ -660,6 +660,29 @@ following steps are necessary:
 8.  Copy file *combat.h* from icecast-server sources to \<libshout\>/src
     1.  Include the file to *shout.h*
 
+## taglib
+
+WIP
+
+FIXME
+
+[TagLib](http://developer.kde.org/~wheeler/taglib.html) uses the
+[CMake](http://www.cmake.org/) build system to build on Windows.
+
+### Preparation
+
+1.  [Download CMake](http://www.cmake.org/cmake/resources/software.html)
+    (the binary installer is all you need)
+2.  Install it
+
+### Build
+
+    - 
+    - When it finishes, copy the following files into ''mixxx-win[32|64]lib-msvc'': <code>mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
+
+mp4v2-1.9.1\\vstudio9.0\\Release\\libmp4v2.lib
+mp4v2-1.9.1\\include\\mp4v2 (the whole directory)\</code\>
+
 # Optimizations
 
 Mixxx can benefit from various code optimizations. If you right-click

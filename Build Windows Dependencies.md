@@ -730,6 +730,8 @@ for guidance\!*
     `libshout-2.2.2\win32\Release\libshout.lib
     libshout-2.2.2\include\shout\shout.h (copy to shout folder)
     `
+10. Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
+    `#ifdef __WINDOWS__`
 
 ## TagLib
 

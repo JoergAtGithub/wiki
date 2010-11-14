@@ -43,3 +43,39 @@ Patchage.
 
 You should be able to press the Auxilary button in IDJC to hear and/or
 broadcast Mixxx.
+
+# Broadcasting your Mixxx over the Internet (for Mixxx 1.9)
+
+As of version 1.9 Mixxx supports live broadcasting which allows you to
+connect to Shoutcast and Icecast servers. Using the preferences
+dialogue, you can simply supply Mixxx with all information needed to
+establish a server connection. To enable live broadcasting you can
+either use the options menu or the checkbox within the preference
+dialogue.
+
+[[/media/shoutcast_prefs.png|]]
+
+## MP3 streaming
+
+Dependent on the server technology you can stream in OGG and MP3 format.
+However, MP3 streams are not supported out of the box for some legal
+reasons. On Ubuntu and Linux-based operating systems MP3 streams can be
+activated by installing the package libmp3lame. Dependent on your Linux
+distribution the package might be slightly named different such as lame.
+
+`sudo apt-get install libmp3lame0`
+
+To activate MP3 stream on Windows, the following steps are necessary.
+
+1.  Download LAME 3.98.4 binaries from <http://lame.bakerweb.biz/>. The
+    ZIP file includes x86 and x64 DLLs
+2.  Unpack the archive
+3.  If you downloaded the 32 bit version of Mixxx, copy libmp3lame.dll
+    from the x86 folder to the location you have installed Mixxx.
+4.  If you downloaded the 64 bit version of Mixxx, copy libmp3lame.dll
+    from the x64 folder to the location you have installed Mixxx.
+5.  Rename the DLL to lame\_enc.dll
+
+Please note that Audacity and other web-sites provide lame binaries,
+too. DO NOT USE THESE VERSIONS. Otherwise Mixxx shows an error when
+activating live broadcasting.

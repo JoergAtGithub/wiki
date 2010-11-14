@@ -63,7 +63,7 @@ reasons. On Ubuntu and Linux-based operating systems MP3 streams can be
 activated by installing the package libmp3lame. Dependent on your Linux
 distribution the package might be slightly named different such as lame.
 
-`sudo apt-get install libmp3lame0`
+    sudo apt-get install libmp3lame0
 
 To activate MP3 stream on Windows, the following steps are necessary.
 

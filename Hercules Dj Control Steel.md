@@ -8,15 +8,15 @@ Mixxx versions 1.6.1+herc and later. It works in Linux 32/64 bits (from
 kernel \~2.6.27+), Windows (XP, Vista, 7), and MAC OS X (10.4.11
 (Tiger)/ 10.5.x (Leopard)/ 10.6.x (Snow Leopard) 32-bit)
 
+## MIDI driver
+
+The midi device on the Steel is NOT USB-midi class compliant. For that
+reason it requires specific drivers to be working on each OS.
+
 ### MAC OS / Windows
 
 Drivers for MAC OS X and Windows can be found on [Hercules support
 page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
-
-## MIDI
-
-The midi device on the Steel is NOT USB-midi class compliant. For that
-reason it requires specific drivers to be working on each OS.
 
 ### Linux
 

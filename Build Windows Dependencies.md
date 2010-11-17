@@ -580,6 +580,138 @@ below.)
     mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
     mp4v2-1.9.1\include\mp4v2 (the whole directory)`
 
+## libFLAC
+
+[libFLAC](http://flac.sourceforge.net/) provides MSVC solution files,
+which makes things nice.
+
+### Dependencies
+
+libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
+
+1.  [Download the ZIP file from
+    here](http://www.nasm.us/pub/nasm/releasebuilds/2.09.03/win32/) and
+    extract it.
+2.  Rename/copy the file `nasm.exe` to `nasmw.exe` since that's what the
+    FLAC sources look for
+
+### Preparation
+
+1.  **On x64 only**, apply the following patch to `bitreader.c`:`diff -u
+    -r flac-1.2.1-original\src\libFLAC\bitreader.c 
+    flac-1.2.1\src\libFLAC\bitreader.c
+    --- flac-1.2.1-original\src\libFLAC\bitreader.c Tue
+    Sep 11 06:48:56 2007
+    +++ flac-1.2.1\src\libFLAC\bitreader.c Tue May 20 12:30:08 2008
+    @@ -149,15 +149,37 @@
+                                    FLAC__CPUInfo cpu_info;
+        };
+        
+    -#ifdef _MSC_VER
+    -/* OPT: an MSVC built-in would be better */
+    +
+    +/* local_swap32_() */
+    +/* Swaps the byte order of a 32 bits integer, converting between
+    big-endian 
+    and little-endian */
+    +#if defined(_MSC_VER)
+    +
+    +#include <stdlib.h> // Contains _byteswap_ulong() for MSVC
+    according to MSDN
+        static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
+        {
+    + /* This is an intrinsic and will expanded to minimal asm by the 
+    compiler */
+    + return _byteswap_ulong(x);
+    +}
+    +
+    +#else /* defined(_MSC_VER) */
+    +
+    +static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
+    +{
+    + /* Manual version, a bit slower but works everywhere */
+                                    x = ((x<<8)&0xFF00FF00) | ((x>>8)&0x00FF00FF);
+                                    return (x>>16) | (x<<16);
+        }
+    +
+    +#endif /* defined(_MSC_VER) */
+    +
+    +
+    +/* local_swap32_block_() */
+    +/* Swaps the byte order of an array of 32 bits integers */
+    +#if defined(_MSC_VER) && !defined(FLAC__NO_ASM) || !defined(_M_X64)
+    +
+        static void local_swap32_block_(FLAC__uint32 *start, FLAC__uint32
+    len)
+        {
+    + /* MSVC specific 32 bit asm version */
+                                    __asm {
+                                                                    mov edx, start
+                                                                    mov ecx, len
+    @@ -173,7 +195,22 @@
+        done1:
+                                    }
+        }
+    -#endif
+    +
+    +#else /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
+    !defined(_M_X64) */
+    +
+    +static void local_swap32_block_(FLAC__uint32 *start, FLAC__uint32
+    len)
+    +{
+    + /* MSVC specific intrinsic version */
+    + while(len > 0)
+    + {
+    + *start = local_swap32_(*start);
+    + ++start;
+    + --len;
+    + }
+    +}
+    +
+    +#endif /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
+    !defined(_M_X64) */
+    +
+        
+        static FLaC__INLINE void crc16_update_word_(FLAC__BitReader *br,
+    brword word)
+        {
+    `
+2.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+4.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+5.  Add the path to NASM to the environment:
+    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
+        Directories
+    2.  Choose "Executable files" on the right and add the path to the
+        NASM directory you extracted to above, e.g. `C:\nasm-2.09.03`
+
+### Build
+
+1.  Open the `mp4v2-1.9.1\vstudio9.0\libmp4v2\libmp4v2.vcproj` file via
+    File-\>Open-\>Project/Solution.
+2.  Choose the Release configuration and the Win32 platform
+3.  If building for x64
+    1.  Go to Build-\>Configuration manager
+    2.  Drop down Active Solution Platform and choose New...
+    3.  Type x64 and choose copy settings from Win32. Click OK.
+    4.  Choose Release on the left, x64 on the right and click Close.
+4.  Tune the project settings to your liking
+    1.  Right-click the libmp4v2 project and click Properties.
+    2.  Under Configuration Properties, Linker, Debugging, set Generate
+        Debug Info to No.
+5.  Right click `libmp4v2` and click Build.
+6.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
+    mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
+    mp4v2-1.9.1\include\mp4v2 (the whole directory)`
+
 ## libHSS1394
 
 Stanton's HSS1394 is GPL and provides MSVC solution files which makes

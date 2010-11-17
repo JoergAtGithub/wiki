@@ -597,8 +597,14 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 
 ### Preparation
 
-1.  **On x64 only**, apply the following patch to `bitreader.c`:`diff -u
-    -r flac-1.2.1-original\src\libFLAC\bitreader.c 
+1.  Build libOGG ([see above](#libogg))
+2.  [Download](http://sourceforge.net/projects/flac/files/flac-src/) the
+    FLAC source and extract it.
+3.  Copy `libogg-1.1.4\win32\VS2008\Win32\Release_SSE\libogg_static.lib`
+    to `flac-1.2.1\obj\release\lib` and rename it to `ogg_static.lib`
+4.  **On x64 only**, apply the following patch to
+    `flac-1.2.1\src\libFLAC\bitreader.c`:`diff -u -r
+    flac-1.2.1-original\src\libFLAC\bitreader.c 
     flac-1.2.1\src\libFLAC\bitreader.c
     --- flac-1.2.1-original\src\libFLAC\bitreader.c Tue
     Sep 11 06:48:56 2007
@@ -677,19 +683,29 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
     brword word)
         {
     `
-2.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+5.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
-3.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+6.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
-4.  Run the Visual Studio GUI from this command line, telling it to use
+7.  Run the Visual Studio GUI from this command line, telling it to use
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-5.  Add the path to NASM to the environment:
+8.  Add paths to the environment:
     1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
         Directories
     2.  Choose "Executable files" on the right and add the path to the
         NASM directory you extracted to above, e.g. `C:\nasm-2.09.03`
+    3.  Choose "Include files" on the right and add the path to the
+        libOGG include directory, e.g. `C:\libogg-1.1.4\include`
+9.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
+10. Choose the Release configuration at the top
+11. **For x64**:
+    1.  Right-click the libFLAC\_dynamic project and choose
+        Properties...
+    2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and enter
+        `FLAC__NO_ASM;` at the front of the Preprocessor Definitions
+        list
 
 ### Build
 

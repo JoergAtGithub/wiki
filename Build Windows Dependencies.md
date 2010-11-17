@@ -602,87 +602,96 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
     FLAC source and extract it.
 3.  Copy `libogg-1.1.4\win32\VS2008\Win32\Release_SSE\libogg_static.lib`
     to `flac-1.2.1\obj\release\lib` and rename it to `ogg_static.lib`
-4.  **On x64 only**, apply the following patch to
-    `flac-1.2.1\src\libFLAC\bitreader.c`:`diff -u -r
-    flac-1.2.1-original\src\libFLAC\bitreader.c 
-    flac-1.2.1\src\libFLAC\bitreader.c
-    --- flac-1.2.1-original\src\libFLAC\bitreader.c Tue
-    Sep 11 06:48:56 2007
-    +++ flac-1.2.1\src\libFLAC\bitreader.c Tue May 20 12:30:08 2008
-    @@ -149,15 +149,37 @@
-                                    FLAC__CPUInfo cpu_info;
-        };
-        
-    -#ifdef _MSC_VER
-    -/* OPT: an MSVC built-in would be better */
-    +
-    +/* local_swap32_() */
-    +/* Swaps the byte order of a 32 bits integer, converting between
-    big-endian 
-    and little-endian */
-    +#if defined(_MSC_VER)
-    +
-    +#include <stdlib.h> // Contains _byteswap_ulong() for MSVC
-    according to MSDN
-        static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
-        {
-    + /* This is an intrinsic and will expanded to minimal asm by the 
-    compiler */
-    + return _byteswap_ulong(x);
-    +}
-    +
-    +#else /* defined(_MSC_VER) */
-    +
-    +static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
-    +{
-    + /* Manual version, a bit slower but works everywhere */
-                                    x = ((x<<8)&0xFF00FF00) | ((x>>8)&0x00FF00FF);
-                                    return (x>>16) | (x<<16);
-        }
-    +
-    +#endif /* defined(_MSC_VER) */
-    +
-    +
-    +/* local_swap32_block_() */
-    +/* Swaps the byte order of an array of 32 bits integers */
-    +#if defined(_MSC_VER) && !defined(FLAC__NO_ASM) || !defined(_M_X64)
-    +
-        static void local_swap32_block_(FLAC__uint32 *start, FLAC__uint32
-    len)
-        {
-    + /* MSVC specific 32 bit asm version */
-                                    __asm {
-                                                                    mov edx, start
-                                                                    mov ecx, len
-    @@ -173,7 +195,22 @@
-        done1:
-                                    }
-        }
-    -#endif
-    +
-    +#else /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
-    !defined(_M_X64) */
-    +
-    +static void local_swap32_block_(FLAC__uint32 *start, FLAC__uint32
-    len)
-    +{
-    + /* MSVC specific intrinsic version */
-    + while(len > 0)
-    + {
-    + *start = local_swap32_(*start);
-    + ++start;
-    + --len;
-    + }
-    +}
-    +
-    +#endif /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
-    !defined(_M_X64) */
-    +
-        
-        static FLaC__INLINE void crc16_update_word_(FLAC__BitReader *br,
-    brword word)
-        {
-    `
+4.  **For x64:**
+    1.  For each of the following files, search & replace all instances
+        of `-f win32` with `-f win64`:
+        `flac-1.2.1\src\libFLAC\libflac_dynamic.dsp
+        flac-1.2.1\src\libFLAC\libflac_dynamic.vcproj
+        flac-1.2.1\src\libFLAC\libflac_static.dsp
+        flac-1.2.1\src\libFLAC\libflac_static.vcproj`
+    2.  Apply the following patch to
+        `flac-1.2.1\src\libFLAC\bitreader.c`:`diff -u -r
+        flac-1.2.1-original\src\libFLAC\bitreader.c 
+        flac-1.2.1\src\libFLAC\bitreader.c
+        --- flac-1.2.1-original\src\libFLAC\bitreader.c Tue
+        Sep 11 06:48:56 2007
+        +++ flac-1.2.1\src\libFLAC\bitreader.c Tue May 20 12:30:08 2008
+        @@ -149,15 +149,37 @@
+                                                                        FLAC__CPUInfo cpu_info;
+                };
+                
+        -#ifdef _MSC_VER
+        -/* OPT: an MSVC built-in would be better */
+        +
+        +/* local_swap32_() */
+        +/* Swaps the byte order of a 32 bits integer, converting
+        between big-endian 
+        and little-endian */
+        +#if defined(_MSC_VER)
+        +
+        +#include <stdlib.h> // Contains _byteswap_ulong() for MSVC
+        according to MSDN
+                static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
+                {
+        + /* This is an intrinsic and will expanded to minimal asm by
+        the 
+        compiler */
+        + return _byteswap_ulong(x);
+        +}
+        +
+        +#else /* defined(_MSC_VER) */
+        +
+        +static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
+        +{
+        + /* Manual version, a bit slower but works everywhere */
+                                                                        x = ((x<<8)&0xFF00FF00) | ((x>>8)&0x00FF00FF);
+                                                                        return (x>>16) | (x<<16);
+                }
+        +
+        +#endif /* defined(_MSC_VER) */
+        +
+        +
+        +/* local_swap32_block_() */
+        +/* Swaps the byte order of an array of 32 bits integers */
+        +#if defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
+        !defined(_M_X64)
+        +
+                static void local_swap32_block_(FLAC__uint32 *start,
+        FLAC__uint32 len)
+                {
+        + /* MSVC specific 32 bit asm version */
+                                                                        __asm {
+                                                                                                                                        mov edx, start
+                                                                                                                                        mov ecx, len
+        @@ -173,7 +195,22 @@
+                done1:
+                                                                        }
+                }
+        -#endif
+        +
+        +#else /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
+        !defined(_M_X64) */
+        +
+        +static void local_swap32_block_(FLAC__uint32 *start,
+        FLAC__uint32 len)
+        +{
+        + /* MSVC specific intrinsic version */
+        + while(len > 0)
+        + {
+        + *start = local_swap32_(*start);
+        + ++start;
+        + --len;
+        + }
+        +}
+        +
+        +#endif /* defined(_MSC_VER) && !defined(FLAC__NO_ASM) ||
+        !defined(_M_X64) */
+        +
+                
+                static FLaC__INLINE void crc16_update_word_(FLAC__BitReader *br,
+        brword word)
+                {
+        `
 5.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
 6.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
@@ -699,34 +708,34 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
     3.  Choose "Include files" on the right and add the path to the
         libOGG include directory, e.g. `C:\libogg-1.1.4\include`
 9.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
-10. Choose the Release configuration at the top
-11. **For x64**:
-    1.  Right-click the libFLAC\_dynamic project and choose
-        Properties...
-    2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and enter
-        `FLAC__NO_ASM;` at the front of the Preprocessor Definitions
-        list
-
-### Build
-
-1.  Open the `mp4v2-1.9.1\vstudio9.0\libmp4v2\libmp4v2.vcproj` file via
-    File-\>Open-\>Project/Solution.
-2.  Choose the Release configuration and the Win32 platform
-3.  If building for x64
+10. Choose the Release configuration and the Win32 platform
+11. If building for x64
     1.  Go to Build-\>Configuration manager
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
     4.  Choose Release on the left, x64 on the right and click Close.
-4.  Tune the project settings to your liking
-    1.  Right-click the libmp4v2 project and click Properties.
-    2.  Under Configuration Properties, Linker, Debugging, set Generate
-        Debug Info to No.
-5.  Right click `libmp4v2` and click Build.
-6.  When it finishes, copy the following files into
+    5.  For both the `libFLAC_dynamic` and `libFLAC_static` projects:
+        1.  Right-click it and choose Properties...
+        2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and
+            enter `FLAC__NO_ASM;` at the front of the Preprocessor
+            Definitions list
+        3.  For the dynamic one only, go to Configuration
+            Properties-\>Linker-\>Advanced and choose `/MACHINE:X64` for
+            Target Machine
+        4.  For the dynamic one only, go to Configuration
+            Properties-\>Linker-\>Debugging and ensure Generate Debug
+            Info is set to `No`
+
+### Build
+
+1.  Right click `libFLAC_dynamic` and click Build.
+2.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
-    `mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.dll
-    mp4v2-1.9.1\vstudio9.0\Release\libmp4v2.lib
-    mp4v2-1.9.1\include\mp4v2 (the whole directory)`
+    `flac-1.2.1\obj\release\lib\libFLAC_dynamic.lib (rename to
+    libFLAC.lib)
+    flac-1.2.1\obj\release\lib\libFLAC_dynamic.dll (rename to
+    libFLAC.dll)
+    flac-1.2.1\include\FLAC (the whole directory)`
 
 ## libHSS1394
 

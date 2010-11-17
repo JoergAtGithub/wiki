@@ -5,11 +5,28 @@ and controllers. Since it's been outdated by newer kernel versions,
 community members are now maintaining it, so it works also in newer
 kernel versions.
 
-For Ubuntu 10.04 and up, you'll want lightrush's patched version
+## Package .deb
+
+For Ubuntu 10.04 and up, you'll want lightrush's patched version:
+
 <https://sites.google.com/site/lightrush/random-1/herculesdjconsoleonkernel2635orubuntumaverick>.
+
+## Package dkms
+
+dkms means: Dynamic Kernel Module Support
+
+It is supported by all recent linux distros. When your distro will
+update the kernel, it will automatically rebuild and reinstall the
+drivers\!
+
+Please follow instruction file: readme\_driver\_dkms.txt
+
+<http://slist.lilotux.net/linux/deejay/mixxx/>
+
+## Old information
 
 Some more (older) information can be found on these pages:
 
-<http://mixxx.org/wiki/doku.php/hercules>
+[Hercules/Guillemot DJ Console Series Controllers](hercules)
 
-<http://mixxx.org/wiki/doku.php/hercules_pc_dj_console>
+[](hercules_pc_dj_console)

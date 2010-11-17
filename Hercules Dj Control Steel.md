@@ -1,6 +1,6 @@
 # Hercules DJ Control Steel (page under construction)
 
-[[/media/hardware/hercules_dj_console_rmx.jpg|]] FIXME
+[[/media/hardware/hercules_dj_control_steel.jpg|]]
 
 The Hercules DJ Control Steel is a USB MIDI controller (very similar to
 DJ Console RMX but without a built in sound card). It is compatible with
@@ -279,7 +279,7 @@ Half loop when Deck Shift is held down</td>
 
 ### 1.6
 
-FIXME [[/media/hercules_rmx_top_face.png|]]
+[[/media/hercules_dj_control_steel_top_face.png|]] FIXME
 
 | Hercules RMX Controls |                           |
 | --------------------- | ------------------------- |

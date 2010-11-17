@@ -157,6 +157,31 @@ you've defined `currentDeck` and `currentValue` here):
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
 
+### Soft-takeover
+
+*Coming in v1.9*
+
+To prevent sudden wide parameter changes when the on-screen control
+diverges from a hardware control, use soft-takeover. While it's active
+on a particular parameter, manipulating the control on the hardware will
+have no effect until the position of the hardware control is close to
+that of the software, at which point it will take over and operate as
+usual. You can enable and disable it at any point, and it operates on
+each MixxxControl independently. Typically, for each control that has
+physical limits on your controller, you would enable soft-takeover in
+the `init()` script function and just leave it enabled.
+
+It's very simple to use:
+
+``` c++
+engine.softTakeover(string group, string key, bool enable);
+```
+
+So to enable soft-takeover for the pitch control on channel
+1:`engine.softTakeover("[Channel1]","rate",true);
+` ...and to disable it: `engine.softTakeover("[Channel1]","rate",false);
+`
+
 ### Scratching
 
 *Introduced in v1.8*

@@ -40,8 +40,8 @@ If you want to link Qt against Agner Fog's optimized
     qt-everywhere-opensource-src-4.6.1\\mkspecs\\win32-msvc2005\\qmake.conf:
     1.  Add `/Oi-` to `QMAKE_CFLAGS`
     2.  Add `/LIBPATH:"C:\asmlib"` to `QMAKE_LFLAGS`
-    3.  Add `alibcof32o.lib` (or `alibcof64o.lib` for 64-bit) to each
-        `QMAKE_LIBS` entry in front of other `.lib` files
+    3.  Add `alibcof32o.lib` (or `alibcof64o.lib` for 64-bit) to
+        `QMAKE_LFLAGS` (this ensures it's linked into every module)
 
 ### x64 prep
 

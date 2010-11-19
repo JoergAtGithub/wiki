@@ -191,6 +191,163 @@ You need to update the mapping with following files : [Link to mapping
 files](http://slist.lilotux.net/linux/deejay/mixxx/)
 [[/media/hercules_dj_control_steel_top_face.png|]]
 
+### Hercules DJ Control Steel
+
+#### Global controls
+
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cross-Fader</td>
+<td>Fades between left and right deck</td>
+</tr>
+<tr class="even">
+<td>Vol. Main</td>
+<td>Controls output volume of your mix</td>
+</tr>
+<tr class="odd">
+<td>Balance</td>
+<td>Controls balance between left and right audio channel of your mix</td>
+</tr>
+<tr class="even">
+<td>Scratch</td>
+<td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
+<strong>Effect Shift</strong> when held down:<br />
+-Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
+</tr>
+<tr class="odd">
+<td>Up / Down</td>
+<td>Moves up and down in the library track list<br />
+When held down changes the jog wheels behaviour to scroll the library list</td>
+</tr>
+<tr class="even">
+<td>Left / Right</td>
+<td>Moves up and down between the library sections</td>
+</tr>
+</tbody>
+</table>
+
+#### Deck / Channel specific controls
+
+<table>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Play/Pause</td>
+<td>Starts playing a loaded track if stopped. If track is currently playing it stops the track</td>
+</tr>
+<tr class="even">
+<td>Stop</td>
+<td>Stops a currently playing track and moves to the beginning.</td>
+</tr>
+<tr class="odd">
+<td>Cue</td>
+<td>Sets the cue point if a track is stopped and not at the current cue point<br />
+Stops track and returns to the current cue point if a track is playing.<br />
+Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+</tr>
+<tr class="even">
+<td>Jog wheel</td>
+<td>Seeks forwards and backwards in a stopped track<br />
+Temporarily changes the playback speed for playing tracks<br />
+Scratches both stopped and playing tracks when scratch mode is on<br />
+Moves up / down in the track list if either Up or Down is held down</td>
+</tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td>Seeks at high speed in a track</td>
+</tr>
+<tr class="even">
+<td>Load Deck A/B</td>
+<td>Loads the currently selected track in the track list to the related deck</td>
+</tr>
+<tr class="odd">
+<td>Cue Select</td>
+<td>Toggles this decks output to the monitor (headphones) on and off</td>
+</tr>
+<tr class="even">
+<td>Pitch</td>
+<td>Adjusts playback speed +/-10% (can be adjusted in the preferences)</td>
+</tr>
+<tr class="odd">
+<td>Sync</td>
+<td>Automatically sets pitch so the BPM of the other deck is matched</td>
+</tr>
+<tr class="even">
+<td>Pitch Bend-</td>
+<td>Resets the pitch to the tracks normal playback speed (FIXME)</td>
+</tr>
+<tr class="odd">
+<td>Pitch Bend+</td>
+<td>TODO</td>
+</tr>
+<tr class="even">
+<td>Bass</td>
+<td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
+Adjusts flanger period when Effect Shift is held down</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
+Adjusts flanger delay when Effect Shift is held down</td>
+</tr>
+<tr class="even">
+<td>Treble</td>
+<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
+Adjusts flanger depth when Effect Shift is held down</td>
+</tr>
+<tr class="odd">
+<td>Kill (Bass / Medium / Treble)</td>
+<td>Toggles output of a frequency band on and off</td>
+</tr>
+<tr class="even">
+<td>Gain</td>
+<td>Controls a decks input volume</td>
+</tr>
+<tr class="odd">
+<td>Vol. Deck A/B</td>
+<td>Controls a decks output volume</td>
+</tr>
+<tr class="even">
+<td>Stop</td>
+<td><strong>Deck shift</strong> changes behavior of other controls related to this deck when held down</td>
+</tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td>Adjusts position of loop in/out and hot cues when a loop / hot cue button is held down</td>
+</tr>
+<tr class="even">
+<td>Bass</td>
+<td>Adjusts the volume of a channels low frequency content (ex. bass drum)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
+Adjusts flanger period when Scratch is held down</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td>Adjusts the volume of a channels mid frequency content (ex. vocals)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
+Adjusts flanger delay when Scratch is held down</td>
+</tr>
+<tr class="even">
+<td>Treble</td>
+<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)<br />
+Soft takeover when Deck Shift is held down, lets you move knob in position before adjusting<br />
+Adjusts flanger depth when Scratch is held down</td>
+</tr>
+</tbody>
+</table>
+
 | Hercules DJ Control Steel Controls |                       |                           |  |
 | ---------------------------------- | --------------------- | ------------------------- |  |
 | Control                            | Default Mixxx Mapping |                           |  |

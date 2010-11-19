@@ -47,27 +47,37 @@ files](http://slist.lilotux.net/linux/deejay/mixxx/)
 <td>Fades between left and right deck</td>
 </tr>
 <tr class="even">
-<td>Vol. Main</td>
+<td>Vol. Main (23)</td>
 <td>Controls output volume of your mix</td>
 </tr>
 <tr class="odd">
-<td>Balance</td>
+<td>Balance (6)</td>
 <td>Controls balance between left and right audio channel of your mix</td>
 </tr>
 <tr class="even">
-<td>Scratch</td>
-<td>Toggles scratch on and off which changes the function of the deck jog wheels<br />
-<strong>Effect Shift</strong> when held down:<br />
--Shifts function of each decks Bass, Medium, Treble to control effect parameters</td>
+<td>Scratch (7)</td>
+<td>Toggles scratch on and off which changes the function of the deck jog wheels</td>
 </tr>
 <tr class="odd">
-<td>Up / Down</td>
+<td>Up / Down (8)</td>
 <td>Moves up and down in the library track list<br />
 When held down changes the jog wheels behaviour to scroll the library list</td>
 </tr>
 <tr class="even">
-<td>Left / Right</td>
+<td>Left / Right (8)</td>
 <td>Moves up and down between the library sections</td>
+</tr>
+<tr class="odd">
+<td>Stop (20)</td>
+<td>Stop + Reset Track to beginning</td>
+</tr>
+<tr class="even">
+<td>Up (8)/Down (8) + Jog (18)</td>
+<td>Rapid Track List scrolling (reported buggy on RMX, but no problem seen on Steel)</td>
+</tr>
+<tr class="odd">
+<td>Cue (21) + Play (19)</td>
+<td>Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy)</td>
 </tr>
 </tbody>
 </table>
@@ -192,9 +202,6 @@ Adjusts flanger depth when Scratch is held down</td>
 | Control                            | Default Mixxx Mapping |                           |  |
 |                                    | FX Wet/Dry Knobs (1)  | Unmapped                  |  |
 |                                    | FX Apply Select (1)   | Unmapped                  |  |
-|                                    | Bank Shift (2)        | Unmapped                  |  |
-|                                    | Pitch Bend + (12)     | Temp Rate Up              |  |
-|                                    | Pitch Bend - (13)     | Temp Rate Down            |  |
 |                                    | Vol Main (23)         | Master Gain               |  |
 |                                    | 1 (9)                 | Flanger on/off            |  |
 |                                    | 2 (9)                 | Hotcue 1 set              |  |
@@ -213,10 +220,6 @@ Adjusts flanger depth when Scratch is held down</td>
 |                                    | Scratch (7)           | Unmapped                  |  |
 |                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |
 
-| Hercules DJ Control Steel Controls |                                                                                                                |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Control                            | Default Mixxx Mapping                                                                                          |
-| Scratch (7)                        | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour (buggy)                                            |
-| Stop (20)                          | MIDI Script: Stop + Reset Track to beginning                                                                   |
-| Up (8)/Down (8) + Jog (18)         | MIDI Script: Rapid Track List scrolling (reported buggy on RMX, but no problem seen on Steel)                  |
-| Cue (21) + Play (19)               | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |
+| Hercules DJ Control Steel Controls |                       |
+| ---------------------------------- | --------------------- |
+| Control                            | Default Mixxx Mapping |

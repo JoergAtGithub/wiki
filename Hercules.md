@@ -162,35 +162,7 @@ Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)
 
 ## Hercules DJ Control Steel (Tested)
 
-You need to update the mapping with following files : [Link to mapping
-files](http://slist.lilotux.net/linux/deejay/mixxx/)
-[[/media/hercules_dj_control_steel_top_face.png|]]
-
-| Hercules DJ Control Steel Controls |                       |                           |  |
-| ---------------------------------- | --------------------- | ------------------------- |  |
-| Control                            | Default Mixxx Mapping |                           |  |
-|                                    | FX Wet/Dry Knobs (1)  | Unmapped                  |  |
-|                                    | FX Apply Select (1)   | Unmapped                  |  |
-|                                    | Bank Shift (2)        | Unmapped                  |  |
-|                                    | Pitch Bend + (12)     | Temp Rate Up              |  |
-|                                    | Pitch Bend - (13)     | Temp Rate Down            |  |
-|                                    | Vol Main (23)         | Master Gain               |  |
-|                                    | 1 (9)                 | Flanger on/off            |  |
-|                                    | 2 (9)                 | Hotcue 1 set              |  |
-|                                    | 3 (9)                 | Hotcue 2 set              |  |
-|                                    | 4 (9)                 | Reverse                   |  |
-|                                    | 5 (9)                 | Hotcue 1 goto             |  |
-|                                    | 6 (9)                 | Hotcue 2 goto             |  |
-|                                    | 7 (9)                 | loop in                   |  |
-|                                    | 8 (9)                 | loop exit                 |  |
-|                                    | 10 (9)                | loop out                  |  |
-|                                    | 9,11,12 (9)           | Unmapped                  |  |
-|                                    | Up (8)                | Select Prev Track in List |  |
-|                                    | Down (8)              | Select Next Track in List |  |
-|                                    | Right, Left (8)       | Navigate                  |  |
-|                                    | Stop (19)             | stop                      |  |
-|                                    | Scratch (7)           | Unmapped                  |  |
-|                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |
+Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
 
 ## Updating Mapping Files
 

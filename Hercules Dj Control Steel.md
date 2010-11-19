@@ -219,7 +219,3 @@ Adjusts flanger depth when Scratch is held down</td>
 |                                    | Stop (19)             | stop                      |  |
 |                                    | Scratch (7)           | Unmapped                  |  |
 |                                    | Vol\_HP (11)          | Not Available in Mixxx    |  |
-
-| Hercules DJ Control Steel Controls |                       |
-| ---------------------------------- | --------------------- |
-| Control                            | Default Mixxx Mapping |

@@ -1,4 +1,4 @@
-# Hercules DJ Control Steel (page under construction)
+# Hercules DJ Control Steel
 
 [[/media/hardware/hercules_dj_control_steel.jpg|]]
 

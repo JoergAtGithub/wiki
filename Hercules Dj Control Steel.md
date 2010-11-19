@@ -28,7 +28,7 @@ module](Hercules%20Linux%20kernel%20module)
 
 You need to update the mapping with following files : [Link to mapping
 files](http://slist.lilotux.net/linux/deejay/mixxx/)
-[[/media/hercules_dj_control_steel_top_face.png|]]
+[[/media/hercules_dj_control_steel_top_face.png|]] [[/media/manual/keypad.png|]]
 
 #### Global controls
 

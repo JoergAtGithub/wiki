@@ -43,7 +43,7 @@ files](http://slist.lilotux.net/linux/deejay/mixxx/)
 </thead>
 <tbody>
 <tr class="odd">
-<td>Cross-Fader</td>
+<td>Cross-Fader (24)</td>
 <td>Fades between left and right deck</td>
 </tr>
 <tr class="even">

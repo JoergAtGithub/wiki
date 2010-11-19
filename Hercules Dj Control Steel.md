@@ -307,7 +307,7 @@ FIXME
 | Hercules DJ Control Steel Controls - Mixxx 1.7 Additions |                                                                                                                |
 | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Control                                                  | Default Mixxx Mapping                                                                                          |
-| Scratch (7)                                              | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour                                                    |
+| Scratch (7)                                              | MIDI Script: Toggle Jog (18) Scratch/Pitch Adjust behaviour (buggy)                                            |
 | Stop (20)                                                | MIDI Script: Stop + Reset Track to beginning                                                                   |
 | Up (8)/Down (8) + Jog (18)                               | MIDI Script: Rapid Track List scrolling (reported buggy on RMX, but no problem seen on Steel)                  |
 | Cue (21) + Play (19)                                     | MIDI Script: Pushing Play while holding Cue will cause track to continue to play after Cue is released (buggy) |

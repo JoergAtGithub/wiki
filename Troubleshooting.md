@@ -67,6 +67,9 @@ responsiveness. Here are some tips to help you do that.*
     <http://forum.notebookreview.com/showthread.php?t=261929>
   - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
     in the Device Manager (under Control Panel-\>System-\>Hardware.)
+  - **Ensure that your hardware's ASIO Sample Rate setting is equal to
+    the "Sample Rate (Hz)"** in MIXXX's Audio Output settings (under
+    Preferences-\>Sound Hardware.)
 
 ### All operating systems
 

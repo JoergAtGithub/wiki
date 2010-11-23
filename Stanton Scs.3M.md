@@ -19,7 +19,7 @@ Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
 
   - Windows: `C:\Program Files\Mixxx\midi` (technically
     `%PROGRAMFILES%\Mixxx\midi`)
-  - OS X: `/Applications/Mixxx.app/Contents/midi`
+  - OS X: `/Applications/Mixxx.app/Contents/Resources/midi`
   - Linux: `/usr[/local]/share/mixxx/midi`
 
 <!-- end list -->

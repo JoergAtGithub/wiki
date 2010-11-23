@@ -13,7 +13,7 @@ The MIDI mapping files are located in the following paths:
 
   - Windows: C:\\Program Files\\Mixxx\\midi
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
-  - OS X: /Applications/Mixxx.app/Contents/midi
+  - OS X: /Applications/Mixxx.app/Contents/Resources/midi
 
 By far, the easiest way to create a new MIDI mapping is by using the
 MIDI Learn wizard in the Preferences (available in Mixxx 1.7.0 and

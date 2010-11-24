@@ -743,7 +743,13 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 
 Stanton's HSS1394 is GPL and provides MSVC solution files which makes
 things nice, but you need to make a couple of changes to the project to
-get it to work correctly with Mixxx. (Step-by-step below.)
+get it to build a DLL correctly. (Step-by-step below.)
+
+### x64 Prep
+
+1.  Edit the `HSS1394\code\src\win32\Thesycon\VHPD1394\CVhpdThread.cpp`
+    source file and comment out line 166 like
+    so:`//::PostMessage(mParentWnd,WM_USER_THREAD_TERMINATED,0,0);`
 
 ### Build
 
@@ -755,7 +761,7 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-4.  Open the `HSS1394\code\builds\win32\libHSS1394.vcproj` file via
+4.  Open the `HSS1394\code\builds\win32\libHSS1394_dll.vcproj` file via
     File-\>Open-\>Project/Solution.
 5.  Choose the Release configuration and the Win32 platform
 6.  If building for x64
@@ -763,26 +769,24 @@ get it to work correctly with Mixxx. (Step-by-step below.)
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
     4.  Choose Release on the left, x64 on the right and click Close.
-7.  Edit the `CVhpdThread.cpp` source file (expand the `libHSS1394`
-    project, then `VPHD1394` and it's under that) and comment out line
-    166 like
-    so:`//::PostMessage(mParentWnd,WM_USER_THREAD_TERMINATED,0,0);`
-8.  Save the file
-9.  Tune the project settings
-    1.  Right-click the libHSS1394 project and click Properties.
-    2.  Under Configuration Properties, General, set Use of MFC to "Use
-        MFC in a Shared DLL"
-10. Right click `libHSS1394` and click Build.
-11. When it finishes, you'll see that it failed, but that's just the
-    Doxygen generation which you don't need. Try to build it again and
-    it should say "1 up to date." If so, you're good. Copy the following
-    files into `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
-    `HSS1394\lib\libHSS1394_Win32_Release.lib (rename to hss1394.lib)
+7.  Tune the project settings
+    1.  Right-click the libHSS1394\_dll project and click Properties.
+    2.  Under Configuration Properties-\>C/C++-\>Preprocessor, for
+        Preprocessor Definitions, add`;HSS1394_EXPORT_DLL`
+    3.  Under Configuration Properties-\>Linker-\>General, set Output
+        File to `$(OutDir)\HSS1394.dll`
+    4.  Under Configuration Properties-\>Linker-\>Advanced, set Import
+        Library to `$(OutDir)\HSS1394.lib`
+8.  Right click `libHSS1394_dll` and click Build.
+9.  When it finishes, copy the following files into
+    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+    `HSS1394\lib\HSS1394.lib
+    HSS1394\lib\HSS1394.dll
     HSS1394\inc (the whole directory, and rename it to HSS1394)`
-12. Edit the `mixxx-win[32|64]lib-msvc\HSS1394\HSS1394Types.h` source
+10. Edit the `mixxx-win[32|64]lib-msvc\HSS1394\HSS1394Types.h` source
     file and change line 65 to:\<code\> \#ifdef
     <span class="underline">WINDOWS</span>\</code\>
-13. Save the file
+11. Save the file
 
 ## libshout
 
@@ -967,7 +971,7 @@ each MSVC project and click Properties, you can set many optimization
 options. You can do any or all of the following:
 
   - Configuration Properties-\>C/C++-\>Optimization
-  - Optimization: Full Optimization (/Ox)
+  - Optimization: Maximize Speed (/O2) or Full Optimization (/Ox)
   - Favor Size or Speed: Favor Fast Code (/Ot) (unless building for
     memory-constrained systems)
   - Whole Program Optimization: Enable link-time code generation (/GL)
@@ -979,6 +983,8 @@ options. You can do any or all of the following:
   - Add `/favor:AMD64`, `/favor:EM64T` (Intel64,) or `/favor:blend`
     (about the same on both)
   - Configuration Properties-\>Linker-\>Optimization
+  - Eliminate Unreferenced Data (/OPT:REF)
+  - Remove Redundant COMDATs (/OPT:ICF)
   - Use Link Time Code Generation (/ltcg)
   - Configuration Properties-\>Librarian-\>Command line
   - Add `/LTCG`

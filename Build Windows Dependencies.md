@@ -791,58 +791,36 @@ get it to work correctly with Mixxx. (Step-by-step below.)
 for live audio broadcasting over the Internet. It is developed by the
 [icecast.org](http://www.icecast.org/) project.
 
-### Preparation
+### Dependencies
 
-#### Dependencies
+libshout requires libogg, libvorbis, and PThreads.
 
-You must first download and unpack the [libogg](#libogg) and
-[libvorbis](#libvorbis) source code.
+You must have first built [libogg](#libogg) and [libvorbis](#libvorbis)
+(see above.)
 
 #### Download/build PThreads
 
 libshout requires [POSIX threads for
-Windows](http://sourceware.org/pthreads-win32/).
-
-##### 32-bit
-
-*[Download link for latest version of 32-bit
-DLLs](ftp://sourceware.org/pub/pthreads-win32/dll-latest)*
-
-Download the following and save to `mixxx-win32lib-msvc`:
-
-1.  [All of the .h files from
-    here](ftp://sourceware.org/pub/pthreads-win32/dll-latest/include/)
-2.  [The pthreadVC2.dll and .lib files from
-    here](ftp://sourceware.org/pub/pthreads-win32/dll-latest/lib/)
-
-##### 64-bit
-
-You'll have to build pthreads for Windows x64. Here's how to do it:
+Windows](http://sourceware.org/pthreads-win32/). It's a piece of cake to
+build:
 
 1.  [Download the source tree](ftp://sourceware.org/pub/pthreads-win32/)
     (look for files named like `pthreads-w32-2-8-0-release.tar.gz` and
     pick the latest one.)
-2.  Unpack the directory
-3.  Edit the file `pthread_cancel.c`
-    1.  Change line 195 to `ptw32_register_cancelation
+2.  Unpack the directory to the same folder you unpacked libshout's (so
+    that the `pthreads` and `libshout` folders are at the same level)
+3.  For x64,
+    1.  Edit the file `pthread_cancel.c`
+    2.  Change line 195 to `ptw32_register_cancelation
         ((PAPCFUNC)ptw32_cancel_callback, threadH, 0);`
 4.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
-5.  Type `setenv /xp /x64 /release` and hit Enter.
+5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
 6.  `cd` to the directory you unpacked it to
-7.  Type `nmake clean VC` and hit Enter.
-8.  Type `nmake clean VCE` and hit Enter.
-9.  Type `nmake clean VSE` and hit Enter.
-10. When it finishes, copy the following files into
-    `mixxx-win64lib-msvc`: `pthreads-w32-2-8-0-release\pthreadVC2.dll
-    pthreads-w32-2-8-0-release\pthreadVC2.lib
-    pthreads-w32-2-8-0-release\pthreadVCE2.dll
-    pthreads-w32-2-8-0-release\pthreadVCE2.lib
-    pthreads-w32-2-8-0-release\pthreadVSE2.dll
-    pthreads-w32-2-8-0-release\pthreadVSE2.lib
-    `
+7.  Type `nmake clean VC-static` and hit Enter.
 
-#### Both
+### Preparation
 
 *Thanks to [Prokoba's
 blog](http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll)
@@ -865,6 +843,12 @@ for guidance\!*
     3.  Add the following at the top: `#ifndef __MINGW32__
                                         #define va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list))
         #endif` 
+6.  Copy `libshout-2.2.2\include\shout\shout.h` to `mixxx-win32lib-msvc`
+    or `mixxx-win64lib-msvc`
+7.  Edit `libshout-2.2.2\include\shout\shout.h` and place
+    ` __declspec(dllexport)  ` in front of every function definition
+8.  Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
+    `#ifdef __WINDOWS__`
 
 ### Build
 
@@ -877,16 +861,22 @@ for guidance\!*
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
 4.  Open the `libshout-2.2.2\win32\libshout.dsp` file via
-    File-\>Open-\>Project/Solution.
+    File-\>Open-\>Project/Solution and upgrade if needed.
 5.  Choose the Release configuration and the Win32 platform
 6.  If building for x64
     1.  Go to Build-\>Configuration manager
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
     4.  Choose Release on the left, x64 on the right and click Close.
-7.  Find `libshout-2.2.2\src\vorbis.c` and drag it to the `Source Files`
+7.  Change the project to a DLL:
+    1.  Go to Configuration Properties-\>General, and change
+        Configuration Type to "Dynamic Library (.dll)"
+    2.  Change Whole Program Optimization to "Use Link Time Code
+        Generation"
+    3.  Click OK
+8.  Find `libshout-2.2.2\src\vorbis.c` and drag it to the `Source Files`
     folder in the project
-8.  Add the paths to the dependencies:
+9.  Add the paths to the dependencies:
     1.  Right-click `libshout` and choose Properties.
     2.  Under Configuration Properties-\>C/C++-\>General, add the
         following paths under `Additional Include Directories`:
@@ -894,15 +884,25 @@ for guidance\!*
         `
         1.  If you didn't copy `compat.h`, add the path to the Icecast
             server source as well, `..\..\icecast-2.3.2\src`
-    3.  Click OK.
-9.  Right click `libshout` and click Build.
-10. When it finishes, copy the following files into
+    3.  Go to Configuration Properties-\>Linker
+        1.  Under General, for Additional Library Directories, enter the
+            semicolon-separated paths:
+            1.  to the pthreads path you created above (e.g.
+                `..\..\pthreads`)
+            2.  to ogg.lib and vorbis.lib (which should be in
+                `mixxx-win[32|64]lib-msvc` at this point, so you can
+                just enter the path to that.)
+        2.  Under Linker, for Additional Dependencies, enter `pthread
+            Ws2_32.lib winmm.lib ogg.lib vorbis.lib`
+        3.  Under Linker, for Ignore Specific Library, enter
+            `LIBCMT.lib`
+    4.  Click OK.
+10. Right click `libshout` and click Build.
+11. When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libshout-2.2.2\win32\Release\libshout.lib
-    libshout-2.2.2\include\shout\shout.h (copy to shout folder)
+    libshout-2.2.2\win32\Release\libshout.dll
     `
-11. Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
-    `#ifdef __WINDOWS__`
 
 ## TagLib
 

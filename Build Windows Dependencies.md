@@ -711,8 +711,9 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
     3.  Choose "Include files" on the right and add the path to the
         libOGG include directory, e.g. `C:\libogg-1.1.4\include`
 9.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
-10. Choose the Release configuration and the Win32 platform
-11. If building for x64
+10. Rename the `libFLAC_dynamic` project to just `libFLAC`
+11. Choose the Release configuration and the Win32 platform
+12. If building for x64
     1.  Go to Build-\>Configuration manager
     2.  Drop down Active Solution Platform and choose New...
     3.  Type x64 and choose copy settings from Win32. Click OK.
@@ -734,10 +735,8 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 1.  Right click `libFLAC_dynamic` and click Build.
 2.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
-    `flac-1.2.1\obj\release\lib\libFLAC_dynamic.lib (rename to
-    libFLAC.lib)
-    flac-1.2.1\obj\release\lib\libFLAC_dynamic.dll (rename to
-    libFLAC.dll)
+    `flac-1.2.1\obj\release\lib\libFLAC.lib
+    flac-1.2.1\obj\release\lib\libFLAC.dll
     flac-1.2.1\include\FLAC (the whole directory)`
 
 ## libHSS1394

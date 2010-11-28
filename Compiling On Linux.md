@@ -19,12 +19,12 @@ running:
     sudo apt-get install libshout-dev
     sudo apt-get install libtag1-dev
 
-On Fedora 13 you need enable rpmfusion repo and then:
+On Fedora 13 and 14, you need enable rpmfusion repo and then:
 
     yum install scons alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
     libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
     portaudio-devel ffmpeg-devel libshout-devel python-devel lua-devel \
-    tolua++-devel portmidi-devel
+    tolua++-devel portmidi-devel qt-webkit-devel
 
 For other distributions, you will need to install the following through
 your distribution's package manager:

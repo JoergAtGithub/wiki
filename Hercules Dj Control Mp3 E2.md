@@ -1,47 +1,188 @@
-====== Hercules DJ Control MP3 e2 ======
+# Hercules DJ Control MP3 e2
 
+[[/media/16445_.jpg|]]
 
-{{ :16445_.jpg?nolink& |}}
+The Hercules DJ Control MP3 e2 is a USB MIDI controller without a built
+in sound card. It is compatible with Mixxx versions 1.8+ herc and later.
+It works in Linux 32/64 bits (from kernel \~2.6.27+), Windows (XP,
+Vista, 7), and MAC OS X (10.4.11 (Tiger)/ 10.5.x (Leopard)/ 10.6.x (Snow
+Leopard) 32-bit)
 
+## MIDI driver
 
+The midi device on the MP3 e2 is NOT USB-midi class compliant. For that
+reason it requires specific drivers to be working on each OS.
 
-The Hercules DJ Control MP3 e2 is a USB MIDI controller without a built in sound card. It is compatible with Mixxx versions 1.8+ herc and later. It works in Linux 32/64 bits (from kernel ~2.6.27+), Windows (XP, Vista, 7), and MAC OS X (10.4.11 (Tiger)/ 10.5.x (Leopard)/ 10.6.x (Snow Leopard) 32-bit)
+### MAC OS / Windows
 
-=====MIDI driver=====
+Drivers for MAC OS X and Windows can be found on [Hercules support
+page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
 
-The midi device on the MP3 e2 is NOT USB-midi class compliant. For that reason it requires specific drivers to be working on each OS.
+### Linux
 
-====MAC OS / Windows====
+Hercules has released a common MIDI-driver for their DJ controllers.
+Read more on the page for \[\[Hercules Linux kernel module\]
 
-Drivers for MAC OS X and Windows can be found on [[http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1|Hercules support page]].
+## Mapping for Mixxx
 
-====Linux====
-Hercules has released a common MIDI-driver for their DJ controllers. Read more on the page for [[Hercules Linux kernel module]
+The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you
+don't have to download or install nothing.
 
-===== Mapping for Mixxx =====
-The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you don't have to download or install nothing.
+[[/media/hercules_mappa.png|]]
 
-{{:hercules_mappa.png?nolink&650 |}}
+#### Global controls
 
-===Global controls  ===
-^ Number ^ Control  ^ Function |
-^ 8  | Arrow up/down | Scrolls to the prev/next track in the Playlist/tracktable |
-^ 6  | Folder | Scrolls up to 10 tracks in the Playlist/tracktable |
-^ 10 | Files  | Scrolls down to 10 tracks in the Playlist/tracktable |
-^ 18 | Load A/B| Loads the currently highlighted track into the corrisponding deck (A or B) |
-^ 7  | Scratch | Used as a shift button for the "sync" buttons (Number 13) |
-^ 9  | Automix | Used as a master shift button to obtain more controls than those are provided by Hercules. \\ For example: hold down the Automix button and than press the "pitchbend" buttons for adjust the pre-gain amplification| 
+<table>
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Control</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8</td>
+<td>Arrow up/down</td>
+<td>Scrolls to the prev/next track in the Playlist/tracktable</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Folder</td>
+<td>Scrolls up to 10 tracks in the Playlist/tracktable</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>Files</td>
+<td>Scrolls down to 10 tracks in the Playlist/tracktable</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Load A/B</td>
+<td>Loads the currently highlighted track into the corrisponding deck (A or B)</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Crossfader</td>
+<td>Fades between left and right deck</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Scratch</td>
+<td>Used as a scratch shift button for the "sync" buttons (Number 13)</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Automix</td>
+<td>Used as a master shift button to obtain more controls than those are provided by Hercules.<br />
+For example: hold down the Automix button and than press the "pitchbend" buttons for adjust the pre-gain amplification</td>
+</tr>
+</tbody>
+</table>
 
-===Deck / Channel specific controls ===
-^ Number ^ Control  ^ Simple function ^ Shifted function |
-^ 1 | Pitchbend +/- | Holds the pitch 4% higher while pressed | Adjust the pre-gain amplification |
-^ 2 | Master Tempo | Toggles a channels flanger effect on and off | Nothing |
-^ 3 | Pitch knobs | Adjusts playback pitch/speed | Deck A: adjust the headphone volume \\ Deck B: adjust the cue/main mix in the headphone output |
-^ 4 | Loop/Fx | Toggle the Loop/Hotcue functions for the keys buttons. \\ When the button is not lit up the loop buttons are enabled, when the button is lit up the hotcue's buttons are enabled | Nothing |
-^ 5 | Equalizer knobs | Adjusts the gain of the low/medium/high equalizer filter
+#### Deck / Channel specific controls
 
-
-
-
-
-
+<table>
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Control</th>
+<th>Simple function</th>
+<th>Shifted function</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Pitchbend +/-</td>
+<td>Holds the pitch 4% higher while pressed</td>
+<td>Adjust the pre-gain amplification</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Master Tempo</td>
+<td>Toggles a channels flanger effect on and off</td>
+<td>Nothing</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Pitch knobs</td>
+<td>Adjusts playback pitch/speed</td>
+<td>Deck A: adjust the headphone volume<br />
+Deck B: adjust the cue/main mix in the headphone output</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Loop/Fx</td>
+<td>Toggle the Loop/Hotcue mode for the keys buttons.<br />
+When the button is not lit up the loop buttons are enabled, when the button is lit up the hotcue's buttons are enabled</td>
+<td>Nothing</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Equalizer knobs</td>
+<td>Adjusts the gain of the low/medium/high equalizer filter</td>
+<td>Nothing</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>1/2/3/4 buttons</td>
+<td>Loop mode:<br />
+1 - Sets the loop-in position to the current play position.<br />
+2 - Sets the loop-out position to the current play position.<br />
+3 and 4 - Toggles the current loop On or Off.<br />
+Hotcue mode:<br />
+1, 2, 3 and 4: If hotcue X is set, seeks the player to hotcue X's position. If hotcue X is not set, sets hotcue X to the current play position.</td>
+<td>Loop mode:<br />
+Nothing<br />
+Hotcue mode:<br />
+If hotcue X is set, clears its hotcue status.</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>Forward \ Backward</td>
+<td>Fast forward/backward</td>
+<td>Nothing</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>Sync</td>
+<td>Automatically sets pitch so the BPM of the other deck is matched</td>
+<td>Used with the Scratch shift button instead of the master shift button (Automix).<br />
+Enable the scratch mode in the corrisponding deck. When the scratch mode is enabled the led of the Sync button blinks.</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>Play</td>
+<td>Starts or stop a loaded track</td>
+<td>Nothing</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>Cue</td>
+<td>Sets the cue point if a track is stoped and not at the current cue point<br />
+Stops track and returns to the current cue point if a track is playing.<br />
+Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>Jog wheel</td>
+<td>Seeks forwards and backwards in a stopped track.<br />
+Temporarily changes the playback speed for playing tracks</td>
+<td>Absolute sync of the track speed to the jog wheel if the scratch mode is enabled</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>Deck volume slider</td>
+<td>Controls a decks output volume</td>
+<td>Nothing</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>Headphone monitor</td>
+<td>Toggles this decks output to the headphones monitor on/off</td>
+<td>Nothing</td>
+</tr>
+</tbody>
+</table>

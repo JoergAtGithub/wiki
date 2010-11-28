@@ -166,7 +166,7 @@ Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
 
 ## Hercules DJ Control MP3 e2 (Tested)
 
-Moved -\> <http://mixxx.org/wiki/doku.php/hercules_dj_control_mp3_e2>
+Moved -\> [Hercules DJ Control MP3 e2](hercules_dj_control_mp3_e2)
 
 ## Updating Mapping Files
 

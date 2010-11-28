@@ -164,6 +164,10 @@ Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)
 
 Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
 
+## Hercules DJ Control MP3 e2 (Tested)
+
+Moved -\> <http://mixxx.org/wiki/doku.php/hercules_dj_control_mp3_e2>
+
 ## Updating Mapping Files
 
 The most recent mapping files where included with Mixxx 1.7.0, released

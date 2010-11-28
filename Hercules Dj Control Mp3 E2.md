@@ -176,7 +176,7 @@ Temporarily changes the playback speed for playing tracks</td>
 <tr class="even">
 <td>17</td>
 <td>Deck volume slider</td>
-<td>Controls a decks output volume</td>
+<td>Controls a deck output volume</td>
 <td>Nothing</td>
 </tr>
 <tr class="odd">

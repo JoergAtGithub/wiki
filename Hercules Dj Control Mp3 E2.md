@@ -182,7 +182,7 @@ Temporarily changes the playback speed for playing tracks</td>
 <tr class="odd">
 <td>20</td>
 <td>Headphone monitor</td>
-<td>Toggles this decks output to the headphones monitor on/off</td>
+<td>Toggles this deck output to the headphones monitor on/off</td>
 <td>Nothing</td>
 </tr>
 </tbody>

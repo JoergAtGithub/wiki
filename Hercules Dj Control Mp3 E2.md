@@ -74,7 +74,7 @@ don't have to download or install nothing.
 <tr class="odd">
 <td>9</td>
 <td>Automix</td>
-<td>Used as a master shift button to obtain more controls than those are provided by Hercules.<br />
+<td>Used as a master shift button to obtain more controls than those provided by Hercules.<br />
 For example: hold down the Automix button and than press the "pitchbend" buttons for adjust the pre-gain amplification</td>
 </tr>
 </tbody>

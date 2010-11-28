@@ -41,13 +41,16 @@ compile process:
     \`./configure && sudo make install\` or port libsndfile
   - libogg, libvorbis ([Download page](http://xiph.org/downloads/)) --
     \`./configure && sudo make install\` or when using port already
-    covered by previous ports
+    covered by previous ports 
   - libFLAC ([Overchan Download
     page](http://flac.sourceforge.net/download.html), [Download
     Page](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)
     (don't try to compile the source directly, you'll need to mess with
     the ld(1) options and just don't, there's enough nuisances in this
-    process)) -\> still needed or is this covered by libsndfile?
+    process)) -\> still needed or is this covered by libsndfile?  
+    \`./configure --disable-asm-optimizations && make && make install\`
+    does compile [libflac 1.2.1](http://www.xiph.org/downloads/) from
+    source on 10.5 -- *\[\[|jus\]\] 2010/11/28*
   - libmp4v2 ([Download](http://resare.com/libmp4v2)) or port mp4v2
   - portmidi
     ([Download](http://sourceforge.net/apps/trac/portmedia/wiki/portmidi)

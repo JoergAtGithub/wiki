@@ -16,7 +16,7 @@ reason it requires specific drivers to be working on each OS.
 ### MAC OS / Windows
 
 Drivers for MAC OS X and Windows can be found on [Hercules support
-page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
+page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=61&pid=241&cid=1).
 
 ### Linux
 

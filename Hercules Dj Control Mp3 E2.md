@@ -21,7 +21,8 @@ page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=61&pid=241&c
 ### Linux
 
 Hercules has released a common MIDI-driver for their DJ controllers.
-Read more on the page for \[\[Hercules Linux kernel module\]
+Read more on the page for [Hercules Linux kernel
+module](Hercules%20Linux%20kernel%20module)
 
 ## Mapping for Mixxx
 

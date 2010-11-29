@@ -822,8 +822,10 @@ build:
     /release` for 32-bit.)
 6.  `cd` to the directory you unpacked it to
 7.  Type `nmake clean VC` and hit Enter.
-8.  When it finishes, copy the following file into `mixxx-win32lib-msvc`
-    or `mixxx-win64lib-msvc`: `pthreads\pthreadVC2.dll`
+8.  When it finishes, type `mt.exe -manifest pthreadVC2.dll.manifest
+    -outputresource:pthreadVC2.dll;2` and hit Enter.
+9.  Copy the following file into `mixxx-win32lib-msvc` or
+    `mixxx-win64lib-msvc`: `pthreads\pthreadVC2.dll`
 
 ### Preparation
 

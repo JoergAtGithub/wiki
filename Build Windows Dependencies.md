@@ -821,7 +821,9 @@ build:
 5.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
 6.  `cd` to the directory you unpacked it to
-7.  Type `nmake clean VC-static` and hit Enter.
+7.  Type `nmake clean VC` and hit Enter.
+8.  When it finishes, copy the following file into `mixxx-win32lib-msvc`
+    or `mixxx-win64lib-msvc`: `pthreads\pthreadVC2.dll`
 
 ### Preparation
 
@@ -895,12 +897,12 @@ for guidance\!*
             2.  to ogg.lib and vorbis.lib (which should be in
                 `mixxx-win[32|64]lib-msvc` at this point, so you can
                 just enter the path to that.)
-        2.  Under Linker, for Additional Dependencies, enter `pthread
-            Ws2_32.lib winmm.lib ogg.lib vorbis.lib`
-        3.  Under Linker, for Ignore Specific Library, enter
-            `LIBCMT.lib`
+        2.  Under Linker, for Additional Dependencies, enter
+            `pthreadVC2.lib Ws2_32.lib winmm.lib ogg.lib vorbis.lib`
     4.  Click OK.
-10. Right click `libshout` and click Build.
+10. Right click `libshout` and click Build. (If you get a bunch of
+    "already defined" errors, go to Configuration Properties-\>Linker
+    and under Linker, for Ignore Specific Library, enter `LIBCMT.lib`.)
 11. When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libshout-2.2.2\win32\Release\libshout.lib

@@ -97,10 +97,10 @@ Scripting](MIDI%20Scripting) pages.
 | Numark Omni Control       |
 | Numark MixDeck            |
 | Numark Mixmeister Control |
-| Numark MixTrack           |
 | Numark iDJ2               |
 | Numark NS7                |
 | Numark NSFX               |
+| Numark V7                 |
 | Vestax VCI-300            |
 | Vestax Spin               |
 | Vestax Typhoon            |

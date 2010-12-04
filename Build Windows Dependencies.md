@@ -850,11 +850,15 @@ for guidance\!*
     3.  Add the following at the top: `#ifndef __MINGW32__
                                         #define va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list))
         #endif` 
-6.  Copy `libshout-2.2.2\include\shout\shout.h` to `mixxx-win32lib-msvc`
-    or `mixxx-win64lib-msvc`
-7.  Edit `libshout-2.2.2\include\shout\shout.h` and place
+6.  Copy `libshout-2.2.2\include\shout\shout.h` to
+    `mixxx-win[32|64]lib-msvc\shout`
+7.  Copy `libshout-2.2.2\include\os.h` to
+    `mixxx-win[32|64]lib-msvc\shout`
+8.  Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change `#include
+    <os.h>` to `#include "os.h"`
+9.  Edit `libshout-2.2.2\include\shout\shout.h` and place
     ` __declspec(dllexport)  ` in front of every function definition
-8.  Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
+10. Edit `mixxx-win[32|64]lib-msvc\shout\shout.h` and change line 25 to
     `#ifdef __WINDOWS__`
 
 ### Build

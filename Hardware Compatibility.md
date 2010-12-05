@@ -2,18 +2,18 @@
 
 ## Controllers
 
-Mixxx can work with any MIDI controller that has drivers for your OS,
+Mixxx can work with any MIDI controller that has drivers for your OS:
 you simply need a mapping file to tell Mixxx how to understand it. Mixxx
 comes bundled with a number of MIDI mapping presets for the devices
 listed below.
 
-**Often times these mappings are contributed by users, but the Mixxx
-team has no way of judging the quality of the mappings because we don't
-own the devices ourselves.** There are two different levels of support
-for devices in Mixxx: **Mixxx Certified Support** and **Community
-Support**. Mixxx Certified mappings are verified by the Mixxx Team.
-Community Supported mappings are mappings provided by the Mixxx
-Community, but the Mixxx team is unable the verify their quality.
+There are two different levels of support for devices in Mixxx:
+
+  - **Mixxx Certified Support** - These mappings are verified by the
+    Mixxx Development Team
+  - **Community Support** - These mappings are provided by the Mixxx
+    Community, but the Mixxx Team is unable to verify their quality
+    because we don't have the devices ourselves.
 
 ### Mixxx Certified Mappings
 

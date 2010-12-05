@@ -1,6 +1,6 @@
 # Stanton SCS.1d & Mixxx User Guide
 
-This guide explains how the SCS.1d is mapped by default in Mixxx 1.7.x.
+This guide explains how the SCS.1d is mapped by default in Mixxx.
 
 [[/media/hardware/stantonscs/scs.1d_callouts.jpg|]]
 
@@ -26,6 +26,14 @@ variables at the top of the script you can set to your liking:
   - **padVelocity** - If set to true, uses the velocity values when
     recalling cues on the trigger pads (this is toggle-able with a
     button on the unit as well.)
+  - **crossFader** - If true, uses the pitch slider to adjust the
+    cross-fader while the Pitch Range button is held down
+  - **browseDamp** - Number of platter ticks to move the highlight one
+    item when browsing the library. Set higher for slower movement.
+    (Defaults to 2.)
+
+*The following are not used in Mixxx v1.9.0 and up:*
+
   - **scratching**: *All of these values are heavily dependent on your
     latency setting. Adjust as needed.*
     1.  **sensitivity** - How much the audio moves for a given platter
@@ -103,16 +111,18 @@ corresponding display shows the cue point in
   - Toggles between the pitch range values specified in the
     **pitchRanges** global variable mentioned at the top of this page
   - When held, allows the pitch slider to be used to adjust the
-    cross-fader. If you do this, the pitch range will not be changed
-    when you release the button.
+    cross-fader (if the **crossFader** variable is set to true.) If you
+    do this, the pitch range will not be changed when you release the
+    button.
   - **Reset button**: Resets the slider to the center position when
     adjusting pitch or the cross-fader.
 
 ## Preset section
 
 This section is used for instant pitch changes for the current virtual
-deck (and will also control looping in a future version of Mixxx.) It's
-useful when using the pads as samplers to further vary the sounds.
+deck (and will also control looping in a future version of the mapping
+in v1.9.0 and up.) It's useful when using the pads as samplers to
+further vary the sounds.
 
 They offer the following arrangements, increasing from left to right,
 top to bottom:

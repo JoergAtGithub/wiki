@@ -7,7 +7,7 @@ you simply need a mapping file to tell Mixxx how to understand it. Mixxx
 comes bundled with a number of MIDI mapping presets for the devices
 listed below.
 
-There are two different levels of support for devices in Mixxx:
+There are two different levels of device support in Mixxx:
 
   - **Mixxx Certified Support** - These mappings are verified by the
     Mixxx Development Team

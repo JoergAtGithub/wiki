@@ -65,12 +65,8 @@ Side projects:
 Tentatively:
 
   - Vinyl Control rewrite
-
-<!-- end list -->
-
-``` 
-* 
-```
+  - Sampler Units
+  - External Audio Passthrough
 
 ### Probably Longer Term
 

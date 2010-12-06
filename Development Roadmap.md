@@ -30,7 +30,9 @@ world-class application, somewhat in order of importance:
 
 ### 1.9
 
-Release Date: Late-2010/Early-2011
+More in-depth details on Launchpad:
+<https://launchpad.net/mixxx/+milestone/1.9.0> Release Date:
+Late-2010/Early-2011
 
 Plan as of November 8th, 2010:
 

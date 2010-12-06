@@ -42,11 +42,13 @@ Plan as of November 8th, 2010:
   - Library improvements:
   - Taglib for faster scanning, better metadata
   - Fixes for iTunes/Rhythmbox slowness
-  - ??? (Ratings widget, played column?)
+  - Ratings widget, played column
   - Deprecated Qt3 code removal
   - Feature freeze: November 14th
   - Strings freeze: November 24th
   - GUI freeze: November 30th
+  - Beta1 Released: Dec 5th -
+    <http://mixxxblog.blogspot.com/2010/12/mixxx-190-beta1-and-182-released.html>
   - Release: \~End of 2010
 
 Side projects:

@@ -36,6 +36,12 @@ before starting Mixxx.**
 
 ### 1.9.x
 
+**Important: Make sure your unit(s) are at firmware v1.25 or higher** so
+that the platter and flashing lights on deck changes work correctly.
+[See Stanton's SCS.1d page
+here](http://www.stantondj.com/stanton-controllers-systems/scs1d.html)
+and click Downloads.
+
 *The mapping is still in active development in the 1.9 release branch
 and should be considered beta-quality in that it's stable, but things
 may change before the final 1.9.0 release.*

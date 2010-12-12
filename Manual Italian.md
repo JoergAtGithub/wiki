@@ -173,7 +173,7 @@ Le manopole Depth, Delay ed LFO, controllano il flanger. Il flanger è un effett
 </tbody>
 </table>
 
-## Library
+## Libreria
 
 <table>
 <tbody>
@@ -181,17 +181,17 @@ Le manopole Depth, Delay ed LFO, controllano il flanger. Il flanger è un effett
 <td><img src="/manual/uioverview/ui_library.png" /></td>
 </tr>
 <tr class="even">
-<td>The library manages all your music files. This is where you can find the tracks you want to play and load them into a channel. Alternatively, you can also use your external filemanager and drop files onto the waveform display. The sidebar on the left contains different collections of music. The view on the right displays the songs in those collections.<br />
+<td>La libreria gestisce tutti i tuoi file musicali. Qui è dove puoi trovare le tracce da eseguire e caricarle su un canale. In alternativa è anche possibile utilizzare il tuo file manager esterno e trascinare i file nel display della waveform. La barra sulla sinistra contiene diverse compilation di musica. L'area a destra mostra le tracce di tali compilation.<br />
 <br />
-The Search box in the top-left the current view for songs that match your query.<br />
+Il box di Ricerca in alto a sinistra determina la vista corrente dei pezzi che corrispondono alla tua ricerca.<br />
 <br />
-The Library is displays a sortable list of all the songs in your music library. Mixxx imports your music library automatically when it is run for the first time, and automatically detects newly added songs on each subsequent run. If you want to manually refresh your library without exiting (for example because you added or moved files) you can do this with <em>Library-&gt;Rescan Library</em> in the menu.<br />
+La libreria mostra una lista ordinabile di tutte le tracce della tua collezione musicale. Mixxx importa automaticamente la tua libreria musicale quando viene eseguito per la prima volta, e ad ogni esecuzione successiva rileva automaticamente le nuove canzoni aggiunte. Se vuoi aggiornare manualmente la libreria senza uscire (ad esempio perchè hai aggiunto o spostato dei files) è possibile farlo con <em>Library-&gt;Rescan Library</em> nel menu.<br />
 <br />
-To load a track into a player, you can either simply drag it to the waveform display or use the context menu (right-click on a track). The right-click context menu also allows you to add a track to the Auto DJ queue, playlists, or crates.<br />
+Per caricare una traccia nel player, la si può sia trascinare semplicemente nel display della waveform, sia usare il menù contestuale (click destro sulla traccia). Il menù contestuale del click destro ti permette anche di aggiungere una traccia nella coda della funzionalità Auto-Dj, nelle playlists o nei crates.<br />
 <br />
-The Missing Songs view is accessible by expanding Library tree item in the sidebar. Any songs that were previously loaded into your library, but were later detected to be missing from your hard disk by Mixxx will appear here. Mixxx does not automatically delete records of missing songs so that extra metadata Mixxx might have (such as hot cues and the BPM) will not be lost if the file is replaced.<br />
+La view "Tracce mancanti" è accessibile espandendo l'albero della libreria nella barra laterale. Ogni traccia che era stata precedentemente caricata nella tua libreria, ma che era stata poi rilevata da Mixxx come mancante dal tuo hard disk, apparirà qui. Mixxx non cancella automaticamente i record delle tracce mancanti, cosicchè i metadati extra che Mixxx può avere (come gli hot cues ed i BPM) non vengano persi se il file viene ripristinato.<br />
 <br />
-The Featured Artists view contains free promotional music that may come bundled with your version of Mixxx. These songs are DJ friendly, and you are licensed to perform live with these songs at any event you'd like.<br />
+La view "Featured Artists" contiene musica promozionale gratuita che può essere inclusa nella tua versione di Mixxx. Queste tracce sono "dj friendly", e sei autorizzato ad esibirti dal vivo con questi pezzi per qualsiasi evento.<br />
 <br />
 The Auto DJ queue is a special playlist that contains extra controls for enabling automatic mixing. Toggling the "Enable Auto DJ" button within this view will tell Mixxx to automatically load the next song from this playlist when the current song is nearly finished, and crossfade into it. Mixxx will continue to automatically mix until the Auto DJ playlist is empty.<br />
 <br />

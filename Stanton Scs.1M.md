@@ -6,11 +6,50 @@ Link to the website: <http://www.enterthesystem.com/system/scs1m_mixer/>
 
 ## Latest MIDI mapping & script files
 
-### 1.7.0+
+[Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)
+
+### 1.9.x
+
+#### Instructions
+
+**Stanton's DaRouter is not used with Mixxx 1.9.0 and up. Close it
+before starting Mixxx.**
+
+1.  Download the files below.
+2.  Save the files into:
+
+<!-- end list -->
+
+  - Windows: `C:\Program Files\Mixxx\midi` (technically
+    `%PROGRAMFILES%\Mixxx\midi`)
+  - OS X: `/Applications/Mixxx.app/Contents/Resources/midi`
+  - Linux: `/usr[/local]/share/mixxx/midi`
+
+<!-- end list -->
+
+1.  Turn the controller on.
+2.  Start Mixxx
+3.  Open Preferences
+4.  Expand "MIDI Controllers"
+5.  Select the "SCS.1m" device
+6.  Click the Enable checkbox in the right pane
+7.  Click the drop-down and choose the "Stanton SCS.1m" mapping
+8.  Click OK and you're good to go. (The controller should initialize
+    and light up.)
+
+***Note:** the controller is not yet supported in Linux. We have a plan
+to fix that in a future Mixxx version.*
+
+The latest official MIDI mapping and script file are in the 1.9 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.1m.midi.xml](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.9.x/download/head%3A/stantonscs.1m.midi.x-20090413052950-0s8dvnvezkl3lrrh-1/Stanton%20SCS.1m.midi.xml)
+  - [Stanton-SCS1m-scripts.js](http://bazaar.launchpad.net/%7Emixxxdevelopers/mixxx/release-1.9.x/download/head%3A/stantonscs1mscripts.-20090413052950-0s8dvnvezkl3lrrh-2/Stanton-SCS1m-scripts.js)
+
+### 1.7.x-1.8x
 
 [See a walk-through video\!](http://www.youtube.com/watch?v=crJksOEuTx0)
-
-[Mixxx user's guide for the SCS.1m](stanton_scs.1m_mixxx_user_guide)
 
 The latest official MIDI mapping and script file are in the 1.7 release
 branch and can be downloaded from here:

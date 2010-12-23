@@ -79,3 +79,10 @@ To activate MP3 stream on Windows, the following steps are necessary.
 Please note that Audacity and other web-sites provide lame binaries,
 too. DO NOT USE THESE VERSIONS. Otherwise Mixxx shows an error when
 activating live broadcasting.
+
+On OS X the easiest way to archive MP3 streaming is to use
+[MacPorts](http://www.macports.org/) which is a repository manager (like
+apt on Ubuntu) for Open Source software. Having installed this piece of
+software installing MP3 support is rather simple.
+
+    sudo port install lame

@@ -79,6 +79,10 @@ No, Mixxx does not write to or move any files in your library. It's safe
 to use Mixxx with your iTunes library - Mixxx will not change anything
 in your library.
 
+As of Mixxx 1.9.0, there is an option to write metadata changes back to
+the file tags (e.g. ID3, Xiph/Ogg, APE) but this is disabled by default.
+You can enable it from the Mixxx Library Preferences.
+
 ## What platforms are officially supported by Mixxx?
 
 As of release 1.6.0, the official Mixxx **binary** releases attempt to

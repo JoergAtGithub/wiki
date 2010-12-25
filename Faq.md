@@ -43,7 +43,9 @@ do.
 
 ## Is it possible to use Mixxx with an external mixer?
 
-Yes. There are two ways to do it depending on what you want to achieve:
+Yes. External-mixer mode is a feature of Mixxx 1.9.0 onwards. If you are
+on 1.8.x or below, there are two ways to do it depending on what you
+want to achieve:
 
   - **Direct deck outputs**: The trick is to force Mixxx's master output
     to play back the left/top track, and the headphone output to

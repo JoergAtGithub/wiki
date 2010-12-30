@@ -18,14 +18,7 @@ responsiveness. Here are some tips to help you do that.*
   - **Disable chipcard2.** This utility polls for smart cards every few
     seconds, and when it does, it can cause Mixxx's audio to skip, even
     with the latency set really high.
-  - If you're using ALSA, **try setting your Master output hardware to
-    just "default"** instead of specific hardware. (This made a huge
-    difference on a test system with integrated Intel soundcard.) The
-    drawback to this is that system sounds (KDE beeps and such) will now
-    be mixed in and will come out the main output. Note that, depending
-    on your ALSA configuration, this can add a significant (about 20 ms
-    on my system) amount of latency **in addition to** the latency value
-    chosen in Mixxx.
+  - Set [IRQ Priorities](http://subversion.ffado.org/wiki/IrqPriorities)
   - You can also try using a [real-time
     kernel](http://pkg-freebob.alioth.debian.org/lowlat.html) or a
     distribution that includes one, like

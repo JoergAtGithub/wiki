@@ -143,6 +143,14 @@ directory, and use scons to compile and install:
     scons
     scons bundle
 
+If it you get a message like:
+
+    Error: QT path does not exist or QT4 is not installed.
+
+Then try the "scons" command above like this:
+
+    scons qtdir=/Developer
+
 This should generate Mixxx.app. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip
 'scons bundle' and instead on the first run of mixxx run it as:

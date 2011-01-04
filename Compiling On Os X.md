@@ -64,7 +64,8 @@ compile process:
     sure to grab the [64bit cocoa
     version](http://get.qt.nokia.com/qt/source/qt-mac-cocoa-opensource-4.6.1.dmg)
   - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
-    installer for your version of OS X
+    installer for your version of OS X -- This can now be installed
+    through "sudo port install bzr"
 
 #### If this is your First Time
 

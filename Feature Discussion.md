@@ -109,10 +109,10 @@ may be done already or irrelevant.
     points and loops, potentially beat grid markers once we get some
     concept of beats with the beat detection feature planned for
     1.8.5/1.9)
-  - Split browser into two lists -\> browser and
-    playlist/crates/auto-dj. Songs can be drag and dropped more
-    convenient, dj can see if song is already in the list. This should
-    be optional.
+  - Split file browser into two lists/columns -\> 1. Browser and 2.
+    Playlist/Crates/Auto-DJ(all sorts of playlists). Songs can be drag
+    and dropped more convenient, dj can see if song is already in the
+    list. This should be optional.
   - Display a warning before a song can be dragged onto a running deck.
     This should be optional.
   - Auto-dj button should not be hidden, should be on the top layer of

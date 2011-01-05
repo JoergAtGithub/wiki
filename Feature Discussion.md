@@ -117,3 +117,5 @@ may be done already or irrelevant.
     This should be optional.
   - Auto-dj button should not be hidden, should be on the top layer of
     the interface so one can always see if it is activated.
+  - Should be possible to drag and drop the song everywhere on the deck,
+    not only on the waveform.

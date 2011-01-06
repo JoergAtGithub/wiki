@@ -159,7 +159,7 @@ This should generate Mixxx.app. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip
 'scons bundle' and instead on the first run of mixxx run it as:
 
-    mixxx --resourcePath res/
+    ./mixxx --resourcePath res/
 
 So that it records res/ in mixxx.cfg as where to find skins etc instead
 of dying at startup.

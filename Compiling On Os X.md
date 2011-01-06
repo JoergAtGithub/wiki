@@ -63,6 +63,9 @@ compile process:
     the .dmg and install to the default location, for snow leopard make
     sure to grab the [64bit cocoa
     version](http://get.qt.nokia.com/qt/source/qt-mac-cocoa-opensource-4.6.1.dmg)
+    -- DO NOT use qt4-mac delivered through macports. It will give you
+    error messages that some header files are missing e.g. libmad and
+    others. This is due to a missing QTCore framework.
   - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
     installer for your version of OS X -- This can now be installed
     through "sudo port install bzr"

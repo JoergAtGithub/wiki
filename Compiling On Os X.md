@@ -35,8 +35,6 @@ compile process:
     "sudo port install libid3tag" , "sudo port install libmad"
   - [PortAudio-v19](http://www.portaudio.com) -- \`./configure && sudo
     make install\` or port portaudio or "sudo port install portaudio"
-  - fftw3 ([Download page](http://www.fftw.org/download.html)) --
-    \`./configure && sudo make install\` or port fftw-3
   - libsndfile ([Download
     page](http://www.mega-nerd.com/libsndfile/#Download)) --
     \`./configure && sudo make install\` or port libsndfile
@@ -134,8 +132,8 @@ Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
 code:
 
-    bzr checkout lp:mixxx/1.7 (for current stable v1.7)
-    bzr checkout lp:mixxx/1.8 (for current beta v1.8)
+    bzr checkout lp:mixxx/1.8 (for current stable v1.7)
+    bzr checkout lp:mixxx/1.9 (for current beta v1.9)
     bzr checkout lp:mixxx (for latest trunk)
 
 ### 3\. Compile and install

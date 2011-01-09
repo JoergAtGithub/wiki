@@ -202,7 +202,7 @@ of Mixxx users do.
 3.  official driver must be patched to support kernels \> 2.6.30 see
     <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-4.  no official support yet, but works woth another patch to the
+4.  no official support yet, but works with another patch to the
     hercules driver
 
 5.  DaRouter Required

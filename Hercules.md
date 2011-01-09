@@ -66,7 +66,7 @@ this wonderful development, the Mixxx team released an updated build of
 Mixxx for Linux - 1.6.1+Herc. <span class="underline">Thanks go out to
 Hercules for supporting their Linux users\!</span>
 
-Note about linux support: As of January 2011, the drivers available from
+Note about Linux support: As of January 2011, the drivers available from
 the Hercules site are not functional out of the box with modern
 distributions (kernel \> 2.6.30) and require patching. The Dj Console
 MP3 e2 is also not supported by those drivers (another patch required).

@@ -17,19 +17,19 @@ There are two different levels of device support in Mixxx:
 
 ### Mixxx Certified Mappings
 
-|                                                                  |                                         |                            |                                                                                                                                      |
-| ---------------------------------------------------------------- | --------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Device                                                           | Windows                                 | Mac OS X                   | Linux                                                                                                                                |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+) [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[1\] (1.7.0+)               | Yes (1.6.1)\[2\] (1.7.0+)  | Yes (1.7.0+)                                                                                                                         |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+)                                                                                                                         |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1)\[3\] (1.7.0+)\[4\] (1.9.0+) | Yes (1.7.0+)\[5\] (1.9.0+) | Yes (1.6.0+)\[6\]                                                                                                                    |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | In Progress (1.9.0)                     | In Progress (1.9.0)        | In Progress (1.11.0)                                                                                                                 |
-| [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+)                                                                                                                         |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                         |
-| [eks Otus](eks%20Otus)                                           | In Progress                             | In Progress                | In Progress                                                                                                                          |
+|                                                                  |                                         |                            |                                                                                                                                               |
+| ---------------------------------------------------------------- | --------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Device                                                           | Windows                                 | Mac OS X                   | Linux                                                                                                                                         |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[1\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)       |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[2\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+) \[3\] \[4\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[5\] (1.7.0+)               | Yes (1.6.1)\[6\] (1.7.0+)  | Yes (1.7.0+)                                                                                                                                  |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+)                                                                                                                                  |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1)\[7\] (1.7.0+)\[8\] (1.9.0+) | Yes (1.7.0+)\[9\] (1.9.0+) | Yes (1.6.0+)\[10\]                                                                                                                            |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | In Progress (1.9.0)                     | In Progress (1.9.0)        | In Progress (1.11.0)                                                                                                                          |
+| [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+)                                                                                                                                  |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                                  |
+| [eks Otus](eks%20Otus)                                           | In Progress                             | In Progress                | In Progress                                                                                                                                   |
 
 ### Community Supported Mappings
 
@@ -44,10 +44,10 @@ mailing list, forums, or IRC channel.
 | Device                                                                                             | Windows                 | Mac OS X                                                | Linux                                                                                                                                                                                                                                                   |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | Yes (1.8.0+)            | Yes (1.8.0+)                                            | Yes (1.8.0+)                                                                                                                                                                                                                                            |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | Yes (1.7.0+)            | Yes (1.7.0+)                                            | Yes (1.7.0+ ) + [Hercules Linux kernel module](hercules_linux_kernel_module)                                                                                                                                                                            |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | No                      | No                                                      | No\[7\]                                                                                                                                                                                                                                                 |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | No                      | No                                                      | No\[11\]                                                                                                                                                                                                                                                |
 | [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | Yes (1.7.0+)            | Yes (1.7.0+)                                            | ???                                                                                                                                                                                                                                                     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | Yes (1.7.0+)            | Yes (1.7.0+)                                            | Yes (1.7.0+) + [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?% Apg=view_files&gid=2&fid=28&pid=215&cid=1#section1)                                                                                                                  |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | Yes (1.8.2+)            | Yes (1.8.2+)                                            | No way to test it \[8\] For any news see [here](http://www.mixxx.org/forums/viewtopic.php?f=1&t=1560)                                                                                                                                                   |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | Yes (1.8.2+)            | Yes (1.8.2+)                                            | No way to test it \[12\] For any news see [here](http://www.mixxx.org/forums/viewtopic.php?f=1&t=1560)                                                                                                                                                  |
 | [Numark MIXTRACK](Numark%20MIXTRACK)                                                               | Yes (1.8.2+)            | Yes (1.8.2+)                                            | Yes (1.8.2+)                                                                                                                                                                                                                                            |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | Yes (1.8.0+)            | Yes (1.8.0+)                                            | Yes (1.8.0+)                                                                                                                                                                                                                                            |
 | [Akai MPD24](Akai%20MPD24)                                                                         | Yes (1.8.0+)            | Yes (1.8.0+)                                            | Yes (1.8.0+)                                                                                                                                                                                                                                            |
@@ -59,7 +59,7 @@ mailing list, forums, or IRC channel.
 | [Evolution X-Session](Evolution%20X-Session)                                                       | Yes (1.6.0+)            | Yes (1.6.0+)                                            | Yes (1.6.0+)                                                                                                                                                                                                                                            |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | Yes (1.6.0+)            | Yes (1.6.0+, untested)                                  | Yes (1.6.0+)                                                                                                                                                                                                                                            |
 | [Vestax VCI-100](Vestax%20VCI-100)                                                                 | Yes (1.6.0+)            | Yes (1.6.0+)                                            | Yes (1.6.0+)                                                                                                                                                                                                                                            |
-| [Tascam US-428](Tascam%20US-428)                                                                   | MIDI (1.6.0+, untested) | ?                                                       | Yes\[9\]                                                                                                                                                                                                                                                |
+| [Tascam US-428](Tascam%20US-428)                                                                   | MIDI (1.6.0+, untested) | ?                                                       | Yes\[13\]                                                                                                                                                                                                                                               |
 | [Griffin PowerMate](Griffin%20PowerMate)                                                           | No                      | No                                                      | Supported in \<1.6.0                                                                                                                                                                                                                                    |
 
 Please do not modify this list unless a MIDI mapping preset for a new
@@ -193,21 +193,33 @@ can use the "front" output as your master output, and plug your
 headphones into the "rear" output for cueing. This is what the majority
 of Mixxx users do.
 
-1.  DaRouter Required
+1.  official driver must be patched to support kernels \> 2.6.30 see
+    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-2.  DaRouter Required
+2.  official driver must be patched to support kernels \> 2.6.30 see
+    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-3.  basic support
+3.  official driver must be patched to support kernels \> 2.6.30 see
+    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-4.  DaRouter Required
+4.  no official support yet, but works woth another patch to the
+    hercules driver
 
 5.  DaRouter Required
 
-6.  with FFADO 2.1
+6.  DaRouter Required
 
-7.  Driver conflict between Linux kernel usbquirks and Herc MIDI driver
+7.  basic support
 
-8.  hercules mk4 linux MIDI driver missing
+8.  DaRouter Required
 
-9.  Need the latest us428control (launch us428control -m mixxx) and the
+9.  DaRouter Required
+
+10. with FFADO 2.1
+
+11. Driver conflict between Linux kernel usbquirks and Herc MIDI driver
+
+12. hercules mk4 linux MIDI driver missing
+
+13. Need the latest us428control (launch us428control -m mixxx) and the
     select the US428 mapping in Mixxx's options

@@ -70,7 +70,7 @@ Note about Linux support: As of January 2011, the drivers available from
 the Hercules site are not functional out of the box with modern
 distributions (kernel \> 2.6.30) and require patching. The Dj Console
 MP3 e2 is also not supported by those drivers (another patch required).
-please refer to the thread below for further information:
+Please refer to the thread below for further information:
 <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
 Users of Hercules products on Windows and OSX will want to read the

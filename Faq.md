@@ -43,7 +43,7 @@ do.
 
 ## Is it possible to use Mixxx with an external mixer?
 
-Yes. External-mixer mode is a feature of Mixxx 1.9.0 onwards. If you are
+Yes. Direct deck outputs is a feature of Mixxx 1.9.0 onwards. If you are
 on 1.8.x or below, there are two ways to do it depending on what you
 want to achieve:
 

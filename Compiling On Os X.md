@@ -153,6 +153,14 @@ Then try the "scons" command above like this:
 
     scons qtdir=/Developer
 
+If it you get a message like:
+
+    d: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+
+Then try the "scons" command above like this:
+
+    scons machine=x86_64
+
 This should generate Mixxx.app. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip
 'scons bundle' and instead on the first run of mixxx run it as:

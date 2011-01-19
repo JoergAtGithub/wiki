@@ -100,7 +100,7 @@ Scripting](MIDI%20Scripting) pages.
 | Numark Omni Control           |
 | Numark MixDeck                |
 | Numark Mixmeister Control     |
-| Numark iDJ2                   |
+| Numark iDJ3                   |
 | Numark NS7                    |
 | Numark NSFX                   |
 | Numark V7                     |

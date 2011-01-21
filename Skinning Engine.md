@@ -146,6 +146,10 @@ Tobias Rafreider has created a branch for that purpose.
 More information about Qt Quick and QML may be found on
 <http://doc.qt.nokia.com/4.7-snapshot/declarativeui.html>
 
+I found a nice example of QML usage for a DJ Software:
+<http://www.avid.com/US/products/Torq-2> --- *[Daniel
+Lindenfelser](dan_lin@me.com) 2011/01/21 10:51*
+
 ## Forum discussion
 
 There was a productive discussion that happened in the forums:

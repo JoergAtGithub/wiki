@@ -67,6 +67,11 @@ compile process:
   - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
     installer for your version of OS X -- This can now be installed
     through "sudo port install bzr"
+  - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
+    "scons" then "sudo scons install" but you probably don't need it
+    unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
+    Get around this by including "hss1394=0" when running scons on mixxx
+    (see below).
 
 #### If this is your First Time
 

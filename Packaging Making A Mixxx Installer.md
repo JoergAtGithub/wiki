@@ -61,6 +61,15 @@ a day old:
 
 # OSX
 
+It's not an installer, but it certainly is a package, and standard fare
+for OSX. Get a .DMG with the .APP, and drag it to your /Applications
+Works as of 1.9+:
+
+## Building a .DMG
+
+1.  [Build Mixxx using SCons](compiling_on_OSX)
+2.  `scons bundle package`
+
 # Windows
 
 see [Making a Windows installer package](build_windows_installer)

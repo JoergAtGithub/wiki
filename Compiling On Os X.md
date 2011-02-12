@@ -21,59 +21,84 @@ moment, installing the supporting libraries through fink does not work
 properly as the install script expects them in a different place. When
 executing make install, you may need to use 'sudo make install' instead.
 
+FIXME --- Clean up this mess, separate the Regular vs. Macports way of
+install - *\[\[|jus\]\] 2011/02/12 15:06*
+
 You will need to install the following before continuing with the
 compile process:
 
-  - scons ([Download page](http://www.scons.org/download.php), [Install
+  - scons ([Download](http://www.scons.org/download.php), [Install
     guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --
-    if you have darwinports and have already installed its version of
-    python then \`sudo port install scons\` is also a reasonable way to
-    get this installed or port scons or "sudo port install scons"
-  - libid3tag, libmad ([Download
-    page](http://sourceforge.net/project/showfiles.php?group_id=12349))
-    -- \`./configure && sudo make install\` or port libid3tag/libmad or
-    "sudo port install libid3tag" , "sudo port install libmad"
-  - [PortAudio-v19](http://www.portaudio.com) -- \`./configure && sudo
-    make install\` or port portaudio or "sudo port install portaudio"
-  - libsndfile ([Download
-    page](http://www.mega-nerd.com/libsndfile/#Download)) --
-    \`./configure && sudo make install\` or port libsndfile
-  - libogg, libvorbis ([Download page](http://xiph.org/downloads/)) --
+    if you have Macports and have already installed its version of
+    python then "sudo port install scons" is also a reasonable way to
+    get this installed.
+  - libid3tag
+    ([Download](http://sourceforge.net/project/showfiles.php?group_id=12349))
+    -- \`./configure && sudo make install\` or "sudo port install
+    libid3tag"
+  - libmad
+    ([Download](http://sourceforge.net/project/showfiles.php?group_id=12349))
+    -- \`./configure && sudo make install\` or "sudo port install
+    libmad" . If you run into the following error with libmad in 10.6:
+    *version.c:1: error: CPU you selected does not support x86-64
+    instructions* run the following *export CFLAGS="-arch i686"* then,
+    configure, make, sudo make install as normal.
+  - Portaudio [Download](http://www.portaudio.com) -- Use the latest
+    "v19" trunk snapshot -- \`./configure && sudo make install\` or
+    "sudo port install portaudio"
+  - libsndfile
+    ([Download](http://www.mega-nerd.com/libsndfile/#Download)) --
+    \`./configure && sudo make install\` or "sudo port install
+    libsndfile"
+  - libogg, libvorbis ([Download](http://xiph.org/downloads/)) --
     \`./configure && sudo make install\` or if you have been using port,
-    this will have already been covered by previous ports.
-  - libFLAC ([Overchan Download
-    page](http://flac.sourceforge.net/download.html), [Download
-    Page](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)
+    :?: this will have already been covered by previous ports.:?:
+  - libFLAC ([Overchan
+    Download](http://flac.sourceforge.net/download.html),
+    [Download](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)
     (don't try to compile the source directly, you'll need to mess with
     the ld(1) options and just don't, there's enough nuisances in this
     process)) -\> still needed or is this covered by libsndfile?  
     \`./configure --disable-asm-optimizations && make && make install\`
     does compile [libflac 1.2.1](http://www.xiph.org/downloads/) from
     source on 10.5 -- *\[\[|jus\]\] 2010/11/28*
-  - libmp4v2 ([Download](http://resare.com/libmp4v2)) or port mp4v2
+  - libmp4v2 ([Download](http://code.google.com/p/mp4v2/downloads/list))
+    or "sudo port install mp4v2"
   - portmidi
     ([Download](http://sourceforge.net/apps/trac/portmedia/wiki/portmidi),
     or "sudo port install portmidi"
-  - faad2 ([Download](http://sourceforge.net/projects/faac/)) or port
-    faad2, e.g. "sudo port install faad2"
-  - QT 4.6.0+ ([Download
-    page](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) -- get
-    the .dmg and install to the default location, for snow leopard make
-    sure to grab the [64bit cocoa
+  - faad2 ([Download](http://sourceforge.net/projects/faac/)) or "sudo
+    port install faad2"
+  - QT 4.6.0+
+    ([Download](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) --
+    get the .dmg and install to the default location, for snow leopard
+    make sure to grab the [64bit cocoa
     version](http://get.qt.nokia.com/qt/source/qt-mac-cocoa-opensource-4.6.1.dmg)
     -- DO NOT use qt4-mac delivered through macports. It will give you
     an error messages that some header files are missing e.g. libmad and
     others. This is due to a missing QTCore framework.
-  - Bazaar ([Download page](http://bazaar-vcs.org/Download)) -- Get the
-    installer for your version of OS X -- This can now be installed
-    through "sudo port install bzr"
+  - Bazaar ([Download](http://bazaar-vcs.org/Download)) -- Get the
+    installer for your version of OS X. The installer contains the
+    [Bazaar Explorer
+    GUI](http://mixxx.org/wiki/doku.php/using_bazaar?s[]=explorer#gui_clients).
+    -- or "sudo port install bzr" and "sudo port install bzr-explorer"
+    for the GUI
   - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
     "scons" then "sudo scons install" but you probably don't need it
     unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
     Get around this by including "hss1394=0" when running scons on mixxx
     (see below).
+  - taglib -- only applicable to 1.9+ --
+    ([Download](http://developer.kde.org/~wheeler/taglib.html)) -- or
+    "sudo port install taglib"
+  - libshout -- only applicable to 1.9+ --
+    ([Download](http://www.icecast.org/download.php)) -- or "sudo port
+    install libshout2"
 
 #### If this is your First Time
+
+FIXME --- Clarify Macports usage, - Work in progress *\[\[|jus\]\]
+2011/02/12 15:06*
 
 First, download all of the libraries and utilities in the above list,
 starting with scons. During this process, your main command is "sudo

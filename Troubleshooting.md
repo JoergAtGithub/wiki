@@ -94,6 +94,15 @@ responsiveness. Here are some tips to help you do that.*
     rtprio 99` to allow Mixxx (and other processes you run) to increase
     their thread priority to maximum, or just run Mixxx from a console
     with `sudo mixxx`.
+  - In OS X, you have three choices:
+
+<!-- end list -->
+
+``` 
+    - ''sudo nice -n -20 /Applications/Mixxx.app/Contents/MacOS/Mixxx.app'' in console, assuming you have appropriate privileges in ''/etc/sudoers''.
+    - run Mixxx like normal but then find the PID with ''ps -l'' in console, and then run ''sudo renice -20 //<PID>//'' (again, must be in ''/etc/sudoers'').
+    - try [[http://homepage.mac.com/northernSW/renicer.html|Renicer]] which automatically ''renice''s the topmost application. I can't personally vouch for this. It is ~$10. -[[|wxl]]
+```
 
 ## The BPM detection is wrong
 

@@ -199,25 +199,10 @@ project files, which makes things nice. Just open and build.
     File-\>Open-\>Project/Solution.
 5.  Choose the Release configuration and the Win32 platform
 6.  If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
-    5.  Edit the portmidi-dynamic and portmidi-static projects and
-        change:
-        1.  C/C++-\>Preprocessor Definitions "WIN32" to "WIN64"
-        2.  Linker-\>Advanced-\>Target Machine to `/MACHINE:X64`
+    1.  Edit the portmidi-dynamic and portmidi-static projects and
+        change Linker-\>Advanced-\>Target Machine to `/MACHINE:X64`
 7.  Right-click portmidi-dynamic and click Build
-
-<!-- end list -->
-
-  - If you get `pmutil.obj : error LNK2001: unresolved external symbol
-    bzero` then edit pmutil.c and change `#ifdef WIN32` to `#ifdef
-    WIN64`
-
-<!-- end list -->
-
-1.  When it finishes, copy the following files into
+8.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `portmidi\pm_common\portmidi.h
     portmidi\Release\portmidi.lib
@@ -244,14 +229,7 @@ project files, which makes things nice. Just open and build.
     File-\>Open-\>Project/Solution. (If on VS2005, use the
     `porttime-VC8.vcproj` file.)
 5.  Choose the Release configuration and the Win32 platform
-6.  If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
-    5.  Edit the porttime project and change:
-        1.  C/C++-\>Preprocessor Definitions "WIN32" to "WIN64"
-7.  Press F7 to build
+6.  Press F7 to build
 
 <!-- end list -->
 

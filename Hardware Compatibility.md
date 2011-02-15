@@ -29,7 +29,7 @@ There are two different levels of device support in Mixxx:
 | [Stanton SCS.1d](Stanton%20SCS.1d)                               | In Progress (1.9.1)                     | In Progress (1.9.1)        | In Progress (1.11.0)                                                                                                                          |
 | [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+)                                                                                                                                  |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                                  |
-| [eks Otus](eks%20Otus)                                           | In Progress                             | In Progress                | In Progress                                                                                                                                   |
+| [eks Otus](eks%20Otus)                                           | In Progress (1.8.3)                     | In Progress (1.8.3)        | In Progress (1.11.0)                                                                                                                          |
 
 ### Community Supported Mappings
 

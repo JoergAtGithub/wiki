@@ -322,9 +322,6 @@ Do this to all of the following files:
 `libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln
 libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_dynamic.vcproj
 libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_dynamic.vcproj
-libvorbis-1.2.3\win32\VS2008\vorbis_static.sln
-libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_static.vcproj
-libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
 `
 
 ### Build
@@ -348,24 +345,16 @@ libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_static.vcproj
     the x64 targets in the file and refuse to make them available to
     you, since that's a premium feature of non-free versions of VS.)
 6.  Choose the Release\_SSE2 configuration and the Win32 platform
-7.  Press F7 to build. (If building for x64, ignore the errors on
-    vorbisenc and vorbisdec since we don't need them.)
-8.  Open the `libvorbis-1.2.3\win32\VS2008\libvorbis_static.vcproj` file
-9.  Choose the Release\_SSE2 configuration and the Win32 platform
-10. Press F7 to build
-11. When it finishes, copy the following files into
-    `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
+7.  Right-click `libvorbis` and click Build
+8.  Right-click `libvorbisfile` and click Build
+9.  When finished, copy the following files into `mixxx-win32lib-msvc`
+    or `mixxx-win64lib-msvc`:
     `libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.dll
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis.lib
-    (rename to vorbis.lib)
+    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.dll
     libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile.lib
-    (rename to vorbisfile.lib)
-    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbis_static.lib
-    (rename to vorbis_static.lib)
-    libvorbis-1.2.3\win32\VS2008\Win32\Release_SSE2\libvorbisfile_static.lib
-    (rename to vorbisfile_static.lib)
     `
-12. Copy the `libvorbis-1.2.3\include\vorbis` folder from into
+10. Copy the `libvorbis-1.2.3\include\vorbis` folder from into
     `mixxx-win[32|64]lib-msvc`. You can delete the Makefiles inside, as
     we just need the .h files.
 

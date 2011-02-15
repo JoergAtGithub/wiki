@@ -896,6 +896,8 @@ build it for taglib.
 5.  Choose the DLL ASM Release configuration and the Win32 platform (if
     on x64, choose the DLL Release config.)
 6.  Press F7 to build
+7.  When it's done, copy the following file to
+    `mixxx-win[32|64]lib-msvc`:`zlib123\projects\visualc6\Win32_DLL_Release\zlib1.dll`
 
 #### Install CMake
 

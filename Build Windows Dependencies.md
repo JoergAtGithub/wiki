@@ -386,10 +386,9 @@ given below.)
 5.  Answer 'Yes' to convert & open the project
 6.  Choose the Release configuration and the Win32 platform
 7.  If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
+    1.  Right-click `libmad` and click Properties
+    2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and under
+        Preprocessor Definitions, change `FPM_INTEL` to `FPM_64BIT`
 8.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
 9.  When it finishes, copy the following files into

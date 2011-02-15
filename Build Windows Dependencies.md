@@ -864,24 +864,51 @@ for guidance\!*
 [TagLib](http://developer.kde.org/~wheeler/taglib.html) uses the
 [CMake](http://www.cmake.org/) build system to build on Windows.
 
-### Preparation
+### Dependencies
+
+#### Build ZLib
+
+You downloaded the source above for libogg, but we actually need to
+build it for taglib.
+
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, telling it to use
+    the environment variables, to have it use the Platform SDK compile
+    tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
+    Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `zlib123\projects\visualc6\zlib.dsp` file via
+    File-\>Open-\>Project/Solution.
+5.  Choose the DLL ASM Release configuration and the Win32 platform (if
+    on x64, choose the DLL Release config.)
+6.  Press F7 to build
+
+#### Install CMake
 
 1.  [Download CMake](http://www.cmake.org/cmake/resources/software.html)
     (the binary installer is all you need)
 2.  Install it (The 32-bit version is fine for 64-bit systems)
-3.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+
+### Preparation
+
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
-4.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
-5.  `cd` to where taglib is extracted, e.g. `C:\sources\taglib-1.6.3`
-6.  Type `cmake -DWITH_ASF=ON -DWITH_MP4=ON -G "Visual Studio 9 2008"`
-    (if on 64-bit use "Visual Studio 9 2008 Win64")
-7.  For VS Express on x64:
+3.  `cd` to where taglib is extracted, e.g. `C:\sources\taglib-1.6.3`
+4.  Enter the command `cmake -DWITH_ASF=ON -DWITH_MP4=ON
+    -DZLIB_LIBRARY="C:\path\to\zlib123\projects\visualc6\Win32_DLL_Release\zlib1.lib"
+    -DZLIB_INCLUDE_DIR="C:\path\to\zlib123" -G "Visual Studio 9 2008"`
+    (for x64 use `"Visual Studio 9 2008 Win64"`)
+5.  For VS Express on x64:
     1.  The above command will return a failure. Run it again but hit
         CTRL-C before it finishes.
     2.  Run it a third time and it will generate the x64 project files.
         ^\_^
-    3.  For all of the following files
+    3.  Run it a fourth time to ensure the generated files are coherent.
+    4.  For all of the following files
         1.  Search and replace all instances of "x64" with "Win32"
         2.  Then search & replace `machine:Win32` with `machine:x64`
             `taglib-1.6.3\taglib.sln
@@ -895,12 +922,14 @@ for guidance\!*
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
 2.  Open the `taglib-1.6.3\taglib\tag.vcproj` file via
-    File-\>Open-\>Project/Solution.
+    File-\>Open-\>Project/Solution. (If on x64, ignore the platform
+    warnings. The "tag" project should appear build-able.)
 3.  Choose the Release configuration and the Win32 platform
 4.  Right click `tag` and click Build.
 5.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
-    `taglib-1.6.3\taglib\Release\tag.lib`
+    `taglib-1.6.3\taglib\Release\tag.lib
+    taglib-1.6.3\taglib\Release\tag.dll`
 6.  ~~Copy the following files into a `taglib` folder in
     `mixxx-win[32|64]lib-msvc`: `taglib-1.6.3\taglib\toolkit\tfile.h
     taglib-1.6.3\taglib\toolkit\taglib.h

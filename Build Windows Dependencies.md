@@ -423,20 +423,14 @@ them too (detailed below.)
 6.  Answer 'Yes' to convert & open the project
 7.  Choose the Release configuration and the Win32 platform
 8.  Add the ZLib paths to the compiler:
-    1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
-        Directories
-    2.  Choose "Include files" on the right and add the path to the
-        directory into which you unpacked the ZLib source, e.g.
-        `c:\temp\zlib123`
+    1.  Right-click `libid3tag` and click Properties
+    2.  Go to Configuration Properties-\>C/C++-\>General and under
+        Additional Include Directories, add the path to the directory
+        into which you unpacked the ZLib source, e.g. `c:\temp\zlib123`
     3.  Click OK.
-9.  If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
-10. Press F7 to build. (You can cancel the .sln save dialog if you want
+9.  Press F7 to build. (You can cancel the .sln save dialog if you want
     and it will still build.)
-11. When it finishes, copy the following files into
+10. When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libid3tag-0.15.1b\id3tag.h
     libid3tag-0.15.1b\msvc++\Release\libid3tag.lib (rename to

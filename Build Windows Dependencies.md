@@ -696,15 +696,9 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 
 ## libHSS1394
 
-Stanton's HSS1394 is GPL and provides MSVC solution files which makes
-things nice, but you need to make a couple of changes to the project to
-get it to build a DLL correctly. (Step-by-step below.)
-
-### x64 Prep
-
-1.  Edit the `HSS1394\code\src\win32\Thesycon\VHPD1394\CVhpdThread.cpp`
-    source file and comment out line 166 like
-    so:`//::PostMessage(mParentWnd,WM_USER_THREAD_TERMINATED,0,0);`
+[Stanton](http://www.stantondj.com)'s
+[HSS1394](https://launchpad.net/hss1394) provides MSVC solution files
+(that we've updated) which makes things nice.
 
 ### Build
 
@@ -716,23 +710,20 @@ get it to build a DLL correctly. (Step-by-step below.)
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-4.  Open the `HSS1394\code\builds\win32\libHSS1394_dll.vcproj` file via
-    File-\>Open-\>Project/Solution.
+4.  Open the `HSS1394\code\builds\win32\libHSS1394_dll_VC90.vcproj` file
+    via File-\>Open-\>Project/Solution.
 5.  Choose the Release configuration and the Win32 platform
-6.  If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
-7.  Tune the project settings
-    1.  Right-click the libHSS1394\_dll project and click Properties.
+6.  If building for x64, 
+    1.  Right-click the libHSS1394 project and click Properties.
     2.  Under Configuration Properties-\>C/C++-\>Preprocessor, for
-        Preprocessor Definitions, add`;HSS1394_EXPORT_DLL`
-    3.  Under Configuration Properties-\>Linker-\>General, set Output
+        Preprocessor Definitions, add `;_WIN64_`
+7.  Tune the project settings
+    1.  Right-click the libHSS1394 project and click Properties.
+    2.  Under Configuration Properties-\>Linker-\>General, set Output
         File to `$(OutDir)\HSS1394.dll`
-    4.  Under Configuration Properties-\>Linker-\>Advanced, set Import
+    3.  Under Configuration Properties-\>Linker-\>Advanced, set Import
         Library to `$(OutDir)\HSS1394.lib`
-8.  Right click `libHSS1394_dll` and click Build.
+8.  Right click `libHSS1394` and click Build.
 9.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `HSS1394\lib\HSS1394.lib

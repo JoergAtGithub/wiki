@@ -944,6 +944,8 @@ build it for taglib.
     `~~
 7.  Just copy <span class="underline">every</span> `.h` file from the
     taglib source tree into `mixxx-win[32|64]lib-msvc\taglib`
+8.  Also copy `taglib-1.6.3\taglib_config.h` into
+    `mixxx-win[32|64]lib-msvc`
 
 # Optimizations
 

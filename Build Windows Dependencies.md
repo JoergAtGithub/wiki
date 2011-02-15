@@ -575,14 +575,12 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
         flac-1.2.1\src\libFLAC\libflac_static.dsp
         flac-1.2.1\src\libFLAC\libflac_static.vcproj`
     2.  Apply the following patch to
-        `flac-1.2.1\src\libFLAC\bitreader.c`:`diff -u -r
-        flac-1.2.1-original\src\libFLAC\bitreader.c 
-        flac-1.2.1\src\libFLAC\bitreader.c
-        --- flac-1.2.1-original\src\libFLAC\bitreader.c Tue
+        `flac-1.2.1\src\libFLAC\bitreader.c`:`---
+        flac-1.2.1-original\src\libFLAC\bitreader.c Tue
         Sep 11 06:48:56 2007
         +++ flac-1.2.1\src\libFLAC\bitreader.c Tue May 20 12:30:08 2008
         @@ -149,15 +149,37 @@
-                                                                        FLAC__CPUInfo cpu_info;
+                                        FLAC__CPUInfo cpu_info;
                 };
                 
         -#ifdef _MSC_VER
@@ -590,8 +588,7 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
         +
         +/* local_swap32_() */
         +/* Swaps the byte order of a 32 bits integer, converting
-        between big-endian 
-        and little-endian */
+        between big-endian and little-endian */
         +#if defined(_MSC_VER)
         +
         +#include <stdlib.h> // Contains _byteswap_ulong() for MSVC
@@ -599,8 +596,7 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
                 static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
                 {
         + /* This is an intrinsic and will expanded to minimal asm by
-        the 
-        compiler */
+        the compiler */
         + return _byteswap_ulong(x);
         +}
         +
@@ -609,8 +605,8 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
         +static _inline FLAC__uint32 local_swap32_(FLAC__uint32 x)
         +{
         + /* Manual version, a bit slower but works everywhere */
-                                                                        x = ((x<<8)&0xFF00FF00) | ((x>>8)&0x00FF00FF);
-                                                                        return (x>>16) | (x<<16);
+                                        x = ((x<<8)&0xFF00FF00) | ((x>>8)&0x00FF00FF);
+                                        return (x>>16) | (x<<16);
                 }
         +
         +#endif /* defined(_MSC_VER) */
@@ -625,12 +621,12 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
         FLAC__uint32 len)
                 {
         + /* MSVC specific 32 bit asm version */
-                                                                        __asm {
-                                                                                                                                        mov edx, start
-                                                                                                                                        mov ecx, len
+                                        __asm {
+                                                                        mov edx, start
+                                                                        mov ecx, len
         @@ -173,7 +195,22 @@
                 done1:
-                                                                        }
+                                        }
                 }
         -#endif
         +
@@ -656,6 +652,7 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
                 static FLaC__INLINE void crc16_update_word_(FLAC__BitReader *br,
         brword word)
                 {
+        
         `
 5.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
@@ -675,22 +672,18 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 9.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
 10. Rename the `libFLAC_dynamic` project to just `libFLAC`
 11. Choose the Release configuration and the Win32 platform
-12. If building for x64
-    1.  Go to Build-\>Configuration manager
-    2.  Drop down Active Solution Platform and choose New...
-    3.  Type x64 and choose copy settings from Win32. Click OK.
-    4.  Choose Release on the left, x64 on the right and click Close.
-    5.  For both the `libFLAC_dynamic` and `libFLAC_static` projects:
-        1.  Right-click it and choose Properties...
-        2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and
-            enter `FLAC__NO_ASM;` at the front of the Preprocessor
-            Definitions list
-        3.  For the dynamic one only, go to Configuration
-            Properties-\>Linker-\>Advanced and choose `/MACHINE:X64` for
-            Target Machine
-        4.  For the dynamic one only, go to Configuration
-            Properties-\>Linker-\>Debugging and ensure Generate Debug
-            Info is set to `No`
+12. If building for x64, for both the `libFLAC_dynamic` and
+    `libFLAC_static` projects:
+    1.  Right-click it and choose Properties...
+    2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and enter
+        `FLAC__NO_ASM;` at the front of the Preprocessor Definitions
+        list
+    3.  For the dynamic one only, go to Configuration
+        Properties-\>Linker-\>Advanced and choose `/MACHINE:X64` for
+        Target Machine
+    4.  For the dynamic one only, go to Configuration
+        Properties-\>Linker-\>Debugging and ensure Generate Debug Info
+        is set to `No`
 
 ### Build
 

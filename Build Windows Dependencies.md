@@ -131,18 +131,12 @@ you open them in VS:
         "DontWantThis" or something similar
     2.  Then replace all instances of "x64" with "Win32"
 2.  For the `portaudio\build\msvc\portaudio.vcproj` file:
-    1.  Change the line that says \<code=xml\> \<Configurations\>
-
-<!-- end list -->
-
-``` 
-      <Configuration
-          Name="Release|Win32"</code> to <code=xml>   <Configurations>
-      <Configuration
-          Name="Release|DontWantThis"</code>
-  - Then change the similar ''Name="Release|x64"'' line to ''Name="Release|Win32"'' in the ''<Configuration'' below that one.
-  - Don't worry about stuff below that since they all do the same thing regardless of the platform (at the time of writing (July 2009) at least.)
-```
+    1.  Replace all instances of "|Win32" (case-sensitive) with
+        "|DontWantThis" or something similar
+    2.  Replace all instances of "|x64" with "|Win32"
+    3.  In the \<Platforms\> section at the top of the file, change
+        `Name="Win32"` to `Name="DontWantThis"` and `Name="x64"` to
+        `Name="Win32"`
 
 ### Build
 

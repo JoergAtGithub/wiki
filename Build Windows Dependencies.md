@@ -565,9 +565,21 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 1.  Build libOGG ([see above](#libogg))
 2.  [Download](http://sourceforge.net/projects/flac/files/flac-src/) the
     FLAC source and extract it.
-3.  Copy `libogg-1.1.4\win32\VS2008\Win32\Release_SSE\libogg_static.lib`
+
+**Note:** For x64 as of FLAC v1.2.1, we have been unable to get it to
+build. It gives the following errors:`bitreader_asm.obj : error LNK2001:
+unresolved external symbol _FLAC__crc16_table
+bitreader_asm.obj : error LNK2001: unresolved external symbol
+_bitreader_read_from_client_` The only solution currently found is to
+download the [OpenCodecs
+source](http://downloads.xiph.org/releases/oggdsf/opencodecs_0.85.17777_src.7z)
+and use the
+`opencodecs\src\lib\codecs\flac\libs\libflac\src\libFLAC\libFLAC_dynamic.vcproj`
+as-is and skip the rest of this section.
+
+1.  Copy `libogg-1.1.4\win32\VS2008\Win32\Release_SSE\libogg_static.lib`
     to `flac-1.2.1\obj\release\lib` and rename it to `ogg_static.lib`
-4.  **For x64:**
+2.  **For x64:**
     1.  For each of the following files, search & replace all instances
         of `-f win32` with `-f win64`:
         `flac-1.2.1\src\libFLAC\libflac_dynamic.dsp
@@ -654,25 +666,25 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
                 {
         
         `
-5.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+3.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)
-6.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+4.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
     /release` for 32-bit.)
-7.  Run the Visual Studio GUI from this command line, telling it to use
+5.  Run the Visual Studio GUI from this command line, telling it to use
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-8.  Add paths to the environment:
+6.  Add paths to the environment:
     1.  Go to Tools-\>Options-\>Projects and Solutions-\>VC++
         Directories
     2.  Choose "Executable files" on the right and add the path to the
         NASM directory you extracted to above, e.g. `C:\nasm-2.09.03`
     3.  Choose "Include files" on the right and add the path to the
         libOGG include directory, e.g. `C:\libogg-1.1.4\include`
-9.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
-10. Rename the `libFLAC_dynamic` project to just `libFLAC`
-11. Choose the Release configuration and the Win32 platform
-12. If building for x64, for both the `libFLAC_dynamic` and
+7.  Open the `flac-1.2.1\FLAC.sln` file and agree to upgrade if asked
+8.  Rename the `libFLAC_dynamic` project to just `libFLAC`
+9.  Choose the Release configuration and the Win32 platform
+10. If building for x64, for both the `libFLAC_dynamic` and
     `libFLAC_static` projects:
     1.  Right-click it and choose Properties...
     2.  Go to Configuration Properties-\>C/C++-\>Preprocessor and enter

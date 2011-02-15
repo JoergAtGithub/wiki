@@ -437,6 +437,14 @@ them too (detailed below.)
     id3tag.lib)
     `
 
+#### Troubleshooting
+
+  - If you get the error `..\file.c(33) : fatal error C1083: Cannot open
+    include file: 'unistd.h': No such file or directory` then edit the
+    file `libid3tag-0.15.1b-patched\file.c` and change the line `#
+    include "config.h"`to`# include "msvc++/config.h"` Save that and
+    press F7 to rebuild.
+
 ## libfaad2
 
 [FAAD2](http://www.audiocoding.com/faad2.html) provides MSVC project

@@ -1,6 +1,7 @@
 # Stanton SCS.1d & Mixxx User Guide
 
-This guide explains how the SCS.1d is mapped by default in Mixxx.
+This guide explains how the SCS.1d is mapped by default in Mixxx v1.9.x.
+*(Mapping/script v1.00)*
 
 [[/media/hardware/stantonscs/scs.1d_callouts.jpg|]]
 
@@ -9,9 +10,8 @@ This guide explains how the SCS.1d is mapped by default in Mixxx.
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:
 
-  - **pitchRanges** - The pitch ranges selectable with the Range button
-    (It's possible to add more if you need them but the .rangeButton
-    function will need to be extended.)
+  - **pitchRanges** - The pitch ranges selectable with the Range button.
+    You can add more as you like but they must be in ascending order.
   - **fastDeckChange** - If set to true, changes decks instantly by
     skipping the flashing lights. Useful for beat juggling on one unit.
   - **globalMode** - If true, the unit will stay in the current section
@@ -30,17 +30,11 @@ variables at the top of the script you can set to your liking:
     cross-fader while the Pitch Range button is held down
   - **browseDamp** - Number of platter ticks to move the highlight one
     item when browsing the library. Set higher for slower movement.
-    (Defaults to 2.)
-
-*The following are not used in Mixxx v1.9.0 and up:*
-
-  - **scratching**: *All of these values are heavily dependent on your
-    latency setting. Adjust as needed.*
-    1.  **sensitivity** - How much the audio moves for a given platter
-        arc. Set this to a number between 0.01 (slow) to 0.99 (fast)
-    2.  **stoppedMultiplier** - Correction to get the same platter
-        sensitivity when the deck is stopped (set higher for higher
-        latencies, e.g. 10ms = 1.7, 4ms = 1.0.)
+    (Defaults to 3.)
+  - **looseLoops** - If true (default,) causes the loop buttons to set
+    new loop points each time you press them (good for loop rolls.) If
+    set to false, you must explicitly delete one before you can set
+    another.
 
 Just open the `midi/Stanton-SCS1d-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the
@@ -54,7 +48,10 @@ left and moving counter-clockwise:
   - ***Setup**: unused by Mixxx but will enter the deck's internal setup
     menu*
   - ***Control**: unused*
-  - **Browse**: Allows browsing the library with the platter
+  - **Browse**: Allows browsing the library with the platter. Press
+    additional times to change the category (Library, Playlists, Crates,
+    etc.) To go backwards, press another mode button (Vinyl or Control)
+    then Browse again.
   - **Vinyl**: Take a guess\! :-)
 
 <!-- end list -->
@@ -76,11 +73,11 @@ left and moving counter-clockwise:
 
 ## Trigger Pad section
 
-The trigger pads are used to set and recall hot cues/samples. You can
-use them as you would a sampler if the target deck is stopped (where it
-will only play as long as you are pressing the pad) or as hot cues (if
-the target deck is playing.) You set a cue simply by pressing an unlit
-pad at the desired point. It lights green when there's a cue set and the
+The trigger pads are used to set and recall hot cues. You can use them
+as you would a sampler if the target deck is stopped (where it will only
+play as long as you are pressing the pad) or as hot cues (if the target
+deck is playing.) You set a cue simply by pressing an unlit pad at the
+desired point. It lights green when there's a cue set and the
 corresponding display shows the cue point in
 `minutes:seconds.centiseconds` format.
 
@@ -119,23 +116,64 @@ corresponding display shows the cue point in
 
 ## Preset section
 
-This section is used for instant pitch changes for the current virtual
-deck (and will also control looping in a future version of the mapping
-in v1.9.0 and up.) It's useful when using the pads as samplers to
+This section has three banks, selected by the three circle buttons at
+the bottom of the section.
+
+### Loop mode
+
+Press the top circle button (Bank 1) at the bottom of the section to get
+into this mode. The 12 preset buttons are grouped in pairs with the left
+one adjusting the loop in point and the right one adjusting the loop out
+point.
+
+There are two modes of operation selectable by the **looseLoops** global
+variable described at the top of this page:
+
+1.  **Loose Loops mode** - Works just like a CDJ and the on-screen loop
+    controls. Use this for loop rolls.
+
+<!-- end list -->
+
+  - **Left loop button** - Sets loop in point any time you press it
+  - **Right loop button** - Sets loop out point any time you press it
+  - Reloop/Exit: Hold the **Bank 1** button and press either Left or
+    Right loop buttons to toggle the loop on and off
+
+<!-- end list -->
+
+1.  **Protected Loops mode** - Works like the hot cue section in that
+    you must first delete a loop point before you can set another. Use
+    this when you want to return to a pre-set loop and not worry about
+    accidentally losing it.
+
+<!-- end list -->
+
+  - **Left loop button** - Sets loop in point only when none is already
+    set
+  - **Right loop button** - Sets loop out point only when none is
+    already set
+  - Reloop/Exit: **Both loop buttons together** - Toggles the loop on
+    and off
+  - Delete: Hold the **Bank 1** button and press a Left or Right loop
+    button to delete that loop point.
+
+### Instant pitch changes
+
+The bottom two banks are used for instant pitch changes for the current
+virtual deck. These are useful when using the pads as samplers to
 further vary the sounds.
 
 They offer the following arrangements, increasing from left to right,
 top to bottom:
 
-  - **circle buttons** at the bottom of the section:
-  - **Top: Fixed increment** - Each trigger button sets the pitch 3.33%
-    above or below its horizontal neighbors.
+  - **circle buttons** at the bottom:
   - **Middle: Key change** - Center row buttons are one semitone away
     from their vertical neighbors and the outside ones are three
     semitones away (for harmonic key changes.)
   - **Bottom: Notes** - Buttons correspond to major scale notes (ala
     Vestax Controller One.) This is most useful with a constant-pitch
-    sound or chord. (You can generate one in Audacity.)
+    sound or chord. (You can generate one in Audacity, or use the time
+    code sound. :-) )
 
 Remember you can return to the original pitch (tonic) by pressing Reset
 just above the pitch slider.
@@ -168,12 +206,12 @@ Pressing any of the encoders returns the parameter to the default value.
     * **3rd encoder**: adjusts flanger period (Low Frequency Oscillator)
     * **4th encoder**: adjusts pre-fader track gain
     * **circle button** under the 1st display: toggles the flange effect for the current deck.
-    * //**circle buttons** under the other displays: unused//
+    * //**circle button** under the 2nd display: unused//
+    * //**circle button** under the 3rd display: unused//
+    * **circle button** under the 4th display: toggles key lock for the current deck.
 * When holding down the **Deck Select** button:
     * **1st encoder** (from the left): adjusts the cue/main headphone mix
     * **2nd encoder**: adjusts the headphone volume
     * **3rd encoder**: adjusts the master balance (pan)
     * **4th encoder**: adjusts the master volume
 ```
-
-*(Any unlabeled controls are not currently used.)*

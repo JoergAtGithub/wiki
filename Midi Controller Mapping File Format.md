@@ -493,7 +493,7 @@ If you want to access one of these controls inside Mixxx, you can do so
 with something like this:
 
 ``` 
- ControlObjectThreadMain* controlRightPitch = new ControlObjectThreadMain(ControlObject::getControl(ConfigKey("[[Channel2]]", "rate")));
+ ControlObjectThreadMain* controlRightPitch = new ControlObjectThreadMain(ControlObject::getControl(ConfigKey("[Channel2]", "rate")));
 ```
 
 That line will give you a ControlObject which allows you to read and

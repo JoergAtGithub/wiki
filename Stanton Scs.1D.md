@@ -42,12 +42,11 @@ that the platter and flashing lights on deck changes work correctly.
 here](http://www.stantondj.com/stanton-controllers-systems/scs1d.html)
 and click Downloads.
 
-*The mapping is still in active development in the 1.9 release branch
-and should be considered beta-quality in that it's stable, but things
-may change before the final 1.9.0 release.*
-
 ***Note:** the controller is not yet supported in Linux. We have a plan
 to fix that in a future Mixxx version.*
+
+*The mapping shipped with Mixxx v1.9.0 was unfinished. Download the
+updated one below.*
 
 The latest official MIDI mapping and script file are in the 1.9 release
 branch and can be downloaded from here:

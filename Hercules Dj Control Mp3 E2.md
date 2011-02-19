@@ -70,7 +70,7 @@ don't have to download or install nothing.
 <tr class="even">
 <td>7</td>
 <td>Scratch</td>
-<td>Used as a scratch shift button for the "sync" buttons (Number 13)</td>
+<td>Enables or disables the scratch mode on both decks</td>
 </tr>
 <tr class="odd">
 <td>9</td>
@@ -103,7 +103,7 @@ For example: hold down the Automix button and than press the "pitchbend" buttons
 <td>2</td>
 <td>Master Tempo</td>
 <td>Toggles a channels flanger effect on and off</td>
-<td>Nothing</td>
+<td>Enable key-lock for the specified deck (rate changes only affect tempo, not key)</td>
 </tr>
 <tr class="odd">
 <td>3</td>
@@ -149,8 +149,7 @@ If hotcue X is set, clears its hotcue status.</td>
 <td>13</td>
 <td>Sync</td>
 <td>Automatically sets pitch so the BPM of the other deck is matched</td>
-<td>Used with the Scratch shift button instead of the master shift button (Automix).<br />
-Enable the scratch mode in the corrisponding deck. When the scratch mode is enabled the led of the Sync button blinks.</td>
+<td>Nothing</td>
 </tr>
 <tr class="odd">
 <td>14</td>

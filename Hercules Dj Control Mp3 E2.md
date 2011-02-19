@@ -70,7 +70,7 @@ don't have to download or install nothing.
 <tr class="even">
 <td>7</td>
 <td>Scratch</td>
-<td>Enables or disables the scratch mode on both decks</td>
+<td>Enable or disable the scratch mode on both decks</td>
 </tr>
 <tr class="odd">
 <td>9</td>
@@ -135,7 +135,7 @@ When the button is not lit up the loop buttons are enabled, when the button is l
 Hotcue mode:<br />
 1, 2, 3 and 4: If hotcue X is set, seeks the player to hotcue X's position. If hotcue X is not set, sets hotcue X to the current play position.</td>
 <td>Loop mode:<br />
-Nothing<br />
+Clears the loop-in/out sets.<br />
 Hotcue mode:<br />
 If hotcue X is set, clears its hotcue status.</td>
 </tr>

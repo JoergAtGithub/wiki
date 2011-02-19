@@ -163,7 +163,7 @@ If hotcue X is set, clears its hotcue status.</td>
 <td>Sets the cue point if a track is stoped and not at the current cue point<br />
 Stops track and returns to the current cue point if a track is playing.<br />
 Plays preview if a track is stopped at the cue point for as long as it's held down</td>
-<td></td>
+<td>Nothing</td>
 </tr>
 <tr class="odd">
 <td>16</td>

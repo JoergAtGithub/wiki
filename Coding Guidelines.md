@@ -111,11 +111,11 @@ statements.
 
 ## Comments
 
-Use C++-style comments only. Do not use C-style comments. Comments
-should be complete, descriptive sentences in the present tense. If a
-comment is a warning or something that might need to be re-evaluated in
-the future, date the comment with the current month and year, along with
-your username.
+Use C++-style comments only. Do not use C-style comments or Java-syle
+comments. Comments should be complete, descriptive sentences in the
+present tense. If a comment is a warning or something that might need to
+be re-evaluated in the future, date the comment with the current month
+and year, along with your username.
 
 **Good:**
 

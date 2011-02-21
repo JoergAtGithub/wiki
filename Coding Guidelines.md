@@ -182,7 +182,8 @@ File includes should be done in the following order:
 Each different group of includes should be separated by a single empty
 line. For bonus points, order the includes in alphabetical order.
 Relative includes **should never be used**. Always include Mixxx local
-files by specifying them from the root of the `src` folder.
+files by specifying them from the root of the `src` folder. Do not
+forward declare any classes other than Mixxx project classes.
 
 **Example:**
 
@@ -196,3 +197,5 @@ files by specifying them from the root of the `src` folder.
     #include <taglib/taglib.h>
     
     #include "library/library.h"
+    
+    class Cue;

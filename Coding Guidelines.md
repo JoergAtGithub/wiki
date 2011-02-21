@@ -144,7 +144,10 @@ If you'd like to leave a general `TODO` for the team, use the name
 
 Remember to actually go back and investigate your `TODO`'s :).
 
-## Class Declarations
+## C++ Header Files
+
+This section outlines our various standards for writing header (.h)
+files.
 
 ### Credit and License
 
@@ -199,3 +202,79 @@ forward declare any classes other than Mixxx project classes.
     #include "library/library.h"
     
     class Cue;
+
+### Class Declaration
+
+The declaration of methods and member variables for classes should be
+done in the following order:
+
+1.  Q\_OBJECT macro, indented 4 spaces
+2.  Public enums, constants, inner class declarations, etc.
+3.  Public methods
+4.  Public `slots`
+5.  Qt Signals 
+6.  Public variables (**avoid**)
+7.  Protected methods
+8.  Protected variables
+9.  Private methods
+10. Private member variables
+
+A couple guidelines for class declarations:
+
+  - Each access specifier should be indented **2 spaces**. 
+  - Every different section (e.g. private methods, private member
+    variables) should be separated by a single space. 
+  - At your discretion you may insert separating lines between each
+    method if it improves readability. 
+  - **Every public method in a class should be accompanied by a comment
+    describing what it does and how it should be invoked.** This is the
+    only place that the overall functioning of member methods should be
+    documented. The implementation of a member method should only have
+    comments about the implementation. 
+  - All destructors should have the 'virtual' keyword.
+  - Consider marking single-argument constructors explicit so that they
+    are not automatically invoked accidentally in assignment. 
+  - Use C++-style comments, not C-style or Java-style comments.
+
+**Example:**
+
+    class Library : public QObject { 
+        Q_OBJECT
+      public:
+        Library(QObject* pParent,
+                ConfigObject<ConfigValue>* pConfig,
+                bool firstRun);
+        virtual ~Library();
+        
+        // bindWidget gives the Library a chance to insert logic into the library 
+        // widgets (WLibrary and WLibrarySidebar).
+        void bindWidget(WLibrarySidebar* sidebarWidget,
+                        WLibrary* libraryWidget,
+                        MixxxKeyboard* pKeyboard);
+                        
+        // Add a LibraryFeature to the list of features enabled in the Library.
+        void addFeature(LibraryFeature* feature);
+        
+      public slots:
+        // Request that the Library switch to the default track table and show the 
+        // provided TrackModel. 
+        void slotShowTrackModel(QAbstractItemModel* model);
+        
+        // Request that the library switch to the provided view name. Views should be 
+        // registered in LibraryFeature::bindWidget() or Library::bindWidget
+        void slotSwitchToView(const QString& view);
+      
+      signals:
+        // Broadcast to the associated WLibrary widget that the provided model
+        // should be switched to.
+        void showTrackModel(QAbstractItemModel* model); 
+        
+        // Broadcast to the associated WLibrary widget that the view with the
+        // provided name should be switched to.
+        void switchToView(const QString& view);
+        
+      private:
+        ConfigObject<ConfigValue>* m_pConfig;
+        // List of LibraryFeature's enabled in the Library
+        QList<LibraryFeature*> m_features;
+    };

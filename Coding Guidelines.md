@@ -35,6 +35,13 @@ only for consistency.
 
 Please bear this in mind when writing code.
 
+## Line Widths
+
+Please configure your editor to have a max column-width of 80-columns.
+While it is not a strict requirement, 80-column cleanliness makes it
+easy to tile multiple buffers of code across a laptop screen, which
+provides significant efficiency gains to developers.
+
 # Mixxx C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team

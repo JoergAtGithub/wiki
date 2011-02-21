@@ -211,13 +211,17 @@ done in the following order:
 1.  Q\_OBJECT macro, indented 4 spaces
 2.  Public enums, constants, inner class declarations, etc.
 3.  Public methods
-4.  Public `slots`
-5.  Qt Signals 
-6.  Public variables (**avoid**)
-7.  Protected methods
-8.  Protected variables
-9.  Private methods
-10. Private member variables
+4.  Public variables (**avoid**)
+5.  Public `slots`
+6.  Qt Signals 
+7.  Protected enums, constants, inner class declarations, etc.
+8.  Protected `slots`
+9.  Protected methods
+10. Protected variables
+11. Private enums, constants, inner class declarations, etc.
+12. Private `slots`
+13. Private methods
+14. Private member variables
 
 A couple guidelines for class declarations:
 

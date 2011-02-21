@@ -156,12 +156,11 @@ of what the following lines accomplish.
      */ 
     thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
     /* C-style comment -- avoid because you can't nest them */
-    
-    ==== TODO's ====
-    
-    If you'd like to leave a ''TODO'' for yourself, format them like this:
-    
-    <code>
+
+### TODO's
+
+If you'd like to leave a `TODO` for yourself, format them like this:
+
     // TODO(rryan) Make sure to double-check this.
 
 If you'd like to leave a general `TODO` for the team, use the name

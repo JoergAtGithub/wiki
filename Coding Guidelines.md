@@ -265,9 +265,13 @@ A couple guidelines for class declarations:
   - Consider marking single-argument constructors explicit so that they
     are not automatically invoked accidentally in assignment. 
   - Use C++-style comments, not C-style or Java-style comments.
+  - All class declarations should be preceded with a brief description
+    of the class and its purpose.
 
 **Example:**
 
+    // The Library is the manager class for all library functionality. It contains the LibraryFeature's 
+    // enabled for use with the library and connects them and their signals to the GUI's library widgets.
     class Library : public QObject { 
         Q_OBJECT
       public:

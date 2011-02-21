@@ -122,6 +122,24 @@ and year, along with your username.
     // This is required because we don't have enough foo's in the bar -- rryan 2/2011
     doSomething();
 
+Plain-text comments should be separated from the comment symbol by a
+single space. Commented-out code should have no space between the
+comment symbol and the code:
+
+**Good:**
+
+    // Textual comment
+    //if (thisSectionIsDeprecated) {
+    //    // Do something crufty
+    //}
+
+**Bad:**
+
+    //Textual comment
+    // if (thisSectionIsDeprecated) {
+    //     // Do something crufty
+    // }
+
 Avoid comments that do not add more information than the words contained
 in the statement that follows them. Instead, write a descriptive summary
 of what the following lines accomplish.
@@ -131,10 +149,19 @@ of what the following lines accomplish.
     /* init boofar */
     initBoofar();
 
-### TODO's
+**Bad:**
 
-If you'd like to leave a `TODO` for yourself, format them like this:
-
+    /*
+     * Java-style comment
+     */ 
+    thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
+    /* C-style comment -- avoid because you can't nest them */
+    
+    ==== TODO's ====
+    
+    If you'd like to leave a ''TODO'' for yourself, format them like this:
+    
+    <code>
     // TODO(rryan) Make sure to double-check this.
 
 If you'd like to leave a general `TODO` for the team, use the name

@@ -120,20 +120,18 @@ maintaining a Mixxx package for a distribution please get in touch.
 
 ## What music file formats can Mixxx play?
 
-As of release 1.7.x, Mixxx supports the following file formats:
+As of release 1.9.x, Mixxx supports the following file formats:
 
   - MP3
   - OGG
   - FLAC
   - WAV, AIFF
+  - AAC/M4A (with plugin or OS support)
+  - WavPack (WV) (with plugin)
 
 If your music isn't currently in one of these formats, it won't show up
 in the Mixxx library. You'll need to use a program like Sox or Audacity
 to convert it.
-
-We're currently working on:
-
-  - AAC/M4A
 
 ## What happens if a file's samplerate is different from the sound card rate?
 

@@ -14,7 +14,7 @@ it.
 
 #### Install Locations
 
-This where Mixxx will look for plugins on each OS:
+Below is where Mixxx will look for plugins on each OS:
 
 Linux:
 
@@ -32,7 +32,7 @@ OSX:
 
 #### Additional Locations
 
-Tell mixxx to look for plugins in additional locations by calling it
+Tell Mixxx to look for plugins in additional locations by calling it
 with the `--pluginPath` argument (for instance, if one wants to be able
 to play m4a files from a trunk build without installing, call `./mixxx
 --pluginPath ./linux_build/plugins/linux_build`, changing linux\_build

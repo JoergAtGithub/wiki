@@ -133,14 +133,15 @@ If your music isn't currently in one of these formats, it won't show up
 in the Mixxx library. You'll need to use a program like Sox or Audacity
 to convert it.
 
-## What happens if a file's samplerate is different from the sound card rate?
+## What happens if a file's sample rate is different from the sound card rate?
 
 Mixxx performs sample rate conversion on the fly.
 
-Note that the quality of the resampling depends on the setting of the
-*pitch behaviour* in the preferences. Using "vinyl emulation" will mean
-linear interpolation, which doesn't sound very good (you will notice
-graininess and increased noise, especially obvious on high, long notes).
-When you select "pitch independent time-stretch", Mixxx will use a
-vocoder-based algorithm from the SoundTouch library, which sounds a lot
-better.
+Note that the quality of the re-sampling depends on the setting of the
+*pitch behaviour*. Having key lock disabled ("vinyl emulation" in 1.8.x
+and below) will use linear interpolation, which doesn't sound very good
+(you will notice graininess and increased noise, especially obvious on
+high, long notes). When you enable key lock ("pitch-independent
+time-stretch" in 1.8.x and below,) Mixxx will use a vocoder-based
+algorithm from the SoundTouch library, which sounds a lot better (but is
+not recommended when scratching.)

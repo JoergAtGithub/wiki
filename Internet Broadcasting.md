@@ -43,7 +43,12 @@ when activating live broadcasting.
 
 ### Mac OSX
 
-On OS X the easiest way to achieve MP3 streaming is to use
+To activate MP3 streaming on Windows, the following steps are necessary:
+
+1.  Download [LAME 3.98.4 binaries for OSX](http://bit.ly/eDfPCI)
+2.  Unpack & install the archive
+
+Another easy way to achieve MP3 streaming is to use
 [MacPorts](http://www.macports.org/) which is a repository manager (like
 apt on Ubuntu) for Open Source software. Having installed this piece of
 software, installing MP3 support is rather simple.

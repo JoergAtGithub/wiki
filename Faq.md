@@ -8,7 +8,7 @@ If you've got a question that's not answered here, please post in the
 
 Mixxx 1.6.0 and up support recording mixes to WAV and AIFF files.
 Versions 1.9.0 and up also support recording to MP3 and Ogg Vorbis
-format. To choose the format, click "Options", then "Preferences", then
+formats. To choose the format, click "Options", then "Preferences", then
 "Recording" and set the options as you like. To start recording your
 mix, click "Options" and select "Record Mix". You will then be prompted
 to enter a file name, and after that, Mixxx will start recording about 5

@@ -139,7 +139,9 @@ Make sure Mixxx is closed, then look for "mixxxtrack.xml" (or
 "mixxxdb.sqlite" if using Mixxx 1.8.0 or later) in:
 
   - Windows: `%USERPROFILE%\Local Settings\Application Data\Mixxx`
-  - Linux/Mac OS X/BSD/Unix: `~/.mixxx`
+  - Linux/Mac OS X/BSD/Unix: `~/.mixxx` (if using Mixx 1.9.0 : db-file
+    on Mac OS X is located under: \~/Library/Application Support/Mixxx/)
+    
 
 If you can't find it, search your computer for "mixxxtrack.xml" (or
 "mixxxdb.sqlite" if using Mixxx 1.8.0 or later)

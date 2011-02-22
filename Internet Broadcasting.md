@@ -43,7 +43,7 @@ when activating live broadcasting.
 
 ### Mac OSX
 
-To activate MP3 streaming on Windows, the following steps are necessary:
+To activate MP3 streaming on Mac OSX, the following steps are necessary:
 
 1.  Download [LAME 3.98.4 binaries for OSX](http://bit.ly/eDfPCI)
 2.  Unpack & install the archive

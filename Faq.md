@@ -6,12 +6,16 @@ If you've got a question that's not answered here, please post in the
 
 ## How do I record my Mixxx session?
 
-Mixxx 1.6.0 and newer versions support recording mixes to .wav files. To
-start recording your mix, click "Options", and select "Record Mix". You
-will then be prompted to enter a filename, and after that, Mixxx will
-start recording as soon as you start playing a track. When you're done
-recording, go back to "Options "and toggle "Record Mix" again, or just
-exit Mixxx.
+Mixxx 1.6.0 and up support recording mixes to WAV and AIFF files.
+Versions 1.9.0 and up also support recording to MP3 and Ogg Vorbis
+format. To choose the format, click "Options", then "Preferences", then
+"Recording" and set the options as you like. To start recording your
+mix, click "Options" and select "Record Mix". You will then be prompted
+to enter a file name, and after that, Mixxx will start recording about 5
+seconds after you start playing a track. (So to get the beginning, play
+something, stop the deck, wait 5 seconds, then begin mixing.) When
+you're done recording, go back to "Options "and toggle "Record Mix"
+again, or just exit Mixxx.
 
 ## What's the best hardware DJ controller to use with Mixxx?
 

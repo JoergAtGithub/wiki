@@ -47,31 +47,32 @@ do.
 
 ## Is it possible to use Mixxx with an external mixer?
 
-Yes. Direct deck outputs is a feature of Mixxx 1.9.0 onwards. If you are
-on 1.8.x or below, there are two ways to do it depending on what you
-want to achieve:
+Yes. There are two ways to do it depending on what you want to achieve:
 
-  - **Direct deck outputs**: The trick is to force Mixxx's master output
-    to play back the left/top track, and the headphone output to
-    playback the right/bottom track. (Each track will come out a
-    separate output, suitable for plugging right into an external DJ
-    mixer.) The way one does this is by sliding Mixxx's crossfader all
-    the way to the left, and turning on the headphone cue for the right
-    channel. This forces the first track to play out the master out, and
-    the second track to play out the headphone out. (Since both outputs
-    are now going straight into an external mixer, you'd use the
-    headphone cue on the mixer as well as it's crossfader.) Using an
-    external mixer is also described briefly in the [Threadbox
+  - **Direct deck outputs**: Direct deck outputs is a feature of Mixxx
+    1.9.0 onwards. Set the outputs in Options-\>Preferences-\>Sound
+    Hardware and you're done. If you are on 1.8.x or below, the trick is
+    to force Mixxx's master output to play back the left/top track, and
+    the headphone output to playback the right/bottom track. (Each track
+    will come out a separate output, suitable for plugging right into an
+    external DJ mixer.) The way one does this is by sliding Mixxx's
+    crossfader all the way to the left, and turning on the headphone cue
+    for the right channel. This forces the first track to play out the
+    master out, and the second track to play out the headphone out.
+    (Since both outputs are now going straight into an external mixer,
+    you'd use the headphone cue on the mixer as well as it's
+    crossfader.) Using an external mixer is also described briefly in
+    the [Threadbox
     tutorial](http://mixxx.sourceforge.net/wiki/index.php/Threadbox_Tutorial#Using_an_External_Mixer_or_MIDI_Device).
   - **Software mixing as an additional sound source**: If you want to
     mix on-screen but need to integrate with an external mixer (such as
-    when playing CDs and/or records as well,) you can plug the headphone
-    output into one channel of the mixer, and the main output into
-    another. Then bring the channel fader of the headphone one all the
-    way down on the mixer and set it to play in your headphones all the
-    time (thereby adding Mixxx's headphone bus to the mixer's.) Then use
-    the other fader (with Mixxx's main output) when you want to bring
-    Mixxx's output into/out of the main mix.
+    when playing CDs and/or records as well, or in a radio studio) you
+    can plug the headphone output into one channel of the mixer, and the
+    main output into another. Then bring the channel fader of the
+    headphone one all the way down on the mixer and set it to play in
+    your headphones all the time (thereby adding Mixxx's headphone bus
+    to the mixer's.) Then use the other fader (with Mixxx's main output)
+    when you want to bring Mixxx's output into/out of the main mix.
 
 ## What's vinyl control all about? How do I use it?
 

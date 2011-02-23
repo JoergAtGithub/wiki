@@ -13,9 +13,8 @@ page.
   - [DVS mode](DVS%20mode)
   - [Aubio (misnamed Beat
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
-  - [Library Metadata Rewrite using
-    TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
   - [OSC Backend](OSC%20Backend)
+  - [Effects Framework](Effects%20Framework)
 
 ## Implemented Specifications
 
@@ -23,6 +22,14 @@ page.
   - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
   - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
   - [Library Rewrite Using SQLite](Library%20Rewrite%20Using%20SQLite)
+  - [Library Metadata Rewrite using
+    TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
+
+<!-- end list -->
+
+``` 
+* 
+```
 
 ## Abandoned Specifications
 

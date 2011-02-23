@@ -1,7 +1,7 @@
 ## Summary
 
-**Status**: This specification is **in drafting**. Feel free to add
-ideas to this page.
+**Status**: This specification is **finalized**. Please do not edit this
+page.
 
 Mixxx's metadata parsing is error prone, does not always handle
 encodings properly, and doesn't support all tag formats for a given
@@ -127,13 +127,7 @@ complete.
 
 ## Current Progress
 
-The Launchpad branch
-[lp:\~mixxxdevelopers/mixxx/features\_taglib](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_taglib)
-currently has the work from steps 1.1 to 1.5 completed. It is stable and
-works well.
-
-RJ has verified that BPM extraction works on MP3 and FLAC, but doesn't
-have examples of other files with BPM tags for the moment.
+This feature was implemented and released in Mixxx 1.9.0
 
 ## Team
 

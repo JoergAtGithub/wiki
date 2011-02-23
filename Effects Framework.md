@@ -14,14 +14,14 @@ effects plugins via LADSPA, LV2, or VST.
 
   - Backend
   - Support for multiple backends
-  - A general plugin interface which allows each plugin to express:
+  - A general Effect interface which allows each effect to express:
 
 <!-- end list -->
 
 ``` 
-    * The plugin name
-    * A description of the plugin
-    * The parameters each plugin has, including:
+    * The effect name
+    * A description of the effect
+    * The parameters each effect has, including:
       * An internal identifier
       * A human-readable name
       * A prose description, with support for internationalization, suitable for display in a tooltip
@@ -31,16 +31,46 @@ effects plugins via LADSPA, LV2, or VST.
 * A reference implementation of a Mixxx-internal effects backend
     * Support for at least a flanger
 * Effects / Engine Interface
-* Effects Slots per-EngineChannel
-* A Plugin provided by an EffectsBackend can be allocated to a slot
+* Multiple effects "slots" per-EngineChannel
+* An Effect provided by an EffectsBackend can be allocated to a slot
+* Controller (MIDI, etc) Interface
+* MIDI scripts will interact with effects via the effects-slot abstraction.
+* MIDI scripts can instruct an effects slot to cycle to the next or previous plugin
+* GUI Widgets
+* Per-deck single-effect widget. 
+    * Pick selected effect
+    * Shows up to 4 knobs to control that effect
+    * Wet/Dry knob
+* Multiple-effect chaining widget
+    * Pick 3 effects, 1 parameter knob for each effect
+    * Wet/Dry knob affects entire chain 
+* A library-sized view for allocating available effects to slots
+    * Support loading/saving effect presets
 ```
 
 ## Design
 
-The effects system will implement a backend architecture similar to
-Mixxx's MIDI backend. Multiple backends will provide plugins that are
-discovered by a central EffectsManager class by invoking the plugin
-Enumerator for each backend.
+### Backend Implementation
+
+The effects system will implement a backend model similar to Mixxx's
+MIDI backend. Multiple backends will provide Effects that are aggregated
+by an EffectsManager class. Each backend will provide effects either
+loaded from a plugin system such as LADSPA, LV2, or VST. Alternatively,
+a backend can implement effects natively and expose them via the same
+Effect interface used by the plugin-based backends.
+
+The EffectManager class provides an interface to the rest of Mixxx to
+enumerate available plugins and get a new instance of that effect.
+
+### Engine/Effect Interface
+
+Effect instances can be assigned to an EngineChannel's slot. Once an
+Effect is plugged into a slot, then the Effect is used for processing of
+that EngineChannel's audio after the pre-gain phase of processing.
+
+### Controllers
+
+### User Interface
 
 ## Work Breakdown
 

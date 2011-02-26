@@ -64,6 +64,9 @@ enumerate available plugins and get a new instance of that effect.
 
 ### Engine/Effect Interface
 
+The `EffectsManager` provides a method to instantiate `Effect`s from
+`EffectManifest`s.
+
 Effect instances can be assigned to an EngineChannel's slot. Once an
 Effect is plugged into a slot, then the Effect is used for processing of
 that EngineChannel's audio after the pre-gain phase of processing.

@@ -72,15 +72,14 @@ instantiation of an effect. An Effect object is an instantiation of an
 EffectManifest, and manages actual instance values for each parameter
 described in the EffectManifest.
 
-Effect Manifest Properties
-
-| Property    | Description                                                          |
-| ----------- | -------------------------------------------------------------------- |
-| name        | Effect name (internationalizable)                                    |
-| author      | Author name                                                          |
-| version     | Effect version (string)                                              |
-| description | Effect description (internationalizable)                             |
-| parameters  | A list of EffectParameter objects, describing user-facing parameters |
+| Effect Manifest Properties |                                                                      |
+| -------------------------- | -------------------------------------------------------------------- |
+| Property                   | Description                                                          |
+| name                       | Effect name (internationalizable)                                    |
+| author                     | Author name                                                          |
+| version                    | Effect version (string)                                              |
+| description                | Effect description (internationalizable)                             |
+| parameters                 | A list of EffectParameter objects, describing user-facing parameters |
 
 Effect Parameter Properties
 

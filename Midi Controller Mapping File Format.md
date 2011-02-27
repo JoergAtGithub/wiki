@@ -446,9 +446,8 @@ it's either on (non-zero) or off (zero.)
 
 **Coming up in v1.9:**
 
-|  |                |  |                   |  |                |  |                                                                                                      |  |                                                 |  |
+|  | \[Group\]      |  | Key/Control       |  | Range          |  | What it does                                                                                         |  | On-screen feedback                              |  |
 |  | -------------- |  | ----------------- |  | -------------- |  | ---------------------------------------------------------------------------------------------------- |  | ----------------------------------------------- |  |
-|  | **\[Group\]**  |  | **Key/Control**   |  | **Range**      |  | **What it does**                                                                                     |  | **On-screen feedback**                          |  |
 |  | \[Channel*N*\] |  | bpm               |  | real-valued    |  | This behavior has changed. bpm now only reflects the bpm of the loaded track                         |  | N/A                                             |  |
 |  | \[Channel*N*\] |  | bpm\_tap          |  | binary         |  | When tapped repeatedly, adjusts the playback rate of ChannelN to match the tapped BPM                |  | track playback rate shifts after 4 or more taps |  |
 |  | \[Channel*N*\] |  | eject             |  | binary         |  | Eject currently loaded track                                                                         |  | track is ejected from player                    |  |

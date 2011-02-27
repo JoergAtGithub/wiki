@@ -64,12 +64,23 @@ enumerate available plugins and get a new instance of that effect.
 
 ### Engine/Effect Interface
 
-The `EffectsManager` provides a method to instantiate `Effect`s from
-`EffectManifest`s.
+The EffectsManager uses the EffectsBackends to instantiate Effects from
+EffectManifests. Once the EffectsManager instantiates an Effect, it is
+able to ask the Effect to process a buffer of audio.
 
-Effect instances can be assigned to an EngineChannel's slot. Once an
-Effect is plugged into a slot, then the Effect is used for processing of
-that EngineChannel's audio after the pre-gain phase of processing.
+An EffectSlot is an abstraction over an Effect. It provides a
+ControlObject interface for controlling the parameters of an Effect. To
+a user, an EffectSlot is the equivalent of a "selected" effect. Knobs in
+the GUI and MIDI controller connect to the EffectSlot's controls, which
+in turn are used to control the Effect that is loaded into the slot.
+
+One or more EffectSlots are grouped into EffectChains. The EngineMaster
+and EngineChannels interact with the effects framework at the level of
+EffectChains. Every EffectChain is conditionally applied to multiple
+EngineChannel's (e.g. \[Channel1\], \[Channel2\], \[Sampler1\], etc). In
+addition to EngineChannels, EffectChains are conditionally applied to
+both the EngineMaster master output (\[Master\]) and the headphone
+output (\[Headphone\]).
 
 ### Controllers
 

@@ -115,20 +115,20 @@ At creation time, all EffectSlots are assigned a sequential, unique ID
 starting at 1. All EffectSlots have the group `[EffectN]` where N is the
 EffectSlot's ID.
 
-|  | \[Group\]   |  | Key/Control                           |  | Range              |  | What it does                                                                               |  |
-|  | ----------- |  | ------------------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
-|  | \[EffectN\] |  | enabled                               |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                           |  |
-|  | \[EffectN\] |  | num\_parameters                       |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded         |  |
-|  | \[EffectN\] |  | eject                                 |  | binary             |  | Eject the loaded Effect from this EffectSlot                                               |  |
-|  | \[EffectN\] |  | next\_effect                          |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
-|  | \[EffectN\] |  | prev\_effect                          |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
-|  | \[EffectN\] |  | parameterM\_enabled                   |  | binary, read-only  |  | Whether or not the Mth parameter is enabled.                                               |  |
-|  | \[EffectN\] |  | parameterM\_value\_type               |  | integer, read-only |  | The type of the parameter value. See the Parameter Value Types table.                      |  |
-|  | \[EffectN\] |  | parameterM\_value\_min                |  | double, read-only  |  | The minimum value of the parameter.                                                        |  |
-|  | \[EffectN\] |  | parameterM\_value\_max                |  | double, read-only  |  | The maximum value of the parameter.                                                        |  |
-|  | \[EffectN\] |  | parameterM\_value\_default, read-only |  | double             |  | The default value of the parameter.                                                        |  |
-|  | \[EffectN\] |  | parameterM\_value                     |  | double             |  | The raw value of the Mth parameter. See the Parameter Values section for more information. |  |
-|  | \[EffectN\] |  | parameterM\_value\_normalized         |  | 0.0..1.0           |  | The value of the Mth parameter, normalized to the range of 0.0 to 1.0.                     |  |
+|  | \[Group\]   |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
+|  | ----------- |  | ----------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
+|  | \[EffectN\] |  | enabled                       |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                           |  |
+|  | \[EffectN\] |  | num\_parameters               |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded         |  |
+|  | \[EffectN\] |  | eject                         |  | binary             |  | Eject the loaded Effect from this EffectSlot                                               |  |
+|  | \[EffectN\] |  | next\_effect                  |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
+|  | \[EffectN\] |  | prev\_effect                  |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
+|  | \[EffectN\] |  | parameterM\_enabled           |  | binary, read-only  |  | Whether or not the Mth parameter is enabled.                                               |  |
+|  | \[EffectN\] |  | parameterM\_value\_type       |  | integer, read-only |  | The type of the parameter value. See the Parameter Value Types table.                      |  |
+|  | \[EffectN\] |  | parameterM\_value\_min        |  | double, read-only  |  | The minimum value of the parameter.                                                        |  |
+|  | \[EffectN\] |  | parameterM\_value\_max        |  | double, read-only  |  | The maximum value of the parameter.                                                        |  |
+|  | \[EffectN\] |  | parameterM\_value\_default    |  | double, read-only  |  | The default value of the parameter.                                                        |  |
+|  | \[EffectN\] |  | parameterM\_value             |  | double             |  | The raw value of the Mth parameter. See the Parameter Values section for more information. |  |
+|  | \[EffectN\] |  | parameterM\_value\_normalized |  | 0.0..1.0           |  | The value of the Mth parameter, normalized to the range of 0.0 to 1.0.                     |  |
 
 ##### Parameter Values
 

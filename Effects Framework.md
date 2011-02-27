@@ -69,17 +69,16 @@ EffectChains and EffectSlots both provide a ControlObject interface for both the
 At creation time, all EffectSlots are assigned a sequential, unique ID starting at 1. All EffectSlots have the group ''[EffectN]'' where N is the EffectSlot's ID.
 
 ^^[Group]^^Key/Control^^Range^^What it does^^
-||**[EffectN]**||enabled||binary||Whether an Effect is loaded into this EffectSlot||
-||**[EffectN]**||num_parameters||integer||The number of parameters the currently loaded effect has. 0 if no effect is loaded||
+||**[EffectN]**||enabled||binary, read-only||Whether an Effect is loaded into this EffectSlot||
+||**[EffectN]**||num_parameters||integer, read-only||The number of parameters the currently loaded effect has. 0 if no effect is loaded||
 ||**[EffectN]**||eject||binary||Eject the loaded Effect from this EffectSlot||
 ||**[EffectN]**||next||binary||Cycle to the next Effect after the currently loaded Effect||
 ||**[EffectN]**||prev||binary||Cycle to the previous Effect before the currently loaded Effect||
-||**[EffectN]**||parameterM_enabled||binary||Whether or not the Mth parameter is enabled.||
-
-||**[EffectN]**||parameterM_type||integer||The type of the parameter. See the Parameter Types table.||
-||**[EffectN]**||parameterM_value_min||double||The minimum value of the parameter.||
-||**[EffectN]**||parameterM_value_max||double||The maximum value of the parameter.||
-||**[EffectN]**||parameterM_value_default||double||The default value of the parameter.||
+||**[EffectN]**||parameterM_enabled||binary, read-only||Whether or not the Mth parameter is enabled.||
+||**[EffectN]**||parameterM_value_type||integer, read-only||The type of the parameter value. See the Parameter Value Types table.||
+||**[EffectN]**||parameterM_value_min||double, read-only||The minimum value of the parameter.||
+||**[EffectN]**||parameterM_value_max||double, read-only||The maximum value of the parameter.||
+||**[EffectN]**||parameterM_value_default, read-only||double||The default value of the parameter.||
 ||**[EffectN]**||parameterM_value||double||The raw value of the Mth parameter. See the Parameter Values section for more information. ||
 ||**[EffectN]**||parameterM_value_normalized||0.0..1.0||The value of the Mth parameter, normalized to the range of 0.0 to 1.0.||
 
@@ -87,7 +86,7 @@ At creation time, all EffectSlots are assigned a sequential, unique ID starting 
 
 Since the Control system is not capable of representing values other than numeric values, for the first iteration of the effects system, we must use a numeric coding system for representing the parameter types. If the GUI or MIDI Script author does not care about choosing correct values, he or she can use the parameterM_value_normalized control, which will always represent the parameter value as normalized to the range of 0.0 to 1.0. To use the parameterM_value control, the setter must check the value against parameterM_type (see the Parameter Types table below), parameterM_value_min, and parameterM_value_max to ensure the value is within the correct range. Invalid settings of any parameterM_value controls will be ignored.
 
-^Parameter Type^Integer Value^Intepretation^
+^Parameter Value Type^Integer Value^Intepretation^
 | Boolean | 0 | Set only to values of 0 (false) or 1 (true) |
 | Integer | 1 | Set to any integral value
 | Double  | 2 |

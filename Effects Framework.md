@@ -107,13 +107,10 @@ controls:
 |  | \[Effects\] |  | num\_effectchains |  | integer, read-only |  | The number of EffectChains that exist |  |
 
 EffectChains and EffectSlots both provide a ControlObject interface for
-both the GUI and MIDI controllers to interact with.
-
-#### EffectChain Controls
-
-At creation time, all EffectChains are assigned a sequential, unique ID
-starting at 1. All EffectChains have the group `[EffectChainN]` where N
-is the EffectChain's ID.
+both the GUI and MIDI controllers to interact with. At creation time,
+all EffectChains are assigned a sequential, unique ID starting at 1. All
+EffectChains have the group `[EffectChainN]` where N is the
+EffectChain's ID.
 
 |  | \[Group\]                 |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
 |  | ------------------------- |  | ----------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
@@ -137,7 +134,15 @@ is the EffectChain's ID.
 |  | \[EffectChainN\_EffectM\] |  | parameterK\_value             |  | double             |  | The raw value of the Kth parameter. See the Parameter Values section for more information. |  |
 |  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_normalized |  | 0.0..1.0           |  | The value of the Kth parameter, normalized to the range of 0.0 to 1.0.                     |  |
 
-##### Parameter Values
+In the above table, the values of N range from 1 to
+\[Effects\],num\_effectchains, inclusive. The values of M for a given
+value of N range from 1 to \[EffectChainN\],num\_effectslots, inclusive.
+For a given value of a N and M, the value of K ranges from 1 to
+\[EffectChainN\_EffectM\],num\_parameters, inclusive. The reason for
+1-indexing versus 0-indexing is the significant precedent within the
+Control system for 1-indexing. (e.g. hotcues, Deck/Sampler names, etc.)
+
+#### Parameter Values
 
 Since the Control system is not capable of representing values other
 than numeric values, for the first iteration of the effects system, we

@@ -72,8 +72,8 @@ instantiation of an effect. An Effect object is an instantiation of an
 EffectManifest, and manages actual instance values for each parameter
 described in the EffectManifest.
 
-Given an Effect instance, a buffer of audio can be processed with the
-effect.
+Given an Effect instance, a buffer of audio can be processed given the
+parameter settings in the instance.
 
 **TODO: Should Effect be renamed EffectInstance?**
 

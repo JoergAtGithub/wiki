@@ -97,6 +97,8 @@ addition to EngineChannels, EffectChains are conditionally applied to
 both the EngineMaster master output (\[Master\]) and the headphone
 output (\[Headphone\]).
 
+**TODO: Should EffectChain be named EffectUnit?**
+
 ### Controls
 
 The EffectsManager class provides the following global information

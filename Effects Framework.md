@@ -97,7 +97,37 @@ addition to EngineChannels, EffectChains are conditionally applied to
 both the EngineMaster master output (\[Master\]) and the headphone
 output (\[Headphone\]).
 
-### Controllers
+### Controls
+
+EffectChains and EffectSlots both provide a ControlObject interface for
+both the GUI and MIDI controllers to interact with.
+
+#### EffectSlot Controls
+
+At creation time, all EffectSlots are assigned a sequential, unique ID
+starting at 1. All EffectSlots have the group `[EffectN]` where N is the
+EffectSlot's ID.
+
+|  | \[Group\]       |  | Key/Control         |  | Range    |  | What it does                                                                       |  |
+|  | --------------- |  | ------------------- |  | -------- |  | ---------------------------------------------------------------------------------- |  |
+|  | **\[EffectN\]** |  | enabled             |  | binary   |  | Whether an Effect is loaded into this EffectSlot                                   |  |
+|  | **\[EffectN\]** |  | num\_parameters     |  | integer  |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded |  |
+|  | **\[EffectN\]** |  | eject               |  | binary   |  | Eject the loaded Effect from this EffectSlot                                       |  |
+|  | **\[EffectN\]** |  | next                |  | binary   |  | Cycle to the next Effect after the currently loaded Effect                         |  |
+|  | **\[EffectN\]** |  | prev                |  | binary   |  | Cycle to the previous Effect before the currently loaded Effect                    |  |
+|  | **\[EffectN\]** |  | parameterM\_enabled |  | binary   |  | Whether or not the Mth parameter is enabled.                                       |  |
+|  | **\[EffectN\]** |  | parameterM\_value   |  | 0.0..1.0 |  | The value of the Mth parameter.                                                    |  |
+|  | **\[EffectN\]** |  | parameterM\_type    |  | integer  |  | The type of the parameter. See the Parameter Types table.                          |  |
+
+Since the Control system is not capable of representing values other
+than numeric values, for the first iteration of the effects system, we
+must use a numeric coding system for representing the parameter types.
+
+Parameter Types
+
+| Parameter Type | Integer Value |
+| -------------- | ------------- |
+| Boolean        | 0             |
 
 ### User Interface
 

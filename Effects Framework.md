@@ -50,27 +50,19 @@ effects plugins via LADSPA, LV2, or VST.
 
 ## Design
 
-### Backend Implementation
+### Effect Representation
 
-The effects system will implement a backend model similar to Mixxx's
-MIDI backend. Multiple backends will provide Effects that are aggregated
-by an EffectsManager class. Each backend will provide effects either
-loaded from a plugin system such as LADSPA, LV2, or VST. Alternatively,
-a backend can implement effects natively and expose them via the same
-Effect interface used by the plugin-based backends.
-
-The properties of an Effect provided by an EffectsBackend are described
-by an EffectManifest object. An EffectManifest is an immutable data type
-(should always be const) that fully describes all of the Effect's
-properties that are relevant to user-facing aspects of effects. This
-includes a description of each user-facing parameter of each effect,
-along with metadata describing hints for how the parameter should be
-presented to the user, limits of the parameter's values, and default
-values for the parameter. An EffectManifest is strictly an abstract
-description of the effect, and has nothing to do with an actual
-instantiation of an effect. An Effect object is an instantiation of an
-EffectManifest, and manages actual instance values for each parameter
-described in the EffectManifest.
+The properties of an effect are described by an EffectManifest object.
+An EffectManifest is an immutable data type (should always be const)
+that fully describes all of the effect's properties that are relevant to
+user-facing aspects of effects. This includes a description of each
+user-facing parameter of each effect, along with metadata describing
+hints for how the parameter should be presented to the user, limits of
+the parameter's values, and default values for the parameter. An
+EffectManifest is strictly an abstract description of the effect, and
+has nothing to do with an actual instantiation of an effect. An Effect
+object is an instantiation of an EffectManifest, and manages actual
+instance values for each parameter described in the EffectManifest.
 
 | EffectManifest Properties |                                                                      |
 | ------------------------- | -------------------------------------------------------------------- |
@@ -81,18 +73,29 @@ described in the EffectManifest.
 | description               | Effect description (internationalizable)                             |
 | parameters                | A list of EffectParameter objects, describing user-facing parameters |
 
-| EffectParameter Properties |                                          |
-| -------------------------- | ---------------------------------------- |
-| Property                   | Description                              |
-| name                       | Effect name (internationalizable)        |
-| description                | Effect description (internationalizable) |
-| defaultValue               | Parameter's default value                |
-| minimumValue               | Parameter's minimum value, if any        |
-| maximumValue               | Parameter's maximum value, if any        |
-| valueHint                  |                                          |
-| controlHint                |                                          |
-| semanticHint               |                                          |
-| unitsHint                  |                                          |
+| EffectParameter Properties |                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Property                   | Description                                                                                                      |
+| name                       | Effect name (internationalizable)                                                                                |
+| description                | Effect description (internationalizable)                                                                         |
+| defaultValue               | Parameter's default value                                                                                        |
+| minimumValue               | Parameter's minimum value, if any                                                                                |
+| maximumValue               | Parameter's maximum value, if any                                                                                |
+| valueHint                  | A hint describing the type of the parameter's value (boolean, float, integer, etc.)                              |
+| controlHint                | A hint describing the most logical control type for the parameter (potmeter, log-potmeter, toggle, slider, etc.) |
+| semanticHint               | A hint describing the semantic type of the value (pitch, samples, time, duration)                                |
+| unitsHint                  | A hint describing the units of the value (time, hertz, fraction of samplerate)                                   |
+
+**NOTE:** The hints are still under development. Please give feedback\!
+
+### Backend Implementation
+
+The effects system will implement a backend model similar to Mixxx's
+MIDI backend. Multiple backends will provide Effects that are aggregated
+by an EffectsManager class. Each backend will provide effects either
+loaded from a plugin system such as LADSPA, LV2, or VST. Alternatively,
+a backend can implement effects natively and expose them via the same
+Effect interface used by the plugin-based backends.
 
 Given an Effect instance, a buffer of audio can be processed given the
 parameter settings in the instance.

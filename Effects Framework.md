@@ -59,8 +59,23 @@ loaded from a plugin system such as LADSPA, LV2, or VST. Alternatively,
 a backend can implement effects natively and expose them via the same
 Effect interface used by the plugin-based backends.
 
-The EffectManager class provides an interface to the rest of Mixxx to
-enumerate available plugins and get a new instance of that effect.
+The properties of an Effect provided by an EffectsBackend are described
+by an EffectManifest object. An EffectManifest is an immutable data type
+(should always be const) that fully describes all of the Effect's
+properties that are relevant to user-facing aspects of effects. This
+includes a description of each user-facing parameter of each effect,
+along with metadata describing hints for how the parameter should be
+presented to the user, limits of the parameter's values, and default
+values for the parameter. An EffectManifest is strictly an abstract
+description of the effect, and has nothing to do with an actual
+instantiation of an effect. An Effect object is an instantiation of an
+EffectManifest, and manages actual instance values for each parameter
+described in the EffectManifest.
+
+Given an Effect instance, a buffer of audio can be processed with the
+effect.
+
+**TODO: Should Effect be renamed EffectInstance?**
 
 ### Engine/Effect Interface
 

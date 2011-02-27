@@ -114,35 +114,39 @@ all EffectChains are assigned a sequential, unique ID starting at 1. All
 EffectChains have the group `[EffectChainN]` where N is the
 EffectChain's ID.
 
-|  | \[Group\]                 |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
-|  | ------------------------- |  | ----------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
-|  | \[EffectChainN\]          |  | num\_effectslots              |  | integer, read-only |  | The number of EffectSlots that this EffectChain has                                        |  |
-|  | \[EffectChainN\]          |  | dry\_wet                      |  | 0.0..1.0           |  | The dry/wet mixing ratio for this EffectChain with the EngineChannels it is mixed with     |  |
-|  | \[EffectChainN\]          |  | channel\_ChannelM             |  | binary             |  | Whether or not this EffectChain applies to Deck M                                          |  |
-|  | \[EffectChainN\]          |  | channel\_SamplerM             |  | binary             |  | Whether or not this EffectChain applies to Sampler M                                       |  |
-|  | \[EffectChainN\]          |  | channel\_Master               |  | binary             |  | Whether or not this EffectChain applies to the Master output                               |  |
-|  | \[EffectChainN\]          |  | channel\_Headphone            |  | binary             |  | Whether or not this EffectChain applies to the Headphone output                            |  |
-|  | \[Group\]                 |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
-|  | \[EffectChainN\_EffectM\] |  | enabled                       |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                           |  |
-|  | \[EffectChainN\_EffectM\] |  | num\_parameters               |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded         |  |
-|  | \[EffectChainN\_EffectM\] |  | eject                         |  | binary             |  | Eject the loaded Effect from this EffectSlot                                               |  |
-|  | \[EffectChainN\_EffectM\] |  | next\_effect                  |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
-|  | \[EffectChainN\_EffectM\] |  | prev\_effect                  |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_enabled           |  | binary, read-only  |  | Whether or not the Kth parameter is enabled.                                               |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_type       |  | integer, read-only |  | The type of the Kth parameter value. See the Parameter Value Types table.                  |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_min        |  | double, read-only  |  | The minimum value of the Kth parameter.                                                    |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_max        |  | double, read-only  |  | The maximum value of the Kth parameter.                                                    |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_default    |  | double, read-only  |  | The default value of the parameter.                                                        |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value             |  | double             |  | The raw value of the Kth parameter. See the Parameter Values section for more information. |  |
-|  | \[EffectChainN\_EffectM\] |  | parameterK\_value\_normalized |  | 0.0..1.0           |  | The value of the Kth parameter, normalized to the range of 0.0 to 1.0.                     |  |
+|  | \[Group\]                     |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
+|  | ----------------------------- |  | ----------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
+|  | \[EffectChainN\]              |  | num\_effectslots              |  | integer, read-only |  | The number of EffectSlots that this EffectChain has                                        |  |
+|  | \[EffectChainN\]              |  | dry\_wet                      |  | 0.0..1.0           |  | The dry/wet mixing ratio for this EffectChain with the EngineChannels it is mixed with     |  |
+|  | \[EffectChainN\]              |  | channel\_ChannelM             |  | binary             |  | Whether or not this EffectChain applies to Deck M                                          |  |
+|  | \[EffectChainN\]              |  | channel\_SamplerM             |  | binary             |  | Whether or not this EffectChain applies to Sampler M                                       |  |
+|  | \[EffectChainN\]              |  | channel\_Master               |  | binary             |  | Whether or not this EffectChain applies to the Master output                               |  |
+|  | \[EffectChainN\]              |  | channel\_Headphone            |  | binary             |  | Whether or not this EffectChain applies to the Headphone output                            |  |
+|  | \[Group\]                     |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | enabled                       |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                           |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | num\_parameters               |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded         |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | eject                         |  | binary             |  | Eject the loaded Effect from this EffectSlot                                               |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | next\_effect                  |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | prev\_effect                  |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_enabled           |  | binary, read-only  |  | Whether or not the Kth parameter is enabled.                                               |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value\_type       |  | integer, read-only |  | The type of the Kth parameter value. See the Parameter Value Types table.                  |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value\_min        |  | double, read-only  |  | The minimum value of the Kth parameter.                                                    |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value\_max        |  | double, read-only  |  | The maximum value of the Kth parameter.                                                    |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value\_default    |  | double, read-only  |  | The default value of the parameter.                                                        |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value             |  | double             |  | The raw value of the Kth parameter. See the Parameter Values section for more information. |  |
+|  | \[EffectChainN\_EffectSlotM\] |  | parameterK\_value\_normalized |  | 0.0..1.0           |  | The value of the Kth parameter, normalized to the range of 0.0 to 1.0.                     |  |
 
-In the above table, the values of N range from 1 to
-\[Effects\],num\_effectchains, inclusive. The values of M for a given
-value of N range from 1 to \[EffectChainN\],num\_effectslots, inclusive.
-For a given value of a N and M, the value of K ranges from 1 to
-\[EffectChainN\_EffectM\],num\_parameters, inclusive. The reason for
-1-indexing versus 0-indexing is the significant precedent within the
-Control system for 1-indexing. (e.g. hotcues, Deck/Sampler names, etc.)
+In the above table,
+
+  - N ranges from 1 to \[Effects\],num\_effectchains, inclusive. 
+  - M ranges from 1 to \[EffectChainN\],num\_effectslots, inclusive.
+    (For a given value of N)
+  - K ranges from 1 to \[EffectChainN\_EffectSlotM\],num\_parameters,
+    inclusive. (For given values of N and M)
+
+**NOTE:** The reason for 1-indexing versus 0-indexing is the significant
+precedent within the Control system for 1-indexing. (e.g. hotcues,
+Deck/Sampler names, etc.)
 
 #### Parameter Values
 

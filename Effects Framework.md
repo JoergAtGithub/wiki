@@ -120,8 +120,8 @@ EffectSlot's ID.
 |  | \[EffectN\] |  | enabled                               |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                           |  |
 |  | \[EffectN\] |  | num\_parameters                       |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded         |  |
 |  | \[EffectN\] |  | eject                                 |  | binary             |  | Eject the loaded Effect from this EffectSlot                                               |  |
-|  | \[EffectN\] |  | next                                  |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
-|  | \[EffectN\] |  | prev                                  |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
+|  | \[EffectN\] |  | next\_effect                          |  | binary             |  | Cycle to the next Effect after the currently loaded Effect                                 |  |
+|  | \[EffectN\] |  | prev\_effect                          |  | binary             |  | Cycle to the previous Effect before the currently loaded Effect                            |  |
 |  | \[EffectN\] |  | parameterM\_enabled                   |  | binary, read-only  |  | Whether or not the Mth parameter is enabled.                                               |  |
 |  | \[EffectN\] |  | parameterM\_value\_type               |  | integer, read-only |  | The type of the parameter value. See the Parameter Value Types table.                      |  |
 |  | \[EffectN\] |  | parameterM\_value\_min                |  | double, read-only  |  | The minimum value of the parameter.                                                        |  |

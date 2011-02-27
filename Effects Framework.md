@@ -86,7 +86,7 @@ able to ask the Effect to process a buffer of audio.
 An EffectSlot is an abstraction over an Effect. It provides a
 ControlObject interface for controlling the parameters of an Effect. To
 a user, an EffectSlot is the equivalent of a "selected" effect. Knobs in
-the GUI and MIDI controller connect to the EffectSlot's controls, which
+the GUI and MIDI controllers connect to the EffectSlot's controls, which
 in turn are used to control the Effect that is loaded into the slot.
 
 One or more EffectSlots are grouped into EffectChains. The EngineMaster

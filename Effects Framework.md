@@ -12,30 +12,31 @@ effects plugins via LADSPA, LV2, or VST.
 
 ## Requirements
 
-  - Backend
-  - Support for multiple backends
   - A general Effect interface which allows each effect to express:
+  - The effect name (internationalizable)
+  - A description of the effect (internationalizable)
+  - The parameters each effect has, including:
 
 <!-- end list -->
 
 ``` 
-    * The effect name
-    * A description of the effect
-    * The parameters each effect has, including:
-      * An internal identifier
-      * A human-readable name
-      * A prose description, with support for internationalization, suitable for display in a tooltip
-      * Units and ranges of the parameter
-    * A preferred ordering of parameters in order of importance
-* A reference implementation of a backend implementing LADSPA support
+    * An internal identifier 
+    * A human-readable name (internationalizable)
+    * A prose description, with support for internationalization, suitable for display in a tooltip. (internationalizable)
+    * Units and ranges of the parameter
+* A preferred ordering of parameters in order of importance
+* Backend
+* Support for multiple backends (plugin based or not)
 * A reference implementation of a Mixxx-internal effects backend
     * Support for at least a flanger
 * Effects / Engine Interface
-* Multiple effects "slots" per-EngineChannel
-* An Effect provided by an EffectsBackend can be allocated to a slot
+* Support chaining effects together such that a single wet/dry parameter applies to the chain of effects, not each individual effect.
+* Support applying effects to multiple different audio sources (samplers, decks, master out, headphone out)
 * Controller (MIDI, etc) Interface
-* MIDI scripts will interact with effects via the effects-slot abstraction.
-* MIDI scripts can instruct an effects slot to cycle to the next or previous plugin
+* MIDI scripts must be able to control loaded effects parameters
+* MIDI scripts must be able to request that an effect be ejected or a next/previous effect be loaded. (support effect knobs on e.g. NS7)
+* MIDI scripts must be able to observe effect chains and make changes.
+* MIDI scripts must have a simple-mode by which they can treat parameters as 0.0 - 1.0 values so they do not have to deal with the complexity of min/max values, types, etc.
 * GUI Widgets
 * Per-deck single-effect widget. 
     * Pick selected effect
@@ -44,7 +45,7 @@ effects plugins via LADSPA, LV2, or VST.
 * Multiple-effect chaining widget
     * Pick 3 effects, 1 parameter knob for each effect
     * Wet/Dry knob affects entire chain 
-* A library-sized view for allocating available effects to slots
+* A library-sized view for allocating available effects to effect chains
     * Support loading/saving effect presets
 ```
 

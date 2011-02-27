@@ -81,19 +81,18 @@ described in the EffectManifest.
 | description                | Effect description (internationalizable)                             |
 | parameters                 | A list of EffectParameter objects, describing user-facing parameters |
 
-Effect Parameter Properties
-
-| Property     | Description                              |
-| ------------ | ---------------------------------------- |
-| name         | Effect name (internationalizable)        |
-| description  | Effect description (internationalizable) |
-| defaultValue | Parameter's default value                |
-| minimumValue | Parameter's minimum value, if any        |
-| maximumValue | Parameter's maximum value, if any        |
-| valueHint    |                                          |
-| controlHint  |                                          |
-| semanticHint |                                          |
-| unitsHint    |                                          |
+| Effect Parameter Properties |                                          |
+| --------------------------- | ---------------------------------------- |
+| Property                    | Description                              |
+| name                        | Effect name (internationalizable)        |
+| description                 | Effect description (internationalizable) |
+| defaultValue                | Parameter's default value                |
+| minimumValue                | Parameter's minimum value, if any        |
+| maximumValue                | Parameter's maximum value, if any        |
+| valueHint                   |                                          |
+| controlHint                 |                                          |
+| semanticHint                |                                          |
+| unitsHint                   |                                          |
 
 Given an Effect instance, a buffer of audio can be processed given the
 parameter settings in the instance.

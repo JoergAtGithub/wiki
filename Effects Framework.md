@@ -118,8 +118,8 @@ EffectChain's ID.
 |  | ----------------------------- |  | ----------------------------- |  | ------------------ |  | ------------------------------------------------------------------------------------------ |  |
 |  | \[EffectChainN\]              |  | num\_effectslots              |  | integer, read-only |  | The number of EffectSlots that this EffectChain has                                        |  |
 |  | \[EffectChainN\]              |  | dry\_wet                      |  | 0.0..1.0           |  | The dry/wet mixing ratio for this EffectChain with the EngineChannels it is mixed with     |  |
-|  | \[EffectChainN\]              |  | channel\_ChannelM             |  | binary             |  | Whether or not this EffectChain applies to Deck M                                          |  |
-|  | \[EffectChainN\]              |  | channel\_SamplerM             |  | binary             |  | Whether or not this EffectChain applies to Sampler M                                       |  |
+|  | \[EffectChainN\]              |  | channel\_ChannelI             |  | binary             |  | Whether or not this EffectChain applies to Deck I                                          |  |
+|  | \[EffectChainN\]              |  | channel\_SamplerJ             |  | binary             |  | Whether or not this EffectChain applies to Sampler J                                       |  |
 |  | \[EffectChainN\]              |  | channel\_Master               |  | binary             |  | Whether or not this EffectChain applies to the Master output                               |  |
 |  | \[EffectChainN\]              |  | channel\_Headphone            |  | binary             |  | Whether or not this EffectChain applies to the Headphone output                            |  |
 |  | \[Group\]                     |  | Key/Control                   |  | Range              |  | What it does                                                                               |  |
@@ -143,6 +143,8 @@ In the above table,
     (For a given value of N)
   - K ranges from 1 to \[EffectChainN\_EffectSlotM\],num\_parameters,
     inclusive. (For given values of N and M)
+  - I ranges from 1 to \[Master\],num\_decks, inclusive.
+  - J ranges from 1 to \[Master\],num\_samplers, inclusive.
 
 **NOTE:** The reason for 1-indexing versus 0-indexing is the significant
 precedent within the Control system for 1-indexing. (e.g. hotcues,

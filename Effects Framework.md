@@ -124,10 +124,10 @@ available for tweaking effets. One example of this is the Numark V7/NS7,
 which only has a single effect-selector knob and an effect-parameter
 knob. In this case, we would make the effect selector knob select the
 active effect chain, and the effect-parameter knob tweak the "Wonder
-Knob". In ITCH, the V7/NS7 are limited to only a single effect at a
-time, and these knobs are designed to reflect that. By mapping this knob
-to effect chains, we will allow NS7/V7 owners to achieve a categorically
-more flexible effect setup.
+Knob". In ITCH, the V7/NS6/NS7FX are limited to only a single effect at
+a time, and these knobs are designed to reflect that. By mapping this
+knob to effect chains, we will allow NS7/V7 owners to achieve a
+categorically more flexible effect setup.
 
 ### Effect Representation
 

@@ -37,7 +37,7 @@ effects plugins via LADSPA, LV2, or VST.
 * Effect Chains
 * Support chaining multiple Effects together into an Effect Chain.
 * **TODO: Each effect chain shall have a wet/dry parameter? Or an enabled button?**
-* Each effect chain will have one "Meta/Super/Master/Action/Crazy/Funky-Knob" which individual parameters of effects in the chain can be linked to.
+* Each effect chain will have one "Meta/Super/Wonder/Master/Action/Crazy/Funky-Knob" which individual parameters of effects in the chain can be linked to.
 * Must support loading and saving of effect-chains ("Presets")
 * Support applying effect chains to multiple different audio sources (samplers, decks, master out, headphone out)
 * Control (MIDI, etc) Interface
@@ -58,6 +58,75 @@ effects plugins via LADSPA, LV2, or VST.
 ```
 
 ## Design
+
+### High-Level Overview
+
+The goal is that the DJ can enhance their performance through the use of
+audio effects. To present this in a simple-to-use and powerful way, we
+introduce the metaphor of "Effect Chains". An effect chain is nothing
+more than a list of effects which are applied sequentially to audio. An
+effect chain can be applied to decks, samplers, the headphone out, and
+the master output.
+
+DJs configure effect chains by selecting effects that are available to
+them from any variety of effect sources (native built-in plugins, LADSPA
+plugins, LV2 plugins, VST plugins, etc.) and adding them to the chain.
+This will be done from a view called "Effect Chain Edit Mode" that takes
+the place of where the Mixxx library normally sits.
+
+Once the DJ has selected the effects that they desire to be in the
+chain, then the parameters of that effect are made available to them to
+tweak to the settings they desire. Each parameter can be adjusted in the
+following ways:
+
+  - Change the value of the parameter
+  - Change the minimum / maximum limits of the parameter
+  - In the case of a knob, change whether the parameter is controlled
+    linearly or logarythmically
+  - Assign the parameter to be controlled by the effect chain's "Wonder
+    Knob".
+
+Once the DJ is done configuring the effect chain and the parameters of
+the effects that are in the effect chain, he or she may save the effect
+chain and give it a name. Alternatively, instead of creating an effect
+chain, the DJ can also load them by name from their previously saved
+chains.
+
+The key idea here is that the DJ should invest time in crafting and
+creating the unique sounds they would like to make via Effect Chains
+**prior** to their sets. While it will be possible to create Effect
+Chains on the fly, it will be a lot less stressful if he or she have
+invested the time beforehand.
+
+#### The Wonder Knob
+
+**TODO: Insert marketing name here :) Candidates: SuperKnob, WonderKnob,
+MetaKnob, HyperKnob, AwesomeKnob, FunkyKnob, MagicKnob**
+
+Every effect chain has a single knob called the "Wonder Knob". This knob
+is meant to be the go-to knob for the DJ to tweak during their set to
+make awesome effect noises happen. If you look at a lot of Ean Golden's
+videos on [DJTechTools](http://djtechtools.com), this is how many of his
+combinations of effects work. There is one knob to turn that produces
+the desired effect. This is both a **huge** usability win (no knob soup)
+and allows the DJ to focus on what they are doing. As previously
+outlined, when creating an effect chain in Chain Edit Mode, each effect
+in the chain has the option of linking one or more of their parameters
+to the chain's "Wonder Knob". This, combined with with the ability to
+tweak the min/max ranges, and the linear/log settings of the knobs,
+allows the DJ to create one knob that does the work of what he or she
+would normally do by tweaking multiple knobs simultaneously.
+
+One benefit of having a "Wonder Knob" is that it maps very naturally to
+many MIDI controllers, which often have a limited number of knobs
+available for tweaking effets. One example of this is the Numark V7/NS7,
+which only has a single effect-selector knob and an effect-parameter
+knob. In this case, we would make the effect selector knob select the
+active effect chain, and the effect-parameter knob tweak the "Wonder
+Knob". In ITCH, the V7/NS7 are limited to only a single effect at a
+time, and these knobs are designed to reflect that. By mapping this knob
+to effect chains, we will allow NS7/V7 users to achieve a categorically
+more flexible effect setup.
 
 ### Effect Representation
 

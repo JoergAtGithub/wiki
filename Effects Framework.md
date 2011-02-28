@@ -82,7 +82,7 @@ following ways:
   - Change the value of the parameter
   - Change the minimum / maximum limits of the parameter
   - In the case of a knob, change whether the parameter is controlled
-    linearly or logarythmically
+    linearly or logarithmically
   - Assign the parameter to be controlled by the effect chain's "Wonder
     Knob".
 

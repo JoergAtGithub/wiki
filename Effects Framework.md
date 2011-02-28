@@ -81,6 +81,8 @@ following ways:
 
   - Change the value of the parameter
   - Change the minimum / maximum limits of the parameter
+  - Invert the knob so that turning it clockwise goes from high to low
+    instead of low to high.
   - In the case of a knob, change whether the parameter is controlled
     linearly or logarithmically
   - Assign the parameter to be controlled by the effect chain's "Wonder

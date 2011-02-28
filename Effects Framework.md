@@ -86,7 +86,7 @@ following ways:
   - In the case of a knob, change whether the parameter is controlled
     linearly or logarithmically
   - Assign the parameter to be controlled by the effect chain's "Wonder
-    Knob".
+    Knob". See the "Wonder Knob" section below.
 
 Once the DJ is done configuring the effect chain and the parameters of
 the effects that are in the effect chain, he or she may save the effect

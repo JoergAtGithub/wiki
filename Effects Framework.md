@@ -1,7 +1,7 @@
 ## Summary
 
 **Status**: This specification is **in drafting**. Please feel free to
-edit this page.
+edit this page and add your comments.
 
 DJs often augment their mixes with effects. Mixxx is severely lacking in
 this department, as released versions of Mixxx only offer EQs and a

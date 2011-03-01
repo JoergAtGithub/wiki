@@ -276,6 +276,22 @@ parameterK\_value controls will be ignored.
 
 ### User Interface
 
+## Controller Impact Assessment
+
+| Controller                                                                                                                                        | Effects? | Settings                                           | Comments    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------- | ----------- |
+| [Numark NS6](http://www.numark.com/stuff/contentmgr/files/27/54855ae10ce78345971f892114788cfd/large/ns6_ortho_lrg.jpg)                            | Y        | Effect Selector, Effect Parameter, Effect Mix      | Perfect Fit |
+| [Stanton SCS.1d](http://qualityelectronics.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/c/scs1d_top.jpg)            | Y        | Highly programmable                                | Medium Fit  |
+| [Native Instruments S4](http://cachepe.zzounds.com/media/quality,85/brand,zzounds/NI_Traktor_Kontrol_S4_top-a19738755dd69761d1fb33f0e8ec7cad.jpg) | Y        | 4-effect knobs per chain                           | Good Fit    |
+| [NI Traktor Kontrol X1](http://turntabling.net/wp-content/uploads/2011/01/NI-TRAKTOR_KONTROL_X1_Controller.jpg)                                   | Y        | 4-effect knobs per chain                           | Good Fit    |
+| [Reloop Digital Jockey 2](http://www.digitaldjtips.com/wp-content/uploads/2010/11/reloop-digital-jockey-2-master-edition.jpg)                     | Y        | 3 effect enable/select/parameter knobs per deck    | Medium Fit  |
+| [Vestax VCI-300](http://snatchthieves.files.wordpress.com/2010/07/vestax-vci-300.jpg)                                                             | N        |                                                    |             |
+| [VCI-100SE DJTT Edition](http://img183.imageshack.us/f/vci100seoverlay.png/)                                                                      | Y        | Wet-dry, 3-effect parameter knobs per effects unit | Medium Fit  |
+| [Hercules RMX](http://www.skratchworx.com/images/hercules/rmx_top.jpg)                                                                            | N        |                                                    |             |
+| [Hercules DJ Console 4MX](http://www.dv247.com/assets/products/79891_l.jpg)                                                                       | N        |                                                    |             |
+| [Hercules DJ Console Mk4](http://maxborgesagency.com/wp-content/uploads/4780638-Hercules-DJConsole-Mk4-Top.jpg)                                   | N        |                                                    |             |
+| [Hercules DJ Control Steel](http://www.madmanaudio.com/images/madmanaudio%20%20Hercules%20DJ%20Control%20Steel%20Controller.jpg)                  | N        |                                                    |             |
+
 ## Work Breakdown
 
 ## Current Progress

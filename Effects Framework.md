@@ -10,53 +10,6 @@ flanger.
 This project aims to bring effects to Mixxx, both via native effects and
 effects plugins via LADSPA, LV2, or VST.
 
-## Requirements
-
-  - A general EffectManifest interface which allows each effect to
-    express:
-  - The effect name (internationalizable)
-  - A description of the effect (internationalizable)
-  - The parameters each effect has, including:
-
-<!-- end list -->
-
-``` 
-    * An internal identifier 
-    * A human-readable name (internationalizable)
-    * A prose description, with support for internationalization, suitable for display in a tooltip. (internationalizable)
-    * Units and maximum/minimum/default values of the parameter
-* A preferred ordering of parameters in order of importance
-* Backend
-* Support for multiple backends (plugin based or not)
-* A reference implementation of a Mixxx-internal effects backend
-    * Support for at least a flanger
-* Effect Instances (known as "Effect")
-* Support the customization of parameter ranges to a subset of the EffectManifest's min/max ranges 
-* Support linking of individual parameters to the Effect Chain's meta-knob.
-* **TODO: Each effect shall have an individual wet/dry parameter?**
-* Effect Chains
-* Support chaining multiple Effects together into an Effect Chain.
-* **TODO: Each effect chain shall have a wet/dry parameter? Or an enabled button?**
-* Each effect chain will have one "Meta/Super/Wonder/Master/Action/Crazy/Funky-Knob" which individual parameters of effects in the chain can be linked to.
-* Must support loading and saving of effect-chains ("Presets")
-* Support applying effect chains to multiple different audio sources (samplers, decks, master out, headphone out)
-* Control (MIDI, etc) Interface
-* MIDI scripts must be able to control loaded effects parameters
-* MIDI scripts must be able to request that an effect be ejected or a next/previous effect be loaded. (support effect knobs on e.g. NS7)
-* MIDI scripts must be able to observe effect chains and make changes.
-* MIDI scripts must have a simple-mode by which they can treat parameters as 0.0 - 1.0 values so they do not have to deal with the complexity of min/max values, types, etc.
-* GUI Widgets
-* Per-deck single-effect widget. 
-    * Pick selected effect
-    * Shows up to 4 knobs to control that effect
-    * Wet/Dry knob
-* Multiple-effect chaining widget
-    * Pick 3 effects, 1 parameter knob for each effect
-    * Wet/Dry knob affects entire chain 
-* A library-sized view for allocating available effects to effect chains
-    * Support loading/saving effect presets
-```
-
 ## Design
 
 ### High-Level Overview
@@ -128,6 +81,53 @@ Knob". In ITCH, the V7/NS6/NS7FX are limited to only a single effect at
 a time, and these knobs are designed to reflect that. By mapping this
 knob to effect chains, we will allow NS7/V7 owners to achieve a
 categorically more flexible effect setup.
+
+### Requirements
+
+  - A general EffectManifest interface which allows each effect to
+    express:
+  - The effect name (internationalizable)
+  - A description of the effect (internationalizable)
+  - The parameters each effect has, including:
+
+<!-- end list -->
+
+``` 
+    * An internal identifier 
+    * A human-readable name (internationalizable)
+    * A prose description, with support for internationalization, suitable for display in a tooltip. (internationalizable)
+    * Units and maximum/minimum/default values of the parameter
+* A preferred ordering of parameters in order of importance
+* Backend
+* Support for multiple backends (plugin based or not)
+* A reference implementation of a Mixxx-internal effects backend
+    * Support for at least a flanger
+* Effect Instances (known as "Effect")
+* Support the customization of parameter ranges to a subset of the EffectManifest's min/max ranges 
+* Support linking of individual parameters to the Effect Chain's meta-knob.
+* **TODO: Each effect shall have an individual wet/dry parameter?**
+* Effect Chains
+* Support chaining multiple Effects together into an Effect Chain.
+* **TODO: Each effect chain shall have a wet/dry parameter? Or an enabled button?**
+* Each effect chain will have one "Meta/Super/Wonder/Master/Action/Crazy/Funky-Knob" which individual parameters of effects in the chain can be linked to.
+* Must support loading and saving of effect-chains ("Presets")
+* Support applying effect chains to multiple different audio sources (samplers, decks, master out, headphone out)
+* Control (MIDI, etc) Interface
+* MIDI scripts must be able to control loaded effects parameters
+* MIDI scripts must be able to request that an effect be ejected or a next/previous effect be loaded. (support effect knobs on e.g. NS7)
+* MIDI scripts must be able to observe effect chains and make changes.
+* MIDI scripts must have a simple-mode by which they can treat parameters as 0.0 - 1.0 values so they do not have to deal with the complexity of min/max values, types, etc.
+* GUI Widgets
+* Per-deck single-effect widget. 
+    * Pick selected effect
+    * Shows up to 4 knobs to control that effect
+    * Wet/Dry knob
+* Multiple-effect chaining widget
+    * Pick 3 effects, 1 parameter knob for each effect
+    * Wet/Dry knob affects entire chain 
+* A library-sized view for allocating available effects to effect chains
+    * Support loading/saving effect presets
+```
 
 ### Effect Representation
 

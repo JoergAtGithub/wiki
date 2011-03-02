@@ -276,6 +276,15 @@ parameterK\_value controls will be ignored.
 
 ### User Interface
 
+Brainstorming for now. Basing heavily off of Jus's mockups from Summer
+2010: [Effects Units
+Mockup](https://picasaweb.google.com/lh/photo/jjgZU45-DQWMdz0CCwEVbw)
+[Effects Units Editor
+Mockup](https://picasaweb.google.com/lh/photo/Yt8-LgZjQx2HIyn7nJ2O5Q)
+
+Mockup of Effect-Chain Compact Interface. Only MetaKnobs are showing.
+[[/media/effects-chains-mockup.png|]]
+
 ## Controller Impact Assessment
 
 | Controller                                                                                                                                                              | Effects? | Settings                                                                                                                                                        | Fit?        |

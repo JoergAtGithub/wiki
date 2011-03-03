@@ -287,6 +287,16 @@ Mockup of Effect-Chain Compact Interface. Only MetaKnobs are showing.
 
 ## Controller Impact Assessment
 
+**TODO: Need to formalize what "Fit" means.** In general, a fit is good
+if it matches the paradigm of effect-chains being
+
+  - Selectable (usually with an FX select knob or button)
+  - Controllable via 1 single parameter (usually a knob)
+  - Allow selection of Decks that an effect-chain applies to either
+    directly in the effects section or in the mixer section.
+  - Optionally, enable via on/off button
+  - Optionally, a wet/dry effect mix knob
+
 | Controller                                                                                                                                                              | Effects? | Settings                                                                                                                                                                                                                                                            | Fit?           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | [American Audio VMS4](http://www.digitaldjtips.com/wp-content/uploads/2010/11/american-audio-vms4.jpg)                                                                  | Y        | Per-deck effect-select knob, effect parameter knob, effect enable button, parameter toggle button?                                                                                                                                                                  | Good           |

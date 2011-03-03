@@ -45,7 +45,10 @@ when activating live broadcasting.
 
 To activate MP3 streaming on Mac OSX, the following steps are necessary:
 
-1.  Download [LAME 3.98.4 binaries for OSX](http://bit.ly/eDfPCI)
+1.  Download [LAME 3.98.4 Intel (OS X 10.5+ 32-bit
+    & 64-bit)](http://www.mediafire.com/?7v9s8g0ip93s9dd) or
+    [LAME 3.98.4 PowerPC (OS
+    X 10.5 32-bit)](http://www.mediafire.com/?6ifaj2b7cwpf3ag) 
 2.  Unpack & install the archive
 
 Another easy way to achieve MP3 streaming is to use

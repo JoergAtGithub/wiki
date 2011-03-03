@@ -334,6 +334,51 @@ if it matches the paradigm of effect-chains being
 
 ## Work Breakdown
 
+1.  ~~Implement effect representation~~
+    1.  ~~EffectManifest and its properties~~
+        1.  ~~EffectManifestParameter and its properties~~
+    2.  ~~Effect~~ 
+2.  Implement backend framework classes
+    1.  ~~EffectsBackend Interface~~
+        1.  ~~Enumeration of EffectManifests~~
+        2.  ~~Instantiation of Effects~~
+    2.  Native Backend
+        1.  Add backend to EffectsManager
+        2.  Implement a bunch of cool effects\\
+3.  Implement control layer
+    1.  ~~EffectChain~~
+        1.  ~~Control Interface~~
+        2.  ~~EffectSlot lifecycle~~
+        3.  ~~Effect loading/unloading logic~~
+        4.  Parameter sync between controls and loaded effect
+        5.  Units tests for consistency of controls / state
+    2.  ~~EffectSlot~~
+        1.  ~~Control Interface~~
+        2.  ~~EffectSlotParameter lifecycle~~
+        3.  Parameter sync between controls and loaded effect
+        4.  Units tests for consistency of controls / state
+    3.  ~~EffectSlotParameter~~
+        1.  **TODO: Rename EffectParameterSlot to EffectSlotParameter** 
+        2.  ~~Control Interface~~
+        3.  ~~Effect loading/unloading logic~~
+        4.  Parameter sync between controls and loaded effect
+        5.  Units tests for consistency of controls / state
+4.  Implement overall effect management layer
+    1.  EffectsManager
+        1.  ~~Adding, management of lifecycle of EffectsBackends~~
+        2.  ~~Adding, management of lifecycle of EffectChains~~
+5.  GUI Widgets
+    1.  EffectChain widget
+        1.  Show selected EffectChain name
+        2.  Parameter Knob
+        3.  Channel Select buttons
+    2.  EffectChain Editor Library section
+        1.  See existing chain presets
+        2.  Create new preset
+        3.  Add effect to existing chain
+        4.  Change value of parameter of effect in slot
+        5.  Right-click hover overlay for tweaking ranges, defaults.
+
 ## Current Progress
 
 This feature has been attempted twice by two GSoC students. There is a

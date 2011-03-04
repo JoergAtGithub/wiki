@@ -118,15 +118,16 @@ categorically more flexible effect setup.
 * MIDI scripts must be able to observe effect chains and make changes.
 * MIDI scripts must have a simple-mode by which they can treat parameters as 0.0 - 1.0 values so they do not have to deal with the complexity of min/max values, types, etc.
 * GUI Widgets
-* Per-deck single-effect widget. 
-    * Pick selected effect
-    * Shows up to 4 knobs to control that effect
-    * Wet/Dry knob
-* Multiple-effect chaining widget
-    * Pick 3 effects, 1 parameter knob for each effect
-    * Wet/Dry knob affects entire chain 
-* A library-sized view for allocating available effects to effect chains
-    * Support loading/saving effect presets
+* EffectChain widget
+    * Show selected EffectChain name
+    * Parameter Knob
+    * Channel Select buttons
+* EffectChain Editor Library section
+    * See existing chain presets
+    * Create new preset
+    * Add/remove effect to existing chain
+    * Change value of parameter of effect in slot
+    * Right-click hover overlay for tweaking ranges, defaults.
 ```
 
 ### Effect Representation

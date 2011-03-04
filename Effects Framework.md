@@ -358,12 +358,11 @@ if it matches the paradigm of effect-chains being
         2.  ~~EffectSlotParameter lifecycle~~
         3.  Parameter sync between controls and loaded effect
         4.  Units tests for consistency of controls / state
-    3.  ~~EffectSlotParameter~~
-        1.  **TODO: Rename EffectParameterSlot to EffectSlotParameter** 
-        2.  ~~Control Interface~~
-        3.  ~~Effect loading/unloading logic~~
-        4.  Parameter sync between controls and loaded effect
-        5.  Units tests for consistency of controls / state
+    3.  ~~EffectSlotParameter~~ 
+        1.  ~~Control Interface~~
+        2.  ~~Effect loading/unloading logic~~
+        3.  Parameter sync between controls and loaded effect
+        4.  Units tests for consistency of controls / state
 4.  Implement overall effect management layer
     1.  EffectsManager
         1.  ~~Adding, management of lifecycle of EffectsBackends~~

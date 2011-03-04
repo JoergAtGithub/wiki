@@ -380,7 +380,7 @@ if it matches the paradigm of effect-chains being
     2.  EffectChain Editor Library section
         1.  See existing chain presets
         2.  Create new preset
-        3.  Add effect to existing chain
+        3.  Add/remove effect to existing chain
         4.  Change value of parameter of effect in slot
         5.  Right-click hover overlay for tweaking ranges, defaults.
 

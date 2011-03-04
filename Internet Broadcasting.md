@@ -21,7 +21,7 @@ more efficient and effective - you get a better sound than mp3 at a
 lower data rate - not all players can play Ogg streams, so as a result
 mp3 is probably a better choice unless you know your listeners can hear
 an Ogg stream successfully. You may need the LAME libraries to stream in
-mp3.
+mp3. See the next section for details.
 
 ## MP3 streaming
 

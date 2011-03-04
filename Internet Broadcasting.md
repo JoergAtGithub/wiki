@@ -9,6 +9,20 @@ dialogue.
 
 [[/media/shoutcast_prefs.png|]]
 
+For an Icecast server, you'll need to provide the mount point (of the
+form "/mount"). You can enter the host either as an IP address or as a
+host name. In the "login" field, the default is to enter "source" –
+without this, you will not connect successfully to the server. The
+password will be as provided by your streaming server provider, for
+example.
+
+An Icecast server can stream either mp3 or Ogg. However, although Ogg is
+more efficient and effective - you get a better sound than mp3 at a
+lower data rate - not all players can play Ogg streams, so as a result
+mp3 is probably a better choice unless you know your listeners can hear
+an Ogg stream successfully. You may need the LAME libraries to stream in
+mp3.
+
 ## MP3 streaming
 
 Dependent on the server technology you can stream in OGG and MP3 format.

@@ -22,6 +22,10 @@ Currently it does:
   - Rendering of the Beats on the Waveform
   - Saving Tracked beats (column in library table as a bitmap)
 
+Using the features to quantize cues, hotcues and loops is done by the
+branch features\_beatcontrols;
+<https://code.launchpad.net/~mixxxdevelopers/mixxx/features_beatcontrols>.
+
 ## Design
 
 ## Current Issues
@@ -30,5 +34,12 @@ Currently it does:
     latest changes.
   - Analysis takes 90%+ CPU and around 15 seconds for a typical
     Psytrance Song (not good for live performance).
-  - There is no fallback implementation to fill in TrackInfoBeats with
-    SoundTouch.
+
+## Notes
+
+  - We could easily avoid the CPU and time penalty for analysis by only
+    using aubio in the analysis section.
+  - Although the implementation so far deals with beat detection and
+    quantization aubio also does other forms of analysis.
+  - We could color waveforms on peaks (onset detection)
+  - We could color waveforms according to pitch (pitch detection)

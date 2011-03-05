@@ -346,6 +346,7 @@ if it matches the paradigm of effect-chains being
     2.  Native Backend
         1.  Add backend to EffectsManager
         2.  Implement a bunch of cool effects
+            1.  ~~Port Flanger from EngineFlanger to NativeBackend~~
 3.  Implement control layer
     1.  ~~EffectChain~~
         1.  ~~Control Interface~~
@@ -368,9 +369,11 @@ if it matches the paradigm of effect-chains being
         1.  ~~Adding, management of lifecycle of EffectsBackends~~
         2.  ~~Adding, management of lifecycle of EffectChains~~
 5.  Implement actual audio processing 
-    1.  Engine/EngineChannel requests effect-chains enabled for a given
+    1.  ~~EffectChain -\> EffectSlot processing~~
+    2.  ~~EffectSlot -\> Effect processing~~
+    3.  Engine/EngineChannel requests effect-chains enabled for a given
         channel as it processes them 
-    2.  Engine/EngineChannel applies appropriate effect chains to
+    4.  Engine/EngineChannel applies appropriate effect chains to
         buffers of audio that are enabled
 6.  GUI Widgets
     1.  EffectChain widget

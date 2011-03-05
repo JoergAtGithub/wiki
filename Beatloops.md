@@ -74,12 +74,3 @@ position instead of the current play position.
 ## Current Issues
 
 None that I know of (madjester).
-
-## Notes
-
-  - We could easily avoid the CPU and time penalty for analysis by only
-    using aubio in the analysis section.
-  - Although the implementation so far deals with beat detection and
-    quantization aubio also does other forms of analysis.
-  - We could color waveforms on peaks (onset detection)
-  - We could color waveforms according to pitch (pitch detection)

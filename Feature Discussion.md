@@ -13,6 +13,8 @@ page.
   - [DVS mode](DVS%20mode)
   - [Aubio (misnamed Beat
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
+  - [Beatloops](Beatloops) as well as quantization for setting loops,
+    cues and hotcues
   - [OSC Backend](OSC%20Backend)
   - [Effects Framework](Effects%20Framework)
 

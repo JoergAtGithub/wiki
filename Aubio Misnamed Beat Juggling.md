@@ -22,7 +22,7 @@ Currently it does:
   - Rendering of the Beats on the Waveform
   - Saving Tracked beats (column in library table as a bitmap)
 
-Using the features to quantize cues, hotcues and loops is done by the
+Using beat markers to quantize cues, hotcues and loops is done by the
 branch features\_beatcontrols;
 <https://code.launchpad.net/~mixxxdevelopers/mixxx/features_beatcontrols>.
 

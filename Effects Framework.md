@@ -386,20 +386,19 @@ if it matches the paradigm of effect-chains being
         parameter
     2.  Propagate changes in the EffectChain's parameter to
         EffectSlotParameters that are connected to it
-6.  Implement actual audio processing 
+6.  ~~Implement actual audio processing~~ 
     1.  ~~EffectChain -\> EffectSlot processing~~
     2.  ~~EffectSlot -\> Effect processing~~
-    3.  EffectChain processing for given channels can be enabled and
-        disabled
-    4.  Engine/EngineChannel requests effect-chains enabled for a given
-        channel as it processes them 
-    5.  Engine/EngineChannel applies appropriate effect chains to
-        buffers of audio that are enabled
+    3.  ~~EffectChain processing for given channels can be enabled and
+        disabled~~
+    4.  ~~Engine/EngineChannel requests effect-chains enabled for a
+        given channel as it processes them~~ 
+    5.  ~~Engine/EngineChannel applies appropriate effect chains to
+        buffers of audio that are enabled~~
 7.  GUI Widgets
-    1.  EffectChain widget
-        1.  Show selected EffectChain name
-        2.  Parameter Knob
-        3.  Channel Select buttons
+    1.  EffectChain name widget
+        1.  Shows the name of the EffectChain that is loaded into chain
+            X
     2.  EffectChain Editor Library section
         1.  See existing chain presets
         2.  Create new preset

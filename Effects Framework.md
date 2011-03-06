@@ -366,17 +366,30 @@ if it matches the paradigm of effect-chains being
         3.  Parameter sync between controls and loaded effect
         4.  Units tests for consistency of controls / state
 4.  Implement overall effect management layer
-    1.  EffectsManager
+    1.  ~~EffectsManager~~
         1.  ~~Adding, management of lifecycle of EffectsBackends~~
         2.  ~~Adding, management of lifecycle of EffectChains~~
-5.  Implement actual audio processing 
+        3.  ~~Check that EffectManifest/EffectManifestParameter,
+            Effect/EffectParameter,
+            EffectChain/EffectSlot/EffectSlotParameter all get deleted~~
+    2.  Preset Management
+        1.  Implement loading/saving of EffectChain presets
+        2.  Implement next/prev logic for EffectChains
+5.  Implement EffectChain parameter linking
+    1.  EffectSlotParameter's can be linked to the EffectChain's
+        parameter
+    2.  Propagate changes in the EffectChain's parameter to
+        EffectSlotParameters that are connected to it
+6.  Implement actual audio processing 
     1.  ~~EffectChain -\> EffectSlot processing~~
     2.  ~~EffectSlot -\> Effect processing~~
-    3.  Engine/EngineChannel requests effect-chains enabled for a given
+    3.  EffectChain processing for given channels can be enabled and
+        disabled
+    4.  Engine/EngineChannel requests effect-chains enabled for a given
         channel as it processes them 
-    4.  Engine/EngineChannel applies appropriate effect chains to
+    5.  Engine/EngineChannel applies appropriate effect chains to
         buffers of audio that are enabled
-6.  GUI Widgets
+7.  GUI Widgets
     1.  EffectChain widget
         1.  Show selected EffectChain name
         2.  Parameter Knob

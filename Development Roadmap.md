@@ -30,6 +30,18 @@ world-class application, somewhat in order of importance:
 
 ### 1.10
 
+  - More in-depth (and up-to-date) details on Launchpad:
+    <https://launchpad.net/mixxx/+milestone/1.10.0>
+  - Feature Freeze
+  - Code: April 8th, 2011
+  - Strings: April 20th, 2011
+  - GUI: April 20th, 2011
+  - Release Date
+  - Goal: May 8th, 2011 
+  - Actual: 
+
+#### Feature Targets
+
   - Vinyl Control rewrite
   - Library Improvements
   - Traktor/RB Feature Rewrites

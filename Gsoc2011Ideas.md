@@ -22,7 +22,7 @@ crossfade length. More advanced use cases could
   - Implement ability for AutoDJ crossfade interval to be adjusted 
   - Allow certain decks to be designated for Auto-DJ
 
-## Library Session History Feature
+## Session History Feature
 
 Many professional DJs must report the songs they play at gigs to an
 organization like ASCAP. Other DJs would simply benefit from the ability

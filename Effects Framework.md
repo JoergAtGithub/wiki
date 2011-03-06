@@ -348,22 +348,28 @@ if it matches the paradigm of effect-chains being
         1.  Add backend to EffectsManager
         2.  Implement a bunch of cool effects
             1.  ~~Port Flanger from EngineFlanger to NativeBackend~~
+            2.  Delay / Tape Echo
+            3.  Stutter
+            4.  Backspin
+            5.  HPF / LPF
+            6.  Bitcrusher
+            7.  Gater
 3.  Implement control layer
     1.  ~~EffectChain~~
         1.  ~~Control Interface~~
         2.  ~~EffectSlot lifecycle~~
         3.  ~~Effect loading/unloading logic~~
-        4.  Parameter sync between controls and loaded effect
+        4.  ~~Parameter sync between controls and loaded effect~~
         5.  Units tests for consistency of controls / state
     2.  ~~EffectSlot~~
         1.  ~~Control Interface~~
         2.  ~~EffectSlotParameter lifecycle~~
-        3.  Parameter sync between controls and loaded effect
+        3.  ~~Parameter sync between controls and loaded effect~~
         4.  Units tests for consistency of controls / state
     3.  ~~EffectSlotParameter~~ 
         1.  ~~Control Interface~~
         2.  ~~Effect loading/unloading logic~~
-        3.  Parameter sync between controls and loaded effect
+        3.  ~~Parameter sync between controls and loaded effect~~
         4.  Units tests for consistency of controls / state
 4.  Implement overall effect management layer
     1.  ~~EffectsManager~~

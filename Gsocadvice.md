@@ -1,7 +1,5 @@
 # Google Summer of Code Advice
 
-**Last updated: 3/6/2011**
-
 This page has some general advice for people thinking about applying for
 Summer of Code with Mixxx. If you wish to apply for the program then you
 will need to visit [the official Google Summer of Code

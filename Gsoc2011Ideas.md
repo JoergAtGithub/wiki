@@ -1,5 +1,48 @@
 # Student Project Ideas for Google Summer of Code 2011
 
+This page lists the suggested projects for students working on Mixxx as
+part of [Google Summer of Code 2011](http://socghop.appspot.com/). Each
+of these projects represents something that we think would make a really
+big difference to our users and that we as a development team are really
+excited about. For advice on how to get in touch and how to apply, you
+should read [gsocadvice](gsocadvice).
+
+## AutoDJ Improvements
+
+The Mixxx Auto DJ mode is very simplistic -- it mixes songs from the
+AutoDJ queue and crossfades them with a fixed overlap. This project aims
+to spruce up AutoDJ support to be much better. In particular, the
+fade-in and out points of songs should be configurable, as well as the
+crossfade length. More advanced use cases could
+
+### Deliverables
+
+  - Implement ability for track cue-points to be designated as "Fade In"
+    or "Fade Out" points.
+  - Implement ability for AutoDJ crossfade interval to be adjusted 
+  - Allow certain decks to be designated for Auto-DJ
+
+## Synchronization Improvements
+
+### Overview
+
+If you've used Mixxx, you know that our SYNC button does not work very
+well\! All it does is match up the BPMs of the tracks that are being
+mixed. There is tons of room for improvement here. The goal of this
+project is to allow two decks to be synchronized such that they actively
+check whether they are in sync with the other, and make adjustments to
+stay in sync. Additionally, the creation of a master sync clock for
+decks to sync to would be great as well, because then the DJ could set
+the master clock at e.g. 130 BPM and all the songs they load would
+automatically sync to the tick of that clock.
+
+### Deliverables
+
+  - Implement a master-clock in the Mixxx engine 
+  - Implement synchronization of decks to the master clock signals.
+  - Create GUI widgets to control the master clock and assign a deck to
+    synchronize to the master clock.
+
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 
 ### Overview

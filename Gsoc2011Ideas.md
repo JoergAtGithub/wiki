@@ -76,7 +76,7 @@ great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
 
-### Project Deliverables
+### Deliverables
 
   - Implement auto-selection of MIDI mappings based on connected MIDI
     devices.

@@ -225,10 +225,10 @@ EffectChain's ID.
 |  | \[EffectChainN\]          |  | metaknob                      |  | 0.0..1.0           |  | The EffectChain master control knob. Controls all parameters that are linked to the chain's metaknob. |  |
 |  | \[EffectChainN\]          |  | next\_chain                   |  | binary             |  | Cycle to the next EffectChain preset after the currently loaded preset.                               |  |
 |  | \[EffectChainN\]          |  | prev\_chain                   |  | binary             |  | Cycle to the previous EffectChain preset before the currently loaded preset.                          |  |
-|  | \[EffectChainN\]          |  | channel\_ChannelI             |  | binary             |  | Whether or not this EffectChain applies to Deck I                                                     |  |
-|  | \[EffectChainN\]          |  | channel\_SamplerJ             |  | binary             |  | Whether or not this EffectChain applies to Sampler J                                                  |  |
-|  | \[EffectChainN\]          |  | channel\_Master               |  | binary             |  | Whether or not this EffectChain applies to the Master output                                          |  |
-|  | \[EffectChainN\]          |  | channel\_Headphone            |  | binary             |  | Whether or not this EffectChain applies to the Headphone output                                       |  |
+|  | \[EffectChainN\]          |  | channel\_\[ChannelI\]         |  | binary             |  | Whether or not this EffectChain applies to Deck I                                                     |  |
+|  | \[EffectChainN\]          |  | channel\_\[SamplerJ\]         |  | binary             |  | Whether or not this EffectChain applies to Sampler J                                                  |  |
+|  | \[EffectChainN\]          |  | channel\_\[Master\]           |  | binary             |  | Whether or not this EffectChain applies to the Master output                                          |  |
+|  | \[EffectChainN\]          |  | channel\_\[Headphone\]        |  | binary             |  | Whether or not this EffectChain applies to the Headphone output                                       |  |
 |  | \[Group\]                 |  | Key/Control                   |  | Range              |  | What it does                                                                                          |  |
 |  | \[EffectChainN\_EffectM\] |  | enabled                       |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                                      |  |
 |  | \[EffectChainN\_EffectM\] |  | num\_parameters               |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded                    |  |

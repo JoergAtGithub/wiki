@@ -28,13 +28,47 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
+### 1.10
+
+  - Vinyl Control rewrite
+  - Library Improvements
+  - Traktor/RB Feature Rewrites
+  - Major Browse Improvements
+  - Crate/Playlist Locking
+  - Sampler Units
+  - Potentially without load/saving of presets
+  - Effects
+  - EffectChain infrastructure, simple UI improvements
+  - External Audio Passthrough
+  - CoreAudio in Mixxx proper (instead of just AppStore)
+  - Looping
+  - Quantized Looping
+  - Beat Loops
+  - Other Stuff\!
+  - Multiple Soundcard Synchronization improvements
+  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
+  - Library Version Bumps
+  - SoundTouch -\> 1.5.0
+  - xwax -\> 0.8
+
+### Probably Longer Term
+
+To add to the list of ideas that would be cool in Mixxx, add them to
+[feature\_discussion](feature_discussion) or file a Wishlist bug at
+Launchpad.
+
+  - [Skinning Engine](Skinning%20Engine)
+  - [Revamped Control System](Revamped%20Control%20System)
+
+## Historical Release Roadmaps
+
+*Released February 19th, 2011*
+
 ### 1.9
 
 More in-depth details on Launchpad:
-<https://launchpad.net/mixxx/+milestone/1.9.0> Release Date:
-Late-2010/Early-2011
-
-Plan as of November 8th, 2010:
+<https://launchpad.net/mixxx/+milestone/1.9.0> Release Date: Goal:
+December 25, 2010 Actual: February 19, 2011
 
   - Shoutcast/Icecast
   - SampleUtil / Hydra (optimizations)
@@ -56,30 +90,9 @@ Plan as of November 8th, 2010:
 Side projects:
 
   - ~~SConscript Refactor~~
-  - Build server - You can help by
-    [donating](http://www.pledgie.com/campaigns/13624)\!
+  - ~~Build server - You can help by
+    [donating](http://www.pledgie.com/campaigns/13624)\!~~
   - ~~Reading with Taglib~~
-
-### 1.10
-
-Tentatively:
-
-  - Vinyl Control rewrite
-  - Sampler Units
-  - External Audio Passthrough
-
-### Probably Longer Term
-
-To add to the list of ideas that would be cool in Mixxx, add them to
-[feature\_discussion](feature_discussion) or file a Wishlist bug at
-Launchpad.
-
-  - Sampler, Effects
-  - [Skinning Engine](Skinning%20Engine)
-  - [Revamped Control System](Revamped%20Control%20System)
-  - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
-
-## Historical Release Roadmaps
 
 *Released October 5th, 2010*
 

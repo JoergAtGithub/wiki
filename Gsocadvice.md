@@ -18,8 +18,8 @@ following:
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
-  - Projects from our past GSoC ideas pages -- [GSoC
-    2010](gsoc2010ideas) [GSoC 2008](gsoc2008ideas)
+  - Projects from our past GSoC ideas pages: 
+  - [GSoC 2010](gsoc2010ideas) 
 
 ## How Do I Contact Mixxx?
 

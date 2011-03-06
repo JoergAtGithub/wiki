@@ -43,8 +43,6 @@ played with Mixxx, grouped by "sessions" or times that Mixxx was run.
 
 ## Synchronization Improvements
 
-### Overview
-
 If you've used Mixxx, you know that our SYNC button does not work very
 well\! All it does is match up the BPMs of the tracks that are being
 mixed. There is tons of room for improvement here. The goal of this

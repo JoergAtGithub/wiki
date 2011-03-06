@@ -64,7 +64,7 @@ Launchpad.
 
 *Released February 19th, 2011*
 
-### 1.9
+### 1.9.0
 
 More in-depth details on Launchpad:
 <https://launchpad.net/mixxx/+milestone/1.9.0> Release Date: Goal:

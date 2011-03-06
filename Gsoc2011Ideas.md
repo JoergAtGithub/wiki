@@ -41,6 +41,41 @@ played with Mixxx, grouped by "sessions" or times that Mixxx was run.
     loaded, unloaded and "hearable" to the Session manager, which
     records the information in the database.
 
+## Advanced Library Search
+
+The Mixxx library search feature is fairly basic. It only searches for
+terms within the title, album, artist, genre tags. Furthermore, it is
+pretty slow because it is implemented as a SQLite LIKE comparison with
+every field it intends to search. We would like to drastically improve
+this by switching to a Full-Text-Search model such as that provided by
+Apache Lucene. The general idea behind Full-Text-Search is that the
+search is highly optimized by creating a search table in which a variety
+of search terms are precomputed, and linked to documents they refer to.
+Beyond this, we would like to make library search box support advanced
+operators like searching on Google.
+
+Here are some examples of queries we would like to support:
+
+  - artist:"Com Truise" Space Dust
+  - Results in only songs by Com Truise with the terms space or dust in
+    title/artist/album/genre/etc.
+  - \-GaGa Lady 
+  - Results in e.g. Ladytron, but no Lady GaGa
+  - "Right Here" bpm:\>140
+  - Results in tracks with the name "Right Here" and a BPM greater than
+    140
+
+### Deliverables
+
+  - Implement Full-Text-Search
+  - Support FTS indexing of album, artist, title, genre, BPM, comment,
+    key, etc.
+  - Implement operators for library search
+  - Design a [Backus-Naur
+    Form](http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form) grammar
+    for the operator language.
+  - Implement support for artist, album, genre, and BPM selectors.
+
 ## Synchronization Improvements
 
 If you've used Mixxx, you know that our SYNC button does not work very

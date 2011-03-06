@@ -48,11 +48,10 @@ terms within the title, album, artist, genre tags. Furthermore, it is
 pretty slow because it is implemented as a SQLite LIKE comparison with
 every field it intends to search. We would like to drastically improve
 this by switching to a Full-Text-Search model such as that provided by
-Apache Lucene. The general idea behind Full-Text-Search is that the
-search is highly optimized by creating a search table in which a variety
-of search terms are precomputed, and linked to documents they refer to.
-Beyond this, we would like to make library search box support advanced
-operators like searching on Google.
+Apache Lucene. For more information, see Wikipedia: [Full Text
+Search](http://en.wikipedia.org/wiki/Full_text_search). Beyond this, we
+would like to make library search box support advanced operators like
+searching on Google.
 
 Here are some examples of queries we would like to support:
 

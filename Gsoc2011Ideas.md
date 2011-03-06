@@ -89,8 +89,6 @@ controller from the development team for the duration of the project.
 
 ## Something Else\!
 
-### Overview
-
 As always with Summer of Code, you aren't limited to the suggestions
 we've made here. If you've got a great idea for a project involving
 Mixxx then we're looking forward to hearing about it.

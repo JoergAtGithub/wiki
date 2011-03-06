@@ -62,8 +62,6 @@ automatically sync to the tick of that clock.
 
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 
-### Overview
-
 Mixxx currently supports a wide-range of hardware MIDI controllers that
 DJs can use to perform with. Each supported MIDI controller has a
 "mapping" file that is bundled with Mixxx, but this mapping must be

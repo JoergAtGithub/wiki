@@ -10,7 +10,7 @@ exception to this is the [development\_roadmap](development_roadmap)
 which is a fairly authoritative description of the development team's
 plans.
 
-\*\*Mixxx is participating in Google Summer of Code 2010: \*\* See
+\*\*Mixxx is applying to Google Summer of Code 2011: \*\* See
 [below](start#google_summer_of_code) for more info.
 
 ## User Documentation
@@ -124,10 +124,19 @@ plans.
 
 ## Google Summer of Code
 
-GSoC 2010: Mixxx is happy to announce that we are taking part in GSoC
-2010, the student application period opens shortly
+### GSoC 2011
 
-  - See the list of projects on offer on our ideas page:
+Mixxx is applying to Google Summer of Code, 2011.
+
+  - See the list of suggested projects: [gsoc2011ideas](gsoc2011ideas)
+  - Advice for students thinking of applying:
+    [gsoc2011advice](gsoc2011advice)
+
+### GSoC 2010
+
+Mixxx participated in GSoC 2010.
+
+  - See the list of projects we proposed in 2010:
     [gsoc2010ideas](gsoc2010ideas)
   - Some advice for students thinking of applying:
     [gsoc2010advice](gsoc2010advice)
@@ -138,8 +147,12 @@ The following projects were accepted for Google Summer of Code 2010:
   - [Sampler](gsoc2010/sampler) by Ryan Baker
   - [DVS Mode](gsoc2010/dvs_mode) by Bill Good
 
-GSoC 2009: Due to a lack of core developer time Mixxx did not
-participate in GSoC 2009.
+### GSoC 2009
+
+Due to a lack of core developer time Mixxx did not participate in GSoC
+2009.
+
+### GSoC 2008
 
 The following projects were accepted for Google Summer of Code 2008:
 

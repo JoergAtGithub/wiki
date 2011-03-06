@@ -37,7 +37,7 @@ world-class application, somewhat in order of importance:
   - Crate/Playlist Locking
   - Sampler Units
   - Potentially without load/saving of presets
-  - Effects
+  - [Effects](effects_framework)
   - EffectChain infrastructure, simple UI improvements
   - External Audio Passthrough
   - CoreAudio in Mixxx proper (instead of just AppStore)

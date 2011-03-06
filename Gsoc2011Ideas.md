@@ -98,4 +98,4 @@ if you're going to submit a proposal for your own project idea\!**
 
 ### Deliverables
 
-  - Something awesome
+  - Something awesome. We will work with you to define the deliverables.

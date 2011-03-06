@@ -22,6 +22,25 @@ crossfade length. More advanced use cases could
   - Implement ability for AutoDJ crossfade interval to be adjusted 
   - Allow certain decks to be designated for Auto-DJ
 
+## Library Session/History Feature
+
+Many professional DJs must report the songs they play at gigs to an
+organization like ASCAP. Other DJs would simply benefit from the ability
+to look at their past DJ and see a history of the songs they played.
+This project aims to bring a Sessions or History feature to the Mixxx
+library. This feature would show a running history of every song the DJ
+played with Mixxx, grouped by "sessions" or times that Mixxx was run.
+
+### Deliverables
+
+  - Implement a new Library feature (section in the library) for
+    displaying session history.
+  - Implement a new table in the Mixxx database for storing DJ session
+    history.
+  - Update the Mixxx engine to send feedback about when tracks are
+    loaded, unloaded and "hearable" to the Session manager, which
+    records the information in the database.
+
 ## Synchronization Improvements
 
 ### Overview

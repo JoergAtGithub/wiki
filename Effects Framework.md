@@ -233,6 +233,7 @@ EffectChain's ID.
 |  | \[EffectChainN\_EffectM\]             |  | enabled                |  | binary, read-only  |  | Whether an Effect is loaded into this EffectSlot                                                      |  |
 |  | \[EffectChainN\_EffectM\]             |  | num\_parameters        |  | integer, read-only |  | The number of parameters the currently loaded effect has. 0 if no effect is loaded                    |  |
 |  | \[EffectChainN\_EffectM\_ParameterK\] |  | enabled                |  | binary, read-only  |  | Whether or not the Kth parameter is enabled.                                                          |  |
+|  | \[EffectChainN\_EffectM\_ParameterK\] |  | linked                 |  | binary             |  | Whether or not the Kth parameter is linked to the EffectChain superknob.                              |  |
 |  | \[EffectChainN\_EffectM\_ParameterK\] |  | value\_type            |  | integer, read-only |  | The type of the Kth parameter value. See the Parameter Value Types table.                             |  |
 |  | \[EffectChainN\_EffectM\_ParameterK\] |  | value\_min             |  | double             |  | The minimum configured value of the Kth parameter.                                                    |  |
 |  | \[EffectChainN\_EffectM\_ParameterK\] |  | value\_max             |  | double             |  | The maximum configured value of the Kth parameter.                                                    |  |

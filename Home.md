@@ -136,8 +136,8 @@ Mixxx is applying to Google Summer of Code, 2011.
 
 Mixxx participated in GSoC 2010.
 
-  - See the list of projects we proposed in 2010:
-    [gsoc2010ideas](gsoc2010ideas)
+  - See the list of projects we proposed in 2010: [GSoC 2010
+    Ideas](gsoc2010ideas)
 
 The following projects were accepted for Google Summer of Code 2010:
 

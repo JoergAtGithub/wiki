@@ -66,9 +66,19 @@ Launchpad.
 
 ### 1.9.0
 
-More in-depth details on Launchpad:
-<https://launchpad.net/mixxx/+milestone/1.9.0> Release Date: Goal:
-December 25, 2010 Actual: February 19, 2011
+  - More in-depth details on Launchpad:
+    <https://launchpad.net/mixxx/+milestone/1.9.0>
+  - Feature Freeze
+  - Code: Nov 14th 2010
+  - Strings: Nov 24th, 2010
+  - GUI: Nov 30th, 2010
+  - Release Date
+  - [Beta1](http://mixxxblog.blogspot.com/2010/12/mixxx-190-beta1-and-182-released.html):
+    Dec 5, 2010
+  - Goal: December 25, 2010 
+  - Actual: February 19, 2011
+
+<!-- end list -->
 
   - Shoutcast/Icecast
   - SampleUtil / Hydra (optimizations)
@@ -80,12 +90,6 @@ December 25, 2010 Actual: February 19, 2011
   - Fixes for iTunes/Rhythmbox slowness
   - Ratings widget, played column
   - Deprecated Qt3 code removal
-  - Feature freeze: November 14th
-  - Strings freeze: November 24th
-  - GUI freeze: November 30th
-  - Beta1 Released: Dec 5th -
-    <http://mixxxblog.blogspot.com/2010/12/mixxx-190-beta1-and-182-released.html>
-  - Release: \~End of 2010
 
 Side projects:
 

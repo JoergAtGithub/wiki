@@ -180,8 +180,6 @@ Effect interface used by the plugin-based backends.
 Given an Effect instance, a buffer of audio can be processed given the
 parameter settings in the instance.
 
-**TODO: Should Effect be renamed EffectInstance?**
-
 ### Engine/Effect Interface
 
 The EffectsManager uses the EffectsBackends to instantiate Effects from

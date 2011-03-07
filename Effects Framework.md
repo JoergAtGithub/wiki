@@ -219,7 +219,7 @@ EffectChain's ID.
 
 |  | \[Group\]                             |  | Key/Control            |  | Range              |  | What it does                                                                                          |  |
 |  | ------------------------------------- |  | ---------------------- |  | ------------------ |  | ----------------------------------------------------------------------------------------------------- |  |
-|  | \[EffectChainN\]                      |  | num\_effectslots       |  | integer, read-only |  | The number of EffectSlots that this EffectChain has                                                   |  |
+|  | \[EffectChainN\]                      |  | num\_effects           |  | integer, read-only |  | The number of Effects that this EffectChain has                                                       |  |
 |  | \[EffectChainN\]                      |  | mix                    |  | 0.0..1.0           |  | The dry/wet mixing ratio for this EffectChain with the EngineChannels it is mixed with                |  |
 |  | \[EffectChainN\]                      |  | enabled                |  | binary             |  | Whether the EffectChain is enabled                                                                    |  |
 |  | \[EffectChainN\]                      |  | metaknob               |  | 0.0..1.0           |  | The EffectChain master control knob. Controls all parameters that are linked to the chain's metaknob. |  |

@@ -191,14 +191,18 @@ ControlObject interface for controlling the parameters of an Effect. To
 a user, an EffectSlot is the equivalent of a "selected" effect. Knobs in
 the GUI and MIDI controllers connect to the EffectSlot's controls, which
 in turn are used to control the Effect that is loaded into the slot.
+Similarly, an EffectChainSlot is an abstraction over an EffectChain. It
+provides a ControlObject interface to controlling an EffectChain that is
+loaded into it. To a user, an EffectChainSlot is an "effect unit" which
+is a chain of EffectSlots.
 
-One or more EffectSlots are grouped into EffectChains. The EngineMaster
-and EngineChannels interact with the effects framework at the level of
-EffectChains. Every EffectChain is conditionally applied to multiple
-EngineChannel's (e.g. \[Channel1\], \[Channel2\], \[Sampler1\], etc). In
-addition to EngineChannels, EffectChains are conditionally applied to
-both the EngineMaster master output (\[Master\]) and the headphone
-output (\[Headphone\]).
+One or more EffectSlots are grouped into an EffectChainSlot. The
+EngineMaster and EngineChannels interact with the effects framework at
+the level of EffectChains. Every EffectChain is conditionally applied to
+multiple EngineChannel's (e.g. \[Channel1\], \[Channel2\], \[Sampler1\],
+etc). In addition to EngineChannels, EffectChains are conditionally
+applied to both the EngineMaster master output (\[Master\]) and the
+headphone output (\[Headphone\]).
 
 ### Controls
 

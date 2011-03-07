@@ -27,6 +27,10 @@ mp3 is probably a better choice unless you know your listeners can hear
 an Ogg stream successfully. You may need the LAME libraries to stream in
 mp3. See the next section for details.
 
+By default, Mixxx broadcasts artist and title information to your
+listeners. You can disable this feature by selecting "enable custom
+metadata".
+
 ## MP3 streaming
 
 Dependent on the server technology you can stream in OGG and MP3 format.

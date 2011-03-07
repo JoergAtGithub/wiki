@@ -397,9 +397,9 @@ if it matches the paradigm of effect-chains being
     5.  ~~Engine/EngineChannel applies appropriate effect chains to
         buffers of audio that are enabled~~
 7.  GUI Widgets
-    1.  EffectChain name widget
-        1.  Shows the name of the EffectChain that is loaded into chain
-            X
+    1.  ~~EffectChain name widget~~
+        1.  ~~Shows the name of the EffectChain that is loaded into
+            EffectChainSlot X~~
     2.  EffectChain Editor Library section
         1.  See existing chain presets
         2.  Create new preset

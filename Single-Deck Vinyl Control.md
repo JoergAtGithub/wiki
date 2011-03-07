@@ -2,8 +2,8 @@
 
 ## Summary and Rationale
 
-**Status**: This specification is **in drafting**. Feel free to add
-ideas to this page.
+**Status**: This feature is implemented in
+lp:\~ywwg/mixxx/features\_xwax2.
 
 Allow both players to be controlled via a single turntable with vinyl
 control. At least one commercial DJ application offers this feature, and
@@ -153,4 +153,4 @@ below:
   - Josh Matthews
   - Luis de Bethencourt
   - Owen Williams (is actively working on this issue in his tree:
-    lp:\~ywwg/mixxx/features\_xwax)
+    lp:\~ywwg/mixxx/features\_xwax2)

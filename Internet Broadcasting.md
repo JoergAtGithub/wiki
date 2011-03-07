@@ -13,8 +13,12 @@ For an Icecast server, you'll need to provide the mount point (of the
 form "/mount"). You can enter the host either as an IP address or as a
 host name. In the "login" field, the default is to enter "source" –
 without this, you will not connect successfully to the server. The
-password will be as provided by your streaming server provider, for
-example.
+password will be provided by your streaming server provider, unless you
+run your own radio server.
+
+If you connect to an Shoutcast server the default login name is "admin".
+It is **not** necessary to specify a mount point. The password will be
+provided by your streaming server provider.
 
 An Icecast server can stream either mp3 or Ogg. However, although Ogg is
 more efficient and effective - you get a better sound than mp3 at a

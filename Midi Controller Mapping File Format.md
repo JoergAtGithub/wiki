@@ -80,9 +80,58 @@ do any hacking.*
 If you don't have the MIDI spec for your controller, first check the
 manufacturer's web site under Support. Look for Manuals or User Guides.
 MIDI specs are usually given in an appendix at the back of the manual.
-Failing that, you can usually sniff the MIDI data the controller sends.
+Failing that, you can usually sniff the MIDI data the controller sends
+with the following procedure:
 
-#### Linux
+1.  Start Mixxx (1.8.0 and later) from a command prompt using the
+    `--midiDebug` option like so: 
+
+<!-- end list -->
+
+  - Linux: `user@machine:~$ mixxx --midiDebug`
+  - Windows: (v1.7.0 and later) `C:\Program Files\Mixxx>mixxx
+    --midiDebug`
+  - Mac OSX: `$ mixxx --midiDebug`
+
+<!-- end list -->
+
+1.  Look at the output
+
+<!-- end list -->
+
+  - Watch the console output or look at the
+    [Mixxx.log](troubleshooting#where_is_the_mixxxlog_file) file which
+    will contain all of the MIDI messages Mixxx receives. As you
+    manipulate the controller, the MIDI commands it sends will be
+    printed to the screen/logged to the file. Compare the status (first)
+    byte in each line with the table above and note which
+    button/slider/control sends what message.
+  - For example, when you move a slider, you might see`Debug: [...]:
+    "MIDI ch 1: opcode: B0, ctrl: 2, val: 3D" 
+    Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3A" 
+    Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3D" 
+    Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3B" 
+    Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3C" 
+    `In this instance, it's sending 0xB0 (which when we look at the
+    [table above](#midi-crash-course), we see that it's a Control Change
+    message on channel 1) We also see that the second byte, 0x02 in this
+    case, is the control number that was moved, and the third is the
+    value or position of that control, which you can ignore for the
+    purposes of mapping. 
+
+<!-- end list -->
+
+1.  Add the byte values to a `<control>` block in the XML file
+
+<!-- end list -->
+
+  - Just plug the first two bytes into a `<control>` XML block for
+    `<status>` and `<midino>` respectively. This is detailed in the next
+    section.
+
+#### Additional tools
+
+##### Linux
 
 Open a console and issue `amidi -l`. This will list the attached MIDI
 device(s) like so:
@@ -91,24 +140,27 @@ device(s) like so:
     IO  hw:1,0,0  SCS.3d MIDI 1
 
 Then, to dump the data, you just issue `amidi -p hw:1,0,0 -d` (Replace
-hw:1,0,0 with whatever device ID your controller shows in the list.) See
-"All" below for how to interpret this data.
+hw:1,0,0 with whatever device ID your controller shows in the list.)
+You'll get output like this:
 
-#### Windows & All OSs using Mixxx \>=1.8.0
+    B0 02 3D
+    B0 02 3A
+    B0 02 3D
+    B0 02 3B
+    B0 02 3C
 
-Start Mixxx from a command prompt using the `--midiDebug` option like
-so: `C:\Program Files\Mixxx>mixxx --midiDebug` Then look at the
-Mixxx.log file which will contain all of the MIDI messages Mixxx
-receives.
+See above for how to interpret this data.
 
-On Windows, you can download
-[tail.exe](http://tailforwin32.sourceforge.net/) to watch it as new
-messages are added or [build Mixxx](Compiling%20on%20Windows) with
-`scons msvcdebug=1` and run it with the `--midiDebug` option. This will
-cause it to pop up a console window when you run it and the MIDI
-messages received by your controller will be displayed there.
+##### Windows
 
-#### Mac OSX
+You can download [tail.exe](http://tailforwin32.sourceforge.net/) to
+watch mixxx.log as new messages are added or [build
+Mixxx](Compiling%20on%20Windows) with `scons msvcdebug=1` and run it
+with the `--midiDebug` option. This will cause it to pop up a console
+window when you run it and the MIDI messages received by your controller
+will be displayed there.
+
+##### Mac OSX
 
 Download the free [MIDI Monitor](http://www.snoize.com/MIDIMonitor/)
 utility and run it. MIDI Monitor is a utility for Mac OS X which
@@ -120,37 +172,6 @@ Download the free
 [MIDISimulator](http://www.macupdate.com/info.php/id/35645/midisimulator/)
 utility and run it. MidiSimulator is a tool to test midi devices like
 pianos or dj controllers. It allows you to receive and send midi events.
-
-#### All
-
-Then as you press buttons or move sliders, the MIDI commands the
-controller sends will be printed to the screen. Compare the status
-(first) byte in each line with the table above and then just write down
-which button/slider/control sends what command.
-
-For example, when you move a slider, you might see
-
-| Linux & Mac                                     | Windows                                                                                                                                                                                                                                            |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `B0 02 3D
-B0 02 3A
-B0 02 3D
-B0 02 3B
-B0 02 3C
-` | `Debug: []: "MIDI status: B0, ctrl: 2, val: 3D" 
-Debug: []: "MIDI status: B0, ctrl: 2, val: 3A" 
-Debug: []: "MIDI status: B0, ctrl: 2, val: 3D" 
-Debug: []: "MIDI status: B0, ctrl: 2, val: 3B" 
-Debug: []: "MIDI status: B0, ctrl: 2, val: 3C" 
-` |
-
-In this instance, it's sending 0xB0, which when we look at the [table
-above](#midi-crash-course), we see that it's a Control Change message on
-channel 1. We also see that the second byte, 0x02 in this case, is the
-control number, and the third is the value, which you can ignore for the
-purposes of mapping. You would then just plug the first two bytes into a
-\<control\> XML block (detailed below) for \<status\> and \<midino\>
-respectively.
 
 ## File Format
 

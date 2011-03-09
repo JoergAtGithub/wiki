@@ -104,6 +104,13 @@ responsiveness. Here are some tips to help you do that.*
     - try [[http://homepage.mac.com/northernSW/renicer.html|Renicer]] which automatically ''renice''s the topmost application. I can't personally vouch for this. It is ~$10. -[[|wxl]]
 ```
 
+## What do I enter for the user name in Live Broadcasting?
+
+  - For an Icecast2 server, the user name is 'source' by default
+    (without the quotes.)
+  - For a Shoutcast server, the user name is 'admin' by default (without
+    the quotes.)
+
 ## The BPM detection is wrong
 
 We've updated the library Mixxx uses for BPM detection in 1.7 which

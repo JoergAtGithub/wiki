@@ -106,10 +106,8 @@ responsiveness. Here are some tips to help you do that.*
 
 ## What do I enter for the user name in Live Broadcasting?
 
-  - For an Icecast2 server, the user name is 'source' by default
-    (without the quotes.)
-  - For a Shoutcast server, the user name is 'admin' by default (without
-    the quotes.)
+  - For an Icecast2 server, the user name is **source** by default.
+  - For a Shoutcast server, the user name is **admin** by default.
 
 ## The BPM detection is wrong
 

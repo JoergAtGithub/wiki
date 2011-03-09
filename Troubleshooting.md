@@ -232,6 +232,15 @@ before going any further. 90% of the time it will fix your problem. You
 might also try getting the latest driver from nVidia's web site instead
 of your PC/card manufacturer since they may be newer.
 
+## Where is the mixxx.log file?
+
+  - Linux: 
+  - Windows: (enter the following into the Location bar of an
+    Explorer/My Computer window, or at the command prompt)
+  - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx`
+  - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
+  - OSX: 
+
 ## Mixxxcelaneous Known Issues
 
   - Mobile Intel 4 Series chipset with I945/965 graphics driver

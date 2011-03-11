@@ -1,19 +1,42 @@
 # Skin Colour Scheme Architecture
 
-## Outline
+## Overview
 
-The main purpose of the filtering architecture is to allow for creation
-of different colour schemes for skins. Since creating a new theme from
-scratch is a lot of work and involves editing a lot of images, it's not
-really very practical to do it just to create a different coloured
-version of a skin.
+Creating a new skin from scratch is a lot of work and involves editing a
+lot of images, it's not really very practical to do it just to create a
+different coloured version of a skin. You can easily create different
+coloured version of a skin by making use of the the color filtering
+architecture in Mixxx.
 
-The filtering architecture is implemented as a chain of plugins which
-are queried by the user interface code as the skin is initialised. The
-filter chain is configured by a series of elements in the skin's
-skin.xml file.
+## Color Scheme Demo
+
+Mixxx comes pre-loaded with several skins. In Mixxx 1.9 the only ones
+with build-in color schemes are the **Outline** skins.
+
+How to change a skin and the skins color scheme in Mixxx
+
+  - Go to the *Interface* tab in the preferences dialog
+  - Select one of the *Outline* skins like in the picture below 
+  - Select a scheme from the drop down and click ok.
+
+If you select a skin that does not support color schemes, the *Scheme*
+drop-down menu is grayed out.
+
+[[/media/skinning/color_scheme/mixxx-1.9-color-scheme-preferences.png|]]
+
+**Default Color Scheme (Dark Mixxx) for Outline skins**  
+[[/media/skinning/color_scheme/mixxx-1.9-color-scheme1.png|]]  
+**Alternative Color Scheme (Still Awake Mixxx) for Outline skins**  
+[[/media/skinning/color_scheme/mixxx-1.9-color-scheme2-1.png|]]  
+**Alternative Color Scheme (Classic Mixxx) for Outline skins**  
+[[/media/skinning/color_scheme/mixxx-1.9-color-scheme3.png|]]
 
 ## Technical Stuff
+
+The color filtering architecture is implemented as a chain of plugins
+which are queried by the user interface code as the skin is initialised.
+The filter chain is configured by a series of elements in the skin's
+[skin.xml](creating_skins#skinxml_in-depth_reviews) file.
 
 So the core of the structure is laid out in imgsource.h. Most filters
 will be implemented as an ImgColorProcessor. Some examples are in
@@ -28,30 +51,32 @@ the filter is applied to individual pixmaps as they're loaded, not to
 the skin as a whole. So for example a blur filter wouldn't blur the
 edges of a control outside the rectangle of the pixmap.
 
-## Current Scheme Demo
+### Filters
 
-The only skin with schemes currently is **Outline** & derivates
-(outlineNetbook, outlineClose, outlineMini, outlineSmall). You can test
-it out by going to the *Interface* tab of the preferences dialog and
-changing the scheme to something other than the default.
+The filters have only been implemented as a quick test so far. At the
+moment we have (with their arguments):
 
-[[/media/skinning/outlinenetbook_scheme_preferences.png|]]
+  - Invert - Inverts image
+  - HueInv - Sets hue to that of inverse. For example inverse followed
+    by hueinv is equivalent to a hue invariant inverse.
+  - Add - Adds a constant value to all colour components (clipped to
+    [0-255](0-255))
+  - Amount - Value to add (int)
+  - ScaleWhite - Scales low saturation (\<50) colours by a factor
+  - Amount - Factor to multiply by (float)
+  - HSVTweak - Manipulate the Hue Saturation Value (HSV values),
+    probably the most useful one
+  - HMin - Minimum hue to modify
+  - HMax - Maximum hue to modify
+  - SMin, SMax, VMin, VMax - As above but for saturation and brightness
+  - HFact, SFact, VFact - Factor to scale values by
+  - HConst, SConst, VConst - Constant to add to values
 
-**Default Color Scheme (Dark Mixxx) for Outline skin**  
-[[/media/skinning/outlinenetbook_darkmixxx.png|]]
+You can experiment in your [Image editor](creating_skins#tools) to get
+the "right" values for the filters or try the [Color Scheme
+Designer](http://colorschemedesigner.com/) online.
 
-You should see the colours of the user interface change, for example as
-in the scheme shown below.  
-**Alternative Color Scheme (Summer Mixxx) for Outline skin**  
-[[/media/skinning/outlinenetbook_summermixxx.png|]]
-
-This is what the Outline skin looks like with no (a blank) scheme
-applied.
-
-**No (a blank) Color Scheme applied (Classic Mixxx) for Outline skin**  
-[[/media/skinning/outlinenetbook_classicmixxx.png|]]
-
-## Scheme Format
+### Scheme Format
 
 To implement schemes in a skin there needs to be a color scheme section
 added to the skin.xml. See [Creating
@@ -86,14 +111,14 @@ Closing tag for scheme #1
 optional: add even more schemes 
 General color scheme closing tag` |
 
-## Scheme in-depth
+### Scheme in-depth
 
 In this section all elements and the values of their keys are explained
 on the example of **Outline**\`s skin.xml. So open up the skin.xml with
 your favorite [text editor](creating_skins#tools) and get started
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Schemes>
     <Scheme>
     <Name>11pm (Dark Mixxx)</Name>
@@ -161,7 +186,7 @@ Hue Invert Filter, sets hue to that of the inverted images
 
 
 
-Look below at the "Filters" section for the specific filters and their arguments
+Look at the "Filters" section for the specific filters and their arguments
 
 
 
@@ -183,7 +208,7 @@ Opening tag for the schemes filters
 
 
 
-Look below at the "Filters" section for the specific filters and their arguments
+Look at the "Filters" section for the specific filters and their arguments
 
 
 
@@ -200,7 +225,7 @@ Invert filter, inverts the skins original images
 
 
 
-Look below at the "Filters" section for the specific filters and their arguments
+Look at the "Filters" section for the specific filters and their arguments
 
 
 
@@ -209,28 +234,3 @@ Closing tag for the schemes filters
 Closing tag for scheme #4
 General color scheme closing tag
 ` |
-
-## Filters
-
-The filters have only been implemented as a quick test so far. At the
-moment we have (with their arguments):
-
-  - Invert - Inverts image
-  - HueInv - Sets hue to that of inverse. For example inverse followed
-    by hueinv is equivalent to a hue invariant inverse.
-  - Add - Adds a constant value to all colour components (clipped to
-    [0-255](0-255))
-  - Amount - Value to add (int)
-  - ScaleWhite - Scales low saturation (\<50) colours by a factor
-  - Amount - Factor to multiply by (float)
-  - HSVTweak - Manipulate the Hue Saturation Value (HSV values),
-    probably the most useful one
-  - HMin - Minimum hue to modify
-  - HMax - Maximum hue to modify
-  - SMin, SMax, VMin, VMax - As above but for saturation and brightness
-  - HFact, SFact, VFact - Factor to scale values by
-  - HConst, SConst, VConst - Constant to add to values
-
-You can experiment in your [Image editor](creating_skins#tools) to get
-the "right" values for the filters or try the [Color Scheme
-Designer](http://colorschemedesigner.com/) online.

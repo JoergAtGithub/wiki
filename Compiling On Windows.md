@@ -67,8 +67,8 @@ referred to as MSVC in discussions.
     1.  Start the command prompt and change into the "mixxx"
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
-    3.  Type `scons` and press Enter. (You may need to use `scons.bat`
-        instead of just `scons`.)
+    3.  Type `scons toolchain=msvs` and press Enter. (You may need to
+        use `scons.bat` instead of just `scons`.)
           - Add `msvcdebug=1` to build the debug version (with console
             output window.)
           - Add `win32=1` if you're on a 64-bit platform with 64-bit

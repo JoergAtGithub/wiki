@@ -91,7 +91,7 @@ with the following procedure:
   - Linux: `user@machine:~$ mixxx --midiDebug`
   - Windows: (v1.7.0 and later) `C:\Program Files\Mixxx>mixxx
     --midiDebug`
-  - Mac OSX: `$ mixxx --midiDebug`
+  - Mac OSX: `$ open -a mixxx --args --midiDebug`
 
 <!-- end list -->
 

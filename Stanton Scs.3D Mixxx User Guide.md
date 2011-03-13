@@ -18,8 +18,8 @@ variables at the top of the script you can set to your liking:
     juggling.
   - **spinningPlatterOnlyVinyl** - If set to true, only shows the
     spinning platter LED in vinyl modes. Otherwise shows in all modes
-    except Instant Pitch Change and TRIG (because they're used for other
-    things in those modes.)
+    except Loop, Instant Pitch Change and TRIG (because they're used for
+    other things in those modes.)
   - **spinningLights**\* - The number of lights used for the spinning
     platter effect, 1 or 2. (1 is best for juggling.)
   - **VUMeters** - If set to true, shows a VU meter in the circular area

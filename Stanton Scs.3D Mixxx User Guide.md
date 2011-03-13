@@ -150,10 +150,10 @@ below its vertical neighbors.
 
 These modes configure the surface as three separate banks of 12 buttons
 (lit up dim red for visibility) giving you a total of THIRTY-SIX hot
-cues\! (Though Mixxx 1.8.0 internally supports just 32, so the center 4
+cues\! (Mixxx 1.8.0-1.9.0 internally supports just 32, so the center 4
 buttons and the lower right one in the third bank (black) are
-inoperative.) The TRIG button will be red in bank 1, purple in bank 2,
-and black in bank 3.
+inoperative. Mixxx 1.9.1+ supports 36 again.) The TRIG button will be
+red in bank 1, purple in bank 2, and black in bank 3.
 
 The red LEDs flash when you press the corresponding button. The outer
 blue LEDs light when a cue point is set on that button. (Changeable with

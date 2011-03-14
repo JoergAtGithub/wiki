@@ -10,6 +10,18 @@ overlay (C) 2009 Sean M. Pappalardo*
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:
 
+1.  **faderStart**: If set to *true*, it allows decks to start when
+    their channel or the cross-fader is opened. (This is also toggleable
+    with the topmost button on the controller. See below.)
+2.  **scratchFactor**: Adjusts the speed of scratching with the select
+    knob. (Defaults to **2**.)
+
+Just open the `midi/Stanton-SCS1m-scripts.js` file in your favorite text
+editor (Wordpad works too) and you'll see these variables right near the
+top. Edit & save, then restart Mixxx and enjoy.
+
+**The following were present in 1.7-1.8 but are now obsolete:**
+
 1.  **scratchKnob**: *All of these values are heavily dependent on your
     latency setting. Adjust as needed.*
     1.  **slippage** - Slipperiness of the virtual slipmat when
@@ -20,10 +32,6 @@ variables at the top of the script you can set to your liking:
     3.  **stoppedMultiplier** - Correction to get the same knob
         sensitivity when the deck is stopped (set higher for higher
         latencies, e.g. 10ms = 2.2, 2ms = 1.5.)
-
-Just open the `midi/Stanton-SCS1m-scripts.js` file in your favorite text
-editor (Wordpad works too) and you'll see these variables right near the
-top. Edit & save, then restart Mixxx and enjoy.
 
 ## Deck controls
 
@@ -68,7 +76,7 @@ top. Edit & save, then restart Mixxx and enjoy.
 
 *Refer to the image above, top to bottom*
 
-  - **z** button: Toggle cross fader start/cue
+  - **z** button: Toggle fader start/cue
   - **Master, Headphones, Cue Mix** knobs: as labeled
   - ***Zone** knob: unused*
   - ***Gain** knob: unused*
@@ -95,12 +103,16 @@ top. Edit & save, then restart Mixxx and enjoy.
 
 ``` 
     * Rotate to move the track select highlight
-    * Press to load the selected track into the first stopped deck, if any
+    * Press to load the selected track into the first stopped deck, if any. //(This is [[https://bugs.launchpad.net/mixxx/+bug/734713|not working]] in 1.9.x for some reason.)//
 * **Control mode**:
     * Rotate to scratch the song on the selected deck
     * //Pressing does nothing//
-* **Cancel** button: **Control mode**: press to select Deck 1 for scratching
-* **Enter** button: **Control mode**: press to select Deck 2 for scratching
+* **Cancel** button: 
+* **Browse mode**: Press to load the highlighted song onto deck 1, if it's not currently playing.
+* **Control mode**: hold down to enable scratching on deck 1
+* **Enter** button: 
+* **Browse mode**: Press to load the highlighted song onto deck 2, if it's not currently playing.
+* **Control mode**: hold down to enable scratching on deck 2
 * //**Setup** button: unused by Mixxx but will enter the mixer's internal setup menu//
 * **Control** button: Selects scratching mode for the jog wheel
 * **Browse** button: Selects track browse mode for the jog wheel

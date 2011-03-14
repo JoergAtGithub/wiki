@@ -62,6 +62,7 @@ world-class application, somewhat in order of importance:
   - Library Version Bumps
   - SoundTouch -\> 1.5.0
   - xwax -\> 0.8
+  - gtest/gmock -\> 1.5.0
 
 ### Probably Longer Term
 

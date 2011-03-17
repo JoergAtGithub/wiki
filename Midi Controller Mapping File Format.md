@@ -460,7 +460,9 @@ it's either on (non-zero) or off (zero.)
 |  | \[Channel*N*\]     |  | transform                    |  | ?                 |  | **deprecated**                                                                                                                                                                                      |  | ?                                                                   |  |
 |  | \[Channel*N*\]     |  | track\_samples               |  | absolute value    |  | (Read-only) Number of sound samples in the track loaded on the specified deck                                                                                                                       |  | n/a                                                                 |  |
 |  | \[Channel*N*\]     |  | volume                       |  | default           |  | Adjusts the channel volume fader                                                                                                                                                                    |  | VOL fader                                                           |  |
-|  | \[Channel*N*\]     |  | VuMeter                      |  | default           |  | Outputs the current instantaneous channel volume                                                                                                                                                    |  | Channel meter                                                       |  |
+|  | \[Channel*N*\]     |  | VuMeter                      |  | default           |  | Outputs the current instantaneous deck volume                                                                                                                                                       |  | Deck VU meter                                                       |  |
+|  | \[Channel*N*\]     |  | VuMeterL                     |  | default           |  | Outputs the current instantaneous deck volume for the left channel                                                                                                                                  |  | Deck VU meter L                                                     |  |
+|  | \[Channel*N*\]     |  | VuMeterR                     |  | default           |  | Outputs the current instantaneous deck volume for the right channel                                                                                                                                 |  | Deck VU meter R                                                     |  |
 |  | \[Channel*N*\]     |  | wheel                        |  | \-3.0..3.0        |  | Affects relative play speed & direction persistently (additive offset & must manually be undone)                                                                                                    |  | Waveform                                                            |  |
 
 \* introduced in Mixxx v1.8.0
@@ -478,6 +480,16 @@ it's either on (non-zero) or off (zero.)
 |  | \[Channel*N*\] |  | orientation       |  | 0-2            |  | Set channel's mix orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader |  | N/A                                             |  |
 |  | \[Channel*N*\] |  | repeat            |  | binary         |  | Enable repeat-mode for the specified deck                                                            |  | when track finishes, song loops to beginning    |  |
 |  | \[Channel*N*\] |  | track\_samplerate |  | absolute value |  | (Read-only) Sample rate of the track loaded on the specified deck                                    |  | n/a                                             |  |
+
+**Coming up in v1.10.0:**
+
+|  | \[Group\]      |  | Key/Control   |  | Range   |  | What it does                                                                                                          |  | On-screen feedback              |  |
+|  | -------------- |  | ------------- |  | ------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
+|  | \[Microphone\] |  | orientation   |  | 0-2     |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
+|  | \[Microphone\] |  | PeakIndicator |  | binary  |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
+|  | \[Microphone\] |  | talkover      |  | binary  |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                             |  |
+|  | \[Microphone\] |  | volume        |  | default |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
+|  | \[Microphone\] |  | VuMeter       |  | default |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.

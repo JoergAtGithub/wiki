@@ -1864,7 +1864,10 @@ blueprint, it makes use of these special nodes.
 New in Mixxx 1.9  
 Replace the [Text](/creating_skins#track_information) node with
 TrackProperty\`s to display more advanced track informations. You can
-display more than one TrackProperty node in a skin. |\<code=xml\>
+display more than one TrackProperty node in a skin.  
+See the [Spartan Skin for
+Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
+blueprint, it makes use of TrackProperty. |\<code=xml\>
 \<TrackProperty\>
 
 ``` 

@@ -12,9 +12,6 @@ referred to as MSVC in discussions.
 <span class="underline">V</span>isual
 <span class="underline">C</span>++))
 
-//(Taken from
-<http://mixxx.sourceforge.net/wiki/index.php/HowtoBuildWin32)//>
-
 ### Steps
 
 1.  Download & install prerequisites

@@ -78,7 +78,7 @@ referred to as MSVC in discussions.
             Python installed, otherwise it will try to build the x64
             version of Mixxx.
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
-    "mixxx/dist/" directory.
+    "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
     Visual Studio, run "scons msvc", and open the newly generated
     "mixxx.vcproj" file with Visual Studio.

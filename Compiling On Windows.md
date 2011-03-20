@@ -94,18 +94,12 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 
 <!-- end list -->
 
-  - [Microsoft Visual Studio C++
+  - [Microsoft Visual Studio 2008 C++
     Express](http://www.microsoft.com/express/download/)
-    ([2005](http://www.microsoft.com/express/2005/download/default.aspx)
-    or later.) [Alternate link
-    for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
-    You just need the vcsetup.exe file.
-  - [Microsoft Windows SDK for
-    Vista](http://www.microsoft.com/downloads/details.aspx?familyid=ff6467e6-5bba-4bf5-b562-9199be864d29&displaylang=en)
-    [(web
-    install)](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
-    (Works on all recent versions of Windows.) You only need to install
-    the following:
+    ([Download](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+  - [Microsoft Windows 7
+    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
+    You only need to install the following:
 
 <!-- end list -->
 
@@ -130,10 +124,12 @@ C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\<
 - Build Qt. [[http://mixxx.org/wiki/doku.php/build_windows_dependencies#qt|Click here for details.]]
 - Get the Mixxx source code
 * Checkout the mixxx repository: with TortoiseBZR, right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+- Get our precompiled dependencies
+* Checkout the dependencies repository with TortoiseBZR, using the following location: ''lp:~mixxxdevelopers/mixxx/mixxx-win64lib-msvc90-release''
 - Build Mixxx
   - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
-  - Type ''scons'' (you may need to use scons.bat instead of just scons.)
+  - Type ''scons toolchain=msvs winlib=path_to_mixxx-win64lib-msvc90-release_directory'' (you may need to use scons.bat instead of just scons.)
     * Add ''msvcdebug=1'' to build the debug version.
     * Add ''win64=1'' if you installed the 32-bit version of Python to force a 64-bit Mixxx build (otherwise it will think you're on a 32-bit platform and build that version.)
     * If you get an error saying that it couldn't find PortAudio, do the following:

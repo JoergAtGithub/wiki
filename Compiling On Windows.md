@@ -18,19 +18,13 @@ referred to as MSVC in discussions.
 
 <!-- end list -->
 
-  - [Microsoft Visual Studio C++
+  - [Microsoft Visual Studio 2008 C++
     Express](http://www.microsoft.com/express/download/)
-    ([2005](http://www.microsoft.com/express/2005/download/default.aspx)
-    or later.) [Alternate link
-    for 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
-    You just need the vcsetup.exe file.
-  - [Microsoft Windows SDK for
-    Vista](http://www.microsoft.com/downloads/details.aspx?familyid=ff6467e6-5bba-4bf5-b562-9199be864d29&displaylang=en)
-    [(web
-    install)](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4377f86d-c913-4b5c-b87e-ef72e5b4e065)
-    (Works on all recent versions of Windows.)
-  - [Qt library for
-    Windows](http://qt.nokia.com/downloads/windows-cpp-vs2008)
+    ([Download](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+  - [Microsoft Windows 7
+    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
+  - [Qt library for Windows
+    (MSVC2008)](http://qt.nokia.com/downloads/windows-cpp-vs2008)
   - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
   - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
   - A Bazaar client like [Bazaar w/
@@ -45,8 +39,8 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
     adjusting the paths to match where you actually installed the
-    above:`QTDIR = C:\qt-windows-4.6.1
-    PATH = C:\qt-windows-4.6.1\bin;C:\Python26;C:\Python26\Scripts`
+    above:`QTDIR = C:\qt-windows-4.7.2
+    PATH = C:\qt-windows-4.7.2\bin;C:\Python26;C:\Python26\Scripts`
 
 <!-- end list -->
 

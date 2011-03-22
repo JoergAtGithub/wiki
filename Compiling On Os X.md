@@ -99,12 +99,11 @@ You will need to install the following by hand for the compile process:
     unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
     Get around this by including "hss1394=0" when running scons on mixxx
     (see below).
-  - taglib -- only applicable to 1.9+ --
+  - taglib --
     ([Download](http://developer.kde.org/~wheeler/taglib.html)) -- or
     "sudo port install taglib"
-  - libshout -- only applicable to 1.9+ --
-    ([Download](http://www.icecast.org/download.php)) -- or "sudo port
-    install libshout2"
+  - libshout -- ([Download](http://www.icecast.org/download.php)) -- or
+    "sudo port install libshout2"
 
 #### If this is your First Time
 

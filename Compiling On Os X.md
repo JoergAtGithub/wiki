@@ -27,7 +27,6 @@ Then, open the Terminal application and type in the following:
 
 ``` 
  sudo port install libmad libid3tag libsndfile libogg libvorbis libflac portmidi bzr scons libshout2 taglib
- 
 ```
 
 After that has completed, download and install the Qt framework package

@@ -14,18 +14,29 @@ Connection](http://connect.apple.com) and download them (warning: almost
 1G). A guide to getting xcode is available at [this
 page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php).
 
-### 1\. Install build dependencies
+### 1\. Install build dependencies (Method 1 - MacPorts)
 
-Mixxx relies on several external libraries for various features. At the
-moment, installing the supporting libraries through fink does not work
-properly as the install script expects them in a different place. When
-executing make install, you may need to use 'sudo make install' instead.
+Mixxx relies on several external libraries for various features.
+Fortunately, you can automatically download and install most of these
+dependencies through MacPorts.
 
-FIXME --- Clean up this mess, separate the Regular vs. Macports way of
-install - *\[\[|jus\]\] 2011/02/12 15:06*
+Start by downloading and installing one of the .dmg disk image for
+MacPorts: <http://www.macports.org/install.php>
 
-You will need to install the following before continuing with the
-compile process:
+Then, open the Terminal application and type in the following:
+
+``` 
+ sudo port install libmad libid3tag libsndfile libogg libvorbis libflac portmidi bzr scons libshout2 taglib
+ 
+```
+
+After that has completed, download and install the Qt framework package
+for your platform:
+<http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x>
+
+### 1\. Install build dependencies (Method 2 - Compile by hand)
+
+You will need to install the following by hand for the compile process:
 
   - scons ([Download](http://www.scons.org/download.php), [Install
     guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --

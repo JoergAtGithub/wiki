@@ -33,6 +33,66 @@ Lastly, after that has completed, download and install the [Qt SDK
 package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
 for your platform.
 
+#### If this is your First Time
+
+FIXME --- Clarify Macports usage, - Work in progress *\[\[|jus\]\]
+2011/02/12 15:06*
+
+First, download all of the libraries and utilities in the above list,
+starting with scons. During this process, your main command is "sudo
+port install XXX", where XXX is the name of each library you'll need. If
+the library already happens to be installed on your computer, that's a
+time-saver, and you'll get this message:
+
+`~/Music/mixxx>sudo port install libmad`
+
+`Skipping org.macports.activate (libmad ) since this port is already
+active`
+
+`---> Cleaning libmad`
+
+Otherwise, it will automatically install it, like this:
+
+`~/Music/mixxx>sudo port install libid3tag`
+
+`Password:`
+
+`---> Fetching libid3tag`
+
+`---> Attempting to fetch libid3tag-0.15.1b.tar.gz from
+ftp://ftp.mars.org/pub/mpeg/`
+
+`---> Verifying checksum(s) for libid3tag`
+
+`---> Extracting libid3tag`
+
+`---> Configuring libid3tag`
+
+`---> Building libid3tag with target all`
+
+`---> Staging libid3tag into destroot`
+
+`---> Installing libid3tag 0.15.1b_0`
+
+`---> Activating libid3tag 0.15.1b_0`
+
+`---> Cleaning libid3tag`
+
+Note that the password it asks for is just your local machine, not an
+online password. It is necessary because you are going into super-user
+mode in order to write the libraries to your hard drive. It's a
+basically safe operation, but they put it behind a password so the area
+where the libraries are stored doesn't get touched very often.
+
+If you get a message like this:
+
+`Error: Target org.macports.fetch returned: fetch failed`
+
+It probably means that the config file for port hasn't been updated.
+Perhaps there has been a newer version of the library released. You may
+be hosed at this point, but if you have an older version of the library
+already installed on your system, it may still compile and run properly.
+
 ### 1\. Install build dependencies (Method 2 - Compile by hand)
 
 You will need to install the following by hand for the compile process:

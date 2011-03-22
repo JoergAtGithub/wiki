@@ -29,9 +29,9 @@ Then, open the Terminal application and type in the following:
  sudo port install libmad libid3tag libsndfile libogg libvorbis libflac portmidi bzr scons libshout2 taglib
 ```
 
-After that has completed, download and install the [Qt SDK
+Lastly, after that has completed, download and install the [Qt SDK
 package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
-for your platform:
+for your platform.
 
 ### 1\. Install build dependencies (Method 2 - Compile by hand)
 

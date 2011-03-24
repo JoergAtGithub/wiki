@@ -71,6 +71,15 @@ quantization is enabled, ie: \[ChannelN\],quantize == 1.0, then the
 function queries \[ChannelN\],quantize\_beat and uses that as it's new
 position instead of the current play position.
 
+### Controller Object Table
+
+| Group        | Name           | Parameter                        | Values   | Notes                                                                                       |
+| ------------ | -------------- | -------------------------------- | -------- | ------------------------------------------------------------------------------------------- |
+| \[ChannelN\] | beatloop       | The number of beats to loop over | N/A      | Loops from next beat to N backwards if negative. works with fractions.                      |
+| \[ChannelN\] | beatloop\_X    | (Push Button)                    | N/A      | Loop over set number of beats, for X = { 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64 } |
+| \[ChannelN\] | quantize       | Enable or disable                | Enabled? | Boolean for turning on/off quantize mode                                                    |
+| \[ChannelN\] | quantize\_beat | Next Beat to Quantize to         | Frame    | Returns the Frame offset for the next beat.                                                 |
+
 ## Current Issues
 
 None that I know of (madjester).

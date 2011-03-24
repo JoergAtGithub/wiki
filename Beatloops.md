@@ -15,7 +15,7 @@ allow us to do man cool tricks including:
 ## Current Status
 
 There is currently a branch at
-<https://code.launchpad.net/~mixxxdevelopers/mixxx/features_trackbeats>.
+<https://code.launchpad.net/~mixxxdevelopers/mixxx/features_beatcontrol>.
 
 Current Status:
 

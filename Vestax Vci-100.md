@@ -12,7 +12,7 @@ Manufacturer link:
 <!-- end list -->
 
 ``` 
-    * [http://www.youtube.com/watch?v=b2Y509VQVEQ]
+    * http://www.youtube.com/watch?v=b2Y509VQVEQ
 * //supported by Mixxx Community (someone please verify???)//
 ```
 

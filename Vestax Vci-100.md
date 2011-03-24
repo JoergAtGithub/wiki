@@ -51,3 +51,6 @@ Manufacturer link:
     * [[https://bugs.launchpad.net/mixxx/+bug/714438|might not be a mapping problem, could be this bug in Mixxx]]
     * Need to test 1.9.1 from Baazar to verify
 ```
+
+Some information on this wiki page is taken from the forums on DJ Tech
+Tools <http://www.djtechtools.com/>

@@ -80,6 +80,10 @@ position instead of the current play position.
 | \[ChannelN\] | quantize       | Enable or disable                | Enabled? | Boolean for turning on/off quantize mode                                                    |
 | \[ChannelN\] | quantize\_beat | Next Beat to Quantize to         | Frame    | Returns the Frame offset for the next beat.                                                 |
 
+### New Controller Objects being worked on
+
+    Vinicius, can you fill this out?
+
 ## Current Issues
 
 None that I know of (madjester).

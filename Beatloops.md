@@ -22,7 +22,7 @@ Current Status:
   - \[ChannelN\],beatloop CO implemented
   - I've also implemented \[ChannelN\],beatloop\_(SIZE) CO's for skins.
     Need to reimplement a thread safe version of QSignalMapper.
-  - \[ChannelN\],beatseek CO implemented (untested)
+  - \[ChannelN\],beatseek CO slated for another release
 
 ## Design
 

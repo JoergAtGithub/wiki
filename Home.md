@@ -87,6 +87,7 @@ plans.
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
+  - [Internationalization](Internationalization)
 
 ### Interfaces
 

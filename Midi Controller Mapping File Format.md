@@ -399,8 +399,8 @@ it's either on (non-zero) or off (zero.)
 |  | **\[Channel*N*\]** |  | back                         |  | binary             |  | Fast rewind (REW)                                                                                                                                                                                   |  | \< button                                                           |  |
 |  | \[Channel*N*\]     |  | beatsync                     |  | binary             |  | Syncs the BPM to that of the other track (if BPM is detected on both)                                                                                                                               |  | SYNC button & Pitch slider snaps to the appropriate value           |  |
 |  | ~~\[Channel*N*\]~~ |  | ~~bpm~~                      |  | ~~absolute value~~ |  | ~~Reads or sets the track's current BPM (changing the pitch)~~                                                                                                                                      |  | ~~BPM value display~~                                               |  |
-|  | \[Channel*N*\]     |  | bpm\[3\]                     |  | real-valued        |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                                                                                                       |  | N/A                                                                 |  |
-|  | \[Channel*N*\]     |  | bpm\_tap\[4\]                |  | binary             |  | When tapped repeatedly, adjusts the BPM of ChannelN to match the tapped BPM                                                                                                                         |  | track playback rate shifts after 4 or more taps                     |  |
+|  | \[Channel*N*\]     |  | bpm\[3\]                     |  | real-valued        |  | bpm now only reflects the bpm of the loaded track                                                                                                                                                   |  | N/A                                                                 |  |
+|  | \[Channel*N*\]     |  | bpm\_tap\[4\]                |  | binary             |  | When tapped repeatedly, adjusts the playback rate of ChannelN to match the tapped BPM                                                                                                               |  | track playback rate shifts after 4 or more taps                     |  |
 |  | \[Channel*N*\]     |  | cue\_default                 |  | binary             |  | In CDJ mode, when playing, returns to the cue point & pauses. If stopped, sets a cue point at the current location. If stopped and at a cue point, plays from that point until released (set to 0.) |  | CUE button                                                          |  |
 |  | \[Channel*N*\]     |  | cue\_point                   |  | absolute value     |  | The current position of the cue point in samples                                                                                                                                                    |  | Cue point marker                                                    |  |
 |  | \[Channel*N*\]     |  | cue\_preview                 |  | binary             |  | Plays from the current cue point                                                                                                                                                                    |  | CUE button lights & waveform moves                                  |  |
@@ -552,9 +552,9 @@ ControlObjects wrappers should be used as follows:
 
 2.  introduced in Mixxx v1.9.0
 
-3.  changed in Mixxx v1.9.1
+3.  introduced in Mixxx v1.9.0
 
-4.  introduced in Mixxx v1.9.1
+4.  introduced in Mixxx v1.9.0
 
 5.  introduced in Mixxx v1.9.0
 

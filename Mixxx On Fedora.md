@@ -21,7 +21,7 @@ Currently only Mixxx 1.8.2 is available in rpmfusion. There is a
 rpmfusion to update the RPM to 1.9.0. In the mean time you can use this
 RPM:
 
-<http://people.redhat.com/~jbrier/mixxx/mixxx-1.9.0-1.fc14.src.rpm>
+[mixxx-1.9.0-1.fc14.x86\_64.rpm](http://people.redhat.com/~jbrier/mixxx/mixxx-1.9.0-1.fc14.x86_64.rpm)
 
 There is a [bug](https://bugzilla.redhat.com/show_bug.cgi?id=691148) in
 the version of portaudio included in Fedora which causes audio to hang
@@ -30,4 +30,4 @@ in Mixxx.
 In order to not hit that bug you can install this newer version of
 portaudio from this RPM:
 
-<http://people.redhat.com/~jbrier/portaudio/portaudio-19-10.fc14.x86_64.rpm>
+[portaudio-19-10.fc14.x86\_64.rpm](http://people.redhat.com/~jbrier/portaudio/portaudio-19-10.fc14.x86_64.rpm)

@@ -79,37 +79,37 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                               |
-| ----------------------------- |
-| Device                        |
-| Allen and Heath Xone:1D       |
-| Allen and Heath Xone:2D       |
-| Allen and Heath Xone:3D       |
-| Allen and Heath Xone:4D       |
-| Allen and Heath Xone:DX       |
-| American Audio VMS4           |
-| Ecler Evo4                    |
-| Ecler Evo5                    |
-| Korg NanoPad                  |
-| Korg NanoKontrol              |
-| Korg NanoKey                  |
-| Korg PadKontrol               |
-| Native Instruments Kontrol X1 |
-| Native Instruments Kontrol S4 |
-| Numark Stealth Control        |
-| Numark Omni Control           |
-| Numark MixDeck                |
-| Numark Mixmeister Control     |
-| Numark iDJ3                   |
-| Numark NS7                    |
-| Numark NSFX                   |
-| Numark V7                     |
-| Vestax VCI-300                |
-| Vestax Spin                   |
-| Vestax Typhoon                |
-| Vestax TR-1                   |
-| Vestax VCM-100                |
-| Vestax VCM-600                |
+|                               |         |          |                                                  |
+| ----------------------------- | ------- | -------- | ------------------------------------------------ |
+| Device                        | Windows | Mac OS X | Linux                                            |
+| Allen and Heath Xone:1D       |         |          |                                                  |
+| Allen and Heath Xone:2D       |         |          |                                                  |
+| Allen and Heath Xone:3D       |         |          |                                                  |
+| Allen and Heath Xone:4D       |         |          |                                                  |
+| Allen and Heath Xone:DX       |         |          |                                                  |
+| American Audio VMS4           |         |          | Yes (1.9.0+), just select mapping in preferences |
+| Ecler Evo4                    |         |          |                                                  |
+| Ecler Evo5                    |         |          |                                                  |
+| Korg NanoPad                  |         |          |                                                  |
+| Korg NanoKontrol              |         |          |                                                  |
+| Korg NanoKey                  |         |          |                                                  |
+| Korg PadKontrol               |         |          |                                                  |
+| Native Instruments Kontrol X1 |         |          |                                                  |
+| Native Instruments Kontrol S4 |         |          |                                                  |
+| Numark Stealth Control        |         |          |                                                  |
+| Numark Omni Control           |         |          |                                                  |
+| Numark MixDeck                |         |          |                                                  |
+| Numark Mixmeister Control     |         |          |                                                  |
+| Numark iDJ3                   |         |          |                                                  |
+| Numark NS7                    |         |          |                                                  |
+| Numark NSFX                   |         |          |                                                  |
+| Numark V7                     |         |          |                                                  |
+| Vestax VCI-300                |         |          |                                                  |
+| Vestax Spin                   |         |          |                                                  |
+| Vestax Typhoon                |         |          |                                                  |
+| Vestax TR-1                   |         |          |                                                  |
+| Vestax VCM-100                |         |          |                                                  |
+| Vestax VCM-600                |         |          |                                                  |
 
 ## Sound cards
 

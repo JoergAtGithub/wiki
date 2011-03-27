@@ -487,15 +487,15 @@ it's either on (non-zero) or off (zero.)
 
 **Coming up in v1.10.0:**
 
-|  | \[Group\]      |  | Key/Control             |  | Range   |  | What it does                                                                                                          |  | On-screen feedback              |  |
-|  | -------------- |  | ----------------------- |  | ------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
-|  | \[Microphone\] |  | orientation\[12\]       |  | 0-2     |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
-|  | \[Microphone\] |  | PeakIndicator\[13\]     |  | binary  |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
-|  | \[Microphone\] |  | talkover\[14\]          |  | binary  |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                             |  |
-|  | \[Microphone\] |  | volume\[15\]            |  | default |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
-|  | \[Microphone\] |  | VuMeter\[16\]           |  | default |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
-|  | \[Master\]     |  | crossfader\_up\_small   |  | binary  |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider               |  |
-|  | \[Master\]     |  | crossfader\_down\_small |  | binary  |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider               |  |
+|  | \[Group\]      |  | Key/Control                   |  | Range   |  | What it does                                                                                                          |  | On-screen feedback              |  |
+|  | -------------- |  | ----------------------------- |  | ------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
+|  | \[Microphone\] |  | orientation\[12\]             |  | 0-2     |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
+|  | \[Microphone\] |  | PeakIndicator\[13\]           |  | binary  |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
+|  | \[Microphone\] |  | talkover\[14\]                |  | binary  |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                             |  |
+|  | \[Microphone\] |  | volume\[15\]                  |  | default |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
+|  | \[Microphone\] |  | VuMeter\[16\]                 |  | default |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
+|  | \[Master\]     |  | crossfader\_up\_small\[17\]   |  | binary  |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider               |  |
+|  | \[Master\]     |  | crossfader\_down\_small\[18\] |  | binary  |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider               |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.
@@ -590,3 +590,7 @@ ControlObjects wrappers should be used as follows:
 15. introduced in Mixxx v1.10.0
 
 16. introduced in Mixxx v1.10.0
+
+17. introduced in Mixxx v1.10.0
+
+18. introduced in Mixxx v1.10.0

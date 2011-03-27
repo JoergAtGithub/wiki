@@ -186,6 +186,5 @@ Now World domination :)
 
 ## Further Reading
 
-  - [Compiling Mixxx on
-    Ubuntu 7.10](http://www.transglobal-megacorp.com/doku.php?id=mixxx-compilation)
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)
+  - [Mixxx on Fedora](Mixxx%20on%20Fedora)

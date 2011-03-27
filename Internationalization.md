@@ -3,7 +3,7 @@
 ## Steps to Update Qt/POT templates in Mixxx branches
 
   - **Make a clean checkout of the branch you are in. NO EXCEPTIONS**
-  - `lupdate src// -ts res/translations/mixxx.ts`
+  - `lupdate src/\*\*/\*\* -ts res/translations/mixxx.ts`
   - `ts2po -P res/translations/mixxx.ts >
     res/translations/mixxx/mixxx.pot`
   - Commit, push.

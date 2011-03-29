@@ -91,10 +91,21 @@ automatically sync to the tick of that clock.
 
 ### Deliverables
 
-  - Implement a master-clock in the Mixxx engine 
-  - Implement synchronization of decks to the master clock signals.
-  - Create GUI widgets to control the master clock and assign a deck to
-    synchronize to the master clock.
+  - Implement a master-clock in the Mixxx engine
+  - The master clock will have a BPM that it "beats" at.
+  - Implement synchronization of decks to the master clock signals. 
+  - Synchronization in this case is: 
+
+<!-- end list -->
+
+``` 
+    * Adjusting the rate of each deck to match the master clock
+    * Adjusting the "phase" or the alignment of the deck so that the beats of the deck line up with the beats of the master clock. 
+* Create GUI widgets to control the master clock and assign a deck to synchronize to the master clock.
+* Allow a deck to be set as the "master" deck 
+* This is more open-ended -- think about the different ways to implement this and talk about it in your proposal.
+* Bonus: Implement a metronome feature that ticks to the beat of the clock.
+```
 
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 

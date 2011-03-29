@@ -82,11 +82,11 @@ position instead of the current play position.
 
 ### New Controller Objects being worked on
 
-| Group        | Name         | Parameter             | Values   | Notes                                                                                                         |
-| ------------ | ------------ | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| \[ChannelN\] | loop\_size   | Size of loop in beats | float    | Used for output and can be manipulated by script(might not be safe)                                           |
-| \[ChannelN\] | loop\_double | On/Off(PushButton)    | boolean? | Double the loop\_size, as of now can go beyond track limit(and overflow), but safely degrade by playing logic |
-| \[ChannelN\] | loop\_half   | ON/Off(PUshButton)    | boolean? | Halfs the loop\_size, hardcoded limit on 1/64 of tracks beat size                                             |
+| Group        | Name         | Parameter                         | Values   | Notes                                                                                                         |
+| ------------ | ------------ | --------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| \[ChannelN\] | loop\_double | On/Off(PushButton)                | boolean? | Double the loop\_size, as of now can go beyond track limit(and overflow), but safely degrade by playing logic |
+| \[ChannelN\] | loop\_halve  | ON/Off(PUshButton)                | boolean? | Halfs the loop\_size, hardcoded limit on 1/64 of tracks beat size                                             |
+| \[ChannelN\] | loop\_resize | Scale real to resize current loop | float    | Can be used from scripting                                                                                    |
 
 ## Current Issues
 

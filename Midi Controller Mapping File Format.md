@@ -496,6 +496,7 @@ it's either on (non-zero) or off (zero.)
 |  | \[Master\]     |  | crossfader\_up\_small\[16\]   |  | binary      |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider               |  |
 |  | \[Master\]     |  | crossfader\_down\_small\[17\] |  | binary      |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider               |  |
 |  | \[Channel*N*\] |  | bpm\[18\]                     |  | real-valued |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                         |  | N/A                             |  |
+|  | \[Channel*N*\] |  | beat\_active\[19\]            |  | binary      |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                             |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.
@@ -594,3 +595,5 @@ ControlObjects wrappers should be used as follows:
 17. introduced in Mixxx v1.10.0
 
 18. changed in Mixxx v1.10.0
+
+19. introduced in Mixxx v1.10.0

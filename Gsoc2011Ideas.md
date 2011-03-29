@@ -21,6 +21,8 @@ crossfade length. More advanced use cases could
     or "Fade Out" points.
   - Implement ability for AutoDJ crossfade interval to be adjusted 
   - Allow certain decks to be designated for Auto-DJ
+  - Sometimes people only want 1 or 2 decks to be "auto-dj" decks, while
+    saving an extra deck for cueing.
 
 ## Session History Feature
 

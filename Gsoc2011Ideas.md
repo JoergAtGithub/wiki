@@ -40,6 +40,8 @@ played with Mixxx, grouped by "sessions" or times that Mixxx was run.
   - Update the Mixxx engine to send feedback about when tracks are
     loaded, unloaded and "hearable" to the Session manager, which
     records the information in the database.
+  - Allow a "session" to be exported to a file in a common format (code
+    to write in PLS/CUE/M3U formats is already in Mixxx)
 
 ## Advanced Library Search
 

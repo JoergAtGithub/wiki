@@ -486,17 +486,20 @@ it's either on (non-zero) or off (zero.)
 
 **Coming up in v1.10.0:**
 
-|  | \[Group\]      |  | Key/Control                   |  | Range       |  | What it does                                                                                                          |  | On-screen feedback              |  |
-|  | -------------- |  | ----------------------------- |  | ----------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
-|  | \[Microphone\] |  | orientation\[11\]             |  | 0-2         |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
-|  | \[Microphone\] |  | PeakIndicator\[12\]           |  | binary      |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
-|  | \[Microphone\] |  | talkover\[13\]                |  | binary      |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                             |  |
-|  | \[Microphone\] |  | volume\[14\]                  |  | default     |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
-|  | \[Microphone\] |  | VuMeter\[15\]                 |  | default     |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
-|  | \[Master\]     |  | crossfader\_up\_small\[16\]   |  | binary      |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider               |  |
-|  | \[Master\]     |  | crossfader\_down\_small\[17\] |  | binary      |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider               |  |
-|  | \[Channel*N*\] |  | bpm\[18\]                     |  | real-valued |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                         |  | N/A                             |  |
-|  | \[Channel*N*\] |  | beat\_active\[19\]            |  | binary      |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                             |  |
+|  | \[Group\]      |  | Key/Control                   |  | Range          |  | What it does                                                                                                          |  | On-screen feedback              |  |
+|  | -------------- |  | ----------------------------- |  | -------------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
+|  | \[Microphone\] |  | orientation\[11\]             |  | 0-2            |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
+|  | \[Microphone\] |  | PeakIndicator\[12\]           |  | binary         |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
+|  | \[Microphone\] |  | talkover\[13\]                |  | binary         |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                             |  |
+|  | \[Microphone\] |  | volume\[14\]                  |  | default        |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
+|  | \[Microphone\] |  | VuMeter\[15\]                 |  | default        |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
+|  | \[Master\]     |  | crossfader\_up\_small\[16\]   |  | binary         |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider               |  |
+|  | \[Master\]     |  | crossfader\_down\_small\[17\] |  | binary         |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider               |  |
+|  | \[Channel*N*\] |  | bpm\[18\]                     |  | real-valued    |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                         |  | N/A                             |  |
+|  | \[Channel*N*\] |  | beat\_active\[19\]            |  | binary         |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                             |  |
+|  | \[Channel*N*\] |  | loop\_double\[20\]            |  | binary         |  | Doubles the current loop's length by moving the end marker.                                                           |  | Loop length doubles on waveform |  |
+|  | \[Channel*N*\] |  | loop\_halve\[21\]             |  | binary         |  | Halves the current loop's length by moving the end marker. Player immediately loops if past the new endpoint.         |  | Loop length halves on waveform  |  |
+|  | \[Channel*N*\] |  | loop\_scale\[22\]             |  | 0.0 - infinity |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                             |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.
@@ -597,3 +600,9 @@ ControlObjects wrappers should be used as follows:
 18. changed in Mixxx v1.10.0
 
 19. introduced in Mixxx v1.10.0
+
+20. introduced in Mixxx v1.10.0
+
+21. introduced in Mixxx v1.10.0
+
+22. introduced in Mixxx v1.10.0

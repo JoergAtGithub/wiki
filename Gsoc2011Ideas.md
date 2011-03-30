@@ -15,7 +15,7 @@ to spruce up AutoDJ support to be much better. In particular, the
 fade-in and out points of songs should be configurable, as well as the
 crossfade length. More advanced use cases could
 
-### Deliverables
+### Minimum Deliverables
 
   - Implement ability for track cue-points to be designated as "Fade In"
     or "Fade Out" points.
@@ -33,7 +33,7 @@ This project aims to bring a Sessions or History feature to the Mixxx
 library. This feature would show a running history of every song the DJ
 played with Mixxx, grouped by "sessions" or times that Mixxx was run.
 
-### Deliverables
+### Minimum Deliverables
 
   - Implement a new Library feature (section in the library) for
     displaying session history.
@@ -68,7 +68,7 @@ Here are some examples of queries we would like to support:
   - Results in tracks with the name "Right Here" and a BPM greater than
     140
 
-### Deliverables
+### Minimum Deliverables
 
   - Implement Full-Text-Search
   - Support FTS indexing of album, artist, title, genre, BPM, comment,
@@ -91,7 +91,7 @@ decks to sync to would be great as well, because then the DJ could set
 the master clock at e.g. 130 BPM and all the songs they load would
 automatically sync to the tick of that clock.
 
-### Deliverables
+### Minimum Deliverables
 
   - Implement a master-clock in the Mixxx engine
   - The master clock will have a BPM that it "beats" at.
@@ -125,7 +125,7 @@ great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
 
-### Deliverables
+### Minimum Deliverables
 
   - Implement auto-selection of MIDI mappings based on connected MIDI
     devices.
@@ -145,6 +145,6 @@ Mixxx then we're looking forward to hearing about it.
 **IMPORTANT: You should [contact us](gsocadvice) first to get feedback
 if you're going to submit a proposal for your own project idea\!**
 
-### Deliverables
+### Minimum Deliverables
 
   - Something awesome. We will work with you to define the deliverables.

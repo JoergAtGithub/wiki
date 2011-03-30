@@ -86,6 +86,21 @@ separated from surrounding code by a single space.
     {
     }
 
+Braces are generally **not optional**. This may seem like a good idea:
+
+    if (foo)
+      bar();
+
+But when you're adding something else which needs to happen when foo is
+true at 2AM, there's a high probability for
+
+    if (foo)  
+      bar();
+      more_bar();
+
+Which is, of course, not at all what you wanted to do and could lead to
+hard-to-find bugs.
+
 ## If Statements
 
 One-line statements following an `if` clause are acceptable, but it is

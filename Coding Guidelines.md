@@ -26,6 +26,19 @@ guidelines for developers to follow.
     "m\_", and although this hasn't been followed thus far, it's a good
     idea to use it because it tells you the scope of a variable without
     having to dig through a header file.
+  - Class variables (static class members) should ideally start with
+    "s\_" (or "m\_s"... both seemed to be used, I prefer "s\_").
+  - Pointers should have a "p" before the rest of the name. For a
+    variable of type `int*` named "foo":
+  - A local variable or function argument: `pFoo` (probably the least
+    important of these, as long as your functions are short you probably
+    won't forget what's a pointer and what isn't)
+  - A data member (class member variable): `m_pFoo`
+  - A static data member: `s_pFoo`
+  - Minimal type information can be useful as well, for instance, a
+    [ControlObject](ControlObject) data member named Foo might be
+    `m_COFoo` Don't go crazy here, anything learned from
+    WINAPI-Hungarian is probably a bad idea.
 
 ## Tabs vs. Spaces
 

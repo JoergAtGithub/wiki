@@ -170,3 +170,42 @@ you need to do the folllowing:
 3.  If it still doesn't work, issue the command `bzr bind
     bzr+ssh://<your lp
     username>@bazaar.launchpad.net/~mixxxdevelopers/mixxx/<branch name>`
+
+## Tips and Tricks
+
+### Save disk space
+
+Each mixxx branch can take something like 80MB for history. As most of
+that is common throughout all your mixxx branches, bazaar can share the
+common history throughout your branches, with a \*shared repository\*.
+Follow the [directions (see "Shared Repository
+Example")](http://wiki.bazaar.canonical.com/SharedRepositoryTutorial) to
+learn more. For example, I have a repository at `~/src/mixxx` and then
+have my branches (`trunk`, `1.9`, ...) under that. There's a large
+(`79MB`) `.bzr` directory in the repository directory, and then each
+branch under it has a `.bzr` directory in the `.5-2MB` range, so the
+payoff is quite significant versus `79MB` for each branch. Note that
+branch directories will still be huge when built because of the massive
+amount of space the object files take.
+
+### Save bandwidth
+
+Downloading a new mixxx branch can take quite some bandwidth (and time).
+To minimize this, do the following:
+
+1.  Create a new branch with the same parent as the remote branch and
+    the name you want your copy to have. `[bill@billtop mixxx]$ bzr
+    branch trunk features_xwax2`
+2.  Move into the new branch's directory `[bill@billtop mixxx]$ cd
+    features_xwax2/mixxx`
+3.  Pull from the remote branch, overwriting any differences and saving
+    the URL for future pulls: `[bill@billtop mixxx]$ bzr pull
+    --overwrite --remember lp:~ywwg/mixxx/features_xwax2
+    ...
+    Now on revision 2622.`
+
+Et voila. This will be much faster than pulling the entire branch
+history. This actually seems to be done automagically if you branch into
+a repository that already has the shared history (see "save disk space"
+above), although I just tried it myself for the first time so don't take
+my word for it.

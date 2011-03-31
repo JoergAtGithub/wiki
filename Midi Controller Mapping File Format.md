@@ -488,23 +488,24 @@ it's either on (non-zero) or off (zero.)
 
 |  | \[Group\]      |  | Key/Control                   |  | Range                  |  | What it does                                                                                                          |  | On-screen feedback                                                                      |  |
 |  | -------------- |  | ----------------------------- |  | ---------------------- |  | --------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------- |  |
-|  | \[Microphone\] |  | orientation\[11\]             |  | 0-2                    |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                                                                                     |  |
-|  | \[Microphone\] |  | PeakIndicator\[12\]           |  | binary                 |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light                                                                   |  |
-|  | \[Microphone\] |  | talkover\[13\]                |  | binary                 |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                                                                                     |  |
-|  | \[Microphone\] |  | volume\[14\]                  |  | default                |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes                                                         |  |
-|  | \[Microphone\] |  | VuMeter\[15\]                 |  | default                |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes                                                             |  |
-|  | \[Master\]     |  | crossfader\_up\_small\[16\]   |  | binary                 |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider                                                                       |  |
-|  | \[Master\]     |  | crossfader\_down\_small\[17\] |  | binary                 |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider                                                                       |  |
-|  | \[Channel*N*\] |  | start\_play\[18\]             |  | binary                 |  | Start playback from the beginning of the deck.                                                                        |  | Deck plays from beginning                                                               |  |
-|  | \[Channel*N*\] |  | bpm\[19\]                     |  | real-valued            |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                         |  | N/A                                                                                     |  |
-|  | \[Channel*N*\] |  | beat\_active\[20\]            |  | binary                 |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                                                                                     |  |
-|  | \[Channel*N*\] |  | loop\_double\[21\]            |  | binary                 |  | Doubles the current loop's length by moving the end marker.                                                           |  | Loop length doubles on waveform                                                         |  |
-|  | \[Channel*N*\] |  | loop\_halve\[22\]             |  | binary                 |  | Halves the current loop's length by moving the end marker. Player immediately loops if past the new endpoint.         |  | Loop length halves on waveform                                                          |  |
-|  | \[Channel*N*\] |  | loop\_scale\[23\]             |  | 0.0 - infinity         |  | Scale the loop length by the value scale is set to by moving the end marker.                                          |  | Loop length is scaled by given amount on waveform.                                      |  |
-|  | \[Channel*N*\] |  | beatloop\[24\]                |  | 0.0625 - 128           |  | Setup a loop over the set number of beats.                                                                            |  | A loop is shown over the set number of beats.                                           |  |
-|  | \[Channel*N*\] |  | beatloop\_(X)\[25\]           |  | 0.0 / 1.0 (PushButton) |  | Setup a loop over X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                  |  | A loop is shown over X beats.                                                           |  |
-|  | \[Channel*N*\] |  | quantize\[26\]                |  | 0.0 / 1.0 (PushButton) |  | Aligns Hotcues, CUE and Loop In & Out to the next beat starting from the current position.                            |  | Hotcues, CUE and Loop In & Out are aligned to the next beat from the previous position. |  |
-|  | \[Channel*N*\] |  | quantize\_beat\[27\]          |  | 0.0 - infinity         |  | Holds the frame offset position of the next beat.                                                                     |  | Is used internally by CueControl (CUEs & Hotcues) and LoopingControl for quantization.  |  |
+|  | \[Microphone\] |  | enabled\[11\]                 |  | binary                 |  | 1 if a microphone input is enabled, 0 if not.                                                                         |  | Microphone is enabled.                                                                  |  |
+|  | \[Microphone\] |  | orientation\[12\]             |  | 0-2                    |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                                                                                     |  |
+|  | \[Microphone\] |  | PeakIndicator\[13\]           |  | binary                 |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light                                                                   |  |
+|  | \[Microphone\] |  | talkover\[14\]                |  | binary                 |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | N/A                                                                                     |  |
+|  | \[Microphone\] |  | volume\[15\]                  |  | default                |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes                                                         |  |
+|  | \[Microphone\] |  | VuMeter\[16\]                 |  | default                |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes                                                             |  |
+|  | \[Master\]     |  | crossfader\_up\_small\[17\]   |  | binary                 |  | Moves the crossfader right by 1/100th                                                                                 |  | Crossfader slider                                                                       |  |
+|  | \[Master\]     |  | crossfader\_down\_small\[18\] |  | binary                 |  | Moves the crossfader left by 1/100th                                                                                  |  | Crossfader slider                                                                       |  |
+|  | \[Channel*N*\] |  | start\_play\[19\]             |  | binary                 |  | Start playback from the beginning of the deck.                                                                        |  | Deck plays from beginning                                                               |  |
+|  | \[Channel*N*\] |  | bpm\[20\]                     |  | real-valued            |  | bpm reflects the perceived (rate-adjusted) BPM of the file loaded in ChannelN                                         |  | N/A                                                                                     |  |
+|  | \[Channel*N*\] |  | beat\_active\[21\]            |  | binary                 |  | Indicates whether the player is currently positioned within 50 milliseconds of a beat or not.                         |  | N/A                                                                                     |  |
+|  | \[Channel*N*\] |  | loop\_double\[22\]            |  | binary                 |  | Doubles the current loop's length by moving the end marker.                                                           |  | Loop length doubles on waveform                                                         |  |
+|  | \[Channel*N*\] |  | loop\_halve\[23\]             |  | binary                 |  | Halves the current loop's length by moving the end marker. Player immediately loops if past the new endpoint.         |  | Loop length halves on waveform                                                          |  |
+|  | \[Channel*N*\] |  | loop\_scale\[24\]             |  | 0.0 - infinity         |  | Scale the loop length by the value scale is set to by moving the end marker.                                          |  | Loop length is scaled by given amount on waveform.                                      |  |
+|  | \[Channel*N*\] |  | beatloop\[25\]                |  | 0.0625 - 128           |  | Setup a loop over the set number of beats.                                                                            |  | A loop is shown over the set number of beats.                                           |  |
+|  | \[Channel*N*\] |  | beatloop\_(X)\[26\]           |  | 0.0 / 1.0 (PushButton) |  | Setup a loop over X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                  |  | A loop is shown over X beats.                                                           |  |
+|  | \[Channel*N*\] |  | quantize\[27\]                |  | 0.0 / 1.0 (PushButton) |  | Aligns Hotcues, CUE and Loop In & Out to the next beat starting from the current position.                            |  | Hotcues, CUE and Loop In & Out are aligned to the next beat from the previous position. |  |
+|  | \[Channel*N*\] |  | quantize\_beat\[28\]          |  | 0.0 - infinity         |  | Holds the frame offset position of the next beat.                                                                     |  | Is used internally by CueControl (CUEs & Hotcues) and LoopingControl for quantization.  |  |
 
 This list contains nearly all of the controls that are useful to MIDI
 mapping developers.
@@ -604,9 +605,9 @@ ControlObjects wrappers should be used as follows:
 
 18. introduced in Mixxx v1.10.0
 
-19. changed in Mixxx v1.10.0
+19. introduced in Mixxx v1.10.0
 
-20. introduced in Mixxx v1.10.0
+20. changed in Mixxx v1.10.0
 
 21. introduced in Mixxx v1.10.0
 
@@ -621,3 +622,5 @@ ControlObjects wrappers should be used as follows:
 26. introduced in Mixxx v1.10.0
 
 27. introduced in Mixxx v1.10.0
+
+28. introduced in Mixxx v1.10.0

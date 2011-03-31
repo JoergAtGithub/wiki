@@ -174,7 +174,7 @@ you need to do the folllowing:
 ## Tips and Tricks
 
 Note that I (bkgood, ping me if you have issues) have no idea if any of
-this works in "centralized" mode, I like branches :)
+this works in "centralized" mode, I like branches =)
 
 ### Save disk space
 

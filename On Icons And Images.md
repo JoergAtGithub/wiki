@@ -14,13 +14,13 @@ Try to name files so that related assets will group together inside a
 directory when they are sorted alphabetically. In particular, it helps
 to use a common prefix for each icon type. For example:
 
-| Asset Types       | Prefix            | Example                                     |  |
-| ----------------- | ----------------- | ------------------------------------------- |  |
-| Icons             | ic\_              | ic\_mixxx.png                               |  |
-| Icon templates    | ic\_template\_    | ic\_template\_library\_and\_preferences.svg |  |
-| Library icons     | ic\_library\_     | ic\_library\_playlists.png                  |  |
-| Preferences icons | ic\_preferences\_ | ic\_preferences\_broadcast.png              |  |
-| Skin templates    | skin\_template    | skin\_template\_outline.svg                 |  |
+| Asset Types       | Prefix            | Example                                     |
+| ----------------- | ----------------- | ------------------------------------------- |
+| Icons             | ic\_              | ic\_mixxx.png                               |
+| Icon templates    | ic\_template\_    | ic\_template\_library\_and\_preferences.svg |
+| Library icons     | ic\_library\_     | ic\_library\_playlists.png                  |
+| Preferences icons | ic\_preferences\_ | ic\_preferences\_broadcast.png              |
+| Skin templates    | skin\_template    | skin\_template\_outline.svg                 |
 
 ## Working space organisation
 

@@ -1,14 +1,3 @@
-## Abstract
-
-While working on icons in my dev branch
-<https://code.launchpad.net/~jus/mixxx/skins> i found out the
-//res/images/ // folder in Mixxx sources needs a clean-up. Lot of
-old/unused images with confusing name in there. The information provided
-here are as of now only applicable to the dev branch.
-
-If this branch gets merged with trunk i\`ll update the informations
-accordingly. --- *[jus](jus-AT-justmail.de) 2010/07/10 06:21*
-
 ## Tips for Designers
 
 Here are some tips that you might find useful as you develop icons or
@@ -17,7 +6,7 @@ other drawable assets:
   - [Android Icon Design
     Guidelines](http://developer.android.com/guide/practices/ui_guidelines/icon_design.html#design_tips)
   - [Choosing the Right Size and Format for
-    Icons](hhttp://www.visualpharm.com/articles/icon_sizes.html)
+    Icons](http://www.visualpharm.com/articles/icon_sizes.html)
 
 ## Common naming conventions for icon assets
 
@@ -28,9 +17,10 @@ to use a common prefix for each icon type. For example:
 | Asset Types       | Prefix            | Example                                     |  |
 | ----------------- | ----------------- | ------------------------------------------- |  |
 | Icons             | ic\_              | ic\_mixxx.png                               |  |
-| Preferences Icons | ic\_preferences\_ | ic\_preferences\_broadcast.png              |  |
-| Library Icons     | ic\_library\_     | ic\_library\_playlists.png                  |  |
-| Icon Templates    | ic\_template\_    | ic\_template\_library\_and\_preferences.svg |  |
+| Icon templates    | ic\_template\_    | ic\_template\_library\_and\_preferences.svg |  |
+| Library icons     | ic\_library\_     | ic\_library\_playlists.png                  |  |
+| Preferences icons | ic\_preferences\_ | ic\_preferences\_broadcast.png              |  |
+| Skin templates    | skin\_template    | skin\_template\_outline.svg                 |  |
 
 ## Working space organisation
 
@@ -89,8 +79,16 @@ Sub-folder that holds various templates for image files
   - ic\_template\_mixxx.svg = multilayered Inkscape template for Mixxx
     application icon, holds special layer for 16x16 icon too
   - ic\_template\_library\_and\_preferences.svg = multilayered Inkscape
-    template for all icons in library widget & preferences dialog.
-  - logo\_mixxx.png = Mixxx logo ( too bad it is not in svg format)
+    vector template for all icons in library widget, preferences dialog
+    & skins library style.
+  - ic\_template\_keyboard\_mapping\_sheet.svg = multilayered Inkscape
+    vector template for keyboard mapping chart (for printout,
+    documentation...)
+  - logo\_mixxx.svg = multilayered Inkscape vector template for Mixxx
+    logo (holds bw variant too)
+  - logo\_mixxx.png = Mixxx logo bitmap
+  - skin\_template\_outline.svg = multilayered Inkscape vector template
+    for Outline skin. See [Creating Skins](creating_skins).
 
 ### mixxx/res/osx
 

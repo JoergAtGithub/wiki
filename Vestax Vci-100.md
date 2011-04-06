@@ -32,7 +32,8 @@ Manufacturer link:
   - [more info](http://www.djtechtools.com/forum/showthread.php?t=871)
   - *not currently supported by Mixxx community (someone please
     verify???)*
-  - Can switch to 1.2 at boot \[need to add youtube link later\]
+  - Can switch to 1.2 at boot
+    [link](http://www.djtechtools.com/forum/showthread.php?t=846#6)
   - 1.3 download link:
     <http://djtechtools.com/forum/showthread.php?t=18220>
 

@@ -17,9 +17,10 @@ any longer would be shooting itself in the foot.)
 Note that there are currently many places the callback thread does or
 can call QMutex::lock(), which \*will\* block until the mutex becomes
 free for locking. This cannot happen in the callback thread, it almost
-guarantees a missed deadline (and consequently an underrun). Here's a
-list (add if you find another, I'll add the callstacks when I'm more
-awake):
+guarantees a missed deadline (and consequently an underrun) at some
+point in the future, even if the triggering conditions are quite rare
+(but with threads, anything is possible). Here's a list (add if you find
+another, I'll add the callstacks when I'm more awake):
 
   - CachingReader::m\_readerMutex
   - EngineBuffer::m\_engineLock

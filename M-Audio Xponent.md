@@ -15,7 +15,7 @@ How to start up Xponent in Listening Mode for LED support:
     decks are fully lit) then release the keys
 4.  Now LEDs work\!
 
-Howto: Xponent setup for LEDs
+Xponent setup for LEDs
 <http://www.native-instruments.com/forum/showthread.php?t=71882>
 
 ## Button behaviour in Mixxx

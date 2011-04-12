@@ -36,6 +36,7 @@ world-class application, somewhat in order of importance:
   - Code: April 8th, 2011
   - Strings: April 20th, 2011
   - GUI: April 20th, 2011
+  - MIDI Scripts: April 20th, 2011
   - Release Date
   - Goal: May 8th, 2011 
   - Actual: 

@@ -21,8 +21,6 @@ Xponent setup for LEDs
 
 ## Button behaviour in Mixxx
 
-[[/media/xponent-mapping-2.png|]]
+[[/media/hardware/xponent-mapping-3.png|]]
 
-1.  Lalalala
-2.  Lelelelel
-3.  Lololo
+**10:** Lalala **11:** Lelele

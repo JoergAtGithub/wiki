@@ -51,12 +51,20 @@ BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 ## 3\. Compile and install
 
 If you got the source code from BZR, change to the newly created "mixxx"
-directory, and use scons to compile and install:
+directory, and use scons to compile. As a regular user, do:
 
-    cd 1.8  # or  cd mixxx  if you downloaded trunk
+    cd 1.9  # or  cd mixxx  if you downloaded trunk
     cd mixxx  # (again)
+    scons
+
+If you want to just run this copy without installing, from the same
+directory, run:
+
+    ./mixxx --resourcePath res/
+
+If you want to install it system-wide, do:
+
     sudo scons prefix=/usr install
-    # or just  scons  if you want to run Mixxx from the current directory.
 
 If you are upgrading, it is recommended to first uninstall the previous
 version of mixxx with the following:

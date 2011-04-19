@@ -155,6 +155,10 @@ of these devices. Same idea as the UCA202 but these allow you to switch
 the input to phono for use with standard turntables. Also good for
 archiving your vinyl.
 
+### Traktor Audio 2
+
+See [this page](traktor_audio_2)
+
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in

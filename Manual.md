@@ -221,13 +221,14 @@ When Mixxx is launched, it tries to select a reasonable sound device for
 output. You can check which device Mixxx has selected in the *Sound
 Hardware* pane in the preferences.
 
-## Master and Headphone Outputs
+## Master and Headphone Outputs (Internal Mixer mode)
 
-Mixxx has two audio paths: The **Master** output and the **Headphones**
-output. The Master output is what a DJ should have connected to their
-main speakers, while the Headphones output should be connected to their
-personal headphones. The headphone output is optional, and can be used
-for [Headphone Cueing](#headphone-cueing).
+When using the built-in mixer, Mixxx has two audio paths: The **Master**
+output and the **Headphones** output. The Master output is what a DJ
+should have connected to their main speakers, while the Headphones
+output should be connected to their personal headphones. The headphone
+output is optional, and can be used for [Headphone
+Cueing](#headphone-cueing).
 
 To configure the Master and Headphones outputs, enter Mixxx's
 preferences and select the *Sound Hardware* pane. In order to select a

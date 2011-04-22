@@ -81,7 +81,7 @@ newer.
 
 # User Interface Overview
 
-[[/media/manual/mixxx-overview.png|]]
+[[/media/manual/mixxx-1.9-overview.png|]]
 
 Mixxx's user interface is designed to be simple and easy to use when
 DJing live. This section outlines the main features of Mixxx's

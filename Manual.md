@@ -147,11 +147,18 @@ KEY is used to "lock" the key of the song that is playing. When unlocked, the pi
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [[/media/manual/waveformoverview.png|]] | The waveform overview provides some important information about the song currently loaded in the corresponding channel. From left to right, these are: Track tempo in BPM, current playback position, and track duration. The more interesting part however, is the waveform visualisation of the song, which is useful for seeing breaks or other important changes in the track so that you don't get surprised when they occur while DJing. It also allows you to jump to an arbitrary position in the track by clicking somewhere on the waveform. |
 
-## End of Track Mode
+## Tap and Repeat
 
-|                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_endoftrack.png|]] | The end of track mode determines the Mixxx's behaviour when it reaches the end of a track. The end of track mode is changed by clicking the block to toggle between the three available options; each channel has it's own end of track mode setting that can be changed independently. **Stop** mode will do nothing further once the end of the track is reached until you load a new track into the channel or seek backwards through the current track. **Loop** will return to the beginning of the finished track and play it again from the start. **Next** will automatically load and play the next song in the 'play queue'. |
+<table>
+<tbody>
+<tr class="odd">
+<td>Within the waveform overview are the TAP and REPEAT buttons.<br />
+<br />
+Use TAP to set the BPM if Mixxx cannot detect it, or has calculated it incorrectly. Press TAP a few times to coincide with the beat of the playing track, and the BPM will be calculated from the average of the last four taps.<br />
+\\REPEAT will make the track begin playing again once it reaches the end. The track will also repeat in reverse if 'rewound' through the beginning.</td>
+</tr>
+</tbody>
+</table>
 
 ## Master and Crossfader Controls
 

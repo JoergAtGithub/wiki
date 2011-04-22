@@ -155,7 +155,8 @@ KEY is used to "lock" the key of the song that is playing. When unlocked, the pi
 <td>Within the waveform overview are the TAP and REPEAT buttons.<br />
 <br />
 Use TAP to set the BPM if Mixxx cannot detect it, or has calculated it incorrectly. Press TAP a few times to coincide with the beat of the playing track, and the BPM will be calculated from the average of the last four taps.<br />
-\\REPEAT will make the track begin playing again once it reaches the end. The track will also repeat in reverse if 'rewound' through the beginning.</td>
+<br />
+REPEAT will make the track begin playing again once it reaches the end. The track will also repeat in reverse if 'rewound' through the beginning.</td>
 </tr>
 </tbody>
 </table>

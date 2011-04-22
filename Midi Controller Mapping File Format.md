@@ -63,7 +63,7 @@ functions. You'll need to consult the MIDI spec for the DJ controller
 you're working with to determine which messages and note/control numbers
 correspond to the DJ controller functions & LEDs. If your controller's
 MIDI spec gives only note names and not numbers, [use this
-table](http://www.harmony-central.com/MIDI/Doc/table2.html) to convert
+table](http://www.wavosaur.com/download/midi-note-hex.php) to convert
 them. To convert from decimal to hex, [use
 this](http://www.geocities.com/binary_converter/).
 

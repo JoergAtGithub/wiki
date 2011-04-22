@@ -120,10 +120,11 @@ See also the SYNC button below.</td>
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="/manual/uioverview/ui_headphone.png" /></td>
+<td><img src="/manual/headphone.png" /></td>
 <td>When toggled, the HEADPHONE button sends the selected channel's audio to the <em>Headphones</em> output audio device selected in the preferences under <em>Sound Hardware</em>. This feature is commonly used when <a href="manual#headphone_cueing">headphone cueing</a> and <a href="manual#beatmatching_and_mixing">beatmatching</a>.<br />
 The FLANGER button enables a built-in flanger effect on the selected channel. A flanger effect applies a "sweeping" sound to the channel and can add extra depth to a mix when used tactfully.<br />
-The tempo SYNC button SYNC will change the tempo of the song in the current channel to match the song in the opposite channel. SYNC can be used to beatmatch songs quicker, and is useful for DJs of all skill levels.</td>
+The tempo SYNC button SYNC will change the tempo of the song in the current channel to match the song in the opposite channel. SYNC can be used to beatmatch songs quicker, and is useful for DJs of all skill levels.<br />
+KEY is used to "lock" the key of the song that is playing. When unlocked, the pitch slider will speed up (or slow down) the track and the pitch will increase (or decrease) along with it. With key lock enabled, the <em>tempo</em> of the track will change but the pitch remains consistent.</td>
 </tr>
 </tbody>
 </table>

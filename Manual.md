@@ -92,7 +92,7 @@ interface.
 <table>
 <tbody>
 <tr class="odd">
-<td><img src="/manual/uioverview/ui_playback.png" /></td>
+<td><img src="/manual/playback.png" /></td>
 <td>The playback controls allow you pause, play, and otherwise manipulate the playback of a song. The REV button toggles reverse playback when pressed during regular playback. When playback is stopped, pressing the CUE button places a cue-point at the current position on the waveform. A cue-point is marked by a white vertical line in the waveform view. If the CUE button is pressed during playback, the song will seek to the cue-point and stop. Holding down the CUE button while the song is positioned on the cue-point will result in the song temporarily playing back, and seeking back to the cue-point upon release of the CUE button. This describes the "CDJ Mode" cue behaviour, which is modifiable in the preferences under <em>Interface-&gt;Default cue behaviour</em>.<br />
 <br />
 The Hot Cue buttons allow you to place additional cue-points inside a song, which immediately start playback when triggered. Clicking a Hot Cue button the first time will place a hot cue at the current position in the song, and pressing it again will begin playback from that position. Hot cues are useful for marking different sections of a song for easy access and for manipulating a song. Placing hot cues at the start of different drum sounds in a song allows you to use the Hot Cue buttons as a mini drumkit. Try placing hot cues on different parts of a melody, and use that to remix songs on-the-fly.</td>

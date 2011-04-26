@@ -389,6 +389,7 @@ editor](#tools) and get started :-)
 
 ``` 
  * Extended Mixxx to support now 36 [[creating_skins#hotcue|hotcues]] (was 32 between Mixxx 1.8.0-1.9.0)
+ * If no background color for [[creating_skins#waveform_overview|waveform overview]] is provided, the background is treated as transparent
 ```
 
 ### Mixxx 1.9.0

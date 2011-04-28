@@ -48,17 +48,19 @@ world-class application, somewhat in order of importance:
   - Traktor/RB Feature Rewrites
   - Major Browse Improvements
   - Crate/Playlist Locking
+  - Other misc improvements (crate export/import)
+  - Library performance improvements
   - Sampler Units
   - Potentially without load/saving of presets
-  - [Effects](effects_framework)
-  - EffectChain infrastructure, simple UI improvements
   - External Audio Passthrough
   - CoreAudio in Mixxx proper (instead of just AppStore)
   - Looping
   - Quantized Looping
   - Beat Loops
+  - Loop Double/Halve
   - Other Stuff\!
   - Multiple Soundcard Synchronization improvements
+  - Soft-takeover Support
   - [Internationalization](http://doc.trolltech.com/4.5/i18n.html)
   - Library Version Bumps
   - SoundTouch -\> 1.5.0
@@ -73,6 +75,8 @@ Launchpad.
 
   - [Skinning Engine](Skinning%20Engine)
   - [Revamped Control System](Revamped%20Control%20System)
+  - [Effects](effects_framework)
+  - EffectChain infrastructure, simple UI improvements
 
 ## Historical Release Roadmaps
 

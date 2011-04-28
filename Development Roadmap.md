@@ -33,12 +33,12 @@ world-class application, somewhat in order of importance:
   - More in-depth (and up-to-date) details on Launchpad:
     <https://launchpad.net/mixxx/+milestone/1.10.0>
   - Feature Freeze
-  - Code: April 8th, 2011
-  - Strings: April 20th, 2011
-  - GUI: April 20th, 2011
-  - MIDI Scripts: April 20th, 2011
+  - Code: May 1st, 2011
+  - Strings: May 16th, 2011
+  - GUI: May 16th, 2011
+  - MIDI Scripts: May 16th, 2011
   - Release Date
-  - Goal: May 8th, 2011 
+  - Goal: May 29th, 2011 
   - Actual: 
 
 #### Feature Targets

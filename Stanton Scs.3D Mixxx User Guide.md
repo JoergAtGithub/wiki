@@ -20,8 +20,8 @@ variables at the top of the script you can set to your liking:
     spinning platter LED in vinyl modes. Otherwise shows in all modes
     except Loop, Instant Pitch Change and TRIG (because they're used for
     other things in those modes.)
-  - **spinningLights**\* - The number of lights used for the spinning
-    platter effect, 1 or 2. (1 is best for juggling.)
+  - **spinningLights**<sup>1</sup> - The number of lights used for the
+    spinning platter effect, 1 or 2. (1 is best for juggling.)
   - **VUMeters** - If set to true, shows a VU meter in the circular area
     for the currently selected deck when in vinyl mode. (Left for deck
     1, right for deck 2.)
@@ -32,13 +32,20 @@ variables at the top of the script you can set to your liking:
   - **globalMode** - If true, the unit will stay in the current mode on
     deck changes (instead of switching to the mode you were in the last
     time you controlled that deck.)
-  - **singleDeck**\* - If you've got more than one MIDI controller, set
-    this to true to have the SCS.3d stay on one deck and make Deck mode
-    non-temporary. [More on this here](#deck-mode).
+  - **singleDeck**<sup>1</sup> - If you've got more than one MIDI
+    controller, set this to true to have the SCS.3d stay on one deck and
+    make Deck mode non-temporary. [More on this here](#deck-mode).
   - **deckChangeWait** - Time in milliseconds to hold the DECK button
     down to avoid changing decks
+  - **pitchAdjustment**<sup>2</sup> - Adjusts the coarseness of the
+    pitch slider (1=coarse, 3=normal, 5=fine)
+  - **finePitchAdjustment**<sup>2</sup> - Adjusts the coarseness of the
+    pitch slider in fine mode (1=coarser, 3=normal, 5=finer)
+  - **finePitchDefault**<sup>2</sup> - If true, swaps normal and fine
+    pitch modes so you can use fine pitch mode unshifted
 
-\* Introduced in Mixxx v1.8.0
+<sup>1</sup> Introduced in Mixxx v1.8.0 <sup>2</sup> Introduced in Mixxx
+v1.9.1
 
 Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
 editor (Wordpad works too) and you'll see these variables right near the

@@ -23,6 +23,11 @@ Please follow instruction file: readme\_driver\_dkms.txt
 
 <http://slist.lilotux.net/linux/deejay/mixxx/>
 
+Update :
+
+  - Ubuntu 10.10 : OK
+  - Ubuntu 11.04 : NOK (I'm working on it, please wait...)
+
 ## Old information
 
 Some more (older) information can be found on these pages:

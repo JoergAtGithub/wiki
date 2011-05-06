@@ -5,10 +5,12 @@
 Found a crash? Generate us a backtrace:
 
 1.  Run "gdb mixxx"
-2.  When the gdb prompt appears, type "run".
+2.  When the gdb prompt appears, type "run"
 3.  When Mixxx crashes, type the following into the gdb prompt: "thread
     apply all bt"
-4.  Copying the gdb info:
+4.  To close the Mixxx window and end gdb, type the following into the
+    gdb prompt: "quit"
+5.  Copying the gdb info:
 
 <!-- end list -->
 

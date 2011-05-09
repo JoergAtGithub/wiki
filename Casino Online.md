@@ -1,4 +1,4 @@
-# Casino Online - How To Build An **Online Casino** Website
+# Casino Online - How To Build An Online Casino Website
 
 ![http://www.newzonegambling.com/wp-content/uploads/2010/03/Online-Casino.jpg](http://www.newzonegambling.com/wp-content/uploads/2010/03/Online-Casino.jpg)
 

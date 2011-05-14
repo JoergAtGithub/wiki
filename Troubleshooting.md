@@ -232,7 +232,7 @@ before going any further. 90% of the time it will fix your problem. You
 might also try getting the latest driver from nVidia's web site instead
 of your PC/card manufacturer since they may be newer.
 
-## Where is the mixxx.log file?
+dagobertolopez===== Where is the mixxx.log file? =====
 
   - Linux: 
   - Windows: (enter the following into the Location bar of an

@@ -232,13 +232,7 @@ before going any further. 90% of the time it will fix your problem. You
 might also try getting the latest driver from nVidia's web site instead
 of your PC/card manufacturer since they may be newer.
 
-dagobertolopez
-
-  - ![Unordered List
-    Item](/mixxx1.8_gui_positioning_shadedark.png)LOLdagobertolopez[[/media/16445_.jpg|]]=====
-    Where is the mixxx.log file? =====
-
-<!-- end list -->
+## Where is the mixxx.log file?
 
   - Linux: 
   - Windows: (enter the following into the Location bar of an
@@ -246,9 +240,6 @@ dagobertolopez
   - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx`
   - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
   - OSX: 
-
-FIXME --- *[DAGOBRETOLOPEZ](dagobertolopez84@live.com) 2011/05/14
-17:39*:-P
 
 ## Mixxxcelaneous Known Issues
 

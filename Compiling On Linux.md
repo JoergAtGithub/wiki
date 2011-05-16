@@ -190,5 +190,3 @@ Now World domination :)
 
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)
   - [Mixxx on Fedora](Mixxx%20on%20Fedora)
-
-[resume services](http://cvresumewritingservices.org/)

@@ -20,10 +20,10 @@ casinos. Look for loyalty bonuses that hand out bonuses for the amount
 of time you play. Finally, you also have to pick an online casino that
 has is offering a good payment plan. The first thing that you have to do
 when looking for legitimate **[Online
-Casinos](http://www.onlinecasinogames.co.uk/)** is to know the budget
-that you have. You look for some payment options. Do not grab to those
-that ask foe a large amount of payments. You will be a loser in that
-way. Then, look for \*\*online \*\*reviews. You can always browse the
-web to search for casino reviews. Do not be interested to free games on
-online **casinos** because if you will win these games, you cannot have
-the real money. Your winnings are also not legitimate.
+Casinos](http://spider.arvixe.com/~bdugan/index.php?do=/blog/online-casinos-how-to-play-free-casino-games-online/)**
+is to know the budget that you have. You look for some payment options.
+Do not grab to those that ask foe a large amount of payments. You will
+be a loser in that way. Then, look for \*\*online \*\*reviews. You can
+always browse the web to search for casino reviews. Do not be interested
+to free games on online **casinos** because if you will win these games,
+you cannot have the real money. Your winnings are also not legitimate.

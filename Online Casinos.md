@@ -10,20 +10,12 @@ Determine the game which you are really interested in.
   
 ![http://www.getminted.com/img/online\_casino.jpg](http://www.getminted.com/img/online_casino.jpg)  
 You must consider looking for reputable **[Online
-Casinos](http://www.onlinecasinogames.co.uk/)**. You better sign up with
-a casino that has been established for a long time. Be aware that new
-**casinos** can loose your deposit and winnings. Then, look for a good
-payout percentage. Next, find a casino that has good customer support.
-You should pick an **online** casino with a variety of games; look for
-your favorite casino games. You can also sign up bonuses offer by the
-casinos. Look for loyalty bonuses that hand out bonuses for the amount
-of time you play. Finally, you also have to pick an online casino that
-has is offering a good payment plan. The first thing that you have to do
-when looking for legitimate **[Online
-Casinos](http://spider.arvixe.com/~bdugan/index.php?do=/blog/online-casinos-how-to-play-free-casino-games-online/)**
-is to know the budget that you have. You look for some payment options.
-Do not grab to those that ask foe a large amount of payments. You will
-be a loser in that way. Then, look for \*\*online \*\*reviews. You can
-always browse the web to search for casino reviews. Do not be interested
-to free games on online **casinos** because if you will win these games,
-you cannot have the real money. Your winnings are also not legitimate.
+Casinos](http://spider.arvixe.com/~bdugan/index.php?do=/blog/online-casinos-how-to-play-free-casino-games-online/)**.
+You better sign up with a casino that has been established for a long
+time. Be aware that new **casinos** can loose your deposit and winnings.
+Then, look for a good payout percentage. Next, find a casino that has
+good customer support. You should pick an **online** casino with a
+variety of games; look for your favorite casino games. You can also sign
+up bonuses offer by the casinos. Look for loyalty bonuses that hand out
+bonuses for the amount of time you play. Finally, you also have to pick
+an online casino that has is offering a good payment plan.

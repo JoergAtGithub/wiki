@@ -15,7 +15,10 @@ specifications. Please feel free to add comments.
     songs to be playing at once. She needs Mixxx to support \>2 decks.
   - DJ Danny wants to prepare the next 2 songs he will mix while the
     first 2 are playing. To do this, he needs \>2 decks.
-  - **Your use case here**
+  - Engineer is building an OSS all digital radio studio and would like
+    to use Mixx as the playout and mixing software using an external
+    midi control board (long-throw faders, but no X-fader) but needs
+    four deck support for station jingles etc.
 
 ## Design
 

@@ -26,8 +26,7 @@ Please follow instruction file: readme\_driver\_dkms.txt
 Update :
 
   - Ubuntu 10.10 : OK
-  - Ubuntu 11.04 : Not tested (I'm working on it, it compiles, but I did
-    have time to check it yet...)
+  - Ubuntu 11.04 : OK
 
 ## Old information
 

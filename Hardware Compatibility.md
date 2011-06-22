@@ -185,6 +185,20 @@ Note: An Audigy LS user reported having to select "surround70" or
 "surround50" as the audio devices in Mixxx's preferences in order to be
 able to use both Master and Headphone outputs.
 
+### Edirol Firewire FA-101
+
+[Product page](http://www.roland.com/products/en/FA-101/)
+
+Not a budget sound card, but provides plenty of inputs and outputs for
+vinyl and external mixers. These are Mono channels though, so you must
+select pairs of them in the channel menu. Latency can be reduced to 1ms
+with an ocasional hiccup, or kept at 2ms for reliability. A usual setup
+would be to set the main outputs (1/2) to headphones, since Monitor
+channels are not supported, and to get a stereo output on them. You
+could then use the remaining outputs as individual decks. A very
+flexible soundcard, that supports many sample rates. Requires a firewire
+connection.
+
 ## Multiple sound cards
 
 Mixxx 1.6.0+ supports multiple sound cards.

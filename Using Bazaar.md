@@ -136,9 +136,8 @@ unless you do it manually. **To bring your features branch up to date**:
     as the Mixxx code base is fairly large and older versions of bzr
     sometimes have difficulty reporting progress.)
   - **Update** to latest version with `bzr update`
-  - **Create a patch** with `bzr diff` \> mychanges.patch and send it to
-    the [mixxx-devel mailing
-    list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+  - **Create a patch** with `bzr diff > mychanges.patch` and attach it
+    to a bug at [Launchpad](http://bugs.launchpad.net/mixxx).
   - If you have commit access, **commit** with `bzr commit -m "Log
     message"` (You'll need to register an SSH key first under your
     personal LP page: <https://launchpad.net/people/+me/+editsshkeys>.)

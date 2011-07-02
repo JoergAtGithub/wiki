@@ -262,8 +262,8 @@ default):
     workaround. -G \</del\> - using QMAKE ifdef to work around this
     now... yuck, but works. -G
   - ~~Package this MSVC-free version for distribution~~ --\>
-    [http://mixxx.org/packages/windows/](http://mixxx.org/packages/windows/?C=M;O=D)
-    \<- installable package people can play with -G
+    ~~[http://mixxx.org/packages/windows/](http://mixxx.org/packages/windows/?C=M;O=D)~~(Broken
+    Link) \<- installable package people can play with -G
   - Until the MSVC-free libraries are 100%, some users may need to
     install the Microsoft Visual C++ Redistributable Package from the
     table on [this page](build_windows_installer#preparation) (depending

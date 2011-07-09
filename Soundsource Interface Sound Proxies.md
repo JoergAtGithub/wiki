@@ -139,3 +139,9 @@ true:
 
 On exit : `return OK; // If the file proved not to be corrupt, even if
 there are no headers present.`
+
+## Updating
+
+This document needs updating, as does the interface. See
+[Launchpad](http://www.mixxx.org/wiki/doku.php/soundsource_interface_sound_proxies)
+for details.

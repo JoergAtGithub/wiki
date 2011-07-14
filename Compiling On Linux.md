@@ -57,6 +57,23 @@ directory, and use scons to compile. As a regular user, do:
     cd mixxx  # (again)
     scons
 
+### Multi-threaded build
+
+If you have a multi-core CPU (or just multiple CPUs) use scons' **-j**
+flag to specify the number of build threads to speed up building.
+Generally, use as many threads as you have cores. (Note that if you have
+a CPU with HyperThreading (which looks like two cores to the OS,) ignore
+the extra apparent one\!)
+
+So for example, if you have two dual-core CPUs for a total of four
+cores, just do: **`scons -j4`**
+
+If you have two single-core HT CPUs, do: **`scons -j2`** even though it
+looks like you have 4 cores. (You don't. Specifying more threads will
+only slow down the build.)
+
+### Run or Install
+
 If you want to just run this copy without installing, from the same
 directory, run:
 

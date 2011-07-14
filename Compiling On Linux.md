@@ -72,6 +72,8 @@ If you have two single-core HT CPUs, do: **`scons -j2`** even though it
 looks like you have 4 cores. (You don't. Specifying more threads will
 only slow down the build.)
 
+### Run or Install
+
 If you want to just run this copy without installing, from the same
 directory, run:
 

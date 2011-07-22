@@ -34,8 +34,8 @@ package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac
 for your platform.
 
 Optionally, also install HSS1394; see the entry for this under the "1.
-Install build dependencies (Method 2 - Compile by hand)" for details for
-installation or exclusion.
+Install build dependencies (Method 2 - Compile by hand)" for details
+about installation or exclusion.
 
 #### If this is your First Time
 

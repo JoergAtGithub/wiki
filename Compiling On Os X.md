@@ -123,16 +123,6 @@ You will need to install the following by hand for the compile process:
   - libogg, libvorbis ([Download](http://xiph.org/downloads/)) --
     \`./configure && sudo make install\` or if you have been using port,
     :?: this will have already been covered by previous ports.:?:
-  - libFLAC ([Overchan
-    Download](http://flac.sourceforge.net/download.html),
-    [Download](http://sourceforge.net/project/showfiles.php?group_id=13478&package_id=32318)
-    (don't try to compile the source directly, you'll need to mess with
-    the ld(1) options and just don't, there's enough nuisances in this
-    process)) -\> still needed or is this covered by libsndfile?  
-    "./configure --disable-asm-optimizations && make" followed by "sudo
-    make install" does compile
-    [libflac 1.2.1](http://www.xiph.org/downloads/) from source on 10.5
-    & 10.6 -- *\[\[|jus\]\] 2011/02/15*
   - libmp4v2 ([Download](http://code.google.com/p/mp4v2/downloads/list))
     or "sudo port install mp4v2"
   - portmidi

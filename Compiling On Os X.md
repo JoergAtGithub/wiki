@@ -26,7 +26,7 @@ MacPorts: <http://www.macports.org/install.php>
 Then, open the Terminal application and type in the following:
 
 ``` 
- sudo port install libmad libid3tag libsndfile libogg libvorbis libflac portmidi bzr scons libshout2 taglib
+ sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis libmp4v2 portmidi faad2 bzr taglib libshout2
 ```
 
 Lastly, after that has completed, download and install the [Qt SDK

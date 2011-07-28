@@ -51,6 +51,10 @@ the filter is applied to individual pixmaps as they're loaded, not to
 the skin as a whole. So for example a blur filter wouldn't blur the
 edges of a control outside the rectangle of the pixmap.
 
+**Note:** Currently the image processor does not support alpha
+transparency. Be sure to use solid (non-transparent) images in all your
+skin PNGs.
+
 ### Filters
 
 The filters have only been implemented as a quick test so far. At the

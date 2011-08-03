@@ -2,8 +2,8 @@
 
 Compiling Mixxx for Mac OS X is a simple process once you have all
 dependancies and Qt set up properly. This guide assumes you have basic
-knowledge about compiling with the command line (eg: ./configure, make).
-If you don’t, there is a basic guide available at
+knowledge about using and compiling with the command line (eg:
+./configure, make). If you don’t, there is a basic guide available at
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
 
 This guide is written for Leopard (10.5.x) but should work on Tiger. You

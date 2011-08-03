@@ -39,9 +39,6 @@ details about installation or exclusion.
 
 #### If This is Your First Time Using MacPorts
 
-FIXME --- Clarify MacPorts usage, - Work in progress *\[\[|jus\]\]
-2011/02/12 15:06*
-
 After installing MacPorts, using MacPorts to install the required
 libraries is a simple process. Using the command `sudo port install X`,
 where X is the name of each library you’ll need, MacPorts will
@@ -61,49 +58,41 @@ installing `taglib` and `libshout2`.
 If a library already happens to be installed on your computer, that's a
 time-saver, and you'll see something similar to this:
 
-`~/Music/mixxx>sudo port install libmad`
+``` 
+ ~/Music/mixxx>sudo port install libmad
+ Skipping org.macports.activate (libmad ) since this port is already active
+ --->  Cleaning libmad
+```
 
-`Skipping org.macports.activate (libmad ) since this port is already
-active`
+Otherwise, MacPorts will automatically install the library and you'll
+see something similar to this:
 
-`---> Cleaning libmad`
+``` 
+ ~/Music/mixxx>sudo port install libid3tag
+ Password:
+ --->  Fetching libid3tag
+ --->  Attempting to fetch libid3tag-0.15.1b.tar.gz from ftp://ftp.mars.org/pub/mpeg/
+ --->  Verifying checksum(s) for libid3tag
+ --->  Extracting libid3tag
+ --->  Configuring libid3tag
+ --->  Building libid3tag with target all
+ --->  Staging libid3tag into destroot
+ --->  Installing libid3tag 0.15.1b_0
+ --->  Activating libid3tag 0.15.1b_0
+ --->  Cleaning libid3tag
+```
 
-Otherwise, it will automatically install it, like this:
-
-`~/Music/mixxx>sudo port install libid3tag`
-
-`Password:`
-
-`---> Fetching libid3tag`
-
-`---> Attempting to fetch libid3tag-0.15.1b.tar.gz from
-ftp://ftp.mars.org/pub/mpeg/`
-
-`---> Verifying checksum(s) for libid3tag`
-
-`---> Extracting libid3tag`
-
-`---> Configuring libid3tag`
-
-`---> Building libid3tag with target all`
-
-`---> Staging libid3tag into destroot`
-
-`---> Installing libid3tag 0.15.1b_0`
-
-`---> Activating libid3tag 0.15.1b_0`
-
-`---> Cleaning libid3tag`
-
-Note that the password it asks for is just your local machine, not an
-online password. It is necessary because you are going into super-user
-mode in order to write the libraries to your hard drive. It's a
-basically safe operation, but they put it behind a password so the area
-where the libraries are stored doesn't get touched very often.
+Note that the password asked for is an admin password for your local
+machine. This is because you are going into super-user mode in order to
+write the libraries to your hard drive. It's basically a safe operation,
+but they put it behind a password so the area where the libraries are
+stored doesn't get touched very often.
 
 If you get a message like this:
 
-`Error: Target org.macports.fetch returned: fetch failed`
+``` 
+ Error: Target org.macports.fetch returned: fetch failed
+```
 
 It probably means that the config file for port hasn't been updated.
 Perhaps there has been a newer version of the library released. You may

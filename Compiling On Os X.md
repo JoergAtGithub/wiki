@@ -46,8 +46,9 @@ After installing MacPorts, using MacPorts to install the required
 libraries is a simple process. Using the command `sudo port install X`,
 where X is the name of each library you’ll need, MacPorts will
 automatically download and install the required dependencies. This can
-be done one at time, by entering single entries like `sudo port install
-scons`, or all at once by entering the entire command given above.
+be done one at time by entering single entries like `sudo port install
+scons` for each library listed above or all at once by entering the
+entire command given above.
 
 Note that if you attempt to install everything at once and an error
 occurs in installation of a library, MacPorts will not continue past the

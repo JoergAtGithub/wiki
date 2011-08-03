@@ -23,7 +23,7 @@ dependencies through MacPorts.
 Start by downloading and installing one of the .dmg disk images for
 MacPorts: <http://www.macports.org/install.php>
 
-Next, open the Terminal application and type in the following:
+Next, open the Terminal application and use the following command:
 
 ``` 
  sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis libmp4v2 portmidi faad2 bzr taglib libshout2

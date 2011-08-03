@@ -42,11 +42,23 @@ details about installation or exclusion.
 FIXME --- Clarify MacPorts usage, - Work in progress *\[\[|jus\]\]
 2011/02/12 15:06*
 
-First, download all of the libraries and utilities in the above list,
-starting with scons. During this process, your main command is "sudo
-port install XXX", where XXX is the name of each library you'll need. If
-the library already happens to be installed on your computer, that's a
-time-saver, and you'll get this message:
+After installing MacPorts, using MacPorts to install the required
+libraries is a simple process. Using the command `sudo port install X`,
+where X is the name of each library you’ll need, MacPorts will
+automatically download and install the required dependencies. This can
+be done one at time, by entering single entries like `sudo port install
+scons`, or all at once by entering the entire command given above.
+
+Note that if you attempt to install everything at once and an error
+occurs in installation of a library, MacPorts will not continue past the
+library that caused the error. For example, if after entering the full
+command you receive an error with `bzr`, you’ll need to sort out the
+error and then finish the installation by entering `sudo port install
+bzr taglib libshout2` to properly install `bzr` and then continue with
+installing `taglib` and `libshout2`.
+
+If a library already happens to be installed on your computer, that's a
+time-saver, and you'll see something similar to this:
 
 `~/Music/mixxx>sudo port install libmad`
 

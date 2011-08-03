@@ -37,9 +37,9 @@ Optionally, also install HSS1394; see the entry for HSS1394 under the
 section "1. Install build dependencies (Method 2 - Compile by hand)" for
 details about installation or exclusion.
 
-#### If this is your First Time
+#### If This is Your First Time Using MacPorts
 
-FIXME --- Clarify Macports usage, - Work in progress *\[\[|jus\]\]
+FIXME --- Clarify MacPorts usage, - Work in progress *\[\[|jus\]\]
 2011/02/12 15:06*
 
 First, download all of the libraries and utilities in the above list,

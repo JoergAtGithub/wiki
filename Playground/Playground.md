@@ -378,12 +378,12 @@ right. I look forward to seeing how other people scheme *their* skins\!
 ## Orange Widget Icons
 
 **One final note:** The orange icons in the directory tree are
-hard-coded into Mixxx. As 'jus' informed me, |you can only change them
+hard-coded into Mixxx. As 'jus' informed me, | you can only change them
 if you [build Mixxx from
 source](http://mixxx.org/wiki/doku.php/#build_mixxx). Download the Mixxx
 source code ( see wiki link above) and replace the treeview icons in
 /mixxx/res/images/library/ with your custom ones while preserving the
-icons names and compile Mixxx.| Using this method, you can really tweak
+icons names and compile Mixxx. | Using this method, you can really tweak
 the way Mixxx looks on your system. However, **this will not affect the
 way your skin looks on someone else's system**.
 

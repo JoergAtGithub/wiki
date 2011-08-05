@@ -35,7 +35,7 @@ To avoid ugly results like this, you must:
     control edges and corners 
   - avoid transparent backgrounds in your PNGs 
 
-### Color Declarations Affected by Schemer
+## Color Declarations Affected by Schemer
 
 **Another thing to remember** when designing a skin for scheming is that
 colors explicitly set in
@@ -44,10 +44,10 @@ elements will not be affected by the color scheme processor. For
 example, you can style tool tips and library widget elements using
 CSS-like declarations such as
 
-    &lt;Style>
+    <Style>
      QToolTip { font: 11px Lucida Grande, Lucida Sans Unicode, Arial, Verdana, sans-serif; 
      background-color: #191919; color: #CCCCCC; border: 1px solid #CCCCCC; padding: 4px; }  
-    &lt;/Style>
+    </Style>
 
 . The colors declared here will not change with the scheme (as of Mixxx
 1.9). For them to change, **colors must be declared using \<BgColor\>,
@@ -84,8 +84,8 @@ help me.
 
 ### Scheme Builder Tool
 
-[**My scheme builder
-tool**](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)
+**[My scheme builder
+tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**
 allows me to input the original color used in my image and the color I
 want to change it to. Then it spits out the XML code I need to use. You
 input colors using hex numbers (like in web coding), which is handy

@@ -197,7 +197,7 @@ the second waveform. The code I end up with is: \<code\> \<Scheme\>
               <HMax>57</HMax>
               <HConst>137</HConst>
           </HSVTweak>
-          </Filters>
+      </Filters>
   </Scheme>
 ```
 
@@ -250,8 +250,7 @@ the HSV Equivalent field in my tool) was 166. The code:
     </Scheme>
 
 By doing this, I got
-![http://www.mrfloresreads.info/remixes/images/threedy\_web2.jpg"
-rel="lightbox"](http://www.mrfloresreads.info/remixes/images/threedy_web2.jpg"%20rel="lightbox")
+![http://www.mrfloresreads.info/remixes/images/threedy\_web2.jpg](http://www.mrfloresreads.info/remixes/images/threedy_web2.jpg)
 the results I wanted. You may have noticed that if you put the color
 numbers mentioned into **[my scheme builder
 tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**,
@@ -279,22 +278,22 @@ copied them into the tool. Then I cut-and-pasted the code into a new
     <Scheme>
         <Name>Ready</Name>
         <Filters>
-        <HSVTweak>
-            <HMin>0</HMin>
-            <HMax>4</HMax>
-            <SMin>197</SMin>
-            <SMax>199</SMax>
-            <HConst>0</HConst>
-            <SConst>36</SConst>
-            <VConst>88</VConst>
-        </HSVTweak>
-        <HSVTweak>
-            <HMin>53</HMin>
-            <HMax>57</HMax>
-            <HConst>-52</HConst>
-            <SConst>53</SConst>
-            <VConst>-24</VConst>
-        </HSVTweak>
+            <HSVTweak>
+                <HMin>0</HMin>
+                <HMax>4</HMax>
+                <SMin>197</SMin>
+                <SMax>199</SMax>
+                <HConst>0</HConst>
+                <SConst>36</SConst>
+                <VConst>88</VConst>
+            </HSVTweak>
+            <HSVTweak>
+                <HMin>53</HMin>
+                <HMax>57</HMax>
+                <HConst>-52</HConst>
+                <SConst>53</SConst>
+                <VConst>-24</VConst>
+            </HSVTweak>
         </Filters>
     </Scheme>
 
@@ -308,9 +307,7 @@ changes targeting very specifically those colors. The results are shown
 below. The top elements are the originals, the bottom elements are with
 the scheme applied. Check out the code below to see how it was done.
 
-\<div
-align="center"\>{{<http://www.mrfloresreads.info/remixes/images/mixxx_tricky_test.png>"
-width="228" height="120" border="0" alt=""\>\</div\>
+![http://www.mrfloresreads.info/remixes/images/mixxx\_tricky\_test.png](http://www.mrfloresreads.info/remixes/images/mixxx_tricky_test.png)
 
     <Scheme>
         <Name>Tricky</Name>
@@ -381,14 +378,16 @@ right. I look forward to seeing how other people scheme *their* skins\!
 ## Orange Widget Icons
 
 **One final note:** The orange icons in the directory tree are
-hard-coded into Mixxx. As 'jus' informed me,
+hard-coded into Mixxx. As 'jus' informed me, |you can only change them
+if you [build Mixxx from
+source](http://mixxx.org/wiki/doku.php/#build_mixxx). Download the Mixxx
+source code ( see wiki link above) and replace the treeview icons in
+/mixxx/res/images/library/ with your custom ones while preserving the
+icons names and compile Mixxx.| Using this method, you can really tweak
+the way Mixxx looks on your system. However, **this will not affect the
+way your skin looks on someone else's system**.
 
-    you can only change them if you [[http://mixxx.org/wiki/doku.php/#build_mixxx|build Mixxx from source]].
-    Download the Mixxx source code ( see wiki link above) and replace the treeview icons in /mixxx/res/images/library/ with your custom ones while preserving the icons names and compile Mixxx.
-
-Using this method, you can really tweak the way Mixxx looks on your
-system. However, **this will not affect the way your skin looks on
-someone else's system**.
+\-- *MexiJew*
 
 -----
 

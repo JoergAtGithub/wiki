@@ -140,14 +140,15 @@ theme was Hue=189**; I wanted to **change it to Hue=4**. The
 The **\<HConst\>-185\</HConst\>** tells Mixxx to subtract 189 from the
 Hue values all the colors used in my images. This worked for me since
 all the colors used were at lease Hue=189. **Be careful** when doing
-this kind of blanket manipulation. **There is a bug in version 1.9**
-that does not allow Hue values higher than 255\! Any Hue changes that
-result in a number higher than 255 or lower than 0 will "wrap around".
-If you add 102 to cyan (H=189), you should get a nice purple color
-(H=291), but Mixxx will say, "Hey\! That number's too high\!" and
-subtract 255, leaving you with orange (H=36). So when using \<HConst\>
-in your schemes, **be sure not to have your colors wrap around**. My
-tool above can help.
+this kind of blanket manipulation. **There is [a bug in
+version 1.9](https://bugs.launchpad.net/mixxx/+bug/816715)** that does
+not allow Hue values higher than 255\! Any Hue changes that result in a
+number higher than 255 or lower than 0 will "wrap around". If you add
+102 to cyan (H=189), you should get a nice purple color (H=291), but
+Mixxx will say, "Hey\! That number's too high\!" and subtract 255,
+leaving you with orange (H=36). So when using \<HConst\> in your
+schemes, **be sure not to have your colors wrap around**. My tool above
+can help.
 
 By using ***just \<HConst\>***, I was able to come up with a schemed
 skin with 5 different color combinations. ([Download skin
@@ -181,27 +182,26 @@ buttons, I use the \<HMin\> and \<HMax\>. **I tell Mixxx to only apply
 the \<HConst\> to Hues between 0 and 4** (in case some pixels changed
 from a pure 2 Hue during image editing). I run a second filter in the
 same scheme, this time limiting the change to Hues between 53 and 57 for
-the second waveform. The code I end up with is:
+the second waveform. The code I end up with is: \<code\> \<Scheme\>
 
 ``` 
-    <Scheme>
-        <Name>The Blues</Name>
-        <Filters>
-            <HSVTweak>
-                <HMin>0</HMin>
-                <HMax>4</HMax>
-                <HConst>206</HConst>
-            </HSVTweak>
-            <HSVTweak>
-                <HMin>53</HMin>
-                <HMax>57</HMax>
-                <HConst>137</HConst>
-            </HSVTweak>
-            </Filters>
-    </Scheme>
+      <Name>The Blues</Name>
+      <Filters>
+          <HSVTweak>
+              <HMin>0</HMin>
+              <HMax>4</HMax>
+              <HConst>206</HConst>
+          </HSVTweak>
+          <HSVTweak>
+              <HMin>53</HMin>
+              <HMax>57</HMax>
+              <HConst>137</HConst>
+          </HSVTweak>
+          </Filters>
+  </Scheme>
 ```
 
-It results in a
+\</code\> It results in a
 ![http://www.mrfloresreads.info/remixes/images/threedy\_blue.jpg](http://www.mrfloresreads.info/remixes/images/threedy_blue.jpg)
 skin with blue waveforms\! Notice that the red Cue button has not
 changed. This is because I limited the change to *only* the reds used in
@@ -219,8 +219,8 @@ same kind of transformation, I ended up with a kind of **orange that was
 not deep enough**. I needed to **increase the Saturation** of the color.
 In Gimp, I had increased the Saturation by 39 but in Mixxx, 39 was not
 producing the same results\! That darn math again. So I made the
-[**scheme builder
-tool**](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool).
+**[scheme builder
+tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**.
 By putting in the original hex color, 9b9336, and the color I wanted to
 end up with, 9b4100, I found out that I needed to increase the
 Saturation by 89, according to Mixxx's scale. However, I only wanted to
@@ -253,8 +253,8 @@ By doing this, I got
 ![http://www.mrfloresreads.info/remixes/images/threedy\_web2.jpg"
 rel="lightbox"](http://www.mrfloresreads.info/remixes/images/threedy_web2.jpg"%20rel="lightbox")
 the results I wanted. You may have noticed that if you put the color
-numbers mentioned into [**my scheme builder
-tool**](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool),
+numbers mentioned into **[my scheme builder
+tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**,
 it actually gives a value of 89 for SConst. I used 100 to make sure it
 maxed out the saturation. Saturation and Values are clipped above 255,
 so I knew it wouldn't hurt to use a higher number than needed.
@@ -269,8 +269,8 @@ black & white skin with color Play and Cue.
 
 In the examples above, I only modified one value at a time using
 HSVTweak, but you don't have to. **You can tweak multiple values at the
-same time.** This is where [**my scheme builder
-tool**](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)
+same time.** This is where **[my scheme builder
+tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**
 comes in handy. To turn the waveforms and buttons into two new versions
 of red, I adjusted the colors in Gimp, picked the hex color values, and
 copied them into the tool. Then I cut-and-pasted the code into a new

@@ -120,18 +120,20 @@ Going into the Change Foreground Color dialog showed me what the new
 value should be. **For example**, I wanted to change it from a
 cyan-based scheme to a red-orange theme. The cyan I used in the **main
 theme was Hue=189**; I wanted to **change it to Hue=4**. The
-**difference was -185**, so in the skin.xml file, I used:
+**difference was -185**, so in the skin.xml file, I used: \<code\>
+\<Scheme\>
 
 ``` 
-    <Scheme>
-        <Name>Blood Orange</Name>
-        <Filters>
-            <HSVTweak>
-                <HConst>-185</HConst>
-            </HSVTweak>
-        </Filters>
-    </Scheme>
+      <Name>Blood Orange</Name>
+      <Filters>
+          <HSVTweak>
+              <HConst>-185</HConst>
+          </HSVTweak>
+      </Filters>
+  </Scheme>
 ```
+
+\</code\>
 
 #### Hue Caveat
 
@@ -151,8 +153,65 @@ By using ***just \<HConst\>***, I was able to come up with a schemed
 skin with 5 different color combinations. ([Download skin
 ZIP](http://www.mrfloresreads.info/remixes/CrystalJelly1280x800-WXGA.zip))
 
-\<div
-align="center"\>[above](http://www.mrfloresreads.info/remixes/images/screenshot_schemes_large.jpg"%20rel="lightbox"%20title="Five%20schemes%20using%20just%20HConst"\>{{http://www.mrfloresreads.info/remixes/images/screenshot_schemes_small.jpg"%20border="0"%20alt=""%20align=""\>%20% A% A=====%20Complex%20Examples%20=====% ABy%20using%20various%20filters%20in%20combination,%20you%20can%20accomplish%20more%20complex%20color%20scheme%20modifications.%20The%20most%20useful%20elements%20for%20me%20are%20turning%20out%20to%20be%20\<?Min\>%20and%20\<?Max\>,%20where%20?%20is%20H,%20S,%20or%20V.%20These%20elements%20limit%20application%20of%20image%20manipulations%20to%20certain%20colors%20based%20on%20given%20Hues,%20Saturations,%20or%20Values%20or%20any%20combination%20thereof.%20Some%20examples%20should%20make%20this%20more%20clear.% A% A===%20How%20to%20Narrow%20Colors%20Affected%20===% AIn%20{{%20http://www.mrfloresreads.info/remixes/images/threedy_original.jpg}}%20this%20skin,%20I%20want%20to%20**change%20the%20colors%20of%20the%20waveforms**.%20I%20also%20want%20to%20change%20the%20FX,%20Repeat,%20and%20Headphones%20buttons%20to%20match%20the%20waveforms%20but%20not%20anything%20else.%20Fortunately,%20**I%20made%20the%20waveforms%20and%20buttons**,%20both%20dark%20and%20"lit"%20versions,%20**using%20the%20same%20Hue**%20\(2,%20almost%20pure%20red\).%20I%20want%20to%20change%20change%20it%20to%20a%20nice%20blue.%20Using%20Gimp,%20I%20changed%20a%20screen%20capture%20and%20color%20picked%20the%20new%20blue%20color%20to%20find%20that%20it%20had%20a%20Hue%20of%20210.%20So%20all%20I%20need%20to%20do%20is%20use%20\<HConst\>%20function.%20However,%20if%20I%20use%20it%20without%20any%20other%20tags,%20it%20changes%20//ALL//%20the%20colors%20and%20the%20result%20is%20yucky.%20To%20only%20change%20the%20red%20waveform%20and%20buttons,%20I%20use%20the%20\<HMin\>%20and%20\<HMax\>.%20**I%20tell%20Mixxx%20to%20only%20apply%20the%20\<HConst\>%20to%20Hues%20between%200%20and%204**%20\(in%20case%20some%20pixels%20changed%20from%20a%20pure%202%20Hue%20during%20image%20editing\).%20I%20run%20a%20second%20filter%20in%20the%20same%20scheme,%20this%20time%20limiting%20the%20change%20to%20Hues%20between%2053%20and%2057%20for%20the%20second%20waveform.%20The%20code%20I%20end%20up%20with%20is:% A\<code\>%20% A%20%20%20%20\<Scheme\>% A%20%20%20%20%20%20%20%20\<Name\>The%20Blues\</Name\>% A%20%20%20%20%20%20%20%20\<Filters\>% A%20%20%20%20%20%20%20%20%20%20%20%20\<HSVTweak\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HMin\>0\</HMin\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HMax\>4\</HMax\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HConst\>206\</HConst\>% A%20%20%20%20%20%20%20%20%20%20%20%20\</HSVTweak\>% A%20%20%20%20%20%20%20%20%20%20%20%20\<HSVTweak\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HMin\>53\</HMin\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HMax\>57\</HMax\>% A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\<HConst\>137\</HConst\>% A%20%20%20%20%20%20%20%20%20%20%20%20\</HSVTweak\>% A%20%20%20%20%20%20%20%20%20%20%20%20\</Filters\>% A%20%20%20%20\</Scheme\>% A\</code\>%20% AIt%20results%20in%20a%20{{http://www.mrfloresreads.info/remixes/images/threedy_blue.jpg%20}}%20skin%20with%20blue%20waveforms!%20Notice%20that%20the%20red%20Cue%20button%20has%20not%20changed.%20This%20is%20because%20I%20limited%20the%20change%20to%20//only//%20the%20reds%20used%20in%20the%20waveform%20and%20coordinated%20buttons.%20The%20Cue%20button%20has%20a%20Hue%20of%20356%20so%20it%20was%20ignored.%20\(Remember%20that%20the%20color%20spectrum%20wraps%20around;%20356%20is%20only%204%20steps%20away%20from%20pure%20red%20because%20360%20is%20the%20same%20as%200.\)%20You%20may%20notice%20that%20the%20knobs%20and%20fader%20look%20weird%20now.%20That's%20because%20I%20haven't%20finished%20converting%20the%20image%20files%20to%20non-transparent.%20Mixxx%20is%20messing%20them%20up%20as%20explained%20[[#Mixxx-1.9-Scheme-Engine-and-Transparent-PNGs).
+![http://www.mrfloresreads.info/remixes/images/screenshot\_schemes\_large.jpg](http://www.mrfloresreads.info/remixes/images/screenshot_schemes_large.jpg)
+
+## Complex Examples
+
+By using various filters in combination, you can accomplish more complex
+color scheme modifications. The most useful elements for me are turning
+out to be \<?Min\> and \<?Max\>, where ? is H, S, or V. These elements
+limit application of image manipulations to certain colors based on
+given Hues, Saturations, or Values or any combination thereof. Some
+examples should make this more clear.
+
+#### How to Narrow Colors Affected
+
+In
+![http://www.mrfloresreads.info/remixes/images/threedy\_original.jpg](http://www.mrfloresreads.info/remixes/images/threedy_original.jpg)
+this skin, I want to **change the colors of the waveforms**. I also want
+to change the FX, Repeat, and Headphones buttons to match the waveforms
+but not anything else. Fortunately, **I made the waveforms and
+buttons**, both dark and "lit" versions, **using the same Hue** (2,
+almost pure red). I want to change change it to a nice blue. Using Gimp,
+I changed a screen capture and color picked the new blue color to find
+that it had a Hue of 210. So all I need to do is use \<HConst\>
+function. However, if I use it without any other tags, it changes *ALL*
+the colors and the result is yucky. To only change the red waveform and
+buttons, I use the \<HMin\> and \<HMax\>. **I tell Mixxx to only apply
+the \<HConst\> to Hues between 0 and 4** (in case some pixels changed
+from a pure 2 Hue during image editing). I run a second filter in the
+same scheme, this time limiting the change to Hues between 53 and 57 for
+the second waveform. The code I end up with is:
+
+``` 
+    <Scheme>
+        <Name>The Blues</Name>
+        <Filters>
+            <HSVTweak>
+                <HMin>0</HMin>
+                <HMax>4</HMax>
+                <HConst>206</HConst>
+            </HSVTweak>
+            <HSVTweak>
+                <HMin>53</HMin>
+                <HMax>57</HMax>
+                <HConst>137</HConst>
+            </HSVTweak>
+            </Filters>
+    </Scheme>
+```
+
+It results in a
+![http://www.mrfloresreads.info/remixes/images/threedy\_blue.jpg](http://www.mrfloresreads.info/remixes/images/threedy_blue.jpg)
+skin with blue waveforms\! Notice that the red Cue button has not
+changed. This is because I limited the change to *only* the reds used in
+the waveform and coordinated buttons. The Cue button has a Hue of 356 so
+it was ignored. (Remember that the color spectrum wraps around; 356 is
+only 4 steps away from pure red because 360 is the same as 0.) You may
+notice that the knobs and fader look weird now. That's because I haven't
+finished converting the image files to non-transparent. Mixxx is messing
+them up as explained
+[above](#Mixxx-1.9-Scheme-Engine-and-Transparent-PNGs).
 
 Starting with the same original skin, **I wanted to change one waveform
 to blue and the other to a complementary orange**. After applying the

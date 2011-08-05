@@ -106,7 +106,7 @@ any hue changes applied equally to all colors would result in color sets
 that still worked well. I designed the layout and got it working in
 Mixxx. Then I applied the schemes.
 
-#### Hue Manipulation
+### Hue Manipulation
 
 After much experimentation, I figured out what I needed to do. It was so
 simple\! All I had to do was add a number to the Hue value that moved it

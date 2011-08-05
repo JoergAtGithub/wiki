@@ -21,12 +21,12 @@ skins can be created using transparent PNGs. This allows for some pretty
 interesting layered effects, like this VU meter in one of my skins (at
 right). Unfortunately, any partially transparent areas in PNGs that have
 schemes applied to them become fully opaque with the applied color.
-![http://www.mrfloresreads.info/remixes/images/pngex.jpg](http://www.mrfloresreads.info/remixes/images/pngex.jpg)
-Fully transparent areas become opaque black. In the example at left,
+Fully transparent areas become opaque black. In the example below left,
 imagine that the yellow circle with a dot is one of a series of PNG
 images with transparency used for rotary knobs on a skin. It looks fine
 until it goes through the scheme processor.
 
+![http://www.mrfloresreads.info/remixes/images/pngex.jpg](http://www.mrfloresreads.info/remixes/images/pngex.jpg)
 To avoid ugly results like this, you must:
 
   - plan your skin layout carefully 

@@ -238,3 +238,10 @@ Closing tag for the schemes filters
 Closing tag for scheme #4
 General color scheme closing tag
 ` |
+
+## Tips and Tool
+
+For a "walkthrough" on creating schemes, see [Skin Color Schemes Tips
+and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool). It also contains
+a link to an online Javascript tool that will help determine correct
+HSVTweak values.

@@ -1968,5 +1968,8 @@ scheme applied)
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture) - Explains how
     colour schemes work in Mixxx 1.6.0+
-  - [Mixxx Skinning
-    Guidelines](http://mixxx.org/wiki/doku.php/skin_guidelines)
+  - [Mixxx Skinning Guidelines](Skin%20Guidelines) 
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool) - A "walkthrough"
+    on creating schemes, includes a link to an online Javascript tool
+    that will help determine correct HSVTweak values.

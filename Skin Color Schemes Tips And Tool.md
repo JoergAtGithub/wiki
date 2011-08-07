@@ -383,7 +383,7 @@ Using this method, you can really tweak the way Mixxx looks on your
 system. However, **this will not affect the way your skin looks on
 someone else's system**.
 
-SIGNATURE
+\--- *[Stevan Flores](stevanf@gmail.com) 2011/08/07 13:39*
 
 -----
 

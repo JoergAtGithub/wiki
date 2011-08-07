@@ -21,8 +21,8 @@ imagine that the yellow circle with a dot is one of a series of PNG
 images with transparency used for rotary knobs on a skin. It looks fine
 until it goes through the scheme processor.
 
-![scs\_tips\_pngex.jpg](scs_tips_pngex.jpg) To avoid ugly results like
-this, you must:
+[[/media/skinning/color_scheme/scs_tips_pngex.jpg|scs\_tips\_pngex.jpg]] To
+avoid ugly results like this, you must:
 
   - plan your skin layout carefully 
   - do not have controls overlap other controls 
@@ -91,7 +91,7 @@ examples.
 
 ## Simple Example
 
-![scs\_tips\_crystaljellylarge.jpg](scs_tips_crystaljellylarge.jpg)
+[[/media/skinning/color_scheme/scs_tips_crystaljellylarge.jpg|scs\_tips\_crystaljellylarge.jpg]]
 **Simple color manipulation** and good planning allowed me to get five
 interesting variants on my first schemed skin. I started by picking a
 set of colors that worked well together using [Color Scheme
@@ -148,7 +148,7 @@ By using ***just \<HConst\>***, I was able to come up with a schemed
 skin with 5 different color combinations. ([Download skin
 ZIP](http://www.mrfloresreads.info/remixes/CrystalJelly1280x800-WXGA.zip))
 
-![scs\_tips\_screenshot\_schemes\_large.jpg](scs_tips_screenshot_schemes_large.jpg)
+[[/media/skinning/color_scheme/scs_tips_screenshot_schemes_large.jpg|scs\_tips\_screenshot\_schemes\_large.jpg]]
 
 ## Complex Examples
 
@@ -161,10 +161,10 @@ examples should make this more clear.
 
 #### How to Narrow Colors Affected
 
-![scs\_tips\_threedy\_original.jpg](scs_tips_threedy_original.jpg) In
-this skin, I want to **change the colors of the waveforms**. I also want
-to change the FX, Repeat, and Headphones buttons to match the waveforms
-but not anything else. Fortunately, **I made the waveforms and
+[[/media/skinning/color_scheme/scs_tips_threedy_original.jpg|scs\_tips\_threedy\_original.jpg]]
+In this skin, I want to **change the colors of the waveforms**. I also
+want to change the FX, Repeat, and Headphones buttons to match the
+waveforms but not anything else. Fortunately, **I made the waveforms and
 buttons**, both dark and "lit" versions, **using the same Hue** (2,
 almost pure red). I want to change change it to a nice blue. Using Gimp,
 I changed a screen capture and color picked the new blue color to find
@@ -194,16 +194,18 @@ the second waveform. The code I end up with is: \<code\> \<Scheme\>
   </Scheme>
 ```
 
-\</code\> ![scs\_tips\_threedy\_blue.jpg](scs_tips_threedy_blue.jpg) It
-results in a skin with blue waveforms\! Notice that the red Cue button
-has not changed. This is because I limited the change to *only* the reds
-used in the waveform and coordinated buttons. The Cue button has a Hue
-of 356 so it was ignored. (Remember that the color spectrum wraps
-around; 356 is only 4 steps away from pure red because 360 is the same
-as 0.) You may notice that the knobs and fader look weird now. That's
-because I hadn't finished converting the image files to non-transparent
-when I was developing this tutorial. Mixxx is messing them up as
-explained [above](#Mixxx-1.9-Scheme-Engine-and-Transparent-PNGs).
+\</code\>
+[[/media/skinning/color_scheme/scs_tips_threedy_blue.jpg|scs\_tips\_threedy\_blue.jpg]]
+It results in a skin with blue waveforms\! Notice that the red Cue
+button has not changed. This is because I limited the change to *only*
+the reds used in the waveform and coordinated buttons. The Cue button
+has a Hue of 356 so it was ignored. (Remember that the color spectrum
+wraps around; 356 is only 4 steps away from pure red because 360 is the
+same as 0.) You may notice that the knobs and fader look weird now.
+That's because I hadn't finished converting the image files to
+non-transparent when I was developing this tutorial. Mixxx is messing
+them up as explained
+[above](#Mixxx-1.9-Scheme-Engine-and-Transparent-PNGs).
 
 Starting with the same original skin, **I wanted to change one waveform
 to blue and the other to a complementary orange**. After applying the
@@ -241,18 +243,18 @@ the HSV Equivalent field in my tool) was 166. The code:
         </Filters>
     </Scheme>
 
-![scs\_tips\_threedy\_web2.jpg](scs_tips_threedy_web2.jpg) By doing
-this, I got the results I wanted. You may have noticed that if you put
-the color numbers mentioned into **[my scheme builder
+[[/media/skinning/color_scheme/scs_tips_threedy_web2.jpg|scs\_tips\_threedy\_web2.jpg]]
+By doing this, I got the results I wanted. You may have noticed that if
+you put the color numbers mentioned into **[my scheme builder
 tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**,
 it actually gives a value of 89 for SConst. I used 100 to make sure it
 maxed out the saturation. Saturation and Values are clipped above 255,
 so I knew it wouldn't hurt to use a higher number than needed.
 
-![scs\_tips\_threedy\_mono.jpg](scs_tips_threedy_mono.jpg) Using a
-similar method, I desaturated (using negative numbers in SConst) all the
-colors except the ones used for the Play and Cue buttons. This gave me a
-black & white skin with color Play and Cue.
+[[/media/skinning/color_scheme/scs_tips_threedy_mono.jpg|scs\_tips\_threedy\_mono.jpg]]
+Using a similar method, I desaturated (using negative numbers in SConst)
+all the colors except the ones used for the Play and Cue buttons. This
+gave me a black & white skin with color Play and Cue.
 
 #### Modify Multiple Values
 
@@ -297,7 +299,7 @@ changes targeting very specifically those colors. The results are shown
 at right. The top elements are the originals, the bottom elements are
 with the scheme applied. Check out the code below to see how it was
 done.
-![scs\_tips\_mixxx\_tricky\_test.png](scs_tips_mixxx_tricky_test.png)
+[[/media/skinning/color_scheme/scs_tips_mixxx_tricky_test.png|scs\_tips\_mixxx\_tricky\_test.png]]
 
     <Scheme>
         <Name>Tricky</Name>

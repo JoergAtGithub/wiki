@@ -119,6 +119,8 @@ plans.
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture)
   - [On Icons and Images](On%20Icons%20and%20Images)
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
 
 ## Google Summer of Code
 

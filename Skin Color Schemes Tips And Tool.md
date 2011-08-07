@@ -21,8 +21,8 @@ imagine that the yellow circle with a dot is one of a series of PNG
 images with transparency used for rotary knobs on a skin. It looks fine
 until it goes through the scheme processor.
 
-[[/media/skinning/color_scheme/scs_tips_pngex.jpg|scs\_tips\_pngex.jpg]] To
-avoid ugly results like this, you must:
+[[/media/skinning/color_scheme/scs_tips_pngex.jpg|]] To avoid ugly results
+like this, you must:
 
   - plan your skin layout carefully 
   - do not have controls overlap other controls 

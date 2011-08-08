@@ -166,6 +166,7 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 
 ## Past Events
 
+  - \[\[\]\] ()
   - [Cheap as Chips, March 9th, 2008](cheapaschips20080309) -
     Christchurch, New Zealand (Kid 90)
   - [Carleton CS Bash, April 12th, 2007](haz200704012) - Ottawa, Canada

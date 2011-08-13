@@ -265,7 +265,7 @@ soundcards or a soundcard with more than 2 channel output. To do this,
 choose the appropriate soundcard and channels for each deck, and leave
 Master and Headphone empty.
 
-## LADSPA effects
+# LADSPA effects
 
 External mixer mode can also be used with
 [Jack](http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit) to route

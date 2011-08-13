@@ -265,6 +265,26 @@ soundcards or a soundcard with more than 2 channel output. To do this,
 choose the appropriate soundcard and channels for each deck, and leave
 Master and Headphone empty.
 
+## LADSPA effects
+
+External mixer mode can also be used with
+[Jack](http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit) to route
+each deck through a [Jack Rack](http://jack-rack.sourceforge.net/)
+effect rack, one for each deck. This gives Mixxx access to the extensive
+collection of LADSPA plugins. Jack rack may be capable of using VST
+plugins but this remains unconfirmed.
+
+The system setup for this is shown in the following image.
+
+[[/media/mixxx-jackd-jackrack-setup-screenshot.jpg|]]
+
+Make sure the correct multichannel sound card has been selected in Jack.
+Some of the channel numbering can be confusing. Notice the numbering
+from 0 on the left of the patch window. Some sound cards may not have
+channels numbered in the expected order. For example the system channels
+used on the right of the patch bay are actually the first two output
+channels of the sound card.
+
 ## Latency
 
 The latency in Mixxx indicates the amount of time it will take for the

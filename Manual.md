@@ -279,7 +279,7 @@ unconfirmed.
 
 The system setup for this is shown in the following image.
 
-[[/media/mixxx-jackd-jackrack-setup-screenshot_3_small.jpg|<http://mixxx.org/wiki/lib/exe/fetch.php/mixxx-jackd-jackrack-setup-screenshot_3.gif>]]
+[[/media/mixxx-jackd-jackrack-setup-screenshot_3.gif|]]
 
 Make sure the correct multichannel sound card has been selected in Jack
 (Jack settings visible bottom left). Some sound cards may not have

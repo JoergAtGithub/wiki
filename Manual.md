@@ -273,16 +273,16 @@ External mixer mode can also be used with
 [Jack](http://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit) to route
 each deck through a [Jack Rack](http://jack-rack.sourceforge.net/)
 effect rack, one for each deck. This gives Mixxx access to the extensive
-collection of LADSPA plugins. Jack rack may be capable of using VST
-plugins but this remains unconfirmed.
+collection of LADSPA plugins. Jack Rack can be controlled with MIDI.
+Jack rack may be capable of using VST plugins but this remains
+unconfirmed.
 
 The system setup for this is shown in the following image.
 
-[[/media/mixxx-jackd-jackrack-setup-screenshot.jpg|]]
+[[/media/mixxx-jackd-jackrack-setup-screenshot_3_small.jpg|<http://mixxx.org/wiki/lib/exe/fetch.php/mixxx-jackd-jackrack-setup-screenshot_3.gif>]]
 
-Make sure the correct multichannel sound card has been selected in Jack.
-Some of the channel numbering can be confusing. Notice the numbering
-from 0 on the left of the patch window. Some sound cards may not have
+Make sure the correct multichannel sound card has been selected in Jack
+(Jack settings visible bottom left). Some sound cards may not have
 channels numbered in the expected order. For example the system channels
 used on the right of the patch bay are actually the first two output
 channels of the sound card.

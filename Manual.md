@@ -43,7 +43,7 @@ English primarily.)*
     3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
     4.  [Headphone Cueing](manual#headphone_cueing)
 7.  [Keyboard and MIDI
-    Controllers](manual#keys_and_hardware_controllers).
+    Controllers](manual#keyboard_and_midi_controllers).
     1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
     2.  [MIDI Controllers](manual#midi_controllers).
 8.  [Getting Involved](manual#getting_involved).

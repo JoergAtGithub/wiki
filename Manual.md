@@ -42,7 +42,7 @@ English primarily.)*
     2.  [Waveform Displays](manual#waveform_displays)
     3.  [Beatmatching and Mixing](manual#beatmatching_and_mixing)
     4.  [Headphone Cueing](manual#headphone_cueing)
-7.  [Keys and Hardware
+7.  [Keyboard and MIDI
     Controllers](manual#keys_and_hardware_controllers).
     1.  [Keyboard Shortcuts](manual#keyboard_shortcuts).
     2.  [MIDI Controllers](manual#midi_controllers).

@@ -18,17 +18,20 @@ referred to as MSVC in discussions.
 
 <!-- end list -->
 
-  - [Microsoft Visual Studio 2008 C++
-    Express](http://www.microsoft.com/express/download/)
-    ([Download](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist)
+  - [Microsoft Visual C++
+    Express](http://www.microsoft.com/express/download/) ([Direct link
+    to 2008 w/
+    SP1](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist).
+    You only need vcexpress.exe.)
   - [Microsoft Windows 7
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
   - [Qt library for Windows
     (MSVC2008)](http://qt.nokia.com/downloads/windows-cpp-vs2008)
-  - [Python](http://python.org/ftp/python/2.6.1/python-2.6.1.msi)
-  - [SCONS](http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe)
+  - [Python](http://python.org/download/) 2.x
+  - [SCONS](http://www.scons.org/download.php)
   - A Bazaar client like [Bazaar w/
-    TortoiseBZR](http://bazaar-vcs.org/Download)
+    TortoiseBZR](http://bazaar-vcs.org/Download) ([TortoiseBZR
+    info](http://wiki.bazaar.canonical.com/TortoiseBzr))
 
 <!-- end list -->
 
@@ -39,8 +42,8 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
     adjusting the paths to match where you actually installed the
-    above:`QTDIR = C:\qt-windows-4.7.2
-    PATH = C:\qt-windows-4.7.2\bin;C:\Python26;C:\Python26\Scripts`
+    above:`QTDIR = C:\qt-windows-4.7.4
+    PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
 
 <!-- end list -->
 

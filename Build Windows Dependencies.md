@@ -140,9 +140,9 @@ you open them in VS:
 
 ### Build
 
-1.  Download and unpack the latest ASIO SDK (requires license
-    agreement):
-    <http://www.steinberg.net/en/company/3rd_party_developer.html>
+1.  Download and unpack the latest [ASIO
+    SDK](http://www.steinberg.net/nc/en/company/developer/sdk_download_portal/asio_sdk.html)
+    (requires license agreement)
 2.  Follow the instructions in the file
     `portaudio\build\msvc\readme.txt` to prepare to build PA with ASIO
     support.

@@ -2,7 +2,7 @@
 
 ## API Documentation
 
-mizzes\_stylistics michelle
+To be written...
 
 ## Example Scripts
 

@@ -115,7 +115,8 @@ To begin troubleshooting any problems you have, please do the following:
     behave strangely, such as play songs in reverse.
   - Ensure "Master Tempo", "Pitch Lock", or "Key Lock" is turned OFF on
     your turntable or CD deck. 
-  - Make sure your tonearm is balanced. 
+  - Make sure your tonearm is balanced. Check the specification sheet
+    for your cartridge to find out the correct tracking weight range.
   - Make sure your soundcards have stereo line-in. Many on-board
     soundcards only have mono line-in and won't function correctly with
     vinyl control. Before you buy any soundcard, verify that it has
@@ -137,9 +138,17 @@ To begin troubleshooting any problems you have, please do the following:
   - On other combinations: if you run into trouble on some other setup
     routing your soundcard lines and solve it, please add your solution
     here
+  - When using a phono preamp with a fixed input gain, such as the
+    Hercules Mk2 USB interface, make sure your cartridge has enough
+    output level. The Hercules Mk2 specification sheet:
+    <http://www.hercules.com/download/DJConsoleMK2V2_VDJ_ProductSheet_ENG.pdf>
+    recommends a minimum of 6 mV (millivolts) output. Many hi-fi
+    cartridges output less than that, so if you are using one of these
+    cartridges your vinyl control signal will be too quiet.
   - Make sure you don't have 50/60 Hz ground-loop hum. Ground your
-    turntables to your amp/mixer. Ground-loop hum can cause choppy
-    playback and otherwise unpredictable behaviour.
+    turntables to your amp/mixer, making sure the ground connection is
+    clean (not oxidised) and attached firmly. Ground-loop hum can cause
+    choppy playback and otherwise unpredictable behaviour.
 
 Next, verify that the signal is being received by your computer
 properly.

@@ -5,6 +5,19 @@ and controllers. Since it's been outdated by newer kernel versions,
 community members are now maintaining it, so it works also in newer
 kernel versions.
 
+## Ubuntu PPA
+
+Reported working on Ubuntu 10.10 and 11.04. Launchpad link:
+<https://launchpad.net/~rojtberg/+archive/hdjmod>
+
+`sudo add-apt-repository ppa:rojtberg/hdjmod`
+
+`sudo apt-get update`
+
+`sudo apt-get install hdjmod-dkms`
+
+`sudo modprobe hdj_mod`
+
 ## Package .deb
 
 For Ubuntu 10.04 and up, you'll want lightrush's patched version:

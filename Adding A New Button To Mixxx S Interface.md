@@ -1,106 +1,246 @@
-# Tutorial: Adding a new button to Mixxx
+# Tutorial: Mixxx button hack
 
-**Warning:** This page is a work-in-progress/stream-of-consciousness
-jumble.
+**Disclaimer:** This is not a skinning tutorial. This tutorial is just
+for fun.
+
+## Audience
+
+If you are absolutely new to Mixxx code base and you are impatient to
+hack this awesome piece of work, then you are the intended audience.
 
 ## Introduction
 
-## Step 1 - Edit the Skin file
+Mixxx has come a long way since it's early days, the code base has grown
+too much in both size and complexity. This is a naive Mixxx hack which
+aims at providing glimpse into Mixxx's code base.
 
-Crack open the skin.xml file in your **Mixxx/skins/outlineSmall** folder
-on Windows, or **/usr/share/mixxx/skins/outlineSmall** on Linux.
+## Aim
 
-Paste the following code in after "**\</Background\>**":
+We'll try to add a new button to Mixxx's interface which will play the
+track loaded in Channel 1.
 
-``` 
- <PushButton>
-  <Tooltip>n00b button</Tooltip>
-  <NumberStates>1</NumberStates>
-  <State>
-   <Number>0</Number>
-   <Pressed>sync-on-Ch1.png</Pressed>
-   <Unpressed>sync-off-Ch1.png</Unpressed>
-  </State>
-  <Pos>56,181</Pos>
-  <Connection>
-   <ConfigKey>[[Channel1]],noob</ConfigKey>
-   <EmitOnDownPress>true</EmitOnDownPress>
-   <ButtonState>LeftButton</ButtonState>
-  </Connection>
- </PushButton>
-```
+## What you need to have/know
 
-\<Add explanation of what the above does here\>
+Nothing, just few basic things like:
 
-## Step 2 - Create the ControlPushButton
+1\. Compiling Mixxx from source.
 
-Now we actually need to do some coding. Each element of Mixxx's UI is
-associated with a ControlObject, all of which are subclassed. For
-example, the ControlPushButton object is a subclass of ControlObject.
-ControlObjects are used throughout Mixxx because they provide a
-thread-safe way of reading and storing data/states, and as you will see,
-they're very easy to use.
+2\. The root password for your Linux box.
 
-Open up **enginebuffer.cpp**, and find the lines (near line 64) that
-say:
+3\. And, some coffee if you prefer.
 
-``` 
- // Play button
- playButton = new ControlPushButton(ConfigKey(group, "play"), true);
- connect(playButton, SIGNAL(valueChanged(double)), this, SLOT(slotControlPlay(double)));
- playButton->set(0);
-```
+## Let's Go\!
 
-After these lines, add:
+We'll be editing Outline800x480-WVGA interface. Steps to edit other
+interfaces are same.
 
-``` 
- // n00b button
- noobButton = new ControlPushButton(ConfigKey(group, "noob"), true);
- connect(noobButton, SIGNAL(valueChanged(double)), this, SLOT(slotControlNoob(double)));
- noobButton->set(0);
-```
+I am assuming that source code is in **\~/mixxx**
 
-Now, scroll down to the end of the file, and let's create the event
-handler for the button press. Paste in the following code:
+Alright, let's begin\!
 
-``` 
- void EngineBuffer::slotControlNoob(double)
- {
-     // Pops up a messagebox when the button is pressed
-     if (noobButton->get()==1.)
-        QMessageBox::warning(0, "Mixxx Warning","n00b button pressed!");
- }
-```
+> Where are skins?
 
-You may also need to add the following to the top of the file:
+\>
 
-``` 
- #include <qmessagebox.h>
-```
+> In source code skins are at **\~/mixxx/mixxx/src/res/skins**
+> 
+> Installed skin files are generally at **/usr/local/share/mixxx/skins**
+> or **/usr/share/mixxx/skins**
+> 
+> By now you must have noticed that folders have names of skins, open
+> any folder and find **skin.xml**
+> 
+> This is the file that dictates each button it's position, function and
+> other properties.
 
-Lastly, let's add the prototypes for the function that we just created
-to **enginebuffer.h**. Open up **enginebuffer.h** and paste in the
-following code, underneath the line that says "public slots:":
+Now, since we'll be playing with Outline800x480-WVGA interface, crack
+open the skin.xml file in your
+**/usr/local/share/mixxx/skins/Outline800x480-WVGA**.
+
+You might need super-user password to edit this file.
+
+> How do buttons work?
+
+\>
+
+> In Mixxx, we have Control Objects (COs). Each button is hooked to a
+> CO.
+> 
+> When ever a button is pressed a signal is triggered to Mixxx's engine
+> notifying the type of event that has occurred.
+> 
+> Mixxx's engine knows what to do when an event is triggered.
+> 
+> Apart form this, there are various kinds of buttons like,
+> 
+> push-buttons, Play button or Looping belongs to this category.
+> 
+> knobs, Volume controls fall in this category, etc.
+> 
+> We'll learn more about COs in following sections.
+
+In **skin.xml** find the comment:
 
 ``` 
- void slotControlNoob(double);
+        <!--
+    ############################################################################################
+    ############################################################################################
+    Section: Buttons
+    ############################################################################################
+    ############################################################################################
+    -->
 ```
 
-## Step 3 - Recompile Mixxx
+After this comment add the following code:
 
-Run **scons** or compile using MSVC. After that, run your new Mixxx
-executable and play with your new button\!
+    <!--
+      * ***************************************
+         Button- Test
+      * ***************************************
+        -->
+        <PushButton>
+            <Tooltip>This is a Test button</Tooltip>
+            <Style>QToolTip { font: 11px Lucida Grande, Lucida Sans Unicode, Arial, Verdana, sans-serif;
+            background-color: #191919; color: #CCCCCC; border: 1px solid #CCCCCC; padding: 4px; }
+            </Style>
+            <NumberStates>2</NumberStates>
+            <State>
+                <Number>0</Number>
+                <Pressed>btn_play1.png</Pressed>
+                <Unpressed>btn_play1.png</Unpressed>
+            </State>
+            <State>
+                <Number>1</Number>
+                <Pressed>btn_play1_over.png</Pressed>
+                <Unpressed>btn_play1_over.png</Unpressed>
+            </State>
+            <Pos>100,100</Pos>
+            <Connection>
+                <ConfigKey>[Channel1],play</ConfigKey>
+                <EmitOnDownPress>true</EmitOnDownPress>
+                <ButtonState>LeftButton</ButtonState>
+            </Connection>
+        </PushButton>
 
-## Step 4 - Beyond the ControlPushButton
+Alright, you are done\!  
+Save the changes and restart Mixxx. Find your newly added button as see
+how it works.
+
+Following explains what you've just done.
+
+Following lines tell that the this button is a 'push-button'
+
+``` 
+    <PushButton>
+        ...
+    </PushButton>
+```
+
+Following lines dictates what Tooltip will show when mouse will hover
+over this button.
+
+``` 
+    <Tooltip> ... </Tooltip>
+    <Style>
+          ...
+    </Style>
+```
+
+In the following lines, **NumberStates** tells, well, number of states
+this button can have. Here the sate will be either to play or to
+pause.  
+**State** will dictate what image will be used for a given state of
+button.
+
+> After you complete this tutorial, try changing the image name for a
+> given state and see what happens.
+> 
+> Remember that image name must be from the folder of **skin.xml** you
+> are editing.
+
+``` 
+                <NumberStates>2</NumberStates>
+        <State>
+            <Number>0</Number>
+            <Pressed>btn_play1.png</Pressed>
+            <Unpressed>btn_play1.png</Unpressed>
+        </State>
+        <State>
+            <Number>1</Number>
+            <Pressed>btn_play1_over.png</Pressed>
+            <Unpressed>btn_play1_over.png</Unpressed>
+        </State>
+        <Pos> ... </Pos>
+```
+
+Following lines tells which CO button is attached to. **ConfigKey**
+dictates the name of CO button is stringed to. Here we want to hook to
+'play' of \[Channel1\].
+
+> After completing this tutorial, try changing the channel to
+> \[Channel2\] and see what happens.  
+> **ButtonState** This tells which mouse button to respond to.
+
+``` 
+        <Connection>
+            <ConfigKey>[Channel1],play</ConfigKey>
+            <EmitOnDownPress>true</EmitOnDownPress>
+            <ButtonState>LeftButton</ButtonState>
+        </Connection>
+```
+
+> More about Control Objects.
+
+\>
+
+> **Needs to be reviewed**
+
+\>
+
+> For this tutorial you can easily ignore following information.
+> 
+> Imagine an array of mechanical levers (The Control Object).
+> 
+> Each lever is connected to the command center (Mixxx's engine).
+> 
+> A lever may have any number of states, depending on its function.
+> 
+> Controls are divided into groups, viz., channel, master etc.
+> 
+> Each group then has its own control and each control has its states.
+> 
+> Take a look at **ControlValueDelegate::ControlValueDelegate(...)** in
+> 
+> **\~/mixxx/mixxx/src/controlvaluedelegate.cpp**, this is where various
+> COs are declared.
+> 
+> Hang on to know how these COs are used.
+> 
+> I'll talk about the CO we have used, i.e., **\[Channel1\],play**.
+> 
+> Here the group is **\[Channel1\]** and control name is **play**.
+> 
+> Open tthe following file to see how this CO is used
+> 
+> **\~/mixxx/mixxx/src/engine/enginebuffer.cpp**
+> 
+> In definition of constructor find the following line:
+
+``` 
+    playButton = new ControlPushButton(ConfigKey(group, "play"));
+```
+
+> Now, if you are familier with Qt's Signal Slot approach, note that
+> **playButton** is connected to slot **slotControlPlay**
+> 
+> Find the definition of **slotControlPlay** in same file and try
+> fiddling with it.
+> 
+> Please note that COs are not only used buttons on interface but also
+> in internal functioning of Mixxx.
+
+## What after this?
 
 If you're up for more of a challenge, try adding a different control,
 say a Knob/ControlPotmeter. Take a look at how the Knobs are created in
-the skin.xml file, and see if you can figure out how to integrate a new
-ControlPotmeter into enginebuffer.cpp.
-
-'Hint' In order to read the value from the a ControlObject, you just
-need to do something like:
-
-``` 
- float value = potmeter->get();
-```
+the skin.xml file.

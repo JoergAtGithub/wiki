@@ -31,18 +31,26 @@ forums](http://mixxx.org/forums/viewforum.php?f=7).
 
 ## Does Mixxx support multiple soundcards?
 
-**Update:** Mixxx 1.6.0 includes support for multiple soundcards,
-meaning you can have the headphone output coming out of one soundcard
-and have the master ouput going out another soundcard.
+Yes, as of v1.6.0. This means you can have the headphone output coming
+out of one sound card and have the master output going out another.
 
-Mixxx 1.5.0 doesn't support multiple output devices that span different
-soundcards. For example, if you have two soundcards, you cannot
-currently use one soundcard for headphone cueing and the other for
-master output. However, you **can** use multiple outputs on a single
-soundcard. For example, if you purchase a 5.1 USB soundcard, you can use
-the "front" output as your master output, and plug your headphones into
-the "rear" output for cueing. This is what the majority of Mixxx users
-do.
+But **please note** that due to natural differences in clock crystals
+even between two cards of the exact same model, it's not possible to
+have multiple cards work synchronously. As a result, you will likely
+hear pops or skips when using more than one card. Mixxx v1.9.2 and up
+will lock to the clock of the card used for the Master output so at
+least these pops aren't heard on the dance floor, but it's always
+recommended to instead use a single sound card with multiple stereo
+outputs, such as on a true surround (5.1 channel) sound card: you can
+use the "front" output as your master output, and plug your headphones
+into the "rear" output for cueing.
+
+:\!: Be aware that sound cards are usually marketed with the number of
+<span class="underline">monaural</span> channels they have, and you need
+two mono channels for one stereo signal, so you would need at least a
+four-output card to have Master and Headphones outputs on the same card.
+(And if you're using vinyl control with two decks, that means you need a
+card with least four inputs too.)
 
 ## Is it possible to use Mixxx with an external mixer?
 

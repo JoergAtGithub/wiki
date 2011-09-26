@@ -50,7 +50,7 @@ into the "rear" output for cueing.
 two mono channels for one stereo signal, so you would need at least a
 four-output card to have Master and Headphones outputs on the same card.
 (And if you're using vinyl control with two decks, that means you need a
-card with least four inputs too.)
+card with at least four inputs too.)
 
 ## Is it possible to use Mixxx with an external mixer?
 

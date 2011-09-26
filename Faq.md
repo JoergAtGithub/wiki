@@ -136,9 +136,9 @@ As of release 1.8.x, Mixxx supports the following file formats:
   - AAC/M4A (with plugin)
   - WavPack (WV) (with plugin)
 
-If your music isn't currently in one of these formats, it won't show up
-in the Mixxx library. You'll need to use a program like Sox or Audacity
-to convert it.
+If your music isn't currently in one of these formats (or you don't have
+a suitable plugin installed,) it won't show up in the Mixxx library.
+You'll need to use a program like Sox or Audacity to convert it.
 
 ## What happens if a file's sample rate is different from the sound card rate?
 

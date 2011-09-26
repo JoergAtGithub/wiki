@@ -19,16 +19,15 @@ again, or just exit Mixxx.
 
 ## What's the best hardware DJ controller to use with Mixxx?
 
-The 1.6.0 release has excellent support for the [Hercules DJ Console
-Mk2](http://www.hercules.com/us/DJ-Music/bdd/p/13/dj-console-mk2-traktor-3-le).
-The Hercules is a portable little controller with a slick pair of jog
-wheels that's a perfect match for Mixxx. If you're looking for something
-cheaper, the [Hercules DJ Control
-MP3](http://www.hercules.com/showpage.php?swcty=UK&p=126&b=0&f=0) offers
-the same control surface, but without the built-in soundcard.
-
-A complete list of tested hardware devices is available on the [Hardware
-Compatibility](Hardware%20Compatibility) page.
+"Best" is a matter of preference. It depends on what exactly you want to
+do with a controller. Do you want to control everything, or use one as a
+bunch of extra buttons in conjunction with turntables? Mixxx 1.7 and up
+has the ability to provide comprehensive support for any MIDI controller
+due to its scripting engine, and it ships with mappings for a number of
+popular controllers, a complete list of which can be found on the
+[Hardware Compatibility](Hardware%20Compatibility) page.
+Community-contributed mappings for more controllers can be found [on the
+forums](http://mixxx.org/forums/viewforum.php?f=7).
 
 ## Does Mixxx support multiple soundcards?
 

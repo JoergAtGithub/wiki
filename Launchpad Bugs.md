@@ -4,14 +4,21 @@ Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net).
 
 ## Bug Importance Guidelines
 
-  - Low
-  - **A minor feature is subtly broken. Not likely to impact 90% of
-    Mixxx of users.**
+  - Wishlist
+  - **A feature that Mixxx does not currently have.**
+  - If the bug is a placeholder for a project, that project should have
+    a Blueprint.
   - Example:
 
 <!-- end list -->
 
 ``` 
+    * Support a certain sub-format of the FLAC specification.
+    * Add MIDI mapping for XXX controller.
+    * Rewrite the Control system to not suck.
+* Low
+* **A minor feature is subtly broken. Not likely to impact 90% of Mixxx of users.**
+* Example:
     * Keyboard shortcuts fail to work under certain circumstances.
     * A community supported MIDI mapping is broken.
     * A Mixxx Certified MIDI Mapping is subtly broken.

@@ -1,0 +1,35 @@
+# The Mixxx Bug Tracker
+
+Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net).
+
+## Bug Importance Guidelines
+
+  - Low
+  - **A minor feature is subtly broken. Not likely to impact 90% of
+    Mixxx of users.**
+  - Example:
+
+<!-- end list -->
+
+``` 
+    * Keyboard shortcuts fail to work under certain circumstances.
+    * A community supported MIDI mapping is broken.
+    * A Mixxx Certified MIDI Mapping is subtly broken.
+* Medium
+* **A minor feature is seriously broken. A major feature is subtly broken.**
+* Example:
+    * A Mixxx Certified MIDI Mapping is broken.
+    * In a corner case, looping can accidentally become unset.
+* High
+* **A core feature is seriously broken but does not immediately and drastically screw a live performance.**
+* Example: 
+    * Looping does not work. 
+    * AutoDJ does not transition to the next song. 
+* Critical
+* **Any bug that will screw someone who is using Mixxx live.**
+* Example: 
+    * segfaults
+    * assertion failurse 
+    * skips in the master output
+    * bugs that cause a player to go crazy and emit screeching noises
+```

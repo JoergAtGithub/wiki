@@ -36,7 +36,7 @@ Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net).
 * **Any bug that will screw someone who is using Mixxx live.**
 * Example: 
     * segfaults
-    * assertion failurse 
+    * assertion failures 
     * skips in the master output
     * bugs that cause a player to go crazy and emit screeching noises
 ```

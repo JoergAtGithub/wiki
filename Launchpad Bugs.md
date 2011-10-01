@@ -31,6 +31,7 @@ Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net).
 * **A core feature is seriously broken but does not immediately and drastically screw a live performance.**
 * Example: 
     * Looping does not work. 
+    * The Library does not list tracks starting with O.
     * AutoDJ does not transition to the next song. 
 * Critical
 * **Any bug that will screw someone who is using Mixxx live.**

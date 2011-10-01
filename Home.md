@@ -88,6 +88,7 @@ plans.
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
   - [Internationalization](Internationalization)
+  - [The Bug Tracker](launchpad_bugs)
 
 ### Interfaces
 

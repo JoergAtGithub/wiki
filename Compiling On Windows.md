@@ -114,7 +114,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 * [[http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.6.1.zip|Qt source for Windows]]
 * [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires 64-bit OS,) otherwise you'll have to manually specify which version you want to build
 * [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the 64-bit Python and follow the piece-of-cake instructions in the README
-* A Bazaar client like [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
+* A Bazaar client like [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]. You'll need [[http://sourceforge.net/projects/pywin32/files/pywin32/|pywin32]] installed for BZR to install. Make sure you get the "amd64" version that corresponds to the version of Python you have installed.
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
 ```

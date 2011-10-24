@@ -1010,3 +1010,6 @@ optimized [ASMLIB](http://agner.org/optimize/), do the following:
         Additional Options.
     3.  Configuration Properties-\>Linker-\>Input: Add `alibcof64o.lib`
         (or `alibcof32o.lib` for 32-bit) to "Additional Dependencies"
+
+**Note:** Don't link libid3tag, libmad, taglib, or libshout with ASMLIB
+if you want to be able to link Mixxx itself with it.

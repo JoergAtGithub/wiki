@@ -890,13 +890,19 @@ it for taglib.
     the environment variables, to have it use the Platform SDK compile
     tools, libs and includes. (e.g. `C:\Program Files (x86)\Microsoft
     Visual Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-4.  Open the `zlib123\projects\visualc6\zlib.dsp` file via
+4.  Open the `zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj` file via
     File-\>Open-\>Project/Solution.
-5.  Choose the DLL ASM Release configuration and the Win32 platform (if
-    on x64, choose the DLL Release config.)
-6.  Press F7 to build
-7.  When it's done, copy the following file to
-    `mixxx-win[32|64]lib-msvc`:`zlib123\projects\visualc6\Win32_DLL_Release\zlib1.dll`
+5.  Choose the Release configuration and the Win32 platform.
+6.  If you don't have MASM installed, just [download the MASM object
+    files from
+    here](http://www.winimage.com/zLibDll/zlib125_masm_obj.zip) and
+    unpack into your zlib source tree. (Or choose the ReleaseWithoutASM
+    configuration.)
+7.  Right-click the `zlibvc` project and click Build
+8.  When it's done, copy the following file to
+    `mixxx-win[32|64]lib-msvc`:`zlib-1.2.5\contrib\vstudio\vc9\x86\ZlibDllRelease\zlibwapi.dll`
+    (We don't need .h or .lib files for this since Mixxx itself doesn't
+    use it.)
 
 #### Install CMake
 

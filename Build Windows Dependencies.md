@@ -271,8 +271,6 @@ you open them in VS:
 Do this to all of the following files:
 `libogg-1.1.4\win32\VS2008\libogg_dynamic.sln
 libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj
-libogg-1.1.4\win32\VS2008\libogg_static.sln
-libogg-1.1.4\win32\VS2008\libogg_static.vcproj
 `
 
 ### Build
@@ -292,20 +290,15 @@ libogg-1.1.4\win32\VS2008\libogg_static.vcproj
     versions. We had to do it this way otherwise VS Express would see
     the x64 targets in the file and refuse to make them available to
     you, since that's a premium feature of non-free versions of VS.)
-5.  Choose the Release\_SSE2 configuration and the Win32 platform
+5.  Choose the Release configuration and the Win32 platform
 6.  Press F7 to build
-7.  Open the `libogg-1.1.4\win32\VS2008\libogg_static.vcproj` file
-8.  Choose the Release\_SSE2 configuration and the Win32 platform
-9.  Press F7 to build
-10. When it finishes, copy the following files into
+7.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.dll
     libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg.lib (rename to
     ogg.lib)
-    libogg-1.1.4\win32\VS2008\Win32\Release_SSE2\libogg_static.lib
-    (rename to ogg_static.lib)
     `
-11. Copy the `.h` files from `libogg-1.1.4\include\ogg` into
+8.  Copy the `.h` files from `libogg-1.1.4\include\ogg` into
     `mixxx-win[32|64]lib-msvc\ogg`
 
 ## libvorbis

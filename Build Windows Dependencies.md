@@ -143,10 +143,11 @@ you open them in VS:
 
 1.  Download and unpack the latest [ASIO
     SDK](http://www.steinberg.net/nc/en/company/developer/sdk_download_portal/asio_sdk.html)
-    (requires license agreement)
-2.  Follow the instructions in the file
-    `portaudio\build\msvc\readme.txt` to prepare to build PA with ASIO
-    support.
+    (requires login and license agreement)
+2.  Follow the instructions in the files
+    `portaudio\build\msvc\readme.txt` and
+    `portaudio\src\hostapi\asio\ASIO-README.txt` to prepare to build PA
+    with ASIO support.
 3.  Download and install the latest DirectX SDK:
     <http://msdn.microsoft.com/en-us/directx/aa937788.aspx>
 4.  Start the platform SDK command prompt (Start-\>Microsoft Windows
@@ -170,8 +171,12 @@ you open them in VS:
     them available to you, since that's a premium feature of non-free
     versions of VS.)
 9.  Choose the Release configuration and the Win32 platform
-10. Press F7 to build
-11. When it finishes, copy the following files into
+10. Right-click the `portaudio` project and click Properties
+11. Navigate to Configuration Properties-\>C/C++-\>Preprocessor, then
+    under Preprocessor Definitions, change **`PA_USE_ASIO=1`** and
+    **`PA_USE_DS=1`**
+12. Press F7 to build
+13. When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `portaudio\include\portaudio.h
     portaudio\build\msvc\Win32\Release\portaudio_x86.dll (or

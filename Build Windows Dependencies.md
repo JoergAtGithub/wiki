@@ -915,8 +915,14 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
     here](http://www.winimage.com/zLibDll/zlib125_masm_obj.zip) and
     unpack into your zlib source tree. (Or choose the ReleaseWithoutASM
     configuration.)
-7.  Right-click the `zlibvc` project and click Build
-8.  When it's done, copy the following file to
+7.  Right-click the `zlibvc` project and choose Properties
+8.  Under Configuration Properties-\>C/C++-\>Preprocessor, add
+    **`ZLIB_DLL`** to the list of Preprocessor Definitions
+9.  Under Code Generation, ensure that Runtime Library is set to
+    **`Multi-threaded DLL (/MD)`**
+10. Click OK
+11. Right-click the `zlibvc` project again and click Build
+12. When it's done, copy the following file to
     `mixxx-win[32|64]lib-msvc`:`zlib-1.2.5\contrib\vstudio\vc9\x86\ZlibDllRelease\zlibwapi.dll`
     (We don't need .h or .lib files for this since Mixxx itself doesn't
     use it.)

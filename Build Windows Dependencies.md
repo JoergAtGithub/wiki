@@ -877,10 +877,27 @@ for guidance\!*
 
 ### Dependencies
 
-#### Build ZLib
+#### ZLib
 
-You downloaded the source above for zlib, but we actually need to build
-it for taglib.
+You downloaded the zlib source above for libogg, but we actually need to
+build it for taglib.
+
+##### x64 prep for VS Express
+
+If you're doing an x64 build with VS Express, you'll first need to
+change some things in the vcproj and sln files in a text editor before
+you open them in VS:
+
+1.  Replace all instances of "|Win32" (case-sensitive) with
+    "|DontWantThis" or something similar
+2.  Then replace all instances of "|x64" with "|Win32"
+
+Do this to all of the following files:
+`zlib-1.2.5\contrib\vstudio\vc9\zlibvc.sln
+zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
+`
+
+##### Build
 
 1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)

@@ -879,8 +879,8 @@ for guidance\!*
 
 #### Build ZLib
 
-You downloaded the source above for libogg, but we actually need to
-build it for taglib.
+You downloaded the source above for zlib, but we actually need to build
+it for taglib.
 
 1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
     SDK-\>CMD Shell)

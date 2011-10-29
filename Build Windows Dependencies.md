@@ -972,7 +972,18 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `taglib-1.6.3\taglib\Release\tag.lib
     taglib-1.6.3\taglib\Release\tag.dll`
-6.  ~~Copy the following files into a `taglib` folder in
+6.  If you get an error about unresolved external symbols, do the
+    following:
+    1.  Re-open the zlib project above
+    2.  Right-click zlibvc and click Properties
+    3.  Go to Configuration
+        Properties-\>C/C++-\>Preprocessor-\>Preprocessor Definitions and
+        remove `ZLIB_WINAPI` from the list. (You may also need to add
+        `ZLIB_DLL`.)
+    4.  Rebuild zlib & copy the dll file as above to the Mixxx lib
+        folder
+    5.  Re-open taglib and rebuild
+7.  ~~Copy the following files into a `taglib` folder in
     `mixxx-win[32|64]lib-msvc`: `taglib-1.6.3\taglib\toolkit\tfile.h
     taglib-1.6.3\taglib\toolkit\taglib.h
     taglib-1.6.3\taglib\toolkit\tbytevector.h
@@ -984,9 +995,11 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
     taglib-1.6.3\taglib\toolkit\tmap.h
     taglib-1.6.3\taglib\toolkit\tmap.tcc
     `~~
-7.  Just copy <span class="underline">every</span> `.h` file from the
-    taglib source tree into `mixxx-win[32|64]lib-msvc\taglib`
-8.  Also copy `taglib-1.6.3\taglib_config.h` into
+8.  Just copy every `.h` file from the taglib source tree into
+    `mixxx-win[32|64]lib-msvc\taglib`. Some of the files just \#include
+    their counterparts in other directories with the actual content, so
+    be careful to get the actual content ones.
+9.  Also copy `taglib-1.6.3\taglib_config.h` into
     `mixxx-win[32|64]lib-msvc`
 
 # Optimizations

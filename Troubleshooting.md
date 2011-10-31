@@ -234,12 +234,12 @@ of your PC/card manufacturer since they may be newer.
 
 ## Where is the mixxx.log file?
 
-  - Linux: 
+  - Linux: \~/.mixxx/mixxx.log
+  - OSX: \~/.mixxx/mixxx.log
   - Windows: (enter the following into the Location bar of an
     Explorer/My Computer window, or at the command prompt)
   - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx`
   - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
-  - OSX: 
 
 ## Mixxxcelaneous Known Issues
 

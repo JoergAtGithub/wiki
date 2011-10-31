@@ -238,7 +238,9 @@ of your PC/card manufacturer since they may be newer.
   - OSX: \~/.mixxx/mixxx.log
   - Windows: (enter the following into the Location bar of an
     Explorer/My Computer window, or at the command prompt)
-  - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx`
+  - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
+    `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
+    below.
   - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
 
 ## Mixxxcelaneous Known Issues

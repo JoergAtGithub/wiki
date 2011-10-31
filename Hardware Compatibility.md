@@ -199,6 +199,11 @@ could then use the remaining outputs as individual decks. A very
 flexible soundcard, that supports many sample rates. Requires a firewire
 connection.
 
+### SYBA SD-CM-UAUD
+
+Reported on IRC as working well for using Mixxx in Linux. Available for
+about $10 USD.
+
 ## Multiple sound cards
 
 Mixxx 1.6.0+ supports multiple sound cards.

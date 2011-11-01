@@ -20,6 +20,7 @@ There are two different levels of device support in Mixxx:
 |                                                                  |                                         |                            |                                                                                                                                               |
 | ---------------------------------------------------------------- | --------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Device                                                           | Windows                                 | Mac OS X                   | Linux                                                                                                                                         |
+| [American Audio VMS4](American%20Audio%20VMS4)                   | Yes (1.9.0+)                            | Yes (1.9.0+)               | Yes (1.9.0+)                                                                                                                                  |
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[1\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)       |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[2\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.9.0+)                            | Yes (1.9.0+)               | Yes (1.9.0+) \[3\] \[4\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
@@ -81,37 +82,36 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                               |         |          |                                                  |
-| ----------------------------- | ------- | -------- | ------------------------------------------------ |
-| Device                        | Windows | Mac OS X | Linux                                            |
-| Allen and Heath Xone:1D       |         |          |                                                  |
-| Allen and Heath Xone:2D       |         |          |                                                  |
-| Allen and Heath Xone:3D       |         |          |                                                  |
-| Allen and Heath Xone:4D       |         |          |                                                  |
-| Allen and Heath Xone:DX       |         |          |                                                  |
-| American Audio VMS4           |         |          | Yes (1.9.0+), just select mapping in preferences |
-| Ecler Evo4                    |         |          |                                                  |
-| Ecler Evo5                    |         |          |                                                  |
-| Korg NanoPad                  |         |          |                                                  |
-| Korg NanoKontrol              |         |          |                                                  |
-| Korg NanoKey                  |         |          |                                                  |
-| Korg PadKontrol               |         |          |                                                  |
-| Native Instruments Kontrol X1 |         |          |                                                  |
-| Native Instruments Kontrol S4 |         |          |                                                  |
-| Numark Stealth Control        |         |          |                                                  |
-| Numark Omni Control           |         |          |                                                  |
-| Numark MixDeck                |         |          |                                                  |
-| Numark Mixmeister Control     |         |          |                                                  |
-| Numark iDJ3                   |         |          |                                                  |
-| Numark NS7                    |         |          |                                                  |
-| Numark NSFX                   |         |          |                                                  |
-| Numark V7                     |         |          |                                                  |
-| Vestax VCI-300                |         |          |                                                  |
-| Vestax Spin                   |         |          |                                                  |
-| Vestax Typhoon                |         |          |                                                  |
-| Vestax TR-1                   |         |          |                                                  |
-| Vestax VCM-100                |         |          |                                                  |
-| Vestax VCM-600                |         |          |                                                  |
+|                               |         |          |       |
+| ----------------------------- | ------- | -------- | ----- |
+| Device                        | Windows | Mac OS X | Linux |
+| Allen and Heath Xone:1D       |         |          |       |
+| Allen and Heath Xone:2D       |         |          |       |
+| Allen and Heath Xone:3D       |         |          |       |
+| Allen and Heath Xone:4D       |         |          |       |
+| Allen and Heath Xone:DX       |         |          |       |
+| Ecler Evo4                    |         |          |       |
+| Ecler Evo5                    |         |          |       |
+| Korg NanoPad                  |         |          |       |
+| Korg NanoKontrol              |         |          |       |
+| Korg NanoKey                  |         |          |       |
+| Korg PadKontrol               |         |          |       |
+| Native Instruments Kontrol X1 |         |          |       |
+| Native Instruments Kontrol S4 |         |          |       |
+| Numark Stealth Control        |         |          |       |
+| Numark Omni Control           |         |          |       |
+| Numark MixDeck                |         |          |       |
+| Numark Mixmeister Control     |         |          |       |
+| Numark iDJ3                   |         |          |       |
+| Numark NS7                    |         |          |       |
+| Numark NSFX                   |         |          |       |
+| Numark V7                     |         |          |       |
+| Vestax VCI-300                |         |          |       |
+| Vestax Spin                   |         |          |       |
+| Vestax Typhoon                |         |          |       |
+| Vestax TR-1                   |         |          |       |
+| Vestax VCM-100                |         |          |       |
+| Vestax VCM-600                |         |          |       |
 
 ## Sound cards
 

@@ -5,7 +5,7 @@
   - **Make a clean checkout of the branch you are in. NO EXCEPTIONS**
   - `lupdate src -recursive -extensions cpp,h,ui -ts
     res/translations/mixxx.ts`
-  - `ts2po -P res/translations/mixxx.ts >
+  - `ts2po -P -i res/translations/mixxx.ts -o
     res/translations/mixxx/mixxx.pot`
   - Commit, push.
 

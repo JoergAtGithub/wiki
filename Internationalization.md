@@ -3,7 +3,7 @@
 ## Steps to Update Qt/POT templates in Mixxx branches
 
   - **Make a clean checkout of the branch you are in. NO EXCEPTIONS**
-  - `lupdate src// -ts res/translations/mixxx.ts`
+  - `lupdate src -extensions cpp,h,ui -ts res/translations/mixxx.ts`
   - `ts2po -P res/translations/mixxx.ts >
     res/translations/mixxx/mixxx.pot`
   - Commit, push.
@@ -16,3 +16,9 @@ Launchpad will pick up the changes to the template automatically.
   - `bzr merge lp:~mixxxdevelopers/mixxx/BRANCH_translations`
   - Replace `BRANCH` above with the branch you would like to merge
     translation from (e.g. `trunk` or `1.9`)
+  - For every PO file in res/translations/mixxx/, `po2ts
+    res/translations/mixxx/xx.po res/translations/mixxx_xx.ts`
+  - For every mixxx\_xx.ts file in res/translations/, `lrelease
+    res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm`
+  - Update res/mixxx.qrc file to add any new languages that were not
+    previously present.

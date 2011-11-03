@@ -19,7 +19,8 @@ Launchpad will pick up the changes to the template automatically.
     translation from (e.g. `trunk` or `1.9`)
   - For every PO file in res/translations/mixxx/, `po2ts
     res/translations/mixxx/xx.po res/translations/mixxx_xx.ts`
-  - In Bash: `for XX in res/translations/mixxx/*.po; do po2ts $XX
+  - In Bash: `for XX in res/translations/mixxx/*.po; do po2ts -t
+    res/translations/mixxx.ts -i $XX -o
     res/translations/mixxx_${$(basename $XX)%.*}.ts; done`
   - For every mixxx\_xx.ts file in res/translations/, `lrelease
     res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm`

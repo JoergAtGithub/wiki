@@ -80,6 +80,8 @@ referred to as MSVC in discussions.
           - Add `win32=1` if you're on a 64-bit platform with 64-bit
             Python installed, otherwise it will try to build the x64
             version of Mixxx.
+              - Note that this now seems to be `force32=1` in recent
+                branches (1.10).
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with

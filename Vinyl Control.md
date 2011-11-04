@@ -63,9 +63,8 @@ by Mixxx:
 
 At the present time, **Serato records are the ones you should purchase**
 if you're looking to buy vinyl. If you want to use CDs, you can
-**download a free copy** from Rane
-[here](http://rane.com/scratchlivecontrol.zip). (Information is on
-[this](http://rane.com/scratch.html#p7GPc1_6) page.)
+**[download a free
+copy](http://serato.com/downloads/scratchlive-controlcd)** from Serato.
 
 Support for Final Scratch records needs work, and at the moment isn't
 nearly as good as the Serato/Traktor support.

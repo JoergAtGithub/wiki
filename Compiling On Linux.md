@@ -15,7 +15,7 @@ running:
 
 On Fedora 13 and 14, you need enable rpmfusion repo and then:
 
-    yum install scons alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
+    yum install scons bzr alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
     libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
     portaudio-devel ffmpeg-devel libshout-devel python-devel lua-devel \
     tolua++-devel portmidi-devel qt-webkit-devel

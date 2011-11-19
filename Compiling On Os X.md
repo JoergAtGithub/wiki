@@ -44,7 +44,7 @@ Mixxx relies on several external libraries for various features.
 Fortunately, you can automatically download and install most of these
 dependencies through [MacPorts](http://www.macports.org/). MacPorts is a
 package management system that simplifies the installation of software
-on the Mac OS X.
+on Mac OS X.
 
   - Start by downloading and installing one of the .dmg disk images for
     MacPorts: <http://www.macports.org/install.php>

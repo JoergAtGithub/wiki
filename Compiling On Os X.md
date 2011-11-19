@@ -42,24 +42,34 @@ Downloading it requires a free registration at Apple's developer site.
 
 Mixxx relies on several external libraries for various features.
 Fortunately, you can automatically download and install most of these
-dependencies through MacPorts.
+dependencies through [MacPorts](http://www.macports.org/). MacPorts is a
+package management system that simplifies the installation of software
+on the Mac OS X.
 
-Start by downloading and installing one of the .dmg disk images for
-MacPorts: <http://www.macports.org/install.php>
+  - Start by downloading and installing one of the .dmg disk images for
+    MacPorts: <http://www.macports.org/install.php>
+  - Next, open the
+    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
+    application and use the following command to install the necessary
+    libraries:
 
-Next, open the Terminal application and use the following command:
+<!-- end list -->
 
 ``` 
- sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2
+    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2
 ```
 
-Finally, after that has completed, download and install the [Qt SDK
-package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
-for your platform.
+  - Finally, after that has completed, download and install the [Qt SDK
+    package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
+    for your platform.
 
-Optionally, also install HSS1394; see the entry for HSS1394 under the
-section "1. Install build dependencies (Method 2 - Compile by hand)" for
-details about installation or exclusion.
+<!-- end list -->
+
+  - Optionally, also install HSS1394 (a high-speed MIDI-over-Firewire
+    protocol). See the entry for HSS1394 under the section "[Install
+    build dependencies (Method 2 - Compile by
+    hand)](compiling_on_os_x#install_build_dependencies_method_2_-_compile_by_hand)"
+    for details about installation or exclusion.
 
 ### If This is Your First Time Using MacPorts
 

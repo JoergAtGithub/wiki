@@ -13,12 +13,14 @@ Found a crash? Generate us a backtrace:
 
 <!-- end list -->
 
-1.  When the gdb prompt appears, type "run"
-2.  When Mixxx crashes, type the following into the gdb prompt: "thread
+1.  When the gdb prompt appears, type "set height 0" and press enter to
+    disable screen paging.
+2.  Type "run" and press enter.
+3.  When Mixxx crashes, type the following into the gdb prompt: "thread
     apply all bt"
-3.  To close the Mixxx window and end gdb, type the following into the
+4.  To close the Mixxx window and end gdb, type the following into the
     gdb prompt: "quit"
-4.  Copying the gdb info:
+5.  Copying the gdb info:
 
 <!-- end list -->
 

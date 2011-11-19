@@ -1,4 +1,4 @@
-## How to compile Mixxx for Mac OS X
+# How to compile Mixxx for Mac OS X
 
 Compiling Mixxx for Mac OS X is a simple process once you have all
 dependancies and Qt set up properly. This guide assumes you have basic
@@ -6,15 +6,39 @@ knowledge about using and compiling with the command line (eg:
 ./configure, make). If you don’t, there is a basic guide available at
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
 
-This guide is written for Leopard (10.5.x) but should work on Tiger. You
-will need the Xcode development tools installed for gcc and all the
-other sundry Unix headers. If you don't have Xcode already then look on
-OS X Install Disc 2 or sign up at [Apple Developer
-Connection](http://connect.apple.com) and download them (warning: almost
-1G). A guide to getting Xcode is available at [this
-page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php).
+This guide is written for Snow Leopard (10.6.x) and Leopard (10.5.x) but
+should work on Lion (10.7.x).
 
-### 1\. Install build dependencies (Method 1 - MacPorts)
+## 1\. Install Xcode development tools
+
+You will need the [Xcode development
+tools](http://developer.apple.com/technologies/tools/) installed.
+
+Xcode 3.2.6 is the last version that can be downloaded for free for
+users of Snow Leopard (10.6.x) . Downloading it requires a free
+registration at Apple's developer site (but a paid developer program
+membership is not required).
+[Download](https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_3.2.6_and_ios_sdk_4.3__final/xcode_3.2.6_and_ios_sdk_4.3.dmg)
+
+Xcode 4.2 for Snow Leopard (10.6.x) requires that you have a [PAID
+(99$/year) developer account](http://developer.apple.com/programs/mac/),
+it can NOT be downloaded or updated from the Mac App Store (MAS).
+[Download](https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_4.2_with_ios_5_sdk/xcode_4.2_and_ios_5_sdk_for_snow_leopard.dmg)
+
+Xcode 4.2 for Lion (10.7.x) can be downloaded for free from the Mac App
+Store (MAS), it will not install on Snow Leopard 10.6.x).
+[Download](http://itunes.apple.com/us/app/xcode/id448457090?mt=12)
+
+Older versions of Xcode can be be installed from your original Mac OS X
+Install Disc 2, look at [this
+page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php)
+for a guide.
+
+If you need a specific older version, check the [Apple download
+archive](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wo/4.1.17.2.1.3.3.1.0.1.1.0.3.3.3.3.1).
+Downloading it requires a free registration at Apple's developer site.
+
+## 2\. Install build dependencies (Method 1 - MacPorts)
 
 Mixxx relies on several external libraries for various features.
 Fortunately, you can automatically download and install most of these
@@ -37,7 +61,7 @@ Optionally, also install HSS1394; see the entry for HSS1394 under the
 section "1. Install build dependencies (Method 2 - Compile by hand)" for
 details about installation or exclusion.
 
-#### If This is Your First Time Using MacPorts
+### If This is Your First Time Using MacPorts
 
 After installing MacPorts, using MacPorts to install the required
 libraries is a simple process. Using the command `sudo port install X`,
@@ -99,7 +123,7 @@ Perhaps there has been a newer version of the library released. You may
 be hosed at this point, but if you have an older version of the library
 already installed on your system, it may still compile and run properly.
 
-### 1\. Install build dependencies (Method 2 - Compile by hand)
+## 2\. Install build dependencies (Method 2 - Compile by hand)
 
 You will need to install the following by hand for the compile process:
 
@@ -161,18 +185,18 @@ You will need to install the following by hand for the compile process:
   - libshout -- ([Download](http://www.icecast.org/download.php)) -- or
     "sudo port install libshout2"
 
-### 2\. Get Mixxx
+## 3\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
 code:
 
-    bzr checkout lp:mixxx/1.8 (for current stable v1.7)
-    bzr checkout lp:mixxx/1.9 (for current beta v1.9)
+    bzr checkout lp:mixxx/1.9 (for current stable v1.9)
+    bzr checkout lp:mixxx/1.10 (for current beta v1.10)
     bzr checkout lp:mixxx (for latest trunk)
 
-### 3\. Compile and install
+## 4\. Compile and install
 
 If you got the source code from BZR, change to the newly created "mixxx"
 directory, and use scons to compile and install:
@@ -211,7 +235,7 @@ to the mixxx directory and run:
 
     bzr update
 
-### 4\. Create an XCode project (optional)
+## 5\. Create an XCode project (optional)
 
 If you want to work on Mixxx with XCode for an IDE:
 

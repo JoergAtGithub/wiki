@@ -26,7 +26,7 @@ MacPorts: <http://www.macports.org/install.php>
 Next, open the Terminal application and use the following command:
 
 ``` 
- sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis libmp4v2 portmidi faad2 bzr taglib libshout2
+ sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2
 ```
 
 Finally, after that has completed, download and install the [Qt SDK
@@ -129,8 +129,8 @@ You will need to install the following by hand for the compile process:
   - libogg, libvorbis ([Download](http://xiph.org/downloads/)) --
     \`./configure && sudo make install\` or if you have been using port,
     :?: this will have already been covered by previous ports.:?:
-  - libmp4v2 ([Download](http://code.google.com/p/mp4v2/downloads/list))
-    or "sudo port install mp4v2"
+  - mp4v2 ([Download](http://code.google.com/p/mp4v2/downloads/list)) or
+    "sudo port install mp4v2"
   - portmidi
     ([Download](http://sourceforge.net/apps/trac/portmedia/wiki/portmidi),
     or "sudo port install portmidi"

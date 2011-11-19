@@ -161,13 +161,12 @@ You will need to install the following by hand for the compile process:
   - faad2 ([Download](http://sourceforge.net/projects/faac/)) or "sudo
     port install faad2"
   - QT 4.6.0+
-    ([Download](http://www.qtsoftware.com/downloads/sdk-mac-os-cpp)) --
-    get the .dmg and install to the default location, for snow leopard
-    make sure to grab the [64bit cocoa
-    version](http://get.qt.nokia.com/qt/source/qt-mac-cocoa-opensource-4.6.1.dmg)
-    -- DO NOT use qt4-mac delivered through macports. It will give you
-    an error messages that some header files are missing e.g. libmad and
-    others. This is due to a missing QTCore framework.
+    ([Download](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x))
+    -- get the Cocoa Mac binary package for Mac OS X 10.5 - 10.6 (32-bit
+    and 64-bit) and install to the default location. -- DO NOT use
+    qt4-mac delivered through macports. It will give you an error
+    messages that some header files are missing e.g. libmad and others.
+    This is due to a missing QTCore framework.
   - Bazaar ([Download](http://bazaar-vcs.org/Download)) -- Get the
     installer for your version of OS X. The installer contains the
     [Bazaar Explorer

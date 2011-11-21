@@ -59,8 +59,8 @@ werden.
 
 ## Windows
 
-Windows Nutzer installieren Mixxx per Doppelklick auf die ausführbahre
-Mixxx Installationdatei. Das Setup-Programm führt dann durch den
+Windows Nutzer installieren Mixxx per Doppelklick auf die ausführbare
+Mixxx Installationsdatei. Das Setup-Programm führt dann durch den
 Installationsvorgang. Mixxx ist lauffähig auf Windows XP, Vista und
 Windows 7. Mixxx bietet spezielle 32 und 64 bit Versionen.
 
@@ -108,8 +108,8 @@ Mit den Hotcue Buttons können weitere Cuepunkte innerhalb des Tracks gesetzt we
 <tbody>
 <tr class="odd">
 <td><img src="/manual/uioverview/ui_tempo.png" /></td>
-<td>Die Temposteuerung ermöglichen es die Wiedergabe eine Tracks zu verlangsamen oder zu beschleunigen. Es wird oft für das <a href="manual_german#Beatmatching und Mixen">Beatmatching</a> beim Mixen von Tracks benutzt. Der "RATE" Regler verändert das Tempo eines Tracks wenn er bewegt wird. Der "PERM" Buttom ermöglicht eine Feineinstellung der Änderungen , der "TEMP" Button bewirkt eine vorrübergehende Änderung de Tempos solange er gedrückt ist.<br />
-Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks beeinflussen, kann in den Einstellungen unter <em>Options-&gt;Preferences-&gt;Interface</em> festgelegt werden. Basiered auf den berechneten BPM versucht der "SYNC" Button automatisch das Tempo des Tracks in einem Kanal mit das Tempo des Tracks in dem anderen Kanal zu syncronisieren.<br />
+<td>Die Temposteuerung ermöglichen es die Wiedergabe eine Tracks zu verlangsamen oder zu beschleunigen. Es wird oft für das <a href="manual_german#Beatmatching und Mixen">Beatmatching</a> beim Mixen von Tracks benutzt. Der "RATE" Regler verändert das Tempo eines Tracks wenn er bewegt wird. Der "PERM" Button ermöglicht eine Feineinstellung der Änderungen , der "TEMP" Button bewirkt eine vorübergehende Änderung de Tempos solange er gedrückt ist.<br />
+Mit welchen Werten die "PERM" und "TEMP" Buttons jeweils das Tempo eines Tracks beeinflussen, kann in den Einstellungen unter <em>Options-&gt;Preferences-&gt;Interface</em> festgelegt werden. Basierend auf den berechneten BPM versucht der "SYNC" Button automatisch das Tempo des Tracks in einem Kanal mit das Tempo des Tracks in dem anderen Kanal zu synchronisieren.<br />
 <br />
 Mit dem "IN" , "OUT" und "RELOOP-EXIT" Buttons kann man innerhalb eines Tracks einen Loop erzeugen. Der IN Button setzt einen Startpunkt an der aktuellen Wiedergabeposition des Tracks, der OUT Button setzt den Endpunkt und startet den Loop sobald er gesetzt wird. Der "RELOOP-EXIT" Button deaktiviert den Loop wenn man sich in ihm befindet oder aktiviert ihn wenn man ausserhalb ist. Loops können sinnvoll sein wenn man am Ende eines Tracks angelangt ist aber den Nächsten noch nicht bereit hat.<br />
 <br />
@@ -118,11 +118,11 @@ Siehe auch den "SYNC" Button weiter unten.</td>
 </tbody>
 </table>
 
-## Kopfhörer, Flanger und Tempo Synronisation
+## Kopfhörer, Flanger und Tempo Synchronisation
 
 |                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[/media/manual/uioverview/ui_headphone.png|]] | Ist der "HEADPHONE" Button aktiviert, sendet er das Audiosignal des jeweiligen Kanals an das Ausgabegerät, welches in den Einstellungen unter *Sound Hardware-Headphones* gewählt wurde. Dieses Feature wird meistens beim [Vorhören](manual_german#Vorhören) und [Beatmatching](manual_german#Beatmatching%20und%20Mixen) genutzt. Der "FLANGER" Button aktiviert den intergrierten Flanger Effekt auf dem gewählten Kanal. Ein Flanger erzeugt einen "Pseudo-Stereo" Effekt und kann dem Mix zusätzliche Tiefe geben wenn er diskret eingesetzt wird. |
+| [[/media/manual/uioverview/ui_headphone.png|]] | Ist der "HEADPHONE" Button aktiviert, sendet er das Audio-signal des jeweiligen Kanals an das Ausgabegerät, welches in den Einstellungen unter *Sound Hardware-Headphones* gewählt wurde. Dieses Feature wird meistens beim [Vorhören](manual_german#Vorhören) und [Beatmatching](manual_german#Beatmatching%20und%20Mixen) genutzt. Der "FLANGER" Button aktiviert den integrierten Flanger Effekt auf dem gewählten Kanal. Ein Flanger erzeugt einen "Pseudo-Stereo" Effekt und kann dem Mix zusätzliche Tiefe geben wenn er diskret eingesetzt wird. |
 
 ## Lautstärke und Equalizer
 
@@ -165,7 +165,7 @@ Siehe auch den "SYNC" Button weiter unten.</td>
 <tr class="even">
 <td>Mit dem "Crossfader" (Bildmitte) kann flüssig zwischen den beiden Kanälen hin- und her geblendet werden, ausserdem definiert er was aus dem Master-Ausgang zu hören ist. Wird der Crossfader ganz nach links geschoben ist nur Kanal 1 zu hören, ist er ganz nach rechts geschoben so ist nur Kanal 2 zu hören. Jede Position dazwischen ergibt ein Mix aus den beiden Kanälen.(Hinweis: Die tatsächliche Lautstärke der einzelnen Kanäle bei Bewegen des Crossfaders wird über die "Crossfader Curve" eingestellt. Diese findet man in den Einstellungen unter <em>Crossfader</em>.<br />
 <br />
-Der "VOLUME" und "BALANCE" Regler kontrollieren die Laufstärke und Stereo-Balance des Master-Ausgangs. Der "PRE/MAIN" Regler kontrollirt was im Kopfhörer-Ausgang zu hören ist. Dieser Regler funktioniert wie der Crossfader, nur wird hier zwischen Master und Cue (Vorhören) hin- und her geblendet. Ist "PRE/MAIN" ganz nach links gedreht kann nur das Cue-Signal gehört werden, nützlich um z.B. Tracks vorzuhören. Der "HEADVOL" Regler kontrolliert die Lautstärke des Kopfhörer-Signals.<br />
+Der "VOLUME" und "BALANCE" Regler kontrollieren die Laufstärke und Stereo-Balance des Master-Ausgangs. Der "PRE/MAIN" Regler kontrolliert was im Kopfhörer-Ausgang zu hören ist. Dieser Regler funktioniert wie der Crossfader, nur wird hier zwischen Master und Cue (Vorhören) hin- und her geblendet. Ist "PRE/MAIN" ganz nach links gedreht kann nur das Cue-Signal gehört werden, nützlich um z.B. Tracks vorzuhören. Der "HEADVOL" Regler kontrolliert die Lautstärke des Kopfhörer-Signals.<br />
 <br />
 Der "DEPTH","DELAY" und "LFO" Regler kontrollieren den Flanger. Bei diesem Effekt wird das Eingangssignal mit einer verzögerten Kopie gemixt, was zu Interferenzen führt und eine Art Kammfilter-Effekt ergibt. Wird nun das Ausgangssignal des Effekts wieder in in der Eingang geleitet, kann der Effekt verstärkt werde. In Mixxx wird die Intensität des Effekts vom Ausgangssignal zurück in den Eingang geleitet und kann mit dem "DEPTH" Regler angepasst werden.Der "DELAY" Regler gibt die eigentlichen Wert der Verzögerung an. Innerhalb des Effekts wird dieser Wert nochmals durch ein LFO (low frequency oscillator) moduliert, der entsprechend mit dem "LFO" Regler kontrolliert wird.<br />
 Wenn sich das Ganze zu technisch anhört, einfach mit den verschiedenen Parametern experimentieren und hören wie es den Sound beeinflusst.</td>
@@ -195,10 +195,10 @@ Klappt man die "LIBRARY" Anzeige auf , ist dort "MISSING SONGS" gelistet. Alle T
 <br />
 Das "FEATURED ARTISTS" Menü enthält ggf. kostenlose Tracks die zusammen mit Ihrer Version von Mixxx ausgeliefert werden. Die Tracks sind DJ freundlich und lizensiert, so das sie bei jeder Gelegenheit gespielt werden können.<br />
 <br />
-Das "AUTO DJ" Menü ist eine spezielle Wiedergabeliste für das automatische Mixen. Mit einem Klick auf "ENABLE AUTO DJ" wird Mixxx automatisch den nächsten Track von dieser Wiedergabeliste laden ( sofern der aktuelle Track fast zu Ende ist) und automatisch zwischen den Tracks faden. Mixxx spielt continuierlich alle Tracks auf "AUTO DJ" Wiedergabeliste ab.<br />
+Das "AUTO DJ" Menü ist eine spezielle Wiedergabeliste für das automatische Mixen. Mit einem Klick auf "ENABLE AUTO DJ" wird Mixxx automatisch den nächsten Track von dieser Wiedergabeliste laden ( sofern der aktuelle Track fast zu Ende ist) und automatisch zwischen den Tracks faden. Mixxx spielt kontinuierlich alle Tracks auf "AUTO DJ" Wiedergabeliste ab.<br />
 <br />
 Wiedergabelisten können mit einem Rechtsklick auf "PLAYLISTS" erstellt werden. Dort einfach "NEW PLAYLIST" wählen und einen Namen vergeben. Hinweis: Umbenennen ist z.Zt. nicht möglich, also einfach eine Liste mit dem gewünschten Namen erstellen und den Inhalt aus der alten Liste hinüberziehen.<br />
-Tracks können per Drag-und-Drop aus der Bibliothek in die jeweilige Wiedergabeliste gezogen werden. Alternativ kann man den jeweiligen Track in der Bibliothek auswählen und per Rechtsclick "ADD TO PLAYLIST" klicken. Wiedergabelisten können nicht direkt in einen der Player geladen werden da Mixxx eher als Live Mixing-Tool konzipiert ist. Denkbar ist aber den Inhalt einer Wiedergabeliste in den "AUTO DJ" zu ziehen und dort abzuspielen.<br />
+Tracks können per Drag-und-Drop aus der Bibliothek in die jeweilige Wiedergabeliste gezogen werden. Alternativ kann man den jeweiligen Track in der Bibliothek auswählen und per Rechtsklick "ADD TO PLAYLIST" klicken. Wiedergabelisten können nicht direkt in einen der Player geladen werden da Mixxx eher als Live Mixing-Tool konzipiert ist. Denkbar ist aber den Inhalt einer Wiedergabeliste in den "AUTO DJ" zu ziehen und dort abzuspielen.<br />
 <br />
 Crates sind ungeordnete Kollektionen von Tracks und den Wiedergabelisten ähnlich. Crates können mit einem Rechtsklick auf "CRATES" erstellt werden. Dort einfach "NEW CRATE" wählen und einen Namen vergeben. Hinweis: Umbenennen ist z.Zt. nicht möglich, also einfach ein Crate mit dem gewünschten Namen erstellen und den Inhalt aus dem alten Crate hinüberziehen.<br />
 <br />
@@ -222,7 +222,7 @@ Playlists* geändert werden.
 Mixxx' Einstellungen befinden sich unter *Options-\>Preferences*.
 
 Mixxx versucht beim Start eine geeignete Soundkarte für die Wiedergabe
-auzuwählen. Welche Soundkarte ausgewählt wurde, kann in den
+auszuwählen. Welche Soundkarte ausgewählt wurde, kann in den
 Einstellungen unter *Sound Hardware* überprüft werden.
 
 ## Master- und Kopfhörer-Ausgänge
@@ -384,7 +384,7 @@ Sound API in den Einstellungen ausgewählt werden.
 Die Vinyl Steuerung ermöglicht die Wiedergabe von Tracks in Mixxx mit
 Hilfe eines echten Platten- oder CD-Spielers. Es hört und fühlt sich an
 als ob man seine ganze digitale Musiksammlung auf Vinyl hat. Viele DJs
-bevorzugen das typische Gefühl von Vinyl, die Vinyl Steurung ermöglicht
+bevorzugen das typische Gefühl von Vinyl, die Vinyl Steuerung ermöglicht
 es gleichzeitig von den Vorzügen digitalen Audios zu profitieren.
 
 Die Vinyl Steuerung kann in den Einstellungen unter *Vinyl Control*
@@ -428,7 +428,7 @@ Mit der "Lead-in Time" Einstellung kann ein Bereich am Beginn der Vinyls
 eingestellt werden, in welchem der Timecode ignoriert wird. Das ist
 nützlich wenn der Timecode sehr nah an der Kante beginnt, was das
 Back-Cueing am Anfang eines Tracks manchmal schwierig macht und die
-Nadel des Plattenspielers herunterrutschen läßt. Wird eine "Lead-in
+Nadel des Plattenspielers herunterrutschen lässt. Wird eine "Lead-in
 Time" von 20 Sekunden oder mehr eingestellt hat man also mehr Platz auf
 dem Vinyl zum Cueing. Es ist auch hilfreich wenn das Vinyl am Beginn
 abgenutzt ist und nicht mehr zuverlässig funktioniert - einfach die
@@ -485,7 +485,7 @@ zeigen eine zu hohe oder zu niedrige Signalstärke an, die Einstellung
 Mixxx sollte für erfahrene DJs und auch Einsteiger einfach zu bedienen
 sein. Die Benutzeroberfäche orientiert sich an Hardware DJ-Mixern,
 beinhaltet aber auch weitere Elemente um die Praxistauglichkeit zu
-erhöhen (z.B. die paralle Darstellung der Wellenformen).
+erhöhen (z.B. die parallele Darstellung der Wellenformen).
 
 ## Tracks laden
 
@@ -498,13 +498,13 @@ werden:
     in den jeweiligen Player zu laden.
   - Per Drag-and-Drop aus der Bibliothek (im "Library" Modus): Wird ein
     Track per Drag-and-Drop aus der Bibliothek auf eine Wellenform
-    Anzeige gezogen, wird er in dem jeweiligen Player geladens.
+    Anzeige gezogen, wird er in dem jeweiligen Player geladen.
   - Per Drag-and-Drop aus einem externen Dateimanager: Wird ein Track
     per Drag-and-Drop aus einem externen Dateimanager heraus auf eine
     Wellenform Anzeige gezogen, wird er in dem jeweiligen Player
-    geladens. Das funktioniert auch mit anderen Anwendungen unter
-    manchen Betriebssystemen. Zum Beispiel kannn unter OSX ein Track auf
-    diese Weise aus iTunes heraus in Mixxx geladen werden.
+    geladen. Das funktioniert auch mit anderen Anwendungen unter manchen
+    Betriebssystemen. Zum Beispiel kann unter OSX ein Track auf diese
+    Weise aus iTunes heraus in Mixxx geladen werden.
 
 ## Wellenform
 
@@ -513,7 +513,7 @@ Wellenform der Tracks zeigen die gerade gespielt werden. Hilfreich um
 Details in Tracks , wie Steigerungen oder Pausen, im Voraus zu erkennen.
 Die Anzeigen sind parallel zueinander angeordnet um das Beatmatching zu
 erleichtern, so kann mann auch durch das Anordnen der in beiden
-Wellenformen sichtbaren Beats die Tracks syncron laufen lassen. Durch
+Wellenformen sichtbaren Beats die Tracks synchron laufen lassen. Durch
 Klicken und Ziehen auf eine Wellenform kann ein Track in beide
 Richtungen durchsucht werden. Die Anzeige der Wellenform wird dabei in
 Echtzeit aktualisiert. Es git zwei kleinere Elemente mit der
@@ -531,19 +531,19 @@ Tempos zweier Tracks.
 In Mixxx kann das **Tempo** von zwei Tracks angepasst werden indem der
 jeweiligen "RATE" Regler bewegt wird. Die **Phase** der Beats kann durch
 Klicken und Ziehen auf die jeweilige Wellenform verändert werden, das
-Tempo wird so vorubergehend bei einem Track vermindert bis die Beats
+Tempo wird so vorübergehend bei einem Track vermindert bis die Beats
 passen.// Die "TEMP" Buttons ermöglichen auch eine vorübergehende
 Änderung des Tempos (Nudging). Sie können benutzt werden um die Beats
-vorwärts oder rückwärts zu "schieben" um sie zu syncronisieren.
+vorwärts oder rückwärts zu "schieben" um sie zu synchronisieren.
 
 Zwei Tracks sind "beatmatched", sobald das Tempo und die Beats der
-beiden yncronisiert sind sie. Ein "perfektes" Beatmatching is nahezu
+beiden synchronisiert sind sie. Ein "perfektes" Beatmatching ist nahezu
 unmöglich - es werden immer kleinste Tempounterschiede sein.// Ein DJ
 der fit ist hält seine Ohren offen und hört ob die Beats auseinander
 driften. In dem Fall hat man diesen typischen "Double Bass Kick" Sound
 und lasche Kicks, da diese driften auseinander driften. Wenn dass
 passiert können die Beats mit ein paar Klicks auf den entsprechenden
-"TEMP" Button wieder syncronisiert werden. Und jetzt fange an und mache
+"TEMP" Button wieder synchronisiert werden. Und jetzt fange an und mache
 TIESTO neidisch\!
 
 ## Vorhören

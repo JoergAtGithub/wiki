@@ -4,6 +4,15 @@ If you've got a question that's not answered here, please post in the
 [forums](http://www.mixxx.org/forums)\! Also see the
 [Troubleshooting](Troubleshooting) page.
 
+## How do I monitor one track in the headphones with the other playing out the main output?
+
+This requires either a multi-channel sound card or multiple sound cards.
+Note that nearly all built-in sound cards have only one output pair, so
+you will need to add a second sound card with one or more additional
+output pairs. See [below](faq#does_mixxx_support_multiple_soundcards)
+and the [sound card information](hardware_compatibility#sound_cards)
+page for more information.
+
 ## How do I record my Mixxx session?
 
 Mixxx 1.6.0 and up support recording mixes to WAV and AIFF files.

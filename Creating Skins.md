@@ -381,6 +381,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.10.0
 
 ``` 
+ * Added <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]
  * Added <BgPixmap> option to the [[creating_skins#sectionvisual|<Visual>]] group. This allows custom background images for waveform and waveform overview. Image transparency is possible for the waveform overview. Remove the BgColor to make it work. If you supply a BgColor it means "paint the background of the overview to this color" so it prevents transparency.
  * Removed default gradient background from waveform display
 ```

@@ -78,7 +78,7 @@ Timeline
 
 ## Q\&A
 
-Shashank Kumar - Wants 7 band equalizer
+Shashank Kumar - Wants to work on 7 band equalizer
 
 jus
 

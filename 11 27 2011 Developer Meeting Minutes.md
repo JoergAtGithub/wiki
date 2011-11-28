@@ -95,6 +95,10 @@ jus
   - Will work on making the manual awesome\!
   - Would be nice if Native English speaker could review additions to
     manual
+  - Is it really possible to get all this done in 4 months? 
+  - RJ: Since there is not much overlap in the owners for each project,
+    I think it's possible. We'll try it and if any project is clearly
+    not going to make it we'll just push it off to 1.12. 
 
 Phil will work on:
 

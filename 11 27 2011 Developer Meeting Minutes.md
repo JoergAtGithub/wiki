@@ -1,4 +1,7 @@
-# Review of 1.10 Development Cycle
+Slides:
+<https://docs.google.com/a/mixxx.org/present/edit?id=0ATF16gqHaqo7ZGh2Z3Y4cF83Zm5zYmozZms&hl=en_US>
+
+## Review of 1.10 Development Cycle
 
 1.10 = big success\!
 

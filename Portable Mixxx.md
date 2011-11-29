@@ -30,13 +30,22 @@ media type.
 
 # Bare metal
 
-Goal: to make a USB stick/CD image that boots into
+Goal: A USB stick/CD image that boots into an OS image (like
 [DSL](http://www.damnsmalllinux.org/),
 [DSL-N](http://www.damnsmalllinux.org/dsl-n/) or [Tiny Core
-Linux](http://tinycorelinux.com/) that contains Mixxx (and JACK and
-FFADO if possible,) ready to run. The idea is that you can walk up to
-any PC with your MixxxStixxx and music media (external HD, MP3 DVD,
-etc.) and be up & running in about a minute.
+Linux](http://tinycorelinux.com/)) that contains Mixxx (and JACK and
+FFADO if possible,) ready to run. The end result is that you can walk up
+to any PC with your MixxxStixxx/MixxxDisxxx and music media (external
+HD, portable music player, DVD, additional USB stick, etc.) and be up &
+running in about a minute.
+
+## DidJiX
+
+Mixxx running on a live (CD/USB) ArchLinux system:
+<http://didjix.blogspot.com/>
+
+Just download the ISO image and either burn it to a CD or *cat* it to a
+USB stick (this will erase the content of the stick.)
 
 ## MixxxOS
 

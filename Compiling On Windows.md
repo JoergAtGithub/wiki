@@ -41,8 +41,8 @@ referred to as MSVC in discussions.
 
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-    adjusting the paths to match where you actually installed the
-    above:`QTDIR = C:\Qt\4.7.4
+    adjusting the paths to match where you actually installed the above
+    `QTDIR = C:\Qt\4.7.4
     PATH = C:\Qt\4.7.4\bin;C:\Python26;C:\Python26\Scripts`
   - Open the Visual Studio command promt and type the following:`cd /D
     C:\Qt\4.7.4
@@ -57,7 +57,7 @@ referred to as MSVC in discussions.
 
   - Checkout the mixxx repository: with TortoiseBZR, right-click in the
     folder you want to checkout to, choose Bazaar Checkout/Branch... and
-    enter the following source: `lp:mixxx`
+    enter the following source:`lp:mixxx`
 
 <!-- end list -->
 
@@ -66,8 +66,8 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
   - Checkout the dependencies repository (and have it placed beside your
-    "mixxx" directory) from:
-    `lp:~mixxxdevelopers/mixxx/mixxx-win32lib-msvc90-release`
+    "mixxx" directory)
+    from:`lp:~mixxxdevelopers/mixxx/mixxx-win32lib-msvc90-release`
 
 <!-- end list -->
 
@@ -91,7 +91,7 @@ referred to as MSVC in discussions.
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
-    Visual Studio, run "scons msvc", and open the newly generated
+    Visual Studio, run `scons msvc`and open the newly generated
     "mixxx.vcproj" file with Visual Studio.
 
 ## Build the 64-bit version using Microsoft Visual Studio Express

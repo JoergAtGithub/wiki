@@ -44,6 +44,10 @@ referred to as MSVC in discussions.
     adjusting the paths to match where you actually installed the
     above:`QTDIR = C:\qt-windows-4.7.4
     PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
+  - Open the Visual Studio command promt and type the following:`cd /D
+    C:\Qt\4.7.4
+    configure
+    nmake`
 
 <!-- end list -->
 

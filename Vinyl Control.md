@@ -14,10 +14,8 @@ computer, on which Mixxx is running. When a record is played on one of
 the attached turntables, Mixxx decodes the timecode off the record, and
 uses information from that to manipulate whatever song is loaded.
 
-For those more technically inclined, Mixxx uses
-[Scratchlib](http://www.9elements.com/scratchlib/) to decode the
-FinalScratch timecode and [xwax](http://www.xwax.co.uk/) to decode the
-Serato/Traktor timecodes.
+Mixxx uses [xwax](http://www.xwax.co.uk/) to decode Serato/Traktor
+timecodes.
 
 ## What do I need to use it?
 
@@ -50,24 +48,19 @@ by Mixxx:
 
 **Timecode Support**
 
-|                         |                |
-| ----------------------- | -------------- |
-| Vinyl                   | Responsiveness |
-| Serato CV02             | Very high      |
-| Serato CD               | Very high      |
-| Traktor Scratch         | Very high      |
-| FinalScratch (Standard) | Moderate       |
-| FinalScratch (Scratch)  | High           |
-| MixVibes DVS CD         | Untested       |
-| MixVibes DVS Vinyl      | Does not work  |
+|                    |                |
+| ------------------ | -------------- |
+| Vinyl              | Responsiveness |
+| Serato CV02        | Very high      |
+| Serato CD          | Very high      |
+| Traktor Scratch    | Very high      |
+| MixVibes DVS CD    | Untested       |
+| MixVibes DVS Vinyl | Does not work  |
 
 At the present time, **Serato records are the ones you should purchase**
 if you're looking to buy vinyl. If you want to use CDs, you can
 **[download a free
 copy](http://serato.com/downloads/scratchlive-controlcd)** from Serato.
-
-Support for Final Scratch records needs work, and at the moment isn't
-nearly as good as the Serato/Traktor support.
 
 ## How responsive is it? Does it have absolute mode?
 
@@ -210,6 +203,5 @@ working Mixxx's vinyl control code.
 ## Links
 
   - [xwax](http://www.xwax.co.uk/)
-  - [Scratchlib](http://www.9elements.com/scratchlib/)
   - [Digital-Scratch](http://home.gna.org/dscratch/en_index.html)
   - **[Mixxx Download Page](http://mixxx.org/download.php)**

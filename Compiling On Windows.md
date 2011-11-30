@@ -209,10 +209,9 @@ Studio.
 ### Steps
 
 1.  Download & install the Qt SDK Bundle which includes Qt Creator:
-    <http://www.qtsoftware.com/downloads/sdk-windows-cpp> \~200MB
-    download. Requires \~2GB free space on your temp drive (change in
-    user environment variables) for temporary unpacking, and \~2GB free
-    on the target drive.
+    <http://qt.nokia.com/downloads/> \~200MB download. Requires \~2GB
+    free space on your temp drive (change in user environment variables)
+    for temporary unpacking, and \~2GB free on the target drive.
 2.  Download & install an SVN or Bazaar Client (i.e.
     [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
     Windows svn build](http://www.sliksvn.com/en/download) which can be

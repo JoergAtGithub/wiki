@@ -68,8 +68,10 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
 1.  Build Mixxx:
-    1.  Start the command prompt and change into the "mixxx"
-        subdirectory of the checkout directory. (E.g. trunk\\mixxx)
+    1.  Start the Microsoft Windows SDK v.7.0 command prompt (E.g. Start
+        Menu\\Microsoft Windows SDK v.7.0\\CMD Shell) and change into
+        the "mixxx" subdirectory of the checkout directory. (E.g.
+        trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
     3.  Type `scons toolchain=msvs
         winlib=path_to_mixxx-win32lib-msvc90-release_directory` and
@@ -132,7 +134,7 @@ C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\<
 - Get our precompiled dependencies
 * Checkout the dependencies repository with TortoiseBZR, using the following location: ''lp:~mixxxdevelopers/mixxx/mixxx-win64lib-msvc90-release''
 - Build Mixxx
-  - Start the command prompt and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
+  - Start the Microsoft Windows SDK 7 command prompt (E.g. Start Menu\Microsoft Windows SDK v.7.0\CMD Shell) and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
   - Type ''scons toolchain=msvs winlib=path_to_mixxx-win64lib-msvc90-release_directory'' (you may need to use scons.bat instead of just scons.)
     * Add ''msvcdebug=1'' to build the debug version.

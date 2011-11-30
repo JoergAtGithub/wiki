@@ -42,8 +42,8 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
     adjusting the paths to match where you actually installed the
-    above:`QTDIR = C:\qt-windows-4.7.4
-    PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
+    above:`QTDIR = C:\Qt\4.7.4
+    PATH = C:\Qt\4.7.4\bin;C:\Python26;C:\Python26\Scripts`
   - Open the Visual Studio command promt and type the following:`cd /D
     C:\Qt\4.7.4
     configure

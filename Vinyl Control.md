@@ -203,5 +203,4 @@ working Mixxx's vinyl control code.
 ## Links
 
   - [xwax](http://www.xwax.co.uk/)
-  - [Digital-Scratch](http://home.gna.org/dscratch/en_index.html)
   - **[Mixxx Download Page](http://mixxx.org/download.php)**

@@ -198,10 +198,11 @@ C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\<
 ## Build a 32-bit version using the Qt Creator SDK (easier)
 
 The following is an alternate, currently experimental way to build Mixxx
-from trunk using the [Qt Creator IDE](http://qt.nokia.com/downloads/).
-It differs from the normal way of building in that it uses qmake and
-minGW/GCC, but does not depend on Python, SCons, or Microsoft Visual
-Studio.
+from trunk using the [Qt Creator
+IDE](http://qt.nokia.com/products/developer-tools). It differs from the
+normal way of building in that it uses qmake and minGW/GCC, but does not
+depend on Python, SCons, or Microsoft Visual Studio. *(**Note** that
+these instructions are not regularly updated.)*
 
 ### Steps
 

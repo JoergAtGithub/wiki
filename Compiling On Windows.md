@@ -42,16 +42,12 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
     adjusting the paths to match where you actually installed the above
-    `QTDIR = C:\Qt\4.7.4
-    PATH = C:\Qt\4.7.4\bin;C:\Python26;C:\Python26\Scripts`
-  - Open the Visual Studio command promt and type the following:`cd /D
-    C:\Qt\4.7.4
-    configure
-    nmake`
+    `QTDIR = C:\qt-windows-4.7.4\
+    PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
 
 <!-- end list -->
 
-1.  Get the source code
+1.  Get the Mixxx source code
 
 <!-- end list -->
 
@@ -61,7 +57,7 @@ referred to as MSVC in discussions.
 
 <!-- end list -->
 
-1.  Get our precompiled dependencies
+1.  Get our pre-compiled dependencies
 
 <!-- end list -->
 
@@ -72,10 +68,9 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
 1.  Build Mixxx:
-    1.  Start the Microsoft Windows SDK v.7.0 command prompt (E.g. Start
-        Menu\\Microsoft Windows SDK v.7.0\\CMD Shell) and change into
-        the "mixxx" subdirectory of the checkout directory. (E.g.
-        trunk\\mixxx)
+    1.  Start the Windows SDK command prompt (E.g. Start Menu\\Microsoft
+        Windows SDK v.7.0\\CMD Shell) and change into the "mixxx"
+        subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
     3.  Type `scons toolchain=msvs
         winlib=path_to_mixxx-win32lib-msvc90-release_directory` and
@@ -83,11 +78,9 @@ referred to as MSVC in discussions.
         `scons`.)
           - Add `msvcdebug=1` to build the debug version (with console
             output window.)
-          - Add `win32=1` if you're on a 64-bit platform with 64-bit
+          - Add `force32=1` if you're on a 64-bit platform with 64-bit
             Python installed, otherwise it will try to build the x64
-            version of Mixxx.
-              - Note that this now seems to be `force32=1` in recent
-                branches (1.10).
+            version of Mixxx. (`win32=1` in older branches.)
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with

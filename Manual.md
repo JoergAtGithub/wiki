@@ -1,7 +1,7 @@
 # THE MIXXX MANUAL HAS MOVED
 
 **To read the Mixxx manual**, check here:
-<http://mixxx.org/manual/latest>\*\*
+<http://mixxx.org/manual/latest>
 
 **To contribute to the Mixxx manual**, check out the following
 repository on Launchpad:

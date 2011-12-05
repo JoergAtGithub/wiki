@@ -1,3 +1,17 @@
+# THE MIXXX MANUAL HAS MOVED
+
+**To read the Mixxx manual**, check here:
+<http://mixxx.org/manual/latest>\*\*
+
+**To contribute to the Mixxx manual**, check out the following
+repository on Launchpad:
+<https://code.launchpad.net/~mixxxdevelopers/mixxx/manual>
+
+**To translate the Mixxx manual**, we will use Launchpad translations as
+we have for Mixxx itself. This is not setup yet, but check back soon.
+
+# THE MANUAL BELOW IS OUTDATED AND DEPRECATED
+
 # Available Languages
 
 This manual is also available in:

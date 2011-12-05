@@ -111,8 +111,6 @@ Scripting](MIDI%20Scripting) pages.
 | Numark NSFX                   |         |          |       |
 | Numark V7                     |         |          |       |
 | Vestax VCI-300                |         |          |       |
-| Vestax Spin                   |         |          |       |
-| Vestax Typhoon                |         |          |       |
 | Vestax TR-1                   |         |          |       |
 | Vestax VCM-100                |         |          |       |
 | Vestax VCM-600                |         |          |       |

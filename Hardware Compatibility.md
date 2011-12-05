@@ -108,7 +108,6 @@ Scripting](MIDI%20Scripting) pages.
 | Numark MixDeck                |         |          |       |
 | Numark Mixmeister Control     |         |          |       |
 | Numark iDJ3                   |         |          |       |
-| Numark NS7                    |         |          |       |
 | Numark NSFX                   |         |          |       |
 | Numark V7                     |         |          |       |
 | Vestax VCI-300                |         |          |       |

@@ -36,6 +36,11 @@ Mixxx uses the Google C++ Testing Framework. If it's new to you, [read
 the
 primer](http://code.google.com/p/googletest/wiki/Primer#Basic_Concepts).
 
+Make sure to read [this section of the Advanced testing
+guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)
+on floating point comparison. It is very important for writing Mixxx
+audio tests.
+
 After you understand how it works, do the following:
 
 1.  Write the code that will test your chosen Mixxx class and place it

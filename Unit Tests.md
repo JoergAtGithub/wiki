@@ -5,6 +5,7 @@ isolating each piece of a system and hitting it with all manner of valid
 and invalid input values to check for all of the following:
 
   - That it produces correct results on all ranges of valid input
+    (especially corner cases)
   - That it produces reasonable results or accurate error messages on
     every kind of invalid input
   - That it doesn't crash or otherwise misbehave under load or with any

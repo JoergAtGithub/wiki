@@ -44,3 +44,20 @@ After you understand how it works, do the following:
         `classname_test.cpp`**
 2.  Follow the above steps for Running the tests. Mixxx will
     automatically see and build your new test.
+
+## Using Mocks
+
+Mocking is an advanced technique for testing code. Say you have two
+classes, Foo and Bar. If Foo relies on calling methods of Bar, then
+using traditional unit testing methods you can't test Foo without also
+testing Bar. Mocks allow you to solve this problem by creating a mock of
+Bar. Using a mocking framework, you create a MockBar class which returns
+arbitrary data.
+
+For mocking, we use the [Google
+Mock](http://code.google.com/p/googlemock/) framework. It integrates
+very well with Google Test. To see an example of mocking in action, see
+the EngineMaster tests in `enginemastertest.cpp`. The [Mocking For
+Dummies](http://code.google.com/p/googlemock/wiki/ForDummies) guide on
+the Google Mock wiki is great for learning more about mocking,
+dependency injection, and other advanced testing techniques.

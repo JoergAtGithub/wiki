@@ -43,11 +43,6 @@ primer](http://code.google.com/p/googletest/wiki/Primer#Basic_Concepts).
 After you understand how it works, do the following:
 
 1.  Write the code that will test your chosen Mixxx class and place it
-    in mixxx/src
-2.  Build Mixxx with `scons test=1`
-
-<!-- end list -->
-
-``` 
-- 
-```
+    in mixxx/src/test/
+2.  Follow the above steps for Running the tests. Mixxx will
+    automatically see and build your new test.

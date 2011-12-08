@@ -24,12 +24,8 @@ before final submission of patches or branch merge proposals,) do the
 following:
 
 1.  Build Mixxx with `scons test=1`
-
-<!-- end list -->
-
-``` 
-- 
-```
+2.  To run all tests: `$ ./mixxx-test` 
+3.  To run a specific test: `$ ./mixxx-test --gtest_filter=MyTest*`
 
 ## Writing a new test
 
@@ -44,5 +40,7 @@ After you understand how it works, do the following:
 
 1.  Write the code that will test your chosen Mixxx class and place it
     in mixxx/src/test/
+    1.  **If your class is ClassName, please name your test file
+        `classname_test.cpp`**
 2.  Follow the above steps for Running the tests. Mixxx will
     automatically see and build your new test.

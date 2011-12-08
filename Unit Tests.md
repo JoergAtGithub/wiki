@@ -57,7 +57,7 @@ arbitrary data.
 For mocking, we use the [Google
 Mock](http://code.google.com/p/googlemock/) framework. It integrates
 very well with Google Test. To see an example of mocking in action, see
-the EngineMaster tests in `enginemastertest.cpp`. The [Mocking For
-Dummies](http://code.google.com/p/googlemock/wiki/ForDummies) guide on
-the Google Mock wiki is great for learning more about mocking,
+the EngineMaster tests in `src/test/enginemastertest.cpp`. The [Mocking
+For Dummies](http://code.google.com/p/googlemock/wiki/ForDummies) guide
+on the Google Mock wiki is great for learning more about mocking,
 dependency injection, and other advanced testing techniques.

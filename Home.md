@@ -80,6 +80,8 @@ plans.
 
   - [Feature Discussion & Specifications](feature_discussion)
   - [Mixxx QA Procedure](qa_procedure)
+  - [Writing unit tests](unit_tests) - helps prevent regressions.
+    Essential for new code\!
   - [Performance improvements](Performance%20improvements)
   - [Code cleanup & cruft removal task list](code_cleanup)
   - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable

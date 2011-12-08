@@ -33,11 +33,11 @@ following:
 
 ## Writing a new test
 
-Mixxx uses the Google Test framework. If it's new to you, [read the
-primer](http://code.google.com/p/googletest/wiki/Primer).
-
 We require that any new code classes have tests written for them as well
 in order to consider the code for inclusion into Mixxx.
+
+Mixxx uses the Google Test framework. If it's new to you, [read the
+primer](http://code.google.com/p/googletest/wiki/Primer).
 
 After you understand how it works, do the following:
 

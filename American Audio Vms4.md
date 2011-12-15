@@ -8,7 +8,15 @@ Link to the website: <http://www.vms4dj.com/>
 
 [Mixxx user's guide for the VMS4](aa_vms4_mixxx_user_guide)
 
-### Instructions for v1.9.0 & above
+### Instructions
+
+*Recommended setup for Mixxx v1.9.0 and up:*
+
+**Important: Mixxx expects the VMS4 to be set to "Post EQ" mode for best
+sound quality.** Do this by holding down the Cue button on Midilog 4
+while powering on the unit. You only need to do this once. (Each time
+you do it, it changes the mode back and forth.) Consult the [user
+manual](http://vms4dj.com/Files/vms4.pdf) for more information.
 
 1.  Download the files below.
 2.  Save the files into:
@@ -22,16 +30,27 @@ Link to the website: <http://www.vms4dj.com/>
 
 <!-- end list -->
 
-1.  Turn the controller on.
-2.  Start Mixxx
-3.  Open Preferences
-4.  Expand "MIDI Controllers"
-5.  Select the "VMS4 MIDI" device (may show as "USB Audio Device" on
+1.  Make sure the VMS4 is off
+2.  Slide the switch on the front of the VMS4 to "4 OUT"
+3.  Turn on the unit (and plug in the USB cable if you haven't yet)
+4.  Start Mixxx
+5.  Open Preferences
+6.  Click Sound Hardware. In the right pane:
+    1.  Set the sample rate to 44100Hz
+    2.  Set the Master output to **None**
+    3.  Set the Headphone output to **None**
+    4.  Set the Deck 1 output to the **VMS4** device and **Channel 1-2**
+        (may show as "USB Audio Device" on Windows)
+    5.  Set the Deck 2 output to the **VMS4** device and **Channel 3-4**
+7.  Plug your headphones into the VMS4's jack on the front. You will use
+    the VMS4's CUE buttons and knobs for headphone control.
+8.  Still in the Preferences, expand "MIDI Controllers" on the left
+9.  Select the "VMS4 MIDI" device (may show as "USB Audio Device" on
     Windows)
-6.  Click the Enable checkbox in the right pane
-7.  Click the drop-down and choose the "American Audio VMS4" mapping
-8.  Click OK and you're good to go. (The controller will light up when
-    you load a track to a deck.)
+10. Click the Enable checkbox in the right pane
+11. Click the drop-down and choose the "American Audio VMS4" mapping
+12. Click OK and the controller should light up. (In 1.9.x, the
+    controller will light up when you load a track to a deck.)
 
 ### 1.10.x mapping
 

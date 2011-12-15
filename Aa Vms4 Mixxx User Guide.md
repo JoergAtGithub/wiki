@@ -1,5 +1,40 @@
 # American Audio VMS4 & Mixxx User Guide
 
+## Setup
+
+*Recommended setup for Mixxx v1.9.0 and up:*
+
+**Important: Mixxx expects the VMS4 to be set to "Post EQ" mode for best
+sound quality.** Do this by holding down the Cue button on Midilog 4
+while powering on the unit. You only need to do this once. (Each time
+you do it, it changes the mode back and forth.) Consult the [user
+manual](http://vms4dj.com/Files/vms4.pdf) for more information.
+
+1.  Make sure the VMS4 is off
+2.  Slide the switch on the front of the VMS4 to "4 OUT"
+3.  Turn on the unit (and plug in the USB cable if you haven't yet)
+4.  Start Mixxx
+5.  Open Preferences
+6.  Click Sound Hardware. In the right pane:
+    1.  Set the sample rate to 44100Hz
+    2.  Set the Master output to **None**
+    3.  Set the Headphone output to **None**
+    4.  Set the Deck 1 output to the **VMS4** device and **Channel 1-2**
+        (may show as "USB Audio Device" on Windows)
+    5.  Set the Deck 2 output to the **VMS4** device and **Channel 3-4**
+7.  Plug your headphones into the VMS4's jack on the front. You will use
+    the VMS4's CUE buttons and knobs for headphone control.
+8.  Still in the Preferences, expand "MIDI Controllers" on the left
+9.  Select the "VMS4 MIDI" device (may show as "USB Audio Device" on
+    Windows)
+10. Click the Enable checkbox in the right pane
+11. Click the drop-down and choose the "American Audio VMS4" mapping
+12. Click OK and the controller should light up. (In 1.9.x, the
+    controller will light up when you load a track to a deck.)
+13. Continue reading below to know how everything is mapped
+
+## Control
+
 This guide explains how the VMS4 is mapped by default in Mixxx.
 
 [[/media/hardware/american_audio/vms4_top.jpg|]]

@@ -24,4 +24,4 @@ process.
 
 Configure Qt like this:
 
-    ./configure -opensource -arch x86 -arch x86_64 -sdk /Developer/SDKs/MacOSX10.5.sdk/ -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
+    ./configure -opensource -prefix /Developer/SDKs/MacOSX10.5.sdk/usr/local/Qt-4.7.4/ -arch x86 -arch x86_64 -sdk /Developer/SDKs/MacOSX10.5.sdk/ -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release

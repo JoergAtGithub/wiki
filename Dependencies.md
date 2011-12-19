@@ -10,6 +10,7 @@ support.
   - libshout 2.2.2
   - libvorbis 1.3.2
   - libsndfile 1.0.25
+  - libsoundtouch 1.5.0
   - zlib 1.2.5
   - taglib 1.7
   - libhss1394 (r6)

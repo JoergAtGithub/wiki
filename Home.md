@@ -34,9 +34,7 @@ plans.
   - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
-
-<!-- end list -->
-
+  - [Dependencies](Dependencies)
   - [Packaging / Making a Mixxx
     Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
 

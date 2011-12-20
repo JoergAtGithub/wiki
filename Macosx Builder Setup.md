@@ -92,3 +92,12 @@ Configure Qt like this:
     make 
     sudo make install
     sudo lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-x86_64/src/.libs/libsndfile.1.dylib -output $MIXXX_PREFIX/lib/libsndfile.1.dylib
+
+# libogg
+
+    # not sure if ARCHS does anything
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX

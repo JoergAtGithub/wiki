@@ -52,14 +52,37 @@ Configure Qt like this:
     tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1
     cd flac-1.2.1-x86_64
     export CFLAGS="$OSX_CFLAGS -arch x86_64"
+    export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
     export CC="$CC $CFLAGS"
     ./configure --host $HOST --build x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make
     cd ../flac-1.2.1-i386
     export CFLAGS="$OSX_CFLAGS -arch i386"
+    export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
     ./configure --build i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make 
     sudo make install
     sudo lipo -create src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-x86_64/src/libFLAC/.libs/libFLAC.8.2.0.dylib -output $MIXXX_PREFIX/lib/libFLAC.8.2.0.dylib
+
+# libsndfile
+
+    mkdir -p libsndfile-1.0.25-{i386,x86_64}
+    tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
+    tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
+    cd libsndfile-1.0.25-x86_64
+    export CFLAGS="$OSX_CFLAGS -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
+    export CC="$CC $CFLAGS"
+    ./configure --host $HOST --target x86_64-apple-darwin10 --prefix=$MIXXX_PREFIX
+    make
+    cd ../libsndfile-1.0.25-i386
+    export CFLAGS="$OSX_CFLAGS -arch i386"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386"
+    ./configure --host $HOST --target i386-apple-darwin10 --prefix=$MIXXX_PREFIX
+    make 
+    sudo make install
+    sudo lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-x86_64/src/.libs/libsndfile.1.dylib -output $MIXXX_PREFIX/lib/libsndfile.1.dylib

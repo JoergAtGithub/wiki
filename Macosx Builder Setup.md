@@ -101,3 +101,5 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    sudo make install

@@ -11,6 +11,7 @@ figure out how to do a lot of this.**
 
     export CC="$(xcode-select -print-path)/usr/bin/gcc-4.2"
     export CXX="$(xcode-select -print-path)/usr/bin/g++-4.2"
+    export CPP="$(xcode-select -print-path)/usr/bin/cpp-4.2"
     
     export MACOSX_DEPLOYMENT_TARGET="10.5"
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk
@@ -120,4 +121,17 @@ Configure Qt like this:
     export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
+    sudo make install
+
+# libmad
+
+    # not sure if ARCHS does anything
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    # libmad's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
+    /Developer/usr/bin/gcc-4.2 -dynamiclib -undefined dynamic_lookup -o .libs/libmad.0.2.1.dylib  .libs/version.o .libs/fixed.o .libs/bit.o .libs/timer.o .libs/stream.o .libs/frame.o .libs/synth.o .libs/decoder.o .libs/layer12.o .libs/layer3.o .libs/huffman.o  -mmacosx-version-min=10.5 -Wl,-syslibroot -Wl,/Developer/SDKs/MacOSX10.5.sdk -arch i386 -arch x86_64 -mmacosx-version-min=10.5 -install_name  /Developer/SDKs/MacOSX10.5.sdk/usr/local/lib/libmad.0.dylib -compatibility_version 3 -current_version 3.1
     sudo make install

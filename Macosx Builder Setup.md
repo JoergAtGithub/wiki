@@ -3,6 +3,10 @@
 As of Q4 2011, Mixxx supports Mac OS X 10.5 and higher on x86 and
 x86\_64. PPC and Mac OS 10.4 is no longer supported.
 
+**Thanks to the [Mumble
+project](http://mumble.sourceforge.net/BuildingMacOSX) for helping us
+figure out how to do a lot of this.**
+
 # Environment
 
     export MACOSX_DEPLOYMENT_TARGET="10.5"

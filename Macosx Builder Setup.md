@@ -148,3 +148,14 @@ Configure Qt like this:
     # libid3tag's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
     /Developer/usr/bin/gcc-4.2 -dynamiclib -undefined dynamic_lookup -o .libs/libid3tag.0.3.0.dylib  .libs/version.o .libs/ucs4.o .libs/latin1.o .libs/utf16.o .libs/utf8.o .libs/parse.o .libs/render.o .libs/field.o .libs/frametype.o .libs/compat.o .libs/genre.o .libs/frame.o .libs/crc.o .libs/util.o .libs/tag.o .libs/file.o  -lz -mmacosx-version-min=10.5 -Wl,-syslibroot -Wl,/Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -install_name  /Developer/SDKs/MacOSX10.5.sdk/usr/local/lib/libid3tag.0.dylib -compatibility_version 4 -current_version 4.0
     sudo make install
+
+# libshout
+
+    # not sure if ARCHS does anything
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    sudo make install

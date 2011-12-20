@@ -118,9 +118,9 @@ them with `lipo`.
 
     # not sure if ARCHS does anything
     export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -arch i386"
     export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64 -arch i386"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
@@ -129,9 +129,9 @@ them with `lipo`.
 
     # not sure if ARCHS does anything
     export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -arch i386"
     export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64 -arch i386"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install

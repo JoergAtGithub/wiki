@@ -55,14 +55,14 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
     export CC="$CC $CFLAGS"
-    ./configure --host $HOST --build x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
+    ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make
     cd ../flac-1.2.1-i386
     export CFLAGS="$OSX_CFLAGS -arch i386"
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
     export CC="$CC $CFLAGS"
-    ./configure --build i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
+    ./configure --host $HOST --target i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make 
     sudo make install
     sudo lipo -create src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-x86_64/src/libFLAC/.libs/libFLAC.8.2.0.dylib -output $MIXXX_PREFIX/lib/libFLAC.8.2.0.dylib

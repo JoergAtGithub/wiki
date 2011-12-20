@@ -55,6 +55,7 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
     export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make
     cd ../flac-1.2.1-i386
@@ -62,6 +63,7 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
     export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make 
     sudo make install
@@ -77,6 +79,7 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
     export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --prefix=$MIXXX_PREFIX
     make
     cd ../libsndfile-1.0.25-i386
@@ -84,6 +87,7 @@ Configure Qt like this:
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
     export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target i386-apple-darwin10 --prefix=$MIXXX_PREFIX
     make 
     sudo make install

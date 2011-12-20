@@ -23,6 +23,10 @@ figure out how to do a lot of this.**
     
     export OSX_CFLAGS="-isysroot $OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
     export OSX_LDFLAGS="-isysroot $OSX_SDK -Wl,-syslibroot,$OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
+    
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
 
 # XCode
 
@@ -56,105 +60,34 @@ Configure Qt like this:
 
 # libflac
 
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make
     sudo make install
 
-If this doesn't work, you can also do the two builds separately and join
-them with `lipo`.
-
-    mkdir -p flac-1.2.1-{i386,x86_64}
-    tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-x86_64 --strip-components 1
-    tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1
-    cd flac-1.2.1-x86_64
-    export CFLAGS="$OSX_CFLAGS -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make
-    cd ../flac-1.2.1-i386
-    export CFLAGS="$OSX_CFLAGS -arch i386"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386"
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make 
-    sudo make install
-    sudo lipo -create src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-x86_64/src/libFLAC/.libs/libFLAC.8.2.0.dylib -output $MIXXX_PREFIX/lib/libFLAC.8.2.0.dylib
-
 # libsndfile
 
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
 
-If this doesn't work, you can compile the two architectures separately
-and join them with lipo.
-
-    mkdir -p libsndfile-1.0.25-{i386,x86_64}
-    tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
-    tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
-    cd libsndfile-1.0.25-x86_64
-    export CFLAGS="$OSX_CFLAGS -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target x86_64-apple-darwin10 --prefix=$MIXXX_PREFIX
-    make
-    cd ../libsndfile-1.0.25-i386
-    export CFLAGS="$OSX_CFLAGS -arch i386"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386"
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target i386-apple-darwin10 --prefix=$MIXXX_PREFIX
-    make 
-    sudo make install
-    sudo lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-x86_64/src/.libs/libsndfile.1.dylib -output $MIXXX_PREFIX/lib/libsndfile.1.dylib
-
 # libogg
 
-    # not sure if ARCHS does anything
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
 
 # libvorbis
 
-    # not sure if ARCHS does anything
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
 
 # libmad
 
-    # not sure if ARCHS does anything
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     # libmad's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
@@ -163,11 +96,6 @@ and join them with lipo.
 
 # libid3tag
 
-    # not sure if ARCHS does anything
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     # libid3tag's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
@@ -176,42 +104,27 @@ and join them with lipo.
 
 # libshout
 
-    # not sure if ARCHS does anything
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
 
 # taglib
 
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
     make
     sudo make install
 
 # portaudio
 
-    export ARCHS="i386 x86_64"
     # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -Wno-deprecated-declarations"
+    export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
     export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     ./configure --prefix=$MIXXX_PREFIX --disable-mac-universal
     make
     sudo make install
 
 # portmidi
 
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     # Edit CMakeLists.txt to manually remove ppc from the CMAKE_OSX_ARCHITECTURES variable. 
     cmake . -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK"   
     make 
@@ -225,10 +138,6 @@ and join them with lipo.
 
 # hss1394
 
-    export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     bzr checkout lp:hss1394
     cd hss1394
     scons prefix=$MIXXX_PREFIX

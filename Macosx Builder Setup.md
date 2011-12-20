@@ -76,12 +76,14 @@ Configure Qt like this:
     export CFLAGS="$OSX_CFLAGS -arch x86_64"
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
+    export CC="$CC $CFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --prefix=$MIXXX_PREFIX
     make
     cd ../libsndfile-1.0.25-i386
     export CFLAGS="$OSX_CFLAGS -arch i386"
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
+    export CC="$CC $CFLAGS"
     ./configure --host $HOST --target i386-apple-darwin10 --prefix=$MIXXX_PREFIX
     make 
     sudo make install

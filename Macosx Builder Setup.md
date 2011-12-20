@@ -3,14 +3,14 @@
 As of Q4 2011, Mixxx supports Mac OS X 10.5 and higher on x86 and
 x86\_64. PPC and Mac OS 10.4 is no longer supported.
 
-# Install XCode
+# XCode
 
 XCode 4 and higher does not support Mac OS X 10.5. Download and install
 an XCode 3.x release suitable for your version of OS X. For Mac OS 10.6,
 you will need XCode 3.2 as later versions of XCode do not support 10.6.
 Try searching for the filename `xcode3210a432.dmg`.
 
-# Install Qt
+# Qt
 
 Download the latest supported version of Qt source tarball. (In Q4 2011,
 this is Qt 4.7.4)
@@ -25,3 +25,11 @@ process.
 Configure Qt like this:
 
     ./configure -opensource -prefix /Developer/SDKs/MacOSX10.5.sdk/usr/local/Qt-4.7.4/ -arch x86 -arch x86_64 -sdk /Developer/SDKs/MacOSX10.5.sdk/ -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
+
+# libflac
+
+    export CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -arch i386 -arch x86_64"
+    export LDFLAGS="-Wl,-syslibroot,/Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -arch i386 -arch x86_64"
+    ./configure --disable-cpplibs --disable-asm-optimizations --prefix=/Developer/SDKs/MacOSX10.5.sdk/usr/local/
+    make
+    make install

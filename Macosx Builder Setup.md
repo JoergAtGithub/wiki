@@ -12,6 +12,7 @@ figure out how to do a lot of this.**
     export CC="$(xcode-select -print-path)/usr/bin/gcc-4.2"
     export CXX="$(xcode-select -print-path)/usr/bin/g++-4.2"
     export CPP="$(xcode-select -print-path)/usr/bin/cpp-4.2"
+    export CXXCPP="$(xcode-select -print-path)/usr/bin/cpp-4.2"
     
     export MACOSX_DEPLOYMENT_TARGET="10.5"
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk

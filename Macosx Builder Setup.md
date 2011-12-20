@@ -159,3 +159,13 @@ Configure Qt like this:
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
+
+# taglib
+
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
+    make
+    sudo make install

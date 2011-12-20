@@ -29,8 +29,8 @@ an XCode 3.x release suitable for your version of OS X. For Mac OS 10.6,
 you will need XCode 3.2 as later versions of XCode do not support 10.6.
 Try searching for the filename `xcode3210a432.dmg`.
 
-After installing, remove these two symbolic links as we don't want to
-dirty up /usr/local/lib while building libraries.
+After installing, remove these symbolic links as we don't want to dirty
+up /usr/local/lib while building libraries.
 
     sudo rm /Developer/SDKs/MacOSX10.4.sdk/usr/local/lib
     sudo rm /Developer/SDKs/MacOSX10.5.sdk/usr/local/lib

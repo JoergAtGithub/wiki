@@ -169,3 +169,17 @@ Configure Qt like this:
     cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
     make
     sudo make install
+
+# portaudio
+
+export ARCHS="i386 x86\_64" \# As of the PA 2011/3/26 snapshot, a
+deprecated API function of CoreAudio is used which blocks the build due
+to -Werror. -Wno-deprecated-declarations allows these errors to pass.
+export CFLAGS="$OSX\_CFLAGS -arch i386 -arch x86\_64
+-Wno-deprecated-declarations" export CXXFLAGS=$CFLAGS export
+LDFLAGS="$OSX\_LDFLAGS -arch i386 -arch x86\_64" ./configure
+--prefix=$MIXXX\_PREFIX --disable-mac-universal make
+
+``` 
+
+```

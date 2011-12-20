@@ -11,6 +11,7 @@ support.
   - libvorbis 1.3.2
   - libsndfile 1.0.25
   - libsoundtouch 1.5.0
+  - libflac 1.2.1
   - zlib 1.2.5
   - taglib 1.7
   - libhss1394 (r6)

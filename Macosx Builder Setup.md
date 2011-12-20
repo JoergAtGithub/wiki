@@ -92,6 +92,18 @@ them with `lipo`.
 
 # libsndfile
 
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
+    ./configure --host $HOST --target x86_64-apple-darwin10 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    sudo make install
+
+If this doesn't work, you can compile the two architectures separately
+and join them with lipo.
+
     mkdir -p libsndfile-1.0.25-{i386,x86_64}
     tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
     tar -zxf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1

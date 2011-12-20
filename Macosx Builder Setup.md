@@ -47,12 +47,19 @@ Configure Qt like this:
 
 # libflac
 
+    mkdir -p flac-1.2.1-{i386,x86_64}
+    tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-x86_64 --strip-components 1
+    tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1
+    cd flac-1.2.1-x86_64
+    export CFLAGS="$OSX_CFLAGS -arch x86_64"
+    export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
+    export CC="$CC $CFLAGS"
+    ./configure --host $HOST --build x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
+    make
+    cd ../flac-1.2.1-i386
     export CFLAGS="$OSX_CFLAGS -arch i386"
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
     ./configure --build i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make 
     sudo make install
-    export CFLAGS="$OSX_CFLAGS -arch x86_64"
-    export LDFLAGS="$OSX_LDFLAGS -arch x86_64"
-    ./configure --host $HOST --build x86_64-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make
+    sudo lipo -create src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-x86_64/src/libFLAC/.libs/libFLAC.8.2.0.dylib -output $MIXXX_PREFIX/lib/libFLAC.8.2.0.dylib

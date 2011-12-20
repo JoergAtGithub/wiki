@@ -56,9 +56,9 @@ Configure Qt like this:
 
 # libflac
 
-    export CFLAGS="$OSX_CFLAGS -arch x86_64 i386"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
     export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch x86_64 -arch i386"
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX

@@ -172,14 +172,28 @@ Configure Qt like this:
 
 # portaudio
 
-export ARCHS="i386 x86\_64" \# As of the PA 2011/3/26 snapshot, a
-deprecated API function of CoreAudio is used which blocks the build due
-to -Werror. -Wno-deprecated-declarations allows these errors to pass.
-export CFLAGS="$OSX\_CFLAGS -arch i386 -arch x86\_64
--Wno-deprecated-declarations" export CXXFLAGS=$CFLAGS export
-LDFLAGS="$OSX\_LDFLAGS -arch i386 -arch x86\_64" ./configure
---prefix=$MIXXX\_PREFIX --disable-mac-universal make
+    export ARCHS="i386 x86_64"
+    # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -Wno-deprecated-declarations"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    ./configure --prefix=$MIXXX_PREFIX --disable-mac-universal
+    make
+    sudo make install
 
-``` 
+# portmidi
 
-```
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -Wno-deprecated-declarations"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    # Edit CMakeLists.txt to manually remove ppc from the CMAKE_OSX_ARCHITECTURES variable. 
+    cmake . -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK"   
+    make 
+    sudo make install
+    # PortMidi insists on installing to /usr/local/lib. Just move its files to $MIXXX_PREFIX
+    sudo mv /usr/local/lib/libportmidi_s.a $MIXXX_PREFIX/lib
+    sudo mv /usr/local/lib/libpmjni.dylib $MIXXX_PREFIX/lib
+    sudo mv /usr/local/lib/libportmidi.dylib $MIXXX_PREFIX/lib
+    sudo mv /usr/local/include/portmidi.h $MIXXX_PREFIX/include
+    sudo mv /usr/local/include/porttime.h $MIXXX_PREFIX/include

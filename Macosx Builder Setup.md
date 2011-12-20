@@ -55,6 +55,18 @@ Configure Qt like this:
 
 # libflac
 
+    export CFLAGS="$OSX_CFLAGS -arch x86_64 i386"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch x86_64 -arch i386"
+    export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
+    ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
+    make
+    sudo make install
+
+If this doesn't work, you can also do the two builds separately and join
+them with `lipo`.
+
     mkdir -p flac-1.2.1-{i386,x86_64}
     tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-x86_64 --strip-components 1
     tar -zxf flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1

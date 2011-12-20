@@ -184,7 +184,7 @@ Configure Qt like this:
 # portmidi
 
     export ARCHS="i386 x86_64"
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64 -Wno-deprecated-declarations"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
     # Edit CMakeLists.txt to manually remove ppc from the CMAKE_OSX_ARCHITECTURES variable. 
@@ -197,3 +197,14 @@ Configure Qt like this:
     sudo mv /usr/local/lib/libportmidi.dylib $MIXXX_PREFIX/lib
     sudo mv /usr/local/include/portmidi.h $MIXXX_PREFIX/include
     sudo mv /usr/local/include/porttime.h $MIXXX_PREFIX/include
+
+# hss1394
+
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    bzr checkout lp:hss1394
+    cd hss1394
+    scons prefix=$MIXXX_PREFIX
+    sudo scons prefix=$MIXXX_PREFIX install

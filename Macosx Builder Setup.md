@@ -29,6 +29,13 @@ an XCode 3.x release suitable for your version of OS X. For Mac OS 10.6,
 you will need XCode 3.2 as later versions of XCode do not support 10.6.
 Try searching for the filename `xcode3210a432.dmg`.
 
+After installing, remove these two symbolic links as we don't want to
+dirty up /usr/local/lib while building libraries.
+
+    sudo rm /Developer/SDKs/MacOSX10.4.sdk/usr/local/lib
+    sudo rm /Developer/SDKs/MacOSX10.5.sdk/usr/local/lib
+    sudo rm /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib
+
 # Qt
 
 Download the latest supported version of Qt source tarball. (In Q4 2011,
@@ -94,6 +101,17 @@ Configure Qt like this:
     sudo lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-x86_64/src/.libs/libsndfile.1.dylib -output $MIXXX_PREFIX/lib/libsndfile.1.dylib
 
 # libogg
+
+    # not sure if ARCHS does anything
+    export ARCHS="i386 x86_64"
+    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
+    export CXXFLAGS=$CFLAGS
+    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    sudo make install
+
+# libvorbis
 
     # not sure if ARCHS does anything
     export ARCHS="i386 x86_64"

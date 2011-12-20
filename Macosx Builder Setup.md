@@ -207,4 +207,8 @@ Configure Qt like this:
     bzr checkout lp:hss1394
     cd hss1394
     scons prefix=$MIXXX_PREFIX
-    sudo scons prefix=$MIXXX_PREFIX install
+    # Actually, this doesn't work. Just manually copy the files.
+    #sudo scons prefix=$MIXXX_PREFIX install
+    sudo cp obj/libhss1394.dylib $MIXXX_PREFIX/lib
+    sudo cp inc/HSS1394.h $MIXXX_PREFIX/include
+    sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include

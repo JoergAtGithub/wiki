@@ -61,6 +61,7 @@ Configure Qt like this:
     export CFLAGS="$OSX_CFLAGS -arch i386"
     export CXXFLAGS=$CFLAGS
     export LDFLAGS="$OSX_LDFLAGS -arch i386"
+    export CC="$CC $CFLAGS"
     ./configure --build i386-apple-darwin10 --disable-cpplibs --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make 
     sudo make install

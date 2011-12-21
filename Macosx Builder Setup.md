@@ -79,6 +79,30 @@ Configure Qt like this:
     make
     sudo make install
 
+Universal (PPC/x86/x86\_64)
+
+    mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
+    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
+    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
+    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-ppc --strip-components 1
+    cd libsndfile-1.0.25-ppc
+    export ARCH_FLAGS="-arch ppc"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libsndfile-1.0.25-i386
+    export ARCH_FLAGS="-arch i386"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libsndfile-1.0.25-x86_64
+    export ARCH_FLAGS="-arch x86_64"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-ppc/src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-i386/src/.libs/libsndfile.1.dylib -output src/.libs/libsndfile.1.dylib
+    sudo make install
+
 # libogg
 
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX

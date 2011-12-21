@@ -82,9 +82,9 @@ Configure Qt like this:
 Universal (PPC/x86/x86\_64)
 
     mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
-    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
-    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
-    tar -zxvf libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-ppc --strip-components 1
+    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
+    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-ppc --strip-components 1
     cd libsndfile-1.0.25-ppc
     export ARCH_FLAGS="-arch ppc"
     source ../environment.sh

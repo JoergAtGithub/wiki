@@ -92,8 +92,6 @@ process.
 
 ## 10.5 Intel (i386/x86\_64)
 
-    tar -zxf ../dependencies/flac-1.2.1.tar.gz
-    cd flac-1.2.1
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
     export CC="$CC $CFLAGS"
@@ -136,8 +134,6 @@ process.
 
 ## 10.5 Intel (i386/x86\_64)
 
-    tar -zxf ../dependencies/libsndfile-1.0.25.tar.gz
-    cd libsndfile-1.0.25
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
     export CC="$CC $CFLAGS"
@@ -174,8 +170,6 @@ process.
 
 ## 10.5 Intel (i386/x86\_64)
 
-    tar -zxf ../dependencies/libogg-1.3.0.tar.gz
-    cd libogg-1.3.0
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
@@ -210,8 +204,6 @@ process.
 
 ## 10.5 Intel (i386/x86\_64)
 
-    tar zxf ../dependencies/libvorbis-1.3.2.tar.gz
-    cd libvorbis-1.3.2
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
@@ -276,8 +268,6 @@ process.
 
 ## 10.5 Intel (i386/x86\_64)
 
-    tar zxf ../dependencies/libshout-2.2.2.tar.gz
-    cd libshout-2.2.2
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX

@@ -26,18 +26,20 @@ been contributed by Launchpad users.*
 
   - For every PO file in res/translations/mixxx/, `po2ts
     res/translations/mixxx/xx.po res/translations/mixxx_xx.ts`
-  - In Bash: `for XX in res/translations/mixxx/*.po; do po2ts -i $XX -o
+  - In ZSH: `for XX in res/translations/mixxx/*.po; do po2ts -i $XX -o
     res/translations/mixxx_${$(basename $XX)%.*}.ts; done`
   - For every mixxx\_xx.ts file in res/translations/, `lrelease
     res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm`
-  - In Bash: `for XX in res/translations/mixxx_*.ts; do lrelease
+  - In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease
     -nountranslated $XX -qm res/translations/${$(basename $XX)%.*}.qm;
     done`
   - If you are testing a translation and would like untranslated strings
     to show up as blank, do not give the 'nountranslated' argument to
     lrelease.
-  - Update res/mixxx.qrc file to add any new languages that were not
-    previously present.
+  - Add all new translation translation TS and QM files to Bazaar
+  - In ZSH: `bzr add res/translations/mixxx_*.(ts|qm)`
+  - **Update res/mixxx.qrc file to add any new languages that were not
+    previously present.**
 
 **TODO:** make the sconscript do this as part of a normal build so Mixxx
 contains the latest translations.

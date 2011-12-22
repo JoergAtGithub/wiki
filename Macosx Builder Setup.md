@@ -137,6 +137,28 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+    mkdir -p libogg-1.3.0-{i386,x86_64,ppc}
+    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-i386 --strip-components 1
+    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-ppc --strip-components 1
+    cd libogg-1.3.0-ppc
+    export ARCH_FLAGS="-arch ppc"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libogg-1.3.0-i386
+    export ARCH_FLAGS="-arch i386"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libogg-1.3.0-x86_64
+    export ARCH_FLAGS="-arch x86_64"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    lipo -create ./src/.libs/libogg.0.dylib ../libogg-1.3.0-ppc/src/.libs/libogg.0.dylib ../libogg-1.3.0-i386/src/.libs/libogg.0.dylib -output src/.libs/libogg.0.dylib
+    sudo make install
+
 # libvorbis
 
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX

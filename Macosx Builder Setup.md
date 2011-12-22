@@ -165,6 +165,30 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+    mkdir -p libvorbis-1.3.2-{i386,x86_64,ppc}
+    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-i386 --strip-components 1
+    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-ppc --strip-components 1
+    cd libvorbis-1.3.2-ppc
+    export ARCH_FLAGS="-arch ppc"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libvorbis-1.3.2-i386
+    export ARCH_FLAGS="-arch i386"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libvorbis-1.3.2-x86_64
+    export ARCH_FLAGS="-arch x86_64"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    lipo -create ./lib/.libs/libvorbis.0.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbis.0.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbis.0.dylib -output lib/.libs/libvorbis.0.dylib
+    lipo -create ./lib/.libs/libvorbisenc.2.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbisenc.2.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbisenc.2.dylib -output lib/.libs/libvorbisenc.2.dylib
+    lipo -create ./lib/.libs/libvorbisfile.3.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbisfile.3.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbisfile.3.dylib -output lib/.libs/libvorbisfile.3.dylib
+    sudo make install
+
 # libmad
 
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX

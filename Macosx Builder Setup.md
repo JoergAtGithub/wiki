@@ -165,7 +165,7 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
-    mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
+    mkdir -p libshout-2.2.2-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-i386 --strip-components 1
     tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-x86_64 --strip-components 1
     tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-ppc --strip-components 1

@@ -12,6 +12,12 @@ figure out how to do a lot of this.**
 
 # Environment
 
+This document assumes you are untarring the source to a directory such
+as `~/build`. Store this file as `environment.sh` in your build
+directory.
+
+    #!/bin/bash
+    
     export CC="$(xcode-select -print-path)/usr/bin/gcc-4.2"
     export CXX="$(xcode-select -print-path)/usr/bin/g++-4.2"
     export CPP="$(xcode-select -print-path)/usr/bin/cpp-4.2"
@@ -19,17 +25,26 @@ figure out how to do a lot of this.**
     
     export MACOSX_DEPLOYMENT_TARGET="10.5"
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk
-    export MIXXX_PREFIX=$OSX_SDK/usr/local
+    export MIXXX_PREFIX=$OSX_SDK/usr/local/universal/
     
     # If you are not building on a i386 OS X install, change this.
-    export HOST=i386-apple-darwin10
+    export HOST="i386-apple-darwin10"
+    export TARGET_I386="i386-apple-darwin10"
+    export TARGET_X86_64="x86_64-apple-darwin10"
+    export TARGET_POWERPC="powerpc-apple-darwin10"
     
-    export OSX_CFLAGS="-isysroot $OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
-    export OSX_LDFLAGS="-isysroot $OSX_SDK -Wl,-syslibroot,$OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET"
+    export OSX_CFLAGS="-isysroot $OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS"
+    export OSX_LDFLAGS="-isysroot $OSX_SDK -Wl,-syslibroot,$OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS"
     
-    export CFLAGS="$OSX_CFLAGS -arch i386 -arch x86_64"
-    export CXXFLAGS=$CFLAGS
-    export LDFLAGS="$OSX_LDFLAGS -arch i386 -arch x86_64"
+    export CFLAGS=$OSX_CFLAGS
+    export CXXFLAGS=$OSX_CFLAGS
+    export LDFLAGS=$OSX_LDFLAGS
+    export SHLIBFLAGS=$OSX_LDFLAGS
+    export DYLIBFLAGS=$OSX_LDFLAGS
+
+This guide also assumes you have archives of each source dependency
+stored in a folder named `dependencies` located one level above your
+build directory.
 
 # XCode
 

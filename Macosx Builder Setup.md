@@ -78,6 +78,8 @@ Configure Qt like this:
     make
     sudo make install
 
+## 10.5 Universal (ppc/i386/x86\_64)
+
     ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
     make
     sudo make install
@@ -89,6 +91,8 @@ Configure Qt like this:
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
     make
     sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
 
     mkdir -p flac-1.2.1-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1
@@ -126,7 +130,7 @@ Configure Qt like this:
     make
     sudo make install
 
-Universal (PPC/x86/x86\_64)
+## 10.5 Universal (ppc/i386/x86\_64)
 
     mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
@@ -156,6 +160,8 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+## 10.5 Universal (ppc/i386/x86\_64)
+
     mkdir -p libogg-1.3.0-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-i386 --strip-components 1
     tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-x86_64 --strip-components 1
@@ -183,6 +189,8 @@ Universal (PPC/x86/x86\_64)
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
 
     mkdir -p libvorbis-1.3.2-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-i386 --strip-components 1
@@ -234,6 +242,8 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+## 10.5 Universal (ppc/i386/x86\_64)
+
     mkdir -p libshout-2.2.2-{i386,x86_64,ppc}
     tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-i386 --strip-components 1
     tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-x86_64 --strip-components 1
@@ -262,6 +272,8 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+## 10.5 Universal (ppc/i386/x86\_64)
+
     # I believe taglib is safe to compile multiple architectures together.
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../environment.sh
@@ -277,6 +289,8 @@ Universal (PPC/x86/x86\_64)
     ./configure --prefix=$MIXXX_PREFIX --disable-mac-universal
     make
     sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
 
     # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
@@ -301,6 +315,8 @@ Universal (PPC/x86/x86\_64)
     sudo mv /usr/local/include/portmidi.h $MIXXX_PREFIX/include
     sudo mv /usr/local/include/porttime.h $MIXXX_PREFIX/include
 
+## 10.5 Universal (ppc/i386/x86\_64)
+
     cmake . -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK"   
     make 
     sudo make install
@@ -322,6 +338,8 @@ Universal (PPC/x86/x86\_64)
     sudo mkdir $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394
+
+## 10.5 Universal (ppc/i386/x86\_64)
 
     bzr checkout lp:hss1394
     cd hss1394

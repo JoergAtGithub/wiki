@@ -165,6 +165,28 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+    mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
+    tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-i386 --strip-components 1
+    tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/libshout-2.2.2.tar.gz -C libshout-2.2.2-ppc --strip-components 1
+    cd libshout-2.2.2-ppc
+    export ARCH_FLAGS="-arch ppc"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libshout-2.2.2-i386
+    export ARCH_FLAGS="-arch i386"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    cd ../libshout-2.2.2-x86_64
+    export ARCH_FLAGS="-arch x86_64"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    lipo -create ./src/.libs/libshout.3.2.0.dylib ../libshout-2.2.2-ppc/src/.libs/libshout.3.2.0.dylib ../libshout-2.2.2-i386/src/.libs/libshout.3.2.0.dylib -output src/.libs/libshout.3.2.0.dylib
+    sudo make install
+
 # taglib
 
     cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON

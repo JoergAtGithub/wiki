@@ -20,7 +20,7 @@ for Unit testing:
 If not done already you need to have a valid source directory of mixxx,
 as outlined here: [compiling\_on\_linux](compiling_on_linux) or
 [compiling\_on\_os\_x](compiling_on_os_x) or
-[compiling\_on\_windows](compiling_on_windows))
+[compiling\_on\_windows](compiling_on_windows)
 
 # Eclipse plugins to install
 

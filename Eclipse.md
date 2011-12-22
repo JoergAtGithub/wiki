@@ -1,6 +1,7 @@
 # Install eclipse (packages or source)
 
-Of course, install eclipse and CDT.
+Of course, install eclipse and CDT. Either simply from their homepage or
+use the packages for your operating system.
 
 Ubuntu Packages to Install would be:
 

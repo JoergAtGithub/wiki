@@ -1,3 +1,6 @@
+Just some quick notes on how to get the eclipse IDE together with its
+bazaar plugin and scons plugin working.
+
 # Install eclipse (packages or source)
 
 Of course, install eclipse and CDT. Either simply from their homepage or

@@ -1,7 +1,8 @@
-# Packages
+# Install eclipse (packages or source)
 
-Ubuntu Packages to Install (Eclipse 3.2 which comes with Gutsy/Hardy is
-a bit old, but it will work) install:
+Of course, install eclipse and CDT.
+
+Ubuntu Packages to Install would be:
 
   - eclipse-cdt
   - eclipse-pydev
@@ -10,37 +11,25 @@ for Unit testing:
 
   - libcppunit-dev
 
+# setup mixxx source
+
+If not done already you need to have a valid source directory of mixxx,
+as outlined here: [compiling\_on\_linux](compiling_on_linux) or
+[compiling\_on\_os\_x](compiling_on_os_x) or
+[compiling\_on\_windows](compiling_on_windows))
+
 # Eclipse plugins to install
 
-  - bazaar plugin: <http://wiki.bazaar.canonical.com/BzrEclipse>
-  - scons plugin: <http://sconsolidator.com>
+  - scons plugin: <http://sconsolidator.com> and ***follow*** the
+    instructions there on how to install and configure
+  - From eclipse menu, you can use File-\>Import-\>c/c++-\>new scons
+    project from existing source 
+  - if you run into problems, please see:
+    <http://www.sconsolidator.ch/wiki/sconsolidator/FAQ>
 
-# IDE Setup
+<!-- end list -->
 
-To edit SCons files with the Python syntax color highlighting: General
--\> Editors -\> File Associations
-
-  - Add "SConscript" file type -\> Python Editor
-  - Add "SConstruct" file type -\> Python Editor
-  - Add "SConstruct.ext" file type -\> Python Editor
-
-Pydev -\> Interpreters -\> Python
-
-  - New python interpreter -\> /usr/bin/python
-
-# Conditional Defines
-
-You have to do this for CDT to provide completion if you are working
-inside a ifdef block
-
-Project Properties -\> Include Paths and Symbols
-
-  - Add Preprocessor Symbol -\> ‾‾LIBDJCONSOLE‾‾ =1
-
-# See Also
-
-  - SConsBuilder example project -
-    <http://nic-nac-project.de/~lothar/eclipse/update/scons-example.tar.gz>
-  - Build C++ Programs With SCons in Eclipse Using SConsBuilder
-    Plugin(MS Windows) -
-    <http://beans.seartipy.com/2007/10/24/build-c-programs-with-scons-in-eclipse-using-sconsbuilder-pluginms-windows/>
+  - bazaar plugin: <http://wiki.bazaar.canonical.com/BzrEclipse> and
+    ***follow*** the instructions there on how to install and configure
+  - you can then right-click on the eclipse project and select 'Team -
+    Share Project...' and select bzr

@@ -19,7 +19,7 @@ Launchpad will pick up the changes to the template automatically.
 **TODO:** make the sconscript do this as part of a normal build so code
 changes that change or add strings automatically update the templates.
 
-## Updating Mixxx's translations
+## Updating translations
 
 *This procedure updates Mixxx with translations (PO files) that have
 been contributed by Launchpad users.*

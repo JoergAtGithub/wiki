@@ -84,7 +84,7 @@ plans.
   - [MixxxScript](MixxxScript)
   - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
-  - [Internationalization](Internationalization)
+  - [Internationalization/Translations](Internationalization/Translations)
   - [The Bug Tracker](launchpad_bugs)
 
 ### Interfaces

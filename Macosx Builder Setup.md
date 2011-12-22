@@ -72,20 +72,30 @@ or a similar solution is in Qt this step will not be required. Without
 this step, the resulting packages will not pass the Mac App Store review
 process.
 
-Configure Qt like this:
+## 10.5 Intel (i386/x86\_64)
 
-    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ -arch x86 -arch x86_64 -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
+    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ $ARCH_FLAGS -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
     make
     sudo make install
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
+    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    source ../environment.sh
+    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ $ARCH_FLAGS -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
     make
     sudo make install
 
 # libflac
 
+## 10.5 Intel (i386/x86\_64)
+
+    tar -zxf ../dependencies/flac-1.2.1.tar.gz
+    cd flac-1.2.1
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
@@ -124,6 +134,12 @@ Configure Qt like this:
 
 # libsndfile
 
+## 10.5 Intel (i386/x86\_64)
+
+    tar -zxf ../dependencies/libsndfile-1.0.25.tar.gz
+    cd libsndfile-1.0.25
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
     ./configure --host $HOST --target x86_64-apple-darwin10 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
@@ -156,6 +172,12 @@ Configure Qt like this:
 
 # libogg
 
+## 10.5 Intel (i386/x86\_64)
+
+    tar -zxf ../dependencies/libogg-1.3.0.tar.gz
+    cd libogg-1.3.0
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
@@ -186,6 +208,12 @@ Configure Qt like this:
 
 # libvorbis
 
+## 10.5 Intel (i386/x86\_64)
+
+    tar zxf ../dependencies/libvorbis-1.3.2.tar.gz
+    cd libvorbis-1.3.2
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
@@ -220,6 +248,10 @@ Configure Qt like this:
 
 **libmad is not used in Mixxx OS X release builds anymore.**
 
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     # libmad's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
@@ -230,6 +262,10 @@ Configure Qt like this:
 
 **libid3tag is not used in Mixxx release builds anymore.**
 
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     # libid3tag's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 
@@ -238,6 +274,12 @@ Configure Qt like this:
 
 # libshout
 
+## 10.5 Intel (i386/x86\_64)
+
+    tar zxf ../dependencies/libshout-2.2.2.tar.gz
+    cd libshout-2.2.2
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     sudo make install
@@ -268,6 +310,10 @@ Configure Qt like this:
 
 # taglib
 
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
     make
     sudo make install
@@ -283,6 +329,10 @@ Configure Qt like this:
 
 # portaudio
 
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
     export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
     export CXXFLAGS=$CFLAGS
@@ -292,9 +342,9 @@ Configure Qt like this:
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../environment.sh
+    # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
     export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
     export CXXFLAGS=$CFLAGS
     # Mac universal in this case includes ppc64 which we aren't supporting.
@@ -304,6 +354,10 @@ Configure Qt like this:
 
 # portmidi
 
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     # Edit CMakeLists.txt to manually remove ppc from the CMAKE_OSX_ARCHITECTURES variable. 
     cmake . -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK"   
     make 
@@ -317,6 +371,9 @@ Configure Qt like this:
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
+    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    source ../environment.sh
+    # PortMIDI hard-coded ppc, i386, and x86_64 for CMAKE_OSX_ARCHITECTURES. This is what we are building in this case so no change is necessary.
     cmake . -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK"   
     make 
     sudo make install
@@ -329,8 +386,12 @@ Configure Qt like this:
 
 # hss1394
 
+## 10.5 Intel (i386/x86\_64)
+
     bzr checkout lp:hss1394
     cd hss1394
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
     scons prefix=$MIXXX_PREFIX
     # Actually, this doesn't work. Just manually copy the files.
     #sudo scons prefix=$MIXXX_PREFIX install

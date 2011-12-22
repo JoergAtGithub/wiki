@@ -201,6 +201,8 @@ Universal (PPC/x86/x86\_64)
 
 # libid3tag
 
+**libid3tag is not used in Mixxx release builds anymore.**
+
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make
     # libid3tag's build system is broken as of this release and does not respect LDFLAGS for the dylib. copy and paste this equivalent line in your build log and insert "-arch i386 -arch x86_64" somewhere into the line. This will rebuild the dylib with support for both architectures. 

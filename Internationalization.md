@@ -40,6 +40,7 @@ been contributed by Launchpad users.*
   - In ZSH: `bzr add res/translations/mixxx_*.(ts|qm)`
   - **Update res/mixxx.qrc file to add any new languages that were not
     previously present.**
+  - Commit, push.
 
 **TODO:** make the sconscript do this as part of a normal build so Mixxx
 contains the latest translations.

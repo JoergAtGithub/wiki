@@ -1,8 +1,13 @@
 # i18n/l10n and Mixxx
 
-## Steps to Update Qt/POT templates in Mixxx branches
+## Updating translation templates
 
-  - **Make a clean checkout of the branch you are in. NO EXCEPTIONS**
+*This procedure extracts translatable strings from Mixxx's code into
+template files (Qt/POT) so that Launchpad's interface can present the
+most current strings to translators.*
+
+  - **Make a clean checkout of the Mixxx code branch you are in. NO
+    EXCEPTIONS**
   - `lupdate src -recursive -extensions cpp,h,ui -ts
     res/translations/mixxx.ts`
   - `ts2po -P -i res/translations/mixxx.ts -o
@@ -11,12 +16,14 @@
 
 Launchpad will pick up the changes to the template automatically.
 
-## Steps to Merge Translations (PO's) from Launchpad
+**TODO:** make the sconscript do this as part of a normal build so code
+changes that change or add strings automatically update the templates.
 
-  - From the branch you'd like to merge into:
-  - `bzr merge lp:~mixxxdevelopers/mixxx/BRANCH_translations`
-  - Replace `BRANCH` above with the branch you would like to merge
-    translation from (e.g. `trunk` or `1.9`)
+## Updating Mixxx's translations
+
+*This procedure updates Mixxx with translations (PO files) that have
+been contributed by Launchpad users.*
+
   - For every PO file in res/translations/mixxx/, `po2ts
     res/translations/mixxx/xx.po res/translations/mixxx_xx.ts`
   - In Bash: `for XX in res/translations/mixxx/*.po; do po2ts -i $XX -o
@@ -31,3 +38,6 @@ Launchpad will pick up the changes to the template automatically.
     lrelease.
   - Update res/mixxx.qrc file to add any new languages that were not
     previously present.
+
+**TODO:** make the sconscript do this as part of a normal build so Mixxx
+contains the latest translations.

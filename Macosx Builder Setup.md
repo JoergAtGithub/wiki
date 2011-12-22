@@ -78,6 +78,10 @@ Configure Qt like this:
     make
     sudo make install
 
+    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release
+    make
+    sudo make install
+
 # libflac
 
     export CC="$CC $CFLAGS"

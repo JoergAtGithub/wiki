@@ -10,11 +10,10 @@ for Unit testing:
 
   - libcppunit-dev
 
-# Plugins
+# Eclipse plugins to install
 
-  - SconsBuilder -
-    <http://nic-nac-project.de/~lothar/eclipse/update/SConsBuilderPlugin.html>
-  - Subclipse - <http://subclipse.tigris.org/install.html>
+  - bazaar plugin: <http://wiki.bazaar.canonical.com/BzrEclipse>
+  - scons plugin: <http://sconsolidator.com>
 
 # IDE Setup
 

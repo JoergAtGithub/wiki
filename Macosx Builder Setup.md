@@ -299,3 +299,15 @@ Universal (PPC/x86/x86\_64)
     sudo mkdir $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394
+
+    bzr checkout lp:hss1394
+    cd hss1394
+    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    source ../environment.sh
+    scons prefix=$MIXXX_PREFIX
+    # Actually, this doesn't work. Just manually copy the files.
+    #sudo scons prefix=$MIXXX_PREFIX install
+    sudo cp obj/libhss1394.dylib $MIXXX_PREFIX/lib
+    sudo mkdir $MIXXX_PREFIX/include/hss1394
+    sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
+    sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394

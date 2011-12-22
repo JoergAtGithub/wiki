@@ -4,9 +4,9 @@ support.
 # Mixxx 1.10.x
 
   - Qt 4.7.4
-  - libid3tag 0.15.1b
-  - libmad 0.15.1b
-  - libogg 1.3.0
+  - libid3tag 0.15.1b (not on OS X)
+  - libmad 0.15.1b (not on OS X)
+  - libogg 1.3.0 
   - libshout 2.2.2
   - libvorbis 1.3.2
   - libsndfile 1.0.25

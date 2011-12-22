@@ -142,6 +142,24 @@ unless you do it manually. **To bring your features branch up to date**:
     message"` (You'll need to register an SSH key first under your
     personal LP page: <https://launchpad.net/people/+me/+editsshkeys>.)
 
+## Automatic submission to CIA
+
+Mixxx has a CIA bot in our freenode channel that will dutifully announce
+any commits to the codebase. To make this work for you, do the
+following:
+
+1.  Set up an account at <http://cia.vc/>
+2.  Install your distribution's `cia-clients` package, or manually
+    install the plugin from [the Launchpad project
+    page](https://launchpad.net/bzr-cia)
+3.  At a command prompt in at the root directory of the branch/checkout
+    you're working on, enter `bzr cia-project Mixxx`
+4.  In \~/.bazaar/bazaar.conf, set 'cia\_user' to your username on the
+    CIA.vc system
+
+That's it. The next time you push/commit code from this branch/checkout,
+CIA will be notified.
+
 ## Troubleshooting
 
 ### Pull or Checkout

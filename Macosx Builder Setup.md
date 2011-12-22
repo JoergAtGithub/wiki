@@ -255,6 +255,16 @@ Universal (PPC/x86/x86\_64)
     make
     sudo make install
 
+    # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
+    export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
+    export CXXFLAGS=$CFLAGS
+    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    source ../environment.sh
+    # Mac universal in this case includes ppc64 which we aren't supporting.
+    ./configure --prefix=$MIXXX_PREFIX --disable-mac-universal
+    make
+    sudo make install
+
 # portmidi
 
     # Edit CMakeLists.txt to manually remove ppc from the CMAKE_OSX_ARCHITECTURES variable. 

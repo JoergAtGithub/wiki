@@ -161,3 +161,31 @@ high, long notes). When you enable key lock ("pitch-independent
 time-stretch" in 1.8.x and below,) Mixxx will use a vocoder-based
 algorithm from the SoundTouch library, which sounds a lot better (but is
 not recommended when scratching.)
+
+## How can I move my music to another folder or hard drive without loosing information like bpm or cue points?
+
+Unfortunately, as of today (mixxx 1.10) this does not work automagically
+but needs some manual fiddling with the music configuration files. Here
+is one way of doing it:
+
+1.  **Backup your mixxx configuration files**
+2.  Move your music folder to the new folder or new hard drive
+3.  Install *SQLite Manager*, which is a firefox extensions that lets
+    you manipulate the mixxx database:
+    <https://addons.mozilla.org/de/firefox/addon/sqlite-manager/>
+4.  Open the SQLite Manager from within firefox. Within SQLite Manager
+    open the file `mixxxdb.sqlite` that can be found in your mixxx
+    configuration folder
+5.  Go on `Execute SQL` and enter: `update track_locations set directory
+    = replace (directory, '/old/path/DJ/Music/', '/new/path/DJ/Music/');
+    
+    update track_locations set location = replace (location,
+    '/old/path/DJ/Music/', '/new/path/DJ/Music/');` where the old and
+    new paths point to your corresponding music folders. 
+6.  Then hit `Run SQL`. The above statements will replace all instances
+    of `/old/path/DJ/Music/` to `/new/path/DJ/Music/` in the field of
+    *location* and *directory* of *track\_locations* table.
+7.  Start `mixxx` and under settings change your music folder to the new
+    one. If you want you can do a rescan to check that the music files
+    do not turn up twice suddenly. Check if bpm and other meta
+    infomation like cue points are still stored with the files.

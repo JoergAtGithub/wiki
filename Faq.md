@@ -168,7 +168,8 @@ Unfortunately, as of today (mixxx 1.10) this does not work automagically
 but needs some manual fiddling with the music configuration files. Here
 is one way of doing it:
 
-1.  **Backup your mixxx configuration files**
+1.  **Backup your mixxx configuration files** (under Linux, this is
+    `.mixxx/` in the home folder)
 2.  Move your music folder to the new folder or new hard drive
 3.  Install *SQLite Manager*, which is a firefox extensions that lets
     you manipulate the mixxx database:

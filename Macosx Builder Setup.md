@@ -13,8 +13,13 @@ figure out how to do a lot of this.**
 # Environment
 
 This document assumes you are untarring the source to a directory such
-as `~/build`. Store this file as `environment.sh` in your build
-directory.
+as `~/build`. The goal of this document is to prepare a root directory
+that looks like `/usr/local` (e.g. a directory with `bin`, `lib`, and
+`include` folders) which has all of Mixxx's dependencies compiled and
+installed to it. When compiling Mixxx, simply provide this directory
+(`$MIXXX_PREFIX`) to scons via the `osxlib` argument.
+
+Store this file as `environment.sh` in your build directory.
 
     #!/bin/bash
     

@@ -191,7 +191,7 @@ Universal (PPC/x86/x86\_64)
 
 # libmad
 
-**libmad is not used in Mixxx release builds anymore.**
+**libmad is not used in Mixxx OS X release builds anymore.**
 
     ./configure --disable-dependency-tracking --prefix=$MIXXX_PREFIX
     make

@@ -380,3 +380,19 @@ process.
     sudo mkdir $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394
+
+# Mixxx
+
+To test your new build environment, we will build Mixxx.
+
+``` 
+
+bzr branch lp:mixxx ./mixxx-trunk
+cd mixxx-trunk
+export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+source ../environment.sh
+export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
+export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
+export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib"
+scons osxlib=$MIXXX_PREFIX/lib
+```

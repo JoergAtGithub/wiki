@@ -387,9 +387,9 @@ To test your new build environment, we will build Mixxx.
 
 ``` 
 bzr branch lp:mixxx ./mixxx-trunk
-cd mixxx-trunk
+cd mixxx-trunk/mixxx
 export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
-source ../environment.sh
+source ../../environment.sh
 export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
 export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
 export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"

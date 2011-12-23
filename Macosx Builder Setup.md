@@ -392,7 +392,7 @@ export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
 source ../environment.sh
 export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
 export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
-export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib"
+export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"
 scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 
 ```
 

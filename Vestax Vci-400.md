@@ -25,3 +25,31 @@ MODE switch (control \#28 and \#29) to the right position, otherwise,
 the CUE and PLAY buttons will not work.
 
 The device has been mapped as follows:
+
+1.  CUE button for channel A
+2.  PLAY button for channel A
+3.  CUE button for channel B
+4.  PLAY button for channel B
+5.  Jog Wheel for channel A used for scratching or pitch bend depending
+    on the VINYL button LED)
+6.  Jog Wheel for channel B used for scratching or pitch bend depending
+    on the VINYL button LED)
+7.  VOLUME fader for channel A
+8.  Volume fader for channel B
+9.  VU meters of the master output
+10. Setting or activating HOT CUE 1 on channel A. To delete the HOT CUE
+    1, press the button directly below.
+11. Setting or activating HOT CUE 2 on channel A. To delete the HOT CUE
+    2, press the button directly below.
+12. Setting or activating HOT CUE 3 on channel A. To delete the HOT CUE
+    3, press the button directly below.
+13. Setting or activating HOT CUE 4 on channel A. To delete the HOT CUE
+    4, press the button directly below.
+14. Setting or activating HOT CUE 1 on channel B. To delete the HOT CUE
+    1, press the button directly below.
+15. Setting or activating HOT CUE 2 on channel B. To delete the HOT CUE
+    2, press the button directly below.
+16. Setting or activating HOT CUE 3 on channel B. To delete the HOT CUE
+    3, press the button directly below.
+17. Setting or activating HOT CUE 4 on channel B. To delete the HOT CUE
+    4, press the button directly below.

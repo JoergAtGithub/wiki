@@ -31,7 +31,7 @@ There are two different levels of device support in Mixxx:
 | [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+)                                                                                                                                  |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                                  |
 | [eks Otus](eks%20Otus)                                           | In Progress (1.11.0)                    | In Progress (1.11.0)       | In Progress (1.11.0)                                                                                                                          |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | In Progress (1.11.0)                    | In Progress (1.11.0)       | In Progress (1.11.0)                                                                                                                          |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1)                            | Yes (1.10.1)               | Not tested                                                                                                                                    |
 
 ### Community Supported Mappings
 

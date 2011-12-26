@@ -13,5 +13,15 @@ only version 1.11 and up support the device out of the box. For version
 
 The VCI-400 has not been designed for a particular DJ software.
 Depending on the software there are buttons and knobs having different
-functions assigned. Currently, Vestax provides overlays for Traktor,
-Serato, Virtual DJ.
+functions assigned. Vestax provides overlays for Traktor, Serato,
+Virtual DJ. Currenlty, **the VCI-400 mapping of Mixxx is based on the
+Traktor overlay**.
+
+## Mapping
+
+The numbers in the picture above that are surrounded by the green
+circles visualize the mapped controls. Please note that you must set the
+MODE switch (control \#28 and \#29) to the right position, otherwise,
+the CUE and PLAY buttons will not work.
+
+The device has been mapped as follows:

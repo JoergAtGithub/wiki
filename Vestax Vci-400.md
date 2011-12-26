@@ -26,16 +26,16 @@ the CUE and PLAY buttons will not work.
 
 The device has been mapped as follows:
 
-1.  CUE button for channel A
-2.  PLAY button for channel A
-3.  CUE button for channel B
-4.  PLAY button for channel B
+1.  CUE button for channel A.
+2.  PLAY button for channel A.
+3.  CUE button for channel B.
+4.  PLAY button for channel B.
 5.  Jog Wheel for channel A used for scratching or pitch bend depending
-    on the VINYL button LED)
+    on the VINYL button LED).
 6.  Jog Wheel for channel B used for scratching or pitch bend depending
-    on the VINYL button LED)
-7.  VOLUME fader for channel A
-8.  Volume fader for channel B
+    on the VINYL button LED).
+7.  VOLUME fader for channel A.
+8.  Volume fader for channel B.
 9.  VU meters of the master output
 10. Setting or activating HOT CUE 1 on channel A. To delete the HOT CUE
     1, press the button directly below.
@@ -53,3 +53,19 @@ The device has been mapped as follows:
     3, press the button directly below.
 17. Setting or activating HOT CUE 4 on channel B. To delete the HOT CUE
     4, press the button directly below.
+18. Jump 4 beats back on channel A (not implemented yet).
+19. Jump over the next 4 beats on channel A (not implemenetd yet).
+20. Loop In on channel A.
+21. Loop Out / Loop Exit on channel A.
+22. Push the button/wheel to set a loop over 4 beats on channel A.
+    Rotate the wheel to double or halve the loop. 
+23. Jump 4 beats back on channel B (not implemented yet).
+24. Jump over the next 4 beats on channel B (not implemenetd yet).
+25. Loop In on channel B.
+26. Loop Out / Loop Exit on channel B.
+27. Push the button/wheel to set a loop over 4 beats on channel B.
+    Rotate the wheel to double or halve the loop.
+28. MODE Switch: Must be set to right position, otherwise PLAY and CUE
+    on channel A will not work. 
+29. MODE Switch: Must be set to right position, otherwise PLAY and CUE
+    on channel B will not work.

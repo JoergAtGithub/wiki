@@ -265,7 +265,7 @@ scans for HID devices.) To fix this, do the following:
     /etc/udev/rules.d/15-mixxx-usb.rules`
 3.  Edit that file and add the following: `# Allow scannining USB
     devices
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users
+    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users"
     
     # Allow communicating with HID devices
     ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"` (use

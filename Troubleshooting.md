@@ -263,9 +263,13 @@ scans for HID devices.) To fix this, do the following:
 2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` (you can
     change the number and name as appropriate): `sudo nano
     /etc/udev/rules.d/15-mixxx-usb.rules`
-3.  Edit that file and add `SUBSYSTEM=="usb",
-    ENV{DEVTYPE}=="usb_device", GROUP="users"` (use whatever group name
-    you prefer)
+3.  Edit that file and add the following: `# Allow scannining USB
+    devices
+    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users
+    
+    # Allow communicating with HID devices
+    ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"` (use
+    whatever group name you prefer)
 4.  Save and exit.
 5.  Enter `sudo /etc/init.d/udev restart`
 6.  If your user account is not already a member of `users`, enter `sudo

@@ -252,3 +252,25 @@ of your PC/card manufacturer since they may be newer.
     sometimes causes segmentation fault on exit in Windows and Linux.
     This is fixed by upgrading your version of the Qt libraries on Linux
     or getting the latest Mixxx 1.7 package for Windows.
+
+## Mixxx says I have no HID controllers attached even though I do
+
+This happens on Linux and results from not having write permissions to
+USB devices. (Mixxx will say something to this effect in the log when it
+scans for HID devices.) To fix this, do the following:
+
+1.  Open a console
+2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` (you can
+    change the number and name as appropriate): `sudo nano
+    /etc/udev/rules.d/15-mixxx-usb.rules`
+3.  Edit that file and add `SUBSYSTEM=="usb",
+    ENV{DEVTYPE}=="usb_device", GROUP="users"` (use whatever group name
+    you prefer)
+4.  Save and exit.
+5.  Enter `sudo /etc/init.d/udev restart`
+6.  If your user account is not already a member of `users`, enter `sudo
+    usermod -a -G users YOURUSERNAME` Replace YOURUSERNAME with your
+    username.
+7.  Log off and back on so your user account gets the new group and
+    associated permissions.
+8.  Start Mixxx and you should be good to go.

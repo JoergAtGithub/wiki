@@ -201,8 +201,8 @@ Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
 code:
 
-    bzr checkout lp:mixxx/1.9 (for current stable v1.9)
-    bzr checkout lp:mixxx/1.10 (for current beta v1.10)
+    bzr checkout lp:mixxx/1.9 (for old stable v1.9)
+    bzr checkout lp:mixxx/1.10 (for current stable v1.10)
     bzr checkout lp:mixxx (for latest trunk)
 
 ## 4\. Compile and install

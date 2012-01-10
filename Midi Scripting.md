@@ -28,7 +28,13 @@ that may be loaded.
 
 ## Linking scripts to device controls
 
-To link a script function to a particular control, in the device's XML
+MIDI controller mapping files are described on [MIDI controller mapping
+file
+format](http://www.mixxx.org/wiki/doku.php/midi_controller_mapping_file_format)
+page. This XML file defines how MIDI controls are mapped to MIDI
+commands.
+
+To link a script function to a particular control in the device's XML
 MIDI mapping file, put the full function name in the \<key\> tag, and a
 \<Script-Binding/\> tag in the \<options\> block, like so:
 

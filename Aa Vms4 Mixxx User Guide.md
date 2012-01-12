@@ -8,7 +8,10 @@
 sound quality.** Do this by holding down the Cue button on Midilog 4
 while powering on the unit. You only need to do this once. (Each time
 you do it, it changes the mode back and forth.) Consult the [user
-manual](http://vms4dj.com/Files/vms4.pdf) for more information.
+manual](http://vms4dj.com/Files/vms4.pdf) for more information. (To
+check the status of this in Linux, at a console, issue the command
+`lsusb -v|grep 'iSerial\|iProduct'` and look at the serial number under
+the VMS4 device per the instructions in the user manual.)
 
 1.  Make sure the VMS4 is off
 2.  Slide the switch on the front of the VMS4 to "4 OUT"

@@ -235,27 +235,31 @@ Here is an example for the two most common types of wheels:
 MyController.wheelTouch = function (channel, control, value, status) {
     if ((status & 0xF0) == 0x90) {    // If button down
         engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, 1.0/8, (1.0/8)/32);
-        // Keep track of whether and what deck we're scratching
-        MyController.scratching = MyController.currentDeck;
+        // Keep track of whether we're scratching on this virtual deck
+        MyController.scratching[MyController.currentDeck] = true;
     }
     else {    // If button up
         engine.scratchDisable(MyController.currentDeck);
-        MyController.scratching = -1;  // Not scratching any more
+        MyController.scratching[MyController.currentDeck] = false;
     }
 }
 
 // The wheel that actually controls the scratching
 MyController.wheelTurn = function (channel, control, value, status) {
     // See if we're scratching. If not, skip this.
-    if (MyController.scratching == -1) return;
+    if (!MyController.scratching[MyController.currentDeck]) return;
     
-    // For a control that centers on 0:
+    // --- Choose only one of the following!
+    
+    // A: For a control that centers on 0:
     var newValue;
     if (value-64 > 0) newValue = value-128;
     else newValue = value;
     
-    // For a control that centers on 0x40 (64):
+    // B: For a control that centers on 0x40 (64):
     var newValue=(value-64);
+    
+    // --- End choice
     
     // In either case, register the movement
     engine.scratchTick(MyController.currentDeck,newValue);

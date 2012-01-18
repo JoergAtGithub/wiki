@@ -188,5 +188,7 @@ is one way of doing it:
     *location* and *directory* of *track\_locations* table.
 7.  Start `mixxx` and under settings change your music folder to the new
     one. If you want you can do a rescan to check that the music files
-    do not turn up twice suddenly. Check if bpm and other meta
-    infomation like cue points are still stored with the files.
+    do not turn up twice suddenly (if you are on linux, do especially
+    check music files which where in symbolically linked directory).
+    Check if bpm and other meta infomation like cue points are still
+    stored with the files.

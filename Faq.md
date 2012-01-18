@@ -136,7 +136,7 @@ maintaining a Mixxx package for a distribution please get in touch.
 
 ## What music file formats can Mixxx play?
 
-As of release 1.8.x, Mixxx supports the following file formats:
+As of release 1.10.x, Mixxx supports the following file formats:
 
   - MP3
   - OGG

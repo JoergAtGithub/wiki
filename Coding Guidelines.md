@@ -190,7 +190,7 @@ If you'd like to leave a general `TODO` for the team, use the name
 
 Remember to actually go back and investigate your `TODO`'s :).
 
-\*Bad:\*
+**Bad:**
 
     // TODO Make this more general
 

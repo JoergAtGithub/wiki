@@ -244,8 +244,8 @@ classes other than Mixxx project classes.
     #include <sys/types.h>
     
     #include <QtCore>
-    #include <QTreeView>
     #include <QtDebug>
+    #include <QTreeView>
     
     #include <taglib/taglib.h>
     

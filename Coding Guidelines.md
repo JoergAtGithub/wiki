@@ -190,6 +190,10 @@ If you'd like to leave a general `TODO` for the team, use the name
 
 Remember to actually go back and investigate your `TODO`'s :).
 
+\*Bad:\*
+
+    // TODO Make this more general
+
 ## C++ Header Files
 
 This section outlines our various standards for writing header (.h)

@@ -56,8 +56,8 @@ Give variables and classes a descriptive but succinct name.
 **Avoid:** Variable names that do not give a hint for their purpose.
 **Examples:** ix, i, index, position, name, foo, bar
 
-Local variables should follow either a camel-case or
-lowercase-with-underscores style:
+Local variables should follow either a camelBack case or
+lowercase\_with\_underscores style:
 
     QString hotcue_name;
     int composerSortOrder;

@@ -1,6 +1,3 @@
-**NOTE:** This document is work in progress. [GameGod](/User/GameGod)
-07:40, 6 June 2007 (PDT)
-
 # Coding Guidelines
 
 ## General Philosophy
@@ -18,27 +15,11 @@ slightly differing styles (mainly variable naming conventions). In order
 to avoid this in the future, it's best for us to have some coding
 guidelines for developers to follow.
 
-## Classes and Members
-
-  - Class names follow the "MyName" format, with each word capitalized. 
-  - Member functions follow the usual "thisFunction" naming convention. 
-  - Private variables throughout the class should ideally start with
-    "m\_", and although this hasn't been followed thus far, it's a good
-    idea to use it because it tells you the scope of a variable without
-    having to dig through a header file.
-  - Class variables (static class members) should ideally start with
-    "s\_" (or "m\_s"... both seemed to be used, I prefer "s\_").
-  - Pointers should have a "p" before the rest of the name. For a
-    variable of type `int*` named "foo":
-  - A local variable or function argument: `pFoo` (probably the least
-    important of these, as long as your functions are short you probably
-    won't forget what's a pointer and what isn't)
-  - A data member (class member variable): `m_pFoo`
-  - A static data member: `s_pFoo`
-  - Minimal type information can be useful as well, for instance, a
-    [ControlObject](ControlObject) data member named Foo might be
-    `m_COFoo` Don't go crazy here, anything learned from
-    WINAPI-Hungarian is probably a bad idea.
+**As you change a part of Mixxx, please update it to match this style
+guide. That way, eventually all of Mixxx will be written in this style.
+Do not send us patches that are purely cosmetic with respect to source
+changes -- this is a waste of time since it does not benefit users
+directly.**
 
 ## Tabs vs. Spaces
 
@@ -63,6 +44,49 @@ intended to start holy-wars, rather they are simply intended to keep the
 Mixxx codebase **consistent**. You should strive to follow these
 guidelines as much as possible. If you do not, we may ask you to clean
 up your code to follow the style guide during code-review.
+
+## Naming
+
+What's in a name?
+
+### Variables
+
+Give variables and classes a descriptive but succinct name.
+
+**Avoid:** Variable names that do not give a hint for their purpose.
+**Examples: ix, i, index, position, name, foo, bar**
+
+Local variables should follow either a camel-case or
+lowercase-with-underscores style:
+
+    QString hotcue_name;
+    int composerSortOrder;
+
+Pointers should be prefixed with a "p" to indicate they are a pointer.
+The "\*" should be aligned with the type and **not** the name.
+
+**Examples:**"
+
+    int* pHotcueIndex;
+
+Optionally include minimal type information with variables. This can be
+handy to know at a glance the rough type of an object. For example, for
+a [ControlObject](ControlObject) a common pattern is to prepend "CO" to
+the variable name:
+
+    ControlObject* m_pCOPlayButton;
+
+### Classes
+
+  - Class names must be in CamelCase (e.g. "MyName"), with each word
+    capitalized. 
+  - Member functions of classes must be camel-back cased (e.g.
+    "thisFunction") 
+  - Member variables **must** be prefixed with "m\_". It is essential to
+    know the scope of a variable is at the class-member level with a
+    simple glance for easy readability of source files.
+  - Class variables (static class members) **must** be prefixed with
+    "s\_".
 
 ## Braces
 

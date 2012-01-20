@@ -80,7 +80,7 @@ the variable name:
 
   - Class names must be in CamelCase (e.g. "MyName"), with each word
     capitalized. 
-  - Member functions of classes must be camel-back cased (e.g.
+  - Member functions of classes must be camelBack cased (e.g.
     "thisFunction") 
   - Member variables **must** be prefixed with "m\_". It is essential to
     know the scope of a variable is at the class-member level with a

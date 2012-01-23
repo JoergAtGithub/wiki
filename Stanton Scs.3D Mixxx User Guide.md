@@ -119,7 +119,32 @@ Hold the EQ button down and touch any slider to reset it to center.
 
 ## Loop mode (red)
 
-(Introduced in Mixxx v1.8.0)
+### 1.10.1+
+
+The surface is configured as 11 buttons:
+
+| Left          | Middle      | Right        |
+| ------------- | ----------- | ------------ |
+| 1/8-beat loop | Loop In     | 2-beat loop  |
+| 1/4-beat loop | Reloop/Exit | 4-beat loop  |
+| 1/2-beat loop | Reloop/Exit | 8-beat loop  |
+| 1-beat loop   | Loop Out    | 16-beat loop |
+
+The Reloop/Exit button lights up when a loop is active. If it happens to
+be an exact number of beats, the corresponding beat loop button will
+light up as well.
+
+Also:
+
+  - **B11** (under the Gain slider) halves the length of the current
+    loop
+  - **B12** (under the Pitch slider) doubles the length of the current
+    loop
+
+You can exit any loop by pressing Reloop/Exit (or a lit beat loop
+button.)
+
+### 1.8.0-1.10.0
 
 The surface is configured as three giant buttons:
 

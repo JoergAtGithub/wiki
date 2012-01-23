@@ -38,6 +38,17 @@ before starting Mixxx.**
 8.  Click OK and you're good to go. (The controller should initialize
     and light up.)
 
+### 1.10.x
+
+The latest official MIDI mapping and script file are in the 1.10 release
+branch and can be downloaded from here:
+
+  - [Stanton
+    SCS.3d.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.10.x/download/head:/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-346/Stanton%20SCS.3d.midi.xml)
+  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.10.x/download/head:/mixxxresmidistantons-20090212032424-9h29294ehh1322b2-347/Stanton-SCS3d-scripts.js)
+
+[Mixxx user's guide for the SCS.3d](stanton_scs.3d_mixxx_user_guide)
+
 ### 1.8.x
 
 The latest official MIDI mapping and script file are in the 1.8 release

@@ -17,6 +17,7 @@ page.
     cues and hotcues
   - [OSC Backend](OSC%20Backend)
   - [Effects Framework](Effects%20Framework)
+  - [Multi-channel file mixing](Multi-channel%20file%20mixing)
 
 ## Implemented Specifications
 

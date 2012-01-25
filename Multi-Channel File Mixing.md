@@ -6,7 +6,7 @@ within a virtual deck so as to be able to create live remixes from
 stems. Doing this from a single multi-channel file greatly simplifies
 the workflow and eliminates synchronization problems.
 
-Things that need to change for this to be implemented:
+## Overview of required changes
 
   - FLAC and OGG SoundSources need to find out how many channels the
     loaded file offers, get meta-data for each (whether any are stereo

@@ -1,17 +1,18 @@
 # Multiple-channel file mixing
 
-OGG and FLAC files support up to eight channels. It would be interesting
-to extend Mixxx to allow DJs to work with these channels individually
-within a virtual deck so as to be able to create live remixes from
-stems. Doing this from a single multi-channel file greatly simplifies
-the workflow and eliminates synchronization problems.
+FLAC files support up to eight channels and OGG Vorbis supports up to
+255. It would be interesting to extend Mixxx to allow DJs to work with
+these channels individually within a virtual deck so as to be able to
+create live remixes from stems. Doing this from a single multi-channel
+file greatly simplifies the workflow and eliminates synchronization
+problems.
 
 ## Overview of required changes
 
   - FLAC and OGG SoundSources need to find out how many channels the
     loaded file offers, get meta-data for each (whether any are stereo
     pairs/other groups,) and report this information to their parent
-    Deck.
+    Deck. (Let's limit Vorbis to 8 channels as well for now.)
   - Decks need to:
   - Ask for this information
   - Manage the supplied number of channels

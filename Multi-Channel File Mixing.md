@@ -11,36 +11,59 @@ problems.
 
 *(Awaiting review from the Mixxx lead developer.)*
 
-  - FLAC and OGG SoundSources need to:
-  - Be extended to work with up to 8 channels, correctly reporting the
-    overall track length.
-  - Get meta-data for each (whether any are stereo pairs/other groups.)
-    Limit Vorbis to 8 channels as well for now.
-  - TrackInfoObject needs to add a property for channel groups and
-    get/set functions for it.
-  - Decks need to:
-  - Offer additional controls for each mono channel or channel group:
-    Mute, Solo and Volume controls 
-  - Tell the Analyzer which channel(s) to use for BPM detection
-  - Analyzers need to:
-  - Remove their assumptions of stereo, treating all channels as
-    individual mono entities
-  - Handle channel groups from 1-8 channels and process each group as a
-    single combined mono signal
-  - Report the number of rendered streams to the waveform renderer (Due
-    to channel grouping, this may be less than the number of channels in
-    the file.)
-  - CachingReader needs to be extended to support up to eight channels
+  - ~~FLAC and OGG SoundSources need to:~~**Author new `ContentSource`
+    API**
+  - Be extended to work with ~~up to 8~~**an arbitrary number of audio
+    and video** channels
+  - Report track length in frames of content rather than samples as
+    SoundSource does.
+  - Support querying of metadata for semantic information about channels
+    (e.g. vocals, bass, down-mixed version, drums, etc.)
+  - ~~TrackInfoObject needs to add a property for channel groups and
+    get/set functions for it.~~No changes should be necessary to TIO
+    except for deprecation of channels property. No part of Mixxx should
+    use TIO for audio data -- ideally it is for metadata of the artistic
+    work only.
+  - Really need to pick terminology and stick to it :). It's easy to get
+    mixed up. 
+  - Frame: A single timestep of the sampling rate of a piece of content
+  - Sample: A single amplitude of an audio channel 
+  - Track: A piece of content e.g. a song or video
+  - Channel: A stream of mono audio in a track 
+  - Stem?: A set of channels within a track that represent a particular
+    component of the track. E.g. the vocals, the bass, or the drums.
+  - Significant Engine work necessary
+  - Remove all assumptions of 2-channel audio 
+  - At a minimum, major updates to
+
+<!-- end list -->
+
+``` 
+    * EngineBuffer
+    * All EngineControl classes
+    * CachingReader
+* EngineObject API needs to be changed to support the passing of multiple streams of audio between EngineObjects (currently hard-coded to stereo buffers of audio) 
+* Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio. 
+* Modify EngineBuffer and EngineBufferScale* classes to instead of read and scale N stereo samples, read and scale N stereo samples out of each stem.
+* Build a new EngineObject that sits in the audio rendering path for EngineDeck. This will take the multiple available, scaled streams provided by EngineBuffer and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio. 
+    * This EngineObject should expose mute, solo, and volume controls for each 'stem' of the track.
+    * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting downmixed audio on to EngineMaster.
+```
+
+  - Rewrite Analyzer API
+  - Remove assumption of stereo audio, use ContentSource API to
+    understand the available stems in a track.
+  - If semantic information about the stems is available, it should BPM
+    detect only the bass track.
+  - Waveform calculation should produce waveforms for each stem. (Easier
+    with Waveform 2.0 since this is already done for low/mid/high
+    versions of the track)
   - The GUI needs to:
   - Include additional parallel summary waveforms for each mono channel
     or stereo pair
   - Display Mute, Solo, Volume, and Pan controls as the Deck reports
   - Overlap all (active) channels' waveforms in the detailed waveform
     display
-  - The waveform needs to change the way it renders to either 0 at
-    bottom, |max| at top; or 0 at center, -max at bottom, +max at top.
-    (Current is left channel from 0 at center to |max| at top, right
-    channel from 0 at center to |max| at bottom.)
 
 ## Sample multichannel files
 

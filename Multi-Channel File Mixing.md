@@ -58,4 +58,10 @@ four stereo tracks, then using the multichannel export option (in Edit
 -\> Preferences -\> Import/Export -\> Use Custom Mix) to get 8 channel
 output files.
 
-They are both 44.1KHz sample rate, 16 bit depth, quality setting 5.
+They are both 44.1KHz sample rate, 16 bit depth, quality setting 5. The
+Ogg file will play in VLC. The FLAC file does not, but it can be mixed
+down to stereo in Ecasound with:
+
+`ecasound -a:1,2,3,4,5,6,7,8 -i DJ_Vadim-Saturday.flac
+-a:1,2,3,4,5,6,7,8 -o alsa -a:3 -chmix:1 -a:4 -chmix:2 -a:5 -chmix:1
+-a:6 -chmix:2 -a:7 -chmix:1 -a:8 -chmix:2`

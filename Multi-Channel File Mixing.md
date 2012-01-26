@@ -41,3 +41,21 @@ problems.
     bottom, |max| at top; or 0 at center, -max at bottom, +max at top.
     (Current is left channel from 0 at center to |max| at top, right
     channel from 0 at center to |max| at bottom.)
+
+## Sample multichannel files
+
+Here are sample files that could be used for testing...
+
+<http://people.64studio.com/~daniel/DJ_Vadim-Saturday.ogg> (lossy,
+24.5MB)
+
+<http://people.64studio.com/~daniel/DJ_Vadim-Saturday.flac> (lossless,
+71.3MB)
+
+These are made using the stem files from
+<http://ccmixter.org/imaginashun> dropped into Audacity, mixed down to
+four stereo tracks, then using the multichannel export option (in Edit
+-\> Preferences -\> Import/Export -\> Use Custom Mix) to get 8 channel
+output files.
+
+They are both 44.1KHz sample rate, 16 bit depth, quality setting 5.

@@ -18,6 +18,16 @@ problems.
   - Manage the supplied number of channels
   - Offer additional controls for each mono channel or channel group:
     Mute, Solo, Volume, and Pan controls 
+  - Tell the Analyzer which channel(s) to use for BPM detection
+  - Analyzer(Queue) needs to:
+  - Handle multiple-channel files
+  - Handle channel groups from 1-8 channels and render each group to a
+    single mono signal for display
+  - Extend its API so it can be told about how channel groups and which
+    channel(s) are to be used for BPM analysis
+  - Tell the waveform GUI widget how many streams to display (due to
+    channel grouping, this number may not be equal to the number of
+    discrete channels in the file.)
   - CachingReader needs to be extended to support up to eight channels
   - The GUI needs to:
   - Include additional parallel summary waveforms for each mono channel
@@ -25,6 +35,8 @@ problems.
   - Display Mute, Solo, Volume, and Pan controls as the Deck reports
   - Overlap all (active) channels' waveforms in the detailed waveform
     display
+  - The waveform needs to change the way it renders:
+  - Single value, 0 at bottom, max at top.
 
 ## SoundSource API changes
 

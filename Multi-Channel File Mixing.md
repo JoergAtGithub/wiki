@@ -9,10 +9,13 @@ problems.
 
 ## Overview of required changes
 
-*(Awaiting review from the Mixxx lead developer.)*
+*Note from RJ -- I have filled in time estimates as estimates of how
+long it would take me personally to accomplish. Keep in mind I have very
+intimate knowledge of Mixxx and have authored half of the code to be
+replaced myself*
 
   - ~~FLAC and OGG SoundSources need to:~~**Author new `ContentSource`
-    API**
+    API** (40 hours)
   - Be extended to work with ~~up to 8~~**an arbitrary number of audio
     and video** channels
   - Report track length in frames of content rather than samples as
@@ -23,7 +26,7 @@ problems.
     get/set functions for it.~~No changes should be necessary to TIO
     except for deprecation of channels property. No part of Mixxx should
     use TIO for audio data -- ideally it is for metadata of the artistic
-    work only.
+    work only. (20 minutes)
   - Really need to pick terminology and stick to it :). It's easy to get
     mixed up. 
   - Frame: A single timestep of the sampling rate of a piece of content
@@ -32,7 +35,7 @@ problems.
   - Channel: A stream of mono audio in a track 
   - Stem?: A set of channels within a track that represent a particular
     component of the track. E.g. the vocals, the bass, or the drums.
-  - Significant Engine work necessary
+  - Significant Engine work necessary (120 hours)
   - Remove all assumptions of 2-channel audio 
   - At a minimum, major updates to
 
@@ -50,7 +53,7 @@ problems.
     * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting downmixed audio on to EngineMaster.
 ```
 
-  - Rewrite Analyzer API
+  - Rewrite Analyzer API (40 hours, assuming waveform 2.0 lands in 1.11)
   - Remove assumption of stereo audio, use ContentSource API to
     understand the available stems in a track.
   - If semantic information about the stems is available, it should BPM
@@ -58,7 +61,7 @@ problems.
   - Waveform calculation should produce waveforms for each stem. (Easier
     with Waveform 2.0 since this is already done for low/mid/high
     versions of the track)
-  - The GUI needs to:
+  - The GUI needs to: (dirty hack: 15 hours, the right way: 40 hours)
   - Include additional parallel summary waveforms for each mono channel
     or stereo pair
   - Display Mute, Solo, Volume, and Pan controls as the Deck reports

@@ -15,7 +15,7 @@ problems.
   - Be extended to work with up to 8 channels, correctly reporting the
     overall track length.
   - Get meta-data for each (whether any are stereo pairs/other groups.)
-    Let's limit Vorbis to 8 channels as well for now.
+    Limit Vorbis to 8 channels as well for now.
   - TrackInfoObject needs to add a property for channel groups and
     get/set functions for it.
   - Decks need to:
@@ -25,9 +25,11 @@ problems.
   - Analyzers need to:
   - Remove their assumptions of stereo, treating all channels as
     individual mono entities
-  - Handle channel groups from 1-8 channels and render each group to a
-    single mono signal for display
-  - Extend its API as explained below
+  - Handle channel groups from 1-8 channels and process each group as a
+    single combined mono signal
+  - Report the number of rendered streams to the waveform renderer (Due
+    to channel grouping, this may be less than the number of channels in
+    the file.)
   - CachingReader needs to be extended to support up to eight channels
   - The GUI needs to:
   - Include additional parallel summary waveforms for each mono channel
@@ -39,19 +41,3 @@ problems.
     bottom, |max| at top; or 0 at center, -max at bottom, +max at top.
     (Current is left channel from 0 at center to |max| at top, right
     channel from 0 at center to |max| at bottom.)
-
-## SoundSource API changes
-
-``` 
-    int getNumberOfChannels(); // Number of mono channels in the loaded file
-    QString[] getChannelNames(); // Name for each channel - from FLAC/OGG tags
-    QList(int[]) getLinkedChannels(); // List of channel groups to treat as one unit (Stereo pairs, surround channels)
-```
-
-## Analyzer(Queue) API changes
-
-``` 
-    void numberOfChannels(int number); // Number of mono channels in the supplied file
-    void channelGroups(QList(int[])); // List of channel groups (stereo pairs, surround channels) to combine into one stream for analysis and rendering
-    int getNumberOfStreams(); // Number of rendered streams (Due to channel grouping, this may not equal the number of channels in the file.)
-```

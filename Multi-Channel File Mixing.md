@@ -39,7 +39,8 @@ replaced myself*
     particular component. E.g. stereo vocals, 3-stereo strings, mono
     drums.
   - Significant Engine work necessary **(120 hours)**
-  - Remove all assumptions of 2-channel audio 
+  - In short, remove all assumptions of 2-channel audio and replace with
+    n-channel frames
   - At a minimum, major updates to
 
 <!-- end list -->
@@ -48,10 +49,10 @@ replaced myself*
     * EngineBuffer
     * All EngineControl classes
     * CachingReader
-* EngineObject API needs to be changed to support the passing of an arbitrary number of audio streams between EngineObjects (currently hard-coded to stereo buffers of audio) 
-* Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio.
+* EngineObject API needs to be changed to support the passing of frames of arbitrary size between EngineObjects (currently hard-coded to stereo buffers of audio) 
+* Extend CachingReader to cache frames of arbitrary size. (Right now it is hard-coded to stereo.)
 * Modify EngineBuffer and EngineBufferScale* classes to read and scale N frames (instead of N stereo samples as currently.)
-* Build a new EngineObject, let's call it EngineMixdown for now, that sits in the audio rendering path for EngineDeck. This will take the available scaled channels provided by EngineBuffer, group them by stem, and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio.
+* Build a new EngineObject, let's call it EngineMixdown for now, that sits in the audio rendering path for EngineDeck. This will take the available scaled channels provided by EngineBuffer, group them by stem (needs to ask ContentSource for the stem info,) and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio.
     * EngineMixdown should expose Mute, Solo and Volume controls for each stem of the track.
     * In process(), EngineMixdown will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
 ```

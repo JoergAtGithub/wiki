@@ -48,7 +48,7 @@ replaced myself*
 * EngineObject API needs to be changed to support the passing of multiple streams of audio between EngineObjects (currently hard-coded to stereo buffers of audio) 
 * Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio. 
 * Modify EngineBuffer and EngineBufferScale* classes to instead of read and scale N stereo samples, read and scale N stereo samples out of each stem.
-* Build a new EngineObject that sits in the audio rendering path for EngineDeck. This will take the multiple available, scaled streams provided by EngineBuffer and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio. 
+* Build a new EngineObject that sits in the audio rendering path for EngineDeck. This will take the multiple available, scaled stems provided by EngineBuffer and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio. 
     * This EngineObject should expose mute, solo, and volume controls for each 'stem' of the track.
     * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting downmixed audio on to EngineMaster.
 ```

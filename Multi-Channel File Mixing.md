@@ -14,27 +14,29 @@ long it would take me personally to accomplish. Keep in mind I have very
 intimate knowledge of Mixxx and have authored half of the code to be
 replaced myself*
 
-  - ~~FLAC and OGG SoundSources need to:~~**Author new `ContentSource`
+  - ~~FLAC and OGG SoundSources need to:~~ **Author new `ContentSource`
     API** **(40 hours)**
-  - Be extended to work with ~~up to 8~~**an arbitrary number of audio
+  - Be extended to work with ~~up to 8~~ **an arbitrary number of audio
     and video** channels
   - Report track length in frames of content rather than samples as
     SoundSource does.
   - Support querying of metadata for semantic information about channels
     (e.g. vocals, bass, down-mixed version, drums, etc.)
   - ~~TrackInfoObject needs to add a property for channel groups and
-    get/set functions for it.~~No changes should be necessary to TIO
+    get/set functions for it.~~ No changes should be necessary to TIO
     except for deprecation of channels property. No part of Mixxx should
     use TIO for audio data -- ideally it is for metadata of the artistic
     work only. **(20 minutes)**
   - Really need to pick terminology and stick to it :). It's easy to get
     mixed up. 
-  - Frame: A single timestep of the sampling rate of a piece of content
-  - Sample: A single amplitude of an audio channel 
   - Track: A piece of content e.g. a song or video
-  - Channel: A stream of mono audio in a track 
-  - Stem?: A set of channels within a track that represent a particular
-    component of the track. E.g. the vocals, the bass, or the drums.
+  - Channel: A stream of mono audio in a track
+  - Sample: A single amplitude of an audio channel
+  - Frame: A single time step of the sampling rate of a piece of content
+    (E.g. a 4-channel track would have frames of 4 samples.)
+  - Stem: A (set of) channel(s) within a track that represent a
+    particular component. E.g. stereo vocals, 3-stereo strings, mono
+    drums.
   - Significant Engine work necessary **(120 hours)**
   - Remove all assumptions of 2-channel audio 
   - At a minimum, major updates to
@@ -45,20 +47,21 @@ replaced myself*
     * EngineBuffer
     * All EngineControl classes
     * CachingReader
-* EngineObject API needs to be changed to support the passing of multiple streams of audio between EngineObjects (currently hard-coded to stereo buffers of audio) 
-* Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio. 
-* Modify EngineBuffer and EngineBufferScale* classes to instead of read and scale N stereo samples, read and scale N stereo samples out of each stem.
+* EngineObject API needs to be changed to support the passing of an arbitrary number of audio streams between EngineObjects (currently hard-coded to stereo buffers of audio) 
+* Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio.
+* Modify EngineBuffer and EngineBufferScale* classes to instead of read and scale N stereo samples, read and scale N samples from each stem (keeping in mind that the number of channels can vary between stems.)
 * Build a new EngineObject that sits in the audio rendering path for EngineDeck. This will take the multiple available, scaled stems provided by EngineBuffer and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio. 
-    * This EngineObject should expose mute, solo, and volume controls for each 'stem' of the track.
-    * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting downmixed audio on to EngineMaster.
+    * This EngineObject should expose mute, solo, and volume controls for each stem of the track.
+    * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
 ```
 
   - Rewrite Analyzer API **(40 hours, assuming waveform 2.0 lands in
     1.11)**
   - Remove assumption of stereo audio, use ContentSource API to
     understand the available stems in a track.
-  - If semantic information about the stems is available, it should BPM
-    detect only the bass track. (Is this a reasonable assumption?) 
+  - If semantic information about the stems is available, it should
+    BPM-detect only the drum track. Use the bass track if there's no
+    drum track.
   - Waveform calculation should produce waveforms for each stem. (Easier
     with Waveform 2.0 since this is already done for low/mid/high
     versions of the track)
@@ -66,7 +69,7 @@ replaced myself*
     hours)**
   - Include additional parallel summary waveforms for each mono channel
     or stereo pair
-  - Display Mute, Solo, Volume, and Pan controls as the Deck reports
+  - Display Mute, Solo and Volume controls as the Deck reports
   - Overlap all (active) channels' waveforms in the detailed waveform
     display
 

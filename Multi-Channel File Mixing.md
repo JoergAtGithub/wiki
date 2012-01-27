@@ -33,7 +33,8 @@ replaced myself*
   - Channel: A stream of mono audio in a track
   - Sample: A single amplitude of an audio channel
   - Frame: A single time step of the sampling rate of a piece of content
-    (E.g. a 4-channel track would have frames of 4 samples.)
+    (E.g. a 4-channel track would have frames of 4 samples, one sample
+    from each channel.)
   - Stem: A (set of) channel(s) within a track that represent a
     particular component. E.g. stereo vocals, 3-stereo strings, mono
     drums.
@@ -51,8 +52,8 @@ replaced myself*
 * Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio.
 * Modify EngineBuffer and EngineBufferScale* classes to read and scale N frames (instead of N stereo samples as currently.)
 * Build a new EngineObject, let's call it EngineMixdown for now, that sits in the audio rendering path for EngineDeck. This will take the available scaled channels provided by EngineBuffer, group them by stem, and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio.
-    * This EngineMixdown should expose mute, solo, and volume controls for each stem of the track.
-    * In process(), this EngineMixdown will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
+    * EngineMixdown should expose Mute, Solo and Volume controls for each stem of the track.
+    * In process(), EngineMixdown will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
 ```
 
   - Rewrite Analyzer API **(40 hours, assuming waveform 2.0 lands in

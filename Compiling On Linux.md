@@ -53,7 +53,7 @@ BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
 If you got the source code from BZR, change to the newly created "mixxx"
 directory, and use scons to compile. As a regular user, do:
 
-    cd 1.9  # or  cd mixxx  if you downloaded trunk
+    cd 1.10  # or  cd mixxx  if you downloaded trunk
     cd mixxx  # (again)
     scons
 

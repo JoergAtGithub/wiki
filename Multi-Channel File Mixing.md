@@ -58,7 +58,7 @@ replaced myself*
   - Remove assumption of stereo audio, use ContentSource API to
     understand the available stems in a track.
   - If semantic information about the stems is available, it should BPM
-    detect only the bass track.
+    detect only the bass track. (Is this a reasonable assumption?) 
   - Waveform calculation should produce waveforms for each stem. (Easier
     with Waveform 2.0 since this is already done for low/mid/high
     versions of the track)

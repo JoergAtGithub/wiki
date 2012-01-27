@@ -49,10 +49,10 @@ replaced myself*
     * CachingReader
 * EngineObject API needs to be changed to support the passing of an arbitrary number of audio streams between EngineObjects (currently hard-coded to stereo buffers of audio) 
 * Update CachingReader to read stem information from the ''ContentSource'' and expose each stem to EngineBuffer. Caching needs to be extended to cache multiple stems per cache chunk. Right now it is hard-coded to stereo audio.
-* Modify EngineBuffer and EngineBufferScale* classes to instead of read and scale N stereo samples, read and scale N samples from each stem (keeping in mind that the number of channels can vary between stems.)
-* Build a new EngineObject that sits in the audio rendering path for EngineDeck. This will take the multiple available, scaled stems provided by EngineBuffer and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio. 
-    * This EngineObject should expose mute, solo, and volume controls for each stem of the track.
-    * In process(), this EngineObject will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
+* Modify EngineBuffer and EngineBufferScale* classes to read and scale N frames (instead of N stereo samples as currently.)
+* Build a new EngineObject, let's call it EngineMixdown for now, that sits in the audio rendering path for EngineDeck. This will take the available scaled channels provided by EngineBuffer, group them by stem, and mix them according to ControlObjects exposed to the rest of Mixxx (e.g. keyboard, GUI, MIDI). EngineFilterBlock is an example of this kind of merging of 3 paths of audio.
+    * This EngineMixdown should expose mute, solo, and volume controls for each stem of the track.
+    * In process(), this EngineMixdown will mix together all of the stems given the values of the control parameters and pass the resulting down-mixed stereo audio on to EngineMaster.
 ```
 
   - Rewrite Analyzer API **(40 hours, assuming waveform 2.0 lands in
@@ -73,7 +73,8 @@ replaced myself*
   - Overlap all (active) channels' waveforms in the detailed waveform
     display
 
-**Total time estimate: 5-6 weeks of full-time development**
+**Total time estimate: 5-6 weeks of full-time development** (So maybe
+1.5x that if you're new to the code base.)
 
 ## Sample multichannel files
 

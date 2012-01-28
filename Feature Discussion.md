@@ -43,14 +43,22 @@ page.
 
 ## Good Intro Projects
 
-**Looking to contribute to Mixxx? Here are some projects we think could
-be done in a weekend, and would be a great introduction to the Mixxx
-codebase.**
+**[Looking to contribute to
+Mixxx?](http://mixxx.org/manual/latest/chapters/getting_involved.html)
+Here are some projects we think could be done in a weekend, and would be
+a great introduction to the Mixxx codebase.**
 
-  - "Loading" animation for the waveforms
-  - adjustable drag sensitivity on visual waveform view
-  - also a way to change the direction ("scratching motion")
-  - Visual 'track ending' indicator for visual waveform
+Just pick a bug off of the [Easy Bug
+List](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy)
+
+  - ~~"Loading" animation for the waveforms~~ Implemented in Mixxx 1.10.
+  - ~~adjustable drag sensitivity on visual waveform view~~ Implemented
+    in Mixxx 1.10. Scratch while mouse down on waveform, right-click and
+    move mouse to adjust pitch
+  - ~~also a way to change the direction ("scratching motion")~~
+  - ~~Visual 'track ending' indicator for visual waveform~~ Targeted for
+    Mixxx 1.11. See wishlist item
+    <https://bugs.launchpad.net/mixxx/+bug/661443>
 
 ## Other Ideas
 
@@ -58,18 +66,20 @@ codebase.**
 Launchpad](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&search=Search&field.importance:list=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.omit_dupes.used=&field.omit_dupes=on&field.has_patch.used=&field.has_cve.used=&field.tag=&field.tags_combinator=ANY)
 [Blueprints on Launchpad](https://blueprints.launchpad.net/mixxx)
 
-(Copied from [feature\_wishlist](feature_wishlist))
-
-**If you think of a feature that we need to implement at some time, jot
-it down here so you don't forget.**
+**If you think of a feature that we need to implement at some time,
+[file a new wishlist bug](https://bugs.launchpad.net/mixxx/+filebug) if
+it did not already exist on Launchpad.**
 
 Some of these are copied over from the forums and the old wiki, so they
 may be done already or irrelevant.
 
-  - Button in Auto DJ to start fading into new track (could come in
-    handy if the current piece isn't going down to well).
-  - Slider in Auto DJ to determine length of time of crossfade (e.g. 1s
-    - 20s).
+  - ~~Button in Auto DJ to start fading into new track (could come in
+    handy if the current piece isn't going down to well).~~ Targeted for
+    Mixxx 1.11, implemented in
+    <https://code.launchpad.net/~daschuer/mixxx/autodj>
+  - ~~Slider in Auto DJ to determine length of time of crossfade (e.g.
+    1s - 20s).~~ Targeted for Mixxx 1.11, implemented in
+    <https://code.launchpad.net/~daschuer/mixxx/autodj>
   - If song can not be loaded in Auto DJ, it might be good to
     automatically play the next track instead of displaying message and
     stopping the mix.
@@ -87,8 +97,9 @@ may be done already or irrelevant.
   - Effects panel integration with UI
   - 'Online' BPM detection so that visual waveform beat marks can
     actually be accurate. - BpmDJ engine being considered
-  - ~~M4A support~~ - In progress
-  - hotkey support (maybe configurable?)
+  - ~~M4A support~~ - Implemented in Mixxx 1.10.
+  - ~~hotkey support (maybe configurable?)~~ Hotcues implemented in
+    Mixxx 1.10.
   - Cheap mode (main out left, cue out right) so users can get started
     using mixxx without any extra soundcard.
   - [Effect plugins](PluginIdeas)
@@ -98,21 +109,22 @@ may be done already or irrelevant.
   - some more physically modeled turntable styles, with concepts of
     inertia, slipmat vector, and motor drive. [Details from Old
     Wiki](http://mixxx.sourceforge.net/wiki/index.php/Deck_Remodeling)
-  - Normalize to the waveform, track volume and output (over longer
-    period in the master output)
-  - Channel gain to affect the waveform
+  - ~~Normalize to the waveform, track volume and output (over longer
+    period in the master output)~~ ReplayGain implemented in Mixxx 1.10
+  - ~~Channel gain to affect the waveform~~ Implemented in Mixxx 1.10.
   - BPM sync lock like in virtual dj (keep tracks in sync)
   - Play lock feature so that you can't change a track that is currently
     playing - Some MIDI scripts do this already
-  - A button to switch between the vinyl emulation & pitch independent
+  - ~~A button to switch between the vinyl emulation & pitch independent
     time stretch ("Master Tempo" on CDJs, "Key lock" or "Key correction"
-    on others)
+    on others)~~ Implemented in Mixxx 1.10.
   - Adjustable key when key lock is active (as on the Numark
     CDX/HDX/X^2)
   - ~~Remain / played time display switch~~ - Already in
     Preferences-\>Interface-\>Position display
-  - Would be nice if this could be done by just clicking the time field
-    and would not require opening the preferences
+  - ~~Would be nice if this could be done by just clicking the time
+    field and would not require opening the preferences~~ Implemented in
+    Mixxx 1.10.
   - Clipping light to stay on (dimmer?) after clipping, reset by
     clicking
   - Add a single deck view optimized for track setup (as in setting cue
@@ -123,9 +135,12 @@ may be done already or irrelevant.
     Playlist/Crates/Auto-DJ(all sorts of playlists). Songs can be drag
     and dropped more convenient, dj can see if song is already in the
     list. This should be optional.
-  - Display a warning before a song can be dragged onto a running deck.
-    This should be optional.
+  - ~~Display a warning before a song can be dragged onto a running
+    deck. This should be optional.~~ Implemented in Mixxx 1.10.
+    Preferences-\>Interface-\>Track load behavior
   - Auto-dj button should not be hidden, should be on the top layer of
     the interface so one can always see if it is activated.
-  - Should be possible to drag and drop the song everywhere on the deck,
-    not only on the waveform.
+  - ~~Should be possible to drag and drop the song everywhere on the
+    deck, not only on the waveform.~~ Implemented in Mixxx 1.10 .
+    Draggable to waveform, waveform summary & Spinny widget in decks and
+    samplers

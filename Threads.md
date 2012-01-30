@@ -142,28 +142,23 @@ Thanks to input from \#qt:
 ##### Ideal case - Callbacks/Events
 
 A single "Controller Engine" thread with an event loop in which all
-ControllerEngines run. They receive callbacks from the Controller
-back-ends containing data received, then act on the data. If the
-callback occurs in a different thread, signal the target functions with
-the data. (Signal in all cases for consistency.)
+ControllerEngines run. They receive callbacks/event notifications from
+the Controller back-ends containing data received, then act on the data.
+If the callback occurs in a different thread, signal the target
+functions with the data. (Signal in all cases for consistency.)
 
 ##### Next-best case - Blocked Polling
 
-1.  Separate thread for each controller that does nothing but polling
-    using a blocking method. When data is received, dispatch it via a
-    signal to the associated ControllerEngine and block for new data
-    again.
-2.  A single "Controller Engine" thread with an event loop in which all
-    ControllerEngines run. They receive signals from the Controller
-    polling threads containing data received and act on the data.
+// This essentially implements a callback mechanism. * - Separate thread
+for each controller that does nothing but polling using a blocking
+method. When data is received, dispatch it via a signal to the
+associated ControllerEngine and block for new data again. - A single
+"Controller Engine" thread with an event loop in which all
+ControllerEngines run. They receive signals from the Controller polling
+threads containing data received and act on the data. *HIDAPI can use
+this method//
 
 ##### Third-best case - Non-blocked Polling
-
-*Note that if an API is not thread-safe, i.e. there should be at most
-one thread executing a call to the API at any point in time, you have to
-use this method, or you will not be able to send data to the controller
-asynchronously (data will first have to be received to release the
-block.) PortMIDI is in this camp.* :(
 
 A single "Controller Manager" thread that runs a Qt event loop (standard
 run()) but sets up a (1ms) timer that sequentially polls all active
@@ -173,7 +168,14 @@ locking is required anywhere in the Controller subsystem and the
 back-ends need not be thread-safe since only this one thread will
 communicate with them.
 
+*Note that if an API is not thread-safe (i.e. there should be at most
+one thread executing a call to the API at any point in time,) you have
+to use this method, or you will not be able to send data to the
+controller asynchronously (data will first have to be received to
+release the block.) PortMIDI is in this camp.* :(
+
 #### Plan
 
 Set up a hybrid system whereby we can use the best method available for
-each API.
+each API: Have a ControllerManager::register() function that allows each
+Controller to register the method it API requires.

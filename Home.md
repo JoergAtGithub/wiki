@@ -73,6 +73,7 @@ plans.
 
 ### Development Topics
 
+  - [Class hierarchy](class_hierarchy)
   - [Feature Discussion & Specifications](feature_discussion)
   - [Mixxx QA Procedure](qa_procedure)
   - [Writing unit tests](unit_tests) - helps prevent regressions.

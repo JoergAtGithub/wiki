@@ -165,7 +165,7 @@ engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 
 ### Soft-takeover
 
-*Coming in v1.10*
+*Introduced in v1.10.0.*
 
 To prevent sudden wide parameter changes when the on-screen control
 diverges from a hardware control, use soft-takeover. While it's active

@@ -14,7 +14,7 @@ maintains a list of controllers.
 
 ### Controller
 
-May spawn reader threads if needed to create a callback-like system.
+May spawn a reader thread if needed to create a callback-like system.
 
   - MidiController
   - HidController

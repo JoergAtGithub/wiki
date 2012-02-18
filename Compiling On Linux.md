@@ -57,6 +57,9 @@ directory, and use scons to compile. As a regular user, do:
     cd mixxx  # (again)
     scons
 
+(scons -h shows a complete list of build flags if you'd like to
+customize.)
+
 ### Multi-threaded build
 
 If you have a multi-core CPU (or just multiple CPUs) use scons' **-j**

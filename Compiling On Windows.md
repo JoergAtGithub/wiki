@@ -84,8 +84,8 @@ referred to as MSVC in discussions.
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
-    Visual Studio, run `scons msvc`and open the newly generated
-    "mixxx.vcproj" file with Visual Studio.
+    Visual Studio, add the parameter`msvc` in the command and open the
+    newly generated "mixxx.vcproj" file with Visual Studio.
 
 ## Build the 64-bit version using Microsoft Visual Studio Express
 

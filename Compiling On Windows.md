@@ -85,12 +85,10 @@ referred to as MSVC in discussions.
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
     Visual Studio, add the parameter msvc in the command such as
-
-<!-- end list -->
-
-    scons toolchain=msvs winlib=path_to_mixxx-win32lib-msvc90-release_directory msvc
-
-then open the newly generated "mixxx.vcproj" file with Visual Studio.
+4.  `scons toolchain=msvs
+    winlib=path_to_mixxx-win32lib-msvc90-release_directory msvc`
+5.   then open the newly generated "mixxx.vcproj" file with Visual
+    Studio.
 
 ## Build the 64-bit version using Microsoft Visual Studio Express
 

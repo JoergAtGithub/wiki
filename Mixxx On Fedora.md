@@ -12,4 +12,6 @@ Enable RPM Fusion using the instructions here:
 
 <http://rpmfusion.org/Configuration>
 
-Then run 'su -c yum install mixxx'
+Then run:
+
+su -c 'yum install mixxx'

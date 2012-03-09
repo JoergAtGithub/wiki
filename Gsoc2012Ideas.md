@@ -1,4 +1,4 @@
-# Student Project Ideas for Google Summer of Code 2011
+# Student Project Ideas for Google Summer of Code 2012
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of Code 2012](http://socghop.appspot.com/). Each

@@ -66,8 +66,35 @@ controller from the development team for the duration of the project.
 
 ## Enhanced Platform Integration
 
-As a cross-platform application, Mixxx runs on Windows, Mac OS X, and
-Linux....
+Thanks in large part to Qt and a number of other cross-platform
+libraries, Mixxx runs on Windows, Mac OS X, and Linux. Although we're
+able to provide a *consistent* user experience on Windows and Mac OS X,
+we'd like to provide a better *integrated* experience on each of these
+platforms. We want to take advantage of the unique features that each
+platform provides, like the new fullscreen mode in OS X Lion or the new
+jump list in Windows 7, so that Mixxx feels as *native* as possible.
+
+Qt already provides a [small number of platform integration
+features](http://qt-project.org/doc/qt-4.8/exportedfunctions.html), but
+to take advantage of other newer features that Qt doesn't have,
+platform-specific code for Windows and Mac OS X must be added to Mixxx.
+This project will involve figuring out which platform-specific features
+in Windows 7, Windows 8, Mac OS X Lion, and Mac OS X Mountain Lion would
+be the most useful for Mixxx, and implementing several of those.
+
+For ideas, check out:
+
+  - [Q7Goodies](http://www.strixcode.com/q7goodies/) 
+  - [Features new to Windows 7
+    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_7)
+  - [Features new to Windows 8
+    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
+
+### Suggested Minimum Deliverables
+
+  - Implement support for [Mac OS X Lion fullscreen
+    mode](https://developer.apple.com/library/mac/#documentation/General/Conceptual/MOSXAppProgrammingGuide/FullScreenApp/FullScreenApp.html#//apple_ref/doc/uid/TP40010543-CH6-SW1)
+  - Other Windows 7 features
 
 ## Something Else\!
 

@@ -80,7 +80,7 @@ to take advantage of other newer features that Qt doesn't have,
 platform-specific code for Windows and Mac OS X must be added to Mixxx.
 This project will involve figuring out which platform-specific features
 in Windows 7, Windows 8, Mac OS X Lion, and Mac OS X Mountain Lion would
-be the most useful for Mixxx, and implementing several of those.
+be the most useful for Mixxx users, and implementing several of those.
 
 For ideas, check out:
 

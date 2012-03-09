@@ -64,6 +64,11 @@ controller from the development team for the duration of the project.
         mappings.
     3.  Allow user-created mappings to be uploaded to mixxx.org.
 
+## Enhanced Platform Integration
+
+As a cross-platform application, Mixxx runs on Windows, Mac OS X, and
+Linux....
+
 ## Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

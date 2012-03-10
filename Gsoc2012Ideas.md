@@ -104,6 +104,9 @@ platform-specific code for Windows and Mac OS X must be added to Mixxx.
 This project will involve figuring out which platform-specific features
 in Windows 7, Windows 8, Mac OS X Lion, and Mac OS X Mountain Lion would
 be the most useful for Mixxx users, and implementing several of those.
+(We don't expect students to have access to both Windows and Mac OS X,
+so a proposal focusing on one particular OS is OK, but an awareness of
+both platforms is a plus.)
 
 For ideas, check out:
 

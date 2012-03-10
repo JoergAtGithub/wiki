@@ -167,17 +167,6 @@ The following projects were accepted for Google Summer of Code 2008:
 
 Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 
-## Past Events
-
-  - [Cheap as Chips, March 9th, 2008](cheapaschips20080309) -
-    Christchurch, New Zealand (Kid 90)
-  - [Carleton CS Bash, April 12th, 2007](haz200704012) - Ottawa, Canada
-    (Christian Muise)
-  - [Kick Adam Kegger - April 5th, 2007](kickadamkegger20070405) -
-    London, Canada (Albert Santoni and Peter Wright)
-  - [Convergence, October 13th, 2006](convergence20061013) - Club
-    Medussa, Brixton, London, UK (Tim Jackson) 
-
 ## More Resources
 
   - Discussions on the

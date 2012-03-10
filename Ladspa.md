@@ -1,5 +1,7 @@
 # LADSPA support
 
+# THIS PAGE IS HISTORICAL AND DEPRECATED. MIXXX DOES NOT HAVE LADSPA SUPPORT AND IS NOT WORKING ON LADSPA SUPPORT
+
 Note that LADSPA support is experimental currently so this page is
 intended mainly for developers.
 

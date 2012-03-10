@@ -91,6 +91,8 @@ plans.
   - [Code cleanup & cruft removal task list](code_cleanup)
   - [SoundSource interface (sound
     proxies)](SoundSource%20interface%20\(sound%20proxies\))
+  - [Threads](Threads)
+  - [Widgets](Widgets)
 
 ### Developer Meetings and Sprints
 

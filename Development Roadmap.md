@@ -47,6 +47,8 @@ world-class application, somewhat in order of importance:
   - Beat-tracking via VAMP plugins
   - HID Support
 
+## Historical Release Roadmaps
+
 ### 1.10
 
   - More in-depth (and up-to-date) details on Launchpad:
@@ -58,7 +60,7 @@ world-class application, somewhat in order of importance:
   - MIDI Scripts: May 16th, 2011
   - Release Date
   - Goal: May 29th, 2011 
-  - Actual: 
+  - Actual: Dec 24th, 2011
 
 #### Feature Targets
 
@@ -85,8 +87,6 @@ world-class application, somewhat in order of importance:
   - SoundTouch -\> 1.5.0
   - xwax -\> 0.8
   - gtest/gmock -\> 1.5.0
-
-## Historical Release Roadmaps
 
 *Released February 19th, 2011*
 

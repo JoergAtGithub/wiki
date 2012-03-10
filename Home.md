@@ -27,6 +27,7 @@ plans.
   - [Vinyl (and audio CDJ) control](Vinyl%20Control)
   - [Internet broadcasting](Internet%20broadcasting)
   - [System Requirements](System%20Requirements)
+  - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)
 
 ## Build Mixxx

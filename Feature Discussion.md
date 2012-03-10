@@ -51,15 +51,6 @@ a great introduction to the Mixxx codebase.**
 Just pick a bug off of the [Easy Bug
 List](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy)
 
-  - ~~"Loading" animation for the waveforms~~ Implemented in Mixxx 1.10.
-  - ~~adjustable drag sensitivity on visual waveform view~~ Implemented
-    in Mixxx 1.10. Scratch while mouse down on waveform, right-click and
-    move mouse to adjust pitch
-  - ~~also a way to change the direction ("scratching motion")~~
-  - ~~Visual 'track ending' indicator for visual waveform~~ Targeted for
-    Mixxx 1.11. See wishlist item
-    <https://bugs.launchpad.net/mixxx/+bug/661443>
-
 ## Other Ideas
 
 [All Wishlist bugs on

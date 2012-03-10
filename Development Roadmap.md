@@ -86,17 +86,6 @@ world-class application, somewhat in order of importance:
   - xwax -\> 0.8
   - gtest/gmock -\> 1.5.0
 
-### Probably Longer Term
-
-To add to the list of ideas that would be cool in Mixxx, add them to
-[feature\_discussion](feature_discussion) or file a Wishlist bug at
-Launchpad.
-
-  - [Skinning Engine](Skinning%20Engine)
-  - [Revamped Control System](Revamped%20Control%20System)
-  - [Effects](effects_framework)
-  - EffectChain infrastructure, simple UI improvements
-
 ## Historical Release Roadmaps
 
 *Released February 19th, 2011*

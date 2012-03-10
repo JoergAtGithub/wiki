@@ -86,7 +86,6 @@ plans.
   - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
     HDDs)](Portable%20Mixxx)
   - [Internationalization/Translations](Internationalization)
-  - [The Bug Tracker](launchpad_bugs)
 
 ### Interfaces
 

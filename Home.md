@@ -73,8 +73,6 @@ plans.
   - [Creating backtraces](Creating%20backtraces)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
-  - Tutorial: [Adding a new button to Mixxx's
-    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
 
 ### Development Topics
 

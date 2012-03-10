@@ -116,11 +116,11 @@ For ideas, check out:
   - [Features new to Windows 8
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
 
-### Suggested Minimum Deliverables
+### Minimum Deliverables (Example)
 
   - Implement support for [Mac OS X Lion fullscreen
     mode](https://developer.apple.com/library/mac/#documentation/General/Conceptual/MOSXAppProgrammingGuide/FullScreenApp/FullScreenApp.html#//apple_ref/doc/uid/TP40010543-CH6-SW1)
-  - Other Windows 7 features
+  - Implement Windows 7 jumplist actions for deck playback controls
 
 ## Something Else\!
 

@@ -82,8 +82,6 @@ plans.
   - [Code cleanup & cruft removal task list](code_cleanup)
   - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
     HDDs)](Portable%20Mixxx)
-  - [MixxxScript](MixxxScript)
-  - [LADSPA](LADSPA)
   - [Testing framework](Testing%20framework)
   - [Internationalization/Translations](Internationalization)
   - [The Bug Tracker](launchpad_bugs)

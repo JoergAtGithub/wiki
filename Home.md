@@ -70,7 +70,7 @@ plans.
   - [Submitting
     Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
   - [Creating backtraces](Creating%20backtraces)
-  - [Filing Bugs](launchpad_bugs)
+  - [The Bug Tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
 

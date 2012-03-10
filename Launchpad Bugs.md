@@ -1,6 +1,8 @@
 # The Mixxx Bug Tracker
 
-Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net).
+Our bug tracker is hosted on [Launchpad](http://bugs.launchpad.net). It
+is an essential part of how the Mixxx team keeps track of and gradually
+eliminates all of Mixxx's defects.
 
 ## Bug Importance Guidelines
 

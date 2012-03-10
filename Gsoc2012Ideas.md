@@ -108,6 +108,10 @@ be the most useful for Mixxx users, and implementing several of those.
 so a proposal focusing on one particular OS is OK, but an awareness of
 both platforms is a plus.)
 
+This project could also include more basic polishing tasks, so if
+there's some little inconsistencies about Mixxx that have been bugging
+you, here's your chance to fix them.
+
 For ideas, check out:
 
   - [Q7Goodies](http://www.strixcode.com/q7goodies/) 

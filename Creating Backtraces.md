@@ -17,7 +17,9 @@ Found a crash? Generate us a backtrace:
     disable screen paging.
 2.  Type "run" and press enter.
 3.  When Mixxx crashes, type the following into the gdb prompt: "thread
-    apply all bt"
+    apply all bt".
+    1.  There may be multiple pages of output. Make sure to hit
+        \<Enter\> enough times to see it all.
 4.  To close the Mixxx window and end gdb, type the following into the
     gdb prompt: "quit"
 5.  Copying the gdb info:

@@ -132,7 +132,7 @@ Mixxx is an accepted mentoring organization for Google Summer of Code,
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
-The following projects were accepted for Google Summer of Code 2010:
+The following projects were accepted for Google Summer of Code 2011:
 
   - Advanced Search by Bart Verstrynge
   - AutoDJ 2.0 by Tom Mast

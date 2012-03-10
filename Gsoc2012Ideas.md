@@ -7,19 +7,28 @@ big difference to our users and that we as a development team are really
 excited about. For advice on how to get in touch and how to apply, you
 should read [gsocadvice](gsocadvice).
 
-## Synchronization Improvements
+A GSoC application that simply copy/pastes these deliverables will NOT
+be accepted. We expect you think about the feature and how it aligns
+with Mixxx's goals, outline potential use-cases and propose a plan for
+implementing a solution.
 
-If you've used Mixxx, you know that our SYNC button does not work very
-well\! All it does is match up the BPMs of the tracks that are being
-mixed. There is tons of room for improvement here. The goal of this
-project is to allow two decks to be synchronized such that they actively
-check whether they are in sync with the other, and make adjustments to
-stay in sync. Additionally, the creation of a master sync clock for
-decks to sync to would be great as well, because then the DJ could set
-the master clock at e.g. 130 BPM and all the songs they load would
-automatically sync to the tick of that clock.
+## Synchronization Mode
 
-### Minimum Deliverables
+If you've used Mixxx, then you know that our SYNC button is only a
+one-time sync. All it does is match up the beats of the tracks that are
+being mixed the moment you press the button.
+
+There is tons of room for improvement here. The goal of this project is
+to allow decks to be synchronized such that they actively check whether
+they are in sync with the other, and make adjustments to stay in sync.
+
+Additionally, a common feature in other DJ software is the ability to
+set a master-clock to a desired BPM. When Sync-mode is on, decks should
+also be able to synchronize themselves to the master-clock. This is
+useful because the DJ can set a goal BPM for their set and make sure
+they stay on tempo instead of gradually getting faster or slower.
+
+### Suggested Minimum Deliverables
 
   - Implement a master-clock in the Mixxx engine
   - The master clock will have a BPM that it "beats" at.
@@ -35,7 +44,21 @@ automatically sync to the tick of that clock.
 * Allow a deck to be set as the "master" deck 
 * This is more open-ended -- think about the different ways to implement this and talk about it in your proposal.
 * Bonus: Implement a metronome feature that ticks to the beat of the clock.
+* Bonus: Implement a phase-meter that represents the sync of each deck to its target sync source. [[https://bugs.launchpad.net/mixxx/+bug/753301|Bug #753301]]
 ```
+
+## Point-And-Click Controller Mapping
+
+Mixxx's MIDI-Learning wizard is not very usable. In order to map a
+controller, you have to go through the entire wizard even if your
+controller doesn't have the buttons that are hard-coded into the
+wizard's learning process.
+
+This project will replace the MIDI-Learning wizard with an intuitive and
+easy-to-use point-and-click system for mapping a controller. When you
+want to map a control, just click on the button or knob in the GUI that
+you want to map and then turn the corresponding button or knob on your
+controller.
 
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 
@@ -53,10 +76,10 @@ great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
 
-### Minimum Deliverables
+### Suggested Minimum Deliverables
 
-  - Implement auto-selection of MIDI mappings based on connected MIDI
-    devices.
+  - Automatically select an appropriate controller mapping when a user
+    plugs in a device.
   - For unsupported devices, implement a UI and simple server-side
     functionality to:
     1.  Check mixxx.org for additional community-provided mappings.

@@ -1,6 +1,8 @@
-# LADSPA support
-
 # THIS PAGE IS HISTORICAL AND DEPRECATED. MIXXX DOES NOT HAVE LADSPA SUPPORT AND IS NOT WORKING ON LADSPA SUPPORT
+
+See [Effects Framework Design Document](effects_framework).
+
+# DO NOT READ ANYTHING BELOW THIS LINE
 
 Note that LADSPA support is experimental currently so this page is
 intended mainly for developers.

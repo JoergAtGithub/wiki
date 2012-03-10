@@ -38,11 +38,6 @@ plans.
   - [Packaging / Making a Mixxx
     Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
 
-<!-- end list -->
-
-  - [Setting up an auto build
-    "slave"](Setting%20up%20an%20auto%20build%20"slave")
-
 ## Artist Documentation
 
   - [Creating Skins](Creating%20Skins)

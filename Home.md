@@ -78,32 +78,21 @@ plans.
 
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
-  - [Class hierarchy](class_hierarchy)
   - [Mixxx QA Procedure](qa_procedure)
   - [Writing unit tests](unit_tests) - helps prevent regressions.
     Essential for new code\!
-  - [Performance improvements](Performance%20improvements)
-  - [Code cleanup & cruft removal task list](code_cleanup)
-  - [Portable Mixxx for removable media (Memory Sticks, CD/DVD, Portable
-    HDDs)](Portable%20Mixxx)
   - [Internationalization/Translations](Internationalization)
 
-### Interfaces
+### Code Reference
 
+  - [Class hierarchy](class_hierarchy) 
+  - [Performance improvements](Performance%20improvements)
+  - [Code cleanup & cruft removal task list](code_cleanup)
   - [SoundSource interface (sound
     proxies)](SoundSource%20interface%20\(sound%20proxies\))
 
-### Other Resources
+### Developer Meetings and Sprints
 
-  - [Threads](Threads)
-  - [Widgets](Widgets)
-  - [Pitch percentages for semitones and
-    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Command line options](Command%20line%20options)
-  - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
-  - **Past development sprints:**
-  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
-  - **Past developer meetings:**
   - [9/20/2009 Developer Meeting
     Minutes](9/20/2009%20Developer%20Meeting%20Minutes)
   - [5/17/2009 Developer Meeting
@@ -112,6 +101,17 @@ plans.
     Minutes](6/27/2010%20Developer%20Meeting%20Minutes)
   - [11/27/2011 Developer Meeting
     Minutes](11/27/2011%20Developer%20Meeting%20Minutes)
+  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
+
+### Other Resources
+
+  - [Portable Mixxx for removable media](Portable%20Mixxx)
+  - [Threads](Threads)
+  - [Widgets](Widgets)
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Command line options](Command%20line%20options)
+  - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
 
 ## Google Summer of Code
 

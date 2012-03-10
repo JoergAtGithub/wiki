@@ -28,6 +28,25 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
+### 1.11
+
+  - [1.10.0 Milestone on
+    Launchpad](https://launchpad.net/mixxx/+milestone/1.10.0)
+  - Feature Freeze
+  - Code: April 1, 2012
+  - Strings: April 16th, 2012
+  - GUI: April 16th, 2012
+  - MIDI Scripts: April 16th, 2012
+  - Release Date
+  - Goal: May 1, 2012
+
+#### Feature Targets
+
+  - Re-vamped Auto-DJ support
+  - Colored, tri-band waveforms
+  - Beat-tracking via VAMP plugins
+  - HID Support
+
 ### 1.10
 
   - More in-depth (and up-to-date) details on Launchpad:

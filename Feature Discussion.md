@@ -70,6 +70,9 @@ Launchpad](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-imp
 [file a new wishlist bug](https://bugs.launchpad.net/mixxx/+filebug) if
 it did not already exist on Launchpad.**
 
+**DO NOT ADD ANYTHING TO THIS LIST -- File a bug instead. We are slowly
+migrating this list to Launchpad**
+
 Some of these are copied over from the forums and the old wiki, so they
 may be done already or irrelevant.
 

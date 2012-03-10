@@ -32,8 +32,9 @@ following:
 We require that any new code classes have tests written for them as well
 in order to consider the code for inclusion into Mixxx.
 
-Mixxx uses the Google C++ Testing Framework. If it's new to you, [read
-the
+Mixxx uses the [Google C++ Testing
+Framework](http://code.google.com/p/googletest/). If it's new to you,
+[read the
 primer](http://code.google.com/p/googletest/wiki/Primer#Basic_Concepts).
 
 Make sure to read [this section of the Advanced testing

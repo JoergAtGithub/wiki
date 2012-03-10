@@ -43,21 +43,17 @@ plans.
   - [Setting up an auto build
     "slave"](Setting%20up%20an%20auto%20build%20"slave")
 
-## Mixxx Developer Reference Documentation
+## Artist Documentation
 
-### Getting Started
+  - [Creating Skins](Creating%20Skins)
+  - [Skin Guidelines](Skin%20Guidelines)
+  - [Skin Colour Scheme
+    Architecture](Skin%20Colour%20Scheme%20Architecture)
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
+  - [On Icons and Images](On%20Icons%20and%20Images)
 
-  - [How the hell to use Bazaar](Using%20Bazaar)
-  - [Development Roadmap](Development%20Roadmap)
-  - [Submitting
-    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
-  - [Creating backtraces](Creating%20backtraces)
-  - [Coding Guidelines](Coding%20Guidelines)
-  - [Developer Tools](Developer%20Tools)
-  - Tutorial: [Adding a new button to Mixxx's
-    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
-
-### Editing MIDI mappings & scripts
+## Controller/MIDI Mapping Documentation
 
   - [MIDI Controller Mapping File
     Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
@@ -70,6 +66,20 @@ plans.
   - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
     complete control over your MIDI controller and create advanced
     behaviors including easy wheel scratching.
+
+## Developer Documentation
+
+### Getting Started
+
+  - [How the hell to use Bazaar](Using%20Bazaar)
+  - [Development Roadmap](Development%20Roadmap)
+  - [Submitting
+    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
+  - [Creating backtraces](Creating%20backtraces)
+  - [Coding Guidelines](Coding%20Guidelines)
+  - [Developer Tools](Developer%20Tools)
+  - Tutorial: [Adding a new button to Mixxx's
+    interface](Adding%20a%20new%20button%20to%20Mixxx's%20interface)
 
 ### Development Topics
 
@@ -110,16 +120,6 @@ plans.
     Minutes](6/27/2010%20Developer%20Meeting%20Minutes)
   - [11/27/2011 Developer Meeting
     Minutes](11/27/2011%20Developer%20Meeting%20Minutes)
-
-## Artist Documentation
-
-  - [Creating Skins](Creating%20Skins)
-  - [Skin Guidelines](Skin%20Guidelines)
-  - [Skin Colour Scheme
-    Architecture](Skin%20Colour%20Scheme%20Architecture)
-  - [Skin Color Schemes Tips and
-    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
-  - [On Icons and Images](On%20Icons%20and%20Images)
 
 ## Google Summer of Code
 
@@ -173,7 +173,6 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 
 ## Past Events
 
-  - \[\[\]\] ()
   - [Cheap as Chips, March 9th, 2008](cheapaschips20080309) -
     Christchurch, New Zealand (Kid 90)
   - [Carleton CS Bash, April 12th, 2007](haz200704012) - Ottawa, Canada

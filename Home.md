@@ -67,7 +67,6 @@ plans.
 ### Getting Started
 
   - [How to use Bazaar](Using%20Bazaar)
-  - [Development Roadmap](Development%20Roadmap)
   - [Submitting
     Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
   - [Creating backtraces](Creating%20backtraces)

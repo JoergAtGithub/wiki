@@ -121,6 +121,7 @@ For ideas, check out:
   - Implement support for [Mac OS X Lion fullscreen
     mode](https://developer.apple.com/library/mac/#documentation/General/Conceptual/MOSXAppProgrammingGuide/FullScreenApp/FullScreenApp.html#//apple_ref/doc/uid/TP40010543-CH6-SW1)
   - Implement Windows 7 jumplist actions for deck playback controls
+  - Implement file type handling (eg. "Open with.... Mixxx") 
 
 ## Something Else\!
 

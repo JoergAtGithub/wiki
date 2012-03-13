@@ -15,7 +15,9 @@ implementing a solution.
 ## Key Detection for Harmonic Mixing
 
 This feature aims to allow Mixxx users to simply and intuitively
-incorporate harmonic mixing into their workflow.
+incorporate [harmonic
+mixing](http://en.wikipedia.org/wiki/Harmonic_mixing) into their
+workflow.
 
 Using an open-source key detector like
 [KeyFinder](http://www.ibrahimshaath.co.uk/keyfinder/) or

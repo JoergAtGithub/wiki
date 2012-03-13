@@ -28,24 +28,10 @@ also be able to synchronize themselves to the master-clock. This is
 useful because the DJ can set a goal BPM for their set and make sure
 they stay on tempo instead of gradually getting faster or slower.
 
-### Suggested Minimum Deliverables
-
-  - Implement a master-clock in the Mixxx engine
-  - The master clock will have a BPM that it "beats" at.
-  - Implement synchronization of decks to the master clock signals. 
-  - Synchronization in this case is: 
-
-<!-- end list -->
-
-``` 
-    * Adjusting the rate of each deck to match the master clock
-    * Adjusting the "phase" or the alignment of the deck so that the beats of the deck line up with the beats of the master clock. 
-* Create GUI widgets to control the master clock and assign a deck to synchronize to the master clock.
-* Allow a deck to be set as the "master" deck 
-* This is more open-ended -- think about the different ways to implement this and talk about it in your proposal.
-* Bonus: Implement a metronome feature that ticks to the beat of the clock.
-* Bonus: Implement a phase-meter that represents the sync of each deck to its target sync source. [[https://bugs.launchpad.net/mixxx/+bug/753301|Bug #753301]]
-```
+Finally, Mixxx is missing useful widgets that inform the DJ of the
+current state of their synchronization. For example, "phase meters" or
+"peak-scopes" are useful tools for visualizing the current state of the
+mix.
 
 ## Point-And-Click Controller Mapping
 
@@ -70,22 +56,22 @@ this project is to increase the usability for new users by automatically
 selecting the correct MIDI mapping and to provide an intelligent
 workflow for when an unsupported MIDI device is connected.
 
+When a mapping for a MIDI device is not present, the user should not be
+left out in the cold. She should have the option of connecting to
+mixxx.org to see if there are any official or user-contributed mappings
+available for download. It's easy to imagine the various interesting
+turns this could take.
+
+Since there is a server-side component to this project we ask that
+applicants be familiar with a web development framework that would be
+suitable for writing an API for mixxx.org. We suggest
+[Django](http://djangoproject.com).
+
 This project will involve a lot of time thinking about use cases,
 dealing with users and understanding their requirements. It would be a
 great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
-
-### Suggested Minimum Deliverables
-
-  - Automatically select an appropriate controller mapping when a user
-    plugs in a device.
-  - For unsupported devices, implement a UI and simple server-side
-    functionality to:
-    1.  Check mixxx.org for additional community-provided mappings.
-    2.  Allow ratings and comments to be made on community-provided
-        mappings.
-    3.  Allow user-created mappings to be uploaded to mixxx.org.
 
 ## Enhanced Platform Integration
 

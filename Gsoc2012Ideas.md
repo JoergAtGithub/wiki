@@ -46,6 +46,10 @@ want to map a control, just click on the button or knob in the GUI that
 you want to map and then turn the corresponding button or knob on your
 controller.
 
+  - How will you figure out what GUI element was clicked with Qt?
+  - What do you do if the button isn't in the skin?
+  - How do other DJ software apps allow MIDI mapping? 
+
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 
 Mixxx currently supports a wide-range of hardware MIDI controllers that

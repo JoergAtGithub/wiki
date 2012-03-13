@@ -12,6 +12,35 @@ be accepted. We expect you think about the feature and how it aligns
 with Mixxx's goals, outline potential use-cases and propose a plan for
 implementing a solution.
 
+## Key Detection for Harmonic Mixing
+
+This feature aims to allow Mixxx users to simply and intuitively
+incorporate harmonic mixing into their workflow.
+
+Using an open-source key detector like
+[KeyFinder](http://www.ibrahimshaath.co.uk/keyfinder/) or
+[Chordata](http://clam-project.org/wiki/Chordata_tutorial), you will be
+responsible for adding key detection support to Mixxx's current analysis
+system.
+
+After adding key-detection, you will have to change the way that Mixxx
+uses the [SoundTouch](http://www.surina.net/soundtouch/) library to
+enable changing the pitch independent of the tempo. Today, Mixxx uses
+SoundTouch to change the tempo independent of the pitch (this is called
+**keylock**). The opposite problem is changing the pitch independent of
+the tempo. This is essential for harmonic mixing. If you have two tracks
+that are in different keys, then you have to adjust their pitch until
+they are in the same key. You do not have to implement pitch-shifting
+yourself -- this is already done by the SoundTouch library. See also:
+[pitch\_percentages\_for\_semitones\_and\_notes](pitch_percentages_for_semitones_and_notes)
+
+Once you have done this infrastructure work then you will have to decide
+how to expose these features to the user. This is an open-ended part of
+your application that will show us you have thought about the DJ
+use-cases and understand how the feature will be used. Make sure to
+explain the user-facing changes you would make to Mixxx and how they
+support the use-cases of this feature in your application.
+
 ## Synchronization Mode
 
 If you've used Mixxx, then you know that our SYNC button is only a

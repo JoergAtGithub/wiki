@@ -123,7 +123,3 @@ Mixxx then we're looking forward to hearing about it.
 
 **IMPORTANT: You should [contact us](gsocadvice) first to get feedback
 if you're going to submit a proposal for your own project idea\!**
-
-### Minimum Deliverables
-
-  - Something awesome. We will work with you to define the deliverables.

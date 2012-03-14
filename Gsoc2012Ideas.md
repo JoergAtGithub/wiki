@@ -8,9 +8,9 @@ excited about. For advice on how to get in touch and how to apply, you
 should read [gsocadvice](gsocadvice).
 
 **A GSoC application that simply repeats the project description will
-NOT be accepted. We expect you think about the feature and how it aligns
-with Mixxx's goals, outline potential use-cases and propose a plan for
-implementing a solution.**
+NOT be accepted. We expect you to think about the feature and how it
+aligns with Mixxx's goals, outline potential use-cases and propose a
+plan for implementing a solution.**
 
 ## Key Detection for Harmonic Mixing
 

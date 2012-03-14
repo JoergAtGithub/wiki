@@ -141,15 +141,6 @@ For ideas, check out:
   - [Features new to Windows 8
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
 
-### Minimum Deliverables (Example)
-
-  - Implement support for [Mac OS X Lion fullscreen
-    mode](https://developer.apple.com/library/mac/#documentation/General/Conceptual/MOSXAppProgrammingGuide/FullScreenApp/FullScreenApp.html#//apple_ref/doc/uid/TP40010543-CH6-SW1)
-  - Implement Windows 7 jumplist actions for deck playback controls
-  - Implement file type handling (eg. "Open with.... Mixxx") 
-  - Implement busy cursor or dock bouncing until Mixxx has finished
-    loading
-
 ## Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

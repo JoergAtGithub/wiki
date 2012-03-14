@@ -7,10 +7,10 @@ big difference to our users and that we as a development team are really
 excited about. For advice on how to get in touch and how to apply, you
 should read [gsocadvice](gsocadvice).
 
-A GSoC application that simply copy/pastes these deliverables will NOT
-be accepted. We expect you think about the feature and how it aligns
+**A GSoC application that simply repeats the project description will
+NOT be accepted. We expect you think about the feature and how it aligns
 with Mixxx's goals, outline potential use-cases and propose a plan for
-implementing a solution.
+implementing a solution.**
 
 ## Key Detection for Harmonic Mixing
 

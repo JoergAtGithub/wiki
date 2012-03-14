@@ -26,7 +26,7 @@ You are more than welcome to contact us before submitting your
 application, we will be happy to advise on most aspects of the process.
 Getting in touch first is especially recommended if you are planning to
 apply to work on an original idea, rather than one of our suggestions
-from the [ideas page](gsoc2011ideas).
+from the [ideas page](gsoc2012ideas).
 
 So if you'd like to discuss your application, your ideas or just
 introduce yourself, then feel free to get in touch in one of the

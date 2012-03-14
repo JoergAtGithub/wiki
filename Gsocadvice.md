@@ -10,7 +10,7 @@ website](http://socghop.appspot.com/).
 In general, your project proposal can be inspired by any of the
 following:
 
-  - A project from our [GSoC 2011 Ideas Page](gsoc2012ideas)
+  - A project from our [GSoC 2012 Ideas Page](gsoc2012ideas)
   - A project you come up with\! Make sure to contact us **before**
     submitting to get feedback if this is your plan.
   - You can use our [Wishlist

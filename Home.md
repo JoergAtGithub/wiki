@@ -117,7 +117,8 @@ plans.
 
 ### GSoC 2012
 
-Mixxx is applying for Google Summer of Code, 2012.
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2012.
 
   - See the list of suggested projects: [GSoC 2012 Ideas](gsoc2012ideas)
   - Advice for students thinking of applying: [GSoC Advice for

@@ -76,7 +76,7 @@ optional info tag which contains information about the preset (primarily
 used for distribution of presets.)
 
     <?xml version="1.0" encoding="utf-8"?>
-        <MixxxHIDPreset schemaVersion="0.1" mixxxVersion="1.11.0"> <!-- Schema version number to help compatibility, should the format change -->
+        <MixxxControllerPreset schemaVersion="0.1" mixxxVersion="1.11.0"> <!-- Schema version number to help compatibility, should the format change -->
         <info><!-- Optional - information about the preset file -->
             <name>Example HID mapping for Mixxx</name>
             <author>Sean M. Pappalardo</author>
@@ -89,7 +89,7 @@ The core part of the file contains a definition for a single controller.
 There may be multiple controllers in one file (for more complex setups).
 
 ``` 
-    <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once. -->
+    <controller id="controller name" type="HID"> <!-- Many controllers in one file supported. A controller should only appear once. -->
 ```
 
 The "controller id" is the brand & model of the controller, e.g. "EKS
@@ -180,5 +180,5 @@ Close the `<controller>` block with the following code:
 ...and the whole preset block with the following:
 
 ``` 
-     </MixxxHIDPreset>
+     </MixxxControllerPreset>
 ```

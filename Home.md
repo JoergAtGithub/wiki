@@ -61,6 +61,9 @@ plans.
   - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
     complete control over your MIDI controller and create advanced
     behaviors including easy wheel scratching.
+  - [HID controller mapping file format](hid_mapping_format) - Read this
+    to find out how to create or change a mapping file for your HID
+    controller
 
 ## Developer Documentation
 

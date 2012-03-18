@@ -38,7 +38,7 @@ following ways:
     1.  RJ Ryan (rryan -A-T- mixxx.org)
     2.  Albert Santoni (alberts -A-T- mixxx.org)
 3.  Hop on our IRC channel (\#mixxx on Freenode) and see if our mentors
-    are around (adam\_d, asantoni, rryan). 
+    are around (bkgood, asantoni, rryan). 
     1.  We encourage idling in our IRC channel to get acquainted with
         the wider Mixxx community as well.
 

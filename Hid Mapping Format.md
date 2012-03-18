@@ -102,6 +102,14 @@ Otus".
         <control> <!-- Several controls -->
 ```
 
+If your controller can send different types of messages, you can specify
+which type this control block interprets using the following format:
+
+``` 
+      <controls byteoffset=0 value=0x01> <!-- Optional format that specifies what value the specified byte must have in order to use this block to interpret the packet. -->
+        <control>
+```
+
 #### MixxxControl
 
 Group and key define the part of Mixxx that you want to affect. For a

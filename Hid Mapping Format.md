@@ -168,3 +168,17 @@ Close each `<control>` block with the following code:
 ``` 
       </controls>
 ```
+
+### Finish up
+
+Close the `<controller>` block with the following code:
+
+``` 
+    </controller>
+```
+
+...and the whole preset block with the following:
+
+``` 
+     </MixxxHIDPreset>
+```

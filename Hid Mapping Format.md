@@ -76,7 +76,7 @@ optional info tag which contains information about the preset (primarily
 used for distribution of presets.)
 
     <?xml version="1.0" encoding="utf-8"?>
-        <MixxxMIDIPreset schemaVersion="0.1" mixxxVersion="1.11.0"> <!-- Schema version number to help compatibility, should the format change -->
+        <MixxxHIDPreset schemaVersion="0.1" mixxxVersion="1.11.0"> <!-- Schema version number to help compatibility, should the format change -->
         <info><!-- Optional - information about the preset file -->
             <name>Example HID mapping for Mixxx</name>
             <author>Sean M. Pappalardo</author>

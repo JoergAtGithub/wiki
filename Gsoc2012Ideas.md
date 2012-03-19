@@ -43,27 +43,6 @@ use-cases and understand how the feature will be used. Make sure to
 explain the user-facing changes you would make to Mixxx and how they
 support the use-cases of this feature in your application.
 
-## Synchronization Mode
-
-If you've used Mixxx, then you know that our SYNC button is only a
-one-time sync. All it does is match up the beats of the tracks that are
-being mixed the moment you press the button.
-
-There is tons of room for improvement here. The goal of this project is
-to allow decks to be synchronized such that they actively check whether
-they are in sync with the other, and make adjustments to stay in sync.
-
-Additionally, a common feature in other DJ software is the ability to
-set a master-clock to a desired BPM. When Sync-mode is on, decks should
-also be able to synchronize themselves to the master-clock. This is
-useful because the DJ can set a goal BPM for their set and make sure
-they stay on tempo instead of gradually getting faster or slower.
-
-Finally, Mixxx is missing useful widgets that inform the DJ of the
-current state of their synchronization. For example, "phase meters" or
-"peak-scopes" are useful tools for visualizing the current state of the
-mix.
-
 ## Point-And-Click Controller Mapping
 
 Mixxx's MIDI-Learning wizard is not very usable. In order to map a

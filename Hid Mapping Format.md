@@ -163,6 +163,24 @@ buttons.) Here is how to define them in the XML.
           <length>1</length> <!-- Optional - Number of bits that make up this control. A single-bit value is either on or off. 1 bit is the default. -->
 ```
 
+Proposal from Hile: If the control represents multiple bits in one byte,
+following format could be used to shorten the XML format mapping bits to
+groups and keys. This is alternative format to above specified \<bit\>
+controls.
+
+``` 
+              <control>
+              <bitmap byteoffset="4" length="16">
+                  <!-- byteoffset: Offset from the first byte in the packet. So 4 points to the third byte in the packet. -->
+                  <!-- length: Number of bits that make up this control. A single-bit value is either on or off. 1 bit is the default. -->
+              <bit offset="0"><group>[Channel1]</group><key>play</key></bit>
+              <bit offset="5"><group>[Channel1]</group><key>cue</key></bit>
+              <bit offset="15"><group>[Channel1]</group><key>reverse</key></bit>
+              <!-- Bits not specified with <bit> here are ignored: you can define length 16 bitmap but only specify three bits like here -->
+              </bitmap>
+              </control>
+```
+
 #### Finish up
 
 Close each `<control>` block with the following code:

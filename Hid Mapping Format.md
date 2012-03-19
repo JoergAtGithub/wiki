@@ -168,6 +168,10 @@ following format could be used to shorten the XML format mapping bits to
 groups and keys. This is alternative format to above specified \<bit\>
 controls.
 
+Note that a bitmap differs from other controls, because with it, group
+and key are inside bit elements, not as direct child nodes of control
+element.
+
 ``` 
               <control>
               <bitmap byteoffset="4" length="16">

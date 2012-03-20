@@ -12,37 +12,6 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-## Key Detection for Harmonic Mixing
-
-This feature aims to allow Mixxx users to simply and intuitively
-incorporate [harmonic
-mixing](http://en.wikipedia.org/wiki/Harmonic_mixing) into their
-workflow.
-
-Using an open-source key detector like
-[KeyFinder](http://www.ibrahimshaath.co.uk/keyfinder/) or
-[Chordata](http://clam-project.org/wiki/Chordata_tutorial), you will be
-responsible for adding key detection support to Mixxx's current analysis
-system.
-
-After adding key-detection, you will have to change the way that Mixxx
-uses the [SoundTouch](http://www.surina.net/soundtouch/) library to
-enable changing the pitch independent of the tempo. Today, Mixxx uses
-SoundTouch to change the tempo independent of the pitch (this is called
-**keylock**). The opposite problem is changing the pitch independent of
-the tempo. This is essential for harmonic mixing. If you have two tracks
-that are in different keys, then you have to adjust their pitch until
-they are in the same key. You do not have to implement pitch-shifting
-yourself -- this is already done by the SoundTouch library. See also:
-[pitch\_percentages\_for\_semitones\_and\_notes](pitch_percentages_for_semitones_and_notes)
-
-Once you have done this infrastructure work then you will have to decide
-how to expose these features to the user. This is an open-ended part of
-your application that will show us you have thought about the DJ
-use-cases and understand how the feature will be used. Make sure to
-explain the user-facing changes you would make to Mixxx and how they
-support the use-cases of this feature in your application.
-
 ## Point-And-Click Controller Mapping
 
 Mixxx's MIDI-Learning wizard is not very usable. In order to map a
@@ -86,6 +55,55 @@ dealing with users and understanding their requirements. It would be a
 great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
+
+## Library Preview Player
+
+Selecting the next track to play is possibly the \#1 hardest part of
+DJing. Today if you want to preview a track you have to load it to a
+deck and use the PFL (pre-fader listen) to listen to the track in your
+headphones. This project aims to provide a "preview" player that lets
+DJs listen to tracks in their headphones without having to load them to
+a deck.
+
+## Vinyl Pass-through Mode
+
+Mixxx allows you to DJ with timecode records and CDs. This project aims
+to bring a vinyl pass-through mode to Mixxx. Pass-through mode is a
+useful feature for DJs who still have part of their music collection on
+vinyl or CDs. When pass-through is enabled for a deck, Mixxx takes the
+input audio from the turntable or CDJ and outputs it directly as the
+deck audio output.
+
+## Key Detection for Harmonic Mixing
+
+This feature aims to allow Mixxx users to simply and intuitively
+incorporate [harmonic
+mixing](http://en.wikipedia.org/wiki/Harmonic_mixing) into their
+workflow.
+
+Using an open-source key detector like
+[KeyFinder](http://www.ibrahimshaath.co.uk/keyfinder/) or
+[Chordata](http://clam-project.org/wiki/Chordata_tutorial), you will be
+responsible for adding key detection support to Mixxx's current analysis
+system.
+
+After adding key-detection, you will have to change the way that Mixxx
+uses the [SoundTouch](http://www.surina.net/soundtouch/) library to
+enable changing the pitch independent of the tempo. Today, Mixxx uses
+SoundTouch to change the tempo independent of the pitch (this is called
+**keylock**). The opposite problem is changing the pitch independent of
+the tempo. This is essential for harmonic mixing. If you have two tracks
+that are in different keys, then you have to adjust their pitch until
+they are in the same key. You do not have to implement pitch-shifting
+yourself -- this is already done by the SoundTouch library. See also:
+[pitch\_percentages\_for\_semitones\_and\_notes](pitch_percentages_for_semitones_and_notes)
+
+Once you have done this infrastructure work then you will have to decide
+how to expose these features to the user. This is an open-ended part of
+your application that will show us you have thought about the DJ
+use-cases and understand how the feature will be used. Make sure to
+explain the user-facing changes you would make to Mixxx and how they
+support the use-cases of this feature in your application.
 
 ## Enhanced Platform Integration
 

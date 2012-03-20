@@ -124,7 +124,9 @@ For ideas, check out:
 
 As always with Summer of Code, you aren't limited to the suggestions
 we've made here. If you've got a great idea for a project involving
-Mixxx then we're looking forward to hearing about it.
+Mixxx then we're looking forward to hearing about it. Our bug tracker is
+full of wishlist bugs and other ideas scattered throughout, so if you
+browse through it, you may find many more ideas for GSoC projects.
 
 **IMPORTANT: You should [contact us](gsocadvice) first to get feedback
 if you're going to submit a proposal for your own project idea\!**

@@ -162,6 +162,12 @@ archiving your vinyl.
 
 See [this page](traktor_audio_2)
 
+### Native Instruments Audio Kontrol 1
+
+Sound works perfect with additional .asoundrc file. Hardware buttons and
+wheel works with additional MIDI mapper program. See [this
+page](audio_kontrol_1).
+
 ### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
 
 For both sound cards, ASIO is the best "Sound API" setting to use in

@@ -143,8 +143,8 @@ For ideas, check out:
 Many Mixxx users initially start using it their desktop PC, saving cue
 points and other metadata to Mixxx's database. When you actually get a
 DJ gig though, you'll want to move that database to a laptop. There's
-currently no way official way to do this from inside Mixxx, nor is there
-a way to migrate your library database or some subset of the data to an
+currently no official way to do this from inside Mixxx, nor is there a
+way to migrate your library database or some subset of the data to an
 external USB drive. There are several important use cases that we've
 overlooked - Find out what they are by browsing our forum, bug tracker,
 or just thinking about how DJs work, and propose fixing several of them.

@@ -94,7 +94,6 @@ plans.
 
 ### Code Reference
 
-  - [Class hierarchy](class_hierarchy) 
   - [Performance improvements](Performance%20improvements)
   - [Code cleanup & cruft removal task list](code_cleanup)
   - [SoundSource interface (sound

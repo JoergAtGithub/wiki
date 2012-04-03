@@ -63,7 +63,7 @@ plans.
 
   - [HID controller mapping file format](hid_mapping_format) - Read this
     to find out how to create or change a mapping file for your HID
-    controller
+    controller. (TENTATIVE - not yet implemented.)
 
 <!-- end list -->
 

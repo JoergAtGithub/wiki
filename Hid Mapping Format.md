@@ -1,6 +1,7 @@
 # HID Controller Mapping File Format
 
-***This specification is in discussion. Details may change before the
+***This specification is for a future feature (not currently
+implemented) and is in discussion. Details may change before the
 specification is finalized.***
 
 ## Introduction

@@ -84,14 +84,16 @@ when the controller is activated.
 
 ### Init and Shutdown functions
 
-All device script files **are expected to contain initialize and
-shutdown functions** (called `<manufacturer><device>.init(ID)` and
-`<manufacturer><device>.shutdown()` ) which will be called when Mixxx
-opens and closes the device, respectively. They can be empty, but are
-useful for putting controllers into known states and/or lighting certain
-LEDs before operation begins or the program exits. The ID parameter is
-the `controller id` attribute from the XML file and is useful for
-identifying the particular controller instance in print statements.
+**All device script files are expected to contain initialize and
+shutdown functions** (called `<manufacturer><device>.init(ID,debugging)`
+and `<manufacturer><device>.shutdown()` ) which will be called when
+Mixxx opens and closes the device, respectively. They can be empty, but
+are useful for putting controllers into known states and/or lighting
+certain LEDs before operation begins or the program exits. The ID
+parameter is the `controller id` attribute from the XML file and is
+useful for identifying the particular controller instance in print
+statements and the `debugging` parameter is set to **true** if the user
+specified controller debugging on the command line. (v1.11 and higher.)
 
 ### Function definitions
 

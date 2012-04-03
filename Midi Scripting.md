@@ -192,16 +192,16 @@ So to enable soft-takeover for the pitch control on channel
 
 ### Scratching
 
-*Introduced in v1.8*
+*Introduced in v1.8, ramp toggles added in v1.11*
 
 We have an easy way to scratch with any MIDI control that sends relative
 (+1/-1) signals. (Others can be scaled to work as well.) The applicable
 functions are:
 
 ``` c++
-engine.scratchEnable(int deck, int intervalsPerRev, float rpm, float alpha, float beta);
+engine.scratchEnable(int deck, int intervalsPerRev, float rpm, float alpha, float beta, bool ramp);
 engine.scratchTick(int deck, int interval);
-engine.scratchDisable(int deck);
+engine.scratchDisable(int deck, bool ramp);
 ```
 
 Here is how to use them:
@@ -224,10 +224,11 @@ Here is how to use them:
 ``` 
     * the alpha value for the filter (start with 1/8 (0.125) and tune from there)
     * the beta value for the filter (start with alpha/32 and tune from there)
+* whether you want Mixxx to ramp the deck speed down or to stop instantly. (TRUE for ramping, which is the default.)
 - Each time the MIDI control is moved, call ''engine.scratchTick()'' with:
 * the virtual deck number this control is currently scratching
 * the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
-- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching.
+- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp.)
 ```
 
 Here is an example for the two most common types of wheels:

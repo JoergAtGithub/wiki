@@ -88,10 +88,12 @@ The hardware buttons can be easily used as a MIDI device and therefore
 used to control Mixxx in a convenient and flexible way with the
 **nicontrol** tool I've written. The tool automatically deactivates the
 XInput device and maps all inputs to MIDI inputs in realtime while
-controling the LEDs to show which buttons where pressed (like the
-original Windows tool of Native Instruments does). Being in an early
-development state I've not yet finished the tool for being published but
-I will release it soon and update the information on this page.
+controling the LEDs to show which buttons were pressed (like the
+original Windows tool of Native Instruments does). You can find an early
+version of the tool on the [nicontrol
+website](http://ralf-oechsner.de/opensource/page/nicontrol). An Ubuntu
+package and a new version with additional features will be released
+soon.
 
 ### Manually
 

@@ -4,7 +4,7 @@
 
 Found a crash? Generate us a backtrace:
 
-1.  Run "gdb mixxx"
+1.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
 
 <!-- end list -->
 

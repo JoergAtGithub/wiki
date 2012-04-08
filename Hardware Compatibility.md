@@ -87,33 +87,33 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                               |         |          |       |
-| ----------------------------- | ------- | -------- | ----- |
-| Device                        | Windows | Mac OS X | Linux |
-| Allen and Heath Xone:1D       |         |          |       |
-| Allen and Heath Xone:2D       |         |          |       |
-| Allen and Heath Xone:3D       |         |          |       |
-| Allen and Heath Xone:4D       |         |          |       |
-| Allen and Heath Xone:DX       |         |          |       |
-| Ecler Evo4                    |         |          |       |
-| Ecler Evo5                    |         |          |       |
-| Korg NanoPad                  |         |          |       |
-| Korg NanoKontrol              |         |          |       |
-| Korg NanoKey                  |         |          |       |
-| Korg PadKontrol               |         |          |       |
-| Native Instruments Kontrol X1 |         |          |       |
-| Native Instruments Kontrol S4 |         |          |       |
-| Numark Stealth Control        |         |          |       |
-| Numark Omni Control           |         |          |       |
-| Numark MixDeck                |         |          |       |
-| Numark Mixmeister Control     |         |          |       |
-| Numark iDJ3                   |         |          |       |
-| Numark NSFX                   |         |          |       |
-| Numark V7                     |         |          |       |
-| Vestax VCI-300                |         |          |       |
-| Vestax TR-1                   |         |          |       |
-| Vestax VCM-100                |         |          |       |
-| Vestax VCM-600                |         |          |       |
+|                                  |         |          |       |
+| -------------------------------- | ------- | -------- | ----- |
+| Device                           | Windows | Mac OS X | Linux |
+| Allen and Heath Xone:1D          |         |          |       |
+| Allen and Heath Xone:2D          |         |          |       |
+| Allen and Heath Xone:3D          |         |          |       |
+| Allen and Heath Xone:4D          |         |          |       |
+| Allen and Heath Xone:DX          |         |          |       |
+| Ecler Evo4                       |         |          |       |
+| Ecler Evo5                       |         |          |       |
+| Korg NanoPad                     |         |          |       |
+| Korg NanoKontrol                 |         |          |       |
+| Korg NanoKey                     |         |          |       |
+| Korg PadKontrol                  |         |          |       |
+| Native Instruments Kontrol X1    |         |          |       |
+| Native Instruments Kontrol S4    |         |          |       |
+| Numark Stealth Control           |         |          |       |
+| Numark Omni Control              |         |          |       |
+| Numark MixDeck                   |         |          |       |
+| Numark Mixmeister Control        |         |          |       |
+| Numark iDJ3                      |         |          |       |
+| Numark NSFX                      |         |          |       |
+| Numark V7                        |         |          |       |
+| [Vestax VCI-300](vestax_vci-300) |         |          |       |
+| Vestax TR-1                      |         |          |       |
+| Vestax VCM-100                   |         |          |       |
+| Vestax VCM-600                   |         |          |       |
 
 ## Sound cards
 

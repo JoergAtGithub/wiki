@@ -4,7 +4,7 @@
 
 Bisher nur auf Englisch verfügbar: <http://mixxx.org/manual/latest>
 
-## Um beim Mixxxx Handbuch mitzuhelfen:
+## Um beim Mixxx Handbuch mitzuhelfen:
 
 Schauen Sie sich die folgenden Repository auf Launchpad.net an:
 <https://code.launchpad.net/~mixxxdevelopers/mixxx/manual>

@@ -1,3 +1,22 @@
+# DAS MIXXX HANDBUCH IST UMGEZOGEN
+
+## Um das Mixxx Handbuch zu lesen
+
+Bisher nur auf Englisch verfügbar: <http://mixxx.org/manual/latest>
+
+## Um beim Mixxxx Handbuch mitzuhelfen:
+
+Schauen Sie sich die folgenden Repository auf Launchpad.net an:
+<https://code.launchpad.net/~mixxxdevelopers/mixxx/manual>
+
+## Um das Mixxx Handbuch zu übersetzen:
+
+Wir werden Launchpad.net Übersetzungen verwenden welche wir bereits für
+Mixxx selbst nutzen. Momentan sind diese noch nicht verfügbar. Kommen
+Sie später wieder.
+
+# DAS NACHFOLGENDE HANDBUCH IST VERALTET UND WIRD NICHT MEHR GEPFLEGT
+
 # Verfügbare Sprachen
 
 Dieses Handbuch ist außerdem verfügbar in:

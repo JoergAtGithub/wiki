@@ -39,8 +39,9 @@ your distribution's package manager:
     support)
   - libshout 
   - taglib
-  - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
   - [protobuf](http://code.google.com/p/protobuf/) 
+  - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
+    (**optional** if not installed, Mixxx uses an internal version)
 
 ## 2\. Get Mixxx
 

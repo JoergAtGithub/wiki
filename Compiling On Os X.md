@@ -56,7 +56,7 @@ on Mac OS X.
 <!-- end list -->
 
 ``` 
-    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2
+    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2 protobuf-cpp 
 ```
 
   - Finally, after that has completed, download and install the [Qt SDK

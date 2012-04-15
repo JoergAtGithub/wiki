@@ -10,7 +10,7 @@ distribution is Debian based (such as Ubuntu), you can install them by
 running:
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install bzr scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev
+    sudo apt-get install bzr scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler vamp-sdk vamp-plugin-sdk
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 
 On Fedora 13 and 14, you need enable rpmfusion repo and then:
@@ -19,7 +19,8 @@ On Fedora 13 and 14, you need enable rpmfusion repo and then:
     yum groupinstall "Development Tools"
     yum install scons bzr alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
     libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
-    portaudio-devel libshout-devel python-devel portmidi-devel qt-webkit-devel taglib-devel flac-devel
+    portaudio-devel libshout-devel python-devel portmidi-devel qt-webkit-devel taglib-devel flac-devel \
+    protobuf-devel vamp-plugin-sdk-devel
 
 For other distributions, you will need to install the following through
 your distribution's package manager:
@@ -38,6 +39,8 @@ your distribution's package manager:
     support)
   - libshout 
   - taglib
+  - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
+  - [protobuf](http://code.google.com/p/protobuf/) 
 
 ## 2\. Get Mixxx
 

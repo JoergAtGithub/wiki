@@ -193,6 +193,9 @@ You will need to install the following by hand for the compile process:
     "sudo port install taglib"
   - libshout -- ([Download](http://www.icecast.org/download.php)) -- or
     "sudo port install libshout2"
+  - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
+  - [protobuf](http://code.google.com/p/protobuf/) -- or "sudo port
+    install protobuf-cpp"
 
 ## 3\. Get Mixxx
 

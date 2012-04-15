@@ -196,7 +196,7 @@ You will need to install the following by hand for the compile process:
   - [protobuf](http://code.google.com/p/protobuf/) -- or "sudo port
     install protobuf-cpp"
   - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
-    (\*optional\* if not installed, Mixxx uses an internal version)
+    (**optional** if not installed, Mixxx uses an internal version)
 
 ## 3\. Get Mixxx
 

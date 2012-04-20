@@ -84,7 +84,7 @@ only slow down the build.)
 
 ### Build with m4a file support
 
-If you want to play m4a files, use scons' **faad=1** flag. Attention:
+If you want to play m4a files, use scons **`faad=1`** flag. Attention:
 You've to install the libraries faad2 and libmp4v2 (or libmp4).
 
 ### Run or Install

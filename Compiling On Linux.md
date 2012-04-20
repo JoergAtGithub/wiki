@@ -37,6 +37,8 @@ your distribution's package manager:
   - [libmp4](http://www.mpeg4ip.net/) (or
     [libmp4v2](http://code.google.com/p/mp4v2/)) (optional, for M4A file
     support)
+  - [faad2](http://www.audiocoding.com/faad2.html) (optional, for M4A
+    file support)
   - libshout 
   - taglib
   - [protobuf](http://code.google.com/p/protobuf/) 

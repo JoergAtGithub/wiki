@@ -69,7 +69,7 @@ customize.)
 
 ### Multi-threaded build
 
-If you have a multi-core CPU (or just multiple CPUs) use scons **`-j`**
+If you have a multi-core CPU (or just multiple CPUs) use **`scons -j`**
 flag to specify the number of build threads to speed up building.
 Generally, use as many threads as you have cores. (Note that if you have
 a CPU with HyperThreading (which looks like two cores to the OS,) ignore

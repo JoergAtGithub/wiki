@@ -30,15 +30,17 @@ world-class application, somewhat in order of importance:
 
 ### 1.11
 
-  - [1.10.0 Milestone on
-    Launchpad](https://launchpad.net/mixxx/+milestone/1.10.0)
+  - [1.11.0 Milestone on
+    Launchpad](https://launchpad.net/mixxx/+milestone/1.11.0)
   - Feature Freeze
-  - Code: April 1, 2012
-  - Strings: April 16th, 2012
-  - GUI: April 16th, 2012
-  - MIDI Scripts: April 16th, 2012
+  - Code: April 23, 2012
+  - Strings: May 10th, 2012
+  - GUI: May 10th, 2012
+  - MIDI Scripts: May 25th, 2012
+  - Beta Date
+  - Goal: May 1st, 2012
   - Release Date
-  - Goal: May 1, 2012
+  - Goal: June 1, 2012
 
 #### Feature Targets
 

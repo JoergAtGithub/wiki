@@ -87,6 +87,10 @@ only slow down the build.)
 If you want to play m4a files, use **`scons faad=1`** flag. Attention:
 You've to install the libraries faad2 and libmp4v2 (or libmp4).
 
+### Build without shoutcast support
+
+If you don't want shoutcast support, use **`scons shoutcast=0`** flag.
+
 ### Run or Install
 
 If you want to just run this copy without installing, from the same

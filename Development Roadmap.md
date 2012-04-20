@@ -45,9 +45,11 @@ world-class application, somewhat in order of importance:
 #### Feature Targets
 
   - Re-vamped Auto-DJ support
+  - Session History Feature
+  - Advanced Search Operators
   - Colored, tri-band waveforms
-  - Beat-tracking via VAMP plugins
-  - HID Support
+  - Drastically improved BPM and beat detection via VAMP plugins.
+  - HID Controller Support via Scripting
 
 ## Historical Release Roadmaps
 

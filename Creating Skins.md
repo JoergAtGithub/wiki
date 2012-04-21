@@ -692,6 +692,38 @@ Defines connected Channel (X = Channel1 or Channel2 or Master)
 
 ## Section: Text
 
+### Clock
+
+New in Mixxx 1.10  
+|`<Time>
+<Tooltip>Helpful text</Tooltip>
+<Style>...</Style>
+<Pos>X,Y</Pos>
+<Size>W,H</Size>
+<ShowSeconds>false</ShowSeconds>
+<ClockFormat>24</ClockFormat>
+</Time>
+`||`
+This widget displays the current time.
+The node <ClockFormat> determines whether the time is shown in 24 hour
+format or 12 hour format. "24" and "24hrs" set the format to 24 hour
+format.
+"12", "12hrs" and "12ap" set the format to to 12 hour format (e.g. 1:45
+am). "12AP" sets it to 12 hour format with capitalized AM/PM (e.g. 1:45
+AM). Default is "12AP".
+<ShowSeconds> determines, whether seconds are shown or not. Default is
+false.
+You can set a custom format with <CustomFormat> instead of
+<ClockFormat>, which accepts the same expressions as QTime::toString
+(http://doc.trolltech.com/latest/qtime.html#toString)
+
+<Style> Example= QLabel { font: 15px/17px Lucida Grande, Lucida Sans
+Unicode, Arial, Verdana, sans-serif;
+background-color: transparent; color: #ACACAC; text-align: center;
+padding-left: 1px; }
+
+`|
+
 ### Track information
 
 New in Mixxx 1.9  

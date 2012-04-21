@@ -378,9 +378,18 @@ editor](#tools) and get started :-)
 
 ## Changes
 
+### Mixxx 1.11.0
+
+``` 
+ * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#sectionvisual|<Visual>]]
+ * Removed <HfcColor>, the horizontal line`s color in the waveform & waveform overview, see [[creating_skins#sectionvisual|<Visual>]]
+ * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]. Track analysis progress will be still visible in waveform overview.
+```
+
 ### Mixxx 1.10.0
 
 ``` 
+ * Added <Time> widget which displays the current time, see [[creating_skins?&#clock|<Clock>]]
  * Removed rate <Connection> groups from all <NumberRate> controls, now the text does immediately update if rate range or direction changes, see [[creating_skins#pitch_rate_display|<Pitch rate display>]] 
  * Added <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]
  * Added <BgPixmap> option to the [[creating_skins#sectionvisual|<Visual>]] group. This allows custom background images for waveform and waveform overview. Image transparency is possible for the waveform overview. Remove the BgColor to make it work. If you supply a BgColor it means "paint the background of the overview to this color" so it prevents transparency.

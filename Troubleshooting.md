@@ -106,7 +106,7 @@ responsiveness. Here are some tips to help you do that.*
 
 ## Mixxx won't load any tracks
 
-This happens when Mixxx can't open your output sound device. Click
+This happens when Mixxx can't open any output sound devices. Click
 Options-\>Preferences-\>Sound Hardware and ensure that you have a sound
 device selected for at least one output and that the selected sample
 rate is supported by the device (Mixxx will complain when you click

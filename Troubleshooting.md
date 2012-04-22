@@ -104,6 +104,14 @@ responsiveness. Here are some tips to help you do that.*
     - try [[http://homepage.mac.com/northernSW/renicer.html|Renicer]] which automatically ''renice''s the topmost application. I can't personally vouch for this. It is ~$10. -[[|wxl]]
 ```
 
+## Mixxx won't load any tracks
+
+This happens when Mixxx can't open your output sound device. Click
+Options-\>Preferences-\>Sound Hardware and ensure that you have a sound
+device selected for at least one output and that the selected sample
+rate is supported by the device (Mixxx will complain when you click
+Apply if it isn't.)
+
 ## What do I enter for the user name in Live Broadcasting?
 
   - For an Icecast2 server, the user name is **source** by default.

@@ -381,6 +381,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
+ * Added <Align> to the waveforms options that allows to display only those portions of the waveform which would have been above or below the center. By default, the waveform display is centered about a line and portions will extend both above and below the center, see [[creating_skins#waveform|<Visual>]]
  * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#sectionvisual|<Visual>]]
  * Removed <HfcColor>, the horizontal line`s color in the waveform & waveform overview, see [[creating_skins#sectionvisual|<Visual>]]
  * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]. Track analysis progress will be still visible in waveform overview.

@@ -387,6 +387,12 @@ editor](#tools) and get started :-)
  * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]. Track analysis progress will be still visible in waveform overview.
 ```
 
+### Mixxx 1.10.1
+
+``` 
+ * Added [[creating_skins#record|<Record>]] control that allows toggle of recording
+```
+
 ### Mixxx 1.10.0
 
 ``` 

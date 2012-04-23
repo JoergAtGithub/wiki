@@ -965,6 +965,51 @@ triggers only when you release the button (not when you press it). See
 The *\<ButtonState\>* key tells Mixxx that the given connection should
 be triggered when that particular mouse button (left or right) is down.
 
+### Record
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `<PushButton>
+    <Tooltip>...</Tooltip>
+    <Style>...</Style>
+    <NumberStates>3</NumberStates>
+    <LeftClickIsPushButton>true</LeftClickIsPushButton>
+    <RightClickIsPushButton>true</RightClickIsPushButton>
+    <State>
+    <!-- RECORD OFF -->
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+    </State>
+    <State>
+    <!-- RECORD READY-->
+    <Number>1</Number>
+    <Pressed>unpressed.png</Pressed>
+    <Unpressed>pressed.png</Unpressed>
+    </State>
+    <State>
+    <!-- RECORD ON-->
+    <Number>2</Number>
+    <Pressed>unpressed.png</Pressed>
+    <Unpressed>pressed.png</Unpressed>
+    </State>
+    <Pos>X,Y</Pos>
+    <Connection>
+    <ConfigKey>[Master],toggle_recording</ConfigKey>
+    <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+    <ButtonState>LeftButton</ButtonState>
+    <ConnectValueToWidget>false</ConnectValueToWidget>
+    </Connection>
+    <Connection>
+    <ConfigKey>[Master],Record</ConfigKey>
+    <ConnectValueFromWidget>false</ConnectValueFromWidget>
+    </Connection>
+    </PushButton> 
+` | `New in Mixxx 1.10.1
+
+Button that allows toggle of recording
+` |
+
 ### Play
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

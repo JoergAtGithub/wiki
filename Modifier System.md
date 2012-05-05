@@ -69,3 +69,11 @@ it has modifier version if it does not have on set (doing it this way is
 because of how the format is defined). Generate a mapping internally
 that accounts for this more efficiently? We can map these MIDI mappings
 to controls or javascript functions, nothing stopping anyone.
+
+##### Ideas
+
+  - The UI could highlight modifiers and their reactors in a certain
+    color when one or the other is highlighted.
+  - Do we create the modifiers externally to set their type or just let
+    people free form it? Javascript can handle it. We could also make an
+    extra setting that gets synced between all the relevant rows.

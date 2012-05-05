@@ -33,8 +33,13 @@ development by creating a Qt project file for the source files. You can
 do this by running 'qmake -project' under mixxx/src. When using the
 created project file, you are able to use Creators editing features such
 as following symbols (F2) and switching between code and header files
-(F4). When compiling you will still have to resort to SCons as th
-project file will not resolve the dependencies.
+(F4). When compiling you will still have to resort to SCons as the
+project file will not resolve the dependencies. To accomplish this,
+switch to the project tab, remove any build steps and "Add Build
+Step"-\>"Custom Process Step". Enter "/usr/bin/scons" as Command and any
+additional Command arguments (such as qdebug=1 when in debug
+configuration). Respectively, follow the same procedure for the Clean
+Steps where you enter "-c" as Command argument.
 
 # Console Dev Tools
 

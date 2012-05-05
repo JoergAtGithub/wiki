@@ -7,17 +7,12 @@ page.
 ## Specifications for planned features
 
   - [Revamped Control System](Revamped%20Control%20System)
-  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
-  - [N-Deck Support](N-Deck%20Support)
   - [Skinning Engine](Skinning%20Engine)
   - [DVS mode](DVS%20mode)
-  - [Aubio (misnamed Beat
-    Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
-  - [Beatloops](Beatloops) as well as quantization for setting loops,
-    cues and hotcues
   - [OSC Backend](OSC%20Backend)
   - [Effects Framework](Effects%20Framework)
   - [Multi-channel file mixing](Multi-channel%20file%20mixing)
+  - [Modifier System](Modifier%20System)
 
 ## Implemented Specifications
 
@@ -27,12 +22,12 @@ page.
   - [Library Rewrite Using SQLite](Library%20Rewrite%20Using%20SQLite)
   - [Library Metadata Rewrite using
     TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
-
-<!-- end list -->
-
-``` 
-* 
-```
+  - [Beatloops](Beatloops) as well as quantization for setting loops,
+    cues and hotcues
+  - [Aubio (misnamed Beat
+    Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
+  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
+  - [N-Deck Support](N-Deck%20Support)
 
 ## Abandoned Specifications
 

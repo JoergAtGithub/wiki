@@ -1,5 +1,10 @@
 # i18n/l10n and Mixxx
 
+Required tools to update translations are: \* lupdate and lrelease, part
+of qt development toolkit \* po2ts and ts2po, part of
+\[<http://translate.sourceforge.net/wiki/toolkit/index> Translate
+Toolkit\]
+
 ## Updating translation templates
 
 *This procedure extracts translatable strings from Mixxx's code into

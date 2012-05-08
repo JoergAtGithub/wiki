@@ -3,9 +3,8 @@
 Required tools to update translations are:
 
   - lupdate and lrelease, part of qt development toolkit
-  - po2ts and ts2po, part of
-    \[<http://translate.sourceforge.net/wiki/toolkit/index> Translate
-    Toolkit\]
+  - po2ts and ts2po, part of [Translate
+    Toolkit](http://translate.sourceforge.net/wiki/toolkit/index)
 
 ## Updating translation templates
 

@@ -77,3 +77,7 @@ to controls or javascript functions, nothing stopping anyone.
   - Do we create the modifiers externally to set their type or just let
     people free form it? Javascript can handle it. We could also make an
     extra setting that gets synced between all the relevant rows.
+  - We could expose C++ objects to the JS engines named after a script's
+    function prefix (and some unique ID or something) that link all the
+    MIDI devices together. ie: you could access the modifiers for your
+    MIDI Fighter from another controller via MIDIFighter1.Shift.

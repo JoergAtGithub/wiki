@@ -61,7 +61,8 @@ on Mac OS X.
 
   - Finally, after that has completed, download and install the [Qt SDK
     package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
-    for your platform.
+    for your platform (qt-mac and qt-mac-debug-libs required,
+    SDK-Installer will not work with standard settings). 
 
 <!-- end list -->
 

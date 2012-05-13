@@ -111,8 +111,9 @@ The highest value of these bits/bytes when the control is at its maximum
 setting. 0xFFFF is the default for two bytes
 
 Probably only name/group/packetid/type/byteoffset would be mandatory
-(and *group* only to conform to the mixxx midi standards) so the it
-perhaps could be called like:
+(and *group* only to conform to the mixxx midi standards, though will be
+useful for most controls and make the mapping of the controls to mixxx
+actions much simpler) so the it perhaps could be called like:
 
     addControlField("[Channel1]", "play", 0x1, 2, "button", { bitmask: 0x4 });
     addControlField("[Channel1]", "volume", 0x1, 4, "fader", { max: 255 });

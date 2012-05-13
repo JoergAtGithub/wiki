@@ -197,7 +197,7 @@ the LED in the same way as an incoming control then only this name and
 new value would need to be specified such as:
 
 ``` 
-sendHidMsg("[Channel1]", "play", 1);
+sendNamedMsg("[Channel1]", "play", 1);
 
 ```
 
@@ -212,12 +212,12 @@ in explicitly such as offset, bitmask value or offset, array of values
 and length:
 
 ``` 
-sendHidMsg(offset, bitmask, value);
-sendHidMsg(2, 0x3, 0x1);
+sendShortMsg(offset, bitmask, value);
+sendShortMsg(2, 0x3, 0x1);
 
 partial_packet = [0x1, 0x0, 0x4, 0x6, 0x7, 0x8];
 byte_offset = 10;
-sendHidMsg(byte_offset, partial_packet, partial_packet.length);
+sendLongMsg(byte_offset, partial_packet, partial_packet.length);
 
 ```
 

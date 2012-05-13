@@ -57,10 +57,11 @@ A *control* can be defined by:
     value/velocity with no masking at the bitlevel
   - **button:** a binary on/off
   - **encoder:** the physical control is an encoder that sends out
-    continous like a pot but resets to zero once reaching it's maximum
-    value (and conversely when moved in reverse) so the processed value
-    should be the relative difference between this new and the
-    previously received message
+    continous data like a pot but resets to zero once reaching it's
+    maximum value (and conversely when moved in reverse) so the
+    processed value should be the relative difference between this new
+    and the previously received message (a jogwheel may also behave like
+    this)
 
 #### Packet Id
 

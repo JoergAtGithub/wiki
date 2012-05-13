@@ -164,7 +164,7 @@ be passed to the function. This would allow mappings such as:
 ``` 
 // bind directly to an engine action
 
-addBinding("[Channel1]", "play", PRESS, "play");
+addEngineBinding("[Channel1]", "play", PRESS, "play");
 
 // bind to a custom function
 

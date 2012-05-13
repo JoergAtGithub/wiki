@@ -114,7 +114,8 @@ Probably only name/group/packetid/type/byteoffset would be mandatory
 (and *group* only to conform to the mixxx midi standards) so the it
 perhaps could be called like:
 
-    addControlField("[Channel1]", "play", 0x1, 2, "fader", {bitmask: 0x4, max: 1});
+    addControlField("[Channel1]", "play", 0x1, 2, "button", { bitmask: 0x4 });
+    addControlField("[Channel1]", "volume", 0x1, 4, "fader", { max: 255 });
 
 ### Parsing Incoming Controls
 

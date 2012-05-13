@@ -202,14 +202,16 @@ sendNamedMsg("[Channel1]", "play", 1);
 ```
 
 The API would map the *group* and *name* back to the 'hid packet level'
-byte offset+bitmask and apply this to the cache of that packet by
-applying a simple bitwise AND and OR using defined bitmasks.
+byte offset+bitmask, apply this to the cache of that packet by applying
+a simple bitwise AND and OR using defined bitmasks and then send out the
+complete packet.
 
 #### Control Definition
 
 Some of the same parameters used to define a *control* could be passed
 in explicitly such as offset, bitmask value or offset, array of values
-and length:
+and length (which again would result in the full packet being sent out
+even tho the functions are only passed a partial delta):
 
 ``` 
 sendShortMsg(offset, bitmask, value);

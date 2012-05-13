@@ -211,5 +211,10 @@ sendHidMsg(2, 0x3, 0x1);
 partial_packet = [0x1, 0x0, 0x4, 0x6, 0x7, 0x8];
 sendHidMsg(10, partial_packet, partial_packet.length);
 
-
 ```
+
+## References
+
+  - **EKS Otus HID Mapping** <http://tuohela.net/otus.js>
+  - **Hercules Console Mk2 HID Mapping**
+    <http://mixxx.org/forums/viewtopic.php?f=7&t=3712>

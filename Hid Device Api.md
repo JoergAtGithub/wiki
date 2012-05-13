@@ -141,9 +141,9 @@ snippets to be bound to the changes.
 
 It should be possible to bind multiple functions to a single *control*
 
-It should be possible what types of value changes should call the bound
-function such as "when non zero" (useful for mapping actions to button
-presses instead of presses and releases), "when zero" or "all"
+It should be possible to define what types of value changes should call
+the bound function such as "when non zero" (useful for mapping actions
+to button presses instead of presses and releases), "when zero" or "all"
 
 The predefined *group* (if any) and *name* of the changed control should
 be passed to the function. This would allow mappings such as:

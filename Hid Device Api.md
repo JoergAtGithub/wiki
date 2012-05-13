@@ -97,7 +97,7 @@ Specifying a *key* would automatically bind that *control* to the
 
 #### Min Value
 
-lowest value of these bytes when the control is at its minimum setting.
+Lowest value of these bytes when the control is at its minimum setting.
 0 is the default.
 
 #### Max Value

@@ -61,6 +61,10 @@ A *control* can be defined by:
     should be the relative difference between this new and the
     previously received message
 
+#### Packet Id
+
+The id of the packet that this control is a member of
+
 #### Offset
 
 The byte offset within the packet

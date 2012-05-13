@@ -211,7 +211,7 @@ complete packet.
 Some of the same parameters used to define a *control* could be passed
 in explicitly such as offset, bitmask value or offset, array of values
 and length (which again would result in the full packet being sent out
-even tho the functions are only passed a partial delta):
+even though the functions are only passed a partial delta):
 
 ``` 
 sendShortMsg(offset, bitmask, value);

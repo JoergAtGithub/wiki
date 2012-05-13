@@ -73,7 +73,7 @@ The byte offset within the packet
 
 #### Length
 
-The length in bytes of the data field
+The length in bytes of the data field for multi byte controls
 
 #### Bitmask
 

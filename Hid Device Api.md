@@ -216,7 +216,8 @@ sendHidMsg(offset, bitmask, value);
 sendHidMsg(2, 0x3, 0x1);
 
 partial_packet = [0x1, 0x0, 0x4, 0x6, 0x7, 0x8];
-sendHidMsg(10, partial_packet, partial_packet.length);
+byte_offset = 10;
+sendHidMsg(byte_offset, partial_packet, partial_packet.length);
 
 ```
 

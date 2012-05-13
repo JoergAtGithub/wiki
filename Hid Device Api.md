@@ -200,9 +200,10 @@ The API function could be called in one of two ways:
 
 #### Control Names
 
-If a named control has been defined (within the XML or otherwise) for
-the LED in the same way as an incoming control then only this name and
-new value would need to be specified such as:
+If a named control has been defined via a *addControlField()* call (from
+the XML parser or otherwise) for the LED in the same way as an incoming
+control then only this name and new value would need to be specified
+such as:
 
 ``` 
 sendNamedMsg("[Channel1]", "play", 1);

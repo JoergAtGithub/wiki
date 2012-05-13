@@ -51,7 +51,8 @@ A *control* can be defined by:
 
 #### Type
 
-  - **led:** a field to be sent back to the controller
+  - **led:** a field to be sent back to the controller (doesn't have to
+    be only an led)
   - **fader:** the data is interpreted as though it were a midi
     value/velocity with no masking at the bitlevel
   - **button:** a binary on/off

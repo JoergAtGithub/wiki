@@ -119,6 +119,9 @@ actions much simpler) so the it perhaps could be called like:
     addControlField("[Channel1]", "play", 0x1, 2, "button", { bitmask: 0x4 });
     addControlField("[Channel1]", "volume", 0x1, 4, "fader", { max: 255 });
 
+This function should also be called by the future hid device mapping
+parser.
+
 ### Parsing Incoming Controls
 
 A function should exist in the API to parse an incoming packet of data.

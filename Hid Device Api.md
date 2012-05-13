@@ -204,8 +204,9 @@ sendNamedMsg("[Channel1]", "play", 1);
 
 The API would map the *group* and *name* back to the 'hid packet level'
 byte offset+bitmask, apply this to the cache of that packet by applying
-a simple bitwise AND and OR using defined bitmasks and then send out the
-complete packet.
+a bitwise AND with the inverse of the *controls* bitmask and then
+bitwise OR the *controls* new value and then send out the complete
+packet.
 
 #### Control Definition
 

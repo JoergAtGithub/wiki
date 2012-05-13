@@ -131,14 +131,14 @@ It should perform the following:
   - Compare each remaining byte of data with the last received data for
     that packet and identify which bytes have changed
   - Apply needed bitwise logic for each *control* defined to be using
-    this byte (and only these controls) to identify which have changed
-  - Return a list of modified controls and their new values or
+    this byte (and only these *controls*) to identify which have changed
+  - Return a list of modified *controls* and their new values or
     automatically dispatch the changes to script functions that have
-    been bound to these changes
+    been bound to these *control* changes
   - Store a cache of the current packet to identify which bytes of this
     packet change in the future
   - Store a cache of the current value of each control within each
-    packet to identify which controls change in the future
+    packet to identify which *controls* change in the future
 
 <!-- end list -->
 

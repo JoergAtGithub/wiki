@@ -184,6 +184,9 @@ addScriptBinding("[Channel1]", "play", ALL, function(group, name, value) {
 
 ```
 
+These functions should also be called by the future hid device mapping
+parser.
+
 ### Sending Data to the HID Device
 
 Since the API will be keeping a cache of the current values for all

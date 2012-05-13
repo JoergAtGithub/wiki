@@ -110,6 +110,12 @@ Lowest value of these bytes when the control is at its minimum setting.
 The highest value of these bits/bytes when the control is at its maximum
 setting. 0xFFFF is the default for two bytes
 
+Probably only name/group/packetid/type/byteoffset would be mandatory
+(and *group* only to conform to the mixxx midi standards) so the it
+perhaps could be called like:
+
+    addControlField("[Channel1]", "play", 0x1, 2, "fader", {bitmask: 0x4, max: 1});
+
 ### Parsing Incoming Controls
 
 A function should exist in the API to parse an incoming packet of data.

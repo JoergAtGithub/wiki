@@ -7,9 +7,9 @@ MIDI devices.
 
 When data is *sent* from a hid controller multiple controls are
 aggregated into *packets* so a common api is needed to allow the actual
-modified controls to be processed without every mapping needing to parse
-these packets themselves. Similarly when the state of a hid device needs
-to be updated (leds or other feedback) one or more updates are
+modified *controls* to be processed without every mapping needing to
+parse these packets themselves. Similarly when the state of a hid device
+needs to be updated (leds or other feedback) one or more updates are
 aggregated into a packet which contains the new state for all the
 controls within that packet regardless of whether each has changed or
 not. The common hid api should take care of this

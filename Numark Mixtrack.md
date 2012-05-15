@@ -25,10 +25,11 @@ equipment combining both the mixing gear and the soundcard.
 
 ## What is the state of the support in Mixxx ?
 
-As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. The
-controller mapping and backing script is maintained by the community and
-is regularly updated to take the remarks and improvements into account.
-As an example, the "stutter" functionality was implemented in the 1.0b
+As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. There are two
+known mappings; one included, and one community-supported. The
+community-made controller mapping and backing script is regularly
+updated to take the remarks and improvements into account. As an
+example, the "stutter" functionality was implemented in the 1.0b
 mapping, which can be found in the [corresponding forum
 thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 
@@ -107,7 +108,7 @@ worse, produce a "blank".
 
 ## Known problems
 
-  - The pitch on the controller have a very short run. Thus, having it
+  - The pitch on the controller has a very short run. Thus, having it
     configured as a +10/-10 (or more) is tricky because you will get a
     very low pitch precision. Configuring it as +8/-8 (Mk2 style) is
     higly recommended
@@ -119,7 +120,9 @@ worse, produce a "blank".
   - Pressing play while "cue previewing" should start the track for
     real, CDJ style. This is not implemented yet, and is marked as a
     TODO in Mixxx code, so it is unlikely to get implemented on the
-    controller mapping side.
+    controller mapping side. \*NOTE: If you use the mapping included
+    with the software, this feature is supported. Controls in this
+    mapping are different than the community made one, so be careful.\*
   - Final remark on the hardware design: be very, very careful not to
     press the "Load A" or "Load B" button, instead of the corresponding
     track's "cue" button. They are very near, the error is easy and

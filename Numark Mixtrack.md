@@ -93,7 +93,7 @@ When not in scratch mode, touching the jogs won't pause the song.
 Turning them will slightly adjust the tempo, which will resume slowly to
 its speed. This slowness to resume is somehow equivalent to what you
 would expect from drivebelt turntables. I hate it, and I have not found
-a way to correct it... This is why I mostly mix using the bitch bend
+a way to correct it... This is why I mostly mix using the pitch bend
 buttons, which allow for an instant resume to the "pitch slider
 assigned" pitch for the track.
 

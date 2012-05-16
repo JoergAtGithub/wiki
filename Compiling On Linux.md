@@ -10,7 +10,7 @@ distribution is Debian based (such as Ubuntu), you can install them by
 running:
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install bzr scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler vamp-sdk2 vamp-plugin-sdk libusb-1.0-dev
+    sudo apt-get install bzr scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler vamp-sdk2 vamp-plugin-sdk libusb-1.0-dev libfftw3-dev
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 
 On Fedora 13 and 14, you need enable rpmfusion repo and then:

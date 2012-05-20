@@ -63,9 +63,10 @@ plans.
 
 <!-- end list -->
 
-  - [HID controller mapping file format](hid_mapping_format) - Read this
-    to find out how to create or change a mapping file for your HID
-    controller. (TENTATIVE - not yet implemented.)
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - Read this to find out how to create or
+    change a mapping file for your HID controller. (TENTATIVE - not yet
+    implemented.)
 
 <!-- end list -->
 

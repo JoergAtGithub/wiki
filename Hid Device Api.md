@@ -208,29 +208,31 @@ Current control defination format is following:
 
 ### Parsing Incoming Controls
 
-A function should exist in the API to parse an incoming packet of data.
-It should perform the following:
+HIDController implements parsing of incoming packet named 'control'
+automatically. Unfortunately due to namespace issues in current qtscript
+implementation we use, you still need to implement an incomingData
+function in your script. The standard wrapper to your script is
+following:
 
-  - Decode the first byte to identify the packet type
-  - Compare each remaining byte of data with the last received data for
-    that packet and identify which bytes have changed
-  - Apply needed bitwise logic for each *control* defined to be using
-    this byte (and only these *controls*) to identify which have changed
-  - Return a list of modified *controls* and their new values or
-    automatically dispatch the changes to script functions that have
-    been bound to these *control* changes
-  - Store a cache of the current packet to identify which bytes of this
-    packet change in the future
-  - Store a cache of the current value of each control within each
-    packet to identify which *controls* change in the future
-
-<!-- end list -->
-
-    controls = parseControlState(raw_hid_packet);
-    
-    for (i in controls) {
-      print(controls[i].name + " has changed and is now " + controls[i].value);
+    MyDevice.incomingData = function(data,length) {
+      MyDevice.parsePacket(data,length);
     }
+
+The default parsePacket function has following side effects:
+
+\* Only modified input field values are processed by any callbacks or
+automated calls to engine \* If a field has registered callback
+function, this function is called **without running** scaling functions
+or resolving correct decks. All other processing for fields with a
+custom callback is ignored. \* If field has no callback, it's scaling
+function is called (if defined), virtual deck mapping to actual deck is
+performed and the assigned control group and name are attempted to be
+update directly in mix with scaled value. If the field's group name does
+not match a known mixxx control group or virtual deck, this is not done
+and the field input is ignored. \* Finally, if a function called
+processDelta is defined, it is called with all modified fields in the
+packet. This is done after automated fields and callbacks already have
+been called, so don't handle same field twice\!
 
 ### Binding Actions to Incoming Controls
 

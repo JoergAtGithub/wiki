@@ -1,7 +1,12 @@
 # HID Device API
 
-An API to allow mapping/scripting of HID devices in a similar manor to
-MIDI devices.
+An API to allow mapping/scripting of HID devices in a similar manner to
+MIDI devices, hiding ugly details of HID protocol as much as possible.
+
+Development of this API for Mixxx 1.11 is done by Hile in
+[hidscripts](https://code.launchpad.net/~hile/mixxx/hidscripts) branch.
+This branch will modify files only in the res/controllers/ directory and
+the files mostly are new scripts, not conflicting with existing files.
 
 ## Summary and Rationale
 

@@ -287,12 +287,13 @@ are registered with 'MyDevice.registerOutputPacket()' and LED control
 adding function is called 'addLEDControl', the packet itself is
 initialized in exactly same way.
 
-LED controls packet declaration example:
+LED controls packet declaration example (declaring two LEDs controller
+by whole byte not by bits):
 
 ``` 
   packet = new HIDPacket('test_leds',[0x17,0x16],4);
   packet.addLED('hid',"test_led_1",2,'B');
-  packet.addLED('hid',"test_led_1",2,'B');
+  packet.addLED('hid',"test_led_1",3,'B');
   MyDevice.registerOutputPacket(packet);
   
 ```

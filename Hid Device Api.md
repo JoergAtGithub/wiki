@@ -220,19 +220,21 @@ following:
 
 The default parsePacket function has following side effects:
 
-\* Only modified input field values are processed by any callbacks or
-automated calls to engine \* If a field has registered callback
-function, this function is called **without running** scaling functions
-or resolving correct decks. All other processing for fields with a
-custom callback is ignored. \* If field has no callback, it's scaling
-function is called (if defined), virtual deck mapping to actual deck is
-performed and the assigned control group and name are attempted to be
-update directly in mix with scaled value. If the field's group name does
-not match a known mixxx control group or virtual deck, this is not done
-and the field input is ignored. \* Finally, if a function called
-processDelta is defined, it is called with all modified fields in the
-packet. This is done after automated fields and callbacks already have
-been called, so don't handle same field twice\!
+  - Only modified input field values are processed by any callbacks or
+    automated calls to engine
+  - If a field has registered callback function, this function is called
+    **without running** scaling functions or resolving correct decks.
+    All other processing for fields with a custom callback is ignored.
+  - If field has no callback, it's scaling function is called (if
+    defined), virtual deck mapping to actual deck is performed and the
+    assigned control group and name are attempted to be update directly
+    in mix with scaled value. If the field's group name does not match a
+    known mixxx control group or virtual deck, this is not done and the
+    field input is ignored.
+  - Finally, if a function called processDelta is defined, it is called
+    with all modified fields in the packet. This is done after automated
+    fields and callbacks already have been called, so don't handle same
+    field twice\!
 
 ### Binding Actions to Incoming Controls
 

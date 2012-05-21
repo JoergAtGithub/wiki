@@ -36,16 +36,16 @@ only in Javascript initially it needs to be well considered.
 
 Current proposed API contains of three javascript prototype classes:
 
-\* HIDController implements an abstract HID controller javascript class,
-which is expected to take care of all HID packet creation and parsing,
-including updating the field values in these packets. \* HIDPacket is a
-container used to both receive and parse HID packets from devices and to
-specify the format for packets sent to the device. \* HIDBitVector is
-initialized from HIDPacket automatically and should not be directly
-handled by user scripts. It's purpose is to combine bits in same HID
-packet field to group of independently parsed and updated bits. A new
-HIDBitVector is automatically created when a control or output is added
-to same HID packet offset.
+\* **HIDController** implements an abstract HID controller javascript
+class, which is expected to take care of all HID packet creation and
+parsing, including updating the field values in these packets. \*
+**HIDPacket** is a container used to both receive and parse HID packets
+from devices and to specify the format for packets sent to the device.
+\* **HIDBitVector** is initialized from HIDPacket automatically and
+should not be directly handled by user scripts. It's purpose is to
+combine bits in same HID packet field to group of independently parsed
+and updated bits. A new HIDBitVector is automatically created when a
+control or output is added to same HID packet offset.
 
 ### Defining Controls
 

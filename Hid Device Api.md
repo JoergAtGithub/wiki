@@ -34,7 +34,7 @@ only in Javascript initially it needs to be well considered.
 
 ## Components
 
-Current proposed API contains of three javascript prototype classes:
+Current proposed API contains three javascript prototype classes:
 
   - **HIDController** implements an abstract HID controller javascript
     class, which is expected to take care of all HID packet creation and
@@ -47,6 +47,34 @@ Current proposed API contains of three javascript prototype classes:
     combine bits in same HID packet field to group of independently
     parsed and updated bits. A new HIDBitVector is automatically created
     when a control or output is added to same HID packet offset. 
+
+Each controller script using the API must at least:
+
+  - Include hid-common-packet-parser.js in the XML file before the
+    actual script
+  - Implement exactly one HIDController instance (instead of new
+    Controller() in MIDI scripts)
+  - Create and register one HIDPacket *Input Packet* entry named
+    'control' to the HIDController instance
+
+Optionally, each HID controller script often needs to:
+
+  - Define other input packets to receive other than controller status
+    from the device
+  - Define output packets to control LEDs or other items on the device,
+    according to device specific details
+  - Define output packets to change HID device state, for example
+    disable mouse, initialize HID mode or request details from device
+  - Add *Scaling Functions* to the HID controller values, which can be
+    anything from single bit to 32bit integer numbers
+  - Add *Filtering Functions* to the HID data. The HID controllers are
+    often too high resolution and may send meaningless minor changes
+    which we want to filter out
+  - Register a *Callback Function* to the control registered in a HID
+    packet
+
+All these details have been implemented by the HID common packet parser
+classes.
 
 ### Defining Controls
 

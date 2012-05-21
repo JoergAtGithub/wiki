@@ -238,45 +238,24 @@ The default parsePacket function has following side effects:
 
 ### Binding Actions to Incoming Controls
 
-An API function should exist to bind a *control* to either an internal
-function (like binding a midi control to a mixxx *engine* action from a
-midi xml mapping file) or to a script function either by name of
-reference. Passing by function reference would allow inline small code
-snippets to be bound to the changes.
+After packets have been added to HIDController, the registered fields
+can be mapped to controls. It's not recommended to bind controls in the
+addControl call, while possible: we should keep the packet declaration
+separate from functional declarations.
 
-It should be possible to bind multiple functions to a single *control*
+The callback function is called, whenever we receive a modified value
+for the given field from HID device.
 
-It should be possible to define what types of value changes should call
-the bound function such as "when non zero" (useful for mapping actions
-to button presses instead of presses and releases), "when zero" or "all"
-
-The predefined *group* (if any) and *name* of the changed control should
-be passed to the function. This would allow mappings such as:
+Example call to register a callback function (exactly same group and
+name must be defined in packets):
 
 ``` 
-// bind directly to an engine action
-
-addEngineBinding("[Channel1]", "play", PRESS, "play");
-
-// bind to a custom function
-
-addScriptBinding("[Channel1]", "play", PRESS, "myprefix.myfunction");
-
-// bind to an anonymous function
-
-addScriptBinding("[Channel1]", "play", ALL, function(group, name, value) {
-    if (value > 0) {
-      engine.setValue(group, name, !engine.getValue(group, name));
-    }
-    else {
-        // do something different when the button is released
-    }
-});
-
+ MyDevice.registerInputCallback('control','[Master]','headphones_knob',MyDevice.headphones);
 ```
 
-These functions should also be called by the future hid device mapping
-parser.
+Note we need to specify the 'control' packet name, even if it's the
+default packet to receive. We must support multiple different input
+packets here\!
 
 ### Sending Data to the HID Device
 

@@ -78,75 +78,117 @@ classes.
 
 ### Defining Controls
 
-A *control* identifies the bits/bytes that relate to a specific element
-on the controller, whether incoming when physically changed or outgoing
-to be sent back to the controller.
+Signature for the function to add controls:
 
-A *control* can be defined from a script or from within a hid formatted
-xml device definition file.
+    HIDPacket.prototype.addControl = function(group,name,offset,pack,bitmask,isEncoder) {};
+
+A *control* identifies the bits/bytes that relate to a specific element
+on the controller, whether incoming changes from controller or outgoing
+data to be sent to the controller.
 
 If a *control* were to be defined from within a
 [hid\_mapping\_format](hid_mapping_format) xml file it should be
 possible to bind this *control* to a custom script function via
 something like a `scriptfunction="myprefix.myfunction"` attribute or use
 the midi xml format method of *key* optionally representing the function
-name.
+name. This is not yet supported in Mixxx 1.11, all controls must be
+mapped in javascript for now.
 
-A *control* can be defined by:
+There are four types of controls supported by HIDPacket:
 
 #### Type
 
-  - **led:** a field to be sent back to the controller (doesn't have to
-    be only an led)
-  - **fader:** the data is interpreted as though it were a midi
-    value/velocity with no masking at the bitlevel
-  - **button:** a binary on/off
+  - **button:** a binary on/off toggle from device. While some buttons
+    may have multiple states (bitmask not bit), this is not yet
+    supported and the fiedl must be manually processed from a byte.
+  - **fader:** a numeric value, size 1-4 bytes, from the device. Usually
+    these control mixxx internal values like knobs, jogs or faders.
+    Unlike MIDI, HID does not specify range of such controls and the
+    values are often far off from mixxx ranges. A scaling function can
+    be automatically applied to move the value to expected range (for
+    example, fader from unsigned short value to -1..1 range of mixxx).
   - **encoder:** the physical control is an encoder that sends out
-    continous data like a pot but resets to zero once reaching it's
-    maximum value (and conversely when moved in reverse) so the
-    processed value should be the relative difference between this new
-    and the previously received message (a jogwheel may also behave like
-    this)
+    continous data like a fader, but resets to zero once reaching it's
+    maximum value (and conversely when moved in reverse). An encoder is
+    processed and added exactly like a fader, only difference is setting
+    of isEncoder variable to true. This will change the field parsing
+    code to set the field 'delta' attribute to -1 or +1 offsets, and
+    wrapping over minimum and maximum values automatically. The minimum
+    and maximum values are deduced from the field size, for example a
+    'byte' encoder wraps from 255 to 0 and from 0 to 255, giving delta
+    -1 and 1 respectively.
+  - **LED/Output** a bit or byte to be sent back to the controller, most
+    commonly to control status LEDs. Current implementation does not
+    support sending short or integer size values, and sending of bitmask
+    of bits is possible but not yet supported by the API. HIDController
+    takes care of updating only modified parts of the outgoing packet.
+    Right now API is missing a function to set other types of data
+    except LED, but this can be trivially added when we know what is
+    exactly needed.
 
-#### Packet Id
+#### Packet Header
 
-The id of the packet that this control is a member of
+On many devices, each HID packet has a prefix in the packet to recognize
+which packet this is: for example, EKS Otus 'control' packet first two
+bytes are 0x0 and 0x35 (id and length). The packet header is given as an
+array when creating new packet. If there is no header, pass empty array
+to the variable.
 
 #### Offset
 
-The byte offset within the packet
+The byte offset of the field within the packet, starting from 0.
 
-#### Length
+#### Packing
 
-The length in bytes of the data field for multi byte controls
+Instead of telling the packet field length, HIDPacket parses the fields
+based on *pack* attribute. The packing tells the size and numeric range
+for each field, and allows us to convert the input number to and from
+exactly correct value. Valid 'pack' values are b (signed byte), B
+(unsigned byte), h (signed short), H (unsigned short), i (unsigned int)
+and I (signed int). A field containing bits still needs to be given
+valid 'pack' value, to calculate bit vector masks and check boundaries.
 
 #### Bitmask
 
-An optional bitmask that is applied to the field to extract the actual
-value for this control (for when multiple controls are defined within a
-single byte)
+Bitmask defines the bit to flip for bit controls in the packet:
+internally, a HIDBitVector packet field is created when bitmasks are
+seen. If multiple controls with same offset and packing are defined,
+they are mapped transparently as fields of same HIDBitVector field,
+which can be updated or read in one go.
 
-#### Pack
+Bitmask can be used when defining both button bit inputs and LED output
+bits.
 
-Whether field is signed or not and it's length like "byte", "unsigned
-int", etc.
+In current implementation, fader and encoder controls must have bitmask
+attribute set to 0: we don't support controls like 'high four bits of
+this byte'. It is not possible to have both fader/encoder numeric fields
+and bits in same input packet field.
 
 #### Group
 
 Used in the same way as for a midi mapping - the default *group* that
-this control will be bound to
+this control will be bound to.
+
+For automatic deck assignment to dynamic controllers, special names
+'deck', 'deck1' and 'deck2' can be used to assign to even/odd decks, or
+to currently selected deck. All internal controls and connections are
+updated automatically, when deck status is changed and such group names
+are used. You can also register some controls with virtual deck mappings
+and some fields hard coded to specific deck.
+
+For input and output controls not to mapped anywhere automatically, we
+suggest using using group name 'hid'. All data from and to these fields
+must be manually scripted or assigned in custom script functions. One
+example of such variable could be 'deck chooser' control in EKS Otus, or
+'modifier fields.
 
 #### Name
 
-A name for the control that ideally should match up with a mixx *engine*
-name
+A name for the control. If the control is mapped without a script
+function directly to mixxx, this name must be valid control name in
+mixxx for the group where the control is attacked to.
 
-#### Key
-
-Specifying a *key* would automatically bind that *control* to the
-*engine* function like for a midi mapping.
-
-#### Min Value
+\<del\>=== Min Value ===
 
 Lowest value of these bytes when the control is at its minimum setting.
 0 is the default.
@@ -154,18 +196,15 @@ Lowest value of these bytes when the control is at its minimum setting.
 #### Max Value
 
 The highest value of these bits/bytes when the control is at its maximum
-setting. 0xFFFF is the default for two bytes
+setting. 0xFFFF is the default for two bytes \</del\>
 
-Probably only name/group/packetid/type/byteoffset would be mandatory
-(and *group* only to conform to the mixxx midi standards, though will be
-useful for most controls and make the mapping of the controls to mixxx
-actions much simpler) so the it perhaps could be called like:
+**NOTE** Minimum and maximum values are calculated automatically for a
+field from the 'pack' attribute.
 
-    addControlField("[Channel1]", "play", 0x1, 2, "button", { bitmask: 0x4 });
-    addControlField("[Channel1]", "volume", 0x1, 4, "fader", { max: 255 });
+Current control defination format is following:
 
-This function should also be called by the future hid device mapping
-parser.
+    packet.addControl('[Master]','crossfader',34,'H');
+    packet.addControl('[Playlist]','SelectTrackKnob',15,'B',undefined,true);
 
 ### Parsing Incoming Controls
 

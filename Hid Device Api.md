@@ -257,6 +257,20 @@ Note we need to specify the 'control' packet name, even if it's the
 default packet to receive. We must support multiple different input
 packets here\!
 
+## Loading of packets, scalers and callbacks in one call
+
+It is recommended to group all input, output, scaling and callback
+declarations to following four functions and call these in this order in
+init():
+
+``` 
+  MyDevice.registerInputPackets();
+  MyDevice.registerOutputPackets();
+  MyDevice.registerScalers();
+  MyDevice.registerCallbacks();
+  
+```
+
 ### Sending Data to the HID Device
 
 Currently only LED output control is implemented for the output packets

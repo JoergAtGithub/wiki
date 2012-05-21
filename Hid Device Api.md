@@ -329,6 +329,7 @@ Example part of custom function to send this packet:
 
 ## References
 
-  - **EKS Otus HID Mapping** <http://tuohela.net/otus.js>
+  - **Development branch by Hile for HID scripts**
+    <https://code.launchpad.net/~hile/mixxx/hidscripts>
   - **Hercules Console Mk2 HID Mapping**
     <http://mixxx.org/forums/viewtopic.php?f=7&t=3712>

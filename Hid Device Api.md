@@ -280,45 +280,57 @@ parser.
 
 ### Sending Data to the HID Device
 
-Since the API will be keeping a cache of the current values for all
-controls within all packets it should be possible to create a function
-that can be used like the `engine.sendShortMsg()`
+Currently only LED output control is implemented for the output packets
+in the HIDController APIs. Outgoing LED controls are defined with
+similar syntax to addControl: only big difference is outgoing packets
+are registered with 'MyDevice.registerOutputPacket()' and LED control
+adding function is called 'addLEDControl', the packet itself is
+initialized in exactly same way.
 
-The API function could be called in one of two ways:
-
-#### Control Names
-
-If a named control has been defined via a *addControlField()* call (from
-the XML parser or otherwise) for the LED in the same way as an incoming
-control then only this name and new value would need to be specified
-such as:
+LED controls packet declaration example:
 
 ``` 
-sendNamedMsg("[Channel1]", "play", 1);
-
+  packet = new HIDPacket('test_leds',[0x17,0x16],4);
+  packet.addLED('hid',"test_led_1",2,'B');
+  packet.addLED('hid',"test_led_1",2,'B');
+  MyDevice.registerOutputPacket(packet);
+  
 ```
 
-The API would map the *group* and *name* back to the 'hid packet level'
-byte offset+bitmask, apply this to the cache of that packet by applying
-a bitwise AND with the inverse of the *controls* bitmask and then
-bitwise OR the *controls* new value and then send out the complete
-packet.
-
-#### Control Definition
-
-Some of the same parameters used to define a *control* could be passed
-in explicitly such as offset, bitmask value or offset, array of values
-and length (which again would result in the full packet being sent out
-even though the functions are only passed a partial delta):
+LED in this packet can be set explicitly with call like:
 
 ``` 
-sendShortMsg(offset, bitmask, value);
-sendShortMsg(2, 0x3, 0x1);
+  setLED('hid','test_led_1',MyDevice.LEDColors['blue']);
+```
 
-partial_packet = [0x1, 0x0, 0x4, 0x6, 0x7, 0x8];
-byte_offset = 10;
-sendLongMsg(byte_offset, partial_packet, partial_packet.length);
+LEDs matching virtual decks can be automatically assigned to current
+deck. TODO document this.
 
+Packets can also have packet level callbacks, so custom functions can be
+used to send arbitrary packets. In the custom function, you need to fill
+in the correct values to the packet fields before sending to construct
+the packet: see EKS Otus mapping for examples.
+
+Minimal example of output packet with just one field from Otus mapping:
+
+``` 
+  packet = new HIDPacket('set_ledcontrol_mode',[0x1d,0x3],32);
+  packet.addControl('hid','mode',2,'B');
+  EksOtus.registerOutputPacket(packet);
+  
+```
+
+Example part of custom function to send this packet:
+
+``` 
+  var packet = EksOtus.OutputPackets['set_ledcontrol_mode'];
+  var field = packet.lookupField('hid','mode');
+  if (field==undefined) {
+      script.HIDDebug("EksOtus.setLEDControlMode error fetching field mode");
+      return;
+  }
+  field.value = mode;
+  packet.send();
 ```
 
 ## References

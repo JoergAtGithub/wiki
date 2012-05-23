@@ -1002,6 +1002,35 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
 9.  Also copy `taglib-1.6.3\taglib_config.h` into
     `mixxx-win[32|64]lib-msvc`
 
+## protobuf
+
+Google's [protobuf](http://code.google.com/p/protobuf/) provides MSVC
+project files, which makes things nice. Just open and build.
+(Step-by-step is given below.)
+
+### Build
+
+1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+    SDK-\>CMD Shell)
+2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp /x86
+    /release` for 32-bit.)
+3.  Run the Visual Studio GUI from this command line, specifying the
+    `/useenv` switch to have it use the Platform SDK compile tools, libs
+    and includes. (e.g. `C:\Program Files (x86)\Microsoft Visual
+    Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
+4.  Open the `protobuf-2.4.1\vsprojects\libprotobuf-lite.vcproj` file
+    via File-\>Open-\>Project/Solution.
+5.  Answer 'Yes' to convert & open the project
+6.  Choose the Release configuration and the Win32 platform
+7.  Right-click `libprotobuf-lite` and click build.
+8.  When it finishes, run the batch file
+    `protobuf-2.4.1\vsprojects\extract_includes.bat`
+9.  Copy the following files into `mixxx-win32lib-msvc` or
+    `mixxx-win64lib-msvc`:
+    `protobuf-2.4.1\vsprojects\Release\libprotobuf-lite.lib
+    protobuf-2.4.1\vsprojects\include\google (the entire directory)
+    `
+
 # Optimizations
 
 Mixxx can benefit from various code optimizations. If you right-click

@@ -6,6 +6,20 @@ they make these tasks easier. Here is an exhaustive list:
 
 *These are case-sensitive*
 
+## 1.11
+
+You can load supported sound files directly into the virtual decks by
+specifying them at the command line.
+
+| Option                                                                                                                      | Description                                                                                                                                 | Code location              |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| *filename*                                                                                                                  | Loads the specified music file at start-up (of the types Mixxx supports.) Each file you specify will be loaded into the next deck.          |                            |
+| `-``-resourcePath path`                                                                                                     | Top-level directory where Mixxx should look for its resource files such as controller presets, overriding the default installation location | configobject.cpp, line     |
+| `-``-pluginPath path`                                                                                                       | Top-level directory where Mixxx should look for for sound source plugins in addition to default locations                                   | soundsourceproxy.cpp, line |
+| `-``-controllerDebug`                                                                                                       | Causes Mixxx to display/log all of the MIDI/HID/etc. messages it receives and script functions it loads                                     |                            |
+| `-`''-locale LOCALE `\|Use a custom locale for loading translations (e.g 'fr')\|main.cpp, line \| \|`-f'', `-``-fullScreen` | Causes Mixxx to start in full-screen mode                                                                                                   | main.cpp, line             |
+| `-h`, `-``-help`                                                                                                            | Displays all current command line options                                                                                                   | main.cpp, line             |
+
 ## 1.10
 
 You can load supported sound files directly into the virtual decks by

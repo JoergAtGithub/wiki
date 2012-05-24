@@ -237,6 +237,7 @@ Here is an example for the two most common types of wheels:
 // The button that enables/disables scratching
 MyController.wheelTouch = function (channel, control, value, status) {
     if ((status & 0xF0) == 0x90) {    // If button down
+  //if (value == 0x7F) {  // Some wheels send 0x90 on press and release, so you need to check the value
         var alpha = 1.0/8;
         var beta = alpha/32;
         engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, alpha, beta);

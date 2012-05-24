@@ -30,6 +30,15 @@ tested:
   - Olive (bzr-gtk) - Looks promising but is god-awful slow on large
     directories like our src/ (Tested by Pegasus)
 
+#### Cross-Platform
+
+  - [QBzr](http://wiki.bazaar.canonical.com/QBzr) - QBzr provides GUI
+    frontend for many core bzr commands and several universal dialogs
+    and helper commands. Equivalents for core bzr commands has the same
+    names as CLI commands but with prefix "q" (qlog, qcommit etc).
+    Tested on linux, seems convenient sometimes if you are used to
+    command-line workflow.
+
 ## List of available branches
 
 <http://code.launchpad.net/mixxx>

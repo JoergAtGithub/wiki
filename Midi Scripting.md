@@ -82,6 +82,16 @@ You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
 when the controller is activated.
 
+### Script file header
+
+At the top of your script file, you need to have a declaration of the
+controller name. It looks like this:
+
+    function StantonSCS3d() {}
+
+...and you would replace the name with whatever you entered for
+'functionprefix' in the XML file above.
+
 ### Init and Shutdown functions
 
 **All device script files are expected to contain initialize and

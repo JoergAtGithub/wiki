@@ -20,7 +20,7 @@ plans.
     about using Hercules GPL Linux MIDI driver with Mixxx, and where to
     get updated Hercules device control mappings for Windows and OSX.
   - [Hardware Compatibility](Hardware%20Compatibility) - Contains the
-    most up-to-date information about which MIDI controllers work with
+    most up-to-date information about which DJ controllers work with
     Mixxx and the details of each.
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)

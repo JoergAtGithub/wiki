@@ -394,9 +394,17 @@ controller to react. Here are the related functions:
     successful.
   - **engine.trigger**(*control group*, *control name*) - An easy way to
     cause the specified Mixxx control signal to fire so the connected
-    script function is called with the updated value, such as when
-    updating LEDs. (It just sets the Mixxx control to its previous
-    value.)
+    script function is called with the updated value even if it hasn't
+    changed, such as when forcing LEDs to update on a mode change.
+
+The function you connect to will only take one parameter, the new value
+of the MixxxControl. So its signature should look like this:
+
+``` javascript
+MyController.volumeLEDs = function (value) {
+    //...what to do with the value goes here...
+}
+```
 
 #### Examples
 

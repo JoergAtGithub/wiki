@@ -528,16 +528,17 @@ midi-mappings-scripts.js file:
     those controls, the calling function need only have the single line:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
     value, status));`
-  - **script.absoluteSlider**(value, low, high) - Takes a value from an
-    absolute control (0..127) and returns the proportionate value
-    between *low* and *high* for a linear Mixxx control like deck volume
-    or LFO depth. You can then use this returned value to set the
-    desired Mixxx control.
-  - **script.absoluteNonLin**(value, low, mid, high) - Takes a value
-    from an absolute control (0..127) and returns the proportionate
-    value between *low*, *mid* and *high* for a non-linear Mixxx control
-    such as EQ or master volume. You can then use this returned value to
-    set the desired Mixxx control.
+  - **script.absoluteLin**(value, low, high, min, max) - Takes a value
+    from an absolute control (0..127 by default, customize with min and
+    max) and returns the proportionate value between *low* and *high*
+    for a linear Mixxx control like deck volume or LFO depth. You can
+    then use this returned value to set the desired Mixxx control.
+  - **script.absoluteNonLin**(value, low, mid, high, min, max) - Takes a
+    value from an absolute control (0..127 by default, customize with
+    min and max) and returns the proportionate value between *low*,
+    *mid* and *high* for a non-linear Mixxx control such as EQ or master
+    volume. You can then use this returned value to set the desired
+    Mixxx control.
 
 <!-- end list -->
 
@@ -547,30 +548,3 @@ midi-mappings-scripts.js file:
     the pitch range is large enough to reach it. (This depends on the
     track having the correct original BPM value.) If more than two
     seconds pass between taps, the history is erased.
-
-*The below functions are for scratching with absolute value controls.
-These functions do not work as well as the [new ones for Mixxx
-v1.8](#scratching) and you are advised to use those instead.*
-
-  - **scratch.enable**(deck) - Initializes the variables and turns on
-    scratching for the functions detailed below. Just give it the number
-    of the deck you want to scratch.
-  - **scratch.disable**(deck) - Disables scratching for the specified
-    deck.
-  - **scratch.slider**(deck, sliderValue, revtime, alpha, beta) - Allows
-    you to scratch with a slider or a knob (values 0..127.) 0-\>127 is
-    the forward track direction. Call this each time there's a new
-    control value.
-  - Inputs:
-
-<!-- end list -->
-
-``` 
-    * The number of the deck you want to scratch (same as above)
-    * The new value of the slider/knob
-    * Revolution time of the imaginary record (typically 1.8s for a 12-inch record at 33 & 1/3 RPM, adjust for comfort)
-    * Coefficients for the filter. Alpha isn't currently used at all, but it needs to be set to something, so just use 0.1.
-    * Beta adjusts how quickly Mixxx responds to your motions. The value should be between 0 and 1, though I find that 0.9-1 works well.
-* Output: A new value for Mixxx's "scratch" control. Simply call engine.setValue("[Channel"+currentDeck+"]", "scratch", <returned value here>); in your function.
-* **scratch.wheel**(deck, wheelValue, revtime, alpha, beta) - Same thing but for a rotary control that wraps from 127 to 0 (or 0 to 127 depending on the direction.)
-```

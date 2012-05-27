@@ -516,11 +516,12 @@ common-controller-scripts.js file:
     seconds in `MM:SS` format.
   - **msecondstominutes**(*milliseconds*) - Returns the given quantity
     of milliseconds in `MM:SS.ss` format.
-  - **script.debug**(channel, control, value, status, group) - Prints
-    the values as passed to it. Call this from anywhere in your function
-    to see what the current values of these variables are. You can also
-    of course put it in the \<key/\> tag of your XML to make sure the
-    values being passed to the script are what you expect.
+  - **script.midiDebug**(channel, control, value, status,
+    group)<sup>2</sup> - Prints the values as passed to it. Call this
+    from anywhere in your function to see what the current values of
+    these variables are. You can also of course put it in the \<key/\>
+    tag of your XML to make sure the values being passed to the script
+    are what you expect.
   - **script.pitch**(LSB, MSB, status) - Intended to be called from
     another script function, pass this the values from a MIDI Pitch
     control and it will return a corresponding value suitable for
@@ -528,14 +529,15 @@ common-controller-scripts.js file:
     those controls, the calling function need only have the single line:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
     value, status));`
-  - **script.crossfaderCurve**(value, min, max) - Sets the cross-fader's
-    curve based on a value from an absolute control (0..127 by default,
-    customize with min and max.)
-  - **script.absoluteLin**(value, low, high, min, max) - Takes a value
-    from an absolute control (0..127 by default, customize with min and
-    max) and returns the proportionate value between *low* and *high*
-    for a linear Mixxx control like deck volume or LFO depth. You can
-    then use this returned value to set the desired Mixxx control.
+  - **script.crossfaderCurve**(value, min, max)<sup>1</sup> - Sets the
+    cross-fader's curve based on a value from an absolute control
+    (0..127 by default, customize with min and max.)
+  - **script.absoluteLin**(value, low, high, min, max)<sup>2</sup> -
+    Takes a value from an absolute control (0..127 by default, customize
+    with min and max) and returns the proportionate value between *low*
+    and *high* for a linear Mixxx control like deck volume or LFO depth.
+    You can then use this returned value to set the desired Mixxx
+    control.
   - **script.absoluteNonLin**(value, low, mid, high, min, max) - Takes a
     value from an absolute control (0..127 by default, customize with
     min and max) and returns the proportionate value between *low*,
@@ -551,3 +553,5 @@ common-controller-scripts.js file:
     the pitch range is large enough to reach it. (This depends on the
     track having the correct original BPM value.) If more than two
     seconds pass between taps, the history is erased.
+
+<sup>1</sup> Introduced in 1.11.0 <sup>2</sup> Renamed in 1.11.0

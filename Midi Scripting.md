@@ -508,7 +508,7 @@ characters in any string. Use like so: `"Test string".toInt()`
 ### Available common functions
 
 Here is a list of functions available to you from the always-loaded
-midi-mappings-scripts.js file:
+common-controller-scripts.js file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
@@ -528,6 +528,9 @@ midi-mappings-scripts.js file:
     those controls, the calling function need only have the single line:
     `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
     value, status));`
+  - **script.crossfaderCurve**(value, min, max) - Sets the cross-fader's
+    curve based on a value from an absolute control (0..127 by default,
+    customize with min and max.)
   - **script.absoluteLin**(value, low, high, min, max) - Takes a value
     from an absolute control (0..127 by default, customize with min and
     max) and returns the proportionate value between *low* and *high*

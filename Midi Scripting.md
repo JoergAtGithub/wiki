@@ -500,6 +500,72 @@ MyController.lightUp = function (led,color) {
 ...
 ```
 
+### Spinback and Brake effect
+
+*Introduced in v1.11*
+
+A forwards or backwards brake effect can be enabled/disabled using one
+of the two following functions. engine.spinback() just calls
+engine.brake() with default settings to make it behave like a spinback.
+
+``` javascript
+brake(int deck, bool activate, [float factor], [float rate])
+spinback(int deck, bool activate, [float factor], [float rate])
+```
+
+  - **deck** - the deck number to use, e.g: 1
+  - **activate** - true to activate or false to disable. 
+  - **factor** - how quickly the deck should come to a stop. start with
+    a value of 1 and increase to increase the deceleration
+  - **rate** - the initial speed of the deck when enabled. "1" means
+    normal speed forwards, "-10" means 10x speed in reverse
+
+Example:
+
+``` javascript
+    MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
+        var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
+        var activate = value > 0:
+        
+        if (activate) {
+            engine.brake(deck, true); // enable brake effect
+        }
+        else {
+            engine.brake(deck, false); // disable brake effect
+        }
+        
+    }
+```
+
+``` javascript
+    MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
+        var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
+        engine.brake(deck, value > 0, 1.2, -10); // start at a rate of -10 and decrease at a factor of 1.2
+    }
+```
+
+``` javascript
+    MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
+        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
+        engine.spinback(deck, value > 0, 2.5); // use default starting rate of -10 but decrease speed more quickly
+    }
+```
+
+The effects can also be mapped directly via XML using either
+script.spinbackDefault or script.brakeDefault:
+
+``` XML
+    <control>
+        <group>[Channel1]</group>
+        <key>script.spinbackDefault</key>
+        <status>0x90</status>
+        <midino>0x04</midino>
+        <options>
+            <Script-Binding/>
+        </options>
+    </control>
+```
+
 ### Object prototype enhancements
 
 **String**.prototype**.toInt** - returns an ASCII byte array for all the

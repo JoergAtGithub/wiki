@@ -515,10 +515,10 @@ spinback(int deck, bool activate, [float factor], [float rate])
 
   - **deck** - the deck number to use, e.g: 1
   - **activate** - true to activate or false to disable. 
-  - **factor** - how quickly the deck should come to a stop. start with
-    a value of 1 and increase to increase the deceleration
-  - **rate** - the initial speed of the deck when enabled. "1" means
-    normal speed forwards, "-10" means 10x speed in reverse
+  - **factor** (optional) - how quickly the deck should come to a stop.
+    start with a value of 1 and increase to increase the deceleration
+  - **rate** (optional) - the initial speed of the deck when enabled.
+    "1" means normal speed forwards, "-10" means 10x speed in reverse
 
 Example:
 

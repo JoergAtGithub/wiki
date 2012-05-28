@@ -551,12 +551,12 @@ Example:
 ```
 
 The effects can also be mapped directly via XML using either
-**script.spinbackDefault** or **script.brakeDefault**:
+**script.spinback** or **script.brake**:
 
 ``` XML
     <control>
         <group>[Channel1]</group>
-        <key>script.spinbackDefault</key>
+        <key>script.spinback</key>
         <status>0x90</status>
         <midino>0x04</midino>
         <options>

@@ -532,8 +532,7 @@ Example:
         }
         else {
             engine.brake(deck, false); // disable brake effect
-        }
-        
+        }   
     }
 ```
 

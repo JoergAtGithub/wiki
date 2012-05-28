@@ -551,7 +551,7 @@ Example:
 ```
 
 The effects can also be mapped directly via XML using either
-script.spinbackDefault or script.brakeDefault:
+**script.spinbackDefault** or **script.brakeDefault**:
 
 ``` XML
     <control>

@@ -423,7 +423,7 @@ branch.
 
 ## Comments
 
-\#\#\#\# Lambolico's ideas:
+### Lambolico's ideas
 
 It would be really cool if effects chains could be configured via a
 script file, similar to midi mappings: you can configure your controller

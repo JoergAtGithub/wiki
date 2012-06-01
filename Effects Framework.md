@@ -423,7 +423,7 @@ branch.
 
 ## Comments
 
-### Lambolico's ideas
+### Lambolico's ideas:
 
 It would be really cool if effects chains could be configured via a
 script file, similar to midi mappings: you can configure your controller
@@ -453,5 +453,8 @@ I thought that a way to combine this flexibility with the skins is to
 have a set of "dummy" knobs with a couple of buttons under each of them
 (similar to the mockups above) that could pass their value/state to an
 effects script function. This would be the same with midi controls.
+
+To sum up: to have the horsepower of scripting with effects in addition
+to this other great ideas you had.
 
 \#\#\#\#

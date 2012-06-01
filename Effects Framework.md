@@ -420,3 +420,38 @@ branch.
 ## Team
 
   - RJ Ryan
+
+## Comments
+
+\#\#\#\# Lambolico's ideas:
+
+It would be really cool if effects chains could be configured via a
+script file, similar to midi mappings: you can configure your controller
+using the options menu or with a script/xml files. This way we could
+pre-configure sequences of effects and many more crazy things to be
+controlled with few buttons or knobs, much like the wonderknob idea but
+not limited to it.
+
+For example, we could get things like a delay style build-up effect
+controlled with a single button: when the button is pressed once, the
+build-up effect starts; when the button is pressed again, the input to
+the effect closes so the effect freezes; and finally when the effect
+button is pressed a third time, the input opens again with a smooth
+reverb effect that fades away gently.
+
+Moreover, if the effects script could access to the song's clock, it
+could be automated in ordre to go through this steps according to the
+song's bars. So pressing the effect's button after the drop, 4 bars
+before the beat starts, would execute this sequence of effects just to
+perfectly enhance the song when the beat kicks again.
+
+Another simpler example: maybe we want to control a complex effects
+combination with a wonderknob but want to have a freeze button or a
+specific parameter to be control independently.
+
+I thought that a way to combine this flexibility with the skins is to
+have a set of "dummy" knobs with a couple of buttons under each of them
+(similar to the mockups above) that could pass their value/state to an
+effects script function. This would be the same with midi controls.
+
+\#\#\#\#

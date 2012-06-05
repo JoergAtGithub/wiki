@@ -1,49 +1,30 @@
 \====Novation Dicer: Cue-point, looping and FX control for Digital
 DJs==== [[/media/hardware/novation_dicer/novation_dicer_product_shot.jpg|]]
-Image (c) [Novation](http://http://www.novationmusic.com/)
+Images (c) [Novation](http://http://www.novationmusic.com/)
 
 Novation Dicer is a palm-sized, USB bus-powered, fully class compliant
 MIDI device - no need to install any drivers. Dicers comes as pair.
 
-Product Page:
-[www.novationmusic.com](http://www.novationmusic.com/global/products/digital_dj/dicer/)
+  - Product Page:
+    [www.novationmusic.com](http://www.novationmusic.com/global/products/digital_dj/dicer/)
+  - Programmers Manual:
+    [www.novationmusic.com](http://www.novationmusic.com/global/support/downloads/dicer/)
+  - Novation Dicer for Mixxx mapping thread in the Mixxx forums:
+    <http://mixxx.org/forums/viewtopic.php?f=7&t=3583>.
 
-Programmers Manual:
-[www.novationmusic.com](http://www.novationmusic.com/global/support/downloads/dicer/)
+#### Novation Dicer mapping for Mixxx 1.10+
 
-Novation Dicer for Mixxx mapping thread in the Mixxx forums:
-<http://mixxx.org/forums/viewtopic.php?f=7&t=3583>. There are currently
-2 mappings for Mixxx available.
+**Author:** Shaun (DJ Pandemonium)
 
-#### 1\. Novation Dicer basic mapping for Mixxx 1.10+
-
-The basic mapping works essentially as documented by the manual for the
-Dicer. This means that about half the buttons are unmapped and are
-supposed to be "user definable".
+  - The mapping is included in **Mixxx 1.11** and can be selected from
+    the controller preset menu in Mixxx\` Preferences \> Controllers.
+  - The mapping has all buttons mapped and mimics the overall layout of
+    the [DJ Tech Tools Dicer mapping for
+    Traktor](http://www.djtechtools.com/2010/11/11/novation-dicer-mapping-for-traktor-scratch/).
 
 [[/media/hardware/novation_dicer/dicer_state1.png|]][[/media/hardware/novation_dicer/dicer_state2.png|]][[/media/hardware/novation_dicer/dicer_state3.png|]]
-Images (c) [Novation](http://http://www.novationmusic.com/)
-
-|                                                  |                                       |                                         |                                          |     |                                                  |                                       |                                         |                                          |
-| ------------------------------------------------ | ------------------------------------- | --------------------------------------- | ---------------------------------------- | --- | ------------------------------------------------ | ------------------------------------- | --------------------------------------- | ---------------------------------------- |
-| :::                                              | Standard layer                        |                                         |                                          | ::: |                                                  | Shift layer                           |                                         |                                          |
-| :::                                              | [[/media/hardware/novation_dicer/red.png|]] | [[/media/hardware/novation_dicer/green.png|]] | [[/media/hardware/novation_dicer/orange.png|]] | ::: | :::                                              | [[/media/hardware/novation_dicer/red.png|]] | [[/media/hardware/novation_dicer/green.png|]] | [[/media/hardware/novation_dicer/orange.png|]] |
-| [[/media/hardware/novation_dicer/dicer_button_2.png|]] | Set/Play Hotcue 1                     | Loop Roll 1/16 beat                     | Auto Loop 1 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_2.png|]] | Delete Hotcue 1                       | user definable                          | user definable                           |
-| [[/media/hardware/novation_dicer/dicer_button_1.png|]] | Set/Play Hotcue 2                     | Loop Roll 1/8 beat                      | Auto Loop 2 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_1.png|]] | Delete Hotcue 2                       | user definable                          | user definable                           |
-| [[/media/hardware/novation_dicer/dicer_button_3.png|]] | Set/Play Hotcue 3                     | Loop Roll 1/4 beat                      | Auto Loop 4 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_3.png|]] | Delete Hotcue 3                       | user definable                          | user definable                           |
-| [[/media/hardware/novation_dicer/dicer_button_4.png|]] | Set/Play Hotcue 4                     | Loop Roll 1/2 beat                      | Auto Loop 8 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_4.png|]] | Delete Hotcue 4                       | user definable                          | user definable                           |
-| [[/media/hardware/novation_dicer/dicer_button_5.png|]] | Set/Play Hotcue 5                     | Loop Roll 1 beat                        | Auto Loop 16 Beat                        | ::: | [[/media/hardware/novation_dicer/dicer_button_5.png|]] | Delete Hotcue 5                       | user definable                          | user definable                           |
 
 ##### Press Dice buttons 1-5 whilst holding down Mode button (Red/Green/Orange) to access the shifted layer functions.
-
-#### 2\. Novation Dicer full mapping for Mixxx 1.10+
-
-The full mapping has all buttons mapped and mimics the overall layout of
-the [DJ Tech Tools Dicer mapping for
-Traktor](http://www.djtechtools.com/2010/11/11/novation-dicer-mapping-for-traktor-scratch/).
-
-[[/media/hardware/novation_dicer/dicer_state1.png|]][[/media/hardware/novation_dicer/dicer_state2.png|]][[/media/hardware/novation_dicer/dicer_state3.png|]]
-Images (c) [Novation](http://http://www.novationmusic.com/)
 
 |                                                  |                                       |                                         |                                          |     |                                                  |                                       |                                         |                                          |
 | ------------------------------------------------ | ------------------------------------- | --------------------------------------- | ---------------------------------------- | --- | ------------------------------------------------ | ------------------------------------- | --------------------------------------- | ---------------------------------------- |
@@ -54,5 +35,3 @@ Images (c) [Novation](http://http://www.novationmusic.com/)
 | [[/media/hardware/novation_dicer/dicer_button_3.png|]] | Set/Play Hotcue 3                     | Loop Roll 1/4 beat                      | Auto Loop 4 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_3.png|]] | Delete Hotcue 3                       | Toggle Flanger                          | Load Track                               |
 | [[/media/hardware/novation_dicer/dicer_button_4.png|]] | Set/Play Hotcue 4                     | Loop Roll 1/2 beat                      | Auto Loop 8 Beat                         | ::: | [[/media/hardware/novation_dicer/dicer_button_4.png|]] | Delete Hotcue 4                       | Transform                               | Previous Track                           |
 | [[/media/hardware/novation_dicer/dicer_button_5.png|]] | Set/Play Hotcue 5                     | Loop Roll 1 beat                        | Auto Loop 16 Beat                        | ::: | [[/media/hardware/novation_dicer/dicer_button_5.png|]] | Delete Hotcue 5                       | Rewind then Resume                      | Previous Playlist                        |
-
-##### Press Dice buttons 1-5 whilst holding down Mode button (Red/Green/Orange) to access the shifted layer functions.

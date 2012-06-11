@@ -138,7 +138,7 @@ The following projects were accepted for Google Summer of Code 2012:
 
   - Vinyl-Control Pass-Through Mode by Matthew Mikolay
   - Mixxx Library Improvements by Max Linke
-  - AutoDJ Enhancements by Scott Stewart
+  - [AutoDJ Enhancements](gsoc2012_autodj_features) by Scott Stewart
   - Harmonic Mixing Features by Varun Jewalikar
 
 ### GSoC 2011

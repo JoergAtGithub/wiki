@@ -134,6 +134,13 @@ Mixxx is an accepted mentoring organization for Google Summer of Code,
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
+The following projects were accepted for Google Summer of Code 2012:
+
+  - Vinyl-Control Pass-Through Mode by Matthew Mikolay
+  - Mixxx Library Improvements by Max Linke
+  - AutoDJ Enhancements by Scott Stewart
+  - Harmonic Mixing Features by Varun Jewalikar
+
 ### GSoC 2011
 
 Mixxx is an accepted mentoring organization for Google Summer of Code,

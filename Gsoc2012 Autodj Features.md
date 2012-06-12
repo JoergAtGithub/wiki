@@ -30,10 +30,12 @@ Cue in/out points that are used by AutoDJ are a feature that was
 mentioned by people in the Mixxx community, and had already been
 started, so it has been added to this project. The cue in would be used
 to mark the point where AutoDJ will start playing a track, while the cue
-out will mark the point where the next transition will start. There has
-been a lot of discussion to decide what the best implementation would be
-for this feature, and this page will be updated as the discussion
-continues.
+out will mark the point where the next transition will start. Decks
+currently load tracks at the cue point, so this will be the cue in point
+for AutoDJ. This will help DJs who already have cue points defined in
+their library. The cue out point will be added to the cue database, and
+a button will be added to the GUI, so that users can set the AutoDJ cue
+out point.
 
 ## AutoDJ Class
 

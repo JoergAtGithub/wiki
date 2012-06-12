@@ -22,7 +22,11 @@ Beatmatching will be used to transition between songs. This will be
 enabled/disabled by a checkbox that will be a part of the AutoDJ
 controls. The "sync" abilities of Mixxx will be used, along with various
 transition techniques, to handle transitioning between songs that have
-different BPMs.
+different BPMs. The transitions will be handled by a TrackTransition
+class that contains methods for the various types of transitions.
+Transitions will be decided on the fly depending on the BPMs of the
+songs that are being played and the transition time that the user has
+chosen.
 
 ## Cue Points
 

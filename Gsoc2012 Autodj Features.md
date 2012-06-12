@@ -79,3 +79,12 @@ after the silence (if it is at the beginning of the track) or transition
 before the silence (when the silence is at the end of the track). This
 would be beneficial when the user does not have any cue points set, so
 the entire track is played.
+
+# TO DO
+
+  - Complete project specifications
+  - Create AutoDJ class
+  - Implement AutoDJ cue points
+  - Transitions
+  - Using cue points
+  - Using beatmatching

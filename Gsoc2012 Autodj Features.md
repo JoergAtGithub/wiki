@@ -14,7 +14,7 @@ certain time interval, much like iTunes or other media players can do. I
 plan to use the power that Mixxx already has, such as BPM sync and beat
 detection, to improve the way that AutoDJ handles transitions.
 
-# Proposed Changes
+# Specifications
 
 ## Beatmatching
 

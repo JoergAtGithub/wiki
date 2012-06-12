@@ -46,7 +46,10 @@ out point.
 To allow for all of these changes, the AutoDJ logic is going to be moved
 for dlgautodj.cpp to its own AutoDJ class. This allows for more
 organized expansion and fixes issues that are caused by the AutoDJ being
-linked to the GUI.
+linked to the GUI. The AutoDJ class will also be merged with the
+EngineXFader class, creating a Fader class that can be controlled
+through Control Objects. This also allows the AutoDJ access to the fader
+without repeatedly polling the EngineXFader class.
 
 ## Fade Now
 

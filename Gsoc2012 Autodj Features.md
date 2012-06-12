@@ -51,7 +51,13 @@ EngineXFader class, creating a Fader class that can be controlled
 through Control Objects. This also allows the AutoDJ access to the fader
 without repeatedly polling the EngineXFader class.
 
-## Fade Now
+## Crossfader
+
+Users will be able to take control of the crossfader while AutoDJ is
+transitioning if they choose to. If AutoDJ detects that the user is
+moving the crossfader, it will give up control to the user. AutoDJ will
+take back control for the next crossfade, or the user can use the Fade
+Now option to transition at a later point in the song.
 
 The Fade Now option of AutoDJ is going to be expanded to be usable all
 of the time, not just when AutoDJ is enabled. This enables smooth

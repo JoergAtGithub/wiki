@@ -89,7 +89,7 @@ the entire track is played.
 
 # TO DO
 
-  - Complete project specifications
+  - Complete project specifications: INPROGRESS
   - Create AutoDJ class
   - Implement AutoDJ cue points
   - Transitions

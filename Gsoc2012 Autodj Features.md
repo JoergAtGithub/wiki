@@ -68,12 +68,14 @@ when needed.
 
 The GUI changes are related to enabling the extra features that are
 going to be implemented. A checkbox will be added to the AutoDJ controls
-to decide if beatmatching is going to be enabled. Fade Now buttons will
-be placed on either side of the crossfader. The user can press either
-button to automatically fade the crossfader in the chosen direction.
-These buttons will also act as AutoDJ indicators and will light up when
-AutoDJ is in use. A button will be added to set the AutoDJ cue out
-point.
+to decide if beatmatching is going to be enabled.
+
+Fade Now buttons will be placed on either side of the crossfader. The
+user can press either button to automatically fade the crossfader in the
+chosen direction. These buttons will also act as AutoDJ indicators and
+will light up when AutoDJ is in use.
+
+A button will be added to set the AutoDJ cue out point.
 
 # Additional Features
 

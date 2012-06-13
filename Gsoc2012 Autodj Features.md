@@ -121,6 +121,13 @@ default cue or the hot cues.
   - Con: Most DJs already have cues set, so adding an AutoDJ cue would
     largely be unnecessary
 
+Use Hotcue 1 as the AutoDJ cue in
+
+  - Pro: Many DJs use Hotcue 1 as the first entrance into the song
+  - Con: Using hotcue 1 may seem unintuitive
+  - Con: If DJs want to use a different place to enter into the song,
+    they will have to change their hot cue that is already set
+
 ### Fade Now Control
 
 The Fade Now controls could be placed as part of each deck's controls.

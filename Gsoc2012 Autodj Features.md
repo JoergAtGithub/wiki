@@ -105,3 +105,31 @@ the entire track is played.
   - Transitions
   - Using cue points
   - Using beatmatching
+
+# Discussion
+
+Ideas that have been discussed but were decided against
+
+### AutoDJ Cue In
+
+An AutoDJ cue in button was discussed. This button would provide a cue
+point for AutoDJ to start playing a song at that was different from the
+default cue or the hot cues.
+
+  - Pro: Would eliminate all ambiguity as to where AutoDJ would start a
+    track
+  - Con: Most DJs already have cues set, so adding an AutoDJ cue would
+    largely be unnecessary
+
+### Fade Now Control
+
+The Fade Now controls could be placed as part of each deck's controls.
+This control would be similar to the loop button, but instead of the
+loop controls, would contain cue in, cue out, and Fade Now.
+
+  - Pro: Would fit all controls in a small space
+  - Con: Fade Now does not make sense as a deck control because it
+    controls the Master crossfader. Also, this would not make sense in a
+    layout with more than two decks.
+  - Con: Cue in button is no longer needed, so the layout is not
+    necessary

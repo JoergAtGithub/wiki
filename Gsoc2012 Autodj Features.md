@@ -79,6 +79,13 @@ EngineXFader class, creating a Fader class that can be controlled
 through Control Objects. This also allows the AutoDJ access to the fader
 without repeatedly polling the EngineXFader class.
 
+The AutoDJ class will interact with Mixxx the same way that dlgautodj
+does now. It will keep track of which songs are playing, the deck
+positions, and which songs are going to be played next. The main
+difference will be that the TrackTransition class will be used to handle
+the actual transitions. When AutoDJ transitions, it will call a method,
+which will be a specific transition, on the TrackTransition object
+
 ## Crossfader
 
 Users will be able to take control of the crossfader while AutoDJ is

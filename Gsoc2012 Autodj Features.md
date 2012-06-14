@@ -104,7 +104,13 @@ Now option to transition at a later point in the song.
 The Fade Now option of AutoDJ is going to be expanded to be usable all
 of the time, not just when AutoDJ is enabled. This enables smooth
 crossfades for users do not have an external mixer, or quick transitions
-when needed.
+when needed. When users push the Fade Now button, AutoDJ will get
+control of the crossfader ControlObject, just like when AutoDJ is on.
+This fade can also be taken over by the user at any time.
+
+Since AutoDJ will be using the crossfader ControlObject, the GUI will
+always be updated as AutoDJ transitions. This also means that a hardware
+controller can be used to take over the transition process as well.
 
 ## GUI Changes
 

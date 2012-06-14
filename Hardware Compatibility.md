@@ -31,7 +31,7 @@ There are two different levels of device support in Mixxx:
 | [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[5\] (1.7.0+)               | Yes (1.6.1)\[6\] (1.7.0+)  | Yes (1.7.0+)                                                                                                                                  |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+)                                                                                                                                  |
 | [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1)\[7\] (1.7.0+)\[8\] (1.9.0+) | Yes (1.7.0+)\[9\] (1.9.0+) | Yes (1.6.0+)\[10\]                                                                                                                            |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | Yes (1.9.1)                             | Yes (1.9.1)                | Yes (1.11.0) \[11\]                                                                                                                           |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | Yes (1.9.1)                             | Yes (1.9.1)                | Yes (1.11.0)\[11\]                                                                                                                            |
 | [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1)                            | Yes (1.10.1)               | Not tested                                                                                                                                    |
 
 ### Community Supported Mappings
@@ -250,7 +250,7 @@ of Mixxx users do.
 
 9.  DaRouter Required
 
-10. with FFADO 2.1
+10. with ALSA kernel patch
 
 11. with ALSA kernel patch
 

@@ -128,6 +128,10 @@ explicitly tell Mixxx where to look for resources with the
 
 ## The BPM detection is wrong
 
+Mixxx 1.11.0 has a brand new BPM detection engine and has proven to be
+quite accurate in testing. If you're on a version older than that, read
+on.
+
 We've updated the library Mixxx uses for BPM detection in 1.7 which
 helps. There's also a bug with BPM schemes that's difficult to fix in
 the short term, so here is a workaround in the meantime:

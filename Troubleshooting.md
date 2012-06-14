@@ -112,6 +112,15 @@ device selected for at least one output and that the selected sample
 rate is supported by the device (Mixxx will complain when you click
 Apply if it isn't.)
 
+## Errors on starting Mixxx
+
+**`Could not open xml file: "/usr/local/share/mixxx/schema.xml"`**
+happens to people that have built Mixxx from source but didn't do the
+install step. You can either do that (with `sudo scons install`) or
+explicitly tell Mixxx where to look for resources with the
+`-``-resourcePath` command line parameter, like so: `./mixxx
+-``-resourcePath res/`
+
 ## What do I enter for the user name in Live Broadcasting?
 
   - For an Icecast2 server, the user name is **source** by default.

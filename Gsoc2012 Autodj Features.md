@@ -16,17 +16,41 @@ detection, to improve the way that AutoDJ handles transitions.
 
 # Specifications
 
-## Beatmatching
+## Transitions
 
-Beatmatching will be used to transition between songs. This will be
-enabled/disabled by a checkbox that will be a part of the AutoDJ
-controls. The "sync" abilities of Mixxx will be used, along with various
-transition techniques, to handle transitioning between songs that have
-different BPMs. The transitions will be handled by a TrackTransition
-class that contains methods for the various types of transitions.
-Transitions will be decided on the fly depending on the BPMs of the
-songs that are being played and the transition time that the user has
-chosen.
+Multiple transition styles will be added to AutoDJ. These different
+styles will be selectable through a combobox that is part of the AutoDJ
+controls. Users can select which specific transition they would like to
+use, or they will have the option to let AutoDJ decide which transition
+is used based on the two songs that are playing. If AutoDJ is deciding
+which transition to use, it will make this decision based on the BPMs of
+the two songs and the transition time that the user has set. For
+instance, AutoDJ will use a smooth crossfade for two songs with similar
+BPMs and a long transition time. For a short transition time and
+different BPMs, AutoDJ might use a spinback transition. A
+TrackTransition class will be used that contains a method for each type
+of transition. AutoDJ will create an instance of the TrackTransition,
+and will pass it ControlObjects for all of the buttons it needs, such as
+the play button and the crossfader. AutoDJ can then call a specific
+method of the TrackTransition object to use a specific transition. With
+this class, more transitions can be added later, and they are separate
+from the AutoDJ logic that decides which transition to use.
+
+Some of the transition styles include:
+
+  - Crossfade - This is what AutoDJ does now
+  - Beatmatching crossfade - A long smooth crossfade that matches the
+    two songs' BPMs
+  - Cut - Cut Song A at the cue out and immediately start Song B 
+  - Spinback - A short transition utilizing a spinback effect
+  - Brake - Another short transition using a brake effect
+  - Echo FadeOut - Echo one beat of Song A while decreasing the volume,
+    then start Song B
+
+More transitions can be added simply by creating a method for them in
+the TrackTransition class. There are many types of transitions, such as
+those using the EQ controls, that will not be added now, but could be
+added at a later time.
 
 ## Cue Points
 

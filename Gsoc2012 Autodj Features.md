@@ -84,7 +84,8 @@ does now. It will keep track of which songs are playing, the deck
 positions, and which songs are going to be played next. The main
 difference will be that the TrackTransition class will be used to handle
 the actual transitions. When AutoDJ transitions, it will call a method,
-which will be a specific transition, on the TrackTransition object
+which will be a specific transition, on the TrackTransition object. The
+TrackTransition will then handle the actual transition.
 
 ## Crossfader
 

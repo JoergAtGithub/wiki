@@ -1,10 +1,9 @@
 # Presentation
 
-This is the .midi.xml file for the
-[//www.numark.com/product/dj2go](/Numark%20DJ2GO%20http///www.numark.com/product/dj2go)
-affordable DJ midi controller. The file is a modification of the Numark
-NS7 provided with Mixxx 1.10.0 Mac (10.6.x) and modified using the Midi
-wizard.
+This is the .midi.xml file for the Numark DJ2GO affordable DJ midi
+controller (<http://www.numark.com/product/dj2go>). The file is a
+modification of the Numark NS7 provided with Mixxx 1.10.0 Mac (10.6.x)
+and modified using the Midi wizard.
 
 # Customisation
 

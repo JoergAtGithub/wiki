@@ -18,13 +18,14 @@ Here is a high-level list of things to do to make this happen:
 <!-- end list -->
 
 ``` 
-    * ''TODO''
-    * <code>FIXME</code>
-    * ''XXX''
-    * ''hack''
-    * ''wtf''
-    * ''why''
-    * ''?!''
+    <code>
+    * TODO
+    * FIXME
+    * XXX
+    * hack
+    * wtf
+    * why
+    * ?!</code>
 * Replace deprecated code
   - Save the compiler output from a clean build
   - Search for "''deprecated''"

@@ -122,7 +122,9 @@ going to be implemented.
   - Fade Now buttons will be placed on either side of the crossfader.
     The user can press either button to automatically fade the
     crossfader in the chosen direction. These buttons will also act as
-    AutoDJ indicators and will light up when AutoDJ is in use. 
+    AutoDJ indicators and will light up when AutoDJ is in use. These
+    buttons will replace the FadeNow button that is part of the AutoDJ
+    controls.
   - A button will be added to set the AutoDJ cue out point.
 
 ## Data Flow

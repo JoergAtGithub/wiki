@@ -125,6 +125,12 @@ going to be implemented.
     AutoDJ indicators and will light up when AutoDJ is in use. 
   - A button will be added to set the AutoDJ cue out point.
 
+## Data Flow
+
+Here is a diagram showing the slots, signals, and ControlObjects that
+will be involved with the AutoDJ class and DlgAutoDJ
+![http://tinypic.com/r/2zexspc/6](http://tinypic.com/r/2zexspc/6)
+
 # Additional Features
 
 These features have been discussed and could be added later

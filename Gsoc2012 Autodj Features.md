@@ -132,7 +132,7 @@ going to be implemented.
 Here is a diagram showing the slots, signals, and ControlObjects that
 will be involved with the AutoDJ class and DlgAutoDJ
 
-![http://i46.tinypic.com/1g3k8.png](http://i46.tinypic.com/1g3k8.png)
+![http://i46.tinypic.com/znndlc.png](http://i46.tinypic.com/znndlc.png)
 
 # Additional Features
 

@@ -202,7 +202,7 @@ So to enable soft-takeover for the pitch control on channel
 
 ### Scratching
 
-*Introduced in v1.8, ramp toggles added in v1.11*
+*Introduced in v1.8, ramp toggles and isScratching() added in v1.11*
 
 We have an easy way to scratch with any MIDI control that sends relative
 (+1/-1) signals. (Others can be scaled to work as well.) The applicable
@@ -212,6 +212,7 @@ functions are:
 engine.scratchEnable(int deck, int intervalsPerRev, float rpm, float alpha, float beta, bool ramp);
 engine.scratchTick(int deck, int interval);
 engine.scratchDisable(int deck, bool ramp);
+bool engine.isScratching(int deck);
 ```
 
 Here is how to use them:
@@ -238,7 +239,7 @@ Here is how to use them:
 - Each time the MIDI control is moved, call ''engine.scratchTick()'' with:
 * the virtual deck number this control is currently scratching
 * the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
-- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp.)
+- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp which also allows spin-backs with wheels.)
 ```
 
 Here is an example for the two most common types of wheels:
@@ -251,19 +252,20 @@ MyController.wheelTouch = function (channel, control, value, status) {
         var alpha = 1.0/8;
         var beta = alpha/32;
         engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, alpha, beta);
-        // Keep track of whether we're scratching on this virtual deck
-        MyController.scratching[MyController.currentDeck] = true;
+        // Keep track of whether we're scratching on this virtual deck - for v1.10.x or below
+        // MyController.scratching[MyController.currentDeck] = true;
     }
     else {    // If button up
         engine.scratchDisable(MyController.currentDeck);
-        MyController.scratching[MyController.currentDeck] = false;
+        //MyController.scratching[MyController.currentDeck] = false;  // Only for v1.10.x and below
     }
 }
 
 // The wheel that actually controls the scratching
 MyController.wheelTurn = function (channel, control, value, status) {
     // See if we're scratching. If not, skip this.
-    if (!MyController.scratching[MyController.currentDeck]) return;
+    if (!engine.isScratching(MyController.currentDeck)) return; // for 1.11.0 and above
+    //if (!MyController.scratching[MyController.currentDeck]) return; // for 1.10.x and below
     
     // --- Choose only one of the following!
     

@@ -1,4 +1,16 @@
-# Reloop TerminalMix4 & Mixxx User Guide
+# Reloop TerminalMix4
+
+## 1.11.x preset
+
+The latest official preset (mapping and script) file are in the 1.11
+release branch and can be downloaded from here:
+
+  - [Reloop
+    TerminalMix4.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.m-20120608214706-htezt5mx6gyjoiav-1/Reloop%20TerminalMix4.midi.xml)
+  - [Reloop
+    TerminalMix4.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.j-20120608214709-j23k072oly9sgz8s-1/Reloop%20TerminalMix4.js)
+
+# User Guide
 
 This guide explains how the TerminalMix4 is mapped by default in Mixxx.
 

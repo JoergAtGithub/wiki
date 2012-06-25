@@ -1,5 +1,8 @@
 # Reloop TerminalMix4
 
+[See it on Reloop's web
+site](http://www.reloop.com/reloop-terminal-mix-4) (Flash required)
+
 ## 1.11.x preset
 
 The latest official preset (mapping and script) file are in the 1.11

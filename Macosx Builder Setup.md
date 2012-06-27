@@ -417,3 +417,7 @@ Solution:
     export MACOSX_DEPLOYMENT_TARGET=
 
     Exception: Qt4 command 'moc' not found. Tried: /Library/Frameworks/bin/moc-qt4 and /Library/Frameworks/bin/moc:
+
+Solution:
+
+    export QTDIR=$MIXXX_PREFIX/Qt-4.7.4/

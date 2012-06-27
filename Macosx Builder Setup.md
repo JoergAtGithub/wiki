@@ -398,3 +398,22 @@ scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0
 
 Take the DMG in the `osx32_build` folder and try it out on the CPUs you
 built it for.
+
+# Potential Issues
+
+    Traceback (most recent call last):  File "/usr/local/bin/scons", line 95, in <module>
+        import pkg_resources  File "/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/pkg_resources.py", line 651, in <module>    class Environment(object):
+      File "/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/pkg_resources.py", line 654, in Environment
+        def __init__(self, search_path=None, platform=get_supported_platform(), python=PY_MAJOR):
+      File "/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/pkg_resources.py", line 55, in get_supported_platform
+        plat = get_build_platform(); m = macosVersionString.match(plat)
+      File "/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/pkg_resources.py", line 181, in get_build_platform
+        plat = get_platform()
+      File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/distutils/util.py", line 97, in get_platform    cfgvars = get_config_vars()  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/distutils/sysconfig.py", line 525, in get_config_vars    func()  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/distutils/sysconfig.py", line 408, in _init_posix    raise DistutilsPlatformError(my_msg)
+    distutils.errors.DistutilsPlatformError: $MACOSX_DEPLOYMENT_TARGET mismatch: now "10.5" but "10.6" during configure
+
+Solution:
+
+    export MACOSX_DEPLOYMENT_TARGET=
+
+    Exception: Qt4 command 'moc' not found. Tried: /Library/Frameworks/bin/moc-qt4 and /Library/Frameworks/bin/moc:

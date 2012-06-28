@@ -42,7 +42,8 @@ This guide explains how the VMS4 is mapped by default in Mixxx.
 
 [[/media/hardware/american_audio/vms4_top.jpg|]]
 
-*Image courtesy of [American Audio](http://www.adjaudio.com/)*
+*Image courtesy of [American Audio](http://www.adjaudio.com/). Click on
+it for a larger version.*
 
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:

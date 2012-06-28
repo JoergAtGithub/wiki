@@ -381,6 +381,49 @@ process.
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394
 
+# libprotobuf
+
+## 10.5 Intel (i386/x86\_64)
+
+**warning untested**
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
+    export CC="$CC $CFLAGS"
+    export CXX="$CXX $CXXFLAGS"
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
+
+    mkdir -p protobuf-2.4.1-{i386,x86_64,ppc}
+    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-i386 --strip-components 1
+    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-ppc --strip-components 1
+    
+    # Note, i386 is first so that we get a working i386 version of protoc (our host system is i386).
+    cd protobuf-2.4.1-i386
+    export ARCH_FLAGS="-arch i386"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+    make
+    
+    cd ../protobuf-2.4.1-ppc
+    export ARCH_FLAGS="-arch ppc"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc ../protobuf-2.4.1-i386/src/.libs/protoc
+    make
+    cd ../protobuf-2.4.1-x86_64
+    export ARCH_FLAGS="-arch x86_64"
+    source ../environment.sh
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc ../protobuf-2.4.1-i386/src/.libs/protoc
+    make
+    
+    cd ../protobuf-2.4.1-i386
+    lipo -create ./src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf.7.dylib -output src/.libs/libprotobuf.7.dylib
+    sudo make install
+
 # Mixxx
 
 To test your new build environment, we will build Mixxx.

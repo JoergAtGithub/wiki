@@ -423,6 +423,7 @@ process.
     
     cd ../protobuf-2.4.1-i386
     lipo -create ./src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf.7.dylib -output src/.libs/libprotobuf.7.dylib
+    lipo -create ./src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf-lite.7.dylib -output src/.libs/libprotobuf-lite.7.dylib
     sudo make install
 
 # Mixxx

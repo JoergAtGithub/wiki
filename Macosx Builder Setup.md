@@ -392,6 +392,7 @@ To test your new build environment, we will build Mixxx.
     export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
     export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
     export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"
+    export QTDIR=$MIXXX_PREFIX/Qt-4.7.4/
     # qtplugindir is required until we remove hardcoding of /Developer/Applications/Qt/ from our build system :(
     scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 qtplugindir=$QTDIR
 

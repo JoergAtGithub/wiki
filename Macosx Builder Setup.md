@@ -412,13 +412,13 @@ process.
     cd ../protobuf-2.4.1-ppc
     export ARCH_FLAGS="-arch ppc"
     source ../environment.sh
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc ../protobuf-2.4.1-i386/src/protoc
+    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc=../protobuf-2.4.1-i386/src/protoc
     make
     
     cd ../protobuf-2.4.1-x86_64
     export ARCH_FLAGS="-arch x86_64"
     source ../environment.sh
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc ../protobuf-2.4.1-i386/src/protoc
+    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc=../protobuf-2.4.1-i386/src/protoc
     make
     
     cd ../protobuf-2.4.1-i386

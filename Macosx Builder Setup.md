@@ -385,16 +385,15 @@ process.
 
 To test your new build environment, we will build Mixxx.
 
-``` 
-bzr branch lp:mixxx ./mixxx-trunk
-cd mixxx-trunk/mixxx
-export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
-source ../../environment.sh
-export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
-export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
-export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"
-scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 
-```
+    bzr branch lp:mixxx ./mixxx-trunk
+    cd mixxx-trunk/mixxx
+    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    source ../../environment.sh
+    export CFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
+    export CXXFLAGS="$CFLAGS -I$MIXXX_PREFIX/include"
+    export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"
+    # qtplugindir is required until we remove hardcoding of /Developer/Applications/Qt/ from our build system :(
+    scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 qtplugindir=$QTDIR
 
 Take the DMG in the `osx32_build` folder and try it out on the CPUs you
 built it for.

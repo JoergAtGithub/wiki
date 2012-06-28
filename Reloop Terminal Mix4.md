@@ -17,6 +17,11 @@ release branch and can be downloaded from here:
 
 This guide explains how the TerminalMix4 is mapped by default in Mixxx.
 
+[[/media/hardware/reloop/terminalmix4_top.jpg|]]
+
+*Image courtesy of [Reloop](http://www.reloop.com/). Click on it for a
+larger version.*
+
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:
 

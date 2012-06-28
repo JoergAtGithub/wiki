@@ -394,7 +394,7 @@ To test your new build environment, we will build Mixxx.
     export LDFLAGS="$LDFLAGS -L$MIXXX_PREFIX/lib -F$MIXXX_PREFIX/Qt-4.7.4/lib"
     export QTDIR=$MIXXX_PREFIX/Qt-4.7.4/
     # qtplugindir is required until we remove hardcoding of /Developer/Applications/Qt/ from our build system :(
-    scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 qtplugindir=$QTDIR
+    scons bundle package osxlib=$MIXXX_PREFIX/lib coreaudio=1 mad=0 qtplugindir=$QTDIR optimize=9
 
 Take the DMG in the `osx32_build` folder and try it out on the CPUs you
 built it for.

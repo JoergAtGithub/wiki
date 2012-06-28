@@ -21,8 +21,6 @@ support.
 
 # Mixxx 1.11.x
 
-OSX
-
   - Qt 4.7.4
   - libid3tag 0.15.1b (not on OS X)
   - libmad 0.15.1b (not on OS X)

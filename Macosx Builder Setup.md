@@ -160,7 +160,6 @@ process.
       mkdir -p $VERSION-$ARCH
       tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
       cd $VERSION-$ARCH
-      export ARCH_FLAGS="-arch $ARCH"
       source ../environment.sh $ARCH
       export CC="$CC $CFLAGS"
       export CXX="$CXX $CXXFLAGS"

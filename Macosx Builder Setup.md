@@ -314,7 +314,7 @@ process.
 
     export VERSION=libshout-2.3.0
     export ARCHIVE=$VERSION.tar.gz
-    export DYLIB=src/.libs/libshout.3.2.0.dylib
+    export DYLIB=src/.libs/libshout.3.dylib
     export STATICLIB=src/.libs/libshout.a
     
     for ARCH in i386 x86_64 ppc

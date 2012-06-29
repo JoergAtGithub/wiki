@@ -136,6 +136,7 @@ process.
     
     tar -zxvf ../dependencies/$ARCHIVE
     cd $VERSION
+    export ARCH=
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../environment.sh
     # Qt appears to want -arch x86 not -arch i386

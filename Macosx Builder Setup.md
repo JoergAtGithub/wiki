@@ -1,7 +1,7 @@
 # Setting up a Mac OS X Builder
 
-As of Q4 2011, Mixxx supports Mac OS X 10.5 and higher on i386 and
-x86\_64. PPC and Mac OS 10.4 are no longer supported.
+As of Q4 2011, Mixxx supports Mac OS X 10.5 and higher on i386, x86\_64,
+and PPC. Mac OS 10.4 are no longer supported.
 
 To see the supported version of each library for a given Mixxx version,
 see [dependencies](dependencies).

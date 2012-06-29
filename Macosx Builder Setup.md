@@ -425,6 +425,9 @@ process.
     lipo -create ./src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf.7.dylib -output src/.libs/libprotobuf.7.dylib
     lipo -create ./src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf-lite.7.dylib -output src/.libs/libprotobuf-lite.7.dylib
     sudo make install
+    
+    # The binary is going to be called $TARGET_I386-protoc so alias it to protoc
+    sudo ln -s /Developer/SDKs/MacOSX10.5.sdk/usr/local/universal/bin/i386-apple-darwin10-protoc /Developer/SDKs/MacOSX10.5.sdk/usr/local/universal/bin/protoc
 
 # Mixxx
 

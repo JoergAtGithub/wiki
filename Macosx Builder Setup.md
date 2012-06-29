@@ -370,7 +370,8 @@ do
   tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
   cd $VERSION-$ARCH
   source ../environment.sh $ARCH
-  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DENABLE_STATIC=ON -DWITH_ASF=ON -DWITH_MP4=ON
+  # To build static, use -DENABLE_STATIC=ON but this turns off building a shared library.
+  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
   make
   cd ..
 done
@@ -380,7 +381,8 @@ export ARCH=i386
 cd $VERSION-$ARCH
 source ../environment.sh $ARCH
 lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
-lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
+# Taglib's build system only builds either a shared library or a dynamic one. We use the dynamic one for now.
+#lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
 sudo make install
 cd ..
 

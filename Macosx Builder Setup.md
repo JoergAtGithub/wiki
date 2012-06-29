@@ -428,7 +428,7 @@ process.
     sudo make install
     
     # The binary is going to be called $TARGET_I386-protoc so alias it to protoc
-    sudo ln -s /Developer/SDKs/MacOSX10.5.sdk/usr/local/universal/bin/i386-apple-darwin10-protoc /Developer/SDKs/MacOSX10.5.sdk/usr/local/universal/bin/protoc
+    sudo ln -s $MIXXX_PREFIX/bin/i386-apple-darwin10-protoc $MIXXX_PREFIX/bin/protoc
 
 # Mixxx
 

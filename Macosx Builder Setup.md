@@ -483,6 +483,7 @@ cd ..
     cd hss1394
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../environment.sh
+    export MACOSX_DEPLOYMENT_TARGET=
     scons prefix=$MIXXX_PREFIX
     # Actually, this doesn't work. Just manually copy the files.
     #sudo scons prefix=$MIXXX_PREFIX install

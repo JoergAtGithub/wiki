@@ -23,6 +23,25 @@ Store this file as `environment.sh` in your build directory.
 
     #!/bin/bash
     
+    # If you are not building on a i386 OS X install, change this.                                                                                            
+    export HOST=i386-apple-darwin10
+    export TARGET_I386="i386-apple-darwin10"
+    export TARGET_X86_64="x86_64-apple-darwin10"
+    export TARGET_POWERPC="powerpc-apple-darwin10"
+    
+    if [ "$1" == "i386" ]; then
+      export TARGET=$TARGET_I386
+      export ARCH_FLAGS="-arch $1"
+    elif [ "$1" == "x86_64" ]; then
+      export TARGET=$TARGET_X86_64
+      export ARCH_FLAGS="-arch $1"
+    elif [ "$1" == "ppc" ]; then
+      export TARGET=$TARGET_POWERPC
+      export ARCH_FLAGS="-arch $1"
+    else
+      # Custom $ARCH_FLAGS is set by caller.                                                                                                                  
+    fi
+    
     export CC="$(xcode-select -print-path)/usr/bin/gcc-4.2"
     export CXX="$(xcode-select -print-path)/usr/bin/g++-4.2"
     export CPP="$(xcode-select -print-path)/usr/bin/cpp-4.2"
@@ -32,12 +51,6 @@ Store this file as `environment.sh` in your build directory.
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk
     export MIXXX_PREFIX=$OSX_SDK/usr/local/universal/
     export PATH=$PATH:$MIXXX_PREFIX/bin/
-    
-    # If you are not building on a i386 OS X install, change this.
-    export HOST="i386-apple-darwin10"
-    export TARGET_I386="i386-apple-darwin10"
-    export TARGET_X86_64="x86_64-apple-darwin10"
-    export TARGET_POWERPC="powerpc-apple-darwin10"
     
     export COMMON_OPT_FLAGS="-O2 -ffast-math"
     # Core Solo and Core Duo are the only 32-bit mac machines. These support MMX, SSE, SSE2, SSE3. -march=prescott is safe to assume
@@ -50,14 +63,12 @@ Store this file as `environment.sh` in your build directory.
     
     if [ "$1" == "i386" ]; then
       echo "Setting options for $1";
-      export TARGET=$TARGET_I386
       export CFLAGS="$OSX_CFLAGS $I386_OPT_FLAGS"
       export CXXFLAGS="$OSX_CFLAGS $I386_OPT_FLAGS"
       export LDFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
       export SHLIBFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
       export DYLIBFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
     elif [ "$1" == "x86_64" ]; then                                                                                                                             echo "Setting options for $1";
-      export TARGET=$TARGET_X86_64
       export CFLAGS="$OSX_CFLAGS $X86_64_OPT_FLAGS"
       export CXXFLAGS="$OSX_CFLAGS $X86_64_OPT_FLAGS"
       export LDFLAGS="$OSX_LDFLAGS $X86_64_OPT_FLAGS"
@@ -65,7 +76,6 @@ Store this file as `environment.sh` in your build directory.
       export DYLIBFLAGS="$OSX_LDFLAGS $X86_64_OPT_FLAGS"
     elif [ "$1" == "ppc" ]; then
       echo "Setting options for $1";
-      export TARGET=$TARGET_POWERPC
       export CFLAGS="$OSX_CFLAGS $POWERPC_OPT_FLAGS"
       export CXXFLAGS="$OSX_CFLAGS $POWERPC_OPT_FLAGS"
       export LDFLAGS="$OSX_LDFLAGS $POWERPC_OPT_FLAGS"

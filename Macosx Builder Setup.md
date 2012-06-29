@@ -142,6 +142,8 @@ process.
 
     export VERSION=flac-1.2.1
     export ARCHIVE=$VERSION.tar.gz
+    export DYLIB=src/libFLAC/.libs/libFLAC.8.2.0.dylib
+    export STATICLIB=src/libFLAC/.libs/libFLAC.a
     
     for ARCH in i386 x86_64 ppc
     do
@@ -157,33 +159,17 @@ process.
       cd ..
     done
     
-    mkdir -p $VERSION-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-i386 --strip-components 1
-    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-ppc --strip-components 1
-    cd flac-1.2.1-ppc
-    export ARCH_FLAGS="-arch ppc"
-    source ../environment.sh
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    export ARCH_FLAGS="-arch $ARCH"
+    source ../environment.sh $ARCH
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make
-    cd ../flac-1.2.1-i386
-    export ARCH_FLAGS="-arch i386"
-    source ../environment.sh
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target $TARGET_I386 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make
-    cd ../flac-1.2.1-x86_64
-    export ARCH_FLAGS="-arch x86_64"
-    source ../environment.sh
-    export CC="$CC $CFLAGS"
-    export CXX="$CXX $CXXFLAGS"
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
-    make
-    lipo -create ./src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-ppc/src/libFLAC/.libs/libFLAC.8.2.0.dylib ../flac-1.2.1-i386/src/libFLAC/.libs/libFLAC.8.2.0.dylib -output src/libFLAC/.libs/libFLAC.8.2.0.dylib
+    lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+    lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
     sudo make install
+    cd ..
 
 # libsndfile
 

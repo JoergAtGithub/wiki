@@ -39,14 +39,46 @@ Store this file as `environment.sh` in your build directory.
     export TARGET_X86_64="x86_64-apple-darwin10"
     export TARGET_POWERPC="powerpc-apple-darwin10"
     
-    export OSX_CFLAGS="-isysroot $OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS"
-    export OSX_LDFLAGS="-isysroot $OSX_SDK -Wl,-syslibroot,$OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS"
+    export COMMON_OPT_FLAGS="-O2 -ffast-math"
+    # Core Solo and Core Duo are the only 32-bit mac machines. These support MMX, SSE, SSE2, SSE3. -march=prescott is safe to assume
+    export I386_OPT_FLAGS="-mmmx -msse -msse2 -msse3 -mfpmath=sse -march=prescott -mtune=generic"
+    export X86_64_OPT_FLAGS="-mmmx -msse -msse2 -msse3 -mfpmath=sse -mtune=generic"
+    export POWERPC_OPT_FLAGS=""
     
-    export CFLAGS=$OSX_CFLAGS
-    export CXXFLAGS=$OSX_CFLAGS
-    export LDFLAGS=$OSX_LDFLAGS
-    export SHLIBFLAGS=$OSX_LDFLAGS
-    export DYLIBFLAGS=$OSX_LDFLAGS
+    export OSX_CFLAGS="-isysroot $OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS $COMMON_OPT_FLAGS"
+    export OSX_LDFLAGS="-isysroot $OSX_SDK -Wl,-syslibroot,$OSX_SDK -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET $ARCH_FLAGS $COMMON_OPT_FLAGS"
+    
+    if [ "$1" == "i386" ]; then
+      echo "Setting options for $1";
+      export TARGET=$TARGET_I386
+      export CFLAGS="$OSX_CFLAGS $I386_OPT_FLAGS"
+      export CXXFLAGS="$OSX_CFLAGS $I386_OPT_FLAGS"
+      export LDFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
+      export SHLIBFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
+      export DYLIBFLAGS="$OSX_LDFLAGS $I386_OPT_FLAGS"
+    elif [ "$1" == "x86_64" ]; then                                                                                                                             echo "Setting options for $1";
+      export TARGET=$TARGET_X86_64
+      export CFLAGS="$OSX_CFLAGS $X86_64_OPT_FLAGS"
+      export CXXFLAGS="$OSX_CFLAGS $X86_64_OPT_FLAGS"
+      export LDFLAGS="$OSX_LDFLAGS $X86_64_OPT_FLAGS"
+      export SHLIBFLAGS="$OSX_LDFLAGS $X86_64_OPT_FLAGS"
+      export DYLIBFLAGS="$OSX_LDFLAGS $X86_64_OPT_FLAGS"
+    elif [ "$1" == "ppc" ]; then
+      echo "Setting options for $1";
+      export TARGET=$TARGET_POWERPC
+      export CFLAGS="$OSX_CFLAGS $POWERPC_OPT_FLAGS"
+      export CXXFLAGS="$OSX_CFLAGS $POWERPC_OPT_FLAGS"
+      export LDFLAGS="$OSX_LDFLAGS $POWERPC_OPT_FLAGS"
+      export SHLIBFLAGS="$OSX_LDFLAGS $POWERPC_OPT_FLAGS"
+      export DYLIBFLAGS="$OSX_LDFLAGS $POWERPC_OPT_FLAGS"
+    else
+      echo "ERROR: Unknown arch type, setting default."
+      export CFLAGS=$OSX_CFLAGS
+      export CXXFLAGS=$OSX_CFLAGS
+      export LDFLAGS=$OSX_LDFLAGS
+      export SHLIBFLAGS=$OSX_LDFLAGS
+      export DYLIBFLAGS=$OSX_LDFLAGS
+    fi
 
 This guide also assumes you have archives of each source dependency
 stored in a folder named `dependencies` located one level above your
@@ -108,10 +140,27 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    mkdir -p flac-1.2.1-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/flac-1.2.1.tar.gz -C flac-1.2.1-i386 --strip-components 1
-    tar -zxvf ../dependencies/flac-1.2.1.tar.gz -C flac-1.2.1-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/flac-1.2.1.tar.gz -C flac-1.2.1-ppc --strip-components 1
+    export VERSION=flac-1.2.1
+    export ARCHIVE=$VERSION.tar.gz
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      export ARCH_FLAGS="-arch $ARCH"
+      source ../environment.sh $ARCH
+      export CC="$CC $CFLAGS"
+      export CXX="$CXX $CXXFLAGS"
+      ./configure --host $HOST --target $TARGET --disable-cpplibs --disable-dependency-tracking --disable-asm-optimizations --disable-ogg --prefix=$MIXXX_PREFIX
+      make
+      cd ..
+    done
+    
+    mkdir -p $VERSION-{i386,x86_64,ppc}
+    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-i386 --strip-components 1
+    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-x86_64 --strip-components 1
+    tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-ppc --strip-components 1
     cd flac-1.2.1-ppc
     export ARCH_FLAGS="-arch ppc"
     source ../environment.sh

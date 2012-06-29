@@ -508,37 +508,42 @@ cd ..
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    mkdir -p protobuf-2.4.1-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-i386 --strip-components 1
-    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/protobuf-2.4.1.tar.gz -C protobuf-2.4.1-ppc --strip-components 1
+    export VERSION=protobuf-2.4.1
+    export ARCHIVE=$VERSION.tar.gz
+    export PROTOBUF_DYLIB=src/.libs/libprotobuf.7.dylib
+    export PROTOBUF_STATICLIB=src/.libs/libprotobuf.a
+    export PROTOBUF_LITE_DYLIB=src/.libs/libprotobuf-lite.7.dylib
+    export PROTOBUF_LITE_STATICLIB=src/.libs/libprotobuf-lite.a
     
-    # Note, i386 is first so that we get a working i386 version of protoc (our host system is i386).
-    cd protobuf-2.4.1-i386
-    export ARCH_FLAGS="-arch i386"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
+    # Note, i386 is first so that we get a working i386 version of protoc which the ARCH's use (our host system is i386).
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      if [ "$ARCH" == "i386" ]; then
+        ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+      else
+        ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc=../$VERSION-i386/src/protoc
+      fi 
+      make
+      cd ..
+    done
     
-    cd ../protobuf-2.4.1-ppc
-    export ARCH_FLAGS="-arch ppc"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc=../protobuf-2.4.1-i386/src/protoc
-    make
-    
-    cd ../protobuf-2.4.1-x86_64
-    export ARCH_FLAGS="-arch x86_64"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX --with-protoc=../protobuf-2.4.1-i386/src/protoc
-    make
-    
-    cd ../protobuf-2.4.1-i386
-    lipo -create ./src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf.7.dylib -output src/.libs/libprotobuf.7.dylib
-    lipo -create ./src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-ppc/src/.libs/libprotobuf-lite.7.dylib ../protobuf-2.4.1-x86_64/src/.libs/libprotobuf-lite.7.dylib -output src/.libs/libprotobuf-lite.7.dylib
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$PROTOBUF_DYLIB ../$VERSION-ppc/$PROTOBUF_DYLIB ../$VERSION-x86_64/$PROTOBUF_DYLIB -output ./$PROTOBUF_DYLIB
+    lipo -create ./$PROTOBUF_STATICLIB ../$VERSION-ppc/$PROTOBUF_STATICLIB ../$VERSION-x86_64/$PROTOBUF_STATICLIB -output ./$PROTOBUF_STATICLIB
+    lipo -create ./$PROTOBUF_LITE_DYLIB ../$VERSION-ppc/$PROTOBUF_LITE_DYLIB ../$VERSION-x86_64/$PROTOBUF_LITE_DYLIB -output ./$PROTOBUF_LITE_DYLIB
+    lipo -create ./$PROTOBUF_LITE_STATICLIB ../$VERSION-ppc/$PROTOBUF_LITE_STATICLIB ../$VERSION-x86_64/$PROTOBUF_LITE_STATICLIB -output ./$PROTOBUF_LITE_STATICLIB
     sudo make install
+    cd ..
     
     # The binary is going to be called $TARGET_I386-protoc so alias it to protoc
-    sudo ln -s $MIXXX_PREFIX/bin/i386-apple-darwin10-protoc $MIXXX_PREFIX/bin/protoc
+    sudo ln -s $MIXXX_PREFIX/bin/$TARGET_I386-protoc $MIXXX_PREFIX/bin/protoc
 
 # Mixxx
 

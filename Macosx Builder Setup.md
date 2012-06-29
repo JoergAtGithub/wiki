@@ -130,9 +130,16 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
+    export VERSION=qt-everywhere-opensource-src-4.8.2
+    export ARCHIVE=$VERSION.tar.gz
+    export QTDIR=$MIXXX_PREFIX/Qt-4.8.2
+    
+    tar -zxvf ../dependencies/$ARCHIVE
+    cd $VERSION
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../environment.sh
-    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ $ARCH_FLAGS -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release -nomake examples -nomake demos -confirm-license
+    # Qt appears to want -arch x86 not -arch i386
+    ./configure -opensource -prefix $QTDIR -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release -nomake examples -nomake demos -confirm-license
     make
     sudo make install
 

@@ -230,27 +230,30 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    mkdir -p libogg-1.3.0-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-i386 --strip-components 1
-    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/libogg-1.3.0.tar.gz -C libogg-1.3.0-ppc --strip-components 1
-    cd libogg-1.3.0-ppc
-    export ARCH_FLAGS="-arch ppc"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libogg-1.3.0-i386
-    export ARCH_FLAGS="-arch i386"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libogg-1.3.0-x86_64
-    export ARCH_FLAGS="-arch x86_64"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    lipo -create ./src/.libs/libogg.0.dylib ../libogg-1.3.0-ppc/src/.libs/libogg.0.dylib ../libogg-1.3.0-i386/src/.libs/libogg.0.dylib -output src/.libs/libogg.0.dylib
+    export VERSION=libogg-1.3.0
+    export ARCHIVE=$VERSION.tar.gz
+    export DYLIB=src/.libs/libogg.0.dylib
+    export STATICLIB=src/.libs/libogg.a
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+      make
+      cd ..
+    done
+    
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+    lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
     sudo make install
+    cd ..
 
 # libvorbis
 

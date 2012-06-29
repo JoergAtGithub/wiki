@@ -171,7 +171,6 @@ process.
     # Install the i386 version in case there are binaries we want to run (our host is i386)
     export ARCH=i386
     cd $VERSION-$ARCH
-    export ARCH_FLAGS="-arch $ARCH"
     source ../environment.sh $ARCH
     export CC="$CC $CFLAGS"
     export CXX="$CXX $CXXFLAGS"

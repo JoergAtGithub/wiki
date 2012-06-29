@@ -267,29 +267,38 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    mkdir -p libvorbis-1.3.2-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-i386 --strip-components 1
-    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/libvorbis-1.3.2.tar.gz -C libvorbis-1.3.2-ppc --strip-components 1
-    cd libvorbis-1.3.2-ppc
-    export ARCH_FLAGS="-arch ppc"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libvorbis-1.3.2-i386
-    export ARCH_FLAGS="-arch i386"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libvorbis-1.3.2-x86_64
-    export ARCH_FLAGS="-arch x86_64"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    lipo -create ./lib/.libs/libvorbis.0.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbis.0.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbis.0.dylib -output lib/.libs/libvorbis.0.dylib
-    lipo -create ./lib/.libs/libvorbisenc.2.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbisenc.2.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbisenc.2.dylib -output lib/.libs/libvorbisenc.2.dylib
-    lipo -create ./lib/.libs/libvorbisfile.3.dylib ../libvorbis-1.3.2-ppc/lib/.libs/libvorbisfile.3.dylib ../libvorbis-1.3.2-i386/lib/.libs/libvorbisfile.3.dylib -output lib/.libs/libvorbisfile.3.dylib
+    export VERSION=libvorbis-1.3.3
+    export ARCHIVE=$VERSION.tar.gz
+    export VORBIS_DYLIB=lib/.libs/libvorbis.0.dylib
+    export VORBIS_STATICLIB=lib/.libs/libvorbis.a
+    export VORBISENC_DYLIB=lib/.libs/libvorbisenc.2.dylib
+    export VORBISENC_STATICLIB=lib/.libs/libvorbisenc.a
+    export VORBISFILE_DYLIB=lib/.libs/libvorbisfile.3.dylib
+    export VORBISFILE_STATICLIB=lib/.libs/libvorbisfile.a
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+      make
+      cd ..
+    done
+    
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$VORBIS_DYLIB ../$VERSION-ppc/$VORBIS_DYLIB ../$VERSION-x86_64/$VORBIS_DYLIB -output ./$VORBIS_DYLIB
+    lipo -create ./$VORBIS_STATICLIB ../$VERSION-ppc/$VORBIS_STATICLIB ../$VERSION-x86_64/$VORBIS_STATICLIB -output ./$VORBIS_STATICLIB
+    lipo -create ./$VORBISENC_DYLIB ../$VERSION-ppc/$VORBISENC_DYLIB ../$VERSION-x86_64/$VORBISENC_DYLIB -output ./$VORBISENC_DYLIB
+    lipo -create ./$VORBISENC_STATICLIB ../$VERSION-ppc/$VORBISENC_STATICLIB ../$VERSION-x86_64/$VORBISENC_STATICLIB -output ./$VORBISENC_STATICLIB
+    lipo -create ./$VORBISFILE_DYLIB ../$VERSION-ppc/$VORBISFILE_DYLIB ../$VERSION-x86_64/$VORBISFILE_DYLIB -output ./$VORBISFILE_DYLIB
+    lipo -create ./$VORBISFILE_STATICLIB ../$VERSION-ppc/$VORBISFILE_STATICLIB ../$VERSION-x86_64/$VORBISFILE_STATICLIB -output ./$VORBISFILE_STATICLIB
     sudo make install
+    cd ..
 
 # libshout
 

@@ -394,15 +394,34 @@ cd ..
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
-    source ../environment.sh
-    # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
-    export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
-    export CXXFLAGS=$CFLAGS
-    # Mac universal in this case includes ppc64 which we aren't supporting.
-    ./configure --prefix=$MIXXX_PREFIX --disable-mac-universal
-    make
+    export VERSION=pa_stable_v19_20111121
+    export ARCHIVE=$VERSION.tgz
+    export DYLIB=lib/.libs/libportaudio.2.dylib
+    export STATICLIB=lib/.libs/libportaudio.a
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      # As of the PA 2011/3/26 snapshot, a deprecated API function of CoreAudio is used which blocks the build due to -Werror. -Wno-deprecated-declarations allows these errors to pass.
+      export CFLAGS="$CFLAGS -Wno-deprecated-declarations"
+      export CXXFLAGS=$CFLAGS
+      # Mac universal in this case includes ppc64 which we aren't supporting.
+      ./configure --host $HOST --target $TARGET --prefix=$MIXXX_PREFIX --disable-mac-universal
+      make
+      cd ..
+    done
+    
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+    lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
     sudo make install
+    cd ..
 
 # portmidi
 

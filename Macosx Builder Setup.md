@@ -361,8 +361,8 @@ sudo make install
 
 export VERSION=taglib-1.7.2
 export ARCHIVE=$VERSION.tar.gz
-export DYLIB=taglib/libtag.1.7.0.dylib
-export STATICLIB=taglib/libtag.1.7.0.dylib
+export DYLIB=taglib/libtag.1.7.2.dylib
+export STATICLIB=taglib/libtag.1.7.2.dylib
 
 for ARCH in i386 x86_64 ppc
 do

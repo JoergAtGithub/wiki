@@ -193,27 +193,30 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    mkdir -p libsndfile-1.0.25-{i386,x86_64,ppc}
-    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-i386 --strip-components 1
-    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-x86_64 --strip-components 1
-    tar -zxvf ../dependencies/libsndfile-1.0.25.tar.gz -C libsndfile-1.0.25-ppc --strip-components 1
-    cd libsndfile-1.0.25-ppc
-    export ARCH_FLAGS="-arch ppc"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_POWERPC --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libsndfile-1.0.25-i386
-    export ARCH_FLAGS="-arch i386"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_I386 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    cd ../libsndfile-1.0.25-x86_64
-    export ARCH_FLAGS="-arch x86_64"
-    source ../environment.sh
-    ./configure --host $HOST --target $TARGET_X86_64 --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-    make
-    lipo -create ./src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-ppc/src/.libs/libsndfile.1.dylib ../libsndfile-1.0.25-i386/src/.libs/libsndfile.1.dylib -output src/.libs/libsndfile.1.dylib
+    export VERSION=libsndfile-1.0.25
+    export ARCHIVE=$VERSION.tar.gz
+    export DYLIB=src/.libs/libsndfile.1.dylib
+    export STATICLIB=src/.libs/libsndfile.a
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+      make
+      cd ..
+    done
+    
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+    lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
     sudo make install
+    cd ..
 
 # libogg
 

@@ -350,15 +350,6 @@ process.
 ## 10.5 Universal (ppc/i386/x86\_64)
 
 ``` 
-# I believe taglib is safe to compile multiple architectures together.
-export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
-source ../environment.sh
-cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_ASF=ON -DWITH_MP4=ON
-make
-sudo make install
-
-
-
 export VERSION=taglib-1.7.2
 export ARCHIVE=$VERSION.tar.gz
 export DYLIB=taglib/libtag.1.7.2.dylib

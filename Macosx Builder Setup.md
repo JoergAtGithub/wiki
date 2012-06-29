@@ -31,6 +31,7 @@ Store this file as `environment.sh` in your build directory.
     export MACOSX_DEPLOYMENT_TARGET="10.5"
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk
     export MIXXX_PREFIX=$OSX_SDK/usr/local/universal/
+    export PATH=$PATH:$MIXXX_PREFIX/bin/
     
     # If you are not building on a i386 OS X install, change this.
     export HOST="i386-apple-darwin10"

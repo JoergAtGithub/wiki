@@ -130,6 +130,9 @@ process.
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
+Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
+<https://bugreports.qt-project.org/browse/QTBUG-23258>
+
     export VERSION=qt-everywhere-opensource-src-4.8.2
     export ARCHIVE=$VERSION.tar.gz
     export QTDIR=$MIXXX_PREFIX/Qt-4.8.2
@@ -137,9 +140,10 @@ process.
     tar -zxvf ../dependencies/$ARCHIVE
     cd $VERSION
     export ARCH=
-    export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
+    # Qt gets sad if you use -arch in your CFLAGS/CXXFLAGS. For some reason it does some cutting / munging of your flags and you end up with lone '-arch' flags in your CFLAGS/CXXFLAGS which breaks the build.
+    export ARCH_FLAGS=
     source ../environment.sh
-    # Qt appears to want -arch x86 not -arch i386
+    # Qt uses -arch x86 not -arch i386
     ./configure -opensource -prefix $QTDIR -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release -nomake examples -nomake demos -confirm-license
     make
     sudo make install

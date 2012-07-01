@@ -879,8 +879,8 @@ for guidance\!*
 
 #### ZLib
 
-You downloaded the zlib source above for libogg, but we actually need to
-build it for taglib.
+You downloaded the zlib source above for libid3tag, but we actually need
+to build it for taglib.
 
 ##### x64 prep for VS Express
 

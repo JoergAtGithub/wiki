@@ -800,12 +800,14 @@ build:
 
 #### For libshout v2.3.1
 
-1.  Edit timing.h and add near the top: `#if defined(_WIN32)
+1.  Edit the file `libshout-2.3.1\src\timing\timing.h` and add near the
+    top: `#if defined(_WIN32)
     #define HAVE_FTIME 1
     #include <sys/timeb.h>
     #endif`
-2.  Edit timing.c and replace the struct definition and ftime call at
-    line 57 with the following:`#if defined(_WIN32)
+2.  Edit `libshout-2.3.1\src\timing\timing.c` and replace the struct
+    definition and ftime call at line 57 with the following:`#if
+    defined(_WIN32)
                     struct _timeb t;
                     _ftime(&t);
     #else

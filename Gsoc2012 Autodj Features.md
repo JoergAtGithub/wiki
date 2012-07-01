@@ -177,7 +177,7 @@ for the user to take over mid-transition, then there will not be a lot
 of change. But if anything needs to be added to allow for user takeover,
 then the wiki will be updated.
 
-#### Closed Topics
+### Closed Topics
 
 Ideas that have been discussed but were decided against
 

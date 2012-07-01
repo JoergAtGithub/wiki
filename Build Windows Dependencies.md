@@ -1018,9 +1018,13 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
 8.  Just copy every `.h` file from the taglib source tree into
     `mixxx-win[32|64]lib-msvc\taglib`. Some of the files just \#include
     their counterparts in other directories with the actual content, so
-    be careful to get the actual content ones.
-9.  Also copy `taglib-1.6.3\taglib_config.h` into
-    `mixxx-win[32|64]lib-msvc`
+    be careful to get the actual content ones. (Do a directory search
+    for `*.h`, then sort by size. Copy everything that's over 2K, then
+    copy everything 2K and under, rejecting conflicts.)
+9.  Also copy the following files to
+    `mixxx-win[32|64]lib-msvc`:`taglib-1.6.3\taglib\toolkit\tmap.tcc
+    taglib-1.6.3\taglib\toolkit\tlist.tcc
+    taglib-1.6.3\taglib_config.h`
 
 ## protobuf
 

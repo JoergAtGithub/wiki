@@ -165,6 +165,20 @@ the entire track is played.
 
 # Discussion
 
+### Open Topics
+
+#### GUI Interaction
+
+One of the new features that is going to be added is allowing the user
+to take over a transition while it is ocurring. The main topic of
+discussion is how to handle this best. Mixxx already has some options to
+deal with this, including soft-takeover. If the current options allow
+for the user to take over mid-transition, then there will not be a lot
+of change. But if anything needs to be added to allow for user takeover,
+then the wiki will be updated.
+
+#### Closed Topics
+
 Ideas that have been discussed but were decided against
 
 ### AutoDJ Cue In

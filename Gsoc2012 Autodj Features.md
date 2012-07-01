@@ -181,7 +181,7 @@ then the wiki will be updated.
 
 Ideas that have been discussed but were decided against
 
-### AutoDJ Cue In
+#### AutoDJ Cue In
 
 An AutoDJ cue in button was discussed. This button would provide a cue
 point for AutoDJ to start playing a song at that was different from the

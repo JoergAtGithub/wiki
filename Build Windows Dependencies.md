@@ -786,18 +786,44 @@ build:
 
 ### Preparation
 
+1.  [Download the Icecast server source](http://www.icecast.org/)
+2.  Extract the file `icecast-2.3.2\src\compat.h` to
+    `libshout-2.3.1\include`
+3.  Rename/copy `libshout-2.2.2\include\shout\shout.h.in` to `shout.h`
+4.  Copy `libshout-2.2.2\include\shout\shout.h` to
+    `mixxx-win[32|64]lib-msvc\shout`
+5.  Copy `libshout-2.2.2\include\os.h` to
+    `mixxx-win[32|64]lib-msvc\shout`
+6.  Edit `mixxx-win[32|64]lib-msvc\shout\shout.h`:
+    1.  Change `#include <os.h>` to `#include "os.h"`
+    2.  Change line 25 to `#ifdef __WINDOWS__`
+
+#### For libshout v2.3.1
+
+1.  Edit timing.h and add near the top: `#if defined(_WIN32)
+    #define HAVE_FTIME 1
+    #include <sys/timeb.h>
+    #endif`
+2.  Edit timing.c and replace the struct definition and ftime call at
+    line 57 with the following:`#if defined(_WIN32)
+                    struct _timeb t;
+                    _ftime(&t);
+    #else
+                    struct timeb t;
+                    ftime(&t);
+    #endif`
+
+#### For libshout v2.2.2
+
 *Thanks to [Prokoba's
 blog](http://zmei.jeox.com/wordpress/?tag=libshout-win32-windows-libshoutdll)
 for guidance\!*
 
-1.  [Download the Icecast server source](http://www.icecast.org/)
-2.  Extract the file `icecast-2.3.2\src\compat.h` to
-    `libshout-2.2.2\include`
-3.  Edit the file `libshout-2.2.2\src\timing\timing.h`:
+1.  Edit the file `libshout-2.2.2\src\timing\timing.h`:
     1.  Remove the `#ifdef _mangle` block
     2.  Before the first `#ifdef _WIN32` line, add `#undef int64_t
         #undef uint64_t`
-4.  Edit the file `libshout-2.2.2\src\shout.c`:
+2.  Edit the file `libshout-2.2.2\src\shout.c`:
     1.  Search and replace all instances of the word `inline` with
         `__inline`
     2.  Change line 1016 to `ret = sock_write_bytes (self->socket,
@@ -805,15 +831,7 @@ for guidance\!*
     3.  Add the following at the top: `#ifndef __MINGW32__
                                         #define va_copy(ap1, ap2) memcpy(&ap1, &ap2, sizeof(va_list))
         #endif` 
-5.  Rename/copy `libshout-2.2.2\include\shout\shout.h.in` to `shout.h`
-6.  Copy `libshout-2.2.2\include\shout\shout.h` to
-    `mixxx-win[32|64]lib-msvc\shout`
-7.  Copy `libshout-2.2.2\include\os.h` to
-    `mixxx-win[32|64]lib-msvc\shout`
-8.  Edit `mixxx-win[32|64]lib-msvc\shout\shout.h`:
-    1.  Change `#include <os.h>` to `#include "os.h"`
-    2.  Change line 25 to `#ifdef __WINDOWS__`
-9.  Edit `libshout-2.2.2\include\shout\shout.h` and place
+3.  Edit `libshout-2.2.2\include\shout\shout.h` and place
     ` __declspec(dllexport)  ` in front of every function definition
 
 ### Build

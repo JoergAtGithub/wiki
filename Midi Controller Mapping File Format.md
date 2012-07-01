@@ -21,6 +21,11 @@ higher.) You can then modify the XML file it creates (or any of the ones
 that ship with Mixxx) using the information on this page if you'd like
 to fine-tune it or add more mappings. When you've finished creating your
 MIDI mapping, **please send it to us** and we'll include it in Mixxx.
+Note that the wizard puts its presets in your user data directory:
+
+  - Windows: %LOCALAPPDATA%\\Mixxx\\midi
+  - Linux: /home/\<username\>/.mixxx/midi
+  - OS X: /home/\<username\>/.mixxx/midi
 
 ## MIDI Crash Course
 

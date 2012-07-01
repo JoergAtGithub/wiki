@@ -5,9 +5,8 @@
 ## Introduction
 
 Support for additional MIDI devices can be added to Mixxx by creating a
-new "MIDI mapping" file. This mapping file tells Mixxx how to translate
-MIDI commands from a controller into commands that Mixxx will
-understand.
+new "MIDI preset" file. This file tells Mixxx how to translate, or map,
+MIDI messages from a controller into commands that Mixxx understands.
 
 The MIDI mapping files are located in the following paths:
 
@@ -15,17 +14,20 @@ The MIDI mapping files are located in the following paths:
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
   - OS X: /Applications/Mixxx.app/Contents/Resources/midi
 
-By far, the easiest way to create a new MIDI mapping is by using the
-MIDI Learn wizard in the Preferences (available in Mixxx 1.7.0 and
-higher.) You can then modify the XML file it creates (or any of the ones
-that ship with Mixxx) using the information on this page if you'd like
-to fine-tune it or add more mappings. When you've finished creating your
-MIDI mapping, **please send it to us** and we'll include it in Mixxx.
-Note that the wizard puts its presets in your user data directory:
+By far, the easiest way to create a new MIDI preset is by using the MIDI
+Learn wizard in the Preferences (available in Mixxx 1.7.0 and higher.)
+You can then modify the XML file it creates (or any of the ones that
+ship with Mixxx) using the information on this page if you'd like to
+fine-tune it or add more mappings. Note that the wizard puts its presets
+in your user data directory:
 
   - Windows: %LOCALAPPDATA%\\Mixxx\\midi
   - Linux: /home/\<username\>/.mixxx/midi
   - OS X: /home/\<username\>/.mixxx/midi
+
+When you've finished creating your MIDI mapping, please send it to us or
+post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
+we'll include it in the next Mixxx version.
 
 ## MIDI Crash Course
 

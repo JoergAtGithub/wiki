@@ -199,7 +199,7 @@ Use Hotcue 1 as the AutoDJ cue in
   - Con: If DJs want to use a different place to enter into the song,
     they will have to change their hot cue that is already set
 
-### Fade Now Control
+#### Fade Now Control
 
 The Fade Now controls could be placed as part of each deck's controls.
 This control would be similar to the loop button, but instead of the

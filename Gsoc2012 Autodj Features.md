@@ -184,6 +184,14 @@ ControlObjects that are needed for transitions, as well as actions to
 take. This would allow simple transitions such as crossfader.fade(8),
 which would fade the crossfader over 8 beats of the song.
 
+#### AutoDJ Instantiation
+
+AutoDJ should be instantiated outside of the Library, so that it will
+persist even when the skin is changed. It was originally planned to be
+instantiated by AutoDJFeature, but this does not solve the problem.
+Currently, AutoDJ is planned to be instantiated in mixxx.cpp along with
+the Library (instead of by the Library object).
+
 ### Closed Topics
 
 Ideas that have been discussed but were decided against

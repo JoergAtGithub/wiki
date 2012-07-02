@@ -177,6 +177,13 @@ for the user to take over mid-transition, then there will not be a lot
 of change. But if anything needs to be added to allow for user takeover,
 then the wiki will be updated.
 
+#### Transition Interface
+
+A transition interface has been suggested. This interface would have the
+ControlObjects that are needed for transitions, as well as actions to
+take. This would allow simple transitions such as crossfader.fade(8),
+which would fade the crossfader over 8 beats of the song.
+
 ### Closed Topics
 
 Ideas that have been discussed but were decided against

@@ -143,9 +143,18 @@ Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
     # Qt gets sad if you use -arch in your CFLAGS/CXXFLAGS. For some reason it does some cutting / munging of your flags and you end up with lone '-arch' flags in your CFLAGS/CXXFLAGS which breaks the build.
     export ARCH_FLAGS=
     source ../environment.sh
-    # NOTE: Using -ffast-math will fail when building SQLite so either remove -ffast-math from environment.sh temporarily or remove --fast-math from the SQLite Makefiles by hand (you'll have to do it for QtWebkit and QtSql). You can do this as the build fails since it will complain about -ffast-math.
+    
+    # Apply patch from QTBUG-23258 to fix Qt 4.8.2 build on OS X 10.5 SDK                                                                                     curl https://bugreports.qt-project.org/secure/attachment/26712/Patch-Qt-4.8-for-10.5 > Patch-Qt-4.8-for-10.5
+    patch -p1 < Patch-Qt-4.8-for-10.5
+    
     # Qt uses -arch x86 not -arch i386
     ./configure -opensource -prefix $QTDIR -arch x86 -arch x86_64 -arch ppc -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release -nomake examples -nomake demos -confirm-license
+    
+    # NOTE: Using -ffast-math will fail when building SQLite so either remove -ffast-math from environment.sh temporarily or remove --fast-math from the SQLite Makefiles (you'll have to do it for QtWebkit and QtSql). You can do this as the build fails since it will complain about -ffast-math. We remove it with sed:
+    find src/sql -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
+    find src/plugins/sqldrivers/sqlite -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
+    find src/plugins/sqldrivers/sqlite2 -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
+    
     make
     sudo make install
 

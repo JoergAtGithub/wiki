@@ -505,6 +505,7 @@ cd ..
     sudo mkdir $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394Types.h $MIXXX_PREFIX/include/hss1394
+    cd ..
 
 # libprotobuf
 

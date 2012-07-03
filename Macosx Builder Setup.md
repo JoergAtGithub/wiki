@@ -500,6 +500,7 @@ cd ..
     scons prefix=$MIXXX_PREFIX
     # Actually, this doesn't work. Just manually copy the files.
     #sudo scons prefix=$MIXXX_PREFIX install
+    install_name_tool -id $MIXXX_PREFIX/lib/libhss1394.dylib obj/libhss1394.dylib
     sudo cp obj/libhss1394.dylib $MIXXX_PREFIX/lib
     sudo mkdir $MIXXX_PREFIX/include/hss1394
     sudo cp inc/HSS1394.h $MIXXX_PREFIX/include/hss1394

@@ -465,13 +465,13 @@ cd ..
     # PortMIDI hard-coded ppc, i386, and x86_64 for CMAKE_OSX_ARCHITECTURES. This is what we are building in this case so no change is necessary.
     cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_C_FLAGS="$CFLAGS" -DCMAKE_CXX_FLAGS="$CXXFLAGS" -DCMAKE_EXE_LINKER_FLAGS="$LDFLAGS" -DCMAKE_SHARED_LINKER_FLAGS="$LDFLAGS" 
     make 
-    sudo make install
     # PortMidi insists on installing to /usr/local/lib. Just move its files to $MIXXX_PREFIX
-    sudo mv /usr/local/lib/libportmidi_s.a $MIXXX_PREFIX/lib
-    sudo mv /usr/local/lib/libpmjni.dylib $MIXXX_PREFIX/lib
-    sudo mv /usr/local/lib/libportmidi.dylib $MIXXX_PREFIX/lib
-    sudo mv /usr/local/include/portmidi.h $MIXXX_PREFIX/include
-    sudo mv /usr/local/include/porttime.h $MIXXX_PREFIX/include
+    #sudo make install
+    cp libportmidi_s.a $MIXXX_PREFIX/lib
+    install_name_tool -id $MIXXX_PREFIX/lib/libportmidi.dylib libportmidi.dylib
+    cp libportmidi.dylib $MIXXX_PREFIX/lib
+    cp porttime/porttime.h $MIXXX_PREFIX/include
+    cp pm_common/portmidi.h $MIXXX_PREFIX/include
     cd ..
 
 # hss1394

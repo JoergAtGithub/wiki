@@ -17,7 +17,27 @@ as `~/build`. The goal of this document is to prepare a root directory
 that looks like `/usr/local` (e.g. a directory with `bin`, `lib`, and
 `include` folders) which has all of Mixxx's dependencies compiled and
 installed to it. When compiling Mixxx, simply provide this directory
-(`$MIXXX_PREFIX`) to scons via the `osxlib` argument.
+(`$MIXXX_PREFIX`) to scons via the `osxlib` argument. This guide also
+assumes you have archives of each source dependency stored in a folder
+named `dependencies` located one level above your build directory.
+
+For ease of maintaining multiple build environments (e.g. different
+versions of Mixxx were released with different library versions) our
+convention is to install all dependencies to `$OSX_SDK/usr/local/XXX`
+where XXX is the name of the environment. For example, we call a 10.5
+universal build environment for Mixxx 1.11 `universal-1.11`, and it's
+located in `/Developer/SDKs/MacOSX10.5.sdk/usr/local/universal-1.11`. If
+you are setting up your own builder and don't care about this, you could
+just set your `$MIXXX_PREFIX` to something standard like `/usr/local`.
+
+For ease of automation, we give ownership permission to our build
+environments while building them so that we can run `make install`
+without `sudo`. This allows the build to proceed without user
+intervention. We literally copy/paste all the code from each section of
+this document into a shell script and run it to create our build
+environment. We have left `sudo make install` throughout this document,
+but you can remove the `sudo` if your user role is an owner of
+`$MIXXX_PREFIX`.
 
 Store this file as `environment.sh` in your build directory.
 
@@ -49,7 +69,7 @@ Store this file as `environment.sh` in your build directory.
     
     export MACOSX_DEPLOYMENT_TARGET="10.5"
     export OSX_SDK=/Developer/SDKs/MacOSX10.5.sdk
-    export MIXXX_PREFIX=$OSX_SDK/usr/local/universal/
+    export MIXXX_PREFIX=$OSX_SDK/usr/local/universal-1.11/
     export PATH=$PATH:$MIXXX_PREFIX/bin/
     
     export COMMON_OPT_FLAGS="-O2 -ffast-math"
@@ -89,10 +109,6 @@ Store this file as `environment.sh` in your build directory.
       export SHLIBFLAGS=$OSX_LDFLAGS
       export DYLIBFLAGS=$OSX_LDFLAGS
     fi
-
-This guide also assumes you have archives of each source dependency
-stored in a folder named `dependencies` located one level above your
-build directory.
 
 # XCode
 

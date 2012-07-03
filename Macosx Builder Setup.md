@@ -27,8 +27,9 @@ convention is to install all dependencies to `$OSX_SDK/usr/local/XXX`
 where XXX is the name of the environment. For example, we call a 10.5
 universal build environment for Mixxx 1.11 `universal-1.11`, and it's
 located in `/Developer/SDKs/MacOSX10.5.sdk/usr/local/universal-1.11`. If
-you are setting up your own builder and don't care about this, you could
-just set your `$MIXXX_PREFIX` to something standard like `/usr/local`.
+you are setting up your own build environment and don't care about this,
+you could just set your `$MIXXX_PREFIX` to something standard like
+`/usr/local`.
 
 For ease of automation, we give ownership permission to our build
 environments while building them so that we can run `make install`

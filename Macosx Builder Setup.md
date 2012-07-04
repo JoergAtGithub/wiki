@@ -172,6 +172,7 @@ Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
     find src/sql -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
     find src/plugins/sqldrivers/sqlite -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
     find src/plugins/sqldrivers/sqlite2 -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
+    find src/3rdparty/webkit/Source/WebCore -name 'Makefile*' -exec sed -i -e 's/-ffast-math //g' "{}" \;
     
     make
     sudo make install

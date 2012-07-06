@@ -1,12 +1,15 @@
 # Building Mixxx's dependencies on Windows
 
 We assume you've installed and configured Visual Studio Express and the
-Microsoft Platform SDK as described in steps 1 & 2 [on this
+Microsoft Platform/Windows SDK as described in steps 1 & 2 [on this
 page](compiling_on_windows), and if you want to build x64 versions with
-the free Visual Studio Express, that you've done [this
-hack](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
-or [this
-one.](http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/)
+the free Visual Studio Express 2008, that you've done [this
+hack](http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/)
+(or [this
+one](http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html)
+if you're using VS 2005.) VS 2010 Express supports x64 projects out of
+the box (but it uses alot more resources than earlier versions due at
+least in part to its (needless) dependence on .NET 4.)
 
 ## Qt
 
@@ -42,14 +45,14 @@ If you want to link Qt against Agner Fog's optimized
 2.  Unzip it to a directory of your choice, say `C:\asmlib`
 3.  Edit
     qt-everywhere-opensource-src-4.6.1\\mkspecs\\win32-msvc2005\\qmake.conf:
-    1.  Add `/Oi-` to `QMAKE_CFLAGS`
-    2.  Add `/LIBPATH:"C:\asmlib"` to `QMAKE_LFLAGS`
+    1.  Add `-Oi-` to `QMAKE_CFLAGS`
+    2.  Add `/LIBPATH:"C:\\asmlib"` to `QMAKE_LFLAGS`
     3.  Add `alibcof32o.lib` (or `alibcof64o.lib` for 64-bit) to
         `QMAKE_LFLAGS` (this ensures it's linked into every module)
 
-### x64 prep
+### x64 prep (optional)
 
-1.  Tweak the Qt configuration: (required)
+1.  Tweak the Qt configuration:
     1.  Edit
         qt-everywhere-opensource-src-4.6.1\\mkspecs\\win32-msvc2008\\qmake.conf:
         1.  Add to `QMAKE_CFLAGS`: `/favor:AMD64` (or use `blend` or
@@ -121,23 +124,13 @@ binaries for Win32 and Win64, so all you need to do is:
 project files, which makes things nice. Just have the DirectX SDK
 installed and open and build. (Step-by-step is given below.)
 
-### x64 prep for VS Express
+### VS 2005 x64 hacks
 
-If you're doing an x64 build with VS Express, you'll first need to
-change some things in the vcproj and sln file in a text editor before
-you open them in VS:
+[Follow these instructions](#x64-prep-for-vs-express-2005) for the
+following files:
 
-1.  For the `portaudio\build\msvc\portaudio.sln` file:
-    1.  Replace all instances of "Win32" (case-sensitive) with
-        "DontWantThis" or something similar
-    2.  Then replace all instances of "x64" with "Win32"
-2.  For the `portaudio\build\msvc\portaudio.vcproj` file:
-    1.  Replace all instances of "|Win32" (case-sensitive) with
-        "|DontWantThis" or something similar
-    2.  Replace all instances of "|x64" with "|Win32"
-    3.  In the \<Platforms\> section at the top of the file, change
-        `Name="Win32"` to `Name="DontWantThis"` and `Name="x64"` to
-        `Name="Win32"`
+    portaudio\build\msvc\portaudio.sln
+    portaudio\build\msvc\portaudio.vcproj
 
 ### Build
 
@@ -258,20 +251,13 @@ project files, which makes things nice. Just open and build.
 which makes things nice. Just open and build. (Step-by-step is given
 below.)
 
-### x64 prep for VS Express
+### VS 2005 x64 hacks
 
-If you're doing an x64 build with VS Express, you'll first need to
-change some things in the vcproj and sln files in a text editor before
-you open them in VS:
+[Follow these instructions](#x64-prep-for-vs-express-2005) for the
+following files:
 
-1.  Replace all instances of "Win32" (case-sensitive) with
-    "DontWantThis" or something similar
-2.  Then replace all instances of "x64" with "Win32"
-
-Do this to all of the following files:
-`libogg-1.1.4\win32\VS2008\libogg_dynamic.sln
-libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj
-`
+    libogg-1.1.4\win32\VS2008\libogg_dynamic.sln
+    libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj
 
 ### Build
 
@@ -307,21 +293,14 @@ libogg-1.1.4\win32\VS2008\libogg_dynamic.vcproj
 which makes things nice. Just open and build. (Step-by-step is given
 below.) Libvorbis depends on libogg, so build that first.
 
-### x64 prep for VS Express
+### VS 2005 x64 hacks
 
-If you're doing an x64 build with VS Express, you'll first need to
-change some things in the vcproj and sln files in a text editor before
-you open them in VS:
+[Follow these instructions](#x64-prep-for-vs-express-2005) for the
+following files:
 
-1.  Replace all instances of "Win32" (case-sensitive) with
-    "DontWantThis" or something similar
-2.  Then replace all instances of "x64" with "Win32"
-
-Do this to all of the following files:
-`libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln
-libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_dynamic.vcproj
-libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_dynamic.vcproj
-`
+    libvorbis-1.2.3\win32\VS2008\vorbis_dynamic.sln
+    libvorbis-1.2.3\win32\VS2008\libvorbis\libvorbis_dynamic.vcproj
+    libvorbis-1.2.3\win32\VS2008\libvorbisfile\libvorbisfile_dynamic.vcproj
 
 ### Build
 
@@ -902,20 +881,13 @@ for guidance\!*
 You downloaded the zlib source above for libid3tag, but we actually need
 to build it for taglib.
 
-##### x64 prep for VS Express
+##### VS 2005 x64 hacks
 
-If you're doing an x64 build with VS Express, you'll first need to
-change some things in the vcproj and sln files in a text editor before
-you open them in VS:
+[Follow these instructions](#x64-prep-for-vs-express-2005) for the
+following files:
 
-1.  Replace all instances of "|Win32" (case-sensitive) with
-    "|DontWantThis" or something similar
-2.  Then replace all instances of "|x64" with "|Win32"
-
-Do this to all of the following files:
-`zlib-1.2.5\contrib\vstudio\vc9\zlibvc.sln
-zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
-`
+    zlib-1.2.5\contrib\vstudio\vc9\zlibvc.sln
+    zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
 
 ##### Build
 
@@ -964,18 +936,16 @@ zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
     -DZLIB_LIBRARY="C:\path\to\zlib123\projects\visualc6\Win32_DLL_Release\zlib1.lib"
     -DZLIB_INCLUDE_DIR="C:\path\to\zlib123" -G "Visual Studio 9 2008"`
     (for x64 use `"Visual Studio 9 2008 Win64"`)
-5.  For VS Express on x64:
+5.  For VS Express 2008 on x64:
     1.  The above command will return a failure. Run it again but hit
         CTRL-C before it finishes.
     2.  Run it a third time and it will generate the x64 project files.
         ^\_^
     3.  Run it a fourth time to ensure the generated files are coherent.
-    4.  For all of the following files
-        1.  Search and replace all instances of "x64" with "Win32"
-        2.  Then search & replace `machine:Win32` with `machine:x64`
-            `taglib-1.6.3\taglib.sln
-            taglib-1.6.3\taglib\tag.vcproj
-            `
+    4.  For VS Express 2005 on x64, [follow these
+        instructions](#x64-prep-for-vs-express-2005) for the following
+        files: `taglib-1.6.3\taglib.sln
+        taglib-1.6.3\taglib\tag.vcproj`
 
 ### Build
 
@@ -1054,6 +1024,28 @@ project files, which makes things nice. Just open and build.
     `protobuf-2.4.1\vsprojects\Release\libprotobuf-lite.lib
     protobuf-2.4.1\vsprojects\include\google (the entire directory)
     `
+
+# x64 prep for VS Express 2005
+
+If you're doing an x64 build with VS Express 2005, you'll first need to
+change some things in the `vcproj` and `sln` files in a text editor
+before you open them in VS:
+
+1.  For the `sln` files:
+    1.  Replace all instances of "Win32" (case-sensitive) with
+        "DontWantThis" or something similar
+    2.  Then replace all instances of "x64" with "Win32"
+    3.  Save the files
+2.  For the `vcproj` files:
+    1.  Replace all instances of "|Win32" (case-sensitive) with
+        "|DontWantThis" or something similar
+    2.  Replace all instances of "|x64" with "|Win32"
+    3.  In the \<Platforms\> section at the top of the file, change
+        `Name="Win32"` to `Name="DontWantThis"` and `Name="x64"` to
+        `Name="Win32"`
+    4.  Save the files
+3.  Continue with the Build instructions above for the dependency in
+    question. (Press your browser's Back button.)
 
 # Optimizations
 

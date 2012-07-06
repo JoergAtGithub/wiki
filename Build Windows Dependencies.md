@@ -793,6 +793,8 @@ build:
                     struct timeb t;
                     ftime(&t);
     #endif`
+3.  Edit `libshout-2.3.1\include\os.h` and add the following line under
+    the `int32` one:`typedef unsigned __int16 uint16_t;`
 
 #### For libshout v2.2.2
 
@@ -839,8 +841,12 @@ for guidance\!*
     2.  Change Whole Program Optimization to "Use Link Time Code
         Generation"
     3.  Click OK
-8.  Find `libshout-2.2.2\src\vorbis.c` and drag it to the `Source Files`
-    folder in the project
+8.  Fix missing source files:
+    1.  Find `libshout-2.2.2\src\vorbis.c` and drag it to the `Source
+        Files` folder in the project
+    2.  For v2.3.1, drag the following additional files to the `Source
+        Files` folder in the project:`libshout-2.3.1\src\webm.c
+        libshout-2.3.1\src\opus.c`
 9.  Add the paths to the dependencies:
     1.  Right-click `libshout` and choose Properties.
     2.  Under Configuration Properties-\>C/C++-\>General, add the

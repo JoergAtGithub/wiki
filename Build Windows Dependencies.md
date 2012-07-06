@@ -849,13 +849,16 @@ for guidance\!*
         libshout-2.3.1\src\opus.c`
 9.  Add the paths to the dependencies:
     1.  Right-click `libshout` and choose Properties.
-    2.  Under Configuration Properties-\>C/C++-\>General, add the
+    2.  If you're using a static build of pthreads, under Configuration
+        Properties-\>C/C++-\>Preprocessor, add `PTW32_STATIC_LIB` to
+        Preprocessor Definitions
+    3.  Under Configuration Properties-\>C/C++-\>General, add the
         following paths under `Additional Include Directories`:
         `..\..\pthreads-w32-2-8-0-release,..\..\libvorbis-1.2.3\include,..\..\libogg-1.1.4\include
         `
         1.  If you didn't copy `compat.h`, add the path to the Icecast
             server source as well, `..\..\icecast-2.3.2\src`
-    3.  Go to Configuration Properties-\>Linker
+    4.  Go to Configuration Properties-\>Linker
         1.  Under General, for Additional Library Directories, enter the
             semicolon-separated paths:
             1.  to the pthreads path you created above (e.g.
@@ -864,8 +867,10 @@ for guidance\!*
                 `mixxx-win[32|64]lib-msvc` at this point, so you can
                 just enter the path to that.)
         2.  Under Linker, for Additional Dependencies, enter
-            `pthreadVC2.lib Ws2_32.lib winmm.lib ogg.lib vorbis.lib`
-    4.  Click OK.
+            `pthreadVC2.lib Ws2_32.lib winmm.lib ogg.lib vorbis.lib` (If
+            building Mixxx statically, you only need `pthreadVC2.lib`
+            here since Mixxx links the others for Qt.)
+    5.  Click OK.
 10. Right click `libshout` and click Build. (If you get a bunch of
     "already defined" errors, go to Configuration Properties-\>Linker
     and under Linker, for Ignore Specific Library, enter `LIBCMT.lib`.)

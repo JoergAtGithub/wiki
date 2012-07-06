@@ -130,7 +130,7 @@ QTDIR = C:\\qt-everywhere-opensource-src-4.6.1 PATH =
 C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\</code\>
 
 ``` 
-  - Follow the instructions [[http://whitemarker.blogspot.com/2006/12/c-visual-c-2005-express-edition-x64.html|on this page]] to configure VS C++ to use the x64 compiler, includes, and libs
+  - Follow the instructions [[http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/|on this page]] to configure VS C++ Express to use the x64 compiler, includes, and libs
 - Build Qt. [[http://mixxx.org/wiki/doku.php/build_windows_dependencies#qt|Click here for details.]]
 - Get the Mixxx source code
 * Checkout the mixxx repository: with TortoiseBZR, right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''

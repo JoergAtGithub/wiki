@@ -845,7 +845,7 @@ for guidance\!*
     1.  Right-click `libshout` and choose Properties.
     2.  Under Configuration Properties-\>C/C++-\>General, add the
         following paths under `Additional Include Directories`:
-        `..\..\pthreads-w32-2-8-0-release,..\..\libvorbis-1.2.3\include,..\..\libogg-1.1.4\include,..\..\libvorbis-1.2.3\include\vorbis,
+        `..\..\pthreads-w32-2-8-0-release,..\..\libvorbis-1.2.3\include,..\..\libogg-1.1.4\include
         `
         1.  If you didn't copy `compat.h`, add the path to the Icecast
             server source as well, `..\..\icecast-2.3.2\src`

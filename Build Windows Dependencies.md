@@ -947,15 +947,14 @@ following files:
     -DZLIB_LIBRARY="C:\path\to\zlib123\projects\visualc6\Win32_DLL_Release\zlib1.lib"
     -DZLIB_INCLUDE_DIR="C:\path\to\zlib123" -G "Visual Studio 9 2008"`
     (for x64 use `"Visual Studio 9 2008 Win64"`)
-5.  For VS Express 2008 on x64:
+5.  For VS Express 2005 on x64:
     1.  The above command will return a failure. Run it again but hit
         CTRL-C before it finishes.
     2.  Run it a third time and it will generate the x64 project files.
         ^\_^
     3.  Run it a fourth time to ensure the generated files are coherent.
-    4.  For VS Express 2005 on x64, [follow these
-        instructions](#x64-prep-for-vs-express-2005) for the following
-        files: `taglib-1.6.3\taglib.sln
+    4.  [Follow these instructions](#x64-prep-for-vs-express-2005) for
+        the following files: `taglib-1.6.3\taglib.sln
         taglib-1.6.3\taglib\tag.vcproj`
 
 ### Build

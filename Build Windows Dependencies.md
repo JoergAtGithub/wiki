@@ -889,6 +889,22 @@ following files:
     zlib-1.2.5\contrib\vstudio\vc9\zlibvc.sln
     zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj
 
+##### Pre-build
+
+1.  If you don't have MASM installed, just [download the MASM object
+    files from
+    here](http://www.winimage.com/zLibDll/zlib125_masm_obj.zip) and
+    unpack into your zlib source tree. (Or choose the ReleaseWithoutASM
+    configuration.)
+2.  If you do:
+    1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
+        SDK-\>CMD Shell)
+    2.  Type `setenv /xp /x64 /release` and hit Enter. (Or `setenv /xp
+        /x86 /release` for 32-bit.)
+    3.  Type `cd zlib-1.2.5\contrib\masmx64` or `cd
+        zlib-1.2.5\contrib\masmx86` depending on your platform.
+    4.  Type `bld_ml64` or `bld_ml32` depending on your platform.
+
 ##### Build
 
 1.  Start the platform SDK command prompt (Start-\>Microsoft Windows
@@ -902,19 +918,14 @@ following files:
 4.  Open the `zlib-1.2.5\contrib\vstudio\vc9\zlibvc.vcproj` file via
     File-\>Open-\>Project/Solution.
 5.  Choose the Release configuration and the Win32 platform.
-6.  If you don't have MASM installed, just [download the MASM object
-    files from
-    here](http://www.winimage.com/zLibDll/zlib125_masm_obj.zip) and
-    unpack into your zlib source tree. (Or choose the ReleaseWithoutASM
-    configuration.)
-7.  Right-click the `zlibvc` project and choose Properties
-8.  Under Configuration Properties-\>C/C++-\>Preprocessor, add
+6.  Right-click the `zlibvc` project and choose Properties
+7.  Under Configuration Properties-\>C/C++-\>Preprocessor, add
     **`ZLIB_DLL`** to the list of Preprocessor Definitions
-9.  Under Code Generation, ensure that Runtime Library is set to
+8.  Under Code Generation, ensure that Runtime Library is set to
     **`Multi-threaded DLL (/MD)`**
-10. Click OK
-11. Right-click the `zlibvc` project again and click Build
-12. When it's done, copy the following file to
+9.  Click OK
+10. Right-click the `zlibvc` project again and click Build
+11. When it's done, copy the following file to
     `mixxx-win[32|64]lib-msvc`:`zlib-1.2.5\contrib\vstudio\vc9\x86\ZlibDllRelease\zlibwapi.dll`
     (We don't need .h or .lib files for this since Mixxx itself doesn't
     use it.)

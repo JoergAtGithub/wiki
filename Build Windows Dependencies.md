@@ -1029,11 +1029,15 @@ project files, which makes things nice. Just open and build.
 7.  Right-click `libprotobuf-lite` and click build.
 8.  When it finishes, run the batch file
     `protobuf-2.4.1\vsprojects\extract_includes.bat`
-9.  Copy the following files into `mixxx-win32lib-msvc` or
-    `mixxx-win64lib-msvc`:
+9.  Copy the following files into `mixxx-win[32|64]lib-msvc`:
     `protobuf-2.4.1\vsprojects\Release\libprotobuf-lite.lib
     protobuf-2.4.1\vsprojects\include\google (the entire directory)
     `
+10. Right-click `protoc` and click Build.
+11. When it finishes, copy
+    `protobuf-2.4.1\vsprojects\x64\Release\protoc.exe` into
+    `mixxx-win[32|64]lib-msvc`. This directory now needs to be in your
+    PATH when you build Mixxx.
 
 # x64 prep for VS Express 2005
 

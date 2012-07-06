@@ -978,12 +978,16 @@ following files:
     File-\>Open-\>Project/Solution. (If on x64, ignore the platform
     warnings. The "tag" project should appear build-able.)
 3.  Choose the Release configuration and the Win32 platform
-4.  Right click `tag` and click Build.
-5.  When it finishes, copy the following files into
+4.  If building as a static library, ensure that Runtime Library under
+    Configuration Properties-\>C/C++-\>Code generation is set to
+    **`Multi-threaded DLL (/MD)`** to prevent duplicate symbol errors
+    when linking Mixxx.
+5.  Right click `tag` and click Build.
+6.  When it finishes, copy the following files into
     `mixxx-win32lib-msvc` or `mixxx-win64lib-msvc`:
     `taglib-1.6.3\taglib\Release\tag.lib
     taglib-1.6.3\taglib\Release\tag.dll`
-6.  If you get an error about unresolved external symbols, do the
+7.  If you get an error about unresolved external symbols, do the
     following:
     1.  Re-open the zlib project above
     2.  Right-click zlibvc and click Properties
@@ -994,7 +998,7 @@ following files:
     4.  Rebuild zlib & copy the dll file as above to the Mixxx lib
         folder
     5.  Re-open taglib and rebuild
-7.  ~~Copy the following files into a `taglib` folder in
+8.  ~~Copy the following files into a `taglib` folder in
     `mixxx-win[32|64]lib-msvc`: `taglib-1.6.3\taglib\toolkit\tfile.h
     taglib-1.6.3\taglib\toolkit\taglib.h
     taglib-1.6.3\taglib\toolkit\tbytevector.h
@@ -1006,13 +1010,13 @@ following files:
     taglib-1.6.3\taglib\toolkit\tmap.h
     taglib-1.6.3\taglib\toolkit\tmap.tcc
     `~~
-8.  Just copy every `.h` file from the taglib source tree into
+9.  Just copy every `.h` file from the taglib source tree into
     `mixxx-win[32|64]lib-msvc\taglib`. Some of the files just \#include
     their counterparts in other directories with the actual content, so
     be careful to get the actual content ones. (Do a directory search
     for `*.h`, then sort by size. Copy everything that's over 2K, then
     copy everything 2K and under, rejecting conflicts.)
-9.  Also copy the following files to
+10. Also copy the following files to
     `mixxx-win[32|64]lib-msvc`:`taglib-1.6.3\taglib\toolkit\tmap.tcc
     taglib-1.6.3\taglib\toolkit\tlist.tcc
     taglib-1.6.3\taglib_config.h`

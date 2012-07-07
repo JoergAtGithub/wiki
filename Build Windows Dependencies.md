@@ -548,12 +548,13 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 build. It gives the following errors:`bitreader_asm.obj : error LNK2001:
 unresolved external symbol _FLAC__crc16_table
 bitreader_asm.obj : error LNK2001: unresolved external symbol
-_bitreader_read_from_client_` The only solution currently found is to
-download the [OpenCodecs
+_bitreader_read_from_client_` The only solutions currently found are to
+build the static version, or to download the [OpenCodecs
 source](http://downloads.xiph.org/releases/oggdsf/opencodecs_0.85.17777_src.7z)
 and use the
 `opencodecs\src\lib\codecs\flac\libs\libflac\src\libFLAC\libFLAC_dynamic.vcproj`
-as-is and skip the rest of this section.
+as-is and skip the rest of this section since that source seems to
+include the below patches.
 
 1.  Copy `libogg-1.1.4\win32\VS2008\Win32\Release_SSE\libogg_static.lib`
     to `flac-1.2.1\obj\release\lib` and rename it to `ogg_static.lib`
@@ -674,6 +675,9 @@ as-is and skip the rest of this section.
     4.  For the dynamic one only, go to Configuration
         Properties-\>Linker-\>Debugging and ensure Generate Debug Info
         is set to `No`
+11. If you're going to use the static library, edit
+    `mixxx\src\soundsourceflac.h` and add `#define FLAC__NO_DLL` above
+    the `#include <FLAC/stream_decoder.h>` line.
 
 ### Build
 

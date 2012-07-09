@@ -96,6 +96,53 @@ simple as this:
     // Disable the microphone from elsewhere in Mixxx.
     pMicEnabledCOT->slotSet(0.0);
 
+# Types of Controls
+
+`ControlObject` has a variety of subclasses. Each of these subclasses
+allows you to express constraints on the value stored in the
+`ControlObject`. For example, if you wanted to represent a knob that had
+values between -1 and 1 then you could use a ControlPotmeter and set its
+min and max value to -1 and 1. This would prevent any other part of
+Mixxx from setting the control to an invalid value.
+
+Another use of using a subclass of `ControlObject` is that you can make
+a control that is non-linear in the values that it produces. For
+example, a `ControlLogpotmeter` is a knob/potentiometer whose output
+follows a logarithmic curve even though the input coming from a MIDI
+controller of the GUI is linear.
+
+## ControlPushButton
+
+A `ControlPushButton` is a control that emulates a button. The name is a
+misnomer since it doesn't only emulate push-buttons -- it can also
+emulate multi-state toggle buttons.
+
+## ControlPotmeter
+
+A `ControlPotmeter` represents a knob or potentiometer that has a
+minimum and maximum value. All modifications to the control are checked
+and snapped within the specified range.
+
+All `ControlPotmeter`s have a set of additional controls that are
+automatically created for them. Assuming a `ConfigKey` of
+`[Group]`,`item`, the controls that are created are:
+
+  - `[Group]`,`item_up` -- Increment (coarse adjustent, default 10% of
+    range)
+  - `[Group]`,`item_down` -- Decrement (coarse adjustent, default 10% of
+    range)
+  - `[Group]`,`item_up_small` -- Increment by a small amount (fine
+    adjustent, default 1% of range)
+  - `[Group]`,`item_down_small` -- Decrement by a small amount (fine
+    adjustent default 1% of range)
+  - `[Group]`,`item_set_default` -- Sets the value to default (the
+    default default is the half-way point
+  - `[Group]`,`item_set_zero` -- Sets the value to 0
+  - `[Group]`,`item_set_one` -- Sets the value to 1
+  - `[Group]`,`item_set_minus_one` -- Sets the value to -1
+  - `[Group]`,`item_toggle` -- Toggle between 0 and 1
+  - `[Group]`,`item_minus_toggle` -- Toggle between 0 and -1
+
 # Automatically reacting to control changes
 
 As different parts of Mixxx change controls that you create, you will

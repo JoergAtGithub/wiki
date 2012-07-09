@@ -117,6 +117,28 @@ A `ControlPushButton` is a control that emulates a button. The name is a
 misnomer since it doesn't only emulate push-buttons -- it can also
 emulate multi-state toggle buttons.
 
+`ControlPushButton` has the following modes:
+
+  - Push-button -- acts like a push button where a value \> 0 means it
+    is pressed and a value of 0 means it is not pressed.
+  - Toggle button -- acts like a multi-state toggle button. Pressing it
+    and releasing it will increment its value by one. Once it increments
+    past the total number of states it has it will wrap around to 0. For
+    a 2-state toggle button this means it will toggle between 0 and 1
+    every time you press it. 
+  - Power-Window button -- acts like a power-window button on your car.
+    Pressing and holding it makes it act like a push-button (e.g. power
+    window goes down or up only as you hold it) but pressing and
+    releasing it quickly will toggle it (e.g. power window goes down or
+    up automatically). 
+
+Relevant Methods:
+
+  - To change the mode, call `ControlPushButton::setButtonMode(enum
+    ButtonMode)` 
+  - To change the number of states call
+    `ControlPushButton::setStates(int)`
+
 ## ControlPotmeter
 
 A `ControlPotmeter` represents a knob or potentiometer that has a
@@ -142,6 +164,12 @@ automatically created for them. Assuming a `ConfigKey` of
   - `[Group]`,`item_set_minus_one` -- Sets the value to -1
   - `[Group]`,`item_toggle` -- Toggle between 0 and 1
   - `[Group]`,`item_minus_toggle` -- Toggle between 0 and -1
+
+## ControlLogpotmeter
+
+## ControlBeat
+
+## ControlTTRotary
 
 # Automatically reacting to control changes
 

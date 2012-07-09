@@ -82,4 +82,5 @@ see them in other sections.
   - [Controllers (MIDI, HID, etc.)](developer_guide_controllers)
   - [Keyboard Control](developer_guide_keyboard)
   - [Preferences Dialogs](developer_guide_preferences)
+  - [Waveform](developer_guide_waveform)
   - [GUI Widgets](developer_guide_widgets)

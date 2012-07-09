@@ -1,4 +1,4 @@
-# MixxxControls
+# Controls
 
 Each control inside Mixxx is identified by a unique string. These
 strings are used in the keyboard mappings, controller mappings, and

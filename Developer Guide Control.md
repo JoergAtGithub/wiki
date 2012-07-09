@@ -22,7 +22,11 @@ Control System](revamped_control_system).
 Controls are referred to by a 2-part name called a `ConfigKey`.
 `ConfigKey`s have a `group` and an `item`. The group is used to explain
 the category of the control while the item describes specifically what
-the control is.
+the control is. By convention, the group of a ConfigKey is wrapped with
+square brackets. This is because the `ConfigKey` class is also used to
+indicate values to store in the Mixxx preferences file which is
+organized like a [Windows INI
+file](http://en.wikipedia.org/wiki/INI_file).
 
 Examples:
 

@@ -35,7 +35,7 @@ of what it does is:
   - Interpret command line arguments
   - Create a `MixxxApp` class which is what starts up the rest of Mixxx.
 
-# `MixxxApp`
+# MixxxApp Class
 
 `MixxxApp` is the class that ties everything Mixxx does together. Mixxx
 is made up of a variety of subsystems that all accomplish different

@@ -10,8 +10,8 @@ have duplicate logic to support keyboard control, MIDI/HID control, and
 GUI control. The keyboard, MIDI/HID, and GUI all use the same API to
 interact with Mixxx's mixing engine and other subsystems.
 
-The first version (present in all Mixxx versions up to Mixxx 1.11.0) of
-the control system is limited to only double-precision floating point
+The first version (present since the very beginnings of Mixxx) of the
+control system is limited to only double-precision floating point
 values. In the future we would like to replace the control system with
 one that can support any type based on Qt's `QVariant` data type. For
 more information on this project, see the design document: [Revamped

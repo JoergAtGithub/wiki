@@ -59,18 +59,27 @@ Among the things it does (in no particular order) are:
   - Load and save the Mixxx config file.
   - Initializes and displays the Mixxx GUI
 
-# Modules
+# Core Infrastructure
+
+These are the fundamental building blocks used almost everywhere in
+Mixxx. You should skim these first so that you aren't confused when you
+see them in other sections.
+
+  - [Control System (ControlObjects)](developer_guide_control)
+  - [Config System (ConfigObject, ConfigKey)](developer_guide_config)
+
+# Major Subsystems
 
   - [Library](developer_guide_library)
   - [Shoutcast](developer_guide_shoutcast)
   - [Mixing Engine](developer_guide_engine)
   - [SoundManager (OS audio interface)](developer_guide_soundmanager)
-  - [Control System (ControlObjects)](developer_guide_control)
   - [SoundSource (per-format audio
     decoding)](developer_guide_soundsource)
   - [Analysers (beat detection, key detection, waveform analysis,
     replaygain, etc.)](developer_guide_analysers)
   - [Vinyl Control](developer_guide_vinyl_control)
   - [Controllers (MIDI, HID, etc.)](developer_guide_controllers)
-  - [Keyboard](developer_guide_keyboard)
-  - [Preferences](developer_guide_preferences)
+  - [Keyboard Control](developer_guide_keyboard)
+  - [Preferences Dialogs](developer_guide_preferences)
+  - [GUI Widgets](developer_guide_widgets)

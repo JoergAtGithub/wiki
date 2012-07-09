@@ -19,6 +19,12 @@ trial and error even if you don't know these. It will help significantly
 if you have some experience with the [Qt
 Framework](http://qt.nokia.com/products/) which Mixxx uses extensively.
 
+We recommend you review these sections of the Qt documentation to get
+familiar with aspects of Qt that we use heavily:
+
+  - [Signals &
+    Slots](http://qt-project.org/doc/latest/signalsandslots.html)
+
 # main.cpp
 
 As all C++ programs usually do, Mixxx starts up with a `main` function

@@ -21,7 +21,8 @@ Framework](http://qt.nokia.com/products/) which Mixxx uses extensively.
 
 # main.cpp
 
-As all C++ programs usually do, Mixxx starts up in the function
+As all C++ programs usually do, Mixxx starts up with a `main` function
+located in `src/main.cpp`. It looks roughly like this:
 
     int main(int argc, char** argv) { 
         // start up Mixxx

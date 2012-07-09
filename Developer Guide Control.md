@@ -101,8 +101,8 @@ simple as this:
 `ControlObject` has a variety of subclasses. Each of these subclasses
 allows you to express constraints on the value stored in the
 `ControlObject`. For example, if you wanted to represent a knob that had
-values between -1 and 1 then you could use a ControlPotmeter and set its
-min and max value to -1 and 1. This would prevent any other part of
+values between -1 and 1 then you could use a `ControlPotmeter` and set
+its min and max value to -1 and 1. This would prevent any other part of
 Mixxx from setting the control to an invalid value.
 
 Another use of using a subclass of `ControlObject` is that you can make

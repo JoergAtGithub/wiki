@@ -31,6 +31,9 @@ samplerate settings the user has configured their soundcard at
 At a latency of `X` milliseconds and a samplerate of `Y` samples per
 second per channel, and stereo channels the number of samples that Mixxx
 must generate to fill the buffer is given by this simple relationship:
+`X * Y * 2`.
+
+For example:
 
 ``` c++
 double latency = 0.001; // 1 millisecond

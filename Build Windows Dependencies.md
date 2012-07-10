@@ -676,7 +676,7 @@ include the below patches.
         Properties-\>Linker-\>Debugging and ensure Generate Debug Info
         is set to `No`
 11. If you're going to use the static library, edit
-    `mixxx\src\soundsourceflac.h` and add `#define FLAC__NO_DLL` above
+    `mixxx\src\soundsourceflac.h` and add: `#define FLAC__NO_DLL` above
     the `#include <FLAC/stream_decoder.h>` line.
 
 ### Build

@@ -87,7 +87,7 @@ of its interesting work is done in its `process` method.
 
 ## Mixing Channels
 
-''EngineMaster' supports mixing multiple streams of audio together. To
+`EngineMaster` supports mixing multiple streams of audio together. To
 add a channel of audio to `EngineMaster` you must create an
 `EngineChannel` class that represents your channel of audio. For
 example, decks use the `EngineDeck`, samplers use the `EngineSampler`

@@ -192,6 +192,16 @@ instantiated by AutoDJFeature, but this does not solve the problem.
 Currently, AutoDJ is planned to be instantiated in mixxx.cpp along with
 the Library (instead of by the Library object).
 
+#### Four Deck Layout
+
+#### Hardware Controller Interaction
+
+#### XFader Engine Redesign
+
+#### Pitch Control
+
+#### Crossfader Curves
+
 ### Closed Topics
 
 Ideas that have been discussed but were decided against

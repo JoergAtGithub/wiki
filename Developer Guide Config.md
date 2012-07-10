@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to Mixxx's Configuration System
 
 The `ConfigObject` system is how Mixxx stores user preferences. The
 `ConfigObject` is just a key-value store where the keys are `ConfigKey`

@@ -93,6 +93,13 @@ see them in other sections.
 
 # How to write Mixxx Code
 
+Now that you've had a brief overview of the Mixxx codebase. It's time to
+dive in\!
+
+This section will go over how to be a Mixxx developer -- building Mixxx
+yourself, to filing bugs, submitting patches and getting your feature
+branches merged.
+
 ## Getting the Code
 
 ## Building Mixxx

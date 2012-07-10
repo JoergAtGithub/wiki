@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to Mixxx's Control System
 
 Mixxx's control system is best described as a thread-safe communication
 channel that allows different threads to have shared access to read and

@@ -50,14 +50,16 @@ done this, you've created a global control that is accessible by the
 As an example, let's say we want to create a control that keeps track of
 whether the microphone is enabled:
 
-    ConfigKey micEnabledKey = ConfigKey("[Microphone]", "enabled");
-    ControlObject* pMicEnabled = new ControlObject(micEnabledKey);
-    
-    // Sets [Microphone],enabled to 1 (on)
-    pMicEnabled->set(1.0);
-    
-    // Sets [Microphone],enabled to 0 (off)
-    pMicEnabled->set(0.0);
+``` c++
+ConfigKey micEnabledKey = ConfigKey("[Microphone]", "enabled");
+ControlObject* pMicEnabled = new ControlObject(micEnabledKey);
+
+// Sets [Microphone],enabled to 1 (on)
+pMicEnabled->set(1.0);
+
+// Sets [Microphone],enabled to 0 (off)
+pMicEnabled->set(0.0);
+```
 
 Once you have created a `ControlObject`, it is inserted into a global
 registry of controls and any other Mixxx thread can look it up by name.
@@ -65,24 +67,26 @@ registry of controls and any other Mixxx thread can look it up by name.
 For example, if you wanted to create a GUI widget that looked up whether
 the microphone was enabled or not, you would do this:
 
-    ConfigKey micEnabledKey = ConfigKey("[Microphone]", "enabled");
+``` c++
+ConfigKey micEnabledKey = ConfigKey("[Microphone]", "enabled");
+
+// Lookup the control by ConfigKey in the global registry. Returns NULL if control does not exist!
+ControlObject* pMicEnabledCO = ControlObject::getControl(micEnabledKey);
+
+// If the mic-enabled control exists...
+if (pMicEnabled != NULL) {
+    // You could call pMicEnabledCO->get() to get the controls value but this is not thread safe.
+    // Instead, wrap it the ControlObject in a ControlObjectThread
+    ControlObjectThread* pMicEnabledCOT = new ControlObjectThread(pMicEnabledCO)
+    bool mic_enabled = pMicEnabledCOT->get() > 0.0;
     
-    // Lookup the control by ConfigKey in the global registry. Returns NULL if control does not exist!
-    ControlObject* pMicEnabledCO = ControlObject::getControl(micEnabledKey);
-    
-    // If the mic-enabled control exists...
-    if (pMicEnabled != NULL) {
-        // You could call pMicEnabledCO->get() to get the controls value but this is not thread safe.
-        // Instead, wrap it the ControlObject in a ControlObjectThread
-        ControlObjectThread* pMicEnabledCOT = new ControlObjectThread(pMicEnabledCO)
-        bool mic_enabled = pMicEnabledCOT->get() > 0.0;
-        
-        if (mic_enabled) {
-          // draw a red light indicating the mic is enabled
-        } else {
-          // draw a dim off light indicating the mic is disabled
-        }
+    if (mic_enabled) {
+      // draw a red light indicating the mic is enabled
+    } else {
+      // draw a dim off light indicating the mic is disabled
     }
+}
+```
 
 Note that we used a `ControlObjectThread` to wrap the `ControlObject` we
 looked up from the control system. This is because we are not the
@@ -93,8 +97,10 @@ within Mixxx.
 To change the microphone-enabled value from elsewhere in Mixxx, it's as
 simple as this:
 
-    // Disable the microphone from elsewhere in Mixxx.
-    pMicEnabledCOT->slotSet(0.0);
+``` c++
+// Disable the microphone from elsewhere in Mixxx.
+pMicEnabledCOT->slotSet(0.0);
+```
 
 # Types of Controls
 
@@ -183,21 +189,23 @@ If you are the creator of a control, i.e. you are using the raw
 changes in your control by connecting to the `ControlObject`'s
 `valueChanged(double)` signal.
 
-    ControlObject* pMicEnabled = new ControlObject(ConfigKey("[Microphone]", "enabled"));
-    connect(pMicEnabled, SIGNAL(valueChanged(double)), 
-            this, SLOT(slotMicrophoneEnabledRequest(double)));
-    
-    // In your slot, handle the changes to the [Microphone],enabled control
-    void MicrophoneManager::slotMicrophoneEnabledRequest(double v) {
-      // The microphone's enabled value has changed
-      bool mic_enabled = v > 0.0;
-      
-      if (mic_enabled) {
-        // some other part of Mixxx is requesting to enable the microphone, do that
-      }  else {
-        // some other part of Mixxx is requesting to disable the microphone, do that
-      }
-    }
+``` c++
+ControlObject* pMicEnabled = new ControlObject(ConfigKey("[Microphone]", "enabled"));
+connect(pMicEnabled, SIGNAL(valueChanged(double)), 
+        this, SLOT(slotMicrophoneEnabledRequest(double)));
+
+// In your slot, handle the changes to the [Microphone],enabled control
+void MicrophoneManager::slotMicrophoneEnabledRequest(double v) {
+  // The microphone's enabled value has changed
+  bool mic_enabled = v > 0.0;
+  
+  if (mic_enabled) {
+    // some other part of Mixxx is requesting to enable the microphone, do that
+  }  else {
+    // some other part of Mixxx is requesting to disable the microphone, do that
+  }
+}
+```
 
 `ControlObject` actually has two value-change signals
 `valueChanged(double)` and `valueChangedFromEngine(double)`. These two
@@ -219,7 +227,7 @@ Going back to the microphone-enabled GUI widget example, if you are
 using a `ControlObjectThread`, you can listen to changes in the control
 by doing the following:
 
-``` 
+``` c++
 ControlObjectThread* pMicEnabledCOT = new ControlObjectThread(ControlObject::getControl(ConfigKey("[Microphone]", "enabled")));
 connect(pMicEnabledCOT, SIGNAL(valueChanged(double)),
         this, SLOT(slotMicrophoneEnabledChanged(double v)));

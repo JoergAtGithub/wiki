@@ -17,8 +17,8 @@ The operating system callback requesting samples from Mixxx is running
 in what we call the callback thread. This is usually a realtime thread
 and is performance sensitive. Doing any kind of I/O or locking of
 mutexes in this thread is highly discouraged. Anything that can block
-the callback thread is in danger of causing user-audible skips in the
-output audio.
+the callback thread is in danger of causing user-audible skips (called
+*xruns*) in the output audio.
 
 # The Callback Buffer
 

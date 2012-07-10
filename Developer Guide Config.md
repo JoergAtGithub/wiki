@@ -13,6 +13,21 @@ preferences on disk and since it is stored in the same format as a
 [Windows INI file](http://en.wikipedia.org/wiki/INI_file), the sections
 are wrapped in square brackets.
 
+# Thread Safety
+
+As of 07/2012 `ConfigObject` is not thread safe but it is often used
+across threads in an unsafe manner. We haven't had any crashes reported
+in the wild that we believe to be caused by this but we should fix this.
+
+# Speed
+
+Both the `getValueString` and `set` methods of `ConfigObject` are
+\*linear time\* algorithms in the number of preferences stored in the
+`ConfigObject`. Take care to not call these methods repeatedly since you
+will waste time continuously iterating the list of all preferences. In
+the future this should be converted to use a `QHash` so that set and get
+are constant time operations.
+
 # On-disk Storage
 
 At startup, Mixxx loads the preference keys and values from the users

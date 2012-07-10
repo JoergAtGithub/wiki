@@ -84,3 +84,47 @@ buffer of audio be generated.
 
 `EngineMaster`, like most engine classes, is an `EngineObject` and all
 of its interesting work is done in its `process` method.
+
+## Mixing Channels
+
+''EngineMaster' supports mixing multiple streams of audio together. To
+add a channel of audio to `EngineMaster` you must create an
+`EngineChannel` class that represents your channel of audio. For
+example, decks use the `EngineDeck`, samplers use the `EngineSampler`
+class, and microphones use the `EngineMicrophone` class. All 3 of these
+are children of `EngineChannel`. To add a sampler or deck or microphone
+to `EngineMaster` you call the `addChannel` method on `EngineMaster`.
+
+As you will find in `mixxx.cpp`:
+
+``` C++
+EngineMicrophone* pMicrophone = new EngineMicrophone("[Microphone]"); 
+m_pEngine->addChannel(pMicrophone);
+```
+
+This registers an `EngineMicrophone` class with the `EngineMaster`. When
+mixing the master and headphone outputs, `EngineMaster` will query the
+`EngineMicrophone` that is created for whether it is active, and if so,
+ask it to `process` itself to generate audio. Once `EngineMicrophone`
+generates audio, `EngineMaster` will mix that audio into the master
+output.
+
+# EngineChannel
+
+`EngineChannel` is the interface that all audio channels must implement
+to integrate with `EngineMaster`.
+
+The following methods are used by `EngineMaster` to determine how to mix
+the `EngineChannel`:
+
+  - `isActive()` -- if this method returns true then the `EngineChannel`
+    is asked to produce audio via its `process` method.
+  - `isPFL()` -- if this method returns true then the result of the
+    `process` call will be mixed into the engine PFL (pre-fader listen,
+    headphone) output. 
+  - `isMaster()` -- if this method returns true then the result of the
+    `process` call will be mixed into the engine master output.
+  - `getOrientation()` -- the return of this method determines what
+    orientation this `EngineChannel` has. Orientations can be the
+    left-side of the crossfader, the center (not affected by the
+    crossfader), and right side of the crossfader.

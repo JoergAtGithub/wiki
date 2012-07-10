@@ -47,9 +47,9 @@ When this config file is loaded, the resulting `ConfigObject` will have
 three entries
 
   - `ConfigKey("[Recording]","RecordingLocation")` will have the value
-    "/home/rryan/Music/Recordings"
-  - `ConfigKey("[Library]","ShowITunes")` will have the value "0"
-  - `ConfigKey("[Library]","ShowRhythmBox")` will have the value "1"
+    `"/home/rryan/Music/Recordings"`
+  - `ConfigKey("[Library]","ShowITunes")` will have the value `"0"`
+  - `ConfigKey("[Library]","ShowRhythmBox")` will have the value `"1"`
 
 # Getting and Setting Preference Options
 

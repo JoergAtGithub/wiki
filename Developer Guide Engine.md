@@ -47,14 +47,16 @@ of audio every 1 millisecond or 1000 times per second.
 Almost all mixing components in the engine follow the EngineObject
 interface. This interface is very simple:
 
-    typedef float CSAMPLE;
-    class EngineObject : public QObject {                                                                                                                       
-        Q_OBJECT                                                                                                                                                
-      public:                                                                                                                                                     
-        EngineObject();                                                                                                                                         
-        virtual ~EngineObject();                                                                                                                                
-        virtual void process(const CSAMPLE *pIn, const CSAMPLE *pOut, const int iLen) = 0;                                                                                                                                                                                                   
-    };
+``` c++
+typedef float CSAMPLE;
+class EngineObject : public QObject {                                                                                                                       
+    Q_OBJECT                                                                                                                                                
+  public:                                                                                                                                                     
+    EngineObject();                                                                                                                                         
+    virtual ~EngineObject();                                                                                                                                
+    virtual void process(const CSAMPLE *pIn, const CSAMPLE *pOut, const int iLen) = 0;                                                                                                                                                                                                   
+};
+```
 
 As you can see, this interface contains only one interesting method,
 `process`. `process` takes a buffer of `CSAMPLE` values as input and a

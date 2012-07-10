@@ -90,3 +90,17 @@ see them in other sections.
   - [Preferences Dialogs](developer_guide_preferences)
   - [Waveform](developer_guide_waveform)
   - [GUI Widgets](developer_guide_widgets)
+
+# How to write Mixxx Code
+
+## Getting the Code
+
+## Building Mixxx
+
+## Choosing an IDE or Text Editor
+
+## Filing Bugs
+
+## Submitting Patches
+
+## Using Branches

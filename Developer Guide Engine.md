@@ -207,8 +207,8 @@ which process the audio for each deck and sampler.
 The list of `EngineObject`s that are run in-order when
 `EngineDeck::process` is called are:
 
-  - `EngineBuffer` -- (See also [Introduction to Mixxx's player
-    processing](developer_guide_engine_player)) Contains almost all
+  - `EngineBuffer` -- (See also [Introduction to Mixxx's Deck/Sampler
+    Processing](developer_guide_engine_player)) Contains almost all
     player logic -- decodes, re-samples audio, processes loops, hotcues,
     and syncing. 
   - `EngineVinylSoundEmu` -- Emulates the response of a vinyl record to

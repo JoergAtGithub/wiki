@@ -22,3 +22,25 @@ the following responsibilities:
     etc.
   - Re-sample audio from the native file sample-rate to the engine
     sample-rate.
+
+# CachingReader
+
+# ReadAheadManager
+
+# EngineBufferScale
+
+`EngineBufferScale` is an interface for representing modules that are
+capable of re-sampling audio. Re-sampling is one of the key tasks that
+`EngineBuffer` must accomplish since if a track is recorded at a sample
+rate of 44.1kHz and the engine is outputting at a sample rate of 48kHz
+then without re-sampling, the track will sound 'chipmunky' since the
+track's samples will be played much faster than they would normally be
+played.
+
+To prevent this effect, the track must be resampled to Mixxx's output
+sample rate. This is accomplished with an `EngineBufferScale`
+derivative.
+
+## EngineBufferScaleLinear
+
+## EngineBufferScaleST

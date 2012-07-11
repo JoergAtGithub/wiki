@@ -122,9 +122,58 @@ the `EngineChannel`:
   - `isPFL()` -- if this method returns true then the result of the
     `process` call will be mixed into the engine PFL (pre-fader listen,
     headphone) output. 
+  - `EngineChannel`'s default implementation of `isPFL()` looks at the
+    value of an `pfl` control to determine whether the channel should be
+    heard in the headphone output. This allows other parts of Mixxx to
+    control whether a channel is heard in the headphones or not. 
   - `isMaster()` -- if this method returns true then the result of the
     `process` call will be mixed into the engine master output.
+  - `EngineChannel`'s default implementation of `isMaster()` always
+    returns true.
   - `getOrientation()` -- the return of this method determines what
     orientation this `EngineChannel` has. Orientations can be the
     left-side of the crossfader, the center (not affected by the
     crossfader), and right side of the crossfader.
+  - `EngineChannel`'s default implementation of `getOrientation()` looks
+    at the value of an `orientation` control to determine which mix
+    orientation the channel should have. This allows other parts of
+    Mixxx to control which side of the crossfader a channel is oriented
+    on.
+
+# Decks and Samplers
+
+Decks and samplers are fundamentally the same thing to the mixing
+engine. They are both represented by the `EngineDeck` class, which is a
+sub-classe of `EngineChannel`. If you take a look at the `EngineDeck`
+implementation in `src/engine/enginedeck.cpp` you'll see that it is
+pretty straightforward and composed of a small list of `EngineObject`s
+which process the audio for each deck and sampler.
+
+The list of `EngineObject`s that are run in-order when
+`EngineDeck::process` is called are:
+
+  - `EngineBuffer` -- Contains almost all player logic -- decodes,
+    re-samples audio, processes loops, hotcues, and syncing. 
+  - `EngineVinylSoundEmu` -- Emulates the response of a vinyl record to
+    changes in speed by applying a gain proportional to the speed of the
+    player.
+  - `EnginePregain` -- Applies gain and replaygain to the audio.
+  - `EngineFilterBlock` -- Applies EQ filters (low, mid, high) to the
+    audio. 
+  - `EngineFlanger` -- Applies the flanger effect, if enabled. (This
+    will be removed in the future in favor of a generic effects
+    framework)
+  - `EngineClipping` -- Clips the audio to within \[-32767, 32768\] and
+    provides a clipping indicator control.
+  - `EngineVuMeter` -- Measures the spectral audio energy of the signal
+    and updates VU meter controls.
+
+The resulting buffer of audio is mixed into the master and headphone
+outputs by `EngineMaster`.
+
+  - The `isActive` method is implemented by `EngineDeck` and is purely
+    dependent on whether a track is loaded in the deck. 
+  - The `isPFL` method is implemented by `EngineChannel`.
+  - The `isMaster` method is implemented by `EngineChannel` and is
+    always true. 
+  - The `getOrientation` method is implemented by `EngineChannel`.

@@ -152,8 +152,11 @@ After mixing the headphone and master outputs, a series of
     audio to within \[-32767, 32768\] and provides a clipping indicator
     control.
 
-The resulting headphone and master output buffers are clipped and
-VU-metered.
+Modulo a couple minor details, this is all there is to
+`EngineMaster::process`. After `process` is done, `SoundManager` gets
+the master, headphone, and possibly individual channel buffers via the
+`EngineMaster::buffer`, `EngineMaster::getDeckBuffer`, and
+`EngineMaster::getChannelBuffer` methods.
 
 # EngineChannel
 

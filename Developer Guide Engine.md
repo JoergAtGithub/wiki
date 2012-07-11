@@ -88,7 +88,15 @@ buffer of audio be generated.
 `EngineMaster`, like most engine classes, is an `EngineObject` and all
 of its interesting work is done in its `process` method.
 
-## Mixing Channels
+## Adding Channels
+
+**Terminology Alert:** In the engine, there are two different types of
+channels. In the context of the `EngineMaster` mixing together different
+sources of audio, a channel is a source of audio like a deck, a sampler,
+a microphone, etc. In the context of buffers of audio, the number of
+channels refers to how many different signals are present in the buffer
+(e.g. mono, stereo, multi-channel). Mixxx's mixing engine usually only
+deals with stereo audio.
 
 `EngineMaster` supports mixing multiple streams of audio together. To
 add a channel of audio to `EngineMaster` you must create an
@@ -114,6 +122,38 @@ mixing the master and headphone outputs, `EngineMaster` will query the
 ask it to `process` itself to generate audio. Once `EngineMicrophone`
 generates audio, `EngineMaster` will mix that audio into the master
 output.
+
+## The Mixing Process
+
+In `EngineMaster::process`, the `EngineMaster` does many tasks related
+to mixing the audio together. First it looks for all active
+`EngineChannel`s and then calls `process` on each one of them so that
+they each generate the audio from their channel to be mixed in this
+callback. Next, the `EngineMaster` applies the volume to each channel
+and adds their sample data to the headphone and master outputs,
+depending on the results of `EngineChannel::isPFL()` and
+`EngineChannel::isMaster()`.
+
+After mixing the headphone and master outputs, a series of
+`EngineObject`s are run on them to perform some post-processing:
+
+  - `EngineClipping` -- Clips the master audio to within \[-32767,
+    32768\] and provides a clipping indicator control.
+  - Balance is applied to the master output based on the
+    `[Master],balance` control.
+  - `EngineVuMeter` -- Measures the spectral audio energy of the signal
+    and updates VU meter controls.
+  - The master output is submitted to the `EngineSidechain`
+  - The master output is added to the headphone output with a gain
+    proportional to the `[Master],headMix` control.
+  - The `[Master],headVolume` headphone volume gain is applied to the
+    headphone output
+  - `EngineClipping` is applied to the headphone output, clipping the
+    audio to within \[-32767, 32768\] and provides a clipping indicator
+    control.
+
+The resulting headphone and master output buffers are clipped and
+VU-metered.
 
 # EngineChannel
 

@@ -79,6 +79,7 @@ see them in other sections.
   - [Library](developer_guide_library)
   - [Shoutcast](developer_guide_shoutcast)
   - [Mixing Engine](developer_guide_engine)
+  - [Deck/Sampler Processing](developer_guide_engine_player)
   - [SoundManager (OS audio interface)](developer_guide_soundmanager)
   - [SoundSource (per-format audio
     decoding)](developer_guide_soundsource)

@@ -1,6 +1,8 @@
+# Mixxx Developer Guide
+
 Welcome to the Mixxx Developer Guide.
 
-# Introduction
+# Overview
 
 The purpose of this guide is to give you, our intrepid contributor, an
 overview of the Mixxx codebase. Mixxx is a big project with millions of

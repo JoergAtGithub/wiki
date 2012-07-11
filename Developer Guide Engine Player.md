@@ -1,4 +1,4 @@
-# Introduction to Mixxx's player processing
+# Introduction to Mixxx's Deck/Sampler Processing
 
 Perhaps the most complicated part of Mixxx lies in its player (decks,
 samplers, etc.) processing code. As the result of years worth of work by

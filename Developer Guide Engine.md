@@ -78,6 +78,9 @@ the `EngineObject` should do its work in-place.
 
 # EngineMaster
 
+  - [src/engine/enginemaster.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.h)
+  - [src/engine/enginemaster.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.cpp)
+
 `EngineMaster` is the master class that drives the entire mixing engine.
 `SoundManager` calls `EngineMaster` directly to request that the next
 buffer of audio be generated.
@@ -94,6 +97,9 @@ example, decks use the `EngineDeck`, samplers use the `EngineSampler`
 class, and microphones use the `EngineMicrophone` class. All 3 of these
 are children of `EngineChannel`. To add a sampler or deck or microphone
 to `EngineMaster` you call the `addChannel` method on `EngineMaster`.
+
+[src/engine/enginemaster.cpp
+EngineMaster::addChannel](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.cpp#L441)
 
 As you will find in `mixxx.cpp`:
 
@@ -113,6 +119,9 @@ output.
 
 `EngineChannel` is the interface that all audio channels must implement
 to integrate with `EngineMaster`.
+
+  - [src/engine/enginechannel.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginechannel.h)
+  - [src/engine/enginechannel.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginechannel.cpp)
 
 The following methods are used by `EngineMaster` to determine how to mix
 the `EngineChannel`:
@@ -148,6 +157,9 @@ sub-class of `EngineChannel`. If you take a look at the `EngineDeck`
 implementation in `src/engine/enginedeck.cpp` you'll see that it is
 pretty straightforward and composed of a small list of `EngineObject`s
 which process the audio for each deck and sampler.
+
+  - [src/engine/enginedeck.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginedeck.h)
+  - [src/engine/enginedeck.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginedeck.cpp)
 
 The list of `EngineObject`s that are run in-order when
 `EngineDeck::process` is called are:

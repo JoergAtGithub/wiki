@@ -144,7 +144,7 @@ the `EngineChannel`:
 
 Decks and samplers are fundamentally the same thing to the mixing
 engine. They are both represented by the `EngineDeck` class, which is a
-sub-classe of `EngineChannel`. If you take a look at the `EngineDeck`
+sub-class of `EngineChannel`. If you take a look at the `EngineDeck`
 implementation in `src/engine/enginedeck.cpp` you'll see that it is
 pretty straightforward and composed of a small list of `EngineObject`s
 which process the audio for each deck and sampler.

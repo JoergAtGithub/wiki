@@ -6,38 +6,35 @@ Controller One.)
 | Note name | Semitones       | Pitch percentage |
 | --------- | --------------- | ---------------- |
 | A         | \-12 = 1 octave | \-50%            |
-| Bb        | \-11            | \-46.83%         |
-| B         | \-10            | \-43.70%         |
-| C         | \-9             | \-40.43%         |
-| Db        | \-8             | \-36.77%         |
-| D         | \-7             | \-33.20%         |
-| Eb        | \-6             | \-29.05%         |
-| E         | \-5             | \-24.95%         |
-| F         | \-4             | \-20.41%         |
-| Gb        | \-3             | \-15.67%         |
-| G         | \-2             | \-10.58%         |
-| Ab        | \-1             | \-5.48%          |
+| Bb        | \-11            | \-47.03%         |
+| B         | \-10            | \-43.88%         |
+| C         | \-9             | \-40.54%         |
+| Db        | \-8             | \-37.00%         |
+| D         | \-7             | \-33.26%         |
+| Eb        | \-6             | \-29.29%         |
+| E         | \-5             | \-25.08%         |
+| F         | \-4             | \-20.63%         |
+| Gb        | \-3             | \-15.91%         |
+| G         | \-2             | \-10.91%         |
+| Ab        | \-1             | \-5.61%          |
 | A - 440Hz | 0               | 0.00%            |
-| A\#       | 1               | \+6%             |
-| B         | 2               | \+12%            |
-| C         | 3               | \+18.1%          |
-| C\#       | 4               | \+26.3%          |
-| D         | 5               | \+33.8%          |
-| D\#       | 6               | \+41.6%          |
-| E         | 7               | \+50.6%          |
-| F         | 8               | \+59%            |
-| F\#       | 9               | \+68.8%          |
-| G         | 10              | \+79.5%          |
-| G\#       | 11              | \+89.5%          |
+| A\#       | 1               | \+5.95%          |
+| B         | 2               | \+12.25%         |
+| C         | 3               | \+18.92%         |
+| C\#       | 4               | \+25.99%         |
+| D         | 5               | \+33.48%         |
+| D\#       | 6               | \+41.42%         |
+| E         | 7               | \+49.83%         |
+| F         | 8               | \+58.74%         |
+| F\#       | 9               | \+68.18%         |
+| G         | 10              | \+78.18%         |
+| G\#       | 11              | \+88.77%         |
 | A         | 12 = 1 octave   | \+100%           |
 
-There is some margin of error here as I derived this using an electric
-keyboard which had some vibrato, but it's close enough for DJing use.
-
-Note: the exact values can be calculated fairly easily with a
-spreadsheet. Since an octave doubles (or halves) the frequency and there
-are 12 equal steps (semitones), we can find that the frequency is
-multiplied (or divided) by a certain factor
+This was calculated using the following information. Since an octave
+doubles (or halves) the frequency and there are 12 equal steps
+(semitones), we can find that the frequency is multiplied (or divided)
+by a certain factor:
 
 mfact = 12th root of 2 = 2^(1/12) = 1.0594631
 

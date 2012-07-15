@@ -1041,22 +1041,21 @@ project files, which makes things nice. Just open and build.
     `/useenv` switch to have it use the Platform SDK compile tools, libs
     and includes. (e.g. `C:\Program Files (x86)\Microsoft Visual
     Studio 9.0\Common7\IDE\VCExpress.exe /useenv`)
-4.  Open the `protobuf-2.4.1\vsprojects\libprotobuf-lite.vcproj` file
-    via File-\>Open-\>Project/Solution.
+4.  Open the `protobuf-2.4.1\vsprojects\protobuf.sln` file via
+    File-\>Open-\>Project/Solution.
 5.  Answer 'Yes' to convert & open the project
 6.  Choose the Release configuration and the Win32 platform
-7.  Right-click `libprotobuf-lite` and click build.
-8.  When it finishes, run the batch file
+7.  Right-click `libprotobuf-lite` and click Build.
+8.  When it finishes, right-click `protoc` and click Build.
+9.  When that finishes, run the batch file
     `protobuf-2.4.1\vsprojects\extract_includes.bat`
-9.  Copy the following files into `mixxx-win[32|64]lib-msvc`:
+10. Copy the following files into `mixxx-win[32|64]lib-msvc`:
     `protobuf-2.4.1\vsprojects\Release\libprotobuf-lite.lib
+    protobuf-2.4.1\vsprojects\Release\protoc.exe
     protobuf-2.4.1\vsprojects\include\google (the entire directory)
     `
-10. Right-click `protoc` and click Build.
-11. When it finishes, copy
-    `protobuf-2.4.1\vsprojects\x64\Release\protoc.exe` into
-    `mixxx-win[32|64]lib-msvc`. This directory now needs to be in your
-    PATH when you build Mixxx.
+11. Your `mixxx-win[32|64]lib-msvc` now needs to be in your PATH when
+    you build Mixxx so it can find `protoc.exe`.
 
 # x64 prep for VS Express 2005
 

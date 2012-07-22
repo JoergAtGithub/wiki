@@ -3,9 +3,7 @@
 **Disclaimer:** This is not a skinning tutorial. This tutorial is just
 for fun.
 
-1.  \====== Ordered List Item ======
-
-~~*Strike-through Text*~~===== Audience =====
+## Audience
 
 If you are absolutely new to Mixxx code base and you are impatient to
 hack this awesome piece of work, then you are the intended audience.

@@ -98,9 +98,21 @@ controller and not just the buttons in Mixxx.
 The Fade Now functionality has been expanded to be available even when
 AutoDJ is not on. Buttons have been placed on either side of the
 crossfader, and pressing either one will cause a transition to occur
-(according to the settings in AutoDJ). Pressing the Fade Now button
-during a transition will stop the transition. Using Fade Now outside of
-AutoDJ does not stop a track from playing.
+(according to the settings in AutoDJ).
+
+#### AutoDJ
+
+When AutoDJ is enabled, Fade Now will cause the transition to occur.
+Once the transition is over, the next track will be loaded, as if AutoDJ
+had transitioned at the normal cue point.
+
+#### Library
+
+Using the Fade Now button while AutoDJ is not enabled will cause the
+transition to occur, but once the transition is over, nothing else
+occurs. No tracks are stopped from playing or ejected from the deck.
+Pressing the Fade Now button during a transition will stop the
+transition.
 
 ## Crossfader
 

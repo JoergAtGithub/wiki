@@ -93,6 +93,15 @@ controls, including fade now, skip next, shuffle playlist, and enabling
 AutoDJ. This will allow users to control AutoDJ using a keyboard or
 controller and not just the buttons in Mixxx.
 
+## Fade Now
+
+The Fade Now functionality has been expanded to be available even when
+AutoDJ is not on. Buttons have been placed on either side of the
+crossfader, and pressing either one will cause a transition to occur
+(according to the settings in AutoDJ). Pressing the Fade Now button
+during a transition will stop the transition. Using Fade Now outside of
+AutoDJ does not stop a track from playing.
+
 ## Crossfader
 
 Users will be able to take control of the crossfader while AutoDJ is

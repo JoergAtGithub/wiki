@@ -161,23 +161,25 @@ restart Mixxx.
 
 ## How do I delete my library file?
 
-Make sure Mixxx is closed, then look for "mixxxtrack.xml" (or
-"mixxxdb.sqlite" if using Mixxx 1.8.0 or later) in:
+Make sure Mixxx is closed, then look for "mixxxdb.sqlite" (or
+"mixxxtrack.xml" if using Mixxx 1.8.x or below) in:
 
   - Windows: `%USERPROFILE%\Local Settings\Application Data\Mixxx`
-  - Linux/Mac OS X/BSD/Unix: `~/.mixxx` (if using Mixx 1.9.0 : db-file
-    on Mac OS X is located under: \~/Library/Application Support/Mixxx/)
+  - Linux/BSD/Unix: `~/.mixxx` 
+  - Mac OS X: `~/Library/Application Support/Mixxx/`
+  - If using Mixxx 1.8.x or below it is just like on Linux in `~/.mixxx`
     
 
-If you can't find it, search your computer for "mixxxtrack.xml" (or
-"mixxxdb.sqlite" if using Mixxx 1.8.0 or later)
+If you can't find it, search your computer for "mixxxdb.sqlite" (or
+"mixxxtrack.xml" if using Mixxx 1.8.x or below)
 
   - If on Windows, Click Start-\>Run, type `%USERPROFILE%\Local
-    Settings\Application Data\Mixxx` and click OK. (If you want to use
-    "Find files/folders," make sure to open "Advanced Options" and mark
-    "Search Hidden Files/Folders".)
+    Settings\Application Data\Mixxx` and click OK. 
+  - If you want to use "Find files/folders", make sure to open "Advanced
+    Options" and mark "Search Hidden Files/Folders".
   - If on Mac OSX, press Shift-Command-G or "Go to folder..." command in
-    the Finder's Go menu. Then enter `~/.mixxx/`
+    the Finder's Go menu. Then enter `~/Library/Application
+    Support/Mixxx/`.
 
 ## No or too few sound cards appear in the preferences dialog
 

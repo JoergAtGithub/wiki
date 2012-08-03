@@ -256,16 +256,31 @@ of your PC/card manufacturer since they may be newer.
 ## Where is the mixxx.log file?
 
   - Linux: \~/.mixxx/mixxx.log
-  - OSX:
-  - v1.9.0 and up: in your home folder under Library/Application
-    Support/Mixxx (so e.g. Users/\<username\>/Library/Application
-    Support/Mixxx
   - Windows: (enter the following into the Location bar of an
     Explorer/My Computer window, or at the command prompt)
   - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
     `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
     below.
   - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
+  - OSX:
+  - v1.9.0 and up: in your home folder under `Library/Application
+    Support/Mixxx` (so e.g. Users/\<username\>/Library/Application
+    Support/Mixxx)
+  - Note: Apple made the user library folder hidden by default with OSX
+    10.7 ff., use one of the following methods to open the Mixxx folder.
+
+<!-- end list -->
+
+``` 
+    * __Method A__:
+    * In the Finder, choose Go > Go To Folder.
+    * In the Go To Folder dialog, type ''~Library/Application Support/Mixxx''
+    * Click Go.
+    * __Method B__:
+    * Hold down the Alt (Option) key when using the Go menu
+    * The user library folder is listed below the current users home directory
+    * Navigate to ''Application Support/Mixxx''
+```
 
 ## Mixxxcelaneous Known Issues
 

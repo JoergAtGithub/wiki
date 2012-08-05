@@ -201,15 +201,15 @@ the entire track is played.
 
   - AutoDJ does not take control when one or two decks are already
     playing
-  - AutoDJ does not disable automatically when the playlist is over
+  - ~~AutoDJ does not disable automatically when the playlist is over~~
   - Cue out marker does not update in waveform overview until the cursor
     is moved
   - Same thing occurs with hotcues
   - Cue out markers cannot be set after a long period of testing
   - Cue out markers are sometimes set in the wrong place when they are
     created
-  - Beatmatching transition cannot handle songs when the BPMs are out of
-    range of the pitch slider
+  - ~~Beatmatching transition cannot handle songs when the BPMs are out
+    of range of the pitch slider~~
   - Tracks not loading at cue point after restarting AutoDJ
   - Pitch slider should be adjusted as soon as a track is loaded during
     beatmatching

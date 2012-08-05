@@ -45,7 +45,8 @@ Some of the transition styles include:
     two songs' BPMs
   - Cut - Cut Song A at the cue out and immediately start Song B 
   - Spinback - A short transition utilizing a spinback effect
-  - Brake - Another short transition using a brake effect
+  - Brake - Another short transition using a brake effect, slowing the
+    song using the jogwheel
   - Echo FadeOut - Echo one beat of Song A while decreasing the volume,
     then start Song B
 
@@ -53,6 +54,16 @@ More transitions can be added simply by creating a method for them in
 the TrackTransition class. There are many types of transitions, such as
 those using the EQ controls, that will not be added now, but could be
 added at a later time.
+
+##### Beatmatching Transition
+
+The beatmatching transition uses a combination of transitions. If the
+BPMs are similar (within 6% of each other), then the pitch slider and
+the sync button are used to match the songs' BPMs. If the current song
+is faster than the next song, the current song is slowed down using the
+jog wheel (brake effect) as the crossfader is moved to the other deck.
+If the current song is slower, a spinback transition is used to
+transition to the next song.
 
 ## Cue Points
 

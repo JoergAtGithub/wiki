@@ -193,16 +193,16 @@ scopes.
             <author>Tom Care</author>
             <description>This is an example XML MIDI preset for Mixxx. The scope of the preset could be from a small functionality addition, to a complete mapping for a controller, to a complex personal setup with multiple controllers. This description is intended for distribution and could include comments about the extent of the functionality.</description>
                     <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
-                    <wiki>Encoded URL to Mixxx discussion forums page for this controller</wiki>
+                    <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
         </info>
 
 The first part of the file defines the version of the mapping (for
 future compatibility, as the Mixxx MIDI abilities become more complex)
 and an optional info tag which contains information about the preset
-(primarily used for distribution of presets). All info fields are used
-in Mixxx controller selection dialogs and we highly recommend filling
-all fields in, creating appropriate documentation pages to wiki and
-forums if necessary.
+(primarily used for distribution of presets). While optional, all info
+fields are visible in Mixxx controller configuration dialogs and we
+highly recommend properly filling in all fields, creating appropriate
+documentation pages to wiki and forums if necessary.
 
 ``` 
     <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->

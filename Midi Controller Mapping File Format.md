@@ -192,7 +192,7 @@ scopes.
             <name>Example MIDI Preset for Mixxx</name>
             <author>Tom Care</author>
             <description>This is an example XML MIDI preset for Mixxx. The scope of the preset could be from a small functionality addition, to a complete mapping for a controller, to a complex personal setup with multiple controllers. This description is intended for distribution and could include comments about the extent of the functionality.</description>
-                    <wiki>Encoded URL to official Mixxx wiki page for this controller</wiki>
+                    <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
                     <wiki>Encoded URL to Mixxx discussion forums page for this controller</wiki>
         </info>
 

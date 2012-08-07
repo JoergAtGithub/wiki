@@ -361,10 +361,8 @@ Further reads:
     Generator](http://bighugelabs.com/colors.php),
     [Colorblender](http://www.colorblender.com/) , [Color Scheme
     Designer](http://colorschemedesigner.com/))
-  - Free knob tools - Windows only, MacOSX & Linux via
-    [Wine](http://www.winehq.org/)
-    ([Knobman](http://www.g200kg.com/en/software/knobman.html), [Knob
-    Render](http://www.otiumfx.com/knobrender))
+  - Free knob tools - Windows, MacOSX & Linux
+    ([JKnobman](http://www.g200kg.com/en/software/knobman.html))
   - Convert a Mixxx skin.xml into HTML to be viewed with a web browser -
     Windows, MacOSX & Linux ([XSL
     Helper](/creating_skins#convert_a_mixxx_skinxml_into_html))
@@ -701,8 +699,8 @@ Defines connected Channel & Stereo-balance (X = Channel1 or Channel2 or Master),
 
 |                                                                                                                                                                                                                                                  |                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| `PeakIndicator<StatusLight>
-    <TooltipID></TooltipID>
+| `<StatusLight>
+    <TooltipID>PeakIndicator</TooltipID>
     <PathVu>active.png</PathVu>
     <PathBack>default.png</PathBack>
     <Pos>X,Y</Pos>

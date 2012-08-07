@@ -381,7 +381,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
- * Replaced <Tooltips> with <TooltipId> key, available IDs are in //src/skin/tooltips.cpp// . This avoids the need to write individual tooltip text per node, allows tooltips translation, makes skins more coherent and maintenance easier. Make sure to select the correct ID for each key.
+ * Replaced <Tooltips> with <TooltipId> key. This avoids the need to write individual tooltip text per node, allows tooltips translation, makes skins more coherent and maintenance easier. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp// 
  * Added <AxesColor> to define the color for horizontal/vertical line in in the waveform, see [[creating_skins#waveform|<Visual>]]
  * Added [[creating_skins#recording|<Recording>]] control that allows toggle of recording
  * Added <EndOfTrackColor> in waveform & waveform overview that allow to define the color of the overlay that will be displayed as notification within the last seconds of a track, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] 

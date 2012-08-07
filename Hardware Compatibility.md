@@ -102,6 +102,11 @@ Scripting](MIDI%20Scripting) pages.
 | Allen and Heath Xone:DX          |         |          |       |
 | Ecler Evo4                       |         |          |       |
 | Ecler Evo5                       |         |          |       |
+| EKS:Otus Dualdeck                |         |          |       |
+| EKS:Otus Plus                    |         |          |       |
+| EKS:Otus RAW                     |         |          |       |
+| EKS:XP5                          |         |          |       |
+| EKS:XP10                         |         |          |       |
 | Korg NanoPad                     |         |          |       |
 | Korg NanoKontrol                 |         |          |       |
 | Korg NanoKey                     |         |          |       |

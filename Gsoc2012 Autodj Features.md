@@ -211,8 +211,8 @@ the entire track is played.
   - ~~Beatmatching transition cannot handle songs when the BPMs are out
     of range of the pitch slider~~
   - Tracks not loading at cue point after restarting AutoDJ
-  - Pitch slider should be adjusted as soon as a track is loaded during
-    beatmatching
+  - ~~Pitch slider should be adjusted as soon as a track is loaded
+    during beatmatching~~
   - If using beatmatching transition with a short transition time at the
     end of a song, the song may end before transition is complete if the
     brake effect is being used

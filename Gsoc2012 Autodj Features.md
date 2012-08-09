@@ -213,9 +213,11 @@ the entire track is played.
   - Tracks not loading at cue point after restarting AutoDJ
   - ~~Pitch slider should be adjusted as soon as a track is loaded
     during beatmatching~~
-  - If using beatmatching transition with a short transition time at the
-    end of a song, the song may end before transition is complete if the
-    brake effect is being used
+  - ~~If using beatmatching transition with a short transition time at
+    the end of a song, the song may end before transition is complete if
+    the brake effect is being used~~
+  - Crossfader jumps to finished position if cue point is passed on Deck
+    B while transition to Deck B is still happening
 
 # Discussion
 

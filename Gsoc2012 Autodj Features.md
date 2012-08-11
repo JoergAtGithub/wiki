@@ -200,7 +200,7 @@ the entire track is played.
 ### Open Issues and Bugs
 
   - AutoDJ does not take control when one or two decks are already
-    playing
+    playing - sometimes
   - ~~AutoDJ does not disable automatically when the playlist is over~~
   - Cue out marker does not update in waveform overview until the cursor
     is moved
@@ -210,7 +210,7 @@ the entire track is played.
     created
   - ~~Beatmatching transition cannot handle songs when the BPMs are out
     of range of the pitch slider~~
-  - Tracks not loading at cue point after restarting AutoDJ
+  - Tracks not loading at cue point after restarting AutoDJ - sometimes
   - ~~Pitch slider should be adjusted as soon as a track is loaded
     during beatmatching~~
   - ~~If using beatmatching transition with a short transition time at

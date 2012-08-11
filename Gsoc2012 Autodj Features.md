@@ -216,8 +216,8 @@ the entire track is played.
   - ~~If using beatmatching transition with a short transition time at
     the end of a song, the song may end before transition is complete if
     the brake effect is being used~~
-  - Crossfader jumps to finished position if cue point is passed on Deck
-    B while transition to Deck B is still happening
+  - ~~Crossfader jumps to finished position if cue point is passed on
+    Deck B while transition to Deck B is still happening~~
 
 # Discussion
 

@@ -196,6 +196,7 @@ the entire track is played.
   - Transitions
   - Using cue points: DONE
   - Using beatmatching: INPROGRESS
+  - Create branch to merge into trunk
 
 ### Open Issues and Bugs
 

@@ -1,8 +1,24 @@
-# Creating Backtraces for Debugging
+# Creating back-traces for debugging
 
-## Linux and OS X Users
+Found a crash? Generate a back-trace so we can see exactly where Mixxx
+crashed.
 
-Found a crash? Generate us a backtrace:
+## Windows
+
+1.  Download [GDB for
+    Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) (get
+    the official release version) and save it to the root of your C:
+    drive. (`C:\`)
+2.  Download a debug build of Mixxx (TODO)
+3.  Open a command prompt by clicking Start-\>Run... then type `cmd` in
+    the box and press Enter.
+4.  Change to the the directory where Mixxx is installed: type the
+    following then press Enter: `cd %PROGRAMFILES%\Mixxx`
+5.  Run GDB: type the following command and press Enter: `C:\gdb
+    mixxx.exe`
+6.  Continue with the instructions below for all platforms
+
+## All
 
 1.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
 
@@ -16,24 +32,23 @@ Found a crash? Generate us a backtrace:
 1.  When the gdb prompt appears, type "set height 0" and press enter to
     disable screen paging.
 2.  Type "run" and press enter.
-3.  When Mixxx crashes, type the following into the gdb prompt: "thread
-    apply all bt".
-    1.  There may be multiple pages of output. Make sure to hit
-        \<Enter\> enough times to see it all.
+3.  Make Mixxx crash. When it does, type the following into the gdb
+    prompt: "thread apply all bt". (There may be multiple pages of
+    output. Make sure to hit \<Enter\> enough times to see it all.)
 4.  To close the Mixxx window and end gdb, type the following into the
     gdb prompt: "quit"
 5.  Copying the gdb info:
 
 <!-- end list -->
 
-  - **Windows users** can copy the terminal buffer by clicking on the
-    Window's icon in the top left corner and then selecting
-    *Edit*--\>*Select All*. Everything selected will be inverted (so if
+  - **Windows users** can copy the terminal buffer by clicking the
+    window's icon in the top left corner and then selecting
+    *Edit*--\>*Select All*. Everything selected will be inverted (so
     black becomes white, white becomes black, etc) and hitting *Enter*
-    will copy the selection to the clipboard and unselect everything,
-    then paste the clipboard buffer into a bug report, pastebin or
-    notepad. *Note:* a windows console will not update while any part of
-    it is selected.
+    will copy the selection to the clipboard and deselect everything.
+    Paste the clipboard buffer into a bug report, pastebin or notepad.
+    *Note:* a Windows console will not update while any part of it is
+    selected.
   - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 

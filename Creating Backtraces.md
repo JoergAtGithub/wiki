@@ -46,9 +46,9 @@ crashed.
     *Edit*--\>*Select All*. Everything selected will be inverted (so
     black becomes white, white becomes black, etc) and hitting *Enter*
     will copy the selection to the clipboard and deselect everything.
-    Paste the clipboard buffer into a bug report, pastebin or notepad.
-    *Note:* a Windows console will not update while any part of it is
-    selected.
+    Paste the clipboard buffer into a notepad document and attach that
+    to a bug report. *Note:* a Windows console will not update while any
+    part of it is selected.
   - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 

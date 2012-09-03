@@ -78,6 +78,14 @@ Users of Hercules products on Windows and OSX will want to read the
 latest mapping files from the 1.6.1+Herc release and beyond. Mixxx 1.6.1
 on non-Linux OSes can use these files.
 
+as of Mixxx 1.11 several Hercules devices including the Dj Console Mk2
+and Mk1 may be used as HID devices Without the need for the special
+hercules driver. see these threads in the forum:
+
+<http://www.mixxx.org/forums/viewtopic.php?f=7&t=3712&sid=d6b392ca77e54fd7b21c468d0e77b3e7>
+
+<http://www.mixxx.org/forums/viewtopic.php?f=7&t=4081>
+
 ### What this Page Covers
 
 The purpose of this document is to show how to configure Mixxx to user

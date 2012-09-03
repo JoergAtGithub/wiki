@@ -171,6 +171,19 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 > > currently unsupported pending the functionality being available in
 > > Mixxx
 
+## Hercules Dj Console Mk1
+
+The Hercules Dj Console Mk1 does not work with the Hercules driver, but
+can be used as a hid device in mixxx 1.11 and up. see this link for a
+hid mapping: <http://www.mixxx.org/forums/viewtopic.php?f=7&t=4081>
+
+the Dj Console Mk1 apears in the mixxx preferences as 3 separate
+devices, the first one is the controler, the second one is the joystick
+mouse(which is unuasble) and the third apears to do nothing.
+
+enable the seccond device (the unusable joystick mouse) but do not load
+a mapping, this will stop it from interfering with your mouse pointer.
+
 ## Hercules RMX (Tested)
 
 Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)

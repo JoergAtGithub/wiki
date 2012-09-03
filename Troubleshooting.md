@@ -308,10 +308,28 @@ scans for HID devices.) To fix this, do the following:
     # Allow communicating with HID devices
     ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"` (use
     whatever group name you prefer)
-4.  Save and exit.
-5.  Enter `sudo /etc/init.d/udev restart`
-6.  If your user account is not already a member of `users`, enter `sudo
+
+for avlinux 6.0 you should try this:
+
+    # Allow scannining USB devices
+    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users"
+    
+    # Allow communicating with HID devices
+    ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
+    
+    # Allow scannining USB devices
+    #SUBSYSTEM=="usb", ATTR{idVendor}=="1157", ATTR{idProduct}=="0310", GROUP="users"
+    #
+    # Allow communicating with HID devices
+    #SUBSYSTEM=="usb", ATTR{idVendor}=="1157", ATTR{idProduct}=="0310", ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
+    #
+    KERNEL=="hiddev*", NAME="usb/%k", GROUP="users"
+    #
+
+1.  Save and exit.
+2.  Enter `sudo /etc/init.d/udev restart`
+3.  If your user account is not already a member of `users`, enter `sudo
     usermod -a -G users $USER`
-7.  Log off and back on so your user account gets the new group and
+4.  Log off and back on so your user account gets the new group and
     associated permissions.
-8.  Start Mixxx and you should be good to go.
+5.  Start Mixxx and you should be good to go.

@@ -317,11 +317,7 @@ for avlinux 6.0 you should try this:
     # Allow communicating with HID devices
     ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
     
-    # Allow scannining USB devices
-    #SUBSYSTEM=="usb", ATTR{idVendor}=="1157", ATTR{idProduct}=="0310", GROUP="users"
-    #
-    # Allow communicating with HID devices
-    #SUBSYSTEM=="usb", ATTR{idVendor}=="1157", ATTR{idProduct}=="0310", ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
+    
     #
     KERNEL=="hiddev*", NAME="usb/%k", GROUP="users"
     #

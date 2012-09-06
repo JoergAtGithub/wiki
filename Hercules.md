@@ -86,6 +86,10 @@ hercules driver. see these threads in the forum:
 
 <http://www.mixxx.org/forums/viewtopic.php?f=7&t=4081>
 
+to use a hid device in linux you must have read and write permission to
+the hid devices see details at this page:
+<http://www.mixxx.org/wiki/doku.php/troubleshooting>
+
 ### What this Page Covers
 
 The purpose of this document is to show how to configure Mixxx to user

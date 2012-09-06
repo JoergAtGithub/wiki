@@ -184,6 +184,11 @@ mouse(which is unuasble) and the third apears to do nothing.
 enable the seccond device (the unusable joystick mouse) but do not load
 a mapping, this will stop it from interfering with your mouse pointer.
 
+the pads on the Hercules Dj Console Mk1 lose responsiveness over time
+but can trivialy be clead to restore you controler to like new
+condition:
+<http://djconsole.blogspot.it/2007/11/1-how-can-i-repair-my-dj-console-mk1-to.html>
+
 ## Hercules RMX (Tested)
 
 Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)

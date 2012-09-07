@@ -137,6 +137,23 @@ or a similar solution is in Qt this step will not be required. Without
 this step, the resulting packages will not pass the Mac App Store review
 process.
 
+## Qt 4.8.2 OSX QLocale fix
+
+Qt 4.8.2 has a NULL-pointer dereference segfault when you do
+QLocale::system().uiLanguages() (WTF, right?).
+
+    --- src/corelib/tools/qlocale_mac.mm.original   2012-09-06 21:59:25.000000000 -0400
+    +++ src/corelib/tools/qlocale_mac.mm    2012-09-06 22:00:33.000000000 -0400
+    @@ -439,7 +439,7 @@
+                      kCFPreferencesAnyApplication,
+                      kCFPreferencesCurrentUser,
+                      kCFPreferencesAnyHost);
+    -        const int cnt = CFArrayGetCount(languages);
+    +        const int cnt = languages == NULL ? 0 : CFArrayGetCount(languages);
+             QStringList result;
+             result.reserve(cnt);
+             for (int i = 0; i < cnt; ++i) {
+
 ## 10.5 Intel (i386/x86\_64)
 
     export ARCH_FLAGS="-arch i386 -arch x86_64"

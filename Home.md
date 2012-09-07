@@ -207,3 +207,11 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
   - [chi phí ăn ở tại
     singapore](http://www.anc.edu.vn/chi-phi-an-o-tai-singapore/)
   - [việc làm ở singapore](http://www.anc.edu.vn/viec-lam-o-singapore/)
+  - [điều kiện du học
+    singapore](http://www.anc.edu.vn/dieu-kien-du-hoc-singapore/)
+  - [du lịch singapore](http://quangduc.com.vn/dichvu/cuuhogiaothong)
+  - [các trường uy tính tại
+    singapore](http://www.anc.edu.vn/cac-truong-uy-tinh-tai-singapore/)
+  - [học gì ở singapore](http://www.anc.edu.vn/hoc-gi-o-singapore/)
+  - [điều kiện học và làm việc tại
+    singapore](http://www.anc.edu.vn/dieu-kien-hoc-va-lam-viec-tai-singapore/)

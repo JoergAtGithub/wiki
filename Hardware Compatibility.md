@@ -105,12 +105,14 @@ Scripting](MIDI%20Scripting) pages.
 | EKS Otus Dualdeck                |         |          |       |
 | EKS Otus Plus                    |         |          |       |
 | EKS Otus RAW                     |         |          |       |
-| EKS XP5                          |         |          |       |
-| EKS XP10                         |         |          |       |
+| [EKS XP5](EKS%20XP5)             |         |          |       |
+| [EKS XP10](EKS%20XP10)           |         |          |       |
 | Korg NanoPad                     |         |          |       |
 | Korg NanoKontrol                 |         |          |       |
 | Korg NanoKey                     |         |          |       |
 | Korg PadKontrol                  |         |          |       |
+| M-AUDIO Torq Conectiv CD         |         |          |       |
+| M-AUDIO Torq Conectiv Vinyl      |         |          |       |
 | Native Instruments Kontrol X1    |         |          |       |
 | Native Instruments Kontrol S4    |         |          |       |
 | Numark Stealth Control           |         |          |       |

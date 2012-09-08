@@ -199,19 +199,3 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
     [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
     browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
-  - [chi phí du học
-    singapore](http://www.anc.edu.vn/chi-phi-du-hoc-singapore/)
-  - [du học singapore](http://www.anc.edu.vn/)
-  - [công ty du học uy
-    tín](http://www.anc.edu.vn/cong-ty-du-hoc-uy-tin/)
-  - [chi phí ăn ở tại
-    singapore](http://www.anc.edu.vn/chi-phi-an-o-tai-singapore/)
-  - [việc làm ở singapore](http://www.anc.edu.vn/viec-lam-o-singapore/)
-  - [điều kiện du học
-    singapore](http://www.anc.edu.vn/dieu-kien-du-hoc-singapore/)
-  - [du lịch singapore](http://www.anc.edu.vn/du-lich-singapore/)
-  - [các trường uy tính tại
-    singapore](http://www.anc.edu.vn/cac-truong-uy-tinh-tai-singapore/)
-  - [học gì ở singapore](http://www.anc.edu.vn/hoc-gi-o-singapore/)
-  - [điều kiện học và làm việc tại
-    singapore](http://www.anc.edu.vn/dieu-kien-hoc-va-lam-viec-tai-singapore/)

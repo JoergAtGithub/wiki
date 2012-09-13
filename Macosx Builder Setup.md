@@ -140,7 +140,8 @@ process.
 ## Qt 4.8.2 OSX QLocale fix
 
 Qt 4.8.2 has a NULL-pointer dereference segfault when you do
-QLocale::system().uiLanguages() (WTF, right?).
+QLocale::system().uiLanguages() (WTF, right?). This is fixed in Qt
+4.8.3.
 
     --- src/corelib/tools/qlocale_mac.mm.original   2012-09-06 21:59:25.000000000 -0400
     +++ src/corelib/tools/qlocale_mac.mm    2012-09-06 22:00:33.000000000 -0400
@@ -153,14 +154,6 @@ QLocale::system().uiLanguages() (WTF, right?).
              QStringList result;
              result.reserve(cnt);
              for (int i = 0; i < cnt; ++i) {
-
-## 10.5 Intel (i386/x86\_64)
-
-    export ARCH_FLAGS="-arch i386 -arch x86_64"
-    source ../environment.sh
-    ./configure -opensource -prefix $MIXXX_PREFIX/Qt-4.7.4/ $ARCH_FLAGS -sdk $OSX_SDK -plugin-sql-sqlite -platform macx-g++42 -no-qt3support -release -nomake examples -nomake demos -confirm-license
-    make
-    sudo make install
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 

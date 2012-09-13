@@ -142,9 +142,10 @@ unless you do it manually. **To bring your features branch up to date**:
 (For those of us scared of this "distributed" thing...)
 
   - **Check out** with `bzr checkout lp:mixxx` for trunk or `bzr
-    checkout lp:mixxx/1.8` for the 1.8 release branch. (**Be patient**
-    as the Mixxx code base is fairly large and older versions of bzr
-    sometimes have difficulty reporting progress.)
+    checkout lp:mixxx/1.x` for the 1.x release branch (replace 'x' with
+    the latest release branch – as of Sep 2012 this is 1.11). (**Be
+    patient** as the Mixxx code base is fairly large and older versions
+    of bzr sometimes have difficulty reporting progress.)
   - **Update** to latest version with `bzr update`
   - **Create a patch** with `bzr diff > mychanges.patch` and attach it
     to a bug at [Launchpad](http://bugs.launchpad.net/mixxx).

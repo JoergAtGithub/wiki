@@ -127,8 +127,8 @@ up /usr/local/lib while building libraries.
 
 # Qt
 
-Download the latest supported version of Qt source tarball. (In Q4 2011,
-this is Qt 4.7.4)
+Download the latest supported version of Qt source tarball. (In Q3 2012,
+this is Qt 4.8.3)
 
 Untar the archive and apply qsettings\_appstore.diff from
 [QTBUG-16549](https://bugreports.qt.nokia.com//browse/QTBUG-16549). This

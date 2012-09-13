@@ -167,7 +167,7 @@ QLocale::system().uiLanguages() (WTF, right?).
 Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
 <https://bugreports.qt-project.org/browse/QTBUG-23258>
 
-    export VERSION=qt-everywhere-opensource-src-4.8.2
+    export VERSION=qt-everywhere-opensource-src-4.8.3
     export ARCHIVE=$VERSION.tar.gz
     
     tar -zxvf ../dependencies/$ARCHIVE

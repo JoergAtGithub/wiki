@@ -178,7 +178,7 @@ Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
     source ../environment.sh
     export QTDIR=$MIXXX_PREFIX/Qt-4.8.3
     
-    # Apply patch from QTBUG-23258 to fix Qt 4.8.2 build on OS X 10.5 SDK
+    # Apply patch from QTBUG-23258 to fix Qt 4.8.2 and 4.8.3 build on OS X 10.5 SDK
     curl https://bugreports.qt-project.org/secure/attachment/26712/Patch-Qt-4.8-for-10.5 > Patch-Qt-4.8-for-10.5
     patch -p1 < Patch-Qt-4.8-for-10.5
     

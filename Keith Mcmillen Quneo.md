@@ -8,7 +8,8 @@ tactile pads, sliders, rotary sensors and switches. Works with USB, MIDI
 or OSC and will communicate most music software environments right out
 of the box.
 
-  - \*Features\*\*
+**Features**
+
   - 27 pads, sliders and rotary sensors are pressure, velocity, and
     location sensitive. Even the 17 switches respond to how hard you
     press.
@@ -38,11 +39,15 @@ The mapping is included with the QuNeo installer, make sure to click the
 “Mixxx” check box when prompted during the installation. Alternatively
 download the Installer from
 [www.keithmcmillen.com](http://www.keithmcmillen.com/QuNeo/downloads/).
-The MIDI mapping preset goes with QuNeo’s factory preset number 12.
+The MIDI mapping preset goes with QuNeo’s factory preset number 12. To
+change the factory preset, select the blue MODE button on the device and
+press tab \#12. Also see [Youtube - Setting up Mixxx with
+QuNeo](https://www.youtube.com/watch?v=sw4Cnko-nOU).
 
-It turnsQuNeo into a full fledged DJ controller using Mixxx. It includes
-controls for 2 players: play, sync, cue, tempo controls, crossfading,
-scratching, and various volume controls accessible from QuNeo.
+It turns QuNeo into a full fledged DJ controller using Mixxx. It
+includes controls for 2 players: play, sync, cue, tempo controls,
+crossfading, scratching, and various volume controls accessible from
+QuNeo.
 
 [[/media/hardware/kmi_quoneo/quneo_mixxx_mapping_v1.0.png|]]
 

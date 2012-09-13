@@ -47,10 +47,11 @@ tested:
 
 1.  **Create a personal copy** (called a "branch") of the Mixxx
     trunk/branch you want to work on using `bzr branch lp:mixxx` for
-    trunk or `bzr branch lp:mixxx/1.8` for the 1.8 release branch. This
-    copies the code to your local system. (**Be patient** as the Mixxx
-    code base is fairly large and older versions of bzr sometimes have
-    difficulty reporting progress.)
+    trunk or `bzr branch lp:mixxx/1.x` for the 1.x release branch
+    (replace 'x' with the latest release branch -- as of Sep 2012 this
+    is 1.11). This copies the code to your local system. (**Be patient**
+    as the Mixxx code base is fairly large and older versions of bzr
+    sometimes have difficulty reporting progress.)
 2.  **Make changes** to the code as desired. Every so often issue `bzr
     commit -m 'log message`' which will "commit" the changes to your
     local store, allowing you to review or revert later.

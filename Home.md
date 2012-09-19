@@ -199,3 +199,6 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
     [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
     browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - list of open source software for music perduction [list of open
+    source software for music
+    perduction](list%20of%20open%20source%20software%20for%20music%20perduction)

@@ -33,7 +33,7 @@ of the box.
 Product Page:
 [www.keithmcmillen.com](http://www.keithmcmillen.com/QuNeo/overview)
 
-#### Keith McMillen QuNeo Midi mapping v1.0 for Mixxx 1.10+
+#### Keith McMillen QuNeo Factory Midi mapping v1.0 for Mixxx 1.10+
 
 The mapping is included with the QuNeo installer, make sure to click the
 “Mixxx” check box when prompted during the installation. Alternatively
@@ -58,3 +58,7 @@ set to use Direction instead of Location. Velocity response is fixed at
 127 for all notes.
 
 [[/media/hardware/kmi_quoneo/quneo_mixxx_midi_output_v1.0.png|]]
+
+#### Keith McMillen QuNeo Alternative Midi mapping for Mixxx 1.10+
+
+<http://mixxx.org/forums/viewtopic.php?f=7&t=4130>

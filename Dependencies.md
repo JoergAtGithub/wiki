@@ -25,14 +25,14 @@ support.
   - libid3tag 0.15.1b (not on OS X)
   - libmad 0.15.1b (not on OS X)
   - libogg 1.3.0 
-  - libshout 2.2.2
+  - libshout 2.3.0
   - libvorbis 1.3.2
   - libsndfile 1.0.25
   - libsoundtouch 1.5.0
   - libflac 1.2.1
-  - taglib 1.7
+  - taglib 1.7.2
   - libhss1394 (r6)
-  - portaudio (2011/3/26 stable snapshot)
+  - portaudio (2011/11/21 stable snapshot)
   - portmidi (r217)
   - protobuf 2.4.1
   - Windows Only

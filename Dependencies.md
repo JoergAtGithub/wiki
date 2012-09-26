@@ -27,7 +27,7 @@ support.
 | libid3tag     | 0.15.1b    | N/A        |
 | libmad        | 0.15.1b    | N/A        |
 | libogg        |            | 1.3.0      |
-| libshout      | 2.3.1      | 2.3.0      |
+| libshout      | 2.3.1      | 2.3.1      |
 | libvorbis     | 1.3.3      | 1.3.3      |
 | libsndfile    |            | 1.0.25     |
 | libsoundtouch | N/A        | N/A        |

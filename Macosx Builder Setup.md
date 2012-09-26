@@ -363,7 +363,7 @@ Qt 4.8.2 doesn't build on OSX SDK 10.5 without this patch:
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-    export VERSION=libshout-2.3.0
+    export VERSION=libshout-2.3.1
     export ARCHIVE=$VERSION.tar.gz
     export DYLIB=src/.libs/libshout.3.dylib
     export STATICLIB=src/.libs/libshout.a

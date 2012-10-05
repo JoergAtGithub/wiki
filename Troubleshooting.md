@@ -313,8 +313,10 @@ scans for HID devices.) To fix this, do the following:
     `
 4.  Save and exit.
 5.  Enter `sudo /etc/init.d/udev restart`
-6.  If your user account is not already a member of `users`, enter `sudo
-    usermod -a -G users $USER`
+6.  If your user account is not already a member of `users` (or whatever
+    group name you used in the `rules` file above,) enter `sudo usermod
+    -a -G users $USER`
 7.  Log off and back on so your user account gets the new group and
     associated permissions.
-8.  Start Mixxx and you should be good to go.
+8.  Start Mixxx and your HID devices should now be listed under
+    Controllers in the Preferences window.

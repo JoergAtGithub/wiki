@@ -12,7 +12,25 @@ should work on Lion (10.7.x).
 ## 1\. Install Xcode development tools
 
 You will need the [Xcode development
-tools](http://developer.apple.com/technologies/tools/) installed.
+tools](http://developer.apple.com/technologies/tools/) installed. Xcode
+is a package provided by Apple containing compilers, libraries and
+additional tools required to develop applications for Mac OS X.
+
+#### Install Xcode on Mac OS X 10.7 Lion & 10.8 Mountain Lion
+
+Get the latest version of Xcode for free get it using the [Mac App
+Store](http://itunes.apple.com/us/app/xcode/id448457090?mt=12).
+Alternatively download Xcode as a disk image from the [Apple developer
+website](https://developer.apple.com/downloads/index.action).
+Downloading it requires a free registration at Apple's developer site.
+
+After installing Xcode, the Command Line Tools for Xcode must be
+installed. Goto *Xcode \> Preferences \> Downloads \> Components \>
+Command line tools* and click *Install* or download the latest version
+for your OS manually from the [Apple developer
+website](https://developer.apple.com/downloads/index.action).
+
+#### Install Xcode on Mac OS X 10.6 Snow Leopard
 
 Xcode 3.2.6 is the last version that can be downloaded for free for
 users of Snow Leopard (10.6.x) . Downloading it requires a free
@@ -25,17 +43,23 @@ Xcode 4.2 for Snow Leopard (10.6.x) requires that you have a [PAID
 it can NOT be downloaded or updated from the Mac App Store (MAS).
 [Download](https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_4.2_with_ios_5_sdk/xcode_4.2_and_ios_5_sdk_for_snow_leopard.dmg)
 
-Xcode 4.2 for Lion (10.7.x) can be downloaded for free from the Mac App
-Store (MAS), it will not install on Snow Leopard 10.6.x).
-[Download](http://itunes.apple.com/us/app/xcode/id448457090?mt=12)
+#### Install Xcode on Mac OS X 10.5 Leopard or earlier
+
+If you have an earlier release of Mac OS X, you may download the latest
+version of Xcode for OS X 10.5
+([v3.1.4](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20491))
+or for 10.4
+([v2.5](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=19907)).
 
 Older versions of Xcode can be be installed from your original Mac OS X
-Install Disc 2, look at [this
+Install Disc 2 as well, look at [this
 page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php)
-for a guide.
+for a guide. Run Software Update after installation to get the latest
+version for your OS.
 
-If you need a specific older version, check the [Apple download
-archive](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wo/4.1.17.2.1.3.3.1.0.1.1.0.3.3.3.3.1).
+If you need a specific older version, check the [Apple Developer Tools
+download
+archive](https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wo/5.1.17.2.1.3.3.1.0.1.1.0.3.1.3.3.1).
 Downloading it requires a free registration at Apple's developer site.
 
 ## 2\. Install build dependencies (Method 1 - MacPorts)

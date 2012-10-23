@@ -18,7 +18,7 @@ additional tools required to develop applications for Mac OS X.
 
 #### Install Xcode on Mac OS X 10.7 Lion & 10.8 Mountain Lion
 
-Get the latest version of Xcode for free get it using the [Mac App
+Get the latest version of Xcode for free using the [Mac App
 Store](http://itunes.apple.com/us/app/xcode/id448457090?mt=12).
 Alternatively download Xcode as a disk image from the [Apple developer
 website](https://developer.apple.com/downloads/index.action).

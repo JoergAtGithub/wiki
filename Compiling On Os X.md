@@ -84,9 +84,9 @@ on Mac OS X.
 ```
 
   - Finally, after that has completed, download and install the [Qt SDK
-    package](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x)
-    for your platform (qt-mac and qt-mac-debug-libs required,
-    SDK-Installer will not work with standard settings). 
+    package](https://qt-project.org/downloads) for your platform (qt-mac
+    and qt-mac-debug-libs required, SDK-Installer will not work with
+    standard settings). 
 
 <!-- end list -->
 
@@ -195,9 +195,8 @@ You will need to install the following by hand for the compile process:
     or "sudo port install portmidi"
   - faad2 ([Download](http://sourceforge.net/projects/faac/)) or "sudo
     port install faad2"
-  - QT 4.6.0+
-    ([Download](http://qt.nokia.com/downloads/qt-for-open-source-cpp-development-on-mac-os-x))
-    -- get the Cocoa Mac binary package for Mac OS X 10.5 - 10.6 (32-bit
+  - QT 4.6.0+ ([Download](http://https://qt-project.org/downloads)) --
+    get the Cocoa Mac binary package for Mac OS X 10.5 - 10.6 (32-bit
     and 64-bit) and install to the default location. -- DO NOT use
     qt4-mac delivered through macports. It will give you an error
     messages that some header files are missing e.g. libmad and others.

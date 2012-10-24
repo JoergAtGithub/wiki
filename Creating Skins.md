@@ -48,11 +48,12 @@ General structure of the skin.xml. More in-depth informations for each
 element and their attributes defined in the skin.xml can be found
 [here](#skinxml-in-depth-review)
 
-| syntax                                                                                                                                                                                                                                | Info                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| syntax                                                                                                                                                                                                                                                         | Info                                                                                                                                                                                                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
 <!DOCTYPE skin>           
 <skin>
+<manifest>...</manifest>
 <elementname>
 <tooltips>helpful text</tooltips>
 <Style>..</Style>
@@ -65,6 +66,7 @@ element and their attributes defined in the skin.xml can be found
 ` | ` Optional comments (i.e. skin license or changelog)
 Doctype declaration so Mixxx "know"
 Skin opening tag
+Manifest describing skin properties (author, title, etc.)
 Elements opening tag
 Tooltips to display on mouse-over
 Style (depends on the element)
@@ -84,6 +86,9 @@ below.
 
 [1.General](#sectiongeneral-)
 
+  - Manifest - specifies information about the skin (title, artist,
+    description, version) and allows you to set Mixxx controls when the
+    skin is loaded (e.g. enable 4-deck mode).
   - Skin Colour Scheme - allows the creation of different [colour
     schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
     of a skin
@@ -387,6 +392,7 @@ editor](#tools) and get started :-)
  * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] 
  * Removed <HfcColor>, the horizontal line`s color in the waveform, see [[creating_skins#waveform|<Visual>]]
  * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#waveform_overview|<Overview>]]. Track analysis progress will be still visible in waveform overview.
+ * Added the <manifest> skin section that allows you to specify the skin title, author, description, etc. and set Mixxx controls on skin load.
 ```
 
 ### Mixxx 1.10.0
@@ -419,6 +425,49 @@ editor](#tools) and get started :-)
     button
 
 ## Section: General
+
+### Skin Manifest (New in Mixxx 1.11.0)
+
+The skin manifest section tells Mixxx details about the skin. These
+details are currently unused but may be used in a future version.
+Additionally we may expand the manifest to include things like
+minimum-Mixxx-version required or recommended screen resolution.
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<manifest>
+<title>Deere 1280x1024 4-deck</title>
+<author>jus</author>
+<version>1.11.0.0.7</version>
+<description>A 4-deck split-waveform skin with a 16-sampler grid.</description>
+<language>en</language>
+<license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
+<attributes>
+  <attribute config_key="[Master],num_decks">4</attribute>
+  <attribute config_key="[Master],num_samplers">16</attribute>
+</attributes>
+</manifest>` | `start manifest tag
+Skin title
+Skin author
+Skin version (not the Mixxx version)
+A description of the skin
+Skin language (if language-independent, omit or put *)
+Skin copyright license
+Begin skin attributes
+Set "[Master],num_decks" ConfigKey to 4 when skin is loaded
+Set "[Master],num_samplers" ConfigKey to 16 when skin is loaded
+End skin attributes
+end manifest tag` |
+
+**The only part of the manifest that is used in 1.11.0 is the
+\<attributes\> section.** This section allows the skin to specify
+changes to Mixxx controls that should be executed when the skin is
+loaded. For example, Mixxx defaults to 2-decks in its mixing engine but
+when you load a skin that supports 4-decks, the skin can specify that
+the Control "\[Master\],num\_decks" should be set to 4 (see the above
+example). This will enable a 3rd and 4th deck in Mixxx's engine for the
+skin to interact with. This attribute list can change any Mixxx control
+but will only take effect when the skin is loaded.
 
 ### Skin Colour Scheme
 

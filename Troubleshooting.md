@@ -257,15 +257,27 @@ of your PC/card manufacturer since they may be newer.
 
 ## Where is the mixxx.log file?
 
-  - Linux: \~/.mixxx/mixxx.log
-  - Windows: (enter the following into the Location bar of an
+Mixxx logs debug informations, [MIDI/HID/etc.
+messages](command_line_options) it receives and script functions it
+loads in the `mixxx.log` plain text file.
+
+  - **Linux:** \~/.mixxx/mixxx.log
+  - **Windows:** (enter the following into the Location bar of an
     Explorer/My Computer window, or at the command prompt)
-  - v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
+  - Mixxx v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
     `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
     below.
-  - v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever Mixxx.exe is)
-  - OSX:
-  - v1.9.0 and up: in your home folder under `Library/Application
+  - Mixxx v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever
+    Mixxx.exe is)
+  - Note: The file may not show up as `mixxx.log` unless you've
+    unchecked `Hide extensions for known file types` in the Windows
+    Explorer folder options. Until then it is just `mixxx`, the only
+    text file in that location. By default in Windows 7 and up, known
+    file types are set to hide. See [How to show or hide file name
+    extensions in Windows
+    Explorer](http://support.microsoft.com/kb/865219)
+  - **Mac OS X:**
+  - Mixxx v1.9.0 and up: in your home folder under `Library/Application
     Support/Mixxx` (so e.g. Users/\<username\>/Library/Application
     Support/Mixxx)
   - Note: Apple made the user library folder hidden by default with OSX

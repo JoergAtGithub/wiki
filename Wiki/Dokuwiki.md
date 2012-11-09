@@ -4,13 +4,9 @@
 
 **nanoKONTROL Slim-Line USB Control Surface**
 
-## Headline
-
-Low-profile, multi-function control surface
-
-New track select and marker advance parameters
-
-Supports numerous software titles including major DAW programs
+1.  Ordered List ItemLow-profile, multi-function control surface
+2.  New track select and marker advance parameters
+3.  Supports numerous software titles including major DAW programs
 
 Convenient, compact control surface, with easy setup for immediate use
 In a body proportioned to fit perfectly in front of your laptop

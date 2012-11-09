@@ -8,7 +8,9 @@
 2.  New track select and marker advance parameters
 3.  Supports numerous software titles including major DAW programs
 
-Convenient, compact control surface, with easy setup for immediate use
+**Convenient, compact control surface, with easy setup for immediate
+use**
+
 In a body proportioned to fit perfectly in front of your laptop
 computer, the nanoKONTROL provides eight channels of the controllers you
 need to control your music software. The nanoKONTROL also features a

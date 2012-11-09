@@ -92,41 +92,41 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                                                 |               |          |       |
-| --------------------------------------------------------------- | ------------- | -------- | ----- |
-| Device                                                          | Windows       | Mac OS X | Linux |
-| Allen and Heath Xone:1D                                         |               |          |       |
-| Allen and Heath Xone:2D                                         |               |          |       |
-| Allen and Heath Xone:3D                                         |               |          |       |
-| Allen and Heath Xone:4D                                         |               |          |       |
-| Allen and Heath Xone:DX                                         |               |          |       |
-| Ecler Evo4                                                      |               |          |       |
-| Ecler Evo5                                                      |               |          |       |
-| EKS Otus Dualdeck                                               |               |          |       |
-| EKS Otus Plus                                                   |               |          |       |
-| EKS Otus RAW                                                    |               |          |       |
-| [EKS XP5](EKS%20XP5)                                            |               |          |       |
-| [EKS XP10](EKS%20XP10)                                          |               |          |       |
-| [KMI QuNeo](keith_mcmillen_quneo)                               |               |          |       |
-| Korg NanoPad                                                    |               |          |       |
-| [[/media/wiki/korg_nanokontrol_controller_midi.jpg|Korg NanoKontrol]] | Yes (1.10.0+) |          |       |
-| Korg NanoKey                                                    |               |          |       |
-| Korg PadKontrol                                                 |               |          |       |
-| M-AUDIO Torq Conectiv CD                                        |               |          |       |
-| M-AUDIO Torq Conectiv Vinyl                                     |               |          |       |
-| Native Instruments Kontrol X1                                   |               |          |       |
-| Native Instruments Kontrol S4                                   |               |          |       |
-| Numark Stealth Control                                          |               |          |       |
-| Numark Omni Control                                             |               |          |       |
-| Numark MixDeck                                                  |               |          |       |
-| Numark Mixmeister Control                                       |               |          |       |
-| Numark iDJ3                                                     |               |          |       |
-| Numark NSFX                                                     |               |          |       |
-| Numark V7                                                       |               |          |       |
-| [Vestax VCI-300](vestax_vci-300)                                |               |          |       |
-| Vestax TR-1                                                     |               |          |       |
-| Vestax VCM-100                                                  |               |          |       |
-| Vestax VCM-600                                                  |               |          |       |
+|                                   |               |          |       |
+| --------------------------------- | ------------- | -------- | ----- |
+| Device                            | Windows       | Mac OS X | Linux |
+| Allen and Heath Xone:1D           |               |          |       |
+| Allen and Heath Xone:2D           |               |          |       |
+| Allen and Heath Xone:3D           |               |          |       |
+| Allen and Heath Xone:4D           |               |          |       |
+| Allen and Heath Xone:DX           |               |          |       |
+| Ecler Evo4                        |               |          |       |
+| Ecler Evo5                        |               |          |       |
+| EKS Otus Dualdeck                 |               |          |       |
+| EKS Otus Plus                     |               |          |       |
+| EKS Otus RAW                      |               |          |       |
+| [EKS XP5](EKS%20XP5)              |               |          |       |
+| [EKS XP10](EKS%20XP10)            |               |          |       |
+| [KMI QuNeo](keith_mcmillen_quneo) |               |          |       |
+| Korg NanoPad                      |               |          |       |
+| Korg NanoKontrol                  | Yes (1.10.0+) |          |       |
+| Korg NanoKey                      |               |          |       |
+| Korg PadKontrol                   |               |          |       |
+| M-AUDIO Torq Conectiv CD          |               |          |       |
+| M-AUDIO Torq Conectiv Vinyl       |               |          |       |
+| Native Instruments Kontrol X1     |               |          |       |
+| Native Instruments Kontrol S4     |               |          |       |
+| Numark Stealth Control            |               |          |       |
+| Numark Omni Control               |               |          |       |
+| Numark MixDeck                    |               |          |       |
+| Numark Mixmeister Control         |               |          |       |
+| Numark iDJ3                       |               |          |       |
+| Numark NSFX                       |               |          |       |
+| Numark V7                         |               |          |       |
+| [Vestax VCI-300](vestax_vci-300)  |               |          |       |
+| Vestax TR-1                       |               |          |       |
+| Vestax VCM-100                    |               |          |       |
+| Vestax VCM-600                    |               |          |       |
 
 ## Sound cards
 

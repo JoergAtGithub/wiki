@@ -2,16 +2,45 @@
 
 [[/media/wiki/korg_nanokontrol_controller_midi.jpg|]]
 
-DokuWiki is a standards compliant, simple to use
-[Wiki](https://en.wikipedia.org/wiki/Wiki), mainly aimed at creating
-documentation of any kind. It is targeted at developer teams, workgroups
-and small companies. It has a simple but powerful [syntax](/wiki/syntax)
-which makes sure the datafiles remain readable outside the Wiki and
-eases the creation of structured texts. All data is stored in plain text
-files -- no database is required.
+nanoKONTROL Slim-Line USB Control Surface
 
-Read the [DokuWiki Manual](https://www.dokuwiki.org/manual) to unleash
-the full power of DokuWiki.
+Low-profile, multi-function control surface
+
+New track select and marker advance parameters
+
+Supports numerous software titles including major DAW programs
+
+Convenient, compact control surface, with easy setup for immediate use
+In a body proportioned to fit perfectly in front of your laptop
+computer, the nanoKONTROL provides eight channels of the controllers you
+need to control your music software. The nanoKONTROL also features a
+dedicated transport control section. The buttons have been carefully
+selected to be useful with your software, ensuring simple and intuitive
+control. Many software titles – including major DAW programs – are
+supported, dramatically reducing the need to make complicated connection
+settings.
+
+Complete control for your DAW or software synthesizer A knob, fader, and
+three switches are provided for each of the eight channels, respectively
+assigned to pan, volume, and solo/mute/record. This arrangement is a
+real convenience when recording automation for multiple channels.
+There's also a marker button, making it easy to assign marks at
+important points in your song for more efficient recording and song
+production. When using a software synthesizer, you can assign parameters
+to the desired controllers for easy control. For example you could use
+the faders to control the ADSR of an envelope generator, and use the
+knobs to control the filter's cutoff frequency and resonance, etc.
+
+Korg Kontrol Editor software The nanoKONTROL works with the "Korg
+Kontrol Editor" software – available free on the Korg website. Load it
+into your computer, and use it to make detailed customized settings. For
+example, the minimum and maximum values for each control change message
+can be specified.
+
+USB power for an uncluttered setup Just connect a single USB cable from
+your computer to the nanoKONTROL, and you've got a quick and portable
+music production system. Power and USB-MIDI data travels down the same
+wire for a clean, efficient workspace
 
 ## Download
 

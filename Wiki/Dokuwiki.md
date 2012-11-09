@@ -2,7 +2,7 @@
 
 [[/media/wiki/korg_nanokontrol_controller_midi.jpg|]]
 
-**Bold Text**nanoKONTROL Slim-Line USB Control Surface
+**nanoKONTROL Slim-Line USB Control Surface**
 
 Low-profile, multi-function control surface
 

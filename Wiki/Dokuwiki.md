@@ -1,6 +1,6 @@
 # DokuWiki
 
-[[[/media/wiki/dokuwiki-128.png|dokuwiki-128.png]]](https://www.dokuwiki.org/wiki:dokuwiki)
+[[/media/wiki/dokuwiki-128.png|[![dokuwiki-128.png]]](https://www.dokuwiki.org/wiki:dokuwiki)](/wiki/korg_nanokontrol_controller_midi.jpg)
 DokuWiki is a standards compliant, simple to use
 [Wiki](https://en.wikipedia.org/wiki/Wiki), mainly aimed at creating
 documentation of any kind. It is targeted at developer teams, workgroups

@@ -24,7 +24,7 @@ Linux:
 
 Windows:
 
-  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\
+  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\mp4
 
 OSX:
 

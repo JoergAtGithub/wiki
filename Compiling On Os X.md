@@ -62,7 +62,9 @@ download
 archive](https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wo/5.1.17.2.1.3.3.1.0.1.1.0.3.1.3.3.1).
 Downloading it requires a free registration at Apple's developer site.
 
-## 2\. Install build dependencies (Method 1 - MacPorts)
+## 2\. Install build dependencies
+
+### Method 1 - MacPorts
 
 Mixxx relies on several external libraries for various features.
 Fortunately, you can automatically download and install most of these
@@ -96,7 +98,7 @@ on Mac OS X.
     hand)](compiling_on_os_x#install_build_dependencies_method_2_-_compile_by_hand)"
     for details about installation or exclusion.
 
-### If This is Your First Time Using MacPorts
+#### If This is Your First Time Using MacPorts
 
 After installing MacPorts, using MacPorts to install the required
 libraries is a simple process. Using the command `sudo port install X`,
@@ -158,7 +160,35 @@ Perhaps there has been a newer version of the library released. You may
 be hosed at this point, but if you have an older version of the library
 already installed on your system, it may still compile and run properly.
 
-## 2\. Install build dependencies (Method 2 - Compile by hand)
+### Method 2 - Install using Homebrew
+
+[Homebrew](http://mxcl.github.com/homebrew/) is yet another package
+manager for OS X. It is growing quickly in popularity. Assuming you have
+already installed Homebrew and gotten it working:
+
+  - Open the
+    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
+    application and use the following command to install the necessary
+    libraries:
+
+<!-- end list -->
+
+``` 
+    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf
+```
+
+  - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
+    and AAC codec. If you don't want to use the OSX versions of these
+    codecs you can build the codecs into Mixxx directly. To do this, you
+    have to install the MP3 and AAC codecs using Homebrew:
+
+<!-- end list -->
+
+``` 
+    brew install libid3tag libmad mp4v2 faad2
+```
+
+### Method 3 - Compile by hand
 
 You will need to install the following by hand for the compile process:
 

@@ -64,7 +64,37 @@ Downloading it requires a free registration at Apple's developer site.
 
 ## 2\. Install build dependencies
 
-### Method 1 - MacPorts
+### Method 1 - Install using Homebrew
+
+**This is the preferred method of compiling Mixxx on OS X**
+
+[Homebrew](http://mxcl.github.com/homebrew/) is yet another package
+manager for OS X. It is growing quickly in popularity. Assuming you have
+already installed Homebrew and gotten it working:
+
+  - Open the
+    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
+    application and use the following command to install the necessary
+    libraries:
+
+<!-- end list -->
+
+``` 
+    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf flac qt
+```
+
+  - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
+    and AAC codec. If you don't want to use the OSX versions of these
+    codecs you can build the codecs into Mixxx directly. To do this, you
+    have to install the MP3 and AAC codecs using Homebrew:
+
+<!-- end list -->
+
+``` 
+    brew install libid3tag libmad mp4v2 faad2
+```
+
+### Method 2 - MacPorts
 
 Mixxx relies on several external libraries for various features.
 Fortunately, you can automatically download and install most of these
@@ -160,34 +190,6 @@ Perhaps there has been a newer version of the library released. You may
 be hosed at this point, but if you have an older version of the library
 already installed on your system, it may still compile and run properly.
 
-### Method 2 - Install using Homebrew
-
-[Homebrew](http://mxcl.github.com/homebrew/) is yet another package
-manager for OS X. It is growing quickly in popularity. Assuming you have
-already installed Homebrew and gotten it working:
-
-  - Open the
-    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
-    application and use the following command to install the necessary
-    libraries:
-
-<!-- end list -->
-
-``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf flac qt
-```
-
-  - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
-    and AAC codec. If you don't want to use the OSX versions of these
-    codecs you can build the codecs into Mixxx directly. To do this, you
-    have to install the MP3 and AAC codecs using Homebrew:
-
-<!-- end list -->
-
-``` 
-    brew install libid3tag libmad mp4v2 faad2
-```
-
 ### Method 3 - Compile by hand
 
 You will need to install the following by hand for the compile process:
@@ -265,20 +267,41 @@ code:
 
 ## 4\. Compile and install
 
-If you got the source code from BZR, change to the newly created "mixxx"
+If you used Homebrew, you need to set your compiler paths accordingly.
+In the below code you should customize `HOMEBREW_PATH` to be the path to
+your homebrew installation. In this example we will use
+`/usr/local/homebrew`.
+
+    HOMEBREW_PATH=/usr/local/homebrew
+    export CFLAGS=-I$HOMEBREW_PATH/include
+    export CXXFLAGS=-I$HOMEBREW_PATH/include
+    export LDFLAGS=-L$HOMEBREW_PATH/lib
+    export QTDIR=$HOMEBREW_PATH/lib
+
+If you got the source code from BZR, change to the newly created `mixxx`
 directory, and use scons to compile and install:
 
     cd mixxx
-    scons
+    scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
+
+Setting `coreaudio=1` will use CoreAudio to decode MP3 and AAC files. If
+you want to use `libmad` or `libfaad` for MP3 and AAC decoding, simply
+set the `mad` and `faad` flags and clear the `coreaudio` flag. For
+example:
+
+    scons hss1394=0 mad=1 faad=1 coreaudio=0 verbose=0
 
 If it you get a message like:
 
     Error: QT path does not exist or QT4 is not installed.
 
-Then try the "scons" command above like this:
+If you installed Qt to a custom location you will have to provide this
+via the `qtdir` flag. For example, you could try:
 
     scons qtdir=/Developer
+
+Because /Developer is a common place for Qt to drop its frameworks.
 
 If it you get a message like:
 
@@ -288,9 +311,10 @@ Then try the "scons" command above like this:
 
     scons machine=x86_64
 
-This should generate Mixxx.app. Generating the .app has some expensive
+This should generate `Mixxx.app` which you can run by double-clicking on
+or typing `open Mixxx.app`. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip
-'scons bundle' and instead on the first run of mixxx run it as:
+`scons bundle` and instead on the first run of mixxx run it as:
 
     ./mixxx --resourcePath res/
 

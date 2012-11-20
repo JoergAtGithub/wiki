@@ -174,7 +174,7 @@ already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf
+    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf flac qt
 ```
 
   - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3

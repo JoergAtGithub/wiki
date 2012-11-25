@@ -270,7 +270,7 @@ code:
 If you used Homebrew, you need to set your compiler paths accordingly.
 In the below code you should customize `HOMEBREW_PATH` to be the path to
 your homebrew installation. In this example we will use
-`/usr/local/homebrew`.
+`/usr/local/homebrew` (default is `/usr/local`).
 
     HOMEBREW_PATH=/usr/local/homebrew
     export CFLAGS=-I$HOMEBREW_PATH/include

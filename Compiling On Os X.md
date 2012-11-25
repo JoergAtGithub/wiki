@@ -282,6 +282,7 @@ If you got the source code from BZR, change to the newly created `mixxx`
 directory, and use scons to compile and install:
 
     cd mixxx
+    cd mixxx (Bazaar creates two subdirectories...)
     scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 

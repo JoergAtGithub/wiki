@@ -368,9 +368,6 @@ Further reads:
     Designer](http://colorschemedesigner.com/))
   - Free knob tools - Windows, MacOSX & Linux
     ([JKnobman](http://www.g200kg.com/en/software/knobman.html))
-  - Convert a Mixxx skin.xml into HTML to be viewed with a web browser -
-    Windows, MacOSX & Linux ([XSL
-    Helper](/creating_skins#convert_a_mixxx_skinxml_into_html))
 
 # Skin.xml in-depth review
 

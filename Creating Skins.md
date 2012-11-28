@@ -2033,9 +2033,8 @@ performed action (Y= pregain or filterHigh or filterMid or filterLow)
 
 ## Special nodes
 
-Check out the [Spartan Skin for
-Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
-blueprint, it makes use of these special nodes.
+Check out the skins in Mixxx 1.11 as blueprint, they make heavy use of
+these special nodes.
 
 ### TrackProperty
 

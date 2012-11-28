@@ -428,13 +428,13 @@ editor](#tools) and get started :-)
 
 ### Skin Manifest (New in Mixxx 1.11.0)
 
-The skin manifest section tells Mixxx details about the skin. These
-details are currently unused but may be used in a future version.
+The skin manifest section tells Mixxx details about the skin. Some of
+the details are currently unused but may be used in a future version.
 Additionally we may expand the manifest to include things like
 minimum-Mixxx-version required or recommended screen resolution.
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<manifest>
 <title>Deere 1280x1024 4-deck</title>
 <author>jus</author>
@@ -445,6 +445,7 @@ minimum-Mixxx-version required or recommended screen resolution.
 <attributes>
   <attribute config_key="[Master],num_decks">4</attribute>
   <attribute config_key="[Master],num_samplers">16</attribute>
+  <attribute config_key="[Master],num_preview_decks">1</attribute>
   <attribute config_key="[Samplers],show_samplers">1</attribute>
 </attributes>
 </manifest>` | `start manifest tag
@@ -455,9 +456,10 @@ A description of the skin
 Skin language (if language-independent, omit or put *)
 Skin copyright license
 Begin skin attributes
-Set "[Master],num_decks" ConfigKey to 4 when skin is loaded
-Set "[Master],num_samplers" ConfigKey to 16 when skin is loaded
-Set "[Samplers],show_samplers" WidgetGroup to be visible by default
+Set "[Master],num_decks" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml
+Set "[Master],num_samplers" ConfigKey to 16 when skin is loaded. Requires additional code per Sampler Deck in the skin.xml
+Set "[Master],num_preview_decks" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml
+Set "[Samplers],show_samplers" WidgetGroup to be visible by default. Works for exisiting WidgetGroups with <BindProperty>visible</BindProperty> key
 End skin attributes
 end manifest tag` |
 

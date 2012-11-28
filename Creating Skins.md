@@ -423,7 +423,9 @@ editor](#tools) and get started :-)
 
 ## Section: General
 
-### Skin Manifest (New in Mixxx 1.11.0)
+### Skin Manifest
+
+**New in Mixxx 1.11.0**
 
 The skin manifest section tells Mixxx details about the skin. Some of
 the details are currently unused but may be used in a future version.

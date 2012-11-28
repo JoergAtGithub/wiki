@@ -778,7 +778,7 @@ Defines connected Channel (X = Channel1 or Channel2 or Master)
 
 New in Mixxx 1.10  
 |`<Time>
-<TooltipID>?</TooltipID>
+<TooltipID>time</TooltipID>
 <Style>...</Style>
 <Pos>X,Y</Pos>
 <Size>W,H</Size>

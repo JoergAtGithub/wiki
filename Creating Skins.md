@@ -2077,8 +2077,8 @@ every node in the tree. WidgetGroups allow to make a group of relatively
 positioned widgets. You can display more than one WidgetGroup node in a
 skin.
 
-|                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                       |      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | `<WidgetGroup>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
@@ -2092,22 +2092,49 @@ skin.
     <!-- as many regular widgets as you like in here -->
   </Children>
 </WidgetGroup>
-` | `
+` | `  ` |
 
-
-<size> is optional, this will limit the size so that any part of a 
+\<size\> is optional, this will limit the size so that any part of a
 child widget outside of the size rectangle is not shown
 
+In that example, the PushButton child will be at 0,0 relative to its
+parent, or the absolute position 100,200. The SliderComposed widget will
+be at 20,0 relative to its parent or 120,200.
 
-In that example, the PushButton child will be at 0,0 relative to its parent, 
-or the absolute position 100,200. 
-The SliderComposed widget will be at 20,0 relative to its parent or 120,200. 
+### Splitter
 
+New in Mixxx 1.11.0
 
+This allows you to create a QSplitter dynamically.
 
+|                                                                                                                                                                                                                                                                                                       |      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| `<Splitter>
+  <Pos>100,200</Pos>
+  <Size>w,h</Size>
+  <SplitSizes>1,1,8</SplitSizes>
+  <Children>
+    <WidgetGroup>
+    </WidgetGroup>
+    <WidgetGroup>
+    </WidgetGroup>
+    <WidgetGroup>
+    </WidgetGroup>
+    <!-- as many regular widgets as you like in here -->
+  </Children>
+</Splitter>
+` | `  ` |
 
+`SplitSizes` gives the proportional splits between the children of the
+'Splitter'. From the example, the first 2 `WidgetGroup`s will each have
+10% of the splitter size initially and the 3rd `WidgetGroup` will have
+80%. There must be as many split sizes as there are children or else it
+will be ignored.
 
-` |
+**NOTE:** `Splitter` derives from `QSplitter`. As of Qt 4.8.3 the
+default `SizePolicy` for `QSplitter` is `QSizePolicy::Expanding`
+horizontally and `QSizePolicy::Preferred` vertically. If you do not
+provide a size for the splitter this is the default policy.
 
 # Convert a Mixxx skin.xml into HTML
 

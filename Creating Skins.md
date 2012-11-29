@@ -2136,6 +2136,58 @@ default `SizePolicy` for `QSplitter` is `QSizePolicy::Expanding`
 horizontally and `QSizePolicy::Preferred` vertically. If you do not
 provide a size for the splitter this is the default policy.
 
+### WidgetStack
+
+### Splitter
+
+New in Mixxx 1.11.0
+
+This allows you to create a QSplitter dynamically.
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<WidgetStack>
+  <NextControl>[Channel1],hotcuepage_next</NextControl>
+  <PrevControl>[Channel1],hotcuepage_prev</PrevControl>
+  <Children>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show1"></WidgetGroup>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show2"></WidgetGroup>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show3"></WidgetGroup>
+    <!-- as many regular widgets as you like in here -->
+  </Children>
+</WidgetStack>
+` | `
+Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist)
+Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist)
+The children of the WidgetStack
+A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
+A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist) 
+A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
+
+` |
+
+A `WidgetStack` is a widget that only shows one widget at a time. By
+default, the shown widget is the first child in the `<Children>` block.
+If the `NextControl` or `PrevControl` is set to 1, then the next or
+previous widget in the stack is shown and the current widget is hidden.
+If an optional `trigger` attribute is given to any child, then the
+control named by the attribute will automatically switch to the widget
+when the control is set to 1 and when the widget is hidden the control
+will be set to 0 by the `WidgetStack`. This allows you to create radio
+buttons that let the user switch between multiple different widgets to
+occupy a certain space.
+
+Some examples:
+
+  - Multiple pages of hotcue buttons. 
+  - A collapsed/expanded view of a deck: two children in a
+    `WidgetStack`, one with the full deck widgets and one with the
+    collapsed deck widgets. A single `<NextControl>` and a
+    `<PushButton>` attached to that control allows the user to toggle
+    between the collapsed and expanded view of the deck. 
+  - Tabbed UIs / Screen Sets. The entire skin could be one large
+    `WidgetStack` that lets you switch the UI between different layouts.
+
 # Convert a Mixxx skin.xml into HTML
 
 Deprecated in Mixxx 1.11

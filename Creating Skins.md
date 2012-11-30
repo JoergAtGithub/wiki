@@ -381,6 +381,8 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
+ * Added the [[creating_skins#splitter|<Splitter>]]> section, which controls the size of child widgets by dragging the boundary between the children.
+ * Added the [[creating_skins#widgetstack|<WidgetStack>]]> section, provides a stack of widgets where only one widget is visible at a time. This could be used to make multiple pages of hotcue buttons so you can flip through the pages. 
  * Added the [[creating_skins#skin_manifest|<Skin Manifest>]]> section, which tells Mixxx details about the skin and currently allows to specify changes to Mixxx controls that should be executed when the skin is loaded.   
  * Replaced <Tooltips> with <TooltipId> key. This avoids the need to write individual tooltip text per node, allows tooltips translation, makes skins more coherent and maintenance easier. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp// 
  * Added <AxesColor> to define the color for horizontal/vertical line in in the waveform, see [[creating_skins#waveform|<Visual>]]

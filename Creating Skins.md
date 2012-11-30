@@ -270,7 +270,7 @@ possible?FIXME
 
 ### Skin licensing & copyright
 
-The principles on licensing found [on the Creative Common
+The principles on licensing found on the [Creative Common
 Wiki](http://wiki.creativecommons.org/Before_Licensing) apply for other
 licenses too.
 
@@ -284,46 +284,50 @@ Popular choices are [GPL](http://www.gnu.org/licenses/gpl.html) and
 [DebianFreeSoftwareGuidelines](http://wiki.debian.org/DFSGLicenses) or
 they can not be distributed with Mixxx. **  
 If you are going to make a skin based on others work, make sure you
-comply with their license terms. If you are not sure, why not ask the
-original author?
+comply with their license terms. If you are not sure, ask the original
+author.
 
-It is a good idea to put the license terms of your skin as a comment on
-top of the skin.xml (see examples).
+Add the license terms at the beginning of skin.xml (see examples).
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |  |                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------- |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Example CC by-sa 3.0 licensed skin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |  | Example GPL licensed skin |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |  |                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Example CC by-sa 3.0 licensed skin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |  | Example GPL licensed skin |
 | `<!--
-Name / Version of your skin, Skin for Mixxx 1.9.x
+"Name of your skin", Skin for Mixxx
 www.mixxx.org
-Copyright (C) 2011 you name , your@email.adress
+Copyright (C) 2011-2013 your name , your@email.adress
     
 based on the "Name of the original skin"
-Copyright (C) 2011 name of the original author, authors@email.adress
+Copyright (C) 2011-2013 name of the original author, authors@email.adress
   
-This file is part of the "Name of your skin" Skin for Mixxx 1.9.x
+This file is part of the "Name of your skin" skin for Mixxx.
 "Name of your skin" is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
 http://creativecommons.org/licenses/by-sa/3.0/
-     
+
+With every copy of the work, you are required to either provide a copy of the license it self
+or a link (URI). Failure to do this is a failure to complete the terms of the CC license.
+
 You are free:
 to Share - to copy, distribute and transmit the work
 to Remix - to adapt the work
-        
-Under the following conditions:
-Attribution - You must attribute the work in the manner specified by the author or licensor 
-(but not in any way that suggests that they endorse you or your use of the work).
 
-Share Alike - If you alter, transform, or build upon this work, you may distribute 
+Under the following conditions:
+Attribution - You must attribute the work in the manner specified by the author or licensor
+(but not in any way that suggests that they endorse you or your use of the work).
+A attribution should include the following: The name of the author and/or licensor, 
+the title of the work, the URL that is associated with the work.
+
+Share Alike - If you alter, transform, or build upon this work, you may distribute
 the resulting work only under the same or similar license to this one.
 -->` | `<!--
-Name / Version of your skin, Skin for Mixxx 1.9.x
+"Name of your skin", Skin for Mixxx
 www.mixxx.org
-Copyright (C) 2011 you name , your@email.adress
+Copyright (C) 2011-2013 your name , your@email.adress
 
 based on the "Name of the original skin"
-Copyright (C) 2011 name of the original author, authors@email.adress
+Copyright (C) 2011-2013 name of the original author, authors@email.adress
 
-This file is part of "Name of your skin".
+This file is part of "Name of your skin" skin for Mixxx.
 "Name of your skin" is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
@@ -338,6 +342,12 @@ http://www.gnu.org/licenses/gpl.html
 -->
 
 
+
+
+
+
+
+
 ` |  |                           |
 
 Further reads:
@@ -346,7 +356,9 @@ Further reads:
   - [Non-commercial licenses vs open
     licenses](http://www.appropedia.org/Non-commercial_licenses_vs_open_licenses)
   - [Frequently Asked Questions about the GNU
-    GPL](http://www.gnu.org/licenses/gpl-faq.html) 
+    GPL](http://www.gnu.org/licenses/gpl-faq.html)
+  - [Skin Manifest](creating_skins#skin_manifest) - Tells Mixxx details
+    about the skin
 
 ### Tools
 

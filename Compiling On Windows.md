@@ -466,3 +466,11 @@ C:\\qt\\qt-win-opensource-src-4.5.1\\bin;C:\\mingw64\</code\>
   - Click on the //Projects// side button -> //Run Settings// tab -> type: <code>--resourcePath ../res</code> in the //Arguments// Box 
   - Hit the green run (>) button
 ```
+
+[Perlengkapan
+Bayi](http://littletods.com/en/content/4-perlengkapan-bayi) |
+[Outsourcing
+Indonesia](http://saranasukses.com/outsourcing-indonesia.html) | [Anti
+Rayap](http://www.doxapest.co.id/index.php/pest-control-dan-anti-rayap)
+| [Pest
+Control](http://www.doxapest.co.id/index.php/pest-control-dan-anti-rayap)

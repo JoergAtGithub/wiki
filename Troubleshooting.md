@@ -332,3 +332,12 @@ scans for HID devices.) To fix this, do the following:
     associated permissions.
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
+
+## I can't see my MIDI device
+
+This happens on Linux where devices like the American Audio VMS4.1 only
+show up as an HID device, not a MIDI device. To fix this, do the
+following:
+
+1.  On login, open a console
+2.  Enter `modprobe snd-seq-midi`

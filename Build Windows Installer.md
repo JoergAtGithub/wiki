@@ -79,3 +79,11 @@ NSI script and/or SConscript:
     redistributable packages and install it on the end-users machine.
 
 Now, doesn't this make you long for a MinGW build? :)
+
+[Perlengkapan
+Bayi](http://littletods.com/en/content/4-perlengkapan-bayi) |
+[Outsourcing
+Indonesia](http://saranasukses.com/outsourcing-indonesia.html) | [Anti
+Rayap](http://www.doxapest.co.id/index.php/pest-control-dan-anti-rayap)
+| [Pest
+Control](http://www.doxapest.co.id/index.php/pest-control-dan-anti-rayap)

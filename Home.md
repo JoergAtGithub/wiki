@@ -5,10 +5,10 @@ encompassing performing musicians, C++ addicts, amateur DJs and even
 just casual users. The Mixxx Wiki contains useful information for users,
 developers, and artists, and is summarized in the categories below.
 
-Most of the contents of this wiki [Disukai](http://www.disukai.com/) can
-be edited by anyone, the main exception to this is the
-[development\_roadmap](development_roadmap) which is a fairly
-authoritative description of the development team's plans.
+Most of the contents of this wiki can be edited by anyone, the main
+exception to this is the [development\_roadmap](development_roadmap)
+which is a fairly authoritative description of the development team's
+plans.
 
 ## User Documentation
 
@@ -63,11 +63,9 @@ authoritative description of the development team's plans.
 
 <!-- end list -->
 
-  - [NOT YET
-    \[\[http://www.disukai.com/2012/09/jadwal-liga-inggris-terbaru-hari-ini.html|Jadwal
-    Liga Inggris](hid_mapping_format) IMPLEMENTED HID controller mapping
-    file format\]\] - Read this to find out how to create or change a
-    mapping file for your HID controller. (TENTATIVE - not yet
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - Read this to find out how to create or
+    change a mapping file for your HID controller. (TENTATIVE - not yet
     implemented.)
 
 <!-- end list -->
@@ -132,9 +130,7 @@ authoritative description of the development team's plans.
 Mixxx is an accepted mentoring organization for Google Summer of Code,
 2012.
 
-  - See the list of suggested
-    [Gudangponsel](http://gudangponsel.blogspot.com/) projects: [GSoC
-    2012 Ideas](gsoc2012ideas)
+  - See the list of suggested projects: [GSoC 2012 Ideas](gsoc2012ideas)
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
@@ -197,9 +193,7 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
   - The main [Mixxx website](http://www.mixxx.org).
   - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
     [bug tracker](https://bugs.launchpad.net/mixxx/).
-  - The IRC [Gambar
-    Animasi](http://www.disukai.com/2012/12/gambar-animasi-kartun-bergerak-lucu.html)
-    Channel: \#mixxx on [Freenode](http://freenode.net/).
+  - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
   - The blog: [mixxxblog.blogspot.com](http://mixxxblog.blogspot.com).
   - Bazaar code browsing on
     [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code

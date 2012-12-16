@@ -6,10 +6,10 @@ the interface, potentially making the program easier to use.
 
 ### Getting started
 
-A skin for Mixxx is basically a folder with various images and one text
-file named skin.xml. The skin.xml defines all the elements (widgets) of
-the skin, what the images are used for and and where they are placed on
-screen.
+A skin for Mixxx is [Disukai](http://www.disukai.com/) basically a
+folder with various images and one text file named skin.xml. The
+skin.xml defines all the elements (widgets) of the skin, what the images
+are used for and and where they are placed on screen.
 
 Reading this page helps to understand how skins work in Mixxx‚ it will
 save you time eventually.
@@ -44,9 +44,10 @@ Element positions are defined with **X,Y** coordinates (from upper left
 
 ##### Structure
 
-General structure of the skin.xml. More in-depth informations for each
-element and their attributes defined in the skin.xml can be found
-[here](#skinxml-in-depth-review)
+General structure of the
+[Gudangponsel](http://gudangponsel.blogspot.com/) skin.xml. More
+in-depth informations for each element and their attributes defined in
+the skin.xml can be found [here](#skinxml-in-depth-review)
 
 | syntax                                                                                                                                                                                                                                                         | Info                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -92,8 +93,9 @@ below.
   - Skin Colour Scheme - allows the creation of different [colour
     schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
     of a skin
-  - Background picture - Image file which all elements will be displayed
-    on
+  - Background picture - Image file [Harga
+    Android](http://www.disukai.com/2012/08/harga-handphone-android-terbaru.html)
+    which all elements will be displayed on
   - Library display - Widget holds all your music information,
     playlists, search bar etc.
 
@@ -158,7 +160,9 @@ below.
 
   - TrackProperty - pull advanced informations from tracks and display
     them
-  - WidgetGroup - make a group of relatively positioned widgets
+  - WidgetGroup - make a group [Harga
+    Emas](http://www.disukai.com/2012/07/harga-emas-hari-ini-dalam-rupiah.html)
+    of relatively positioned widgets
 
 ### Skin FAQ
 
@@ -198,7 +202,7 @@ Additional skins for Mixxx can be downloaded in the
     so you get
     /Applications/Mixxx.app/Contents/Resources/skins/NewSkin
     
-    Doublecheck that the skin.xml is in the "NewSkin" root folder and not in a subfolder, otherwhise Mixxx may throw an error when starting that skin.
+    Doublecheck that [[http://www.disukai.com/2012/12/manfaat-daun-sirsak-untuk-kesehatan.html|Manfaat Daun Sirsak]] the skin.xml is in the "NewSkin" root folder and not in a subfolder, otherwhise Mixxx may throw an error when starting that skin.
     
     3. Start Mixxx , goto "Preferences-->Interface" and select "Skin-->NewSkin"
        Make sure you have "Waveform Display-->Waveform" selected
@@ -217,9 +221,10 @@ template](/creating_skins#getting_started) guides you and helps to makes
 it easier.  
 Example: Your skin is 1024×768 but your screen is 1280×1024. When going
 into fullscreen Mixxx will fill your screen around the 1024×768 used by
-the skin with the skin\`s background color. This background color is
-defined in skin.xml using the \<*Horizontal\>* key . See [Main
-background](#main-background).  
+the skin with the skin\`s background color. [Gambar
+Animasi](http://www.disukai.com/2012/12/gambar-animasi-kartun-bergerak-lucu.html)
+This background color is defined in skin.xml using the \<*Horizontal\>*
+key . See [Main background](#main-background).  
 So if you would like to have your skin fill the whole screen ( i.e. to
 have more space for the library), you need another variant of your skin
 for 1280×1024.  
@@ -404,7 +409,7 @@ editor](#tools) and get started :-)
  * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] 
  * Removed <HfcColor>, the horizontal line`s color in the waveform, see [[creating_skins#waveform|<Visual>]]
  * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#waveform_overview|<Overview>]]. Track analysis progress will be still visible in waveform overview.
- * Added the <manifest> skin section that allows you to specify the skin title, author, description, etc. and set Mixxx controls on skin load.
+ * Added the <manifest> skin section [[http://gudangponsel.blogspot.com/2012/12/spesifikasi-dan-harga-nokia-asha-311.html|Nokia Asha 311]] that allows you to specify the skin title, author, description, etc. and set Mixxx controls on skin load.
 ```
 
 ### Mixxx 1.10.0
@@ -514,7 +519,7 @@ appearance of the library widget like:
 
 ``` 
   * Custom images for splitter and checkboxes in library
-  * Custom images for branch triangle in treeview
+  * Custom images for [[http://www.saksuk.com/|Saksuk.com]] branch triangle in treeview
   * Visual feedback when searchbox has focus
   * General appearance of text and buttons in library & tooltips
 ```
@@ -629,8 +634,8 @@ Defines text color
 
 ` |
 
-|                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Mark>
         <Control>loop_start_position</Control>
         <Pixmap>custom_marker.png</Pixmap>
@@ -641,7 +646,7 @@ Defines text color
 </Mark>` | `
 Defines a loops starting point
 Optional: Defines a custom marker for given element, if available it overrides the default triangle
-Text visible when starting point is set (and no custom marker is defined)
+Text visible when [[http://www.disukai.com/2012/09/jadwal-liga-inggris-terbaru-hari-ini.html\|Jadwal Liga Inggris]] starting point is set (and no custom marker is defined)
 Defines where text is positioned (Y= top or center or bottom)
 Defines text background color
 Defines text color

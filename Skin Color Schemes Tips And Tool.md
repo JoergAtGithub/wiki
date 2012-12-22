@@ -11,7 +11,10 @@ to help me make schemes faster.
 ## Mixxx 1.9 Scheme Engine and Transparent PNGs
 
 [[/media/skinning/color_scheme/scs_tips_vumeterex.jpg|scs\_tips\_vumeterex.jpg]]
-**The processor does not support transparency (in Mixxx 1.9).** Regular
+
+**The processor does support transparency from Mixxx 1.11 onwards.**
+
+~~The processor does not support transparency (in Mixxx 1.9). Regular
 skins can be created using transparent PNGs. This allows for some pretty
 interesting layered effects, like this VU meter in one of my skins (at
 right). Unfortunately, any partially transparent areas in PNGs that have
@@ -19,7 +22,7 @@ schemes applied to them become fully opaque with the applied color.
 Fully transparent areas become opaque black. In the example below left,
 imagine that the yellow circle with a dot is one of a series of PNG
 images with transparency used for rotary knobs on a skin. It looks fine
-until it goes through the scheme processor.
+until it goes through the scheme processor.~~
 
 [[/media/skinning/color_scheme/scs_tips_pngex.jpg|scs\_tips\_pngex.jpg]] To
 avoid ugly results like this, you must:
@@ -28,7 +31,7 @@ avoid ugly results like this, you must:
   - do not have controls overlap other controls 
   - place labels and background images where they will not be covered by
     control edges and corners 
-  - avoid transparent backgrounds in your PNGs 
+  - ~~avoid transparent backgrounds in your PNGs~~
 
 ## Color Declarations Affected by Schemer
 

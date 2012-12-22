@@ -10,7 +10,7 @@ architecture in Mixxx.
 
 ## Color Scheme Demo
 
-Mixxx comes pre-loaded with several skins. In Mixxx 1.9 the only ones
+Mixxx comes pre-loaded with several skins. In Mixxx 1.11 the only ones
 with build-in color schemes are the **Outline** skins.
 
 How to change a skin and the skins color scheme in Mixxx

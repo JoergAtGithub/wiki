@@ -5,7 +5,7 @@
 Creating a new skin from scratch is a lot of work and involves editing a
 lot of images, it's not really very practical to do it just to create a
 different coloured version of a skin. You can easily create different
-coloured version of a skin by making use of the the color filtering
+coloured version of a skin by making use of the color filtering
 architecture in Mixxx.
 
 ## Color Scheme Demo

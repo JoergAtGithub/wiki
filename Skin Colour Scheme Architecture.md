@@ -24,11 +24,14 @@ drop-down menu is grayed out.
 
 [[/media/skinning/color_scheme/mixxx-1.9-color-scheme-preferences.png|]]
 
-**Default Color Scheme (Dark Mixxx) for Outline skins**  
+**Default Color Scheme (Dark Mixxx) for Outline skins (Depicted here for
+Mixxx 1.9)**  
 [[/media/skinning/color_scheme/mixxx-1.9-color-scheme1.png|]]  
-**Alternative Color Scheme (Still Awake Mixxx) for Outline skins**  
+**Alternative Color Scheme (Still Awake Mixxx) for Outline skins
+(Depicted here for Mixxx 1.9)**  
 [[/media/skinning/color_scheme/mixxx-1.9-color-scheme2-1.png|]]  
-**Alternative Color Scheme (Classic Mixxx) for Outline skins**  
+**Alternative Color Scheme (Classic Mixxx) for Outline skins (Depicted
+here for Mixxx 1.9)**  
 [[/media/skinning/color_scheme/mixxx-1.9-color-scheme3.png|]]
 
 ## Technical Stuff

@@ -8,7 +8,7 @@ took many days, but I figured out a lot and even made a
 [tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)
 to help me make schemes faster.
 
-## Mixxx 1.9 Scheme Engine and Transparent PNGs
+## Color Scheme Engine and Transparent PNG images
 
 [[/media/skinning/color_scheme/scs_tips_vumeterex.jpg|scs\_tips\_vumeterex.jpg]]
 

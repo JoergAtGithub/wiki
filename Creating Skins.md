@@ -496,15 +496,15 @@ for details
 
 ### Main background
 
-|                                                                                         |                                                                                                                                                                                                                                                                                                                      |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                         |                                                                                                                                                                                                                                                                                                                     |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Background>
     <Path>background.png</Path>
     <BgColor>#</BgColor>
 </Background>
 
 ` | `start background tag
-Defines which image in the skin's folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
+Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
 Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black)
 end background tag
 ` |
@@ -792,26 +792,27 @@ end VuMeter tag
 
 ### Volume peak indicator
 
-|                                                                                                                                                                                                                                                  |                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<StatusLight>
     <TooltipId>PeakIndicator</TooltipId>
     <PathVu>active.png</PathVu>
     <PathBack>default.png</PathBack>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[X],PeakIndicator</ConfigKey>
+        <ConfigKey>[X],PeakIndicator</ConfigKey>
     </Connection>
 </StatusLight>
-` | `
 
-
-
-
-
+` | `begin StatusLight (Volume Peak Indicator) tag
+Tooltip to be displayed on mouseover
+peak indicator main image (from skin's folder) = top layer
+peak indicator background image (from skin's folder) = bottom layer
+Defines the element position
+?
 Defines connected Channel (X = Channel1 or Channel2 or Master)
-
-
+?
+end StatusLight (Volume Peak Indicator) tag
 ` |
 
 ## Section: Text

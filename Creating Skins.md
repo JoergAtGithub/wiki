@@ -498,16 +498,16 @@ for details
 
 ### Main background
 
-|                                                                                         |                                                                                                                                                                                                                                                                         |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                         |                                                                                                                                                                                                                                                                                                                     |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Background>
     <Path>background.png</Path>
     <BgColor>#</BgColor>
 </Background>
 
 ` | `start background tag
-Defines the background picture all the elements will displayed on; the size of this image defines the skins overall size (see Guidelines)
-Defines a background color ( Example: # = #000000, #000000 is hex value for black)
+Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
+Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black)
 end background tag
 ` |
 

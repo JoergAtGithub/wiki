@@ -498,15 +498,18 @@ for details
 
 ### Main background
 
-|                                                                                       |                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                         |                                                                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Background>
     <Path>background.png</Path>
     <BgColor>#</BgColor>
-</Background>` | `The size of this image defines the skins overall size, see Guidelines
-Defines the background picture all the elements will displayed on
-Defines a background color ( Example: # = #000000) 
-#00000 is hex value for black` |
+</Background>
+
+` | `start background tag
+Defines the background picture all the elements will displayed on; the size of this image defines the skins overall size (see Guidelines)
+Defines a background color ( Example: # = #000000, #000000 is hex value for black)
+end background tag
+` |
 
 ### Library display
 

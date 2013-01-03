@@ -539,9 +539,9 @@ end TableView tag
 New starting in Mixxx 1.9.0:  
 [Qt Style Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) can
 now be used within \<Style\>\</Style\> to customize the appearance of
-various library widgets, and when used for the specific elements
-described above, will supersede them. A few examples of what QT Style
-Sheets can provide are:
+various library widgets, and when used for the specific elements defined
+above, will supersede them. A few examples of what QT Style Sheets can
+provide are:
 
 ``` 
   * Custom images for splitter and checkboxes in library

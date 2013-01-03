@@ -513,24 +513,6 @@ end background tag
 
 ### Library display
 
-New in Mixxx 1.9.0  
-You can use [Qt Style
-Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) to customize the
-appearance of the library widget like:
-
-``` 
-  * Custom images for splitter and checkboxes in library
-  * Custom images for branch triangle in treeview
-  * Visual feedback when searchbox has focus
-  * General appearance of text and buttons in library & tooltips
-```
-
-See also [Qt Style Sheets
-Examples](http://doc.qt.nokia.com/latest/stylesheet-examples.html) and
-the [Spartan Skin for
-Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
-blueprint, it makes heavy use of Qt Style Sheets.
-
 |                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<TableView>
@@ -553,6 +535,24 @@ Background color even line right library pane
 Background color uneven lines right library pane
 end TableView tag
 ` |
+
+New in Mixxx 1.9.0  
+You can use [Qt Style
+Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) to customize the
+appearance of the library widget like:
+
+``` 
+  * Custom images for splitter and checkboxes in library
+  * Custom images for branch triangle in treeview
+  * Visual feedback when searchbox has focus
+  * General appearance of text and buttons in library & tooltips
+```
+
+(See also [Qt Style Sheets
+Examples](http://doc.qt.nokia.com/latest/stylesheet-examples.html) and
+the [Spartan Skin for
+Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
+blueprint, it makes heavy use of Qt Style Sheets.)
 
 ## Section: Visual
 

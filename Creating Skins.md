@@ -536,7 +536,7 @@ Background color uneven lines right library pane
 end TableView tag
 ` |
 
-New in Mixxx 1.9.0:  
+New starting in Mixxx 1.9.0:  
 [Qt Style Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) can
 now be used within \<Style\>\</Style\> to customize the appearance of
 various library widgets, and when used for the specific elements

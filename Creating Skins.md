@@ -757,8 +757,8 @@ end Overview tag
 
 ### Volume level display
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<VuMeter>
     <TooltipId>channel_VuMeter</TooltipId>
     <PathVu>active.png</PathVu>
@@ -772,20 +772,22 @@ end Overview tag
     <Connection>
         <ConfigKey>[X],Y</ConfigKey>
     </Connection>
-</VuMeter>` | `
+</VuMeter>
 
-Button/slider main image = top layer
-Button/slider background image = bottom layer
-
-Orientation (false or true, means vertical or horizontal)
-Size of peak cropped from top of <PathVu> grafik (in pixel) / Default is 5
-Time a peak is displayed (in ms) / Default is 400
-Time a peak falls down (in ms) / Default is 20
-Number of steps a peaks falls down in <PeakFallTime> / Default is 1
-
-Defines connected Channel & Stereo-balance (X = Channel1 or Channel2 or Master),
-(Y= VuMeter or VuMeterL or VuMeterR)
-
+` | `begin VuMeter tag
+Tooltip to be displayed on mouseover
+Button/slider main image (shows as top layer)
+Button/slider background image (shows as bottom layer)
+Defines the element position
+Orientation (false=vertical, true=horizontal)
+Size of peak (in pixels); cropped from top of image defined in <PathVu>, default is 5
+Time a peak is displayed (in ms), default is 400
+Time a peak falls down (in ms), default is 20
+Number of steps (in pixels) a peaks falls down in <PeakFallTime>, Default is 1
+?
+Defines connected Channel & Stereo-balance (X = Channel1 or Channel2 or Master), (Y= VuMeter or VuMeterL or VuMeterR)
+?
+end VuMeter tag
 ` |
 
 ### Volume peak indicator

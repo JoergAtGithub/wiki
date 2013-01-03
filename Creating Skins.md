@@ -513,8 +513,8 @@ end background tag
 
 ### Library display
 
-|                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<TableView>
     <Style></Style>
     <Pos>X,Y</Pos>
@@ -527,8 +527,8 @@ end background tag
 
 ` | `start TableView tag
 Defines the appearance of the library widget
-Defines the elements position
-Defines the elements size
+Defines the element position
+Defines the element size
 Background color library widget (i.e. background color search widget)
 Foreground color library widget (i.e. text in "Analyze" widget)
 Background color even line right library pane 
@@ -537,10 +537,11 @@ end TableView tag
 ` |
 
 New in Mixxx 1.9.0:  
-In addition to the above controls, you can now use [Qt Style
-Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) within
-\<Style\>\</Style\> to customize the appearance of various library
-widgets. A few examples are:
+[Qt Style Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) can
+now be used within \<Style\>\</Style\> to customize the appearance of
+various library widgets, and when used for the specific elements
+described above, will supersede them. A few examples of what QT Style
+Sheets can provide are:
 
 ``` 
   * Custom images for splitter and checkboxes in library
@@ -549,11 +550,12 @@ widgets. A few examples are:
   * General appearance of text and buttons in library & tooltips
 ```
 
-(See also [Qt Style Sheets
-Examples](http://doc.qt.nokia.com/latest/stylesheet-examples.html) and
-the [Spartan Skin for
-Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
-blueprint, it makes heavy use of Qt Style Sheets.)
+See the [Spartan Skin for
+Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as an
+example, it makes heavy use of Qt Style Sheets. Also, you may wish to
+peruse [Qt Style Sheets
+Examples](http://doc.qt.nokia.com/latest/stylesheet-examples.html) for
+reference.
 
 ## Section: Visual
 

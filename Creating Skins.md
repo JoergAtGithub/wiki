@@ -531,8 +531,8 @@ the [Spartan Skin for
 Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as
 blueprint, it makes heavy use of Qt Style Sheets.
 
-|                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<TableView>
     <Style>...</Style>
     <Pos>X,Y</Pos>
@@ -541,7 +541,9 @@ blueprint, it makes heavy use of Qt Style Sheets.
     <FgColor>#</FgColor>
     <BgColorRowEven>#</BgColorRowEven>
     <BgColorRowUneven>#</BgColorRowUneven>
-</TableView>` | `
+</TableView>
+
+` | `start TableView tag
 Defines the appearance of the library widget
 Defines the elements position
 Defines the elements size
@@ -549,8 +551,7 @@ Background color library widget (i.e. background color search widget)
 Foreground color library widget (i.e. text in "Analyze" widget)
 Background color even line right library pane 
 Background color uneven lines right library pane
-
-
+end TableView tag
 ` |
 
 ## Section: Visual

@@ -540,7 +540,7 @@ New in Mixxx 1.9.0:
 In addition to the above controls, you can now use [Qt Style
 Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) within
 \<Style\>\</Style\> to customize the appearance of various library
-widgets such as:
+widgets. A few examples are:
 
 ``` 
   * Custom images for splitter and checkboxes in library

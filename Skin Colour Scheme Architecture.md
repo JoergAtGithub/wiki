@@ -8,6 +8,13 @@ different coloured version of a skin. You can easily create different
 coloured version of a skin by making use of the color filtering
 architecture in Mixxx.
 
+## Tips and Tool
+
+For a "walkthrough" on creating schemes, see [Skin Color Schemes Tips
+and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool). It also contains
+a link to an online Javascript tool that will help determine correct
+HSVTweak values.
+
 ## Color Scheme Demo
 
 Mixxx comes pre-loaded with several skins. In Mixxx 1.11 the only ones
@@ -242,10 +249,3 @@ Closing tag for the schemes filters
 Closing tag for scheme #4
 General color scheme closing tag
 ` |
-
-## Tips and Tool
-
-For a "walkthrough" on creating schemes, see [Skin Color Schemes Tips
-and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool). It also contains
-a link to an online Javascript tool that will help determine correct
-HSVTweak values.

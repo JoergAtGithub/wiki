@@ -96,16 +96,26 @@ Sub-folder that holds various templates for image files
 
   - Apple icon container for display in in Mixxx\` \*.app bundles for OS
     X.
-  - A full set should contain 16×16, 32×32, 128×128,256×256 and 512×512
+  - A set of icons that consist of pairs of icons (standard and high
+    resolution) for each icon size—16x16, 32x32, 128x128, 256x256,
+    512x512.
+  - [Optimizing for High
+    Resolution](https://developer.apple.com/library/mac/documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Optimizing/Optimizing.html)
   - [Apple Human Interface
-    Guidelines](http://developer.apple.com/documentation/UserExperience/Conceptual/AppleHIGuidelines/XHIGIcons/XHIGIcons.html#//apple_ref/doc/uid/20000967-TPXREF115)
-    
+    Guidelines](https://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines/IconsImages/IconsImages.html#//apple_ref/doc/uid/20000967-TP6)
 
 **VolumeIcon.icns**
 
   - Apple icon container for display in Mixxx\` \*.dmg images for OS X. 
-  - A full set should contain 16×16, 32×32, 128×128 ( 128 is maximum
-    size OS X desktop grid, enough for dmg\`s)
+  - A set of icons that consist of pairs of icons (standard and high
+    resolution) for each icon size—16x16, 32x32, 128x128 ( 128 is
+    maximum size OS X desktop grid, enough for dmg\`s)
+
+The naming convention in the icon containers is:
+*icon\_\<sizeinpoints\>x\<sizeinpoints\>\[@\<scale\>\].png* where
+\<*sizeinpoints\>* is the size of the icon in points, and *\<scale\>* is
+*@2x* for the high-resolution version. (Don’t add a scale for standard
+resolution.) Additionally, the filename must use the *icon\_* prefix.
 
 ### mixxx/res/unused/images
 

@@ -125,6 +125,7 @@ Mixxx forum for support:
 | 22    | Scroll + Jogwheel      | Scroll playlist (while paused)                                                                                        |
 | 24    | Cursor Up/Down         | Scrolls to the next/previous track in the track table.                                                                |
 |       | Cursor Left/Right      | Switches to the next view (Library, Queue, etc.)                                                                      |
+|       | Tab                    | Toggles (expands/collapses) the currently selected sidebar item.                                                      |
 | 25    | Jog                    | Nudge track or scratching                                                                                             |
 |       | Shift + Jog            | Fast track search (while paused)                                                                                      |
 |       | Scroll + Jog           | Scroll playlist (while paused)                                                                                        |

@@ -121,7 +121,7 @@ Mixxx forum for support:
 | 19    | Crossfader             | Fades between the left and right channels.                                                                            |
 | 20    | Input faders           | Control the volume of their respective tracks.                                                                        |
 | 21/23 | PFL A/B                | Sends the left/right deck to the headphone mix.                                                                       |
-|       | Shift + PFL A          | Load selected track into the deck (while paused) and switch PFL to this deck                                          |
+|       | Shift + PFL A/B        | Load selected track into the deck (while paused) and switch PFL to this deck                                          |
 | 22    | Scroll + Jogwheel      | Scroll playlist (while paused)                                                                                        |
 | 24    | Cursor Up/Down         | Scrolls to the next/previous track in the track table.                                                                |
 |       | Cursor Left/Right      | Switches to the next view (Library, Queue, etc.)                                                                      |

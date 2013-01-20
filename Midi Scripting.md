@@ -405,7 +405,7 @@ control name. So, your connected function can look like this:
 
 ``` javascript
 MyController.volumeLEDs = function (value, group, control) {
-    //...what to do with the value goes here...
+    //...what to do with the value, group and control arguments goes here...
 }
 ```
 

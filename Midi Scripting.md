@@ -399,21 +399,20 @@ controller to react. Here are the related functions:
     script function is called with the updated value even if it hasn't
     changed, such as when forcing LEDs to update on a mode change.
 
-The function you connect to will only take one parameter, the new value
-of the MixxxControl. So its signature should look like this:
-
-``` javascript
-MyController.volumeLEDs = function (value) {
-    //...what to do with the value goes here...
-}
-```
-
 As of at least Mixxx 1.10, connected functions are passed three
 parameters: the new value of the MixxxControl, the group, and the Mixxx
 control name. So, your connected function can look like this:
 
 ``` javascript
 MyController.volumeLEDs = function (value, group, control) {
+    //...what to do with the value goes here...
+}
+```
+
+Or like this:
+
+``` javascript
+MyController.volumeLEDs = function (value) {
     //...what to do with the value goes here...
 }
 ```

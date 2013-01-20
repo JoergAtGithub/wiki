@@ -408,6 +408,16 @@ MyController.volumeLEDs = function (value) {
 }
 ```
 
+As of at least Mixxx 1.10, connected functions are passed three
+parameters: the new value of the MixxxControl, the group, and the Mixxx
+control name. So, your connected function can look like this:
+
+``` javascript
+MyController.volumeLEDs = function (value, group, control) {
+    //...what to do with the value goes here...
+}
+```
+
 #### Examples
 
 To connect the volume of the current virtual deck to a function called

@@ -104,7 +104,8 @@ Mixxx forum for support:
 | 10    | Censor                 | Temporary play backwards while pressed, resumes from where the playhead would have been if the button was not pressed |
 |       | Shift + Censor         | Toggle reverse playback. Pressing Censor again during reverse playback, will return to normal playback.               |
 | 11    | Auto Loop              | Enable beatloop of the current beatloop value (default: 4 beats) for tracks that have BPM calculated                  |
-|       | Shift + Auto Loop      | Reset number of beats to 4 if beatloop not active                                                                     |
+|       | Shift + Auto Loop      | Enter/Exit beatloop roll                                                                                              |
+|       | Scroll + Auto Loop     | Reset number of beats to 4 if beatloop not active                                                                     |
 | 12    | Equalizers             | Adjust the gain of the high/mid/low EQ filter.                                                                        |
 | 13    | Half                   | Halve loop length                                                                                                     |
 |       | Shift + Half           | Jump to start of track (while paused)                                                                                 |

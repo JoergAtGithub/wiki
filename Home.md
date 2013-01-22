@@ -1,53 +1,203 @@
-Women are far better equipped to split their focus among multiple
-activities or tasks. Yet men still have an eye for something nice that
-ladies find equally appealing. Well men that use web marketing may make
-money whilst their services is being promoted on Pinterest. When someone
-pins an image, it shows up on their network of like-minded followers,
-which in turn exposes the brand to more people within the market and
-helps them obtain more followers. Sounds simple, isn't it? Women usually
-pin things that they like or are most interested in. And men can do
-exactly the same on Pinterest as there is most likely a requirement and
-desire for it. So making a board that motivates users to produce
-interesting captions to a pic that boasts your products on is a
-wonderful way of getting click throughs and potential buyers.
+# Welcome to the Mixxx Wiki\!
 
-It should be noticeable in your day-to-day communication and interaction
-that men and women process material differently. We are able to see men
-already proclaiming that the experience with pinterest continues to be
-awesome after realizing its successful features. But each pin you are
-making must be interesting to you personally and the user on this
-virtual pinboard that enables the users to share and arrange things you
-want on the internet efficiently.
+Mixxx has an unusually broad community for an open-source project,
+encompassing performing musicians, C++ addicts, amateur DJs and even
+just casual users. The Mixxx Wiki contains useful information for users,
+developers, and artists, and is summarized in the categories below.
 
-[Pinterest Button](http://pinterestmin.multiply.com/) can link you with
-your site visitors in the planet according to common interests. There's
-two sorts of site visitors that you want coming to your website. The
-ones that pin and repin your site content and images and so forth and
-those who result from those pins and repins. There is room to write a
-little message to caption the picture and share the web link that you
-found it so make good use of this with a "Call to Action" asking
-visitors to actually repin or pin things. If one of your aims is to find
-free website visitors using simplistic techniques this will likely add
-an additional degree of visitors to your site guaranteed.
+Most of the contents of this wiki can be edited by anyone, the main
+exception to this is the [development\_roadmap](development_roadmap)
+which is a fairly authoritative description of the development team's
+plans.
 
-As this social photo sharing site is open to use for free, the
-recognition amongst the people looks like it's increasing as the days
-pass by. Right from the day it was started, it's matured to great
-standards. Websites like these pop-up every now and then, and some
-become household names. The actions often include browsing peoples pins,
-liking and commenting on them and following new people. With that said,
-here are some tried-and-true ideas that men will want to look at and go
-over. For every person which sees an image which sparks an interest, the
-possibility increases that they will click on the image and be taken to
-the site in the pin.
+## User Documentation
 
-A bit of researching the market ought to advise you how much discretion
-to use when using pinterest to promote with. Leads can be had by pinning
-stuff that people are really attracted to. A result of the increase of
-visible material, the client no longer has to envision the merchandise,
-which experts claim drives sales up\! Pinterest is an image serious
-medium and your plan needs to be as striking as it is ingenious. So as
-you can view, Pinterest is not only just for women. In actual fact many
-men are already using it as an extra way to obtain targeted website
-traffic and income for yourself. When all it takes is just pinning what
-you love anyway\!
+  - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make
+    Mixxx better, find out what you can do.
+  - [Beginner's Guide](Beginner's%20Guide)
+  - [Manual](Manual)
+  - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
+    about using Hercules GPL Linux MIDI driver with Mixxx, and where to
+    get updated Hercules device control mappings for Windows and OSX.
+  - [Hardware Compatibility](Hardware%20Compatibility) - Contains the
+    most up-to-date information about which DJ controllers work with
+    Mixxx and the details of each.
+  - [FAQ](FAQ)
+  - [Troubleshooting](Troubleshooting)
+  - [Tutorials](Tutorials)
+  - [Add-ons](Add-ons)
+  - [Vinyl (and audio CDJ) control](Vinyl%20Control)
+  - [Internet broadcasting](Internet%20broadcasting)
+  - [System Requirements](System%20Requirements)
+  - [Command line options](Command%20line%20options)
+  - [Reporting bugs](Reporting%20bugs)
+
+## Build Mixxx
+
+  - [Compiling on Linux](Compiling%20on%20Linux)
+  - [Compiling on Windows](Compiling%20on%20Windows)
+  - [Compiling on OS X](Compiling%20on%20OS%20X)
+  - [Dependencies](Dependencies)
+  - [Packaging / Making a Mixxx
+    Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
+
+## Artist Documentation
+
+  - [Creating Skins](Creating%20Skins)
+  - [Skin Guidelines](Skin%20Guidelines)
+  - [Skin Colour Scheme
+    Architecture](Skin%20Colour%20Scheme%20Architecture)
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
+  - [On Icons and Images](On%20Icons%20and%20Images)
+
+## Controller/MIDI Mapping Documentation
+
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
+    find out how to create or change a MIDI mapping file for your
+    controller
+  - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
+    complete control over your MIDI controller and create advanced
+    behaviors including easy wheel scratching.
+
+<!-- end list -->
+
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - Read this to find out how to create or
+    change a mapping file for your HID controller. (TENTATIVE - not yet
+    implemented.)
+
+<!-- end list -->
+
+  - [MixxxControls](MixxxControls) - This is a list of Mixxx's controls
+    you can manipulate with your controller via the mapping file and/or
+    a script
+
+## Developer Documentation
+
+### Getting Started
+
+  - [How to use Bazaar](Using%20Bazaar)
+  - [Submitting
+    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
+  - [Creating backtraces](Creating%20backtraces)
+  - [The Bug Tracker](launchpad_bugs)
+  - [Coding Guidelines](Coding%20Guidelines)
+  - [Developer Tools](Developer%20Tools)
+
+### Development Topics
+
+  - [Development Roadmap](Development%20Roadmap)
+  - [Feature Design Documents](feature_discussion)
+  - [Mixxx QA Procedure](qa_procedure)
+  - [Writing unit tests](unit_tests) - helps prevent regressions.
+    Essential for new code\!
+  - [Internationalization/Translations](Internationalization)
+
+### Code Reference
+
+  - [Performance improvements](Performance%20improvements)
+  - [Code cleanup & cruft removal task list](code_cleanup)
+  - [SoundSource interface (sound
+    proxies)](SoundSource%20interface%20\(sound%20proxies\))
+  - [Threads](Threads)
+  - [Widgets](Widgets)
+
+### Developer Meetings and Sprints
+
+  - [9/20/2009 Developer Meeting
+    Minutes](9/20/2009%20Developer%20Meeting%20Minutes)
+  - [5/17/2009 Developer Meeting
+    Minutes](5/17/2009%20Developer%20Meeting%20Minutes)
+  - [6/27/2010 Developer Meeting
+    Minutes](6/27/2010%20Developer%20Meeting%20Minutes)
+  - [11/27/2011 Developer Meeting
+    Minutes](11/27/2011%20Developer%20Meeting%20Minutes)
+  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
+
+### Other Resources
+
+  - [Portable Mixxx for removable media](Portable%20Mixxx)
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
+
+## Google Summer of Code
+
+### GSoC 2012
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2012.
+
+  - See the list of suggested projects: [GSoC 2012 Ideas](gsoc2012ideas)
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
+The following projects were accepted for Google Summer of Code 2012:
+
+  - Vinyl-Control Pass-Through Mode by Matthew Mikolay
+  - Mixxx Library Improvements by Max Linke
+  - [AutoDJ Enhancements](gsoc2012_autodj_features) by Scott Stewart
+  - Harmonic Mixing Features by Varun Jewalikar
+
+### GSoC 2011
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2011.
+
+  - See the list of suggested projects: [GSoC 2011 Ideas](gsoc2011ideas)
+
+The following projects were accepted for Google Summer of Code 2011:
+
+  - Advanced Search by Bart Verstrynge
+  - AutoDJ 2.0 by Tom Mast
+  - Timer-Powered Engine by Bill Good
+
+### GSoC 2010
+
+Mixxx participated in GSoC 2010.
+
+  - See the list of projects we proposed in 2010: [GSoC 2010
+    Ideas](gsoc2010ideas)
+
+The following projects were accepted for Google Summer of Code 2010:
+
+  - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
+  - [Sampler](gsoc2010/sampler) by Ryan Baker
+  - [DVS Mode](gsoc2010/dvs_mode) by Bill Good
+
+### GSoC 2009
+
+Due to a lack of core developer time Mixxx did not participate in GSoC
+2009.
+
+### GSoC 2008
+
+The following projects were accepted for Google Summer of Code 2008:
+
+  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by RJ Ryan
+  - [MIDI Control](gsoc2008/midi_control) by Tom Care
+  - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
+    Stessens
+  - [Stability and Crash
+    Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
+
+Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
+
+## More Resources
+
+  - Discussions on the
+    [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+    mailing list are the basis for much of the content here.
+  - The main [Mixxx website](http://www.mixxx.org).
+  - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
+    [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
+  - The blog: [mixxxblog.blogspot.com](http://mixxxblog.blogspot.com).
+  - Bazaar code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
+    browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - [List of open-source music production
+    software](List%20of%20open-source%20music%20production%20software)

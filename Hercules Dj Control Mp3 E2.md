@@ -27,7 +27,7 @@ module](Hercules%20Linux%20kernel%20module)
 ## USB HID
 
 As of Mixxx v1.11-beta2 this controller is supported through USB HID. If
-the Hercules drivers cause a kernel panic you can use this feature.
+the Hercules driver cause a kernel panic you can use this feature.
 
 Enable the controller in Ubuntu by following the steps below:
 

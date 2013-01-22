@@ -31,23 +31,17 @@ the Hercules driver causes a kernel panic you can use this feature.
 
 Enable the controller in Ubuntu by following the steps below:
 
-  - Remove the hdjmod-dkms driver if installed:
-
-`sudo apt-get remove hdjmod-dkms`
-
-  - Add the Mixxx v1.11 repositories (use the mixxxbetas ppa until v1.11
-    final is released). 
-
-`sudo add-apt-repository ppa:mixxx/mixxxbetas` `sudo apt-get update`
-
-  - Install Mixxx (remove older version prior to install)
-
-`sudo apt-get install mixxx`
-
-  - Plug-in the controller and run mixxx
-  - Go to Preferences, select and enable "Hercules .." device listed
+1.  Remove the hdjmod-dkms driver if installed: `sudo apt-get remove
+    hdjmod-dkms`
+2.  Add the Mixxx v1.11 repositories (use the mixxxbetas ppa until v1.11
+    final is released). `sudo add-apt-repository ppa:mixxx/mixxxbetas
+    sudo apt-get update` 
+3.  Install Mixxx (remove older version prior to install): `sudo apt-get
+    install mixxx`
+4.  Plug-in the controller and run mixxx
+5.  Go to Preferences, select and enable "Hercules .." device listed
     under Controllers (do not select Midi Through\!)
-  - If the device is not visible as a separate entry under "Controllers"
+6.  If the device is not visible as a separate entry under "Controllers"
     you need to modify the device permissions using udev rules.
 
 ## Mapping for Mixxx

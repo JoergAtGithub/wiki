@@ -35,7 +35,7 @@ Enable the controller in Ubuntu by following the steps below:
 
 `sudo apt-get remove hdjmod-dkms`
 
-  - Add the Mixxx v1.11 repositories (use the mixxxbetas unless v1.11
+  - Add the Mixxx v1.11 repositories (use the mixxxbetas ppa until v1.11
     final is released). 
 
 `sudo add-apt-repository ppa:mixxx/mixxxbetas` `sudo apt-get update`

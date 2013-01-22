@@ -24,6 +24,33 @@ Hercules has released a common MIDI-driver for their DJ controllers.
 Read more on the page for [Hercules Linux kernel
 module](Hercules%20Linux%20kernel%20module)
 
+## USB HID
+
+As of Mixxx v1.11-beta2 this controller is supported through USB HID. If
+the Hercules drivers cause a kernel panic you can use this feature.
+
+Enable the controller by following the steps below:
+
+1.  Remove the hdjmod-dkms driver if installed:
+
+`sudo apt-get remove hdjmod-dkms`
+
+1.  Add the Mixxx v1.11 repositories (use the mixxxbetas unless v1.11
+    final is released). 
+
+`sudo add-apt-repository ppa:mixxx/mixxxbetas` `sudo apt-get update`
+
+1.  Install Mixxx (remove older version prior to install)
+
+`sudo apt-get install mixxx`
+
+1.  Plug-in the controller and run mixxx
+2.  In the preferences, select and enable "Hercules .." device under
+    "Controllers" (do not select Midi Through\!)
+3.  If the device is not visible as a separate entry under
+    "Controllers", you need to modify the device permissions using udev
+    rules.
+
 ## Mapping for Mixxx
 
 The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you

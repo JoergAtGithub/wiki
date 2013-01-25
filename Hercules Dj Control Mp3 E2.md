@@ -41,8 +41,21 @@ Enable the controller in Ubuntu by following the steps below:
 4.  Plug-in the controller and run mixxx
 5.  Go to Preferences, select and enable "Hercules .." device listed
     under Controllers (do not select Midi Through\!)
-6.  If the device is not visible as a separate entry under "Controllers"
-    you need to modify the device permissions using udev rules.
+
+If the device is still not visible as a separate entry under
+"Controllers" you need to modify the device permissions using udev
+rules. First create the rule file:
+
+    sudo nano /etc/udev/rules.d/hercules-usb.rule
+
+Add following lines to this file:`SUBSYSTEM=="usb_device",
+SYSFS{idVendor}=="06f8", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="06f8", MODE="0666"` Save the
+contents and restart udev:`sudo /etc/init.d/udev restart`
+
+Pull out the controller and plug it in again. Run mixxx and select
+"Preferences" -\> "Controllers" and you should be able to select and
+enable the controller.
 
 ## Mapping for Mixxx
 

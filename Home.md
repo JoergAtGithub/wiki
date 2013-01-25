@@ -1,58 +1,203 @@
-Planning on buying your laptop or computer however can not afford the
-idea at this time? Here i will discuss the guidelines on the way to
-purchase a good easily affordable, top quality computer handily.
-Information on quite a few on-line laptop or computer vendors, varied
-websites regarding fixed personal computers and plenty of shops offering
-employed computers in cheapest costs is located. Simply because pc is
-the central gadgets, there are lots of kinds of pc producers which
-represents great colors and appealing styles that choosing the ultimate
-laptop or computer with all the correct contend could be a rather
-puzzling process\!It is possible to locate a fundamental computer
-all-around $100 using the used computer store. The number portions
-coming from standard computer so that you can good to look at gambling
-laptops\! Simply limit your quest and acquire your personal fixed
-computer to secure a fairly low cost\!\<br /\>[Calculatoare
-ieftine](http://www.enasistem.ro)\<br /\>Personal computer as opposed to
-Web guide instead of inexpensive notebooks will be the primary
-enchantment which comes within the mind of the future customer
-associated with an cheap refurbished pc. Every one of the profession
-advantages and disadvantages, so it is better than come to a decision
-ahead of time, which variety you wish to select.\<br /\>\<br /\>Laptops
-usually are lightweight, is not going to use up far more area are
-available in a variety of wonderful models along with cheap pricing
-today. Even so, your money is generally somewhat higher compared to pc.
-Despite the fact that, both of them retain the identical abilities,
-nonetheless some type of computer deplete extra space that's more
-substantial. Every time transferring to a different place as well as
-personal computer is usually a unpleasant work, on the other hand,
-notebook could be packed in a really neck handbag and taken very easily
-from location to an additional.\<br /\>\<br /\>Employed any desktop are
-the best if you need to perform lots of complex operate, my partner and
-i.at the. severe picture editing, computer animation, image-editing,
-illustration along with utilizing application which often demands lots
-of room. It is almost always an even more good selection pertaining to
-game taking part in and a carry out place\! To put it briefly, if you
-prefer a pc or even laptop intended for straightforward prerequisite
-just like seeing films, seeking, actively playing songs,
-video-conferencing, and also venturing out and after that laptop
-computers will be the lowest price. If you happen to will probably be
-employing significant careers stated previously, together with
-convenience is not an big problem, following select cheap computer
-systems together with desktop computer.\<br /\>\<br /\>Previous even so,
-not necessarily nominal, you should go through the patterns you will
-need inside a Personal computer, i.at the. dimensions of the actual
-display, Random access memory, harddrive, Compact disc Flexibility,
-telephone presenter, robert, webcam, reader, mouse button, keyboard set,
-UPS, these elements have to be taken into consideration take a look
-correctly. Ultimately, there are many methods to find cheap computer
-systems. Bankruptcy lawyer Nevada a significant renewed laptop below
-$200. Below are a few useful tips to purchase your computer system
-on-line. Take a look at on the web various buying websites acquiring
-various rates linked to inexpensive restored personal computers.\<br
-/\>\<br /\>Shop coming from a website offering the most economical
-specific personal computer design. Check out with regard to add-ons you
-get free, warranty period of time and price of certain bits enhance. We
-could moreover locate periodic delivers in the course of holiday seasons
-including Christmas time or simply Year. Thus, take your time from
-picking kind of inexpensive laptop or computer for the equipment designs
-of the equipment.\<br /\>
+# Welcome to the Mixxx Wiki\!
+
+Mixxx has an unusually broad community for an open-source project,
+encompassing performing musicians, C++ addicts, amateur DJs and even
+just casual users. The Mixxx Wiki contains useful information for users,
+developers, and artists, and is summarized in the categories below.
+
+Most of the contents of this wiki can be edited by anyone, the main
+exception to this is the [development\_roadmap](development_roadmap)
+which is a fairly authoritative description of the development team's
+plans.
+
+## User Documentation
+
+  - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make
+    Mixxx better, find out what you can do.
+  - [Beginner's Guide](Beginner's%20Guide)
+  - [Manual](Manual)
+  - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
+    about using Hercules GPL Linux MIDI driver with Mixxx, and where to
+    get updated Hercules device control mappings for Windows and OSX.
+  - [Hardware Compatibility](Hardware%20Compatibility) - Contains the
+    most up-to-date information about which DJ controllers work with
+    Mixxx and the details of each.
+  - [FAQ](FAQ)
+  - [Troubleshooting](Troubleshooting)
+  - [Tutorials](Tutorials)
+  - [Add-ons](Add-ons)
+  - [Vinyl (and audio CDJ) control](Vinyl%20Control)
+  - [Internet broadcasting](Internet%20broadcasting)
+  - [System Requirements](System%20Requirements)
+  - [Command line options](Command%20line%20options)
+  - [Reporting bugs](Reporting%20bugs)
+
+## Build Mixxx
+
+  - [Compiling on Linux](Compiling%20on%20Linux)
+  - [Compiling on Windows](Compiling%20on%20Windows)
+  - [Compiling on OS X](Compiling%20on%20OS%20X)
+  - [Dependencies](Dependencies)
+  - [Packaging / Making a Mixxx
+    Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
+
+## Artist Documentation
+
+  - [Creating Skins](Creating%20Skins)
+  - [Skin Guidelines](Skin%20Guidelines)
+  - [Skin Colour Scheme
+    Architecture](Skin%20Colour%20Scheme%20Architecture)
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
+  - [On Icons and Images](On%20Icons%20and%20Images)
+
+## Controller/MIDI Mapping Documentation
+
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
+    find out how to create or change a MIDI mapping file for your
+    controller
+  - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
+    complete control over your MIDI controller and create advanced
+    behaviors including easy wheel scratching.
+
+<!-- end list -->
+
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - Read this to find out how to create or
+    change a mapping file for your HID controller. (TENTATIVE - not yet
+    implemented.)
+
+<!-- end list -->
+
+  - [MixxxControls](MixxxControls) - This is a list of Mixxx's controls
+    you can manipulate with your controller via the mapping file and/or
+    a script
+
+## Developer Documentation
+
+### Getting Started
+
+  - [How to use Bazaar](Using%20Bazaar)
+  - [Submitting
+    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
+  - [Creating backtraces](Creating%20backtraces)
+  - [The Bug Tracker](launchpad_bugs)
+  - [Coding Guidelines](Coding%20Guidelines)
+  - [Developer Tools](Developer%20Tools)
+
+### Development Topics
+
+  - [Development Roadmap](Development%20Roadmap)
+  - [Feature Design Documents](feature_discussion)
+  - [Mixxx QA Procedure](qa_procedure)
+  - [Writing unit tests](unit_tests) - helps prevent regressions.
+    Essential for new code\!
+  - [Internationalization/Translations](Internationalization)
+
+### Code Reference
+
+  - [Performance improvements](Performance%20improvements)
+  - [Code cleanup & cruft removal task list](code_cleanup)
+  - [SoundSource interface (sound
+    proxies)](SoundSource%20interface%20\(sound%20proxies\))
+  - [Threads](Threads)
+  - [Widgets](Widgets)
+
+### Developer Meetings and Sprints
+
+  - [9/20/2009 Developer Meeting
+    Minutes](9/20/2009%20Developer%20Meeting%20Minutes)
+  - [5/17/2009 Developer Meeting
+    Minutes](5/17/2009%20Developer%20Meeting%20Minutes)
+  - [6/27/2010 Developer Meeting
+    Minutes](6/27/2010%20Developer%20Meeting%20Minutes)
+  - [11/27/2011 Developer Meeting
+    Minutes](11/27/2011%20Developer%20Meeting%20Minutes)
+  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
+
+### Other Resources
+
+  - [Portable Mixxx for removable media](Portable%20Mixxx)
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
+
+## Google Summer of Code
+
+### GSoC 2012
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2012.
+
+  - See the list of suggested projects: [GSoC 2012 Ideas](gsoc2012ideas)
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
+The following projects were accepted for Google Summer of Code 2012:
+
+  - Vinyl-Control Pass-Through Mode by Matthew Mikolay
+  - Mixxx Library Improvements by Max Linke
+  - [AutoDJ Enhancements](gsoc2012_autodj_features) by Scott Stewart
+  - Harmonic Mixing Features by Varun Jewalikar
+
+### GSoC 2011
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2011.
+
+  - See the list of suggested projects: [GSoC 2011 Ideas](gsoc2011ideas)
+
+The following projects were accepted for Google Summer of Code 2011:
+
+  - Advanced Search by Bart Verstrynge
+  - AutoDJ 2.0 by Tom Mast
+  - Timer-Powered Engine by Bill Good
+
+### GSoC 2010
+
+Mixxx participated in GSoC 2010.
+
+  - See the list of projects we proposed in 2010: [GSoC 2010
+    Ideas](gsoc2010ideas)
+
+The following projects were accepted for Google Summer of Code 2010:
+
+  - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
+  - [Sampler](gsoc2010/sampler) by Ryan Baker
+  - [DVS Mode](gsoc2010/dvs_mode) by Bill Good
+
+### GSoC 2009
+
+Due to a lack of core developer time Mixxx did not participate in GSoC
+2009.
+
+### GSoC 2008
+
+The following projects were accepted for Google Summer of Code 2008:
+
+  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by RJ Ryan
+  - [MIDI Control](gsoc2008/midi_control) by Tom Care
+  - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
+    Stessens
+  - [Stability and Crash
+    Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
+
+Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
+
+## More Resources
+
+  - Discussions on the
+    [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+    mailing list are the basis for much of the content here.
+  - The main [Mixxx website](http://www.mixxx.org).
+  - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
+    [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
+  - The blog: [mixxxblog.blogspot.com](http://mixxxblog.blogspot.com).
+  - Bazaar code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
+    browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - [List of open-source music production
+    software](List%20of%20open-source%20music%20production%20software)

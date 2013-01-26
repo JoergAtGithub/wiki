@@ -411,6 +411,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.10.0
 
 ``` 
+ * Added [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image which displays a visual guidance for relative track positioning while mixing
  * Added <Time> widget which displays the current time, see [[creating_skins?&#clock|<Clock>]]
  * Removed rate <Connection> groups from all <NumberRate> controls, now the text does immediately update if rate range or direction changes, see [[creating_skins#pitch_rate_display|<Pitch rate display>]] 
  * Added <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]

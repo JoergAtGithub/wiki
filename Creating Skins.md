@@ -766,7 +766,7 @@ New in Mixxx 1.10.0
 | `<Spinny>
     <TooltipId>spinny</TooltipId>
     <Style></Style>
-    <Channel>1</Channel>
+    <Channel>X</Channel>
     <Pos>X,Y</Pos>
     <Size>W,H</Size>
     <PathBackground>background.png</PathBackground>

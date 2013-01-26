@@ -393,6 +393,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
+ * [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image center according to their own size. Was aligned top/left before. This allows xwax like effects, see [[https://bugs.launchpad.net/mixxx/+bug/1058605|lp:1058605]] 
  * The [[skin_colour_scheme_architecture|color filtering architecture]], which allows to create a different coloured version of a skin, does support image transparency.
  * Added the [[creating_skins#splitter|<Splitter>]]> section, which controls the size of child widgets by dragging the boundary between the children.
  * Added the [[creating_skins#widgetstack|<WidgetStack>]]> section, provides a stack of widgets where only one widget is visible at a time. This could be used to make multiple pages of hotcue buttons so you can flip through the pages. 

@@ -393,7 +393,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
- * Added <BackPath> node that allows resizable background images for [[creating_skins#widgetgroup|WidgetGroup]] which support color schemes, see see [[https://bugs.launchpad.net/mixxx/+bug/1095400|lp:1095400]] & [[https://bugs.launchpad.net/mixxx/+bug/1094785|lp:1094785]]
+ * Added <BackPath> node that allows resizable background images for [[creating_skins#widgetgroup|WidgetGroup]] which support color schemes, see [[https://bugs.launchpad.net/mixxx/+bug/1095400|lp:1095400]] & [[https://bugs.launchpad.net/mixxx/+bug/1094785|lp:1094785]]
  * Replaced <MarkerColor> with <AxesColor>, the color of the static horizontal line, and <PlayPosColor>, the color of the static vertical line on the [[creating_skins#waveform|<Waveform>]] and the cursor in the [[creating_skins#waveform_overview|<Overview>]], see [[https://bugs.launchpad.net/mixxx/+bug/1099182|lp:1099182]] 
  * [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image center according to their own size. Was aligned top/left before. This allows xwax like effects, see [[https://bugs.launchpad.net/mixxx/+bug/1058605|lp:1058605]] 
  * The [[skin_colour_scheme_architecture|color filtering architecture]], which allows to create a different coloured version of a skin, does support image transparency.

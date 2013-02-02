@@ -393,13 +393,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.11.0
 
 ``` 
- * Added <BackPath> node that allows resizable background images for [[creating_skins#widgetgroup|WidgetGroup]] which support color schemes, see see [[https://bugs.launchpad.net/mixxx/+bug/1095400|lp:1095400]] & [[https://bugs.launchpad.net/mixxx/+bug/1094785|lp:1094785]] 
-```
-
-Note: The style sheet is painted on top of the new background set by the
-new node.
-
-``` 
+ * Added <BackPath> node that allows resizable background images for [[creating_skins#widgetgroup|WidgetGroup]] which support color schemes, see see [[https://bugs.launchpad.net/mixxx/+bug/1095400|lp:1095400]] & [[https://bugs.launchpad.net/mixxx/+bug/1094785|lp:1094785]]
  * Replaced <MarkerColor> with <AxesColor>, the color of the static horizontal line, and <PlayPosColor>, the color of the static vertical line on the [[creating_skins#waveform|<Waveform>]] and the cursor in the [[creating_skins#waveform_overview|<Overview>]], see [[https://bugs.launchpad.net/mixxx/+bug/1099182|lp:1099182]] 
  * [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image center according to their own size. Was aligned top/left before. This allows xwax like effects, see [[https://bugs.launchpad.net/mixxx/+bug/1058605|lp:1058605]] 
  * The [[skin_colour_scheme_architecture|color filtering architecture]], which allows to create a different coloured version of a skin, does support image transparency.
@@ -2167,11 +2161,12 @@ every node in the tree. WidgetGroups allow to make a group of relatively
 positioned widgets. You can display more than one WidgetGroup node in a
 skin.
 
-|                                                                                                                                                                                                                                                                                       |      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+|                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<WidgetGroup>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
+  <BackPath>background.png</BackPath>
   <Children>
     <PushButton>
       <Pos>0,0</Pos>
@@ -2182,7 +2177,23 @@ skin.
     <!-- as many regular widgets as you like in here -->
   </Children>
 </WidgetGroup>
-` | `  ` |
+` | `
+
+
+
+New in Mixxx 1.11: Loads a background image from the skin folder. Support resizing and color schemes.
+Note: The style sheet is painted on top of the new background set by the <BackPath> node.
+
+
+
+
+
+
+
+
+
+
+` |
 
 \<size\> is optional, this will limit the size so that any part of a
 child widget outside of the size rectangle is not shown
@@ -2248,8 +2259,8 @@ Optional: Control that switches to the next widget in the stack. (will be create
 Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist)
 
 A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
-A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist) 
-A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
+A WidgetGroup that is shown when the 'trigger' control is set to 2. (will be created if doesn't exist) 
+A WidgetGroup that is shown when the 'trigger' control is set to 3. (will be created if doesn't exist)
 
 
 

@@ -1,4 +1,21 @@
-# i18n/l10n and Mixxx
+# Translators
+
+FIXME **Work in progress-** --- *\[\[|jus\]\] 2013/02/03 16:13*
+
+## Ampersands (&)
+
+Some texts in the translation template contain an ampersand (&). This
+marks the letter which can be used to quickly access that particular
+menu or other GUI element. For example "\&File" means that pressing
+*Alt+F* on the keyboard can be used to access the *File* menu on top of
+the Mixxx application window.
+
+If a string to be translated has an ampersand (&) in it, then the
+translation for that string should also have an ampersand in it,
+preferably in front of the same character. In our example, it might be
+translated to "\&Datei" in German.
+
+# Developers - i18n/l10n and Mixxx
 
 Required tools to update translations are:
 

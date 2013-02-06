@@ -227,8 +227,10 @@ Here is how to use them:
     typically 128.)
   - the speed of the imaginary record at 0% pitch (in revolutions per
     minute (RPM) typically 33+1/3, adjust for comfort)
-  - the filter coefficients (these affect responsiveness and looseness
-    of the imaginary slipmat)
+  - the [alpha-beta
+    filter](http://en.wikipedia.org/wiki/Alpha_beta_filter) coefficients
+    (together these affect responsiveness and looseness of the imaginary
+    slip mat)
 
 <!-- end list -->
 

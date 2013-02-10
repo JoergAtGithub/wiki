@@ -10,16 +10,34 @@ MIDI messages from a controller into commands that Mixxx understands.
 
 The MIDI mapping files are located in the following paths:
 
+**Mixxx v1.11+**
+
+  - Windows: C:\\Program Files\\Mixxx\\controllers
+  - Linux: /usr/share/mixxx/controllers or
+    /usr/local/share/mixxx/controllers
+  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
+
+**Mixxx v1.10 and earlier**
+
   - Windows: C:\\Program Files\\Mixxx\\midi
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
   - OS X: /Applications/Mixxx.app/Contents/Resources/midi
 
-By far, the easiest way to create a new MIDI preset is by using the MIDI
-Learn wizard in the Preferences (available in Mixxx 1.7.0 and higher.)
-You can then modify the XML file it creates (or any of the ones that
-ship with Mixxx) using the information on this page if you'd like to
-fine-tune it or add more mappings. Note that the wizard puts its presets
-in your user data directory:
+By far, the easiest way to create a new MIDI preset is by selecting a
+controller using the MIDI Learn wizard in the *Preferences \> (Midi)
+Controllers*. You can then modify the XML file it creates (or any of the
+ones that ship with Mixxx) using the information on this page if you'd
+like to fine-tune it or add more mappings. Note that the wizard puts its
+presets in your user data directory:
+
+**Mixxx v1.11+**
+
+  - Windows: %LOCALAPPDATA%\\Mixxx\\controllers
+  - Linux: /home/\<username\>/.mixxx/controllers
+  - OS X: /Users/\<username\>/Library/Application\\
+    Support/Mixxx/controllers
+
+**Mixxx v1.10 and earlier**
 
   - Windows: %LOCALAPPDATA%\\Mixxx\\midi
   - Linux: /home/\<username\>/.mixxx/midi

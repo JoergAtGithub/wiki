@@ -204,6 +204,9 @@ fields are visible in Mixxx controller configuration dialogs and we
 highly recommend properly filling in all fields, creating appropriate
 documentation pages to wiki and forums if necessary.
 
+**Note:** When a preset does not have a name in its \<info\> section,
+Mixxx 1.11+ use the filename without extension.
+
 ``` 
     <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
 ```

@@ -23,12 +23,12 @@ The MIDI mapping files are located in the following paths:
   - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
   - OS X: /Applications/Mixxx.app/Contents/Resources/midi
 
-By far, the easiest way to create a new MIDI preset is by selecting a
-controller using the MIDI Learn wizard in the *Preferences \> (Midi)
-Controllers*. You can then modify the XML file it creates (or any of the
-ones that ship with Mixxx) using the information on this page if you'd
-like to fine-tune it or add more mappings. Note that the wizard puts its
-presets in your user data directory:
+By far, the easiest way to create a new MIDI preset is by using the MIDI
+Learn wizard in the *Preferences \> (Midi) Controllers*. You can then
+modify the XML file it creates (or any of the ones that ship with Mixxx)
+using the information on this page if you'd like to fine-tune it or add
+more mappings. Note that the wizard puts its presets in your user data
+directory:
 
 **Mixxx v1.11+**
 

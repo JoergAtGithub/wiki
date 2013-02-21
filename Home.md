@@ -147,6 +147,8 @@ The following projects were accepted for Google Summer of Code 2012:
   - [AutoDJ Enhancements](gsoc2012_autodj_features) by Scott Stewart
   - Harmonic Mixing Features by Varun Jewalikar
 
+<http://duhoc360.com/du-hoc-chau-my/du-hoc-canada du hoc canada>
+
 ### GSoC 2011
 
 Mixxx is an accepted mentoring organization for Google Summer of Code,

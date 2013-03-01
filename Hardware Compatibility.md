@@ -26,13 +26,14 @@ There are two different levels of device support in Mixxx:
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[1\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)       |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[2\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.9.0+)                            | Yes (1.9.0+)               | Yes (1.9.0+) \[3\] \[4\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
+| [Keith McMillen Instruments QuNeo](keith_mcmillen_quneo)         | Yes (1.11.0+)                           | Yes (1.11.0+)              | Untested (1.11.0+)                                                                                                                            |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                                  |
 | [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | Yes (1.11.0)                            | Yes (1.11.0)               | Yes (1.11.0)                                                                                                                                  |
 | [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[5\] (1.7.0+)               | Yes (1.6.1)\[6\] (1.7.0+)  | Yes (1.7.0+)                                                                                                                                  |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+)                                                                                                                                  |
 | [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1)\[7\] (1.7.0+)\[8\] (1.9.0+) | Yes (1.7.0+)\[9\] (1.9.0+) | Yes (1.6.0+)\[10\]                                                                                                                            |
 | [Stanton SCS.1d](Stanton%20SCS.1d)                               | Yes (1.9.1)                             | Yes (1.9.1)                | Yes (1.11.0)\[11\]                                                                                                                            |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1)                            | Yes (1.10.1)               | Not tested                                                                                                                                    |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1)                            | Yes (1.10.1)               | Untested                                                                                                                                      |
 
 ### Community Supported Mappings
 
@@ -109,7 +110,6 @@ Scripting](MIDI%20Scripting) pages.
 | EKS Otus RAW                       |               |          |       |
 | [EKS XP5](EKS%20XP5)               |               |          |       |
 | [EKS XP10](EKS%20XP10)             |               |          |       |
-| [KMI QuNeo](keith_mcmillen_quneo)  |               |          |       |
 | Korg NanoPad                       |               |          |       |
 | [Korg NanoKontrol](/wiki/dokuwiki) | Yes (1.10.0+) |          |       |
 | Korg NanoKey                       |               |          |       |

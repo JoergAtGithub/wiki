@@ -1,39 +1,209 @@
-(CNN) -- The Chinese government is sponsoring cyber-espionage to attack
-top U.S. companies, according to Grady Summers, vice president of
-security firm Mandiant.\<br /\>Virginia-based Mandiant published a
-60-page report detailing allegations over a six-year period against a
-group of hackers -- known as Comment Crew -- which Summers linked to a
-secret division of the Chinese military.\<br /\>Summers told CNN: "China
-is attacking the U.S. on a scale like we've never seen before... We
-believe that the Communist Party of China is very aware of this."\<br
-/\>Read more: Have the courage to deal with cyber war\<br /\>Mandiant
-says the activity can be traced to four networks near Shanghai -- with
-some operations taking place in a location that is also the headquarters
-of Unit 61398, the secret military division.\<br /\> Cracking down on
-Chinese hackers Firm: Many hackers attacking from China Report: Chinese
-Army behind cyber attacks U.S. cyber battle with China\<br /\>Summers
-added: "Never before have we seen one state-sponsored entity like unit
-61398 of the Chinese PLA attacking helpless commercial organizations in
-other countries."\<br /\>Read more: Chinese cyber attacks on West are
-widespread, experts say\<br /\>The espionage group mainly targeted U.S.
-blue chip companies in 20 separate industries from aerospace to
-financial services.\<br /\>"It's really a who's who of American
-companies. Of 140 victims worldwide, 115 of them were in the U.S.,"
-Grady said.\<br /\>Chinese foreign ministry spokesman Hong Lei dismissed
-the hacking charges on Tuesday, insisting that China is the victim of
-many cyberattacks -- most originating in the United States.\<br
-/\>"Making baseless accusations based on premature analysis is
-irresponsible and unprofessional," he said. "China resolutely opposes
-any form of hacking activities."\<br /\>Earlier this month, President
-Obama signed an executive order designed to address the country's most
-basic cybersecurity needs -- and highlighted the effort in his State of
-the Union address.\<br /\>Summers says a cyber offence by the U.S. is
-not an appropriate response to the attacks as "it creates more problems
-than it solves."\<br /\>Instead, he advocates better defense systems in
-organizations that are vulnerable to cyber attacks and diplomatic
-pressure from Washington on Beijing.\<br /\>The Mandiant report details
-3,000 technical indicators including IP addresses, domain names and
-encryption certificates, that can be used to strengthen companies'
-defenses.\<br
-/\>\[<http://edition.cnn.com/2013/02/19/business/china-cyber-attack-mandiant/index.html?hpt=hp_bn5>
-source\]
+# Welcome to the Mixxx Wiki\!
+
+Mixxx has an unusually broad community for an open-source project,
+encompassing performing musicians, C++ addicts, amateur DJs and even
+just casual users. The Mixxx Wiki contains useful information for users,
+developers, and artists, and is summarized in the categories below.
+
+Most of the contents of this wiki can be edited by anyone, the main
+exception to this is the [development\_roadmap](development_roadmap)
+which is a fairly authoritative description of the development team's
+plans.
+
+## User Documentation
+
+  - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make
+    Mixxx better, find out what you can do.
+  - [Beginner's Guide](Beginner's%20Guide)
+  - [Manual](Manual)
+  - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
+    about using Hercules GPL Linux MIDI driver with Mixxx, and where to
+    get updated Hercules device control mappings for Windows and OSX.
+  - [Hardware Compatibility](Hardware%20Compatibility) - Contains the
+    most up-to-date information about which DJ controllers work with
+    Mixxx and the details of each.
+  - [FAQ](FAQ)
+  - [Troubleshooting](Troubleshooting)
+  - [Tutorials](Tutorials)
+  - [Add-ons](Add-ons)
+  - [Vinyl (and audio CDJ) control](Vinyl%20Control)
+  - [Internet broadcasting](Internet%20broadcasting)
+  - [System Requirements](System%20Requirements)
+  - [Command line options](Command%20line%20options)
+  - [Reporting bugs](Reporting%20bugs)
+
+## Build Mixxx
+
+  - [Compiling on Linux](Compiling%20on%20Linux)
+  - [Compiling on Windows](Compiling%20on%20Windows)
+  - [Compiling on OS X](Compiling%20on%20OS%20X)
+  - [Dependencies](Dependencies)
+  - [Packaging / Making a Mixxx
+    Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
+
+## Artist Documentation
+
+  - [Creating Skins](Creating%20Skins)
+  - [Skin Guidelines](Skin%20Guidelines)
+  - [Skin Colour Scheme
+    Architecture](Skin%20Colour%20Scheme%20Architecture)
+  - [Skin Color Schemes Tips and
+    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
+  - [On Icons and Images](On%20Icons%20and%20Images)
+
+## Controller/MIDI Mapping Documentation
+
+  - [MIDI Controller Mapping File
+    Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
+    find out how to create or change a MIDI mapping file for your
+    controller
+  - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
+    complete control over your MIDI controller and create advanced
+    behaviors including easy wheel scratching.
+
+<!-- end list -->
+
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - Read this to find out how to create or
+    change a mapping file for your HID controller. (TENTATIVE - not yet
+    implemented.)
+
+<!-- end list -->
+
+  - [MixxxControls](MixxxControls) - This is a list of Mixxx's controls
+    you can manipulate with your controller via the mapping file and/or
+    a script
+
+## Developer Documentation
+
+### Getting Started
+
+  - [How to use Bazaar](Using%20Bazaar)
+  - [Submitting
+    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
+  - [Creating backtraces](Creating%20backtraces)
+  - [The Bug Tracker](launchpad_bugs)
+  - [Coding Guidelines](Coding%20Guidelines)
+  - [Developer Tools](Developer%20Tools)
+
+### Development Topics
+
+  - [Development Roadmap](Development%20Roadmap)
+  - [Feature Design Documents](feature_discussion)
+  - [Mixxx QA Procedure](qa_procedure)
+  - [Writing unit tests](unit_tests) - helps prevent regressions.
+    Essential for new code\!
+  - [Internationalization/Translations](Internationalization)
+
+### Code Reference
+
+  - [Performance improvements](Performance%20improvements)
+  - [Code cleanup & cruft removal task list](code_cleanup)
+  - [SoundSource interface (sound
+    proxies)](SoundSource%20interface%20\(sound%20proxies\))
+  - [Threads](Threads)
+  - [Widgets](Widgets)
+
+### Developer Meetings and Sprints
+
+  - [9/20/2009 Developer Meeting
+    Minutes](9/20/2009%20Developer%20Meeting%20Minutes)
+  - [5/17/2009 Developer Meeting
+    Minutes](5/17/2009%20Developer%20Meeting%20Minutes)
+  - [6/27/2010 Developer Meeting
+    Minutes](6/27/2010%20Developer%20Meeting%20Minutes)
+  - [11/27/2011 Developer Meeting
+    Minutes](11/27/2011%20Developer%20Meeting%20Minutes)
+  - [July 29th 1.6.0 coding day](Coding%20Day%20Activities)
+
+### Other Resources
+
+  - [Portable Mixxx for removable media](Portable%20Mixxx)
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
+
+## Google Summer of Code
+
+### GSoC 2013
+
+Mixxx plans to apply for Google Summer of Code, 2013.
+
+  - See the list of suggested projects: [GSoC 2013 Ideas](gsoc2013ideas)
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
+### GSoC 2012
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2012.
+
+  - See the list of suggested projects: [GSoC 2012 Ideas](gsoc2012ideas)
+
+The following projects were accepted for Google Summer of Code 2012:
+
+  - Vinyl-Control Pass-Through Mode by Matthew Mikolay
+  - Mixxx Library Improvements by Max Linke
+  - [AutoDJ Enhancements](gsoc2012_autodj_features) by Scott Stewart
+  - Harmonic Mixing Features by Varun Jewalikar
+
+### GSoC 2011
+
+Mixxx is an accepted mentoring organization for Google Summer of Code,
+2011.
+
+  - See the list of suggested projects: [GSoC 2011 Ideas](gsoc2011ideas)
+
+The following projects were accepted for Google Summer of Code 2011:
+
+  - Advanced Search by Bart Verstrynge
+  - AutoDJ 2.0 by Tom Mast
+  - Timer-Powered Engine by Bill Good
+
+### GSoC 2010
+
+Mixxx participated in GSoC 2010.
+
+  - See the list of projects we proposed in 2010: [GSoC 2010
+    Ideas](gsoc2010ideas)
+
+The following projects were accepted for Google Summer of Code 2010:
+
+  - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
+  - [Sampler](gsoc2010/sampler) by Ryan Baker
+  - [DVS Mode](gsoc2010/dvs_mode) by Bill Good
+
+### GSoC 2009
+
+Due to a lack of core developer time Mixxx did not participate in GSoC
+2009.
+
+### GSoC 2008
+
+The following projects were accepted for Google Summer of Code 2008:
+
+  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by RJ Ryan
+  - [MIDI Control](gsoc2008/midi_control) by Tom Care
+  - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
+    Stessens
+  - [Stability and Crash
+    Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
+
+Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
+
+## More Resources
+
+  - Discussions on the
+    [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+    mailing list are the basis for much of the content here.
+  - The main [Mixxx website](http://www.mixxx.org).
+  - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
+    [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
+  - The blog: [mixxxblog.blogspot.com](http://mixxxblog.blogspot.com).
+  - Bazaar code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
+    browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - [List of open-source music production
+    software](List%20of%20open-source%20music%20production%20software)

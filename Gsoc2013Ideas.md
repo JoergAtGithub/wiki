@@ -27,6 +27,8 @@ plan for implementing a solution.**
 
 ## Non-Blocking Database Access
 
+## D-Bus Interface
+
 ## Pick up or continue a GSoC 2012 project
 
 The Ideas from 2013 can be viewed here: [GSoC 2013 Ideas](gsoc2013ideas)

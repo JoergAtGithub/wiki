@@ -15,8 +15,8 @@ plan for implementing a solution.**
 
 ## Mixxx Remote
 
-There are many different options to achive remote control of Mixxx for
-differnt use cases.
+There are many different options to achieve remote control of Mixxx for
+different use cases.
 
 It is up to you to propose a remote scenario that will be the scope of
 your GSoC Project.

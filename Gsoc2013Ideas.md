@@ -15,6 +15,18 @@ plan for implementing a solution.**
 
 ## Mixxx Remote
 
+There are many different options to achive remote control of Mixxx for
+differnt use cases.
+
+It is up to you to propose a remote scenario that will be the scope of
+your GSoC Project.
+
+Hiere are some links:
+
+  - \[<https://bugs.launchpad.net/mixxx/+bug/1108370>\]
+  - \[<http://mixxx.org/forums/viewtopic.php?f=6&t=1477>\]
+  - \[<https://play.google.com/store/apps/details?id=com.bti.djControl&hl=de>\]
+
 ## Cover Arts
 
 ## Mixxx as Effect Host

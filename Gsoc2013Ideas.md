@@ -15,7 +15,9 @@ plan for implementing a solution.**
 
 ## Idea 1
 
-## Idea 2
+## Pick up or continue a GSoC 2012 project
+
+The Ideas from 2013 can be viewed here: [GSoC 2013 Ideas](gsoc2013ideas)
 
 ## Something Else\!
 

@@ -47,6 +47,10 @@ Further links can be found here:
 
 ## Advanced Tagging
 
+Currently Mixxx does not write metatdata back to the tracks. The tagging
+capability of mixxx is low compared to current media players. It is a
+good idea to catch up.
+
 ## Non-Blocking Database Access
 
 ## D-Bus Interface

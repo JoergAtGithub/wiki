@@ -36,8 +36,6 @@ This project has two aspects:
   - Intigrate the cover views in a polished way into the Mixxx GUI 
   - tap the different cover sources 
 
-## Mixxx as Effect Host
-
 ## Library GUI Layout Redesign
 
 ## Mixxx Touch

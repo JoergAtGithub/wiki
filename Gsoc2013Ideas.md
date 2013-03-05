@@ -69,7 +69,7 @@ of the desktop environment.
 
 ## Pick up or continue a GSoC 2012 project
 
-The Ideas from 2013 can be viewed here: [GSoC 2013 Ideas](gsoc2013ideas)
+The Ideas from 2013 can be viewed here: [GSoC 2012 Ideas](gsoc2012ideas)
 
 ## Something Else\!
 

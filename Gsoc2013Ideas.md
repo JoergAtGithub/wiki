@@ -65,6 +65,8 @@ should be able to communicate with other Mediaplayers for exchanging
 playlists and it should be able to control Mixxx by the audio controls
 of the desktop environment.
 
+\[<http://specifications.freedesktop.org/mpris-spec/latest/>\]
+
 ## Pick up or continue a GSoC 2012 project
 
 The Ideas from 2013 can be viewed here: [GSoC 2013 Ideas](gsoc2013ideas)

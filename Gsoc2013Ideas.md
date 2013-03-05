@@ -38,6 +38,13 @@ This project has two aspects:
 
 ## Library GUI Layout Redesign
 
+The current library GUI needs to be polished and needs to give room for
+new features.
+
+Further links can be found here:
+
+<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+
 ## Mixxx Touch
 
 ## Advanced Tagging

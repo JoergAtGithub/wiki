@@ -13,7 +13,19 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-## Idea 1
+## Mixxx Remote
+
+## Cover Arts
+
+## Mixxx as Effect Host
+
+## Library GUI Layout Redesign
+
+## Mixxx Touch
+
+## Advanced Tagging
+
+## Non-Blocking Database Access
 
 ## Pick up or continue a GSoC 2012 project
 

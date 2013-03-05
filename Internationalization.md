@@ -54,10 +54,10 @@ been contributed by Launchpad users.*
   - For every mixxx\_xx.ts file in res/translations/, `lrelease
     res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm`
   - In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease
-    -nountranslated $XX -qm res/translations/${$(basename $XX)%.*}.qm;
+    -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm;
     done`
   - If you are testing a translation and would like untranslated strings
-    to show up as blank, do not give the 'nountranslated' argument to
+    to show up as blank, do not give the 'nounfinished' argument to
     lrelease.
   - Add all new translation translation TS and QM files to Bazaar
   - In ZSH: `bzr add res/translations/mixxx_*.(ts|qm)`

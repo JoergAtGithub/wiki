@@ -29,6 +29,13 @@ Hiere are some links:
 
 ## Cover Arts
 
+It would be nice if Mixxx could display cover arts.
+
+This project has two aspects:
+
+  - Intigrate the cover views in a polished way into the Mixxx GUI 
+  - tap the different cover sources 
+
 ## Mixxx as Effect Host
 
 ## Library GUI Layout Redesign

@@ -60,6 +60,11 @@ new concept how to deal with database actions.
 
 ## D-Bus Interface
 
+This Project aims to integrate Mixxx into the Linux desktop. Mixxx
+should be able to communicate with other Mediaplayers for exchanging
+playlists and it should be able to control Mixxx by the audio controls
+of the desktop environment.
+
 ## Pick up or continue a GSoC 2012 project
 
 The Ideas from 2013 can be viewed here: [GSoC 2013 Ideas](gsoc2013ideas)

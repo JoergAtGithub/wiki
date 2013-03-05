@@ -53,6 +53,11 @@ good idea to catch up.
 
 ## Non-Blocking Database Access
 
+Currently some database transactions are stalilng the GUI. This is
+because som database actions are preformed from the GUI thread. This
+project would make Mixxx more relyable by defining and implementing a
+new concept how to deal with database actions.
+
 ## D-Bus Interface
 
 ## Pick up or continue a GSoC 2012 project

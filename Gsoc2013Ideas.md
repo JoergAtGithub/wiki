@@ -45,8 +45,6 @@ Further links can be found here:
 
 <https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
 
-## Mixxx Touch
-
 ## Advanced Tagging
 
 ## Non-Blocking Database Access

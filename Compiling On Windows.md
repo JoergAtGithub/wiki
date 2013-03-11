@@ -44,6 +44,9 @@ referred to as MSVC in discussions.
     adjusting the paths to match where you actually installed the above
     `QTDIR = C:\qt-windows-4.7.4\
     PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
+  - If you're using Qt 4.8 or above, you might need to copy all of the
+    Qt4 DLL files from `C:\qt\bin` to `C:\qt\lib` since that's where our
+    build script looks for them. (We should fix that.)
 
 <!-- end list -->
 
@@ -74,11 +77,7 @@ referred to as MSVC in discussions.
     2.  Type `setenv /xp /x86 /release` and hit Enter.
     3.  Type `scons toolchain=msvs winlib=<path to
         mixxx-win32lib-msvc90-release directory>` and press Enter. (You
-        may need to use `scons.bat` instead of just `scons` or copy
-        QtCore4.dll QtWebKit4.dll QtScript4.dll QtSvg4.dll phonon4.dll
-        QtXmlPatterns4.dll QtOpenGL4.dll QtGui4.dll QtSql4.dll
-        QtNetwork4.dll QtXml4.dll both all these files from C:\\qt\\bin
-        to C:\\qt\\lib if you use newer qt library for vs such as 4.8.0)
+        may need to use `scons.bat` instead of just `scons`.)
           - Add `msvcdebug=1` to build the debug version (with console
             output window.)
           - Add `force32=1` if you're on a 64-bit platform with 64-bit

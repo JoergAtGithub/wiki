@@ -72,26 +72,32 @@ referred to as MSVC in discussions.
         Windows SDK v.7.0\\CMD Shell) and change into the "mixxx"
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
-    3.  Type `scons toolchain=msvs
-        winlib=path_to_mixxx-win32lib-msvc90-release_directory` and
-        press Enter. (You may need to use `scons.bat` instead of just
-        `scons` or copy QtCore4.dll QtWebKit4.dll QtScript4.dll
-        QtSvg4.dll phonon4.dll QtXmlPatterns4.dll QtOpenGL4.dll
-        QtGui4.dll QtSql4.dll QtNetwork4.dll QtXml4.dll both all these
-        files from C:\\qt\\bin to C:\\qt\\lib if you use newer qt
-        library for vs such as 4.8.0)
+    3.  Type `scons toolchain=msvs winlib=<path to
+        mixxx-win32lib-msvc90-release directory>` and press Enter. (You
+        may need to use `scons.bat` instead of just `scons` or copy
+        QtCore4.dll QtWebKit4.dll QtScript4.dll QtSvg4.dll phonon4.dll
+        QtXmlPatterns4.dll QtOpenGL4.dll QtGui4.dll QtSql4.dll
+        QtNetwork4.dll QtXml4.dll both all these files from C:\\qt\\bin
+        to C:\\qt\\lib if you use newer qt library for vs such as 4.8.0)
           - Add `msvcdebug=1` to build the debug version (with console
             output window.)
           - Add `force32=1` if you're on a 64-bit platform with 64-bit
             Python installed, otherwise it will try to build the x64
             version of Mixxx. (`win32=1` in older branches.)
+          - If you would like to build with MP4/M4A/AAC file support:
+              - If you're on Vista and above, add `mediafoundation=1`.
+                (Vista users must have installed
+                [KB2117917](http://support.microsoft.com/kb/2117917).)
+              - If you're on XP and below, first build FAAD2 and mp4v2
+                [as detailed here](build_windows_dependencies#libfaad2)
+                then add `faad=1` to the scons command.
 2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
     "mixxx/dist32/" directory.
 3.  (Optional) If you'd like to generate a MSVC project for use with
     Visual Studio, add the parameter msvc in the command such as `scons
-    toolchain=msvs
-    winlib=path_to_mixxx-win32lib-msvc90-release_directory msvc` then
-    open the newly generated "mixxx.vcproj" file with Visual Studio.
+    toolchain=msvs winlib=<path to mixxx-win32lib-msvc90-release
+    directory> msvc` then open the newly generated "mixxx.vcproj" file
+    with Visual Studio.
 
 ## Build the 64-bit version using Microsoft Visual Studio Express
 

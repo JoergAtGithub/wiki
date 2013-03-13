@@ -196,7 +196,7 @@ types into account. There a two base templates, one for types with
 sizeof(T) \<= sizeof(void\*) which can be read and write natively atomic
 by the cpu and one with a ring buffer that guarantees lock free thread
 save reads and writes for larger types. Unfortunately Qt does not
-provide a way implement signals and slots via a template class, So we
+provide a way implement signals and slots via a template class, so we
 have to subclass a ControlObject for each desired datatype.
 
 These new ControlObjects can now used from any thread without worrying
@@ -206,6 +206,11 @@ Due to the template based implementation the performance should be
 sligtly better then the QVariant version, but lacks in runtime type
 conversion. If this is realy needed we may specialize one Control Object
 for QVarant as well.
+
+The biggest instant performance boost will happen with the 64 bit
+version where all legacy double control objects are accessed atomic
+without any limitations. Later we may introduce integer control objects
+for some values with the same benefit on 32 bit systems.
 
 The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
 

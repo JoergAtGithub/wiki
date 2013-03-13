@@ -189,6 +189,28 @@ methods for double, including add/sub methods that are currently
 provided on ControlObjects. ControlBoolean ControlInteger, and
 ControlString could be similar.
 
+### Template Based Control System with atomic typ support
+
+This system would be a control system taking the advantage of atomic
+types into account. There a two base templates, one for types with
+sizeof(T) \<= sizeof(void\*) which can be read and write natively atomic
+by the cpu and one with a ring buffer that guarantees lock free thread
+save reads and writes for larger types. Unfortunately Qt does not
+provide a way implement signals and slots via a template class, So we
+have to subclass a ControlObject for each desired datatype.
+
+These new ControlObjects can now used from any thread without worrying
+about proxys or sync threads.
+
+Due to the template based implementation the performance should be
+sligtly better then the QVariant version, but lacks in runtime type
+conversion. If this is realy needed we may specialize one Control Object
+for QVarant as well.
+
+The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
+
+<http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/atomic-co/view/head:/mixxx/src/controlobjectbase.h>
+
 ## Work Breakdown
 
 This [work breakdown

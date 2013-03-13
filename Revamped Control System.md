@@ -209,8 +209,8 @@ Object for QVarant as well.
 
 The biggest instant performance boost will happen with the 64 bit
 version where all legacy double control objects are accessed atomic
-without any limitations. Later we may introduce integer control objects
-for some values with the same benefit on 32 bit systems.
+without any loss of performance. Later we may introduce integer control
+objects for some values with the same benefit on 32 bit systems.
 
 The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
 

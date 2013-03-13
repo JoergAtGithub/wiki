@@ -166,7 +166,7 @@ namespace.
 If anything, ConfigKey is really crufty and it would be nice if we could
 rename it to something nicer and more relevant.
 
-## Proposed Design
+## Proposed Designs
 
 ### QVariant Based, Unified Control System
 

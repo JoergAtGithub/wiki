@@ -139,6 +139,47 @@ ControllerName.functionName = function (channel, control) {
 in the script file(s) will be called, regardless of the number of
 parameters.)*
 
+### System-exclusive message handing functions
+
+Data passed from SysEx messages to functions are, in order:
+
+1.  an array of raw data bytes
+2.  the length of that array
+
+Therefore, function definitions should look like:
+
+``` javascript
+ControllerName.inboundSysex = function (data, length) {
+    ...
+}
+```
+
+To invoke the above function, add the following mapping to the
+`<controls>` section of your XML preset file:
+
+    <control>
+        <status>0xf0</status>
+        <group>[Master]</group>
+        <key>ControllerName.inboundSysex</key>
+        <options>
+            <Script-Binding/>
+        </options>
+    </control>
+
+The bytes received are completely up to the controller so consult the
+user manual or the manufacturer for details. If the controller can send
+different SysEx messages, your single function is responsible for
+deciding which has been received then taking the appropriate action.
+
+*Note that some controllers may send bytes that violate MIDI standards,
+e.g. setting the high bit in a data byte or using undefined status bytes
+(like `0xF9`.) On Linux, recent versions of ALSA (from November 2012
+onward) automatically standardize these by breaking the bytes into two
+nybbles and sending two bytes for every one received from the
+controller. For example `0xF0 0x97 0x30 0xF7` would become
+`0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
+details.*
+
 ### Reading and setting Mixxx control values
 
 Script functions can check and set Mixxx control values using the

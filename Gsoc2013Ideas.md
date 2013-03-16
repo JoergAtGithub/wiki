@@ -67,6 +67,24 @@ of the desktop environment.
 
 \[<http://specifications.freedesktop.org/mpris-spec/latest/>\]
 
+## Include Streaming services or webapps like Soundcloud/Last.fm/...
+
+There are a lot of good online sites available to organize your library
+or get new music, like soundcloud, last.fm and musicbrainz. Support for
+tags correction with musicbrainz was implemented in last years GSOC and
+will be integrated in 1.12. You can pick one service that you like and
+implement it in GSOC 2013
+
+Further Information can be found here:
+
+  - \[<https://code.launchpad.net/~max-linke/mixxx/library_features>\]
+  - \[<https://bugs.launchpad.net/mixxx/+bug/938180>\]
+  - \[<https://bugs.launchpad.net/mixxx/+bug/894652>\]
+  - \[<https://bugs.launchpad.net/mixxx/+bug/669273>\]
+  - \[<https://bugs.launchpad.net/mixxx/+bug/889898>\]
+  - \[<http://www.lastfm.at/api>\]
+  - \[<http://developers.soundcloud.com/>\]
+
 ## Pick up or continue a GSoC 2012 project
 
 The Ideas from 2013 can be viewed here: [GSoC 2012 Ideas](gsoc2012ideas)

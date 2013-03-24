@@ -160,6 +160,9 @@ below.
   - TrackProperty - pull advanced informations from tracks and display
     them
   - WidgetGroup - make a group of relatively positioned widgets
+  - Splitter - allows proportional splits between WidgetGroup
+  - WidgetStack - allows to switch between multiple different widgets to
+    occupy a certain space
 
 ### Skin FAQ
 

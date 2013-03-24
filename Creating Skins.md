@@ -109,7 +109,7 @@ below.
 
 [3.Text](#sectiontext)
 
-  - Label(not shown) - displays a text label
+  - Label (not shown) - displays a text label
   - Clock (not shown) - displays the current time
   - Track information - shows some ID3 information of the song ( Name,
     Artist )

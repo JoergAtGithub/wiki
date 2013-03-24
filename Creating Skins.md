@@ -863,6 +863,26 @@ end StatusLight (Volume Peak Indicator) tag
 
 ## Section: Text
 
+### Label
+
+|                                                                                                            |  |                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<Label>
+    <Style>...</Style>
+    <Pos>X,Y</Pos>
+    <Size>W,H</Size>
+    <Text>Hello</Text>
+ </Label>
+` |  | `
+Displays a text label.
+<Style> Example= "QLabel { font: 15px/17px Arial;background-color: transparent; color: #ACACAC; text-align: center; padding-left: 1px; }"
+Defines the element position
+Defines the element size
+The text to be displayed
+
+
+` |
+
 ### Clock
 
 New in Mixxx 1.10  

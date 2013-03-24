@@ -875,23 +875,24 @@ New in Mixxx 1.10
 </Time>
 `||`
 This widget displays the current time.
-The node <ClockFormat> determines whether the time is shown in 24 hour
-format or 12 hour format. "24" and "24hrs" set the format to 24 hour
+Tooltip to be displayed on mouseover
+<Style> Example= "QLabel { font: 15px/17px Arial;background-color:
+transparent; color: #ACACAC; text-align: center; padding-left: 1px; }"
+Defines the element position
+Defines the element size
+Determines, whether seconds are shown ("true") or not ("false"). Default
+is "false".
+Determines whether the time is shown in 24 hour format or 12 hour
 format.
-"12", "12hrs" and "12ap" set the format to to 12 hour format (e.g. 1:45
-am). "12AP" sets it to 12 hour format with capitalized AM/PM (e.g. 1:45
-AM). Default is "12AP".
-<ShowSeconds> determines, whether seconds are shown or not. Default is
-false.
+"24" and "24hrs" set the format to 24 hour format. "12", "12hrs" and
+"12ap" set the format to 
+12 hour format (e.g. 1:45 am). "12AP" sets it to 12 hour format with
+capitalized AM/PM 
+(e.g. 1:45 AM). Default is "12AP". <ShowSeconds> determines, whether
+seconds are shown or not. Default is false.
 You can set a custom format with <CustomFormat> instead of
 <ClockFormat>, which accepts the same expressions as QTime::toString
 (http://doc.trolltech.com/latest/qtime.html#toString)
-
-<Style> Example= QLabel { font: 15px/17px Lucida Grande, Lucida Sans
-Unicode, Arial, Verdana, sans-serif;
-background-color: transparent; color: #ACACAC; text-align: center;
-padding-left: 1px; }
-
 `|
 
 ### Track information

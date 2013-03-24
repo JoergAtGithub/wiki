@@ -20,13 +20,11 @@ referred to as MSVC in discussions.
 
   - [Microsoft Visual C++
     Express](http://www.microsoft.com/express/download/) ([Direct link
-    to 2008 w/
-    SP1](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569#filelist).
-    You only need vcexpress.exe.)
+    to 2010](http://go.microsoft.com/?linkid=9709949))
   - [Microsoft Windows 7
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
   - [Qt library for Windows
-    (MSVC2008)](http://qt.nokia.com/downloads/windows-cpp-vs2008)
+    (MSVC2010)](http://releases.qt-project.org/qt4/source/qt-win-opensource-4.8.4-vs2010.exe)
   - [Python](http://python.org/download/) 2.x
   - [SCONS](http://www.scons.org/download.php)
   - A Bazaar client like [Bazaar w/
@@ -42,8 +40,8 @@ referred to as MSVC in discussions.
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
     adjusting the paths to match where you actually installed the above
-    `QTDIR = C:\qt-windows-4.7.4\
-    PATH = C:\qt-windows-4.7.4\bin;C:\Python26;C:\Python26\Scripts`
+    `QTDIR = C:\qt-windows-4.8.4\
+    PATH = C:\qt-windows-4.8.4\bin;C:\Python26;C:\Python26\Scripts`
   - If you're using Qt 4.8 or above, you might need to copy all of the
     Qt4 DLL files from `C:\qt\bin` to `C:\qt\lib` since that's where our
     build script looks for them. (We should fix that.)
@@ -65,8 +63,8 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
   - Checkout the dependencies repository (and have it placed beside your
-    "mixxx" directory)
-    from:`lp:~mixxxdevelopers/mixxx/mixxx-win32lib-msvc90-release`
+    "mixxx" directory) from:\<code\>
+    lp:\~mixxxdevelopers/mixxx/winlib-msvc10-x86-static\</code\>
 
 <!-- end list -->
 
@@ -76,8 +74,12 @@ referred to as MSVC in discussions.
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
     3.  Type `scons toolchain=msvs winlib=<path to
-        mixxx-win32lib-msvc90-release directory>` and press Enter. (You
-        may need to use `scons.bat` instead of just `scons`.)
+        winlib-msvc10-x86-static directory> sqlitedll=0 staticlibs=1
+        asmlib=0` and press Enter. (You may need to use `scons.bat`
+        instead of just `scons`.)
+          - In case scons can't find the dependencies try to load the
+            visual studio enviroment variabels
+            <http://msdn.microsoft.com/en-us/library/vstudio/1700bbwd.aspx>
           - Add `msvcdebug=1` to build the debug version (with console
             output window.)
           - Add `force32=1` if you're on a 64-bit platform with 64-bit

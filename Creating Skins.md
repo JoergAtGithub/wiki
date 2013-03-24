@@ -109,7 +109,8 @@ below.
 
 [3.Text](#sectiontext)
 
-  - Clock (not shown) - displays the current time.
+  - Label(not shown) - displays a text label
+  - Clock (not shown) - displays the current time
   - Track information - shows some ID3 information of the song ( Name,
     Artist )
   - BPM Information - shows the tempo of the song

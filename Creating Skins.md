@@ -49,15 +49,15 @@ General structure of the skin.xml. More in-depth informations for each
 element and their attributes defined in the skin.xml can be found
 [here](#skinxml-in-depth-review)
 
-| syntax                                                                                                                                                                                                                                                        | Info                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| syntax                                                                                                                                                                                                                                                  | Info                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
 <!DOCTYPE skin>           
 <skin>
 <manifest>...</manifest>
 <elementname>
-<tooltips>helpful text</tooltips>
-<Style>..</Style>
+<TooltipId>...</TooltipId>
+<Style>...</Style>
 <position>X,Y</position>
 <size>W,H</size>
 <options>values(depends)</options>
@@ -68,8 +68,8 @@ Doctype declaration
 Skin opening tag
 Manifest describing skin properties (author, title, version, etc.)
 Elements opening tag
-Tooltips to display on mouse-over
-Style (depends on the element)
+Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+Stylesheet (depends on the element)
 Position on the screen
 Size (depending on the element)
 Options(depending on the element)

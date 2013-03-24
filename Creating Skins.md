@@ -38,7 +38,8 @@ Guidelines](http://mixxx.org/wiki/doku.php/skin_guidelines)
 Images are in the .png format and Mixxx does support png transparency.
 Element colors are defined in hexadecimal values.  
 Element positions are defined with **X,Y** coordinates (from upper left
-). Element sizes are defined with **W,H** values (width,heigh).
+). Element sizes are defined with **W,H** values (width,heigh). All
+values are given in pixels.
 
 [[/media/skinning/creating_skins/mixxx1.9_gui_positioning_outline.png|]]
 
@@ -48,8 +49,8 @@ General structure of the skin.xml. More in-depth informations for each
 element and their attributes defined in the skin.xml can be found
 [here](#skinxml-in-depth-review)
 
-| syntax                                                                                                                                                                                                                                                        | Info                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| syntax                                                                                                                                                                                                                                                        | Info                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
 <!DOCTYPE skin>           
 <skin>
@@ -63,9 +64,9 @@ element and their attributes defined in the skin.xml can be found
 </elementname>           
 </skin>
 ` | `Optional comments (i.e. skin license or changelog)
-Doctype declaration so Mixxx "know"
+Doctype declaration
 Skin opening tag
-Manifest describing skin properties (author, title, etc.)
+Manifest describing skin properties (author, title, version, etc.)
 Elements opening tag
 Tooltips to display on mouse-over
 Style (depends on the element)

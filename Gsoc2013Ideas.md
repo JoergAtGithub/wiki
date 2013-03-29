@@ -27,14 +27,56 @@ Hiere are some links:
   - \[<http://mixxx.org/forums/viewtopic.php?f=6&t=1477>\]
   - \[<https://play.google.com/store/apps/details?id=com.bti.djControl&hl=de>\]
 
-## Cover Arts
+## Cover Art Support
 
-It would be nice if Mixxx could display cover arts.
+Over the years a highly requested feature has been for Mixxx to support
+displaying cover art. This is a great project that combines both
+aesthetics/design and engineering. Can you think of awesome, playful
+ways to display cover art?
 
-This project has two aspects:
+Some topics your proposal should cover:
 
-  - Intigrate the cover views in a polished way into the Mixxx GUI 
-  - tap the different cover sources 
+  - Supporting loading cover art (from metadata tags, from cover images
+    in album directories, etc.)
+  - Deciding where and how to display the cover art in the GUI. 
+  - Downloading cover art from metadata sources on the Internet if it is
+    not available locally.
+
+Your proposal should at the very least include details of how you will
+accomplish each of these parts of the project but the project is by no
+means limited to these topics. Make sure to think through the whole
+design and implementation and be sure to include details of anything you
+think may be relevant.
+
+Since this project is small in scope, we expect that you will have
+plenty of time to polish it and make it shine.
+
+## Plug and Play MIDI Mode / Community MIDI Mappings
+
+Mixxx currently supports a wide-range of hardware MIDI controllers that
+DJs can use to perform with. Each supported MIDI controller has a
+"mapping" file that is bundled with Mixxx, but this mapping must be
+manually selected by the user before their controller works. The aim of
+this project is to increase the usability for new users by automatically
+selecting the correct MIDI mapping and to provide an intelligent
+workflow for when an unsupported MIDI device is connected.
+
+When a mapping for a MIDI device is not present, the user should not be
+left out in the cold. She should have the option of connecting to
+mixxx.org to see if there are any official or user-contributed mappings
+available for download. It's easy to imagine the various interesting
+turns this could take.
+
+Since there is a server-side component to this project we ask that
+applicants be familiar with a web development framework that would be
+suitable for writing an API for mixxx.org. We suggest
+[Django](http://djangoproject.com).
+
+This project will involve a lot of time thinking about use cases,
+dealing with users and understanding their requirements. It would be a
+great opportunity for a student to get involved with the Mixxx
+community. The student will also have the opportunity to borrow a MIDI
+controller from the development team for the duration of the project.
 
 ## Library GUI Layout Redesign
 
@@ -85,9 +127,38 @@ Further Information can be found here:
   - \[<http://www.lastfm.at/api>\]
   - \[<http://developers.soundcloud.com/>\]
 
-## Pick up or continue a GSoC 2012 project
+## Enhanced Platform Integration
 
-The Ideas from 2013 can be viewed here: [GSoC 2012 Ideas](gsoc2012ideas)
+Thanks in large part to Qt and a number of other cross-platform
+libraries, Mixxx runs on Windows, Mac OS X, and Linux. Although we're
+able to provide a *consistent* user experience on Windows and Mac OS X,
+we'd like to provide a better *integrated* experience on each of these
+platforms. We want to take advantage of the unique features that each
+platform provides, like the new fullscreen mode in OS X Lion or the new
+jump list in Windows 7, so that Mixxx feels as *native* as possible.
+
+Qt already provides a [small number of platform integration
+features](http://qt-project.org/doc/qt-4.8/exportedfunctions.html), but
+to take advantage of other newer features that Qt doesn't have,
+platform-specific code for Windows and Mac OS X must be added to Mixxx.
+This project will involve figuring out which platform-specific features
+in Windows 7, Windows 8, Mac OS X Lion, and Mac OS X Mountain Lion would
+be the most useful for Mixxx users, and implementing several of those.
+(We don't expect students to have access to both Windows and Mac OS X,
+so a proposal focusing on one particular OS is OK, but an awareness of
+both platforms is a plus.)
+
+This project could also include more basic polishing tasks, so if
+there's some little inconsistencies about Mixxx that have been bugging
+you, here's your chance to fix them.
+
+For ideas, check out:
+
+  - [Q7Goodies](http://www.strixcode.com/q7goodies/) 
+  - [Features new to Windows 7
+    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_7)
+  - [Features new to Windows 8
+    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
 
 ## Something Else\!
 

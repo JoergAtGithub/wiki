@@ -146,6 +146,20 @@ For ideas, check out:
   - [Features new to Windows 8
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
 
+## Mixxx Remote
+
+There are many different options to achieve remote control of Mixxx for
+different use cases.
+
+It is up to you to propose a remote scenario that will be the scope of
+your GSoC Project.
+
+Hiere are some links:
+
+  - <https://bugs.launchpad.net/mixxx/+bug/1108370>
+  - <http://mixxx.org/forums/viewtopic.php?f=6&t=1477>
+  - <https://play.google.com/store/apps/details?id=com.bti.djControl&hl=de>
+
 ## Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

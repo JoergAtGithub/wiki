@@ -10,13 +10,14 @@ website](http://socghop.appspot.com/).
 In general, your project proposal can be inspired by any of the
 following:
 
-  - A project from our [GSoC 2012 Ideas Page](gsoc2012ideas)
+  - A project from our [GSoC 2013 Ideas Page](gsoc2013ideas)
   - A project you come up with\! Make sure to contact us **before**
     submitting to get feedback if this is your plan.
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
   - Projects from our past GSoC ideas pages: 
+  - [GSoC 2012](gsoc2012ideas) 
   - [GSoC 2011](gsoc2011ideas) 
   - [GSoC 2010](gsoc2010ideas) 
 
@@ -26,7 +27,7 @@ You are more than welcome to contact us before submitting your
 application, we will be happy to advise on most aspects of the process.
 Getting in touch first is especially recommended if you are planning to
 apply to work on an original idea, rather than one of our suggestions
-from the [ideas page](gsoc2012ideas).
+from the [ideas page](gsoc2013ideas).
 
 So if you'd like to discuss your application, your ideas or just
 introduce yourself, then feel free to get in touch in one of the

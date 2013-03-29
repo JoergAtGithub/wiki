@@ -13,20 +13,6 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-## Mixxx Remote
-
-There are many different options to achieve remote control of Mixxx for
-different use cases.
-
-It is up to you to propose a remote scenario that will be the scope of
-your GSoC Project.
-
-Hiere are some links:
-
-  - \[<https://bugs.launchpad.net/mixxx/+bug/1108370>\]
-  - \[<http://mixxx.org/forums/viewtopic.php?f=6&t=1477>\]
-  - \[<https://play.google.com/store/apps/details?id=com.bti.djControl&hl=de>\]
-
 ## Cover Art Support
 
 Over the years a highly requested feature has been for Mixxx to support
@@ -119,13 +105,13 @@ implement it in GSOC 2013
 
 Further Information can be found here:
 
-  - \[<https://code.launchpad.net/~max-linke/mixxx/library_features>\]
-  - \[<https://bugs.launchpad.net/mixxx/+bug/938180>\]
-  - \[<https://bugs.launchpad.net/mixxx/+bug/894652>\]
-  - \[<https://bugs.launchpad.net/mixxx/+bug/669273>\]
-  - \[<https://bugs.launchpad.net/mixxx/+bug/889898>\]
-  - \[<http://www.lastfm.at/api>\]
-  - \[<http://developers.soundcloud.com/>\]
+  - <https://code.launchpad.net/~max-linke/mixxx/library_features>
+  - <https://bugs.launchpad.net/mixxx/+bug/938180>
+  - <https://bugs.launchpad.net/mixxx/+bug/894652>
+  - <https://bugs.launchpad.net/mixxx/+bug/669273>
+  - <https://bugs.launchpad.net/mixxx/+bug/889898>
+  - <http://www.lastfm.at/api>
+  - <http://developers.soundcloud.com/>
 
 ## Enhanced Platform Integration
 

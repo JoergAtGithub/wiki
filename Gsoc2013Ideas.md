@@ -93,7 +93,7 @@ should be able to communicate with other Mediaplayers for exchanging
 playlists and it should be able to control Mixxx by the audio controls
 of the desktop environment.
 
-\[<http://specifications.freedesktop.org/mpris-spec/latest/>\]
+<http://specifications.freedesktop.org/mpris-spec/latest/>
 
 ## Include Streaming services or webapps like Soundcloud/Last.fm/...
 

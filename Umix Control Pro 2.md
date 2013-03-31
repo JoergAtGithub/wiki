@@ -42,8 +42,8 @@ should work fine with this MIDI-Mapping.
 
 ### Actual Mapping: \[ALPHA\] v0.0.3.7\*\*
 
-  
 <http://mixxx.org/forums/viewtopic.php?f=7&t=4892>  
+  
 **<span class="underline">Works perfectly with Mixxx as normally
 expected</span>**
 

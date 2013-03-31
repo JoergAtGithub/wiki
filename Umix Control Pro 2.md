@@ -1,3 +1,5 @@
+## MixVibes U-Mix Control Pro 2
+
 Picture- & Info-Source:
 <http://www.mixvibes.com/content/products/u-mix-control-pro-2-pictures>
 
@@ -16,7 +18,10 @@ Turntables or any Audio-Source with RCA. This controller is perfect for
 DJs seeking a mobile, compact, sturdy DJing solution. It offers also a
 **changeable Cross-fader**, adjustable Cross-Fader Curve and individual
 Touch-Level-Sensors, which are normally only seen at triple-priced
-devices.
+devices.  
+The "U-Mix Control Pro" differs only in Cue-Button-Labels. The "U-Mix
+Control 2" (without "Pro" = internal Soundcard) also. Both should work
+fine with this MIDI-Mapping.
 
 -----
 
@@ -35,7 +40,8 @@ devices.
 
 -----
 
-**Actual Mapping: \[BETA\] v0.0.3.6**  
+### Actual Mapping: \[BETA\] v0.0.3.6\*\*
+
   
   
   

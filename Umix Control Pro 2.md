@@ -76,5 +76,5 @@ progress)</span>**
   - MIC-Level-Control (MIC is hardwired through master output)
   - Headphone-Level Control (Level-Adjustment in Mixxx and the
     Hardware-Nob are independent)
-  - Touch Level sensitivity 
+  - Touch Level sensitivity (only Hardware)
   - C.F. Curve (turn to fully left and change in Mixxx, if needed)

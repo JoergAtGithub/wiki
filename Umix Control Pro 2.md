@@ -43,8 +43,7 @@ should work fine with this MIDI-Mapping.
 ### Actual Mapping: \[ALPHA\] v0.0.3.7\*\*
 
   
-  
-  
+<http://mixxx.org/forums/viewtopic.php?f=7&t=4892>  
 **<span class="underline">Works perfectly with Mixxx as normally
 expected</span>**
 
@@ -60,6 +59,7 @@ progress)</span>**
   - JogWheels/Scratching
   - some Shift-Key-Funktions
   - Media-Knob, only the actual selected Media-Source is usable
+  - LEDs
 
 **<span class="underline">Currently not working</span>**
 

@@ -52,6 +52,12 @@ expected</span>**
     (Headphone)
   - Cue-, Play-, Sync-, Pitchbend-, HotCue-, Headphone, Load
     A/B-Buttions
+  - LEDs
+    1.  Clipping
+    2.  EQ-Kill
+    3.  CUE/PLAY/SYNC
+    4.  HotCUEs
+    5.  Headphone (A/B)
 
 **<span class="underline">Currently not fully working (work in
 progress)</span>**
@@ -60,6 +66,9 @@ progress)</span>**
   - some Shift-Key-Funktions
   - Media-Knob, only the actual selected Media-Source is usable
   - LEDs
+    1.  Jog
+    2.  Loc / SMP
+    3.  Bend
 
 **<span class="underline">Currently not working</span>**
 

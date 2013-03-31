@@ -40,7 +40,7 @@ should work fine with this MIDI-Mapping.
 
 -----
 
-### Actual Mapping: \[BETA\] v0.0.3.6\*\*
+### Actual Mapping: \[ALPHA\] v0.0.3.7\*\*
 
   
   

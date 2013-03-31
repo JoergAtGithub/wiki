@@ -24,13 +24,51 @@ devices.
 
 **Reviews in German:**  
 <http://www.amazona.de/2011/05/test-mixvibes-u-mix-control-pro/>  
-<http://www.delamar.de/test/mixvibes-u-mix-control-pro-testbericht/>
-
+<http://www.delamar.de/test/mixvibes-u-mix-control-pro-testbericht/>  
 <http://www.bonedo.de/artikel/einzelansicht/mixvibes-u-mix-control-pro.html>
 
-**Reviews in English: **
+**Reviews in English:**  
+<http://www.digitaldjtips.com/2011/04/mixvibes-u-mix-control-pro-cross-dj-1-5-review-video/>  
+<http://www.rebelstarreviews.com/dj-controllers/reviews/mixvibes-u-mix-control-pro-2/>  
+**Youtube:**  
+<http://www.youtube.com/watch?v=EkYBCoDb8Kk>
 
-<http://www.digitaldjtips.com/2011/04/mixvibes-u-mix-control-pro-cross-dj-1-5-review-video/>
-<http://www.rebelstarreviews.com/dj-controllers/reviews/mixvibes-u-mix-control-pro-2/>
+-----
 
-Youtube: <http://www.youtube.com/watch?v=EkYBCoDb8Kk>
+**Actual Mapping: \[BETA\] v0.0.3.6**  
+  
+  
+  
+**<span class="underline">Works perfectly with Mixxx as normally
+expected</span>**
+
+  - Cross- Volume- and Pitchbend-Slider
+  - Master, Gain- and EQ-Nobs incl. Kill-Switches, Cue/Master-Mix
+    (Headphone)
+  - Cue-, Play-, Sync-, Pitchbend-, HotCue-, Headphone, Load
+    A/B-Buttions
+
+**<span class="underline">Currently not fully working (work in
+progress)</span>**
+
+  - JogWheels/Scratching
+  - some Shift-Key-Funktions
+  - Media-Knob, only the actual selected Media-Source is usable
+
+**<span class="underline">Currently not working</span>**
+
+  - Sample-Deck-Management
+  - Loop-Knob & Loop-Setting
+
+**<span class="underline">Future & Wishlist</span>**
+
+  - FX-Section 
+  - Semi-4-Deck-Control 
+
+**<span class="underline">Not MIDI-mappable</span>**
+
+  - MIC-Level-Control (MIC is hardwired through master output)
+  - Headphone-Level Control (Level-Adjustment in Mixxx and the
+    Hardware-Nob are independent)
+  - Touch Level sensitivity 
+  - C.F. Curve (turn to fully left and change in Mixxx, if needed)

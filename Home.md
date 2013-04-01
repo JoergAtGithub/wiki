@@ -57,22 +57,22 @@ plans.
     Format](MIDI%20Controller%20Mapping%20File%20Format) - Read this to
     find out how to create or change a MIDI mapping file for your
     controller
-  - [MIDI Scripting](MIDI%20Scripting) - This explains how you can take
-    complete control over your MIDI controller and create advanced
+  - [Controller Scripting](midi_scripting) - This explains how you can
+    take complete control over your controller and create advanced
     behaviors including easy wheel scratching.
-
-<!-- end list -->
-
-  - [NOT YET IMPLEMENTED HID controller mapping file
-    format](hid_mapping_format) - Read this to find out how to create or
-    change a mapping file for your HID controller. (TENTATIVE - not yet
-    implemented.)
 
 <!-- end list -->
 
   - [MixxxControls](MixxxControls) - This is a list of Mixxx's controls
     you can manipulate with your controller via the mapping file and/or
     a script
+
+<!-- end list -->
+
+  - [NOT YET IMPLEMENTED HID controller mapping file
+    format](hid_mapping_format) - This is a brainstorming page for how
+    we might implement HID mapping. Right now, you must use scripting
+    (see above.)
 
 ## Developer Documentation
 

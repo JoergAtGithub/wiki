@@ -40,7 +40,7 @@ should work fine with this MIDI-Mapping.
 
 -----
 
-### Actual Mapping: \[ALPHA\] v0.0.3.7\*\*
+### Actual Mapping: V0.4.16-\[Beta\]
 
 <http://mixxx.org/forums/viewtopic.php?f=7&t=4892>  
   
@@ -52,6 +52,8 @@ expected</span>**
     (Headphone)
   - Cue-, Play-, Sync-, Pitchbend-, HotCue-, Headphone, Load
     A/B-Buttions
+  - JogWheel left side (Deck1)
+  - MediaKnob
   - LEDs
     1.  Clipping
     2.  EQ-Kill
@@ -62,13 +64,10 @@ expected</span>**
 **<span class="underline">Currently not fully working (work in
 progress)</span>**
 
-  - JogWheels/Scratching
-  - some Shift-Key-Funktions
-  - Media-Knob, only the actual selected Media-Source is usable
+  - JogWheel right side (Deck2)
   - LEDs
     1.  Jog
     2.  Loc / SMP
-    3.  Bend
 
 **<span class="underline">Currently not working</span>**
 

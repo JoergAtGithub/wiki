@@ -40,9 +40,9 @@ should work fine with this MIDI-Mapping.
 
 -----
 
-### Actual Mapping: V0.4.16-\[Beta\]
+### Actual Mapping: V1.0.0
 
-<http://mixxx.org/forums/viewtopic.php?f=7&t=4892>  
+<http://mixxx.org/forums/viewtopic.php?f=7&t=14892>  
   
 **<span class="underline">Works perfectly with Mixxx as normally
 expected</span>**
@@ -52,23 +52,25 @@ expected</span>**
     (Headphone)
   - Cue-, Play-, Sync-, Pitchbend-, HotCue-, Headphone, Load
     A/B-Buttions
-  - JogWheel left side (Deck1)
+  - JogWheels (incl. Scratch & Jog)
   - MediaKnob
   - LEDs
     1.  Clipping
     2.  EQ-Kill
-    3.  CUE/PLAY/SYNC
+    3.  CUE/PLAY(BPM)/SYNC
     4.  HotCUEs
     5.  Headphone (A/B)
     6.  Load (A/B) - 20 Seconds end of Track
+    7.  Jog (Keylock)
+    8.  Bend
+
+**<span class="underline">Special Funktions</span>**
+
+  - BPM-Tap: Press "Shift" + "Sync"
+  - Keylock: Press "Jog"
 
 **<span class="underline">Currently not fully working (work in
 progress)</span>**
-
-  - JogWheel right side (Deck2)
-  - LEDs
-    1.  Jog
-    2.  Loc / SMP
 
 **<span class="underline">Currently not working</span>**
 

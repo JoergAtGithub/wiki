@@ -60,6 +60,7 @@ expected</span>**
     3.  CUE/PLAY/SYNC
     4.  HotCUEs
     5.  Headphone (A/B)
+    6.  Load (A/B) - 20 Seconds end of Track
 
 **<span class="underline">Currently not fully working (work in
 progress)</span>**

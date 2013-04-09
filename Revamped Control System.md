@@ -220,9 +220,12 @@ The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
 ### Control Object Types
 
 Based on the Atomic ControlObjectBase we will introduce 4 Control Object
-Data Types: \* double (legacy) for higest accuracy \* uint32\_t, for
-fast access, and bool values \* uint8\_t\[4\], for routing Midi Messages
-\* QString
+Data Types:
+
+  - double (legacy) for higest accuracy 
+  - uint32\_t, for fast access, and bool values 
+  - uint8\_t\[4\], for routing Midi Messages 
+  - QString
 
 Those four types will have inside Mixx and independend API, to avoid
 overhead for type checking. A common interface is provided vor the xml

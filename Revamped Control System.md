@@ -204,8 +204,9 @@ about proxys or sync threads.
 
 Due to the template based implementation the performance should be
 slightly better then the QVariant version, but lacks in runtime type
-conversion. If this is really needed we may specialize one Control
-Object for QVarant as well.
+conversion. Unfortunatedly Qt does not support template Types for signal
+and Slots. If this is really needed we may specialize one Control Object
+for QVarant as well.
 
 The biggest instant performance boost will happen with the 64 bit
 version where all legacy double control objects are accessed atomic
@@ -215,6 +216,18 @@ objects for some values with the same benefit on 32 bit systems.
 The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
 
 <http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/atomic-co/view/head:/mixxx/src/controlobjectbase.h>
+
+### Control Object Types
+
+Based on the Atomic ControlObjectBase we will introduce 4 Control Object
+Data Types: \* double (legacy) for higest accuracy \* uint32\_t, for
+fast access, and bool values \* uint8\_t\[4\], for routing Midi Messages
+\* QString
+
+Those four types will have inside Mixx and independend API, to avoid
+overhead for type checking. A common interface is provided vor the xml
+mapping and the controller scripts to avoid that the controller mapping
+developer has to deal with types.
 
 ## Work Breakdown
 

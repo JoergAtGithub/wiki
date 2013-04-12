@@ -2172,7 +2172,7 @@ key
 
 The "Property" field can be any of:
 artist, title, album, genre, year, track_number, times_played, comment,
-bpm, bpmFormatted, duration, durationFormatted
+bpm, bpmFormatted, duration, durationFormatted, key (new in Mixxx 1.11)
 
 bpm will be the full precision number (i.e. 1.333333333) while
 bpmFormatted is to 3 decimal places (1.333),

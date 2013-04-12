@@ -178,10 +178,12 @@ it's either on (non-zero) or off (zero.)
 |  | \[Various\]                                                         |  | \_minus\_toggle<sup>6</sup>                                                                                                                                                     |  | default             |  | sets the value to -1.0 if the value was \> -1.0, and to 1.0 if the value was -1.0                                                                                                                                                                                                                 |  | e.g. "\[Master\] crossfader\_minus\_toggle" can tilt the crossfader from left to right                                                                                                                                                                                                                                                        |  |
 |  | \[Various\]                                                         |  | \_set\_zero<sup>6</sup>                                                                                                                                                         |  | default             |  | sets the value to 0.0                                                                                                                                                                                                                                                                             |  | e.g. "\[Master\] crossfader\_zero" put the crossfader in the middle again                                                                                                                                                                                                                                                                     |  |
 
-<sup>1</sup> introduced in Mixxx v1.8.0 <sup>2</sup> introduced in Mixxx
-v1.9.0 <sup>3</sup> changed in Mixxx v1.9.2 <sup>4</sup> introduced in
-Mixxx v1.10.0 <sup>5</sup> changed in Mixxx v1.10.0 <sup>6</sup>
-introduced in Mixxx v1.11.0
+<sup>1</sup> introduced in Mixxx v1.8.0  
+<sup>2</sup> introduced in Mixxx v1.9.0  
+<sup>3</sup> changed in Mixxx v1.9.2  
+<sup>4</sup> introduced in Mixxx v1.10.0  
+<sup>5</sup> changed in Mixxx v1.10.0  
+<sup>6</sup> introduced in Mixxx v1.11.0  
 
 This list contains all of the controls that are useful to MIDI mapping
 and skin developers.

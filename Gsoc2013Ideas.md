@@ -102,6 +102,25 @@ Some related bugs on Mixxx's bug tracker can be found here:
   - <https://bugs.launchpad.net/mixxx/+bug/669273>
   - <https://bugs.launchpad.net/mixxx/+bug/889898>
 
+## Keyboard / MIDI Mapping GUI
+
+In Mixxx 1.11.0 we removed the old MIDI mapping GUI as we re-wrote the
+controller subsystem to support HID devices. Now it's time to rewrite
+the mapping GUI\! This GUI should be modular enough to support an HID
+mapping GUI in the future. In previous versions of Mixxx the keyboard
+mapping was accomplished via a text file. This project will move
+keyboard mapping and processing into the new controller sub-system as a
+new type of controller and introduce a user-friendly GUI for editing
+keyboard presets and MIDI presets.
+
+We suggest you check out the MIDI mapping GUI present in Mixxx 1.10.0
+and think of ways to improve on it. For example, one very
+user-unfriendly aspect of it was that you had to know the ControlObject
+names of the controls you wanted to connect to a MIDI message. The
+point-and-click MIDI mapping wizard in 1.11.0 now includes a drop-down
+of all mappable controls. This is a much better way for users to decide
+on what control to map a message to.
+
 ## Enhanced Platform Integration
 
 Thanks in large part to Qt and a number of other cross-platform

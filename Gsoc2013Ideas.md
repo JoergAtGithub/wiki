@@ -64,54 +64,43 @@ great opportunity for a student to get involved with the Mixxx
 community. The student will also have the opportunity to borrow a MIDI
 controller from the development team for the duration of the project.
 
-## Library GUI Layout Redesign
+## Loop Recorder
 
-The current library GUI needs to be polished and needs to give room for
-new features.
+A Loop Recorder is a module that allows the DJ to record short segments
+of the audio output (decks, cue/headphones, main output, etc.) and then
+play-back and remix the recorded segment into their mix. This is a key
+element of many controllerist and scratch routines.
 
-Further links can be found here:
+This project will involve mostly architectural changes to the Mixxx
+mixing engine so digital signal processing experience is not a
+pre-requisite. In the process of writing up your proposal, we expect you
+to flesh out the different use cases you can think of for the loop
+recorder. Make sure to explore the Internet a little bit to find out
+more about what people use loop recorders for, specifically in a DJing
+context.
 
-<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+## Streaming Services Support (SoundCloud, Last.fm, YouTube, Spotify, Grooveshark, Jamendo, etc.)
 
-## Advanced Tagging
+There are many music discovery services which give users access to a
+broad library of music. Many of these services have APIs that allow
+3rd-party clients to access the services and stream music on the behalf
+of the user. We think these services will be a powerful tool for our
+users to explore how songs fit in their mixes.
 
-Currently Mixxx does not write metatdata back to the tracks. The tagging
-capability of mixxx is low compared to current media players. It is a
-good idea to catch up.
+Your application should include details of which streaming services you
+plan to integrate and how you will make use of their APIs (if they
+exist). In the very least, your proposal should define a modular system
+for plugging in new streaming services so that in the future all that is
+required to add more is defining how to search and stream from the API
+of the new service.
 
-## Non-Blocking Database Access
-
-Currently some database transactions are stalilng the GUI. This is
-because som database actions are preformed from the GUI thread. This
-project would make Mixxx more relyable by defining and implementing a
-new concept how to deal with database actions.
-
-## D-Bus Interface
-
-This Project aims to integrate Mixxx into the Linux desktop. Mixxx
-should be able to communicate with other Mediaplayers for exchanging
-playlists and it should be able to control Mixxx by the audio controls
-of the desktop environment.
-
-<http://specifications.freedesktop.org/mpris-spec/latest/>
-
-## Include Streaming services or webapps like Soundcloud/Last.fm/...
-
-There are a lot of good online sites available to organize your library
-or get new music, like soundcloud, last.fm and musicbrainz. Support for
-tags correction with musicbrainz was implemented in last years GSOC and
-will be integrated in 1.12. You can pick one service that you like and
-implement it in GSOC 2013
-
-Further Information can be found here:
+Some related bugs on Mixxx's bug tracker can be found here:
 
   - <https://code.launchpad.net/~max-linke/mixxx/library_features>
   - <https://bugs.launchpad.net/mixxx/+bug/938180>
   - <https://bugs.launchpad.net/mixxx/+bug/894652>
   - <https://bugs.launchpad.net/mixxx/+bug/669273>
   - <https://bugs.launchpad.net/mixxx/+bug/889898>
-  - <http://www.lastfm.at/api>
-  - <http://developers.soundcloud.com/>
 
 ## Enhanced Platform Integration
 
@@ -145,6 +134,38 @@ For ideas, check out:
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_7)
   - [Features new to Windows 8
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
+  - <https://codereview.qt-project.org/#change,48152>
+
+## Library GUI Layout Redesign
+
+The current library GUI needs to be polished and needs to give room for
+new features.
+
+Further links can be found here:
+
+<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+
+## Advanced Tagging
+
+Currently Mixxx does not write metatdata back to the tracks. The tagging
+capability of mixxx is low compared to current media players. It is a
+good idea to catch up.
+
+## Non-Blocking Database Access
+
+Currently some database transactions are stalilng the GUI. This is
+because som database actions are preformed from the GUI thread. This
+project would make Mixxx more relyable by defining and implementing a
+new concept how to deal with database actions.
+
+## D-Bus Interface
+
+This Project aims to integrate Mixxx into the Linux desktop. Mixxx
+should be able to communicate with other Mediaplayers for exchanging
+playlists and it should be able to control Mixxx by the audio controls
+of the desktop environment.
+
+<http://specifications.freedesktop.org/mpris-spec/latest/>
 
 ## Something Else\!
 

@@ -158,15 +158,6 @@ For ideas, check out:
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
   - <https://codereview.qt-project.org/#change,48152>
 
-## Library GUI Layout Redesign
-
-The current library GUI needs to be polished and needs to give room for
-new features.
-
-Further links can be found here:
-
-<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
-
 ## Advanced Tagging
 
 Currently Mixxx does not write metatdata back to the tracks. The tagging
@@ -180,14 +171,14 @@ because som database actions are preformed from the GUI thread. This
 project would make Mixxx more relyable by defining and implementing a
 new concept how to deal with database actions.
 
-## D-Bus Interface
+## Library GUI Layout Redesign
 
-This Project aims to integrate Mixxx into the Linux desktop. Mixxx
-should be able to communicate with other Mediaplayers for exchanging
-playlists and it should be able to control Mixxx by the audio controls
-of the desktop environment.
+The current library GUI needs to be polished and needs to give room for
+new features.
 
-<http://specifications.freedesktop.org/mpris-spec/latest/>
+Further links can be found here:
+
+<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
 
 ## Something Else\!
 

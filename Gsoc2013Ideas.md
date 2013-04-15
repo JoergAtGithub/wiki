@@ -2,7 +2,7 @@
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of
-Code 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013/).
+Code 2013](http://www.google-melange.com/gsoc/homepage/google/gsoc2013).
 Each of these projects represents something that we think would make a
 really big difference to our users and that we as a development team are
 really excited about. For advice on how to get in touch and how to

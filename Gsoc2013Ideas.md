@@ -166,6 +166,21 @@ For ideas, check out:
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
   - <https://codereview.qt-project.org/#change,48152>
 
+## Intelligent Track Suggestions / Smart Crates
+
+Sometimes it can be useful to have a song suggested based on the
+currently playing one or just search the library with a set of
+parameters (BPM/Year/Key/...). This could be used to build playlists and
+find some songs on the go. There has been some work on this last year
+already, you can find it in the launchpad repo. A lot of mediaplayers
+can already do that (smart playlists) based on BPM/Genre/year/Artist/...
+and use information saved in the file or on the Internet (see exaile as
+an example).
+
+Your proposal should include how this feature will be included in the
+GUI, if and how the tracks are ranked. What information you want to use
+to make the suggestions.
+
 ## Advanced Tagging
 
 Currently Mixxx does not write metatdata back to the tracks. The tagging

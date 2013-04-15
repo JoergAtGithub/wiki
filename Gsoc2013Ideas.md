@@ -79,6 +79,16 @@ recorder. Make sure to explore the Internet a little bit to find out
 more about what people use loop recorders for, specifically in a DJing
 context.
 
+Some related bugs on Mixxx's bug tracker can be found here:
+
+``` 
+  https://bugs.launchpad.net/mixxx/+bug/692926
+  https://bugs.launchpad.net/mixxx/+bug/774808
+  https://bugs.launchpad.net/mixxx/+bug/878549
+  https://bugs.launchpad.net/mixxx/+bug/408111
+  https://bugs.launchpad.net/mixxx/+bug/717841
+```
+
 ## Streaming Services Support (SoundCloud, Last.fm, YouTube, Spotify, Grooveshark, Jamendo, etc.)
 
 There are many music discovery services which give users access to a

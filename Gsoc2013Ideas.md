@@ -174,10 +174,19 @@ good idea to catch up.
 
 ## Non-Blocking Database Access
 
-Currently some database transactions are stalilng the GUI. This is
-because som database actions are preformed from the GUI thread. This
-project would make Mixxx more relyable by defining and implementing a
-new concept how to deal with database actions.
+Currently some database transactions are stalling the GUI. This is
+because some database queries are preformed from the GUI thread.
+
+This should be solved during the project by something like a standard
+non blocking interface to sqlite. All Database queries should be issued
+though this new interface.
+
+This project would make Mixxx more reliable by this new concept how to
+deal with database actions.
+
+Your proposal should include a draft proposal how do you will achieve
+the goal. You should have already have experience in parallel processing
+and sqlite.
 
 ## Library GUI Layout Redesign
 

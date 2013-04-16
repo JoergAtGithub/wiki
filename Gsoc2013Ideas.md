@@ -202,8 +202,8 @@ But since Mixxx is a DJ Software, we might go a step ahead and allow
 also editting other track related data in a fast and intuitive editor.
 
 You proposal should include a clear view about the track related Metada
-a DJ is focusing on. You should point out the different to other Tools,
-A GUI scribble is also helpfull.
+a DJ is focusing on. You should point out the different to other Tools
+and a GUI scribble is also helpfull.
 
 ## Non-Blocking Database Access
 

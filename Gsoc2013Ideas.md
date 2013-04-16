@@ -237,7 +237,7 @@ with Mixxx?
 
 The current code driving the library is hard to maintain because it was
 growing along with Mixxx. Here is a concept required, how we could make
-it again maintainable and expendable. You should have Qt experience and
+it again maintainable and extendable. You should have Qt experience and
 a clue about Qt's implementation of the MVC pattern.
 
 A great source for design hints is also the code from Qt based media

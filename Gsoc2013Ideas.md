@@ -109,6 +109,7 @@ Some related bugs on Mixxx's bug tracker can be found here:
   - <https://bugs.launchpad.net/mixxx/+bug/894652>
   - <https://bugs.launchpad.net/mixxx/+bug/669273>
   - <https://bugs.launchpad.net/mixxx/+bug/889898>
+  - <https://bugs.launchpad.net/mixxx/+bug/918222>
 
 ## Keyboard / MIDI Mapping GUI
 

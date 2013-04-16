@@ -181,6 +181,11 @@ Your proposal should include how this feature will be included in the
 GUI, if and how the tracks are ranked. What information you want to use
 to make the suggestions.
 
+Related Links:
+
+  - <https://code.launchpad.net/~mr-unwell2006/mixxx/track_selector_feature>
+  - <https://bugs.launchpad.net/mixxx/+bug/889898>
+
 ## Advanced Tagging
 
 Currently Mixxx does not write metatdata back to the tracks. The tagging

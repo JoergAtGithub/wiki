@@ -226,9 +226,8 @@ and sqlite.
 The current library GUI needs to be polished and needs to give room for
 new features.
 
-You find everything relevant collected:
-
-  - <https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+You find everything relevant collected here
+<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>.
 
 The current GUI proposals at
 <https://bugs.launchpad.net/mixxx/+bug/986704> are the result from our

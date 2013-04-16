@@ -189,9 +189,21 @@ Related Links:
 
 ## Advanced Tagging
 
+Finding the right track at the right time is a key for beeing a good DJ.
+While the "Intelligent Track Suggestions" focuses on the live GUI. This
+projekt aims to the Metadata of the track itselve and the GUI to edit
+them.
+
 Currently Mixxx does not write metatdata back to the tracks. The tagging
 capability of mixxx is low compared to current media players. It is a
 good idea to catch up.
+
+But since Mixxx is a DJ Software, we might go a step ahead and allow
+also editting other track related data in a fast and intuitive editor.
+
+You proposal should include a clear view about the track related Metada
+a DJ is focusing on. You should point out the different to other Tools,
+A GUI scribble is also helpfull.
 
 ## Non-Blocking Database Access
 

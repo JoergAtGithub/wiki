@@ -226,9 +226,23 @@ and sqlite.
 The current library GUI needs to be polished and needs to give room for
 new features.
 
-Further links can be found here:
+You find everything relevant collected:
 
-<https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+  - <https://blueprints.launchpad.net/mixxx/+spec/three-column-library-layout>
+
+The current GUI proposals at
+<https://bugs.launchpad.net/mixxx/+bug/986704> are the result from our
+last design work. It should give a clue what direction we will go. But
+please make them to your own. What do we need most form your experience
+with Mixxx?
+
+The current code driving the library is hard to maintain because it was
+growing along with Mixxx. Here is a concept required, how we could make
+it again maintainable and expendable. You should have Qt experience and
+a clue about Qt's implementation of the MVC pattern.
+
+A great source for design hints is also the code from Qt based media
+players e.g Clementine or Tomahawk,
 
 ## Something Else\!
 

@@ -1,31 +1,36 @@
-Just some quick notes on how to get the eclipse IDE together with its
-bazaar plugin and scons plugin working.
+Just some notes on how to setup Eclipse IDE for developing on Mixxx.
+
+# setup mixxx source
+
+First you have to setup the Mixxx source and manage to compile it on
+command line, as outlined here:
+[compiling\_on\_linux](compiling_on_linux) or
+[compiling\_on\_os\_x](compiling_on_os_x) or
+[compiling\_on\_windows](compiling_on_windows)
 
 # Install eclipse (packages or source)
 
-Of course, install eclipse and CDT. Either simply from their homepage or
+Of course, install Eclipse and CDT. Either simply from their homepage or
 use the packages for your operating system.
 
-Ubuntu Packages to Install would be:
+It is the best to install a ready to use setup:
+
+  - <http://www.eclipse.org/downloads/>
+
+Or you might install the CDT into your exiting eclipse
+
+  - <http://www.eclipse.org/cdt/downloads.php>
+
+Ubuntu Packages to Install (but possible outdated) would be:
 
   - eclipse-cdt
   - eclipse-pydev
 
-for Unit testing:
+# Optional Eclipse plugins
 
-  - libcppunit-dev
-
-# setup mixxx source
-
-If not done already you need to have a valid source directory of mixxx,
-as outlined here: [compiling\_on\_linux](compiling_on_linux) or
-[compiling\_on\_os\_x](compiling_on_os_x) or
-[compiling\_on\_windows](compiling_on_windows)
-
-# Eclipse plugins to install
-
-  - scons plugin: <http://sconsolidator.com> and ***follow*** the
-    instructions there on how to install and configure
+  - scons plugin: 
+  - <http://sconsolidator.com> and ***follow*** the instructions there
+    on how to install and configure
   - From eclipse menu, you can use File-\>Import-\>c/c++-\>new scons
     project from existing source 
   - if you run into problems, please see:

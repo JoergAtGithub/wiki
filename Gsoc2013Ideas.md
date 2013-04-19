@@ -243,6 +243,10 @@ a clue about Qt's implementation of the MVC pattern.
 A great source for design hints is also the code from Qt based media
 players e.g Clementine or Tomahawk,
 
+The difficulty of this project is focus on the daily DJ Us cases, but
+allow also crazy new features, without clutter the GUI. Maybe you should
+tell the story how the GUI will be used.
+
 ## Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

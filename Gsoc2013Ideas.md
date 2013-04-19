@@ -37,6 +37,12 @@ think may be relevant.
 Since this project is small in scope, we expect that you will have
 plenty of time to polish it and make it shine.
 
+Links to Launchpad bugs:
+
+  - <https://bugs.launchpad.net/mixxx/+bug/661459>
+  - <https://bugs.launchpad.net/mixxx/+bug/890421>
+  - <https://bugs.launchpad.net/mixxx/+bug/1015894>
+
 ## Plug and Play MIDI Mode / Community MIDI Mappings
 
 Mixxx currently supports a wide-range of hardware MIDI controllers that

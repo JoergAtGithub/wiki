@@ -206,10 +206,14 @@ good idea to catch up.
 
 But since Mixxx is a DJ Software, we might go a step ahead and allow
 also editting other track related data in a fast and intuitive editor.
+This is much more than Artist, Album and Bmp.
 
 You proposal should include a clear view about the track related Metada
 a DJ is focusing on. You should point out the different to other Tools
 and a GUI scribble is also helpfull.
+
+For me, the main focus of this project and the place for your ideas the
+user experience while editing meta date.
 
 ## Non-Blocking Database Access
 

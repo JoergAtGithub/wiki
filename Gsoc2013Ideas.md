@@ -173,20 +173,22 @@ For ideas, check out:
     (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
   - <https://codereview.qt-project.org/#change,48152>
 
-## Intelligent Track Suggestions / Smart Crates
+## Intelligent Track Suggestions
 
-Sometimes it can be useful to have a song suggested based on the
-currently playing one or just search the library with a set of
-parameters (BPM/Year/Key/...). This could be used to build playlists and
-find some songs on the go. There has been some work on this last year
-already, you can find it in the launchpad repo. A lot of mediaplayers
-can already do that (smart playlists) based on BPM/Genre/year/Artist/...
-and use information saved in the file or on the Internet (see exaile as
-an example).
+The single most important use-case of the Mixxx library is to help the
+DJ select the next track to play. Sadly, today Mixxx doesn't do a great
+job of helping the DJ in this capacity -- Mixxx provides her with fast
+ways to search and sort through her music library but it could do much
+more.
 
-Your proposal should include how this feature will be included in the
-GUI, if and how the tracks are ranked. What information you want to use
-to make the suggestions.
+The goal of this project is to build a new feature into the Mixxx
+library that ranks tracks by how well they match the current mix. This
+ideally helps the DJ narrow down the candidates to a short list of
+tracks to pick from.
+
+Your proposal should include specific details of how your feature will
+work (for example, what signals you will use for ranking tracks, how the
+user interface to the feature will look, etc.).
 
 Related Links:
 

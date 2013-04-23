@@ -93,7 +93,7 @@ Some related bugs on Mixxx's bug tracker can be found here:
   - <https://bugs.launchpad.net/mixxx/+bug/408111>
   - <https://bugs.launchpad.net/mixxx/+bug/717841>
 
-## Streaming Services Support (SoundCloud, Last.fm, YouTube, Spotify, Grooveshark, Jamendo, etc.)
+## Streaming Services Support (SoundCloud, Last.fm, YouTube, Spotify, Grooveshark, etc.)
 
 There are many music discovery services which give users access to a
 broad library of music. Many of these services have APIs that allow

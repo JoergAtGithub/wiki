@@ -211,14 +211,14 @@ Your proposal should include a clear description of the shortcomings of
 today's editor and how you plan to improve it. If appropriate, please
 include mockups and diagrams illustrating your plans.
 
-Some important questions to consider: \* What information does Mixxx
-store about tracks (both DJ-related and non-DJ-related)?
+Some important questions to consider:
 
-1.  For example: Crates, hotcues, loops, album, artist, etc.
-
-\* What is the simplest user interface to allow the DJ to edit this
-metadata? \* How will you handle single-track editing versus bulk
-editing?
+  - What information does Mixxx store about tracks (both DJ-related and
+    non-DJ-related)?
+  - For example: Crates, hotcues, loops, album, artist, etc.
+  - What is the simplest user interface to allow the DJ to edit this
+    metadata?
+  - How will you handle single-track editing versus bulk editing?
 
 ## Non-Blocking Database Access
 

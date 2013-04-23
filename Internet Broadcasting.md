@@ -33,7 +33,8 @@ mp3. See the next section for details.
 
 By default, Mixxx broadcasts artist and title information to your
 listeners. You can disable this feature by selecting "enable custom
-metadata".
+metadata". For technical reasons, broadcasting artist and title
+information is not supported for OGG streams.
 
 ## MP3 streaming
 

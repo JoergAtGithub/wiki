@@ -7,7 +7,7 @@ needed to establish a server connection. To enable live broadcasting you
 can either use the options menu or the checkbox within the preference
 dialogue.
 
-[[/media/shoutcast_prefs.png|]]
+[[/media/mixxx-111-preferences-livebroadcasting.png|]]
 
 For an Icecast server, you'll need to provide the mount point (of the
 form "/mount"). You can enter the host as either a host name or an IP

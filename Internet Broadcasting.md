@@ -10,11 +10,15 @@ dialogue.
 [[/media/shoutcast_prefs.png|]]
 
 For an Icecast server, you'll need to provide the mount point (of the
-form "/mount"). You can enter the host either as an IP address or as a
-host name. In the "login" field, the default is to enter "source" –
+form "/mount"). You can enter the host as either a host name or an IP
+address. In the "login" field, the default is to enter "source" –
 without this, you will not connect successfully to the server. The
 password will be provided by your streaming server provider, unless you
 run your own radio server.
+
+Do *not* enter a URL as the host\! "<http://example.com:8000>" does not
+work. Use "example.com" in the host field and "8000" in the port field
+instead.
 
 If you connect to an Shoutcast server the default login name is "admin".
 It is **not** necessary to specify a mount point. The password will be

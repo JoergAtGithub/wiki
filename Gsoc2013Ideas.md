@@ -193,27 +193,32 @@ Related Links:
   - <https://code.launchpad.net/~mr-unwell2006/mixxx/track_selector_feature>
   - <https://bugs.launchpad.net/mixxx/+bug/889898>
 
-## Advanced Tagging
+## Advanced Track Management / Organization Tools
 
-Finding the right track at the right time is a key for beeing a good DJ.
-While the "Intelligent Track Suggestions" focuses on the live GUI. This
-projekt aims to the Metadata of the track itselve and the GUI to edit
-them.
+Today, Mixxx provides DJs with limited tools for organizing their
+library. Mixxx reads file metadata and stores track information in its
+SQLite-based library. DJs are able to sort and search through their
+music and organize the tracks into Crates and Playlists.
 
-Currently Mixxx does not write metatdata back to the tracks. The tagging
-capability of mixxx is low compared to current media players. It is a
-good idea to catch up.
+Editing of metadata can be done inline in the library and with the Track
+Properties editor. These are fine for simple edits, but they should
+allow the DJ to do much more.
 
-But since Mixxx is a DJ Software, we might go a step ahead and allow
-also editting other track related data in a fast and intuitive editor.
-This is much more than Artist, Album and Bmp.
+This project aims to massively improve/replace the track metadata editor
+built into Mixxx and make single or bulk editing of tracks much easier.
 
-You proposal should include a clear view about the track related Metada
-a DJ is focusing on. You should point out the different to other Tools
-and a GUI scribble is also helpfull.
+Your proposal should include a clear description of the shortcomings of
+today's editor and how you plan to improve it. If appropriate, please
+include mockups and diagrams illustrating your plans.
 
-For me, the main focus of this project and the place for your ideas the
-user experience while editing meta date.
+Some important questions to consider: \* What information does Mixxx
+store about tracks (both DJ-related and non-DJ-related)?
+
+1.  For example: Crates, hotcues, loops, album, artist, etc.
+
+\* What is the simplest user interface to allow the DJ to edit this
+metadata? \* How will you handle single-track editing versus bulk
+editing?
 
 ## Non-Blocking Database Access
 

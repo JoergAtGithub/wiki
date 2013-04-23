@@ -34,8 +34,12 @@ metadata".
 ## MP3 streaming
 
 Dependent on the server technology you can stream in OGG and MP3 format.
-However, MP3 streams are not supported out of the box for legal reasons.
-Here is how to install the needed software for OSs Mixxx supports.
+Due to licensing restrictions, MP3 streaming is disabled by default in
+Mixxx. In order to enable MP3 streaming you must install the *LAME* MP3
+codec. The following section explains how to do that.
+
+If you have activated MP3 streaming support, you'll be also able to
+record your mixes in MP3 format.
 
 ### Linux
 

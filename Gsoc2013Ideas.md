@@ -93,20 +93,25 @@ Some related bugs on Mixxx's bug tracker can be found here:
   - <https://bugs.launchpad.net/mixxx/+bug/408111>
   - <https://bugs.launchpad.net/mixxx/+bug/717841>
 
-## Streaming Services Support (SoundCloud, Last.fm, YouTube, Spotify, Grooveshark, etc.)
+## Cloud Services Support (SoundCloud, Last.fm, Spotify, etc.)
 
 There are many music discovery services which give users access to a
 broad library of music. Many of these services have APIs that allow
-3rd-party clients to access the services and stream music on the behalf
-of the user. We think these services will be a powerful tool for our
-users to explore how songs fit in their mixes.
+3rd-party clients to access the services and download music on the
+behalf of the user. We think these services will be a powerful tool for
+our users to explore how songs fit in their mixes.
 
 Your application should include details of which streaming services you
 plan to integrate and how you will make use of their APIs (if they
 exist). In the very least, your proposal should define a modular system
 for plugging in new streaming services so that in the future all that is
-required to add more is defining how to search and stream from the API
-of the new service.
+required to add more is defining how to search and download from the API
+of the new service. Also consider what will be most useful to a DJ and
+contact us on our mailing lists with your ideas.
+
+It is enough to download the song as this avoids technical problems and
+we can always assure that their are not hicups during playing due to a
+bad internet connection.
 
 Some related bugs on Mixxx's bug tracker can be found here:
 

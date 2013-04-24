@@ -93,25 +93,34 @@ Some related bugs on Mixxx's bug tracker can be found here:
   - <https://bugs.launchpad.net/mixxx/+bug/408111>
   - <https://bugs.launchpad.net/mixxx/+bug/717841>
 
-## Cloud Services Support (SoundCloud, Last.fm, Spotify, etc.)
+## Cloud Library Support (SoundCloud, Spotify, etc.)
 
 There are many music discovery services which give users access to a
 broad library of music. Many of these services have APIs that allow
-3rd-party clients to access the services and download music on the
-behalf of the user. We think these services will be a powerful tool for
-our users to explore how songs fit in their mixes.
+3rd-party clients to access the library and download music on the behalf
+of the user. We think these services will be a powerful tool for our
+users to explore how songs fit in their mixes.
 
 Your application should include details of which streaming services you
-plan to integrate and how you will make use of their APIs (if they
-exist). In the very least, your proposal should define a modular system
-for plugging in new streaming services so that in the future all that is
+plan to integrate and how you will make use of their download/streaming
+APIs (if they exist). We are not looking for dedicated integration of a
+service (for example, we aren't looking for a SoundCloud or YouTube
+section of the Mixxx library) -- rather we envision a generic "Internet
+Tracks" section of the library where users can search across all of
+their enabled cloud library services to find and play tracks.
+
+In the very least, your proposal should define a modular system for
+plugging in new streaming services so that in the future all that is
 required to add more is defining how to search and download from the API
 of the new service. Also consider what will be most useful to a DJ and
 contact us on our mailing lists with your ideas.
 
-It is enough to download the song as this avoids technical problems and
-we can always assure that their are not hicups during playing due to a
-bad internet connection.
+Note, that due to technical restrictions streaming music in the Mixxx
+engine is very difficult. Your proposal should leave room in the future
+for streaming but in the implementation you write it should support
+download of the music to a temporary storage location for playing. This
+has the added bonus that it ensures there are not hiccups in the audio
+due to a bad Internet connection.
 
 Some related bugs on Mixxx's bug tracker can be found here:
 

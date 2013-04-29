@@ -13,9 +13,9 @@ The latest official preset (mapping and script) file are in the 1.11
 release branch and can be downloaded from here:
 
   - [Reloop Terminal
-    Mix 2-4.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.m-20120608214706-htezt5mx6gyjoiav-1/Reloop%20TerminalMix4.midi.xml)
+    Mix 2-4.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.m-20120608214706-htezt5mx6gyjoiav-1/Reloop%20Terminal%20Mix%202-4.midi.xml)
   - [Reloop Terminal
-    Mix 2-4.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.j-20120608214709-j23k072oly9sgz8s-1/Reloop%20TerminalMix4.js)
+    Mix 2-4.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.j-20120608214709-j23k072oly9sgz8s-1/Reloop%20Terminal%20Mix%202-4.js)
 
 # User Guide
 

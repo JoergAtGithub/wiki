@@ -116,9 +116,8 @@ virtual deck.*
     sound card. (This is not mapped in Mixxx.)*
   - ***Phones** knob - Adjusts the headphone output volume of the
     internal sound card. (This is not mapped in Mixxx.)*
-  - ***Cue mix** knob - Adjusts in hardware how much of the headphone
-    bus vs the master output you hear in the headphones. (This is not
-    mapped in Mixxx.)*
+  - **Cue mix** knob - Adjusts in hardware how much of the headphone bus
+    vs the master output you hear in the headphones.
   - **Sampler volume** knob - Adjusts the volume of all of the samplers
     at once.
   - ***Crates** button - Does nothing at the moment. (Mixxx's library

@@ -48,14 +48,16 @@ by Mixxx:
 
 **Timecode Support**
 
-|                    |                |
-| ------------------ | -------------- |
-| Vinyl              | Responsiveness |
-| Serato CV02        | Very high      |
-| Serato CD          | Very high      |
-| Traktor Scratch    | Very high      |
-| MixVibes DVS CD    | Untested       |
-| MixVibes DVS Vinyl | Does not work  |
+|                                    |                |
+| ---------------------------------- | -------------- |
+| Vinyl                              | Responsiveness |
+| Serato CV02 Vinyl                  | Very high      |
+| Serato CV02 CD                     | Very high      |
+| Traktor Scratch MK1 Vinyl          | Very high      |
+| Traktor Scratch MK2 Vinyl          | Not supported  |
+| MixVibes DVS V2 Vinyl <sup>1</sup> | Very high      |
+
+<sup>1</sup> introduced in Mixxx v1.11.0  
 
 At the present time, **Serato records are the ones you should purchase**
 if you're looking to buy vinyl. If you want to use CDs, you can

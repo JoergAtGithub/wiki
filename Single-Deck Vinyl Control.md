@@ -2,8 +2,7 @@
 
 ## Summary and Rationale
 
-**Status**: This feature is implemented in
-lp:\~ywwg/mixxx/features\_xwax2.
+**Status**: This feature is implemented in Mixxx v1.11.
 
 Allow both players to be controlled via a single turntable with vinyl
 control. At least one commercial DJ application offers this feature, and

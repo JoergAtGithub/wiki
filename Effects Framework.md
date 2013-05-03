@@ -457,4 +457,23 @@ effects script function. This would be the same with midi controls.
 To sum up: to have the horsepower of scripting with effects in addition
 to this other great ideas you had.
 
+### DJ Barney's ideas:
+
+I wonder if the industry standard way of doing this has been considered
+?
+
+<http://www.ehow.com/about_6323793_fx-send-control_.html>
+
+Mixxx can have built in FX, as of course many hardware DJ mixers already
+have. Those hardware mixers often also have FX Send and Receive. Could
+Mixxx have that tied into this feature as well ? That may also allow
+more complex set-ups like scripting using possibly an OSC/MIDI routing
+to external FX units (hardware and software one's). Handing off other
+features to external units may allow better focus on the built in FX
+(Mixxx custom filters, plus plugins).
+
+Pre and Post fader is also important as that determines if the FX just
+cuts off when turned off, or if it slowly fades away when turned off -
+as an Echo or Reverb filter will do.
+
 \#\#\#\#

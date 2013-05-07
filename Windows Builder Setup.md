@@ -23,7 +23,7 @@ Use version 3.2.2 with VS2008 build files.
 
 chromaprint 0.7
 
-    cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DWITH_FFTW3=ON -DFFTW3_DIR:STRING="%MIXXX_LIB%" -DCMAKE_INSTALL_PREFIX:STRING="%MIXXX_LIB%"
+    cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DWITH_FFTW3=ON -DFFTW3_DIR:STRING=%MIXXX_LIB% -DCMAKE_INSTALL_PREFIX:STRING=%MIXXX_LIB%
     nmake /f Makefile
     COPY .\src\chromaprint.lib %MIXXX_LIB%
     COPY .\src\chromaprint_p.lib %MIXXX_LIB%

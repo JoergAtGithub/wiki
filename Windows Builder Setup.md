@@ -27,3 +27,4 @@ chromaprint 0.7
     nmake /f Makefile
     COPY .\src\chromaprint.lib %MIXXX_LIB%
     COPY .\src\chromaprint_p.lib %MIXXX_LIB%
+    COPY .\src\chromaprint.h %MIXXX_LIB%

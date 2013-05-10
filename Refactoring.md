@@ -1,7 +1,8 @@
 # Refactoring Tasks
 
 Here is where `rryan` keeps track of (typically small) refactoring
-tasks. This is doomed to become out-dated but oh well.
+tasks. This is doomed to become out-dated but oh well. As of 5/2013,
+this is up to date.
 
   - Move keyboard processing into controller subsystem.
   - Timestamp all MIDI/HID messages

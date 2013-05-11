@@ -17,3 +17,4 @@ this is up to date.
   - Make menubar nicer, get it out of MixxxApp
   - If mix output is not used, don't calculate it in EngineMaster.
   - move scanning-related code out of TrackCollection
+  - EngineObject API const-ness

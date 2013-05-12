@@ -6,7 +6,6 @@ this is up to date.
 
   - Move keyboard processing into controller subsystem.
   - Timestamp all MIDI/HID messages
-  - Engine sidechain -- FIFO
   - SoundSource API -\> floats (breaks plugin ABI)
   - SearchQuery threading mess
   - SearchQueryParser -- SQL vs. internal

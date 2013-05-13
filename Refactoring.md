@@ -12,7 +12,6 @@ this is up to date.
   - \#define all preference config keys
   - Header file includes cleanup 
   - Make menubar nicer, get it and all action handlers out of MixxxApp
-  - Move credits / about menu out of MixxxApp.
   - If mix output is not used, don't calculate it in EngineMaster.
   - move scanning-related code out of TrackCollection
   - EngineObject API const-ness

@@ -225,12 +225,12 @@ Data Types:
   - uint8\_t\[4\], for lossless routing Midi Messages 
   - QString
 
-Those four types will have inside Mixx and independend API, to avoid
-overhead for type checking. A common interface is provided vor the xml
-mapping and the controller scripts to avoid that the controller mapping
-developer has to deal with types.
+These four types will have an independent API inside Mixxx to avoid
+overhead for type checking. A common interface would be provided for XML
+mappings and controller scripts to prevent controller preset developers
+having to deal with types.
 
-This can be done by using the benefits of QScriptValue
+This can be done thanks to QScriptValue
 <http://doc.qt.digia.com/4.7/qscriptvalue.html>
 
 ## Work Breakdown

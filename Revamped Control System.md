@@ -224,13 +224,16 @@ Data Types:
 
   - double (legacy) for higest accuracy 
   - uint32\_t, for fast access, and bool values 
-  - uint8\_t\[4\], for routing Midi Messages 
+  - uint8\_t\[4\], for lossless routing Midi Messages 
   - QString
 
 Those four types will have inside Mixx and independend API, to avoid
 overhead for type checking. A common interface is provided vor the xml
 mapping and the controller scripts to avoid that the controller mapping
 developer has to deal with types.
+
+This can be done by using the benefits of QScriptValue
+<http://doc.qt.digia.com/4.7/qscriptvalue.html>
 
 ## Work Breakdown
 

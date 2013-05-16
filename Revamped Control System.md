@@ -49,30 +49,30 @@ variable in the code is protected in this manner.
 
 The original Mixxx control system, the ControlObject system, balances
 the above concerns with a hybrid approach. This amounts to a two-tier
-system. There are ControlObjects, and ControlObject proxies.
-ControlObjects, which guard a double variable, supports two main
-methods: set() and get(). The double value in the ControlObject is not
-guarded by a lock at all. The intent is that each value that is in the
-control system has an 'owner'. The owner is the section of code that
-initially created the ControlObject. The owner of the ControlObject is
+system. There are ControlObjects and ControlObject proxies.
+ControlObjects, which guard a double variable, support two main methods:
+set() and get(). The double value in the ControlObject is not guarded by
+a lock at all. The intent is that each value that is in the control
+system has an 'owner'. The owner is the section of code that initially
+created a particular ControlObject. The owner of the ControlObject is
 the only code which is allowed to use the raw ControlObject itself. This
 allows raw (i.e. high-speed) access to the control variable. A
 ControlObject proxy, (e.g. ControlObjectThread and
 ControlObjectThreadMain) represents a non-owner section of the code
-which wishes to be retrieve the control value, change the control value,
-and be updated of changes to the control value. The ControlObject and
-its proxies operate asynchronously. Periodically, there is a
-synchronization step which occurs. All updates to the control object and
-all updates to the proxy are queued and during the synchronization step,
-all the latest value of the control object is broadcasted to each proxy,
-and the changes from the proxy are set on the ControlObject. This
-synchronization step is currently run at the beginning of the audio
-callback. The idea is that this is a time when no engine code can
-possibly be running. However, there is nothing preventing ControlObjects
-in other sections of Mixxx from being vulnerable to race conditions. The
-reason this is not a problem in practice is that ControlObject's are
-primarily created within the engine. In the future, this may not remain
-true as more and more features are added to Mixxx.
+which wishes to retrieve, change, and/or be notified of changes to the
+control value. The ControlObject and its proxies operate asynchronously.
+Periodically, there is a synchronization step which occurs. All updates
+to a ControlObject and to its proxies are queued and during the
+synchronization step, the latest values of all control objects are
+broadcast to their proxies, and the changes from the proxies are set on
+the respective ControlObjects. This synchronization step is currently
+run at the beginning of the audio callback. The idea is that this is a
+time when no engine code can possibly be running. However, there is
+nothing preventing ControlObjects in other sections of Mixxx from being
+vulnerable to race conditions. The reason this is not a problem in
+practice is that ControlObjects are primarily created within the engine.
+In the future, this may not remain true as more and more features are
+added to Mixxx.
 
 ### Implementation Performance
 

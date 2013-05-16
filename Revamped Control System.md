@@ -221,7 +221,7 @@ Based on the Atomic ControlObjectBase we will introduce 4 Control Object
 Data Types:
 
   - double (legacy) for higest accuracy 
-  - uint32\_t, for fast access, and bool values 
+  - int32\_t, for fast access, and bool values 
   - uint8\_t\[4\], for lossless routing Midi Messages 
   - QString
 

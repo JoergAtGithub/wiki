@@ -18,3 +18,4 @@ this is up to date.
   - Preferences dialogs need a huge overhaul.
   - Preferences depend trivially on PlayerManager. Also DlgPrefControls
     doesn't work with changeable \#s of decks or preview decks.
+  - `PlayerManager` bindToLibrary is not changing-n-deck capable.

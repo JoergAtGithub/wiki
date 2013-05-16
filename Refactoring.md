@@ -16,3 +16,5 @@ this is up to date.
   - move scanning-related code out of TrackCollection
   - EngineObject API const-ness
   - Preferences dialogs need a huge overhaul.
+  - Preferences depend trivially on PlayerManager. Also DlgPrefControls
+    doesn't work with changeable \#s of decks or preview decks.

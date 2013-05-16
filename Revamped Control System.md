@@ -21,17 +21,17 @@ for thread-safe value communication across the Mixxx codebase.
 ## Motivation and Design Issues
 
 When designing pieces of Mixxx, every value that needs to be shared
-across threads must be guarded by locks in order to prevent race
-conditions that can lead to invalid data, nasty race conditions, and
-mysterious segfaults. Mixxx receives contributions from developers
-around the world, many of which do not have the time to invest in fully
-understanding the Mixxx codebase, including which thread runs in which
-context. For any given piece of code, a new developer may not be able to
-easily determine the threading model, and which threads run in which
-sections of code. Furthermore, if a given value in the Mixxx code needs
-to be shared across threads, the most common pattern for making it
-thread-safe is to make a per-variable lock, and guarding every use of
-the variable with the lock.
+across threads must be guarded by locks in order to prevent nasty race
+conditions that can lead to invalid data and mysterious segfaults. Mixxx
+receives contributions from developers around the world, many of which
+do not have the time to invest in fully understanding the Mixxx
+codebase, including which thread runs in which context. For any given
+piece of code, a new developer may not be able to easily determine the
+threading model, and which threads run in which sections of code.
+Furthermore, if a given value in the Mixxx code needs to be shared
+across threads, the most common pattern for making it thread-safe is to
+make a per-variable lock, and guarding every use of the variable with
+the lock.
 
 A Control system resolves these two issues by automatically protecting
 every use of a variable with a lock, and providing a 'worry-free'

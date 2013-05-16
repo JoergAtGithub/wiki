@@ -189,29 +189,27 @@ methods for double, including add/sub methods that are currently
 provided on ControlObjects. ControlBoolean ControlInteger, and
 ControlString could be similar.
 
-### Template Based Control System with atomic typ support
+### Template Based Control System with atomic type support
 
-This system would be a control system taking the advantage of atomic
-types into account. There a two base templates, one for types with
-sizeof(T) \<= sizeof(void\*) which can be read and write natively atomic
-by the cpu and one with a ring buffer that guarantees lock free thread
-save reads and writes for larger types. Unfortunately Qt does not
-provide a way implement signals and slots via a template class, so we
-have to subclass a ControlObject for each desired data type.
+This system would take advantage of hardware atomicity. There would be
+two base templates: one for types with `sizeof(T) <= sizeof(void*)`
+which can be read and written atomically by the CPU natively and one
+with a ring buffer that guarantees lock free thread-safe reads and
+writes for larger types. Unfortunately Qt does not provide a way to
+implement signals and slots via a template class, so we have to
+sub-class the base control class for each desired data type. But these
+sub-classes could then be used directly from any thread without worrying
+about proxies or sync threads.
 
-These new ControlObjects can now used from any thread without worrying
-about proxys or sync threads.
+Due to the template-based implementation the performance should be
+slightly better than the QVariant version, but it lacks run-time type
+conversion. If this is really needed, we could create a sub-class that
+handles QVariants.
 
-Due to the template based implementation the performance should be
-slightly better then the QVariant version, but lacks in runtime type
-conversion. Unfortunatedly Qt does not support template Types for signal
-and Slots. If this is really needed we may specialize one Control Object
-for QVarant as well.
-
-The biggest instant performance boost will happen with the 64 bit
-version where all legacy double control objects are accessed atomic
-without any loss of performance. Later we may introduce integer control
-objects for some values with the same benefit on 32 bit systems.
+The biggest performance boost will happen with 64-bit builds where all
+legacy double-precision ControlObjects would be accessed atomically.
+Later we can introduce integer control objects for appropriate values
+that would provide the same benefit on 32-bit systems.
 
 The first prototype can be found in lp:\~mixxxdevelopers/mixxx/atomic-co
 

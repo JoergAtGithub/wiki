@@ -604,7 +604,7 @@ cd ..
 
     export ARCH_FLAGS="-arch i386 -arch x86_64"
     source ../environment.sh
-    
+    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
     make
     sudo make install
 
@@ -613,8 +613,8 @@ cd ..
 ``` 
 export VERSION=chromaprint-0.7
 export ARCHIVE=$VERSION.tar.gz
-export DYLIB=taglib/libtag.1.7.2.dylib
-export STATICLIB=taglib/libtag.1.7.2.dylib
+export DYLIB=src/libchromaprint.0.2.0.dylib
+export STATICLIB=src/libchromaprint_p.a
 
 for ARCH in i386 x86_64 ppc
 do
@@ -622,8 +622,7 @@ do
   tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
   cd $VERSION-$ARCH
   source ../environment.sh $ARCH
-  # To build static, use -DENABLE_STATIC=ON but this turns off building a shared library.
-  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE
+  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
   make
   cd ..
 done

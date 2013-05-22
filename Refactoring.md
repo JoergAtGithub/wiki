@@ -21,4 +21,4 @@ this is up to date.
   - SoundManager multiple sound cards FIFO buffer for outputs instead of
     mutex
   - Engine deal with floats -1/1. get rid conversion on output in
-    interleaving.
+    interleaving (would potentially speed up interleaving)

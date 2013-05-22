@@ -22,3 +22,4 @@ this is up to date.
     mutex
   - Engine deal with floats -1/1. get rid conversion on output in
     interleaving (would potentially speed up interleaving)
+  - vinyl control gain into vinyl control processor

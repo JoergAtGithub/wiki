@@ -632,8 +632,7 @@ export ARCH=i386
 cd $VERSION-$ARCH
 source ../environment.sh $ARCH
 lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
-# Taglib's build system only builds either a shared library or a dynamic one. We use the dynamic one for now.
-#lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
+lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
 sudo make install
 cd ..
 

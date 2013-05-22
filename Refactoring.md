@@ -20,3 +20,5 @@ this is up to date.
   - `PlayerManager` bindToLibrary is not changing-n-deck capable.
   - SoundManager multiple sound cards FIFO buffer for outputs instead of
     mutex
+  - Engine deal with floats -1/1. get rid conversion on output in
+    interleaving.

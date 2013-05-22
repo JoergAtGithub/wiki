@@ -598,6 +598,48 @@ cd ..
     # The binary is going to be called $TARGET_I386-protoc so alias it to protoc
     sudo ln -s $MIXXX_PREFIX/bin/$TARGET_I386-protoc $MIXXX_PREFIX/bin/protoc
 
+# chromaprint
+
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
+    
+    make
+    sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
+
+``` 
+export VERSION=chromaprint-0.7
+export ARCHIVE=$VERSION.tar.gz
+export DYLIB=taglib/libtag.1.7.2.dylib
+export STATICLIB=taglib/libtag.1.7.2.dylib
+
+for ARCH in i386 x86_64 ppc
+do
+  mkdir -p $VERSION-$ARCH
+  tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+  cd $VERSION-$ARCH
+  source ../environment.sh $ARCH
+  # To build static, use -DENABLE_STATIC=ON but this turns off building a shared library.
+  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE
+  make
+  cd ..
+done
+
+# Install the i386 version in case there are binaries we want to run (our host is i386)
+export ARCH=i386
+cd $VERSION-$ARCH
+source ../environment.sh $ARCH
+lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+# Taglib's build system only builds either a shared library or a dynamic one. We use the dynamic one for now.
+#lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
+sudo make install
+cd ..
+
+```
+
 # Mixxx
 
 To test your new build environment, we will build Mixxx.

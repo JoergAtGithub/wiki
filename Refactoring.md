@@ -7,7 +7,6 @@ this is up to date.
   - Move keyboard processing into controller subsystem.
   - Timestamp all MIDI/HID messages
   - SoundSource API -\> floats (breaks plugin ABI)
-  - SearchQuery threading mess
   - SearchQueryParser -- SQL vs. internal
   - \#define all preference config keys
   - Header file includes cleanup 

@@ -18,3 +18,5 @@ this is up to date.
   - Preferences depend trivially on PlayerManager. Also DlgPrefControls
     doesn't work with changeable \#s of decks or preview decks.
   - `PlayerManager` bindToLibrary is not changing-n-deck capable.
+  - SoundManager multiple sound cards FIFO buffer for outputs instead of
+    mutex

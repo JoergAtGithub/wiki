@@ -25,7 +25,9 @@ crashed.
 <!-- end list -->
 
   - **OSX users** need to specify the path for the executable file, e.g
-    "gdb /Applications/Mixxx.app/Contents/MacOS/Mixxx"
+    `gdb /Applications/Mixxx.app/Contents/MacOS/Mixxx`
+  - Use the gdb "--args" option to pass arguments, e.g. `gdb --args
+    ./mixxx --controllerDebug --developer --resourcePath res`
 
 <!-- end list -->
 

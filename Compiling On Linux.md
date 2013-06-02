@@ -95,9 +95,13 @@ If you don't want shoutcast support, use **`scons shoutcast=0`** flag.
 ### Run or Install
 
 If you want to just run this copy without installing, from the same
-directory, run:
+directory, run: (WARNING this uses and may overwrite user-wide configs)
 
     ./mixxx --resourcePath res/
+
+To also run from a different settings Folder use:
+
+    ./mixxx --resourcePath res/ --settingsPath /*The folder you like*/
 
 If you want to install it system-wide, do:
 

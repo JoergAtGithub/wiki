@@ -1,3 +1,5 @@
+# Compiling on Linux
+
 Compiling Mixxx is fairly straightforward on Linux. The steps below
 outline what a user needs to do in order to compile Mixxx for
 themselves, if for instance, they wanted to try the latest changes in

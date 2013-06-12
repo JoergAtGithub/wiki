@@ -75,6 +75,16 @@ code repository to your local machine\!
 
 # Committing Changes
 
+**Important: First you need to set your name and email address. If you
+don't do this then your commits will not be associated with your name
+(or your account on GitHub) and you won't get the glory and recognition
+you deserve\!** For your commits to be associated with your GitHub
+account, make sure to use an email address that is associated with your
+GitHub account.
+
+    git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"
+
 Git is a little different from other version control systems you might
 have tried. Before committing, you first have to tell it what changes
 you want to "stage". You do this using the `git add` command. Once you

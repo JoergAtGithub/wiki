@@ -22,7 +22,7 @@ the command-line using `apt-get`.
 ## Windows
 
 Download and install git from
-[git-scm.org](http://git-scm.com/dowload/).
+[git-scm.org](http://git-scm.com/dowloads/).
 
 We recommend using [TortoiseGit](https://code.google.com/p/tortoisegit/)
 on Windows since using the terminal on Windows is a giant pain.
@@ -30,7 +30,7 @@ on Windows since using the terminal on Windows is a giant pain.
 ## OS X
 
 Download and install git from
-[git-scm.org](http://git-scm.com/dowload/).
+[git-scm.org](http://git-scm.com/dowloads/).
 
 Alternatively, you may install it from a package manager for OS X such
 as [Homebrew](http://mxcl.github.io/homebrew/) or

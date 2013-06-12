@@ -27,9 +27,8 @@ referred to as MSVC in discussions.
     (MSVC2010)](http://releases.qt-project.org/qt4/source/qt-win-opensource-4.8.4-vs2010.exe)
   - [Python](http://python.org/download/) 2.x
   - [SCONS](http://www.scons.org/download.php)
-  - A Bazaar client like [Bazaar w/
-    TortoiseBZR](http://bazaar-vcs.org/Download) ([TortoiseBZR
-    info](http://wiki.bazaar.canonical.com/TortoiseBzr))
+  - A Git client like
+    [TortoiseGit](https://code.google.com/p/tortoisegit/) 
 
 <!-- end list -->
 
@@ -52,9 +51,9 @@ referred to as MSVC in discussions.
 
 <!-- end list -->
 
-  - Checkout the mixxx repository: with TortoiseBZR, right-click in the
-    folder you want to checkout to, choose Bazaar Checkout/Branch... and
-    enter the following source:`lp:mixxx`
+  - Checkout the mixxx repository: with TortoiseGit, right-click in the
+    folder you want to checkout to, choose Git Checkout/Branch... and
+    enter the following source:`https://github.com/mixxxdj/mixxx.git`
 
 <!-- end list -->
 
@@ -63,8 +62,7 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
   - Checkout the dependencies repository (and have it placed beside your
-    "mixxx" directory) from:\<code\>
-    lp:\~mixxxdevelopers/mixxx/winlib-msvc10-x86-static\</code\>
+    "mixxx" directory) from the `winlib-msvc10-x86-static` branch.
 
 <!-- end list -->
 
@@ -128,7 +126,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
 * [[http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.6.1.zip|Qt source for Windows]]
 * [[http://python.org/ftp/python/2.6.1/python-2.6.1.msi|Python]]...get the [[http://www.python.org/ftp/python/2.6.2/python-2.6.2.amd64.msi|AMD64 version]] if you want scons to auto-detect the fact that you're on a 64-bit platform (requires 64-bit OS,) otherwise you'll have to manually specify which version you want to build
 * [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.win32.exe|SCONS]]...get the [[http://prdownloads.sourceforge.net/scons/scons-1.2.0.zip|source]] if using the 64-bit Python and follow the piece-of-cake instructions in the README
-* A Bazaar client like [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]. Get the standalone version (unless you are a Python whiz since the 32-bit installer can't see the 64-bit Python installation.)
+* A Git client like [[https://code.google.com/p/tortoisegit/|TortoiseGit]].
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
 ```
@@ -140,9 +138,9 @@ C:\\qt-everywhere-opensource-src-4.6.1\\bin;C:\\Python26;C:\\Python26\\Scripts\<
   - Follow the instructions [[http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/|on this page]] to configure VS C++ Express to use the x64 compiler, includes, and libs
 - Build Qt. [[http://mixxx.org/wiki/doku.php/build_windows_dependencies#qt|Click here for details.]]
 - Get the Mixxx source code
-* Checkout the mixxx repository: with TortoiseBZR, right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
+* Checkout the mixxx repository: with TortoiseGit, right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
 - Get our precompiled dependencies
-* Checkout the dependencies repository with TortoiseBZR, using the following location: ''lp:~mixxxdevelopers/mixxx/mixxx-win64lib-msvc90-release''
+* Checkout the dependencies repository with TortoiseGit, using the following location: ''lp:~mixxxdevelopers/mixxx/mixxx-win64lib-msvc90-release''
 - Build Mixxx
   - Start the Microsoft Windows SDK 7 command prompt (E.g. Start Menu\Microsoft Windows SDK v.7.0\CMD Shell) and change into the “mixxx” subdirectory of the checkout directory. (E.g. trunk\mixxx)
   - Type ''setenv /xp /x64 /release'' (or ''/ia64'') and hit Enter.
@@ -223,12 +221,9 @@ these instructions are not regularly updated.)*
     <http://qt.nokia.com/downloads/> \~200MB download. Requires \~2GB
     free space on your temp drive (change in user environment variables)
     for temporary unpacking, and \~2GB free on the target drive.
-2.  Download & install an SVN or Bazaar Client (i.e.
-    [TortoiseSVN](http://tortoisesvn.net/downloads) -OR- [SilkSVN's
-    Windows svn build](http://www.sliksvn.com/en/download) which can be
-    used with Qt Creator's SVN plugin)
-3.  SVN checkout or BZR branch/checkout *mixxx* and *mixxx-winlib* as in
-    the above instructions.
+2.  Download & install a Git client like
+    [TortoiseGit](https://code.google.com/p/tortoisegit/).
+3.  Checkout the Mixxx git repository as in the above instructions.
 4.  Open *mixxx.pro* inside Qt Creator which lives in the *mixxx*
     directory you made in the previous step.
 5.  Click on the *Projects* side button -\> *Run Settings* tab -\> type:
@@ -416,7 +411,7 @@ Professional x64, Vista x64, Server 2003 x64 or 2008 x64, etc.)*
     * Might need stuff from [[http://www.esnips.com/web/MinGW64?docsPage=1#files|here]] as well
 * [[http://www.qtsoftware.com/downloads/qt-creator-binary-for-windows|Qt Creator for Windows]] (32-bit but works fine)
 * [[http://qt.nokia.com/downloads/windows-cpp-vs2008|Qt source for Windows]]
-* An SVN or BZR client like [[http://tortoisesvn.net/downloads|TortoiseSVN]] or [[http://bazaar-vcs.org/Download|Bazaar w/ TortoiseBZR]]
+* A git client like [[https://code.google.com/p/tortoisegit/|TortoiseGit]].
 - Prepare build environment
   - Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed/unpacked the above:<code>
 ```
@@ -461,15 +456,13 @@ C:\\qt\\qt-win-opensource-src-4.5.1\\bin;C:\\mingw64\</code\>
 
 <!-- end list -->
 
-  - Checkout the mixxx repository:
+  - Checkout the mixxx repository (see steps above).
 
 <!-- end list -->
 
-``` 
-    * with TortoiseSVN: right-click in the folder you want to checkout to, choose SVN Checkout... and enter the following source: ''https://mixxx.svn.sourceforge.net/svnroot/mixxx/trunk''
-    * with TortoiseBZR: right-click in the folder you want to checkout to, choose Bazaar Checkout/Branch... and enter the following source: ''lp:mixxx''
-- Build Mixxx
-  - Open //mixxx-x64-mingw.pro// (found in the //mixxx// directory you made in the previous step) in Qt Creator
-  - Click on the //Projects// side button -> //Run Settings// tab -> type: <code>--resourcePath ../res</code> in the //Arguments// Box 
-  - Hit the green run (>) button
-```
+1.  Build Mixxx
+    1.  Open *mixxx-x64-mingw.pro* (found in the *mixxx* directory you
+        made in the previous step) in Qt Creator
+    2.  Click on the *Projects* side button -\> *Run Settings* tab -\>
+        type: `--resourcePath ../res` in the *Arguments* Box 
+    3.  Hit the green run (\>) button

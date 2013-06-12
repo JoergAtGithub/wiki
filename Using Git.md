@@ -8,6 +8,14 @@ maintain code easily. For code hosting, we use
 **[Click here to go to the Mixxx GitHub
 repository.](https://github.com/mixxxdj/mixxx)**
 
+A full guide for how to use Git is outside the scope of this article.
+This article aims to get you up to speed with the basics of Git and we
+are glossing over a lot of finer details about Git. We **strongly
+suggest** you walk through this [introduction to Git by
+GitHub](http://learn.github.com/p/) and [Pro
+Git](http://git-scm.com/book), a free Creative Commons eBook about using
+Git.
+
 # Installing Git
 
 You need to install Git to work with the Mixxx Git repository.
@@ -64,9 +72,6 @@ available branches here on
 Once the command succeeds, you will have a new folder (typically named
 `mixxx`) in the current directory. Congrats, you've cloned the Mixxx
 code repository to your local machine\!
-
-We **strongly suggest** you walk through this [introduction to Git by
-GitHub](http://learn.github.com/p/).
 
 # Using Branches
 

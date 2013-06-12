@@ -202,9 +202,10 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
     [bug tracker](https://bugs.launchpad.net/mixxx/).
   - The IRC Channel: \#mixxx on [Freenode](http://freenode.net/).
   - The blog: [mixxxblog.blogspot.com](http://mixxxblog.blogspot.com).
-  - Bazaar code browsing on
-    [Launchpad](https://code.launchpad.net/mixxx). (Old SVN code
-    browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).)
+  - Git code browsing on [GitHub](https://github.com/mixxxdj/mixxx).
+  - Bazaar (legacy) code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx).
+  - SVN (even more legacy) code browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)

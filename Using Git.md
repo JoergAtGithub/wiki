@@ -80,7 +80,7 @@ way we prefer you to submit branches is via GitHub pull requests.
 3.  Create a pull request from GitHub. 
 4.  A Mixxx team member will review and comment on your pull request.
     Work with your reviewer to address their comments. 
-5.  Once it receives an `LGTM` then it will be merged into Mixxx\!
+5.  Once it receives an `LGTM` \[1\] then it will be merged into Mixxx\!
 
 # Other Resources
 
@@ -94,3 +94,7 @@ Here are some handy and great guides to learning how to use Git.
   - [A successful Git branching
     model.](http://nvie.com/posts/a-successful-git-branching-model/)
   - [magit -- an emacs mode for Git](https://github.com/magit/magit)
+
+<!-- end list -->
+
+1.  Looks Good To Me

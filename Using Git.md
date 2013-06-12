@@ -193,6 +193,7 @@ way we prefer you to submit branches is via GitHub pull requests.
 
 Here are some handy and great guides to learning how to use Git.
 
+  - [Git Cheat Sheet](http://cheat.errtheblog.com/s/git)
   - [Pro Git -- the official Git book, free](http://git-scm.com/book)
   - [Git for Computer
     Scientists](http://eagain.net/articles/git-for-computer-scientists/)

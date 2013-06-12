@@ -44,6 +44,44 @@ brew install git
 
 In a terminal.
 
+# Cloning the Mixxx Repository
+
+From the commandline, simply type:
+
+    git clone https://github.com/mixxxdj/mixxx.git
+
+This will clone the `master` branch by default which is where the latest
+Mixxx code is developed.
+
+If you would like to clone a specific branch, use the `-b` argument:
+
+    git clone -b 1.11 https://github.com/mixxxdj/mixxx.git
+
+This clones the `1.11` branch. You can view a web summary of the
+available branches here on
+[GitHub](https://github.com/mixxxdj/mixxx/branches).
+
+Once the command succeeds, you will have a new folder (typically named
+`mixxx`) in the current directory. Congrats, you've cloned the Mixxx
+code repository to your local machine\!
+
+We **strongly suggest** you walk through this [introduction to Git by
+GitHub](http://learn.github.com/p/).
+
+# Issuing a Pull Request
+
+Once you are done hacking up a new feature in your clone of the Mixxx
+repository, it's time to get that branch merged into Mixxx. The standard
+way we prefer you to submit branches is via GitHub pull requests.
+
+1.  Create an account on GitHub.
+2.  Push your branch to a forked version of the [Mixxx GitHub
+    repository](https://github.com/mixxxdj/mixxx).
+3.  Create a pull request from GitHub. 
+4.  A Mixxx team member will review and comment on your pull request.
+    Work with your reviewer to address their comments. 
+5.  Once it receives an `LGTM` then it will be merged into Mixxx\!
+
 # Other Resources
 
 Here are some handy and great guides to learning how to use Git.

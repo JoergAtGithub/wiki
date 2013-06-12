@@ -73,6 +73,29 @@ Once the command succeeds, you will have a new folder (typically named
 `mixxx`) in the current directory. Congrats, you've cloned the Mixxx
 code repository to your local machine\!
 
+# Committing Changes
+
+Git is a little different from other version control systems you might
+have tried. Before committing, you first have to tell it what changes
+you want to "stage". You do this using the `git add` command. Once you
+have staged your changes, you can issue a `git commit` (which will feel
+familiar to `bzr` and `svn`)
+
+    emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
+    git add src/engine/enginebuffer.cpp
+    git commit -m "Bugfixes to EngineBuffer."
+
+This commits the change locally only. In contrast to Bazaar and
+Subversion, there is no concept of committing and automatically pushing
+the changes to the remote repository in Git.
+
+To automatically stage all changes that have been made to the repository
+(i.e. every change that shows up in `git diff`) then you can use `git
+commit -a`:
+
+    emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
+    git commit -a -m "Bugfixes to EngineBuffer."
+
 # Creating Patches
 
 Once you've worked on fixing a bug or adding a feature to Mixxx, you may

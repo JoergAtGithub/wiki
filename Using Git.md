@@ -198,6 +198,9 @@ Here are some handy and great guides to learning how to use Git.
     Scientists](http://eagain.net/articles/git-for-computer-scientists/)
     
   - [git ready -- git tips and tricks](http://gitready.com/)
+  - [git
+    stash](http://gitready.com/beginner/2009/01/10/stashing-your-changes.html)
+    -- a command to temporarily store local changes to a "stash".
   - [A successful Git branching
     model.](http://nvie.com/posts/a-successful-git-branching-model/)
   - [magit -- an emacs mode for Git](https://github.com/magit/magit)

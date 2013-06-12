@@ -12,11 +12,10 @@ Of course, you must have your favorite Qt Creator (can get here:
 <http://qt-project.org/downloads>).
 
 Now, easiest way to get Mixxx sources is to download it
-(<http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-src.tar.gz>), but
-also, if you like, you can download sources from trunk, using bzr from
-Launchpad:
+(<http://mixxx.org/download>), but also, if you like, you can download
+sources from GitHub using git.
 
-`bzr branch lp:mixxx`
+`git clone https://github.com/mixxxdj/mixxx.git`
 
 If you downloaded `.tar.gz`-file, you can use the `tar` command from the
 shell to unpack it.

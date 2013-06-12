@@ -80,7 +80,7 @@ already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi bzr taglib libshout protobuf flac libjpeg qt
+    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt
 ```
 
   - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
@@ -112,7 +112,7 @@ on Mac OS X.
 <!-- end list -->
 
 ``` 
-    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 bzr taglib libshout2 protobuf-cpp 
+    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 git taglib libshout2 protobuf-cpp 
 ```
 
   - Finally, after that has completed, download and install the [Qt SDK
@@ -141,9 +141,9 @@ entire command given above.
 Note that if you attempt to install everything at once and an error
 occurs in installation of a library, MacPorts will not continue past the
 library that caused the error. For example, if after entering the full
-command you receive an error with `bzr`, you’ll need to sort out the
+command you receive an error with `git`, you’ll need to sort out the
 error and then finish the installation by entering `sudo port install
-bzr taglib libshout2` to properly install `bzr` and then continue with
+git taglib libshout2` to properly install `git` and then continue with
 installing `taglib` and `libshout2`.
 
 If a library already happens to be installed on your computer, that's a
@@ -233,12 +233,8 @@ You will need to install the following by hand for the compile process:
     delivered through macports. It will give you an error messages that
     some header files are missing e.g. libmad and others. This is due to
     a missing QTCore framework.
-  - Bazaar ([Download](http://bazaar-vcs.org/Download)) -- Get the
-    installer for your version of OS X. The installer contains the
-    [Bazaar Explorer
-    GUI](http://mixxx.org/wiki/doku.php/using_bazaar?s[]=explorer#gui_clients).
-    -- or "sudo port install bzr" and "sudo port install bzr-explorer"
-    for the GUI
+  - Git ([Download](http://git-scm.com/)) -- Get the installer for your
+    version of OS X. 
   - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
     "scons" then "sudo scons install" but you probably don't need it
     unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
@@ -259,11 +255,10 @@ You will need to install the following by hand for the compile process:
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
-code:
+code from our git repository:
 
-    bzr checkout lp:mixxx/1.10 (for old stable v1.10)
-    bzr checkout lp:mixxx/1.11 (for current stable v1.11)
-    bzr checkout lp:mixxx (for latest trunk)
+    git clone -b 1.11 https://github.com/mixxxdj/mixxx.git (for current stable)
+    git clone https://github.com/mixxxdj/mixxx.git (for latest trunk)
 
 ## 4\. Compile and install
 
@@ -278,11 +273,11 @@ your homebrew installation. In this example we will use
     export LDFLAGS=-L$HOMEBREW_PATH/lib
     export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.4/
 
-If you got the source code from BZR, change to the newly created `mixxx`
+If you got the source code from Git, change to the newly created `mixxx`
 directory, and use scons to compile and install:
 
     cd mixxx
-    cd mixxx (Bazaar creates two subdirectories...)
+    cd mixxx (Git creates two subdirectories...)
     scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 
@@ -322,10 +317,10 @@ scanning and relinking steps so if you want to avoid this you can skip
 So that it records res/ in mixxx.cfg as where to find skins etc instead
 of dying at startup.
 
-If you wanted to update later to a newer BZR snapshot, you would go back
+If you wanted to update later to a newer git snapshot, you would go back
 to the mixxx directory and run:
 
-    bzr update
+    git pull
 
 ## 5\. Create an XCode project (optional)
 

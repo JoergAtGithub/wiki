@@ -73,6 +73,37 @@ Once the command succeeds, you will have a new folder (typically named
 `mixxx`) in the current directory. Congrats, you've cloned the Mixxx
 code repository to your local machine\!
 
+# Creating Patches
+
+Once you've worked on fixing a bug or adding a feature to Mixxx, you may
+want to generate a patch -- a file that represents the aggregate changes
+you made. This is useful for posting the patch to our bug tracker or for
+emailing it to someone, etc.
+
+## Uncommitted Changes
+
+Creating a patch of your uncommitted changes is as simple as running the
+command `git diff`.
+
+    git diff > my_changes.patch
+
+`my_changes.patch` now contains the changes you made.
+
+Note: In git-parlance, this is actually a patch of your "unstaged"
+differences.
+
+## Changes relative to the remote master branch
+
+If you have committed your changes locally either to a personal branch
+or to an existing branch like `master`, then you may be interested in
+creating a patch of the changes in your branch relative to the remote
+branch on GitHub. Doing this is also simple:
+
+    git diff origin/master > my_changes.patch
+
+`my_changes.patch` is now a patch of the changes (both committed and
+uncommitted) in your branch relative to the `master` branch on GitHub.
+
 # Using Branches
 
 Local branches give you scratch space to work on new features and ideas

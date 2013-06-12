@@ -41,6 +41,19 @@ Ubuntu Packages to Install (but possible outdated) would be:
   - Eclipse GitHub plugin:
   - <http://eclipse.github.com/>
 
+# Step by Step Setup
+
+For Eclipse Indigo
+
+\* Start Mixxx \* File \> New \> Makefile Project with Existing Code \*
+Set Project name to your mixxx branch name e.g. mixxx \* Brows to your
+mixxx folder e.g. \~/workspace/mixxx/mixxx \* Ceck Language C++ (Uncheck
+C) \* Select Toolchain for indexer setting = Linux GCC (in case of Linux
+host) \* Finish \* Right click on the new project in Project Explorer \>
+Preferences \> C/C++ Build \* Uncheck "Use default build command" \*
+Build command = scons \* Switch to Behaviour tab \* Built remove "all"
+\* check "Enable paralel builds"
+
 # Additional hints
 
 This was tested without the scons plugin installed:

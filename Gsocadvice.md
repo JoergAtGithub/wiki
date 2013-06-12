@@ -79,7 +79,7 @@ you should make sure you let us know about it in your application.
 
 Of course if you do have direct experience with the tools we use, you
 should definitely tell us about that too. The main external tools we
-rely on are `Qt`, `scons`, `portaudio` and `bzr`.
+rely on are `Qt`, `scons`, `portaudio` and `git`.
 
 ## How Do I Write A Great Application?
 

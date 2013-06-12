@@ -21,7 +21,7 @@ the command-line using `apt-get`.
 
 ## Windows
 
-<http://git-scm.com/downloads> Download and install git from
+Download and install git from
 [git-scm.org](http://git-scm.com/downloads/).
 
 We recommend using [TortoiseGit](https://code.google.com/p/tortoisegit/)
@@ -43,3 +43,16 @@ brew install git
 ```
 
 In a terminal.
+
+# Other Resources
+
+Here are some handy and great guides to learning how to use Git.
+
+  - [Pro Git -- the official Git book, free](http://git-scm.com/book)
+  - [Git for Computer
+    Scientists](http://eagain.net/articles/git-for-computer-scientists/)
+    
+  - [git ready -- git tips and tricks](http://gitready.com/)
+  - [A successful Git branching
+    model.](http://nvie.com/posts/a-successful-git-branching-model/)
+  - [magit -- an emacs mode for Git](https://github.com/magit/magit)

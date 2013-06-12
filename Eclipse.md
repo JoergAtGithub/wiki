@@ -58,7 +58,8 @@ For Eclipse Indigo
   - Uncheck "Use default build command"
   - Build command = scons
   - Switch to Behaviour tab
-  - Built remove "all"
+  - Built: remove "all"
+  - Clean: remove "clean" and set "-c"
   - check "Enable paralel builds" 
 
 # Additional hints

@@ -59,7 +59,7 @@ been contributed by Launchpad users.*
   - If you are testing a translation and would like untranslated strings
     to show up as blank, do not give the 'nounfinished' argument to
     lrelease.
-  - Add all new translation translation TS and QM files to Bazaar
+  - Add all new translation translation TS and QM files to Git
   - In ZSH: `git add res/translations/mixxx_*.(ts|qm)`
   - **Update res/mixxx.qrc file to add any new languages that were not
     previously present.**

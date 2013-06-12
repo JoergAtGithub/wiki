@@ -642,7 +642,7 @@ cd ..
 
 To test your new build environment, we will build Mixxx.
 
-    bzr branch lp:mixxx ./mixxx-trunk
+    git clone https://github.com/mixxxdj/mixxx.git ./mixxx-trunk
     cd mixxx-trunk/mixxx
     export ARCH_FLAGS="-arch i386 -arch x86_64 -arch ppc"
     source ../../environment.sh

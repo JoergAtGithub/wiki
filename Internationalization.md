@@ -60,7 +60,7 @@ been contributed by Launchpad users.*
     to show up as blank, do not give the 'nounfinished' argument to
     lrelease.
   - Add all new translation translation TS and QM files to Bazaar
-  - In ZSH: `bzr add res/translations/mixxx_*.(ts|qm)`
+  - In ZSH: `git add res/translations/mixxx_*.(ts|qm)`
   - **Update res/mixxx.qrc file to add any new languages that were not
     previously present.**
   - Commit, push.

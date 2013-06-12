@@ -1,28 +1,33 @@
 # Compiling on Linux
 
 Compiling Mixxx is fairly straightforward on Linux. The steps below
-outline what a user needs to do in order to compile Mixxx for
-themselves, if for instance, they wanted to try the latest changes in
-our code repository (BZR).
+outline what to do in order to compile Mixxx.
 
 ## 1\. Install build dependencies
 
-Mixxx relies on several external libraries for various features. If your
-distribution is Debian based (such as Ubuntu), you can install them by
-running:
+Mixxx relies on several external libraries for various features.
+
+### Debian / Ubuntu
+
+If your distribution is Debian based (such as Ubuntu), you can install
+them by running:
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install bzr scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler libvamp-hostsdk3 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libchromaprint-dev
+    sudo apt-get install git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler libvamp-hostsdk3 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libchromaprint-dev
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
+
+### Fedora
 
 On Fedora 13 and 14, you need enable rpmfusion repo and then:
 
     su
     yum groupinstall "Development Tools"
-    yum install scons bzr alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
+    yum install scons git alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
     libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
     portaudio-devel libshout-devel python-devel portmidi-devel qt-webkit-devel taglib-devel flac-devel \
     protobuf-devel vamp-plugin-sdk-devel
+
+### Other
 
 For other distributions, you will need to install the following through
 your distribution's package manager:
@@ -53,18 +58,21 @@ your distribution's package manager:
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release from our [downloads
 page](http://www.mixxx.org/download.php), or checkout a snapshot from
-BZR: (See [Using Bazaar](Using%20Bazaar) for more details & options.)
+our git repository: (See [Using Git](Using%20Git) for more details &
+options.)
 
-  - For the latest stable release: `bzr checkout lp:mixxx/1.10`
-  - For trunk: `bzr checkout lp:mixxx`
+  - For the latest stable branch: `git clone -b 1.11
+    https://github.com/mixxxdj/mixxx.git`
+  - For the master branch: `git clone
+    https://github.com/mixxxdj/mixxx.git`
 
 ## 3\. Compile and install
 
-If you got the source code from BZR, change to the newly created "mixxx"
+Once you have the source code, change to the newly created "mixxx"
 directory, and use scons to compile. As a regular user, do:
 
-    cd 1.10  # or  cd mixxx  if you downloaded trunk
-    cd mixxx  # (again)
+    cd mixxx  # To enter the repository.
+    cd mixxx  # (again) to enter the mixxx folder within the repository
     scons
 
 (scons -h shows a complete list of build flags if you'd like to
@@ -136,7 +144,7 @@ drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215
 If you wanted to update later to a newer snapshot, you would go back to
 the mixxx directory and run:
 
-    bzr update
+    git pull
 
 ## Troubleshooting
 

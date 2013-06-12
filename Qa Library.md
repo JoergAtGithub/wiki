@@ -26,5 +26,5 @@ Scanner are working as intended.
 ## Mixxx 1.8.0 Test Grid
 
   - Test With: 
-  - Mixxx 1.8.0, BZR rXXXX
+  - Mixxx 1.8.0, Git rXXXX
   - Qt X.Y.Z (whatever is shipped on OSX and Windows with Mixxx)''

@@ -38,10 +38,8 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 <!-- end list -->
 
-  - bazaar plugin: <http://wiki.bazaar.canonical.com/BzrEclipse> and
-    ***follow*** the instructions there on how to install and configure
-  - you can then right-click on the eclipse project and select 'Team -
-    Share Project...' and select bzr
+  - Eclipse GitHub plugin:
+  - <http://eclipse.github.com/>
 
 # Additional hints
 

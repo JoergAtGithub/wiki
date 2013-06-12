@@ -108,7 +108,7 @@ Some other (entirely optional) things you might consider doing:
 2.  If you don't have Mixxx already, download it, play around with it
     for a while, let us know what you like or don't like
 3.  For lots of bonus points:
-    1.  Check out [the source](using_bazaar) and compile it, play around
+    1.  Check out [the source](using_git) and compile it, play around
         with the code a little
         1.  Be sure to write about what you did in your application
         2.  If you can't get it to compile, it's probably our fault not

@@ -68,6 +68,54 @@ code repository to your local machine\!
 We **strongly suggest** you walk through this [introduction to Git by
 GitHub](http://learn.github.com/p/).
 
+# Using Branches
+
+Local branches give you scratch space to work on new features and ideas
+without having to commit on top of an existing branch (like the `master`
+branch). This allows you to track ongoing development in the `master`
+branch and delay having to merge with `master` until you are ready.
+
+**To check what branch you are currently on:**
+
+    $ git branch
+    * master
+
+**To create a new branch:**
+
+    $ git checkout -b experimental
+    Switched to a new branch 'experimental'
+    
+    $ git branch
+    * experimental
+      master
+
+**To rename a branch:**
+
+    $ git branch -m experimental expt
+    
+    $ git branch
+    * expt
+      master
+
+**To switch between existing branches:**
+
+    $ git checkout experimental
+    
+    $ git branch
+    * experimental
+      master
+    
+    $ git checkout master
+    
+    $ git branch 
+      experimental
+    * master
+
+**To delete a local branch:**
+
+    $ git branch -d experimental  # requires the branch is fully merged
+    $ git branch -D experimental  # deletes the branch regardless of whether it is merged
+
 # Issuing a Pull Request
 
 Once you are done hacking up a new feature in your clone of the Mixxx

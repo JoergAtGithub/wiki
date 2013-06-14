@@ -21,9 +21,30 @@ You can find me there, and contact me through blogs comments:
 
 Currently I'm working on:
 
-  - Extended article to collect as much as possible information about
+1.  Extended article to collect as much as possible information about
     project and how to solve it.
-  - My roadmap for this summer.
+2.  My very approx. roadmap for this summer.
+
+**Roadmap:**
+
+  - Learn SQLite deeper as Daniel pointed (learn sources of SQLite
+    multi-threading).
+  - Fork Mixxx on GitHub
+  - Create empty class `DBAccessor`
+  - add own class inherited from `QThread`, named, for example,
+    DBAccessor
+  - create handmade `DBAccessor`'s event-loop (like `while(1)`...)
+  - make class `DBAccessor` Singletone and all-source-wide
+  - make `DBAccessor` instantiate on Mixxx startup
+  - code freeing `DBAccessor` on Mixxx exit
+  - Code `DBAccessor`'s queue manager
+  - code placing query into queue
+  - code controlling on executed queries
+  - code removing from queue 
+  - ...
+  - Code `DBAccessor`'s minimal access to SQLite db
+  - *(Think first on how to)* Organize `DAO`'s names, priorities, and so
+    on so we can send it as parameter to `DBAccessor`
 
 -----
 

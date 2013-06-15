@@ -45,7 +45,7 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 For Eclipse Indigo
 
-  - Start Mixxx
+  - Start Eclipse
   - File \> New \> Makefile Project with Existing Code
   - Set Project name to your mixxx branch name e.g. mixxx
   - Brows to your mixxx folder e.g. \~/workspace/mixxx/mixxx

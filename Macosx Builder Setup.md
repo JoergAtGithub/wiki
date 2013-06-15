@@ -667,7 +667,7 @@ do
   # Hack up the Makefile since it sucks.
   sed -i -e 's/LIBRARY_INCLUDES := \\/LIBRARY_INCLUDES := src\/speex\/speex_resampler.h \\/g' Makefile
   sed -i -e 's/LIBRARY_SOURCES := \\/LIBRARY_SOURCES := src\/speex\/resample.c \\/g' Makefile
-  ed -i -e 's/\.so/\.dylib/g' Makefile
+  sed -i -e 's/\.so/\.dylib/g' Makefile
   sed -i -e 's/-Wl,-Bsymbolic //g' Makefile
   sed -i -e 's/-shared.*$/-dynamiclib/g' Makefile
   sed -i -e 's/-DHAVE_LIBSAMPLERATE -DHAVE_FFTW3 -DFFTW_DOUBLE_ONLY /-DHAVE_VDSP -DUSE_SPEEX -DMALLOC_IS_ALIGNED /g' Makefile

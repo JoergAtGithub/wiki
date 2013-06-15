@@ -653,8 +653,8 @@ cd ..
 ``` 
 export VERSION=rubberband-1.8.1
 export ARCHIVE=$VERSION.tar.bz2
-export DYLIB=src/libchromaprint.0.2.0.dylib
-export STATICLIB=src/libchromaprint_p.a
+export DYLIB=lib/librubberband.dylib
+export STATICLIB=lib/librubberband.a
 
 for ARCH in i386 x86_64 ppc
 do
@@ -662,9 +662,16 @@ do
   tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
   cd $VERSION-$ARCH
   source ../environment.sh $ARCH
-  ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
-  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
-  make
+  export LDFLAGS="$LDFLAGS -framework vecLib"
+  SRC_CFLAGS="-I." SRC_LIBS=" " SNDFILE_CFLAGS=" " SNDFILE_LIBS=" " FFTW_CFLAGS=" " FFTW_LIBS=" " Vamp_LIBS=" " Vamp_CFLAGS=" " ./configure --host $HOST --target $TARGET --prefix=$MIXXX_PREFIX
+  # Hack up the Makefile since it sucks.
+  sed -i -e 's/LIBRARY_INCLUDES := \\/LIBRARY_INCLUDES := src\/speex\/speex_resampler.h \\/g' Makefile
+  sed -i -e 's/LIBRARY_SOURCES := \\/LIBRARY_SOURCES := src\/speex\/resample.c \\/g' Makefile
+  ed -i -e 's/\.so/\.dylib/g' Makefile
+  sed -i -e 's/-Wl,-Bsymbolic //g' Makefile
+  sed -i -e 's/-shared.*$/-dynamiclib/g' Makefile
+  sed -i -e 's/-DHAVE_LIBSAMPLERATE -DHAVE_FFTW3 -DFFTW_DOUBLE_ONLY /-DHAVE_VDSP -DUSE_SPEEX -DMALLOC_IS_ALIGNED /g' Makefile
+  make dynamic
   cd ..
 done
 

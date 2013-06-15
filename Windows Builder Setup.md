@@ -85,3 +85,27 @@ rubberband 1.8.1
     # Wait until rubberband-library.lib shows up in Release/
     COPY .\Release\rubberband-library.lib %MIXXX_LIB%\rubberband.lib
     XCOPY /E rubberband %MIXXX_LIB%\rubberband\
+
+For the x64 version of rubberband you need to hand-patch
+`src/float_cast/float_cast.h` to remove inline assembly (taken from
+<http://doxygen.reactos.org/dc/de3/float__cast_8h_source.html> -- the
+copyright on the file is the same as `float_cast.h`)
+
+Stick this block before `#if (defined (WIN32) || defined (_WIN32))` and
+change it to `#elif`.
+
+    #if (defined (WIN64) || defined(_WIN64))
+    #include    <math.h>
+    #include    <emmintrin.h>
+    #include    <mmintrin.h>
+    __inline long int
+    lrint(double flt)
+    {
+        return _mm_cvtsd_si32(_mm_load_sd(&flt));
+    }
+    
+    __inline long int
+    lrintf(float flt)
+    {
+        return _mm_cvtss_si32(_mm_load_ss(&flt));
+    }

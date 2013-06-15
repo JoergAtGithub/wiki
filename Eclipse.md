@@ -62,6 +62,13 @@ For Eclipse Indigo
   - Clean: remove "clean" and set "-c"
   - check "Enable paralel builds" 
 
+For git integration (in case of using a git clone of mixxx):
+
+  - Right click on the project in Project Explorer \> Team \> Share
+    Project
+  - Select git 
+  - Next \> Finish 
+
 # Additional hints
 
 This was tested without the scons plugin installed:

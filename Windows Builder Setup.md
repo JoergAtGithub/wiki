@@ -83,5 +83,5 @@ rubberband 1.8.1
 
     %MIXXX_VCEXPRESS% rubberband-library.vcproj /project rubberband-library /build Release /useenv 
     # Wait until rubberband-library.lib shows up in Release/
-    COPY .\Release\rubberband-library.lib %MIXXX_LIB%
+    COPY .\Release\rubberband-library.lib %MIXXX_LIB%\rubberband.lib
     COPY .\rubberband %MIXXX_LIB%

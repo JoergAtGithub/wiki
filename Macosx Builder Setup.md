@@ -638,7 +638,7 @@ cd ..
 
 ```
 
-## rubberband
+# rubberband
 
 ## 10.5 Intel (i386/x86\_64)
 

@@ -682,12 +682,13 @@ cd ..
     lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
     lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
     # We can't make install because the stupid Makefile insists on creating the VAMP plugin and the LADSPA plugin and the binary.
-    export RUBBERBAND_INCLUDE=$MIXXX_PREFIX/include/rubberband
-    export RUBBERBAND_LIB=$MIXXX_PREFIX/lib
+    export RUBBERBAND_INCLUDE=${MIXXX_PREFIX}include/rubberband
+    export RUBBERBAND_LIB=${MIXXX_PREFIX}lib
     mkdir -p $RUBBERBAND_INCLUDE
     mkdir -p $RUBBERBAND_LIB
     cp rubberband/rubberband-c.h rubberband/RubberBandStretcher.h $RUBBERBAND_INCLUDE
     cp lib/librubberband.a lib/librubberband.dylib $RUBBERBAND_LIB
+    install_name_tool -id $RUBBERBAND_LIB/librubberband.dylib $RUBBERBAND_LIB/librubberband.dylib
     cd ..
 
 # Mixxx

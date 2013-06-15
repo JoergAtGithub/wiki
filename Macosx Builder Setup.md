@@ -638,6 +638,47 @@ cd ..
 
 ```
 
+## rubberband
+
+## 10.5 Intel (i386/x86\_64)
+
+    export ARCH_FLAGS="-arch i386 -arch x86_64"
+    source ../environment.sh
+    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
+    make
+    sudo make install
+
+## 10.5 Universal (ppc/i386/x86\_64)
+
+``` 
+export VERSION=rubberband-1.8.1
+export ARCHIVE=$VERSION.tar.bz2
+export DYLIB=src/libchromaprint.0.2.0.dylib
+export STATICLIB=src/libchromaprint_p.a
+
+for ARCH in i386 x86_64 ppc
+do
+  mkdir -p $VERSION-$ARCH
+  tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+  cd $VERSION-$ARCH
+  source ../environment.sh $ARCH
+  ./configure --host $HOST --target $TARGET --disable-dependency-tracking --prefix=$MIXXX_PREFIX
+  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
+  make
+  cd ..
+done
+
+# Install the i386 version in case there are binaries we want to run (our host is i386)
+export ARCH=i386
+cd $VERSION-$ARCH
+source ../environment.sh $ARCH
+lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
+sudo make install
+cd ..
+
+```
+
 # Mixxx
 
 To test your new build environment, we will build Mixxx.

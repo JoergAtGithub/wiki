@@ -14,6 +14,7 @@ Then, run this snippet:
     SET MIXXX_LIB=%MIXXX_LIB_BASE%\%MIXXX_X%\
     "C:\Program Files\Microsoft SDKs\Windows\v%WINDOWS_SDK_VERSION%\Bin\SetEnv.cmd" /xp /release /%MIXXX_X%
     "%DXSDK_DIR%\Utilities\Bin\dx_setenv.cmd" %MIXXX_X%
+    SET MIXXX_VCEXPRESS="c:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\VCExpress.exe"
 
 # Build Settings
 
@@ -65,3 +66,22 @@ chromaprint 0.7
     COPY .\src\chromaprint.lib %MIXXX_LIB%
     COPY .\src\chromaprint_p.lib %MIXXX_LIB%
     COPY .\src\chromaprint.h %MIXXX_LIB%
+
+# rubberband
+
+rubberband 1.8.1
+
+  - Edit Project File:
+  - Release -\> General -\> Whole Program Optimization -\> Use Link Time
+    Code Generation
+  - Release -\> C/C++ -\> Optimization -\> Whole Program Optimization
+    -\> Enable link-time code generation
+  - Release -\> C/C++ -\> Code Generation -\> Runtime Library -\>
+    **VERIFY /MD IS SELECTED**
+
+<!-- end list -->
+
+    %MIXXX_VCEXPRESS% rubberband-library.vcproj /project rubberband-library /build Release /useenv 
+    # Wait until rubberband-library.lib shows up in Release/
+    COPY .\Release\rubberband-library.lib %MIXXX_LIB%
+    COPY .\rubberband %MIXXX_LIB%

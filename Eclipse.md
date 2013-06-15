@@ -53,7 +53,7 @@ For Eclipse Indigo
   - Select Toolchain for indexer setting = Linux GCC (in case of Linux
     host) 
   - Finish 
-  - Right click on the new project in Project Explorer \> Preferences \>
+  - Right click on the new project in Project Explorer \> Properties \>
     C/C++ Build
   - Uncheck "Use default build command"
   - Build command = scons

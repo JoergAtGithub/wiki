@@ -648,6 +648,9 @@ cd ..
     export ARCHIVE=$VERSION.tar.bz2
     export DYLIB=lib/librubberband.dylib
     export STATICLIB=lib/librubberband.a
+    export DYLIB_LIST=()
+    export STATICLIB_LIST=()
+    
     
     for ARCH in i386 x86_64 ppc
     do
@@ -667,6 +670,8 @@ cd ..
       make lib
       make static
       make dynamic
+      DYLIB_LIST+=("../$VERSION-$ARCH/$DYLIB")
+      STATICLIB_LIST+=("../$VERSION-$ARCH/$STATICLIB")
       cd ..
     done
     

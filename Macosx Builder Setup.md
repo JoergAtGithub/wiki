@@ -642,12 +642,6 @@ cd ..
 
 ## 10.5 Intel (i386/x86\_64)
 
-    export ARCH_FLAGS="-arch i386 -arch x86_64"
-    source ../environment.sh
-    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$MIXXX_PREFIX" -DCMAKE_OSX_DEPLOYMENT_TARGET="$MACOSX_DEPLOYMENT_TARGET" -DCMAKE_OSX_SYSROOT="$OSX_SDK" -DCMAKE_VERBOSE_MAKEFILE=TRUE -DWITH_VDSP=TRUE
-    make
-    sudo make install
-
 ## 10.5 Universal (ppc/i386/x86\_64)
 
     export VERSION=rubberband-1.8.1

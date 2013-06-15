@@ -671,6 +671,7 @@ do
   sed -i -e 's/-Wl,-Bsymbolic //g' Makefile
   sed -i -e 's/-shared.*$/-dynamiclib/g' Makefile
   sed -i -e 's/-DHAVE_LIBSAMPLERATE -DHAVE_FFTW3 -DFFTW_DOUBLE_ONLY /-DHAVE_VDSP -DUSE_SPEEX -DMALLOC_IS_ALIGNED /g' Makefile
+  make lib
   make dynamic
   cd ..
 done

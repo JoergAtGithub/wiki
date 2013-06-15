@@ -650,42 +650,46 @@ cd ..
 
 ## 10.5 Universal (ppc/i386/x86\_64)
 
-``` 
-export VERSION=rubberband-1.8.1
-export ARCHIVE=$VERSION.tar.bz2
-export DYLIB=lib/librubberband.dylib
-export STATICLIB=lib/librubberband.a
-
-for ARCH in i386 x86_64 ppc
-do
-  mkdir -p $VERSION-$ARCH
-  tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
-  cd $VERSION-$ARCH
-  source ../environment.sh $ARCH
-  export LDFLAGS="$LDFLAGS -framework vecLib"
-  SRC_CFLAGS="-I." SRC_LIBS=" " SNDFILE_CFLAGS=" " SNDFILE_LIBS=" " FFTW_CFLAGS=" " FFTW_LIBS=" " Vamp_LIBS=" " Vamp_CFLAGS=" " ./configure --host $HOST --target $TARGET --prefix=$MIXXX_PREFIX
-  # Hack up the Makefile since it sucks.
-  sed -i -e 's/LIBRARY_INCLUDES := \\/LIBRARY_INCLUDES := src\/speex\/speex_resampler.h \\/g' Makefile
-  sed -i -e 's/LIBRARY_SOURCES := \\/LIBRARY_SOURCES := src\/speex\/resample.c \\/g' Makefile
-  sed -i -e 's/\.so/\.dylib/g' Makefile
-  sed -i -e 's/-Wl,-Bsymbolic //g' Makefile
-  sed -i -e 's/-shared.*$/-dynamiclib/g' Makefile
-  sed -i -e 's/-DHAVE_LIBSAMPLERATE -DHAVE_FFTW3 -DFFTW_DOUBLE_ONLY /-DHAVE_VDSP -DUSE_SPEEX -DMALLOC_IS_ALIGNED /g' Makefile
-  make lib
-  make dynamic
-  cd ..
-done
-
-# Install the i386 version in case there are binaries we want to run (our host is i386)
-export ARCH=i386
-cd $VERSION-$ARCH
-source ../environment.sh $ARCH
-lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
-lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
-sudo make install
-cd ..
-
-```
+    export VERSION=rubberband-1.8.1
+    export ARCHIVE=$VERSION.tar.bz2
+    export DYLIB=lib/librubberband.dylib
+    export STATICLIB=lib/librubberband.a
+    
+    for ARCH in i386 x86_64 ppc
+    do
+      mkdir -p $VERSION-$ARCH
+      tar -zxvf ../dependencies/$ARCHIVE -C $VERSION-$ARCH --strip-components 1
+      cd $VERSION-$ARCH
+      source ../environment.sh $ARCH
+      export LDFLAGS="$LDFLAGS -framework vecLib"
+      SRC_CFLAGS="-I." SRC_LIBS=" " SNDFILE_CFLAGS=" " SNDFILE_LIBS=" " FFTW_CFLAGS=" " FFTW_LIBS=" " Vamp_LIBS=" " Vamp_CFLAGS=" " ./configure --host $HOST --target $TARGET --prefix=$MIXXX_PREFIX
+      # Hack up the Makefile since it sucks.
+      sed -i -e 's/LIBRARY_INCLUDES := \\/LIBRARY_INCLUDES := src\/speex\/speex_resampler.h \\/g' Makefile
+      sed -i -e 's/LIBRARY_SOURCES := \\/LIBRARY_SOURCES := src\/speex\/resample.c \\/g' Makefile
+      sed -i -e 's/\.so/\.dylib/g' Makefile
+      sed -i -e 's/-Wl,-Bsymbolic //g' Makefile
+      sed -i -e 's/-shared.*$/-dynamiclib/g' Makefile
+      sed -i -e 's/-DHAVE_LIBSAMPLERATE -DHAVE_FFTW3 -DFFTW_DOUBLE_ONLY /-DHAVE_VDSP -DUSE_SPEEX -DMALLOC_IS_ALIGNED /g' Makefile
+      make lib
+      make static
+      make dynamic
+      cd ..
+    done
+    
+    # Install the i386 version in case there are binaries we want to run (our host is i386)
+    export ARCH=i386
+    cd $VERSION-$ARCH
+    source ../environment.sh $ARCH
+    lipo -create ./$DYLIB ../$VERSION-ppc/$DYLIB ../$VERSION-x86_64/$DYLIB -output ./$DYLIB
+    lipo -create ./$STATICLIB ../$VERSION-ppc/$STATICLIB ../$VERSION-x86_64/$STATICLIB -output ./$STATICLIB
+    # We can't make install because the stupid Makefile insists on creating the VAMP plugin and the LADSPA plugin and the binary.
+    export RUBBERBAND_INCLUDE=$MIXXX_PREFIX/include/rubberband
+    export RUBBERBAND_LIB=$MIXXX_PREFIX/lib
+    mkdir -p $RUBBERBAND_INCLUDE
+    mkdir -p $RUBBERBAND_LIB
+    cp rubberband/rubberband-c.h rubberband/RubberBandStretcher.h $RUBBERBAND_INCLUDE
+    cp lib/librubberband.a lib/librubberband.dylib $RUBBERBAND_LIB
+    cd ..
 
 # Mixxx
 

@@ -78,13 +78,8 @@ rubberband 1.8.1
     -\> Enable link-time code generation
   - Release -\> C/C++ -\> Code Generation -\> Runtime Library -\>
     **VERIFY /MD IS SELECTED**
-
-<!-- end list -->
-
-    %MIXXX_VCEXPRESS% rubberband-library.vcproj /project rubberband-library /build Release /useenv 
-    # Wait until rubberband-library.lib shows up in Release/
-    COPY .\Release\rubberband-library.lib %MIXXX_LIB%\rubberband.lib
-    XCOPY /E rubberband %MIXXX_LIB%\rubberband\
+  - Add to source files: `src/kissfft/kiss_fft.c`
+    `src/kissfft/kiss_fftr.c`
 
 For the x64 version of rubberband you need to hand-patch
 `src/float_cast/float_cast.h` to remove inline assembly (taken from
@@ -109,3 +104,8 @@ change it to `#elif`.
     {
         return _mm_cvtss_si32(_mm_load_ss(&flt));
     }
+
+    %MIXXX_VCEXPRESS% rubberband-library.vcproj /project rubberband-library /build Release /useenv 
+    # Wait until rubberband-library.lib shows up in Release/
+    COPY .\Release\rubberband-library.lib %MIXXX_LIB%\rubberband.lib
+    XCOPY /E rubberband %MIXXX_LIB%\rubberband\

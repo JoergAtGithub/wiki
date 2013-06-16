@@ -217,6 +217,8 @@ Here are some handy and great guides to learning how to use Git.
   - [magit -- an emacs mode for Git](https://github.com/magit/magit)
   - [Git Rebase](http://git-scm.com/book/en/Git-Branching-Rebasing) --
     An advanced Git technique for keeping a clean history.
+  - [git - the simple guide](http://rogerdudler.github.io/git-guide/) --
+    Just a simple guide for getting started with git
 
 <!-- end list -->
 

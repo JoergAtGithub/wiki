@@ -414,7 +414,7 @@ if it matches the paradigm of effect-chains being
 This feature has been attempted twice by two GSoC students. There is a
 lot of old code lying around, and we will try to reuse whenever
 possible. The current branch for work on this feature is the
-[lp:\~mixxxdevelopers/mixxx/features\_effects](https://code.launchpad.net/~mixxxdevelopers/mixxx/features_effects)
+[features\_effects](https://github.com/rryan/mixxx/tree/features_effects)
 branch.
 
 ## Team

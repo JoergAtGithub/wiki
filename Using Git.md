@@ -199,6 +199,78 @@ way we prefer you to submit branches is via GitHub pull requests.
     Work with your reviewer to address their comments. 
 5.  Once it receives an `LGTM` \[1\] then it will be merged into Mixxx\!
 
+# Keeping Track of Updates from Other Developers
+
+Sometimes there may be another developer you would like to keep track of
+or regularly merge updates from.
+
+Let's say I would like to keep track of `ywwg`, another GitHub user who
+is working on Mixxx. First, add the developer's Git repository as a
+remote to your repository.
+
+    $ git remote add ywwg https://github.com/ywwg/mixxx.git
+    $ git fetch ywwg 
+    remote: Counting objects: 1771, done.
+    remote: Compressing objects: 100% (714/714), done.
+    remote: Total 1522 (delta 1301), reused 1014 (delta 804)
+    Receiving objects: 100% (1522/1522), 469.46 KiB, done.
+    Resolving deltas: 100% (1301/1301), completed with 154 local objects.
+    From https://github.com/ywwg/mixxx
+     * [new branch]      1.11       -> ywwg/1.11
+     * [new branch]      4deck_loadorder -> ywwg/4deck_loadorder
+     * [new branch]      DJO-hacks-1.11 -> ywwg/DJO-hacks-1.11
+     * [new branch]      DJO-hacks-trunk -> ywwg/DJO-hacks-trunk
+     * [new branch]      DJO-hacks-trunk-nodejerk -> ywwg/DJO-hacks-trunk-nodejerk
+     * [new branch]      DJO-mastersync -> ywwg/DJO-mastersync
+     * [new branch]      atomic-rryan-master -> ywwg/atomic-rryan-master
+     * [new branch]      covalidation -> ywwg/covalidation
+     * [new branch]      deck_deletion -> ywwg/deck_deletion
+     * [new branch]      git_build  -> ywwg/git_build
+     * [new branch]      master     -> ywwg/master
+     * [new branch]      master_sync -> ywwg/master_sync
+     * [new branch]      master_sync_clean -> ywwg/master_sync_clean
+     * [new branch]      master_sync_unsquashed_cherrypick -> ywwg/master_sync_unsquashed_cherrypick
+
+Cool\! Now I have all of `ywwg`'s branches as remote heads in my
+repository. We can confirm this by looking at the remote branch list.
+
+    $ git branch -a
+    ...
+      remotes/ywwg/1.11
+      remotes/ywwg/4deck_loadorder
+      remotes/ywwg/DJO-hacks-1.11
+      remotes/ywwg/DJO-hacks-trunk
+      remotes/ywwg/DJO-hacks-trunk-nodejerk
+      remotes/ywwg/DJO-mastersync
+      remotes/ywwg/atomic-rryan-master
+      remotes/ywwg/covalidation
+      remotes/ywwg/deck_deletion
+      remotes/ywwg/git_build
+      remotes/ywwg/master
+      remotes/ywwg/master_sync
+      remotes/ywwg/master_sync_clean
+      remotes/ywwg/master_sync_unsquashed_cherrypick
+    ...
+
+Now, if I want to merge the latest changes from `ywwg`'s `master_sync`
+branch, I can just merge it directly.
+
+    git merge ywwg/master_sync
+
+Or, if I want to work on my own changes to master\_sync, I can checkout
+a local branch with `remotes/ywwg/master_sync` as the "tracking branch".
+This means that when you type `git pull` with no arguments, your local
+`master_sync` branch knows to pull changes from `ywwg`'s `master_sync`
+branch.
+
+To checkout a branch as a tracking branch:
+
+    git checkout -b master_sync --track ywwg/master_sync
+
+Once you've made local changes you would like `ywwg` to accept, you can
+submit a pull request to `ywwg` on GitHub or just contact him in person
+to ask him to merge changes from your branch.
+
 # Other Resources
 
 Here are some handy and great guides to learning how to use Git.

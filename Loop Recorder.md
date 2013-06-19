@@ -58,7 +58,7 @@ Code 2013.
 
 Extras:
 
-1.  Improve documentation on web for audio engine as I learn more about
+1.  Improve documentation on wiki for audio engine as I learn more about
     it.
 
 ## Current Progress

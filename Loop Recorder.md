@@ -1,7 +1,8 @@
 ## Summary
 
-**Status**: This specification is **in drafting**, however work will
-begin very soon. Please feel free to leave comments.
+**Status**: This specification is **in drafting**, however active work
+will begin immediately and continue through the summer. Please feel free
+to leave comments.
 
 DJs often may wish to record loops and samples live from available
 output streams, which can then be used again in samplers and the main
@@ -13,3 +14,24 @@ This project is being undertaken by Carl Pillot for the Google Summer of
 Code 2013
 
 ## Design
+
+### High-Level Overview
+
+### Requirements
+
+### Engine Modifications
+
+### Controls
+
+### User Interface
+
+## Work Breakdown
+
+## Current Progress
+
+## Team
+
+  - Carl Pillot (GSoC 2013 Student)
+  - Owen Williams (GSoC 2013 Mentor)
+
+## Comments

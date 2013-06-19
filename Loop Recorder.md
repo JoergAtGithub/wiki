@@ -27,6 +27,37 @@ Code 2013.
 
 ## Work Breakdown
 
+1.  Core Loop Code
+    1.  Loop Recorder Manager
+        1.  Connections to UI controls
+        2.  Connect signals between controls, LoopRecorder and
+            LoopPlayer
+        3.  Export to library handling
+            1.  Database metadata storage
+            2.  Save audio data to file (can probably reuse some of the
+                existing codebase for this)
+    2.  Loop Recorder
+        1.  Buffer Processing (recording and layering)
+        2.  Undo Operations 
+        3.  Clear operations
+        4.  BPM Matching
+    3.  Loop Player (EngineChannel subclass)
+        1.  Read audio from buffers and implement switching between the
+            buffers.
+        2.  Integrate with Engine Master, so that audio is routed back
+            into the mix after it is recording.
+        3.  Slots for receiving updates from loop recorder and manager
+        4.  New SoundSource class for internally recorded sounds. (Maybe
+            should be classified as a separate entity in the structure)
+2.  GUI integration
+    1.  Theme modifications
+    2.  New loop table view for saved loops (could be added as a section
+        in the recordings view)
+3.  Documentation
+    1.  New manual entry for loop recorder
+    2.  Improve Documentation on web for audio engine as I learn more
+        about it (extra beyond project).
+
 ## Current Progress
 
 ## Team

@@ -1,6 +1,7 @@
 # GUI Widgets
 
-Interrelation diagram: (Thanks to LCID\_Fire on IRC.)
+**Note:** This is a planned refactoring by LCID\_Fire that was never
+implemented.
 
 [[/media/mixxxwidgets.png|]]
 

@@ -11,7 +11,7 @@ but powerful loop recorder for Mixxx, which will give DJs another tool
 to be creative in their live mixes.
 
 This project is being undertaken by Carl Pillot for the Google Summer of
-Code 2013
+Code 2013.
 
 ## Design
 

@@ -14,6 +14,7 @@ page.
   - [Multi-channel file mixing](Multi-channel%20file%20mixing)
   - [Modifier System](Modifier%20System)
   - [nonblockingdb\_status](nonblockingdb_status)
+  - [Loop Recorder](Loop%20Recorder)
 
 ## Implemented Specifications
 

@@ -55,8 +55,11 @@ Code 2013.
         in the recordings view)
 3.  Documentation
     1.  New manual entry for loop recorder
-    2.  Improve Documentation on web for audio engine as I learn more
-        about it (extra beyond project).
+
+Extras:
+
+1.  Improve Documentation on web for audio engine as I learn more about
+    it.
 
 ## Current Progress
 

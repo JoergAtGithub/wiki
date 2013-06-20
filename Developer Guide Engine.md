@@ -163,8 +163,8 @@ the master, headphone, and possibly individual channel buffers via the
 `EngineChannel` is the interface that all audio channels must implement
 to integrate with `EngineMaster`.
 
-  - [src/engine/enginechannel.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginechannel.h)
-  - [src/engine/enginechannel.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginechannel.cpp)
+  - [src/engine/enginechannel.h](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginechannel.h)
+  - [src/engine/enginechannel.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginechannel.cpp)
 
 The following methods are used by `EngineMaster` to determine how to mix
 the `EngineChannel`:

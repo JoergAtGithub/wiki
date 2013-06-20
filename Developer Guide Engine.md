@@ -78,8 +78,8 @@ the `EngineObject` should do its work in-place.
 
 # EngineMaster
 
-  - [src/engine/enginemaster.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.h)
-  - [src/engine/enginemaster.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.cpp)
+  - [src/engine/enginemaster.h](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginemaster.h)
+  - [src/engine/enginemaster.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginemaster.cpp)
 
 `EngineMaster` is the master class that drives the entire mixing engine.
 `SoundManager` calls `EngineMaster` directly to request that the next

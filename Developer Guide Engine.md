@@ -107,7 +107,7 @@ are children of `EngineChannel`. To add a sampler or deck or microphone
 to `EngineMaster` you call the `addChannel` method on `EngineMaster`.
 
 [src/engine/enginemaster.cpp
-EngineMaster::addChannel](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginemaster.cpp#L441)
+EngineMaster::addChannel](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginemaster.cpp#L445)
 
 As you will find in `mixxx.cpp`:
 

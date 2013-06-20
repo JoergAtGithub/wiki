@@ -63,6 +63,28 @@ by either a hot key (probably in a sampler deck in Mixxx).
 
 ### Requirements
 
+  - Realtime Recording/Instant Playback
+  - Loop is available to playback immediately
+  - Multi-layer recording
+  - Record unlimited number of layers in loop recorder (in practice it
+    probably )
+  - One level of undo/redo
+  - Syncs with currently defined BPM (Merge with Owen's master sync
+    branch?)
+  - Export to library/disk
+  - Save to disk
+  - Export metadata to library
+  - Export directly to samplers? - Useful for quick mixing
+
+<!-- end list -->
+
+``` 
+    * Perhaps also work on code to record directly into samplers - separate from loop recorder, but related, this may be a good starting point for the project...
+* GUI
+* Simple to use and understand
+* Incorporates with 
+```
+
 ### Engine Modifications
 
 ### Controls

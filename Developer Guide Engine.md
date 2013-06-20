@@ -201,8 +201,8 @@ implementation in `src/engine/enginedeck.cpp` you'll see that it is
 pretty straightforward and composed of a small list of `EngineObject`s
 which process the audio for each deck and sampler.
 
-  - [src/engine/enginedeck.h](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginedeck.h)
-  - [src/engine/enginedeck.cpp](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/view/head:/mixxx/src/engine/enginedeck.cpp)
+  - [src/engine/enginedeck.h](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginedeck.h)
+  - [src/engine/enginedeck.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/engine/enginedeck.cpp)
 
 The list of `EngineObject`s that are run in-order when
 `EngineDeck::process` is called are:

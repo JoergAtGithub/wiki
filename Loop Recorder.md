@@ -61,6 +61,38 @@ load them into samplers to play them back.
 3\. Create one-shot items from a song or loop on the fly to be triggered
 by either a hot key (probably in a sampler deck in Mixxx).
 
+#### Behavior:
+
+When a DJ clicks record for the first time the loop recorder locks the
+beat number menu, so that it cannot be changed. This is necessary to
+record second layers.
+
+The recorder will record the specified number of beats then immediately
+begin playing those recorded beats back through the main output. The
+dry/wet knob controls the mix between the Main mix and the loop
+recorder.
+
+If the record button is pressed again, the loop recorder will record a
+second layer that is punched into the first layer and can be of a length
+of 0 up to the length of the original loop. The DJ will have to press
+stop to stop recording the second layer, although I think that it might
+be good to have it stop automatically when the loop repeats (I’m going
+back and forth about this).
+
+After a second layer is recorded, the undo button is activated and if
+pressed it reverts the loop recorder to the previous state before the
+most recent recording. If clicked, the undo button becomes a redo
+button. There will be one level of undo/redo available in the loop
+recorder. When the record button is clicked, the current state is
+committed, and the new layer being recorded is now what will be
+removed/restored by undo.
+
+Once a DJ is satisfied with the loop she can save it to disk to be used
+in a sampler or main deck using the save button. I’ve also toyed with
+the idea of have a smart export feature which will automatically export
+the loop and add it to a sampler, but I need to flesh this idea out
+more.
+
 ### Requirements
 
   - Realtime Recording/Instant Playback

@@ -33,10 +33,9 @@ like Java than C.
 Minor feature enhancements can be sent to the [mailing
 list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
 
-Bigger changes can be done by [creating a
-branch](http://mixxx.org/wiki/doku.php/using_bazaar#general_procedure_for_distributed_use)
-on [Launchpad](https://code.launchpad.net/mixxx) and then proposing a
-merge when the changes reach a stable state.
+Bigger changes can be done by [creating a fork](using_git) on
+[Git](https://github.com/mixxxdj/mixxx) and then submitting a pull
+request when the changes reach a stable state.
 
 The best way to get familiar with the code base is to tackle some of the
 [easy bugs that can be fixed in a

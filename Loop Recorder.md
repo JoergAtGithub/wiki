@@ -17,6 +17,50 @@ Code 2013.
 
 ### High-Level Overview
 
+There are many possible options for an implementation of a loop
+recorder---everything from simple recording one section of audio into a
+sample that repeats to a fully realized remix and slicing engine. As
+Mixxx is targeted to both beginning and advanced DJs, the best approach
+for a loop recorder in Mixxx is to create a very simple interface that
+is easy to understand and use for beginning users, but that can be
+combined with existing functionality (such as samplers) to give
+professional users plenty of power and flexibility. Considering the
+fairly limited time for GSoC and the complexity of the project, the
+simpler the approach that I take is, the likelier it is that I’ll have a
+polished product by the end of the Summer that DJs will actually be able
+to use.
+
+A loop recorder offers DJs several creative possibilities:
+
+1\. Create new songs using existing loop libraries, by layering them
+together.
+
+Example: DJ B has a set of loops that she’d like to combine into a new
+mix. She knows that there are a couple different grooves that she would
+like to use throughout the song. She loads several loops into samplers
+to create the basic groove for the first section of the song. She starts
+recording the loop through the headphone out and records 16 beats into
+the loop recorder. She adds several layers to the groove, then saves the
+loop, loads it into a main deck and starts playing, while that's playing
+she repeats the process for a several new grooves, until she has a
+couple of different sections, which she transitions between to develop
+the song. She uses more samplers to add extra layers and develop each
+section.
+
+2\. Make mashups/remixes on the fly by recording and layering loops from
+several different songs/loop libraries.
+
+DJ X has several different sections from different songs that he knows
+he'd like to combine later in his set. While these songs are playing X
+records segments from main output to the loop recorder and saves each
+section he'd like to use. During the set he can also process and
+recombine some of the recorded loops by using the cue output and
+different signal processing. When the time comes to use the loops he can
+load them into samplers to play them back.
+
+3\. Create one-shot items from a song or loop on the fly to be triggered
+by either a hot key (probably in a sampler deck in Mixxx).
+
 ### Requirements
 
 ### Engine Modifications

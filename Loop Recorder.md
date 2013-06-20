@@ -129,6 +129,46 @@ Extras:
 
 ## Current Progress
 
+### GSoC 2013 Timeline
+
+#### June (Program begins June 17)
+
+  - Week 3: Flesh out structure and interface for loop controller
+    objects, begin work on LoopRecorder, put together skeletal GUI so we
+    I can test components as I develop them
+  - Week 4: Continue work on LoopRecorder class, get basic real time
+    recording working
+
+#### July
+
+  - Week 1: Focus work on LoopPlayer and LoopRecorderManager
+  - Week 2: Continue work on LoopPlayer and LoopRecorderManager,
+    integrate with Loop Recorder
+  - Week 3: Have a loop recorder that can record a single layer and play
+    it back by midterm evaluations.
+  - Week 4: Carl on vacation, may be able to work a few hours.
+  - Week 5 (GSoC Midterm Evaluation Week): Take stock of project
+    progress and revisit planning for the next phase of development.
+    Begin implementing multiple layer support.
+
+#### August
+
+  - Week 1 (8/5-8/11):Implement multiple layer support, begin work on
+    final GUI
+  - Week 2: Continue implementation of multiple layer support
+  - Week 3: Have fully function rough demo
+  - Week 4: Implement library export feature and loop table view
+
+#### September
+
+  - Week 1: Finalize GUI, documentation and do extensive on final
+    version.
+  - Week 2: Finalize GUI, documentation and do extensive on final
+    version.
+  - Week 3 (GSoC Suggested pencils down date): Finalize GUI,
+    documentation and do extensive on final version. Fix loose ends.
+  - Week 4: All coding done, prepare final report.
+
 ## Team
 
   - Carl Pillot (GSoC 2013 Student)

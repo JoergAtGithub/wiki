@@ -121,6 +121,17 @@ more.
 
 ### Controls
 
+| Key/Control     | What it Does                                                         |
+| --------------- | -------------------------------------------------------------------- |
+| Record          | On empty loop recorder, initiates loop recording.                    |
+| Play            | Plays stored loop, disabled if nothing has been recorded.            |
+| Undo/Redo       | By default undo 1 layer of changes. If clicked undo changes to redo. |
+| Save            | Save the loop to the Mixxx library.                                  |
+| Clear           | Clears all recorded loops.                                           |
+| Number of Beats | Sets the number of beats to automatically record                     |
+| Input source    | Toggles the Mixxx output that is directed into the loop recorder.    |
+| Dry/Wet         | Controls level of recorder sent back into the main mix.              |
+
 ### User Interface
 
 ## Work Breakdown

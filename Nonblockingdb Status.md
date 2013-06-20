@@ -17,6 +17,19 @@ You can find me there, and contact me through blogs comments:
 
 -----
 
+# What plans do I have for this summer?
+
+1.  Improve my Git skills
+2.  Get involved in developing of Mixxx
+3.  Solve different bugs on Mixxx
+4.  Build new scheme for database access in Mixxx
+5.  Test that scheme, try to find bottlenecks, possible deadlocks...
+6.  Code that scheme separate from Mixxx
+7.  Write documentation on scheme
+8.  Apply that scheme to Mixxx
+9.  Test Mixxx with my scheme
+10. PROFIT :)
+
 # Current status
 
 Currently I'm working on:

@@ -22,8 +22,9 @@ You can find me there, and contact me through blogs comments:
 Currently I'm working on:
 
 1.  Extended article to collect as much as possible information about
-    project and how to solve it.
-2.  My very approx. roadmap for this summer.
+    project and how to solve it:
+    <http://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>
+2.  My very approximate roadmap for this summer:
 
 **Roadmap:**
 

@@ -258,37 +258,22 @@ loop recorder object will be updated directly by the Engine Master, so
 that on each call it's updated with the latest output data from either
 the master or PFL output streams.
 
-I'm using two buffers referred to as main\_buffer, and scratch\_buffer.
-My idea for controlling playback is to have a loop buffer pointer in the
+I'm using two buffers referred to as buffer\_A, and buffer\_B. My idea
+for controlling playback is to have a loop buffer pointer in the
 LoopPlayer class, which changes depending on the recording state of the
 buffer.
 
-When recording 1st loop (loop recorder is empty):
+If at least one loop has already been recorder, copy buffer\_B to
+buffer\_A (commits a previously recorded two layer mix).
 
-Record selected output channel into main\_buffer AND scratch\_buffer,
-set playback pointer to first layer
+set play pointer to buffer\_B
 
-Lock beat length control until loop is cleared
+Record to buffer\_A mixing new audio with previously recorded audio
 
-When recording has finished, signal to loop controller that recording
-has finished, this will also start looped playback.
+When recording is finished, set play pointer to buffer\_A and signal
+that recording is done.
 
-When recording 2nd layer:
-
-Copy scratch\_buffer to main\_buffer (commits a previously recorded two
-layer mix)
-
-set play pointer to main\_buffer
-
-Record to scratch\_buffer mixing new audio with previously recorded
-audio
-
-When recording is finished, set play pointer to scratch buffer and
-signal that recording is done.
-
-Undo functionality resets the play pointer to the first buffer/redo
-resets it to scratch buffer.
-
-}
+Undo functionality resets the play pointer to the buffer\_B redo resets
+it to buffer\_A.
 
 ## Comments

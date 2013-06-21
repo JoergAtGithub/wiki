@@ -43,7 +43,7 @@ This score is the sum of a set of similarity functions, each of which
 outputs a float between 0 and 1 inclusive, multiplied by weight
 coefficients which add to 1. These weights can be specified by the user
 (possibly as an ordered list, or by using sliders to determine their
-relative importance.)
+relative importance).
 
 Two measures of sonic similarity will be added using the Vamp plugin
 architecture:

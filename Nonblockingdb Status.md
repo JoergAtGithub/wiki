@@ -37,12 +37,25 @@ You can find me there, and contact me through blogs comments:
     2.  Write article *"Overview of all what we have in Mixxx (Qt,
         SQLite, threads, …). What to do with it?"*:
         <https://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>
+    3.  Fork Mixxx on GitHub
 2.  Week *(24.06 -- 30.06)*
+    1.  Dig into Sqlite and define or find some suitable test cases 
+    2.  Dig into Mixxx and find all usage of db access, analyze it 
 3.  Week *(01.07 -- 07.07)*
+    1.  Write tests using "QtTestLib" framework
+    2.  Begin writing documentation
 4.  Week *(08.07 -- 14.07)*
+    1.  Writing the specs for a possible solution 
+    2.  Create separate repo with prototype
 5.  Week *(15.07 -- 21.07)*
+    1.   Start implementing of prototype database access class with
+        separate test project.
 6.  Week *(22.07 -- 28.07)*
+    1.  Add and test all possible database usage ways present in mixxx
+        to handled my DAO
 7.  Week *(29.07 -- 04.08)* 
+    1.  Finish prototype that is able to handle asynchrounous db access,
+        ..., flexible and extendable.
 
 <!-- end list -->
 
@@ -57,6 +70,8 @@ You can find me there, and contact me through blogs comments:
 4.  Week *(26.08 -- 01.09)*
 5.  Week *(02.09 -- 08.09)*
 6.  Week *(09.09 -- 15.09)*
+    1.  Iron out remaining Bugs
+    2.  Merge my branch with master
 7.  Week *(16.09 -- 22.09)* 
 
 <!-- end list -->

@@ -119,6 +119,30 @@ more.
 
 ### Engine Modifications
 
+#### New Classes:
+
+`LoopRecorderManager` - Coordinates the UI and recording and playback of
+the loop recorder.
+
+`LoopRecorder` - Handles loop recording and is tied very closely to
+Engine Master, which provides the mixed output to the recorder. All
+loops will be recorded as LPCM audio for performance and quality
+reasons.
+
+`EngineLoopDeck` - subclass of EngineDeck for loop playback. Handles
+special mixing of recorded audio.
+
+#### Main changes required to Mixxx Engine:
+
+Add audio routing to the loop recorder in Engine Master. This will need
+to be done in realtime, so the code will probably differ from the
+existing recording code, which does processing in side chains.
+
+Modify buffering and channel code to allow continuous playback, which
+switches between buffers. This will be a pretty challenging task.
+
+Implement new SoundSource class for internally stored loops?
+
 ### Controls
 
 | Key/Control     | What it Does                                                         |

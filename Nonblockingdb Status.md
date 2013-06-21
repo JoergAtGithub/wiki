@@ -30,25 +30,50 @@ You can find me there, and contact me through blogs comments:
 9.  Test Mixxx with my scheme
 10. PROFIT :)
 
-# Schedule
+# Weeks schedule / Tasks
 
-1.  Week *(17.06 -- 23.06)*
+1.  **Week *(17.06 -- 23.06)***
+    1.  Write down this schedule
+    2.  Write article *"Overview of all what we have in Mixxx (Qt,
+        SQLite, threads, …). What to do with it?"*:
+        <https://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>
 2.  Week *(24.06 -- 30.06)*
 3.  Week *(01.07 -- 07.07)*
 4.  Week *(08.07 -- 14.07)*
 5.  Week *(15.07 -- 21.07)*
 6.  Week *(22.07 -- 28.07)*
-7.  Week *(29.07 -- 04.08)* : 29.07 midterm deadline begins 20.08
-    midterm deadline ends
-8.  Week *(05.08 -- 11.08)*
-9.  Week *(12.08 -- 18.08)*
-10. Week *(19.08 -- 25.08)*
-11. Week *(26.08 -- 01.09)*
-12. Week *(02.09 -- 08.09)*
-13. Week *(09.09 -- 15.09)*
-14. Week *(16.09 -- 22.09)* : 16.09 pencils down begins
-15. Week *(23.09 -- 29.09)* : 27.09 finalterm deadline begins
-16. 01.10 : end
+7.  Week *(29.07 -- 04.08)* 
+
+<!-- end list -->
+
+  - **Important date** *29.07* -- Begins midterm deadline
+  - **Important date** *20.08* -- Midterm deadline
+
+<!-- end list -->
+
+1.  Week *(05.08 -- 11.08)*
+2.  Week *(12.08 -- 18.08)*
+3.  Week *(19.08 -- 25.08)*
+4.  Week *(26.08 -- 01.09)*
+5.  Week *(02.09 -- 08.09)*
+6.  Week *(09.09 -- 15.09)*
+7.  Week *(16.09 -- 22.09)* 
+
+<!-- end list -->
+
+  - **Important date** *16.09* -- Pencils down begins
+
+<!-- end list -->
+
+1.  Week *(23.09 -- 29.09)* : 
+
+<!-- end list -->
+
+  - **Important date** *27.09* -- Finalterm deadline
+
+<!-- end list -->
+
+1.  01.10 : end
 
 # Current status
 

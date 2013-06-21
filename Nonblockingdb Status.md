@@ -30,6 +30,26 @@ You can find me there, and contact me through blogs comments:
 9.  Test Mixxx with my scheme
 10. PROFIT :)
 
+# Schedule
+
+1.  Week *(17.06 -- 23.06)*
+2.  Week *(24.06 -- 30.06)*
+3.  Week *(01.07 -- 07.07)*
+4.  Week *(08.07 -- 14.07)*
+5.  Week *(15.07 -- 21.07)*
+6.  Week *(22.07 -- 28.07)*
+7.  Week *(29.07 -- 04.08)* : 29.07 midterm deadline begins 20.08
+    midterm deadline ends
+8.  Week *(05.08 -- 11.08)*
+9.  Week *(12.08 -- 18.08)*
+10. Week *(19.08 -- 25.08)*
+11. Week *(26.08 -- 01.09)*
+12. Week *(02.09 -- 08.09)*
+13. Week *(09.09 -- 15.09)*
+14. Week *(16.09 -- 22.09)* : 16.09 pencils down begins
+15. Week *(23.09 -- 29.09)* : 27.09 finalterm deadline begins
+16. 01.10 : end
+
 # Current status
 
 Currently I'm working on:

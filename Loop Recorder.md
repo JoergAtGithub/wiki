@@ -248,8 +248,8 @@ Currently in Progress.
 
 This is a short walkthrough of a possible implementation for recording
 multiple layers and implementing single-level undo/redo support. It uses
-three buffers to store the different recordings and manipulate the
-mixing of the loop.
+buffers to store the different recordings and manipulate the mixing of
+the loop.
 
 Loop recording must happen in realtime, I don't think that we can spin
 off an extra process like the current recording code (this has
@@ -275,5 +275,9 @@ that recording is done.
 
 Undo functionality resets the play pointer to the buffer\_B redo resets
 it to buffer\_A.
+
+This method assumes dynamic memory allocation, which is probably not
+possible in a realtime environment. I'm currently brainstorming other
+approaches to this problem.
 
 ## Comments

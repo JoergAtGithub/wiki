@@ -174,7 +174,7 @@ Implement new SoundSource class for internally stored loops?
         2.  Undo Operations 
         3.  Clear operations
         4.  BPM Matching
-    3.  Loop Player (EngineChannel subclass)
+    3.  Loop Player
         1.  Read audio from buffers and implement switching between the
             buffers.
         2.  Integrate with Engine Master, so that audio is routed back

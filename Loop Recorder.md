@@ -201,8 +201,7 @@ Extras:
 #### June (Program begins June 17)
 
   - Week 3: Flesh out structure and interface for loop controller
-    objects, begin work on LoopRecorder, put together skeletal GUI so we
-    I can test components as I develop them
+    objects, begin work on LoopRecorder, put together skeletal GUI
   - Week 4: Continue work on LoopRecorder class, get basic real time
     recording working
 

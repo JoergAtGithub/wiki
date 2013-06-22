@@ -27,8 +27,7 @@ See Also
 
   - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
 
-You can also use
-<http://qt.nokia.com/products/developer-tools Qt Creator> for Mixxx
+You can also use [Qt Creator](http://qt-project.org/downloads) for Mixxx
 development by creating a Qt project file for the source files. You can
 do this by running 'qmake -project' under mixxx's root directory. When
 using the created project file, you are able to use Creators editing

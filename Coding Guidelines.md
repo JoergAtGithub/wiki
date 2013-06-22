@@ -252,7 +252,7 @@ underscore.
 File includes should be done in the following order:
 
 1.  System Includes
-2.  QT Includes
+2.  Qt Includes
 3.  Includes of Mixxx library dependencies
 4.  Mixxx local includes
 5.  Class forward-declarations

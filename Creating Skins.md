@@ -16,10 +16,9 @@ save you time eventually.
 
 **You can download the most recent source file for the *"Outline*" skin
 used in the following example from
-[Launchpad](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/trunk/files/head:/mixxx/res/images/templates/),
-which is our project management platform.** The file is GPL-licensed and
-free available in SVG format for use with
-[Inkscape](/creating_skins#tools).
+[Github](https://github.com/mixxxdj/mixxx/tree/master/res/images/templates),
+our code hosting platform.** The file is GPL-licensed and free available
+in SVG format for use with [Inkscape](/creating_skins#tools).
 
 Start a new skin by navigating to your local [Mixxx resource
 folder](/creating_skins#skin_faq), duplicate the "Outline" directory and

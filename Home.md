@@ -132,8 +132,8 @@ Mixxx is an accepted mentoring organization for Google Summer of Code,
 
   - [Loop Recorder](loop_recorder) by Carl Pillot.
   - [Community Portal](gsoc2013_community_portal) by 魏欣.
-  - [Library Concurrency Refactoring](gsoc2013_library_concurrency) by
-    Nazar Gerasimchuk.
+  - [Library Concurrency Refactoring](nonblockingdb_status) by Nazar
+    Gerasymchuk.
   - [Intelligent Track Suggestions](gsoc2013_track_selector) by Chris
     Johnson-Roberson.
 

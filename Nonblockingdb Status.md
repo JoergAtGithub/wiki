@@ -47,27 +47,40 @@ In general, I see two milestones:
         SQLite, threads, …). What to do with it?"*:
         <https://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>.
     3.  Fork Mixxx on GitHub.
-2.  Week *(24.06 -- 30.06)*
+2.  **Week *(24.06 -- 30.06)***
     1.  Dig into Sqlite and define or find some suitable test cases.
-    2.  Dig into Mixxx and find all usage of db access, analyze it.
-    3.  Prepare UML class dias.
-    4.  Fix some bugs.
+    2.  Dig into Mixxx and find all usage of db access, analyze it,
+        write brief description of different types of DB usage in Mixxx
+        and think on what to aware of when designing solution.
+    3.  Prepare UML class (and probably, sequence) dias for nowadays
+        Mixxx DB accesss. // For this purposes I use Dia
+        (<http://projects.gnome.org/dia/>), ArgoUML
+        (<http://argouml-stats.tigris.org/>) or Umrello
+        (<http://uml.sourceforge.net/)//>
+    4.  Find all related bugs.
 3.  Week *(01.07 -- 07.07)*
-    1.  Write tests using "QtTestLib" framework.
-    2.  Begin writing documentation.
-    3.  Fix some bugs.
-4.  Week *(08.07 -- 14.07)*
-    1.  Writing the specs for a possible solution.
-    2.  Create separate repo for prototype.
-    3.  Fix some bugs.
-5.  Week *(15.07 -- 21.07)*
-    1.  Start implementing of prototype database access class with
+    1.  Begin writing documentation.
+    2.  Writing the specs for a possible solution.
+    3.  Prepare UML class (and probably, sequence) dias for new DB
+        accesss in Mixxx.
+    4.  Create separate repo on GitHub for prototype.
+    5.  Start implementing of prototype database access class with
         separate test project.
-    2.  Fix some bugs.
+    6.  Start Open discussion to involve other developers to review
+        prototype. 
+    7.  (Try to) Fix some bugs.
+4.  Week *(08.07 -- 14.07)*
+    1.  Implement prototype database access class with separate test
+        project.
+    2.  (Try to) Fix some bugs.
+5.  Week *(15.07 -- 21.07)*
+    1.  Get acquainted with "Google Test" framework. 
+    2.  Write tests using "Google Test" framework.
+    3.  (Try to) Fix some bugs.
 6.  Week *(22.07 -- 28.07)*
     1.  Add and test all possible ways of database usage present in
         Mixxx handled by DAO.
-    2.  Fix some bugs.
+    2.  (Try to) Fix some bugs.
 7.  Week *(29.07 -- 04.08)* 
     1.  Finish prototype that is able to handle asynchronous db access,
         ..., flexible and extendable.
@@ -84,19 +97,19 @@ In general, I see two milestones:
 1.  Week *(05.08 -- 11.08)*
     1.  Plan (re-plan) schedule of work for finalterm.
     2.  ...
-    3.  Fix some bugs.
+    3.  (Try to) Fix some bugs.
 2.  Week *(12.08 -- 18.08)*
     1.  ...
-    2.  Fix some bugs.
+    2.  (Try to) Fix some bugs.
 3.  Week *(19.08 -- 25.08)*
     1.  ...
-    2.  Fix some bugs.
+    2.  (Try to) Fix some bugs.
 4.  Week *(26.08 -- 01.09)*
     1.  ...
-    2.  Fix some bugs.
+    2.  (Try to) Fix some bugs.
 5.  Week *(02.09 -- 08.09)*
     1.  ...
-    2.  Fix some bugs.
+    2.  (Try to) Fix some bugs.
 
 <!-- end list -->
 

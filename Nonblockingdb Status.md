@@ -15,6 +15,8 @@ You can find me there, and contact me through blogs comments:
   - <http://neval8.wordpress.com/> (EN, UA) -- my personal blog with
     tips'n'tricks, hacks and so on.
 
+My fork of Mixxx at GitHub: <https://github.com/troyane/mixxx>
+
 -----
 
 # What plans do I have for this summer?

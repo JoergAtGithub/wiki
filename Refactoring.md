@@ -23,3 +23,4 @@ this is up to date.
   - Engine deal with floats -1/1. get rid conversion on output in
     interleaving (would potentially speed up interleaving)
   - vinyl control gain into vinyl control processor
+  - DISALLOW\_COPY\_AND\_ASSIGN is redundant for QObject derivatives.

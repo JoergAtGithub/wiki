@@ -15,9 +15,9 @@ criteria.
 
 The recommendations of the track suggestion feature will be available to
 the user through a "Selector" option in the sidebar (and to other code,
-such as the AutoDJ feature, through the **SelectorRank** class). This
-feature should be usable whether the DJ is planning her set in advance
-or choosing the next track on the fly.
+such as the AutoDJ feature, through the **SelectorLibraryTableModel**
+class). This feature should be usable whether the DJ is planning her set
+in advance or choosing the next track on the fly.
 
 First, the library will be filtered according to user-specified
 criteria. The results will then be ranked based on several metrics,
@@ -43,7 +43,8 @@ This score is the sum of a set of similarity functions, each of which
 outputs a float between 0 and 1 inclusive, multiplied by weight
 coefficients which add to 1. These weights can be specified by the user
 (possibly as an ordered list, or by using sliders to determine their
-relative importance).
+relative importance). Then, the resulting similarity score will be shown
+as a match percentage, and used to sort the list of followups.
 
 Two measures of sonic similarity will be added using the Vamp plugin
 architecture:
@@ -58,41 +59,40 @@ Energy can be precalculated for all tracks along with the BPM and key
 analysis, and added as another column to the library table. Similarity
 is just (1 - difference in energy).
 
-The timbral similarity plugin returns distances for a group of tracks in
-relation to a single starting point (i.e. the currently playing track).
-However, this would require N\*(N+1)/2 analyses to calculate in advance
-for N tracks. For this reason, the similarity will instead be calculated
-on the fly solely for tracks that already meet other criteria, i.e.
-matching BPM and key. These results will be cached.
+The timbral similarity plugin will estimate a multivariate Gaussian
+model of the MFCCs for each track in advance. Then, the symmetrized KL
+divergence will be calculated on the fly, finding the distance of each
+potential followup in relation to the seed track.
 
-**TODO: Testing is needed to determine whether the similarity plugin is
-sufficiently performant for this purpose, or if this idea should be
-scrapped.**
-
-Finally, genre tags on audio files are sometimes too vague to be useful.
-Thus, genre metadata will be supplemented with free-text tags derived
+Finally, genre metadata will be supplemented with free-text tags derived
 from online sources, including MusicBrainz and Last.FM. At analysis
 time, these tags will be downloaded and stored in a table of the local
 SQLite database. Then, a simple metric known as the Jaccard index (\# of
 tags in common / total \# of tags for both tracks) can be calculated to
-give a measure of similarity between 0 and 1.
+give a measure of similarity between 0 and 1, which will be added to the
+overall similarity score.
 
 ### Requirements
 
   - Match tracks according to user-specified filters
+  - Precalculate Gaussian models of track MFCCs
   - Rank the results using similarity score
   - Retrieve additional metadata (genre tags) for tracks
   - Calculate track energy, tag similarity
-  - Analyze (small) sets of tracks for rhythmic/timbral similarity on
-    the fly
-  - must not interfere with performance (disable on slow machines, or
-    even scrap?)
+  - Compare (small) sets of tracks for rhythmic/timbral similarity using
+    KL divergence
   - GUI Widgets
   - Selector view
-  - choose which filters are active
-  - BPM range slider
-  - Selection criteria preference pane
-  - set the relative importance of similarity functions
+
+<!-- end list -->
+
+``` 
+    * choose which filters are active
+    * BPM range slider
+* Selection criteria preference pane
+    * set default filters 
+    * set the relative importance of similarity functions
+```
 
 ## Work Breakdown
 
@@ -104,7 +104,7 @@ give a measure of similarity between 0 and 1.
 
 ``` 
     * allow to search for previously-used as follow-up 
-* create **SelectorRank** class to return a ranked list of songs according to user's weighted similarity function
+* modify **SelectorLibraryTableModel** class to rank a list of songs according to user's weighted similarity function
 * Energy and Timbral Similarity Plugins
 * **AnalyzerEnergy**
 * **AnalyzerTimbre**
@@ -115,7 +115,6 @@ give a measure of similarity between 0 and 1.
 * create **LastFmClient** using liblastfm
 * **TODO: create generic class for getting and storing data from RESTful APIs?**
 * UI
-* **SelectorLibraryTableView**
 * **DlgSelector**
 * **DlgPrefSelector**
 * Add **TrackModel** capability to context menus - "Mark as Follow-up"

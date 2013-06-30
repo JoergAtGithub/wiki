@@ -255,6 +255,26 @@ Once you've made local changes you would like `ywwg` to accept, you can
 submit a pull request to `ywwg` on GitHub or just contact him in person
 to ask him to merge changes from your branch.
 
+# GUI clients
+
+Here's a list of graphical Git clients that Mixxx developers have
+tested:
+
+#### Cross-Platform
+
+  - [SourceTree](http://www.sourcetreeapp.com/) - Is a free Mercurial
+    and Git Client for Windows and Mac that provides a graphical
+    interface for your Hg and Git repositories. (Tested by Jus on Mac)
+  - [SmartGit/HG](http://www.syntevo.com/smartgithg/) - Is a full
+    featured Git, Mercurial or SVN client for Windows, Mac and Linux. It
+    is free for non-commercial use. (Tested by Jus on Linux)
+
+#### Windows
+
+#### Mac OS X
+
+#### Linux
+
 # Other Resources
 
 Here are some handy and great guides to learning how to use Git.

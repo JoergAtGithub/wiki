@@ -1,6 +1,37 @@
-# Translators
+# Translating Mixxx
 
-FIXME **Work in progress-** --- *\[\[|jus\]\] 2013/02/03 16:13*
+FIXME **Work in progress-** --- *[jus](jus) 2013/06/30 09:03*
+
+### Introduction
+
+#### Recommended skills for Translators
+
+  - Computer experience -- being able to comfortably use the tools
+    required in the translation process, like looking up difficult words
+    in online dictionaries.
+  - Experience in Djìng and using audio software -- you'll benefit from
+    it because you already know the typical concepts and terms.
+  - Bilingual -- fluent in both written English and the language(s) you
+    will be translating into. Casual knowledge of either one will make
+    translating difficult for you, or make the localization you create
+    confusing to native speakers.
+  - You should be familiar with human language constructs: nouns, verbs,
+    articles, etc., different types of each, and be able to identify
+    variations of their contexts in English.
+
+#### About Locales
+
+Locales customize programs to languages and regional dialects. Often
+locales correspond to countries, as is the case with Portuguese
+(Portugal) and Portuguese (Brazil).
+
+You can do a translation for any locale, such as German (Germany)
+(de\_DE) or German (Austria) (de\_AT), to adjust for regional spelling
+and idioms. A locale will define how characters are sorted, how the date
+and time are represented, the names of the days of the week and months
+of the year.
+
+The default locale of Mixxx is English (United States) (en\_US).
 
 ## Special characters
 

@@ -33,18 +33,15 @@ backend and list the match results for user.
 
   - Core functions 
 
-<!-- end list -->
+Once a local mapping file isn’t searched during the initialization,
+Mixxx will give a notice message box to user, such as “Sorry,Mixxx
+cann’t select a perfect mapping for you from local library, you can go
+to Preferences-\>Controller widget to get a right one by yourself
+through our ‘Mapping Preset Manager’”.
 
-  - Once a local mapping file isn’t searched during the initialization,
-    Mixxx will give a notice message box to user, such as “Sorry,Mixxx
-    cann’t select a perfect mapping for you from local library, you can
-    go to Preferences-\>Controller widget to get a right one by yourself
-    through our ‘Mapping Preset Manager’”.
-  - If Mixxx load a preset for the devices at the beginning, the result
-    will be showed on ‘dlgprefcontrollerdlg.ui’ just like the current
-    version. A few changes to ‘dlgprefcontrollerdlg.ui’, see Fig.1.
-
-<!-- end list -->
+If Mixxx load a preset for the devices at the beginning, the result will
+be showed on ‘dlgprefcontrollerdlg.ui’ just like the current version. A
+few changes to ‘dlgprefcontrollerdlg.ui’, see Fig.1.
 
 ``` 
       - add a device picture. This is very easy to implement, but will help some users a lot. Through this intuitive image, User will easily know whether a right map has be done comparing with their devices at their first sight of the ‘dlgprefcontrollerdlg.ui’. Of course, if no file can be loaded, there will display nothing.

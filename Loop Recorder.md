@@ -117,9 +117,7 @@ more.
 * Incorporates with 
 ```
 
-### Engine Modifications
-
-#### New Classes:
+### New Classes:
 
 `LoopRecorderManager` - Coordinates the UI and recording and playback of
 the loop recorder.
@@ -132,7 +130,11 @@ reasons.
 `EngineLoopDeck` - subclass of EngineDeck for loop playback. Handles
 special mixing of recorded audio.
 
-#### Main changes required to Mixxx Engine:
+`LoopBuffer` - class that provides an interface for manipulating loop
+buffer recording. Abstracts the details of loop recording away from the
+rest of the looper code.
+
+### Main changes required to Mixxx Engine:
 
 Add audio routing to the loop recorder in Engine Master. This will need
 to be done in realtime, so the code will probably differ from the

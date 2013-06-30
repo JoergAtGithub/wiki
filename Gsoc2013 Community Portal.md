@@ -117,17 +117,19 @@ with the following functions:
 * users rate and comment on preset files
 * Restful API Engine
 * build a api server with django and tastypie
-* design protobuf for api response and request formats
-* api/search
-* api/upload
-* api/details
-* api/checkversion
-* api/rate
-* api/download
+* design API
+    * search
+    * upload
+    * details
+    * checkversion
+    * rate
+    * download
 * Deploy
 ```
 
 # Current Progress
+
+design API
 
 # Team
 

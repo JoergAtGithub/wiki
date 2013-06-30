@@ -2,9 +2,9 @@
 
 FIXME **Work in progress-** --- *[jus](jus) 2013/06/30 09:03*
 
-### Introduction
+## Introduction
 
-#### Recommended skills for Translators
+### Recommended skills for Translators
 
   - Computer experience -- being able to comfortably use the tools
     required in the translation process, like looking up difficult words
@@ -19,7 +19,7 @@ FIXME **Work in progress-** --- *[jus](jus) 2013/06/30 09:03*
     articles, etc., different types of each, and be able to identify
     variations of their contexts in English.
 
-#### About Locales
+### About Locales
 
 Locales customize programs to languages and regional dialects. Often
 locales correspond to countries, as is the case with Portuguese

@@ -15,6 +15,8 @@ be left out in the cold. She should have the option of connecting to
 mixxx.org to see if there are any official or user-contributed mappings
 available for download.
 
+# Design
+
 # Work Breakdown
 
   - Database
@@ -54,6 +56,7 @@ available for download.
 * api/checkversion
 * api/rate
 * api/download
+* Deploy
 ```
 
 # Current Progress

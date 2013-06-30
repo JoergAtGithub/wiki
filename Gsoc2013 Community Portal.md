@@ -46,7 +46,14 @@ few changes to ‘dlgprefcontrollerdlg.ui’, see Fig.1.
 ``` 
       - add a device picture. This is very easy to implement, but will help some users a lot. Through this intuitive image, User will easily know whether a right map has be done comparing with their devices at their first sight of the ‘dlgprefcontrollerdlg.ui’. Of course, if no file can be loaded, there will display nothing.
       - change the drop-down list to a button with the name “Mapping Preset Manager”. When the button is pushed, another dialog like Fig.2 will be showed. 
+* Fig.1
 ```
+
+[[/media/controllers.png|]]
+
+  - Fig.2
+
+[[/media/manager.png|]]
 
 ## Support getting controller mapping resources from web
 

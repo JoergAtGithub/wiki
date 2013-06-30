@@ -48,7 +48,35 @@ few changes to ‘dlgprefcontrollerdlg.ui’, see Fig.1.
       - change the drop-down list to a button with the name “Mapping Preset Manager”. When the button is pushed, another dialog like Fig.2 will be showed. 
 ```
 
-## Get controller mappings from web
+## Support getting controller mapping resources from web
+
+  - Use Case
+
+Mixxx can not do an automical map or an perfect map from local library
+at the beginning, so users need to choose one by themselves.Mapping
+files needed by user may exist in local or website, we’d better provide
+an API for user to query both local and cloud depository.Most users are
+not very sure which one to choose, so we’d better make an intelligent
+recommendation for users, especially for novice users, to reduce the
+sense of fear of using mixxx at the beginning. At the same time, it is
+also very convenience.A mapping file has been downloaded into local
+library, but maybe it has some bugs or is not that perfect. And there is
+a new update version on the mixxx forum or somewhere, so when users try
+to apply a local preset in the case of network connected, we’d better to
+advice users to update to a new version of preset.
+
+  - Core functions
+
+Here I think we can create a new feature called "Mapping Files Manager",
+with the following functions:
+
+``` 
+  - A search bar, through which user can get some likely right mapping files coing form local and cloud.
+  - A local tab and a cloud tab, which can list the searching results seperately
+  - Intelligent recommendation system, which can do an intelligent sort for users searching results and show the results with the most possibility at the top.
+  - friendly and cool devices UI display, called mapping cover, which can help users locate the mapping file item quickly. 
+  - displaying the source(mixxx or mixxx forum or other websites), grade level, certification or not, and the authors.
+```
 
 # Work Breakdown
 

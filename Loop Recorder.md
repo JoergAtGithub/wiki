@@ -97,6 +97,8 @@ more.
 
   - Realtime Recording/Instant Playback
   - Loop is available to playback immediately
+  - Record from different input sources (Main out, PFL, decks,
+    microphone, etc.)
   - Multi-layer recording
   - Record unlimited number of layers in loop recorder (in practice it
     probably )

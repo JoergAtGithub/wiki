@@ -48,6 +48,12 @@ In general, I see two milestones:
         <https://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>.
     3.  Fork Mixxx on GitHub.
 2.  **Week *(24.06 -- 30.06)***
+    1.  Dig into Mixxx and find all usage of db access, analyze it,
+        write brief description of different types of DB usage in Mixxx
+        and think on what to aware of when designing solution.
+    2.  Find all related bugs.
+    3.  (some of items was moved forward to next week)
+3.  **Week *(01.07 -- 07.07)***
     1.  Dig into Sqlite and define or find some suitable test cases.
     2.  Dig into Mixxx and find all usage of db access, analyze it,
         write brief description of different types of DB usage in Mixxx
@@ -57,18 +63,16 @@ In general, I see two milestones:
         (<http://projects.gnome.org/dia/>), ArgoUML
         (<http://argouml-stats.tigris.org/>) or Umrello
         (<http://uml.sourceforge.net/)//>
-    4.  Find all related bugs.
-3.  Week *(01.07 -- 07.07)*
-    1.  Begin writing documentation.
-    2.  Writing the specs for a possible solution.
-    3.  Prepare UML class (and probably, sequence) dias for new DB
+    4.  Begin writing documentation.
+    5.  Writing the specs for a possible solution.
+    6.  Prepare UML class (and probably, sequence) dias for new DB
         accesss in Mixxx.
-    4.  Create separate repo on GitHub for prototype.
-    5.  Start implementing of prototype database access class with
+    7.  Create separate repo on GitHub for prototype.
+    8.  Start implementing of prototype database access class with
         separate test project.
-    6.  Start Open discussion to involve other developers to review
+    9.  Start Open discussion to involve other developers to review
         prototype. 
-    7.  (Try to) Fix some bugs.
+    10. (Try to) Fix some bugs.
 4.  Week *(08.07 -- 14.07)*
     1.  Implement prototype database access class with separate test
         project.

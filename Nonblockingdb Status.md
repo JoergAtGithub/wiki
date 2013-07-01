@@ -70,13 +70,13 @@ In general, I see two milestones:
     7.  Create separate repo on GitHub for prototype.
     8.  Start implementing of prototype database access class with
         separate test project.
-    9.  Start Open discussion to involve other developers to review
-        prototype. 
-    10. (Try to) Fix some bugs.
+    9.  (Try to) Fix some bugs.
 4.  Week *(08.07 -- 14.07)*
-    1.  Implement prototype database access class with separate test
+    1.  Start Open discussion to involve other developers to review
+        prototype.
+    2.  Implement prototype database access class with separate test
         project.
-    2.  (Try to) Fix some bugs.
+    3.  (Try to) Fix some bugs.
 5.  Week *(15.07 -- 21.07)*
     1.  Get acquainted with "Google Test" framework. 
     2.  Write tests using "Google Test" framework.

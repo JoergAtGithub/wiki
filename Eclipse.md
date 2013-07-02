@@ -89,9 +89,10 @@ You should also configure the code formatter to Mixxx code style:
 <http://www.mixxx.org/wiki/doku.php/coding_guidelines>
 
 Right Click on the project -\> Properties -\> C/C++ General -\>
-Formatter -\> Configure workspace settings New -\> Profile name =
-`Mixxx` from Template K\&R Indentation = Spaces only New Lines = check
-before ....
+Formatter -\> Configure workspace settings
+
+New -\> Profile name = `Mixxx` from Template K\&R Indentation = Spaces
+only New Lines = check before ....
 
 Now you can setup run configurations: Menu Run -\> Run configurations
 -\> New Icon C/C++ Application = mixxx Project = mixxx Arguments =

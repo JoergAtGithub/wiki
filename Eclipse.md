@@ -29,13 +29,14 @@ Ubuntu Packages to Install (but possible outdated) would be:
 # Optional Eclipse plugins
 
   - SCons plugin: 
-  - <http://sconsolidator.com> and ***follow*** the instructions there
-    on how to install and configure. 
+  - See <http://sconsolidator.com> and ***follow*** the instructions
+    there on how to install and configure. 
   - From Eclipse menu, you can use File -\> Import -\> C/C++ -\> New
     SCons project from existing source.
-  - If you run into problems, please see: forum
-    <http://www.sconsolidator.ch/projects/sconsolidator/boards> of FAQ:
-    <http://www.sconsolidator.ch/projects/sconsolidator/wiki/FAQ>
+  - If you run into problems, please see:
+    [Forum](http://www.sconsolidator.ch/projects/sconsolidator/boards)
+    or
+    [FAQ](http://www.sconsolidator.ch/projects/sconsolidator/wiki/FAQ)
 
 <!-- end list -->
 

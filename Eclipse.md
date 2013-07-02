@@ -82,6 +82,9 @@ Setup Debug:
   - Run -\> Debug configurations 
   - Next step similar to "Setup run"
   - You .gdbinit should be setup before, but thats an other story.
+  - Sample:
+    <http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit>
+    
   - "Debug" button for run Mixxx
 
 For git integration (in case of using a git clone of mixxx):

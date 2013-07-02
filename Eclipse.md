@@ -43,24 +43,25 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 # Step by Step Setup
 
-For Eclipse Indigo
+For Eclipse Indigo (and Kepler)
 
   - Start Eclipse
-  - File \> New \> Makefile Project with Existing Code
-  - Set Project name to your mixxx branch name e.g. mixxx
-  - Brows to your mixxx folder e.g. \~/workspace/mixxx/mixxx
-  - Ceck Language C++ (Uncheck C)
+  - File -\> New -\> Makefile Project with Existing Code
+  - Set Project name to your mixxx branch name e.g. `mixxx`
+  - Browse to your mixxx folder e.g. `~/workspace/mixxx/mixxx`
+  - Check Language C++ (uncheck C)
   - Select Toolchain for indexer setting = Linux GCC (in case of Linux
     host) 
   - Finish 
-  - Right click on the new project in Project Explorer \> Properties \>
-    C/C++ Build
+  - Right click on the new project in Project Explorer -\> Properties
+    -\> C/C++ Build (if Project Explorer is hide, go to Window -\> Show
+    View -\> Project Explorer)
   - Uncheck "Use default build command"
-  - Build command = scons
-  - Switch to Behaviour tab
+  - Build command = `scons`
+  - Switch to Behavior tab
   - Built: remove "all"
   - Clean: remove "clean" and set "-c"
-  - check "Enable paralel builds" 
+  - check "Enable parallel builds" 
 
 For git integration (in case of using a git clone of mixxx):
 

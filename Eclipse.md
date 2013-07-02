@@ -63,6 +63,27 @@ For Eclipse Indigo (and Kepler)
   - Clean: remove "clean" and set "-c"
   - check "Enable parallel builds" 
 
+Now Mixxx should build within Eclipse with "Build Project" (Hammer icon)
+
+Setup Run:
+
+  - Run -\> Run configurations 
+  - Select C/C++ Application 
+  - Press "New" button 
+  - Main tab:
+  - C/C++ Application = mixxx
+  - Disable auto build
+  - Arguments tab 
+  - Program arguments = --resourcePath res --developer 
+  - "Run" button for run Mixxx
+
+Setup Debug:
+
+  - Run -\> Debug configurations 
+  - Next step similar to "Setup run"
+  - You .gdbinit should be setup before, but thats an other story.
+  - "Debug" button for run Mixxx
+
 For git integration (in case of using a git clone of mixxx):
 
   - Right click on the project in Project Explorer \> Team \> Share

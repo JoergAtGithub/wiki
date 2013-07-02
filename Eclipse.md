@@ -83,8 +83,10 @@ Setup Debug:
   - Next step similar to "Setup run"
   - You .gdbinit should be setup before, but thats an other story.
   - Sample:
-    <http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit>
+    [.gedbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit)
     
+  - Qt pretty printer
+    [qt4.py](http://quickgit.kde.org/?p=kdevelop.git&a=blob&h=1373a79f38a359f4d0756e0bc7d14317311a16f8&f=debuggers%2Fgdb%2Fprinters%2Fqt4.py&o=plain)
   - "Debug" button for run Mixxx
 
 For git integration (in case of using a git clone of mixxx):

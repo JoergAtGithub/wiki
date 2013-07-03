@@ -148,4 +148,6 @@ Formatter -\> Configure workspace settings
 ### Other tweaks
 
 You can improve the compile speed if you only enable required error
-parsers Preferences -\> C/C++ Build -\> Settings -\> Error Parsers
+parsers
+
+Preferences -\> C/C++ Build -\> Settings -\> Error Parsers

@@ -156,4 +156,9 @@ Formatter -\> Configure workspace settings
 You can improve the compile speed if you only enable required error
 parsers
 
-Preferences -\> C/C++ Build -\> Settings -\> Error Parsers
+  - Preferences -\> C/C++ Build -\> Settings -\> Error Parsers 
+
+To see the whole build in the Console tab
+
+  - Preferences -\> C/C++ -\> Build -\> console
+  - Limit console output = 10000

@@ -144,3 +144,8 @@ Formatter -\> Configure workspace settings
   - New -\> Profile name = `Mixxx` from Template K\&R
   - Indentation = Spaces only
   - New Lines = check before ....
+
+### Other tweaks
+
+You can improve the compile speed if you only enable required error
+parsers Preferences -\> C/C++ Build -\> Settings -\> Error Parsers

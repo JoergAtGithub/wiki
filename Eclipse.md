@@ -133,6 +133,12 @@ reading the compiler commands, but it is safer to do the job manual:
     .gdbinit) and adapt them to your
     system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>
 
+<!-- end list -->
+
+  - Possible issue: [Why doesn't Eclipse know about some of Qt's symbols
+    / class
+    names?](http://qt-project.org/faq/answer/why_doesnt_eclipse_know_about_some_of_qts_symbols_class_names)
+
 ### Eclipse code formatter
 
 You should also configure the code formatter to Mixxx code style:

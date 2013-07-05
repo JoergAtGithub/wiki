@@ -9,7 +9,7 @@ are some tips to help you do that.*
 ### Linux
 
   - **Enable Real-Time scheduling** Make sure you are running Mixxx with
-    enough rightst. You can check this within Mixxx: preferences-\>Sound
+    enough rights. You can check this within Mixxx: preferences-\>Sound
     Hardware. If there is a hint with a link to this page you can fix it
     by **one** of the following:
 

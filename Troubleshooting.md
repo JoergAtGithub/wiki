@@ -11,7 +11,7 @@ are some tips to help you do that.*
   - **Enable Real-Time scheduling** Make sure you are running Mixxx with
     enough rightst. You can check this within Mixxx: preferences-\>Sound
     Hardware. If there is a hint with a link to this page you can fix it
-    by one of the following:
+    by **one** of the following:
 
 <!-- end list -->
 

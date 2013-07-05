@@ -77,11 +77,6 @@ are some tips to help you do that.*
     priority of its critical threads to real-time. This should greatly
     reduce latency on a busy system. **Be aware that running as
     root/admin puts your system at greater risk from malicious code.**
-  - Alternately and more safely, on Linux, edit
-    `/etc/security/limits.conf` and add `<your user name> soft
-    rtprio 99` to allow Mixxx (and other processes you run) to increase
-    their thread priority to maximum, or just run Mixxx from a console
-    with `sudo mixxx`.
   - In OS X, you have three choices:
 
 <!-- end list -->

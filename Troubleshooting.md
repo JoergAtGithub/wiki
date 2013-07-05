@@ -8,35 +8,23 @@ are some tips to help you do that.*
 
 ### Linux
 
-  - **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU
-    Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
-    `ps aux | grep cpufreq` and kill any processes you find.) --
-    Actually it is better to remove the kernel modules, do \`lsmod |
-    grep freq\` and then remove each of the modules using rmmod, note
-    that if you are using a notebook it will burn through battery
-    **much** quicker when doing this. 
-  - **Disable chipcard2.** This utility polls for smart cards every few
-    seconds, and when it does, it can cause Mixxx's audio to skip, even
-    with the latency set really high.
-  - Set [IRQ Priorities](http://subversion.ffado.org/wiki/IrqPriorities)
-  - You can also try using a [real-time
-    kernel](http://pkg-freebob.alioth.debian.org/lowlat.html) or a
-    distribution that includes one, like
-    [64Studio](http://www.64studio.com/) or [Ubuntu
-    Studio](http://ubuntustudio.org/). Note that you will need to [set
-    up real-time support (scroll down to "Real-time
-    support")](https://help.ubuntu.com/community/UbuntuStudioPreparation)
-    for audio applications in order to gain any benefit from a real-time
-    kernel.
-  - Wireless networking is known to cause xruns with Mixxx. If you're
-    experiencing dropouts every few seconds during regular playback, try
-    right-clicking the network widget in your GNOME tray, and unchecking
-    the Enable Networking" box. (Yeah, we know this is lame, but we're
-    not sure what we can do if the OS is fighting us. Keep your eyes
-    peeled for other peripherals that might be causing xruns too.) You
-    can also try disabling PCI bus mastering and/or changing the IRQ for
-    the device in your BIOS and the Device Manager (Windows) or in
-    /etc/modules (Linux.)
+  - **Enable Real-Time scheduling** Make sure you are running Mixxx with
+    enough rightst. You can check this within Mixxx: preferences-\>Sound
+    Hardware. If there is a hint with a link to this page you can fix it
+    by one of the following:
+
+<!-- end list -->
+
+``` 
+   * Install jackd package and enable Real-Time scheduling by a dialog during install. Make sure you are member of the "audio" group.
+   * Set the maximum Rtprio for your user in /etc/security/limits.conf
+   * Start Mixxx as superuser $ sudo mixxx  
+* **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do ''ps aux | grep cpufreq'' and kill any processes you find.) -- Actually it is better to remove the kernel modules, do `lsmod | grep freq` and then remove each of the modules using rmmod, note that if you are using a notebook it will burn through battery **much** quicker when doing this. 
+* **Disable chipcard2.** This utility polls for smart cards every few seconds, and when it does, it can cause Mixxx's audio to skip, even with the latency set really high.
+* Set [[http://subversion.ffado.org/wiki/IrqPriorities|IRQ Priorities]]
+* You can also try using a [[http://pkg-freebob.alioth.debian.org/lowlat.html|real-time kernel]] or a distribution that includes one, like [[http://www.64studio.com/|64Studio]] or [[http://ubuntustudio.org/|Ubuntu Studio]]. Note that you will need to [[https://help.ubuntu.com/community/UbuntuStudioPreparation|set up real-time support (scroll down to "Real-time support")]] for audio applications in order to gain any benefit from a real-time kernel.
+* Wireless networking is known to cause xruns with Mixxx. If you're experiencing dropouts every few seconds during regular playback, try right-clicking the network widget in your GNOME tray, and unchecking the Enable Networking" box. (Yeah, we know this is lame, but we're not sure what we can do if the OS is fighting us. Keep your eyes peeled for other peripherals that might be causing xruns too.) You can also try disabling PCI bus mastering and/or changing the IRQ for the device in your BIOS and the Device Manager (Windows) or in /etc/modules (Linux.)
+```
 
 ### Windows
 

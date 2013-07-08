@@ -59,6 +59,9 @@ regarding proper use of QThread. (It's my impression that we are in fact
 doing what he says not to do which is the reason for all the threads we
 have.)
 
+This [Qt wiki post](http://qt-project.org/wiki/Threads_Events_QObjects)
+contains detailed information about threading in Qt.
+
 Mixxx's current [thread list](threads).
 
 As Mixxx's functionality grows and it's extended to work with arbitrary

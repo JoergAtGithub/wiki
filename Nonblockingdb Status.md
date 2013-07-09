@@ -71,7 +71,7 @@ In general, I see two milestones:
     8.  Start implementing of prototype database access class with
         separate test project.
     9.  (Try to) Fix some bugs.
-4.  Week *(08.07 -- 14.07)*
+4.  **Week *(08.07 -- 14.07)***
     1.  Start Open discussion to involve other developers to review
         prototype.
     2.  Implement prototype database access class with separate test

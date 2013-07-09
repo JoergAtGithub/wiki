@@ -142,31 +142,11 @@ In general, I see two milestones:
 
 Currently I'm working on:
 
-1.  Extended article to collect as much as possible information about
-    project and how to solve it:
-    <http://nonblockingdb.wordpress.com/2013/06/19/overview-of-all-what-we-have-in-mixxx-qt-sqlite-threads-what-to-do-with-it/>
-2.  My very approximate roadmap for this summer:
-
-**Roadmap:**
-
-  - Learn SQLite deeper as Daniel pointed (learn sources of SQLite
-    multi-threading).
-  - Fork Mixxx on GitHub
-  - Create empty class `DBAccessor`
-  - add own class inherited from `QThread`, named, for example,
-    DBAccessor
-  - create handmade `DBAccessor`'s event-loop (like `while(1)`...)
-  - make class `DBAccessor` Singletone and all-source-wide
-  - make `DBAccessor` instantiate on Mixxx startup
-  - code freeing `DBAccessor` on Mixxx exit
-  - Code `DBAccessor`'s queue manager
-  - code placing query into queue
-  - code controlling on executed queries
-  - code removing from queue 
-  - ...
-  - Code `DBAccessor`'s minimal access to SQLite db
-  - *(Think first on how to)* Organize `DAO`'s names, priorities, and so
-    on so we can send it as parameter to `DBAccessor`
+1.  SQLite tests (including using WAL, see:
+    <http://www.sqlite.org/wal.html>).
+2.  Reading and by the way cleaning code of database access.
+3.  Preparing prototype of access to database.
+4.  Preparing open discussion text.
 
 -----
 

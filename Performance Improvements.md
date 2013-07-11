@@ -60,7 +60,10 @@ doing what he says not to do which is the reason for all the threads we
 have.)
 
 This [Qt wiki post](http://qt-project.org/wiki/Threads_Events_QObjects)
-contains detailed information about threading in Qt.
+contains detailed information about threading in Qt and this [blog
+post](http://woboq.com/blog/qthread-you-were-not-doing-so-wrong.html)
+contains a response to "You're doing it wrong" (see link in previous
+paragraph).
 
 Mixxx's current [thread list](threads).
 

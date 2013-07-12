@@ -4,6 +4,16 @@ FIXME **Work in progress-** --- *[jus](jus) 2013/06/30 09:03*
 
 ## Introduction
 
+### Why translate?
+
+Mixxx is written and documented in English, and use English for
+communication between developers, maintainers and users from all
+countries. However, English is not the primary language of most people,
+and they are more comfortable with their own native language.
+
+Translating helps to reach a wider audience, provides a better user
+experience, and you can DJ using Mixxx in your mother tongue.
+
 ### Recommended skills for Translators
 
   - Computer experience -- being able to comfortably use the tools

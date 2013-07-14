@@ -1,10 +1,10 @@
 # Translating Mixxx
 
-FIXME **Work in progress-** --- *[jus](jus) 2013/06/30 09:03*
+FIXME **Work in progress-** --- *[jus](jus) 2013/07/14 09:03*
 
 ## Introduction
 
-### Why translate?
+### Why translate ?
 
 Mixxx is written and documented in English, and use English for
 communication between developers, maintainers and users from all
@@ -14,26 +14,12 @@ and they are more comfortable with their own native language.
 Translating helps to reach a wider audience, provides a better user
 experience, and you can DJ using Mixxx in your mother tongue.
 
-### Recommended skills for Translators
-
-  - Computer experience -- being able to comfortably use the tools
-    required in the translation process, like looking up difficult words
-    in online dictionaries.
-  - Experience in Djìng and using audio software -- you'll benefit from
-    it because you already know the typical concepts and terms.
-  - Bilingual -- fluent in both written English and the language(s) you
-    will be translating into. Casual knowledge of either one will make
-    translating difficult for you, or make the localization you create
-    confusing to native speakers.
-  - You should be familiar with human language constructs: nouns, verbs,
-    articles, etc., different types of each, and be able to identify
-    variations of their contexts in English.
-
 ### About Locales
 
 Locales customize programs to languages and regional dialects. Often
 locales correspond to countries, as is the case with Portuguese
-(Portugal) and Portuguese (Brazil).
+(Portugal) and Portuguese (Brazil). The default locale of Mixxx is
+English (United States) (en\_US).
 
 You can do a translation for any locale, such as German (Germany)
 (de\_DE) or German (Austria) (de\_AT), to adjust for regional spelling
@@ -41,9 +27,52 @@ and idioms. A locale will define how characters are sorted, how the date
 and time are represented, the names of the days of the week and months
 of the year.
 
-The default locale of Mixxx is English (United States) (en\_US).
+## Getting Started
 
-## Special characters
+### I want to help translate Mixxx, what do I need to do ?
+
+You need a translator account to access
+[Transifex](https://www.transifex.com/), our translation site. Sign up
+for a free translator account or use your existing social network
+credentials to login <https://www.transifex.com/signin/?next=/signup/#>.
+
+### What about the skills required for translating ?
+
+  - Bilingual -- fluent in both written English and the language(s) you
+    will be translating into. Casual knowledge of either one will make
+    translating difficult for you, or make the localization you create
+    confusing to native speakers.
+  - You should be familiar with human language constructs: nouns, verbs,
+    articles, etc., different types of each, and be able to identify
+    variations of their contexts in English.
+  - Experience in Djìng and using audio software in general -- you'll
+    benefit from it because you already know the typical concepts and
+    terms.
+
+To keep your translations consistent with those of other translators,
+our
+[glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/)
+helps you to get familiar with the core features of Mixxx. It contains a
+collection of terms with definitions, uses, and associated notes.
+
+### Ok, I have my Transifex account and I am ready to get busy. How to translate then?
+
+[Log in](https://www.transifex.com/signin/?next=/home/), go to
+<https://www.transifex.com/projects/p/mixxxdj/> and request access to a
+translation team for the language(s) you want to translate (German in
+this example). One of the developers or translation coordinators will
+approve your request. You should get an e-mail answer within 48 hours
+that you have been accepted to the team for the requested language.
+
+|                                                     |
+| --------------------------------------------------- |
+| [[/media/i18n/transifex_join-translation-team.gif|]]      |
+| **Request to join a translation team on Transifex** |
+
+Now that you have been accepted to the translation team, you are ready
+to to translate Mixxx from English to your language.
+
+## Common Pitfalls in Translation
 
 ### Ampersands (&)
 

@@ -57,20 +57,53 @@ collection of terms with definitions, uses, and associated notes.
 
 ### Ok, I have my Transifex account and I am ready to get busy. How to translate then?
 
-[Log in](https://www.transifex.com/signin/?next=/home/), go to
-<https://www.transifex.com/projects/p/mixxxdj/> and request access to a
-translation team for the language(s) you want to translate (German in
-this example). One of the developers or translation coordinators will
-approve your request. You should get an e-mail answer within 48 hours
-that you have been accepted to the team for the requested language.
+[Log in](https://www.transifex.com/signin/?next=/home/), go to the
+[Mixxx Translation Project
+Overview](https://www.transifex.com/projects/p/mixxxdj/) and request
+access to a translation team for the language(s) you want to translate
+(German in this example). One of the developers or translation
+coordinators will approve your request. You should get an e-mail answer
+within 48 hours that you have been accepted to the team for the
+requested language.
 
 |                                                     |
 | --------------------------------------------------- |
-| [[/media/i18n/transifex_join-translation-team.gif|]]      |
+| [[/media/i18n/transifex_join_a_translation-team.gif|]]    |
 | **Request to join a translation team on Transifex** |
 
 Now that you have been accepted to the translation team, you are ready
 to to translate Mixxx from English to your language.
+
+  - Go to the [Mixxx Translation Project
+    Overview](https://www.transifex.com/projects/p/mixxxdj/)
+  - Click on your team's language, you will see available “language
+    resources” to be translated.
+  - Click on a available resource to proceed.
+  - A pop-up window opens, click the **Translate Now** button.
+  - The Web Editor opens, and displays all translatable strings.
+  - Click on the **Untranslated** tab to search for all strings with
+    missing translations.
+  - Select a source string from the navigation panel to the left and
+    type your translation into the box to the right.
+  - Click the **Save** button to save your translated string.
+  - Congrats, you just translated your first string in Mixxx. Easy.
+
+|                                                              |
+| ------------------------------------------------------------ |
+| [[/media/i18n/transifex_submit_translation_using_web_editor.gif|]] |
+| **Submit a translation using the web editor**                |
+
+As a translator, you will be spending most of your time in the
+translation editor. It's the place where you can see all the text
+(strings) that need to be translated, submit translations, and
+collaborate with others. Take a look at Transifex' [Introduction to the
+Web
+Editor](http://support.transifex.com/customer/portal/articles/972120-introduction-to-the-web-editor)
+to get acquainted with the basics.
+
+Should you run into any questions about using Transifex, check out their
+[support
+portal](http://support.transifex.com/customer/portal/topics/414107-translators/articles).
 
 ## Common Pitfalls in Translation
 

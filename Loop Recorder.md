@@ -98,6 +98,7 @@ more.
   - Loop is available to playback immediately
   - Record from different input sources (Main out, PFL, decks,
     microphone, etc.)
+  - Record a specific number of beats.
   - Multi-layer recording
   - Record unlimited number of layers in loop recorder (in practice it
     probably )

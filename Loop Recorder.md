@@ -116,7 +116,6 @@ more.
     * Perhaps also work on code to record directly into samplers - separate from loop recorder, but related, this may be a good starting point for the project...
 * GUI
 * Simple to use and understand
-* Incorporates with 
 ```
 
 ### New Classes:

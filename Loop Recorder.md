@@ -203,16 +203,17 @@ Extras:
 
 #### June (Program begins June 17)
 
-  - Week 3: Flesh out structure and interface for loop controller
-    objects, begin work on LoopRecorder, put together skeletal GUI
-  - Week 4: Continue work on LoopRecorder class, get basic real time
-    recording working
+  - ~~Week 3: Flesh out structure and interface for loop controller
+    objects, begin work on LoopRecorder, hijack GUI components for
+    testing.~~
+  - ~~Week 4: Continue work on LoopRecorder class, get basic real time
+    recording working~~
 
 #### July
 
-  - Week 1: Focus work on LoopPlayer and LoopRecorderManager
-  - Week 2: Continue work on LoopPlayer and LoopRecorderManager,
-    integrate with Loop Recorder
+  - ~~Week 1: Focus work on LoopPlayer and LoopRecorderManager~~
+  - ~~Week 2: Continue work on LoopPlayer and LoopRecorderManager,
+    integrate with Loop Recorder~~
   - Week 3: Have a loop recorder that can record a single layer and play
     it back by midterm evaluations.
   - Week 4: Carl on vacation, may be able to work a few hours.

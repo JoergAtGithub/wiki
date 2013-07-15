@@ -19,16 +19,15 @@ Code 2013.
 
 There are many possible options for an implementation of a loop
 recorder---everything from simple recording one section of audio into a
-sample that repeats to a fully realized remix and slicing engine. As
-Mixxx is targeted to both beginning and advanced DJs, the best approach
-for a loop recorder in Mixxx is to create a very simple interface that
-is easy to understand and use for beginning users, but that can be
-combined with existing functionality (such as samplers) to give
-professional users plenty of power and flexibility. Considering the
-fairly limited time for GSoC and the complexity of the project, the
-simpler the approach that I take is, the likelier it is that I’ll have a
-polished product by the end of the Summer that DJs will actually be able
-to use.
+sampler to a fully realized remix and slicing engine. As Mixxx is
+targeted to both beginner and advanced DJs, the best approach for a loop
+recorder in Mixxx is to create a very simple interface that is easy to
+understand and use for beginner users, but that can be combined with
+existing functionality (such as samplers) to give professional users
+plenty of power and flexibility. Considering the fairly limited time for
+GSoC and the complexity of the project, the simpler the approach that I
+take, the likelier it is that I’ll have a polished product by the end of
+the summer that DJs will actually be able to use.
 
 A loop recorder offers DJs several creative possibilities:
 

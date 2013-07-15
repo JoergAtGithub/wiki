@@ -164,7 +164,7 @@ Implement new SoundSource class for internally stored loops?
 ## Work Breakdown
 
 1.  Core Loop Code
-    1.  Loop Recorder Manager
+    1.  Loop Recording Manager
         1.  Connections to UI controls
         2.  Connect signals between controls, LoopRecorder and
             LoopPlayer
@@ -172,7 +172,7 @@ Implement new SoundSource class for internally stored loops?
             1.  Database metadata storage
             2.  Save audio data to file (can probably reuse some of the
                 existing codebase for this)
-    2.  Loop Recorder
+    2.  Engine Loop Recorder
         1.  Buffer Processing (recording and layering)
         2.  Undo Operations 
         3.  Clear operations

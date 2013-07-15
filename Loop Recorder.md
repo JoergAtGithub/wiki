@@ -120,20 +120,20 @@ more.
 
 ### New Classes:
 
-`LoopRecorderManager` - Coordinates the UI and recording and playback of
-the loop recorder.
+`LoopRecordingManager` - Coordinates the UI and recording and playback
+of the loop recorder.
 
-`LoopRecorder` - Handles loop recording and is tied very closely to
-Engine Master, which provides the mixed output to the recorder. All
-loops will be recorded as LPCM audio for performance and quality
-reasons.
+`EngineLoopRecorder` - Handles loop recording in a separate thread,
+which is fed from the Engine Master. All loops will be recorded as
+uncompressed audio for performance and quality reasons.
 
-`EngineLoopDeck` - subclass of EngineDeck for loop playback. Handles
-special mixing of recorded audio.
+`LoopRecorderDeck` - subclass of BaseTrackPlayer, which handles playback
+of loops that have been recorded. Handles special mixing of recorded
+audio (maybe...).
 
-`LoopBuffer` - class that provides an interface for manipulating loop
+~~`LoopBuffer` - class that provides an interface for manipulating loop
 buffer recording. Abstracts the details of loop recording away from the
-rest of the looper code.
+rest of the looper code.~~
 
 ### Main changes required to Mixxx Engine:
 

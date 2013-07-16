@@ -248,42 +248,4 @@ Extras:
 
 ## Ideas
 
-### Possible way to handle single-level undo/redo
-
-Currently in Progress.
-
-This is a short walkthrough of a possible implementation for recording
-multiple layers and implementing single-level undo/redo support. It uses
-buffers to store the different recordings and manipulate the mixing of
-the loop.
-
-Loop recording must happen in realtime, I don't think that we can spin
-off an extra process like the current recording code (this has
-significant performance implications). Right now I'm assuming that the
-loop recorder object will be updated directly by the Engine Master, so
-that on each call it's updated with the latest output data from either
-the master or PFL output streams.
-
-I'm using two buffers referred to as buffer\_A, and buffer\_B. My idea
-for controlling playback is to have a loop buffer pointer in the
-LoopPlayer class, which changes depending on the recording state of the
-buffer.
-
-If at least one loop has already been recorder, copy buffer\_B to
-buffer\_A (commits a previously recorded two layer mix).
-
-set play pointer to buffer\_B
-
-Record to buffer\_A mixing new audio with previously recorded audio
-
-When recording is finished, set play pointer to buffer\_A and signal
-that recording is done.
-
-Undo functionality resets the play pointer to the buffer\_B redo resets
-it to buffer\_A.
-
-This method assumes dynamic memory allocation, which is probably not
-possible in a realtime environment. I'm currently brainstorming other
-approaches to this problem.
-
 ## Comments

@@ -187,6 +187,7 @@ Implement new SoundSource class for internally stored loops?
         1.  Route audio into the mix after audio is sent to the loop
             recorder to avoid re-recording loops.
         2.  Slots for receiving updates from loop recorder and manager
+        3.  Continuously loop deck(s).
 2.  GUI integration
     1.  Theme modifications
     2.  New loop table view for saved loops (could be added as a section

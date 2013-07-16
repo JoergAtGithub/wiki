@@ -148,16 +148,18 @@ Implement new SoundSource class for internally stored loops?
 
 ### Controls
 
-| Key/Control     | What it Does                                                         |
-| --------------- | -------------------------------------------------------------------- |
-| Record          | On empty loop recorder, initiates loop recording.                    |
-| Play            | Plays stored loop, disabled if nothing has been recorded.            |
-| Undo/Redo       | By default undo 1 layer of changes. If clicked undo changes to redo. |
-| Save            | Save the loop to the Mixxx library.                                  |
-| Clear           | Clears all recorded loops.                                           |
-| Number of Beats | Sets the number of beats to automatically record                     |
-| Input source    | Toggles the Mixxx output that is directed into the loop recorder.    |
-| Dry/Wet         | Controls level of recorder sent back into the main mix.              |
+| \[Group\]           | Key/Control               | Type   | What it Does                                                                                                     |
+| ------------------- | ------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------- |
+| \[Loop\_Recording\] | toggle\_loop\_recording   | Binary | On empty loop recorder, initiates loop recording.                                                                |
+| \[Loop\_Recording\] | toggle\_loop\_playback    | Binary | Plays stored loop, disabled if nothing has been recorded.                                                        |
+| \[Loop\_Recording\] | toggle\_loop\_undo\_redo  | Binary | By default undo 1 layer of changes. If clicked undo changes to redo.                                             |
+| \[Loop\_Recording\] | save\_loop                | Binary | Save the loop to the Mixxx library.                                                                              |
+| \[Loop\_Recording\] | export\_loop              | Binary | Export the loop to a selected deck.                                                                              |
+| \[Loop\_Recording\] | loop\_export\_destination | Float  | Defines the destination of the currently loaded loop. Need to define a format for specifying decks and samplers. |
+| \[Loop\_Recording\] | clear\_recorder           | Binary | Clears all recorded loops.                                                                                       |
+| \[Loop\_Recording\] | loop\_num\_beats          | Float  | Sets beat length of a loop.                                                                                      |
+| \[Master\]          | loopRecSource             | Float  | Toggles the Mixxx output that is directed into the loop recorder.                                                |
+| \[Master\]          | loop\_mix\_level          | Float  | Controls dry/wet level of recorder sent back into the main mix.                                                  |
 
 ### User Interface
 

@@ -179,14 +179,11 @@ Implement new SoundSource class for internally stored loops?
         2.  Undo Operations 
         3.  Clear operations
         4.  BPM Matching
-    3.  Loop Player
-        1.  Read audio from buffers and implement switching between the
-            buffers.
-        2.  Integrate with Engine Master, so that audio is routed back
-            into the mix after it is recording.
-        3.  Slots for receiving updates from loop recorder and manager
-        4.  New SoundSource class for internally recorded sounds. (Maybe
-            should be classified as a separate entity in the structure)
+    3.  Loop Recorder Deck
+        1.  Integrate with Engine Master, so that audio is routed into
+            the mix after audio is sent to the recorder to avoid
+            re-recording loops.
+        2.  Slots for receiving updates from loop recorder and manager
 2.  GUI integration
     1.  Theme modifications
     2.  New loop table view for saved loops (could be added as a section

@@ -163,6 +163,10 @@ Implement new SoundSource class for internally stored loops?
 
 ### User Interface
 
+#### Mockups:
+
+![https://mixxx.mybalsamiq.com/mockups/1018636.png](https://mixxx.mybalsamiq.com/mockups/1018636.png)
+
 ## Work Breakdown
 
 1.  Core Loop Code

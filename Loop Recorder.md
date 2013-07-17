@@ -165,7 +165,7 @@ Implement new SoundSource class for internally stored loops?
 
 #### Mockups:
 
-![https://mixxx.mybalsamiq.com/mockups/1018636.png](https://mixxx.mybalsamiq.com/mockups/1018636.png)
+[[/media/gsoc_2013/loop_recorder/loop_recorder_1.png|]]
 
 ## Work Breakdown
 

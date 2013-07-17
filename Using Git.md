@@ -279,6 +279,8 @@ tested:
 
 Here are some handy and great guides to learning how to use Git.
 
+  - [Typical workflow with GitHub on shared
+    project](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project/)
   - [Git Cheat Sheet](http://cheat.errtheblog.com/s/git)
   - [Pro Git -- the official Git book, free](http://git-scm.com/book)
   - [Git for Computer

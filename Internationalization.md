@@ -118,6 +118,67 @@ project](https://www.transifex.com/projects/p/mixxxdj/) and language
 page respectively. You can also subscribe to the [Mixxx translation
 RSS-feed](https://www.transifex.com/projects/p/mixxxdj/feed/)
 
+## Resources
+
+\*\* Glossaries \*\*
+
+A glossary makes the translation process much easier for translators as
+terms have agreed-upon definitions and translations, shortening the
+amount of time required to translate Mixxx.
+
+  - [Mixxx
+    glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/)
+    - The Mixxx glossary in english, translatable to your own language.
+  - [microsoft.com/Language](https://www.microsoft.com/Language) -
+    Search Microsoft’s terminology and glossaries in 70 languages.
+  - [developer.apple.com](https://developer.apple.com/downloads/index.action?name=localization)
+    - Download Apple OS X glossaries.
+
+\*\* Translation memory (TM) \*\*
+
+TM systems promote quality and consistency. They provide automatic
+suggestions based on similarities between source strings, allowing
+translators to leverage previous translations. Translators can use TM
+suggestions or adjust them to create new, more contextually appropriate
+translations.
+
+  - [Mixxx TM](https://www.transifex.com/projects/p/mixxxdj/) - The
+    available TM entries are under the ‘suggestions’ tab of each
+    translatable string of your language.
+  - [open-tran.eu](http://open-tran.eu/) - Memory Translation database
+    of open source projects.
+  - [mymemory.translated.net](http://mymemory.translated.net/) - The
+    world largest collaborative translation archive.
+
+\*\* Online Translation and Dictionaries\*\*
+
+``` 
+ * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx Auto Translate]] - Click ‘Machine Translation’ next to the ‘Submit’ button of the translatable string of your language.
+ * [[http://www.yourdictionary.com/|yourdictionary.com]] - The easiest to use on-line dictionary and thesaurus. Clear. Clean. Uncluttered.
+ * [[http://tradukka.com/|tradukka.com]] - Translate in real time with definitions and forums for your questions.
+ * [[http://www.omegawiki.org/|omegawiki.org]] - A multilingual dictionary with lexicological, terminological and thesaurus information.
+ * [[http://imtranslator.net/translation/|imtranslator.net]] - Provides dictionaries and instant translation of words, phrases and texts in many languages.
+```
+
+\*\* Offline Translation software \*\*
+
+If you are more comfortable translating locally on your computer,
+instead online in a web browser.
+
+  - [Qt Linguist](http://qt-project.org/doc/qt-4.8/linguist-manual.html)
+    - Provides a set of tools that speed the translation and
+    internationalization of applications. Windows, Linux, MacOS X FIXME
+    <sup>Add DL Links to standalone Linguist binaries</sup>
+    *\[\[|jus\]\] 2013/07/21*
+  - [Lingoes](http://www.lingoes.net/) - An easy and intuitive
+    dictionary and text translation software. Windows
+  - [Virtaal](http://virtaal.translatehouse.org/) - A feature rich
+    translation tool that allows you to focus on translation. Windows,
+    Linux, MacOS X
+  - [Lokalize](http://www.kde.org/applications/development/lokalize/) -
+    A computer-aided translation system that focuses on productivity and
+    quality assurance. Windows, Linux
+
 ## Common Pitfalls in Translation
 
 ### Ampersands (&)

@@ -98,6 +98,9 @@ with the following functions:
 * <del>write models with Django for server database building</del>
 * <del>update /res/schema.xml for client database building</del>
 * <del>write interface of client database operation</del>
+* export preset relevant data into database
+    * write a script able to push preset relevant data into server database
+    * push preset relevant data into mixxx local database when mixxx is initialized
 * Automaticly load preset file
 * Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
     * controller covert preview
@@ -109,28 +112,31 @@ with the following functions:
     * <del>search bar</del> 
     * <del>Tap switch between Local and Cloud</del> 
     * <del>Search results panel</del>
+    * Submenu for preset download, details display etc.
     * Notification board 
     * apply button
-    * Submenu for preset download, details display etc.
-* Intelligent recommendation algorithm for mapping preset files
+* <del>fuzzy query both from local and cloud</del>
+* <del>display the query results in the way of paging</del>
 * presets download
 * users rate and comment on preset files
+* Intelligent recommendation algorithm for mapping preset files
 * Restful API Engine
-* build an api server with django and tastypie
+* <del>build an api server with django and tastypie</del>
 * design API
-    * <del>search</del>
-    * upload
     * <del>details</del>
-    * checkversion
-    * rate
+    * <del>search</del>
     * <del>download</del>
+    * checkversion
+    * upload
+    * rate
+    
 * Deploy
 * Test
 ```
 
 # Current Progress
 
-design API
+check version
 
 # Team
 

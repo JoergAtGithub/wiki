@@ -105,6 +105,19 @@ Should you run into any questions about using Transifex, check out their
 [support
 portal](http://support.transifex.com/customer/portal/topics/414107-translators/articles).
 
+### How can i be notified for languages I translate?
+
+You can get notified whenever the translation of a resource is modified.
+When watching Mixxx or one of its languages, you will receive email
+notifications, whenever the translation sources are updated and there is
+translation work to be done.
+
+You can find the links to watch Mixxx or a specific language at the
+bottom of the [main
+project](https://www.transifex.com/projects/p/mixxxdj/) and language
+page respectively. You can also subscribe to the [Mixxx translation
+RSS-feed](https://www.transifex.com/projects/p/mixxxdj/feed/)
+
 ## Common Pitfalls in Translation
 
 ### Ampersands (&)

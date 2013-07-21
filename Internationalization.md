@@ -1,6 +1,6 @@
 # Translating Mixxx
 
-FIXME **Work in progress-** --- *[jus](jus) 2013/07/14 09:03*
+FIXME **Work in progress-** --- *[jus](jus) 2013/07/21*
 
 ## Introduction
 
@@ -120,7 +120,7 @@ RSS-feed](https://www.transifex.com/projects/p/mixxxdj/feed/)
 
 ## Resources
 
-\*\* Glossaries \*\*
+### Glossaries
 
 A glossary makes the translation process much easier for translators as
 terms have agreed-upon definitions and translations, shortening the
@@ -134,7 +134,7 @@ amount of time required to translate Mixxx.
   - [developer.apple.com](https://developer.apple.com/downloads/index.action?name=localization)
     - Download Apple OS X glossaries.
 
-\*\* Translation memory (TM) \*\*
+### Translation memory (TM)
 
 TM systems promote quality and consistency. They provide automatic
 suggestions based on similarities between source strings, allowing
@@ -150,7 +150,7 @@ translations.
   - [mymemory.translated.net](http://mymemory.translated.net/) - The
     world largest collaborative translation archive.
 
-\*\* Online Translation and Dictionaries\*\*
+### Online Translation and Dictionaries
 
 ``` 
  * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx Auto Translate]] - Click ‘Machine Translation’ next to the ‘Submit’ button of the translatable string of your language.
@@ -160,7 +160,7 @@ translations.
  * [[http://imtranslator.net/translation/|imtranslator.net]] - Provides dictionaries and instant translation of words, phrases and texts in many languages.
 ```
 
-\*\* Offline Translation software \*\*
+### Offline Translation software
 
 If you are more comfortable translating locally on your computer,
 instead online in a web browser.

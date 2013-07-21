@@ -105,8 +105,12 @@ with the following functions:
 * Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
     * controller covert preview
     * <del>Popup  Mapping Preset Manager push button</del>
+    * Popup Upload push button
 * Adjust the workflow for mixxx initialization
 * Enhance preset search algorithm
+* Upload
+* upload.ui
+* logic: upload to cloud server and save in local
 * Mapping Preset Manager
 * Mapping Preset Manager Dialog user interface(dlgmapingpresetmanagerdlg.ui)
     * <del>search bar</del> 
@@ -120,6 +124,7 @@ with the following functions:
 * presets download
 * users rate and comment on preset files
 * Intelligent recommendation algorithm for mapping preset files
+* check for update local preset
 * Restful API Engine
 * <del>build an api server with django and tastypie</del>
 * design API
@@ -136,7 +141,7 @@ with the following functions:
 
 # Current Progress
 
-check version
+Upload
 
 # Team
 

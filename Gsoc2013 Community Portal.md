@@ -87,28 +87,30 @@ with the following functions:
 
 # Work Breakdown
 
-  - Database
-  - database scheme design 
+~~ \* Database \* database scheme design \* Client \* Server \* write
+models with Django for server database building \* update
+/res/schema.xml for client database building \* write interface of
+client database operation~~
+
+  - Automaticly load preset file
+  - Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
 
 <!-- end list -->
 
 ``` 
-    * Client
-    * Server
-* write models with Django for server database building
-* update /res/schema.xml for client database building
-* write interface of client database operation
-* Automaticly load preset file
-* Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
     * controller covert preview
     * Popup  Mapping Preset Manager push button
 * Adjust the workflow for mixxx initialization
 * Enhance preset search algorithm
 * Mapping Preset Manager
 * Mapping Preset Manager Dialog user interface(dlgmapingpresetmanagerdlg.ui)
-    * search bar 
+```
+
+\<del\> \* search bar
+
+``` 
     * Tap switch between Local and Cloud 
-    * Search results panel
+    * Search results panel</del>
     * Notification board 
     * apply button
     * Submenu for preset download, details display etc.
@@ -118,14 +120,20 @@ with the following functions:
 * Restful API Engine
 * build a api server with django and tastypie
 * design API
-    * search
+```
+
+\<del\> \* search\</del\>
+
+``` 
     * upload
     * details
     * checkversion
     * rate
-    * download
-* Deploy
 ```
+
+\<del\> \* download\</del\>
+
+  - Deploy
 
 # Current Progress
 

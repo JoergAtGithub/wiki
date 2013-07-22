@@ -146,7 +146,9 @@ Currently I'm working on:
     <http://www.sqlite.org/wal.html>).
 2.  Reading and by the way cleaning code of database access.
 3.  Preparing prototype of access to database.
-4.  Preparing open discussion text.
+4.  Working on implementing "pause" feature in library scanner (See
+    `LibraryRefactoring` branch here --
+    <https://github.com/mixxxdj/mixxx>).
 
 -----
 

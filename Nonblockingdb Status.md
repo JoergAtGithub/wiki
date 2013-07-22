@@ -77,11 +77,11 @@ In general, I see two milestones:
     2.  Implement prototype database access class with separate test
         project.
     3.  (Try to) Fix some bugs.
-5.  Week *(15.07 -- 21.07)*
+5.  **Week *(15.07 -- 21.07)***
     1.  Get acquainted with "Google Test" framework. 
     2.  Write tests using "Google Test" framework.
     3.  (Try to) Fix some bugs.
-6.  Week *(22.07 -- 28.07)*
+6.  **Week *(22.07 -- 28.07)***
     1.  Add and test all possible ways of database usage present in
         Mixxx handled by DAO.
     2.  (Try to) Fix some bugs.

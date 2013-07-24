@@ -25,14 +25,13 @@ you’ll never be free. That’s why we have put together a few tips to
 get you started. For more advanced tactics on getting rid of debt, visit
 our blog at <http://themoneyroom.com.au/blog/>.
 
-**The Money Room Tip \#1: Don’t Ignore
-It**<span class="underline">Underlined Text</span> This may sound
-obvious, but the majority of those in debt delay getting the assistance
-they need for months or even years. Unfortunately, the debt won’t
-disappear – it will GROW (as will your stress).
+**The Money Room Tip \#1: Don’t Ignore It**
 
-**The Money Room Tip \#2: Get
-Organised**<span class="underline">Underlined Text</span>
+This may sound obvious, but the majority of those in debt delay getting
+the assistance they need for months or even years. Unfortunately, the
+debt won’t disappear – it will GROW (as will your stress).
+
+**The Money Room Tip \#2: Get Organised**
 
 Almost half of Australians don't know the interest rate they pay on
 their credit cardsor home loan. You can’t eliminate your debt
@@ -45,8 +44,7 @@ each. Having gotten the best financing to start with is ideal. If you
 are unsure how to get the RIGHT financial products for your situation,
 check out our recent post here
 <http://themoneyroom.com.au/how-to-get-the-right-financial-products/> **
-The Money Room Tip \#3: Notify Creditors & Know Your
-Rights**<span class="underline">Underlined Text</span>
+The Money Room Tip \#3: Notify Creditors & Know Your Rights**
 
 If you are experiencing repayment difficulties,contact your creditors as
 soon as possible to let them know your situation and work out a
@@ -57,8 +55,7 @@ dealing with creditors. Learn about them here
 it or not, lenders want to work with clients in distress. They don’t
 want to make matters worse as they want their money back.
 
-**The Money Room Tip \#4: Draw Up a
-Budget**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#4: Draw Up a Budget**
 
 First find out your Disposable Income (DI), which is the amount of money
 you have left after deducting from your income all your reasonable and
@@ -67,8 +64,7 @@ areas where you might be overspending, so you can cut back and maximise
 the amount you put towards your debt.A base consideration of The Money
 Room is to establish what the smile on your face costs, do you know?
 
-**The Money Room Tip \#5: Stop
-Saving**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#5: Stop Saving**
 
 Many people try to save at the same time that they’re paying off debt.
 This is a big mistake. The amount of interest earned in savings is small
@@ -76,8 +72,7 @@ compared to the rate at which loans' interest rates rack up. So, stop
 saving and start paying.As long as you have debt you shouldn’t have
 savings.
 
-**The Money Room Tip \#6: Prioritise Debt
-Repayments**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#6: Prioritise Debt Repayments**
 
 It’s important to figure out which payments are your priorities. For
 example, missing payments on secured debt, like a mortgage, is much more
@@ -87,16 +82,14 @@ highest-interest,short-term debts as those are costing you the most and
 stripping cash-flow.Atargeted approach is required to achieve effective
 results.
 
-**The Money Room Tip \#7: Consider
-Consolidation**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#7: Consider Consolidation**
 
 Consolidation may make your monthly payments more manageable. Instead of
 keeping up with eight payments, you can reduce it to one or two.
 Additionally, if you can get a deal on a lower interest rate, you’ll
 save loads of money in the long run.
 
-**The Money Room Tip \#8: Take Into Account All
-Options**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#8: Take Into Account All Options**
 
 Look at other funding sources to help you pay off debt, like other
 savings accounts or investments. As long as your outgoing interest on
@@ -106,8 +99,7 @@ Also, for those in serious debt, bankruptcy is a viable option that
 should be discussed with a financial advisor. You are taxed on savings
 income, however, you are not taxed on the interest you don’t pay\!
 
-**The Money Room Tip \#9: Seek Advice &
-Support**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#9: Seek Advice & Support**
 
 There are a lot of options out there and an experienced financial
 advisoror money coach can help you navigate them to get you debt free as
@@ -117,8 +109,7 @@ The Money Room’s specialists today
 <http://themoneyroom.com.au/contact-us/Surround> yourself with positive
 people and influences.
 
-**The Money Room Tip \#10: Stay Positive& Don’t Give
-Up**<span class="underline">Underlined Text</span>
+**The Money Room Tip \#10: Stay Positive& Don’t Give Up**
 
 It’s easy to get discouraged, but remind yourself that by taking
 proactive steps, you’re getting closer to getting out of the red every

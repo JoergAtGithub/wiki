@@ -59,10 +59,10 @@ want to make matters worse as they want their money back.
 
 First find out your Disposable Income (DI), which is the amount of money
 you have left after deducting from your income all your reasonable and
-necessary ~~~~Strike-through Text~~~~living expenditure. Next, look for
-areas where you might be overspending, so you can cut back and maximise
-the amount you put towards your debt.A base consideration of The Money
-Room is to establish what the smile on your face costs, do you know?
+necessary Strike-through Text living expenditure. Next, look for areas
+where you might be overspending, so you can cut back and maximise the
+amount you put towards your debt.A base consideration of The Money Room
+is to establish what the smile on your face costs, do you know?
 
 **The Money Room Tip \#5: Stop Saving**
 

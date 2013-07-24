@@ -1,6 +1,4 @@
-[External Link](External%20Link)
-
-# Welcome To The Money Room\!
+**The Money Room**<span class="underline">Underlined Text</span>
 
 <span class="underline">**The Money Room’s Top 10 ‘Back to Basic’Tips to
 Getting Debt Free\!**</span>

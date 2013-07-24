@@ -20,9 +20,7 @@ you’ll never be free. That’s why we have put together a few tips to
 get you started. For more advanced tactics on getting rid of debt, visit
 our blog at <http://themoneyroom.com.au/blog/>.
 
-**\<a
-href="<http://www.yellowpages.com.au/wa/osborne-park/the-money-room-14140151-listing.html>"\>\<b\>The
-Money Room\</b\>\</a\> Tip \#1: Don’t Ignore It**
+**The Money Room Tip \#1: Don’t Ignore It**
 
 This may sound obvious, but the majority of those in debt delay getting
 the assistance they need for months or even years. Unfortunately, the

@@ -1,4 +1,4 @@
-# Welcome to the Mixxx Wiki\!
+# Welcome to The Money Room\!
 
 Mixxx has an unusually broad community for an open-source project,
 encompassing performing musicians, C++ addicts, amateur DJs and even

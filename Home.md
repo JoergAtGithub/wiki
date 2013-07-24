@@ -5,20 +5,21 @@ get you on the path to financial freedom.*
 
 Buy now, pay later\! We’ve all fallen for the alluring call of credit
 card companies at one point or another. But what they don’t tell you is
-that it’s actually buy now, pay LOADS MORE later... With tough economic
-times these past years, more and more people have been turning to credit
-cards to make ends meet. Figures from the Reserve Bank show that
-Australians have 15.4 million credit cards in their wallets, on which
-they’re paying interest on $36 billion in outstanding balances. More
-than two-thirds of consumers’ debt is accruing interest at the average
-rate of nearly 20%. Think about this... that means if you have $4,000 in
-credit card debt, you’re wasting $800 every year paying off interest. In
-5 years time, that’s $3,000 down the drain\! This is why eliminating
-your debt is so important. That’s easier said than done. Getting rid of
-debt can be confusing and scary process. Sometimes, it can feel like
-you’ll never be free. That’s why we have put together a few tips to
-get you started. For more advanced tactics on getting rid of debt, visit
-our blog at <http://themoneyroom.com.au/blog/>.
+that it’s actually buy now, pay LOADS MORE later...
+
+With tough economic times these past years, more and more people have
+been turning to credit cards to make ends meet. Figures from the Reserve
+Bank show that Australians have 15.4 million credit cards in their
+wallets, on which they’re paying interest on $36 billion in outstanding
+balances. More than two-thirds of consumers’ debt is accruing interest
+at the average rate of nearly 20%. Think about this... that means if you
+have $4,000 in credit card debt, you’re wasting $800 every year paying
+off interest. In 5 years time, that’s $3,000 down the drain\! This is
+why eliminating your debt is so important. That’s easier said than done.
+Getting rid of debt can be confusing and scary process. Sometimes, it
+can feel like you’ll never be free. That’s why we have put together a
+few tips to get you started. For more advanced tactics on getting rid of
+debt, visit our blog at <http://themoneyroom.com.au/blog/>.
 
 **The Money Room Tip \#1: Don’t Ignore It**
 

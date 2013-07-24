@@ -1,8 +1,8 @@
-# Welcome To The Money Room\!
+[External Link](External%20Link)====== Welcome To The Money Room\!
+======
 
-**<span class="underline">[The Money Room’s Top 10 ‘Back to Basic’Tips
-to Getting Debt
-Free\!](The%20Money%20Room’s%20Top%2010%20‘Back%20to%20Basic’Tips%20to%20Getting%20Debt%20Free!)<http://www.yellowpages.com.au/wa/osborne-park/the-money-room-14140151-listing.html></span>**
+<span class="underline">**The Money Room’s Top 10 ‘Back to Basic’Tips to
+Getting Debt Free\!**</span>
 
 *Managing Director Andrew McBay shares ten basic, yet powerful tips to
 get you on the path to financial freedom.*
@@ -61,10 +61,10 @@ Budget**<span class="underline">Underlined Text</span>
 
 First find out your Disposable Income (DI), which is the amount of money
 you have left after deducting from your income all your reasonable and
-necessary living expenditure. Next, look for areas where you might be
-overspending, so you can cut back and maximise the amount you put
-towards your debt.A base consideration of The Money Room is to establish
-what the smile on your face costs, do you know?
+necessary ~~~~Strike-through Text~~~~living expenditure. Next, look for
+areas where you might be overspending, so you can cut back and maximise
+the amount you put towards your debt.A base consideration of The Money
+Room is to establish what the smile on your face costs, do you know?
 
 **The Money Room Tip \#5: Stop
 Saving**<span class="underline">Underlined Text</span>

@@ -16,7 +16,8 @@ Of course, install Eclipse and CDT (C/C++ developer toolkit). Either
 simply from their homepage or use the packages for your operating
 system.
 
-It is the best to install a ready to use setup:
+It is the best to install the ready to use setup **"Eclipse IDE for
+C/C++ Developers"**:
 
   - <http://www.eclipse.org/downloads/>
 

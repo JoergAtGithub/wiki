@@ -19,18 +19,12 @@ My fork of Mixxx at GitHub: <https://github.com/troyane/mixxx>
 
 -----
 
-# What plans do I have for this summer?
+# Most interesting for now
 
-1.  Improve my Git skills
-2.  Get involved in developing of Mixxx
-3.  Solve different bugs on Mixxx
-4.  Build new scheme for database access in Mixxx
-5.  Test that scheme, try to find bottlenecks, possible deadlocks...
-6.  Code that scheme separate from Mixxx
-7.  Write documentation on scheme
-8.  Apply that scheme to Mixxx
-9.  Test Mixxx with my scheme
-10. PROFIT :)
+1.  Article on Library refactoring prototype --
+    <https://docs.google.com/document/d/1K2XpAmN68f5U6iv9SSZcmaDrpVjhp61S7GkQCMmLjm4/pub>
+2.  Code review of pause feature in library scanner --
+    <https://github.com/mixxxdj/mixxx/pull/55>
 
 # Weeks schedule / Tasks
 

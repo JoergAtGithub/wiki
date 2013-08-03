@@ -1,7 +1,7 @@
 ### Keith McMillen QuNeo
 
 [[/media/hardware/kmi_quoneo/quneo.jpg|]] Images (c)
-[KMI](http://http://www.keithmcmillen.com/)
+[KMI](http://www.keithmcmillen.com/)
 
 Keith McMillen QuNeo is a USB multi purpose pad controller and features
 tactile pads, sliders, rotary sensors and switches. Works with USB, MIDI

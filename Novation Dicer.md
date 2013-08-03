@@ -1,6 +1,6 @@
 \====Novation Dicer: Cue-point, looping and FX control for Digital
 DJs==== [[/media/hardware/novation_dicer/novation_dicer_product_shot.jpg|]]
-Images (c) [Novation](http://http://www.novationmusic.com/)
+Images (c) [Novation](http://www.novationmusic.com/)
 
 Novation Dicer is a palm-sized, USB bus-powered, fully class compliant
 MIDI device - no need to install any drivers. Dicers comes as pair.

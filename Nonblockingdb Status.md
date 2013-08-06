@@ -26,6 +26,19 @@ My fork of Mixxx at GitHub: <https://github.com/troyane/mixxx>
 2.  Code review of pause feature in library scanner --
     <https://github.com/mixxxdj/mixxx/pull/55>
 
+# Main goals for final term
+
+1.  **Pausable Library scanner.** We are on this way.
+2.  **No writes access to database from the GUI thread.**
+3.  **`ThreadDAO`** -- let's do and test on just one query, and then
+    generalize to common case -- do queue.
+4.  **Clever locking** -- to avoid the race condition with duplicated
+    data from database and models/member variables and to discard double
+    user database commands. 
+5.  Some kind of widget in Mixxx, like status-bar, `QProgressIndicator`
+    or a Mouse cursor.
+6.  Fix some linked bugs.
+
 # Weeks schedule / Tasks
 
 In general, I see two milestones:

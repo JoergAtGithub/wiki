@@ -102,24 +102,28 @@ In general, I see two milestones:
         <https://github.com/troyane/mixxx/tree/LibraryConcurencyRefactoring>
         to introduce separate thread for DB access \`ThreadDAO\` class.
     5.  Discuss migration to C++11.
+    6.  *Do re-planning for further work (if needed).*
 2.  Week *(12.08 -- 18.08)*
     1.  Disscuss better way to do locking of UI -- "Clever locking".
     2.  Implement locking of UI.
-    3.  (Try to) Fix some bugs.
+    3.  *Do re-planning for further work (if needed).*
 3.  Week *(19.08 -- 25.08)*
     1.  Implementing of queue (or not queue but one-shot if it would be
         better) queries inside \`ThreadDAO\`.
     2.  Test implemented solution.
     3.  (Try to) Fix some bugs.
+    4.  *Do re-planning for further work (if needed).*
 4.  Week *(26.08 -- 01.09)*
     1.  Implementing & testing.
     2.  Fixing bugs using implemented scheme. Here is blueprint
         <https://blueprints.launchpad.net/mixxx/+spec/nonblockingdb>,
         and there are linked bugs, which could be solved using new API.
+    3.  *Do re-planning for further work (if needed).*
 5.  Week *(02.09 -- 08.09)*
     1.  Write specs and docs on solution.
     2.  Prepare general API for applying queries.
     3.  Fixing bugs using new API.
+    4.  *Do re-planning for further work (if needed).*
 6.  Week *(09.09 -- 15.09)*
     1.  Iron out remaining bugs.
     2.  Merge my branch with master.

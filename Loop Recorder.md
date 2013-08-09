@@ -221,12 +221,12 @@ Extras:
   - ~~Week 1: Focus work on LoopPlayer and LoopRecorderManager~~
   - ~~Week 2: Continue work on LoopPlayer and LoopRecorderManager,
     integrate with Loop Recorder~~
-  - Week 3: Have a loop recorder that can record a single layer and play
-    it back by midterm evaluations.
-  - Week 4: Carl on vacation, may be able to work a few hours.
-  - Week 5 (GSoC Midterm Evaluation Week): Take stock of project
+  - ~~Week 3: Have a loop recorder that can record a single layer and
+    play it back by midterm evaluations.~~
+  - ~~Week 4: Carl on vacation, may be able to work a few hours.~~
+  - ~~Week 5 (GSoC Midterm Evaluation Week): Take stock of project
     progress and revisit planning for the next phase of development.
-    Begin implementing multiple layer support.
+    Begin implementing multiple layer support.~~
 
 #### August
 

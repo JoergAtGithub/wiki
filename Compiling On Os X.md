@@ -271,7 +271,7 @@ your homebrew installation. In this example we will use
     export CFLAGS=-I$HOMEBREW_PATH/include
     export CXXFLAGS=-I$HOMEBREW_PATH/include
     export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.4/
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.5/
 
 If you got the source code from Git, change to the newly created `mixxx`
 directory, and use scons to compile and install:

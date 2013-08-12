@@ -99,18 +99,18 @@ with the following functions:
 * <del>update /res/schema.xml for client database building</del>
 * <del>write interface of client database operation</del>
 * export preset relevant data into database
-    * write a script able to push preset relevant data into server database
+    * <del>write a script able to push preset relevant data into server database</del>
     * push preset relevant data into mixxx local database when mixxx is initialized
 * Automaticly load preset file
 * Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
     * controller covert preview
     * <del>Popup  Mapping Preset Manager push button</del>
-    * Popup Upload push button
+    * <del>Upload menu</del>
 * Adjust the workflow for mixxx initialization
 * Enhance preset search algorithm
 * Upload
-* upload.ui
-* logic: upload to cloud server and save in local
+* <del>upload.ui</del>
+* <del>logic: upload to cloud server and save in local</del>
 * Mapping Preset Manager
 * Mapping Preset Manager Dialog user interface(dlgmapingpresetmanagerdlg.ui)
     * <del>search bar</del> 
@@ -132,7 +132,7 @@ with the following functions:
     * <del>search</del>
     * <del>download</del>
     * checkversion
-    * upload
+    * <del>upload</del>
     * rate
     
 * Deploy
@@ -141,7 +141,7 @@ with the following functions:
 
 # Current Progress
 
-Upload
+checkversion
 
 # Team
 

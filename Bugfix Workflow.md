@@ -54,7 +54,8 @@ guidelines](coding%20guidelines), to avoid extra work.
 
 ## Become a Mixxx Contributor
 
-You have to sign a contributor agreement. We will contact you about it.
+You have to sign a contributor agreement. We will contact you about it
+in time.
 
 ## Fix is merged to master
 

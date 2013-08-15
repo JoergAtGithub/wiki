@@ -1,10 +1,18 @@
 \*\* FIXME -\> This page is under construction \<- FIXME\*\*
 
-#### Fork Mixxx on GitHub
+## Fork Mixxx on GitHub
 
-#### Creat a Local Branch
+The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
 
-#### Build Mixxx
+<https://help.github.com/articles/fork-a-repo>
+
+## Creat a Local Branch
+
+[Using Git for Mixxx Development](using_git)
+
+## Build Mixxx
+
+[Build Mixxx](start#build_mixxx)
 
 ## Setup a powerfull IDE
 

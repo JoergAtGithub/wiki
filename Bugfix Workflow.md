@@ -43,8 +43,21 @@ And don't forget to ask if you get stuck\!
 
 ## Issue Merge request
 
-## Become a Mixxx Contributor
+<https://help.github.com/articles/using-pull-requests>
 
 ## Fix issues from codereview
 
+This is the most annoying part. Because we are sometimes neat picker :-)
+
+Be sure that you code follows the Mixxx [coding
+guidelines](coding%20guidelines), to avoid extra work.
+
+## Become a Mixxx Contributor
+
+You have to sign a contributor agreement. We will contact you about it.
+
 ## Fix is merged to master
+
+The Bug is fixed now and will be released with the next release cycle.
+
+Your Name will appear in the "About Box" of Mixxx

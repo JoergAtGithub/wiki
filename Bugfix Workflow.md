@@ -37,6 +37,10 @@ Ask your questions or discuss your ideas at
 
 ## Fix it
 
+Happy coding :-)
+
+And don't forget to ask if you get stuck\!
+
 ## Issue Merge request
 
 ## Become a Mixxx Contributor

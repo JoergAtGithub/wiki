@@ -3,7 +3,7 @@
 # Bugfix Work Flow
 
 This is a step by step description about a typical work flow of fixing a
-First Mixxx Bug.
+first Mixxx bug.
 
 ## Fork Mixxx on GitHub
 

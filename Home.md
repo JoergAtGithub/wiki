@@ -78,6 +78,7 @@ plans.
 
 ### Getting Started
 
+  - [How to fix your first bug](Bugfix%20Workflow) 
   - [How to use Git](Using%20Git)
   - [Submitting
     Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)

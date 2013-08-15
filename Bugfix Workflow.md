@@ -47,7 +47,7 @@ And don't forget to ask if you get stuck\!
 
 ## Fix issues from codereview
 
-This is the most annoying part. Because we are sometimes neat picker :-)
+This is the most annoying part. Because we are sometimes neat picker ;-)
 
 Be sure that you code follows the Mixxx [coding
 guidelines](coding%20guidelines), to avoid extra work.

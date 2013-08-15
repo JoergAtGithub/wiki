@@ -35,7 +35,7 @@ Ask your questions or discuss your ideas at
   - or at the Mixxx IRC Channel: \#mixxx on
     [Freenode](http://freenode.net/).
 
-## Fix it
+## Fix it\!
 
 Happy coding :-)
 

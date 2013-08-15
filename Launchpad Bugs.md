@@ -44,3 +44,11 @@ Mixxx's defects.
     * skips in the master output
     * bugs that cause a player to go crazy and emit screeching noises
 ```
+
+## Adopting a Bug
+
+If you wish to start working on a Bug you should adopt it by assigning
+it to yourself. This way other developers are informed that you will
+take care of it. If you decide not to finish the Bug, you should add a
+link to your unfinished work on GitHub or attach a patch. And than
+un-assign yourselves.

@@ -10,6 +10,8 @@
 
 #### Adopt an easy bug on Launchpad
 
+#### Ask for hints and help
+
 #### Fix it
 
 #### Issue Merge request

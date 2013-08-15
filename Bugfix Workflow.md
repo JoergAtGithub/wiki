@@ -41,7 +41,7 @@ Happy coding :-)
 
 And don't forget to ask if you get stuck\!
 
-## Issue Merge request
+## Issue a pull request
 
 <https://help.github.com/articles/using-pull-requests>
 

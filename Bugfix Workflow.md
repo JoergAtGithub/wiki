@@ -2,8 +2,8 @@
 
 # Bugfix Work Flow
 
-This is a step by step description about a typical work flow of fixing a
-first Mixxx bug.
+This is a brief step by step description about a typical work flow of
+fixing a first Mixxx bug. Follow the links for more details.
 
 ## Fork Mixxx on GitHub
 

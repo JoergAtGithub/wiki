@@ -136,6 +136,10 @@ reading the compiler commands, but it is safer to do the job manual:
 
 <!-- end list -->
 
+  - Or merge from git@github.com:daschuer/mixxx.git
+
+<!-- end list -->
+
   - Possible issue: [Why doesn't Eclipse know about some of Qt's symbols
     / class
     names?](http://qt-project.org/faq/answer/why_doesnt_eclipse_know_about_some_of_qts_symbols_class_names)

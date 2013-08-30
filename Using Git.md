@@ -36,6 +36,9 @@ Like
  * gitk for viewing history 
 ```
 
+    sudo apt-get install meld
+    sudo apt-get install gitk
+
 ## Windows
 
 Download and install git from

@@ -88,9 +88,10 @@ It is also helpful to use a IDE integrated Git GUIs.
 
 # Cloning the Mixxx Repository
 
-Note: If you plan fixing a Bug, you should fork the mixxx repository on
-GitHub first. Replace "mixxxdj" with your user name in following
-paragraphs.
+Note: If you plan fixing a Bug, you should
+[fork](https://help.github.com/articles/fork-a-repo) the mixxx
+repository on GitHub first. Replace "mixxxdj" with your user name in
+following paragraphs.
 
 From the commandline, simply type:
 

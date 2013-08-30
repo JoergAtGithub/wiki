@@ -62,6 +62,30 @@ brew install git
 
 In a terminal.
 
+Download and install git from
+[git-scm.org](http://git-scm.com/downloads/).
+
+Alternatively, you may install it from a package manager for OS X such
+as [Homebrew](http://mxcl.github.io/homebrew/) or
+[MacPorts](http://www.macports.org/).
+
+This is typically as easy as typing:
+
+``` 
+brew install git 
+```
+
+In a terminal.
+
+## IDE Plug-Ins
+
+It is also helpful to use a IDE integrated Git GUIs.
+
+\* [eclipse](eclipse) has very advanced Git PlugIn
+[EGit](http://www.eclipse.org/egit/) bundled with the C/C++ edition of
+Eclipse \* [qtcreator](qtcreator) has build in support of Git (but be
+warned, it has is own opinion which files will be added to the Index)
+
 # Cloning the Mixxx Repository
 
 From the commandline, simply type:

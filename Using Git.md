@@ -81,10 +81,10 @@ In a terminal.
 
 It is also helpful to use a IDE integrated Git GUIs.
 
-\* [eclipse](eclipse) has very advanced Git PlugIn
-[EGit](http://www.eclipse.org/egit/) bundled with the C/C++ edition of
-Eclipse \* [qtcreator](qtcreator) has build in support of Git (but be
-warned, it has is own opinion which files will be added to the Index)
+``` 
+ * [[eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
+ * [[qtcreator]] has build in support of Git (but be warned, it has is own opinion which files will be added to the Index) 
+```
 
 # Cloning the Mixxx Repository
 

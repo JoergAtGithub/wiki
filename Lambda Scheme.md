@@ -138,3 +138,7 @@ lambdas queue.
 
 In this case this debug message: "..." will be printed to the mixxx.log
 file.
+
+# Dia
+
+[[/media/wiki/callasync.png|]]

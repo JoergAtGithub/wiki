@@ -12,35 +12,52 @@ In Mixxx 1.11 if you want to conduct database access you must:
 
 1.  Get pointer to respective DAO
 2.  Prepare query and data
-3.  Apply query from the point where you are right now
-4.  Populate query results (if it's necessary)
+3.  Apply query (synchronously in main thread)
+4.  Populate table models from query results (if it's necessary)
 
 The main problem of such scheme is conducting the db access mostly from
 the Main thread. That's why while query's pending we face UI locking.
 
 The main requirement is avoid hanging of UI (or minimize hanging up to
-16 ms, but not more).
+16 ms given by the display refresh rate, but not more).
 
 There are lots of inherited complexity in the db usage:
 
 1.  Threads are evil =)
-2.  The db connection cannot be populated on different threads
+2.  The db connections can be used only in that thread where it was
+    created
 3.  We must have just one access point to db in perfect case
 
 We propose new scheme of the db accessing. This scheme requires usage of
 [lambdas which was presented in new
 C++11](http://www.cprogramming.com/c++11/c++11-lambda-closures.html).
 
+Thanks to the introduction of Lambdas into C++11 it is much easier to
+write RPC, so we can avoid callbacks or using signal-slots (as it need
+us to write lots of overhead). Lambdas (in our case) is alternative to
+callbacks. But, as for me (and you can see at
+<https://github.com/troyane/lambdaConcurrent>) lambdas syntax is little
+bit unusual, but very clear and much shorter then other ones.
+
+We use lambda as closure (closure unlike a plain function pointer allows
+a function to access those non-local variables even when invoked outside
+of its immediate lexical scope). And move that execution of lambda to
+separate thread.
+
+Without chaining the Mixxx 1.11 business logic too much we got ability
+to provide database access in separate thread.
+
 # Scheme in few words
 
-We are going to leave all `DAO` class hierarchy and leave behaviour
-mostly the same, except one important moment -- conduct all database
-access in separate thread.
+We are going to keep all `DAO` class hierarchy and keep behaviour mostly
+the same, except one important moment -- conduct all database access in
+dedicated database thread.
 
 Object `TrackCollection` becomes our separate thread. It is creating in
 `Library`, also connects to database, holds this connection, initializes
-all `DAO` objects and begins its own event loop (`while` in `run()`
-method).
+all `DAO` objects and begins its own "event loop" (`while` cycle in
+`run()` method where thread waits for incoming lambdas containing db
+queries).
 
 We got into cycle body every time someone places lambda to queue by
 callin `callAsync()`. Here we dequeue lambda and execute it (in
@@ -50,8 +67,11 @@ callin `callAsync()`. Here we dequeue lambda and execute it (in
 
 1.  Get pointer to `TrackCollection`s thread
 2.  Surround your code by respective call of `callAsync` where the first
-    parameter will be lambda with its cathes values (most common --
+    parameter will be lambda with its catched values (most common --
     this).
+3.  Be sure all used `this` member variables are used in a thread save.
+    We must rely on fact that object will be still alive when lambda'll
+    execute in separate thread. 
 
 It guarantees your code will be placed into queue and executed as soon
 as possible in `TrackCollection`s thread. Must admit that this is
@@ -68,6 +88,9 @@ See [Rules and arrangements using lambdas scheme for database
 access](lambda_rules)
 
 ## Not Asynchronous, but synchronous
+
+*This can be uses safely during construction time of Mixxx but should be
+avoided in run time.*
 
 If you can't move on until code in lambda executes. For example, when
 you need results of some query in initialization of your class. So you
@@ -95,3 +118,6 @@ accessing UI.
 There is the upper bound for lambda queue (`MAX_LAMBDA_COUNT`). Someone
 someday could wait in `callAsync` if there is no empty positions in
 lambdas queue.
+
+In this case this debug message: "..." will be printed to the mixxx.log
+file.

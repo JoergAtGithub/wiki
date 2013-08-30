@@ -27,9 +27,7 @@ the command-line using `apt-get`.
 
     sudo apt-get install git
 
-If you like you may install a additional GUI Tool.
-
-Like
+If you like you may install a additional GUI Tools like:
 
 ``` 
  * meld for a comparing revisions 

@@ -80,7 +80,24 @@ lambda into queue happen in less than 16 ms and execution from your
 context goes on. We can't say exactly when lambda will be executed (as
 soon as it is placed to queue and becomes at the top of queue).
 
-# Here are some cases
+# Locking UI
+
+Here is sarcastic comics on theme of locking --
+<http://dottech.org/93827/how-many-people-madly-click-their-mouse-when-a-program-freezes-comic/>
+
+There is no sense to queue lot of identical queries, so we must not lock
+all UI, but just lock ability to do some other queries (so, lock just
+left sidebar and library for example).
+
+For this purposes we created new binary control \[Playlist\] “isBusy”
+with range (0.0f — off, else on). And it makes library widget grey
+(enabled==false).
+
+So, we can use this CO this way: `m_pCOTPlaylistIsBusy = new
+ControlObjectThread(ConfigKey("[Playlist]", "isBusy"));`. And we are
+locking/unlocking UI through this CO from `TrackCollection`s thread.
+
+# Some moments of lambda usage
 
 ## If you need to access UI
 

@@ -27,6 +27,15 @@ the command-line using `apt-get`.
 
     sudo apt-get install git
 
+If you like you may install a additional GUI Tool.
+
+Like
+
+``` 
+ * meld for a comparing revisions 
+ * gitk for viewing history 
+```
+
 ## Windows
 
 Download and install git from

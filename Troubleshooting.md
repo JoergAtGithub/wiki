@@ -293,8 +293,8 @@ USB devices. (Mixxx will say something to this effect in the log when it
 scans for HID devices.) To fix this, do the following:
 
 1.  Open a console
-2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` (you can
-    change the number and name as appropriate): `sudo nano
+2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
+    can change the number and name as appropriate): `sudo nano
     /etc/udev/rules.d/15-mixxx-usb.rules`
 3.  Edit that file and add the following: `# Allow scannining USB
     devices
@@ -343,3 +343,5 @@ The only way to resolve this is to use a single audio device with
 multiple outputs ([such as
 this](http://www.electrixpro.com/images/ebox1.jpg)) as then they all run
 at the same speed since they share a single clock crystal.
+
+1.  or /lib/udev/rules.d/15-mixxx-usb.rules in Ubuntu 12.04

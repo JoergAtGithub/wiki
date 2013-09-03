@@ -1,6 +1,8 @@
+# Lambda scheme
+
 This is article on new scheme of database access.
 
-# Todays approach to database access in Mixxx
+## Todays approach to database access in Mixxx
 
 There are lots of objects which need to use database access. Most of
 that type of access is provided by respective `*DAO` (`DAO` means data
@@ -47,7 +49,7 @@ separate thread.
 Without chaining the Mixxx 1.11 business logic too much we got ability
 to provide database access in separate thread.
 
-# Scheme in few words
+## Scheme in few words
 
 We are going to keep all `DAO` class hierarchy and keep behaviour mostly
 the same, except one important moment -- conduct all database access in
@@ -80,7 +82,7 @@ lambda into queue happen in less than 16 ms and execution from your
 context goes on. We can't say exactly when lambda will be executed (as
 soon as it is placed to queue and becomes at the top of queue).
 
-# Locking UI
+## Locking UI
 
 Here is sarcastic comics on theme of locking --
 <http://dottech.org/93827/how-many-people-madly-click-their-mouse-when-a-program-freezes-comic/>
@@ -97,14 +99,14 @@ So, we can use this CO this way: `m_pCOTPlaylistIsBusy = new
 ControlObjectThread(ConfigKey("[Playlist]", "isBusy"));`. And we are
 locking/unlocking UI through this CO from `TrackCollection`s thread.
 
-# Some moments of lambda usage
+## Some moments of lambda usage
 
-## If you need to access UI
+### If you need to access UI
 
 See [Rules and arrangements using lambdas scheme for database
 access](lambda_rules)
 
-## Not Asynchronous, but synchronous
+### Not Asynchronous, but synchronous
 
 *This can be uses safely during construction time of Mixxx but should be
 avoided in run time.*
@@ -130,7 +132,7 @@ queue.
 Other way to implement such behaviour is to emit signals like for
 accessing UI.
 
-## Lambdas queue upper bound
+### Lambdas queue upper bound
 
 There is the upper bound for lambda queue (`MAX_LAMBDA_COUNT`). Someone
 someday could wait in `callAsync` if there is no empty positions in
@@ -139,6 +141,6 @@ lambdas queue.
 In this case this debug message: "..." will be printed to the mixxx.log
 file.
 
-# Dia
+## Dia
 
 [[/media/wiki/callasync.png|]]

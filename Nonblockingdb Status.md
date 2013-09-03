@@ -25,6 +25,8 @@ My fork of Mixxx at GitHub: <https://github.com/troyane/mixxx>
     <https://docs.google.com/document/d/1K2XpAmN68f5U6iv9SSZcmaDrpVjhp61S7GkQCMmLjm4/pub>
 2.  Code review of pause feature in library scanner --
     <https://github.com/mixxxdj/mixxx/pull/55>
+3.  Article on new database access scheme -- Lambda scheme -- [Lambda
+    scheme](lambda_scheme)
 
 # Main goals for final term
 
@@ -105,7 +107,7 @@ In general, I see two milestones:
 
 -----
 
-1.  Week *(05.08 -- 11.08)*
+1.  **Week *(05.08 -- 11.08)***
     1.  Plan (re-plan) schedule of work for finalterm.
     2.  Discussion possible race conditions.
     3.  Discuss further work on
@@ -116,23 +118,23 @@ In general, I see two milestones:
         to introduce separate thread for DB access \`ThreadDAO\` class.
     5.  Discuss migration to C++11.
     6.  *Do re-planning for further work (if needed).*
-2.  Week *(12.08 -- 18.08)*
+2.  **Week *(12.08 -- 18.08)***
     1.  Disscuss better way to do locking of UI -- "Clever locking".
     2.  Implement locking of UI.
     3.  *Do re-planning for further work (if needed).*
-3.  Week *(19.08 -- 25.08)*
+3.  **Week *(19.08 -- 25.08)***
     1.  Implementing of queue (or not queue but one-shot if it would be
         better) queries inside \`ThreadDAO\`.
     2.  Test implemented solution.
     3.  (Try to) Fix some bugs.
     4.  *Do re-planning for further work (if needed).*
-4.  Week *(26.08 -- 01.09)*
+4.  **Week *(26.08 -- 01.09)***
     1.  Implementing & testing.
     2.  Fixing bugs using implemented scheme. Here is blueprint
         <https://blueprints.launchpad.net/mixxx/+spec/nonblockingdb>,
         and there are linked bugs, which could be solved using new API.
     3.  *Do re-planning for further work (if needed).*
-5.  Week *(02.09 -- 08.09)*
+5.  **Week *(02.09 -- 08.09)***
     1.  Write specs and docs on solution.
     2.  Prepare general API for applying queries.
     3.  Fixing bugs using new API.

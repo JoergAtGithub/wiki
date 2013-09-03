@@ -25,7 +25,7 @@ My fork of Mixxx at GitHub: <https://github.com/troyane/mixxx>
     <https://docs.google.com/document/d/1K2XpAmN68f5U6iv9SSZcmaDrpVjhp61S7GkQCMmLjm4/pub>
 2.  Code review of pause feature in library scanner --
     <https://github.com/mixxxdj/mixxx/pull/55>
-3.  Article on new database access scheme -- Lambda scheme -- [Lambda
+3.  Article on new database access scheme -- [Lambda
     scheme](lambda_scheme)
 
 # Main goals for final term

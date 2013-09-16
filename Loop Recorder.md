@@ -232,20 +232,22 @@ Extras:
 
 #### August
 
-  - Week 1 (8/5-8/11):Implement multiple layer support, begin work on
-    final GUI
-  - Week 2: Continue implementation of multiple layer support
-  - Week 3: Have fully function rough demo
-  - Week 4: Implement library export feature and loop table view
+  - ~~Week 1 (8/5-8/11):Implement multiple layer support, begin work on
+    final GUI~~
+  - ~~Week 2: Continue implementation of multiple layer support~~
+    (multiple layer support has been troublesome to implement)
+  - ~~Week 3: Have fully function rough demo~~
+  - ~~Week 4: Implement library export feature and loop table view~~
 
 #### September
 
-  - Week 1: Finalize GUI, documentation and do extensive on final
-    version.
-  - Week 2: Finalize GUI, documentation and do extensive on final
-    version.
+  - ~~Week 1: Finalize GUI, documentation and do extensive tests on
+    final version.~~
+  - ~~Week 2: Finalize GUI, documentation and do extensive tests on
+    final version.~~
   - Week 3 (GSoC Suggested pencils down date): Finalize GUI,
-    documentation and do extensive on final version. Fix loose ends.
+    documentation and do extensive tests on final version. Fix loose
+    ends.
   - Week 4: All coding done, prepare final report.
 
 ## Team

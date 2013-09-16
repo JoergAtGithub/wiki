@@ -172,28 +172,30 @@ Implement new SoundSource class for internally stored loops?
 1.  Core Loop Code
     1.  Loop Recording Manager
         1.  ~~Connect to UI controls~~
-        2.  Connect signals/slots between controls, LoopRecorder and
-            LoopRecorderDecks
+        2.  ~~Connect signals/slots between controls, LoopRecorder and
+            LoopRecorderDecks~~
         3.  Coordinate playback of multiple loop decks for multi-layer
             recording.
-        4.  Loop beat length tracking and control.
+        4.  ~~Loop beat length tracking and control.~~
         5.  Export to library.
             1.  Develop loop naming scheme.
             2.  Mix multiple layers to single file.
             3.  ~~Copy from temporary to permanent recordings folder.~~
         6.  Export to deck/sampler
-            1.  Generate list of available decks/samplers.
+            1.  ~~Track available decks/samplers.~~
             2.  ~~Send to sampler and load for playback.~~
     2.  Engine Loop Recorder
         1.  ~~Create new thread for recording.~~
         2.  ~~Connect with loop recording manager.~~
     3.  Loop Recorder Deck(s)
         1.  Route audio into the mix after audio is sent to the loop
-            recorder to avoid re-recording loops.
-        2.  Slots for receiving updates from loop recorder and manager
-        3.  Continuously loop deck(s).
+            recorder to avoid re-recording loops. (Evaluating whether
+            this is necessary)
+        2.  ~~Slots for receiving updates from loop recorder and
+            manager~~ Controlled via control objects.
+        3.  ~~Continuously loop deck(s).~~ Currently only single layer.
 2.  GUI integration
-    1.  Theme modifications
+    1.  Develop widget (In progress).
     2.  New loop table view for saved loops (could be added as a section
         in the recordings view)
 3.  Documentation

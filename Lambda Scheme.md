@@ -18,7 +18,7 @@ In Mixxx 1.11 if you want to conduct database access you must:
 4.  Populate table models from query results (if it's necessary)
 
 The main problem of such scheme is conducting the db access mostly from
-the Main thread. That's why while query's pending we face UI locking.
+the Main thread. That's why while query's pending we face UI freezing.
 
 The main requirement is avoid hanging of UI (or minimize hanging up to
 16 ms given by the display refresh rate, but not more).

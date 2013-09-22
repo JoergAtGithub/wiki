@@ -1,8 +1,9 @@
 # Rules and arrangements using lambdas scheme for database access
 
+  - Beware of recursive lambda calls.
   - All database access must be applied in separate thread
     (`TrackCollections` thread). So all database access must be wrapped
-    into lambda.
+    into lambda (via `m_pTrackCollection->callAsync/callSync`).
 
 <!-- end list -->
 
@@ -12,17 +13,14 @@
 <!-- end list -->
 
   - If you need to access GUI from lambda it can be done by emitting
-    signal (`ConnectionType` must be `Qt::BlockingQueuedConnection` --
-    same as `QueuedConnection`, except the current thread (thread where
-    lambda executes -- `TrackCollection`) blocks until the slot returns.
-    This connection type should only be used where the emitter and
-    receiver are in different threads. Note: Violating this rule can
-    cause your application to deadlock. Beware of emitting
-    `Qt::BlockingQueuedConnection` signal from main thread\!):
+    signal (`ConnectionType` must be `Qt::QueuedConnection`.
   - All access to GUI moves to separate private slot (`slotChangeUI`).
   - Signal must be created (`changeUI`).
   - `changeUI` connects to `slotChangeUI` with last parameter
-    `Qt::BlockingQueuedConnection`.
+    `Qt::QueuedConnection`.
+  - **OR** You can use helper class `MainExecuter`, which is constructed
+    like `TrackCollection` and has its methods `callSync/callAsync`.
+    Using `MainExecuter` you must wrap UI access to lambda.
 
 -----
 
@@ -34,7 +32,7 @@ button after calling `m_pMissingTableModel->select();`
 So we created: `private slots: void slotActivateButtons(bool enable);`
 
 connect it: `connect(this, SIGNAL(activateButtons(bool)), this,
-SLOT(slotActivateButtons(bool)), Qt::BlockingQueuedConnection);`
+SLOT(slotActivateButtons(bool)), Qt::QueuedConnection);`
 
 and call it from the lambda inside `DlgMissing::onShow()`:
 

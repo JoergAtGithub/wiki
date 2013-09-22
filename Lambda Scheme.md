@@ -37,17 +37,18 @@ C++11](http://www.cprogramming.com/c++11/c++11-lambda-closures.html).
 Thanks to the introduction of Lambdas into C++11 it is much easier to
 write RPC, so we can avoid callbacks or using signal-slots (as it need
 us to write lots of overhead). Lambdas (in our case) is alternative to
-callbacks. But, as for me (and you can see at
+callbacks. But, as for me (and you can see at small example here
 <https://github.com/troyane/lambdaConcurrent>) lambdas syntax is little
 bit unusual, but very clear and much shorter then other ones.
 
-We use lambda as closure (closure unlike a plain function pointer allows
-a function to access those non-local variables even when invoked outside
-of its immediate lexical scope). And move that execution of lambda to
-separate thread.
+Lambda also can behaves as closure (closure unlike a plain function
+pointer allows a function to access those non-local variables even when
+invoked outside of its immediate lexical scope).
+
+we move execution of lambda to separate thread.
 
 Without chaining the Mixxx 1.11 business logic too much we got ability
-to provide database access in separate thread.
+to provide database access in separate thread. As it was planned.
 
 ## Scheme in few words
 

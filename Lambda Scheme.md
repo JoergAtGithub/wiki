@@ -45,10 +45,10 @@ Lambda also can behaves as closure (closure unlike a plain function
 pointer allows a function to access those non-local variables even when
 invoked outside of its immediate lexical scope).
 
-we move execution of lambda to separate thread.
+We move execution of lambda to separate thread.
 
 Without chaining the Mixxx 1.11 business logic too much we got ability
-to provide database access in separate thread. As it was planned.
+to provide database access in separate thread. As it was required.
 
 ## Scheme in few words
 

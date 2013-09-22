@@ -113,25 +113,13 @@ access](lambda_rules)
 avoided in run time.*
 
 If you can't move on until code in lambda executes. For example, when
-you need results of some query in initialization of your class. So you
-may use some kind of "callSync" -- do it with locks. The algorithm is
-quite easy:
-
-1.  In your context create (even in stack) `QMutex mutex`
-2.  Do `mutex.lock()`
-3.  Do as usual you do with `callAsync()`, but with little correction in
-    lambda: add `&mutex` to lambdas catchlist; add `mutex.unlock()` at
-    the end of your lambda code (it must be surrounded by lambda)
-4.  After `callSync` code do `mutex.lock()` and imidiately
-    `mutex.unlock()`
+you need results of some query in initialization of your class. Do it
+with `callSync`.
 
 Completing this instruction, we do as it was previously, but with pause
 of further execution until respective lambda will be executed and
 respective mutex will be unlocked. Beware your lambda must wait whole
-queue.
-
-Other way to implement such behaviour is to emit signals like for
-accessing UI.
+lambda queue.
 
 ### Lambdas queue upper bound
 

@@ -132,4 +132,51 @@ file.
 
 ## Dia
 
+All of written above can be described by next sequence diagram
+
 [[/media/wiki/callasync.png|]]
+
+**NOTE:** Here is mistake -- we use `Qt::QueuedConnection` (or
+`MainExecuter`) instead of `Qt::BlockingQueuedConnection`.
+
+## Long transactions
+
+Example of "long" transaction is `LibraryScanner`.
+
+We already have working scheme on pausing library scanner (here we can
+make pause by clicking "pause" button in respective
+`LibraryScannerDlg`).
+
+Main idea is to use same interface for accessing database -- `callSync`.
+
+Here uses cashing system -- we collect 50 tracks and wrap into one
+transaction. While that transaction is pending, user can be able to
+interact with Mixxx UI, for example, create playlists (even without need
+to click "pause" button).
+
+# Idea of usage scheme based on chunks
+
+`LibraryScanner` runs in separate thred.
+
+We already have `callSync` function, which calls synchronously. Also
+there is mechanism that controls weather we are in `Main` thread or in
+other thread. In case of other thread we just sleep (sleep thread in
+background).
+
+So, new API for long transaction expects possibility to divide all
+database access into several **chunks** and send it one by one and wait
+until it executes.
+
+This synchronous scheme gives us great programming experience -- we
+avoid need of thread synchronization (and lot of inherited overhead
+codding). Every thread just do `callSync` with adequate *(I mean, not so
+big, and not so small)* transaction. Our scheme will be workable on lots
+of *parallel* working threads, and user input will be smooth as well.
+
+All bad moments of this scheme is in that fact that `LibraryScanner` (or
+other "long" transactions) will cost more time and that in general case
+-- since we need to open lot of transactions. *(But we are talking about
+operations in separate thread, so it can take its time).*
+
+If it would be very important - we can rewrite scheme further. But as I
+feel, now this is best solution -- chopped transactions.

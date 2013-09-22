@@ -77,7 +77,7 @@ calling `callAsync()/callSync`. Here we dequeue lambda and execute it
     lambda'll execute in separate thread. 
 
 It guarantees your code will be placed into queue and executed as soon
-as possible in `TrackCollection`s thread. Must admit that this is
+as possible in `TrackCollection`s thread. Must admit that `callAsync` is
 **asynchronous** function. It means that all operations on placing
 lambda into queue happen in less than 16 ms and execution from your
 context goes on. We can't say exactly when lambda will be executed (as

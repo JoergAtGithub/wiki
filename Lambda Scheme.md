@@ -63,15 +63,15 @@ all `DAO` objects and begins its own "event loop" (`while` cycle in
 queries).
 
 We got into cycle body every time someone places lambda to queue by
-calling `callAsync()`. Here we dequeue lambda and execute it (in
-`TrackCollection`s thread).
+calling `callAsync()/callSync`. Here we dequeue lambda and execute it
+(in `TrackCollection`s thread).
 
 **What do I need to do with some code to apply new scheme?**
 
 1.  Get pointer to `TrackCollection`s thread
-2.  Surround your code by respective call of `callAsync` where the first
-    parameter will be lambda with its catched values (most common --
-    this).
+2.  Surround your code by respective call of `callAsync/callSync` where
+    the first parameter will be lambda with its catched values (most
+    common -- this).
 3.  Be sure all used `this` member variables are used in a thread save
     way. We must rely on fact that object will be still alive when
     lambda'll execute in separate thread. 

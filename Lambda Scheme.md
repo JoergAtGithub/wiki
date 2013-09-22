@@ -102,7 +102,7 @@ locking/unlocking UI through this CO from `TrackCollection`s thread.
 
 ## Some moments of lambda usage
 
-### If you need to access UI
+### If you need to access UI from lambda
 
 See [Rules and arrangements using lambdas scheme for database
 access](lambda_rules)

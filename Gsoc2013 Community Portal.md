@@ -140,7 +140,7 @@ with the following functions:
 
 # Current Progress
 
-checkversion
+deploy
 
 # Team
 

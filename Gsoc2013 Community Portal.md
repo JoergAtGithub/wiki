@@ -98,42 +98,41 @@ with the following functions:
 * <del>write models with Django for server database building</del>
 * <del>update /res/schema.xml for client database building</del>
 * <del>write interface of client database operation</del>
-* export preset relevant data into database
+* <del>export preset relevant data into database</del>
     * <del>write a script able to push preset relevant data into server database</del>
-    * push preset relevant data into mixxx local database when mixxx is initialized
+    * <del>push preset relevant data into mixxx local database when mixxx is initialized</del>
 * Automaticly load preset file
-* Modify controller dialog user interface(dlgprefcontrollerdlg.ui)
-    * controller covert preview
+* <del>Modify controller dialog user interface(dlgprefcontrollerdlg.ui)</del>
+    * <del>controller covert preview</del>
     * <del>Popup  Mapping Preset Manager push button</del>
     * <del>Upload menu</del>
-* Adjust the workflow for mixxx initialization
-* Enhance preset search algorithm
-* Upload
+* <del>Adjust the workflow for mixxx initialization</del>
+* <del>Enhance preset search algorithm</del>
+* <del>Upload</del>
 * <del>upload.ui</del>
 * <del>logic: upload to cloud server and save in local</del>
-* Mapping Preset Manager
-* Mapping Preset Manager Dialog user interface(dlgmapingpresetmanagerdlg.ui)
+* <del>Mapping Preset Manager</del>
+* <del>Mapping Preset Manager Dialog user interface(dlgmapingpresetmanagerdlg.ui)</del>
     * <del>search bar</del> 
     * <del>Tap switch between Local and Cloud</del> 
     * <del>Search results panel</del>
-    * Submenu for preset download, details display etc.
     * Notification board 
-    * apply button
+    * <del>apply button</del>
 * <del>fuzzy query both from local and cloud</del>
 * <del>display the query results in the way of paging</del>
-* presets download
+* <del>presets download</del>
 * users rate and comment on preset files
 * Intelligent recommendation algorithm for mapping preset files
-* check for update local preset
-* Restful API Engine
+* <del>check for update local preset</del>
+* <del>Restful API Engine</del>
 * <del>build an api server with django and tastypie</del>
-* design API
+* <del>design API</del>
     * <del>details</del>
     * <del>search</del>
     * <del>download</del>
-    * checkversion
+    * <del>checkversion</del>
     * <del>upload</del>
-    * rate
+    * <del>rate</del>
     
 * Deploy
 * Test

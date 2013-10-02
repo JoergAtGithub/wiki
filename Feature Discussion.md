@@ -15,6 +15,7 @@ page.
   - [Modifier System](Modifier%20System)
   - [nonblockingdb\_status](nonblockingdb_status)
   - [Loop Recorder](Loop%20Recorder)
+  - [Timing](Timing)
 
 ## Implemented Specifications
 

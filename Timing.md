@@ -51,3 +51,11 @@ with a higher rate then the audio buffer size are lost.
 
 The Waveform display must be refreshed with the display refresh rate,
 but the data to display are calculated with the audio update rate.
+
+## Low latency
+
+The control "Latency" is the time from a control command at the until
+the change can be heard from the speakers. Only a middle part is
+produced by Mixxx.
+
+For best results ....

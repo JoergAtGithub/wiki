@@ -64,3 +64,4 @@ audio interval.
 ## Links
 
 <https://bugs.launchpad.net/mixxx/+bug/1117806>
+<https://bugs.launchpad.net/mixxx/+bug/981199>

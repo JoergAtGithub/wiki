@@ -60,3 +60,7 @@ produced by Mixxx.
 
 For best results all controls should be sampled one time within each
 audio interval.
+
+## Links
+
+<https://bugs.launchpad.net/mixxx/+bug/1117806>

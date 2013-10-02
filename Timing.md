@@ -58,4 +58,5 @@ The control "Latency" is the time from a control command at the until
 the change can be heard from the speakers. Only a middle part is
 produced by Mixxx.
 
-For best results ....
+For best results all controls should be sampled one time within each
+audio interval.

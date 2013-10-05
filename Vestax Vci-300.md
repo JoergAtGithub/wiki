@@ -78,8 +78,10 @@ in the Midi mapping.
 
 Mixxx 1.11 support the VCI-300 out of the box. The mapping for Mixxx
 closely resemble the original to make the transition easy. Check the
-Mixxx forum for support:
+Mixxx forum for support and the latest updates:
 <http://mixxx.org/forums/viewtopic.php?f=7&t=2596>.
+
+[Version 2013-10-04](http://www.mixxx.org/forums/viewtopic.php?f=7&t=4021&start=20#p19980)
 
 |       |                        |                                                                                                                       |
 | ----- | ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -90,7 +92,8 @@ Mixxx forum for support:
 |       | Scroll + Auto Tempo    | Tap BPM. When taped repeatedly, adjust the tracks BPM to the tapped BPM.                                              |
 | 03    | Keylock                | Trigger beatsync                                                                                                      |
 |       | Shift + Keylock        | Reset pitch to 0.00% (quartz)                                                                                         |
-| 04    | Pitch Shift            | Fine tune playback speed +/-0.01                                                                                      |
+| 04    | Pitch Shift            | Pitch bend                                                                                                            |
+|       | Shift + Pitch Shift    | Fine tune playback speed +/-0.01                                                                                      |
 | 05    | Cue \[1-3\]/In         | Set/Activate Hotcue                                                                                                   |
 |       | Shift + Cue \[1-3\]/In | Delete Hotcue                                                                                                         |
 | 06    | Scratch                | Toggle scratching on jogwheel                                                                                         |
@@ -119,6 +122,7 @@ Mixxx forum for support:
 | 17    | Cue                    | If a cue point is set, jumps to the cue point when pressed .                                                          |
 |       | Shift + Cue            | Set the cue point (while playing), clear the cue point (while paused)                                                 |
 | 18    | Play                   | Start/Pause playback                                                                                                  |
+|       | Shift + Play           | Stutter Play                                                                                                          |
 | 19    | Crossfader             | Fades between the left and right channels.                                                                            |
 | 20    | Input faders           | Control the volume of their respective tracks.                                                                        |
 | 21/23 | PFL A/B                | Sends the left/right deck to the headphone mix.                                                                       |

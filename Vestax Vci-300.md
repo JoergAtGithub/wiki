@@ -81,7 +81,7 @@ closely resemble the original to make the transition easy. Check the
 Mixxx forum for support and the latest updates:
 <http://mixxx.org/forums/viewtopic.php?f=7&t=2596>.
 
-[Version 2013-10-04](http://www.mixxx.org/forums/viewtopic.php?f=7&t=4021&start=20#p19980)
+[Version 2013-10-05](http://www.mixxx.org/forums/viewtopic.php?f=7&t=4021&p=19985#p19985)
 
 |                 |                        |                                                                                                                       |
 | --------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------- |

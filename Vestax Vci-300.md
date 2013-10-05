@@ -131,7 +131,10 @@ Mixxx forum for support and the latest updates:
 | 24    | Cursor Up/Down         | Scrolls to the next/previous track in the track table.                                                                |
 |       | Cursor Left/Right      | Switches to the next view (Library, Queue, etc.)                                                                      |
 |       | Tab                    | Toggles (expands/collapses) the currently selected sidebar item.                                                      |
-| 25    | Jog                    | Nudge track or scratching                                                                                             |
+| 25    | Jog (platter touched)  | Track search (scratching disabled while paused)                                                                       |
+|       | :::                    | Pitch bend / nudge (scratching disabled while playing)                                                                |
+|       | :::                    | Scratch (scratching enabled)                                                                                          |
+|       | Jog (outer rim)        | Pitch bend / nudge (scratching enabled while playing)                                                                 |
 |       | Shift + Jog            | Fast track search (while paused)                                                                                      |
 |       | Scroll + Jog           | Scroll playlist (while paused)                                                                                        |
 

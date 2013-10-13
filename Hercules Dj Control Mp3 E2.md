@@ -48,7 +48,7 @@ If the device is still not visible as a separate entry under
 "Controllers" you need to modify the device permissions using udev
 rules. First create the rule file:
 
-    sudo nano /etc/udev/rules.d/hercules-usb.rule
+    sudo nano /etc/udev/rules.d/hercules-usb.rules
 
 Add following lines to this file:`SUBSYSTEM=="usb_device",
 SYSFS{idVendor}=="06f8", MODE="0666"

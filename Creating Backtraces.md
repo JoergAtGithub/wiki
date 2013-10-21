@@ -18,14 +18,14 @@ crashed.
     mixxx.exe`
 6.  Continue with the instructions below for all platforms
 
-## All
+## Linux & Mac OS X with Xcode 4.x
 
 1.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
 
 <!-- end list -->
 
   - **OSX users** need to specify the path for the executable file, e.g
-    `gdb /Applications/Mixxx.app/Contents/MacOS/Mixxx`
+    `gdb /Applications/Mixxx.app/Contents/MacOS/mixxx`
   - Use the gdb "--args" option to pass arguments, e.g. `gdb --args
     ./mixxx --controllerDebug --developer --resourcePath res`
 
@@ -73,3 +73,33 @@ crashed.
 **Note:** To get a backtrace for a thread freeze you can do the same
 thing as above, but to get the gdb prompt, you have to press CTRL+Z in
 the terminal window to suspend Mixxx.
+
+## Mac OS X with Xcode 5.x
+
+Apple switched to clang/lldb. Xcode 5 does not include the GNU compiler
+or tools.
+
+1.  Open a terminal window.
+2.  Specify the path for the executable file
+
+<!-- end list -->
+
+  - `lldb /Applications/Mixxx.app/Contents/MacOS/mixxx`
+  - lldb output should read `Current executable set to
+    '/Applications/Mixxx.app/Contents/MacOS/mixxx' (x86_64)`
+  - If want to pass flag-like arguments to Mixxx, you have to terminate
+    the actual flags with "--" `lldb -- ./mixxx --controllerDebug
+    --developer --resourcePath res`
+
+<!-- end list -->
+
+1.  At the lldb prompt, type `run` and press enter.
+2.  Make Mixxx crash.
+3.  When it does, type the following into the lldb prompt: `thread
+    backtrace all`
+4.  To close the Mixxx window and end lldb, type the following at the
+    lldb prompt: `quit`
+5.  Copy the lldb output. Select the terminal output by using the mouse,
+    and then doing a right click and selecting *Copy*
+
+For more informations, go to <http://lldb.llvm.org/lldb-gdb.html>

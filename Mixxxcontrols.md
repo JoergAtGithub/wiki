@@ -8,7 +8,7 @@ controls that can be used in any of the above contexts.
 ## List of Controls
 
 The default range is 0.0 to 1.0, unless otherwise noted. Binary means
-it's either on (non-zero) or off (zero.)
+that it is either 'ON' (non-zero) or 'OFF' (zero).
 
 *Please keep the controls in alphabetical order by group*
 

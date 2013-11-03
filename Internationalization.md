@@ -249,6 +249,8 @@ and to merge updated translations submitted by translators.
 
 #### Mac OSX
 
+  - Install the [Qt development
+    toolkit](http://qt-project.org/downloads)
   - Install [Homebrew](http://brew.sh/), a package manager for Mac OSX
   - Install the *libxml2* dependency
 

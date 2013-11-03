@@ -229,7 +229,8 @@ source strings. Simply copy/paste them onto your translated string.
 
 Required tools to update translations are:
 
-  - lupdate and lrelease, part of qt development toolkit
+  - lupdate and lrelease, part of [Qt development
+    toolkit](http://qt-project.org/downloads)
   - po2ts and ts2po, part of [Translate
     Toolkit](http://translate.sourceforge.net/wiki/toolkit/index)
 

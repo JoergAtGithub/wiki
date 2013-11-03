@@ -247,9 +247,6 @@ and to merge updated translations submitted by translators.
 
 ### Installation example
 
-As a result, you will have the tools installed that are required to
-maintain translations as a developer.
-
 #### Mac OSX
 
   - Install [Homebrew](http://brew.sh/), a package manager for Mac OSX

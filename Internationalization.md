@@ -227,20 +227,45 @@ source strings. Simply copy/paste them onto your translated string.
 
 # Developers - i18n/l10n and Mixxx
 
-Tools to update translations are:
+## Tools
+
+The following tools are used to update the Mixxx translation templates
+and to merge updated translations submitted by translators.
 
 **Required**
 
   - *lupdate* and *lrelease*, part of [Qt development
     toolkit](http://qt-project.org/downloads)
   - *po2ts* and *ts2po*, part of [Translate
-    Toolkit](http://translate.sourceforge.net/wiki/toolkit/index)
+    Toolkit](http://toolkit.translatehouse.org/download.html)
 
 **Optional**
 
   - [Zsh](http://www.zsh.org/) (Z shell), a powerful shell that operates
     as both an interactive shell and as a scripting language
     interpreter.
+
+### Installation example
+
+As a result, you will have the tools installed that are required to
+maintain translations as a developer.
+
+#### Mac OSX
+
+  - Install [Homebrew](http://brew.sh/), a package manager for Mac OSX
+  - Install the *libxml2* dependency
+
+<!-- end list -->
+
+``` 
+    * <code>brew install libxml2</code>
+* Install //lxml//, a library for processing XML
+    * <code>easy_install lxml</code>
+* [[http://toolkit.translatehouse.org/download.html|Download]], unpack,and install the //Translate toolkit//
+    * <code>sudo ./setup.py install</code>
+* Optional, install Zsh
+    * <code>brew install zsh</code>
+```
 
 ## Updating translation templates
 

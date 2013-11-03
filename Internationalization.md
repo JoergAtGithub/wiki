@@ -227,12 +227,20 @@ source strings. Simply copy/paste them onto your translated string.
 
 # Developers - i18n/l10n and Mixxx
 
-Required tools to update translations are:
+Tools to update translations are:
 
-  - lupdate and lrelease, part of [Qt development
+**Required**
+
+  - *lupdate* and *lrelease*, part of [Qt development
     toolkit](http://qt-project.org/downloads)
-  - po2ts and ts2po, part of [Translate
+  - *po2ts* and *ts2po*, part of [Translate
     Toolkit](http://translate.sourceforge.net/wiki/toolkit/index)
+
+**Optional**
+
+  - [Zsh](http://www.zsh.org/) (Z shell), a powerful shell that operates
+    as both an interactive shell and as a scripting language
+    interpreter.
 
 ## Updating translation templates
 

@@ -579,7 +579,7 @@ Example:
 ``` javascript
     MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
         var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
-        var activate = value > 0:
+        var activate = value > 0;
         
         if (activate) {
             engine.brake(deck, true); // enable brake effect

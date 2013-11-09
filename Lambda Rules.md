@@ -4,9 +4,6 @@
   - All database access must be applied in separate thread
     (`TrackCollections` thread). So all database access must be wrapped
     into lambda (via `m_pTrackCollection->callAsync/callSync`).
-
-<!-- end list -->
-
   - It is strictly prohibited to access GUI from lambda. GUI access must
     be be applied only from main thread.
 
@@ -22,9 +19,21 @@
     like `TrackCollection` and has its methods `callSync/callAsync`.
     Using `MainExecuter` you must wrap UI access to lambda.
 
------
+\---
 
-**Example.**
+\*\* Capture parameters \*\*
+
+  - Understand the difference between Asynchronous and Synchronous
+    calls. 
+  - If you do `callAsync` -- capture parameters by value. 
+  - If you do `callSync` -- capture parameters by reference (no need to
+    capture pointers by reference).
+  - Try to order parameters as it is function parameters: last
+    parameters are results or alternating variables.
+
+\---
+
+**Example**
 
 Please, take a look at `DlgMissing::onShow()`. Here we must disable
 button after calling `m_pMissingTableModel->select();`

@@ -1,9 +1,14 @@
 # Rules and arrangements using lambdas scheme for database access
 
+## General
+
   - Beware of recursive lambda calls.
   - All database access must be applied in separate thread
     (`TrackCollections` thread). So all database access must be wrapped
     into lambda (via `m_pTrackCollection->callAsync/callSync`).
+
+## Accessing GUI
+
   - It is strictly prohibited to access GUI from lambda. GUI access must
     be be applied only from main thread.
 
@@ -19,9 +24,7 @@
     like `TrackCollection` and has its methods `callSync/callAsync`.
     Using `MainExecuter` you must wrap UI access to lambda.
 
-\---
-
-\*\* Capture parameters \*\*
+## Capture parameters
 
   - Understand the difference between Asynchronous and Synchronous
     calls. 
@@ -31,9 +34,7 @@
   - Try to order parameters as it is function parameters: last
     parameters are results or alternating variables.
 
-\---
-
-**Example**
+## Example
 
 Please, take a look at `DlgMissing::onShow()`. Here we must disable
 button after calling `m_pMissingTableModel->select();`

@@ -6,7 +6,7 @@ This page is a collection of all timing topics inside Mixxx
 
 ## Hardware Time Sources
 
-In Mixxx we have to deal at least with fife independent hardware time
+In Mixxx we have to deal at least with five independent hardware time
 sources:
 
 ``` 

@@ -38,7 +38,7 @@ timestamps for these values.
 
 ## Engine Clock
 
-The Mixxx sound engine runs at the 3. Sound interface DAC clock.
+The Mixxx sound engine runs at the sound interface DAC clock (3.).
 
 Depending on underlying sound driver architecture, Port Audio calls a
 Mixxx callback for every sound buffer. ...

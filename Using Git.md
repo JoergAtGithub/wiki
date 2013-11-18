@@ -12,7 +12,8 @@ A full guide for how to use Git is outside the scope of this article.
 This article aims to get you up to speed with the basics of Git and we
 are glossing over a lot of finer details about Git. We **strongly
 suggest** you walk through this [introduction to Git by
-GitHub](http://learn.github.com/p/) and [Pro
+GitHub](http://try.github.io/levels/1/challenges/1),
+a[sandbox](http://pcottle.github.io/learnGitBranching/) tutorial and[Pro
 Git](http://git-scm.com/book), a free Creative Commons eBook about using
 Git.
 

@@ -127,14 +127,15 @@ reading the compiler commands, but it is safer to do the job manual:
 
   - Right click on the project -\> Properties -\> C/C++ General -\> Path
     and Symbols -\> Fill in tabs "Includes" and "Symbols".
+  - Add the src/ folder in your workspace, and select "add to all
+    languages" and "add to all configurations."
+  - Also add /usr/include
+  - Also add /usr/include/qt4/Qt
 
 <!-- end list -->
 
-  - Alternative you can start with my project files (.cproject .project
-    .gdbinit) and adapt them to your
-    system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>
-
-<!-- end list -->
+    * 
+    * Alternative you can start with my project files (.cproject .project .gdbinit) and adapt them to your system:[[http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/]]
 
   - Or merge from git@github.com:daschuer/mixxx.git
 
@@ -143,6 +144,8 @@ reading the compiler commands, but it is safer to do the job manual:
   - Possible issue: [Why doesn't Eclipse know about some of Qt's symbols
     / class
     names?](http://qt-project.org/faq/answer/why_doesnt_eclipse_know_about_some_of_qts_symbols_class_names)
+    (There is an experimental version of Eclipse CDT for QT that may
+    help with this)
 
 ### Eclipse code formatter
 

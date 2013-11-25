@@ -134,8 +134,11 @@ reading the compiler commands, but it is safer to do the job manual:
 
 <!-- end list -->
 
-    * 
-    * Alternative you can start with my project files (.cproject .project .gdbinit) and adapt them to your system:[[http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/]]
+  - Alternative you can start with my project files (.cproject .project
+    .gdbinit) and adapt them to your
+    system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>
+
+<!-- end list -->
 
   - Or merge from git@github.com:daschuer/mixxx.git
 

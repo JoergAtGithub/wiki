@@ -29,8 +29,8 @@ following:
 
 ## Writing a new test
 
-We require that any new code classes have tests written for them as well
-in order to consider the code for inclusion into Mixxx.
+We strongly prefer that any new code classes have tests written for them
+as well in order to consider the code for inclusion into Mixxx
 
 Mixxx uses the [Google C++ Testing
 Framework](http://code.google.com/p/googletest/). If it's new to you,

@@ -278,11 +278,12 @@ In the above table,
 
   - EffectRack1 leaves room for future expansion to multiple
     EffectRacks.
-  - N ranges from 1 to \[Effects\],num\_effectchains, inclusive. 
-  - M ranges from 1 to \[EffectChainN\],num\_effectslots, inclusive.
-    (For a given value of N)
-  - K ranges from 1 to \[EffectChainN\_EffectM\],num\_parameters,
-    inclusive. (For given values of N and M)
+  - N ranges from 1 to \[EffectRack1\],num\_effectchains, inclusive. 
+  - M ranges from 1 to \[EffectRack1\_EffectChainN\],num\_effectslots,
+    inclusive. (For a given value of N)
+  - K ranges from 1 to
+    \[EffectRack1\_EffectChainN\_EffectM\],num\_parameters, inclusive.
+    (For given values of N and M)
   - I ranges from 1 to \[Master\],num\_decks, inclusive.
   - J ranges from 1 to \[Master\],num\_samplers, inclusive.
 

@@ -129,7 +129,7 @@ categorically more flexible effect setup.
     * XML must contain definitions of the Effects and the EffectChains in the rack.
 * Support clearing the current rack with 1 button.
 * Support loading a rack from a drop-down list of rack names.
-* Control (MIDI, etc) Interface
+* Control (MIDI, Keyboard, GUI, etc) Interface
 * MIDI scripts must be able to control loaded effectchain parameters
 * MIDI scripts must be able to request that an effect chain be ejected or a next/previous effect chain be loaded. (support effect knobs on e.g. NS7)
 * MIDI scripts must be able to observe effect chains and make changes.

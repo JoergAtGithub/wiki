@@ -18,12 +18,12 @@ github](https://github.com/rryan/mixxx/tree/features_effects)**
 
 ### High-Level Overview
 
-The goal is that the DJ can enhance their performance through the use of
+The goal is that the DJ can enhance her performance through the use of
 audio effects. To present this in a simple-to-use and powerful way, we
 introduce the metaphor of "Effect Chains". An effect chain is nothing
 more than a list of effects which are applied sequentially to audio. An
-effect chain can be applied to decks, samplers, the headphone out, and
-the master output.
+effect chain can be applied to decks, samplers, microphones, aux inputs,
+the headphone out, and the master output.
 
 The DJ configures effect chains by selecting effects that are available
 to her from any variety of effect sources (native built-in plugins,
@@ -47,8 +47,7 @@ ways:
 
 Once the DJ is done configuring the effect chain and the parameters of
 the effects that are in the effect chain, she may save the effect chain
-and give it a name. Alternatively, she can also load a previously saved
-chain from the Chain Edit Mode.
+and give it a name.
 
 The key idea here is that the DJ should invest time in crafting and
 creating the unique sounds she would like to make via Effect Chains
@@ -98,6 +97,7 @@ categorically more flexible effect setup.
 
 ``` 
     * An internal identifier 
+    * A version number
     * A human-readable name (internationalizable)
     * A prose description, with support for internationalization, suitable for display in a tooltip. (internationalizable)
     * Units and maximum/minimum/default values of the parameter
@@ -109,23 +109,48 @@ categorically more flexible effect setup.
 * Effect Instances (known as "Effect")
 * Support the customization of parameter ranges to a subset of the EffectManifest's min/max ranges 
 * Support linking of individual parameters to the Effect Chain's meta-knob.
-* **TODO: Each effect shall have an individual wet/dry parameter?**
+    * Support different types and shapes of linkages: linear, logarithmic, inverse, inverse-log, etc. 
+* **QUESTION: Each effect shall have an individual wet/dry parameter?**
 * Effect Chains
 * Support chaining multiple Effects together into an Effect Chain.
-* **TODO: Each effect chain shall have a wet/dry parameter? Or an enabled button?**
-* Each effect chain will have one "Meta/Super/Wonder/Master/Action/Crazy/Funky-Knob" which individual parameters of effects in the chain can be linked to.
-* Must support loading and saving of effect-chains ("Presets")
-* Support applying effect chains to multiple different audio sources (samplers, decks, master out, headphone out)
+* Each chain has:
+    * An enabled property
+    * A list of audio groups for which the chain is enabled (e.g. samplers, decks, microphone, master out, headphone out)
+    * A wet/dry parameter.
+    * A superknob which individual parameters of effects link to.
+* Effect Racks (EffectChain "presets")
+* A Rack is a set of active Effect Chains.
+* an Effect Rack has
+    * a name
+    * an author
+    * a list of EffectChains and their presets
+* Mixxx 1.12.0 will come with 1 effect rack. The rack will have 4 effect chain slots.
+* Support loading and saving an effect rack to XML.
+    * XML must contain definitions of the Effects and the EffectChains in the rack.
+* Support clearing the current rack with 1 button.
+* Support loading a rack from a drop-down list of rack names.
 * Control (MIDI, etc) Interface
-* MIDI scripts must be able to control loaded effects parameters
-* MIDI scripts must be able to request that an effect be ejected or a next/previous effect be loaded. (support effect knobs on e.g. NS7)
+* MIDI scripts must be able to control loaded effectchain parameters
+* MIDI scripts must be able to request that an effect chain be ejected or a next/previous effect chain be loaded. (support effect knobs on e.g. NS7)
 * MIDI scripts must be able to observe effect chains and make changes.
 * MIDI scripts must have a simple-mode by which they can treat parameters as 0.0 - 1.0 values so they do not have to deal with the complexity of min/max values, types, etc.
-* GUI Widgets
-* EffectChain widget
+* GUI Widgets and Groups
+* EffectChain widget group
+    * A group of widgets that represent an EffectChain loaded in an EffectRack's slot.
     * Show selected EffectChain name
-    * Parameter Knob
-    * Channel Select buttons
+    * SuperKnob Parameter Knob
+    * Channel Select buttons (Deck 1, Deck 2, PFL, Master?)
+    * Enable Button or wet/dry knob? Disabled is same as wet == 0. 
+    * Advanced button -- rolls down a section with multiple parameter knobs.
+* EffectChain Advanced widget group
+    * **Same as EffectChain widget group but taller.**
+    * Includes a row of parameter knobs for tweaking the parameters of the first effect in the chain.
+    * **TODO: Find a way to let the effect chain editor pick which parameters of all in the chain to show in advanced view?**
+    * Include parameter name next to each parameter knob.
+* EffectParameterNameWidget
+    * For showing the parameter name.
+* EffectChainNameWidget
+    * For showing the EffectChain name.
 * EffectChain Editor Library section
     * See existing chain presets
     * Create new preset

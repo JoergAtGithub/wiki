@@ -110,7 +110,7 @@ categorically more flexible effect setup.
 * Support the customization of parameter ranges to a subset of the EffectManifest's min/max ranges 
 * Support linking of individual parameters to the Effect Chain's meta-knob.
     * Support different types and shapes of linkages: linear, logarithmic, inverse, inverse-log, etc. 
-* **QUESTION: Each effect shall have an individual wet/dry parameter?**
+* **QUESTION: Each effect shall have an individual wet/dry parameter? Currently all effects are fully wet and the chain has a wet/dry knob.**
 * Effect Chains
 * Support chaining multiple Effects together into an Effect Chain.
 * Each chain has:

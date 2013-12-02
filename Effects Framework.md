@@ -374,7 +374,13 @@ if it matches the paradigm of effect-chains being
         2.  ~~Effect loading/unloading logic~~
         3.  ~~Parameter sync between controls and loaded effect~~
         4.  Units tests for consistency of controls / state
-4.  Implement overall effect management layer
+4.  ~~Implement Engine representations of the control layer.~~
+    1.  ~~TwoWayMessagePipe for sending EffectsRequest and
+        EffectsResponse messages~~
+    2.  ~~EngineEffectChain~~
+    3.  ~~EngineEffect~~
+    4.  ~~EngineEffectParameter~~
+5.  Implement overall effect management layer
     1.  ~~EffectsManager~~
         1.  ~~Adding, management of lifecycle of EffectsBackends~~
         2.  ~~Adding, management of lifecycle of EffectChains~~
@@ -384,21 +390,27 @@ if it matches the paradigm of effect-chains being
     2.  Preset Management
         1.  Implement loading/saving of EffectChain presets
         2.  Implement next/prev logic for EffectChains
-5.  Implement EffectChain parameter linking
+6.  Implement EffectChain parameter linking
     1.  EffectSlotParameter's can be linked to the EffectChain's
         parameter
     2.  Propagate changes in the EffectChain's parameter to
         EffectSlotParameters that are connected to it
-6.  ~~Implement actual audio processing~~ 
-    1.  ~~EffectChain -\> EffectSlot processing~~
-    2.  ~~EffectSlot -\> Effect processing~~
-    3.  ~~EffectChain processing for given channels can be enabled and
-        disabled~~
-    4.  ~~Engine/EngineChannel requests effect-chains enabled for a
+7.  ~~Implement actual audio processing~~ 
+    1.  ~~EngineEffectChain processing~~
+        1.  ~~INSERT/SEND processing~~
+        2.  ~~DRY/WET proportional mixing~~
+        3.  ~~enable/disable~~
+        4.  ~~enable/disable per group~~
+        5.  ~~ramping gain when enabled/disabled~~
+    2.  ~~EngineEffect processing~~
+    3.  ~~Engine/EngineChannel requests effect-chains enabled for a
         given channel as it processes them~~ 
-    5.  ~~Engine/EngineChannel applies appropriate effect chains to
+    4.  ~~Engine/EngineChannel applies appropriate effect chains to
         buffers of audio that are enabled~~
-7.  GUI Widgets
+    5.  Pre-fader vs. Post-fader processing
+    6.  EffectParameter interpolation utilities for implementing Effect
+        processing
+8.  GUI Widgets
     1.  ~~EffectChain name widget~~
         1.  ~~Shows the name of the EffectChain that is loaded into
             EffectChainSlot X~~

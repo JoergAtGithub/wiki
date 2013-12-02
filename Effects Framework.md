@@ -1,6 +1,6 @@
 ## Summary
 
-**Status**: This specification is **in drafting**. Please feel free to
+**Status**: This specification is **in progress**. Please feel free to
 edit this page and add your comments.
 
 DJs often augment their mixes with effects. Mixxx is severely lacking in
@@ -9,6 +9,10 @@ flanger.
 
 This project aims to bring effects to Mixxx, both via native effects and
 effects plugins via LADSPA, LV2, or VST.
+
+**This project is active and slated for release in Mixxx 1.12.0. The
+code is available in the [features\_effects branch on rryan's
+github](https://github.com/rryan/mixxx/tree/features_effects)**
 
 ## Design
 
@@ -425,9 +429,11 @@ if it matches the paradigm of effect-chains being
 
 This feature has been attempted twice by two GSoC students. There is a
 lot of old code lying around, and we will try to reuse whenever
-possible. The current branch for work on this feature is the
-[features\_effects](https://github.com/rryan/mixxx/tree/features_effects)
-branch.
+possible.
+
+**This project is active and slated for release in Mixxx 1.12.0. The
+code is available in the [features\_effects branch on rryan's
+github](https://github.com/rryan/mixxx/tree/features_effects)**
 
 ## Team
 
@@ -469,6 +475,26 @@ effects script function. This would be the same with midi controls.
 To sum up: to have the horsepower of scripting with effects in addition
 to this other great ideas you had.
 
+**rryan's comments:** Great ideas, Lambolico. The inherent nature of
+scripting is that it is quite slow so there is no way it will be
+possible to script the actual effect processing themselves. However,
+when we add a generalized scripting system to Mixxx that allows you to
+run a script that isn't associated directly with a MIDI controller I
+will add an API that allows scripts to manipulate existing effect chains
+directly (add/remove effects, change parameters, etc.)
+
+EffectChains and Effect parameter presets will be stored in an XML file.
+Beyond this we will have one-click buttons in the GUI to save and load
+effect chains from file. This will hopefully allow people on the forums
+and elsewhere to swap and trade their effect racks. If you make a
+YouTube video showcasing a cool effect you could provide the rack XML
+right there for others to try out, etc.
+
+Effects implementations will absolutely have access to the features
+extracted from decks they are modifying. This means an effect
+implementation will know the location of beats, the BPM, the key of the
+track, etc.
+
 ### DJ Barney's ideas:
 
 I wonder if the industry standard way of doing this has been considered
@@ -487,5 +513,11 @@ features to external units may allow better focus on the built in FX
 Pre and Post fader is also important as that determines if the FX just
 cuts off when turned off, or if it slowly fades away when turned off -
 as an Echo or Reverb filter will do.
+
+**rryan's comments:** Great ideas, DJ Barney. The send/receive support
+for an external effects processor will likely come in Effects V2, not in
+Mixxx 1.12.0. I'm definitely keeping it in mind while building the
+effects infrastructure. Pre-fader / Post-fader is also on my list and
+will be in Effects V1.
 
 \#\#\#\#

@@ -62,7 +62,7 @@ referred to as MSVC in discussions.
 <!-- end list -->
 
   - Checkout the dependencies repository (and have it placed beside your
-    "mixxx" directory) from the `winlib-msvc10-x86-static` branch.
+    "mixxx" directory) from `https://github.com/mixxxdj/winlib.git`.
 
 <!-- end list -->
 
@@ -75,6 +75,8 @@ referred to as MSVC in discussions.
         winlib-msvc10-x86-static directory> sqlitedll=0 staticlibs=1
         asmlib=0` and press Enter. (You may need to use `scons.bat`
         instead of just `scons`.)
+          - the winlib repository contains the dependencies for x86 and
+            x64 so make sure to point winlib to the x86 folder.
           - In case scons can't find the dependencies try to load the
             visual studio enviroment variabels
             <http://msdn.microsoft.com/en-us/library/vstudio/1700bbwd.aspx>

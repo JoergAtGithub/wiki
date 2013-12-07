@@ -21,9 +21,27 @@ github](https://github.com/mixxxdj/mixxx/tree/master_sync)**
 
   - Synchronization Source
   - Any object that is capable of providing timing information.
-  - Timing Information
-  - Typically a BPM and offset or a list of beats at times as well as
-    the current time. 
+  - Examples:
+
+<!-- end list -->
+
+``` 
+    * A Mixxx deck or sampler.
+    * An internal clock.
+    * An external clock (e.g. MIDI).
+* Timing Information
+* Typically a BPM and offset or a list of beats at times as well as the current time. 
+* Could be as little information as the current beat ratio. 
+* The beat completion ratio (number from 0 to 1 indicating the current beat progress).
+* A MIDI clock (24 pulses per quarter note).
+```
+
+**A note on the word "master" and "slave":** These words are used
+frequently in computing but can tend to ruffle feathers. Other
+commercial software does not use this pair of words, presumably due to
+the charged history of the words. You'll often see the word "master"
+used on its own but never with "slave". We should follow this lead since
+it has an impact on the perception of our product.
 
 ## Design
 

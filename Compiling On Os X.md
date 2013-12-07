@@ -80,8 +80,16 @@ already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt
+    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt chromaprint rubberband vamp-plugin-sdk
 ```
+
+If you have trouble compiling *rubberband* and *vamp-plugin-sdk*, try
+the following Homebrew formulas:
+
+  - <http://tuohela.net/irc/vamp-plugin-sdk.rb>
+  - <http://tuohela.net/irc/rubberband.rb>
+
+<!-- end list -->
 
   - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
     and AAC codec. If you don't want to use the OSX versions of these

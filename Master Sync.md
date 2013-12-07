@@ -28,7 +28,7 @@ github](https://github.com/mixxxdj/mixxx/tree/master_sync)**
 ``` 
     * A Mixxx deck or sampler.
     * An internal clock.
-    * An external clock (e.g. MIDI).
+    * An external clock (e.g. MIDI or vinyl control).
 * Timing Information
 * Typically a BPM and offset or a list of beats at times as well as the current time. 
 * Could be as little information as the current beat ratio. 

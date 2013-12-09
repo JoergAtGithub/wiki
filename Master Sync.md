@@ -41,7 +41,9 @@ frequently in computing but can tend to ruffle feathers. Other
 commercial software does not use this pair of words, presumably due to
 the charged history of the words. You'll often see the word "master"
 used on its own but never with "slave". We should follow this lead since
-it has an impact on the perception of our product.
+it has an impact on the perception of our product. Accordingly, we are
+transitioning to use the word "follower" internally. The user interface
+only mentions "enabled" and "master".
 
 ## Design
 

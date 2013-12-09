@@ -70,7 +70,7 @@ it has an impact on the perception of our product.
 |  | ------------------------------- |  | -------------- |  | ----------------------------- |  | ------------------------------------------------------------------ |  |
 |  | \[Group\]                       |  | Key/Control    |  | Range                         |  | What it does                                                       |  |
 |  | \[Group\]                       |  | sync\_master   |  | binary, read/write pushbutton |  | Whether this group is the master.                                  |  |
-|  | \[Group\]                       |  | sync\_slave    |  | binary, read/write pushbutton |  | Whether this group is the slave.                                   |  |
+|  | \[Group\]                       |  | sync\_enabled  |  | binary, read/write pushbutton |  | Whether sync is enabled on this group.                             |  |
 |  | \[Group\]                       |  | sync\_mode     |  | binary, read-only             |  | An enum representing the current master/slave sync mode            |  |
 |  | \[Group\]                       |  | rate           |  | binary, read/write slider     |  | The current setting of the rate slider                             |  |
 |  | \[Group\]                       |  | bpm            |  | double, read-only             |  | The current playback bpm value, regardless of scratch or play/stop |  |

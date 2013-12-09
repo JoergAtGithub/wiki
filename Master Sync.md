@@ -85,6 +85,12 @@ it has an impact on the perception of our product.
 
 ## Controller Impact Assessment
 
+The Sync button is now a toggle button instead of a momentary
+pushbutton.
+
+Some users will want to designate certain decks as master specifically.
+They will need a separate pushbutton for master mode.
+
 ## Work Breakdown
 
 ## Current Progress

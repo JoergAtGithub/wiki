@@ -78,7 +78,7 @@ only mentions "enabled" and "master".
 |  | \[Group\]                       |  | bpm            |  | double, read-only             |  | The current playback bpm value, regardless of scratch or play/stop         |  |
 |  | \[Group\]                       |  | rateEngine     |  | double, read-only             |  | The actual engine playback rate                                            |  |
 |  | \[Group\]                       |  | beat\_distance |  | double, read-only             |  | The distance from the last beat from 0 to 1                                |  |
-|  | \[Master\]                      |  | sync\_master   |  | binary, read/write pushbutton |  | Whether internal clock is the master.                                      |  |
+|  | \[InternalClock\]               |  | sync\_master   |  | binary, read/write pushbutton |  | Whether internal clock is the master.                                      |  |
 |  | \[Master\]                      |  | sync\_slider   |  | double, read/write slider     |  | Like Rate, a slider for adjusting internal clock rate                      |  |
 |  | \[Master\]                      |  | sync\_bpm      |  | double, read-only             |  | Current sync playback rate                                                 |  |
 |  | \[Master\]                      |  | beat\_distance |  | double, read-only             |  | The distance from the last beat from 0 to 1 of the internal clock          |  |

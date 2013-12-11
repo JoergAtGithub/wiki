@@ -190,9 +190,10 @@ often called "Accelerator key".
 
 If a string to be translated has an ampersand (&) in it, then the
 translation for that string should also have an ampersand in it,
-preferably in front of the same character. Accelerators should be unique
-per menu (e.g. something like "\&Save" and "\&Save as" won't work, but
-"\&Save" and "Save \&as" will do).
+preferably in front of the same character. Accelerators should not show
+up twice in the same menu (e.g. something like "\&Save" and "\&Save as"
+won't work, but "\&Save" and "Save \&as" will do), to prevent
+"accelerator clashes".
 
 ##### Example
 

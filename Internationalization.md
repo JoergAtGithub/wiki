@@ -215,10 +215,16 @@ and word order of your language.
 | ----------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Analyzing %1/%2 %3%`   | `Analysiere %1/%2 %3%`      | When analyzing tracks, a progress label is displayed which shows the current track number (%1), the overall number of tracks in the analyze queue (%2) and the analysis progress of the current track (%3) in percent (%). So it becomes **Analyzing 10/15 50%** or, using Mixxx with the german translation, **Analysiere 10/15 50%**. |
 
-### HTML tags (\</a\>, \<br/\>, \</b\>)
+### HTML tags (\</a\>, \<br/\>, \</b\>, \</ul\>)
 
 Here and there you may encouter some small bits of HTML code in the
-source strings. Simply copy/paste them onto your translated string.
+source strings. Simply copy/paste them onto your translated string. When
+translating in the Transifex Web editor, red arrows indicate that there
+is a newline character (Enter) in that position of the source string.
+Since that newline can be extremely important when the string is
+displayed in Mixxx being localized, translators are highly encouraged to
+adjust their translations as accurately as possible, by pressing the
+“Enter” key in the closest position possible.
 
 ##### Example
 

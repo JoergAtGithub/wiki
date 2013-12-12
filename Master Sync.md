@@ -78,6 +78,7 @@ only mentions "enabled" and "master".
 |  | \[Group\]                       |  | bpm            |  | double, read-only             |  | The current playback bpm value, regardless of scratch or play/stop         |  |
 |  | \[Group\]                       |  | beat\_distance |  | double, read-only             |  | The distance from the last beat from 0 to 1                                |  |
 |  | Internal Clock Controls         |  |                |  |                               |  |                                                                            |  |
+|  | \[Group\]                       |  | Key/Control    |  | Range                         |  | What it does                                                               |  |
 |  | \[InternalClock\]               |  | sync\_master   |  | binary, read/write pushbutton |  | Whether internal clock is the master.                                      |  |
 |  | \[InternalClock\]               |  | bpm            |  | double, read/write            |  | The BPM of the internal clock.                                             |  |
 |  | \[InternalClock\]               |  | beat\_distance |  | double, read-only             |  | The distance from the last clock beat from 0 to 1                          |  |

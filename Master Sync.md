@@ -68,20 +68,20 @@ only mentions "enabled" and "master".
 
 ## Control Interface
 
-|  | Synchronization Source Controls |  |                |  |                               |  |                                                                            |  |
-|  | ------------------------------- |  | -------------- |  | ----------------------------- |  | -------------------------------------------------------------------------- |  |
-|  | \[Group\]                       |  | Key/Control    |  | Range                         |  | What it does                                                               |  |
-|  | \[Group\]                       |  | sync\_master   |  | binary, read/write pushbutton |  | Whether this group is the master. This is set in addition to sync\_enabled |  |
-|  | \[Group\]                       |  | sync\_enabled  |  | binary, read/write pushbutton |  | Whether sync is enabled on this group.                                     |  |
-|  | \[Group\]                       |  | sync\_mode     |  | binary, read-only             |  | An enum representing the current master/slave sync mode                    |  |
-|  | \[Group\]                       |  | rate           |  | binary, read/write slider     |  | The current setting of the rate slider                                     |  |
-|  | \[Group\]                       |  | bpm            |  | double, read-only             |  | The current playback bpm value, regardless of scratch or play/stop         |  |
-|  | \[Group\]                       |  | beat\_distance |  | double, read-only, 0.0-1.0    |  | The distance from the last beat from 0 to 1                                |  |
-|  | Internal Clock Controls         |  |                |  |                               |  |                                                                            |  |
-|  | \[Group\]                       |  | Key/Control    |  | Range                         |  | What it does                                                               |  |
-|  | \[InternalClock\]               |  | sync\_master   |  | binary, read/write pushbutton |  | Whether internal clock is the master.                                      |  |
-|  | \[InternalClock\]               |  | bpm            |  | double, read/write            |  | The BPM of the internal clock.                                             |  |
-|  | \[InternalClock\]               |  | beat\_distance |  | double, read/write, 0.0-1.0   |  | The distance from the last clock beat from 0 to 1                          |  |
+|  | Synchronization Source Controls |  |                |  |                                           |  |                                                                            |  |
+|  | ------------------------------- |  | -------------- |  | ----------------------------------------- |  | -------------------------------------------------------------------------- |  |
+|  | \[Group\]                       |  | Key/Control    |  | Range                                     |  | What it does                                                               |  |
+|  | \[Group\]                       |  | sync\_master   |  | binary, read/write pushbutton             |  | Whether this group is the master. This is set in addition to sync\_enabled |  |
+|  | \[Group\]                       |  | sync\_enabled  |  | binary, read/write latching toggle-button |  | Whether sync is enabled on this group.                                     |  |
+|  | \[Group\]                       |  | sync\_mode     |  | enum, read-only                           |  | An enum representing the current master/slave sync mode.                   |  |
+|  | \[Group\]                       |  | rate           |  | binary, read/write slider                 |  | The current setting of the rate slider                                     |  |
+|  | \[Group\]                       |  | bpm            |  | double, read-only                         |  | The current playback bpm value, regardless of scratch or play/stop         |  |
+|  | \[Group\]                       |  | beat\_distance |  | double, read-only, 0.0-1.0                |  | The distance from the last beat from 0 to 1                                |  |
+|  | Internal Clock Controls         |  |                |  |                                           |  |                                                                            |  |
+|  | \[Group\]                       |  | Key/Control    |  | Range                                     |  | What it does                                                               |  |
+|  | \[InternalClock\]               |  | sync\_master   |  | binary, read/write pushbutton             |  | Whether internal clock is the master.                                      |  |
+|  | \[InternalClock\]               |  | bpm            |  | double, read/write                        |  | The BPM of the internal clock.                                             |  |
+|  | \[InternalClock\]               |  | beat\_distance |  | double, read/write, 0.0-1.0               |  | The distance from the last clock beat from 0 to 1                          |  |
 
 ## User Interface
 

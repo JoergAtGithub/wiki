@@ -399,6 +399,9 @@ editor](#tools) and get started :-)
 
 ``` 
  * Added [[creating_skins#effektive_musical_key_display|<visual_key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
+ * Removed beat_sync pushbutton in favor of sync_enabled toggle button.  In most skins and controller setups this can be the same button that beat_sync was.
+ * Added sync_master.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also [InternalClock],sync_master).
+ * Added [InternalClock],bpm which shows the speed of the internal synchronization clock.  This is a read/write control.
 ```
 
 ### Mixxx 1.11.0

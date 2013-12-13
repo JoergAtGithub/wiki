@@ -300,10 +300,10 @@ Add the license terms at the beginning of skin.xml (see examples).
 | `<!--
 "Name of your skin", Skin for Mixxx
 www.mixxx.org
-Copyright (C) 2011-2013 your name , your@email.adress
+Copyright (C) 2011-2014 your name , your@email.adress
     
 based on the "Name of the original skin"
-Copyright (C) 2011-2013 name of the original author, authors@email.adress
+Copyright (C) 2011-2014 name of the original author, authors@email.adress
   
 This file is part of the "Name of your skin" skin for Mixxx.
 "Name of your skin" is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
@@ -327,10 +327,10 @@ the resulting work only under the same or similar license to this one.
 -->` | `<!--
 "Name of your skin", Skin for Mixxx
 www.mixxx.org
-Copyright (C) 2011-2013 your name , your@email.adress
+Copyright (C) 2011-2014 your name , your@email.adress
 
 based on the "Name of the original skin"
-Copyright (C) 2011-2013 name of the original author, authors@email.adress
+Copyright (C) 2011-2014 name of the original author, authors@email.adress
 
 This file is part of "Name of your skin" skin for Mixxx.
 "Name of your skin" is free software; you can redistribute it and/or modify
@@ -394,6 +394,12 @@ So open up the skin.xml in the Outline folder with your favorite [text
 editor](#tools) and get started :-)
 
 ## Changes
+
+### Mixxx 1.12.0
+
+``` 
+ * Added [[creating_skins#effektive_musical_key_display|<visual_key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
+```
 
 ### Mixxx 1.11.0
 
@@ -969,6 +975,37 @@ Defines connected Channel (X = 1 or 2)
 ?
 
 Must be same value as under <Channel> above, (X = 1 or 2)
+
+
+` |
+
+### Effektive musical key display
+
+New in Mixxx 1.12  
+
+|                                                                                                                                                                                                                                                                                 |  |                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | -------------------------------------------------------------------------------------------------------------- |
+| `<key>
+    <TooltipId>visual_key</TooltipId>
+    <Channel>X</Channel>
+    <Pos>X,Y</Pos>
+    <Size>W,H</Size>
+    <Style>font; bg-color; color; text-align; (padding);
+    </Style>
+    <Connection>
+    <ConfigKey>[ChannelX],visual_key</ConfigKey>
+    </Connection>
+</key>` |  | `
+
+
+Defines connected Channel (X = 1 or 2)
+
+
+
+
+
+Must be same value as under <Channel> above, (X = 1 or 2)
+
 
 
 ` |

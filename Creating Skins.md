@@ -133,7 +133,8 @@ below.
     playback
   - Reverse play - toggles reverse playback during regular playback
   - Fast forward/rewind - seeks trough a song fast in both directions
-  - Beat sync - automatically match the tempo between two songs
+  - Sync Enabled - Tap to match bpm of playing tracks, or hold to enable
+    sync mode.
   - Pitch adjustment - apply fine adjustment to the tempo of a song
   - BPM tap - sets the bpm to the average value of the last 4 taps
   - Key lock - activate pitch-independent time stretch

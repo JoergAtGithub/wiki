@@ -13,8 +13,8 @@ have high-quality timing information are eligible to be a
 synchronization source. Additionally, we aim to support other
 synchronization sources (e.g. internal and external clocks).
 
-\*\*This project is active and slated for release in Mixxx 1.12.0. The
-code has been merged into trunk.
+**This project is active and slated for release in Mixxx 1.12.0. The
+code has been merged into trunk.**
 
 ## Terminology
 

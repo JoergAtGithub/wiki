@@ -6,8 +6,7 @@ Here is list of open source software useful in producing music:
     Cubase, Cakewalk, Sonar, Finale … It is also more powerful and
     configurable, and it’s free.
   - [Ardour](http://ardour.org) is a recording studio, very very
-    powerful. It is truly extraordinary for audio recording. here you
-    can find a good tutorial to use it .
+    powerful. It is truly extraordinary for audio recording.
   - Audacity is an excellent audio editor, also available for Windows.
     Does not support Jack.
   - [Qtractor](http://qtractor.sourceforge.net/qtractor-index.html) is

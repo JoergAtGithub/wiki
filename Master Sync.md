@@ -75,6 +75,28 @@ only mentions "enabled" and "master".
 
 ## User Interface
 
+## Basic Usage
+
+Master Sync preserves the old behavior that users might be used to -- if
+the user taps a sync button, that track will match the BPM of an
+already-playing track.
+
+All of the new functionality occurs when the user presses and holds the
+sync button. It becomes latched, the Internal Clock master light becomes
+lit, and sync mode is on.
+
+All decks that have sync mode enabled will match bpm at all times. If a
+slider is adjusted on one deck, it will change on all synced decks.
+Furthermore, decks that have quantize active will "nudge" their position
+until they are perfectly aligned with the other tracks. Scratching
+effects and play/stop actions are not synchronized between decks by
+default.
+
+The user can also manually assign master mode to a deck, even one under
+vinyl control. When this mode is active, all rate information is synced
+to other decks, including scratching and stopping the master deck. This
+makes it possible to scratch multiple tracks simultaneously.
+
 ## Controller Impact Assessment
 
 The Sync button is now a toggle button instead of a momentary
@@ -94,5 +116,6 @@ github](https://github.com/mixxxdj/mixxx/tree/master_sync)**
 ## Team
 
   - Owen Williams
+  - RJ Ryan
 
 ## Comments

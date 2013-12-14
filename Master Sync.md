@@ -57,15 +57,6 @@ only mentions "enabled" and "master".
   - Internal Clock synchronization source
   - (V2.0) MIDI clock synchronization source
 
-### Open Questions
-
-  - Master or Equals?
-  - Should all decks be equals or should the master have the ultimate
-    timing control?
-  - What if you want to take a track out of the mix by spinning it back
-    and stopping it? That shouldn't cause all decks to spinback. 
-  - Distributing state across equals is very complicated.
-
 ## Control Interface
 
 |  | Synchronization Source Controls |  |                |  |                                           |  |                                                                            |  |

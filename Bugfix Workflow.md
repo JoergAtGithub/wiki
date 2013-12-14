@@ -22,15 +22,15 @@ GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-o
 
 [Build Mixxx](start#build_mixxx)
 
-## Setup a powerfull IDE
+## Setup a powerful IDE
 
 Pick your favorite IDE\! We have made good experience with
 [Eclipse](eclipse)
 
 ## Adopt an easy bug on Launchpad
 
-[List of easy taged
-bugs](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=CONFIRMED)
+[List of bugs tagged as
+easy](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=CONFIRMED)
 
 More details you will find here: [The Bug Tracker](launchpad_bugs)
 
@@ -58,15 +58,15 @@ And don't forget to ask if you get stuck\!
 This is the most annoying part. Because we are sometimes neat picker ;-)
 
 Be sure that you code follows the Mixxx [coding
-guidelines](coding%20guidelines), to avoid extra work.
+guidelines](coding%20guidelines) to avoid extra work.
 
 ## Become a Mixxx Contributor
 
 You have to sign a contributor agreement. We will contact you about it
 in time.
 
-## Fix is merged to master
+## Fix is merged to Master
 
 The Bug is fixed now and will be released with the next release cycle.
 
-Your Name will appear in the "About Box" of Mixxx
+Your name will appear in the "About Box" of Mixxx

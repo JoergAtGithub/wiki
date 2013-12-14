@@ -123,6 +123,8 @@ below.
   - Channel Volume - controls the volume of the selected channel
   - Crossfader - fade between the channels
   - Pitch control - changes the tempo of a song
+  - \[InternalClock\], bpm - tempo of the internal master sync clock
+    (also viewable as plain text)
 
 [5.Buttons](#sectionbuttons)
 
@@ -135,6 +137,7 @@ below.
   - Fast forward/rewind - seeks trough a song fast in both directions
   - Sync Enabled - Tap to match bpm of playing tracks, or hold to enable
     sync mode.
+  - Master - Push to designate an explicit deck master for sync mode.
   - Pitch adjustment - apply fine adjustment to the tempo of a song
   - BPM tap - sets the bpm to the average value of the last 4 taps
   - Key lock - activate pitch-independent time stretch

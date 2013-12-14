@@ -406,6 +406,7 @@ editor](#tools) and get started :-)
  * Removed beat_sync pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that beat_sync was.
  * Added **sync_master**.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also **[InternalClock],sync_master**).
  * Added **[InternalClock],bpm** which shows the speed of the internal synchronization clock.  This is a read/write control.
+ * Added "reverseroll", which like rolling beatloops is a pushbutton that enables reverse and slip mode while held.  (recommend adding to right click of reverse button)
 ```
 
 ### Mixxx 1.11.0

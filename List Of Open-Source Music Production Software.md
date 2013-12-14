@@ -7,12 +7,12 @@ Here is list of open source software useful in producing music:
     configurable, and it’s free.
   - [Ardour](http://ardour.org) is a recording studio, very very
     powerful. It is truly extraordinary for audio recording.
-  - Audacity is an excellent audio editor, also available for Windows.
-    Does not support Jack.
+  - [Audacity](http://audacity.sourceforge.net/) is an excellent audio
+    editor, also available for Windows. Does not support Jack.
   - [Qtractor](http://qtractor.sourceforge.net/qtractor-index.html) is
     like Ardour. If you like it use it.
-  - Bristol is an emulator for all the wonderful sounds of all different
-    Moog (and more)
+  - [Bristol](http://bristol.sourceforge.net/) is an emulator for all
+    the wonderful sounds of all different Moog (and more)
   - Nekobee is a nice emulator for Roland TB-303
   - [Jokosher](http://www.jokosher.org/) is more or less the same thing
     as Audacity, but has nicer interface for gnome, very very
@@ -42,7 +42,8 @@ Here is list of open source software useful in producing music:
     connects all the cables from your instrument, with combinations done
     like a mad scientist (Actually by a mad musician): the dream of
     every musician …
-  - Qjackctl is a graphical interface to jackd
+  - [Qjackctl](http://qjackctl.sourceforge.net/) is a graphical
+    interface to jackd
   - [Hexter](http://dssi.sourceforge.net/hexter.html) is a VST, which is
     the software imitation of a device that produce particular sounds.
     In this case, the perfect imitation of the Yamaha DX7, that mythical
@@ -58,19 +59,18 @@ Here is list of open source software useful in producing music:
     Without installing it Rosegarden will also protest at startup.
   - [Lingot](http://www.nongnu.org/lingot/) is a tuner for your guitar
   - [Hydrogen](http://www.hydrogen-music.org/) is a drum machine that,
-    in strictly technical terms, kicks ass.
-  - Hydrogen-drumkits are drumkit for hydrogen to … i’m sure you guess
-    it.
+    in strictly technical terms, kicks ass. Different drumkits are
+    available for Hydrogen.
   - Jack-rack allows you to make available some audio plugins. Similar
     to Dssi, but they are available for all applications and not just
     for Rosegarden
-  - caps is the king of these plugins (called LADSPA), because it’s the
-    one that simulate in real time any kind of amplifier distortion.
-    There are really good distortions of the tube, and with a little of
-    patience you can get sound from your guitar as if you had a Vox
-    AC-30-style Brit-pop or a Marshall metal.
-  - [LMMS](http://lmms.sourceforge.net/home.php) is the Linux equivalent
-    of Windows FruitLoops (but is free and open source).
+  - [CAP](http://quitte.de/dsp/caps.html)S is the king of these plugins
+    (called LADSPA), because it’s the one that simulate in real time any
+    kind of amplifier distortion. There are really good distortions of
+    the tube, and with a little of patience you can get sound from your
+    guitar as if you had a Vox AC-30-style Brit-pop or a Marshall metal.
+  - [LMMS](http://lmms.sourceforge.net/home.php) is the free and open
+    source equivalent of Fruity Loops Studio (FL Studio).
   - fluid-soundfont-gs is a bank of sounds.
   - ZynAddSubFX is a synthesizer that, in highly technical language,
     kicks several asses.

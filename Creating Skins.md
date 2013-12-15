@@ -520,6 +520,56 @@ example). This will enable a 3rd and 4th deck in Mixxx's engine for the
 skin to interact with. This attribute list can change any Mixxx control
 but will only take effect when the skin is loaded.
 
+### Properties Common to All Widgets
+
+Every skin widget is declared in a block with an opening XML tag and a
+closing tag. For example, this block defines a musical key widget that
+shows the current key of a playing deck:
+
+    <Key>
+        <TooltipId>visual_key</TooltipId>
+        <Pos>X,Y</Pos>
+        <Size>W,H</Size>
+        <Style>
+            font; bg-color; color; text-align; (padding);
+        </Style>
+        <Connection>
+            <ConfigKey>[ChannelX],visual_key</ConfigKey>
+        </Connection>
+    </Key>
+
+Sub-tags like the `<Size>` tag tell Mixxx how it should size, style and
+layout the widget. There are certain sub-tags that are common to all
+widgets and behave in the same way regardless of the widget type.
+
+#### \<Size\>
+
+    <Size>
+
+tags tells Mixxx what size to make a widget.
+
+#### \<MinimumSize\>
+
+    <MinimumSize>
+
+tags tell Mixxx the smallest size a widget should be. The widget will
+never be resized to be smaller than this size.
+
+#### \<MaximumSize\>
+
+    <MaximumSize>
+
+tags tell Mixxx the largest size a widget should be. The widget will
+never be resized to be larger than this size.
+
+#### \<SizePolicy\>
+
+    <SizePolicy>
+
+tags tell Mixxx how to allow the widget to resize.
+
+**TODO(rryan): Describe how this works.**
+
 ### Skin Colour Scheme
 
 Allows the creation of different color schemes, see [Color scheme

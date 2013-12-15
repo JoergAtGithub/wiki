@@ -407,14 +407,14 @@ editor](#tools) and get started :-)
 
 ### Mixxx 1.12.0
 
-``` 
+```` 
  * Added [[creating_skins#effective_musical_key_display|<Key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
- * Removed beat_sync pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that beat_sync was.
+ * Deprecated **beatsync** pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that ```beatsync``` was (though skins need to change it to a two-state button).
  * Added **sync_master**.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also **[InternalClock],sync_master**).
  * Added **[InternalClock],bpm** which shows the speed of the internal synchronization clock.  This is a read/write control.
  * Added "reverseroll", which like rolling beatloops is a pushbutton that enables reverse and slip mode while held.  (recommend adding to right click of reverse button)
  * Added <MinimumSize>, <MaximumSize>, and <SizePolicy> to all widgets.
-```
+````
 
 ### Mixxx 1.11.0
 

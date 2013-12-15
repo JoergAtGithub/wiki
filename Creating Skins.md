@@ -48,8 +48,8 @@ General structure of the skin.xml. More in-depth informations for each
 element and their attributes defined in the skin.xml can be found
 [here](#skinxml-in-depth-review)
 
-| syntax                                                                                                                                                                                                                                                  | Info                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| syntax                                                                                                                                                                                                                                                                                                                                               | Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
 <!DOCTYPE skin>           
 <skin>
@@ -57,8 +57,11 @@ element and their attributes defined in the skin.xml can be found
 <elementname>
 <TooltipId>...</TooltipId>
 <Style>...</Style>
-<position>X,Y</position>
-<size>W,H</size>
+<Pos>X,Y</Pos>
+<Size>W,H</Size>
+<MinimumSize>W,H</MinimumSize>
+<MaximumSize>W,H</MaximumSize>
+<SizePolicy>WPolicy,HPolicy</SizePolicy>
 <options>values(depends)</options>
 </elementname>           
 </skin>
@@ -71,6 +74,9 @@ Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
 Stylesheet (depends on the element)
 Position on the screen
 Size (depending on the element)
+Minimum Size
+Maximum Size
+Size Policy
 Options(depending on the element)
 Elements closing tag
 Skin closing tag
@@ -402,11 +408,12 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
- * Added [[creating_skins#effektive_musical_key_display|<visual_key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
+ * Added [[creating_skins#effective_musical_key_display|<Key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
  * Removed beat_sync pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that beat_sync was.
  * Added **sync_master**.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also **[InternalClock],sync_master**).
  * Added **[InternalClock],bpm** which shows the speed of the internal synchronization clock.  This is a read/write control.
  * Added "reverseroll", which like rolling beatloops is a pushbutton that enables reverse and slip mode while held.  (recommend adding to right click of reverse button)
+ * Added <MinimumSize>, <MaximumSize>, and <SizePolicy> to all widgets.
 ```
 
 ### Mixxx 1.11.0
@@ -987,7 +994,7 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ` |
 
-### Effektive musical key display
+### Effective musical key display
 
 New in Mixxx 1.12  
 

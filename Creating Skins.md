@@ -407,14 +407,14 @@ editor](#tools) and get started :-)
 
 ### Mixxx 1.12.0
 
-```` 
+``` 
  * Added [[creating_skins#effective_musical_key_display|<Key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
- * Deprecated **beatsync** pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that ```beatsync``` was (though skins need to change it to a two-state button).
+ * Deprecated **beatsync** pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that ''beatsync'' was (though skins need to change it to a two-state button).
  * Added **sync_master**.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also **[InternalClock],sync_master**).
  * Added **[InternalClock],bpm** which shows the speed of the internal synchronization clock.  This is a read/write control.
  * Added "reverseroll", which like rolling beatloops is a pushbutton that enables reverse and slip mode while held.  (recommend adding to right click of reverse button)
- * Added <MinimumSize>, <MaximumSize>, and <SizePolicy> to all widgets.
-````
+ * Added ''<MinimumSize>'', ''<MaximumSize>'', and ''<SizePolicy>'' to all widgets.
+```
 
 ### Mixxx 1.11.0
 
@@ -542,17 +542,59 @@ Sub-tags like the `<Size>` tag tell Mixxx how it should size, style and
 layout the widget. There are certain sub-tags that are common to all
 widgets and behave in the same way regardless of the widget type.
 
+#### \<Pos\>
+
+`<Pos>` tags tell Mixxx where to position a widget. The position is
+relative to the widget's parent. For example, if the position is `0,50`
+then this means position the widget 0 pixels from the horizontal
+location of the parent widget and 50 pixels from the vertical location
+of the widget's parent.
+
+| Examples:                                           |                                                                                                                                                                                                                                                                                                  |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `<Pos>0,50</Pos>
+<Pos>50,0</Pos>
+<Pos>50,50</Pos>
+` | `position 0 pixels from the horizontal position of parent, 50 pixels from the vertical position
+position 50 pixels from the horizontal position of parent, 0 pixels from the vertical position
+position 50 pixels from the horizontal position of parent, 50 pixels from the vertical position
+` |
+
 #### \<Size\>
 
-`<Size>` tags tells Mixxx what size to make a widget.
+`<Size>` tags tells Mixxx what size to make a widget. The size tag has a
+lot of historical baggage associated with it because it has been around
+since the first version of Mixxx and has a bunch of hacks added to it.
 
-#### `<MinimumSize>`
+`<Size>` is formatted as the horizontal size and the vertical size
+separated by a comma. You can also specify a size policy using the size
+tag alone. As of Mixxx 1.12.0 there is a dedicated `<SizePolicy>` tag
+for this. Simply append the SizePolicy skin abbreviation (see the table
+in the `<SizePolicy>` section below) at the end of each dimension's
+value.
+
+| Examples:                                                                             |                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<Size>100,50</Size>
+<Size>100me,50p</Size>
+<Size>100me,50</Size>
+<Size>me,e</Size>
+` | `100 pixels wide and 50 pixels tall.
+100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding and the vertical policy is Preferred.
+100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding.
+The horizontal size policy is MinimumExpanding and the vertical size policy is Expanding. No explicit size is set. 
+` |
+
+#### \<MinimumSize\>
+
+**New in Mixxx 1.12.0**
 
 `<MinimumSize>` tags tell Mixxx the smallest size a widget should be.
 The widget will never be resized to be smaller than this size.
 
 `<MinimumSize>` is formatted as the minimum horizontal size and the
-minimum vertical size separated by a comma.
+minimum vertical size separated by a comma. A value of -1 for a
+dimension means no minimum in that dimension.
 
 | Examples:                                                                                                |                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -564,13 +606,16 @@ minimum width 200, no minimum height
 no minimum width, minimum height 300
 ` |
 
-#### `<MaximumSize>`
+#### \<MaximumSize\>
+
+**New in Mixxx 1.12.0**
 
 `<MaximumSize>` tags tell Mixxx the largest size a widget should be. The
 widget will never be resized to be larger than this size.
 
 `<MaximumSize>` is formatted as the maximum horizontal size and the
-maximum vertical size separated by a comma.
+maximum vertical size separated by a comma. A value of -1 for a
+dimension means no maximum in that dimension.
 
 | Examples:                                                                                                |                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -582,7 +627,9 @@ maximum width 200, no maximum height
 no maximum width, maximum height 300
 ` |
 
-#### `<SizePolicy>`
+#### \<SizePolicy\>
+
+**New in Mixxx 1.12.0**
 
 `<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
 on the available space. Size policy refers to the Qt
@@ -610,6 +657,106 @@ the vertical size policy separated by a comma.
 MinimumExpanding for both horizontal and vertical
 Preferred horizontal, Fixed vertical
 ` |
+
+#### \<Style\>
+
+A `<Style>` tag indicates to Mixxx what "Qt Style Sheet" (QSS) to use
+for the widget. Qt Style Sheets are similar to [Cascading Style Sheets
+(CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets).
+
+| Examples:                                                                                                                                                  |                                                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<Style>
+  QGroupBox { 
+    border: 0px solid green;
+    margin: -0px 0px 0px 0px; 
+    background: url(skin:/style/style_bg_sampler.png); 
+  }
+</Style>
+` | `Open <Style> tag
+Style information for QGroupBox widgets
+Set a 0-pixel border (no border)
+Set no margins for the widget.
+Set the background of the widget to "style/style_bg_sampler.png" in your skin's folder.
+Close <Style> tag
+` |
+
+Knowing what options are available to style is tricky and it involves
+knowing what Qt widget the associated Mixxx widget derives from.
+
+Handy resources:
+
+  - [Qt Style Sheet
+    Documentation](http://qt-project.org/doc/qt-4.8/stylesheet.html)
+  - [Qt Style Sheet
+    Syntax](http://qt-project.org/doc/qt-4.8/stylesheet-syntax.html)
+  - [http://qt-project.org/doc/qt-4.8/stylesheet-reference.html|Qt](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html%7CQt)
+    Style Sheet Widget Reference\]\] -- tells you what widgets support
+    which properties.
+
+Here is a potentially out-of-date list of which Mixxx widgets derive
+from which Qt widgets. If not listed, the widget inherits from
+`QWidget`.
+
+|  | Skin Tag       |  | Mixxx Internal Name |  | Qt Widget                   |  |
+|  | -------------- |  | ------------------- |  | --------------------------- |  |
+|  | WidgetStack    |  | WWidgetStack        |  | QStackedWidget              |  |
+|  | WidgetGroup    |  | WWidgetGroup        |  | QGroupBox                   |  |
+|  | (none)         |  | WTrackTableView     |  | QTableView                  |  |
+|  | (none)         |  | WLibraryTableView   |  | QTableView                  |  |
+|  | Library        |  | WLibrary            |  | QStackedWidget              |  |
+|  | LibrarySidebar |  | WLibrarySidebar     |  | QTreeView                   |  |
+|  | SearchBox      |  | WSearchLineEdit     |  | QLineEdit                   |  |
+|  | Spinny         |  | WSpinny             |  | QGLWidget                   |  |
+|  | Visual         |  | WWaveformViewer     |  | QWidget                     |  |
+|  | NumberRate     |  | WNumberRate         |  | QWidget with a QLabel child |  |
+|  | NumberPos      |  | WNumberPos          |  | QWidget with a QLabel child |  |
+|  | NumberBpm      |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Number         |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Label          |  | WLabel              |  | QWidget with a QLabel child |  |
+|  | Text           |  | WTrackText          |  | QWidget with a QLabel child |  |
+|  | TrackProperty  |  | WTrackProperty      |  | QWidget with a QLabel child |  |
+|  | Time           |  | WTime               |  | QWidget with a QLabel child |  |
+|  | Key            |  | WKey                |  | QWidget with a QLabel child |  |
+|  | Splitter       |  | (none)              |  | QSplitter                   |  |
+
+#### \<TooltipId\>
+
+`<TooltipId>` tags indicate what tooltip Mixxx should use for the
+widget. We used to embed tooltips directly into skins but then we found
+this was a massive hassle to keep up to date and translate into
+different languages. As a result, we have created a list of standard
+tooltips that you can use in most cases.
+
+The `<TooltipId>` tag tells Mixxx to use an existing tooltip that is
+built into Mixxx. To see the list of tooltips that exist, the only
+current way is to browse the
+[src/skin/tooltips.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/skin/tooltips.cpp)
+and look at all the `add("example")` lines in the file. If you would
+like to use a tooltip, you should make the TooltipId the word "example"
+for the appropriate tooltip.
+
+| Examples:                                                           |                                                                                                         |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `<TooltipId>track_artist</TooltipId>
+<TooltipId>eject</TooltipId>
+` | `Use the "track_artist" tooltip from the tooltip file.
+Use the "eject" tooltip from the tooltip file.
+` |
+
+#### \<Tooltip\>
+
+If no existing tooltip meets your needs, you can create a custom tooltip
+using the `<Tooltip>` tag.
+
+| Examples:                               |                                                              |
+| --------------------------------------- | ------------------------------------------------------------ |
+| `<Tooltip>My Custom Tooltip</Tooltip>
+` | `Use the phrase "My Custom Tooltip" as the widget tooltip.
+` |
+
+Translation or internationalization of these tooltips is not currently
+possible.
 
 ### Skin Colour Scheme
 

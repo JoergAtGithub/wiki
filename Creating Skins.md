@@ -2524,9 +2524,9 @@ be at 20,0 relative to its parent or 120,200.
 
 **Never have to specify \<Pos\> again\!**
 
-You can use a `<Layout>` take in a `WidgetGroup` to have the widget
-group automatically layout its children according to their size policies
-and minimum/maximum widths (see `<SizePolicy>` info above). As of Mixxx
+You can use a `<Layout>` tag in a `WidgetGroup` to have the widget group
+automatically layout its children according to their size policies and
+minimum/maximum widths (see `<SizePolicy>` info above). As of Mixxx
 1.12.0 the valid layout types are "horizontal" and "vertical". These
 correspond to putting all the child widgets in a
 [QHBoxLayout](http://qt-project.org/doc/qt-4.8/qhboxlayout.html) and

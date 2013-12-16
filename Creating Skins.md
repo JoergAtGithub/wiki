@@ -759,6 +759,10 @@ using the `<Tooltip>` tag.
 Translation or internationalization of these tooltips is not currently
 possible.
 
+#### \<Connection\>
+
+**TODO(rryan): Document `<Connection>` tags.**
+
 ### Skin Colour Scheme
 
 Allows the creation of different color schemes, see [Color scheme

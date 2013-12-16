@@ -664,8 +664,8 @@ A `<Style>` tag indicates to Mixxx what "Qt Style Sheet" (QSS) to use
 for the widget. Qt Style Sheets are similar to [Cascading Style Sheets
 (CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets).
 
-| Examples:                                                                                                                                                  |                                                                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Examples:                                                                                                                                                  |                                                                                                                                                                                                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Style>
   QGroupBox { 
     border: 0px solid green;
@@ -674,10 +674,11 @@ for the widget. Qt Style Sheets are similar to [Cascading Style Sheets
   }
 </Style>
 ` | `Open <Style> tag
-Style information for QGroupBox widgets
+Begin style information for QGroupBox widgets
 Set a 0-pixel border (no border)
 Set no margins for the widget.
 Set the background of the widget to "style/style_bg_sampler.png" in your skin's folder.
+End style information for QGroupBox widgets
 Close <Style> tag
 ` |
 

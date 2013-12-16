@@ -691,9 +691,9 @@ Handy resources:
     Documentation](http://qt-project.org/doc/qt-4.8/stylesheet.html)
   - [Qt Style Sheet
     Syntax](http://qt-project.org/doc/qt-4.8/stylesheet-syntax.html)
-  - [http://qt-project.org/doc/qt-4.8/stylesheet-reference.html|Qt](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html%7CQt)
-    Style Sheet Widget Reference\]\] -- tells you what widgets support
-    which properties.
+  - [Qt Style Sheet Widget
+    Reference](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html)
+    -- tells you what widgets support which properties.
 
 Here is a potentially out-of-date list of which Mixxx widgets derive
 from which Qt widgets. If not listed, the widget inherits from

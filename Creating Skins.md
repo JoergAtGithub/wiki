@@ -544,31 +544,72 @@ widgets and behave in the same way regardless of the widget type.
 
 #### \<Size\>
 
-    <Size>
+`<Size>` tags tells Mixxx what size to make a widget.
 
-tags tells Mixxx what size to make a widget.
+#### `<MinimumSize>`
 
-#### \<MinimumSize\>
+`<MinimumSize>` tags tell Mixxx the smallest size a widget should be.
+The widget will never be resized to be smaller than this size.
 
-    <MinimumSize>
+`<MinimumSize>` is formatted as the minimum horizontal size and the
+minimum vertical size separated by a comma.
 
-tags tell Mixxx the smallest size a widget should be. The widget will
-never be resized to be smaller than this size.
+| Examples:                                                                                                |                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `<MinimumSize>100,50</MinimumSize>
+<MinimumSize>200,-1</MinimumSize>
+<MinimumSize>-1,300</MinimumSize>
+` | `minimum width 100, minimum height 50
+minimum width 200, no minimum height
+no minimum width, minimum height 300
+` |
 
-#### \<MaximumSize\>
+#### `<MaximumSize>`
 
-    <MaximumSize>
+`<MaximumSize>` tags tell Mixxx the largest size a widget should be. The
+widget will never be resized to be larger than this size.
 
-tags tell Mixxx the largest size a widget should be. The widget will
-never be resized to be larger than this size.
+`<MaximumSize>` is formatted as the maximum horizontal size and the
+maximum vertical size separated by a comma.
 
-#### \<SizePolicy\>
+| Examples:                                                                                                |                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `<MaximumSize>100,50</MaximumSize>
+<MaximumSize>200,-1</MaximumSize>
+<MaximumSize>-1,300</MaximumSize>
+` | `maximum width 100, maximum height 50
+maximum width 200, no maximum height
+no maximum width, maximum height 300
+` |
 
-    <SizePolicy>
+#### `<SizePolicy>`
 
-tags tell Mixxx how to allow the widget to resize.
+`<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
+on the available space. Size policy refers to the Qt
+[QSizePolicy](http://qt-project.org/doc/qt-4.8/qsizepolicy.html#Policy-enum).
 
-**TODO(rryan): Describe how this works.**
+|  | SizePolicy       |  | Skin Abbreviation |  | What it does                                                                                                                                                                  |  |
+|  | ---------------- |  | ----------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
+|  | Fixed            |  | f                 |  | The size in the given dimension is fixed and should not grow or shrink.                                                                                                       |  |
+|  | Minimum          |  | min               |  | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this.                                                                 |  |
+|  | Maximum          |  | max               |  | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this.                                                                |  |
+|  | Preferred        |  | p                 |  | The widget size in this dimension is the preferred size. It can be shrunk and still be useful. It can grow but there is no advantage to it growing.                           |  |
+|  | Expanding        |  | e                 |  | The widget size in this dimension can be shrunk and still be useful. The widget can make use of extra space in this dimension so it should receive as much space as possible. |  |
+|  | MinimumExpanding |  | me                |  | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible.       |  |
+
+The `<SizeHint>` property is formatted as the skin abbreviation (from
+the above table) for the horizontal size and the skin abbreviation for
+the vertical size policy separated by a comma.
+
+| Examples:                                                                                     |                                                                                                                              |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `<SizePolicy>f,min</SizePolicy>
+<SizePolicy>me,me</SizePolicy>
+<SizePolicy>p,f</SizePolicy>
+` | `Fixed horizontal, Minimum vertical
+MinimumExpanding for both horizontal and vertical
+Preferred horizontal, Fixed vertical
+` |
 
 ### Skin Colour Scheme
 

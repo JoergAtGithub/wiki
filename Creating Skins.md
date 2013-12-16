@@ -2520,6 +2520,57 @@ In that example, the PushButton child will be at 0,0 relative to its
 parent, or the absolute position 100,200. The SliderComposed widget will
 be at 20,0 relative to its parent or 120,200.
 
+#### WidgetGroup Layouts
+
+**Never have to specify \<Pos\> again\!**
+
+You can use a `<Layout>` take in a `WidgetGroup` to have the widget
+group automatically layout its children according to their size policies
+and minimum/maximum widths (see `<SizePolicy>` info above). As of Mixxx
+1.12.0 the valid layout types are "horizontal" and "vertical". These
+correspond to putting all the child widgets in a
+[QHBoxLayout](http://qt-project.org/doc/qt-4.8/qhboxlayout.html) and
+[QVBoxLayout](http://qt-project.org/doc/qt-4.8/qvboxlayout.html),
+respectively.
+
+|                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<WidgetGroup>
+  <Pos>100,200</Pos>
+  <Size>w,h</Size>
+  <Layout>horizontal</Layout>
+  <BackPath>background.png</BackPath>
+  <Children>
+    <PushButton>
+      ...
+    </PushButton>
+    <SliderComposed>
+      ...
+    </SliderComposed>
+    <!-- as many regular widgets as you like in here -->
+  </Children>
+</WidgetGroup>
+` | `
+
+
+Layout widgets horizontally.
+New in Mixxx 1.11: Loads a background image from the skin folder. Support resizing and color schemes.
+Note: The style sheet is painted on top of the new background set by the <BackPath> node.
+
+
+
+
+
+
+
+
+
+
+` |
+
+The result of this is that the pushbutton and slider will be
+automatically sized and laid out horizontally within the widget group.
+
 ### Splitter
 
 New in Mixxx 1.11.0

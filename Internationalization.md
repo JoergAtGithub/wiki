@@ -34,7 +34,7 @@ of the year.
 You need a translator account to access
 [Transifex](https://www.transifex.com/), our translation site. Sign up
 for a free translator account or use your existing social network
-credentials to login <https://www.transifex.com/signin/?next=/signup/#>.
+credentials to login <https://www.transifex.com/signup/contributor/>.
 
 ### What about the skills required for translating ?
 

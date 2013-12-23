@@ -52,6 +52,7 @@ your distribution's package manager:
   - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
     (**optional** if not installed, Mixxx uses an internal version)
   - [freeglut](http://freeglut.sourceforge.net/)
+  - [librubberband](http://breakfastquay.com/rubberband/)
 
 ## 2\. Get Mixxx
 

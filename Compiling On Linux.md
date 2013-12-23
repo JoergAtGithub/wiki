@@ -248,8 +248,8 @@ Solution :
 
 #### Debian Wheezy PowerPC compilation issue
 
-This problem happened to me on a PowerBook G4 running Debian Wheezy.
-Maybe it can happen on other PowerPC machines...
+This problem happened on a PowerBook G4 running Debian Wheezy. Maybe it
+can happen on other PowerPC machines...
 
 The compilation failed, saying that this architecture is not supported.
 But it is not true\! It is just a bug.

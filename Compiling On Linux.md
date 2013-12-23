@@ -237,6 +237,30 @@ Now restart jack & mixxx.
   
 Now World domination :)
 
+#### Debian Wheezy compilation issue
+
+On Debian Wheezy, compilation fails if you don't have librubberband
+headers.
+
+Solution :
+
+    apt-get install librubberband-dev
+
+#### Debian Wheezy PowerPC compilation issue
+
+This problem happened to me on a PowerBook G4 running Debian Wheezy.
+Maybe it can happen on other PowerPC machines...
+
+The compilation failed, saying that this architecture is not supported.
+But it is not true\! It is just a bug.
+
+In the file buid/mixxx.py, there is a list of architectures starting at
+line 48. Just add 'ppc' in this list and it will work fine\!
+
+Example : modify line 53 like this :
+
+    'i486', 'i386', 'ppc', 'powerpc', 'powerpc64',
+
 ## Further Reading
 
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)

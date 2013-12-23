@@ -251,8 +251,8 @@ Solution :
 This problem happened on a PowerBook G4 running Debian Wheezy. Maybe it
 can happen on other PowerPC machines...
 
-The compilation failed, saying that this architecture is not supported.
-But it is not true\! It is just a bug.
+The compilation failed, with a message saying that this architecture is
+not supported. But it is\!
 
 In the file buid/mixxx.py, there is a list of architectures starting at
 line 48. Just add 'ppc' in this list and it will work fine\!

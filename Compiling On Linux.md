@@ -53,6 +53,7 @@ your distribution's package manager:
     (**optional** if not installed, Mixxx uses an internal version)
   - [freeglut](http://freeglut.sourceforge.net/)
   - [librubberband](http://breakfastquay.com/rubberband/)
+  - libchromaprint
 
 ## 2\. Get Mixxx
 

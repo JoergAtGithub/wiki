@@ -13,7 +13,7 @@ If your distribution is Debian based (such as Ubuntu), you can install
 them by running:
 
     sudo apt-get build-dep mixxx 
-    sudo apt-get install git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler libvamp-hostsdk3 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libchromaprint-dev
+    sudo apt-get install git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler libvamp-hostsdk3 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libchromaprint-dev librubberband-dev
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 
 ### Fedora

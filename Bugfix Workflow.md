@@ -69,4 +69,4 @@ in time.
 
 The Bug is fixed now and will be released with the next release cycle.
 
-Your name will appear in the "About Box" of Mixxx
+Your name will appear in the "About" box of Mixxx.

@@ -11,7 +11,7 @@ The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
 
 <https://help.github.com/articles/fork-a-repo>
 
-## Creat a Local Branch
+## Create a Local Branch
 
 [Mixxx workflow with
 GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)

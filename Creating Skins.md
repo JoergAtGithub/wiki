@@ -699,27 +699,29 @@ Here is a potentially out-of-date list of which Mixxx widgets derive
 from which Qt widgets. If not listed, the widget inherits from
 `QWidget`.
 
-|  | Skin Tag       |  | Mixxx Internal Name |  | Qt Widget                   |  |
-|  | -------------- |  | ------------------- |  | --------------------------- |  |
-|  | WidgetStack    |  | WWidgetStack        |  | QStackedWidget              |  |
-|  | WidgetGroup    |  | WWidgetGroup        |  | QGroupBox                   |  |
-|  | (none)         |  | WTrackTableView     |  | QTableView                  |  |
-|  | (none)         |  | WLibraryTableView   |  | QTableView                  |  |
-|  | Library        |  | WLibrary            |  | QStackedWidget              |  |
-|  | LibrarySidebar |  | WLibrarySidebar     |  | QTreeView                   |  |
-|  | SearchBox      |  | WSearchLineEdit     |  | QLineEdit                   |  |
-|  | Spinny         |  | WSpinny             |  | QGLWidget                   |  |
-|  | Visual         |  | WWaveformViewer     |  | QWidget                     |  |
-|  | NumberRate     |  | WNumberRate         |  | QWidget with a QLabel child |  |
-|  | NumberPos      |  | WNumberPos          |  | QWidget with a QLabel child |  |
-|  | NumberBpm      |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Number         |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Label          |  | WLabel              |  | QWidget with a QLabel child |  |
-|  | Text           |  | WTrackText          |  | QWidget with a QLabel child |  |
-|  | TrackProperty  |  | WTrackProperty      |  | QWidget with a QLabel child |  |
-|  | Time           |  | WTime               |  | QWidget with a QLabel child |  |
-|  | Key            |  | WKey                |  | QWidget with a QLabel child |  |
-|  | Splitter       |  | (none)              |  | QSplitter                   |  |
+|  | Skin Tag       |  | Mixxx Internal Name |  | Qt Widget                          |  |
+|  | -------------- |  | ------------------- |  | ---------------------------------- |  |
+|  | WidgetStack    |  | WWidgetStack        |  | QStackedWidget                     |  |
+|  | WidgetGroup    |  | WWidgetGroup        |  | QFrame (was QGroupBox)<sup>1</sup> |  |
+|  | (none)         |  | WTrackTableView     |  | QTableView                         |  |
+|  | (none)         |  | WLibraryTableView   |  | QTableView                         |  |
+|  | Library        |  | WLibrary            |  | QStackedWidget                     |  |
+|  | LibrarySidebar |  | WLibrarySidebar     |  | QTreeView                          |  |
+|  | SearchBox      |  | WSearchLineEdit     |  | QLineEdit                          |  |
+|  | Spinny         |  | WSpinny             |  | QGLWidget                          |  |
+|  | Visual         |  | WWaveformViewer     |  | QWidget                            |  |
+|  | NumberRate     |  | WNumberRate         |  | QWidget with a QLabel child        |  |
+|  | NumberPos      |  | WNumberPos          |  | QWidget with a QLabel child        |  |
+|  | NumberBpm      |  | WNumber             |  | QWidget with a QLabel child        |  |
+|  | Number         |  | WNumber             |  | QWidget with a QLabel child        |  |
+|  | Label          |  | WLabel              |  | QWidget with a QLabel child        |  |
+|  | Text           |  | WTrackText          |  | QWidget with a QLabel child        |  |
+|  | TrackProperty  |  | WTrackProperty      |  | QWidget with a QLabel child        |  |
+|  | Time           |  | WTime               |  | QWidget with a QLabel child        |  |
+|  | Key            |  | WKey                |  | QWidget with a QLabel child        |  |
+|  | Splitter       |  | (none)              |  | QSplitter                          |  |
+
+<sup>1</sup> changed in Mixxx v1.12.0  
 
 #### \<TooltipId\>
 

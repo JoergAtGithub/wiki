@@ -126,6 +126,15 @@ plans.
 
 ## Google Summer of Code
 
+### GSoC 2014
+
+Mixxx is applying as a mentoring organization for Google Summer of Code,
+2014.
+
+  - See the list of suggested projects: [GSoC 2014 Ideas](gsoc2014ideas)
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
 ### GSoC 2013
 
 Mixxx is an accepted mentoring organization for Google Summer of Code,

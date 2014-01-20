@@ -719,7 +719,7 @@ from which Qt widgets. If not listed, the widget inherits from
 |  | TrackProperty  |  | WTrackProperty      |  | QWidget with a QLabel child |  |
 |  | Time           |  | WTime               |  | QWidget with a QLabel child |  |
 |  | Key            |  | WKey                |  | QWidget with a QLabel child |  |
-|  | Splitter       |  | (none)              |  | QSplitter                   |  |
+|  | Splitter       |  | WSplitter           |  | QSplitter                   |  |
 
 #### \<TooltipId\>
 

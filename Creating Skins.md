@@ -421,6 +421,8 @@ editor](#tools) and get started :-)
  * Added skin template system.
  * Added ''<ComboBox>'' widget.
  * Added ''<KnobComposed>'' widget.
+ * ''<BindProperty>'' does not persist the control value in ''mixxx.cfg'' by default.
+ * New syntax for requesting a control to persist in ''mixxx.cfg'': ''<ConfigKey persist="true"></ConfigKey>''.
 ```
 
 ### Mixxx 1.11.0

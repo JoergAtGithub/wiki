@@ -414,6 +414,13 @@ editor](#tools) and get started :-)
  * Added **[InternalClock],bpm** which shows the speed of the internal synchronization clock.  This is a read/write control.
  * Added "reverseroll", which like rolling beatloops is a pushbutton that enables reverse and slip mode while held.  (recommend adding to right click of reverse button)
  * Added ''<MinimumSize>'', ''<MaximumSize>'', and ''<SizePolicy>'' to all widgets.
+ * ''<WidgetGroup>'' changed base classes from QGroupBox to QFrame.
+ * ''<Splitter>'' is now a WSplitter which inherits from QSplitter.
+ * Added ''<ObjectName>'' to all widgets.
+ * Added resizable skin support. To enable, treat ``<skin>`` like a ``<WidgetGroup>`` and give it a ``<Layout>``.
+ * Added skin template system.
+ * Added ''<ComboBox>'' widget.
+ * Added ''<KnobComposed>'' widget.
 ```
 
 ### Mixxx 1.11.0

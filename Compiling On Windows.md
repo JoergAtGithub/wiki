@@ -86,11 +86,12 @@ referred to as MSVC in discussions.
 2010/Common7/Tools\</code\>
 
 ``` 
-  - Type <code>scons toolchain=msvs winlib=<path to winlib/x86 directory> sqlitedll=0 staticlibs=1 asmlib=0</code> and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
+  - Type <code>scons toolchain=msvs winlib=<complete path to winlib/x86 directory> sqlitedll=0 staticlibs=1 asmlib=0</code> and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
     * the winlib repository contains the dependencies for x86 and x64 so make sure to point winlib to the x86 folder.
     * In case scons can't find the dependencies try to load the visual studio enviroment variabels [[http://msdn.microsoft.com/en-us/library/vstudio/1700bbwd.aspx]]
     * Add ''msvcdebug=1'' to build the debug version (with console output window.)
     * Add ''force32=1'' if you're on a 64-bit platform with 64-bit Python installed, otherwise it will try to build the x64 version of Mixxx.
+    * If you get complaints about protoc missing. Copy the file from the winlib folder into the mixxx folder
     * If you would like to build with MP4/M4A/AAC file support:
       * If you're on Vista and above, add ''mediafoundation=1''. (Vista users must have installed [[http://support.microsoft.com/kb/2117917|KB2117917]].)
       * If you're on XP and below, first build FAAD2 and mp4v2 [[build_windows_dependencies#libfaad2|as detailed here]] then add ''faad=1'' to the scons command.

@@ -24,11 +24,15 @@ referred to as MSVC in discussions.
   - [Microsoft Windows 7
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
   - [Qt library for Windows
-    (MSVC2010)](http://releases.qt-project.org/qt4/source/qt-win-opensource-4.8.4-vs2010.exe)
-  - [Python](http://python.org/download/) 2.x
+    (MSVC2010)](http://download.qt-project.org/official_releases/qt/4.8/4.8.5/)
+  - [Python](http://python.org/download/) 2.x Install for user only\!
+    Otherwise scons can't find the installation
   - [SCONS](http://www.scons.org/download.php)
   - A Git client like
-    [TortoiseGit](https://code.google.com/p/tortoisegit/) 
+    [TortoiseGit](https://code.google.com/p/tortoisegit/) or the [github
+    windows
+    client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
+    (featuring a unix like command line)
 
 <!-- end list -->
 
@@ -38,9 +42,11 @@ referred to as MSVC in discussions.
 
   - Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-    adjusting the paths to match where you actually installed the above
-    `QTDIR = C:\qt-windows-4.8.4\
-    PATH = C:\qt-windows-4.8.4\bin;C:\Python26;C:\Python26\Scripts`
+    adjusting the paths to match where you actually installed the above.
+    `QTDIR = C:\qt-windows-4.8.x\ # create a new variable for this
+    PATH = C:\qt-windows-4.8.x\bin;C:\Python2x;C:\Python2x\Scripts #
+    append to the existing variable
+    `
   - If you're using Qt 4.8 or above, you might need to copy all of the
     Qt4 DLL files from `C:\qt\bin` to `C:\qt\lib` since that's where our
     build script looks for them. (We should fix that.)
@@ -71,34 +77,26 @@ referred to as MSVC in discussions.
         Windows SDK v.7.0\\CMD Shell) and change into the "mixxx"
         subdirectory of the checkout directory. (E.g. trunk\\mixxx)
     2.  Type `setenv /xp /x86 /release` and hit Enter.
-    3.  Type `scons toolchain=msvs winlib=<path to
-        winlib-msvc10-x86-static directory> sqlitedll=0 staticlibs=1
-        asmlib=0` and press Enter. (You may need to use `scons.bat`
-        instead of just `scons`.)
-          - the winlib repository contains the dependencies for x86 and
-            x64 so make sure to point winlib to the x86 folder.
-          - In case scons can't find the dependencies try to load the
-            visual studio enviroment variabels
-            <http://msdn.microsoft.com/en-us/library/vstudio/1700bbwd.aspx>
-          - Add `msvcdebug=1` to build the debug version (with console
-            output window.)
-          - Add `force32=1` if you're on a 64-bit platform with 64-bit
-            Python installed, otherwise it will try to build the x64
-            version of Mixxx. (`win32=1` in older branches.)
-          - If you would like to build with MP4/M4A/AAC file support:
-              - If you're on Vista and above, add `mediafoundation=1`.
-                (Vista users must have installed
-                [KB2117917](http://support.microsoft.com/kb/2117917).)
-              - If you're on XP and below, first build FAAD2 and mp4v2
-                [as detailed here](build_windows_dependencies#libfaad2)
-                then add `faad=1` to the scons command.
-2.  Run it: When Mixxx is done compiling, run mixxx.exe in the
-    "mixxx/dist32/" directory.
-3.  (Optional) If you'd like to generate a MSVC project for use with
-    Visual Studio, add the parameter msvc in the command such as `scons
-    toolchain=msvs winlib=<path to mixxx-win32lib-msvc90-release
-    directory> msvc` then open the newly generated "mixxx.vcproj" file
-    with Visual Studio.
+    3.  Load MSVS 2010 environment variables. call vsvars.bat from the
+        following directory
+    4.  \<code\> (32bit system) C:\\Program Files\\Microsoft Visual
+        Studio 2010/Common7/Tools
+
+(64bit system) C:\\Program Files (x86)\\Microsoft Visual Studio
+2010/Common7/Tools\</code\>
+
+``` 
+  - Type <code>scons toolchain=msvs winlib=<path to winlib/x86 directory> sqlitedll=0 staticlibs=1 asmlib=0</code> and press Enter. (You may need to use ''scons.bat'' instead of just ''scons''.)
+    * the winlib repository contains the dependencies for x86 and x64 so make sure to point winlib to the x86 folder.
+    * In case scons can't find the dependencies try to load the visual studio enviroment variabels [[http://msdn.microsoft.com/en-us/library/vstudio/1700bbwd.aspx]]
+    * Add ''msvcdebug=1'' to build the debug version (with console output window.)
+    * Add ''force32=1'' if you're on a 64-bit platform with 64-bit Python installed, otherwise it will try to build the x64 version of Mixxx.
+    * If you would like to build with MP4/M4A/AAC file support:
+      * If you're on Vista and above, add ''mediafoundation=1''. (Vista users must have installed [[http://support.microsoft.com/kb/2117917|KB2117917]].)
+      * If you're on XP and below, first build FAAD2 and mp4v2 [[build_windows_dependencies#libfaad2|as detailed here]] then add ''faad=1'' to the scons command.
+- Run it: When Mixxx is done compiling, run mixxx.exe in the "mixxx/dist32/" directory.
+- (Optional) If you'd like to generate a MSVC project for use with Visual Studio, add the parameter msvc in the command such as <code>scons toolchain=msvs winlib=<path to mixxx-win32lib-msvc90-release directory> msvc</code> then open the newly generated "mixxx.vcproj" file with Visual Studio.
+```
 
 ## Build the 64-bit version using Microsoft Visual Studio Express
 

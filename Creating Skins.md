@@ -423,6 +423,7 @@ editor](#tools) and get started :-)
  * Added ''<KnobComposed>'' widget.
  * ''<BindProperty>'' does not persist the control value in ''mixxx.cfg'' by default.
  * New syntax for requesting a control to persist in ''mixxx.cfg'': ''<ConfigKey persist="true"></ConfigKey>''.
+ * Added support for specifying style in a separate file: ''<Style src="skin:style.qss"/>''
 ```
 
 ### Mixxx 1.11.0

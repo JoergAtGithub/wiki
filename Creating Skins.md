@@ -417,7 +417,7 @@ editor](#tools) and get started :-)
  * ''<WidgetGroup>'' changed base classes from QGroupBox to QFrame.
  * ''<Splitter>'' is now a WSplitter which inherits from QSplitter.
  * Added ''<ObjectName>'' to all widgets.
- * Added resizable skin support. To enable, treat ``<skin>`` like a ``<WidgetGroup>`` and give it a ``<Layout>``.
+ * Added resizable skin support. To enable, treat ''<skin>'' like a ''<WidgetGroup>'' and give it a ''<Layout>''.
  * Added skin template system.
  * Added ''<ComboBox>'' widget.
  * Added ''<KnobComposed>'' widget.

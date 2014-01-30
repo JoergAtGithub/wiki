@@ -284,8 +284,9 @@ your homebrew installation. In this example we will use
 If you got the source code from Git, change to the newly created `mixxx`
 directory, and use scons to compile and install:
 
+If you used the 1.11 branch, you must type `cd mixxx` twice.
+
     cd mixxx
-    cd mixxx (Git creates two subdirectories...)
     scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 

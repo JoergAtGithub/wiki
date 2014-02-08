@@ -43,43 +43,6 @@ Links to Launchpad bugs:
   - <https://bugs.launchpad.net/mixxx/+bug/890421>
   - <https://bugs.launchpad.net/mixxx/+bug/1015894>
 
-## Cloud Library Support (SoundCloud, Spotify, etc.)
-
-There are many music discovery services which give users access to a
-broad library of music. Many of these services have APIs that allow
-3rd-party clients to access the library and download music on the behalf
-of the user. We think these services will be a powerful tool for our
-users to explore how songs fit in their mixes.
-
-Your application should include details of which streaming services you
-plan to integrate and how you will make use of their download/streaming
-APIs (if they exist). We are not looking for dedicated integration of a
-service (for example, we aren't looking for a SoundCloud or YouTube
-section of the Mixxx library) -- rather we envision a generic "Internet
-Tracks" section of the library where users can search across all of
-their enabled cloud library services to find and play tracks.
-
-In the very least, your proposal should define a modular system for
-plugging in new streaming services so that in the future all that is
-required to add more is defining how to search and download from the API
-of the new service. Also consider what will be most useful to a DJ and
-contact us on our mailing lists with your ideas.
-
-Note, that due to technical restrictions streaming music in the Mixxx
-engine is very difficult. Your proposal should leave room in the future
-for streaming but in the implementation you write it should support
-download of the music to a temporary storage location for playing. This
-has the added bonus that it ensures there are not hiccups in the audio
-due to a bad Internet connection.
-
-Some related bugs on Mixxx's bug tracker can be found here:
-
-  - <https://bugs.launchpad.net/mixxx/+bug/938180>
-  - <https://bugs.launchpad.net/mixxx/+bug/894652>
-  - <https://bugs.launchpad.net/mixxx/+bug/669273>
-  - <https://bugs.launchpad.net/mixxx/+bug/889898>
-  - <https://bugs.launchpad.net/mixxx/+bug/918222>
-
 ## Keyboard / MIDI Mapping GUI
 
 In Mixxx 1.11.0 we removed the old MIDI mapping GUI as we re-wrote the

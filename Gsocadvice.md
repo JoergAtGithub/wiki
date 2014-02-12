@@ -120,6 +120,7 @@ Some other (entirely optional) things you might consider doing:
         lists. 
         1.  Try picking something on the list and tackling it as a
             starter project\!
+        2.  [Bugfix Workflow](Bugfix%20Workflow) 
 4.  As mentioned in the contact section above, hang around on IRC at
     freenode.net \#mixxx
 5.  Sign up for [the forums](http://www.mixxx.org/forums)

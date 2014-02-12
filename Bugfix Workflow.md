@@ -1,5 +1,3 @@
-\*\* FIXME -\> This page is under construction \<- FIXME\*\*
-
 # Bugfix Work Flow
 
 This is a brief step by step description about a typical work flow of

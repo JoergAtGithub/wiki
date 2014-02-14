@@ -30,7 +30,15 @@ Ubuntu Packages to Install (but possible outdated) would be:
   - eclipse-cdt
   - eclipse-pydev
 
-# Optional Eclipse plugins
+# Recommended Eclipse plugins
+
+  - QT CDT Support: Highly recommended. 
+  - Look for it in Help / Install New Software... 
+  - Should be available from the standard update site under CDT Optional
+    Features: [Kepler CDT
+    Updates](http://download.eclipse.org/tools/cdt/releases/kepler)
+
+<!-- end list -->
 
   - SCons plugin: [currently
     broken](https://bugs.launchpad.net/mixxx/+bug/1279463) 

@@ -153,11 +153,8 @@ reading the compiler commands, but it is safer to do the job manual:
 
 <!-- end list -->
 
-  - Possible issue: [Why doesn't Eclipse know about some of Qt's symbols
-    / class
-    names?](http://qt-project.org/faq/answer/why_doesnt_eclipse_know_about_some_of_qts_symbols_class_names)
-    (There is an experimental version of Eclipse CDT for QT that may
-    help with this)
+  - Make sure you have QT Support for CDT installed (see Recommended
+    Plugins above).
 
 ### Eclipse code formatter
 

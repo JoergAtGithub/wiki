@@ -32,10 +32,12 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 # Recommended Eclipse plugins
 
-  - QT CDT Support: Highly recommended. 
-  - Look for it in Help / Install New Software... 
-  - Should be available from the standard update site under CDT Optional
-    Features: [Kepler CDT
+Eclipse plugins are installed from the Help / Install New Software...
+menu.
+
+  - QT CDT Support: Highly recommended for best indexing support.
+  - Available from the standard update site under CDT Optional Features
+    for Eclipse 4.3 (Kepler): [Kepler CDT
     Updates](http://download.eclipse.org/tools/cdt/releases/kepler)
 
 <!-- end list -->

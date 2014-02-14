@@ -32,7 +32,8 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 # Optional Eclipse plugins
 
-  - SCons plugin: 
+  - SCons plugin: [currently
+    broken](https://bugs.launchpad.net/mixxx/+bug/1279463) 
   - See <http://sconsolidator.com> and ***follow*** the instructions
     there on how to install and configure. 
   - From Eclipse menu, you can use File -\> Import -\> C/C++ -\> New

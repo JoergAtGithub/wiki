@@ -48,6 +48,12 @@ Ubuntu Packages to Install (but possible outdated) would be:
   - Eclipse GitHub plugin:
   - <http://eclipse.github.com/>
 
+<!-- end list -->
+
+  - QT CDT Support: Should be available from the standard update site:
+    [Kepler CDT
+    Updates](http://download.eclipse.org/tools/cdt/releases/kepler)
+
 # Step by Step Setup
 
 For Eclipse Indigo (and Kepler)

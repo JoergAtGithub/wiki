@@ -262,9 +262,9 @@ of Mixxx users do.
 
 9.  DaRouter Required
 
-10. with ALSA kernel patch
+10. Linux kernel 3.8 and up
 
-11. with ALSA kernel patch
+11. Linux kernel 3.8 and up
 
 12. official driver must be patched to support kernels \> 2.6.30 see
     <http://mixxx.org/forums/viewtopic.php?f=1&t=851>

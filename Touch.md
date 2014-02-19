@@ -48,10 +48,15 @@ Since the Mixxx buttons behaves like Midi buttons, a natural solution
 for the right click problem is to introduce a shift button like we can
 find on many DJ controllers as well.
 
-In <https://github.com/mixxxdj/mixxx/pull/76> was a new Control Object
-introduced which can be connected to a GUI Shift Button, a keyboard key
-or a controller button. Once this is = 1.0, the connected button is
-pressed, all touch tabs will be interpreted as right clicks.
+In <https://github.com/mixxxdj/mixxx/pull/76> was the new
+"\[Controls\]", "touch\_shift" Control Object introduced which can be
+connected to a GUI Shift Button, a keyboard key or a controller button.
+Once this is = 1.0, the connected button is pressed, all touch tabs will
+be interpreted as right clicks.
 
 This allows us to issue right and left clicks without additional latency
 to detect a gesture.
+
+Please note: We have already discussed a way to generalize the shift key
+in Mixxx. We might will remove "\[Controls\]", "touch\_shift" once this
+is introduce.

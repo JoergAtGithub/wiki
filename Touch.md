@@ -3,12 +3,12 @@
 Mixxx 1.11 don't works very well on touch screen devices. This was
 reported in some bugs like
 
-\* [\#1152572 MultiTouch compatibility and
-features](https://bugs.launchpad.net/mixxx/+bug/1152572) \* [\#1217738
-rotary dial control via touchscreen is
-wrong](https://bugs.launchpad.net/mixxx/+bug/1217738) \* [\#1217733
-right-click solution or replacement needed for
-touchscreens](https://bugs.launchpad.net/mixxx/+bug/1217733)
+  - [\#1152572 MultiTouch compatibility and
+    features](https://bugs.launchpad.net/mixxx/+bug/1152572) 
+  - [\#1217738 rotary dial control via touchscreen is
+    wrong](https://bugs.launchpad.net/mixxx/+bug/1217738) 
+  - [\#1217733 right-click solution or replacement needed for
+    touchscreens](https://bugs.launchpad.net/mixxx/+bug/1217733)
 
 These bug reports are containing many details and further lings, but are
 cluttered due to the post style. So here now brief overview.

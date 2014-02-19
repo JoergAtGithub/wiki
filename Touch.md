@@ -60,3 +60,39 @@ to detect a gesture.
 Please note: We have already discussed a way to generalize the shift key
 in Mixxx. We might will remove "\[Controls\]", "touch\_shift" once this
 is introduce.
+
+## Multi touch
+
+All legacy widgets only support one pointing device. A second point
+might produces failure. Consequently the native touch to mouse solutions
+only support single touch. Once it is active the Application does not
+receive any touch events. This works for all legacy applications, but we
+loose the benefit of multi touch.
+
+The Qt4 solution relies on that. This means, if you enable touch for a
+single widget, the native touch to mouse solution is disabled. This way
+we have nice multi touch support on Mixxx's buttons but no touch at all
+for the library.
+
+In Qt5 this problem is solved by Qt's own touch to mouse solution which
+is configurable per widget.
+
+To fix this for Qt4 the Qt5 solution was introduced by overwriting Qt4
+functions. See In <https://github.com/mixxxdj/mixxx/pull/76> this
+fallback solution only supports a single pointing device to be
+compatible with all legacy widgets.
+
+Normally, widgets will loose a button pressed state when loosing the
+focus. This is a normal behaviour if we have a single pointing device.
+The widget implementation expects it and may rely on it.
+
+If we need to control more widgets at the same time, the pressed state
+must not removed wit the focus. In this case we have no mouse emulation,
+but real multi touch support. This was Implemented on the widget itself.
+
+So you will find both solutions in
+<https://github.com/mixxxdj/mixxx/pull/76> 1.) A single point touch
+mouse emulation for all widgets in MixxxApplication. The touch point
+behaves exactly like a Mouse. 2.) A real multi touch solution in
+WWidget. It is still using Mouse events, but the widgets are prepared.
+This solution is not effected by the focus.

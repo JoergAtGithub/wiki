@@ -16,6 +16,7 @@ page.
   - [nonblockingdb\_status](nonblockingdb_status)
   - [Loop Recorder](Loop%20Recorder)
   - [Timing](Timing)
+  - [Touch](Touch)
 
 ## Implemented Specifications
 

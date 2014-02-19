@@ -44,6 +44,12 @@ Here an overview to the different native right click solutions:
 
 ## Mixxx Right click solution
 
+\*\* To finger tab -\> will issue the left click as well because you
+can' tap simultaneously \*\* Drag out -\> will issue the left click as
+well \*\* Hold (Long press) -\> will issue the left click as well \*\*
+Context Menu button Or Shift+F10 -\> you cannot focus a button without
+left click \*\* Ctrl+Click/Tab -\> works :-)
+
 Since the Mixxx buttons behaves like Midi buttons, a natural solution
 for the right click problem is to introduce a shift button like we can
 find on many DJ controllers as well.

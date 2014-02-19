@@ -42,7 +42,7 @@ Here an overview to the different native right click solutions:
 
   - Right click = long push
 
-## Right click solution
+## Mixxx Right click solution
 
 Since the Mixxx buttons behaves like Midi buttons, a natural solution
 for the right click problem is to introduce a shift button like we can

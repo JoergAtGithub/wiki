@@ -29,11 +29,18 @@ click gesture without delaying the left click.
 
 Here an overview to the different native right click solutions:
 
-**Windows 8** Right click = Releasing after long push
+**Windows 8**
 
-**Ubuntu** Right click = long push Or Right click = Two finger click
+  - Right click = Releasing after long push 
 
-**iOs** Right click = long push
+**Ubuntu**
+
+  - Right click = long push 
+  - Right click = Two finger click 
+
+**iOs**
+
+  - Right click = long push
 
 ## Right click solution
 

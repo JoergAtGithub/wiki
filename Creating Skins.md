@@ -427,7 +427,9 @@ editor](#tools) and get started :-)
  * ''<EmitOnDownPress>'' is calculated from the connected control and can be omitted.
  * ''<EmitOnPressAndRelease>'' is calculated from the connected control and can be omitted. 
  * ''<ConnectValueToWidget>'' is calculated from the connected control and can be omitted. 
- * ''<ConnectValueFromWidget>'' is calculated from the connected control and can be omitted. 
+ * ''<ConnectValueFromWidget>'' is calculated from the connected control and can be omitted.
+ * ''<LeftClickIsPushButton> is calculated from the connected control and can be omitted.
+ * ''<RightClickIsPushButton> is calculated from the connected control and can be omitted.
  * Start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml    
 ```
 

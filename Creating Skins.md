@@ -1535,34 +1535,38 @@ Can be omitted in Mixxx >= 1.12
 
 ### Play
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>play_cue_set</TooltipId>
     <NumberStates>2</NumberStates>
     <State>
-    <Number>0</Number>
-    <Pressed>pressed.png</Pressed>
-    <Unpressed>unpressed.png</Unpressed>
+        <Number>0</Number>
+        <Pressed>pressed.png</Pressed>
+        <Unpressed>unpressed.png</Unpressed>
     </State>
     <State>
-    <Number>1</Number>
-    <Pressed>pressed.png</Pressed>
-    <Unpressed>unpressed.png</Unpressed>
+        <Number>1</Number>
+        <Pressed>pressed.png</Pressed>
+        <Unpressed>unpressed.png</Unpressed>
     </State>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[ChannelX],play</ConfigKey>
-    <EmitOnDownPress>true</EmitOnDownPress>
-    <ButtonState>LeftButton</ButtonState>
+        <ConfigKey>[ChannelX],play</ConfigKey>
+        <EmitOnDownPress>true</EmitOnDownPress>
+        <ButtonState>LeftButton</ButtonState>
     </Connection>
     <Connection>
-    <ConfigKey>[ChannelX],cue_set</ConfigKey>
-    <EmitOnDownPress>true</EmitOnDownPress>
-    <ButtonState>RightButton</ButtonState>
+        <ConfigKey>[ChannelX],cue_set</ConfigKey>
+        <EmitOnDownPress>true</EmitOnDownPress>
+        <ButtonState>RightButton</ButtonState>
+    </Connection>
+    <Connection>
+        <ConfigKey>[ChannelX],play_indicator</ConfigKey>
     </Connection>
 </PushButton> 
 ` | `
+
 Left Click: Pause/Play, Right Click: Set cue point
 Overall quantity of states the button have
 
@@ -1576,15 +1580,19 @@ Default image displayed
 Image displayed on mouse-down
 
 
-First states action
-Defines connected Channel (X = 1 or 2) , performed action (play)
+Left Button connection 
+Defines connected Channel (X = 1 .. 4), performed action (play)
 Defines if action is performed on down-click on element (true or false)
 Which mouse button must be clicked so the action is performed 
 
-Second states action
-Defines connected Channel (X = 1 or 2) , performed action (cue_set)
+Right Button connection
+Defines connected Channel (X = 1 .. 4), performed action (cue_set)
 Defines if action is performed on down-click on element (true or false)
 Which mouse button must be clicked so the action is performed
+
+No button connection = Display connection
+Defines connected Channel (X = 1 .. 4), performed action (cue_set)
+
  
 
 ` |

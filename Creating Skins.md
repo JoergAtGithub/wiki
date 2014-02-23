@@ -2403,9 +2403,9 @@ Defines connected Channel (X = 1 or 2) , performed action (flanger)
     <ButtonState>LeftButton</ButtonState>
     </Connection>
 </PushButton>
-` | `???= filterHighKill or filterMidKill or filterLowKill
+` | `
+???= filterHighKill or filterMidKill or filterLowKill
 Cuts the high, mid and low frequencies on Channel X
-
 
 
 Default button visible
@@ -2418,7 +2418,7 @@ Button visible when active
 
 
 
-Defines connected Channel (X = 1 or 2), 
+Defines connected Channel (X = 1 .. 4), 
 performed action (Y= filterHighKill or filterMidKill or filterLowKill)
 
 

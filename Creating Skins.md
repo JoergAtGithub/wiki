@@ -2436,17 +2436,18 @@ Defines connected Channel (Master) , performed action (Y=volume or balance)
 
 ### Flanger (FX) setting
 
-|                                                                                                                                                                                                                      |                                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                          |                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Knob>
     <TooltipId>???</TooltipId>
     <NumberStates>X</NumberStates>
     <Path>knob_rotary_s%1.png</Path>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[Flanger],Y</ConfigKey>
+        <ConfigKey>[Flanger],Y</ConfigKey>
     </Connection>
-</Knob>` | `???= lfoDelay or lfoDepth or lfoPeriod
+</Knob>` | `
+???= lfoDelay or lfoDepth or lfoPeriod
 
 
 
@@ -2454,6 +2455,7 @@ Defines connected Channel (Master) , performed action (Y=volume or balance)
 
 Defines connected Channel (Flanger),
 performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
+
 
 ` |
 

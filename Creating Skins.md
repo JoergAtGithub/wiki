@@ -2470,8 +2470,8 @@ performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
         <ConfigKey>[Master],Y</ConfigKey>
     </Connection>
 </Knob>` | `
-???= headVolume or headMix
 
+???= headVolume or headMix
 
 
 

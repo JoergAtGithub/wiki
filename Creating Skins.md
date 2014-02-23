@@ -2482,18 +2482,19 @@ Defines connected Channel (Master), performed action (Y=headVolume or headMix)
 
 ### Channel filter and gain
 
-|                                                                                                                                                                                                                 |                                                                                                                                                                              |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                     |                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<Knob>
     <TooltipId>???</TooltipId>
     <NumberStates>X</NumberStates>
     <Path>knob_rotary_s%1.png</Path>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[X],Y</ConfigKey>
+        <ConfigKey>[X],Y</ConfigKey>
     </Connection>
 </Knob>
 ` | `
+
 ???= pregain or filterHigh or filterMid or filterLow
 
 
@@ -2501,6 +2502,7 @@ Defines connected Channel (Master), performed action (Y=headVolume or headMix)
 
 Defines connected Channel (X = 1 or 2), 
 performed action (Y= pregain or filterHigh or filterMid or filterLow)
+
 
 ` |
 

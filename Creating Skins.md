@@ -2375,7 +2375,7 @@ Button visible when active
 
 
 
-Defines connected Channel (X = 1 or 2) , performed action (flanger)
+Defines connected Channel (X = 1 .. 4) , performed action (flanger)
 
 
 ` |

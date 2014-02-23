@@ -1599,30 +1599,38 @@ Defines connected Channel (X = 1 .. 4), performed action (cue_set)
 
 ### Cue
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>cue_default_cue_gotoandstop</TooltipId>
-    <NumberStates>1</NumberStates>
+    <NumberStates>2</NumberStates>
     <State>
-    <Number>0</Number>
-    <Pressed>pressed.png</Pressed>
-    <Unpressed>unpressed.png</Unpressed>
+        <Number>0</Number>
+        <Pressed>pressed.png</Pressed>
+        <Unpressed>unpressed.png</Unpressed>
     </State>
     <State>
+        <Number>1</Number>
+        <Pressed>pressed.png</Pressed>
+        <Unpressed>unpressed.png</Unpressed>
+    </State>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[ChannelX],cue_default</ConfigKey>
-    <EmitOnDownPress>true</EmitOnDownPress>
-    <ButtonState>LeftButton</ButtonState>
+        <ConfigKey>[ChannelX],cue_default</ConfigKey>
+        <EmitOnDownPress>true</EmitOnDownPress>
+        <ButtonState>LeftButton</ButtonState>
     </Connection>
     <Connection>
-    <ConfigKey>[ChannelX],cue_gotoandstop</ConfigKey>
-    <EmitOnDownPress>true</EmitOnDownPress>
-    <ButtonState>RightButton</ButtonState>
+        <ConfigKey>[ChannelX],cue_gotoandstop</ConfigKey>
+        <EmitOnDownPress>true</EmitOnDownPress>
+        <ButtonState>RightButton</ButtonState>
+    </Connection>
+    <Connection>
+        <ConfigKey>[ChannelX],cue_indicator</ConfigKey>
     </Connection>
 </PushButton> 
 ` | `
+
 Go to and play (while playing), Set cue point (while stopped), Go to and stop (right-click)
 
 
@@ -1633,14 +1641,22 @@ Go to and play (while playing), Set cue point (while stopped), Go to and stop (r
 
 
 
-Defines connected Channel (X = 1 or 2) , performed action (cue_default)
+
+
+
+
+Defines connected Channel (X = 1 .. 2) , performed action (cue_default)
 Defines if action is performed on down-click on element (true or false)
 Which mouse button must be clicked so the action is performed 
 Hint: Default cue behavior can be changed in Mixxx preferences
 
-Defines connected Channel (X = 1 or 2) , performed action (cue_gotoandstop)
+Defines connected Channel (X = 1 .. 2) , performed action (cue_gotoandstop)
 Defines if action is performed on down-click on element (true or false)
 Which mouse button must be clicked so the action is performed 
+
+
+
+
 
 
 ` |

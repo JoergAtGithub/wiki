@@ -2288,32 +2288,33 @@ Defines connected Channel (X = 1 or 2) , performed action
 **Deprecated in Mixxx 1.9.0, use the [Repeat](creating_skins#repeat)
 button instead**
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <Tooltips></Tooltips>
     <NumberStates>3</NumberStates>
     <State>
-    <Number>0</Number>
-    <Pressed>stop.png</Pressed>
-    <Unpressed>stop.png</Unpressed>
+        <Number>0</Number>
+        <Pressed>stop.png</Pressed>
+        <Unpressed>stop.png</Unpressed>
     </State>
     <State>
-    <Number>1</Number>
-    <Pressed>next.png</Pressed>
-    <Unpressed>next.png</Unpressed>
+        <Number>1</Number>
+        <Pressed>next.png</Pressed>
+        <Unpressed>next.png</Unpressed>
     </State>
     <State>
-    <Number>2</Number>
-    <Pressed>loop.png</Pressed>
-    <Unpressed>loop.png</Unpressed>
+        <Number>2</Number>
+        <Pressed>loop.png</Pressed>
+        <Unpressed>loop.png</Unpressed>
     </State>
     <Pos>X,Y</Pos>
     <Connection>
-    <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
+        <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
     </Connection>
 </PushButton>
 ` | `
+
 End of track mode control (see manual)
 
 
@@ -2333,7 +2334,8 @@ Button visible in LOOP mode
 
 
 
-Defines connected Channel (X = 1 or 2) , performed action (TrackEndMode)
+Defines connected Channel (X = 1 .. 2) , performed action (TrackEndMode)
+
 
 
 ` |

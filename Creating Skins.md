@@ -424,6 +424,8 @@ editor](#tools) and get started :-)
  * ''<BindProperty>'' does not persist the control value in ''mixxx.cfg'' by default.
  * New syntax for requesting a control to persist in ''mixxx.cfg'': ''<ConfigKey persist="true"></ConfigKey>''.
  * Added support for specifying style in a separate file: ''<Style src="skin:style.qss"/>''
+ * <EmitOnDownPress> is calculated from the connected control and can be omitted
+ * start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml    
 ```
 
 ### Mixxx 1.11.0

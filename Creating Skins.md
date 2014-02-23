@@ -1340,8 +1340,8 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### Channel Volume
 
-|                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<SliderComposed>
     <TooltipId>channel_volume</TooltipId>
     <Handle>handle.png</Handle>
@@ -1349,10 +1349,11 @@ Must be same value as under <Channel> above, (X = 1 or 2)
     <Pos>X,Y</Pos>
     <Horizontal>false</Horizontal>
     <Connection>
-    <ConfigKey>[ChannelX],volume</ConfigKey>
-    <EmitOnDownPress>false</EmitOnDownPress>
+        <ConfigKey>[ChannelX],volume</ConfigKey>
+        <EmitOnDownPress>false</EmitOnDownPress>
     </Connection>
 </SliderComposed>` | `
+
 
 Slider image (knob) which can de dragged with mouse
 Slider background image the <Handle> moves up and down on
@@ -1360,6 +1361,7 @@ Slider background image the <Handle> moves up and down on
 Orientation (false or true, means vertical or horizontal)
 
 Defines connected Channel (X = 1 or 2 )
+Can be omitted in Mixxx >= 1.12
 
 
 

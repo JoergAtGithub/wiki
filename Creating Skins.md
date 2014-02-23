@@ -1452,8 +1452,8 @@ be triggered when that particular mouse button (left or right) is down.
 
 ### Recording
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                   |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>???</TooltipId>
     <Style>...</Style>
@@ -1461,38 +1461,71 @@ be triggered when that particular mouse button (left or right) is down.
     <LeftClickIsPushButton>true</LeftClickIsPushButton>
     <RightClickIsPushButton>true</RightClickIsPushButton>
     <State>
-    <!-- RECORD OFF -->
-    <Number>0</Number>
-    <Pressed>btn_record_over.png</Pressed>
-    <Unpressed>btn_record.png</Unpressed>
+        <!-- RECORD OFF -->
+        <Number>0</Number>
+        <Pressed>btn_record_over.png</Pressed>
+        <Unpressed>btn_record.png</Unpressed>
     </State>
     <State>
-    <!-- RECORD READY-->
-    <Number>1</Number>
-    <Pressed>btn_record_over.png</Pressed>
-    <Unpressed>btn_record_over.png</Unpressed>
+        <!-- RECORD READY-->
+        <Number>1</Number>
+        <Pressed>btn_record_over.png</Pressed>
+        <Unpressed>btn_record_over.png</Unpressed>
     </State>
     <State>
-    <!-- RECORD ON-->
-    <Number>2</Number>
-    <Pressed>btn_record_over.png</Pressed>
-    <Unpressed>btn_record_over.png</Unpressed>
+        <!-- RECORD ON-->
+        <Number>2</Number>
+        <Pressed>btn_record_over.png</Pressed>
+        <Unpressed>btn_record_over.png</Unpressed>
     </State>
     <Pos>199,114</Pos>
     <Connection>
-    <ConfigKey>[Recording],toggle_recording</ConfigKey>
-    <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-    <ButtonState>LeftButton</ButtonState>
-    <ConnectValueToWidget>false</ConnectValueToWidget>
+        <ConfigKey>[Recording],toggle_recording</ConfigKey>
+        <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+        <ButtonState>LeftButton</ButtonState>
+        <ConnectValueToWidget>false</ConnectValueToWidget>
     </Connection>
     <Connection>
-    <ConfigKey>[Recording],status</ConfigKey>
-    <ConnectValueFromWidget>false</ConnectValueFromWidget>
+        <ConfigKey>[Recording],status</ConfigKey>
+        <ConnectValueFromWidget>false</ConnectValueFromWidget>
     </Connection>
 </PushButton>
 ` | `New in Mixxx 1.11
 
 Button that allows toggle of recording and notifies "[Recording],status" of status changes.
+Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 1.12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Can be omitted in Mixxx >= 1.12
+
+Can be omitted in Mixxx >= 1.12
+
+The latest no button connection is the Display connection 
+
+Can be omitted in Mixxx >= 1.12
+
+
 ` |
 
 ### Play

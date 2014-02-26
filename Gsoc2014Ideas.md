@@ -65,40 +65,6 @@ on what control to map a message to. Another very useful exercise is
 checking out the various commercial DJ software offerings out there and
 examining how they allow users to map MIDI controllers.
 
-## Enhanced Platform Integration
-
-Thanks in large part to Qt and a number of other cross-platform
-libraries, Mixxx runs on Windows, Mac OS X, and Linux. Although we're
-able to provide a *consistent* user experience on all three platforms,
-we'd like to provide a better *integrated* experience. We want to take
-advantage of the unique features that each platform provides, like the
-new fullscreen mode in OS X Lion or the new jump list in Windows 7 or
-gvfs in Linux, so that Mixxx feels as *native* as possible.
-
-Qt already provides a [small number of platform integration
-features](http://qt-project.org/doc/qt-4.8/exportedfunctions.html), but
-to take advantage of other newer features that Qt doesn't have,
-platform-specific code for Windows, Mac OS X und Linux must be added to
-Mixxx. This project will involve figuring out which platform-specific
-features in Windows 7, Windows 8, Mac OS X Lion, and Mac OS X Mountain
-Lion would be the most useful for Mixxx users, and implementing several
-of those. (We don't expect students to have access to both Linux and
-Windows and Mac OS X, so a proposal focusing on one particular OS is OK,
-but an awareness of all platforms is a plus.)
-
-This project could also include more basic polishing tasks, so if
-there's some little inconsistencies about Mixxx that have been bugging
-you, here's your chance to fix them.
-
-For ideas, check out:
-
-  - [Q7Goodies](http://www.strixcode.com/q7goodies/) 
-  - [Features new to Windows 7
-    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_7)
-  - [Features new to Windows 8
-    (Wikipedia)](http://en.wikipedia.org/wiki/Features_new_to_Windows_8)
-  - <https://codereview.qt-project.org/#change,48152>
-
 ## Advanced Track Management / Organization Tools
 
 Today, Mixxx provides DJs with limited tools for organizing their

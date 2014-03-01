@@ -140,8 +140,17 @@ reading the compiler commands, but it is safer to do the job manual:
     and Symbols -\> Fill in tabs "Includes" and "Symbols".
   - Add the src/ folder in your workspace, and select "add to all
     languages" and "add to all configurations."
-  - Also add /usr/include
-  - Also add /usr/include/qt4/Qt
+  - Add the lib/ folder. Again, add to all languages and configurations.
+  - Also add /usr/include as a filesystem path.
+  - Also add:
+  - /usr/include/qt5/Qt (if you are using qt4, these might be slightly
+    different on your system)
+  - /usr/include/qt5/QtCore
+  - /usr/include/qt5/QtWidgets
+  - /usr/include/qt5/QtGui
+  - /usr/include/qt5/QtTest
+  - /usr/include/qt5/QtXml
+  - /usr/include/qt5/QtSvg
 
 <!-- end list -->
 

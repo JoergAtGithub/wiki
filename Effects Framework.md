@@ -468,6 +468,91 @@ github](https://github.com/rryan/mixxx/tree/features_effects)**
 
   - RJ Ryan
 
+## Next Steps
+
+Fist draft by Daniel Schürmann (please edit)
+
+It is important to merge the current merge request
+[\#180](https://github.com/mixxxdj/mixxx/pull/180) soon, that it is
+included in all alpha tests.
+
+Once it is merged we must assume that the users are starting to build
+skins and midi mappings. So it is required that the CO interface is
+somehow stable. To achieve this, we have to think ahead what might be
+the next steps. I have done this as confusing and sometimes wrong
+comments at the merge request. This is now the clean up and breakdown to
+steps. Step 1. is intended to be done before merge
+
+1\. Step: **Ready for skinning**
+
+  - Rename "EffectChain" -\> "EffectUnit" This way we free the name
+    EffectChain and are able to use it later for the whole chain. Other
+    tools also use "EffectProcessor" for it, but this sounds more like a
+    single Effect so lets stock with EffectUnit
+  - Add a second EffectRag. This seems to be common on all controllers
+  - rename \[EffectRack1\_EffectChainN\],parameter to
+    \[EffectRack1\_EffectUnitN\],super
+  - Name of \[EffectRack1\_EffectUnitN\],mix can be unchanged, because
+    it is "dry/wet" in case of insert effect and "level" in case of a
+    send effect 
+  - Add a dynamic label to "super" and "mix" like for the parameter
+    knops. That way the name can be controlled by the "EffectUnit" 
+  - Merge all effect parameters to the EffectUnit. Best in a
+    \[EffectRack1\_EffectUnitN\],parameterN schema if possible. This way
+    the EffectUnit has full control how the Parameters are presented in
+    case of more than one underlying effect. 
+  - Remove the "value" and "value\_normalized" control. These two atomic
+    values might be a source of a race condition and we have already
+    working solution for it in Mixxx see e.g. "rate". If this does not
+    fulfill all requirements, lets go for a general solution. 
+  - rename \[EffectRack1\_EffectChainN\],channel\_%1 to
+    \[EffectRack1\_EffectSlotN\]group\_%1\_enable, move it to EffectSlot
+    and make it a power window button. 
+  - Revert the removement of the filter effect. It is required for
+    controllers with a dedicated filter knob. 
+
+2\. Step: **ready for MIDI mapping**
+
+  - Allow to use both modes of a Tractor controller, this covers all
+    models, that we have found in the wild
+  - Add following controls: 
+  - \[EffectRack1\],dry\_wet" 
+  - \[EffectRack1\],enable"
+  - \[EffectRack1\],super
+  - \[EffectRack1\],parameter1
+  - \[EffectRack1\],parameter2
+  - \[EffectRack1\],parameter3
+  - \[EffectRack1\],parameter4
+  - \[EffectRack1\],focus\_slot
+  - \[EffectRack1\_Slot1\],focus
+  - \[EffectRack1\_Slot1\],enable
+  - \[EffectRack1\_Slot1\],mix
+  - \[EffectRack1\_Slot1\],super
+  - \[EffectRack1\_Slot1\],parameter1
+  - \[EffectRack1\_Slot1\],parameter2
+  - \[EffectRack1\_Slot1\],parameter3
+  - \[EffectRack1\_Slot1\],parameter4
+
+3\. Step: **Performance tweaks**
+
+  - Prevent most mallocs of group-state in the engine by pre-prepping
+    effects with all registered groups upon instantiation.
+  - clean up the code similar to
+    [drawing](https://drive.google.com/file/d/0B487gWGL6DsXNDR6bjRGa3R0WHc/edit?usp=sharing)
+  - Try to replace the blocking command queue by a atomic approach 
+
+4\. Step: **New features**
+
+  - load/save to XML
+  - Support non-numeric (e.g. enum) parameters.
+  - Add Deck feature collectors and provide features to effects.
+  - Rack serialize/deserialize buttons.
+  - Parameter linking. 
+  - Add a EQ as effect 
+  - Convert the standard Deck EQ and Filter into a effectRack. This will
+    offer addition flexibility especially for Midi controllers without
+    dedicated effect controls. 
+
 ## Comments
 
 ### Lambolico's ideas:

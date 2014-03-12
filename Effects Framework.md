@@ -489,27 +489,77 @@ steps. Step 1. is intended to be done before merge
     EffectChain and are able to use it later for the whole chain. Other
     tools also use "EffectProcessor" for it, but this sounds more like a
     single Effect so lets stock with EffectUnit
-  - Add a second EffectRag. This seems to be common on all controllers
+  - **rryan:** Effect unit will probably be what we describe the effect
+    chain slots as to users so I'm fine with calling the GUI place you
+    load effect chains into effect units.
+  - **rryan:** I am against changing the name of EffectChain to
+    EffectUnit if that is what you are proposing. An effect unit is what
+    you load an effect chain into (what is described in the code as an
+    effect chain slot). An EffectChain is the user-visible name I would
+    like to describe our effect solution as to users in Mixxx Future.
+    They will be a user-editable thing that you can save to XML and
+    share with friends. For Mixxx 1.12.0 we will not expose the name
+    "Effect Chain" and will just call them effects.
+  - Add a second EffectRack. This seems to be common on all controllers
+  - **rryan:** An effect rack is just a grouping for the 4 effect units.
+    As I have mentioned, I think we are mixing terminology here.
+    Controllers commonly have 2 **effect units**, not 2 racks. A rack
+    describes the group of effect units.
   - rename \[EffectRack1\_EffectChainN\],parameter to
     \[EffectRack1\_EffectUnitN\],super
-  - Name of \[EffectRack1\_EffectUnitN\],mix can be unchanged, because
+  - **rryan**: OK, but we have not decided on the marketing name yet.
+    Superknob is already used by some other software. That may be a pro
+    for using it since users will already be familiar with the concept.
+    Serato-style effects units on DJ controllers label this knob
+    "parameter". Also if we generalize this into multiple parameters
+    then it would be natural for an effect chain to have multiple
+    super-parameters which individual effect parameters can link to. 
+  - ~~Name of \[EffectRack1\_EffectUnitN\],mix can be unchanged, because
     it is "dry/wet" in case of insert effect and "level" in case of a
-    send effect 
+    send effect~~
   - Add a dynamic label to "super" and "mix" like for the parameter
     knops. That way the name can be controlled by the "EffectUnit" 
+  - **rryan**: Can you explain what this would be in practice? Is it so
+    that a user can customize what the superknob is called? In Mixxx
+    1.12.0 I don't think this will be necessary.
   - Merge all effect parameters to the EffectUnit. Best in a
     \[EffectRack1\_EffectUnitN\],parameterN schema if possible. This way
     the EffectUnit has full control how the Parameters are presented in
     case of more than one underlying effect. 
+  - **rryan**: Strongly disagree. User should have control here and this
+    would make it impossible to know if you are connecting to the first
+    parameter of the 2nd effect or the last parameter of the first
+    effect. Because by convention the first parameter of an effect is
+    the most significant, advanced users care about which parameter in
+    particular they are connecting to. We could introduce a set of
+    virtualized parameters for effect units that dynamically re-map to a
+    sub-effect's parameter. This seems like unnecessary complexity when
+    a script writer already has all they need to do this and we will not
+    use it in our skins.
   - Remove the "value" and "value\_normalized" control. These two atomic
     values might be a source of a race condition and we have already
     working solution for it in Mixxx see e.g. "rate". If this does not
     fulfill all requirements, lets go for a general solution. 
-  - rename \[EffectRack1\_EffectChainN\],channel\_%1 to
-    \[EffectRack1\_EffectSlotN\]group\_%1\_enable, move it to EffectSlot
-    and make it a power window button. 
+  - **rryan**: It's true this duplicates logic that potmeter already
+    implements but not all effects have potmeter like parameters so we
+    can't just use ControlPotmeter. I would be for adding a custom CO
+    that accomplishes the dynamic nature of effect parameters (the
+    behavior changes based on the loaded effect) but as we have
+    discussed before, you prefer that CO behavior classes do not change
+    on the fly :P. 
+  - rename channel\_%1 to group\_%1\_enable
+  - **rryan**: works for me
+  - Make group enable a power window button 
+  - **rryan**: works for me
+  - move group enable COs from the EffectUnit to the EffectSlot and make
+    it a power window button. 
+  - **rryan**: Disagree -- group enable should be on the effect unit
+    level. This is how all Traktor-style and Serato-style effect units
+    work. You can't take an individual effect in a Traktor 3-way unit
+    and apply it to a different channel.
   - Revert the removement of the filter effect. It is required for
-    controllers with a dedicated filter knob. 
+    controllers with a dedicated filter knob.
+  - **rryan**: See comments in the PR. I think this should be removed.
 
 2\. Step: **ready for MIDI mapping**
 

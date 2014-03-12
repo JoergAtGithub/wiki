@@ -563,25 +563,47 @@ steps. Step 1. is intended to be done before merge
 
 2\. Step: **ready for MIDI mapping**
 
-  - Allow to use both modes of a Tractor controller, this covers all
+  - Allow to use both modes of a Traktor controller, this covers all
     models, that we have found in the wild
   - Add following controls: 
+  - **rryan**: In every subsequent line I think what you are describing
+    by EffectRack1 is actually EffectRack1\_EffectUnitN. As I mentioned,
+    EffectRack1 is simply a future-proofing for when we inevitably will
+    want multiple racks. An effect rack is simply a way to group effect
+    units together. Where an effect unit is what you load a chain into. 
   - \[EffectRack1\],dry\_wet" 
   - \[EffectRack1\],enable"
   - \[EffectRack1\],super
-  - \[EffectRack1\],parameter1
-  - \[EffectRack1\],parameter2
-  - \[EffectRack1\],parameter3
-  - \[EffectRack1\],parameter4
-  - \[EffectRack1\],focus\_slot
-  - \[EffectRack1\_Slot1\],focus
-  - \[EffectRack1\_Slot1\],enable
-  - \[EffectRack1\_Slot1\],mix
-  - \[EffectRack1\_Slot1\],super
-  - \[EffectRack1\_Slot1\],parameter1
-  - \[EffectRack1\_Slot1\],parameter2
-  - \[EffectRack1\_Slot1\],parameter3
-  - \[EffectRack1\_Slot1\],parameter4
+
+<!-- end list -->
+
+``` 
+    * **rryan**: I can't tell if you mean this, but if you want to add a super-super knob, a superknob that controls all the effect unit superknobs, then this is an interesting idea but not something we should have in Mixxx 1.12.0. Serato has this feature I believe. 
+* [EffectRack1],parameter1
+* [EffectRack1],parameter2
+* [EffectRack1],parameter3
+* [EffectRack1],parameter4
+    * **rryan**: Why just 4? Or did you mean parameterN?
+    * **rryan**: Do you mean by this that an effect unit should have parameters in addition to the super knob? The super knob is like a single parameter that the unit has. If anything, I think there should be N superknobs, each of which can be linked to sub-effect's parameters.
+* [EffectRack1],focus_slot
+* [EffectRack1_Slot1],focus
+    * **rryan**: It's too late to introduce a concept of focus. This may be a nice addition in the future but for now MIDI controllers with 2 effect units will just have to be stuck with controlling 2 of Mixxx's effect units. 
+* [EffectRack1_Slot1],enable
+* [EffectRack1_Slot1],mix
+* [EffectRack1_Slot1],super
+    * **rryan**: Why does an individual effect have a superknob?
+* [EffectRack1_Slot1],parameter1
+* [EffectRack1_Slot1],parameter2
+* [EffectRack1_Slot1],parameter3
+* [EffectRack1_Slot1],parameter4
+    * * **rryan**: Why just 4? Or did you mean parameterN?
+```
+
+**rryan**: I don't think I understand what you are proposing in this
+section. Could you elaborate? BTW a Traktor 3-way unit will not be
+supported in Mixxx 1.12.0 - we only have basic effects. In Mixxx Future
+we will support multiple effects per chain and provide a GUI widget for
+changing the effects in a loaded chain on the fly a-la Traktor.
 
 3\. Step: **Performance tweaks**
 
@@ -589,19 +611,35 @@ steps. Step 1. is intended to be done before merge
     effects with all registered groups upon instantiation.
   - clean up the code similar to
     [drawing](https://drive.google.com/file/d/0B487gWGL6DsXNDR6bjRGa3R0WHc/edit?usp=sharing)
-  - Try to replace the blocking command queue by a atomic approach 
+  - **rryan**: The code already matches the diagram. As far as I can
+    tell you would like a bunch of class renames:
+
+<!-- end list -->
+
+``` 
+    * EffectChainSlot -> EffectUnitSlot
+    * EffectChain -> EffectUnit
+    * EffectsManager -> EffectFactory 
+    * EffectChainManager -> EffectUnitManager
+    * EngineEffectChain -> EngineEffectUnit
+* Personally, I don't see the point of this busy work. EffectChain is an accurate name for what it is -- it's a chain of fully wet effects applied in order. EffectUnit is what you load an effect chain into so it doesn't make sense to rename EffectChain to EffectUnit. Beyond that, I think effect unit is just a user-facing word. I like the parallelism of EffectChain -> EffectChainSlot so I want to keep that as it aids in code readability.
+* Try to replace the blocking command queue by a atomic approach 
+* **rryan**: The request/response FIFO is non-blocking. I commented in the PR as to why it is useful. 
+```
 
 4\. Step: **New features**
 
-  - load/save to XML
+  - load/save to XML **release blocking**
   - Support non-numeric (e.g. enum) parameters.
   - Add Deck feature collectors and provide features to effects.
   - Rack serialize/deserialize buttons.
-  - Parameter linking. 
+  - Parameter linking. **release blocking** 
   - Add a EQ as effect 
-  - Convert the standard Deck EQ and Filter into a effectRack. This will
-    offer addition flexibility especially for Midi controllers without
-    dedicated effect controls. 
+  - Convert the standard Deck EQ and Filter into a effect unit. This
+    will offer addition flexibility especially for Midi controllers
+    without dedicated effect controls. 
+  - **rryan**: see comments in the PR about this. I agree in theory --
+    not sure if necessary for 1.12.0. 
 
 ## Comments
 

@@ -81,6 +81,29 @@ Of course if you do have direct experience with the tools we use, you
 should definitely tell us about that too. The main external tools we
 rely on are `Qt`, `scons`, `portaudio` and `git`.
 
+## Our expectations from students
+
+#### Communication
+
+  - write us at least once a week a short report
+  - commit early commit often and push to github so that we can see it
+  - actively work on your project plan and communicate with us during
+    the community bonding period
+  - Communicate every working day with your mentor. Just say "hello" If
+    you like. It can be via email,IRC or github comments.
+  - If there are good reasons, for not communicating please announce
+    them early.
+  - If you don't communicate with us regularly we will fail you.
+
+#### Midterm and Final evaluations
+
+  - set a realistic goal for mid-term. If you fail to meet your own goal
+    we are more likely to fail you in the evaluations.
+  - have some code merged into master at the end of the summer to pass
+    the final evaluation.
+  - The later is a hard requirement so make sure that your time plan
+    includes it.
+
 ## How Do I Write A Great Application?
 
 Firstly, think about your choice of project carefully, you're going to
@@ -101,7 +124,62 @@ completing the project and delivering the functionality to our users. If
 you aren't sure about anything, get in touch with us, we're happy to
 advise you.
 
-Some other (entirely optional) things you might consider doing:
+#### Splitting up your project into smaller pieces
+
+We require our students to merge some of their code into our master
+branch before the end of the summer. The best way to achieve this is to
+divide your project into small self contained subprojects and plan to
+merge at least one of them around midterm.
+
+A good example for this is 'Improve our track managment':
+
+``` 
+ - handle property changes for a selection of tracks
+ - add a custom editor for cue points
+ - add an editor for the BPM-grid
+ - build an editor to comment time slices of a track
+```
+
+Another approach is to analyze what the absolute minimal requirements
+are and then adding features on top of that. eg 'implement cover art in
+mixxx':
+
+``` 
+ - handle reading/storing covers in the database and application
+ - Show the cover next to the track name in a deck
+ - display the covers in the library view
+ - add picture flow
+```
+
+During your summer you'll encounter bugs in mixxx or find code that can
+be refactored to help you implement your ideas. You can also immediately
+fix them in the master branch and help us all out. This has several
+advantages. All your pull request will only concentrate on specific
+features and are much better to review. And you'll also get direct
+feedback from other devs and user during the summer.
+
+Since this is a hard requirement we as mentors will also have an eye on
+that and check if your proposal incorporates it and also warn you ahead
+of time during the summer if we see that you might not make it.
+Communicating with us on a regular basis is vital for that though.
+
+#### Having good time estimates
+
+To get a feeling for the code and get some experience with our code you
+can go and tackle some of our easy bugs. Look at the code that you want
+to change, check if it follows our coding guidelines. Do some research
+on the API's you want to use, plan what classes you will add and how
+their public API will look. Write down your algorithms in pseudo code.
+The better your research is and the better you plan ahead the easier it
+will be to judge how long a given task will take. For your time
+estimates you should also consider that you can do less stuff during
+exams and try to be a bit conservative. If you have never done anything
+like GSoC before you will tend to underestimate the time to complete a
+task. I know that giving these estimates is not easy and that also
+professionals have problems with it. Having a good plan, knowing its
+weak and strong points are can help a lot.
+
+#### Some other (entirely optional) things you might consider doing
 
 1.  Why not introduce yourself on the mailing list? Even just to say
     hello, your name and what you're applying to work on

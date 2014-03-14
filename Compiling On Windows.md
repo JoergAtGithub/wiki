@@ -33,6 +33,9 @@ referred to as MSVC in discussions.
     windows
     client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
     (featuring a unix like command line)
+  - ProtoBuf Compiler
+    [protoc-2.4.1-win32.zip](https://code.google.com/p/protobuf/downloads/detail?name=protoc-2.4.1-win32.zip&can=2&q=)
+    place protoc.exe in your path somewhere.
 
 <!-- end list -->
 

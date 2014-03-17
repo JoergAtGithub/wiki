@@ -333,7 +333,7 @@ to the mixxx directory and run:
 
 ## 5\. Create an XCode project (optional)
 
-test If you want to work on Mixxx with XCode for an IDE:
+If you want to work on Mixxx with XCode for an IDE:
 
 This is taken from the Scons site, who have a pretty good description of
 how to get a scons project up and running in XCode:

@@ -265,7 +265,7 @@ EffectChain's ID.
 |  | EffectParameter Controls                           |  |                        |  |                    |  |                                                                                                       |  |
 |  | \[Group\]                                          |  | Key/Control            |  | Range              |  | What it does                                                                                          |  |
 |  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | enabled                |  | binary, read-only  |  | Whether or not the Kth parameter is enabled.                                                          |  |
-|  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | linked                 |  | binary             |  | Whether or not the Kth parameter is linked to the EffectChain superknob.                              |  |
+|  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | link\_type             |  | enum               |  | The link type of the Kth parameter to the EffectChain's superknob.                                    |  |
 |  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | value\_type            |  | integer, read-only |  | The type of the Kth parameter value. See the Parameter Value Types table.                             |  |
 |  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | value\_min             |  | double             |  | The minimum configured value of the Kth parameter.                                                    |  |
 |  | \[EffectRack1\_EffectChainN\_EffectM\_ParameterK\] |  | value\_max             |  | double             |  | The maximum configured value of the Kth parameter.                                                    |  |
@@ -311,6 +311,19 @@ parameterK\_value controls will be ignored.
 | Boolean              | 0             | Set only to values of 0 (false) or 1 (true) |
 | Integer              | 1             | Set to any integral value                   |
 | Double               | 2             | Set to any double value.                    |
+
+#### Linking Values
+
+Effect parameters can be linked to their EffectChain's super-parameters.
+This linkage can be user-controlled by changing the `link_type` control
+of the EffectParameter slot. The default link type is loaded from the
+effect parameter's manifest's `linkHint` property.
+
+| Link Type | Integer Value | Intepretation                         |
+| --------- | ------------- | ------------------------------------- |
+| None      | 0             | No linking.                           |
+| Linked    | 1             | Linked in a linear relation.          |
+| Inverse   | 2             | Linked in an inverse-linear relation. |
 
 ### User Interface
 

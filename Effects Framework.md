@@ -194,6 +194,7 @@ instance values for each parameter described in the EffectManifest.
 | controlHint                | A hint describing the most logical control type for the parameter (potmeter, log-potmeter, toggle, slider, etc.) |
 | semanticHint               | A hint describing the semantic type of the value (pitch, samples, time, duration)                                |
 | unitsHint                  | A hint describing the units of the value (time, hertz, fraction of samplerate)                                   |
+| linkHint                   | A hint describing the default linking of the parameter to the super-parameters                                   |
 
 **NOTE:** The hints are still under development. Please give feedback\!
 

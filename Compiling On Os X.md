@@ -91,6 +91,10 @@ the following Homebrew formulas:
 
 <!-- end list -->
 
+``` 
+    brew install http://tuohela.net/irc/vamp-plugin-sdk.rb http://tuohela.net/irc/rubberband.rb
+```
+
   - **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3
     and AAC codec. If you don't want to use the OSX versions of these
     codecs you can build the codecs into Mixxx directly. To do this, you

@@ -36,8 +36,7 @@ following ways:
 1.  Send an email to our public developers' mailing list:
     [mixxx-devel](http://lists.sourceforge.net/lists/listinfo/mixxx-devel)
 2.  Contact our GSoC administrators directly via email: 
-    1.  RJ Ryan (rryan -A-T- mixxx.org)
-    2.  Albert Santoni (alberts -A-T- mixxx.org)
+    1.  gsoc2014-mentors -A-T- mixxx.org
 3.  Hop on our IRC channel (\#mixxx on Freenode) and see if our mentors
     are around (bkgood, asantoni, rryan). 
     1.  We encourage idling in our IRC channel to get acquainted with

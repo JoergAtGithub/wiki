@@ -87,8 +87,8 @@ Mixxx forum for support and the latest updates:
 | --------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | \#              | KEY                    | FUNCTION                                                                                                              |
 | 01              | Pitch Slider           | Adjusts playback speed.                                                                                               |
-| 02              | Auto Tempo             | Trigger beatsync                                                                                                      |
-|                 | Shift + Auto Tempo     | Toggle quantize                                                                                                       |
+| 02              | Auto Tempo             | Toggle quantize (1.11.0: Trigger beatsync)                                                                            |
+|                 | Shift + Auto Tempo     | Trigger beatsync (1.11.0: Toggle quantize)                                                                            |
 |                 | Scroll + Auto Tempo    | Tap BPM. When taped repeatedly, adjust the tracks BPM to the tapped BPM.                                              |
 | 03              | Keylock                | Trigger beatsync                                                                                                      |
 |                 | Shift + Keylock        | Reset pitch to 0.00% (quartz)                                                                                         |

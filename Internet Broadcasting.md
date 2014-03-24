@@ -69,6 +69,8 @@ To activate MP3 streaming on Windows, the following steps are necessary:
     manipulating archives like the free [7zip](http://www.7-zip.org).
 3.  Copy *libmp3lame.dll* to the location you have installed Mixxx,
     probably C:\\Program Files\\Mixxx\\
+4.  If you are running Mixxx 1.11 or earlier, you must rename
+    *libmp3lame.dll* to *lame\_enc.dll*.
 
 **Windows Troubleshooting**
 

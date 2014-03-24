@@ -61,15 +61,21 @@ To activate MP3 streaming on Windows, the following steps are necessary:
 
 1.  Download LAME libmp3lame binaries from
     <http://www.rarewares.org/mp3-lame-libraries.php>. The download page
-    includes versions for 32-bit and 64-bit Windows.
+    includes versions for 32-bit and 64-bit Windows. Make sure the
+    version you download matches the version of Mixxx that you use, not
+    the version of Windows.
 2.  Unpack the downloaded ZIP archive. You need a utility for
     manipulating archives like the free [7zip](http://www.7-zip.org).
-3.  Copy *libmp3lame.dll* to the location you have installed Mixxx.
-4.  Important: You have to **rename** *libmp3lame.dll* to
-    *lame\_enc.dll*.
+3.  Copy *libmp3lame.dll* to the location you have installed Mixxx,
+    probably C:\\Program Files\\Mixxx\\
 
-Make sure the version of LAME you use (x86=32-bit vs. x64=64-bit)
-matches the version of Mixxx you use.
+**Troubleshooting**
+
+Double check that the version of LAME you use ("x86" = 32-bit vs. "x64"
+= 64-bit) matches the version of **Mixxx** you use.
+
+Make sure you put the DLL in the same folder that contains the
+installation of Mixxx you are using.
 
 Please note that Audacity and other web sites provide `lame` binaries
 too. **DO NOT USE THESE VERSIONS.** If you do, Mixxx will show an error

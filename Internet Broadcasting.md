@@ -57,7 +57,7 @@ distribution the package might be slightly named different such as
 
 ### Windows
 
-To activate MP3 streaming on Windows, the following steps are necessary:
+To enable MP3 streaming on Windows, you must follow these instructions:
 
 1.  Download LAME libmp3lame binaries from
     <http://www.rarewares.org/mp3-lame-libraries.php>. The download page
@@ -65,8 +65,8 @@ To activate MP3 streaming on Windows, the following steps are necessary:
     download matches the version of Mixxx that you use, not the version
     of Windows. If you are on 64bit Windows but are using 32bit Mixxx,
     you need the 32bit ("x86") version of the library.
-2.  Unpack the downloaded ZIP archive. You need a utility for
-    manipulating archives like the free [7zip](http://www.7-zip.org).
+2.  Unpack the downloaded ZIP archive. You may need to install a utility
+    for extracting archives like the free [7zip](http://www.7-zip.org).
 3.  Copy *libmp3lame.dll* to the location you have installed Mixxx,
     probably C:\\Program Files\\Mixxx\\
 4.  If you are running Mixxx 1.11 or earlier, you **must** also rename

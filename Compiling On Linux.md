@@ -95,10 +95,15 @@ If you have two single-core HT CPUs, do: **`scons -j2`** even though it
 looks like you have 4 cores. (You don't. Specifying more threads will
 only slow down the build.)
 
-### Build with m4a file support
+### Build with m4a/AAC file support
 
-If you want to play m4a files, use **`scons faad=1`** flag. Attention:
-You've to install the libraries faad2 and libmp4v2 (or libmp4).
+If you want to play m4a files, use **`scons faad=1`** flag.
+
+Attention: You've to install the libraries faad2 and libmp4v2 (or
+libmp4).
+
+m4a/AAC support will be built as a plugin, which you'll need to load
+with **`--pluginPath`** or by installing Mixxx (see below).
 
 ### Build without shoutcast support
 

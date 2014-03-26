@@ -3,6 +3,8 @@
 Script authors\! Mixxx 1.12.0 is almost here. Here is what you need to
 know to get your controller presets ready.
 
+## MIDI Mapping Additions
+
 ## MIDI Script API Additions
 
 ### getParameter / setParameter

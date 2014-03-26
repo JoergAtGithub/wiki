@@ -111,6 +111,26 @@ Key value definitions can be found here:
 
 ## Effects
 
+Mixxx 1.12.0 has a new modular effects system. There are 4 main
+concepts:
+
+  - Effect Racks
+  - Effect Units
+  - Effects
+  - Parameters
+
+### Effect Racks
+
+There is one effect rack. The rack contains all of the effect units and
+is a handy grouping for quick clearing of all effect units and saving /
+loading of rack presets.
+
+### Effect Units
+
+### Effects
+
+### Effect Parameters
+
 ## Vinyl Control Passthrough
 
 Mixxx now supports passing through audio from vinyl control inputs into
@@ -131,6 +151,15 @@ for input.
     toggle control.
 
 ## Microphones and Auxiliary Inputs
+
+Mixxx previously came with one microphone input, `[Microphone]`. In
+Mixxx 1.12.0 we are adding 3 more microphones and 4 new "Auxiliary"
+inputs for routing audio directly into the mix.
+
+For backwards compatibility, the first microphone's group is
+`[Microphone]`, not `[Microphone1]`. All other microphones are
+`[MicrophoneN]`. Similarly, auxiliary inputs are numbered
+`[AuxiliaryN]`.
 
 ### Microphone Ducking
 

@@ -177,14 +177,30 @@ For backwards compatibility, the first microphone's group is
 
 ### Beat Jump
 
+|  | \[Group\]      |  | Key/Control                       |  | Range       |  | What it does                                                                                        |  | On-screen feedback                           |  |
+|  | -------------- |  | --------------------------------- |  | ----------- |  | --------------------------------------------------------------------------------------------------- |  | -------------------------------------------- |  |
+|  | \[Channel*N*\] |  | beatjump<sup>7</sup>              |  | real number |  | Jump forward by X beats (positive) or backward by X beats (negative).                               |  | Player jumps forward or backward by X beats. |  |
+|  | \[Channel*N*\] |  | beatjump\_X\_forward<sup>7</sup>  |  | binary      |  | Jump forward by X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64  |  | Player jumps forward by X beats.             |  |
+|  | \[Channel*N*\] |  | beatjump\_X\_backward<sup>7</sup> |  | binary      |  | Jump backward by X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64 |  | Player jumps backward by X beats.            |  |
+
 ### Loop Move
 
+|  | \[Group\]      |  | Key/Control                         |  | Range       |  | What it does                                                                                             |  | On-screen feedback                         |  |
+|  | -------------- |  | ----------------------------------- |  | ----------- |  | -------------------------------------------------------------------------------------------------------- |  | ------------------------------------------ |  |
+|  | \[Channel*N*\] |  | loop\_move<sup>7</sup>              |  | real number |  | Move loop forward by X beats (positive) or backward by X beats (negative).                               |  | Loop moves forward or backward by X beats. |  |
+|  | \[Channel*N*\] |  | loop\_move\_X\_forward<sup>7</sup>  |  | binary      |  | Move loop forward by X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64  |  | Loop moves forward by X beats.             |  |
+|  | \[Channel*N*\] |  | loop\_move\_X\_backward<sup>7</sup> |  | binary      |  | Move loop backward by X beats. A control exists for X = 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64 |  | Loop moves backward by X beats.            |  |
+
 ### Reverse Roll / Censor
+
+|  | \[Group\]      |  | Key/Control             |  | Range  |  | What it does                                      |  | On-screen feedback |  |
+|  | -------------- |  | ----------------------- |  | ------ |  | ------------------------------------------------- |  | ------------------ |  |
+|  | \[Channel*N*\] |  | reverseroll<sup>7</sup> |  | binary |  | Enables reverse and slip mode while held (Censor) |  | REV button         |  |
+
+### Cue Changes
 
 ### BPM Adjust Up/Down
 
 ## Library Changes
 
 ### Playlist / Sidebar Selector Knob
-
-### Headline

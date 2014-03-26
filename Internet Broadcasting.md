@@ -98,10 +98,20 @@ To activate MP3 streaming on Mac OSX, the following steps are necessary:
     (OS X 10.5 32-bit) 
 2.  Unpack & install the archive
 
-Another easy way to achieve MP3 streaming is to use
-[MacPorts](http://www.macports.org/) which is a repository manager (like
-apt on Ubuntu) for Open Source software. Having installed this piece of
-software, installing MP3 support is rather simple.
+Another easy way to activate MP3 streaming is to
+use[Homebrew](http://brew.sh//) or [MacPorts](http://www.macports.org/)
+which are package managers like
+[apt](ttps://en.wikipedia.org/wiki/Advanced_Packaging_Tool) on
+Debian/Ubuntu Linux. They provide a convenient way to install many Open
+Source packages. Once Homebrew or Macports is installed, adding MP3
+support to Mixxx is rather simple. Open a terminal and type the
+following commands:
+
+**Homebrew**
+
+    brew install lame
+
+**Macports**
 
     sudo port install lame
 

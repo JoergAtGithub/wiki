@@ -62,7 +62,7 @@ clock. A change to the rate of one deck changes the rate of all decks so
 they stay in sync. You can also elect a particular deck as the master
 deck.
 
-The following new controls are added:
+### New Controls
 
 |  | \[Group\]         |  | Key/Control   |  | Range       |  | What it does                                         |  | On-screen feedback                                               |  |
 |  | ----------------- |  | ------------- |  | ----------- |  | ---------------------------------------------------- |  | ---------------------------------------------------------------- |  |
@@ -87,7 +87,7 @@ adjustment independent of the player speed.
 
 ### New Controls
 
-|  |                |  |                    |  |            |  |                                                                                                               |  |                                           |  |
+|  | \[Group\]      |  | Key/Control        |  | Range      |  | What it does                                                                                                  |  | On-screen feedback                        |  |
 |  | -------------- |  | ------------------ |  | ---------- |  | ------------------------------------------------------------------------------------------------------------- |  | ----------------------------------------- |  |
 |  | \[Channel*N*\] |  | sync\_key          |  | pushbutton |  | Adjust the key of the target deck to match that of the master deck.                                           |  | pitch knob adjusts, audible pitch changes |  |
 |  | \[Channel*N*\] |  | pitch              |  | \-1.0..1.0 |  | Pitch adjust. -1 is a full octave shift down, +1 is a full octave shift up. Steps of 0.042 shift by semitones |  | Pitch knob                                |  |
@@ -120,7 +120,7 @@ for input.
 
 ### New Controls
 
-|  |                |  |             |  |        |  |                                                                                                                 |  |                                     |  |
+|  | \[Group\]      |  | Key/Control |  | Range  |  | What it does                                                                                                    |  | On-screen feedback                  |  |
 |  | -------------- |  | ----------- |  | ------ |  | --------------------------------------------------------------------------------------------------------------- |  | ----------------------------------- |  |
 |  | \[Channel*N*\] |  | passthrough |  | toggle |  | Connects the vinyl control input for the deck to the channel output. Allows to mix external media into DJ sets. |  | GUI control currently missing FIXME |  |
 

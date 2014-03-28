@@ -240,7 +240,7 @@ of your PC/card manufacturer since they may be newer.
 
 ## Where is the mixxx.log file?
 
-Mixxx logs debug informations, [MIDI/HID/etc.
+Mixxx logs debugging information, [MIDI/HID/etc.
 messages](command_line_options) it receives and script functions it
 loads in the `mixxx.log` plain text file.
 

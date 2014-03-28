@@ -53,10 +53,25 @@ This file can be found in the folder where you installed Mixxx
 Computer and type %PROGRAMFILES% in the location bar and press Enter.
 You should see the Mixxx folder there.
 
-#### Debugging Log
+#### Debugging Logs
 
 If Mixxx crashes on you and you know how to reproduce the crash, please
 do the following:
+
+##### Ensure Windows Error Reporting is enabled
+
+1.  Go to Start
+2.  Select Control Panel
+3.  Select Action Center
+4.  Select Change Action Center settings
+5.  Select Problem reporting settings
+6.  Select Change report settings for all users
+7.  Select Automatically check for solutions (Recommended)
+8.  Select the Ok button to apply the settings
+
+Now collect information from the following three sources:
+
+##### Debug diagnostic tool
 
 1.  Download & install the [Microsoft debug diagnostic
     tool](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=Microsoft+debug+diagnostic+tool)
@@ -67,7 +82,7 @@ do the following:
 4.  Save the output from the debugging tool to a text file and attach it
     to your bug report
 
-#### Event logs
+##### Event logs
 
 1.  Go to Control Panel -\> Administrative Tools -\> Event Viewer
 2.  Click Application Log and System Log. Make note of what the most
@@ -79,7 +94,7 @@ do the following:
 6.  Paste the text into your bug report (do this for each new event
     logged since you started the program.)
 
-#### Windows error reporting (if it comes up)
+##### Windows Error Reporting
 
 1.  Click Send
 2.  Click View Details

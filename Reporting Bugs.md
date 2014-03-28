@@ -48,10 +48,10 @@ report:
 
 #### Mixxx.log
 
-This file can be found in the folder where you installed Mixxx
-(Typically C:\\Program Files\\Mixxx). If you can't find it, open
-Computer and type %PROGRAMFILES% in the location bar and press Enter.
-You should see the Mixxx folder there.
+Find and attach this file to the bug. (Don't just paste it into the text
+area because it's long\!) See the [Troubleshooting
+FAQ](troubleshooting#where_is_the_mixxxlog_file) for information on
+where it can be found.
 
 #### Debugging Logs
 

@@ -2682,11 +2682,16 @@ New in Mixxx 1.11.0
 
 This allows you to create a QSplitter dynamically.
 
-|                                                                                                                                                                                                                                                                                                       |      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+New in Mixxx 1.12
+
+Remember splitter layout
+
+|                                                                                                                                                                                                                                                                                                                                                                             |      |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | `<Splitter>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
+  <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
   <SplitSizes>1,1,8</SplitSizes>
   <Children>
     <WidgetGroup>
@@ -2705,6 +2710,11 @@ This allows you to create a QSplitter dynamically.
 10% of the splitter size initially and the 3rd `WidgetGroup` will have
 80%. There must be as many split sizes as there are children or else it
 will be ignored.
+
+Mixxx remembers remember the position of moveable GUI elements,
+`SplitSizesConfigKey` saves the splits in ConfigKey provided by the skin
+e.g.
+`<SplitSizesConfigKey>[Deere1280x1024-SXGA],LibrarySidebarSplitSize</SplitSizesConfigKey>`.
 
 **NOTE:** `Splitter` derives from `QSplitter`. As of Qt 4.8.3 the
 default `SizePolicy` for `QSplitter` is `QSizePolicy::Expanding`

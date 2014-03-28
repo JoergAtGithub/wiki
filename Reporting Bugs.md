@@ -96,6 +96,8 @@ Now collect information from the following three sources:
 
 ##### Windows Error Reporting
 
+*WER will automatically appear if an application crashes.*
+
 1.  Click Send
 2.  Click View Details
 3.  Save the files to a folder of your choice

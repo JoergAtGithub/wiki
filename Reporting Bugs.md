@@ -59,7 +59,7 @@ If Mixxx crashes on you and you know how to reproduce the crash, please
 do the following:
 
 1.  Download & install the [Microsoft debug diagnostic
-    tool](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=28bd5941-c458-46f1-b24d-f60151d875a3&displaylang=en)
+    tool](http://www.microsoft.com/en-us/search/DownloadResults.aspx?q=Microsoft+debug+diagnostic+tool)
     
 2.  Start Mixxx from inside the tool (or attach it to a running Mixxx
     process)

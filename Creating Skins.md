@@ -408,6 +408,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Use ''visual_bpm'' key instead ''bpm'' so [[creating_skins#ebpm_number_display|<BPM>]] does not updates too quickly
  * Added [[creating_skins#effective_musical_key_display|<Key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
  * Deprecated **beatsync** pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that ''beatsync'' was (though skins need to change it to a two-state button).
  * Added **sync_master**.  Each deck can optionally be designated explicit master for master sync mode.  This is a toggle button.  (There is also **[InternalClock],sync_master**).

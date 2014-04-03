@@ -408,7 +408,18 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
- * Added ''SplitSizesConfigKey'' to [[creating_skins#splitter|<Splitter>]]. Store sizes in a configkey and remember library layout on skin change and restart.
+ * Added ''Transform'' support to ''Connection'' blocks in the skin. Adds a general ValueTransformer class that does simple, invertible transformations on numbers, see [[https://github.com/mixxxdj/mixxx/pull/157|pull#157]]<code=xml><Connection>
+  <ConfigKey>[Master],volume</ConfigKey>
+  <Transform>
+      <Invert/>
+      <Add>1</Add>
+  </Transform>
+```
+
+\</Connection\>\</code\>
+
+``` 
+ * Added ''SplitSizesConfigKey'' to [[creating_skins#splitter|<Splitter>]]. Store sizes in a configkey and remember library layout on skin change and restart, see [[https://github.com/mixxxdj/mixxx/pull/209|pull#209]]
  * Use ''visual_bpm'' key instead ''bpm'' so [[creating_skins#bpm_number_display|<BPM>]] does not updates too quickly
  * Added [[creating_skins#effective_musical_key_display|<Key>]], that allows to display the effective musical key after pitch shifting, see [[https://github.com/mixxxdj/mixxx/pull/47|pull#47]]
  * Deprecated **beatsync** pushbutton in favor of **sync_enabled** toggle button.  In most skins and controller setups this can be the same button that ''beatsync'' was (though skins need to change it to a two-state button).

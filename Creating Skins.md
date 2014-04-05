@@ -408,6 +408,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Added optional ''mode="stretch"'' attribute for all widgets that support <BackPath>. Default is tiled backpaths, see [[https://github.com/mixxxdj/mixxx/pull/178|pull#178]]<code=xml><BackPath mode="stretch">background_image.png</BackPath></code>
  * Added ''Transform'' support to ''Connection'' blocks in the skin. Adds a general ValueTransformer class that does simple, invertible transformations on numbers, see [[https://github.com/mixxxdj/mixxx/pull/157|pull#157]]<code=xml><Connection>
   <ConfigKey>[Master],volume</ConfigKey>
   <Transform>

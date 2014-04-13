@@ -8,7 +8,16 @@ message descriptions, not general descriptions of the behavior.
 
 The VCI-100 has various different firmwares so this can vary.
 
-## Pitch-Bend
+## Vinyl Mode
+
+Vinyl mode is a button on the VCI-100 whose status (including LED) is
+controlled by the hardware. Presses only emit the standard "button
+pressed" message:
+
+    Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x6B, val 0x7F"
+    Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x6B, val 0x00"
+
+## No Touch Sensor Active, Platter Move
 
 When the VCI-100 jog wheel touch sensor is not active, ticks of the jog
 wheel look like this:
@@ -31,16 +40,7 @@ The 0x6B control means "button pressed" and is emitted when any button
 on the VCI-100 is pressed. CW and CCW is encoded in the control. Pitch
 bend is not affected by the "vinyl mode" toggle.
 
-## Vinyl Mode
-
-Vinyl mode is a button on the VCI-100 whose status (including LED) is
-controlled by the hardware. Presses only emit the standard "button
-pressed" message:
-
-    Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x6B, val 0x7F"
-    Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x6B, val 0x00"
-
-## Touch Sensor + Platter Move
+## Touch Sensor Active + Platter Move
 
 Touch start
 

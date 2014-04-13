@@ -43,6 +43,8 @@ bend is not affected by the "vinyl mode" toggle.
 
 ## Touch Sensor Active + Platter Move
 
+Magnitude of the tick is measured in distance from 0x40.
+
 Touch start
 
     Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x6B, val 0x7F"
@@ -70,3 +72,43 @@ Release
 
     Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x2E, val 0x00"
     Debug [Controller]: "MIDI status 0x90 (ch 1, opcode 0x9), ctrl 0x30, val 0x00"
+
+# VCI-400 Jog Wheels
+
+# Vinyl Mode Button
+
+Like the VCI-100, the LED state and toggle state of this button is
+controlled by the hardware. But the toggle state is communicated via
+MIDI. The hardware disables the touch sensor when vinyl mode is
+disabled.
+
+Enable
+
+    Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x06, val 0x7F"
+
+Disable
+
+    Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x06, val 0x00"
+
+# Touch Sensor
+
+Touch Start
+
+    Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x27, val 0x7F"
+
+Touch End
+
+    Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x27, val 0x00"
+
+# Platter Move
+
+Regardless of vinyl mode, touch sensor state these messages are always
+the same. Magnitude of the tick is measured in distance from 0x40.
+
+CW
+
+    Debug [Controller]: "MIDI status 0xB2 (ch 3, opcode 0xB), ctrl 0x13, val 0x41"
+
+CCW tick
+
+    Debug [Controller]: "MIDI status 0xB2 (ch 3, opcode 0xB), ctrl 0x13, val 0x3F"

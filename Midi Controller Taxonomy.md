@@ -6,7 +6,8 @@ message descriptions, not general descriptions of the behavior.
 
 # VCI-100 Jog Wheels
 
-The VCI-100 has various different firmwares so this can vary.
+The VCI-100 has various different firmwares so this can vary. This is
+for the left deck. The deck \# is typically encoded in the control.
 
 ## Vinyl Mode
 

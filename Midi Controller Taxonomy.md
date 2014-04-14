@@ -75,7 +75,7 @@ Release
 
 # VCI-400 Jog Wheels
 
-# Vinyl Mode Button
+## Vinyl Mode Button
 
 Like the VCI-100, the LED state and toggle state of this button is
 controlled by the hardware. But the toggle state is communicated via
@@ -90,7 +90,7 @@ Disable
 
     Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x06, val 0x00"
 
-# Touch Sensor
+## Touch Sensor
 
 Touch Start
 
@@ -100,7 +100,7 @@ Touch End
 
     Debug [Controller]: "MIDI status 0x92 (ch 3, opcode 0x9), ctrl 0x27, val 0x00"
 
-# Platter Move
+## Platter Move
 
 Regardless of vinyl mode, touch sensor state these messages are always
 the same. Magnitude of the tick is measured in distance from 0x40.

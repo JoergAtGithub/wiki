@@ -112,3 +112,14 @@ CW
 CCW tick
 
     Debug [Controller]: "MIDI status 0xB2 (ch 3, opcode 0xB), ctrl 0x13, val 0x3F"
+
+# Hercules DJ Console 4-Mx
+
+The 4-Mx has no touch sensors or vinyl mode. The platter is simply a
+two's complement ticker:
+
+    Debug [Controller]: "MIDI status 0xB0 (ch 1, opcode 0xB), ctrl 0x01, val 0x01"
+
+    Debug [Controller]: "MIDI status 0xB0 (ch 1, opcode 0xB), ctrl 0x01, val 0x7F"
+
+Magnitude from 0x00 is the number of ticks.

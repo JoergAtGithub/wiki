@@ -30,34 +30,6 @@ Ubuntu Packages to Install (but possible outdated) would be:
   - eclipse-cdt
   - eclipse-pydev
 
-# Recommended Eclipse plugins
-
-Eclipse plugins are installed from the Help / Install New Software...
-menu.
-
-  - QT CDT Support: Highly recommended for best indexing support.
-  - Available from the standard update site under CDT Optional Features
-    for Eclipse 4.3 (Kepler): [Kepler CDT
-    Updates](http://download.eclipse.org/tools/cdt/releases/kepler)
-
-<!-- end list -->
-
-  - SCons plugin: [currently
-    broken](https://bugs.launchpad.net/mixxx/+bug/1279463) 
-  - See <http://sconsolidator.com> and ***follow*** the instructions
-    there on how to install and configure. 
-  - From Eclipse menu, you can use File -\> Import -\> C/C++ -\> New
-    SCons project from existing source.
-  - If you run into problems, please see:
-    [Forum](http://www.sconsolidator.ch/projects/sconsolidator/boards)
-    or
-    [FAQ](http://www.sconsolidator.ch/projects/sconsolidator/wiki/FAQ)
-
-<!-- end list -->
-
-  - Eclipse GitHub plugin:
-  - <http://eclipse.github.com/>
-
 # Step by Step Setup
 
 For Eclipse Indigo (and Kepler)

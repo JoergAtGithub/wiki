@@ -313,12 +313,13 @@ If you used the 1.11 branch, you must type `cd mixxx` twice.
     scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 
-Setting `coreaudio=1` will use CoreAudio to decode MP3 and AAC files. If
-you want to use `libmad` or `libfaad` for MP3 and AAC decoding, simply
-set the `mad` and `faad` flags and clear the `coreaudio` flag. For
-example:
+As of v1.12, Mixxx will use CoreAudio to decode MP3 and AAC files by
+default. If you want to use `libmad` or `libfaad` for MP3 and AAC
+decoding, simply set the `mad` and `faad` flags and clear the
+`coreaudio` flag. To enable libmodplug based module tracker support, set
+the `modplug` flag. For example:
 
-    scons hss1394=0 mad=1 faad=1 coreaudio=0 verbose=0
+    scons hss1394=0 mad=1 faad=1 coreaudio=0 modplug=1 verbose=0
 
 If it you get a message like:
 

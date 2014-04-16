@@ -103,14 +103,14 @@ support.
     brew install libmodplug
 ```
 
-If you get the error *No available formula for libmodplug*, enter the
+If you get the error `No available formula for libmodplug` , enter the
 following:
 
 ``` 
     brew create http://sourceforge.net/projects/modplug-xmms/files/latest/download     
 ```
 
-Enter Formula name *libmodplug* if asked for, then enter:
+Enter Formula name `libmodplug` if asked for, then enter:
 
 ``` 
     brew install libmodplug

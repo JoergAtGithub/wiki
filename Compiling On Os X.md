@@ -95,6 +95,27 @@ the following Homebrew formulas:
     brew install http://tuohela.net/irc/vamp-plugin-sdk.rb http://tuohela.net/irc/rubberband.rb
 ```
 
+**OPTIONAL:** To enable
+[libmodplug](http://modplug-xmms.sourceforge.net/) based module tracker
+support.
+
+``` 
+    brew install libmodplug
+```
+
+If you get the error *No available formula for libmodplug*, enter the
+following:
+
+``` 
+    brew create http://sourceforge.net/projects/modplug-xmms/files/latest/download     
+```
+
+Enter Formula name *libmodplug* if asked for, then enter:
+
+``` 
+    brew install libmodplug
+```
+
 **OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3 and
 AAC codec. If you don't want to use the OSX versions of these codecs you
 can build the codecs into Mixxx directly. To do this, you have to

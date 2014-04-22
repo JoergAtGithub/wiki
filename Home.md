@@ -135,6 +135,10 @@ Mixxx is applying as a mentoring organization for Google Summer of Code,
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
+<!-- end list -->
+
+  - [Extending the Effects Engine](Extending%20the%20Effects%20Engine) 
+
 ### GSoC 2013
 
 Mixxx is an accepted mentoring organization for Google Summer of Code,

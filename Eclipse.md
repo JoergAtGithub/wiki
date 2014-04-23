@@ -127,7 +127,7 @@ If the discovering fails, you may add the required info manually:
 
 <!-- end list -->
 
-  - If are you using Qt5:
+  - If you are using Qt5:
   - /usr/include/qt5/Qt 
   - /usr/include/qt5/QtCore
   - /usr/include/qt5/QtWidgets

@@ -108,7 +108,7 @@ To enable the full power of Eclipse indexer Eclipse needs to know all
 include files and symbols. Eclipse is able to discover path and symbols
 from the scons output. After a build, you can check it at
 
-project -\> Properties -\> C/C++ General -\> Path and Symbols
+Project -\> Properties -\> C/C++ General -\> Path and Symbols
 
 by checking "Show build-in values"
 
@@ -145,6 +145,10 @@ If the discovering fails, you may add the required info manually:
 <!-- end list -->
 
   - Or merge from git@github.com:daschuer/mixxx.git
+
+After changing these settings, The index needs to be rebuild
+
+Project -\> C/C++ Index -\> Rebuild
 
 ### Eclipse code formatter
 

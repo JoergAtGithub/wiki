@@ -150,6 +150,14 @@ After changing these settings, The index needs to be rebuild
 
 Project -\> C/C++ Index -\> Rebuild
 
+Troubleshooting:
+
+The indexer preferences can be set here:
+
+Windwow -\> Preferences -\> C/C++ -\> Indexer
+
+You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
+
 ### Eclipse code formatter
 
 You should also configure the code formatter to Mixxx code style:

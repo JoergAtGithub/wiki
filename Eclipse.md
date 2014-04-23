@@ -115,8 +115,14 @@ reading the compiler commands, but it is safer to do the job manual:
   - Add the lib/ folder. Again, add to all languages and configurations.
   - Also add /usr/include as a filesystem path.
   - Also add:
-  - /usr/include/qt5/Qt (if you are using qt4, these might be slightly
-    different on your system)
+  - /usr/include/qt4/Qt
+  - /usr/include/qt4/QtCore
+  - /usr/include/qt4/QtGui
+
+<!-- end list -->
+
+  - If are you using Qt5:
+  - /usr/include/qt5/Qt 
   - /usr/include/qt5/QtCore
   - /usr/include/qt5/QtWidgets
   - /usr/include/qt5/QtGui

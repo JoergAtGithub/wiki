@@ -134,11 +134,6 @@ reading the compiler commands, but it is safer to do the job manual:
 
   - Or merge from git@github.com:daschuer/mixxx.git
 
-<!-- end list -->
-
-  - Make sure you have QT Support for CDT installed (see Recommended
-    Plugins above).
-
 ### Eclipse code formatter
 
 You should also configure the code formatter to Mixxx code style:

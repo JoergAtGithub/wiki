@@ -104,9 +104,15 @@ This was tested without the SCons plugin installed.
 
 ### Eclipse indexer
 
-To enable the full power of Eclipse indexer you have to tell Eclipse
-where to find the include files and symbols. Eclipse can discover it by
-reading the compiler commands, but it is safer to do the job manual:
+To enable the full power of Eclipse indexer Eclipse needs to know all
+include files and symbols. Eclipse is able to discover path and symbols
+from the scons output. After a build, you can check it at
+
+project -\> Properties -\> C/C++ General -\> Path and Symbols
+
+by checking "Show build-in values"
+
+If the discovering fails, you may add the required info manually:
 
   - Right click on the project -\> Properties -\> C/C++ General -\> Path
     and Symbols -\> Fill in tabs "Includes" and "Symbols".

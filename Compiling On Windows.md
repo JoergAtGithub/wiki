@@ -22,7 +22,8 @@ referred to as MSVC in discussions.
     Express](http://www.microsoft.com/express/download/) ([Direct link
     to 2010](http://go.microsoft.com/?linkid=9709949))
   - [Microsoft Windows 7
-    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
+    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en),
+    select Visual C++ Compilers and Win32 Development Tools
   - [Qt library for Windows
     (MSVC2010)](http://download.qt-project.org/official_releases/qt/4.8/4.8.5/)
   - [Python](http://python.org/download/) 2.x Install for user only\!

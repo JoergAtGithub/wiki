@@ -22,35 +22,28 @@ referred to as MSVC in discussions.
     Express](http://www.microsoft.com/express/download/) ([Direct link
     to 2010](http://go.microsoft.com/?linkid=9709949))
   - [Microsoft Windows 7
-    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en),
-    select Visual C++ Compilers and Win32 Development Tools
-  - [Qt library for Windows
-    (MSVC2010)](http://download.qt-project.org/official_releases/qt/4.8/4.8.5/)
-  - [Python](http://python.org/download/) 2.x Install for user only\!
-    Otherwise scons can't find the installation
-  - [SCONS](http://www.scons.org/download.php)
-  - A Git client like
-    [TortoiseGit](https://code.google.com/p/tortoisegit/) or the [github
-    windows
-    client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
-    (featuring a unix like command line)
-  - ProtoBuf Compiler
-    [protoc-2.4.1-win32.zip](https://code.google.com/p/protobuf/downloads/detail?name=protoc-2.4.1-win32.zip&can=2&q=)
-    place protoc.exe in your path somewhere.
+    SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
+    You only need to install the following:
 
 <!-- end list -->
 
-1.  Prepare build environment
+``` 
+    * Headers & x86 libraries
+    * x86 C++ compiler
+    * Win32 Development Tools
+* [[http://download.qt-project.org/official_releases/qt/4.8/4.8.5/|Qt library for Windows (MSVC2010)]]
+* [[http://python.org/download/|Python]] 2.x  Install for user only! Otherwise scons can't find the installation
+* [[http://www.scons.org/download.php|SCONS]]
+* A Git client like [[https://code.google.com/p/tortoisegit/|TortoiseGit]] or the [[http://github-windows.s3.amazonaws.com/GitHubSetup.exe|github windows client]] (featuring a unix like command line)
+* ProtoBuf Compiler [[https://code.google.com/p/protobuf/downloads/detail?name=protoc-2.4.1-win32.zip&can=2&q=|protoc-2.4.1-win32.zip]] place protoc.exe in your path somewhere.
+- Prepare build environment
+* Add to or create the following system environment variables ([[http://www.chem.gla.ac.uk/~louis/software/faq/q1.html|HowTo]],) adjusting the paths to match where you actually installed the above. <code>
+```
 
-<!-- end list -->
+QTDIR = C:\\qt-windows-4.8.x\\ \# create a new variable for this PATH =
+C:\\qt-windows-4.8.x\\bin;C:\\Python2x;C:\\Python2x\\Scripts \# append
+to the existing variable \</code\>
 
-  - Add to or create the following system environment variables
-    ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-    adjusting the paths to match where you actually installed the above.
-    `QTDIR = C:\qt-windows-4.8.x\ # create a new variable for this
-    PATH = C:\qt-windows-4.8.x\bin;C:\Python2x;C:\Python2x\Scripts #
-    append to the existing variable
-    `
   - If you're using Qt 4.8 or above, you might need to copy all of the
     Qt4 DLL files from `C:\qt\bin` to `C:\qt\lib` since that's where our
     build script looks for them. (We should fix that.)

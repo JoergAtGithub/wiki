@@ -1,8 +1,8 @@
-Extending the Effects Engine  
+**Extending the Effects Engine  
 Nicu Badescu  
 Email: badescunicu@gmail.com  
 IRC: badescunicu  
-Timezone: GMT +2
+Timezone: GMT +2**
 
 **I. Overview**
 

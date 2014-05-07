@@ -1368,6 +1368,28 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ` |
 
+### dB display
+
+|                                                                                                                                                    |  |                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------------------------------------------------------------ |
+| `<NumberDb>
+    ...
+    <Text>Gain %1 dB</Text>
+    <Connection>
+        <ConfigKey>[Channel1],pregain</ConfigKey>
+    </Connection>
+</NumberDb>
+` |  | `
+
+
+Optional Text. %1 is replaced by the bB value. 
+If this is missing the value is displayed 
+like "-39 dB" 
+
+
+
+` |
+
 ## Section: Slider
 
 ### Channel Volume

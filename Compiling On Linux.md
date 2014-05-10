@@ -52,7 +52,6 @@ your distribution's package manager:
   - [protobuf](http://code.google.com/p/protobuf/) 
   - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
     (**optional** if not installed, Mixxx uses an internal version)
-  - [freeglut](http://freeglut.sourceforge.net/)
   - [librubberband](http://breakfastquay.com/rubberband/)
   - libchromaprint
 

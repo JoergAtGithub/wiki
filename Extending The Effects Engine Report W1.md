@@ -48,5 +48,8 @@ Work still to be done:
        * another idea would be changing the EffectParameterSlot::m_pControlValue to a more generic class which will handle both the Potmeters and the PushButtons
 ```
 
+The branch I'm working on can be seen here:
+[eq\_effect\_branch](https://github.com/badescunicu/mixxx/compare/eq_effect_space#diff-7ea8c4ac05a59673d876185cca4fe4dcR14)
+
 Stay tuned for updates\!  
 Nicu Badescu

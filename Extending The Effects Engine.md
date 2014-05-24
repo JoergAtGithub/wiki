@@ -54,11 +54,11 @@ W1 May 19th - May 25th:
 W2 May 26th - June 1st:
 
   - Final Plan how to move EQ into the effect domain
+  - Fix <https://bugs.launchpad.net/mixxx/+bug/1209294>
 
 W3 June 2nd - June 8th:
 
-  - create a new EffectChain 
-  - Connect EQ preference page and controls
+  - Implement switch type parameters for EQ "kill" buttons
 
 W4 June 9th - June 15th
 
@@ -143,6 +143,12 @@ the community (which is, by the way, awesome :D ):
 Taking part in GSoC 2014 for Mixxx is a great opportunity and a dream
 come true for me. Working feels like playing because Mixxx lies between
 two of my passions: computer programming and electronic music.
+
+Weekly reports:
+
+``` 
+ * [[extending_the_effects_engine_report_w1|Week #1]]
+```
 
 Links:  
 \[1\] -

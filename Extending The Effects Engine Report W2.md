@@ -9,9 +9,9 @@ deal with this bug? Well, every time one of the frequency corners was
 changed from the preference page, a new **EngineFilterButterworth**
 object was created. Thus, some clicks could be heard because the
 previous filter state was lost and it was a slight difference in the
-output samples between the old filter and the new one. The solution to
-this issue is cross fading between the old output samples and the new
-ones.
+output samples between from the old filter and the newly created filter.
+The solution to this issue is cross fading between the old output
+samples and the new ones.
 
 Here is how I tackled this problem:  
 \* store a flag inside **EngineFilterButterworth** class which is set to
@@ -25,7 +25,7 @@ true if ramping is needed;
    * put all the values from the current coefficients array into the old array, just before the former is updated with new coefficients;
    * old buffers are initialized with current buffers, just before current buffers are zeroed (inside initBuffers method);
 * when a frequency is changed, set the flag responsible for ramping to true;
-* inside the process method, if the ramping flag is true, compute the old output, the new one and cross fade between them.
+* inside the process method, if the ramping flag is true, compute the old output, the new one and cross fade between them; also, set the flag to false.
 ```
 
 However, it is easier said than done. I was pretty confident that my
@@ -35,7 +35,7 @@ computing the old output samples. I must thank Owen for helping me out
 with this. The new output samples were stored in pOutput. After cross
 fading between those two, I was freeing the memory allocated for the
 array. The problem with this approach is that **MAX\_BUFFER\_LEN** is
-160,000. Imagine how inefficient was to allocate and free 160,000
+160,000. Imagine the inefficiency of allocating and freeing 160,000
 numbers, multiple times per second.
 
 The next idea came to me while analyzing

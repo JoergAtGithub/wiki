@@ -44,8 +44,8 @@ storing the whole old buffer before cross fading, I was going to compute
 it on the fly. Consequently, I needed only two numbers, one for each
 channel. The formula for cross fading is : *result = final \* coef +
 initial \* (1 - coef)*. This is a simple formula which has a lot of
-applications, including game industry (they use it for linear
-interpolation). *coef* is a real number between 0 and 1 which is
+applications, including those from the gaming industry (they use it for
+linear interpolation). *coef* is a real number between 0 and 1 which is
 incremented each step. As he approaches the value 1, final is fading in
 and initial is fading out.
 

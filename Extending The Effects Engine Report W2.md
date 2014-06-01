@@ -64,4 +64,7 @@ branch can be found
 [here](https://github.com/badescunicu/mixxx/compare/eq_effect_space).
 
 Cheers\!  
-Nicu Badescu
+Nicu Badescu  
+  
+  
+[Back to the main page\!](extending_the_effects_engine)

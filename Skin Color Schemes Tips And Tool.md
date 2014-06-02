@@ -52,9 +52,9 @@ The colors declared here will not change with the scheme (as of Mixxx
 \<FgColor\>, \<BgColorRowEven\>, or \<BgColorRowUneven\>**, for
 applicable elements.
 
-Once you have your non-transparent image files showing up correctly in
-your skin with your color declarations in appropriate tags, then you can
-start scheming\!
+Once you have your ~~non-transparent~~ image files showing up correctly
+in your skin with your color declarations in appropriate tags, then you
+can start scheming\!
 
 ## Color Manipulation
 

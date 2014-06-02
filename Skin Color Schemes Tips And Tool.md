@@ -135,13 +135,13 @@ theme was Hue=189**; I wanted to **change it to Hue=4**. The
 The **\<HConst\>-185\</HConst\>** tells Mixxx to subtract 189 from the
 Hue values all the colors used in my images. This worked for me since
 all the colors used were at lease Hue=189. **Be careful** when doing
-this kind of blanket manipulation. **There is [a bug in
+this kind of blanket manipulation. ~~**There is [a bug in
 version 1.9](https://bugs.launchpad.net/mixxx/+bug/816715)** that does
 not allow Hue values higher than 255\! Any Hue changes that result in a
-number higher than 255 or lower than 0 will "wrap around". If you add
-102 to cyan (H=189), you should get a nice purple color (H=291), but
+number higher than 255 or lower than 0 will "wrap around".~~ If you add
+102 to cyan (H=189), you should get a nice purple color (H=291), ~~but
 Mixxx will say, "Hey\! That number's too high\!" and subtract 255,
-leaving you with orange (H=36). So when using \<HConst\> in your
+leaving you with orange (H=36)~~. So when using \<HConst\> in your
 schemes, **be sure not to have your colors wrap around**. My **[scheme
 builder
 tool](http://www.mrfloresreads.info/remixes/mixxxschemeutil.html#tool)**

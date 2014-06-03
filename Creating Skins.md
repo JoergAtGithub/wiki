@@ -1212,7 +1212,7 @@ capitalized AM/PM
 seconds are shown or not. Default is false.
 You can set a custom format with <CustomFormat> instead of
 <ClockFormat>, which accepts the same expressions as QTime::toString
-(http://doc.trolltech.com/latest/qtime.html#toString)
+(http://qt-project.org/doc/qt-4.8/qtime.html#toString)
 `|
 
 ### Track information

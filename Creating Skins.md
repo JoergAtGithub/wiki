@@ -2721,19 +2721,21 @@ automatically sized and laid out horizontally within the widget group.
 
 New in Mixxx 1.11.0
 
-This allows you to create a QSplitter dynamically.
+This allows you to create a QSplitter dynamically and to control the
+size of child widgets by dragging the boundary between the children.
 
 New in Mixxx 1.12
 
 Remember splitter layout
 
-|                                                                                                                                                                                                                                                                                                                                                                             |      |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                      |      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | `<Splitter>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
   <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
   <SplitSizes>1,1,8</SplitSizes>
+  <Orientation>horizontal}</Orientation>
   <Children>
     <WidgetGroup>
     </WidgetGroup>
@@ -2751,6 +2753,10 @@ Remember splitter layout
 10% of the splitter size initially and the 3rd `WidgetGroup` will have
 80%. There must be as many split sizes as there are children or else it
 will be ignored.
+
+`Orientation` holds the orientation of the splitter. Default is
+horizontal (i.e. the widgets are laid out side by side). The possible
+orientations are `horizontal` or `vertical`.
 
 Mixxx remembers remember the position of moveable GUI elements,
 `SplitSizesConfigKey` saves the splits in ConfigKey provided by the skin

@@ -55,7 +55,7 @@ pointed out that I can use *fidlib* for computing the coefficients
 needed for this EQ. This is something I hope to do in the following
 week.
 
-A topic which is harder than I thought and which has been taking me
+**A topic which is harder than I thought** and which has been taking me
 quite some time is implementing switch type parameters for the effects
 framework. As a reminder, I need them for EQ's kill buttons. I noticed
 every effect has an *EffectParameter* list which stores information

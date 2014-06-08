@@ -60,12 +60,12 @@ quite some time is implementing switch type parameters for the effects
 framework. As a reminder, I need them for EQ's kill buttons. I noticed
 every effect has an *EffectParameter* list which stores information
 about each parameter. *EffectParameterSlot* is responsible for
-instantiating a *ControlKnobEffect* for an *EffectParameter*. The
-problem with *ControlKnobEffect* is that it behaves only as a
+instantiating a *ControlEffectKnob* for an *EffectParameter*. The
+problem with *ControlEffectKnob* is that it behaves only as a
 *ControlPotmeter* and we need it to behave like a *ControlPushButton*
 too. I tried to create a different list of "button parameters" for each
 effect and create a new class (*EffectButtonParameterSlot*) which
-instead of *ControlKnobEffect* features a *ControlPushButton*. The
+instead of *ControlEffectKnob* features a *ControlPushButton*. The
 problem with this approach is that a lot of code is duplicated and
 currently I haven't managed to make it work properly, because the
 buttons are not updating as they should. I suspect it is a problem with

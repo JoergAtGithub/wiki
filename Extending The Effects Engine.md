@@ -62,6 +62,7 @@ W3 June 2nd - June 8th:
 
 W4 June 9th - June 15th
 
+  - Continue work on switch type parameters for EQ "kill" buttons
   - prepare a test skin
   - test and debug
 

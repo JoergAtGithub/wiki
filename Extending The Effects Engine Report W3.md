@@ -73,6 +73,16 @@ the "request-response" update mechanism. I hope that by the end of the
 next week, with the community's help, I'll come to a resolution
 regarding this topic.
 
+Here is the basic flow when creating an effect parameter slot:
+
+EffectsManager::setupDefaults ---\>  
+EffectRack::addEffectChainSlot ---\>  
+EffectChainSlot::addEffectSlot ---\>  
+EffectSlot::EffectSlot (constructor) ---\>  
+EffectSlot::addEffectParameterSlot ---\>  
+EffectParameterSlot::EffectParameterSlot (constructor) ---\>  
+ControlEffectKnob::ControlEffectKnob (constructor)
+
 \[1\] - https:*github.com/mixxxdj/mixxx/pull/270  
 \[2\] - https:*bugs.launchpad.net/mixxx/+bug/1326001  
 \[3\] - https://github.com/mixxxdj/mixxx/pull/268

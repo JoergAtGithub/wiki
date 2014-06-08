@@ -85,4 +85,6 @@ ControlEffectKnob::ControlEffectKnob (constructor)
 
 \[1\] - https:*github.com/mixxxdj/mixxx/pull/270  
 \[2\] - https:*bugs.launchpad.net/mixxx/+bug/1326001  
-\[3\] - https://github.com/mixxxdj/mixxx/pull/268
+\[3\] - https://github.com/mixxxdj/mixxx/pull/268  
+
+[Back to the main page\!](extending_the_effects_engine)

@@ -83,7 +83,8 @@ EffectSlot::addEffectParameterSlot ---\>
 EffectParameterSlot::EffectParameterSlot (constructor) ---\>  
 ControlEffectKnob::ControlEffectKnob (constructor)
 
-Yours truly, Nicu Badescu
+Yours truly,  
+Nicu Badescu
 
 \[1\] - https:*github.com/mixxxdj/mixxx/pull/270  
 \[2\] - https:*bugs.launchpad.net/mixxx/+bug/1326001  

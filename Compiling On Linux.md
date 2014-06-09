@@ -244,6 +244,18 @@ Now restart jack & mixxx.
   
 Now World domination :)
 
+#### Moving your working copy from one system to an other
+
+If you happen to reinstall your system, or move your checkout to an
+other development system, scons temp files may cause trouble in
+compilation, and giving false missing dependency information. To avoid
+this clean out the scons temporary files with the next commands:
+
+``` 
+rm -r .sconf_temp/
+rm .sconsign.*                                               
+```
+
 ## Further Reading
 
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)

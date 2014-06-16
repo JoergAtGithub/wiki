@@ -33,10 +33,10 @@ is now using memcpy and memset for copying and initializing buffers and
 coefficients. I have also commented out the RBGW Mix, because Daniel
 found some issues with the involved filters.
 
-\[1\] ![controlparameter.jpg](controlparameter.jpg)  
-\[2\] - <https://github.com/mixxxdj/mixxx/pull/267/files>  
-
 Cheers,  
 Nicu Badescu  
+
+\[1\] ![controlparameter.jpg](controlparameter.jpg)  
+\[2\] - <https://github.com/mixxxdj/mixxx/pull/267/files>  
 
 [Back to the main page\!](extending_the_effects_engine)

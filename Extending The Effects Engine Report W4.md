@@ -28,10 +28,15 @@ EngineEffect::processEffectsRequest(). However, it still has a problem.
 Even though it is correctly updating the values which are processed by
 the framework, it doesn't display the same values in the GUI.
 
-I have also fixed the master conflicts for the EQ Default branch\[2\].
-It is now using memcpy and memset for copying and initializing buffers
-and coefficients. I have also commented out the RBGW Mix, because Daniel
+I have resolved the master conflicts for the EQ Default branch\[2\]. It
+is now using memcpy and memset for copying and initializing buffers and
+coefficients. I have also commented out the RBGW Mix, because Daniel
 found some issues with the involved filters.
 
-\[1\] ![controlparameter.jpg](controlparameter.jpg) \[2\] -
-<https://github.com/mixxxdj/mixxx/pull/267/files>
+\[1\] ![controlparameter.jpg](controlparameter.jpg)  
+\[2\] - <https://github.com/mixxxdj/mixxx/pull/267/files>  
+
+Cheers,  
+Nicu Badescu  
+
+[Back to the main page\!](extending_the_effects_engine)

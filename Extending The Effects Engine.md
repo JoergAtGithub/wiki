@@ -68,12 +68,15 @@ W4 June 9th - June 15th
 
 W5 June 16th - June 22nd:
 
-  - Final Plan how to move Brake into the effect domain
+  - Final Plan how to move Brake into the effect domain \[postponed\]
   - prepare for midterm
+  - start working on the EQ Effect Rack (not configurable from
+    preferences)
 
 W6 June 23rd - June 29th (Mid Term evaluation):
 
-  - Turn the Bitcrusher into a Brake effect
+  - Turn the Bitcrusher into a Brake effect \[postponed\]
+  - Finish the EQ Effect Rack (configure it from preferences)
 
 W7 June 30th - July 6th:
 

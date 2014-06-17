@@ -72,11 +72,21 @@ W5 June 16th - June 22nd:
   - prepare for midterm
   - start working on the EQ Effect Rack (not configurable from
     preferences)
+  - June 18: create a new EffectRack
+  - June 19: modify a skin (Deere or Daniel’s Shade) to display that
+    Rack
+  - June 20: add 4 EQ Effects to the newly created Rack
+  - June 21: connect each EQ to one of the Decks
 
 W6 June 23rd - June 29th (Mid Term evaluation):
 
   - Turn the Bitcrusher into a Brake effect \[postponed\]
   - Finish the EQ Effect Rack (configure it from preferences)
+  - June 22-23: modify the Rack to use legacy controls (better: allow
+    aliases for controls)
+  - June 24: Allow the Rack EQs to be changed from preferences
+    (LigthweightEQ or EQDefault)
+  - June 25-26: debug and test
 
 W7 June 30th - July 6th:
 

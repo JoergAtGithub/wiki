@@ -76,7 +76,7 @@ W5 June 16th - June 22nd:
   - June 19: modify a skin (Deere or Daniel’s Shade) to display that
     Rack
   - June 20: add 4 EQ Effects to the newly created Rack
-  - June 21: connect each EQ to one of the Decks
+  - June 21: connect each EQ to one Deck
 
 W6 June 23rd - June 29th (Mid Term evaluation):
 

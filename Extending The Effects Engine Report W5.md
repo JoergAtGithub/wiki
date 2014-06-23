@@ -13,11 +13,12 @@ replacing the Default EQ from *enginefilterblock.cpp* with an Equalizer
 Effect. I have finally managed to add switch type parameters to the
 Effects framework. The last bug was a typo Daniel pointed me out in
 *effectbuttonparameterslot.cpp*. I was calling *getParameter()* method
-instead of *getButtonParamter()*. Prior to fixing this, the buttons were
-not updating correctly, they were dependent to their corresponding knob.
-All they need now is a bit of code refactoring, because some code is
-duplicated, especially in *effectbuttonparameterslot.cpp* which contains
-the class for handling Button parameters.
+instead of *getButtonParameter()* inside *loadEffect()*. Prior to fixing
+this, the buttons were not updating correctly, they were dependent to
+their corresponding knob. All they need now is a bit of code
+refactoring, because some code is duplicated, especially in
+*effectbuttonparameterslot.cpp* which contains the class for handling
+Button parameters.
 
 For the EQ Effect Rack I broken down my work in the following parts:
 

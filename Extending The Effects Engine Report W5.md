@@ -1,4 +1,4 @@
-Howdy,
+Hello again,
 
 This week I started with fixing a crash in LightweightEQ, which is an
 Equalizer Effect for low-performance hardware. The problem was the id's
@@ -11,18 +11,17 @@ to reintroduce that to the effect which uses Bessel filters.
 I am happy to inform you that I'm making progress towards my goal of
 replacing the Default EQ from *enginefilterblock.cpp* with an Equalizer
 Effect. I have finally managed to add switch type parameters to the
-Effects framework. I have concluded with my mentor that the best way for
-this type of parameters is to put them in another list and handle them
-separately from Knob parameters. The last bug was a typo Daniel pointed
-me out in *effectslot.cpp*. Prior to fixing this, the buttons were not
-updating correctly, they were dependent to their corresponding knob. All
-they need now is a bit of code refactoring, because some code is
+Effects framework. The last bug was a typo Daniel pointed me out in
+*effectbuttonparameterslot.cpp*. I was calling *getParameter()* method
+instead of *getButtonParamter()*. Prior to fixing this, the buttons were
+not updating correctly, they were dependent to their corresponding knob.
+All they need now is a bit of code refactoring, because some code is
 duplicated, especially in *effectbuttonparameterslot.cpp* which contains
-a new class for handling Button parameters.
+the class for handling Button parameters.
 
 For the EQ Effect Rack I broken down my work in the following parts:
 
-  - Create a new EffectRack (done)
+  - Add a new EffectRack (done)
   - Modify Deere skin to display that additional Rack (done)
   - Add EQ Effects to the newly created Rack
   - For this part I chose to instantiate one Effect per each deck. In

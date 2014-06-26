@@ -120,6 +120,9 @@ W13 August 11th - August 17th (Final evaluation):
 
   - test and debug 
 
+Information sources for LV2 support:  
+<http://wiki.audacityteam.org/wiki/LV2_Support>
+
 **IV. About me**
 
 My name is Nicu Bădescu (badescunicu on IRC) and I am a sophomore at

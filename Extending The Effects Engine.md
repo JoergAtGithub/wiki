@@ -92,6 +92,14 @@ W6 June 23rd - June 29th (Mid Term evaluation):
     store a pointer to the EffectsManager). This method is changing the
     effect which is loaded onto the EffectUnit.
 
+<!-- end list -->
+
+``` 
+    * Static creation of check boxes [done]
+    * Use a QSignalMapper to avoid duplicate code for slots [TODO]
+    * Dynamic creation of check boxes based on [Master],num_decks [TODO]
+```
+
 W7 June 30th - July 6th:
 
   - Evaluate LV2 hosts

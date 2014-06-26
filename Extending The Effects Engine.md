@@ -121,7 +121,9 @@ W13 August 11th - August 17th (Final evaluation):
   - test and debug 
 
 Information sources for LV2 support:  
-<http://wiki.audacityteam.org/wiki/LV2_Support>
+<http://wiki.audacityteam.org/wiki/LV2_Support>  
+<http://libregraphicsworld.org/blog/entry/lv2-1-0-released-what-is-next>  
+<http://libregraphicsworld.org/blog/entry/lv2-from-developers-standpoint>
 
 **IV. About me**
 

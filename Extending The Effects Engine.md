@@ -87,10 +87,10 @@ W6 June 23rd - June 29th (Mid Term evaluation):
   - June 24: Allow the Rack EQs to be changed from preferences
     (LigthweightEQ or EQDefault)
   - June 25-26: debug and test
-  - Connect the button responsible for changing the EQ to a slot which
-    calls a method on m\_pEffectsManager (we have to store a pointer to
-    the EffectsManager). This method is changing the effect which is
-    loaded onto the EffectUnit.
+  - In dlgpref.cpp: Connect the button responsible for changing the EQ
+    to a slot which calls a method on m\_pEffectsManager (we have to
+    store a pointer to the EffectsManager). This method is changing the
+    effect which is loaded onto the EffectUnit.
 
 W7 June 30th - July 6th:
 

@@ -16,7 +16,8 @@ text displays on the controller.
 ## A Handy Tip
 
 When you're testing your scripts, you don't have to restart Mixxx. Every
-time you save your file, Mixxx will reload it immediately.
+time you save your file, Mixxx will reload it immediately. This can make
+testing changes very fast.
 
 ## Naming conventions
 

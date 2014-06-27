@@ -13,6 +13,11 @@ controller button simultaneously affect two or more Mixxx properties
 (scratching,) display a complex LED sequence, or even send messages to
 text displays on the controller.
 
+## A Handy Tip
+
+When you're testing your scripts, you don't have to restart Mixxx. Every
+time you save your file, Mixxx will reload it immediately.
+
 ## Naming conventions
 
 Script files use the naming convention

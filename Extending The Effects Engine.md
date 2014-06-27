@@ -96,6 +96,8 @@ W6 June 23rd - June 29th (Mid Term evaluation):
 
 ``` 
     * Static creation of check boxes [done]
+    * Store a pointer to the EQ Rack and connect signals for changing the effect to a slot of that rack [TODO]
+    * Dynamically create a drop down list of available effects to put on the EQRack [TODO]
     * Use a QSignalMapper to avoid duplicate code for slots [TODO]
     * Dynamic creation of check boxes based on [Master],num_decks [TODO]
 ```

@@ -96,10 +96,13 @@ W6 June 23rd - June 29th (Mid Term evaluation):
 
 ``` 
     * Static creation of check boxes [done]
-    * Store a pointer to the EQ Rack and connect signals for changing the effect to a slot of that rack [TODO]
-    * Dynamically create a drop down list of available effects to put on the EQRack [TODO]
-    * Use a QSignalMapper to avoid duplicate code for slots [TODO]
-    * Dynamic creation of check boxes based on [Master],num_decks [TODO]
+    * Store a pointer to the EQ Rack and connect signals for changing the effect to a slot of that rack [done]
+    * Dynamically create a drop down list of available effects to put on the EQRack [done]
+    * Use a QSignalMapper to avoid duplicate code for slots [done in a simpler way]
+    * Dynamic creation of drop down lists based on [Master],num_decks [done by adding a drop down list whenever a new deck is added]
+    * Add labels next to the drop down lists [TODO]
+    * Connect "[Master],num_decks" control to a slot inside dlgprefeq.cpp [TODO]
+    * Store the user's configuration of the EQ Rack[TODO]
 ```
 
 W7 June 30th - July 6th:

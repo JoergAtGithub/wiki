@@ -367,3 +367,15 @@ A couple guidelines for class declarations:
 Using the `goto` statement is not allowed. Typically uses of `goto` are
 better handled by the C++ idiom of [Resource Acquisition Is
 Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization).
+
+# Mixxx SQLite Style Guide
+
+SQLite keywords are written in capital letters
+
+**Good:**
+
+    SELECT id FROM library
+
+**Bad:**
+
+    selcet id from library

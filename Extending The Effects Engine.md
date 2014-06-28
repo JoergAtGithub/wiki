@@ -133,7 +133,8 @@ W13 August 11th - August 17th (Final evaluation):
 Information sources for LV2 support:  
 <http://wiki.audacityteam.org/wiki/LV2_Support>  
 <http://libregraphicsworld.org/blog/entry/lv2-1-0-released-what-is-next>  
-<http://libregraphicsworld.org/blog/entry/lv2-from-developers-standpoint>
+<http://libregraphicsworld.org/blog/entry/lv2-from-developers-standpoint>  
+<http://gdam.ffem.org/ladspa-doc/ladspa-4.html>
 
 **IV. About me**
 

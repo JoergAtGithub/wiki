@@ -102,7 +102,7 @@ W6 June 23rd - June 29th (Mid Term evaluation):
     * Dynamic creation of drop down lists based on [Master],num_decks [done by adding a drop down list whenever a new deck is added]
     * Add labels next to the drop down lists (make them look pretty) [done]
     * Connect "[Master],num_decks" control to a slot inside dlgprefeq.cpp [done]
-    * Store the user's configuration of the EQ Rack[TODO]
+    * Store the user's configuration of the EQ Rack[done]
 ```
 
 W7 June 30th - July 6th:

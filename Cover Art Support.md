@@ -310,11 +310,6 @@ In order to sort it out, we could:
 Last week, @daschuer said that he was getting a bad performance when he
 was scrolling very fast. It is a issue still? Should we use a delay?
 
-##### Using a delay when scrolling very fast
-
-Last week, @daschuer said that he was getting a bad performance when he
-was scrolling very fast. It is a issue still? Should we use a delay?
-
 ##### Searching in track directory
 
 As now we are using the "album" and "base track" names to try finding a

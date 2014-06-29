@@ -100,8 +100,8 @@ W6 June 23rd - June 29th (Mid Term evaluation):
     * Dynamically create a drop down list of available effects to put on the EQRack [done]
     * Use a QSignalMapper to avoid duplicate code for slots [done in a simpler way]
     * Dynamic creation of drop down lists based on [Master],num_decks [done by adding a drop down list whenever a new deck is added]
-    * Add labels next to the drop down lists (make them look pretty) [TODO]
-    * Connect "[Master],num_decks" control to a slot inside dlgprefeq.cpp [TODO]
+    * Add labels next to the drop down lists (make them look pretty) [done]
+    * Connect "[Master],num_decks" control to a slot inside dlgprefeq.cpp [done]
     * Store the user's configuration of the EQ Rack[TODO]
 ```
 

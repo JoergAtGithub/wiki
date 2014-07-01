@@ -137,7 +137,8 @@ Information sources for LV2 support:
 <http://wiki.audacityteam.org/wiki/LV2_Support>  
 <http://libregraphicsworld.org/blog/entry/lv2-1-0-released-what-is-next>  
 <http://libregraphicsworld.org/blog/entry/lv2-from-developers-standpoint>  
-<http://gdam.ffem.org/ladspa-doc/ladspa-4.html>
+<http://gdam.ffem.org/ladspa-doc/ladspa-4.html>  
+<http://www.nongnu.org/ll-plugins/lv2pftci/>
 
 **IV. About me**
 

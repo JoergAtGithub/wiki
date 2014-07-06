@@ -142,12 +142,23 @@ be able to do fast pull requests on Github.
   - handle existing users
   - LRU cache
   - unit tests
-  - md5 hash
+  - md5 hash (avoids duplication)
 
 <!-- end list -->
 
   - <https://github.com/cardinot/mixxx/tree/coverArtSupport>
   - <https://github.com/mixxxdj/mixxx/pull/278>
+
+#### Second Pull Request
+
+  - redesign dlgtrackinfo to show covers
+  - load cover in dlgtrackinfo
+  - edit cover in dlgtrackinfo
+  - warning box for “reload metadata” action
+
+<!-- end list -->
+
+  - <https://github.com/cardinot/mixxx/tree/coverArtSupport_2>
 
 ## Reports
 

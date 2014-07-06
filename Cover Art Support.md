@@ -149,5 +149,5 @@ be able to do fast pull requests on Github.
 
 ## Reports
 
-[June 22 - June 28](cover_art_support_r1) [June 29 - July
-05](cover_art_support_r2)
+  - [June 22 - June 28](cover_art_support_r1)
+  - [June 29 - July 05](cover_art_support_r2)

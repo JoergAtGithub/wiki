@@ -142,10 +142,12 @@ be able to do fast pull requests on Github.
   - handle existing users
   - LRU cache
   - unit tests
+  - md5 hash
 
 <!-- end list -->
 
   - <https://github.com/cardinot/mixxx/tree/coverArtSupport>
+  - <https://github.com/mixxxdj/mixxx/pull/278>
 
 ## Reports
 

@@ -129,6 +129,8 @@ is the class responsible for doing it.
 
 # Issues for the next week
 
+Next week: [June 29 - July 05](cover_art_support_r2)
+
 ## Updating cover\_art column of tablemodels
 
 Currently we are getting the cover location of a track directly from the

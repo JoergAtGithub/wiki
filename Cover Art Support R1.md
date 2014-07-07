@@ -2,7 +2,7 @@
 
 [Cover Art Support](cover_art_support)
 
-# Report: June 22 - June 28
+# Report \#1: June 22 - June 28
 
 According to the plan of splitting the project into smaller parts, to be
 able to perform quick interactions and consequently better integration

@@ -74,6 +74,8 @@ controlling various lower level components such as PulseAudio, Jack,
 Alsa, etc. PulseAudio is similar with Jack. They do their job through
 ALSA or another low level piece of software like the older OSS.
 
+[[/media/lxf130.audio.layers.png|]]
+
 Yours truly,  
 Nicu Badescu
 

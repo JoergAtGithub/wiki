@@ -192,6 +192,7 @@ Weekly reports:
  * [[extending_the_effects_engine_report_w4|Week #4]]
  * [[extending_the_effects_engine_report_w5|Week #5]]
  * [[extending_the_effects_engine_report_w6|Week #6]]
+ * [[extending_the_effects_engine_report_w7|Week #7]]
 ```
 
 Links:  

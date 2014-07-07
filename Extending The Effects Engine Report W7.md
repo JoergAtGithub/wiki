@@ -53,7 +53,7 @@ was disappointed to conclude that is not worth having such an Equalizer.
 Audacity has a window size of \~16000 samples and it is filtering
 samples in chunks to use the overlap add method. However, since Mixxx is
 doing real time equalization, we don't have access to many samples (I
-did some tests and I got 8192 samples when choosing the largest audio
+did some tests and I got 8192 samples when I chose the largest audio
 buffer from preferences). This implied to set the window size to our
 buffer size and further divide this buffer into chunks. Consequently we
 applied FFT on a small number of samples which gave us poor frequency

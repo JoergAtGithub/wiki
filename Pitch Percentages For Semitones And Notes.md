@@ -47,3 +47,9 @@ So you get
 | B   | 440\*(1.059\*1.059) = 493.9 Hz |
 
 etc..
+
+45rpm is 36.36% faster than 33rpm
+
+and
+
+33rpm is 26.7% slower that 45rpm

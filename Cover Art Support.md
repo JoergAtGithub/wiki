@@ -154,11 +154,14 @@ be able to do fast pull requests on Github.
   - redesign dlgtrackinfo to show covers
   - load cover in dlgtrackinfo
   - edit cover in dlgtrackinfo
+  - unset cover (load default)
+  - reload cover from metadata
   - warning box for “reload metadata” action
 
 <!-- end list -->
 
   - <https://github.com/cardinot/mixxx/tree/coverArtSupport_2>
+  - <https://github.com/cardinot/mixxx/pull/1>
 
 ## Reports
 

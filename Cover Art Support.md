@@ -167,3 +167,4 @@ be able to do fast pull requests on Github.
 
   - [June 22 - June 28](cover_art_support_r1)
   - [June 29 - July 05](cover_art_support_r2)
+  - [July 06 - July 12](cover_art_support_r3)

@@ -115,19 +115,19 @@ W8 July 7th - July 13th:
 
 W9 July 14th - July 20th:
 
-  - static implementation of Knockout effect (for Vocal cut) 
+  - Implement LV2Manifest class
 
 w10 July 21st - July 27th:
 
-  - move LV2 to an external quarantine process
+  - Implement LV2Backend class
 
 W11 July 28th - August 3rd:
 
-  - GUI for LV2 select
+  - Implement LV2 wrapper class
 
 W12 August 4th - August 10th:
 
-  - Dynamic loading of LV2 plugins
+  - Run Calf Flanger inside Mixxx using the newly added LV2Backend
 
 W13 August 11th - August 17th (Final evaluation):
 

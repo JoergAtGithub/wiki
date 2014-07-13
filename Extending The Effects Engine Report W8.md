@@ -71,6 +71,8 @@ At Owen's suggestion, I wrote a unit test for the alias control feature.
 I built Mixxx with *test=1* flag and read about Google' C++ Testing
 Framework.
 
+Yours truly, Nicu Badescu
+
 \[1\] - <http://i.imgur.com/Kd7REQh.jpg>  
 \[2\] - <http://i.imgur.com/m69xLKU.jpg>  
 \[3\] - <http://drobilla.net/software/lilv/>  

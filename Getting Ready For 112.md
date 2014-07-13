@@ -66,13 +66,13 @@ deck.
 
 ### New Controls
 
-|  | \[Group\]         |  | Key/Control   |  | Range       |  | What it does                                         |  | On-screen feedback                                               |  |
-|  | ----------------- |  | ------------- |  | ----------- |  | ---------------------------------------------------- |  | ---------------------------------------------------------------- |  |
-|  | \[InternalClock\] |  | bpm           |  | real-valued |  | The BPM of the internal master clock                 |  | Internal Clock BPM changes                                       |  |
-|  | \[InternalClock\] |  | sync\_master  |  | binary      |  | Sets internal clock as master clock                  |  | MASTER button lights on internal master                          |  |
-|  | \[Channel*N*\]    |  | sync\_enabled |  | binary      |  | Press: instant sync Hold: enable sync mode           |  | SYNC button lights & Pitch slider snaps to the appropriate value |  |
-|  | \[Channel*N*\]    |  | sync\_master  |  | binary      |  | Sets deck as master clock                            |  | MASTER button lights                                             |  |
-|  | \[Channel*N*\]    |  | sync\_mode    |  | toggle      |  | SYNC\_NONE = 0, SYNC\_FOLLOWER = 1, SYNC\_MASTER = 2 |  |                                                                  |  |
+|  | \[Group\]         |  | Key/Control   |  | Range       |  | What it does                                         |  | On-screen feedback                                                          |  |
+|  | ----------------- |  | ------------- |  | ----------- |  | ---------------------------------------------------- |  | --------------------------------------------------------------------------- |  |
+|  | \[InternalClock\] |  | bpm           |  | real-valued |  | The BPM of the internal master clock                 |  | Internal Clock BPM changes                                                  |  |
+|  | \[InternalClock\] |  | sync\_master  |  | binary      |  | Sets internal clock as master clock                  |  | MASTER status lights on internal master (don't make this a button for 1.12) |  |
+|  | \[Channel*N*\]    |  | sync\_enabled |  | binary      |  | Press: instant sync; Hold: enable sync mode          |  | SYNC button lights & Pitch slider snaps to the appropriate value            |  |
+|  | \[Channel*N*\]    |  | sync\_master  |  | binary      |  | Sets deck as master clock                            |  | MASTER button lights (FUTURE feature, do not include in 1.12)               |  |
+|  | \[Channel*N*\]    |  | sync\_mode    |  | toggle      |  | SYNC\_NONE = 0, SYNC\_FOLLOWER = 1, SYNC\_MASTER = 2 |  | No user feedback needed                                                     |  |
 
 ### Recommended Behavior
 

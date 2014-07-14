@@ -116,10 +116,14 @@ W8 July 7th - July 13th:
 W9 July 14th - July 20th:
 
   - Implement LV2Manifest class
+  - We will be able to obtain an EffectManifest from a LilvPlugin\*
 
 w10 July 21st - July 27th:
 
   - Implement LV2Backend class
+  - We will be able to see the available LV2 plug ins and cycle through
+    them inside an EffectRack (using a dummy LV2 Effect wrapper class
+    which is playing silence)
 
 W11 July 28th - August 3rd:
 
@@ -128,6 +132,8 @@ W11 July 28th - August 3rd:
 W12 August 4th - August 10th:
 
   - Run Calf Flanger inside Mixxx using the newly added LV2Backend
+  - We will be able to actually use an LV2 plug in such as Calf Flanger
+    or the knockout effect
 
 W13 August 11th - August 17th (Final evaluation):
 

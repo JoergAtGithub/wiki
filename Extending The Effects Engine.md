@@ -146,7 +146,8 @@ Information sources for LV2 support:
 <http://gdam.ffem.org/ladspa-doc/ladspa-4.html>  
 <http://www.nongnu.org/ll-plugins/lv2pftci/>  
 <https://code.google.com/p/audacity/source/browse/audacity-src/trunk/src/effects/lv2/>  
-<http://lac.linuxaudio.org/2014/download/lac2014_lv2_atoms_presentation.pdf>
+<http://lac.linuxaudio.org/2014/download/lac2014_lv2_atoms_presentation.pdf>  
+<http://dev.drobilla.net/browser/trunk/jalv/src/jalv.c>
 
 **IV. About me**
 

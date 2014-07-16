@@ -69,21 +69,22 @@ the cover from metadata.
 
 ## Warning boxes
 
-There are two cases when a box is showed:
+There are two cases when a box is showed: 1 - a) Some cover is being
+displayed;
 
-1.  Cover is changed:
+``` 
+   b) User clicks on "reload track from metadata"
+   c) the displayed_cover is different from the embedded_cover (new)
+       -> currently embedded_cover is our priority, so if the current cover is different from the embedded_cover, it is because the user changed it once... So, if we see that the md5_hashes are different, we will ask if he/she want to overwrite the cover...
+```
 
-<!-- end list -->
+2 - a) Some cover is being displayed;
 
-  - The current cover art is different from the embedded cover art.
-
-<!-- end list -->
-
-1.  Reload cover from metadata
-
-<!-- end list -->
-
-  - The current track does not have an embedded cover art.
+``` 
+   b) User clicks on "reload track from metadata"
+   c) the current track does not have an embedded cover
+       -> We are warning that there is no embedded_cover for the current track, and we ask if the user want to unset the current one (that was probably changed manually)...
+```
 
 # Issues for the next week
 

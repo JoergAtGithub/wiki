@@ -71,7 +71,7 @@ the cover from metadata.
 
 There are two cases when a box is showed:
 
-1 - a) Some cover is being displayed;
+\*\*1 - \*\* a) Some cover is being displayed;
 
 b) User clicks on "reload track from metadata"
 
@@ -82,7 +82,7 @@ is different from the embedded\_cover, it is because the user changed it
 once... So, if we see that the md5\_hashes are different, we will ask if
 he/she want to overwrite the cover...
 
-2 - a) Some cover is being displayed;
+\*\*2 - \*\* a) Some cover is being displayed;
 
 b) User clicks on "reload track from metadata"
 

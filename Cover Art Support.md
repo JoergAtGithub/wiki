@@ -143,6 +143,13 @@ be able to do fast pull requests on Github.
   - LRU cache
   - unit tests
   - md5 hash (avoids duplication)
+  - avoids showing cover widget for not supported features:
+  - browse
+  - recordings
+  - history
+  - rhythmbox
+  - banshee
+  - itunes
 
 <!-- end list -->
 
@@ -153,15 +160,33 @@ be able to do fast pull requests on Github.
 
   - redesign dlgtrackinfo to show covers
   - load cover in dlgtrackinfo
-  - edit cover in dlgtrackinfo
+  - change cover location in dlgtrackinfo
   - unset cover (load default)
-  - reload cover from metadata
-  - warning box for “reload metadata” action
+  - reload cover art
+  - warning box issue
+  - icon for each cover\_art action
+  - copy cover from external dir to track dir (if the user changes the
+    cover)
 
 <!-- end list -->
 
   - <https://github.com/cardinot/mixxx/tree/coverArtSupport_2>
   - <https://github.com/cardinot/mixxx/pull/1>
+
+#### Third Pull Request
+
+  - add cover\_art column in Library feature
+  - add cover\_art column in AutoDJ feature
+  - add cover\_art column in Analyze feature
+  - add cover\_art column in Playlists feature
+  - add cover\_art column in Crates feature
+  - adjust cover art size
+  - delay cover loading when the user is scrolling fast
+
+<!-- end list -->
+
+  - <https://github.com/cardinot/mixxx/tree/coverArtSupport_3>
+  - <https://github.com/cardinot/mixxx/pull/2>
 
 ## Reports
 

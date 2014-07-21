@@ -74,6 +74,9 @@ which I pushed are generics, it means that maybe they are not ideal yet
 (design). However, for future changes we just would have to overwrite
 the current files.
 
+**OPEN IN FILE BROWSER**  
+\- added button to open the current track location in the file browser.
+
 ## Second PR: Warning/Question Boxes
 
 Considering that when the user choose "reload" the fields, all of them

@@ -55,14 +55,15 @@ I created a basic LV2 backend and a first version of an effect
 processor. I will work on improving them during the next week.
 
 I did some tests with kn0ck0ut\[1\] plugin. I used Audacity, jalv and
-lv2proc. The results are the same: the plugin is only playing silence
-regardless of how I set its parameters. So I joined the \#lv2 Freenode
-channel and asked for help, which came right away. Here\[2\] you can
-read the conversation. This kind of responsiveness is what I love about
-open source communities :D . When we conceived this GSoC project, our
-goal was performing vocal removal on the fly, using the before mentioned
-plugin. Luckily I found another\[3\] LV2 plugin pack which features a
-Karaoke effect.
+lv2proc as LV2 hosts. The results are the same: the plugin is only
+playing silence regardless of how I set its parameters. So I joined the
+\#lv2 Freenode channel and asked for help, which came right away.
+Here\[2\] you can read the conversation. This kind of responsiveness is
+what I love about open source communities :D . When we conceived this
+GSoC project, our goal was performing vocal removal on the fly, using
+the before mentioned plugin. Luckily I found another\[3\] LV2 plugin
+pack which features a Karaoke effect. I'll do some tests with it and
+keep you posted\!
 
 See you soon,  
 Nicu Badescu

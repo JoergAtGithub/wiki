@@ -144,12 +144,12 @@ be able to do fast pull requests on Github.
   - unit tests
   - md5 hash (avoids duplication)
   - avoids showing cover widget for not supported features:
-  - browse
-  - recordings
-  - history
-  - rhythmbox
   - banshee
+  - browse
   - itunes
+  - recordings
+  - rhythmbox
+  - traktor
 
 <!-- end list -->
 

@@ -195,3 +195,4 @@ be able to do fast pull requests on Github.
   - [July 06 - July 12](cover_art_support_r3)
   - [July 13 - July 19](cover_art_support_r4)
   - [July 20 - July 26](cover_art_support_r5)
+  - [July 27 - August 02](cover_art_support_r6)

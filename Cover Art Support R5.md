@@ -121,7 +121,7 @@ If the CoverDelegate is locked, it must not try to load and search
 covers. It means that in this cases it will just draw covers which are
 already in the PixmapCache.
 
-## Downloading Covers
+## Fourth PR: Downloading Covers
 
 This week I also spent a lot of time studying some APIs to download
 covers. The good point is that the best available APIs use a very
@@ -138,6 +138,8 @@ avoids having to add new dependencies to Mixxx.
 
 Now the **Last.fm** search is already working and I also implemented a
 initial layout to show the results.
+
+<https://github.com/cardinot/mixxx/tree/coverArtSupport_4>
 
 # Issues for the next week
 

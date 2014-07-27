@@ -54,5 +54,6 @@ developers.
 
 Stay tuned for updates,  
 Nicu Badescu  
-\[1\] - <https://github.com/mixxxdj/mixxx/pull/297> \[2\] -
-<https://github.com/mixxxdj/mixxx/pull/300>
+\[1\] - <https://github.com/mixxxdj/mixxx/pull/297>  
+\[2\] - <https://github.com/mixxxdj/mixxx/pull/300>  
+[Back to the main page\!](extending_the_effects_engine)

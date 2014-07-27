@@ -77,4 +77,5 @@ Nicu Badescu
 \[1\] - <http://i.imgur.com/Kd7REQh.jpg>  
 \[2\] - <http://i.imgur.com/m69xLKU.jpg>  
 \[3\] - <http://drobilla.net/software/lilv/>  
-\[4\] - <https://gist.github.com/badescunicu/44bff3b9e24fd905806c>
+\[4\] - <https://gist.github.com/badescunicu/44bff3b9e24fd905806c>  
+[Back to the main page\!](extending_the_effects_engine)

@@ -47,4 +47,5 @@ Yours truly,
 Nicu Badescu
 
 \[1\] - https://bugs.launchpad.net/mixxx/+bug/1273953  
-\[2\] - <https://github.com/badescunicu/mixxx/compare/kill_buttons>
+\[2\] - <https://github.com/badescunicu/mixxx/compare/kill_buttons>  
+[Back to the main page\!](extending_the_effects_engine)

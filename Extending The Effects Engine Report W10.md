@@ -39,19 +39,20 @@ Daniel had some issues with the lilv library, so I added a Lilv class to
 `features.py`. I hope this solves the problem with lilv library linking.
 
 Also, I have added kill buttons to Butterworth8EQEffect and opened a
-pull request. I am currently waiting for feedback. It depends if we want
-to go this way with button and enumeration parameters, or tackle this
-problem differently.
+pull request\[1\]. I am currently waiting for feedback. It depends if we
+want to go this way with button and enumeration parameters, or tackle
+this problem differently.
 
 As a side task, I added search functionality to developer's log. I
 needed this feature while doing some debugging. I used Qt Creator to
 insert a `QLineEdit` and a `QPushButton` to the GUI. Inside
 *dlgdevelopertools.cpp* I connedted QLineEdit's `returnPressed()` and
 QPushButton's `clicked()` signals to a newly added slot,
-`slotLogSearch()`. Here\[1\] is the PR I opened for this feature. Tell
+`slotLogSearch()`. Here\[2\] is the PR I opened for this feature. Tell
 me what you think about it. In my opinion, this might be handy for some
 developers.
 
 Stay tuned for updates,  
 Nicu Badescu  
-\[1\] - <https://github.com/mixxxdj/mixxx/pull/300>
+\[1\] - <https://github.com/mixxxdj/mixxx/pull/297> \[2\] -
+<https://github.com/mixxxdj/mixxx/pull/300>

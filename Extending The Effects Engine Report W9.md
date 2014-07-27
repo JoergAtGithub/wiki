@@ -70,4 +70,5 @@ Nicu Badescu
 
 \[1\] - <https://github.com/jeremysalwen/kn0ck0ut-LV2>  
 \[2\] - <https://gist.github.com/badescunicu/724b035396ed7bdd9ac8>  
-\[3\] - <https://github.com/swh/lv2>
+\[3\] - <https://github.com/swh/lv2>  
+[Back to the main page\!](extending_the_effects_engine)

@@ -87,4 +87,6 @@ https:*github.com/mcpierce/audacity/blob/master/src/effects/Equalization.cpp
 http:*www.physik.uni-wuerzburg.de/\~praktiku/Anleitung/Fremde/ANO14.pdf  
 \[5\] - http:*www.zytrax.com/tech/audio/equalization.html\#fft  
 \[6\] -
-http:*blog.bjornroche.com/2012/08/why-eq-is-done-in-time-domain.html
+http:*blog.bjornroche.com/2012/08/why-eq-is-done-in-time-domain.html  
+  
+[Back to the main page\!](extending_the_effects_engine)

@@ -203,6 +203,7 @@ Weekly reports:
  * [[extending_the_effects_engine_report_w7|Week #7]]
  * [[extending_the_effects_engine_report_w8|Week #8]]
  * [[extending_the_effects_engine_report_w9|Week #9]]
+ * [[extending_the_effects_engine_report_w10|Week #10]]
 ```
 
 Links:  

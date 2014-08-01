@@ -318,6 +318,16 @@ If you used the 1.11 branch, you must type `cd mixxx` twice.
     scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 
+This should generate `Mixxx.app` which you can run by double-clicking on
+or typing `open Mixxx.app`. Generating the .app has some expensive
+scanning and relinking steps so if you want to avoid this you can skip
+`scons bundle` and instead on the first run of mixxx run it as:
+
+    ./mixxx --resourcePath res/
+
+So that it records res/ in mixxx.cfg as where to find skins etc instead
+of dying at startup.
+
 As of v1.12, Mixxx will use CoreAudio to decode MP3 and AAC files by
 default. If you want to use `libmad` or `libfaad` for MP3 and AAC
 decoding, simply set the `mad` and `faad` flags and clear the
@@ -325,6 +335,8 @@ decoding, simply set the `mad` and `faad` flags and clear the
 the `modplug` flag. For example:
 
     scons hss1394=0 mad=1 faad=1 coreaudio=0 modplug=1 verbose=0
+
+#### Common error messages & solutions
 
 If it you get a message like:
 
@@ -353,16 +365,6 @@ are on OSX 10.9 Mavericks and get a link error like:
 Then try the "scons" command above like this:
 
     scons stdlib=libc++
-
-This should generate `Mixxx.app` which you can run by double-clicking on
-or typing `open Mixxx.app`. Generating the .app has some expensive
-scanning and relinking steps so if you want to avoid this you can skip
-`scons bundle` and instead on the first run of mixxx run it as:
-
-    ./mixxx --resourcePath res/
-
-So that it records res/ in mixxx.cfg as where to find skins etc instead
-of dying at startup.
 
 ## 5\. Create an XCode project (optional)
 

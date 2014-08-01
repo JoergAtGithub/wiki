@@ -340,6 +340,15 @@ Then try the "scons" command above like this:
 
     scons machine=x86_64
 
+OSX 10.9 Mavericks has changed the stdlib default to libc++. So if you
+are on OSX 10.9 Mavericks and get a link error like:
+
+    ld: symbol(s) not found for architecture x86_64
+
+Then try the "scons" command above like this:
+
+    scons stdlib=libc++
+
 This should generate `Mixxx.app` which you can run by double-clicking on
 or typing `open Mixxx.app`. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip

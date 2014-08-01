@@ -7,7 +7,7 @@ knowledge about using and compiling with the command line (eg:
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
 
 This guide is written for Snow Leopard (10.6.x) and Leopard (10.5.x) but
-should work on Lion (10.7.x).
+should work up to Mavericks (10.9.x).
 
 ## 1\. Install Xcode development tools
 

@@ -16,7 +16,7 @@ tools](http://developer.apple.com/technologies/tools/) installed. Xcode
 is a package provided by Apple containing compilers, libraries and
 additional tools required to develop applications for Mac OS X.
 
-#### Install Xcode on Mac OS X 10.7 Lion & 10.8 Mountain Lion
+#### Install Xcode on Mac OS X 10.7 Lion or later
 
 Get the latest version of Xcode for free using the [Mac App
 Store](http://itunes.apple.com/us/app/xcode/id448457090?mt=12).

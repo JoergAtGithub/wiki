@@ -291,6 +291,11 @@ code from our git repository:
     git clone -b 1.11 https://github.com/mixxxdj/mixxx.git (for current stable)
     git clone https://github.com/mixxxdj/mixxx.git (for latest trunk)
 
+If you wanted to update later to a newer git snapshot, you would go back
+to the mixxx directory and run:
+
+    git pull
+
 ## 4\. Compile and install
 
 If you used Homebrew, you need to set your compiler paths accordingly.
@@ -358,11 +363,6 @@ scanning and relinking steps so if you want to avoid this you can skip
 
 So that it records res/ in mixxx.cfg as where to find skins etc instead
 of dying at startup.
-
-If you wanted to update later to a newer git snapshot, you would go back
-to the mixxx directory and run:
-
-    git pull
 
 ## 5\. Create an XCode project (optional)
 

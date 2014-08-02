@@ -408,6 +408,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Allow inline svg to handle ''<Variable>'' elements. See [[https://github.com/mixxxdj/mixxx/pull/286|pull#286]]
  * Added the feature to ''<Number_>'' widgets to insert the value int the ''<Text>'' by ''%1''. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * Added [[creating_skins#db_display|<NumberDb>]], that allows to display a ratio scaled in dB. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * Added optional ''mode="stretch"'' attribute for all widgets that support <BackPath>. Default is tiled backpaths, see [[https://github.com/mixxxdj/mixxx/pull/178|pull#178]]<code=xml><BackPath mode="stretch">background_image.png</BackPath></code>

@@ -12,8 +12,8 @@ work can be broken down on two parts:
 
   - Create a new effect which features 10 bandpass static filters. Their
     frequency is set up when they are created. Biquad Bandpass filters
-    generated with `fidlib` are used inside this effect. This new type
-    of filters is based on Daniel's IIR filters refactoring\[1\].
+    generated with `fidlib` are used for this effect. This new type of
+    filters is based on Daniel's IIR filters refactoring\[1\].
 
 <!-- end list -->
 
@@ -50,11 +50,11 @@ an integer division was used instead of a floating point one. Here\[2\]
 you can check out the commit. I'm flattered he mentioned my name in the
 commit message.
 
-I continued my work on LV2 support by adding support for enumeration and
-button parameters. They are based on a multi state button (2 in case of
-a *toggle* parameter, more than 2 in case of an *enumeration*
+I continued my work on LV2 support by adding enumeration and button
+parameters. They are based on a multi state button (two in case of a
+*toggle* parameter, more than two in case of an *enumeration*
 parameter). The main thing this type of parameters needed was for their
-underlying value to go back to the minimum if the maximum was excedeed.
+underlying value to go back to the minimum if the maximum was exceeded.
 This\[3\] commit implements that behaviour. Working on this I got a
 "strange" C++ error which cause was using a getter method on a const
 object. All I had to do was make the getter const, because only const

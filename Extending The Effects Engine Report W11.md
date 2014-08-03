@@ -75,7 +75,8 @@ checking. Thus, sometimes the code even worked, maybe because the memory
 area right next to *params* was not accessed by someone else. This bug
 taught me to be more careful when allocating resources in C++.
 
-Cheers, Nicu Badescu
+Cheers,  
+Nicu Badescu
 
 \[1\] - <https://github.com/mixxxdj/mixxx/pull/294>  
 \[2\] -

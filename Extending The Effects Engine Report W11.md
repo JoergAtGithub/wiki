@@ -62,15 +62,14 @@ object. All I had to do was make the getter const, because only const
 methods can be called on const objects. This makes sense because
 otherwise a non const method might attempt to modify the const object.
 
-However, after testing some LV2 plugins and their enumeration
-parameters, I was not pleased to realize Mixxx crashes chaotically when
-changing effects. What made this bug hard was that I got different
-errors each time I ran Mixxx and using debug mode did not help me very
-much. I found out that the bug disappears if I remove the code
-responsible for updating lv2 parameters: `params[i] =
-m_parameters[i]->value().toFloat()`. `params` is a dynamically allocated
-float array which is connected to lv2 plugin instance's ports. The
-problem was that I allocated memory only for
+After testing some LV2 plugins and their enumeration parameters, I was
+not pleased to realize Mixxx crashes chaotically when changing effects.
+What made this bug hard was that I got different errors each time I ran
+Mixxx and using debug mode did not help me very much. I found out that
+the bug disappears if I remove the code responsible for updating lv2
+parameters: `params[i] = m_parameters[i]->value().toFloat()`. `params`
+is a dynamically allocated float array which is connected to lv2 plugin
+instance's ports. The problem was that I allocated memory only for
 *manifest.parameters.size()* and forgot to take into account
 *manifest.buttonParametrs.size()*. C++ does not perform boundary
 checking. Thus, sometimes the code even worked, maybe because the memory

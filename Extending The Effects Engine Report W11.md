@@ -1,5 +1,4 @@
-Hello again,
-
+Hello again,  
 Last week I told you that I added the handling of Lilv library inside
 `features.py`. There I set the minimum version of lilv to be 0.14.
 Daniel pointed me out that Ubuntu 12.04 repositories still feature the
@@ -40,8 +39,8 @@ work can be broken down on two parts:
 * The best solution was making use of QObject's dynamic properties. I used ''setProperty'' method to store the slider's index. All I had to do inside the slot now was to use the ''sender()'' method to obtain the slider which emitted the signal and get retrieve index which was previously stored as a dynamic property.
 ```
 
-Here is a screenshot with the current state of the Master EQ:
-\<image\_with\_master\_eq\>
+Here is a screenshot with the current state of the Master
+EQ:[[/media/master_eq.png|]]
 
 I have some good news about the kn0ck0out LV2 plugin. As you know from
 my ninth report, it was not working as it should have, it was only

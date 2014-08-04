@@ -182,11 +182,22 @@ be able to do fast pull requests on Github.
   - add cover\_art column in Crates feature
   - adjust cover art size
   - delay cover loading when the user is scrolling fast
+  - batch updates (avoiding doing many writes in a short time)
 
 <!-- end list -->
 
   - <https://github.com/cardinot/mixxx/tree/coverArtSupport_3>
   - <https://github.com/cardinot/mixxx/pull/2>
+
+#### Fourth Pull Request
+
+  - basic UI to download and show covers (dlgcoverartfetcher)
+  - download covers from Last.fm
+
+<!-- end list -->
+
+  - <https://github.com/cardinot/mixxx/tree/coverArtSupport_4>
+  - <https://github.com/cardinot/mixxx/pull/3>
 
 ## Reports
 

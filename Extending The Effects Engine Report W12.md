@@ -70,5 +70,12 @@ the filters if the sample rate is changed. It cycles through the band
 filters and calls `setFrequencyCorners` on each one with the new value
 of sample rate.
 
+Today is the suggested pencils down date. I am happy with my progress
+and I will spend the last week of GSoC removing debug comments across
+the code I wrote and trying to create a better GUI for the LV2
+preferences.
+
 \[1\] -
-<https://github.com/badescunicu/mixxx/commit/8ce1b54885d637ad9a35ce82d9eded9ccb885ffd>
+<https://github.com/badescunicu/mixxx/commit/8ce1b54885d637ad9a35ce82d9eded9ccb885ffd>  
+  
+[Back to the main page\!](extending_the_effects_engine)

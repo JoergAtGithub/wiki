@@ -75,6 +75,9 @@ and I will spend the last week of GSoC removing debug comments across
 the code I wrote and trying to create a better GUI for the LV2
 preferences.
 
+Cheers,  
+Nicu Badescu
+
 \[1\] -
 <https://github.com/badescunicu/mixxx/commit/8ce1b54885d637ad9a35ce82d9eded9ccb885ffd>  
   

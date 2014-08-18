@@ -68,6 +68,11 @@ the ideas behind the EQ Rack:
     and is active on a specific \[Channel\];
   - inside Equalizer Preferences we can choose which EQ Effect should be
     active on each Deck
+  - skins don't need to be modified because aliases are created
+    dynamically when the number of decks is changed
+  - example: "\[ChannelX\],filterLow" is an alias for
+    "\[EffectRackY\_EffectUnitX\_Effect1\],parameter1", where Y is the
+    index of the last Effect Rack (the EQ Rack)
   - the "Bypass" check box is equivalent to loading an empty effect on
     the EQ Effect spot for each Deck
   - a nice feature is offering the advanced user the possibility to load

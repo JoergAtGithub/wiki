@@ -40,8 +40,6 @@ Steps to follow:
     signal processing to the frame created by the Bitcrusher;
   - create a new EffectChain containing EQ and Filter EffectUnits;
   - connect the current EQ controls to the new effect units;
-  - add a Brake effect and make it available for selecting, like
-    Bitcrusher, Flanger, Echo, Reverb and Filter currently are.
 
 2\) Ability to load LV2 plugins into Mixxx
 

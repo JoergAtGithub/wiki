@@ -147,7 +147,8 @@ Information sources for LV2 support:
 <http://lac.linuxaudio.org/2014/download/lac2014_lv2_atoms_presentation.pdf>  
 <http://dev.drobilla.net/browser/trunk/jalv/src/jalv.c>
 
-Related wiki pages: [EQ Effect Rack](eq_rack)  
+Related wiki pages:  
+[EQ Effect Rack](eq_rack)  
 [LV2 Support](lv2_support)
 
 **IV. About me**

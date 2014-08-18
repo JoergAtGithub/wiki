@@ -211,7 +211,7 @@ Weekly reports:
 
 Links:  
 \[1\] -
-https:*github.com/mixxxdj/mixxx/blob/master/src/engine/enginedeck.cpp\#L113  
+https:*github.com/mixxxdj/mixxx/blob/master/src/engine/enginedeck.cpp\#L103  
 \[2\] - https:*bugs.launchpad.net/mixxx/+bug/1299031  
 \[3\] - http:*www.rosedu.org/  
 \[4\] - https:*github.com/rosedu/wouso/commits?author=badescunicu  

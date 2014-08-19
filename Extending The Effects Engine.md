@@ -22,7 +22,7 @@ This project consists of two parts:
 1\) EQ Effect:
 
   - replace the current static EQ signal path with an additional
-    EffectChain containing the EQ effect and Filter effect;
+    EffectChain containing the EQ effect;
   - it is the perfect way to learn the effect framework and its
     interaction with CO;
   - the target of this part is removing this line\[1\] by moving the
@@ -38,7 +38,7 @@ Steps to follow:
     the Bug Description \[2\]) and a filter effect;
   - turn the Bitcrusher into a Butterworth EQ by copying the Butterworth
     signal processing to the frame created by the Bitcrusher;
-  - create a new EffectChain containing EQ and Filter EffectUnits;
+  - create a new EffectChain containing EQ EffectUnits;
   - connect the current EQ controls to the new effect units;
 
 2\) Ability to load LV2 plugins into Mixxx

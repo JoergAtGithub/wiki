@@ -39,6 +39,9 @@ These are the main ideas behind the EQ Rack:
     * "[Channel3],filterHigh" is an alias for "[EffectRackY_EffectUnit3_Effect1],parameter3"   
 ```
 
+Following this approach it is easy to add a Master EQ which can be
+activated or deactivated for Master output.
+
   
   
 \==== User's point of view ====

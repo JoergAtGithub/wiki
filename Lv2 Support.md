@@ -3,7 +3,8 @@
 Mixxx has now basic LV2 native support. The advantage of native LV2
 integration is that every user can benefit from it, it works seamlessly
 with Mixxx, no tweaks are required to make it functional. The normal
-user won't see a diference between native effects and LV2 ones.
+user won't see a diference between native effects and LV2 ones. Here is
+the PR for LV2 support: <https://github.com/mixxxdj/mixxx/pull/316>
 
 Pending issues (thanks Daniel for the ideas):  
 

@@ -5,6 +5,21 @@ integration is that every user can benefit from it, it works seamlessly
 with Mixxx, no tweaks are required to make it functional. The normal
 user won't see a diference between native effects and LV2 ones.
 
+Pending issues (thanks Daniel for the ideas):  
+
+  - Blacklist: We need to be able to blacklist plugins which are known
+    to be useless for Mixxx like "Stereo to MS"
+  - We need also an option to hide plugins from the GUI because they
+    will not be used by the DJ (Nicu: isn't this the same as
+    blacklisting a plugin?)
+  - The same for the Parameters. We need an option to hide unwanted
+    parameter knobs
+  - We need a "More" popup for plugin with more than 8 useful parameters
+  - We need a widget that deal with long effect or button names
+  - The LV2 plugins in preferences should be listed in a list view
+  - It should contain an "Info" button displaying exactly the info that
+    is displayed by lv2info from the lilv2-utils package
+
 ### Developer's point of view
 
 The steps towards basic LV2 integration are the following (I must thank

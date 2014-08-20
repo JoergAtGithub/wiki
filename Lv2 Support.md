@@ -51,7 +51,8 @@ functions:
   - LilvNode\* lilv\_plugin\_get\_name(const LilvPlugin\*);
   - const char\* lilv\_node\_as\_string(LilvNode\*);
 
-\*Useful information for skin developers:\*  
+##### Useful information for skin developers:
+
 A new tag for buttons used inside the effects framework was introduced,
 `EffectPushButton`. It shall be used by skin developers when they create
 a new skin. It supports multi state parameters (LV2 enumeration

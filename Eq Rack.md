@@ -15,7 +15,8 @@ This has the following consequences:
 Below is a drawing of the current EQ approach (left) and how it will
 look after we ditch processing from `EngineFilterBlock`:
 
-![http://oi59.tinypic.com/98t7pd.jpg](http://oi59.tinypic.com/98t7pd.jpg)
+![http://oi59.tinypic.com/98t7pd.jpg](http://oi59.tinypic.com/98t7pd.jpg)  
+  
 
 ### Developer's point of view
 
@@ -38,7 +39,9 @@ These are the main ideas behind the EQ Rack:
     * "[Channel3],filterHigh" is an alias for "[EffectRackY_EffectUnit3_Effect1],parameter3"   
 ```
 
-### User's point of view
+  
+  
+\==== User's point of view ====
 
 The Equalizer preferences menu has changed. Inside it, the user can can
 choose which EQ Effect should be active on each Deck.

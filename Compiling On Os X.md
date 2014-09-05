@@ -338,18 +338,15 @@ the `modplug` flag. For example:
 
 #### Common error messages & solutions
 
-OSX 10.9 Mavericks has changed the stdlib default to libc++. So if you
-are on OSX 10.9 Mavericks and get a link error like:
+##### ld: symbol(s) not found for architecture x86\_64
 
-    ld: symbol(s) not found for architecture x86_64
-
-Then try the "scons" command above like this:
+OSX 10.9 Mavericks has changed the stdlib default to libc++. If you are
+on OSX 10.9 Mavericks and get this link error, try the "scons" command
+above like this:
 
     scons stdlib=libc++
 
-If it you get a message like:
-
-    Error: QT path does not exist or QT4 is not installed.
+##### Error: QT path does not exist or QT4 is not installed.
 
 If you installed Qt to a custom location you will have to provide this
 via the `qtdir` flag. For example, you could try:
@@ -358,11 +355,9 @@ via the `qtdir` flag. For example, you could try:
 
 Because /Developer is a common place for Qt to drop its frameworks.
 
-If it you get a message like:
+##### d: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
 
-    d: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
-
-Then try the "scons" command above like this:
+Try the "scons" command above like this:
 
     scons machine=x86_64
 

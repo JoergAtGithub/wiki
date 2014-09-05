@@ -338,6 +338,15 @@ the `modplug` flag. For example:
 
 #### Common error messages & solutions
 
+OSX 10.9 Mavericks has changed the stdlib default to libc++. So if you
+are on OSX 10.9 Mavericks and get a link error like:
+
+    ld: symbol(s) not found for architecture x86_64
+
+Then try the "scons" command above like this:
+
+    scons stdlib=libc++
+
 If it you get a message like:
 
     Error: QT path does not exist or QT4 is not installed.
@@ -356,15 +365,6 @@ If it you get a message like:
 Then try the "scons" command above like this:
 
     scons machine=x86_64
-
-OSX 10.9 Mavericks has changed the stdlib default to libc++. So if you
-are on OSX 10.9 Mavericks and get a link error like:
-
-    ld: symbol(s) not found for architecture x86_64
-
-Then try the "scons" command above like this:
-
-    scons stdlib=libc++
 
 ## 5\. Create an XCode project (optional)
 

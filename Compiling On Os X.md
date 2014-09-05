@@ -336,7 +336,7 @@ the `modplug` flag. For example:
 
     scons hss1394=0 mad=1 faad=1 coreaudio=0 modplug=1 verbose=0
 
-#### Common error messages & solutions
+### Common error messages & solutions
 
 ##### ld: symbol(s) not found for architecture x86\_64
 

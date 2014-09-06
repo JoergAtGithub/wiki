@@ -149,8 +149,8 @@ such a control in the XML.
           <byteoffset>2</byteoffset> <!-- Offset from the first byte in the packet, regardless of endianness. So 2 points to the third byte in the packet. -->
           <length>2</length> <!-- Number of bytes that this control affects. -->
           <endian>little</endian> <!-- Optional - Little endian means the most significant byte is the last one (second in this case.) "little" is the default. -->
-          <min>0x0000</min> <!-- Optional - Lowest value of these bytes when the control is at its minimum setting. 0 is the default. -->
-          <max>0x01FF</max> <!-- Optional - Highest value of these bytes when the control is at its maximum setting. 0xFFFF is the default for two bytes. -->
+          <min>0x0000</min> <!-- Optional - Lowest value of these bytes when the control is at its minimum setting (always big-endian for readability.) 0 is the default. -->
+          <max>0x01FF</max> <!-- Optional - Highest value of these bytes when the control is at its maximum setting (always big-endian for readability.) 0xFFFF is the default for two bytes. -->
 ```
 
 ##### Bit-level controls

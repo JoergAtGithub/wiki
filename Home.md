@@ -123,6 +123,7 @@ plans.
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
   - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)
+  - [Learning resources](Learning%20resources)
 
 ## Google Summer of Code
 

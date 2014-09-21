@@ -80,8 +80,7 @@ plans.
 
   - [How to fix your first bug](Bugfix%20Workflow) 
   - [How to use Git](Using%20Git)
-  - [Submitting
-    Patches](using_bazaar#making_it_work_like_svn_aka_centralized_mode)
+  - [Submitting Patches](using_git#creating_patches)
   - [Creating backtraces](Creating%20backtraces)
   - [The Bug Tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)

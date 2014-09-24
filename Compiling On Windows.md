@@ -34,7 +34,7 @@ variable
     buildserver](https://github.com/mixxxdj/buildserver/tree/windows_environment)
     repository and checkout the **windows\_environment** branch.
     Remember the folder to which the repository was saved. We will refer
-    to that folder as **WINLIB\_PTAH** later.
+    to that folder as **WINLIB\_PATH** later.
 
 <!-- end list -->
 

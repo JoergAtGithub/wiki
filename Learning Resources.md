@@ -48,3 +48,6 @@
     * [[http://diydsp.com/livesite/pages/home#DSP_FAQs|DSP FAQs]]
     * [[http://diydsp.com/livesite/pages/home#DSP_Books|DSP Books]]
 ```
+
+  - **[Music DSP](http://www.musicdsp.org/)**. Site with a huge database
+    of DSP code.

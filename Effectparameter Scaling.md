@@ -141,6 +141,49 @@ by control behavior classes.
 If the value of the control does not match the value that should be
 indicated in LDS, a separate indicator control is used.
 
+### Parameter Hints
+
+    class EffectManifestParameter {
+      public:
+        enum ValueHint {
+            VALUE_UNKNOWN = 0,
+            VALUE_BOOLEAN,
+            VALUE_INTEGRAL,
+            VALUE_FLOAT
+        };
+        
+        enum ControlHint {
+            CONTROL_UNKNOWN = 0,
+            CONTROL_KNOB_LINEAR,
+            CONTROL_KNOB_LOGARITHMIC,
+            CONTROL_TOGGLE
+        };
+        
+        enum SemanticHint {
+            SEMANTIC_UNKNOWN = 0,
+            SEMANTIC_SAMPLES,
+            SEMANTIC_NOTE,
+        };   
+           
+        enum UnitsHint {
+            UNITS_UNKNOWN = 0,
+            UNITS_TIME,
+            UNITS_HERTZ,
+            UNITS_SAMPLERATE, // fraction of the samplerate
+            UNITS_BEATS, // multiples of a beat
+        };
+        
+        enum LinkType {
+            LINK_NONE = 0, // Not controlled by the super knob
+            LINK_LINKED, // Controlled by the super knob as it is
+            LINK_LINKED_LEFT, // Controlled by the left side of the super knob
+            LINK_LINKED_RIGHT, // Controlled by the right side of the super knob
+            LINK_LINKED_LEFT_RIGHT, // Controlled by both sides of the super knob
+            NUM_LINK_TYPES
+        };
+        
+        ...
+
 # Requirements
 
   - Value feedback including units 

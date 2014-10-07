@@ -30,13 +30,17 @@ Parameter.
   - Bits 
   - Rate 
 
-## Desired Scales
+## Desired Scales / Behaviors
 
   - Linear 
   - Logarithmic
   - Audio-Taper
   - Steps
   - Split Scale 
+  - Pushbutton 
+  - Togglebutton 
+  - Latching button 
+  - Powerwindow button
 
 # Requirements
 

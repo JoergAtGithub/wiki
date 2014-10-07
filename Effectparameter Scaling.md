@@ -243,3 +243,5 @@ controlled.
 All effect parameters that are usable to tweak while the effect is
 active should be placed on a Rotary control since not all controllers
 are featuring buttons for effects.
+
+We need to extend enum ControlHint() to express more complex Scales.

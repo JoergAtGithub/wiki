@@ -138,3 +138,12 @@ parameter. Required scaling should be done inside the PlugIn
     };
 
 # Mixxx
+
+All Parametes in Mixxx are of C Type double.
+
+Mixxx uses the scaled "value" for it's double controls. It is Converted
+into a parameter, a linear representation of the position on the scale
+by control behavior classes.
+
+If the value of the control does not match the value that should be
+indicated in LDS, a separate indicator control is used.

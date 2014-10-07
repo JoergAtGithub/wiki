@@ -158,14 +158,22 @@ indicated in LDS, a separate indicator control is used.
 
 # Proposed Solution
 
-Nicu has proposed a solution during his GSoC proeject. It can be watched
-at: LV2 branch: <https://github.com/mixxxdj/mixxx/pull/316> EQ Rack:
-<https://github.com/mixxxdj/mixxx/pull/330>
+Nicu has proposed a solution during his GSoC proeject.
 
-Essence: It fetures two types of controls: \* Knob controls, for all
-parameters that are intended to be controlled by the superknob \* Button
-controls, for all step parameters. It features a normal button Widget +
-a flyout menu with the enumeration values.
+It can be watched at:
+
+LV2 branch: <https://github.com/mixxxdj/mixxx/pull/316>
+
+EQ Rack: <https://github.com/mixxxdj/mixxx/pull/330>
+
+Essence:
+
+It fetures two types of controls:
+
+  - Knob controls, for all parameters that are intended to be controlled
+    by the superknob 
+  - Button controls, for all step parameters. It features a normal
+    button Widget + a flyout menu with the enumeration values. 
 
 # Discussion
 

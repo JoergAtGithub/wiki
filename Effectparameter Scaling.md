@@ -156,6 +156,13 @@ indicated in LDS, a separate indicator control is used.
   - Control different common scales including Split scales for
     asymmetric knobs 
 
+# Links
+
+Related Bug: <https://bugs.launchpad.net/mixxx/+bug/1378195> Remove of
+value hint: <https://github.com/mixxxdj/mixxx/pull/356> EQ Rack:
+<https://github.com/mixxxdj/mixxx/pull/297> Button Parameter:
+<https://github.com/mixxxdj/mixxx/pull/281>
+
 # Proposed Solution
 
 Nicu has proposed a solution during his GSoC proeject.

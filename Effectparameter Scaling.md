@@ -205,6 +205,7 @@ indicated in LDS, a separate indicator control is used.
   - Remove of value hint: <https://github.com/mixxxdj/mixxx/pull/356>
   - EQ Rack: <https://github.com/mixxxdj/mixxx/pull/297>
   - Button Parameter: <https://github.com/mixxxdj/mixxx/pull/281>
+  - Kill Buttons: <https://github.com/mixxxdj/mixxx/pull/297>
 
 # Proposed Solution
 

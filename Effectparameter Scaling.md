@@ -42,13 +42,6 @@ Parameter.
   - Latching button 
   - Powerwindow button
 
-# Requirements
-
-  - Value Feedback including units 
-  - Control a quantization Value with a continuous Knob 
-  - \* Feedback of the Snapped value 
-  - Controllable by Super knob 
-
 # LV2
 
 <http://lv2plug.in/ns/lv2core/>
@@ -147,3 +140,16 @@ by control behavior classes.
 
 If the value of the control does not match the value that should be
 indicated in LDS, a separate indicator control is used.
+
+# Requirements
+
+  - Value feedback including units 
+  - Control a quantization Value with a continuous Knob 
+  - Feedback of the Snapped value 
+  - Controllable by Super knob 
+  - Support all hardware controls on a DJ Console 
+  - Continous Knobs
+  - Endless knobs
+  - Pushbuttons
+  - Allow native adaptation of LV2 PlugIns
+  - Allow native adaptation of VST PlugIns

@@ -228,3 +228,17 @@ It fetures two types of controls:
 # Discussion
 
 TODO:
+
+Thoughts:
+
+LV2 and VST uses c float type to express all kinds values. Mixxx uses
+double types for the same. Conclusion: there is no need to convert
+double to QVariant and back. Double parameters are just fine.
+
+We need to have a way to connect to Buttons and Rotaries on the DJ
+controller. The effect needs to control from where the value should be
+controlled.
+
+All effect parameters that are usable to tweak while the effect is
+active should be placed on a Rotary control since not all controllers
+are featuring buttons for effects.

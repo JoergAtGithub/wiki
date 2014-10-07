@@ -7,13 +7,36 @@ Parameter.
 
 #### Stomp Boxes / DJ Mixer
 
-\* Rotary Potentiometer \* Slider Potentiometer \* Rotary Step Switch \*
-Rocker Switch (2 or 3 steps) \* Slider Switch \* Pushbuttons
+  - Rotary Potentiometer 
+  - Slider Potentiometer 
+  - Rotary Step Switch
+  - Rocker Switch (2 or 3 steps) 
+  - Slider Switch
+  - Pushbuttons 
 
 #### DJ Consoles
 
-\* Rotary Knobs with Midi or higher resolution \* Endless Rotary Knobs
-(Up/Down commands) \* LED Row for Feedback \* Pushbuttons
+  - Rotary Knobs with Midi or higher resolution 
+  - Endless Rotary Knobs (Up/Down commands)
+  - LED Row for Feedback 
+  - Pushbuttons 
+
+## Parameter Examples
+
+  - Gain
+  - Center/Cut-off Frequency 
+  - Mode Switch 
+  - Periods 
+  - Bits 
+  - Rate 
+
+## Desired Scales
+
+  - Linear 
+  - Logarithmic
+  - Audio-Taper
+  - Steps
+  - Split Scale 
 
 # Requirements
 

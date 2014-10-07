@@ -100,7 +100,7 @@ that support bounds at all MUST support this property. "
 
 VST uses C Float parameter.
 
-They workon the float range of 0.0f to 1.0f for the value of the
+They work on the float range of 0.0f to 1.0f for the value of the
 parameter. Required scaling should be done inside the PlugIn
 
     /* this struct taken from http://asseca.com/vst-24-specs/efGetParameterProperties.html */

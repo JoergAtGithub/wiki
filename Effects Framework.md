@@ -198,6 +198,8 @@ instance values for each parameter described in the EffectManifest.
 
 **NOTE:** The hints are still under development. Please give feedback\!
 
+More info at: [EffectParameter Scaling](EffectParameter%20Scaling)
+
 ### Backend Implementation
 
 The effects system will implement a backend model similar to Mixxx's

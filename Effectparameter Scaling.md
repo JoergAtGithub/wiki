@@ -105,4 +105,36 @@ that support bounds at all MUST support this property. "
 
 # VST
 
+VST uses C Float parameter.
+
+They workon the float range of 0.0f to 1.0f for the value of the
+parameter. Required scaling should be done inside the PlugIn
+
+    /* this struct taken from http://asseca.com/vst-24-specs/efGetParameterProperties.html */
+    struct _VstParameterProperties
+    {
+       float stepFloat;
+       float smallStepFloat;
+       float largeStepFloat;
+       char label[64];
+       int32_t flags;
+       int32_t minInteger;
+       int32_t maxInteger;
+       int32_t stepInteger;
+       int32_t largeStepInteger;
+       char shortLabel[8];
+    };
+
+    /* this enum taken from http://asseca.com/vst-24-specs/efGetParameterProperties.html */
+    enum VstParameterFlags
+    {
+      kVstParameterIsSwitch = 1 << 0, /* parameter is a switch (on/off) */
+      kVstParameterUsesIntegerMinMax = 1 << 1, /* minInteger, maxInteger valid */
+      kVstParameterUsesFloatStep = 1 << 2, /* stepFloat, smallStepFloat, largeStepFloat valid */
+      kVstParameterUsesIntStep = 1 << 3, /* stepInteger, largeStepInteger valid */
+      kVstParameterSupportsDisplayIndex = 1 << 4, /* displayIndex valid */
+      kVstParameterSupportsDisplayCategory = 1 << 5, /* category, etc. valid */
+      kVstParameterCanRamp = 1 << 6 /* set if parameter value can ramp up/down */
+    };
+
 # Mixxx

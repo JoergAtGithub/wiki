@@ -44,6 +44,11 @@ Parameter.
 
 # Requirements
 
+  - Value Feedback including units 
+  - Control a quantization Value with a continuous Knob 
+  - \* Feedback of the Snapped value 
+  - Controllable by Super knob 
+
 # LV2
 
 # VST

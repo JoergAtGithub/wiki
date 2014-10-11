@@ -65,7 +65,7 @@ Example of a ControlPort:
 
 Additions for Mode Switches:
 
-lv2:enumeration
+    lv2:enumeration
 
 " Indicates that a port's only reasonable values are the scale points
 defined for that port. A host SHOULD NOT allow a user to set the value

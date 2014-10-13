@@ -48,7 +48,7 @@ variable
     SDK](http://www.steinberg.net/en/company/developers.html). You need
     a steinberge development account, it is free of charge. Copy the
     content as **ASIOSDK** to
-    **WINLIB\_REPO\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.
+    **WINLIB\_PATH\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.
 
 ### Build dependencies
 

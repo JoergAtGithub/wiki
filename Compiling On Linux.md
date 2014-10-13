@@ -54,6 +54,7 @@ your distribution's package manager:
     (**optional** if not installed, Mixxx uses an internal version)
   - [librubberband](http://breakfastquay.com/rubberband/)
   - libchromaprint
+  - libsqlite
 
 ## 2\. Get Mixxx
 

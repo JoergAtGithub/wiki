@@ -26,7 +26,7 @@ On Fedora 19/20, you need enable the rpmfusion repo and then:
     libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
     portaudio-devel libshout-devel python-devel portmidi-devel qt-webkit-devel taglib-devel flac-devel \
     protobuf-devel vamp-plugin-sdk-devel \
-    libchromaprint-devel rubberband-devel libusbx-devel libsqlite-devel
+    libchromaprint-devel rubberband-devel libusbx-devel libsqlite3-devel
 
 ### Other
 

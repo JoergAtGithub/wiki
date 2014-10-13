@@ -103,7 +103,9 @@ This step may take a while depending on your computer.
     scons winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
 
 This script will setup the build environment and call scons with the
-appropriate flags. Type:
+appropriate flags. You have to edit the **WINLIB\_PATH** variable and
+set it to the absolute path of the folder where you compiled the
+dependencies for mixxx. Then type:
 
     build.bat
 

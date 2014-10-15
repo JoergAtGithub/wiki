@@ -125,6 +125,7 @@ Scripting](MIDI%20Scripting) pages.
 | Numark iDJ3                        |               |          |       |
 | Numark NSFX                        |               |          |       |
 | Numark V7                          |               |          |       |
+| Rane TTM 57SL                      |               |          |       |
 | Vestax TR-1                        |               |          |       |
 | Vestax VCM-100                     |               |          |       |
 | Vestax VCM-600                     |               |          |       |

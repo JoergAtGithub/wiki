@@ -225,7 +225,7 @@ problem. Make sure you have the latest drivers for your card. (You may
 need to get them from the chipset maker (nVidia, AMD/ATI) rather than
 the system board or computer manufacturer, since the manufacturer
 drivers aren't always the latest.) Also, if you're on Windows, make sure
-you have the latest [DirectX](http://www.microsoft.com/directx)
+you have the latest [DirectX](http://support.microsoft.com/kb/179113)
 installed.
 
 ## Mixxx freezes, crashes, or otherwise misbehaves and I have an nVidia graphics card

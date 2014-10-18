@@ -20,10 +20,17 @@ GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-o
 
 [Build Mixxx](start#build_mixxx)
 
-## Setup a powerful IDE
+## Choose a working environment
 
-Pick your favorite IDE\! We have made good experience with
-[Eclipse](eclipse)
+You can edit Mixxx's code in anything from a basic text editor to a
+professional IDE (Integrated Development Environment.) We've had good
+experiences with [Eclipse](eclipse), but some of our developers just use
+text editors that handle multiple files and support syntax highlighting
+such as [Kate](https://www.kde.org/applications/utilities/kate) or
+[Notepad++](http://notepad-plus-plus.org/). If you're working from a
+text terminal, [GNU Nano](http://www.nano-editor.org/) also supports
+syntax highlighting, though it's not quite as thorough as many of the
+graphical ones.
 
 ## Adopt an easy bug on Launchpad
 

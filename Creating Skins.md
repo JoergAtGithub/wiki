@@ -881,8 +881,8 @@ reference.
     <Align>X</Align>
     <SignalColor>#</SignalColor>
         <SignalLowColor>#</SignalLowColor>
+        <SignalMidColor>#</SignalMidColor>
         <SignalHighColor>#</SignalHighColor>
-        <SignalLowColor>#</SignalLowColor>
         <SignalRGBLowColor>#</SignalRGBLowColor>
         <SignalRGBMidColor>#</SignalRGBMidColor>
         <SignalRGBHighColor>#</SignalRGBHighColor>

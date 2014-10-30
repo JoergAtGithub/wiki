@@ -90,7 +90,7 @@ correspond to the DJ controller functions & LEDs. If your controller's
 MIDI spec gives only note names and not numbers, [use this
 table](http://www.wavosaur.com/download/midi-note-hex.php) to convert
 them. To convert from decimal to hex, [use
-this](http://www.geocities.com/binary_converter/).
+this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 
 (Note that in order to use System Exclusive messages, you will need
 [MIDI Scripting](MIDI%20Scripting).)

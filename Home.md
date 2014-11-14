@@ -137,8 +137,9 @@ Mixxx is an accepted mentoring organization for Google Summer of Code,
 
 The following projects were accepted for Google Summer of Code 2014:
 
-  - [Cover Art Support](Cover%20Art%20Support)
+  - [Cover Art Support](Cover%20Art%20Support) by Marcos Cardinot
   - [Extending the Effects Engine](Extending%20the%20Effects%20Engine)
+    by Nicu Badescu
 
 ### GSoC 2013
 

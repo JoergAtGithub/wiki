@@ -42,8 +42,8 @@ running in about a minute.
 ## DidJiX
 
 Mixxx running on a live (CD/USB) ArchLinux system:
-<http://easy.open.and.free.fr/didjix/> Original link:
-<http://didjix.blogspot.com/>
+<http://easy.open.and.free.fr/didjix/> (Original link:
+<http://didjix.blogspot.com/>)
 
 Just download the ISO image and either burn it to a CD or *cat* it to a
 USB stick (this will erase the content of the stick.)

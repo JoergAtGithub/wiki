@@ -2834,6 +2834,59 @@ Some examples:
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
+### SizeAwareStack
+
+New in Mixxx 1.12.0
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<SizeAwareStack>
+    <Children>
+       <WidgetGroup>
+            <MinimumSize>10,10</MinimumSize>
+            <MaximumSize>10,10</MaximumSize>
+            <Style>QGroupBox {background: blue;}</Style>
+       </WidgetGroup>
+       <WidgetGroup>
+            <MinimumSize>100,10</MinimumSize>
+            <MaximumSize>100,10</MaximumSize>
+            <Style>QGroupBox {background: red;}</Style>
+       </WidgetGroup>
+       <WidgetGroup>
+            <MinimumSize>200,10</MinimumSize>
+            <MaximumSize>200,10</MaximumSize>
+            <Style>QGroupBox {background: green;}</Style>
+       </WidgetGroup>
+    </Children>
+</SizeAwareStack>
+` | `
+
+
+A WidgetGroup that is shown when the available screen estate is at least 10x10 pixel.
+
+
+
+
+A WidgetGroup that is shown when the available screen estate is at least 100x10 pixel.
+
+
+
+
+A WidgetGroup that is shown when the available screen estate is at least 200x10 pixel.
+
+
+
+
+
+
+
+` |
+
+A `SizeAwareStack` selects the best fitting widget based on available
+space. It allows GUI elements to easily adopt to window size without
+manual actions.The algorithm is very basic and requires children sorted
+by size, smallest first.
+
 # Convert a Mixxx skin.xml into HTML
 
 Deprecated in Mixxx 1.11

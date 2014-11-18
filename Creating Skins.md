@@ -408,6 +408,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Show cover art in background of [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] vinyl widget. See [[https://github.com/mixxxdj/mixxx/pull/391|pull#391]]
  * Added support for variables in svg attributes. See [[https://github.com/mixxxdj/mixxx/pull/302|pull#302]]. 
  * Added ''<StarRating>'' widget that allows to rate a track currently loaded in a deck. See [[https://github.com/mixxxdj/mixxx/pull/380|pull#380]].
  * Added ''<SignalRGBLowColor>'', ''<SignalRGBMidColor>'', ''<SignalRGBHighColor>'' to [[creating_skins#waveforms|<Waveforms>]]. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''. See [[https://github.com/mixxxdj/mixxx/pull/363|pull#363]]

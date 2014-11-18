@@ -412,6 +412,7 @@ editor](#tools) and get started :-)
  * Added support for variables in svg attributes. See [[https://github.com/mixxxdj/mixxx/pull/302|pull#302]]. 
  * Added ''<StarRating>'' widget that allows to rate a track currently loaded in a deck. See [[https://github.com/mixxxdj/mixxx/pull/380|pull#380]].
  * Added ''<SignalRGBLowColor>'', ''<SignalRGBMidColor>'', ''<SignalRGBHighColor>'' to [[creating_skins#waveforms|<Waveforms>]]. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''. See [[https://github.com/mixxxdj/mixxx/pull/363|pull#363]]
+ * Added [[creating_skins#sizeawarestack|<SizeAwareStack>]] widget that allows to allows resize to available screen space at runtime. See [[https://github.com/mixxxdj/mixxx/pull/358|pull#358]]
  * Allow inline svg to handle ''<Variable>'' elements. See [[https://github.com/mixxxdj/mixxx/pull/286|pull#286]]
  * Added the feature to ''<Number_>'' widgets to insert the value int the ''<Text>'' by ''%1''. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * Added [[creating_skins#db_display|<NumberDb>]], that allows to display a ratio scaled in dB. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]

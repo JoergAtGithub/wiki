@@ -2835,6 +2835,13 @@ Some examples:
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
+If you need the stacks to remember which index they were closed with so
+they can start back up in the right state, do it like this:
+
+    <WidgetStack currentpage="[EffectRack1],current" persist="true">
+
+The "currentpage" CO doesn't need to be defined anywhere else.
+
 ### SizeAwareStack
 
 New in Mixxx 1.12.0

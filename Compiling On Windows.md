@@ -34,13 +34,14 @@ variable
 
 1.  Clone the [Mixxx
     buildserver](https://github.com/mixxxdj/buildserver/tree/windows_environment)
-    repository and checkout the **windows\_environment** branch.
-    Remember the folder to which the repository was saved. We will refer
-    to that folder as **WINLIB\_PATH** later.
-2.  Download the [Qt
+    repository. Remember the folder to which the repository was saved.
+    We will refer to that folder as **WINLIB\_PATH** later.
+2.  In the buildserver repository, checkout the **windows\_environment**
+    branch
+3.  Download the [Qt
     Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip).
     Unpack the sources to **WINLIB\_PATH\\build**
-3.  Download the [ASIO
+4.  Download the [ASIO
     SDK](http://www.steinberg.net/en/company/developers.html). You need
     a steinberg development account, it is free of charge. Copy the
     content as **ASIOSDK** to

@@ -40,7 +40,7 @@ variable
     Unpack the sources to **WINLIB\_PATH\\build**
 3.  Download the [ASIO
     SDK](http://www.steinberg.net/en/company/developers.html). You need
-    a steinberge development account, it is free of charge. Copy the
+    a steinberg development account, it is free of charge. Copy the
     content as **ASIOSDK** to
     **WINLIB\_PATH\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.
 

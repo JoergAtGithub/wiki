@@ -1,6 +1,8 @@
 *(If you're looking to make an installable release, [go to this
 page](Build%20Windows%20installer).)*
 
+# Building Mixxx on Windows
+
 ## Build 32bit version of Mixxx
 
 ### Programs to install

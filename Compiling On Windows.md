@@ -40,7 +40,7 @@ variable
     branch
 3.  Download the [Qt
     Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip).
-    Unpack the sources to **WINLIB\_PATH\\build**
+    Unpack the zip archive into **WINLIB\_PATH\\build**
 4.  Download the [ASIO
     SDK](http://www.steinberg.net/en/company/developers.html). You need
     a steinberg development account, it is free of charge. Exctract the

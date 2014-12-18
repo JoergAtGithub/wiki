@@ -429,15 +429,47 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
  * Added the feature to ''<Number_>'' widgets to insert the value int the ''<Text>'' by ''%1''. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * Added [[creating_skins#db_display|<NumberDb>]], that allows to display a ratio scaled in dB. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * <del>Added optional ''mode="stretch"'' attribute for all widgets that support <BackPath>. Default is tiled backpaths, see [[https://github.com/mixxxdj/mixxx/pull/178|pull#178]]</del> Replaced by ''scalemode'' support for widgets, see above.
- * Added ''Transform'' support to ''Connection'' blocks in the skin. Adds a general ValueTransformer class that does simple, invertible transformations on numbers, see [[https://github.com/mixxxdj/mixxx/pull/157|pull#157]]<code=xml><Connection>
-  <ConfigKey>[Master],volume</ConfigKey>
-  <Transform>
-      <Invert/>
-      <Add>1</Add>
-  </Transform>
+ * Added ''Transform'' support to ''Connection'' blocks in the skin. Adds a general ValueTransformer class that does simple, invertible transformations on numbers, see [[https://github.com/mixxxdj/mixxx/pull/157|pull#157]]. E.g. to make the gain knob work counterclockwise, use the following connection: <code=xml>
 ```
 
+\<Connection\>
+
+    <ConfigKey>[Master],volume</ConfigKey>
+    <Transform>
+      <Invert/>
+      <Add>1</Add>
+    </Transform>
+
 \</Connection\>\</code\>
+
+``` 
+ * You can also configure thresholds with the ''Transform'' feature, see [[https://bugs.launchpad.net/mixxx/+bug/1376277|lp:1376277]]. E.g. to display a widget only with 4 decks configured, use the following connection: <code=xml>
+```
+
+\<Connection\>
+
+    <ConfigKey>[Master],num_decks</ConfigKey>
+    <Transform>
+      <Invert/>
+      <Add>4</Add>
+    </Transform>
+    <BindProperty>visible</BindProperty>
+
+\</Connection\>\</code\>
+
+  - A transformation for boolean *Not* is also possible, see
+    [pull\#413](https://github.com/mixxxdj/mixxx/pull/413). E.g. to
+    show/hide the library widget, use the following connection:
+    `<Connection>
+            <ConfigKey persist="true">[Master],show_library</ConfigKey>
+            <Transform>
+                    <Invert/>
+                    <Not/>
+            </Transform>
+            <BindProperty>visible</BindProperty>
+    </Connection>` 
+
+<!-- end list -->
 
 ``` 
  * Added ''SplitSizesConfigKey'' to [[creating_skins#splitter|<Splitter>]]. Store sizes in a configkey and remember library layout on skin change and restart, see [[https://github.com/mixxxdj/mixxx/pull/209|pull#209]]

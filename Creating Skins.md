@@ -408,6 +408,18 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Add scalemode support to most widget images, See [[https://github.com/mixxxdj/mixxx/pull/426|pull#426]]
+     * FIXED = Draw the image in its native dimensions with no stretching or tiling.
+     * STRETCH = Stretch the image
+     * STRETCH_ASPECT = Stretch the image maintaining its aspect ratio.
+     * Tile = Tile the image. Some examples below:
+     * <code=xml><Slider scalemode="STRETCH">foo.svg</Slider>
+```
+
+\<Handle scalemode="STRETCH\_ASPECT"\>foo.svg\</Handle\> \<BackPath
+scalemode="TILE"\>foo.png\</BackPath\>\</code\>
+
+``` 
  * Show cover art in background of [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] vinyl widget. See [[https://github.com/mixxxdj/mixxx/pull/391|pull#391]]
  * Added support for variables in svg attributes. See [[https://github.com/mixxxdj/mixxx/pull/302|pull#302]]. 
  * Added ''<StarRating>'' widget that allows to rate a track currently loaded in a deck. See [[https://github.com/mixxxdj/mixxx/pull/380|pull#380]].
@@ -416,7 +428,7 @@ editor](#tools) and get started :-)
  * Allow inline svg to handle ''<Variable>'' elements. See [[https://github.com/mixxxdj/mixxx/pull/286|pull#286]]
  * Added the feature to ''<Number_>'' widgets to insert the value int the ''<Text>'' by ''%1''. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
  * Added [[creating_skins#db_display|<NumberDb>]], that allows to display a ratio scaled in dB. See [[https://github.com/mixxxdj/mixxx/pull/245|pull#245]]
- * Added optional ''mode="stretch"'' attribute for all widgets that support <BackPath>. Default is tiled backpaths, see [[https://github.com/mixxxdj/mixxx/pull/178|pull#178]]<code=xml><BackPath mode="stretch">background_image.png</BackPath></code>
+ * <del>Added optional ''mode="stretch"'' attribute for all widgets that support <BackPath>. Default is tiled backpaths, see [[https://github.com/mixxxdj/mixxx/pull/178|pull#178]]</del> Replaced by ''scalemode'' support for widgets, see above.
  * Added ''Transform'' support to ''Connection'' blocks in the skin. Adds a general ValueTransformer class that does simple, invertible transformations on numbers, see [[https://github.com/mixxxdj/mixxx/pull/157|pull#157]]<code=xml><Connection>
   <ConfigKey>[Master],volume</ConfigKey>
   <Transform>

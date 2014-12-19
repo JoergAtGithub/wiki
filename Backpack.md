@@ -41,7 +41,7 @@ alternatives also (as in sac (pentru turism) and raniță), but Rucsac is
 by far the most used one. In German language a backpack with a rigid
 framework (or the framework itself) is called Kraxe. The British Army
 uses the word bergen for a large load-carrying rucksack, from a design
-issued during the Second World War.\[1\]
+issued during the Second World War.
 
 Backpacks can often simply be referred to as "packs", especially in
 outdoors contexts; though sometimes ambiguous compared to other bags

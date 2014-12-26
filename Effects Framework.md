@@ -748,4 +748,7 @@ Mixxx 1.12.0. I'm definitely keeping it in mind while building the
 effects infrastructure. Pre-fader / Post-fader is also on my list and
 will be in Effects V1.
 
+**\*djbarney:** ... great to hear that this is being implemented :). Is
+the pre/post fader available in the latest 1.12 build (26th Dec 2014) ?
+
 \#\#\#\#

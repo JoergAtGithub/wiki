@@ -743,9 +743,13 @@ Preferred horizontal, Fixed vertical
 
 #### \<Style\>
 
-A `<Style>` tag indicates to Mixxx what "Qt Style Sheet" (QSS) to use
-for the widget. Qt Style Sheets are similar to [Cascading Style Sheets
-(CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets).
+**(DEPRECATED)** A `<Style>` tag indicates to Mixxx what "Qt Style
+Sheet" (QSS) to use for the widget. Qt Style Sheets are similar to
+[Cascading Style Sheets
+(CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets). It is
+highly recommended that you include a style.qss in your skin.xml file
+instead of styling individual skin elements. This makes it easier to
+make style changes later.
 
 | Examples:                                                                                                                                                  |                                                                                                                                                                                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

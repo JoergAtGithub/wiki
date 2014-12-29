@@ -1132,17 +1132,18 @@ end Overview tag
 
 New in Mixxx 1.10.0
 
-|                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<Spinny>
     <TooltipId>spinny</TooltipId>
     <Style></Style>
     <Channel>X</Channel>
     <Pos>X,Y</Pos>
     <Size>W,H</Size>
-    <PathBackground>background.png</PathBackground>
-    <PathForeground>foreground.png</PathForeground>
-    <PathGhost>foreground_ghost.png</PathGhost>
+    <PathBackground>background.svg</PathBackground>
+        <PathMask>mask.svg</PathMask>
+    <PathForeground>foreground.svg</PathForeground>
+    <PathGhost>foreground_ghost.svg</PathGhost>
         <ShowCover>true</ShowCover>
 </Spinny>
 ` | `Beginn Spinny tag
@@ -1151,10 +1152,11 @@ Optionally, defines the appearance of the Spinny widget
 Which channel the settings are connected to (X=1, 2, or more, depending on the # of decks in the skin)
 Defines the element position
 Defines the element size
-Background image (from the skin's folder, shows as bottom layer). Sets the spinny's overall size.
+Background image (from the skin's folder, shows as bottom layer). Sets the spinny's overall size, unless scalemode="STRETCH" is set (New in Mixxx 1.12).
+New in Mixxx 1.12: Mask image (from the skin's folder, shows above the cover layer but below the foreground image.  This is often used to overlay a circular outline on top of the cover art so it appears like a round record label.
 Foreground image (from the skin's folder, shows as top layer). New in Mixxx 1.11: Center the images according to their own size
 Ghost Foreground image (from the skin's folder, shows as top layer on right-click)
-New in Mixxx 1.12: Set to false to disable showing of covers in spinny widgets (default true). Spinny background images should be partially transparent so they can mask the cover art.
+New in Mixxx 1.12: Set to true to enable showing of covers in spinny widgets (default false). Spinny background images will only appear if there is no cover art, or if this feature is off.
 End Spinny tag
 ` |
 

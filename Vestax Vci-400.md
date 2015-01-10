@@ -34,7 +34,7 @@ will be used to select vinyl control modes instead.
 Most of the functions are exactly as they appear on the overlay, and the
 overlay is very nicely labelled so that's the best place to start.
 
-[[/media/vci-400dj_layout.png|]] (Click for a large image\!)
+(Click for a large image\!) [[/media/vci-400dj_layout.png|]]
 
 The four small buttons below the grouping of 8 buttons selects which
 mode the 8 buttons are in, either Hot Cues, Loops, Rolls, or Samples.

@@ -37,10 +37,22 @@ overlay is very nicely labelled so that's the best place to start.
 [[/media/vci-400dj_layout.png|]] (Click for a large image\!)
 
 The four small buttons below the grouping of 8 buttons selects which
-mode the 8 buttons are in. Mixxx remembers which mode is selected on a
-per-deck basis, so when you toggle the deck-selection switches the mode
-may change. The button corresponding to the current mode will be lit so
-you know what mode you're in.
+mode the 8 buttons are in, either Hot Cues, Loops, Rolls, or Samples.
+Mixxx remembers which mode is selected on a per-deck basis, so when you
+toggle the deck-selection switches the mode may change. The button
+corresponding to the current mode will be lit so you know what mode
+you're in.
+
+Button Modes:
+
+  - In Hot Cue mode, the 8 buttons will move Mixxx to the designated
+    hotcue. If you hold the shift button, the hotcue will be cleared.
+  - In Loop mode, the 8 buttons will create a new loop at the current
+    position from size 32nd note to 16 beats.
+  - In Roll mode, holding any of the buttons will temporarily create a
+    loop anywhere from 32nd note to 16 beats.
+  - In Sampler mode, both sides of the controller launch the same set of
+    8 samplers. Holding shift will eject a sample.
 
 Some of the buttons have special functions in Mixxx
 

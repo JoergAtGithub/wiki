@@ -19,10 +19,13 @@ Virtual DJ.
 **The new VCI-400 mapping for Mixxx is based on the Serato Limited
 Edition overlay**
 
-The new mapping has many advantages over the older mapping: \* Full
-support for four deck control. \* Functional effects units and filter
-knobs. \* The 8 quick pads can be put into 4 selectable modes: hot cues,
-loops, rolls, and samplers. \* Support for vinyl control mode selection.
+The new mapping has many advantages over the older mapping:
+
+  - Full support for four deck control.
+  - Functional effects units and filter knobs.
+  - The 8 quick pads can be put into 4 selectable modes: hot cues,
+    loops, rolls, and samplers.
+  - Support for vinyl control mode selection.
 
 **For regular use, make sure the "mixer select" switches are all the way
 to the left.** If you move them to the right, the Play / Cue buttons

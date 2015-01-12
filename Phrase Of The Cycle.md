@@ -1,5 +1,13 @@
 # Phrases of the development cycle / mottos
 
+### 1.12.0
+
+  - LGTM (code review\!)
+
+### 1.11.0
+
+  - Do not stop the party.
+
 ### 1.8.0
 
   - If your cat speaks MIDI, you could control Mixxx with it too\!

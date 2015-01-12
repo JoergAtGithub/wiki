@@ -3,9 +3,8 @@ Learning meditation and getting into the habit of practicing regularly
 can be life changing. A lot of people who meditate regularly claim of
 experiencing mental, physical and psychological benefits.
 
-### Easy Meditation Technique for Stress Relief
-
-<http://www.idfylc.com/unique-benefits-meditation-classes/>
+[Easy Meditation Technique for Stress
+Relief](http://www.idfylc.com/unique-benefits-meditation-classes)
 
 Meditation can be a great tool to help you rest your mind and reduce
 tension. Realize that spending even just a couple of minutes in

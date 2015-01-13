@@ -9,7 +9,7 @@ existing code.**
 When in doubt, use the [Google C++ Style
 Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
 It's a treasure trove of C++ advice. Just double Google's indentation
--\> 2 spaces become 4 spaces.
+-\> 2 spaces become 4 spaces; 4 spaces become 9 spaces.
 
 That being said, there are large chunks of Mixxx that are written in
 slightly differing styles (mainly variable naming conventions). In order
@@ -367,15 +367,3 @@ A couple guidelines for class declarations:
 Using the `goto` statement is not allowed. Typically uses of `goto` are
 better handled by the C++ idiom of [Resource Acquisition Is
 Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization).
-
-# Mixxx SQLite Style Guide
-
-SQLite keywords are written in capital letters
-
-**Good:**
-
-    SELECT id FROM library
-
-**Bad:**
-
-    selcet id from library

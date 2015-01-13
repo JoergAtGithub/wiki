@@ -36,7 +36,7 @@ Please configure your editor to have a max column-width of 80-columns.
 While it is not a strict requirement, 80-column cleanliness makes it
 easy to tile multiple buffers of code across a laptop screen, which
 provides significant efficiency gains to developers. Use double indent
-for broken lines or aligne with the a "(" in the line above, if that not
+for broken lines or aligne with a "(" in the line above, if that not
 results in a 4 space indent.
 
 # Mixxx C++ Style Guide

@@ -39,6 +39,14 @@ provides significant efficiency gains to developers. Use double indent
 for broken lines or aligne with a "(" in the line above, if that not
 results in a 4 space indent.
 
+## Auto-Formater
+
+We currently do not provide an Auto-Formater or Code-Checker.
+
+If you use Eclipse as IDE, the Code Style "K\&R" with "Tap policy" =
+"Space only" will work well. Please not that there are still some
+exceptions, so do not autoformat the a whole sourcefile
+
 # Mixxx C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team

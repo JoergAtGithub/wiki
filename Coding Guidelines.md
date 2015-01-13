@@ -96,11 +96,20 @@ separated from surrounding code by a single space.
 
 **Good:**
 
-    if (expression) {
-      // something
-    } else {
-      // something else
-    }
+``` 
+if (expression) {
+  // something
+} else {
+  // something else
+}
+
+if (long_expression1 ||
+        expression2) {
+  // something
+  statement
+}
+
+```
 
 **Bad:**
 

@@ -49,8 +49,8 @@ tweaks
   - Tap policy = Space only 
   - New Lines = before colon in constructor initializer list
 
-Please not that there are still some exceptions, so do not autoformat
-the a whole sourcefile.
+Please not that there are still some exceptions, so do not autoformat a
+whole sourcefile.
 
 # Mixxx C++ Style Guide
 

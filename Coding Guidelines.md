@@ -43,9 +43,14 @@ results in a 4 space indent.
 
 We currently do not provide an Auto-Formater or Code-Checker.
 
-If you use Eclipse as IDE, the Code Style "K\&R" with "Tap policy" =
-"Space only" will work well. Please not that there are still some
-exceptions, so do not autoformat the a whole sourcefile
+If you use Eclipse as IDE, the Code Style "K\&R" works well with these
+tweaks
+
+  - Tap policy = Space only 
+  - New Lines = before colon in constructor initializer list
+
+Please not that there are still some exceptions, so do not autoformat
+the a whole sourcefile.
 
 # Mixxx C++ Style Guide
 

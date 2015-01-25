@@ -466,6 +466,14 @@ MyController.volumeLEDs = function (value) {
 }
 ```
 
+If the provided three parameters do not fit your needs, then you can use
+the following trick to provide your own parameters to be passed.
+
+``` javascript
+// Pass one parameter '1000' to my callback 
+engine.connectControl("[Master]", "volume", function(value) { MyController.volumeLEDs(1000); });
+```
+
 #### Examples
 
 To connect the volume of the current virtual deck to a function called

@@ -408,6 +408,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Add support for [[creating_skins#singleton_widgets|Singleton widgets]] that should only be instantiated once but may appear in multiple places in a skin definition. This is useful for complex widgets like the library, which are memory intensive. See [[https://github.com/mixxxdj/mixxx/pull/463|pull#463]]
  * Add scalemode support to most widget images, See [[https://github.com/mixxxdj/mixxx/pull/426|pull#426]]
      * FIXED = Draw the image in its native dimensions with no stretching or tiling.
      * STRETCH = Stretch the image
@@ -786,27 +787,28 @@ Here is a potentially out-of-date list of which Mixxx widgets derive
 from which Qt widgets. If not listed, the widget inherits from
 `QWidget`.
 
-|  | Skin Tag       |  | Mixxx Internal Name |  | Qt Widget                   |  |
-|  | -------------- |  | ------------------- |  | --------------------------- |  |
-|  | WidgetStack    |  | WWidgetStack        |  | QStackedWidget              |  |
-|  | WidgetGroup    |  | WWidgetGroup        |  | QGroupBox                   |  |
-|  | (none)         |  | WTrackTableView     |  | QTableView                  |  |
-|  | (none)         |  | WLibraryTableView   |  | QTableView                  |  |
-|  | Library        |  | WLibrary            |  | QStackedWidget              |  |
-|  | LibrarySidebar |  | WLibrarySidebar     |  | QTreeView                   |  |
-|  | SearchBox      |  | WSearchLineEdit     |  | QLineEdit                   |  |
-|  | Spinny         |  | WSpinny             |  | QGLWidget                   |  |
-|  | Visual         |  | WWaveformViewer     |  | QWidget                     |  |
-|  | NumberRate     |  | WNumberRate         |  | QWidget with a QLabel child |  |
-|  | NumberPos      |  | WNumberPos          |  | QWidget with a QLabel child |  |
-|  | NumberBpm      |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Number         |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Label          |  | WLabel              |  | QWidget with a QLabel child |  |
-|  | Text           |  | WTrackText          |  | QWidget with a QLabel child |  |
-|  | TrackProperty  |  | WTrackProperty      |  | QWidget with a QLabel child |  |
-|  | Time           |  | WTime               |  | QWidget with a QLabel child |  |
-|  | Key            |  | WKey                |  | QWidget with a QLabel child |  |
-|  | Splitter       |  | WSplitter           |  | QSplitter                   |  |
+|  | Skin Tag        |  | Mixxx Internal Name |  | Qt Widget                   |  |
+|  | --------------- |  | ------------------- |  | --------------------------- |  |
+|  | WidgetStack     |  | WWidgetStack        |  | QStackedWidget              |  |
+|  | WidgetGroup     |  | WWidgetGroup        |  | QGroupBox                   |  |
+|  | (none)          |  | WTrackTableView     |  | QTableView                  |  |
+|  | (none)          |  | WLibraryTableView   |  | QTableView                  |  |
+|  | Library         |  | WLibrary            |  | QStackedWidget              |  |
+|  | LibrarySidebar  |  | WLibrarySidebar     |  | QTreeView                   |  |
+|  | SearchBox       |  | WSearchLineEdit     |  | QLineEdit                   |  |
+|  | Spinny          |  | WSpinny             |  | QGLWidget                   |  |
+|  | Visual          |  | WWaveformViewer     |  | QWidget                     |  |
+|  | NumberRate      |  | WNumberRate         |  | QWidget with a QLabel child |  |
+|  | NumberPos       |  | WNumberPos          |  | QWidget with a QLabel child |  |
+|  | NumberBpm       |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Number          |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Label           |  | WLabel              |  | QWidget with a QLabel child |  |
+|  | Text            |  | WTrackText          |  | QWidget with a QLabel child |  |
+|  | TrackProperty   |  | WTrackProperty      |  | QWidget with a QLabel child |  |
+|  | Time            |  | WTime               |  | QWidget with a QLabel child |  |
+|  | Key             |  | WKey                |  | QWidget with a QLabel child |  |
+|  | Splitter        |  | WSplitter           |  | QSplitter                   |  |
+|  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
 
 #### \<TooltipId\>
 
@@ -2942,6 +2944,57 @@ A `SizeAwareStack` selects the best fitting widget based on available
 space. It allows GUI elements to easily adopt to window size without
 manual actions.The algorithm is very basic and requires children sorted
 by size, smallest first.
+
+### Singleton widgets
+
+New in Mixxx 1.12.0
+
+Defines widgets that should only be instantiated once but may appear in
+multiple places in a skin definition. This is useful for complex widgets
+like the library, which are memory intensive. The container mostly looks
+like a special WidgetGroup which is defined in special ways.
+
+**Usage:**
+
+First, the Singleton container is defined, meaning it is described to
+the skin system by name, and what the singleton consists of. This
+definition should be very early in the skin file. Note that the
+singleton does not actually appear where it is defined.
+
+Example definition:
+
+``` 
+ <DefineSingleton>
+   <ObjectName>LibrarySingleton</ObjectName>
+   <Layout>horizontal</Layout>
+   <SizePolicy>me,me</SizePolicy>
+   <Children>
+     <Template src="skin:library.xml"/>
+   </Children>
+  </DefineSingleton>
+```
+
+The ObjectName is used to identify this singleton elsewhere in the skin
+files.
+
+Example usage:
+
+``` 
+ <WidgetGroup>
+   <ObjectName>SomeUiElement</ObjectName>
+   <Layout>vertical</Layout>
+   <SizePolicy>min,i</SizePolicy>
+   <Children>
+     <Singleton objectName="LibrarySingleton"/>
+     ...
+   </Children>
+ </WidgetGroup>
+```
+
+The skin system sees the Singleton tag, and any time the containing
+group gets a show event, the Singleton widget is reparented to this
+location in the skin. Note that if a Singleton is visible twice at the
+same time, behavior is undefined and could be crashy.
 
 # Convert a Mixxx skin.xml into HTML
 

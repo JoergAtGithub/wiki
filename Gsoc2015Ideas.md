@@ -68,7 +68,7 @@ Besides just having better track organization and managment the UI and
 user experience of our library could be updated. This consists of two
 parts.
 
-\* Virtual Folder/ Smart Crates
+**Virtual Folder/ Smart Crates**
 
 With the SQLite backend it should be possible to add smart crates. They
 could contain for example every track of a specific genre. An
@@ -76,12 +76,22 @@ interesting question here is should it be possible to construct
 arbitrary SQL queries? To get started on this have a look at the
 'setTableModel' functions in the \*tablemodel classes.
 
-\* Full Text Search.
+<span class="underline">Related issues on the Mixxx bugtracker</span>
+
+  - <https://bugs.launchpad.net/mixxx/+bug/661460>
+  - <https://bugs.launchpad.net/mixxx/+bug/1228789>
+
+**Full Text Search**
 
 We already over quite an extensive search feature. But the user
 experience is not so great right now. It is hard to discover which
 options are available without reading the manual. How could this be
 improved.
+
+<span class="underline">Overview of the currently available search
+operators</span>
+
+  - <https://github.com/mixxxdj/manual/blob/manual/source/chapters/djing_with_mixxx.rst#using-search-operators>
 
 ## Something Else\!
 

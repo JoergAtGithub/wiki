@@ -10,7 +10,8 @@ flanger.
 This project aims to bring effects to Mixxx, both via native effects and
 effects plugins via LADSPA, LV2, or VST.
 
-**This project is active and slated for release in Mixxx 1.12.0. The
+**This project is active and the initial version is slated for release
+in Mixxx 1.12.0. It is not 100% feature-complete as per this design. The
 code is available in the [features\_effects branch on rryan's
 github](https://github.com/rryan/mixxx/tree/features_effects)**
 

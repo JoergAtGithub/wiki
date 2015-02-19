@@ -8,47 +8,47 @@ music.
 
 ## Overview MIDI Notes
 
-| action                   | note            | value                        |                  |
-| ------------------------ | --------------- | ---------------------------- | ---------------- |
-| deck change              | C ( 48 / 0x30 ) | 100 / 0x64 (+new decknumber) |                  |
-| beat                     | D ( 50 / 0x32 ) | 100 / 0x64                   |                  |
-| BPM                      | E ( 52 / 0x34 ) | BPM - 50                     |                  |
-| VU mono current          | E               | ( 64 / 0x40 )                | 0-127 / 0x0-0x7f |
-| VU mono average min      | F               | ( 65 / 0x41 )                | 0-127 / 0x0-0x7f |
-| VU mono average mid      | F\#             | ( 66 / 0x42 )                | 0-127 / 0x0-0x7f |
-| VU mono average max      | G               | ( 67 / 0x43 )                | 0-127 / 0x0-0x7f |
-| VU mono average fit      | G\#             | ( 68 / 0x44 )                | 0-127 / 0x0-0x7f |
-| VU mono current meter 1  | A               | ( 69 / 0x45 )                | 0-127 / 0x0-0x7f |
-| VU mono current meter 2  | A\#             | ( 70 / 0x46 )                | 0-127 / 0x0-0x7f |
-| VU mono current meter 3  | B               | ( 71 / 0x47 )                | 0-127 / 0x0-0x7f |
-| VU mono current meter 4  | C               | ( 72 / 0x48 )                | 0-127 / 0x0-0x7f |
-| VU mono average meter 1  | A               | ( 73 / 0x49 )                | 0-127 / 0x0-0x7f |
-| VU mono average meter 2  | A\#             | ( 74 / 0x4a )                | 0-127 / 0x0-0x7f |
-| VU mono average meter 3  | B               | ( 75 / 0x4b )                | 0-127 / 0x0-0x7f |
-| VU mono average meter 4  | C               | ( 76 / 0x4c )                | 0-127 / 0x0-0x7f |
-| VU left current          | G\#             | ( 80 / 0x50 )                | 0-127 / 0x0-0x7f |
-| VU left average min      | A               | ( 81 / 0x51 )                | 0-127 / 0x0-0x7f |
-| VU left average mid      | A\#             | ( 82 / 0x52 )                | 0-127 / 0x0-0x7f |
-| VU left average max      | B               | ( 83 / 0x53 )                | 0-127 / 0x0-0x7f |
-| VU left average fit      | C               | ( 84 / 0x54 )                | 0-127 / 0x0-0x7f |
-| VU left current meter 1  | C\#             | ( 85 / 0x55 )                | 0-127 / 0x0-0x7f |
-| VU left current meter 2  | D               | ( 86 / 0x56 )                | 0-127 / 0x0-0x7f |
-| VU left current meter 3  | D\#             | ( 87 / 0x57 )                | 0-127 / 0x0-0x7f |
-| VU left current meter 4  | E               | ( 88 / 0x58 )                | 0-127 / 0x0-0x7f |
-| VU left average meter 1  | F               | ( 89 / 0x59 )                | 0-127 / 0x0-0x7f |
-| VU left average meter 2  | F\#             | ( 90 / 0x5a )                | 0-127 / 0x0-0x7f |
-| VU left average meter 3  | G               | ( 91 / 0x5b )                | 0-127 / 0x0-0x7f |
-| VU left average meter 4  | G\#             | ( 92 / 0x5c )                | 0-127 / 0x0-0x7f |
-| VU right current         | C               | ( 96 / 0x60 )                | 0-127 / 0x0-0x7f |
-| VU right average min     | C\#             | ( 97 / 0x61 )                | 0-127 / 0x0-0x7f |
-| VU right average mid     | D               | ( 98 / 0x62 )                | 0-127 / 0x0-0x7f |
-| VU right average max     | D\#             | ( 99 / 0x63 )                | 0-127 / 0x0-0x7f |
-| VU right average fit     | E               | ( 100 / 0x64 )               | 0-127 / 0x0-0x7f |
-| VU right current meter 1 | F               | ( 101 / 0x65 )               | 0-127 / 0x0-0x7f |
-| VU right current meter 2 | F\#             | ( 102 / 0x66 )               | 0-127 / 0x0-0x7f |
-| VU right current meter 3 | G               | ( 103 / 0x67 )               | 0-127 / 0x0-0x7f |
-| VU right current meter 4 | G\#             | ( 104 / 0x68 )               | 0-127 / 0x0-0x7f |
-| VU right average meter 1 | A               | ( 105 / 0x69 )               | 0-127 / 0x0-0x7f |
-| VU right average meter 2 | A\#             | ( 106 / 0x6a )               | 0-127 / 0x0-0x7f |
-| VU right average meter 3 | B               | ( 107 / 0x6b )               | 0-127 / 0x0-0x7f |
-| VU right average meter 4 | C               | ( 108 / 0x6c )               | 0-127 / 0x0-0x7f |
+| action                   | note               | value                        |
+| ------------------------ | ------------------ | ---------------------------- |
+| deck change              | C ( 48 / 0x30 )    | 100 / 0x64 (+new decknumber) |
+| beat                     | D ( 50 / 0x32 )    | 100 / 0x64                   |
+| BPM                      | E ( 52 / 0x34 )    | BPM - 50                     |
+| VU mono current          | E ( 64 / 0x40 )    | 0-127 / 0x0-0x7f             |
+| VU mono average min      | F ( 65 / 0x41 )    | 0-127 / 0x0-0x7f             |
+| VU mono average mid      | F\# ( 66 / 0x42 )  | 0-127 / 0x0-0x7f             |
+| VU mono average max      | G ( 67 / 0x43 )    | 0-127 / 0x0-0x7f             |
+| VU mono average fit      | G\# ( 68 / 0x44 )  | 0-127 / 0x0-0x7f             |
+| VU mono current meter 1  | A ( 69 / 0x45 )    | 0-127 / 0x0-0x7f             |
+| VU mono current meter 2  | A\# ( 70 / 0x46 )  | 0-127 / 0x0-0x7f             |
+| VU mono current meter 3  | B ( 71 / 0x47 )    | 0-127 / 0x0-0x7f             |
+| VU mono current meter 4  | C ( 72 / 0x48 )    | 0-127 / 0x0-0x7f             |
+| VU mono average meter 1  | A ( 73 / 0x49 )    | 0-127 / 0x0-0x7f             |
+| VU mono average meter 2  | A\# ( 74 / 0x4a )  | 0-127 / 0x0-0x7f             |
+| VU mono average meter 3  | B ( 75 / 0x4b )    | 0-127 / 0x0-0x7f             |
+| VU mono average meter 4  | C ( 76 / 0x4c )    | 0-127 / 0x0-0x7f             |
+| VU left current          | G\# ( 80 / 0x50 )  | 0-127 / 0x0-0x7f             |
+| VU left average min      | A ( 81 / 0x51 )    | 0-127 / 0x0-0x7f             |
+| VU left average mid      | A\# ( 82 / 0x52 )  | 0-127 / 0x0-0x7f             |
+| VU left average max      | B ( 83 / 0x53 )    | 0-127 / 0x0-0x7f             |
+| VU left average fit      | C ( 84 / 0x54 )    | 0-127 / 0x0-0x7f             |
+| VU left current meter 1  | C\# ( 85 / 0x55 )  | 0-127 / 0x0-0x7f             |
+| VU left current meter 2  | D ( 86 / 0x56 )    | 0-127 / 0x0-0x7f             |
+| VU left current meter 3  | D\# ( 87 / 0x57 )  | 0-127 / 0x0-0x7f             |
+| VU left current meter 4  | E ( 88 / 0x58 )    | 0-127 / 0x0-0x7f             |
+| VU left average meter 1  | F ( 89 / 0x59 )    | 0-127 / 0x0-0x7f             |
+| VU left average meter 2  | F\# ( 90 / 0x5a )  | 0-127 / 0x0-0x7f             |
+| VU left average meter 3  | G ( 91 / 0x5b )    | 0-127 / 0x0-0x7f             |
+| VU left average meter 4  | G\# ( 92 / 0x5c )  | 0-127 / 0x0-0x7f             |
+| VU right current         | C ( 96 / 0x60 )    | 0-127 / 0x0-0x7f             |
+| VU right average min     | C\# ( 97 / 0x61 )  | 0-127 / 0x0-0x7f             |
+| VU right average mid     | D ( 98 / 0x62 )    | 0-127 / 0x0-0x7f             |
+| VU right average max     | D\# ( 99 / 0x63 )  | 0-127 / 0x0-0x7f             |
+| VU right average fit     | E ( 100 / 0x64 )   | 0-127 / 0x0-0x7f             |
+| VU right current meter 1 | F ( 101 / 0x65 )   | 0-127 / 0x0-0x7f             |
+| VU right current meter 2 | F\# ( 102 / 0x66 ) | 0-127 / 0x0-0x7f             |
+| VU right current meter 3 | G ( 103 / 0x67 )   | 0-127 / 0x0-0x7f             |
+| VU right current meter 4 | G\# ( 104 / 0x68 ) | 0-127 / 0x0-0x7f             |
+| VU right average meter 1 | A ( 105 / 0x69 )   | 0-127 / 0x0-0x7f             |
+| VU right average meter 2 | A\# ( 106 / 0x6a ) | 0-127 / 0x0-0x7f             |
+| VU right average meter 3 | B ( 107 / 0x6b )   | 0-127 / 0x0-0x7f             |
+| VU right average meter 4 | C ( 108 / 0x6c )   | 0-127 / 0x0-0x7f             |

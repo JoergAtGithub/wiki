@@ -8,7 +8,7 @@ music.
 
 ## Overview MIDI Notes
 
-| action | note        | value    |
-| ------ | ----------- | -------- |
-| beat   | D (50/0x32) | 100/0x64 |
-| BPM    | E (52/0x34) | BPM - 50 |
+| action | note        | value      |
+| ------ | ----------- | ---------- |
+| beat   | D (50/0x32) | 100 / 0x64 |
+| BPM    | E (52/0x34) | BPM - 50   |

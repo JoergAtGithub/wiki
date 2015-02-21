@@ -9,8 +9,9 @@ according to your needs. The DJ must not be disturbed during the event.
 
 ## The current deck
 
-The current deck is detected automatically. To achieve this, several
-mixxx-parameter are used. These are:
+The current deck is detected automatically. But it is important to know
+about it a little. To achieve this, several mixxx-parameter are used.
+These are:
 
   - The "crossfader"
   - All deck "volume control"

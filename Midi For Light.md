@@ -48,7 +48,7 @@ In practice, the absolute value of VU does not generate large visible
 change to the light. Therefore, there are the calculated values.
 Calculated from the last 2 seconds.
 
-Values with the label "Meter1" to "meter4" belong together. So you can,
+Values with the label "meter1" to "meter4" belong together. So you can,
 for example, form a real VU meter.
 
 ## MTC, midi time code

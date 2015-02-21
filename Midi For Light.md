@@ -5,6 +5,17 @@
 Midi\_for\_light is a controller for mixxx. It sends "light intresting"
 midi signals. The lightshow can follow in different ways the music.
 
+## MTC, midi time code
+
+The script sends MTC based on 25 frames per second. Only full frames be
+sent. No short message. By the use of full frames, a speed change
+(pitch) is no problem. It is also useful when creating a light show.
+Stop, forward, backward and jumps are transmitted correctly.
+
+  - The transmitted time code is determined by the current deck.
+  - Time code is transmitted only if the position (time) changes in the
+    song.
+
 ## Overview MIDI Notes
 
 | action                   | note               | value                        |

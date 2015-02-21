@@ -37,6 +37,20 @@ Tip: To get a better beat signal customize the options of "Beat
 Detection" in the preferences. I use this combination.
 [[/media/tutorials/midi_for_light/midi_for_light_preferences_beatdetection.png|]]
 
+## VU-Meter
+
+Here you can choose from many different signals. All refer to the master
+VU meter. First distinction is mono-, left- and right channel. Next, a
+distinction is made between actual and calculated values. You have the
+choice.
+
+In practice, the absolute value of VU does not generate large visible
+change to the light. Therefore, there are the calculated values.
+Calculated from the last 2 seconds.
+
+Values with the label "Meter1" to "meter4" belong together. So you can,
+for example, form a real VU meter.
+
 ## MTC, midi time code
 
 The script sends MTC based on 25 frames per second. Only full frames be

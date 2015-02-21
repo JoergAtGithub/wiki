@@ -1,4 +1,5 @@
-\-- DRAFT --
+\-- DRAFT -- Primary written for Mixxx Version 1.12 (most is the same
+under 1.11) --
 
 # The Midi\_for\_light controller
 

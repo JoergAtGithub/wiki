@@ -48,7 +48,7 @@ distinction is made between actual and calculated values. You have the
 choice.
 
 In practice, the absolute value of VU does not generate large visible
-change to the light. Therefore, there are the calculated values.
+change to the light. For more visible change use calculated values.
 Calculated from the last 2 seconds.
 
 Values with the label "meter1" to "meter4" belong together. So you can,

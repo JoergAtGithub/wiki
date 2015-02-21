@@ -40,6 +40,18 @@ Detection" in the preferences. I use this combination.
 
 [[/media/tutorials/midi_for_light/midi_for_light_preferences_beatdetection.png|]]
 
+## BPM
+
+The BPM (beats per minute) value is transferred every beat. The value
+range in midi is 0 to 127. To fit BPM value in this range: 50 will
+subtracted from BPM value.
+
+Example: BPM = 125, then the send value is 75. For BPM under 50 the send
+value is 0. For BPM over 177 the send value is 127.
+
+Tip: I use it for automated changing of effekt speeds. Like rotation or
+macro speed.
+
 ## VU (volume) meter
 
 Here you can choose from many different signals. All refer to the master

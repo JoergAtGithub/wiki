@@ -27,6 +27,12 @@ changes are suppressed.
 The best way to understand the automated deck change: Play a little in
 mixxx while a simple light sequence, synced by beat, is running.
 
+## Beat
+
+Probably the most common and simplest signal. You just have to know one
+thing: Running multiple decks will be sent only to the beat of the
+current.
+
 ## MTC, midi time code
 
 The script sends MTC based on 25 frames per second. Only full frames be

@@ -3,7 +3,9 @@
 # The Midi\_for\_light controller
 
 Midi\_for\_light is a controller for mixxx. It sends "light intresting"
-midi signals. The lightshow can follow in different ways the music.
+midi signals. The lightshow can follow in different ways the music.  
+The script requires no intervention as soon as you have configured it
+according to your needs. The DJ must not be disturbed during the event.
 
 ## MTC, midi time code
 

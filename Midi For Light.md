@@ -37,7 +37,7 @@ Tip: To get a better beat signal customize the options of "Beat
 Detection" in the preferences. I use this combination.
 [[/media/tutorials/midi_for_light/midi_for_light_preferences_beatdetection.png|]]
 
-## VU-Meter
+## VU (volume) Meter
 
 Here you can choose from many different signals. All refer to the master
 VU meter. First distinction is mono-, left- and right channel. Next, a

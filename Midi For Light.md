@@ -53,6 +53,13 @@ subtracted from BPM value.Example:
 Tip: I use it for automated changing of effekt speeds. Like rotation or
 macro speed.
 
+## Deck change
+
+If a deck change occur, a midi event is sent.
+
+Tip: This can used to switch light sequences automatically or randomly.
+Or you can put your light in a defined status
+
 ## VU (volume) meter
 
 Here you can choose from many different signals. All refer to the master

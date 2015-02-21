@@ -15,16 +15,16 @@ mixxx-parameter are used. These are:
   - The "crossfader"
   - All deck "volume control"
   - All deck "play/pause button"
-  - The script must find out what mix method is used by the DJ. Use the
-    cross fader or the volume control? For this purpose, the cross fader
-    is observed. Is this more than 3 seconds in the middle position, it
-    is assumed that a mixture using the volume controls. Otherwise the
-    cross fader is not in middle position: The DJ used cross fader for
-    mixing.  
-    To prevent a over charging of the light software, high frequency
-    deck changes are suppressed.  
-    The best way to understand the automated deck change: Play a little
-    in mixxx while a simple light sequence, synced by beat, is running.
+
+The script must find out what mix method is used by the DJ. Use the
+cross fader or the volume control? For this purpose, the cross fader is
+observed. Is this more than 3 seconds in the middle position, it is
+assumed that a mixture using the volume controls. Otherwise the cross
+fader is not in middle position: The DJ used cross fader for mixing.  
+To prevent a over charging of the light software, high frequency deck
+changes are suppressed.  
+The best way to understand the automated deck change: Play a little in
+mixxx while a simple light sequence, synced by beat, is running.
 
 ## MTC, midi time code
 

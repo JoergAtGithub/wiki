@@ -12,9 +12,8 @@ event.
 
 ## The current deck
 
-The current deck is detected automatically, but it is important to know
-a little about it. To achieve this, several mixxx-parameter are used.
-These are:
+The current deck is detected automatically. To achieve this, several
+mixxx-parameter are used. These are:
 
   - The "crossfader"
   - All deck "volume control"

@@ -34,6 +34,7 @@ thing: Running multiple decks will be sent only to the beat of the
 current.  
 Tip: To get a better beat signal customize the options of "Beat
 Detection" in the preferences. I use this combination.
+[[/media/tutorials/midi_for_light/midi_for_light_preferences_beatdetection.png|]]
 
 ## MTC, midi time code
 

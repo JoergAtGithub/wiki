@@ -22,8 +22,9 @@ mixxx-parameter are used. These are:
 The script must find out what mix method is used by the DJ. Use the
 cross fader or the volume control? For this purpose, the cross fader is
 observed. Is this more than 3 seconds in the middle position, it is
-assumed that a mixture using the volume controls. Otherwise the cross
-fader is not in middle position: The DJ used cross fader for mixing.  
+assumed that it is mixing by using the volume controls. Otherwise (the
+cross fader is not in middle position): The DJ uses cross fader for
+mixing.  
 To prevent a over charging of the light software, high frequency deck
 changes are suppressed.  
 The best way to understand the automated deck change: Play a little in

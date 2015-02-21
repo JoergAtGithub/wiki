@@ -31,7 +31,9 @@ mixxx while a simple light sequence, synced by beat, is running.
 
 Probably the most common and simplest signal. You just have to know one
 thing: Running multiple decks will be sent only to the beat of the
-current.
+current.  
+Tip: To get a better beat signal customize the options of "Beat
+Detection" in the preferences. I use this combination.
 
 ## MTC, midi time code
 

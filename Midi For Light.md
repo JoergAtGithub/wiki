@@ -44,10 +44,11 @@ Detection" in the preferences. I use this combination.
 
 The BPM (beats per minute) value is transferred every beat. The value
 range in midi is 0 to 127. To fit BPM value in this range: 50 will
-subtracted from BPM value.
+subtracted from BPM value.Example:
 
-Example: BPM = 125, then the send value is 75. For BPM under 50 the send
-value is 0. For BPM over 177 the send value is 127.
+  - BPM = 125, then the send value is 75.
+  - For BPM under 50 the send value is 0.
+  - For BPM over 177 the send value is 127.
 
 Tip: I use it for automated changing of effekt speeds. Like rotation or
 macro speed.

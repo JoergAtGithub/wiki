@@ -3,10 +3,12 @@ under 1.11) --
 
 # The Midi\_for\_light controller
 
-Midi\_for\_light is a controller for mixxx. It sends "light intresting"
-midi signals. The lightshow can follow in different ways the music.  
+Midi\_for\_light is a controller for mixxx. It sends only mixxx events
+these are "light mentioned" via midi. The lightshow can follow in
+different ways the music.  
 The script requires no intervention as soon as you have configured it
-according to your needs. The DJ must not be disturbed during the event.
+according to your needs. The DJ does not need to be disturbed during the
+event.
 
 ## The current deck
 

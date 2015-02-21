@@ -17,6 +17,8 @@ Stop, forward, backward and jumps are transmitted correctly.
   - The transmitted time code is determined by the current deck.
   - Time code is transmitted only if the position (time) changes in the
     song.
+  - To send time code via midi can be switched off under "personal
+    setting" of the script.
 
 ## Overview MIDI Notes
 

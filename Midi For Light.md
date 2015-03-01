@@ -133,3 +133,41 @@ Stop, forward, backward and jumps are transmitted correctly.
 | VU right average meter 2 | A\# ( 106 / 0x6a ) | 0-127 / 0x0-0x7f             |
 | VU right average meter 3 | B ( 107 / 0x6b )   | 0-127 / 0x0-0x7f             |
 | VU right average meter 4 | C ( 108 / 0x6c )   | 0-127 / 0x0-0x7f             |
+
+## personal settings
+
+You can define the midi-signals they should be send. In the file
+Midi\_for\_light.js is at the top a block with variables for that.
+Mostly you define: Send this or not. But one variable is for setup of
+the midi channel. Attention. This is global for all events these are
+send by note.
+
+### table personal settings
+
+| variable                          | default value | range of validity |
+| --------------------------------- | ------------- | ----------------- |
+| midi\_channel                     | 1             | 1-16              |
+| enable\_beat                      | true          | true/false        |
+| enable\_bpm                       | true          | true/false        |
+| enable\_mtc\_timecode             | true          | true/false        |
+| enable\_vu\_mono\_current         | false         | true/false        |
+| enable\_vu\_mono\_average\_min    | false         | true/false        |
+| enable\_vu\_mono\_average\_mid    | false         | true/false        |
+| enable\_vu\_mono\_average\_max    | false         | true/false        |
+| enable\_vu\_mono\_average\_fit    | true          | true/false        |
+| enable\_vu\_mono\_current\_meter  | false         | true/false        |
+| enable\_vu\_mono\_average\_meter  | true          | true/false        |
+| enable\_vu\_left\_current         | false         | true/false        |
+| enable\_vu\_left\_average\_min    | false         | true/false        |
+| enable\_vu\_left\_average\_mid    | false         | true/false        |
+| enable\_vu\_left\_average\_max    | false         | true/false        |
+| enable\_vu\_left\_average\_fit    | true          | true/false        |
+| enable\_vu\_left\_current\_meter  | false         | true/false        |
+| enable\_vu\_left\_average\_meter  | false         | true/false        |
+| enable\_vu\_right\_current        | false         | true/false        |
+| enable\_vu\_right\_average\_min   | false         | true/false        |
+| enable\_vu\_right\_average\_mid   | false         | true/false        |
+| enable\_vu\_right\_average\_max   | false         | true/false        |
+| enable\_vu\_right\_average\_fit   | true          | true/false        |
+| enable\_vu\_right\_current\_meter | false         | true/false        |
+| enable\_vu\_right\_average\_meter | false         | true/false        |

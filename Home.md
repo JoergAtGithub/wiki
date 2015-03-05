@@ -140,8 +140,6 @@ on Mixxx (and open source in general) is a great learning experience and
 also looks good on a resume.
 
   - See the list of suggested projects: [GSoC 2015 Ideas](gsoc2015ideas)
-  - Advice for students thinking of applying: [GSoC Advice for
-    Students](gsocadvice)
 
 ### GSoC 2014
 

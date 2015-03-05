@@ -128,8 +128,16 @@ plans.
 
 ### GSoC 2015
 
-Mixxx is applying as a mentor organization for [Google Summer of
+Mixxx applied as a mentor organization for [Google Summer of
 Code, 2015](https://www.google-melange.com/gsoc/homepage/google/gsoc2015?PageSpeed=noscript)
+but was declined this year in order to make room for newer organizations
+(like [Icecast](http://icecast.org/)\!)
+
+To all the students who were interested, you don't have to get involved
+with Mixxx through GSoC\! If you'd like we can work with you to scope
+out a project and get your work in the hands of DJs worldwide. Working
+on Mixxx (and open source in general) is a great learning experience and
+also looks good on a resume.
 
   - See the list of suggested projects: [GSoC 2015 Ideas](gsoc2015ideas)
   - Advice for students thinking of applying: [GSoC Advice for

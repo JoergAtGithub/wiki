@@ -118,7 +118,8 @@ following commands:
 # Alternate methods
 
 Here are some other ways our users have found to broadcast their mix
-sessions, useful for Mixxx versions 1.8.x and earlier.
+sessions, useful for Mixxx versions 1.8.x and earlier, or if you're
+having problems with the above.
 
 ## Linux via JACK and edcast
 

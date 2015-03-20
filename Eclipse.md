@@ -121,6 +121,7 @@ If the discovering fails, you may add the required info manually:
   - Add the lib/ folder. Again, add to all languages and configurations.
   - Also add /usr/include as a filesystem path.
   - Also add:
+  - /usr/include/qt4
   - /usr/include/qt4/Qt
   - /usr/include/qt4/QtCore
   - /usr/include/qt4/QtGui

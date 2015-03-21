@@ -408,6 +408,15 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Add property to elide parts of the text fit to the Text item's (Widget inherited from WLabel) text. Available options are ''none'', ''left'', ''right'', and ''middle''. See [[https://github.com/mixxxdj/mixxx/pull/506|pull#506]]
+ * <code=xml><TrackProperty>
+ ...
+ <Elide>right</Elide>
+```
+
+\</TrackProperty\>\</code\>
+
+``` 
  * Add support for [[creating_skins#singleton_widgets|Singleton widgets]] that should only be instantiated once but may appear in multiple places in a skin definition. This is useful for complex widgets like the library, which are memory intensive. See [[https://github.com/mixxxdj/mixxx/pull/463|pull#463]]
  * Add scalemode support to most widget images, See [[https://github.com/mixxxdj/mixxx/pull/426|pull#426]]
      * FIXED = Draw the image in its native dimensions with no stretching or tiling.

@@ -53,9 +53,8 @@ following procedure:
     manipulate the controller, the packets it sends will be printed to
     the screen/logged to the file. Compare subsequent packets to
     discover which button/slider/control affects what bit(s)/byte(s)
-    (and the
-    [endianness](http://www.google.com/url?sa=t&rct=j&q=endianness&source=web&cd=1&ved=0CDAQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEndianness&ei=-pplT7v7CYL74QSy8MCjCA&usg=AFQjCNEcYWBropgp-Eoe84G6njx-XOfysg&cad=rja)
-    if multiple bytes are affected.)
+    (and the [endianness](http://en.wikipedia.org/wiki/Endianness) if
+    multiple bytes are affected.)
   - FIXME *Add example here*
 
 <!-- end list -->

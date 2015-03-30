@@ -37,10 +37,11 @@ are some tips to help you do that.*
     discovered doing this for Ad-Aware makes a huge difference in
     latency.
   - **Disable anti-virus on-access scanning.** This hasn't been
-    confirmed but is worth a try since these programs are known to slow
-    systems down in general. ***This is only recommended if your system
-    is not connected to a network or the internet*** otherwise you put
-    your system at risk of infection.
+    confirmed but is worth testing since these programs are known to
+    slow systems down in general. ***Do not attempt this if your system
+    is connected to a network or the internet or will be using media
+    from unknown/untrusted sources*** otherwise you put your system at
+    risk of infection.
   - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
     feature called "PowerMizer" that has been reported to cause all
     kinds of problems for audio and overall latency. It can be disabled

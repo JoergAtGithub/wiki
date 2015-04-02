@@ -283,6 +283,16 @@ some house hardware mixers , sometimes you have no channel line fader
 Same for EQ\`s , they could be slider instead knobs.~~ Is that really
 possible?FIXME
 
+#### The filters (e.g. blur) used in my svg files are not visible . Why ?
+
+So you created a nice button with a drop shadow blur effect in svg
+format, only to find the button is displayed without the drop shadow in
+Mixxx? [Qt](https://en.wikipedia.org/wiki/Qt_\(software\)) Qt supports
+the [static
+features](http://www.w3.org/Graphics/SVG/feature/1.2/#SVG-static) of SVG
+1.2 Tiny. ECMA scripts and DOM manipulation are currently not supported,
+see <http://doc.qt.io/qt-5/svgrendering.html>
+
 ### Skin licensing & copyright
 
 The principles on licensing found on the [Creative Common

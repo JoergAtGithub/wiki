@@ -1,7 +1,20 @@
-Picture of Controller
+# Numark Mixtrack Pro II
 
-Sound Interface recognized out of the box with Ubuntu 14.04 and Mixxx
-1.12-alpha
+[[/media/numark_mixtrackpro.jpg|]]
 
-Mapping:
-<https://github.com/tompreston/Mixxx-Numark-Mixtrack-Pro-II-Mappings>
+Manufacturer link: <http://www.numark.com/product/mixtrack-pro-ii>
+
+# Controller description
+
+## Technically
+
+The Numark Mixtrack Pro II is the successor of [Numark Mixtrack
+Pro](numark_mixtrack_pro) and features the same hardware with some minor
+design changes.
+
+The audio interface is recognized in Ubuntu 14.04 out of the box.
+
+## Community Mapping
+
+You can get a user mapping
+[here](https://github.com/tompreston/Mixxx-Numark-Mixtrack-Pro-II-Mappings).

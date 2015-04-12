@@ -17,7 +17,7 @@ are some tips to help you do that.*
 
 ``` 
    * Install jackd package ''apt-get install jackd'' and enable Real-Time scheduling by a dialog during install. Make sure you are member of the "audio" group ''adduser <user> audio''.
-   * Set the maximum rtprio for your user. Edit ''/etc/security/limits.conf'' and add ''//<your user name>//  soft  rtprio  99'' to allow Mixxx (and other processes you run) to increase their thread priority to maximum.
+   * Set the maximum rtprio for your user. Edit ''/etc/security/limits.conf'' and add ''//<your user name>// - rtprio  99'' to allow Mixxx (and other processes you run) to increase their thread priority to maximum.
    * Start Mixxx as superuser $ ''sudo mixxx'' 
 * **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do ''ps aux | grep cpufreq'' and kill any processes you find.) -- Actually it is better to remove the kernel modules, do `lsmod | grep freq` and then remove each of the modules using rmmod, note that if you are using a notebook it will burn through battery **much** quicker when doing this. 
 * **Disable chipcard2.** This utility polls for smart cards every few seconds, and when it does, it can cause Mixxx's audio to skip, even with the latency set really high.

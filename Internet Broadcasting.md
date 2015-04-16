@@ -115,6 +115,18 @@ following commands:
 
     sudo port install lame
 
+**Manual Workaround**
+
+In case that MP3 streaming still won't work and the request for the LAME
+framework continues, make sure one of these two files is installed.
+These library paths are compiled into the Mixxx binary:
+
+    /usr/local/lib/libmp3lame.dylib
+    /opt/local/lib/libmp3lame.dylib
+
+The path to **libmp3lame.dylib** must be readable and executable for
+Mixxx's actual user.
+
 # Alternate methods
 
 Here are some other ways our users have found to broadcast their mix

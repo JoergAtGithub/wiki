@@ -10,8 +10,13 @@ page](Build%20Windows%20installer).)*
   - [Visual Studio 13 for Windows
     Desktop](http://www.visualstudio.com/downloads/download-visual-studio-vs).
     You need a Microsoft account.
-  - [Microsoft Windows 7
+  - [Microsoft Windows 7 (& .NET 3.5)
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
+  - Or the [Windows 7.1 (& .NET 4)
+    SDK](http://go.microsoft.com/fwlink/?LinkID=191420) which is
+    smaller, newer and includes the compilers (so you may not need
+    Visual Studio above if you're just looking to build Mixxx from a
+    command line.)
   - [Python](http://python.org/download/) 2.7.x Install for user only\!
     Otherwise scons can't find the installation
   - [SCONS 2.3.3](http://www.scons.org/download.php)

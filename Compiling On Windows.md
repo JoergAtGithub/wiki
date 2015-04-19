@@ -43,7 +43,7 @@ variable
     Unpack the zip archive into **WINLIB\_PATH\\build**
 4.  Download the [ASIO
     SDK](http://www.steinberg.net/en/company/developers.html). You will
-    need a free steinberg development account to do that. Exctract the
+    need a free steinberg development account to do that. Extract the
     files and rename the directory to remove the version number, so
     **ASIOSDK2.7** becomes **ASIOSDK**. Move **ASIOSDK** to
     **WINLIB\_PATH\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.

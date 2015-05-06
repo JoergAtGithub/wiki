@@ -16,7 +16,7 @@ crashed.
     following then press Enter: `cd %PROGRAMFILES%\Mixxx`
 5.  Run GDB: type the following command and press Enter: `C:\gdb
     mixxx.exe`
-6.  Continue with step 2.in the section below 
+6.  Continue with step 2. in the section below 
 
 ## Linux & Mac OS X with Xcode 4.x
 

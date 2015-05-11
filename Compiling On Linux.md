@@ -75,7 +75,6 @@ Once you have the source code, change to the newly created "mixxx"
 directory, and use scons to compile. As a regular user, do:
 
     cd mixxx  # To enter the repository.
-    cd mixxx  # (again) to enter the mixxx folder within the repository
     scons
 
 (scons -h shows a complete list of build flags if you'd like to

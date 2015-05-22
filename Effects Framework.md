@@ -286,7 +286,6 @@ where N is the EffectChain's ID.
 |  | \[EffectRack1\_EffectUnitN\_EffectM\_ParameterK\] |  | value\_max\_limit            |  | double, read-only    |  | The maximum allowable value of the Kth parameter's minimum.                                                                |  |
 |  | \[EffectRack1\_EffectUnitN\_EffectM\_ParameterK\] |  | value\_default               |  | double, read-only    |  | The default value of the parameter.                                                                                        |  |
 |  | \[EffectRack1\_EffectUnitN\_EffectM\_ParameterK\] |  | value                        |  | double               |  | The raw value of the Kth parameter. See the Parameter Values section for more information.                                 |  |
-|  | \[EffectRack1\_EffectUnitN\_EffectM\_ParameterK\] |  | value\_normalized            |  | 0.0..1.0             |  | The value of the Kth parameter, normalized to the range of 0.0 to 1.0.                                                     |  |
 
 In the above table,
 

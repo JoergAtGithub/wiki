@@ -59,10 +59,17 @@ Pull out the controller and plug it in again. Run mixxx and select
 "Preferences" -\> "Controllers" and you should be able to select and
 enable the controller.
 
+## Mapping for Mixxx 1.11 and below
+
+Old Mapping included in Mixxx up to version 1.11 can be found
+[here](hercules_dj_control_mp3_e2_old)
+
 ## Mapping for Mixxx 1.12+ (by knob/button)
 
 The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you
-don't have to download or install nothing.
+don't have to download or install nothing. This mapping allow you to
+manipulate 4 decks, 2 at a time, switching Deck A (left) between Channel
+1 and 3 and Deck B (right) between Channel 2 and 4.
 
 [[/media/hercules_mappa.png|]]
 

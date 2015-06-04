@@ -448,6 +448,9 @@ We are limited to what is supported across our 3 supported compilers:
 In general, Microsoft Visual Studio is the one that prevents us from
 using features.
 
+See also: [C++11 features in
+Qt5](http://woboq.com/blog/cpp11-in-qt5.html).
+
 ### initializer lists
 
 <http://en.cppreference.com/w/cpp/language/list_initialization>
@@ -476,11 +479,20 @@ Use.
 
 ### constexpr
 
-**Do Not Use**. Blame Microsoft.
+**Not Supported in Microsoft Visual Studio**. Blame Microsoft.
+
+Use
+[Q\_DECL\_CONSTEXPR](http://doc.qt.io/qt-5/qtglobal.html#Q_DECL_CONSTEXPR)\!
+On compilers that support it, a constexpr will be used. Otherwise it
+will be evaluated at runtime. Be careful since this means that you're
+relying on the compiler to optimize it out.
 
 ### unicode string literals
 
-**Do Not Use**. Blame Microsoft.
+**Do Not Use**. Use
+[QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral).
+
+Blame Microsoft.
 
 ### right angle brackets
 

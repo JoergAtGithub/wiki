@@ -348,29 +348,61 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 ##### Playing
 
-| Function                                                                   | Control           | number |
-| -------------------------------------------------------------------------- | ----------------- | ------ |
-| Loads the currently highlighted track into the corresponding deck (A or B) | Load A/B          | 18     |
-| Starts or stop a loaded track                                              | Play              | 14     |
-| Backward Play                                                              | Shift + Play      | 14     |
-| Toggle Repeat                                                              | Supershift + Play | 14     |
-
-Sets the cue point if a track is stopped and not at the current cue
-point Stops track and returns to the current cue point if a track is
-playing.
-
-|                                                                                    |                    |    |
-| ---------------------------------------------------------------------------------- | ------------------ | -- |
-| Plays preview if a track is stopped at the cue point for as long as it's held down | Cue                | 15 |
-| Move Forward/Backward in track                                                     | Forward / Backward | 12 |
-| Enable or disable the scratch mode on all four decks                               | Scratch            | 7  |
-
-Seeks forwards and backwards in a stopped track. Temporarily changes the
-playback speed for playing tracks.
-
-|                                                                           |           |    |
-| ------------------------------------------------------------------------- | --------- | -- |
-| Absolute sync of the track speed to the jog wheel if scratch mode enabled | Jog wheel | 16 |
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Control</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Loads the currently highlighted track into the corresponding deck (A or B)</td>
+<td>Load A/B</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Starts or stop a loaded track</td>
+<td>Play</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>Backward Play</td>
+<td>Shift + Play</td>
+<td>14</td>
+</tr>
+<tr class="even">
+<td>Toggle Repeat</td>
+<td>Supershift + Play</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>Sets the cue point if a track is stopped and not at the current cue point.<br />
+Stops track and returns to the current cue point if a track is playing.<br />
+Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+<td>Cue</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>Move Forward/Backward in track</td>
+<td>Forward / Backward</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>Enable or disable the scratch mode on all four decks</td>
+<td>Scratch</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Seeks forwards and backwards in a stopped track.<br />
+Temporarily changes the playback speed for playing tracks.<br />
+Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
+<td>Jog wheel</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
 
 ##### Volume / Equalizer / Effects
 
@@ -418,25 +450,64 @@ Loop/Fx button to switch to Loop mode.*
 
 ##### Pitch / Syncing
 
-| Function                                          | Control       | number |
-| ------------------------------------------------- | ------------- | ------ |
-| Temporary Holds the pitch 4% higher while pressed | Pitchbend +/- | 1      |
-
-Set deck as master clock. Led blink: master Fixed led: Follower
-
-|                                                                                                                |                           |    |
-| -------------------------------------------------------------------------------------------------------------- | ------------------------- | -- |
-| Led off: none                                                                                                  | Master tempo              | 2  |
-| Adjust playback pitch / speed                                                                                  | Pitch knobs               | 3  |
-| Automatically sets pitch so the BPM of the other deck is matched                                               | Sync                      | 13 |
-| Enable key-lock for the specified deck (rate changes only affect tempo, not key)                               | Shift + Master tempo      | 2  |
-| Magnet (all cues, hotcues, loops, and beatloops will be automatically quantized so that they begin on a beat.) | Supershift + Master tempo | 2  |
-| Adjust beatgrid                                                                                                | Shift + Sync              | 13 |
-| Enable or disable the scratch mode on all four decks                                                           | scratch                   | 7  |
-
-Seeks forwards and backwards in a stopped track. Temporarily changes the
-playback speed for playing tracks.
-
-|                                                                           |           |    |
-| ------------------------------------------------------------------------- | --------- | -- |
-| Absolute sync of the track speed to the jog wheel if scratch mode enabled | Jog wheel | 16 |
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Control</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temporary Holds the pitch 4% higher while pressed</td>
+<td>Pitchbend +/-</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Set deck as master clock.<br />
+Led blink: master<br />
+Fixed led: Follower<br />
+Led off: none</td>
+<td>Master tempo</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Adjust playback pitch / speed</td>
+<td>Pitch knobs</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Automatically sets pitch so the BPM of the other deck is matched</td>
+<td>Sync</td>
+<td>13</td>
+</tr>
+<tr class="odd">
+<td>Enable key-lock for the specified deck (rate changes only affect tempo, not key)</td>
+<td>Shift + Master tempo</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Magnet (all cues, hotcues, loops, and beatloops will be automatically quantized so that they begin on a beat.)</td>
+<td>Supershift + Master tempo</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Adjust beatgrid</td>
+<td>Shift + Sync</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td>Enable or disable the scratch mode on all four decks</td>
+<td>scratch</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Seeks forwards and backwards in a stopped track.<br />
+Temporarily changes the playback speed for playing tracks.<br />
+Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
+<td>Jog wheel</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>

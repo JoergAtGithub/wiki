@@ -518,6 +518,10 @@ Email mixxx-devel with your use case.
 
 In general, do not use.
 
+### forward declared / strongly typed enums
+
+Use.
+
 ### atomics
 
 For now, prefer using Qt atomic primitives. We may switch at some

@@ -447,6 +447,19 @@ Yes\!
 Use\! Any case where a method intentionally overrides that of a parent
 class should use the override keyword.
 
+### alignment
+
+MSVC only supports some of the C++11 alignment keywords:
+
+> Alignment: Neither VC10 nor VC11 implement the Core Language keywords
+> alignas/alignof from the alignment proposal that was voted into the
+> Working Paper. VC10 had aligned\_storage from TR1. VC11 adds
+> aligned\_union and std::align() to the Standard Library.
+
+### cstdint
+
+Appears to be supported by MSVC 2013. Use\!
+
 ### range-based for loops
 
 Use them\! Prefer them over Qt's `foreach` macro which has enjoyed

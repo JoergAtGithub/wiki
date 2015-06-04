@@ -391,3 +391,121 @@ A couple guidelines for class declarations:
 Using the `goto` statement is not allowed. Typically uses of `goto` are
 better handled by the C++ idiom of [Resource Acquisition Is
 Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization).
+
+## C++11
+
+As of the Mixxx 2.0 release, Mixxx is switching to C++11. We are taking
+a conservative approach to adopting C++11 features and whitelisting them
+one by one. If a C++11 feature you would like to use is not listed here,
+please email mixxx-devel to make a case for it and we will consider
+whitelisting it.
+
+We are limited to what is supported across our 3 supported compilers:
+
+  - [Clang](http://clang.llvm.org/cxx_status.html)
+  - [GCC](https://gcc.gnu.org/projects/cxx0x.html)
+  - [Microsoft Visual
+    Studio 2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
+
+In general, Microsoft Visual Studio is the one that prevents us from
+using features.
+
+### initializer lists
+
+<http://en.cppreference.com/w/cpp/language/list_initialization>
+
+Use\!
+
+### static\_assert
+
+Use\!
+
+### nullptr
+
+Yes\! Always prefer to NULL.
+
+### unique\_ptr / std::move
+
+Yes\! Prefer to QScopedPointer.
+
+### constexpr
+
+**Do Not Use**. Blame Microsoft.
+
+### unicode string literals
+
+**Do Not Use**. Blame Microsoft.
+
+### right angle brackets
+
+<http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html>
+
+Yes\!
+
+### override / final
+
+Use\! Any case where a method intentionally overrides that of a parent
+class should use the override keyword.
+
+### range-based for loops
+
+Use them\! Prefer them over Qt's `foreach` macro which has enjoyed
+widespread usage throughout the Mixxx codebase.
+
+``` cpp-qt
+for (const QString& item : list) {
+  qDebug() << "WOOHOO" << item;
+}
+```
+
+### auto
+
+Auto is acceptable in function-level scopes (i.e. only within function
+bodies. Do not use auto in a function or method prototype as this makes
+the code less self-documenting and would require reading the body of the
+function to determine its return type or arguments.
+
+Good:
+
+``` cpp-qt
+void mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) {
+  auto bufferSize = 256; // kind of lazy, but ok.
+  
+  for (const auto& value : values) {
+    qDebug() << "blah:" << value;
+  }
+  
+  for (auto* channel : *channels) {
+    channel->process(bufferSize);
+  }
+}
+```
+
+Bad:
+
+``` cpp-qt
+auto mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) -> bool {
+  return true;
+}
+```
+
+### closures
+
+Use carefully\! Closures can obscure the control flow of a system and
+introduce tricky data lifetime issues. Using a lambda in your code will
+require more time in code review and you may be asked to re-write the
+code to avoid the usage by your code reviewer. Before using a closure,
+please consider whether it's truly necessary.
+
+### variadic templates
+
+Email mixxx-devel with your use case.
+
+### r-value references
+
+In general, do not use.
+
+### atomics
+
+For now, prefer using Qt atomic primitives. We may switch at some
+point... atomically. 8-)

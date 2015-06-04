@@ -457,7 +457,8 @@ class should use the override keyword.
 
 ### alignment
 
-MSVC only supports some of the C++11 alignment keywords:
+**Use carefully.** MSVC only supports some of the C++11 alignment
+keywords:
 
 > Alignment: Neither VC10 nor VC11 implement the Core Language keywords
 > alignas/alignof from the alignment proposal that was voted into the

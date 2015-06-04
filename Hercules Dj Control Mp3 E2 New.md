@@ -273,3 +273,81 @@ There is soft takeover after deck switch (1/3 or 2/4) to prevent wide parameter 
 </tr>
 </tbody>
 </table>
+
+## Mapping for Mixxx 1.12+ (by command)
+
+#### Shift / Supershift
+
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Control</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Shift button to obtain more controls than those provided by Hercules.<br />
+Press &amp; Hold automix, then press corresponding button to obtain shifted behavior.</td>
+<td>Automix</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Supershift button to obtain a third level of controls.<br />
+Press &amp; Hold Automix, then press &amp; Hold Scratch, then press corresponding button to obtain supershifted behavior.</td>
+<td>Shift-Scratch</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Switch deck A (left) between Channel1 and Channel3 (also apply to Sampler1 and Sampler3)</td>
+<td>Supershift + Load A</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Switch deck B (right) between Channel2 and Channel4 (also apply to Sampler2 and Sampler4)</td>
+<td>Supershift + Load B</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+
+#### Library
+
+FIXME
+
+#### Master/Headphones/Microphone
+
+FIXME
+
+#### Sampler
+
+FIXME
+
+#### Decks / Channels
+
+##### Playing
+
+FIXME
+
+##### Volume / Equalizer / Effects
+
+FIXME
+
+##### Hotcues
+
+*Need to be in Hotcue mode (button Loop/Fx (4) lit up). If not, press
+Loop/Fx button to switch to hotcue mode.*
+
+FIXME
+
+##### Loops
+
+*Need to be in Loop mode (button Loop/Fx (4) turned off). If not, press
+Loop/Fx button to switch to Loop mode.*
+
+FIXME
+
+##### Pitch / Syncing
+
+FIXME

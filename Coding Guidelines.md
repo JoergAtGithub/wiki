@@ -75,22 +75,28 @@ Give variables and classes a descriptive but succinct name.
 Local variables should follow either a camelBack case or
 lowercase\_with\_underscores style:
 
-    QString hotcue_name;
-    int composerSortOrder;
+``` cpp-qt
+QString hotcue_name;
+int composerSortOrder;
+```
 
 Pointers should be prefixed with a "p" to indicate they are a pointer.
 The "\*" should be aligned with the type and **not** the name.
 
 **Examples:**"
 
-    int* pHotcueIndex;
+``` cpp-qt
+int* pHotcueIndex;
+```
 
 Optionally include minimal type information with variables. This can be
 handy to know at a glance the rough type of an object. For example, for
 a [ControlObject](ControlObject) a common pattern is to prepend "CO" to
 the variable name:
 
-    ControlObject* m_pCOPlayButton;
+``` cpp-qt
+ControlObject* m_pCOPlayButton;
+```
 
 ### Classes
 
@@ -111,7 +117,7 @@ separated from surrounding code by a single space.
 
 **Good:**
 
-``` 
+``` cpp-qt
 if (expression) {
   // something
 } else {
@@ -128,12 +134,14 @@ if (long_expression1 ||
 
 **Bad:**
 
-    if (expression)
-    {
-    }
-    else
-    {
-    }
+``` cpp-qt
+if (expression)
+{
+}
+else
+{
+}
+```
 
 ## If Statements
 
@@ -143,26 +151,32 @@ same indentation level, not realizing that there are no braces.
 
 **OK:**
 
-    if (expression)
-        statement
+``` cpp-qt
+if (expression)
+    statement
+```
 
 There should be one space following the `if` keyword, and one space
 following the closing parenthesis of the condition before the brace.
 
 **Better:**
 
-    if (expression) {
-    
-    }
+``` cpp-qt
+if (expression) {
+
+}
+```
 
 Do not add padding inside the conditional or omit a space between the
 `if` keyword and the conditional parenthesis.
 
 **Bad:**
 
-    if( expression ){
-    
-    }
+``` cpp-qt
+if( expression ){
+
+}
+```
 
 ## For Loops
 
@@ -174,9 +188,11 @@ statements.
 
 **Good:**
 
-    for (initializer; conditional; increment) {
-    
-    }
+``` cpp-qt
+for (initializer; conditional; increment) {
+
+}
+```
 
 ## Comments
 
@@ -188,8 +204,10 @@ and year, along with your username.
 
 **Good:**
 
-    // This is required because we don't have enough foo's in the bar -- rryan 2/2011
-    doSomething();
+``` cpp-qt
+// This is required because we don't have enough foo's in the bar -- rryan 2/2011
+doSomething();
+```
 
 Plain-text comments should be separated from the comment symbol by a
 single space. Commented-out code should have no space between the
@@ -197,17 +215,21 @@ comment symbol and the code:
 
 **Good:**
 
-    // Textual comment
-    //if (thisSectionIsDeprecated) {
-    //    // Do something crufty
-    //}
+``` cpp-qt
+// Textual comment
+//if (thisSectionIsDeprecated) {
+//    // Do something crufty
+//}
+```
 
 **Bad:**
 
-    //Textual comment
-    // if (thisSectionIsDeprecated) {
-    //     // Do something crufty
-    // }
+``` cpp-qt
+//Textual comment
+// if (thisSectionIsDeprecated) {
+//     // Do something crufty
+// }
+```
 
 Avoid comments that do not add more information than the words contained
 in the statement that follows them. Instead, write a descriptive summary
@@ -215,33 +237,43 @@ of what the following lines accomplish.
 
 **Bad:**
 
-    /* init boofar */
-    initBoofar();
+``` cpp-qt
+/* init boofar */
+initBoofar();
+```
 
 **Bad:**
 
-    /*
-     * Java-style comment
-     */ 
-    thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
-    /* C-style comment -- avoid because you can't nest them */
+``` cpp-qt
+/*
+ * Java-style comment
+ */ 
+thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
+/* C-style comment -- avoid because you can't nest them */
+```
 
 ### TODO's
 
 If you'd like to leave a `TODO` for yourself, format them like this:
 
-    // TODO(rryan) Make sure to double-check this.
+``` cpp-qt
+// TODO(rryan) Make sure to double-check this.
+```
 
 If you'd like to leave a general `TODO` for the team, use the name
 `XXX`:
 
-    // TODO(XXX) Make this more general
+``` cpp-qt
+// TODO(XXX) Make this more general
+```
 
 Remember to actually go back and investigate your `TODO`'s :).
 
 **Bad:**
 
-    // TODO Make this more general
+``` cpp-qt
+// TODO Make this more general
+```
 
 ## C++ Header Files
 
@@ -256,7 +288,7 @@ not insert ASCII art. Do not include a copyright notice, or license
 because the project has a root LICENSE file which covers these
 declarations, and so any file-level declarations would be redundant.
 
-``` 
+``` cpp-qt
 // filename.h 
 // Created 2/21/2011 by RJ Ryan <email> 
 ```
@@ -266,10 +298,12 @@ declarations, and so any file-level declarations would be redundant.
 The \#ifndef guard should be the filename with the dots replaced with an
 underscore.
 
-    #ifndef LIBRARY_H
-    #define LIBRARY_H
-    
-    #endif
+``` cpp-qt
+#ifndef LIBRARY_H
+#define LIBRARY_H
+
+#endif
+```
 
 ### includes
 
@@ -289,18 +323,20 @@ classes other than Mixxx project classes.
 
 **Example:**
 
-    #include <math.h>
-    #include <sys/types.h>
-    
-    #include <QtCore>
-    #include <QtDebug>
-    #include <QTreeView>
-    
-    #include <taglib/taglib.h>
-    
-    #include "library/library.h"
-    
-    class Cue;
+``` cpp-qt
+#include <math.h>
+#include <sys/types.h>
+
+#include <QtCore>
+#include <QtDebug>
+#include <QTreeView>
+
+#include <taglib/taglib.h>
+
+#include "library/library.h"
+
+class Cue;
+```
 
 ### Class Declaration
 
@@ -343,48 +379,50 @@ A couple guidelines for class declarations:
 
 **Example:**
 
-    // The Library is the manager class for all library functionality. It contains the LibraryFeature's 
-    // enabled for use with the library and connects them and their signals to the GUI's library widgets.
-    class Library : public QObject { 
-        Q_OBJECT
-      public:
-        Library(QObject* pParent,
-                ConfigObject<ConfigValue>* pConfig,
-                bool firstRun);
-        virtual ~Library();
-        
-        // bindWidget gives the Library a chance to insert logic into the library 
-        // widgets (WLibrary and WLibrarySidebar).
-        void bindWidget(WLibrarySidebar* sidebarWidget,
-                        WLibrary* libraryWidget,
-                        MixxxKeyboard* pKeyboard);
-                        
-        // Add a LibraryFeature to the list of features enabled in the Library.
-        void addFeature(LibraryFeature* feature);
-        
-      public slots:
-        // Request that the Library switch to the default track table and show the 
-        // provided TrackModel. 
-        void slotShowTrackModel(QAbstractItemModel* model);
-        
-        // Request that the library switch to the provided view name. Views should be 
-        // registered in LibraryFeature::bindWidget() or Library::bindWidget
-        void slotSwitchToView(const QString& view);
-      
-      signals:
-        // Broadcast to the associated WLibrary widget that the provided model
-        // should be switched to.
-        void showTrackModel(QAbstractItemModel* model); 
-        
-        // Broadcast to the associated WLibrary widget that the view with the
-        // provided name should be switched to.
-        void switchToView(const QString& view);
-        
-      private:
-        ConfigObject<ConfigValue>* m_pConfig;
-        // List of LibraryFeature's enabled in the Library
-        QList<LibraryFeature*> m_features;
-    };
+``` cpp-qt
+// The Library is the manager class for all library functionality. It contains the LibraryFeature's 
+// enabled for use with the library and connects them and their signals to the GUI's library widgets.
+class Library : public QObject { 
+    Q_OBJECT
+  public:
+    Library(QObject* pParent,
+            ConfigObject<ConfigValue>* pConfig,
+            bool firstRun);
+    virtual ~Library();
+    
+    // bindWidget gives the Library a chance to insert logic into the library 
+    // widgets (WLibrary and WLibrarySidebar).
+    void bindWidget(WLibrarySidebar* sidebarWidget,
+                    WLibrary* libraryWidget,
+                    MixxxKeyboard* pKeyboard);
+                    
+    // Add a LibraryFeature to the list of features enabled in the Library.
+    void addFeature(LibraryFeature* feature);
+    
+  public slots:
+    // Request that the Library switch to the default track table and show the 
+    // provided TrackModel. 
+    void slotShowTrackModel(QAbstractItemModel* model);
+    
+    // Request that the library switch to the provided view name. Views should be 
+    // registered in LibraryFeature::bindWidget() or Library::bindWidget
+    void slotSwitchToView(const QString& view);
+  
+  signals:
+    // Broadcast to the associated WLibrary widget that the provided model
+    // should be switched to.
+    void showTrackModel(QAbstractItemModel* model); 
+    
+    // Broadcast to the associated WLibrary widget that the view with the
+    // provided name should be switched to.
+    void switchToView(const QString& view);
+    
+  private:
+    ConfigObject<ConfigValue>* m_pConfig;
+    // List of LibraryFeature's enabled in the Library
+    QList<LibraryFeature*> m_features;
+};
+```
 
 ### GOTO
 

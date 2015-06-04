@@ -314,15 +314,35 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 #### Library
 
-FIXME
+| Function                                                                    | Control                       | number |
+| --------------------------------------------------------------------------- | ----------------------------- | ------ |
+| Select prev/next playlist                                                   | Supershift + Deck A Jog Wheel | 16     |
+| Toggles (expands/collapses) the currently selected library sidebar item     | Folder                        | 6      |
+| Go one track down                                                           | Up arrow                      | 8      |
+| Go one track up                                                             | Shift + Up arrow              | 8      |
+| Select prev/next track                                                      | Supershift + Deck B Jog Wheel | 16     |
+| Loads the currently highlighted track into the corresponding deck (A or B)  | Load A/B                      | 18     |
+| Loads the current highlighted track into the corresponding sampler (1 or 2) | Shift + Load A/B              | 18     |
 
 #### Master/Headphones/Microphone
 
-FIXME
+| Function                                                          | Control                   | number |
+| ----------------------------------------------------------------- | ------------------------- | ------ |
+| Microphone TalkOver                                               | Down Arrow                | 8      |
+| Fades between left (channel 1 & 3) and right (channel 2 & 4) deck | Crossfader                | 19     |
+| Headphone volume                                                  | Shift + Deck A pitch knob | 3      |
+| Adjust the cue/main mix in the headphone output                   | Shift + Deck B pitch knob | 3      |
+| Toggles deck output to the headphones monitor on/off              | Headphone monitor         | 20     |
 
 #### Sampler
 
-FIXME
+| Function                                                                    | Control             | number |
+| --------------------------------------------------------------------------- | ------------------- | ------ |
+| Loads the current highlighted track into the corresponding sampler (1 or 2) | Shift + Load A/B    | 18     |
+| Goto start & Play sampler 1/3                                               | Shift + Folder      | 6      |
+| Stop sampler 1/3                                                            | Supershift + Folder | 6      |
+| Goto start & Play sampler 2/4                                               | Shift + Files       | 10     |
+| Stop sampler 2/4                                                            | Supershift + Files  | 10     |
 
 #### Decks / Channels
 

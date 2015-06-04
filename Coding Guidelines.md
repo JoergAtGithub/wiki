@@ -402,8 +402,8 @@ whitelisting it.
 
 We are limited to what is supported across our 3 supported compilers:
 
-  - [Clang](http://clang.llvm.org/cxx_status.html)
-  - [GCC](https://gcc.gnu.org/projects/cxx0x.html)
+  - [Clang 3.3](http://clang.llvm.org/cxx_status.html)
+  - [GCC 4.8](https://gcc.gnu.org/projects/cxx0x.html)
   - [Microsoft Visual
     Studio 2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
 
@@ -427,6 +427,14 @@ Yes\! Always prefer to NULL.
 ### unique\_ptr / std::move
 
 Yes\! Prefer to QScopedPointer.
+
+### default / delete functions
+
+Use.
+
+### delegating constructors
+
+Use.
 
 ### constexpr
 
@@ -514,7 +522,7 @@ please consider whether it's truly necessary.
 
 Email mixxx-devel with your use case.
 
-### r-value references
+### r-value references / move constructors
 
 In general, do not use.
 

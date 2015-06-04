@@ -348,26 +348,95 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 ##### Playing
 
-FIXME
+| Function                                                                   | Control           | number |
+| -------------------------------------------------------------------------- | ----------------- | ------ |
+| Loads the currently highlighted track into the corresponding deck (A or B) | Load A/B          | 18     |
+| Starts or stop a loaded track                                              | Play              | 14     |
+| Backward Play                                                              | Shift + Play      | 14     |
+| Toggle Repeat                                                              | Supershift + Play | 14     |
+
+Sets the cue point if a track is stopped and not at the current cue
+point Stops track and returns to the current cue point if a track is
+playing.
+
+|                                                                                    |                    |    |
+| ---------------------------------------------------------------------------------- | ------------------ | -- |
+| Plays preview if a track is stopped at the cue point for as long as it's held down | Cue                | 15 |
+| Move Forward/Backward in track                                                     | Forward / Backward | 12 |
+| Enable or disable the scratch mode on all four decks                               | Scratch            | 7  |
+
+Seeks forwards and backwards in a stopped track. Temporarily changes the
+playback speed for playing tracks.
+
+|                                                                           |           |    |
+| ------------------------------------------------------------------------- | --------- | -- |
+| Absolute sync of the track speed to the jog wheel if scratch mode enabled | Jog wheel | 16 |
 
 ##### Volume / Equalizer / Effects
 
-FIXME
+| Function                                                                    | Control                    | number |
+| --------------------------------------------------------------------------- | -------------------------- | ------ |
+| Controls the deck output volume, with soft takeover on deck switch.         | Deck volume slider         | 17     |
+| Adjusts the gain of the low/medium/high equalizer filter. No soft takeover. | Equalizer knobs            | 5      |
+| Filter Low Kill                                                             | Supershift + Pitchbend -   | 1      |
+| Filter Mid Kill                                                             | Supershift + Sync          | 13     |
+| Filter High Kill                                                            | Supershift + Pitchbend +   | 1      |
+| Adjust pregain                                                              | Shift + Forward / Backward | 12     |
+| Quick Filter knob                                                           | Supershift + Pitch knobs   | 3      |
 
 ##### Hotcues
 
 *Need to be in Hotcue mode (button Loop/Fx (4) lit up). If not, press
 Loop/Fx button to switch to hotcue mode.*
 
-FIXME
+| Function                                                                                                                         | Control                 | number |
+| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------ |
+| If hotcue X is set, seeks the player to hotcue X's position. If hotcue X is not set, sets hotcue X to the current play position. | 1/2/3/4 buttons         | 11     |
+| If hotcue X is set, clears its hotcue status.                                                                                    | Shift + 1/2/3/4 buttons | 11     |
 
 ##### Loops
 
 *Need to be in Loop mode (button Loop/Fx (4) turned off). If not, press
 Loop/Fx button to switch to Loop mode.*
 
-FIXME
+| Function                       | Control               | number |
+| ------------------------------ | --------------------- | ------ |
+| loop-in                        | Button 1              | 11     |
+| loop-out                       | Button 2              | 11     |
+| Toggles current loop On or Off | Button 3              | 11     |
+| Clear Loop                     | Supershift + Button 1 | 11     |
+| loop 1/8                       | Supershift + Button 2 | 11     |
+| loop 1/4                       | Shift + Button 1      | 11     |
+| loop 1/2                       | Shift + Button 2      | 11     |
+| loop 1                         | Shift + Button 3      | 11     |
+| loop 2                         | Shift + Button 4      | 11     |
+| loop 4                         | Button 4              | 11     |
+| loop 8                         | Supershift + Button 3 | 11     |
+| loop 16                        | Supershift + Button 4 | 11     |
+| Double loop                    | Shift + Pitchbend +   | 1      |
+| Half loop                      | Shift + Pitchbend -   | 1      |
 
 ##### Pitch / Syncing
 
-FIXME
+| Function                                          | Control       | number |
+| ------------------------------------------------- | ------------- | ------ |
+| Temporary Holds the pitch 4% higher while pressed | Pitchbend +/- | 1      |
+
+Set deck as master clock. Led blink: master Fixed led: Follower
+
+|                                                                                                                |                           |    |
+| -------------------------------------------------------------------------------------------------------------- | ------------------------- | -- |
+| Led off: none                                                                                                  | Master tempo              | 2  |
+| Adjust playback pitch / speed                                                                                  | Pitch knobs               | 3  |
+| Automatically sets pitch so the BPM of the other deck is matched                                               | Sync                      | 13 |
+| Enable key-lock for the specified deck (rate changes only affect tempo, not key)                               | Shift + Master tempo      | 2  |
+| Magnet (all cues, hotcues, loops, and beatloops will be automatically quantized so that they begin on a beat.) | Supershift + Master tempo | 2  |
+| Adjust beatgrid                                                                                                | Shift + Sync              | 13 |
+| Enable or disable the scratch mode on all four decks                                                           | scratch                   | 7  |
+
+Seeks forwards and backwards in a stopped track. Temporarily changes the
+playback speed for playing tracks.
+
+|                                                                           |           |    |
+| ------------------------------------------------------------------------- | --------- | -- |
+| Absolute sync of the track speed to the jog wheel if scratch mode enabled | Jog wheel | 16 |

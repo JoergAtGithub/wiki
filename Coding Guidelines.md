@@ -549,7 +549,7 @@ auto mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels)
 }
 ```
 
-### closures
+### closures / lambdas
 
 Use carefully\! Closures can obscure the control flow of a system and
 introduce tricky data lifetime issues. Using a lambda in your code will

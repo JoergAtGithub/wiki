@@ -38,3 +38,5 @@ to play m4a files from a trunk build without installing, call `./mixxx
 --pluginPath ./linux_build/plugins/linux_build`, changing linux\_build
 to the appropriate directory name as necessary). As many --pluginPath
 arguments may be specified as necessary.
+
+test

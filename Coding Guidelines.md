@@ -532,18 +532,28 @@ for (const QString& item : list) {
 
 ### auto
 
+We do not follow a aaa-style (almost-always-auto).
+
+Our rules of thump:
+
+  - use auto to prevent repeating yourself
+  - auto when the type is long and does not add any value
+
 Auto is acceptable in function-level scopes (i.e. only within function
 bodies. Do not use auto in a function or method prototype as this makes
 the code less self-documenting and would require reading the body of the
 function to determine its return type or arguments.
 
+More details can be found here:
+<https://google-styleguide.googlecode.com/svn/trunk/cppguide.html#auto>
+
 Good:
 
 ``` cpp-qt
 void mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) {
-  auto bufferSize = 256; // kind of lazy, but ok.
+  auto bufferSize = 256; // this avoids uninitialised locals
   
-  for (const auto& value : values) {
+  for (const auto& value : values) { // Type can't get wrong 
     qDebug() << "blah:" << value;
   }
   
@@ -557,8 +567,27 @@ Bad:
 
 ``` cpp-qt
 auto mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) -> bool {
-  return true;
+  return true; // need to read the function body 
 }
+```
+
+Bad:
+
+``` cpp-qt
+auto value getValue(); // because the type is out of sight
+```
+
+Bad:
+
+``` cpp-qt
+QVector<RowInfo>::iterator it = rowInfo.begin();
+// Explicit type is only clutter and can be easily guessed from the context. 
+```
+
+Bad:
+
+``` cpp-qt
+QList<int>* pList = new QList<int>(); // do not repeat yourself 
 ```
 
 ### closures / lambdas

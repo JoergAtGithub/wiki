@@ -119,6 +119,11 @@ You have to follow the above guide with two changes.
 1.  Build the dependencies with: `build_environment x64 Release`
 2.  Use **set ARCHITECTURE=amd64** and **force32=0** in **build.bat**
 
+**WARNING**: DO NOT mix 32 and 64 bits build in the same CMD Shell
+window or you will have undetermined results. If you need 32 and 64 bits
+environments together, use diffrent windows for 32 bits and 64 bits
+build\_environment and mixxx compilation
+
 ## Build debug version of Mixxx
 
 You have to follow the above guide with two changes.

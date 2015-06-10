@@ -4,7 +4,7 @@ use from a USB drive or live DVD.
 # Live GNU/Linux Distributions
 
 These are complete operating systems that boot from USB drives or DVDs
-to run Mixxx without using
+to run Mixxx without requiring installing any software on the computer.
 
 ## Crossfade
 

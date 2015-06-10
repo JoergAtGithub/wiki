@@ -18,15 +18,14 @@ them by running:
 
 ### Fedora
 
-On Fedora 19/20, you need enable the rpmfusion repo and then:
+On Fedora, [enable the RPMFusion package
+repository](http://rpmfusion.org/Configuration). You only need to enable
+the free repository. Then run:
 
     su
-    yum groupinstall "Development Tools"
-    yum install scons git gcc-c++ alsa-lib-devel qt4-devel libGL-devel libGLU-devel \
-    libid3tag-devel libmad-devel libmp4v2-devel libsndfile-devel libvorbis-devel \
-    portaudio-devel libshout-devel python-devel portmidi-devel qt-webkit-devel taglib-devel flac-devel \
-    protobuf-devel vamp-plugin-sdk-devel \
-    libchromaprint-devel rubberband-devel libusbx-devel libsqlite3-devel
+    dnf groupinstall "Development Tools"
+    dnf install scons git gcc-c++ rubberband-devel
+    dnf builddep mixxx
 
 ### Other
 

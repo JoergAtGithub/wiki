@@ -97,49 +97,49 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                                  |                         |                         |          |
-| ------------------------------------------------ | ----------------------- | ----------------------- | -------- |
-| Device                                           | Windows                 | Mac OS X                | Linux    |
-| Allen and Heath Xone:1D                          |                         |                         |          |
-| Allen and Heath Xone:2D                          |                         |                         |          |
-| Allen and Heath Xone:3D                          |                         |                         |          |
-| Allen and Heath Xone:4D                          |                         |                         |          |
-| Allen and Heath Xone:DX                          |                         |                         |          |
-| Ecler Evo4                                       |                         |                         |          |
-| Ecler Evo5                                       |                         |                         |          |
-| EKS Otus Dualdeck                                |                         |                         |          |
-| EKS Otus Plus                                    |                         |                         |          |
-| EKS Otus RAW                                     |                         |                         |          |
-| [EKS XP5](EKS%20XP5)                             |                         |                         |          |
-| [EKS XP10](EKS%20XP10)                           |                         |                         |          |
-| Korg NanoPad                                     |                         |                         |          |
-| [Korg NanoKontrol](/wiki/dokuwiki)               | Yes (1.10.0+)           |                         |          |
-| Korg NanoKey                                     |                         |                         |          |
-| Korg PadKontrol                                  |                         |                         |          |
-| M-AUDIO Torq Conectiv CD                         |                         |                         |          |
-| M-AUDIO Torq Conectiv Vinyl                      |                         |                         |          |
-| Native Instruments Traktor Kontrol D2            |                         |                         |          |
-| Native Instruments Traktor Kontrol F1 (HID)      |                         |                         |          |
-| Native Instruments Traktor Kontrol X1 Mk1        | possible with MIDI mode | possible with MIDI mode | see note |
-| Native Instruments Traktor Kontrol X1 Mk2 (HID)  |                         |                         |          |
-| Native Instruments Traktor Kontrol S2 Mk1        | possible with MIDI mode | possible with MIDI mode | see note |
-| Native Instruments Traktor Kontrol S2 Mk2 (HID)  |                         |                         |          |
-| Native Instruments Traktor Kontrol S4 Mk 1       | possible with MIDI mode | possible with MIDI mode | see note |
-| Native Instruments Traktor Kontrol S4 Mk 2 (HID) |                         |                         |          |
-| Native Instruments Traktor Kontrol S8            | possible with MIDI mode | possible with MIDI mode | see note |
-| Native Instruments Traktor Kontrol Z1 (HID)      |                         |                         |          |
-| Native Instruments Traktor Kontrol Z2 (HID)      |                         |                         |          |
-| Numark Stealth Control                           |                         |                         |          |
-| Numark Omni Control                              |                         |                         |          |
-| Numark MixDeck                                   |                         |                         |          |
-| Numark Mixmeister Control                        |                         |                         |          |
-| Numark iDJ3                                      |                         |                         |          |
-| Numark NSFX                                      |                         |                         |          |
-| Numark V7                                        |                         |                         |          |
-| Rane TTM 57SL                                    |                         |                         |          |
-| Vestax TR-1                                      |                         |                         |          |
-| Vestax VCM-100                                   |                         |                         |          |
-| Vestax VCM-600                                   |                         |                         |          |
+|                                                  |                         |                         |                                   |
+| ------------------------------------------------ | ----------------------- | ----------------------- | --------------------------------- |
+| Device                                           | Windows                 | Mac OS X                | Linux                             |
+| Allen and Heath Xone:1D                          |                         |                         |                                   |
+| Allen and Heath Xone:2D                          |                         |                         |                                   |
+| Allen and Heath Xone:3D                          |                         |                         |                                   |
+| Allen and Heath Xone:4D                          |                         |                         |                                   |
+| Allen and Heath Xone:DX                          |                         |                         |                                   |
+| Ecler Evo4                                       |                         |                         |                                   |
+| Ecler Evo5                                       |                         |                         |                                   |
+| EKS Otus Dualdeck                                |                         |                         |                                   |
+| EKS Otus Plus                                    |                         |                         |                                   |
+| EKS Otus RAW                                     |                         |                         |                                   |
+| [EKS XP5](EKS%20XP5)                             |                         |                         |                                   |
+| [EKS XP10](EKS%20XP10)                           |                         |                         |                                   |
+| Korg NanoPad                                     |                         |                         |                                   |
+| [Korg NanoKontrol](/wiki/dokuwiki)               | Yes (1.10.0+)           |                         |                                   |
+| Korg NanoKey                                     |                         |                         |                                   |
+| Korg PadKontrol                                  |                         |                         |                                   |
+| M-AUDIO Torq Conectiv CD                         |                         |                         |                                   |
+| M-AUDIO Torq Conectiv Vinyl                      |                         |                         |                                   |
+| Native Instruments Traktor Kontrol D2            |                         |                         |                                   |
+| Native Instruments Traktor Kontrol F1 (HID)      |                         |                         |                                   |
+| Native Instruments Traktor Kontrol X1 Mk1        | possible with MIDI mode | possible with MIDI mode | see note                          |
+| Native Instruments Traktor Kontrol X1 Mk2 (HID)  |                         |                         |                                   |
+| Native Instruments Traktor Kontrol S2 Mk1        | possible with MIDI mode | possible with MIDI mode | see note                          |
+| Native Instruments Traktor Kontrol S2 Mk2 (HID)  |                         |                         |                                   |
+| Native Instruments Traktor Kontrol S4 Mk 1       | possible with MIDI mode | possible with MIDI mode | Sound card should work. See note. |
+| Native Instruments Traktor Kontrol S4 Mk 2 (HID) |                         |                         |                                   |
+| Native Instruments Traktor Kontrol S8            | possible with MIDI mode | possible with MIDI mode | see note                          |
+| Native Instruments Traktor Kontrol Z1 (HID)      |                         |                         |                                   |
+| Native Instruments Traktor Kontrol Z2 (HID)      |                         |                         |                                   |
+| Numark Stealth Control                           |                         |                         |                                   |
+| Numark Omni Control                              |                         |                         |                                   |
+| Numark MixDeck                                   |                         |                         |                                   |
+| Numark Mixmeister Control                        |                         |                         |                                   |
+| Numark iDJ3                                      |                         |                         |                                   |
+| Numark NSFX                                      |                         |                         |                                   |
+| Numark V7                                        |                         |                         |                                   |
+| Rane TTM 57SL                                    |                         |                         |                                   |
+| Vestax TR-1                                      |                         |                         |                                   |
+| Vestax VCM-100                                   |                         |                         |                                   |
+| Vestax VCM-600                                   |                         |                         |                                   |
 
 #### Note about Native Instruments controllers
 

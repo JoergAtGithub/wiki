@@ -43,10 +43,6 @@ plans.
     preferred IRC client.
   - [Blog](http://mixxxblog.blogspot.com)
   - [GitHub project page](https://github.com/mixxxdj/mixxx)
-  - Bazaar (legacy) code browsing on
-    [Launchpad](https://code.launchpad.net/mixxx)
-  - SVN (even more legacy) code browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)
 
@@ -99,7 +95,7 @@ plans.
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
   - [Mixxx QA Procedure](qa_procedure)
-  - [Writing unit tests](unit_tests) - helps prevent regressions.
+  - [Writing unit tests](unit_tests) helps prevent regressions.
     Essential for new code\!
   - [Internationalization/Translations](Internationalization)
 
@@ -112,10 +108,17 @@ plans.
   - [Threads](Threads)
   - [Widgets](Widgets)
 
-### Other Resources
+### Archives
 
   - [Google Summer of Code](gsoc) information and archives
   - [Developer meeting archives](meetings%20archive)
+  - Bazaar (legacy) code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx)
+  - SVN (even more legacy) code browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
+
+### Other Resources
+
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
   - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)

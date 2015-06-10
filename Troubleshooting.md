@@ -331,18 +331,20 @@ following:
 This is a known artifact of using multiple separate audio interfaces.
 Each one has its own clock crystal and no two are precisely the same
 frequency even if the devices are the same model and from the same
-production run. Mixxx synchronizes its audio generation to the clock
-crystal of whichever device is selected as the master output (deck 1
-output if no master is selected) so that the crowd won't hear the
-artifacts. As a result, secondary devices will either fall behind or run
+production run. Mixxx before 1.12 synchronized its audio generation to
+the clock crystal of whichever device is selected as the master output
+(deck 1 output if no master is selected) so that the crowd won't hear
+the artifacts. As a result, secondary devices either fall behind or run
 ahead of the primary one, causing them to play silence until Mixxx
 generates the next audio buffer exactly in time for the primary device.
 Playing bits of audio interspersed with bits of silence sounds like
 crackling.
 
-The only way to resolve this is to use a single audio device with
-multiple outputs ([such as
-this](http://www.electrixpro.com/images/ebox1.jpg)) as then they all run
-at the same speed since they share a single clock crystal.
+Mixxx 1.12 can compensate for this issue. If you are using two sound
+cards, [try Mixxx 1.12
+beta](http://mixxx.org/forums/viewtopic.php?f=1&t=7131).
+
+If you use one sound card with at least 4 channels (2 stereo pairs), you
+will not have this issue.
 
 1.  or /lib/udev/rules.d/15-mixxx-usb.rules in Ubuntu 12.04

@@ -1,185 +1,81 @@
 This page contains information on making portable versions of Mixxx to
-use from a USB stick, LiveCD, etc.
+use from a USB drive or live DVD.
 
-# Windows
+# Live GNU/Linux Distributions
 
-Goal: to make a build option for the Windows target that will allow
-Mixxx to be run from a USB, CD/DVD, network share or other removable
-media type.
+These are complete operating systems that boot from USB drives or DVDs
+to run Mixxx without using
 
-**Update:** It looks like another group may have beaten us to it:
-<http://www.winpenpack.com/main/download.php?view.828>
+## Crossfade
 
-### TODO:
+  - [Homepage](http://nongnu.org/crossfade/)
+  - [Download version 0.90 via
+    BitTorrent](http://linuxtracker.org/index.php?page=torrent-details&id=054465878ca40308a585654d3859786dfd79f133)
+  - [Savannah project
+    page](https://savannah.nongnu.org/projects/crossfade)
+  - [Techical
+    support](https://savannah.nongnu.org/support/?group=crossfade)
+  - [Bug tracker](https://savannah.nongnu.org/bugs/?group=crossfade)
 
-``` 
- * Avoid saving/reading settings & files to/from absolute paths
- * Settings directories:
-   * Modify all locations of SETTINGS_PATH to not be prefixed with QDir::homePath(), but rather use CWD in place of home dir.   
-     * Set SETTINGS_PATH to "Mixxx Settings".
- * Review all QWarnings, QCriticals and ASSERTS for write-fail scenerios
-   * Fail writing operations gracefully (read-only media)... i.e. no QCrit on BPM Scheme write fail.
- * Library code changes:
-    * Use relative file paths for all Music files that exist within the Music Folder [ConfigKey("[Playlist]","Directory")]:
-```
+Crossfade GNU/Linux allows you to use a USB drive with your music
+collection to DJ on any modern PC (with an x86 or x86\_64 CPU),
+including Apple Macs, using the DJ program Mixxx customized however you
+like. USB drives with Crossfade GNU/Linux installed on them show up in
+Windows, Mac OS X, and GNU/Linux as normal USB drives that music or any
+other data can be copied onto. Unlike ordinary USB drives, they can also
+be used to boot Crossfade GNU/Linux. After rebooting, the PC will be
+back to how it was before. See the manual for [installation
+instructions](http://nongnu.org/crossfade/crossfade-manual.html#installation).
 
-``` 
-       if exists (Music Folder + music path value) --> load // relative to music folder
-       else if exists (music path value) --> load // not found, treat as absolute path 
-```
-
-# Bare metal
-
-Goal: A USB stick/CD image that boots into an OS image (like
-[DSL](http://www.damnsmalllinux.org/),
-[DSL-N](http://www.damnsmalllinux.org/dsl-n/) or [Tiny Core
-Linux](http://tinycorelinux.com/)) that contains Mixxx (and JACK and
-FFADO if possible,) ready to run. The end result is that you can walk up
-to any PC with your MixxxStixxx/MixxxDisxxx and music media (external
-HD, portable music player, DVD, additional USB stick, etc.) and be up &
-running in about a minute.
+Crossfade GNU/Linux is setup with a realtime Linux kernel for optimal
+performance. It includes the Xfce graphical desktop environment, Midori
+web browser, and Clementine music player. It has a number of other
+programs for live musical performance including the Hydrogen drum
+machine, SooperLooper and Giada loopers, Guitarix electric guitar
+amplifier, Rakarrak guitar effects board, Ardour digital audio
+workstation, Audacity wave editor, and many LV2 and LADSPA audio effects
+plugins. Additionally, Crossfade GNU/Linux includes utilities that make
+it useful as a computer rescue system, such as the GParted partition
+manager, GNU GRUB bootloader, TestDisk data recovery program, FSArchiver
+filesystem backup program, and MATE Disk Usage Analyzer. Crossfade
+GNU/Linux is a Fedora® Remix containing software from sources other than
+Fedora, namely RPMFusion and PlanetCCRMA, as well as scripts and
+configuration specific to Crossfade GNU/Linux.
 
 ## DidJiX
 
-Mixxx running on a live (CD/USB) ArchLinux system:
-<http://easy.open.and.free.fr/didjix/> (Original link:
-<http://didjix.blogspot.com/>)
+  - [Homepage](http://easy.open.and.free.fr/didjix/)
+  - [Blog](http://didjix.blogspot.com/)
 
-Just download the ISO image and either burn it to a CD or *cat* it to a
-USB stick (this will erase the content of the stick.)
+DidJiX has the bare necessities to DJ with Mixxx. It boots straight to
+Mixxx without a graphical desktop environment. Download the ISO image
+and either burn it to a CD or *cat* it to a USB drive (this will erase
+the content of the drive).
+
+Based on Arch.
 
 ## MixxxOS
 
-**Update: v1.2 is available for testing**
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?t=1493)
+  - Abandoned June 2011, see [this
+    post](http://mixxx.org/forums/viewtopic.php?p=8056#p8056)
+  - [Download
+    version 1.2](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
+    with Mixxx 1.8.
+  - [MixxxOS installation
+    script](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/installer/MixxxOS-installer.sh)
+    for use on a minimal Ubuntu installation (netinstall)
+  - [MixxxOS .deb
+    package](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/packages/MixxxOS-desktop-1.2-lucid.deb)
+    can be used to upgrade MixxxOS to the latest version and can be used
+    on Ubuntu to pull in all apps, artwork and user settings included in
+    MixxxOS.
 
-I'm proud to announce to you the new MixxxOS. MixxxOS is a minimal
-Ubuntu 10.04 LTS base system which includes everything a Mixxx DJ would
-ever need and it's really easy to use. Also there are plans to create a
-Mini MixxxOS including just enough to run Mixxx, copy your files around
-and use the internet.
+MD5SUM: *1c5013b5d7b1e16f3a189112ca3ecccb MixxxOS-1.2.iso*
 
-This release can be used as a livecd/usb but is also perfect for
-installation on netbooks and tablets for it does not load a full desktop
-but you can login right into Mixxx if you like, also the openbox window
-manager is included as the "MixxxOS Desktop" session available on the
-login screen, this session provides nice lightweight graphical tools to
-configure the system, copy files and archives and install codecs,
-updates or whatever you like. MixxxOS was build using
-[Remastersys](http://www.geekconnection.org/remastersys/) wich is
-included on the cd so it's pretty simple to add extra software and
-create a custom MixxxOS respin.
+To login, use username "mixxx" with password "mixxxlive".
 
-##### What's new in 1.2?
+# Windows
 
-**Changes:**
-
-``` 
-    updated Mixxx to the latest 1.8 release
-    replaced GDM with LXDM (saves 100MB in gnome deps)
-```
-
-**New:**
-
-``` 
-    realtime kernel (linux-rt)
-    jack and qjackctl
-    Ubuntu software center
-    Update manager
-    Gnome ppp (for connecting 3G dongles)
-```
-
-**The next release will be the 1.3 final for wich I need your help so
-please test the 1.2 release and tell me what you do and don't like about
-it so we can make the 1.3 release just perfect. Also the next release
-will contain MixxxOS boot screens and a decent login theme. If you feel
-like creating some artwork please do for I'm no Gimping genious. We need
-a Grub2 splash, a plymouth boot splash and an LXDM theme.**
-
------
-
-##### Installation
-
-For hard disk installation the Ubuntu system installer Ubiquity is
-included, you can follow the easy installation steps on the [Ubuntu
-wiki](https://help.ubuntu.com/community/GraphicalInstall)
-
-**Installation on a usb stick is also quite simple:**
-
-##### Live system on small USB key 1GB+
-
-This is not really ideal for it does not save your settings but if you
-include the audio codecs on the iso or only use flac and ogg files it's
-a nice way to bring your old 1GB stick back to use. Just download
-[Unetbootin](http://unetbootin.sourceforge.net) for the OS of your
-choice (included in most Linux distribution repositories) and install.
-Next format your USB key and mount it. Open Unetbootin and point it to
-the MixxxOS iso file and your USB drive and click install. Nothing to it
-;)
-
-##### Persistant usb install
-
-**this one allows changes to be saved on the usb key, ie mixxx database,
-installed applications, updates etc..** Just install usb-creator in
-MixxxOS or use the one on your Ubuntu or Linux Mint desktop, just point
-it to the iso file and correct usb key and tell the program how much
-space to use for saving changes and that's it. (more info @ [the ubuntu
-wiki](https://wiki.ubuntu.com/usb-creator))
-
-##### Full install on external USB disk or SD card
-
-I've just tested this and it works great\!\! I had this 8GB slim USB key
-laying around for a while now and wanted to use it with what has become
-MixxxOS, here's what I did;
-
-I used another USB key which I created whith Unetbootin to boot the
-installer, you can also use a cd. Fill in al questions the installer
-asks. For the user's login name choose mixxx, the real name may be
-anything, this way you will keep the live cd settings afther
-installation. At the disk partitioning choose the manual approach. Now
-partition your USB drive, Be carefull to choose the right drive\!\!\!\!
-watch size and filesystem type, it will probably be /dev/sdb or /dev/sdc
-for sda is your internal drive. I've created a 3GB ext4 partition for /,
-a 512MB swap and formatted the remaining space FAT32 and mounted it on
-/home/music, this is the directory that is linked to the Music folder in
-the user's home. Make sure before starting the install in the final
-screen to check if the bootloader will be installed to the MBR of your
-usb drive NOT THE MBR of sda\!\!\! If all goes well you'll end up with a
-1.7GB installation that can be used on multiple computers.
-
-#### Downloads
-
-[MixxxOS 1.2 x86
-(530MB)](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
-| [Mirror 2](http://dl.dropbox.com/u/4426037/MixxxOS/MixxxOS-1.2.iso) |
-[Mirror 3](http://www.megaupload.com/?d=S8ZCUG25) (Megaupload) |
-[MD5SUM](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso.md5)
-
-[Torrent](http://linuxtracker.org/index.php?page=torrent-details&id=5f2ced88cda90a7ae6d0acc4628160446462f4ec)
-
-**Tiny bug: the autologin does not seem to work. For now just login
-with:**
-
-username **mixxx** passwd: **mixxxlive**
-
------
-
-#### Installer and debs
-
-**If you don't know how to work the Linux command line please do not use
-the installer and just download the iso or torrent file above. The deb
-package can safely be installed on Ubuntu 10.04 simply by clicking it
-(did not test 10.10 yet) and can also be removed with the package
-manager if you like.**
-
-[MixxxOS installation
-script](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/installer/MixxxOS-installer.sh)
-(for use on a minimal Ubuntu installation (netinstall)
-
-[MixxxOS-desktop](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/packages/MixxxOS-desktop-1.2-lucid.deb)
-Can be used to upgrade your MixxxOS to the latest version and can be
-used on Ubuntu to pull in all apps, Artwork and user settings included
-in MixxxOS.
-
-**Please use my [contact form](http://socialdefect.nl/contact/) (sorry I
-get spammed a lot) or the mixxx forums to sent me bugs and feature
-requests. Have fun, Socialdefect aka Arjan van Lent**
+[winPenPack
+Mixxx 1.10.1](http://www.winpenpack.com/main/download.php?view.828)

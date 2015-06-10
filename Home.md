@@ -36,13 +36,14 @@ plans.
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list
   - [Mixxx website](http://www.mixxx.org)
-  - [Launchpad project page](http://www.launchpad.net/mixxx/)
-  - [Bug tracker](https://bugs.launchpad.net/mixxx/)
+  - [Bug tracker](https://bugs.launchpad.net/mixxx/) and [development
+    blueprint planning](https://blueprints.launchpad.net/mixxx) are
+    hosted on [Launchpad](http://launchpad.net/mixxx/)
+  - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)
   - Our IRC channel is \#mixxx on [Freenode](http://freenode.net/). You
     can access it via [the website](http://mixxx.org/irc/) or your
     preferred IRC client.
   - [Blog](http://mixxxblog.blogspot.com)
-  - [GitHub project page](https://github.com/mixxxdj/mixxx)
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)
 

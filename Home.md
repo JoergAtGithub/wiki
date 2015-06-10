@@ -16,7 +16,7 @@ plans.
     Mixxx better, find out what you can do.
   - [Beginner's Guide](Beginner's%20Guide)
   - [Manual](http://mixxx.org/manual/latest/)
-  - [Hardware Compatibility](Hardware%20Compatibility): most up-to-date
+  - [Hardware compatibility](Hardware%20compatibility): most up-to-date
     information about which DJ controllers work with Mixxx
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
@@ -24,40 +24,40 @@ plans.
   - [Add-ons](Add-ons)
   - [Vinyl (and audio CDJ) control](Vinyl%20Control)
   - [Internet broadcasting](Internet%20broadcasting)
-  - [System Requirements](System%20Requirements)
+  - [System requirements](System%20requirements)
   - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)
   - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx) can
-    run Mixxx on any x86 computer without having to install anything on
-    the computer
+    run Mixxx from a USB drive or DVD without having to install anything
+    on the computer
 
 ## Community Resources
 
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list
   - [Mixxx website](http://www.mixxx.org)
-  - Our [Launchpad project page](http://www.launchpad.net/mixxx/) and
-    [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - [Launchpad project page](http://www.launchpad.net/mixxx/)
+  - [Bug tracker](https://bugs.launchpad.net/mixxx/)
   - Our IRC channel is \#mixxx on [Freenode](http://freenode.net/). You
     can access it via [the website](http://mixxx.org/irc/) or your
     preferred IRC client.
-  - [Blog](http://mixxxblog.blogspot.com).
-  - [GitHub project page](https://github.com/mixxxdj/mixxx).
+  - [Blog](http://mixxxblog.blogspot.com)
+  - [GitHub project page](https://github.com/mixxxdj/mixxx)
   - Bazaar (legacy) code browsing on
-    [Launchpad](https://code.launchpad.net/mixxx).
+    [Launchpad](https://code.launchpad.net/mixxx)
   - SVN (even more legacy) code browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/).
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)
 
 ## Controller/MIDI Mapping Documentation
 
-  - [MIDI Controller Mapping File
-    Format](MIDI%20Controller%20Mapping%20File%20Format): how to create
-    or change a MIDI mapping file for your controller
-  - [Controller Scripting](midi_scripting) with JavaScript: how to map
-    advanced behaviors including wheel scratching
-  - [Mixxx Controls](MixxxControls): List of Mixxx's controls can be
+  - [MIDI controller mapping file
+    format](MIDI%20controller%20mapping%20file%20format): create or
+    change a MIDI mapping file for your controller
+  - [Controller scripting with JavaScript](midi_scripting): map advanced
+    behaviors including jog wheel scratching
+  - [Mixxx controls](MixxxControls): List of Mixxx's controls can be
     manipulated by controller mappings
   - [HID controller mapping file format](hid_mapping_format):
     brainstorming page for how we might implement HID mapping. Right

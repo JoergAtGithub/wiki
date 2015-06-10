@@ -16,9 +16,6 @@ plans.
     Mixxx better, find out what you can do.
   - [Beginner's Guide](Beginner's%20Guide)
   - [Manual](http://mixxx.org/manual/latest/)
-  - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
-    about using Hercules GPL Linux MIDI driver with Mixxx, and where to
-    get updated Hercules device control mappings for Windows and OSX.
   - [Hardware Compatibility](Hardware%20Compatibility): most up-to-date
     information about which DJ controllers work with Mixxx
   - [FAQ](FAQ)

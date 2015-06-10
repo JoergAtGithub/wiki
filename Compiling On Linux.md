@@ -20,7 +20,8 @@ them by running:
 
 On Fedora, [enable the RPMFusion package
 repository](http://rpmfusion.org/Configuration). You only need to enable
-the free repository. Then run:
+the free repository; the nonfree repository is not necessary for Mixxx.
+Then run:
 
     su
     dnf groupinstall "Development Tools"

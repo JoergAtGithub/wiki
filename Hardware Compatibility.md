@@ -97,40 +97,68 @@ Scripting](MIDI%20Scripting) pages.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                    |               |          |       |
-| ---------------------------------- | ------------- | -------- | ----- |
-| Device                             | Windows       | Mac OS X | Linux |
-| Allen and Heath Xone:1D            |               |          |       |
-| Allen and Heath Xone:2D            |               |          |       |
-| Allen and Heath Xone:3D            |               |          |       |
-| Allen and Heath Xone:4D            |               |          |       |
-| Allen and Heath Xone:DX            |               |          |       |
-| Ecler Evo4                         |               |          |       |
-| Ecler Evo5                         |               |          |       |
-| EKS Otus Dualdeck                  |               |          |       |
-| EKS Otus Plus                      |               |          |       |
-| EKS Otus RAW                       |               |          |       |
-| [EKS XP5](EKS%20XP5)               |               |          |       |
-| [EKS XP10](EKS%20XP10)             |               |          |       |
-| Korg NanoPad                       |               |          |       |
-| [Korg NanoKontrol](/wiki/dokuwiki) | Yes (1.10.0+) |          |       |
-| Korg NanoKey                       |               |          |       |
-| Korg PadKontrol                    |               |          |       |
-| M-AUDIO Torq Conectiv CD           |               |          |       |
-| M-AUDIO Torq Conectiv Vinyl        |               |          |       |
-| Native Instruments Kontrol X1      |               |          |       |
-| Native Instruments Kontrol S4      |               |          |       |
-| Numark Stealth Control             |               |          |       |
-| Numark Omni Control                |               |          |       |
-| Numark MixDeck                     |               |          |       |
-| Numark Mixmeister Control          |               |          |       |
-| Numark iDJ3                        |               |          |       |
-| Numark NSFX                        |               |          |       |
-| Numark V7                          |               |          |       |
-| Rane TTM 57SL                      |               |          |       |
-| Vestax TR-1                        |               |          |       |
-| Vestax VCM-100                     |               |          |       |
-| Vestax VCM-600                     |               |          |       |
+|                                                  |                         |                         |          |
+| ------------------------------------------------ | ----------------------- | ----------------------- | -------- |
+| Device                                           | Windows                 | Mac OS X                | Linux    |
+| Allen and Heath Xone:1D                          |                         |                         |          |
+| Allen and Heath Xone:2D                          |                         |                         |          |
+| Allen and Heath Xone:3D                          |                         |                         |          |
+| Allen and Heath Xone:4D                          |                         |                         |          |
+| Allen and Heath Xone:DX                          |                         |                         |          |
+| Ecler Evo4                                       |                         |                         |          |
+| Ecler Evo5                                       |                         |                         |          |
+| EKS Otus Dualdeck                                |                         |                         |          |
+| EKS Otus Plus                                    |                         |                         |          |
+| EKS Otus RAW                                     |                         |                         |          |
+| [EKS XP5](EKS%20XP5)                             |                         |                         |          |
+| [EKS XP10](EKS%20XP10)                           |                         |                         |          |
+| Korg NanoPad                                     |                         |                         |          |
+| [Korg NanoKontrol](/wiki/dokuwiki)               | Yes (1.10.0+)           |                         |          |
+| Korg NanoKey                                     |                         |                         |          |
+| Korg PadKontrol                                  |                         |                         |          |
+| M-AUDIO Torq Conectiv CD                         |                         |                         |          |
+| M-AUDIO Torq Conectiv Vinyl                      |                         |                         |          |
+| Native Instruments Traktor Kontrol D2            |                         |                         |          |
+| Native Instruments Traktor Kontrol F1 (HID)      |                         |                         |          |
+| Native Instruments Traktor Kontrol X1 Mk1        | possible with MIDI mode | possible with MIDI mode | see note |
+| Native Instruments Traktor Kontrol X1 Mk2 (HID)  |                         |                         |          |
+| Native Instruments Traktor Kontrol S2 Mk1        | possible with MIDI mode | possible with MIDI mode | see note |
+| Native Instruments Traktor Kontrol S2 Mk2 (HID)  |                         |                         |          |
+| Native Instruments Traktor Kontrol S4 Mk 1       | possible with MIDI mode | possible with MIDI mode | see note |
+| Native Instruments Traktor Kontrol S4 Mk 2 (HID) |                         |                         |          |
+| Native Instruments Traktor Kontrol S8            | possible with MIDI mode | possible with MIDI mode | see note |
+| Native Instruments Traktor Kontrol Z1 (HID)      |                         |                         |          |
+| Native Instruments Traktor Kontrol Z2 (HID)      |                         |                         |          |
+| Numark Stealth Control                           |                         |                         |          |
+| Numark Omni Control                              |                         |                         |          |
+| Numark MixDeck                                   |                         |                         |          |
+| Numark Mixmeister Control                        |                         |                         |          |
+| Numark iDJ3                                      |                         |                         |          |
+| Numark NSFX                                      |                         |                         |          |
+| Numark V7                                        |                         |                         |          |
+| Rane TTM 57SL                                    |                         |                         |          |
+| Vestax TR-1                                      |                         |                         |          |
+| Vestax VCM-100                                   |                         |                         |          |
+| Vestax VCM-600                                   |                         |                         |          |
+
+#### Note about Native Instruments controllers
+
+Native Instruments' older DJ controllers use a proprietary protocol
+called NHL that Mixxx does not support. The Windows and Mac OS X drivers
+can switch these controllers to a MIDI mode by pressing certain buttons
+(see
+\[<https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/>
+the Native Instruments website\] for the button combination for each
+controller), which could be mapped to Mixxx. Unfortunately, because this
+is done by the driver and not the controller firmware, these controllers
+cannot be used as MIDI controllers on GNU/Linux. However, the
+snd-usb-caiaq driver in Linux supports the audio interfaces in at least
+some of these devices. It also registers the signals from the
+controllers as generic Linux input events. To get these devices to work
+with Mixxx on GNU/Linux, either the driver would need to translate these
+signals to HID or MIDI, Mixxx would need to be able to read Linux input
+events, or a program would need to translate the Linux input events to
+HID or MIDI.
 
 ## Sound cards
 

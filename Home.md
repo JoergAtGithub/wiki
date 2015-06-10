@@ -19,9 +19,8 @@ plans.
   - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
     about using Hercules GPL Linux MIDI driver with Mixxx, and where to
     get updated Hercules device control mappings for Windows and OSX.
-  - [Hardware Compatibility](Hardware%20Compatibility) - Contains the
-    most up-to-date information about which DJ controllers work with
-    Mixxx and the details of each.
+  - [Hardware Compatibility](Hardware%20Compatibility): most up-to-date
+    information about which DJ controllers work with Mixxx
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
   - [Tutorials](Tutorials)
@@ -31,6 +30,9 @@ plans.
   - [System Requirements](System%20Requirements)
   - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)
+  - \*[Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx)
+    can run Mixxx on any x86 computer without having to install anything
+    on the computer
 
 ## Build Mixxx
 
@@ -119,7 +121,6 @@ plans.
 ### Other Resources
 
   - [Google Summer of Code](gsoc) information and archives
-  - [Portable Mixxx for removable media](Portable%20Mixxx)
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
   - [Fixes for Qt Deprecations](Fixes%20for%20Qt%20Deprecations)

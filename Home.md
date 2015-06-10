@@ -15,7 +15,7 @@ plans.
   - **[Getting Involved in Mixxx](Getting%20Involved)** \<- Help us make
     Mixxx better, find out what you can do.
   - [Beginner's Guide](Beginner's%20Guide)
-  - [Manual](Manual)
+  - [Manual](http://mixxx.org/manual/latest/)
   - [Hercules DJ Series Input Controllers Page](Hercules) - Find out
     about using Hercules GPL Linux MIDI driver with Mixxx, and where to
     get updated Hercules device control mappings for Windows and OSX.
@@ -30,9 +30,9 @@ plans.
   - [System Requirements](System%20Requirements)
   - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)
-  - \*[Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx)
-    can run Mixxx on any x86 computer without having to install anything
-    on the computer
+  - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx) can
+    run Mixxx on any x86 computer without having to install anything on
+    the computer
 
 ## Build Mixxx
 

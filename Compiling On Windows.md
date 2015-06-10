@@ -112,6 +112,12 @@ dependencies for mixxx. Then type:
 
     build.bat
 
+NOTE : if Mixxx compilation complains that libtag and chromaprint are
+not available, apply the following workaround :
+<http://sourceforge.net/p/mixxx/mailman/message/32981948/> Remove the
+entire \<ItemGroup\> that contains the cmake invocations in tag.vcxproj
+and chromaprint vcxproj and rebuild your build env
+
 ## Build 64bit version of Mixxx
 
 You have to follow the above guide with two changes.

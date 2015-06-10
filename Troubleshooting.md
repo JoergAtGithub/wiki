@@ -280,13 +280,6 @@ loads in the `mixxx.log` plain text file.
     * Navigate to ''Application Support/Mixxx''
 ```
 
-## Mixxxcelaneous Known Issues
-
-  - Mobile Intel 4 Series chipset with I945/965 graphics driver
-    sometimes causes segmentation fault on exit in Windows and Linux.
-    This is fixed by upgrading your version of the Qt libraries on Linux
-    or getting the latest Mixxx 1.7 package for Windows.
-
 ## Mixxx says I have no HID controllers attached even though I do
 
 This happens on Linux and results from not having write permissions to

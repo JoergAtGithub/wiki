@@ -151,13 +151,16 @@ website](https://www.native-instruments.com/en/support/knowledge-base/show/3659/
 for the button combination for each controller), which could be mapped
 to Mixxx. Unfortunately, because this is done by the driver and not the
 controller firmware, these controllers cannot be used as MIDI
-controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux
-supports the audio interfaces in at least some of these devices. It also
-registers the signals from the controllers as generic Linux input
-events. To get these devices to work with Mixxx on GNU/Linux, either the
-driver would need to translate these signals to HID or MIDI, Mixxx would
-need to be able to read Linux input events, or a program would need to
-translate the Linux input events to HID or MIDI.
+controllers on GNU/Linux. So, if you make a mapping for these
+controllers, please make an HID mapping rather than a MIDI mapping so it
+will be compatible with every OS that Mixxx runs on. However, the
+snd-usb-caiaq driver in Linux supports the audio interfaces in at least
+some of these devices. It also registers the signals from the
+controllers as generic Linux input events. To get these devices to work
+with Mixxx on GNU/Linux, either the driver would need to translate these
+signals to HID or MIDI, Mixxx would need to be able to read Linux input
+events, or a program would need to translate the Linux input events to
+HID or MIDI.
 
 ## Sound cards
 

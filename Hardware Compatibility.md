@@ -146,19 +146,18 @@ Scripting](MIDI%20Scripting) pages.
 Native Instruments' older DJ controllers use a proprietary protocol
 called NHL that Mixxx does not support. The Windows and Mac OS X drivers
 can switch these controllers to a MIDI mode by pressing certain buttons
-(see
-\[<https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/>
-the Native Instruments website\] for the button combination for each
-controller), which could be mapped to Mixxx. Unfortunately, because this
-is done by the driver and not the controller firmware, these controllers
-cannot be used as MIDI controllers on GNU/Linux. However, the
-snd-usb-caiaq driver in Linux supports the audio interfaces in at least
-some of these devices. It also registers the signals from the
-controllers as generic Linux input events. To get these devices to work
-with Mixxx on GNU/Linux, either the driver would need to translate these
-signals to HID or MIDI, Mixxx would need to be able to read Linux input
-events, or a program would need to translate the Linux input events to
-HID or MIDI.
+(see [the Native Instruments
+website](https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/)
+for the button combination for each controller), which could be mapped
+to Mixxx. Unfortunately, because this is done by the driver and not the
+controller firmware, these controllers cannot be used as MIDI
+controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux
+supports the audio interfaces in at least some of these devices. It also
+registers the signals from the controllers as generic Linux input
+events. To get these devices to work with Mixxx on GNU/Linux, either the
+driver would need to translate these signals to HID or MIDI, Mixxx would
+need to be able to read Linux input events, or a program would need to
+translate the Linux input events to HID or MIDI.
 
 ## Sound cards
 

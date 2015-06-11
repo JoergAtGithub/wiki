@@ -2,7 +2,8 @@
 
 [[/media/hardware/stantonscs/scs3dangle.jpg|scs3dangle.jpg]]
 
-Link to the website: <http://www.enterthesystem.com/system/scs3d/>
+[Manufacturer's product
+page](http://www.stantondj.com/stanton-controllers-systems/scs3d.html)
 
 [See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
 

@@ -52,18 +52,18 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 | Device                                                           | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
 | [American Audio VMS4](American%20Audio%20VMS4)                   | yes                   | MIDI            | 1.9                           |
 | [DJ TechTools MIDIFighter](http://midifighter.com)               | no                    | MIDI            | 1.8                           |
-| [eks Otus](eks%20Otus)                                           | no                    | HID             | 1.11                          |
+| [eks Otus](eks%20Otus)                                           | no                    | HID             | 1.11 \[1\]                    |
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | yes                   | HID             | 1.11                          |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | yes                   | HID             | 1.11                          |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | yes                   | HID             | 1.11                          |
 | [Keith McMillen Instruments QuNeo](keith_mcmillen_quneo)         | no                    | MIDI            | 1.11                          |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | no                    | MIDI            | 1.6                           |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | no                    | MIDI            | 1.6 \[2\]                     |
 | [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | yes                   | MIDI            | 1.11                          |
 | [Stanton SCS.3d](Stanton%20SCS.3d)                               | no                    | MIDI            | 1.7                           |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | yes                   | MIDI            | 1.9 \[1\]                     |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | no                    | MIDI            | 1.9.1 \[2\]                   |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | yes                   | MIDI            | 1.10.1                        |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | yes                   | MIDI            | 1.9 \[3\]                     |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | no                    | MIDI            | 1.9.1 \[4\]                   |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | yes                   | MIDI            | 1.10.1 \[5\]                  |
 
 ### Community Supported Mappings
 
@@ -79,32 +79,32 @@ with your OS, please [report the bug](reporting%20bugs).
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | yes                   | MIDI            | 1.6                           |
 | [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | no                    | MIDI            | 1.8                           |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | yes                   | MIDI            | 1.12                          |
-| [Evolution X-Session](Evolution%20X-Session)                                                       | no                    | MIDI            | 1.6                           |
+| [Evolution X-Session](Evolution%20X-Session)                                                       | no                    | MIDI            | 1.6 \[6\]                     |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | no                    | MIDI            | 1.6                           |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | yes                   | HID?            | 1.7 \[3\]                     |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.8 \[4\]                     |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.11 \[7\]                    |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | yes                   | HID?            | 1.7 \[8\]                     |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.8 \[9\]                     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | no                    | HID             | 1.11                          |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | no                    | MIDI            | 1.8                           |
 | [M-Audio Xponent](M-Audio%20Xponent)                                                               | yes                   | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | yes                   | ?               | 1.7 \[5\]                     |
-| [Novation Dicer](novation_dicer)                                                                   | no                    | MIDI            | 1.10                          |
+| [Mixman DM2](Mixman%20DM2)                                                                         | yes                   | ?               | 1.7 \[10\]\[11\]              |
+| [Novation Dicer](Novation%20Dicer)                                                                 | no                    | MIDI            | 1.10                          |
 | [Numark Total Control](Numark%20Total%20Control)                                                   | no                    | MIDI            | 1.6                           |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | yes                   | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | yes                   | ?               | 1.8 \[6\]                     |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | yes                   | ?               | 1.8 \[12\]                    |
 | [Numark Mixtrack](Numark%20Mixtrack)                                                               | no                    | MIDI            | 1.8.2                         |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | yes                   | MIDI            | 1.10                          |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | yes                   | MIDI            | 1.11                          |
-| [Numark NS7](Numark%20NS7)                                                                         | yes                   | MIDI            | 1.9 \[7\]                     |
+| [Numark NS7](Numark%20NS7)                                                                         | yes                   | MIDI            | 1.9 \[13\]                    |
 | [Numark DJ2GO](Numark%20DJ2GO)                                                                     | no                    | MIDI            | 1.10                          |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
 | [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | yes                   | MIDI            | 1.6                           |
-| [Vestax VCI-300](vestax_vci-300)                                                                   | yes                   | MIDI            | 1.11                          |
-| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | yes                   | MIDI            | 1.9                           |
-| [Vestax Spin](Vestax%20Spin)                                                                       | yes                   | MIDI            | 1.9                           |
+| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | yes                   | MIDI            | 1.6 \[14\]                    |
+| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | yes                   | MIDI            | 1.11 \[15\]                   |
+| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | yes                   | MIDI            | 1.9 \[16\]                    |
+| [Vestax Spin](Vestax%20Spin)                                                                       | yes                   | MIDI            | 1.9 \[17\]                    |
 
 Please keep the list in alphabetical order and do not modify this list
 unless a MIDI mapping preset for a new controller has been added to
@@ -117,24 +117,6 @@ Mixxx and it has been tested by at least one user and developer.
 |                                                  |                         |                         |                                   |
 | ------------------------------------------------ | ----------------------- | ----------------------- | --------------------------------- |
 | Device                                           | Windows                 | Mac OS X                | Linux                             |
-| Allen and Heath Xone:1D                          |                         |                         |                                   |
-| Allen and Heath Xone:2D                          |                         |                         |                                   |
-| Allen and Heath Xone:3D                          |                         |                         |                                   |
-| Allen and Heath Xone:4D                          |                         |                         |                                   |
-| Allen and Heath Xone:DX                          |                         |                         |                                   |
-| Ecler Evo4                                       |                         |                         |                                   |
-| Ecler Evo5                                       |                         |                         |                                   |
-| EKS Otus Dualdeck                                |                         |                         |                                   |
-| EKS Otus Plus                                    |                         |                         |                                   |
-| EKS Otus RAW                                     |                         |                         |                                   |
-| [EKS XP5](EKS%20XP5)                             |                         |                         |                                   |
-| [EKS XP10](EKS%20XP10)                           |                         |                         |                                   |
-| Korg NanoPad                                     |                         |                         |                                   |
-| [Korg NanoKontrol](/wiki/dokuwiki)               | Yes (1.10.0+)           |                         |                                   |
-| Korg NanoKey                                     |                         |                         |                                   |
-| Korg PadKontrol                                  |                         |                         |                                   |
-| M-AUDIO Torq Conectiv CD                         |                         |                         |                                   |
-| M-AUDIO Torq Conectiv Vinyl                      |                         |                         |                                   |
 | Native Instruments Traktor Kontrol D2            |                         |                         |                                   |
 | Native Instruments Traktor Kontrol F1 (HID)      |                         |                         |                                   |
 | Native Instruments Traktor Kontrol X1 Mk1        | possible with MIDI mode | possible with MIDI mode | see note                          |
@@ -146,17 +128,12 @@ Mixxx and it has been tested by at least one user and developer.
 | Native Instruments Traktor Kontrol S8            | possible with MIDI mode | possible with MIDI mode | see note                          |
 | Native Instruments Traktor Kontrol Z1 (HID)      |                         |                         |                                   |
 | Native Instruments Traktor Kontrol Z2 (HID)      |                         |                         |                                   |
-| Numark Stealth Control                           |                         |                         |                                   |
-| Numark Omni Control                              |                         |                         |                                   |
 | Numark MixDeck                                   |                         |                         |                                   |
 | Numark Mixmeister Control                        |                         |                         |                                   |
 | Numark iDJ3                                      |                         |                         |                                   |
 | Numark NSFX                                      |                         |                         |                                   |
 | Numark V7                                        |                         |                         |                                   |
 | Rane TTM 57SL                                    |                         |                         |                                   |
-| Vestax TR-1                                      |                         |                         |                                   |
-| Vestax VCM-100                                   |                         |                         |                                   |
-| Vestax VCM-600                                   |                         |                         |                                   |
 
 #### Note about Native Instruments controllers
 
@@ -290,22 +267,42 @@ can use the "front" output as your master output, and plug your
 headphones into the "rear" output for cueing. This is what the majority
 of Mixxx users do.
 
-1.  On Linux, requires kernel 3.8 or later
+1.  Discontinued product
 
-2.  On Linux, requires kernel 3.8 or later
+2.  Discontinued product
 
-3.  Mac OS X and Windows only with MIDI driver
+3.  On Linux, requires kernel 3.8 or later
 
-4.  with MIDI driver. For Linux support, see [this forum
+4.  On Linux, requires kernel 3.8 or later
+
+5.  Discontinued product
+
+6.  Discontinued product
+
+7.  Discontinued product
+
+8.  Mac OS X and Windows only with MIDI driver
+
+9.  with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-5.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+10. Discontinued product
+
+11. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
-6.  Mac OS X and Windows only with MIDI driver
+12. Mac OS X and Windows only with MIDI driver
 
-7.  Does this work with Linux?
+13. Does this work with Linux?
+
+14. Discontinued product
+
+15. Discontinued product
+
+16. Discontinued product
+
+17. Discontinued product

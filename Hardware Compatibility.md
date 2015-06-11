@@ -115,26 +115,60 @@ Mixxx and it has been tested by at least one user and developer.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                                  |                         |                         |                                   |
-| ------------------------------------------------ | ----------------------- | ----------------------- | --------------------------------- |
-| Device                                           | Windows                 | Mac OS X                | Linux                             |
-| Native Instruments Traktor Kontrol D2            |                         |                         |                                   |
-| Native Instruments Traktor Kontrol F1 (HID)      |                         |                         |                                   |
-| Native Instruments Traktor Kontrol X1 Mk1        | possible with MIDI mode | possible with MIDI mode | see note                          |
-| Native Instruments Traktor Kontrol X1 Mk2 (HID)  |                         |                         |                                   |
-| Native Instruments Traktor Kontrol S2 Mk1        | possible with MIDI mode | possible with MIDI mode | see note                          |
-| Native Instruments Traktor Kontrol S2 Mk2 (HID)  |                         |                         |                                   |
-| Native Instruments Traktor Kontrol S4 Mk 1       | possible with MIDI mode | possible with MIDI mode | Sound card should work. See note. |
-| Native Instruments Traktor Kontrol S4 Mk 2 (HID) |                         |                         |                                   |
-| Native Instruments Traktor Kontrol S8            | possible with MIDI mode | possible with MIDI mode | see note                          |
-| Native Instruments Traktor Kontrol Z1 (HID)      |                         |                         |                                   |
-| Native Instruments Traktor Kontrol Z2 (HID)      |                         |                         |                                   |
-| Numark MixDeck                                   |                         |                         |                                   |
-| Numark Mixmeister Control                        |                         |                         |                                   |
-| Numark iDJ3                                      |                         |                         |                                   |
-| Numark NSFX                                      |                         |                         |                                   |
-| Numark V7                                        |                         |                         |                                   |
-| Rane TTM 57SL                                    |                         |                         |                                   |
+|                                           |                       |                 |
+| ----------------------------------------- | --------------------- | --------------- |
+| Device                                    | Integrated sound card | Signal protocol |
+| Akai Pro AMX                              | yes                   | MIDI            |
+| Gemini Slate                              | yes                   | MIDI            |
+| Gemini Slate 4                            | yes                   | MIDI            |
+| Hercules DJ Control Jogvision             | yes                   | MIDI            |
+| Korg KAOSS DJ                             | yes                   | MIDI            |
+| Native Instruments Traktor Kontrol D2     | no                    | ?               |
+| Native Instruments Traktor Kontrol F1     | no                    | HID             |
+| Native Instruments Traktor Kontrol X1 Mk1 | no                    | NHL             |
+| Native Instruments Traktor Kontrol X1 Mk2 | no                    | HID             |
+| Native Instruments Traktor Kontrol S2 Mk1 | yes                   | NHL             |
+| Native Instruments Traktor Kontrol S2 Mk2 | yes                   | HID             |
+| Native Instruments Traktor Kontrol S4 Mk1 | yes                   | NHL             |
+| Native Instruments Traktor Kontrol S4 Mk2 | yes                   | HID             |
+| Native Instruments Traktor Kontrol S8     | yes                   | NHL             |
+| Native Instruments Traktor Kontrol Z1     | yes                   | HID             |
+| Native Instruments Traktor Kontrol Z2     | yes                   | HID             |
+| Numark Mixdeck                            | yes                   | MIDI            |
+| Numark Mixdeck Expresss                   | yes                   | MIDI            |
+| Numark Mixdeck Quad                       | yes                   | MIDI            |
+| Numark Mixtrack Edge                      | no                    | MIDI            |
+| Numark Mixtrack 3                         | no                    | MIDI            |
+| Numark Mixtrack Pro 3                     | yes                   | MIDI            |
+| Numark Mixtrack Quad                      | yes                   | MIDI            |
+| Numark N4                                 | yes                   | MIDI            |
+| Numark NS6                                | yes                   | MIDI            |
+| Numark NS7II                              | yes                   | MIDI            |
+| Numark NS7III                             | yes                   | MIDI            |
+| Numark NV                                 | yes                   | MIDI            |
+| Numark NSFX                               | no                    | ?               |
+| Numark Orbit                              | no                    | MIDI            |
+| Numark V7                                 | yes                   | MIDI            |
+| Pioneer DDJ Ergo                          | yes                   | MIDI            |
+| Pioneer DDJ-S1                            | yes                   | MIDI            |
+| Pioneer DDJ-SB                            | yes                   | MIDI            |
+| Pioneer DDJ-SR                            | yes                   | MIDI            |
+| Pioneer DDJ-SX                            | yes                   | MIDI            |
+| Pioneer DDJ-SX2                           | yes                   | MIDI            |
+| Pioneer DDJ-SZ                            | yes                   | MIDI            |
+| Pioneer DDJ WeGO                          | yes                   | MIDI            |
+| Pioneer DDJ WeGO 2                        | yes                   | MIDI            |
+| Pioneer DDJ WeGO 3                        | yes                   | MIDI            |
+| Rane MP2015                               | yes                   | MIDI            |
+| Rane MP25                                 | yes                   | MIDI            |
+| Rane MP26                                 | yes                   | MIDI            |
+| Rane Sixty-Two                            | yes                   | MIDI            |
+| Rane Sixty-Fou                            | yes                   | MIDI            |
+| Rane Sixty-Eight                          | yes                   | MIDI            |
+| Reloop Beatmix 2                          | yes                   | MIDI            |
+| Reloop Beatmix 4                          | yes                   | MIDI            |
+| Reloop Terminal Mix 2                     | yes                   | MIDI            |
+| Reloop Terminal Mix 8                     | yes                   | MIDI            |
 
 #### Note about Native Instruments controllers
 

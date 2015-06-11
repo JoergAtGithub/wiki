@@ -1,7 +1,23 @@
 # Hardware Compatibility
 
+Because Mixxx is [free
+software](http://www.gnu.org/philosophy/free-sw.html) — free as in
+freedom, not just price — we strive to make it work with as much
+hardware as we can. If hardware does not work with Mixxx, that does not
+mean it is impossible, it only means that no one has made it work with
+Mixxx yet. Anyone, including you, who has the hardware is welcome to
+make Mixxx work with it.
+
 Mixxx works with any sound card that your operating system has a driver
 to use.
+
+Standards compliant MIDI controllers do not need any special drivers on
+Linux, Mac OS X, or Windows. Standards compliant HID controllers do not
+need any special drivers on Linux and Mac OS X, but do require drivers
+on Windows. Controllers that have integrated sound cards require a
+driver on every OS for the sound card.
+
+## Controller mappings
 
 Mixxx can be made to work with any standards compliant USB MIDI or USB
 HID controller by mapping the controller's signals to manipulate
@@ -15,8 +31,9 @@ of controller support in Mixxx:
     Mixxx Team is unable to verify their quality because we don't have
     the devices ourselves.
 
-If your controller does not have a mapping, please consider contributing
-to Mixxx by making one and sharing it [on the
+If your controller does not have a mapping, or the mapping for your
+controller does not work how you would like it to, please consider
+contributing to Mixxx by making one and sharing it [on the
 forums](http://mixxx.org/forums/viewforum.php?f=7). Within Mixxx, you
 can easily map any MIDI controller with the MIDI Learning Wizard
 available in Preferences \> Controllers (this does not (yet) work for
@@ -27,14 +44,6 @@ documentation on making and editing controller mappings.
 
 If you notice any bugs in the mappings, or wish the mapping would work
 differently, please [report it on our bug tracker](reporting%20bugs).
-
-Standards compliant MIDI controllers do not need any special drivers on
-Linux, Mac OS X, or Windows. Standards compliant HID controllers do not
-need any special drivers on Linux and Mac OS X, but do require drivers
-on Windows. Controllers that have integrated sound cards require a
-driver on every OS for the sound card.
-
-## Controllers
 
 ### Mixxx Certified Mappings
 

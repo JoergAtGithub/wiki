@@ -113,6 +113,12 @@ Mixxx and it has been tested by at least one user and developer.
 
 ### Devices We Don't Have Mappings For
 
+This is by no means an exhaustive list; these are just DJ controllers
+from popular brands. There are too many DJ controllers out there to
+list. If a controller you own or are interested in getting is not listed
+here, <http://mixxx.org/forums/search.php?fid[]=7 search the forum> to
+see if anyone has posted a mapping.
+
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
 |                                           |                       |                 |
@@ -163,7 +169,7 @@ Mixxx and it has been tested by at least one user and developer.
 | Rane MP25                                 | yes                   | MIDI            |
 | Rane MP26                                 | yes                   | MIDI            |
 | Rane Sixty-Two                            | yes                   | MIDI            |
-| Rane Sixty-Fou                            | yes                   | MIDI            |
+| Rane Sixty-Four                           | yes                   | MIDI            |
 | Rane Sixty-Eight                          | yes                   | MIDI            |
 | Reloop Beatmix 2                          | yes                   | MIDI            |
 | Reloop Beatmix 4                          | yes                   | MIDI            |

@@ -196,4 +196,13 @@ or leaks goes here)
   - ~~Vinyl control leaks part of the lookup table, or something like
     that when it gets deleted/recreated~~
   - SoundSource's should use memory mapped IO. Making that cross
-    platform is tricky.
+    platform is tricky. ( this is sort of questionable at the very least
+    for compressed formats. mmap is trading immediate memory use for
+    page faults and disk accesses at random points later ( if we expect
+    all of the pages will eventually be touched, the physical memory
+    usage at track-unload time will be the same for mmap vs.
+    malloc+read. ) QFile::readAll is \_quite\_ easy to make
+    cross-platform, and given that QByteArray is implicitly shared,
+    would also make it easier to safely avoid the
+    loading-two-or-more-copies-of-the-same-file problem mentioned above.
+    --gdkar )

@@ -1,19 +1,40 @@
 # Hardware Compatibility
 
+Mixxx works with any sound card that your operating system has a driver
+to use.
+
+Mixxx can be made to work with any standards compliant USB MIDI or USB
+HID controller by mapping the controller's signals to manipulate
+controls in Mixxx. The Mixxx developers and community have made a number
+of mappings for MIDI and HID controllers. There are two different levels
+of controller support in Mixxx:
+
+  - Mixxx Certified Support: mappings verified by the Mixxx Development
+    Team
+  - Community Support: mappings provided by the Mixxx Community, but the
+    Mixxx Team is unable to verify their quality because we don't have
+    the devices ourselves.
+
+If your controller does not have a mapping, please consider contributing
+to Mixxx by making one and sharing it [on the
+forums](http://mixxx.org/forums/viewforum.php?f=7). Within Mixxx, you
+can easily map any MIDI controller with the MIDI Learning Wizard
+available in Preferences \> Controllers (this does not (yet) work for
+HID devices). For jog wheels and other advanced functions, you will need
+to program a JavaScript mapping. See [these wiki
+pages](start#controller%20midi%20mapping%20documentation) for
+documentation on making and editing controller mappings.
+
+If you notice any bugs in the mappings, or wish the mapping would work
+differently, please [report it on our bug tracker](reporting%20bugs).
+
+Standards compliant MIDI controllers do not need any special drivers on
+Linux, Mac OS X, or Windows. Standards compliant HID controllers do not
+need any special drivers on Linux and Mac OS X, but do require drivers
+on Windows. Controllers that have integrated sound cards require a
+driver on every OS for the sound card.
+
 ## Controllers
-
-Mixxx can work with any MIDI controller that has drivers for your OS:
-you simply need a mapping file to tell Mixxx how to understand it. Mixxx
-comes bundled with a number of MIDI mapping presets for the devices
-listed below.
-
-There are two different levels of device support in Mixxx:
-
-  - **Mixxx Certified Support** - These mappings are verified by the
-    Mixxx Development Team
-  - **Community Support** - These mappings are provided by the Mixxx
-    Community, but the Mixxx Team is unable to verify their quality
-    because we don't have the devices ourselves.
 
 ### Mixxx Certified Mappings
 
@@ -36,14 +57,6 @@ There are two different levels of device support in Mixxx:
 | [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1) | Yes (1.10.1) | Yes (1.10.1)\[3\] | yes                   |
 
 ### Community Supported Mappings
-
-These mappings have been verified as working by the Mixxx community.
-They might have bugs or rough edges. If you run into issues with these
-mappings, please file a bug on our [bug
-tracker](http://bugs.launchpad.net/mixxx) or tell us about it on our
-mailing list, forums, or IRC channel.
-
-////
 
 |                                                                                                    |                |                                                         |                                                                                                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -83,15 +96,6 @@ mailing list, forums, or IRC channel.
 Please keep the list in alphabetical order and do not modify this list
 unless a MIDI mapping preset for a new controller has been added to
 Mixxx and it has been tested by at least one user and developer.
-
-Please note that any DJ controller which is a standard MIDI device can
-be made to work with Mixxx via our mapping system. Simple controllers
-can be mapped from inside Mixxx using our MIDI learning feature, though
-more complicated devices may require additional editing by hand of a
-mapping XML file or script file. For more information, please see our
-[MIDI Controller Mapping File
-Format](MIDI%20Controller%20Mapping%20File%20Format) and our [MIDI
-Scripting](MIDI%20Scripting) pages.
 
 ### Devices We Don't Have Mappings For
 
@@ -159,16 +163,13 @@ to Mixxx. Unfortunately, because this is done by the driver and not the
 controller firmware, these controllers cannot be used as MIDI
 controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux
 supports the audio interfaces in at least some of these devices. It also
-registers the signals from the controllers as generic Linux input
+registers the signals some of the controllers as generic Linux input
 events. To get these devices to work with Mixxx on GNU/Linux, either the
-driver would need to translate these signals to HID or MIDI, Mixxx would
-need to be able to read Linux input events, or a program would need to
-translate the Linux input events to HID or MIDI.
+driver would need to be modified to translate these signals to HID or
+MIDI, Mixxx would need to be able to read Linux input events, or a
+program would need to translate the Linux input events to HID or MIDI.
 
 ## Sound cards
-
-Mixxx is generally compatible with all sound cards that are supported by
-the host operating system.
 
 ### On Linux
 

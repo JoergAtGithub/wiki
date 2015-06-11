@@ -50,6 +50,7 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 |                                                                  |                       |                 |                               |
 | ---------------------------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                           | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
+| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | yes                   | MIDI            | 1.11                          |
 | [American Audio VMS4](American%20Audio%20VMS4)                   | yes                   | MIDI            | 1.9                           |
 | [DJ TechTools MIDIFighter](http://midifighter.com)               | no                    | MIDI            | 1.8                           |
 | [eks Otus](eks%20Otus)                                           | no                    | HID             | 1.11 \[1\]                    |

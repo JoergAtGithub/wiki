@@ -17,23 +17,23 @@ There are two different levels of device support in Mixxx:
 
 ### Mixxx Certified Mappings
 
-|                                                                  |                                         |                            |                                                                                                                                               |
-| ---------------------------------------------------------------- | --------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Device                                                           | Windows                                 | Mac OS X                   | Linux                                                                                                                                         |
-| [American Audio VMS4](American%20Audio%20VMS4)                   | Yes (1.9.0+)                            | Yes (1.9.0+)               | Yes (1.9.0+)                                                                                                                                  |
-| [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+)                            | Yes (1.8.0+)               | Yes (1.8.0+)                                                                                                                                  |
-| [eks Otus](eks%20Otus)                                           | Yes (1.11.0)                            | Yes (1.11.0)               | Yes (1.11.0)                                                                                                                                  |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[1\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)       |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+) \[2\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?%20pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)    |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.9.0+)                            | Yes (1.9.0+)               | Yes (1.9.0+) \[3\] \[4\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) |
-| [Keith McMillen Instruments QuNeo](keith_mcmillen_quneo)         | Yes (1.11.0+)                           | Yes (1.11.0+)              | Yes (1.11.0+)                                                                                                                                 |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+)                            | Yes (1.6.0+)               | Yes (1.6.0+)                                                                                                                                  |
-| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | Yes (1.11.0)                            | Yes (1.11.0)               | Yes (1.11.0)                                                                                                                                  |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.6.1)\[5\] (1.7.0+)               | Yes (1.6.1)\[6\] (1.7.0+)  | Yes (1.7.0+)                                                                                                                                  |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+)                            | Yes (1.7.0+)               | Yes (1.7.0+)                                                                                                                                  |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.6.1)\[7\] (1.7.0+)\[8\] (1.9.0+) | Yes (1.7.0+)\[9\] (1.9.0+) | Yes (1.6.0+)\[10\]                                                                                                                            |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | Yes (1.9.1)                             | Yes (1.9.1)                | Yes (1.11.0)\[11\]                                                                                                                            |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1)                            | Yes (1.10.1)               | Yes (1.10.1)\[12\]                                                                                                                            |
+|                                                                  |              |              |                   |                       |
+| ---------------------------------------------------------------- | ------------ | ------------ | ----------------- | --------------------- |
+| Device                                                           | Windows      | Mac OS X     | Linux             | Integrated Sound Card |
+| [American Audio VMS4](American%20Audio%20VMS4)                   | Yes (1.9.0+) | Yes (1.9.0+) | Yes (1.9.0+)      | yes                   |
+| [DJ TechTools MIDIFighter](http://midifighter.com)               | Yes (1.8.0+) | Yes (1.8.0+) | Yes (1.8.0+)      | no                    |
+| [eks Otus](eks%20Otus)                                           | Yes (1.11.0) | Yes (1.11.0) | Yes (1.11.0)      | no                    |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | Yes (1.7.0+) | Yes (1.7.0+) | Yes (1.11+)       | yes                   |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | Yes (1.7.0+) | Yes (1.7.0+) | Yes (1.11+)       | yes                   |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | Yes (1.9.0+) | Yes (1.9.0+) | Yes (1.11+)       | yes                   |
+| [Keith McMillen Instruments QuNeo](keith_mcmillen_quneo)         | Yes (1.11+)  | Yes (1.11+)  | Yes (1.11+)       | no                    |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | Yes (1.6.0+) | Yes (1.6.0+) | Yes (1.6.0+)      | no                    |
+| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | Yes (1.11.0) | Yes (1.11.0) | Yes (1.11.0)      | yes                   |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | Yes (1.7.0+) | Yes (1.7.0+) | Yes (1.7.0+)      | no                    |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                               | Yes (1.7.0+) | Yes (1.7.0+) | Yes (1.7.0+)      | no                    |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | Yes (1.9.0+) | Yes (1.9.0+) | Yes (1.6.0+)\[1\] | yes                   |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | Yes (1.9.1)  | Yes (1.9.1)  | Yes (1.11.0)\[2\] | no                    |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | Yes (1.10.1) | Yes (1.10.1) | Yes (1.10.1)\[3\] | yes                   |
 
 ### Community Supported Mappings
 
@@ -55,23 +55,23 @@ mailing list, forums, or IRC channel.
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | Yes (1.12.0+)  | Yes (1.12.0+)                                           | Yes (1.12.0+)                                                                                                                                                                                                                                           |
 | [Evolution X-Session](Evolution%20X-Session)                                                       | Yes (1.6.0+)   | Yes (1.6.0+)                                            | Yes (1.6.0+)                                                                                                                                                                                                                                            |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | Yes (1.6.0+)   | Yes (1.6.0+, untested)                                  | Yes (1.6.0+)                                                                                                                                                                                                                                            |
-| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | Yes (1.7.0+)   | Yes (1.7.0+)                                            | Yes (1.7.0+ ) + \[13\] [Hercules Linux kernel module](hercules_linux_kernel_module)                                                                                                                                                                     |
+| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | Yes (1.7.0+)   | Yes (1.7.0+)                                            | Yes (1.7.0+ ) + \[4\] [Hercules Linux kernel module](hercules_linux_kernel_module)                                                                                                                                                                      |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | Yes (1.11.0)   | Yes (1.11.0)                                            | Yes (1.11.0)                                                                                                                                                                                                                                            |
 | [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | Yes (1.7.0+)   | Yes (1.7.0+)                                            | ???                                                                                                                                                                                                                                                     |
-| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | Yes (1.7.0+)   | Yes (1.7.0+)                                            | Yes (1.7.0+) + \[14\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?% Apg=view_files&gid=2&fid=28&pid=215&cid=1#section1)                                                                                                           |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | Yes (1.8.2+)   | Yes (1.8.2+)                                            | Yes (1.12.0+) + \[15\] See [here](http://mixxx.org/forums/viewtopic.php?f=3&t=5064&start=10#p19358)                                                                                                                                                     |
+| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | Yes (1.7.0+)   | Yes (1.7.0+)                                            | Yes (1.7.0+) + \[5\] [Hercules Linux MIDI Driver](http://ts.hercules.com/eng/index.php?% Apg=view_files&gid=2&fid=28&pid=215&cid=1#section1)                                                                                                            |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | Yes (1.8.2+)   | Yes (1.8.2+)                                            | Yes (1.12.0+) + \[6\] See [here](http://mixxx.org/forums/viewtopic.php?f=3&t=5064&start=10#p19358)                                                                                                                                                      |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | Yes (1.8.0+)   | Yes (1.8.0+)                                            | Yes (1.8.0+)                                                                                                                                                                                                                                            |
 | [M-Audio Xponent](M-Audio%20Xponent)                                                               | Yes (1.6.0+)   | Yes (1.6.0+)                                            | Yes (1.6.0+)                                                                                                                                                                                                                                            |
 | [Mixman DM2](Mixman%20DM2)                                                                         | ?              | Yes [via MIDI Driver](http://www.joemattiello.com/dm2/) | Yes [ALSA MIDI Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz) [Alternate ALSA MIDI driver (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2) [dm2linux on sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453) |
 | [Novation Dicer](novation_dicer)                                                                   | Yes (1.10.0+)  | Yes (1.10.0+)                                           | Yes (1.10.0+)                                                                                                                                                                                                                                           |
 | [Numark Total Control](Numark%20Total%20Control)                                                   | Yes (1.6.0+)   | Yes (1.6.0+)                                            | Yes (1.6.0+)                                                                                                                                                                                                                                            |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | Yes (1.8.0+)   | Yes (1.8.0+)                                            | Yes (1.8.0+)                                                                                                                                                                                                                                            |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | Yes (1.8.0+)   | Yes (1.8.0+)                                            | No \[16\]                                                                                                                                                                                                                                               |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | Yes (1.8.0+)   | Yes (1.8.0+)                                            | No \[7\]                                                                                                                                                                                                                                                |
 | [Numark MIXTRACK](Numark%20MIXTRACK)                                                               | Yes (1.8.2+)   | Yes (1.8.2+)                                            | Yes (1.8.2+)                                                                                                                                                                                                                                            |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | Yes (1.10.0+)  | ?                                                       | Yes (1.10.0+)                                                                                                                                                                                                                                           |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | ?              | ?                                                       | Yes (1.11.0+)                                                                                                                                                                                                                                           |
 | [Numark NS7](Numark%20NS7)                                                                         | Yes (1.9.0+)   | Yes (1.9.0+)                                            | No Driver (1.9.0+)                                                                                                                                                                                                                                      |
-| [Numark DJ2GO](Numark%20DJ2GO) \[17\]                                                              | ?              | Yes (1.10.0)                                            | Yes (1.10.1)                                                                                                                                                                                                                                            |
+| [Numark DJ2GO](Numark%20DJ2GO) \[8\]                                                               | ?              | Yes (1.10.0)                                            | Yes (1.10.1)                                                                                                                                                                                                                                            |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | Yes (1.8.2+)   | Yes (1.8.2+)                                            | Yes (1.8.2+)                                                                                                                                                                                                                                            |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | Yes (1.10.0+)  | Yes (1.10.0+)                                           | Unknown (1.10.0+)                                                                                                                                                                                                                                       |
 | [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | Yes (1.10.0+)  | Yes (1.10.0+)                                           | Unknown (1.10.0+)                                                                                                                                                                                                                                       |
@@ -276,43 +276,21 @@ can use the "front" output as your master output, and plug your
 headphones into the "rear" output for cueing. This is what the majority
 of Mixxx users do.
 
-1.  official driver must be patched to support kernels \> 2.6.30 see
-    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
+1.  Linux kernel 3.8 and up
 
-2.  official driver must be patched to support kernels \> 2.6.30 see
-    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
+2.  Linux kernel 3.8 and up
 
-3.  official driver must be patched to support kernels \> 2.6.30 see
-    <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
-
-4.  no official support yet, but works with another patch to the
-    hercules driver
-
-5.  DaRouter Required
-
-6.  DaRouter Required
-
-7.  basic support
-
-8.  DaRouter Required
-
-9.  DaRouter Required
-
-10. Linux kernel 3.8 and up
-
-11. Linux kernel 3.8 and up
-
-12. tested 2015-01-01 with 1.12.0-alpha (build master r5096), but
+3.  tested 2015-01-01 with 1.12.0-alpha (build master r5096), but
     previous versions should work as well
 
-13. official driver must be patched to support kernels \> 2.6.30 see
+4.  official driver must be patched to support kernels \> 2.6.30 see
     <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-14. official driver must be patched to support kernels \> 2.6.30 see
+5.  official driver must be patched to support kernels \> 2.6.30 see
     <http://mixxx.org/forums/viewtopic.php?f=1&t=851>
 
-15. no need for special hercules driver.
+6.  no need for special hercules driver.
 
-16. No Linux MIDI Driver
+7.  No Linux MIDI Driver
 
-17. Mapping included with 1.12
+8.  Mapping included with 1.12

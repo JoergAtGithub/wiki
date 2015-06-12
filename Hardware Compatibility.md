@@ -9,10 +9,12 @@ Mixxx yet. Anyone, including you, who has the hardware is welcome to
 make Mixxx work with it.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
-diagrams and descriptions of various setups.
+diagrams and descriptions of setups with different kinds of hardware.
 
 Mixxx works with any sound card that your operating system has a driver
-to use.
+to use. Standards compliant USB sound cards do not need any special
+drivers on Linux or Mac OS X, but they do on Windows. Most USB sound
+cards are not standards compliant.
 
 Standards compliant MIDI controllers do not need any special drivers on
 Linux, Mac OS X, or Windows. Standards compliant HID controllers do not
@@ -199,7 +201,7 @@ When mixing in software on your CPU, use 2 channels for the master
 output and 2 channels for your headphones. When mixing on an analog
 hardware mixer, each deck uses 2 channels. See [the
 manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
-and descriptions of various setups.
+and descriptions of setups with different kinds of hardware.
 
 It is better to use a sound card with balanced outputs, especially if
 you might run long cables directly into an amplifier or active speakers

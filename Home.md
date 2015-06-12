@@ -17,9 +17,8 @@ plans.
   - [Manual](http://mixxx.org/manual/latest/)
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
-  - **\*[Getting Involved in Mixxx](Getting%20Involved)**: Want Mixxx to
-    be even more awesome? You don't need to be a programmer to help us
-    do that.
+  - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
+    even more awesome? You don't need to be a programmer to help us.
   - [Tutorials](Tutorials)
   - [Add-ons](Add-ons)
   - [Vinyl (and audio CDJ) control](Vinyl%20Control)

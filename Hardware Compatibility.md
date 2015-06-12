@@ -253,15 +253,17 @@ recording your own music, get a sound card with instrument preamps (for
 electric guitars) and/or microphone preamps. Also consider getting an
 interface that supports 24 bit sample depths and a 96 kHz sample rate.
 
-If you want to use [vinyl control](vinyl%20control), it is best to get
-turntables or a sound card with phono preamplifiers (one for each deck).
-Mixxx can amplify phono level signals in software, but it is better to
-do it in hardware. For a traditional 2 deck setup, the Akai Pro AMX and
-Native Instruments Traktor Scratch A6 are good options. Some cheaper
-sound cards, namely the Electrix Ebox44 and Mixvibes U-Mix44, would also
-work but have been discontinued and may be difficult to find. The Native
-Instruments Traktor Scratch A10 is a good option for using 4 vinyl
-decks.
+If you want to use [vinyl control](vinyl%20control), it is best to have
+phono preamplifiers (one for each deck) somewhere between your turntable
+and sound card to boost the turntable signal to line level. Mixxx can
+amplify phono level signals in software, but it is better to do it in
+hardware. The phono preamp can be in the turntable, in the sound card,
+or a stand alone device. For a traditional 2 deck setup, the Akai Pro
+AMX and Native Instruments Traktor Scratch A6 are good options. Some
+cheaper sound cards, namely the Electrix Ebox44 and Mixvibes U-Mix44,
+would also work but have been discontinued and may be difficult to find.
+The Native Instruments Traktor Scratch A10 is a good option for using 4
+vinyl decks.
 
 Mixxx can use multiple sound cards at the same time. However, before
 Mixxx 1.12, this would result in crackling in the headphones. Every

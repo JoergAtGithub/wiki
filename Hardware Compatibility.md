@@ -8,8 +8,13 @@ mean it is impossible, it only means that no one has made it work with
 Mixxx yet. Anyone, including you, who has the hardware is welcome to
 make Mixxx work with it.
 
-See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
-diagrams and descriptions of setups with different kinds of hardware.
+It is recommended to use one sound card with at least 4 output channels.
+When mixing in software on your CPU, use 2 channels for the master
+output and 2 channels for your headphones. When mixing on an analog
+hardware mixer, each deck uses 2 channels. See [the
+manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
+and descriptions of setups with different kinds of hardware.
+
 Users completely new to DJing should consider getting an all-in-one
 controller with an integrated sound card. Users who also want to produce
 music should consider saving money and get a controller without a sound

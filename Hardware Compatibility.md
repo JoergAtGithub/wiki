@@ -87,7 +87,8 @@ available in Preferences \> Controllers (this does not (yet) work for
 HID devices). For jog wheels and other advanced functions, you will need
 to program a JavaScript mapping. See [these wiki
 pages](start#controller%20midi%20mapping%20documentation) for
-documentation on making and editing controller mappings.
+documentation on making and editing controller mappings. Feel free to
+ask for help mapping your controller on the forums.
 
 If you notice any bugs in the mappings, or wish the mapping would work
 differently, please [report it on our bug tracker](reporting%20bugs).

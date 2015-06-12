@@ -84,7 +84,7 @@ with your OS, please [report the bug](reporting%20bugs).
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued | no                    | MIDI            | 1.6                           |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued | no                    | HID             | 1.11                          |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontineud | yes                   | HID?            | 1.7 \[3\]                     |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued | yes                   | HID?            | 1.7 \[3\]                     |
 | [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.8 \[4\]                     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued | no                    | HID             | 1.11                          |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued | no                    | MIDI            | 1.8                           |

@@ -158,7 +158,7 @@ with your OS, please [report the bug](reporting%20bugs).
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | yes                   | MIDI            | 1.9                           |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | yes                   | MIDI            | 1.9                           |
 
-### Devices We Don't Have Mappings For
+### Controllers that do not yet have Mixxx mappings
 
 This is by no means an exhaustive list; these are just DJ controllers
 from popular brands. There are too many DJ controllers out there to
@@ -166,7 +166,7 @@ list. If a controller you own or are interested in getting is not listed
 here, [search the forum](http://mixxx.org/forums/search.php?fid[]=7) to
 see if anyone has posted a mapping.
 
-#### Do you own one of these? Consider contributing back to Mixxx by making a mapping
+#### Do you own one of these? Please consider contributing back to Mixxx by making and publishing a mapping
 
 |                                              |              |                       |                          |
 | -------------------------------------------- | ------------ | --------------------- | ------------------------ |

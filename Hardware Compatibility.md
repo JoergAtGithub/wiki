@@ -141,30 +141,17 @@ see if anyone has posted a mapping.
 | Native Instruments Traktor Kontrol S8     | $1200        | yes                   | NHL                      |
 | Native Instruments Traktor Kontrol Z1     | $200         | yes                   | HID                      |
 | Native Instruments Traktor Kontrol Z2     | $800         | yes                   | HID                      |
-| Numark Mixdeck                            | discontinued | yes                   | MIDI                     |
-| Numark Mixdeck Expresss                   | discontinued | yes                   | MIDI                     |
-| Numark Mixdeck Quad                       | discontinued | yes                   | MIDI                     |
 | Numark Mixtrack Edge                      | $100         | no                    | MIDI                     |
 | Numark Mixtrack 3                         | $200         | no                    | MIDI                     |
 | Numark Mixtrack Pro 3                     | $300         | yes                   | MIDI                     |
-| Numark Mixtrack Quad                      | discontinued | yes                   | MIDI                     |
-| Numark N4                                 | discontinued | yes                   | MIDI                     |
-| Numark NS6                                | discontinued | yes                   | MIDI                     |
 | Numark NS7II                              | $1300        | yes                   | MIDI                     |
 | Numark NS7III                             | $1500        | yes                   | MIDI                     |
 | Numark NV                                 | $700         | yes                   | MIDI                     |
-| Numark NSFX                               | discontinued | no                    | ?                        |
 | Numark Orbit                              | $100         | no                    | MIDI                     |
-| Numark V7                                 | discontinued | yes                   | MIDI                     |
-| Pioneer DDJ Ergo                          | discontinued | yes                   | MIDI                     |
-| Pioneer DDJ-S1                            | discontinued | yes                   | MIDI                     |
 | Pioneer DDJ-SB                            | $250         | yes                   | MIDI                     |
 | Pioneer DDJ-SR                            | $600         | yes                   | MIDI                     |
-| Pioneer DDJ-SX                            | discontinued | yes                   | MIDI                     |
 | Pioneer DDJ-SX2                           | $1000        | yes                   | MIDI                     |
 | Pioneer DDJ-SZ                            | $2000        | yes                   | MIDI                     |
-| Pioneer DDJ WeGO                          | discontinued | yes                   | MIDI                     |
-| Pioneer DDJ WeGO 2                        | discontinued | yes                   | MIDI                     |
 | Pioneer DDJ WeGO 3                        | $300         | yes                   | MIDI                     |
 | Rane MP2015                               | $2900        | yes                   | MIDI                     |
 | Rane MP25                                 | $1500        | yes                   | MIDI                     |

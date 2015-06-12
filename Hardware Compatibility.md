@@ -417,7 +417,8 @@ use one sound card with 4 outputs.
 
 7.  Does this work with Linux?
 
-8.  Does the Xone K2 mapping work for this?
+8.  This is very similar to the A\&H Xone K2, which does have a mapping.
+    The Xone K2 mapping may work for the Xone K1 (for the most part).
 
 9.  also a standalone digital mixer
 

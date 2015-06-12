@@ -407,15 +407,15 @@ mono outputs and the stereo headphone output would be the same.
 
 11. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part.
+    the most part).
 
 12. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part.
+    the most part).
 
 13. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part.
+    the most part).
 
 14. also a standalone analog mixer
 

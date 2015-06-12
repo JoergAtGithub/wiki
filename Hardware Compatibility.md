@@ -239,8 +239,10 @@ program would need to translate the Linux input events to HID or MIDI.
 
 ## Sound cards
 
-Mixxx can use any sound card that your OS has a driver to use. The table
-below lists some recommended USB soundcards for DJing.
+Mixxx can use any sound card that your OS has a driver to use. The
+tables below lists some recommended USB soundcards for DJing. All listed
+sound cards work with Mac OS X and Windows. Most work with Linux, but
+not all; check the table for details.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for

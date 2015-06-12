@@ -47,24 +47,24 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 
 ### Mixxx Certified Mappings
 
-|                                                                  |                       |                 |                               |
-| ---------------------------------------------------------------- | --------------------- | --------------- | ----------------------------- |
-| Device                                                           | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
-| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | yes                   | MIDI            | 1.11                          |
-| [American Audio VMS4](American%20Audio%20VMS4)                   | yes                   | MIDI            | 1.9                           |
-| [DJ TechTools MIDIFighter](http://midifighter.com)               | no                    | MIDI            | 1.8                           |
-| [eks Otus](eks%20Otus)                                           | no                    | HID             | 1.11 \[1\]                    |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | yes                   | HID             | 1.11                          |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | yes                   | HID             | 1.11                          |
-| [Keith McMillen Instruments QuNeo](keith_mcmillen_quneo)         | no                    | MIDI            | 1.11                          |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | no                    | MIDI            | 1.6 \[2\]                     |
-| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | yes                   | MIDI            | 1.11                          |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                               | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | yes                   | MIDI            | 1.9 \[3\]                     |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | no                    | MIDI            | 1.9.1 \[4\]                   |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | yes                   | MIDI            | 1.10.1 \[5\]                  |
+|                                                                  |              |                       |                 |                               |
+| ---------------------------------------------------------------- | ------------ | --------------------- | --------------- | ----------------------------- |
+| Device                                                           | Price (USD)  | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
+| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300         | yes                   | MIDI            | 1.11                          |
+| [American Audio VMS4](American%20Audio%20VMS4)                   | $400         | yes                   | MIDI            | 1.9                           |
+| [DJ TechTools MIDIFighter](http://midifighter.com)               | $200         | no                    | MIDI            | 1.8                           |
+| [eks Otus](eks%20Otus)                                           | discontinued | no                    | HID             | 1.11                          |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | $300         | yes                   | HID             | 1.11                          |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | yes                   | HID             | 1.11                          |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | no                    | MIDI            | 1.11                          |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | no                    | MIDI            | 1.6                           |
+| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | $400         | yes                   | MIDI            | 1.11                          |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued | yes                   | MIDI            | 1.9 \[1\]                     |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued | no                    | MIDI            | 1.9.1 \[2\]                   |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | yes                   | MIDI            | 1.10.1 \[3\]                  |
 
 ### Community Supported Mappings
 
@@ -72,40 +72,40 @@ All controllers listed on GNU/Linux, Mac OS X, and Windows unless
 otherwise indicated. If your controller is listed here but does not work
 with your OS, please [report the bug](reporting%20bugs).
 
-|                                                                                                    |                       |                 |                               |
-| -------------------------------------------------------------------------------------------------- | --------------------- | --------------- | ----------------------------- |
-| Device                                                                                             | Integrated sound card | Signal protocol | Supported since Mixxx version |
-| [Akai MPD24](Akai%20MPD24)                                                                         | no                    | MIDI            | 1.8                           |
-| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | no                    | MIDI            | 1.10                          |
-| [Behringer BCD3000](Behringer%20BCD3000)                                                           | yes                   | MIDI            | 1.6                           |
-| [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | no                    | MIDI            | 1.8                           |
-| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | yes                   | MIDI            | 1.12                          |
-| [Evolution X-Session](Evolution%20X-Session)                                                       | no                    | MIDI            | 1.6 \[6\]                     |
-| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | no                    | MIDI            | 1.6                           |
-| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.11 \[7\]                    |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | yes                   | HID?            | 1.7 \[8\]                     |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | yes                   | HID             | 1.8 \[9\]                     |
-| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | no                    | HID             | 1.11                          |
-| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | no                    | MIDI            | 1.8                           |
-| [M-Audio Xponent](M-Audio%20Xponent)                                                               | yes                   | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | yes                   | ?               | 1.7 \[10\]\[11\]              |
-| [Novation Dicer](Novation%20Dicer)                                                                 | no                    | MIDI            | 1.10                          |
-| [Numark Total Control](Numark%20Total%20Control)                                                   | no                    | MIDI            | 1.6                           |
-| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | yes                   | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | yes                   | ?               | 1.8 \[12\]                    |
-| [Numark Mixtrack](Numark%20Mixtrack)                                                               | no                    | MIDI            | 1.8.2                         |
-| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | yes                   | MIDI            | 1.10                          |
-| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | yes                   | MIDI            | 1.11                          |
-| [Numark NS7](Numark%20NS7)                                                                         | yes                   | MIDI            | 1.9 \[13\]                    |
-| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | no                    | MIDI            | 1.10                          |
-| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
-| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | yes                   | MIDI            | 1.6 \[14\]                    |
-| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | yes                   | MIDI            | 1.11 \[15\]                   |
-| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | yes                   | MIDI            | 1.9 \[16\]                    |
-| [Vestax Spin](Vestax%20Spin)                                                                       | yes                   | MIDI            | 1.9 \[17\]                    |
+|                                                                                                    |              |                       |                 |                               |
+| -------------------------------------------------------------------------------------------------- | ------------ | --------------------- | --------------- | ----------------------------- |
+| Device                                                                                             | Price (USD)  | Integrated sound card | Signal protocol | Supported since Mixxx version |
+| [Akai MPD24](Akai%20MPD24)                                                                         | discontinued | no                    | MIDI            | 1.8                           |
+| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued | no                    | MIDI            | 1.10                          |
+| [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100         | yes                   | MIDI            | 1.6                           |
+| [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | discontinued | no                    | MIDI            | 1.8                           |
+| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700         | yes                   | MIDI            | 1.12                          |
+| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued | no                    | MIDI            | 1.6 \[4\]                     |
+| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued | no                    | MIDI            | 1.6                           |
+| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued | no                    | HID             | 1.11                          |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.11 \[5\]                    |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontineud | yes                   | HID?            | 1.7 \[6\]                     |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.8 \[7\]                     |
+| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued | no                    | HID             | 1.11                          |
+| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued | no                    | MIDI            | 1.8                           |
+| [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued | yes                   | MIDI            | 1.6                           |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued | yes                   | ?               | 1.7 \[8\]\[9\]                |
+| [Novation Dicer](Novation%20Dicer)                                                                 | $70          | no                    | MIDI            | 1.10                          |
+| [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued | no                    | MIDI            | 1.6                           |
+| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued | yes                   | MIDI            | 1.8                           |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued | yes                   | ?               | 1.8 \[10\]                    |
+| [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued | no                    | MIDI            | 1.8.2                         |
+| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued | yes                   | MIDI            | 1.10                          |
+| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | $250         | yes                   | MIDI            | 1.11                          |
+| [Numark NS7](Numark%20NS7)                                                                         | discontinued | yes                   | MIDI            | 1.9 \[11\]                    |
+| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60          | no                    | MIDI            | 1.10                          |
+| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
+| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900         | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
+| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000        | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
+| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued | yes                   | MIDI            | 1.6 \[12\]                    |
+| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued | yes                   | MIDI            | 1.11 \[13\]                   |
+| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | yes                   | MIDI            | 1.9 \[14\]                    |
+| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | yes                   | MIDI            | 1.9 \[15\]                    |
 
 Please keep the list in alphabetical order and do not modify this list
 unless a MIDI mapping preset for a new controller has been added to
@@ -121,60 +121,61 @@ see if anyone has posted a mapping.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                           |                       |                 |
-| ----------------------------------------- | --------------------- | --------------- |
-| Device                                    | Integrated sound card | Signal protocol |
-| Akai Pro AMX                              | yes                   | MIDI            |
-| Gemini Slate                              | yes                   | MIDI            |
-| Gemini Slate 4                            | yes                   | MIDI            |
-| Hercules DJ Control Jogvision             | yes                   | MIDI            |
-| Korg KAOSS DJ                             | yes                   | MIDI            |
-| Native Instruments Traktor Kontrol D2     | no                    | ?               |
-| Native Instruments Traktor Kontrol F1     | no                    | HID             |
-| Native Instruments Traktor Kontrol X1 Mk1 | no                    | NHL             |
-| Native Instruments Traktor Kontrol X1 Mk2 | no                    | HID             |
-| Native Instruments Traktor Kontrol S2 Mk1 | yes                   | NHL             |
-| Native Instruments Traktor Kontrol S2 Mk2 | yes                   | HID             |
-| Native Instruments Traktor Kontrol S4 Mk1 | yes                   | NHL             |
-| Native Instruments Traktor Kontrol S4 Mk2 | yes                   | HID             |
-| Native Instruments Traktor Kontrol S8     | yes                   | NHL             |
-| Native Instruments Traktor Kontrol Z1     | yes                   | HID             |
-| Native Instruments Traktor Kontrol Z2     | yes                   | HID             |
-| Numark Mixdeck                            | yes                   | MIDI            |
-| Numark Mixdeck Expresss                   | yes                   | MIDI            |
-| Numark Mixdeck Quad                       | yes                   | MIDI            |
-| Numark Mixtrack Edge                      | no                    | MIDI            |
-| Numark Mixtrack 3                         | no                    | MIDI            |
-| Numark Mixtrack Pro 3                     | yes                   | MIDI            |
-| Numark Mixtrack Quad                      | yes                   | MIDI            |
-| Numark N4                                 | yes                   | MIDI            |
-| Numark NS6                                | yes                   | MIDI            |
-| Numark NS7II                              | yes                   | MIDI            |
-| Numark NS7III                             | yes                   | MIDI            |
-| Numark NV                                 | yes                   | MIDI            |
-| Numark NSFX                               | no                    | ?               |
-| Numark Orbit                              | no                    | MIDI            |
-| Numark V7                                 | yes                   | MIDI            |
-| Pioneer DDJ Ergo                          | yes                   | MIDI            |
-| Pioneer DDJ-S1                            | yes                   | MIDI            |
-| Pioneer DDJ-SB                            | yes                   | MIDI            |
-| Pioneer DDJ-SR                            | yes                   | MIDI            |
-| Pioneer DDJ-SX                            | yes                   | MIDI            |
-| Pioneer DDJ-SX2                           | yes                   | MIDI            |
-| Pioneer DDJ-SZ                            | yes                   | MIDI            |
-| Pioneer DDJ WeGO                          | yes                   | MIDI            |
-| Pioneer DDJ WeGO 2                        | yes                   | MIDI            |
-| Pioneer DDJ WeGO 3                        | yes                   | MIDI            |
-| Rane MP2015                               | yes                   | MIDI            |
-| Rane MP25                                 | yes                   | MIDI            |
-| Rane MP26                                 | yes                   | MIDI            |
-| Rane Sixty-Two                            | yes                   | MIDI            |
-| Rane Sixty-Four                           | yes                   | MIDI            |
-| Rane Sixty-Eight                          | yes                   | MIDI            |
-| Reloop Beatmix 2                          | yes                   | MIDI            |
-| Reloop Beatmix 4                          | yes                   | MIDI            |
-| Reloop Terminal Mix 2                     | yes                   | MIDI            |
-| Reloop Terminal Mix 8                     | yes                   | MIDI            |
+|                                           |              |                       |                          |
+| ----------------------------------------- | ------------ | --------------------- | ------------------------ |
+| Device                                    | Price (USD)  | Integrated sound card | Signal protocol          |
+| Akai Pro AMX                              | $250         | yes                   | MIDI                     |
+| Gemini Slate                              | $200         | yes                   | MIDI                     |
+| Gemini Slate 4                            | $250         | yes                   | MIDI                     |
+| Hercules DJ Control Jogvision             | $300         | yes                   | MIDI/HID (either? both?) |
+| Korg KAOSS DJ                             | $300         | yes                   | MIDI                     |
+| Native Instruments Traktor Kontrol D2     | $500         | no                    | ?                        |
+| Native Instruments Traktor Kontrol F1     | $200         | no                    | HID                      |
+| Native Instruments Traktor Kontrol X1 Mk1 | $200         | no                    | NHL                      |
+| Native Instruments Traktor Kontrol X1 Mk2 | $200         | no                    | HID                      |
+| Native Instruments Traktor Kontrol S2 Mk1 | discontinued | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol S2 Mk2 | $400         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol S4 Mk1 | discontinued | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol S4 Mk2 | $700         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol S8     | $1200        | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol Z1     | $200         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol Z2     | $800         | yes                   | HID                      |
+| Numark Mixdeck                            | discontinued | yes                   | MIDI                     |
+| Numark Mixdeck Expresss                   | discontinued | yes                   | MIDI                     |
+| Numark Mixdeck Quad                       | discontinued | yes                   | MIDI                     |
+| Numark Mixtrack Edge                      | $100         | no                    | MIDI                     |
+| Numark Mixtrack 3                         | $200         | no                    | MIDI                     |
+| Numark Mixtrack Pro 3                     | $300         | yes                   | MIDI                     |
+| Numark Mixtrack Quad                      | discontinued | yes                   | MIDI                     |
+| Numark N4                                 | discontinued | yes                   | MIDI                     |
+| Numark NS6                                | discontinued | yes                   | MIDI                     |
+| Numark NS7II                              | $1300        | yes                   | MIDI                     |
+| Numark NS7III                             | $1500        | yes                   | MIDI                     |
+| Numark NV                                 | $700         | yes                   | MIDI                     |
+| Numark NSFX                               | discontinued | no                    | ?                        |
+| Numark Orbit                              | $100         | no                    | MIDI                     |
+| Numark V7                                 | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ Ergo                          | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ-S1                            | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ-SB                            | $250         | yes                   | MIDI                     |
+| Pioneer DDJ-SR                            | $600         | yes                   | MIDI                     |
+| Pioneer DDJ-SX                            | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ-SX2                           | $1000        | yes                   | MIDI                     |
+| Pioneer DDJ-SZ                            | $2000        | yes                   | MIDI                     |
+| Pioneer DDJ WeGO                          | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ WeGO 2                        | discontinued | yes                   | MIDI                     |
+| Pioneer DDJ WeGO 3                        | $300         | yes                   | MIDI                     |
+| Rane MP2015                               | $2900        | yes                   | MIDI                     |
+| Rane MP25                                 | $1500        | yes                   | MIDI                     |
+| Rane MP26                                 | $1750        | yes                   | MIDI                     |
+| Rane Sixty-Two                            | $2000        | yes                   | MIDI                     |
+| Rane Sixty-Four                           | $2200        | yes                   | MIDI                     |
+| Rane Sixty-Eight                          | $2600        | yes                   | MIDI                     |
+| Reloop Beatmix 2                          | $300         | yes                   | MIDI                     |
+| Reloop Beatmix 4                          | $400         | yes                   | MIDI                     |
+| Reloop Terminal Mix 2                     | $500         | yes                   | MIDI                     |
+| Reloop Terminal Mix 4                     | $600         | yes                   | MIDI                     |
+| Reloop Terminal Mix 8                     | $700         | yes                   | MIDI                     |
 
 #### Note about Native Instruments controllers
 
@@ -222,9 +223,9 @@ project](http://www.ffado.org).
 | Focusrite Scarlett 2i4                                    | $200        | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI       | 2                         | 2 XLR+1/4" balanced combo jacks, 1 5-pin MIDI                                | 2 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Focusrite Scarlett 6i6                                    | $250        | 6 (4 analog, 2 digital) | 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF   | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo jacks, 2 1/4" balanced, 1 5-pin MIDI, 1 RCA SPDIF  | 2 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Focusrite Scarlett 18i8                                   | $350        | 8 (6 analog, 2 digital) | 2 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 18 (8 analog, 10 digital) | 4 XLR+1/4" balanced combo jacks, 4 1/4" blanced, 1 RCA SPDIF, 1 optical ADAT | 4 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
-| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                         | none                | 16           | 48                 | likely \[18\] | yes      | yes     |
+| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                         | none                | 16           | 48                 | likely \[16\] | yes      | yes     |
 | Native Instruments Komplete Audio 6                       | $230        | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 SPDIF                  | 16, 24              | 44.1, 48, 96 | ?                  | yes           | yes      |         |
-| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                         | none                | 24           | 44.1, 48, 88.2, 96 | likely \[19\] | yes      | yes     |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                         | none                | 24           | 44.1, 48, 88.2, 96 | likely \[17\] | yes      | yes     |
 | Native Instruments Traktor Scratch A6                     | $300        | 6                       | 6 RCA, 1 1/4" headphone                                      | 6                         | 6 RCA                                                                        | 2 phono             | 16, 24       | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Native Instruments Traktor Scratch A10                    | $500        | 10                      | 10 RCA, 1 1/4" headphone                                     | 10                        | 10 RCA, 1 1/4" mic                                                           | 4 phono, 1 mic?     | 16, 24       | 44.1, 48, 88.2, 96 | ?             | yes      | yes     |
 | Numark DJ iO                                              | $50         | 4                       | 4 RCA, 1 1/4" headphone                                      | 1                         | 1 1/4" mic                                                                   | mic?                | 24           | 44.1, 88.2         | no            | yes      | yes     |
@@ -233,50 +234,46 @@ project](http://www.ffado.org).
 | Rane SL4                                                  | $900        | 8                       | 8 RCA                                                        | 8                         | 8 RCA                                                                        | 4 phono             | 24           | 48, 96             | no            | yes      | yes     |
 | Reloop Play                                               | $130        | 4                       | 4 RCA, 1 1/4" headphone                                      | 0                         | none                                                                         | none                | 24           | 96                 | yes           | yes      | yes     |
 
-1.  Discontinued product
+1.  On Linux, requires kernel 3.8 or later
 
-2.  Discontinued product
+2.  On Linux, requires kernel 3.8 or later
 
-3.  On Linux, requires kernel 3.8 or later
+3.  Discontinued product
 
-4.  On Linux, requires kernel 3.8 or later
+4.  Discontinued product
 
 5.  Discontinued product
 
-6.  Discontinued product
+6.  Mac OS X and Windows only with MIDI driver
 
-7.  Discontinued product
-
-8.  Mac OS X and Windows only with MIDI driver
-
-9.  with MIDI driver. For Linux support, see [this forum
+7.  with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-10. Discontinued product
+8.  Discontinued product
 
-11. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+9.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
-12. Mac OS X and Windows only with MIDI driver
+10. Mac OS X and Windows only with MIDI driver
 
-13. Does this work with Linux?
+11. Does this work with Linux?
+
+12. Discontinued product
+
+13. Discontinued product
 
 14. Discontinued product
 
 15. Discontinued product
 
-16. Discontinued product
-
-17. Discontinued product
-
-18. This device is USB audio class compliant and marketed for iOS, so it
+16. This device is USB audio class compliant and marketed for iOS, so it
     should work with Linux without any special driver. However, there is
     no information about anyone trying this device with Linux online.
 
-19. This device is USB audio class compliant and marketed for iOS, so it
+17. This device is USB audio class compliant and marketed for iOS, so it
     should work with Linux without any special driver. However, there is
     no information about anyone trying this device with Linux online.

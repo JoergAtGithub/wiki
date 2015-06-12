@@ -15,7 +15,7 @@ the main output and 2 channels for your headphones. This allows you to
 hear and prepare the track you want to play next without your audience
 hearing it until you are ready to mix it into the main output. When
 mixing on an analog hardware mixer, which is traditional (but not
-necessary) for [vinyl control](vinyl%20control), each deck uses 2
+necessary) with [vinyl control](vinyl%20control), each deck uses 2
 channels and the headphones are plugged into the analog hardware mixer.
 
 Most digital DJs prefer to use a DJ controller rather than just their

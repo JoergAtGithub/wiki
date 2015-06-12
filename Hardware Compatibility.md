@@ -25,9 +25,9 @@ controllers that cost $200 or more bundle a sound card with the
 controller. Cheaper controllers are available without integrated sound
 cards.
 
-Users completely new to DJing should consider getting an all-in-one
+**Users completely new to DJing should consider getting an all-in-one
 controller with an integrated sound card that can control mixing,
-seeking, looping, cues, and effects. Users who also want to produce
+seeking, looping, cues, and effects.** Users who also want to produce
 music should consider saving money and get a controller without a sound
 card and invest in a high quality sound card suitable for recording.
 Users who want to use [vinyl control](vinyl%20control) will need a sound

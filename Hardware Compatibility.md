@@ -170,55 +170,55 @@ This is by no means an exhaustive list; these are just DJ controllers
 from popular brands. There are too many DJ controllers out there to
 list. If a controller you own or are interested in getting is not listed
 here, [search the forum](http://mixxx.org/forums/search.php?fid[]=7) to
-see if anyone has posted a mapping.
-
-#### Do you own one of these? Please consider contributing back to Mixxx by making and publishing a mapping
+see if anyone has posted a mapping. If you are willing to put in the
+effort to map one of these controllers, please get the controller, map
+it, and publish the mapping so we can include it in Mixxx.
 
 |                                              |              |                       |                          |
 | -------------------------------------------- | ------------ | --------------------- | ------------------------ |
 | Device                                       | Price (USD)  | Integrated sound card | Signal protocol          |
-| Akai Pro AMX                                 | $250         | yes                   | MIDI                     |
-| Allen & Heath Xone K1 \[8\]                  | $250         | no                    | MIDI                     |
-| Gemini Slate                                 | $200         | yes                   | MIDI                     |
-| Gemini Slate 4                               | $250         | yes                   | MIDI                     |
-| Hercules DJ Control Jogvision                | $300         | yes                   | MIDI/HID (either? both?) |
-| Korg KAOSS DJ                                | $300         | yes                   | MIDI                     |
-| Native Instruments Traktor Kontrol D2        | $500         | no                    | ?                        |
+| Numark Mixtrack Edge                         | $100         | no                    | MIDI                     |
+| Numark Orbit                                 | $100         | no                    | MIDI                     |
+| Numark Mixtrack 2 \[8\]                      | $150         | no                    | MIDI                     |
+| Native Instruments Traktor Kontrol Z1        | $200         | yes                   | HID                      |
 | Native Instruments Traktor Kontrol F1        | $200         | no                    | HID                      |
 | Native Instruments Traktor Kontrol X1 Mk1    | $200         | no                    | NHL                      |
 | Native Instruments Traktor Kontrol X1 Mk2    | $200         | no                    | HID                      |
+| Gemini Slate                                 | $200         | yes                   | MIDI                     |
+| Allen & Heath Xone K1 \[9\]                  | $250         | no                    | MIDI                     |
+| Numark Mixtrack 3 \[10\]                     | $200         | no                    | MIDI                     |
+| Akai Pro AMX                                 | $250         | yes                   | MIDI                     |
+| Gemini Slate 4                               | $250         | yes                   | MIDI                     |
+| Pioneer DDJ-SB                               | $250         | yes                   | MIDI                     |
+| Hercules DJ Control Jogvision                | $300         | yes                   | MIDI/HID (either? both?) |
+| Korg KAOSS DJ                                | $300         | yes                   | MIDI                     |
+| Numark Mixtrack Pro 3 \[11\]                 | $300         | yes                   | MIDI                     |
+| Reloop Beatmix 2                             | $300         | yes                   | MIDI                     |
+| Pioneer DDJ WeGO 3                           | $300         | yes                   | MIDI                     |
+| Reloop Beatmix 4                             | $400         | yes                   | MIDI                     |
 | Native Instruments Traktor Kontrol S2 Mk1    | discontinued | yes                   | NHL                      |
 | Native Instruments Traktor Kontrol S2 Mk2    | $400         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol D2        | $500         | no                    | ?                        |
+| Reloop Terminal Mix 2                        | $500         | yes                   | MIDI                     |
+| Pioneer DDJ-SR                               | $600         | yes                   | MIDI                     |
+| Reloop Terminal Mix 4                        | $600         | yes                   | MIDI                     |
 | Native Instruments Traktor Kontrol S4 Mk1    | discontinued | yes                   | NHL                      |
 | Native Instruments Traktor Kontrol S4 Mk2    | $700         | yes                   | HID                      |
-| Native Instruments Traktor Kontrol S8 \[9\]  | $1200        | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol Z1        | $200         | yes                   | HID                      |
-| Native Instruments Traktor Kontrol Z2 \[10\] | $800         | yes                   | HID                      |
-| Numark Mixtrack Edge                         | $100         | no                    | MIDI                     |
-| Numark Mixtrack 2 \[11\]                     | $150         | no                    | MIDI                     |
-| Numark Mixtrack 3 \[12\]                     | $200         | no                    | MIDI                     |
-| Numark Mixtrack Pro 3 \[13\]                 | $300         | yes                   | MIDI                     |
+| Numark NV                                    | $700         | yes                   | MIDI                     |
+| Reloop Terminal Mix 8                        | $700         | yes                   | MIDI                     |
+| Native Instruments Traktor Kontrol S8 \[12\] | $1200        | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol Z2 \[13\] | $800         | yes                   | HID                      |
+| Pioneer DDJ-SX2                              | $1000        | yes                   | MIDI                     |
 | Numark NS7II                                 | $1300        | yes                   | MIDI                     |
 | Numark NS7III                                | $1500        | yes                   | MIDI                     |
-| Numark NV                                    | $700         | yes                   | MIDI                     |
-| Numark Orbit                                 | $100         | no                    | MIDI                     |
-| Pioneer DDJ-SB                               | $250         | yes                   | MIDI                     |
-| Pioneer DDJ-SR                               | $600         | yes                   | MIDI                     |
-| Pioneer DDJ-SX2                              | $1000        | yes                   | MIDI                     |
+| Rane MP25 \[14\]                             | $1500        | yes                   | MIDI                     |
+| Rane MP26 \[15\]                             | $1750        | yes                   | MIDI                     |
+| Rane Sixty-Two \[16\]                        | $2000        | yes                   | MIDI                     |
 | Pioneer DDJ-SZ                               | $2000        | yes                   | MIDI                     |
-| Pioneer DDJ WeGO 3                           | $300         | yes                   | MIDI                     |
-| Rane MP2015 \[14\]                           | $2900        | yes                   | MIDI                     |
-| Rane MP25 \[15\]                             | $1500        | yes                   | MIDI                     |
-| Rane MP26 \[16\]                             | $1750        | yes                   | MIDI                     |
-| Rane Sixty-Two \[17\]                        | $2000        | yes                   | MIDI                     |
-| Rane Sixty-Four \[18\]                       | $2200        | yes                   | MIDI                     |
-| Rane Sixty-Eight \[19\]                      | $2600        | yes                   | MIDI                     |
+| Rane Sixty-Four \[17\]                       | $2200        | yes                   | MIDI                     |
+| Rane Sixty-Eight \[18\]                      | $2600        | yes                   | MIDI                     |
+| Rane MP2015 \[19\]                           | $2900        | yes                   | MIDI                     |
 | Rane TTM57 \[20\]                            | discontinued | yes                   | MIDI                     |
-| Reloop Beatmix 2                             | $300         | yes                   | MIDI                     |
-| Reloop Beatmix 4                             | $400         | yes                   | MIDI                     |
-| Reloop Terminal Mix 2                        | $500         | yes                   | MIDI                     |
-| Reloop Terminal Mix 4                        | $600         | yes                   | MIDI                     |
-| Reloop Terminal Mix 8                        | $700         | yes                   | MIDI                     |
 
 #### Note about Native Instruments controllers
 
@@ -417,24 +417,24 @@ use one sound card with 4 outputs.
 
 7.  Does this work with Linux?
 
-8.  This is very similar to the A\&H Xone K2, which does have a mapping.
+8.  This controller is similar to the Mixtrack Pro 2, which has a
+    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
+    the most part).
+
+9.  This is very similar to the A\&H Xone K2, which does have a mapping.
     The Xone K2 mapping may work for the Xone K1 (for the most part).
 
-9.  also a standalone digital mixer
-
-10. also a standalone analog mixer
+10. This controller is similar to the Mixtrack Pro 2, which has a
+    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
+    the most part).
 
 11. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
     the most part).
 
-12. This controller is similar to the Mixtrack Pro 2, which has a
-    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part).
+12. also a standalone digital mixer
 
-13. This controller is similar to the Mixtrack Pro 2, which has a
-    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part).
+13. also a standalone analog mixer
 
 14. also a standalone analog mixer
 

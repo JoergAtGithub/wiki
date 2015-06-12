@@ -10,6 +10,16 @@ make Mixxx work with it.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
+Users completely new to DJing should consider getting an all-in-one
+controller with an integrated sound card. Users who also want to produce
+music should consider saving money and get a controller without a sound
+card and invest in a high quality sound card suitable for recording.
+Users who want to use [vinyl control](vinyl%20control) will need a sound
+card with at least 4 inputs and phono preamps either on their sound card
+or turntables. A few small controllers may be of particular interest to
+vinyl DJs, such as the Novation Dicer and Akai Pro AMX. These are all
+just guidelines; research your options and decide what you think will
+work best for the way you want to DJ.
 
 Mixxx works with any sound card that your operating system has a driver
 to use. Standards compliant USB sound cards do not need any special

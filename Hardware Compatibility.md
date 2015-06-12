@@ -55,7 +55,7 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 | [DJ TechTools MIDIFighter](http://midifighter.com)               | $200         | no                    | MIDI            | 1.8                           |
 | [eks Otus](eks%20Otus)                                           | discontinued | no                    | HID             | 1.11                          |
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | $300         | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued | yes                   | HID             | 1.11                          |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | yes                   | HID             | 1.11                          |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | no                    | MIDI            | 1.11                          |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | no                    | MIDI            | 1.6                           |
@@ -129,6 +129,7 @@ see if anyone has posted a mapping.
 | Gemini Slate                              | $200         | yes                   | MIDI                     |
 | Gemini Slate 4                            | $250         | yes                   | MIDI                     |
 | Hercules DJ Control Jogvision             | $300         | yes                   | MIDI/HID (either? both?) |
+| Hercules DJ Console RMX Mk2               |              |                       |                          |
 | Korg KAOSS DJ                             | $300         | yes                   | MIDI                     |
 | Native Instruments Traktor Kontrol D2     | $500         | no                    | ?                        |
 | Native Instruments Traktor Kontrol F1     | $200         | no                    | HID                      |

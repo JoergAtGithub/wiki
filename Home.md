@@ -12,14 +12,14 @@ plans.
 
 ## User Documentation
 
-  - **[Getting Involved in Mixxx](Getting%20Involved)**: Help us make
-    Mixxx better, find out what you can do.
-  - [Beginner's Guide](Beginner's%20Guide)
+  - [DJ Hardware Guide](Hardware%20compatibility): Explains options of
+    hardware setups for DJing with Mixxx and lists compatible devices
   - [Manual](http://mixxx.org/manual/latest/)
-  - [Hardware compatibility](Hardware%20compatibility): most up-to-date
-    information about which DJ controllers work with Mixxx
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
+  - **\*[Getting Involved in Mixxx](Getting%20Involved)**: Want Mixxx to
+    be even more awesome? You don't need to be a programmer to help us
+    do that.
   - [Tutorials](Tutorials)
   - [Add-ons](Add-ons)
   - [Vinyl (and audio CDJ) control](Vinyl%20Control)

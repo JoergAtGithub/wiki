@@ -290,6 +290,14 @@ author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 1394 interface, you'll want to look at [the FFADO
 project](http://www.ffado.org).
 
+Sound cards often have multiple connectors for a channels, resulting in
+more connectors than channels. So, not every connector can send or
+receive an independent signal. Many sound cards made for DJing have 4
+output channels with 4 mono output connectors and 1 stereo headphone
+connector. This does not mean that the sound card can send out 6
+different signals at the same time; rather, the signal on 2 of the mono
+outputs and the stereo headphone output would be the same.
+
 ### Standalone USB sound cards
 
 |                                                           |                         |                         |                                                              |                           |                                                                        |                                      |            |                    |               |

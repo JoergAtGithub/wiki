@@ -117,49 +117,49 @@ see if anyone has posted a mapping.
 
 #### Do you own one of these? Consider contributing back to Mixxx by making a mapping
 
-|                                           |              |                       |                          |
-| ----------------------------------------- | ------------ | --------------------- | ------------------------ |
-| Device                                    | Price (USD)  | Integrated sound card | Signal protocol          |
-| Akai Pro AMX                              | $250         | yes                   | MIDI                     |
-| Allen & Heath Xone K1 \[8\]               | $250         | no                    | MIDI                     |
-| Gemini Slate                              | $200         | yes                   | MIDI                     |
-| Gemini Slate 4                            | $250         | yes                   | MIDI                     |
-| Hercules DJ Control Jogvision             | $300         | yes                   | MIDI/HID (either? both?) |
-| Korg KAOSS DJ                             | $300         | yes                   | MIDI                     |
-| Native Instruments Traktor Kontrol D2     | $500         | no                    | ?                        |
-| Native Instruments Traktor Kontrol F1     | $200         | no                    | HID                      |
-| Native Instruments Traktor Kontrol X1 Mk1 | $200         | no                    | NHL                      |
-| Native Instruments Traktor Kontrol X1 Mk2 | $200         | no                    | HID                      |
-| Native Instruments Traktor Kontrol S2 Mk1 | discontinued | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol S2 Mk2 | $400         | yes                   | HID                      |
-| Native Instruments Traktor Kontrol S4 Mk1 | discontinued | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol S4 Mk2 | $700         | yes                   | HID                      |
-| Native Instruments Traktor Kontrol S8     | $1200        | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol Z1     | $200         | yes                   | HID                      |
-| Native Instruments Traktor Kontrol Z2     | $800         | yes                   | HID                      |
-| Numark Mixtrack Edge                      | $100         | no                    | MIDI                     |
-| Numark Mixtrack 3                         | $200         | no                    | MIDI                     |
-| Numark Mixtrack Pro 3                     | $300         | yes                   | MIDI                     |
-| Numark NS7II                              | $1300        | yes                   | MIDI                     |
-| Numark NS7III                             | $1500        | yes                   | MIDI                     |
-| Numark NV                                 | $700         | yes                   | MIDI                     |
-| Numark Orbit                              | $100         | no                    | MIDI                     |
-| Pioneer DDJ-SB                            | $250         | yes                   | MIDI                     |
-| Pioneer DDJ-SR                            | $600         | yes                   | MIDI                     |
-| Pioneer DDJ-SX2                           | $1000        | yes                   | MIDI                     |
-| Pioneer DDJ-SZ                            | $2000        | yes                   | MIDI                     |
-| Pioneer DDJ WeGO 3                        | $300         | yes                   | MIDI                     |
-| Rane MP2015                               | $2900        | yes                   | MIDI                     |
-| Rane MP25                                 | $1500        | yes                   | MIDI                     |
-| Rane MP26                                 | $1750        | yes                   | MIDI                     |
-| Rane Sixty-Two                            | $2000        | yes                   | MIDI                     |
-| Rane Sixty-Four                           | $2200        | yes                   | MIDI                     |
-| Rane Sixty-Eight                          | $2600        | yes                   | MIDI                     |
-| Reloop Beatmix 2                          | $300         | yes                   | MIDI                     |
-| Reloop Beatmix 4                          | $400         | yes                   | MIDI                     |
-| Reloop Terminal Mix 2                     | $500         | yes                   | MIDI                     |
-| Reloop Terminal Mix 4                     | $600         | yes                   | MIDI                     |
-| Reloop Terminal Mix 8                     | $700         | yes                   | MIDI                     |
+|                                              |              |                       |                          |
+| -------------------------------------------- | ------------ | --------------------- | ------------------------ |
+| Device                                       | Price (USD)  | Integrated sound card | Signal protocol          |
+| Akai Pro AMX                                 | $250         | yes                   | MIDI                     |
+| Allen & Heath Xone K1 \[8\]                  | $250         | no                    | MIDI                     |
+| Gemini Slate                                 | $200         | yes                   | MIDI                     |
+| Gemini Slate 4                               | $250         | yes                   | MIDI                     |
+| Hercules DJ Control Jogvision                | $300         | yes                   | MIDI/HID (either? both?) |
+| Korg KAOSS DJ                                | $300         | yes                   | MIDI                     |
+| Native Instruments Traktor Kontrol D2        | $500         | no                    | ?                        |
+| Native Instruments Traktor Kontrol F1        | $200         | no                    | HID                      |
+| Native Instruments Traktor Kontrol X1 Mk1    | $200         | no                    | NHL                      |
+| Native Instruments Traktor Kontrol X1 Mk2    | $200         | no                    | HID                      |
+| Native Instruments Traktor Kontrol S2 Mk1    | discontinued | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol S2 Mk2    | $400         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol S4 Mk1    | discontinued | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol S4 Mk2    | $700         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol S8 \[9\]  | $1200        | yes                   | NHL                      |
+| Native Instruments Traktor Kontrol Z1        | $200         | yes                   | HID                      |
+| Native Instruments Traktor Kontrol Z2 \[10\] | $800         | yes                   | HID                      |
+| Numark Mixtrack Edge                         | $100         | no                    | MIDI                     |
+| Numark Mixtrack 3                            | $200         | no                    | MIDI                     |
+| Numark Mixtrack Pro 3                        | $300         | yes                   | MIDI                     |
+| Numark NS7II                                 | $1300        | yes                   | MIDI                     |
+| Numark NS7III                                | $1500        | yes                   | MIDI                     |
+| Numark NV                                    | $700         | yes                   | MIDI                     |
+| Numark Orbit                                 | $100         | no                    | MIDI                     |
+| Pioneer DDJ-SB                               | $250         | yes                   | MIDI                     |
+| Pioneer DDJ-SR                               | $600         | yes                   | MIDI                     |
+| Pioneer DDJ-SX2                              | $1000        | yes                   | MIDI                     |
+| Pioneer DDJ-SZ                               | $2000        | yes                   | MIDI                     |
+| Pioneer DDJ WeGO 3                           | $300         | yes                   | MIDI                     |
+| Rane MP2015 \[11\]                           | $2900        | yes                   | MIDI                     |
+| Rane MP25 \[12\]                             | $1500        | yes                   | MIDI                     |
+| Rane MP26 \[13\]                             | $1750        | yes                   | MIDI                     |
+| Rane Sixty-Two \[14\]                        | $2000        | yes                   | MIDI                     |
+| Rane Sixty-Four \[15\]                       | $2200        | yes                   | MIDI                     |
+| Rane Sixty-Eight \[16\]                      | $2600        | yes                   | MIDI                     |
+| Reloop Beatmix 2                             | $300         | yes                   | MIDI                     |
+| Reloop Beatmix 4                             | $400         | yes                   | MIDI                     |
+| Reloop Terminal Mix 2                        | $500         | yes                   | MIDI                     |
+| Reloop Terminal Mix 4                        | $600         | yes                   | MIDI                     |
+| Reloop Terminal Mix 8                        | $700         | yes                   | MIDI                     |
 
 #### Note about Native Instruments controllers
 
@@ -244,9 +244,9 @@ project](http://www.ffado.org).
 | Device                                                    | Price (USD) | Channels out            | Output connectors                                            | Channels in               | Input connectors                                                       | Preamps                    | Bit depths | Sample rates (kHz) | Linux         |
 | Behringer UCA222                                          | $30         | 2                       | 2 RCA, 1 1/8" headphone                                      | 2                         | 2 RCA                                                                  | 1 phono                    | 16         | 32, 44.1, 48       | yes           |
 | Numark DJ iO                                              | $50         | 4                       | 4 RCA, 1 1/4" headphone                                      | 1                         | 1 1/4" mic                                                             | 1 mic                      | 24         | 44.1, 88.2         | no            |
-| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                   | none                       | 16         | 48                 | likely \[9\]  |
+| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                   | none                       | 16         | 48                 | likely \[17\] |
 | Reloop Play                                               | $130        | 4                       | 4 RCA, 1 1/4" headphone                                      | 0                         | none                                                                   | none                       | 24         | 96                 | yes           |
-| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                   | none                       | 24         | 44.1, 48, 88.2, 96 | likely \[10\] |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                   | none                       | 24         | 44.1, 48, 88.2, 96 | likely \[18\] |
 | Focusrite Scarlett 2i4                                    | $200        | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI       | 2                         | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                | 2 mic, 2 instrument        | 24         | 44.1, 48, 88.2, 96 | yes           |
 | Native Instruments Komplete Audio 6                       | $230        | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 SPDIF            | 2 microphone, 2 instrument | 16, 24     | 44.1, 48, 96       | ?             |
 | Focusrite Scarlett 6i6                                    | $250        | 6 (4 analog, 2 digital) | 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF   | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo, 2 1/4" balanced, 1 5-pin MIDI, 1 RCA SPDIF  | 2 mic, 2 instrument        | 24         | 44.1, 48, 88.2, 96 | yes           |
@@ -276,17 +276,17 @@ project](http://www.ffado.org).
 | -------------------------------------------- | ------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------ | -------------- | ---------- | ------------------ | ------------- |
 | Device                                       | Price (USD)  | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
 | Akai Pro AMX                                 | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 4           | 4 RCA                                      | 2 phono        | 24         | 96                 | ?             |
-| Gemini Slate                                 | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[11\]      |
-| Gemini Slate 4                               | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[12\]      |
+| Gemini Slate                                 | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[19\]      |
+| Gemini Slate 4                               | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[20\]      |
 | Hercules DJ Control Jogvision                | $300         | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 2           | 1/4" mic, 1/8" stereo                      | 1 mic          | 16, 24     | 44.1, 48, 96       | ?             |
 | Korg KAOSS DJ                                | $300         | 4            | 2 RCA, 1 1/4" headphone                                           | 2           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1, 48           | ?             |
 | Native Instruments Traktor Kontrol S2 Mk1    | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
 | Native Instruments Traktor Kontrol S2 Mk2    | $400         | 4            | 2 RCA, 2 1/4" balanced, 1 1/4" headphone                          | 1           | 1 1/4" mic                                 | 1 microphone   | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
 | Native Instruments Traktor Kontrol S4 Mk1    | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | yes           |
 | Native Instruments Traktor Kontrol S4 Mk2    | $700         | 4            | 2 RCA, 2 1/4" balanced, 1 5-pin MIDI                              | 5           | 4 RCA, 1/4" mic, 1 5-pin MIDI              | 2 phono, 1 mic | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
-| Native Instruments Traktor Kontrol S8 \[13\] | $1200        | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 4           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
+| Native Instruments Traktor Kontrol S8 \[21\] | $1200        | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 4           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
 | Native Instruments Traktor Kontrol Z1        | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                       | none           | 24         | 96                 | ?             |
-| Native Instruments Traktor Kontrol Z2        | $800         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 6           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | ?             |
+| Native Instruments Traktor Kontrol Z2 \[22\] | $800         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 6           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | ?             |
 | Numark Mixtrack Pro 3                        | $300         | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1/4" mic                                   | 1 mic          | 24         | 44.1               | ?             |
 | Numark NS7                                   | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
 | Numark NS7II                                 | $1300        | 4            | 2 1/4" balanced, 2 XLR, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 10          | 8 RCA, 2 XLR+1/4" combo                    | 4 phono, 2 mic | 24         | 44.1               | ?             |
@@ -297,12 +297,12 @@ project](http://www.ffado.org).
 | Pioneer DDJ-SX2                              | $1000        | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
 | Pioneer DDJ-SZ                               | $2000        | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
 | Pioneer DDJ WeGO 3                           | $300         | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1 1/4" mic                                 | 1 mic          | 24         | 48                 | ?             |
-| Rane MP2015 \[14\]                           | $2900        | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[15\] |
-| Rane MP25 \[16\]                             | $1500        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[17\] |
-| Rane MP26 \[18\]                             | $1750        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[19\] |
-| Rane Sixty-Two \[20\]                        | $2000        | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Four \[21\]                       | $2200        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Eight \[22\]                      | $2600        | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane MP2015 \[23\]                           | $2900        | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[24\] |
+| Rane MP25 \[25\]                             | $1500        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[26\] |
+| Rane MP26 \[27\]                             | $1750        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[28\] |
+| Rane Sixty-Two \[29\]                        | $2000        | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Four \[30\]                       | $2200        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Eight \[31\]                      | $2600        | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
 | Reloop Beatmix 2                             | $300         | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ?             |
 | Reloop Beatmix 4                             | $400         | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | 16         | 48                 | ?             |
 | Reloop Terminal Mix 2                        | $500         | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 phono, 1 mic | ?          | ?                  | ?             |
@@ -330,25 +330,19 @@ project](http://www.ffado.org).
 
 8.  Does the Xone K2 mapping work for this?
 
-9.  This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+9.  also a standalone digital mixer
 
-10. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+10. also a standalone analog mixer
 
-11. Fun fact: the firmware runs Linux
+11. also a standalone analog mixer
 
-12. Fun fact: the firmware runs Linux
+12. also a standalone analog mixer
 
-13. also a standalone digital mixer
+13. also a standalone analog mixer
 
 14. also a standalone analog mixer
 
-15. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+15. also a standalone analog mixer
 
 16. also a standalone analog mixer
 
@@ -356,14 +350,38 @@ project](http://www.ffado.org).
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-18. also a standalone analog mixer
-
-19. This device is USB class compliant, so it should work without any
+18. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-20. also a standalone analog mixer
+19. Fun fact: the firmware runs Linux
 
-21. also a standalone analog mixer
+20. Fun fact: the firmware runs Linux
+
+21. also a standalone digital mixer
 
 22. also a standalone analog mixer
+
+23. also a standalone analog mixer
+
+24. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+25. also a standalone analog mixer
+
+26. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+27. also a standalone analog mixer
+
+28. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+29. also a standalone analog mixer
+
+30. also a standalone analog mixer
+
+31. also a standalone analog mixer

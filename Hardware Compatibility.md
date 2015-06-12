@@ -6,17 +6,17 @@ It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card
 built into the motherboard with only 1 stereo 1/8" headphone output (2
 mono channels). While it is possible to get a cheap sound card with only
-2 more outputs, it is not recommended (see [explanation
-below](#Using-multiple-sound-cards)). These onboard sound cards are
-generally not high quality and may pick up interference from other
-devices in the computer such as the power supply or hard drive. When
-mixing in software on your CPU, use 2 channels for the main output and 2
-channels for your headphones. This allows you to hear and prepare the
-track you want to play next without your audience hearing it until you
-are ready to mix it into the main output. When mixing on an analog
-hardware mixer, which is traditional (but not necessary) for [vinyl
-control](vinyl%20control), each deck uses 2 channels and the headphones
-are plugged into the analog hardware mixer.
+2 more outputs and it together with your onboard sound card, it is not
+recommended (see [explanation below](#Using-multiple-sound-cards)).
+These onboard sound cards are generally not high quality and may pick up
+interference from other devices in the computer such as the power supply
+or hard drive. When mixing in software on your CPU, use 2 channels for
+the main output and 2 channels for your headphones. This allows you to
+hear and prepare the track you want to play next without your audience
+hearing it until you are ready to mix it into the main output. When
+mixing on an analog hardware mixer, which is traditional (but not
+necessary) for [vinyl control](vinyl%20control), each deck uses 2
+channels and the headphones are plugged into the analog hardware mixer.
 
 Most digital DJs prefer to use a DJ controller rather than just their
 keyboard and mouse for more intuitive control of their software. Most DJ

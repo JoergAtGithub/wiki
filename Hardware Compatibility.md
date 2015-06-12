@@ -4,15 +4,20 @@
 
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers only come with a sound card
-built into the motherboard with 2 outputs. These onboard sound cards
-tend to not be very good quality. When mixing in software on your CPU,
-use 2 channels for the master output and 2 channels for cueing in your
-headphones. Most digital DJs prefer to use a DJ controller rather than
-just their keyboard and mouse for more intuitive control of their
-software. Many devices are both a DJ controller and a sound card. When
-mixing on an analog hardware mixer, each deck uses 2 channels. See [the
-manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
-and descriptions of setups with different kinds of hardware.
+built into the motherboard with 2 outputs. These onboard sound cards are
+generally not high quality and may pick up interference from other
+devices in the computer such as the power supply or hard drive. When
+mixing in software on your CPU, use 2 channels for the master output and
+2 channels for cueing in your headphones. When mixing on an analog
+hardware mixer, which is traditional (but not necessary) for [vinyl
+control](vinyl%20control), each deck uses 2 channels and the headphones
+are plugged into the analog hardware mixer.
+
+Most digital DJs prefer to use a DJ controller rather than just their
+keyboard and mouse for more intuitive control of their software. Most DJ
+controllers that cost $200 or more bundle a sound card with the
+controller. Cheaper controllers are available without integrated sound
+cards.
 
 Users completely new to DJing should consider getting an all-in-one
 controller with an integrated sound card. Users who also want to produce
@@ -24,6 +29,9 @@ or turntables. A few small controllers may be of particular interest to
 vinyl DJs, such as the Novation Dicer and Akai Pro AMX. These are all
 just guidelines; research your options and decide what you think will
 work best for the way you want to DJ.
+
+See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
+diagrams and descriptions of setups with different kinds of hardware.
 
 Many discontinued devices are listed on this page. They may or may not
 still be available used online.

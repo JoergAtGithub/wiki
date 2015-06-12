@@ -201,15 +201,19 @@ It is better to use a sound card with balanced outputs, especially if
 you might run long cables directly into an amplifier or active speakers
 without going through a DJ mixer. However, most venues have DJs plug
 into DJ mixers, which typically only have RCA inputs (RCA cables cannot
-be balanced). Most live sound mixers have balanced 1/4" inputs.
+be balanced). Most live sound mixers have balanced 1/4" inputs. Playing
+audio at 16 bit sample depths and 44.1 kHz sample rate is fine for
+DJing; almost all music is published in this format (which was the
+standard set by audio CDs).
+
+If you are interested in playing instruments over your DJing and/or
+recording your own music, get a sound card with instrument preamps (for
+electric guitars) and/or microphone preamps. Also consider getting an
+interface that supports 24 bit sample depths and a 96 kHz sample rate.
 
 If you want to use [vinyl control](vinyl%20control), it is best to get
 turntables or a sound card with phono preamplifiers. Mixxx can amplify
 phono level signals in software, but it is better to do it in hardware.
-
-If you are interested in playing instruments over your DJing and/or
-recording your own music, get a sound card with instrument preamps (for
-electric guitars) and/or microphone preamps.
 
 Mixxx can use multiple sound cards at the same time. However, before
 Mixxx 1.12, this would result in crackling in the headphones. Every

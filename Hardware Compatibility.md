@@ -235,13 +235,6 @@ program would need to translate the Linux input events to HID or MIDI.
 Mixxx can use any sound card that your OS has a driver to use. The table
 below lists some recommended USB soundcards for DJing.
 
-It is recommended to use one sound card with at least 4 output channels.
-When mixing in software on your CPU, use 2 channels for the master
-output and 2 channels for your headphones. When mixing on an analog
-hardware mixer, each deck uses 2 channels. See [the
-manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
-and descriptions of setups with different kinds of hardware.
-
 It is better to use a sound card with balanced outputs, especially if
 you might run long cables directly into an amplifier or active speakers
 without going through a DJ mixer. However, most venues have DJs plug

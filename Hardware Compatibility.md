@@ -202,111 +202,43 @@ program would need to translate the Linux input events to HID or MIDI.
 
 ## Sound cards
 
-### On Linux
+Mixxx can use any sound card that your OS has a driver to use. The table
+below lists some sound cards you might want to use for DJing with Mixxx.
 
-Linux generally has very good support for sound cards, but if you'd like
-to see if there's any known issues with any sound card, take a look at
-the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main). Also
-see [Soundcard resources for Linux
+For Linux users, the [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
+Linux-compatible soundcards. Also see [Soundcard resources for Linux
 DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
 author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 1394 interface, you'll want to look at [the FFADO
 project](http://www.ffado.org).
 
-### Behringer U-Control UCA202
-
-[Product page](http://www.behringer.com/EN/Products/UCA202.aspx)
-
-This is one of the least expensive yet quality audio interfaces we've
-come across and it works fine in Linux, too. It's good for a non-vinyl
-control setup (or single-deck if your turntable outputs line level)
-since it is very compact and has just enough additional channels. (One
-pair for main output and one input pair.) You would then use the
-built-in jack on your laptop for the headphone output. (This is how one
-of our developers uses it. Below are some screen shots from his Windows
-setup showing how to configure ASIO4ALL and Mixxx.)
-[[/media/hardware/uca202/asio4all.png|]] [[/media/hardware/uca202/prefs.png|]]
-
-Note that the SoundMAX integrated card only supports 48kHz sampling rate
-natively, so the "always resample" box is checked for that card.
-
-### Behringer U-Phono UFO202
-
-[Product page](http://www.behringer.com/EN/Products/UFO202.aspx)
-
-For those wishing to use vinyl control on a budget, you can pick up two
-of these devices. Same idea as the UCA202 but these allow you to switch
-the input to phono for use with standard turntables. Also good for
-archiving your vinyl.
-
-### Traktor Audio 2
-
-See [this page](traktor_audio_2)
-
-### Native Instruments Audio Kontrol 1
-
-Sound works perfect with additional .asoundrc file. Hardware buttons and
-wheel works with additional MIDI mapper program. See [this
-page](audio_kontrol_1).
-
-### Creative Soundblaster Audigy NX, SE/Value and Creative X-Fi
-
-For both sound cards, ASIO is the best "Sound API" setting to use in
-Mixxx's preferences, as it enables you to use all the channels on the
-sound card for output. For more information, see [this
-thread](https://sourceforge.net/forum/forum.php?thread_id=1649679&forum_id=156157).
-
-While the Audigy NX works well on Linux, **the Creative X-Fi is
-currently incompatible with Linux**. Creative says they're releasing a
-[closed-source driver](http://opensource.creative.com/soundcard.html) in
-the ~~second~~ third or fourth quarter of 2007, but closed-source
-drivers often lead to headaches, so Mixxx users might be best to steer
-clear of these cards.
-
-The cheaper Creative Audigy cards on the market currently (usually
-billed as the Audigy SE or Value) do not correctly support input under
-Linux, and while they have the required number of inputs for vinyl
-control, are not a good budget choice. Several users have had problems
-with these cards generally under Linux, and with Mixxx in particular.
-The driver/chipset of note is CA0106 in the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main).
-
-Note: An Audigy LS user reported having to select "surround70" or
-"surround50" as the audio devices in Mixxx's preferences in order to be
-able to use both Master and Headphone outputs.
-
-### Edirol Firewire FA-101
-
-[Product page](http://www.roland.com/products/en/FA-101/)
-
-Not a budget sound card, but provides plenty of inputs and outputs for
-vinyl and external mixers. These are Mono channels though, so you must
-select pairs of them in the channel menu. Latency can be reduced to 1ms
-with an ocasional hiccup, or kept at 2ms for reliability. A usual setup
-would be to set the main outputs (1/2) to headphones, since Monitor
-channels are not supported, and to get a stereo output on them. You
-could then use the remaining outputs as individual decks. A very
-flexible soundcard, that supports many sample rates. Requires a firewire
-connection.
-
-### SYBA SD-CM-UAUD
-
-Reported on IRC as working well for using Mixxx in Linux. Available for
-about $10 USD.
-
-## Multiple sound cards
-
-Mixxx 1.6.0+ supports multiple sound cards.
-
-Mixxx 1.5.0 doesn't support multiple output devices that span different
-sound cards. For example, if you have two sound cards, you cannot
-currently use one sound card for headphone cueing and the other for
-master output. However, you **can** use multiple outputs on a single
-sound card. For example, if you purchase a cheap 5.1 USB sound card, you
-can use the "front" output as your master output, and plug your
-headphones into the "rear" output for cueing. This is what the majority
-of Mixxx users do.
+|                                                           |                         |                                                              |                           |                                                                              |                                             |              |                    |                |          |         |
+| --------------------------------------------------------- | ----------------------- | ------------------------------------------------------------ | ------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------- | ------------ | ------------------ | -------------- | -------- | ------- |
+| Device                                                    | Channels out            | Output connectors                                            | Channels in               | Input connectors                                                             | Preamps                                     | Bit depths   | Sample rates (kHz) | Linux          | Mac OS X | Windows |
+| Behringer UCA222                                          | 2                       | 2 RCA, 1 1/8" headphone                                      | 2                         | 2 RCA                                                                        | 1 phono                                     | 16           | 32, 44.1, 48       | yes            | yes      | yes     |
+| Electrix Ebox44 \[18\]                                    | 4                       | 4 RCA, 1/4" headphone                                        | 5                         | 4 RCA, 1/4" mic                                                              | 2 phono, but 1 switch controls both; 1 mic? | 16           | 44.1, 48           | yes            | yes      | yes     |
+| ESI Maya44 USB                                            | 4                       | 4 RCA, 1/8" headphone, 1 optical SPDIF                       | 4                         | 4 RCA                                                                        | none                                        | 16, 24, 32   | 44.1, 48           | partial \[19\] | yes      | yes     |
+| ESI Gigaport HD                                           | 8                       | 8 RCA                                                        | 1                         | 1/4" mic                                                                     | mic?                                        | 16, 24       | 44.1, 48, 96       | yes            | yes      | yes     |
+| Focusrite Scarlett Solo                                   | 2                       | 2 RCA, 1/4" headphone                                        | 2                         | 1 XLR, 1 1/4" balanced                                                       | 1 mic, 1 instrument                         | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Focusrite Scarlett 2i2                                    | 2                       | 2 1/4" balanced                                              | 2                         | 2 XLR+1/4" balanced combo jacks                                              | 2 mic, 2 instrument                         | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Focusrite Scarlett 2i4                                    | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI       | 2                         | 2 XLR+1/4" balanced combo jacks, 1 5-pin MIDI                                | 2 mic, 2 instrument                         | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Focusrite Scarlett 6i6                                    | 6 (4 analog, 2 digital) | 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF   | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo jacks, 2 1/4" balanced, 1 5-pin MIDI, 1 RCA SPDIF  | 2 mic, 2 instrument                         | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Focusrite Scarlett 18i8                                   | 8 (6 analog, 2 digital) | 2 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 18 (8 analog, 10 digital) | 4 XLR+1/4" balanced combo jacks, 4 1/4" blanced, 1 RCA SPDIF, 1 optical ADAT | 4 mic, 2 instrument                         | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Native Instruments [Audio Kontrol 1](Audio%20Kontrol%201) | 4                       | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI              | 2                         | 1 XLR+1/4" balanced, 1 1/4" balanced, 1 5-pin MIDI                           | ?                                           | 192 kHz      | yes                | yes            | yes      |         |
+| Native Instruments Komplete Audio 6                       | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 SPDIF                  | 16, 24                                      | 44.1, 48, 96 | ?                  | yes            | yes      |         |
+| Native Instruments Audio 2 DJ \[20\]                      | 4                       | 2 1/4" stereo                                                | 0                         | none                                                                         | none                                        | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                         | none                                        | 24           | 44.1, 48, 88.2, 96 | ? \[21\]       | yes      | yes     |
+| Native Instruments Traktor Audio 4 DJ \[22\]              | 4                       | 4 RCA, 1 1/4" headphone                                      | 4                         | 4 RCA                                                                        | 2 phono                                     | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Native Instruments Traktor Audio 8 DJ \[23\]              | 8                       | 8 RCA, 1 1/4" headphone, 1 5-pin MIDI                        | 8                         | 8 RCA, 1 XLR, 1 5-pin MIDI                                                   | 2 phono, 1 mic                              | 24           | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Native Instruments Traktor Scratch A6                     | 6                       | 6 RCA, 1 1/4" headphone                                      | 6                         | 6 RCA                                                                        | 2 phono                                     | 16, 24       | 44.1, 48, 88.2, 96 | yes            | yes      | yes     |
+| Native Instruments Traktor Scratch A10                    | 10                      | 10 RCA, 1 1/4" headphone                                     | 10                        | 10 RCA, 1 1/4" mic                                                           | 1 mic?                                      | ?            | yes                | yes            |          |         |
+| Numark DJ iO                                              | 4                       | 4 RCA, 1 1/4" headphone                                      | 1                         | 1 1/4" mic                                                                   | mic?                                        | 24           | 44.1, 88.2         | no             | yes      | yes     |
+| Rane SL1 \[24\]                                           | 4                       | 4 RCA                                                        | 4                         | 4 RCA, 1 1/4" mic                                                            | 2 phono, 1 mic?                             | 16           | 48                 | partial        | yes      | yes     |
+| Rane SL2                                                  | 4                       | 4 RCA                                                        | 4                         | 4 RCA                                                                        | 2 phono                                     | 24           | 44.1, 48           | no             | yes      | yes     |
+| Rane SL3                                                  | 6                       | 6 RCA                                                        | 6                         | 6 RCA                                                                        | 3 phono                                     | 24           | 44.1, 48           | no             | yes      | yes     |
+| Rane SL4                                                  | 8                       | 8 RCA                                                        | 8                         | 8 RCA                                                                        | 4 phono                                     | 24           | 48, 96             | no             | yes      | yes     |
+| Reloop Play                                               | 4                       | 4 RCA, 1 1/4" headphone                                      | 0                         | none                                                                         | none                                        | 24           | 96                 | yes            | yes      | yes     |
 
 1.  Discontinued product
 
@@ -347,3 +279,17 @@ of Mixxx users do.
 16. Discontinued product
 
 17. Discontinued product
+
+18. Discontinued product
+
+19. What exactly does this mean?
+
+20. Discontinued product
+
+21. This device is USB audio class compliant and marketed for iOS
+
+22. Discontinued product
+
+23. Discontinued product
+
+24. Discontinued product

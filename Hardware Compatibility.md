@@ -21,6 +21,9 @@ vinyl DJs, such as the Novation Dicer and Akai Pro AMX. These are all
 just guidelines; research your options and decide what you think will
 work best for the way you want to DJ.
 
+Many discontinued devices are listed on this page. They may or may not
+still be available used online.
+
 Mixxx works with any sound card that your operating system has a driver
 to use. Standards compliant USB sound cards do not need any special
 drivers on Linux or Mac OS X, but they do on Windows. Most USB sound

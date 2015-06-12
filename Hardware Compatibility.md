@@ -8,6 +8,9 @@ mean it is impossible, it only means that no one has made it work with
 Mixxx yet. Anyone, including you, who has the hardware is welcome to
 make Mixxx work with it.
 
+See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
+diagrams and descriptions of various setups.
+
 Mixxx works with any sound card that your operating system has a driver
 to use.
 

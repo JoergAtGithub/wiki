@@ -2,10 +2,12 @@
 
 ## What hardware do you need to DJ with Mixxx?
 
-It is recommended to use one sound card with at least 4 output channels.
-When mixing in software on your CPU, use 2 channels for the master
-output and 2 channels for your headphones. When mixing on an analog
-hardware mixer, each deck uses 2 channels. See [the
+It is recommended to use one sound card with at least 4 (mono) output
+channels. Most computers only come with a sound card built into the
+motherboard with 2 outputs. These onboard sound cards tend to not be
+very good quality. When mixing in software on your CPU, use 2 channels
+for the master output and 2 channels for your headphones. When mixing on
+an analog hardware mixer, each deck uses 2 channels. See [the
 manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
 and descriptions of setups with different kinds of hardware.
 

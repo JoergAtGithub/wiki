@@ -207,6 +207,41 @@ program would need to translate the Linux input events to HID or MIDI.
 Mixxx can use any sound card that your OS has a driver to use. The table
 below lists some recommended USB soundcards for DJing.
 
+It is recommended to use one sound card with at least 4 output channels.
+When mixing in software on your CPU, use 2 channels for the master
+output and 2 channels for your headphones. When mixing on an analog
+hardware mixer, each deck uses 2 channels. See [the
+manual](http://mixxx.org/manual/latest/chapters/setup.html) for diagrams
+and descriptions of various setups.
+
+It is better to use a sound card with balanced outputs, especially if
+you might run long cables directly into an amplifier or active speakers
+without going through a DJ mixer. However, most venues have DJs plug
+into DJ mixers, which typically only have RCA inputs (RCA cables cannot
+be balanced). Most live sound mixers have balanced 1/4" inputs.
+
+If you want to use [vinyl control](vinyl%20control), it is best to get
+turntables or a sound card with phono preamplifiers. Mixxx can amplify
+phono level signals in software, but it is better to do it in hardware.
+
+If you are interested in playing instruments over your DJing and/or
+recording your own music, get a sound card with instrument preamps (for
+electric guitars) and/or microphone preamps.
+
+Mixxx can use multiple sound cards at the same time. However, before
+Mixxx 1.12, this would result in crackling in the headphones. Every
+sound card has its own clock crystal and no two are precisely the same
+frequency even if the devices are the same model and from the same
+production run. Mixxx before 1.12 synchronized its audio generation to
+the clock crystal of whichever device is selected as the master output
+(deck 1 output if no master is selected) so that the crowd won't hear
+the artifacts. As a result, secondary devices either fall behind or run
+ahead of the primary one, causing them to play silence until Mixxx
+generates the next audio buffer exactly in time for the primary device.
+Playing bits of audio interspersed with bits of silence sounds like
+crackling. Mixxx 1.12 can compensate for this, but it is still better to
+use one sound card with 4 outputs.
+
 For Linux users, the [ALSA sound card
 matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
 Linux-compatible soundcards. Also see [Soundcard resources for Linux

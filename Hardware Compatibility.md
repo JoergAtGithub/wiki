@@ -55,11 +55,14 @@ to use. Standards compliant USB sound cards do not need any special
 drivers on Linux or Mac OS X, but they do on Windows. Most USB sound
 cards are not standards compliant.
 
-Standards compliant MIDI controllers do not need any special drivers on
-Linux, Mac OS X, or Windows. Standards compliant HID controllers do not
-need any special drivers on Linux and Mac OS X, but do require drivers
-on Windows. Controllers that have integrated sound cards require a
-driver on every OS for the sound card.
+Mixxx can work with any controller that sends MIDI or HID signals to
+your computer; it just needs a controller mapping to tell Mixxx what to
+do with the signals. Standards compliant MIDI controllers do not need
+any special drivers on Linux, Mac OS X, or Windows. Standards compliant
+HID controllers do not need any special drivers on Linux and Mac OS X,
+but do require drivers on Windows. Controllers that have integrated
+sound cards require a driver on every OS for the sound card, unless it
+is USB audio class compliant.
 
 ## Controller mappings
 

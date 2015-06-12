@@ -38,7 +38,7 @@ diagrams and descriptions of setups with different kinds of hardware.
 Many discontinued devices are listed on this page. They may or may not
 still be available used online.
 
-## Compatibility with Mixxx
+## Hardware compatibility with Mixxx
 
 Because Mixxx is [free
 software](http://www.gnu.org/philosophy/free-sw.html) — free as in

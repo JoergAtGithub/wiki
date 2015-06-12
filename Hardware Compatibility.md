@@ -235,6 +235,10 @@ program would need to translate the Linux input events to HID or MIDI.
 Mixxx can use any sound card that your OS has a driver to use. The table
 below lists some recommended USB soundcards for DJing.
 
+If you are unfamiliar with professional audio equipment, read Digital DJ
+Tips' [Essential Guide to Audio Cables for
+DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/).
+
 It is better to use a sound card with balanced outputs, especially if
 you might run long cables directly into an amplifier or active speakers
 without going through a DJ mixer. However, most venues have DJs plug

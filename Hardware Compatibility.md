@@ -64,7 +64,7 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | no                    | MIDI            | 1.7                           |
 | [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued | yes                   | MIDI            | 1.9 \[1\]                     |
 | [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued | no                    | MIDI            | 1.9.1 \[2\]                   |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | yes                   | MIDI            | 1.10.1 \[3\]                  |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | yes                   | MIDI            | 1.10.1                        |
 
 ### Community Supported Mappings
 
@@ -80,32 +80,32 @@ with your OS, please [report the bug](reporting%20bugs).
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100         | yes                   | MIDI            | 1.6                           |
 | [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | discontinued | no                    | MIDI            | 1.8                           |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700         | yes                   | MIDI            | 1.12                          |
-| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued | no                    | MIDI            | 1.6 \[4\]                     |
+| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued | no                    | MIDI            | 1.6                           |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued | no                    | MIDI            | 1.6                           |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.11 \[5\]                    |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontineud | yes                   | HID?            | 1.7 \[6\]                     |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.8 \[7\]                     |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontineud | yes                   | HID?            | 1.7 \[3\]                     |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued | yes                   | HID             | 1.8 \[4\]                     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued | no                    | HID             | 1.11                          |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued | no                    | MIDI            | 1.8                           |
 | [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued | yes                   | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued | yes                   | ?               | 1.7 \[8\]\[9\]                |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued | yes                   | ?               | 1.7\[5\]                      |
 | [Novation Dicer](Novation%20Dicer)                                                                 | $70          | no                    | MIDI            | 1.10                          |
 | [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued | no                    | MIDI            | 1.6                           |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued | yes                   | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued | yes                   | ?               | 1.8 \[10\]                    |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued | yes                   | ?               | 1.8 \[6\]                     |
 | [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued | no                    | MIDI            | 1.8.2                         |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued | yes                   | MIDI            | 1.10                          |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | $250         | yes                   | MIDI            | 1.11                          |
-| [Numark NS7](Numark%20NS7)                                                                         | discontinued | yes                   | MIDI            | 1.9 \[11\]                    |
+| [Numark NS7](Numark%20NS7)                                                                         | discontinued | yes                   | MIDI            | 1.9 \[7\]                     |
 | [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60          | no                    | MIDI            | 1.10                          |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900         | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
 | [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000        | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued | yes                   | MIDI            | 1.6 \[12\]                    |
-| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued | yes                   | MIDI            | 1.11 \[13\]                   |
-| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | yes                   | MIDI            | 1.9 \[14\]                    |
-| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | yes                   | MIDI            | 1.9 \[15\]                    |
+| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued | yes                   | MIDI            | 1.6                           |
+| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued | yes                   | MIDI            | 1.11                          |
+| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | yes                   | MIDI            | 1.9                           |
+| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | yes                   | MIDI            | 1.9                           |
 
 Please keep the list in alphabetical order and do not modify this list
 unless a MIDI mapping preset for a new controller has been added to
@@ -125,7 +125,7 @@ see if anyone has posted a mapping.
 | ----------------------------------------- | ------------ | --------------------- | ------------------------ |
 | Device                                    | Price (USD)  | Integrated sound card | Signal protocol          |
 | Akai Pro AMX                              | $250         | yes                   | MIDI                     |
-| Allen & Heath Xone K1 \[16\]              | $250         | no                    | MIDI                     |
+| Allen & Heath Xone K1 \[8\]               | $250         | no                    | MIDI                     |
 | Gemini Slate                              | $200         | yes                   | MIDI                     |
 | Gemini Slate 4                            | $250         | yes                   | MIDI                     |
 | Hercules DJ Control Jogvision             | $300         | yes                   | MIDI/HID (either? both?) |
@@ -222,9 +222,9 @@ project](http://www.ffado.org).
 | Focusrite Scarlett 2i4                                    | $200        | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI       | 2                         | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                | 2 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Focusrite Scarlett 6i6                                    | $250        | 6 (4 analog, 2 digital) | 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF   | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo, 2 1/4" balanced, 1 5-pin MIDI, 1 RCA SPDIF  | 2 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Focusrite Scarlett 18i8                                   | $350        | 8 (6 analog, 2 digital) | 2 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 18 (8 analog, 10 digital) | 4 XLR+1/4" balanced combo, 4 1/4" blanced, 1 RCA SPDIF, 1 optical ADAT | 4 mic, 2 instrument | 24           | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
-| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                   | none                | 16           | 48                 | likely \[17\] | yes      | yes     |
+| Griffin DJ Connect                                        | $90         | 4                       | 2 RCA, 1 1/8" headphone                                      | 0                         | none                                                                   | none                | 16           | 48                 | likely \[9\]  | yes      | yes     |
 | Native Instruments Komplete Audio 6                       | $230        | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 RCA SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 SPDIF            | 16, 24              | 44.1, 48, 96 | ?                  | yes           | yes      |         |
-| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                   | none                | 24           | 44.1, 48, 88.2, 96 | likely \[18\] | yes      | yes     |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202) | $100        | 4                       | 2 1/8" stereo                                                | 0                         | none                                                                   | none                | 24           | 44.1, 48, 88.2, 96 | likely \[10\] | yes      | yes     |
 | Native Instruments Traktor Scratch A6                     | $300        | 6                       | 6 RCA, 1 1/4" headphone                                      | 6                         | 6 RCA                                                                  | 2 phono             | 16, 24       | 44.1, 48, 88.2, 96 | yes           | yes      | yes     |
 | Native Instruments Traktor Scratch A10                    | $500        | 10                      | 10 RCA, 1 1/4" headphone                                     | 10                        | 10 RCA, 1 1/4" mic                                                     | 4 phono, 1 mic?     | 16, 24       | 44.1, 48, 88.2, 96 | ?             | yes      | yes     |
 | Numark DJ iO                                              | $50         | 4                       | 4 RCA, 1 1/4" headphone                                      | 1                         | 1 1/4" mic                                                             | mic?                | 24           | 44.1, 88.2         | no            | yes      | yes     |
@@ -237,44 +237,28 @@ project](http://www.ffado.org).
 
 2.  On Linux, requires kernel 3.8 or later
 
-3.  Discontinued product
+3.  Mac OS X and Windows only with MIDI driver
 
-4.  Discontinued product
-
-5.  Discontinued product
-
-6.  Mac OS X and Windows only with MIDI driver
-
-7.  with MIDI driver. For Linux support, see [this forum
+4.  with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-8.  Discontinued product
-
-9.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+5.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
-10. Mac OS X and Windows only with MIDI driver
+6.  Mac OS X and Windows only with MIDI driver
 
-11. Does this work with Linux?
+7.  Does this work with Linux?
 
-12. Discontinued product
+8.  Does the Xone K2 mapping work for this?
 
-13. Discontinued product
-
-14. Discontinued product
-
-15. Discontinued product
-
-16. Does the Xone K2 mapping work for this?
-
-17. This device is USB audio class compliant and marketed for iOS, so it
+9.  This device is USB audio class compliant and marketed for iOS, so it
     should work with Linux without any special driver. However, there is
     no information about anyone trying this device with Linux online.
 
-18. This device is USB audio class compliant and marketed for iOS, so it
+10. This device is USB audio class compliant and marketed for iOS, so it
     should work with Linux without any special driver. However, there is
     no information about anyone trying this device with Linux online.

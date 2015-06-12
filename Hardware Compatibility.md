@@ -8,10 +8,11 @@ built into the motherboard with 2 outputs. These onboard sound cards are
 generally not high quality and may pick up interference from other
 devices in the computer such as the power supply or hard drive. When
 mixing in software on your CPU, use 2 channels for the master output and
-2 channels for cueing in your headphones. When mixing on an analog
-hardware mixer, which is traditional (but not necessary) for [vinyl
-control](vinyl%20control), each deck uses 2 channels and the headphones
-are plugged into the analog hardware mixer.
+2 channels for your headphones. This allows you to hear and prepare the
+track you want to play next without your audience hearing it. When
+mixing on an analog hardware mixer, which is traditional (but not
+necessary) for [vinyl control](vinyl%20control), each deck uses 2
+channels and the headphones are plugged into the analog hardware mixer.
 
 Most digital DJs prefer to use a DJ controller rather than just their
 keyboard and mouse for more intuitive control of their software. Most DJ

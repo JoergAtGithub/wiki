@@ -1,12 +1,6 @@
-# Hardware Compatibility
+# Mixxx DJ Hardware Guide
 
-Because Mixxx is [free
-software](http://www.gnu.org/philosophy/free-sw.html) — free as in
-freedom, not just price — we strive to make it work with as much
-hardware as we can. If hardware does not work with Mixxx, that does not
-mean it is impossible, it only means that no one has made it work with
-Mixxx yet. Anyone, including you, who has the hardware is welcome to
-make Mixxx work with it.
+## What hardware do you need to DJ with Mixxx?
 
 It is recommended to use one sound card with at least 4 output channels.
 When mixing in software on your CPU, use 2 channels for the master
@@ -28,6 +22,16 @@ work best for the way you want to DJ.
 
 Many discontinued devices are listed on this page. They may or may not
 still be available used online.
+
+## Compatibility with Mixxx
+
+Because Mixxx is [free
+software](http://www.gnu.org/philosophy/free-sw.html) — free as in
+freedom, not just price — we strive to make it work with as much
+hardware as we can. If hardware does not work with Mixxx, that does not
+mean it is impossible, it only means that no one has made it work with
+Mixxx yet. Anyone, including you, who has the hardware is welcome to
+make Mixxx work with it.
 
 Mixxx works with any sound card that your operating system has a driver
 to use. Standards compliant USB sound cards do not need any special

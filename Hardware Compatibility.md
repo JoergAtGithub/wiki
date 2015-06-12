@@ -88,7 +88,10 @@ HID devices). For jog wheels and other advanced functions, you will need
 to program a JavaScript mapping. See [these wiki
 pages](start#controller%20midi%20mapping%20documentation) for
 documentation on making and editing controller mappings. Feel free to
-ask for help mapping your controller on the forums.
+ask for help mapping your controller on the forums. If you ask for help,
+please consider that most people reading your post will not have your
+controller, so be specific about what kind of controller you have and
+what you want to map it to do.
 
 If you notice any bugs in the mappings, or wish the mapping would work
 differently, please [report it on our bug tracker](reporting%20bugs).

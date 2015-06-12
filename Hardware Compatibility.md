@@ -3,8 +3,11 @@
 ## What hardware is needed to DJ with Mixxx?
 
 It is recommended to use one sound card with at least 4 mono output
-channels (2 stereo channels). Most computers only come with a sound card
-built into the motherboard with 2 outputs. These onboard sound cards are
+channels (2 stereo channels). Most computers come with a sound card
+built into the motherboard with only 1 stereo 1/8" headphone output (2
+mono channels). While it is possible to get a cheap sound card with only
+2 more outputs, it is not recommended (see [explanation
+below](#Using-multiple-sound-cards)). These onboard sound cards are
 generally not high quality and may pick up interference from other
 devices in the computer such as the power supply or hard drive. When
 mixing in software on your CPU, use 2 channels for the main output and 2
@@ -240,10 +243,28 @@ program would need to translate the Linux input events to HID or MIDI.
 
 ## Sound cards
 
+### Compatibility
+
 Mixxx can use any sound card that your OS has a driver to use. The
 tables below list some recommended USB soundcards for DJing. All listed
 sound cards work with Mac OS X and Windows. Most work with Linux, but
 not all; check the table for details.
+
+The [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
+Linux-compatible soundcards. Linux users may also benefit from [these
+soundcard resources for Linux
+DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
+author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
+1394 interface, the only way to use it with Linux is with JACK (not
+ALSA). The FFADO project has [a list of Firewire interfaces compatible
+with Linux](http://ffado.org/?q=devicesupport/list).
+
+### Sound card types for different uses
+
+As explained [at the top of the
+page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
+use a sound card with at least 4 mono output channels with Mixxx.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
@@ -275,6 +296,16 @@ would also work but have been discontinued and may be difficult to find.
 The Native Instruments Traktor Scratch A10 is a good option for using 4
 vinyl decks.
 
+Sound cards often have multiple connectors for a single channel,
+resulting in more connectors than channels. So, not every connector can
+send or receive an independent signal. Many sound cards made for DJing
+have 4 output channels with 4 mono output connectors and 1 stereo
+headphone connector. This does not mean that the sound card can send out
+6 different signals at the same time; rather, the signal on 2 of the
+mono outputs and the stereo headphone output would be the same.
+
+### Using multiple sound cards
+
 Mixxx can use multiple sound cards at the same time. However, before
 Mixxx 1.12, this would result in crackling in the headphones. Every
 sound card has its own clock crystal and no two are precisely the same
@@ -288,22 +319,6 @@ generates the next audio buffer exactly in time for the primary device.
 Playing bits of audio interspersed with bits of silence sounds like
 crackling. Mixxx 1.12 can compensate for this, but it is still better to
 use one sound card with 4 outputs.
-
-For Linux users, the [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
-Linux-compatible soundcards. Also see [Soundcard resources for Linux
-DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
-author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
-1394 interface, you'll want to look at [the FFADO
-project](http://www.ffado.org).
-
-Sound cards often have multiple connectors for a single channel,
-resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. Many sound cards made for DJing
-have 4 output channels with 4 mono output connectors and 1 stereo
-headphone connector. This does not mean that the sound card can send out
-6 different signals at the same time; rather, the signal on 2 of the
-mono outputs and the stereo headphone output would be the same.
 
 ### Standalone USB sound cards
 

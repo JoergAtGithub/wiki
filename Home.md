@@ -21,7 +21,6 @@ plans.
     even more awesome? You don't need to be a programmer to help us.
   - [Tutorials](Tutorials)
   - [Add-ons](Add-ons)
-  - [Vinyl (and audio CDJ) control](Vinyl%20Control)
   - [Internet broadcasting](Internet%20broadcasting)
   - [System requirements](System%20requirements)
   - [Command line options](Command%20line%20options)

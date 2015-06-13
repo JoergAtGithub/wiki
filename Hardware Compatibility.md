@@ -176,7 +176,8 @@ list. If a controller you own or are interested in getting is not listed
 here, [search the forum](http://mixxx.org/forums/search.php?fid[]=7) to
 see if anyone has posted a mapping. If you are willing to put in the
 effort to map one of these controllers, please get the controller, map
-it, and publish the mapping so we can include it in Mixxx.
+it, and publish the mapping so we can include it in Mixxx. MIDI
+controllers are easier to map than HID controllers.
 
 |                                           |              |                                                         |                       |                          |
 | ----------------------------------------- | ------------ | ------------------------------------------------------- | --------------------- | ------------------------ |

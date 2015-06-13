@@ -32,6 +32,7 @@ plans.
 
 ## Community Resources
 
+  - [Forums](http://mixxx.org/forums)
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list
   - [Mixxx website](http://www.mixxx.org)

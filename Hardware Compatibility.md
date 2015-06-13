@@ -371,7 +371,7 @@ use one sound card with 4 outputs.
 | Denon MC6000 Mk2             | $700         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone            | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic | 4 phono, 1 mic | 24         | 44.1               | ?     |
 | Behringer BCD2000            | discontinued | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR                 | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | Denon DN-HS550               | discontinued | ?            | ?                                                          | ?           | ?                            | 16             | 44.1       | ?                  |       |
-| Mixvibes U-Mix Control Pro 2 | discontinued | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 5           | 4 RCA, 1 1/4" mic            | 2 phono, 1 mic | ?          |                    |       |
+| Mixvibes U-Mix Control Pro 2 | discontinued | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 5           | 4 RCA, 1 1/4" mic            | 2 phono, 1 mic | ?          | ?                  | ?     |
 
 #### Controllers with no Mixxx mappings yet
 

@@ -110,7 +110,7 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 |                                                                  |              |                            |                       |                 |                               |
 | ---------------------------------------------------------------- | ------------ | -------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                           | Price (USD)  | Description                | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
-| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | various functions          | no                    | MIDI            | 1.11                          |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | 2 deck all-in-one          | no                    | MIDI            | 1.11                          |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300         | 4 deck mixer + pads        | yes                   | MIDI            | 1.11                          |
 | [American Audio VMS4](American%20Audio%20VMS4)                   | $400         | 4 deck all-in-one          | yes                   | MIDI            | 1.9                           |
 | [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | $400         | 4 deck all-in-one          | yes                   | MIDI            | 1.11                          |

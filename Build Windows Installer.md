@@ -63,17 +63,3 @@ a 64-bit build, copy the x64/AMD64 installer.
     scons makerelease msvcdebug=0 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
 
 1.  Execute it
-
-## Improvements
-
-If someone feels like making this automatic, they will need to have the
-NSI script and/or SConscript:
-
-1.  Check the Mixxx.exe.manifest file and note which versions of which
-    DLLs are needed
-2.  Try to find the needed files in the \\VC\\redist\\ tree for the
-    machine type
-3.  Failing that, include the applicable .msm file from the
-    redistributable packages and install it on the end-users machine.
-
-Now, doesn't this make you long for a MinGW build? :)

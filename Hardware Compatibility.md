@@ -180,6 +180,7 @@ it, and publish the mapping so we can include it in Mixxx.
 |                                           |              |                                                         |                       |                          |
 | ----------------------------------------- | ------------ | ------------------------------------------------------- | --------------------- | ------------------------ |
 | Device                                    | Price (USD)  | Description                                             | Integrated sound card | Signal protocol          |
+| Behringer CMD MM-1                        | $100         | 4 deck mixer                                            | no                    | MIDI                     |
 | Numark Mixtrack Edge                      | $100         | basic 2 deck all-in-one                                 | no                    | MIDI                     |
 | Numark Orbit                              | $100         | motion sensor + pads                                    | no                    | MIDI                     |
 | Numark Mixtrack 2 \[8\]                   | $150         | 2 deck all-in-one                                       | no                    | MIDI                     |

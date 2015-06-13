@@ -62,4 +62,7 @@ a 64-bit build, copy the x64/AMD64 installer.
     
     scons makerelease msvcdebug=0 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
 
+Note: If you want to build 64 bits package, use set ARCHITECTURE=amd64
+and force32=0
+
   - Execute it

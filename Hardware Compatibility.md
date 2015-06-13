@@ -15,9 +15,10 @@ channels for the main output and 2 channels for your headphones. This
 allows you to hear and prepare the track you want to play next without
 your audience hearing it until you are ready to mix it into the main
 output. When mixing on an analog hardware mixer, which is traditional
-(but not necessary) with [vinyl control](vinyl%20control), each deck
-uses 2 channels and the headphones are plugged into the analog hardware
-mixer.
+(but not necessary) with [vinyl
+control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
+each deck uses 2 channels and the headphones are plugged into the analog
+hardware mixer.
 
 Most digital DJs prefer to use a DJ controller rather than just their
 keyboard and mouse for more intuitive control of their software. Most DJ
@@ -30,13 +31,15 @@ control mixing, seeking, looping, cues, and effects and has an
 integrated sound card.** Users who also want to produce music should
 consider saving money and get a controller without a sound card and
 getting a separate, high quality sound card suitable for recording.
-Users who want to use [vinyl control](vinyl%20control) will need a sound
-card with 2 inputs per deck (so 4 inputs for a traditional 2 deck setup)
-and a phono preamp for each deck, either in the turntable, in the sound
-card, or as a stand alone device. A few small controllers may be of
-particular interest to vinyl DJs, such as the Novation Dicer and Akai
-Pro AMX. These are all just guidelines; research your options and decide
-what you think will work best for the way you want to DJ.
+Users who want to use [vinyl
+control](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
+will need a sound card with 2 inputs per deck (so 4 inputs for a
+traditional 2 deck setup) and a phono preamp for each deck, either in
+the turntable, in the sound card, or as a stand alone device. A few
+small controllers may be of particular interest to vinyl DJs, such as
+the Novation Dicer and Akai Pro AMX. These are all just guidelines;
+research your options and decide what you think will work best for the
+way you want to DJ.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
@@ -265,18 +268,19 @@ recording your own music, get a sound card with instrument preamps (for
 electric guitars) and/or microphone preamps. Also consider getting an
 interface that supports 24 bit sample depths and a 96 kHz sample rate.
 
-If you want to use [vinyl control](vinyl%20control), it is best to have
-phono preamplifiers (one for each deck) somewhere between your turntable
-and sound card to boost the turntable signal to line level. Mixxx can
-amplify phono level signals in software, but it is better to do it in
-hardware. The phono preamp can be in the turntable, in the sound card,
-or a stand alone device. For a traditional 2 deck setup, the Akai Pro
-AMX and Native Instruments Traktor Scratch A6 are good options. Some
-cheaper sound cards, namely the Electrix Ebox44 and Mixvibes U-Mix44,
-would also work but have been discontinued and may be difficult to find.
-The Native Instruments Traktor Scratch A10 is a good option for using 4
-vinyl decks. Many higher-end all-in-one controllers include phono
-preamps too.
+If you want to use [vinyl
+control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
+is best to have phono preamplifiers (one for each deck) somewhere
+between your turntable and sound card to boost the turntable signal to
+line level. Mixxx can amplify phono level signals in software, but it is
+better to do it in hardware. The phono preamp can be in the turntable,
+in the sound card, or a stand alone device. For a traditional 2 deck
+setup, the Akai Pro AMX and Native Instruments Traktor Scratch A6 are
+good options. Some cheaper sound cards, namely the Electrix Ebox44 and
+Mixvibes U-Mix44, would also work but have been discontinued and may be
+difficult to find. The Native Instruments Traktor Scratch A10 is a good
+option for using 4 vinyl decks. Many higher-end all-in-one controllers
+include phono preamps too.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

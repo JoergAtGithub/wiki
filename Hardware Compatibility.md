@@ -277,7 +277,8 @@ AMX and Native Instruments Traktor Scratch A6 are good options. Some
 cheaper sound cards, namely the Electrix Ebox44 and Mixvibes U-Mix44,
 would also work but have been discontinued and may be difficult to find.
 The Native Instruments Traktor Scratch A10 is a good option for using 4
-vinyl decks.
+vinyl decks. Many higher-end all-in-one controllers include phono
+preamps too.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

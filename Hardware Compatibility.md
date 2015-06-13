@@ -190,6 +190,7 @@ it, and publish the mapping so we can include it in Mixxx.
 | Gemini Slate                              | $200         | 2 deck all-in-one                                       | yes                   | MIDI                     |
 | Allen & Heath Xone K1 \[9\]               | $250         | 4 deck mixer + pads                                     | no                    | MIDI                     |
 | Numark Mixtrack 3 \[10\]                  | $200         | 2 deck all-in-one                                       | no                    | MIDI                     |
+| Akai Pro AFX                              | $200         | 2 deck effects + pads + touch strip                     | no                    | MIDI                     |
 | Akai Pro AMX                              | $250         | 2 deck mixer + vinyl hookup                             | yes                   | MIDI                     |
 | Gemini Slate 4                            | $250         | 4 deck all-in-one                                       | yes                   | MIDI                     |
 | Pioneer DDJ-SB                            | $250         | 2 deck all-in-one                                       | yes                   | MIDI                     |
@@ -201,7 +202,7 @@ it, and publish the mapping so we can include it in Mixxx.
 | Reloop Beatmix 4                          | $400         | 4 deck all-in-one                                       | yes                   | MIDI                     |
 | Native Instruments Traktor Kontrol S2 Mk1 | discontinued | 2 deck all-in-one                                       | yes                   | NHL                      |
 | Native Instruments Traktor Kontrol S2 Mk2 | $400         | 2 deck all-in-one                                       | yes                   | HID                      |
-| Native Instruments Traktor Kontrol D2     | $500         | remixing                                                | no                    | ?                        |
+| Native Instruments Traktor Kontrol D2     | $500         | remixing pads, faders, and touch strip                  | no                    | ?                        |
 | Reloop Terminal Mix 2                     | $500         | 2 deck all-in-one                                       | yes                   | MIDI                     |
 | Pioneer DDJ-SR                            | $600         | 2 deck all-in-one                                       | yes                   | MIDI                     |
 | Reloop Terminal Mix 4                     | $600         | 4 deck all-in-one                                       | yes                   | MIDI                     |

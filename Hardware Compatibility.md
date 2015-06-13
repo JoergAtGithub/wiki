@@ -51,13 +51,13 @@ still be available used online.
 
 Because Mixxx is [free
 software](http://www.gnu.org/philosophy/free-sw.html) — free as in
-freedom, not just price — we strive to make it work with as much
-hardware as we can. Mixxx is collaboratively developed by a community of
-volunteers and we can only make mappings for controllers that we have.
-If hardware does not work with Mixxx, that does not mean it is
-impossible, it only means that no one has made it work with Mixxx yet.
-Anyone, including you, who has the hardware is welcome to make Mixxx
-work with it.
+artistic freedom, not just price — we strive to make it work with as
+much hardware as we can. Mixxx is collaboratively developed by a
+community of volunteers and we can only make mappings for controllers
+that we have. If hardware does not work with Mixxx, that does not mean
+it is impossible, it only means that no one has made it work with Mixxx
+yet. Anyone, including you, who has the hardware is welcome to make
+Mixxx work with it.
 
 Mixxx works with any sound card that your operating system has a driver
 to use. Standards compliant USB sound cards do not need any special

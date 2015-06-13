@@ -44,8 +44,11 @@ way you want to DJ.
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
 
-Many discontinued devices are listed on this page. They may or may not
-still be available used online.
+Prices listed on this page are the prevailing prices for unused
+controllers found from [searching Google
+Shopping](https://www.google.com/?tbm=shop). You may be able to find
+hardware available for sale cheaper. Many discontinued devices are
+listed on this page. They may or may not still be available used online.
 
 ## Hardware compatibility with Mixxx
 
@@ -172,59 +175,65 @@ not work with your OS, please [report the bug](reporting%20bugs).
 
 This is by no means an exhaustive list; these are just DJ controllers
 from popular brands. There are too many DJ controllers out there to
-list. If a controller you own or are interested in getting is not listed
-here, [search the forum](http://mixxx.org/forums/search.php?fid[]=7) to
-see if anyone has posted a mapping. If you are willing to put in the
-effort to map one of these controllers, please get the controller, map
-it, and publish the mapping so we can include it in Mixxx. MIDI
-controllers are easier to map than HID controllers.
+list. Some of these controllers may have mappings (of unverified quality
+and may be incomplete) posted on [the
+forums](http://www.mixxx.org/forums/viewforum.php?f=7) that have not
+(yet) been included with Mixxx. If a controller you own or are
+interested in getting is not listed here, [search the
+forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
+posted a mapping. If you are willing to put in the effort to map one of
+these controllers, please get the controller, map it, and publish the
+mapping so we can include it in Mixxx. MIDI controllers are easier to
+map than HID controllers. Prices listed are prevailing prices found from
 
-|                                           |              |                                                         |                       |                          |
-| ----------------------------------------- | ------------ | ------------------------------------------------------- | --------------------- | ------------------------ |
-| Device                                    | Price (USD)  | Description                                             | Integrated sound card | Signal protocol          |
-| Behringer CMD MM-1                        | $100         | 4 deck mixer                                            | no                    | MIDI                     |
-| Numark Mixtrack Edge                      | $100         | basic 2 deck all-in-one                                 | no                    | MIDI                     |
-| Numark Mixtrack 2 \[8\]                   | $150         | 2 deck all-in-one                                       | no                    | MIDI                     |
-| Native Instruments Traktor Kontrol Z1     | $200         | basic 2 deck mixer                                      | yes                   | HID                      |
-| Native Instruments Traktor Kontrol F1     | $200         | remixing pads + faders                                  | no                    | HID                      |
-| Native Instruments Traktor Kontrol X1 Mk1 | $200         | effects                                                 | no                    | NHL                      |
-| Native Instruments Traktor Kontrol X1 Mk2 | $200         | effects + touch strip                                   | no                    | HID                      |
-| Gemini Slate                              | $200         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Allen & Heath Xone K1 \[9\]               | $250         | 4 deck mixer + pads                                     | no                    | MIDI                     |
-| Numark Mixtrack 3 \[10\]                  | $200         | 2 deck all-in-one                                       | no                    | MIDI                     |
-| Akai Pro AFX                              | $200         | 2 deck effects + pads + touch strip                     | no                    | MIDI                     |
-| Akai Pro AMX                              | $250         | 2 deck mixer + vinyl hookup                             | yes                   | MIDI                     |
-| Gemini Slate 4                            | $250         | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Pioneer DDJ-SB                            | $250         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Hercules DJ Control Jogvision             | $300         | 2 deck all-in-one                                       | yes                   | MIDI/HID (either? both?) |
-| Korg KAOSS DJ                             | $300         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Numark Mixtrack Pro 3 \[11\]              | $300         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Reloop Beatmix 2                          | $300         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Pioneer DDJ WeGO 3                        | $300         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Reloop Beatmix 4                          | $400         | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Native Instruments Traktor Kontrol S2 Mk1 | discontinued | 2 deck all-in-one                                       | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol S2 Mk2 | $400         | 2 deck all-in-one                                       | yes                   | HID                      |
-| Native Instruments Traktor Kontrol D2     | $500         | remixing pads, faders, and touch strip                  | no                    | ?                        |
-| Reloop Terminal Mix 2                     | $500         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Pioneer DDJ-SR                            | $600         | 2 deck all-in-one                                       | yes                   | MIDI                     |
-| Reloop Terminal Mix 4                     | $600         | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Native Instruments Traktor Kontrol S4 Mk1 | discontinued | 4 deck all-in-one                                       | yes                   | NHL                      |
-| Native Instruments Traktor Kontrol S4 Mk2 | $700         | 4 deck all-in-one                                       | yes                   | HID                      |
-| Numark NV                                 | $700         | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Reloop Terminal Mix 8                     | $700         | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Native Instruments Traktor Kontrol Z2     | $800         | 2 decks + effects + standalone digital mixer            | yes                   | HID                      |
-| Native Instruments Traktor Kontrol S8     | $1200        | 4 deck all-in-one + remixing + standalone digital mixer | yes                   | NHL                      |
-| Pioneer DDJ-SX2                           | $1000        | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Numark NS7II                              | $1300        | 4 deck all-in-one with motorized wheels                 | yes                   | MIDI                     |
-| Numark NS7III                             | $1500        | 4 deck all-in-one with motorized wheels                 | yes                   | MIDI                     |
-| Rane MP25                                 | $1500        | 4 deck analog mixer                                     | yes                   | MIDI                     |
-| Rane MP26                                 | $1750        | 4 deck analog mixer                                     | yes                   | MIDI                     |
-| Rane Sixty-Two                            | $2000        | 2 deck analog mixer + loops, cues, and effects          | yes                   | MIDI                     |
-| Pioneer DDJ-SZ                            | $2000        | 4 deck all-in-one                                       | yes                   | MIDI                     |
-| Rane Sixty-Four                           | $2200        | 4 deck analog mixer + loops, cues, and effects          | yes                   | MIDI                     |
-| Rane Sixty-Eight                          | $2600        | 4 deck analog mixer + loops, cues, and effects          | yes                   | MIDI                     |
-| Rane MP2015                               | $2900        | 4 deck analog rotary mixer                              | yes                   | MIDI                     |
-| Rane TTM57                                | discontinued | 2 deck analog mixer + loops, cues, and effects          | yes                   | MIDI                     |
+|                                           |              |                                                         |                                 |                          |
+| ----------------------------------------- | ------------ | ------------------------------------------------------- | ------------------------------- | ------------------------ |
+| Device                                    | Price (USD)  | Description                                             | Integrated sound card           | Signal protocol          |
+| Electrix Tweaker                          | $100         | 2 deck all-in-one                                       | no, but 5-pin MIDI I/O included | MIDI                     |
+| Behringer CMD MM-1                        | $100         | 4 deck mixer                                            | no                              | MIDI                     |
+| Numark Mixtrack Edge                      | $100         | 2 deck all-in-one                                       | no                              | MIDI                     |
+| Hercules DJ Control Instinct              | $125         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Numark Mixtrack 2 \[8\]                   | $150         | 2 deck all-in-one                                       | no                              | MIDI                     |
+| Native Instruments Traktor Kontrol Z1     | $200         | basic 2 deck mixer                                      | yes                             | HID                      |
+| Native Instruments Traktor Kontrol F1     | $200         | remixing pads + faders                                  | no                              | HID                      |
+| Native Instruments Traktor Kontrol X1 Mk1 | $200         | effects                                                 | no                              | NHL                      |
+| Native Instruments Traktor Kontrol X1 Mk2 | $200         | effects + touch strip                                   | no                              | HID                      |
+| Gemini Slate                              | $200         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Allen & Heath Xone K1 \[9\]               | $250         | 4 deck mixer + pads                                     | no                              | MIDI                     |
+| Numark Mixtrack 3 \[10\]                  | $200         | 2 deck all-in-one                                       | no                              | MIDI                     |
+| Akai Pro AFX                              | $200         | 2 deck effects + pads + touch strip                     | no                              | MIDI                     |
+| Akai Pro AMX                              | $250         | 2 deck mixer + vinyl hookup                             | yes                             | MIDI                     |
+| Gemini Slate 4                            | $250         | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Pioneer DDJ-SB                            | $250         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Hercules DJ Control Jogvision             | $300         | 2 deck all-in-one                                       | yes                             | MIDI/HID (either? both?) |
+| Korg KAOSS DJ                             | $300         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Numark Mixtrack Pro 3 \[11\]              | $300         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Reloop Beatmix 2                          | $300         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Pioneer DDJ WeGO 3                        | $300         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Reloop Beatmix 4                          | $400         | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol S2 Mk1 | discontinued | 2 deck all-in-one                                       | yes                             | NHL                      |
+| Native Instruments Traktor Kontrol S2 Mk2 | $400         | 2 deck all-in-one                                       | yes                             | HID                      |
+| Native Instruments Traktor Kontrol D2     | $500         | remixing pads, faders, and touch strip                  | no                              | ?                        |
+| Reloop Terminal Mix 2                     | $500         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Pioneer DDJ-SR                            | $600         | 2 deck all-in-one                                       | yes                             | MIDI                     |
+| Reloop Terminal Mix 4                     | $600         | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol S4 Mk1 | discontinued | 4 deck all-in-one                                       | yes                             | NHL                      |
+| Native Instruments Traktor Kontrol S4 Mk2 | $700         | 4 deck all-in-one                                       | yes                             | HID                      |
+| Numark NV                                 | $700         | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Reloop Terminal Mix 8                     | $700         | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol Z2     | $800         | 2 decks + effects + standalone digital mixer            | yes                             | HID                      |
+| Native Instruments Traktor Kontrol S8     | $1200        | 4 deck all-in-one + remixing + standalone digital mixer | yes                             | NHL                      |
+| Pioneer DDJ-SX2                           | $1000        | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Numark NS7II                              | $1300        | 4 deck all-in-one with motorized wheels                 | yes                             | MIDI                     |
+| Numark NS7III                             | $1500        | 4 deck all-in-one with motorized wheels                 | yes                             | MIDI                     |
+| Rane MP25                                 | $1500        | 4 deck analog mixer                                     | yes                             | MIDI                     |
+| Rane MP26                                 | $1750        | 4 deck analog mixer                                     | yes                             | MIDI                     |
+| Rane Sixty-Two                            | $2000        | 2 deck analog mixer + loops, cues, and effects          | yes                             | MIDI                     |
+| Pioneer DDJ-SZ                            | $2000        | 4 deck all-in-one                                       | yes                             | MIDI                     |
+| Rane Sixty-Four                           | $2200        | 4 deck analog mixer + loops, cues, and effects          | yes                             | MIDI                     |
+| Rane Sixty-Eight                          | $2600        | 4 deck analog mixer + loops, cues, and effects          | yes                             | MIDI                     |
+| Rane MP2015                               | $2900        | 4 deck analog rotary mixer                              | yes                             | MIDI                     |
+| Rane TTM57                                | discontinued | 2 deck analog mixer + loops, cues, and effects          | yes                             | MIDI                     |
 
 ## Sound cards
 
@@ -349,6 +358,7 @@ use one sound card with 4 outputs.
 |                                              |              |              |                                                                   |             |                                            |                |            |                    |               |
 | -------------------------------------------- | ------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------ | -------------- | ---------- | ------------------ | ------------- |
 | Device                                       | Price (USD)  | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
+| Hercules DJ Control Instinct                 | $125         | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                       | none           | 16         | 44.1               | yes           |
 | Native Instruments Traktor Kontrol Z1        | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                       | none           | 24         | 96                 | yes           |
 | Gemini Slate                                 | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[15\]      |
 | Gemini Slate 4                               | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[16\]      |

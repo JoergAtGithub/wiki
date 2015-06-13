@@ -104,24 +104,24 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 
 ### Mixxx Certified Mappings
 
-|                                                                  |              |                       |                 |                               |
-| ---------------------------------------------------------------- | ------------ | --------------------- | --------------- | ----------------------------- |
-| Device                                                           | Price (USD)  | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
-| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | no                    | MIDI            | 1.11                          |
-| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300         | yes                   | MIDI            | 1.11                          |
-| [American Audio VMS4](American%20Audio%20VMS4)                   | $400         | yes                   | MIDI            | 1.9                           |
-| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | $400         | yes                   | MIDI            | 1.11                          |
-| [DJ TechTools MIDIFighter](http://midifighter.com)               | discontinued | no                    | MIDI            | 1.8                           |
-| [eks Otus](eks%20Otus)                                           | discontinued | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued | yes                   | HID             | 1.11                          |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | no                    | MIDI + HID      | 1.11                          |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | no                    | MIDI            | 1.6                           |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued | yes                   | MIDI            | 1.9 \[1\]                     |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued | no                    | MIDI            | 1.9.1 \[2\]                   |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | yes                   | MIDI            | 1.10.1                        |
+|                                                                  |              |                            |                       |                 |                               |
+| ---------------------------------------------------------------- | ------------ | -------------------------- | --------------------- | --------------- | ----------------------------- |
+| Device                                                           | Price (USD)  | Controls                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | various                    | no                    | MIDI            | 1.11                          |
+| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300         | 4 deck mixer               | yes                   | MIDI            | 1.11                          |
+| [American Audio VMS4](American%20Audio%20VMS4)                   | $400         | 4 deck all-in-one          | yes                   | MIDI            | 1.9                           |
+| [Reloop Terminal Mix4](Reloop%20Terminal%20Mix4)                 | $400         | 4 deck all-in-one          | yes                   | MIDI            | 1.11                          |
+| [DJ TechTools MIDIFighter](http://midifighter.com)               | discontinued | various                    | no                    | MIDI            | 1.8                           |
+| [eks Otus](eks%20Otus)                                           | discontinued | 1 turntable + 2 deck mixer | no                    | HID             | 1.11                          |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | 2 deck all-in-one          | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued | 2 deck all-in-one          | yes                   | HID             | 1.11                          |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | 2 deck all-in-one          | no                    | MIDI + HID      | 1.11                          |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | 2 deck mixer               | no                    | MIDI            | 1.6                           |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued | 1 deck control             | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | 2 deck mixer               | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued | 4 deck mixer               | yes                   | MIDI            | 1.9 \[1\]                     |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued | 1 turntable                | no                    | MIDI            | 1.9.1 \[2\]                   |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | 4 deck all-in-one          | yes                   | MIDI            | 1.10.1                        |
 
 ### Community Supported Mappings
 

@@ -10,6 +10,9 @@ page.
 
 ## Preparation
 
+You first need to download and install [NullSoft Install
+System](http://nsis.sourceforge.net/Download) version 2.46
+
 When built with MSVC, Mixxx requires that certain MSVC DLL files be
 present in order to run. Many people have these already installed on
 their systems, but many do not (or have different versions,) so we must

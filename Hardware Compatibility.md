@@ -116,7 +116,7 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 | [eks Otus](eks%20Otus)                                           | discontinued | 1 turntable + 2 deck mixer | no                    | HID             | 1.11                          |
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | basic 2 deck all-in-one    | yes                   | HID             | 1.11                          |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued | basic 2 deck all-in-one    | yes                   | HID             | 1.11                          |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | basic 2 deck all-in-one    | no                    | MIDI + HID      | 1.11                          |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | basic 4 deck all-in-one    | no                    | MIDI + HID      | 1.11                          |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | 2 deck mixer               | no                    | MIDI            | 1.6                           |
 | [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued | 1 deck control             | no                    | MIDI            | 1.7                           |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | 2 deck mixer               | no                    | MIDI            | 1.7                           |

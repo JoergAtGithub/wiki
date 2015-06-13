@@ -142,6 +142,7 @@ not work with your OS, please [report the bug](reporting%20bugs).
 | [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60          | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10                          |
 | [Novation Dicer](Novation%20Dicer)                                                                 | $70          | hotcues and loops for use with turntables | no                    | MIDI            | 1.10                          |
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100         | basic all-in-one                          | yes                   | MIDI            | 1.6                           |
+| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125         | 2 deck all-in-one                         | yes                   | MIDI            | 1.10.1                        |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | $250         | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700         | 4 deck all-in-one                         | yes                   | MIDI            | 1.12                          |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900         | CD player                                 | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
@@ -192,7 +193,6 @@ map than HID controllers. Prices listed are prevailing prices found from
 | Electrix Tweaker                          | $100         | 2 deck all-in-one                                       | no, but 5-pin MIDI I/O included | MIDI                     |
 | Behringer CMD MM-1                        | $100         | 4 deck mixer                                            | no                              | MIDI                     |
 | Numark Mixtrack Edge                      | $100         | 2 deck all-in-one                                       | no                              | MIDI                     |
-| Hercules DJ Control Instinct              | $125         | 2 deck all-in-one                                       | yes                             | MIDI                     |
 | Numark Mixtrack 2 \[8\]                   | $150         | 2 deck all-in-one                                       | no                              | MIDI                     |
 | Native Instruments Traktor Kontrol Z1     | $200         | basic 2 deck mixer                                      | yes                             | HID                      |
 | Native Instruments Traktor Kontrol F1     | $200         | remixing pads + faders                                  | no                              | HID                      |

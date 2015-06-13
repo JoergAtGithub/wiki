@@ -129,9 +129,9 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 
 ### Community Supported Mappings
 
-All controllers listed on GNU/Linux, Mac OS X, and Windows unless
-otherwise indicated. If your controller is listed here but does not work
-with your OS, please [report the bug](reporting%20bugs).
+All controllers listed are supported on GNU/Linux, Mac OS X, and Windows
+unless otherwise indicated. If your controller is listed here but does
+not work with your OS, please [report the bug](reporting%20bugs).
 
 |                                                                                                    |              |                                           |                       |                 |                               |
 | -------------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------- | --------------------- | --------------- | ----------------------------- |

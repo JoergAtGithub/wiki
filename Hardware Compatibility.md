@@ -34,12 +34,12 @@ getting a separate, high quality sound card suitable for recording.
 Users who want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
 will need a sound card with 2 inputs per deck (so 4 inputs for a
-traditional 2 deck setup) and a phono preamp for each deck, either in
-the turntable, in the sound card, or as a stand alone device. A few
-small controllers may be of particular interest to vinyl DJs, such as
-the Novation Dicer and Akai AMX. These are all just guidelines; research
-your options and decide what you think will work best for the way you
-want to DJ.
+traditional 2 deck setup) and a phono preamp for each deck. The phono
+preamps can either be in the turntable, in the sound card, or stand
+alone devices. A few small controllers may be of particular interest to
+vinyl DJs, such as the Novation Dicer and Akai AMX. These are all just
+guidelines; research your options and decide what you think will work
+best for the way you want to DJ.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.

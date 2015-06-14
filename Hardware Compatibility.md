@@ -75,9 +75,10 @@ your computer; it just needs a controller mapping to tell Mixxx what to
 do with the signals. Standards compliant MIDI controllers do not need
 any special drivers on Linux, Mac OS X, or Windows. Standards compliant
 HID controllers do not need any special drivers on Linux and Mac OS X,
-but do require drivers on Windows. Controllers that have integrated
-sound cards require a driver on every OS for the sound card, unless it
-is USB audio class compliant.
+but do require drivers on Windows. Most DJ controllers are standards
+compliant MIDI controllers, with exceptions noted in the tables below.
+Controllers that have integrated sound cards require a driver on every
+OS for the sound card, unless it is USB audio class compliant.
 
 ## Controller mappings
 

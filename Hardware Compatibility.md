@@ -195,10 +195,10 @@ not work with your OS, please [report the bug](reporting%20bugs).
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
 
-### Esoteric controllers & mobile programs
+### Esoteric controllers
 
 These are devices that were not designed for DJing but have been mapped
-to Mixxx anyway as well as iOS and Android programs.
+to Mixxx anyway.
 
 |                                        |             |                         |                       |                 |                               |
 | -------------------------------------- | ----------- | ----------------------- | --------------------- | --------------- | ----------------------------- |

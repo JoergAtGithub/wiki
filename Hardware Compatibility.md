@@ -312,24 +312,27 @@ with Linux](http://ffado.org/?q=devicesupport/list).
 As explained [at the top of the
 page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
 use a sound card with at least 4 mono output channels with Mixxx.
+Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
+for DJing; almost all music is published in this format (which was the
+standard set by audio CDs). If you are interested in recoridng music,
+consider getting a higher quality sound card that supports 24 bit sample
+depths and a 96 kHz sample rate (there is [no
+advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
+sample rates).
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
-DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/).
+DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
+to understand the different kinds of connectors on sound cards. It is
+better to use a sound card with balanced outputs, especially if you will
+run long cables directly into an amplifier or active speakers without
+going through an analog DJ mixer. However, most venues have DJs plug
+into analog DJ mixers, which typically only have RCA inputs (RCA cables
+cannot be balanced). Most live sound mixers have balanced 1/4" inputs.
 
-It is better to use a sound card with balanced outputs, especially if
-you might run long cables directly into an amplifier or active speakers
-without going through a DJ mixer. However, most venues have DJs plug
-into DJ mixers, which typically only have RCA inputs (RCA cables cannot
-be balanced). Most live sound mixers have balanced 1/4" inputs. Playing
-audio at 16 bit sample depths and 44.1 kHz sample rate is fine for
-DJing; almost all music is published in this format (which was the
-standard set by audio CDs).
-
-If you are interested in playing instruments over your DJing and/or
-recording your own music, get a sound card with instrument preamps (for
-electric guitars) and/or microphone preamps. Also consider getting an
-interface that supports 24 bit sample depths and a 96 kHz sample rate.
+If you want to plug a microphone into your sound card, it will need a
+microphone preamplifier. If you want to plug an electric guitar or bass
+into your sound card, it will need an instrument preamplifier.
 
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
@@ -347,7 +350,7 @@ include phono preamps too.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. Many sound cards made for DJing
+send or receive an independent signal. Some sound cards made for DJing
 have 4 output channels with 4 mono output connectors and 1 stereo
 headphone connector. This does not mean that the sound card can send out
 6 different signals at the same time; rather, the signal on 2 of the

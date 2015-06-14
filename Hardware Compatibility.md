@@ -44,14 +44,6 @@ best for the way you want to DJ.
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
 
-Prices listed on this page are the prevailing prices for unused
-controllers found from [searching Google
-Shopping](https://www.google.com/?tbm=shop). You may be able to find
-hardware available for sale cheaper. Devices are marked as discontinued
-if the manufacturer has declared them as discontinued, the manufacturer
-has gone out of business, or new units are not widely available online.
-They may or may not still be available used online.
-
 ## Hardware compatibility with Mixxx
 
 Because Mixxx is [free
@@ -114,26 +106,26 @@ differently, please [report it on our bug tracker](reporting%20bugs).
 
 ### Mixxx Certified Mappings
 
-|                                                                  |              |                                               |                       |                 |                               |
-| ---------------------------------------------------------------- | ------------ | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
-| Device                                                           | Price (USD)  | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
-| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250         | 2 deck all-in-one                             | no                    | MIDI            | 1.11                          |
-| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300         | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |
-| [American Audio VMS4](American%20Audio%20VMS4)                   | $400         | 4 deck all-in-one                             | yes                   | MIDI            | 1.9                           |
-| [Reloop Terminal Mix](Reloop%20Terminal%20Mix) 4                 | $400         | 4 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
-| [DJ TechTools MIDIFighter](http://midifighter.com)               | discontinued | button grid                                   | no                    | MIDI            | 1.8                           |
-| [Denon HS5500](Denon%20HS5500)                                   | discontinued | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 1.12                          |
-| [eks Otus](eks%20Otus)                                           | discontinued | 1 turntable + 2 deck mixer                    | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued | 2 deck all-in-one                             | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued | basic 2 deck all-in-one                       | yes                   | HID             | 1.11                          |
-| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued | basic 4 deck all-in-one                       | no                    | MIDI + HID      | 1.11                          |
-| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued | 2 deck mixer                                  | no                    | MIDI            | 1.6                           |
-| [Reloop Terminal Mix](Reloop%20Terminal%20Mix) 2                 | discontinued | 4 deck all-in-one \[1\]                       | yes                   | MIDI            | 1.11                          |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued | 1 deck control                                | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued | 2 deck mixer                                  | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued | 4 deck mixer                                  | yes                   | MIDI            | 1.9                           |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued | 1 turntable                                   | no                    | MIDI            | 1.9.1                         |
-| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued | 4 deck all-in-one                             | yes                   | MIDI            | 1.10.1                        |
+|                                                                  |                   |                                               |                       |                 |                               |
+| ---------------------------------------------------------------- | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
+| Device                                                           | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                 | $250              | 2 deck all-in-one                             | no                    | MIDI            | 1.11                          |
+| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)           | $300              | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |
+| [American Audio VMS4](American%20Audio%20VMS4)                   | $400              | 4 deck all-in-one                             | yes                   | MIDI            | 1.9                           |
+| [Reloop Terminal Mix](Reloop%20Terminal%20Mix) 4                 | $400              | 4 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
+| [DJ TechTools MIDIFighter](http://midifighter.com)               | discontinued      | button grid                                   | no                    | MIDI            | 1.8                           |
+| [Denon HS5500](Denon%20HS5500)                                   | discontinued      | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 1.12                          |
+| [eks Otus](eks%20Otus)                                           | discontinued      | 1 turntable + 2 deck mixer                    | no                    | HID             | 1.11                          |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)          | discontinued      | 2 deck all-in-one                             | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)         | discontinued      | basic 2 deck all-in-one                       | yes                   | HID             | 1.11                          |
+| [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2) | discontinued      | basic 4 deck all-in-one                       | no                    | MIDI + HID      | 1.11                          |
+| [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)               | discontinued      | 2 deck mixer                                  | no                    | MIDI            | 1.6                           |
+| [Reloop Terminal Mix](Reloop%20Terminal%20Mix) 2                 | discontinued      | 4 deck all-in-one \[2\]                       | yes                   | MIDI            | 1.11                          |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                               | discontinued      | 1 deck control                                | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                               | discontinued      | 2 deck mixer                                  | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                               | discontinued      | 4 deck mixer                                  | yes                   | MIDI            | 1.9                           |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                               | discontinued      | 1 turntable                                   | no                    | MIDI            | 1.9.1                         |
+| [Vestax VCI-400](Vestax%20VCI-400)                               | discontinued      | 4 deck all-in-one                             | yes                   | MIDI            | 1.10.1                        |
 
 ### Community Supported Mappings
 
@@ -142,60 +134,60 @@ unless otherwise indicated by a footnote in the signal protocol column.
 If your controller is listed here but does not work with your OS, please
 [report the bug](reporting%20bugs).
 
-|                                                                                                    |              |                                           |                       |                 |                               |
-| -------------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------- | --------------------- | --------------- | ----------------------------- |
-| Device                                                                                             | Price (USD)  | Description                               | Integrated sound card | Signal protocol | Supported since Mixxx version |
-| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60          | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10                          |
-| [Korg nanoKONTROL 2](Korg%20nanoKONTROL%202)                                                       | $60          | hotcues + samples                         | no                    | MIDI            | 1.11                          |
-| [Akai LPD8](Akai%20LPD8)                                                                           | $70          | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10.1                        |
-| [Novation Dicer](Novation%20Dicer)                                                                 | $70          | hotcues and loops for use with turntables | no                    | MIDI            | 1.10                          |
-| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75          | hotcues, loops, transport                 | no                    | MIDI            | 1.12                          |
-| [DJ Tech CDJ-101](DJ%20Tech%20CDJ-101)                                                             | $90          | 2 deck jog wheel                          | no                    | MIDI            | 1.11                          |
-| [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100         | basic 2 deck all-in-one                   | yes                   | MIDI            | 1.6                           |
-| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125         | 2 deck all-in-one                         | yes                   | MIDI            | 1.10.1                        |
-| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | $250         | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Numark N4](Numark%20N4)                                                                           | $500         | 4 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
-| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700         | 4 deck all-in-one                         | yes                   | MIDI            | 1.12                          |
-| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900         | CD player                                 | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000        | CD player                                 | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Akai MPD24](Akai%20MPD24)                                                                         | discontinued | 2 deck mixer                              | no                    | MIDI            | 1.8                           |
-| [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued | basic 2 deck all-in-one                   | yes                   | MIDI            | 1.11                          |
-| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued | CD player                                 | no                    | MIDI            | 1.10                          |
-| [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | discontinued | 1 deck                                    | no                    | MIDI            | 1.8                           |
-| [DJ Tech DJM-101](DJ%20Tech%20DJM-101)                                                             | discontinued | 2 deck mixer                              | no                    | MIDI            | 1.11                          |
-| [DJ Tech iMix Reload](DJ%20Tech%20iMix%20Reload)                                                   | discontinued | 2 deck all-in-one                         | no                    | MIDI            | 1.10                          |
-| [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued | 4 decks                                   | no                    | MIDI            | 1.11                          |
-| [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued | 2 deck mixer                              | no                    | MIDI            | 1.10.1                        |
-| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued | knobs + crossfader                        | no                    | MIDI            | 1.6                           |
-| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued | 2 deck mixer                              | no                    | MIDI            | 1.6                           |
-| [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued | basic 2 deck all-in-one                   | no                    | MIDI            | 1.11                          |
-| [Kontrol DJ KDJ500](Kontrol%20DJ%20KDJ500)                                                         | discontinued | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10                          |
-| [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued | 2 deck mixer                              | no                    | MIDI            | 1.8.2                         |
-| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued | 2 deck all-in-one                         | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued | 2 deck all-in-one                         | yes                   | MIDI \[2\]      | 1.7                           |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued | 2 deck all-in-one                         | yes                   | HID \[3\]       | 1.8                           |
-| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
-| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued | 2 deck all-in-one                         | no                    | MIDI            | 1.8                           |
-| [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued | 2 decks                                   | yes                   | MIDI \[4\]      | 1.7                           |
-| [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202)                                         | discontinued | 2 deck all-in-one                         | no                    | MIDI            | 1.10.1                        |
-| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued | 2 deck mixer, hotcues, loops              | no                    | MIDI \[5\]      | 1.11                          |
-| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued | 2 deck all-in-one                         | yes                   | MIDI \[6\]      | 1.10                          |
-| [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued | 2 deck all-in-one                         | no                    | MIDI            | 1.6                           |
-| [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued | 2 deck all-in-one                         | no                    | MIDI            | 1.8.2                         |
-| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
-| [Numark NS7](Numark%20NS7)                                                                         | discontinued | 2 deck all-in-one with motorized wheels   | yes                   | MIDI            | 1.9                           |
-| [Numark V7](Numark%20V7)                                                                           | discontinued | 2 deck motorized wheel                    | yes                   | MIDI            | 1.10                          |
-| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued | CD player                                 | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
-| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued | 2 deck all-in-one                         | yes                   | MIDI \[7\]      | 1.8                           |
-| [Tascam US-428](Tascam%20US-428)                                                                   | discontinued | mixing console                            | yes                   | MIDI            | 1.6.2                         |
-| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.6                           |
-| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
-| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
+|                                                                                                    |                   |                                           |                       |                 |                               |
+| -------------------------------------------------------------------------------------------------- | ----------------- | ----------------------------------------- | --------------------- | --------------- | ----------------------------- |
+| Device                                                                                             | Price (USD) \[3\] | Description                               | Integrated sound card | Signal protocol | Supported since Mixxx version |
+| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60               | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10                          |
+| [Korg nanoKONTROL 2](Korg%20nanoKONTROL%202)                                                       | $60               | hotcues + samples                         | no                    | MIDI            | 1.11                          |
+| [Akai LPD8](Akai%20LPD8)                                                                           | $70               | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10.1                        |
+| [Novation Dicer](Novation%20Dicer)                                                                 | $70               | hotcues and loops for use with turntables | no                    | MIDI            | 1.10                          |
+| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75               | hotcues, loops, transport                 | no                    | MIDI            | 1.12                          |
+| [DJ Tech CDJ-101](DJ%20Tech%20CDJ-101)                                                             | $90               | 2 deck jog wheel                          | no                    | MIDI            | 1.11                          |
+| [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100              | basic 2 deck all-in-one                   | yes                   | MIDI            | 1.6                           |
+| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125              | 2 deck all-in-one                         | yes                   | MIDI            | 1.10.1                        |
+| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | $250              | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
+| [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
+| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                         | yes                   | MIDI            | 1.12                          |
+| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900              | CD player                                 | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
+| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000             | CD player                                 | no                    | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
+| [Akai MPD24](Akai%20MPD24)                                                                         | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.8                           |
+| [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued      | basic 2 deck all-in-one                   | yes                   | MIDI            | 1.11                          |
+| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued      | CD player                                 | no                    | MIDI            | 1.10                          |
+| [Denon SC2000](http://esync.de/denon-sc2000-mixxx-bindings)                                        | discontinued      | 1 deck                                    | no                    | MIDI            | 1.8                           |
+| [DJ Tech DJM-101](DJ%20Tech%20DJM-101)                                                             | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.11                          |
+| [DJ Tech iMix Reload](DJ%20Tech%20iMix%20Reload)                                                   | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.10                          |
+| [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued      | 4 decks                                   | no                    | MIDI            | 1.11                          |
+| [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.10.1                        |
+| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued      | knobs + crossfader                        | no                    | MIDI            | 1.6                           |
+| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.6                           |
+| [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued      | basic 2 deck all-in-one                   | no                    | MIDI            | 1.11                          |
+| [Kontrol DJ KDJ500](Kontrol%20DJ%20KDJ500)                                                         | discontinued      | basic 2 deck all-in-one                   | no                    | MIDI            | 1.10                          |
+| [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.8.2                         |
+| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued      | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                         | yes                   | HID             | 1.11                          |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[4\]      | 1.7                           |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                         | yes                   | HID \[5\]       | 1.8                           |
+| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued      | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
+| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.8                           |
+| [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.6                           |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued      | 2 decks                                   | yes                   | MIDI \[6\]      | 1.7                           |
+| [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202)                                         | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.10.1                        |
+| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | 2 deck mixer, hotcues, loops              | no                    | MIDI \[7\]      | 1.11                          |
+| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[8\]      | 1.10                          |
+| [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
+| [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.6                           |
+| [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.8.2                         |
+| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
+| [Numark NS7](Numark%20NS7)                                                                         | discontinued      | 2 deck all-in-one with motorized wheels   | yes                   | MIDI            | 1.9                           |
+| [Numark V7](Numark%20V7)                                                                           | discontinued      | 2 deck motorized wheel                    | yes                   | MIDI            | 1.10                          |
+| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued      | CD player                                 | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
+| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.8                           |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[9\]      | 1.8                           |
+| [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                            | yes                   | MIDI            | 1.6.2                         |
+| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.6                           |
+| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
+| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
+| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.9                           |
 
 #### Esoteric controllers & mobile programs
 
@@ -221,56 +213,56 @@ forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
 posted a mapping. If you are willing to put in the effort to map one of
 these controllers, please get the controller, map it, and publish the
 mapping so we can include it in Mixxx. MIDI controllers are easier to
-map than HID controllers. Prices listed are prevailing prices found from
+map than HID controllers.
 
-|                                             |              |                                                                           |                                 |                          |
-| ------------------------------------------- | ------------ | ------------------------------------------------------------------------- | ------------------------------- | ------------------------ |
-| Device                                      | Price (USD)  | Description                                                               | Integrated sound card           | Signal protocol          |
-| Electrix Tweaker                            | $100         | 2 deck mixer + 8x4 color button grid + 4x2 velocity sensitive button grid | no, but 5-pin MIDI I/O included | MIDI                     |
-| Behringer CMD MM-1                          | $100         | 4 deck mixer                                                              | no                              | MIDI                     |
-| Numark Mixtrack Edge                        | $100         | 2 deck all-in-one                                                         | no                              | MIDI                     |
-| Novation Launchpad S                        | $125         | 8x8 3-color button grid                                                   | no                              | MIDI                     |
-| Numark Mixtrack 2 \[8\]                     | $150         | 2 deck all-in-one                                                         | no                              | MIDI                     |
-| Native Instruments Traktor Kontrol Z1       | $200         | basic 2 deck mixer                                                        | yes                             | HID                      |
-| Native Instruments Traktor Kontrol F1 \[9\] | $200         | remixing pads + faders                                                    | no                              | HID                      |
-| Native Instruments Traktor Kontrol X1 Mk1   | $200         | effects                                                                   | no                              | NHL                      |
-| Native Instruments Traktor Kontrol X1 Mk2   | $200         | effects + touch strip                                                     | no                              | HID                      |
-| Gemini Slate                                | $200         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Allen & Heath Xone K1 \[10\]                | $250         | 4 deck mixer + pads                                                       | no                              | MIDI                     |
-| Numark Mixtrack 3 \[11\]                    | $200         | 2 deck all-in-one                                                         | no                              | MIDI                     |
-| Akai AFX                                    | $200         | 2 deck effects + pads + touch strip                                       | no                              | MIDI                     |
-| Akai AMX                                    | $250         | 2 deck mixer + vinyl hookup                                               | yes                             | MIDI                     |
-| Gemini Slate 4                              | $250         | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Pioneer DDJ-SB                              | $250         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Hercules DJ Control Jogvision               | $300         | 2 deck all-in-one                                                         | yes                             | MIDI/HID (either? both?) |
-| Korg KAOSS DJ                               | $300         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Novation Launchpad Pro                      | $300         | 8x8 RGB velocity-sensitive button grid                                    | no                              | MIDI                     |
-| Numark Mixtrack Pro 3 \[12\]                | $300         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Reloop Beatmix 2                            | $300         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Pioneer DDJ WeGO 3                          | $300         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Reloop Beatmix 4                            | $400         | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Native Instruments Traktor Kontrol S2 Mk1   | discontinued | 2 deck all-in-one                                                         | yes                             | NHL                      |
-| Native Instruments Traktor Kontrol S2 Mk2   | $400         | 2 deck all-in-one                                                         | yes                             | HID                      |
-| Native Instruments Traktor Kontrol D2       | $500         | remixing pads, faders, and touch strip                                    | no                              | ?                        |
-| Pioneer DDJ-SR                              | $600         | 2 deck all-in-one                                                         | yes                             | MIDI                     |
-| Reloop Terminal Mix 4                       | $600         | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Native Instruments Traktor Kontrol S4 Mk1   | discontinued | 4 deck all-in-one                                                         | yes                             | NHL                      |
-| Native Instruments Traktor Kontrol S4 Mk2   | $700         | 4 deck all-in-one                                                         | yes                             | HID                      |
-| Numark NV                                   | $700         | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Reloop Terminal Mix 8                       | $700         | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Native Instruments Traktor Kontrol Z2       | $800         | 2 decks + effects + standalone digital mixer                              | yes                             | HID                      |
-| Native Instruments Traktor Kontrol S8       | $1200        | 4 deck all-in-one + remixing + standalone digital mixer                   | yes                             | NHL                      |
-| Pioneer DDJ-SX2                             | $1000        | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Numark NS7II                                | $1300        | 4 deck all-in-one with motorized wheels                                   | yes                             | MIDI                     |
-| Numark NS7III                               | $1500        | 4 deck all-in-one with motorized wheels                                   | yes                             | MIDI                     |
-| Rane MP25                                   | $1500        | 4 deck analog mixer                                                       | yes                             | MIDI                     |
-| Rane MP26                                   | $1750        | 4 deck analog mixer                                                       | yes                             | MIDI                     |
-| Rane Sixty-Two                              | $2000        | 2 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
-| Pioneer DDJ-SZ                              | $2000        | 4 deck all-in-one                                                         | yes                             | MIDI                     |
-| Rane Sixty-Four                             | $2200        | 4 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
-| Rane Sixty-Eight                            | $2600        | 4 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
-| Rane MP2015                                 | $2900        | 4 deck analog rotary mixer                                                | yes                             | MIDI                     |
-| Rane TTM57                                  | discontinued | 2 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
+|                                              |                    |                                                                           |                                 |                          |
+| -------------------------------------------- | ------------------ | ------------------------------------------------------------------------- | ------------------------------- | ------------------------ |
+| Device                                       | Price (USD) \[10\] | Description                                                               | Integrated sound card           | Signal protocol          |
+| Electrix Tweaker                             | $100               | 2 deck mixer + 8x4 color button grid + 4x2 velocity sensitive button grid | no, but 5-pin MIDI I/O included | MIDI                     |
+| Behringer CMD MM-1                           | $100               | 4 deck mixer                                                              | no                              | MIDI                     |
+| Numark Mixtrack Edge                         | $100               | 2 deck all-in-one                                                         | no                              | MIDI                     |
+| Novation Launchpad S                         | $125               | 8x8 3-color button grid                                                   | no                              | MIDI                     |
+| Numark Mixtrack 2 \[11\]                     | $150               | 2 deck all-in-one                                                         | no                              | MIDI                     |
+| Native Instruments Traktor Kontrol Z1        | $200               | basic 2 deck mixer                                                        | yes                             | HID                      |
+| Native Instruments Traktor Kontrol F1 \[12\] | $200               | remixing pads + faders                                                    | no                              | HID                      |
+| Native Instruments Traktor Kontrol X1 Mk1    | $200               | effects                                                                   | no                              | NHL                      |
+| Native Instruments Traktor Kontrol X1 Mk2    | $200               | effects + touch strip                                                     | no                              | HID                      |
+| Gemini Slate                                 | $200               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Allen & Heath Xone K1 \[13\]                 | $250               | 4 deck mixer + pads                                                       | no                              | MIDI                     |
+| Numark Mixtrack 3 \[14\]                     | $200               | 2 deck all-in-one                                                         | no                              | MIDI                     |
+| Akai AFX                                     | $200               | 2 deck effects + pads + touch strip                                       | no                              | MIDI                     |
+| Akai AMX                                     | $250               | 2 deck mixer + vinyl hookup                                               | yes                             | MIDI                     |
+| Gemini Slate 4                               | $250               | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Pioneer DDJ-SB                               | $250               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Hercules DJ Control Jogvision                | $300               | 2 deck all-in-one                                                         | yes                             | MIDI/HID (either? both?) |
+| Korg KAOSS DJ                                | $300               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Novation Launchpad Pro                       | $300               | 8x8 RGB velocity-sensitive button grid                                    | no                              | MIDI                     |
+| Numark Mixtrack Pro 3 \[15\]                 | $300               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Reloop Beatmix 2                             | $300               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Pioneer DDJ WeGO 3                           | $300               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Reloop Beatmix 4                             | $400               | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol S2 Mk1    | discontinued       | 2 deck all-in-one                                                         | yes                             | NHL                      |
+| Native Instruments Traktor Kontrol S2 Mk2    | $400               | 2 deck all-in-one                                                         | yes                             | HID                      |
+| Native Instruments Traktor Kontrol D2        | $500               | remixing pads, faders, and touch strip                                    | no                              | ?                        |
+| Pioneer DDJ-SR                               | $600               | 2 deck all-in-one                                                         | yes                             | MIDI                     |
+| Reloop Terminal Mix 4                        | $600               | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol S4 Mk1    | discontinued       | 4 deck all-in-one                                                         | yes                             | NHL                      |
+| Native Instruments Traktor Kontrol S4 Mk2    | $700               | 4 deck all-in-one                                                         | yes                             | HID                      |
+| Numark NV                                    | $700               | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Reloop Terminal Mix 8                        | $700               | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Native Instruments Traktor Kontrol Z2        | $800               | 2 decks + effects + standalone digital mixer                              | yes                             | HID                      |
+| Native Instruments Traktor Kontrol S8        | $1200              | 4 deck all-in-one + remixing + standalone digital mixer                   | yes                             | NHL                      |
+| Pioneer DDJ-SX2                              | $1000              | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Numark NS7II                                 | $1300              | 4 deck all-in-one with motorized wheels                                   | yes                             | MIDI                     |
+| Numark NS7III                                | $1500              | 4 deck all-in-one with motorized wheels                                   | yes                             | MIDI                     |
+| Rane MP25                                    | $1500              | 4 deck analog mixer                                                       | yes                             | MIDI                     |
+| Rane MP26                                    | $1750              | 4 deck analog mixer                                                       | yes                             | MIDI                     |
+| Rane Sixty-Two                               | $2000              | 2 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
+| Pioneer DDJ-SZ                               | $2000              | 4 deck all-in-one                                                         | yes                             | MIDI                     |
+| Rane Sixty-Four                              | $2200              | 4 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
+| Rane Sixty-Eight                             | $2600              | 4 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
+| Rane MP2015                                  | $2900              | 4 deck analog rotary mixer                                                | yes                             | MIDI                     |
+| Rane TTM57                                   | discontinued       | 2 deck analog mixer + loops, cues, and effects                            | yes                             | MIDI                     |
 
 #### Note regarding Native Instruments controllers
 
@@ -381,12 +373,12 @@ use one sound card with 4 outputs.
 
 |                                                                |                         |                         |                                                                  |                           |                                                                            |                                      |            |                    |               |
 | -------------------------------------------------------------- | ----------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------ | ------------- |
-| Device                                                         | Price (USD)             | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | Linux         |
+| Device                                                         | Price (USD) \[16\]      | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | Linux         |
 | Behringer UCA222                                               | $30                     | 2                       | 2 RCA, 1 1/8" headphone                                          | 2                         | 2 RCA                                                                      | 1 phono                              | 16         | 32, 44.1, 48       | yes           |
 | Numark DJ iO                                                   | $50                     | 4                       | 4 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1, 88.2         | no            |
-| Griffin DJ Connect                                             | $90                     | 4                       | 2 RCA, 1 1/8" headphone                                          | 0                         | none                                                                       | none                                 | 16         | 48                 | likely \[13\] |
-| Numark DJ iO 2                                                 | $100                    | 4                       | 2 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1               | likely \[14\] |
-| Native Instruments [Traktor Audio 2](Traktor%20Audio%202)      | $100                    | 4                       | 2 1/8" stereo                                                    | 0                         | none                                                                       | none                                 | 24         | 44.1, 48, 88.2, 96 | likely \[15\] |
+| Griffin DJ Connect                                             | $90                     | 4                       | 2 RCA, 1 1/8" headphone                                          | 0                         | none                                                                       | none                                 | 16         | 48                 | likely \[17\] |
+| Numark DJ iO 2                                                 | $100                    | 4                       | 2 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1               | likely \[18\] |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202)      | $100                    | 4                       | 2 1/8" stereo                                                    | 0                         | none                                                                       | none                                 | 24         | 44.1, 48, 88.2, 96 | likely \[19\] |
 | Electrix Ebox-44                                               | discontinued (was $100) | 4                       | 4 RCA, 1 1/4" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono (one switch for both), 1 mic | 16         | 44.1, 48           | yes           |
 | Mixvibes U-Mix44                                               | discontinued (was $100) | 4                       | 4 RCA, 1 1/8" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono, 1 mic                       | 16         | 48                 | yes           |
 | Reloop Play                                                    | $130                    | 4                       | 4 RCA, 1 1/4" headphone                                          | 0                         | none                                                                       | none                                 | 24         | 96                 | yes           |
@@ -405,123 +397,151 @@ use one sound card with 4 outputs.
 
 #### Controllers with Mixxx mappings
 
-|                              |              |              |                                                            |             |                                                                          |                |            |                    |       |
-| ---------------------------- | ------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
-| Device                       | Price (USD)  | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
-| Behringer BCD3000            | $100         | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
-| Numark Mixtrack Pro 2        | $250         | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 1           | 1/4" mic                                                                 | 1 mic          | 16         | 44.1, 48           | yes   |
-| Allen & Heath Xone K2        | $300         | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
-| Reloop Terminal Mix 4        | $400         | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
-| Numark N4                    | $500         | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
-| Denon MC6000 Mk2             | $700         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone            | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic                                             | 4 phono, 1 mic | 24         | 44.1               | ?     |
-| Behringer BCD2000            | discontinued | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1               | yes   |
-| Denon DN-HS550               | discontinued | ?            | ?                                                          | ?           | ?                                                                        | 16             | 44.1       | ?                  |       |
-| Mixvibes U-Mix Control Pro 2 | discontinued | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | ?          | ?                  | ?     |
-| Numark Omni Control          | discontinued | 4            | 4 RCA, 1 1/4" headphone                                    | 1           | 1/14" mic                                                                | 1 mic          | 24         | 44.1, 88.2         | no    |
-| Reloop Terminal Mix 2        | discontinued | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1 1/4" mic                                                        | 1 phono, 1 mic | ?          | ?                  | ?     |
-| Tascam US-428                | discontinued | 2            | 2 RCA, 1 optical SPDIF, 2 5-pin MIDI                       | 4           | 2 1/4" balanced, 2 1/4" unbalanced, 2 XLR, 1 optical SPDIF, 2 5-pin MIDI | 24             | 48         | yes                |       |
+|                              |                    |              |                                                            |             |                                                                          |                |            |                    |       |
+| ---------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
+| Device                       | Price (USD) \[20\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
+| Behringer BCD3000            | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
+| Numark Mixtrack Pro 2        | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 1           | 1/4" mic                                                                 | 1 mic          | 16         | 44.1, 48           | yes   |
+| Allen & Heath Xone K2        | $300               | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
+| Reloop Terminal Mix 4        | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
+| Numark N4                    | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
+| Denon MC6000 Mk2             | $700               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone            | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic                                             | 4 phono, 1 mic | 24         | 44.1               | ?     |
+| Behringer BCD2000            | discontinued       | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1               | yes   |
+| Denon DN-HS550               | discontinued       | ?            | ?                                                          | ?           | ?                                                                        | 16             | 44.1       | ?                  |       |
+| Mixvibes U-Mix Control Pro 2 | discontinued       | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | ?          | ?                  | ?     |
+| Numark Omni Control          | discontinued       | 4            | 4 RCA, 1 1/4" headphone                                    | 1           | 1/14" mic                                                                | 1 mic          | 24         | 44.1, 88.2         | no    |
+| Reloop Terminal Mix 2        | discontinued       | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1 1/4" mic                                                        | 1 phono, 1 mic | ?          | ?                  | ?     |
+| Tascam US-428                | discontinued       | 2            | 2 RCA, 1 optical SPDIF, 2 5-pin MIDI                       | 4           | 2 1/4" balanced, 2 1/4" unbalanced, 2 XLR, 1 optical SPDIF, 2 5-pin MIDI | 24             | 48         | yes                |       |
 
 #### Controllers with no Mixxx mappings yet
 
-|                                              |              |              |                                                                   |             |                                            |                |            |                    |               |
-| -------------------------------------------- | ------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------ | -------------- | ---------- | ------------------ | ------------- |
-| Device                                       | Price (USD)  | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
-| Hercules DJ Control Instinct                 | $125         | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                       | none           | 16         | 44.1               | yes           |
-| Native Instruments Traktor Kontrol Z1        | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                       | none           | 24         | 96                 | yes           |
-| Gemini Slate                                 | $200         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[16\]      |
-| Gemini Slate 4                               | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[17\]      |
-| Akai AMX                                     | $250         | 4            | 2 RCA, 1 1/8" headphone                                           | 4           | 4 RCA                                      | 2 phono        | 24         | 96                 | likely \[18\] |
-| Pioneer DDJ-SB                               | $250         | 4            | 2 1/4" balanced, 2 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1               | ?             |
-| Hercules DJ Control Jogvision                | $300         | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 3           | 1/4" mic, 1/8" stereo                      | 1 mic          | 16, 24     | 44.1, 48, 96       | ?             |
-| Numark Mixtrack Pro 3                        | $300         | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1/4" mic                                   | 1 mic          | 24         | 44.1               | likely \[19\] |
-| Korg KAOSS DJ                                | $300         | 4            | 2 RCA, 1 1/4" headphone                                           | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1, 48           | ?             |
-| Pioneer DDJ WeGO 3                           | $300         | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1 1/4" mic                                 | 1 mic          | 24         | 48                 | ?             |
-| Reloop Beatmix 2                             | $300         | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ?             |
-| Reloop Beatmix 4                             | $400         | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | 16         | 48                 | ?             |
-| Native Instruments Traktor Kontrol S2 Mk1    | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
-| Native Instruments Traktor Kontrol S2 Mk2    | $400         | 4            | 2 RCA, 2 1/4" balanced, 1 1/4" headphone                          | 1           | 1 1/4" mic                                 | 1 mic          | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
-| Pioneer DDJ-SR                               | $600         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 9           | 8 RCA, 1 XLR mic, 1 1/4" mic               | 2 phono, 1 mic | 24         | 44.1               | ?             |
-| Native Instruments Traktor Kontrol S4 Mk1    | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | yes           |
-| Native Instruments Traktor Kontrol S4 Mk2    | $700         | 4            | 2 RCA, 2 1/4" balanced, 1 5-pin MIDI                              | 5           | 4 RCA, 1/4" mic, 1 5-pin MIDI              | 2 phono, 1 mic | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
-| Reloop Terminal Mix 8                        | $700         | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 phono, 1 mic | ?          | ?                  | ?             |
-| Native Instruments Traktor Kontrol Z2 \[20\] | $800         | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 7           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | likely \[21\] |
-| Pioneer DDJ-SX2                              | $1000        | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
-| Native Instruments Traktor Kontrol S8 \[22\] | $1200        | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 5           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
-| Numark NS7                                   | discontinued | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
-| Numark NS7II                                 | $1300        | 4            | 2 1/4" balanced, 2 XLR, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 10          | 8 RCA, 2 XLR+1/4" combo                    | 4 phono, 2 mic | 24         | 44.1               | ?             |
-| Numark NS7III                                | $1500        | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
-| Numark NV                                    | $700         | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | ?          | ?                  | ?             |
-| Rane MP25 \[23\]                             | $1500        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[24\] |
-| Rane MP26 \[25\]                             | $1750        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[26\] |
-| Pioneer DDJ-SZ                               | $2000        | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
-| Rane Sixty-Two \[27\]                        | $2000        | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Four \[28\]                       | $2200        | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Eight \[29\]                      | $2600        | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
-| Rane MP2015 \[30\]                           | $2900        | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[31\] |
-| Rane TTM57 \[32\]                            | discontinued | 10           | N/A                                                               | 10          | N/A                                        | 2 phono        | 24         | 44.1, 48, 96       | likely \[33\] |
+|                                              |                    |              |                                                                   |             |                                            |                |            |                    |               |
+| -------------------------------------------- | ------------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------ | -------------- | ---------- | ------------------ | ------------- |
+| Device                                       | Price (USD) \[21\] | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
+| Hercules DJ Control Instinct                 | $125               | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                       | none           | 16         | 44.1               | yes           |
+| Native Instruments Traktor Kontrol Z1        | $200               | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                       | none           | 24         | 96                 | yes           |
+| Gemini Slate                                 | $200               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[22\]      |
+| Gemini Slate 4                               | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[23\]      |
+| Akai AMX                                     | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 4           | 4 RCA                                      | 2 phono        | 24         | 96                 | likely \[24\] |
+| Pioneer DDJ-SB                               | $250               | 4            | 2 1/4" balanced, 2 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1               | ?             |
+| Hercules DJ Control Jogvision                | $300               | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 3           | 1/4" mic, 1/8" stereo                      | 1 mic          | 16, 24     | 44.1, 48, 96       | ?             |
+| Numark Mixtrack Pro 3                        | $300               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1/4" mic                                   | 1 mic          | 24         | 44.1               | likely \[25\] |
+| Korg KAOSS DJ                                | $300               | 4            | 2 RCA, 1 1/4" headphone                                           | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1, 48           | ?             |
+| Pioneer DDJ WeGO 3                           | $300               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1 1/4" mic                                 | 1 mic          | 24         | 48                 | ?             |
+| Reloop Beatmix 2                             | $300               | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ?             |
+| Reloop Beatmix 4                             | $400               | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | 16         | 48                 | ?             |
+| Native Instruments Traktor Kontrol S2 Mk1    | discontinued       | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
+| Native Instruments Traktor Kontrol S2 Mk2    | $400               | 4            | 2 RCA, 2 1/4" balanced, 1 1/4" headphone                          | 1           | 1 1/4" mic                                 | 1 mic          | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
+| Pioneer DDJ-SR                               | $600               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 9           | 8 RCA, 1 XLR mic, 1 1/4" mic               | 2 phono, 1 mic | 24         | 44.1               | ?             |
+| Native Instruments Traktor Kontrol S4 Mk1    | discontinued       | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | yes           |
+| Native Instruments Traktor Kontrol S4 Mk2    | $700               | 4            | 2 RCA, 2 1/4" balanced, 1 5-pin MIDI                              | 5           | 4 RCA, 1/4" mic, 1 5-pin MIDI              | 2 phono, 1 mic | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
+| Reloop Terminal Mix 8                        | $700               | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 phono, 1 mic | ?          | ?                  | ?             |
+| Native Instruments Traktor Kontrol Z2 \[26\] | $800               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 7           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | likely \[27\] |
+| Pioneer DDJ-SX2                              | $1000              | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
+| Native Instruments Traktor Kontrol S8 \[28\] | $1200              | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 5           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
+| Numark NS7                                   | discontinued       | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
+| Numark NS7II                                 | $1300              | 4            | 2 1/4" balanced, 2 XLR, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 10          | 8 RCA, 2 XLR+1/4" combo                    | 4 phono, 2 mic | 24         | 44.1               | ?             |
+| Numark NS7III                                | $1500              | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
+| Numark NV                                    | $700               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | ?          | ?                  | ?             |
+| Rane MP25 \[29\]                             | $1500              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[30\] |
+| Rane MP26 \[31\]                             | $1750              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[32\] |
+| Pioneer DDJ-SZ                               | $2000              | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
+| Rane Sixty-Two \[33\]                        | $2000              | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Four \[34\]                       | $2200              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Eight \[35\]                      | $2600              | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane MP2015 \[36\]                           | $2900              | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[37\] |
+| Rane TTM57 \[38\]                            | discontinued       | 10           | N/A                                                               | 10          | N/A                                        | 2 phono        | 24         | 44.1, 48, 96       | likely \[39\] |
 
-1.  This controller is designed for 2 decks, but the Mixxx mapping has
+1.  Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
+
+2.  This controller is designed for 2 decks, but the Mixxx mapping has
     buttons to toggle between decks 1/3 and decks 2/4.
 
-2.  This device is not USB MIDI class compliant. Its signals are
+3.  Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
+
+4.  This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Mac OS X. There is no
     driver available for Linux or Windows.
 
-3.  with MIDI driver. For Linux support, see [this forum
+5.  with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-4.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+6.  [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
-5.  This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
-
-6.  This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
-
 7.  This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Windows and Mac OS X. There
     is no driver available for Linux.
 
-8.  This controller is similar to the Mixtrack Pro 2, which has a
-    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
-    the most part).
+8.  This device is not USB MIDI class compliant. Its signals are
+    translated to MIDI by special drivers on Windows and Mac OS X. There
+    is no driver available for Linux.
 
-9.  This device has a Mixxx mapping started, but it does not do much
-    yet.
+9.  This device is not USB MIDI class compliant. Its signals are
+    translated to MIDI by special drivers on Windows and Mac OS X. There
+    is no driver available for Linux.
 
-10. This is very similar to the A\&H Xone K2, which does have a mapping.
-    The Xone K2 mapping may work for the Xone K1 (for the most part).
+10. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
 
 11. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
     the most part).
 
-12. This controller is similar to the Mixtrack Pro 2, which has a
+12. This device has a Mixxx mapping started, but it does not do much
+    yet.
+
+13. This is very similar to the A\&H Xone K2, which does have a mapping.
+    The Xone K2 mapping may work for the Xone K1 (for the most part).
+
+14. This controller is similar to the Mixtrack Pro 2, which has a
     mapping. Using the Mixtrack Pro 2 mapping would probably work (for
     the most part).
 
-13. This device is USB class compliant, so it should work without any
+15. This controller is similar to the Mixtrack Pro 2, which has a
+    mapping. Using the Mixtrack Pro 2 mapping would probably work (for
+    the most part).
+
+16. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
+
+17. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
-
-14. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
-
-15. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
-
-16. Fun fact: the firmware runs Linux
-
-17. Fun fact: the firmware runs Linux
 
 18. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
@@ -531,40 +551,72 @@ use one sound card with 4 outputs.
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-20. also a standalone analog mixer
+20. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
 
-21. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+21. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
 
-22. also a standalone digital mixer
+22. Fun fact: the firmware runs Linux
 
-23. also a standalone analog mixer
+23. Fun fact: the firmware runs Linux
 
 24. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-25. also a standalone analog mixer
-
-26. This device is USB class compliant, so it should work without any
+25. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-27. also a standalone analog mixer
+26. also a standalone analog mixer
 
-28. also a standalone analog mixer
+27. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+28. also a standalone digital mixer
 
 29. also a standalone analog mixer
 
-30. also a standalone analog mixer
-
-31. This device is USB class compliant, so it should work without any
+30. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-32. also a standalone analog mixer
+31. also a standalone analog mixer
 
-33. This device is USB class compliant, so it should work without any
+32. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+33. also a standalone analog mixer
+
+34. also a standalone analog mixer
+
+35. also a standalone analog mixer
+
+36. also a standalone analog mixer
+
+37. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+38. also a standalone analog mixer
+
+39. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.

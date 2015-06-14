@@ -418,6 +418,7 @@ editor](#tools) and get started :-)
 ### Mixxx 1.12.0
 
 ``` 
+ * Allow each child of a [[creating_skins#widgetstack|<WidgetStack>]] to specify which page is show on hide. See [[https://github.com/mixxxdj/mixxx/pull/576|pull#576]]
  * Add property to elide parts of the text fit to the Text item's (Widget inherited from WLabel) text. Available options are ''none'', ''left'', ''right'', and ''middle''. See [[https://github.com/mixxxdj/mixxx/pull/506|pull#506]]
  * <code=xml><TrackProperty>
  ...

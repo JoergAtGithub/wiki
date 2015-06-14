@@ -8,14 +8,14 @@ built into the motherboard with only 1 stereo 1/8" headphone output (2
 mono channels). While it is possible to get a cheap sound card with only
 2 more outputs and use it together with your onboard sound card, it is
 not recommended (see [explanation below](#Using-multiple-sound-cards)).
-These onboard sound cards are generally not high quality and may pick up
-interference from other devices in the computer such as the power supply
-or hard drive. When mixing digitally in software on your CPU, use 2
-channels for the main output and 2 channels for your headphones. This
-allows you to hear and prepare the track you want to play next without
-your audience hearing it until you are ready to mix it into the main
-output. When mixing on an analog hardware mixer, which is traditional
-(but not necessary) with [vinyl
+Onboard sound cards built into computers are generally not high quality
+and may pick up interference from other devices in the computer such as
+the power supply or hard drive. When mixing digitally in software on
+your CPU, use 2 channels for the main output and 2 channels for your
+headphones. This allows you to hear and prepare the track you want to
+play next without your audience hearing it until you are ready to mix it
+into the main output. When mixing on an analog hardware mixer, which is
+traditional (but not necessary) with [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
 each deck uses 2 channels and the headphones are plugged into the analog
 hardware mixer.

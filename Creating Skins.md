@@ -2905,12 +2905,45 @@ Some examples:
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
+New in Mixxx 1.12.0
+
 If you need the stacks to remember which index they were closed with so
 they can start back up in the right state, do it like this:
 
     <WidgetStack currentpage="[EffectRack1],current" persist="true">
 
 The "currentpage" CO doesn't need to be defined anywhere else.
+
+New in Mixxx 1.12.0
+
+You can define which page to select if a group gets a hide signal.
+`on_hide_select` adds a page to the stack. If this page is hidden, the
+the page with the 0-based index given by on\_hide\_select will be shown.
+If this value is -1, the next page on the stack will be shown.
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<WidgetStack>
+  <Children>
+    <WidgetGroup on_hide_select="0"></WidgetGroup>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show1" on_hide_select="0"></WidgetGroup>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show2" on_hide_select="0"></WidgetGroup>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show3" on_hide_select="0"></WidgetGroup>
+    <!-- as many regular widgets as you like in here -->
+  </Children>
+</WidgetStack>
+` | `
+
+
+First page of the stack
+When any page is hidden, go back to the first page.
+When any page is hidden, go back to the first page.
+When any page is hidden, go back to the first page.
+
+
+
+
+` |
 
 ### SizeAwareStack
 

@@ -1,6 +1,6 @@
 # Mixxx DJ Hardware Guide
 
-## What hardware is needed to DJ with Mixxx?
+## What kind of hardware should I get to DJ with Mixxx?
 
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card

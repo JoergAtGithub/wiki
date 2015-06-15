@@ -104,19 +104,24 @@ what you want to map it to do.
 If you notice any bugs in the mappings, or wish the mapping would work
 differently, please [report it on our bug tracker](reporting%20bugs).
 
+Please update these tables as mappings are added to Mixxx. Keep the
+tables sorted by price. Be sure to add specifications for the sound
+cards of controllers with integrated sound cards to the table towards
+the bottom.
+
 ### Mixxx Certified Mappings
 
 |                                                                                            |                   |                                               |                       |                 |                               |
 | ------------------------------------------------------------------------------------------ | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                                                     | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                           | $250              | 2 deck all-in-one                             | no                    | MIDI            | 1.11                          |
+| [Hercules DJ Console RMX 2](http://www.hercules.com/us/DJ-Music/bdd/p/193/djconsole-rmx-2) | $300              | 2 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)                                     | $300              | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |
 | [American Audio VMS4](American%20Audio%20VMS4)                                             | $400              | 4 deck all-in-one                             | yes                   | MIDI            | 1.9                           |
 | [Reloop Terminal Mix](Reloop%20Terminal%20Mix) 4                                           | $400              | 4 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [DJ TechTools MIDIFighter](http://midifighter.com)                                         | discontinued      | button grid                                   | no                    | MIDI            | 1.8                           |
 | [Denon HS5500](Denon%20HS5500)                                                             | discontinued      | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 1.12                          |
 | [eks Otus](eks%20Otus)                                                                     | discontinued      | 1 turntable + 2 deck mixer                    | no                    | HID             | 1.11                          |
-| [Hercules DJ Console RMX 2](http://www.hercules.com/de/DJ-Musik/bdd/p/193/djconsole-rmx-2) | $300              | basic 2 deck all-in-one                       | yes                   | MIDI            | 1.11                          |
 | [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                             | yes                   | HID             | 1.11                          |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)                                   | discontinued      | basic 2 deck all-in-one                       | yes                   | HID             | 1.11                          |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2)                           | discontinued      | basic 4 deck all-in-one                       | no                    | MIDI + HID      | 1.11                          |
@@ -406,12 +411,14 @@ use one sound card with 4 outputs.
 | Device                       | Price (USD) \[20\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | Behringer BCD3000            | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | Numark Mixtrack Pro 2        | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 1           | 1/4" mic                                                                 | 1 mic          | 16         | 44.1, 48           | yes   |
+| Hercules DJ Console RMX 2    | $300               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                             | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1, 48, 88.2, 96 | yes   |
 | Allen & Heath Xone K2        | $300               | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
 | Reloop Terminal Mix 4        | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
 | Numark N4                    | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
 | Denon MC6000 Mk2             | $700               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone            | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic                                             | 4 phono, 1 mic | 24         | 44.1               | ?     |
 | Behringer BCD2000            | discontinued       | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | Denon DN-HS550               | discontinued       | ?            | ?                                                          | ?           | ?                                                                        | 16             | 44.1       | ?                  |       |
+| Hercules DJ Console RMX      | discontinued       | 4            | 4 1/4" balanced, 4 RCA, 2 1/4" headphone                   | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | 16, 24     | 44.1, 96           | yes   |
 | Mixvibes U-Mix Control Pro 2 | discontinued       | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | ?          | ?                  | ?     |
 | Numark Omni Control          | discontinued       | 4            | 4 RCA, 1 1/4" headphone                                    | 1           | 1/14" mic                                                                | 1 mic          | 24         | 44.1, 88.2         | no    |
 | Reloop Terminal Mix 2        | discontinued       | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1 1/4" mic                                                        | 1 phono, 1 mic | ?          | ?                  | ?     |

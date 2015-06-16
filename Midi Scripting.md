@@ -217,9 +217,7 @@ engine.setValue(string group, string key, double newValue);
 
 To check a Mixxx control value, call `engine.getValue()` with the
 "`group`" and "`key`" values for a particular Mixxx control, a list of
-which can be found
-[here](midi_controller_mapping_file_format#ui_midi_controls_and_names).
-So for example:
+which can be found [here](mixxxcontrols). So for example:
 
 ``` javascript
 var currentValue = engine.getValue("[Channel1]","rate");

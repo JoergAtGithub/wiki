@@ -19,10 +19,12 @@ pages. There are many tutorials online, such as
 who have never programmed before. However, understanding them may
 require understanding HTML, the language used to write Web pages (HTML
 is fairly simple and easy to learn the basics. Knowing HTML is a good
-skill to have in general). Mozilla Developer Network has helpful
-resources for JavaScript programming that focus on the language itself
-without regards to the Web, although these may not be very easy to
-understand for people without any programming experience:
+skill to have in general). If you have any programming experiencing, you
+can probably learn the basics of JavaScript quickly and easily. Mozilla
+Developer Network has helpful resources for JavaScript programming that
+focus on the language itself without regards to the Web, although these
+may not be very easy to understand for people without any programming
+experience:
 
   - [Language basics crash
     course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)
@@ -32,13 +34,13 @@ understand for people without any programming experience:
   - [JavaScript
     Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-## A Handy Tip
+**A handy tip:** When you're testing your scripts, you don't have to
+restart Mixxx. Every time you save your file, Mixxx will reload it
+immediately. This can make testing changes very fast.
 
-When you're testing your scripts, you don't have to restart Mixxx. Every
-time you save your file, Mixxx will reload it immediately. This can make
-testing changes very fast.
+## Getting started
 
-## Naming conventions
+### File and function naming conventions
 
 Script files use the naming convention
 `<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`)
@@ -51,42 +53,7 @@ Files\Mixxx` on Windows.) Functions use the naming convention
 These are very important to avoid name collisions with other scripts
 that may be loaded.
 
-## Linking scripts to device controls
-
-MIDI controller mapping files are described on [MIDI controller mapping
-file
-format](http://www.mixxx.org/wiki/doku.php/midi_controller_mapping_file_format)
-page. This XML file defines how MIDI controls are mapped to MIDI
-commands.
-
-To link a script function to a particular control in the device's XML
-MIDI mapping file, put the full function name in the \<key\> tag, and a
-\<Script-Binding/\> tag in the \<options\> block, like so:
-
-``` XML
-            <control>    <!--    Pitch slider    -->
-                <group>[Master]</group>
-                <key>StantonSCS3d.pitchSlider</key>
-                <status>0xB0</status>
-                <midino>0x04</midino>
-                <options>
-                    <Script-Binding/>
-                </options>
-            </control>
-```
-
-The value for \<group\> doesn't matter when using a script function, but
-it still needs to be valid or the XML parser will report an error. It is
-also passed to the function as an extra parameter (since v1.8.) (This is
-useful for dual-deck controllers since you only need one function that
-checks the \<group\> and reacts appropriately.) No tags or options are
-considered other than those shown above, so you can leave them out.
-
-When this device control is operated, the named script function is
-called. It is then up to the function to effect all desired changes
-(Mixxx properties, device LEDs, etc.)
-
-## Script files & functions
+### Linking a JavaScript mapping file to an XML mapping file
 
 There is a default script function file called
 `midi-mappings-scripts.js` which contains functions common to all
@@ -117,7 +84,7 @@ controller name. It looks like this:
 ...and you would replace the name with whatever you entered for
 'functionprefix' in the XML file above.
 
-### Init and Shutdown functions
+### init and shutdown functions
 
 **All device script files are expected to contain initialize and
 shutdown functions** (called `<manufacturer><device>.init(ID,debugging)`
@@ -129,6 +96,41 @@ parameter is the `controller id` attribute from the XML file and is
 useful for identifying the particular controller instance in print
 statements and the `debugging` parameter is set to **true** if the user
 specified controller debugging on the command line. (v1.11 and higher.)
+
+### Linking MIDI signals to JavaScript functions
+
+MIDI controller XML mapping files are described on the [MIDI controller
+mapping file format](MIDI%20controller%20mapping%20file%20format) page.
+This XML file defines how MIDI controls are mapped to MIDI commands.
+
+To link a script function to a particular control in the device's XML
+MIDI mapping file, put the full function name in the \<key\> tag, and a
+\<Script-Binding/\> tag in the \<options\> block, like so:
+
+``` XML
+            <control>    <!--    Pitch slider    -->
+                <group>[Master]</group>
+                <key>StantonSCS3d.pitchSlider</key>
+                <status>0xB0</status>
+                <midino>0x04</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+```
+
+The value for \<group\> doesn't matter when using a script function, but
+it still needs to be valid or the XML parser will report an error. It is
+also passed to the function as an extra parameter (since v1.8.) (This is
+useful for dual-deck controllers since you only need one function that
+checks the \<group\> and reacts appropriately.) No tags or options are
+considered other than those shown above, so you can leave them out.
+
+When this device control is operated, the named script function is
+called. It is then up to the function to effect all desired changes
+(Mixxx properties, device LEDs, etc.)
+
+## Programming mappings
 
 ### Function definitions
 
@@ -164,47 +166,6 @@ ControllerName.functionName = function (channel, control) {
 in the script file(s) will be called, regardless of the number of
 parameters.)*
 
-### System-exclusive message handing functions
-
-Data passed from SysEx messages to functions are, in order:
-
-1.  an array of raw data bytes
-2.  the length of that array
-
-Therefore, function definitions should look like:
-
-``` javascript
-ControllerName.inboundSysex = function (data, length) {
-    ...
-}
-```
-
-To invoke the above function, add the following mapping to the
-`<controls>` section of your XML preset file:
-
-    <control>
-        <status>0xf0</status>
-        <group>[Master]</group>
-        <key>ControllerName.inboundSysex</key>
-        <options>
-            <Script-Binding/>
-        </options>
-    </control>
-
-The bytes received are completely up to the controller so consult the
-user manual or the manufacturer for details. If the controller can send
-different SysEx messages, your single function is responsible for
-deciding which has been received then taking the appropriate action.
-
-*Note that some controllers may send bytes that violate MIDI standards,
-e.g. setting the high bit in a data byte or using undefined status bytes
-(like `0xF9`.) On Linux, recent versions of ALSA (from November 2012
-onward) automatically standardize these by breaking the bytes into two
-nybbles and sending two bytes for every one received from the
-controller. For example `0xF0 0x97 0x30 0xF7` would become
-`0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
-details.*
-
 ### Reading and setting Mixxx control values
 
 Script functions can check and set Mixxx control values using the
@@ -237,53 +198,6 @@ you've defined `currentDeck` and `currentValue` here):
 
 ``` javascript
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
-```
-
-### Button presses
-
-MIDI buttons usually send a signal with a value of 0x7f when the button
-is pressed and 0x00 when the button is released. Thus, JavaScript
-functions mapped to button presses will be called both when the button
-is pressed and released. To make the function only do something when the
-button is pressed, wrap the function in an if statement checking the
-value parameter:
-
-``` javascript
-MyController.someButton = function (channel, control, value, status, group) {
-    if (value) { // the number 0 is the same as false; positive numbers are the same as true
-        // do something when this button is pressed
-    }
-}
-```
-
-### Modifier (shift) buttons
-
-To map MIDI signals to different actions depending on whether a modifier
-button is pressed, declare a global boolean (true/false) variable at the
-top of your JavaScript file to keep track of whether the modifier button
-is currently pressed. In the XML file, map the modifier button to a
-function that toggles the state of this global variable and map other
-controls to functions that check the state of this global variable. For
-example:
-
-``` javascript
-MyController.shift = false
-
-MyController.shiftButton = function (channel, control, value, status, group) {
-    // Note that there is no 'if (value)' here so this executes both when the shift button is pressed and when it is released.
-    // Therefore, MyController.shift will only be true while the shift button is held down
-    MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
-}
-
-MyController.someButton = function (channel, control, value, status, group) {
-    if (value) { // only do stuff when the button is pressed, not when it is released
-        if (MyController.shift) {
-            // do something when this button and the shift button are both pressed
-        } else {
-            // do something else when this button is pressed but the shift button is not pressed
-        }
-    }
-}
 ```
 
 ### Soft-takeover
@@ -446,51 +360,7 @@ midi.sendSysexMsg(byteArray,byteArray.length);
 Here again, it's completely up to you (and your controller's MIDI spec)
 what those bytes should be for the change you wish to effect.
 
-### Example functions
-
-Here are some simple examples to get you started.
-
-To control the play button for Deck 1 and light its LED:
-
-``` javascript
-MyController.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
-    var currentlyPlaying = engine.getValue("[Channel1]","play");
-    if (currentlyPlaying == 1) {    // If currently playing
-        engine.setValue("[Channel1]","play",0);    // Stop
-        midi.sendShortMsg(0x80,0x11,0x00);    // Turn off the Play LED
-    }
-    else {    // If not currently playing,
-        engine.setValue("[Channel1]","play",1);    // Start
-        midi.sendShortMsg(0x90,0x11,0x7F);    // Turn on the Play LED
-    }
-}
-```
-
-To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
-(assuming \<group\> is specified appropriately in the XML file)
-
-``` javascript
-MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
-    var currentValue = engine.getValue(group,"rate");
-    engine.setValue(group,"rate",currentValue+(value-64)/128);
-}
-```
-
-To find the current elapsed time in seconds of a track on the specified
-deck (intended to be called from another function):
-
-``` javascript
-MyController.elapsedTime = function (deck) {
-    return engine.getValue("[Channel"+deck+"]","duration") * engine.getValue("[Channel"+deck+"]","playposition");
-}
-```
-
-**IMPORTANT NOTE:** You must always declare variables with "var" when
-you first use them since it establishes scope. If you omit this, the
-variable becomes global and will clobber anything else with the same
-name even if it's in another script file.
-
-### Automatic reactions
+### Automatic reactions to changes in Mixxx
 
 Up to this point, script functions are only called in response to the
 controller being manipulated. They can also be called automatically in
@@ -632,7 +502,7 @@ MyController.lightUp = function (led,color) {
 ...
 ```
 
-### Spinback and Brake effect
+### Spinback and brake effect
 
 *Introduced in v1.11*
 
@@ -751,4 +621,136 @@ common-controller-scripts.js file:
     track having the correct original BPM value.) If more than two
     seconds pass between taps, the history is erased.
 
-<sup>1</sup> Introduced in 1.11.0 <sup>2</sup> Renamed in 1.11.0
+<sup>1</sup> Introduced in 1.11.0 <sup>2</sup> Renamed in 1.11.
+
+### System-exclusive (sysex) message handing functions
+
+Data passed from SysEx messages to functions are, in order:
+
+1.  an array of raw data bytes
+2.  the length of that array
+
+Therefore, function definitions should look like:
+
+``` javascript
+ControllerName.inboundSysex = function (data, length) {
+    ...
+}
+```
+
+To invoke the above function, add the following mapping to the
+`<controls>` section of your XML preset file:
+
+    <control>
+        <status>0xf0</status>
+        <group>[Master]</group>
+        <key>ControllerName.inboundSysex</key>
+        <options>
+            <Script-Binding/>
+        </options>
+    </control>
+
+The bytes received are completely up to the controller so consult the
+user manual or the manufacturer for details. If the controller can send
+different SysEx messages, your single function is responsible for
+deciding which has been received then taking the appropriate action.
+
+*Note that some controllers may send bytes that violate MIDI standards,
+e.g. setting the high bit in a data byte or using undefined status bytes
+(like `0xF9`.) On Linux, recent versions of ALSA (from November 2012
+onward) automatically standardize these by breaking the bytes into two
+nybbles and sending two bytes for every one received from the
+controller. For example `0xF0 0x97 0x30 0xF7` would become
+`0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
+details.*
+
+## Additional examples
+
+Here are some simple examples to get you started.
+
+To control the play button for Deck 1 and light its LED:
+
+``` javascript
+MyController.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
+    var currentlyPlaying = engine.getValue("[Channel1]","play");
+    if (currentlyPlaying == 1) {    // If currently playing
+        engine.setValue("[Channel1]","play",0);    // Stop
+        midi.sendShortMsg(0x80,0x11,0x00);    // Turn off the Play LED
+    }
+    else {    // If not currently playing,
+        engine.setValue("[Channel1]","play",1);    // Start
+        midi.sendShortMsg(0x90,0x11,0x7F);    // Turn on the Play LED
+    }
+}
+```
+
+To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
+(assuming \<group\> is specified appropriately in the XML file)
+
+``` javascript
+MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
+    var currentValue = engine.getValue(group,"rate");
+    engine.setValue(group,"rate",currentValue+(value-64)/128);
+}
+```
+
+To find the current elapsed time in seconds of a track on the specified
+deck (intended to be called from another function):
+
+``` javascript
+MyController.elapsedTime = function (deck) {
+    return engine.getValue("[Channel"+deck+"]","duration") * engine.getValue("[Channel"+deck+"]","playposition");
+}
+```
+
+**IMPORTANT NOTE:** You must always declare variables with "var" when
+you first use them since it establishes scope. If you omit this, the
+variable becomes global and will clobber anything else with the same
+name even if it's in another script file.
+
+### Button presses
+
+MIDI buttons usually send a signal with a value of 0x7f when the button
+is pressed and 0x00 when the button is released. Thus, JavaScript
+functions mapped to button presses will be called both when the button
+is pressed and released. To make the function only do something when the
+button is pressed, wrap the function in an if statement checking the
+value parameter:
+
+``` javascript
+MyController.someButton = function (channel, control, value, status, group) {
+    if (value) { // the number 0 is the same as false; positive numbers are the same as true
+        // do something when this button is pressed
+    }
+}
+```
+
+### Modifier (shift) buttons
+
+To map MIDI signals to different actions depending on whether a modifier
+button is pressed, declare a global boolean (true/false) variable at the
+top of your JavaScript file to keep track of whether the modifier button
+is currently pressed. In the XML file, map the modifier button to a
+function that toggles the state of this global variable and map other
+controls to functions that check the state of this global variable. For
+example:
+
+``` javascript
+MyController.shift = false
+
+MyController.shiftButton = function (channel, control, value, status, group) {
+    // Note that there is no 'if (value)' here so this executes both when the shift button is pressed and when it is released.
+    // Therefore, MyController.shift will only be true while the shift button is held down
+    MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
+}
+
+MyController.someButton = function (channel, control, value, status, group) {
+    if (value) { // only do stuff when the button is pressed, not when it is released
+        if (MyController.shift) {
+            // do something when this button and the shift button are both pressed
+        } else {
+            // do something else when this button is pressed but the shift button is not pressed
+        }
+    }
+}
+```

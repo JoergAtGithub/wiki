@@ -12,8 +12,9 @@ plans.
 
 ## User Documentation
 
-  - [DJ Hardware Guide](Hardware%20compatibility): Explains options of
+  - [DJ Hardware Guide](Hardware%20compatibility): Explains options for
     hardware setups for DJing with Mixxx and lists compatible devices
+    with descriptions and prices
   - [Manual](http://mixxx.org/manual/latest/)
   - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)

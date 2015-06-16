@@ -800,8 +800,9 @@ MyController.deck = { // a hash table (technically an object) to store which dec
     '[Channel2]': '[Channel2]'
 }
 MyController.channelRegEx = /\[Channel(\d+)\]/ // a regular expression used in the deckToggleButton function
+                                               // This extracts the number from the strings '[Channel1]' ... '[Channel4]'
                                                // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
-MyController.buttons = {
+MyController.buttons = { // a hash table that stores the MIDI notes that correspond to buttons
     '[Channel1]': {
         'deckToggle': 0x01
      },

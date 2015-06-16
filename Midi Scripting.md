@@ -241,6 +241,53 @@ you've defined `currentDeck` and `currentValue` here):
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
 
+### Button presses
+
+MIDI buttons usually send a signal with a value of 0x7f when the button
+is pressed and 0x00 when the button is released. Thus, JavaScript
+functions mapped to button presses will be called both when the button
+is pressed and released. To make the function only do something when the
+button is pressed, wrap the function in an if statement checking the
+value parameter:
+
+``` javascript
+MyController.someButton = function (channel, control, value, status, group) {
+    if (value) { // the number 0 is the same as false; positive numbers are the same as true
+        // do something when this button is pressed
+    }
+}
+```
+
+### Modifier (shift) buttons
+
+To map MIDI signals to different actions depending on whether a modifier
+button is pressed, declare a global boolean (true/false) variable at the
+top of your JavaScript file to keep track of whether the modifier button
+is currently pressed. In the XML file, map the modifier button to a
+function that toggles the state of this global variable and map other
+controls to functions that check the state of this global variable. For
+example:
+
+``` javascript
+MyController.shift = false
+
+MyController.shiftButton = function (channel, control, value, status, group) {
+    // Note that there is no 'if (value)' here so this executes both when the shift button is pressed and when it is released.
+    // Therefore, MyController.shift will only be true while the shift button is held down
+    MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
+}
+
+MyController.someButton = function (channel, control, value, status, group) {
+    if (value) { // only do stuff when the button is pressed, not when it is released
+        if (MyController.shift) {
+            // do something when this button and the shift button are both pressed
+        } else {
+            // do something else when this button is pressed but the shift button is not pressed
+        }
+    }
+}
+```
+
 ### Soft-takeover
 
 *Introduced in v1.10.0.*

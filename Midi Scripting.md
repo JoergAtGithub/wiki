@@ -809,8 +809,8 @@ MyController.buttons = {
         'deckToggle': 0x02
      }
 }
-MyController.buttons['[Channel3]'] = MyController.buttons['[Channel1]']
-MyController.buttons['[Channel4]'] = MyController.buttons['[Channel2]']
+MyController.buttons['[Channel3]'] = MyController.buttons['[Channel1]'] // Copy [Channel1] to [Channel3]
+MyController.buttons['[Channel4]'] = MyController.buttons['[Channel2]'] // Copy [Channel2] to [Channel4]
 
 MyController.init = function () {
     // Set up the controller to manipulate decks 1 & 2 when this script is loaded (when Mixxx starts or you save an edited script file)
@@ -818,16 +818,7 @@ MyController.init = function () {
     MyController.initDeck('[Channel2]')
 }
 
-MyController.shutdown = function() {
-   // Turn off all LEDs. Consult your controller's MIDI documentation for how to do this on your controller. 
-   for (i = 1; i <= 40; i++) {
-        midi.sendShortMsg(
-            0x90,
-            i,
-            0x00
-        )
-    }
-}
+MyController.shutdown = function() {}
 
 MyController.deckToggleButton = function (channel, control, value, status, group) {
     if (value) { // only execute the below code when the button is pressed but not when it is released
@@ -852,7 +843,7 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
     // Execute code to set up the controller for manipulating a deck
     // Having this function allows you to call the same code from the script's init function and the deckToggleButton function without having to copy and paste code
 
-    // Figure out which deck was being controlled before so [[#Automatic-reactions-to-changes-in-Mixxx|automatic reactions to changes in Mixxx]] can be disabled for that deck
+    // Figure out which deck was being controlled before so automatic reactions to changes in Mixxx (see above) can be disabled for that deck
     var disconnectDeck = parseInt(MyController.channelRegEx.exec(group)[1])
     if (disconnectDeck <= 2) {
         disconnectDeck += 2

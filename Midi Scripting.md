@@ -784,14 +784,14 @@ MyController.someButton = function (channel, control, value, status, group) {
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
 a 4 deck controller by setting up your script following the example
-below with the buttons you want to change between decks 1/3 and decks
-2/4 mapped to the deckToggleButton functino. For every MIDI control that
-you want to map to a value that changes something about a specific deck,
-in the XML mapping file, map it to a function like the playButton
-function in the script below that starts with 'group =
-MyController.deck\[group\]'. Use \[Channel1\] as the value for the
-\<group\> element in the XML file for controls that manipulate decks 1/3
-and \[Channel2\] for decks 2/4.
+below. For every MIDI control that you want to map to a value that
+changes something about a specific deck, in the XML mapping file, map it
+to a function like the playButton function in the script below that
+starts with 'group = MyController.deck\[group\]'. Use \[Channel1\] as
+the value for the \<group\> element in the XML file for controls that
+manipulate decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you
+want to change between decks 1/3 and decks 2/4 to the deckToggleButton
+function
 
 ``` javascript
 MyController.deck = { // a hash table (technically an object) to store which deck each side of the controller is manipulating

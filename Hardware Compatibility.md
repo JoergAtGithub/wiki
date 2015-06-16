@@ -344,7 +344,7 @@ into analog DJ mixers, which typically only have RCA inputs (RCA cables
 cannot be balanced). Most live sound mixers have balanced 1/4" inputs.
 If you need to interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
-Presonus.
+Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
 If you want to plug a microphone into your sound card, it will need a
 microphone preamplifier. If you want to plug an electric guitar or bass

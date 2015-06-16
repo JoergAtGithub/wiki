@@ -54,7 +54,8 @@ plans.
   - [Mixxx controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
   - [Controller scripting with JavaScript](midi_scripting): map advanced
-    behaviors including jog wheel scratching
+    behaviors including jog wheel scratching, modifier (shift) buttons,
+    and deck toggle buttons
   - [HID controller mapping file format](hid_mapping_format):
     brainstorming page for how we might implement HID mapping. Right
     now, you must use scripting (see above)

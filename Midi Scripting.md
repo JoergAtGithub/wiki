@@ -830,7 +830,7 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
     midi.sendShortMsg(
         0x90,
         MyController.buttons[group]['deckToggle'],
-        (disconnectDeck > 2) ? 0x7f : 0x00 // If disconnectDeck is greater than 2, send 0x07; otherwise send 0x00
+        (disconnectDeck > 2) ? 0x7f : 0x00 // If disconnectDeck is greater than 2, send 0x7f; otherwise send 0x00
                                            // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
     )
 

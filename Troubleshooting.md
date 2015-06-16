@@ -96,6 +96,45 @@ device selected for at least one output and that the selected sample
 rate is supported by the device (Mixxx will complain when you click
 Apply if it isn't.)
 
+## Mixxx says I have no HID controllers attached even though I do (GNU/Linux)
+
+This happens on GNU/Linux and results from not having write permissions
+to USB devices. (Mixxx will say something to this effect in the log when
+it scans for HID devices.) To fix this, do the following:
+
+1.  Open a console
+2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
+    can change the number and name as appropriate): `sudo nano
+    /etc/udev/rules.d/15-mixxx-usb.rules`
+3.  Edit that file and add the following: `# Allow scanning of USB
+    devices
+    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users"
+    
+    # Allow communicating with HID devices
+    ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"` (use
+    whatever group name you prefer.) Some distributions (like AV Linux
+    6.0) may also require adding this line as well: `KERNEL=="hiddev*",
+    NAME="usb/%k", GROUP="users"
+    `
+4.  Save and exit.
+5.  Enter `sudo /etc/init.d/udev restart`
+6.  If your user account is not already a member of `users` (or whatever
+    group name you used in the `rules` file above,) enter `sudo usermod
+    -a -G users $USER`
+7.  Log off and back on so your user account gets the new group and
+    associated permissions.
+8.  Start Mixxx and your HID devices should now be listed under
+    Controllers in the Preferences window.
+
+## I can't see my MIDI device
+
+This happens on GNU/Linux where devices like the American Audio VMS4.1
+only show up as an HID device, not a MIDI device. To fix this, do the
+following:
+
+1.  On login, open a console
+2.  Enter `modprobe snd-seq-midi`
+
 ## Errors on starting Mixxx
 
 **`Could not open xml file: "/usr/local/share/mixxx/schema.xml"`**
@@ -279,45 +318,6 @@ loads in the `mixxx.log` plain text file.
     * The user library folder is listed below the current users home directory
     * Navigate to ''Application Support/Mixxx''
 ```
-
-## Mixxx says I have no HID controllers attached even though I do
-
-This happens on Linux and results from not having write permissions to
-USB devices. (Mixxx will say something to this effect in the log when it
-scans for HID devices.) To fix this, do the following:
-
-1.  Open a console
-2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
-    can change the number and name as appropriate): `sudo nano
-    /etc/udev/rules.d/15-mixxx-usb.rules`
-3.  Edit that file and add the following: `# Allow scanning of USB
-    devices
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GROUP="users"
-    
-    # Allow communicating with HID devices
-    ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"` (use
-    whatever group name you prefer.) Some distributions (like AV Linux
-    6.0) may also require adding this line as well: `KERNEL=="hiddev*",
-    NAME="usb/%k", GROUP="users"
-    `
-4.  Save and exit.
-5.  Enter `sudo /etc/init.d/udev restart`
-6.  If your user account is not already a member of `users` (or whatever
-    group name you used in the `rules` file above,) enter `sudo usermod
-    -a -G users $USER`
-7.  Log off and back on so your user account gets the new group and
-    associated permissions.
-8.  Start Mixxx and your HID devices should now be listed under
-    Controllers in the Preferences window.
-
-## I can't see my MIDI device
-
-This happens on Linux where devices like the American Audio VMS4.1 only
-show up as an HID device, not a MIDI device. To fix this, do the
-following:
-
-1.  On login, open a console
-2.  Enter `modprobe snd-seq-midi`
 
 ## I'm using two or more separate sound cards and one/some of them (usually assigned to headphones) are crackling
 

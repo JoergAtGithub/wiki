@@ -694,47 +694,8 @@ details.*
 
 ## Additional examples
 
-Here are some simple examples to get you started.
-
-To control the play button for Deck 1 and light its LED:
-
-``` javascript
-MyController.playButton1 = function (channel, control, value, status) {    // Play button for deck 1
-    var currentlyPlaying = engine.getValue("[Channel1]","play");
-    if (currentlyPlaying == 1) {    // If currently playing
-        engine.setValue("[Channel1]","play",0);    // Stop
-        midi.sendShortMsg(0x80,0x11,0x00);    // Turn off the Play LED
-    }
-    else {    // If not currently playing,
-        engine.setValue("[Channel1]","play",1);    // Start
-        midi.sendShortMsg(0x90,0x11,0x7F);    // Turn on the Play LED
-    }
-}
-```
-
-To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
-(assuming \<group\> is specified appropriately in the XML file)
-
-``` javascript
-MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
-    var currentValue = engine.getValue(group,"rate");
-    engine.setValue(group,"rate",currentValue+(value-64)/128);
-}
-```
-
-To find the current elapsed time in seconds of a track on the specified
-deck (intended to be called from another function):
-
-``` javascript
-MyController.elapsedTime = function (deck) {
-    return engine.getValue("[Channel"+deck+"]","duration") * engine.getValue("[Channel"+deck+"]","playposition");
-}
-```
-
-**IMPORTANT NOTE:** You must always declare variables with "var" when
-you first use them since it establishes scope. If you omit this, the
-variable becomes global and will clobber anything else with the same
-name even if it's in another script file.
+Here are some examples to get you started. These examples start simple
+and get progressively more complex.
 
 ### Button presses
 
@@ -752,6 +713,23 @@ MyController.someButton = function (channel, control, value, status, group) {
     }
 }
 ```
+
+### Rescale incoming values
+
+To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
+(assuming \<group\> is specified appropriately in the XML file)
+
+``` javascript
+MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
+    var currentValue = engine.getValue(group,"rate");
+    engine.setValue(group,"rate",currentValue+(value-64)/128);
+}
+```
+
+**IMPORTANT NOTE:** You must always declare variables with "var" when
+you first use them inside a function since it establishes scope. If you
+omit this, the variable becomes global and will clobber anything else
+with the same name even if it's in another script file.
 
 ### Modifier (shift) buttons
 

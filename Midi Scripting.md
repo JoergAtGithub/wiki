@@ -8,10 +8,12 @@ It enables MIDI controls to be mapped to
 functions stored in function library files, freeing Mixxx from a
 one-to-one MIDI mapping ideology. These user-created functions can then
 do anything desired with the MIDI event info such as have a single
-controller button simultaneously affect two or more Mixxx properties
-("controls",) adjust incoming control values to work better with Mixxx
-(scratching,) display a complex LED sequence, or even send messages to
-text displays on the controller.
+controller button simultaneously affect two or more [Mixxx properties
+("controls")](mixxxcontrols), adjust incoming control values to work
+better with Mixxx (i.e. for scratching), display a complex LED sequence,
+send messages to text displays on the controller, or even [turn a 2 deck
+controller into a 4 deck
+controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
 JavaScript is mostly used for programming complex functionality in Web
 pages. There are many tutorials online, such as

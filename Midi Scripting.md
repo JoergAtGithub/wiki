@@ -791,7 +791,7 @@ starts with 'group = MyController.deck\[group\]'. Use \[Channel1\] as
 the value for the \<group\> element in the XML file for controls that
 manipulate decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you
 want to change between decks 1/3 and decks 2/4 to the deckToggleButton
-function
+function.
 
 ``` javascript
 MyController.deck = { // a hash table (technically an object) to store which deck each side of the controller is manipulating

@@ -799,10 +799,11 @@ MyController.deckToggleButton = function (channel, control, value, status, group
         // First, get the number out of the strings '[Channel1]' ... '[Channel4]' so we can do a mathematical comparison with it
         var deckNumber = parseInt( // convert string to an integer number variable
                              MyController.channelRegEx.exec( // execute the regular expression
-                                 MyController.deck[group] // on this string variable
-                             )[1]) // Get the string that matches the part of the regular expression inside the first group of parentheses in the regular expression
-                                   // which is (\d+)
-                                   // this matches any number of digits
+                                 MyController.deck[group] // on this string
+                             )[1] // Get the string that matches the part of the regular expression inside the first group of parentheses in the regular expression
+                                  // which is (\d+)
+                                  // this matches any number of digits
+                          )
         if (deckNumber <= 2) {
             deckNumber += 2 // This is a shortcut for 'deckNumber = decknumber + 2'
         } else {
@@ -829,7 +830,7 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
     midi.sendShortMsg(
         0x90,
         MyController.buttons[group]['deckToggle'],
-        [(disconnectDeck <= 2) ? 0x00 : 0x7f // If disconnectDeck is less than or equal to 2, send 00; otherwise send 0x7f
+        (disconnectDeck <= 2) ? 0x00 : 0x7f // If disconnectDeck is less than or equal to 2, send 00; otherwise send 0x7f
                                              // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
     )
 

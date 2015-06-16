@@ -10,9 +10,9 @@ one-to-one MIDI mapping ideology. These user-created functions can then
 do anything desired with the MIDI event info such as have a single
 controller button simultaneously affect two or more [Mixxx properties
 ("controls")](mixxxcontrols), adjust incoming control values to work
-better with Mixxx (i.e. for scratching), display a complex LED sequence,
-send messages to text displays on the controller, or even [turn a 2 deck
-controller into a 4 deck
+better with Mixxx (i.e. for [scratching](#scratching)), display a
+complex LED sequence, send messages to text displays on the controller,
+or even [turn a 2 deck controller into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
 JavaScript is mostly used for programming complex functionality in Web
@@ -46,10 +46,10 @@ immediately. This can make testing changes very fast.
 
 Script files use the naming convention
 `<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`)
-and are found in the midi/ subdirectory wherever your Mixxx shared data
-is stored. (Usually `/usr/share/mixxx` on Linux/Mac, and `C:\Program
-Files\Mixxx` on Windows.) Functions use the naming convention
-`<manufacturer><device>.<function name>` (e.g.
+and are found in the controllers/ subdirectory wherever your Mixxx
+shared data is stored. (Usually `/usr/share/mixxx` on Linux/Mac, and
+`C:\Program Files\Mixxx` on Windows.) Functions use the naming
+convention `<manufacturer><device>.<function name>` (e.g.
 `StantonSCS3d.pitchSlider`). Global variables use
 `<manufacturer><device>.<variable name>` (e.g. `StantonSCS3d.deck`).
 These are very important to avoid name collisions with other scripts
@@ -63,8 +63,9 @@ controllers and is always loaded. See
 [below](#available-common-functions) for information on these functions.
 
 To specify additional script files to load, add the following section to
-the device's XML MIDI mapping file right underneath the \<controller\>
-tag:
+the device's [XML MIDI mapping
+file](MIDI%20controller%20mapping%20file%20format) right underneath the
+\<controller\> tag:
 
 ``` XML
         <scriptfiles>

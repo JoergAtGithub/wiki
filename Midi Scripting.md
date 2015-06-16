@@ -21,7 +21,7 @@ pages. There are many tutorials online, such as
 who have never programmed before. However, understanding them may
 require understanding HTML, the language used to write Web pages (HTML
 is fairly simple and easy to learn the basics. Knowing HTML is a good
-skill to have in general). If you have any programming experiencing, you
+skill to have in general). If you have any programming experience, you
 can probably learn the basics of JavaScript quickly and easily. Mozilla
 Developer Network has helpful resources for JavaScript programming that
 focus on the language itself without regards to the Web, although these

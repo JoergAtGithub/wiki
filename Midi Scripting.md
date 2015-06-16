@@ -1,9 +1,9 @@
 # MIDI Scripting
 
 In order to support the advanced features of many MIDI controllers,
-Mixxx offers what we call MIDI Scripting (introduced in Mixxx v1.7.0.)
+Mixxx offers what we call MIDI Scripting (introduced in Mixxx v1.7.0).
 It enables MIDI controls to be mapped to
-[QtScript](http://doc.trolltech.com/4.5/qtscript.html) (aka
+[QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
 [Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm))
 functions stored in function library files, freeing Mixxx from a
 one-to-one MIDI mapping ideology. These user-created functions can then
@@ -12,6 +12,25 @@ controller button simultaneously affect two or more Mixxx properties
 ("controls",) adjust incoming control values to work better with Mixxx
 (scratching,) display a complex LED sequence, or even send messages to
 text displays on the controller.
+
+JavaScript is mostly used for programming complex functionality in Web
+pages. There are many tutorials online, such as
+[W3Schools](http://www.w3schools.com/js/default.asp), aimed at people
+who have never programmed before. However, understanding them may
+require understanding HTML, the language used to write Web pages (HTML
+is fairly simple and easy to learn the basics. Knowing HTML is a good
+skill to have in general). Mozilla Developer Network has helpful
+resources for JavaScript programming that focus on the language itself
+without regards to the Web, although these may not be very easy to
+understand for people without any programming experience:
+
+  - [Language basics crash
+    course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)
+  - [JavaScript
+    Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types),
+    a more thorough tutorial
+  - [JavaScript
+    Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 ## A Handy Tip
 

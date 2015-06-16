@@ -240,7 +240,7 @@ map than HID controllers.
 | Akai AFX                                     | $200               | 2 deck effects + pads + touch strip                                            | no                              | MIDI                     |
 | DJ Tech Tools MIDI Fighter Spectra           | discontinued       | 4x4 spring-loaded arcade button grid with LED rings                            | no                              | MIDI                     |
 | DJ Tech Tools MIDI Fighter 3D                | $220               | 4x4 spring-loaded arcade button grid with LED rings + 3D motion sensing        | no                              | MIDI                     |
-| DJ Tech Tools MIDI Fighter Twister           | $220               | 4x4 encoder grid with LED rings and push buttons                               | no                              | MIDI                     |
+| DJ Tech Tools MIDI Fighter Twister           | $220               | 4x4 encoder grid with LED rings and push buttons and multicolor LEDs           | no                              | MIDI                     |
 | Akai AMX                                     | $250               | 2 deck mixer + vinyl hookup                                                    | yes                             | MIDI                     |
 | Gemini Slate 4                               | $250               | 4 deck all-in-one                                                              | yes                             | MIDI                     |
 | Pioneer DDJ-SB                               | $250               | 2 deck all-in-one                                                              | yes                             | MIDI                     |

@@ -817,7 +817,7 @@ MyController.deckToggleButton = function (channel, control, value, status, group
             deckNumber -= 2 // This is a shortcut for 'deckNumber = decknumber - 2'
         }
         MyController.deck[group] = '[Channel' + deckNumber + ']'
-        MyController.initDeck(ElectrixTweaker.deck[group])
+        MyController.initDeck(MyController.deck[group])
     }
 }
 

@@ -18,6 +18,44 @@ Here is a list of the threads Mixxx runs, as of 1.6.2:
   - Sidechain thread - Does non-realtime processing of audio. Used for
     recording to disk and shoutcast broadcasting.
 
+#### NOTE
+
+Event based systems are great for solving some problems; they're
+definitely not the right approach for everything, though, and ---
+importantly --- event-based systems both \[1\] are a /form of
+cooperative multithreading/ and \[2\] are, in effectively every case
+we're liable to run into, in fact built on top of ( lower level )
+classic preemptive multithreading systems. On the other hand, full
+threads / LWPs are still extremely inexpensive on most modern systems,
+and provide access to a good deal of infrastructure which a purely
+user-land cooperative scheduler really fundamentally can't.
+
+In particular, track load and unload is currently extremely expensive (a
+collection of database quarries; cover art retrieval; potentially
+analyzer \[initialization | use \], etc.) having each caching reader run
+in its own thread --- nominally scheduled to some extent by the
+EngineWorkerScheduler, although it's unclear if that actually matters
+\~at all --- can be relatively oblivious to all of that, since in
+general, any given deck doesn't need to simultaneously be loading a
+track and providing continuous decoded output.
+
+The vast majority of the time, there's plenty of compute time to go
+around --- and, in particular, we could comfortably get by having the
+EngineWorkerScheduler ( in it's single thread ) running all of the
+decoding requests it receives. When any deck attempts to load / unload /
+reanalyze a track, though, the resulting workload has a number of
+individual operations which --- individually --- take long enough that
+it produces observable glitching on the other decks. Letting those
+operations stall in kernel space ( mostly in file operations ) while
+other threads run unencumbered makes the issue fairly transparent.
+
+Not saying there's anything wrong with event based architectures, or
+advocating a more expansive use of native threads per se, but it's
+important to keep in mind that threads aren't per se evil: they're just
+(mostly) the correct / necessarily solution to a range of problems
+that're different than those most commonly ( currently ) encountered in
+GUI / UI programming.
+
 Note that a list of threads can be seen when you [generate a backtrace
 with GDB](creating_backtraces), like this one:
 

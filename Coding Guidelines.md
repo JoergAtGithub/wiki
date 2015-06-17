@@ -598,6 +598,29 @@ require more time in code review and you may be asked to re-write the
 code to avoid the usage by your code reviewer. Before using a closure,
 please consider whether it's truly necessary.
 
+Use 8 space indent for line break or reasonable alignment + 4 indent for
+a new logical block. Allays beak after "},"
+
+**Good:**
+
+``` cpp-qt
+    m_pTrackCollection->callSync(
+            [this](TrackCollectionPrivate* pTrackCollectionPrivate) {
+                connect(&pTrackCollectionPrivate->getCrateDAO(),
+                        SIGNAL(added(int)), this, SLOT(slotCrateAdded(int)));
+                connect(&pTrackCollectionPrivate->getCrateDAO(),
+                        SIGNAL(renamed(int, QString)), this,
+                        SLOT(slotCrateRenamed(int, QString)));
+                connect(&pTrackCollectionPrivate->getCrateDAO(),
+                        SIGNAL(deleted(int)), this,
+                        SLOT(slotCrateDeleted(int)));
+                connect(&pTrackCollectionPrivate->getCrateDAO(),
+                        SIGNAL(autoDjChanged(int, bool)), this,
+                        SLOT(slotCrateAutoDjChanged(int, bool)));
+            },
+            __PRETTY_FUNCTION__);
+```
+
 ### variadic templates
 
 Email mixxx-devel with your use case.

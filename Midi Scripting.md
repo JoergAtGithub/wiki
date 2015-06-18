@@ -953,7 +953,6 @@ MyController.deckToggleButton = function (channel, control, value, status, group
         } else {
             deckNumber -= 2 // This is a shortcut for 'deckNumber = decknumber - 2'
         }
-        deckNumber = (deckNumber + 2) % 4 // '%' means 'modulo'. So, this returns the remainder of dividing (deckNumber + 2) by 4.
         MyController.deck[group] = '[Channel' + deckNumber + ']'
         MyController.initDeck(MyController.deck[group]) // Initialize the new deck. This function is defined below.
     }

@@ -823,8 +823,8 @@ rather than:
     }
 
 The two examples above have the same effects, but the first one is more
-intutive because the code as it is written more clearly and concisely
-represents what it does.
+intutive because the code more clearly and concisely represents what it
+does.
 
 ### Turning a 2 deck controller into a 4 deck controller
 

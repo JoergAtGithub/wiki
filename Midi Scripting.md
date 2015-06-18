@@ -957,7 +957,7 @@ MyController.connectDeckControls = function (group, remove) { // This function i
         'play': MyController.playButtonLED,
         'sync_enabled': MyController.syncLED,
         'pfl': MyController.headphoneLED
-        // ... and any other LEDs that should change state when the deck is toggled
+        // ... and any other functions that react to changes in Mixxx controls for a deck
     }
     
     for (var control in controlsToFunctions) { // For each property (key: value pair) in controlsToFunctions, control = that property of controlsToFunctions

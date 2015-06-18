@@ -186,7 +186,7 @@ You'll get output like this:
 
 See above for how to interpret this data.
 
-The program `aseqdump` work similarly, but is a bit more verbose than a
+The program `aseqdump` works similarly, but is a bit more verbose than a
 series of hexidecimal numbers:
 
     $ aseqdump -l

@@ -450,7 +450,9 @@ Here is how to use them:
 - When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp which also allows spin-backs with wheels.)
 ```
 
-Here is an example for the two most common types of wheels:
+Here is an example for the two most common types of wheels. Click the
+tab labeled 'scratchingExample.js' below to open this example as a file
+in your text editor.
 
 ``` javascript
 // The button that enables/disables scratching

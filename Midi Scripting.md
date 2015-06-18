@@ -947,11 +947,11 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
     // Disconnect functions that toggle LEDs when a deck is started/stopped and when sync is toggled
     disconnectDeck = '[Channel' + disconnectDeck + ']'
     engine.connectControl(disconnectDeck, 'play', MyController.playButtonLED, true)
-    engine.connectControl(disconnectDeck, 'sync', MyController.syncButtonLED, true)
+    engine.connectControl(disconnectDeck, 'sync_enabled', MyController.syncButtonLED, true)
 
     // Connect the new deck to these functions
     engine.connectControl(group, 'play', MyController.playButtonLED)
-    engine.connectControl(group, 'sync', MyController.syncButtonLED)
+    engine.connectControl(group, 'sync_enabled', MyController.syncButtonLED)
 }
 
 MyController.playButton = function (channel, control, value, status, group) {

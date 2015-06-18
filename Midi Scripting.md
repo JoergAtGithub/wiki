@@ -794,8 +794,11 @@ Putting codes you need to reference many times throughout your script
 into a global hash table (technically an
 [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 in JavaScript) makes your code more organized, readable, and easier to
-modify later. For example, you could store the MIDI notes for buttons
-and the MIDI values for LED colors:
+modify later. Hash tables are simply a list of keys (names) paired the
+values of those keys (technically in JavaScript, each key is an object
+property). Hash tables are like a convenient container for a list of
+multiple variables. For example, you could store the MIDI notes for
+buttons and the MIDI values for LED colors:
 
 ``` javascript
 MyController.buttons = {

@@ -41,9 +41,14 @@ understand for people without any programming experience:
   - [JavaScript
     Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-**A handy tip:** When you're testing your scripts, you don't have to
-restart Mixxx. Every time you save your file, Mixxx will reload it
-immediately. This can make testing changes very fast.
+**Tip:** If there is already a Mixxx mapping for a controller made by
+the same manufacturer as your controller, you may want to look at that
+mapping for examples. The controllers likely send similar types of
+signals (although they could be very different).
+
+**Tip:** When you're testing your scripts, you don't have to restart
+Mixxx. Every time you save your file, Mixxx will reload it immediately.
+This can make testing changes very fast.
 
 ## Getting started
 

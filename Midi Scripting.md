@@ -19,9 +19,10 @@ JavaScript is mostly used for programming complex functionality in Web
 pages. There are many tutorials online, such as
 [W3Schools](http://www.w3schools.com/js/default.asp), aimed at people
 who have never programmed before. However, understanding them may
-require understanding HTML, the language used to write Web pages (HTML
-is fairly simple and easy to learn the basics. Knowing HTML is a good
-skill to have in general). The [\#additional
+require understanding HTML, the language used to write Web pages. HTML
+is fairly simple and easy to learn the basics. It is very similar to
+XML, the language used for Mixxx's [MIDI controller mapping file
+format](MIDI%20controller%20mapping%20file%20format). The [\#additional
 examples](#additional%20examples) section at the bottom of this page is
 aimed at people with little or no programming experience. It has
 examples for common uses of MIDI scripting to help get you started

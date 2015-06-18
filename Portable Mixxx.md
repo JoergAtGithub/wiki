@@ -56,9 +56,12 @@ Based on Arch.
 
 ## MixxxOS
 
+MixxxOS was the first live GNU/Linux distribution featuring Mixxx. It
+was [abandoned in
+June 2011](http://mixxx.org/forums/viewtopic.php?p=8056#p8056) and the
+last version uses the long-outdated Mixxx 1.8.
+
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?t=1493)
-  - Abandoned June 2011, see [this
-    post](http://mixxx.org/forums/viewtopic.php?p=8056#p8056)
   - [Download
     version 1.2](https://spideroak.com/share/JVUXQ6DYJ5JQ/MixxxOS/media/workspace/mixxxOS/MixxxOS-1.2/iso/MixxxOS-1.2.iso)
     with Mixxx 1.8.

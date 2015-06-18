@@ -44,7 +44,7 @@ to understand for people without any programming experience:
 
 The [last
 example](#turning-a-2-deck-controller-into-a-4-deck-controller) at the
-bottom of this page utilizes a lot of features of JavaScript and has
+bottom of this page utilizes a lot of features of JavaScript. It has
 lots of comments with links to the MDN JavaScript Reference. It may be
 helpful as a quick introduction to the language for experienced
 programmers.

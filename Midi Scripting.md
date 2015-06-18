@@ -42,10 +42,12 @@ to understand for people without any programming experience:
   - [JavaScript
     Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-The last example at the bottom of this page utilizes a lot of features
-of JavaScript and has lots of comments with links to the MDN JavaScript
-Reference. It may be helpful as a quick introduction to the language for
-experienced programmers.
+The [last
+example](#turning-a-2-deck-controller-into-a-4-deck-controller) at the
+bottom of this page utilizes a lot of features of JavaScript and has
+lots of comments with links to the MDN JavaScript Reference. It may be
+helpful as a quick introduction to the language for experienced
+programmers.
 
 **Tip:** If there is already a Mixxx mapping for a controller made by
 the same manufacturer as your controller, you may want to look at that

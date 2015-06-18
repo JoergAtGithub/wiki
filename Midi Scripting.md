@@ -766,6 +766,9 @@ manipulate decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you
 want to change between decks 1/3 and decks 2/4 to the deckToggleButton
 function.
 
+Click the tab below labeled 'deckToggleExample.js' to download this
+example as a file to open in your text editor.
+
 ``` javascript
 MyController.deck = { // a hash table (technically an object) to store which deck each side of the controller is manipulating
                       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object

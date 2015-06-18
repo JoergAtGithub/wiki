@@ -26,12 +26,13 @@ examples](#additional%20examples) section at the bottom of this page is
 aimed at people with little or no programming experience. It has
 examples for common uses of MIDI scripting to help get you started
 writing code in an organized and maintainable way from the start. This
-will make it easier for you and other people to edit the code later. If
-you have any programming experience, you can probably learn the basics
-of JavaScript quickly and easily. Mozilla Developer Network has helpful
-resources for JavaScript programming that focus on the language itself
-without regards to the Web, although these may not be very easy to
-understand for people without any programming experience:
+will make it easier for you and other people to edit the code later.
+
+If you have any programming experience, you can probably learn the
+basics of JavaScript quickly and easily. Mozilla Developer Network has
+helpful resources for JavaScript programming that focus on the language
+itself without regards to the Web, although these may not be very easy
+to understand for people without any programming experience:
 
   - [Language basics crash
     course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)

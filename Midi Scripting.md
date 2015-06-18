@@ -817,9 +817,9 @@ within any function. Now, when writing code to change an LED to green,
 instead of typing the note number for the LED and the value for green
 directly, you can reference the hash tables through your code. In
 addition to being easier to write, this makes your code easier to read.
-Easier to read code helps you remember it does when you look at it again
-later and helps other people who may modify it later. For example, for a
-function that [automatically reacts to
+Easier to read code helps you remember what it does when you look at it
+again later. It also helps other people who may modify the code later.
+For example, for a function that [automatically reacts to
 changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
 a track, you can write:
 

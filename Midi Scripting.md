@@ -869,9 +869,9 @@ the manual.
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
 a 4 deck controller by setting up your script following the example
-below. This example is somewhat complex, so if you are new to
-programming and/or JavaScript, it is recommended that you read the
-examples above before trying to understand this one.
+below. This example is complex, so if you are new to programming and/or
+JavaScript, it is recommended that you read the examples above before
+trying to understand this one.
 
 For every MIDI control that you want to map to a value that changes
 something about a specific deck, in the XML mapping file, map it to a
@@ -924,7 +924,7 @@ MyController.deckToggleButton = function (channel, control, value, status, group
                           )
         deckNumber = (deckNumber + 2) % 4 // '%' means 'modulo'. So, this returns the remainder of dividing (deckNumber + 2) by 4.
         MyController.deck[group] = '[Channel' + deckNumber + ']'
-        MyController.initDeck(MyController.deck[group])
+        MyController.initDeck(MyController.deck[group]) // Initialize the new deck. This function is defined below.
     }
 }
 
@@ -935,23 +935,38 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
     // Figure out which deck was being controlled before so automatic reactions to changes in Mixxx (see above) can be disabled for that deck
     var disconnectDeck = parseInt(MyController.channelRegEx.exec(group)[1])
     disconnectDeck = (disconnectDeck + 2) % 4
+    MyController.connectDeckControls('[Channel'+disconnectDeck+']', true) // disconnect old deck's Mixxx controls from LEDs. This function is defined below.
+    MyController.connectDeckControls(group) // connect new deck's Mixxx controls to LEDs
 
     // Toggle LED that indicates which deck is being controlled
     midi.sendShortMsg(
         0x90,
         MyController.buttons[group]['deckToggle'],
-        (disconnectDeck > 2) ? 0x7f : 0x00 // If disconnectDeck is greater than 2, send 0x7f; otherwise send 0x00
+        (disconnectDeck > 2) ? 0x7f : 0x00 // If the condition in parentheses is true, send 0x7f; otherwise, send 0x00
                                            // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
     )
+}
 
-    // Disconnect functions that toggle LEDs when a deck is started/stopped and when sync is toggled
-    disconnectDeck = '[Channel' + disconnectDeck + ']'
-    engine.connectControl(disconnectDeck, 'play', MyController.playButtonLED, true)
-    engine.connectControl(disconnectDeck, 'sync_enabled', MyController.syncButtonLED, true)
-
-    // Connect the new deck to these functions
-    engine.connectControl(group, 'play', MyController.playButtonLED)
-    engine.connectControl(group, 'sync_enabled', MyController.syncButtonLED)
+MyController.connectDeckControls = function (group, remove) { // This function is not mapped to a MIDI signal; it is only called by this script in the initDeck function below
+    // This function either connects or disconnects automatic reactions to changes in Mixxx (see wiki section above)
+    // Putting this in its own function allows the same code to be reused for both connecting and disconnecting
+    // This is particularly helpful when the list of Mixxx controls connected to LEDs is long
+    
+    remove = (typeof remove !== 'undefined') ? remove : false // If the 'remove' parameter is not passed to this function, set remove = false
+    var controlsToFunctions = { // This hash table maps Mixxx controls to the script functions (not shown in this example) that control LEDs that react to changes in those controls
+        'play': MyController.playButtonLED,
+        'sync_enabled': MyController.syncLED,
+        'pfl': MyController.headphoneLED
+        // ... and any other LEDs that should change state when the deck is toggled
+    }
+    
+    for (var control in controlsToFunctions) { // For each property (key: value pair) in controlsToFunctions, control = that property of controlsToFunctions
+                                               // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+        engine.connectControl(group, control, controlsToFunctions[control], remove)
+        if (! remove) { // '!' means "not"; it inverts the value of a boolean (true/false)
+            engine.trigger(group, control)
+        }
+    }
 }
 
 MyController.playButton = function (channel, control, value, status, group) {
@@ -961,7 +976,7 @@ MyController.playButton = function (channel, control, value, status, group) {
         engine.setValue(
                         group,
                         'play',
-                        ! (engine.getValue(group, 'play') // '!' means "not"; it inverts the value of a boolean (true/false)
+                        ! (engine.getValue(group, 'play')
                         )
     }
 }

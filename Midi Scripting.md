@@ -10,9 +10,9 @@ one-to-one MIDI mapping ideology. These user-created functions can then
 do anything desired with the MIDI event info such as have a single
 controller button simultaneously affect two or more [Mixxx properties
 ("controls")](mixxxcontrols), adjust incoming control values to work
-better with Mixxx (i.e. for [scratching](#scratching)), display a
-complex LED sequence, send messages to text displays on the controller,
-or even [turn a 2 deck controller into a 4 deck
+better with Mixxx (i.e. for
+[\#scratching](#scratching)),-display-a-complex-LED-sequence,-send-messages-to-text-displays-on-the-controller,-or-even-[turn
+a 2 deck controller into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
 JavaScript is mostly used for programming complex functionality in Web
@@ -21,12 +21,17 @@ pages. There are many tutorials online, such as
 who have never programmed before. However, understanding them may
 require understanding HTML, the language used to write Web pages (HTML
 is fairly simple and easy to learn the basics. Knowing HTML is a good
-skill to have in general). If you have any programming experience, you
-can probably learn the basics of JavaScript quickly and easily. Mozilla
-Developer Network has helpful resources for JavaScript programming that
-focus on the language itself without regards to the Web, although these
-may not be very easy to understand for people without any programming
-experience:
+skill to have in general). The [\#additional
+examples](#additional%20examples) section at the bottom of this page is
+aimed at people with little or no programming experience. It has
+examples for common uses of MIDI scripting to help get you started
+writing code in an organized and maintainable way from the start. This
+will make it easier for you and other people to edit the code later. If
+you have any programming experience, you can probably learn the basics
+of JavaScript quickly and easily. Mozilla Developer Network has helpful
+resources for JavaScript programming that focus on the language itself
+without regards to the Web, although these may not be very easy to
+understand for people without any programming experience:
 
   - [Language basics crash
     course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)
@@ -59,8 +64,9 @@ that may be loaded.
 
 There is a default script function file called
 `midi-mappings-scripts.js` which contains functions common to all
-controllers and is always loaded. See
-[below](#available-common-functions) for information on these functions.
+controllers and is always loaded. See [\#available common
+functions](#available%20common%20functions) below for information on
+these functions.
 
 To specify additional script files to load, add the following section to
 the device's [XML MIDI mapping
@@ -222,6 +228,50 @@ you've defined `currentDeck` and `currentValue` here):
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
 
+### Sending messages to the controller to change LEDs or other controller properties
+
+You can send three-byte "short" messages and arbitrary-length
+system-exclusive "long" ones to the controller using the following
+functions:
+
+``` c++
+midi.sendShortMsg(status, byte2, byte3);
+midi.sendSysexMsg(data, length);
+```
+
+Together, these cover virtually all types of MIDI messages you would
+need to send. (This is how you light LEDs, change displays, etc.)
+
+For short messages, call `midi.sendShortMsg()` with:
+
+  - the MIDI status byte
+  - the second data byte
+  - the third data byte
+
+It's completely up to you (and your controller's MIDI spec) what those
+bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.) For example:
+
+``` javascript
+midi.sendShortMsg(0x90,0x11,0x01);   // This might light an LED
+```
+
+For system-exclusive messages, call `midi.sendSysexMsg()` with:
+
+  - An array of data bytes to send, always leading with `0xF0` and
+    ending with `0xF7`
+  - The number of bytes in the array, including the 0xF0 and 0xF7 (start
+    counting with 1 or just use the .length property as below)
+
+<!-- end list -->
+
+``` javascript
+var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
+midi.sendSysexMsg(byteArray,byteArray.length);
+```
+
+Here again, it's completely up to you (and your controller's MIDI spec)
+what those bytes should be for the change you wish to effect.
+
 ### Soft-takeover
 
 *Introduced in v1.10.0.*
@@ -337,50 +387,6 @@ And that's it\! Just make sure to map the button/touch sensor and wheel
 to these script functions [as described
 above](#Linking-MIDI-signals-to-JavaScript-functions) and you'll be
 ready to tear up some tracks.
-
-### Sending messages to the controller to change LEDs or other controller properties
-
-You can send three-byte "short" messages and arbitrary-length
-system-exclusive "long" ones to the controller using the following
-functions:
-
-``` c++
-midi.sendShortMsg(status, byte2, byte3);
-midi.sendSysexMsg(data, length);
-```
-
-Together, these cover virtually all types of MIDI messages you would
-need to send. (This is how you light LEDs, change displays, etc.)
-
-For short messages, call `midi.sendShortMsg()` with:
-
-  - the MIDI status byte
-  - the second data byte
-  - the third data byte
-
-It's completely up to you (and your controller's MIDI spec) what those
-bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.) For example:
-
-``` javascript
-midi.sendShortMsg(0x90,0x11,0x01);   // This might light an LED
-```
-
-For system-exclusive messages, call `midi.sendSysexMsg()` with:
-
-  - An array of data bytes to send, always leading with `0xF0` and
-    ending with `0xF7`
-  - The number of bytes in the array, including the 0xF0 and 0xF7 (start
-    counting with 1 or just use the .length property as below)
-
-<!-- end list -->
-
-``` javascript
-var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
-midi.sendSysexMsg(byteArray,byteArray.length);
-```
-
-Here again, it's completely up to you (and your controller's MIDI spec)
-what those bytes should be for the change you wish to effect.
 
 ### Automatic reactions to changes in Mixxx
 
@@ -501,14 +507,7 @@ case) to light up red one second after the beginTimer call: (Note the
 escaped quotes in the target function call.)
 
 ``` javascript
-// Putting the codes to set LEDs to different colors into a hash table (technically an Object in JavaScript) allows you to write more readable code.
-// For example, to change an LED to green, instead of having to look up the code for green every time, you can just write MyController.colorCodes['green']
 
-MyController.colorCodes = {
-    'red': 0x01,
-    'green': 0x02,
-    'blue': 0x03
-}
 ...
     if (engine.beginTimer(1000,"MyController.lightUp(0x3A,\"red\")",true) == 0) {
         print("LightUp timer setup failed");
@@ -751,6 +750,82 @@ MyController.someButton = function (channel, control, value, status, group) {
 }
 ```
 
+### Storing commonly used MIDI codes in global hash tables
+
+Putting codes you need to reference many times throughout your script
+into a global hash table (technically an
+[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+in JavaScript) makes your code more organized, readable, and easier to
+modify later. For example, you could store the MIDI notes for buttons
+and the MIDI values for LED colors:
+
+``` type=javascript
+MyController.buttons = {
+    '[Channel1]': { // an object within another object
+        'play': 0x01,
+        'cue': 0x02,
+        'sync': 0x03
+    },
+    '[Channel2]': {
+        'play': 0x04,
+        'cue': 0x05,
+        'sync': 0x06
+    }
+}
+
+MyController.colorCodes = {
+    'off': 0x00,
+    'red': 0x01,
+    'green': 0x02,
+    'blue': 0x03
+}
+```
+
+This should be at the top of your script file, outside of any functions,
+so it can be used within any function. For example, to change an LED to
+green, instead of having to look up note number for the button and the
+value for green, you can reference the hash tables. This will also make
+it easier to change which LEDs and colors you set if you decide to
+change those later. It is also more intutive to read and helps you
+remember what the code does when you look at it again later. For
+example, for a function that [automatically reacts to
+changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
+a track, you can write:
+
+``` type=javascript
+MyController.playButtonLED = function (value, group, control) {
+    midi.sendShortMsg(
+                      0x90,
+                      MyController.buttons[group]['play'],
+                      (value) ? MyController.colorCodes['green'] : MyController.colorCodes['off']
+                      // The above line is a shortcut that means: "If value is 0, then send MyController.colorCodes['green']; otherwise, send MyController.colorCodes['off']"
+                      // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+                     )
+}
+```
+
+rather than:
+
+    MyController.playButton = function (channel, control, value, status, group) {
+        if (group == '[Channel1]') {
+            if (value) {
+                midi.sendShortMsg(0x90, 0x01, 0x02)
+            } else {
+                midi.sendShortMsg(0x90, 0x01, 0x00)
+            }
+        } else if (group == '[Channel2]') {
+            if (value) {
+                midi.sendShortMsg(0x90, 0x04, 0x02)
+            } else {
+                midi.sendShortMsg(0x90, 0x04, 0x00)
+            }
+        }
+    }
+
+The two examples above have the same effects, but the first one is more
+intutive because the code as it is written more clearly and concisely
+represents what it does.
+
 ### Turning a 2 deck controller into a 4 deck controller
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
@@ -769,7 +844,7 @@ example as a file to open in your text editor.
 
 ``` javascript
 MyController.deck = { // a hash table (technically an object) to store which deck each side of the controller is manipulating
-                      // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+                      // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
     '[Channel1]': '[Channel1]',
     '[Channel2]': '[Channel2]'
 }

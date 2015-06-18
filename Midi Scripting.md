@@ -338,7 +338,7 @@ to these script functions [as described
 above](#Linking-MIDI-signals-to-JavaScript-functions) and you'll be
 ready to tear up some tracks.
 
-### Sending messages to the controller
+### Sending messages to the controller to change LEDs or other controller properties
 
 You can send three-byte "short" messages and arbitrary-length
 system-exclusive "long" ones to the controller using the following

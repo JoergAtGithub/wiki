@@ -791,14 +791,15 @@ MyController.colorCodes = {
 }
 ```
 
-This should be at the top of your script file, outside of any functions,
-so it can be used within any function. For example, to change an LED to
-green, instead of having to look up note number for the button and the
-value for green, you can reference the hash tables. This will also make
-it easier to change which LEDs and colors you set if you decide to
-change those later. It is also more intutive to read and helps you
-remember what the code does when you look at it again later. For
-example, for a function that [automatically reacts to
+These variables should be declared at the top of your script file,
+outside of any functions, so they are global variables that can be used
+within any function. For example, to change an LED to green, instead of
+having to look up note number for the button and the value for green,
+you can reference the hash tables. This will also make it easier to
+change which LEDs and colors you set if you decide to change those
+later. It is also more intutive to read and helps you remember what the
+code does when you look at it again later. For example, for a function
+that [automatically reacts to
 changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
 a track, you can write:
 

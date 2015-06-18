@@ -950,7 +950,7 @@ MyController.deckToggleButton = function (channel, control, value, status, group
 
 MyController.initDeck = function (group) { // This function is not mapped to a MIDI signal; it is only called by this script in the init and deckToggleButton functions
     // Execute code to set up the controller for manipulating a deck
-    // Having this function allows you to call the same code from the script's init function and the deckToggleButton function without having to copy and paste code
+    // Putting this code in a function allows you to call the same code from the script's init function and the deckToggleButton function without having to copy and paste code
 
     // Figure out which deck was being controlled before so automatic reactions to changes in Mixxx (see above) can be disabled for that deck
     var disconnectDeck = parseInt(MyController.channelRegEx.exec(group)[1])
@@ -968,7 +968,7 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
 }
 
 MyController.connectDeckControls = function (group, remove) { // This function is not mapped to a MIDI signal; it is only called by this script in the initDeck function below
-    // This function either connects or disconnects automatic reactions to changes in Mixxx (see wiki section above)
+    // This function either connects or disconnects automatic reactions to changes in Mixxx (see wiki section above), depending on the value of the 'remove' parameter
     // Putting this in its own function allows the same code to be reused for both connecting and disconnecting
     // This is particularly helpful when the list of Mixxx controls connected to LEDs is long
     

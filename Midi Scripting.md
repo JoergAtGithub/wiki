@@ -797,7 +797,7 @@ in JavaScript) makes your code more organized, readable, and easier to
 modify later. For example, you could store the MIDI notes for buttons
 and the MIDI values for LED colors:
 
-``` type=javascript
+``` javascript
 MyController.buttons = {
     '[Channel1]': { // an object within another object
         'play': 0x01,
@@ -831,7 +831,7 @@ For example, for a function that [automatically reacts to
 changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
 a track, you can write:
 
-``` type=javascript
+``` javascript
 MyController.playButtonLED = function (value, group, control) {
     midi.sendShortMsg(
                       0x90,
@@ -845,21 +845,23 @@ MyController.playButtonLED = function (value, group, control) {
 
 rather than:
 
-    MyController.playButtonLED = function (value, group, control) {
-        if (group == '[Channel1]') {
-            if (value) {
-                midi.sendShortMsg(0x90, 0x01, 0x02)
-            } else {
-                midi.sendShortMsg(0x90, 0x01, 0x00)
-            }
-        } else if (group == '[Channel2]') {
-            if (value) {
-                midi.sendShortMsg(0x90, 0x04, 0x02)
-            } else {
-                midi.sendShortMsg(0x90, 0x04, 0x00)
-            }
+``` javascript
+MyController.playButtonLED = function (value, group, control) {
+    if (group == '[Channel1]') {
+        if (value) {
+            midi.sendShortMsg(0x90, 0x01, 0x02)
+        } else {
+            midi.sendShortMsg(0x90, 0x01, 0x00)
+        }
+    } else if (group == '[Channel2]') {
+        if (value) {
+            midi.sendShortMsg(0x90, 0x04, 0x02)
+        } else {
+            midi.sendShortMsg(0x90, 0x04, 0x00)
         }
     }
+}
+```
 
 The two examples above have the same effects, but the first one is more
 intuitive because the code more clearly and concisely represents what it

@@ -501,6 +501,14 @@ case) to light up red one second after the beginTimer call: (Note the
 escaped quotes in the target function call.)
 
 ``` javascript
+// Putting the codes to set LEDs to different colors into a hash table (technically an Object in JavaScript) allows you to write more readable code.
+// For example, to change an LED to green, instead of having to look up the code for green every time, you can just write MyController.colorCodes['green']
+
+MyController.colorCodes = {
+    'red': 0x01,
+    'green': 0x02,
+    'blue': 0x03
+}
 ...
     if (engine.beginTimer(1000,"MyController.lightUp(0x3A,\"red\")",true) == 0) {
         print("LightUp timer setup failed");
@@ -508,20 +516,8 @@ escaped quotes in the target function call.)
 ...
 
 MyController.lightUp = function (led,color) {
-    switch (color) {
-        case "red": 
-            midi.sendShortMsg(0x90,led,0x01);
-            break;
-        case "green": 
-            midi.sendShortMsg(0x90,led,0x02);
-            break;
-        default:
-            print("Warning: no color specified, using blue");
-            midi.sendShortMsg(0x90,led,0x03);
-            break;
-    }
+    midi.sendShortMsg(0x90, led, MyController.colorCodes[color]);
 }
-...
 ```
 
 ### Spinback and brake effect

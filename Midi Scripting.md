@@ -914,7 +914,7 @@ MyController.shutdown = function() {}
 
 MyController.deckToggleButton = function (channel, control, value, status, group) {
     if (value) { // only execute the below code when the button is pressed but not when it is released
-        // First, get the number out of the strings '[Channel1]' ... '[Channel4]' so we can do a mathematical comparison with it
+        // First, get the number out of the strings '[Channel1]' ... '[Channel4]' so we can do math with it
         var deckNumber = parseInt( // convert string to an integer number variable
                              MyController.channelRegEx.exec( // execute the regular expression
                                  MyController.deck[group] // on this string

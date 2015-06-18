@@ -957,7 +957,12 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
 MyController.playButton = function (channel, control, value, status, group) {
     group = MyController.deck[group] // Change the value of the group variable to the deck we actually want to manipulate based on the state of the deck toggle button
     if (value) {
-        engine.setValue(group, 'play', ! (engine.getValue(group, 'play') ) // toggle whether the deck is playing
+        // toggle whether the deck is playing
+        engine.setValue(
+                        group,
+                        'play',
+                        ! (engine.getValue(group, 'play') // '!' means "not"; it inverts the value of a boolean (true/false)
+                        )
     }
 }
 ```

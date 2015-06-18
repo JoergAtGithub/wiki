@@ -58,7 +58,7 @@ signals (although they could be very different).
 Mixxx. Every time you save your file, Mixxx will reload it immediately.
 This can make testing changes very fast.
 
-## Getting started
+## Setting up a JavaScript mapping file
 
 ### File and function naming conventions
 
@@ -178,7 +178,7 @@ MIDI signal, such as changing a Mixxx control, sending a MIDI signal
 back to the controller to change an LED, and/or printing a debug
 message.
 
-## Programming mappings
+## Programming Mixxx mappings with JavaScript
 
 ### Function definitions
 

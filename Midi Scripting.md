@@ -147,8 +147,10 @@ checks the \<group\> and reacts appropriately.) No tags or options are
 considered other than those shown above, so you can leave them out.
 
 When this device control is operated, the named script function is
-called. It is then up to the function to effect all desired changes
-(Mixxx properties, device LEDs, etc.)
+called. That function then determines what action is taken based on the
+MIDI signal, such as changing a Mixxx control, sending a MIDI signal
+back to the controller to change an LED, and/or printing a debug
+message.
 
 ## Programming mappings
 

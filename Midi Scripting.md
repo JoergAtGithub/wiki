@@ -933,11 +933,7 @@ MyController.initDeck = function (group) { // This function is not mapped to a M
 
     // Figure out which deck was being controlled before so automatic reactions to changes in Mixxx (see above) can be disabled for that deck
     var disconnectDeck = parseInt(MyController.channelRegEx.exec(group)[1])
-    if (disconnectDeck <= 2) {
-        disconnectDeck += 2
-    } else {
-        disconnectDeck -= 2
-    }
+    disconnectDeck = (disconnectDeck + 2) % 4
 
     // Toggle LED that indicates which deck is being controlled
     midi.sendShortMsg(

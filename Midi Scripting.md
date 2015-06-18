@@ -272,6 +272,84 @@ midi.sendSysexMsg(byteArray,byteArray.length);
 Here again, it's completely up to you (and your controller's MIDI spec)
 what those bytes should be for the change you wish to effect.
 
+`Tip:` If you send MIDI signals to the controller in functions that
+automatically react to changes in Mixxx (see below) rather than
+functions that handle incoming MIDI signals, the LEDs and other
+properties of your controllers will always be in sync with what Mixxx is
+actually doing, even if you manipulate Mixxx with the keyboard, mouse,
+or another controller.
+
+### Automatic reactions to changes in Mixxx
+
+Up to this point, script functions are only called in response to the
+controller being manipulated. They can also be called automatically in
+response to some value changing within Mixxx, such as when you use the
+mouse to move the channel volume slider, you want the LEDs on the
+controller to react. Here are the related functions:
+
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function name*) - This connects the specified Mixxx control signal
+    to the specifed script function. It returns true if the connection
+    was successful.
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function name*, **true**) - Tacking a `,true` on to the list of
+    parameters disconnects the specified Mixxx control signal from the
+    specified script function. It returns true if the disconnection was
+    successful.
+  - **engine.trigger**(*control group*, *control name*) - An easy way to
+    cause the specified Mixxx control signal to fire so the connected
+    script function is called with the updated value even if it hasn't
+    changed, such as when forcing LEDs to update on a mode change.
+
+As of at least Mixxx 1.10, connected functions are passed three
+parameters: the new value of the MixxxControl, the group, and the Mixxx
+control name. So, your connected function can look like this:
+
+``` javascript
+MyController.volumeLEDs = function (value, group, control) {
+    //...what to do with the value, group and control arguments goes here...
+}
+```
+
+Or like this:
+
+``` javascript
+MyController.volumeLEDs = function (value) {
+    //...what to do with the value goes here...
+}
+```
+
+If the provided three parameters do not fit your needs, then you can use
+the following trick to provide your own parameters to be passed.
+
+``` javascript
+// Pass one parameter '1000' to my callback 
+engine.connectControl("[Master]", "volume", function(value) { MyController.volumeLEDs(1000); });
+```
+
+#### Examples
+
+To connect the volume of the current virtual deck to a function called
+MyController.volumeLEDs, do:
+
+``` javascript
+engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs");
+```
+
+To force the above-mentioned volume LEDs to sync up, just do:
+
+``` javascript
+engine.trigger("[Channel"+MyController.currentDeck+"]","volume");
+```
+
+If you change what the volume LEDs represent (like when switching
+modes,) you would disconnect the Mixxx "volume" control from them like
+this:
+
+``` javascript
+engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs",true);
+```
+
 ### Soft-takeover
 
 *Introduced in v1.10.0.*
@@ -387,77 +465,6 @@ And that's it\! Just make sure to map the button/touch sensor and wheel
 to these script functions [as described
 above](#Linking-MIDI-signals-to-JavaScript-functions) and you'll be
 ready to tear up some tracks.
-
-### Automatic reactions to changes in Mixxx
-
-Up to this point, script functions are only called in response to the
-controller being manipulated. They can also be called automatically in
-response to some value changing within Mixxx, such as when you use the
-mouse to move the channel volume slider, you want the LEDs on the
-controller to react. Here are the related functions:
-
-  - **engine.connectControl**(*control group*, *control name*, *script
-    function name*) - This connects the specified Mixxx control signal
-    to the specifed script function. It returns true if the connection
-    was successful.
-  - **engine.connectControl**(*control group*, *control name*, *script
-    function name*, **true**) - Tacking a `,true` on to the list of
-    parameters disconnects the specified Mixxx control signal from the
-    specified script function. It returns true if the disconnection was
-    successful.
-  - **engine.trigger**(*control group*, *control name*) - An easy way to
-    cause the specified Mixxx control signal to fire so the connected
-    script function is called with the updated value even if it hasn't
-    changed, such as when forcing LEDs to update on a mode change.
-
-As of at least Mixxx 1.10, connected functions are passed three
-parameters: the new value of the MixxxControl, the group, and the Mixxx
-control name. So, your connected function can look like this:
-
-``` javascript
-MyController.volumeLEDs = function (value, group, control) {
-    //...what to do with the value, group and control arguments goes here...
-}
-```
-
-Or like this:
-
-``` javascript
-MyController.volumeLEDs = function (value) {
-    //...what to do with the value goes here...
-}
-```
-
-If the provided three parameters do not fit your needs, then you can use
-the following trick to provide your own parameters to be passed.
-
-``` javascript
-// Pass one parameter '1000' to my callback 
-engine.connectControl("[Master]", "volume", function(value) { MyController.volumeLEDs(1000); });
-```
-
-#### Examples
-
-To connect the volume of the current virtual deck to a function called
-MyController.volumeLEDs, do:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs");
-```
-
-To force the above-mentioned volume LEDs to sync up, just do:
-
-``` javascript
-engine.trigger("[Channel"+MyController.currentDeck+"]","volume");
-```
-
-If you change what the volume LEDs represent (like when switching
-modes,) you would disconnect the Mixxx "volume" control from them like
-this:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs",true);
-```
 
 ### Timed reactions
 

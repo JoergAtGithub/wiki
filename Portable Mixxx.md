@@ -20,11 +20,11 @@ to run Mixxx without requiring installing any software on the computer.
 Crossfade GNU/Linux allows you to use a USB drive with your music
 collection to DJ on any modern PC (with an x86 or x86\_64 CPU),
 including Apple Macs, using the DJ program Mixxx customized however you
-like. USB drives with Crossfade GNU/Linux installed on them show up in
-Windows, Mac OS X, and GNU/Linux as normal USB drives that music or any
-other data can be copied onto. Unlike ordinary USB drives, they can also
-be used to boot Crossfade GNU/Linux. After rebooting, the PC will be
-back to how it was before. See the manual for [installation
+like. USB drives with Crossfade GNU/Linux installed on them appear to
+Windows, Mac OS X, GNU/Linux, and CDJs as normal USB drives that music
+or any other data can be copied onto. Unlike ordinary USB drives, they
+can also be used to boot Crossfade GNU/Linux. After rebooting, the PC
+will be back to how it was before. See the manual for [installation
 instructions](http://nongnu.org/crossfade/crossfade-manual.html#installation).
 
 Crossfade GNU/Linux is setup with a realtime Linux kernel for optimal

@@ -842,14 +842,17 @@ rather than having a bunch of numbers throughout your code.
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
 a 4 deck controller by setting up your script following the example
-below. For every MIDI control that you want to map to a value that
-changes something about a specific deck, in the XML mapping file, map it
-to a function like the playButton function in the script below that
-starts with 'group = MyController.deck\[group\]'. Use \[Channel1\] as
-the value for the \<group\> element in the XML file for controls that
-manipulate decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you
-want to change between decks 1/3 and decks 2/4 to the deckToggleButton
-function.
+below. This example is somewhat complex, so if you are new to
+programming and/or JavaScript, it is recommended that you read the
+examples above before trying to understand this one.
+
+For every MIDI control that you want to map to a value that changes
+something about a specific deck, in the XML mapping file, map it to a
+function like the playButton function in the script below that starts
+with 'group = MyController.deck\[group\]'. Use \[Channel1\] as the value
+for the \<group\> element in the XML file for controls that manipulate
+decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you want to
+change between decks 1/3 and decks 2/4 to the deckToggleButton function.
 
 Click the tab below labeled 'deckToggleExample.js' to download this
 example as a file to open in your text editor.

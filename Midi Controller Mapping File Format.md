@@ -6,7 +6,13 @@
 
 Support for additional MIDI devices can be added to Mixxx by creating a
 new "MIDI preset" file. This file tells Mixxx how to translate, or map,
-MIDI messages from a controller into commands that Mixxx understands.
+MIDI messages from a controller into commands that Mixxx understands. An
+explanation of the MIDI signals that your controller sends to computers
+and how it reacts to MIDI signals that computers send to it should be
+available from the controller manufacturer. This is likely in a document
+on the product page for your controller on the manufacturer's website.
+If it is not in a separate document, it is likely at the end of the
+manual.
 
 The MIDI mapping files are located in the following paths:
 
@@ -45,9 +51,13 @@ directory:
 
 When you've finished creating your MIDI mapping, please send it to us or
 post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
-we'll include it in the next Mixxx version.
+we'll include it in the next Mixxx version. :)
 
 ## MIDI Crash Course
+
+Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
+unfamiliar with hexidecimal numbers, read [this
+tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
 
 Most MIDI messages are three bytes long. The first byte of any MIDI
 message is called the **Status** byte. The first nybble (hex digit) is
@@ -387,7 +397,3 @@ work. It looks like this:
    </lights>
  </controller>
 ```
-
-# UI/MIDI Controls and Names
-
-***This information has been moved to [MixxxControls](mixxxcontrols)***

@@ -901,6 +901,15 @@ Click the tab below labeled 'deckToggleExample.js' to download this
 example as a file to open in your text editor.
 
 ``` javascript
+function MyController() {}
+MyController.init = function () {
+    // Set up the controller to manipulate decks 1 & 2 when this script is loaded (when Mixxx starts or you save an edited script file)
+    // The MyController.initDeck function is defined below.
+    MyController.initDeck('[Channel1]')
+    MyController.initDeck('[Channel2]')
+}
+MyController.shutdown = function() {}
+
 MyController.deck = {
     // a hash table (technically an object) to store which deck each side of the controller is manipulating
     // The keys (object properties) on the left represent the <group> elements in the XML mapping file.
@@ -925,14 +934,6 @@ MyController.buttons = { // a hash table that stores the MIDI notes that corresp
 }
 MyController.buttons['[Channel3]'] = MyController.buttons['[Channel1]'] // Copy [Channel1] to [Channel3]
 MyController.buttons['[Channel4]'] = MyController.buttons['[Channel2]'] // Copy [Channel2] to [Channel4]
-
-MyController.init = function () {
-    // Set up the controller to manipulate decks 1 & 2 when this script is loaded (when Mixxx starts or you save an edited script file)
-    MyController.initDeck('[Channel1]')
-    MyController.initDeck('[Channel2]')
-}
-
-MyController.shutdown = function() {}
 
 MyController.deckToggleButton = function (channel, control, value, status, group) {
     if (value) { // only execute the below code when the button is pressed but not when it is released

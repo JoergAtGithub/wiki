@@ -919,9 +919,6 @@ MyController.deck = {
     '[Channel1]': '[Channel1]',
     '[Channel2]': '[Channel2]'
 }
-MyController.channelRegEx = /\[Channel(\d+)\]/ // a regular expression used in the deckToggleButton function
-                                               // This extracts the number from the strings '[Channel1]' ... '[Channel4]'
-                                               // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 MyController.buttons = { // a hash table that stores the MIDI notes that correspond to LED backlit buttons
     '[Channel1]': {
         'deckToggle': 0x01
@@ -935,6 +932,9 @@ MyController.buttons = { // a hash table that stores the MIDI notes that corresp
 MyController.buttons['[Channel3]'] = MyController.buttons['[Channel1]'] // Copy [Channel1] to [Channel3]
 MyController.buttons['[Channel4]'] = MyController.buttons['[Channel2]'] // Copy [Channel2] to [Channel4]
 
+MyController.channelRegEx = /\[Channel(\d+)\]/ // a regular expression used in the deckToggleButton function below
+// This extracts the number from the strings '[Channel1]' ... '[Channel4]'
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 MyController.deckToggleButton = function (channel, control, value, status, group) {
     if (value) { // only execute the below code when the button is pressed but not when it is released
         // First, get the number out of the strings '[Channel1]' ... '[Channel4]' so we can do math with it

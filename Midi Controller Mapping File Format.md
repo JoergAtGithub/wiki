@@ -186,6 +186,26 @@ You'll get output like this:
 
 See above for how to interpret this data.
 
+The program `aseqdump` work similarly, but is a bit more verbose than a
+series of hexidecimal numbers:
+
+    $ aseqdump -l
+     Port    Client name                      Port name
+      0:0    System                           Timer
+      0:1    System                           Announce
+     14:0    Midi Through                     Midi Through Port-0
+     20:0    Tweaker                          Tweaker MIDI 1
+     20:1    Tweaker                          Tweaker MIDI 2
+    $ aseqdump -p 20:0
+    Waiting for data. Press Ctrl+C to end.
+    Source  Event                  Ch  Data
+     20:0   Note on                 0, note 1, velocity 127
+     20:0   Note off                0, note 1
+     20:0   Note on                 0, note 2, velocity 127
+     20:0   Note off                0, note 2
+     20:0   Note on                 0, note 3, velocity 127
+     20:0   Note off                0, note 3
+
 ##### Windows
 
 You can download [tail.exe](http://tailforwin32.sourceforge.net/) to

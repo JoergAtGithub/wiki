@@ -816,7 +816,7 @@ MyController.playButtonLED = function (value, group, control) {
 
 rather than:
 
-    MyController.playButtonLED = function (channel, control, value, status, group) {
+    MyController.playButtonLED = function (value, group, control) {
         if (group == '[Channel1]') {
             if (value) {
                 midi.sendShortMsg(0x90, 0x01, 0x02)

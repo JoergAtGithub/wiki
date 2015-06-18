@@ -251,6 +251,10 @@ Below, *N*=2 up to the number of active microphones. e.g
 |  | ------------------------ |  | ------ |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
 |  | touch\_shift<sup>7</sup> |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 1.12 and might be replaced by a general modifier solution in 1.13 |  | All Widgets        |  |
 
+### New 1.12 effects framework
+
+See the [effects framework](effects%20framework) page.
+
 ### Deprecated controls
 
 |  | \[Group\]      |  | Key/Control                          |  | Range          |  | What it does                                                                                                  |  | On-screen feedback            |  |

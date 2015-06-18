@@ -272,12 +272,15 @@ midi.sendSysexMsg(byteArray,byteArray.length);
 Here again, it's completely up to you (and your controller's MIDI spec)
 what those bytes should be for the change you wish to effect.
 
-`Tip:` If you send MIDI signals to the controller in functions that
+**Tip:** If you send MIDI signals to the controller in functions that
 automatically react to changes in Mixxx (see below) rather than
 functions that handle incoming MIDI signals, the LEDs and other
 properties of your controllers will always be in sync with what Mixxx is
 actually doing, even if you manipulate Mixxx with the keyboard, mouse,
 or another controller.
+
+**Tip:** [Store commonly used MIDI values in global hash
+tables](#storing-commonly-used-MIDI-codes-in-global-hash-tables)
 
 ### Automatic reactions to changes in Mixxx
 

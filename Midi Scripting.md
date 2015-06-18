@@ -876,9 +876,9 @@ the manual.
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
 a 4 deck controller by setting up your script following the example
-below. This example is complex, so if you are new to programming and/or
-JavaScript, it is recommended that you read the examples above before
-trying to understand this one.
+below. This example is complex, so if you are new to programming, it is
+recommended that you read the examples above before trying to understand
+this one.
 
 For every MIDI control that you want to map to a value that changes
 something about a specific deck, in the XML mapping file, map it to a
@@ -980,11 +980,7 @@ MyController.playButton = function (channel, control, value, status, group) {
     group = MyController.deck[group] // Change the value of the group variable to the deck we actually want to manipulate based on the state of the deck toggle button
     if (value) {
         // toggle whether the deck is playing
-        engine.setValue(
-                        group,
-                        'play',
-                        ! (engine.getValue(group, 'play')
-                        )
+        engine.setValue(group, 'play', ! (engine.getValue(group, 'play')
     }
 }
 ```

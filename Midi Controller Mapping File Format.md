@@ -337,10 +337,8 @@ range. (Useful for LED sequences.)
 
 These define the part of Mixxx that is being controlled:
 
-  - group - The MixxxControl (controlobject) group
-  - key - The MixxxControl (controlobject) key, a list of which can be
-    found
-    [below](midi_controller_mapping_file_format#ui_midi_controls_and_names).
+  - group - The [Mixxx control object](mixxxcontrols) group
+  - key - The [Mixxx control object](mixxxcontrols) key
 
 These tags define the MIDI event that Mixxx will listen for or send out:
 

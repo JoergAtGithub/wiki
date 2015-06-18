@@ -823,8 +823,9 @@ rather than:
     }
 
 The two examples above have the same effects, but the first one is more
-intutive because the code more clearly and concisely represents what it
-does.
+intuitive because the code more clearly and concisely represents what it
+does. The hash tables can help you refer to numbers by what they do
+rather than having a bunch of numbers throughout your code.
 
 ### Turning a 2 deck controller into a 4 deck controller
 

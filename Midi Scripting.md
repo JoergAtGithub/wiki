@@ -933,11 +933,11 @@ MyController.buttons['[Channel3]'] = MyController.buttons['[Channel1]'] // Copy 
 MyController.buttons['[Channel4]'] = MyController.buttons['[Channel2]'] // Copy [Channel2] to [Channel4]
 
 MyController.channelRegEx = /\[Channel(\d+)\]/ // a regular expression used in the deckToggleButton function below
-// This extracts the number from the strings '[Channel1]' ... '[Channel4]'
+// This extracts the number from the strings '[Channel1]' ... '[Channel4]' so we can do math with that number
 // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 MyController.deckToggleButton = function (channel, control, value, status, group) {
     if (value) { // only execute the below code when the button is pressed but not when it is released
-        // First, get the number out of the strings '[Channel1]' ... '[Channel4]' so we can do math with it
+        // First, get the number out of the string '[Channel1]' ... '[Channel4]'
         var deckNumber = parseInt( // convert string to an integer number variable
                              MyController.channelRegEx.exec( // execute the regular expression
                                  MyController.deck[group] // on this string

@@ -95,10 +95,10 @@ and `<manufacturer><device>.shutdown()` which will be called when Mixxx
 opens and closes the device, respectively. They can be empty, but are
 useful for putting controllers into known states and/or lighting certain
 LEDs before operation begins or the program exits. The ID parameter is
-the `controller id` attribute from the XML file and is useful for
-identifying the particular controller instance in print statements and
-the `debugging` parameter is set to **true** if the user specified
-controller debugging on the command line. (v1.11 and higher.)
+the `controller id` attribute from the XML file. This can be used to
+identify the particular controller instance in print statements. The
+`debugging` parameter is set to 'true' if the user specified the
+--mididebug parameter on the command line (v1.11 and higher).
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and

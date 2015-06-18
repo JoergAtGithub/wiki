@@ -89,9 +89,11 @@ the appropriate function prefix in every one. These will all be loaded
 when the controller is activated.
 
 **Tip:** An explanation of the MIDI signals that your controller sends
-and can receive should be available from the manufacturer, likely from
-the product page for you controller on their website. If it is not in a
-separate document, it is likely at the end of the manual.
+to computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website. If it is not in a separate document, it is likely at the end of
+the manual.
 
 ### Script file header
 
@@ -290,9 +292,11 @@ actually doing, even if you manipulate Mixxx with the keyboard, mouse,
 or another controller.
 
 **Tip:** An explanation of the MIDI signals that your controller sends
-and can receive should be available from the manufacturer, likely from
-the product page for you controller on their website. If it is not in a
-separate document, it is likely at the end of the manual.
+to computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website. If it is not in a separate document, it is likely at the end of
+the manual.
 
 **Tip:** [Store commonly used MIDI values in global hash
 tables](#storing-commonly-used-MIDI-codes-in-global-hash-tables)
@@ -854,9 +858,11 @@ does. The hash tables can help you refer to numbers by what they do
 rather than having a bunch of numbers throughout your code.
 
 **Tip:** An explanation of the MIDI signals that your controller sends
-and can receive should be available from the manufacturer, likely from
-the product page for you controller on their website. If it is not in a
-separate document, it is likely at the end of the manual.
+to computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website. If it is not in a separate document, it is likely at the end of
+the manual.
 
 ### Turning a 2 deck controller into a 4 deck controller
 

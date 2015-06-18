@@ -6,7 +6,7 @@ users. The Mixxx Wiki contains useful information for users, developers,
 and artists, and is summarized in the categories below.
 
 Most of the contents of this wiki can be edited by anyone, the main
-exception to this is the [development\_roadmap](development_roadmap)
+exception to this is the [development roadmap](development%20roadmap)
 which is a fairly authoritative description of the development team's
 plans.
 

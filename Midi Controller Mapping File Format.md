@@ -16,18 +16,13 @@ manual.
 
 The MIDI mapping files are located in the following paths:
 
-**Mixxx v1.11+**
-
   - Windows: C:\\Program Files\\Mixxx\\controllers
   - Linux: /usr/share/mixxx/controllers or
     /usr/local/share/mixxx/controllers
   - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
 
-**Mixxx v1.10 and earlier**
-
-  - Windows: C:\\Program Files\\Mixxx\\midi
-  - Linux: /usr/share/mixxx/midi (or /usr/local/share/mixxx/midi)
-  - OS X: /Applications/Mixxx.app/Contents/Resources/midi
+For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
+above paths.
 
 By far, the easiest way to create a new MIDI preset is by using the MIDI
 Learn wizard in the *Preferences \> (Midi) Controllers*. You can then
@@ -36,18 +31,13 @@ using the information on this page if you'd like to fine-tune it or add
 more mappings. Note that the wizard puts its presets in your user data
 directory:
 
-**Mixxx v1.11+**
-
   - Windows: %LOCALAPPDATA%\\Mixxx\\controllers
   - Linux: /home/\<username\>/.mixxx/controllers
   - OS X: /Users/\<username\>/Library/Application\\
     Support/Mixxx/controllers
 
-**Mixxx v1.10 and earlier**
-
-  - Windows: %LOCALAPPDATA%\\Mixxx\\midi
-  - Linux: /home/\<username\>/.mixxx/midi
-  - OS X: /home/\<username\>/.mixxx/midi
+For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
+above paths.
 
 When you've finished creating your MIDI mapping, please send it to us or
 post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
@@ -112,11 +102,11 @@ Devices window at the bottom (in Mixxx 1.7.0 and higher.) It will help
 you get many of the essential functions mapped quickly without having to
 do any hacking.*
 
-If you don't have the MIDI spec for your controller, first check the
-manufacturer's web site under Support. Look for Manuals or User Guides.
-MIDI specs are usually given in an appendix at the back of the manual.
-Failing that, you can usually sniff the MIDI data the controller sends
-with the following procedure:
+If you don't have the MIDI specification for your controller, first
+check the manufacturer's web site under Support. Look for Manuals or
+User Guides. MIDI specs are usually given in an appendix at the back of
+the manual. Failing that, you can usually sniff the MIDI data the
+controller sends with the following procedure:
 
 1.  Start Mixxx (1.8.0 and later) from a command prompt using the
     `--midiDebug` option like so: 
@@ -147,14 +137,13 @@ with the following procedure:
     Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3D" 
     Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3B" 
     Debug: [...]: "MIDI ch 1: opcode: B0, ctrl: 2, val: 3C" 
-    `In this instance, it's sending 0xB0 (which when we look at the
-    [table above](#midi-crash-course), we see that it's a Control Change
-    message on channel 1) We also see that the second byte, 0x02 in this
-    case, is the control number that was moved, and the third is the
-    value or position of that control, which you can ignore for the
-    purposes of mapping. 
+    `
 
-<!-- end list -->
+In this instance, it's sending 0xB0 (which when we look at the [table
+above](#midi-crash-course), we see that it's a Control Change message on
+channel 1) We also see that the second byte, 0x02 in this case, is the
+control number that was moved, and the third is the value or position of
+that control, which you can ignore for the purposes of mapping.
 
 1.  Add the byte values to a `<control>` block in the XML file
 
@@ -333,7 +322,7 @@ range. (Useful for LED sequences.)
 </MixxxMIDIPreset>
 ```
 
-### Definitions of the elements:
+### Definitions of the elements
 
 These define the part of Mixxx that is being controlled:
 
@@ -381,7 +370,7 @@ Output tags:
   - minimum - Send the 'on' value when the Mixxx control exceeds this
     value. Send the 'off' value otherwise.
 
-### Old format (before schema versioning, Mixxx 1.6.1 and prior.)
+### Old format (before schema versioning, Mixxx 1.6.1 and prior)
 
 The old midi mapping format is here for reference. The same options
 apply as above, except use \<threshold\> for \<minimum\>, there's no

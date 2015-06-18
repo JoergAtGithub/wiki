@@ -327,7 +327,7 @@ page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
 use a sound card with at least 4 mono output channels with Mixxx.
 Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
 for DJing; almost all music is published in this format (which was the
-standard set by audio CDs). If you are interested in recoridng music,
+standard set by audio CDs). If you are interested in recording music,
 consider getting a higher quality sound card that supports 24 bit sample
 depths and a 96 kHz sample rate (there is [no
 advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz

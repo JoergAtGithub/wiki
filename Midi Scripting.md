@@ -88,6 +88,11 @@ You can add as many \<file\> tags as you like, but be sure to specify
 the appropriate function prefix in every one. These will all be loaded
 when the controller is activated.
 
+**Tip:** An explanation of the MIDI signals that your controller sends
+and can receive should be available from the manufacturer, likely from
+the product page for you controller on their website. If it is not in a
+separate document, it is likely at the end of the manual.
+
 ### Script file header
 
 At the top of your script file, you need to have a declaration of the
@@ -283,6 +288,11 @@ functions that handle incoming MIDI signals, the LEDs and other
 properties of your controllers will always be in sync with what Mixxx is
 actually doing, even if you manipulate Mixxx with the keyboard, mouse,
 or another controller.
+
+**Tip:** An explanation of the MIDI signals that your controller sends
+and can receive should be available from the manufacturer, likely from
+the product page for you controller on their website. If it is not in a
+separate document, it is likely at the end of the manual.
 
 **Tip:** [Store commonly used MIDI values in global hash
 tables](#storing-commonly-used-MIDI-codes-in-global-hash-tables)
@@ -842,6 +852,11 @@ The two examples above have the same effects, but the first one is more
 intuitive because the code more clearly and concisely represents what it
 does. The hash tables can help you refer to numbers by what they do
 rather than having a bunch of numbers throughout your code.
+
+**Tip:** An explanation of the MIDI signals that your controller sends
+and can receive should be available from the manufacturer, likely from
+the product page for you controller on their website. If it is not in a
+separate document, it is likely at the end of the manual.
 
 ### Turning a 2 deck controller into a 4 deck controller
 

@@ -829,7 +829,7 @@ MyController.playButtonLED = function (value, group, control) {
                       0x90,
                       MyController.buttons[group]['play'],
                       (value) ? MyController.colorCodes['green'] : MyController.colorCodes['off']
-                      // The above line is a shortcut that means: "If value is 0, then send MyController.colorCodes['green']; otherwise, send MyController.colorCodes['off']"
+                      // The above line is a shortcut that means: "If value is 0 (which is equivalent to false), then send MyController.colorCodes['green']; otherwise, send MyController.colorCodes['off']"
                       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
                      )
 }

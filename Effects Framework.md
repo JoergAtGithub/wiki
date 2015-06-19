@@ -752,4 +752,10 @@ will be in Effects V1.
 **\*djbarney:** ... great to hear that this is being implemented :). Is
 the pre/post fader available in the latest 1.12 build (26th Dec 2014) ?
 
+### Ferran Pujol comment (fka lambolico)
+
+Each effect shall indeed have an individual wet/dry parameter. It can be
+a pain to make an effects chain with a powerful effect like a reverb
+might be combined with a more subtle effect.
+
 \#\#\#\#

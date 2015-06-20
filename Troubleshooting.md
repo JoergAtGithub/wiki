@@ -145,14 +145,17 @@ it scans for HID devices.) To fix this, do the following:
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
 
-## I can't see my MIDI device
+## Mixxx does not detect my MIDI controller (GNU/Linux)
+
+Make sure that the snd-seq-midi kernel module has been loaded. Open a
+console and run "lsmod|grep snd\_seq\_midi" to check if the module has
+been loaded. If it has not, run "modprobe snd-seq-midi" as root and
+restart Mixxx.
 
 This happens on GNU/Linux where devices like the American Audio VMS4.1
-only show up as an HID device, not a MIDI device. To fix this, do the
-following:
-
-1.  On login, open a console
-2.  Enter `modprobe snd-seq-midi`
+only show up as an HID device, not a MIDI device. Also, there is [a
+bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
+loading the snd-seq-midi module manually.
 
 ## Errors on starting Mixxx
 

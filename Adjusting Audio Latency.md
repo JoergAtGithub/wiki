@@ -55,7 +55,7 @@ scheduling in your kernel as described above. The easiest way to raise
 the IRQ priority of your sound card is by installing
 [rtirq](http://www.rncbc.org/archive/#rtirq) and setting it to run on
 boot. To set rtirq to run on boot on distributions using systemd (which
-is most nowadays), run 'systemctl enable rtirq' as root. To set IRQ
+is most nowadays), run `systemctl enable rtirq` as root. To set IRQ
 priorities manually, see [this
 guide](http://subversion.ffado.org/wiki/IrqPriorities).
 

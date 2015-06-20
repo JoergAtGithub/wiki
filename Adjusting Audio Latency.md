@@ -59,7 +59,18 @@ enabled realtime scheduling in your kernel as described above.
 The easiest way to raise the IRQ priority of your sound card is by
 installing [rtirq](http://www.rncbc.org/archive/#rtirq) and setting it
 to run on boot. To set rtirq to run on boot on distributions using
-systemd (which is most nowadays), run `systemctl enable rtirq` as root.
+systemd (which is most distros), run `systemctl enable rtirq` as root.
+Check that rtirq set your IRQ priorities correctly by running `rtirq
+status`. The IRQ for your sound card will end in ehci\_hcd for devices
+plugged into USB 2.0 ports and xhci\_hcd for USB 3.0 ports. If it is not
+a USB sound card, look for "snd" in the last column. This should be
+above other IRQs listed by `rtirq status`. The configuration file for
+rtirq is located at `/etc/sysconfig/rtirq` in Fedora and
+`/etc/default/rtirq` in Ubuntu. If you use a USB sound card, you may
+want put "usb" in front of "snd" in the RTIRQ\_NAME\_LIST in rtirq's
+configuration file (or remove "snd") to give your USB sound card higher
+priority than your onboard sound card.
+
 To set IRQ priorities manually, see [this
 guide](http://subversion.ffado.org/wiki/IrqPriorities).
 

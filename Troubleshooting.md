@@ -1,121 +1,63 @@
-# Troubleshooting FAQ
+***If you were directed here from the Sound Hardware preferences in
+Mixxx, see [Adjusting Audio Latency](Adjusting%20Audio%20Latency).***
 
-## Latency reduction tips
+# Troubleshooting
 
-*Being able to lower the Latency in Mixxx's Sound Hardware Preferences
-as much as possible makes a huge difference in its responsiveness.
-However, lowering it beyond what your system can handle will cause
-audible glitches (pops). Here are some tips to configure your system to
-handle lower latency audio:*
+If you've got a question that's not answered here, please post in the
+[forums](http://www.mixxx.org/forums).
 
-### Linux
+## I can't plug in my headphones and speakers at the same time
 
-#### Enable realtime scheduling
+This requires either a sound card with 4 (mono) output channels or
+multiple sound cards. Nearly all sound cards built into computers have
+only one output pair, so you will need to add a second sound card with
+one or more additional output pairs. See the [DJ Hardware
+Guide](hardware%20compatibility) for more information.
 
-In Preferences \> Sound hardware, if there is a link to this page, Mixxx
-is not running with real time priority. To enable Mixxx to run with real
-time priority, you will need to set up your kernel and scheduling
-permissions.
+## I pressed the headphone button but I still hear that deck on the main output
 
-##### Kernel setup
+To make the track playing in your headphones not play on the main
+output, turn the volume down on the deck you do not want your audience
+to hear yet (or push the crossfader all the way to the opposite side)
+then press the headphone ('PFL') button for that deck. This will not
+turn down the volume in your headphones; it will only turn down the
+volume on the main output.
 
-To use real time scheduling, you will either need to boot Linux with the
-"threadirqs" parameter or use a kernel with the [realtime patch
-set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
-with the "threadirqs" kernel argument, add it to your grub.cfg by
-editing /etc/default/grub as root, adding "threadirqs" to the line for
-GRUB\_CMDLINE\_LINUX, then running `grub2-mkconfig -o
-/boot/grub2/grub.cfg`. Reboot. Check that you have booted with the
-"threadirqs" kernel parameter by running `grep threadirqs
-/proc/cmdline`. If you booted with the "threadirqs" kernel parameter,
-all the parameters you booted with will be printed. If there is no
-output, you did not boot with the "threadirqs" kernel parameter.
+## I hear crackling
 
-To use a kernel with the realtime patch set, Fedora users can install
-the kernel-rt package from the [Planet
-CCRMA](http://ccrma.stanford.edu/planetccrma/software/) repository.
-Ubuntu users can install the [kernel-rt or
-kernel-lowlatency](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel)
-packages. [Crossfade](http://nongnu.org/crossfade) and [Ubuntu
-Studio](http://ubuntustudio.org/) are distributions that come with a
-realtime patched kernel. Note that kernels with the realtime patch set
-may have some stability issues.
+Your audio latency may be set lower than your system can handle. See the
+[latency](latency) page for tips on adjusting your latency.
 
-##### User permissions
+If you are using two separate sound cards and the crackling is only in
+your headphones, see below.
 
-Enabling real time scheduling in your kernel will only have an effect if
-your user has permission to run Mixxx with realtime priority. Set the
-maximum rtprio for your user by editing `/etc/security/limits.conf` as
-root and add `<your user name> - rtprio 99` to allow Mixxx (and other
-processes you run) to increase their thread priority to maximum. Reboot
-for this to take effect.
+## I hear crackling in my headphones
 
-#### Raise the IRQ priority of your sound card
+This is a known artifact of using multiple separate audio interfaces.
+Each one has its own clock crystal and no two are precisely the same
+frequency even if the devices are the same model and from the same
+production run. Mixxx before 1.12 synchronized its audio generation to
+the clock crystal of whichever device is selected as the master output
+(deck 1 output if no master is selected) so that the crowd won't hear
+the artifacts. As a result, secondary devices either fall behind or run
+ahead of the primary one, causing them to play silence until Mixxx
+generates the next audio buffer exactly in time for the primary device.
+Playing bits of audio interspersed with bits of silence sounds like
+crackling.
 
-This will not have any effect unless you have enabled realtime
-scheduling in your kernel as described above. The easiest way to raise
-the IRQ priority of your sound card is by installing
-[rtirq](http://www.rncbc.org/archive/#rtirq) and setting it to run on
-boot. To set rtirq to run on boot on distributions using systemd (which
-is most nowadays), run 'systemctl enable rtirq' as root. To set IRQ
-priorities manually, see [this
-guide](http://subversion.ffado.org/wiki/IrqPriorities).
+Mixxx 1.12 can compensate for this issue. If you are using two sound
+cards, [try Mixxx 1.12
+beta](http://mixxx.org/forums/viewtopic.php?f=1&t=7131).
 
-#### Disable CPU frequency scaling or use the 'performance' mode
+If you use one sound card with at least 4 channels (2 stereo pairs), you
+will not have this issue.
 
-CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
-`ps aux | grep cpufreq` and kill any processes you find.) -- Actually it
-is better to remove the kernel modules, do \`lsmod | grep freq\` and
-then remove each of the modules using rmmod, note that if you are using
-a notebook it will burn through battery **much** quicker when doing
-this.
+## There is a delay before I hear a change in the audio
 
-#### Disable chipcard2
+Your audio latency may be set too high. See the [latency](latency) page
+for tips on adjusting your latency.
 
-This utility polls for smart cards every few seconds, and when it does,
-it can cause Mixxx's audio to skip, even with the latency set really
-high.
-
-### Windows
-
-  - **Use the ASIO sound API in Preferences** This requires that you
-    have ASIO drivers installed for your sound hardware. If not, search
-    for them at the web sites of your sound card manufacturer and/or the
-    chipset manufacturer (for integrated cards.) If they don't offer
-    ASIO drivers, try using [ASIO4ALL](http://www.asio4all.com/).
-  - **Disable any anti-spyware "realtime" scanning.** It's been
-    discovered doing this for Ad-Aware makes a huge difference in
-    latency.
-  - **Disable anti-virus on-access scanning.** This hasn't been
-    confirmed but is worth testing since these programs are known to
-    slow systems down in general. ***Do not attempt this if your system
-    is connected to a network or the internet or will be using media
-    from unknown/untrusted sources*** otherwise you put your system at
-    risk of infection.
-  - **Raise the IRQ (interrupt request) priority of your sound card.**
-    Open Device Manager (Start-\>Control Panel-\>System, Hardware tab,
-    Device Manager button) find your sound card, right-click it, choose
-    Properties, then the Resources tab. Drop down to IRQs and see if
-    anything else is sharing it. If so, this affects you, and you can
-    try changing the IRQ assignment for your sound card in this window.
-  - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
-    feature called "PowerMizer" that has been reported to cause all
-    kinds of problems for audio and overall latency. It can be disabled
-    with a registry tweak:
-    <http://forum.notebookreview.com/showthread.php?t=261929>
-  - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
-    in the Device Manager (under Control Panel-\>System-\>Hardware.)
-  - **Ensure that your hardware's ASIO Sample Rate setting is equal to
-    the "Sample Rate (Hz)"** in MIXXX's Audio Output settings (under
-    Preferences-\>Sound Hardware.)
-
-### Mac OS X
-
-Raise the priority of Mixxx. While Mixxx is running, open Terminal and
-run `` sudo renice -20 `pidof mixxx` `` (your user must be in
-`/etc/sudoers`).
-
-## Controller troubleshooting
+## My controller does not work
 
 To use a MIDI or HID controllers with Mixxx, enable the device and load
 a mapping. Go to Options \> Preferences in Mixxx and look for your
@@ -183,106 +125,44 @@ fix this, do the following:
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
 
-## Errors on starting Mixxx
+## New songs are not shown in my library
 
-**`Could not open xml file: "/usr/local/share/mixxx/schema.xml"`**
-happens to people that have built Mixxx from source but didn't do the
-install step. You can either do that (with `sudo scons install`) or
-explicitly tell Mixxx where to look for resources with the
-`-``-resourcePath` command line parameter, like so: `./mixxx
--``-resourcePath res/`
+Click Library-\>Rescan library, wait for the scan to finish, and search
+for your new music.
+
+## My music was not detected by the library scanner
+
+Mixxx supports the following audio file formats:
+
+  - MP3
+  - OGG
+  - FLAC
+  - WAV, AIFF
+  - AAC/M4A/MP4 (with plugin)
+  - WavPack (WV) (with plugin)
+
+If your music isn't currently in one of these formats (or you don't have
+a suitable plugin installed) it won't show up in the Mixxx library.
+You'll need to use a program like Sox, Audacity, or ffmpeg to convert
+it.
 
 ## What do I enter for the user name in Live Broadcasting?
 
   - For an Icecast2 server, the user name is **source** by default.
   - For a Shoutcast server, the user name is **admin** by default.
 
-## The BPM detection is wrong
+## Beatgrid is not aligned with the beats
 
-Mixxx 1.11.0 has a brand new BPM detection engine and has proven to be
-quite accurate in testing. If you're on a version older than that, read
-on.
+If the detected BPM of a track is correct but the beat markers are not
+in the correct place, seek the track to where a beat starts. Click the
+"Adjust beatgrid" icon in the grid of icons to the right of the overview
+waveform. This is the bottom left icon in the grid.
 
-We've updated the library Mixxx uses for BPM detection in 1.7 which
-helps. There's also a bug with BPM schemes that's difficult to fix in
-the short term, so here is a workaround in the meantime:
+## BPM detection is wrong
 
-``` 
- - Open Options->Preferences->BPM Detection
- - Create or edit a BPM scheme with the range you want & click OK.
- - Highlight that scheme in the list.
- - Click the "Default" button. (It's only by doing this that the selected BPM scheme is activated.)
-```
-
-After doing that, you may need to explicitly tell Mixxx to re-analyze
-your files, or you can just delete your library file [(see
-below)](#how-do-i-delete-my-library-file) and it will do auto-detection
-the next time you load each song. If you see values half what they
-should be, go into Preferences-\>BPM Detection, and check Allow BPM
-above the range. Click OK, then have Mixxx try to detect it again.
-(Though you shouldn't need to use that checkbox if you set the scheme
-correctly.)
-
-## The library doesn't see new songs
-
-First try clicking Library-\>Rescan library. Then re-sort it (by artist
-name or whatever) by clicking on the column heading. If that doesn't
-help, [delete your library file](#how-do-i-delete-my-library-file) and
-restart Mixxx.
-
-## No or too few sound cards appear in the preferences dialog
-
-*This also applies for the **"Audio device could not be opened"**
-error.*
-
-When no sound cards/devices appear in the sound preferences dialog or
-you get the "Audio device could not be opened" error, it usually means
-that another application is using your sound card(s). This problem only
-appears on Linux. To fix it, make sure no other applications are using
-your sound card. If your system has PulseAudio installed (Ubuntu,) you
-will want to run Mixxx from a console with the following command:
-`pasuspender mixxx` This suspends the PulseAudio daemon and lets it
-release the sound card so Mixxx can take exclusive control. Once Mixxx
-ends, PulseAudio takes the card over again.
-
-If that doesn't help, the usual culprits are Firefox and the esound
-daemon. Closing Firefox normally will take care of the former, and
-running "killall esd" in a terminal will take care of the latter. If
-it's still not working, running "sudo fuser -v /dev/dsp\*" and "sudo
-fuser -v /dev/snd/\*" will show you the list of applications currently
-using your soundcards. If you're using ALSA, you can also choose the
-"default" sound card option which will mix Mixxx's output with
-everything else.
-
-You can also go into your sound manager preferences and change the
-auto-suspend feature to do so after just a second or so. (In KDE Control
-Center, go to Sound & Multimedia, Sound System, then at the bottom of
-the pane, change "Auto-suspend if idle".) This will cause the desktop to
-drop exclusive control of the card sooner so Mixxx can see it on
-startup.
-
-## Mixxx behaves weird with Beryl/Compiz/Compiz Fusion
-
-Mixxx 1.5 doesn't play nicely with Beryl/Compiz, as reported by several
-users. This is due to some funky OpenGL code inside QT3. Fortunately,
-Mixxx 1.6.0 no longer uses QT3 and reportedly works very well with
-Beryl/Compiz.
-
-## I'm using Compiz and Mixxx, and sometimes the waveform view gets corrupted and slows my CPU to a halt
-
-This is a known bug with Qt and Compiz -- the only solution at this time
-is to disable Compiz when using Mixxx. In many cases, however, the two
-are able to work fine together. It seems this might be specific to
-certain graphics hardware.
-
-## Mixxx's waveforms eat my screen in Ubuntu
-
-See "Mixxx behaves weird with Beryl/Compiz/Compiz Fusion" above. Thought
-there is some (unknown to us) extra problem with how Ubuntu uses compiz,
-appearently. The workaround is to go
-System-\>Preferences-\>Appearence-\>Visual Effects and set them to
-"none". After you do this Mixxx should behave properly (tell us if it
-doesn't\!).
+Try adjusting the BPM analyzer's range. Go to Options \> Preferences \>
+Beat Detection, adjust the numbers, and press okay. Reanalyze your
+tracks.
 
 ## I have a decently fast system & video card. Why does Mixxx seem to crawl or pin the CPU?
 
@@ -297,73 +177,64 @@ installed.
 ## Mixxx freezes, crashes, or otherwise misbehaves and I have an nVidia graphics card
 
 Before you try anything else, please update or reinstall your nVidia
-graphics driver. (This applies to all OSes.) I don't care if it's the
-same exact version, apparently it is fickle and needs to be
+graphics driver. (This applies to all OSes.) Even if it is the same
+exact version, apparently it is fickle and needs to be
 rebuilt/reinstalled any time things change in the OS. Try this first
-before going any further. 90% of the time it will fix your problem. You
-might also try getting the latest driver from nVidia's web site instead
-of your PC/card manufacturer since they may be newer.
+before going any further. You might also try getting the latest driver
+from nVidia's web site instead of your PC/card manufacturer since they
+may be newer.
 
-## Where is the mixxx.log file?
+## I can't select my sound card(s) when starting Mixxx from a console on GNU/Linux
 
-Mixxx logs debugging information, [MIDI/HID/etc.
-messages](command_line_options) it receives and script functions it
-loads in the `mixxx.log` plain text file.
+On most GNU/Linux distributions today, the PulseAudio sound server is
+automatically started upon logging in. PulseAudio is convenient for most
+desktop audio use, but it is inappropriate for audio use that requires
+low latency like Mixxx. The PulseAudio daemon occupies the ALSA device
+while it is running. To temporarily disable PulseAudio while Mixxx is
+running, start it with `pasuspender mixxx`. To run Mixxx with command
+line options, such as `--mididebug`, run `pasuspender -- mixxx
+--mididebug`
 
-  - **Linux:** \~/.mixxx/mixxx.log
-  - **Windows:** (enter the following into the Location bar of an
-    Explorer/My Computer window, or at the command prompt)
-  - Mixxx v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
-    `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
-    below.
-  - Mixxx v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever
-    Mixxx.exe is)
-  - Note: The file may not show up as `mixxx.log` unless you've
-    unchecked `Hide extensions for known file types` in the Windows
-    Explorer folder options. Until then it is just `mixxx`, the only
-    text file in that location. By default in Windows 7 and up, known
-    file types are set to hide. See [How to show or hide file name
-    extensions in Windows
-    Explorer](http://support.microsoft.com/kb/865219)
-  - **Mac OS X:**
-  - Mixxx v1.9.0 and up: in your home folder under `Library/Application
-    Support/Mixxx` (so e.g. Users/\<username\>/Library/Application
-    Support/Mixxx)
-  - Note: Apple made the user library folder hidden by default with OSX
-    10.7 ff., use one of the following methods to open the Mixxx folder.
+## Errors on starting Mixxx
+
+**`Could not open xml file: "/usr/local/share/mixxx/schema.xml"`**
+happens to people that have built Mixxx from source but didn't do the
+install step. You can either do that (with `sudo scons install`) or
+explicitly tell Mixxx where to look for resources with the
+`-``-resourcePath` command line parameter, like so: `./mixxx
+-``-resourcePath res/`
+
+## How can I move my music to another folder or hard drive without losing information like BPM or cue points?
+
+Unfortunately, this does not yet work automagically but needs some
+manual fiddling with the music configuration files. Here is one way of
+doing it:
+
+1.  **Backup your mixxx configuration files** (under Linux, this is
+    `.mixxx/` in the home folder)
+2.  Move your music folder to the new folder or new hard drive
+3.  Install *SQLite Manager*, which is a Firefox extension that lets you
+    manipulate the mixxx database:
+    <https://addons.mozilla.org/de/firefox/addon/sqlite-manager/>
+4.  Open the SQLite Manager from within firefox. Within SQLite Manager
+    open the file `mixxxdb.sqlite` that can be found in your mixxx
+    configuration folder
+5.  Go on `Execute SQL` and enter: `update track_locations set directory
+    = replace (directory, '/old/path/DJ/Music/', '/new/path/DJ/Music/');
+    
+    update track_locations set location = replace (location,
+    '/old/path/DJ/Music/', '/new/path/DJ/Music/');` where the old and
+    new paths point to your corresponding music folders. 
+6.  Then hit `Run SQL`. The above statements will replace all instances
+    of `/old/path/DJ/Music/` to `/new/path/DJ/Music/` in the field of
+    *location* and *directory* of *track\_locations* table.
+7.  Start `mixxx` and under settings change your music folder to the new
+    one. If you want you can do a rescan to check that the music files
+    do not turn up twice suddenly (if you are on linux, do especially
+    check music files which where in symbolically linked directory).
+    Check if bpm and other meta infomation like cue points are still
+    stored with the files.
 
 <!-- end list -->
-
-``` 
-    * __Method A__:
-    * In the Finder, choose Go > Go To Folder.
-    * In the Go To Folder dialog, type ''~Library/Application Support/Mixxx''
-    * Click Go.
-    * __Method B__:
-    * Hold down the Alt (Option) key when using the Go menu
-    * The user library folder is listed below the current users home directory
-    * Navigate to ''Application Support/Mixxx''
-```
-
-## I'm using two or more separate sound cards and one/some of them (usually assigned to headphones) are crackling
-
-This is a known artifact of using multiple separate audio interfaces.
-Each one has its own clock crystal and no two are precisely the same
-frequency even if the devices are the same model and from the same
-production run. Mixxx before 1.12 synchronized its audio generation to
-the clock crystal of whichever device is selected as the master output
-(deck 1 output if no master is selected) so that the crowd won't hear
-the artifacts. As a result, secondary devices either fall behind or run
-ahead of the primary one, causing them to play silence until Mixxx
-generates the next audio buffer exactly in time for the primary device.
-Playing bits of audio interspersed with bits of silence sounds like
-crackling.
-
-Mixxx 1.12 can compensate for this issue. If you are using two sound
-cards, [try Mixxx 1.12
-beta](http://mixxx.org/forums/viewtopic.php?f=1&t=7131).
-
-If you use one sound card with at least 4 channels (2 stereo pairs), you
-will not have this issue.
 
 1.  or /lib/udev/rules.d/15-mixxx-usb.rules in Ubuntu 12.04

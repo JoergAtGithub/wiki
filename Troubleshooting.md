@@ -3,29 +3,78 @@
 ## Latency reduction tips
 
 *Being able to lower the Latency in Mixxx's Sound Hardware Preferences
-as much as possible makes a huge difference in its responsiveness. Here
-are some tips to help you do that.*
+as much as possible makes a huge difference in its responsiveness.
+However, lowering it beyond what your system can handle will cause
+audible glitches (pops). Here are some tips to configure your system to
+handle lower latency audio:*
 
 ### Linux
 
-  - **Enable Real-Time scheduling** Make sure you are running Mixxx with
-    enough rights. You can check this within Mixxx: preferences-\>Sound
-    Hardware. If there is a hint with a link to this page you can fix it
-    by **one** of the following:
+#### Enable realtime scheduling
 
-<!-- end list -->
+In Preferences \> Sound hardware, if there is a link to this page, Mixxx
+is not running with real time priority. To enable Mixxx to run with real
+time priority, you will need to set up your kernel and scheduling
+permissions.
 
-``` 
-   * Install jackd package ''apt-get install jackd'' and enable Real-Time scheduling by a dialog during install. Make sure you are member of the "audio" group ''adduser <user> audio''.
-   * Set the maximum rtprio for your user. Edit ''/etc/security/limits.conf'' and add ''//<your user name>// - rtprio  99'' to allow Mixxx (and other processes you run) to increase their thread priority to maximum.
-   * Start Mixxx as superuser $ ''sudo mixxx''
-* **Set your sound card to an elevated IRQ priority.** The easiest way to do this is installing [[http://www.rncbc.org/archive/#rtirq|rtirq]]. To set rtirq to run on boot on distributions using systemd (which is most nowadays), run 'systemctl enable rtirq' as root. To set IRQ priorities manually, see [[http://subversion.ffado.org/wiki/IrqPriorities|this guide]].
-* In order for this to have any effect, you will need to either run a realtime kernel or boot with the "threadirqs" kernel argument. To always boot with the "threadirqs" kernel argument, add it to your grub.cfg. To do this, as root, edit /etc/default/grub and add "threadirqs" to the line for GRUB_CMDLINE_LINUX, then run "grub2-mkconfig -o /boot/grub2/grub.cfg"
-* You can also try using a [[http://pkg-freebob.alioth.debian.org/lowlat.html|real-time kernel]] or a distribution that includes one, like [[http://nongnu.org/crossfade|Crossfade]] or [[http://ubuntustudio.org/|Ubuntu Studio]]. Note that you will need to [[https://help.ubuntu.com/community/UbuntuStudioPreparation|set up real-time support (scroll down to "Real-time support")]] for audio applications in order to gain any benefit from a real-time kernel.
-* **Disable CPU Frequency Scaling or use the 'Performance' mode.** CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do ''ps aux | grep cpufreq'' and kill any processes you find.) -- Actually it is better to remove the kernel modules, do `lsmod | grep freq` and then remove each of the modules using rmmod, note that if you are using a notebook it will burn through battery **much** quicker when doing this. 
-* **Disable chipcard2.** This utility polls for smart cards every few seconds, and when it does, it can cause Mixxx's audio to skip, even with the latency set really high.
-* Wireless networking is known to cause xruns with Mixxx. If you're experiencing dropouts every few seconds during regular playback, try right-clicking the network widget in your GNOME tray, and unchecking the Enable Networking" box. (Yeah, we know this is lame, but we're not sure what we can do if the OS is fighting us. Keep your eyes peeled for other peripherals that might be causing xruns too.) You can also try disabling PCI bus mastering and/or changing the IRQ for the device in your BIOS and the Device Manager (Windows) or in /etc/modules (Linux.)
-```
+##### Kernel setup
+
+To use real time scheduling, you will either need to boot Linux with the
+"threadirqs" parameter or use a kernel with the [realtime patch
+set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
+with the "threadirqs" kernel argument, add it to your grub.cfg by
+editing /etc/default/grub as root, adding "threadirqs" to the line for
+GRUB\_CMDLINE\_LINUX, then running "grub2-mkconfig -o
+/boot/grub2/grub.cfg". Reboot. Check that you have booted with the
+"threadirqs" kernel parameter by running "grep threadirqs
+/proc/cmdline". If you booted with the "threadirqs" kernel parameter,
+all the parameters you booted with will be printed. If there is no
+output, you did not boot with the "threadirqs" kernel parameter.
+
+To use a kernel with the realtime patch set, Fedora users can install
+the kernel-rt package from the [Planet
+CCRMA](http://ccrma.stanford.edu/planetccrma/software/) repository.
+Ubuntu users can install the [kernel-rt or
+kernel-lowlatency](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel)
+packages. [Crossfade](http://nongnu.org/crossfade) and [Ubuntu
+Studio](http://ubuntustudio.org/) are distributions that come with a
+realtime patched kernel. Note that kernels with the realtime patch set
+may have some stability issues.
+
+##### User permissions
+
+Enabling real time scheduling in your kernel will only have an effect if
+your user has permission to run Mixxx with realtime priority. Set the
+maximum rtprio for your user by editing `/etc/security/limits.conf` as
+root and add `<your user name> - rtprio 99` to allow Mixxx (and other
+processes you run) to increase their thread priority to maximum. Reboot
+for this to take effect.
+
+#### Raise the IRQ priority of your sound card
+
+This will not have any effect unless you have enabled realtime
+scheduling in your kernel as described above. The easiest way to raise
+the IRQ priority of your sound card is by installing
+[rtirq](http://www.rncbc.org/archive/#rtirq) and setting it to run on
+boot. To set rtirq to run on boot on distributions using systemd (which
+is most nowadays), run 'systemctl enable rtirq' as root. To set IRQ
+priorities manually, see [this
+guide](http://subversion.ffado.org/wiki/IrqPriorities).
+
+#### Disable CPU frequency scaling or use the 'performance' mode
+
+CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
+`ps aux | grep cpufreq` and kill any processes you find.) -- Actually it
+is better to remove the kernel modules, do \`lsmod | grep freq\` and
+then remove each of the modules using rmmod, note that if you are using
+a notebook it will burn through battery **much** quicker when doing
+this.
+
+#### Disable chipcard2
+
+This utility polls for smart cards every few seconds, and when it does,
+it can cause Mixxx's audio to skip, even with the latency set really
+high.
 
 ### Windows
 
@@ -43,6 +92,12 @@ are some tips to help you do that.*
     is connected to a network or the internet or will be using media
     from unknown/untrusted sources*** otherwise you put your system at
     risk of infection.
+  - **Raise the IRQ (interrupt request) priority of your sound card.**
+    Open Device Manager (Start-\>Control Panel-\>System, Hardware tab,
+    Device Manager button) find your sound card, right-click it, choose
+    Properties, then the Resources tab. Drop down to IRQs and see if
+    anything else is sharing it. If so, this affects you, and you can
+    try changing the IRQ assignment for your sound card in this window.
   - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
     feature called "PowerMizer" that has been reported to cause all
     kinds of problems for audio and overall latency. It can be disabled
@@ -54,48 +109,11 @@ are some tips to help you do that.*
     the "Sample Rate (Hz)"** in MIXXX's Audio Output settings (under
     Preferences-\>Sound Hardware.)
 
-### All operating systems
+### Mac OS X
 
-  - **IRQ sharing** - Make sure your sound card(s) are not sharing
-    <span class="underline">I</span>nterrupt
-    <span class="underline">R</span>e<span class="underline">q</span>uest
-    ports with any other system devices (like network cards.) If they
-    are, try to change them in your OS or BIOS or disable the other
-    devices while you're DJing.
-  - *Linux:* at a console, issue `cat /proc/interrupts` If the line that
-    contains the kernel module for your sound card has something else
-    next to it, this affects you, and you may be able to change the IRQ
-    at module load time (type `man modprobe` for more information on
-    this.)
-  - *Windows:* Open Device Manager (Start-\>Control Panel-\>System,
-    Hardware tab, Device Manager button) find your sound card,
-    right-click it, choose Properties, then the Resources tab. Drop down
-    to IRQs and see if anything else is sharing it. If so, this affects
-    you, and you can try changing the IRQ assignment for your sound card
-    in this window.
-  - **Increase process priority**
-  - As a last resort, run Mixxx as the root user or a user with
-    administrative privileges. This allows Mixxx to increase the
-    priority of its critical threads to real-time. This should greatly
-    reduce latency on a busy system. **Be aware that running as
-    root/admin puts your system at greater risk from malicious code.**
-  - In OS X, you have three choices:
-
-<!-- end list -->
-
-``` 
-    - ''sudo nice -n -20 /Applications/Mixxx.app/Contents/MacOS/Mixxx.app'' in console, assuming you have appropriate privileges in ''/etc/sudoers''.
-    - run Mixxx like normal but then find the PID with ''ps -l'' in console, and then run ''sudo renice -20 //<PID>//'' (again, must be in ''/etc/sudoers'').
-    - try [[http://homepage.mac.com/northernSW/renicer.html|Renicer]] which automatically ''renice''s the topmost application. I can't personally vouch for this. It is ~$10. -[[|wxl]]
-```
-
-## Mixxx won't load any tracks
-
-This happens when Mixxx can't open any output sound devices. Click
-Options-\>Preferences-\>Sound Hardware and ensure that you have a sound
-device selected for at least one output and that the selected sample
-rate is supported by the device (Mixxx will complain when you click
-Apply if it isn't.)
+Raise the priority of Mixxx. While Mixxx is running, open Terminal and
+run `` sudo renice -20 `pidof mixxx` `` (your user must be in
+`/etc/sudoers`).
 
 ## Mixxx says I have no HID controllers attached even though I do (GNU/Linux)
 

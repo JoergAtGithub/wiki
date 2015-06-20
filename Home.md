@@ -17,6 +17,7 @@ plans.
     with descriptions and prices
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
+  - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
   - [Tutorials](Tutorials)

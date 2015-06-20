@@ -50,13 +50,17 @@ for this to take effect.
 
 ### Raise the IRQ priority of your sound card
 
-This will not have any effect unless you have enabled realtime
-scheduling in your kernel as described above. The easiest way to raise
-the IRQ priority of your sound card is by installing
-[rtirq](http://www.rncbc.org/archive/#rtirq) and setting it to run on
-boot. To set rtirq to run on boot on distributions using systemd (which
-is most nowadays), run `systemctl enable rtirq` as root. To set IRQ
-priorities manually, see [this
+IRQs (interrupt requests) allow devices to get the operating system
+kernel's attention. You can improve the audio performance of your
+computer by configuring your OS to give more attention to your sound
+card than other devices. This will not have any effect unless you have
+enabled realtime scheduling in your kernel as described above.
+
+The easiest way to raise the IRQ priority of your sound card is by
+installing [rtirq](http://www.rncbc.org/archive/#rtirq) and setting it
+to run on boot. To set rtirq to run on boot on distributions using
+systemd (which is most nowadays), run `systemctl enable rtirq` as root.
+To set IRQ priorities manually, see [this
 guide](http://subversion.ffado.org/wiki/IrqPriorities).
 
 ### Disable CPU frequency scaling or use the 'performance' mode

@@ -150,3 +150,25 @@ doing it:
     check music files which where in symbolically linked directory).
     Check if bpm and other meta infomation like cue points are still
     stored with the files.
+
+## How do I delete my library file?
+
+Make sure Mixxx is closed, then look for "mixxxdb.sqlite" (or
+"mixxxtrack.xml" if using Mixxx 1.8.x or below) in:
+
+  - Windows: `%USERPROFILE%\Local Settings\Application Data\Mixxx`
+  - Linux/BSD/Unix: `~/.mixxx` 
+  - Mac OS X: `~/Library/Application Support/Mixxx/`
+  - If using Mixxx 1.8.x or below it is just like on Linux in `~/.mixxx`
+    
+
+If you can't find it, search your computer for "mixxxdb.sqlite" (or
+"mixxxtrack.xml" if using Mixxx 1.8.x or below)
+
+  - If on Windows, Click Start-\>Run, type `%USERPROFILE%\Local
+    Settings\Application Data\Mixxx` and click OK. 
+  - If you want to use "Find files/folders", make sure to open "Advanced
+    Options" and mark "Search Hidden Files/Folders".
+  - If on Mac OSX, press Shift-Command-G or "Go to folder..." command in
+    the Finder's Go menu. Then enter `~/Library/Application
+    Support/Mixxx/`.

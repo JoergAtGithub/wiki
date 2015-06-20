@@ -24,10 +24,10 @@ To use real time scheduling, you will either need to boot Linux with the
 set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
 with the "threadirqs" kernel argument, add it to your grub.cfg by
 editing /etc/default/grub as root, adding "threadirqs" to the line for
-GRUB\_CMDLINE\_LINUX, then running "grub2-mkconfig -o
-/boot/grub2/grub.cfg". Reboot. Check that you have booted with the
-"threadirqs" kernel parameter by running "grep threadirqs
-/proc/cmdline". If you booted with the "threadirqs" kernel parameter,
+GRUB\_CMDLINE\_LINUX, then running `grub2-mkconfig -o
+/boot/grub2/grub.cfg`. Reboot. Check that you have booted with the
+"threadirqs" kernel parameter by running `grep threadirqs
+/proc/cmdline`. If you booted with the "threadirqs" kernel parameter,
 all the parameters you booted with will be printed. If there is no
 output, you did not boot with the "threadirqs" kernel parameter.
 
@@ -115,11 +115,49 @@ Raise the priority of Mixxx. While Mixxx is running, open Terminal and
 run `` sudo renice -20 `pidof mixxx` `` (your user must be in
 `/etc/sudoers`).
 
-## Mixxx says I have no HID controllers attached even though I do (GNU/Linux)
+## Controller troubleshooting
 
-This happens on GNU/Linux and results from not having write permissions
-to USB devices. (Mixxx will say something to this effect in the log when
-it scans for HID devices.) To fix this, do the following:
+To enable MIDI or HID controllers to work with Mixxx, you must enable
+the device and load a mapping. Go to Options \> Preferences in Mixxx and
+look for your controller under the "Controllers" label on the left.
+Check the "Enabled" box, select a mapping from the drop down menu and
+press "Ok". If Mixxx did not come with a mapping for your controller,
+[search the forum](http://mixxx.org/forums/search.php?fid[]=7) to see if
+anyone has made one. If not, you can [map it
+yourself](start#controller%20mapping%20documentation).
+
+If your controller does not show up under "Controllers" on the left side
+of Mixxx's preferences window, Mixxx did not detect your controller.
+Check that your controller is plugged into your computer. If your
+controller has its own power supply, check that the power supply is
+plugged in. If your controller has a power switch, make sure it is on.
+Note that Mixxx will only detect controllers on start up, so if you
+plugged in your controller after starting Mixxx, restart Mixxx and go
+back to the Preferences window.
+
+If you are sure your controller is connected but it still does not show
+up in Mixxx, read the appropriate section below. If you do not know
+whether your controller is a MIDI controller or HID controller, search
+for it on the [DJ Hardware Guide](hardware%20compatibility). If it is
+not listed there, it is most likely a MIDI device.
+
+### MIDI controllers on GNU/Linux
+
+Make sure that the snd-seq-midi kernel module has been loaded. Open a
+console and run `lsmod | grep snd_seq_midi` to check if the module has
+been loaded. If it has not, run `modprobe snd-seq-midi` as root and
+restart Mixxx.
+
+This happens on GNU/Linux where devices like the American Audio VMS4.1
+only show up as an HID device, not a MIDI device. Also, there is [a
+bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
+loading the snd-seq-midi module manually.
+
+### HID controllers on GNU/Linux
+
+Mixxx may not have permission to use your HID device. (Mixxx will say
+something to this effect in the log when it scans for HID devices.) To
+fix this, do the following:
 
 1.  Open a console
 2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
@@ -144,18 +182,6 @@ it scans for HID devices.) To fix this, do the following:
     associated permissions.
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
-
-## Mixxx does not detect my MIDI controller (GNU/Linux)
-
-Make sure that the snd-seq-midi kernel module has been loaded. Open a
-console and run "lsmod|grep snd\_seq\_midi" to check if the module has
-been loaded. If it has not, run "modprobe snd-seq-midi" as root and
-restart Mixxx.
-
-This happens on GNU/Linux where devices like the American Audio VMS4.1
-only show up as an HID device, not a MIDI device. Also, there is [a
-bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
-loading the snd-seq-midi module manually.
 
 ## Errors on starting Mixxx
 

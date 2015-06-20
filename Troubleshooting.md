@@ -26,7 +26,8 @@ volume on the main output.
 ## I hear crackling
 
 Your audio latency may be set lower than your system can handle. See the
-[latency](latency) page for tips on adjusting your latency.
+[Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on
+adjusting your latency.
 
 If you are using two separate sound cards and the crackling is only in
 your headphones, see below.
@@ -54,8 +55,9 @@ will not have this issue.
 
 ## There is a delay before I hear a change in the audio
 
-Your audio latency may be set too high. See the [latency](latency) page
-for tips on adjusting your latency.
+Your audio latency may be set too high. See the [Adjusting Audio
+Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
+latency.
 
 ## My controller does not work
 

@@ -80,36 +80,39 @@ high.
 
 ## Windows
 
-  - **Use the ASIO sound API in Preferences** This requires that you
-    have ASIO drivers installed for your sound hardware. If not, search
-    for them at the web sites of your sound card manufacturer and/or the
-    chipset manufacturer (for integrated cards.) If they don't offer
-    ASIO drivers, try using [ASIO4ALL](http://www.asio4all.com/).
-  - **Disable any anti-spyware "realtime" scanning.** It's been
-    discovered doing this for Ad-Aware makes a huge difference in
-    latency.
-  - **Disable anti-virus on-access scanning.** This hasn't been
-    confirmed but is worth testing since these programs are known to
-    slow systems down in general. ***Do not attempt this if your system
-    is connected to a network or the internet or will be using media
-    from unknown/untrusted sources*** otherwise you put your system at
-    risk of infection.
-  - **Raise the IRQ (interrupt request) priority of your sound card.**
-    Open Device Manager (Start-\>Control Panel-\>System, Hardware tab,
-    Device Manager button) find your sound card, right-click it, choose
-    Properties, then the Resources tab. Drop down to IRQs and see if
-    anything else is sharing it. If so, this affects you, and you can
-    try changing the IRQ assignment for your sound card in this window.
+  - **ASIO**: ASIO bypasses the normal sound processing software in
+    Windows which is too slow for programs that require low latency like
+    Mixxx. Select ASIO in the API in Mixxx's Sound Hardware Preferences.
+    This requires that you have ASIO drivers installed for your sound
+    card. If not, search for them at the web sites of your sound card
+    manufacturer and/or the chipset manufacturer (for integrated cards).
+    If they don't offer ASIO drivers, try using
+    [ASIO4ALL](http://www.asio4all.com/).
+  - **ASIO sample rate**: The sample rate used by ASIO should be the
+    same as the sample rate in Mixxx's Sound Hardware preferences.
+  - **Sound card IRQ priority**: IRQs (interrupt requests) allow devices
+    to get the attention of your operating system's kernel. For better
+    sound performance, raise the priority of your sound card relative to
+    other devices in your computer. Open Device Manager (Start-\>Control
+    Panel-\>System, Hardware tab, Device Manager button) find your sound
+    card, right-click it, choose Properties, then the Resources tab.
+    Drop down to IRQs and see if anything else is sharing it. If so,
+    this affects you, and you can try changing the IRQ assignment for
+    your sound card in this window.
+  - **Disable anti-spyware/anti-virus software**: It has been reported
+    that doing this for Ad-Aware makes a huge difference in latency.
+    This has not been confirmed with other anti-spyware or anti-virus
+    programs, but is worth testing since these programs are known to
+    slow systems down in general. Doing this may put your system at risk
+    of infection if it is connected to the Internet.
   - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
     feature called "PowerMizer" that has been reported to cause all
     kinds of problems for audio and overall latency. It can be disabled
     with a registry tweak:
     <http://forum.notebookreview.com/showthread.php?t=261929>
-  - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
-    in the Device Manager (under Control Panel-\>System-\>Hardware.)
-  - **Ensure that your hardware's ASIO Sample Rate setting is equal to
-    the "Sample Rate (Hz)"** in MIXXX's Audio Output settings (under
-    Preferences-\>Sound Hardware.)
+  - **Disable the "Microsoft ACPI-Compliant Control Method Battery"**:
+    Disable this in the Device Manager (under Control
+    Panel-\>System-\>Hardware)
 
 ## Mac OS X
 

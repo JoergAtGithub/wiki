@@ -117,13 +117,13 @@ run `` sudo renice -20 `pidof mixxx` `` (your user must be in
 
 ## Controller troubleshooting
 
-To enable MIDI or HID controllers to work with Mixxx, you must enable
-the device and load a mapping. Go to Options \> Preferences in Mixxx and
-look for your controller under the "Controllers" label on the left.
-Check the "Enabled" box, select a mapping from the drop down menu and
-press "Ok". If Mixxx did not come with a mapping for your controller,
-[search the forum](http://mixxx.org/forums/search.php?fid[]=7) to see if
-anyone has made one. If not, you can [map it
+To use a MIDI or HID controllers with Mixxx, enable the device and load
+a mapping. Go to Options \> Preferences in Mixxx and look for your
+controller under the "Controllers" label on the left. Check the
+"Enabled" box, select a mapping from the drop down menu and press "Ok".
+If Mixxx did not come with a mapping for your controller, [search the
+forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
+made one. If not, you can [map it
 yourself](start#controller%20mapping%20documentation).
 
 If your controller does not show up under "Controllers" on the left side

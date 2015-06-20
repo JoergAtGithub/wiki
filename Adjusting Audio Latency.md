@@ -1,0 +1,117 @@
+# Adjusting Audio Latency
+
+Being able to lower the Latency in Mixxx's Sound Hardware Preferences as
+much as possible makes a huge difference in its responsiveness. However,
+lowering it beyond what your system can handle will cause audible
+glitches (pops). Here are some tips to configure your system to handle
+lower latency audio:
+
+## Linux
+
+### Enable realtime scheduling
+
+In Preferences \> Sound hardware, if there is a link to this page, Mixxx
+is not running with real time priority. To enable Mixxx to run with real
+time priority, you will need to set up your kernel and scheduling
+permissions.
+
+#### Kernel setup
+
+To use real time scheduling, you will either need to boot Linux with the
+"threadirqs" parameter or use a kernel with the [realtime patch
+set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
+with the "threadirqs" kernel argument, add it to your grub.cfg by
+editing /etc/default/grub as root, adding "threadirqs" to the line for
+GRUB\_CMDLINE\_LINUX, then running `grub2-mkconfig -o
+/boot/grub2/grub.cfg`. Reboot. Check that you have booted with the
+"threadirqs" kernel parameter by running `grep threadirqs
+/proc/cmdline`. If you booted with the "threadirqs" kernel parameter,
+all the parameters you booted with will be printed. If there is no
+output, you did not boot with the "threadirqs" kernel parameter.
+
+To use a kernel with the realtime patch set, Fedora users can install
+the kernel-rt package from the [Planet
+CCRMA](http://ccrma.stanford.edu/planetccrma/software/) repository.
+Ubuntu users can install the [kernel-rt or
+kernel-lowlatency](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel)
+packages. [Crossfade](http://nongnu.org/crossfade) and [Ubuntu
+Studio](http://ubuntustudio.org/) are distributions that come with a
+realtime patched kernel. Note that kernels with the realtime patch set
+may have some stability issues.
+
+#### User permissions
+
+Enabling real time scheduling in your kernel will only have an effect if
+your user has permission to run Mixxx with realtime priority. Set the
+maximum rtprio for your user by editing `/etc/security/limits.conf` as
+root and add `<your user name> - rtprio 99` to allow Mixxx (and other
+processes you run) to increase their thread priority to maximum. Reboot
+for this to take effect.
+
+### Raise the IRQ priority of your sound card
+
+This will not have any effect unless you have enabled realtime
+scheduling in your kernel as described above. The easiest way to raise
+the IRQ priority of your sound card is by installing
+[rtirq](http://www.rncbc.org/archive/#rtirq) and setting it to run on
+boot. To set rtirq to run on boot on distributions using systemd (which
+is most nowadays), run 'systemctl enable rtirq' as root. To set IRQ
+priorities manually, see [this
+guide](http://subversion.ffado.org/wiki/IrqPriorities).
+
+### Disable CPU frequency scaling or use the 'performance' mode
+
+CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
+`ps aux | grep cpufreq` and kill any processes you find.) -- Actually it
+is better to remove the kernel modules, do \`lsmod | grep freq\` and
+then remove each of the modules using rmmod, note that if you are using
+a notebook it will burn through battery **much** quicker when doing
+this.
+
+### Disable chipcard2
+
+This utility polls for smart cards every few seconds, and when it does,
+it can cause Mixxx's audio to skip, even with the latency set really
+high.
+
+## Windows
+
+  - **Use the ASIO sound API in Preferences** This requires that you
+    have ASIO drivers installed for your sound hardware. If not, search
+    for them at the web sites of your sound card manufacturer and/or the
+    chipset manufacturer (for integrated cards.) If they don't offer
+    ASIO drivers, try using [ASIO4ALL](http://www.asio4all.com/).
+  - **Disable any anti-spyware "realtime" scanning.** It's been
+    discovered doing this for Ad-Aware makes a huge difference in
+    latency.
+  - **Disable anti-virus on-access scanning.** This hasn't been
+    confirmed but is worth testing since these programs are known to
+    slow systems down in general. ***Do not attempt this if your system
+    is connected to a network or the internet or will be using media
+    from unknown/untrusted sources*** otherwise you put your system at
+    risk of infection.
+  - **Raise the IRQ (interrupt request) priority of your sound card.**
+    Open Device Manager (Start-\>Control Panel-\>System, Hardware tab,
+    Device Manager button) find your sound card, right-click it, choose
+    Properties, then the Resources tab. Drop down to IRQs and see if
+    anything else is sharing it. If so, this affects you, and you can
+    try changing the IRQ assignment for your sound card in this window.
+  - **Disable nVidia's "PowerMizer."** nVidia's laptop drivers have a
+    feature called "PowerMizer" that has been reported to cause all
+    kinds of problems for audio and overall latency. It can be disabled
+    with a registry tweak:
+    <http://forum.notebookreview.com/showthread.php?t=261929>
+  - **Deactivate the "Microsoft ACPI-Compliant Control Method Battery"**
+    in the Device Manager (under Control Panel-\>System-\>Hardware.)
+  - **Ensure that your hardware's ASIO Sample Rate setting is equal to
+    the "Sample Rate (Hz)"** in MIXXX's Audio Output settings (under
+    Preferences-\>Sound Hardware.)
+
+## Mac OS X
+
+Raise the priority of Mixxx. While Mixxx is running, open Terminal and
+run `` sudo renice -20 `pidof mixxx` `` (your user must be in
+`/etc/sudoers`).
+
+If you know of any more tips for reducing audio latency in Mac OS X,
+please edit this page and add them here.

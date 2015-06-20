@@ -67,7 +67,7 @@ a USB sound card, look for "snd" in the last column. This should be
 above other IRQs listed by `rtirq status`. The configuration file for
 rtirq is located at `/etc/sysconfig/rtirq` in Fedora and
 `/etc/default/rtirq` in Ubuntu. If you use a USB sound card, you may
-want put "usb" in front of "snd" in the RTIRQ\_NAME\_LIST in rtirq's
+want to put "usb" in front of "snd" in the RTIRQ\_NAME\_LIST in rtirq's
 configuration file (or remove "snd") to give your USB sound card higher
 priority than your onboard sound card.
 

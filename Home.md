@@ -16,7 +16,6 @@ plans.
     hardware setups for DJing with Mixxx and lists compatible devices
     with descriptions and prices
   - [Manual](http://mixxx.org/manual/latest/)
-  - [FAQ](FAQ)
   - [Troubleshooting](Troubleshooting)
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.

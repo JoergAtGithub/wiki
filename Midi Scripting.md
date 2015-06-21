@@ -64,12 +64,37 @@ This can make testing changes very fast.
 ### File and function naming conventions
 
 Script files use the naming convention
-`<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`)
-and are found in the controllers/ subdirectory wherever your Mixxx
-shared data is stored. (Usually `/usr/share/mixxx` on Linux/Mac, and
-`C:\Program Files\Mixxx` on Windows.) Functions use the naming
-convention `<manufacturer><device>.<function name>` (e.g.
-`StantonSCS3d.pitchSlider`). Global variables use
+`<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`).
+Put your custom JS & XML file in this directory:
+
+  - GNU/Linux: `/home/<username>/.mixxx/controllers`
+  - OS X: `/Users/<username>/Library/Application\
+    Support/Mixxx/controllers`
+  - Windows: `%USERPROFILE%\AppData\Mixxx\controllers`
+
+`%USERPROFILE%` on Windows is typically `C:\Users\<username\`. On
+Windows XP and earlier, `%USERPROFILE%` is typically `C:\Documents and
+Settings\<username>\`. The `%USERPROFILE%\AppData` folder is hidden, so
+if you have not already, you will need to set Windows explorer to [show
+hidden files and
+folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
+
+For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
+above paths.
+
+The default mapping files, which you can look at as examples, are
+located in the following paths:
+
+  - GNU/Linux: /usr/share/mixxx/controllers or
+    /usr/local/share/mixxx/controllers
+  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
+  - Windows: C:\\Program Files\\Mixxx\\controllers
+
+For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
+above paths.
+
+Functions use the naming convention `<manufacturer><device>.<function
+name>` (e.g. `StantonSCS3d.pitchSlider`). Global variables use
 `<manufacturer><device>.<variable name>` (e.g. `StantonSCS3d.deck`).
 These are very important to avoid name collisions with other scripts
 that may be loaded.

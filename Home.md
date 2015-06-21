@@ -31,7 +31,8 @@ plans.
 
 ## Community Resources
 
-  - [Forums](http://mixxx.org/forums)
+  - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
+    mixes, download and share controller mappings and skins
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list
   - [Mixxx website](http://www.mixxx.org)

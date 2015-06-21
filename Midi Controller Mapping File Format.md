@@ -14,16 +14,6 @@ on the product page for your controller on the manufacturer's website.
 If it is not in a separate document, it is likely at the end of the
 manual.
 
-The default MIDI mapping files are located in the following paths:
-
-  - GNU/Linux: /usr/share/mixxx/controllers or
-    /usr/local/share/mixxx/controllers
-  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
-  - Windows: C:\\Program Files\\Mixxx\\controllers
-
-For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
-above paths.
-
 **The easiest way to create a new MIDI preset is by using the MIDI Learn
 Wizard** in the *Preferences \> (Midi) Controllers*. You can then modify
 the XML file it creates (or any of the ones that ship with Mixxx) using
@@ -42,6 +32,18 @@ Settings\<username>\`. The `%USERPROFILE%\AppData` folder is hidden, so
 if you have not already, you will need to set Windows explorer to [show
 hidden files and
 folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
+
+For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
+above paths.
+
+The default MIDI mapping files, which you can look at for examples or a
+starting point for your own custom mapping, are located in the following
+paths:
+
+  - GNU/Linux: /usr/share/mixxx/controllers or
+    /usr/local/share/mixxx/controllers
+  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
+  - Windows: C:\\Program Files\\Mixxx\\controllers
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.

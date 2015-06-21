@@ -21,7 +21,7 @@ plans.
   - [Reporting bugs](Reporting%20bugs)
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
-  - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx):
+  - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
   - [Command line options](Command%20line%20options)

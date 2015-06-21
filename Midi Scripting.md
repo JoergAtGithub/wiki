@@ -74,36 +74,6 @@ convention `<manufacturer><device>.<function name>` (e.g.
 These are very important to avoid name collisions with other scripts
 that may be loaded.
 
-### Linking a JavaScript mapping file to an XML mapping file
-
-There is a default script function file called
-`midi-mappings-scripts.js` which contains functions common to all
-controllers and is always loaded. See [\#available common
-functions](#available%20common%20functions) below for information on
-these functions.
-
-To specify additional script files to load, add the following section to
-the device's [XML MIDI mapping
-file](MIDI%20controller%20mapping%20file%20format) right underneath the
-\<controller\> tag:
-
-``` XML
-        <scriptfiles>
-            <file filename="Stanton-SCS3d-scripts.js" functionprefix="StantonSCS3d"/>
-        </scriptfiles>
-```
-
-You can add as many \<file\> tags as you like, but be sure to specify
-the appropriate function prefix in every one. These will all be loaded
-when the controller is activated.
-
-**Tip:** An explanation of the MIDI signals that your controller sends
-to computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer. This is likely in
-a document on the product page for your controller on the manufacturer's
-website. If it is not in a separate document, it is likely at the end of
-the manual.
-
 ### Script file header
 
 At the top of your script file, you need to have a declaration of the
@@ -143,6 +113,36 @@ turn on when sent value 0x00, your init and shutdown functions could be:
             midi.sendShortMsg(0x90, i, 0x00)
         }
     }
+
+### Linking a JavaScript mapping file to an XML mapping file
+
+There is a default script function file called
+`midi-mappings-scripts.js` which contains functions common to all
+controllers and is always loaded. See [\#available common
+functions](#available%20common%20functions) below for information on
+these functions.
+
+To specify additional script files to load, add the following section to
+the device's [XML MIDI mapping
+file](MIDI%20controller%20mapping%20file%20format) right underneath the
+\<controller\> tag:
+
+``` XML
+        <scriptfiles>
+            <file filename="Stanton-SCS3d-scripts.js" functionprefix="StantonSCS3d"/>
+        </scriptfiles>
+```
+
+You can add as many \<file\> tags as you like, but be sure to specify
+the appropriate function prefix in every one. These will all be loaded
+when the controller is activated.
+
+**Tip:** An explanation of the MIDI signals that your controller sends
+to computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website. If it is not in a separate document, it is likely at the end of
+the manual.
 
 ### Linking MIDI signals to JavaScript functions
 

@@ -14,27 +14,34 @@ on the product page for your controller on the manufacturer's website.
 If it is not in a separate document, it is likely at the end of the
 manual.
 
-The MIDI mapping files are located in the following paths:
+The default MIDI mapping files are located in the following paths:
 
-  - Windows: C:\\Program Files\\Mixxx\\controllers
-  - Linux: /usr/share/mixxx/controllers or
+  - GNU/Linux: /usr/share/mixxx/controllers or
     /usr/local/share/mixxx/controllers
   - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
+  - Windows: C:\\Program Files\\Mixxx\\controllers
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.
 
-By far, the easiest way to create a new MIDI preset is by using the MIDI
-Learn wizard in the *Preferences \> (Midi) Controllers*. You can then
-modify the XML file it creates (or any of the ones that ship with Mixxx)
-using the information on this page if you'd like to fine-tune it or add
-more mappings. Note that the wizard puts its presets in your user data
+**The easiest way to create a new MIDI preset is by using the MIDI Learn
+Wizard** in the *Preferences \> (Midi) Controllers*. You can then modify
+the XML file it creates (or any of the ones that ship with Mixxx) using
+the information on this page if you'd like to fine-tune it or add more
+mappings. Note that the wizard puts its presets in your user data
 directory:
 
-  - Windows: %LOCALAPPDATA%\\Mixxx\\controllers
-  - Linux: /home/\<username\>/.mixxx/controllers
-  - OS X: /Users/\<username\>/Library/Application\\
-    Support/Mixxx/controllers
+  - GNU/Linux: `/home/<username>/.mixxx/controllers`
+  - OS X: `/Users/<username>/Library/Application\
+    Support/Mixxx/controllers`
+  - Windows: `%USERPROFILE%\AppData\Mixxx\controllers`
+
+`%USERPROFILE%` on Windows is typically `C:\Users\<username\`. On
+Windows XP and earlier, `%USERPROFILE%` is typically `C:\Documents and
+Settings\<username>\`. The `%USERPROFILE%\AppData` folder is hidden, so
+if you have not already, you will need to set Windows explorer to [show
+hidden files and
+folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.

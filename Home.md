@@ -13,8 +13,8 @@ plans.
 ## User Documentation
 
   - [DJ Hardware Guide](Hardware%20compatibility): Explains options for
-    hardware setups for DJing with Mixxx and lists compatible devices
-    with descriptions and prices
+    hardware setups for DJing with Mixxx, lists compatible devices with
+    descriptions and prices
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
@@ -24,8 +24,8 @@ plans.
   - [System requirements](System%20requirements)
   - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)
-  - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx) can
-    run Mixxx from a USB drive or DVD without having to install anything
+  - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx):
+    Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
 
 ## Community Resources

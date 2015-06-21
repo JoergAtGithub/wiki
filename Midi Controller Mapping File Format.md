@@ -14,12 +14,20 @@ on the product page for your controller on the manufacturer's website.
 If it is not in a separate document, it is likely at the end of the
 manual.
 
-**The easiest way to create a new MIDI preset is by using the MIDI Learn
-Wizard** in the *Preferences \> (Midi) Controllers*. You can then modify
-the XML file it creates (or any of the ones that ship with Mixxx) using
-the information on this page if you'd like to fine-tune it or add more
-mappings. Note that the wizard puts its presets in your user data
-directory:
+**The easiest way to create a new MIDI preset is by using the MIDI
+Learning Wizard** in the *Preferences \> (Midi) Controllers*. You can
+then modify the XML file it creates (or any of the ones that ship with
+Mixxx) using the information on this page if you'd like to fine-tune it
+or add more mappings.
+
+When you've finished creating your MIDI mapping, please send it to us or
+post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
+we'll include it in the next Mixxx version. :)
+
+### File locations
+
+Put custom mappings in the following folder. The MIDI Learning Wizard
+puts its mapping files here:
 
   - GNU/Linux: `/home/<username>/.mixxx/controllers`
   - OS X: `/Users/<username>/Library/Application\
@@ -33,9 +41,6 @@ if you have not already, you will need to set Windows explorer to [show
 hidden files and
 folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
 
-For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
-above paths.
-
 The default MIDI mapping files, which you can look at for examples or a
 starting point for your own custom mapping, are located in the following
 paths:
@@ -47,10 +52,6 @@ paths:
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.
-
-When you've finished creating your MIDI mapping, please send it to us or
-post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
-we'll include it in the next Mixxx version. :)
 
 ## MIDI Crash Course
 

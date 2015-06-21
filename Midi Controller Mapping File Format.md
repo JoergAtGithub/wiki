@@ -40,10 +40,10 @@ The default MIDI mapping files, which you can look at for examples or a
 starting point for your own custom mapping, are located in the following
 paths:
 
-  - GNU/Linux: /usr/share/mixxx/controllers or
-    /usr/local/share/mixxx/controllers
-  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
-  - Windows: C:\\Program Files\\Mixxx\\controllers
+  - GNU/Linux: `/usr/share/mixxx/controllers` or
+    `/usr/local/share/mixxx/controllers`
+  - OS X: `/Applications/Mixxx.app/Contents/Resources/controllers/`
+  - Windows: `C:\Program Files\Mixxx\controllers`
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.

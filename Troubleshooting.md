@@ -127,7 +127,7 @@ fix this, do the following:
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
 
-### BPM of tracks is not shown in my library
+## BPM of tracks is not shown in my library
 
 Scanning and analyzing the library are separate steps because analyzing
 tracks takes a lot of CPU resources and time. When a track that has not

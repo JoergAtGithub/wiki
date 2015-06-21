@@ -69,6 +69,10 @@ Mixxx only detects sound cards on startup. If you plugged your sound
 card in after starting Mixxx, restart Mixxx and look again under Sound
 Hardware in Options \> Preferences.
 
+Some users are reporting that they cannot select their sound card on
+Windows 10 beta. If you are using Windows 10 beta, try upgrading to the
+latest version of Windows 10.
+
 If you are starting Mixxx from a command line on GNU/Linux, you probably
 need to suspend or disable PulseAudio. On most GNU/Linux distributions
 today, the PulseAudio sound server is automatically started upon logging

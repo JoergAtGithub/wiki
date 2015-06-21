@@ -21,7 +21,6 @@ plans.
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
   - [Music-reactive lighting](MIDI%20for%20light)
-  - [Internet broadcasting](Internet%20broadcasting)
   - [System requirements](System%20requirements)
   - [Command line options](Command%20line%20options)
   - [Reporting bugs](Reporting%20bugs)

@@ -20,7 +20,7 @@ plans.
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
-  - [Tutorials](Tutorials)
+  - [Music-reactive lighting](MIDI%20for%20light)
   - [Add-ons](Add-ons)
   - [Internet broadcasting](Internet%20broadcasting)
   - [System requirements](System%20requirements)

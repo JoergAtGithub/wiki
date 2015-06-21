@@ -59,6 +59,28 @@ Your audio latency may be set too high. See the [Adjusting Audio
 Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
 latency.
 
+## I can't select my sound card
+
+Check that your sound card is plugged in. If it has its own power
+supply, make sure that is plugged in too. If it has a power switch,
+check that it is switched on.
+
+Mixxx only detects sound cards on startup. If you plugged your sound
+card in after starting Mixxx, restart Mixxx and look again under Sound
+Hardware in Options \> Preferences.
+
+If you are starting Mixxx from a command line on GNU/Linux, you probably
+need to suspend or disable PulseAudio. On most GNU/Linux distributions
+today, the PulseAudio sound server is automatically started upon logging
+in. PulseAudio is convenient for most desktop audio use, but it is not
+good for audio use that requires low latency like Mixxx. The PulseAudio
+daemon occupies the ALSA device while it is running. To temporarily
+disable PulseAudio while Mixxx is running, start it with `pasuspender
+mixxx`. The .desktop launcher icon for Mixxx does this automatically. To
+run Mixxx with command line options, such as `--mididebug`, put `--`
+between `pasuspender` and the rest of the command. For example, run
+`pasuspender -- mixxx --mididebug`
+
 ## My controller does not work
 
 To use a MIDI or HID controllers with Mixxx, enable the device and load
@@ -198,17 +220,6 @@ rebuilt/reinstalled any time things change in the OS. Try this first
 before going any further. You might also try getting the latest driver
 from nVidia's web site instead of your PC/card manufacturer since they
 may be newer.
-
-## I can't select my sound card(s) when starting Mixxx from a console on GNU/Linux
-
-On most GNU/Linux distributions today, the PulseAudio sound server is
-automatically started upon logging in. PulseAudio is convenient for most
-desktop audio use, but it is inappropriate for audio use that requires
-low latency like Mixxx. The PulseAudio daemon occupies the ALSA device
-while it is running. To temporarily disable PulseAudio while Mixxx is
-running, start it with `pasuspender mixxx`. To run Mixxx with command
-line options, such as `--mididebug`, run `pasuspender -- mixxx
---mididebug`
 
 ## Errors on starting Mixxx
 

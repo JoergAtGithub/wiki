@@ -28,7 +28,7 @@ Put custom mappings in the following folder. The MIDI Learning Wizard
 puts its mapping files here:
 
   - GNU/Linux: `/home/<username>/.mixxx/controllers`
-  - OS X: `/Users/<username>/Library/Application\
+  - OS X: `/Users/<username>/Library/Application
     Support/Mixxx/controllers`
   - Windows: `%USERPROFILE%\AppData\Mixxx\controllers`
 

@@ -59,7 +59,7 @@ Your audio latency may be set too high. See the [Adjusting Audio
 Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
 latency.
 
-## I can't select my sound card
+## I can't select my sound card in the Sound Hardware preferences
 
 Check that your sound card is plugged in. If it has its own power
 supply, make sure that is plugged in too. If it has a power switch,

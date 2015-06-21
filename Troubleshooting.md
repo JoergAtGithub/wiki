@@ -127,6 +127,19 @@ fix this, do the following:
 8.  Start Mixxx and your HID devices should now be listed under
     Controllers in the Preferences window.
 
+### BPM of tracks is not shown in my library
+
+Scanning and analyzing the library are separate steps because analyzing
+tracks takes a lot of CPU resources and time. When a track that has not
+been analyzed is loaded, Mixxx will analyze its BPM and Replay Gain as
+well as generate the waveform. You can analyze your whole library in
+advance so you can see the BPM of every track in your library before
+loading it. When you have time to let your computer run for a long time
+(for example, before you go to sleep), go to "Analyze" on the left panel
+of the library display in Mixxx's main window. Select the "All" button
+on the top left, click the "Select All" button on the top right, then
+click the "Analyze" button in the top right.
+
 ## New songs are not shown in my library
 
 Click Library-\>Rescan library, wait for the scan to finish, and search

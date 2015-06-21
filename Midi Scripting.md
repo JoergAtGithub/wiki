@@ -351,7 +351,7 @@ controller to react. Here are the related functions:
     function name*, **true**) - Tacking a `,true` on to the list of
     parameters disconnects the specified Mixxx control signal from the
     specified script function. It returns true if the disconnection was
-    successful.
+    successful. Note that the script function name must be in quotes.
   - **engine.trigger**(*control group*, *control name*) - An easy way to
     cause the specified Mixxx control signal to fire so the connected
     script function is called with the updated value even if it hasn't
@@ -1013,9 +1013,9 @@ MyController.connectDeckControls = function (group, remove) { // This function i
     
     remove = (typeof remove !== 'undefined') ? remove : false // If the 'remove' parameter is not passed to this function, set remove = false
     var controlsToFunctions = { // This hash table maps Mixxx controls to the script functions (not shown in this example) that control LEDs that react to changes in those controls
-        'play': MyController.playButtonLED,
-        'sync_enabled': MyController.syncLED,
-        'pfl': MyController.headphoneLED
+        'play': 'MyController.playButtonLED',
+        'sync_enabled': 'MyController.syncLED',
+        'pfl': 'MyController.headphoneLED'
         // ... and any other functions that react to changes in Mixxx controls for a deck
     }
     

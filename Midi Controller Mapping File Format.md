@@ -1,8 +1,6 @@
+*Current XML file schema revision is: 1*
+
 # MIDI Controller Mapping File Format
-
-**Current XML file schema revision is: 1**
-
-## Introduction
 
 Support for additional MIDI devices can be added to Mixxx by creating a
 new "MIDI preset" file. This file tells Mixxx how to translate, or map,
@@ -24,7 +22,7 @@ When you've finished creating your MIDI mapping, please send it to us or
 post it [on the forums](http://mixxx.org/forums/viewforum.php?f=7) and
 we'll include it in the next Mixxx version. :)
 
-### File locations
+## File locations
 
 Put custom mappings in the following folder. The MIDI Learning Wizard
 puts its mapping files here:
@@ -43,7 +41,7 @@ folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
 
 The default MIDI mapping files, which you can look at for examples or a
 starting point for your own custom mapping, are located in the following
-paths:
+directory:
 
   - GNU/Linux: `/usr/share/mixxx/controllers` or
     `/usr/local/share/mixxx/controllers`

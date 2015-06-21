@@ -106,9 +106,8 @@ this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 ### Sniffing your controller
 
 *First, try using the MIDI Learn functionality in the Preferences-\>MIDI
-Devices window at the bottom (in Mixxx 1.7.0 and higher.) It will help
-you get many of the essential functions mapped quickly without having to
-do any hacking.*
+Devices window at the bottom. It will help you get many of the essential
+functions mapped quickly without having to manually edit XML.*
 
 If you don't have the MIDI specification for your controller, first
 check the manufacturer's web site under Support. Look for Manuals or
@@ -116,8 +115,8 @@ User Guides. MIDI specs are usually given in an appendix at the back of
 the manual. Failing that, you can usually sniff the MIDI data the
 controller sends with the following procedure:
 
-1.  Start Mixxx (1.8.0 and later) from a command prompt using the
-    `--midiDebug` option like so: 
+1.  Start Mixxx from a command prompt using the `--midiDebug` option
+    like so: 
 
 <!-- end list -->
 

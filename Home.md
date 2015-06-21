@@ -18,15 +18,15 @@ plans.
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
+  - [Reporting bugs](Reporting%20bugs)
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
-  - [Music-reactive lighting](MIDI%20for%20light)
-  - [System requirements](System%20requirements)
-  - [Command line options](Command%20line%20options)
-  - [Reporting bugs](Reporting%20bugs)
   - [Live GNU/Linux Distributions featuring Mixxx](Portable%20Mixxx):
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
+  - [Command line options](Command%20line%20options)
+  - [Music-reactive lighting](MIDI%20for%20light)
+  - [System requirements](System%20requirements)
 
 ## Community Resources
 

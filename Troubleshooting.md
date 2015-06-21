@@ -77,9 +77,9 @@ good for audio use that requires low latency like Mixxx. The PulseAudio
 daemon occupies the ALSA device while it is running. To temporarily
 disable PulseAudio while Mixxx is running, start it with `pasuspender
 mixxx`. The .desktop launcher icon for Mixxx does this automatically. To
-run Mixxx with command line options, such as `--mididebug`, put `--`
-between `pasuspender` and the rest of the command. For example, run
-`pasuspender -- mixxx --mididebug`
+run Mixxx with [command line options](command%20line%20options), such as
+`--mididebug`, put `--` between `pasuspender` and the rest of the
+command. For example, run `pasuspender -- mixxx --mididebug`
 
 ## My controller does not work
 

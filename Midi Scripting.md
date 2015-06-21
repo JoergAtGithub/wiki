@@ -68,7 +68,7 @@ Script files use the naming convention
 Put your custom JS & XML file in this directory:
 
   - GNU/Linux: `/home/<username>/.mixxx/controllers`
-  - OS X: `/Users/<username>/Library/Application\
+  - OS X: `/Users/<username>/Library/Application
     Support/Mixxx/controllers`
   - Windows: `%USERPROFILE%\AppData\Mixxx\controllers`
 

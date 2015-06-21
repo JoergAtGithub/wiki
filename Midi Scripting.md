@@ -61,7 +61,7 @@ This can make testing changes very fast.
 
 ## Setting up a JavaScript mapping file
 
-### File and function naming conventions
+### File locations
 
 Script files use the naming convention
 `<manufacturer>-<device>-scripts.js` (e.g. `Stanton-SCS3d-scripts.js`).
@@ -79,19 +79,19 @@ if you have not already, you will need to set Windows explorer to [show
 hidden files and
 folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
 
-For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
-above paths.
+The default mapping files, which you can look at as examples or a
+starting point for your custom mapping, are located in the following
+directory:
 
-The default mapping files, which you can look at as examples, are
-located in the following paths:
-
-  - GNU/Linux: /usr/share/mixxx/controllers or
-    /usr/local/share/mixxx/controllers
-  - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
-  - Windows: C:\\Program Files\\Mixxx\\controllers
+  - GNU/Linux: `/usr/share/mixxx/controllers` or
+    `/usr/local/share/mixxx/controllers`
+  - OS X: `/Applications/Mixxx.app/Contents/Resources/controllers/`
+  - Windows: `C:\Program Files\Mixxx\controllers`
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.
+
+### Function & variable naming conventions
 
 Functions use the naming convention `<manufacturer><device>.<function
 name>` (e.g. `StantonSCS3d.pitchSlider`). Global variables use
@@ -194,9 +194,9 @@ MIDI mapping file, put the full function name in the \<key\> tag, and a
 The value for \<group\> doesn't matter when using a script function, but
 it still needs to be valid or the XML parser will report an error. It is
 also passed to the function as an extra parameter (since v1.8.) (This is
-useful for dual-deck controllers since you only need one function that
-checks the \<group\> and reacts appropriately.) No tags or options are
-considered other than those shown above, so you can leave them out.
+useful for multi-deck controllers because you only need one function
+that checks the \<group\> and reacts appropriately.) No tags or options
+are considered other than those shown above, so you can leave them out.
 
 When this device control is operated, the named script function is
 called. That function then determines what action is taken based on the

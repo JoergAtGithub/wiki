@@ -24,9 +24,8 @@ implementation. It probably will not be implemented for a while.***
 
 ``` 
     *inputs and outputs for the same button/knob/slider/whatever organized together rather than separate input/output sections
-    *code for various modes organized together rather than scattered across many functions
-* trivial to implement modifiers, including buttons that toggle different modes or between decks
-* functions for handling these signals would manipulate mapping objects rather than having a bunch of different functions each checking the values of global variables or engine states
+    *code for various modes toggled by modifiers organized together rather than scattered across many functions
+      *functions for handling these signals would manipulate mapping objects rather than having a bunch of different functions each checking the values of global variables or engine states
 * unite MIDI, HID, and keyboard mappings into one coherent API
 * maximum flexibility
 * facilitate bindings to other languages, particularly Python

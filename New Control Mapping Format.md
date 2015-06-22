@@ -46,6 +46,9 @@ implementation. It probably will not be implemented for a while.***
     -objects representing MIDI/HID/keyboard signals with attributes linking them to Mixxx controls
     -objects representing Mixxx controls with attributes linking them to MIDI/HID/keyboard signals
 
+Maybe have a function that automatically transforms mapping specified by
+Approach 1 into objects like those in Approach 2?
+
 ### Approach 1
 
 ``` javascript
@@ -92,6 +95,3 @@ Object.defineProperties(Channel1.play.output.midi.MyController, {
 ```
 
   - inputs and outputs organized together
-
-Maybe have a function that automatically transforms mapping specified by
-Approach 1 into objects like those in Approach 2?

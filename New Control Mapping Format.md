@@ -43,6 +43,7 @@ implementation. It probably will not be implemented for a while.***
 * Could Python be the primary scripting language?
 * Python-Qt bindings: [[http://pythonqt.sourceforge.net|PythonQt]], [[http://www.riverbankcomputing.com/software/pyqt/intro|PyQt]], [[https://wiki.qt.io/PySide|PySide]]
 * communications between scripts that don't require manipulating a Mixxx control
+* Scripts could manipulate the mappings of other devices. For example, if a MIDI controller has one less button than a mapper would like, they could map a keyboard button press to toggle between layers on the MIDI controller.
 * performance better than or equal to current XML/JS format
 ```
 

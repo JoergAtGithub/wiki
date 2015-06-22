@@ -22,7 +22,7 @@ implementation. It probably will not be implemented for a while.***
     overridden by scripts. 
   - straightforward to edit via GUI or manually with minimal boilerplate
     code cluttering the screen
-  - JSON rather than XML
+  - [JSON rather than XML](http://www.json.org/xml.html)
   - [Mixxxcontrols](Mixxxcontrols) conveniently accessible to scripts,
     for example, getting & setting `Channel1.play.value` (or better yet,
     `this.value`) rather than `engine.getValue('[Channel1]', 'play')` &

@@ -8,9 +8,10 @@ implementation. It probably will not be implemented for a while.***
   - reduce barriers to entry: the easier it is to work with, the more
     people will contribute high quality mappings
   - do not require programming skills to edit basic mappings
-  - easy to program complex functions like modifiers, deck toggle
-    buttons, jog wheels, and scratching even for people who have never
-    programmed before
+  - easy to program complex functions even for people who have never
+    programmed before. Complex functions include modifiers, deck toggle
+    buttons, jog wheels, scratching, and soft takeover with customized
+    thresholds 
   - straightforward to edit via GUI or manually with minimal boilerplate
     code cluttering the screen
   - JSON rather than XML

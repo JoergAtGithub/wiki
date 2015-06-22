@@ -6,10 +6,10 @@ implementation. It probably will not be implemented for a while.***
 ## Design goals
 
   - reduce barriers to entry: the easier it is to work with, the more
-    people will contribute high quality mappings. This will hopefully
-    lead to Mixxx being compatible with more hardware, attract users and
-    developers, and grow community which will further lead to overall
-    improvement of Mixxx.
+    people will contribute high quality mappings. This by itself could
+    grow community. Hopefully, when Mixxx is compatible with a broader
+    range of more common hardware, this will further attract users &
+    developers and lead to overall improvement of Mixxx.
   - do not require programming skills to edit basic mappings
   - easy to program complex functions even for people who have never
     programmed before. Complex functions include but are not limited to:

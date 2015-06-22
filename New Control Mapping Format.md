@@ -40,6 +40,8 @@ implementation. It probably will not be implemented for a while.***
 * maximum flexibility
 * facilitate bindings to other languages, particularly Python
 * JSON is good for this
+* Could Python be the primary scripting language?
+* Python-Qt bindings: [[http://pythonqt.sourceforge.net|PythonQt]], [[http://www.riverbankcomputing.com/software/pyqt/intro|PyQt]], [[https://wiki.qt.io/PySide|PySide]]
 * communications between scripts that don't require manipulating a Mixxx control
 * performance better than or equal to current XML/JS format
 ```

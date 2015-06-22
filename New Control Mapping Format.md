@@ -36,7 +36,7 @@ implementation. It probably will not be implemented for a while.***
     *code for various modes toggled by modifiers organized together rather than scattered across many functions
       *functions for handling these signals would manipulate mapping objects rather than having a bunch of different functions each checking the values of global variables or engine states
 * unite MIDI, HID, and keyboard mappings into one coherent API
-* This could facilitate adding support for other kinds of signals like OSC and generic Linux input events for [[https://bugs.launchpad.net/mixxx/+bug/1432442|old Native Instuments Traktor controllers]] and whatever else the future brings
+* This could facilitate adding support for other kinds of signals like [[OSC backend|OSC]] and generic Linux input events for [[https://bugs.launchpad.net/mixxx/+bug/1432442|old Native Instuments Traktor controllers]] and whatever else the future brings
 * maximum flexibility
 * facilitate bindings to other languages, particularly Python
 * JSON is good for this

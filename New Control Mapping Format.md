@@ -9,8 +9,8 @@ implementation. It probably will not be implemented for a while.***
     code cluttering the screen
   - JSON rather than XML
   - [Mixxxcontrols](Mixxxcontrols) conveniently accessible to scripts,
-    for example, getting & setting `Channel1.play.value` rather than
-    `engine.getValue('[Channel1]', 'play')` &
+    for example, getting & setting `Channel1.play.value` (or better yet,
+    `this.value`) rather than `engine.getValue('[Channel1]', 'play')` &
     `engine.setValue('[Channel11]', 'play', newValue)`
   - intuitively organized code
   - inputs and outputs for the same button/knob/slider/whatever

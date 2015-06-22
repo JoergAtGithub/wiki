@@ -83,7 +83,7 @@ Channel1.play = {
                 status: 0x90
             }
         },
-    output: this.input // Send output with same channel & status with value determined by send method below
+    output: this.input // Send output with same channel & status with value determined by return value of the send method below
 }
 
 Object.defineProperties(Channel1.play.output.midi.MyController, {

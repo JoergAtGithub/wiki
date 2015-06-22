@@ -55,10 +55,10 @@ could allow scripts to override the default function.
 
 ``` javascript
 MyController.midiMap = {
-    {channel: 1, status: 0x90, control: Channel1.play}
+    {channel: 1, status: 0x90, control: Channel1.play, type: 'button'}
 }
 
-// The below would not need to be explicitly specified by the mapping; it would be the default MIDI receive behavior for ChannelX.play objects.
+// The below would not need to be explicitly specified by the mapping; it would be the default MIDI receive behavior for all objects with a type attribute equal to 'button'.
 Channel1.play.MyController.receive = function (velocity) {
     if (velocity) {
         this.value = ! this.value // what would be proper JS way to access Channel1.play.value?

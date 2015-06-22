@@ -23,11 +23,12 @@ set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
 with the "threadirqs" kernel argument, add it to your grub.cfg by
 editing /etc/default/grub as root, adding "threadirqs" to the line for
 GRUB\_CMDLINE\_LINUX, then running `grub2-mkconfig -o
-/boot/grub2/grub.cfg`. Reboot. Check that you have booted with the
-"threadirqs" kernel parameter by running `grep threadirqs
-/proc/cmdline`. If you booted with the "threadirqs" kernel parameter,
-all the parameters you booted with will be printed. If there is no
-output, you did not boot with the "threadirqs" kernel parameter.
+/boot/grub/grub.cfg` (on Fedora, replace `grub` with `grub2`). Reboot.
+Check that you have booted with the "threadirqs" kernel parameter by
+running `grep threadirqs /proc/cmdline`. If you booted with the
+"threadirqs" kernel parameter, all the parameters you booted with will
+be printed. If there is no output, you did not boot with the
+"threadirqs" kernel parameter.
 
 To use a kernel with the realtime patch set, Fedora users can install
 the kernel-rt package from the [Planet

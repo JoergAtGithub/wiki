@@ -15,8 +15,10 @@ implementation. It probably will not be implemented for a while.***
   - intuitively organized code
   - inputs and outputs for the same button/knob/slider/whatever
     organized together rather than separate input/output sections
-  - trivial to implement modifiers
-  - trivial to implement deck toggle buttons
+  - trivial to implement modifiers, including deck toggle buttons
+  - functions for handling these signals would manipulate mapping
+    objects rather than having a bunch of different functions each
+    checking the values of global variables or engine states
   - unite MIDI, HID, and keyboard mappings into one coherent API
   - maximum flexibility
   - facilitate bindings to other languages, particularly Python

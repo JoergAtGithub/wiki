@@ -53,6 +53,7 @@ MyController.midiMap = {
     {channel: 1, status: 0x90, control: Channel1.play}
 }
 
+// The below would not need to be explicitly specified by the mapping; it would be the default MIDI receive behavior for ChannelX.play objects.
 Channel1.play.MyController.receive = function (velocity) {
     if (velocity) {
         this.value = ! this.value // what would be proper JS way to access Channel1.play.value?

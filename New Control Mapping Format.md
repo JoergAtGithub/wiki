@@ -32,8 +32,8 @@ MyController.midiMap = {
     {channel: 1, status: 0x90, control: Channel1.play}
 }
 
-Channel1.play.midi.receive = function (velocity) {
-    this.value = (velocity) ? 1 : 0
+Channel1.play.MyController.receive = function (velocity) {
+    this.value = (velocity) ? 1 : 0 // what would be proper JS way to access Channel1.play.value?
 }
 ```
 

@@ -1,7 +1,9 @@
 ***This document is a draft for a proposal that has not even begun
 implementation. It probably will not be implemented for a while.***
 
-# Design goals
+# New control mapping design
+
+## Design goals
 
   - reduce barriers to entry: the easier it is to work with, the more
     people will contribute high quality mappings
@@ -25,12 +27,12 @@ implementation. It probably will not be implemented for a while.***
   - communications between scripts that don't require manipulating a
     Mixxx control
 
-# Possible implementations
+## Possible implementations
 
     -objects representing MIDI/HID/keyboard signals with attributes linking them to Mixxx controls
     -objects representing Mixxx controls with attributes linking them to MIDI/HID/keyboard signals
 
-## Approach 1
+### Approach 1
 
 ``` javascript
 MyController.midiMap = {
@@ -46,7 +48,7 @@ Channel1.play.MyController.receive = function (velocity) {
   - probably easier to adapt existing scripts to (or they might not need
     any adaptation)
 
-## Approach 2
+### Approach 2
 
 ``` javascript
 Channel1.play = { midi: { input: { MyController: {channel: 1, status, 0x90} }, output: this.input } }

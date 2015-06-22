@@ -8,8 +8,9 @@ implementation. It probably will not be implemented for a while.***
   - reduce barriers to entry: the easier it is to work with, the more
     people will contribute high quality mappings
   - do not require programming skills to edit basic mappings
-  - relatively easy to program complex functions like modifiers, deck
-    toggle buttons, jog wheels, and scratching
+  - easy to program complex functions like modifiers, deck toggle
+    buttons, jog wheels, and scratching even for people who have never
+    programmed before
   - straightforward to edit via GUI or manually with minimal boilerplate
     code cluttering the screen
   - JSON rather than XML
@@ -18,17 +19,19 @@ implementation. It probably will not be implemented for a while.***
     `this.value`) rather than `engine.getValue('[Channel1]', 'play')` &
     `engine.setValue('[Channel11]', 'play', newValue)`
   - intuitively organized code
-  - inputs and outputs for the same button/knob/slider/whatever
-    organized together rather than separate input/output sections
-  - trivial to implement modifiers, including deck toggle buttons
-  - functions for handling these signals would manipulate mapping
-    objects rather than having a bunch of different functions each
-    checking the values of global variables or engine states
-  - unite MIDI, HID, and keyboard mappings into one coherent API
-  - maximum flexibility
-  - facilitate bindings to other languages, particularly Python
-  - communications between scripts that don't require manipulating a
-    Mixxx control
+
+<!-- end list -->
+
+``` 
+    *inputs and outputs for the same button/knob/slider/whatever organized together rather than separate input/output sections
+    *code for various modes organized together rather than scattered across many functions
+* trivial to implement modifiers, including buttons that toggle different modes or between decks
+* functions for handling these signals would manipulate mapping objects rather than having a bunch of different functions each checking the values of global variables or engine states
+* unite MIDI, HID, and keyboard mappings into one coherent API
+* maximum flexibility
+* facilitate bindings to other languages, particularly Python
+* communications between scripts that don't require manipulating a Mixxx control
+```
 
 ## Possible implementations
 

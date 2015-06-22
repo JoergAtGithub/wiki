@@ -39,6 +39,7 @@ implementation. It probably will not be implemented for a while.***
 * maximum flexibility
 * facilitate bindings to other languages, particularly Python
 * communications between scripts that don't require manipulating a Mixxx control
+* performance better or equal to current XML/JS format
 ```
 
 ## Possible implementations

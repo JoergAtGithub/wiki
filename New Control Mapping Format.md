@@ -38,6 +38,7 @@ implementation. It probably will not be implemented for a while.***
 * unite MIDI, HID, and keyboard mappings into one coherent API
 * maximum flexibility
 * facilitate bindings to other languages, particularly Python
+* JSON is good for this
 * communications between scripts that don't require manipulating a Mixxx control
 * performance better than or equal to current XML/JS format
 ```

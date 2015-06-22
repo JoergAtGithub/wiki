@@ -46,8 +46,9 @@ implementation. It probably will not be implemented for a while.***
     -objects representing MIDI/HID/keyboard signals with attributes linking them to Mixxx controls
     -objects representing Mixxx controls with attributes linking them to MIDI/HID/keyboard signals
 
-Maybe have a function that automatically transforms mapping specified by
-Approach 1 into objects like those in Approach 2?
+Maybe have a prototype function that automatically transforms mapping
+specified by Approach 1 into objects like those in Approach 2? This
+could allow scripts to override the default function.
 
 ### Approach 1
 

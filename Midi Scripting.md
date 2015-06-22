@@ -431,6 +431,10 @@ So to enable soft-takeover for the pitch control on channel
 ` ...and to disable it: `engine.softTakeover("[Channel1]","rate",false);
 `
 
+Note that this only works for controls manipulated through
+engine.setValue() in a script. It does not work for controls mapped in
+an XML file.
+
 ### Scratching
 
 *Introduced in v1.8, ramp toggles and isScratching() added in v1.11*

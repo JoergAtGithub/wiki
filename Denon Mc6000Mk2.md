@@ -1,5 +1,7 @@
 //This modified mapping has not been released, yet. Please stay tuned.//
 
+Product page: [[http://denondj.com/products/view/mc6000mk2]]
+
 ^ # USER MANUAL ^ CONTROL ^ MODIFIER ^ CONTEXT           ^ FUNCTION ^
 ^ 9  | DECK               |          |                   | Switch active deck |
 ^ 26 | BACK               |          |                   | Select previous track |

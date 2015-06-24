@@ -1,66 +1,73 @@
-*This modified mapping has not been released, yet. Please stay tuned.*
+//This modified mapping has not been released, yet. Please stay tuned.//
 
-| \# USER MANUAL | CONTROL         | MODIFIER | CONTEXT           | FUNCTION                                                                                                                                           |
-| -------------- | --------------- | -------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 28             | LOAD            | NONE     |                   | Load selected track into active deck                                                                                                               |
-|                |                 | SHIFT    |                   | Eject loaded track from active deck                                                                                                                |
-| 29             | FILTER ON       |          |                   | Enable/disable filter effect for deck 1/3 or 2/4                                                                                                   |
-| 30             | FILTER KNOB     |          |                   | Control filter effect (low/high pass) for deck 1/3 or 2/4                                                                                          |
-| 44             | LEVEL KNOB      |          |                   | Control channel gain                                                                                                                               |
-| 43             | HI KNOB         |          |                   | Control channel EQ (high freq.)                                                                                                                    |
-| 43             | MID KNOB        |          |                   | Control channel EQ (mid. freq.)                                                                                                                    |
-| 43             | LOW KNOB        |          |                   | Control channel EQ (low freq.)                                                                                                                     |
-| 35             | CUE MIX         | NONE     |                   | Enable/disable cue mix                                                                                                                             |
-|                |                 | SHIFT    |                   | Enable solo cue mix (only this channel)                                                                                                            |
-| 16             | CUE             | NONE     | Deck is empty     | Load selected track                                                                                                                                |
-|                |                 | NONE     |                   | Trigger cue according to configured cue mode                                                                                                       |
-|                |                 | SHIFT    | Deck is stopped   | Delete cue point, or jump to beginning of the track if no cue point has been set                                                                   |
-|                |                 | SHIFT    | Deck is playing   | Set/move cue point                                                                                                                                 |
-|                |                 |          | Auto DJ / stopped | Skip the loaded/next track                                                                                                                         |
-| 17             | PLAY            | NONE     | Deck is empty     | Load and play selected track                                                                                                                       |
-|                |                 | NONE     |                   | Start/continue playback                                                                                                                            |
-|                |                 | SHIFT    | Deck is stopped   | Stutter playback                                                                                                                                   |
-|                |                 |          | Deck is playing   | Stop playback                                                                                                                                      |
-|                |                 |          | Auto DJ / stopped | Fade now and start playing the loaded/next track                                                                                                   |
-| 20             | VINYL           |          |                   | Enable/disable vinyl mode (scratching)                                                                                                             |
-| 11             | KEY LOCK        |          |                   | Enable/disable key lock mode                                                                                                                       |
-| 15             | SYNC            |          |                   | Trigger synchronization of BPM and phase                                                                                                           |
-| 13             | JOG WHEEL       | NONE     |                   | Bend or scratch (vinyl mode)                                                                                                                       |
-|                |                 | SHIFT    | Deck is stopped   | Fast track seek (strip search)                                                                                                                     |
-| 19             | PITCH BEND +    |          | Deck is stopped   | Fast forward                                                                                                                                       |
-|                |                 | NONE     | Deck is playing   | Pitch bend up                                                                                                                                      |
-|                |                 | SHIFT    | Deck is playing   | Pitch bend up (small)                                                                                                                              |
-| 19             | PITCH BEND -    |          | Deck is stopped   | Fast rewind                                                                                                                                        |
-|                |                 | NONE     | Deck is playing   | Pitch bend down                                                                                                                                    |
-|                |                 | SHIFT    | Deck is playing   | Pitch bend down (small)                                                                                                                            |
-| 18             | SLIP/CENSOR     | NONE     |                   | Censor: Enable reverse and slip mode while pressed                                                                                                 |
-|                |                 | SHIFT    |                   | Enable/disable slip mode                                                                                                                           |
-| 8              | HOT CUE 1/2/3/4 | NONE     | Deck is stopped   | Jump to hot cue and start playing while pressed                                                                                                    |
-|                |                 | NONE     | Deck is playing   | Jump to hot cue                                                                                                                                    |
-|                |                 | SHIFT    |                   | Delete hot cue                                                                                                                                     |
-| 8              | SAMPLER 1/2/3/4 | NONE     | Sampler is empty  | Load selected track into sampler                                                                                                                   |
-|                |                 | NONE     | Press button      | Play track from beginning while pressed                                                                                                            |
-|                |                 | NONE     | Release button    | Stop playback                                                                                                                                      |
-|                |                 | SHIFT    | Release button    | Continue playback                                                                                                                                  |
-|                |                 | SHIFT    | Press button      | Eject track from sampler                                                                                                                           |
-| 7              | AUTO LOOP       | NONE     | Loop is undefined | Activate a loop over 4 beats                                                                                                                       |
-|                |                 | SHIFT    | Loop is undefined | Activate a rolling loop over 4 beats                                                                                                               |
-|                |                 | NONE     | Loop is defined   | Enable/disable loop                                                                                                                                |
-|                |                 | SHIFT    | Loop is defined   | Delete loop                                                                                                                                        |
-| 7              | LOOP +          | NONE     |                   | Double loop length                                                                                                                                 |
-|                |                 | SHIFT    |                   | Move loop forward by 1 beat                                                                                                                        |
-| 7              | LOOP -          | NONE     |                   | Halve loop length                                                                                                                                  |
-|                |                 | SHIFT    |                   | Move loop backward by 1 beat                                                                                                                       |
-| 6              | LOOP IN         | NONE     |                   | Set or jump to loop in position                                                                                                                    |
-|                |                 | SHIFT    |                   | Delete whole loop (in + out position)                                                                                                              |
-| 6              | LOOP OUT        | NONE     |                   | Set or jump to loop out position                                                                                                                   |
-|                |                 | SHIFT    |                   | Delete loop out position                                                                                                                           |
-| 2              | TAP             | NONE     |                   | Enable/disable EFX unit                                                                                                                            |
-|                |                 | SHIFT    |                   | Enable/disable EFX unit + wet loop (automatically enables/disables slip mode when dry/wet mix becomes completely wet, indicated by a blinking LED) |
-| 4              | EFX 1/2/3 ON    | NONE     |                   | Toggle parameter between max. (= ON) and current (= OFF) value                                                                                     |
-|                |                 | SHIFT    |                   | Reset parameter to min. value                                                                                                                      |
-| 3              | EFX 1 KNOB      |          | Echo effect       | Control echo delay ("parameter2"), synchronized with BPM of assigned deck (length = 1 beat)                                                        |
-| 3              | EFX 2 KNOB      |          | Echo effect       | Control echo feedback ("parameter3")                                                                                                               |
-| 3              | EFX 3 KNOB      |          |                   | Control dry/wet mix                                                                                                                                |
-| 1              | BEATS/V.FX SEL. | NONE     |                   | Change musical key                                                                                                                                 |
-|                |                 | SHIFT    |                   | Load prev/next EFX chain                                                                                                                           |
+^ # USER MANUAL ^ CONTROL ^ MODIFIER ^ CONTEXT           ^ FUNCTION ^
+^ 9  | DECK               |          |                   | Switch active deck |
+^ 26 | BACK               |          |                   | Select previous track |
+^ 26 | FWD                |          |                   | Select next track |
+^ 27 | SELECT KNOB        |          |                   | Scroll through track list |
+^ 28 | LOAD               | NONE     |                   | Load selected track into active deck |
+|    |                    | SHIFT    |                   | Eject loaded track from active deck |
+^ 29 | FILTER ON          |          |                   | Enable/disable filter effect for deck 1/3 or 2/4 |
+^ 30 | FILTER KNOB        |          |                   | Control filter effect (low/high pass) for deck 1/3 or 2/4 |
+^ 44 | LEVEL KNOB         |          |                   | Control channel gain |
+^ 43 | HI KNOB            |          |                   | Control channel EQ (high freq.) |
+^ 43 | MID KNOB           |          |                   | Control channel EQ (mid. freq.) |
+^ 43 | LOW KNOB           |          |                   | Control channel EQ (low freq.) |
+^ 35 | CUE MIX            | NONE     |                   | Enable/disable cue mix |
+|    |                    | SHIFT    |                   | Enable solo cue mix (only this channel) |
+^ 16 | CUE                | NONE     | Deck is empty     | Load selected track |
+|    |                    | NONE     |                   | Trigger cue according to configured cue mode |
+|    |                    | SHIFT    | Deck is stopped   | Delete cue point, or jump to beginning of the track if no cue point has been set |
+|    |                    | SHIFT    | Deck is playing   | Set/move cue point |
+|    |                    |          | Auto DJ / stopped | Skip the loaded/next track |
+^ 17 | PLAY               | NONE     | Deck is empty     | Load and play selected track |
+|    |                    | NONE     |                   | Start/continue playback |
+|    |                    | SHIFT    | Deck is stopped   | Stutter playback |
+|    |                    |          | Deck is playing   | Stop playback |
+|    |                    |          | Auto DJ / stopped | Fade now and start playing the loaded/next track |
+^ 20 | VINYL              |          |                   | Enable/disable vinyl mode (scratching) |
+^ 11 | KEY LOCK           |          |                   | Enable/disable key lock mode |
+^ 15 | SYNC               |          |                   | Trigger synchronization of BPM and phase |
+^ 13 | JOG WHEEL          | NONE     |                   | Bend or scratch (vinyl mode) |
+|    |                    | SHIFT    | Deck is stopped   | Fast track seek (strip search) |
+^ 14 | PITCH SLIDER       |          |                   | Change playback speed |
+^ 19 | PITCH BEND +       |          | Deck is stopped   | Fast forward |
+|    |                    | NONE     | Deck is playing   | Pitch bend up |
+|    |                    | SHIFT    | Deck is playing   | Pitch bend up (small) |
+^ 19 | PITCH BEND -       |          | Deck is stopped   | Fast rewind |
+|    |                    | NONE     | Deck is playing   | Pitch bend down |
+|    |                    | SHIFT    | Deck is playing   | Pitch bend down (small) |
+^ 18 | SLIP/CENSOR        | NONE     |                   | Censor: Enable reverse and slip mode while pressed |
+|    |                    | SHIFT    |                   | Enable/disable slip mode |
+^ 12 | HOT CUE / SAMPLE   |          |                   | Switch between hot cues and samplers |
+^ 8  | HOT CUE 1/2/3/4    | NONE     | Deck is stopped   | Jump to hot cue and start playing while pressed |
+|    |                    | NONE     | Deck is playing   | Jump to hot cue |
+|    |                    | SHIFT    |                   | Delete hot cue |
+^ 8  | SAMPLE 1/2/3/4     | NONE     | Sampler is empty  | Load selected track into sampler |
+|    |                    | NONE     | Press button      | Play track from beginning while pressed |
+|    |                    | NONE     | Release button    | Stop playback |
+|    |                    | SHIFT    | Release button    | Continue playback |
+|    |                    | SHIFT    | Press button      | Eject track from sampler |
+^ 7  | AUTO LOOP          | NONE     | Loop is undefined | Activate a loop over 4 beats |
+|    |                    | SHIFT    | Loop is undefined | Activate a rolling loop over 4 beats |
+|    |                    | NONE     | Loop is defined   | Enable/disable loop |
+|    |                    | SHIFT    | Loop is defined   | Delete loop |
+^ 7  | LOOP +             | NONE     |                   | Double loop length |
+|    |                    | SHIFT    |                   | Move loop forward by 1 beat |
+^ 7  | LOOP -             | NONE     |                   | Halve loop length |
+|    |                    | SHIFT    |                   | Move loop backward by 1 beat |
+^ 6  | LOOP IN            | NONE     |                   | Set or jump to loop in position |
+|    |                    | SHIFT    |                   | Delete whole loop (in + out position) |
+^ 6  | LOOP OUT           | NONE     |                   | Set or jump to loop out position |
+|    |                    | SHIFT    |                   | Delete loop out position |
+^ 2  | TAP                | NONE     |                   | Enable/disable EFX unit |
+|    |                    | SHIFT    |                   | Enable/disable EFX unit + wet loop (automatically enables/disables slip mode when dry/wet mix becomes completely wet, indicated by a blinking LED) |
+^ 5  | EFX CH. ASSIGN     | NONE     |                   | Assign/unassign deck
+|    |                    | SHIFT    |                   | Assign deck exclusively
+^ 4  | EFX 1/2/3 ON       | NONE     |                   | Toggle parameter between max. (= ON) and current (= OFF) value |
+|    |                    | SHIFT    |                   | Reset parameter to min. value |
+^ 3  | EFX 1 KNOB         |          | Echo effect       | Control echo delay ("parameter2"), synchronized with BPM of assigned deck (length = 1 beat) |
+^ 3  | EFX 2 KNOB         |          | Echo effect       | Control echo feedback ("parameter3") |
+^ 3  | EFX 3 KNOB         |          |                   | Control dry/wet mix |
+^ 1  | BEATS/V.FX SEL.    | NONE     |                   | Change musical key |
+|    |                    | SHIFT    |                   | Load prev/next EFX chain |

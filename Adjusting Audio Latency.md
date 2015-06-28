@@ -12,7 +12,7 @@ lower latency audio:
 
 In Preferences \> Sound hardware, if there is a link to this page, Mixxx
 is not running with real time priority. To enable Mixxx to run with real
-time priority, you will need to set up your kernel and scheduling
+time priority, you wil need to set up your kernel and scheduling
 permissions.
 
 #### Kernel setup
@@ -22,14 +22,16 @@ To use real time scheduling, you will either need to boot Linux with the
 set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
 with the "threadirqs" kernel argument, add it to your grub.cfg by
 editing /etc/default/grub as root, adding "threadirqs" to the line for
-GRUB\_CMDLINE\_LINUX, then running `grub-mkconfig -o
-/boot/grub/grub.cfg`. If the grub-mkconfig command is not found (this is
-the case on Fedora), run `grub2-mkconfig -o /boot/grub2/grub.cfg`.
-Reboot. Check that you have booted with the "threadirqs" kernel
-parameter by running `grep threadirqs /proc/cmdline`. If you booted with
-the "threadirqs" kernel parameter, all the parameters you booted with
-will be printed. If there is no output, you did not boot with the
-"threadirqs" kernel parameter.
+GRUB\_CMDLINE\_LINUX, then generate a new grub.cfg file. On most
+distributions, do this by running `grub-mkconfig -o
+/boot/grub/grub.cfg`. On Fedora, run `grub2-mkconfig -o
+/boot/grub2/grub.cfg` if you boot with BIOS (legacy) or `grub2-mkconfig
+-o /boot/efi/EFI/fedora/grub.cfg` if you boot with EFI (if /boot/efi
+does not exist, you boot with BIOS). Reboot. Check that you have booted
+with the "threadirqs" kernel parameter by running `grep threadirqs
+/proc/cmdline`. If you booted with the "threadirqs" kernel parameter,
+all the parameters you booted with will be printed. If there is no
+output, you did not boot with the "threadirqs" kernel parameter.
 
 To use a kernel with the realtime patch set, Fedora users can install
 the kernel-rt package from the [Planet

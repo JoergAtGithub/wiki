@@ -1,4 +1,5 @@
 Forum link: <http://www.mixxx.org/forums/viewtopic.php?f=7&t=6251>
+
 Product page: <http://denondj.com/products/view/mc6000mk2>
 
 | \# User Manual | Control               | Modifier | Context           | Function                                                                                                                                           |

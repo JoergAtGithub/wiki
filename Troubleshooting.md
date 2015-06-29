@@ -266,6 +266,45 @@ doing it:
     Check if bpm and other meta infomation like cue points are still
     stored with the files.
 
+## Where is the mixxx.log file?
+
+Mixxx logs debugging information, [MIDI/HID/etc.
+messages](command_line_options) it receives and script functions it
+loads in the `mixxx.log` plain text file.
+
+  - **Linux:** \~/.mixxx/mixxx.log
+  - **Windows:** (enter the following into the Location bar of an
+    Explorer/My Computer window, or at the command prompt)
+  - Mixxx v1.9.0 and up: `%LOCALAPPDATA%\Mixxx` on Vista and up,
+    `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
+    below.
+  - Mixxx v1.8.x and below: `%PROGRAMFILES%\Mixxx` (or wherever
+    Mixxx.exe is)
+  - Note: The file may not show up as `mixxx.log` unless you've
+    unchecked `Hide extensions for known file types` in the Windows
+    Explorer folder options. Until then it is just `mixxx`, the only
+    text file in that location. By default in Windows 7 and up, known
+    file types are set to hide. See [How to show or hide file name
+    extensions in Windows
+    Explorer](http://support.microsoft.com/kb/865219)
+  - **Mac OS X:**
+  - Mixxx v1.9.0 and up: in your home folder under `Library/Application
+    Support/Mixxx` (so e.g. Users/\<username\>/Library/Application
+    Support/Mixxx)
+  - Note: Apple made the user library folder hidden by default with OSX
+    10.7 ff., use one of the following methods to open the Mixxx folder.
+
 <!-- end list -->
+
+``` 
+    * __Method A__:
+    * In the Finder, choose Go > Go To Folder.
+    * In the Go To Folder dialog, type ''~Library/Application Support/Mixxx''
+    * Click Go.
+    * __Method B__:
+    * Hold down the Alt (Option) key when using the Go menu
+    * The user library folder is listed below the current users home directory
+    * Navigate to ''Application Support/Mixxx''
+```
 
 1.  or /lib/udev/rules.d/15-mixxx-usb.rules in Ubuntu 12.04

@@ -945,7 +945,7 @@ MyController.shutdown = function() {}
 MyController.deck = {
     // a hash table (technically an object) to store which deck each side of the controller is manipulating
     // The keys (object properties) on the left represent the <group> elements in the XML mapping file.
-    // The values represent which deck that set of mappings in the XML file is currently controlling.
+    // The values on the right represent which deck that set of mappings in the XML file is currently controlling.
     // These values are toggled between [Channel1]/[Channel3] and [Channel2]/[Channel4] by the deckToggleButton function below.
     // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
     '[Channel1]': '[Channel1]',

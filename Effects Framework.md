@@ -310,14 +310,13 @@ Deck/Sampler names, etc.)
 Since the Control system is not capable of representing values other
 than numeric values, for the first iteration of the effects system, we
 must use a numeric coding system for representing the parameter types.
-If the GUI or MIDI Script author does not care about choosing correct
-values, he or she can use the parameterK\_value\_normalized control,
-which will always represent the parameter value as normalized to the
-range of 0.0 to 1.0. To use the parameterK\_value control, the setter
-must check the value against parameterK\_type (see the Parameter Types
-table below), parameterK\_value\_min, and parameterK\_value\_max to
-ensure the value is within the correct range. Invalid settings of any
-parameterK\_value controls will be ignored.
+If the MIDI Script author does not care about choosing correct values,
+he or she can use setParameter() which represents the parameter value as
+normalized to the range of 0.0 to 1.0. To use the parameterK\_value
+control, the setter must check the value against parameterK\_type (see
+the Parameter Types table below), parameterK\_value\_min, and
+parameterK\_value\_max to ensure the value is within the correct range.
+Invalid settings of any parameterK\_value controls will be ignored.
 
 | Parameter Value Type | Integer Value | Intepretation                               |
 | -------------------- | ------------- | ------------------------------------------- |

@@ -328,11 +328,13 @@ This linkage can be user-controlled by changing the `link_type` and the
 type is loaded from the effect parameter's manifest's `linkHint`
 property.
 
-| Link Type | Integer Value | Intepretation                         |
-| --------- | ------------- | ------------------------------------- |
-| None      | 0             | No linking.                           |
-| Linked    | 1             | Linked in a linear relation.          |
-| Inverse   | 2             | Linked in an inverse-linear relation. |
+| Link Type         | Integer Value | Intepretation                                  |
+| ----------------- | ------------- | ---------------------------------------------- |
+| None              | 0             | Not controlled by the super knob               |
+| Linked            | 1             | Controlled by the super knob as it is          |
+| Linked Left       | 2             | Controlled by the left side of the super knob  |
+| Linked Right      | 3             | Controlled by the right side of the super knob |
+| Linked Left Right | 4             | Controlled by both sides of the super knob     |
 
 | Link Inverse | Integer Value | Intepretation                  |
 | ------------ | ------------- | ------------------------------ |

@@ -323,15 +323,21 @@ normalized to the range of 0.0 to 1.0.
 #### Linking Values
 
 Effect parameters can be linked to their EffectChain's super-parameters.
-This linkage can be user-controlled by changing the `link_type` control
-of the EffectParameter slot. The default link type is loaded from the
-effect parameter's manifest's `linkHint` property.
+This linkage can be user-controlled by changing the `link_type` and the
+`link_inverse` control of the EffectParameter slot. The default link
+type is loaded from the effect parameter's manifest's `linkHint`
+property.
 
 | Link Type | Integer Value | Intepretation                         |
 | --------- | ------------- | ------------------------------------- |
 | None      | 0             | No linking.                           |
 | Linked    | 1             | Linked in a linear relation.          |
 | Inverse   | 2             | Linked in an inverse-linear relation. |
+
+| Link Inverse | Integer Value | Intepretation                  |
+| ------------ | ------------- | ------------------------------ |
+| Normal       | 0             | Linked in equal relation       |
+| Inverse      | 1             | Linked in an inverse relation. |
 
 ### User Interface
 

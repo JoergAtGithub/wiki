@@ -322,7 +322,7 @@ author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 ALSA). The FFADO project has [a list of Firewire interfaces compatible
 with Linux](http://ffado.org/?q=devicesupport/list).
 
-### Sound card types for different uses
+### What to look for in a sound card
 
 As explained [at the top of the
 page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
@@ -335,6 +335,15 @@ depths and a 96 kHz sample rate (there is [no
 advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
 sample rates).
 
+Laptops do not always have the most reliable power output to their USB
+ports, so the ability to use a separate power adapter for your sound
+card can be an advantage. If plugging in a laptop charger and sound card
+power adapter at the same time, it is best to plug them into the same
+power strip to avoid ground loop hum issues. Also, sound cards without
+power adapters tend to not be able to get as loud as those with their
+own power adapters. However, sound cards that are USB bus powered can be
+used with a laptop running from the laptop battery.
+
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
 DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
@@ -343,7 +352,8 @@ better to use a sound card with balanced outputs, especially if you will
 run long cables directly into an amplifier or active speakers without
 going through an analog DJ mixer. However, most venues have DJs plug
 into analog DJ mixers, which typically only have RCA inputs (RCA cables
-cannot be balanced). Most live sound mixers have balanced 1/4" inputs.
+cannot be balanced). Most home/computer speakers have RCA and/or 1/8"
+TRS stereo inputs. Most live sound mixers have balanced 1/4" TRS inputs.
 If you need to interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
@@ -358,13 +368,8 @@ is best to have phono preamplifiers (one for each deck) somewhere
 between your turntable and sound card to boost the turntable signal to
 line level. Mixxx can amplify phono level signals in software, but it is
 better to do it in hardware. The phono preamp can be in the turntable,
-in the sound card, or a stand alone device. For a traditional 2 deck
-setup, the Akai AMX and Native Instruments Traktor Scratch A6 are good
-options. Some cheaper sound cards, namely the Electrix Ebox44 and
-Mixvibes U-Mix44, would also work but have been discontinued and may be
-difficult to find. The Native Instruments Traktor Scratch A10 is a good
-option for using 4 vinyl decks. Many higher-end all-in-one controllers
-include phono preamps too.
+in the sound card, or a stand alone device. Many higher-end all-in-one
+controllers include sound cards with phono preamps.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

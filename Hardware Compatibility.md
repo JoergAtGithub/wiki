@@ -337,12 +337,10 @@ sample rates).
 
 Laptops do not always have the most reliable power output to their USB
 ports, so the ability to use a separate power adapter for your sound
-card can be an advantage. If plugging in a laptop charger and sound card
-power adapter at the same time, it is best to plug them into the same
-power strip to avoid ground loop hum issues. Also, sound cards without
-power adapters tend to not be able to get as loud as those with their
-own power adapters. However, sound cards that are USB bus powered can be
-used with a laptop running from the laptop battery.
+card can be an advantage. Also, sound cards without power adapters tend
+to not be able to get as loud as those with their own power adapters.
+However, sound cards that are USB bus powered can be used with a laptop
+running from the laptop battery.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
@@ -350,11 +348,14 @@ DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-fo
 to understand the different kinds of connectors on sound cards. It is
 better to use a sound card with balanced outputs, especially if you will
 run long cables directly into an amplifier or active speakers without
-going through an analog DJ mixer. However, most venues have DJs plug
-into analog DJ mixers, which typically only have RCA inputs (RCA cables
-cannot be balanced). Most home/computer speakers have RCA and/or 1/8"
-TRS stereo inputs. Most live sound mixers have balanced 1/4" TRS inputs.
-If you need to interconnect balanced and unbalanced gear, see [this
+going through an analog DJ mixer. Balanced signals reject interference
+and are less susceptible to ground loop hum issues (which can be a
+problem when plugging unbalanced gear into separate power sources).
+However, most venues have DJs plug into analog DJ mixers, which
+typically only have RCA inputs (RCA cables cannot be balanced). Most
+home/computer speakers have RCA and/or 1/8" TRS stereo inputs. Most live
+sound mixers have balanced 1/4" TRS inputs. If you need to interconnect
+balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 

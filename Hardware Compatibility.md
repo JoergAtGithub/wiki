@@ -366,11 +366,12 @@ into your sound card, it will need an instrument preamplifier.
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
 is best to have phono preamplifiers (one for each deck) somewhere
-between your turntable and sound card to boost the turntable signal to
-line level. Mixxx can amplify phono level signals in software, but it is
-better to do it in hardware. The phono preamp can be in the turntable,
-in the sound card, or a stand alone device. Many higher-end all-in-one
-controllers include sound cards with phono preamps.
+between your turntable and sound card to boost the turntable's phono
+level signal to line level. Mixxx can amplify phono level signals in
+software, but it is better to do it in hardware. The phono preamp can be
+in the turntable, in the sound card, or a stand alone device. Many
+higher-end all-in-one controllers include sound cards with phono
+preamps.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

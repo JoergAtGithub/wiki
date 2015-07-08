@@ -340,7 +340,8 @@ ports, so the ability to use a separate power adapter for your sound
 card can be an advantage. Also, sound cards without power adapters tend
 to not be able to get as loud as those with their own power adapters.
 However, sound cards that are USB bus powered can be used with a laptop
-running from the laptop battery.
+running from the laptop battery. Combined with battery powered speakers,
+this setup could be completely battery powered.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for

@@ -354,8 +354,8 @@ problem when plugging unbalanced gear into separate power sources).
 However, most venues have DJs plug into analog DJ mixers, which
 typically only have RCA inputs (RCA cables cannot be balanced). Most
 home/computer speakers have RCA and/or 1/8" TRS stereo inputs. Most live
-sound mixers have balanced 1/4" TRS inputs. If you need to interconnect
-balanced and unbalanced gear, see [this
+sound mixers have balanced 1/4" TRS mono inputs. If you need to
+interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 

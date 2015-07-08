@@ -392,27 +392,28 @@ use one sound card with 4 outputs.
 
 ### Standalone USB sound cards
 
-|                                                                |                         |                         |                                                                  |                           |                                                                            |                                      |            |                    |               |
-| -------------------------------------------------------------- | ----------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------ | ------------- |
-| Device                                                         | Price (USD) \[17\]      | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | Linux         |
-| Behringer UCA222                                               | $30                     | 2                       | 2 RCA, 1 1/8" headphone                                          | 2                         | 2 RCA                                                                      | 1 phono                              | 16         | 32, 44.1, 48       | yes           |
-| Numark DJ iO                                                   | $50                     | 4                       | 4 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1, 88.2         | no            |
-| Griffin DJ Connect \[18\]                                      | $90                     | 4                       | 2 RCA, 1 1/8" headphone                                          | 0                         | none                                                                       | none                                 | 16         | 48                 | likely \[19\] |
-| Numark DJ iO 2                                                 | $100                    | 4                       | 2 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1               | likely \[20\] |
-| Native Instruments [Traktor Audio 2](Traktor%20Audio%202)      | $100                    | 4                       | 2 1/8" stereo                                                    | 0                         | none                                                                       | none                                 | 24         | 44.1, 48, 88.2, 96 | likely \[21\] |
-| Electrix Ebox-44                                               | discontinued (was $100) | 4                       | 4 RCA, 1 1/4" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono (one switch for both), 1 mic | 16         | 44.1, 48           | yes           |
-| Mixvibes U-Mix44                                               | discontinued (was $100) | 4                       | 4 RCA, 1 1/8" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono, 1 mic                       | 16         | 48                 | yes           |
-| Reloop Play                                                    | $130                    | 4                       | 4 RCA, 1 1/4" headphone                                          | 0                         | none                                                                       | none                                 | 24         | 96                 | yes           |
-| Focusrite Scarlett 2i4                                         | $200                    | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI           | 2                         | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                    | 2 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
-| Native Instruments Komplete Audio 6                            | $230                    | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF        | 2 mic, 2 instrument                  | 16, 24     | 44.1, 48, 96       | yes           |
-| Focusrite Scarlett 6i6                                         | $250                    | 6 (4 analog, 2 digital) | 4 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF  | 2 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
-| Native Instruments Traktor Scratch A6                          | $300                    | 6                       | 6 RCA, 1 1/4" headphone                                          | 6                         | 6 RCA                                                                      | 2 phono                              | 16, 24     | 44.1, 48, 88.2, 96 | yes           |
-| Focusrite Scarlett 18i8                                        | $350                    | 8 (6 analog, 2 digital) | 2 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 18 (8 analog, 10 digital) | 4 XLR+1/4" balanced combo, 4 1/4" blanced, 1 optical SPDIF, 1 optical ADAT | 4 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
-| Native Instruments Traktor Scratch A10                         | $500                    | 10                      | 10 RCA, 1 1/4" headphone                                         | 10                        | 10 RCA, 1 1/4" mic                                                         | 4 phono, 1 mic                       | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
-| Rane SL2                                                       | $500                    | 4                       | 4 RCA                                                            | 4                         | 4 RCA                                                                      | 2 phono                              | 24         | 44.1, 48           | no            |
-| Rane SL3                                                       | $700                    | 6                       | 6 RCA                                                            | 6                         | 6 RCA                                                                      | 3 phono                              | 24         | 44.1, 48           | no            |
-| Rane SL4                                                       | $900                    | 8                       | 8 RCA                                                            | 8                         | 8 RCA                                                                      | 4 phono                              | 24         | 48, 96             | no            |
-| [ESI MAYA 44 USB](http://www.esi-audio.de/produkte/maya44usb/) | discontinued            | 4                       | 4 RCA, 1 1/8" headphone, 1 optical SPDIF                         | 4                         | 4 RCA                                                                      | none                                 | 16         | 44.1 48            | yes           |
+|                                                                              |                         |                         |                                                                  |                           |                                                                            |                                      |            |                    |               |
+| ---------------------------------------------------------------------------- | ----------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------ | ------------- |
+| Device                                                                       | Price (USD) \[17\]      | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | Linux         |
+| Behringer U-Control UCA202 & UCA222 \[18\]                                   | $30                     | 2                       | 2 RCA, 1 1/8" headphone, 1 SPDIF Toslink                         | 2                         | 2 RCA                                                                      | none                                 | 16         | 32, 44.1, 48       | yes           |
+| [Behringer U-Phono UFO202](http://mixxx.org/forums/viewtopic.php?f=6&t=2438) | $30                     | 2                       | 2 RCA, 1 1/8" headphone                                          | 2                         | 2 RCA                                                                      | 1 phono                              | 16         | 32, 44.1, 48       | yes           |
+| Numark DJ iO                                                                 | $50                     | 4                       | 4 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1, 88.2         | no            |
+| Griffin DJ Connect \[19\]                                                    | $90                     | 4                       | 2 RCA, 1 1/8" headphone                                          | 0                         | none                                                                       | none                                 | 16         | 48                 | likely \[20\] |
+| Numark DJ iO 2                                                               | $100                    | 4                       | 2 RCA, 1 1/4" headphone                                          | 1                         | 1 1/4" mic                                                                 | 1 mic                                | 24         | 44.1               | likely \[21\] |
+| Native Instruments [Traktor Audio 2](Traktor%20Audio%202)                    | $100                    | 4                       | 2 1/8" stereo                                                    | 0                         | none                                                                       | none                                 | 24         | 44.1, 48, 88.2, 96 | likely \[22\] |
+| Electrix Ebox-44                                                             | discontinued (was $100) | 4                       | 4 RCA, 1 1/4" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono (one switch for both), 1 mic | 16         | 44.1, 48           | yes           |
+| Mixvibes U-Mix44                                                             | discontinued (was $100) | 4                       | 4 RCA, 1 1/8" headphone                                          | 5                         | 4 RCA, 1 1/4" mic                                                          | 2 phono, 1 mic                       | 16         | 48                 | yes           |
+| Reloop Play                                                                  | $130                    | 4                       | 4 RCA, 1 1/4" headphone                                          | 0                         | none                                                                       | none                                 | 24         | 96                 | yes           |
+| Focusrite Scarlett 2i4                                                       | $200                    | 4                       | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI           | 2                         | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                    | 2 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
+| Native Instruments Komplete Audio 6                                          | $230                    | 6 (4 analog, 2 digital) | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF        | 2 mic, 2 instrument                  | 16, 24     | 44.1, 48, 96       | yes           |
+| Focusrite Scarlett 6i6                                                       | $250                    | 6 (4 analog, 2 digital) | 4 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 6 (4 analog, 2 digital)   | 2 XLR+1/4" balanced combo, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF  | 2 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
+| Native Instruments Traktor Scratch A6                                        | $300                    | 6                       | 6 RCA, 1 1/4" headphone                                          | 6                         | 6 RCA                                                                      | 2 phono                              | 16, 24     | 44.1, 48, 88.2, 96 | yes           |
+| Focusrite Scarlett 18i8                                                      | $350                    | 8 (6 analog, 2 digital) | 2 1/4" balanced, 2 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 18 (8 analog, 10 digital) | 4 XLR+1/4" balanced combo, 4 1/4" blanced, 1 optical SPDIF, 1 optical ADAT | 4 mic, 2 instrument                  | 24         | 44.1, 48, 88.2, 96 | yes           |
+| Native Instruments Traktor Scratch A10                                       | $500                    | 10                      | 10 RCA, 1 1/4" headphone                                         | 10                        | 10 RCA, 1 1/4" mic                                                         | 4 phono, 1 mic                       | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
+| Rane SL2                                                                     | $500                    | 4                       | 4 RCA                                                            | 4                         | 4 RCA                                                                      | 2 phono                              | 24         | 44.1, 48           | no            |
+| Rane SL3                                                                     | $700                    | 6                       | 6 RCA                                                            | 6                         | 6 RCA                                                                      | 3 phono                              | 24         | 44.1, 48           | no            |
+| Rane SL4                                                                     | $900                    | 8                       | 8 RCA                                                            | 8                         | 8 RCA                                                                      | 4 phono                              | 24         | 48, 96             | no            |
+| [ESI MAYA 44 USB](http://www.esi-audio.de/produkte/maya44usb/)               | discontinued            | 4                       | 4 RCA, 1 1/8" headphone, 1 optical SPDIF                         | 4                         | 4 RCA                                                                      | none                                 | 16         | 44.1 48            | yes           |
 
 ### Sound cards integrated into controllers
 
@@ -420,7 +421,7 @@ use one sound card with 4 outputs.
 
 |                              |                    |              |                                                            |             |                                                                          |                |            |                    |       |
 | ---------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
-| Device                       | Price (USD) \[22\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
+| Device                       | Price (USD) \[23\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | Behringer BCD3000            | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | Numark Mixtrack Pro 2        | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 1           | 1/4" mic                                                                 | 1 mic          | 16         | 44.1, 48           | yes   |
 | Hercules DJ Console RMX 2    | $300               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                             | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1, 48, 88.2, 96 | yes   |
@@ -440,17 +441,17 @@ use one sound card with 4 outputs.
 
 |                                              |                    |              |                                                                   |             |                                            |                |            |                    |               |
 | -------------------------------------------- | ------------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------ | -------------- | ---------- | ------------------ | ------------- |
-| Device                                       | Price (USD) \[23\] | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
+| Device                                       | Price (USD) \[24\] | Channels out | Output connectors                                                 | Channels in | Input connectors                           | Preamps        | Bit depths | Sample rates (kHz) | Linux         |
 | Hercules DJ Control Instinct                 | $125               | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                       | none           | 16         | 44.1               | yes           |
 | Native Instruments Traktor Kontrol Z1        | $200               | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                       | none           | 24         | 96                 | yes           |
-| American Audio MXR 10 \[24\]                 | $200               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 5           | 4 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | ?             |
-| Gemini Slate                                 | $200               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[25\]      |
-| Gemini Slate 4                               | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[26\]      |
-| Akai AMX                                     | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 4           | 4 RCA                                      | 2 phono        | 24         | 96                 | likely \[27\] |
+| American Audio MXR 10 \[25\]                 | $200               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 5           | 4 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | ?             |
+| Gemini Slate                                 | $200               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[26\]      |
+| Gemini Slate 4                               | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ? \[27\]      |
+| Akai AMX                                     | $250               | 4            | 2 RCA, 1 1/8" headphone                                           | 4           | 4 RCA                                      | 2 phono        | 24         | 96                 | likely \[28\] |
 | Pioneer DDJ-SB                               | $250               | 4            | 2 1/4" balanced, 2 RCA, 1 1/4" headphone, 1 1/8" headphone        | 1           | 1 1/4" mic                                 | 1 mic          | 24         | 44.1               | yes           |
-| American Audio MXR 14 \[28\]                 | $300               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 6           | 4 RCA, 2 XLR mic                           | 2 phono, 2 mic | 24         | 48                 | ?             |
+| American Audio MXR 14 \[29\]                 | $300               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 6           | 4 RCA, 2 XLR mic                           | 2 phono, 2 mic | 24         | 48                 | ?             |
 | Hercules DJ Control Jogvision                | $300               | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 3           | 1/4" mic, 1/8" stereo                      | 1 mic          | 16, 24     | 44.1, 48, 96       | ?             |
-| Numark Mixtrack Pro 3                        | $300               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1/4" mic                                   | 1 mic          | 24         | 44.1               | likely \[29\] |
+| Numark Mixtrack Pro 3                        | $300               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1/4" mic                                   | 1 mic          | 24         | 44.1               | likely \[30\] |
 | Korg KAOSS DJ                                | $300               | 4            | 2 RCA, 1 1/4" headphone                                           | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | 24         | 44.1, 48           | ?             |
 | Pioneer DDJ WeGO 3                           | $300               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 1           | 1 1/4" mic                                 | 1 mic          | 24         | 48                 | ?             |
 | Reloop Beatmix 2                             | $300               | 4            | 2 RCA, 1 1/4" headphone                                           | 1           | 1/4" mic                                   | 1 mic          | ?          | ?                  | ?             |
@@ -461,21 +462,21 @@ use one sound card with 4 outputs.
 | Native Instruments Traktor Kontrol S4 Mk1    | discontinued       | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | yes           |
 | Native Instruments Traktor Kontrol S4 Mk2    | $700               | 4            | 2 RCA, 2 1/4" balanced, 1 5-pin MIDI                              | 5           | 4 RCA, 1/4" mic, 1 5-pin MIDI              | 2 phono, 1 mic | 16, 24     | 44.1, 48, 88.2, 96 | ?             |
 | Reloop Terminal Mix 8                        | $700               | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                          | 1 phono, 1 mic | ?          | ?                  | ?             |
-| Native Instruments Traktor Kontrol Z2 \[30\] | $800               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 7           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | likely \[31\] |
+| Native Instruments Traktor Kontrol Z2 \[31\] | $800               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 7           | 6 RCA, 1 1/4" mic                          | 2 phono, 1 mic | 24         | 48                 | likely \[32\] |
 | Pioneer DDJ-SX2                              | $1000              | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
-| Native Instruments Traktor Kontrol S8 \[32\] | $1200              | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 5           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
+| Native Instruments Traktor Kontrol S8 \[33\] | $1200              | 4            | 2 RCA, 2 1/4" balanced, 2 XLR, 1 1/4" headphone, 1 5-pin MIDI     | 5           | 4 RCA, 1 1/4" mic, 1 XLR mic, 1 5-pin MIDI | 2 phono, 1 mic | 24         | 48                 | ?             |
 | Numark NS7                                   | discontinued       | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
 | Numark NS7II                                 | $1300              | 4            | 2 1/4" balanced, 2 XLR, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 10          | 8 RCA, 2 XLR+1/4" combo                    | 4 phono, 2 mic | 24         | 44.1               | ?             |
 | Numark NS7III                                | $1500              | ?            | ?                                                                 | ?           | ?                                          | ?              | ?          | ?                  | ?             |
 | Numark NV                                    | $700               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone                                    | 3           | 2 RCA, 1 1/4" mic                          | 1 mic          | ?          | ?                  | ?             |
-| Rane MP25 \[33\]                             | $1500              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[34\] |
-| Rane MP26 \[35\]                             | $1750              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[36\] |
+| Rane MP25 \[34\]                             | $1500              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[35\] |
+| Rane MP26 \[36\]                             | $1750              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | likely \[37\] |
 | Pioneer DDJ-SZ                               | $2000              | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone, 1 1/8" headphone | 8           | 8 RCA, 1 XLR+1/4" combo, 1 1/4" mic        | 2 phono, 2 mic | 24         | 44.1               | ?             |
-| Rane Sixty-Two \[37\]                        | $2000              | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Four \[38\]                       | $2200              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
-| Rane Sixty-Eight \[39\]                      | $2600              | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
-| Rane MP2015 \[40\]                           | $2900              | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[41\] |
-| Rane TTM57 \[42\]                            | discontinued       | 10           | N/A                                                               | 10          | N/A                                        | 2 phono        | 24         | 44.1, 48, 96       | likely \[43\] |
+| Rane Sixty-Two \[38\]                        | $2000              | 8            | N/A                                                               | 12          | N/A                                        | 2 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Four \[39\]                       | $2200              | 10           | N/A                                                               | 12          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane Sixty-Eight \[40\]                      | $2600              | 12           | N/A                                                               | 10          | N/A                                        | 4 phono        | 24         | 48                 | ?             |
+| Rane MP2015 \[41\]                           | $2900              | 10           | N/A                                                               | 14          | N/A                                        | 4 phono        | 24         | 44.1, 48, 96       | likely \[42\] |
+| Rane TTM57 \[43\]                            | discontinued       | 10           | N/A                                                               | 10          | N/A                                        | 2 phono        | 24         | 44.1, 48, 96       | likely \[44\] |
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
@@ -566,11 +567,10 @@ use one sound card with 4 outputs.
     online. If the price of a device has dropped or it has been
     discontinued, please update this page.
 
-18. Not compatible with Windows.
+18. The only difference between the Behringer U-Control UCA202 & UCA222
+    are the color and the software they are bundled with.
 
-19. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+19. Not compatible with Windows.
 
 20. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
@@ -580,15 +580,9 @@ use one sound card with 4 outputs.
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-22. Prices listed on this page are the prevailing prices for unused
-    devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+22. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
 
 23. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
@@ -600,43 +594,51 @@ use one sound card with 4 outputs.
     online. If the price of a device has dropped or it has been
     discontinued, please update this page.
 
-24. also a standalone analog mixer
+24. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop). You may be able to find
+    hardware available for sale cheaper. Devices are marked as
+    discontinued if the manufacturer has declared them as discontinued,
+    the manufacturer has gone out of business, or new units are not
+    widely available online. They may or may not still be available used
+    online. If the price of a device has dropped or it has been
+    discontinued, please update this page.
 
-25. Fun fact: the firmware runs Linux
+25. also a standalone analog mixer
 
 26. Fun fact: the firmware runs Linux
 
-27. This device is USB class compliant, so it should work without any
+27. Fun fact: the firmware runs Linux
+
+28. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-28. also a standalone analog mixer
+29. also a standalone analog mixer
 
-29. This device is USB class compliant, so it should work without any
+30. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-30. also a standalone analog mixer
+31. also a standalone analog mixer
 
-31. This device is USB class compliant, so it should work without any
+32. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-32. also a standalone digital mixer
+33. also a standalone digital mixer
 
-33. also a standalone analog mixer
+34. also a standalone analog mixer
 
-34. This device is USB class compliant, so it should work without any
+35. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-35. also a standalone analog mixer
+36. also a standalone analog mixer
 
-36. This device is USB class compliant, so it should work without any
+37. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
-
-37. also a standalone analog mixer
 
 38. also a standalone analog mixer
 
@@ -644,12 +646,14 @@ use one sound card with 4 outputs.
 
 40. also a standalone analog mixer
 
-41. This device is USB class compliant, so it should work without any
+41. also a standalone analog mixer
+
+42. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-42. also a standalone analog mixer
+43. also a standalone analog mixer
 
-43. This device is USB class compliant, so it should work without any
+44. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.

@@ -1,3 +1,5 @@
+# Beginner DJ Links
+
   - [Mixxx DJ Hardware Guide](hardware%20compatibility)
   - [Mixxx Manual](http://mixxx.org/manual/latest/)
   - [DJ TLM's YouTube

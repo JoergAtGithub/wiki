@@ -399,6 +399,10 @@ use one sound card with 4 outputs.
 
 ### Standalone USB sound cards
 
+Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
+like USB flash drives are available, but these tend to be very poor
+quality, even worse than onboard sound cards.
+
 |                                                                              |                         |                         |                                                                  |                           |                                                                            |                                      |            |                    |                                   |               |
 | ---------------------------------------------------------------------------- | ----------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------ | --------------------------------- | ------------- |
 | Device                                                                       | Price (USD) \[17\]      | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | power adapter                     | Linux         |

@@ -12,6 +12,8 @@
     DJs 101](http://serato.com/scratchlive/support/1903/gain-structure-for-djs-101)
     (although this refers to Serato software, the principles apply to
     all DJ software, including Mixxx)
+  - [The Essential Guide To Audio Cables For
+    DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
 
 ## Using Mixxx
 

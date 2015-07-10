@@ -88,7 +88,9 @@ command. For example, run `pasuspender -- mixxx --mididebug`
 ## Mixxx says my sound card does not support the sample format
 
 Try opening a console and running `export PA_ALSA_PLUGHW=1` before
-running `mixxx` (or `pasuspender mixxx`, see above).
+running `mixxx` (or `pasuspender mixxx`, see above). To avoid having to
+do this every time you run Mixxx, add `export PA_ALSA_PLUGHW=1` to the
+end of /etc/profile, log out, and log back in.
 
 ## My controller does not work
 

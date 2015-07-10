@@ -6,6 +6,8 @@
     Quality](http://www.digitaldjtips.com/2012/12/7-rules-for-great-dj-sound-quality/)
   - [A DJ's Guide to Audio Files and
     Bitrates](http://djtechtools.com/2012/09/26/a-djs-guide-to-audio-files-and-bitrates/)
+  - [A Practical Guide to Volume Settings For
+    DJs](http://www.digitaldjtips.com/2011/09/a-practical-guide-to-volume-settings-for-djs/)
   - [Gain Structure for
     DJs 101](http://serato.com/scratchlive/support/1903/gain-structure-for-djs-101)
     (although this refers to Serato software, the principles apply to

@@ -22,4 +22,5 @@
     channel](https://www.youtube.com/channel/UC7oEb0WuQTZitaPz9W7SQUw)
   - [DJ Tech Tools](http://djtechtools.com/)
   - [Digital DJ Tips](http://www.digitaldjtips.com/)
-  - [Reddit /r/beatmatch](https://www.reddit.com/r/beatmatch)
+  - [Reddit /r/beatmatch](https://www.reddit.com/r/beatmatch) and
+    [/r/DJs](https://www.reddit.com/r/DJs/)

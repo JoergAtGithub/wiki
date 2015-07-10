@@ -1,10 +1,5 @@
 # Beginner DJ Links
 
-## Using Mixxx
-
-  - [Mixxx DJ Hardware Guide](hardware%20compatibility)
-  - [Mixxx Manual](http://mixxx.org/manual/latest/)
-
 ## Background information
 
   - [7 Rules for Great DJ Sound
@@ -15,6 +10,11 @@
     DJs 101](http://serato.com/scratchlive/support/1903/gain-structure-for-djs-101)
     (although this refers to Serato software, the principles apply to
     all DJ software, including Mixxx)
+
+## Using Mixxx
+
+  - [Mixxx DJ Hardware Guide](hardware%20compatibility)
+  - [Mixxx Manual](http://mixxx.org/manual/latest/)
 
 ## Tips, tutorials, and DJing websites
 

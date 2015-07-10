@@ -13,7 +13,7 @@
     Bitrates](http://djtechtools.com/2012/09/26/a-djs-guide-to-audio-files-and-bitrates/)
   - [Gain Structure for
     DJs 101](http://serato.com/scratchlive/support/1903/gain-structure-for-djs-101)
-    (although this refers to features in Serato, the principles apply to
+    (although this refers to Serato software, the principles apply to
     all DJ software, including Mixxx)
 
 ## Tips, tutorials, and DJing websites

@@ -338,11 +338,12 @@ sample rates).
 Laptops do not always have the most reliable power output to their USB
 ports, so the ability to use a separate power adapter for your sound
 card can be an advantage. Also, sound cards with power adapters can
-output louder signals. A lack of an external power supply can especially
-be an issue for sound cards built into controllers because one USB port
-has to power both the lights on the controller and the sound card.
-However, sound cards that are USB bus powered can be used with a laptop
-and battery powered speakers for a completely battery powered setup.
+generally output stronger signals. A lack of an external power supply
+can especially be an issue for sound cards built into controllers
+because one USB port has to power both the lights on the controller and
+the sound card. However, sound cards that are USB bus powered can be
+used with a laptop and battery powered speakers for a completely battery
+powered setup.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for

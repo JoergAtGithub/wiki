@@ -85,6 +85,13 @@ run Mixxx with [command line options](command%20line%20options), such as
 `--mididebug`, put `--` between `pasuspender` and the rest of the
 command. For example, run `pasuspender -- mixxx --mididebug`
 
+## Mixxx says my sound card does not support the sample rate or cannot open my sound card
+
+Try opening a console and running `export PA_ALSA_PLUGHW=1` before
+running `mixxx` (or `pasuspender mixxx`, see above). Also make sure the
+sample rate selected in Mixxx's Sound Hardware preferences is supported
+by your sound card.
+
 ## My controller does not work
 
 To use a MIDI or HID controllers with Mixxx, enable the device and load

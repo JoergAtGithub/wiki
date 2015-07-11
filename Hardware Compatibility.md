@@ -309,8 +309,8 @@ MIDI.
 
 Mixxx can use any sound card that your OS has a driver to use. The
 tables below list some recommended USB soundcards for DJing. All listed
-sound cards work with Mac OS X and Windows. Most work with Linux, but
-not all; check the table for details.
+sound cards work with Mac OS X and Windows unless otherwise noted. Most
+work with Linux, but not all; check the table for details.
 
 The [ALSA sound card
 matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists

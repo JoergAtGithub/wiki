@@ -4,7 +4,9 @@ Before delving into Mixxx, ask yourself what you want to do with music.
 DJing is the art of mixing together music that has already been
 recorded; making original music is producing. If you want to DJ, you are
 in the right place. If you want make your own original music from start
-to finish, Mixxx is not the right tool for the job.
+to finish, Mixxx is not the right tool for the job. To produce, you will
+want a type of program called a digital audio workstation (DAW) such as
+[Ardour](http://ardour.org/) or [LMMS](http://lmms.io/).
 
 ## Background information
 

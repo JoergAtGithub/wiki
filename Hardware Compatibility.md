@@ -378,8 +378,8 @@ preamps.
 
 When considering specifications, higher dynamic range, higher
 signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
-(more negative dB value), and lower crosstalk (more negative dB value)
-are better.
+(more negative dB value or smaller percentage), and lower crosstalk
+(more negative dB value) are better.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

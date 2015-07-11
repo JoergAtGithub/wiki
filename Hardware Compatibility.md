@@ -377,8 +377,9 @@ higher-end all-in-one controllers include sound cards with phono
 preamps.
 
 When considering specifications, higher dynamic range, higher
-signal-to-noise ratio (SNR), and lower THD+N (more negative dB value),
-and lower crosstalk (more negative dB value) are better.
+signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
+(more negative dB value), and lower crosstalk (more negative dB value)
+are better.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

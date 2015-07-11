@@ -1,5 +1,11 @@
 # Beginner DJ Links
 
+Before delving into Mixxx, ask yourself what you want to do with music.
+DJing is the art of mixing together music that has already been
+recorded; making original music from scratch is producing. Mixxx is for
+DJing. If you want make your own original music from start to finish,
+Mixxx is not the right tool for the job.
+
 ## Background information
 
   - [7 Rules for Great DJ Sound

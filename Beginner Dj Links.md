@@ -23,6 +23,9 @@ DJ program.
     all DJ software, including Mixxx)
   - [The Essential Guide To Audio Cables For
     DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
+  - [Wrap a Cable the Right Way "Over
+    Under"](https://www.youtube.com/watch?v=B2SUoAvGxVs): it's not as
+    obvious as you might think
 
 ## Using Mixxx
 

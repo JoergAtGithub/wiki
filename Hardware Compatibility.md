@@ -2,6 +2,19 @@
 
 ## What kind of hardware should I get to DJ with Mixxx?
 
+Bare minimum equipment for DJing:
+
+  - laptop
+  - sound card
+  - headphones
+  - audio cables and adapters
+
+Helpful but not strictly necessary:
+
+  - controller and/or turntables
+  - laptop stand
+  - surge protector
+
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card
 built into the motherboard with only 1 stereo 1/8" headphone output (2

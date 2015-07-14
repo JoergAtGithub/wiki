@@ -14,6 +14,7 @@ Helpful but not strictly necessary:
   - controller and/or turntables with timecode vinyls
   - laptop stand
   - surge protector
+  - backpack or some other carrying case
 
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card

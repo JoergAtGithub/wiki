@@ -11,7 +11,7 @@ Bare minimum equipment for DJing:
 
 Helpful but not strictly necessary:
 
-  - controller and/or turntables
+  - controller and/or turntables with timecode vinyls
   - laptop stand
   - surge protector
 

@@ -11,12 +11,12 @@ Bare minimum equipment for DJing:
 
 Helpful but not strictly necessary:
 
-  - controller and/or turntables with timecode vinyls
-  - controller case
+  - controller and/or turntables with timecode vinyl
   - laptop stand
-  - laptop case
   - surge protector
+  - cases for laptop, controller, and headphones
   - backpack or some other carrying case
+  - portable hard drive
 
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card

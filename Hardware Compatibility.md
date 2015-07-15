@@ -13,6 +13,7 @@ Helpful but not strictly necessary:
 
   - controller and/or turntables with timecode vinyls
   - laptop stand
+  - laptop case
   - surge protector
   - backpack or some other carrying case
 

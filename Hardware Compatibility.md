@@ -17,6 +17,7 @@ Helpful but not strictly necessary:
   - cases for laptop, controller, and headphones
   - backpack or some other carrying case
   - portable hard drive
+  - powered USB hub
 
 It is recommended to use one sound card with at least 4 mono output
 channels (2 stereo channels). Most computers come with a sound card

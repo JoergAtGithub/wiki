@@ -294,7 +294,7 @@ map than HID controllers.
 | Rane Sixty-Four                              | $2200              | 4 deck analog mixer + loops, cues, and effects                                 | yes                             | MIDI                     |
 | Rane Sixty-Eight                             | $2600              | 4 deck analog mixer + loops, cues, and effects                                 | yes                             | MIDI                     |
 | Rane MP2015                                  | $2900              | 4 deck analog rotary mixer                                                     | yes                             | MIDI                     |
-| Rane TTM57                                   | discontinued       | 2 deck analog mixer + loops, cues, and effects                                 | yes                             | MIDI                     |
+| Rane TTM57                                   | discontinued       | 2 deck analog mixer + loops, cues, and effects                                 | yes                             | HID                      |
 
 #### Note regarding Native Instruments controllers
 

@@ -11,13 +11,18 @@ The following extensions add some features to ControlPotMeter controls
 (volume, crossfader, ...). Use in conjunction with \[Channel*N*\],
 \[Sampler*N*\], \[Master\] ... groups
 
-|  | Key/Control                   |  | Range   |  | What it does                                                                      |  | On-screen feedback                                                                     |  |
-|  | ----------------------------- |  | ------- |  | --------------------------------------------------------------------------------- |  | -------------------------------------------------------------------------------------- |  |
-|  | \_set\_one<sup>6</sup>        |  | default |  | sets the value to 1.0                                                             |  |                                                                                        |  |
-|  | \_set\_minus\_one<sup>6</sup> |  | default |  | sets the value to -1.0                                                            |  |                                                                                        |  |
-|  | \_toggle<sup>6</sup>          |  | default |  | sets the value to 0.0 if the value was \> 0.0, and to 1.0 if the value was 0.0    |  | e.g. "\[Channel*N*\] volume\_toggle" will cut off/on a track while you're playing      |  |
-|  | \_minus\_toggle<sup>6</sup>   |  | default |  | sets the value to -1.0 if the value was \> -1.0, and to 1.0 if the value was -1.0 |  | e.g. "\[Master\] crossfader\_minus\_toggle" can tilt the crossfader from left to right |  |
-|  | \_set\_zero<sup>6</sup>       |  | default |  | sets the value to 0.0                                                             |  | e.g. "\[Master\] crossfader\_zero" put the crossfader in the middle again              |  |
+|  | Key/Control                   |  | Range   |  | What it does                                                                      |  | On-screen feedback                                                                              |  |
+|  | ----------------------------- |  | ------- |  | --------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------- |  |
+|  | \_up                          |  | default |  | Increases the value                                                               |  | e.g. "\[Channel*N*\],rate\_perm\_up" sets the speed one step higher (4 % default)               |  |
+|  | \_down                        |  | default |  | Decreases the value                                                               |  | e.g. "\[Channel*N*\],rate\_perm\_down" sets the speed one step lower (4 % default)              |  |
+|  | \_up\_small                   |  | default |  | Increases the value by smaller step                                               |  | e.g. "\[Channel*N*\],rate\_perm\_up\_small" sets the speed one small step higher (1 % default)  |  |
+|  | \_down\_small                 |  | default |  | Decreases the value by smaller step                                               |  | e.g. "\[Channel*N*\],rate\_perm\_down\_small" sets the speed one small step lower (1 % default) |  |
+|  | \_set\_one<sup>6</sup>        |  | default |  | Sets the value to 1.0                                                             |  | e.g. "\[Channel*N*\],volume\_set\_one" sets the channel volume to full                          |  |
+|  | \_set\_minus\_one<sup>6</sup> |  | default |  | Sets the value to -1.0                                                            |  | e.g. "\[Channel*N*\],volume\_set\_minus\_one" sets the channel volume to zero                   |  |
+|  | \_set\_default<sup>6</sup>    |  | default |  | Sets the control to its default                                                   |  | e.g. "\[Channel*N*\],waveform\_zoom\_set\_default" return to default waveform zoom level        |  |
+|  | \_set\_zero<sup>6</sup>       |  | default |  | Sets the value to 0.0                                                             |  | e.g. "\[Master\],crossfader\_zero" put the crossfader in the middle again                       |  |
+|  | \_toggle<sup>6</sup>          |  | default |  | Sets the value to 0.0 if the value was \> 0.0, and to 1.0 if the value was 0.0    |  | e.g. "\[Channel*N*\],volume\_toggle" will cut off/on a track while you're playing               |  |
+|  | \_minus\_toggle<sup>6</sup>   |  | default |  | Sets the value to -1.0 if the value was \> -1.0, and to 1.0 if the value was -1.0 |  | e.g. "\[Master\],crossfader\_minus\_toggle" can tilt the crossfader from left to right          |  |
 
 ### \[Master\]
 

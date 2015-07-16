@@ -53,6 +53,14 @@ beta](http://mixxx.org/forums/viewtopic.php?f=1&t=7131).
 If you use one sound card with at least 4 channels (2 stereo pairs), you
 will not have this issue.
 
+## Mixxx says the sample format is not supported when configuring the sound card
+
+Open a console/terminal emulator and run export PA\_ALSA\_PLUGHW=1
+before running mixxx. This will tell PortAudio, the library Mixxx uses
+to interact with sound hardware on multiple operating systems, to use
+ALSA's plughw devices rather than hw. plughw automatically converts
+audio streams to a sample format supported by the sound card.
+
 ## There is a delay before I hear a change in the audio
 
 Your audio latency may be set too high. See the [Adjusting Audio

@@ -100,9 +100,8 @@ happen again.
 ## An example test
 
 Here's an excerpt of a test that Owen wrote for the master sync branch.
-It can be found in this file (TODO: replace with HEAD link once merge is
-complete):
-[enginesynctest.cpp](https://github.com/mixxxdj/mixxx/blob/1a65c22e749ccead7d02970cc1e6111a51eec881/src/test/enginesynctest.cpp).
+[View the whole test on
+GitHub](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginesynctest.cpp).
 
 ``` 
 #include "test/mockedenginebackendtest.h"

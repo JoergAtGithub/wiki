@@ -308,6 +308,7 @@ tested:
   - [SmartGit/HG](http://www.syntevo.com/smartgithg/) - Is a full
     featured Git, Mercurial or SVN client for Windows, Mac and Linux. It
     is free for non-commercial use. (Tested by Jus on Linux)
+  - [Git Cola](http://git-cola.github.io/)
 
 #### Windows
 

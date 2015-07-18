@@ -67,9 +67,9 @@ options.)
 
   - For the latest stable branch: `git clone -b 1.11
     https://github.com/mixxxdj/mixxx.git`
-  - For the latest development branch: `git clone -b 1.12
+  - For the beta branch: `git clone -b 1.12
     https://github.com/mixxxdj/mixxx.git`
-  - For the master branch: `git clone
+  - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
 
 ## 3\. Compile and install

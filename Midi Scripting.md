@@ -104,7 +104,9 @@ directory in your user preferences folder (backup any work in progress
 that you do not want to lose first\!) and make a symbolic link to the
 "res/controllers" directory in your git repository. For example, if your
 git repository is under the "software" directory in your home directory,
-run: `ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
+run:
+
+`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 
 Make changes to your mapping and commit them when your changes work.
 When you are ready to submit your mapping for inclusion in Mixxx, make a

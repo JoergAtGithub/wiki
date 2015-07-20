@@ -63,6 +63,9 @@ will work best for the way you want to DJ.
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
 
+See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
+resources.
+
 ## Hardware compatibility with Mixxx
 
 Because Mixxx is [free

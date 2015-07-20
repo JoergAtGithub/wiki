@@ -16,11 +16,13 @@ need to sign in to see this.)
 If no existing bugs cover your issue, please gather the following
 information:
 
-  - Steps to reproduce the problem. Please be as detailed as you can be.
-    For example, rather than saying "Foo doesn't work", say "When I
-    clicked on the Bar button, Foo did not put the Bazes in the right
+  - Steps to reproduce the problem. **Please be as detailed as you can
+    be.** For example, rather than saying "Foo doesn't work", say "When
+    I clicked on the Bar button, Foo did not put the Bazes in the right
     place. I expected the Bazes to be put in Folder 1, but instead Mixxx
-    put them in Folder 2."
+    put them in Folder 2." If you cannot write well in English, please
+    write your description in both English and another language you are
+    more comfortable writing in.
   - Operating system (Windows, Linux, OSX, etc.) and version
   - CPU architecture (Athlon, Core 2 Duo, Celeron, Pentium II, etc.) and
     speed (in MHz or GHz)

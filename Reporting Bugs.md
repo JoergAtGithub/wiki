@@ -16,11 +16,15 @@ need to sign in to see this.)
 If no existing bugs cover your issue, please gather the following
 information:
 
+  - Steps to reproduce the problem. Please be as detailed as you can be.
+    For example, rather than saying "Foo doesn't work", say "When I
+    clicked on the Bar button, Foo did not put the Bazes in the right
+    place. I expected the Bazes to be put in Folder 1, but instead Mixxx
+    put them in Folder 2."
   - Operating system (Windows, Linux, OSX, etc.) and version
   - CPU architecture (Athlon, Core 2 Duo, Celeron, Pentium II, etc.) and
     speed (in MHz or GHz)
   - Your video and sound hardware (Brands, models, options, etc.)
-  - Steps to reproduce the problem
   - [Information logs](reporting_bugs#gathering_logs)
 
 Much of the system information can be gathered from System Information

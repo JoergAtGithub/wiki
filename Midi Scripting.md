@@ -91,6 +91,23 @@ directory:
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.
 
+### Setting up git
+
+Git is software that allows you to keep track of what you have changed
+in files. We use it for coordinating Mixxx development. If you want to
+have your mapping included in Mixxx, start by creating a
+[GitHub](http://github.com/) account and [forking
+Mixxx](https://github.com/mixxxdj/mixxx). On GNU/Linux and Mac OS X, you
+can directly work on your mapping in your git repository while running
+Mixxx to test your changes. To do this, delete the "controllers"
+directory in your user preferences folder (backup any work in progress
+that you do not want to lose first\!) and make a symbolic link to the
+"res/controllers" directory in your git repository. For example, if your
+git repository is under the "software" directory in your home directory,
+run: `ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
+
+See the [Using Git](Using%20Git) wiki page for more information.
+
 ### Function & variable naming conventions
 
 Functions use the naming convention `<manufacturer><device>.<function

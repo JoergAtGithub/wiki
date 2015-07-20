@@ -10,8 +10,9 @@ repository.](https://github.com/mixxxdj/mixxx)**
 
 A full guide for how to use Git is outside the scope of this article.
 This article aims to get you up to speed with the basics of Git and we
-are glossing over a lot of finer details about Git. We **strongly
-suggest** you walk through this [introduction to Git by
+are glossing over a lot of finer details about Git. Git is an awesome
+tool, but it can be confusing to learn, so we **strongly suggest** you
+walk through this [introduction to Git by
 GitHub](http://try.github.io/levels/1/challenges/1),
 a[sandbox](http://pcottle.github.io/learnGitBranching/) tutorial and[Pro
 Git](http://git-scm.com/book), a free Creative Commons eBook about using
@@ -84,12 +85,13 @@ It is also helpful to use a IDE integrated Git GUIs.
 
 ``` 
  * [[eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
- * [[qtcreator]] has build in support of Git (but be warned, it has is own opinion which files will be added to the Index) 
+ * [[qtcreator]] has built in support of Git (but be warned, it has is own opinion which files will be added to the Index)
+ * [[KDevelop]] also has built in support of Git
 ```
 
 # Cloning the Mixxx Repository
 
-Note: If you plan fixing a Bug, you should
+Note: If you plan fixing a bug or contributing a feature, you should
 [fork](https://help.github.com/articles/fork-a-repo) the mixxx
 repository on GitHub first. Replace "mixxxdj" with your user name in
 following paragraphs.
@@ -112,6 +114,73 @@ available branches here on
 Once the command succeeds, you will have a new folder (typically named
 `mixxx`) in the current directory. Congrats, you've cloned the Mixxx
 code repository to your local machine\!
+
+# Using Branches
+
+Branches give you scratch space to work on new features and ideas
+without having to commit on top of an existing branch (like the `master`
+branch). This allows you to work on a bug or adding a feature keep track
+of ongoing development in the `master` or beta branch. It also allows
+you to work on multiple bugs/features in parallel and independently
+propose them for inclusion in Mixxx whenever each one is ready.
+
+## Check what branch you are currently on
+
+    $ git branch
+    * master
+
+## Create a new branch
+
+    $ git checkout -b experimental
+    Switched to a new branch 'experimental'
+    
+    $ git branch # show which branch you are on
+    * experimental
+      master
+
+**Every time you start fixing another bug or working on a new feature,
+switch back to the master or beta branch before starting your new
+branch.** This will allow you to propose your new set of changes for
+inclusion of Mixxx independently of what you were working on before. If
+you do not do this first, when you make a pull request for inclusion in
+Mixxx (see below), both what you were working on before and your new
+changes will be included in the pull request.
+
+## Rename a branch
+
+    $ git branch -m experimental expt
+    
+    $ git branch
+    * expt
+      master
+
+## Switch between existing branches
+
+    $ git branch
+    * experimental
+      master
+    [make some changes in your IDE of choice]
+    $ git stash # save uncommitted changes to git's temporary stash. Do this if you have made edits that you are not yet ready to commit to the branch you are switching from.
+    # If you have created new files, be sure to run 'git add' on them before running 'git stash'
+    $ git checkout experimental # switch to the experimental branch
+    
+    $ git checkout master
+    
+    $ git branch 
+      experimental
+    * master
+    
+    $ scons install # build latest version of master branch
+    $ mixxx # test new version of mixxx
+    
+    $ git checkout experimental
+    $ git stash pop # reapply uncommitted changes from git's temporary stash
+    [continue working on experimental branch and make commits when you are ready]
+
+## Delete a local branch
+
+    $ git branch -d experimental  # requires the branch is fully merged
+    $ git branch -D experimental  # deletes the branch regardless of whether it is merged
 
 # Committing Changes
 
@@ -137,7 +206,10 @@ familiar to `bzr` and `svn`)
 
 This commits the change locally only. In contrast to Bazaar and
 Subversion, there is no concept of committing and automatically pushing
-the changes to the remote repository in Git.
+the changes to the remote repository in Git. If you omit the -m "COMMIT
+MESSAGE" at the end, git will automatically open the editor specified in
+your $EDITOR environment variable with a new file. Type your commit
+message, then save this file in the editor to make the commit.
 
 To automatically stage all changes that have been made to the repository
 (i.e. every change that shows up in `git diff`) then you can use `git
@@ -145,85 +217,6 @@ commit -a`:
 
     emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
     git commit -a -m "Bugfixes to EngineBuffer."
-
-# Creating Patches
-
-Once you've worked on fixing a bug or adding a feature to Mixxx, you may
-want to generate a patch -- a file that represents the aggregate changes
-you made. This is useful for posting the patch to our bug tracker or for
-emailing it to someone, etc.
-
-## Uncommitted Changes
-
-Creating a patch of your uncommitted changes is as simple as running the
-command `git diff`.
-
-    git diff > my_changes.patch
-
-`my_changes.patch` now contains the changes you made.
-
-Note: In git-parlance, this is actually a patch of your "unstaged"
-differences.
-
-## Changes relative to the remote master branch
-
-If you have committed your changes locally either to a personal branch
-or to an existing branch like `master`, then you may be interested in
-creating a patch of the changes in your branch relative to the remote
-branch on GitHub. Doing this is also simple:
-
-    git diff origin/master > my_changes.patch
-
-`my_changes.patch` is now a patch of the changes (both committed and
-uncommitted) in your branch relative to the `master` branch on GitHub.
-
-# Using Branches
-
-Local branches give you scratch space to work on new features and ideas
-without having to commit on top of an existing branch (like the `master`
-branch). This allows you to track ongoing development in the `master`
-branch and delay having to merge with `master` until you are ready.
-
-**To check what branch you are currently on:**
-
-    $ git branch
-    * master
-
-**To create a new branch:**
-
-    $ git checkout -b experimental
-    Switched to a new branch 'experimental'
-    
-    $ git branch
-    * experimental
-      master
-
-**To rename a branch:**
-
-    $ git branch -m experimental expt
-    
-    $ git branch
-    * expt
-      master
-
-**To switch between existing branches:**
-
-    $ git checkout experimental
-    
-    $ git branch
-    * experimental
-      master
-    
-    $ git checkout master
-    
-    $ git branch 
-      experimental
-    * master
-
-**To delete a local branch:**
-
-    $ git branch -d experimental  # requires the branch is fully merged
-    $ git branch -D experimental  # deletes the branch regardless of whether it is merged
 
 # Issuing a Pull Request
 
@@ -238,6 +231,9 @@ way we prefer you to submit branches is via GitHub pull requests.
 4.  A Mixxx team member will review and comment on your pull request.
     Work with your reviewer to address their comments. 
 5.  Once it receives an `LGTM` \[1\] then it will be merged into Mixxx\!
+
+**NOTE: If you push new commits to a branch you have made a pull request
+for, those commits will be included in the pull request.**
 
 # Keeping Track of Updates from Other Developers
 
@@ -294,6 +290,38 @@ To checkout a branch as a tracking branch:
 Once you've made local changes you would like `ywwg` to accept, you can
 submit a pull request to `ywwg` on GitHub or just contact him in person
 to ask him to merge changes from your branch.
+
+# Creating Patches
+
+Once you've worked on fixing a bug or adding a feature to Mixxx, you may
+want to generate a patch -- a file that represents the aggregate changes
+you made. This is useful for emailing your changes to someone. However,
+if you want to propose your changes for inclusion in Mixxx, please make
+a pull request on GitHub as described above.
+
+## Uncommitted Changes
+
+Creating a patch of your uncommitted changes is as simple as running the
+command `git diff`.
+
+    git diff > my_changes.patch
+
+`my_changes.patch` now contains the changes you made.
+
+Note: In git-parlance, this is actually a patch of your "unstaged"
+differences.
+
+## Changes relative to the remote master branch
+
+If you have committed your changes locally either to a personal branch
+or to an existing branch like `master`, then you may be interested in
+creating a patch of the changes in your branch relative to the remote
+branch on GitHub. Doing this is also simple:
+
+    git diff origin/master > my_changes.patch
+
+`my_changes.patch` is now a patch of the changes (both committed and
+uncommitted) in your branch relative to the `master` branch on GitHub.
 
 # GUI clients
 

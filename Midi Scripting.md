@@ -106,7 +106,10 @@ that you do not want to lose first\!) and make a symbolic link to the
 git repository is under the "software" directory in your home directory,
 run: `ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 
-See the [Using Git](Using%20Git) wiki page for more information.
+Make changes to your mapping and commit them when your changes work.
+When you are ready to submit your mapping for inclusion in Mixxx, make a
+pull request on GitHub. See the [Using Git](Using%20Git) wiki page for
+more information.
 
 ### Function & variable naming conventions
 

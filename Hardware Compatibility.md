@@ -5,7 +5,7 @@
 Bare minimum equipment for DJing:
 
   - laptop
-  - sound card
+  - sound card or splitter cable
   - headphones or in-ear monitors
   - speakers
   - audio cables and adapters
@@ -20,20 +20,21 @@ Helpful but not strictly necessary:
   - portable hard drive
   - powered USB hub
 
-It is recommended to use one sound card with at least 4 mono output
-channels (2 stereo channels). Most computers come with a sound card
-built into the motherboard with only 1 stereo 1/8" headphone output (2
-mono channels). While it is possible to get a cheap sound card with only
-2 more outputs and use it together with your onboard sound card, it is
-not recommended (see [explanation below](#Using-multiple-sound-cards)).
-Onboard sound cards built into computers are generally not high quality
-and may pick up interference from other devices in the computer such as
-the power supply or hard drive. When mixing digitally in software on
-your CPU, use 2 channels for the main output and 2 channels for your
-headphones. This allows you to hear and prepare the track you want to
-play next without your audience hearing it until you are ready to mix it
-into the main output. When mixing on an analog hardware mixer, which is
-traditional (but not necessary) with [vinyl
+To be able to hear the next track you want to mix in before your
+audience hears it, you need two separate sound outputs. It is
+recommended to use one sound card with at least 4 mono output channels
+(2 stereo channels). Most computers come with a sound card built into
+the motherboard with only 1 stereo 1/8" headphone output (2 mono
+channels). While it is possible to get a splitter cable or cheap sound
+card with only 2 more outputs and use it together with your onboard
+sound card, it is not recommended (see [explanation
+below](#Using-multiple-sound-cards)). Onboard sound cards built into
+computers are generally not high quality and may pick up interference
+from other devices in the computer such as the power supply or hard
+drive. When mixing digitally in software on your CPU, use 2 channels for
+the main output and 2 channels for your headphones (or 1 for each if
+using a splitter cable). When mixing on an analog hardware mixer, which
+is traditional (but not necessary) with [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
 each deck uses 2 channels and the headphones are plugged into the analog
 hardware mixer.
@@ -55,10 +56,8 @@ will need a sound card with 2 inputs per deck (so 4 inputs for a
 traditional 2 deck setup) and a phono preamp for each deck. The phono
 preamps can either be in the turntable, in the sound card, or stand
 alone devices. A few small controllers may be of particular interest to
-vinyl DJs, such as the Novation Dicer and Akai AMX. Some higher-end
-all-in-one controllers include sound cards with phono preamps. These are
-all just guidelines; research your options and decide what you think
-will work best for the way you want to DJ.
+vinyl DJs, particularly the Novation Dicer and Akai AMX. Some higher-end
+all-in-one controllers include sound cards with phono preamps.
 
 DJ headphones are generally better quality than typical consumer
 headphones. Importantly, they are designed to have good isolation,
@@ -72,6 +71,9 @@ metal headbands, and other individually replaceable parts. In-ear
 monitors isolate sound better than headphones but are more expensive.
 They may be a sound investment for musicians who play often in very loud
 environments to preserve their hearing.
+
+These are all just guidelines; research your options and decide what you
+think will work best for the way you want to DJ.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
@@ -355,6 +357,19 @@ author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
 1394 interface, the only way to use it with Linux is with JACK (not
 ALSA). The FFADO project has [a list of Firewire interfaces compatible
 with Linux](http://ffado.org/?q=devicesupport/list).
+
+### Splitter cables
+
+Splitter cables are **the cheapest way** to get two separate sound
+outputs from your computer. These plug into the onboard sound card built
+into computer motherboards and split the stereo signal into two separate
+mono signals. However, onboard sound cards are not good quality.
+
+  - [Native Instruments Traktor DJ
+    Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/):
+    $10
+  - [Griffin DJ Cable](https://store.griffintechnology.com/dj-cable):
+    $20
 
 ### What to look for in a sound card
 

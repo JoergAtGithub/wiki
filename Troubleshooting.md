@@ -95,8 +95,8 @@ Try using a different USB cable if you have one. If that does not work,
 consider getting a [Chroma
 Cable](https://store.djtechtools.com/products/chroma-cables-usb) from DJ
 Tech Tools. These are high quality USB cables made specifically for DJs
-with a ferrite on each end to dissipate high frequency interference as
-heat.
+with a ferrite bead on each end to dissipate high frequency interference
+as heat.
 
 ## Mixxx says my sound card does not support the sample format
 

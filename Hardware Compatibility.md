@@ -67,11 +67,11 @@ sound in the headphones better without having to turn up the volume to
 drown out sound from the PA system and chatter. When shopping for
 headphones, consider how well they isolate sound and their durability.
 The most frequent places that headphones break are the cable attachment
-point and the headband. Look for headphones with detachable, replaceable
-cables, metal headbands, and other individually replaceable parts.
-In-ear monitors isolate sound better than headphones but are more
-expensive. They may be a sound investment for musicians who play often
-in very loud environments to preserve their hearing.
+point and the headband. Look for headphones with detachable cables,
+metal headbands, and other individually replaceable parts. In-ear
+monitors isolate sound better than headphones but are more expensive.
+They may be a sound investment for musicians who play often in very loud
+environments to preserve their hearing.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.

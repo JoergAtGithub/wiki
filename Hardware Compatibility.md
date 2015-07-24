@@ -546,6 +546,10 @@ Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor
 quality, even worse than onboard sound cards.
 
+See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
+comparison of cheap DJ sound cards. Note that it does not include the
+Numark DJ iO 1 or 2 though.
+
 |                                                                              |                         |                         |                                                                  |                           |                                                                            |                                      |            |                    |                                   |               |
 | ---------------------------------------------------------------------------- | ----------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------ | --------------------------------- | ------------- |
 | Device                                                                       | Price (USD) \[18\]      | Channels out            | Output connectors                                                | Channels in               | Input connectors                                                           | Preamps                              | Bit depths | Sample rates (kHz) | power adapter                     | Linux         |

@@ -85,6 +85,19 @@ run Mixxx with [command line options](command%20line%20options), such as
 `--mididebug`, put `--` between `pasuspender` and the rest of the
 command. For example, run `pasuspender -- mixxx --mididebug`
 
+## My sound card randomly stops working
+
+This can happen when poor quality USB cables pick up interference.
+Sending digital audio over USB requires a clear, uninterrupted signal
+transmitted at regular time intervals (isochronus transfer). This is
+more sensitive to interference than most USB signals. Try using a
+different USB cable if you have one. If that does not work, consider
+getting a [Chroma
+Cable](https://store.djtechtools.com/products/chroma-cables-usb) from DJ
+Tech Tools. These are high quality USB cables made specifically for DJs
+with a ferrite on each end to dissipate high frequency interference as
+heat.
+
 ## Mixxx says my sound card does not support the sample format
 
 Try opening a console and running `export PA_ALSA_PLUGHW=1` before

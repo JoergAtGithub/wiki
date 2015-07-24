@@ -87,12 +87,12 @@ command. For example, run `pasuspender -- mixxx --mididebug`
 
 ## My sound card randomly stops working
 
-This can happen when poor quality USB cables pick up interference.
-Sending digital audio over USB requires a clear, uninterrupted signal
-transmitted at regular time intervals (isochronus transfer). This is
-more sensitive to interference than most USB signals. Try using a
-different USB cable if you have one. If that does not work, consider
-getting a [Chroma
+This can happen when poor quality USB cables pick up electromagnetic
+interference. Sending digital audio over USB requires a clear,
+uninterrupted signal transmitted at regular time intervals (isochronus
+transfer). This is more sensitive to interference than most USB signals.
+Try using a different USB cable if you have one. If that does not work,
+consider getting a [Chroma
 Cable](https://store.djtechtools.com/products/chroma-cables-usb) from DJ
 Tech Tools. These are high quality USB cables made specifically for DJs
 with a ferrite on each end to dissipate high frequency interference as

@@ -60,6 +60,19 @@ all-in-one controllers include sound cards with phono preamps. These are
 all just guidelines; research your options and decide what you think
 will work best for the way you want to DJ.
 
+DJ headphones are generally better quality than typical consumer
+headphones. Importantly, they are designed to have good isolation,
+meaning they block outside sound. This allows the DJ to focus on the
+sound in the headphones better without having to turn up the volume to
+drown out sound from the PA system and chatter. When shopping for
+headphones, consider how well they isolate sound and their durability.
+The most frequent places that headphones break are the cable attachment
+point and the headbands. Look for headphones with detachable,
+replaceable cables, metal headbands, and other individually replaceable
+parts. In-ear monitors isolate sound better than headphones but are more
+expensive. They may be a sound investment for musicians who play often
+in very loud environments to preserve their hearing.
+
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
 

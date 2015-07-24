@@ -377,6 +377,8 @@ adapters typically have two mono jack outputs. Plugging headphones or
 stereo speakers into a generic stereo-to-mono splitter will only play
 sound on one side of the headphones or speakers.
 
+Available DJ splitter cables:
+
   - [Native Instruments Traktor DJ
     Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/):
     $10

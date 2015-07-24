@@ -343,7 +343,7 @@ to HID or MIDI, Mixxx would need to be able to read Linux input events,
 or a program would need to translate the Linux input events to HID or
 MIDI.
 
-### Customizing your controller
+### Custom caps
 
 Most DJ gear comes with black or grey knobs and fader caps. Several
 companies sell brightly colored knobs and fader caps that can replace
@@ -351,7 +351,8 @@ the standard black or grey that your gear came with. In addition to
 looking cool, brighter caps can be easier to see in dark environments.
 Some caps have a hard plastic slippery surface whereas others have a
 rubberized surface that fingers don't slide off as much. Some DJs prefer
-plastic; some prefer rubberized surfaces.
+plastic; some prefer rubberized surfaces. Be sure to check that the caps
+you order fit your controller before purchasing them.
 
 Custom caps available:
 

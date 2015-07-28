@@ -110,8 +110,10 @@ on GNU/Linux, run:
 
 Make a new git branch (run `git checkout -b new_branch_name` from within
 your git repository). Make changes to your mapping and commit them when
-your changes work. When you are ready to submit your mapping for
-inclusion in Mixxx, make a pull request on GitHub. See the [Using
+your changes work. Please prefix your git commit messages with the name
+of your controller so others can easily tell what the commits are for
+after your changes are merged. When you are ready to submit your mapping
+for inclusion in Mixxx, make a pull request on GitHub. See the [Using
 Git](Using%20Git) wiki page for more information.
 
 ### Function & variable naming conventions

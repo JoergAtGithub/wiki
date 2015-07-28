@@ -284,7 +284,7 @@ map than HID controllers.
 | Native Instruments Traktor Kontrol X1 Mk2    | $200               | effects + touch strip                                                   | no                    | HID                      |
 | Gemini Slate                                 | $200               | 2 deck all-in-one                                                       | yes                   | MIDI                     |
 | Allen & Heath Xone K1 \[15\]                 | $250               | 4 deck mixer + pads                                                     | no                    | MIDI                     |
-| Numark Mixtrack 3 \[16\]                     | $200               | 2 deck all-in-one                                                       | no                    | MIDI                     |
+| Numark Mixtrack 3 \[16\]                     | $200               | 2 deck all-in-one                                                       | no                    | MIDI and HID             |
 | American Audio MXR 10                        | $200               | 2 deck analog mixer + MIDI library browsing and transport               | yes                   | MIDI                     |
 | Akai AFX                                     | $200               | 2 deck effects + pads + touch strip                                     | no                    | MIDI                     |
 | DJ Tech Tools MIDI Fighter Spectra           | discontinued       | 4x4 spring-loaded arcade button grid with LED rings                     | no                    | MIDI                     |

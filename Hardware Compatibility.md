@@ -146,9 +146,10 @@ If you notice any bugs in the mappings, or wish the mapping would work
 differently, please [report it on our bug tracker](reporting%20bugs).
 
 Please update these tables as mappings are added to Mixxx. Keep the
-tables sorted by price. Be sure to add specifications for the sound
-cards of controllers with integrated sound cards to the table towards
-the bottom.
+tables sorted by price and move devices to the bottom of the table when
+they are discontinued (keep the discontinued sections alphabetical). Be
+sure to add specifications for the sound cards of controllers with
+integrated sound cards to the table towards the bottom.
 
 ### Mixxx Certified Mappings
 

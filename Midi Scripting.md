@@ -108,10 +108,11 @@ on GNU/Linux, run:
 
 `ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 
-Make changes to your mapping and commit them when your changes work.
-When you are ready to submit your mapping for inclusion in Mixxx, make a
-pull request on GitHub. See the [Using Git](Using%20Git) wiki page for
-more information.
+Make a new git branch (run `git checkout -b new_branch_name` from within
+your git repository). Make changes to your mapping and commit them when
+your changes work. When you are ready to submit your mapping for
+inclusion in Mixxx, make a pull request on GitHub. See the [Using
+Git](Using%20Git) wiki page for more information.
 
 ### Function & variable naming conventions
 

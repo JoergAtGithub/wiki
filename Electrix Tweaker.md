@@ -3,8 +3,8 @@
 
 [Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
 
-The Electrix Tweaker is a flexible, well-built MIDI controller. It
-wastes no space with jog wheels; instead, there are a plethora of
+The Electrix Tweaker is a flexible, well-built MIDI controller. It does
+not take up space with jog wheels; instead, there are a plethora of
 multicolor backlit buttons, 8 velocity-sensitive buttons, and 6
 infinitely rotating encoders surrounded by LED rings (rather than finite
 range EQ knobs). It can be used by itself to control most aspects of

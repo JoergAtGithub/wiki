@@ -114,10 +114,10 @@ default value.
 
 The deck controls are the same on each half of the controller. Which
 deck each side controls can be switched with the deck toggle button.
-When controlling deck 1 or 2, the switches on that side are blue, as
-shown on the left side of the diagram. When controlling deck 3 or 4, the
-switches on that side are magenta, as shown on the right side of the
-diagram.
+When controlling deck 1 or 2, the switches on that side (9, 11, 13, 14,
+and 15 in the diagram) are blue, as shown on the left side of the
+diagram. When controlling deck 3 or 4, the switches on that side are
+magenta, as shown on the right side of the diagram.
 
     -Filter (low pass filter left of center; high pass filter right of center)
     -Load track selected in library into deck

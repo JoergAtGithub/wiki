@@ -122,16 +122,16 @@ diagram.
     -Volume
     -Play/pause
     -Hotcues. Press an unlit button to set a hotcue. When slip mode is disabled (see #9 below), pressing a hotcue simply jumps to that hotcue. When slip mode is on, hotcues can be previewed on a stopped deck. While previewing a hotcue, press the play button to let the track keep playing after the hotcue is released.
-    -Jump 4 beats forward (with quantize enabled, see [[#deck-controls|deck controls #13]])
+    -Jump 4 beats forward (with quantize enabled)
     -Slip mode. When active, loops and hotcues will only play as long as they are held down. When they are released, the track will jump to where it would have been if the loop or hotcue was not pressed. 
     -Deck shift
     -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right.
-    -Jump 4 beats backward (with quantize enabled, see [[#deck-controls|deck controls #13]])
+    -Jump 4 beats backward (with quantize enabled)
     -Quantize. When enabled, the navigation buttons are white as shown by 8 & 11 in the diagram. With quantize enabled, the navigation buttons jump by 4 beats or 1 beat with deck shift pressed. When disabled, the navigation buttons are green as shown by 15 & 16 in the diagram. With quantize disabled, the navigation buttons fast forward and rewind the track. When quantize is disabled and deck shift is pressed, the navigation buttons are temporary pitch bend buttons.
     -Key lock
     -Sync lock
-    -Fast forward (with quantize disabled, see [[#deck-controls|deck controls #13]])
-    -Rewind (with quantize disabled, see [[#deck-controls|deck controls #13]])
+    -Fast forward (with quantize disabled)
+    -Rewind (with quantize disabled)
 
 ### Deck shift layer
 
@@ -147,16 +147,16 @@ the controller is held down.
     -Pitch
     -Cue. When previewing from the cue point on a stopped deck, release this cue button to stop playing and jump back to the cue point. Release deck shift to continue playing.
     -Move hotcue to current position
-    -Jump forward 1 beat (with quantize enabled)
+    -Jump forward 1 beat (with quantize enabled, see [[#deck-controls|deck controls #13]])
     -Manually place loop start point
     -Deck shift button
     -Manually place loop end point
-    -Jump back 1 beat (with quantize enabled)
+    -Jump back 1 beat (with quantize enabled, see [[#deck-controls|deck controls #13]])
     -Align beatgrid with current position
     -Sync key. If key has been changed from track's original key, reset the key.
     -Reset tempo
-    -Temporarily raise pitch while pressed (with quantize disabled)
-    -Temporarily lower pitch while pressed (with quantize disabled)
+    -Temporarily raise pitch while pressed (with quantize disabled, see [[#deck-controls|deck controls #13]])
+    -Temporarily lower pitch while pressed (with quantize disabled, see [[#deck-controls|deck controls #13]])
 
 ### Channel encoder layers
 

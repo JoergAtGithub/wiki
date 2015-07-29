@@ -161,6 +161,12 @@ encoders toggles EQ that EQ's kill switch. The blue LED below the
 encoder is lit while the kill switch is on. Pressing the encoder while
 holding deck shift (see below) resets the EQ to 0.
 
+Tip: You can go to Options \> Preferences \> Equalizers and check "Reset
+equalizers on track load". On most controllers, this would be an issue
+because the physical knobs would be misaligned with the values in
+software when the EQs were reset, but because the Tweaker has LED rings
+around encoders instead of knobs, this is not an issue.
+
 The right side of the diagram shows loop mode. The LEDs on the loop move
 length and loop length encoders represent numbers of beats. Center means
 1 beat. Each step to the right doubles the beats and each step to the

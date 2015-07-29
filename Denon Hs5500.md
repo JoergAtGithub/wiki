@@ -1,7 +1,7 @@
-# Release notes
-
 ![http://b06ba727c886717f9577-fff53f927840131da4fecbedd819996a.r74.cf2.rackcdn.com//1220/images/EL\_DN-HS5500-Top.jpg](http://b06ba727c886717f9577-fff53f927840131da4fecbedd819996a.r74.cf2.rackcdn.com//1220/images/EL_DN-HS5500-Top.jpg)
-[Manufacturer's website](http://denondj.com/products/view/dn-hs5500)
+[Manufacturer's website](http://denondj.com/products/view/dn-hs5500).
+
+# Release notes
 
 ## 2013-02-30
 

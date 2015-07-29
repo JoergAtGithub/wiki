@@ -83,9 +83,9 @@ This layer is active while the yellow deck shift button is held down.
     -Cue
     -Move hotcue to current position
     -Jump forward 1 beat (with quantize enabled)
-    -Loop in
+    -Manually place loop start point
     -Deck shift button
-    -Loop out
+    -Manually place loop end point
     -Jump back 1 beat (with quantize enabled)
     -Align beatgrid with current position
     -Sync key. If key has been changed from track's original key, reset the key.

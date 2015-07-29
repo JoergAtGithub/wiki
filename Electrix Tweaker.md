@@ -20,7 +20,7 @@ place to buy one. It comes with a free case and free shipping for $100.
     * Press a button to play a sample. When the button is released, the sample will stop playing.
     * Press top shift and a sampler button to eject a sample from a sampler
     * Samples will play with their volume proportional to how much force was used to strike the button. You can adjust the sensitivity or disable the velocity sensitivity (and make them work as on/off switches) by adjusting options at the top of the JavaScript file in a text editor.
-    -crossfader
+    -Crossfader
 
 ### Top shift layer
 

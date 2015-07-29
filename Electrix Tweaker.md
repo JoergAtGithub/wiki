@@ -1,9 +1,32 @@
+\======= Electrix Tweaker======
 ![http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg](http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg)
 
-[Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
+The Electrix Tweaker is a flexible, well-built MIDI controller. It
+wastes no space with jog wheels; instead, there are a plethora of
+multicolor backlit buttons and eight velocity-sensitive buttons. Instead
+of analog knobs for EQs, there are infinitely rotating encoders
+surrounded by LED rings that are programmed to seemlessly switch modes.
+It has no audio interface but includes 5-pin MIDI in and out ports. It
+apparently did not sell well considering how little information there is
+about it online. It initially sold for $400 in 2013 but is now available
+for $100 with a free case from [the
+manufacturer](http://electrixpro.com/).
 
-[Manufacturer's website](http://electrixpro.com/): this is the best
-place to buy one. It comes with a free case and free shipping for $100.
+The flexibility of the encoders with LED rings and the multicolor
+buttons allows this mapping to fit *a lot* of functionality into a small
+package. The encoders control EQs, gains, loops, and coarse seeking in
+various modes. This mapping can control 4 decks by toggling between
+decks 1/3 on the left and decks 2/4 on the right. Each deck shows 8
+hotcues at a time and 4 pages of hotcues are available, providing access
+to all 32 hotcues allowed by the Mixxx engine. This mapping also takes
+advantage of slip mode, which is not yet available through any of
+Mixxx's skins. With slip mode and all those hotcues, this mapping is
+excellent for cue juggling.
+
+The mapping requires at least Mixxx 1.12 beta. Use it with the Tweaker
+MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the Tweaker).
+
+[Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
 
 # Mapping description
 

@@ -2,10 +2,13 @@
 ![http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg](http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg)
 
   - [Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
-  - Latest version on GitHub: [Electrix
+  - [GitHub
+    branch](https://github.com/Be-ing/mixxx/tree/tweaker_mapping):
+    download [Electrix
     Tweaker.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/tweaker_mapping/res/controllers/Electrix%20Tweaker.midi.xml)
     and
     [Electrix-Tweaker-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/tweaker_mapping/res/controllers/Electrix-Tweaker-scripts.js)
+    to try the latest updates
 
 The Electrix Tweaker is a flexible, well-built MIDI controller. It does
 not take up space with jog wheels; instead, there are a plethora of

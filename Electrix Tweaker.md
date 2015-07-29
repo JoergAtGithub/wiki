@@ -5,14 +5,16 @@
 
 The Electrix Tweaker is a flexible, well-built MIDI controller. It
 wastes no space with jog wheels; instead, there are a plethora of
-multicolor backlit buttons and eight velocity-sensitive buttons. Instead
-of analog knobs for EQs, there are infinitely rotating encoders
-surrounded by LED rings that are programmed to seemlessly switch modes.
-It has no audio interface but includes 5-pin MIDI in and out ports. It
-apparently did not sell well considering how little information there is
-about it online. It initially sold for $400 in 2013 but is now available
-for $100 with a free case from [the
-manufacturer](http://electrixpro.com/).
+multicolor backlit buttons and eight velocity-sensitive buttons. It can
+be used by itself to control most aspects of Mixxx. Instead of analog
+knobs for EQs, there are infinitely rotating encoders surrounded by LED
+rings that are programmed to seemlessly switch modes. It has no audio
+interface, so it requires a [separate sound
+card](hardware%20compatibility#standalone%20usb%20sound%20cards) but it
+includes 5-pin MIDI in and out ports. It apparently did not sell well
+considering how little information there is about it online. It
+initially sold for $400 in 2013 but is now available for $100 with a
+free case from [the manufacturer](http://electrixpro.com/).
 
 The flexibility of the encoders with LED rings and the multicolor
 buttons allows this mapping to fit *a lot* of functionality into a small

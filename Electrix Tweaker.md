@@ -44,8 +44,8 @@ value.
     -Channel gain for active deck on right side
     -Eject sampler
     -Delete hotcue
-    -Enable vinyl mode on left deck
-    -Enable vinyl mode on right deck
+    -Enable vinyl mode on left deck (press top shift button first, then this button while holding down top shift)
+    -Enable vinyl mode on right deck (press top shift button first, then this button while holding down top shift)
 
 ## Deck controls
 

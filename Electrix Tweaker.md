@@ -76,8 +76,12 @@ Tweaker).
     * Samples will play with their volume proportional to how much force was used to strike the button. You can adjust the sensitivity or disable the velocity sensitivity (and make them work as on/off switches) by adjusting options at the top of the JavaScript file in a text editor.
     -Crossfader
 
-### Top shift layer
-
+  
+  
+  
+  
+  
+\==== Top shift layer =====
 [[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
 
 This layer is active while the top shift button (\#1 in the diagram) is

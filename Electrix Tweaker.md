@@ -1,6 +1,8 @@
 \======= Electrix Tweaker======
 ![http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg](http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg)
 
+[Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
+
 The Electrix Tweaker is a flexible, well-built MIDI controller. It
 wastes no space with jog wheels; instead, there are a plethora of
 multicolor backlit buttons and eight velocity-sensitive buttons. Instead
@@ -25,8 +27,6 @@ excellent for cue juggling.
 
 The mapping requires at least Mixxx 1.12 beta. Use it with the Tweaker
 MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the Tweaker).
-
-[Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
 
 # Mapping description
 

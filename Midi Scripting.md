@@ -709,9 +709,9 @@ common-controller-scripts.js file:
     *mid* and *high* for a non-linear Mixxx control such as EQ or master
     volume. You can then use this returned value to set the desired
     Mixxx control.
-
-<!-- end list -->
-
+  - **script.absoluteNonLinInverse**(value, low, mid, high, min, max) -
+    The inverse of the above function. This is useful for sending MIDI
+    values back to controllers. *New in 1.12*
   - **bpm.tapButton**(deck) - Call this every time the desired tap
     button is pressed. It takes the progressive average of the last 8
     taps and sets the bpm of the specified deck to that value, assuming

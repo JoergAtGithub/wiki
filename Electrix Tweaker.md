@@ -148,7 +148,7 @@ the controller is held down.
 
 ### Channel encoder layers
 
-[[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
+[[/media/hardware/Tweaker-encoder-layers.png|Tweaker-encoder-layers.png]]
 
 The encoder layer buttons (\#4 and \#8 in the diagram) toggle the
 encoders between EQ and loop layers.

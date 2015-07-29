@@ -93,7 +93,7 @@ This layer is active while the yellow deck shift button is held down.
     -Temporarily raise pitch while pressed (with quantize disabled)
     -Temporarily lower pitch while pressed (with quantize disabled)
 
-## Channel encoder modes
+## Channel encoder layers
 
 [[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
 

@@ -27,6 +27,24 @@ place to buy one. It comes with a free case and free shipping for $100.
 
 [[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
 
+With the exception of the headphone mix encoder (\#7 in the diagram),
+pressing the encoders resets the parameters they control to the default
+value.
+
+    -Scroll through library quickly. Press to toggle big library view
+    -Eject left deck
+    -Eject right deck
+    -Expand/collapse selected item in left library pane
+    -Expand/collapse selected item in left library pane
+    -Headphone gain
+    -Headphone cue/master mix in headphones. Press to toggle split cue mode. Blue LED below encoder is lit when split cue mode is enabled.
+    -Channel gain for active deck on left side
+    -Master output gain
+    -Master output balance
+    -Channel gain for active deck on right side
+    -Eject sampler
+    -Delete hotcue
+
 ## Deck controls
 
 [[/media/hardware/Tweaker-deck-controls.png|Tweaker-deck-controls.png]]

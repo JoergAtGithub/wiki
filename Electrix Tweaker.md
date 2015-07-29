@@ -153,6 +153,17 @@ the controller is held down.
 The encoder layer buttons (\#4 and \#8 in the diagram) toggle the
 encoders between EQ and loop layers.
 
+The left side of the diagram shows EQ mode. In EQ mode, pressing
+encoders toggles EQ that EQ's kill switch. The blue LED below the
+encoder is lit while the kill switch is on. Pressing the encoder while
+holding deck shift (see below) resets the EQ to 0.
+
+The right side of the diagram shows loop mode. The LEDs on the loop move
+length and loop length encoders represent numbers of beats. Center means
+1 beat. Each step to the right doubles the beats and each step to the
+left halves the beats. For example, the default loop length is 4 beats,
+so the center LED and 2 LEDs to the right are lit.
+
 ``` 
  -High EQ
  -Mid EQ
@@ -163,17 +174,6 @@ encoders between EQ and loop layers.
  -Loop length. Press to toggle loop. When in slip mode, the loop is only active while this is held down. The blue LED below the encoder is lit while a loop is active.
  -Encoder mode button. Press to switch to EQ mode.
 ```
-
-The left side is on EQ mode. In EQ mode, pressing encoders toggles EQ
-that EQ's kill switch. The blue LED below the encoder is lit while the
-kill switch is on. Pressing the encoder while holding deck shift (see
-below) resets the EQ to 0.
-
-The right side is on loop mode. The LEDs on the loop move length and
-loop length encoders represent numbers of beats. Center means 1 beat.
-Each step to the right doubles the beats and each step to the left
-halves the beats. For example, the default loop length is 4 beats, so
-the center LED and 2 LEDs to the right are lit.
 
 ### Vinyl mode
 

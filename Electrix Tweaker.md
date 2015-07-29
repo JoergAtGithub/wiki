@@ -64,6 +64,30 @@ value.
     -Key lock
     -Sync lock
 
+### Deck shift layer
+
+[[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]
+
+This layer is active while the yellow deck shift button is held down.
+
+    -Inactive
+    -Jump 32 beats forward or backward
+    -Scroll through hotcue pages
+    -Exit loop
+    -Pitch
+    -Cue
+    -Move hotcue to current position
+    -Jump forward 1 beat (with quantize enabled)
+    -Loop in
+    -Deck shift button
+    -Loop out
+    -Jump back 1 beat (with quantize enabled)
+    -Align beatgrid with current position
+    -Sync key. If key has been changed from track's original key, reset the key.
+    -Reset tempo
+    -Temporarily raise pitch while pressed (with quantize disabled)
+    -Temporarily lower pitch while pressed (with quantize disabled)
+
 ## Channel encoder modes
 
 [[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
@@ -89,27 +113,3 @@ loop length encoders represent numbers of beats. Center means 1 beat.
 Each step to the right doubles the beats and each step to the left
 halves the beats. For example, the default loop length is 4 beats, so
 the center LED and 2 LEDs to the right are lit.
-
-### Deck shift layer
-
-[[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]
-
-This layer is active while the yellow deck shift button is held down.
-
-    -Inactive
-    -Jump 32 beats forward or backward
-    -Scroll through hotcue pages
-    -Exit loop
-    -Pitch
-    -Cue
-    -Move hotcue to current position
-    -Jump forward 1 beat
-    -Loop in
-    -Deck shift button
-    -Loop out
-    -Jump back 1 beat
-    -Align beatgrid with current position
-    -Sync key. If key has been changed from track's original key, reset the key.
-    -Reset tempo
-    -Temporarily raise pitch while pressed
-    -Temporarily lower pitch while pressed

@@ -27,8 +27,9 @@ excellent for cue juggling.
 
 ## Compatibility
 
-The Tweaker is a USB MIDI class compliant device and therefore requires
-no special drivers on any operating system.
+The Tweaker is a USB MIDI class compliant device, so it does not require
+any special drivers on any operating system. Just plug it in and load
+the Mixxx mapping on any OS that Mixxx runs on.
 
 The mapping requires at least Mixxx 1.12 beta. Use it with the Tweaker
 MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the Tweaker).

@@ -22,3 +22,35 @@ place to buy one. It comes with a free case and free shipping for $100.
     * Samples will play with their volume proportional to how much force was used to strike the button. You can adjust the sensitivity or disable the velocity sensitivity (and make them work as on/off switches) by adjusting options at the top of the JavaScript file in a text editor.
 
 5: crossfader
+
+### Top shift layer
+
+[[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
+
+## Deck controls
+
+[[/media/hardware/Tweaker-deck-controls.png|Tweaker-deck-controls.png]]
+
+    -Filter (low pass filter left of center; high pass filter right of center)
+    -Load track selected in library into deck
+    -Toggle encoders between EQ and loop mode (see below)
+    -Headphone cueing
+    -Volume
+    -Play/pause
+    -Hotcues
+    -Jump 4 beats forward
+    -Slip mode
+    -Deck shift
+    -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right. When controlling deck 1 or 2, the switches on that side are blue, as shown on the left side of the diagram. When controlling deck 3 or 4, the switches on that side are magenta, as shown on the right side of the diagram.
+    -Jump 4 beats backward
+    -Quantize
+    -Key lock
+    -Sync lock
+
+## Channel encoder modes
+
+[[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
+
+### Deck shift layer
+
+[[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]

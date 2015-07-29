@@ -546,8 +546,6 @@ ready to tear up some tracks.
 
 ### Timed reactions
 
-*Introduced in v1.8*
-
 Sometimes you need to be able to do things at certain time intervals
 regardless of whether the controller is manipulated or something changes
 in Mixxx. Timed reactions let you do just that with 20ms resolution.

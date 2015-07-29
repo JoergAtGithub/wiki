@@ -512,8 +512,7 @@ MyController.wheelTouch = function (channel, control, value, status) {
         var alpha = 1.0/8;
         var beta = alpha/32;
         engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, alpha, beta);
-    }
-    else {    // If button up
+    } else {    // If button up
         engine.scratchDisable(MyController.currentDeck);
     }
 }

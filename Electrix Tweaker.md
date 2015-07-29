@@ -171,7 +171,7 @@ so the center LED and 2 LEDs to the right are lit.
  -Encoder mode button. Press to switch to loop mode.
  -Loop move length
  -Move loop
- -Loop length. Press to toggle loop. When in slip mode, the loop is only active while this is held down. The blue LED below the encoder is lit while a loop is active.
+ -Loop length. Press to toggle loop. When in slip mode (see [[#deck-controls|Deck controls button #9]]), the loop is only active while this is held down. The blue LED below the encoder is lit while a loop is active.
  -Encoder mode button. Press to switch to EQ mode.
 ```
 

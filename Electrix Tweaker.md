@@ -104,7 +104,7 @@ This layer is active while the yellow deck shift button is held down.
  -Encoder mode button. Press to switch to loop mode.
  -Loop move length
  -Move loop
- -Loop length. Press to toggle loop. When in slip mode, the loop is only active while this is held down.
+ -Loop length. Press to toggle loop. When in slip mode, the loop is only active while this is held down. The blue LED below the encoder is lit while a loop is active.
  -Encoder mode button. Press to switch to EQ mode.
 ```
 

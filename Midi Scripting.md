@@ -125,9 +125,10 @@ page for your mapping. To make a wiki page, list your controller on the
 Hardware Guide with the name surrounded by double brackets, for example
 \[\[My Controller\]\]. Save the wiki page, then click on the red link to
 create the new page. On that new wiki page, put a picture of the
-controller at the top with a brief description and link to the
-manufacturer's website. Please link to some reviews of the device too.
-Then, describe the mapping with labeled diagrams. If there is no diagram
+controller at the top with a brief description, a link to the
+manufacturer's website, and compatibility information for GNU/Linux, Mac
+OS X, and Windows. Please link to some reviews of the device too. Then,
+describe the mapping with labeled diagrams. If there is no diagram
 readily available, ask the manufacturer for one. If they do not provide
 one, take pictures of your device and label them. Upload diagrams and/or
 pictures by going to the [Media Manager](?do=media) at the top right of

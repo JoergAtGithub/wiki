@@ -150,6 +150,9 @@ the controller is held down.
 
 [[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
 
+The encoder layer buttons (\#4 and \#8 in the diagram) toggle the
+encoders between EQ and loop layers.
+
 ``` 
  -High EQ
  -Mid EQ

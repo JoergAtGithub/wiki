@@ -74,6 +74,13 @@ value.
 
 [[/media/hardware/Tweaker-deck-controls.png|Tweaker-deck-controls.png]]
 
+The deck controls are the same on each half of the controller. Which
+deck each side controls can be switched with the deck toggle button.
+When controlling deck 1 or 2, the switches on that side are blue, as
+shown on the left side of the diagram. When controlling deck 3 or 4, the
+switches on that side are magenta, as shown on the right side of the
+diagram.
+
     -Filter (low pass filter left of center; high pass filter right of center)
     -Load track selected in library into deck
     -Toggle encoders between EQ and loop mode (see [[#channel-encoder-layers|below]])
@@ -84,7 +91,7 @@ value.
     -Jump 4 beats forward (with quantize enabled)
     -Slip mode. When active, loops and hotcues will only play as long as they are held down. When they are released, the track will jump to where it would have been if the loop or hotcue was not pressed. 
     -Deck shift
-    -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right. When controlling deck 1 or 2, the switches on that side are blue, as shown on the left side of the diagram. When controlling deck 3 or 4, the switches on that side are magenta, as shown on the right side of the diagram.
+    -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right.
     -Jump 4 beats backward (with quantize disabled)
     -Quantize. When enabled, the navigation buttons are white as shown by 8 & 11 in the diagram. With quantize enabled, the navigation buttons jump by 4 beats or 1 beat with deck shift pressed. When disabled, the navigation buttons are green as shown by 15 & 16 in the diagram. With quantize disabled, the navigation buttons fast forward and rewind the track. When quantize is disabled and deck shift is pressed, the navigation buttons are temporary pitch bend buttons.
     -Key lock

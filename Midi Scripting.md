@@ -382,9 +382,9 @@ controller to react. Here are the related functions:
     script function is called with the updated value even if it hasn't
     changed, such as when forcing LEDs to update on a mode change.
 
-As of at least Mixxx 1.10, connected functions are passed three
-parameters: the new value of the MixxxControl, the group, and the Mixxx
-control name. So, your connected function can look like this:
+Connected functions are passed three parameters: the new value of the
+MixxxControl, the group, and the Mixxx control name. So, your connected
+function can look like this:
 
 ``` javascript
 MyController.volumeLEDs = function (value, group, control) {
@@ -433,8 +433,6 @@ engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyContro
 
 ### Soft-takeover
 
-*Introduced in v1.10.0.*
-
 To prevent sudden wide parameter changes when the on-screen control
 diverges from a hardware control, use soft-takeover. While it's active
 on a particular parameter, manipulating the control on the hardware will
@@ -461,8 +459,6 @@ engine.setValue() in a script. It does not work for controls mapped in
 an XML file.
 
 ### Scratching
-
-*Introduced in v1.8, ramp toggles and isScratching() added in v1.11*
 
 We have an easy way to scratch with any MIDI control that sends relative
 (+1/-1) signals. (Others can be scaled to work as well.) The applicable
@@ -516,20 +512,16 @@ MyController.wheelTouch = function (channel, control, value, status) {
         var alpha = 1.0/8;
         var beta = alpha/32;
         engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, alpha, beta);
-        // Keep track of whether we're scratching on this virtual deck - for v1.10.x or below
-        // MyController.scratching[MyController.currentDeck] = true;
     }
     else {    // If button up
         engine.scratchDisable(MyController.currentDeck);
-        //MyController.scratching[MyController.currentDeck] = false;  // Only for v1.10.x and below
     }
 }
 
 // The wheel that actually controls the scratching
 MyController.wheelTurn = function (channel, control, value, status) {
     // See if we're scratching. If not, skip this.
-    if (!engine.isScratching(MyController.currentDeck)) return; // for 1.11.0 and above
-    //if (!MyController.scratching[MyController.currentDeck]) return; // for 1.10.x and below
+    if (!engine.isScratching(MyController.currentDeck)) return;
     
     // --- Choose only one of the following!
     
@@ -614,8 +606,6 @@ MyController.lightUp = function (led,color) {
 ```
 
 ### Spinback and brake effect
-
-*Introduced in v1.11*
 
 A forwards or backwards brake effect can be enabled/disabled using one
 of the two following functions. engine.spinback() just calls

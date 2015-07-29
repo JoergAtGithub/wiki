@@ -125,7 +125,8 @@ diagram.
 
 [[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]
 
-This layer is active while the yellow deck shift button is held down.
+This layer is active while the yellow deck shift button on that side of
+the controller is held down.
 
     -Inactive
     -Jump 32 beats forward or backward

@@ -118,3 +118,21 @@ loop length encoders represent numbers of beats. Center means 1 beat.
 Each step to the right doubles the beats and each step to the left
 halves the beats. For example, the default loop length is 4 beats, so
 the center LED and 2 LEDs to the right are lit.
+
+## Vinyl mode
+
+[[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]] Toggle vinyl
+mode by pressing deck shift (\#2 in the diagram) while holding top shift
+(\#1 in the the diagram).
+
+3: cycles through vinyl control modes: absolute (LED off), relative (LED
+indicates cue mode), and constant (LED red). If the deck is in relative
+mode and playing, pressing the button cycles through cue modes: off
+(white), cue (yellow), hotcue (green). When the deck is playing in
+relative mode, pressing the button with deck shift switches to constant
+mode.
+
+4: toggle vinyl control. Turns green when vinyl control is enabled. With
+deck shift pressed, it toggles passthrough mode and turns white.
+Pressing the button while passthrough mode is enabled turns passthrough
+mode off (without toggling whether vinyl control is enabled).

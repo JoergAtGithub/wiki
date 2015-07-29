@@ -30,6 +30,7 @@ With the exception of the headphone mix encoder (\#7 in the diagram),
 pressing the encoders resets the parameters they control to the default
 value.
 
+    -Top shift button
     -Scroll through library quickly. Press to toggle big library view
     -Eject left deck
     -Eject right deck

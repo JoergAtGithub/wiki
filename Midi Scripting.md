@@ -112,9 +112,12 @@ Make a new git branch (run `git checkout -b new_branch_name` from within
 your git repository). Make changes to your mapping and commit them when
 your changes work. Please prefix your git commit messages with the name
 of your controller so others can easily tell what the commits are for
-after your changes are merged. When you are ready to submit your mapping
-for inclusion in Mixxx, make a pull request on GitHub. See the [Using
-Git](Using%20Git) wiki page for more information.
+after your changes are merged. Post [on the
+forum](http://mixxx.org/forums/viewforum.php?f=7) early so users can
+find your mapping and give feedback as you develop it. When you are
+ready to submit your mapping for inclusion in Mixxx, make a pull request
+on GitHub. See the [Using Git](Using%20Git) wiki page for more
+information.
 
 Once your mapping has been accepted, please update the relevant tables
 in the [DJ Hardware Guide](hardware%20compatibility) and make a wiki

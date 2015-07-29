@@ -126,7 +126,7 @@ the center LED and 2 LEDs to the right are lit.
 Toggle vinyl mode by pressing deck shift (\#2 in the diagram) while
 holding top shift (\#1 in the the diagram).
 
-3: cycles through vinyl control modes: absolute (LED off), relative (LED
+3: cycle through vinyl control modes: absolute (LED off), relative (LED
 indicates cue mode), and constant (LED red). If the deck is in relative
 mode and playing, pressing the button cycles through cue modes: off
 (white), cue (yellow), hotcue (green). When the deck is playing in

@@ -121,12 +121,15 @@ information.
 
 Once your mapping has been accepted, please update the relevant tables
 in the [DJ Hardware Guide](hardware%20compatibility) and make a wiki
-page for your mapping. On the wiki page, put a picture of the controller
-at the top with a brief description and link to the manufacturer's
-website. Please link to some reviews of the device too. Then, describe
-the mapping with labeled diagrams. If there is no diagram readily
-available, ask the manufacturer for one. If they do not provide one,
-take pictures of your device and label them.
+page for your mapping. To make a wiki page, list your controller on the
+Hardware Guide with the name surrounded by double brackets, for example
+\[\[My Controller\]\]. Save the wiki page, then click on the red link to
+create the new page. On that new wiki page, put a picture of the
+controller at the top with a brief description and link to the
+manufacturer's website. Please link to some reviews of the device too.
+Then, describe the mapping with labeled diagrams. If there is no diagram
+readily available, ask the manufacturer for one. If they do not provide
+one, take pictures of your device and label them.
 
 ### Function & variable naming conventions
 

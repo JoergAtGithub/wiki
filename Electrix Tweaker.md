@@ -121,9 +121,10 @@ the center LED and 2 LEDs to the right are lit.
 
 ## Vinyl mode
 
-[[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]] Toggle vinyl
-mode by pressing deck shift (\#2 in the diagram) while holding top shift
-(\#1 in the the diagram).
+[[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]]
+
+Toggle vinyl mode by pressing deck shift (\#2 in the diagram) while
+holding top shift (\#1 in the the diagram).
 
 3: cycles through vinyl control modes: absolute (LED off), relative (LED
 indicates cue mode), and constant (LED red). If the deck is in relative

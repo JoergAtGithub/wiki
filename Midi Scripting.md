@@ -129,7 +129,9 @@ controller at the top with a brief description and link to the
 manufacturer's website. Please link to some reviews of the device too.
 Then, describe the mapping with labeled diagrams. If there is no diagram
 readily available, ask the manufacturer for one. If they do not provide
-one, take pictures of your device and label them.
+one, take pictures of your device and label them. Upload diagrams and/or
+pictures by going to the [Media Manager](?do=media) at the top right of
+any wiki page and upload your file(s) to the "hardware" namespace.
 
 ### Function & variable naming conventions
 

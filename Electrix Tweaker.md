@@ -119,7 +119,7 @@ Each step to the right doubles the beats and each step to the left
 halves the beats. For example, the default loop length is 4 beats, so
 the center LED and 2 LEDs to the right are lit.
 
-## Vinyl mode
+### Vinyl mode
 
 [[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]]
 

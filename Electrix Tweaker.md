@@ -53,7 +53,7 @@ value.
 
     -Filter (low pass filter left of center; high pass filter right of center)
     -Load track selected in library into deck
-    -Toggle encoders between EQ and loop mode (see below)
+    -Toggle encoders between EQ and loop mode (see [[#channel-encoder-layers|below]])
     -Headphone cueing
     -Volume
     -Play/pause

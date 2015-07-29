@@ -91,7 +91,7 @@ directory:
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
 above paths.
 
-### Setting up git
+### Setting up git and getting your mapping included in Mixxx
 
 Git is software that allows you to keep track of what you have changed
 in files. We use it for coordinating Mixxx development. If you want to
@@ -115,6 +115,15 @@ of your controller so others can easily tell what the commits are for
 after your changes are merged. When you are ready to submit your mapping
 for inclusion in Mixxx, make a pull request on GitHub. See the [Using
 Git](Using%20Git) wiki page for more information.
+
+Once your mapping has been accepted, please update the relevant tables
+in the [DJ Hardware Guide](hardware%20compatibility) and make a wiki
+page for your mapping. On the wiki page, put a picture of the controller
+at the top with a brief description and link to the manufacturer's
+website. Please link to some reviews of the device too. Then, describe
+the mapping with labeled diagrams. If there is no diagram readily
+available, ask the manufacturer for one. If they do not provide one,
+take pictures of your device and label them.
 
 ### Function & variable naming conventions
 

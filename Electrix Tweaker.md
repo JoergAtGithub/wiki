@@ -122,16 +122,16 @@ diagram.
     -Volume
     -Play/pause
     -Hotcues. Press an unlit button to set a hotcue. When slip mode is disabled (see #9 below), pressing a hotcue simply jumps to that hotcue. When slip mode is on, hotcues can be previewed on a stopped deck. While previewing a hotcue, press the play button to let the track keep playing after the hotcue is released.
-    -Jump 4 beats forward (with quantize enabled)
+    -Jump 4 beats forward (with quantize enabled, see [[#deck-controls|deck controls #13]])
     -Slip mode. When active, loops and hotcues will only play as long as they are held down. When they are released, the track will jump to where it would have been if the loop or hotcue was not pressed. 
     -Deck shift
     -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right.
-    -Jump 4 beats backward (with quantize disabled)
+    -Jump 4 beats backward (with quantize enabled, see [[#deck-controls|deck controls #13]])
     -Quantize. When enabled, the navigation buttons are white as shown by 8 & 11 in the diagram. With quantize enabled, the navigation buttons jump by 4 beats or 1 beat with deck shift pressed. When disabled, the navigation buttons are green as shown by 15 & 16 in the diagram. With quantize disabled, the navigation buttons fast forward and rewind the track. When quantize is disabled and deck shift is pressed, the navigation buttons are temporary pitch bend buttons.
     -Key lock
     -Sync lock
-    -Fast forward (with quantize disabled)
-    -Rewind (with quantize disabled)
+    -Fast forward (with quantize disabled, see [[#deck-controls|deck controls #13]])
+    -Rewind (with quantize disabled, see [[#deck-controls|deck controls #13]])
 
 ### Deck shift layer
 

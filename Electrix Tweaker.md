@@ -32,8 +32,11 @@ The Tweaker is a USB MIDI class compliant device, so it does not require
 any special drivers on any operating system. Just plug it in and load
 the Mixxx mapping on any OS that Mixxx runs on.
 
-The mapping requires at least Mixxx 1.12 beta. Use it with the Tweaker
-MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the Tweaker).
+The mapping requires at least Mixxx 1.12 beta. It is included in the
+latest 1.12 beta, or you can download it from [the
+forum](http://mixxx.org/forums/viewtopic.php?f=7&t=7189). Use it with
+the Tweaker MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the
+Tweaker).
 
 ## Reviews
 

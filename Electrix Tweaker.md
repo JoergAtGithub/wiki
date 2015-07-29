@@ -9,6 +9,8 @@ place to buy one. It comes with a free case and free shipping for $100.
 
 ## Global controls
 
+[[/media/hardware/Tweaker-global-controls.png|Tweaker-global-controls.png]]
+
     -Scroll through library. Push to load selected track into first stopped deck.
     -Scroll up left panel of library
     -Scroll down left panel of library
@@ -22,6 +24,8 @@ place to buy one. It comes with a free case and free shipping for $100.
 5: crossfader
 
 ### Top shift layer
+
+[[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
 
 With the exception of the headphone mix encoder (\#7 in the diagram),
 pressing the encoders resets the parameters they control to the default
@@ -43,6 +47,8 @@ value.
 
 ## Deck controls
 
+[[/media/hardware/Tweaker-deck-controls.png|Tweaker-deck-controls.png]]
+
     -Filter (low pass filter left of center; high pass filter right of center)
     -Load track selected in library into deck
     -Toggle encoders between EQ and loop mode (see below)
@@ -60,6 +66,8 @@ value.
     -Sync lock
 
 ## Channel encoder modes
+
+[[/media/hardware/Tweaker-encoder-modes.png|Tweaker-encoder-modes.png]]
 
 ``` 
  -High EQ
@@ -84,6 +92,8 @@ halves the beats. For example, the default loop length is 4 beats, so
 the center LED and 2 LEDs to the right are lit.
 
 ### Deck shift layer
+
+[[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]
 
 This layer is active while the yellow deck shift button is held down.
 

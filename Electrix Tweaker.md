@@ -68,6 +68,9 @@ MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI I/O on the Tweaker).
 
 [[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
 
+This layer is active while the top shift button (\#1 in the diagram) is
+held down.
+
 With the exception of the headphone mix encoder (\#7 in the diagram),
 pressing the encoders resets the parameters they control to the default
 value.

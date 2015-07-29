@@ -36,7 +36,7 @@ value.
     -Expand/collapse selected item in left library pane
     -Expand/collapse selected item in left library pane
     -Headphone gain
-    -Headphone cue/master mix in headphones. Press to toggle split cue mode. Blue LED below encoder is lit when split cue mode is enabled.
+    -Headphone cue/master mix in headphones. Press to toggle split cue mode. The blue LED below encoder is lit when split cue mode is enabled.
     -Channel gain for active deck on left side
     -Master output gain
     -Master output balance

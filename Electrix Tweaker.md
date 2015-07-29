@@ -178,12 +178,14 @@ so the center LED and 2 LEDs to the right are lit.
  -Encoder mode button. Press to switch to EQ mode.
 ```
 
-### Vinyl mode
+### Vinyl timecode mode
 
 [[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]]
 
-Toggle vinyl mode by pressing deck shift (\#2 in the diagram) while
-holding top shift (\#1 in the the diagram).
+Toggle vinyl timecode mode by pressing deck shift (\#2 in the diagram)
+while holding top shift (\#1 in the the diagram). This replaces the
+navigation buttons for that deck with buttons that toggle options for
+timecode control.
 
 3: cycle through vinyl control modes: absolute (LED off), relative (LED
 indicates cue mode), and constant (LED red). If the deck is in relative

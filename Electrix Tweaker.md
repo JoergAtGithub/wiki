@@ -90,8 +90,7 @@ This layer is active while the top shift button (\#1 in the diagram) is
 held down.
 
 With the exception of the headphone mix encoder (\#8 in the diagram),
-pressing the encoders 7-12 resets the parameters they control to the
-default value.
+pressing the encoders 7-12 resets them to center.
 
     -Top shift button
     -Eject left deck

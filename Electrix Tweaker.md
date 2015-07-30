@@ -213,8 +213,8 @@ timecode control.
 indicates cue mode), and constant (LED red). If the deck is in relative
 mode and playing, pressing the button cycles through cue modes: off
 (white), cue (yellow), hotcue (green). When the deck is playing in
-relative mode, pressing the button with deck shift switches to constant
-mode.
+relative mode, pressing the button with deck shift (\#2) switches to
+constant mode.
 
 4: toggle vinyl control. Turns green when vinyl control is enabled. With
 deck shift pressed, it toggles passthrough mode and turns white.

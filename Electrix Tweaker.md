@@ -94,11 +94,11 @@ pressing the encoders 7-12 resets the parameters they control to the
 default value.
 
     -Top shift button
-    -Scroll through library quickly. Press to toggle big library view
     -Eject left deck
     -Eject right deck
     -Expand/collapse selected item in left library pane
     -Expand/collapse selected item in left library pane
+    -Scroll through library quickly. Press to toggle big library view
     -Headphone gain
     -Headphone cue/master mix in headphones. Press to toggle split cue mode. The blue LED below encoder is lit when split cue mode is enabled.
     -Channel gain for active deck on left side

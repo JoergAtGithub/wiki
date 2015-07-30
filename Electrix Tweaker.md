@@ -134,7 +134,7 @@ the right side of the diagram.
     -[[#deck-shift-layer|Deck shift]]
     -Deck toggle between decks 1 & 3 on the left and decks 2 & 4 on the right.
     -Jump 4 beats backward (with quantize enabled)
-    -Quantize. In addition to snapping cues, loops, and play button presses to the nearest beat, this changes the behavior of the controller's navigation buttons. When enabled, the navigation buttons are white as shown by 8 & 11 in the diagram. With quantize enabled, the navigation buttons jump by 4 beats or 1 beat with [[#deck-shift-layer|deck shift (#11)]] pressed. When disabled, the navigation buttons are green as shown by 15 & 16 in the diagram. With quantize disabled, the navigation buttons fast forward and rewind the track. When quantize is disabled and deck shift is pressed, the navigation buttons are temporary pitch bend buttons.
+    -Quantize. In addition to snapping cues, loops, and play button presses to the nearest beat, this changes the behavior of the controller's navigation buttons. When enabled, the navigation buttons are white as shown by 8 & 11 in the diagram. With quantize enabled, the navigation buttons jump by 4 beats or 1 beat with [[#deck-shift-layer|deck shift (#10)]] pressed. When disabled, the navigation buttons are green as shown by 15 & 16 in the diagram. With quantize disabled, the navigation buttons fast forward and rewind the track. When quantize is disabled and deck shift is pressed, the navigation buttons are temporary pitch bend buttons.
     -Key lock
     -Sync lock
     -Fast forward (with quantize disabled)

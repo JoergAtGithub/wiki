@@ -149,7 +149,7 @@ the controller is held down.
 
     -Inactive
     -Jump 32 beats forward or backward
-    -Scroll through hotcue pages. The pages are color coded, in order, cyan, green, red, and white. The LED around the encoder indicates the hotcue page number. The active page on a deck is remembered when toggling between decks (see [[#deck controls]] above).
+    -Scroll through hotcue pages. The pages are color coded, in order, cyan, green, red, and white. The LED around the encoder indicates the hotcue page number. The active page on a deck is remembered when toggling between decks (see [[#deck-controls|deck controls (#11)]] above).
     -Exit loop
     -Pitch
     -Cue. When previewing from the cue point on a stopped deck, release this cue button to stop playing and jump back to the cue point. Release deck shift to continue playing.

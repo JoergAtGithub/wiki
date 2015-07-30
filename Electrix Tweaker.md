@@ -9,8 +9,8 @@
     and
     [Electrix-Tweaker-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/tweaker_mapping/res/controllers/Electrix-Tweaker-scripts.js)
     to try the latest updates
-  - [MIDI
-    documentation](http://electrixpro.com/wp-content/uploads/2014/10/Tweaker_User_Manual.pdf)
+  - [Manufacturer's
+    manual](http://electrixpro.com/wp-content/uploads/2014/10/Tweaker_User_Manual.pdf)
 
 The Electrix Tweaker is a flexible, well-built MIDI controller. It does
 not take up space with jog wheels; instead, there are a plethora of

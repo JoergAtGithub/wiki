@@ -173,9 +173,10 @@ The encoder layer buttons (\#4 and \#8 in the diagram) toggle the
 encoders between EQ and loop layers.
 
 The left side of the diagram shows EQ mode. In EQ mode, pressing
-encoders toggles EQ that EQ's kill switch. The blue LED below the
-encoder is lit while the kill switch is on. Pressing the encoder while
-holding deck shift (see below) resets the EQ to 0.
+encoders toggles that EQ's kill switch. The blue LED below the encoder
+is lit while the kill switch is on. Pressing the encoder while holding
+deck shift (see [deck controls \#10](#deck-controls)) resets the EQ to
+0.
 
 Tip: You can go to Options \> Preferences \> Equalizers and check "Reset
 equalizers on track load". On most controllers, this would be an issue

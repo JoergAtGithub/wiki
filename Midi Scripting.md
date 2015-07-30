@@ -117,7 +117,9 @@ forum](http://mixxx.org/forums/viewforum.php?f=7) early so users can
 find your mapping and give feedback as you develop it. When you are
 ready to submit your mapping for inclusion in Mixxx, make a pull request
 on GitHub. See the [Using Git](Using%20Git) wiki page for more
-information.
+information. If you write functions for your script that you think may
+be helpful for mapping other controllers, add them to
+common-control-scripts.js under the "script" namespace.
 
 Once your mapping has been accepted, please update the relevant tables
 in the [DJ Hardware Guide](hardware%20compatibility) and make a wiki

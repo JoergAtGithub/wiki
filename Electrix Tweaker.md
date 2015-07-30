@@ -127,7 +127,7 @@ are magenta when enabled, as shown on the right side of the diagram.
     -Headphone cueing
     -Volume
     -Play/pause
-    -Hotcues. Press an unlit button to set a hotcue. When slip mode is disabled (see #9 below), pressing a hotcue simply jumps to that hotcue. When slip mode is on, hotcues can be previewed on a stopped deck. While previewing a hotcue, press the play button to let the track keep playing after the hotcue is released.
+    -Hotcues. Press an unlit button to set a hotcue. When slip mode is disabled (see #9 below), pressing a hotcue simply jumps to that hotcue. When slip mode is on, hotcues can be previewed on a stopped deck. While previewing a hotcue, press the play button to let the track keep playing after the hotcue is released. Pressing a hotcue while a deck is playing and slip mode is on will jump to the hotcue then jump back to where the track would have been once the last hotcue button is released.
     -Jump 4 beats forward (with quantize enabled)
     -Slip mode. When active, loops and hotcues will only play as long as they are held down. When they are released, the track will jump to where it would have been if the loop or hotcue was not pressed. 
     -Deck shift

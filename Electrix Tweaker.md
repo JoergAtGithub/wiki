@@ -107,8 +107,8 @@ default value.
     -Channel gain for active deck on right side
     -Eject sampler
     -Delete hotcue
-    -Deck shift button. Press to enable [[#vinyl timecode mode]] on the deck active on the left side (press top shift button first, then this button while holding down top shift)
-    -Deck shift button. Press to enable [[#vinyl timecode mode]] on the deck active on the right side (press top shift button first, then this button while holding down top shift)
+    -Deck shift button. Press to enable [[#vinyl timecode mode]] on the deck that is active on the left side (press top shift button first, then this button while holding down top shift)
+    -Deck shift button. Press to enable [[#vinyl timecode mode]] on the deck that is active on the right side (press top shift button first, then this button while holding down top shift)
 
 ## Deck controls
 

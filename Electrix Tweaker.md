@@ -67,7 +67,7 @@ Tweaker).
 
 [[/media/hardware/Tweaker-global-controls.png|Tweaker-global-controls.png]]
 
-    -Scroll through library. Push to load selected track into first stopped deck.
+    -Scroll through library. Press to toggle big library view
     -Scroll up left panel of library
     -Scroll down left panel of library
     -Samplers
@@ -98,7 +98,7 @@ default value.
     -Eject right deck
     -Expand/collapse selected item in left library pane
     -Expand/collapse selected item in left library pane
-    -Scroll through library quickly. Press to toggle big library view
+    -Scroll through library quickly. Push to load selected track into first stopped deck.
     -Headphone gain
     -Headphone cue/master mix in headphones. Press to toggle split cue mode. The blue LED below encoder is lit when split cue mode is enabled.
     -Channel gain for active deck on left side

@@ -187,7 +187,7 @@ The right side of the diagram shows loop mode. The LEDs on the loop move
 length and loop length encoders represent numbers of beats. Center means
 1 beat. Each step to the right doubles the beats and each step to the
 left halves the beats. For example, the default loop length is 4 beats,
-so the center LED and 2 LEDs to the right are lit.
+so the center LED and 2 LEDs to the right are lit (2 x 2 = 4).
 
 ``` 
  -High EQ

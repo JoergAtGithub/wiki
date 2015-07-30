@@ -217,6 +217,6 @@ relative mode, pressing the button with deck shift (\#2) switches to
 constant mode.
 
 4: toggle vinyl control. Turns green when vinyl control is enabled. With
-deck shift pressed, it toggles passthrough mode and turns white.
+deck shift (\#2) pressed, it toggles passthrough mode and turns white.
 Pressing the button while passthrough mode is enabled turns passthrough
 mode off (without toggling whether vinyl control is enabled).

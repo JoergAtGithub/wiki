@@ -73,8 +73,10 @@ attachment point and the headband. Look for headphones with detachable
 cables, metal headbands, and other individually replaceable parts.
 
 In-ear monitors isolate sound better than headphones but are more
-expensive. They may be a sound investment for musicians who play often
-in very loud environments to preserve their hearing.
+expensive. Good DJ headphones can be purchased new for $150-250; IEMs
+with comparable sound quality cost $350-$500. They may be a sound
+investment for musicians who play often in very loud environments to
+preserve their hearing.
 
 These are all just guidelines; research your options and decide what you
 think will work best for the way you want to DJ.

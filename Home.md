@@ -27,7 +27,6 @@ plans.
     on the computer
   - [Command line options](Command%20line%20options)
   - [Music-reactive lighting](MIDI%20for%20light)
-  - [System requirements](System%20requirements)
 
 ## Community Resources
 

@@ -1,5 +1,7 @@
 # Presentation
 
+![http://www.numark.com/images/sized/images/product\_large/dj2go\_angle\_media\_lrg\_01-624x391.jpg](http://www.numark.com/images/sized/images/product_large/dj2go_angle_media_lrg_01-624x391.jpg)
+
 This is the .midi.xml file for the Numark DJ2GO affordable DJ midi
 controller (<http://www.numark.com/product/dj2go>). The file is a
 modification of the Numark NS7 provided with Mixxx 1.10.0 Mac (10.6.x)

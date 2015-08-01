@@ -9,10 +9,8 @@ If you've got a question that's not answered here, please post in the
 ## I can't plug in my headphones and speakers at the same time
 
 This requires either a sound card with 4 (mono) output channels,
-multiple sound cards, or a DJ splitter cable. Nearly all sound cards
-built into computers have only one output pair, so you will need to add
-a second sound card with one or more additional output pairs. See the
-[DJ Hardware Guide](hardware%20compatibility) for more information.
+multiple sound cards, or a DJ splitter cable. See the [DJ Hardware
+Guide](hardware%20compatibility) for more information.
 
 ## I pressed the headphone button but I still hear that deck on the main output
 

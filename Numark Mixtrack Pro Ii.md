@@ -1,6 +1,6 @@
 # Numark Mixtrack Pro II
 
-[[/media/hardware/mixtrack_pro_ii_ortho-624x390.jpg|]]
+[[/media/hardware/mixtrack_pro_ii_ortho-624x390.jpg|mixtrack\_pro\_ii\_ortho-624x390.jpg]]
 
   - [Manufacturer's product
     page](http://www.numark.com/product/mixtrack-pro-ii)

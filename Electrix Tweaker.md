@@ -1,6 +1,7 @@
 \======= Electrix Tweaker======
 ![http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg](http://electrixpro.com/wp-content/uploads/2014/09/Tweaker-Angle-570x380.jpg)
 
+  - [Manufacturer's website](http://electrixpro.com/)
   - [Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
   - [GitHub
     branch](https://github.com/Be-ing/mixxx/tree/tweaker_mapping):
@@ -78,6 +79,10 @@ Tweaker).
     * Samples will play with their volume proportional to how much force was used to strike the button. You can adjust the sensitivity or disable the velocity sensitivity (and make them work as on/off switches) by adjusting options at the top of the JavaScript file in a text editor.
     -Crossfader
 
+  
+  
+  
+  
   
   
 \==== Top shift layer =====

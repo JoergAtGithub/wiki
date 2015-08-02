@@ -3,6 +3,9 @@
 [[/media/vci-300-product-shoot.jpg|]] Image (c)
 [Vestax](http://www.vestax.com)
 
+  - \[[http://mixxx.org/forums/viewtopic.php?f=7\&t=2596|Forum](http://mixxx.org/forums/viewtopic.php?f=7&t=2596%7CForum)
+    thread\]\]
+
 Vestax is out of business.
 
 The VCI-300 is a dedicated USB MIDI controller. It also comes with a
@@ -13,11 +16,11 @@ and a set of headphones.
 In depth-review:
 [www.proaudiostar.com](http://www.proaudiostar.com/vci-300-mkii-in-depth-review)
 
-#### Differences VCI-300 to VCI-300MKII
+## Differences between VCI-300 and VCI-300MKII
 
 In 2010 Vestax made changes to the original VCI-300 that improved the
 controller. AFAIK there were <span class="underline">no</span> changes
-in the Midi mapping.
+in the MIDI mapping.
 
 1.  **Volume Boost (Gain Boost)**
 
@@ -70,15 +73,13 @@ in the Midi mapping.
   - 1/8 inch headphone connection along with standard 1/4 inch
     connection.
 
-#### Vestax VCI-300 Midi mapping for Mixxx
+# Mapping description
 
 [[/media/vestax-vci-300-overview.png|]] Image (c)
 [Vestax](http://www.vestax.com)
 
 Mixxx 1.11 support the VCI-300 out of the box. The mapping for Mixxx
-closely resemble the original to make the transition easy. Check the
-Mixxx forum for support and the latest updates:
-<http://mixxx.org/forums/viewtopic.php?f=7&t=2596>.
+closely resemble the original to make the transition easy.
 
 [Version 2013-10-12](http://www.mixxx.org/forums/viewtopic.php?f=7&t=4021&p=20070#p20070)
 

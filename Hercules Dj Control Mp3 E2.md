@@ -340,6 +340,8 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 #### Master/Headphones/Microphone
 
+[[/media/hercules-mp3e2-schema-masterheadmicro.jpg|]]
+
 | Function                                                          | Control                   | number |
 | ----------------------------------------------------------------- | ------------------------- | ------ |
 | Microphone TalkOver                                               | Down Arrow                | 8      |

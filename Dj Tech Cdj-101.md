@@ -1,6 +1,6 @@
 # DJ Tech CDJ 101
 
-{{<http://ecx.images-amazon.com/images/I/816hEFla4qL._SX522_.jpg>
+![http://ecx.images-amazon.com/images/I/816hEFla4qL.\_SX522\_.jpg](http://ecx.images-amazon.com/images/I/816hEFla4qL._SX522_.jpg)
 
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=3693)
 

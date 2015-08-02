@@ -2,11 +2,16 @@
 
 [[/media/hardware/hercules_dj_console_rmx.jpg|]]
 
+  - [Manufacturer's product
+    page](http://www.hercules.com/us/DJ-Music/bdd/p/62/dj-console-rmx/)
+
 The Hercules DJ Console RMX is a USB MIDI controller with a built in
 sound card. It is compatible with Mixxx versions 1.6.1+herc and later.
 Both audio and MIDI works in Linux (from kernel \~2.6.27+), Windows (XP,
 Vista, 7), and MAC OS X (10.4.11 (Tiger)/ 10.5.x (Leopard)/ 10.6.x (Snow
-Leopard) 32-bit)
+Leopard) 32-bit). It has been discontinued in favor of the [Hercules DJ
+Console RMX 2](Hercules%20DJ%20Console%20RMX%202) which is USB MIDI
+class compliant and requires no special driver.
 
 ## Audio
 

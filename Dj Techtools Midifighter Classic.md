@@ -1,4 +1,4 @@
-# MIDI Fighter Classic
+# DJ TechTools MIDI Fighter Classic
 
 ![http://djtechtoolscom.c.presscdn.com/wp-content/uploads/2012/11/midi-fighter-classic-sale-total.jpg](http://djtechtoolscom.c.presscdn.com/wp-content/uploads/2012/11/midi-fighter-classic-sale-total.jpg)
 

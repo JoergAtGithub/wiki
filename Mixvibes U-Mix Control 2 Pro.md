@@ -5,8 +5,6 @@
   - [Manufacturer's product
     page](http://www.mixvibes.com/products/u-mix-control-pro-2)
 
-## Description:
-
 IMHO the U-Mix Control Pro 2 offers an unbeatable value for its low
 price, which matches most of the professional DJ-Needs. It's a MIDI DJ
 controller with an **internal soundcard** and **two Inputs** for
@@ -15,9 +13,9 @@ DJs seeking a mobile, compact, sturdy DJing solution. It offers also a
 **changeable** Cross-fader, **adjustable** Cross-Fader **Curve** and
 **individual Touch-Level-Sensors**, which are normally only seen at
 triple-priced devices.  
-The **"U-Mix Control Pro"** differs only in Cue-Button-Labels. The
-**"U-Mix Control 2"** (without "Pro" = internal Soundcard) also. Both
-should work fine with this MIDI-Mapping.
+The U-Mix Control **Pro** differs only in Cue-Button-Labels. The U-Mix
+Control 2 (without "Pro" = internal soundcard) also. Both should work
+fine with this MIDI mapping.
 
 ### More Information
 

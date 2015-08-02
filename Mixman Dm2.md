@@ -2,7 +2,8 @@
 
 ![http://www.mixman.com/products/images/dm2/dm2.gif](http://www.mixman.com/products/images/dm2/dm2.gif)
 
-Link to product website: <http://www.mixman.com/products/dm2.html>
+  - [Manufacturer's product
+    page](http://www.mixman.com/products/dm2.html)
 
 ## Mixman under Linux
 

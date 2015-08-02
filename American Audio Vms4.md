@@ -1,8 +1,12 @@
 # American Audio VMS4
 
-[[/media/hardware/american_audio/vms4_angle.jpg|]]
+[[/media/hardware/american_audio/vms4_angle.jpg|vms4\_angle.jpg]]
 
-Link to the website: <http://www.vms4dj.com/>
+  - [Manufacturer's website](http://www.adj.com/vms4-1)
+
+The VMS4 has issues with the sound card. The impedence of the microphone
+input is off and the output volume is very low. The VMS4.1 is the same
+controller with a better sound card that fixes these issues.
 
 ## Setup instructions
 

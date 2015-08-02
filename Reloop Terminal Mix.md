@@ -1,31 +1,17 @@
 # Reloop Terminal Mix Series
 
-  - [See the Terminal Mix 2 on Reloop's web
-    site](http://www.reloop.com/reloop-terminal-mix-2)
-  - [See the Terminal Mix 4 on Reloop's web
-    site](http://www.reloop.com/reloop-terminal-mix-4)
-
-## 1.11.x preset
-
-Both of the models in the series use the same preset.
-
-The latest official preset (mapping and script) file are in the 1.11
-release branch and can be downloaded from here:
-
-  - [Reloop Terminal
-    Mix 2-4.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.m-20120608214706-htezt5mx6gyjoiav-1/Reloop%20Terminal%20Mix%202-4.midi.xml)
-  - [Reloop Terminal
-    Mix 2-4.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.11.x/download/head:/reloopterminalmix4.j-20120608214709-j23k072oly9sgz8s-1/Reloop%20Terminal%20Mix%202-4.js)
-
-# User Guide
-
-This guide explains how the Terminal Mix is mapped by default in Mixxx.
-
 [[/media/hardware/reloop/terminalmix2_top.jpg|Terminal Mix 2]] ![Terminal Mix
 4](/hardware/reloop/terminalmix4_top.jpg)
 
 *Images courtesy of [Reloop](http://www.reloop.com/). Click on either
 for a larger version.*
+
+  - [See the Terminal Mix 2 on Reloop's web
+    site](http://www.reloop.com/reloop-terminal-mix-2)
+  - [See the Terminal Mix 4 on Reloop's web
+    site](http://www.reloop.com/reloop-terminal-mix-4)
+
+Both of the models in the series use the same preset.
 
 ***Easy customization:*** We have provided the following customization
 variables at the top of the script you can set to your liking:

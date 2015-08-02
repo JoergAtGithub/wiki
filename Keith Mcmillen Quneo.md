@@ -3,6 +3,9 @@
 [[/media/hardware/kmi_quoneo/quneo.jpg|]] Images (c)
 [KMI](http://www.keithmcmillen.com/)
 
+  - [Manufacturer's product
+    page](http://www.keithmcmillen.com/products/quneo/)
+
 Keith McMillen QuNeo is a USB multi purpose pad controller and features
 tactile pads, sliders, rotary sensors and switches. Works with USB, MIDI
 or OSC and will communicate most music software environments right out
@@ -29,9 +32,6 @@ of the box.
   - Advanced users and programmers can use the development kit and API
     to create their own code to respond to QuNeo's sensor data. Hack
     away to control your world in ways never before possible\!
-
-Product Page:
-[www.keithmcmillen.com](http://www.keithmcmillen.com/QuNeo/overview)
 
 #### Keith McMillen QuNeo Factory Midi mapping v1.0 for Mixxx 1.10+
 

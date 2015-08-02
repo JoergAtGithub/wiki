@@ -1,22 +1,12 @@
 # Numark Mixtrack Pro
 
-[[/media/numark_mixtrackpro.jpg|]]
+[[/media/numark_mixtrackpro.jpg|]] \*[Manufacturer's product
+page](http://www.numark.com/product/mixtrackpro)
 
-Manufacturer link: <http://www.numark.com/product/mixtrackpro>
-
-# Controller description
-
-## Technically
-
-The Numark Mixtrack Pro is a fully compliant MIDI controller. It is
-interfaced with a computer through a single USB port and **it include a
-4 channel sound card**. MIXTRACK PRO has all the inputs and outputs
-you’ll need for your headphones, speakers, and a mic.
-
-The MIXTRACK PRO is a class-compliant audio device. This means it
-doesn't require any additional drivers to be installed in order for your
-computer to recognize it. I probe in Ubuntu Linux 10.04 64 bits and
-Windows 7 64 bits, it work plug and play.
+This is hte same as the [Numark Mixtrack](Numark%20Mixtrack) with the
+addition of an integrated sound card. This product has been discontinued
+and succeeded by the [Numark Mixtrack
+Pro 3](Numark%20Mixtrack%20Pro%203).
 
 # Numark Mixtrack Support in Mixxx
 

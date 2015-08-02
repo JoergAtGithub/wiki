@@ -9,4 +9,9 @@ This controller has been discontinued. A similar product, the [DJ
 TechTools MIDI Fighter 3D](DJ%20TechTools%20MIDI%20Fighter%203D), is
 still available from [DJ
 TechTools](https://store.djtechtools.com/products/midi-fighter-3d) and
-includes a 3D motion sensor.
+includes a 3D motion sensor. The [DJ TechTools MIDI Fighter
+Twister](DJ%20TechTools%20MIDI%20Fighter%20Twister) is another similar
+product that features a 4x4 grid of infinitely rotating encoders with
+push buttons surrounded by programmable LED rings and is also available
+from [DJ
+TechTools](https://store.djtechtools.com/products/midi-fighter-twister).

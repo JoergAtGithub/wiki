@@ -1,5 +1,5 @@
 # Evolution X-Session
 
-![http://www.muzikus.cz/save/db\_images/3287](http://www.muzikus.cz/save/db_images/3287)
+![http://medias.audiofanzine.com/images/normal/evolution-x-session-uc-17-429919.jpeg](http://medias.audiofanzine.com/images/normal/evolution-x-session-uc-17-429919.jpeg)
 
 This product has been discontinued.

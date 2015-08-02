@@ -1,6 +1,7 @@
 # Eks Otus
 
 ![http://one.dj/eks-legacy/EKS-DOWNLOADS\_files/otus.jpg](http://one.dj/eks-legacy/EKS-DOWNLOADS_files/otus.jpg)
+
 Eks is out of business.
 
 ## Linux

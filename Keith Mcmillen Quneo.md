@@ -1,7 +1,8 @@
 ### Keith McMillen QuNeo
 
-[[/media/hardware/kmi_quoneo/quneo.jpg|]] Images (c)
-[KMI](http://www.keithmcmillen.com/)
+[[/media/hardware/kmi_quoneo/quneo.jpg|]]
+
+Images (c) [KMI](http://www.keithmcmillen.com/)
 
   - [Manufacturer's product
     page](http://www.keithmcmillen.com/products/quneo/)

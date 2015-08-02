@@ -4,3 +4,5 @@
 
   - [Manufacturer's product
     page](http://www.tascam.com/products/us-428.html)
+
+This product has been discontinued.

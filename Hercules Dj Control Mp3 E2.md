@@ -288,6 +288,8 @@ There is soft takeover after deck switch (1/3 or 2/4) to prevent wide parameter 
 
 #### Shift / Supershift
 
+[[/media/hercules-mp3e2-schema-shift.jpg|]]
+
 <table>
 <thead>
 <tr class="header">

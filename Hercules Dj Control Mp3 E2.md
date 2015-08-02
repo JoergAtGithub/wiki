@@ -450,9 +450,11 @@ Loop/Fx button to switch to hotcue mode.*
 | If hotcue X is set, seeks the player to hotcue X's position. If hotcue X is not set, sets hotcue X to the current play position. | 1/2/3/4 buttons         | 11     |
 | If hotcue X is set, clears its hotcue status.                                                                                    | Shift + 1/2/3/4 buttons | 11     |
 
-##### Loops
-
-[[/media/hercules-mp3e2-schema-loops.jpg|]]
+  
+  
+  
+  
+\==Loops == [[/media/hercules-mp3e2-schema-loops.jpg|]]
 
 *Need to be in Loop mode (button Loop/Fx (4) turned off). If not, press
 Loop/Fx button to switch to Loop mode.*

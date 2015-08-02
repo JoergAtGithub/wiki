@@ -5,7 +5,7 @@
   - [Manufacturer's product
     page](http://www.enterthesystem.com/system3/scs3m/)
 
-This guide explains how the SCS.3m is mapped by default in Mixxx.
+# Mapping description
 
 The left side of the controller controls deck 1. The right side is for
 deck 2. We'll walk through the controller from top to bottom and explain

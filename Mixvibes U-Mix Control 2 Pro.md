@@ -4,6 +4,7 @@
 
   - [Manufacturer's product
     page](http://www.mixvibes.com/products/u-mix-control-pro-2)
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=4892)
 
 IMHO the U-Mix Control Pro 2 offers an unbeatable value for its low
 price, which matches most of the professional DJ-Needs. It's a MIDI DJ
@@ -34,10 +35,8 @@ fine with this MIDI mapping.
 
 <http://www.youtube.com/watch?v=EkYBCoDb8Kk>
 
-### Actual Mapping: V1.0.0
+### Mapping description
 
-<http://mixxx.org/forums/viewtopic.php?f=7&t=4892>  
-  
 **<span class="underline">Works perfectly with Mixxx as normally
 expected</span>**
 
@@ -58,7 +57,7 @@ expected</span>**
     7.  Jog (Keylock)
     8.  Bend
 
-**<span class="underline">Special Funktions</span>**
+**<span class="underline">Special Functions</span>**
 
   - BPM-Tap: Press "Shift" + "Sync"
   - Keylock: Press "Jog"

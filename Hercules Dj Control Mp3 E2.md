@@ -326,6 +326,8 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 #### Library
 
+[[/media/hercules-mp3e2-schema-library.jpg|]]
+
 | Function                                                                    | Control                       | number |
 | --------------------------------------------------------------------------- | ----------------------------- | ------ |
 | Select prev/next playlist                                                   | Supershift + Deck A Jog Wheel | 16     |

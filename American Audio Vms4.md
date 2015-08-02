@@ -1,4 +1,4 @@
-# American Audio VMS4
+# American Audio VMS4/4.1
 
 [[/media/hardware/american_audio/vms4_angle.jpg|vms4\_angle.jpg]]
 

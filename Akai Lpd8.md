@@ -4,5 +4,3 @@
 
   - [Manufacturer's product page](http://www.akaipro.com/product/lpd8)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=4477)
-
-\======= Default Mixxx mapping ======

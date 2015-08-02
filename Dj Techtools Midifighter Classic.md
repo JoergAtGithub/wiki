@@ -5,5 +5,8 @@
 The default Mixxx mapping has the buttons mapped to hotcues 1-8 for
 decks 1 & 2.
 
-This controller has been succeeded by the [DJ TechTools MIDI
-Fighter 3D](DJ%20TechTools%20MIDI%20Fighter%203D).
+This controller has been discontinued. A similar product, the [DJ
+TechTools MIDI Fighter 3D](DJ%20TechTools%20MIDI%20Fighter%203D), is
+still available from [DJ
+TechTools](https://store.djtechtools.com/products/midi-fighter-3d) and
+includes a 3D motion sensor.

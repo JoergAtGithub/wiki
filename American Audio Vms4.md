@@ -113,10 +113,8 @@ side controls Deck 1 and the right side controls Deck 2.*
 
 ### Sample section
 
-// **1.9.x:** This section is currently unused. //
-
-**1.10.x:** The left side of the controller controls Sampler 1, and the
-right, Sampler 2.
+The left side of the controller controls Sampler 1, and the right,
+Sampler 2.
 
   - **Select knob**
   - Rotate to move the highlight in the library.

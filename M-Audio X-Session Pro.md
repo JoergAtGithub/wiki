@@ -1,6 +1,5 @@
 # M-Audio - X-Session Pro
 
-![http://www.m-audio.com/images/global/media\_hqpics/xsessionpro\_angle\_left.jpg](http://www.m-audio.com/images/global/media_hqpics/xsessionpro_angle_left.jpg)
+![http://www.sweetwater.com/images/items/750/XSessionPro-large.jpg](http://www.sweetwater.com/images/items/750/XSessionPro-large.jpg)
 
-Link to the website:
-<http://www.m-audio.com/products/en_us/XSessionPro-main.html>
+This device has been discontinued.

@@ -352,6 +352,8 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 
 #### Sampler
 
+[[/media/hercules-mp3e2-schema-sampler.jpg|]]
+
 | Function                                                                    | Control             | number |
 | --------------------------------------------------------------------------- | ------------------- | ------ |
 | Loads the current highlighted track into the corresponding sampler (1 or 2) | Shift + Load A/B    | 18     |
@@ -363,6 +365,8 @@ Press &amp; Hold Automix, then press &amp; Hold Scratch, then press correspondin
 #### Decks / Channels
 
 ##### Playing
+
+[[/media/hercules-mp3e2-schema-deck-playing.jpg|]]
 
 <table>
 <thead>
@@ -422,6 +426,8 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 
 ##### Volume / Equalizer / Effects
 
+[[/media/hercules-mp3e2-schema-deck-voleffects.jpg|]]
+
 | Function                                                                    | Control                    | number |
 | --------------------------------------------------------------------------- | -------------------------- | ------ |
 | Controls the deck output volume, with soft takeover on deck switch.         | Deck volume slider         | 17     |
@@ -434,6 +440,8 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 
 ##### Hotcues
 
+[[/media/hercules-mp3e2-schema-hotcues.jpg|]]
+
 *Need to be in Hotcue mode (button Loop/Fx (4) lit up). If not, press
 Loop/Fx button to switch to hotcue mode.*
 
@@ -443,6 +451,8 @@ Loop/Fx button to switch to hotcue mode.*
 | If hotcue X is set, clears its hotcue status.                                                                                    | Shift + 1/2/3/4 buttons | 11     |
 
 ##### Loops
+
+[[/media/hercules-mp3e2-schema-loops.jpg|]]
 
 *Need to be in Loop mode (button Loop/Fx (4) turned off). If not, press
 Loop/Fx button to switch to Loop mode.*
@@ -465,6 +475,8 @@ Loop/Fx button to switch to Loop mode.*
 | Half loop                      | Shift + Pitchbend -   | 1      |
 
 ##### Pitch / Syncing
+
+[[/media/hercules-mp3e2-schema-pitchsync.jpg|]]
 
 <table>
 <thead>

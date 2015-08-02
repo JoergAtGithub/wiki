@@ -4,3 +4,5 @@
 
   - [Manufacturer's product
     page](http://www.korg.com/us/products/controllers/nanokontrol2/)
+
+# Default Mixxx mapping

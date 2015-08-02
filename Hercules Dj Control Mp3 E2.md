@@ -35,14 +35,17 @@ Enable the controller in Ubuntu by following the steps below:
 
 1.  Remove the hdjmod-dkms driver if installed: `sudo apt-get remove
     hdjmod-dkms`
-2.  Add the Mixxx v1.11 repositories (use the mixxxbetas ppa until v1.11
-    final is released). `sudo add-apt-repository ppa:mixxx/mixxxbetas
-    sudo apt-get update` 
+2.  Add the Mixxx v1.11 or v1.12beta repositories (use the mixxxbetas
+    ppa for 1.12 beta version until v1.12 final is released). `sudo
+    add-apt-repository ppa:mixxx/mixxx
+    sudo apt-get update` or `sudo add-apt-repository
+    ppa:mixxx/mixxxbetas
+    sudo apt-get update`
 3.  Install Mixxx (remove older version prior to install): `sudo apt-get
     install mixxx`
 4.  Plug-in the controller and run mixxx
 5.  Go to Preferences, select and enable "Hercules .." device listed
-    under Controllers (do not select Midi Through\!)
+    under Controllers (do not select Midi Though\!)
 
 If the device is still not visible as a separate entry under
 "Controllers" you need to modify the device permissions using udev

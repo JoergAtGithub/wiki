@@ -3,8 +3,7 @@
 [[/media/vci-300-product-shoot.jpg|]] Image (c)
 [Vestax](http://www.vestax.com)
 
-  - \[[http://mixxx.org/forums/viewtopic.php?f=7\&t=2596|Forum](http://mixxx.org/forums/viewtopic.php?f=7&t=2596%7CForum)
-    thread\]\]
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=2596)
 
 Vestax is out of business.
 

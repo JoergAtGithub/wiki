@@ -1,9 +1,8 @@
-# Vestax - VCI-100
+# Vestax VCI-100
 
 [[/media/vci100_45_big.jpg|]]
 
-Manufacturer link:
-<http://www.vestax.com/v/products/detail.php?cate_id=33&parent_id=8>
+Vestax is out of business.
 
   - **1.1 Firmware**
   - stock firmware from manufacturer

@@ -1,4 +1,6 @@
+# Behringer BCD3000
+
 [[/media/hardware/behringer_bcd3000.png|]]
 
-Link to website: [Behringer
-BCD3000](http://www.behringer.com/EN/Products/BCD3000.aspx)
+  - [Manufacturer's product
+    page](http://www.behringer.com/EN/Products/BCD3000.aspx)

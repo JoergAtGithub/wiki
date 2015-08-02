@@ -1,5 +1,5 @@
 # FaderFox DJ2
 
-![http://faderfox.de/assets/images/DJ2\_side\_1.jpg](http://faderfox.de/assets/images/DJ2_side_1.jpg)
+![http://www.faderfox.de/images/DJ2%20front%202-2.jpg](http://www.faderfox.de/images/DJ2%20front%202-2.jpg)
 
-Link to the website: <http://faderfox.de/html/dj2_product_page.html>
+  - [Manufacturer's website](http://www.faderfox.de/dj2.html)

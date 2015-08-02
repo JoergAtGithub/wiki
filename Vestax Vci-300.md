@@ -1,15 +1,14 @@
-### Vestax VCI-300 DJ Controller
+### Vestax VCI-300
 
 [[/media/vci-300-product-shoot.jpg|]] Image (c)
 [Vestax](http://www.vestax.com)
+
+Vestax is out of business.
 
 The VCI-300 is a dedicated USB MIDI controller. It also comes with a
 built in audio interface with standard 4-in/4-out and headphone
 connection, which means all you need for DJing is the VCI-300, a laptop
 and a set of headphones.
-
-Product Page:
-[www.vestax.com](http://www.vestax.com/v/products/detail.php?cate_id=117&parent_id=8)
 
 In depth-review:
 [www.proaudiostar.com](http://www.proaudiostar.com/vci-300-mkii-in-depth-review)

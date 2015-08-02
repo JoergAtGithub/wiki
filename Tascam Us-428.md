@@ -1,5 +1,6 @@
-# Tascam - US-428
+# Tascam US-428
 
-![http://www.tascam.com/i-138-17-64-0-C64C3216.jpg](http://www.tascam.com/i-138-17-64-0-C64C3216.jpg)
+![http://tascam.com/content/images/universal/product\_detail/316/large/US-428-top.jpg](http://tascam.com/content/images/universal/product_detail/316/large/US-428-top.jpg)
 
-<http://www.tascam.com/products/us-428.html>
+  - [Manufacturer's product
+    page](http://www.tascam.com/products/us-428.html)

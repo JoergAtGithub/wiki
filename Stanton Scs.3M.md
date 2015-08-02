@@ -7,8 +7,6 @@
 
 This guide explains how the SCS.3m is mapped by default in Mixxx.
 
-[[/media/hardware/stantonscs/scs3m_main.png|]]
-
 The left side of the controller controls deck 1. The right side is for
 deck 2. We'll walk through the controller from top to bottom and explain
 the features.

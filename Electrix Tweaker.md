@@ -65,7 +65,7 @@ Tweaker).
 
 ## Global controls
 
-[[/media/hardware/Tweaker-global-controls.png|Tweaker-global-controls.png]]
+[[/media/hardware/Tweaker-global-controls.svg|Tweaker-global-controls.svg]]
 
     -Scroll through library. Press to toggle big library view
     -Scroll up left panel of library
@@ -80,11 +80,8 @@ Tweaker).
 
   
   
-  
-  
-  
 \==== Top shift layer =====
-[[/media/hardware/Tweaker-top-shift.png|Tweaker-top-shift.png]]
+[[/media/hardware/Tweaker-top-shift.svg|Tweaker-top-shift.svg]]
 
 This layer is active while the top shift button (\#1 in the diagram) is
 held down.
@@ -111,7 +108,7 @@ pressing the encoders 7-12 resets them to center.
 
 ## Deck controls
 
-[[/media/hardware/Tweaker-deck-controls.png|Tweaker-deck-controls.png]]
+[[/media/hardware/Tweaker-deck-controls.svg|Tweaker-deck-controls.svg]]
 
 The deck controls are the same on each half of the controller. Which
 deck each side controls can be switched with the deck toggle button,
@@ -141,7 +138,7 @@ the right side of the diagram.
 
 ### Deck shift layer
 
-[[/media/hardware/Tweaker-deck-shift.png|Tweaker-deck-shift.png]]
+[[/media/hardware/Tweaker-deck-shift.svg|Tweaker-deck-shift.svg]]
 
 This layer is active while the yellow deck shift button on that side of
 the controller is held down.
@@ -166,7 +163,7 @@ the controller is held down.
 
 ### Channel encoder layers
 
-[[/media/hardware/Tweaker-encoder-layers.png|Tweaker-encoder-layers.png]]
+[[/media/hardware/Tweaker-encoder-layers.svg|Tweaker-encoder-layers.svg]]
 
 The encoder layer buttons (\#4 and \#8 in the diagram) toggle the
 encoders between EQ and loop layers.
@@ -202,7 +199,7 @@ so the center LED and 2 LEDs to the right are lit (2 x 2 = 4).
 
 ### Vinyl timecode mode
 
-[[/media/hardware/Tweaker-vinyl-mode.png|Tweaker-vinyl-mode.png]]
+[[/media/hardware/Tweaker-vinyl-mode.svg|Tweaker-vinyl-mode.svg]]
 
 Toggle vinyl timecode mode by pressing deck shift (\#2 in the diagram)
 while holding top shift (\#1 in the the diagram). This replaces the

@@ -2,4 +2,4 @@
 
 ![http://www.faderfox.de/images/DJ2%20front%202-2.jpg](http://www.faderfox.de/images/DJ2%20front%202-2.jpg)
 
-  - [Manufacturer's website](http://www.faderfox.de/dj2.html)
+  - [Manufacturer's product page](http://www.faderfox.de/dj2.html)

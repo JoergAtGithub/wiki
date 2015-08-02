@@ -10,8 +10,6 @@ controller with a better sound card that fixes these issues.
 
 ## Setup
 
-*Recommended setup for Mixxx v1.9.0 and up:*
-
 **Important: Mixxx expects the VMS4 to be set to "Post EQ" mode for best
 sound quality.** Do this by holding down the Cue button on Midilog 4
 while powering on the unit. You only need to do this once. (Each time

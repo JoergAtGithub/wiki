@@ -5,9 +5,9 @@
 [Manufacturer's product
 page](http://www.stantondj.com/stanton-controllers-systems/scs3d.html)
 
-[See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
+\======= Mapping description ======
 
-This guide explains how the SCS.3d is mapped by default in Mixxx.
+[See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
 
 [[/media/hardware/stantonscs/scs3d_preset.jpg|]]
 
@@ -54,23 +54,9 @@ variables at the top of the script you can set to your liking:
 <sup>1</sup> Introduced in Mixxx v1.8.0 <sup>2</sup> Introduced in Mixxx
 v1.9.1
 
-Just open the `midi/Stanton-SCS3d-scripts.js` file in your favorite text
-editor (Wordpad works too) and you'll see these variables right near the
-top. Edit & save, then restart Mixxx and enjoy.
-
-**The following were present in 1.7 but are now obsolete:**
-
-  - **scratching**: *All of these values are heavily dependent on your
-    latency setting. Adjust as needed.*
-    1.  **slippage** - Slipperiness of the virtual slipmat when
-        scratching with the circle and slider in Vinyl2 mode. Set this
-        to a number between 0.2 (perfect turntable) and 0.99 (bent
-        record.)
-    2.  **sensitivity** - How much the audio moves for a given circle
-        arc. Set this to a number between 0.01 (slow) to 0.99 (fast)
-    3.  **stoppedMultiplier** - Correction to get the same circle
-        sensitivity when the deck is stopped (set higher for higher
-        latencies, e.g. 10ms = 1.7, 2ms = 1.5.)
+Just open the `controllers/Stanton-SCS3d-scripts.js` file in your
+favorite text editor (Wordpad works too) and you'll see these variables
+right near the top. Edit & save.
 
 ## Mode buttons
 

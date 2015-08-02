@@ -2,62 +2,104 @@
 
 [[/media/hardware/stantonscs/scs3m_angle.jpg|]]
 
-Link to the website: <http://www.enterthesystem.com/system3/scs3m/>
+  - [Manufacturer's product
+    page](http://www.enterthesystem.com/system3/scs3m/)
 
-**[Mixxx user's guide for the SCS.3m](stanton_scs.3m_mixxx_user_guide)**
+This guide explains how the SCS.3m is mapped by default in Mixxx.
 
-## Latest MIDI mapping & script files
+[[/media/hardware/stantonscs/scs3m_main.png|]]
 
-**Stanton's DaRouter is not used with Mixxx. Close it before starting.**
+The left side of the controller controls deck 1. The right side is for
+deck 2. We'll walk through the controller from top to bottom and explain
+the features.
 
-**Instructions for use:**
+## Deck select buttons
 
-1.  Download the files for the applicable version of Mixxx below.
-2.  Save the files into:
+These are used only as modifier buttons in Mixxx for now. Hold them down
+to access different functions for that side of the controller (Deck A/C
+for the left side virtual deck 1, Deck B/D for the right side, deck 2,)
+detailed for each control below.
 
-<!-- end list -->
+## Top horizontal sliders
 
-  - Windows: `C:\Program Files\Mixxx\midi` (technically
-    `%PROGRAMFILES%\Mixxx\midi`)
-  - OS X: `/Applications/Mixxx.app/Contents/Resources/midi`
-  - Linux: `/usr[/local]/share/mixxx/midi`
+These adjust the pitch control.
 
-<!-- end list -->
+  - Touching near the edges will do a temporary pitch bend in that
+    direction.
+  - Hold the current mode button down (EQ/FX) and touch the slider on
+    that side to reset it to 0%.
+  - Hold the applicable Deck select button down when using these sliders
+    to perform fine-grained pitch adjustment.
 
-1.  Plug the controller in and wait for it to settle. (Remember to use
-    its power adapter if you're connecting other devices to it.)
-2.  Start Mixxx
-3.  Open Preferences
-4.  Expand Midi Controllers
-5.  Select the "Stanton SCS.3m" or "USB Audio Device"
-6.  Click the Enabled checkbox in the right pane ("Activate" button on
-    1.7)
-7.  Click the drop-down and choose the "Stanton SCS.3m" mapping
-8.  Click OK and you're good to go. (The controller should initialize
-    and light up.)
+When the Master button is held down:
 
-### 1.8.x
+  - The left slider adjusts the Pre/Main headphone mix
+  - The right slider adjusts Master Balance
+  - Also hold the current mode button and touch the slider on that side
+    to reset it to center
 
-The latest official MIDI mapping and script file are in the 1.8 release
-branch and can be downloaded from here:
+## FX/EQ sliders
 
-  - [Stanton
-    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
-  - [Stanton-SCS3m-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.8.x/download/head:/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
+From left to right, for each side:
 
-#### Quirks
+  - in EQ mode these adjust Low, Mid, and High frequency filters
+  - in FX mode these adjust Depth, Delay, and LFO for the flanging
+    effect
 
-  - Only one side's LEDs will react to Flanger controls at a time
+Hold down the current mode button (FX/EQ) and touch one of these sliders
+to reset it to center.
 
-### 1.7.x
+## FX/EQ mode buttons
 
-The latest official MIDI mapping and script file are in the 1.7 release
-branch and can be downloaded from here:
+Press these to choose what the sliders above them control. (See above.)
 
-  - [Stanton
-    SCS.3m.midi.xml](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs.3m.midi.x-20100210155925-z0zz1677c49zvy6q-1/Stanton%20SCS.3m.midi.xml)
-  - [Stanton-SCS3d-scripts.js](http://bazaar.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2/download/head%3A/stantonscs3mscripts.-20100210155934-76qul1iqhrfywjsp-1/Stanton-SCS3m-scripts.js)
+  - Hold Deck and press FX to toggle the flange effect for that deck
+  - Hold Deck and press EQ to auto-adjust the pitch to sync the BPM on
+    this deck with the other one (assuming it was detected correctly on
+    both)
 
-#### Quirks
+## Volume sliders
 
-  - Only one side's LEDs will react to Flanger controls at a time
+These adjust the channel volume as on a traditional mixer.
+
+  - Holding Deck causes these to adjust the pre-fader gain for the deck
+
+When the Master button is held down:
+
+  - The left slider adjusts the Headphone volume
+  - The right slider adjusts Master volume
+
+## Soft buttons
+
+From top to bottom on both sides:
+
+  - Rewind
+  - Fast forward
+  - Cue
+  - Play
+
+Headphone buttons toggle that deck in the headphone mix.
+
+## Cross-fader
+
+Adjusts the cross-fade between the virtual decks
+
+  - Needle drop function: Hold a Deck button to use the cross-fader
+    strip to search through the track loaded on that deck
+
+## VU Meters
+
+These normally show the pre-fader signal for the respective deck.
+
+  - When holding down the Master button, they show the stereo master
+    output meters: left side for the left channel, right side for the
+    right channel.
+
+**NOTE:** The LEDs are calibrated to the VU meters on-screen. If you see
+a red LED flicker, <span class="underline">you are clipping</span> and
+need to reduce the volume or gain to avoid distorted sound and/or
+speaker damage.
+
+## 
+
+*Images courtesy of Stanton Magnetics, Inc.*

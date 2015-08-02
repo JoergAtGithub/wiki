@@ -6,7 +6,7 @@
   - [Manufacturer's User
     Guide](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf)
   - [Blank template
-    diagrams](www.allen-heath.com/media/Xone+K2+Blank+Overlays.zip)
+    diagrams](http://www.allen-heath.com/media/Xone+K2+Blank+Overlays.zip)
 
 The Allen & Heath Xone:K2 is set up like a 4 channel mixer plus a grid
 of buttons. It also has an integrated sound card. The [Allen & Heath

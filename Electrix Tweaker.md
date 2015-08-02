@@ -12,6 +12,8 @@
     to try the latest updates
   - [Manufacturer's
     manual](http://electrixpro.com/wp-content/uploads/2014/10/Tweaker_User_Manual.pdf)
+  - [Blank template
+    image](https://www.google.com/search?q=lib/exe/detail.php/hardware:tweaker-blank-template.svg&btnI=lucky)
 
 The Electrix Tweaker is a flexible, well-built MIDI controller. It does
 not take up space with jog wheels; instead, there are a plethora of

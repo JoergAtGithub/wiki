@@ -6,4 +6,5 @@
 
 [DJ Tech](http://www.djtechpro.com/eng/index.php) is not to be confused
 with [DJ TechTools](http://djtechtools.com/), the makers of the MIDI
-Fighter series, Chroma Cables, and Chroma Caps.
+Fighter series, Chroma Cables, and Chroma Caps. There is no (longer) a
+product page for this discontinued device.

@@ -1,8 +1,7 @@
 # Reloop Digital Jockey 2 Controller Edition
 
-![http://www.reloopdj.com/images/product\_images/popup\_images/222725\_Reloop\_TP.jpg](http://www.reloopdj.com/images/product_images/popup_images/222725_Reloop_TP.jpg)
+![http://www.reloop.com/media/catalog/product/cache/9/thumbnail/9df78eab33525d08d6e5fb8d27136e95/2/2/4/224091\_Reloop\_TP.png](http://www.reloop.com/media/catalog/product/cache/9/thumbnail/9df78eab33525d08d6e5fb8d27136e95/2/2/4/224091_Reloop_TP.png)
 
-[High Resolution Overhead
-Image](http://www.reloopdj.com/media/products/222725_Reloop_TP.jpg)
-[Reloop Product
-Page](http://www.reloopdj.com/product_info.php/info/p473_Reloop-Digital-Jockey-2-Controller-Edition.html/XTCsid/c46a486d5d46002495921e6d929675ce)
+  - [Manufacturer's product
+    page](http://www.reloop.com/reloop-digital-jockey-2-ce)
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=1226)

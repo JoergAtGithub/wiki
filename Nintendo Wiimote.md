@@ -2,4 +2,6 @@
 
 ![https://storemedia.nintendo.com/ui/images/devices/wiiu/parts-accessories/wiiu-whiteremoteplus-lifestyle-320x240.png](https://storemedia.nintendo.com/ui/images/devices/wiiu/parts-accessories/wiiu-whiteremoteplus-lifestyle-320x240.png)
 
-The Wiimote is a motion-sensitive game console controller.
+  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=3939)
+
+The Wiimote is a motion-sensitive wireless game console controller.

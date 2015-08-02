@@ -3,7 +3,7 @@
 [[/media/hardware/stantonscs/scs3m_angle.jpg|]]
 
   - [Manufacturer's product
-    page](http://www.enterthesystem.com/system3/scs3m/)
+    page](http://www.stantondj.com/stanton-controllers-systems/scs3m.html)
 
 # Mapping description
 

@@ -70,7 +70,7 @@ Old Mapping included in Mixxx up to version 1.11 can be found
 ## Mapping for Mixxx 1.12+ (by knob/button)
 
 The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you
-don't have to download or install nothing. This mapping allow you to
+don't have to download or install anything. This mapping allow you to
 manipulate 4 decks, 2 at a time, switching Deck A (left) between Channel
 1 and 3 and Deck B (right) between Channel 2 and 4.
 

@@ -3,6 +3,7 @@
 
   - [Manufacturer's product
     page](http://www.allen-heath.com/ahproducts/xonek2/)
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=3776)
   - [Manufacturer's User
     Guide](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf)
   - [Blank template

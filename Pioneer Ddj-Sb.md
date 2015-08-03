@@ -8,4 +8,5 @@
  *[[https://github.com/mixxxdj/mixxx/pull/663|GitHub pull request]]
 ```
 
-The Pioneer DDJ-SB is Pioneer's cheapest all-in-one controller
+The Pioneer DDJ-SB is Pioneer's cheapest all-in-one controller. It is
+available with a black, blue, red, or silver finish.

@@ -122,8 +122,8 @@ around the name of your controller in the Hardware Guide, for example
 \[\[My Controller\]\]. Save the wiki page, then click on the red link to
 create the new page. Add a picture of the controller (use the syntax
 {{URL to picture}} to embed a picture), a link to the manufacturer's
-website, a brief description, and a link to the forum thread, and links
-to some reviews of the controller.
+website, a brief description, a link to the forum thread, and links to
+some reviews of the controller.
 
 When you are ready to submit your mapping for inclusion in Mixxx, make a
 pull request on GitHub. See the [Using Git](Using%20Git) wiki page for

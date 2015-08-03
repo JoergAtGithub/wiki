@@ -1,20 +1,3 @@
-**Mixxx Contacts**
-
-[mixxx.org](http://mixxx.org)
-
-[Get Mixxx\!](http://mixxx.org/download.php)
-
-[Mixxx Forums](http://mixxx.org/forums/)
-
-[Mixxx Launchpad bugs](https://bugs.launchpad.net/mixxx)
-
-[Mixxx Wiki](http://mixxx.org/wiki/)
-
-[\#mixxx on freenode](irc://irc.freenode.net/#mixxx) IRC
-
-[Mixxx-devel mailing
-list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-
 ## Getting Involved with Mixxx
 
 You want to make Mixxx better, but what can you do?
@@ -33,20 +16,20 @@ You want to make Mixxx better, but what can you do?
 
 ## Code it\!
 
-The most direct way to help Mixxx is through coding - patches that fix
-bugs are welcomed with open arms (attach them to a [LP bug
-report](http://bugs.launchpad.net/mixxx) or send them to the [mailing
-list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)). Mixxx
-is written in C++ and makes extensive use of the
-[Qt](http://www.qtsoftware.com/) libraries, which make C++ a lot more
-like Java than C.
+The most direct way to help Mixxx is through coding. Patches that fix
+bugs are welcomed with open arms. Mixxx is written in C++ and makes
+extensive use of the [Qt](http://www.qtsoftware.com/) libraries, which
+make C++ more like Java than C.
 
-Minor feature enhancements can be sent to the [mailing
-list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel).
+See [Using Git](Using%20Git) for how to get your changes included in
+Mixxx.
 
-Bigger changes can be done by [creating a fork](using_git) on
-[Git](https://github.com/mixxxdj/mixxx) and then submitting a pull
-request when the changes reach a stable state.
+If you have some programming experience but don't know C++, working on
+Mixxx can be a great way to start learning C++. Take a look at the
+[Learning Resources](Learning%20Resources) page. If you do not already
+use one, it is a lot easier to work on a huge C++ program like Mixxx
+with an IDE such as KDevelop or Eclipse than a text editor such as Kate
+or GEdit.
 
 The best way to get familiar with the code base is to tackle some of the
 [easy bugs that can be fixed in a

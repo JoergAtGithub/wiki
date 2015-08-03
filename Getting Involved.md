@@ -38,7 +38,7 @@ weekend](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-impor
 And here's a [list of wishlist
 bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=NEW&field.status%3Alist=EXPIRED&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.status%3Alist=INPROGRESS&field.status%3Alist=INCOMPLETE_WITH_RESPONSE&field.status%3Alist=INCOMPLETE_WITHOUT_RESPONSE&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_no_branches.used=&field.has_blueprints.used=&field.has_no_blueprints.used=&search=Search).
 These are things that people have requested be added to Mixxx.
-Completing any of these will make someone's day (or alot of people's
+Completing any of these will make someone's day (or a lot of people's
 year, depending on the bug\!)
 
 **So you're somewhat technical but not a C++ coder, what else can you

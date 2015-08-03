@@ -114,25 +114,26 @@ your changes work. Please prefix your git commit messages with the name
 of your controller so others can easily tell what the commits are for
 after your changes are merged. Post [on the
 forum](http://mixxx.org/forums/viewforum.php?f=7) early so users can
-find your mapping and give feedback as you develop it. When you are
-ready to submit your mapping for inclusion in Mixxx, make a pull request
-on GitHub. See the [Using Git](Using%20Git) wiki page for more
-information.
-
-Once your mapping has been accepted, please update the relevant tables
-in the [DJ Hardware Guide](hardware%20compatibility) and make a wiki
-page for your mapping. To make a wiki page, list your controller on the
-Hardware Guide with the name surrounded by double brackets, for example
+find your mapping and give feedback as you develop it. Also, list your
+controller on the [DJ Hardware
+Guide](hardware%20compatibility#mappings%20in%20development) and start a
+wiki page for your controller. To make a wiki page, put double brackets
+around the name of your controller in the Hardware Guide, for example
 \[\[My Controller\]\]. Save the wiki page, then click on the red link to
-create the new page. On that new wiki page, put a picture of the
-controller at the top with a brief description, a link to the
-manufacturer's website, and compatibility information for GNU/Linux, Mac
-OS X, and Windows. Please link to some reviews of the device too. Then,
-describe the mapping with labeled diagrams. If there is no diagram
-readily available, ask the manufacturer for one. If they do not provide
-one, take pictures of your device and label them. Upload diagrams and/or
-pictures by going to the [Media Manager](?do=media) at the top right of
-any wiki page and upload your file(s) to the "hardware" namespace.
+create the new page. Add a picture of the controller (use the syntax
+{{URL to picture}} to embed a picture), a link to the manufacturer's
+website, a brief description, and a link to the forum thread, and links
+to some reviews of the controller.
+
+When you are ready to submit your mapping for inclusion in Mixxx, make a
+pull request on GitHub. See the [Using Git](Using%20Git) wiki page for
+more information. Once your mapping has been accepted, please complete
+the wiki page with labeled diagrams explaining how your mapping works.
+If there is no diagram readily available, ask the manufacturer for one.
+If they do not provide one, take pictures of your device and label them.
+Upload diagrams and/or pictures by going to the [Media
+Manager](?do=media) at the top right of any wiki page and upload your
+file(s) to the "hardware" namespace.
 
 ### Function & variable naming conventions
 

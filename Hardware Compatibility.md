@@ -4,7 +4,7 @@
 
 Bare minimum equipment for DJing:
 
-  - laptop
+  - computer (preferably a laptop)
   - sound card or splitter cable
   - headphones or in-ear monitors
   - speakers

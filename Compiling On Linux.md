@@ -33,7 +33,7 @@ Then run:
 
 For other distributions, you will need to install the following through
 your distribution's package manager. On most distributions, you will
-also need the corresponding -dev or -devel packages for each library.
+also need the corresponding -dev or -devel packages for each package.
 
   - scons
   - libid3tag

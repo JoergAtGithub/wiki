@@ -47,3 +47,7 @@ a DJ program.
 
   - [How it works: Linux audio
     explained](http://tuxradar.com/content/how-it-works-linux-audio-explained)
+
+### Windows
+
+Please add links explaining different sound APIs on Windows here.

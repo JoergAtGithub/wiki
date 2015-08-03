@@ -55,11 +55,14 @@ invaluable contribution.
 ## Tweak it\!
 
 With a little knowledge JavaScript, you can [modify the hardware
-controller script files](midi_scripting) in the midi folder (remember to
-send patches to the
-[list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)) do
-crazy-new-awesome things or just fix up a function that is already
-there.
+controller script files](midi_scripting) to do crazy-new-awesome things
+or just fix up a function that is already there. If you have access to
+hardware that is not listed as having a Mixxx mapping in the [DJ
+Hardware Guide](hardware%20compatibility), mappings for new devices are
+appreciated\! See [this
+section](midi_scripting#setting_up_git_and_getting_your_mapping_included_in_mixxx)
+on the MIDI Scripting page for how to get your changes included in
+Mixxx.
 
 ## Skin it\!
 

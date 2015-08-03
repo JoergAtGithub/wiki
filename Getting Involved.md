@@ -89,6 +89,10 @@ by doing a video and putting it up on
 
 Mixxx is looking for a resident DJ to teach the rest of us. ;)
 
+If you know of helpful resources for DJing, please add them to the
+[Beginner DJ Links](Beginner%20DJ%20Links) wiki page. You can also help
+by contributing to [the manual](https://github.com/mixxxdj/manual).
+
 ## Test it\!
 
 Grab the latest feature builds (looping, library) from our build server

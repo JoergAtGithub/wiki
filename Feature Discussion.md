@@ -17,6 +17,7 @@ page.
   - [Loop Recorder](Loop%20Recorder)
   - [Timing](Timing)
   - [Touch](Touch)
+  - [Cues and loops 2.0](Cues%20and%20loops%202.0)
 
 ## Implemented Specifications
 

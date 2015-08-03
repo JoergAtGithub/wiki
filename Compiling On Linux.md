@@ -33,7 +33,9 @@ Then run:
 
 For other distributions, you will need to install the following through
 your distribution's package manager. On most distributions, you will
-also need the corresponding -dev or -devel packages for each package.
+also need the corresponding -dev or -devel packages for each package. If
+you cannot find a package listed here that starts with "lib", try
+searching for the package name without the "lib" prefix.
 
   - scons
   - libid3tag

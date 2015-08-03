@@ -32,7 +32,8 @@ Then run:
 ### Other
 
 For other distributions, you will need to install the following through
-your distribution's package manager:
+your distribution's package manager. On most distributions, you will
+also need the corresponding -dev or -devel packages for each library.
 
   - scons
   - libid3tag

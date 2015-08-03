@@ -95,13 +95,9 @@ by contributing to [the manual](https://github.com/mixxxdj/manual).
 
 ## Test it\!
 
-Grab the latest feature builds (looping, library) from our build server
-and try them out, suggest subtle improvements, figure out a method to
-crash them and then [report bugs and suggestions onto
-launchpad](https://bugs.launchpad.net/mixxx).
-
-[How to download and compile development
-version.](How%20to%20download%20and%20compile%20development%20version.)
+Grab the latest development builds from our build server or [compile
+them from git](start#building%20Mixxx) and try them out. Suggest
+improvements and [report bugs](reporting%20bugs).
 
 ## Show it\!
 

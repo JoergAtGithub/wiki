@@ -272,6 +272,10 @@ providing feedback to the developer. You can also [edit the mapping
 yourself](start#controller%20mapping%20documentation). Click the name of
 the controller for more information.
 
+When a mapping is included in Mixxx, please move it to the [\#Mixxx
+Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
+Supported Mappings](#Community%20Supported%20Mappings) table above.
+
 |                                                      |                    |                   |                       |                       |
 | ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------------- |
 | Device                                               | Price (USD) \[12\] | Description       | Integrated sound card | Signal protocol       |

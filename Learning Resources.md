@@ -1,5 +1,9 @@
 # Learning resources
 
+## Qt documentation
+
+<http://doc.qt.io/qt-4.8/>
+
 ## Signal theory
 
   - **MIT OpenCourseWare lectures:**

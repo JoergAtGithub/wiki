@@ -93,6 +93,9 @@ If you know of helpful resources for DJing, please add them to the
 [Beginner DJ Links](Beginner%20DJ%20Links) wiki page. You can also help
 by contributing to [the manual](https://github.com/mixxxdj/manual).
 
+If you are fluent and literate in languages other than English, you can
+[help translate Mixxx](internationalization).
+
 ## Test it\!
 
 Grab the latest development builds from our build server or [compile

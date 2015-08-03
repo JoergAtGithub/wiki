@@ -133,7 +133,8 @@ If there is no diagram readily available, ask the manufacturer for one.
 If they do not provide one, take pictures of your device and label them.
 Upload diagrams and/or pictures by going to the [Media
 Manager](?do=media) at the top right of any wiki page and upload your
-file(s) to the "hardware" namespace.
+file(s) to the "hardware" namespace. SVG diagrams are preferred because
+they are easier to edit later.
 
 ### Function & variable naming conventions
 

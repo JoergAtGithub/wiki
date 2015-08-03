@@ -40,3 +40,10 @@ a DJ program.
   - [Digital DJ Tips](http://www.digitaldjtips.com/)
   - [Reddit /r/beatmatch](https://www.reddit.com/r/beatmatch) and
     [/r/DJs](https://www.reddit.com/r/DJs/)
+
+## Operating system specific links
+
+### GNU/Linux
+
+  - [How it works: Linux audio
+    explained](http://tuxradar.com/content/how-it-works-linux-audio-explained)

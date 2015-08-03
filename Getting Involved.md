@@ -18,8 +18,8 @@ You want to make Mixxx better, but what can you do?
 
 The most direct way to help Mixxx is through coding. Patches that fix
 bugs are welcomed with open arms. Mixxx is written in C++ and makes
-extensive use of the [Qt](http://www.qtsoftware.com/) libraries, which
-make C++ more like Java than C.
+extensive use of the [Qt](http://qt.io/) libraries, which make C++ more
+like Java than C.
 
 See [Using Git](Using%20Git) for how to get your changes included in
 Mixxx.

@@ -106,10 +106,12 @@ Object.defineProperties(Channel1.play.output.midi.MyController, {
 ### Approach 3
 
 What about a DSL, and some decoupling? User would need to learn the
-order of arguments which would be a small cost to pay compared to having
-to learn their names then type them out every time. Being compact
-conceptually as well as visually, this design is easy to figure out even
-without having to reach for the docs.
+order of arguments for a handful of functions; which would be a very
+small cost to pay compared to having to learn their names then type them
+out every time. Being compact conceptually as well as visually, this
+design is easy to figure out on a basic level even without having to
+reach for the docs. Obligatory shout out to [Eric S.
+Raymond](http://catb.org/~esr/writings/taoup/html/).
 
 Off the top of my head, here's what the user would write:
 

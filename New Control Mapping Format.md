@@ -102,3 +102,54 @@ Object.defineProperties(Channel1.play.output.midi.MyController, {
 ```
 
   - inputs and outputs organized together
+
+### Approach 3
+
+What about a DSL, and some decoupling? User would need to learn the
+order of arguments which would be a small cost to pay compared to having
+to learn their names then type them out every time. Being compact
+conceptually as well as visually, this design is easy to figure out even
+without having to reach for the docs. Here's what I mean:
+
+``` javascript
+// User writes this
+Channels[1].controls = [
+  MIDI.button([1, 1], 'mixer.kill.hi',  1, 'toggle'),
+  MIDI.button([1, 2], 'mixer.kill.mid', 1, 'toggle'),
+  MIDI.button([1, 3], 'mixer.kill.lo',  1, 'toggle'),
+  
+  MIDI.encoder( ... ),
+  
+  OSC.handler('/address/foo', function (...) { ... }),
+  
+  HID.handler( ... )
+];
+
+// Library code provides pre-defined controls (buttons, pots, encoders, jog wheels)
+// and behaviors (EQ tweak/kill, FX parameter tweak, scrub, loop)
+Events.on('mixer.kill.hi', function (channel, value) {
+  if (value === 'toggle') {
+    Channels[channel].hiKill = !Channels[channel].hiKill;
+  } else if (value === true || value === false) {
+    Channels[channel].hiKill = value
+  } else {
+    // throw error?
+  }
+});
+
+MIDI = {
+  button: function (mask, event, /* arg1, arg2 ... argN */) {
+    var args = [].slice.call(arguments, 3); // gets list of optional arguments
+    Events.on('midi', function (midiMessage) {
+      if (midiMessage.matches(mask)) {
+        Events.emit.apply(Events, [event].concat(args))
+        // that was a fancy way of saying `Events.emit(event, arg1, arg2 ... argN)`+
+      }
+    });
+  }
+}
+```
+
+The event name can be parameterized too (have one event handler for
+`mixer.kill.*` and dispatch on event name), see
+<https://github.com/asyncly/EventEmitter2> for one nice implementation.

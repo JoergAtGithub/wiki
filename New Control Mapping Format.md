@@ -109,7 +109,9 @@ What about a DSL, and some decoupling? User would need to learn the
 order of arguments which would be a small cost to pay compared to having
 to learn their names then type them out every time. Being compact
 conceptually as well as visually, this design is easy to figure out even
-without having to reach for the docs. Here's what I mean:
+without having to reach for the docs.
+
+Off the top of my head, here's what the user would write:
 
 ``` javascript
 // User writes this:
@@ -124,10 +126,13 @@ Channels[1].controls = [
   
   HID.handler( ... )
 ];
+```
 
-// Library code provides pre-defined controls (buttons, pots, encoders, jog wheels)
-// and behaviors (EQ tweak/kill, FX parameter tweak, scrub, loop)
+And Mixxx would in turn provide pre-defined controls (buttons, pots,
+encoders, jog wheels, etc) and actions (EQ tweak/kill, FX parameter
+tweak, scrub, loop, etc etc).
 
+``` javascript
 Events = new EventEmitter();
 Events.on('mixer.kill.hi', function (channel, value) {
   if (value === 'toggle') {
@@ -153,5 +158,5 @@ MIDI = {
 ```
 
 The event name can be parameterized too (have one event handler for
-`mixer.kill.*` and dispatch on event name), see
+\`mixer.kill.\*\` and dispatch on event name), see
 <https://github.com/asyncly/EventEmitter2> for one nice implementation.

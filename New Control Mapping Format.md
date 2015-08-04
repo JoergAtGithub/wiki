@@ -121,6 +121,10 @@ Channels[1].controls = [
   MIDI.button([1, 2], 'mixer.kill.mid', 1, 'toggle'),
   MIDI.button([1, 3], 'mixer.kill.lo',  1, 'toggle'),
   
+  MIDI.linear([1, 16], 'mixer.eq.hi'),
+  MIDI.linear([1, 17], 'mixer.eq.mid'),
+  MIDI.linear([1, 18], 'mixer.eq.lo'),
+  
   MIDI.encoder( ... ),
   
   OSC.handler('/address/foo', function (...) { ... }),
@@ -147,17 +151,32 @@ Events.on('mixer.kill.hi', function (channel, value) {
 
 MIDI = {
   button: function (mask, event /* + optional arg1, arg2 ... argN */) {
-    var args = [].slice.call(arguments, 3); // gets list of optional arguments
-    Events.on('midi', function (midiMessage) {
+    var args = [].slice.call(arguments, 2); // gets list of optional arguments
+    return function buttonPressed (midiMessage) {
       if (midiMessage.matches(mask)) {
         Events.emit.apply(Events, [event].concat(args))
         // that was a fancy way of saying `Events.emit(event, arg1, arg2 ... argN)`+
       }
-    });
+    }
+  },
+  linear: function (mask, event) {
+    var args = [].slice.call(arguments, 2); // gets list of optional arguments
+    return function potRotated (midiMessage) {
+      if (midiMessage.matches(mask)) {
+        Events.emit.apply(Events, [event].concat(args).concat([midiMessage.data2]));
+      }
+    }
   }
 }
+
+// at the top of the chain sits a function which
+// simply runs every received MIDI message through
+// every registered MIDI handler.
+Events.on('midi.input', function (midiMessage) {
+  Channel1.controls.map(function (control) { control(midiMessage); });
+});
 ```
 
-The event name can be parameterized too (have one event handler for
+Event names can be parameterized too (have one event handler for
 \`mixer.kill.\*\` and dispatch on event name), see
 <https://github.com/asyncly/EventEmitter2> for one nice implementation.

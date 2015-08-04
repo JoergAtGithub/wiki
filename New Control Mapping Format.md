@@ -116,7 +116,6 @@ Raymond](http://catb.org/~esr/writings/taoup/html/).
 Off the top of my head, here's what the user would write:
 
 ``` javascript
-// User writes this:
 Channels[1].controls = [
   MIDI.button([1, 1], 'mixer.kill.hi',  1, 'toggle'),
   MIDI.button([1, 2], 'mixer.kill.mid', 1, 'toggle'),

@@ -146,7 +146,7 @@ Events.on('mixer.kill.hi', function (channel, value) {
 });
 
 MIDI = {
-  button: function (mask, event, /* arg1, arg2 ... argN */) {
+  button: function (mask, event /* + optional arg1, arg2 ... argN */) {
     var args = [].slice.call(arguments, 3); // gets list of optional arguments
     Events.on('midi', function (midiMessage) {
       if (midiMessage.matches(mask)) {

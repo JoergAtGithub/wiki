@@ -112,7 +112,7 @@ conceptually as well as visually, this design is easy to figure out even
 without having to reach for the docs. Here's what I mean:
 
 ``` javascript
-// User writes this
+// User writes this:
 Channels[1].controls = [
   MIDI.button([1, 1], 'mixer.kill.hi',  1, 'toggle'),
   MIDI.button([1, 2], 'mixer.kill.mid', 1, 'toggle'),
@@ -127,6 +127,8 @@ Channels[1].controls = [
 
 // Library code provides pre-defined controls (buttons, pots, encoders, jog wheels)
 // and behaviors (EQ tweak/kill, FX parameter tweak, scrub, loop)
+
+Events = new EventEmitter();
 Events.on('mixer.kill.hi', function (channel, value) {
   if (value === 'toggle') {
     Channels[channel].hiKill = !Channels[channel].hiKill;

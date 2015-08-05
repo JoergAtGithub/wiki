@@ -119,11 +119,11 @@ controller on the [DJ Hardware
 Guide](hardware%20compatibility#mappings%20in%20development) and start a
 wiki page for your controller. To make a wiki page, put double brackets
 around the name of your controller in the Hardware Guide, for example
-\[\[My Controller\]\]. Save the wiki page, then click on the red link to
-create the new page. Add a picture of the controller (use the syntax
-{{URL to picture}} to embed a picture), a link to the manufacturer's
-website, a brief description, a link to the forum thread, and links to
-some reviews of the controller.
+\[\[My Controller\]\]. Save your edit to the Hardware Guide page, then
+click on the red link in the Hardware Guide to create the new page. Add
+a picture of the controller (use the syntax {{URL to picture}} to embed
+a picture), a link to the manufacturer's website, a brief description, a
+link to the forum thread, and links to some reviews of the controller.
 
 When you are ready to submit your mapping for inclusion in Mixxx, make a
 pull request on GitHub. See the [Using Git](Using%20Git) wiki page for

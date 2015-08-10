@@ -8,6 +8,10 @@
 
 # Mapping description
 
+The number in the first column refers to the corresponding label in the
+*Owner's Manual* in the chapter *Part names and functions* starting on
+page 20.
+
 | \# User Manual | Control               | Modifier | Context           | Function                                                                                                                                           |
 | -------------- | --------------------- | -------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1              | BEATS/V.FX SEL.       | NONE     | Knob is turned    | Change musical key                                                                                                                                 |

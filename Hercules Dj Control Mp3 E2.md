@@ -70,9 +70,22 @@ Old Mapping included in Mixxx up to version 1.11 can be found
 ## Mapping for Mixxx 1.12+ (by knob/button)
 
 The Hercules MP3 e2 mapping for Mixxx is integrated in Mixxx so you
-don't have to download or install anything. This mapping allow you to
-manipulate 4 decks, 2 at a time, switching Deck A (left) between Channel
-1 and 3 and Deck B (right) between Channel 2 and 4.
+don't have to download or install anything. This mapping consist of 4
+files :
+
+  - `Hercules DJ Control MP3 e2.midi.xml`: the MIDI xml mapping file. It
+    uses the following script.
+  - `Hercules DJ Control MP3 e2-scripts.js`: The main script for MIDI
+    mapping. Also used by the Bulk/HID compat script
+  - `Hercules DJ Control MP3 e2.bulk.xml`: The Bulk/HID xml mapping
+    file. Just saying "hey, pass all incoming data to the compat.js
+    MP3e2.incomingData function"
+  - `Hercules-mp3e2-compat.js`: The Bulk/HID script, that reads HID
+    incoming data and call functions from the MIDI script
+
+This mapping allow you to manipulate 4 decks, 2 at a time, switching
+Deck A (left) between Channel 1 and 3 and Deck B (right) between Channel
+2 and 4.
 
 [[/media/hercules_mappa.png|]]
 

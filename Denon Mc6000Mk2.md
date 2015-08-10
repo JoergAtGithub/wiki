@@ -1,4 +1,4 @@
-# Denon MC6000 Mk2
+# Denon MC6000MK2
 
 ![http://b06ba727c886717f9577-fff53f927840131da4fecbedd819996a.r74.cf2.rackcdn.com//1143/images/MC6000MK2\_angle.jpg](http://b06ba727c886717f9577-fff53f927840131da4fecbedd819996a.r74.cf2.rackcdn.com//1143/images/MC6000MK2_angle.jpg)
 

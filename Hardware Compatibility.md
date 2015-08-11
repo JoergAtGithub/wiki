@@ -99,11 +99,12 @@ it is impossible, it only means that no one has made it work with Mixxx
 yet. Anyone, including you, who has the hardware is welcome to make
 Mixxx work with it.
 
-Mixxx works with any sound card that your operating system has a driver
-to use. USB sound cards compliant with the USB audio class standard do
-not need any special drivers on Linux or Mac OS X, but they do on
-Windows. Most USB sound cards are not standards compliant. Sound cards
-that are advertised for use with iOS devices are standards compliant.
+Unlike some proprietary DJ programs, Mixxx works with any sound card
+that your operating system has a driver to use. USB sound cards
+compliant with the USB audio class standard do not need any special
+drivers on Linux or Mac OS X, but they do on Windows. Most USB sound
+cards are not standards compliant. Sound cards that are advertised for
+use with iOS devices are standards compliant.
 
 Mixxx can work with any controller that sends MIDI or HID signals to
 your computer; it just needs a controller mapping to tell Mixxx what to

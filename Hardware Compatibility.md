@@ -319,6 +319,7 @@ map than HID controllers.
 | DJ Tech Tools MIDI Fighter Twister           | $220               | 4x4 encoder grid with LED rings and push buttons and multicolor LEDs    | no                    | MIDI                     |
 | Akai AMX                                     | $250               | 2 deck mixer + vinyl hookup                                             | yes                   | MIDI                     |
 | Gemini Slate 4                               | $250               | 4 deck all-in-one                                                       | yes                   | MIDI                     |
+| Pioneer DDJ-SB2                              | $250               | 4 deck all-in-one                                                       |                       |                          |
 | American Audio MXR 14                        | $300               | 2 deck analog mixer + MIDI library browsing and transport               | yes                   | MIDI                     |
 | Hercules DJ Control Jogvision                | $300               | 2 deck all-in-one                                                       | yes                   | MIDI/HID (either? both?) |
 | Korg KAOSS DJ                                | $300               | 2 deck all-in-one                                                       | yes                   | MIDI                     |

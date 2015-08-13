@@ -319,7 +319,7 @@ map than HID controllers.
 | Akai AMX                                     | $250               | 2 deck mixer + vinyl hookup                                             | yes                   | MIDI                     |
 | Allen & Heath Xone K1 \[21\]                 | $250               | 4 deck mixer + pads                                                     | no                    | MIDI                     |
 | Gemini Slate 4                               | $250               | 4 deck all-in-one                                                       | yes                   | MIDI                     |
-| Pioneer DDJ-SB2                              | $250               | 4 deck all-in-one                                                       |                       |                          |
+| Pioneer DDJ-SB2                              | $250               | 4 deck all-in-one                                                       | yes                   | MIDI                     |
 | American Audio MXR 14                        | $300               | 2 deck analog mixer + MIDI library browsing and transport               | yes                   | MIDI                     |
 | Hercules DJ Control Jogvision                | $300               | 2 deck all-in-one                                                       | yes                   | MIDI/HID (either? both?) |
 | Korg KAOSS DJ                                | $300               | 2 deck all-in-one                                                       | yes                   | MIDI                     |

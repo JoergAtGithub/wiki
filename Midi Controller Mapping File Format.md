@@ -370,7 +370,7 @@ These tags define the MIDI event that Mixxx will listen for or send out:
   - Hercjog - Handle hercules jog wheels (**deprecated**...please
     replace with a MIDI script function.)
 
-## Output tags
+### Output tags
 
   - maximum - Send the 'on' value when the Mixxx control drops below
     this value.

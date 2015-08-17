@@ -343,7 +343,7 @@ These tags define the MIDI event that Mixxx will listen for or send out:
   - midino - The MIDI control or note number (leave this out for the
     Pitch Bend status.) Also see the [crash course](#midi-crash-course).
 
-#### Input tags
+### Input tags
 
   - options - Further refine the behaviour of the control (e.g.
     translations, sensitivity, acceleration) Necessary options will have
@@ -370,44 +370,9 @@ These tags define the MIDI event that Mixxx will listen for or send out:
   - Hercjog - Handle hercules jog wheels (**deprecated**...please
     replace with a MIDI script function.)
 
-#### Output tags
+## Output tags
 
   - maximum - Send the 'on' value when the Mixxx control drops below
     this value.
   - minimum - Send the 'on' value when the Mixxx control exceeds this
     value. Send the 'off' value otherwise.
-
-### Old format (before schema versioning, Mixxx 1.6.1 and prior)
-
-The old midi mapping format is here for reference. The same options
-apply as above, except use \<threshold\> for \<minimum\>, there's no
-\<maximum\> (it's always 1.0,) and obviously \<Script-Binding\> won't
-work. It looks like this:
-
-``` 
- <!DOCTYPE controller>
- <controller>
-   <controls>
-     <control>
-       <group>[[Master]]</group>
-       <key>crossfader</key>
-       <miditype>Ctrl</miditype>
-       <midino>0x31</midino>
-       <options>
-         <hercjog/>
-       </options>
-     </control>
-     ...
-   </controls>
-   <lights>
-     <light>
-       <group>[[Channel1]]</group>
-       <key>VuMeter</key>
-       <status>0xB0</status>
-       <midino>0x16</midino>
-       <threshold>0.5</threshold>
-     </light>
-     ...
-   </lights>
- </controller>
-```

@@ -219,7 +219,7 @@ pads 1 and 2 while holding shift.
 
 ### Channel fader start
 
-By moving a channel up from the very botton while holding shift when a
+By moving a channel up from the very bottom while holding shift when a
 deck is paused, the deck will start playing. Moving the fader back to
 the bottom without releasing shift stops the deck and moves it back to
 its original position.

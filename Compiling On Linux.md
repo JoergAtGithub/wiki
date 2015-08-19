@@ -81,7 +81,8 @@ options.)
 ## Compile and install
 
 Once you have the source code, change to the newly created "mixxx"
-directory, and use scons to compile. As a regular user, do:
+directory. Mixxx uses the [SCons](http://scons.org/) build system rather
+than the more common GNU autotools and GNU make. As a regular user, do:
 
     cd mixxx  # To enter the repository.
     scons optimize=native

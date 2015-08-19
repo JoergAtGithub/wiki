@@ -45,7 +45,7 @@ additional Command arguments (such as `qdebug=1` when in debug
 configuration). Respectively, follow the same procedure for the Clean
 Steps where you enter `-c` as Command argument.
 
-# Console Dev Tools
+# Console development tools
 
 On Ubuntu Linux, G uses:
 

@@ -84,7 +84,10 @@ Once you have the source code, change to the newly created "mixxx"
 directory, and use scons to compile. As a regular user, do:
 
     cd mixxx  # To enter the repository.
-    scons
+    scons optimize=native
+
+If you want to be able to run Mixxx on different types of CPUs, change
+`optimize=native` to `optimize=portable`.
 
 (scons -h shows a complete list of build flags if you'd like to
 customize.)
@@ -139,19 +142,6 @@ version of mixxx with the following:
     sudo scons -c install
 
 before compiling as described above.
-
-**Strongly recommended**: To optimize compilation for the CPU you're on
-if using GCC 4.2 and above, add `tuned=1` to the list of scons options.
-To optimize for another CPU, use `optimize=#` where \# is in the range
-1-7:
-
-1.  single-core (P-III and below)
-2.  P4
-3.  Intel Core
-4.  Core 2
-5.  Athlon-4/XP/MP
-6.  K8/Opteron/AMD64
-7.  K8/Opteron/AMD64 w/ SSE3
 
 If you wanted to update later to a newer snapshot, you would go back to
 the mixxx directory and run:

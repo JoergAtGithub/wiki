@@ -5,17 +5,13 @@
   - IDEs: [KDevelop](https://www.kdevelop.org/),
     [Eclipse](http://eclipse.org/), [Qt
     Creator](http://wiki.qt.io/Category:Tools::QtCreator)
-  - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
-    (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
-    editors. ( Gedit has a nice dark colour scheme you can pick to use.
-    )
-  - [SciTE](http://www.scintilla.org/SciTE.html) light tabbed editor
-    with nice coding features
-  - [Meld](http://meld.sourceforge.net/) and
-    [Kompare](http://www.caffeinated.me.uk/kompare/) are decent diff
-    tools
-  - [KDESvn](http://kdesvn.alwins-world.de/trac.fcgi) is what I used to
-    use to sync with SVN in KDE.
+  - Text editors:
+    [gedit](http://www.gnome.org/projects/gedit/screenshots.html),
+    [kate](http://kate-editor.org/),
+    [SciTE](http://www.scintilla.org/SciTE.html)
+  - git tools: gitk (comes with git),
+    [git-cola](http://git-cola.github.io/),
+    [gitg](https://wiki.gnome.org/Apps/Gitg/)
 
 ## Windows
 

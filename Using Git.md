@@ -113,10 +113,9 @@ code repository to your local machine\!
 
 Branches give you scratch space to work on new features and ideas
 without having to commit on top of an existing branch (like the `master`
-branch). This allows you to work on a bug or adding a feature keep track
-of ongoing development in the `master` or beta branch. It also allows
-you to work on multiple bugs/features in parallel and independently
-propose them for inclusion in Mixxx whenever each one is ready.
+branch). This allows you to work on multiple bugs/features in parallel
+and independently propose them for inclusion in Mixxx whenever each one
+is ready.
 
 ## Check what branch you are currently on
 

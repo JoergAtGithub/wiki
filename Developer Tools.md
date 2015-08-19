@@ -1,7 +1,10 @@
-# Non-Console Dev Tools
+# Graphical development tools
 
 ## Linux
 
+  - IDEs: [KDevelop](https://www.kdevelop.org/),
+    [Eclipse](http://eclipse.org/), [Qt
+    Creator](http://wiki.qt.io/Category:Tools::QtCreator)
   - [gedit](http://www.gnome.org/projects/gedit/screenshots.html)
     (Gnome) and [kate](http://kate-editor.org/) (KDE) are both decent
     editors. ( Gedit has a nice dark colour scheme you can pick to use.

@@ -569,7 +569,17 @@ and maybe a third one : Jog wheel sensitivity
 
 on factory defaults, the jog Wheels are enabled and the midi channel
 used is channel 1. the mapping is made for channel 1 only, if your
-controller is configured for another channel, nothing will work.
+controller is configured for another channel, nothing will work and if
+you launch Mixxx with --controllerDebug parameter, you will have lines
+like this one :
+
+``` 
+Debug [Controller]: "DJ Control MP3 e2 : 3 bytes: B3 38 38 " 
+```
+
+note the B3 here. it's B\<channel nr -1). So this controller is
+configured on channel 4. controller configured on channel 1 will show
+B0, which is correct.
 
 To change these parameters, you have to use the configuration tool
 shipped by hercules that comes with the hercules driver on on [Hercules

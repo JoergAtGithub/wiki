@@ -38,6 +38,8 @@ plans.
   - [Bug tracker](https://bugs.launchpad.net/mixxx/) and [development
     blueprint planning](https://blueprints.launchpad.net/mixxx) are
     hosted on [Launchpad](http://launchpad.net/mixxx/)
+  - [Internationalization](Internationalization): Help translate Mixxx
+    into other languages
   - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)
   - Our IRC channel is \#mixxx on [Freenode](http://freenode.net/). You
     can access it via [the website](http://mixxx.org/irc/) or your
@@ -100,7 +102,6 @@ plans.
   - [Feature Design Documents](feature_discussion)
   - [Writing unit tests](unit_tests) helps prevent regressions.
     Essential for new code\!
-  - [Internationalization/Translations](Internationalization)
 
 ### Code Reference
 

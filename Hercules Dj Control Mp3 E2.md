@@ -574,7 +574,8 @@ on factory defaults, the jog Wheels are enabled and the midi channel
 used is channel 1. the mapping is made for channel 1 only, if your
 controller is configured for another channel, nothing will work and if
 you launch Mixxx with `-``-controllerDebug` parameter, you will have
-lines like this one :
+lines like this one showing in the logs when you press a button on the
+controller :
 
 ``` 
 Debug [Controller]: "DJ Control MP3 e2 : 3 bytes: B3 38 38 " 

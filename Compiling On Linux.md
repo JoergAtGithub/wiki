@@ -94,9 +94,15 @@ options, as a regular user, run:
 
     scons optimize=native -j NUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
 
-This will take some time, depending on the speed of your computer.
-Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that many
-threads at a time while compiling. This speeds up compilation on
+Set INSTALLATION\_DIRECTORY to the location you want to install Mixxx
+to. If you want to install Mixxx for all users of the OS, you do not
+need to specify a prefix and can leave it as the default /usr/local. If
+you only want to install Mixxx for your user, you can specify a location
+in your home directory such as \~/local
+
+Running `scons` will take some time, depending on the speed of your
+computer. Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that
+many threads at a time while compiling. This speeds up compilation on
 multicore CPUs.
 
 Once Mixxx has compiled, if you set the prefix options for scons to a

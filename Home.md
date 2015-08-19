@@ -93,7 +93,7 @@ plans.
   - [How to use Git](Using%20Git)
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
-  - [The bug tracker](launchpad_bugs)
+  - [Bug Tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
   - [Learning Resources](Learning%20Resources)

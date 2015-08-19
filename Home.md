@@ -98,7 +98,6 @@ plans.
 
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
-  - [QA Procedure](QA%20Procedure)
   - [Writing unit tests](unit_tests) helps prevent regressions.
     Essential for new code\!
   - [Internationalization/Translations](Internationalization)

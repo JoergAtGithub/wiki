@@ -278,14 +278,6 @@ Once you've made local changes you would like `ywwg` to accept, you can
 submit a pull request to `ywwg` on GitHub or just contact him in person
 to ask him to merge changes from your branch.
 
-# Creating Patches
-
-Once you've worked on fixing a bug or adding a feature to Mixxx, you may
-want to generate a patch -- a file that represents the aggregate changes
-you made. This is useful for emailing your changes to someone. However,
-if you want to propose your changes for inclusion in Mixxx, please make
-a pull request on GitHub as described above.
-
 ## Uncommitted Changes
 
 Creating a patch of your uncommitted changes is as simple as running the

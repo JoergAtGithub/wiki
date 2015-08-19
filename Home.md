@@ -95,6 +95,7 @@ plans.
   - [The Bug Tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
+  - [Learning resources](Learning%20resources)
 
 ### Development Topics
 
@@ -124,4 +125,3 @@ plans.
 
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Learning resources](Learning%20resources)

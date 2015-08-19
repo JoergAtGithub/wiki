@@ -2,31 +2,31 @@
 
 ## Linux
 
-  - IDEs: [KDevelop](https://www.kdevelop.org/),
+  - Integrated Development Environments (IDEs):
+    [KDevelop](https://www.kdevelop.org/),
     [Eclipse](http://eclipse.org/), [Qt
     Creator](http://wiki.qt.io/Category:Tools::QtCreator)
   - Text editors:
     [gedit](http://www.gnome.org/projects/gedit/screenshots.html),
     [kate](http://kate-editor.org/),
     [SciTE](http://www.scintilla.org/SciTE.html)
-  - git tools: gitk (comes with git),
+  - Git tools: gitk (comes with git),
     [git-cola](http://git-cola.github.io/),
     [gitg](https://wiki.gnome.org/Apps/Gitg/)
 
 ## Windows
 
-  - [notepad++](http://notepad-plus.sourceforge.net/) is quite a good
-    GPL editor.
-  - [Tortoise SVN](http://tortoisesvn.tigris.org/) is good for doing SVN
-    checkouts and commits.
-  - [WinMerge](http://winmerge.org/) is a decent GPL diff tool.
-  - [7-zip](http://www.7-zip.org/) is a pretty handy archiver. 
+  - Integrated Development Environments (IDEs):
+    [Eclipse](http://eclipse.org/), [Qt
+    Creator](http://wiki.qt.io/Category:Tools::QtCreator)
+  - Text editors: [Notepad++](http://notepad-plus.sourceforge.net/)
+  - Git tools: [Tortise Git](https://tortoisegit.org/), [Git
+    Extensions](http://gitextensions.github.io/)
 
-See Also
+## Using IDEs
 
   - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
-  - How to setup Qt Creator for developing on Mixxx [How to setup Qt
-    Creator for developing on Mixxx](qtcreator)
+  - Setup [QtCreator](QtCreator) for developing on Mixxx
 
 You can also use [Qt Creator](http://qt-project.org/downloads) for Mixxx
 development by creating a Qt project file for the source files. You can

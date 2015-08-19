@@ -186,8 +186,7 @@ GitHub account.
 Running `git status` will show which files have changes that have not
 been committed. Running `git diff` will show a color coded diff
 comparing your uncommitted changes to the last commit made on that
-branch. A [GUI client](GUI%20clients) can be particularly helpful for
-this.
+branch. [\#GUI clients](#GUI%20clients) are helpful for this.
 
 ### Making the commit
 

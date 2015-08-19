@@ -110,7 +110,6 @@ plans.
   - [SoundSource interface (sound
     proxies)](SoundSource%20interface%20\(sound%20proxies\))
   - [Threads](Threads)
-  - [Widgets](Widgets)
 
 ### Archives
 

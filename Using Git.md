@@ -139,15 +139,7 @@ you do not do this first, when you make a pull request for inclusion in
 Mixxx (see below), both what you were working on before and your new
 changes will be included in the pull request.
 
-## Rename a branch
-
-    $ git branch -m experimental expt
-    
-    $ git branch
-    * expt
-      master
-
-## Switch between existing branches
+## Switch between branches
 
     $ git branch
     * experimental

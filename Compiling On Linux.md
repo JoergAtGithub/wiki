@@ -116,6 +116,13 @@ If you want to be able to run Mixxx on different types of CPUs, change
 If you want to play m4a files, use **`scons faad=1`** flag. This
 requires the libraries faad2 and libmp4v2 (or libmp4) are installed.
 
+## Clean up
+
+If `scons` fails with mysterious errors about not finding dependencies
+that you know are installed, it may be using outdated cached information
+to look for the dependencies. This can happen after upgrading your
+distro. To resolve this, try running `scons -c` and recompiling.
+
 ## Run without installing
 
 If you want to just run this copy without installing, from the same
@@ -126,15 +133,3 @@ directory, run: (WARNING this uses and may overwrite user-wide configs)
 To also run from a different settings folder use:
 
     ./mixxx --resourcePath res/ --settingsPath /*the folder you like*/
-
-#### Moving your working copy from one system to an other
-
-If you happen to reinstall your system, or move your checkout to an
-other development system, scons temp files may cause trouble in
-compilation, and giving false missing dependency information. To avoid
-this clean out the scons temporary files with the next commands:
-
-``` 
-rm -r .sconf_temp/
-rm .sconsign.*                                               
-```

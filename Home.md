@@ -82,7 +82,6 @@ plans.
   - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on OS X](Compiling%20on%20OS%20X)
-  - [Dependencies](Dependencies)
   - [Packaging / Making a Mixxx
     Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
 
@@ -90,7 +89,6 @@ plans.
 
   - [How to fix your first bug](Bugfix%20Workflow) 
   - [How to use Git](Using%20Git)
-  - [Submitting Patches](using_git#creating_patches)
   - [Creating backtraces](Creating%20backtraces)
   - [The Bug Tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)
@@ -100,7 +98,7 @@ plans.
 
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
-  - [Mixxx QA Procedure](qa_procedure)
+  - [QA Procedure](QA%20Procedure)
   - [Writing unit tests](unit_tests) helps prevent regressions.
     Essential for new code\!
   - [Internationalization/Translations](Internationalization)

@@ -89,7 +89,7 @@ plans.
 
 ### Getting Started
 
-  - [How to fix your first bug](Bugfix%20Workflow) 
+  - [How to fix your first bug or add a new feature](Bugfix%20Workflow) 
   - [How to use Git](Using%20Git)
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes

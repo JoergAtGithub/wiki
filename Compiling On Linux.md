@@ -113,8 +113,7 @@ directory that your normal user does not have write access to, run
 to install it. If you set the prefix to a directory your user does have
 write access to, then you do not need `sudo` before `scons`. The prefix
 option must be the same as before or scons will recompile Mixxx before
-installing it. If you do not specify an INSTALLATION\_DIRECTORY for the
-prefix option, scons will install Mixxx to /usr/local by default.
+installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`.

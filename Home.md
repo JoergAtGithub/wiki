@@ -91,11 +91,12 @@ plans.
 
   - [How to fix your first bug](Bugfix%20Workflow) 
   - [How to use Git](Using%20Git)
-  - [Creating backtraces](Creating%20backtraces)
-  - [The Bug Tracker](launchpad_bugs)
+  - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
+    crashes
+  - [The bug tracker](launchpad_bugs)
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
-  - [Learning resources](Learning%20resources)
+  - [Learning Resources](Learning%20Resources)
 
 ### Development Topics
 

@@ -92,7 +92,7 @@ Running `scons -h` in the "mixxx" directory shows a complete list of
 build flags if you'd like to customize. To compile without any special
 options, as a regular user, do:
 
-    scons optimize=native -jNUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
+    scons optimize=native -j NUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
 
 Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that many
 threads at a time while compiling. This speeds up compilation on

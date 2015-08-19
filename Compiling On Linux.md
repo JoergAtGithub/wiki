@@ -78,20 +78,24 @@ options.)
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
 
-## Compile and install
+To update to the latest version of a git branch, enter (`cd` into) the
+directory you cloned the git repository into and run `git pull`. See
+[Using Git](Using%20Git) for more details.
+
+## Compile
 
 Once you have the source code, change to the newly created "mixxx"
 directory. Mixxx uses the [SCons](http://scons.org/) build system rather
-than the more common GNU autotools and GNU make. As a regular user, do:
+than the more common GNU autotools and GNU make. Running `scons -h`
+shows a complete list of build flags if you'd like to customize. Some of
+those options are explained below. To compile without any special
+options, as a regular user, do:
 
     cd mixxx  # To enter the repository.
     scons optimize=native
 
 If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`.
-
-(scons -h shows a complete list of build flags if you'd like to
-customize.)
 
 ### Multi-threaded build
 
@@ -122,32 +126,22 @@ with **`--pluginPath`** or by installing Mixxx (see below).
 
 If you don't want shoutcast support, use **`scons shoutcast=0`** flag.
 
-### Run or Install
+## Install
+
+If you want to install Mixxx system-wide, do:
+
+    sudo scons prefix=/usr install
+
+## Run without installing
 
 If you want to just run this copy without installing, from the same
 directory, run: (WARNING this uses and may overwrite user-wide configs)
 
     ./mixxx --resourcePath res/
 
-To also run from a different settings Folder use:
+To also run from a different settings folder use:
 
-    ./mixxx --resourcePath res/ --settingsPath /*The folder you like*/
-
-If you want to install it system-wide, do:
-
-    sudo scons prefix=/usr install
-
-If you are upgrading, it is recommended to first uninstall the previous
-version of mixxx with the following:
-
-    sudo scons -c install
-
-before compiling as described above.
-
-If you wanted to update later to a newer snapshot, you would go back to
-the mixxx directory and run:
-
-    git pull
+    ./mixxx --resourcePath res/ --settingsPath /*the folder you like*/
 
 ## Troubleshooting
 
@@ -252,7 +246,7 @@ rm -r .sconf_temp/
 rm .sconsign.*                                               
 ```
 
-## Further Reading
+## Further reading
 
   - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)
   - [Mixxx on Fedora](Mixxx%20on%20Fedora)

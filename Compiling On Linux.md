@@ -114,10 +114,8 @@ only slow down the build.)
 
 ### Build with m4a/AAC file support
 
-If you want to play m4a files, use **`scons faad=1`** flag.
-
-Attention: You've to install the libraries faad2 and libmp4v2 (or
-libmp4).
+If you want to play m4a files, use **`scons faad=1`** flag. This
+requires the libraries faad2 and libmp4v2 (or libmp4) are installed.
 
 m4a/AAC support will be built as a plugin, which you'll need to load
 with **`--pluginPath`** or by installing Mixxx (see below).

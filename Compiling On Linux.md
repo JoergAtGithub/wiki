@@ -90,10 +90,11 @@ directory (run `cd mixxx`). Mixxx uses the [SCons](http://scons.org/)
 build system rather than the more common GNU autotools and GNU make.
 Running `scons -h` in the "mixxx" directory shows a complete list of
 build flags if you'd like to customize. To compile without any special
-options, as a regular user, do:
+options, as a regular user, run:
 
     scons optimize=native -j NUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
 
+This will take some time, depending on the speed of your computer.
 Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that many
 threads at a time while compiling. This speeds up compilation on
 multicore CPUs.

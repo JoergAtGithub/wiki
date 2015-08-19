@@ -127,97 +127,6 @@ To also run from a different settings folder use:
 
     ./mixxx --resourcePath res/ --settingsPath /*the folder you like*/
 
-## Troubleshooting
-
-#### nVidia
-
-If you've got an nVidia card and are on Ubuntu (9.04) and at the end of
-the build, you see `/usr/bin/ld: cannot find -lGL
-collect2: ld returned 1 exit status` install `nvidia-glx-dev` by doing
-`sudo apt-get -y install nvidia-glx-dev`. Then re-run `scons` and it
-should build fine.
-
-#### opensuse
-
-  - If you have opensuse 11.0 it can happen that youre libaries are
-    somehow named incorrectly. 
-
-following error could occour...
-
-    [after checking the dependencies...]
-    
-    Install root: /usr
-    scons: done reading SConscript files.
-    scons: Building targets ...
-    scons: *** [src/.obj/input.o] TypeError `File **/usr/share/qt4/include/QtCore** found where directory expected.' 
-    trying to evaluate `${_concat(INCPREFIX, CPPPATH, INCSUFFIX, __env__, RDirs, TARGET, SOURCE)}'
-    scons: building terminated because of errors.
-
-in this case the file QtCore linked to an non existing
-directory(../QtCore/QtCore). Fix the link in a console by following
-command(in the directory with the broken link)
-
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtCore/ QtCore
-
-with -f you force the binary to discard the old link
-
-it's likely that there are other broken links. commandos are the same
-
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtGui/ QtGui
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtXml/ QtXml
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtOpenGL/ QtOpenGL 
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/QtScript/ QtScript 
-    laptop:/usr/share/qt4/include # ln -sf /usr/include/Qt3Support/ Qt3Support//
-
-it worked perfectly for me using opensuse 11.0\_x86, kde
-3.5.10\_release55
-
-#### Ubuntu 9.04 or higher
-
-If soundmanger hangs on Ubuntu 9.04 or higher replace PortAudio with an
-older version.
-
-  - Download »`pa_stable_v19_20071207.tar.gz`« from
-    [portaudio.com](http://www.portaudio.com/download.html)
-  - Deflate and change into PortAudio directory
-  - Run »`./configure`« maybe try »`./configure --prefix=/usr`«
-  - Run »`make`«
-  - Run »`sudo make install`«
-
-This overwrites files installed by portaudio2 and portaudio19-dev
-package from ubuntu. Thus don't reinstall them.
-
-  - See also: [Bug
-    \#383431](https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/383431)
-
-#### Debian Squeeze on AMD64 jack/portaudio issues
-
-So in Ubuntu the issue is solved for Lucid and later Releases (see [Bug
-\#360590](https://bugs.launchpad.net/ubuntu/+source/portaudio/+bug/360590))  
-In debian we still hafta wait for that. Portaudio is still compiled
-without jack support  
-on AMD64. So mixxx won't detect jack :/
-
-Solution: build your own portaudio deb:
-([reference](http://forkbomb.dadacafe.org/blog/Squeeze_Mixxx_Jack_Portaudio_AMD64/))
-
-    # apt-get source portaudio19  
-    # apt-get build-dep portaudio19
-    
-    # cd /portaudio19-*/debian
-    
-    ####  ENABLE_JACK must be explicitely set to "yes" in debian/rules (line 48)
-    # nano debian/rules
-    
-    # dpkg-buildpackage -rfakeroot -b
-    
-    # cd ../
-    # dpkg -i *.deb
-
-Now restart jack & mixxx.  
-  
-Now World domination :)
-
 #### Moving your working copy from one system to an other
 
 If you happen to reinstall your system, or move your checkout to an
@@ -229,10 +138,3 @@ this clean out the scons temporary files with the next commands:
 rm -r .sconf_temp/
 rm .sconsign.*                                               
 ```
-
-## Further reading
-
-  - [Compiling on an Asus eeePC](Compiling%20on%20an%20Asus%20eeePC)
-  - [Mixxx on Fedora](Mixxx%20on%20Fedora)
-  - [eclipse](eclipse)
-  - [QtCreator](QtCreator)

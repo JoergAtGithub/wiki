@@ -232,7 +232,9 @@ way we prefer you to submit branches is via GitHub pull requests.
 for, those commits will be included in the pull request.** To address
 comments of reviewers, push new commits to the same branch that you
 opened the pull request for. To work on a different bug or feature,
-checkout the master or beta branch then create a new branch.
+checkout the master or beta branch then create another branch so your
+new changes are not included in the pull request that you already
+opened.
 
 # Keeping Track of Updates from Other Developers
 

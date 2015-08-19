@@ -1,7 +1,7 @@
 This page contains information on making portable versions of Mixxx to
 use from a USB drive or live DVD.
 
-# Live GNU/Linux Distributions
+# Live GNU/Linux Distributions Featuring Mixxx
 
 These are complete operating systems that boot from USB drives or DVDs
 to run Mixxx without requiring installing any software on the computer.

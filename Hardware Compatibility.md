@@ -128,7 +128,8 @@ of controller support in Mixxx:
     Team
   - Community Support: mappings provided by the Mixxx Community, but the
     Mixxx Team is unable to verify their quality because we don't have
-    the devices ourselves.
+    the devices ourselves. Check the wiki page and forum thread for that
+    controller for an idea of the quality of the mapping.
 
 If your controller does not have a mapping, or the mapping for your
 controller does not work how you would like it to, please consider

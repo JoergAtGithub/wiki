@@ -3,7 +3,7 @@
 Compiling Mixxx is fairly straightforward on Linux. The steps below
 outline what to do in order to compile Mixxx.
 
-## 1\. Install build dependencies
+## Install build dependencies
 
 Mixxx relies on several external libraries for various features.
 
@@ -60,7 +60,7 @@ searching for the package name without the "lib" prefix.
   - libchromaprint
   - libsqlite3
 
-## 2\. Get Mixxx
+## Get Mixxx
 
 If you are still running as root from installing packages, return to
 using your normal unprivileged user account.
@@ -78,7 +78,7 @@ options.)
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
 
-## 3\. Compile and install
+## Compile and install
 
 Once you have the source code, change to the newly created "mixxx"
 directory, and use scons to compile. As a regular user, do:

@@ -129,7 +129,7 @@ If `scons` fails with mysterious errors about not finding dependencies
 that you know are installed, it may be using outdated cached information
 to look for the dependencies. This can happen after upgrading your
 GNU/Linux distribution. To resolve this, try running `scons -c` and
-recompiling.
+recompiling Mixxx.
 
 ## Run without installing
 

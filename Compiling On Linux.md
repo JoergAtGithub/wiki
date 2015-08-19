@@ -82,53 +82,39 @@ To update to the latest version of a git branch, enter (`cd` into) the
 directory you cloned the git repository into and run `git pull`. See
 [Using Git](Using%20Git) for more details.
 
-## Compile
+## Compile and install
 
 Once you have the source code, change to the newly created "mixxx"
-directory. Mixxx uses the [SCons](http://scons.org/) build system rather
-than the more common GNU autotools and GNU make. Running `scons -h`
-shows a complete list of build flags if you'd like to customize. Some of
-those options are explained below. To compile without any special
+directory (run `cd mixxx`). Mixxx uses the [SCons](http://scons.org/)
+build system rather than the more common GNU autotools and GNU make.
+Running `scons -h` in the "mixxx" directory shows a complete list of
+build flags if you'd like to customize. To compile without any special
 options, as a regular user, do:
 
-    cd mixxx  # To enter the repository.
-    scons optimize=native
+    scons optimize=native -jNUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
+
+Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that many
+threads at a time while compiling. This speeds up compilation on
+multicore CPUs.
+
+Once Mixxx has compiled, if you set the prefix options for scons to a
+directory that your normal user does not have write access to, run
+
+    sudo scons prefix=INSTALLATION_DIRECTORY install
+
+to install it. If you set the prefix to a directory your user does have
+write access to, then you do not need `sudo` before `scons`. The prefix
+option must be the same as before or scons will recompile Mixxx before
+installing it. If you do not specify an INSTALLATION\_DIRECTORY for the
+prefix option, scons will install Mixxx to /usr/local by default.
 
 If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`.
-
-### Multi-threaded build
-
-If you have a multi-core CPU (or just multiple CPUs) use **`scons -j`**
-flag to specify the number of build threads to speed up building.
-Generally, use as many threads as you have cores. (Note that if you have
-a CPU with HyperThreading (which looks like two cores to the OS,) ignore
-the extra apparent one\!)
-
-So for example, if you have two dual-core CPUs for a total of four
-cores, just do: **`scons -j4`**
-
-If you have two single-core HT CPUs, do: **`scons -j2`** even though it
-looks like you have 4 cores. (You don't. Specifying more threads will
-only slow down the build.)
 
 ### Build with m4a/AAC file support
 
 If you want to play m4a files, use **`scons faad=1`** flag. This
 requires the libraries faad2 and libmp4v2 (or libmp4) are installed.
-
-m4a/AAC support will be built as a plugin, which you'll need to load
-with **`--pluginPath`** or by installing Mixxx (see below).
-
-### Build without shoutcast support
-
-If you don't want shoutcast support, use **`scons shoutcast=0`** flag.
-
-## Install
-
-If you want to install Mixxx system-wide, do:
-
-    sudo scons prefix=/usr install
 
 ## Run without installing
 

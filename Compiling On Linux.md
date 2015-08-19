@@ -94,7 +94,7 @@ options, as a regular user, run:
 
     scons prefix=INSTALLATION_DIRECTORY -j NUMBER_OF_CPU_CORES optimize=native
 
-Set INSTALLATION\_DIRECTORY to the location you want to install Mixxx
+Change INSTALLATION\_DIRECTORY to the location you want to install Mixxx
 to. If you want to install Mixxx for all users of the OS, you do not
 need to specify a prefix and can leave it as the default /usr/local. If
 you only want to install Mixxx for your user, you can specify a location

@@ -323,19 +323,19 @@ tested:
 
 #### Cross-Platform
 
-  - [SourceTree](http://www.sourcetreeapp.com/) - Is a free Mercurial
-    and Git Client for Windows and Mac that provides a graphical
-    interface for your Hg and Git repositories. (Tested by Jus on Mac)
-  - [SmartGit/HG](http://www.syntevo.com/smartgithg/) - Is a full
-    featured Git, Mercurial or SVN client for Windows, Mac and Linux. It
-    is free for non-commercial use. (Tested by Jus on Linux)
+  - gitk, comes with git
   - [Git Cola](http://git-cola.github.io/)
 
 #### Windows
 
+  - [TortoiseGit](https://tortoisegit.org/)
+  - [Git Extensions](http://gitextensions.github.io/)
+
 #### Mac OS X
 
 #### Linux
+
+  - [GitG](http://freecode.com/projects/gitg)
 
 # Other Resources
 

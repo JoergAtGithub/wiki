@@ -30,7 +30,8 @@ such as [Kate](https://www.kde.org/applications/utilities/kate) or
 [Notepad++](http://notepad-plus-plus.org/). If you're working from a
 text terminal, [GNU Nano](http://www.nano-editor.org/) also supports
 syntax highlighting, though it's not quite as thorough as many of the
-graphical ones.
+graphical ones. See [Development Tools](Development%20Tools) for more
+information.
 
 ## Adopt an easy bug on Launchpad
 

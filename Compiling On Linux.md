@@ -63,7 +63,8 @@ searching for the package name without the "lib" prefix.
 ## Get Mixxx
 
 If you are still running as root from installing packages, return to
-using your normal unprivileged user account.
+using your normal unprivileged user account (press Ctrl + D or run
+`exit`).
 
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release from our [downloads

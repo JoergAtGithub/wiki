@@ -58,9 +58,13 @@ And don't forget to ask if you get stuck\!
 
 <https://help.github.com/articles/using-pull-requests>
 
-## Fix issues from codereview
+## Fix issues from code review
 
-This is the most annoying part. Because we are sometimes neat picker ;-)
+This is the most annoying part. Because we are sometimes nit pickers ;-)
+Don't take it personally if there are a lot of changes requested. Code
+review is important to make sure that Mixxx continues to run reliably
+and quickly. It is also important so that Mixxx remains maintainable so
+we can keep making it better without having to make huge changes.
 
 Be sure that you code follows the Mixxx [coding
 guidelines](coding%20guidelines) to avoid extra work.

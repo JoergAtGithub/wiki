@@ -560,8 +560,12 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 If your jog wheels doesn't work, or nothing works on the controller
 event when you have carefully read all other ressources, you should be
 aware that this controller stores INSIDE it at least 2 configuration
-items : - Enable/disable Jog Wheels - MIDI channel to use and maybe a
-third one : Jog wheel sensitivity
+items :
+
+  - Enable/disable Jog Wheels
+  - MIDI channel to use
+
+and maybe a third one : Jog wheel sensitivity
 
 on factory defaults, the jog Wheels are enabled and the midi channel
 used is channel 1. the mapping is made for channel 1 only, if your

@@ -121,7 +121,7 @@ If you want to be able to run Mixxx on different types of CPUs, change
 ### Build with m4a/AAC file support
 
 If you want to play m4a files, use **`scons faad=1`** flag. This
-requires the libraries faad2 and libmp4v2 (or libmp4) are installed.
+requires the libraries faad2 and libmp4v2 (or libmp4) to be installed.
 
 ## Clean up
 

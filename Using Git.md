@@ -188,7 +188,7 @@ have staged your changes, you can issue a `git commit` (which will feel
 familiar to `bzr` and `svn`)
 
     emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
-    git add src/engine/enginebuffer.cpp
+    git add src/engine/enginebuffer.cpp # Tip: pressing tab will only autocomplete file names of files that have changed.
     git commit -m "Bugfixes to EngineBuffer."
 
 This commits the change locally only. In contrast to Bazaar and

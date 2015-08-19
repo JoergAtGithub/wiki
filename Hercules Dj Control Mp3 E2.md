@@ -570,7 +570,7 @@ and maybe a third one : Jog wheel sensitivity
 on factory defaults, the jog Wheels are enabled and the midi channel
 used is channel 1. the mapping is made for channel 1 only, if your
 controller is configured for another channel, nothing will work and if
-you launch Mixxx with --controllerDebug parameter, you will have lines
+you launch Mixxx with `--controllerDebug` parameter, you will have lines
 like this one :
 
 ``` 

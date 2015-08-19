@@ -92,7 +92,7 @@ Running `scons -h` in the "mixxx" directory shows a complete list of
 build flags if you'd like to customize. To compile without any special
 options, as a regular user, run:
 
-    scons optimize=native -j NUMBER_OF_CPU_CORES prefix=INSTALLATION_DIRECTORY
+    scons prefix=INSTALLATION_DIRECTORY -j NUMBER_OF_CPU_CORES optimize=native
 
 Set INSTALLATION\_DIRECTORY to the location you want to install Mixxx
 to. If you want to install Mixxx for all users of the OS, you do not
@@ -116,7 +116,7 @@ option must be the same as before or scons will recompile Mixxx before
 installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
-`optimize=native` to `optimize=portable`.
+`optimize=native` to `optimize=portable`
 
 ### Build with m4a/AAC file support
 

@@ -134,7 +134,7 @@ is ready.
 **Every time you start fixing another bug or working on a new feature,
 switch back to the master or beta branch before starting your new
 branch.** This will allow you to propose your new set of changes for
-inclusion of Mixxx independently of what you were working on before. If
+inclusion in Mixxx independently of what you were working on before. If
 you do not do this first, when you make a pull request for inclusion in
 Mixxx (see below), both what you were working on before and your new
 changes will be included in the pull request.

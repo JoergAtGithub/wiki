@@ -79,7 +79,7 @@ plans.
 
 ## Developer Documentation
 
-### Build Mixxx
+### Compile Mixxx From Source Code
 
   - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)

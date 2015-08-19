@@ -102,8 +102,8 @@ plans.
 
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
-  - [Writing unit tests](unit_tests) helps prevent regressions.
-    Essential for new code\!
+  - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
+    is essential for new code\!
 
 ### Code Reference
 

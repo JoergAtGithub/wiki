@@ -326,6 +326,7 @@ tested:
 
   - gitk, comes with git
   - [Git Cola](http://git-cola.github.io/)
+  - <http://meldmerge.org/> helps review diffs
 
 #### Windows
 

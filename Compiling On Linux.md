@@ -153,10 +153,6 @@ To optimize for another CPU, use `optimize=#` where \# is in the range
 6.  K8/Opteron/AMD64
 7.  K8/Opteron/AMD64 w/ SSE3
 
-If you have a Hercules DJ Console, be sure you install the official
-[Hercules Linux
-drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1).
-
 If you wanted to update later to a newer snapshot, you would go back to
 the mixxx directory and run:
 

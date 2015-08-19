@@ -158,6 +158,7 @@ changes will be included in the pull request.
     * master
     
     $ scons install # build latest version of master branch
+    # see http://mixxx.org/wiki/doku.php/start#compile_mixxx_from_source_code for details
     $ mixxx # test new version of mixxx
     
     $ git checkout experimental

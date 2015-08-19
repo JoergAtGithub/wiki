@@ -169,7 +169,7 @@ changes will be included in the pull request.
     $ git branch -d experimental  # requires the branch is fully merged
     $ git branch -D experimental  # deletes the branch regardless of whether it is merged
 
-# Committing Changes
+# Committing changes
 
 **Important: First you need to set your name and email address. If you
 don't do this then your commits will not be associated with your name
@@ -180,6 +180,16 @@ GitHub account.
 
     git config --global user.name "Your Name"
     git config --global user.email "you@example.com"
+
+### Reviewing your changes
+
+Running `git status` will show which files have changes that have not
+been committed. Running `git diff` will show a color coded diff
+comparing your uncommitted changes to the last commit made on that
+branch. A [|GUI client](GUI%20clients) can be particularly helpful for
+this.
+
+### Making the commit
 
 Git is a little different from other version control systems you might
 have tried. Before committing, you first have to tell it what changes

@@ -554,3 +554,24 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 </tr>
 </tbody>
 </table>
+
+## Troubleshooting
+
+If your jog wheels doesn't work, or nothing works on the controller
+event when you have carefully read all other ressources, you should be
+aware that this controller stores INSIDE it at least 2 configuration
+items : - Enable/disable Jog Wheels - MIDI channel to use and maybe a
+third one : Jog wheel sensitivity
+
+on factory defaults, the jog Wheels are enabled and the midi channel
+used is channel 1. the mapping is made for channel 1 only, if your
+controller is configured for another channel, nothing will work.
+
+To change these parameters, you have to use the configuration tool
+shipped by hercules that comes with the hercules driver on on [Hercules
+support
+page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=61&pid=241&cid=1).
+Unfortunately, Hercules only provide it for windows and MacOS, we are
+not aware of any solution for linux. So you will have to find a computer
+with windows, install Hercules driver, plug-in the controller and change
+configuration.

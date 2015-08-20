@@ -518,6 +518,7 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
  * ''<LeftClickIsPushButton>'' is calculated from the connected control and can be omitted.
  * ''<RightClickIsPushButton>'' is calculated from the connected control and can be omitted.
  * Start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml    
+ * Added a style-able launchimage inside the <LaunchImageStyle> tag
 ```
 
 ### Mixxx 1.11.0

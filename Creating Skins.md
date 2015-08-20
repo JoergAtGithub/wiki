@@ -3050,6 +3050,43 @@ group gets a show event, the Singleton widget is reparented to this
 location in the skin. Note that if a Singleton is visible twice at the
 same time, behavior is undefined and could be crashy.
 
+### Launch Image
+
+New in Mixxx 1.12.0
+
+Mixxx features a default launch image that is shown during Mixxx
+launching. It features a centred lable with a progressbar below.
+
+All elements are style-able by Qt stylesheeds as shown in the example
+below:
+
+Example definition:
+
+``` 
+ <LaunchImageStyle>
+     LaunchImage { background-color: #202020; }
+     QLabel {
+         image: url(skin:/style/mixxx-icon-logo-symbolic.png);
+         padding:0;
+         margin:0;
+         border:none;
+         min-width: 208px;
+         min-height: 48px;
+         max-width: 208px;
+         max-height: 48px;
+     }
+     QProgressBar {
+         background-color: #202020;
+         border:none;
+         min-width: 208px;
+         min-height: 3px;
+         max-width: 208px;
+         max-height: 3px;
+     }
+     QProgressBar::chunk { background-color: #ec4522; }
+ </LaunchImageStyle>
+```
+
 # Convert a Mixxx skin.xml into HTML
 
 Deprecated in Mixxx 1.11

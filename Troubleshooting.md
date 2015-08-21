@@ -134,6 +134,11 @@ whether your controller is a MIDI controller or HID controller, search
 for it on the [DJ Hardware Guide](hardware%20compatibility). If it is
 not listed there, it is most likely a MIDI device.
 
+Some controllers have their own pecularities that are noted on their own
+wiki pages. If the information below does not solve your problem, check
+the wiki page for your controller, which you can find a link to on the
+[DJ Hardware Guide](hardware%20compatibility).
+
 ### MIDI controllers on GNU/Linux
 
 Make sure that the snd-seq-midi kernel module has been loaded. Open a

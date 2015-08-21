@@ -557,13 +557,15 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 
 ## Troubleshooting
 
-first, see [Troubleshooting](troubleshooting) and be sure to have
-configured MIDI driver or HID udev rules like explained on top of this
-page.
+First, see
+[Troubleshooting](troubleshooting#My%20controller%20does%20not%20work)
+and be sure you have set up an HID udev rule like explained on top of
+this page.
 
 If your jog wheels doesn't work, or nothing works on the controller even
 when you have carefully read all other resources, you should be aware
-that this controller stores INSIDE it at least 2 configuration items :
+that this controller stores at least two configuration options in the
+controller:
 
   - Enable/disable Jog Wheels
   - MIDI channel to use

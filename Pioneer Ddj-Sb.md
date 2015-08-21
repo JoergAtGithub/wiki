@@ -26,7 +26,7 @@ try using a different Sound API (see the Preferences menu). DirectSound
 seems to have issues with this controller. WASAPI seems to work fine, as
 does MME, although only with higher latencies.
 
-### Mac OS X / Linux
+### Mac OS X & Linux
 
 You don't need any drivers on Mac OS X and Linux.
 

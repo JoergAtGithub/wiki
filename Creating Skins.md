@@ -3119,3 +3119,7 @@ scheme applied)~~
     Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool) - A "walkthrough"
     on creating schemes, includes a link to an online Javascript tool
     that will help determine correct HSVTweak values.
+  - [Skin layout tutorial](Skin%20layout%20tutorial) - A walkthrough on
+    creating a minimal skin, with focus on the common problems a skin
+    designer will encounter when setting the layout of various skin
+    elements.

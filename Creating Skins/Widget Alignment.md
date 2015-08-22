@@ -42,8 +42,3 @@ for **'AlignVCenter | AlignHCenter'**.
 ## Examples
 
 Let's see how alignment works through a series of examples.
-
-The only widgets in Mixxx skin system that accept alignment properties
-are WidgetGroups. A WidgetGroup can handle the alignment properties no
-matter what its parent is, i.e. another WidgetGroup, a WidgetStack, a
-SizeAwareStack, an Splitter or the skin

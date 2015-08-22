@@ -19,8 +19,8 @@ can for example completely customize how a knob looks by drawing the
 appropriate image with a graphics editor.
 
 To create your skin the first thing you have to do is create a folder in
-the [Mixxx resource folder](/creating_skins#skin_faq) called *Minimal*,
-which is the name of the skin.
+the [Mixxx resource folder](Mixxx%20resource%20folder) called
+**Minimal**, which is the name of the skin.
 
 balblabla posar resum de metodes per aconseguir algu centrat, widgets
 que redimensionen segons els parents etc...

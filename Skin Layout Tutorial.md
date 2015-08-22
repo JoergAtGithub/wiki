@@ -33,6 +33,8 @@ que redimensionen segons els parents etc...
 
 overlapping widgets
 
+un widget nomes es veu a traves de la zona que ocupa el parent
+
 1.  Widgets are the graphical user interface elements that form a skin,
     e.g. a knob or a text showing the title of a playing track
 

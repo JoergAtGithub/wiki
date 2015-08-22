@@ -11,14 +11,16 @@ up looking like this: POSAR FOTO AKI
 
 A Mixxx skin is just a folder with various text files and images. The
 text files define what widgets\[1\] will be part of the skin, as well as
-its properties, such as position and size. Text files are written in
+its properties, such as position and size. They are written in
 [XML](https://en.wikipedia.org/wiki/XML), see [Introduction to
-XML](Introduction%20to%20XML) The images are used by Mixxx to represent
-widgets on screen\[2\], so you can for example completely customize how
-a knob looks by drawing the appropriate image with a graphics editor.
+XML](Introduction%20to%20XML) if you are not familiar with the language.
+The images are used by Mixxx to represent widgets on screen\[2\], so you
+can for example completely customize how a knob looks by drawing the
+appropriate image with a graphics editor.
 
-The skin.xml defines all the elements (widgets) of the skin, what the
-images are used for and and where they are placed on screen.
+To create your skin the first thing you have to do is create a folder in
+the [Mixxx resource folder](/creating_skins#skin_faq) called *Minimal*,
+which is the name of the skin.
 
 balblabla posar resum de metodes per aconseguir algu centrat, widgets
 que redimensionen segons els parents etc...

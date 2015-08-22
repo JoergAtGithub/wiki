@@ -48,7 +48,7 @@ the sake of simplicity.
 
 [[/media/creating_skins/skin_example_1.png|Skin first example]]
 
-The are the skin.xml and the style.qss files:
+This are the skin.xml and the style.qss files:
 
 ``` xml
 <!DOCTYPE skin>

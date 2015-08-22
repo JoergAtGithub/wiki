@@ -18,12 +18,20 @@ The images are used by Mixxx to represent widgets on screen\[2\], so you
 can for example completely customize how a knob looks by drawing the
 appropriate image with a graphics editor.
 
-To create your skin the first thing you have to do is create a folder in
-the [Mixxx resource folder](Mixxx%20resource%20folder) called
-**Minimal**, which is the name of the skin.
+To create your skin the first thing you have to do is create the skin
+folder in the [Mixxx resource folder](Mixxx%20resource%20folder) and
+name it **Minimal**, which is the name of the skin.
+
+## Widget alignment
+
+[Widget alignment](/creating_skins/Widget%20alignment)
+
+## Overlapping widgets
 
 balblabla posar resum de metodes per aconseguir algu centrat, widgets
 que redimensionen segons els parents etc...
+
+overlapping widgets
 
 1.  Widgets are the graphical user interface elements that form a skin,
     e.g. a knob or a text showing the title of a playing track

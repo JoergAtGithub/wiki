@@ -41,4 +41,61 @@ for **'AlignVCenter | AlignHCenter'**.
 
 ## Examples
 
-Let's see how alignment works through a series of examples.
+Let's see how alignment works through a series of examples. We have the
+following skin consisting of a clock and a blue empty WidgetGroup that
+we would normally fill with other widgets, but let's keep it empty for
+the sake of simplicity.
+
+The skin.xml file is as follows:
+
+``` xml
+<!DOCTYPE skin>
+<skin>
+  <manifest>
+    <title>WidgetAlignment</title>
+    <author>Ferran Pujol Camins</author>
+    <version>1.12.0.01</version>
+    <description>An example skin showing how to properly align widgets.</description>
+    <language>en</language>
+    <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
+    <attributes>
+      <attribute config_key="[Master],num_decks">2</attribute>
+    </attributes>
+  </manifest>
+
+  <ObjectName>Mixxx</ObjectName>
+  <Style src="skin:style.qss"/>
+
+  <MinimumSize>640,480</MinimumSize>
+  <SizePolicy>me,me</SizePolicy>
+  <Layout>horizontal</Layout>
+
+  <Children>
+    <WidgetGroup>
+      <ObjectName>SkinStuff</ObjectName>
+      <Size>200,10me</Size>
+      <Children></Children>
+    </WidgetGroup>
+
+    <Time>
+      <ObjectName>Clock</ObjectName>
+      <SizePolicy>min,min</SizePolicy>
+    </Time>
+  </Children>
+</skin>
+```
+
+``` css
+#Mixxx {
+  background-color: #000000;
+}
+
+#SkinStuff {
+  background-color: #100030;
+}
+
+#Clock {
+  font: bold 23px;
+  color: #FFFFFF;
+}
+```

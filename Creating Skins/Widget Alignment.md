@@ -66,7 +66,7 @@ The skin.xml file is as follows:
   <ObjectName>Mixxx</ObjectName>
   <Style src="skin:style.qss"/>
 
-  <MinimumSize>640,480</MinimumSize>
+  <MinimumSize>500,200</MinimumSize>
   <SizePolicy>me,me</SizePolicy>
   <Layout>horizontal</Layout>
 

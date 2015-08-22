@@ -11,8 +11,8 @@ Widget in the WidgetGroup horizontally and vertically.
 centered](/creating_skins/widget_center_alignment.svg)
 
 However, we can vertically align the Widget on top or on bottom of the
-WidgetGroup available space, and likewise for the horizontal alignment.
-This gives us nine possible alignments for the Widget:
+space the WidgetGroup occupies, and likewise for the horizontal
+alignment. This gives us nine possible alignments for the Widget:
 
 ![Possible Widget
 alignments](/creating_skins/widget_possible_alignments.svg)

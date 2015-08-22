@@ -46,6 +46,8 @@ following skin consisting of a clock and a blue empty WidgetGroup that
 we would normally fill with other widgets, but let's keep it empty for
 the sake of simplicity.
 
+[[/media/creating_skins/skin_example_1.png|Skin first example]]
+
 The skin.xml file is as follows:
 
 ``` xml

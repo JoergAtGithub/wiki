@@ -97,5 +97,6 @@ The skin.xml file is as follows:
 #Clock {
   font: bold 23px;
   color: #FFFFFF;
+  background-color: #300010;
 }
 ```

@@ -1,6 +1,6 @@
 # Widget alignment
 
-The children of a WidgetGroup (or the **skin** node) can be aligned
+The children of a WidgetGroup (or of the **skin** node) can be aligned
 vertically and horizontally in its available space. For example, imagine
 we have a WidgetGroup (depicted as the red box in the drawing) that
 contains a Widget (depicted as the green box). The size of the

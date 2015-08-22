@@ -11,10 +11,11 @@ up looking like this: POSAR FOTO AKI
 
 A Mixxx skin is just a folder with various text files and images. The
 text files define what widgets\[1\] will be part of the skin, as well as
-its properties, such as position and size. The images are used by Mixxx
-to represent widgets on screen\[2\], so you can for example completely
-customize how a knob looks by drawing the appropriate image with a
-graphics editor.
+its properties, such as position and size. Text files are written in
+[XML](https://en.wikipedia.org/wiki/XML), see [Introduction to
+XML](Introduction%20to%20XML) The images are used by Mixxx to represent
+widgets on screen\[2\], so you can for example completely customize how
+a knob looks by drawing the appropriate image with a graphics editor.
 
 The skin.xml defines all the elements (widgets) of the skin, what the
 images are used for and and where they are placed on screen.

@@ -36,8 +36,8 @@ like this:
 
     'AlignHCenter | AlignTop'
 
-An additional **AlignCenter** value can be specified. It is a shorthand
-for **'AlignVCenter | AlignHCenter'**.
+Also, **AlignCenter** value can be specified. It is a shorthand for
+**'AlignVCenter | AlignHCenter'**.
 
 ## Examples
 

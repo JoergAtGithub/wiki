@@ -430,6 +430,12 @@ Using the `goto` statement is not allowed. Typically uses of `goto` are
 better handled by the C++ idiom of [Resource Acquisition Is
 Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization).
 
+### virtual
+
+The "virtual" modifier is inherited by all implementations of that
+method in derived classes. Keep redundant virtual keywords in derived
+function implementation for documentation purpose.
+
 ## C++11
 
 As of the Mixxx 2.0 release, Mixxx is switching to C++11. We are taking

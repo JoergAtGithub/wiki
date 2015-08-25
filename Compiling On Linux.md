@@ -26,7 +26,7 @@ Then run:
 
     su
     dnf groupinstall "Development Tools"
-    dnf install scons git gcc-c++ rubberband-devel
+    dnf install scons gcc-c++ rubberband-devel
     dnf builddep mixxx
 
 ### Other

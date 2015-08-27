@@ -643,3 +643,9 @@ Use.
 
 For now, prefer using Qt atomic primitives. We may switch at some
 point... atomically. 8-)
+
+### inherited constructors
+
+Do not use -- [not supported in
+VC2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx), which
+our build system and many windows developers rely on.

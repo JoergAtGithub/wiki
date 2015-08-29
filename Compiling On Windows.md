@@ -20,14 +20,15 @@ page](Build%20Windows%20installer).)*
   - [Python](http://python.org/download/) 2.7.x Install for user only\!
     Otherwise scons can't find the installation
   - [SCONS 2.3.3](http://www.scons.org/download.php)
-  - A Git client like
+  - Install [CMake 3.3.x](http://www.cmake.org/download) with default
+    options. The CMake directory does not need to be added to the PATH
+    environment variable.
+  - A Git client like [Git for
+    Windows](https://git-scm.com/download/win),
     [TortoiseGit](https://code.google.com/p/tortoisegit/) or the [github
     windows
     client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
     (featuring a unix like command line)
-  - Install [CMake 3.3.x](http://www.cmake.org/download) with default
-    options. The CMake directory does not need to be added to the PATH
-    environment variable.
 
 ### Prepare build environment
 

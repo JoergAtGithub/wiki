@@ -25,9 +25,9 @@ page](Build%20Windows%20installer).)*
     windows
     client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
     (featuring a unix like command line)
-  - [CMake 3.3.x](http://www.cmake.org/download) Install with the
-    default options. The CMake directory does not need to be added to
-    the PATH environment variable.
+  - Install [CMake 3.3.x](http://www.cmake.org/download) with default
+    options. The CMake directory does not need to be added to the PATH
+    environment variable.
 
 ### Prepare build environment
 

@@ -73,8 +73,8 @@ Click on the image for a bigger version.*
 - Listen to this deck unmixed on the headphones
 - Deck volume adjusts the output volume of the respective deck
 - Crossfader
-- Pitch adjustment. Pressing the Vinyl button will take bigger steps
-- Adjust tempo. Pressing both buttons together resets to the original tempo.
+- Temporary pitch shift. Pressing the Vinyl button increases the shift.
+- Adjust tempo. Pressing both buttons together resets to the original tempo. Pressing the Vinyl button takes the steps bigger.
 - Fast forward and backward buttons for the respective decks
 - Sync tempo of this deck to the tempo of the other deck
 - If pressed while paused sets the cue and when held plays from the cue, when pressed during playback jumps to the cue.

@@ -64,7 +64,7 @@ Click on the image for a bigger version.*
     * **3:** Play Sample 3
     * **4:** Play Sample 4 
 - Mode status display. The current mode is glowing or if none is on, Hot Cues are enabled
-- Headphone volume buttons
+- Headphone volume controls
 - No direct use, used as a button to add a second layer of controls
 - Switch the current mode for both decks
 - Knobs to adjust the EQ of the deck they are on. Top knob adjusts highs, middle knob the mids and bottom know the lows.

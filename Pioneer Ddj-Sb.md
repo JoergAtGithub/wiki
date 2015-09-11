@@ -203,8 +203,8 @@ Over the jogwheels there are sections allowing to control effects.
 
 Turning the knobs will control the wet/dryness of an effect.
 
-Turning the knobs while holding one of the three FX buttons while
-control the first, second or third parameter of an effect, respectively.
+Turning the knobs while holding one of the three FX buttons will control
+the first, second or third parameter of an effect, respectively.
 
 If holding shift when using the knobs the "super" parameter can be
 controlled.

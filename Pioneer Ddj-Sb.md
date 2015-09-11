@@ -68,7 +68,7 @@ The filter fade button allows to use the crossfader in an innovative way
 that fades accross songs through filtering instead of fading.
 
 There is no trim/gain knob, but the same effect can be achieved by using
-either the filter knobs or the FX knobs while holding shift.
+the filter knobs while holding shift.
 
 ### Jogwheels, tempo & vinyl mode
 
@@ -206,16 +206,16 @@ Turning the knobs will control the wet/dryness of an effect.
 Turning the knobs while holding one of the three FX buttons while
 control the first, second or third parameter of an effect, respectively.
 
-Pressing the FX buttons while holding shift will toggle and effect for
-deck 1, deck 2 or the headphone cue, respectively.
+If holding shift when using the knobs the "super" parameter can be
+controlled.
 
-Toggling the effects for decks 3 and 4 is more complicated: this is done
-with the pads. First press shift + manual loop to enter "kill mode".
-Then pressing pads 3 and 4 while holding shift will toggle the effects
-for decks 3 and 4 respectively.
+Pressing the central FX button (number 2) while holding shift will
+toggle the effect for the headphones, while the left and right buttons
+(number 1 and 3) will toggle the effect for the active deck in the left
+and right sides of the controller respectively.
 
-You can also switch between effects by entering "kill mode" and using
-pads 1 and 2 while holding shift.
+You can choose between effects by entering "kill mode" and using pads 1
+and 2 while holding shift.
 
 ### Channel fader start
 

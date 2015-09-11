@@ -190,7 +190,7 @@ included in Mixxx. There may be other mappings more suited to your
 workflow on [the forum](http://www.mixxx.org/forums/viewforum.php?f=7).
 
 Do not add mappings to this list until they have been included in Mixxx.
-If you make a mapping a mapping for a controller, please add it to the
+If you make a mapping for a controller, please add it to the
 [\#Mappings-In-Development](#Mappings-In-Development)-table-and-[make a
 pull request](midi-scripting#setting-up-git) on GitHub to include it in
 Mixxx when it is ready. When the pull request is merged, move your
@@ -212,6 +212,7 @@ controller to this table.
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900              | CD player                                                  | no                              | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
 | [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000             | CD player                                                  | no                              | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | $250              | 2 deck all-in-one                                          | yes                             | MIDI\[9\]       | 1.12                          |
 | [Akai MPD24](Akai%20MPD24)                                                                         | discontinued      | 2 deck mixer                                               | no                              | MIDI            | 1.8                           |
 | [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued      | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.11                          |
 | [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued      | CD player                                                  | no                              | MIDI            | 1.10                          |
@@ -229,17 +230,17 @@ controller to this table.
 | [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued      | 2 deck mixer                                               | no                              | MIDI            | 1.8.2                         |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued      | 2 deck all-in-one                                          | no                              | HID             | 1.11                          |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                          | yes                             | HID             | 1.11                          |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[9\]      | 1.7                           |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                          | yes                             | HID \[10\]      | 1.8                           |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[10\]     | 1.7                           |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                          | yes                             | HID \[11\]      | 1.8                           |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued      | 2 deck all-in-one                                          | no                              | HID             | 1.11                          |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.8                           |
 | [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued      | 2 decks                                                    | yes                             | MIDI \[11\]     | 1.7                           |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued      | 2 decks                                                    | yes                             | MIDI \[12\]     | 1.7                           |
 | [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202%20Pro)                                   | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.10.1                        |
 | [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
-| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | 2 deck mixer, hotcues, loops                               | no                              | MIDI \[12\]     | 1.11                          |
+| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | 2 deck mixer, hotcues, loops                               | no                              | MIDI \[13\]     | 1.11                          |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
-| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[13\]     | 1.10                          |
+| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[14\]     | 1.10                          |
 | [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.6                           |
 | [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.8.2                         |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.10                          |
@@ -247,7 +248,7 @@ controller to this table.
 | [Numark V7](Numark%20V7)                                                                           | discontinued      | 2 deck motorized wheel                                     | yes                             | MIDI            | 1.10                          |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued      | CD player                                                  | no                              | MIDI or HID     | 1.8.2 (MIDI)                  |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[14\]     | 1.8                           |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[15\]     | 1.8                           |
 | [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                                             | yes                             | MIDI            | 1.6.2                         |
 | [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.6                           |
 | [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
@@ -280,9 +281,8 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 |                                                      |                    |                   |                       |                       |
 | ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------------- |
-| Device                                               | Price (USD) \[15\] | Description       | Integrated sound card | Signal protocol       |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI\[16\] (and HID?) |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                   | $250               | 2 deck all-in-one | yes                   | MIDI\[17\]            |
+| Device                                               | Price (USD) \[16\] | Description       | Integrated sound card | Signal protocol       |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI\[17\] (and HID?) |
 
 ### Controllers that do not yet have Mixxx mappings
 
@@ -662,23 +662,21 @@ Numark DJ iO 1 or 2 though.
 8.  This controller has physical controls for 2 decks, but deck toggle
     buttons in the Mixxx mapping allow it to control 4 decks.
 
-9.  This device is not USB MIDI class compliant. Its signals are
+9.  High resolution MIDI
+
+10. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Mac OS X. There is no
     driver available for Linux or Windows.
 
-10. with MIDI driver. For Linux support, see [this forum
+11. with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-11. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+12. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
-
-12. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
 
 13. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Windows and Mac OS X. There
@@ -688,7 +686,11 @@ Numark DJ iO 1 or 2 though.
     translated to MIDI by special drivers on Windows and Mac OS X. There
     is no driver available for Linux.
 
-15. Prices listed on this page are the prevailing prices for unused
+15. This device is not USB MIDI class compliant. Its signals are
+    translated to MIDI by special drivers on Windows and Mac OS X. There
+    is no driver available for Linux.
+
+16. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop). You may be able to find
     hardware available for sale cheaper. Devices are marked as
@@ -697,8 +699,6 @@ Numark DJ iO 1 or 2 though.
     widely available online. They may or may not still be available used
     online. If the price of a device has dropped or it has been
     discontinued, please update this page.
-
-16. High resolution MIDI
 
 17. High resolution MIDI
 

@@ -3,11 +3,10 @@
 This is a brief step by step description about a typical work flow of
 fixing a first Mixxx bug. Follow the links for more details.
 
-## Fork Mixxx on GitHub
-
-The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
-
-<https://help.github.com/articles/fork-a-repo>
+Buddha Institute of Digital Marketing\&Technology is an initiative of
+and buddha infotech, an internet marketing \&technology companies
+website: <http://bidmt.in/> cantact: 9145664605, +91-7235072805,
+05512283308
 
 ## Create a Local Branch
 

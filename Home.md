@@ -65,12 +65,6 @@ plans.
     forum](http://mixxx.org/forums/viewforum.php?f=7): search for
     mappings, share your mappings, and ask for help
 
-<!-- end list -->
-
-``` 
-* 
-```
-
 ## Skin Documentation
 
   - [Creating Skins](Creating%20Skins)

@@ -99,10 +99,10 @@ have your mapping included in Mixxx, start by creating a
 [GitHub](http://github.com/) account and [forking
 Mixxx](https://github.com/mixxxdj/mixxx). On GNU/Linux and Mac OS X, you
 can directly work on your mapping in your git repository while running
-Mixxx to test your changes. To do this, delete the "controllers"
+Mixxx to test your changes. To do this, delete the `controllers`
 directory in your user preferences folder (backup any work in progress
 that you do not want to lose first\!) and make a symbolic link to the
-"res/controllers" directory in your git repository. For example, if your
+`res/controllers` directory in your git repository. For example, if your
 git repository is under the "software" directory in your home directory
 on GNU/Linux, run:
 

@@ -205,11 +205,11 @@ series of hexidecimal numbers:
 ##### Windows
 
 You can download [tail.exe](http://tailforwin32.sourceforge.net/) to
-watch mixxx.log as new messages are added or [build
-Mixxx](Compiling%20on%20Windows) with `scons msvcdebug=1` and run it
-with the `--midiDebug` option. This will cause it to pop up a console
-window when you run it and the MIDI messages received by your controller
-will be displayed there.
+watch [mixxx.log](troubleshooting#where%20is%20the%20mixxxlog%20file) as
+new messages are added or [build Mixxx](Compiling%20on%20Windows) with
+`scons msvcdebug=1` and run it with the `--midiDebug` option. This will
+cause it to pop up a console window when you run it and the MIDI
+messages received by your controller will be displayed there.
 
 ##### Mac OSX
 

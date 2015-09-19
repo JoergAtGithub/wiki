@@ -445,7 +445,8 @@ Available DJ splitter cables:
   - [Native Instruments Traktor DJ
     Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/):
     $10
-  - [Griffin DJ Cable](https://store.griffintechnology.com/dj-cable):
+  - [Griffin DJ
+    Cable](https://griffintechnology.com/us/products/audio/dj-accessories/dj-cable):
     $20
 
 ### What to look for in a sound card

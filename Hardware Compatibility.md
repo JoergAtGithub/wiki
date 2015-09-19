@@ -358,7 +358,7 @@ map than HID controllers.
 
 Native Instruments' newer DJ controllers are USB HID class compliant
 devices
-(\[[http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/|source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/%7Csource)\]).
+([source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/)).
 The Windows and Mac OS X drivers can translate the HID signals to MIDI,
 but this is not available on GNU/Linux. So, if you make a mapping for
 these controllers, please make an HID mapping so it is compatible with

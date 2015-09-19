@@ -357,10 +357,12 @@ map than HID controllers.
 #### Note regarding Native Instruments controllers
 
 Native Instruments' newer DJ controllers are USB HID class compliant
-devices. The Windows and Mac OS X drivers can translate the HID signals
-to MIDI, but this is not available on GNU/Linux. So, if you make a
-mapping for these controllers, please make an HID mapping so it is
-compatible with every OS that Mixxx runs on.
+devices
+(\[[http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/|source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/%7Csource)\]).
+The Windows and Mac OS X drivers can translate the HID signals to MIDI,
+but this is not available on GNU/Linux. So, if you make a mapping for
+these controllers, please make an HID mapping so it is compatible with
+every OS that Mixxx runs on.
 
 Native Instruments' older DJ controllers use a proprietary protocol
 called NHL that Mixxx does not support. The Windows and Mac OS X drivers

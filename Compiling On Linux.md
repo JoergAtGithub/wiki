@@ -1,7 +1,9 @@
 # Compiling on Linux
 
-Compiling Mixxx is fairly straightforward on Linux. The steps below
-outline what to do in order to compile Mixxx.
+Compiling software is the process of turning human readable source code
+into machine readable code that a computer can execute. Compiling Mixxx
+is fairly straightforward on Linux. The steps below outline what to do
+in order to compile Mixxx.
 
 ## Install build dependencies
 

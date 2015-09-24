@@ -18,7 +18,7 @@ scripting](MIDI%20scripting) with JavaScript for a complete mapping.
 If you are unfamiliar with how MIDI works, see the [MIDI Crash
 Course](MIDI%20Crash%20Course).
 
-# XML Crash Course
+## XML Crash Course
 
 Mixxx uses a well defined XML format to store its MIDI mappings. It is
 easy to learn the basics of XML so you can edit Mixxx mappings. If you

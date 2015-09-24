@@ -1,7 +1,13 @@
 # MIDI Crash Course
 
 This page is a brief introduction to MIDI that should explain what you
-need to know to map MIDI controllers to Mixxx.
+need to know to map MIDI controllers to Mixxx. An explanation of the
+MIDI signals that your controller sends to computers and how it reacts
+to MIDI signals that computers send to it should be available from the
+controller manufacturer (unfortunately, some manufacturers do not
+provide this). This is likely in a document on the product page for your
+controller on the manufacturer's website. If it is not in a separate
+document, it is likely at the end of the manual.
 
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this

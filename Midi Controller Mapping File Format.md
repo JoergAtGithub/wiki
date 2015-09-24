@@ -25,10 +25,10 @@ XML is very similar.
 
 ## Header
 
-Each XML mapping file starts with a header like this one:
+Each XML mapping file starts with a header with metadata:
 
     <?xml version="1.0" encoding="utf-8"?>
-        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.7.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
+        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.11.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
         <info><!-- Optional but recommended - information about the preset file -->
             <name>Example MIDI Preset for Mixxx</name>
             <author>Tom Care</author>
@@ -36,24 +36,18 @@ Each XML mapping file starts with a header like this one:
                     <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
                     <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
         </info>
+        <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
 
 The first part of the file defines the version of the mapping (for
-future compatibility, as the Mixxx MIDI abilities become more complex)
-and an optional info tag which contains information about the preset
-(primarily used for distribution of presets). While optional, all info
-fields are visible in Mixxx controller configuration dialogs and we
-highly recommend properly filling in all fields, creating appropriate
-documentation pages to wiki and forums if necessary.
+future compatibility, as the Mixxx MIDI abilities become more complex).
+The child elements of the \<info\> element are used to display info
+about the mapping in the Mixxx controller preferences.
 
-**Note:** When a preset does not have a name in its \<info\> section,
-Mixxx 1.11+ use the filename without extension.
-
-``` 
-    <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
-```
-
-The "controller id" is the brand & model of the controller, e.g.
-"Stanton SCS.3d". Leave "port" empty.
+(When a preset does not have a name in its \<info\> section, Mixxx 1.11+
+use the filename without extension.) The \<controller\> element
+specifies what controller this mapping is for. Write the brand & model
+of the controller, e.g. "Stanton SCS.3d" in the id attribute. Leave
+"port" empty.
 
 ## Inputs
 

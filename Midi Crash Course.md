@@ -2,8 +2,8 @@
 
 MIDI (Musical Instrument Digital Interface) is a standard for electronic
 musical devices to communicate. This page is a brief introduction to
-MIDI that should explain what you need to know to map MIDI controllers
-to Mixxx.
+MIDI that should explain what you need to know to [map MIDI controllers
+to Mixxx](start#controller%20mapping%20documentation).
 
 MIDI is a widely used standard that a lot of hardware and software
 support. It dates back to the 1980s when it was used to make

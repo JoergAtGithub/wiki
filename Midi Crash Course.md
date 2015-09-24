@@ -9,8 +9,11 @@ MIDI is a widely used standard that a lot of hardware and software
 support. It dates back to the 1980s when it was used to make
 synthesizers, samplers, and sequencers communicate. These older devices
 used cables with 5-pin DIN connectors to carry MIDI signals. Most MIDI
-devices today send the MIDI signals over a USB cable, although some also
-can use cables with the 5-pin DIN connectors.
+devices today send the MIDI signals over a USB cable. Some modern
+devices can also can use cables with the 5-pin DIN connectors for
+compatibility with older equipment and the ability to use MIDI without
+being plugged into a computer (although they need to be plugged into
+another power source without the USB cable supplying power).
 
 Controllers that comply with the USB MIDI class standard (also called
 "class compliant" devices) do not require any special drivers. Most

@@ -27,6 +27,14 @@ Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
 tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
 
+An explanation of the MIDI signals that your controller sends to
+computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website or in the support section of the website. If it is not in a
+separate document, it is likely at the end of the manual. Unfortunately,
+not every manufacturer provides this information.
+
 ## MIDI Messages
 
 Most MIDI messages are three bytes long. The first byte of any MIDI
@@ -99,26 +107,18 @@ Endless encoders that you can turn continuously typically send messages
 with an op-code of `0xB` and the value only indicates whether the
 encoder is being turned left or right.
 
-\<\!-- Please add info about typical jog wheel behavior here. --\>
-
 ## Sniffing your controller with Mixxx
 
 *First, try using the MIDI Learn functionality in the Preferences-\>MIDI
 Devices window at the bottom. It will help you get many of the essential
 functions mapped quickly without having to manually edit XML.*
 
-An explanation of the MIDI signals that your controller sends to
-computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer. This is likely in
-a document on the product page for your controller on the manufacturer's
-website or in the support section of the website. If it is not in a
-separate document, it is likely at the end of the manual.
-
-Unfortunately, some manufacturers do not provide this information. In
-that case, you have to see what signals the controller sends to be able
-to map it, which you can do with Mixxx. Even if the manufacturer does
-provide MIDI documentation, it may be easier to sniff your controller
-with Mixxx than keep looking up numbers in the documentation.
+Unfortunately, some manufacturers do not provide information about the
+MIDI signals used by the controllers they make. In that case, you have
+to see what signals the controller sends to be able to map it, which you
+can do with Mixxx. Even if the manufacturer does provide MIDI
+documentation, it may be easier to sniff your controller with Mixxx than
+keep looking up numbers in the controller's documentation.
 
 1.  Start Mixxx from a command prompt using the `--midiDebug` option
     like so: 

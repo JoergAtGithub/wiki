@@ -159,6 +159,9 @@ range. (Useful for LED sequences.)
 
 ## Closing
 
+Don't forget to close the elements that were opened at the top of the
+file.
+
 ``` 
     </controller>
 </MixxxMIDIPreset>

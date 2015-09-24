@@ -50,7 +50,7 @@ Each XML mapping file starts with a header with metadata:
 
     <?xml version="1.0" encoding="utf-8"?>
         <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.11.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
-        <info><!-- Optional but recommended - information about the preset file -->
+        <info>
             <name>Example MIDI Preset for Mixxx</name>
             <author>Tom Care</author>
             <description>This is an example XML MIDI preset for Mixxx. The scope of the preset could be from a small functionality addition, to a complete mapping for a controller, to a complex personal setup with multiple controllers. This description is intended for distribution and could include comments about the extent of the functionality.</description>
@@ -59,13 +59,12 @@ Each XML mapping file starts with a header with metadata:
         </info>
         <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once -->
 
-The first part of the file defines the version of the mapping (for
-future compatibility, as the Mixxx MIDI abilities become more complex).
-The child elements of the \<info\> element are used to display info
-about the mapping in the Mixxx controller preferences.
-
-(When a preset does not have a name in its \<info\> section, Mixxx 1.11+
-use the filename without extension.)
+The schemaVersion and mixxxVersion attributes of the MixxxMIDIPreset
+element are important for future compatibility as the Mixxx MIDI mapping
+format changes. The child elements of the \<info\> element are used to
+display information about the mapping in the Mixxx controller
+preferences. (When a preset does not have a name in its \<info\>
+section, Mixxx 1.11+ use the filename without extension.)
 
 Write the brand and model of the controller (for example, "Stanton
 SCS.3d") in the id attribute of the \<controller\> element. The

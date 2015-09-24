@@ -50,6 +50,9 @@ lots of comments with links to the MDN JavaScript Reference. It may be
 helpful as a quick introduction to the language for experienced
 programmers.
 
+If you are unfamiliar with MIDI, see the [MIDI Crash
+Course](MIDI%20Crash%20Course) page.
+
 **Tip:** If there is already a Mixxx mapping for a controller made by
 the same manufacturer as your controller, you may want to look at that
 mapping for examples. The controllers likely send similar types of

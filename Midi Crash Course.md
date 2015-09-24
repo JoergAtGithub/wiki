@@ -1,19 +1,28 @@
 # MIDI Crash Course
 
-This page is a brief introduction to MIDI that should explain what you
-need to know to map MIDI controllers to Mixxx. An explanation of the
-MIDI signals that your controller sends to computers and how it reacts
-to MIDI signals that computers send to it should be available from the
-controller manufacturer (unfortunately, some manufacturers do not
-provide this). This is likely in a document on the product page for your
-controller on the manufacturer's website. If it is not in a separate
-document, it is likely at the end of the manual.
+MIDI (Musical Instrument Digital Interface) is a standard for electronic
+musical devices to communicate. This page is a brief introduction to
+MIDI that should explain what you need to know to map MIDI controllers
+to Mixxx.
+
+MIDI dates back to the 1980s when it was used to make synthesizers,
+samplers, and sequencers communicate. These older devices used cables
+with big 5-pin connectors to carry MIDI signals. Some modern controllers
+and sound cards have connectors for these cables, but most MIDI devices
+today send the MIDI signals over a USB cable.
 
 Controllers that comply with the USB MIDI class standard (also called
 "class compliant" devices) do not require any special drivers. Most
 controllers are USB MIDI class compliant, but not all. See the [Mixxx DJ
 Hardware Guide](hardware%20compatibility) for information about
 particular controllers.
+
+An explanation of the MIDI signals that your controller sends to
+computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer (unfortunately,
+some manufacturers do not provide this). This is likely in a document on
+the product page for your controller on the manufacturer's website. If
+it is not in a separate document, it is likely at the end of the manual.
 
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this

@@ -30,6 +30,18 @@ directory:
   - OS X: `/Applications/Mixxx.app/Contents/Resources/controllers/`
   - Windows: `C:\Program Files\Mixxx\controllers`
 
+## Naming convention
+
+Please name your mapping files according to these conventions before
+making a pull request to have your mapping included in Mixxx.
+
+XML MIDI mapping files use the naming convention `{manufacturer}
+{device}.midi.xml`, for example `Stanton SCS3d.midi.xml`. XML HID
+mapping files use the convention `{manufacturer} {device}.hid.xml`, for
+example, `Hercules DJ Console RMX.hid.xml`. JavaScript files use the
+naming convention `{manufacturer}-{device}-scripts.js`, for example
+`Stanton-SCS3d-scripts.js`.
+
 ## Legacy Versions of Mixxx
 
 For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the

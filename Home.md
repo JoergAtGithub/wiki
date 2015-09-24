@@ -52,17 +52,17 @@ plans.
 
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
-  - [Contributing Mappings](Contributing%20Mappings) is a great way to
+  - [Contributing mappings](Contributing%20mappings) is a great way to
     get involved in Mixxx
-  - [MIDI Crash Course](MIDI%20Crash%20Course)
+  - [MIDI crash course](MIDI%20crash%20course)
   - [MIDI controller mapping file
     format](MIDI%20controller%20mapping%20file%20format): create or
     change a MIDI mapping file for your controller
-  - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
-    be manipulated by controller mappings
   - [Controller scripting with JavaScript](midi%20scripting): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
+  - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
+    be manipulated by controller mappings
   - [HID controller mapping file format](hid_mapping_format):
     brainstorming page for how we might implement HID mapping. Right
     now, you must use scripting (see above)

@@ -187,7 +187,7 @@ message.
 
 ## Programming Mixxx mappings with JavaScript
 
-### Function definitions
+### MIDI input handling functions
 
 Data passed to functions are, in order:
 

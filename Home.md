@@ -50,14 +50,17 @@ plans.
 
 ## Controller Mapping Documentation
 
+  - [Controller mapping file
+    locations](Controller%20mapping%20file%20locations)
+  - [MIDI Crash Course](MIDI%20Crash%20Course)
   - [MIDI controller mapping file
     format](MIDI%20controller%20mapping%20file%20format): create or
     change a MIDI mapping file for your controller
-  - [Mixxx controls](MixxxControls): List of Mixxx's controls that can
+  - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
-  - [Controller scripting with JavaScript](midi_scripting): map advanced
-    behaviors including jog wheel scratching, modifier (shift) buttons,
-    and deck toggle buttons
+  - [Controller scripting with JavaScript](midi%20scripting): map
+    advanced behaviors including jog wheel scratching, modifier (shift)
+    buttons, and deck toggle buttons
   - [HID controller mapping file format](hid_mapping_format):
     brainstorming page for how we might implement HID mapping. Right
     now, you must use scripting (see above)

@@ -44,10 +44,11 @@ The child elements of the \<info\> element are used to display info
 about the mapping in the Mixxx controller preferences.
 
 (When a preset does not have a name in its \<info\> section, Mixxx 1.11+
-use the filename without extension.) The \<controller\> element
-specifies what controller this mapping is for. Write the brand & model
-of the controller, e.g. "Stanton SCS.3d" in the id attribute. Leave
-"port" empty.
+use the filename without extension.)
+
+The \<controller\> element specifies what controller this mapping is
+for. Write the brand & model of the controller, e.g. "Stanton SCS.3d" in
+the id attribute. Leave "port" empty.
 
 ## Inputs
 

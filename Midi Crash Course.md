@@ -13,7 +13,7 @@ devices today send the MIDI signals over a USB cable. Some modern
 devices can also can use cables with the 5-pin DIN connectors for
 compatibility with older equipment and the ability to use MIDI without
 being plugged into a computer (although they need to be plugged into
-another power source without the USB cable supplying power).
+another power source without a USB cable supplying power).
 
 Controllers that comply with the USB MIDI class standard (also called
 "class compliant" devices) do not require any special drivers. Most

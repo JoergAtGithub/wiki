@@ -1,5 +1,8 @@
 # MIDI Crash Course
 
+This page is a brief introduction to MIDI that should explain what you
+need to know to map MIDI controllers to Mixxx.
+
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
 tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
@@ -158,7 +161,7 @@ new messages are added or [build Mixxx](Compiling%20on%20Windows) with
 cause it to pop up a console window when you run it and the MIDI
 messages received by your controller will be displayed there.
 
-### Mac OSX
+### Mac OS X
 
 Download the free [MIDI Monitor](http://www.snoize.com/MIDIMonitor/)
 utility and run it. MIDI Monitor is a utility for Mac OS X which

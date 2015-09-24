@@ -73,10 +73,8 @@ SCS.3d") in the id attribute of the \<controller\> element. The
 
 ## Inputs
 
-The core part of the file contains a definition for a single controller.
-There may be multiple controllers in one file (for more complex setups).
-Each controller definition contains two sections: input bindings
-(controls) and output bindings.
+The \<controls\> element tells Mixxx what to do with signals it receives
+from your controller.
 
 ``` 
         <controls> <!-- One control group -->

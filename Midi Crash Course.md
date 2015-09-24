@@ -75,6 +75,32 @@ this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 (Note that in order to use System Exclusive messages, you will need
 [MIDI Scripting](MIDI%20Scripting).)
 
+## Typical MIDI signals used by DJ controllers
+
+Every controller works differently, but these are some typical patterns.
+
+For buttons, DJ controllers send a message with an op-code of `0x9` and
+a value of `0x7f` when pressed down and a value of `0x00` when released.
+If they have an LED behind the button, that is typically controlled by
+sending a message to the controller with the same first two bytes
+(status and note number) that the controller sends when the button is
+pressed. For LEDs that can only be turned on or off, typically sending a
+value of `0x00` turns the LED off and `0x01` or `0x7f` turns the LED on.
+For multicolor LEDs, the color is typically controlled by sending
+different values. Which values correspond to which colors should be
+documented in the MIDI specification for your controller. If they are
+not, you will have to look how mapping for other DJ software lights the
+LEDs or guess and check which values to send.
+
+Knobs and sliders usually send messages with an op-code of `0xB` and a
+value corresponding to the position of the knob or slider.
+
+Endless encoders that you can turn continuously typically send messages
+with an op-code of `0xB` and the value only indicates whether the
+encoder is being turned left or right.
+
+\<\!-- Please add info about typical jog wheel behavior here. --\>
+
 ## Sniffing your controller with Mixxx
 
 *First, try using the MIDI Learn functionality in the Preferences-\>MIDI

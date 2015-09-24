@@ -20,10 +20,11 @@ particular controllers.
 
 An explanation of the MIDI signals that your controller sends to
 computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer (unfortunately,
-some manufacturers do not provide this). This is likely in a document on
-the product page for your controller on the manufacturer's website. If
-it is not in a separate document, it is likely at the end of the manual.
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website. If it is not in a separate document, it is likely at the end of
+the manual. Unfortunately, some manufacturers do not provide this
+information.
 
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this

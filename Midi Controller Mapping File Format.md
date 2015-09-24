@@ -74,7 +74,8 @@ SCS.3d") in the id attribute of the \<controller\> element. The
 ## Inputs
 
 The \<controls\> element tells Mixxx what to do with signals it receives
-from your controller.
+from your controller such as knob turns and button presses. Within the
+\<control**s**\> element, put as many \<control\> elements as necessary.
 
 ``` 
         <controls> <!-- One control group -->
@@ -132,9 +133,10 @@ XML, write:
 ## Outputs
 
 The \<outputs\> element defines outputs that use "short" (3-byte) MIDI
-messages. Use this to control LEDs and other features of your
-controller. (For SYSEX messages, you need to use
-[scripting](midi_scripting).)
+messages. Use this to control LEDs and other features of your controller
+to make them react to changes in Mixxx. Within the \<output**s**\>
+element, put as many \<output\> elements as necessary. (For SYSEX
+messages, you need to use [scripting](midi_scripting).)
 
 ``` 
         <outputs>
@@ -152,10 +154,12 @@ controller. (For SYSEX messages, you need to use
 ```
 
 This allows you to send any three bytes to the MIDI controller in the
-order Status, Midino, on/off. Minimum and maximum define the range
-within which the 'on' value is sent. Outside this range, the 'off' value
-is sent. If 'off' is set to 0xFF, no message will be sent outside the
-range. (Useful for LED sequences.)
+order \<status\>, \<midino\>, \<on\>/\<off\>. The \<minimum\> and
+\<maximum\> elements define the range of the [Mixxx
+Control](mixxxcontrols)'s values within which the \<on\> MIDI value is
+sent. Outside this range, the \<off\> MIDI value is sent. If \<off\> is
+set to 0xFF, no message will be sent outside the range. (Useful for LED
+sequences.)
 
 ## Closing
 

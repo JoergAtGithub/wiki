@@ -30,6 +30,8 @@ Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
 tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
 
+## MIDI Messages
+
 Most MIDI messages are three bytes long. The first byte of any MIDI
 message is called the **Status** byte. The first nybble (hex digit) is
 the op-code and the second is the MIDI channel number. So if you have

@@ -23,14 +23,6 @@ controllers are USB MIDI class compliant, but not all. See the [Mixxx DJ
 Hardware Guide](hardware%20compatibility) for information about
 particular controllers.
 
-An explanation of the MIDI signals that your controller sends to
-computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer. This is likely in
-a document on the product page for your controller on the manufacturer's
-website. If it is not in a separate document, it is likely at the end of
-the manual. Unfortunately, some manufacturers do not provide this
-information.
-
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
 tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
@@ -89,11 +81,18 @@ this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 Devices window at the bottom. It will help you get many of the essential
 functions mapped quickly without having to manually edit XML.*
 
-If you don't have the MIDI specification for your controller, first
-check the manufacturer's web site under Support. Look for Manuals or
-User Guides. MIDI specs are usually given in an appendix at the back of
-the manual. Failing that, you can usually sniff the MIDI data the
-controller sends with the following procedure:
+An explanation of the MIDI signals that your controller sends to
+computers and how it reacts to MIDI signals that computers send to it
+should be available from the controller manufacturer. This is likely in
+a document on the product page for your controller on the manufacturer's
+website or in the support section of the website. If it is not in a
+separate document, it is likely at the end of the manual.
+
+Unfortunately, some manufacturers do not provide this information. In
+that case, you have to see what signals the controller sends to be able
+to map it, which you can do with Mixxx. Even if the manufacturer does
+provide MIDI documentation, it may be easier to sniff your controller
+with Mixxx than keep looking up numbers in the documentation.
 
 1.  Start Mixxx from a command prompt using the `--midiDebug` option
     like so: 
@@ -101,8 +100,7 @@ controller sends with the following procedure:
 <!-- end list -->
 
   - Linux: `user@machine:~$ mixxx --midiDebug`
-  - Windows: (v1.7.0 and later) `C:\Program Files\Mixxx>mixxx
-    --midiDebug`
+  - Windows: `C:\Program Files\Mixxx>mixxx --midiDebug`
   - Mac OSX: `$ open -a mixxx --args --midiDebug`
 
 <!-- end list -->
@@ -127,7 +125,7 @@ controller sends with the following procedure:
     `
 
 In this instance, it's sending 0xB0 (which when we look at the [table
-above](#midi-crash-course), we see that it's a Control Change message on
+above](#midi-messages), we see that it's a Control Change message on
 channel 1) We also see that the second byte, 0x02 in this case, is the
 control number that was moved, and the third is the value or position of
 that control, which you can ignore for the purposes of mapping.

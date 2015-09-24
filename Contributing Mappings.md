@@ -2,11 +2,14 @@
 
 Making a mapping for a controller is a great way to contribute to Mixxx
 for users who have some technical skill but do not know C++. Controller
-mappings are written in [XML](controller%20mapping%20file%20format) and
-[JavaScript](MIDI%20scriptiong). If you have zero or a little bit of
-programming experience, both XML and JavaScript are fairly
-straightforward and easy to learn. Using JavaScript to map your
-controller could be a good introduction to programming.
+mappings are written in
+[XML](MIDI%20controller%20mapping%20file%20format) and
+[JavaScript](MIDI%20scripting). While mappings can be made with just
+XML, most controllers will require some JavaScript to make a complete
+mapping. If you have zero or a little bit of programming experience,
+both XML and JavaScript are fairly straightforward and easy to learn.
+Using JavaScript to map your controller could be a good introduction to
+programming.
 
 We use Git for coordinating Mixxx development which is software that
 helps keep track of changes in files. If you want to have your mapping

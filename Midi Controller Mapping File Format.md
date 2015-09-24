@@ -36,7 +36,7 @@ Each XML mapping file starts with a header with metadata:
                     <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
                     <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
         </info>
-        <controller id="controller name" port=""> <!-- Many controllers in one file supported. A controller should only appear once -->
+        <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once -->
 
 The first part of the file defines the version of the mapping (for
 future compatibility, as the Mixxx MIDI abilities become more complex).
@@ -46,9 +46,10 @@ about the mapping in the Mixxx controller preferences.
 (When a preset does not have a name in its \<info\> section, Mixxx 1.11+
 use the filename without extension.)
 
-The \<controller\> element specifies what controller this mapping is
-for. Write the brand & model of the controller, e.g. "Stanton SCS.3d" in
-the id attribute. Leave "port" empty.
+Write the brand and model of the controller (for example, "Stanton
+SCS.3d") in the id attribute of the \<controller\> element. The
+\<controller\> element is a container for a \<controls\> element and an
+\<outputs\> element, which are described below.
 
 ## Inputs
 

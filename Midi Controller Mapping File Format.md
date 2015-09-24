@@ -63,8 +63,10 @@ The schemaVersion and mixxxVersion attributes of the MixxxMIDIPreset
 element are important for future compatibility as the Mixxx MIDI mapping
 format changes. The child elements of the \<info\> element are used to
 display information about the mapping in the Mixxx controller
-preferences. (When a preset does not have a name in its \<info\>
-section, Mixxx 1.11+ use the filename without extension.)
+preferences. Note that `&` is a reserved character in XML, so the URL to
+the forum thread must use `&` instead of just `&`. (When a preset does
+not have a name in its \<info\> section, Mixxx 1.11+ use the filename
+without extension.)
 
 Write the brand and model of the controller (for example, "Stanton
 SCS.3d") in the id attribute of the \<controller\> element. The

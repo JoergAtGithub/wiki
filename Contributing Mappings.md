@@ -9,7 +9,8 @@ XML, most controllers will require some JavaScript to make a complete
 mapping. If you have zero or a little bit of programming experience,
 both XML and JavaScript are fairly straightforward and easy to learn.
 Using JavaScript to map your controller could be a good introduction to
-programming.
+programming. If you are unfamiliar with MIDI, see the [MIDI Crash
+Course](MIDI%20Crash%20Course) page.
 
 ## Setting up Git
 

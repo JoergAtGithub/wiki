@@ -18,10 +18,31 @@ scripting](MIDI%20scripting) with JavaScript for a complete mapping.
 If you are unfamiliar with how MIDI works, see the [MIDI Crash
 Course](MIDI%20Crash%20Course).
 
-Mixxx uses a well defined XML format to store its MIDI mappings. XML is
-quite simple to learn enough to edit Mixxx mappings. If you know HTML,
-the language that is used to define web pages, that will help because
-XML is very similar.
+# XML Crash Course
+
+Mixxx uses a well defined XML format to store its MIDI mappings. It is
+easy to learn the basics of XML so you can edit Mixxx mappings. If you
+know HTML, the language that is used to define web pages, that will help
+because XML is very similar.
+
+XML is a language for describing data. It does not do anything by itself
+and it has no predefined uses. Many other programs have their own ways
+of using XML that convey different information. For example, Traktor TSI
+controller mapping files are XML files, but Traktor's mapping system is
+completely different from Mixxx's mapping systems, so TSI files make no
+sense to Mixxx.
+
+XML files are hierarchies of elements. Elements have starting and
+closing tags surrounded by angle brackets (also known as less than (\<)
+and greater than (\>) signs). The starting tags can be as simple as
+naming the element surrounded by angle brackets, for example, `<group>`.
+Starting tags can also have attributes to specify more detail about the
+element, for example, in `<controller name="Stanton SCS.3d">`, `name` is
+an attribute of the `controller` element with a value of `Stanton
+SCS.3d`. Ending tags have a slash after the `<`, for example,
+`</group>`. Between the starting and ending tags, elements can contain
+data or other elements. Empty tags are also allowed, which have a slash
+before the `>`, for example, `<SelectKnob/>`.
 
 ## Header
 

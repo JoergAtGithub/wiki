@@ -41,8 +41,8 @@ element, for example, in `<controller name="Stanton SCS.3d">`, `name` is
 an attribute of the `controller` element with a value of `Stanton
 SCS.3d`. Ending tags have a slash after the `<`, for example,
 `</group>`. Between the starting and ending tags, elements can contain
-data or other elements. Empty tags are also allowed, which have a slash
-before the `>`, for example, `<SelectKnob/>`.
+data or other elements. Empty elements are also allowed, which have a
+slash before the `>`, for example, `<SelectKnob/>`.
 
 ## Header
 

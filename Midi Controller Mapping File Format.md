@@ -131,7 +131,7 @@ XML, write:
 
 ## Outputs
 
-The next section defines outputs that use "short" (3-byte) MIDI
+The \<outputs\> element defines outputs that use "short" (3-byte) MIDI
 messages. Use this to control LEDs and other features of your
 controller. (For SYSEX messages, you need to use
 [scripting](midi_scripting).)

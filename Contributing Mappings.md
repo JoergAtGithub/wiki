@@ -12,18 +12,19 @@ Using JavaScript to map your controller could be a good introduction to
 programming.
 
 We use Git for coordinating Mixxx development which is software that
-helps keep track of changes in files. If you want to have your mapping
-included in Mixxx, start by creating a [GitHub](http://github.com/)
-account and [forking Mixxx](https://github.com/mixxxdj/mixxx). On
-GNU/Linux and Mac OS X, you can directly work on your mapping in your
-git repository. Mixxx automatically reloads JavaScript mapping files
-when they are changed, so you can work on the JS part of the mapping
-while running Mixxx to test your changes. To do this, delete the
-`controllers` directory in your user preferences folder (backup any work
-in progress that you do not want to lose first\!) and make a symbolic
-link to the `res/controllers` directory in your git repository. For
-example, if your git repository is under the "software" directory in
-your home directory on GNU/Linux, run:
+helps keep track of changes in files. Before you start working on your
+mapping, set up git on your computer. Using git will help you keep track
+of your progress on the mapping and help Mixxx developers review it.
+Start by creating a [GitHub](http://github.com/) account and [forking
+Mixxx](https://github.com/mixxxdj/mixxx). On GNU/Linux and Mac OS X, you
+can directly work on your mapping in your git repository. Mixxx
+automatically reloads JavaScript mapping files when they are changed, so
+you can work on the JS part of the mapping while running Mixxx to test
+your changes. To do this, delete the `controllers` directory in your
+user preferences folder (backup any work in progress that you do not
+want to lose first\!) and make a symbolic link to the `res/controllers`
+directory in your git repository. For example, if your git repository is
+under the "software" directory in your home directory on GNU/Linux, run:
 
 `ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 

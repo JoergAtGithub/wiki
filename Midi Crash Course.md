@@ -9,6 +9,12 @@ provide this). This is likely in a document on the product page for your
 controller on the manufacturer's website. If it is not in a separate
 document, it is likely at the end of the manual.
 
+Controllers that comply with the USB MIDI class standard (also called
+"class compliant" devices) do not require any special drivers. Most
+controllers are USB MIDI class compliant, but not all. See the [Mixxx DJ
+Hardware Guide](hardware%20compatibility) for information about
+particular controllers.
+
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
 tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).

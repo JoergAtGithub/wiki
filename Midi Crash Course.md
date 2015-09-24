@@ -78,7 +78,7 @@ this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 (Note that in order to use System Exclusive messages, you will need
 [MIDI Scripting](MIDI%20Scripting).)
 
-## Sniffing your controller
+## Sniffing your controller with Mixxx
 
 *First, try using the MIDI Learn functionality in the Preferences-\>MIDI
 Devices window at the bottom. It will help you get many of the essential
@@ -135,7 +135,7 @@ that control, which you can ignore for the purposes of mapping.
     `<status>` and `<midino>` respectively. This is detailed in the next
     section.
 
-## Additional tools
+## Additional MIDI sniffing tools
 
 ### Linux
 

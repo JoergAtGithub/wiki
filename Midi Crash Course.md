@@ -12,8 +12,8 @@ used cables with 5-pin DIN connectors to carry MIDI signals. Most MIDI
 devices today send the MIDI signals over a USB cable. Some modern
 devices can also can use cables with the 5-pin DIN connectors. DJ
 controllers with these 5-pin DIN connectors do not ordinarily use them
-to send signals to the computer; they are used for compatibility with
-older equipment and the ability to use MIDI without being plugged into a
+to send signals to the computer; they are used to communicate via MIDI
+with other gear and the ability to use MIDI without being plugged into a
 computer (although they need to be plugged into another power source
 without a USB cable supplying power).
 

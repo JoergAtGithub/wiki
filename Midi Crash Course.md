@@ -5,11 +5,12 @@ musical devices to communicate. This page is a brief introduction to
 MIDI that should explain what you need to know to map MIDI controllers
 to Mixxx.
 
-MIDI dates back to the 1980s when it was used to make synthesizers,
-samplers, and sequencers communicate. These older devices used cables
-with big 5-pin connectors to carry MIDI signals. Some modern controllers
-and sound cards have connectors for these cables, but most MIDI devices
-today send the MIDI signals over a USB cable.
+MIDI is a widely used standard that a lot of hardware and software
+support. It dates back to the 1980s when it was used to make
+synthesizers, samplers, and sequencers communicate. These older devices
+used cables with big 5-pin connectors to carry MIDI signals. Most MIDI
+devices today send the MIDI signals over a USB cable, although some also
+can use cables with the big 5-pin connectors.
 
 Controllers that comply with the USB MIDI class standard (also called
 "class compliant" devices) do not require any special drivers. Most

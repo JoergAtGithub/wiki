@@ -52,8 +52,8 @@ plans.
 
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
-  - [Contributing mappings](Contributing%20mappings) is a great way to
-    get involved in Mixxx
+  - [Contributing mappings](Contributing%20mappings): describes how to
+    get your mapping included in Mixxx
   - [MIDI crash course](MIDI%20crash%20course)
   - [MIDI controller mapping file
     format](MIDI%20controller%20mapping%20file%20format): create or

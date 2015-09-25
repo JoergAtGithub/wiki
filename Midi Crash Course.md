@@ -89,16 +89,17 @@ Every controller works differently, but these are some typical patterns.
 
 For buttons, DJ controllers send a message with an op-code of `0x9` and
 a value of `0x7f` when pressed down and a value of `0x00` when released.
-If they have an LED behind the button, that is typically controlled by
-sending a message to the controller with the same first two bytes
-(status and note number) that the controller sends when the button is
-pressed. For LEDs that can only be turned on or off, typically sending a
-value of `0x00` turns the LED off and `0x01` or `0x7f` turns the LED on.
-For multicolor LEDs, the color is typically controlled by sending
-different values. Which values correspond to which colors should be
-documented in the MIDI specification for your controller. If they are
-not, you will have to look how mapping for other DJ software lights the
-LEDs or guess and check which values to send.
+Sometimes the signal sent when the button is released uses an opcode of
+`0x8` instead of `0x9`. If they have an LED behind the button, that is
+typically controlled by sending a message to the controller with the
+same first two bytes (status and note number) that the controller sends
+when the button is pressed. For LEDs that can only be turned on or off,
+typically sending a value of `0x00` turns the LED off and `0x01` or
+`0x7f` turns the LED on. For multicolor LEDs, the color is typically
+controlled by sending different values. Which values correspond to which
+colors should be documented in the MIDI specification for your
+controller. If they are not, you will have to look how mapping for other
+DJ software lights the LEDs or guess and check which values to send.
 
 Knobs and sliders usually send messages with an op-code of `0xB` and a
 value corresponding to the position of the knob or slider.

@@ -1,4 +1,5 @@
-# Hercules DJ Control MP3 e2
+I have ====== Hercules DJ Control MP3 e2 ====== , please some software
+for this {\~\_\~}
 
 ## Mapping for Mixxx 1.11 and below
 

@@ -208,6 +208,10 @@ ControllerName.functionName = function (channel, control, value, status, group) 
 }
 ```
 
+Note that this is defining a JavaScript variable. This variable can be
+reassigned to a different function by the script to change how the
+mapping handles input for a MIDI signal.
+
 You can leave off any parameters at the end that you don't need; the
 function is identified only by name (so make sure it's unique\!) For
 example, if you only need the MIDI channel and control number, just do:

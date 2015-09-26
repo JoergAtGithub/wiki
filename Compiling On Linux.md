@@ -118,12 +118,23 @@ option must be the same as before or scons will recompile Mixxx before
 installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
-`optimize=native` to `optimize=portable`
+`optimize=native` to `optimize=portable`rec
 
 ### Build with m4a/AAC file support
 
 If you want to play m4a files, use **`scons faad=1`** flag. This
 requires the libraries faad2 and libmp4v2 (or libmp4) to be installed.
+
+## Uninstall
+
+To uninstall a copy of Mixxx that you compiled, `cd` into the directory
+that you ran `scons` before, then run:
+
+    scons -c prefix=INSTALLATION_DIRECTORY install
+
+INSTALLATION\_DIRECTORY must be the same as that used when compiling and
+installing. If you needed to use `sudo` to install, also use `sudo` to
+uninstall.
 
 ## Clean up
 

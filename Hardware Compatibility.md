@@ -467,16 +467,6 @@ signal and half the sample rate is the maximum frequency that can be
 represented by the signal (humans generally can't hear above 20 kHz, so
 44.1 kHz/2 = 22.05 kHz is fine for playback).
 
-Laptops do not always have the most reliable power output to their USB
-ports, so the ability to use a separate power adapter for your sound
-card can be an advantage. Also, sound cards with power adapters can
-generally output stronger signals. A lack of an external power supply
-can especially be an issue for sound cards built into controllers
-because one USB port has to power both the lights on the controller and
-the sound card. However, sound cards that are USB bus powered can be
-used with a laptop and battery powered speakers for a completely battery
-powered setup.
-
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
 DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
@@ -509,7 +499,8 @@ level signal to line level. Mixxx can amplify phono level signals in
 software, but it is better to do it in hardware. The phono preamp can be
 in the turntable, in the sound card, or a stand alone device. Many
 higher-end all-in-one controllers include sound cards with phono
-preamps.
+preamps. If a device has a phono/line switch, it has a phono
+preamplifier.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
@@ -523,6 +514,16 @@ When considering specifications, higher dynamic range, higher
 signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
 (more negative dB value or smaller percentage), and lower crosstalk
 (more negative dB value) are better.
+
+Laptops do not always have the most reliable power output to their USB
+ports, so the ability to use a separate power adapter for your sound
+card can be an advantage. Also, sound cards with power adapters can
+generally output stronger signals. A lack of an external power supply
+can especially be an issue for sound cards built into controllers
+because one USB port has to power both the lights on the controller and
+the sound card. However, sound cards that are USB bus powered can be
+used with a laptop and battery powered speakers for a completely battery
+powered setup.
 
 ### Using multiple sound cards
 

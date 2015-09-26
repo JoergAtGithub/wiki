@@ -462,7 +462,10 @@ standard set by audio CDs). If you are interested in recording music,
 consider getting a higher quality sound card that supports 24 bit sample
 depths and a 96 kHz sample rate (there is [no
 advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
-sample rates).
+sample rates). Bit depth determines the possible dynamic range of the
+signal and half the sample rate is the maximum frequency that can be
+represented by the signal (humans generally can't hear above 20 kHz, so
+44.1 kHz/2 = 22.05 kHz is fine for playback).
 
 Laptops do not always have the most reliable power output to their USB
 ports, so the ability to use a separate power adapter for your sound

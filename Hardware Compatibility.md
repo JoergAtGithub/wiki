@@ -489,7 +489,8 @@ that need to be amplified to line level by a preamplifier before a sound
 card can effectively work with them. If you want to plug a microphone
 into your sound card, it will need a microphone preamplifier. If you
 want to plug an electric guitar or bass into your sound card, it will
-need an instrument preamplifier.
+need an instrument preamplifier. If it has a line/instrument switch, it
+has an instrument preamplifier.
 
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it

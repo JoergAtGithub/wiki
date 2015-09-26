@@ -128,7 +128,7 @@ requires the libraries faad2 and libmp4v2 (or libmp4) to be installed.
 ## Uninstall
 
 To uninstall a copy of Mixxx that you compiled, `cd` into the directory
-that you ran `scons` before, then run:
+where you ran `scons` before, then run:
 
     scons -c prefix=INSTALLATION_DIRECTORY install
 

@@ -486,11 +486,12 @@ Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
 Turntables, microphones, and electric guitars all output quiet signals
 that need to be amplified to line level by a preamplifier before a sound
-card can effectively work with them. If you want to plug a microphone
+card (or most audio equipment) can effectively work with them. If a
+device has a switch between phono, instrument, or mic level and line
+level, it has a preamplifier in it. If you want to plug a microphone
 into your sound card, it will need a microphone preamplifier. If you
 want to plug an electric guitar or bass into your sound card, it will
-need an instrument preamplifier. If it has a line/instrument switch, it
-has an instrument preamplifier.
+need an instrument preamplifier.
 
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
@@ -500,8 +501,7 @@ level signal to line level. Mixxx can amplify phono level signals in
 software, but it is better to do it in hardware. The phono preamp can be
 in the turntable, in the sound card, or a stand alone device. Many
 higher-end all-in-one controllers include sound cards with phono
-preamps. If a device has a phono/line switch, it has a phono
-preamplifier.
+preamps.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

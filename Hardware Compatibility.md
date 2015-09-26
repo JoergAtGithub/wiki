@@ -133,12 +133,11 @@ of controller support in Mixxx:
 
 If your controller does not have a mapping, or the mapping for your
 controller does not work how you would like it to, please consider
-contributing to Mixxx by making one and sharing it [on the
-forums](http://mixxx.org/forums/viewforum.php?f=7). Within Mixxx, you
-can easily map any MIDI controller with the MIDI Learning Wizard
-available in Preferences \> Controllers (this does not (yet) work for
-HID devices). For jog wheels and other advanced functions, you will need
-to program a JavaScript mapping. See [these wiki
+[contributing your mapping to Mixxx](contributing%20mappings). Within
+Mixxx, you can easily map any MIDI controller with the MIDI Learning
+Wizard available in Preferences \> Controllers (this does not (yet) work
+for HID devices). For jog wheels and other advanced functions, you will
+need to program a JavaScript mapping. See [these wiki
 pages](start#controller%20midi%20mapping%20documentation) for
 documentation on making and editing controller mappings. Feel free to
 ask for help mapping your controller on the forums. If you ask for help,

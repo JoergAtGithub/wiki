@@ -488,9 +488,12 @@ and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
-If you want to plug a microphone into your sound card, it will need a
-microphone preamplifier. If you want to plug an electric guitar or bass
-into your sound card, it will need an instrument preamplifier.
+Turntables, microphones, and electric guitars all output quiet signals
+that need to be amplified to line level by a preamplifier before a sound
+card can effectively work with them. If you want to plug a microphone
+into your sound card, it will need a microphone preamplifier. If you
+want to plug an electric guitar or bass into your sound card, it will
+need an instrument preamplifier.
 
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it

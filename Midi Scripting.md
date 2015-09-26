@@ -50,6 +50,15 @@ lots of comments with links to the MDN JavaScript Reference. It may be
 helpful as a quick introduction to the language for experienced
 programmers.
 
+Here are some resources for a deeper understanding of JavaScript:
+
+  - [Douglas Crockford's JavaScript
+    website](http://javascript.crockford.com/)
+  - [Douglas Crockford on JavaScript -- Act III: Function the
+    Ultimate](http://yuiblog.com/blog/2010/02/24/video-crockonjs-3/)
+  - [JavaScript: The Definitive
+    Guide](http://shop.oreilly.com/product/9780596805531.do)
+
 If you are unfamiliar with MIDI, see the [MIDI Crash
 Course](MIDI%20Crash%20Course) page.
 

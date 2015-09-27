@@ -48,17 +48,17 @@ cards.
 
 **The simplest setup for new DJs is an all-in-one controller that can
 control mixing, seeking, looping, cues, and effects and has an
-integrated sound card.** Users who also want to produce music should
-consider saving money and get a controller without a sound card and
-getting a separate, high quality sound card suitable for recording.
-Users who want to use [vinyl
+integrated sound card.** Users who want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
 will need a sound card with 2 inputs per deck (so 4 inputs for a
 traditional 2 deck setup) and a phono preamp for each deck. The phono
 preamps can either be in the turntable, in the sound card, or stand
 alone devices. A few small controllers may be of particular interest to
 vinyl DJs, particularly the Novation Dicer and Akai AMX. Some higher-end
-all-in-one controllers include sound cards with phono preamps.
+all-in-one controllers include sound cards with phono preamps. Users who
+also want to produce music should consider saving money and get a
+controller without a sound card and getting a separate, high quality
+sound card suitable for recording.
 
 DJ headphones are generally better quality than typical consumer
 headphones. Importantly, they are designed to have good isolation,

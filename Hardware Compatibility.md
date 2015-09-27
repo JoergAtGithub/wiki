@@ -32,11 +32,12 @@ below](#Using-multiple-sound-cards)). Onboard sound cards built into
 computers are generally not high quality and may pick up interference
 from other devices in the computer such as the power supply or hard
 drive. When mixing digitally in software on your CPU, use 2 channels for
-the main output and 2 channels for your headphones (or 1 for each if
-using a splitter cable). When mixing on an analog hardware mixer, which
-is traditional (but not necessary) with [vinyl
+Mixxx's Master output and 2 channels for Mixxx's headphone output (or 1
+for each if using a splitter cable). When mixing on an analog hardware
+mixer, which is traditional (but not necessary) with [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
-each deck uses 2 channels and the headphones are plugged into the analog
+Mixxx sends the unmixed output from each deck to the hardware mixer
+(using 2 channels per deck) and the headphones are plugged into the
 hardware mixer.
 
 Most digital DJs prefer to use a DJ controller rather than just their

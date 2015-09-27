@@ -165,7 +165,7 @@ that control, which you can ignore for the purposes of mapping.
     `<status>` and `<midino>` respectively. This is detailed in the next
     section.
 
-## Additional MIDI sniffing tools
+## Additional MIDI tools
 
 ### Linux
 
@@ -186,6 +186,12 @@ You'll get output like this:
     B0 02 3C
 
 See above for how to interpret this data.
+
+amidi can also be used to send MIDI messages to your controller with the
+-S option. Specify each byte as a hexadecimal number and separate the
+bytes by spaces. For example:
+
+    amidi -p hw:1,0,0 -S "b0 02 7f"
 
 The program `aseqdump` works similarly, but is a bit more verbose than a
 series of hexidecimal numbers:

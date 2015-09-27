@@ -137,8 +137,13 @@ XML, write:
 The \<outputs\> element defines outputs that use "short" (3-byte) MIDI
 messages. Use this to control LEDs and other features of your controller
 to make them react to changes in Mixxx. Within the \<output**s**\>
-element, put as many \<output\> elements as necessary. (For SYSEX
-messages, you need to use [scripting](midi_scripting).)
+element, put as many \<output\> elements as necessary. Note that this
+can only send either of two different values, so it is most useful for
+LEDs that can only be switched on and off. For other pieces of
+controllers that are controlled with more than two values such as
+multicolored LEDs or VU meters, you need to use [MIDI
+scripting](MIDI%20scripting). Scripting is also necessary for sysex
+messages.
 
 ``` 
         <outputs>

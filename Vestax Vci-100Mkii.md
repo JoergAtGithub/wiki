@@ -8,7 +8,7 @@
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
-*Controls in square brackets are performed when a shift key is pressed.*
+*Functions in square brackets are executed when a shift key is pressed.*
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]
@@ -36,19 +36,19 @@
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Beatloop in the default beat (4 at the beginning) \[Reloop\], or in
-    loop Exit loop \[Newly beatloop in the default beat\]
-28. Halve the default beat, or in loop Halve the loop \[Move the loop
+27. Beatloop in the default beat (4 at the beginning) \[Reloop\], or *in
+    loop* Exit loop \[Newly beatloop in the default beat\]
+28. Halve the default beat, or *in loop* Halve the loop \[Move the loop
     backward by 1/2 beat\]
-29. Double the default beat, or in loop Double the loop \[Move the loop
-    forward by 1/2 beat\]
-30. Activate hotcue1 \[Clear hotcue1\]
-31. Activate hotcue2 \[Clear hotcue2\]
-32. Activate hotcue3 \[Clear hotcue3\]
-33. Activate hotcue4 \[Clear hotcue4\]
+29. Double the default beat, or *in loop* Double the loop \[Move the
+    loop forward by 1/2 beat\]
+30. Activate \[Clear\] hotcue1
+31. Activate \[Clear\] hotcue2
+32. Activate \[Clear\] hotcue3
+33. Activate \[Clear\] hotcue4
 34. Slip mode (affect scratch, loop and hotcue)
-35. PFL (if headphone mix is cue or master only then switch it) \[PFL
-    solo\]
+35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
+    it)
 36. FX1 \[FX3\]
 37. FX2 \[FX4\]
 38. Up: previous track, Down: next track, Left: load to left, Right:

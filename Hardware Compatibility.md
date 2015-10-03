@@ -279,10 +279,9 @@ When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
 
-|                                                      |              |                   |     |                       |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250         | 2 deck all-in-one | yes | MIDI\[17\] (and HID?) |
 | ---------------------------------------------------- | ------------ | ----------------- | --- | --------------------- |
 | [Vestax VCI-100MKII](Vestax%20VCI-100MKII)           | discontinued | 2 deck all-in-one | yes | MIDI                  |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250         | 2 deck all-in-one | yes | MIDI\[17\] (and HID?) |
 
 ### Controllers that do not yet have Mixxx mappings
 

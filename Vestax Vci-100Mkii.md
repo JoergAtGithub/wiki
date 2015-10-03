@@ -3,3 +3,54 @@
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
   - [Product page in
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
+
+## Mapping for Mixxx 1.12
+
+![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
+
+*Controls in square brackets are performed when a shift key is pressed.*
+
+1.  Previous effect \[Select FX1/2\]
+2.  Next effect \[Select FX3/4\]
+3.  FX parameter1
+4.  FX parameter2
+5.  FX parameter3
+6.  FX mix
+7.  EQ high
+8.  EQ mid
+9.  EQ low
+10. Gain
+11. Filter (high-pass only)
+12. Pitch (integer value semitone only)
+13. Rate \[Playposition\]
+14. Channel fader
+15. Cross fader
+16. Headphone volume (values from 0 to 1)
+17. Headphone mix
+18. Master volume (values from 0 to 1)
+19. Scratch
+20. Jog (only if the output is downed by faders)
+21. Play/Pause \[Adjust beatgrid to the current playposition\]
+22. Cue \[Adjust beatgrid to match another playing deck\]
+23. Cup \[Move beatgrid earlier\]
+24. Sync mode \[Move beatgrid later\]
+25. Quantize mode \[Zoom in waveform\]
+26. Keylock mode \[Zoom out waveform\]
+27. Beatloop in the default beat (4 at the beginning) \[Reloop\], or in
+    loop Exit loop \[Newly beatloop in the default beat\]
+28. Halve the default beat, or in loop Halve the loop \[Move the loop
+    backward by 1/2 beat\]
+29. Double the default beat, or in loop Double the loop \[Move the loop
+    forward by 1/2 beat\]
+30. Activate hotcue1 \[Clear hotcue1\]
+31. Activate hotcue2 \[Clear hotcue2\]
+32. Activate hotcue3 \[Clear hotcue3\]
+33. Activate hotcue4 \[Clear hotcue4\]
+34. Slip mode (affect scratch, loop and hotcue)
+35. PFL (if headphone mix is cue or master only then switch it) \[PFL
+    solo\]
+36. FX1 \[FX3\]
+37. FX2 \[FX4\]
+38. Up: previous track, Down: next track, Left: load to left, Right:
+    load to right, Push: load to first stopped
+39. Channel select

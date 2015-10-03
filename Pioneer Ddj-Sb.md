@@ -24,7 +24,8 @@ the latest drivers and firmware from
 are having issues getting both sound outputs to work properly, please
 try using a different Sound API (see the Preferences menu). DirectSound
 seems to have issues with this controller. WASAPI seems to work fine, as
-does MME, although only with higher latencies.
+does MME, although only with higher latencies. On Windows 10, only MME
+works.
 
 ### Mac OS X & Linux
 

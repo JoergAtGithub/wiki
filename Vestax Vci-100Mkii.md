@@ -37,8 +37,8 @@ pressed.*
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Beatloop in the default beat (4 at the beginning) \[Reloop\], or *in
-    loop* Exit the loop \[Newly beatloop in the default beat\]
+27. Loop in the default beat (4 at the beginning) \[Reloop\], or *in
+    loop* Exit the loop \[Newly loop in the default beat\]
 28. Halve the default beat, or *in loop* Halve the loop \[Move the loop
     backward by 1/2 beat\]
 29. Double the default beat, or *in loop* Double the loop \[Move the

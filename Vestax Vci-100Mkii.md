@@ -31,7 +31,7 @@ pressed.*
 18. Master volume (values from 0 to 1)
 19. Scratch
 20. Jog (only if the output is downed by faders)
-21. Play/Pause \[Adjust beatgrid to the current playposition\]
+21. Play \[Adjust beatgrid to the current playposition\]
 22. Cue \[Adjust beatgrid to match another playing deck\]
 23. Cup \[Move beatgrid earlier\]
 24. Sync mode \[Move beatgrid later\]

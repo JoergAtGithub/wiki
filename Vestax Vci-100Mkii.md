@@ -8,7 +8,8 @@
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
-*Functions in square brackets are executed when a shift key is pressed.*
+*Functions in square brackets are executed when a shift button is
+pressed.*
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]

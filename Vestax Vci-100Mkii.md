@@ -3,10 +3,12 @@
   - [Product page in
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
-  - [Latest
-    mapping](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=30#p26117)
 
 ## Mapping for Mixxx 1.12
+
+  - [Vestax
+    VCI-100MKII.midi.xml](https://github.com/sohet/mixxx/blob/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+  - [Vestax-VCI-100MKII-scripts.js](https://github.com/sohet/mixxx/blob/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 

@@ -1,8 +1,10 @@
 # Vestax VCI-100MKII
 
-  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
   - [Product page in
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
+  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
+  - [Latest
+    mapping](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=30#p26117)
 
 ## Mapping for Mixxx 1.12
 
@@ -30,7 +32,7 @@ pressed.*
 17. Headphone mix
 18. Master volume (values from 0 to 1)
 19. Scratch
-20. Jog (only if the output is downed by faders)
+20. Jog (locked if cross fader is at the max side)
 21. Play \[Adjust beatgrid to the current playposition\]
 22. Cue \[Adjust beatgrid to match another playing deck\]
 23. Cup \[Move beatgrid earlier\]

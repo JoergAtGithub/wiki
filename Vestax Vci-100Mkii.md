@@ -7,8 +7,8 @@
 ## Mapping for Mixxx 1.12
 
   - [Vestax
-    VCI-100MKII.midi.xml](https://github.com/sohet/mixxx/blob/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-  - [Vestax-VCI-100MKII-scripts.js](https://github.com/sohet/mixxx/blob/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
+    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 

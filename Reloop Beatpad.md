@@ -67,7 +67,7 @@ fader moves from the minimum position.
   - **Phones (Hadphones level) :** Adjust the Volume Output of the
     Headphones Channel. Hardware operation – movement not visible on the
     Mixxx GUI, it is independent from the software.
-  - **AUX :** Adju st the Volume of the AUX Input. Hardware operation –
+  - **AUX :** Adjust the Volume of the AUX Input. Hardware operation –
     movement is not visible on the VirtualDJ GUI, it is independent from
     the software.
 
@@ -81,7 +81,7 @@ Scroll through files of folders.
 
   - **Turn** in order to select a track in the song list.
   - **Push** in order to load the selected track into first stop deck.
-  - **Shift+Turn** in order to select a folder or subfolder in the left
+  - **SHIFT+Turn** in order to select a folder or subfolder in the left
     item list sidebar.
-  - **Shift+Push** in order to open/close folders and subfolders in the
+  - **SHIFT+Push** in order to open/close folders and subfolders in the
     left item list sidebar.

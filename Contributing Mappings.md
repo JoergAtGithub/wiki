@@ -39,9 +39,7 @@ the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
 When you are ready to submit your mapping for inclusion in Mixxx, make a
-pull request on GitHub. If this is your first contribution to Mixxx, you
-will need to sign the [contributor
-agreement](https://docs.google.com/forms/d/1m_Ql2LyQ2nsgpFe6S4ED3jmzaLgA3U6P2TALOHMxGxA/viewform?formkey=dEpYN2NkVEFnWWQzbkFfM0ZYYUZ5X2c6MQ).
+pull request on GitHub.
 
 ## Documenting the mapping
 

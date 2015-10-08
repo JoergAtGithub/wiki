@@ -85,3 +85,5 @@ Scroll through files of folders.
     item list sidebar.
   - **SHIFT+Push** in order to open/close folders and subfolders in the
     left item list sidebar.
+
+### DECK CONTROLS SECTION

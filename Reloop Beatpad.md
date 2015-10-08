@@ -15,7 +15,7 @@ too via MIDI.
 
 ## Operation guide to use with Mixxx
 
-### MIXER
+### MIXER SECTION
 
 #### CrossFader
 

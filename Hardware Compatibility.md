@@ -283,6 +283,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------------- |
 | Device                                               | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol       |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI\[18\] (and HID?) |
+| [Reloop Beatpad](Reloop%20Beatpad)                   | $449               | 2 deck all-in-one | yes                   | MIDI                  |
 | [Vestax VCI-100MKII](Vestax%20VCI-100MKII)           | discontinued       | 4 deck all-in-one | yes                   | MIDI                  |
 
 ### Controllers that do not yet have Mixxx mappings

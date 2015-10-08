@@ -38,11 +38,10 @@ fader moves from the minimum position.
     unload the same deck.
   - **Fader Start :** Hold **SHIFT** down and then press one of these
     buttons to enable the **Fader Start** on a deck. The LED of the
-    button will blink if Fader Start is enabled. If [Fader
-    Start](reloop_beatpad#LOAD) is enabled the deck will stop at the
-    previously used Cue if the Volume Fader reaches the minimum position
-    and will start playing if the Volume fader moves from the minimum
-    position.
+    button will blink if Fader Start is enabled. If Fader Start is
+    enabled the deck will stop at the previously used Cue if the Volume
+    Fader reaches the minimum position and will start playing if the
+    Volume fader moves from the minimum position.
 
 #### PFL (symbolized by a headphone)
 

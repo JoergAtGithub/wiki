@@ -47,7 +47,7 @@ fader moves from the minimum position.
 
   - **PFL :**Press these buttons to send each channel to the Headphones
     Output channel for pre-listening.
-  - **Slip mode :**Hold SHIFT down and then use these buttons to
+  - **Slip mode :**Hold **SHIFT** down and then use these buttons to
     activate/desactvate Slip Mode.When active, the playback continues
     muted in the background during a loop, scratch etc. Once disabled,
     the audible playback will resume where the track would have been.

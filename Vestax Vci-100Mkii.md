@@ -47,10 +47,10 @@ pressed.*
     backward by 1/2 beat\]
 29. Double the default beat, or *in loop* Double the loop \[Move the
     loop forward by 1/2 beat\]
-30. Activate \[Clear\] hotcue1
-31. Activate \[Clear\] hotcue2
-32. Activate \[Clear\] hotcue3
-33. Activate \[Clear\] hotcue4
+30. Activate \[Clear\] hotcue 1
+31. Activate \[Clear\] hotcue 2
+32. Activate \[Clear\] hotcue 3
+33. Activate \[Clear\] hotcue 4
 34. Slip mode (affect scratch, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)

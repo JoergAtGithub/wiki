@@ -110,4 +110,66 @@ back side of the ReloopBeatpad.
 
 #### JUMP
 
-If the Cue point is set, seeks the player to it and starts playback.
+  - \*\*While playing, or stopped :"" If the Cue point is set, seeks the
+    player to it and starts playback.
+  - **Brake :** Hold **[SHIFT](#shift)** down and then press this button
+    to stop the track with a gradual brake. If the **JUMP** button is
+    released before the track has completely stopped, the track is then
+    played back to its regular speed.
+  - \*Spinback:\*\* see the **[Instant FX](#Instant-fx)** usage.
+
+#### SET
+
+  - **While playing :** Seeks the track to the cue-point and stops.
+  - **While stopped :** Sets the cue point (Pioneer/Mixxx mode) OR
+    preview from it (Denon mode). If the Cue point is already set at the
+    current position of the track, hold this button to play the track
+    and release to stop and go back to the Cue point.
+  - **Hint:** Change the default cue mode in Preferences -\> Interface.
+    The Pioneer mode is the more consistent with the Reloop Beatpad. 
+  - **Key lock :** Hold SHIFT down and then press this button to
+    enable/disable the Key-lock.
+
+### LOOPS SECTION
+
+### EFFECT SECTIONS
+
+### PADS SECTION
+
+The 4 Performance Pads offer 4 different modes, depending on the 4 PAD
+MODE buttons just above (CUE, .
+
+#### HotCues mode
+
+##### CUE
+
+##### Pads
+
+#### Bounce Loop (Roll) mode
+
+##### BOUNCE LOOP
+
+##### Pads
+
+#### Instant FX mode
+
+##### Instant FX
+
+  - **Press** in order to a
+
+effect.
+
+  - \*Spinback:\*\* Hold **[SHIFT](#shift)** down and then press this
+    button down in order to stop the track with a backward brake
+    effect.If the **[Instant FX](#Instant-fx)** button is released
+    before the track has completely stopped, the track is then played
+    back to its regular speed, in the forward direction.
+  - **Brake :** see **[JUMP](#jump)** button usage
+
+##### Pads
+
+#### Sampler mode
+
+##### SAMPLER
+
+##### Pads

@@ -127,11 +127,8 @@ back side of the ReloopBeatpad.
     track, hold this button to play the track and release it to return
     to the Cue point and pause it.To continue playback without returning
     to the Cue Point, press and hold the **SET** Button, then press and
-    hold the **[Play/Pause](#Play/Pause)** Button (15) and then release
-    both
-
-buttons
-
+    hold the **[Play/Pause](#Play/Pause)** Button and then release both
+    buttons.
   - **Hint:** Change the default cue mode in Preferences -\> Interface.
     The Pioneer mode is the more consistent with the Reloop Beatpad. 
   - **Key lock :** Hold **[SHIFT](#shift)** down and then press this

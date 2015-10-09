@@ -149,6 +149,50 @@ back side of the ReloopBeatpad.
     **Note :** the **quantize** mode is not mapped on the controller but
     can be enabled/desabled from Mixxx.
 
+#### JOGWHEEL
+
+Touch sensitive platters for scratching (Scratch mode/iCut mode),
+bending (Scratch mode/CD mode) or Seek mode. The jogwheel offers
+multi-color leds, which will show the playing marker (Scratch mode), the
+song progress bar (in Seek mode), and other colored combinations
+depending on the applied effect, loop, loop roll or Filter. If no track
+is loaded, the jogwheel displays a red cross. At the end of a track, the
+jogwheel is flashing red faster and faster until it reaches the end of
+the track (full steady red).
+
+##### Scratch mode
+
+Toggle with the **JOG SCRATCH** button. Use the jogwheel to scratch and
+the outer ring to bend (like in [CD mode](#CD-mode)).
+
+  - **iCut mode :**  
+    According to the Quick start guide :  
+    \>iCut MODE :  
+    \>DJAY will automatically cut your track with the cross fader when
+    holding SHIFT and scratching with the jog wheel.  
+    According to Reloop Website : <http://www.reloop.com/reloop-beatpad>
+    (Explorer tab)  
+    \>iCut :  
+    this mode simulates a scratch routine. When the jog wheel is turned
+    back the crossfader closes, when the jog wheel is turned forward the
+    crossfader will open."  
+    In Practice :  
+    DJAY software is closing/opening the crossfader quicly without
+    taking into account the direction of the whheel.  
+    In Mixxx, we to stick with the reloop explanation : it is the "as it
+    is supposed to be done" ;)
+
+##### Seek mode
+
+Toggle with the **JOG SEEK** button. Use the jogwheel to navigate
+through the track.
+
+##### CD Mode
+
+Desactivate both the [Scratch mode](#Scratch-mode) and the [Seek
+mode](#Seek-mode) to enable it. Use the jogwheel to temporarily bend the
+track wich has the effect of temporary slow-down or speed up the tempo.
+
 ### LOOPS SECTION
 
 ### EFFECT SECTIONS

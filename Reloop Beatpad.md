@@ -152,18 +152,19 @@ back side of the ReloopBeatpad.
 #### JOGWHEEL
 
 Touch sensitive platters for scratching (Scratch mode/iCut mode),
-bending (Scratch mode/CD mode) or Seek mode. The jogwheel offers
-multi-color leds, which will show the playing marker (Scratch mode), the
-song progress bar (in Seek mode), and other colored combinations
-depending on the applied effect, loop, loop roll or Filter. If no track
-is loaded, the jogwheel displays a red cross. At the end of a track, the
-jogwheel is flashing red faster and faster until it reaches the end of
-the track (full steady red).
+bending (Scratch mode/CD mode) or Seek mode.  
+The jogwheel offers multi-color leds, which will show the playing marker
+(Scratch mode), the song progress bar (in Seek mode), and other colored
+combinations depending on the applied effect, loop, loop roll or Filter.
+If no track is loaded, the jogwheel displays a red cross. At the end of
+a track, the jogwheel is flashing red faster and faster until it reaches
+the end of the track (full steady red).
 
 ##### Scratch mode
 
-Toggle with the **JOG SCRATCH** button. Use the jogwheel to scratch and
-the outer ring to bend (like in [CD mode](#CD-mode)).
+Toggle with the **JOG SCRATCH** button.  
+Use the jogwheel to scratch and the outer ring to bend (like in [CD
+mode](#CD-mode)).
 
   - **iCut mode :** Hold **[SHIFT](#shift)** down and scratch to scratch
     in "automagic" scratch mode. In Mixxx, we to stick with the reloop
@@ -181,14 +182,29 @@ the outer ring to bend (like in [CD mode](#CD-mode)).
 
 ##### Seek mode
 
-Toggle with the **JOG SEEK** button. Use the jogwheel to navigate
-through the track.
+Toggle with the **JOG SEEK** button.  
+Use the jogwheel to navigate through the track.
 
-##### CD Mode
+##### CD mode
 
 Desactivate both the [Scratch mode](#Scratch-mode) and the [Seek
-mode](#Seek-mode) to enable it. Use the jogwheel to temporarily bend the
-track wich has the effect of temporary slow-down or speed up the tempo.
+mode](#Seek-mode) to enable it.  
+Use the jogwheel to temporarily bend the track wich has the effect of
+temporary slow-down or speed up the tempo.
+
+#### PITCH BEND
+
+  - **Pitch bend :** Use these buttons temporary slow-down/speed up the
+    tempo of the track.  
+    Once the buttons are released the track will continue to play at the
+    tempo designated by the pitch fader.
+  - **Beat Jump :**Hold **[SHIFT](#shift)** down and then use these
+    buttons to jump 1 beat backwards or forward.
+
+#### PITCH
+
+Controls the track's playback tempo. The red led indicates that the
+pitch fader of the unit is on zero (center) position.
 
 ### LOOPS SECTION
 

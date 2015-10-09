@@ -24,10 +24,10 @@ Blends audio between left and right mixer channels.
 #### Volume Faders
 
 Adjust the Volume of each channel. If [Fader
-Start](reloop_beatpad#1%20and%202%20\(Track%20select%20buttons\)) is
-enabled the deck will stop at the previously used Cue if the Volume
-Fader reaches the minimum position and will start playing if the Volume
-fader moves from the minimum position.
+Start](#1-and-2-\(Track-select-buttons\)) is enabled the deck will stop
+at the previously used Cue if the Volume Fader reaches the minimum
+position and will start playing if the Volume fader moves from the
+minimum position.
 
 #### 1 and 2 (Track select buttons)
 
@@ -36,9 +36,9 @@ fader moves from the minimum position.
     be on if the deck is loaded. 
   - **Eject :** Hold the same button for more than half of a second to
     unload the same deck.
-  - **Fader Start :** Hold **SHIFT** down and then press one of these
-    buttons to enable the **Fader Start** on a deck. The LED of the
-    button will blink if Fader Start is enabled. If Fader Start is
+  - **Fader Start :** Hold **[SHIFT](#SHIFT)** down and then press one
+    of these buttons to enable the **Fader Start** on a deck. The LED of
+    the button will blink if Fader Start is enabled. If Fader Start is
     enabled the deck will stop at the previously used Cue if the Volume
     Fader reaches the minimum position and will start playing if the
     Volume fader moves from the minimum position.
@@ -47,10 +47,11 @@ fader moves from the minimum position.
 
   - **PFL :**Press these buttons to send each channel to the Headphones
     Output channel for pre-listening.
-  - **Slip mode :**Hold **SHIFT** down and then use these buttons to
-    activate/desactvate Slip Mode.When active, the playback continues
-    muted in the background during a loop, scratch etc. Once disabled,
-    the audible playback will resume where the track would have been.
+  - **Slip mode :**Hold **[SHIFT](#shift)** down and then use these
+    buttons to activate/desactvate Slip Mode.When active, the playback
+    continues muted in the background during a loop, scratch etc. Once
+    disabled, the audible playback will resume where the track would
+    have been.
 
 #### Equalizer
 
@@ -81,10 +82,10 @@ Scroll through files of folders.
 
   - **Turn** in order to select a track in the song list.
   - **Push** in order to load the selected track into first stop deck.
-  - **SHIFT+Turn** in order to select a folder or subfolder in the left
-    item list sidebar.
-  - **SHIFT+Push** in order to open/close folders and subfolders in the
-    left item list sidebar.
+  - **[SHIFT](#shift)+Turn** in order to select a folder or subfolder in
+    the left item list sidebar.
+  - **[SHIFT](#shift)+Push** in order to open/close folders and
+    subfolders in the left item list sidebar.
 
 ### DECK CONTROLS SECTION
 

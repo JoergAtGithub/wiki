@@ -165,22 +165,19 @@ the track (full steady red).
 Toggle with the **JOG SCRATCH** button. Use the jogwheel to scratch and
 the outer ring to bend (like in [CD mode](#CD-mode)).
 
-  - **iCut mode :**  
-    According to the Quick start guide :  
-    \> iCut MODE :  
-    \> DJAY will automatically cut your track with the cross fader when
-    holding SHIFT and scratching with the jog wheel.  
-    According to Reloop Website : <http://www.reloop.com/reloop-beatpad>
-    (Explorer tab)  
-    \> iCut :  
-    \> this mode simulates a scratch routine. When the jog wheel is
-    turned back the crossfader closes, when the jog wheel is turned
-    forward the crossfader will open."  
-    In Practice :  
-    DJAY software is closing/opening the crossfader quicly without
-    taking into account the direction of the whheel.  
-    In Mixxx, we to stick with the reloop explanation : it is the "as it
-    is supposed to be done" ;)
+  - **iCut mode :** Hold **[SHIFT](#shift)** down and scratch to scratch
+    in "automagic" scratch mode. In Mixxx, we to stick with the reloop
+    explanation : it is the "as it is supposed to be done" ;)
+  - **Note :**
+
+<!-- end list -->
+
+``` 
+    * According to the Quick start guide :\\   iCut MODE :\\   DJAY will automatically cut your track with the cross fader when holding SHIFT and scratching with the jog wheel.
+    * According to Reloop Website : http://www.reloop.com/reloop-beatpad (Explorer tab)\\ iCut :\\ this mode simulates a scratch routine. When the jog wheel is turned back the crossfader closes, when the jog wheel is turned forward the crossfader will open."
+    * In Practice :\\ DJAY software is closing/opening the crossfader quicly without taking into account the direction of the whheel.\\ 
+              
+```
 
 ##### Seek mode
 

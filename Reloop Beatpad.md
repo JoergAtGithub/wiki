@@ -110,13 +110,13 @@ back side of the ReloopBeatpad.
 
 #### JUMP
 
-  - \*\*While playing, or stopped :"" If the Cue point is set, seeks the
+  - **While playing, or stopped :** If the Cue point is set, seeks the
     player to it and starts playback.
   - **Brake :** Hold **[SHIFT](#shift)** down and then press this button
     to stop the track with a gradual brake. If the **JUMP** button is
     released before the track has completely stopped, the track is then
     played back to its regular speed.
-  - \*Spinback:\*\* see the **[Instant FX](#Instant-fx)** usage.
+  - **Spinback:** see the **[Instant FX](#Instant-fx)** usage.
 
 #### SET
 

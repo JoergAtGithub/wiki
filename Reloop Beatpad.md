@@ -97,9 +97,11 @@ back side of the ReloopBeatpad.
 
 #### PLAY/PAUSE
 
-\* **Play/pause :** press to play/pause the track. If there was no track
-loaded into the dec and a track is selected in the song list windows, it
-is loade and the playback of this track starts immediatly. \* **Censor
-:** Hold [SHIFT](#SHIFT) down and then press this button to play the
-track in reverse. When released the track will continue to play from the
-position it would have been if the button was never pressed (censor)
+  - **Play/pause :** press to play/pause the track. If there was no
+    track loaded into the dec and a track is selected in the song list
+    windows, it is loade and the playback of this track starts
+    immediatly.
+  - **Censor :** Hold [SHIFT](#SHIFT) down and then press this button to
+    play the track in reverse. When released the track will continue to
+    play from the position it would have been if the button was never
+    pressed (censor)

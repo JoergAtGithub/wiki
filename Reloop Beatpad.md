@@ -102,7 +102,12 @@ back side of the ReloopBeatpad.
     track loaded into the dec and a track is selected in the song list
     windows, it is loade and the playback of this track starts
     immediatly.
-  - **Censor :** Hold [SHIFT](#SHIFT) down and then press this button to
-    play the track in reverse. When released the track will continue to
-    play from the position it would have been if the button was never
-    pressed (censor)
+  - **Censor :** Hold **[SHIFT](#shift)** down and then press this
+    button to play the track in reverse. When released the track will
+    continue to play from the position it would have been if the button
+    was never pressed. In other words, it enables reverse and slip mode
+    while held.
+
+#### JUMP
+
+If the Cue point is set, seeks the player to it and starts playback.

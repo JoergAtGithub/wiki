@@ -155,11 +155,8 @@ MODE buttons just above (CUE, .
 
 ##### Instant FX
 
-  - **Press** in order to a
-
-effect.
-
-  - \*Spinback:\*\* Hold **[SHIFT](#shift)** down and then press this
+  - **Press** this button to set the PADs to Effects mode.
+  - **Spinback:** Hold **[SHIFT](#shift)** down and then press this
     button down in order to stop the track with a backward brake
     effect.If the **[Instant FX](#Instant-fx)** button is released
     before the track has completely stopped, the track is then played

@@ -122,13 +122,20 @@ back side of the ReloopBeatpad.
 
   - **While playing :** Seeks the track to the cue-point and stops.
   - **While stopped :** Sets the cue point (Pioneer/Mixxx mode) OR
-    preview from it (Denon mode). If the Cue point is already set at the
-    current position of the track, hold this button to play the track
-    and release to stop and go back to the Cue point.
+    preview from it (Denon mode).  
+    If the Cue point is already set at the current position of the
+    track, hold this button to play the track and release it to return
+    to the Cue point and pause it.To continue playback without returning
+    to the Cue Point, press and hold the **SET** Button, then press and
+    hold the **[Play/Pause](#Play/Pause)** Button (15) and then release
+    both
+
+buttons
+
   - **Hint:** Change the default cue mode in Preferences -\> Interface.
     The Pioneer mode is the more consistent with the Reloop Beatpad. 
-  - **Key lock :** Hold SHIFT down and then press this button to
-    enable/disable the Key-lock.
+  - **Key lock :** Hold **[SHIFT](#shift)** down and then press this
+    button to enable/disable the Key-lock.
 
 ### LOOPS SECTION
 

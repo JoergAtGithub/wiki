@@ -134,6 +134,21 @@ back side of the ReloopBeatpad.
   - **Key lock :** Hold **[SHIFT](#shift)** down and then press this
     button to enable/disable the Key-lock.
 
+#### SYNC
+
+  - **Press once** to synchronize the tempo (BPM) and phase to that of
+    the other track.
+  - **Press twice quickly** to play the track immediatly, synchronized
+    to the tempo (BPM) and to the phase of the other track, if the track
+    was paused.
+  - **Sync Lock :** Hold for at least half of a second to enable **sync
+    lock** for this deck. Decks with sync locked will all play at the
+    same tempo, and decks that also have **quantize** enabled (wich is
+    enabled by default by the mapping) will always have their beats
+    lined up.  
+    **Note :** the **quantize** mode is not mapped on the controller but
+    can be enabled/desabled from Mixxx.
+
 ### LOOPS SECTION
 
 ### EFFECT SECTIONS

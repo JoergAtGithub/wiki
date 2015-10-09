@@ -167,15 +167,15 @@ the outer ring to bend (like in [CD mode](#CD-mode)).
 
   - **iCut mode :**  
     According to the Quick start guide :  
-    \>iCut MODE :  
-    \>DJAY will automatically cut your track with the cross fader when
+    \> iCut MODE :  
+    \> DJAY will automatically cut your track with the cross fader when
     holding SHIFT and scratching with the jog wheel.  
     According to Reloop Website : <http://www.reloop.com/reloop-beatpad>
     (Explorer tab)  
-    \>iCut :  
-    this mode simulates a scratch routine. When the jog wheel is turned
-    back the crossfader closes, when the jog wheel is turned forward the
-    crossfader will open."  
+    \> iCut :  
+    \> this mode simulates a scratch routine. When the jog wheel is
+    turned back the crossfader closes, when the jog wheel is turned
+    forward the crossfader will open."  
     In Practice :  
     DJAY software is closing/opening the crossfader quicly without
     taking into account the direction of the whheel.  

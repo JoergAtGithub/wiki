@@ -37,25 +37,25 @@ pressed.*
 20. Jog (locked if cross fader is at the max side)
 21. Play \[Adjust beatgrid to the current playposition\]
 22. Cue \[Adjust beatgrid to match another playing deck\]
-23. Cup \[Move beatgrid earlier\]
+23. Cue and Play \[Move beatgrid earlier\]
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
 27. Loop in the default beat (4 at the beginning) \[Reloop\], or *in
-    loop* Exit the loop \[Newly loop in the default beat\]
+    loop* Exit the loop \[loop out\]
 28. Halve the default beat, or *in loop* Halve the loop \[Move the loop
     backward by 1/2 beat\]
 29. Double the default beat, or *in loop* Double the loop \[Move the
     loop forward by 1/2 beat\]
-30. Activate \[Clear\] hotcue 1
-31. Activate \[Clear\] hotcue 2
-32. Activate \[Clear\] hotcue 3
-33. Activate \[Clear\] hotcue 4
+30. Activate \[Clear\] hotcue1
+31. Activate \[Clear\] hotcue2
+32. Activate \[Clear\] hotcue3
+33. Activate \[Clear\] hotcue4
 34. Slip mode (affect scratch, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
 36. FX1 \[FX3\]
 37. FX2 \[FX4\]
-38. Up: previous track, Down: next track, Left: load to left, Right:
-    load to right, Push: load to first stopped
+38. Up: previous track and scroll, Down: next track and scroll, Left:
+    load to left, Right: load to right, Push: load to first stopped
 39. Channel select

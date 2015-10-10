@@ -25,7 +25,9 @@ pressed.*
 8.  EQ mid
 9.  EQ low
 10. Gain
-11. Filter (high-pass only)
+11. Filter (high pass only, see [the
+    article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
+    for low-high pass)
 12. Pitch (integer value semitone only)
 13. Rate \[Playposition\]
 14. Channel fader
@@ -41,11 +43,11 @@ pressed.*
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Loop in the default beat (4 at the beginning) \[Reloop\], or *in
+27. Loop in the default length (4 at the beginning) \[Reloop\], or *in
     loop* Exit the loop \[Loop out\]
-28. Halve the default beat, or *in loop* Halve the loop \[Move the loop
-    backward by 1/2 beat\]
-29. Double the default beat, or *in loop* Double the loop \[Move the
+28. Halve the default length, or *in loop* Halve the loop \[Move the
+    loop backward by 1/2 beat\]
+29. Double the default length, or *in loop* Double the loop \[Move the
     loop forward by 1/2 beat\]
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2

@@ -42,7 +42,7 @@ pressed.*
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
 27. Loop in the default beat (4 at the beginning) \[Reloop\], or *in
-    loop* Exit the loop \[loop out\]
+    loop* Exit the loop \[Loop out\]
 28. Halve the default beat, or *in loop* Halve the loop \[Move the loop
     backward by 1/2 beat\]
 29. Double the default beat, or *in loop* Double the loop \[Move the

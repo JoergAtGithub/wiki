@@ -12,7 +12,7 @@
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
-*Functions in square brackets are executed when a shift button is
+*Functions in square brackets are executed instead if a shift button is
 pressed.*
 
 1.  Previous effect \[Select FX1/2\]

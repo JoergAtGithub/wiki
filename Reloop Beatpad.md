@@ -98,7 +98,7 @@ position on the back side of the Reloop Beatpad.
 
 #### PLAY/PAUSE
 
-  - **Play/pause :** press to play/pause the track. If there was no
+  - **Play/pause :** Press to play/pause the track. If there was no
     track loaded into the dec and a track is selected in the song list
     windows, it is loade and the playback of this track starts
     immediatly.

@@ -171,7 +171,7 @@ mode](#CD-mode)).
     explanation : it is "as it is supposed to be done", i.e. : *this
     mode simulates a scratch routine. When the jog wheel is turned back
     the crossfader closes, when the jog wheel is turned forward the
-    crossfader will open.* ;)
+    crossfader will open.*
   - **Note :**
 
 <!-- end list -->

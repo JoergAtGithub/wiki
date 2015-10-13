@@ -168,7 +168,10 @@ mode](#CD-mode)).
 
   - **iCut mode :** Hold **[SHIFT](#shift)** down and scratch to scratch
     in "automagic" scratch mode. In Mixxx, we to stick with the reloop
-    explanation : it is the "as it is supposed to be done" ;)
+    explanation : it is "as it is supposed to be done", i.e. : *this
+    mode simulates a scratch routine. When the jog wheel is turned back
+    the crossfader closes, when the jog wheel is turned forward the
+    crossfader will open.* ;)
   - **Note :**
 
 <!-- end list -->

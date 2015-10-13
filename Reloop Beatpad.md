@@ -69,8 +69,8 @@ minimum position.
     Headphones Channel. Hardware operation – movement not visible on the
     Mixxx GUI, it is independent from the software.
   - **AUX :** Adjust the Volume of the AUX Input. Hardware operation –
-    movement is not visible on the VirtualDJ GUI, it is independent from
-    the software.
+    movement is not visible on the Mixxx GUI, it is independent from the
+    software.
 
 #### REC
 

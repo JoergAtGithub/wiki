@@ -118,7 +118,7 @@ option must be the same as before or scons will recompile Mixxx before
 installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
-`optimize=native` to `optimize=portable`rec
+`optimize=native` to `optimize=portable`
 
 ### Build with m4a/AAC file support
 

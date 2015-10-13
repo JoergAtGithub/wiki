@@ -94,7 +94,7 @@ Scroll through files of folders.
 Press and hold one of those buttons to access secondary functions of
 other controls on the Beatpad. The **SHIFT** buttons can operate as a
 toggle or a momentary one depending on the **SHIFT LOCK** switch
-position on the back side of the ReloopBeatpad.
+position on the back side of the Reloop Beatpad.
 
 #### PLAY/PAUSE
 

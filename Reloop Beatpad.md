@@ -87,16 +87,16 @@ Scroll through files of folders.
   - **[SHIFT](#shift)+Push** in order to open/close folders and
     subfolders in the left item list sidebar.
 
-### DECK CONTROLS SECTION
+## DECK CONTROLS SECTION
 
-#### SHIFT
+### SHIFT
 
 Press and hold one of those buttons to access secondary functions of
 other controls on the Beatpad. The **SHIFT** buttons can operate as a
 toggle or a momentary one depending on the **SHIFT LOCK** switch
 position on the back side of the Reloop Beatpad.
 
-#### PLAY/PAUSE
+### PLAY/PAUSE
 
   - **Play/pause :** Press to play/pause the track. If there was no
     track loaded into the dec and a track is selected in the song list
@@ -108,7 +108,7 @@ position on the back side of the Reloop Beatpad.
     was never pressed. In other words, it enables reverse and slip mode
     while held.
 
-#### JUMP
+### JUMP
 
   - **While playing, or stopped :** If the Cue point is set, seeks the
     player to it and starts playback.
@@ -118,7 +118,7 @@ position on the back side of the Reloop Beatpad.
     played back to its regular speed.
   - **Spinback:** see the **[Instant FX](#Instant-fx)** usage.
 
-#### SET
+### SET
 
   - **While playing :** Seeks the track to the cue-point and stops.
   - **While stopped :** Sets the cue point (Pioneer/Mixxx mode) OR
@@ -134,7 +134,7 @@ position on the back side of the Reloop Beatpad.
   - **Key lock :** Hold **[SHIFT](#shift)** down and then press this
     button to enable/disable the Key-lock.
 
-#### SYNC
+### SYNC
 
   - **Press once** to synchronize the tempo (BPM) and phase to that of
     the other track.
@@ -149,7 +149,7 @@ position on the back side of the Reloop Beatpad.
     **Note :** the **quantize** mode is not mapped on the controller but
     can be enabled/desabled from Mixxx.
 
-#### JOGWHEEL
+### JOGWHEEL
 
 Touch sensitive platters for scratching (Scratch mode/iCut mode),
 bending (Scratch mode/CD mode) or Seek mode.  
@@ -160,7 +160,7 @@ If no track is loaded, the jogwheel displays a red cross. At the end of
 a track, the jogwheel is flashing red faster and faster until it reaches
 the end of the track (full steady red).
 
-##### Scratch mode
+#### Scratch mode
 
 Toggle with the **JOG SCRATCH** button.  
 Use the jogwheel to scratch and the outer ring to bend (like in [CD
@@ -183,19 +183,19 @@ mode](#CD-mode)).
               
 ```
 
-##### Seek mode
+#### Seek mode
 
 Toggle with the **JOG SEEK** button.  
 Use the jogwheel to navigate through the track.
 
-##### CD mode
+#### CD mode
 
 Desactivate both the [Scratch mode](#Scratch-mode) and the [Seek
 mode](#Seek-mode) to enable it.  
 Use the jogwheel to temporarily bend the track wich has the effect of
 temporary slow-down or speed up the tempo.
 
-#### PITCH BEND
+### PITCH BEND
 
   - **Pitch bend :** Use these buttons temporary slow-down/speed up the
     tempo of the track.  
@@ -204,7 +204,7 @@ temporary slow-down or speed up the tempo.
   - **Beat Jump :**Hold **[SHIFT](#shift)** down and then use these
     buttons to jump 1 beat backwards or forward.
 
-#### PITCH
+### PITCH
 
 Controls the track's playback tempo. The red LED indicates that the
 pitch fader of the unit is on zero (center) position.

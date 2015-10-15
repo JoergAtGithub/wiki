@@ -15,13 +15,13 @@ too via MIDI.
 
 # Operation guide to use with Mixxx
 
-### MIXER SECTION
+## MIXER SECTION
 
-#### CrossFader
+### CrossFader
 
 Blends audio between left and right mixer channels.
 
-#### Volume Faders
+### Volume Faders
 
 Adjust the Volume of each channel. If [Fader
 Start](#1-and-2-\(Track-select-buttons\)) is enabled the deck will stop
@@ -29,7 +29,7 @@ at the previously used Cue if the Volume Fader reaches the minimum
 position and will start playing if the Volume fader moves from the
 minimum position.
 
-#### 1 and 2 (Track select buttons)
+## 1 and 2 (Track select buttons)
 
   - **Load a track :** Press these buttons to load the selected track
     from the Browser to left or right deck. The LED of the button will
@@ -43,7 +43,7 @@ minimum position.
     Fader reaches the minimum position and will start playing if the
     Volume fader moves from the minimum position.
 
-#### PFL (symbolized by a headphone)
+### PFL (symbolized by a headphone)
 
   - **PFL :**Press these buttons to send each channel to the Headphones
     Output channel for pre-listening.
@@ -53,7 +53,7 @@ minimum position.
     disabled, the audible playback will resume where the track would
     have been.
 
-#### Equalizer
+### Equalizer
 
   - **LOW :** Adjust the Low (Bass)frequencies for each mixer channel.
   - **MID :** Adjust the Mid frequencies for each mixer channel.
@@ -72,7 +72,7 @@ minimum position.
     movement is not visible on the Mixxx GUI, it is independent from the
     software.
 
-#### REC
+### REC
 
 Use this button to start/stop record of your mixing session.
 

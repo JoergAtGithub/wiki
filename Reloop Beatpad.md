@@ -211,6 +211,8 @@ pitch fader of the unit is on zero (center) position.
 
 ## LOOPS SECTION
 
+(see also
+
 ### Good to know for beginners :
 
 Two kinds of loops exist, the **regular loop** and the **roll loop**.

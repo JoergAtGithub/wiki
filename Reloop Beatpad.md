@@ -397,5 +397,5 @@ modes :
     right PADs lit (symbolizing the position after the loop where the
     track will continue to play when the loop will be triggered off).
   - **Effect rack selection :** each one of the pads selects 1 of the 4
-    effect racks (see. The PAD wich is lit inidicates wich effect rack
-    is active (see **[EFFECTS SECTION](#EFFECTS-SECTION)**).
+    effect racks. The PAD wich is lit inidicates wich effect rack is
+    active (see **[EFFECTS SECTION](#EFFECTS-SECTION)**).

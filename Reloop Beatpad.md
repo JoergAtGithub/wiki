@@ -299,7 +299,18 @@ MODE buttons just above.
 
 #### CUE
 
+Press the **CUE** mode button to set the PADs to HOT CUE mode.
+
 #### Pads
+
+  - **Press** each one of the 4 pads to assign a Hot Cue Point (1 to 4)
+    or returns the track to that Hot
+
+Cue Point.When a Hot Cue Button is unlit, you can assign a Hot Cue Point
+by pressing it at the desired point in your track. Once it is assigned,
+the Hot Cue Button will light up blue.
+
+  - **[SHIFT](#SHIFT)+Press** to delete its assigned Hot Cue Point.
 
 ### Bounce Loop (Roll) mode
 

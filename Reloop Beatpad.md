@@ -76,7 +76,7 @@ minimum position.
 
 Use this button to start/stop record of your mixing session.
 
-#### Browse Knob
+### Browse Knob
 
 Scroll through files of folders.
 

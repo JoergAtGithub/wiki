@@ -253,8 +253,8 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
 ## EFFECTS SECTION
 
-(see also [Instant FX mode](#Instant-FX-mode) [Sampler
-mode](#Sampler-mode) sections)
+(see also **[Instant FX mode](#Instant-FX-mode)** and **[Sampler
+mode](#Sampler-mode)** sections)
 
 #### FX ON
 

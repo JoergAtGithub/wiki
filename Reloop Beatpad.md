@@ -223,7 +223,8 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
     the loop roll the track is further into the song for the period of
     time the loop roll button was hold pressed.  
     As a matter of fact, it is a **regular loop** in **[slip
-    mode](#PFL-\(symbolized-by-a-headphone\))**.
+    mode](#PFL-\(symbolized-by-a-headphone\))** (see
+    **[PFL](#PFL-\(symbolized-by-a-headphone\))** section).
 
 ### LOOP SIZE
 

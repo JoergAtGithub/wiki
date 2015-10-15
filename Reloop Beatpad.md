@@ -213,26 +213,26 @@ pitch fader of the unit is on zero (center) position.
 
 ## EFFECT SECTIONS
 
-### PADS SECTION
+## PADS SECTION
 
 The 4 Performance Pads offer 4 different modes, depending on the 4 PAD
 MODE buttons just above (CUE, .
 
-#### HotCues mode
+### HotCues mode
 
-##### CUE
+#### CUE
 
-##### Pads
+#### Pads
 
-#### Bounce Loop (Roll) mode
+### Bounce Loop (Roll) mode
 
-##### BOUNCE LOOP
+#### BOUNCE LOOP
 
-##### Pads
+#### Pads
 
-#### Instant FX mode
+### Instant FX mode
 
-##### Instant FX
+#### Instant FX
 
   - **Press** this button to set the PADs to Effects mode.
   - **Spinback:** Hold **[SHIFT](#shift)** down and then press this
@@ -242,10 +242,10 @@ MODE buttons just above (CUE, .
     back to its regular speed, in the forward direction.
   - **Brake :** see **[JUMP](#jump)** button usage
 
-##### Pads
+#### Pads
 
-#### Sampler mode
+### Sampler mode
 
-##### SAMPLER
+#### SAMPLER
 
-##### Pads
+#### Pads

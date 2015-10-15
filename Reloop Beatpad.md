@@ -293,7 +293,7 @@ corresponding deck (toggle function).
 ## PADS SECTION
 
 The 4 Performance Pads offer 4 different modes, depending on the 4 PAD
-MODE buttons just above (CUE, .
+MODE buttons just above.
 
 ### HotCues mode
 

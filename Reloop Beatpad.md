@@ -29,7 +29,7 @@ at the previously used Cue if the Volume Fader reaches the minimum
 position and will start playing if the Volume fader moves from the
 minimum position.
 
-## 1 and 2 (Track select buttons)
+### 1 and 2 (Track select buttons)
 
   - **Load a track :** Press these buttons to load the selected track
     from the Browser to left or right deck. The LED of the button will

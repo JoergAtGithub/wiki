@@ -211,7 +211,7 @@ pitch fader of the unit is on zero (center) position.
 
 ## LOOPS SECTION
 
-(see also **[Bounce Loop (Roll) mode](Bounce%20Loop%20\(Roll\)%20mode)**
+(see also **[Bounce Loop (Roll) mode](#Bounce-Loop-\(Roll\)-mode)**
 section)
 
 ### Good to know for beginners :

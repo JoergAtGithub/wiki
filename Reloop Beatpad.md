@@ -322,12 +322,12 @@ Press (and keep down) any of the 4 pads to trigger a momentary **[Loop
 Roll](#Good-to-know-for-beginners)** of a different size (in beats) as
 per the table.
 
-|                       |      |     |     |    |
-| --------------------- | ---- | --- | --- | -- |
-|                       | Pads |     |     |    |
-| :::                   | 1    | 2   | 3   | 4  |
-| Press                 | 1/8  | 1/4 | 1/2 | 1  |
-| Press+[SHIFT](#SHIFT) | 2    | 4   | 8   | 16 |
+|             |      |     |     |    |
+| ----------- | ---- | --- | --- | -- |
+|             | Pads |     |     |    |
+| :::         | 1    | 2   | 3   | 4  |
+| Press       | 1/8  | 1/4 | 1/2 | 1  |
+| SHIFT+Press | 2    | 4   | 8   | 16 |
 
 Once the PAD is released the track will continue to play from the
 position it would have been if the Loop Roll was never triggered. The

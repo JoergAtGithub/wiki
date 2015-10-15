@@ -209,7 +209,7 @@ temporary slow-down or speed up the tempo.
 Controls the track's playback tempo. The red LED indicates that the
 pitch fader of the unit is on zero (center) position.
 
-### LOOPS SECTION
+## LOOPS SECTION
 
 ### EFFECT SECTIONS
 

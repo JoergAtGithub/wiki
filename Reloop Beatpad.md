@@ -241,8 +241,8 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
     the selected size loop in **regular loop mode**. 
   - **Roll loop mode :** Press (and keep down) to trigger a momentary
     Loop Roll of the selected size.
-  - \*\*Toggle loop mode : \*\*Hold **[SHIFT](#shift)** down and then
-    push the encoder to toggle between Regular and Roll Loop mode.
+  - **Toggle loop mode :** Hold **[SHIFT](#shift)** down and then push
+    the encoder to toggle between Regular and Roll Loop mode.
 
 ### LOOP
 

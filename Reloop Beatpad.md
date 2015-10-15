@@ -314,7 +314,7 @@ Press the **CUE** mode button to set the PADs to HOT CUE mode.
 
 #### BOUNCE LOOP
 
-Press the BOUNCE LOOP mode button to set the PADs to Loop Roll mode.
+Press the **BOUNCE LOOP** mode button to set the PADs to Loop Roll mode.
 
 #### Pads
 

@@ -364,8 +364,8 @@ sections.
 
 ### Sampler mode
 
-**note :** On account of to the Reloop Beatpad limitations (bug ?),
-lights will not show on in Sampler mode when the controller is in
+**note :** On account of the Reloop Beatpad limitations (bug ?), lights
+will not show on in Sampler mode when the controller is in
 **[SHIFT](#shif)** mode.
 
 #### SAMPLER

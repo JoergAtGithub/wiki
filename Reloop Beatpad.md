@@ -222,10 +222,8 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
     track continues playing in the background. Therefore, when you exit
     the loop roll the track is further into the song for the period of
     time the loop roll button was hold pressed.  
-    As a matter of fact, it is a **regular loop** in **slip mode** (when
-    the effect stops, the playback continues muted in the background
-    during a loop, scratch etc. Once disabled, the audible playback will
-    resume where the track would have been..).
+    As a matter of fact, it is a **regular loop** in **[slip
+    mode](#PFL-\(symbolized-by-a-headphone\))**.
 
 ### LOOP SIZE
 

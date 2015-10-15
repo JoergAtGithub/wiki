@@ -211,7 +211,7 @@ pitch fader of the unit is on zero (center) position.
 
 ## LOOPS SECTION
 
-### EFFECT SECTIONS
+## EFFECT SECTIONS
 
 ### PADS SECTION
 

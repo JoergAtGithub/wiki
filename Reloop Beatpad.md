@@ -350,6 +350,16 @@ sections.
 
 #### Pads
 
+  - **Instant FX :** Press (and keep down) any of the 4 pads to apply
+    momentarily the effect of the corresponding effect rack.
+  - \*\*Hold **[SHIFT](#shift)** down and then press any of the 4 pads
+    to select the current effect rack for this deck that will be used
+    for effect selection (see **\[\[|\]\]**)or for the corresponding
+    effect to be triggered later on 
+
+The parameters of these effects can be adjusted from the FX PARAM knob
+(26).
+
 ### Sampler mode
 
 #### SAMPLER

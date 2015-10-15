@@ -273,7 +273,7 @@ the corresponding deck (toggle function).
     Quick effect assigned in Mixxx, via Options -\> Settings-\>​
     Equalizers -\> Quick Effect.
 
-#### FX PARAM.
+#### FX PARAM
 
   - **SUPER :** Use this knob to control the **SUPER** parameter of the
     effect for the current selected rack.

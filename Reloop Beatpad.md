@@ -253,6 +253,43 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
 ## EFFECT SECTIONS
 
+(see also [Instant FX mode](#Instant-FX-mode) [Sampler
+mode](#Sampler-mode) sections)
+
+#### FX ON
+
+Push (and relesae) this button to trigger the selected effect for the
+corresponding deck (toggle function).
+
+#### FX SELECT
+
+  - **Select :** Use this encoder to select an effect for the current
+    selected rack. 
+  - **Temporary effect :** Push and hold the encoder to apply
+    temporarily the effect of the current selected rack for the
+    corresponding deck (while pressed).
+  - **Quick Effect :** Hold **[SHIFT](#​shift)** down and then push the
+    encoder Activate or Kill the **Quick Effect**. You can change the
+    Quick effect assigned in Mixxx, via Options -\> Settings-\>​
+    Equalizers -\> Quick Effect.
+
+#### FX PARAM.
+
+  - **SUPER :** Use this knob to control the **SUPER** parameter of the
+    effect for the current selected rack.
+  - **MIX :** Hold **[SHIFT](#​shift)** down and then use this knob to
+    control the **MIX** parameter of the effect for the current selected
+    rack.
+
+#### FILTER
+
+  - **Quick Effect :** Use this knob to apply the Quick effect (usually
+    Filter, but you can change it) to the deck. In middle position no
+    effect is applied.
+  - **Key :** Hold SHIFT down and use this knob to adjust the key
+    (pitch) of the track without changing the tempo. In middle position
+    the track will have its original value.
+
 ## PADS SECTION
 
 The 4 Performance Pads offer 4 different modes, depending on the 4 PAD

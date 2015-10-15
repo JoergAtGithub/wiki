@@ -251,15 +251,15 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
   - **Roll loop mode :**When Roll loop mode is selected, the button will
     apply a temporary **Roll loop** (while pressed).
 
-## EFFECT SECTIONS
+## EFFECTS SECTION
 
 (see also [Instant FX mode](#Instant-FX-mode) [Sampler
 mode](#Sampler-mode) sections)
 
 #### FX ON
 
-Push (and relesae) this button to trigger the selected effect for the
-corresponding deck (toggle function).
+Push (and relesae) this button to trigger the selected effect chain for
+the corresponding deck (toggle function).
 
 #### FX SELECT
 

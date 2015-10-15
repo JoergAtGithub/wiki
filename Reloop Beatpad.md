@@ -211,6 +211,44 @@ pitch fader of the unit is on zero (center) position.
 
 ## LOOPS SECTION
 
+### Good to know for beginners :
+
+Two kinds of loops exist, the **regular loop** and the **roll loop**.
+
+  - **Regular loop :** It loops the track for x amounts of beats and
+    when you exit the loop the track is at the same place where the loop
+    stopped.
+  - **Roll loop :** It loops the track for x amount of beats - but the
+    track continues playing in the background. Therefore, when you exit
+    the loop roll the track is further into the song for the period of
+    time the loop roll button was hold pressed.  
+    As a matter of fact, it is a **regular loop** in **slip mode** (when
+    the effect stops, the playback continues muted in the background
+    during a loop, scratch etc. Once disabled, the audible playback will
+    resume where the track would have been..).
+
+### LOOP SIZE
+
+  - **Loop size :** Turn the encoder anti-clockwise to half the size of
+    the loop and clockwise to double it. 
+  - **Loop move :** Hold **[SHIFT](#shift)** down and then use the
+    encoder to move the triggered loop forward or backwards by 1 beat.
+  - **Activate/desactivate :** (Acts exactly like the
+    **[LOOP](#loop\\)** Button) 
+  - **Regular loop mode :** Push (and release) the encoder to trigger
+    the selected size loop in **regular loop mode**. 
+  - **Roll loop mode :** Press (and keep down) to trigger a momentary
+    Loop Roll of the selected size.
+  - \*\*Toggle loop mode : \*\*Hold **[SHIFT](#shift)** down and then
+    push the encoder to toggle between Regular and Roll Loop mode.
+
+### LOOP
+
+  - **Regular loop mode :** Press this button to trigger a loop of the
+    selected size (toggle function).
+  - **Roll loop mode :**When Roll loop mode is selected, the button will
+    apply a temporary (while pressed).
+
 ## EFFECT SECTIONS
 
 ## PADS SECTION

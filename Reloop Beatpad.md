@@ -11,8 +11,6 @@ too via MIDI.
 
 -----
 
-(work in progress)
-
 # Operation guide to use with Mixxx
 
 ## MIXER SECTION

@@ -249,7 +249,7 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
   - **Regular loop mode :** Press this button to trigger a loop of the
     selected size (toggle function).
   - **Roll loop mode :**When Roll loop mode is selected, the button will
-    apply a temporary **Roll loop**(while pressed).
+    apply a temporary **Roll loop** (while pressed).
 
 ## EFFECT SECTIONS
 

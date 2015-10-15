@@ -342,10 +342,10 @@ sections.
 
   - **Press** this button to set the PADs to Effects mode.
   - **Spinback:** Hold **[SHIFT](#shift)** down and then press this
-    button down in order to stop the track with a backward brake
-    effect.If the **[Instant FX](#Instant-fx)** button is released
-    before the track has completely stopped, the track is then played
-    back to its regular speed, in the forward direction.
+    button down in order to stop the track with a backward brake effect.
+    If the **[Instant FX](#Instant-fx)** button is released before the
+    track has completely stopped, the track is then played back to its
+    regular speed, in the forward direction.
   - **Brake :** see **[JUMP](#jump)** button usage
 
 #### Pads

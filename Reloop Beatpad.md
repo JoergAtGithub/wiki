@@ -214,7 +214,7 @@ pitch fader of the unit is on zero (center) position.
 (see also **[Bounce Loop (Roll) mode](#Bounce-Loop-\(Roll\)-mode)**
 section)
 
-### Good to know for beginners :
+### Good to know for beginners
 
 Two kinds of loops exist, the **regular loop** and the **roll loop**.
 

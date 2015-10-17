@@ -36,7 +36,7 @@ pressed.*
 17. Headphone mix
 18. Master volume (values from 0 to 1)
 19. Scratch
-20. Jog (locked if cross fader is at the max side)
+20. Jog (locked in slip mode)
 21. Play \[Adjust beatgrid to the current playposition\]
 22. Cue \[Adjust beatgrid to match another playing deck\]
 23. Cue and Play \[Move beatgrid earlier\]

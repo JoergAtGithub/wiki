@@ -17,6 +17,7 @@ Helpful but not strictly necessary:
   - surge protector
   - cases for laptop, controller, and headphones
   - backpack or some other carrying case
+  - mouse
   - portable hard drive
   - powered USB hub
 

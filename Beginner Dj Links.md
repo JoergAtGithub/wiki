@@ -50,4 +50,6 @@ a DJ program.
 
 ### Windows
 
-Please add links explaining different sound APIs on Windows here.
+  - [Understanding the Windows Sound
+    System](http://promos.chooch.us/archives/479): explains the
+    differences between ASIO, WASAPI, WDM KS, DirectSound, and MME

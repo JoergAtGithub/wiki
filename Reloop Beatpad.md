@@ -191,8 +191,9 @@ affects the tempo with keylock on).
 
 ### PITCH
 
-Controls the track's playback tempo. The red LED indicates that the
-pitch fader of the unit is on zero (center) position.
+Controls the track's pitch. With keylock on, this only changes the
+tempo. The red LED indicates that the pitch fader of the unit is on zero
+(center) position.
 
 ## LOOPS SECTION
 

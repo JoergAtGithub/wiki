@@ -186,7 +186,7 @@ affects the tempo with keylock on).
     tempo of the track.  
     Once the buttons are released the track will continue to play at the
     tempo designated by the pitch fader.
-  - **Beat Jump:**Hold **[SHIFT](#shift)** down and then use these
+  - \*\*Beat Jump: \*\*Hold **[SHIFT](#shift)** down and then use these
     buttons to jump 1 beat backwards or forward.
 
 ### PITCH

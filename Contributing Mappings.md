@@ -39,7 +39,12 @@ the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
 When you are ready to submit your mapping for inclusion in Mixxx, make a
-pull request on GitHub.
+pull request on GitHub. If this is your first contribution to Mixxx, you
+will be asked to sign the contributor agreement. This agreement gives
+the Mixxx team permission to distribute your mapping with Mixxx under
+the GNU GPL v2 license with an exception allowing it to be distributed
+in the Mac App Store provided that the source code is made available on
+the Mixxx website under the GPL.
 
 ## Documenting the mapping
 

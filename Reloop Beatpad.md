@@ -243,14 +243,14 @@ mode](#Sampler-mode)** sections)
 
 #### FX ON
 
-Push (and relesae) this button to trigger the selected effect chain for
+Push (and release) this button to trigger the selected effect chain for
 the corresponding deck (toggle function).
 
 #### FX SELECT
 
   - **Select:** Use this encoder to select an effect for the current
     selected rack. 
-  - **Temporary effect:** Push and hold the encoder to apply temporarily
+  - **Temporary effect:** Push and hold the encoder to temporarily apply
     the effect of the current selected rack for the corresponding deck
     (while pressed).
   - **Quick Effect:** Hold **[SHIFT](#​shift)** down and then push the
@@ -270,7 +270,7 @@ the corresponding deck (toggle function).
 
   - **Quick Effect:** Use this knob to apply the Quick effect (usually
     Filter, but you can change it) to the deck. In middle position no
-    effect is applied.
+    effect is applied for filter.
   - **Key:** Hold SHIFT down and use this knob to adjust the key (pitch)
     of the track without changing the tempo. In middle position the
     track will have its original value.

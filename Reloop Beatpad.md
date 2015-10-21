@@ -27,13 +27,13 @@ minimum position.
 
 ### 1 and 2 (Track select buttons)
 
-  - **Load a track :** Press these buttons to load the selected track
+  - **Load a track:** Press these buttons to load the selected track
     from the Browser to left or right deck. The LED of the button will
     be on if the deck is loaded. 
-  - **Eject :** Hold the same button for more than half of a second to
+  - **Eject:** Hold the same button for more than half of a second to
     unload the same deck.
-  - **Fader Start :** Hold **[SHIFT](#SHIFT)** down and then press one
-    of these buttons to enable the **Fader Start** on a deck. The LED of
+  - **Fader Start:** Hold **[SHIFT](#SHIFT)** down and then press one of
+    these buttons to enable the **Fader Start** on a deck. The LED of
     the button will blink if Fader Start is enabled. If Fader Start is
     enabled the deck will stop at the previously used Cue if the Volume
     Fader reaches the minimum position and will start playing if the
@@ -41,9 +41,9 @@ minimum position.
 
 ### PFL (symbolized by a headphone)
 
-  - **PFL :**Press these buttons to send each channel to the Headphones
-    Output channel for pre-listening.
-  - **Slip mode :**Hold **[SHIFT](#shift)** down and then use these
+  - \*\*PFL: \*\*Press these buttons to send each channel to the
+    Headphones Output channel for pre-listening.
+  - \*\*Slip mode: \*\*Hold **[SHIFT](#shift)** down and then use these
     buttons to activate/desactvate Slip Mode.When active, the playback
     continues muted in the background during a loop, scratch etc. Once
     disabled, the audible playback will resume where the track would
@@ -51,20 +51,20 @@ minimum position.
 
 ### Equalizer
 
-  - **LOW :** Adjust the Low (Bass)frequencies for each mixer channel.
-  - **MID :** Adjust the Mid frequencies for each mixer channel.
-  - **HIGH :** Adjust the High (Treble) frequencies for each mixer
+  - **LOW:** Adjust the Low (Bass)frequencies for each mixer channel.
+  - **MID:** Adjust the Mid frequencies for each mixer channel.
+  - **HIGH:** Adjust the High (Treble) frequencies for each mixer
     channel.
-  - **GAIN :** Adjust the Gain of each mixer channel.
-  - **MASTER :** Adjust the level of the Master Output. Hardware
+  - **GAIN:** Adjust the Gain of each mixer channel.
+  - **MASTER:** Adjust the level of the Master Output. Hardware
     operation - movement is not visible on the Mixxx GUI, it is
     independent from the software.
-  - **Cue Mix (Hadphones mixing) :** Adjust how the Channels and the
+  - **Cue Mix (Hadphones mixing):** Adjust how the Channels and the
     Master Output blend at the Headphones Channel.
-  - **Phones (Hadphones level) :** Adjust the Volume Output of the
+  - **Phones (Hadphones level):** Adjust the Volume Output of the
     Headphones Channel. Hardware operation – movement not visible on the
     Mixxx GUI, it is independent from the software.
-  - **AUX :** Adjust the Volume of the AUX Input. Hardware operation –
+  - **AUX:** Adjust the Volume of the AUX Input. Hardware operation –
     movement is not visible on the Mixxx GUI, it is independent from the
     software.
 
@@ -76,12 +76,12 @@ Use this button to start/stop record of your mixing session.
 
 Scroll through files of folders.
 
-  - **Turn** in order to select a track in the song list.
-  - **Push** in order to load the selected track into first stop deck.
-  - **[SHIFT](#shift)+Turn** in order to select a folder or subfolder in
-    the left item list sidebar.
-  - **[SHIFT](#shift)+Push** in order to open/close folders and
-    subfolders in the left item list sidebar.
+  - **Turn** to select a track in the song list.
+  - **Push** to load the selected track into first stop deck.
+  - **[SHIFT](#shift)+Turn** to select a folder or subfolder in the left
+    item list sidebar.
+  - **[SHIFT](#shift)+Push** to open/close folders and subfolders in the
+    left item list sidebar.
 
 ## DECK CONTROLS SECTION
 
@@ -94,21 +94,21 @@ position on the back side of the Reloop Beatpad.
 
 ### PLAY/PAUSE
 
-  - **Play/pause :** Press to play/pause the track. If there was no
-    track loaded into the dec and a track is selected in the song list
+  - **Play/pause:** Press to play/pause the track. If there was no track
+    loaded into the dec and a track is selected in the song list
     windows, it is loade and the playback of this track starts
     immediatly.
-  - **Censor :** Hold **[SHIFT](#shift)** down and then press this
-    button to play the track in reverse. When released the track will
-    continue to play from the position it would have been if the button
-    was never pressed. In other words, it enables reverse and slip mode
-    while held.
+  - **Censor:** Hold **[SHIFT](#shift)** down and then press this button
+    to play the track in reverse. When released the track will continue
+    to play from the position it would have been if the button was never
+    pressed. In other words, it enables reverse and slip mode while
+    held.
 
 ### JUMP
 
-  - **While playing, or stopped :** If the Cue point is set, seeks the
+  - **While playing, or stopped:** If the Cue point is set, seeks the
     player to it and starts playback.
-  - **Brake :** Hold **[SHIFT](#shift)** down and then press this button
+  - **Brake:** Hold **[SHIFT](#shift)** down and then press this button
     to stop the track with a gradual brake. If the **JUMP** button is
     released before the track has completely stopped, the track is then
     played back to its regular speed.
@@ -116,8 +116,8 @@ position on the back side of the Reloop Beatpad.
 
 ### SET
 
-  - **While playing :** Seeks the track to the cue-point and stops.
-  - **While stopped :** Sets the cue point (Pioneer/Mixxx mode) OR
+  - **While playing:** Seeks the track to the cue-point and stops.
+  - **While stopped:** Sets the cue point (Pioneer/Mixxx mode) OR
     preview from it (Denon mode).  
     If the Cue point is already set at the current position of the
     track, hold this button to play the track and release it to return
@@ -127,7 +127,7 @@ position on the back side of the Reloop Beatpad.
     buttons.
   - **Hint:** Change the default cue mode in Preferences -\> Interface.
     The Pioneer mode is the more consistent with the Reloop Beatpad. 
-  - **Key lock :** Hold **[SHIFT](#shift)** down and then press this
+  - **Key lock:** Hold **[SHIFT](#shift)** down and then press this
     button to enable/disable the Key-lock.
 
 ### SYNC
@@ -137,7 +137,7 @@ position on the back side of the Reloop Beatpad.
   - **Press twice quickly** to play the track immediatly, synchronized
     to the tempo (BPM) and to the phase of the other track, if the track
     was paused.
-  - **Sync Lock :** Hold for at least half of a second to enable **sync
+  - **Sync Lock:** Hold for at least half of a second to enable **sync
     lock** for this deck. Decks with sync locked will all play at the
     same tempo, and decks that also have **quantize** enabled (wich is
     enabled by default by the mapping) will always have their beats
@@ -162,20 +162,20 @@ Toggle with the **JOG SCRATCH** button.
 Use the jogwheel to scratch and the outer ring to bend (like in [CD
 mode](#CD-mode)).
 
-  - **iCut mode :** Hold **[SHIFT](#shift)** down and scratch to scratch
+  - **iCut mode:** Hold **[SHIFT](#shift)** down and scratch to scratch
     in "automagic" scratch mode. In Mixxx, we to stick with the reloop
     explanation : it is "as it is supposed to be done", i.e. : *this
     mode simulates a scratch routine. When the jog wheel is turned back
     the crossfader closes, when the jog wheel is turned forward the
     crossfader will open.*
-  - **Note :**
+  - **Note:**
 
 <!-- end list -->
 
 ``` 
     * According to the Quick start guide :\\   iCut MODE :\\   DJAY will automatically cut your track with the cross fader when holding SHIFT and scratching with the jog wheel.
-    * According to Reloop Website ( http://www.reloop.com/reloop-beatpad , Explorer tab) :\\ iCut :\\ this mode simulates a scratch routine. When the jog wheel is turned back the crossfader closes, when the jog wheel is turned forward the crossfader will open."
-    * In Practice :\\ DJAY software is closing/opening the crossfader quicly without taking into account the direction of the whheel.\\ 
+    * According to [[http://www.reloop.com/reloop-beatpad|Reloop website]]:\\ iCut:\\ this mode simulates a scratch routine. When the jog wheel is turned back the crossfader closes, when the jog wheel is turned forward the crossfader will open."
+    * In Practice:\\ DJAY software is closing/opening the crossfader quicly without taking into account the direction of the whheel.\\ 
               
 ```
 
@@ -193,11 +193,11 @@ temporary slow-down or speed up the tempo.
 
 ### PITCH BEND
 
-  - **Pitch bend :** Use these buttons temporary slow-down/speed up the
+  - **Pitch bend:** Use these buttons temporary slow-down/speed up the
     tempo of the track.  
     Once the buttons are released the track will continue to play at the
     tempo designated by the pitch fader.
-  - **Beat Jump :**Hold **[SHIFT](#shift)** down and then use these
+  - **Beat Jump:**Hold **[SHIFT](#shift)** down and then use these
     buttons to jump 1 beat backwards or forward.
 
 ### PITCH
@@ -214,10 +214,10 @@ section)
 
 Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
-  - **Regular loop :** It loops the track for x amounts of beats and
-    when you exit the loop the track is at the same place where the loop
+  - **Regular loop:** It loops the track for x amounts of beats and when
+    you exit the loop the track is at the same place where the loop
     stopped.
-  - **Roll loop :** It loops the track for x amount of beats - but the
+  - **Roll loop:** It loops the track for x amount of beats - but the
     track continues playing in the background. Therefore, when you exit
     the loop roll the track is further into the song for the period of
     time the loop roll button was hold pressed.  
@@ -227,24 +227,24 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
 ### LOOP SIZE
 
-  - **Loop size :** Turn the encoder anti-clockwise to half the size of
+  - **Loop size:** Turn the encoder anti-clockwise to half the size of
     the loop and clockwise to double it. 
-  - **Loop move :** Hold **[SHIFT](#shift)** down and then use the
+  - **Loop move:** Hold **[SHIFT](#shift)** down and then use the
     encoder to move the triggered loop forward or backwards by 1 beat.
-  - **Activate/desactivate :** (Acts exactly like the
-    **[LOOP](#loop\\)** Button) 
-  - **Regular loop mode :** Push (and release) the encoder to trigger
-    the selected size loop in **regular loop mode**. 
-  - **Roll loop mode :** Press (and keep down) to trigger a momentary
+  - **Activate/desactivate:** (Acts exactly like the **[LOOP](#loop\\)**
+    Button) 
+  - **Regular loop mode:** Push (and release) the encoder to trigger the
+    selected size loop in **regular loop mode**. 
+  - **Roll loop mode:** Press (and keep down) to trigger a momentary
     Loop Roll of the selected size.
-  - **Toggle loop mode :** Hold **[SHIFT](#shift)** down and then push
+  - **Toggle loop mode:** Hold **[SHIFT](#shift)** down and then push
     the encoder to toggle between Regular and Roll Loop mode.
 
 ### LOOP
 
-  - **Regular loop mode :** Press this button to trigger a loop of the
+  - **Regular loop mode:** Press this button to trigger a loop of the
     selected size (toggle function).
-  - **Roll loop mode :**When Roll loop mode is selected, the button will
+  - **Roll loop mode:**When Roll loop mode is selected, the button will
     apply a temporary **Roll loop** (while pressed).
 
 ## EFFECTS SECTION
@@ -259,32 +259,32 @@ the corresponding deck (toggle function).
 
 #### FX SELECT
 
-  - **Select :** Use this encoder to select an effect for the current
+  - **Select:** Use this encoder to select an effect for the current
     selected rack. 
-  - **Temporary effect :** Push and hold the encoder to apply
-    temporarily the effect of the current selected rack for the
-    corresponding deck (while pressed).
-  - **Quick Effect :** Hold **[SHIFT](#​shift)** down and then push the
+  - **Temporary effect:** Push and hold the encoder to apply temporarily
+    the effect of the current selected rack for the corresponding deck
+    (while pressed).
+  - **Quick Effect:** Hold **[SHIFT](#​shift)** down and then push the
     encoder Activate or Kill the **Quick Effect**. You can change the
     Quick effect assigned in Mixxx, via Options -\> Settings-\>​
     Equalizers -\> Quick Effect.
 
 #### FX PARAM
 
-  - **SUPER :** Use this knob to control the **SUPER** parameter of the
+  - **SUPER:** Use this knob to control the **SUPER** parameter of the
     effect for the current selected rack.
-  - **MIX :** Hold **[SHIFT](#​shift)** down and then use this knob to
+  - **MIX:** Hold **[SHIFT](#​shift)** down and then use this knob to
     control the **MIX** parameter of the effect for the current selected
     rack.
 
 #### FILTER
 
-  - **Quick Effect :** Use this knob to apply the Quick effect (usually
+  - **Quick Effect:** Use this knob to apply the Quick effect (usually
     Filter, but you can change it) to the deck. In middle position no
     effect is applied.
-  - **Key :** Hold SHIFT down and use this knob to adjust the key
-    (pitch) of the track without changing the tempo. In middle position
-    the track will have its original value.
+  - **Key:** Hold SHIFT down and use this knob to adjust the key (pitch)
+    of the track without changing the tempo. In middle position the
+    track will have its original value.
 
 ## PADS SECTION
 
@@ -346,13 +346,13 @@ sections.
 
 #### Pads
 
-  - **Instant FX :** Press (and keep down) any of the 4 pads to apply
+  - **Instant FX:** Press (and keep down) any of the 4 pads to apply
     momentarily the effect of the corresponding effect rack. The
     parameters of these effects can be adjusted from the **[FX
     PARAM](#FX-PARAM)** knob.
-  - **Current effect rack selection :** Hold **[SHIFT](#shift)** down
-    and then press any of the 4 pads to select the current effect rack
-    for this deck that will be used for effect selection or for the
+  - **Current effect rack selection:** Hold **[SHIFT](#shift)** down and
+    then press any of the 4 pads to select the current effect rack for
+    this deck that will be used for effect selection or for the
     corresponding effect to be triggered later on (see **[EFFECTS
     SECTION](#EFFECTS-SECTION)**).  
     this can also be done with a visual feedback in **[Sampler
@@ -360,7 +360,7 @@ sections.
 
 ### Sampler mode
 
-**note :** On account of the Reloop Beatpad limitations (bug ?), lights
+**Note:** On account of the Reloop Beatpad limitations (bug ?), lights
 will not show on in Sampler mode when the controller is in
 **[SHIFT](#shif)** mode.
 
@@ -370,28 +370,28 @@ Press the SAMPLER mode button to set the PADs to cycle between three sub
 modes :
 
 ``` 
- - **1st press ** : **Sampler mode** (orange LEDs).
- - **2nd press** : **Sampler bank selection** mode (pink LED) 
- - **3rd press** : **Loop mode** status and selection (magenta LEDs).
- - **4th press** : **Effect rack selection** mode (purple LED).   
+ - **1st press**: **Sampler mode** (orange LEDs).
+ - **2nd press**: **Sampler bank selection** mode (pink LED) 
+ - **3rd press**: **Loop mode** status and selection (magenta LEDs).
+ - **4th press**: **Effect rack selection** mode (purple LED).   
 ```
 
 #### Pads
 
-  - \*\*Sampler mode : \*\* each one of the PADs triggers a sample from
+  - \*\*Sampler mode: \*\* each one of the PADs triggers a sample from
     the selected Sampler bank. The PADs wich are lit inidicate wich
     samples are loaded and ready to use. While a sample is playing, the
     corresponding PAD changes its light color to pink.
-  - **Sampler bank selection mode :** each one of the pads selects 1 of
+  - **Sampler bank selection mode:** each one of the pads selects 1 of
     the 4 sampler banks. The PAD wich is lit inidicates wich bank is
     active.
-  - \*\*Loop mode : \*\* press any pad to toggle between **[regular loop
+  - **Loop mode:** press any pad to toggle between **[regular loop
     mode](#LOOPS-SECTION)** and **[roll loop mode](#LOOPS-SECTION)**.  
     **Memo :** **Regular loop mode** is symbolized by the left PAD lit,
     representing the loop), and all the others switched off. **Roll loop
     mode** is symbolized by the left (representing the loop) and the
     right PADs lit (symbolizing the position after the loop where the
     track will continue to play when the loop will be triggered off).
-  - **Effect rack selection :** each one of the pads selects 1 of the 4
+  - **Effect rack selection:** each one of the pads selects 1 of the 4
     effect racks. The PAD wich is lit inidicates wich effect rack is
     active (see **[EFFECTS SECTION](#EFFECTS-SECTION)**).

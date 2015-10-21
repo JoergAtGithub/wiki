@@ -13,7 +13,7 @@ signals to computers with a USB cable.
 
 ## MIXER SECTION
 
-### CrossFader
+### Crossfader
 
 Blends audio between left and right mixer channels.
 

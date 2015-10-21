@@ -63,8 +63,9 @@ minimum position.
   - **Cue Mix (Hadphones mixing):** Adjust how the Channels and the
     Master Output blend at the Headphones Channel.
   - **Phones (Hadphones level):** Adjust the Volume Output of the
-    Headphones Channel. Hardware operation – movement not visible on the
-    Mixxx GUI, it is independent from the software.
+    Headphones Channel. This adjusts the output level of the Beatpad's
+    sound card; it does not affect the headphone software gain in Mixxx,
+    so the change is not visible on screen.
   - **AUX:** Adjust the Volume of the AUX Input. Hardware operation –
     movement is not visible on the Mixxx GUI, it is independent from the
     software.

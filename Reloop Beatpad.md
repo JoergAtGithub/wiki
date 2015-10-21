@@ -56,19 +56,16 @@ minimum position.
   - **HIGH:** Adjust the High (Treble) frequencies for each mixer
     channel.
   - **GAIN:** Adjust the Gain of each mixer channel.
-  - **MASTER:** Adjust the level of the Master Output. This adjusts the
-    output level of the Beatpad's sound card; it does not affect the
-    master software gain in Mixxx, so the change is not visible on
-    screen.
+  - **MASTER:** Adjust the level of the Master Output.
   - **Cue Mix (Hadphones mixing):** Adjust how the Channels and the
     Master Output blend at the Headphones Channel.
   - **Phones (Hadphones level):** Adjust the Volume Output of the
-    Headphones Channel. This adjusts the output level of the Beatpad's
-    sound card; it does not affect the headphone software gain in Mixxx,
-    so the change is not visible on screen.
-  - **AUX:** Adjust the Volume of the AUX Input. Hardware operation –
-    movement is not visible on the Mixxx GUI, it is independent from the
-    software.
+    Headphones Channel.
+  - **AUX:** Adjust the Volume of the AUX Input.
+
+The MASTER, Phones, and AUX knobs adjust the levels of the Beatpad's
+sound card; they do not control the software gains in Mixxx so the
+changes are not visible on screen.
 
 ### REC
 

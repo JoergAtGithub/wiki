@@ -73,7 +73,7 @@ Use this button to start/stop record of your mixing session.
 
 ### Browse Knob
 
-Scroll through files of folders.
+Scroll through your library.
 
   - **Turn** to select a track in the song list.
   - **Push** to load the selected track into first stop deck.

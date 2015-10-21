@@ -51,7 +51,7 @@ minimum position.
 
 ### Equalizer
 
-  - **LOW:** Adjust the Low (Bass)frequencies for each mixer channel.
+  - **LOW:** Adjust the Low (Bass) frequencies for each mixer channel.
   - **MID:** Adjust the Mid frequencies for each mixer channel.
   - **HIGH:** Adjust the High (Treble) frequencies for each mixer
     channel.

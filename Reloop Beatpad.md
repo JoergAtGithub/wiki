@@ -200,17 +200,16 @@ tempo. The red LED indicates that the pitch fader of the unit is on zero
 (see also **[Bounce Loop (Roll) mode](#Bounce-Loop-\(Roll\)-mode)**
 section)
 
-### Good to know for beginners
+### Loop types
 
 Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
-  - **Regular loop:** It loops the track for x amounts of beats and when
-    you exit the loop the track is at the same place where the loop
-    stopped.
-  - **Roll loop:** It loops the track for x amount of beats - but the
-    track continues playing in the background. Therefore, when you exit
-    the loop roll the track is further into the song for the period of
-    time the loop roll button was hold pressed.  
+  - **Regular loop:** loop the track for x amounts of beats and when you
+    exit the loop the track is at the same place where the loop stopped.
+  - **Roll loop:** loop the track for x amount of beats - but the track
+    continues playing in the background. Therefore, when you exit the
+    loop roll the track is further into the song for the period of time
+    the loop roll button was held down.  
     As a matter of fact, it is a **regular loop** in **[slip
     mode](#PFL-\(symbolized-by-a-headphone\))** (see
     **[PFL](#PFL-\(symbolized-by-a-headphone\))** section).

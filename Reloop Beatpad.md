@@ -216,15 +216,15 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
 ### LOOP SIZE
 
-  - **Loop size:** Turn the encoder anti-clockwise to half the size of
+  - **Loop size:** Turn the encoder counterclockwise to half the size of
     the loop and clockwise to double it. 
   - **Loop move:** Hold **[SHIFT](#shift)** down and then use the
     encoder to move the triggered loop forward or backwards by 1 beat.
-  - **Activate/desactivate:** (Acts exactly like the **[LOOP](#loop\\)**
+  - **Activate/deactivate:** (Acts exactly like the **[LOOP](#loop\\)**
     Button) 
   - **Regular loop mode:** Push (and release) the encoder to trigger the
-    selected size loop in **regular loop mode**. 
-  - **Roll loop mode:** Press (and keep down) to trigger a momentary
+    selected size loop in **regular loop mode**.
+  - **Roll loop mode:** Press (and hold down) to trigger a momentary
     Loop Roll of the selected size.
   - **Toggle loop mode:** Hold **[SHIFT](#shift)** down and then push
     the encoder to toggle between Regular and Roll Loop mode.

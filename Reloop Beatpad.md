@@ -5,11 +5,9 @@
     notes](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7581)
 
 The **Reloop Beatpad** is a conventional 2 channel controller that is
-primarily designed to work with algoriddim‘s djay on the iOS platformand
-and more recently on the Android platform, but can work with computers
-too via MIDI.
-
------
+primarily designed to work with algoriddim‘s djay on the iOS platform
+and and more recently on the Android platform, but can also send MIDI
+signals to computers with a USB cable.
 
 # Operation guide to use with Mixxx
 

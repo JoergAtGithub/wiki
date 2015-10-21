@@ -251,7 +251,8 @@ controller to this table.
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.8                           |
 | [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[16\]     | 1.8                           |
 | [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                                             | yes                             | MIDI            | 1.6.2                         |
-| [Vestax VCI-100](Vestax%20VCI-100)                                                                 | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.6                           |
+| [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.6                           |
+| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued      | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
 | [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
@@ -285,7 +286,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | Device                                               | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol       |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI\[18\] (and HID?) |
 | [Reloop Beatpad](Reloop%20Beatpad)                   | $449               | 2 deck all-in-one | yes                   | MIDI                  |
-| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)           | discontinued       | 4 deck all-in-one | yes                   | MIDI                  |
 
 ### Controllers that do not yet have Mixxx mappings
 

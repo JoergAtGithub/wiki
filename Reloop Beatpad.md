@@ -161,21 +161,12 @@ Use the jogwheel to scratch and the outer ring to bend (like in [CD
 mode](#CD-mode)).
 
   - **iCut mode:** Hold **[SHIFT](#shift)** down and scratch to scratch
-    in "automagic" scratch mode. In Mixxx, we to stick with the reloop
-    explanation : it is "as it is supposed to be done", i.e. : *this
-    mode simulates a scratch routine. When the jog wheel is turned back
-    the crossfader closes, when the jog wheel is turned forward the
-    crossfader will open.*
-  - **Note:**
-
-<!-- end list -->
-
-``` 
-    * According to the Quick start guide :\\   iCut MODE :\\   DJAY will automatically cut your track with the cross fader when holding SHIFT and scratching with the jog wheel.
-    * According to [[http://www.reloop.com/reloop-beatpad|Reloop website]]:\\ iCut:\\ this mode simulates a scratch routine. When the jog wheel is turned back the crossfader closes, when the jog wheel is turned forward the crossfader will open."
-    * In Practice:\\ DJAY software is closing/opening the crossfader quicly without taking into account the direction of the whheel.\\ 
-              
-```
+    in "automagic" scratch mode. When the jog wheel is turned back, the
+    crossfader is closed. When the jog wheel is turned forward, the
+    crossfader opens. (Note that the Algoriddim djay mapping actually
+    closes/opens the crossfader quickly without taking into account the
+    direction of the wheel, contrary to what the Beatpad's Quick Start
+    guide says.)  
 
 #### Seek mode
 
@@ -184,10 +175,10 @@ Use the jogwheel to navigate through the track.
 
 #### CD mode
 
-Desactivate both the [Scratch mode](#Scratch-mode) and the [Seek
-mode](#Seek-mode) to enable it.  
-Use the jogwheel to temporarily bend the track wich has the effect of
-temporary slow-down or speed up the tempo.
+Deactivate both the [Scratch mode](#Scratch-mode) and the [Seek
+mode](#Seek-mode) to enable this mode.  
+Use the jogwheel to temporarily bend the pitch of the track (which only
+affects the tempo with keylock on).
 
 ### PITCH BEND
 

@@ -69,7 +69,12 @@ changes are not visible on screen.
 
 ### REC
 
-Use this button to start/stop record of your mixing session.
+  - **Record :** Use this button to start/stop record of your mixing
+    session.
+  - **End track warning :** Hold **[SHIFT](#SHIFT)** down and then press
+    this button in order to toggle **on** or **off** the red flashing of
+    the **[jog wheels](#JOGWHEEL)** when the playback reaches the end of
+    the track.
 
 ### Browse Knob
 

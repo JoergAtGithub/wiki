@@ -73,7 +73,7 @@ changes are not visible on screen.
 
 ### REC
 
-  - **Record :** Use this button to start/stop record of your mixing
+  - **Record :** Use this button to start/stop recording your mixing
     session.
   - **End track warning :** Hold **[SHIFT](#SHIFT)** down and then press
     this button in order to toggle **on** or **off** the red flashing of

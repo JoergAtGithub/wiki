@@ -7,8 +7,8 @@
 ## Mapping for Mixxx 1.12
 
   - [Vestax
-    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
+    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
@@ -28,7 +28,7 @@ pressed.*
 11. Filter (high pass only, see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     for low-high pass)
-12. Pitch (integer value semitone only)
+12. Pitch (semitones only)
 13. Rate \[Playposition\]
 14. Channel fader
 15. Cross fader

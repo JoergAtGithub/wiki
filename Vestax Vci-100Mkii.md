@@ -58,8 +58,6 @@ pressed.*
     load to left, Right: load to right, Push: load to first stopped
 39. Channel select
 
-<!-- end list -->
-
-  - [Vestax
-    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
+[Vestax
+VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)

@@ -158,7 +158,8 @@ combinations depending on the applied effect, loop, loop roll or Filter.
 If no track is loaded, the jogwheel displays a red cross. At the end of
 a track, the jogwheel is flashing red faster and faster until it reaches
 the end of the track (full steady red).  
-You can toggle on/off this behavior with **[SHIFT](#shift)+rec**.
+You can toggle on/off this behavior with
+**[SHIFT](#shift)+[REC](#rec)**.
 
 #### Scratch mode
 

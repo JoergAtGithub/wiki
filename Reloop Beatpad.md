@@ -96,9 +96,11 @@ Scroll through your library.
 ### SHIFT
 
 Press and hold one of those buttons to access secondary functions of
-other controls on the Beatpad. The **SHIFT** buttons can operate as a
-toggle or a momentary one depending on the **SHIFT LOCK** switch
-position on the back side of the Reloop Beatpad.
+other controls on the Beatpad. The secondary functions can **SHIFT** can
+be accessed while the **SHIFT** button is held down or if **SHIFT LOCK**
+switch position on the back side of the Reloop Beatpad is on, the
+secondary functions can be accessed after the button is released and
+until the **SHIFT** is pressed again.
 
 ### PLAY/PAUSE
 

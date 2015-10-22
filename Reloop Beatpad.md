@@ -41,13 +41,17 @@ minimum position.
 
 ### PFL (symbolized by a headphone)
 
-  - \*\*PFL: \*\*Press these buttons to send each channel to the
+  - \*\*PFL : \*\*Press these buttons to send each channel to the
     Headphones Output channel for pre-listening.
-  - \*\*Slip mode: \*\*Hold **[SHIFT](#shift)** down and then use these
-    buttons to activate/desactvate Slip Mode.When active, the playback
-    continues muted in the background during a loop, scratch etc. Once
-    disabled, the audible playback will resume where the track would
-    have been.
+  - \*\*Slip mode : \*\*Hold **[SHIFT](#shift)** down and then press
+    these buttons to activate/desactivate Slip Mode. When active, the
+    playback continues muted in the background during a loop, scratch
+    etc. Once disabled, the audible playback will resume where the track
+    would have been.
+  - **Quantize mode:** Hold **[SHIFT](#shift)** down and then press
+    these buttons to activate/desactivate the Quantize mode. When
+    active, it aligns Hot-cues and Loops to the next beat from the
+    current position.
 
 ### Equalizer
 

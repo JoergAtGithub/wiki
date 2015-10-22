@@ -135,7 +135,7 @@ XML, write:
     least/most significant byte. Some controls, most often pitch faders,
     send two MIDI messages so their values can be combined to form
     127<sup>2</sup> (16,384) possible values rather than 127 for more
-    precise control.
+    precise control. *New in 1.12*
 
 ## Outputs
 

@@ -182,8 +182,8 @@ Use the jogwheel to navigate through the track.
 
 #### CD mode
 
-Deactivate both the [Scratch mode](#Scratch-mode) and the [Seek
-mode](#Seek-mode) to enable this mode.  
+Deactivate both the **[Scratch mode](#Scratch-mode)** and the **[Seek
+mode](#Seek-mode)** to enable this mode.  
 Use the jogwheel to temporarily bend the pitch of the track (which only
 affects the tempo with keylock on).
 

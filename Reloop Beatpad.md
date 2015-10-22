@@ -281,9 +281,9 @@ the corresponding deck (toggle function).
 
 #### FILTER
 
-  - **Quick Effect:** Use this knob to apply the Quick effect (usually
-    Filter, but you can change it) to the deck. In middle position no
-    effect is applied for filter.
+  - **Quick Effect:** Use this knob to apply the Quick effect (by
+    default, this is Filter, but you can change it) to the deck. In
+    middle position no effect is applied for filter.
   - **Key:** Hold SHIFT down and use this knob to adjust the key (pitch)
     of the track without changing the tempo. In middle position the
     track will have its original value.

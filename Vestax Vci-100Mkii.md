@@ -6,10 +6,6 @@
 
 ## Mapping for Mixxx 1.12
 
-  - [Vestax
-    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
-
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
 *Functions in square brackets are executed instead if a shift button is
@@ -61,3 +57,9 @@ pressed.*
 38. Up: previous track and scroll, Down: next track and scroll, Left:
     load to left, Right: load to right, Push: load to first stopped
 39. Channel select
+
+<!-- end list -->
+
+  - [Vestax
+    VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+  - [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)

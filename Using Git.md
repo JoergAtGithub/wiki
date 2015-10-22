@@ -17,11 +17,13 @@ tool, but it can be confusing to learn, so we **strongly suggest** you
 have a look at one of these tutorials. They are sorted according to the
 time needed to complete them. The first one is the shortest.
 
-1.  [introduction to Git by
+1.  [git - the simple guide by Roger Dudler (in 14
+    languages)](http://rogerdudler.github.io/git-guide/)
+2.  [introduction to Git by
     GitHub](http://try.github.io/levels/1/challenges/1)
-2.  [Ry's git Tutorial](http://rypress.com/tutorials/git/index)
-3.  [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
-4.  [Pro Git (the big manual)](http://git-scm.com/book)
+3.  [Ry's git Tutorial](http://rypress.com/tutorials/git/index)
+4.  [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
+5.  [Pro Git (the big manual)](http://git-scm.com/book)
 
 All of these tutorials are interactive and guide you with helpful
 graphics. Don't worry if you don't understand everything the first time.

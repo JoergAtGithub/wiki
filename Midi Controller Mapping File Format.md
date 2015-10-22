@@ -131,6 +131,11 @@ XML, write:
     these occur separately. (Herc)
   - Spread64: Exponential spread either side of 64, aka "relative"
     controller
+  - fourteen-bit-lsb/fourteen-bit-msb: 14-bit (high resolution) MIDI
+    least/most significant byte. Some controls, most often pitch faders,
+    send two MIDI messages so their values can be combined to form
+    127<sup>2</sup> (16,384) possible values rather than 127 for more
+    precise control.
 
 ## Outputs
 

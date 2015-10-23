@@ -499,7 +499,7 @@ output with speakers.
 2.  you may have a ground issue with the beatpad2 (like for the
     beatpad), and need to build a special cable.
 
-### General tips
+## General tips
 
 At native instruments, they have some good pieces of advice for
 everybody :

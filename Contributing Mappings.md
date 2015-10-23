@@ -110,5 +110,5 @@ does and how to change it.
 
 Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the
-alternate function. This is not an issue with encoders that rotate
-infinitely.
+alternate function. This is generally not an issue with encoders that
+rotate infinitely, buttons, pads, or touch strips.

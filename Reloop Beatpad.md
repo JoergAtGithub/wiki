@@ -364,36 +364,14 @@ sections.
 
 **Note:** On account of the Reloop Beatpad limitations (bug ?), lights
 will not show on in Sampler mode when the controller is in
-**[SHIFT](#shif)** mode.
+**[SHIFT](#shift)** mode.
 
-#### SAMPLER
-
-Press the SAMPLER mode button to set the PADs to cycle between three sub
-modes :
+Press the SAMPLER mode button to set the PADs to cycle between 4 sub
+modes:
 
 ``` 
- - **1st press**: **Sampler mode** (orange LEDs).
- - **2nd press**: **Sampler bank selection** mode (pink LED) 
- - **3rd press**: **Loop mode** status and selection (magenta LEDs).
- - **4th press**: **Effect rack selection** mode (purple LED).   
+ - **Sampler mode** (orange LEDs): each pad triggers a sample from the selected Sampler bank. The PADs wich are lit indicate which samples are loaded and ready to use. While a sample is playing, the corresponding PAD changes its color to pink.
+ - **Sampler bank selection mode** (pink LED): each pad selects 1 of the 4 sampler banks. The PAD wich is lit indicates wich bank is active.
+ - **Loop mode** status and selection (magenta LEDs): press any pad to toggle between **[[#LOOPS-SECTION|regular loop mode]]** and **[[#LOOPS-SECTION|roll loop mode]]**.\\ **Regular loop mode** is symbolized by the left PAD lit, representing the loop), and all the others switched off. **Roll loop mode** is symbolized by both the left (representing the loop) and the right PADs lit (symbolizing the position after the loop where the track will continue to play when the loop will be triggered off).
+ - **Effect rack selection** mode (purple LED): each pads selects 1 of the 4 effect racks. The PAD which is lit indicates which effect rack is active (see **[[#EFFECTS-SECTION|EFFECTS SECTION]]**).
 ```
-
-#### Pads
-
-  - \*\*Sampler mode: \*\* each one of the PADs triggers a sample from
-    the selected Sampler bank. The PADs wich are lit inidicate wich
-    samples are loaded and ready to use. While a sample is playing, the
-    corresponding PAD changes its light color to pink.
-  - **Sampler bank selection mode:** each one of the pads selects 1 of
-    the 4 sampler banks. The PAD wich is lit inidicates wich bank is
-    active.
-  - **Loop mode:** press any pad to toggle between **[regular loop
-    mode](#LOOPS-SECTION)** and **[roll loop mode](#LOOPS-SECTION)**.  
-    **Memo :** **Regular loop mode** is symbolized by the left PAD lit,
-    representing the loop), and all the others switched off. **Roll loop
-    mode** is symbolized by the left (representing the loop) and the
-    right PADs lit (symbolizing the position after the loop where the
-    track will continue to play when the loop will be triggered off).
-  - **Effect rack selection:** each one of the pads selects 1 of the 4
-    effect racks. The PAD wich is lit inidicates wich effect rack is
-    active (see **[EFFECTS SECTION](#EFFECTS-SECTION)**).

@@ -69,6 +69,18 @@ pictures by going to the [Media Manager](?do=media) at the top right of
 any wiki page and upload your file(s) to the "hardware" namespace. SVG
 diagrams are preferred because they are easier to edit later.
 
+## File naming convention
+
+Please name your mapping files according to these conventions before
+making a pull request to have your mapping included in Mixxx.
+
+XML MIDI mapping files use the naming convention `{manufacturer}
+{device}.midi.xml`, for example `Stanton SCS3d.midi.xml`. XML HID
+mapping files use the convention `{manufacturer} {device}.hid.xml`, for
+example, `Hercules DJ Console RMX.hid.xml`. JavaScript files use the
+naming convention `{manufacturer}-{device}-scripts.js`, for example
+`Stanton-SCS3d-scripts.js`.
+
 ## Design guidelines
 
 These are all general guidelines to keep in mind when making your

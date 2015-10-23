@@ -38,13 +38,13 @@ page for more information. Please prefix your git commit messages with
 the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
-When you are ready to submit your mapping for inclusion in Mixxx, make a
-pull request on GitHub. If this is your first contribution to Mixxx, you
-will be asked to sign the contributor agreement. This agreement gives
-the Mixxx team permission to distribute your mapping with Mixxx under
-the GNU GPL v2 license with an exception allowing it to be distributed
-in the Mac App Store provided that the source code is made available on
-the Mixxx website under the GPL.
+When your mapping is complete and you are ready to submit your mapping
+for inclusion in Mixxx, make a pull request on GitHub. If this is your
+first contribution to Mixxx, you will be asked to sign the contributor
+agreement. This agreement gives the Mixxx team permission to distribute
+your mapping with Mixxx under the GNU GPL v2 license with an exception
+allowing it to be distributed in the Mac App Store provided that the
+source code is made available on the Mixxx website under the GPL.
 
 ## Documenting the mapping
 
@@ -68,3 +68,30 @@ one, take pictures of your device and label them. Upload diagrams and/or
 pictures by going to the [Media Manager](?do=media) at the top right of
 any wiki page and upload your file(s) to the "hardware" namespace. SVG
 diagrams are preferred because they are easier to edit later.
+
+## Design guidelines
+
+These are all general guidelines to keep in mind when making your
+mapping. They are not strict rules.
+
+If your controller was specifically designed for DJing and has labels on
+the controls, make your mapping do what the labels say. However, you do
+not need to exactly follow the labels or mappings the manufacturer made
+for other software if you think there is a better way to map it or their
+mapping does not make sense with Mixxx. You are encouraged to map
+additional features not included in the manufacturer's mappings. If you
+are mapping a controller designed for a purpose other than DJing or a
+controller without labels designed to be mapped in creative ways, try to
+make your mapping have enough features that the controller could be used
+alone without needing another controller to fully control Mixxx. If
+there are not enough physical controls on the device to make that
+practical, do not try to make such a complicated mapping that it is
+difficult to use.
+
+Controllers should not be made to blink LEDs for an extended period of
+time. If you would like to implement a feature that blinks LEDs, make it
+an option that users can easily disable by defining a boolean variable
+at the very top of your JavaScript file that users can change to "false"
+to disable the blinking or "true" to enable it. Put a comment next to
+the variable definition explaining what the variable does and how to
+change it.

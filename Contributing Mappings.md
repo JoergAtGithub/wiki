@@ -91,7 +91,7 @@ difficult to use.
 Controllers should not be made to blink LEDs for an extended period of
 time. If you would like to implement a feature that blinks LEDs, make it
 an option that users can easily disable by defining a boolean variable
-at the very top of your JavaScript file that users can change to "false"
-to disable the blinking or "true" to enable it. Put a comment next to
+at the very top of your JavaScript file that users can change to `false`
+to disable the blinking or `true` to enable it. Put a comment next to
 the variable definition explaining what the variable does and how to
 change it.

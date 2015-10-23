@@ -41,9 +41,9 @@ minimum position.
 
 ### PFL (symbolized by a headphone)
 
-  - \*\*PFL : \*\*Press these buttons to send each channel to the
+  - \*\*PFL: \*\*Press these buttons to send each channel to the
     Headphones Output channel for pre-listening.
-  - \*\*Slip mode : \*\*Hold **[SHIFT](#shift)** down and then press
+  - \*\*Slip mode: \*\*Hold **[SHIFT](#shift)** down and then press
     these buttons to activate/desactivate Slip Mode. When active, the
     playback continues muted in the background during a loop, scratch
     etc. Once disabled, the audible playback will resume where the track
@@ -73,9 +73,9 @@ changes are not visible on screen.
 
 ### REC
 
-  - **Record :** Use this button to start/stop recording your mixing
+  - **Record:** Use this button to start/stop recording your mixing
     session.
-  - **End track warning :** Hold **[SHIFT](#SHIFT)** down and then press
+  - **End track warning:** Hold **[SHIFT](#SHIFT)** down and then press
     this button in order to toggle **on** or **off** the red flashing of
     the **[jog wheels](#JOGWHEEL)** when the playback reaches the end of
     the track.
@@ -246,7 +246,7 @@ Two kinds of loops exist, the **regular loop** and the **roll loop**.
 
   - **Regular loop mode:** Press this button to trigger a loop of the
     selected size (toggle function).
-  - **Roll loop mode:**When Roll loop mode is selected, the button will
+  - **Roll loop mode:** When Roll loop mode is selected, the button will
     apply a temporary **Roll loop** (while pressed).
 
 ## EFFECTS SECTION

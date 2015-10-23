@@ -360,4 +360,152 @@ modes:
  - **Effect rack selection** mode (purple LED): each pads selects 1 of the 4 effect racks. The PAD which is lit indicates which effect rack is active (see **[[#EFFECTS-SECTION|EFFECTS SECTION]]**).
 ```
 
-# TROUBLE SHOOTING Guide
+# TIPS & TRICKS Guide
+
+(work in progress) This section exposes several issues wih the Reloop
+Beatpad and ways, when it's possible, to correct them
+
+## For the Mappings developper
+
+  - **[SHIFT](#shift) + [Sampler](#Sampler-mode) :**On account of the
+    Reloop Beatpad limitations (bug ?), lights will not show on in
+    Sampler mode when the controller is in SHIFT mode.  
+    n fact the lights update after a second press on shift \!  
+    In Hot cue mode, the same Pads are working perfectly in shift
+    mode.  
+    Don't be surprised that neither Virtual DJ, nor Algoriddim, nor
+    Traktor have implemented the Pad colors in Sampler mode, when the
+    **[SHIFT](#shift)** button is pressed (all buttons stay black). This
+    might be is a firmware design or worse a hardware problem.
+  - **Mapping documentation** is incomplete (sysex messages), and
+    sometimes false or innacurate.
+  - //SET button "Cue Play" in the Beatpad documentation
+  - //JUMP button "MainCue" in the Beatpad documentation
+  - Beatpad jog wheel is 800 intervals per revolution (and not 600 like
+    stated in the documentation)
+  - L/R\_LineFader\_Down/Open/Close
+  - L/R-Blue LEDs / 4th behaviour
+  - ControllerStatusSysex = \[0xF0, 0x26, 0x2D, 0x65, 0x22, 0xF7\],
+  - L\_Wheel\_OFF and R\_Wheel\_OFF messages, they are thrown when the
+    "Jog scartch" or the "Jog seek" buttons are activated :
+
+### For the user
+
+#### Grounding problem
+
+It is one of the major problem with the Reloop Beatpad.
+
+  - **Symptoms :**
+  - Your controller freezes in the middle of a (live) session :
+    Armaggedon's time \! 
+  - Your iPad or Android tablet shows strange behaviors (screen
+    flashing, bad sound)
+  - **Solution :** This can be solved by making a home made power cable
+    :
+    <http://support.reloopdj.com/beatpad/otg-cable-missing-in-my-box-any-otg/>
+
+#### Controller not detected by Windows
+
+Opening the device manager, you will see a Yellow exclamation mark
+indicating that the drivers did not start and you can spend hours and
+ruin a live session before finding what's going wrong. In fact, the
+faulty bastard is your laptop computer itself (and Windows likely) and
+the way it manages energy.  
+**Solution :**
+
+1.  Unplug the power cable from your laptop \!
+2.  Unplug/Replug the USB cable of yourcontroller from your laptop
+3.  Tada \!\!\! (if this does not work, restart your laptop, power cable
+    removed)
+4.  Reconnect your power cable
+5.  That's it
+
+#### No sound with your Android tablet/Smartphone
+
+##### Android and USB Audio
+
+You are one of the numerous techno victims.
+
+What you have to know and reloop should explain this.
+
+1.  The track selector work only on iPad or PC, not with android
+    (because it is difficult to program it, really)
+2.  Android \< lollipop 5.0 : no sound streaming via unless all the usb
+    drivers provided by the application, moreover usb audio out cannot
+    work at the same time than midi messages (used by the buttons and
+    lights of the beatpad).
+3.  Android \>= lollipop : usb audio streaming should work at the same
+    time than midi messages going through the usb cable (technically in
+    android programming wirh usb audio sevices, it is known as "Host
+    mode")
+4.  All versions of Android : your device must accept USB Host via a OTG
+    cable (external devices like mouse, usb sticks, etc...).
+
+It depends on the brand but also on the model of your device : Even some
+Samsung tablets or smartphone do not support this (S4 mini do not
+support USB OTG for instance). Archos always support USB host (The new
+lowcost tablets and smartphone will be great for that). - if your
+controller works but without sound on your Android (no usb sound
+streaming) : use the sound that exits from the audio jack of your
+tablet/smartphone.
+
+Device compatibility list :
+<http://support.reloopdj.com/beatpad/android-device-compatibility-list/>
+
+##### Use a DJ Cable
+
+Some softwares already support this kind of cable for audio output from
+the earplug of a laptop or a tablet (DJay2 from Algoriddim or Cross DJ
+from Mixvibes). It is planned to support this kind of cable in Mixxx.
+The softwares call this "split mode" or precuing.
+
+The DJ cable is different from regular splitter cables that simply
+output 2 identical streams of audio. The app mixes down the stereo
+master signal and pushes this to one channel (let's say "Right") and
+does the same with the cue signal (therefore "Left"). It sends both of
+these 2 signals to the iOS or Android device audio output...where it's
+then picked up by the splitter cable. The splitter cable takes the Right
+channel (now in mono) and doubles it up to give you a L+R mono output,
+it then does the same with the Left channel from the iOS or Android
+device.
+
+The end result is that you have - mono cueing (with headphones) - and
+mono master output.
+
+Traktor and Griffin make those kind of cables. Those kind of cables are
+very affordable : about 9 euros/10 dollars.
+
+examples : <https://www.youtube.com/watch?v=v12enkk_OLs>
+<https://www.youtube.com/watch?v=oZnSzX_UnkE>
+
+Explanations : <http://www.algoriddim.com/hardware/precueing>
+
+On the last, the DJ Connect device allows you to pre-cue your music and
+beat-mix with additional volume control. On android, if you have no USB
+audio streaming, like me, the solution is to connect the master output
+of the split cable back to the beatpad (Aux Input) : then it allows
+additional volume control with the Aux and Master knobs directly from
+the beatpad. From the beatpad, you then connect your BeatPad's master
+output with speakers.
+
+#### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
+
+1.  May be that your Android device does not provide enough power
+    through the USB cable, then you should put between the Beatpad and
+    your smartphone :  
+    (Android tablet/phone) --- OTG cable -- powered USB Hub -- USB Cable
+    -- beatpad  
+    video : <https://www.youtube.com/watch?v=KRP_Cy3jQM4>
+2.  you may have a ground issue with the beatpad2 (like for the
+    beatpad), and need to build a special cable.
+
+### General tips
+
+At native instruments, they have some good pieces of advice for
+everybody :
+
+  - [Windows Vista Tuning Tips for Audio
+    Processing](https://www.native-instruments.com/en/support/knowledge-base/show/314/windows-vista-tuning-tips-for-audio-processing/)
+    (still good for Windows Seven, 8.1 and 10 \!\!\!)
+  - [Choosing the Correct USB Cable for Your Hardware
+    Device](https://www.native-instruments.com/en/support/knowledge-base/show/2085/choosing-the-correct-usb-cable-for-your-ni-hardware-device/)

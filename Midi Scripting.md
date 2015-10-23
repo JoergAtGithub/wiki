@@ -56,6 +56,8 @@ Here are some resources for a deeper understanding of JavaScript:
     website](http://javascript.crockford.com/)
   - [Douglas Crockford on JavaScript -- Act III: Function the
     Ultimate](http://yuiblog.com/blog/2010/02/24/video-crockonjs-3/)
+  - [Private Members in
+    JavaScript](http://javascript.crockford.com/private.html)
   - [JavaScript: The Definitive
     Guide](http://shop.oreilly.com/product/9780596805531.do)
 

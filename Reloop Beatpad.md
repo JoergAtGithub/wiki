@@ -379,15 +379,28 @@ Beatpad and ways, when it's possible, to correct them
     might be is a firmware design or worse a hardware problem.
   - **Mapping documentation** is incomplete (sysex messages), and
     sometimes false or innacurate.
-  - //SET button "Cue Play" in the Beatpad documentation
-  - //JUMP button "MainCue" in the Beatpad documentation
+  - SET button is named "Cue Play" in the mapping documentation
+  - JUMP button is named "MainCue" in the mapping documentation
   - Beatpad jog wheel is 800 intervals per revolution (and not 600 like
     stated in the documentation)
-  - L/R\_LineFader\_Down/Open/Close
-  - L/R-Blue LEDs / 4th behaviour
-  - ControllerStatusSysex = \[0xF0, 0x26, 0x2D, 0x65, 0x22, 0xF7\],
-  - L\_Wheel\_OFF and R\_Wheel\_OFF messages, they are thrown when the
-    "Jog scartch" or the "Jog seek" buttons are activated :
+  - L/R\_LineFader\_Down/Open/Close : those MIDI messages are never sent
+    by the controller. What can be their usage if sent to the
+    controller, they do not map any button.
+  - L/R-Blue LEDs / 4th behaviour seems to be, according to the
+    documentation, exactly the same than the 1st behavior. If it is not,
+    theis is an uknown behavior not documented properly.
+  - Sysex messages : the current documentation telss nothing about them.
+    An ancient beta documentation exposes this sequence : \[0xF0, 0x26,
+    0x2D, 0x65, 0x22, 0xF7\]. When the midi controller receives this
+    OutboundMessagerequest SysEx Message, the controller will send the
+    status of every item on the control surface. This syssex is used by
+    the mapping in Mixxx to initialize the fader and knobs Mixxx. May be
+    some other sysex messages exist, but they are unknown. Sysex message
+    could be usefull to lit on or off several LEDs at once in the same
+    time.
+  - L\_Wheel\_OFF and R\_Wheel\_OFF messages : they are thrown when the
+    "Jog scartch" or the "Jog seek" buttons are activated. You won't
+    find this piece of information anywhere in the documentation.
 
 ## For the user
 

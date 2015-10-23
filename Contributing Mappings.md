@@ -107,3 +107,8 @@ of your JavaScript file (before any code or other comments) that users
 can change to `false` to disable the blinking or `true` to enable it.
 Put a comment above the variable definition explaining what the variable
 does and how to change it.
+
+Mapping multiple controls (shift functions) to faders and knobs is
+confusing to use. If you can, try to think of another way to map the
+alternate function. This is not an issue with encoders that rotate
+infinitely.

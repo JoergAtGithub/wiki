@@ -89,21 +89,21 @@ mapping. They are not strict rules.
 If your controller was specifically designed for DJing and has labels on
 the controls, make your mapping do what the labels say. However, you do
 not need to exactly follow the labels or mappings the manufacturer made
-for other software if you think there is a better way to map it or their
-mapping does not make sense with Mixxx. You are encouraged to map
-additional features not included in the manufacturer's mappings. If you
-are mapping a controller designed for a purpose other than DJing or a
-controller without labels designed to be mapped in creative ways, try to
-make your mapping have enough features that the controller could be used
-alone without needing another controller to fully control Mixxx. If
-there are not enough physical controls on the device to make that
-practical, do not try to make such a complicated mapping that it is
-difficult to use.
+for other software. If you think there is a better way to map it or the
+manufacturer's mapping does not make sense with Mixxx, map it how you
+think it should be. You are encouraged to map additional features not
+included in the manufacturer's mappings. If you are mapping a controller
+designed for a purpose other than DJing or a controller without labels
+designed to be mapped in creative ways, try to make your mapping have
+enough features that the controller could be used alone without needing
+another controller to fully control Mixxx. If there are not enough
+physical controls on the device to make that practical, do not worry
+about it too much.
 
-Controllers should not be made to blink LEDs for an extended period of
-time. If you would like to implement a feature that blinks LEDs, make it
-an option that users can easily disable. Define a boolean variable at
-the very top of your JavaScript file that users can change to `false` to
-disable the blinking or `true` to enable it. Put a comment next to the
-variable definition explaining what the variable does and how to change
-it.
+Mappings should not blink LEDs for an extended period of time. If you
+would like to implement a feature that blinks LEDs, make it an option
+that users can easily disable. Define a boolean variable at the very top
+of your JavaScript file (before any code or other comments) that users
+can change to `false` to disable the blinking or `true` to enable it.
+Put a comment above the variable definition explaining what the variable
+does and how to change it.

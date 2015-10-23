@@ -13,7 +13,7 @@ introduction to programming. If you are unfamiliar with MIDI, see the
 
 ## Setting up Git
 
-We use Git for coordinating Mixxx development which is software that
+We use Git for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
 mapping, set up git on your computer. Using git will help you keep track
 of your progress on the mapping and help Mixxx developers review it.

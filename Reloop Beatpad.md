@@ -480,18 +480,23 @@ these 2 signals to the iOS or Android device audio output...where it's
 then picked up by the splitter cable. The splitter cable takes the Right
 channel (now in mono) and doubles it up to give you a L+R mono output,
 it then does the same with the Left channel from the iOS or Android
-device.
+device.  
+As a rend esult, you have
 
-The end result is that you have - mono cueing (with headphones) - and
-mono master output.
+  - mono cueing (with headphones)
+  - and mono master output.
 
 Traktor and Griffin make those kind of cables. Those kind of cables are
 very affordable : about 9 euros/10 dollars.
 
-**examples :** <https://www.youtube.com/watch?v=v12enkk_OLs>
-<https://www.youtube.com/watch?v=oZnSzX_UnkE>
+**examples :**
 
-**explanations :** <http://www.algoriddim.com/hardware/precueing>
+  - <https://www.youtube.com/watch?v=v12enkk_OLs>
+  - <https://www.youtube.com/watch?v=oZnSzX_UnkE>
+
+**explanations :**
+
+  - <http://www.algoriddim.com/hardware/precueing>
 
 On the last, the DJ Connect device allows you to pre-cue your music and
 beat-mix with additional volume control. On android, if you have no USB

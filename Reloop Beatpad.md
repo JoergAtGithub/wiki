@@ -9,7 +9,7 @@ primarily designed to work with algoriddim‘s djay on the iOS platform
 and more recently on the Android platform, but can also be used with
 Mixxx by sending MIDI signals to a computer with a USB cable.
 
-# Operation guide to use with Mixxx
+# OPERATION GUIDE/MANUAL for use with Mixxx
 
 ## MIXER SECTION
 

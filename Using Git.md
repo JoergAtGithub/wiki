@@ -151,9 +151,7 @@ changes will be included in the pull request.
     # Do this if you have made edits that you are not yet ready to commit to the branch you are switching from.
     # If you have created new files, be sure to run 'git add' on them before running 'git stash'
     
-    $ git checkout experimental # switch to the experimental branch
-    
-    $ git checkout master
+    $ git checkout master # switch to the master branch
     
     $ git branch 
       experimental

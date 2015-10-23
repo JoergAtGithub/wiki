@@ -359,3 +359,5 @@ modes:
  - **Loop mode** status and selection (magenta LEDs): press any pad to toggle between **[[#LOOPS-SECTION|regular loop mode]]** and **[[#LOOPS-SECTION|roll loop mode]]**.\\ **Regular loop mode** is symbolized by the left PAD lit, representing the loop), and all the others switched off. **Roll loop mode** is symbolized by both the left (representing the loop) and the right PADs lit (symbolizing the position after the loop where the track will continue to play when the loop will be triggered off).
  - **Effect rack selection** mode (purple LED): each pads selects 1 of the 4 effect racks. The PAD which is lit indicates which effect rack is active (see **[[#EFFECTS-SECTION|EFFECTS SECTION]]**).
 ```
+
+# TROUBLE SHOOTING Guide

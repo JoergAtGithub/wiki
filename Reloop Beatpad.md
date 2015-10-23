@@ -481,7 +481,7 @@ then picked up by the splitter cable. The splitter cable takes the Right
 channel (now in mono) and doubles it up to give you a L+R mono output,
 it then does the same with the Left channel from the iOS or Android
 device.  
-As a rend esult, you have
+As a rend esult, you have :
 
   - mono cueing (with headphones)
   - and mono master output.

@@ -213,41 +213,25 @@ tempo. The red LED indicates that the pitch fader of the unit is on zero
 (see also **[Bounce Loop (Roll) mode](#Bounce-Loop-\(Roll\)-mode)**
 section)
 
-### Loop types
-
-Two kinds of loops exist, the **regular loop** and the **roll loop**.
-
-  - **Regular loop:** loop the track for x amounts of beats and when you
-    exit the loop the track is at the same place where the loop stopped.
-  - **Roll loop:** loop the track for x amount of beats - but the track
-    continues playing in the background. Therefore, when you exit the
-    loop roll the track is further into the song for the period of time
-    the loop roll button was held down.  
-    As a matter of fact, it is a **regular loop** in **[slip
-    mode](#PFL-\(symbolized-by-a-headphone\))** (see
-    **[PFL](#PFL-\(symbolized-by-a-headphone\))** section).
-
-### LOOP SIZE
-
-  - **Loop size:** Turn the encoder counterclockwise to half the size of
-    the loop and clockwise to double it. 
+  - **Loop size:** Turn the encoder to select the number of beats for a
+    loop. Turn it counterclockwise to half the size of the loop and
+    clockwise to double it.
   - **Loop move:** Hold **[SHIFT](#shift)** down and then use the
     encoder to move the triggered loop forward or backwards by 1 beat.
-  - **Activate/deactivate:** (Acts exactly like the **[LOOP](#loop\\)**
-    Button) 
-  - **Regular loop mode:** Push (and release) the encoder to trigger the
-    selected size loop in **regular loop mode**.
+  - **Activate/deactivate:** (Acts exactly like the **[LOOP](#loop)**
+    Button)
+  - **Regular loop mode:** Push (and release) the encoder to trigger a
+    loop of the selected size
   - **Roll loop mode:** Press (and hold down) to trigger a momentary
-    Loop Roll of the selected size.
+    rolling loop of the selected size. While the encoder is held down,
+    the track will keep moving forward as if it was not looping, so when
+    the encoder is released, it will jump forward to where the track
+    would have been if the rolling loop was never enabled. In other
+    words, this is a regular loop in **[slip
+    mode](#PFL-\(symbolized-by-a-headphone\))** (see
+    **[PFL](#PFL-\(symbolized-by-a-headphone\))** section).
   - **Toggle loop mode:** Hold **[SHIFT](#shift)** down and then push
     the encoder to toggle between Regular and Roll Loop mode.
-
-### LOOP
-
-  - **Regular loop mode:** Press this button to trigger a loop of the
-    selected size (toggle function).
-  - **Roll loop mode:** When Roll loop mode is selected, the button will
-    apply a temporary **Roll loop** (while pressed).
 
 ## EFFECTS SECTION
 

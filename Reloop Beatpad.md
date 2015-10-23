@@ -389,9 +389,9 @@ Beatpad and ways, when it's possible, to correct them
   - L\_Wheel\_OFF and R\_Wheel\_OFF messages, they are thrown when the
     "Jog scartch" or the "Jog seek" buttons are activated :
 
-### For the user
+## For the user
 
-#### Grounding problem
+### Grounding problem
 
 It is one of the major problem with the Reloop Beatpad.
 
@@ -404,7 +404,7 @@ It is one of the major problem with the Reloop Beatpad.
     :
     <http://support.reloopdj.com/beatpad/otg-cable-missing-in-my-box-any-otg/>
 
-#### Controller not detected by Windows
+### Controller not detected by Windows
 
 Opening the device manager, you will see a Yellow exclamation mark
 indicating that the drivers did not start and you can spend hours and
@@ -420,9 +420,9 @@ the way it manages energy.
 4.  Reconnect your power cable
 5.  That's it
 
-#### No sound with your Android tablet/Smartphone
+### No sound with your Android tablet/Smartphone
 
-##### Android and USB Audio
+#### Android and USB Audio
 
 You are one of the numerous techno victims.
 
@@ -452,7 +452,7 @@ tablet/smartphone.
 Device compatibility list :
 <http://support.reloopdj.com/beatpad/android-device-compatibility-list/>
 
-##### Use a DJ Cable
+#### Use a DJ Cable
 
 Some softwares already support this kind of cable for audio output from
 the earplug of a laptop or a tablet (DJay2 from Algoriddim or Cross DJ
@@ -475,10 +475,10 @@ mono master output.
 Traktor and Griffin make those kind of cables. Those kind of cables are
 very affordable : about 9 euros/10 dollars.
 
-examples : <https://www.youtube.com/watch?v=v12enkk_OLs>
+**examples :** <https://www.youtube.com/watch?v=v12enkk_OLs>
 <https://www.youtube.com/watch?v=oZnSzX_UnkE>
 
-Explanations : <http://www.algoriddim.com/hardware/precueing>
+**explanations :** <http://www.algoriddim.com/hardware/precueing>
 
 On the last, the DJ Connect device allows you to pre-cue your music and
 beat-mix with additional volume control. On android, if you have no USB
@@ -488,7 +488,7 @@ additional volume control with the Aux and Master knobs directly from
 the beatpad. From the beatpad, you then connect your BeatPad's master
 output with speakers.
 
-#### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
+### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
 
 1.  May be that your Android device does not provide enough power
     through the USB cable, then you should put between the Beatpad and

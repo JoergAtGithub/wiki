@@ -100,6 +100,11 @@ another controller to fully control Mixxx. If there are not enough
 physical controls on the device to make that practical, do not worry
 about it too much.
 
+If you want to create options that users can easily customize, define
+variables that control those options at the very top of your JavaScript
+file with comments explaining how to set the options. Also explain how
+to set these options on the wiki page for your controller.
+
 Mappings should not blink LEDs for an extended period of time. If you
 would like to implement a feature that blinks LEDs, make it an option
 that users can easily disable. Define a boolean variable at the very top

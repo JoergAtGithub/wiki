@@ -108,6 +108,11 @@ Tech Tools. These are high quality USB cables made specifically for DJs
 with a ferrite bead on each end to dissipate high frequency interference
 as heat.
 
+Also see [this
+guide](https://www.native-instruments.com/en/support/knowledge-base/show/2085/choosing-the-correct-usb-cable-for-your-ni-hardware-device/)
+from Native Instruments for identifying USB cables that are better for
+DJ gear.
+
 ## My controller does not work
 
 To use a MIDI or HID controllers with Mixxx, enable the device and load

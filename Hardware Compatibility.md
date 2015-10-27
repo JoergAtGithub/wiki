@@ -210,6 +210,7 @@ controller to this table.
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125              | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.10.1                        |
 | [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | $250              | 4 deck all-in-one\[9\]                                     | yes                             | MIDI\[10\]      | 1.12                          |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                                          | yes                             | MIDI            | ?                             |
+| [Reloop Beatpad](Reloop%20Beatpad)                                                                 | $449              | 2 deck all-in-one                                          | yes                             | MIDI            |                               |
 | [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.10                          |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900              | CD player                                                  | no                              | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
@@ -285,7 +286,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------------- |
 | Device                                               | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol       |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI\[18\] (and HID?) |
-| [Reloop Beatpad](Reloop%20Beatpad)                   | $449               | 2 deck all-in-one | yes                   | MIDI                  |
 
 ### Controllers that do not yet have Mixxx mappings
 

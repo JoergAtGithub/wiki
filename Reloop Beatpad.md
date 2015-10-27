@@ -398,8 +398,6 @@ the way it manages energy.
 
 ### No sound with your Android tablet or smartphone
 
-#### Android and USB Audio
-
 Unfortunately, Android does not have good support for low latency audio
 or USB sound cards. OS support for USB audio was only recently added to
 Android version 5.0 (Lollipop). Prior to Android 5.0, some applications

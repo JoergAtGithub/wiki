@@ -480,7 +480,7 @@ output with speakers.
 2.  you may have a ground issue with the beatpad2 (like for the
     beatpad), and need to build a special cable.
 
-### Other Troubleshooting guidance
+### Mixxx troubleshooting
 
 Please do not hesitate to refer also to the **[Mixxx troubleshooting
 guide](http://www.mixxx.org/wiki/doku.php/troubleshooting)**

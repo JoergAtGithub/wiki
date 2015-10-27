@@ -398,16 +398,17 @@ could also use a [DJ splitter
 cable](hardware%20compatibility#splitter%20cable) with the onboard sound
 card on your smartphone or tablet.
 
-### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
+### Freeze/crash/abnormal behavior with your Android tablet/smartphone
 
-1.  May be that your Android device does not provide enough power
-    through the USB cable, then you should put between the Beatpad and
-    your smartphone :  
-    (Android tablet/phone) --- OTG cable -- powered USB Hub -- USB Cable
-    -- beatpad  
-    video : <https://www.youtube.com/watch?v=KRP_Cy3jQM4>
-2.  you may have a ground issue with the beatpad2 (like for the
-    beatpad), and need to build a special cable.
+It may be that your Android device does not provide enough power through
+the USB cable. If so, use a powered USB hub between your Android device
+and your Beatpad. The connections would be:
+
+`Android tablet/phone --- OTG cable --- powered USB hub --- USB cable
+--- Beatpad`
+
+If that does not work, you may have a [\#grounding
+problem](#grounding%20problem).
 
 ### Mixxx troubleshooting
 

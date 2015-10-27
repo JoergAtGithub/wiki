@@ -401,8 +401,9 @@ cable to plug in your device. Not all Android devices support OTG. See
 for compatibility information about various Android devices.
 
 If you have trouble using your Beatpad's sound card with Android, you
-can use a [DJ splitter cable](hardware%20compatibility#splitter%20cable)
-with the onboard sound card on your smartphone or tablet.
+could also use a [DJ splitter
+cable](hardware%20compatibility#splitter%20cable) with the onboard sound
+card on your smartphone or tablet.
 
 ### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
 

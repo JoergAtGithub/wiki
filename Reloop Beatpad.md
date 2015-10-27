@@ -410,11 +410,6 @@ and your Beatpad. The connections would be:
 If that does not work, you may have a [\#grounding
 problem](#grounding%20problem).
 
-### Mixxx troubleshooting
-
-Please do not hesitate to refer to the **[Mixxx troubleshooting
-guide](troubleshooting)**
-
 ## For the Mappings developper
 
   - **[SHIFT](#shift) + [Sampler](#Sampler-mode) :**On account of the
@@ -451,14 +446,3 @@ guide](troubleshooting)**
   - L\_Wheel\_OFF and R\_Wheel\_OFF messages : they are thrown when the
     "Jog scartch" or the "Jog seek" buttons are activated. You won't
     find this piece of information anywhere in the documentation.
-
-## General tips
-
-At native instruments, they have some good pieces of advice for
-everybody :
-
-  - [Windows Vista Tuning Tips for Audio
-    Processing](https://www.native-instruments.com/en/support/knowledge-base/show/314/windows-vista-tuning-tips-for-audio-processing/)
-    (still good for Windows Seven, 8.1 and 10 \!\!\!)
-  - [Choosing the Correct USB Cable for Your Hardware
-    Device](https://www.native-instruments.com/en/support/knowledge-base/show/2085/choosing-the-correct-usb-cable-for-your-ni-hardware-device/)

@@ -382,19 +382,11 @@ It is one of the major problem with the Reloop Beatpad.
 
 ### Controller not detected by Windows
 
-Opening the device manager, you will see a Yellow exclamation mark
-indicating that the drivers did not start and you can spend hours and
-ruin a live session before finding what's going wrong. In fact, the
-faulty bastard is your laptop computer itself (and Windows likely) and
-the way it manages energy.  
-**Solution :**
-
-1.  Unplug the power cable from your laptop \!
-2.  Unplug/Replug the USB cable of yourcontroller from your laptop
-3.  Tada \!\!\! (if this does not work, restart your laptop, power cable
-    removed)
-4.  Reconnect your power cable
-5.  That's it
+If you see a yellow exclamation point (\!) in the Windows Device manager
+indicating that the drivers did not start, unplug the power cable from
+your laptop then unplug/replug the USB cable from your controller. If
+that does not work, restart your laptop without the power cable plugged
+in.
 
 ### No sound with your Android tablet or smartphone
 

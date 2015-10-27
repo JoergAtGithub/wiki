@@ -462,7 +462,8 @@ page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
 use a sound card with at least 4 mono output channels with Mixxx.
 Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
 for DJing; almost all music is published in this format (which was the
-standard set by audio CDs). If you are interested in recording music,
+standard set by audio CDs). Sound cards built into DJ controllers meet
+these minimum requirements. If you are interested in recording music,
 consider getting a higher quality sound card that supports 24 bit sample
 depths and a 96 kHz sample rate (there is [no
 advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
@@ -470,6 +471,16 @@ sample rates). Bit depth determines the possible dynamic range of the
 signal and half the sample rate is the maximum frequency that can be
 represented by the signal (humans generally can't hear above 20 kHz, so
 44.1 kHz/2 = 22.05 kHz is fine for playback).
+
+Sound cards built into controllers may not be able to reach very high
+output levels if the device is only powered by a USB cable. In that
+case, the 500 mA available from a USB port has to power the sound card
+as well as the lights and other components of the controller. Some
+controllers with built in sound cards have an additional power adapter
+to ensure the sound card output has enough power. A low sound card
+output can be worked around by running it through a mixer and applying
+gain or a stand-alone headphone amplifier if the headphone output is too
+quiet.
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
@@ -519,16 +530,6 @@ When considering specifications, higher dynamic range, higher
 signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
 (more negative dB value or smaller percentage), and lower crosstalk
 (more negative dB value) are better.
-
-Laptops do not always have the most reliable power output to their USB
-ports, so the ability to use a separate power adapter for your sound
-card can be an advantage. Also, sound cards with power adapters can
-generally output stronger signals. A lack of an external power supply
-can especially be an issue for sound cards built into controllers
-because one USB port has to power both the lights on the controller and
-the sound card. However, sound cards that are USB bus powered can be
-used with a laptop and battery powered speakers for a completely battery
-powered setup.
 
 ### Using multiple sound cards
 

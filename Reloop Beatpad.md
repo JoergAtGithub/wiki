@@ -369,16 +369,9 @@ Beatpad and ways, when it's possible, to correct them
 
 ### Grounding problem
 
-It is one of the major problem with the Reloop Beatpad.
-
-  - **Symptoms :**
-  - Your controller freezes in the middle of a (live) session :
-    Armaggedon's time \! 
-  - Your iPad or Android tablet shows strange behaviors (screen
-    flashing, bad sound)
-  - **Solution :** This can be solved by making a home made power cable
-    :
-    <http://support.reloopdj.com/beatpad/otg-cable-missing-in-my-box-any-otg/>
+If your controller randomly freezes or your iPad or Android tablet acts
+weirdly (screen flashing, bad sound), [make a home made, grounded power
+cable](http://support.reloopdj.com/beatpad/otg-cable-missing-in-my-box-any-otg/).
 
 ### Controller not detected by Windows
 

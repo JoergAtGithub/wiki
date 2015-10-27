@@ -382,7 +382,7 @@ It is one of the major problem with the Reloop Beatpad.
 
 ### Controller not detected by Windows
 
-If you see a yellow exclamation point (\!) in the Windows Device manager
+If you see a yellow exclamation point (\!) in the Windows Device Manager
 indicating that the drivers did not start, unplug the power cable from
 your laptop then unplug/replug the USB cable from your controller. If
 that does not work, restart your laptop without the power cable plugged

@@ -482,8 +482,8 @@ output with speakers.
 
 ### Mixxx troubleshooting
 
-Please do not hesitate to refer also to the **[Mixxx troubleshooting
-guide](http://www.mixxx.org/wiki/doku.php/troubleshooting)**
+Please do not hesitate to refer to the **[Mixxx troubleshooting
+guide](troubleshooting)**
 
 ## For the Mappings developper
 

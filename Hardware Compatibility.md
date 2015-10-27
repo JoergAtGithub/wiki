@@ -475,7 +475,9 @@ represented by the signal (humans generally can't hear above 20 kHz, so
 Sound cards built into controllers may not be able to reach very high
 output levels if the device is only powered by a USB cable. In that
 case, the 500 mA available from a USB port has to power the sound card
-as well as the lights and other components of the controller. Some
+as well as the lights and other components of the controller.
+Insufficient power for a high output level is rarely an issue for
+standalone USB sound cards that are not built into controllers. Some
 controllers with built in sound cards have an additional power adapter
 to ensure the sound card output has enough power. A low sound card
 output can be worked around by running it through a mixer and applying

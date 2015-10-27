@@ -396,78 +396,23 @@ the way it manages energy.
 4.  Reconnect your power cable
 5.  That's it
 
-### No sound with your Android tablet/Smartphone
+### No sound with your Android tablet or smartphone
 
 #### Android and USB Audio
 
-You are one of the numerous techno victims.
+Unfortunately, Android does not have good support for low latency audio
+or USB sound cards. OS support for USB audio was only recently added to
+Android version 5.0 (Lollipop). Prior to Android 5.0, some applications
+provided their own driver for USB sound cards. On any version of
+Android, to use USB sound cards like the one in the Beatpad, the device
+has to support USB On-The-Go (OTG) and you need to use an OTG adapter
+cable to plug in your device. Not all Android devices support OTG. See
+[here](http://support.reloopdj.com/beatpad/android-device-compatibility-list/)
+for compatibility information about various Android devices.
 
-What you have to know and reloop should explain this.
-
-1.  The track selector work only on iPad or PC, not with android
-    (because it is difficult to program it, really)
-2.  Android \< lollipop 5.0 : no sound streaming via unless all the usb
-    drivers provided by the application, moreover usb audio out cannot
-    work at the same time than midi messages (used by the buttons and
-    lights of the beatpad).
-3.  Android \>= lollipop : usb audio streaming should work at the same
-    time than midi messages going through the usb cable (technically in
-    android programming wirh usb audio sevices, it is known as "Host
-    mode")
-4.  All versions of Android : your device must accept USB Host via a OTG
-    cable (external devices like mouse, usb sticks, etc...).
-
-It depends on the brand but also on the model of your device : Even some
-Samsung tablets or smartphone do not support this (S4 mini do not
-support USB OTG for instance). Archos always support USB host (The new
-lowcost tablets and smartphone will be great for that). - if your
-controller works but without sound on your Android (no usb sound
-streaming) : use the sound that exits from the audio jack of your
-tablet/smartphone.
-
-Device compatibility list :
-<http://support.reloopdj.com/beatpad/android-device-compatibility-list/>
-
-#### Use a DJ Cable
-
-Some softwares already support this kind of cable for audio output from
-the earplug of a laptop or a tablet (DJay2 from Algoriddim or Cross DJ
-from Mixvibes). It is planned to support this kind of cable in Mixxx.
-The softwares call this "split mode" or precuing.
-
-The DJ cable is different from regular splitter cables that simply
-output 2 identical streams of audio. The app mixes down the stereo
-master signal and pushes this to one channel (let's say "Right") and
-does the same with the cue signal (therefore "Left"). It sends both of
-these 2 signals to the iOS or Android device audio output...where it's
-then picked up by the splitter cable. The splitter cable takes the Right
-channel (now in mono) and doubles it up to give you a L+R mono output,
-it then does the same with the Left channel from the iOS or Android
-device.  
-As a rend esult, you have :
-
-  - mono cueing (with headphones)
-  - and mono master output.
-
-Traktor and Griffin make those kind of cables. Those kind of cables are
-very affordable : about 9 euros/10 dollars.
-
-**examples :**
-
-  - <https://www.youtube.com/watch?v=v12enkk_OLs>
-  - <https://www.youtube.com/watch?v=oZnSzX_UnkE>
-
-**explanations :**
-
-  - <http://www.algoriddim.com/hardware/precueing>
-
-On the last, the DJ Connect device allows you to pre-cue your music and
-beat-mix with additional volume control. On android, if you have no USB
-audio streaming, like me, the solution is to connect the master output
-of the split cable back to the beatpad (Aux Input) : then it allows
-additional volume control with the Aux and Master knobs directly from
-the beatpad. From the beatpad, you then connect your BeatPad's master
-output with speakers.
+If you have trouble using your Beatpad's sound card with Android, you
+can use a [DJ splitter cable](hardware%20compatibility#splitter%20cable)
+with the onboard sound card on your smartphone or tablet.
 
 ### Freeze/crash/abnormal behavior with your Android tablet/Smartphone
 

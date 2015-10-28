@@ -412,8 +412,8 @@ problem](#grounding%20problem).
 
 ## For the Mappings developper
 
-  - **[SHIFT](#shift) + [Sampler](#Sampler-mode) :**On account of the
-    Reloop Beatpad limitations (bug ?), lights will not show on in
+  - \*\*[SHIFT](#shift) + [Sampler](#Sampler-mode): \*\*On account of
+    the Reloop Beatpad limitations (bug ?), lights will not show on in
     Sampler mode when the controller is in SHIFT mode.  
     n fact the lights update after a second press on shift \!  
     In Hot cue mode, the same Pads are working perfectly in shift
@@ -422,27 +422,27 @@ problem](#grounding%20problem).
     Traktor have implemented the Pad colors in Sampler mode, when the
     **[SHIFT](#shift)** button is pressed (all buttons stay black). This
     might be is a firmware design or worse a hardware problem.
-  - **Mapping documentation** is incomplete (sysex messages), and
-    sometimes false or innacurate.
+  - Reloop's MIDI documentation is incomplete (sysex messages), and
+    sometimes false or inaccurate.
   - SET button is named "Cue Play" in the mapping documentation
   - JUMP button is named "MainCue" in the mapping documentation
   - Beatpad jog wheel is 800 intervals per revolution (and not 600 like
     stated in the documentation)
-  - L/R\_LineFader\_Down/Open/Close : those MIDI messages are never sent
+  - L/R\_LineFader\_Down/Open/Close: those MIDI messages are never sent
     by the controller. What can be their usage if sent to the
     controller, they do not map any button.
   - L/R-Blue LEDs / 4th behaviour seems to be, according to the
     documentation, exactly the same than the 1st behavior. If it is not,
-    theis is an uknown behavior not documented properly.
-  - Sysex messages : the current documentation telss nothing about them.
-    An ancient beta documentation exposes this sequence : \[0xF0, 0x26,
-    0x2D, 0x65, 0x22, 0xF7\]. When the midi controller receives this
-    OutboundMessagerequest SysEx Message, the controller will send the
-    status of every item on the control surface. This syssex is used by
-    the mapping in Mixxx to initialize the fader and knobs Mixxx. May be
-    some other sysex messages exist, but they are unknown. Sysex message
-    could be usefull to lit on or off several LEDs at once in the same
-    time.
-  - L\_Wheel\_OFF and R\_Wheel\_OFF messages : they are thrown when the
-    "Jog scartch" or the "Jog seek" buttons are activated. You won't
+    this is an unknown behavior that is not documented properly.
+  - Sysex messages: the current documentation tells nothing about them.
+    An ancient beta documentation exposes this sequence:
+    `0xF0, 0x26, 0x2D, 0x65, 0x22, 0xF7`. When the MIDI controller
+    receives this OutboundMessagerequest SysEx Message, the controller
+    will send the status of every item on the control surface. This
+    sysex is used by the mapping in Mixxx to initialize the fader and
+    knobs in Mixxx. May be some other sysex messages exist, but they are
+    unknown. Sysex message could be useful to turn on or off several
+    LEDs at once in the same time.
+  - L\_Wheel\_OFF and R\_Wheel\_OFF messages: they are thrown when the
+    "Jog scratch" or the "Jog seek" buttons are activated. You won't
     find this piece of information anywhere in the documentation.

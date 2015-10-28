@@ -410,7 +410,7 @@ and your Beatpad. The connections would be:
 If that does not work, you may have a [\#grounding
 problem](#grounding%20problem).
 
-## For the Mappings developper
+## For the mappings developper
 
   - \*\*[SHIFT](#shift) + [Sampler](#Sampler-mode): \*\*On account of
     the Reloop Beatpad limitations (bug ?), lights will not show on in

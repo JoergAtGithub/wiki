@@ -463,14 +463,20 @@ use a sound card with at least 4 mono output channels with Mixxx.
 Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
 for DJing; almost all music is published in this format (which was the
 standard set by audio CDs). Sound cards built into DJ controllers meet
-these minimum requirements. If you are interested in recording music,
-consider getting a higher quality sound card that supports 24 bit sample
-depths and a 96 kHz sample rate (there is [no
+these minimum requirements.
+
+If you are interested in recording music, consider getting a higher
+quality sound card that supports 24 bit sample depths and a 96 kHz
+sample rate (there is [no
 advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
 sample rates). Bit depth determines the possible dynamic range of the
-signal and half the sample rate is the maximum frequency that can be
-represented by the signal (humans generally can't hear above 20 kHz, so
-44.1 kHz/2 = 22.05 kHz is fine for playback).
+signal. 16 bits is more than enough for playing back music. While 24
+bits is helpful for recording, [it is useless for
+playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought-you-knew-about-bit-depth-is-probably-wrong/).
+Half the sample rate determines the maximum frequency that can be
+represented by the signal. Humans generally can't hear frequencies above
+20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
+of 22.05 kHz, is fine for playback.
 
 Sound cards built into controllers may not be able to reach very high
 output levels if the device is only powered by a USB cable. In that

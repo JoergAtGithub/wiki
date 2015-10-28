@@ -106,7 +106,8 @@ getting a [Chroma
 Cable](https://store.djtechtools.com/products/chroma-cables-usb) from DJ
 Tech Tools. These are high quality USB cables made specifically for DJs
 with a ferrite bead on each end to dissipate high frequency interference
-as heat.
+as heat. Additionally, try to avoid having your USB cables near sources
+of interference like other devices' power cables.
 
 Also see [this
 guide](https://www.native-instruments.com/en/support/knowledge-base/show/2085/choosing-the-correct-usb-cable-for-your-ni-hardware-device/)

@@ -536,8 +536,9 @@ mono outputs and the stereo headphone output would be the same.
 
 When considering specifications, higher dynamic range, higher
 signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
-(more negative dB value or smaller percentage), and lower crosstalk
-(more negative dB value) are better.
+(Total Harmonic Distortion + Noise; look for a more negative dB value or
+smaller percentage), and lower crosstalk (more negative dB value) are
+better.
 
 ### Using multiple sound cards
 

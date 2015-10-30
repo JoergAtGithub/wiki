@@ -701,10 +701,10 @@ need to use a "one shot" timer :
     }
 ```
 
-Example 2 of good usage : This example is much more complex, and can be
-reused in your code With one button we want to start a led flashing, and
-with a second button, we want to stop that flashing led. For this, we
-need two timers, one permanent, one "one shot".
+Example 2 of good usage : This example is much more complex. With one
+button we want to start a led flashing, and with a second button, we
+want to stop that flashing led. For this, we need two timers, one
+permanent, one "one shot".
 
 ``` javascript
     //Initialize your timer variable to zero at the beginning of the script

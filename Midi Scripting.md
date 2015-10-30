@@ -701,7 +701,52 @@ need to use a "one shot" timer :
     }
 ```
 
-Example 2 of good usage : This example is much more complex. With one
+Example 2 : We want to implement a button in such a way that if we press
+it loads the selected track, and if we keep it longer, it ejects the
+track, for this, we need a "one shot" timer.
+
+``` javascript
+    // Part that handles the behaviour of the Load button : 
+    // Long press (>500 ms) : eject the track
+    // Quick press : Load the selected track
+    // *****
+    
+    // Last Time the LOAD Btn was pressed before released
+    MyController.LOADlongpress = false;
+    MyController.LOADtimer = 0;
+
+    MyController.LOADassertlongpress = function() {
+        MyController.LOADlongpress = true;
+        MyController.LOADtimer = 0;
+    };
+
+    MyController.LOADdown = function() {
+        MyController.LOADlongpress = false;
+        MyController.LOADtimer = engine.beginTimer(500, "MyController.LOADassertlongpress()", true);
+    };
+
+    MyController.LOADup = function(group) {
+        if (MyController.LOADtimer !== 0) {
+            engine.stopTimer(MyController.LOADtimer);
+            MyController.LOADtimer = 0;
+        }
+        if (MyController.LOADlongpress) {
+            engine.setValue(group, 'eject', true);
+        } else {
+            engine.setValue(group, 'LoadSelectedTrack', true);
+        }
+    };
+    MyController.LoadBtn = function(channel, control, value, status, group) {
+    //LOAD hold <500ms : load track, >500ms : eject
+    if (value == DOWN) {
+        MyController.LOADdown();
+        } else {
+        MyController.LOADup(group);
+        }
+    };
+```
+
+Example 3 of good usage : This example is much more complex. With one
 button we want to start a led flashing, and with a second button, we
 want to stop that flashing led. For this, we need two timers, one
 permanent, one "one shot".

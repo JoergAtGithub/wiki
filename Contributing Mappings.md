@@ -117,3 +117,11 @@ Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the
 alternate function. This is generally not an issue with encoders that
 rotate infinitely, buttons, pads, or touch strips.
+
+## Windows Installer Update
+
+If you add new files to the controller mappings, don't forget to update
+the windows installer to also uninstall these files when uninstalling
+Mixxx. You have to add your files to the list in the
+build/nsis/Mixxx.nsi file here :
+<https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394>

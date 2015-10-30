@@ -57,7 +57,7 @@ preamps can either be in the turntable, in the sound card, or stand
 alone devices. A few small controllers may be of particular interest to
 vinyl DJs, particularly the Novation Dicer and Akai AMX. Some higher-end
 all-in-one controllers include sound cards with phono preamps. Users who
-also want to produce music should consider saving money and get a
+also want to produce music may consider saving money and get a
 controller without a sound card and getting a separate, high quality
 sound card suitable for recording.
 

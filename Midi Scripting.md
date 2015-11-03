@@ -577,6 +577,37 @@ MyController.lightUp = function (led,color) {
 }
 ```
 
+#### Closures
+
+Remember, this is an example of what engine.beginTimer can do :
+
+``` javascript
+    function doTimer() {
+        print("Executed Timer");
+    }
+    engine.beginTimer(200, "doTimer", 1);
+```
+
+With closures the same code can also be written as such:
+
+``` javascript
+    engine.beginTimer(200, function() { print("Executed Timer") }, 1);
+```
+
+Also since the context is being reused this same code actually works:
+
+``` javascript
+    function doMidi() {
+        this.value = 1;
+        engine.beginTimer(200, function() { if (this.value) print("Executed Timer"); }, 1);
+    }
+```
+
+This way of using the engine timer is particularly usefull if the
+callback function and the call to engine.beginTimer are used in a class
+function object wich can be refactored in other projects. The next
+section, makes use of this technique.
+
 #### Good usage of Timers
 
 Now you have learned the previously exposed principles, we strongly

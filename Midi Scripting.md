@@ -605,8 +605,7 @@ Also since the context is being reused this same code actually works:
 
 This way of using the engine timer is particularly usefull if the
 callback function and the call to engine.beginTimer are used in a class
-function object wich can be refactored in other projects. The next
-section, makes use of this technique.
+function object wich can be refactored in other projects.
 
 #### Good usage of Timers
 

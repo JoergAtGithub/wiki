@@ -246,4 +246,178 @@ single-deck mode\*:
 
 ## 
 
+# Proposed mapping for 1.12
+
+The following documentation describes a version proposed for Mixxx 1.12.
+
+## General controls
+
+[[/media/hardware/stantonscs/slidermode.jpg|]]
+
+Unless otherwise noted, the following controls have the same function in
+all modes.
+
+``` 
+  * S1 controls gain of currently active deck.
+  * S2 changes rate or pitch depending on current mode, see VINYL-mode for discussion.
+  * PLAY starts or pauses the track. When a track is ready to play the button blinks.
+  * CUE will jump to the cue point or set it, depending on your settings and whether the track is playing.
+  * SYNC syncs the active deck to another deck. Holding SYNC for more than one second will enable SYNC lock.
+  * Pressing TAP repeatedly will adjust track BPM.
+```
+
+The currently active deck/channel is shown by lighting one of B11
+through B14 red (except for FX-mode where the selected FX chain is
+shown). B11 lights red for deck 1, B12 for deck 2, B13 for deck 3 and
+B14 for deck 4. See DECK and FX modes on how to control this.
+
+A light spinning around the circle shows the track is playing. When the
+track nears its end (at -30 seconds), a blinking light will detach and
+run slower. When the spinning light reaches the blinking light, the
+track ends.
+
+By touching one of the six mode buttons, you switch to that mode. Some
+modes have alternate overlays, you can switch to those by touching the
+mode again. The first overlay is red, the second blue, the third is
+purple.
+
+By holding a mode button, a mode can be enabled temporarily until that
+mode button is released again. Holding often enables alternate
+(destructive) functionality for the held mode. The following
+mode-verlays are available:
+
+[[/media/hardware/stantonscs/modebuttons.jpg|]]
+
+``` 
+  * FX: (red) Control effect device; (blue) Control deck superknob
+  * EQ: (red) Control deck EQ
+  * LOOP: (red) Set/release beat-loops; (blue) Rolling-loops
+  * TRIG: (red) cue points 1 through 5; (blue) cue points 6 through 10; (pink) cue points 11 through 15;
+  * VINYL: (red) jog wheel; (blue) scratch
+  * DECK: (red) library scan & load
+```
+
+Each mode will be explained in detail below.
+
+## FX mode
+
+[[/media/hardware/stantonscs/slidermode.jpg|]]
+
+FX mode allows you to control effects. Button B11 through B14 allow you
+to select the currently controlled chain. (Specifically, the first
+effect of each chain is controlled.) The currently active effect is
+shown in red where button B11 lights red when the first effect chain is
+selected, B12 for the seconde chain, B13 for chain 3, and B14 for chain
+4. The buttons turn blue when the active deck is assigned to this effect
+chain. If the active effect chain is assigned to the active deck, the
+button will appear purple.
+
+Slider S2 controls the wet/dry mix of the current effect. Sliders S3,
+S4, and S5 control the first three effect knobs on the effect unit.
+
+### Holding FX
+
+By holding FX, you can toggle assignement of the current deck to effect
+chains with buttons B11 through B14. The effects that have the current
+deck assigned are shown in blue. While FX is held, the pitch mode slider
+can be used to load the next (touch top half of the slider) or previous
+(touch bottom half) effect.
+
+When FX is held, the button for the active deck is shown in red. So if
+you want to assign the active effect to the active deck, press the
+button that is red. If the button is purple, pressing it would mean
+unassign the active effect from the active deck.
+
+## EQ mode
+
+In EQ mode, the central sliders S3, S4, S5 control low/mid/high filters.
+Holding EQ will reset the control to center when the corresponding
+slider is touched.
+
+## LOOP mode
+
+[[/media/hardware/stantonscs/circlemode.gif|]]
+
+By touching the circle you activate a loop over a certain number of
+beats. Touching on the right side will activate a beat-loop over 1, 2,
+4, 8 etc beats, starting from the top. On the left side you get
+fractions 1/2, 1/4, 1/8 etc loops starting from the top. To leave the
+loop, touch center.
+
+By touching the LOOP mode button again, the 'rolling' overlay comes on
+and the LOOP button turns blue. In rolling mode, the loop will be
+released as soon as you take your finger off the circle and the track
+will resume where it would have been without looping.
+
+## TRIG mode
+
+You can set hotcues and jump to hotcues in this mode. The circle is
+split into five fields (1: top left, 2: bottom left, 3: top right, 4:
+bottom right, 5: center) where touching the area will either set the
+hotcue if it was unset, or trigger the hotcue if it was set. When a
+hotcue is set, the blue lights next to it will light.
+
+To clear a hotcue, hold TRIG and touch the corresponding field.
+
+The first TRIG overlay (red light) controls hotcues 1 to 5, touching
+TRIG will switch to overlays 2 and three controlling hotcues 6 to 10
+(blue light) and 11 to 15 (purple light).
+
+## VINYL mode
+
+[[/media/hardware/stantonscs/circlemode.gif|]]
+
+The circle C1 functions as a jog-wheel, slide clockwise to speed-up the
+track. The center slider S4 can be used to raise and lower speed by
+holding it above or below center, respectively.
+
+B11 jumps back one beat, B12 jumps forward. B13 and B14 control
+fast-reverse, fast-forward.
+
+While VINYL is held, B11 through B14 set the pitch slider mode, the
+currently active mode lights blue:
+
+``` 
+  * B11 Absolute rate: The pitch slider directly sets the rate in a wide range
+  * B12 Discrete Pitch: Change pitch up or down by touching upper or lower part of slider
+  * B13 Rate: Change the right up or down by holding the slider off-center.
+  * The further from the center you hold the slider, the faster the rate changes.
+  * B14 Relative pitch: slide to change pitch up or down
+```
+
+When VINYL is held, the SYNC button adjusts the beatgrid. When the track
+is not playing, the beatgrid is moved to the current track position.
+When the track is playing, the beatgrid is aligned with the other
+track's beatgrid.
+
+A second overlay to VINYL (blue) enables scratching on the pad. Both the
+circle and the center slider (S4) can be used to scratch.
+
+## DECK mode
+
+This mode is used to load tracks. When the current deck is not playing,
+an arrow pattern indicates that the currently selected track can be
+loaded into the deck by pressing the central field S4. Sliding on the
+circle C1 will scroll through the library.
+
+B11 and B13 allow you to switch up and down between the library
+categories, while B12, B14 allow stepping through the library list
+one-by-one (the slider allows only coarse control).
+
+When holding DECK, you can switch channels.
+
+``` 
+  * B11: deck 1; B12: deck 2
+  * B13: deck 3; B14: deck 4
+```
+
+The corresponding button turns red. The active deck is shown on the
+buttons in all modes except FX.
+
+The controller keeps its mode per deck. So when changing deck, the mode
+will switch to the mode previously used on that deck.
+
+Note that the active deck is synched with the SCS.3m, so when switching
+between decks 1 and 3, or 2 and 4 the other device changes as well.
+
 *Images courtesy of Stanton Magnetics, Inc.*

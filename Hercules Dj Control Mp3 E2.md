@@ -442,15 +442,17 @@ Absolute sync of the track speed to the jog wheel if scratch mode enabled</td>
 
 [[/media/hercules-mp3e2-schema-deck-voleffects.jpg|]]
 
-| Function                                                                    | Control                    | number |
-| --------------------------------------------------------------------------- | -------------------------- | ------ |
-| Controls the deck output volume, with soft takeover on deck switch.         | Deck volume slider         | 17     |
-| Adjusts the gain of the low/medium/high equalizer filter. No soft takeover. | Equalizer knobs            | 5      |
-| Filter Low Kill                                                             | Supershift + Pitchbend -   | 1      |
-| Filter Mid Kill                                                             | Supershift + Sync          | 13     |
-| Filter High Kill                                                            | Supershift + Pitchbend +   | 1      |
-| Adjust pregain                                                              | Shift + Forward / Backward | 12     |
-| Quick Filter knob                                                           | Supershift + Pitch knobs   | 3      |
+| Function                                                                    | Control                                  | number |
+| --------------------------------------------------------------------------- | ---------------------------------------- | ------ |
+| Controls the deck output volume, with soft takeover on deck switch.         | Deck volume slider                       | 17     |
+| Adjusts the gain of the low/medium/high equalizer filter. No soft takeover. | Equalizer knobs                          | 5      |
+| Filter Low Kill                                                             | Supershift + Pitchbend -                 | 1      |
+| Filter Mid Kill                                                             | Supershift + Sync                        | 13     |
+| Filter High Kill                                                            | Supershift + Pitchbend +                 | 1      |
+| Adjust pregain                                                              | Shift + Forward / Backward               | 12     |
+| Quick Filter knob                                                           | Supershift + Pitch knobs                 | 3      |
+| Brake Effect                                                                | Supershift + Forward (stops on release)  | 12     |
+| Spinback Effect                                                             | Supershift + Backward (stops on release) | 12     |
 
 ##### Hotcues
 

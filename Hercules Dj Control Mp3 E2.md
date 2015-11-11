@@ -244,7 +244,8 @@ Nothing</td>
 <td>Forward \ Backward</td>
 <td>Fast forward/backward</td>
 <td>Adjust pregain</td>
-<td></td>
+<td>Forward: brake effect (stay pushed)<br />
+Backward: spinback effect (stay pushed)</td>
 </tr>
 <tr class="even">
 <td>13</td>

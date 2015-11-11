@@ -59,5 +59,5 @@ pressed.*
 39. Channel select
 
 [Vestax
-VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
+VCI-100MKII.midi.xml](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+[Vestax-VCI-100MKII-scripts.js](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)

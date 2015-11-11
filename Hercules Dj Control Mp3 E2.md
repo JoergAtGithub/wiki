@@ -186,7 +186,7 @@ Led blink: master<br />
 Fixed led: follower<br />
 Led off: none</td>
 <td>Enable key-lock for the specified deck (rate changes only affect tempo, not key)</td>
-<td>Magnet</td>
+<td>Quantize (Magnet)</td>
 </tr>
 <tr class="odd">
 <td>3</td>

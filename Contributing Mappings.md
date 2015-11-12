@@ -118,6 +118,35 @@ confusing to use. If you can, try to think of another way to map the
 alternate function. This is generally not an issue with encoders that
 rotate infinitely, buttons, pads, or touch strips.
 
+## Coding conventions
+
+Javascript is very flexible language and it allows many things that are
+not part of Ecmascript 5. Because there is Javascript compiler we ensure
+basic code Quality Assurance with Static code testers. This makes
+reviewing Pull Requests more convenient because you don't have to take
+care stuff that machine tests better. It's arguable that Static testing
+ain't finding bugs but it's not the reason why they are used. They make
+code look correct and remove basic mistakes. Static code tools that are
+used (which must all pass before code can be merged to Mixxx code base)
+are:
+
+  - JShint (<http://jshint.com/>)
+  - JSBeautifier (<http://jsbeautifier.org/>)
+
+All Javascript code must start with header to make sure JShint doesn't
+generate error on missing variables
+
+``` 
+////////////////////////////////////////////////////////////////////////
+// JSHint configuration                                               //
+////////////////////////////////////////////////////////////////////////
+/* global engine                                                      */
+/* global script                                                      */
+/* global print                                                       */
+/* global midi                                                        */
+//////////////////////////////////////////////////////////////////////// 
+```
+
 ## Windows Installer Update
 
 If you add new files to the controller mappings, don't forget to update

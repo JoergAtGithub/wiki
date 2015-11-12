@@ -565,7 +565,7 @@ First, see
 and be sure you have set up an HID udev rule like explained on top of
 this page.
 
-### Jog Wheels not working
+### Jog Wheels not working or controller not responding
 
 If your jog wheels doesn't work, or nothing works on the controller even
 when you have carefully read all other resources, you should be aware

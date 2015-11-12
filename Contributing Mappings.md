@@ -121,14 +121,13 @@ rotate infinitely, buttons, pads, or touch strips.
 ## Coding conventions
 
 Javascript is very flexible language and it allows many things that are
-not part of Ecmascript 5. Because there is Javascript compiler we ensure
-basic code Quality Assurance with Static code testers. This makes
-reviewing Pull Requests more convenient because you don't have to take
-care stuff that machine tests better. It's arguable that Static testing
-ain't finding bugs but it's not the reason why they are used. They make
-code look correct and remove basic mistakes. Static code tools that are
-used (which must all pass before code can be merged to Mixxx code base)
-are:
+not part of Ecmascript 5. Because there is not Official Javascript
+compiler or interpreter we try to ensure basic code Quality Assurance
+with Static code testing tools. Using those tools is not for making your
+coding skill look bad but making your code even better and make sure
+when you create Pull Request basics are taken care of. Static code tools
+that are used (which must all pass before code can be merged to Mixxx
+code base) are:
 
   - JShint (<http://jshint.com/>)
   - JSBeautifier (<http://jsbeautifier.org/>)

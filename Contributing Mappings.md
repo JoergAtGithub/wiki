@@ -118,7 +118,7 @@ confusing to use. If you can, try to think of another way to map the
 alternate function. This is generally not an issue with encoders that
 rotate infinitely, buttons, pads, or touch strips.
 
-## Coding conventions
+## Coding conventions for Javascript
 
 Javascript is very flexible language and it allows many things that are
 not part of Ecmascript 5. Because there is not Official Javascript

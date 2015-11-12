@@ -172,6 +172,55 @@ There are some coding conventions that are mandatory.
 
     var object = new newShinyObject();
 
+## Coding conventions for XML
+
+Some would argue that XML is not code but it have to be in correct
+format. Used tools for formatting XML are:
+
+  - <http://www.freeformatter.com/xml-formatter.html> (with '2 spaces
+    per indent level')
+  - LibXML2 'xmllint -format your.xml' (<http://www.xmlsoft.org/>)
+
+If there is arguing about formatting or Mixxx outputs incorrect template
+of XML LibXML2 is used to format correct XML and it is how XML should be
+formatted.
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <MixxxControllerPreset mixxxVersion="1.12.0+" schemaVersion="1">
+      <info>
+        <name>Manufacturer Product-100</name>
+        <author>Template Author</author>
+        <forums>http://www.mixxx.org</forums>
+        <wiki>http://mixxx.org/wiki/doku.php</wiki>
+      </info>
+      <controller id="Manufacturer Product-100">
+        <scriptfiles>
+          <file filename="Manufacturer-Product-100-scripts.js" functionprefix="ManufacturerProduct100"/>
+        </scriptfiles>
+        <controls>
+          <!-- Comment -->
+          <control>
+            <group>[Master]</group>
+            <midino>0x18</midino>
+            <status>0xB0</status>
+            <key>crossfader</key>
+          </control>
+        </controls>
+        <outputs>
+          <!-- PFL -->
+          <output>
+            <group>[Channel1]</group>
+            <key>pfl</key>
+            <status>0x90</status>
+            <midino>0x2D</midino>
+            <on>0x7F</on>
+            <off>0x00</off>
+            <minimum>0.5</minimum>
+          </output>
+        </outputs>
+      </controller>
+    </MixxxControllerPreset>
+
 ## Windows Installer Update
 
 If you add new files to the controller mappings, don't forget to update

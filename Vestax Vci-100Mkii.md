@@ -25,7 +25,7 @@ pressed.*
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     for low-high pass)
 12. Pitch (semitones only)
-13. Rate \[Playposition\]
+13. Rate \[Rate by quantized BPM\]
 14. Channel fader
 15. Cross fader
 16. Headphone volume (values from 0 to 1)

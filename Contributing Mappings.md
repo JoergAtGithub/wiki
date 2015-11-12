@@ -158,7 +158,7 @@ There are some coding conventions that are mandatory.
 
 <!-- end list -->
 
-    function someFucntion() {
+    function someMethod() {
         if (something === another) {
             thisIsVariable++;
         }

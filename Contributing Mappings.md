@@ -146,6 +146,21 @@ generate error on missing variables
 //////////////////////////////////////////////////////////////////////// 
 ```
 
+# Some Javascript code examples
+
+There are some coding conventions that are mandatory as they are in C++.
+
+  - One line if must have branches
+  - '===' or '\!==' must be used. If they generate errors it should be
+    fixed on Mixxx Javascript engine not in Javascript code.
+  - Use camelCase more than C-style this\_is\_variable.
+
+<!-- end list -->
+
+    if (something === another) {
+        thisIsVariable++;
+    }
+
 ## Windows Installer Update
 
 If you add new files to the controller mappings, don't forget to update

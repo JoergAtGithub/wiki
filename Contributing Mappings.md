@@ -87,6 +87,14 @@ example, `Hercules DJ Console RMX.hid.xml`. JavaScript files use the
 naming convention `{manufacturer}-{device}-scripts.js`, for example
 `Stanton-SCS3d-scripts.js`.
 
+## Windows Installer Update
+
+If you add new files to the controller mappings, don't forget to update
+the Windows installer to uninstall these files when uninstalling Mixxx.
+You have to add your files to the list in the build/nsis/Mixxx.nsi file
+here:
+<https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394>
+
 ## Design guidelines
 
 These are all general guidelines to keep in mind when making your
@@ -126,20 +134,63 @@ rotate infinitely, buttons, pads, or touch strips.
 
 ## Coding conventions for Javascript
 
-Javascript is very flexible language and it allows many things that are
-not part of Ecmascript 5. Because there is not Official Javascript
-compiler or interpreter we try to ensure basic code Quality Assurance
-with Static code testing tools. Using those tools is not for making your
-coding skill look bad but making your code even better and make sure
-when you create Pull Request basics are taken care of. Static code tools
-that are used (which must all pass before code can be merged to Mixxx
-code base) are:
+Javascript is a very flexible programming language. Although there are
+some good features of JavaScript, there are also a number of features
+that have confusing syntax and/or encourage bad programming practices.
+Using these features makes it easier for bugs to go unnoticed in your
+code.
 
-  - JShint (<http://jshint.com/>)
-  - JSBeautifier (<http://jsbeautifier.org/>)
+These coding conventions are mandatory:
 
-All Javascript code must start with header to make sure JShint doesn't
-generate error on missing variables
+  - Do not write one-line `if` statements.
+  - Always use brackets for `if` statements. Put the opening `{` on the
+    same line as the conditional expression and the closing bracket `}`
+    on its own line.
+  - Put `else` statements on the same line as the previous closing `}`
+  - All code lines that need it must end with ';'
+  - Always put `var` before variable declarations to avoid accidentally
+    declaring global variables
+  - Do not use `==` and `!=` because these can have unexpected effects
+    when comparing variables of different types. Use `===` or `!==`
+    instead. If they generate errors it should be fixed in the Mixxx
+    Javascript engine, not in Javascript code.
+  - Use camelCase more than C-style this\_is\_variable.
+  - Use 4 spaces to indent, not tab characters
+  - `new` must be used when creating new objects or if JShint is fine
+    with then it is OK.
+  - Capitalize the first letter of constructor functions
+
+Good example:
+
+    var someObject = new ShinyObject();
+    
+    ShinyObject.someMethod = function () {
+        var someVariable = 0;
+        if (something === another) {
+            someVariable++;
+        } else {
+            someVariable--;
+        }
+        return someVariable;
+    }
+
+Bad example:
+
+    function some_method() {
+       if (something == another) {thisIsVariable++}
+       else {thisIsVariable--};
+    }
+
+### Code checking tools
+
+We use the automated code testing tools [JSHint](http://jshint.com/) and
+[JSBeautifier](http://jsbeautifier.org/) that check for bad practices in
+Javascript code. Using these tools is not for making your coding skill
+look bad. They are to help you make your code even better and you
+already have the basics taken care of when you create a pull request.
+
+All Javascript files for Mixxx must start with header to make sure
+JSHint doesn't gnerate errors for missing variables:
 
 ``` 
 ////////////////////////////////////////////////////////////////////////
@@ -151,32 +202,6 @@ generate error on missing variables
 /* global midi                                                        */
 //////////////////////////////////////////////////////////////////////// 
 ```
-
-# Some Javascript code examples
-
-There are some coding conventions that are mandatory.
-
-  - One line if must have branches
-  - '===' or '\!==' must be used. If they generate errors it should be
-    fixed on Mixxx Javascript engine not in Javascript code.
-  - Use camelCase more than C-style this\_is\_variable.
-  - Indentation is 4-spaces not tabs
-
-<!-- end list -->
-
-    function someMethod() {
-        if (something === another) {
-            thisIsVariable++;
-        }
-    }
-
-  - new must be used when creating new objects or if JShint is fine with
-    then it is OK.
-  - All code lines that need it must end with ';'
-
-<!-- end list -->
-
-    var object = new newShinyObject();
 
 ## Coding conventions for XML
 
@@ -226,11 +251,3 @@ formatted.
         </outputs>
       </controller>
     </MixxxControllerPreset>
-
-## Windows Installer Update
-
-If you add new files to the controller mappings, don't forget to update
-the Windows installer to uninstall these files when uninstalling Mixxx.
-You have to add your files to the list in the build/nsis/Mixxx.nsi file
-here:
-<https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394>

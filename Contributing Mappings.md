@@ -176,9 +176,11 @@ Good example:
 
 Bad example:
 
+    someVariable = 0
+    
     function some_method() {
-       if (something == another) {thisIsVariable++}
-       else {thisIsVariable--};
+       if (something == another) {someVariable++}
+       else {someVariable--};
     }
 
 ### Code checking tools

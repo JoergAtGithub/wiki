@@ -147,7 +147,7 @@ These coding conventions are mandatory:
     same line as the conditional expression and the closing bracket `}`
     on its own line.
   - Put `else` statements on the same line as the previous closing `}`
-  - All code lines that need it must end with ';'
+  - All code lines that need it must end with `;`
   - Always put `var` before variable declarations to avoid accidentally
     declaring global variables
   - Do not use `==` and `!=` because these can have unexpected effects

@@ -139,7 +139,7 @@ features JavaScript, but there are also a number of features that have
 confusing syntax and/or encourage bad programming practices. Using these
 features makes it easier for bugs to go unnoticed in your code.
 
-These coding conventions are mandatory:
+These coding conventions are mandatory for new Javascript code in Mixxx:
 
   - Do not write one-line `if` statements.
   - Always use brackets for `if` statements. Put the opening `{` on the

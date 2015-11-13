@@ -49,8 +49,8 @@ source code is made available on the Mixxx website under the GPL.
 ## Documenting the mapping
 
 Post [on the forum](http://mixxx.org/forums/viewforum.php?f=7) early so
-users can find your mapping and give feedback as you develop it. Also,
-list your controller on the [DJ Hardware
+users can find your mapping and give feedback as you develop it. For new
+mappings, list your controller on the [DJ Hardware
 Guide](hardware%20compatibility#mappings%20in%20development) and start a
 wiki page for your controller. To make a wiki page, put double brackets
 around the name of your controller in the Hardware Guide, for example

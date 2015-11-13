@@ -160,7 +160,7 @@ These coding conventions are mandatory:
     with then it is OK.
   - Capitalize the first letter of constructor functions
 
-Good example:
+Here is an example of good Javascript style:
 
     var someObject = new ShinyObject();
     
@@ -172,15 +172,6 @@ Good example:
             someVariable--;
         }
         return someVariable;
-    }
-
-Bad example:
-
-    someVariable = 0
-    
-    function some_method() {
-       if (something == another) {someVariable++}
-       else {someVariable--};
     }
 
 ### Code checking tools

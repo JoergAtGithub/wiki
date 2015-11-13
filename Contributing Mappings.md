@@ -232,19 +232,35 @@ numbers is appropriate.
         <controls>
           <!-- Comment -->
           <control>
-            <group>[Master]</group>
-            <midino>0x18</midino>
+            <group>[Channel1]</group>
+            <midino>0x01</midino>
             <status>0xB0</status>
-            <key>crossfader</key>
+            <key>play</key>
+          </control>
+          <control>
+            <group>[Channel1]</group>
+            <midino>0x02</midino>
+            <status>0xB0</status>
+            <key>pfl</key>
           </control>
         </controls>
         <outputs>
+          <!-- Use play_indicator control object rather than play -->
+          <output>
+            <group>[Channel1]</group>
+            <key>play_indicator</key>
+            <status>0x90</status>
+            <midino>0x01</midino>
+            <on>0x7F</on>
+            <off>0x00</off>
+            <minimum>0.5</minimum>
+          </output>
           <!-- PFL -->
           <output>
             <group>[Channel1]</group>
             <key>pfl</key>
             <status>0x90</status>
-            <midino>0x2D</midino>
+            <midino>0x02</midino>
             <on>0x7F</on>
             <off>0x00</off>
             <minimum>0.5</minimum>

@@ -69,6 +69,12 @@ pictures by going to the [Media Manager](?do=media) at the top right of
 any wiki page and upload your file(s) to the "hardware" namespace. SVG
 diagrams are preferred because they are easier to edit later.
 
+If you are submitting a substantially updated mapping for a controller
+that already has a mapping in Mixxx, create a new section on the
+controller's wiki page to describe your new mapping. When your pull
+request is merged, delete the description of the old mapping from the
+wiki page.
+
 ## File naming convention
 
 Please name your mapping files according to these conventions before

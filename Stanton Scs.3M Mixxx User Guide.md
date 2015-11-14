@@ -138,9 +138,10 @@ FX-EQ and touch the gain slider to reset pre-gain.)
 
 When holding the central MASTER button, the left side controls the
 headphone channel, while the right side controls the master channel.
-Left top slider: Pre/main mix on headphone Right top slider: main
-balance Left slider: head gain Right slider: master gain Buttons: The
-buttons assign effects to head and master
+
+\* Left top slider: Pre/main mix on headphone \* Right top slider: main
+balance \* Left slider: head gain \* Right slider: master gain \*
+Buttons: The buttons assign effects to head and master
 
 ### 
 

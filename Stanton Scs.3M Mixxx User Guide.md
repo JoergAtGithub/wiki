@@ -95,6 +95,53 @@ a red LED flicker, <span class="underline">you are clipping</span> and
 need to reduce the volume or gain to avoid distorted sound and/or
 speaker damage.
 
-## 
+# Proposed changes for 1.12
+
+This section explains the extensions proposed for Mixxx 1.12.
+
+### Deck switching buttons
+
+When touching the "A C" or "B D" buttons, the mixer switches between
+decks. On the left side, touching "A C" will switch between decks 1 and
+3. On the right side, touching "B D" will switch between decks 2 and 4.
+All controls except for the crossfader then control the selected deck.
+
+Connected SCS.3d modules will follow deck changes. For example if you
+switch from deck 1 to deck 3 on a SCS.3m, all connected SCS.3d modules
+who are on deck 1 will also switch to deck 3.
+
+### EQ mode
+
+This is the standard mixing mode where the three EQ sliders control
+low/mid/high. The top slider controls the filter knob.
+
+Holding EQ and touching a slider will reset it to its preset position.
+(Unfortunately this doesn't work for FX and MASTER modes.)
+
+### FX modes
+
+When one of the four buttons to the side of the gain slider is touched,
+the EQ- sliders control the selected effect chain. Top button selects
+first effect chain and so forth. In this mode, the EQ sliders control
+the first three knobs of the first effect in the selected effect chain.
+The top slider controls dry/wet mix.
+
+You can assign FX chains to the deck by holding FX and pressing on of
+the four buttons next to the gain slider. So to assign FX chain 1 to the
+current deck, hold FX and press the top button (right below EQ).
+
+When holding FX, the gain slider can be used adjust channel pre-gain in
+relative mode. Hold FX and slide up to make the channel louder. (Hold
+FX-EQ and touch the gain slider to reset pre-gain.)
+
+### MASTER mode
+
+When holding the central MASTER button, the left side controls the
+headphone channel, while the right side controls the master channel.
+Left top slider: Pre/main mix on headphone Right top slider: main
+balance Left slider: head gain Right slider: master gain Buttons: The
+buttons assign effects to head and master
+
+### 
 
 *Images courtesy of Stanton Magnetics, Inc.*

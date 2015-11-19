@@ -325,8 +325,8 @@ can be used to load the next (touch top half of the slider) or previous
 
 When FX is held, the button for the active deck is shown in red. So if
 you want to assign the active effect to the active deck, press the
-button that is red. If the button is purple, pressing it would mean
-unassign the active effect from the active deck.
+button that is red. If the button is purple, pressing it would
+deactivate the active effect on the active deck.
 
 ## EQ mode
 

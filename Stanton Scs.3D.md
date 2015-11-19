@@ -330,7 +330,7 @@ unassign the active effect from the active deck.
 
 ## EQ mode
 
-In EQ mode, the central sliders S3, S4, S5 control low/mid/high filters.
+In EQ mode, the central sliders S3, S4, S5 control low/mid/high EQs.
 Holding EQ will reset the control to center when the corresponding
 slider is touched.
 

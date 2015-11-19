@@ -284,7 +284,7 @@ purple.
 By holding a mode button, a mode can be enabled temporarily until that
 mode button is released again. Holding often enables alternate
 (destructive) functionality for the held mode. The following
-mode-verlays are available:
+mode-overlays are available:
 
 [[/media/hardware/stantonscs/modebuttons.jpg|]]
 

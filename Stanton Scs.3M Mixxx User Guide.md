@@ -131,8 +131,8 @@ the four buttons next to the gain slider. So to assign FX chain 1 to the
 current deck, hold FX and press the top button (right below EQ).
 
 When holding FX, the volume slider can be used adjust channel gain in
-relative mode. Hold FX and slide up to make the channel louder. (Hold
-FX-EQ and touch the gain slider to reset gain.)
+relative mode. Hold FX and slide up to make the channel louder. Hold
+FX-EQ and touch the gain slider to reset gain.
 
 ### MASTER mode
 

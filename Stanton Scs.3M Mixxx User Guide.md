@@ -82,13 +82,12 @@ Adjusts the cross-fade between the virtual decks
   - Needle drop function: Hold a Deck button to use the cross-fader
     strip to search through the track loaded on that deck
 
-## VU Meters
+## Level Meters
 
-These normally show the pre-fader signal for the respective deck.
-
-  - When holding down the Master button, they show the stereo master
-    output meters: left side for the left channel, right side for the
-    right channel.
+These normally show the pre-fader signal for the respective deck. When
+holding down the Master button, they show the stereo master output
+meters: left side for the left channel, right side for the right
+channel.
 
 **NOTE:** The LEDs are calibrated to the VU meters on-screen. If you see
 a red LED flicker, <span class="underline">you are clipping</span> and

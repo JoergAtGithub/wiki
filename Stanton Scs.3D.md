@@ -416,7 +416,8 @@ buttons in all modes except FX.
 The controller keeps its mode per deck. So when changing deck, the mode
 will switch to the mode previously used on that deck.
 
-Note that the active deck is synched with the SCS.3m, so when switching
-between decks 1 and 3, or 2 and 4 the other device changes as well.
+Note that the active deck is synced with the [Stanton
+SCS.3m](Stanton%20SCS.3m), so when switching between decks 1 and 3, or 2
+and 4 the other device changes as well.
 
 *Images courtesy of Stanton Magnetics, Inc.*

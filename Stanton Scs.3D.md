@@ -374,14 +374,13 @@ holding it above or below center, respectively.
 B11 jumps back one beat, B12 jumps forward. B13 and B14 control
 fast-reverse, fast-forward.
 
-While VINYL is held, B11 through B14 set the pitch slider mode, the
-currently active mode lights blue:
+While VINYL is held, B11 through B14 set the pitch slider mode. The
+currently active mode lights blue. The different pitch slider modes are:
 
 ``` 
   * B11 Absolute rate: The pitch slider directly sets the rate in a wide range
   * B12 Discrete Pitch: Change pitch up or down by touching upper or lower part of slider
-  * B13 Rate: Change the right up or down by holding the slider off-center.
-  * The further from the center you hold the slider, the faster the rate changes.
+  * B13 Rate: Change the rate up or down by holding the slider off-center. The further from the center you hold the slider, the faster the rate changes.
   * B14 Relative pitch: slide to change pitch up or down
 ```
 

@@ -307,7 +307,7 @@ FX mode allows you to control effects. Button B11 through B14 allow you
 to select the currently controlled chain. (Specifically, the first
 effect of each chain is controlled.) The currently active effect is
 shown in red where button B11 lights red when the first effect chain is
-selected, B12 for the seconde chain, B13 for chain 3, and B14 for chain
+selected, B12 for the second chain, B13 for chain 3, and B14 for chain
 4. The buttons turn blue when the active deck is assigned to this effect
 chain. If the active effect chain is assigned to the active deck, the
 button will appear purple.

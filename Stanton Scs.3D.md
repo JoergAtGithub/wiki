@@ -317,7 +317,7 @@ S4, and S5 control the first three effect knobs on the effect unit.
 
 ### Holding FX
 
-By holding FX, you can toggle assignement of the current deck to effect
+By holding FX, you can toggle assignment of the current deck to effect
 chains with buttons B11 through B14. The effects that have the current
 deck assigned are shown in blue. While FX is held, the pitch mode slider
 can be used to load the next (touch top half of the slider) or previous

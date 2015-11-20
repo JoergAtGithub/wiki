@@ -63,6 +63,10 @@ a picture of the controller (use the syntax {{URL to picture}} to embed
 a picture), a link to the manufacturer's website, a brief description, a
 link to the forum thread, and links to some reviews of the controller.
 
+If you are not very comfortable writing English, do not worry. Do your
+best to write a description of the mapping on the wiki page and someone
+who knows English better can work on your writing.
+
 Please complete the wiki page with labeled diagrams explaining how your
 mapping works. In addition to helping users, this helps developers who
 do not own the controller to review the mapping. If there is no diagram

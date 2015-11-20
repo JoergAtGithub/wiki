@@ -11,6 +11,9 @@ learn. Using JavaScript to map your controller could be a good
 introduction to programming. If you are unfamiliar with MIDI, see the
 [MIDI Crash Course](MIDI%20Crash%20Course) page.
 
+Note that the process and guidelines outlined on this page are a work in
+progress. They will be updated as we learn from reviewing more mappings.
+
 ## Setting up Git
 
 We use Git for coordinating Mixxx development. Git is software that

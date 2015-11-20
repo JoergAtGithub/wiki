@@ -69,7 +69,8 @@ link to the forum thread, and links to some reviews of the controller.
 
 If you are not very comfortable writing English, do not worry. Do your
 best to write a description of the mapping on the wiki page and someone
-who knows English better can work on your writing.
+who knows English better can work on your writing. You are also
+encouraged to translate the wiki page into your native language.
 
 Please complete the wiki page with labeled diagrams explaining how your
 mapping works. In addition to helping users, this helps developers who

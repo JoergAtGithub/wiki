@@ -1,8 +1,8 @@
 # MIDI Scripting
 
-In order to support the advanced features of many MIDI controllers,
-Mixxx offers what we call MIDI Scripting (introduced in Mixxx v1.7.0).
-It enables MIDI controls to be mapped to
+In order to support the features of many MIDI controllers, Mixxx offers
+what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables
+MIDI controls to be mapped to
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
 [Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm))
 functions stored in function library files, freeing Mixxx from a
@@ -14,6 +14,9 @@ better with Mixxx (i.e. for
 [\#scratching](#scratching)),-display-a-complex-LED-sequence,-send-messages-to-text-displays-on-the-controller,-or-even-[turn
 a 2 deck controller into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
+
+If you would like your mapping included in Mixxx, please see the coding
+guidelines on the [Contributing Mappings](Contributing%20Mappings) page.
 
 JavaScript is mostly used for programming complex functionality in Web
 pages. There are many tutorials online, such as

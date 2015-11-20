@@ -131,9 +131,9 @@ Put a comment above the variable definition explaining what the variable
 does and how to change it.
 
 Use the play\_indicator and cue\_indicator
-[MixxxControls](MixxxControls) to illuminate play and cue buttons. The
-behavior of these changes according to the cue mode selected by the user
-in the preferences.
+[MixxxControls](MixxxControls) to illuminate play and cue button LEDs.
+The behavior of these Mixxx Controls changes according to the cue mode
+selected by the user in the preferences.
 
 Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the

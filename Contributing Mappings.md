@@ -21,17 +21,7 @@ helps keep track of changes in files. Before you start working on your
 mapping, set up git on your computer. Using git will help you keep track
 of your progress on the mapping and help Mixxx developers review it.
 Start by creating a [GitHub](http://github.com/) account and [forking
-Mixxx](https://github.com/mixxxdj/mixxx). On GNU/Linux and Mac OS X, you
-can directly work on your mapping in your git repository. Mixxx
-automatically reloads JavaScript mapping files when they are changed, so
-you can work on the JS part of the mapping while running Mixxx to test
-your changes. To do this, delete the `controllers` directory in your
-user preferences folder (backup any work in progress that you do not
-want to lose first\!) and make a symbolic link to the `res/controllers`
-directory in your git repository. For example, if your git repository is
-under the "software" directory in your home directory on GNU/Linux, run:
-
-`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
+Mixxx](https://github.com/mixxxdj/mixxx).
 
 Make a new git branch (run `git checkout -b new_branch_name` from within
 your git repository). Make changes to your mapping and commit them when
@@ -48,6 +38,20 @@ agreement. This agreement gives the Mixxx team permission to distribute
 your mapping with Mixxx under the GNU GPL v2 license with an exception
 allowing it to be distributed in the Mac App Store provided that the
 source code is made available on the Mixxx website under the GPL.
+
+### Working on your mapping in your git repository
+
+In GNU/Linux and Mac OS X, you can directly work on your mapping in your
+git repository. Mixxx automatically reloads JavaScript mapping files
+when they are changed, so you can work on the JS part of the mapping
+while running Mixxx to test your changes. To do this, delete the
+`controllers` directory in your user preferences folder (backup any work
+in progress that you do not want to lose first\!) and make a symbolic
+link to the `res/controllers` directory in your git repository. For
+example, if your git repository is under the "software" directory in
+your home directory on GNU/Linux, run:
+
+`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 
 ## Documenting the mapping
 

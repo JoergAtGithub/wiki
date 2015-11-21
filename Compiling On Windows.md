@@ -32,12 +32,26 @@ page](Build%20Windows%20installer).)*
 
 ### Prepare build environment
 
-Add to or create the following system environment variables
-([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
-adjusting the paths to match where you actually installed the above.
-`PATH = ;C:\Python27;C:\Python27\Scripts # append to the existing
-variable
-`
+1.  Add to or create the following system environment variables
+    ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
+    adjusting the paths to match where you actually installed the above.
+    `PATH = ;C:\Python27;C:\Python27\Scripts # append to the existing
+    variable
+    `
+2.  There is a bug in at least the Windows 7.1 SDK where it looks in the
+    wrong place for the SDK path. (You will get errors like `fatal error
+    C1083: Cannot open include file: 'windows.h': No such file or
+    directory` unless this is corrected.)
+    1.  As an administrator, edit the file `C:\Program Files
+        (x86)\Microsoft Visual
+        Studio 10.0\Common7\Tools\VCVarsQueryRegistry.bat` and examine
+        the `regquery` path under the section `:GetWindowsSdkDirHelper`
+        (`%1` is replaced by HKEY\_LOCAL\_MACHINE at runtime.)
+    2.  Run `regedit` and browse to that path to make sure it exists and
+        that the version number is correct.
+    3.  If not, adjust the path in the file to match what you found in
+        the registry. (E.g. If you've installed SDK 7.1, change the
+        `v7.0A` to `v7.1A` in the `regquery` path.
 
 ### Download mixxx dependencies
 

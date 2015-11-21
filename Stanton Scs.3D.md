@@ -258,7 +258,7 @@ Unless otherwise noted, the following controls have the same function in
 all modes.
 
 ``` 
-  * S1 controls gain of currently active deck.
+  * S1 controls volume of currently active deck.
   * S2 changes rate or pitch depending on current mode, see VINYL-mode for discussion.
   * PLAY starts or pauses the track. When a track is ready to play the button blinks.
   * CUE will jump to the cue point or set it, depending on your settings and whether the track is playing.

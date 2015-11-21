@@ -13,10 +13,10 @@ least in part to its (needless) dependence on .NET 4.)
 
 ## Qt
 
-[Qt](http://qt.nokia.com/downloads/) now provides pre-built binaries for
-32-bit Windows for the MSVC 2008 compiler (and the minGW one.) But if
-you want to build it from source yourself for whatever reason (like for
-x64,) here are the steps:
+[Qt](http://www.qt.io/download-open-source/) now provides pre-built
+binaries for 32-bit Windows for the MSVC 2008 compiler (and the minGW
+one.) But if you want to build it from source yourself for whatever
+reason (like for x64,) here are the steps:
 
 ### Prepare build environment
 

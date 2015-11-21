@@ -51,7 +51,7 @@ page](Build%20Windows%20installer).)*
         that the version number is correct.
     3.  If not, adjust the path in the file to match what you found in
         the registry. (E.g. If you've installed SDK 7.1, change the
-        `v7.0A` to `v7.1A` in the `regquery` path.
+        `v7.0A` to `v7.1` in the `regquery` path.
 
 ### Download mixxx dependencies
 

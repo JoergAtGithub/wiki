@@ -49,8 +49,9 @@ variable
     branch
 3.  Edit `%WINLIB_PATH%\build_environment.bat` and change the following
     lines:
-    1.  `SET MSVC_PATH=<path to the vcvarsall.bat file>`
-    2.  `SET MSBUILD=msbuild /p:VCTargetsPath="<path to the ? files>"`
+    1.  `SET MSVC_PATH=<path containing the vcvarsall.bat file>`
+    2.  `SET MSBUILD=msbuild /p:VCTargetsPath="<path containing
+        Microsoft.Cpp.Default.props>"`
 4.  Download the [Qt
     Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip).
     Unpack the zip archive into **WINLIB\_PATH\\build**

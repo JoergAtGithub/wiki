@@ -69,16 +69,19 @@ page](Build%20Windows%20installer).)*
 3.  Edit `%WINLIB_PATH%\build_environment.bat` and change the following
     lines:
     1.  `SET MSVC_PATH=<path containing the vcvarsall.bat file>`
-    2.  `SET MSBUILD=msbuild /p:VCTargetsPath="<path containing
-        Microsoft.Cpp.Default.props>"`
-
-<!-- end list -->
-
-``` 
-  - 
-- Download the [[http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip|Qt Sources]]. Unpack the zip archive into **WINLIB_PATH\build**
-- Download the [[http://www.steinberg.net/en/company/developers.html|ASIO SDK]]. You will need a free steinberg development account to do that. Extract the files and rename the directory to remove the version number, so **ASIOSDK2.7** becomes **ASIOSDK**.  Move **ASIOSDK** to **WINLIB_PATH\build\pa_stable_v19_20140130\src\hostapi\asio\**.
-```
+    2.  If you're using only the Windows 7.1 SDK (no Visual Studio,)
+        `SET MSBUILD=msbuild /p:PlatformToolset=Windows7.1SDK`
+          - You may need to add/replace `/p:VCTargetsPath="<path
+            containing Microsoft.Cpp.Default.props>"`
+4.  Download the [Qt
+    Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip).
+    Unpack the zip archive into **WINLIB\_PATH\\build**
+5.  Download the [ASIO
+    SDK](http://www.steinberg.net/en/company/developers.html). You will
+    need a free steinberg development account to do that. Extract the
+    files and rename the directory to remove the version number, so
+    **ASIOSDK2.7** becomes **ASIOSDK**. Move **ASIOSDK** to
+    **WINLIB\_PATH\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.
 
 ### Build dependencies
 

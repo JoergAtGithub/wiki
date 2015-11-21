@@ -39,8 +39,8 @@ pressed.*
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Loop in the default length (4 at the beginning) \[Reloop\], or *in
-    loop* Exit the loop \[Loop out\]
+27. Loop in the default length\[1\] (4 at the beginning) \[Reloop\], or
+    *in loop* Exit the loop \[Loop out\]
 28. Halve the default length, or *in loop* Halve the loop \[Move the
     loop backward by 1/2 beat\]
 29. Double the default length, or *in loop* Double the loop \[Move the
@@ -61,3 +61,6 @@ pressed.*
 [Vestax
 VCI-100MKII.midi.xml](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
+
+1.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4
+    =\< default length \< 4, LED28 + LED29: default length \< 1/4

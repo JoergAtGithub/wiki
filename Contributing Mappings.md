@@ -164,9 +164,9 @@ rotate infinitely, buttons, pads, or touch strips.
 ## Coding conventions for Javascript
 
 Javascript is a very flexible programming language. It has some good
-features JavaScript, but there are also a number of features that have
-confusing syntax and/or encourage bad programming practices. Using these
-features makes it easier for bugs to go unnoticed in your code.
+features, but there are also a number of features that have confusing
+syntax and/or encourage bad programming practices. Using these features
+makes it easier for bugs to go unnoticed in your code.
 
 These coding conventions are mandatory for new Javascript code in Mixxx:
 

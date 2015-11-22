@@ -14,7 +14,7 @@ introduction to programming. If you are unfamiliar with MIDI, see the
 Note that the process and guidelines outlined on this page are a work in
 progress. They will be updated as we learn from reviewing more mappings.
 
-## Setting up Git
+## Using Git with your mapping
 
 We use Git for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
@@ -39,6 +39,11 @@ agreement. This agreement gives the Mixxx team permission to distribute
 your mapping with Mixxx under the GNU GPL v2 license with an exception
 allowing it to be distributed in the Mac App Store provided that the
 source code is made available on the Mixxx website under the GPL.
+
+You are encouraged to join the
+[Mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+email list to stay involved with Mixxx and keep your mapping up to date
+with new Mixxx features.
 
 ### Working on your mapping in your git repository
 

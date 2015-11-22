@@ -113,9 +113,9 @@ naming convention `{manufacturer}-{device}-scripts.js`, for example
 
 If you add new files to the controller mappings, don't forget to update
 the Windows installer to uninstall these files when uninstalling Mixxx.
-You have to add your files to the list in the build/nsis/Mixxx.nsi file
-here:
-<https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394>
+You have to add your files to the list in the
+[build/nsis/Mixxx.nsi](https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394)
+file in the Mixxx source tree.
 
 ## Design guidelines
 

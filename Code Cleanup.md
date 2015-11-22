@@ -12,8 +12,8 @@ Here is a high-level list of things to do to make this happen:
   - ~~Search the code for "`Qt3`", "`QT3`", and "`Q3`" and replace with
     Qt4 equivalents~~
   - Address all developer questions and concerns in code comments
-  - Search the code for each of the following and fix (discuss with
-    others as needed):
+  - Search the code comments for each of the following and fix (discuss
+    with others as needed):
 
 <!-- end list -->
 

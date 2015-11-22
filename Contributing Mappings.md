@@ -6,10 +6,12 @@ mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
 [JavaScript](MIDI%20scripting). While mappings can be made with just
 XML, most controllers will require some JavaScript to make a complete
-mapping. Both XML and JavaScript are fairly straightforward and easy to
-learn. Using JavaScript to map your controller could be a good
-introduction to programming. If you are unfamiliar with MIDI, see the
-[MIDI Crash Course](MIDI%20Crash%20Course) page.
+mapping. Some controllers will require a mapping mostly or completely
+written in JavaScript. Both XML and JavaScript are fairly
+straightforward and easy to learn. Using JavaScript to map your
+controller could be a good introduction to programming. If you are
+unfamiliar with MIDI, see the [MIDI Crash Course](MIDI%20Crash%20Course)
+page.
 
 Note that the process and guidelines outlined on this page are a work in
 progress. They will be updated as we learn from reviewing more mappings.

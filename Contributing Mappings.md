@@ -151,8 +151,10 @@ does and how to change it.
 
 Use the play\_indicator and cue\_indicator
 [MixxxControls](MixxxControls) to illuminate play and cue button LEDs.
-The behavior of these Mixxx Controls changes according to the cue mode
-selected by the user in the preferences.
+These are the controls that the buttons on screen respond to, so the
+controller's LEDs will match what is on screen. The behavior of these
+Mixxx Controls changes according to the cue mode selected by the user in
+the preferences.
 
 Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the

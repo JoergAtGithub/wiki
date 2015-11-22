@@ -206,12 +206,15 @@ Here is an example of good Javascript style:
 
 We use the automated code testing tools [JSHint](http://jshint.com/) and
 [JSBeautifier](http://jsbeautifier.org/) that check for bad practices in
-Javascript code. Using these tools is not for making your coding skill
-look bad. They are to help you make your code even better and you
-already have the basics taken care of when you create a pull request.
+Javascript code. If it is too much trouble to set up Node.js to use
+these tools, a reviewer can do that for you when you submit your pull
+request. Using these tools is not for making your coding skill look bad.
+They are to help you make your code even better. If you use these, you
+will already have the basics taken care of when you submit a pull
+request.
 
 All Javascript files for Mixxx must start with header to make sure
-JSHint doesn't gnerate errors for missing variables:
+JSHint doesn't generate errors for missing variables:
 
 ``` 
 ////////////////////////////////////////////////////////////////////////

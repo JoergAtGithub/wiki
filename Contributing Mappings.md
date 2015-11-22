@@ -93,9 +93,9 @@ manufacturer only provides a PDF diagram, you can open the PDF in
 
 If you are submitting a substantially updated mapping for a controller
 that already has a mapping in Mixxx, create a new section on the
-controller's wiki page to describe your new mapping. When your pull
-request is merged, delete the description of the old mapping from the
-wiki page.
+controller's existing wiki page to describe your new mapping. When your
+pull request is merged, delete the description of the old mapping from
+the wiki page.
 
 ## File naming convention
 

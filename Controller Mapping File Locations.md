@@ -16,7 +16,7 @@ folder. The MIDI Learning Wizard puts its mapping files here:
     and
     folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
 
-Note that before Mixxx 1.12, mappings in this folder did not show up in
+Note that before Mixxx 2.0, mappings in this folder did not show up in
 the drop down menu in the controller preferences for loading a preset.
 
 ## System Controller Mapping Folder

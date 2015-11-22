@@ -127,7 +127,7 @@ is ready.
 ## Create a new branch
 
     $ git checkout -b experimental
-    Switched to a new branch 'experimental'
+    Create a new branch called 'experimental' and switch to it
     
     $ git branch # show which branch you are on
     * experimental

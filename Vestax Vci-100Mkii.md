@@ -62,5 +62,5 @@ pressed.*
 VCI-100MKII.midi.xml](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
 
-1.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4
-    =\< default length \< 4, LED28 + LED29: default length \< 1/4
+1.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+    default length \< 4, LED28 + LED29: default length \< 1/4

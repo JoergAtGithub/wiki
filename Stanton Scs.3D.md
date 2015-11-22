@@ -331,8 +331,9 @@ deactivate the active effect on the active deck.
 ## EQ mode
 
 In EQ mode, the central sliders S3, S4, S5 control low/mid/high EQs.
-Holding EQ will reset the control to center when the corresponding
-slider is touched.
+Hold EQ to control pre-gain on S1 instead of volume. The other controls
+(low/mid/high/pitch) are reset to center when the control is touched
+while EQ is held.
 
 ## LOOP mode
 

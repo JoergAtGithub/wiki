@@ -208,8 +208,8 @@ We use the automated code testing tools [JSHint](http://jshint.com/) and
 [JSBeautifier](http://jsbeautifier.org/) that check for bad practices in
 Javascript code. You can copy and paste your JS code onto those web
 pages to use them or you can use them locally on your computer with
-Node.js. Using these tools is not for making your coding skill look bad.
-They are to help you make your code even better. If you use these, you
+Node.js. Using these tools is not for making your coding skill look bad;
+they are to help you make your code even better. If you use these, you
 will already have the basics taken care of when you submit a pull
 request.
 

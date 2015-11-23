@@ -21,9 +21,7 @@ pressed.*
 8.  EQ mid
 9.  EQ low
 10. Gain
-11. Filter (high pass only, see [the
-    article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
-    for low-high pass)
+11. Filter (high pass only)\[1\]
 12. Pitch (semitones only)
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -41,7 +39,7 @@ pressed.*
 26. Keylock mode \[Zoom out waveform\]
 27. Loop in the default length (4 beats at the beginning) \[Reloop\], or
     *in loop* Exit the loop \[Loop out\]
-28. Halve the default length,\[1\] or *in loop* Halve the loop \[Move
+28. Halve the default length,\[2\] or *in loop* Halve the loop \[Move
     the loop backward by 1/2 beat\]
 29. Double the default length, or *in loop* Double the loop \[Move the
     loop forward by 1/2 beat\]
@@ -62,5 +60,10 @@ pressed.*
 VCI-100MKII.midi.xml](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers/Vestax-VCI-100MKII-scripts.js)
 
-1.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+1.  see [the
+    article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
+    or use Controller Learning Wizard (choose "Quick Effect Super Knob")
+    for low-high pass
+
+2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 + LED29: default length \< 1/4

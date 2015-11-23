@@ -191,11 +191,11 @@ included in Mixxx. There may be other mappings more suited to your
 workflow on [the forum](http://www.mixxx.org/forums/viewforum.php?f=7).
 
 Do not add mappings to this list until they have been included in Mixxx.
-If you make a mapping for a controller, please add it to the
-[\#Mappings-In-Development](#Mappings-In-Development)-table-and-[make a
-pull request](midi-scripting#setting-up-git) on GitHub to include it in
-Mixxx when it is ready. When the pull request is merged, move your
-controller to this table.
+If you make a mapping for a controller, please add it to the [\#Mappings
+In Development](#Mappings%20In%20Development) table and refer to the
+[Contributing Mappings](Contributing%20Mappings) page for instructions
+on how to get it included in Mixxx. When the pull request is merged,
+move your controller to this table.
 
 |                                                                                                    |                   |                                                            |                                 |                 |                               |
 | -------------------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------- | ------------------------------- | --------------- | ----------------------------- |

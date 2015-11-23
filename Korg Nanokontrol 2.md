@@ -4,3 +4,4 @@
 
   - [Manufacturer's product
     page](http://www.korg.com/us/products/controllers/nanokontrol2/)
+  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=4759)

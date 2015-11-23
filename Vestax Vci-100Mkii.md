@@ -62,8 +62,9 @@ VCI-100MKII.midi.xml](https://github.com/mixxxdj/mixxx/blob/1.12/res/controllers
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
-    or use Controller Learning Wizard (choose "Quick Effect Super Knob")
-    for low-high pass
+    or use [Controller Learning
+    Wizard](http://www.mixxx.org/manual/1.12/chapters/advanced_topics.html)
+    (choose "Quick Effect Super Knob") for low-high pass
 
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 + LED29: default length \< 1/4

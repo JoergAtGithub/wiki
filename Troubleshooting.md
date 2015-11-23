@@ -116,8 +116,8 @@ DJ gear.
 
 ## My controller does not work
 
-To use a MIDI or HID controllers with Mixxx, enable the device and load
-a mapping. Go to Options \> Preferences in Mixxx and look for your
+To use a MIDI or HID controller with Mixxx, enable the device and load a
+mapping. Go to Options \> Preferences in Mixxx and look for your
 controller under the "Controllers" label on the left. Check the
 "Enabled" box, select a mapping from the drop down menu and press "Ok".
 If Mixxx did not come with a mapping for your controller, [search the

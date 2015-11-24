@@ -10,6 +10,15 @@ page](Build%20Windows%20installer).)*
   - [Visual Studio 13 for Windows
     Desktop](http://www.visualstudio.com/downloads/download-visual-studio-vs).
     You need a Microsoft account.
+
+We are currently also testing the [Microsoft Visual C++ Build
+Tools](http://www.microsoft.com/en-us/download/details.aspx?id=49512)
+package which explicitly enables building applications without Visual
+Studio installed. It's currently a technical preview, but you can
+[search
+here](https://www.microsoft.com/en-gb/search/DownloadsDrillInResults.aspx?q=C%2b%2b+build+tools&cateorder=1_5_2_3&sortby=-availabledate)
+(order by newest to oldest) to see when it's officially released.
+
   - If you install Visual Studio 2013 or newer, it comes with the latest
     Windows 7 SDK. The following links are only needed if you have a
     version of Visual Studio older than this.

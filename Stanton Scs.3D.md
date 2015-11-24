@@ -348,16 +348,18 @@ you want to assign the active effect to the active deck, press the
 button that is red. If the button is purple, pressing it would
 deactivate the active effect on the active deck.
 
-Example on how to load an echo effect into chain 3, assign it to channel
-2:
+Example on how to load an echo effect into chain 3 and assign it to
+channel 2:
 
-1\. Press DECK-B12 to switch to deck 2 2. Press FX to switch to FX mode
-3. Press B13 to select effect chain 3 4. Slide S2 to the bottom to
-bypass chain 3 (precautionary measure) 5. Hold FX and touch S2 above the
-middle to select the next effect (will select echo if no effect was
-selected previously) 6. Hold FX and press B13 to assign effect chain 3
-to deck 2 7. Adjust echo parameters with sliders S3, S4, S5 8. Slide S2
-upwards to bring the effect in
+1.  Press DECK-B12 to switch to deck 2
+2.  Press FX to switch to FX mode
+3.  Press B13 to select effect chain 3
+4.  Slide S2 to the bottom to bypass chain 3 (precautionary measure)
+5.  Hold FX and touch S2 above the middle to select the next effect
+    (will select echo if no effect was selected previously)
+6.  Hold FX and press B13 to assign effect chain 3 to deck 2
+7.  Adjust echo parameters with sliders S3, S4, S5
+8.  Slide S2 upwards to bring the effect in 
 
 ## EQ mode
 

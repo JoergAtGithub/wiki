@@ -318,15 +318,14 @@ decks you also switch to the previously selected effect on that deck.
 Initially, effect slot 1 is selected for deck 1, slot 2 for deck 2 and
 so on.
 
-To switch and control another effect, button B11 through B14 allow you
-to set which one is controlled from that deck. The currently active
-effect is shown in red where button B11 lights red when the first effect
-chain is selected, B12 for the second chain, B13 for chain 3, and B14
-for chain 4. The buttons turn blue when the active deck is assigned to
-this effect chain. If the active effect is assigned to the current deck,
-the corresponding button will appear purple. If you don't see purple it
-means that the effect you're controlling is not assigned to the current
-deck.
+To control another effect, buttons B11 through B14 allow you to switch.
+The currently active effect is shown in red where button B11 lights red
+when the first effect chain is selected, B12 for the second chain, B13
+for chain 3, and B14 for chain 4. The buttons turn blue when the active
+deck is assigned to this effect chain. If the active effect is assigned
+to the current deck, the corresponding button will appear purple. If you
+don't see purple it means that the effect you're controlling is not
+assigned to the current deck.
 
 For example, if the controller is on deck 2, has effect slot 2 selected,
 and effects 2 and 3 assigned, the four buttons would be lit as follows:

@@ -120,19 +120,19 @@ this doesn't work for FX and MASTER modes.)
 
 ### FX modes
 
-When one of the four buttons to the side of the gain slider is touched,
-the EQ- sliders control the selected effect chain. Top button selects
-first effect chain and so forth. In this mode, the EQ sliders control
-the first three knobs of the first effect in the selected effect chain.
-The top slider controls dry/wet mix.
+Touch one of the four buttons to the side of the gain slider to control
+one of the effect chains with the EQ- sliders. Top button selects first
+effect chain and so forth. In this mode, the EQ sliders control the
+first three knobs of the first effect in the selected effect chain. The
+top slider controls dry/wet mix.
 
 You can assign FX chains to the deck by holding FX and pressing one of
 the four buttons next to the gain slider. So to assign FX chain 1 to the
 current deck, hold FX and press the top button (right below EQ).
 
-When holding FX, the volume slider can be used adjust channel gain in
-relative mode. Hold FX and slide up to make the channel louder. Hold
-FX-EQ and touch the gain slider to reset gain.
+When holding FX, the volume slider can be used to adjust channel gain.
+Hold FX and slide up to make the channel louder. Hold FX-EQ and touch
+the gain slider to reset gain.
 
 ### MASTER mode
 

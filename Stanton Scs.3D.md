@@ -295,7 +295,7 @@ purple. The following mode-overlays are available:
 Modes are remembered per-deck. When you switch the deck, the mode last
 active for that deck will be selected.
 
-By holding a mode button, a mode is be enabled temporarily in hold-mode.
+By holding a mode button, a mode is enabled temporarily in hold-mode.
 When the button is released again, the device switches back to the
 previously selected mode. Some hold-modes enable alternative, often
 disruptive functionality. Most of the time you won't want to use the

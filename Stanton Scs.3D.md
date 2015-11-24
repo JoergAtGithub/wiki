@@ -366,8 +366,8 @@ hotcue is set, the blue lights next to it will light.
 To clear a hotcue, hold TRIG and touch the corresponding field.
 
 The first TRIG overlay (red light) controls hotcues 1 to 5, touching
-TRIG will switch to overlays 2 and three controlling hotcues 6 to 10
-(blue light) and 11 to 15 (purple light).
+TRIG will switch to overlay two, controlling hotcues 6 to 10 (blue
+light), then overlay three, for cue points 11 to 15 (purple light).
 
 ## VINYL mode
 

@@ -292,6 +292,9 @@ purple. The following mode-overlays are available:
   * DECK: (red) library scan & load
 ```
 
+Modes are remembered per-deck. When you switch the deck, the mode last
+active for that deck will be selected.
+
 By holding a mode button, a mode can be enabled temporarily until that
 mode button is released again. When held some modes enable alternative,
 often disruptive functionality. Most of the time you won't want to use

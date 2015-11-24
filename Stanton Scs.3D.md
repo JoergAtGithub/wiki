@@ -342,8 +342,9 @@ chains with buttons B11 through B14. B11 assigns effect chain 1, B12
 assigns effect chain 2, B13 assigns chain 3, and B14 assigns chain 4 to
 the active deck. The effects that have the current deck assigned are
 shown in blue. While FX is held, the pitch mode slider can be used to
-load the next (touch top half of the slider) or previous (touch bottom
-half) effect into the currently active effect slot.
+scroll through different effects. To load the next effect, touch top
+half of the slider and touch the bottom half to load the previous effect
+into the currently active effect slot.
 
 When FX is held, the button for the active deck is shown in red. So if
 you want to assign the active effect to the active deck, press the

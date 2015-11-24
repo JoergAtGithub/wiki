@@ -114,8 +114,9 @@ who are on deck 1 will also switch to deck 3.
 This is the standard mixing mode where the three EQ sliders control
 low/mid/high. The top slider controls the filter knob.
 
-Holding EQ and touching a slider will reset it to its preset position.
-(Unfortunately this doesn't work for FX and MASTER modes.)
+Touching EQ will return to EQ mode from the FX modes. Holding EQ and
+touching a slider will reset it to its preset position. (Unfortunately
+this doesn't work for FX and MASTER modes.)
 
 ### FX modes
 

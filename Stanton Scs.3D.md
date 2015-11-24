@@ -295,12 +295,14 @@ purple. The following mode-overlays are available:
 Modes are remembered per-deck. When you switch the deck, the mode last
 active for that deck will be selected.
 
-By holding a mode button, a mode can be enabled temporarily until that
-mode button is released again. When held some modes enable alternative,
-often disruptive functionality. Most of the time you won't want to use
-the hold-modes on live decks (e.g. needledrop in VINYL) or you must be
-very cautious (assigning effect chains with FX). Each mode will be
-explained in detail below.
+By holding a mode button, a mode is be enabled temporarily in hold-mode.
+When the button is released again, the device switches back to the
+previously selected mode. Some hold-modes enable alternative, often
+disruptive functionality. Most of the time you won't want to use the
+hold-modes on live decks (e.g. needledrop in VINYL) or you must be very
+cautious (assigning effect chains with FX).
+
+Each mode will be explained in detail below.
 
 ## FX mode
 

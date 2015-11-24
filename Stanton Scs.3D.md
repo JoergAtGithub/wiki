@@ -279,12 +279,7 @@ track ends.
 By touching one of the six mode buttons, you switch to that mode. Some
 modes have alternate overlays, you can switch to those by touching the
 mode again. The first overlay is red, the second blue, the third is
-purple.
-
-By holding a mode button, a mode can be enabled temporarily until that
-mode button is released again. Holding often enables alternate
-(destructive) functionality for the held mode. The following
-mode-overlays are available:
+purple. The following mode-overlays are available:
 
 [[/media/hardware/stantonscs/modebuttons.jpg|]]
 
@@ -297,7 +292,12 @@ mode-overlays are available:
   * DECK: (red) library scan & load
 ```
 
-Each mode will be explained in detail below.
+By holding a mode button, a mode can be enabled temporarily until that
+mode button is released again. When held some modes enable alternative,
+often disruptive functionality. Most of the time you won't want to use
+the hold-modes on live decks (e.g. needledrop in VINYL) or you must be
+very cautious (assigning effect chains with FX). Each mode will be
+explained in detail below.
 
 ## FX mode
 

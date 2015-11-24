@@ -331,7 +331,10 @@ deck.
 For example, if the controller is on deck 2, has effect slot 2 selected,
 and effects 2 and 3 assigned, the four buttons would be lit as follows:
 
-\* B11: black \* B12: purple \* B13: blue \* B14: black
+  - B11: black
+  - B12: purple
+  - B13: blue
+  - B14: black
 
 ### Holding FX
 

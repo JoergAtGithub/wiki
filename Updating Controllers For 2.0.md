@@ -26,6 +26,12 @@ two effects sections), and Y is 1,2,3 (the three knobs).
 Wet/dry is: \[EffectRack1\_EffectUnitX\],mix (fourth knob in each
 section)
 
+Per-channel buttons to activate a FX unit on that channel:
+\[EffectRack1\_EffectUnitX\],group\_\[ChannelY\]\_enable
+
+Changing which effect is loaded in a section:
+\[EffectRack1\_EffectUnitX\],next\_chain
+
 ## Master Sync Button
 
 Should be called "sync\_enabled". Devs should test push-and-hold for

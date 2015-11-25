@@ -5,8 +5,14 @@
 Group goes from "\[ChannelX\]" to
 "\[EqualizerRack1\_\[ChannelX\]\_Effect1\]"
 
-Name goes from: filterLow to parameter1 filterMid to parameter2
-filterHigh to parameter3
+Name goes from:
+
+  - filterLow to parameter1
+  - filterMid to parameter2
+  - filterHigh to parameter3
+  - filterLowKill to button\_parameter1
+  - filterMidKill to button\_parameter2
+  - filterHighKill to button\_parameter3
 
 ## Effects Control Objects
 

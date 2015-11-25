@@ -61,6 +61,17 @@ also want to produce music may consider saving money and get a
 controller without a sound card and getting a separate, high quality
 sound card suitable for recording.
 
+These are all just guidelines; research your options and decide what you
+think will work best for the way you want to DJ.
+
+See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
+diagrams and descriptions of setups with different kinds of hardware.
+
+See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
+resources.
+
+### Headphones
+
 DJ headphones are generally better quality than typical consumer
 headphones. Importantly, they are designed to have good isolation,
 meaning they block outside sound. This allows the DJ to focus on the
@@ -79,15 +90,6 @@ expensive. Good DJ headphones can be purchased new for $150-250; IEMs
 with comparable sound quality cost $350-$1000. They may be a sound
 investment for musicians who play often in very loud environments to
 preserve their hearing.
-
-These are all just guidelines; research your options and decide what you
-think will work best for the way you want to DJ.
-
-See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
-diagrams and descriptions of setups with different kinds of hardware.
-
-See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
-resources.
 
 ## Hardware compatibility with Mixxx
 

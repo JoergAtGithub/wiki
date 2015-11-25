@@ -21,4 +21,5 @@ and things
 
 ## Master Sync Button
 
-Should be called "sync\_enabled"
+Should be called "sync\_enabled". Devs should test push-and-hold for
+enabling master sync.

@@ -16,8 +16,14 @@ Name goes from:
 
 ## Effects Control Objects
 
-??? This is hard -- we went from one built-in effect to multiple racks
-and things
+This is very hard, and we may change how we do this. The VCI400 has two
+effects sections, so I did the following:
+
+Individual knobs adjust parameters for the first effect:
+\[EffectRack1\_EffectUnitX\_Effect1\],parameterY. Where X is 1 or 2, and
+Y is 1,2,3.
+
+Wet/dry is: \[EffectRack1\_EffectUnitX\],mix
 
 ## Master Sync Button
 

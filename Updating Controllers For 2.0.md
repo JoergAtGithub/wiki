@@ -23,3 +23,8 @@ and things
 
 Should be called "sync\_enabled". Devs should test push-and-hold for
 enabling master sync.
+
+## Filter Knob
+
+If the controller has a dedicated "filter knob", it should be set to:
+\[QuickEffectRack1\_\[ChannelX\]\],super1

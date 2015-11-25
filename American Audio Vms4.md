@@ -26,8 +26,8 @@ user manual. As of this writing, the leading digit should be **1**.)
 
 <!-- end list -->
 
-  - If you're on Mixxx 1.11 or below, set the switch to "4 OUT" for
-    2-deck mode
+  - If you're using vinyl control or aux devices (or Mixxx 1.11 & below)
+    set the switch to "4 OUT" for 2-deck output and 2-deck input
 
 <!-- end list -->
 
@@ -43,12 +43,18 @@ user manual. As of this writing, the leading digit should be **1**.)
     5.  Set the Deck 2 output to the **VMS4** device and **Channel 5-6**
     6.  Set the Deck 3 output to the **VMS4** device and **Channel 1-2**
     7.  Set the Deck 4 output to the **VMS4** device and **Channel 7-8**
-          - If you're using Mixxx 1.11 or below (or otherwise using "4
-            OUT" mode):
+          - If you're using 4 OUT mode, (for vinyl control/aux input or
+            Mixxx 1.11 & below):
             1.  Set the Deck 1 output to the **VMS4** device and
                 **Channel 1-2**
             2.  Set the Deck 2 output to the **VMS4** device and
                 **Channel 3-4**
+            3.  For vinyl control, set the Vinyl Control 1 input to the
+                **VMS4** device and **Channel 1-2**, connect a turntable
+                to Midilog 1, and set it to Analog.
+            4.  For vinyl control, set the Vinyl Control 2 input to the
+                **VMS4** device and **Channel 3-4**, connect a turntable
+                to Midilog 4, and set it to Analog.
 5.  Plug your headphones into the VMS4's jack on the front. You will use
     the VMS4's CUE buttons and knobs for headphone control.
 6.  Still in the Preferences, expand "Controllers" on the left

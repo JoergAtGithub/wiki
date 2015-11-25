@@ -19,11 +19,12 @@ Name goes from:
 This is very hard, and we may change how we do this. The VCI400 has two
 effects sections, so I did the following:
 
-Individual knobs adjust parameters for the first effect:
-\[EffectRack1\_EffectUnitX\_Effect1\],parameterY. Where X is 1 or 2, and
-Y is 1,2,3.
+Individual knobs adjust parameters for that effect unit:
+\[EffectRack1\_EffectUnitX\_Effect1\],parameterY. Where X is 1 or 2 (the
+two effects sections), and Y is 1,2,3 (the three knobs).
 
-Wet/dry is: \[EffectRack1\_EffectUnitX\],mix
+Wet/dry is: \[EffectRack1\_EffectUnitX\],mix (fourth knob in each
+section)
 
 ## Master Sync Button
 

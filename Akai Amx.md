@@ -2,9 +2,9 @@
 
 [[/media/amx_angle_web_01_700x438.png|]]
 
-[Manufacturer's product page](http://www.akaipro.com/product/amx)
-
-\======= Mapping description ======
+[Manufacturer's product page](http://www.akaipro.com/product/amx) [Forum
+thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7514) =======
+Mapping description ======
 
 [[/media/akai_amx_mappings.png|]]
 

@@ -44,7 +44,7 @@ user manual. As of this writing, the leading digit should be **1**.)
 2.  Start Mixxx
 3.  Open Preferences
 4.  Click Sound Hardware. In the right pane:
-    1.  Set the sample rate to 44100Hz
+    1.  Set the sample rate to **44100Hz**
     2.  Set the Master output to **None**
     3.  Set the Headphone output to **None**
     4.  Set the Deck 1 output to the **VMS4** device and **Channel 3-4**

@@ -252,11 +252,11 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### \[Controls\]
 
-|  | Key/Control              |  | Range  |  | What it does                                                                                                                                                                                             |  | On-screen feedback |  |
-|  | ------------------------ |  | ------ |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
-|  | touch\_shift<sup>7</sup> |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 1.12 and might be replaced by a general modifier solution in 1.13 |  | All Widgets        |  |
+|  | Key/Control              |  | Range  |  | What it does                                                                                                                                                                                           |  | On-screen feedback |  |
+|  | ------------------------ |  | ------ |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ------------------ |  |
+|  | touch\_shift<sup>7</sup> |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in 2.1 |  | All Widgets        |  |
 
-### New 1.12 effects framework
+### New 2.0 effects framework
 
 See the [effects framework](effects%20framework) page.
 
@@ -293,5 +293,5 @@ See the [effects framework](effects%20framework) page.
 <sup>4</sup> introduced in Mixxx v1.10.0  
 <sup>5</sup> changed in Mixxx v1.10.0  
 <sup>6</sup> introduced in Mixxx v1.11.0  
-<sup>7</sup> introduced in Mixxx v1.12.0  
-<sup>8</sup> deprecated in Mixxx v1.12.0
+<sup>7</sup> introduced in Mixxx v2.0.0  
+<sup>8</sup> deprecated in Mixxx v2.0.0

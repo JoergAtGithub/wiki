@@ -1,9 +1,11 @@
 # Updating Controller Configurations for 2.0
 
-## Master Sync Button
+## Sync Buttons
 
-Should be called `sync_enabled`. Devs should test push-and-hold for
-enabling master sync.
+(Groups stay as \[ChannelX\])
+
+Name goes from `beatsync` to `sync_enabled`. Devs should test
+push-and-hold for enabling master sync.
 
 ## Filter Knob
 

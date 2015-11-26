@@ -47,14 +47,14 @@ This is very hard, and we may change how we do this. The VCI400 has two
 effects sections, so I did the following:
 
 Individual knobs adjust parameters for that effect unit:
-\[EffectRack1\_EffectUnitX\_Effect1\],parameterY. Where X is 1 or 2 (the
+`[EffectRack1_EffectUnitX_Effect1],parameterY`. Where X is 1 or 2 (the
 two effects sections), and Y is 1,2,3 (the three knobs).
 
-Wet/dry is: \[EffectRack1\_EffectUnitX\],mix (fourth knob in each
+Wet/dry is: `[EffectRack1_EffectUnitX],mix` (fourth knob in each
 section)
 
 Per-channel buttons to activate a FX unit on that channel:
-\[EffectRack1\_EffectUnitX\],group\_\[ChannelY\]\_enable
+`[EffectRack1_EffectUnitX],group_[ChannelY]_enable`
 
 Changing which effect is loaded in a section:
-\[EffectRack1\_EffectUnitX\],next\_chain
+`[EffectRack1_EffectUnitX],next_chain`

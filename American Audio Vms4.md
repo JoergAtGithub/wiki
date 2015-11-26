@@ -83,6 +83,8 @@ user manual. As of this writing, the leading digit should be **1**.)
     controller will light up when you load a track to a deck.)
 4.  Continue reading below to know how everything is mapped
 
+### Direct deck output implications
+
 This setup uses direct deck outputs because mixing takes place in the
 VMS4 hardware. The down side to this is that you won't be able to use
 Mixxx features that play to Master or Cue buses like the Preview Deck or

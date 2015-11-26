@@ -38,6 +38,9 @@ Name goes from:
 
 (These replace `[Flanger]` group controls.)
 
+Full list is on the [effects framework](effects_framework#controls)
+page.
+
 This is very hard, and we may change how we do this. The VCI400 has two
 effects sections, so I did the following:
 

@@ -53,6 +53,9 @@ please fix it.
 
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
+  - [Updating Controller Configurations
+    For 2.0](Updating%20Controller%20Configurations%20For%202.0): how to
+    adapt old mappings for Mixxx 2.0
   - [Contributing mappings](Contributing%20mappings): describes how to
     get your mapping included in Mixxx
   - [MIDI crash course](MIDI%20crash%20course)

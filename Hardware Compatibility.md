@@ -55,11 +55,11 @@ will need a sound card with 2 inputs per deck (so 4 inputs for a
 traditional 2 deck setup) and a phono preamp for each deck. The phono
 preamps can either be in the turntable, in the sound card, or stand
 alone devices. A few small controllers may be of particular interest to
-vinyl DJs, particularly the Novation Dicer and Akai AMX. Some higher-end
-all-in-one controllers include sound cards with phono preamps. Users who
-also want to produce music may consider saving money and get a
-controller without a sound card and getting a separate, high quality
-sound card suitable for recording.
+vinyl DJs, particularly the [Novation Dicer](Novation%20Dicer) and [Akai
+AMX](Akai%20AMX). Some higher-end all-in-one controllers include sound
+cards with phono preamps. Users who also want to produce music may
+consider saving money and get a controller without a sound card and
+getting a separate, high quality sound card suitable for recording.
 
 These are all just guidelines; research your options and decide what you
 think will work best for the way you want to DJ.

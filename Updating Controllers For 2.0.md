@@ -1,5 +1,26 @@
 # Updating Controller Configurations for 2.0
 
+## Master Sync Button
+
+Should be called "sync\_enabled". Devs should test push-and-hold for
+enabling master sync.
+
+## Filter Knob
+
+If the controller has a dedicated "filter knob", it should be set to:
+\[QuickEffectRack1\_\[ChannelX\]\],super1
+
+## Button LEDs
+
+Update these to ensure GUI sync.
+
+(Groups stay as `[ChannelX]`)
+
+Name goes from:
+
+  - `cue_default` to `cue_indicator`
+  - `play` to `play_indicator`
+
 ## Filter Control Objects
 
 Group goes from "\[ChannelX\]" to
@@ -31,13 +52,3 @@ Per-channel buttons to activate a FX unit on that channel:
 
 Changing which effect is loaded in a section:
 \[EffectRack1\_EffectUnitX\],next\_chain
-
-## Master Sync Button
-
-Should be called "sync\_enabled". Devs should test push-and-hold for
-enabling master sync.
-
-## Filter Knob
-
-If the controller has a dedicated "filter knob", it should be set to:
-\[QuickEffectRack1\_\[ChannelX\]\],super1

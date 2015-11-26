@@ -53,7 +53,7 @@ please fix it.
 
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
-  - [Updating Controllers For 2.0](Updating%20Controllers%20For%202.0):
+  - [Updating controllers for 2.0](Updating%20controllers%20for%202.0):
     how to adapt old mappings for Mixxx 2.0
   - [Contributing mappings](Contributing%20mappings): describes how to
     get your mapping included in Mixxx

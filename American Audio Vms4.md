@@ -169,11 +169,18 @@ Sampler 2.
 
 ## Mixer controls
 
+#### 8 OUT mode
+
+  - **Midilog 1** - This strip controls Deck 3/C
+  - **Midilog 2** - This strip controls Deck 1/A
+  - **Midilog 3** - This strip controls Deck 2/B
+  - **Midilog 4** - This strip controls Deck 4/D
+
+#### 4 OUT mode
+
   - ***Midilog 1** - used only for analog source control, unused by
     Mixxx*
-  - **Midilog 2** - In "4 out" mode, this strip is used to control Deck
-    1
-  - **Midilog 3** - In "4 out" mode, this strip is used to control Deck
-    2
+  - **Midilog 2** - This strip controls Deck 1
+  - **Midilog 3** - This strip controls Deck 2
   - ***Midilog 4** - used only for analog source control, unused by
     Mixxx*

@@ -6,6 +6,8 @@ Manufacturer's Web site links:
 
   - [Original VMS4](http://www.adj.com/vms4)
   - [VMS4.1](http://www.adj.com/vms4-1)
+  - [VMS4.1 (International
+    site)](http://vms4.adjfocus.com/vms-41-digital-work-station.html)
   - [VMS4.1 Traktor edition](http://www.adj.com/vms4-1-traktor)
 
 The original VMS4 has problems with sound quality. The microphone input

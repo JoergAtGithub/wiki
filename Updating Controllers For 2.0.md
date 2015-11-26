@@ -36,6 +36,8 @@ Name goes from:
 
 ## Effects Control Objects
 
+(These replace `[Flanger]` group controls.)
+
 This is very hard, and we may change how we do this. The VCI400 has two
 effects sections, so I did the following:
 

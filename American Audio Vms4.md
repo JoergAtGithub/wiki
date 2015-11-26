@@ -184,7 +184,18 @@ Sampler 2.
 
 ## Mixer controls
 
+### 2.0
+
   - **Midilog 1** - This strip controls Deck 3/C
   - **Midilog 2** - This strip controls Deck 1/A
   - **Midilog 3** - This strip controls Deck 2/B
   - **Midilog 4** - This strip controls Deck 4/D
+
+### 1.11 and below
+
+  - ***Midilog 1** - used only for analog source control, unused by
+    Mixxx*
+  - **Midilog 2** - This strip controls Deck 1
+  - **Midilog 3** - This strip controls Deck 2
+  - ***Midilog 4** - used only for analog source control, unused by
+    Mixxx*

@@ -258,7 +258,7 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### New 2.0 effects framework
 
-See the [effects framework](effects%20framework) page.
+See the [effects framework](effects_framework#controls) page.
 
 ### Deprecated controls
 

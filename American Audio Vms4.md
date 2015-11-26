@@ -2,11 +2,18 @@
 
 [[/media/hardware/american_audio/vms4_angle.jpg|vms4\_angle.jpg]]
 
-  - [Manufacturer's website](http://www.adj.com/vms4-1)
+Manufacturer's Web site links:
 
-The VMS4 has issues with the sound card. The impedence of the microphone
-input is off and the output volume is very low. The VMS4.1 is the same
-controller with a better sound card that fixes these issues.
+  - [Original VMS4](http://www.adj.com/vms4)
+  - [VMS4.1](http://www.adj.com/vms4-1)
+  - [VMS4.1 Traktor edition](http://www.adj.com/vms4-1-traktor)
+
+The original VMS4 has problems with sound quality. The microphone input
+impedance is off and the output volume is low. The VMS4.1 is the same
+controller with a better mixing engine that fixes these issues. The
+Traktor edition has different labels on some buttons and sends some
+different MIDI messages, but it's otherwise the same hardware as the
+VMS4.1. (Mapping differences are outlined below.)
 
 ## Setup
 

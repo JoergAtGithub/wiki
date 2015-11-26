@@ -100,6 +100,7 @@ please fix it.
 
   - [Bugfix Workflow](Bugfix%20Workflow) 
   - [Using Git](Using%20Git)
+  - [Developer Guide](Developer%20Guide)
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
   - [Bug Tracker](launchpad_bugs)

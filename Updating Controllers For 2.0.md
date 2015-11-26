@@ -23,17 +23,16 @@ Name goes from:
 
 ## Filter Control Objects
 
-Group goes from "\[ChannelX\]" to
-"\[EqualizerRack1\_\[ChannelX\]\_Effect1\]"
+Group goes from `[ChannelX]` to `[EqualizerRack1_[ChannelX]_Effect1]`
 
 Name goes from:
 
-  - filterLow to parameter1
-  - filterMid to parameter2
-  - filterHigh to parameter3
-  - filterLowKill to button\_parameter1
-  - filterMidKill to button\_parameter2
-  - filterHighKill to button\_parameter3
+  - `filterLow` to `parameter1`
+  - `filterMid` to `parameter2`
+  - `filterHigh` to `parameter3`
+  - `filterLowKill` to `button_parameter1`
+  - `filterMidKill` to `button_parameter2`
+  - `filterHighKill` to `button_parameter3`
 
 ## Effects Control Objects
 

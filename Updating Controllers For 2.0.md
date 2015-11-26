@@ -2,7 +2,7 @@
 
 ## Sync Buttons
 
-(Groups stay as \[ChannelX\])
+(Groups stay as `[ChannelX]`)
 
 Name goes from `beatsync` to `sync_enabled`. Devs should test
 push-and-hold for enabling master sync.

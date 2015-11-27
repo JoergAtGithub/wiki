@@ -5,8 +5,9 @@
   - [Manufacturer's product page](http://www.akaipro.com/product/amx)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7514)
 
-This controller has the cheapest 4 in/4 out sound card with 2 phono
-preamps, making it a good option for vinyl control users.
+This controller has all the basics for mixing and the cheapest 4 in/4
+out sound card with 2 phono preamps, making it a good option for vinyl
+control users. However, the maximum output level is low.
 
 \======= Mapping description ======
 

@@ -11,7 +11,7 @@ The Novation Dicer is a small controller designed to be placed on the
 corner of turntables for use with timecode vinyl. They are sold in
 pairs.
 
-### Mapping description
+## Mapping description
 
 **Author:** Shaun (DJ Pandemonium)
 

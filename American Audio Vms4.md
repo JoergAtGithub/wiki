@@ -167,7 +167,19 @@ side controls Deck 1 and the right side controls Deck 2.*
 
 #### 2.0
 
-*In progress*
+The left side controls effect unit 1 (unit 3 when shifted) and the right
+side controls effect unit 2 (and 4 when shifted.)
+
+  - **Select knob**
+  - Rotate to choose the effect chain preset
+  - Press to toggle whether the effect unit is on or not
+  - **Control knob**
+  - Adjusts the wet/dry ratio
+  - When Parameter is on, this becomes the Wonder Knob, adjusting all
+    effect parameters at once
+  - **On/Off** - Toggles the effect for the deck matching the effect
+    unit number
+  - **Parameter** - Toggles what the above Control knob adjusts
 
 ### Sample section
 

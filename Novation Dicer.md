@@ -1,26 +1,23 @@
-\====Novation Dicer: Cue-point, looping and FX control for Digital
-DJs==== [[/media/hardware/novation_dicer/novation_dicer_product_shot.jpg|]]
-Images (c) [Novation](http://www.novationmusic.com/)
+# Novation Dicer
 
-Novation Dicer is a palm-sized, USB bus-powered, fully class compliant
-MIDI device - no need to install any drivers. Dicers comes as pair.
+[[/media/hardware/novation_dicer/novation_dicer_product_shot.jpg|]] Images (c)
+[Novation](http://www.novationmusic.com/)
 
-  - Product Page:
-    [www.novationmusic.com](http://www.novationmusic.com/global/products/digital_dj/dicer/)
-  - Programmers Manual:
-    [www.novationmusic.com](http://www.novationmusic.com/global/support/downloads/dicer/)
-  - Novation Dicer for Mixxx mapping thread in the Mixxx forums:
-    <http://mixxx.org/forums/viewtopic.php?f=7&t=3583>.
+  - [Manufacturer's product
+    page](http://www.novationmusic.com/global/products/digital_dj/dicer/)
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=3583)
 
-#### Novation Dicer mapping for Mixxx 1.10+
+The Novation Dicer is a small controller designed to be placed on the
+corner of turntables for use with timecode vinyl. They are sold in
+pairs.
+
+### Mapping description
 
 **Author:** Shaun (DJ Pandemonium)
 
-  - The mapping is included in **Mixxx 1.11** and can be selected from
-    the controller preset menu in Mixxx\` Preferences \> Controllers.
-  - The mapping has all buttons mapped and mimics the overall layout of
-    the [DJ Tech Tools Dicer mapping for
-    Traktor](http://www.djtechtools.com/2010/11/11/novation-dicer-mapping-for-traktor-scratch/).
+The mapping has all buttons mapped and mimics the overall layout of the
+[DJ Tech Tools Dicer mapping for
+Traktor](http://www.djtechtools.com/2010/11/11/novation-dicer-mapping-for-traktor-scratch/).
 
 [[/media/hardware/novation_dicer/dicer_state1.png|]][[/media/hardware/novation_dicer/dicer_state2.png|]][[/media/hardware/novation_dicer/dicer_state3.png|]]
 

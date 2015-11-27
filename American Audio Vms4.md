@@ -125,27 +125,31 @@ side controls Deck 1 and the right side controls Deck 2.*
     range. (See top of page to customize.)
   - **Hot cue buttons** - Press to set or recall a hot cue. The buttons
     light up red when one is set.
-  - 1.9.x: You can only access hot cues 1-4. Hold shift and press to
+  - 1.9: You can only access hot cues 1-4. Hold shift and press to
     delete the cue.
-  - 1.10.x: Hold shift and press to access hot cues 5-8. (The buttons
+  - 1.10+: Hold Shift and press to access hot cues 5-8. (The buttons
     light up blue for these.) Hold Vinyl and press to delete the cue.
     (Note: there is a bug in some firmware versions that causes hot cues
-    5 and 6 to be deleted simultaneously. We are in communication with
-    AA about the issue.)
+    5 and 6 to be deleted simultaneously.)
+  - **Pitch Bend +/-**
+  - Momentarily speeds up or slows down the deck while the button is
+    held down.
+  - 2.0+: Hold Shift and press to adjust the key (pitch) of the song
+    (independent of the tempo.)
   - **Loop In** - Set the in point of a loop
   - **Loop Out** - Set the out point of a loop
   - **Reloop** - Toggle a previously-set loop. Lights red when a loop is
     active.
   - **Loop/Smart**
-  - 1.9.x: Toggle track repeat mode
-  - 1.10.x: Start a 4-beat loop. Hold Shift and press to toggle
+  - 1.9: Toggle track repeat mode
+  - 1.10+: Start a 4-beat loop. Hold Shift and press to toggle
     quantization (locking to the nearest beat.)
   - **Vinyl/Keylock** - *(Does nothing on its own when un-shifted at the
     moment.)* When shifted, toggles key lock.
   - **\<\< Search/ /2** - Fast-rewind
-  - 1.10.x: Hold Shift and press to halve the current loop length
+  - 1.10+: Hold Shift and press to halve the current loop length
   - **Search \>\>/ \*2** - Fast-forward
-  - 1.10.x: Hold Shift and press to double the current loop length
+  - 1.10+: Hold Shift and press to double the current loop length
   - **Wheel**
   - Move the wheel while touching the top to scratch the current track
     like a vinyl record

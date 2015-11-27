@@ -167,8 +167,8 @@ side controls Deck 1 and the right side controls Deck 2.*
 
 #### 2.0
 
-The left side controls effect unit 1 (unit 3 when shifted) and the right
-side controls effect unit 2 (and 4 when shifted.)
+The left side controls effect unit 1 and the right side controls effect
+unit 2.
 
   - **Select knob**
   - Rotate to choose the effect chain preset

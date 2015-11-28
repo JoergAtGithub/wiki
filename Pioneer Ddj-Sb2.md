@@ -28,6 +28,39 @@ try using a different Sound API (see the Preferences menu).
 
 No information. If anyone knows more, edit this page.
 
+## User Options
+
+In the file Pioneer-DDJ-SB2-scripts.js are some options.
+
+    ///////////////////////////////////////////////////////////////
+    //                       USER OPTIONS                        //
+    ///////////////////////////////////////////////////////////////
+    
+    // If true the sync button blinks with the beat, if false led is lit when sync is enabled.
+    PioneerDDJSB2.blinkingSync = true;
+    
+    // If true, the vinyl button activates slip. Vinyl mode is then activated by using shift.
+    // Allows toggling slip faster, but is counterintuitive.
+    PioneerDDJSB2.invertVinylSlipButton = false;
+    
+    // Sets the jogwheels sensivity. 1 is default, 2 is twice as sensitive, 0.5 is half as sensitive.
+    PioneerDDJSB2.jogwheelSensivity = 1.0;
+    
+    // Sets how much more sensitive the jogwheels get when holding shift.
+    // Set to 1 to disable jogwheel sensitivity increase when holding shift.
+    PioneerDDJSB2.jogwheelShiftMultiplier = 20;
+    
+    // If true Level-Meter shows VU-Master left & right. If false shows level of channel: 1/3  2/4 (depending active deck)
+    PioneerDDJSB2.showVumeterMaster = false;
+    
+    // Cut's Level-Meter low and expand upper. Examples:
+    // 0.25 -> only signals greater 25%, expanded to full range
+    // 0.5 -> only signals greater 50%, expanded to full range
+    PioneerDDJSB2.cutVumeter = 0.5;
+    
+    // If true VU-Level twinkle if AutoDJ is ON.
+    PioneerDDJSB2.twinkleVumeterAutodjOn = true;
+
 ## Usage
 
 ### Library browsing

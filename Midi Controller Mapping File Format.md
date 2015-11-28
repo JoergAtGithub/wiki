@@ -116,29 +116,31 @@ XML, write:
                 </options>
 ```
 
-  - Normal: No modifications
-  - Script-Binding: Bind to a MIDI script function given in the "key"
-    tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
-  - SelectKnob: For relative controls centered on 64 (0x40)
-  - Diff: Adds the current value of a relative control to the previous
-    value
-  - Invert: Subtracts the value from 127, giving an inverted control
+  - **Normal**: No modifications
+  - **Script-Binding**: Bind to a MIDI script function given in the
+    "key" tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
+  - **SelectKnob**: For relative controls centered on 64 (0x40)
+  - **Diff**: Adds the current value of a relative control to the
+    previous value
+  - **Invert**: Subtracts the value from 127, giving an inverted control
     (-127..0)
-  - Rot64inv: ?
-  - Rot64fast: ?
-  - Rot64: ?
-  - Button: a button has a *Down* (non-zero) and an *Up* (zero) state,
-    these occur together when pressed/released, this switch only
+  - **Rot64inv**: ?
+  - **Rot64fast**: ?
+  - **Rot64**: ?
+  - **Button**: a button has a *Down* (non-zero) and an *Up* (zero)
+    state, these occur together when pressed/released, this switch only
     triggers on the *Down*, *Up* is ignored. (Herc)
-  - Switch: a switch has a *On* (non-zero) and an *Off* (zero) state,
-    these occur separately. (Herc)
-  - Spread64: Exponential spread either side of 64, aka "relative"
+  - **Switch**: a switch has a *On* (non-zero) and an *Off* (zero)
+    state, these occur separately. (Herc)
+  - **Spread64**: Exponential spread either side of 64, aka "relative"
     controller
-  - fourteen-bit-lsb/fourteen-bit-msb: 14-bit (high resolution) MIDI
-    least/most significant byte. Some controls, most often pitch faders,
-    send two MIDI messages so their values can be combined to form
-    127<sup>2</sup> (16,384) possible values rather than 127 for more
-    precise control. *New in 1.12*
+  - **Soft-takeover**: prevents the physical control from affecting
+    Mixxx until it's close to the on-screen control's position.
+  - **fourteen-bit-lsb**/**fourteen-bit-msb**: 14-bit (high resolution)
+    MIDI least/most significant byte. Some controls, most often pitch
+    faders, send two MIDI messages so their values can be combined to
+    form 127<sup>2</sup> (16,384) possible values rather than 127 for
+    more precise control. *New in 1.12*
 
 ## Outputs
 

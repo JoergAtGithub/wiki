@@ -210,6 +210,13 @@ and right sides of the controller respectively.
 You can choose between effects by entering "kill mode" and using pads 1
 and 2 while holding shift.
 
+### Auto DJ
+
+Start/stop Auto DJ: Button shift & DECK 4. If in JS-File enabled, the
+CH-Level LED's are twinkle.
+
+Skip Track: Button shift & DECK 3.
+
 ### Channel fader start
 
 By moving a channel fader up from the very bottom while holding shift

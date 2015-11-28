@@ -163,7 +163,7 @@ side controls Deck 1 and the right side controls Deck 2.*
   - **Select knob** - Adjusts the LFO period for the Flanger effect
   - **Control knob** - Adjusts the depth of the Flanger effect
   - **On/Off** - Toggles the Flanger effect on this deck
-  - ***Parameter** - Currently does nothing*
+  - ***Parameter** - Does nothing*
 
 #### 2.0
 

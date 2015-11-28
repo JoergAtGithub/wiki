@@ -47,9 +47,7 @@ controller.
 
 ### Switching between decks
 
-Pressing shift + "key lock / tempo range" allows the left deck to switch
-between decks 1 and 3 and the right deck to swicth between decks 2 and
-4.
+Press the deck button. It lights when deck 3-4 is active.
 
 ### Volume, equalizers & filters
 

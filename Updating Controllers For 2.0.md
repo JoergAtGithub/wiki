@@ -14,7 +14,8 @@ If the controller has a dedicated "filter knob", it should be set to:
 
 ## Button LEDs
 
-Update these to ensure GUI sync.
+Update these to ensure GUI sync with the different Cue modes in the
+preferences.
 
 (Groups stay as `[ChannelX]`)
 

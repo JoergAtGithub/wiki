@@ -61,8 +61,7 @@ controller's soundcard directly.
 The filter fade button allows to use the crossfader in an innovative way
 that fades accross songs through filtering instead of fading.
 
-There is no trim/gain knob, but the same effect can be achieved by using
-the filter knobs while holding shift.
+The TRIM knob controls the gain.
 
 ### Jogwheels, tempo & vinyl mode
 

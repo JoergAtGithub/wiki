@@ -43,18 +43,29 @@ Name goes from:
 Full list is on the [effects framework](effects_framework#controls)
 page.
 
-This is very hard, and we may change how we do this. The VCI400 has two
-effects sections, so I did the following:
+The VCI400 has two effects sections, so I did the following:
+
+### Parameter adjustment
 
 Individual knobs adjust parameters for that effect unit:
 `[EffectRack1_EffectUnitX_Effect1],parameterY`. Where X is 1 or 2 (the
 two effects sections), and Y is 1,2,3 (the three knobs).
 
+If your controller has only one "parameter" knob, you can map it to
+`[EffectRack1_EffectUnitX_Effect1],super1` which will modify a number of
+effect parameters at once. (Sean did this for the ADJ VMS4.)
+
+### Wet/dry
+
 Wet/dry is: `[EffectRack1_EffectUnitX],mix` (fourth knob in each
 section)
 
+### Activation
+
 Per-channel buttons to activate a FX unit on that channel:
 `[EffectRack1_EffectUnitX],group_[ChannelY]_enable`
+
+### Change effect
 
 Changing which effect is loaded in a section:
 `[EffectRack1_EffectUnitX],next_chain`

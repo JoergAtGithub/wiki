@@ -40,15 +40,13 @@ The controller supports Mac OS X 10.6 and up.
 The controls for library browsing can be found in the center top of the
 controller.
 
-| Control                     | Function                                                           |
-| --------------------------- | ------------------------------------------------------------------ |
-| Back/panel button           | Maximizes library                                                  |
-| Rotary knob                 | Track selection                                                    |
-| Load buttons                | Loads currently highlighted track to the corresponding deck        |
-| Pushing rotary knob         | Loads currently highlighted track to the preview deck and plays it |
-| Shift + back/panel button   | Pauses preview deck                                                |
-| Shift + rotary knob         | Library section selection                                          |
-| Shift + pushing rotary knob | toggle expanding library section                                   |
+| Control                     | Function                                                                                                                                              |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rotary knob                 | Track selection                                                                                                                                       |
+| Load buttons                | Loads currently highlighted track to the corresponding deck                                                                                           |
+| Pushing rotary knob         | Push: Loads currently highlighted track to the preview deck and plays it. -- Release: jump to 30% position -- Push again without rotary: Stop preview |
+| Shift + rotary knob         | Library section selection                                                                                                                             |
+| Shift + pushing rotary knob | toggle expanding library section                                                                                                                      |
 
 ### Switching between decks
 

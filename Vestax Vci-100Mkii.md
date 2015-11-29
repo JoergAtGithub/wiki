@@ -26,9 +26,9 @@ pressed.*
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
 15. Cross fader
-16. Headphone volume (values from 0 to 1)
+16. Headphone volume
 17. Headphone mix
-18. Master volume (values from 0 to 1)
+18. Master volume
 19. Scratch
 20. Jog (locked in slip mode)
 21. Play \[Adjust beatgrid to the current playposition\]

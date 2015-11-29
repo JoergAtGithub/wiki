@@ -211,7 +211,6 @@ move your controller to this table.
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100              | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.6                           |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125              | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.10.1                        |
 | [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | $250              | 4 deck all-in-one\[10\]                                    | yes                             | MIDI            | 1.12                          |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                                          | yes                             | MIDI            | ?                             |
 | [Reloop Beatpad](Reloop%20Beatpad)                                                                 | $449              | 2 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
 | [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.10                          |
@@ -288,6 +287,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 |                                                      |                    |                   |                       |                 |
 | ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------- |
 | Device                                               | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                 | $250               | 4 deck all-in-one | yes                   | MIDI            |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI (and HID?) |
 | [Akai AMX](Akai%20AMX)                               | $250               | 1 deck control    | yes                   | MIDI            |
 

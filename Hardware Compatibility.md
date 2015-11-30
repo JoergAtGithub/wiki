@@ -177,7 +177,7 @@ Click the name of the controller for more information.
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)                         | discontinued      | 2 deck mixer                                  | no                    | MIDI            | 1.6                           |
 | [Stanton SCS.3d](Stanton%20SCS.3d)                                         | discontinued      | 1 deck control \[4\]                          | no                    | MIDI            | 1.7                           |
 | [Stanton SCS.3m](Stanton%20SCS.3m)                                         | discontinued      | 2 deck mixer \[5\]                            | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.1m](Stanton%20SCS.1m)                                         | discontinued      | 4 deck mixer                                  | yes                   | HSS1394 (MIDI)  | 1.9                           |
+| [Stanton SCS.1m](Stanton%20SCS.1m)                                         | discontinued      | 4 deck mixer                                  | yes                   | HSS1394 (MIDI)  | 1.7                           |
 | [Stanton SCS.1d](Stanton%20SCS.1d)                                         | discontinued      | 1 turntable \[6\]                             | no                    | HSS1394 (MIDI)  | 1.9.1                         |
 | [Vestax VCI-400](Vestax%20VCI-400)                                         | discontinued      | 4 deck all-in-one                             | yes                   | MIDI            | 1.10.1                        |
 

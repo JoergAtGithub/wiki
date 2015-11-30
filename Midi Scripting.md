@@ -436,6 +436,16 @@ Note that this only works for controls manipulated through
 engine.setValue() in a script. It does not work for controls mapped in
 an XML file.
 
+*New for 2.0*: If you change the function of an absolute control (one
+that has hard stops at max and min positions,) that is controlling
+MixxxControls with soft-takeover enabled, you will need to reset the
+soft-takeover status each time you change what the physical control is
+manipulating. Do this with the following function:
+
+``` javascript
+engine.softTakeoverIgnoreNext("[Channel1]","rate");
+```
+
 ### Scratching
 
 We have an easy way to scratch with any MIDI control that sends relative

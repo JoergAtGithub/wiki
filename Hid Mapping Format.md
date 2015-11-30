@@ -1,4 +1,4 @@
-# HID Controller Mapping File Format
+# Proposed HID Controller Mapping File Format
 
 ***This specification is for a future feature (not currently
 implemented) and is in discussion. Details may change before the

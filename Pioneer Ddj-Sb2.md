@@ -62,6 +62,10 @@ In the file Pioneer-DDJ-SB2-scripts.js are some options.
     
     // If true VU-Level twinkle if AutoDJ is ON.
     PioneerDDJSB2.twinkleVumeterAutodjOn = true;
+    
+    // If true, by release browser knob jump forward to "position". 
+    PioneerDDJSB2.jumpPreviewEnabled = true;
+    PioneerDDJSB2.jumpPreviewPosition = 0.5;
 
 ## Usage
 
@@ -70,15 +74,17 @@ In the file Pioneer-DDJ-SB2-scripts.js are some options.
 The controls for library browsing can be found in the center top of the
 controller.
 
-| Control                     | Function                                                           |
-| --------------------------- | ------------------------------------------------------------------ |
-| Back/panel button           | Maximizes library                                                  |
-| Rotary knob                 | Track selection                                                    |
-| Load buttons                | Loads currently highlighted track to the corresponding deck        |
-| Pushing rotary knob         | Loads currently highlighted track to the preview deck and plays it |
-| Shift + back/panel button   | Pauses preview deck                                                |
-| Shift + rotary knob         | Library section selection                                          |
-| Shift + pushing rotary knob | toggle expanding library section                                   |
+| Control                                  | Function                                                           |
+| ---------------------------------------- | ------------------------------------------------------------------ |
+| Rotary knob                              | Track selection                                                    |
+| Load buttons                             | Loads currently highlighted track to the corresponding deck        |
+| Pushing rotary knob                      | Loads currently highlighted track to the preview deck and plays it |
+| Pushing rotary knob again without rotate | Stop play preview deck                                             |
+| Shift + rotary knob                      | Library section selection                                          |
+| Shift + pushing rotary knob              | toggle expanding library section                                   |
+
+Pushing rotary knob "release" jumps forward. Can be configured in user
+options.
 
 ### Switching between decks
 

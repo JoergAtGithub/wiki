@@ -2,6 +2,8 @@
 
 This Page ist status draft\! Based on DDJ-SB manual.
 
+[[/media/hardware/pioneer-ddj-sb2_1.jpg|]]
+
 ``` 
  *[[http://www.pioneerdj.com/en/product/controller/ddj-sb2/black/overview/|Manufacturer's product page]]
  *[[http://mixxx.org/forums/viewtopic.php?f=7&t=7509&p=26782#p26782|Forum thread]]

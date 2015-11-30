@@ -13,9 +13,8 @@ Manufacturer's Web site links:
 The original VMS4 has problems with sound quality. The microphone input
 impedance is off and the output volume is low. The VMS4.1 is the same
 controller with a better mixing engine that fixes these issues. The
-Traktor edition has different labels on some buttons and sends some
-different MIDI messages, but it's otherwise the same hardware as the
-VMS4.1. (Mapping differences are outlined below.)
+Traktor edition has different labels on some buttons & knobs, but it's
+otherwise the same hardware as the VMS4.1.
 
 ## Setup
 

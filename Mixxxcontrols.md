@@ -192,6 +192,11 @@ Below, *N*=1 up to the number of active decks/samplers<sup>5</sup>.
 All Sampler controls are the same as for *Channel* above. Just replace
 `[ChannelN]` with `[SamplerN]`.
 
+|  | Key/Control                             |  | Range  |  | What it does                                                                                               |  | On-screen feedback                                            |  |
+|  | --------------------------------------- |  | ------ |  | ---------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------- |  |
+|  | \[Sampler\],SaveSamplerBank<sup>7</sup> |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
+|  | \[Sampler\],LoadSamplerBank<sup>7</sup> |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
+
 ### \[PreviewDeck\]
 
 PreviewDeck controls are the same as for *Channel above*. Just replace

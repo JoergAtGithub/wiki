@@ -247,6 +247,6 @@ incoming and outgoing MIDI streams, and can filter them by message type
 and channel.
 
 Download the free
-[MIDISimulator](http://www.macupdate.com/info.php/id/35645/midisimulator/)
+[MIDISimulator](http://www.macupdate.com/app/mac/35645/midisimulator)
 utility and run it. MidiSimulator is a tool to test midi devices like
 pianos or dj controllers. It allows you to receive and send midi events.

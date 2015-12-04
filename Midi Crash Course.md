@@ -137,8 +137,8 @@ can do with Mixxx. Even if the manufacturer does provide MIDI
 documentation, it may be easier to sniff your controller with Mixxx than
 keep looking up numbers in the controller's documentation.
 
-1.  Start Mixxx from a command prompt using the `--midiDebug` option
-    like so: 
+1.  Start Mixxx from a command prompt using the `--controllerDebug`
+    option like so: 
 
 <!-- end list -->
 

@@ -87,26 +87,42 @@ this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 
 Every controller works differently, but these are some typical patterns.
 
-For buttons, DJ controllers send a message with an op-code of `0x9` and
-a value of `0xf7` when pressed down and a value of `0x00` when released.
-Sometimes the signal sent when the button is released uses an opcode of
-`0x8` instead of `0x9`. If they have an LED behind the button, that is
-typically controlled by sending a message to the controller with the
-same first two bytes (status and note number) that the controller sends
-when the button is pressed. For LEDs that can only be turned on or off,
-typically sending a value of `0x00` turns the LED off and `0x01` or
-`0xf7` turns the LED on. For multicolor LEDs, the color is typically
-controlled by sending different values. Which values correspond to which
-colors should be documented in the MIDI specification for your
-controller. If they are not, you will have to look how mapping for other
-DJ software lights the LEDs or guess and check which values to send.
+### Buttons
 
-Knobs and sliders usually send messages with an op-code of `0xB` and a
-value corresponding to the position of the knob or slider.
+  - When pressed: Op-code `0x9`, value of `0xf7`
+  - When released: Op-code `0x9`, value of `0x00`
+  - or Op-code `0x8`, value of `0x00`
 
-Endless encoders that you can turn continuously typically send messages
-with an op-code of `0xB` and the value only indicates whether the
-encoder is being turned left or right.
+### LEDs
+
+If there's an LED behind the button, that is typically controlled by
+sending a message to the controller with the same first two bytes
+(status and note number) that the controller sends when the button is
+pressed. As for the value byte, for LEDs that can only be turned on or
+off, typically `0x00` turns it off and `0x01` or `0x7F` turns it on. For
+multi-color LEDs, the color is typically controlled by sending different
+values. Which ones correspond to which colors should be in the MIDI
+specification document for your controller. If they are not, you will
+have to look at mappings for other DJ software, or just try a few
+different values.
+
+### Knobs & sliders
+
+These usually send messages with an op-code of `0xB` and a value
+corresponding to the absolute position of the knob or slider (between
+`0x00` and `0x7F`
+
+Endless knobs/encoders (that you can turn continuously) typically send
+messages with an op-code of `0xB` and the value only indicates whether
+the encoder is being turned left or right (`0x01` & `0x7F` or `0x41` &
+`0x3F`)
+
+### Jog wheels, touch strips, platters
+
+These usually operate exactly like endless knobs/encoders above, and
+they usually also send messages just like buttons above when they're
+touched or released which is intended to mark when scratching begins and
+ends respectively.
 
 ## Sniffing your controller with Mixxx
 

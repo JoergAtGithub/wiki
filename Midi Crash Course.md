@@ -142,9 +142,9 @@ keep looking up numbers in the controller's documentation.
 
 <!-- end list -->
 
-  - Linux: `user@machine:~$ mixxx --midiDebug`
-  - Windows: `C:\Program Files\Mixxx>mixxx --midiDebug`
-  - Mac OSX: `$ open -a mixxx --args --midiDebug`
+  - Linux: `user@machine:~$ mixxx --controllerDebug`
+  - Windows: `C:\Program Files\Mixxx>mixxx --controllerDebug`
+  - Mac OSX: `$ open -a mixxx --args --controllerDebug`
 
 <!-- end list -->
 
@@ -234,8 +234,8 @@ series of hexidecimal numbers:
 You can download [tail.exe](http://tailforwin32.sourceforge.net/) to
 watch [mixxx.log](troubleshooting#where%20is%20the%20mixxxlog%20file) as
 new messages are added or [build Mixxx](Compiling%20on%20Windows) with
-`scons msvcdebug=1` and run it with the `--midiDebug` option. This will
-cause it to pop up a console window when you run it and the MIDI
+`scons msvcdebug=1` and run it with the `--controllerDebug` option. This
+will cause it to pop up a console window when you run it and the MIDI
 messages received by your controller will be displayed there.
 
 ### Mac OS X

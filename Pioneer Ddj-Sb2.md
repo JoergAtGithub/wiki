@@ -233,9 +233,9 @@ blinking) you can make the pads behave as kill switches.
 
 ### Effects
 
-Over the jogwheels there are sections allowing to control effects.
+Over the jogwheels there are sections allowing to control effects 1 & 2.
 
-Turning the knobs will control the wet/dryness of an effect.
+Turning the knobs will control the mix of an effect.
 
 Turning the knobs while holding one of the three FX buttons will control
 the first, second or third parameter of an effect, respectively.
@@ -243,10 +243,16 @@ the first, second or third parameter of an effect, respectively.
 If holding shift when using the knobs the "super" parameter can be
 controlled.
 
-Pressing the central FX button (number 2) while holding shift will
-toggle the effect for the headphones, while the left and right buttons
-(number 1 and 3) will toggle the effect for the active deck in the left
-and right sides of the controller respectively.
+Pressing FX buttons toogles output On/Off.
+
+| Button  | Output    |
+| ------- | --------- |
+| 1       | Deck 1    |
+| shift 1 | Deck 3    |
+| 2       | Headphone |
+| shift 2 | Master    |
+| 3       | Deck 2    |
+| shift 3 | Deck 4    |
 
 You can choose between effects by entering "kill mode" and using pads 1
 and 2 while holding shift.

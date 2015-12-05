@@ -401,7 +401,7 @@ Available DJ splitter cables:
     Cable](https://griffintechnology.com/us/products/audio/dj-accessories/dj-cable):
     $20
 
-### What to look for in a sound card
+### Sound card considerations
 
 As explained [at the top of the
 page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to

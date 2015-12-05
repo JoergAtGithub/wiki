@@ -86,6 +86,11 @@ controller.
 Pushing rotary knob "release" jumps forward. Can be configured in user
 options.
 
+Addition function not belongs to library:
+
+  - Shift & load left -\> toggle effekts view in/out
+  - Shift & load right -\> toggle sampler view in/out
+
 ### Switching between decks
 
 Press the deck button. It lights when deck 3-4 is active.

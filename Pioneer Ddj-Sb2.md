@@ -253,8 +253,8 @@ and 2 while holding shift.
 
 ### Auto DJ
 
-Start/stop Auto DJ: Button shift & DECK 4. If in JS-File enabled, the
-CH-Level LED's are twinkle.
+Start/stop Auto DJ: Button shift & DECK 4. If at user optins enabled,
+the CH-Level LED's are twinkle.
 
 Skip Track: Button shift & DECK 3.
 

@@ -23,7 +23,7 @@ pressed.*
 10. Gain
 11. Filter (high pass only)\[1\]
 12. Pitch (semitones only)
-13. Rate (with takeover in sync mode) \[Rate by quantized BPM\]
+13. Rate \[Rate by quantized BPM\]
 14. Channel fader
 15. Cross fader
 16. Headphone volume

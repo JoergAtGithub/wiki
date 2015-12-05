@@ -1,6 +1,6 @@
 # Pioneer DDJ-SB2
 
-This page based on DDJ-SB manual (thanks).
+This page based on DDJ-SB manual. Thanks.
 
 [[/media/hardware/pioneer-ddj-sb2_1.jpg|]]
 

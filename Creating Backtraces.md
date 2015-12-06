@@ -10,13 +10,23 @@ crashed.
     the official release version) and save it to the root of your C:
     drive. (`C:\`)
 2.  Download a debug build of Mixxx (TODO)
-3.  Open a command prompt by clicking Start-\>Run... then type `cmd` in
-    the box and press Enter.
-4.  Change to the the directory where Mixxx is installed: type the
+3.  Open a Windows prompt: 
+
+<!-- end list -->
+
+  - Win 7: Open a command prompt by clicking Start-\>Run... then type
+    `cmd` in the box and press Enter.
+  - Win 10: Type `cmd` to the task bar search box and press Enter
+
+<!-- end list -->
+
+1.  Change to the the directory where Mixxx is installed: type the
     following then press Enter: `cd %PROGRAMFILES%\Mixxx`
-5.  Run GDB: type the following command and press Enter: `C:\gdb
+2.  Run GDB: type the following command and press Enter: `C:\gdb
     mixxx.exe`
-6.  Continue with step 2. in the section below 
+3.  Load optional debug symbols \*.pdb installed on your system.
+    `add-symbol-file libshout.pdb`
+4.  Continue with step 2. in the section below 
 
 ## Linux & Mac OS X with Xcode 4.x
 

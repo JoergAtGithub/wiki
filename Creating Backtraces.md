@@ -9,7 +9,7 @@ crashed.
     Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) (get
     the official release version) and save it to the root of your C:
     drive. (`C:\`)
-2.  Download a debug build of Mixxx (TODO)
+2.  Download debug symbols of Mixxx (TODO: not yet provided)
 3.  Open a Windows prompt: 
 
 <!-- end list -->

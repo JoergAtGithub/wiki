@@ -1,5 +1,7 @@
 # Updating Controller Configurations for 2.0
 
+Also see [Getting Ready for Mixxx 1.12](getting_ready_for_112)
+
 ## Sync Buttons
 
 (Groups stay as `[ChannelX]`)

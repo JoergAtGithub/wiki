@@ -443,7 +443,7 @@ soft-takeover status each time you change what the physical control is
 manipulating. Do this with the following function:
 
 ``` javascript
-engine.softTakeoverIgnoreNext("[Channel1]","rate");
+engine.softTakeoverIgnoreNextValue("[Channel1]","rate");
 ```
 
 ### Scratching

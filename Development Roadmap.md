@@ -28,6 +28,39 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
+### 2.1
+
+  - [2.1.0 Milestone on
+    Launchpad](https://launchpad.net/mixxx/+milestone/2.1.0)
+  - Beta Date
+  - Goal: February 1, 2016
+  - Release Date
+  - Goal: March 1, 2016
+
+#### Feature Targets
+
+  - Bug fixes, polishing post 2.0.
+
+### 1.12 / 2.0
+
+  - [2.0.0 Milestone on
+    Launchpad](https://launchpad.net/mixxx/+milestone/2.0.0)
+  - Beta Date
+  - April 29, 2015
+  - Release Date
+  - Goal: December \~20th, 2015
+
+#### Feature Targets
+
+  - Master Sync
+  - 4 Decks
+  - Effect Engine
+  - Resizable UI
+  - Harmonic Mixing / Key Detection
+  - MIDI Binding GUI / Enhanced MIDI Learn
+  - User Manual Translations
+  - Much more\! -- check the milestone page.
+
 ### 1.11
 
   - [1.11.0 Milestone on
@@ -50,8 +83,6 @@ world-class application, somewhat in order of importance:
   - Colored, tri-band waveforms
   - Drastically improved BPM and beat detection via VAMP plugins.
   - HID Controller Support via Scripting
-
-## Historical Release Roadmaps
 
 ### 1.10
 

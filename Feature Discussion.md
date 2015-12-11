@@ -6,11 +6,13 @@ page.
 
 ## Specifications for planned features
 
+  - [Mixxx Init Refactor](Mixxx%20Init%20Refactor)
+  - [Controller Script Modules](Controller%20Script%20Modules)
+  - [hid\_device\_api](hid_device_api)
   - [Revamped Control System](Revamped%20Control%20System)
   - [Skinning Engine](Skinning%20Engine)
   - [DVS mode](DVS%20mode)
   - [OSC Backend](OSC%20Backend)
-  - [Effects Framework](Effects%20Framework)
   - [Multi-channel file mixing](Multi-channel%20file%20mixing)
   - [Modifier System](Modifier%20System)
   - [nonblockingdb\_status](nonblockingdb_status)
@@ -33,6 +35,7 @@ page.
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
   - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
   - [N-Deck Support](N-Deck%20Support)
+  - [Effects Framework](Effects%20Framework)
 
 ## Abandoned Specifications
 
@@ -52,8 +55,6 @@ Just pick a bug off of the [Easy Bug
 List](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy)
 
 ## Other Ideas
-
-  - [hid\_device\_api](hid_device_api)
 
 [All Wishlist bugs on
 Launchpad](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&search=Search&field.importance:list=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.omit_dupes.used=&field.omit_dupes=on&field.has_patch.used=&field.has_cve.used=&field.tag=&field.tags_combinator=ANY)

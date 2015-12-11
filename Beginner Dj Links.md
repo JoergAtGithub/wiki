@@ -43,7 +43,6 @@ a DJ program.
   - [Digital DJ Tips](http://www.digitaldjtips.com/)
   - [Reddit /r/beatmatch](https://www.reddit.com/r/beatmatch) and
     [/r/DJs](https://www.reddit.com/r/DJs/)
-  - [DJ Blog](http://producerfactory.com/ghost-producing-blog/)
 
 ## Operating system specific links
 

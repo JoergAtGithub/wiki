@@ -33,7 +33,7 @@ file:
 
 These scripts are loaded sequentially into the global script
 environment. If one script defines a variable `foo` and the next one
-loaded does the same, the first scripts variable will be overwritten\!
+loaded does the same, the first script's variable will be overwritten\!
 Further, within a script there is no way to enforce that you have been
 loaded after a script you depend on.
 

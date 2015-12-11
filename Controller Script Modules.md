@@ -186,3 +186,9 @@ exports = Knob;
   - rryan has a WIP implementation of `require` working.
 
 ## Team
+
+## Questions
+
+  - Won't this further increase the barrier to entry for would-be
+    controller script writers? Not saying that should stop us, I just
+    want to assess the impact. (Sean)

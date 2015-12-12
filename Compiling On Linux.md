@@ -120,7 +120,35 @@ installing it.
 If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`
 
-### Build with m4a/AAC file support
+### Optional: Compile with Clang
+
+[Clang](http://clang.llvm.org) is a C/C++ compiler based on
+[LLVM](http://llvm.org). Using Clang has various benefits:
+
+  - [Better error messages.](http://clang.llvm.org/diagnostics.html)
+  - Colorized compilation output.
+  - Better tools for analyzing problems in your program ([Address
+    Sanitizer](http://clang.llvm.org/docs/AddressSanitizer.html),
+    [Thread Sanitizer](http://clang.llvm.org/docs/ThreadSanitizer.html),
+    [MemorySanitizer](http://clang.llvm.org/docs/MemorySanitizer.html),
+    etc.)
+
+On Debian, Clang is provided as a package with a version number
+attached. Using 3.6 as an example, install it like this:
+
+    sudo apt-get install clang-3.6
+
+To compile Mixxx using Clang 3.6, before running `scons`:
+
+    export CC=clang-3.6
+    export CXX=clang-3.6++
+
+You can now use clang-specific SCons options.
+
+  - To enable colorized output, use the `color=1` scons flag.
+  - To enable Address Sanitizer, use the `asan=1` scons flag.
+
+### Optional: Build with m4a/AAC file support
 
 If you want to play m4a files, add `faad=1` to your scons commands
 above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be

@@ -309,8 +309,8 @@ your homebrew installation. In this example we will use
     export LDFLAGS=-L$HOMEBREW_PATH/lib
     export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.5/
 
-If you got the source code from Git, change to the newly created `mixxx`
-directory, and use scons to compile and install:
+Change to the newly created `mixxx` directory, and use scons to compile
+and install:
 
 If you used the 1.11 branch, you must type `cd mixxx` twice.
 
@@ -327,6 +327,31 @@ scanning and relinking steps so if you want to avoid this you can skip
 
 So that it records res/ in mixxx.cfg as where to find skins etc instead
 of dying at startup.
+
+### Optional: Use Clang to build
+
+On OS X, GCC is a wrapper around [Clang](http://clang.llvm.org) -- a
+compiler based on [LLVM](http://llvm.org). Using Clang has various
+benefits:
+
+  - Better error messages.
+  - Colorized compilation output.
+  - Better tools for analyzing problems in your program (Address
+    Sanitizer, Thread Sanitizer, etc.)
+
+The GCC wrapper around Clang on OS X tries to behave like GCC which
+loses some of these benefits. To use Clang directly, before running
+`scons`:
+
+    export CC=clang
+    export CXX=clang++
+
+You can now use clang-specific SCons options.
+
+  - To enable colorized output, use the `color=1` scons flag.
+  - To enable Address Sanitizer, use the `asan=1` scons flag.
+
+### Optional: Alternate source of MP3/M4A support
 
 As of v1.12, Mixxx will use CoreAudio to decode MP3 and AAC files by
 default. If you want to use `libmad` or `libfaad` for MP3 and AAC

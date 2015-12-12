@@ -124,7 +124,7 @@ this effect.
 
 The tempo slider allows changing the tempo of each deck. This normally
 changes the pitch of a track, you can make the pitch stay constant by
-pressing the "key lock / tempo range" button. Additional with SHIFT "key
+pressing the "key lock / tempo range" button. Additional with shift "key
 lock / tempo range" button the slider will fade slowly to 0. Fadingspeed
 can be set in otions.
 

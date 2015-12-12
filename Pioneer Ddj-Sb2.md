@@ -52,6 +52,9 @@ In the file Pioneer-DDJ-SB2-scripts.js are some options.
     // Set to 1 to disable jogwheel sensitivity increase when holding shift.
     PioneerDDJSB2.jogwheelShiftMultiplier = 20;
     
+    // Time per step (in ms) for pitch speed fade to normal
+    PioneerDDJSB2.speedRateToNormalTime = 200;
+    
     // If true Level-Meter shows VU-Master left & right. If false shows level of channel: 1/3  2/4 (depending active deck)
     PioneerDDJSB2.showVumeterMaster = false;
     

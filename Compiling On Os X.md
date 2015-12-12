@@ -334,10 +334,13 @@ On OS X, GCC is a wrapper around [Clang](http://clang.llvm.org) -- a
 compiler based on [LLVM](http://llvm.org). Using Clang has various
 benefits:
 
-  - Better error messages.
+  - [Better error messages.](http://clang.llvm.org/diagnostics.html)
   - Colorized compilation output.
-  - Better tools for analyzing problems in your program (Address
-    Sanitizer, Thread Sanitizer, etc.)
+  - Better tools for analyzing problems in your program ([Address
+    Sanitizer](http://clang.llvm.org/docs/AddressSanitizer.html),
+    [Thread Sanitizer](http://clang.llvm.org/docs/ThreadSanitizer.html),
+    [MemorySanitizer](http://clang.llvm.org/docs/MemorySanitizer.html),
+    etc.)
 
 The GCC wrapper around Clang on OS X tries to behave like GCC which
 loses some of these benefits. To use Clang directly, before running

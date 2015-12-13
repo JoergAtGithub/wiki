@@ -36,9 +36,10 @@ Mixxx does not have remix decks, so the four remix slot buttons have
 been repurposed. By default, they will launch samples in the sampler
 decks.
 
-The Looping controls are not fully implemented. Currently, pressing the
-"Loop Set" knob always creates an 8 bar loop. This will be fixed in a
-future update to allow creation of arbitrary-sized loops.
+The Loop Size select knob is not fully implemented. Currently, pressing
+the "Loop Set" knob always creates an 8 bar loop, and turning the knob
+will change the size of existing loops. This will be fixed in a future
+update to allow creation of arbitrary-sized loops.
 
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.

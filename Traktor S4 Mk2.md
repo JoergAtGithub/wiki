@@ -19,8 +19,8 @@ Traktor, some buttons on the S4 don't quite translate to Mixxx.
 
 To load the S4 mapping:
 
-1.  Open the Mixxx Preferences and click on the Controller item in the
-    side list. 
+1.  Open the Mixxx Preferences and click on the Controller category in
+    the left-hand list. 
 2.  You should see multiple items listed for the Kontrol S4. Find the
     Kontrol S4 HID device, not the MIDI device. 
 3.  Click the drop-down list labelled "Load Preset." 

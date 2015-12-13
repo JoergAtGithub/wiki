@@ -1,5 +1,7 @@
 # Traktor Kontrol S4 MK2
 
+(NOTE: mapping not released yet)
+
 [[/media/native_instrument_traktor_s4-mkii-1.jpg|native\_instrument\_traktor\_s4-mkii-1.jpg]]
 
 The Kontrol S4 MK2 is one of the most popular DJ controllers. The MK2

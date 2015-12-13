@@ -10,11 +10,10 @@ supported due to a proprietary communication protocol that Native
 Instruments invented. The MK2 uses an open standard so the Mixxx mapping
 is completely functional.
 
-The S4 MK2 has been designed to work with Traktor and while there's a
-lot of overlap between Mixxx and Traktor, some buttons on the S4 don't
-quite translate to Mixxx. Most of the functions are exactly as they
-appear on the device, and most Traktor users shouldn't have a problem
-picking up and using the controller right away.
+Most of the functions are exactly as they appear on the device and most
+Traktor users shouldn't have a problem picking up and using the
+controller right away. While there's a lot of overlap between Mixxx and
+Traktor, some buttons on the S4 don't quite translate to Mixxx.
 
 ### Loading the Mapping
 

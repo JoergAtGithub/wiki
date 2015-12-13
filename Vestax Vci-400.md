@@ -1,6 +1,6 @@
 # Vestax VCI-400
 
-[[/media/vci-400dj_layout.png|vci-400dj\_layout.png]]
+[[/media/vci-400dj_layout2.png|vci-400dj\_layout2.png]]
 
 The Vestax VCI-400 is a professional MIDI controller. It has an
 integrated sound interface providing various inputs and outputs. Vestax
@@ -8,14 +8,14 @@ is out of business.
 
 Mixxx supports the VCI-400 from version 1.10 onwards. Please note that
 only version 1.11 and up support the device out of the box. For version
-1.10 the mapping files can be donwloaded from here.
+1.10 the mapping files can be downloaded from here.
 
 The VCI-400 has been designed to work flexibly with any DJ software.
 Depending on the software there are buttons and knobs having different
 functions assigned. Vestax provides overlays for Traktor, Serato,
 Virtual DJ.
 
-## New Mapping (1.12+)
+## New Mapping (2.0+)
 
 **The new VCI-400 mapping for Mixxx is based on the Serato Limited
 Edition overlay**
@@ -75,11 +75,13 @@ Some of the buttons have special functions in Mixxx
 8.  Controls FX1 Parameter 2
 9.  Controls FX1 Parameter 3
 10. Controls FX1 Dry / Wet
-11. Eject current track
-12. Enable/Disable Quantize Mode.
+11. Enable/Disable Quantize Mode.
+12. Enable/Disable Keylock
 
 The four small buttons in the center, Area, Panel, Back, and Prepare,
 don't do anything. Neither does the sampler volume slider.
+
+Hold shift while pressing Load to eject a track
 
 ### Vinyl Control Mode
 

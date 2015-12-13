@@ -44,12 +44,12 @@ future update to allow creation of arbitrary-sized loops.
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-1.  Shift + Loop Move will adjust the musical pitch of the track without
+  - Shift + Loop Move will adjust the musical pitch of the track without
     changing the speed.
-2.  Shift + Loop Size will seek quickly through the track for easy
+  - Shift + Loop Size will seek quickly through the track for easy
     previewing.
-3.  Shift + Load will eject the track.
-4.  Shift + Remix Slot will create a loop of predetermined size.
+  - Shift + Load will eject the track.
+  - Shift + Remix Slot will create a loop of predetermined size.
 
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software
@@ -57,3 +57,12 @@ master volume control. Peak display is only generated from software,
 however. So if you see peaking, it won't help to lower the master volume
 knob -- adjust the knob in the Mixxx GUI or lower the gain of the
 playing tracks.
+
+### TODO
+
+There are some features we still plan to add to this mapping:
+
+  - Loop size readout / selection
+  - On Air indicator for shoutcast or set recording
+  - Find uses for other unused buttons
+  - Microphone volume knob

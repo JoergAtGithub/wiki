@@ -46,6 +46,8 @@ and pressing certain buttons.
 
   - Shift + Loop Move will adjust the musical pitch of the track without
     changing the speed.
+  - Shift + pressing the Loop Move knob will reset the musical pitch to
+    natural.
   - Shift + Loop Size will seek quickly through the track for easy
     previewing.
   - Shift + Load will eject the track.

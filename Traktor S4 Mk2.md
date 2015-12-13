@@ -31,11 +31,11 @@ satisfyingly.
 Mixxx does not have remix decks, so the four remix slot buttons have
 been repurposed. By default, they will launch samples in the sampler
 decks. If you choose, you can edit the controller script and change
-these buttons to perform loop rolls instead. (TODO: how to do this).
-
-By default, Shift + CUE rewinds the track to the beginning. You can
-choose to edit the controller script and change this to a Reverse Roll,
-or "Censor" effect.
+these buttons to perform loop rolls instead. We have tried to make this
+as painless as possible even for users who are uncomfortable with
+programming. (TODO: how to do this). Also by default, Shift + CUE
+rewinds the track to the beginning. Again, you can choose to edit the
+controller script and change this to a Reverse Roll, or "Censor" effect.
 
 The Looping controls are not fully implemented. Currently, pressing the
 "Loop Set" knob always creates an 8 bar loop. This will be fixed in a

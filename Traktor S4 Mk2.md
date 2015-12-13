@@ -21,21 +21,36 @@ controller right away.
 
 ### Loading the Mapping
 
-To load the S4 mapping, open the preferences and look at the detected
-controller devices. Find the Kontrol S4 HID device, not the MIDI device.
-Load the preset, and you should see the controller light up
-satisfyingly.
+To load the S4 mapping, open the preferences and click on the Controller
+item in the side list. You should see multiple items listed for the
+Kontrol S4. Find the Kontrol S4 HID device, not the MIDI device. In the
+main window, click the drop-down list labeled "Load Preset." Look for
+Traktor Kontrol S4 MK2 and select it. Then hit "Apply" at the bottom of
+the preferences window. The controller should light up satisfyingly,
 
 ### Mapping Notes
 
 Mixxx does not have remix decks, so the four remix slot buttons have
 been repurposed. By default, they will launch samples in the sampler
 decks. If you choose, you can edit the controller script and change
-these buttons to perform loop rolls instead. We have tried to make this
-as painless as possible even for users who are uncomfortable with
-programming. (TODO: how to do this). Also by default, Shift + CUE
-rewinds the track to the beginning. Again, you can choose to edit the
-controller script and change this to a Reverse Roll, or "Censor" effect.
+these buttons to perform loop rolls instead. Also by default, Shift +
+CUE rewinds the track to the beginning. You can change this to a Reverse
+Roll, or "Censor" effect instead.
+
+Making these changes is still a little awkward and we will be making
+controller preferences easier to change in the future. For now you'll
+have to make a one-word change to the mapping script. Don't worry, the
+actual edit only involves replacing a single word in a text file.
+
+1.  In the preferences for the controller you should see a series of
+    tabs at the top of the preferences window, one of which is
+    "Scripts". Select this.
+2.  Select "Traktor-Kontrol-S4-MK2-hid-scripts.js". 
+3.  Click "Open Selected File."
+4.  Either the file should open in an editor, or you should see a file
+    browser window with that file selected. If you see a file browser,
+    right click the file and select an option to edit it.
+5.  The script file will explain what word to change.
 
 The Looping controls are not fully implemented. Currently, pressing the
 "Loop Set" knob always creates an 8 bar loop. This will be fixed in a

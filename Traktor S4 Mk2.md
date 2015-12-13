@@ -4,11 +4,11 @@
 
 The Kontrol S4 MK2 is one of the most popular DJ controllers. The MK2
 has substantial improvements over the previous S4 MK1, including large
-all-light buttons for easier visibility. Mixxx supports the S4 MK2 from
-version 2.0 onwards. The MK1 is not supported and can not be supported
-due to a proprietary communication protocol that Native Instruments
-invented. The MK2 uses an open standard so the Mixxx mapping is
-completely functional.
+all-light buttons for easier visibility. We support the S4 MK2 from
+version Mixxx 2.0 onwards. The MK1 is not supported and can not be
+supported due to a proprietary communication protocol that Native
+Instruments invented. The MK2 uses an open standard so the Mixxx mapping
+is completely functional.
 
 The S4 MK2 has been designed to work with Traktor and while there's a
 lot of overlap between Mixxx and Traktor, some buttons on the S4 don't

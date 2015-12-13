@@ -85,8 +85,8 @@ playing tracks.
 
 If you choose, you can edit the controller script and change the Remix
 Slot buttons to perform loop rolls instead. Also by default, Shift + CUE
-rewinds the track to the beginning. You can change this to a Reverse
-Roll, or "Censor" effect instead.
+rewinds the track to the beginning but you can change this to a Reverse
+Roll (or "Censor") effect instead.
 
 Making these changes is still a little awkward and we will be making
 controller preferences easier to change in the future. For now you'll

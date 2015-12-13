@@ -51,12 +51,27 @@ and pressing certain buttons.
   - Shift + Load will eject the track.
   - Shift + Remix Slot will create a loop of predetermined size.
 
+Note that Mixxx doesn't have the concept of a single "master" deck for
+sync. Instead, you should push and hold the sync button to "lock" sync
+on for all decks you want to remain in sync. Or you can push Shift +
+Sync to lock sync on. See the manual: [Master
+Sync](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
+
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software
 master volume control. Peak display is only generated from software,
 however. So if you see peaking, it won't help to lower the master volume
 knob -- adjust the knob in the Mixxx GUI or lower the gain of the
 playing tracks.
+
+### Unused Buttons
+
+  - Snap button does nothing (in Mixxx, Quantize does both Quantizing
+    and Snapping)
+  - Master button does nothing, but lights up when sync is enabled
+  - Loop recorder knob and buttons do nothing
+  - FX knob buttons do nothing
+  - While the Flux button works, the Reset button does nothing
 
 ### User Configurable Mapping Changes
 

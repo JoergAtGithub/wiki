@@ -44,6 +44,15 @@ the "Loop Set" knob always creates an 8 bar loop, and turning the knob
 will change the size of existing loops. This will be fixed in a future
 update to allow creation of arbitrary-sized loops.
 
+The FX Mode button changes which effect is loaded in the FX bank.
+Currently only one effect can be loaded in each bank.
+
+Note that Mixxx doesn't have the concept of a single "master" deck for
+sync. Instead, you should push and hold the sync button to "lock" sync
+on for all decks you want to remain in sync. Or you can push Shift +
+Sync to lock sync on. See the manual: [Master
+Sync](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
+
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
@@ -55,12 +64,6 @@ and pressing certain buttons.
     previewing.
   - Shift + Load will eject the track.
   - Shift + Remix Slot will create a loop of predetermined size.
-
-Note that Mixxx doesn't have the concept of a single "master" deck for
-sync. Instead, you should push and hold the sync button to "lock" sync
-on for all decks you want to remain in sync. Or you can push Shift +
-Sync to lock sync on. See the manual: [Master
-Sync](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
 
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software

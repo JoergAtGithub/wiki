@@ -13,7 +13,10 @@ is completely functional.
 Most of the functions are exactly as they appear on the device and most
 Traktor users shouldn't have a problem picking up and using the
 controller right away. While there's a lot of overlap between Mixxx and
-Traktor, some buttons on the S4 don't quite translate to Mixxx.
+Traktor, some buttons on the S4 don't quite translate to Mixxx. This
+guide is not a replacement for the [Mixxx
+Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
+here ("What is keylock?") are addressed there.
 
 ### Loading the Mapping
 

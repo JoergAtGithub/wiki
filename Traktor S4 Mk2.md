@@ -37,6 +37,12 @@ usable.
 
 ### Mapping Notes
 
+Note that Mixxx doesn't have the concept of a single "master" deck for
+sync. Instead, you should push and hold the sync button to "lock" sync
+on for all decks you want to remain in sync. Or you can push Shift +
+Sync to lock sync on. See the manual: [Master
+Sync](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
+
 Mixxx does not have remix decks, so the four remix slot buttons have
 been repurposed. By default, they will launch samples in the sampler
 decks.
@@ -48,12 +54,6 @@ update to allow creation of arbitrary-sized loops.
 
 The FX Mode button changes which effect is loaded in the FX bank.
 Currently only one effect can be loaded in each bank.
-
-Note that Mixxx doesn't have the concept of a single "master" deck for
-sync. Instead, you should push and hold the sync button to "lock" sync
-on for all decks you want to remain in sync. Or you can push Shift +
-Sync to lock sync on. See the manual: [Master
-Sync](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
 
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.

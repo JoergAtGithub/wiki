@@ -9,8 +9,8 @@ has substantial improvements over the previous S4 MK1, including large
 all-light buttons for easier visibility. We support the S4 MK2 from
 version Mixxx 2.0 onwards. The MK1 is not supported and can not be
 supported due to a proprietary communication protocol that Native
-Instruments invented. The MK2 uses an open standard so the Mixxx mapping
-is completely functional.
+Instruments invented. The MK2 uses the open HID standard so the Mixxx
+mapping is completely functional.
 
 Most of the functions are exactly as they appear on the device and most
 Traktor users shouldn't have a problem picking up and using the

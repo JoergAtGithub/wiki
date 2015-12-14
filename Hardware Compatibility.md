@@ -166,7 +166,7 @@ Click the name of the controller for more information.
 | Device                                                                     | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)                     | $300              | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |
 | [American Audio VMS4/4.1](American%20Audio%20VMS4)                         | $400              | 4 deck mixer + 2 deck controller all-in-one   | yes                   | MIDI            | 1.9                           |
-| [Denon HS5500](Denon%20HS5500)                                             | discontinued      | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 1.12                          |
+| [Denon HS5500](Denon%20HS5500)                                             | discontinued      | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 2.0                           |
 | [DJ TechTools MIDIFighter Classic](DJ%20TechTools%20MIDIFighter%20Classic) | discontinued      | 4x4 spring-loaded arcade button grid \[2\]    | no                    | MIDI            | 1.8                           |
 | [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)             | $300              | 2 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)                   | discontinued      | basic 2 deck all-in-one                       | yes                   | HID             | 1.11                          |
@@ -205,7 +205,7 @@ move your controller to this table.
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                                          | yes                             | MIDI            | ?                             |
 | [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued      | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.11                          |
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100              | basic 2 deck all-in-one                                    | yes                             | MIDI            | 1.6                           |
-| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
+| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                                          | yes                             | MIDI            | 2.0                           |
 | [Denon SC2000](Denon%20SC2000)                                                                     | discontinued      | 1 deck                                                     | no                              | MIDI            | 1.8                           |
 | [DJ Tech CDJ-101](DJ%20Tech%20CDJ-101)                                                             | discontinued      | 2 deck jog wheel                                           | no                              | MIDI            | 1.11                          |
 | [DJ Tech DJM-101](DJ%20Tech%20DJM-101)                                                             | discontinued      | 2 deck mixer                                               | no                              | MIDI            | 1.11                          |
@@ -213,7 +213,7 @@ move your controller to this table.
 | [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued      | 4 decks                                                    | no                              | MIDI            | 1.11                          |
 | [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued      | 2 deck mixer                                               | no                              | MIDI            | 1.10.1                        |
 | [eks Otus](eks%20Otus)                                                                             | discontinued      | 1 turntable + 2 deck mixer                                 | yes                             | HID             | 1.11                          |
-| [Electrix Tweaker](Electrix%20Tweaker)                                                             | $100              | 4 deck mixer\[8\] + transport + loops + hotcues + samplers | no, but 5-pin MIDI I/O included | MIDI            | 1.12                          |
+| [Electrix Tweaker](Electrix%20Tweaker)                                                             | $100              | 4 deck mixer\[8\] + transport + loops + hotcues + samplers | no, but 5-pin MIDI I/O included | MIDI            | 2.0                           |
 | [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued      | knobs + crossfader                                         | no                              | MIDI            | 1.6                           |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued      | 2 deck mixer                                               | no                              | MIDI            | 1.6                           |
 | [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued      | basic 2 deck all-in-one                                    | no                              | MIDI            | 1.11                          |
@@ -232,7 +232,7 @@ move your controller to this table.
 | [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
 | [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202%20Pro)                                   | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.10.1                        |
 | [Novation Dicer](Novation%20Dicer)                                                                 | $70               | hotcues and loops for use with turntables                  | no                              | MIDI            | 1.10                          |
-| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75               | hotcues, loops, transport                                  | no                              | MIDI            | 1.12                          |
+| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75               | hotcues, loops, transport                                  | no                              | MIDI            | 2.0                           |
 | [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | 2 deck mixer, hotcues, loops                               | no                              | MIDI \[12\]     | 1.11                          |
 | [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60               | basic 2 deck all-in-one                                    | no                              | MIDI            | 1.10                          |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
@@ -246,8 +246,8 @@ move your controller to this table.
 | [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000             | CD player                                                  | no                              | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued      | CD player                                                  | no                              | MIDI or HID     | 1.8.2 (MIDI)                  |
 | [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900              | CD player                                                  | no                              | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | $250              | 4 deck all-in-one\[14\]                                    | yes                             | MIDI            | 1.12                          |
-| [Reloop Beatpad](Reloop%20Beatpad)                                                                 | $449              | 2 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | $250              | 4 deck all-in-one\[14\]                                    | yes                             | MIDI            | 2.0                           |
+| [Reloop Beatpad](Reloop%20Beatpad)                                                                 | $449              | 2 deck all-in-one                                          | yes                             | MIDI            | 2.0                           |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.8                           |
 | [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI \[15\]     | 1.8                           |
 | [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued      | 4 deck all-in-one \[16\]                                   | yes                             | MIDI            | 1.11                          |
@@ -255,7 +255,7 @@ move your controller to this table.
 | [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                                             | yes                             | MIDI            | 1.6.2                         |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
-| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued      | 4 deck all-in-one                                          | yes                             | MIDI            | 1.12                          |
+| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued      | 4 deck all-in-one                                          | yes                             | MIDI            | 2.0                           |
 | [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued      | 2 deck all-in-one                                          | no                              | MIDI            | 1.6                           |
 | [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.11                          |
 
@@ -390,7 +390,7 @@ adapters typically have two mono jack outputs. Plugging headphones or
 stereo speakers into a generic stereo-to-mono splitter will only play
 sound on one side of the headphones or speakers.
 
-Mono output is a new feature in Mixxx 1.12. Older versions of Mixxx will
+Mono output is a new feature in Mixxx 2.0. Older versions of Mixxx will
 not work with splitter cables.
 
 Available DJ splitter cables:
@@ -490,17 +490,17 @@ better.
 ### Using multiple sound cards
 
 Mixxx can use multiple sound cards at the same time. However, before
-Mixxx 1.12, this would result in crackling in the headphones. Every
-sound card has its own clock crystal and no two are precisely the same
+Mixxx 2.0, this would result in crackling in the headphones. Every sound
+card has its own clock crystal and no two are precisely the same
 frequency even if the devices are the same model and from the same
-production run. Mixxx before 1.12 synchronized its audio generation to
+production run. Mixxx before 2.0 synchronized its audio generation to
 the clock crystal of whichever device is selected as the master output
 (deck 1 output if no master is selected) so that the crowd won't hear
 the artifacts. As a result, secondary devices either fall behind or run
 ahead of the primary one, causing them to play silence until Mixxx
 generates the next audio buffer exactly in time for the primary device.
 Playing bits of audio interspersed with bits of silence sounds like
-crackling. Mixxx 1.12 can compensate for this, but it is still better to
+crackling. Mixxx 2.0 can compensate for this, but it is still better to
 use one sound card with 4 outputs.
 
 ### Standalone USB sound cards

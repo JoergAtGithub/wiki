@@ -164,20 +164,20 @@ Click the name of the controller for more information.
 |                                                                            |                   |                                               |                       |                 |                               |
 | -------------------------------------------------------------------------- | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                                     | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
-| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                           | $250              | 2 deck all-in-one                             | no                    | MIDI            | 1.11                          |
-| [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)             | $300              | 2 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)                     | $300              | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |
 | [American Audio VMS4/4.1](American%20Audio%20VMS4)                         | $400              | 4 deck mixer + 2 deck controller all-in-one   | yes                   | MIDI            | 1.9                           |
-| [DJ TechTools MIDIFighter Classic](DJ%20TechTools%20MIDIFighter%20Classic) | discontinued      | 4x4 spring-loaded arcade button grid \[2\]    | no                    | MIDI            | 1.8                           |
 | [Denon HS5500](Denon%20HS5500)                                             | discontinued      | 2-decks-in-1 CD player with motorized platter | yes                   | MIDI            | 1.12                          |
-| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)                    | discontinued      | 2 deck all-in-one                             | yes                   | HID             | 1.11                          |
+| [DJ TechTools MIDIFighter Classic](DJ%20TechTools%20MIDIFighter%20Classic) | discontinued      | 4x4 spring-loaded arcade button grid \[2\]    | no                    | MIDI            | 1.8                           |
+| [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)             | $300              | 2 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)                   | discontinued      | basic 2 deck all-in-one                       | yes                   | HID             | 1.11                          |
 | [Hercules DJ Control MP3 e2](Hercules%20DJ%20Control%20MP3%20e2)           | discontinued      | basic 4 deck all-in-one \[3\]                 | no                    | MIDI + HID      | 1.11                          |
+| [Hercules DJ Console Mk2](Hercules%20PC%20DJ%20Console)                    | discontinued      | 2 deck all-in-one                             | yes                   | HID             | 1.11                          |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                           | $250              | 2 deck all-in-one                             | no                    | MIDI            | 1.11                          |
 | [M-Audio X-Session Pro](M-Audio%20X-Session%20Pro)                         | discontinued      | 2 deck mixer                                  | no                    | MIDI            | 1.6                           |
-| [Stanton SCS.3d](Stanton%20SCS.3d)                                         | discontinued      | 1 deck control \[4\]                          | no                    | MIDI            | 1.7                           |
-| [Stanton SCS.3m](Stanton%20SCS.3m)                                         | discontinued      | 2 deck mixer \[5\]                            | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.1d](Stanton%20SCS.1d)                                         | discontinued      | 1 turntable \[4\]                             | no                    | HSS1394 (MIDI)  | 1.9.1                         |
 | [Stanton SCS.1m](Stanton%20SCS.1m)                                         | discontinued      | 4 deck mixer                                  | yes                   | HSS1394 (MIDI)  | 1.7                           |
-| [Stanton SCS.1d](Stanton%20SCS.1d)                                         | discontinued      | 1 turntable \[6\]                             | no                    | HSS1394 (MIDI)  | 1.9.1                         |
+| [Stanton SCS.3d](Stanton%20SCS.3d)                                         | discontinued      | 1 deck control \[5\]                          | no                    | MIDI            | 1.7                           |
+| [Stanton SCS.3m](Stanton%20SCS.3m)                                         | discontinued      | 2 deck mixer \[6\]                            | no                    | MIDI            | 1.7                           |
 | [Vestax VCI-400](Vestax%20VCI-400)                                         | discontinued      | 4 deck all-in-one                             | yes                   | MIDI            | 1.10.1                        |
 
 ### Community Supported Mappings
@@ -578,11 +578,11 @@ Numark DJ iO 1 or 2 though.
 
 3.  Mapping has buttons to toggle between decks 1/3 and decks 2/4.
 
-4.  Mapping supports 2-deck switching
+4.  Mapping supports n-deck switching
 
-5.  Mapping supports 4-deck switching
+5.  Mapping supports 2-deck switching
 
-6.  Mapping supports n-deck switching
+6.  Mapping supports 4-deck switching
 
 7.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

@@ -283,12 +283,13 @@ When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
 
-|                                                      |                    |                   |                       |                 |
-| ---------------------------------------------------- | ------------------ | ----------------- | --------------------- | --------------- |
-| Device                                               | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                 | $250               | 4 deck all-in-one | yes                   | MIDI            |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203) | $250               | 2 deck all-in-one | yes                   | MIDI (and HID?) |
-| [Akai AMX](Akai%20AMX)                               | $250               | 1 deck control    | yes                   | MIDI            |
+|                                                              |                    |                   |                       |                 |
+| ------------------------------------------------------------ | ------------------ | ----------------- | --------------------- | --------------- |
+| Device                                                       | Price (USD) \[17\] | Description       | Integrated Sound Card | Signal protocol |
+| [Akai AMX](Akai%20AMX)                                       | $250               | 1 deck control    | yes                   | MIDI            |
+| [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                | 2 deck control    | no                    | MIDI            |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250               | 2 deck all-in-one | yes                   | MIDI (and HID?) |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                         | $250               | 4 deck all-in-one | yes                   | MIDI            |
 
 ### Controllers that do not yet have Mixxx mappings
 

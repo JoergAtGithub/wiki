@@ -56,7 +56,7 @@ support Windows 10.
 <tr class="odd">
 <td>Folders / Files</td>
 <td>Switches between browsing the sidebar in the library, or the list.<br />
-If Folders is pressed twice, opens/closes the tree branch</td>
+If Folders is pressed twice, opens/closes the tree branch\\If Files is pressed when in AutoDJ mode, the next song in the Auto DJ cue is skipped</td>
 </tr>
 <tr class="even">
 <td>Up / Down</td>

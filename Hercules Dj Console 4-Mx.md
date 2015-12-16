@@ -170,8 +170,9 @@ when shift-pressed, the control will move slowly</td>
 <td>Controls a deck's output volume</td>
 </tr>
 <tr class="odd">
-<td>Cue Select</td>
-<td>Toggles this decks output to the monitor (headphones) on and off</td>
+<td>Cue Select Deck</td>
+<td>Toggles this deck's output to the monitor (headphones) on and off<br />
+When a new track is loaded in a deck, the cue Select of that deck will get activated automatically.</td>
 </tr>
 <tr class="even">
 <td>Load On Deck A/B</td>

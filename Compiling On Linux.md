@@ -120,6 +120,12 @@ installing it.
 If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`
 
+### Optional: Build with m4a/AAC file support
+
+If you want to play m4a files, add `faad=1` to your scons commands
+above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be
+installed.
+
 ### Optional: Compile with Clang
 
 [Clang](http://clang.llvm.org) is a C/C++ compiler based on
@@ -147,12 +153,6 @@ You can now use clang-specific SCons options.
 
   - To enable colorized output, use the `color=1` scons flag.
   - To enable Address Sanitizer, use the `asan=1` scons flag.
-
-### Optional: Build with m4a/AAC file support
-
-If you want to play m4a files, add `faad=1` to your scons commands
-above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be
-installed.
 
 ## Uninstall
 

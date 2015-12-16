@@ -93,7 +93,7 @@ hardware controls (i.e. they don't control Mixxx's interface)
 </tr>
 <tr class="even">
 <td>Stop</td>
-<td>Stops a currently playing track and moves to the beginning.</td>
+<td>Stops a currently playing track and moves to the beginning.\\If in AutoDJ mode, stopping decks 1 and 2 will disable AutoDJ</td>
 </tr>
 <tr class="odd">
 <td>Cue</td>

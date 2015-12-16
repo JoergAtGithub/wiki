@@ -1,5 +1,9 @@
 # Hercules DJControl Compact
 
+[[/media/hercules-djcontrol-compact_angle.jpg|]]
+
+[[/media/hercules-djcontrol-compact_top.jpg|]]
+
   - [Product on manufacturer
     website](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
   - [forked github repository](https://github.com/mwillerich/mixxx)

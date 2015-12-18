@@ -131,11 +131,12 @@ Moves up / down in the tracklist if either Up or Down are held down</td>
 </tr>
 <tr class="odd">
 <td>Pitch Reset</td>
-<td>This is triggered when both pitch scale buttons are pressed at the same time. This control has a different meaning in Mixxx. It resets the musical key to the track's default</td>
+<td>This is triggered when both pitch scale buttons are pressed at the same time. This control has a different meaning in Mixxx. It resets the musical key to the track's default.<br />
+The Pitch Reset led is on if the key lock button is enabled for this deck. This might change in a future release.</td>
 </tr>
 <tr class="even">
 <td>Sync</td>
-<td>Automatically sets pitch so the BPM of the other deck is matched. Also, when playing, it flashes to the following the rythm</td>
+<td>Automatically sets the speed to match the BPM of the other deck. During playback, the light of this button will be flashing following the beats of the song.\\This light flashing could be optional in a future release</td>
 </tr>
 <tr class="odd">
 <td>Deck A/C, B/D</td>
@@ -169,7 +170,7 @@ If Shift-pressed, the corresponding hotcue is cleared</td>
 <tr class="odd">
 <td>Fx knob</td>
 <td>Filter knob (the filter setup in the equalizer preferences)<br />
-When shift is held, the knob will move slowly</td>
+While shift button is held down, the knob will move slowly</td>
 </tr>
 <tr class="even">
 <td>Vol. Deck A/B</td>

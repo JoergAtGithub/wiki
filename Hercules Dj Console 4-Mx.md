@@ -136,7 +136,8 @@ The Pitch Reset led is on if the key lock button is enabled for this deck. This 
 </tr>
 <tr class="even">
 <td>Sync</td>
-<td>Automatically sets the speed to match the BPM of the other deck. During playback, the light of this button will be flashing following the beats of the song.\\This light flashing could be optional in a future release</td>
+<td>Automatically sets the speed to match the BPM of the other deck. During playback, the light of this button will be flashing following the beats of the song.<br />
+The beat flashing will be optional in the future, to show the sync button state.</td>
 </tr>
 <tr class="odd">
 <td>Deck A/C, B/D</td>

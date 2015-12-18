@@ -123,7 +123,7 @@ Moves up / down in the tracklist if either Up or Down are held down</td>
 </tr>
 <tr class="odd">
 <td>Pitch bend +/-</td>
-<td>Adjusts playback speed temporarily (range can be adjusted in the preferences)</td>
+<td>Adjusts playback speed temporarily (range can be adjusted in Mixxx preferences)</td>
 </tr>
 <tr class="even">
 <td>Pitch Scale +/-</td>

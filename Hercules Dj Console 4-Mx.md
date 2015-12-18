@@ -50,7 +50,7 @@ support Windows 10.
 </tr>
 <tr class="odd">
 <td>Scratch</td>
-<td>Toggles scratch mode on and off. When enabled, pressing over the jog wheel controls scratching</td>
+<td>Toggles scratch mode. When scratch mode is enabled, pressing a jog wheel controls scratching</td>
 </tr>
 <tr class="even">
 <td>Auto</td>

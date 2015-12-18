@@ -94,24 +94,23 @@ hardware controls (i.e. they don't control Mixxx's interface)
 <tbody>
 <tr class="odd">
 <td>Play/Pause</td>
-<td>Starts playing a loaded track if stopped. If track is currently playing it stops the track</td>
+<td>Play track if paused; pause if track is playing</td>
 </tr>
 <tr class="even">
 <td>Stop</td>
-<td>Stops a currently playing track and moves to the beginning.\\If in AutoDJ mode, stopping decks 1 and 2 will disable AutoDJ</td>
+<td>Stops a currently playing track and moves to the beginning.<br />
+If in AutoDJ mode, pressing this button on decks 1 &amp; 2 will disable AutoDJ</td>
 </tr>
 <tr class="odd">
 <td>Cue</td>
-<td>Sets the cue point if a track is stoped and not at the current cue point<br />
-Stops track and returns to the current cue point if a track is playing.<br />
-Plays preview if a track is stopped at the cue point for as long as it's held down</td>
+<td>Depends on cue mode set in Mixxx preferences</td>
 </tr>
 <tr class="even">
 <td>Jog wheel</td>
 <td>Seeks forwards and backwards in a stopped track<br />
 Temporarily changes the playback speed for playing tracks<br />
-Scratches both stopped and playing tracks when scratch mode is on and the jog wheel is pressed down<br />
-Moves up / down in the tracklist if either Up or Down is held down</td>
+Scratches when pressed and scratch mode is on (whether or not track is playing)<br />
+Moves up / down in the tracklist if either Up or Down are held down</td>
 </tr>
 <tr class="odd">
 <td>Forward / Backward</td>
@@ -119,11 +118,11 @@ Moves up / down in the tracklist if either Up or Down is held down</td>
 </tr>
 <tr class="even">
 <td>Pitch fader</td>
-<td>Adjusts playback speed +/-10% (range can be adjusted in the preferences)</td>
+<td>Adjusts playback speed (range can be adjusted in the preferences)</td>
 </tr>
 <tr class="odd">
 <td>Pitch bend +/-</td>
-<td>Adjusts temporarily the playback speed +/-4% (range can be adjusted in the preferences)</td>
+<td>Adjusts playback speed temporarily (range can be adjusted in the preferences)</td>
 </tr>
 <tr class="even">
 <td>Pitch Scale +/-</td>
@@ -144,7 +143,8 @@ Moves up / down in the tracklist if either Up or Down is held down</td>
 <tr class="even">
 <td>Shift key</td>
 <td>Switches between the first or second group of 6 effect controls<br />
-When it is lit, the 6 fx buttons do the actions defined below as keypad 7 to 13. Else they do the actions defined as keypad 1 to 6 \\This button has an additional function in Mixxx. If you keep the button pressed while pressing another of the fx buttons, it will trigger the shift-pressed action described for that button</td>
+When it is lit, the 6 fx buttons do the actions defined below as keypad 7 to 13. Else they do the actions defined as keypad 1 to 6<br />
+This button has an additional function in Mixxx. If you keep the button pressed while pressing another of the fx buttons, it will trigger the shift-pressed action described for that button</td>
 </tr>
 <tr class="odd">
 <td>Keypad 1 to 4</td>
@@ -167,8 +167,8 @@ If Shift-pressed, the corresponding hotcue is cleared</td>
 </tr>
 <tr class="odd">
 <td>Fx knob</td>
-<td>Modifies the filter knob (the filter setup in the equalizer preferences)<br />
-when shift-pressed, the control will move slowly</td>
+<td>Filter knob (the filter setup in the equalizer preferences)<br />
+When shift is held, the knob will move slowly</td>
 </tr>
 <tr class="even">
 <td>Vol. Deck A/B</td>
@@ -181,27 +181,27 @@ When a new track is loaded in a deck, the cue Select of that deck will get activ
 </tr>
 <tr class="even">
 <td>Load On Deck A/B</td>
-<td>Loads the currently selected track in the track list to the related deck</td>
+<td>Loads the currently selected track in the track list to the respective deck</td>
 </tr>
 <tr class="odd">
 <td>Bass knob</td>
-<td>Adjusts the volume of a channels low frequency content (ex. bass drum)</td>
+<td>EQ low frequencies</td>
 </tr>
 <tr class="even">
 <td>Medium knob</td>
-<td>Adjusts the volume of a channels mid frequency content (ex. vocals)</td>
+<td>EQ mid frequencies</td>
 </tr>
 <tr class="odd">
 <td>Treble knob</td>
-<td>Adjusts the volume of a channels high frequency content (ex. hi-hats)</td>
+<td>EQ high frequencies</td>
 </tr>
 <tr class="even">
 <td>Kill (Bass / Medium / Treble)</td>
-<td>Toggles output of a frequency band on and off</td>
+<td>Toggles frequency band completely off</td>
 </tr>
 <tr class="odd">
 <td>Gain</td>
-<td>Controls a deck's gain previous to the volume fader</td>
+<td>Controls a deck's gain before the volume fader</td>
 </tr>
 <tr class="even">
 <td>Source 1/2</td>

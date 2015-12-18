@@ -46,7 +46,7 @@ support Windows 10.
 </tr>
 <tr class="even">
 <td>Vol. Main</td>
-<td>Controls output volume of your mix</td>
+<td>Controls the Master volume knob of Mixxx.</td>
 </tr>
 <tr class="odd">
 <td>Scratch</td>
@@ -54,7 +54,8 @@ support Windows 10.
 </tr>
 <tr class="even">
 <td>Auto</td>
-<td>Enable AutoDJ or fade to next song if AutoDJ is already enabled. In the future this might do autofading in live mode too</td>
+<td>Enable AutoDJ or fade to next song if AutoDJ is already enabled.<br />
+In the future this could do autofading in live mode too</td>
 </tr>
 <tr class="odd">
 <td>Folders / Files</td>
@@ -65,7 +66,7 @@ If Files is pressed when in AutoDJ mode, the next song in the Auto DJ cue is ski
 <tr class="even">
 <td>Up / Down</td>
 <td>Moves up and down in the library track list.<br />
-If held down and a jog wheels is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
+If held down and a jog wheel is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
 </tr>
 <tr class="odd">
 <td>Cue/Mix</td>

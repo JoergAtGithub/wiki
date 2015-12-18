@@ -1,6 +1,6 @@
 # Hercules DJ Console 4-Mx
 
-[[/media/djconsole4mx.jpeg|]]
+![](http://ecx.images-amazon.com/images/I/81mADkcz9wL._SL1500_.jpg)
 
   - [Manufacturer's product
     page](http://www.hercules.com/us/DJ-Music/bdd/p/141/dj-console-4-mx/)

@@ -50,11 +50,11 @@ support Windows 10.
 </tr>
 <tr class="odd">
 <td>Scratch</td>
-<td>Toggles scratch mode on and off which means that it will obey the pressure over the jog wheel to do scrathing</td>
+<td>Toggles scratch mode on and off. When enabled, pressing over the jog wheel controls scratching</td>
 </tr>
 <tr class="even">
 <td>Auto</td>
-<td>Currently enables the AutoDJ mode, or does a fade to next song if AutoDJ is enabled. In the future this might do autofading in live mode too</td>
+<td>Enable AutoDJ or fade to next song if AutoDJ is already enabled. In the future this might do autofading in live mode too</td>
 </tr>
 <tr class="odd">
 <td>Folders / Files</td>
@@ -63,16 +63,16 @@ If Folders is pressed twice, opens/closes the tree branch\\If Files is pressed w
 </tr>
 <tr class="even">
 <td>Up / Down</td>
-<td>Moves up and down in the library track list. \\If held down and any of the jog wheels is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
+<td>Moves up and down in the library track list. \\If held down and a jog wheels is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
 </tr>
 <tr class="odd">
 <td>Cue/Mix</td>
-<td>Fades monitor output (headphones) between cue selected tracks output and the main mix</td>
+<td>Control mix of master and PFL (cue) output in headphones</td>
 </tr>
 <tr class="even">
 <td>Mic On/Off</td>
 <td>Enables or disables the microphone.<br />
-This is configured by default to be mixed in hardware. The controller own's driver allows to change this to use it as an input channel</td>
+This is configured by default to be mixed in hardware. The controller's driver allows to change this to use it as an input channel</td>
 </tr>
 </tbody>
 </table>

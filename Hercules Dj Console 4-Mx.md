@@ -14,9 +14,12 @@ RMX](Hercules%20DJ%20Console%20RMX), but with switches for 4 decks
 The sound card has 4 inputs and 4 outputs (2 stereo in/out). The inputs
 are switchable between line-in and phono, and also is possible to select
 different line levels (consumer -10dBV, Pro +4dBu and boost +8dBu ), so
-you can connect both cd-players and turntables on the inputs. Inputs are
-RCA. Outputs are RCA or 1/4" TRS balanced. Microphone input is 1/4" TS
-Headphone jack is 1⁄4" (6.35 mm) TRS stereo
+you can connect both cd-players and turntables on the inputs.
+
+  - Inputs are RCA.
+  - Outputs are RCA or 1/4" TRS balanced.
+  - Microphone input is 1/4" TS
+  - Headphone jack is 1⁄4" (6.35 mm) TRS stereo
 
 ### MAC OS / Windows
 

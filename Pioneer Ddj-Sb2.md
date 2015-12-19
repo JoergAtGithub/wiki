@@ -28,47 +28,41 @@ try using a different Sound API (see the Preferences menu).
 
 ### Mac OS X & Linux
 
-No information. If anyone knows more, edit this page.
+The DDJ-SB2 is a USB class compliant MIDI and audio device, so it should
+work with Mac OS X and Linux without any special drivers. If you can
+confirm that it works, please edit this section to say so.
 
 ## User Options
 
-In the file Pioneer-DDJ-SB2-scripts.js are some options.
+There are some user configurable options for this mapping. To change the
+options, open the .js file in your [controller mapping file
+locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
+for your Pioneer DDJ-SB2 with a text editor such as KWrite or GEdit on
+GNU/Linux, Notepad on Windows, or TextEdit o
 
-    ///////////////////////////////////////////////////////////////
-    //                       USER OPTIONS                        //
-    ///////////////////////////////////////////////////////////////
-    
-    // If true the sync button blinks with the beat, if false led is lit when sync is enabled.
-    PioneerDDJSB2.blinkingSync = true;
-    
-    // If true, the vinyl button activates slip. Vinyl mode is then activated by using shift.
-    // Allows toggling slip faster, but is counterintuitive.
-    PioneerDDJSB2.invertVinylSlipButton = false;
-    
-    // Sets the jogwheels sensivity. 1 is default, 2 is twice as sensitive, 0.5 is half as sensitive.
-    PioneerDDJSB2.jogwheelSensivity = 1.0;
-    
-    // Sets how much more sensitive the jogwheels get when holding shift.
-    // Set to 1 to disable jogwheel sensitivity increase when holding shift.
-    PioneerDDJSB2.jogwheelShiftMultiplier = 20;
-    
-    // Time per step (in ms) for pitch speed fade to normal
-    PioneerDDJSB2.speedRateToNormalTime = 200;
-    
-    // If true Level-Meter shows VU-Master left & right. If false shows level of channel: 1/3  2/4 (depending active deck)
-    PioneerDDJSB2.showVumeterMaster = false;
-    
-    // Cut's Level-Meter low and expand upper. Examples:
-    // 0.25 -> only signals greater 25%, expanded to full range
-    // 0.5 -> only signals greater 50%, expanded to full range
-    PioneerDDJSB2.cutVumeter = 0.5;
-    
-    // If true VU-Level twinkle if AutoDJ is ON.
-    PioneerDDJSB2.twinkleVumeterAutodjOn = true;
-    
-    // If true, by release browser knob jump forward to "position". 
-    PioneerDDJSB2.jumpPreviewEnabled = true;
-    PioneerDDJSB2.jumpPreviewPosition = 0.5;
+  - blinkingSync: If true the sync button blinks with the beat, if false
+    led is lit when sync is enabled.
+  - invertVinylSlipButton: If true, the vinyl button activates slip.
+    Vinyl mode is then activated by using shift. Allows toggling slip
+    faster, but is counterintuitive.
+  - jogwheelSensivity: Sets the jogwheels sensivity. 1 is default, 2 is
+    twice as sensitive, 0.5 is half as sensitive.
+  - jogwheelShiftMultiplier: Sets how much more sensitive the jogwheels
+    get when holding shift. Set to 1 to disable jogwheel sensitivity
+    increase when holding shift.
+  - speedRateToNormalTime: Time per step (in ms) for pitch speed fade to
+    normal
+  - showVumeterMaster: If true Level-Meter shows VU-Master left & right.
+    If false shows level of channel: 1/3 2/4 (depending active deck)
+  - cutVumeter: Cut's Level-Meter low and expand upper. Fore example, at
+    0.5 only signals greater 50% show on the meter, expanded to full
+    range
+  - twinkleVumeterAutodjOn: If true VU-Level twinkle if AutoDJ is ON.
+  - jumpPreviewEnabled: If true, when releasing the browser knob, the
+    preview deck jumps forward to "position". 
+  - jumpPreviewPosition: The place in the track to jump to, on a scale
+    from 0 (beginning of track) to 1 (end of track).
 
 ## Usage
 

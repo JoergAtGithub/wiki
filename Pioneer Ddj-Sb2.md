@@ -41,28 +41,30 @@ folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20fo
 for your Pioneer DDJ-SB2 with a text editor such as KWrite or GEdit on
 GNU/Linux, Notepad on Windows, or TextEdit o
 
-  - blinkingSync: If true the sync button blinks with the beat, if false
-    led is lit when sync is enabled.
-  - invertVinylSlipButton: If true, the vinyl button activates slip.
+  - **blinkingSync**: If true the sync button blinks with the beat, if
+    false led is lit when sync is enabled.
+  - **invertVinylSlipButton**: If true, the vinyl button activates slip.
     Vinyl mode is then activated by using shift. Allows toggling slip
     faster, but is counterintuitive.
-  - jogwheelSensivity: Sets the jogwheels sensivity. 1 is default, 2 is
-    twice as sensitive, 0.5 is half as sensitive.
-  - jogwheelShiftMultiplier: Sets how much more sensitive the jogwheels
-    get when holding shift. Set to 1 to disable jogwheel sensitivity
-    increase when holding shift.
-  - speedRateToNormalTime: Time per step (in ms) for pitch speed fade to
-    normal
-  - showVumeterMaster: If true Level-Meter shows VU-Master left & right.
-    If false shows level of channel: 1/3 2/4 (depending active deck)
-  - cutVumeter: Cut's Level-Meter low and expand upper. Fore example, at
-    0.5 only signals greater 50% show on the meter, expanded to full
-    range
-  - twinkleVumeterAutodjOn: If true VU-Level twinkle if AutoDJ is ON.
-  - jumpPreviewEnabled: If true, when releasing the browser knob, the
-    preview deck jumps forward to "position". 
-  - jumpPreviewPosition: The place in the track to jump to, on a scale
-    from 0 (beginning of track) to 1 (end of track).
+  - **jogwheelSensivity**: Sets the jogwheels sensivity. 1 is default, 2
+    is twice as sensitive, 0.5 is half as sensitive.
+  - **jogwheelShiftMultiplier**: Sets how much more sensitive the
+    jogwheels get when holding shift. Set to 1 to disable jogwheel
+    sensitivity increase when holding shift.
+  - **speedRateToNormalTime**: Time per step (in ms) for pitch speed
+    fade to normal
+  - **showVumeterMaster**: If true Level-Meter shows VU-Master left &
+    right. If false shows level of channel: 1/3 2/4 (depending active
+    deck)
+  - **cutVumeter**: Cut's Level-Meter low and expand upper. Fore
+    example, at 0.5 only signals greater 50% show on the meter, expanded
+    to full range
+  - **twinkleVumeterAutodjOn**: If true VU-Level twinkle if AutoDJ is
+    ON.
+  - **jumpPreviewEnabled**: If true, when releasing the browser knob,
+    the preview deck jumps forward to "position". 
+  - **jumpPreviewPosition**: The place in the track to jump to, on a
+    scale from 0 (beginning of track) to 1 (end of track).
 
 ## Usage
 

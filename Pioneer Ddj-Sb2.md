@@ -105,14 +105,15 @@ Press the deck button. It lights when deck 3-4 is active.
 Between the decks the usual faders, crossfader and EQ knobs can be
 found. A filter knob is also available.
 
-Knobs are available for the master and headphones level. These are
-functional but are not reflected in Mixxx, as they control the
-controller's soundcard directly.
+Knobs are available for the master and headphones level. These control
+the controller's built in sound card; they do not control the software
+gains in Mixxx, so moving them does not move the master and headphone
+gain knobs on screen.
 
-The filter fade button allows to use the crossfader in an innovative way
-that fades accross songs through filtering instead of fading.
+The filter fade button changes the crossfader from fading the volumes
+between decks to using filters to fade between decks.
 
-The TRIM knob controls the gain.
+The TRIM knob controls the deck's gain.
 
 ### Jogwheels, tempo & vinyl mode
 

@@ -86,12 +86,14 @@ controller.
 | Shift + rotary knob                      | Library section selection (scroll through left pane of library)    |
 | Shift + pushing rotary knob              | Toggle expanding library section                                   |
 
-Pushing rotary knob "release" jumps forward. Can be configured in user
-options.
+Pushing the rotary knob to start playing a track in the preview deck
+then releasing it jumps forward in the preview deck. This behavior can
+be disabled in the mapping's user options and the place in the track it
+jumps to can also be configured.
 
-Addition function not belongs to library:
+Addition functions not belonging to library:
 
-  - Shift & load left -\> toggle effekts view in/out
+  - Shift & load left -\> toggle effects view in/out
   - Shift & load right -\> toggle sampler view in/out
 
 ### Switching between decks

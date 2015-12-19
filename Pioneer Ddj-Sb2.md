@@ -190,7 +190,8 @@ measured in beats.
 
 ### Pads - manual loop mode
 
-This mode will make the pads control looping in the way labeled on them.
+This mode allows you to set loops different from the fixed lengths of
+beats in auto loop mode.
 
 | Control       | Function                    |
 | ------------- | --------------------------- |

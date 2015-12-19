@@ -275,10 +275,10 @@ and 2 while holding shift.
 
 ### Auto DJ
 
-Start/stop Auto DJ: Button shift & DECK 4. If at user optins enabled,
-the CH-Level LED's are twinkle.
+Start/stop Auto DJ: Shift + DECK 4. If enabled in the user options
+enabled, the level meter LEDs twinkle.
 
-Skip Track: Button shift & DECK 3.
+Skip Track: Shift + DECK 3
 
 ### Channel fader start
 

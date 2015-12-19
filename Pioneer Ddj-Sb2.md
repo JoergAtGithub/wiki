@@ -82,9 +82,9 @@ controller.
 | Rotary knob                              | Track selection                                                    |
 | Load buttons                             | Loads currently highlighted track to the corresponding deck        |
 | Pushing rotary knob                      | Loads currently highlighted track to the preview deck and plays it |
-| Pushing rotary knob again without rotate | Stop play preview deck                                             |
-| Shift + rotary knob                      | Library section selection                                          |
-| Shift + pushing rotary knob              | toggle expanding library section                                   |
+| Pushing rotary knob again without rotate | Stop the preview deck                                              |
+| Shift + rotary knob                      | Library section selection (scroll through left pane of library)    |
+| Shift + pushing rotary knob              | Toggle expanding library section                                   |
 
 Pushing rotary knob "release" jumps forward. Can be configured in user
 options.

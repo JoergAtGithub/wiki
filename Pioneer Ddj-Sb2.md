@@ -151,15 +151,16 @@ you press shift + slip again, Mixxx will jump back to that point.
 The play and cue pads should be self-explaining. The sync pad toggles
 master sync for a deck, which tries to beatmatch the deck with the
 others, and also syncs the tempo between them, even when the tempo of
-one deck is changed.
+one deck is changed. Refer to the Mixxx manual for how to use master
+sync.
 
 Additional functions can be accessed by holding shift
 
-| Control      | Function                                                                                              |
-| ------------ | ----------------------------------------------------------------------------------------------------- |
-| Shift + play | Plays the track in reverse and enables slipping (see slip mode)                                       |
-| Shift + cue  | Brakes the track as if the power of the motor on a turntable was turned off                           |
-| Shift + sync | Enables quantize mode (this makes most actions, e.g. setting the cue point, fall to the nearest beat) |
+| Control      | Function                                                                                                               |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Shift + play | Plays the track in reverse and enables slipping (see slip mode)                                                        |
+| Shift + cue  | Brakes the track as if the power of the motor on a turntable was turned off                                            |
+| Shift + sync | Enables quantize mode (this makes most actions, e.g. pressing play or setting the cue point, fall to the nearest beat) |
 
 ### Pads - hot cue mode
 

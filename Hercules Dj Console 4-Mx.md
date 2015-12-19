@@ -145,8 +145,8 @@ The beat flashing will be optional in the future, to show the sync button state.
 </tr>
 <tr class="even">
 <td>Shift key</td>
-<td>When this button is pressed and released, the controller itself lights it in orange and the 6 buttons below change from keypad 1 to 6, to keypad 7 to 12. Pressing it again switches back to keypad 1 to 6<br />
-This button has an additional functionality in Mixxx. If you keep the button pressed while pressing another of the fx buttons, it will not switch keypads, and instead it will trigger the actions labeled "shift-pressed" described for that button</td>
+<td>When this button is pressed and released, the controller lights it orange and the 6 buttons below toggle between keypad functions 1-6 to keypad functions 7-12. Pressing it again switches back to keypad 1 to 6<br />
+This button has an additional functionality in Mixxx. If you keep the button pressed while pressing another of the keypad buttons, it will not toggle between buttons 1-6 and 7-12, but instead it will trigger the actions labeled "shift-pressed" described for that button.</td>
 </tr>
 <tr class="odd">
 <td>Keypad 1 to 4</td>

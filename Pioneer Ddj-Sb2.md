@@ -238,7 +238,7 @@ never happened.
 ### Pads - kill (shift + manual loop)
 
 By pressing the manual loop button while holding shift (it should start
-blinking) you can make the pads behave as kill switches.
+blinking) you can make the pads behave as EQ kill switches.
 
 | Control | Function  |
 | ------- | --------- |

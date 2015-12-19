@@ -143,8 +143,8 @@ You can scratch in a similar way as with turntables in vinyl mode.
 
 By pressing shift + "vinyl / slip" you can toggle slip mode. When
 entering slip mode, Mixxx remembers what point exactly of the track
-should be playing even if, for example, you scratch or make a loop. This
-allows to return to the original pace of the track.
+should be playing even if, for example, you scratch or make a loop. When
+you press shift + slip again, Mixxx will jump back to that point.
 
 ### Pads - lower row
 

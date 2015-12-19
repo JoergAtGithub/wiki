@@ -126,17 +126,18 @@ change the tempo of the playing track. Again, holding shift exaggerates
 this effect.
 
 The tempo slider allows changing the tempo of each deck. This normally
-changes the pitch of a track, you can make the pitch stay constant by
-pressing the "key lock / tempo range" button. Additional with shift "key
-lock / tempo range" button the slider will fade slowly to 0. Fadingspeed
-can be set in otions.
+changes the pitch of a track, but you can make the pitch stay constant
+by pressing the "key lock / tempo range" button. Additionally, with
+shift, the "key lock / tempo range" will fade the tempo slowly to 0. The
+fading speed can be customized with the speedRateToNormalTime mapping
+option.
 
 Vinyl mode makes the jogwheels emulate the way turntables work. Vinyl
 mode can be toggled by pressing the "vinyl / slip" button. Touching the
-outer plastic ring of the jogwheel will make it behave as with vinyl
-mode off. Touching the metal disc simulates touching the vinyl record,
-so just putting your hand on it will stop the "vinyl". You can scratch
-in a similar way as with turntables in vinyl mode.
+outer plastic ring of the jogwheel will temporarily change the tempo
+like when vinyl mode is off. Touching the metal disc simulates touching
+the vinyl record, so just putting your hand on it will stop the "vinyl".
+You can scratch in a similar way as with turntables in vinyl mode.
 
 ### Slip mode
 

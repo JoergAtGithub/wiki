@@ -512,7 +512,7 @@ quality, even worse than onboard sound cards.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
 comparison of cheap DJ sound cards. Note that it does not include the
-Numark DJ iO 1 or 2 though.
+Numark DJ iO 2 though.
 
 |                                                                                                                                                                                                                                                |                    |                     |                                                                  |                     |                                                                     |                                      |            |                                |               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------- | ---------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------------------ | ------------- |
@@ -672,7 +672,7 @@ Numark DJ iO 1 or 2 though.
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-26. In class compliant Mode. Hold Select and Dim buttons when plugging
+26. In class compliant mode. Hold Select and Dim buttons when plugging
     in USB cable to enable class compliant mode.
 
 27. Prices listed on this page are the prevailing prices for unused

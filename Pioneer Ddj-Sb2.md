@@ -39,7 +39,7 @@ options, open the .js file in your [controller mapping file
 locations\#user controller mapping
 folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
 for your Pioneer DDJ-SB2 with a text editor such as KWrite or GEdit on
-GNU/Linux, Notepad on Windows, or TextEdit.
+GNU/Linux, Notepad on Windows, or TextEdit on Mac OS X.
 
   - **blinkingSync**: If true the sync button blinks with the beat, if
     false led is lit when sync is enabled.

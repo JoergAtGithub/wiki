@@ -116,7 +116,7 @@ low/mid/high. The top slider controls the filter knob.
 
 Touching EQ will return to EQ mode from the FX modes. Holding EQ and
 touching a slider will reset it to its preset position. (Unfortunately
-this doesn't work for FX and MASTER modes.)
+this doesn't work for MASTER modes.)
 
 ### FX modes
 

@@ -161,6 +161,8 @@ controllers with integrated sound cards to the table towards the bottom.
 
 Click the name of the controller for more information.
 
+\<sortable 2=numeric\>
+
 |                                                                            |                   |                                               |                       |                 |                               |
 | -------------------------------------------------------------------------- | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                                     | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
@@ -180,6 +182,8 @@ Click the name of the controller for more information.
 | [Stanton SCS.1d](Stanton%20SCS.1d)                                         | discontinued      | 1 turntable \[6\]                             | no                    | HSS1394 (MIDI)  | 1.9.1                         |
 | [Vestax VCI-400](Vestax%20VCI-400)                                         | discontinued      | 4 deck all-in-one                             | yes                   | MIDI            | 1.10.1                        |
 
+\</sortable\>
+
 ### Community Supported Mappings
 
 All controllers listed are supported on GNU/Linux, Mac OS X, and Windows
@@ -195,6 +199,8 @@ In Development](#Mappings%20In%20Development) table and refer to the
 [Contributing Mappings](Contributing%20Mappings) page for instructions
 on how to get it included in Mixxx. When the pull request is merged,
 move your controller to this table.
+
+\<sortable 2=numeric\>
 
 |                                                                                                    |                   |                                                            |                                 |                 |                               |
 | -------------------------------------------------------------------------------------------------- | ----------------- | ---------------------------------------------------------- | ------------------------------- | --------------- | ----------------------------- |
@@ -260,16 +266,22 @@ move your controller to this table.
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued      | 2 deck all-in-one                                          | yes                             | MIDI            | 1.9                           |
 
+\</sortable\>
+
 #### Esoteric controllers
 
 These are devices that were not designed for DJing but have been mapped
 to Mixxx anyway.
+
+\<sortable 2=numeric\>
 
 |                                        |             |                         |                       |                 |                               |
 | -------------------------------------- | ----------- | ----------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                 | Price (USD) | Description             | Integrated sound card | Signal protocol | Supported since Mixxx version |
 | [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                    | HID             | 1.11                          |
 | [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                    | HID             | 1.11                          |
+
+\</sortable\>
 
 ### Mappings In Development
 
@@ -284,6 +296,8 @@ When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
 
+\<sortable 2=numeric\>
+
 |                                                              |                    |                   |                       |                 |
 | ------------------------------------------------------------ | ------------------ | ----------------- | --------------------- | --------------- |
 | Device                                                       | Price (USD) \[18\] | Description       | Integrated Sound Card | Signal protocol |
@@ -291,6 +305,8 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                         | $250               | 4 deck all-in-one | yes                   | MIDI            |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250               | 2 deck all-in-one | yes                   | MIDI (and HID?) |
 | [Akai AMX](Akai%20AMX)                                       | $250               | 1 deck control    | yes                   | MIDI            |
+
+\</sortable\>
 
 ### Controllers that do not yet have Mixxx mappings
 
@@ -512,7 +528,7 @@ quality, even worse than onboard sound cards.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
 comparison of cheap DJ sound cards. Note that it does not include the
-Numark DJ iO 2 though.
+Numark DJ iO 2 though. \<sortable 2=numeric\>
 
 |                                                                                                                                                                                                                                                |                    |                     |                                                                  |                     |                                                                     |                                      |            |                                |               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------- | ---------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------------------ | ------------- |
@@ -539,9 +555,13 @@ Numark DJ iO 2 though.
 | Native Instruments [Traktor Audio 2](Traktor%20Audio%202) (Mk1)                                                                                                                                                                                | discontinued       | 4                   | 2 1/4" stereo                                                    | 0                   | none                                                                | none                                 | 24         | 44.1, 48, 88.2, 96             | yes           |
 | [Numark DJ iO](http://www.numark.com/product/djio)                                                                                                                                                                                             | discontinued       | 4                   | 4 RCA, 1 1/4" headphone                                          | 1                   | 1 1/4" mic                                                          | 1 mic                                | 24         | 44.1, 88.2                     | no            |
 
+\</sortable\>
+
 ### Sound cards integrated into controllers
 
 #### Controllers with Mixxx mappings
+
+\<sortable 2=numeric\>
 
 |                                                                      |                    |              |                                                            |             |                                                                          |                |            |                    |       |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
@@ -564,6 +584,8 @@ Numark DJ iO 2 though.
 | [Numark Omni Control](Numark%20Omni%20Control)                       | discontinued       | 4            | 4 RCA, 1 1/4" headphone                                    | 1           | 1/14" mic                                                                | 1 mic          | 24         | 44.1, 88.2         | no    |
 | [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                     | discontinued       | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1 1/4" mic                                                        | 1 phono, 1 mic | ?          | ?                  | ?     |
 | [Tascam US-428](Tascam%20US-428)                                     | discontinued       | 2            | 2 RCA, 1 optical SPDIF, 2 5-pin MIDI                       | 4           | 2 1/4" balanced, 2 1/4" unbalanced, 2 XLR, 1 optical SPDIF, 2 5-pin MIDI | ?              | 24         | 48                 | yes   |
+
+\</sortable\>
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

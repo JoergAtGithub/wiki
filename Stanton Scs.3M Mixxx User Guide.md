@@ -120,19 +120,22 @@ this doesn't work for MASTER modes.)
 
 ### FX modes
 
-Touch one of the four buttons to the side of the gain slider to control
-one of the effect chains. Top button selects first effect chain and so
-forth. In this mode, the vertical sliders control the first three knobs
-of the first effect in the selected effect chain. The top slider
-controls dry/wet mix.
+In FX mode you can control an effect unit. The three vertical sliders
+control the first three effect parameters and the top slider controls
+dry/wet mix. The four buttons below EQ refer to the four effect units,
+we'll call them FX1, FX2, FX3, and FX4. Top button (FX1) selects first
+effect chain and so forth.
 
-You can assign FX chains to the deck by holding FX and pressing one of
-the four buttons next to the gain slider. So to assign FX chain 1 to the
-current deck, hold FX and press the top button (right below EQ).
+To enter FX mode you can either press FX to switch to the preselected
+effect unit, or press FX1 through FX4 to switch directly to the desired
+effect unit. You can assign FX chains to the deck by holding FX and
+pressing FX1 through FX4 to assign these effects to the deck. So to
+assign FX unit 1 to the current deck, hold FX and press the top button
+(right below EQ).
 
-When holding FX, the volume slider can be used to adjust channel gain.
-Hold FX and slide up to make the channel louder. Hold FX-EQ and touch
-the gain slider to reset gain.
+You can change the effect loaded into an effect unit by holding its
+button (FX1 through FX4) and tapping left/right on the top slider to
+cycle through the effects.
 
 ### MASTER mode
 

@@ -71,9 +71,9 @@ and pressing certain buttons.
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software
 master volume control. Peak display is only generated from software,
-however. So if you see peaking, it won't help to lower the master volume
-knob -- adjust the knob in the Mixxx GUI or lower the gain of the
-playing tracks.
+however. So if you see or hear clipping, it won't help to lower the
+master volume knob -- adjust the knob in the Mixxx GUI or lower the gain
+of the playing tracks.
 
 ### Unused Buttons
 

@@ -1,7 +1,5 @@
 # Pioneer DDJ-SB2
 
-This page based on DDJ-SB manual. Thanks.
-
 [[/media/hardware/pioneer-ddj-sb2_1.jpg|]]
 
 ``` 
@@ -12,7 +10,7 @@ This page based on DDJ-SB manual. Thanks.
 
 The Pioneer DDJ-SB2 is an all-in-one 4 deck USB MIDI controller with a
 built in soundcard. Mixxx allows it to control 4 decks. It is compatible
-with Mixxx since version 1.12.
+with Mixxx since version 2.0.
 
 ## Drivers
 

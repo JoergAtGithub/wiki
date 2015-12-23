@@ -246,9 +246,11 @@ single-deck mode\*:
 
 ## 
 
-# Proposed mapping for 1.12
+# 4deck mapping
 
-The following documentation describes a version proposed for Mixxx 1.12.
+To use this alternate mapping in Mixxx 2.0, select the mapping labelled
+"Stanton SCS.3d 4deck" from the drop down menu in the controller
+preferences.
 
 ## General controls
 

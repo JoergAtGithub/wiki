@@ -22,7 +22,7 @@ Matrix" (2nd state). For information on how to do that read the user
 guide of the device (linked above).
 
 The behavior of the grid buttons depends on which layer is active, which
-is toggled by pressing the Layer button. The color of the text indicates
+is changed by pressing the Layer button. The color of the text indicates
 what the button does in that layer, e.g. the buttons of the last row
 activate hotcue 4 when the green layout is selected, but act as the play
 button when the red layer is selected.

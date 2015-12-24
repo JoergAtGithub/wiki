@@ -5,7 +5,7 @@
 [Manufacturer's product
 page](http://www.stantondj.com/stanton-controllers-systems/scs3d.html)
 
-\======= Mapping description ======
+\======= Default mapping description ======
 
 [See a walk-through video\!](http://www.youtube.com/watch?v=8DUpTikA8u0)
 

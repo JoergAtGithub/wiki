@@ -67,11 +67,11 @@ Mixxx only detects sound cards on startup. If you plugged your sound
 card in after starting Mixxx, restart Mixxx and look again under Sound
 Hardware in Options \> Preferences.
 
-If you are running Mixxx on Windows 10, try following
-\[[http://wiki.audacityteam.org/wiki/Windows\_10\_OS\#solutions|these](http://wiki.audacityteam.org/wiki/Windows_10_OS#solutions%7Cthese)
-suggestions\] from Audacity. Mixxx and Audacity both use the PortAudio
-library to access sound cards on multiple OSs, so those suggestions
-apply to both programs.
+If you are running Mixxx on Windows 10, try following [these
+suggestions](http://wiki.audacityteam.org/wiki/Windows_10_OS#solutions)
+from Audacity. Mixxx and Audacity both use the PortAudio library to
+access sound cards on multiple OSs, so those suggestions apply to both
+programs.
 
 If you are starting Mixxx from a command line on GNU/Linux, you probably
 need to suspend or disable PulseAudio. On most GNU/Linux distributions

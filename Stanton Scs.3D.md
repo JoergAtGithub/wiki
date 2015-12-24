@@ -246,10 +246,10 @@ single-deck mode\*:
 
 ## 
 
-# 4deck mapping
+# Alternate mapping
 
-To use this alternate mapping in Mixxx 2.0, select the mapping labelled
-"Stanton SCS.3d 4deck" from the drop down menu in the controller
+To use this alternate mapping in Mixxx 2.0, select the mapping labeled
+"Stanton SCS.3d Alternate" from the drop down menu in the controller
 preferences.
 
 ## General controls

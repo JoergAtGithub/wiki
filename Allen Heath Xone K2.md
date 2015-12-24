@@ -15,3 +15,5 @@ Heath Xone K1](Allen%20&%20Heath%20Xone%20K1) has the same controls
 without a sound card for $50 less.
 
 # Default Mixxx mapping
+
+[[/media/xonek2_mapping.png|]]

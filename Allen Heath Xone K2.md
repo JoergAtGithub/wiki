@@ -16,6 +16,11 @@ sound card for $50 less.
 
 # Default Mixxx mapping
 
+For the default mapping to work correctly, the device must be set to
+operate on MIDI channel 16 and "latching layers" must be set to "Switch
+Matrix" (2nd state). For information on how to do that read the devices
+documentation (linked above).
+
 The behavior of the grid buttons depends on which layer is active. The
 color of the text indicates what the button does in that layer, e.g. the
 buttons of the last row activate hotcue 4 when the green layour is

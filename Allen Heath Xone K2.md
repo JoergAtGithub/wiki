@@ -16,4 +16,8 @@ without a sound card for $50 less.
 
 # Default Mixxx mapping
 
+The behaviour of the grid buttons depends on which layer is active. The
+color of the text indicates what the button does on that layer, e.g. the
+buttons of the last row activate hotcue 4 when the green layour is
+selected, but act as the play button when the red layer is selected.
 [[/media/xonek2_mapping.png|]]

@@ -15,8 +15,8 @@ with balanced XLR master outputs and a balanced microphone input.
 
 [[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]
 
-1.  Jog wheel: Pressed scratching, while pause seeking, while playing
-    pitchbend
+1.  Jog wheel: Scratch when pressed, seek while paused, pitchbend while
+    playing
 2.  Fast-forward/rewind, with shift: jump to start/end
 3.  Pitch Bend -/+
 4.  Speed control, Tempo and pitch, depending on keylock 

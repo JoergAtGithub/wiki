@@ -41,6 +41,6 @@ with balanced XLR master outputs and a balanced microphone input.
 22. Multifunctional pads mode display (hardwired)
 23. Multifunctional pads mode selection (hardwired)
 24. Shift
-25. Synch enable
+25. Sync enable
 26. Cue
 27. Play/pause

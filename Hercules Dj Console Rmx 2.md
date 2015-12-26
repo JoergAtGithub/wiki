@@ -13,7 +13,7 @@ with balanced XLR master outputs and a balanced microphone input.
 
 ## Mapping
 
-(numbers matching the included Hercules reference card)
+[[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]
 
   - 1 Jog wheel: Pressed scratching, while pause seeking, while playing
     pitchbend

@@ -13,7 +13,7 @@ with balanced XLR master outputs and a balanced microphone input.
 
 ## Mapping
 
-(numbers matched the included Hercules reference cards)
+(numbers matching the included Hercules reference card)
 
   - 1 Jog wheel: Pressed scratching, while pause seeking, while playing
     pitchbend

@@ -74,10 +74,9 @@ page](http://www.mixxx.org/download.php), or checkout a snapshot from
 our git repository: (See [Using Git](Using%20Git) for more details &
 options.)
 
-  - For the latest stable branch: `git clone -b 1.11
-    https://github.com/mixxxdj/mixxx.git`
-  - For the beta branch: `git clone -b 1.12
-    https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b 1.12
+    https://github.com/mixxxdj/mixxx.git` (the git branch for 2.0 is
+    still called 1.12)
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
 

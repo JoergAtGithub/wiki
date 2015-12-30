@@ -54,7 +54,7 @@ crashed.
 <!-- end list -->
 
   - **Windows users** can copy the terminal buffer by clicking the
-    window's icon in the top left corner and then selecting
+    Windows icon in the top left corner and then selecting
     *Edit*--\>*Select All*. Everything selected will be inverted (so
     black becomes white, white becomes black, etc) and hitting *Enter*
     will copy the selection to the clipboard and deselect everything.

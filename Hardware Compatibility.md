@@ -336,6 +336,15 @@ Available DJ splitter cables:
 
 ## Sound cards
 
+To be able to hear the next track you want to mix in before your
+audience hears it, you need two separate sound outputs. **It is
+recommended to use one sound card with at least 4 mono output channels
+(2 stereo channels).** Most computers come with a sound card built into
+the motherboard with only 1 stereo 1/8“ headphone output (2 mono
+channels). Onboard sound cards built into computers are generally not
+high quality and may pick up interference from other devices in the
+computer such as the power supply or hard drive.
+
 ### Compatibility with Mixxx
 
 Mixxx can use any sound card that your OS has a driver to use. The
@@ -351,10 +360,9 @@ Linux](http://ffado.org/?q=devicesupport/list).
 
 ### Sound card considerations
 
-**It is recommended to use a sound card with at least 4 mono output
-channels with Mixxx.** Playing audio at 16 bit sample depths and 44.1
-kHz sample rate is fine for DJing; almost all music is published in this
-format (which was the standard set by audio CDs).
+Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
+for DJing; almost all music is published in this format (which was the
+standard set by audio CDs).
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
@@ -456,7 +464,7 @@ running the signal through the computer and back out. However, to use
 the full output level of the sound card for DJing, be sure this knob is
 set to have all the output signal coming from the computer.
 
-### Standalone USB sound cards
+### Stand-alone USB sound cards
 
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor

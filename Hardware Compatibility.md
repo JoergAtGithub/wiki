@@ -423,7 +423,7 @@ into your sound card, it will need a microphone preamplifier. If you
 want to plug an electric guitar or bass into your sound card, it will
 need an instrument preamplifier.
 
-#### Connector types
+#### Connector and cable types
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for

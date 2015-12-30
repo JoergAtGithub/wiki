@@ -53,24 +53,27 @@ crashed.
 
 <!-- end list -->
 
-  - **Windows users** can copy the terminal buffer by clicking the
-    window's icon in the top left corner and then selecting
-    *Edit*--\>*Select All*. Everything selected will be inverted (so
-    black becomes white, white becomes black, etc) and hitting *Enter*
-    will copy the selection to the clipboard and deselect everything.
-    Paste the clipboard buffer into a notepad document and attach that
-    to a bug report. *Note:* a Windows console will not update while any
-    part of it is selected.
+  - **Windows users** can copy the terminal buffer into a text file:
+    1.  Click the window's icon in the top left corner.
+    2.  Choose *Edit*--\>*Select All*. Everything selected will be
+        inverted (so black becomes white, white becomes black, etc)
+        *Note:* a Windows console will not update while any part of it
+        is selected.
+    3.  Press *Enter* to copy the selection to the clipboard and
+        de-select everything.
+    4.  Paste the clipboard buffer into a Notepad text document.
+    5.  Attach that to a bug report. (See below.)
   - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 
 <!-- end list -->
 
-1.  Report a bug using the [Mixxx bug reporting system on
-    Launchpad](https://launchpad.net/mixxx). Bugs filed here are tracked
-    by developers and will not fall through the cracks as easily as
-    using the IRC channel or mixxx-devel. (If another bug matches your
-    issue, please make a comment on that one including your system
+1.  [Report a bug](https://bugs.launchpad.net/mixxx/+filebug) using the
+    [Mixxx bug reporting system on
+    Launchpad](https://bugs.launchpad.net/mixxx/). Bugs filed here are
+    tracked by developers and will not fall through the cracks as easily
+    as using the IRC channel or mixxx-devel. (If another bug matches
+    your issue, please make a comment on that one including your system
     details instead of filing a new bug.) Make sure to **attach** your
     back-trace (click *Add attachment or patch*.) Do not paste it in the
     comment.

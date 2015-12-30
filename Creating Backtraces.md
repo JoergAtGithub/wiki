@@ -28,7 +28,7 @@ crashed.
     mixxx.exe`
 3.  Load optional debug symbols \*.pdb installed on your system.
     `add-symbol-file mixxx.pdb`
-4.  Continue with step 2 in the section below 
+4.  [Continue below](#for-all-of-the-above)
 
 ## Linux & Mac OS X with Xcode 4.x
 
@@ -42,6 +42,10 @@ crashed.
     ./mixxx --controllerDebug --developer --resourcePath res`
 
 <!-- end list -->
+
+1.  [Continue below](#for-all-of-the-above)
+
+## For all of the above
 
 1.  When the gdb prompt appears, type `set height 0` and press enter to
     disable screen paging.

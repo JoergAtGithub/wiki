@@ -601,7 +601,7 @@ Numark DJ iO 2 though. \<sortable 2=numeric\>
 
 3.  Mapping has buttons to toggle between decks 1/3 and decks 2/4.
 
-4.  Mapping supports 2-deck switching
+4.  Mapping supports 4-deck switching
 
 5.  Mapping supports 4-deck switching
 

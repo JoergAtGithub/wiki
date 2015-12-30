@@ -66,13 +66,13 @@ crashed.
 
 <!-- end list -->
 
-1.  Submit the bug using the [Mixxx bug reporting system on
-    Launchpad](https://launchpad.net/mixxx). Bugs filed here are
-    trackable by developers and will not fall through the cracks as
-    easily as using the IRC channel or mixxx-devel. Make sure that the
-    bug you are filing is new, and if you think that another bug might
-    be the same one, post comments on it with your backtrace and any
-    other useful info.
+1.  Report a bug using the [Mixxx bug reporting system on
+    Launchpad](https://launchpad.net/mixxx). Bugs filed here are tracked
+    by developers and will not fall through the cracks as easily as
+    using the IRC channel or mixxx-devel. (If another bug matches your
+    issue, please make a comment on that one instead of filing a new
+    one.) Make sure to **attach** your back-trace (click "Add attachment
+    or patch.") Do not just paste it in the comment.
 2.  If you do not want to use Launchpad, post the results in the forum,
     email them to mixxx-devel, or [pastebin](http://www.pastebin.ca)
     them and drop the link on IRC. We'll then try to figure out where

@@ -345,13 +345,12 @@ channels). Onboard sound cards built into computers are generally not
 high quality and may pick up interference from other devices in the
 computer such as the power supply or hard drive.
 
-### Compatibility with Mixxx
+#### Compatibility
 
-Mixxx can use any sound card that your OS has a driver to use. The
-tables below list some USB soundcards that could be used for DJing. All
-listed sound cards work with Mac OS X. All except the Griffin DJ Connect
-and Apogee Duet work with Windows. Most work with Linux, but not all;
-check the table for details.
+As stated above, Mixxx can use any sound card that your OS has a driver
+to use. All sound cards listed in the table below work with Mac OS X.
+All except the Griffin DJ Connect and Apogee Duet work with Windows.
+Most work with Linux, but not all; check the table for details.
 
 If you have a Firewire/IEEE 1394 interface, the only way to use it with
 Linux is with JACK (not ALSA). The FFADO project has [a list of Firewire

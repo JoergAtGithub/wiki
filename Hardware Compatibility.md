@@ -345,7 +345,7 @@ channels). Onboard sound cards built into computers are generally not
 high quality and may pick up interference from other devices in the
 computer such as the power supply or hard drive.
 
-#### Compatibility
+### Compatibility
 
 As stated above, Mixxx can use any sound card that your OS has a driver
 to use. All sound cards listed in the table below work with Mac OS X.

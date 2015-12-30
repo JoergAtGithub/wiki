@@ -12,84 +12,21 @@ Bare minimum equipment for DJing:
 
 Helpful but not strictly necessary:
 
+  - sound card with 4 mono outputs (2 stereo pairs)
   - controller and/or turntables with timecode vinyl
   - laptop stand
   - surge protector
   - cases for laptop, controller, and headphones
-  - backpack or some other carrying case
+  - backpack or other carrying case
   - mouse
   - portable hard drive
   - powered USB hub
-
-To be able to hear the next track you want to mix in before your
-audience hears it, you need two separate sound outputs. It is
-recommended to use one sound card with at least 4 mono output channels
-(2 stereo channels). Most computers come with a sound card built into
-the motherboard with only 1 stereo 1/8" headphone output (2 mono
-channels). While it is possible to get a splitter cable or cheap sound
-card with only 2 more outputs and use it together with your onboard
-sound card, it is not recommended (see [explanation
-below](#Using-multiple-sound-cards)). Onboard sound cards built into
-computers are generally not high quality and may pick up interference
-from other devices in the computer such as the power supply or hard
-drive. When mixing digitally in software on your CPU, use 2 channels for
-Mixxx's Master output and 2 channels for Mixxx's headphone output (or 1
-for each if using a splitter cable). When mixing on an analog hardware
-mixer, which is traditional (but not necessary) with [vinyl
-control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
-Mixxx sends the unmixed output from each deck to the hardware mixer
-(using 2 channels per deck) and the headphones are plugged into the
-hardware mixer.
-
-Most digital DJs prefer to use a DJ controller rather than just their
-keyboard and mouse for more intuitive control of their software. Most DJ
-controllers that cost $200 or more bundle a sound card with the
-controller. Cheaper controllers are available without integrated sound
-cards.
-
-**The simplest setup for new DJs is an all-in-one controller that can
-control mixing, seeking, looping, cues, and effects and has an
-integrated sound card.** Users who want to use [vinyl
-control](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
-will need a sound card with 2 inputs per deck (so 4 inputs for a
-traditional 2 deck setup) and a phono preamp for each deck. The phono
-preamps can either be in the turntable, in the sound card, or stand
-alone devices. A few small controllers may be of particular interest to
-vinyl DJs, particularly the [Novation Dicer](Novation%20Dicer) and [Akai
-AMX](Akai%20AMX). Some higher-end all-in-one controllers include sound
-cards with phono preamps. Users who also want to produce music may
-consider saving money and get a controller without a sound card and
-getting a separate, high quality sound card suitable for recording.
-
-These are all just guidelines; research your options and decide what you
-think will work best for the way you want to DJ.
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.
 
 See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
 resources.
-
-### Headphones
-
-DJ headphones are generally better quality than typical consumer
-headphones. Importantly, they are designed to have good isolation,
-meaning they block outside sound. This allows the DJ to focus on the
-sound in the headphones better without having to turn up the volume to
-drown out sound from the monitors, PA system, and chatter. Also, DJ
-headphones have hinges or flexible headbands that allow the DJ to take
-off one headphone cup to hear the monitor or PA output better in one ear
-and compare it to the headphone output in the other ear. When shopping
-for headphones, consider how well they isolate sound and their
-durability. The most frequent places that headphones break are the cable
-attachment point and the headband. Look for headphones with detachable
-cables, metal headbands, and other individually replaceable parts.
-
-In-ear monitors isolate sound better than headphones but are more
-expensive. Good DJ headphones can be purchased new for $150-250; IEMs
-with comparable sound quality cost $350-$1000. They may be a sound
-investment for musicians who play often in very loud environments to
-preserve their hearing.
 
 ## Hardware compatibility with Mixxx
 

@@ -389,8 +389,8 @@ than a sound card built into a computer. However, the highest quality
 sound cards like the Apogee Duet and RME Babyface Pro are stand alone
 devices not integrated into controllers.
 
-If a controller with a built in sound card device is only powered by a
-USB cable, they may not be able to reach very high output levels.
+If a controller with a built in sound card is only powered by a USB
+cable, they may not be able to reach very high output levels.
 Controllers for which this is a known issue have that information on
 their wiki page. In that case, the electricity available from a USB port
 has to power the sound card as well as the lights and other components

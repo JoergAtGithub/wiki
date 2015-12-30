@@ -9,7 +9,9 @@ crashed.
     Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) (get
     the official release version) and save it to the root of your C:
     drive. (`C:\`)
-2.  Download debug symbols of Mixxx (TODO: not yet provided)
+2.  Download Mixxx's debug symbol file:
+    1.  32-bit: FIXME
+    2.  64-bit: FIXME
 3.  Open a Windows prompt: 
 
 <!-- end list -->
@@ -25,8 +27,8 @@ crashed.
 2.  Run GDB: type the following command and press Enter: `C:\gdb
     mixxx.exe`
 3.  Load optional debug symbols \*.pdb installed on your system.
-    `add-symbol-file libshout.pdb`
-4.  Continue with step 2. in the section below 
+    `add-symbol-file mixxx.pdb`
+4.  Continue with step 2 in the section below 
 
 ## Linux & Mac OS X with Xcode 4.x
 

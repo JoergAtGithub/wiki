@@ -312,19 +312,26 @@ Mixxx logs debugging information, [MIDI/HID/etc.
 messages](command_line_options) it receives and script functions it
 loads in the `mixxx.log` plain text file. When you [report a
 bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC
-channel, please attach your `mixxx.log` file,
+channel, please attach your `mixxx.log` file to help us help you.
 
   - **Linux:** \~/.mixxx/mixxx.log
-  - **Windows:** `C:\Users\<username>\AppData\Mixxx` on Vista and up,
-    `%USERPROFILE%\Local Settings\Application Data\Mixxx` on XP and
-    below. On Windows XP, replace `Users` with `Documents and Settings`.
-    The `%USERPROFILE%\AppData` folder is hidden, so if you have not
-    already, you will need to set Windows explorer to [How to show or
-    hide file name extensions in Windows
-    Explorer](/http% A%20%20*%20Note/%20The%20file%20may%20not%20show%20up%20as%20''mixxx.log''%20unless%20you've%20unchecked%20''Hide%20extensions%20for%20known%20file%20types''%20in%20the%20Windows%20Explorer%20folder%20options.%20Until%20then%20it%20is%20just%20''mixxx'',%20the%20only%20text%20file%20in%20that%20location.%20By%20default%20in%20Windows%207%20and%20up,%20known%20file%20types%20are%20set%20to%20hide.%20See%20[[http///support.microsoft.com/kb/865219)
+  - **Windows:** `C:\Users\<username>\AppData\Mixxx\mixxx.log` on Vista
+    and up, `%USERPROFILE%\Local Settings\Application
+    Data\Mixxx\mixxx.log` on XP and below. On Windows XP, replace
+    `Users` with `Documents and Settings`. The `%USERPROFILE%\AppData`
+    folder is hidden by default, so if you have not already, you will
+    need to set Windows explorer to [show hidden files and
+    folders](https://support.quickbooks.intuit.com/support/Articles/INF12729).
+  - Note: The file may not show up as `mixxx.log` unless you've
+    unchecked `Hide extensions for known file types` in the Windows
+    Explorer folder options. Until then it is just `mixxx`, the only
+    text file in that location. By default in Windows 7 and up, known
+    file types are set to hide. See [How to show or hide file name
+    extensions in Windows
+    Explorer](http://support.microsoft.com/kb/865219).
   - **Mac OS X:** `/Users/<username>/Library/Application Support/Mixxx`
-  - Note: Apple made the user library folder hidden by default with OSX
-    10.7 ff., use one of the following methods to open the Mixxx folder.
+  - Note: The user library folder hidden by default, so use one of the
+    following methods to open the Mixxx folder.
 
 <!-- end list -->
 

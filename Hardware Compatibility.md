@@ -370,29 +370,7 @@ Custom caps available:
 [Here](https://www.youtube.com/watch?v=hFyTtiLDqVA) is a video comparing
 different brands.
 
-## Sound cards
-
-### Compatibility with Mixxx
-
-Mixxx can use any sound card that your OS has a driver to use. The
-tables below list some USB soundcards that could be used for DJing. Some
-of them would not be very good choices for most DJs; read [\#What to
-look for in a soundcard](#What%20to%20look%20for%20in%20a%20soundcard)
-and consider your needs when looking through the tables. All listed
-sound cards work with Mac OS X and Windows unless otherwise noted. Most
-work with Linux, but not all; check the table for details.
-
-The [ALSA sound card
-matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
-Linux-compatible soundcards. Linux users may also benefit from [these
-soundcard resources for Linux
-DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
-author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
-1394 interface, the only way to use it with Linux is with JACK (not
-ALSA). The FFADO project has [a list of Firewire interfaces compatible
-with Linux](http://ffado.org/?q=devicesupport/list).
-
-### Splitter cables
+## Splitter cables
 
 Splitter cables are **the cheapest way** to get two separate sound
 outputs from your computer. These plug into the onboard sound card built
@@ -418,6 +396,28 @@ Available DJ splitter cables:
   - [Griffin DJ
     Cable](https://griffintechnology.com/us/products/audio/dj-accessories/dj-cable):
     $20
+
+## Sound cards
+
+### Compatibility with Mixxx
+
+Mixxx can use any sound card that your OS has a driver to use. The
+tables below list some USB soundcards that could be used for DJing. Some
+of them would not be very good choices for most DJs; read [\#What to
+look for in a soundcard](#What%20to%20look%20for%20in%20a%20soundcard)
+and consider your needs when looking through the tables. All listed
+sound cards work with Mac OS X and Windows unless otherwise noted. Most
+work with Linux, but not all; check the table for details.
+
+The [ALSA sound card
+matrix](http://www.alsa-project.org/main/index.php/Matrix:Main) lists
+Linux-compatible soundcards. Linux users may also benefit from [these
+soundcard resources for Linux
+DJs](http://www.pogo.org.uk/~mark/linuxdj/), courtesy of Mark Hills, the
+author of [xwax](http://www.xwax.co.uk/). If you have a Firewire/IEEE
+1394 interface, the only way to use it with Linux is with JACK (not
+ALSA). The FFADO project has [a list of Firewire interfaces compatible
+with Linux](http://ffado.org/?q=devicesupport/list).
 
 ### Sound card considerations
 

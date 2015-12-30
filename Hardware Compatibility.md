@@ -504,31 +504,22 @@ signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
 smaller percentage), and lower crosstalk (more negative dB value) are
 better.
 
-### Using multiple sound cards
-
-Mixxx can use multiple sound cards at the same time. However, before
-Mixxx 2.0, this would result in crackling in the headphones. Every sound
-card has its own clock crystal and no two are precisely the same
-frequency even if the devices are the same model and from the same
-production run. Mixxx before 2.0 synchronized its audio generation to
-the clock crystal of whichever device is selected as the master output
-(deck 1 output if no master is selected) so that the crowd won't hear
-the artifacts. As a result, secondary devices either fall behind or run
-ahead of the primary one, causing them to play silence until Mixxx
-generates the next audio buffer exactly in time for the primary device.
-Playing bits of audio interspersed with bits of silence sounds like
-crackling. Mixxx 2.0 can compensate for this, but it is still better to
-use one sound card with 4 outputs.
-
 ### Standalone USB sound cards
 
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor
-quality, even worse than onboard sound cards.
+quality, even worse than onboard sound cards. Mixxx 2.0 can use multiple
+sound cards at the same time (without crackling from the sound cards'
+clocks drifting apart), so it is possible to use a 2 output sound card
+for the main stereo output and the onboard sound card on a computer for
+headphones. However, a higher quality, 4 output sound card is
+recommended.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
 comparison of cheap DJ sound cards. Note that it does not include the
-Numark DJ iO 2 though. \<sortable 2=numeric\>
+Numark DJ iO 2 though.
+
+\<sortable 2=numeric\>
 
 |                                                                                                                                                                                                                                                |                    |                     |                                                                  |                     |                                                                     |                                      |            |                                |               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------- | ---------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------ | ---------- | ------------------------------ | ------------- |

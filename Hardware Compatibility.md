@@ -340,10 +340,11 @@ Available DJ splitter cables:
 To be able to hear the next track you want to mix in before your
 audience hears it, you need two separate sound outputs. **It is
 recommended to use one sound card with at least 4 mono output channels
-(2 stereo channels).** Most computers come with a sound card built into
-the motherboard with only 1 stereo 1/8“ headphone output (2 mono
-channels). Onboard sound cards built into computers are generally not
-high quality and may pick up interference from other devices in the
+(2 stereo channels).** For vinyl control, it is recommended to use a
+sound card with phono preamps. Most computers come with a sound card
+built into the motherboard with only 1 stereo 1/8“ headphone output (2
+mono channels). Onboard sound cards built into computers are generally
+not high quality and may pick up interference from other devices in the
 computer such as the power supply or hard drive.
 
 ### Compatibility

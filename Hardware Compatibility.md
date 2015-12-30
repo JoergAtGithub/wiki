@@ -351,12 +351,10 @@ Linux](http://ffado.org/?q=devicesupport/list).
 
 ### Sound card considerations
 
-As explained [at the top of the
-page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
-use a sound card with at least 4 mono output channels with Mixxx.
-Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
-for DJing; almost all music is published in this format (which was the
-standard set by audio CDs).
+**It is recommended to use a sound card with at least 4 mono output
+channels with Mixxx.** Playing audio at 16 bit sample depths and 44.1
+kHz sample rate is fine for DJing; almost all music is published in this
+format (which was the standard set by audio CDs).
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can

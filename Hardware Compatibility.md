@@ -419,8 +419,47 @@ page](#What-hardware-is-needed-to-DJ-with-Mixxx?), it is recommended to
 use a sound card with at least 4 mono output channels with Mixxx.
 Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
 for DJing; almost all music is published in this format (which was the
-standard set by audio CDs). Sound cards built into DJ controllers meet
-these minimum requirements.
+standard set by audio CDs).
+
+Sound cards often have multiple connectors for a single channel,
+resulting in more connectors than channels. So, not every connector can
+send or receive an independent signal. Some sound cards made for DJing
+have 4 output channels with 4 mono output connectors and 1 stereo
+headphone connector. This does not mean that the sound card can send out
+6 different signals at the same time; rather, the signal on 2 of the
+mono outputs and the stereo headphone output would be the same.
+
+When considering specifications, higher dynamic range, higher
+signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
+(Total Harmonic Distortion + Noise; look for a more negative dB value or
+smaller percentage), and lower crosstalk (more negative dB value) are
+better. Cheap sound cards tend to not have these specifications
+published.
+
+#### Stand-alone sound cards versus sound cards integrated with controllers
+
+Most DJ controllers that cost more than $200 have a 4 output sound card
+built into them. This is more convenient to transport and set up than a
+stand-alone sound card plus a controller because it only requires one
+device with one USB cable. Any of these produce better quality sound
+than a sound card built into a computer. However, the highest quality
+sound cards like the Apogee Duet and RME Babyface Pro are stand alone
+devices not integrated into controllers.
+
+If a controller with a built in sound card device is only powered by a
+USB cable, they may not be able to reach very high output levels.
+Controllers for which this is a known issue have that information on
+their wiki page. In that case, the electricity available from a USB port
+has to power the sound card as well as the lights and other components
+of the controller. Insufficient power for a high output level is rarely
+an issue for standalone USB sound cards that are not built into
+controllers. Some controllers with built in sound cards have an
+additional power adapter to ensure the sound card output has enough
+power. A low sound card output can be worked around by running it
+through a mixer and applying gain or a stand-alone headphone amplifier
+if the headphone output is too quiet.
+
+#### Recording sound cards
 
 If you are interested in recording music, consider getting a higher
 quality sound card that supports 24 bit sample depths and a 96 kHz
@@ -435,17 +474,7 @@ represented by the signal. Humans generally can't hear frequencies above
 20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
 of 22.05 kHz, is fine for playback.
 
-Sound cards built into controllers may not be able to reach very high
-output levels if the device is only powered by a USB cable. In that
-case, the electricity available from a USB port has to power the sound
-card as well as the lights and other components of the controller.
-Insufficient power for a high output level is rarely an issue for
-standalone USB sound cards that are not built into controllers. Some
-controllers with built in sound cards have an additional power adapter
-to ensure the sound card output has enough power. A low sound card
-output can be worked around by running it through a mixer and applying
-gain or a stand-alone headphone amplifier if the headphone output is too
-quiet.
+#### Connector types
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
@@ -456,13 +485,15 @@ run long cables directly into an amplifier or active speakers without
 going through an analog mixer. Balanced signals reject interference and
 are less susceptible to ground loop hum issues (which can be a problem
 when plugging unbalanced gear into separate power sources). However,
-most venues have DJs plug into analog DJ mixers, which typically only
+most venues have DJs plug into hardware DJ mixers, which typically only
 have RCA inputs (RCA cables cannot be balanced). Most home/computer
 speakers have RCA and/or 1/8" TRS stereo inputs. Most live sound mixers
 have balanced 1/4" TRS mono inputs. If you need to interconnect balanced
 and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
+
+#### Preamplifiers
 
 Turntables, microphones, and electric guitars all output quiet signals
 that need to be amplified to line level by a preamplifier before a sound
@@ -482,20 +513,6 @@ software, but it is better to do it in hardware. The phono preamp can be
 in the turntable, in the sound card, or a stand alone device. Many
 higher-end all-in-one controllers include sound cards with phono
 preamps.
-
-Sound cards often have multiple connectors for a single channel,
-resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. Some sound cards made for DJing
-have 4 output channels with 4 mono output connectors and 1 stereo
-headphone connector. This does not mean that the sound card can send out
-6 different signals at the same time; rather, the signal on 2 of the
-mono outputs and the stereo headphone output would be the same.
-
-When considering specifications, higher dynamic range, higher
-signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
-(Total Harmonic Distortion + Noise; look for a more negative dB value or
-smaller percentage), and lower crosstalk (more negative dB value) are
-better.
 
 ### Standalone USB sound cards
 

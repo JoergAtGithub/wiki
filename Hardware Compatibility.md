@@ -511,8 +511,6 @@ Numark DJ iO 2 though.
 
 ### Sound cards integrated into controllers
 
-#### Controllers with Mixxx mappings
-
 \<sortable 2=numeric\>
 
 |                                                                      |                    |              |                                                            |             |                                                                          |                |            |                    |       |

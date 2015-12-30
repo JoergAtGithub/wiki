@@ -29,8 +29,3 @@ directory:
     `/usr/local/share/mixxx/controllers`
   - OS X: `/Applications/Mixxx.app/Contents/Resources/controllers/`
   - Windows: `C:\Program Files\Mixxx\controllers`
-
-## Legacy Versions of Mixxx
-
-For Mixxx 1.10 and earlier, replace 'controllers' with 'midi' in the
-above paths.

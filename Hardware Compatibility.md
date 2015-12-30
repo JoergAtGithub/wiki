@@ -43,8 +43,8 @@ Mixxx work with it.
 Unlike some proprietary DJ programs, Mixxx works with any sound card
 that your operating system has a driver to use. USB sound cards
 compliant with the USB audio class standard do not need any special
-drivers. Most USB sound cards are not class compliant. Sound cards that
-are advertised for use with iOS devices are class compliant.
+drivers for Linux or Mac OS X, however they do for Windows. Sound cards
+that are advertised for use with iOS devices are class compliant.
 
 Mixxx can work with any controller that sends MIDI or HID signals to
 your computer; it just needs a controller mapping to tell Mixxx what to

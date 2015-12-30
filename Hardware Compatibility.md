@@ -459,20 +459,26 @@ power. A low sound card output can be worked around by running it
 through a mixer and applying gain or a stand-alone headphone amplifier
 if the headphone output is too quiet.
 
-#### Recording sound cards
+#### Preamplifiers
 
-If you are interested in recording music, consider getting a higher
-quality sound card that supports 24 bit sample depths and a 96 kHz
-sample rate (there is [no
-advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
-sample rates). Bit depth determines the possible dynamic range of the
-signal. 16 bits is more than enough for playing back music. While 24
-bits is helpful for recording, [it is useless for
-playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought-you-knew-about-bit-depth-is-probably-wrong/).
-Half the sample rate determines the maximum frequency that can be
-represented by the signal. Humans generally can't hear frequencies above
-20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
-of 22.05 kHz, is fine for playback.
+If you want to use [vinyl
+control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
+is best to have phono preamplifiers (one for each deck) somewhere
+between your turntable and sound card to boost the turntable's phono
+level signal to line level. Mixxx can amplify phono level signals in
+software, but it is better to do it in hardware. The phono preamp can be
+in the turntable, in the sound card, or a stand alone device. Many
+higher-end all-in-one controllers include sound cards with phono
+preamps.
+
+Turntables, microphones, and electric guitars all output quiet signals
+that need to be amplified to line level by a preamplifier before a sound
+card (or most audio equipment) can effectively work with them. If a
+device has a switch between phono, instrument, or mic level and line
+level, it has a preamplifier in it. If you want to plug a microphone
+into your sound card, it will need a microphone preamplifier. If you
+want to plug an electric guitar or bass into your sound card, it will
+need an instrument preamplifier.
 
 #### Connector types
 
@@ -493,26 +499,27 @@ and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
-#### Preamplifiers
+#### Recording sound cards
 
-Turntables, microphones, and electric guitars all output quiet signals
-that need to be amplified to line level by a preamplifier before a sound
-card (or most audio equipment) can effectively work with them. If a
-device has a switch between phono, instrument, or mic level and line
-level, it has a preamplifier in it. If you want to plug a microphone
-into your sound card, it will need a microphone preamplifier. If you
-want to plug an electric guitar or bass into your sound card, it will
-need an instrument preamplifier.
+If you are interested in recording music, consider getting a higher
+quality sound card that supports 24 bit sample depths and a 96 kHz
+sample rate (there is [no
+advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
+sample rates). Bit depth determines the possible dynamic range of the
+signal. 16 bits is more than enough for playing back music. While 24
+bits is helpful for recording, [it is useless for
+playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought-you-knew-about-bit-depth-is-probably-wrong/).
+Half the sample rate determines the maximum frequency that can be
+represented by the signal. Humans generally can't hear frequencies above
+20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
+of 22.05 kHz, is fine for playback.
 
-If you want to use [vinyl
-control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it
-is best to have phono preamplifiers (one for each deck) somewhere
-between your turntable and sound card to boost the turntable's phono
-level signal to line level. Mixxx can amplify phono level signals in
-software, but it is better to do it in hardware. The phono preamp can be
-in the turntable, in the sound card, or a stand alone device. Many
-higher-end all-in-one controllers include sound cards with phono
-preamps.
+These sound cards typically have a knob that selects how much of the
+main output signal comes from the computer versus the sound cards'
+inputs. This is helpful for recording because it bypasses the latency of
+running the signal through the computer and back out. However, to use
+the full output level of the sound card for DJing, be sure this knob is
+set to have all the output signal coming from the computer.
 
 ### Standalone USB sound cards
 

@@ -261,7 +261,7 @@ from nVidia's web site instead of your PC/card manufacturer since they
 may be newer.
 
 If you are using GNU/Linux, try uninstalling the proprietary nVidia
-driver and using the free noveau drivver.
+driver and using the free nouveau driver.
 
 ## Errors on starting Mixxx
 

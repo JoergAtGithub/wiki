@@ -26,6 +26,10 @@ a DJ program.
   - [Wrap a Cable the Right Way "Over
     Under"](https://www.youtube.com/watch?v=B2SUoAvGxVs): it's not as
     obvious as you might think
+  - [24/192 Music Downloads are Very Silly
+    Indeed](https://xiph.org/~xiphmont/demo/neil-young.html): explains
+    why 16 bit depth music at 44.1 kHz sampling rate is all you need to
+    DJ
   - [Rod Elliot's Audio
     Articles](http://sound.westhost.com/articles.htm): detailed
     technical articles about many aspects of audio equipment

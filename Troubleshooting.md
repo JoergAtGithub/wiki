@@ -27,30 +27,6 @@ Your audio latency may be set lower than your system can handle. See the
 [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on
 adjusting your latency.
 
-If you are using two separate sound cards and the crackling is only in
-your headphones, see below.
-
-## I hear crackling in my headphones
-
-This is a known artifact of using multiple separate audio interfaces.
-Each one has its own clock crystal and no two are precisely the same
-frequency even if the devices are the same model and from the same
-production run. Mixxx before 1.12 synchronized its audio generation to
-the clock crystal of whichever device is selected as the master output
-(deck 1 output if no master is selected) so that the crowd won't hear
-the artifacts. As a result, secondary devices either fall behind or run
-ahead of the primary one, causing them to play silence until Mixxx
-generates the next audio buffer exactly in time for the primary device.
-Playing bits of audio interspersed with bits of silence sounds like
-crackling.
-
-Mixxx 1.12 can compensate for this issue. If you are using two sound
-cards, [try Mixxx 1.12
-beta](http://mixxx.org/forums/viewtopic.php?f=1&t=7131).
-
-If you use one sound card with at least 4 channels (2 stereo pairs), you
-will not have this issue.
-
 ## There is a delay before I hear a change in the audio
 
 Your audio latency may be set too high. See the [Adjusting Audio

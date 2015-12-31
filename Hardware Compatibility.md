@@ -345,7 +345,7 @@ into computers are generally not high quality and may pick up
 interference from other devices in the computer such as the power supply
 or hard drive. **It is recommended to use one sound card with at least 4
 mono output channels (2 stereo channels).** For vinyl control, it is
-recommended to use a sound card with phono preamps.
+recommended to use a sound card with phono preamplifiers.
 
 ### Compatibility
 

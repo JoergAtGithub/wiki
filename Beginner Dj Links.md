@@ -32,6 +32,8 @@ a DJ program.
 
   - [Mixxx DJ Hardware Guide](hardware%20compatibility)
   - [Mixxx Manual](http://mixxx.org/manual/latest/)
+  - [Setting Your Levels Properly (Gain
+    Staging)](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging)
 
 ## Tips, tutorials, and DJing websites
 

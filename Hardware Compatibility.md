@@ -391,12 +391,12 @@ sound cards like the Apogee Duet and RME Babyface Pro are stand alone
 devices not integrated into controllers.
 
 If a controller with a built in sound card is only powered by a USB
-cable, the sound card may not be able to reach very high output levels.
+cable, the sound card may not be able to reach very high output levels
+because the electricity available from a USB port has to power the sound
+card as well as the lights and other components of the controller.
 Controllers for which this is a known issue have that information on
-their wiki page. In that case, the electricity available from a USB port
-has to power the sound card as well as the lights and other components
-of the controller. Insufficient power for a high output level is rarely
-an issue for standalone USB sound cards that are not built into
+their wiki page. Insufficient power for a high output level is rarely an
+issue for standalone USB sound cards that are not built into
 controllers. Some controllers with built in sound cards have an
 additional power adapter to ensure the sound card output has enough
 power. A low sound card output can be worked around by running it

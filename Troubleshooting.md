@@ -33,6 +33,22 @@ Your audio latency may be set too high. See the [Adjusting Audio
 Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
 latency.
 
+## What should I do to get Mixxx to run the best it can on my computer?
+
+First, try each option for waveform renderer in Preferences \> Waveforms
+\> Summary type and Overview type. Different options will work better on
+different combinations of video card, drivers, and operating system.
+Also see [Adjusting Audio Latency](Adjusting%20Audio%20Latency).
+
+## How can I get Mixxx to run well on an old or slow computer?
+
+In Preferences \> Sound Hardware, select "Soundtouch (faster)" for
+Keylock/Pitch-Bending Engine. Be careful not to make big changes in
+tempo to a track with keylock on because it will not sound good with
+Soundtouch. See also [\#What should I do to get Mixxx to run the best it
+can on my
+computer?](#What%20should%20I%20do%20to%20get%20Mixxx%20to%20run%20the%20best%20it%20can%20on%20my%20computer?)
+
 ## I can't select my sound card in the Sound Hardware preferences
 
 Check that your sound card is plugged in. If it has its own power

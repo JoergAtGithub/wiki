@@ -38,7 +38,9 @@ latency.
 First, try each option for waveform renderer in Preferences \> Waveforms
 \> Summary type and Overview type. Different options will work better on
 different combinations of video card, video driver, and operating
-system. Also see [Adjusting Audio Latency](Adjusting%20Audio%20Latency).
+system. Lower the framerate to the lowest it needs to be before you
+notice the waveforms flicker. Also see [Adjusting Audio
+Latency](Adjusting%20Audio%20Latency).
 
 ## How can I get Mixxx to run well on an old or slow computer?
 

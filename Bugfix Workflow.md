@@ -18,7 +18,7 @@ GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-o
 
 ## Build Mixxx
 
-[Build Mixxx](start#build_mixxx)
+[Build Mixxx](start#compile_mixxx_from_source_code)
 
 ## Choose a working environment
 

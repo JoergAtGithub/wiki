@@ -71,4 +71,8 @@ Show the volume of a Deck
 
 #### Crossfader
 
-Fade between a Deck (Todo)
+Fade between a Deck FIXME
+
+#### Crossfader Curve
+
+Sets the Crossfader Curve between Fade and Cut.

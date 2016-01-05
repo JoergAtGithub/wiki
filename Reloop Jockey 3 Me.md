@@ -93,6 +93,14 @@ released it jumps back to cue point. Otherwise it will set a Cue point.
 
 Like Cue, but it plays only after releasing the button.
 
+#### Sync
+
+"sync\_enable" FIXME
+
+#### Keylock
+
+"keylock" FIXME
+
 #### Jogwheels
 
 The wheels work only if Scratchmode is Active. If Active, you can

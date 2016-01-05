@@ -88,3 +88,55 @@ Play/Pause chosen Deck
 If Pushed while Playing or the playposition is allready on Cue point,
 the Deck will Jump to the last Cue point and play while holding it. If
 released it jumps back to cue point. Otherwise it will set a Cue point.
+
+#### Cup
+
+Like Cue, but it plays only after releasing the button.
+
+#### Jogwheels
+
+The wheels work only if Scratchmode is Active. If Active, you can
+Scratch the current loadet file in this Deck. If you touch the oudside
+Rubber ring, you can push or pull the speed of a playing file.
+
+### Hotcue Section
+
+Like Cue or Cup you can set 8 Hotcues per deck on this Controller. If
+you want to Delete a Hotcue push and hold the Trash Button and push now
+the Hotcues you want to delete. Hotcue 5-8 must be aktivated on "5-8".
+
+### Loop Section
+
+Todo FIXME
+
+### Effect Section
+
+  - Deck A has EffectChain1
+  - Deck B has EffectChain2
+  - Deck C has EffectChain3
+  - Deck D has EffectChain4
+
+#### FX Sel. (Adv)
+
+To Select a Effect Hold Shift and turn "Dry/Wet" means "FX Sel. (Adv)"
+to select a Effect.
+
+#### Preset1 - Preset4
+
+To chose the Deck you want to apply the Effect, press and hold shift and
+then Preset1 for Deck A, Preset2 for Deck B and so on.
+
+#### Dry/Wet
+
+If you turn Dry/Wet you Control the Volume of this Effect or in Software
+the "mix" knop.
+
+#### FX on
+
+Press this Button to enable or disable the EffectChain. (Default
+enabled)
+
+#### FX Param
+
+Turn a Parameter in Effect Chain. The fourth is actualy not Mapped.
+FIXME

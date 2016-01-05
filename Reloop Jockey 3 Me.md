@@ -25,3 +25,50 @@ can turn the Trax knop to switch between Playlists.
 If you have Selected a File in the Playlist with the Trax Knop you can
 press Load to load this file to a Deck. Left Button for Deck A or C,
 Right Button for B or D
+
+#### Deck Switches
+
+Directly under the Load Buttons are the Deck Swiches. You can Select on
+the left Deck A, C or Input1, on the right Deck B, D or Input2.
+
+1.  **Note** The Inputs only have Mixer Controls and no Deck Controls.
+    (You need a Seperate Midi Control for Everything is Connected to the
+    Inputs on the Back)
+2.  **Note** If you Switch the Deck all Controls on the Side of it are
+    Changed.
+
+#### Equalizer
+
+  - **Gain** Controls the Maximum Volume of the Channel Faders.
+  - **High** Controls the High Frequency loudness.
+  - **Mid** Controls the Mid Frequency loudness. Like Voice
+  - **Low** Controls the Low Frequency loudness. Like Bass
+
+#### Volume Control
+
+The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
+
+  - **Master** Control the Master Volume on Hardware Side.
+  - **Booth** Control the Volume of a Seperate Masterout on the Booth
+    output.
+  - **Phones** Control the Volume of your Headphones
+
+#### PFL (Headphone Buttons)
+
+If Enabled you hear on your Headphones the chosen Deck
+
+#### PFL Crossfader
+
+Fade between PFL and Masterout on Headphones
+
+#### Channel Fader
+
+Fade the Volume of a Deck
+
+#### LED Meter
+
+Show the volume of a Deck
+
+#### Crossfader
+
+Fade between a Deck (Todo)

@@ -76,3 +76,15 @@ Fade between Left and Right Deck FIXME
 #### Crossfader Curve
 
 Sets the Crossfader Curve between Fade and Cut.
+
+### Transport Section
+
+#### Play/Pause
+
+Play/Pause chosen Deck
+
+#### Cue
+
+If Pushed while Playing or the playposition is allready on Cue point,
+the Deck will Jump to the last Cue point and play while holding it. If
+released it jumps back to cue point. Otherwise it will set a Cue point.

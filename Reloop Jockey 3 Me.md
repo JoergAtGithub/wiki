@@ -107,7 +107,38 @@ the Hotcues you want to delete. Hotcue 5-8 must be aktivated on "5-8".
 
 ### Loop Section
 
-Todo FIXME
+#### Length turning
+
+By turning double or half the Beats of a active Loop.
+
+#### Move turning
+
+Move a track 4 Beats forward or backward.
+
+#### Length push
+
+By pushing the Length knop you apply a 4 Beat Loop.
+
+#### Filter
+
+Turn it to apply a highpass or lowpass filter.
+
+#### Pan
+
+On Deck A you can turn Pan to fade to the left or right Speaker for
+Master output. (Balance)
+
+#### Reloop Button
+
+"reloop\_exit" FIXME
+
+#### Loop In
+
+"loop\_in" FIXME
+
+#### Loop Out
+
+"loop\_out" FIXME
 
 ### Effect Section
 

@@ -9,8 +9,8 @@ folder. The MIDI Learning Wizard puts its mapping files here:
   - GNU/Linux: `/home/<username>/.mixxx/controllers`
   - OS X: `/Users/<username>/Library/Application
     Support/Mixxx/controllers`
-  - Windows: `C:\Users\<username>\AppData\Mixxx\controllers`. On Windows
-    XP, replace `Users` with `Documents and Settings`. The
+  - Windows: `C:\Users\<username>\AppData\local\Mixxx\controllers`. On
+    Windows XP, replace `Users` with `Documents and Settings`. The
     `%USERPROFILE%\AppData` folder is hidden, so if you have not
     already, you will need to set Windows explorer to [show hidden files
     and

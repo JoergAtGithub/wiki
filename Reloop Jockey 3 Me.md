@@ -57,7 +57,7 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 If Enabled you hear on your Headphones the chosen Deck
 
-#### PFL Crossfader
+#### PFL (Mini) Crossfader
 
 Fade between PFL and Masterout on Headphones
 

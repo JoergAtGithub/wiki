@@ -148,6 +148,25 @@ Master output. (Balance)
 
 "loop\_out" FIXME
 
+#### \<Beat
+
+This Button don't do the Beatjump as intended. It Sets Quantize instaed.
+FIXME
+
+#### Beat\>
+
+Same for this Button (Not the same). It Set the Beatgrid aligne to the
+Playposition. FIXME
+
+#### \<Grid
+
+As intended adjusts the Beadgrid lower, means the Grid gets more space
+to echother.
+
+#### Grid\>
+
+Beadgrid higher. Grid gets less space to echother.
+
 ### Effect Section
 
   - Deck A has EffectChain1

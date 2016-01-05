@@ -71,7 +71,7 @@ Show the volume of a Deck
 
 #### Crossfader
 
-Fade between a Deck FIXME
+Fade between Left and Right Deck FIXME
 
 #### Crossfader Curve
 

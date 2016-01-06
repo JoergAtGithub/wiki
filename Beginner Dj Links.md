@@ -27,6 +27,9 @@ a DJ program.
   - [Rod Elliot's Audio
     Articles](http://sound.westhost.com/articles.htm): detailed
     technical articles about many aspects of audio equipment
+  - [Public Address Systems for Musical
+    Applications](http://sound.westhost.com/articles/pa.htm): advice for
+    anyone shopping for a PA system
 
 ## Using Mixxx
 

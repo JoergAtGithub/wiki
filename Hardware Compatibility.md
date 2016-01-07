@@ -433,14 +433,14 @@ DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-fo
 to understand the different kinds of connectors on sound cards. It is
 better to use a sound card with balanced outputs, especially if you will
 run long cables directly into an amplifier or active speakers without
-going through an analog mixer. Balanced signals reject interference and
+going through a hardware mixer. Balanced signals reject interference and
 are less susceptible to ground loop hum issues (which can be a problem
 when plugging unbalanced gear into separate power sources). However,
 most venues have DJs plug into hardware DJ mixers, which typically only
 have RCA inputs (RCA cables cannot be balanced). Most home/computer
-speakers have RCA and/or 1/8" TRS stereo inputs. Most live sound mixers
-have balanced 1/4" TRS mono inputs. If you need to interconnect balanced
-and unbalanced gear, see [this
+speakers and amplifiers have RCA and/or 1/8" TRS stereo inputs. Most
+live sound mixers have balanced 1/4" TRS mono inputs. If you need to
+interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 

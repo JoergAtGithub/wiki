@@ -37,7 +37,7 @@ Mixxx's defects.
     * The Library does not list tracks starting with O.
     * AutoDJ does not transition to the next song. 
 * Critical
-* **Any reproducable bug that will screw someone who is using Mixxx live.**
+* **Any reproducible bug that will screw someone who is using Mixxx live.**
 * Example: 
     * segfaults
     * assertion failures 

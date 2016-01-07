@@ -418,6 +418,10 @@ into your sound card, it will need a microphone preamplifier. If you
 want to plug an electric guitar or bass into your sound card, it will
 need an instrument preamplifier.
 
+Note that phono preamplifiers work on a stereo pair (2 input channels)
+whereas microphone and instrument preamplifiers work on a single input
+channel.
+
 #### Connector and cable types
 
 If you are unfamiliar with professional audio equipment, read Digital DJ

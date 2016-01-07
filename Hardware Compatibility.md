@@ -444,27 +444,25 @@ interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
 Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
-#### Recording sound cards
+#### Bit depth and sample rate
 
-If you are interested in recording music, consider getting a higher
-quality sound card that supports 24 bit sample depths and a 96 kHz
-sample rate (there is [no
-advantage](http://xiph.org/~xiphmont/demo/neil-young.html) of 192 kHz
-sample rates). Bit depth determines the possible dynamic range of the
-signal. 16 bits is more than enough for playing back music. While 24
-bits is helpful for recording, [it is useless for
+Most music is published with a bit depth of 16 bits at a sample rate of
+44.1 kHz because this is all that is needed to store the music in
+digital form.
+
+Bit depth determines the possible dynamic range of the signal. 16 bits
+is more than enough for playing back music. While 24 bits is helpful for
+recording, [it is useless for
 playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought-you-knew-about-bit-depth-is-probably-wrong/).
+
 Half the sample rate determines the maximum frequency that can be
 represented by the signal. Humans generally can't hear frequencies above
 20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
 of 22.05 kHz, is fine for playback.
 
-These sound cards typically have a knob that selects how much of the
-main output signal comes from the computer versus the sound cards'
-inputs. This is helpful for recording because it bypasses the latency of
-running the signal through the computer and back out. However, to use
-the full output level of the sound card for DJing, be sure this knob is
-set to have all the output signal coming from the computer.
+For a more thorough and technical explanation of why 16 bits at 44.1 kHz
+is all that is needed for playback, read [24/192 Music Downloads Are
+Very Silly Indeed](http://xiph.org/~xiphmont/demo/neil-young.html).
 
 ### Stand-alone USB sound cards
 

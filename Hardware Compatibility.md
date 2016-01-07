@@ -40,13 +40,6 @@ it is impossible, it only means that no one has made it work with Mixxx
 yet. Anyone, including you, who has the hardware is welcome to make
 Mixxx work with it.
 
-Unlike some proprietary DJ programs, Mixxx works with any sound card
-that your operating system has a driver to use—including for timecode
-vinyl (DVS) use. USB sound cards compliant with the USB audio class
-standard do not need any special drivers for Linux or Mac OS X, however
-they do for Windows. Sound cards that are advertised for use with iOS
-devices are class compliant.
-
 Mixxx can work with any controller that sends MIDI or HID signals to
 your computer; it just needs a controller mapping to tell Mixxx what to
 do with the signals. Standards compliant MIDI controllers do not need
@@ -56,6 +49,13 @@ standards compliant MIDI controllers, with exceptions noted in the
 tables below. Controllers that have integrated sound cards require a
 driver on every OS for the sound card, unless it is USB Audio class
 compliant.
+
+Unlike some proprietary DJ programs, Mixxx works with any sound card
+that your operating system has a driver to use—including for timecode
+vinyl (DVS) use. USB sound cards compliant with the USB audio class
+standard do not need any special drivers for Linux or Mac OS X, however
+they do for Windows. Sound cards that are advertised for use with iOS
+devices are class compliant.
 
 ## Controller mappings
 

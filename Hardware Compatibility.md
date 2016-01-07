@@ -355,25 +355,6 @@ Linux](http://ffado.org/?q=devicesupport/list).
 
 ### Sound card considerations
 
-Playing audio at 16 bit sample depths and 44.1 kHz sample rate is fine
-for DJing; almost all music is published in this format (which was the
-standard set by audio CDs).
-
-Sound cards often have multiple connectors for a single channel,
-resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. Some sound cards made for DJing
-have 4 output channels with 4 mono output connectors and 1 stereo
-headphone connector. This does not mean that the sound card can send out
-6 different signals at the same time; rather, the signal on 2 of the
-mono outputs and the stereo headphone output would be the same.
-
-When considering specifications, higher dynamic range, higher
-signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
-(Total Harmonic Distortion + Noise; look for a more negative dB value or
-smaller percentage), and lower crosstalk (more negative dB value) are
-better. Cheap sound cards tend to not have these specifications
-published.
-
 #### Stand-alone sound cards versus sound cards integrated with controllers
 
 Most DJ controllers that cost more than $200 have a 4 output sound card
@@ -442,7 +423,17 @@ speakers and amplifiers have RCA and/or 1/8" TRS stereo inputs. Most
 live sound mixers have balanced 1/4" TRS mono inputs. If you need to
 interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
-Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
+Presonus and [this guide](http://www.rane.com/note110.html) from Rane.'
+
+#### Number of channels
+
+Sound cards often have multiple connectors for a single channel,
+resulting in more connectors than channels. So, not every connector can
+send or receive an independent signal. Some sound cards made for DJing
+have 4 output channels with 4 mono output connectors and 1 stereo
+headphone connector. This does not mean that the sound card can send out
+6 different signals at the same time; rather, the signal on 2 of the
+mono outputs and the stereo headphone output would be the same.
 
 #### Bit depth and sample rate
 
@@ -463,6 +454,15 @@ of 22.05 kHz, is fine for playback.
 For a more thorough and technical explanation of why 16 bits at 44.1 kHz
 is all that is needed for playback, read [24/192 Music Downloads Are
 Very Silly Indeed](http://xiph.org/~xiphmont/demo/neil-young.html).
+
+#### Specifications
+
+When considering specifications, higher dynamic range, higher
+signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
+(Total Harmonic Distortion + Noise; look for a more negative dB value or
+smaller percentage), and lower crosstalk (more negative dB value) are
+better. Cheap sound cards tend to not have these specifications
+published.
 
 ### Stand-alone USB sound cards
 

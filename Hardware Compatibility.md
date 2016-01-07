@@ -320,9 +320,6 @@ adapters typically have two mono jack outputs. Plugging headphones or
 stereo speakers into a generic stereo-to-mono splitter will only play
 sound on one side of the headphones or speakers.
 
-Mono output is a new feature in Mixxx 2.0. Older versions of Mixxx will
-not work with splitter cables.
-
 Available DJ splitter cables:
 
   - [Native Instruments Traktor DJ

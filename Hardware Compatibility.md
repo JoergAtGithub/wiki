@@ -124,12 +124,9 @@ Click the name of the controller for more information.
 
 ### Community Supported Mappings
 
-All controllers listed are supported on GNU/Linux, Mac OS X, and Windows
-unless otherwise indicated by a footnote in the signal protocol column.
-If your controller is listed here but does not work with your OS, please
-[report the bug](reporting%20bugs). All of these devices have mappings
-included in Mixxx. There may be other mappings more suited to your
-workflow on [the forum](http://www.mixxx.org/forums/viewforum.php?f=7).
+All of these devices have mappings included in Mixxx. There may be other
+mappings more suited to your workflow on [the
+forum](http://www.mixxx.org/forums/viewforum.php?f=7).
 
 Do not add mappings to this list until they have been included in Mixxx.
 If you make a mapping for a controller, please add it to the [\#Mappings

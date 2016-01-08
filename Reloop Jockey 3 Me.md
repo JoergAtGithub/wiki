@@ -109,6 +109,10 @@ The wheels work only if Scratchmode is Active. If Active, you can
 Scratch the current loadet file in this Deck. If you touch the oudside
 Rubber ring, you can push or pull the speed of a playing file.
 
+#### Pitch Fader
+
+Sets a new speedrate of the playing Deck.
+
 ### Hotcue Section
 
 Like Cue or Cup you can set 8 Hotcues per deck on this Controller. If

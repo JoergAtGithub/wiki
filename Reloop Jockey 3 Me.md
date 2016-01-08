@@ -14,24 +14,26 @@ a Documentation to use this Controller with Mixxx.
 
 #### Trax Knop
 
-With the Trax Knop you can Browse your current playlist by Turning. Push
-it to open Big Library.
+  - With the Trax Knop you can Browse your current playlist by Turning.
+    Push it to open Big Library.
 
 ##### Shift
 
-If Shift is enabled by Press and hold it down and the Button lights, you
-can turn the Trax knop to switch between Playlists.
+  - If Shift is enabled by Press and hold it down and the Button lights,
+    you can turn the Trax knop to switch between Playlists.
 
 #### Load Buttons
 
-If you have Selected a File in the Playlist with the Trax Knop you can
-press Load to load this file to a Deck. Left Button for Deck A or C,
-Right Button for B or D
+  - If you have Selected a File in the Playlist with the Trax Knop you
+    can press Load to load this file to a Deck. Left Button for Deck A
+    or C, Right Button for B or D
 
 #### Deck Switches
 
-Directly under the Load Buttons are the Deck Swiches. You can Select on
-the left Deck A, C or Input1, on the right Deck B, D or Input2.
+  - Directly under the Load Buttons are the Deck Swiches. You can Select
+    on the left Deck A, C or Input1, on the right Deck B, D or Input2.
+
+<!-- end list -->
 
 1.  **Note** The Inputs only have Mixer Controls and no Deck Controls.
     (You need a Seperate Midi Control for Everything is Connected to the
@@ -57,43 +59,44 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### PFL (Headphone Buttons)
 
-If Enabled you hear on your Headphones the chosen Deck
+  - If Enabled you hear on your Headphones the chosen Deck
 
 #### PFL (Mini) Crossfader
 
-Fade between PFL and Masterout on Headphones
+  - Fade between PFL and Masterout on Headphones
 
 #### Channel Fader
 
-Fade the Volume of a Deck
+  - Fade the Volume of a Deck
 
 #### LED Meter
 
-Show the volume of a Deck
+  - Show the volume of a Deck
 
 #### Crossfader
 
-Fade between Left and Right Deck FIXME
+  - Fade between Left and Right Deck FIXME
 
 #### Crossfader Curve
 
-Sets the Crossfader Curve between Fade and Cut.
+  - Sets the Crossfader Curve between Fade and Cut.
 
 ### Transport Section
 
 #### Play/Pause
 
-Play/Pause chosen Deck
+  - Play/Pause chosen Deck
 
 #### Cue
 
-If Pushed while Playing or the playposition is allready on Cue point,
-the Deck will Jump to the last Cue point and play while holding it. If
-released it jumps back to cue point. Otherwise it will set a Cue point.
+  - If Pushed while Playing or the playposition is allready on Cue
+    point, the Deck will Jump to the last Cue point and play while
+    holding it. If released it jumps back to cue point. Otherwise it
+    will set a Cue point.
 
 #### Cup
 
-Like Cue, but it plays only after releasing the button.
+  - Like Cue, but it plays only after releasing the button.
 
 #### Sync
 
@@ -105,42 +108,44 @@ Like Cue, but it plays only after releasing the button.
 
 #### Jogwheels
 
-The wheels work only if Scratchmode is Active. If Active, you can
-Scratch the current loadet file in this Deck. If you touch the oudside
-Rubber ring, you can push or pull the speed of a playing file.
+  - The wheels work only if Scratchmode is Active. If Active, you can
+    Scratch the current loadet file in this Deck. If you touch the
+    oudside Rubber ring, you can push or pull the speed of a playing
+    file.
 
 #### Pitch Fader
 
-Sets a new speedrate of the playing Deck.
+  - Sets a new speedrate of the playing Deck.
 
 ### Hotcue Section
 
-Like Cue or Cup you can set 8 Hotcues per deck on this Controller. If
-you want to Delete a Hotcue push and hold the Trash Button and push now
-the Hotcues you want to delete. Hotcue 5-8 must be aktivated on "5-8".
+  - Like Cue or Cup you can set 8 Hotcues per deck on this Controller.
+    If you want to Delete a Hotcue push and hold the Trash Button and
+    push now the Hotcues you want to delete. Hotcue 5-8 must be
+    aktivated on "5-8".
 
 ### Loop Section
 
 #### Length turning
 
-By turning double or half the Beats of a active Loop.
+  - By turning double or half the Beats of a active Loop.
 
 #### Move turning
 
-Move a track 4 Beats forward or backward.
+  - Move a track 4 Beats forward or backward.
 
 #### Length push
 
-By pushing the Length knop you apply a 4 Beat Loop.
+  - By pushing the Length knop you apply a 4 Beat Loop.
 
 #### Filter
 
-Turn it to apply a highpass or lowpass filter.
+  - Turn it to apply a highpass or lowpass filter.
 
 #### Pan
 
-On Deck A you can turn Pan to fade to the left or right Speaker for
-Master output. (Balance)
+  - On Deck A you can turn Pan to fade to the left or right Speaker for
+    Master output. (Balance)
 
 #### Reloop Button
 
@@ -156,22 +161,22 @@ Master output. (Balance)
 
 #### \<Beat
 
-This Button don't do the Beatjump as intended. It Sets Quantize instaed.
-FIXME
+  - This Button don't do the Beatjump as intended. It Sets Quantize
+    instaed. FIXME
 
 #### Beat\>
 
-Same for this Button (Not the same). It Set the Beatgrid aligne to the
-Playposition. FIXME
+  - Same for this Button (Not the same). It Set the Beatgrid aligne to
+    the Playposition. FIXME
 
 #### \<Grid
 
-As intended adjusts the Beadgrid lower, means the Grid gets more space
-to echother.
+  - As intended adjusts the Beadgrid lower, means the Grid gets more
+    space to echother.
 
 #### Grid\>
 
-Beadgrid higher. Grid gets less space to echother.
+  - Beadgrid higher. Grid gets less space to echother.
 
 ### Effect Section
 
@@ -182,25 +187,25 @@ Beadgrid higher. Grid gets less space to echother.
 
 #### FX Sel. (Adv)
 
-To Select a Effect Hold Shift and turn "Dry/Wet" means "FX Sel. (Adv)"
-to select a Effect.
+  - To Select a Effect Hold Shift and turn "Dry/Wet" means "FX Sel.
+    (Adv)" to select a Effect.
 
 #### Preset1 - Preset4
 
-To chose the Deck you want to apply the Effect, press and hold shift and
-then Preset1 for Deck A, Preset2 for Deck B and so on.
+  - To chose the Deck you want to apply the Effect, press and hold shift
+    and then Preset1 for Deck A, Preset2 for Deck B and so on.
 
 #### Dry/Wet
 
-If you turn Dry/Wet you Control the Volume of this Effect or in Software
-the "mix" knop.
+  - If you turn Dry/Wet you Control the Volume of this Effect or in
+    Software the "mix" knop.
 
 #### FX on
 
-Press this Button to enable or disable the EffectChain. (Default
-enabled)
+  - Press this Button to enable or disable the EffectChain. (Default
+    enabled)
 
 #### FX Param
 
-Turn a Parameter in Effect Chain. The fourth is actualy not Mapped.
-FIXME
+  - Turn a Parameter in Effect Chain. The fourth is actualy not Mapped.
+    FIXME

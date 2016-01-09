@@ -80,6 +80,15 @@ right near the top. Edit & save.
   - B12 toggles pitch range (black=8%, blue=12%, purple=50%, red=100%)
   - B13 Rewind (REW)
   - B14 Fast Forward (FFWD)
+  - PLAY starts or pauses track playback.
+  - CUE will jump to the cue point or set it, depending on your settings
+    and whether the track is playing.
+  - SYNC synchronizes the tempo of the current deck to another. Holding
+    SYNC for more than 1/3 of a second will enable Master SYNC lock.
+    (Press SYNC again to disable it.)
+  - Pressing TAP repeatedly will change the speed of the current deck to
+    match your tap tempo (useful for synchronizing with an external
+    music source.)
 
 **While holding down the current mode button:**
 
@@ -87,6 +96,12 @@ right near the top. Edit & save.
   - Pitch slider (S2) finely adjusts pitch control
   - B11 resets pre-fader gain to center
   - B12 resets pitch to center 0%
+  - SYNC toggles<sup>3</sup> the
+    [Quantize](http://mixxx.org/manual/2.0/glossary.html#term-quantization)
+    function (where Cue and Loop points snap to the nearest beat and
+    triggering them happens in time with the beat.)
+
+<sup>3</sup> Introduced in Mixxx 2.0.1
 
 ## FX Modes
 

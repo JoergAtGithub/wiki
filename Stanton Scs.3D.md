@@ -94,7 +94,7 @@ These modes let you adjust the effect unit parameters. The FX button
 will be red when adjusting effect unit 1, purple for unit 2, and black
 for unit 3.
 
-(In Mixxx versions below 2.0, there is only one mode that adjusts the
+(In Mixxx versions below 2.0.1, there is only one mode that adjusts the
 Flanger effect.)
 
 [[/media/hardware/stantonscs/slidermode.jpg|]]

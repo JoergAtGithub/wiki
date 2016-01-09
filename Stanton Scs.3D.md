@@ -271,11 +271,13 @@ single-deck mode\*:
 
 # Alternate mapping
 
+*(Available in Mixxx 2.0 and above.)*
+
 An alternate preset was provided by a member of the community for Mixxx
 2.0. It has many more visual effects (flashing lights) and behaves
 somewhat differently from the official preset above. To use this
-alternate mapping in Mixxx 2.0, select the mapping labeled "Stanton
-SCS.3d (alternate)" from the drop down menu in the controller
+alternate preset in Mixxx 2.0, select the preset labeled **Stanton
+SCS.3d (alternate)** from the drop down menu in the controller
 preferences.
 
 ## General controls

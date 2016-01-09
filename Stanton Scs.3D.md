@@ -107,25 +107,27 @@ right near the top. Edit & save.
 
 These modes let you adjust the effect unit parameters. The FX button
 will be red when adjusting effect unit 1, purple for unit 2, and black
-for unit 3.
+for unit 3. (In Mixxx versions below 2.0.1, there is only one mode that
+adjusts the Flanger effect.)
 
-(In Mixxx versions below 2.0.1, there is only one mode that adjusts the
-Flanger effect.)
+[[/media/hardware/stantonscs/slidermode.jpg|]] **v2.0.1 and above:**
 
-[[/media/hardware/stantonscs/slidermode.jpg|]]
+  - Left slider (S3) adjusts the first effect parameter
+  - Center slider (S4) adjusts the second effect parameter
+  - Right slider (S5) adjusts the third effect parameter
+  - B11 performs a reverse-roll (censor) while held down
+  - B12 toggles this effect on the current deck
 
-  - Left slider (S3) adjusts the first effect parameter (Flanger depth
-    in \<v2.0)
-  - Center slider (S4) adjusts the second effect parameter (Flanger
-    delay in \<v2.0)
-  - Right slider (S5) adjusts the third effect parameter (Flanger period
-    (LFO) in \<v2.0)
-  - B11 performs a reverse-roll (censor) while held down (Plays in
-    reverse in in \<v2.0)
-  - B12 toggles this effect on the current deck (Flanger effect in
-    \<v2.0)
+**v2.0.0 and below:**
 
-Hold the FX button down and touch any slider to reset it to center.
+  - Left slider (S3) adjusts flanger depth
+  - Center slider (S4) adjusts flanger delay
+  - Right slider (S5) adjusts flanger period (Low Frequency Oscillator)
+  - B11 plays track in reverse while held down
+  - B12 toggles flanger effect
+
+In all versionsn hold the FX button down and touch any slider to reset
+it to center.
 
 ## EQ Mode
 

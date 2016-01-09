@@ -267,6 +267,8 @@ single-deck mode\*:
 
 ## 
 
+-----
+
 # Alternate mapping
 
 To use this alternate mapping in Mixxx 2.0, select the mapping labeled

@@ -126,7 +126,7 @@ adjusts the Flanger effect.)
   - B11 plays track in reverse while held down
   - B12 toggles flanger effect
 
-In all versionsn hold the FX button down and touch any slider to reset
+In all versions, hold the FX button down and touch any slider to reset
 it to center.
 
 ## EQ Mode

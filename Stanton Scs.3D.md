@@ -135,8 +135,8 @@ The surface is configured as 11 buttons:
 | 1/2-beat loop | Reloop/Exit | 8-beat loop  |
 | 1-beat loop   | Loop Out    | 16-beat loop |
 
-**Mixxx v2.0 and above** have the left column flipped so you can adjust
-the loop size sequentially when moving along the circle:
+**Mixxx v2.0.1 and above** have the left column flipped so you can
+adjust the loop size sequentially when moving along the circle:
 
 | Left          | Middle      | Right        |
 | ------------- | ----------- | ------------ |

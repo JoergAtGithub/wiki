@@ -68,7 +68,7 @@ right near the top. Edit & save.
   - Trig - Hot cues
   - Vinyl - Toggle between pitch bend, vinyl manipulation & scratching,
     and track selection
-  - Deck - Adjust global controls and switch to the other virtual deck
+  - Deck - Adjust global controls and switch to another virtual deck
 
 #### Common to all modes:
 

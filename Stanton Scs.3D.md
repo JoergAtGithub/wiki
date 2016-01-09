@@ -215,16 +215,15 @@ the **markHotCues** option mentioned at the top of this page.)
 
 [[/media/hardware/stantonscs/circlemode.gif|]] **Vinyl mode (red)**
 
-  - Outer circle (C1) allows you to bend the song's pitch, akin to
-    dragging your finger on the record
-  - Center slider (S4) allows you to "scratch" the song
+  - Outer circle (C1) and Center slider (S4) allow you to bend the
+    song's pitch, akin to dragging your finger on the record
 
 **Vinyl2 Mode (purple)**
 
   - Outer circle (C1) allows you to "scratch" the song and perform
     juggles
   - Center slider (S4) allows you to "scratch" the song
-  - Scratch & cue toogle: Hold the VINYL button and press CUE when in
+  - Scratch & cue toggle: Hold the VINYL button and press CUE when in
     Vinyl2 mode to toggle recalling the cue point when you touch either
     C1 or S4. This makes juggling really easy since you don't have to
     back-cue.
@@ -235,8 +234,8 @@ the **markHotCues** option mentioned at the top of this page.)
   - Center button (anywhere on S4) loads the currently highlighted song
     into the current deck, as long as it's not live (playing to the
     master output.)
-  - B11 selects backward between Library, Playlist, and Browse views
-  - B12 selects forward between Library, Playlist, and Browse views
+  - B11 selects backward between Library, Playlist, Browse, etc. views
+  - B12 selects forward between Library, Playlist, Browse, etc. views
   - B13 moves the highlight up one item
   - B14 moves the highlight down one item
 

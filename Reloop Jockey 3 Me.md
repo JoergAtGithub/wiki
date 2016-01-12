@@ -149,7 +149,7 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
   - On Deck A you can turn Pan to fade to the left or right Speaker for
     Master output. (Balance)
 
-#### Reloop Button
+#### Loop Button
 
 "reloop\_exit" FIXME
 
@@ -157,19 +157,18 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 "loop\_in" FIXME
 
+#### Reloop Button
+
+  - This Button don't do the Beatjump as intended. It Sets Quantize
+    instaed. FIXME
+
 #### Loop Out
 
 "loop\_out" FIXME
 
 #### \<Beat
 
-  - This Button don't do the Beatjump as intended. It Sets Quantize
-    instaed. FIXME
-
-#### Beat\>
-
-  - Same for this Button (Not as intended). It Set the Beatgrid aligne
-    to the Playposition. FIXME
+  - Not as intended sets the Beatgrid aligne to the Playposition. FIXME
 
 #### \<Grid
 

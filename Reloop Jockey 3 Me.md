@@ -159,8 +159,7 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### Reloop
 
-  - This Button don't do the Beatjump as intended. It Sets Quantize
-    instaed.
+  - This Button don't work as intended. It Sets Quantize instaed.
 
 #### Loop Out
 

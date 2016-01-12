@@ -42,7 +42,7 @@ a Documentation to use this Controller with Mixxx.
 If you have on the Inputs of the Controller some thing connected:
 
   - **Input 1** = **1-2**
-  - **INput 2** = **3-4**
+  - **Input 2** = **3-4**
 
 ## Mapping Guide
 

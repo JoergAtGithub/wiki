@@ -168,8 +168,8 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### Beat\>
 
-  - Same for this Button (Not the same). It Set the Beatgrid aligne to
-    the Playposition. FIXME
+  - Same for this Button (Not as intended). It Set the Beatgrid aligne
+    to the Playposition. FIXME
 
 #### \<Grid
 

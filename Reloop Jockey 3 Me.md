@@ -155,20 +155,20 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### Loop In
 
-"loop\_in" FIXME
+  - Sets of a new Loop the beginning position of a loop.
 
 #### Reloop Button
 
   - This Button don't do the Beatjump as intended. It Sets Quantize
-    instaed. FIXME
+    instaed.
 
 #### Loop Out
 
-"loop\_out" FIXME
+  - Sets the end position of a Loop if "Loop In" was pressed.
 
 #### \<Beat
 
-  - Not as intended sets the Beatgrid aligne to the Playposition. FIXME
+  - Not as intended it sets the Beatgrid aligne to the Playposition.
 
 #### \<Grid
 

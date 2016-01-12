@@ -10,7 +10,7 @@ a Documentation to use this Controller with Mixxx.
   - [Image of Reloop Jockey 3 ME
     (TopView)](http://www.reloop.com/media/catalog/product/2/2/4/224649_Reloop_TP.jpg)
 
-## Setup Config
+## Setup Config Controller
 
   - This Mapping uses the Defaults of the Traktor Mapping. If you want
     to Switch between Traktor and Mixxx you don't have to change the

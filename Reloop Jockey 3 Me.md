@@ -18,14 +18,31 @@ a Documentation to use this Controller with Mixxx.
 
 ### Set Jogwheel Resolution
 
-  - If you have Problems please set the Jogwheel resolution to 2048.
-    (Please read the manual of this Controller section 5.1 and 5.1.2)
+  - If you have Problems please set the Jogwheel resolution to **2048**.
+    (Please read the manual of this Controller section **5.1** and
+    **5.1.2**)
 
 ### Set Midi Channels
 
-  - Also don't change the Midi Channel. Default is 1-4. Other Config
-    won't work. (Please read the manual of this Controller section 5.1
-    and 5.1.1)
+  - Also don't change the Midi Channel. Default is **1-4**. Other Config
+    won't work. (Please read the manual of this Controller section
+    **5.1** and **5.1.1**)
+
+## Setup Config Mixxx
+
+### Audio Output
+
+  - Set **Master** to **1-2**
+  - Set **Headphone** to **3-4**
+
+### Audio Input
+
+  - Set **Mic** to **5-6**
+
+If you have on the Inputs of the Controller some thing connected:
+
+  - **Input 1** = **1-2**
+  - **INput 2** = **3-4**
 
 ## Mapping Guide
 

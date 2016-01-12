@@ -149,7 +149,7 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
   - On Deck A you can turn Pan to fade to the left or right Speaker for
     Master output. (Balance)
 
-#### Loop Button
+#### Loop
 
 "reloop\_exit" FIXME
 
@@ -157,7 +157,7 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
   - Sets of a new Loop the beginning position of a loop.
 
-#### Reloop Button
+#### Reloop
 
   - This Button don't do the Beatjump as intended. It Sets Quantize
     instaed.

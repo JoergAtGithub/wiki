@@ -240,6 +240,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                | 2 deck control    | no                    | MIDI            |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250               | 2 deck all-in-one | yes                   | MIDI (and HID?) |
 | [Akai AMX](Akai%20AMX)                                       | $250               | 1 deck control    | yes                   | MIDI            |
+| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500             | 4 deck control    | yes                   | MIDI            |
 
 \</sortable\>
 

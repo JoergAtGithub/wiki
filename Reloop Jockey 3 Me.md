@@ -11,6 +11,8 @@ a Documentation to use this Controller with Mixxx.
   - [www.reloop.com/reloop-jockey-3-me](http://www.reloop.com/reloop-jockey-3-me)
   - [Picture of Reloop Jockey 3 ME
     (TopView)](http://www.reloop.com/media/catalog/product/2/2/4/224649_Reloop_TP.jpg)
+  - [Review from
+    Digitaldjtips.com](http://www.digitaldjtips.com/2011/05/review-video-reloop-jockey-iii-me-controller/2/)
 
 ## Setup Config Controller
 

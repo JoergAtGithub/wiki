@@ -1,5 +1,7 @@
 # Reloop Jockey 3 Master Edition
 
+![http://www.reloop.com/media/catalog/product/2/2/4/224649\_Reloop\_TP.jpg](http://www.reloop.com/media/catalog/product/2/2/4/224649_Reloop_TP.jpg)
+
 The Reloop Jockey 3 Master Edition is a 2 Channel Controller with the
 option to control 4 Channels. It is Designed for Traktor Pro 1. This is
 a Documentation to use this Controller with Mixxx.

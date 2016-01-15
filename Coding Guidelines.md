@@ -636,13 +636,17 @@ Email mixxx-devel with your use case.
 In general, do not use.
 
 **Note:** auto&& is a universal reference, which should be used instead
-of an explicit l-value auto& reference in range based loops
+of an explicit l-value auto& reference in non const ange based loops.
 
 **Good:**
 
 ``` cpp-qt
 if (auto&& item: container) {
-  // something
+  // read and write item
+} 
+
+if (const auto& item: container) {
+  // read only item
 } 
 ```
 

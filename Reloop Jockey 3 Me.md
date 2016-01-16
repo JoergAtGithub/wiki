@@ -13,39 +13,20 @@ a Documentation to use this Controller with Mixxx.
   - [Review from
     Digitaldjtips.com](http://www.digitaldjtips.com/2011/05/review-video-reloop-jockey-iii-me-controller/2/)
 
-## Setup Config Controller
+# Setup
 
-  - This Mapping uses the Defaults of the Traktor Mapping. If you want
-    to Switch between Traktor and Mixxx you don't have to change the
-    Settings of your Controller.
+The Mixxx mapping uses the same settings as Reloop's Traktor mapping.
+Leave the MIDI channels as the default 1-4. If you have problems with
+the jogwheels, set the jogwheel resolution to 2048. (Please read the
+manual of this Controller section **5.1** and **5.1.2**)
 
-### Set Jogwheel Resolution
+## Mixxx Sound Hardware Preferences
 
-  - If you have Problems please set the Jogwheel resolution to **2048**.
-    (Please read the manual of this Controller section **5.1** and
-    **5.1.2**)
-
-### Set Midi Channels
-
-  - Also don't change the Midi Channel. Default is **1-4**. Other Config
-    won't work. (Please read the manual of this Controller section
-    **5.1** and **5.1.1**)
-
-## Setup Config Mixxx
-
-### Audio Output
-
-  - Set **Master** to **1-2**
-  - Set **Headphone** to **3-4**
-
-### Audio Input
-
-  - Set **Mic** to **5-6**
-
-If you have on the Inputs of the Controller some thing connected:
-
-  - **Input 1** = **1-2**
-  - **Input 2** = **3-4**
+  - Master output: channels 1-2
+  - Headphone output: channels 3-4
+  - Auxiliary or vinyl input 1: channels 1-2
+  - Auxiliary or vinyl input 2: channels 3-4
+  - Microphone input: channels 5-6
 
 ## Mapping Guide
 

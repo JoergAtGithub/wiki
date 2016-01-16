@@ -8,7 +8,8 @@ a Documentation to use this Controller with Mixxx.
 
   - [Mixxx Forum
     Thread](http://mixxx.org/forums/viewtopic.php?f=7&t=5418)
-  - [www.reloop.com/reloop-jockey-3-me](http://www.reloop.com/reloop-jockey-3-me)
+  - [www.reloop.com/reloop-jockey-3-me|Manufacturer's product
+    page](http://www.reloop.com/reloop-jockey-3-me)
   - [Review from
     Digitaldjtips.com](http://www.digitaldjtips.com/2011/05/review-video-reloop-jockey-iii-me-controller/2/)
 

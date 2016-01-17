@@ -167,6 +167,11 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
   - Turn it to apply a highpass or lowpass filter.
 
+#### Shift Filter
+
+  - On Deck A you can press Shift and turn Filter to adjust the Gain of
+    the Microphone
+
 #### Pan
 
   - On Deck A you can turn Pan to fade to the left or right Speaker for
@@ -196,6 +201,10 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
   - As intended adjusts the Beadgrid lower, means the Grid gets more
     space to echother.
+
+#### Beat\>
+
+  - Not as intended it do Microphone Talkover.
 
 #### Grid\>
 

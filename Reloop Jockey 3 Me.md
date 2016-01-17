@@ -130,10 +130,12 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### Jogwheels
 
-  - The wheels work only if Scratchmode is Active. If Active, you can
-    Scratch the current loadet file in this Deck. If you touch the
-    oudside Rubber ring, you can push or pull the speed of a playing
-    file.
+  - **Scratchmode**: If Active, you can Scratch the current loadet file
+    in this Deck. If you touch the oudside Rubber ring, you can push or
+    pull the speed of a playing file.
+  - **Nudgingmode**: Not Mapped. FIXME (No plans)
+  - **Searchmode**: Not Mapped. FIXME (In future planed)
+  - **Notemode**: Not Mapped. FIXME (No plans)
 
 #### Pitch Fader
 

@@ -242,3 +242,8 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
   - Turn a Parameter in Effect Chain. The fourth is actualy not Mapped.
     FIXME
+
+#### FX Sel.X (Cha)
+
+  - FIXME (Plan to Select the EffectX. And for Pushing a Selection mode
+    for Linking the SuperKnop on Jogmode)

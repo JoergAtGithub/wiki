@@ -122,11 +122,12 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
 
 #### Sync
 
-"sync\_enable" FIXME
+  - Sets the Pitch to the Speed of the opposite Deck.
 
 #### Keylock
 
-"keylock" FIXME
+  - Push Shift and Play/Pause to set Keylock. If set the pitch dosn't
+    effect the Key of the file but the speed.
 
 #### Jogwheels
 

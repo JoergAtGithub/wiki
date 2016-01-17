@@ -136,7 +136,8 @@ The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
     pull the speed of a playing file.
   - **Nudgingmode**: Not Mapped. FIXME (No plans)
   - **Searchmode**: Not Mapped. FIXME (In future planed)
-  - **Notemode**: Not Mapped. FIXME (No plans)
+  - **Notemode**: Not Mapped. FIXME (Plan to Control the SuperKnop on
+    the EffectChain of the Deck)
 
 #### Pitch Fader
 

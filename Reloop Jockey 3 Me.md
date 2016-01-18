@@ -48,10 +48,11 @@ ME to SW.
   - **Gain**: set [deck
     gain](http://mixxx.org/manual/latest/chapters/user_interface.html#equalizers-and-gain-knobs)
   - **High/mid/low**: adjust EQ for high/mid/low frequencies
-  - **Master/booth/phones**: control the Jockey 3 ME's sound card. These
-    knobs do not send MIDI messages or adjust values in Mixxx, so
-    turning them will not change anything on screen. Use these but not
-    the software knobs on screen in Mixxx (see [the Mixxx
+  - **Master/booth/phones**: control the volume Jockey 3 ME's sound
+    card's master/booth/headphone output. These knobs do not send MIDI
+    messages or adjust values in Mixxx, so turning them will not change
+    anything on screen. Use these but not the software knobs on screen
+    in Mixxx (see [the Mixxx
     manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
     for an explanation).
   - **Headphones**: play deck on headphone output

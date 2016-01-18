@@ -37,40 +37,40 @@ ME to SW.
 
 ### Mixer Section
 
-  - Trax Knob: scroll through library. With shift, scroll through
+  - **Trax encoder**: scroll through library. With shift, scroll through
     sections on the left side of the library. Push to toggle big
     library.
-  - Load button: load selected track into active deck
-  - Deck switches: select between controlling deck 1/3 or analog input 1
-    on the left; select between controlling deck 2/4 or analog input 2
-    on the right. Note that the analog inputs are only affected by the
-    mixer controls but not the other deck controls.
-  - Gain: set [deck
+  - **Load button**: load selected track into active deck
+  - **Deck switches**: select between controlling deck 1/3 or analog
+    input 1 on the left; select between controlling deck 2/4 or analog
+    input 2 on the right. Note that the analog inputs are only affected
+    by the mixer controls but not the other deck controls.
+  - **Gain**: set [deck
     gain](http://mixxx.org/manual/latest/chapters/user_interface.html#equalizers-and-gain-knobs)
-  - High/mid/low: adjust EQ for high/mid/low frequencies
-  - Master/booth/phones: control the Jockey 3 ME's sound card. These
+  - **High/mid/low**: adjust EQ for high/mid/low frequencies
+  - **Master/booth/phones**: control the Jockey 3 ME's sound card. These
     knobs do not send MIDI messages or adjust values in Mixxx, so
     turning them will not change anything on screen. Use these but not
     the software knobs on screen in Mixxx (see [the Mixxx
     manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
     for an explanation).
-  - Headphones: play deck on headphone output
-  - Cuemix: Fade between PFL and master output on headphones
-  - Vertical faders: deck volume
-  - Level meter LEDs: show the level of the deck
-  - Crossfader: fade between decks
-  - Crossfader curve (front side of controller): Adjust crossfader curve
-    between fade and cut.
+  - **Headphones**: play deck on headphone output
+  - **Cuemix**: Fade between PFL and master output on headphones
+  - **Vertical faders**: deck volume
+  - **Level meter LEDs**: show the level of the deck
+  - **Crossfader**: fade between decks
+  - **Crossfader curve** (front side of controller): Adjust crossfader
+    curve between fade and cut.
 
 ### Transport Section
 
-  - Play/pause: play/pause or, with shift, toggle keylock
-  - Cue button: behavior depends on [cue mode set in Mixxx
+  - **Play/pause**: play/pause or, with shift, toggle keylock
+  - **Cue**: behavior depends on [cue mode set in Mixxx
     preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
-  - Cup: Like Cue, but it plays only after releasing the button.
-  - Sync: toggle master sync
+  - **Cup**: Like Cue, but it plays only after releasing the button.
+  - **Sync**: toggle master sync
 
-#### Jogwheels
+### Jogwheels
 
   - **Scratch mode**: If Active, you can Scratch the current loadet file
     in this Deck. If you touch the oudside Rubber ring, you can push or
@@ -93,24 +93,24 @@ hold the Trash button while pressing a hotcue. To toggle between hotcues
 
 ### Loop Section
 
-  - Length encoder: Press to activate a 4 beat loop. Double or half the
-    beats of the loop by turning
-  - Move encoder: Move a track 4 Beats forward or backward.
-  - Loop button: ??? FIXME. With shift, sets the start position of a
+  - **Length encoder**: Press to activate a 4 beat loop. Double or half
+    the beats of the loop by turning
+  - **Move encoder**: Move a track 4 Beats forward or backward.
+  - **Loop button**: ??? FIXME. With shift, sets the start position of a
     loop.
-  - Reloop button: does not work as labeled; toggles quantize. With
+  - **Reloop button**: does not work as labeled; toggles quantize. With
     shift, sets the end position of a loop.
 
 ### Other controls
 
-  - Filter: turn to apply a highpass or lowpass filter. On Deck A, press
-    Shift and turn Filter to adjust the Gain of the Microphone
-  - Pan: On Deck A, turn to fade between the left and right speakers on
-    the master output. (Balance)
-  - \< Beat: does not function as labeled. It aligns the beatgrid with
-    the current play position. With shift, moves the beatgrid lines
+  - **Filter**: turn to apply a highpass or lowpass filter. On Deck A,
+    press Shift and turn Filter to adjust the Gain of the Microphone
+  - **Pan**: On Deck A, turn to fade between the left and right speakers
+    on the master output. (Balance)
+  - **\< Beat**: does not function as labeled. It aligns the beatgrid
+    with the current play position. With shift, moves the beatgrid lines
     further from each other (lower BPM by 0.01)
-  - Beat \>: Not as intended it do Microphone Talkover. With shift,
+  - **Beat \>**: Not as intended it do Microphone Talkover. With shift,
     moves beatgrid lines closer to each other (raise BPM by 0.01)
 
 ### Effect Section

@@ -234,13 +234,14 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \<sortable 2=numeric\>
 
-|                                                              |                        |                   |                       |                 |
-| ------------------------------------------------------------ | ---------------------- | ----------------- | --------------------- | --------------- |
-| Device                                                       | Price (USD) \[19\]     | Description       | Integrated Sound Card | Signal protocol |
-| [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | 2 deck control    | no                    | MIDI            |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250                   | 2 deck all-in-one | yes                   | MIDI (and HID?) |
-| [Akai AMX](Akai%20AMX)                                       | $250                   | 1 deck control    | yes                   | MIDI            |
-| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500 (discontinued?) | 4 deck control    | yes                   | MIDI            |
+|                                                              |                        |                    |                       |                 |
+| ------------------------------------------------------------ | ---------------------- | ------------------ | --------------------- | --------------- |
+| Device                                                       | Price (USD) \[19\]     | Description        | Integrated Sound Card | Signal protocol |
+| [Akai AMX](Akai%20AMX)                                       | $250                   | 1 deck control     | yes                   | MIDI            |
+| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200                   | 2 deck (4 virtual) | yes                   | MIDI            |
+| [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | 2 deck control     | no                    | MIDI            |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250                   | 2 deck all-in-one  | yes                   | MIDI (and HID?) |
+| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500 (discontinued?) | 4 deck control     | yes                   | MIDI            |
 
 \</sortable\>
 

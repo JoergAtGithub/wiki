@@ -48,11 +48,10 @@ ME to SW.
   - **Gain**: set [deck
     gain](http://mixxx.org/manual/latest/chapters/user_interface.html#equalizers-and-gain-knobs)
   - **High/mid/low**: adjust EQ for high/mid/low frequencies
-  - **Master/booth/phones**: control the volume Jockey 3 ME's sound
-    card's master/booth/headphone output. These knobs do not send MIDI
-    messages or adjust values in Mixxx, so turning them will not change
-    anything on screen. Use these but not the software knobs on screen
-    in Mixxx (see [the Mixxx
+  - **Master/booth/phones**: control the Jockey 3 ME's sound card. These
+    knobs do not send MIDI messages or adjust values in Mixxx, so
+    turning them will not change anything on screen. Use these but not
+    the software knobs on screen in Mixxx (see [the Mixxx
     manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
     for an explanation).
   - **Headphones**: play deck on headphone output
@@ -116,37 +115,15 @@ hold the Trash button while pressing a hotcue. To toggle between hotcues
 
 ### Effect Section
 
-  - Deck A has EffectChain1
-  - Deck B has EffectChain2
-  - Deck C has EffectChain3
-  - Deck D has EffectChain4
+The effect section controls the effect chain with the same number as the
+deck selected by the deck switch, although any effect chain can be
+applied to any deck.
 
-#### FX Sel. (Adv)
-
-  - To Select a Effect Hold Shift and turn "Dry/Wet" means "FX Sel.
-    (Adv)" to select a Effect.
-
-#### Preset1 - Preset4
-
-  - To chose the Deck you want to apply the Effect, press and hold shift
-    and then Preset1 for Deck A, Preset2 for Deck B and so on.
-
-#### Dry/Wet
-
-  - If you turn Dry/Wet you Control the Volume of this Effect or in
-    Software the "mix" knop.
-
-#### FX on
-
-  - Press this Button to enable or disable the EffectChain. (Default
-    enabled)
-
-#### FX Param
-
-  - Turn a Parameter in Effect Chain. The fourth is actualy not Mapped.
-    FIXME
-
-#### FX Sel.X (Cha)
-
-  - FIXME (Plan to Select the EffectX. And for Pushing a Selection mode
-    for Linking the SuperKnop on Jogmode)
+  - **Dry/wet**: adjust how much the effect is applied. With shift, turn
+    to select different effect chain presets
+  - **FX Param**: adjust effect parameters 1-3. FIXME: With shift,
+    select different effects in chain. Push to link effect parameter to
+    superknob
+  - **FX on**: enable/disable effect chain
+  - **Preset 1-4** (shift+effect buttons): apply effect chain to that
+    deck number

@@ -75,9 +75,8 @@ ME to SW.
 Set the jog wheel mode by pressing one of the 4 buttons beside the jog
 wheel, below the trash and 5-8 buttons.
 
-  - **Scratch**: If Active, you can Scratch the current loadet file in
-    this Deck. If you touch the oudside Rubber ring, you can push or
-    pull the speed of a playing file.
+  - **Scratch**: Move the wheel from the top to scratch. Touch the
+    outside rubber ring to temporarily bend the pitch.
   - **Pitch bend**: Not Mapped. FIXME (No plans)
   - **Search**: Not Mapped. FIXME (In future planed)
   - **Trax**: Not Mapped. FIXME (Plan to Control the SuperKnop on the

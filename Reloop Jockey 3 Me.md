@@ -34,74 +34,30 @@ manual of this Controller section **5.1** and **5.1.2**)
 
 ### Mixer Section
 
-#### Trax Knop
-
-  - With the Trax Knop you can Browse your current playlist by Turning.
-    Push it to open Big Library.
-
-##### Shift
-
-  - If Shift is enabled by Press and hold it down and the Button lights,
-    you can turn the Trax knop to switch between Playlists.
-
-#### Load Buttons
-
-  - If you have Selected a File in the Playlist with the Trax Knop you
-    can press Load to load this file to a Deck. Left Button for Deck A
-    or C, Right Button for B or D
-
-#### Deck Switches
-
-  - Directly under the Load Buttons are the Deck Swiches. You can Select
-    on the left Deck A, C or Input1, on the right Deck B, D or Input2.
-
-<!-- end list -->
-
-1.  **Note** The Inputs only have Mixer Controls and no Deck Controls.
-    (You need a Seperate Midi Control for Everything is Connected to the
-    Inputs on the Back)
-2.  **Note** If you Switch the Deck all Controls on the Side of it are
-    Changed.
-
-#### Equalizer
-
-  - **Gain** Controls the Maximum Volume of the Channel Faders.
-  - **High** Controls the High Frequency loudness.
-  - **Mid** Controls the Mid Frequency loudness. Like Voice
-  - **Low** Controls the Low Frequency loudness. Like Bass
-
-#### Volume Control
-
-The Red Knops are Hardware Controls. No Midi, Real Control for Volume.
-
-  - **Master** Control the Master Volume on Hardware Side.
-  - **Booth** Control the Volume of a Seperate Masterout on the Booth
-    output.
-  - **Phones** Control the Volume of your Headphones
-
-#### PFL (Headphone Buttons)
-
-  - If Enabled you hear on your Headphones the chosen Deck
-
-#### PFL (Mini) Crossfader
-
-  - Fade between PFL and Masterout on Headphones
-
-#### Channel Fader
-
-  - Fade the Volume of a Deck
-
-#### LED Meter
-
-  - Show the volume of a Deck
-
-#### Crossfader
-
-  - Fade between Left and Right Deck FIXME
-
-#### Crossfader Curve
-
-  - Sets the Crossfader Curve between Fade and Cut.
+  - Trax Knob: scroll through library. With shift, scroll through
+    sections on the left side of the library. Push to toggle big
+    library.
+  - Load button: load selected track into active deck
+  - Deck switches: select between controlling deck 1/3 or analog input 1
+    on the left; select between controlling deck 2/4 or analog input 2
+    on the right. Note that the analog inputs are only affected by the
+    mixer controls but not the other deck controls.
+  - Gain: set [deck
+    gain](http://mixxx.org/manual/latest/chapters/user_interface.html#equalizers-and-gain-knobs)
+  - High/mid/low: adjust EQ for high/mid/low frequencies
+  - Master/booth/phones: control the Jockey 3 ME's sound card. These
+    knobs do not send MIDI messages or adjust values in Mixxx, so
+    turning them will not change anything on screen. Use these but not
+    the software knobs on screen in Mixxx (see [the Mixxx
+    manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
+    for an explanation).
+  - Headphones: play deck on headphone output
+  - Cuemix: Fade between PFL and master output on headphones
+  - Vertical faders: deck volume
+  - Level meter LEDs: show the level of the deck
+  - Crossfader: fade between decks
+  - Crossfader curve (front side of controller): Adjust crossfader curve
+    between fade and cut.
 
 ### Transport Section
 

@@ -17,117 +17,98 @@ virtual decks.
   - Master output: channels 1-2
   - Headphone output: channels 3-4
 
-## Mapping Guide
-
-Almost all functions are defined in the XML file alone and therefore can
-be modified in the Mixxx preferences directly. Only the following
-functions are scripted:
-
-  - The Wheels.
-  - The VU meters.
-  - The DEL buttons (because they act as shift/mode buttons).
-  - The SCRATCH buttons (because they also act as mode buttons).
-  - The PLAY, HOT-CUE, and PITCH BEND buttons (because they are affected
-    by one of the above mode buttons). 
-
-The mapping files are well commented and clearly laid out so they can be
-easily modified.
-
-Most of the buttons and knobs on the controller behave as you would
-expect. The only major departure form the norm are the 4 FX knobs and
-buttons at the top of each deck (these are described below).
-
 ## Controller Guide
 
-The controller functions as follows in Mixxx:
+Most of the buttons and knobs on the controller behave as you would
+expect:
+
+[[/media/hardware/cmd-studio-4a-layout.png|]]
+
+The only major departure form the above are the 4 "FX Control" knobs and
+buttons at the top of each deck.
 
 #### Mixer
 
-  - The deck faders, cross-fader, master and phones (mix & volume) knobs
-    all operate as you would expect.
-  - Each deck also has a (pre)gain knob in position FX 1.
-  - The PHONES button on each deck sends that deck's output to the
-    headphone mix (PFL).
+  - The deck faders, cross-fader, master, and headphone monitoring (mix
+    & volume) knobs all operate as you would expect.
+  - Each deck also has a (pre)gain knob (leftmost "FX Control" knob).
 
-#### BROWSE
+#### Navigation Control
 
-  - The BROWSE knob scrolls thorough the track list.
-  - The BROWSE left and right buttons move through the library tree.
-  - The BROWSE ENTER button expands/collapses a library tree item.
+  - The BROWSE knob scrolls thorough the track list in the library
+    panel.
+  - The left and right buttons move through the library tree.
+  - The ENTER button expands/collapses library tree items.
 
-#### Mode Buttons
-
-``` 
- * The DEL key under each deck operates as a mode button. i.e. one press and DEL mode is activated, another press and it deactivates (for that particular deck). The main function of the DEL button is to allow HOT-CUES to be cleared. i.e. When DEL is active, hitting a HOT-CUE button that has already been set will clear it. However DEL mode also alters some of the other button functions.
- * The SCRATCH buttons toggle the decks between normal (JOG) mode and SCRATCH mode.
- * The FX 1 button toggles the deck slip mode on/off.
- * The FX 4 button toggles the deck quantise mode on/off.
-```
-
-#### A/C B/D
-
-  - The switch buttons (A,B,C,D) make the respective "virtual" deck
-    active.
-  - On the left deck A = Channel 1, Deck C = Channel 3.
-  - On the right deck B = Channel 2, Deck D = Channel 4.
-
-#### Deck Transport
-
-  - The LOAD buttons will load the currently highlighted track in the
-    library window into that deck.
-  - The deck CUE, PLAY, SYNC, and LOOP buttons work as you would expect.
-  - The deck wheels work as you would expect, (taking note of whether
-    the top surface of the deck is being touched in both SCRATCH and JOG
-    modes).
-  - When DEL mode is active (see above) the PLAY button triggers reverse
-    playback.
-
-NB: Pressing the deck SYNC button will sync a decks BPM to the currently
-playing track, and will also put the deck in SYNC mode. Decks in SYNC
-mode will remain BPM locked at all times, (press SYNC again to disable
-SYNC mode on that deck).
-
-#### Playback Pitch/Rate
-
-  - The pitch sliders operate as you would expect (i.e. they change the
-    playback rate +/- 10%).
-  - The PITCH BEND buttons step the playback rate +/- 0.5% per press.
-  - The LOCK buttons lock the key so the pitch doesn't change when the
-    playback rate changes (as you would expect).
-  - If DEL mode is active the PITCH BEND buttons step the key up/down
-    without altering the playback rate.
-  - If both PITCH BEND buttons are pressed together, the playback rate
-    (or key if DEL mode is active) are reset to their normal value.
-
-#### Hot Cue
+#### Hot Cue Buttons
 
   - If not currently set, pressing a HOT CUE button sets that hot-cue at
     the current playback position.
   - If already set, pressing a HOT CUE button jumps to that HOT CUE
     position.
-  - If DEL mode is active, pressing an already set HOT CUE button will
-    clear that hot-cue.
+  - Pressing DEL toggles DELETE-mode.
+  - If DELETE-mode is active, pressing an already set HOT CUE button
+    will clear that hot-cue. 
 
-#### Equalizer
+<!-- end list -->
+
+``` 
+ * The main function of the DEL button is to toggle DELETE-mode to allow HOT-CUES to be cleared, however DELETE mode also alters some of the other button functions (see below).
+```
+
+#### Deck Select Buttons
+
+  - The deck select buttons (A, B, C, D) make the respective "virtual"
+    deck active.
+  - On the left deck: A = Channel 1, C = Channel 3.
+  - On the right deck: B = Channel 2, D = Channel 4.
+
+#### Transport Control
+
+  - The LOAD buttons will load the currently highlighted track in the
+    library window into that deck.
+  - The deck CUE, PLAY, SYNC, and LOOP buttons work as you would expect
+    in Mixxx, (SYNC toggles master sync mode).
+  - The deck wheels work as you would expect, (including the touch
+    sensitive platter changing the behaviour in both SCRATCH and JOG
+    modes).
+  - When DELETE-mode is active (see above) the PLAY button triggers
+    reverse playback instead of the usual function.
+
+Additionally:
+
+  - FX Control button 1 toggles the deck slip mode on/off.
+  - FX Control button 2 toggles the deck repeat mode.
+  - FX Control button 3 can be tapped to adjust the beat-grid position.
+  - FX Control button 4 toggles the deck quantise mode on/off.
+
+#### Playback Pitch/Rate
+
+  - The pitch sliders operate as you would expect.
+  - The PITCH BEND buttons step the playback rate up or down.
+  - The LOCK buttons lock the key so the pitch doesn't change when the
+    playback rate changes (as you would expect).
+  - If DELETE-mode is active the PITCH BEND buttons step the key up/down
+    without altering the playback rate.
+  - If both PITCH BEND buttons are pressed together, the playback rate
+    (or key if DELETE-mode is active) are reset to their normal value.
+  - The PITCH BEND buttons will indicate whether the current pitch is
+    higher or lower than normal for that track.
+
+#### 3-Band EQ and Kill Buttons
 
   - The HIGH, MID, and LOW knobs (and kill buttons) operate as you would
     expect.
 
 #### FX
 
-  - The "Quick Effect" filter on each deck is assigned to the FX 4 knob.
-  - The 2 FX ASSIGN buttons on each deck sends the deck's output to one
-    of the first two effects in the effects rack. (The other two effects
-    can't be assigned via the controller at this time).
-
-#### Unassigned controls
-
-  - The middle 2 FX knobs are currently unassigned.
-  - The FX 2 button is currently unassigned.
-
-NB: The usual Mixxx button hold behaviour is obeyed, e.g. When not
-playing, holding the CUE button will start playback from the CUE point
-until you release the button where the playback will stop, (but pressing
-play while holding the CUE button will force playback to continue after
-you release the CUE button). The HOT-CUE buttons work in a similar
-manner.
+  - The "Quick Effect" filter on each deck is assigned to rightmost "FX
+    Control" knob.
+  - The 2 FX ASSIGN buttons on each deck send the deck's output to one
+    (or both) of two effects in the (default) 4-unit effects rack. The
+    left deck (A or C) can be assigned to effect units 1 and/or 2. The
+    right deck (B or D) can be assigned to effect units 3 and/or 4.
+  - The middle two "FX Control" knobs on each deck act as the effect
+    "super" controls for each of the two effects that the deck can be
+    assigned to, (most effects should respond sensibly to these
+    controls).

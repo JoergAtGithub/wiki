@@ -61,29 +61,11 @@ manual of this Controller section **5.1** and **5.1.2**)
 
 ### Transport Section
 
-#### Play/Pause
-
-  - Play/Pause chosen Deck
-
-#### Cue
-
-  - If Pushed while Playing or the playposition is allready on Cue
-    point, the Deck will Jump to the last Cue point and play while
-    holding it. If released it jumps back to cue point. Otherwise it
-    will set a Cue point.
-
-#### Cup
-
-  - Like Cue, but it plays only after releasing the button.
-
-#### Sync
-
-  - Sets the Pitch to the Speed of the opposite Deck.
-
-#### Keylock
-
-  - Push Shift and Play/Pause to set Keylock. If set the pitch dosn't
-    effect the Key of the file but the speed.
+  - Play/pause: play/pause or, with shift, toggle keylock
+  - Cue button: behavior depends on [cue mode set in Mixxx
+    preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
+  - Cup: Like Cue, but it plays only after releasing the button.
+  - Sync: toggle master sync
 
 #### Jogwheels
 

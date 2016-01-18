@@ -119,6 +119,10 @@ branch). This allows you to work on multiple bugs/features in parallel
 and independently propose them for inclusion in Mixxx whenever each one
 is ready.
 
+**Do not work directly on the master or beta branch. Make a branch off
+the the master or beta branch for every independent feature/bug fix you
+want to propose to be included in Mixxx.**
+
 ## Check what branch you are currently on
 
     $ git branch

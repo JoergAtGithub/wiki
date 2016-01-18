@@ -121,9 +121,9 @@ applied to any deck.
 
   - **Dry/wet**: adjust how much the effect is applied. With shift, turn
     to select different effect chain presets
-  - **FX Param**: adjust effect parameters 1-3. FIXME: With shift,
-    select different effects in chain. Push to link effect parameter to
-    superknob
+  - **FX Param**: adjust effect parameters 1-3 for the first effect in
+    the chain. FIXME: With shift, select different effects in chain.
+    Push to link effect parameter to superknob
   - **FX on**: enable/disable effect chain
   - **Preset 1-4** (shift+effect buttons): apply effect chain to that
     deck number

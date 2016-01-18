@@ -72,13 +72,16 @@ ME to SW.
 
 ### Jogwheels
 
-  - **Scratch mode**: If Active, you can Scratch the current loadet file
-    in this Deck. If you touch the oudside Rubber ring, you can push or
+Set the jog wheel mode by pressing one of the 4 buttons beside the jog
+wheel, below the trash and 5-8 buttons.
+
+  - **Scratch**: If Active, you can Scratch the current loadet file in
+    this Deck. If you touch the oudside Rubber ring, you can push or
     pull the speed of a playing file.
-  - **Nudging mode**: Not Mapped. FIXME (No plans)
-  - **Search mode**: Not Mapped. FIXME (In future planed)
-  - **Note mode**: Not Mapped. FIXME (Plan to Control the SuperKnop on
-    the EffectChain of the Deck)
+  - **Pitch bend**: Not Mapped. FIXME (No plans)
+  - **Search**: Not Mapped. FIXME (In future planed)
+  - **Trax**: Not Mapped. FIXME (Plan to Control the SuperKnop on the
+    EffectChain of the Deck)
 
 ### Hotcue Section
 

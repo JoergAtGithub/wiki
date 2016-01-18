@@ -80,10 +80,6 @@ ME to SW.
   - **Note mode**: Not Mapped. FIXME (Plan to Control the SuperKnop on
     the EffectChain of the Deck)
 
-#### Pitch Fader
-
-  - Sets a new speedrate of the playing Deck.
-
 ### Hotcue Section
 
 Press an unlit hotcue button to set that hotcue at the current position.
@@ -112,6 +108,8 @@ hold the Trash button while pressing a hotcue. To toggle between hotcues
     further from each other (lower BPM by 0.01)
   - **Beat \>**: Not as intended it do Microphone Talkover. With shift,
     moves beatgrid lines closer to each other (raise BPM by 0.01)
+  - Pitch fader: adjust playback rate of deck (with keylock, only
+    adjusts tempo and not pitch)
 
 ### Effect Section
 

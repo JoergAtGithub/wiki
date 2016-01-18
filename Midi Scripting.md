@@ -971,6 +971,9 @@ common-controller-scripts.js file:
     and *high* for a linear Mixxx control like deck volume or LFO depth.
     You can then use this returned value to set the desired Mixxx
     control.
+  - **script.absoluteLinInverse**(value, low, high, min, max) - The
+    inverse of the above function. This is useful for sending MIDI
+    values back to controllers.
   - **script.absoluteNonLin**(value, low, mid, high, min, max) - Takes a
     value from an absolute control (0..127 by default, customize with
     min and max) and returns the proportionate value between *low*,

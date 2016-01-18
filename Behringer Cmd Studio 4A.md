@@ -1,6 +1,6 @@
 # Behringer CMD Studio 4a
 
-![https://media.music-group.com/media/PLM/data/images/products/P0809/2000Wx2000H/CMD-STUDIO-4A\_P0809\_Top\_XL.png](https://media.music-group.com/media/PLM/data/images/products/P0809/2000Wx2000H/CMD-STUDIO-4A_P0809_Top_XL.png)
+[[/media/hardware/cmd-studio-4a_p0809_top_l.png|]]
 
 The Behringer CMD Studio 4a is a 2 deck controller that supports 4
 virtual decks.

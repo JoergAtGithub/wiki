@@ -22,6 +22,9 @@ Leave the MIDI channels as the default 1-4. If you have problems with
 the jogwheels, set the jogwheel resolution to 2048. (Please read the
 manual of this Controller section **5.1** and **5.1.2**)
 
+Set the Input 1 and Input 2 switches on the front side of the Jockey 3
+ME to SW.
+
 ## Mixxx Sound Hardware Preferences
 
   - Master output: channels 1-2
@@ -69,12 +72,12 @@ manual of this Controller section **5.1** and **5.1.2**)
 
 #### Jogwheels
 
-  - **Scratchmode**: If Active, you can Scratch the current loadet file
+  - **Scratch mode**: If Active, you can Scratch the current loadet file
     in this Deck. If you touch the oudside Rubber ring, you can push or
     pull the speed of a playing file.
-  - **Nudgingmode**: Not Mapped. FIXME (No plans)
-  - **Searchmode**: Not Mapped. FIXME (In future planed)
-  - **Notemode**: Not Mapped. FIXME (Plan to Control the SuperKnop on
+  - **Nudging mode**: Not Mapped. FIXME (No plans)
+  - **Search mode**: Not Mapped. FIXME (In future planed)
+  - **Note mode**: Not Mapped. FIXME (Plan to Control the SuperKnop on
     the EffectChain of the Deck)
 
 #### Pitch Fader
@@ -83,71 +86,32 @@ manual of this Controller section **5.1** and **5.1.2**)
 
 ### Hotcue Section
 
-  - Like Cue or Cup you can set 8 Hotcues per deck on this Controller.
-    If you want to Delete a Hotcue push and hold the Trash Button and
-    push now the Hotcues you want to delete. Hotcue 5-8 must be
-    aktivated on "5-8".
+Press an unlit hotcue button to set that hotcue at the current position.
+Press a lit hotcue button to jump to that hotcue. To delete a hotcue,
+hold the Trash button while pressing a hotcue. To toggle between hotcues
+1-4 and 5-8, press the 5-8 button.
 
 ### Loop Section
 
-#### Length turning
+  - Length encoder: Press to activate a 4 beat loop. Double or half the
+    beats of the loop by turning
+  - Move encoder: Move a track 4 Beats forward or backward.
+  - Loop button: ??? FIXME. With shift, sets the start position of a
+    loop.
+  - Reloop button: does not work as labeled; toggles quantize. With
+    shift, sets the end position of a loop.
 
-  - By turning double or half the Beats of a active Loop.
+### Other controls
 
-#### Move turning
-
-  - Move a track 4 Beats forward or backward.
-
-#### Length push
-
-  - By pushing the Length knop you apply a 4 Beat Loop.
-
-#### Filter
-
-  - Turn it to apply a highpass or lowpass filter.
-
-#### Shift Filter
-
-  - On Deck A you can press Shift and turn Filter to adjust the Gain of
-    the Microphone
-
-#### Pan
-
-  - On Deck A you can turn Pan to fade to the left or right Speaker for
-    Master output. (Balance)
-
-#### Loop
-
-"reloop\_exit" FIXME
-
-#### Loop In
-
-  - Sets of a new Loop the beginning position of a loop.
-
-#### Reloop
-
-  - This Button don't work as intended. It Sets Quantize instaed.
-
-#### Loop Out
-
-  - Sets the end position of a Loop if "Loop In" was pressed.
-
-#### \<Beat
-
-  - Not as intended it sets the Beatgrid aligne to the Playposition.
-
-#### \<Grid
-
-  - As intended adjusts the Beadgrid lower, means the Grid gets more
-    space to echother.
-
-#### Beat\>
-
-  - Not as intended it do Microphone Talkover.
-
-#### Grid\>
-
-  - Beadgrid higher. Grid gets less space to echother.
+  - Filter: turn to apply a highpass or lowpass filter. On Deck A, press
+    Shift and turn Filter to adjust the Gain of the Microphone
+  - Pan: On Deck A, turn to fade between the left and right speakers on
+    the master output. (Balance)
+  - \< Beat: does not function as labeled. It aligns the beatgrid with
+    the current play position. With shift, moves the beatgrid lines
+    further from each other (lower BPM by 0.01)
+  - Beat \>: Not as intended it do Microphone Talkover. With shift,
+    moves beatgrid lines closer to each other (raise BPM by 0.01)
 
 ### Effect Section
 

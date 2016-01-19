@@ -3,8 +3,12 @@
 ![http://www.reloop.com/media/catalog/product/2/2/4/224649\_Reloop\_TP.jpg](http://www.reloop.com/media/catalog/product/2/2/4/224649_Reloop_TP.jpg)
 
 The Reloop Jockey 3 Master Edition is a 2 Channel Controller with the
-option to control 4 Channels. It is Designed for Traktor Pro 1. This is
-a Documentation to use this Controller with Mixxx.
+option to control 4 Channels. It has a built-in sound card with 6
+channels in and 4 channels out. It features both balanced 1/4" and
+unbalanced RCA master outputs plus RCA booth outputs with an independent
+volume control. It can also be used as a stand-alone mixer, or used to
+mix an analog source with music files in Mixxx. This device requires a
+power adapter in addition to the USB cable.
 
   - [Mixxx Forum
     Thread](http://mixxx.org/forums/viewtopic.php?f=7&t=5418)

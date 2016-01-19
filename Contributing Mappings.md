@@ -20,9 +20,11 @@ progress. They will be updated as we learn from reviewing more mappings.
 
 We use Git for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
-mapping, set up git on your computer. Using git will help you keep track
-of your progress on the mapping and help Mixxx developers review it.
-Start by creating a [GitHub](http://github.com/) account, [forking
+mapping, it is recommended to set up git on your computer. Using git
+will help you keep track of your progress on the mapping and help Mixxx
+developers review it. If you have already finished your mapping, that's
+okay, just add your finished mapping files in one commit. Start by
+creating a [GitHub](http://github.com/) account, [forking
 Mixxx](https://github.com/mixxxdj/mixxx), and cloning your forked git
 repository onto your computer. Be sure you start working from the git
 branch that you will make a pull request for (Run `git branch` to see

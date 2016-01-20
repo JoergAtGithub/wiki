@@ -426,7 +426,7 @@ speakers and amplifiers have RCA and/or 1/8" TRS stereo inputs. Most
 live sound mixers have balanced 1/4" TRS mono inputs. If you need to
 interconnect balanced and unbalanced gear, see [this
 guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
-Presonus and [this guide](http://www.rane.com/note110.html) from Rane.'
+Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
 #### Number of channels
 

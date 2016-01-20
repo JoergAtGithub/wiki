@@ -110,6 +110,13 @@ guide](https://www.native-instruments.com/en/support/knowledge-base/show/2085/ch
 from Native Instruments for identifying USB cables that are better for
 DJ gear.
 
+# I have some other issue with sound on Windows
+
+Try different options for the sound API. Select which sound API to use
+in Options \> Preferences \> Sound Hardware. See [the
+manual](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+for an explanation of the different sound APIs.
+
 ## My controller does not work
 
 To use a MIDI or HID controller with Mixxx, enable the device and load a

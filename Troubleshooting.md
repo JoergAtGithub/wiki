@@ -110,7 +110,7 @@ guide](https://www.native-instruments.com/en/support/knowledge-base/show/2085/ch
 from Native Instruments for identifying USB cables that are better for
 DJ gear.
 
-# I have some other issue with sound on Windows
+## I have some other issue with sound on Windows
 
 Try different options for the sound API. Select which sound API to use
 in Options \> Preferences \> Sound Hardware. See [the

@@ -75,9 +75,11 @@ buttons at the top of each deck.
     SCRATCH button is activated, moving the wheel from the top scratches
     the track.
 
-Also, when DELETE-mode is active (see above) the PLAY and CUE buttons
+Also, when DELETE-mode is active (see above) the CUE and PLAY buttons
 behave differently:
 
+  - The CUE button triggers reverse playback in DELETE-mode while the
+    CUE button is held down.
   - The PLAY button triggers reverse-slip playback in DELETE-mode (while
     the PLAY button is held down). This actually temporarily turns
     slip-mode on with reverse playback, then turns slip-mode off and
@@ -87,16 +89,6 @@ behave differently:
     be turned off as soon as you release the PLAY button (and you will
     return to the playback point where you would have been if you hadn't
     altered the playback).
-  - The CUE button triggers normal reverse playback in DELETE-mode
-    (while the CUE button is held down), unless slip-mode is already
-    active, e.g. by having pressed FX-Control button 1 earlier (see
-    above), in which case reverse-slip playback will be triggered while
-    CUE is held down. In this case slip-mode won't be deactivated when
-    the CUE button is released, (you can repeatedly flip between forward
-    and reverse-slip playback by holding and releasing the CUE button),
-    then when you finally want to deactivate slip (and return to the
-    playback point where you would have been if you hadn't altered the
-    playback), you just hit FX Control button 1 again.
 
 #### FX Control Buttons
 

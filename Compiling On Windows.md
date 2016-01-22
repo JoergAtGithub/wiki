@@ -166,8 +166,8 @@ You have to follow the above guide with two changes.
 
 **WARNING**: DO NOT mix 32 and 64 bits build in the same CMD Shell
 window or you will have undetermined results. If you need 32 and 64 bits
-environments together, use diffrent windows for 32 bits and 64 bits
-build\_environment and mixxx compilation
+environments together, use different terminal window for 32 bits and 64
+bits build\_environment and mixxx compilation
 
 ## Build debug version of Mixxx
 

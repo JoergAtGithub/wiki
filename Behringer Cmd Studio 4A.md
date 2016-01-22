@@ -3,7 +3,8 @@
 [[/media/hardware/cmd-studio-4a_p0809_top_l.png|]]
 
 The Behringer CMD Studio 4a is a 2 deck controller that supports 4
-virtual decks.
+virtual decks and had a built in 4 channel (one stereo master, one
+stereo phones) USB "sound-card" built in.
 
   - [Mixxx Forum
     Thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7868)
@@ -49,12 +50,9 @@ buttons at the top of each deck.
   - Pressing DEL toggles DELETE-mode.
   - If DELETE-mode is active, pressing an already set HOT CUE button
     will clear that hot-cue. 
-
-<!-- end list -->
-
-``` 
- * The main function of the DEL button is to toggle DELETE-mode to allow HOT-CUES to be cleared, however DELETE mode also alters some of the other button functions (see below).
-```
+  - The main function of the DEL button is to toggle DELETE-mode to
+    allow HOT CUEs to be cleared, however DELETE-mode also alters some
+    of the other button functions (see below).
 
 #### Deck Select Buttons
 
@@ -72,8 +70,6 @@ buttons at the top of each deck.
   - The deck wheels work as you would expect, (including the touch
     sensitive platter changing the behaviour in both SCRATCH and JOG
     modes).
-  - When DELETE-mode is active (see above) the PLAY button triggers
-    reverse playback instead of the usual function.
 
 Additionally:
 
@@ -81,6 +77,29 @@ Additionally:
   - FX Control button 2 toggles the deck repeat mode.
   - FX Control button 3 can be tapped to adjust the beat-grid position.
   - FX Control button 4 toggles the deck quantise mode on/off.
+
+Also, when DELETE-mode is active (see above) the PLAY and CUE buttons
+behave differently:
+
+  - The PLAY button triggers reverse-slip playback in DELETE-mode (while
+    the PLAY button is held down). This actually temporarily turns
+    slip-mode on with reverse playback, then turns slip-mode off and
+    reverts to forward playback when the PLAY button is released. This
+    means that if you already have slip-mode activated, e.g. by having
+    pressed FX-Control button 1 earlier (see above), then slip-mode will
+    be turned off as soon as you release the PLAY button (and you will
+    return to the playback point where you would have been if you hadn't
+    altered the playback).
+  - The CUE button triggers normal reverse playback in DELETE-mode
+    (while the CUE button is held down), unless slip-mode is already
+    active, e.g. by having pressed FX-Control button 1 earlier (see
+    above), in which case reverse-slip playback will be triggered while
+    CUE is held down. In this case slip-mode won't be deactivated when
+    the CUE button is released, (you can repeatedly flip between forward
+    and reverse-slip playback by holding and releasing the CUE button),
+    then when you finally want to deactivate slip (and return to the
+    playback point where you would have been if you hadn't altered the
+    playback), you just hit FX Control button 1 again.
 
 #### Playback Pitch/Rate
 

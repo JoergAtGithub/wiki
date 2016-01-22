@@ -105,8 +105,8 @@ behave differently:
 
   - The pitch sliders operate as you would expect.
   - The PITCH BEND buttons step the playback rate up or down.
-  - The LOCK buttons lock the key so the pitch doesn't change when the
-    playback rate changes (as you would expect).
+  - The LOCK buttons turn on key lock so the pitch doesn't change when
+    the playback rate changes (as you would expect).
   - If DELETE-mode is active the PITCH BEND buttons step the key up/down
     without altering the playback rate.
   - If both PITCH BEND buttons are pressed together, the playback rate

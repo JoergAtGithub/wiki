@@ -938,7 +938,7 @@ The effects can also be mapped directly via XML using either
 **String**.prototype**.toInt** - returns an ASCII byte array for all the
 characters in any string. Use like so: `"Test string".toInt()`
 
-## Available common functions
+### Available common functions
 
 Here is a list of functions available to you from the always-loaded
 common-controller-scripts.js file:

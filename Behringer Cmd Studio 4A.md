@@ -40,6 +40,8 @@ buttons at the top of each deck.
     panel.
   - The left and right buttons move through the library tree.
   - The ENTER button expands/collapses library tree items.
+  - The LOAD buttons in the top of the center of the controller load the
+    currently highlighted track in the library window into that deck.
 
 #### Hot Cue Buttons
 

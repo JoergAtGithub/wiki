@@ -949,8 +949,8 @@ common-controller-scripts.js file:
     seconds in `MM:SS` format.
   - **msecondstominutes**(*milliseconds*) - Returns the given quantity
     of milliseconds in `MM:SS.ss` format.
-  - **script.toggleControl**(group, [mixxxcontrol](mixxxcontrol)) -
-    toggles the state of a binary control
+  - **script.toggleControl**(group, [control](mixxxcontrols)) - toggles
+    the state of a binary control
   - **script.midiDebug**(channel, control, value, status,
     group)<sup>2</sup> - Prints the values as passed to it. Call this
     from anywhere in your function to see what the current values of

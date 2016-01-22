@@ -37,3 +37,46 @@ a 32-bit build, copy the x86 installer in the root of your build env
 64-bit build, copy the x64/AMD64 installer.
 
 The file should be named vcredist\_x86.exe or vcredist\_x64.exe.
+
+## Make the package
+
+  - Create a `makerelease.bat` file containing the following:
+
+<!-- end list -->
+
+    REM Clean up after old builds.
+    del /q /f *.exe
+    rmdir /s /q dist32
+    rmdir /s /q dist64
+    
+    REM XP Compatibility requires the v7.1A SDK
+    set MSSDK_DIR="c:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A"
+    
+    REM this can be either release or debug. For development you want to use debug
+    set BUILD_TYPE=release
+    
+    REM This determines if you build a 32bit or 64bit version of mixxx. 
+    REM 32bit = i386, 64bit = amd64
+    set ARCHITECTURE=i386
+    
+    REM set this to the folder where you build the dependencies
+    set WINLIB_PATH=D:\mixxx-buildserver32
+    
+    echo "Building %ARCHITECTURE% %BUILD_TYPE% for %PLATFORM%".
+    
+    if "%ARCHITECTURE%" == "i386" (
+      set TARGET_MACHINE=x86
+      set VCVARS_ARCH=x86
+    ) else ( 
+      set TARGET_MACHINE=amd64
+      set VCVARS_ARCH=x86_amd64
+    )
+    
+    call "c:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+    
+    scons mixxx makerelease msvcdebug=0 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
+
+Note: If you want to build 64 bits package, use set ARCHITECTURE=amd64
+and force32=0
+
+  - Execute it

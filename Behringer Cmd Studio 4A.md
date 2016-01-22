@@ -113,8 +113,8 @@ behave differently:
     without altering the playback rate.
   - If both PITCH BEND buttons are pressed together, the playback rate
     (or key if DELETE-mode is active) are reset to their normal value.
-  - The PITCH BEND buttons will indicate whether the current pitch is
-    higher or lower than normal for that track.
+  - The lights of the PITCH BEND buttons will indicate whether the
+    current pitch is higher or lower than normal for that track.
 
 #### 3-Band EQ and Kill Buttons
 

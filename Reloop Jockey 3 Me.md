@@ -127,7 +127,15 @@ applied to any deck.
     to select different effect chain presets
   - **FX Param**: adjust effect parameters 1-3 for the first effect in
     the chain. FIXME: With shift, select different effects in chain.
-    Push to link effect parameter to superknob
-  - **FX on**: enable/disable effect chain
-  - **Preset 1-4** (shift+effect buttons): apply effect chain to that
-    deck number
+    Push to link effect parameter to superknob:
+
+<!-- end list -->
+
+``` 
+    * **Shift Press FX Param First**: Blink on Led Ring and get in a mode to Select a parameter in this Effect. The Led Ring will show what is Selected.
+    * **Shift Press FX Param Second**: Blink and get to second mode to Select a Link Type between 0 and 4.
+    * **Shift Press FX Param Third**: Third mode to Select Link inverse 0 or 1.
+    * **Shift Press FX Param Last**: Close Link Select mode and Blink on Led ring 3 times.
+* **FX on**: enable/disable effect chain
+* **Preset 1-4** (shift+effect buttons): apply effect chain to that deck number
+```

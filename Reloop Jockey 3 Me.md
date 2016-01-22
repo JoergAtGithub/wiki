@@ -81,10 +81,10 @@ wheel, below the trash and 5-8 buttons.
 
   - **Scratch**: Move the wheel from the top to scratch. Touch the
     outside rubber ring to temporarily bend the pitch.
-  - **Pitch bend**: Not Mapped. FIXME (No plans)
+  - **Pitch bend**: Move the wheel to control the SuperKnop on
+    EffectUnit of this Deck. FIXME (Maybe a Touch Control?)
   - **Search**: Not Mapped. FIXME (In future planed)
-  - **Trax**: Not Mapped. FIXME (Plan to Control the SuperKnop on the
-    EffectChain of the Deck)
+  - **Trax**: Not Mapped. FIXME (No Plans)
 
 ### Hotcue Section
 

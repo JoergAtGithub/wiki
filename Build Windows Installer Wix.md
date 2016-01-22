@@ -1,3 +1,8 @@
+# WARNING:
+
+this page is work in progress related to [Switch to Wix
+Toolset](https://github.com/mixxxdj/mixxx/pull/862)
+
 # Making a Windows installer package
 
 Mixxx uses the [Wix Toolset](http://wixtoolset.org/) for building

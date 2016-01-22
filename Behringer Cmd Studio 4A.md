@@ -4,7 +4,7 @@
 
 The Behringer CMD Studio 4a is a 2 deck controller that supports 4
 virtual decks and had a built in 4 channel (one stereo master, one
-stereo phones) USB "sound-card" built in.
+stereo headphones) USB sound card built in.
 
   - [Mixxx Forum
     Thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7868)
@@ -20,8 +20,8 @@ stereo phones) USB "sound-card" built in.
 
 ## Controller Guide
 
-Most of the buttons and knobs on the controller behave as you would
-expect:
+Most of the buttons and knobs on the controller behave as they are
+labeled on the controller:
 
 [[/media/hardware/cmd-studio-4a-layout.png|]]
 
@@ -30,9 +30,10 @@ buttons at the top of each deck.
 
 #### Mixer
 
-  - The deck faders, cross-fader, master, and headphone monitoring (mix
-    & volume) knobs all operate as you would expect.
-  - Each deck also has a (pre)gain knob (leftmost "FX Control" knob).
+  - The HIGH, MID, and LOW EQ knobs & kill buttons, deck faders,
+    crossfader, master, and headphone monitoring (mix & volume) knobs
+    all operate as labeled.
+  - Each deck also has a gain knob (leftmost "FX Control" knob).
 
 #### Navigation Control
 
@@ -45,7 +46,7 @@ buttons at the top of each deck.
 
 #### Hot Cue Buttons
 
-  - If not currently set, pressing a HOT CUE button sets that hot-cue at
+  - If not currently set, pressing a HOT CUE button sets that hotcue at
     the current playback position.
   - If already set, pressing a HOT CUE button jumps to that HOT CUE
     position.
@@ -54,7 +55,8 @@ buttons at the top of each deck.
     will clear that hot-cue. 
   - The main function of the DEL button is to toggle DELETE-mode to
     allow HOT CUEs to be cleared, however DELETE-mode also alters some
-    of the other button functions (see below).
+    of the other button functions, like a shift button on other
+    controllers.
 
 #### Deck Select Buttons
 
@@ -67,13 +69,15 @@ buttons at the top of each deck.
 
   - The LOAD buttons will load the currently highlighted track in the
     library window into that deck.
-  - The deck CUE, PLAY, SYNC, and LOOP buttons work as you would expect
-    in Mixxx, (SYNC toggles master sync mode).
-  - The deck wheels work as you would expect, (including the touch
-    sensitive platter changing the behaviour in both SCRATCH and JOG
-    modes).
+  - The deck CUE, PLAY, SYNC, and LOOP buttons work as labeled (SYNC
+    toggles master sync for the deck).
+  - The jog wheels temporarily speed up or slow down the track. When the
+    SCRATCH button is activated, moving the wheel from the top scratches
+    the track.
 
-Additionally:
+#### FX Control Buttons
+
+These do not control effects; they have other functions:
 
   - FX Control button 1 toggles the deck slip mode on/off.
   - FX Control button 2 toggles the deck repeat mode.
@@ -105,21 +109,16 @@ behave differently:
 
 #### Playback Pitch/Rate
 
-  - The pitch sliders operate as you would expect.
+  - The pitch sliders control the pitch.
   - The PITCH BEND buttons step the playback rate up or down.
   - The LOCK buttons turn on key lock so the pitch doesn't change when
-    the playback rate changes (as you would expect).
+    the playback rate changes.
   - If DELETE-mode is active the PITCH BEND buttons step the key up/down
     without altering the playback rate.
   - If both PITCH BEND buttons are pressed together, the playback rate
     (or key if DELETE-mode is active) are reset to their normal value.
   - The lights of the PITCH BEND buttons will indicate whether the
     current pitch is higher or lower than normal for that track.
-
-#### 3-Band EQ and Kill Buttons
-
-  - The HIGH, MID, and LOW knobs (and kill buttons) operate as you would
-    expect.
 
 #### FX
 
@@ -132,5 +131,5 @@ behave differently:
     right deck (B or D) can be assigned to effect units 3 and/or 4.
   - The middle two "FX Control" knobs on each deck act as the effect
     "super" controls for each of the two effects that the deck can be
-    assigned to, (most effects should respond sensibly to these
+    assigned to (most effects should respond sensibly to these
     controls).

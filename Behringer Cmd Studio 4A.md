@@ -123,8 +123,8 @@ behave differently:
 
 #### FX
 
-  - The "Quick Effect" filter on each deck is assigned to rightmost "FX
-    Control" knob.
+  - The "Quick Effect" on each deck is assigned to rightmost "FX
+    Control" knob. By default this is a filter effect.
   - The 2 FX ASSIGN buttons on each deck send the deck's output to one
     (or both) of two effects in the (default) 4-unit effects rack. The
     left deck (A or C) can be assigned to effect units 1 and/or 2. The

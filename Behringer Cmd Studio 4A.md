@@ -75,15 +75,6 @@ buttons at the top of each deck.
     SCRATCH button is activated, moving the wheel from the top scratches
     the track.
 
-#### FX Control Buttons
-
-These do not control effects; they have other functions:
-
-  - FX Control button 1 toggles the deck slip mode on/off.
-  - FX Control button 2 toggles the deck repeat mode.
-  - FX Control button 3 can be tapped to adjust the beat-grid position.
-  - FX Control button 4 toggles the deck quantise mode on/off.
-
 Also, when DELETE-mode is active (see above) the PLAY and CUE buttons
 behave differently:
 
@@ -106,6 +97,15 @@ behave differently:
     then when you finally want to deactivate slip (and return to the
     playback point where you would have been if you hadn't altered the
     playback), you just hit FX Control button 1 again.
+
+#### FX Control Buttons
+
+These do not control effects; they have other functions:
+
+  - FX Control button 1 toggles the deck slip mode on/off.
+  - FX Control button 2 toggles the deck repeat mode.
+  - FX Control button 3 can be tapped to adjust the beat-grid position.
+  - FX Control button 4 toggles the deck quantise mode on/off.
 
 #### Playback Pitch/Rate
 

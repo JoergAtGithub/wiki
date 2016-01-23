@@ -509,7 +509,11 @@ Yes\!
 ### override / final
 
 Use\! Any case where a method intentionally overrides that of a parent
-class should use the override keyword.
+class should use the *override* keyword.
+
+In contrast to the pre-C++11 rules (see above) when using *override* on
+a function in a derived class it is recommended to omit the redundant
+*virtual* keyword, because *override* implies *virtual*.
 
 ### alignment
 

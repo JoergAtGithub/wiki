@@ -635,24 +635,30 @@ a new logical block. Allays beak after "},"
 
 Email mixxx-devel with your use case.
 
-### r-value references / move constructors
+### r-value references / move constructors / move assignment operators
 
 In general, do not use.
 
-**Note:** auto&& is a universal reference, which should be used instead
-of an explicit l-value auto& reference in non const ange based loops.
+**Note:** *auto&&* is a universal reference and not an r-value
+reference\! It should be used instead of an explicit l-value *auto&*
+reference in *range-based for loops* over non-const (= mutable)
+containers as shown below.
 
 **Good:**
 
 ``` cpp-qt
-if (auto&& item: container) {
+for (auto&& item: mutableContainer) {
   // read and write item
 } 
 
-if (const auto& item: container) {
+for (const auto& item: immutableContainer) {
   // read only item
 } 
 ```
+
+The universal reference *auto&&* could be used in both cases, but prefer
+*const auto&* if you don't intend to modify the item inside the loop's
+body.
 
 ### forward declared / strongly typed enums
 

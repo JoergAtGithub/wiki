@@ -37,7 +37,8 @@ effects between two tracks (different decks) at same time.
   - **\[ON/SEL\]** LEDs buttons are **blinking blue** when
     <span class="underline">no effect is selected</span>, turns into
     **fixed blue** when the <span class="underline">effect unit is
-    enabled</span> and into fixed **orange** if disabled.
+    enabled</span> and into fixed **orange** if
+    <span class="underline">disabled</span>.
   - **\[ 1 \] / \[ 2 \] / \[ 3 \]** LEDs buttons are **fixed blue** if
     the desired <span class="underline">channel is enabled</span> and
     **orange** if <span class="underline">disabled</span>.

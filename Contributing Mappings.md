@@ -46,8 +46,8 @@ When your mapping is complete, [documented on the
 wiki](#Documenting-the-mapping), and you are ready to submit your
 mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
 that the target branch of mixxxdj/mixxx for your pull request is the
-branch that you started your git branch from (if it isn't, you'll likely
-see a bunch of unrelated commits be included in your pull request).
+branch that you started your git branch from (if it isn't, you'll see
+commits unrelated to your mapping included in your pull request).
 Although we try not to let pull requests linger without review, keep in
 mind that Mixxx is a volunteer project and someone will review your pull
 request when they have time available.

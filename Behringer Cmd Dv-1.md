@@ -105,3 +105,15 @@ selection.
 
   - Allow to remove hotcues after selecting deck(s) (Only available in
     **Focus** and **Master** modes)
+
+**Slice** :
+
+  - Not assigned yet
+
+**Store** :
+
+  - Not assigned yet
+
+**Phrase** :
+
+  - Not assigned yet

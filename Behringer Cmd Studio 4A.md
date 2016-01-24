@@ -20,6 +20,9 @@ stereo headphones) USB sound card built in.
 
 ## Controller Guide
 
+(This page details v1.4 of the Behringer CMD STUDIO 4a controler
+mapping)
+
 Most of the buttons and knobs on the controller behave as they are
 labelled:
 

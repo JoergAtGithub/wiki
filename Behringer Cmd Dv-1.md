@@ -85,4 +85,5 @@ selection.
 
 **Erase** :
 
-  - Allow to remove hotcues after selecting deck(s)
+  - Allow to remove hotcues after selecting deck(s) (Only available in
+    **Focus** and **Master** modes)

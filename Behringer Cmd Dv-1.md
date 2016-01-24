@@ -13,6 +13,26 @@ The **FX\[1-4\],Focus,Master,Double** buttons are builtin controls used
 as a "shift" function and will only changes the addresses of their
 affected controls (knobs for FX\[1-4\], decks for others).
 
+### LEDs mode
+
+It seems there is two modes for the brightness of the LEDs on the CMD
+line products :
+
+  - Dimmed
+  - Bright (Max?)
+
+Toggling between modes can simply be done by pressing the four bottom
+buttons of the controller at same time anytime while it is running
+(plugged to power via USB).
+
+Source : [Resolume
+forum](http://resolume.com/forum/viewtopic.php?f=7&t=10639#p42068)
+
+:?: Controller also going into another mode (need to be defined) when
+pressing the same buttons but while plugging the controller : this one
+show buttons LEDs \[ 7 \]&\[ 8 \] dimmed and buttons LEDs \[ 3 \]&\[ 4
+\] in bright mode.
+
 ## Mapping Description
 
 The following description mapping is for a community mapping that you

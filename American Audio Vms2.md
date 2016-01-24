@@ -90,8 +90,9 @@ software to record from the VMS2 booth output.
 
 ### Linux
 
-  - Use the `ALSA` sound API. The controller will show up as `VMS2 AUDIO
-    MIDI Device: USB Audio (hw:x,y)` in the drop down menus.
+  - Use the `ALSA` sound API.
+  - The controller will show up as `VMS2 AUDIO MIDI Device: USB Audio
+    (hw:x,y)` in the drop down menus.
   - Set the sample rate to 48000 Hz.
 
 ### Windows

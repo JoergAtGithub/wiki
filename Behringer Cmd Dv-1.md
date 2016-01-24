@@ -20,11 +20,10 @@ The following description mapping is for a community mapping that you
 can find in the forums
 [here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7910)
 
-### FX Layers
+### FX Rows
 
-As there's twice the same controls for effects, they both are affected
-in exactly the same configuration and this to allow the mixing of
-effects between two tracks (different decks) at same time.
+The first two rows of encoders and the row of buttons above & below each
+of them control effects.
 
 #### Dual FX Rack
 

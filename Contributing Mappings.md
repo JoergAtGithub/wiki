@@ -30,7 +30,9 @@ repository onto your computer. Be sure you start working from the git
 branch that you will make a pull request for (Run `git branch` to see
 what branch you are on). If you want your mapping included in the next
 2.0.x release, start from the 1.12 branch; if you want it in the 2.1
-release, start from the master branch.
+release, start from the master branch. If a Mixxx release is in beta,
+start from the beta branch rather than master, unless your mapping
+depends on new features in master.
 
 Make a new git branch (run `git checkout -b new_branch_name` from within
 your git repository). Make changes to your mapping and commit them when
@@ -40,13 +42,14 @@ page for more information. Please prefix your git commit messages with
 the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
-When your mapping is complete and you are ready to submit your mapping
-for inclusion in Mixxx, make a pull request on GitHub. If this is your
-first contribution to Mixxx, you will be asked to sign the contributor
-agreement. This agreement gives the Mixxx team permission to distribute
-your mapping with Mixxx under the GNU GPL v2 license with an exception
-allowing it to be distributed in the Mac App Store provided that the
-source code is made available on the Mixxx website under the GPL.
+When your mapping is complete, [documented on the
+wiki](#Documenting-your-mapping), and you are ready to submit your
+mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
+that the target branch of mixxxdj/mixxx for your pull request is the
+branch that you started your git branch from. Although we try not to let
+pull requests linger without review, keep in mind that Mixxx is a
+volunteer project and someone will review your pull request when they
+have time available.
 
 You are encouraged to join the
 [Mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)

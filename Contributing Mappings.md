@@ -43,7 +43,7 @@ the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
 When your mapping is complete, [documented on the
-wiki](#Documenting-your-mapping), and you are ready to submit your
+wiki](#Documenting-the-mapping), and you are ready to submit your
 mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
 that the target branch of mixxxdj/mixxx for your pull request is the
 branch that you started your git branch from. Although we try not to let

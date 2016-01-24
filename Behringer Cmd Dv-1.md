@@ -30,6 +30,14 @@ effects between two tracks (different decks) at same time.
 | Button  | Enable/Disable Effect 1 | Channel ouptu Deck 1 | Channel output Deck 2 | Channel output Master |
 | Label   | \[ON/SEL\]              | \[ 1 \]              | \[ 2 \]               | \[ 3 \]               |
 
+  - **\[ON/SEL\]** LEDs buttons are **blinking blue** when
+    <span class="underline">no effect is selected</span>, turns into
+    **fixed blue** when the <span class="underline">effect unit is
+    enabled</span> and into fixed **orange** if disabled.
+  - **\[ 1 \] / \[ 2 \] / \[ 3 \]** LEDs buttons are **fixed blue** if
+    the desired <span class="underline">channel is enabled</span> and
+    **orange** if <span class="underline">disabled</span>.
+
 #### Special FX Rack
 
 Theses are located above the deck buttons \[A-D\] :

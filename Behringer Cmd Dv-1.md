@@ -2,6 +2,9 @@
 
 [[/media/behringer_cmd-dv-1.png|]]
 
+Manufacturer's product page :
+[Behringer](https://www.music-group.com/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-DV-1/p/P0AJG)
+
 ## Hardware
 
 This device is composed by <span class="underline">endless

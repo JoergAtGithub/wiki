@@ -50,6 +50,13 @@ Theses are located above the deck buttons \[A-D\] :
 
 Mode is switched automatically after select one or more deck.
 
+**A,B,C,D** :
+
+  - Select or deselect a deck for the mode operations
+  - LEDs are **blinking blue** when
+    <span class="underline">selected</span> and **orange** if
+    <span class="underline">not</span>.
+
 **Focus** :
 
   - Allow to set hotcues on selected decks
@@ -64,6 +71,10 @@ Mode is switched automatically after select one or more deck.
 
   - Enable temporary beat rolls looping with ratios \[1\], \[4\], \[8\]
     and \[16\]
+
+  
+:\!: **Important** : Switching mode will always require to redo deck
+selection.
 
 ### Others functions
 

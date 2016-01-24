@@ -3,7 +3,7 @@
 [[/media/hardware/cmd-studio-4a_p0809_top_l.png|]]
 
 The Behringer CMD Studio 4a is a 2 deck controller that supports 4
-virtual decks and had a built in 4 channel (one stereo master, one
+virtual decks and has a built in 4 channel (one stereo master, one
 stereo headphones) USB sound card built in.
 
   - [Mixxx Forum

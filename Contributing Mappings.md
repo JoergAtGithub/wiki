@@ -18,6 +18,8 @@ progress. They will be updated as we learn from reviewing more mappings.
 
 ## Using Git with your mapping
 
+### Setting up Git
+
 We use Git for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
 mapping, it is recommended to set up git on your computer. Using git
@@ -42,6 +44,8 @@ page for more information. Please prefix your git commit messages with
 the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
+### Submitting your mapping for review
+
 When your mapping is complete, [documented on the
 wiki](#Documenting-the-mapping), and you are ready to submit your
 mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
@@ -50,7 +54,14 @@ branch that you started your git branch from (if it isn't, you'll see
 commits unrelated to your mapping included in your pull request).
 Although we try not to let pull requests linger without review, keep in
 mind that Mixxx is a volunteer project and someone will review your pull
-request when they have time available.
+request when they have time available. Mappings will be reviewed to
+check that they follow the [\#design guidelines](#design%20guidelines),
+[\#coding conventions for
+JavaScript](#coding%20conventions%20for%20JavaScript), [\#coding
+conventions for XML](#coding%20conventions%20for%20XML), and look for
+potential bugs.
+
+### After your mapping is merged
 
 You are encouraged to join the
 [Mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)

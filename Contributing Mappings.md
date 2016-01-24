@@ -44,6 +44,20 @@ page for more information. Please prefix your git commit messages with
 the name of your controller so others can easily tell what the commits
 are for after your changes are merged.
 
+#### Working on your mapping in your git repository
+
+In GNU/Linux and Mac OS X, you can directly work on your mapping in your
+git repository. Mixxx automatically reloads JavaScript mapping files
+when they are changed, so you can work on the JS part of the mapping
+while running Mixxx to test your changes. To do this, delete the
+`controllers` directory in your user preferences folder (backup any work
+in progress that you do not want to lose first\!) and make a symbolic
+link to the `res/controllers` directory in your git repository. For
+example, if your git repository is under the "software" directory in
+your home directory on GNU/Linux, run:
+
+`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
+
 ### Submitting your mapping for review
 
 When your mapping is complete, [documented on the
@@ -67,20 +81,6 @@ You are encouraged to join the
 [Mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
 email list to stay involved with Mixxx and keep your mapping up to date
 with new Mixxx features.
-
-### Working on your mapping in your git repository
-
-In GNU/Linux and Mac OS X, you can directly work on your mapping in your
-git repository. Mixxx automatically reloads JavaScript mapping files
-when they are changed, so you can work on the JS part of the mapping
-while running Mixxx to test your changes. To do this, delete the
-`controllers` directory in your user preferences folder (backup any work
-in progress that you do not want to lose first\!) and make a symbolic
-link to the `res/controllers` directory in your git repository. For
-example, if your git repository is under the "software" directory in
-your home directory on GNU/Linux, run:
-
-`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
 
 ## Documenting the mapping
 

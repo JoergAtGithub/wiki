@@ -16,6 +16,10 @@ affected controls (knobs for FX\[1-4\], decks for others).
 
 ## Mapping Description
 
+The following description mapping is for a community mapping that you
+can find in the forums
+[here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7910)
+
 ### FX Layers
 
 As there's twice the same controls for effects, they both are affected

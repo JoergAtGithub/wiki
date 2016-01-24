@@ -28,11 +28,11 @@ effects between two tracks (different decks) at same time.
 
 #### Dual FX Rack
 
-|         |                         |                      |                       |                       |
-| ------- | ----------------------- | -------------------- | --------------------- | --------------------- |
-| Encoder | Effect Selection        | Effect Parameter 1   | Effect Parameter 2    | Effect Parameter 3    |
-| Button  | Enable/Disable Effect 1 | Channel ouptu Deck 1 | Channel output Deck 2 | Channel output Master |
-| Label   | \[ON/SEL\]              | \[ 1 \]              | \[ 2 \]               | \[ 3 \]               |
+|         |                         |                       |                       |                       |
+| ------- | ----------------------- | --------------------- | --------------------- | --------------------- |
+| Encoder | Effect Selection        | Effect Parameter 1    | Effect Parameter 2    | Effect Parameter 3    |
+| Button  | Enable/Disable Effect 1 | Channel output Deck 1 | Channel output Deck 2 | Channel output Master |
+| Label   | \[ON/SEL\]              | \[ 1 \]               | \[ 2 \]               | \[ 3 \]               |
 
   - **\[ON/SEL\]** LEDs buttons are **blinking blue** when
     <span class="underline">no effect is selected</span>, turns into

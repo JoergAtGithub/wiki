@@ -2,6 +2,18 @@
 
 [[/media/behringer_cmd-dv-1.png|]]
 
+## Hardware
+
+This device is composed by <span class="underline">endless
+encoders</span> (Not specified by the officials specifications) sending
+two states position.  
+LEDs cannot be turned off or dimmed and are lighting in **orange** by
+default. They can be set in two other modes : **blue** or **blinking
+blue**.  
+The **FX\[1-4\],Focus,Master,Double** buttons are builtin controls used
+as a "shift" function and will only changes the addresses of their
+affected controls (knobs for FX\[1-4\], decks for others).
+
 ## Mapping Description
 
 ### FX Layers

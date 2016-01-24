@@ -15,11 +15,11 @@ affected controls (knobs for FX\[1-4\], decks for others).
 
 ### LEDs mode
 
-It seems there is two modes for the brightness of the LEDs on the CMD
+There is two modes for the brightness of the LEDs equipped on the CMD
 line products :
 
   - Dimmed
-  - Bright (Max?)
+  - Bright (Max :?:)
 
 Toggling between modes can simply be done by pressing the four bottom
 buttons of the controller at same time anytime while it is running

@@ -9,9 +9,9 @@ Manufacturer's product page :
 
 This device is composed by <span class="underline">endless
 encoders</span> (Not specified by the officials specifications) sending
-two states position.  
-LEDs cannot be turned off and are lighting in **orange** by default.
-They can be set in two other modes : **blue** or **blinking blue**.  
+two states position and momentary push buttons. Its LEDs cannot be
+turned off and are lighting in **orange** by default. They can be set in
+two modes : **blue** or **blinking blue**.  
 The **FX\[1-4\],Focus,Master,Double** buttons are builtin controls used
 as a "shift" function and will only changes the addresses of their
 affected controls (knobs for FX\[1-4\], decks for others).
@@ -19,14 +19,14 @@ affected controls (knobs for FX\[1-4\], decks for others).
 ### LEDs Brightness
 
 There is two levels for the brightness of the LEDs equipped on the CMD
-line products :
+Series :
 
   - Dimmed
   - Bright (Max :?:)
 
 Toggling between them can simply be done by pressing the four bottom
 buttons of the controller at same time and this can be done anytime
-while it is running (plugged to power via USB).
+while the device is running (plugged to power via USB).
 
 Source : [Resolume
 forum](http://resolume.com/forum/viewtopic.php?f=7&t=10639#p42068)
@@ -49,9 +49,8 @@ of them control effects.
 
 #### Dual FX Rack
 
-|         |                         |                       |                       |                       |
-| ------- | ----------------------- | --------------------- | --------------------- | --------------------- |
 | Encoder | Effect Selection        | Effect Parameter 1    | Effect Parameter 2    | Effect Parameter 3    |
+| ------- | ----------------------- | --------------------- | --------------------- | --------------------- |
 | Button  | Enable/Disable Effect 1 | Channel output Deck 1 | Channel output Deck 2 | Channel output Master |
 | Label   | \[ON/SEL\]              | \[ 1 \]               | \[ 2 \]               | \[ 3 \]               |
 

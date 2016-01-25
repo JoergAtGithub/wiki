@@ -95,6 +95,12 @@ software to record from the VMS2 booth output.
     (hw:x,y)` in the drop down menus.
   - Set the sample rate to 48000 Hz.
 
+If your distribution uses pulseaudio by default, make sure to deactivate
+the VMS2 in pulseaudio, so Mixxx can grab the device exclusively. This
+can be done either on the commandline (`man pactl`) or using a
+comfortable GUI like `pavucontrol` (Configuration -\> VMS2 -\> Profile:
+Off).
+
 ### Windows
 
 First off:

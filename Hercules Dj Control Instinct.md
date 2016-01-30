@@ -29,7 +29,7 @@ channels 1 and 2, so to get stereo output you want to select the
 
 ## Controls
 
-[[/media/hercules_dj_control_instinct.svg|]] *Image by Hercules from
+[[/media/hardware/hercules_dj_control_instinct.svg|]] *Image by Hercules from
 <http://ts.hercules.com/download/sound/manuals/DJ_Instinct/Poster/Poster_DJCInstinct_UK.pdf>.
 Click on the image for a bigger version.*
 

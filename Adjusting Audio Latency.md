@@ -95,14 +95,9 @@ high.
 
 ## Windows
 
-  - **ASIO**: ASIO bypasses the normal sound processing software in
-    Windows which is too slow for programs that require low latency like
-    Mixxx. Select ASIO in the API in Mixxx's Sound Hardware Preferences.
-    This requires that you have ASIO drivers installed for your sound
-    card. If not, search for them at the web sites of your sound card
-    manufacturer and/or the chipset manufacturer (for integrated cards).
-    If they don't offer ASIO drivers, try using
-    [ASIO4ALL](http://www.asio4all.com/).
+  - **Sound API**: See [the
+    manual](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+    for information on choosing the best sound API for your setup
   - **ASIO sample rate**: The sample rate used by ASIO should be the
     same as the sample rate in Mixxx's Sound Hardware preferences.
   - **Sound card IRQ priority**: IRQs (interrupt requests) allow devices

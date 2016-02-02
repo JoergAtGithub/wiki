@@ -59,7 +59,7 @@ They are located in the corners above encoders :
 | Quick effect Pitch Adjust Channel 1 | Quick effect Super Knob Channel 1 | Quick effect Super Knob Channel 2 | Quick effect Pitch Adjust Channel 2 |
 | Effect Unit 1 Super                 | Effect Unit 2 Super               | Effect Unit 3 Super               | Effect Unit 4 Super                 |
 
-#### Effect processing
+### Effect processing
 
 Effect units processing can be enabled/disabled by buttons \[ 1 \]..\[ 4
 \] located under encoders.

@@ -105,8 +105,8 @@ selection.
 
 **Erase** :
 
-  - Allow to remove hotcues after selecting deck(s) (Only available in
-    **Focus** and **Master** modes)
+  - Allow to remove hotcues after selecting deck(s) (Available in any
+    mode)
 
 **Slice** :
 

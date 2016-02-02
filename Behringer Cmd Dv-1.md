@@ -9,7 +9,7 @@ Manufacturer's product page :
 
 This device is composed by <span class="underline">endless
 encoders</span> (Not specified by the officials specifications) sending
-two states position and momentary push buttons. Its LEDs cannot be
+two states position and by momentary push buttons. Its LEDs cannot be
 turned off and are lighting in **orange** by default. They can be set in
 two modes : **blue** or **blinking blue**.  
 The **FX\[1-4\],Focus,Master,Double** buttons are builtin controls used

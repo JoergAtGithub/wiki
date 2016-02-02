@@ -52,6 +52,18 @@ They are located in the corners above encoders :
 | Deck A \[Channel1\] |  |  | Deck B \[Channel2\] |
 | Deck C \[Channel3\] |  |  | Deck D \[Channel4\] |
 
+### Encoders
+
+|                                     |                                   |                                   |                                     |
+| ----------------------------------- | --------------------------------- | --------------------------------- | ----------------------------------- |
+| Quick effect Pitch Adjust Channel 1 | Quick effect Super Knob Channel 1 | Quick effect Super Knob Channel 2 | Quick effect Pitch Adjust Channel 2 |
+| Effect Unit 1 Super                 | Effect Unit 2 Super               | Effect Unit 3 Super               | Effect Unit 4 Super                 |
+
+#### Effect processing
+
+Effect units processing can be enabled/disabled by buttons \[ 1 \]..\[ 4
+\] located under encoders.
+
 ### Cues Modes
 
 Mode toggle automatically calling littles buttons marked :
@@ -59,13 +71,6 @@ Mode toggle automatically calling littles buttons marked :
   - **\[ 6 \]** : Set cue(s)
   - **\[ 7 \]** : Goto cue(s)
   - **\[ 8 \]** : Clear cue(s)
-
-### Encoders
-
-|                                     |                                   |                                   |                                     |
-| ----------------------------------- | --------------------------------- | --------------------------------- | ----------------------------------- |
-| Quick effect Pitch Adjust Channel 1 | Quick effect Super Knob Channel 1 | Quick effect Super Knob Channel 2 | Quick effect Pitch Adjust Channel 2 |
-| Effect Unit 1 Super                 | Effect Unit 2 Super               | Effect Unit 3 Super               | Effect Unit 4 Super                 |
 
 ### Cues
 

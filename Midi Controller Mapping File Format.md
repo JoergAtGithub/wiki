@@ -124,9 +124,12 @@ XML, write:
     previous value
   - **Invert**: Subtracts the value from 127, giving an inverted control
     (-127..0)
-  - **Rot64inv**: ?
-  - **Rot64fast**: ?
-  - **Rot64**: ?
+  - **Rot64inv**: For encoders sending 63 (0x3F) or 65 (0x41),
+    increment/decrement the value but in reverse
+  - **Rot64fast**: For encoders sending 63 (0x3F) or 65 (0x41),
+    increment/decrement the value with a multiplier of 1.5
+  - **Rot64**: For encoders sending 63 (0x3F) or 65 (0x41),
+    increment/decrement the value
   - **Button**: a button has a *Down* (non-zero) and an *Up* (zero)
     state, these occur together when pressed/released, this switch only
     triggers on the *Down*, *Up* is ignored. (Herc)

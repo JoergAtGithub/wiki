@@ -70,12 +70,10 @@ commits unrelated to your mapping included in your pull request).
 Although we try not to let pull requests linger without review, keep in
 mind that Mixxx is a volunteer project and someone will review your pull
 request when they have time available. Mappings will be reviewed to
-check that they follow the [\#design guidelines](#design%20guidelines),
-[\#coding conventions for
-JavaScript](#coding%20conventions%20for%20JavaScript), [\#coding
-conventions for XML](#coding%20conventions%20for%20XML), to look for
-potential bugs, and to check that the mapping is well documented on the
-wiki. To update your mapping in response to reviewers' comments, edit
+check that they follow the
+[\#design-guidelines](#design-guidelines),-[\#coding-conventions-for-JavaScript](#coding-conventions-for-JavaScript),-[\#coding-conventions-for-XML](#coding-conventions-for-XML),-to-check-that-the-mapping-is-[documented
+well on the wiki](#documenting-the-mapping), and to look for potential
+bugs. To update your mapping in response to reviewers' comments, edit
 your file(s), make a new git commit, and push your git commit. The new
 commit(s) will automatically show up in the pull request.
 

@@ -115,8 +115,8 @@ English.
 Please complete the wiki page with labeled diagrams explaining how your
 mapping works. Look at the pages for other controllers on the [DJ
 Hardware Guide](hardware%20compatibility#controller%20mappings) for
-examples (many controllers are documented. You can help us fix that =)
-). In addition to helping users, this helps developers who do not own
+examples (many controllers are not documented. You can help us fix that
+=) ). In addition to helping users, this helps developers who do not own
 the controller to review the mapping. If there is no diagram readily
 available, ask the manufacturer for one. If they do not provide one,
 take pictures of your device and label them. Upload diagrams and/or

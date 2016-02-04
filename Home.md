@@ -64,14 +64,19 @@ please fix it.
   - [Controller scripting with JavaScript](midi%20scripting): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
+  - [HID controller presets](manual_hid_preset): create or change a
+    preset for your HID controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
-  - [HID controller mapping file format](hid_mapping_format):
-    brainstorming page for how we might implement HID mapping. Right
-    now, you must use scripting (see above)
   - [Controller mapping
     forum](http://mixxx.org/forums/viewforum.php?f=7): search for
     mappings, share your mappings, and ask for help
+
+<!-- end list -->
+
+  - [HID controller mapping file format](hid_mapping_format):
+    brainstorming page for how we might implement HID mapping. Right
+    now, you must use scripting (see above)
 
 ## Skin Documentation
 

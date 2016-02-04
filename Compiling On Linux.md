@@ -36,6 +36,7 @@ the free repository; the nonfree repository is not necessary for Mixxx.
 Then run:
 
     su
+    [Enter the password for the user "root" at the prompt]
     dnf groupinstall "Development Tools"
     dnf install scons gcc-c++ sqlite-devel rubberband-devel libchromaprint-devel
     dnf builddep mixxx

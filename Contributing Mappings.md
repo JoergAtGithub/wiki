@@ -168,7 +168,8 @@ excluding functionality the controller is labeled for*. If you are
 mapping a controller designed for a purpose other than DJing or a
 controller without labels designed to be mapped in creative ways, try to
 make your mapping have enough features that the controller could be used
-alone without needing another controller to fully control Mixxx. If
+alone without needing another controller to fully control Mixxx (unless
+it has a specific purpose such as a dedicated effects controller). If
 there are not enough physical controls on the device to make that
 practical, do not worry about it too much.
 

@@ -125,7 +125,7 @@ page.
 #### Controller control
 
 Use one of the following examples to map the above MixxxControl to a
-controller's control (knob, button, switch, pad, etc.)
+physical control (knob, button, switch, pad, etc.)
 
 ##### Single-byte controls
 
@@ -163,10 +163,13 @@ buttons.) Here is how to define them in the XML.
           <length>1</length> <!-- Optional - Number of bits that make up this control. A single-bit value is either on or off. 1 bit is the default. -->
 ```
 
-Proposal from Hile: If the control represents multiple bits in one byte,
-following format could be used to shorten the XML format mapping bits to
-groups and keys. This is alternative format to above specified \<bit\>
-controls.
+**Question:** Should the bit number above be changed to a bit offset
+from the leftmost one so it matches the byte offset convention?
+
+**Proposal from Hile:** If the control represents multiple bits in one
+byte, following format could be used to shorten the XML format mapping
+bits to groups and keys. This is alternative format to above specified
+\<bit\> controls.
 
 Note that a bitmap differs from other controls, because with it, group
 and key are inside bit elements, not as direct child nodes of control

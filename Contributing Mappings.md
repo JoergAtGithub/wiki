@@ -130,7 +130,7 @@ If you are submitting a substantially updated or different mapping for a
 controller that already has a mapping in Mixxx, create a new section on
 the controller's existing wiki page to describe your new mapping. When
 your pull request is merged, delete the description of the old mapping
-from the wiki page.
+from the wiki page if your mapping replaces the old one.
 
 ## File naming convention
 

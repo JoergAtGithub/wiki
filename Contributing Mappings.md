@@ -73,11 +73,11 @@ request when they have time available. Mappings will be reviewed to
 check that they follow the [\#design guidelines](#design%20guidelines),
 [\#coding conventions for
 JavaScript](#coding%20conventions%20for%20JavaScript), [\#coding
-conventions for XML](#coding%20conventions%20for%20XML), and look for
-potential bugs. To update your mapping in response to reviewers'
-comments, edit your file(s), make a new git commit, and push your git
-commit. The new commit(s) will automatically show up in the pull
-request.
+conventions for XML](#coding%20conventions%20for%20XML), to look for
+potential bugs, and to check that the mapping is well documented on the
+wiki. To update your mapping in response to reviewers' comments, edit
+your file(s), make a new git commit, and push your git commit. The new
+commit(s) will automatically show up in the pull request.
 
 ### After your mapping is merged
 

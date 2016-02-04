@@ -126,11 +126,11 @@ diagrams are preferred because they are easier to edit later. If the
 manufacturer only provides a PDF diagram, you can open the PDF in
 [Inkscape](https://inkscape.org/) to convert it to SVG and label it.
 
-If you are submitting a substantially updated mapping for a controller
-that already has a mapping in Mixxx, create a new section on the
-controller's existing wiki page to describe your new mapping. When your
-pull request is merged, delete the description of the old mapping from
-the wiki page.
+If you are submitting a substantially updated or different mapping for a
+controller that already has a mapping in Mixxx, create a new section on
+the controller's existing wiki page to describe your new mapping. When
+your pull request is merged, delete the description of the old mapping
+from the wiki page.
 
 ## File naming convention
 

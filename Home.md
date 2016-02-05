@@ -65,7 +65,7 @@ please fix it.
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
   - [HID & USB Bulk controller presets](manual_hid_preset): create or
-    change a preset for your HID controller
+    change a preset for your HID or USB bulk-transfer mode controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
   - [Controller mapping

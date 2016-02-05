@@ -10,13 +10,13 @@ The steps are:
 
 1.  [Create your script
     file](midi_scripting#setting_up_a_javascript_mapping_file). The same
-    function and file naming conventions apply as with MIDI scripting.
-    As well, the script must contain init and shutdown functions.
+    function and file naming conventions as well as init and shutdown
+    function requirements apply as with MIDI scripting.
 2.  The script file must also contain a function called `incomingData`.
-    This is the function that will receive all HID packets from the
-    controller and is responsible for parsing them and taking
-    appropriate actions based on which bytes change. It has the same
-    signature as the [inboundSysex function in MIDI
+    This will receive all data packets from the controller and is
+    responsible for parsing them and taking appropriate actions based on
+    which bytes change. It has the same signature as the [inboundSysex
+    function in MIDI
     scripting](midi_scripting#system-exclusive_sysex_message_handing_functions).
 3.  Create an XML file that tells Mixxx the name of the controller and
     which script file(s) to load, [just like with MIDI

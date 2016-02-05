@@ -83,7 +83,7 @@ Once you know what data you want to send, simply call
   - The number of bytes in the array (start counting at 1 or just use
     the .length property as below,)
   - (Optional) the HID report ID. (Most controllers only support a
-    single report ID so you can ignore this.)
+    single report ID of 0 so you can ignore this.)
 
 <!-- end list -->
 

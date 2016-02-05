@@ -64,8 +64,8 @@ please fix it.
   - [Controller scripting with JavaScript](midi%20scripting): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
-  - [HID controller presets](manual_hid_preset): create or change a
-    preset for your HID controller
+  - [HID & USB Bulk controller presets](manual_hid_preset): create or
+    change a preset for your HID controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
   - [Controller mapping

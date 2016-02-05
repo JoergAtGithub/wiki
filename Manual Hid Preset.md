@@ -104,6 +104,7 @@ the appropriate parts:
             <author>Your Name Here</author>
             <description>HID mapping for the SuperCool controller</description>
             <devices> <!-- Optional section that Mixxx can use to auto-load presets on matching devices -->
+                <!-- Get the vendor and product IDs for the controller from your operating system -->
                 <product protocol="hid" vendor_id="0x1111" product_id="0x100" />
             </devices>
         </info>

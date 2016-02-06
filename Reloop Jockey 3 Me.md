@@ -98,10 +98,10 @@ hold the Trash button while pressing a hotcue. To toggle between hotcues
   - **Length encoder**: Press to activate a 4 beat loop. Double or half
     the beats of the loop by turning
   - **Move encoder**: Move a track 4 Beats forward or backward.
-  - **Loop button**: ??? FIXME. With shift, sets the start position of a
-    loop.
-  - **Reloop button**: does not work as labeled; toggles quantize. With
-    shift, sets the end position of a loop.
+  - **Loop button**: Turn on/off a Loop that is set from Length encoder.
+    With shift, sets the start position of a loop.
+  - **Reloop button**: Repeat the entire file. With shift, sets the end
+    position of a loop.
 
 ### Other controls
 

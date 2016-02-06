@@ -109,13 +109,15 @@ hold the Trash button while pressing a hotcue. To toggle between hotcues
     press Shift and turn Filter to adjust the Gain of the Microphone
   - **Pan**: On Deck A, turn to fade between the left and right speakers
     on the master output. (Balance)
-  - **\< Beat**: does not function as labeled. It aligns the beatgrid
-    with the current play position. With shift, moves the beatgrid lines
-    further from each other (lower BPM by 0.01)
-  - **Beat \>**: Not as intended it do Microphone Talkover. With shift,
-    moves beatgrid lines closer to each other (raise BPM by 0.01)
+  - **\< Beat**: Not Mapped (Update comming). With shift, moves the
+    beatgrid lines further from each other (lower BPM by 0.01)
+  - **Beat \>**: Not Mapped (Update comming). With shift, moves beatgrid
+    lines closer to each other (raise BPM by 0.01)
   - **Pitch fader**: adjust playback rate of deck (with keylock, only
     adjusts tempo and not pitch)
+  - **+/-**: Pitch temporarily faster or slower.
+  - **FX 1**: Shift - (Minus) does not function as labeled. It aligns
+    the beatgrid with the current play position.
 
 ### Effect Section
 

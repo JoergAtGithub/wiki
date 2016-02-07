@@ -21,7 +21,7 @@ multicolor backlit buttons, 8 velocity-sensitive buttons, and 6
 infinitely rotating encoders surrounded by LED rings (rather than finite
 range EQ knobs). It can be used by itself to control most aspects of
 Mixxx. It has no audio interface, so it requires a [separate sound
-card](hardware%20compatibility#standalone%20usb%20sound%20cards)
+card](hardware%20compatibility#stand-alone%20usb%20sound%20cards)
 (although it does include 5-pin MIDI in and out ports). It apparently
 did not sell well considering how little information there is about it
 online. It initially sold for $400 in 2013 but is now available for $100

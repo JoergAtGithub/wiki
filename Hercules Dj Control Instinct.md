@@ -11,8 +11,9 @@ card.
 
 ## Setup
 
-The controller is MIDI only, so you should be able to just plug it in
-and it should be recognized in Mixxx. No need for drivers.
+The controller is a class compliant MIDI controller, so you should be
+able to just plug it in and it should be recognized in Mixxx. No need
+for drivers.
 
 Make sure to select the correct preset for the controller and enable it.
 

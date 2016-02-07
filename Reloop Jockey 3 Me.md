@@ -141,5 +141,6 @@ applied to any deck.
     * **Shift Press FX Param 3**: Third mode to Select Link inverse 0 or 1.
     * **Shift Press FX Param 4**: Close Link Select mode and Blink on Led ring 3 times.
 * **FX on**: enable/disable effect chain
+* **FX B1/2/3**: enable/disable effect 1/2/3 on this chain
 * **Preset 1-4** (shift+effect buttons): apply effect chain to that deck number
 ```

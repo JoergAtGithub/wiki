@@ -80,6 +80,8 @@ ME to SW.
 Set the jog wheel mode by pressing one of the 4 buttons beside the jog
 wheel, below the trash and 5-8 buttons.
 
+  - **Off**: In Default all modes are off, but in this mode the Jogwheel
+    do Pitch bend.
   - **Scratch**: Move the wheel from the top to scratch. Touch the
     outside rubber ring to temporarily bend the pitch.
   - **Pitch bend**: Move the wheel to control the SuperKnob on

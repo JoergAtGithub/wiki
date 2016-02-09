@@ -12,7 +12,7 @@ page](Build%20Windows%20installer).)*
     You need a Microsoft account.
 
 We are currently also testing the [Microsoft Visual C++ Build
-Tools](http://www.microsoft.com/en-us/download/details.aspx?id=49512)
+Tools](http://www.microsoft.com/en-us/download/details.aspx?id=49983)
 package which explicitly enables building applications without Visual
 Studio installed. It's currently a technical preview, but you can
 [search

@@ -22,8 +22,9 @@ will install the one(s) you select as well. (Currently it won't build
 unless you install the Windows 10 SDK as well as the 8.1 SDK.)
 
   - If you install Visual Studio 2013 or newer, it comes with the latest
-    Windows 7 SDK. The following links are only needed if you have a
-    version of Visual Studio older than this.
+    Windows SDK. The following links are only needed if you have a
+    version of Visual Studio older than this or if you're building for
+    Windows XP.
   - [Microsoft Windows 7 (& .NET 3.5)
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
   - Or the [Windows 7.1 (& .NET 4)

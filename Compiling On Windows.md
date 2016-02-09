@@ -16,7 +16,9 @@ Tools](http://go.microsoft.com/fwlink/?LinkId=691132) package which
 explicitly enables building applications without Visual Studio
 installed. It's currently a technical preview, but you can [search
 here](https://www.microsoft.com/en-gb/search/DownloadsDrillInResults.aspx?q=C%2b%2b+build+tools&cateorder=1_5_2_3&sortby=-availabledate)
-(order by newest to oldest) to see when it's officially released.
+(order by newest to oldest) to see when it's officially released. If you
+use this, you do not need to download any Windows SDKs below since this
+will install the one(s) you select as well.
 
   - If you install Visual Studio 2013 or newer, it comes with the latest
     Windows 7 SDK. The following links are only needed if you have a

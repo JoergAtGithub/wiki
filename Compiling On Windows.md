@@ -81,8 +81,9 @@ will install the one(s) you select as well.
     1.  `SET MSVC_PATH=<path containing the vcvarsall.bat file>`
     2.  If you're using only the Windows 7.1 SDK (no Visual Studio,)
         `SET MSBUILD=msbuild /p:PlatformToolset=Windows7.1SDK`
-          - You may need to add/replace `/p:VCTargetsPath="<path
-            containing Microsoft.Cpp.Default.props>"`
+          - If using the VC++ Build Tools, you may need to add/replace
+            `/p:VCTargetsPath="C:\Program Files
+            (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\\"`
 4.  Download the [Qt
     Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip).
     Unpack the zip archive into **WINLIB\_PATH\\build**

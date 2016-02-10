@@ -357,7 +357,7 @@ Linux](http://ffado.org/?q=devicesupport/list).
 
 ### Sound card considerations
 
-#### Stand-alone sound cards versus sound cards integrated with controllers
+#### Stand-alone sound cards versus sound cards integrated with controllers and mixers
 
 Most DJ controllers that cost more than $200 have a 4 output sound card
 built into them. This is more convenient to transport and set up than a
@@ -379,6 +379,9 @@ additional power adapter to ensure the sound card output has enough
 power. A low sound card output can be worked around by running it
 through a mixer and applying gain or a stand-alone headphone amplifier
 if the headphone output is too quiet.
+
+Some mixers also include USB sound cards. This is more convenient than
+having a separate device for vinyl control users.
 
 #### Preamplifiers
 

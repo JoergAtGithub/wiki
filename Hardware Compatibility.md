@@ -480,7 +480,7 @@ sound cards at the same time (without crackling from the sound cards'
 clocks drifting apart), so it is possible to use a 2 output sound card
 for the main stereo output and the onboard sound card on a computer for
 headphones. However, a higher quality, 4 output sound card is
-recommended.
+recommended. You get what you pay for with sound cards.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
 comparison of cheap DJ sound cards. Note that it does not include the

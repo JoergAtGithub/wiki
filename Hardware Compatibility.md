@@ -541,13 +541,15 @@ Numark DJ iO 2 though.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 2.  The default Mixxx mapping has this mapped to hotcues.
 
@@ -561,13 +563,15 @@ Numark DJ iO 2 though.
 
 7.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 8.  The Novation Dicer is priced per pair.
 
@@ -609,23 +613,27 @@ Numark DJ iO 2 though.
 
 19. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 20. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 21. The only difference between the Behringer U-Control UCA202 & UCA222
     are the color and the software they are bundled with.
@@ -662,13 +670,15 @@ Numark DJ iO 2 though.
 
 31. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop). You may be able to find
-    hardware available for sale cheaper. Devices are marked as
-    discontinued if the manufacturer has declared them as discontinued,
-    the manufacturer has gone out of business, or new units are not
-    widely available online. They may or may not still be available used
-    online. If the price of a device has dropped or it has been
-    discontinued, please update this page.
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 32. Microphone input is mixed directly with the master output. It is not
     sent to the computer.

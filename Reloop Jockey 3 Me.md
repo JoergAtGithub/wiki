@@ -70,7 +70,8 @@ ME to SW.
 
   - **Play/pause**: play/pause or, with shift, toggle keylock
   - **Cue**: behavior depends on [cue mode set in Mixxx
-    preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
+    preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).
+    With shift, not as labeled it do quantize.
   - **Cup**: Like Cue, but it plays only after releasing the button.
   - **Sync**: toggle master sync. With shift, not as intended it do
     Microphone Talkover

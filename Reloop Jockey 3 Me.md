@@ -71,18 +71,19 @@ ME to SW.
   - **Play/pause**: play/pause or, with shift, toggle keylock
   - **Cue**: behavior depends on [cue mode set in Mixxx
     preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).
-    With shift, not as labeled it do quantize.
+    With shift, it does not work as labeled; it toggles quantize.
   - **Cup**: Like Cue, but it plays only after releasing the button.
-  - **Sync**: toggle master sync. With shift, not as intended it do
-    Microphone Talkover
+  - **Sync**: toggle master sync. With shift, it does not work as
+    labeled; it toggles microphone talkover.
 
 ### Jogwheels
 
 Set the jog wheel mode by pressing one of the 4 buttons beside the jog
 wheel, below the trash and 5-8 buttons.
 
-  - **Off**: In Default all modes are off, but in this mode the Jogwheel
-    do Pitch bend.
+  - **Off**: By default, all mode buttons are off. In this default mode,
+    moving the jogwheel temporarily bends the pitch, regardless of
+    whether it is moved from the top or the side.
   - **Scratch**: Move the wheel from the top to scratch. Touch the
     outside rubber ring to temporarily bend the pitch.
   - **Pitch bend**: Move the wheel to control the SuperKnob on

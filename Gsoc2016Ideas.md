@@ -1,4 +1,4 @@
-# Student Project Ideas for Google Summer of Code 2015
+# Student Project Ideas for Google Summer of Code 2016
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of

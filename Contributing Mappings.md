@@ -148,7 +148,8 @@ If you add new files to the controller mappings, don't forget to update
 the Windows installer to uninstall these files when uninstalling Mixxx.
 You have to add your files to the list in the
 [build/nsis/Mixxx.nsi](https://github.com/mixxxdj/mixxx/blob/master/build/nsis/Mixxx.nsi#L394)
-file in the Mixxx source tree.
+file in the Mixxx source tree. If you are updating a mapping that is
+already in Mixxx, this is not necessary.
 
 ## Design guidelines
 

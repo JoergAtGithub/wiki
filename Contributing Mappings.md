@@ -160,17 +160,17 @@ If your controller was specifically designed for DJing and has labels on
 the controls, make your mapping do what the labels say. However, you do
 not need to exactly follow the labels or mappings the manufacturer made
 for other software. If you think there is a better way to map it or the
-manufacturer's mapping does not make sense with Mixxx, map it how you
-think it should be. You are encouraged to map additional features not
-included in the manufacturer's mappings, *but not at the expense of
-excluding functionality the controller is labeled for*. If you are
-mapping a controller designed for a purpose other than DJing or a
-controller without labels designed to be mapped in creative ways, try to
-make your mapping have enough features that the controller could be used
-alone without needing another controller to fully control Mixxx (unless
-it has a specific purpose such as a dedicated effects controller). If
-there are not enough physical controls on the device to make that
-practical, do not worry about it too much.
+manufacturer's mapping does not make sense with Mixxx (or just does not
+make sense), map it how you think it should be. You are encouraged to
+map additional features not included in the manufacturer's mappings,
+*but not at the expense of excluding functionality the controller is
+labeled for*. If you are mapping a controller designed for a purpose
+other than DJing or a controller without labels designed to be mapped in
+creative ways, try to make your mapping have enough features that the
+controller could be used alone without needing another controller to
+fully control Mixxx (unless it has a specific purpose such as a
+dedicated effects controller). If there are not enough physical controls
+on the device to make that practical, do not worry about it too much.
 
 If you want to create options that users can easily customize, define
 variables that control those options at the very top of your JavaScript

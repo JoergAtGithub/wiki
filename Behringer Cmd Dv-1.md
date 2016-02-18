@@ -77,31 +77,34 @@ Mode is switched automatically after select one or more deck.
 
 **A,B,C,D** :
 
-  - Select or deselect a deck for the mode operations
+  - Select or deselect a deck for the differents mode operations
   - LEDs are **blinking blue** when
     <span class="underline">selected</span> and **orange** if
     <span class="underline">not</span>.
 
 **Focus** :
 
-  - Allow to set hotcues on selected decks
+  - Allow to <span class="underline">set</span> hotcues on selected
+    deck(s)
 
 **Master** :
 
   - Enable temporary beat rolls looping with ratios \[1/16\], \[1/8\],
     \[1/4\] and \[1/2\]
-  - Allow to activate hotcues on selected decks
+  - Activate the <span class="underline">goto</span> hotcues on selected
+    deck(s)
 
 **Double** :
 
   - Enable temporary beat rolls looping with ratios \[1\], \[4\], \[8\]
     and \[16\]
+  - Activate the <span class="underline">goto and play</span> hotcues on
+    selected deck(s)
 
   
 :\!: **Important** : Switching mode will always require to redo deck
-selection.
-
-### Others functions
+selection.  
+\==== Others functions ====
 
 **Slice** :
 

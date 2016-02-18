@@ -73,8 +73,8 @@ encoders :
 | ----------------- | ------------------ | --------------------------- | ------------------- |
 | **Set** hotcue(s) | **Goto** hotcue(s) | **Goto And Play** hotcue(s) | **Clear** hotcue(s) |
 
-### Cues
+### HotCues
 
 They are assigned to the big buttons to the bottom of the controller.
 
-  - **\[1\] .. \[16\]** : Cues from 1 to 16
+  - **\[1\] .. \[16\]** : HotCues from 1 to 16

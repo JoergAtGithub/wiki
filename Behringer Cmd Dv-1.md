@@ -125,7 +125,8 @@ selection.
 
 ### HotCues
 
-They are located the bottom with numbers **\[1\]..\[8\]** :
+They are located to the bottom of controller with numbers
+**\[1\]..\[8\]** :
 
   - <span class="underline">Set</span> HotCue : Enable **FOCUS** mode
     and select the desired deck(s)

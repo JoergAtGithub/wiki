@@ -103,14 +103,14 @@ selection.
 
 ### Others functions
 
+**Slice** :
+
+  - Not assigned yet
+
 **Erase** :
 
   - Allow to remove hotcues after selecting deck(s) (Available in any
     mode)
-
-**Slice** :
-
-  - Not assigned yet
 
 **Store** :
 
@@ -119,3 +119,16 @@ selection.
 **Phrase** :
 
   - Not assigned yet
+
+### HotCues
+
+They are located the bottom with numbers **\[1\]..\[8\]** :
+
+  - <span class="underline">Set</span> HotCue : Enable **FOCUS** mode
+    and select the desired deck(s)
+  - <span class="underline">Goto</span> HotCue : Enable **MASTER** mode
+    and select the desired deck(s)
+  - <span class="underline">Goto and Play</span> HotCue : Enable
+    **DOUBLE** mode and select the desired deck(s)
+  - <span class="underline">Remove</span> HotCue : Press **ERASE**
+    button and select the desired HotCue you want to remove

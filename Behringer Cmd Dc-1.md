@@ -64,13 +64,14 @@ They are located in the corners above encoders :
 Effect units processing can be enabled/disabled by buttons \[ 1 \]..\[ 4
 \] located under encoders.
 
-### Cues Modes
+### HotCues Modes
 
-Mode toggle automatically calling littles buttons marked :
+Mode is switching automatically by calling the following buttons under
+encoders :
 
-  - **\[ 6 \]** : Set cue(s)
-  - **\[ 7 \]** : Goto cue(s)
-  - **\[ 8 \]** : Clear cue(s)
+| \[ 5 \]           | \[ 6 \]            | \[ 7 \]                     | \[ 8 \]             |
+| ----------------- | ------------------ | --------------------------- | ------------------- |
+| **Set** hotcue(s) | **Goto** hotcue(s) | **Goto And Play** hotcue(s) | **Clear** hotcue(s) |
 
 ### Cues
 

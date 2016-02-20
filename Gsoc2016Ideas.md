@@ -23,3 +23,47 @@ browse through it, you may find many more ideas for GSoC projects.
 
 **IMPORTANT: You should [contact us](gsocadvice) first to get feedback
 if you're going to submit a proposal for your own project idea\!**
+
+## Track Meta Data Editor
+
+Mixxx able to display various Track meta data like cover, year and
+genre. Once all these data are available and correct, it is a fun to
+seek through the library to find a follower track.
+
+Update all track metadata to a consistent state is currently a pain,
+especially if the track are from different sources. This becomes worse
+if the tracks have already meta data but wrong, like tracks from an
+oldies sampler, dated to the release year of the sampler and not the
+single release year.
+
+Mixxx is already able to fetch meta data from MusicBrainz, but some meta
+data data is still missing or of weak quality. Other music players or
+tagging tools does a much better job here. They are able to display meta
+data form other online source like last.fm, Discogs or similar. The user
+can compare them and pick the suitable info. Some tools are also able to
+identify issues like misspelled names or duplicates.
+
+Your proposal should include a clear description of the shortcomings of
+today's meta data edit features and how you plan to improve it. If
+appropriate, please include mockups and diagrams illustrating your
+plans.
+
+## Track analysis view and editor
+
+Mixxx already includes some analyses features, but is not able to
+utilize all of the collected information. The current analysis view is
+not very intuitive.
+
+Beat and bars: Mixxx should be able to detect, visualize and edit beat
+and bar information.
+
+Key: Mixxx should be able to detect, visualize and edit changing keys
+throughout the track.
+
+Cue points: Mixxx should be able to detect, visualize and edit special
+cue points. Like the first beat, Auto DJ fade start / end.
+
+Your proposal should only focus on a set of features described above.
+Please describe the issue you focus on. Define how the data will be
+collected and used inside Mixxx. Include GUI markup of a new analysis
+data editor.

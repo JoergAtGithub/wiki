@@ -266,7 +266,7 @@ Mode.
 | Smart (Shift + Loop) | Toggle beat grid snapping                 |
 | (:2) / (\*2)         | Halve or double the current loop length   |
 
-As Mixx currently only supports one active loop per deck, the secondary
+As Mixxx currently only supports one active loop per deck, the secondary
 loop controls have been remapped to EQ kill switches.
 
 ### Soft Takeover

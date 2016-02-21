@@ -8,8 +8,8 @@
 
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
 
-*Functions in square brackets are executed instead if a shift button is
-pressed.*
+Functions in square brackets are executed instead if a shift button is
+pressed.
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]
@@ -58,15 +58,15 @@ pressed.*
 
 ## Mapping for Mixxx Development
 
-*Functions in square brackets are executed instead if a shift button is
-pressed. Changes after the previous version are in bold.*
+Functions in square brackets are executed instead if a shift button is
+pressed. Changes after the previous version are in bold.
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]
 3.  FX parameter1
 4.  FX parameter2
 5.  FX parameter3
-6.  **FX super knob\[3\] \[Fx wet/dry mix\]**
+6.  **FX super knob\[3\] \[FX wet/dry mix\]**
 7.  EQ high
 8.  EQ mid
 9.  EQ low

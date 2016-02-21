@@ -38,10 +38,10 @@ pressed.
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
 27. Loop in the default length (4 beats at the beginning) \[Reloop\], or
-    *in loop* Exit the loop \[Loop out\]
-28. Halve the default length,\[2\] or *in loop* Halve the loop \[Move
+    in loop *Exit the loop \[Loop out\]*
+28. Halve the default length,\[2\] or in loop *Halve the loop* \[Move
     the loop backward by 1/2 beat\]
-29. Double the default length, or *in loop* Double the loop \[Move the
+29. Double the default length, or in loop *Double the loop* \[Move the
     loop forward by 1/2 beat\]
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2
@@ -87,12 +87,12 @@ pressed. Changes after the previous version are in bold.
 24. Sync mode **\[Adjust beatgrid to match another playing deck\]**
 25. Quantize mode **\[Zoom out waveform\]**
 26. Keylock mode **\[Zoom in waveform\]**
-27. Loop in the default length (default to 4 beats) \[Reloop\], or *in
-    loop* Exit the loop \[Loop out\]
-28. Halve **\[Jump backward by\]** the default length,\[5\] or *in loop*
-    Halve **\[Move it backward by\]** the loop length
-29. Double **\[Jump forward by\]** the default length, or *in loop*
-    Double **\[Move it forward by\]** the loop length
+27. Loop in the default length (default to 4 beats) \[Reloop\], or in
+    loop *Exit the loop \[Loop out\]*
+28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
+    *Halve **\[Move it backward by\]** the loop length*
+29. Double **\[Jump forward by\]** the default length, or in loop
+    *Double **\[Move it forward by\]** the loop length*
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2
 32. Activate \[Clear\] hotcue3

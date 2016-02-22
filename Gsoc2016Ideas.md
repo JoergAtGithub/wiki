@@ -26,7 +26,7 @@ if you're going to submit a proposal for your own project idea\!**
 
 ## Track Meta Data Editor
 
-Mixxx able to display various Track meta data like cover, year and
+Mixxx able to display various track meta data like cover, year and
 genre. Once all these data are available and correct, it is a fun to
 seek through the library to find a follower track.
 
@@ -39,9 +39,9 @@ single release year.
 Mixxx is already able to fetch meta data from MusicBrainz, but some meta
 data data is still missing or of weak quality. Other music players or
 tagging tools does a much better job here. They are able to display meta
-data form other online source like last.fm, Discogs or similar. The user
-can compare them and pick the suitable info. Some tools are also able to
-identify issues like misspelled names or duplicates.
+data form different online source like last.fm, Discogs or similar. The
+user can compare them and pick the suitable info. Some tools are also
+able to identify issues like misspelled names or duplicates.
 
 Your proposal should include a clear description of the shortcomings of
 today's meta data edit features and how you plan to improve it. If

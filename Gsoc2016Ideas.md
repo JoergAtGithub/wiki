@@ -66,9 +66,11 @@ cue points. Like the first beat, Auto DJ fade start / end.
 ## RTMP or WebRTC support
 
 Mixxx already has Shoutcast support for streaming. But for wider
-adoption it should at least have HTML5 WebRTC or more widely adopted
-RTMP-protocol suppport. To achieve this Mixxx recording and streaming
-API should be reshaped to plugin-style API.
+adoption it should at least have HTML5
+[WebRTC](https://en.wikipedia.org/wiki/WebRTC) or more widely adopted
+[RTMP-protocol](https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol)
+suppport. To achieve this Mixxx recording and streaming API should be
+reshaped to plugin-style API.
 
 ## Track analysis view and editor
 

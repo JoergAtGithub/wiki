@@ -63,6 +63,15 @@ throughout the track.
 Cue points: Mixxx should be able to detect, visualize and edit special
 cue points. Like the first beat, Auto DJ fade start / end.
 
+## RTMP or WebRTC support
+
+Mixxx already has Shoutcast support for streaming. But for wider
+adoption it should at least have HTML5 WebRTC or more widely adopted
+RTMP-protocol suppport. To achieve this Mixxx recording and streaming
+API should be reshaped to plugin-style API.
+
+## Track analysis view and editor
+
 Your proposal should only focus on a set of features described above.
 Please describe the issue you focus on. Define how the data will be
 collected and used inside Mixxx. Include GUI markup of a new analysis

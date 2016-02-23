@@ -16,7 +16,7 @@ pressed.
 3.  FX parameter1
 4.  FX parameter2
 5.  FX parameter3
-6.  FX mix
+6.  FX wet/dry mix
 7.  EQ high
 8.  EQ mid
 9.  EQ low

@@ -4,9 +4,9 @@
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
 
-## Mapping for Mixxx 2.0
-
 ![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
+
+## Mapping for Mixxx 2.0
 
 Functions in square brackets are executed instead if a shift button is
 pressed.
@@ -73,7 +73,7 @@ pressed. Changes after the previous version are in bold.
 10. Gain
 11. Filter (high pass only)\[4\]
 12. Pitch (semitones only)
-13. Rate \[Rate by Quantized BPM\]
+13. Rate \[Rate by quantized BPM\]
 14. Channel fader
 15. Cross fader
 16. Headphone volume

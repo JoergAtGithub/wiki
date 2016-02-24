@@ -57,7 +57,7 @@ And don't forget to ask if you get stuck\!
 
 ## Issue a pull request
 
-<https://help.github.com/articles/using-pull-requests>
+[https://www.ojekcinta.com](http://www.ojekcinta.com)
 
 ## Fix issues from code review
 

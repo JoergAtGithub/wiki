@@ -11,7 +11,10 @@ The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
 
 ## Create a Local Branch
 
-<http://www.ojekcinta.com>
+[Mixxx workflow with
+GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
+
+[Using Git for Mixxx Development](using_git)
 
 ## Build Mixxx
 
@@ -54,7 +57,7 @@ And don't forget to ask if you get stuck\!
 
 ## Issue a pull request
 
-[https://www.ojekcinta.com](http://www.ojekcinta.com)
+<https://help.github.com/articles/using-pull-requests>
 
 ## Fix issues from code review
 

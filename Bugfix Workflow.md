@@ -11,10 +11,7 @@ The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
 
 ## Create a Local Branch
 
-[Mixxx workflow with
-GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
-
-[Using Git for Mixxx Development](using_git)
+<http://www.ojekcinta.com>
 
 ## Build Mixxx
 

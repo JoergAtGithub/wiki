@@ -139,10 +139,10 @@ applied to any deck.
 <!-- end list -->
 
 ``` 
-    * **Shift Press FX Param 1/2/3 once**: Blink on Led Ring and get in a mode to Select a parameter in this Effect. The Led Ring will show what is Selected.
-    * **Shift Press FX Param 1/2/3 second**: Blink and get to second mode to Select a Link Type between 0 and 4.
+    * **Shift Press FX Param 1/2/3 once**: Blink on led ring and get in a mode to select a parameter in this effect. The led ring will show what is selected. (1 led mean first selected, 2 means second aso.)
+    * **Shift Press FX Param 1/2/3 second**: Blink and get to second mode to select a link type between 0 and 4.
     * **Shift Press FX Param 1/2/3 third**: Third mode to Select Link inverse 0 or 1.
-    * **Shift Press FX Param 1/2/3 last**: Close Link Select mode and Blink on Led ring 3 times.
+    * **Shift Press FX Param 1/2/3 last**: Close link select mode and blink on led ring 3 times.
 * **FX on**: enable/disable effect chain
 * **FX B1/2/3**: enable/disable effect 1/2/3 on this chain
 * **Preset 1-4** (shift+effect buttons): apply effect chain to that deck number

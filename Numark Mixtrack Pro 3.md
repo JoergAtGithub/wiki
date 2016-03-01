@@ -94,18 +94,16 @@ Adjusts the volume for headphone cueing in the software.
 #### 5.Load:
 
 Press one of these buttons while a track is selected in the library
-window to assign it to Deck 1 and 2, respectively, in the software.
-
+window to assign it to Deck 1 and 2, respectively, in the software.  
 **Shift + Load:** Activates Fader Start mode for the corresponding (PFL
 Button is then blinking). Fader start guide: In fader start mode, not
 only you can press the play/pause button to play/pause the track, but if
 you move up the level fader (the volume fader if you prefer) of the
 deck, the track will be played and if you close it to zero, the track
-will be paused.
-
-**Configurable option:** If smartPFL is set to true, the Cue channel of
-the track being loaded is activated and the other Cue channel is
-deactivated
+will be paused.  
+**Configurable option:**  
+If smartPFL is set to true, the Cue channel of the track being loaded is
+activated and the other Cue channel is deactivated
 
 #### 6.High EQ:
 
@@ -196,8 +194,9 @@ audio, "scratching" the track as you would with a vinyl record.
 
 #### 23.Platter/Jog Wheel:
 
-**Touch side:** Pitch bend / track positioning **Wheel Button On + Touch
-platter:** scratching: touch the platter and move it  
+**Touch side:** Pitch bend / track positioning  
+**Wheel Button On + Touch platter:** scratching: touch the platter and
+move it  
 **Shift + Wheel Button On + Touch platter**: If iCutEnabled is true,
 iCut feature is activated, else normal scratching  
 **Wheel Button Off + Touch platter**: No action mapped currently, pitch

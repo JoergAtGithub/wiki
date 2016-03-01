@@ -275,38 +275,38 @@ JavaScript mapping file for PAD behavior for Auto Loop and Sample Mode.
 
 **Manual Loop Mode:** Hold Pad Mode and press the pad marked Manual Loop
 (silkscreened above the pad) to assign the lower 4 pads to the functions
-listed below: • **Loop In** – Sets the beginning of a loop. After a Loop
-Out point is set, when this button is pressed again, it will allow for
-fine adjustment of the Loop In point. • **Loop Out** – Sets the end
-point for the loop. When this button has been pressed after a Loop Out
-point has been set, it will allow for fine adjustment of the Loop Out
-point. • **On/Off** – When this is pressed inside a loop, this will turn
-the loop off. When pressed outside a loop, this will activate the loop
-and start playback from its Loop In point. If a loop has not been set,
-this button will have no effect. • **Loop x1/2** – Cuts the currently
-playing loop in half. Press Shift + Loop x1/2 to double the length the
-currently playing loop.
-
+listed below:  
+• **Loop In** – Sets the beginning of a loop. After a Loop Out point is
+set, when this button is pressed again, it will allow for fine
+adjustment of the Loop In point.  
+• **Loop Out** – Sets the end point for the loop. When this button has
+been pressed after a Loop Out point has been set, it will allow for fine
+adjustment of the Loop Out point.  
+• **On/Off** – When this is pressed inside a loop, this will turn the
+loop off. When pressed outside a loop, this will activate the loop and
+start playback from its Loop In point. If a loop has not been set, this
+button will have no effect.  
+• **Loop x1/2** – Cuts the currently playing loop in half. Press Shift +
+Loop x1/2 to double the length the currently playing loop.  
 **Auto Loop Mode**: Hold Pad Mode and press the pad marked Autoloop to
 assign the lower 4 pads to the functions listed below: When assigned,
-the respective Pad LED will blink Yellow • **Auto 1** – Sets and starts
-playback of a 1/8-beat autoloop. • **Auto 2** – Sets and starts playback
-of a 1/4-beat autoloop. • **Auto 3** – Sets and starts playback of a
-1/2-beat autoloop. • **Auto 4** – Sets and starts playback of a 1-beat
-autoloop. • **Shift + Auto 1** – Sets and starts playback of a 2-beat
-autoloop. • **Shift + Auto 2** – Sets and starts playback of a 4-beat
-autoloop. • **Shift + Auto 3** – Sets and starts playback of a 8-beat
-autoloop. • **Shift + Auto 4** – Sets and starts playback of a 16-beat
-autoloop.
-
+the respective Pad LED will blink Yellow  
+• **Auto 1** – Sets and starts playback of a 1/8-beat autoloop.  
+• **Auto 2** – Sets and starts playback of a 1/4-beat autoloop.  
+• **Auto 3** – Sets and starts playback of a 1/2-beat autoloop.  
+• **Auto 4** – Sets and starts playback of a 1-beat autoloop.  
+• **Shift + Auto 1** – Sets and starts playback of a 2-beat autoloop.  
+• **Shift + Auto 2** – Sets and starts playback of a 4-beat autoloop.  
+• **Shift + Auto 3** – Sets and starts playback of a 8-beat autoloop.  
+• **Shift + Auto 4** – Sets and starts playback of a 16-beat autoloop.  
 **Sample Mode**: Hold Pad Mode and press the pad marked Sampler to
 assign the lower 4 pads to the functions listed below. When assigned,
-the respective Pad LED will blink Purple • **Deck 1 - Sample 1** – Plays
-the sample assigned to Sample Pad 1. • **Deck 1 - Sample 2** – Plays the
-sample assigned to Sample Pad 2. • **Deck 1 - Sample 3** – Plays the
-sample assigned to Sample Pad 3. • **Deck 1 - Sample 4** – Plays the
-sample assigned to Sample Pad 4. • **Deck 2 - Sample 1** – Plays the
-sample assigned to Sample Pad 5. • **Deck 2 - Sample 2** – Plays the
-sample assigned to Sample Pad 6. • **Deck 2 - Sample 3** – Plays the
-sample assigned to Sample Pad 7. • **Deck 2 - Sample 4** – Plays the
-sample assigned to Sample Pad 8.
+the respective Pad LED will blink Purple  
+• **Deck 1 - Sample 1** – Plays the sample assigned to Sample Pad 1.  
+• **Deck 1 - Sample 2** – Plays the sample assigned to Sample Pad 2.  
+• **Deck 1 - Sample 3** – Plays the sample assigned to Sample Pad 3.  
+• **Deck 1 - Sample 4** – Plays the sample assigned to Sample Pad 4.  
+• **Deck 2 - Sample 1** – Plays the sample assigned to Sample Pad 5.  
+• **Deck 2 - Sample 2** – Plays the sample assigned to Sample Pad 6.  
+• **Deck 2 - Sample 3** – Plays the sample assigned to Sample Pad 7.  
+• **Deck 2 - Sample 4** – Plays the sample assigned to Sample Pad 8.

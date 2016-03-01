@@ -126,9 +126,9 @@ will produce a Low Pass Filter or High Pass Filter.
 
 #### 10.Cue/PFL:
 
-Sends pre-fader audio to the Cue Channel for headphone monitoring.
-**SHIFT + press:** toggle slip mode **SHIFT + double press**: toggle
-quantize mode.
+Sends pre-fader audio to the Cue Channel for headphone monitoring.  
+**SHIFT + press:** toggle slip mode  
+**SHIFT + double press**: toggle quantize mode.
 
 #### 11.Channel Volume:
 
@@ -154,30 +154,32 @@ the music up, while moving towards the "–" will slow it down.
 #### 16.Touch Strip:
 
 **Left Strip:** Use the Touch Strip to adjust the Effect Rack 1 Super
-button. **Right Strip:** Use the Touch Strip to adjust the Effect Rack 1
-Dry/Wet mixing ratio **Shift + Touch Strip:** search through a track’s
-timeline.
+button.  
+**Right Strip:** Use the Touch Strip to adjust the Effect Rack 1 Dry/Wet
+mixing ratio  
+**Shift + Touch Strip:** search through a track’s timeline.
 
 #### 17.Beats Multiplier:
 
 Moves the beat grid left (turn counterclockwise) or right (turn
-clockwise) **Shift + Beats:** adjust beatgrid size
+clockwise)  
+**Shift + Beats:** adjust beatgrid size
 
 #### 18.FX 1 On/Off:
 
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 1
+Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 1  
 **Shift + FX1** to select from the list of available effects: Left deck
 : select previous effect, Right deck : select next effect
 
 #### 19.FX 2 On/Off:
 
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 2
+Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 2  
 **Shift + FX2** to select from the list of available effects. Left deck
 : select previous effect, Right deck : select next effect
 
 #### 20.FX 3 On/Off:
 
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 3
+Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 3  
 **Shift + FX3** to select from the list of available effects. Left deck
 : select previous effect, Right deck : select next effect
 
@@ -195,21 +197,22 @@ audio, "scratching" the track as you would with a vinyl record.
 #### 23.Platter/Jog Wheel:
 
 **Touch side:** Pitch bend / track positioning **Wheel Button On + Touch
-platter:** scratching: touch the platter and move it **Shift + Wheel
-Button On + Touch platter**: If iCutEnabled is true, iCut feature is
-activated, else normal scratching **Wheel Button Off + Touch platter**:
-No action mapped currently, pitch bend / track positioning to be mapped
-in future release **Shift + Wheel Button Off + Touch platter**: if
-fastSeekEnabled is true, fast seek is activated (navigate quickly thru
-track).
+platter:** scratching: touch the platter and move it  
+**Shift + Wheel Button On + Touch platter**: If iCutEnabled is true,
+iCut feature is activated, else normal scratching  
+**Wheel Button Off + Touch platter**: No action mapped currently, pitch
+bend / track positioning to be mapped in future release  
+**Shift + Wheel Button Off + Touch platter**: if fastSeekEnabled is
+true, fast seek is activated (navigate quickly thru track).
 
 #### 24.Shift:
 
 Allows multiple control commands to be triggered when pressed first
-along with other buttons. **Single Press** : Temporary SHIFT **Double
-press** (like a double click) : SHIFT Lock enabled (TAP LED will remain
-ON if Shift Lock is enabled) **Press and release** : toggle off SHIFT
-Lock if enabled
+along with other buttons.  
+**Single Press** : Temporary SHIFT  
+**Double press** (like a double click) : SHIFT Lock enabled (TAP LED
+will remain ON if Shift Lock is enabled) **Press and release** : toggle
+off SHIFT Lock if enabled
 
 #### 25.Pad Mode
 

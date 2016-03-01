@@ -219,4 +219,94 @@ This is used to change the operation of the top 4 performance pads.
 Single press will lit the mode currently active (Manual Loop, Auto Loop
 or Sampler)
 
-....work in progress... to be continued
+#### 26.Sync:
+
+Enables BPM syncing between decks.  
+**Short Press:** Press once to synchronize the tempo (BPM) and phase to
+that of to that of the other track.  
+**Double Press:** press twice QUICKLY to play the track immediately
+synchronized to the tempo (BPM) and to the phase of the other track, if
+the track was paused  
+**Long Press** (Sync Lock). Hold for at least half of a second to enable
+sync lock for this deck. Decks with sync locked will all play at the
+same tempo, and decks that also have quantize enabled will always have
+their beats lined up. If the Sync Lock was previously activated, it just
+deactivates it regardless of the Short press/Double Press  
+**Shift + Sync:** Toggle Key Lock
+
+#### 27.Cue (Transport Control):
+
+Sets and recalls the main Cue point in the current track. Hold down the
+Cue button for temporary play of the cue point. The track will play for
+as long as the button is held down and return to the cue point once it
+is released.  
+**Shift + Cue:** return the play head to the start of the track.
+
+#### 28.Play/Pause:
+
+Starts and suspends playback. If no track is loaded, loads the selected
+track (if any) and play.  
+**Shift + Play/Pause:** to stutter the track from the last set cue
+point. If a cue point has not been set, the play head will return to the
+start of the track.
+
+#### 29.Performance Pads:
+
+The top row of pads is used to trigger autoloop points. See section
+“Performance Pad Modes” for detailed description of usage. The bottom
+row of pads is used to trigger Cue points. If a Cue point has not
+already been set for the loaded track, this control will mark the Cue
+point. If a Cue point has already been set, this control will jump to
+Cue point.  
+**Shift + Hot Cue**: Deletes the assigned Cue point
+
+#### 30.Master Output LEDs:
+
+Displays the audio level going to the Master Output.
+
+## Performance Pad Modes
+
+The upper row of pads has different functions depending on their mode:
+Manual Loop Mode, Auto Loop Mode, and Sample Mode. To select a mode,
+hold down the Pad Mode button and press one of the upper pads. An LED
+under the pad section indicates the currently selected Mode.  
+**Option:** See related configuration option at the top of the
+JavaScript mapping file for PAD behavior for Auto Loop and Sample Mode.
+
+**Manual Loop Mode:** Hold Pad Mode and press the pad marked Manual Loop
+(silkscreened above the pad) to assign the lower 4 pads to the functions
+listed below: • **Loop In** – Sets the beginning of a loop. After a Loop
+Out point is set, when this button is pressed again, it will allow for
+fine adjustment of the Loop In point. • **Loop Out** – Sets the end
+point for the loop. When this button has been pressed after a Loop Out
+point has been set, it will allow for fine adjustment of the Loop Out
+point. • **On/Off** – When this is pressed inside a loop, this will turn
+the loop off. When pressed outside a loop, this will activate the loop
+and start playback from its Loop In point. If a loop has not been set,
+this button will have no effect. • **Loop x1/2** – Cuts the currently
+playing loop in half. Press Shift + Loop x1/2 to double the length the
+currently playing loop.
+
+**Auto Loop Mode**: Hold Pad Mode and press the pad marked Autoloop to
+assign the lower 4 pads to the functions listed below: When assigned,
+the respective Pad LED will blink Yellow • **Auto 1** – Sets and starts
+playback of a 1/8-beat autoloop. • **Auto 2** – Sets and starts playback
+of a 1/4-beat autoloop. • **Auto 3** – Sets and starts playback of a
+1/2-beat autoloop. • **Auto 4** – Sets and starts playback of a 1-beat
+autoloop. • **Shift + Auto 1** – Sets and starts playback of a 2-beat
+autoloop. • **Shift + Auto 2** – Sets and starts playback of a 4-beat
+autoloop. • **Shift + Auto 3** – Sets and starts playback of a 8-beat
+autoloop. • **Shift + Auto 4** – Sets and starts playback of a 16-beat
+autoloop.
+
+**Sample Mode**: Hold Pad Mode and press the pad marked Sampler to
+assign the lower 4 pads to the functions listed below. When assigned,
+the respective Pad LED will blink Purple • **Deck 1 - Sample 1** – Plays
+the sample assigned to Sample Pad 1. • **Deck 1 - Sample 2** – Plays the
+sample assigned to Sample Pad 2. • **Deck 1 - Sample 3** – Plays the
+sample assigned to Sample Pad 3. • **Deck 1 - Sample 4** – Plays the
+sample assigned to Sample Pad 4. • **Deck 2 - Sample 1** – Plays the
+sample assigned to Sample Pad 5. • **Deck 2 - Sample 2** – Plays the
+sample assigned to Sample Pad 6. • **Deck 2 - Sample 3** – Plays the
+sample assigned to Sample Pad 7. • **Deck 2 - Sample 4** – Plays the
+sample assigned to Sample Pad 8.

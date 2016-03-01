@@ -3,7 +3,7 @@
 This page has some general advice for people thinking about applying for
 Summer of Code with Mixxx. If you wish to apply for the program then you
 will need to visit [the official Google Summer of Code
-website](http://socghop.appspot.com/).
+website](https://summerofcode.withgoogle.com).
 
 ## What Project Should I Work On?
 

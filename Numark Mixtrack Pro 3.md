@@ -264,7 +264,7 @@ Cue point.
 
 Displays the audio level going to the Master Output.
 
-## Performance Pad Modes
+### Performance Pad Modes
 
 The upper row of pads has different functions depending on their mode:
 Manual Loop Mode, Auto Loop Mode, and Sample Mode. To select a mode,

@@ -90,3 +90,5 @@ the cue output and the master mix output.
 #### 4.Cue Gain:
 
 Adjusts the volume for headphone cueing in the software.
+
+....work in progress... to be continued

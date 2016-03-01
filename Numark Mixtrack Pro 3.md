@@ -65,6 +65,8 @@ will flash to the beat if Shift Lock is not enabled
 
 ### Mapping
 
+-----
+
 #### 1.Browser Knob:
 
 Rotate this knob to cycle through tracks in main library window. Press

@@ -19,6 +19,8 @@ found in the following forum post:
 
 ### Configuration options
 
+-----
+
 Configuration options can be set in the mapping. You will need to edit
 the values below at the very top of the JavaScript file
 “Numark-Mixtrack-3-scripts.js” and save changes. Allowed values are

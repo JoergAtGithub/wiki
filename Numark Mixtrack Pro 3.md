@@ -211,8 +211,8 @@ Allows multiple control commands to be triggered when pressed first
 along with other buttons.  
 **Single Press** : Temporary SHIFT  
 **Double press** (like a double click) : SHIFT Lock enabled (TAP LED
-will remain ON if Shift Lock is enabled) **Press and release** : toggle
-off SHIFT Lock if enabled
+will remain ON if Shift Lock is enabled)  
+**Press and release** : toggle off SHIFT Lock if enabled
 
 #### 25.Pad Mode
 

@@ -77,3 +77,12 @@ Adjusts the master volume in the software.
 **Note**: This control does not affect the microphone volume which is
 summed with the final output of the Master Gain to the Master Output.
 Use the Mic Gain knob to control the microphone volume.
+
+#### 3.Cue Mix:
+
+Adjusts the software’s audio output to the headphones, mixing between
+the cue output and the master mix output.
+
+#### 4.Cue Gain:
+
+Adjusts the volume for headphone cueing in the software.

@@ -66,6 +66,11 @@ will flash to the beat if Shift Lock is not enabled
 #### 1.Browser Knob:
 
 Rotate this knob to cycle through tracks in main library window. Press
-the Knob to load selected track into first stopped deck. **Shift +
-Turn:** allows selecting Play Lists and side navigation bar items. //
+the Knob to load selected track into first stopped deck.  
+**Shift + Turn:** allows selecting Play Lists and side navigation bar
+items.  
 **Shift + Push:** opens / closes selected side navigation bar item.
+
+#### 2.Master Gain:
+
+Adjusts the master volume in the software.

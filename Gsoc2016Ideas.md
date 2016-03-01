@@ -13,17 +13,6 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-## Something Else\!
-
-As always with Summer of Code, you aren't limited to the suggestions
-we've made here. If you've got a great idea for a project involving
-Mixxx then we're looking forward to hearing about it. Our bug tracker is
-full of wishlist bugs and other ideas scattered throughout, so if you
-browse through it, you may find many more ideas for GSoC projects.
-
-**IMPORTANT: You should [contact us](gsocadvice) first to get feedback
-if you're going to submit a proposal for your own project idea\!**
-
 ## Track Meta Data Editor
 
 Mixxx able to display various track meta data like cover, year and
@@ -63,6 +52,11 @@ throughout the track.
 Cue points: Mixxx should be able to detect, visualize and edit special
 cue points. Like the first beat, Auto DJ fade start / end.
 
+Your proposal should only focus on a set of features described above.
+Please describe the issue you focus on. Define how the data will be
+collected and used inside Mixxx. Include GUI markup of a new analysis
+data editor.
+
 ## RTMP or WebRTC support
 
 Mixxx already has Shoutcast support for streaming. But for wider
@@ -72,9 +66,29 @@ adoption it should at least have HTML5
 suppport. To achieve this Mixxx recording and streaming API should be
 reshaped to plugin-style API.
 
-## Track analysis view and editor
+## Keyboard Mapping GUI
 
-Your proposal should only focus on a set of features described above.
-Please describe the issue you focus on. Define how the data will be
-collected and used inside Mixxx. Include GUI markup of a new analysis
-data editor.
+Editing keyboard shortcuts is currently a pain point for users and
+requires editing a text file.
+
+This project will move keyboard mapping and processing into the new
+controller sub-system as a new type of controller (alongside MIDI and
+HID controller support) and introduce a user-friendly GUI for editing
+keyboard presets. For backwards compatibility, the keyboard presets
+should still be stored on-disk in the same text format.
+
+We suggest you check out the MIDI mapping GUI and code in Mixxx 2.0 for
+inspiration. Another very useful exercise is checking out the various
+commercial DJ software offerings out there and examining how they allow
+users to map MIDI controllers.
+
+## Something Else\!
+
+As always with Summer of Code, you aren't limited to the suggestions
+we've made here. If you've got a great idea for a project involving
+Mixxx then we're looking forward to hearing about it. Our bug tracker is
+full of wishlist bugs and other ideas scattered throughout, so if you
+browse through it, you may find many more ideas for GSoC projects.
+
+**IMPORTANT: You should [contact us](gsocadvice) first to get feedback
+if you're going to submit a proposal for your own project idea\!**

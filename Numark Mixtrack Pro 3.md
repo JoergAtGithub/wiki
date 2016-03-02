@@ -194,15 +194,15 @@ audio, "scratching" the track as you would with a vinyl record.
 
 #### 23.Platter/Jog Wheel:
 
-**Touch side:** Pitch bend / track positioning  
-**Wheel Button On + Touch platter:** scratching: touch the platter and
-move it  
-**Shift + Wheel Button On + Touch platter**: If iCutEnabled is true,
-iCut feature is activated, else normal scratching  
-**Wheel Button Off + Touch platter**: No action mapped currently, pitch
-bend / track positioning to be mapped in future release  
-**Shift + Wheel Button Off + Touch platter**: if fastSeekEnabled is
-true, fast seek is activated (navigate quickly thru track).
+**Touch side:** Pitch bend if track is playing (Wheel On & Off) / track
+positioning (Wheel On)  
+**Wheel On + Touch platter:** scratching: touch the platter and move
+it  
+**Shift + Wheel On + Touch platter**: If iCutEnabled is true, iCut
+feature is activated, else normal scratching  
+**Wheel Button Off + Touch platter**: No action (Wheel is off\!)  
+**Shift + Wheel Off + Touch platter**: if fastSeekEnabled is true, fast
+seek is activated (navigate quickly thru track).
 
 #### 24.Shift:
 

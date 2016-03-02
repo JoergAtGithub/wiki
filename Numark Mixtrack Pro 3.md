@@ -56,7 +56,7 @@ of beatloop command when using AutoLoop buttons (Performance Pads)
 will start on press and stop on 2nd press. When "True" is set: Loop
 stops when finger release.
 
-**PADSamplerButtonPressed**: Default value: false When "false" is set,
+**PADSampleButtonPressed**: Default value: false When "false" is set,
 Sampler will start on press and stop on 2nd press. When "True" is set:
 Sampler stops when finger release.
 

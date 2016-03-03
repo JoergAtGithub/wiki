@@ -2,11 +2,11 @@
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of
-Code 2016](http://www.google-melange.com/gsoc/homepage/google/gsoc2016).
-Each of these projects represents something that we think would make a
-really big difference to our users and that we as a development team are
-really excited about. For advice on how to get in touch and how to
-apply, you should read [GSoC Advice](gsocadvice).
+Code 2016](https://developers.google.com/open-source/gsoc/). Each of
+these projects represents something that we think would make a really
+big difference to our users and that we as a development team are really
+excited about. For advice on how to get in touch and how to apply, you
+should read [GSoC Advice](gsocadvice).
 
 **A GSoC application that simply repeats the project description will
 NOT be accepted. We expect you to think about the feature and how it

@@ -83,7 +83,7 @@ Samplers 1-4 ; Deck 2 adjusts Samplers 5-8 // Shift + Beat knob moves
 beat grid. If false; beat knob will adjust beatgrid, shift + knob will
 adjust grid size
 
-### Mapping
+## Mapping
 
 -----
 

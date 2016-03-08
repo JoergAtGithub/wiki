@@ -181,7 +181,11 @@ mixing ratio
 
 Moves the beat grid left (turn counterclockwise) or right (turn
 clockwise)  
-**Shift + Beats:** adjust beatgrid size
+**Shift + Beats:** adjust beatgrid size **Configurable option:**  
+If BeatKnobAsSamplerVolume is set to "true, use Beat knob to adjust
+Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4 ; Deck 2 knob
+will adjusts Samplers 5-8  
+Shift + Beat knob moves beat grid.
 
 #### 18.FX 1 On/Off:
 
@@ -205,7 +209,9 @@ Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 3
 
 Press this 4 or more times on tempo to manually enter a new BPM. The
 software will ignore the track's BPM and follow your manually entered
-tempo.
+tempo. **Configurable option:**  
+If **TapExpandLibrary** is set to "true", the TAP button will expand the
+Library view and Shift TAP will trigger TAP function
 
 #### 22.Wheel Button:
 

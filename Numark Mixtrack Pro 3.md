@@ -10,10 +10,10 @@ The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
 except that the Pro version has an integrated sound card and costs $100
 more.
 
-## Controller Mapping by S.Morin - Version 1, beta 8
+## Controller Mapping by S.Morin - Version 1.0
 
 found in the following forum post:
-<http://mixxx.org/forums/viewtopic.php?f=7&p=27997&sid=0ea9ad1cdef4e0a452f0c17aa113145c#p27991>
+<http://mixxx.org/forums/viewtopic.php?f=7&p=28103#p28103>
 
 [[/media/numarkmixtrackpro3mapping.gif|]]
 

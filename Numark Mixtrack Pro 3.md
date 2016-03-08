@@ -327,14 +327,25 @@ the respective Pad LED will blink Yellow
 • **Shift + Auto 2** – Sets and starts playback of a 4-beat autoloop.  
 • **Shift + Auto 3** – Sets and starts playback of a 8-beat autoloop.  
 • **Shift + Auto 4** – Sets and starts playback of a 16-beat autoloop.  
+
 **Sample Mode**: Hold Pad Mode and press the pad marked Sampler to
 assign the lower 4 pads to the functions listed below. When assigned,
 the respective Pad LED will blink Purple  
-• **Deck 1 - Sample 1** – Plays the sample assigned to Sample Pad 1.  
-• **Deck 1 - Sample 2** – Plays the sample assigned to Sample Pad 2.  
-• **Deck 1 - Sample 3** – Plays the sample assigned to Sample Pad 3.  
-• **Deck 1 - Sample 4** – Plays the sample assigned to Sample Pad 4.  
-• **Deck 2 - Sample 1** – Plays the sample assigned to Sample Pad 5.  
-• **Deck 2 - Sample 2** – Plays the sample assigned to Sample Pad 6.  
-• **Deck 2 - Sample 3** – Plays the sample assigned to Sample Pad 7.  
-• **Deck 2 - Sample 4** – Plays the sample assigned to Sample Pad 8.
+Shift + Sample X will play loaded sample, but with Sampler unit Sync
+disabled  
+• **Deck 1 - Sample 1** – Plays the sample assigned to Sample Pad 1 with
+the unit Sync activated.  
+• **Deck 1 - Sample 2** – Plays the sample assigned to Sample Pad 2 with
+the unit Sync activated.  
+• **Deck 1 - Sample 3** – Plays the sample assigned to Sample Pad 3 with
+the unit Sync activated.  
+• **Deck 1 - Sample 4** – Plays the sample assigned to Sample Pad 4 with
+the unit Sync activated.  
+• **Deck 2 - Sample 1** – Plays the sample assigned to Sample Pad 5 with
+the unit Sync activated.  
+• **Deck 2 - Sample 2** – Plays the sample assigned to Sample Pad 6 with
+the unit Sync activated.  
+• **Deck 2 - Sample 3** – Plays the sample assigned to Sample Pad 7 with
+the unit Sync activated.  
+• **Deck 2 - Sample 4** – Plays the sample assigned to Sample Pad 8 with
+the unit Sync activated.

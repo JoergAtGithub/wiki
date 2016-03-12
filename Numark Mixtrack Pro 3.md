@@ -74,8 +74,8 @@ function; "false" will invert the functionality
 **Skin**: Default value: 1  
 Specify the Skin used for your installation. This is required in order
 for TapExpandLibrary option to work properly. Different code is required
-for each skin. Accepted values: 1 = "Deere"; 2 = "Late Night"; 3 = "Dark
-Metal"
+for each skin. Accepted values: 1 = "Deere" or "Shade"; 2 = "Late
+Night"; 3 = "Dark Metal"
 
 **BeatKnobAsSamplerVolume**: Default value: true  
 Use Beat knob to adjust Sampler Volume. If "true": Deck 1 adjusts

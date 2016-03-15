@@ -4,7 +4,7 @@ on free software projects.
 
 ### 2016
 
-Mixxx is back in the Google Summer of Code for 2016\!
+Mixxx is back in Google Summer of Code for 2016\!
 
   - See the list of suggested projects: [GSoC 2016 Ideas](gsoc2016ideas)
   - Advice for students thinking of applying: [GSoC Advice for

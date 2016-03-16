@@ -159,10 +159,12 @@ Controls the blend between the two decks.
 #### 13.Pitch Bend Down:
 
 Press and hold to momentarily reduce the speed of the track.
+**Shift+Pitch Bend Down:** Jump 1 beat backward
 
 #### 14.Pitch Bend Up
 
 Press and hold to momentarily increase the speed of the track.
+**Shift+Pitch Bend Up:** Jump 1 beat forward
 
 #### 15.Pitch Fader:
 

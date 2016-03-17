@@ -68,6 +68,10 @@ If you want to link Qt against Agner Fog's optimized
 
 ### Build
 
+If building with VS2015, [read this
+thread](http://stackoverflow.com/questions/32848962/how-to-build-qt-4-8-6-with-visual-studio-2015-without-official-support)
+for patches to the Qt code base to get it to build.
+
   - 32-bit: 
 
 <!-- end list -->

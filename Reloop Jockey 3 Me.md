@@ -145,8 +145,8 @@ applied to any deck.
 
 ``` 
       - Select which effect parameter to edit
-      - Select a superknob link type between 0 and 4 for the selected parameter
-      - Select superknob link inverse 0 or 1 for the selected parameter
+      - Select a [[effects framework#link values|superknob link type between 0 and 4]] for the parameter selected on the first press
+      - Select whether the [[effects framework#link values|superknob link is inverted]] for the parameter selected on the first press
       - Close superknob link editing mode
 * **FX on**: enable/disable effect chain
 * **FX B1/2/3**: enable/disable effect 1/2/3 on this chain

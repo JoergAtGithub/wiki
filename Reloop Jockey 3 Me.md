@@ -138,8 +138,9 @@ applied to any deck.
   - The way effect parameters are linked to the superknob can be edited
     by pressing the FX Param 1-3 encoders while holding shift. The
     effect selected corresponds to the number of the FX Param encoder
-    pressed. Each encoder press with shift switches what is being
-    edited:
+    pressed. For example, pressing FX Param 2 with shift on deck 3 edits
+    Effect2 of the EffectRack3). Each encoder press with shift switches
+    what is being edited:
 
 <!-- end list -->
 

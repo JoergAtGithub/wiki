@@ -135,12 +135,11 @@ applied to any deck.
     to select different effect chain presets
   - **FX Param**: adjust effect parameters 1-3 for the first effect in
     the chain.
-  - The way effect parameters are linked to the superknob can be edited
-    by pressing the FX Param 1-3 encoders while holding shift. The
-    effect selected corresponds to the number of the FX Param encoder
-    pressed. For example, pressing FX Param 2 with shift on deck 3 edits
-    Effect2 of the EffectRack3. Each encoder press with shift changes
-    what is being edited:
+  - **Press FX Param 1-3 + Shift**: edit how effect parameters are
+    linked to the superknob. The effect selected corresponds to the
+    number of the FX Param encoder pressed. For example, pressing FX
+    Param 2 with shift on deck 3 edits Effect2 of the EffectRack3. Each
+    encoder press with shift changes what is being edited:
 
 <!-- end list -->
 

@@ -135,14 +135,19 @@ applied to any deck.
     to select different effect chain presets
   - **FX Param**: adjust effect parameters 1-3 for the first effect in
     the chain.
+  - The way effect parameters are linked to the superknob can be edited
+    by pressing the FX Param 1-3 encoders while holding shift. The
+    effect selected corresponds to the number of the FX Param encoder
+    pressed. Each encoder press with shift switches what is being
+    edited:
 
 <!-- end list -->
 
 ``` 
-    * **Shift Press FX Param 1/2/3 once**: Blink on led ring and get in a mode to select a parameter in this effect. The led ring will show what is selected. (1 led mean first selected, 2 means second aso.)
-    * **Shift Press FX Param 1/2/3 second**: Blink and get to second mode to select a link type between 0 and 4.
-    * **Shift Press FX Param 1/2/3 third**: Third mode to Select Link inverse 0 or 1.
-    * **Shift Press FX Param 1/2/3 last**: Close link select mode and blink on led ring 3 times.
+      - Select which effect parameter to edit
+      - Select a superknob link type between 0 and 4 for the selected parameter
+      - Select superknob link inverse 0 or 1 for the selected parameter
+      - Close superknob link editing mode
 * **FX on**: enable/disable effect chain
 * **FX B1/2/3**: enable/disable effect 1/2/3 on this chain
 * **Preset 1-4** (shift+effect buttons): apply effect chain to that deck number

@@ -79,12 +79,12 @@ pressed. Changes after the previous version are in bold.
 16. Headphone volume
 17. Headphone mix
 18. Master volume
-19. Scratch
+19. Scratch **\[Brake\]**
 20. Jog (locked in slip mode)
-21. Play \[Adjust beatgrid to the current playposition\]
-22. Cue **\[Move beatgrid earlier\]**
-23. Cue and Play **\[Move beatgrid later\]**
-24. Sync mode **\[Adjust beatgrid to match another playing deck\]**
+21. Play **\[Reverse\]**
+22. Cue **\[Adjust beatgrid to the current playposition\]**
+23. Cue and Play \[Move beatgrid earlier\]
+24. Sync mode \[Move beatgrid later\]
 25. Quantize mode **\[Zoom out waveform\]**
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (default to 4 beats) \[Reloop\], or in
@@ -109,7 +109,7 @@ pressed. Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-3-1)
+(2016-4-1)
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

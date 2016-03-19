@@ -97,7 +97,7 @@ pressed. Changes after the previous version are in bold.
 31. Activate \[Clear\] hotcue2
 32. Activate \[Clear\] hotcue3
 33. Activate \[Clear\] hotcue4
-34. Slip mode (affect scratch, loop and hotcue)
+34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
 36. FX1 \[FX3\]

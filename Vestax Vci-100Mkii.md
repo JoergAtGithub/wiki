@@ -120,7 +120,7 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 + LED29: default length \< 1/4
 
-3.  use Deere skin to bind parameters
+3.  use Deere skin to link parameters
 
 4.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

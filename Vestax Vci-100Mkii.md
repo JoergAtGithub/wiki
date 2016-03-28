@@ -63,15 +63,18 @@ pressed. Changes after the previous version are in bold.
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]
-3.  FX parameter1
-4.  FX parameter2
-5.  FX parameter3
-6.  **FX super knob\[3\] \[FX wet/dry mix\]**
+3.  FX parameter1 **\[set link to super knob\]((left + right inverse -\>
+    right inverse -\> left inverse -\> full inverse -\> none -\> full
+    -\> left -\> right -\> left + right (use Deere skin to show the
+    state) ))**
+4.  FX parameter2 **\[set link to super knob\]**
+5.  FX parameter3 **\[set link to super knob\]**
+6.  **FX super knob \[wet/dry mix\]**
 7.  EQ high
 8.  EQ mid
 9.  EQ low
 10. Gain
-11. Filter (high pass only)\[4\]
+11. Filter (high pass only)\[3\]
 12. Pitch (semitones only)
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -89,7 +92,7 @@ pressed. Changes after the previous version are in bold.
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (default to 4 beats) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
+28. Halve **\[Jump backward by\]** the default length,\[4\] or in loop
     *Halve **\[Move it backward by\]** the loop length*
 29. Double **\[Jump forward by\]** the default length, or in loop
     *Double **\[Move it forward by\]** the loop length*
@@ -120,13 +123,11 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 + LED29: default length \< 1/4
 
-3.  use Deere skin to link parameters
-
-4.  see [the
+3.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     or use [Controller
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-5.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+4.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 + LED29: default length \< 1/4

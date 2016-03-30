@@ -63,10 +63,10 @@ pressed. Changes after the previous version are in bold.
 
 1.  Previous effect \[Select FX1/2\]
 2.  Next effect \[Select FX3/4\]
-3.  FX parameter1 **\[set link to super knob\]((left + right inverse -\>
+3.  FX parameter1 **\[set link to super knob\]((left-right inverse -\>
     right inverse -\> left inverse -\> full inverse -\> none -\> full
-    -\> left -\> right -\> left + right (use Deere skin to show the
-    state) ))**
+    -\> left -\> right -\> left-right (use Deere skin to show the state)
+    ))**
 4.  FX parameter2 **\[set link to super knob\]**
 5.  FX parameter3 **\[set link to super knob\]**
 6.  **FX super knob \[wet/dry mix\]**
@@ -121,7 +121,7 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
     (choose "Quick Effect Super Knob") for low-high pass
 
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
-    default length \< 4, LED28 + LED29: default length \< 1/4
+    default length \< 4, LED28 & LED29: default length \< 1/4
 
 3.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -130,4 +130,4 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
     (choose "Quick Effect Super Knob") for low-high pass
 
 4.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
-    default length \< 4, LED28 + LED29: default length \< 1/4
+    default length \< 4, LED28 & LED29: default length \< 1/4

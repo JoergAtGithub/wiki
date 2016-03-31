@@ -8,6 +8,7 @@
     DJ.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules%20P32%20DJ.midi.xml)
     and
     [Hercules-p32-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules-P32-scripts.js)
+  - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=8132)
 
 Thanks to Hercules for supporting the development of this mapping by
 providing a controller.

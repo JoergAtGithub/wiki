@@ -4,6 +4,9 @@
 
   - [Manufacturer's product
     page](http://www.hercules.com/uk/advanced-controllers/bdd/p/258/hercules-p32-dj/)
+  - [Manufacturer's support and downloads
+    page](https://support.hercules.com/en/product/p32dj-en/). **Download
+    Windows driver here.**
   - Mapping files on GitHub: [Hercules P32
     DJ.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules%20P32%20DJ.midi.xml)
     and
@@ -13,7 +16,70 @@
     folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder))
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=8132)
 
-This mapping is a work in progress.
+This mapping is a work in progress, but is in a usable condition.
+
+This controller is a class compliant USB MIDI and audio device, so it
+can be used without any special drivers on GNU/Linux, Mac OS X, and
+Windows. However, it recommended to install [the
+driver](https://support.hercules.com/en/product/p32dj-en/) on Windows to
+be able to use the [ASIO sound
+API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 
 Thanks to Hercules for supporting the development of this mapping by
 providing a controller.
+
+## Sound card
+
+This device has a built in 4 channel output sound card. There are 2 RCA
+outputs for the main output and a 1/4" TRS stereo headphone jack. There
+are buttons in the center of the controller that adjust the sound card's
+headphone output volume. These do not adjust the headphone gain in
+Mixxx.
+
+There is no master output volume control on the device, but the master
+output volume of the sound card can be controlled from the OS mixer. So,
+for the best [gain
+staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging),
+**turn the volume of the main output all the way up in your OS mixer
+program:**
+
+  - GNU/Linux: Run the command 'alsamixer' in a terminal, press F6 to
+    select the Hercules P32 DJ sound card, and press the up arrow on
+    your keyboard to turn the slider labeled "PCM Front" all the way up.
+  - Windows: Adjust the volume by clicking the speaker icon in the
+    system tray.
+  - Mac OS X: ?
+
+## Mapping description
+
+The mapping mostly works as labeled on the controller, but some
+functionality is different and there is additional functionality not
+labeled on the controller.
+
+  - Browse encoder: scrolls through library. Pushing toggles big library
+    view. Turning with shift controls the cue/main mix going to the
+    headphone output. Pushing with shift toggles split cue mode (left
+    ear of headphone output plays cue signal, right ear plays main
+    signal).
+  - Record button: toggles recording on and off. With shift, toggles the
+    deck being controlled on the side of the controller with shift
+    pressed. Toggles left half of controller between decks 1 & 3 and
+    right side of controller between decks 2 & 4.
+  - Slip button: not mapped yet
+  - Loop/Tempo encoder: turning left halves loop size; turning right
+    doubles loop size. Pushing (de)activates a loop. Turning while
+    holding shift moves the loop. If the loop is 1 beat or larger, it
+    moves the loop by 1 beat; if the loop is smaller than 1 beat, it
+    moves the loop by the size of the loop.
+  - Filter/Move encoder: turning controls the filter. Turning with shift
+    adjusts the pitch, or with keylock on, just the tempo. Pushing while
+    holding shift resets the pitch to the track's default.
+  - FX knobs and buttons: not mapped yet
+  - Pad grid: Only the Hotcue layer is mapped yet. Pressing an unlit pad
+    sets a hotcue. Pressing a lit pad activates that hotcue. Pressing a
+    lit pad with shift deletes that hotcue.
+  - Shift + sync: toggle quantize
+  - Shift + cue: toggle keylock
+  - Shift + load: ejects a track from the deck
+  - EQ knobs, volume faders, crossfader, headphone button, play, cue,
+    and sync all behave as labeled.

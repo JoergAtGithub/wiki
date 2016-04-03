@@ -160,7 +160,7 @@ attached. Using 3.6 as an example, install it like this:
 To compile Mixxx using Clang 3.6, before running `scons`:
 
     export CC=clang-3.6
-    export CXX=clang-3.6++
+    export CXX=clang++-3.6
 
 You can now use clang-specific SCons options.
 

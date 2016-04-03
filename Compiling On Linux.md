@@ -114,11 +114,10 @@ specify a location in your home directory such as \~/local
 Running `scons` will take some time, depending on the speed of your
 computer. Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that
 many threads at a time while compiling. This speeds up compilation on
-multi-core CPUs. **Note** that for Intel CPUs with HyperThreading, you
-should specify the number of physical cores (so half of the number of
-virtual ones the OS sees.) This will likely run faster since the
-compiler will not assign more work than the CPU can actually process in
-parallel.
+multi-core CPUs. You can check how many threads your CPU can run
+simultaneously with the `lscpu` command (look for the `CPU(s)` field in
+the output). Setting more threads than your CPU can handle will decrease
+performance.
 
 Once Mixxx has compiled, if you set the prefix options for scons to a
 directory that your normal user does not have write access to, run

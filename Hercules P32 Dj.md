@@ -14,6 +14,8 @@
     controller mapping
     folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder))
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=8132)
+  - [Digital DJ Tips
+    review](http://www.digitaldjtips.com/2016/03/review-video-hercules-p32-dj-grid-pad-controller/)
 
 This mapping is a work in progress, but is in a usable condition.
 

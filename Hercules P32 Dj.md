@@ -55,30 +55,30 @@ The mapping mostly works as labeled on the controller, but some
 functionality is different and there is additional functionality not
 labeled on the controller.
 
-  - Browse encoder: scrolls through library. Pushing toggles big library
-    view. Turning with shift controls the cue/main mix going to the
-    headphone output. Pushing with shift toggles split cue mode (left
-    ear of headphone output plays cue signal, right ear plays main
+  - **Browse encoder**: scrolls through library. Pushing toggles big
+    library view. Turning with shift controls the cue/main mix going to
+    the headphone output. Pushing with shift toggles split cue mode
+    (left ear of headphone output plays cue signal, right ear plays main
     signal).
-  - Record button: toggles recording on and off. With shift, toggles the
-    deck being controlled on the side of the controller with shift
+  - **Record button**: toggles recording on and off. With shift, toggles
+    the deck being controlled on the side of the controller with shift
     pressed. Toggles left half of controller between decks 1 & 3 and
     right side of controller between decks 2 & 4.
-  - Slip button: not mapped yet
-  - Loop/Tempo encoder: turning left halves loop size; turning right
+  - **Slip button**: not mapped yet
+  - **Loop/Tempo encoder**: turning left halves loop size; turning right
     doubles loop size. Pushing (de)activates a loop. Turning while
     holding shift moves the loop. If the loop is 1 beat or larger, it
     moves the loop by 1 beat; if the loop is smaller than 1 beat, it
     moves the loop by the size of the loop.
-  - Filter/Move encoder: turning controls the filter. Turning with shift
-    adjusts the pitch, or with keylock on, just the tempo. Pushing while
-    holding shift resets the pitch to the track's default.
-  - FX knobs and buttons: not mapped yet
-  - Pad grid: Only the Hotcue layer is mapped yet. Pressing an unlit pad
-    sets a hotcue. Pressing a lit pad activates that hotcue. Pressing a
-    lit pad with shift deletes that hotcue.
-  - Shift + sync: toggle quantize
-  - Shift + cue: toggle keylock
-  - Shift + load: ejects a track from the deck
-  - EQ knobs, volume faders, crossfader, headphone button, play, cue,
-    and sync all behave as labeled.
+  - **Filter/Move encoder**: turning controls the filter. Turning with
+    shift adjusts the pitch, or with keylock on, just the tempo. Pushing
+    while holding shift resets the pitch to the track's default.
+  - **FX knobs and buttons**: not mapped yet
+  - **Pad grid**: Only the Hotcue layer is mapped yet. Pressing an unlit
+    pad sets a hotcue. Pressing a lit pad activates that hotcue.
+    Pressing a lit pad with shift deletes that hotcue.
+  - **Shift + sync**: toggle quantize
+  - **Shift + cue**: toggle keylock
+  - **Shift + load**: ejects a track from the deck
+  - **EQ knobs, volume faders, crossfader, headphone button, play, cue,
+    and sync** all behave as labeled.

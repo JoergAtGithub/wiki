@@ -17,8 +17,6 @@
   - [Digital DJ Tips
     review](http://www.digitaldjtips.com/2016/03/review-video-hercules-p32-dj-grid-pad-controller/)
 
-This mapping is a work in progress, but is in a usable condition.
-
 This controller is a class compliant USB MIDI and audio device, so it
 can be used without any special drivers on GNU/Linux, Mac OS X, and
 Windows. However, it recommended to install [the
@@ -53,9 +51,10 @@ program:**
 
 ## Mapping description
 
-The mapping mostly works as labeled on the controller, but some
-functionality is different and there is additional functionality not
-labeled on the controller.
+This mapping is a work in progress, but is in a usable condition. It
+mostly works as labeled on the controller, but some functionality is
+different and there is additional functionality not labeled on the
+controller.
 
   - **Browse encoder**: scrolls through library. Pushing toggles big
     library view. Turning with shift controls the cue/main mix going to

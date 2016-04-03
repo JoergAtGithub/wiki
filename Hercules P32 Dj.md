@@ -9,7 +9,7 @@
   - Mapping files on GitHub: [Hercules P32
     DJ.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules%20P32%20DJ.midi.xml)
     and
-    [Hercules-p32-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules-P32-scripts.js)
+    [Hercules-P32-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules-P32-scripts.js)
     (save both files to your [controller mapping file locations\#user
     controller mapping
     folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder))

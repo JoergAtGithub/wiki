@@ -84,4 +84,4 @@ controller.
   - **Shift + cue**: toggle keylock
   - **Shift + load**: ejects a track from the deck
   - **EQ knobs, volume faders, crossfader, headphone button, play, cue,
-    and sync** all behave as labeled.
+    sync, and load** all behave as labeled.

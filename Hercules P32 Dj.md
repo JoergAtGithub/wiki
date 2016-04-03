@@ -75,9 +75,11 @@ controller.
     shift adjusts the pitch, or with keylock on, just the tempo. Pushing
     while holding shift resets the pitch to the track's default.
   - **FX knobs and buttons**: not mapped yet
-  - **Pad grid**: Only the Hotcue layer is mapped yet. Pressing an unlit
-    pad sets a hotcue. Pressing a lit pad activates that hotcue.
-    Pressing a lit pad with shift deletes that hotcue.
+  - **Pad grid**: Only the Hotcue layer is mapped yet. Press the Hotcue
+    button to activate this layer if the Hotcue button is not lit.
+    Pressing an unlit pad in the grid sets a hotcue. Pressing a lit pad
+    activates that hotcue. Pressing a lit pad with shift deletes that
+    hotcue.
   - **Shift + sync**: toggle quantize
   - **Shift + cue**: toggle keylock
   - **Shift + load**: ejects a track from the deck

@@ -63,8 +63,8 @@ controller.
     signal).
   - **Record button**: toggles recording on and off. With shift, toggles
     the deck being controlled on the side of the controller with shift
-    pressed. Toggles left half of controller between decks 1 & 3 and
-    right side of controller between decks 2 & 4.
+    pressed. Toggles left half of controller between decks 1 & 3 on the
+    left and decks 2 & 4 on the right.
   - **Slip button**: not mapped yet
   - **Loop/Tempo encoder**: turning left halves loop size; turning right
     doubles loop size. Pushing (de)activates a loop. Turning while

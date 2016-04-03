@@ -5,8 +5,7 @@
   - [Manufacturer's product
     page](http://www.hercules.com/uk/advanced-controllers/bdd/p/258/hercules-p32-dj/)
   - [Manufacturer's support and downloads
-    page](https://support.hercules.com/en/product/p32dj-en/). **Download
-    Windows driver here.**
+    page](https://support.hercules.com/en/product/p32dj-en/)
   - Mapping files on GitHub: [Hercules P32
     DJ.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/hercules_p32_mapping/res/controllers/Hercules%20P32%20DJ.midi.xml)
     and

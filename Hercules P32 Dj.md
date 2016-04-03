@@ -36,8 +36,8 @@ headphone output volume. These do not adjust the headphone gain in
 Mixxx.
 
 There is no master output volume control on the device, but the master
-output volume of the sound card can be controlled from the OS mixer. So,
-for the best [gain
+output volume of the sound card can be controlled from the OS mixer. The
+device comes with the main output set to 45%. So, for the best [gain
 staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging),
 **turn the volume of the main output all the way up in your OS mixer
 program:**

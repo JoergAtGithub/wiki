@@ -47,7 +47,8 @@ program:**
     your keyboard to turn the slider labeled "PCM Front" all the way up.
   - Windows: Adjust the volume by clicking the speaker icon in the
     system tray.
-  - Mac OS X: ?
+  - Mac OS X: Adjust the volume by clicking the speaker icon in the
+    system tray.
 
 ## Mapping description
 

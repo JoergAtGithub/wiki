@@ -137,6 +137,7 @@ Deck control is straightforward, too:
 | Keylock (Shift+Vinyl) | Toggle pitch independent time stretch (KeyLock) |
 | Vinyl                 | Toggle between Scratch mode and Pitch mode      |
 | Platter               | Touch sensitive platters\! Scratch or Pitchbend |
+| Shift + Platter       | Scroll through library quickly                  |
 
 In Pitch mode, moving the platters from either the top or side will only
 bend the pitch of the deck. In Scratch mode, the platters act like vinyl

@@ -79,9 +79,9 @@ buttons at the top of each deck.
     position.
   - If the DEL button is \*held\*, pressing an already set HOT CUE
     button will clear that hot cue.
-  - Tapping the DEL button toggles DEL-mode (the button will light up
-    blue). DEL-mode alters some of the other button functions, (like a
-    shift button on other controllers, see later).
+  - Tapping the DEL button toggles [\#DEL-mode](#DEL-mode). The button
+    will light up blue). DEL-mode alters some of the other button
+    functions like a shift button on other controllers.
 
 ### Playback Pitch/Rate
 

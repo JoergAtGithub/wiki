@@ -146,10 +146,10 @@ deck.
 
 ### Library and Track loading
 
-Use the rotational knob in the center of the controller to browse
-through the library. Press the rotational knob to switch between library
-main window and sidebar. Unfortunately there seems to be no way to
-expand entries in the sidebar through the controller script.
+Use the encoder in the center of the controller to browse through the
+library. Press the encoder to switch between library main window and
+sidebar. Unfortunately there seems to be no way to expand entries in the
+sidebar through the controller script.
 
 Use the \[LOAD\] buttons to load the currently selected track into
 either the left or right deck.
@@ -164,12 +164,7 @@ The four directional buttons around the knob also control the library:
 | Right  | Next sidebar entry     |
 
 If you hold Shift and then rotate a platter, you can scroll through the
-library much faster (but not as precise). This is sometimes handy to
-scroll through very long library lists. However, as you should organize
-your tracks in crates and playlists or simply use the library search
-function to filter the list, this might be remapped to something
-different in the future (maybe faster skimming through very long
-tracks).
+library much faster.
 
 ### Equalizer
 

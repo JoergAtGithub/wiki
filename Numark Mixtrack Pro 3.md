@@ -123,22 +123,14 @@ will be paused.
 If smartPFL is set to true, the Cue channel of the track being loaded is
 activated and the other Cue channel is deactivated
 
-#### 6\. High EQ
+#### 6-8 EQ Knobs
 
-Controls the treble frequencies for the individual channels.
-
-#### 7\. Mid EQ
-
-Controls the mid range frequencies for the individual channels.
-
-#### 8\. Low EQ
-
-Controls the bass frequencies for the individual channels.
+Adjust High/Mid/Low frequencies of the deck
 
 #### 9\. Filter
 
-Adjusts the amount of the filter effect. Turning the knob left and right
-will produce a Low Pass Filter or High Pass Filter.
+Adjusts the amount of the filter effect. Turning the knob left controls
+the low pass filter; turning it right controls the high pass filter.
 
 #### 10\. Cue/PFL
 
@@ -146,23 +138,18 @@ Sends pre-fader audio to the Cue Channel for headphone monitoring.
 **SHIFT + press:** toggle slip mode  
 **SHIFT + double press**: toggle quantize mode.
 
-#### 11\. Channel Volume
+#### 11\. Volume fader
 
-Adjusts the volume of the individual channels in the software.
+Adjusts the volume of the deck
 
 #### 12\. Crossfader
 
-Controls the blend between the two decks.
+Controls the blend between the two decks
 
-#### 13\. Pitch Bend Down
+#### 13-14 Pitch Bend Down/Up
 
 Press and hold to momentarily reduce the speed of the track.  
-**Shift+Pitch Bend Down:** Jump 1 beat backward
-
-#### 14\. Pitch Bend Up
-
-Press and hold to momentarily increase the speed of the track.  
-**Shift+Pitch Bend Up:** Jump 1 beat forward
+**Shift+Pitch Bend Down/Up:** Jump 1 beat backward/forward
 
 #### 15\. Pitch Fader
 
@@ -187,23 +174,12 @@ Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4 ; Deck 2 knob
 will adjusts Samplers 5-8  
 Shift + Beat knob moves beat grid.
 
-#### 18\. FX 1 On/Off
+#### 18-20 FX 1/2/3 On/Off
 
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 1  
-**Shift + FX1** to select from the list of available effects: Left deck
-: select previous effect, Right deck : select next effect
-
-#### 19\. FX 2 On/Off
-
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 2  
-**Shift + FX2** to select from the list of available effects. Left deck
-: select previous effect, Right deck : select next effect
-
-#### 20\. FX 3 On/Off
-
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 3  
-**Shift + FX3** to select from the list of available effects. Left deck
-: select previous effect, Right deck : select next effect
+Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit
+1/2/3  
+**Shift + FX1/2/3** to select from the list of available effects: Left
+deck : select previous effect, Right deck : select next effect
 
 #### 21\. Tap BPM
 

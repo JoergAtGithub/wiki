@@ -27,7 +27,7 @@ API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 Thanks to Hercules for supporting the development of this mapping by
 providing a controller.
 
-## Sound card
+## Sound card setup
 
 This device has a built in 4 channel output sound card. There are 2 RCA
 outputs for the main output and a 1/4" TRS stereo headphone jack. There

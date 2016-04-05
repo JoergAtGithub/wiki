@@ -483,13 +483,13 @@ published.
 
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor
-quality, sometimes even worse than onboard sound cards. Mixxx 2.0 can
-use multiple sound cards at the same time (without crackling from the
-sound cards' clocks drifting apart), so it is possible to use a 2 output
-sound card for the main stereo output and the onboard sound card on a
-computer for headphones. However, a higher quality, 4 output sound card
-is recommended. [\#Splitter cables](#Splitter%20cables) are a good
-option in that price range. You get what you pay for with sound cards.
+quality, sometimes even worse than onboard sound cards. [\#Splitter
+cables](#Splitter%20cables) are a good option in that price range. Mixxx
+2.0 can use multiple sound cards at the same time (without crackling
+from the sound cards' clocks drifting apart), so it is possible to use a
+2 output sound card for the main stereo output and the onboard sound
+card on a computer for headphones. However, a higher quality, 4 output
+sound card is recommended. You get what you pay for with sound cards.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
 comparison of cheaper DJ sound cards. Note that it does not include the

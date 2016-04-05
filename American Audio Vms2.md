@@ -103,7 +103,7 @@ only a 2 deck mapping.
 
 ### Mixer section
 
-All main functions are mapped straightforward:
+All main functions are mapped straightforwardly:
 
 | VMS2 Control   | Mixxx Control          |
 | -------------- | ---------------------- |

@@ -69,10 +69,11 @@ controller.
     between decks 1 & 3 on the left and decks 2 & 4 on the right.
   - **Slip button**: not mapped yet
   - **Loop/Tempo encoder**: turning left halves loop size; turning right
-    doubles loop size. Pushing (de)activates a loop. Turning while
-    holding shift moves the loop. If the loop is 1 beat or larger, it
-    moves the loop by 1 beat; if the loop is smaller than 1 beat, it
-    moves the loop by the size of the loop.
+    doubles loop size. Pushing (de)activates a loop. For loops 1 beat or
+    less, the loop only stays active while the encoder is pushed down.
+    Turning while holding shift moves the loop. If the loop is 1 beat or
+    larger, it moves the loop by 1 beat; if the loop is smaller than 1
+    beat, it moves the loop by the size of the loop.
   - **Filter/Move encoder**: turning controls the filter. Turning with
     shift adjusts the pitch, or with keylock on, just the tempo. Pushing
     while holding shift resets the pitch to the track's default.

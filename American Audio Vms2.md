@@ -16,13 +16,13 @@
 
 ## Audio Setup
 
-The built-in soundcard of this controller is USB class compliant. This
-means it is recognized automatically by modern operating systems and
-does not need additional drivers installed. However, on Windows, it is
-recommended to install the driver from the manufacturer to be able to
-use the [ASIO sound
+This controller has a built in USB Audio Class compliant sound card, so
+it works on GNU/Linux, Mac OS X, and Windows without needing to install
+any special drivers. However, on Windows, it is recommended to install
+the driver from the manufacturer to be able to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
-The soundcard provides 16 bit, 48kHz output.
+The sound card only supports the 48 kHz sample rate, so *Mixxx's sample
+rate must be set to 48000 Hz*.
 
 The VMS2 can be used as a standalone mixer for analog inputs, therefore
 the crossfader and volume faders work as a real hardware faders, the
@@ -98,46 +98,6 @@ master output, as crossfader curve and signal mixing are not the same in
 hardware and software. If you require a recording that captures exactly
 what the audience will hear, use a separate soundcard and recording
 software to record from the VMS2 booth output.
-
-### Linux
-
-  - Use the `ALSA` sound API.
-  - The controller will show up as `VMS2 AUDIO MIDI Device: USB Audio
-    (hw:x,y)` in the drop down menus.
-  - Set the sample rate to 48000 Hz.
-
-If your distribution uses pulseaudio by default, make sure to deactivate
-the VMS2 in pulseaudio, so Mixxx can grab the device exclusively. This
-can be done either on the commandline (`man pactl`) or using a
-comfortable GUI like `pavucontrol` (Configuration -\> VMS2 -\> Profile:
-Off).
-
-### Windows
-
-First off:
-
-  - Make sure Windows is not using the VMS2 as its default audio
-    output\!
-  - Set the sample rate to 48000 Hz.
-
-Then, for a basic setup without low-latency requirements:
-
-  - Use the Windows WASAPI sound API.
-  - The VMS2 will show up as `Speakers (VMS2 AUDIO MIDI Device)` in the
-    drop down menus.
-
-Or, for a more professional experience:
-
-  - Use the ASIO sound API.
-  - Install the ASIO drivers from the manufacturers website.
-  - Set up ASIO according to the VMS2 manual.
-  - The VMS2 will show up as `ADJ ASIO` in the drop down menus.
-
-### Mac OS X
-
-  - Use the CoreAudio sound API.
-  - Set the sample rate to 48000 Hz.
-  - FIXME I have not tried this on a Mac and do not know if it works...
 
 ## MIDI Mapping
 

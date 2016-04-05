@@ -5,17 +5,12 @@
   - [Manufacturer's product
     page](http://www.numark.com/product/mixtrack-pro-3)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=7286)
+  - [Download
+    mapping](http://mixxx.org/forums/viewtopic.php?f=7&p=28103#p28103)
 
 The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
-except that the Pro version has an integrated sound card and costs $100
-more.
-
-## Controller Mapping by S.Morin - Version 1.0
-
-found in the following forum post:
-<http://mixxx.org/forums/viewtopic.php?f=7&p=28103#p28103>
-
-[[/media/numarkmixtrackpro3mapping.gif|]]
+except that the Pro version has an integrated 4 channel output sound
+card and costs $100 more.
 
 ## Configuration options
 
@@ -84,6 +79,8 @@ beat grid. If false: beat knob will adjust beatgrid, shift + knob will
 adjust grid size
 
 ## Mapping
+
+[[/media/numarkmixtrackpro3mapping.gif|]]
 
 #### 1\. Browser Knob
 

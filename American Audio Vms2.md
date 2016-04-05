@@ -189,9 +189,9 @@ The VMS2 features 6 Hot Cues per deck.
 | 4 / 5 / 6 = (Shift + 1 / 2 / 3)                 | Set/Jump HotCue 4 / 5 / 6 |
 | Vinyl + 4 / 5 / 6 = (Vinyl + Shift + 1 / 2 / 3) | Delete HotCue 4 / 5 / 6   |
 
-The controller script tries hard not to confuse Vinyl/KeyLock and HotCue
-actions. So deleting HotCues should neither toggle KeyLock nor Scratch
-Mode.
+Pressing the keylock/vinyl button will not toggle keylock or scratch
+mode as long as a hotcue is deleted before releasing the keylock/vinyl
+button.
 
 #### Loops
 

@@ -2,8 +2,6 @@
 
 [[/media/hardware/American-Audio-VMS2.png|American-Audio-VMS2.png]]
 
-## Links
-
   - [Manufacturer's product
     page](http://www.americandj.eu/en/vms2.html), provides manual and
     drivers for download.
@@ -14,42 +12,70 @@
     mapping](https://github.com/mixxxdj/mixxx/pull/876), which this wiki
     page describes.
 
+The American Audio VMS2 is a 2-deck all-in-one controller. It is a USB
+class compliant MIDI and audio device that works with GNU/Linux, Mac OS
+X, and Windows. It features a 4 channel input and 4 channel output sound
+card with 2 phono preamps. The main output has XLR and RCA outputs (do
+not use both at once). There is a separate RCA booth output. The VMS2
+can also be used as a stand-alone mixer with analog sources without a
+computer by setting the USB/Analog switches on the front of the device
+to "Analog".
+
 ## Audio Setup
 
-This controller has a built in USB Audio Class compliant sound card, so
-it works on GNU/Linux, Mac OS X, and Windows without needing to install
-any special drivers. However, on Windows, it is recommended to install
-the driver from the manufacturer to be able to use the [ASIO sound
+Because the sound card is USB Audio Class compliant, it works on
+GNU/Linux, Mac OS X, and Windows without needing to install any special
+drivers. However, on Windows, it is recommended to install the driver
+from the manufacturer to be able to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
-The sound card only supports the 48 kHz sample rate, so *Mixxx's sample
-rate must be set to 48000 Hz*.
 
-The VMS2 can be used as a standalone mixer for analog inputs, therefore
-the crossfader and volume faders work as a real hardware faders, the
-\[CUE\] buttons (PFL / Pre-Fader-Listener), the \[CUE MIX\] and
-headphone \[GAIN\] on the front directly control what you hear on the
-built-in headphone jack. The equalizer (EQ) can be bypassed for the USB
-inputs, but always works for the analog input signals. This is called
-Pre-/Post-EQ Mode. Consult the manufacturer's manual on how to switch
-these modes.
+Unlike most controllers with built in sound cards, which rely on Mixxx
+to do all mixing in software, the VMS2 mixes signals from the sound card
+in hardware. To use it with Mixxx:
 
-### 2-Deck Setup
-
-  - Route Mixxx "Deck 1" to the VMS2 output channels 1-2 (Left Deck
-    Stereo).
-  - Route Mixxx "Deck 2" to the VMS2 output channels 3-4 (Right Deck
-    Stereo).
   - Bypass the built-in hardware equalizer of the VMS2 (i.e. use Post-EQ
-    Mode).
+    Mode). Hold the forward search button on the right deck as you turn
+    the VMS2 on to switch between Post-EQ and Pre-EQ modes. See section
+    15 of the [manufacturer's
+    manual](http://adjmedia.s3-website-eu-west-1.amazonaws.com/manuals/vms2_print_EN.pdf)
+    for details.
+  - Set the USB/Analog switches on the front side of the VMS2 to "USB"
+  - In Mixxx's Sound Hardware Preferences:
+  - Set the sample rate to 48000 Hz 
+  - Select channels 1-2 for Deck 1 output
+  - Select channels 3-4 for Deck 2 output
 
-The Deck 1/2 outputs are affected by the Mixxx software EQs. The VMS2
-will do all the signal mixing for the Booth/Master output,
-Pre-Fader-Listening, and PFL/Master mix in hardware.  
-**Note:** You cannot use the preview deck to pre-listen in this setup,
-as Mixxx routes the preview deck directly to the headphone output. Use a
-separate soundcard and route the headphone output there to also
-pre-listen using the preview deck. Of course, if you do so, attach the
-headphones to that other soundcard instead of the VMS2.
+*Note*: You cannot use the preview deck to pre-listen in this setup, as
+Mixxx routes the preview deck directly to the headphone output, which is
+not mixed with the Deck 1/2 outputs. You could use a separate soundcard
+and route the headphone output there to also pre-listen using the
+preview deck. Of course, if you do so, attach the headphones to that
+other soundcard instead of the VMS2.
+
+### Input and Recording
+
+The analog inputs are captured by the built-in soundcard as input
+signals. They can be used for timecode signals (e.g. timecode vinyl), as
+the VMS2 also features built-in phono preamps. FIXME I did not try that,
+please verify\!
+
+The microphone input is mixed directly into the master output signal of
+the VMS2 in hardware and cannot be captured through software. If you
+want to record voice over using the Mixxx software, you will need a
+different solution. You can use a separate microphone attached to the
+computer, but that signal will not be routed to the VMS2 and therefore
+not be on the VMS2 master output (but in the Mixxx recording from the
+software master/record output).
+
+Mixxx's Deck 1/2 outputs are affected by the Mixxx software EQs.
+However, the VMS2's volume faders and crossfader (as well as the
+headphone buttons) control the VMS2's hardware mixer and do not affect
+Mixxx's Deck 1 and Deck 2 output signals. Therefore, a recording using
+the Mixxx software will sound different from what is played through the
+VMS2 master output, as the crossfader curve and signal mixing are not
+the same in hardware and software. If you require a recording that
+captures exactly what the audience will hear, use a separate soundcard
+and recording software to record from the VMS2 booth output.
 
 ### 4-Deck Setup
 
@@ -77,32 +103,7 @@ crossfader\! That is bad and possibly wrong, as it means the hardware
 and software crossfader are both applied. I need to file a bug report
 (and link to it from here)\!
 
-### Input and Recording
-
-The analog inputs are also captured by the built-in soundcard as input
-signals. They can be used for timecode signals (e.g. timecode vinyl), as
-the VMS2 also features built-in phono preamps. FIXME I did not try that,
-please verify\!
-
-The microphone input is mixed directly into the master output signal of
-the VMS2 in hardware and cannot be captured through software. If you
-want to record voice over using the Mixxx software, you will need a
-different solution. You can use a separate microphone attached to the
-computer, but that signal will not be routed to the VMS2 and therefore
-not be on the VMS2 master output (but in the Mixxx recording from the
-software master/record output).
-
-Apart from the microphone capture, a recording using the Mixxx software
-will in general sound different from what is played through the VMS2
-master output, as crossfader curve and signal mixing are not the same in
-hardware and software. If you require a recording that captures exactly
-what the audience will hear, use a separate soundcard and recording
-software to record from the VMS2 booth output.
-
 ## MIDI Mapping
-
-This controller is a USB class compliant MIDI device. This means no
-additional drivers are needed on a modern operating system.
 
 ### Mixxx Versions / History
 

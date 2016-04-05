@@ -76,7 +76,7 @@ the same in hardware and software. If you require a recording that
 captures exactly what the audience will hear, use a separate soundcard
 and recording software to record from the VMS2 booth output.
 
-## MIDI Mapping
+## Mapping description
 
 ### Mixxx Versions / History
 
@@ -97,13 +97,11 @@ As of January 2016, a new mapping has been proposed and a pull request
 is filed (see Links section). If everything goes well, it will be
 shipped with Mixxx 2.1.0, and replace both older mappings.
 
-### Mapping Description
-
 This description is for the latest VMS2 mapping, currently available in
 a pull request against master (see Links section). This is currently
 only a 2 deck mapping.
 
-#### Main Mixer Section and Headphones
+### Main Mixer Section and Headphones
 
 All main functions are mapped straightforward:
 
@@ -117,7 +115,7 @@ All main functions are mapped straightforward:
 | Channel Gain   | Channel Gain           |
 | Master Gain    | Master Gain            |
 
-#### Deck Control
+### Deck Control
 
 Deck control is straightforward, too:
 
@@ -139,7 +137,7 @@ If you touch a platter in scratch mode, the track will stop there
 immediately\! The backlight of the Vinyl button lights up when in
 scratch mode. When in pitch mode, touching the platters is safe.
 
-#### Library and Track loading
+### Library and Track loading
 
 Use the rotational knob in the center of the controller to browse
 through the library. Press the rotational knob to switch between library
@@ -166,7 +164,7 @@ function to filter the list, this might be remapped to something
 different in the future (maybe faster skimming through very long
 tracks).
 
-#### Equalizer
+### Equalizer
 
 The per deck EQ rotaries are mapped to their software counterparts. The
 VMS2 has no dedicated kill switches for the EQ. However, in Mixxx it has
@@ -178,7 +176,7 @@ VMS2 has no dedicated kill switches for the EQ. However, in Mixxx it has
 | Shift+OUT    | Kill Switch Mid  |
 | Shift+RELOOP | Kill Switch High |
 
-#### Hot Cues
+### Hot Cues
 
 The VMS2 features 6 Hot Cues per deck.
 
@@ -193,7 +191,7 @@ Pressing the keylock/vinyl button will not toggle keylock or scratch
 mode as long as a hotcue is deleted before releasing the keylock/vinyl
 button.
 
-#### Loops
+### Loops
 
 | VMS2 Control         | Mixxx Control                             |
 | -------------------- | ----------------------------------------- |

@@ -19,17 +19,15 @@ found in the following forum post:
 
 ### Configuration options
 
------
-
 Configuration options can be set in the mapping. You will need to edit
 the values below at the very top of the JavaScript file
 “Numark-Mixtrack-3-scripts.js” and save changes. Allowed values are
 “**true**” or “**false**”
 
 **TrackEndWarning**: Default value: true  
-When you reach the end of the track, the jog wheel Button will flash. If
-value is "false": there will be no flash of Jog Wheel Button at the end
-of the track.
+When you reach the end of the track, the Wheel button will flash. If
+value is "false": there will be no flash of Wheel button at the end of
+the track.
 
 **iCutEnabled**: Default value: true  
 iCut mode simulates a scratch routine with the jog wheel. When the jog
@@ -51,16 +49,18 @@ deactivated. Cue channel can be activated directly with Cue/PFL button.
 Used for debugging, print comments on prompt screen
 
 **beatlooprollActivate**: Default value: false  
-Use beatlooproll instead of beatloop command when using AutoLoop buttons
-(Performance Pads)
+Use beatlooproll (slip mode loop) instead of beatloop command when using
+pads in Autoloop mode.
 
 **PADLoopButtonPressed**: Default value: false  
-When "false" is set, loop will start on press and stop on 2nd press.
-When "True" is set: Loop stops when finger release.
+When "false" is set, pressing pads in Autoloop mode toggles whether the
+loop is active. When "True" is set, the loop will only be activated
+while the pad is pressed down.
 
 **PADSampleButtonPressed**: Default value: false  
-When "false" is set, Sampler will start on press and stop on 2nd press.
-When "True" is set: Sampler stops when finger release.
+When "false" is set, pressing pads in Sample mode toggles whether the
+sample is playing. When "True" is set, the sample only plays while the
+pad is pressed down.
 
 **OnBeatActiveFlash**: Default value: true  
 When “true” is set: TAP LED will flash to the beat if Shift Lock is not
@@ -79,9 +79,9 @@ Night"; 3 = "Dark Metal"
 
 **BeatKnobAsSamplerVolume**: Default value: true  
 Use Beat knob to adjust Sampler Volume. If "true": Deck 1 adjusts
-Samplers 1-4 ; Deck 2 adjusts Samplers 5-8  
-Shift + Beat knob moves beat grid. If false; beat knob will adjust
-beatgrid, shift + knob will adjust grid size
+Samplers 1-4; Deck 2 adjusts Samplers 5-8 and Shift + Beat knob moves
+beat grid. If false: beat knob will adjust beatgrid, shift + knob will
+adjust grid size
 
 ### Mapping
 

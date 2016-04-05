@@ -85,9 +85,7 @@ adjust grid size
 
 ### Mapping
 
------
-
-#### 1.Browser Knob:
+#### 1\. Browser Knob
 
 Rotate this knob to cycle through tracks in main library window. Press
 the Knob to load selected track into first stopped deck.  
@@ -95,23 +93,23 @@ the Knob to load selected track into first stopped deck.
 items.  
 **Shift + Push:** opens / closes selected side navigation bar item.
 
-#### 2.Master Gain:
+#### 2\. Master Gain
 
 Adjusts the master volume in the software.  
 **Note**: This control does not affect the microphone volume which is
 summed with the final output of the Master Gain to the Master Output.
 Use the Mic Gain knob to control the microphone volume.
 
-#### 3.Cue Mix:
+#### 3\. Cue Mix
 
 Adjusts the software’s audio output to the headphones, mixing between
 the cue output and the master mix output.
 
-#### 4.Cue Gain:
+#### 4\. Cue Gain
 
 Adjusts the volume for headphone cueing in the software.
 
-#### 5.Load:
+#### 5\. Load
 
 Press one of these buttons while a track is selected in the library
 window to assign it to Deck 1 and 2, respectively, in the software.  
@@ -125,53 +123,53 @@ will be paused.
 If smartPFL is set to true, the Cue channel of the track being loaded is
 activated and the other Cue channel is deactivated
 
-#### 6.High EQ:
+#### 6\. High EQ
 
 Controls the treble frequencies for the individual channels.
 
-#### 7.Mid EQ:
+#### 7\. Mid EQ
 
 Controls the mid range frequencies for the individual channels.
 
-#### 8.Low EQ:
+#### 8\. Low EQ
 
 Controls the bass frequencies for the individual channels.
 
-#### 9.Filter:
+#### 9\. Filter
 
 Adjusts the amount of the filter effect. Turning the knob left and right
 will produce a Low Pass Filter or High Pass Filter.
 
-#### 10.Cue/PFL:
+#### 10\. Cue/PFL
 
 Sends pre-fader audio to the Cue Channel for headphone monitoring.  
 **SHIFT + press:** toggle slip mode  
 **SHIFT + double press**: toggle quantize mode.
 
-#### 11.Channel Volume:
+#### 11\. Channel Volume
 
 Adjusts the volume of the individual channels in the software.
 
-#### 12.Crossfader:
+#### 12\. Crossfader
 
 Controls the blend between the two decks.
 
-#### 13.Pitch Bend Down:
+#### 13\. Pitch Bend Down
 
 Press and hold to momentarily reduce the speed of the track.  
 **Shift+Pitch Bend Down:** Jump 1 beat backward
 
-#### 14.Pitch Bend Up
+#### 14\. Pitch Bend Up
 
 Press and hold to momentarily increase the speed of the track.  
 **Shift+Pitch Bend Up:** Jump 1 beat forward
 
-#### 15.Pitch Fader:
+#### 15\. Pitch Fader
 
 This controls the speed of the music. Moving towards the "+" will speed
 the music up, while moving towards the "–" will slow it down.
 
-#### 16.Touch Strip:
+#### 16\. Touch Strip
 
 **Left Strip:** Use the Touch Strip to adjust the Effect Rack 1 Super
 button.  
@@ -179,7 +177,7 @@ button.
 mixing ratio  
 **Shift + Touch Strip:** search through a track’s timeline.
 
-#### 17.Beats Multiplier:
+#### 17\. Beats Multiplier
 
 Moves the beat grid left (turn counterclockwise) or right (turn
 clockwise)  
@@ -189,25 +187,25 @@ Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4 ; Deck 2 knob
 will adjusts Samplers 5-8  
 Shift + Beat knob moves beat grid.
 
-#### 18.FX 1 On/Off:
+#### 18\. FX 1 On/Off
 
 Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 1  
 **Shift + FX1** to select from the list of available effects: Left deck
 : select previous effect, Right deck : select next effect
 
-#### 19.FX 2 On/Off:
+#### 19\. FX 2 On/Off
 
 Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 2  
 **Shift + FX2** to select from the list of available effects. Left deck
 : select previous effect, Right deck : select next effect
 
-#### 20.FX 3 On/Off:
+#### 20\. FX 3 On/Off
 
 Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit 3  
 **Shift + FX3** to select from the list of available effects. Left deck
 : select previous effect, Right deck : select next effect
 
-#### 21.Tap BPM:
+#### 21\. Tap BPM
 
 Press this 4 or more times on tempo to manually enter a new BPM. The
 software will ignore the track's BPM and follow your manually entered
@@ -215,12 +213,12 @@ tempo. **Configurable option:**
 If **TapExpandLibrary** is set to "true", the TAP button will expand the
 Library view and Shift TAP will trigger TAP function
 
-#### 22.Wheel Button:
+#### 22\. Wheel button
 
 Activate this button to use the platter/jog wheel to grab and move the
 audio, "scratching" the track as you would with a vinyl record.
 
-#### 23.Platter/Jog Wheel:
+#### 23\. Platter/Jog Wheel
 
 **Touch side:** Pitch bend if track is playing (Wheel On & Off) / track
 positioning (Wheel On)  
@@ -232,7 +230,7 @@ feature is activated, else normal scratching
 **Shift + Wheel Off + Touch platter**: if fastSeekEnabled is true, fast
 seek is activated (navigate quickly thru track).
 
-#### 24.Shift:
+#### 24\. Shift
 
 Allows multiple control commands to be triggered when pressed first
 along with other buttons.  
@@ -241,13 +239,13 @@ along with other buttons.
 will remain ON if Shift Lock is enabled)  
 **Press and release** : toggle off SHIFT Lock if enabled
 
-#### 25.Pad Mode
+#### 25\. Pad Mode
 
 This is used to change the operation of the top 4 performance pads.
 Single press will lit the mode currently active (Manual Loop, Auto Loop
 or Sampler)
 
-#### 26.Sync:
+#### 26\. Sync
 
 Enables BPM syncing between decks.  
 **Short Press:** Press once to synchronize the tempo (BPM) and phase to
@@ -262,7 +260,7 @@ their beats lined up. If the Sync Lock was previously activated, it just
 deactivates it regardless of the Short press/Double Press  
 **Shift + Sync:** Toggle Key Lock
 
-#### 27.Cue (Transport Control):
+#### 27\. Cue (Transport Control)
 
 Sets and recalls the main Cue point in the current track. Hold down the
 Cue button for temporary play of the cue point. The track will play for
@@ -270,7 +268,7 @@ as long as the button is held down and return to the cue point once it
 is released.  
 **Shift + Cue:** return the play head to the start of the track.
 
-#### 28.Play/Pause:
+#### 28\. Play/Pause
 
 Starts and suspends playback. If no track is loaded, loads the selected
 track (if any) and play.  
@@ -278,7 +276,7 @@ track (if any) and play.
 point. If a cue point has not been set, the play head will return to the
 start of the track.
 
-#### 29.Performance Pads:
+#### 29\. Performance Pads
 
 The top row of pads is used to trigger autoloop points. See section
 “Performance Pad Modes” for detailed description of usage. The bottom
@@ -288,7 +286,7 @@ point. If a Cue point has already been set, this control will jump to
 Cue point.  
 **Shift + Hot Cue**: Deletes the assigned Cue point
 
-#### 30.Master Output LEDs:
+#### 30\. Master Output LEDs
 
 Displays the audio level going to the Master Output.
 

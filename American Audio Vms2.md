@@ -23,10 +23,9 @@ to "Analog".
 
 ## Audio Setup
 
-Because the sound card is USB Audio Class compliant, it works on
-GNU/Linux, Mac OS X, and Windows without needing to install any special
-drivers. However, on Windows, it is recommended to install the driver
-from the manufacturer to be able to use the [ASIO sound
+No driver need to be installed on GNU/Linux or Mac OS X. However, on
+Windows, it is recommended to install the driver from the manufacturer
+to be able to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 
 Unlike most controllers with built in sound cards, which rely on Mixxx

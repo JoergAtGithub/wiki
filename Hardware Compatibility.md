@@ -46,16 +46,22 @@ do with the signals. Standards compliant MIDI controllers do not need
 any special drivers on Linux, Mac OS X, or Windows. Standards compliant
 HID controllers do not need any special drivers. Most DJ controllers are
 standards compliant MIDI controllers, with exceptions noted in the
-tables below. Controllers that have integrated sound cards require a
-driver on every OS for the sound card, unless it is USB Audio class
+tables below.
+
+Controllers that have integrated sound cards often have a USB Audio
+Class compliant sound card. Sound cards that aren't USB Audio Class
+compliant need a driver for each OS. USB Audio Class compliant sound
+cards, both stand-alone and integrated into controllers, do not need any
+special drivers for Linux or Mac OS X. On Windows, they can be used
+without any special drivers, but a driver is needed from the
+manufacturer to use the recommended [ASIO sound
+API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+Sound cards that are advertised for use with iOS devices are class
 compliant.
 
 Unlike some proprietary DJ programs, Mixxx works with any sound card
 that your operating system has a driver to use—including for timecode
-vinyl (DVS) use. USB sound cards compliant with the USB audio class
-standard do not need any special drivers for Linux or Mac OS X, however
-they do for Windows. Sound cards that are advertised for use with iOS
-devices are class compliant.
+vinyl (DVS) use.
 
 ## Controller mappings
 

@@ -101,7 +101,7 @@ This description is for the latest VMS2 mapping, currently available in
 a pull request against master (see Links section). This is currently
 only a 2 deck mapping.
 
-### Main Mixer Section and Headphones
+### Mixer section
 
 All main functions are mapped straightforward:
 
@@ -114,6 +114,11 @@ All main functions are mapped straightforward:
 | Headphone Gain | Headphone Gain         |
 | Channel Gain   | Channel Gain           |
 | Master Gain    | Master Gain            |
+
+As noted in the [\#Audio Setup](#Audio%20Setup) section, these control
+the VMS2's hardware mixer. Although the state of the controls is
+reflected on screen in Mixxx, the actual mixing is done by the VMS2's
+hardware mixer.
 
 ### Deck Control
 

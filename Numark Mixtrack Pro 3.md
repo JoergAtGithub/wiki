@@ -17,7 +17,7 @@ found in the following forum post:
 
 [[/media/numarkmixtrackpro3mapping.gif|]]
 
-### Configuration options
+## Configuration options
 
 Configuration options can be set in the mapping. You will need to edit
 the values below at the very top of the JavaScript file
@@ -83,7 +83,7 @@ Samplers 1-4; Deck 2 adjusts Samplers 5-8 and Shift + Beat knob moves
 beat grid. If false: beat knob will adjust beatgrid, shift + knob will
 adjust grid size
 
-### Mapping
+## Mapping
 
 #### 1\. Browser Knob
 
@@ -266,7 +266,7 @@ Cue point.
 
 Displays the audio level going to the Master Output.
 
-### Performance Pad Modes
+## Performance Pad Modes
 
 -----
 

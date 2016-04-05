@@ -141,7 +141,8 @@ Deck control is straightforward, too:
 In Pitch mode, moving the platters from either the top or side will only
 bend the pitch of the deck. In Scratch mode, the platters act like vinyl
 turntables and can be used for scratching. Touching and holding them
-from the top stops the deck in Scratch mode.
+from the top stops the deck. Moving them from the edge does not stop the
+deck.
 
 ### Library and Track loading
 

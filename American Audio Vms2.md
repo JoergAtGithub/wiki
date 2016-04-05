@@ -23,7 +23,7 @@ to "Analog".
 
 ## Audio Setup
 
-No driver need to be installed on GNU/Linux or Mac OS X. However, on
+No driver needs to be installed on GNU/Linux or Mac OS X. However, on
 Windows, it is recommended to install the driver from the manufacturer
 to be able to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).

@@ -250,12 +250,3 @@ FIXME The left and right bus are also affected by the software
 crossfader\! That is bad and possibly wrong, as it means the hardware
 and software crossfader are both applied. I need to file a bug report
 (and link to it from here)\!
-
-### Effects
-
-The VMS2 does not have enough spare buttons and rotaries to control
-effects. It is probably best to use a dedicated effects controller for
-that. In theory it would be possible to overlay the library search
-rotary and the direction buttons around it, but this requires some
-scripting effort and may be confusing, as the direction buttons do not
-have backlights.

@@ -671,7 +671,7 @@ Numark DJ iO 2 though.
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-28. Not compatible with Windows.
+28. No ASIO driver for Windows.
 
 29. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using

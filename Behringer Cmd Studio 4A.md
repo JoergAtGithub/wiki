@@ -18,7 +18,7 @@ stereo headphones) USB sound card built in.
   - Master output: channels 1-2
   - Headphone output: channels 3-4
 
-## Controller Guide
+## Mapping description
 
 (This page details v1.4 of the Behringer CMD STUDIO 4a controler
 mapping)
@@ -31,14 +31,14 @@ labelled:
 The only major departure from the above are the 4 "FX Control" knobs and
 buttons at the top of each deck.
 
-#### Mixer
+### Mixer
 
   - The HIGH, MID, and LOW EQ knobs & kill buttons, deck faders,
     cross-fader, master, and headphone monitoring (mix & volume) knobs
     all operate as labelled.
   - Each deck also has a gain knob (leftmost "FX Control" knob).
 
-#### Navigation Control
+### Navigation Control
 
   - The BROWSE knob scrolls thorough the track list in the library
     panel.
@@ -46,21 +46,21 @@ buttons at the top of each deck.
     also select effects, see later).
   - The ENTER button expands/collapses library tree items.
 
-#### Deck Select Buttons
+### Deck Select Buttons
 
   - The deck select buttons (A, B, C, D) make the respective "virtual"
     deck active.
   - On the left deck: A = Channel 1, C = Channel 3.
   - On the right deck: B = Channel 2, D = Channel 4.
 
-#### Transport Control
+### Transport Control
 
   - The deck LOAD buttons will load the currently highlighted track in
     the library window into that deck.
   - The deck CUE, PLAY, SYNC, and LOOP buttons work as labelled (SYNC
     toggles master sync for the deck).
 
-#### Wheels
+### Wheels
 
   - While a track is playing, spinning the wheels temporarily speeds up
     or slows down the track.
@@ -71,7 +71,7 @@ buttons at the top of each deck.
   - When the SCRATCH button is activated, moving the wheel while
     touching the top surface scratches the track.
 
-#### Hot Cue Buttons
+### Hot Cue Buttons
 
   - If not currently set, pressing a HOT CUE button sets that hot cue at
     the current playback position.
@@ -83,7 +83,7 @@ buttons at the top of each deck.
     blue). DEL-mode alters some of the other button functions, (like a
     shift button on other controllers, see later).
 
-#### Playback Pitch/Rate
+### Playback Pitch/Rate
 
   - The pitch sliders control the pitch.
   - The PITCH BEND +/- buttons step the playback rate up or down
@@ -93,7 +93,7 @@ buttons at the top of each deck.
   - The PITCH BEND button lights will indicate whether the current pitch
     is higher or lower than normal.
 
-#### FX Control Buttons
+### FX Control Buttons
 
 These do not control effects; they have other functions:
 
@@ -110,7 +110,7 @@ These do not control effects; they have other functions:
   - FX Control button 4 toggles the deck quantise mode on/off, (button
     lights blue when active).
 
-#### FX Control knobs
+### FX Control knobs
 
   - FX Control knob 1 = Deck gain.
   - FX Control knob 2 = FX 1 "super" control (FX unit 1 on left deck,
@@ -120,7 +120,7 @@ These do not control effects; they have other functions:
   - FX Control knob 4 = Deck "quick effect" control (by default this is
     a filter effect but can be changed in Mixxx's preferences).
 
-#### FX Assign Buttons
+### FX Assign Buttons
 
   - Tapping either of the 2 FX ASSIGN buttons on each deck will toggle
     the deck's output to one (or both) of two effects in the (default)
@@ -130,7 +130,7 @@ These do not control effects; they have other functions:
   - \*Holding\* an FX ASSIGN button allows the effect in that effect
     unit to be changed using the BROWSE LEFT/RIGHT buttons.
 
-#### DEL-mode
+### DEL-mode
 
 DEL-mode is activated by \*tapping\* the deck's hot cue DEL button (the
 button will light up blue). This is equivalent to a shift button on
@@ -156,7 +156,7 @@ controller buttons as follows:
     playback rate. If both PITCH BEND buttons are pressed together, the
     playback key is reset to normal.
 
-#### Auto-Loops and Slip-Mode
+### Auto-Loops and Slip-Mode
 
 There are no "slip-mode aware" skins in Mixxx yet so the auto-loop
 behaviour of this controller (which \*is\* "slip-mode aware") may be a

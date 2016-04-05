@@ -138,9 +138,10 @@ Deck control is straightforward, too:
 | Vinyl                 | Toggle between Scratch mode and Pitch mode      |
 | Platter               | Touch sensitive platters\! Scratch or Pitch     |
 
-In Pitch mode, moving the platters will only bend the pitch of the deck.
-In Vinyl mode, the platters act like vinyl turntables, so touching and
-holding them from the top stops the deck.
+In Pitch mode, moving the platters from either the top or side will only
+bend the pitch of the deck. In Scratch mode, the platters act like vinyl
+turntables and can be used for scratching. Touching and holding them
+from the top stops the deck in Scratch mode.
 
 ### Library and Track loading
 

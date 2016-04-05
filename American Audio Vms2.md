@@ -170,12 +170,12 @@ library much faster.
 ### Equalizer
 
 The per deck EQ rotaries are mapped to their software counterparts. The
-VMS2 has no dedicated kill switches for the EQ. However, in Mixxx it has
-(using the secondary Loop controls)\!
+VMS2 has no dedicated kill switches for the EQ. However, in Mixxx,
+pressing the following buttons with Shift acts as EQ kill switches.
 
 | VMS2 Control | Mixxx Control    |
 | ------------ | ---------------- |
-| Shift+IN     | Kill Switch Lo   |
+| Shift+IN     | Kill Switch Low  |
 | Shift+OUT    | Kill Switch Mid  |
 | Shift+RELOOP | Kill Switch High |
 

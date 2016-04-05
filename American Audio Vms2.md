@@ -18,8 +18,11 @@
 
 The built-in soundcard of this controller is USB class compliant. This
 means it is recognized automatically by modern operating systems and
-does not need additional drivers installed. The soundcard provides 16
-bit, 48kHz output.
+does not need additional drivers installed. However, on Windows, it is
+recommended to install the driver from the manufacturer to be able to
+use the [ASIO sound
+API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+The soundcard provides 16 bit, 48kHz output.
 
 The VMS2 can be used as a standalone mixer for analog inputs, therefore
 the crossfader and volume faders work as a real hardware faders, the
@@ -27,7 +30,8 @@ the crossfader and volume faders work as a real hardware faders, the
 headphone \[GAIN\] on the front directly control what you hear on the
 built-in headphone jack. The equalizer (EQ) can be bypassed for the USB
 inputs, but always works for the analog input signals. This is called
-Pre-/Post-EQ Mode. Consult the manual on how to switch these modes.
+Pre-/Post-EQ Mode. Consult the manufacturer's manual on how to switch
+these modes.
 
 ### 2-Deck Setup
 

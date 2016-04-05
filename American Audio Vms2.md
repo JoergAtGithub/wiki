@@ -179,9 +179,9 @@ pressing the following buttons with Shift acts as EQ kill switches.
 | Shift+OUT    | Kill Switch Mid  |
 | Shift+RELOOP | Kill Switch High |
 
-### Hot Cues
+### Hotcues
 
-The VMS2 features 6 Hot Cues per deck.
+The VMS2 can control 6 hotcues per deck.
 
 | VMS2 Control                                    | Mixxx Control             |
 | ----------------------------------------------- | ------------------------- |

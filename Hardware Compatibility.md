@@ -370,7 +370,7 @@ Linux](http://ffado.org/?q=devicesupport/list).
 Most DJ controllers that cost more than $200 have a 4 output sound card
 built into them. This is more convenient to transport and set up than a
 stand-alone sound card plus a controller because it only requires one
-device with one USB cable. Any of these produce better quality sound
+device with one USB cable. Most of these produce better quality sound
 than a sound card built into a computer. However, the highest quality
 sound cards like the Apogee Duet and RME Babyface Pro are stand alone
 devices not integrated into controllers.

@@ -77,32 +77,6 @@ the same in hardware and software. If you require a recording that
 captures exactly what the audience will hear, use a separate soundcard
 and recording software to record from the VMS2 booth output.
 
-### 4-Deck Setup
-
-The 4 Deck routing for this controller is of very limited use, as the
-volume- and crossfader directly influence the sound output in hardware.
-
-  - Route Mixxx "Left Bus" to the VMS2 output channels 1-2 (Left Deck
-    Stereo).
-  - Route Mixxx "Right Bus" to the VMS2 output channels 3-4 (Right Deck
-    Stereo).
-  - Bypass the built-in hardware equalizer of the VMS2 (i.e. use Post-EQ
-    Mode).
-  - Route the headphone output to a separate soundcard.
-
-In this mode, you cannot use the built-in headphone jack to pre-listen,
-as the Mixxx software controls for deck volume already affect the
-signals going into the VMS2. You need a separate soundcard to attach
-your headphones.  
-The two decks on the same bus are always directly affected by the volume
-fader, therefore you cannot fade between two tracks playing on the same
-bus without going over a point of silence. The faders are pretty much
-useless in that setup as they cannot be used intuitively.  
-FIXME The left and right bus are also affected by the software
-crossfader\! That is bad and possibly wrong, as it means the hardware
-and software crossfader are both applied. I need to file a bug report
-(and link to it from here)\!
-
 ## MIDI Mapping
 
 ### Mixxx Versions / History
@@ -249,10 +223,33 @@ feature for 4-Deck support.
 
 ### 4-Deck Support
 
-As of Mixxx version 1.12, it is theoretically possible to control 4
-decks by using the redundant \[PAUSE\] button as deck switch.
-Unfortunately, this has not been mapped, yet. Stay tuned for updates or
-get coding\!
+As of Mixxx version 2,0, it is theoretically possible to control 4 decks
+by using the redundant \[PAUSE\] button as deck switch. Unfortunately,
+this has not been mapped, yet. Stay tuned for updates or get coding\!
+
+The 4 Deck routing for this controller is of very limited use, as the
+volume- and crossfader directly influence the sound output in hardware.
+
+  - Route Mixxx "Left Bus" to the VMS2 output channels 1-2 (Left Deck
+    Stereo).
+  - Route Mixxx "Right Bus" to the VMS2 output channels 3-4 (Right Deck
+    Stereo).
+  - Bypass the built-in hardware equalizer of the VMS2 (i.e. use Post-EQ
+    Mode).
+  - Route the headphone output to a separate soundcard.
+
+In this mode, you cannot use the built-in headphone jack to pre-listen,
+as the Mixxx software controls for deck volume already affect the
+signals going into the VMS2. You need a separate soundcard to attach
+your headphones.  
+The two decks on the same bus are always directly affected by the volume
+fader, therefore you cannot fade between two tracks playing on the same
+bus without going over a point of silence. The faders are pretty much
+useless in that setup as they cannot be used intuitively.  
+FIXME The left and right bus are also affected by the software
+crossfader\! That is bad and possibly wrong, as it means the hardware
+and software crossfader are both applied. I need to file a bug report
+(and link to it from here)\!
 
 ### Effects
 

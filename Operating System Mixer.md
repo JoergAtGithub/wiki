@@ -32,3 +32,5 @@ every operating system:
     Is this also the case with ASIO drivers?
   - **Mac OS X**: Adjust the volume by clicking the speaker icon in the
     system tray. FIXME: Add more details
+
+FIXME: Add screenshots for each OS

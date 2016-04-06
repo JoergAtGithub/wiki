@@ -236,11 +236,10 @@ certain LED or changing the color of LEDs, make use of that.
 
 ### Main & Headphone gain knobs
 
-Controllers have knobs for the main output, headphone output, and
-cue/main mix that work in a variety of different ways. On some devices,
-these only act on the sound hardware, on others they send MIDI or HID
-signals, and on some they do both. To encourage users to use the best
-[gain
+Controllers have knobs for the main and headphone outputs that work in a
+variety of different ways. On some devices, these only act on the sound
+hardware, on others they send MIDI or HID signals, and on some they do
+both. To encourage users to use the best [gain
 staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#djing-gain-staging)
 possible with the equipment, it is important that this behavior is
 documented on the controller's wiki page and mapped in an optimal way.

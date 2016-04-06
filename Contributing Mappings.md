@@ -280,15 +280,15 @@ Some controllers have integrated sound cards that do not have knobs or
 buttons on the device that control the sound card's outputs, but the
 sound card's outputs can be controlled through the [operating system
 mixer](operating%20system%20mixer) program. In that case, MIDI/HID
-signals from the controller for controls labeled for these functions
-should *not* be mapped to the software gains in Mixxx. Unfortunately,
-there is no reliable, cross-platform way for Mixxx to access the
-controls accessible to the OS' mixer program, so these controls cannot
-be mapped to control the sound card. Users should be directed to the
-[operating system mixer](operating%20system%20mixer) wiki page for
-instructions on how to adjust their output levels. Although this is less
-convenient than mapping the software gains in Mixxx, it makes a
-substantial difference to the sound quality users will hear from Mixxx.
+signals for these functions should *not* be mapped to the software gains
+in Mixxx. Unfortunately, there is no reliable, cross-platform way for
+Mixxx to access the controls accessible to the OS' mixer program, so
+these controls cannot be mapped to control the sound card. Users should
+be directed to the [operating system mixer](operating%20system%20mixer)
+wiki page for instructions on how to adjust their output levels.
+Although this is less convenient than mapping the software gains in
+Mixxx, it makes a substantial difference to the sound quality users will
+hear from Mixxx.
 
 ## Coding conventions for Javascript
 

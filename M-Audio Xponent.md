@@ -2,6 +2,9 @@
 
 ![http://ecx.images-amazon.com/images/I/41Fm-FrL5gL.jpg](http://ecx.images-amazon.com/images/I/41Fm-FrL5gL.jpg)
 
+This device has been discontinued. M-Audio discontinued its DJ products
+after the company was bought by inMusic in 2012.
+
 ## Getting the leds to work with Mixxx
 
 How to start up Xponent in Listening Mode for LED support:

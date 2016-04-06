@@ -4,6 +4,8 @@
 [Vestax](http://www.vestax.com)
 
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=2596)
+  - [ProAudioStar
+    review](https://web.archive.org/web/20101014111448/http://www.proaudiostar.com/vci-300-mkii-in-depth-review)
 
 The VCI-300 is a dedicated USB MIDI controller. It also comes with a
 built in audio interface with standard 4-in/4-out and headphone
@@ -13,7 +15,6 @@ and a set of headphones.
 Vestax went out of business in 2014.
 
 In depth-review:
-[www.proaudiostar.com](http://www.proaudiostar.com/vci-300-mkii-in-depth-review)
 
 ## Differences between VCI-300 and VCI-300MKII
 

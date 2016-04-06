@@ -1,5 +1,6 @@
 # Contributing Mappings
 
+The more choice users have for devices to use with Mixxx, the better.
 Making a mapping for a controller is a great way to contribute to Mixxx
 for users who have some technical skill but do not know C++. Controller
 mappings are written in

@@ -24,9 +24,10 @@ page.
 The processes and guidelines on this page are to ensure that new
 mappings included in Mixxx are quality, complete, and documented. This
 gives users the most choice and the ability to make their own informed
-decisions about what equipment to get for using Mixxx. This page is a
-continual work in progress and is updated as we learn from reviewing
-more mappings.
+decisions about what equipment to get for using Mixxx.
+
+This page is a continual work in progress and is updated as we learn
+from reviewing more mappings.
 
 ## Using Git with your mapping
 

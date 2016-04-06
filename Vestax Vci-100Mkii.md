@@ -1,10 +1,12 @@
 # Vestax VCI-100MKII
 
+Vestax went out of business in 2014.
+
   - [Product page in
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
 
-![http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png](http://www.mixxx.org/wiki/lib/exe/fetch.php/vci100mkii.png)
+![vci100mkii.png](vci100mkii.png)
 
 ## Mapping for Mixxx 2.0
 

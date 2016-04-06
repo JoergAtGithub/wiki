@@ -248,8 +248,6 @@ The upper row of pads has different functions depending on their mode:
 Manual Loop Mode, Auto Loop Mode, and Sample Mode. To select a mode,
 hold down the Pad Mode button and press one of the upper pads. An LED
 under the pad section indicates the currently selected Mode.  
-**Option:** See related configuration option at the top of the
-JavaScript mapping file for PAD behavior for Auto Loop and Sample Mode.
 
 ### Manual Loop Mode
 
@@ -282,6 +280,10 @@ LED will blink Yellow
   - **Shift + Auto 4** – Sets and starts playback of a 16-beat
     autoloop.  
 
+**Configuration Option:** If the
+[PADLoopButtonPressed](#configuration-options) option is set to true,
+the loop will only be active while the pad is held down.
+
 ### Sample Mode
 
 Hold Pad Mode and press the pad marked Sampler to assign the lower 4
@@ -305,4 +307,8 @@ disabled
     \* **Deck 2 - Sample 3** – Plays the sample assigned to Sample Pad 7
     with the unit Sync activated.  
     \* **Deck 2 - Sample 4** – Plays the sample assigned to Sample Pad 8
-    with the unit Sync activated.
+    with the unit Sync activated.  
+
+**Configuration Option:** If the
+[PADSampleButtonPressed](#configuration-options) option is set to true,
+the sample will only play as long as the pad is held down.

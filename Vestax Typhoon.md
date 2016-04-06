@@ -5,4 +5,4 @@
   - [Product page](http://serato.com/hardware/vestax-typhoon)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=3822)
 
-Vestax is out of business.
+Vestax went out of business in 2014.

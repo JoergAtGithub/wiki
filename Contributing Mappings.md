@@ -1,9 +1,16 @@
 # Contributing Mappings
 
 The more choice users have for devices to use with Mixxx, the better.
-Making a mapping for a controller is a great way to contribute to Mixxx
-for users who have some technical skill but do not know C++. Controller
-mappings are written in
+There are many DJ controllers on the market and most of them aren't very
+cheap. The Mixxx developers do not have resources to get every
+controller out there and map it, so the community generally relies on
+users to contribute mappings. While we try to make mapping as easy as
+possible, making a complete mapping often takes some technical skill
+beyond what many users have. So, getting a controller that doesn't have
+a Mixxx mapping yet and making a mapping is a great way to contribute to
+Mixxx for users who have some technical skill but may not know C++.
+
+Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
 [JavaScript](MIDI%20scripting). While mappings can be made with just
 XML, most controllers will require some JavaScript to make a complete
@@ -14,8 +21,11 @@ controller could be a good introduction to programming. If you are
 unfamiliar with MIDI, see the [MIDI Crash Course](MIDI%20Crash%20Course)
 page.
 
-Note that the process and guidelines outlined on this page are a
-continual work in progress. They are updated as we learn from reviewing
+The processes and guidelines on this page are to ensure that new
+mappings included in Mixxx are quality, complete, and documented. This
+gives users the most choice and the ability to make their own informed
+decisions about what equipment to get for using Mixxx. This page is a
+continual work in progress and is updated as we learn from reviewing
 more mappings.
 
 ## Using Git with your mapping

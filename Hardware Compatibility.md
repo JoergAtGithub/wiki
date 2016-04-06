@@ -21,6 +21,7 @@ Helpful but not strictly necessary:
   - mouse
   - portable hard drive
   - powered USB hub
+  - [custom caps](custom%20caps) to customize your gear
 
 See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
 diagrams and descriptions of setups with different kinds of hardware.

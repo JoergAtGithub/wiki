@@ -293,24 +293,26 @@ substantial difference to the sound quality users will hear from Mixxx.
 Javascript is a very flexible programming language. It has some good
 features, but there are also a number of features that have confusing
 syntax and/or encourage bad programming practices. Using these features
-makes it easier for bugs to go unnoticed in your code.
+makes it easier for bugs to go unnoticed in your code. Having guidelines
+about coding style makes code in Mixxx easier to read and more
+consistent.
 
 These coding conventions are mandatory for new Javascript code in Mixxx:
 
+  - Do not use `==` and `!=` because these can have unexpected effects
+    when comparing variables of different types. Use `===` or `!==`
+    instead. If they generate errors it should be fixed in the Mixxx
+    Javascript engine, not in Javascript code
+  - Use 4 spaces to indent, not tab characters
+  - Always put `var` before variable declarations to avoid accidentally
+    declaring global variables.
   - Do not write one-line `if` statements.
   - Always use brackets for `if` statements. Put the opening `{` on the
     same line as the conditional expression and the closing bracket `}`
     on its own line.
   - Put `else` statements on the same line as the previous closing `}`
   - All code lines that need it must end with `;`
-  - Always put `var` before variable declarations to avoid accidentally
-    declaring global variables
-  - Do not use `==` and `!=` because these can have unexpected effects
-    when comparing variables of different types. Use `===` or `!==`
-    instead. If they generate errors it should be fixed in the Mixxx
-    Javascript engine, not in Javascript code.
-  - Use camelCase more than C-style this\_is\_variable.
-  - Use 4 spaces to indent, not tab characters
+  - Use camelCase rather than C-style this\_is\_variable.
   - `new` must be used when creating new objects or if JShint is fine
     with then it is OK.
   - Capitalize the first letter of constructor functions

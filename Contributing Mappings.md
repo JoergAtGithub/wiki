@@ -116,13 +116,14 @@ Hardware Guide](hardware%20compatibility#controller%20mappings) for
 examples (many controllers are not documented. You can help us fix that
 =) ). In addition to helping users, this helps developers who do not own
 the controller to review the mapping. If there is no diagram readily
-available, ask the manufacturer for one. If they do not provide one,
-take pictures of your device and label them. Upload diagrams and/or
-pictures by going to the [Media Manager](?do=media) at the top right of
-any wiki page and upload your file(s) to the "hardware" namespace. SVG
-diagrams are preferred because they are easier to edit later. If the
-manufacturer only provides a PDF diagram, you can open the PDF in
-[Inkscape](https://inkscape.org/) to convert it to SVG and label it.
+available, ask the manufacturer for one and permission to upload it to
+the Mixxx wiki. If they do not provide one, take pictures of your device
+and label them. Upload diagrams and/or pictures by going to the [Media
+Manager](?do=media) at the top right of any wiki page and upload your
+file(s) to the "hardware" namespace. SVG diagrams are preferred because
+they are easier to edit later. If the manufacturer only provides a PDF
+diagram, you can open the PDF in [Inkscape](https://inkscape.org/) to
+convert it to SVG and label it.
 
 If you are submitting a substantially updated or different mapping for a
 controller that already has a mapping in Mixxx, create a new section on

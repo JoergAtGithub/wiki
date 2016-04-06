@@ -8,7 +8,7 @@ users to contribute mappings. While we try to make mapping as easy as
 possible, making a complete mapping often takes some technical skill
 beyond what many users have. So, getting a controller that doesn't have
 a Mixxx mapping yet and making a mapping is a great way to contribute to
-Mixxx for users who have some technical skill but may not know C++.
+Mixxx if you have some technical skill but may not know C++.
 
 Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and

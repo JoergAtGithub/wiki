@@ -146,8 +146,9 @@ converter. However, users cannot record or broadcast using the
 microphone input on the controller. They would have to plug the
 microphone into a different sound card to record or broadcast the
 microphone signal. The sound card built into computer motherboards often
-has one microphone input jack (typically a 1/8" TS or TRS jack, often
-colored pink and labeled with a microphone icon).
+has one microphone input jack, typically a 1/8" TS or TRS jack, often
+colored pink and labeled with a microphone icon, that can be used for
+this purpose.
 
 ## File naming convention
 

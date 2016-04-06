@@ -29,9 +29,9 @@ the values below at the very top of the JavaScript file
     button LED will be ON.
   - **fastSeekEnabled**: Enables fast seek with Jog Wheel platter when
     the Wheel button is on and Shift is held
-  - **smartPFL**: When the Load button is used, the Cue channel of the
-    track being loaded is activated and the other Cue channel is
-    deactivated. Cue/PFL buttons can still be toggled as normal
+  - **smartPFL**: When the Load button is used, the Cue/PFL button is
+    automatically activated on the deck being loaded and deactivated on
+    the other deck
   - **printComments**: Used for debugging, print comments on prompt
     screen
   - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead

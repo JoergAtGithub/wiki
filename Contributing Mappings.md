@@ -172,10 +172,14 @@ fully control Mixxx (unless it has a specific purpose such as a
 dedicated effects controller). If there are not enough physical controls
 on the device to make that practical, do not worry about it too much.
 
+### User configurable options
+
 If you want to create options that users can easily customize, define
 variables that control those options at the very top of your JavaScript
 file with comments explaining how to set the options. Also explain how
 to set these options on the wiki page for your controller.
+
+### Blinking LEDs
 
 Mappings should not blink LEDs for an extended period of time. If you
 would like to implement a feature that blinks LEDs, make it an option
@@ -185,23 +189,63 @@ can change to `false` to disable the blinking or `true` to enable it.
 Put a comment above the variable definition explaining what the variable
 does and how to change it.
 
+#### Play and cue button LEDs
+
 Use the play\_indicator and cue\_indicator
 [MixxxControls](MixxxControls) to illuminate play and cue button LEDs.
 These are the controls that the buttons on screen respond to, so the
 controller's LEDs will match what is on screen. The behavior of these
-Mixxx Controls changes according to the cue mode selected by the user in
-the preferences.
+Mixxx Controls changes according to the [cue
+mode](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
+selected by the user in the preferences. If the user does not want
+blinking LEDs, they can choose a cue mode in Mixxx's preferences that
+doesn't have them.
 
-If the controller has master and/or headphone volume controls that
-control the volume of the controller's built in sound card, for optimal
-[gain
-staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#djing-gain-staging),
-do not map these to the software gains in Mixxx.
+### Layering & Shift functions
 
 Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the
 alternate function. This is generally not an issue with encoders that
 rotate infinitely, buttons, pads, or touch strips.
+
+### Main & Headphone gain and cue mix controls
+
+Controllers have knobs for the main output, headphone output, and
+cue/main mix in headphones that work in a variety of different ways. On
+some devices, these only act on the sound hardware, on others they send
+MIDI or HID signals, and on some they do both. To encourage users to use
+the best [gain
+staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#djing-gain-staging)
+possible with the equipment, it is important that this behavior is
+documented on the controller's wiki page and mapped in an optimal way.
+As explained in the [gain
+knob](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
+section of the manual, the software gains in Mixxx should be the last
+resort for adjusting the level of the output signals.
+
+On some controllers, these knobs only control the volume of the
+controller's integrated sound card and no MIDI or HID signals are sent
+to the computer. In that case, there is nothing to map.
+
+On other controllers, these knobs affect the integrated sound card's
+output and the controller also sends MIDI or HID signals when the knobs
+are turned. In this case, the signals should *not* be mapped to the
+software gains in Mixxx, otherwise the knobs will adjust the gain both
+on the controller's sound cards and in Mixxx.
+
+Some controllers have integrated sound cards that do not have knobs or
+buttons on the device that control the sound card's outputs, but the
+sound card's outputs can be controlled through the [operating system
+mixer](operating%20system%20mixer) program. In that case, MIDI/HID
+signals from the controller for controls labeled for these functions
+should *not* be mapped to the software gains in Mixxx. Unfortunately,
+there is no reliable, cross-platform way for Mixxx to access the
+controls accessible to the OS' mixer program, so these controls cannot
+be mapped to control the sound card. Users should be directed to the
+[operating system mixer](operating%20system%20mixer) wiki page for
+instructions on how to adjust their output levels. Although this is less
+convenient than mapping the software gains in Mixxx, it makes a
+substantial difference to the sound quality users will hear from Mixxx.
 
 ## Coding conventions for Javascript
 

@@ -21,7 +21,9 @@ every operating system:
   - **Linux**: Run the command 'alsamixer' in a terminal, press F6 to
     select the sound card, and press the up arrow on your keyboard to
     turn the slider labeled "Master" (or sometimes "PCM Front") all the
-    way up.
+    way up. Do not use a GUI program such one launched by clicking a
+    speaker icon in the system tray. These typically control
+    PulseAudio's software gain, not the sound card's controls.
   - **Windows**: Click the speaker icon in the system tray. Click
     "Mixer" in the popup. In the mixer window that comes up, in the
     Device column, in the drop down menu between the top of the volume

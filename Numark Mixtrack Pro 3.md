@@ -194,9 +194,10 @@ remain ON if Shift Lock is enabled)
 
 ### 25\. Pad Mode
 
-This is used to change the [operation mode](#performance-pad-modes) of
-the top 4 performance pads. Pressing this button will light the pad
-indicating the currently active (Manual Loop, Auto Loop or Sampler)
+This is used to change the operation mode of the [top 4 performance
+pads](#29.-Performance-Pads). Pressing this button will light the pad
+indicating the currently active mode (Manual Loop, Auto Loop or
+Sampler).
 
 ### 26\. Sync
 
@@ -230,9 +231,10 @@ of the track.
 
 ### 29\. Performance Pads
 
-The top row of pads is for controlling loops and samples. See
-[\#Performance Pad Modes](#Performance%20Pad%20Modes) section below for
-a detailed description.
+The top row of pads is for controlling loops and samples. To select a
+mode, hold down the Pad Mode button and press one of the upper pads. An
+LED under the pad section indicates the currently selected mode. See the
+subsections below for details about each mode.
 
 The bottom row of pads is used to trigger hotcue points. If a hotcue
 point has not already been set for the loaded track, this control will
@@ -240,18 +242,7 @@ mark the hotcue point. If a hotcue point has already been set, this
 control will jump to it.  
 **Shift + Hot Cue**: Deletes the assigned hotcue point
 
-### 30\. Master Output LEDs
-
-Displays the audio level going to the Master Output.
-
-## Performance Pad Modes
-
-The upper row of pads has different functions depending on their mode:
-Manual Loop Mode, Auto Loop Mode, and Sample Mode. To select a mode,
-hold down the Pad Mode button and press one of the upper pads. An LED
-under the pad section indicates the currently selected Mode.  
-
-### Manual Loop Mode
+#### Manual Loop Mode
 
 Hold Pad Mode and press the pad marked Manual Loop (silkscreened above
 the pad) to assign the lower 4 pads to the functions listed below:  
@@ -263,7 +254,7 @@ the pad) to assign the lower 4 pads to the functions listed below:
   - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
     x1/2 to double the length of the loop.  
 
-### Auto Loop Mode
+#### Auto Loop Mode
 
 Hold Pad Mode and press the pad marked Autoloop to assign the lower 4
 pads to the functions listed below: When assigned, the respective Pad
@@ -286,7 +277,7 @@ LED will blink Yellow
 [PADLoopButtonPressed](#configuration-options) option is set to true,
 the loop will only be active while the pad is held down.
 
-### Sample Mode
+#### Sample Mode
 
 Hold Pad Mode and press the pad marked Sampler to assign the lower 4
 pads to the functions listed below. When assigned, the respective Pad
@@ -314,3 +305,7 @@ disabled
 **Configuration Option:** If the
 [PADSampleButtonPressed](#configuration-options) option is set to true,
 the sample will only play as long as the pad is held down.
+
+### 30\. Master Output LEDs
+
+Displays the audio level going to the Master Output.

@@ -39,19 +39,8 @@ There is no master output volume control on the device, but the master
 output volume of the sound card can be controlled from the OS mixer. The
 device comes with the main output set to 45%. So, for the best [gain
 staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging),
-**turn the volume of the main output all the way up in your OS mixer
-program:**
-
-  - GNU/Linux: Run the command 'alsamixer' in a terminal, press F6 to
-    select the Hercules P32 DJ sound card, and press the up arrow on
-    your keyboard to turn the slider labeled "PCM Front" all the way up.
-  - Windows: Click the speaker icon in the system tray. Click "Mixer" in
-    the popup. In the mixer window that comes up, in the Device column,
-    in the drop down menu between the top of the volume slider and the
-    bottom of the icon at the top of the column, select "Spekaers
-    (Hercules P32 DJ)". Click and drag the volume slider to its top.
-  - Mac OS X: Adjust the volume by clicking the speaker icon in the
-    system tray.
+**turn the volume of the main output all the way up in your [operating
+system mixer](operating%20system%20mixer) program**.
 
 ## Mapping description
 

@@ -130,6 +130,25 @@ the controller's existing wiki page to describe your new mapping. When
 your pull request is merged, delete the description of the old mapping
 from the wiki page if your mapping replaces the old one.
 
+### Microphone inputs
+
+Some controllers have integrated microphone inputs. On some devices, the
+input signal is available to the computer, but on others it is not.
+Which way the device works should be documented on the controller's wiki
+page.
+
+When the input signal is not available to computer, it is mixed in
+hardware with the main output without being digitized and routed to
+sound card. This has the advantage of not introducing the latency of
+routing the signal through an analog-to-digital converter, through the
+computer, and back out through the sound card's digital-to-analog
+converter. However, users cannot record or broadcast using the
+microphone input on the controller. They would have to plug the
+microphone into a different sound card to record or broadcast the
+microphone signal. The sound card built into computer motherboards often
+has one microphone input jack (typically a 1/8" TS or TRS jack, often
+colored pink and labeled with a microphone icon).
+
 ## File naming convention
 
 Please name your mapping files according to these conventions before

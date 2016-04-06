@@ -35,18 +35,18 @@ from reviewing more mappings.
 
 We use Git for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
-mapping, it is recommended to set up git on your computer. Using git
-will help you keep track of your progress on the mapping and help Mixxx
-developers review it. If you have already finished your mapping, that's
-okay, just add your finished mapping files in one commit. Start by
-creating a [GitHub](http://github.com/) account, [forking
-Mixxx](https://github.com/mixxxdj/mixxx), and cloning your forked git
-repository onto your computer. Be sure you start working from the git
-branch that you will make a pull request for (Run `git branch` to see
-what branch you are on). If you want your mapping included in the next
-2.0.x release, start from the 1.12 branch; if you want it in the 2.1
-release, start from the master branch. If a Mixxx release is in beta,
-start from the beta branch rather than master, unless your mapping
+mapping, it is recommended (but not necessary) to set up git on your
+computer. Using git will help you keep track of your progress on the
+mapping and help Mixxx developers review it. If you have already
+finished your mapping, that's okay, just add your finished mapping files
+in one commit. Start by creating a [GitHub](http://github.com/) account,
+[forking Mixxx](https://github.com/mixxxdj/mixxx), and cloning your
+forked git repository onto your computer. Be sure you start working from
+the git branch that you will make a pull request for (Run `git branch`
+to see what branch you are on). If you want your mapping included in the
+next 2.0.x release, start from the 1.12 branch; if you want it in the
+2.1 release, start from the master branch. If a Mixxx release is in
+beta, start from the beta branch rather than master, unless your mapping
 depends on new features in master.
 
 Make a new git branch (run `git checkout -b new_branch_name` from within

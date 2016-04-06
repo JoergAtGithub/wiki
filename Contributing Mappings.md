@@ -232,24 +232,27 @@ confusing to use. If you can, try to think of another way to map the
 alternate function. This is generally not an issue with encoders that
 rotate infinitely, buttons, pads, or touch strips.
 
-### Main & Headphone gain and cue mix controls
+### Main & Headphone gain knobs
 
 Controllers have knobs for the main output, headphone output, and
-cue/main mix in headphones that work in a variety of different ways. On
-some devices, these only act on the sound hardware, on others they send
-MIDI or HID signals, and on some they do both. To encourage users to use
-the best [gain
+cue/main mix that work in a variety of different ways. On some devices,
+these only act on the sound hardware, on others they send MIDI or HID
+signals, and on some they do both. To encourage users to use the best
+[gain
 staging](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#djing-gain-staging)
 possible with the equipment, it is important that this behavior is
 documented on the controller's wiki page and mapped in an optimal way.
 As explained in the [gain
 knob](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-gain-knob)
 section of the manual, the software gains in Mixxx should be the last
-resort for adjusting the level of the output signals.
+resort for adjusting the level of the output signals. Deck gain knobs
+should be mapped to Mixxx's deck gains though.
 
 On some controllers, these knobs only control the volume of the
 controller's integrated sound card and no MIDI or HID signals are sent
-to the computer. In that case, there is nothing to map.
+to the computer. In that case, there is nothing to map, but this should
+still be documented on the wiki so users don't get confused when the
+knobs on screen don't move.
 
 On other controllers, these knobs affect the integrated sound card's
 output and the controller also sends MIDI or HID signals when the knobs

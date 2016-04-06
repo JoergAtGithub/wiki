@@ -230,13 +230,15 @@ of the track.
 
 #### 29\. Performance Pads
 
-The top row of pads is used to trigger autoloop points. See section
-“Performance Pad Modes” for detailed description of usage. The bottom
-row of pads is used to trigger hotcue points. If a hotcue point has not
-already been set for the loaded track, this control will mark the hotcue
-point. If a hotcue point has already been set, this control will jump to
-it.  
-**Shift + Hot Cue**: Deletes the assigned Cue point
+The top row of pads is for controlling loops and samples. See
+[\#Performance Pad Modes](#Performance%20Pad%20Modes) section below for
+a detailed description.
+
+The bottom row of pads is used to trigger hotcue points. If a hotcue
+point has not already been set for the loaded track, this control will
+mark the hotcue point. If a hotcue point has already been set, this
+control will jump to it.  
+**Shift + Hot Cue**: Deletes the assigned hotcue point
 
 #### 30\. Master Output LEDs
 

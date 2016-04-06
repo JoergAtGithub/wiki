@@ -3,8 +3,7 @@
 [[/media/vci-400dj_layout2.png|vci-400dj\_layout2.png]]
 
 The Vestax VCI-400 is a professional MIDI controller. It has an
-integrated sound interface providing various inputs and outputs. Vestax
-is out of business.
+integrated sound interface providing various inputs and outputs.
 
 Mixxx supports the VCI-400 from version 1.10 onwards. Please note that
 only version 1.11 and up support the device out of the box. For version
@@ -14,6 +13,8 @@ The VCI-400 has been designed to work flexibly with any DJ software.
 Depending on the software there are buttons and knobs having different
 functions assigned. Vestax provides overlays for Traktor, Serato,
 Virtual DJ.
+
+Vestax went out of business in 2014.
 
 ## New Mapping (2.0+)
 

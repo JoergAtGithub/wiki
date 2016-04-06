@@ -4,4 +4,4 @@
 
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=5250)
 
-Vestax is out of business.
+Vestax went out of business in 2014.

@@ -76,7 +76,7 @@ Use the Mic Gain knob to control the microphone volume.
 ### 3\. Cue Mix
 
 Adjusts the software’s audio output to the headphones, mixing between
-the cue output and the master mix output.
+the cue (PFL) output and the master mix output.
 
 ### 4\. Cue Gain
 

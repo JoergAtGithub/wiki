@@ -19,64 +19,44 @@ the values below at the very top of the JavaScript file
 “Numark-Mixtrack-3-scripts.js” and save changes. Allowed values are
 “**true**” or “**false**”
 
-**TrackEndWarning**: Default value: true  
-When you reach the end of the track, the Wheel button will flash. If
-value is "false": there will be no flash of Wheel button at the end of
-the track.
-
-**iCutEnabled**: Default value: true  
-iCut mode simulates a scratch routine with the jog wheel. When the jog
-wheel is turned back, the crossfader closes; when the jog wheel is
-turned forward the crossfader will open. Shift needs to be enabled and
-Wheel button is activated and you are scratching. As a visual reference,
-TAP LED and Wheel button LED will be ON.
-
-**fastSeekEnabled**: Default value: true  
-Enables fast seek with Jog Wheel platter. This is available only when
-Wheel is Off and Shift is enabled.
-
-**smartPFL**: Default value: true  
-When set to true, when the Load button is used, the Cue channel of the
-track being loaded is activated and the other Cue channel is
-deactivated. Cue channel can be activated directly with Cue/PFL button.
-
-**printComments**: Default value: true  
-Used for debugging, print comments on prompt screen
-
-**beatlooprollActivate**: Default value: false  
-Use beatlooproll (slip mode loop) instead of beatloop command when using
-pads in Autoloop mode.
-
-**PADLoopButtonPressed**: Default value: false  
-When "false" is set, pressing pads in Autoloop mode toggles whether the
-loop is active. When "True" is set, the loop will only be activated
-while the pad is pressed down.
-
-**PADSampleButtonPressed**: Default value: false  
-When "false" is set, pressing pads in Sample mode toggles whether the
-sample is playing. When "True" is set, the sample only plays while the
-pad is pressed down.
-
-**OnBeatActiveFlash**: Default value: true  
-When “true” is set: TAP LED will flash to the beat if Shift Lock is not
-enabled
-
-**TapExpandLibrary**: Default value: true  
-Use TAP button to expand Library view. If "true": TAP button will be
-used to expand/contract library view and Shift TAP will trigger TAP
-function; "false" will invert the functionality
-
-**Skin**: Default value: 1  
-Specify the Skin used for your installation. This is required in order
-for TapExpandLibrary option to work properly. Different code is required
-for each skin. Accepted values: 1 = "Deere" or "Shade"; 2 = "Late
-Night"; 3 = "Dark Metal"
-
-**BeatKnobAsSamplerVolume**: Default value: true  
-Use Beat knob to adjust Sampler Volume. If "true": Deck 1 adjusts
-Samplers 1-4; Deck 2 adjusts Samplers 5-8 and Shift + Beat knob moves
-beat grid. If false: beat knob will adjust beatgrid, shift + knob will
-adjust grid size
+  - **TrackEndWarning**: Whether the Wheel button flashes near the end
+    of a track
+  - **iCutEnabled**: iCut mode simulates a scratch routine with the jog
+    wheel. When enabled, hold Shift when the Wheel button is on while
+    moving the jog wheel to use iCut. When the jog wheel is turned back,
+    the crossfader closes; when the jog wheel is turned forward the
+    crossfader will open. As a visual reference, TAP LED and Wheel
+    button LED will be ON.
+  - **fastSeekEnabled**: Enables fast seek with Jog Wheel platter when
+    the Wheel button is on and Shift is held
+  - **smartPFL**: When the Load button is used, the Cue channel of the
+    track being loaded is activated and the other Cue channel is
+    deactivated. Cue channel can be activated directly with Cue/PFL
+    button.
+  - **printComments**: Used for debugging, print comments on prompt
+    screen
+  - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead
+    of beatloop command when using pads in Autoloop mode.
+  - **PADLoopButtonPressed**: When "false" is set, pressing pads in
+    Autoloop mode toggles whether the loop is active. When "True" is
+    set, the loop will only be activated while the pad is pressed down.
+  - **PADSampleButtonPressed**: When "false" is set, pressing pads in
+    Sample mode toggles whether the sample is playing. When "True" is
+    set, the sample only plays while the pad is pressed down.
+  - **OnBeatActiveFlash**: Whether the TAP LED will flash to the beat
+    (unless Shift Lock is enabled)
+  - **TapExpandLibrary**: Use TAP button to expand Library view. If
+    "true": TAP button will be used to expand/contract library view and
+    Shift TAP will trigger TAP function; "false" will invert the
+    functionality
+  - **Skin**: Specify the Skin used for your installation. This is
+    required in order for TapExpandLibrary option to work properly.
+    Different code is required for each skin. Accepted values: 1 =
+    "Deere" or "Shade"; 2 = "Late Night"; 3 = "Dark Metal" 
+  - **BeatKnobAsSamplerVolume**: Use Beat knob to adjust Sampler Volume.
+    If "true": Deck 1 adjusts Samplers 1-4; Deck 2 adjusts Samplers 5-8
+    and Shift + Beat knob moves beat grid. If false: beat knob will
+    adjust beatgrid, shift + knob will adjust grid size
 
 ## Mapping
 

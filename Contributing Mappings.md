@@ -55,7 +55,9 @@ your changes work. Before making any commits, configure git to use your
 name and email in your commits. See the [Using Git](Using%20Git) wiki
 page for more information. Please prefix your git commit messages with
 the name of your controller so others can easily tell what the commits
-are for after your changes are merged.
+are for after your changes are merged. For example, a good commit
+message could look like:  
+`Hercules P32: push browse encoder to maximize/minimize library`
 
 #### Working on your mapping in your git repository
 

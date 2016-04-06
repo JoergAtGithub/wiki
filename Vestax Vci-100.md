@@ -2,7 +2,9 @@
 
 [[/media/vci100_45_big.jpg|]]
 
-Vestax is out of business.
+The Vestax VCI-100 was one of the first commercially successful
+DJ-specific MIDI controllers, released in 2006. Vestax went out of
+business in 2014.
 
   - **1.1 Firmware**
   - stock firmware from manufacturer
@@ -55,5 +57,5 @@ Vestax is out of business.
     * Need to test 1.9.1 from Baazar to verify
 ```
 
-Some information on this wiki page is taken from the forums on DJ Tech
-Tools <http://www.djtechtools.com/>
+Some information on this wiki page is taken from the forums on [DJ Tech
+Tools](http://www.djtechtools.com/).

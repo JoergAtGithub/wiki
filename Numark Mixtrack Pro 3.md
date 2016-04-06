@@ -256,18 +256,12 @@ JavaScript mapping file for PAD behavior for Auto Loop and Sample Mode.
 Hold Pad Mode and press the pad marked Manual Loop (silkscreened above
 the pad) to assign the lower 4 pads to the functions listed below:  
 
-  - **Loop In** – Sets the beginning of a loop. After a Loop Out point
-    is set, when this button is pressed again, it will allow for fine
-    adjustment of the Loop In point.  
-  - **Loop Out** – Sets the end point for the loop. When this button has
-    been pressed after a Loop Out point has been set, it will allow for
-    fine adjustment of the Loop Out point.  
-  - **On/Off** – When this is pressed inside a loop, this will turn the
-    loop off. When pressed outside a loop, this will activate the loop
-    and start playback from its Loop In point. If a loop has not been
-    set, this button will have no effect.  
-  - **Loop x1/2** – Cuts the currently playing loop in half. Press Shift
-    + Loop x1/2 to double the length the currently playing loop.  
+  - **Loop In** – Sets the beginning of a loop  
+  - **Loop Out** – Sets the end point for the loop  
+  - **On/Off** – (De)activate the loop. If a loop has not been set, this
+    button will have no effect.  
+  - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
+    x1/2 to double the length of the loop.  
 
 ### Auto Loop Mode
 

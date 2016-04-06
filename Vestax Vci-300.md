@@ -14,8 +14,6 @@ and a set of headphones.
 
 Vestax went out of business in 2014.
 
-In depth-review:
-
 ## Differences between VCI-300 and VCI-300MKII
 
 In 2010 Vestax made changes to the original VCI-300 that improved the

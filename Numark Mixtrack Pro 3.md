@@ -40,12 +40,11 @@ the values below at the very top of the JavaScript file
     pad is held down when the pads are in Autoloop mode
   - **PADSampleButtonPressed**: whether to keep samplers playing only
     while a pad is held down when the pads are in Sample mode
-  - **OnBeatActiveFlash**: Whether the TAP LED will flash to the beat
-    (unless Shift Lock is enabled)
-  - **TapExpandLibrary**: Use TAP button to expand Library view. If
-    "true": TAP button will be used to expand/contract library view and
-    Shift TAP will trigger TAP function; "false" will invert the
-    functionality
+  - **OnBeatActiveFlash**: whether the TAP LED will flash to the beat
+    (except when Shift Lock is on)
+  - **TapExpandLibrary**: If "true": TAP button will be used to
+    expand/contract library view and Shift TAP will trigger TAP
+    function; "false" will invert the functionality
   - **Skin**: Specify the Skin used for your installation. This is
     required in order for TapExpandLibrary option to work properly.
     Different code is required for each skin. Accepted values: 1 =

@@ -1,11 +1,11 @@
 # Operating System Mixer
 
 To adjust the level of Mixxx's outputs and inputs, the main and
-headphone gain knobs in Mixxx should be used only as a last resort. For
-the best sound quality, Mixxx and your sound card would always be at
-their maximum level without clipping and a control on the amplifier or
-speakers (for active speakers) would be used to adjust loudness (see
-[the
+headphone gain knobs in Mixxx should be used only as a last resort.
+Ideally, for the best sound quality, Mixxx and your sound card would
+always be at their maximum level without clipping and a control on the
+amplifier or speakers (for active speakers) would be used to adjust
+loudness (see [the
 manual](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging)
 for a technical explanation). Sometimes this is not accessible though.
 In that case, the sound card may be the best place to adjust the

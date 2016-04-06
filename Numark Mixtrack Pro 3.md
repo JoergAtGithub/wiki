@@ -93,8 +93,9 @@ you move up the level fader (the volume fader if you prefer) of the
 deck, the track will be played and if you close it to zero, the track
 will be paused.  
 **Configurable option:**  
-If smartPFL is set to true, the Cue channel of the track being loaded is
-activated and the other Cue channel is deactivated
+If the [smartPFL option](#configuration-options) is set to true, the
+Cue/PFL button is automatically activated on the deck being loaded and
+deactivated on the other deck.
 
 #### 6-8 EQ Knobs
 
@@ -105,11 +106,11 @@ Adjust High/Mid/Low frequencies of the deck
 Adjusts the amount of the filter effect. Turning the knob left controls
 the low pass filter; turning it right controls the high pass filter.
 
-#### 10\. Cue/PFL
+#### 10\. Cue/PFL/Headphones
 
-Sends pre-fader audio to the Cue Channel for headphone monitoring.  
+Sends pre-fader audio to the headphone output  
 **SHIFT + press:** toggle slip mode  
-**SHIFT + double press**: toggle quantize mode.
+**SHIFT + double press**: toggle quantize mode
 
 #### 11\. Volume fader
 
@@ -126,46 +127,49 @@ Press and hold to momentarily reduce the speed of the track.
 
 #### 15\. Pitch Fader
 
-This controls the speed of the music. Moving towards the "+" will speed
-the music up, while moving towards the "–" will slow it down.
+Adjust the speed of the music (activate keylock to adjust tempo without
+affecting pitch). Note that moving the fader down *increases* speed, as
+marked by the "+" at the bottom of the fader on the controller. This can
+be reversed in Mixxx's preferences under Interface \> Speed slider
+direction
 
 #### 16\. Touch Strip
 
-**Left Strip:** Use the Touch Strip to adjust the Effect Rack 1 Super
-button.  
+**Left Strip:** Use the Touch Strip to adjust the Effect Rack 1
+Superknob  
 **Right Strip:** Use the Touch Strip to adjust the Effect Rack 1 Dry/Wet
-mixing ratio  
-**Shift + Touch Strip:** search through a track’s timeline.
+mix ratio  
+**Shift + Touch Strip:** search through a track’s timeline
 
 #### 17\. Beats Multiplier
 
 Moves the beat grid left (turn counterclockwise) or right (turn
 clockwise)  
 **Shift + Beats:** adjust beatgrid size **Configurable option:**  
-If BeatKnobAsSamplerVolume is set to "true, use Beat knob to adjust
-Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4 ; Deck 2 knob
-will adjusts Samplers 5-8  
-Shift + Beat knob moves beat grid.
+If BeatKnobAsSamplerVolume is set to "true", use Beat knob to adjust
+Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4; Deck 2 knob
+will adjusts Samplers 5-8. Shift + Beat knob will move the beat grid.
 
 #### 18-20 FX 1/2/3 On/Off
 
-Assigns (On) / removes (Off) selected deck to Effect Rack 1, Unit
-1/2/3  
-**Shift + FX1/2/3** to select from the list of available effects: Left
-deck : select previous effect, Right deck : select next effect
+Assigns selected deck to Effect Rack 1, Unit 1/2/3  
+**Shift + FX1/2/3** to select from the list of available effects for the
+respective effect unit. Left deck selects the previous effect, right
+deck selects the next effect.
 
 #### 21\. Tap BPM
 
-Press this 4 or more times on tempo to manually enter a new BPM. The
+Press this 4 or more times on beat to manually enter a new BPM. The
 software will ignore the track's BPM and follow your manually entered
 tempo. **Configurable option:**  
-If **TapExpandLibrary** is set to "true", the TAP button will expand the
-Library view and Shift TAP will trigger TAP function
+If [TapExpandLibrary](#configuration-options) is set to "true", the TAP
+button will expand the Library view and Shift TAP will trigger TAP
+function
 
 #### 22\. Wheel button
 
 Activate this button to use the platter/jog wheel to grab and move the
-audio, "scratching" the track as you would with a vinyl record.
+audio, scratching the track like a vinyl record.
 
 #### 23\. Platter/Jog Wheel
 
@@ -177,32 +181,32 @@ it
 feature is activated, else normal scratching  
 **Wheel Button Off + Touch platter**: No action (Wheel is off\!)  
 **Shift + Wheel Off + Touch platter**: if fastSeekEnabled is true, fast
-seek is activated (navigate quickly thru track).
+seek is activated (navigate quickly thru track)
 
 #### 24\. Shift
 
 Allows multiple control commands to be triggered when pressed first
-along with other buttons.  
+along with other buttons  
 **Single Press** : Temporary SHIFT  
-**Double press** (like a double click) : SHIFT Lock enabled (TAP LED
-will remain ON if Shift Lock is enabled)  
-**Press and release** : toggle off SHIFT Lock if enabled
+**Double press** (like a double click): SHIFT Lock enabled (TAP LED will
+remain ON if Shift Lock is enabled)  
+**Press and release**: toggle off SHIFT Lock if enabled
 
 #### 25\. Pad Mode
 
-This is used to change the operation of the top 4 performance pads.
-Single press will lit the mode currently active (Manual Loop, Auto Loop
-or Sampler)
+This is used to change the [operation mode](#performance-pad-modes) of
+the top 4 performance pads. Pressing this button will light the pad
+indicating the currently active (Manual Loop, Auto Loop or Sampler)
 
 #### 26\. Sync
 
 Enables BPM syncing between decks.  
-**Short Press:** Press once to synchronize the tempo (BPM) and phase to
-that of to that of the other track.  
+**Short Press:** Press once to synchronize the tempo (BPM) to that of to
+that of the other track  
 **Double Press:** press twice QUICKLY to play the track immediately
 synchronized to the tempo (BPM) and to the phase of the other track, if
 the track was paused  
-**Long Press** (Sync Lock). Hold for at least half of a second to enable
+**Long Press** (Sync Lock): Hold for at least half of a second to enable
 sync lock for this deck. Decks with sync locked will all play at the
 same tempo, and decks that also have quantize enabled will always have
 their beats lined up. If the Sync Lock was previously activated, it just
@@ -211,28 +215,27 @@ deactivates it regardless of the Short press/Double Press
 
 #### 27\. Cue (Transport Control)
 
-Sets and recalls the main Cue point in the current track. Hold down the
-Cue button for temporary play of the cue point. The track will play for
-as long as the button is held down and return to the cue point once it
-is released.  
+Behavior depends on the [cue
+mode](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
+set in the Mixxx preferences.  
 **Shift + Cue:** return the play head to the start of the track.
 
 #### 28\. Play/Pause
 
 Starts and suspends playback. If no track is loaded, loads the selected
 track (if any) and play.  
-**Shift + Play/Pause:** to stutter the track from the last set cue
-point. If a cue point has not been set, the play head will return to the
-start of the track.
+**Shift + Play/Pause:** stutter the track from the last set cue point.
+If a cue point has not been set, the play head will return to the start
+of the track.
 
 #### 29\. Performance Pads
 
 The top row of pads is used to trigger autoloop points. See section
 “Performance Pad Modes” for detailed description of usage. The bottom
-row of pads is used to trigger Cue points. If a Cue point has not
-already been set for the loaded track, this control will mark the Cue
-point. If a Cue point has already been set, this control will jump to
-Cue point.  
+row of pads is used to trigger hotcue points. If a hotcue point has not
+already been set for the loaded track, this control will mark the hotcue
+point. If a hotcue point has already been set, this control will jump to
+it.  
 **Shift + Hot Cue**: Deletes the assigned Cue point
 
 #### 30\. Master Output LEDs

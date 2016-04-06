@@ -274,7 +274,7 @@ On other controllers, these knobs affect the integrated sound card's
 output and the controller also sends MIDI or HID signals when the knobs
 are turned. In this case, the signals should *not* be mapped to the
 software gains in Mixxx, otherwise the knobs will adjust the gain both
-on the controller's sound cards and in Mixxx.
+on the controller's sound card and in Mixxx.
 
 Some controllers have integrated sound cards that do not have knobs or
 buttons on the device that control the sound card's outputs, but the

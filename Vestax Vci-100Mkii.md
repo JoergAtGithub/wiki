@@ -84,7 +84,8 @@ pressed. Changes after the previous version are in bold.
 16. Headphone volume
 17. Headphone mix
 18. Master volume
-19. Scratch **\[Brake\]**
+19. Scratch **\[Brake (if released before full stop, playback
+    resumes)\]**
 20. Jog (locked in slip mode)
 21. Play **\[Reverse\]**
 22. Cue **\[Adjust beatgrid to the current playposition\]**

@@ -19,7 +19,7 @@ the values below at the very top of the JavaScript file
 “Numark-Mixtrack-3-scripts.js” and save changes. Allowed values are
 “**true**” or “**false**”
 
-  - **TrackEndWarning**: Whether the Wheel button flashes near the end
+  - **TrackEndWarning**: whether the Wheel button flashes near the end
     of a track
   - **iCutEnabled**: iCut mode simulates a scratch routine with the jog
     wheel. When enabled, hold Shift when the Wheel button is on while
@@ -31,18 +31,15 @@ the values below at the very top of the JavaScript file
     the Wheel button is on and Shift is held
   - **smartPFL**: When the Load button is used, the Cue channel of the
     track being loaded is activated and the other Cue channel is
-    deactivated. Cue channel can be activated directly with Cue/PFL
-    button.
+    deactivated. Cue/PFL buttons can still be toggled as normal
   - **printComments**: Used for debugging, print comments on prompt
     screen
   - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead
     of beatloop command when using pads in Autoloop mode.
-  - **PADLoopButtonPressed**: When "false" is set, pressing pads in
-    Autoloop mode toggles whether the loop is active. When "True" is
-    set, the loop will only be activated while the pad is pressed down.
-  - **PADSampleButtonPressed**: When "false" is set, pressing pads in
-    Sample mode toggles whether the sample is playing. When "True" is
-    set, the sample only plays while the pad is pressed down.
+  - **PADLoopButtonPressed**: whether to keep loops active only while a
+    pad is held down when the pads are in Autoloop mode
+  - **PADSampleButtonPressed**: whether to keep samplers playing only
+    while a pad is held down when the pads are in Sample mode
   - **OnBeatActiveFlash**: Whether the TAP LED will flash to the beat
     (unless Shift Lock is enabled)
   - **TapExpandLibrary**: Use TAP button to expand Library view. If

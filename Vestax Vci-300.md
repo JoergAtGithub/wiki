@@ -5,12 +5,12 @@
 
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=2596)
 
-Vestax is out of business.
-
 The VCI-300 is a dedicated USB MIDI controller. It also comes with a
 built in audio interface with standard 4-in/4-out and headphone
 connection, which means all you need for DJing is the VCI-300, a laptop
 and a set of headphones.
+
+Vestax went out of business in 2014.
 
 In depth-review:
 [www.proaudiostar.com](http://www.proaudiostar.com/vci-300-mkii-in-depth-review)

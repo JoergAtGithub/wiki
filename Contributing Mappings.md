@@ -136,7 +136,10 @@ from the wiki page if your mapping replaces the old one.
 Some controllers have integrated microphone inputs. On some devices, the
 input signal is available to the computer, but on others it is not.
 Which way the device works should be documented on the controller's wiki
-page.
+page. You can test out whether the microphone input is available to the
+computer by going to Mixxx's Sound Hardware preferences, clicking the
+Input tab, and check whether the controller's sound card appears as an
+option for inputs to select.
 
 When the input signal is not available to computer, it is mixed in
 hardware with the main output without being digitized and routed to

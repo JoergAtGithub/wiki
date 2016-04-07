@@ -161,13 +161,14 @@ hardware with the main output without being digitized and routed to
 sound card. This has the advantage of not introducing the latency of
 routing the signal through an analog-to-digital converter, through the
 computer, and back out through the sound card's digital-to-analog
-converter. However, users cannot record or broadcast using the
-microphone input on the controller. They would have to plug the
-microphone into a different sound card to record or broadcast the
-microphone signal. The sound card built into computer motherboards often
-has one microphone input jack, typically a 1/8" TS or TRS jack, often
-colored pink and labeled with a microphone icon, that can be used for
-this purpose.
+converter (and saving the manufacturer the expense of putting an
+analog-to-digital converter in thousands of devices). However, users
+cannot record or broadcast using the microphone input on the controller.
+They would have to plug the microphone into a different sound card to
+record or broadcast the microphone signal. The sound card built into
+computer motherboards often has one microphone input jack, typically a
+1/8" TS or TRS jack, often colored pink and labeled with a microphone
+icon, that can be used for this purpose.
 
 ## File naming convention
 

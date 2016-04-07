@@ -125,11 +125,11 @@ your microphone to go through your sound card's analog-to-digital
 converter, through Mixxx, and back out through your sound card's
 digital-to-analog converter. So, the microphone signal reaches your
 speakers and/or headphones a few milliseconds after you make the sound.
-If you are only interested in broadcasting or recording your microphone
-input, you can prevent Mixxx from mixing the delayed input signal with
-the main output to your sound card. Go to Options \> Preferences \>
-Sound Hardware in Mixxx. Change the "Microphone/Talkover Mix" option
-from "Master output" to "Recording and Broadcasting Only".
+If you are only interested in broadcasting or recording with your
+microphone input, you can prevent Mixxx from mixing the delayed input
+signal with the main output to your sound card. Go to Options \>
+Preferences \> Sound Hardware in Mixxx. Change the "Microphone/Talkover
+Mix" option from "Master output" to "Recording and Broadcasting Only".
 
 If you do want to mix the signal from your microphone with Mixxx's
 output with an unnoticeably small delay, you'll either need a very low

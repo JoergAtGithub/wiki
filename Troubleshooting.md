@@ -132,12 +132,11 @@ Preferences \> Sound Hardware in Mixxx. Change the "Microphone/Talkover
 Mix" option from "Master output" to "Recording and Broadcasting Only".
 
 If you do want to mix the signal from your microphone with Mixxx's
-output with an unnoticeably small delay, you'll either need a very low
-latency sound card and computer capable of running Mixxx reliably at
-such a low latency, or you will need mix the microphone signal with
-Mixxx's output without digitizing it. If you are plugging Mixxx's output
-into another hardware mixer, this can be done by plugging your
-microphone into that mixer instead of running it through Mixxx.
+output with an unnoticeably small delay, mix the microphone signal with
+Mixxx's output without digitizing it. Some DJ controllers with
+microphone inputs often do this. If you are plugging Mixxx's output into
+another hardware mixer, this can be done by plugging your microphone
+into that mixer instead of running it through Mixxx.
 
 Alternatively, sound cards marketed for recording typically have a
 feature called direct monitoring that mixes the input signal directly

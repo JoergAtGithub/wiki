@@ -21,21 +21,18 @@ the values below at the very top of the JavaScript file
 
   - **TrackEndWarning**: whether the Wheel button flashes near the end
     of a track
-  - **iCutEnabled**: iCut mode simulates a scratch routine with the jog
-    wheel. When enabled, hold Shift when the Wheel button is on while
-    moving the jog wheel to use iCut. When the jog wheel is turned back,
-    the crossfader closes; when the jog wheel is turned forward the
-    crossfader will open. As a visual reference, TAP LED and Wheel
-    button LED will be ON.
-  - **fastSeekEnabled**: Enables fast seek with Jog Wheel platter when
-    the Wheel button is on and Shift is held
+  - **iCutEnabled**: whether to enable iCut with the jog wheel. See
+    [\#platter/jog wheel](#platter/jog%20wheel) section for details
+  - **fastSeekEnabled**: whether to enable fast seeking with the jog
+    wheel. See [\#platter/jog wheel](#platter/jog%20wheel) section for
+    details
   - **smartPFL**: When the Load button is used, the Cue/PFL button is
     automatically activated on the deck being loaded and deactivated on
     the other deck
   - **printComments**: Used for debugging, print comments on prompt
     screen
   - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead
-    of beatloop command when using pads in Autoloop mode.
+    of beatloop command when using pads in Autoloop mode
   - **PADLoopButtonPressed**: whether to keep loops active only while a
     pad is held down when the pads are in Autoloop mode
   - **PADSampleButtonPressed**: whether to keep samplers playing only
@@ -177,11 +174,19 @@ audio, scratching the track like a vinyl record.
 positioning (Wheel On)  
 **Wheel On + Touch platter:** scratching: touch the platter and move
 it  
-**Shift + Wheel On + Touch platter**: If iCutEnabled is true, iCut
-feature is activated, else normal scratching  
+**Shift + Wheel On + Touch platter**: iCut mode: simulates a scratch
+routine with the jog wheel. When the jog wheel is turned back, the
+crossfader closes; when the jog wheel is turned forward the crossfader
+will open. As a visual reference, TAP LED and Wheel button LED will be
+ON.  
 **Wheel Button Off + Touch platter**: No action (Wheel is off\!)  
-**Shift + Wheel Off + Touch platter**: if fastSeekEnabled is true, fast
-seek is activated (navigate quickly thru track)
+**Shift + Wheel Off + Touch platter**: fast seek through track
+
+**Configuration Options:** The [iCutEnabled](#configuration-options) and
+[fastSeekEnabled](#configuration-options) options can be used to turn
+off iCut and fast seeking. These options may be helpful to avoid
+accidentally using these features when touching the platter with shift
+lock on.
 
 ### 24\. Shift
 

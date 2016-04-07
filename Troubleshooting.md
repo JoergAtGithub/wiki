@@ -122,10 +122,10 @@ for an explanation of the different sound APIs.
 By default, Mixxx combines microphone inputs with the main output,
 broadcasting, and recording signals. It takes time for the signal from
 your microphone to go through your sound card's analog-to-digital
-converter, through Mixxx on your computer, and back out through your
-sound card's digital-to-analog converter. So, the microphone input is
-mixed into these signals a few milliseconds after you make the sound. If
-you are only interested in broadcasting or recording your microphone
+converter, through Mixxx, and back out through your sound card's
+digital-to-analog converter. So, the microphone signal reaches your
+speakers and/or headphones a few milliseconds after you make the sound.
+If you are only interested in broadcasting or recording your microphone
 input, you can prevent Mixxx from mixing the delayed input signal with
 the main output to your sound card. Go to Options \> Preferences \>
 Sound Hardware in Mixxx. Change the "Microphone/Talkover Mix" option

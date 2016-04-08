@@ -45,11 +45,11 @@ in hardware. To use it with Mixxx:
   - Select channels 3-4 for Deck 2 output
 
 *Note*: You cannot use the preview deck to pre-listen in this setup, as
-Mixxx routes the preview deck directly to the headphone output, which is
-not mixed with the Deck 1/2 outputs. You could use a separate soundcard
-and route the headphone output there to also pre-listen using the
-preview deck. Of course, if you do so, attach the headphones to that
-other soundcard instead of the VMS2.
+Mixxx routes the preview deck to Mixxx's headphone output, which is not
+mixed with the Deck 1/2 outputs. You could use a separate soundcard and
+route the headphone output there to also pre-listen using the preview
+deck. Of course, if you do so, attach the headphones to that other
+soundcard instead of the VMS2.
 
 ### Input and Recording
 

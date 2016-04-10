@@ -15,7 +15,7 @@ them by running:
 
     sudo apt-get build-dep mixxx 
     sudo apt-get install git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
-      libopus-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
+      libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
       libvamp-hostsdk3v5 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libmad0-dev \
       portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
       libid3tag0-dev libflac-dev libsndfile-dev

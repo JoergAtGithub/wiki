@@ -80,7 +80,7 @@ already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt chromaprint rubberband fftw vamp-plugin-sdk
+    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt chromaprint rubberband fftw vamp-plugin-sdk opusfile
 ```
 
 If you have trouble compiling *rubberband* and *vamp-plugin-sdk*, try

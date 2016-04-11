@@ -5,7 +5,7 @@
   - [Manufacturer's product
     page](http://www.hercules.com/us/DJ-Music/bdd/p/193/djconsole-rmx-2/)
   - [Manual / Midi
-    commands](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=308&cid=6)
+    commands](https://support.hercules.com/de/product/djconsolermx2-de)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=4541)
 
 This all-in-one DJ controller features a built in 4 channel sound card

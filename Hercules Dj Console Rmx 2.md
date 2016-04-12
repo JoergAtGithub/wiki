@@ -21,12 +21,14 @@ with balanced XLR master outputs and a balanced microphone input.
 3.  Pitch Bend -/+
 4.  Speed control, Tempo and pitch, depending on keylock 
 5.  Microphone jack
-6.  Microphone volume (hardwired)
-7.  Enable/disable microphone (hardwired)
+6.  Microphone volume (controls the built in sound card, not software
+    microphone gain in Mixxx)
+7.  Enable/disable microphone (controls the built in sound card, not
+    microphone control in Mixxx)
 8.  Effect Super knob, with shift: Dry/Wet 
 9.  Source 1/2 unused 
 10. Gain
-11. Master Gain (midi only)
+11. Master Gain (controls software gain in Mixxx)
 12. EQ Kill
 13. Vinyl (unused)
 14. Mixing EQ
@@ -37,7 +39,8 @@ with balanced XLR master outputs and a balanced microphone input.
 19. Deck volume
 20. Crossfader
 21. Headphone mix
-22. Headphone volume (hardwired)
+22. Headphone volume (controls the built in sound card, not software
+    headphone gain in Mixxx)
 23. Headphone jack
 24. Multifunctional pads for loops, effects, samples, and hot-cues.
     (pressure sensitivity unused)

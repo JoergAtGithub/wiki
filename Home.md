@@ -71,9 +71,6 @@ please fix it.
   - [Controller mapping
     forum](http://mixxx.org/forums/viewforum.php?f=7): search for
     mappings, share your mappings, and ask for help
-
-<!-- end list -->
-
   - [HID controller mapping file format](hid_mapping_format):
     brainstorming page for how we might implement HID mapping. Right
     now, you must use scripting (see above)

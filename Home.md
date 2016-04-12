@@ -20,7 +20,8 @@ please fix it.
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
-  - [Reporting bugs](Reporting%20bugs)
+  - [Reporting bugs](Reporting%20bugs) is a great way to contribute to
+    Mixxx, especially if you don't have programming skills
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
   - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):

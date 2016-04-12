@@ -283,7 +283,9 @@ need to get them from the chipset maker (nVidia, AMD/ATI) rather than
 the system board or computer manufacturer, since the manufacturer
 drivers aren't always the latest.) Also, if you're on Windows, make sure
 you have the latest [DirectX](http://support.microsoft.com/kb/179113)
-installed.
+installed. See also [\#What should I do to get Mixxx to run the best it
+can on my
+computer?](#What%20should%20I%20do%20to%20get%20Mixxx%20to%20run%20the%20best%20it%20can%20on%20my%20computer?)
 
 ## Mixxx freezes, crashes, or otherwise misbehaves and I have an nVidia graphics card
 

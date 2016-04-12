@@ -374,7 +374,7 @@ Some mixers also include USB sound cards with phono preamplifiers. This
 is more convenient than having a separate device for vinyl control
 users.
 
-#### Preamplifiers
+#### Vinyl control, microphones, and preamplifiers
 
 If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html), it

@@ -20,27 +20,30 @@ with balanced XLR master outputs and a balanced microphone input.
 2.  Fast-forward/rewind, with shift: jump to start/end
 3.  Pitch Bend -/+
 4.  Speed control, Tempo and pitch, depending on keylock 
-5.  Enable/disable microphone (hardwired)
-6.  Effect Super knob, with shift: Dry/Wet 
-7.  Source 1/2 unused 
-8.  Gain
-9.  Master Gain
-10. EQ Kill
-11. Vinyl unused
-12. Mixing EQ
-13. Library navigation
-14. Load selected track to deck A/deck B
-15. Pre-fader listening (PFL) to deck A/deck B
-16. Volume meter
-17. Deck volume
-18. Crossfader
-19. Headphone mix
-20. Headphone gain
-21. Multifunctional pads for loops, effects, samples, and hot-cues.
+5.  Microphone jack
+6.  Microphone volume (hardwired)
+7.  Enable/disable microphone (hardwired)
+8.  Effect Super knob, with shift: Dry/Wet 
+9.  Source 1/2 unused 
+10. Gain
+11. Master Gain (midi only)
+12. EQ Kill
+13. Vinyl (unused)
+14. Mixing EQ
+15. Library navigation
+16. Load selected track to deck A/deck B
+17. Pre-fader listening (PFL) to deck A/deck B
+18. Volume meter
+19. Deck volume
+20. Crossfader
+21. Headphone mix
+22. Headphone volume (hardwired)
+23. Headphone jack
+24. Multifunctional pads for loops, effects, samples, and hot-cues.
     (pressure sensitivity unused)
-22. Multifunctional pads mode display (hardwired)
-23. Multifunctional pads mode selection (hardwired)
-24. Shift
-25. Sync enable
-26. Cue
-27. Play/pause
+25. Multifunctional pads mode display (hardwired)
+26. Multifunctional pads mode selection (hardwired)
+27. Shift
+28. Sync enable
+29. Cue
+30. Play/pause

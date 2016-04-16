@@ -10,7 +10,11 @@
 
 The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
 except that the Pro version has an integrated 4 channel output sound
-card and costs $100 more.
+card and costs $100 more. If you use the non-Pro version, you would need
+a [hardware compatibility\#splitter
+cable](hardware%20compatibility#splitter%20cable) or separate [hardware
+compatibility\#sound card](hardware%20compatibility#sound%20card) to be
+able to preview tracks in headphones.
 
 ## Configuration options
 

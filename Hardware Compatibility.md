@@ -155,9 +155,11 @@ move your controller to this table.
 | [Electrix Tweaker](Electrix%20Tweaker)                                                             | $100              | 4 deck\[9\] without jog wheels            | no                    | MIDI            | 2.0                           |
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | $100              | basic 2 deck                              | yes                   | MIDI            | 1.6                           |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | $125              | basic 2 deck                              | yes                   | MIDI            | 1.10.1                        |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck\[10\] all-in-one                   | yes                   | MIDI            | 2.0                           |
+| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150              | 2 deck all-in-one                         | no                    | MIDI            | 2.1\[10\]                     |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $250              | 2 deck all-in-one                         | yes                   | MIDI            | 2.1\[11\]                     |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck\[12\] all-in-one                   | yes                   | MIDI            | 2.0                           |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | $300              | 4 deck\[11\] all-in-one                   | yes                   | MIDI            | 1.11                          |
+| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | $300              | 4 deck\[13\] all-in-one                   | yes                   | MIDI            | 1.11                          |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | $400              | 4 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
 | [Reloop Beatpad](Reloop%20Beatpad)                                                                 | $449              | 2 deck all-in-one                         | yes                   | MIDI            | 2.0                           |
 | [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
@@ -181,28 +183,28 @@ move your controller to this table.
 | [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued      | 2 deck mixer                              | no                    | MIDI            | 1.8.2                         |
 | [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued      | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                         | yes                   | HID             | 1.11                          |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[12\]     | 1.7                           |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                         | yes                   | HID \[13\]      | 1.8                           |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[14\]     | 1.7                           |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                         | yes                   | HID \[15\]      | 1.8                           |
 | [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued      | 2 deck all-in-one                         | no                    | HID             | 1.11                          |
 | [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.8                           |
 | [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.6                           |
-| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued      | 2 decks                                   | yes                   | MIDI \[14\]     | 1.7                           |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued      | 2 decks                                   | yes                   | MIDI \[16\]     | 1.7                           |
 | [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202%20Pro)                                   | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.10.1                        |
 | [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | pad grid                                  | no                    | MIDI \[15\]     | 1.11                          |
+| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued      | pad grid                                  | no                    | MIDI \[17\]     | 1.11                          |
 | [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.11                          |
-| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[16\]     | 1.10                          |
+| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[18\]     | 1.10                          |
 | [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.6                           |
 | [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.8.2                         |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.10                          |
 | [Numark NS7](Numark%20NS7)                                                                         | discontinued      | 2 deck all-in-one with motorized wheels   | yes                   | MIDI            | 1.9                           |
 | [Numark V7](Numark%20V7)                                                                           | discontinued      | 2 deck motorized wheel                    | yes                   | MIDI            | 1.10                          |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued      | CD player                                 | no                    | MIDI or HID     | 1.8.2 (MIDI)                  |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | discontinued      | 4 deck\[17\] all-in-one                   | yes                   | MIDI            | 2.0                           |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | discontinued      | 4 deck\[19\] all-in-one                   | yes                   | MIDI            | 2.0                           |
 | [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued      | 2 deck all-in-one                         | yes                   | MIDI            | 1.8                           |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[18\]     | 1.8                           |
-| [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued      | 4 deck\[19\] all-in-one                   | yes                   | MIDI            | 1.11                          |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued      | 2 deck all-in-one                         | yes                   | MIDI \[20\]     | 1.8                           |
+| [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued      | 4 deck\[21\] all-in-one                   | yes                   | MIDI            | 1.11                          |
 | [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                            | yes                   | MIDI            | 1.6.2                         |
 | [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued      | 2 deck all-in-one                         | no                    | MIDI            | 1.6                           |
 | [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued      | 4 deck all-in-one                         | yes                   | MIDI            | 2.0                           |
@@ -244,11 +246,10 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 |                                                              |                        |                                      |                       |                 |
 | ------------------------------------------------------------ | ---------------------- | ------------------------------------ | --------------------- | --------------- |
-| Device                                                       | Price (USD) \[20\]     | Description                          | Integrated Sound Card | Signal protocol |
+| Device                                                       | Price (USD) \[22\]     | Description                          | Integrated Sound Card | Signal protocol |
 | [Akai AMX](Akai%20AMX)                                       | $250                   | 1 deck control                       | yes                   | MIDI            |
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200                   | 2 deck (4 virtual)                   | yes                   | MIDI            |
 | [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | 2 deck control                       | no                    | MIDI            |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)         | $250                   | 2 deck all-in-one                    | yes                   | MIDI            |
 | [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500 (discontinued?) | 4 deck control                       | yes                   | MIDI            |
 | [Hercules P32 DJ](Hercules%20P32%20DJ)                       | $250                   | 2 deck (4 virtual) mixer + pad grids | yes                   | MIDI            |
 
@@ -481,23 +482,23 @@ Numark DJ iO 2 though.
 
 |                                                                                                                                                                                                                                                |                    |                     |                                                                  |                     |                                                                     |                     |            |                                |               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------- | ---------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ------------------- | ---------- | ------------------------------ | ------------- |
-| Device                                                                                                                                                                                                                                         | Price (USD) \[21\] | Channels out        | Output connectors                                                | Channels in         | Input connectors                                                    | Preamps             | Bit depths | Sample rates (kHz)             | Linux         |
-| [Behringer U-Control UCA202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA202/p/P0484) & [UCA222](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA222/p/P0A31) \[22\] | $30                | 2                   | 2 RCA, 1 1/8" headphone, 1 SPDIF Toslink                         | 2                   | 2 RCA                                                               | none                | 16         | 32, 44.1, 48                   | yes           |
-| [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)\[23\]                                                                                                               | $30                | 2                   | 2 RCA, 1 1/8" headphone                                          | 2                   | 2 RCA                                                               | 1 phono             | 16         | 32, 44.1, 48                   | yes           |
-| [Griffin DJ Connect](https://griffintechnology.com/us/products/audio/dj-accessories/dj-connect) \[24\]                                                                                                                                         | $70                | 4                   | 2 RCA, 1 1/8" headphone                                          | 0                   | none                                                                | none                | 16         | 48                             | likely \[25\] |
+| Device                                                                                                                                                                                                                                         | Price (USD) \[23\] | Channels out        | Output connectors                                                | Channels in         | Input connectors                                                    | Preamps             | Bit depths | Sample rates (kHz)             | Linux         |
+| [Behringer U-Control UCA202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA202/p/P0484) & [UCA222](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA222/p/P0A31) \[24\] | $30                | 2                   | 2 RCA, 1 1/8" headphone, 1 SPDIF Toslink                         | 2                   | 2 RCA                                                               | none                | 16         | 32, 44.1, 48                   | yes           |
+| [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)\[25\]                                                                                                               | $30                | 2                   | 2 RCA, 1 1/8" headphone                                          | 2                   | 2 RCA                                                               | 1 phono             | 16         | 32, 44.1, 48                   | yes           |
+| [Griffin DJ Connect](https://griffintechnology.com/us/products/audio/dj-accessories/dj-connect) \[26\]                                                                                                                                         | $70                | 4                   | 2 RCA, 1 1/8" headphone                                          | 0                   | none                                                                | none                | 16         | 48                             | likely \[27\] |
 | [Native Instruments Traktor Audio 2 DJ (Mk2)](http://www.native-instruments.com/en/products/traktor/dj-audio-interfaces/traktor-audio-2/)                                                                                                      | $100               | 4                   | 2 1/8" stereo                                                    | 0                   | none                                                                | none                | 24         | 44.1, 48, 88.2, 96             | yes           |
-| [Numark DJ iO 2](http://www.numark.com/product/djio-2)                                                                                                                                                                                         | $100               | 4                   | 2 RCA, 1 1/4" headphone                                          | 0                   | 1 1/4" mic \[26\]                                                   | 1 mic               | 24         | 44.1                           | likely \[27\] |
+| [Numark DJ iO 2](http://www.numark.com/product/djio-2)                                                                                                                                                                                         | $100               | 4                   | 2 RCA, 1 1/4" headphone                                          | 0                   | 1 1/4" mic \[28\]                                                   | 1 mic               | 24         | 44.1                           | likely \[29\] |
 | [Reloop Play](http://www.reloop.com/reloop-play)                                                                                                                                                                                               | $130               | 4                   | 4 RCA, 1 1/4" headphone                                          | 0                   | none                                                                | none                | 24         | 96                             | yes           |
 | [Focusrite Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)                                                                                                                                                            | $200               | 4                   | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI           | 2                   | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                             | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96             | yes           |
 | [Native Instruments Komplete Audio 6](http://www.native-instruments.com/en/products/komplete/audio-interfaces/komplete-audio-6-migrated/included-software/)                                                                                    | $230               | 4 analog, 2 digital | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 4 analog, 2 digital | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF | 2 mic, 2 instrument | 16, 24     | 44.1, 48, 96                   | yes           |
 | [Native Instruments Traktor Scratch A6](http://www.native-instruments.com/en/products/traktor/digital-vinyl/traktor-scratch-a6/)                                                                                                               | $300               | 6                   | 6 RCA, 1 1/4" headphone                                          | 6                   | 6 RCA                                                               | 2 phono             | 16, 24     | 44.1, 48, 88.2, 96             | yes           |
-| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48, 96                   | likely \[28\] |
+| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48, 96                   | likely \[30\] |
 | [Audient iD14](http://audient.com/products/id14)                                                                                                                                                                                               | $300               | 4                   | 2 1/4" balanced, 1 1/4" headphone                                | 2                   | 2 1/4" balanced/XLR combo, 1 1/4" TS instrument                     | 2 mic, 1 instrument | 24         | 44.1, 48, 88.2, 96             | yes           |
 | [Native Instruments Traktor Scratch A10](http://www.native-instruments.com/en/products/traktor/digital-vinyl/traktor-scratch-a10/)                                                                                                             | $500               | 10                  | 10 RCA, 1 1/4" headphone                                         | 10                  | 10 RCA, 1 1/4" mic                                                  | 4 phono, 1 mic      | 16, 24     | 44.1, 48, 88.2, 96             | yes           |
 | [Rane SL2](http://dj.rane.com/products/sl2-for-serato-scratch-live)                                                                                                                                                                            | $500               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48                       | no            |
-| [Apogee Duet 2](http://www.apogeedigital.com/products/duet) \[29\]                                                                                                                                                                             | $600               | 4                   | 2 1/4" balanced (on breakout cable), 1 1/4" headphone            | 2                   | 2 1/4" balanced/XLR combo (on breakout cable)                       | 2 mic, 2 instrument | 24         | 44.1, 96, 192                  | likely \[30\] |
+| [Apogee Duet 2](http://www.apogeedigital.com/products/duet) \[31\]                                                                                                                                                                             | $600               | 4                   | 2 1/4" balanced (on breakout cable), 1 1/4" headphone            | 2                   | 2 1/4" balanced/XLR combo (on breakout cable)                       | 2 mic, 2 instrument | 24         | 44.1, 96, 192                  | likely \[32\] |
 | [Rane SL3](http://dj.rane.com/products/sl3-for-serato-scratch-live)                                                                                                                                                                            | $700               | 6                   | 6 RCA                                                            | 6                   | 6 RCA                                                               | 3 phono             | 24         | 44.1, 48                       | no            |
-| [RME Babyface Pro](http://babyface.rme-audio.de/)                                                                                                                                                                                              | $750               | 4 analog, 8 digital | 2 XLR, 1 1/8" headphone, 1 1/4" headphone, 1 Toslink SPDIF/ADAT  | 4 analog, 8 digital | 2 XLR, 2 1/4" balanced or unbalanced, 1 Toslink SPDIF/ADAT          | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96, 176.4, 192 | yes \[31\]    |
+| [RME Babyface Pro](http://babyface.rme-audio.de/)                                                                                                                                                                                              | $750               | 4 analog, 8 digital | 2 XLR, 1 1/8" headphone, 1 1/4" headphone, 1 Toslink SPDIF/ADAT  | 4 analog, 8 digital | 2 XLR, 2 1/4" balanced or unbalanced, 1 Toslink SPDIF/ADAT          | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96, 176.4, 192 | yes \[33\]    |
 | [Rane SL4](http://dj.rane.com/products/sl4-for-serato-scratch-live)                                                                                                                                                                            | $900               | 8                   | 8 RCA                                                            | 8                   | 8 RCA                                                               | 4 phono             | 24         | 48, 96                         | no            |
 
 \</sortable\>
@@ -508,13 +509,13 @@ Numark DJ iO 2 though.
 
 |                                                                      |                    |              |                                                            |             |                                                                          |                |            |                    |       |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
-| Device                                                               | Price (USD) \[32\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
+| Device                                                               | Price (USD) \[34\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)   | $125               | 4            | 2 RCA, 2 1/8" stereo                                       | 0           | none                                                                     | none           | 16         | 44.1               | yes   |
 | [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                             | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1, 48, 88.2, 96 | yes   |
 | [American Audio VMS2](American%20Audio%20VMS2)                       | $250               | 4            | 2 XLR, 4 RCA, 1 1/4" headphone                             | 4           | 4 RCA, 1 XLR mic, 1 1/4" mic                                             | 2 phono, 1 mic | 16         | 44.1               | yes   |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[33\]                                                        | 1 mic          | 24         | 44.1               | yes   |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[34\]                                                        | 1 mic          | 24         | 44.1               | ?     |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[35\]                                                        | 1 mic          | 24         | 44.1               | yes   |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[36\]                                                        | 1 mic          | 24         | 44.1               | ?     |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)               | $300               | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                     | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
 | [Numark N4](Numark%20N4)                                             | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
@@ -568,33 +569,33 @@ Numark DJ iO 2 though.
 
 9.  switching between decks 1/3 and decks 2/4
 
-10. switching between decks 1/3 and decks 2/4
+10. This mapping is compatible with Mixxx 2.0 and will be included with
+    Mixxx when Mixxx 2.1 is released.
 
-11. switching between decks 1/3 and decks 2/4
+11. This mapping is compatible with Mixxx 2.0 and will be included with
+    Mixxx when Mixxx 2.1 is released.
 
-12. This device is not USB MIDI class compliant. Its signals are
+12. switching between decks 1/3 and decks 2/4
+
+13. switching between decks 1/3 and decks 2/4
+
+14. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Mac OS X. There is no
     driver available for Linux or Windows.
 
-13. with MIDI driver. For Linux support, see [this forum
+15. with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)
 
-14. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+16. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
     [dm2linux on
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
-15. This device is not USB MIDI class compliant. Its signals are
+17. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Windows and Mac OS X. There
     is no driver available for Linux.
-
-16. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
-
-17. switching between decks 1/3 and decks 2/4
 
 18. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Windows and Mac OS X. There
@@ -602,7 +603,13 @@ Numark DJ iO 2 though.
 
 19. switching between decks 1/3 and decks 2/4
 
-20. Prices listed on this page are the prevailing prices for unused
+20. This device is not USB MIDI class compliant. Its signals are
+    translated to MIDI by special drivers on Windows and Mac OS X. There
+    is no driver available for Linux.
+
+21. switching between decks 1/3 and decks 2/4
+
+22. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
     Prices may vary in other parts of the world, but the relative prices
@@ -614,7 +621,7 @@ Numark DJ iO 2 though.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-21. Prices listed on this page are the prevailing prices for unused
+23. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
     Prices may vary in other parts of the world, but the relative prices
@@ -626,40 +633,40 @@ Numark DJ iO 2 though.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-22. The only difference between the Behringer U-Control UCA202 & UCA222
+24. The only difference between the Behringer U-Control UCA202 & UCA222
     are the color and the software they are bundled with.
 
-23. See [this forum
+25. See [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=6&t=2438) for how to
     modify the hardware to work with Mixxx.
 
-24. No ASIO driver for Windows.
-
-25. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
-
-26. Microphone input is mixed directly with the master output. It is not
-    sent to the computer.
+26. No ASIO driver for Windows.
 
 27. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-28. This device is USB class compliant, so it should work without any
+28. Microphone input is mixed directly with the master output. It is not
+    sent to the computer.
+
+29. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
-
-29. No ASIO driver for Windows.
 
 30. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-31. In class compliant mode. Hold Select and Dim buttons when plugging
+31. No ASIO driver for Windows.
+
+32. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+33. In class compliant mode. Hold Select and Dim buttons when plugging
     in USB cable to enable class compliant mode.
 
-32. Prices listed on this page are the prevailing prices for unused
+34. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
     Prices may vary in other parts of the world, but the relative prices
@@ -671,8 +678,8 @@ Numark DJ iO 2 though.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-33. Microphone input is mixed directly with the master output. It is not
+35. Microphone input is mixed directly with the master output. It is not
     sent to the computer.
 
-34. Microphone input is mixed directly with the master output. It is not
+36. Microphone input is mixed directly with the master output. It is not
     sent to the computer.

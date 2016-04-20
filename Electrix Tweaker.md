@@ -25,7 +25,7 @@ card](hardware%20compatibility#stand-alone%20usb%20sound%20cards)
 (although it does include 5-pin MIDI in and out ports). It apparently
 did not sell well considering how little information there is about it
 online. It initially sold for $400 in 2013 but is now available for $100
-with a free case and free shipping from [the
+with a free case and free shipping in the US from [the
 manufacturer](http://electrixpro.com/).
 
 The flexibility of the encoders with LED rings and the multicolor

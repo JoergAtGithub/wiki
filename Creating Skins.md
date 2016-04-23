@@ -415,6 +415,12 @@ editor](#tools) and get started :-)
 
 ## Changes
 
+### Mixxx 2.10.0
+
+``` 
+ * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. See [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]].
+```
+
 ### Mixxx 2.00.0
 
 ``` 
@@ -518,7 +524,7 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
  * ''<LeftClickIsPushButton>'' is calculated from the connected control and can be omitted.
  * ''<RightClickIsPushButton>'' is calculated from the connected control and can be omitted.
  * Start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml
- * Added a style-able launchimage inside the <LaunchImageStyle> tag
+ * Added a style-able [[creating_skins#launch_image|<LaunchImage>]] inside the ''<LaunchImageStyle>'' tag
 ```
 
 ### Mixxx 1.11.0
@@ -3055,9 +3061,9 @@ same time, behavior is undefined and could be crashy.
 New in Mixxx 2.00.0
 
 Mixxx features a default launch image that is shown during Mixxx
-launching. It features a centred lable with a progressbar below.
+launching. It features a centered label with a progress bar below.
 
-All elements are style-able by Qt stylesheeds as shown in the example
+All elements are style-able by Qt stylesheets as shown in the example
 below:
 
 Example definition:
@@ -3086,6 +3092,29 @@ Example definition:
      QProgressBar::chunk { background-color: #ec4522; }
  </LaunchImageStyle>
 ```
+
+### Battery
+
+New in Mixxx 2.10.0
+
+A a widget to show the laptop battery status.
+
+    <Battery>
+      <BackPath>battery_background.png</BackPath>
+      <!-- displayed when battery status is unknown -->
+      <PixmapUnknown>battery_unknown.png<PixmapUnknown> 
+      <!-- displayed when battery is full -->
+      <PixmapCharged>battery_charged.png</PixmapCharged>
+      <!-- number of charging / discharging pixmaps -->
+      <NumberStates>10</NumberStates>
+      <!-- displayed when battery is charging -->
+      <PixmapsCharging>battery_%1_charging.png</PixmapsCharging>
+      <!-- displayed when battery is discharging -->
+      <PixmapsDischarging>battery_%1_discharging.png</PixmapsDischarging>
+    </Battery>
+
+The charging/discharging pixmaps will have %1 replaced from 0 to
+NumberStates - 1.
 
 # Convert a Mixxx skin.xml into HTML
 

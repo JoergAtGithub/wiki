@@ -48,10 +48,10 @@ General structure of the skin.xml. More in-depth informations for each
 element and their attributes defined in the skin.xml can be found
 [here](#skinxml-in-depth-review)
 
-| syntax                                                                                                                                                                                                                                                                                                                                                               | Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| syntax                                                                                                                                                                                                                                                                                                                                         | Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
-<!DOCTYPE skin>           
+<!DOCTYPE skin>
 <skin>
 <manifest>...</manifest>
 <elementname>
@@ -63,7 +63,7 @@ element and their attributes defined in the skin.xml can be found
   <MaximumSize>W,H</MaximumSize>
   <SizePolicy>WPolicy,HPolicy</SizePolicy>
   <options>values(depends)</options>
-</elementname>           
+</elementname>
 </skin>
 ` | `Optional comments (i.e. skin license or changelog)
 Doctype declaration
@@ -190,16 +190,16 @@ Additional skins for Mixxx can be downloaded in the
     Linux
     *************
     /usr/share/mixxx/skins/
-    so you get 
+    so you get
     /usr/share/mixxx/skins/NewSkin
     
-    Note that you may get permission error while copying, 
+    Note that you may get permission error while copying,
     make sure you have root privileges
     
     Windows
     *************
     C:\Program Files\Mixxx\skins
-    so you get 
+    so you get
     C:\Program Files\Mixxx\skins\NewSkin
     
     Mac OSX
@@ -208,7 +208,7 @@ Additional skins for Mixxx can be downloaded in the
     -  Right Click and choose "Show Package Contents" from the Action menu.
     -  goto Contents/Resources/skins
     
-    or straight via Terminal 
+    or straight via Terminal
     /Applications/Mixxx.app/Contents/Resources/skins
     so you get
     /Applications/Mixxx.app/Contents/Resources/skins/NewSkin
@@ -217,7 +217,7 @@ Additional skins for Mixxx can be downloaded in the
     
     3. Start Mixxx , goto "Preferences-->Interface" and select "Skin-->NewSkin"
        Make sure you have "Waveform Display-->Waveform" selected
-       Save preferences with OK.   
+       Save preferences with OK.
     
     4. The new skin should now be displayed.
     
@@ -314,17 +314,17 @@ author.
 
 Add the license terms at the beginning of skin.xml (see examples).
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |  |                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------- |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Example CC by-sa 3.0 licensed skin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |  | Example GPL licensed skin |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |  |                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Example CC by-sa 3.0 licensed skin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |  | Example GPL licensed skin |
 | `<!--
 "Name of your skin", Skin for Mixxx
 www.mixxx.org
 Copyright (C) 2011-2014 your name , your@email.adress
-    
+
 based on the "Name of the original skin"
 Copyright (C) 2011-2014 name of the original author, authors@email.adress
-  
+
 This file is part of the "Name of your skin" skin for Mixxx.
 "Name of your skin" is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
 http://creativecommons.org/licenses/by-sa/3.0/
@@ -339,7 +339,7 @@ to Remix - to adapt the work
 Under the following conditions:
 Attribution - You must attribute the work in the manner specified by the author or licensor
 (but not in any way that suggests that they endorse you or your use of the work).
-A attribution should include the following: The name of the author and/or licensor, 
+A attribution should include the following: The name of the author and/or licensor,
 the title of the work, the URL that is associated with the work.
 
 Share Alike - If you alter, transform, or build upon this work, you may distribute
@@ -415,7 +415,7 @@ editor](#tools) and get started :-)
 
 ## Changes
 
-### Mixxx 1.12.0
+### Mixxx 2.00.0
 
 ``` 
  * Allow each child of a [[creating_skins#widgetstack|<WidgetStack>]] to specify which page is show on hide. See [[https://github.com/mixxxdj/mixxx/pull/576|pull#576]]
@@ -442,7 +442,7 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
 
 ``` 
  * Show cover art in background of [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] vinyl widget. See [[https://github.com/mixxxdj/mixxx/pull/391|pull#391]]
- * Added support for variables in svg attributes. See [[https://github.com/mixxxdj/mixxx/pull/302|pull#302]]. 
+ * Added support for variables in svg attributes. See [[https://github.com/mixxxdj/mixxx/pull/302|pull#302]].
  * Added ''<StarRating>'' widget that allows to rate a track currently loaded in a deck. See [[https://github.com/mixxxdj/mixxx/pull/380|pull#380]].
  * Added ''<SignalRGBLowColor>'', ''<SignalRGBMidColor>'', ''<SignalRGBHighColor>'' to [[creating_skins#waveforms|<Waveforms>]]. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''. See [[https://github.com/mixxxdj/mixxx/pull/363|pull#363]]
  * Added [[creating_skins#sizeawarestack|<SizeAwareStack>]] widget that allows to allows resize to available screen space at runtime. See [[https://github.com/mixxxdj/mixxx/pull/358|pull#358]]
@@ -488,7 +488,7 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
                     <Not/>
             </Transform>
             <BindProperty>visible</BindProperty>
-    </Connection>` 
+    </Connection>`
 
 <!-- end list -->
 
@@ -512,33 +512,33 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
  * New syntax for requesting a control to persist in ''mixxx.cfg'': ''<ConfigKey persist="true"></ConfigKey>''.
  * Added support for specifying style in a separate file: ''<Style src="skin:style.qss"/>''
  * ''<EmitOnDownPress>'' is calculated from the connected control and can be omitted.
- * ''<EmitOnPressAndRelease>'' is calculated from the connected control and can be omitted. 
- * ''<ConnectValueToWidget>'' is calculated from the connected control and can be omitted. 
+ * ''<EmitOnPressAndRelease>'' is calculated from the connected control and can be omitted.
+ * ''<ConnectValueToWidget>'' is calculated from the connected control and can be omitted.
  * ''<ConnectValueFromWidget>'' is calculated from the connected control and can be omitted.
  * ''<LeftClickIsPushButton>'' is calculated from the connected control and can be omitted.
  * ''<RightClickIsPushButton>'' is calculated from the connected control and can be omitted.
- * Start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml    
+ * Start Mixxx in developer mode: ''Mixxx --developer'' to see extended tooltips for skinner and a menu item and keyboard shortcut to reload changes in skin.xml
  * Added a style-able launchimage inside the <LaunchImageStyle> tag
 ```
 
 ### Mixxx 1.11.0
 
 ``` 
- *  Removed <BeatHighlightColor>, the highlight color when beatgrid was near playback position in the [[creating_skins#waveform|<Waveform>]], see [[https://bugs.launchpad.net/mixxx/+bug/1112396|lp:1112396]] 
+ *  Removed <BeatHighlightColor>, the highlight color when beatgrid was near playback position in the [[creating_skins#waveform|<Waveform>]], see [[https://bugs.launchpad.net/mixxx/+bug/1112396|lp:1112396]]
  * Added //key// [[creating_skins#trackproperty|TrackProperty]]. This displays the musical key but does not change if the speed/pitch change during playback, see [[https://bugs.launchpad.net/mixxx/+bug/1159141|lp:1159141]]
  * Added <BackPath> node that allows resizable background images for [[creating_skins#widgetgroup|WidgetGroup]] which support color schemes, see [[https://bugs.launchpad.net/mixxx/+bug/1095400|lp:1095400]] & [[https://bugs.launchpad.net/mixxx/+bug/1094785|lp:1094785]]
- * Replaced <MarkerColor> with <AxesColor>, the color of the static horizontal line, and <PlayPosColor>, the color of the static vertical line on the [[creating_skins#waveform|<Waveform>]] and the cursor in the [[creating_skins#waveform_overview|<Overview>]], see [[https://bugs.launchpad.net/mixxx/+bug/1099182|lp:1099182]] 
- * [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image center according to their own size. Was aligned top/left before. This allows xwax like effects, see [[https://bugs.launchpad.net/mixxx/+bug/1058605|lp:1058605]] 
+ * Replaced <MarkerColor> with <AxesColor>, the color of the static horizontal line, and <PlayPosColor>, the color of the static vertical line on the [[creating_skins#waveform|<Waveform>]] and the cursor in the [[creating_skins#waveform_overview|<Overview>]], see [[https://bugs.launchpad.net/mixxx/+bug/1099182|lp:1099182]]
+ * [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image center according to their own size. Was aligned top/left before. This allows xwax like effects, see [[https://bugs.launchpad.net/mixxx/+bug/1058605|lp:1058605]]
  * The [[skin_colour_scheme_architecture|color filtering architecture]], which allows to create a different coloured version of a skin, does support image transparency.
  * Added the [[creating_skins#splitter|<Splitter>]]> section, which controls the size of child widgets by dragging the boundary between the children.
- * Added the [[creating_skins#widgetstack|<WidgetStack>]]> section, provides a stack of widgets where only one widget is visible at a time. This could be used to make multiple pages of hotcue buttons so you can flip through the pages. 
- * Added the [[creating_skins#skin_manifest|<Skin Manifest>]]> section, which tells Mixxx details about the skin and currently allows to specify changes to Mixxx controls that should be executed when the skin is loaded.   
- * Replaced <Tooltips> with <TooltipId> key. This avoids the need to write individual tooltip text per node, allows tooltips translation, makes skins more coherent and maintenance easier. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp// 
+ * Added the [[creating_skins#widgetstack|<WidgetStack>]]> section, provides a stack of widgets where only one widget is visible at a time. This could be used to make multiple pages of hotcue buttons so you can flip through the pages.
+ * Added the [[creating_skins#skin_manifest|<Skin Manifest>]]> section, which tells Mixxx details about the skin and currently allows to specify changes to Mixxx controls that should be executed when the skin is loaded.
+ * Replaced <Tooltips> with <TooltipId> key. This avoids the need to write individual tooltip text per node, allows tooltips translation, makes skins more coherent and maintenance easier. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp//
  * Added <AxesColor> to define the color for horizontal/vertical line in in the waveform, see [[creating_skins#waveform|<Visual>]]
  * Added [[creating_skins#recording|<Recording>]] control that allows toggle of recording
- * Added <EndOfTrackColor> in waveform & waveform overview that allow to define the color of the overlay that will be displayed as notification within the last seconds of a track, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] 
+ * Added <EndOfTrackColor> in waveform & waveform overview that allow to define the color of the overlay that will be displayed as notification within the last seconds of a track, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]]
  * Added <Align> to the waveforms options that allows to display only those portions of the waveform which would have been above or below the center. By default, the waveform display is centered about a line and portions will extend both above and below the center, see [[creating_skins#waveform|<Visual>]]
- * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] 
+ * Added <SignalLowColor>,<SignalMidColor>,<SignalHighColor> that allow to define different colors for low/mid/high frequencies in waveform & waveform overview. If skin do not provide low/mid/high signal colors it falls back to the color defined in <SignalColors>, see [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]]
  * Removed <HfcColor>, the horizontal line`s color in the waveform, see [[creating_skins#waveform|<Visual>]]
  * Removed <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#waveform_overview|<Overview>]]. Track analysis progress will be still visible in waveform overview.
  * Added the <manifest> skin section that allows you to specify the skin title, author, description, etc. and set Mixxx controls on skin load.
@@ -549,7 +549,7 @@ scalemode="TILE"\>foo.png\</BackPath\>\</code\>
 ``` 
  * Added [[creating_skins#spinning_vinyl_image_spinny|<Spinny>]] image which displays a visual guidance for relative track positioning while mixing
  * Added <Time> widget which displays the current time, see [[creating_skins?&#clock|<Clock>]]
- * Removed rate <Connection> groups from all <NumberRate> controls, now the text does immediately update if rate range or direction changes, see [[creating_skins#pitch_rate_display|<Pitch rate display>]] 
+ * Removed rate <Connection> groups from all <NumberRate> controls, now the text does immediately update if rate range or direction changes, see [[creating_skins#pitch_rate_display|<Pitch rate display>]]
  * Added <ProgressColor> & <ProgressAlpha > option to change the color for track analysis progress visualisation in waveform overview, see [[creating_skins#sectionvisual|<Visual>]]
  * Added <BgPixmap> option to the [[creating_skins#sectionvisual|<Visual>]] group. This allows custom background images for waveform and waveform overview. Image transparency is possible for the waveform overview. Remove the BgColor to make it work. If you supply a BgColor it means "paint the background of the overview to this color" so it prevents transparency.
  * Removed default gradient background from waveform display
@@ -673,13 +673,13 @@ since the first version of Mixxx and has a bunch of hacks added to it.
 
 `<Size>` is formatted as the horizontal size and the vertical size
 separated by a comma. You can also specify a size policy using the size
-tag alone. As of Mixxx 1.12.0 there is a dedicated `<SizePolicy>` tag
+tag alone. As of Mixxx 2.00.0 there is a dedicated `<SizePolicy>` tag
 for this. Simply append the SizePolicy skin abbreviation (see the table
 in the `<SizePolicy>` section below) at the end of each dimension's
 value.
 
-| Examples:                                                                             |                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Examples:                                                                             |                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Size>100,50</Size>
 <Size>100me,50p</Size>
 <Size>100me,50</Size>
@@ -687,12 +687,12 @@ value.
 ` | `100 pixels wide and 50 pixels tall.
 100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding and the vertical policy is Preferred.
 100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding.
-The horizontal size policy is MinimumExpanding and the vertical size policy is Expanding. No explicit size is set. 
+The horizontal size policy is MinimumExpanding and the vertical size policy is Expanding. No explicit size is set.
 ` |
 
 #### \<MinimumSize\>
 
-**New in Mixxx 1.12.0**
+**New in Mixxx 2.00.0**
 
 `<MinimumSize>` tags tell Mixxx the smallest size a widget should be.
 The widget will never be resized to be smaller than this size.
@@ -713,7 +713,7 @@ no minimum width, minimum height 300
 
 #### \<MaximumSize\>
 
-**New in Mixxx 1.12.0**
+**New in Mixxx 2.00.0**
 
 `<MaximumSize>` tags tell Mixxx the largest size a widget should be. The
 widget will never be resized to be larger than this size.
@@ -734,7 +734,7 @@ no maximum width, maximum height 300
 
 #### \<SizePolicy\>
 
-**New in Mixxx 1.12.0**
+**New in Mixxx 2.00.0**
 
 `<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
 on the available space. Size policy refers to the Qt
@@ -773,13 +773,13 @@ highly recommended that you include a style.qss in your skin.xml file
 instead of styling individual skin elements. This makes it easier to
 make style changes later.
 
-| Examples:                                                                                                                                                  |                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Examples:                                                                                                                                               |                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Style>
-  QGroupBox { 
+  QGroupBox {
     border: 0px solid green;
-    margin: -0px 0px 0px 0px; 
-    background: url(skin:/style/style_bg_sampler.png); 
+    margin: -0px 0px 0px 0px;
+    background: url(skin:/style/style_bg_sampler.png);
   }
 </Style>
 ` | `Open <Style> tag
@@ -896,8 +896,8 @@ end background tag
 
 ### Library display
 
-|                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<TableView>
     <Style></Style>
     <Pos>X,Y</Pos>
@@ -914,7 +914,7 @@ Defines the element position
 Defines the element size
 Background color library widget (i.e. background color search widget)
 Foreground color library widget (i.e. text in "Analyze" widget)
-Background color even line right library pane 
+Background color even line right library pane
 Background color uneven lines right library pane
 end TableView tag
 ` |
@@ -944,8 +944,8 @@ reference.
 
 ### Waveform
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Visual>
     <TooltipId>waveform_display</TooltipId>
     <Channel>X</Channel>
@@ -961,7 +961,7 @@ reference.
         <SignalRGBLowColor>#</SignalRGBLowColor>
         <SignalRGBMidColor>#</SignalRGBMidColor>
         <SignalRGBHighColor>#</SignalRGBHighColor>
-    <BeatColor>#</BeatColor>        
+    <BeatColor>#</BeatColor>
         <EndOfTrackColor>#</EndOfTrackColor>
         <AxesColor>#</AxesColor>
         <PlayPosColor>#</PlayPosColor>
@@ -972,34 +972,34 @@ reference.
 <Visual>
 
 ` | ``begin Visual tag
-Tooltip to be displayed on mouseover, depends on selected ID`s. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp//  
+Tooltip to be displayed on mouseover, depends on selected ID`s. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp//
 Which channel the settings are connected to (X=1 or 2)
 Defines the element position
 Defines the element size
 Color of waveform background  (until Mixxx 1.10. a default gradient was added , not for #000000)
 New in Mixxx 1.10: Loads a background image and will tile it when smaller than the waveform widget
 New in Mixxx 1.11: Show full waveform centered (default) or only bottom/top half ( X = "bottom" or "top" )
-Color of waveform  
+Color of waveform
 New in Mixxx 1.11: Colors of low frequencies in waveform. If no low/mid/high colors are provided, fallback to <SignalColor>
 New in Mixxx 1.11: Colors of mid frequencies in waveform
 New in Mixxx 1.11: Colors of high frequencies in waveform
-New in Mixxx 1.12: Colors of low frequencies in RGB waveform. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''
-New in Mixxx 1.12: Colors of mid frequencies in RGB waveform.
-New in Mixxx 1.12: Colors of high frequencies in RGB waveform
-Color of beatgrid (multiple vertical lines) 
-New in Mixxx 1.11: Color of notification overlay displayed within the last seconds of a track 
+New in Mixxx 2.00: Colors of low frequencies in RGB waveform. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''
+New in Mixxx 2.00: Colors of mid frequencies in RGB waveform.
+New in Mixxx 2.00: Colors of high frequencies in RGB waveform
+Color of beatgrid (multiple vertical lines)
+New in Mixxx 1.11: Color of notification overlay displayed within the last seconds of a track
 New in Mixxx 1.11: Color of static horizontal line
 New in Mixxx 1.11: Color of static vertical line
-Deprecated in Mixxx 1.11: Highlight color when beatgrid is near playback position 
+Deprecated in Mixxx 1.11: Highlight color when beatgrid is near playback position
 Deprecated in Mixxx 1.11: Color of horizontal line
 Deprecated in Mixxx 1.11: Color center marker (single vertical line)
-Deprecated in Mixxx 1.11: Color of Cuepoint marker 
+Deprecated in Mixxx 1.11: Color of Cuepoint marker
 end Visual tag
 
 `` |
 
-|                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Mark>
         <Control>cue_point</Control>
         <Pixmap>custom_marker.png</Pixmap>
@@ -1010,17 +1010,17 @@ end Visual tag
 </Mark>
 
 ` | `begin Mark tag
-Defines the Cuepoint, max. one cuepoint per channel 
+Defines the Cuepoint, max. one cuepoint per channel
 Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
 Text visible when Cuepoint is set (and no custom marker is defined)
-Defines where text is positioned (Y="top" or "center" or "bottom") 
-Defines text background color 
+Defines where text is positioned (Y="top" or "center" or "bottom")
+Defines text background color
 Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `
 <Mark>
         <Control>hotcue_X_position</Control>
@@ -1032,22 +1032,22 @@ end Mark tag
 </Mark>
 
 ` | `begin Mark tag
-max. 36 Hotcues(X=1-36), define every Hotcue for its own 
+max. 36 Hotcues(X=1-36), define every Hotcue for its own
 Optional: uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
 Text visible when Hotcue point is set (and no custom marker is defined)
-Defines where text is positioned (Y="top" or "center" or "bottom") 
-Defines text background color 
+Defines where text is positioned (Y="top" or "center" or "bottom")
+Defines text background color
 Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                      |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `
 <Mark>
         <Control>loop_start_position</Control>
         <Pixmap>custom_marker.png</Pixmap>
-        <Text>LOOP IN</Text>    
+        <Text>LOOP IN</Text>
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
@@ -1085,14 +1085,14 @@ Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `
 <MarkRange>
         <StartControl>loop_start_position</StartControl>
         <EndControl>loop_end_position</EndControl>
         <EnabledControl>loop_enabled</EnabledControl>
-    <Color>#</Color>    
+    <Color>#</Color>
     <DisabledColor>#</DisabledColor>
 </MarkRange>
 
@@ -1107,8 +1107,8 @@ end MarkRange tag
 
 ### Waveform overview
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Overview>
     <TooltipId>waveform_overview</TooltipId>
     <Channel>X</Channel>
@@ -1150,7 +1150,7 @@ Deprecated in Mixxx 1.11 (was new in v1.10): Color of track analysis progress vi
 Deprecated in Mixxx 1.11 (was new in v1.10): Alpha of track analysis progress visualization, default alpha is 80 out of 255
 
 Must be same value as under <Channel> above, (X = 1 or 2)
-Defines if action is performed on click on element ( true or false); Can be omitted in Mixxx >= 1.12 
+Defines if action is performed on click on element ( true or false); Can be omitted in Mixxx >= 2.00
 
 end Overview tag
 ` |
@@ -1177,11 +1177,11 @@ Optionally, defines the appearance of the Spinny widget
 Which channel the settings are connected to (X=1, 2, or more, depending on the # of decks in the skin)
 Defines the element position
 Defines the element size
-Background image (from the skin's folder, shows as bottom layer). Sets the spinny's overall size, unless scalemode="STRETCH" is set (New in Mixxx 1.12).
-New in Mixxx 1.12: Mask image (from the skin's folder, shows above the cover layer but below the foreground image.  This is often used to overlay a circular outline on top of the cover art so it appears like a round record label.
+Background image (from the skin's folder, shows as bottom layer). Sets the spinny's overall size, unless scalemode="STRETCH" is set (New in Mixxx 2.00).
+New in Mixxx 2.00: Mask image (from the skin's folder, shows above the cover layer but below the foreground image.  This is often used to overlay a circular outline on top of the cover art so it appears like a round record label.
 Foreground image (from the skin's folder, shows as top layer). New in Mixxx 1.11: Center the images according to their own size
 Ghost Foreground image (from the skin's folder, shows as top layer on right-click)
-New in Mixxx 1.12: Set to true to enable showing of covers in spinny widgets (default false). Spinny background images will only appear if there is no cover art, or if this feature is off.
+New in Mixxx 2.00: Set to true to enable showing of covers in spinny widgets (default false). Spinny background images will only appear if there is no cover art, or if this feature is off.
 End Spinny tag
 ` |
 
@@ -1287,13 +1287,13 @@ Defines the element position
 Defines the element size
 Determines, whether seconds are shown ("true") or not ("false"). Default
 is "false".
-Deprecated as of v1.12. We display the time with a format appropriate to
+Deprecated as of v2.00. We display the time with a format appropriate to
 the chosen locale instead. Has determined, whether the time is shown
 in 24 hour format or 12 hour format.
 "24" and "24hrs" set the format to 24 hour format. "12", "12hrs" and
-"12ap" set the format to 
+"12ap" set the format to
 12 hour format (e.g. 1:45 am). "12AP" sets it to 12 hour format with
-capitalized AM/PM 
+capitalized AM/PM
 (e.g. 1:45 AM). Default is "12AP". <ShowSeconds> determines, whether
 seconds are shown or not. Default was false.
 You could set a custom format with <CustomFormat> instead of
@@ -1308,8 +1308,8 @@ You can replace the whole \<Text\> node with
 [TrackProperty](/creating_skins#trackproperty)\`s to display more
 advanced track informations.
 
-|                                                                                                                                                                                       |  |                                                                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                       |  |                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Text>
     <TooltipId>text</TooltipId>
     <Channel>X</Channel>
@@ -1322,14 +1322,14 @@ advanced track informations.
 Defines connected Channel (X = 1 or 2)
 
 
-Uses CSS. Example=font: bold 13px/15px Lucida Grande, Lucida Sans Unicode, 
-Arial, Verdana, sans-serif; background-color: transparent; color: #0099FF; 
+Uses CSS. Example=font: bold 13px/15px Lucida Grande, Lucida Sans Unicode,
+Arial, Verdana, sans-serif; background-color: transparent; color: #0099FF;
 text-align: left; padding-left: 1%;
 ` |
 
 ### BPM number display
 
-Changed in Mixxx 1.12
+Changed in Mixxx 2.00
 
 Use `visual_bpm` key instead `bpm`
 
@@ -1364,7 +1364,7 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### Effective musical key display
 
-New in Mixxx 1.12  
+New in Mixxx 2.00  
 
 |                                                                                                                                                                                                                                                                                                      |  |                                                                 |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------- |
@@ -1456,10 +1456,10 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### dB display
 
-New in Mixxx 1.12
+New in Mixxx 2.00
 
-|                                                                                                                                                    |  |                                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                    |  |                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------- |
 | `<NumberDb>
     ...
     <Text>Gain %1 dB</Text>
@@ -1470,9 +1470,9 @@ New in Mixxx 1.12
 ` |  | `
 
 
-Optional Text. %1 is replaced by the bB value. 
-If this is missing the value is displayed 
-like "-39 dB" 
+Optional Text. %1 is replaced by the bB value.
+If this is missing the value is displayed
+like "-39 dB"
 
 
 
@@ -1503,7 +1503,7 @@ Slider background image the <Handle> moves up and down on
 Orientation (false or true, means vertical or horizontal)
 
 Defines connected Channel (X = 1 or 2 )
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
 
 
@@ -1532,7 +1532,7 @@ Slider background image the <Handle> moves left and right on
 Orientation (false or true, means vertical or horizontal)
 
 Use always default value
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
 
 
@@ -1561,7 +1561,7 @@ Slider background image the <Handle> moves up and down on
 Orientation (false or true, means vertical or horizontal)
 
 Defines connected Channel (X = 1 .. 4 )
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
 
 
@@ -1589,8 +1589,8 @@ be triggered when that particular mouse button (left or right) is down.
 
 ### Recording
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>???</TooltipId>
     <Style>...</Style>
@@ -1630,8 +1630,8 @@ be triggered when that particular mouse button (left or right) is down.
 ` | `New in Mixxx 1.11
 
 Button that allows toggle of recording and notifies "[Recording],status" of status changes.
-Can be omitted in Mixxx >= 1.12
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
+Can be omitted in Mixxx >= 2.00
 
 
 
@@ -1654,21 +1654,21 @@ Can be omitted in Mixxx >= 1.12
 
 
 
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
-The latest no button connection is the Display connection 
+The latest no button connection is the Display connection
 
-Can be omitted in Mixxx >= 1.12
+Can be omitted in Mixxx >= 2.00
 
 
 ` |
 
 ### Play
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>play_cue_set</TooltipId>
     <NumberStates>2</NumberStates>
@@ -1696,7 +1696,7 @@ Can be omitted in Mixxx >= 1.12
     <Connection>
         <ConfigKey>[ChannelX],play_indicator</ConfigKey>
     </Connection>
-</PushButton> 
+</PushButton>
 ` | `
 
 Left Click: Pause/Play, Right Click: Set cue point
@@ -1712,10 +1712,10 @@ Default image displayed
 Image displayed on mouse-down
 
 
-Left Button connection 
+Left Button connection
 Defines connected Channel (X = 1 .. 4), performed action (play)
 Defines if action is performed on down-click on element (true or false)
-Which mouse button must be clicked so the action is performed 
+Which mouse button must be clicked so the action is performed
 
 Right Button connection
 Defines connected Channel (X = 1 .. 4), performed action (cue_set)
@@ -1725,14 +1725,14 @@ Which mouse button must be clicked so the action is performed
 No button connection = Display connection
 Defines connected Channel (X = 1 .. 4), performed action (cue_set)
 
- 
+
 
 ` |
 
 ### Cue
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>cue_default_cue_gotoandstop</TooltipId>
     <NumberStates>2</NumberStates>
@@ -1760,7 +1760,7 @@ Defines connected Channel (X = 1 .. 4), performed action (cue_set)
     <Connection>
         <ConfigKey>[ChannelX],cue_indicator</ConfigKey>
     </Connection>
-</PushButton> 
+</PushButton>
 ` | `
 
 Go to and play (while playing), Set cue point (while stopped), Go to and stop (right-click)
@@ -1779,12 +1779,12 @@ Go to and play (while playing), Set cue point (while stopped), Go to and stop (r
 
 Defines connected Channel (X = 1 .. 2) , performed action (cue_default)
 Defines if action is performed on down-click on element (true or false)
-Which mouse button must be clicked so the action is performed 
+Which mouse button must be clicked so the action is performed
 Hint: Default cue behavior can be changed in Mixxx preferences
 
 Defines connected Channel (X = 1 .. 2) , performed action (cue_gotoandstop)
 Defines if action is performed on down-click on element (true or false)
-Which mouse button must be clicked so the action is performed 
+Which mouse button must be clicked so the action is performed
 
 
 
@@ -1800,8 +1800,8 @@ shown in this example. See [MIDI Controller Mapping File
 Format](midi_controller_mapping_file_format#ui_midi_controls_and_names)
 for details
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>hotcue</TooltipId>
     <NumberStates>1</NumberStates>
@@ -1829,7 +1829,7 @@ for details
 </PushButton>
 ` | `
 
-Set and play Hotcue (while playing), 
+Set and play Hotcue (while playing),
 play Hotcue (while stopped), delete Hotcue (right-click)
 
 
@@ -1838,12 +1838,12 @@ play Hotcue (while stopped), delete Hotcue (right-click)
 
 
 
-Channel (X=1 or 2), Hotcue # (Y=1-36) & performed action (activate), 
+Channel (X=1 or 2), Hotcue # (Y=1-36) & performed action (activate),
 depends on  # of Hotcues defined , see hotcue_X_position
 Action is performed while playing (true) on click on element
 
 
-Action is performed while down pressing the element and playback is stopped (false) 
+Action is performed while down pressing the element and playback is stopped (false)
 Playback from Hotcue X position when the player is stopped (aka Hotcue preview )
 Which mouse button must be clicked so the action is performed
 
@@ -1946,8 +1946,8 @@ Works when playback has stopped too
 
 ` |
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>reloop_exit</TooltipId>
     <NumberStates>1</NumberStates>
@@ -1969,7 +1969,7 @@ Works when playback has stopped too
     </Connection>
  </PushButton>
 ` | `
-Click on button activate the "Looping" feature. 
+Click on button activate the "Looping" feature.
 The playback jumps to "Loop-In" point and loop from there until "Loop-Out" point.
 Click on button while "Looping" is activated will de-activate the Looping and ignore "Loop-Out" point.
 
@@ -2173,8 +2173,8 @@ performed action (Y= rate_temp_up_small or rate_temp_down_small)
 
 ### Pitch bend (Nudge)
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>???</TooltipId>
     <NumberStates>1</NumberStates>
@@ -2205,7 +2205,7 @@ performed action (Y= rate_temp_up_small or rate_temp_down_small)
     <ButtonState>RightButton</ButtonState>
     </Connection>
 </PushButton>
-` | `Left Click: Temporary increase (decrease) pitch, 
+` | `Left Click: Temporary increase (decrease) pitch,
 Right Click: Temporary increase (decrease) pitch in small step
 
 
@@ -2215,7 +2215,7 @@ Right Click: Temporary increase (decrease) pitch in small step
 
 
 
-Defines connected Channel (X = 1 or 2) , 
+Defines connected Channel (X = 1 or 2) ,
 performed action (Y= rate_temp_up or rate_temp_down)
 
 
@@ -2225,7 +2225,7 @@ performed action (Y= rate_temp_up or rate_temp_down)
 
 
 
-Defines connected Channel (X = 1 or 2) , 
+Defines connected Channel (X = 1 or 2) ,
 performed action (Y= rate_temp_up_small or rate_temp_down_small)
 
 
@@ -2281,8 +2281,8 @@ Defines connected Channel (X = 1 or 2) , performed action (beatsync)
 
 ### BPM tap
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>???</TooltipId>
     <Style>...</Style>
@@ -2304,7 +2304,7 @@ Defines connected Channel (X = 1 or 2) , performed action (beatsync)
 </PushButton>
 ` | `
 
-Takes the progressive average of the last 4 taps 
+Takes the progressive average of the last 4 taps
 and sets the bpm of the deck to that value
 
 
@@ -2518,8 +2518,8 @@ Defines connected Channel (X = 1 .. 4) , performed action (flanger)
 
 ### Frequency Kill
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
     <TooltipId>???</TooltipId>
     <NumberStates>2</NumberStates>
@@ -2556,7 +2556,7 @@ Button visible when active
 
 
 
-Defines connected Channel (X = 1 .. 4), 
+Defines connected Channel (X = 1 .. 4),
 performed action (Y= filterHighKill or filterMidKill or filterLowKill)
 
 
@@ -2567,8 +2567,8 @@ performed action (Y= filterHighKill or filterMidKill or filterLowKill)
 
 ### Master volume & balance
 
-|                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Knob>
     <TooltipId>???</TooltipId>
     <NumberStates>X</NumberStates>
@@ -2580,9 +2580,9 @@ performed action (Y= filterHighKill or filterMidKill or filterLowKill)
 </Knob>` | `
 
 ???= master_volume or balance
-You need X single knobs where #(X/2)+1 is the 0-state. 
-Example: X=41 states (270 degree rotation / 40 knobs + the 0-state) . 
-You need 20 knobs rotate from -135 degree to 0 degree, one knob 0 degree (default knob visible) ,  
+You need X single knobs where #(X/2)+1 is the 0-state.
+Example: X=41 states (270 degree rotation / 40 knobs + the 0-state) .
+You need 20 knobs rotate from -135 degree to 0 degree, one knob 0 degree (default knob visible) ,
 20 knobs rotate from -135 degree to 0 degree
 Defines connected Channel (Master) , performed action (Y=volume or balance)
 
@@ -2641,8 +2641,8 @@ Defines connected Channel (Master), performed action (Y=headVolume or headMix)
 
 ### Channel filter and gain
 
-|                                                                                                                                                                                                                     |                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                     |                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<Knob>
     <TooltipId>???</TooltipId>
     <NumberStates>X</NumberStates>
@@ -2659,7 +2659,7 @@ Defines connected Channel (Master), performed action (Y=headVolume or headMix)
 
 
 
-Defines connected Channel (X = 1 or 2), 
+Defines connected Channel (X = 1 or 2),
 performed action (Y= pregain or filterHigh or filterMid or filterLow)
 
 
@@ -2700,7 +2700,7 @@ bpm, bpmFormatted, duration, durationFormatted, key (new in Mixxx 1.11)
 bpm will be the full precision number (i.e. 1.333333333) while
 bpmFormatted is to 3 decimal places (1.333),
 duration is the duration in seconds, while durationFormatted is the
-duration in hh:mm:ss.xx format. 
+duration in hh:mm:ss.xx format.
 `|
 
 ### WidgetGroup
@@ -2759,7 +2759,7 @@ be at 20,0 relative to its parent or 120,200.
 You can use a `<Layout>` tag in a `WidgetGroup` to have the widget group
 automatically layout its children according to their size policies and
 minimum/maximum widths (see `<SizePolicy>` info above). As of Mixxx
-1.12.0 the valid layout types are "horizontal" and "vertical". These
+2.00.0 the valid layout types are "horizontal" and "vertical". These
 correspond to putting all the child widgets in a
 [QHBoxLayout](http://qt-project.org/doc/qt-4.8/qhboxlayout.html) and
 [QVBoxLayout](http://qt-project.org/doc/qt-4.8/qvboxlayout.html),
@@ -2810,7 +2810,7 @@ New in Mixxx 1.11.0
 This allows you to create a QSplitter dynamically and to control the
 size of child widgets by dragging the boundary between the children.
 
-New in Mixxx 1.12
+New in Mixxx 2.00
 
 Remember splitter layout
 
@@ -2858,8 +2858,8 @@ provide a size for the splitter this is the default policy.
 
 New in Mixxx 1.11.0
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<WidgetStack>
   <NextControl>[Channel1],hotcuepage_next</NextControl>
   <PrevControl>[Channel1],hotcuepage_prev</PrevControl>
@@ -2876,7 +2876,7 @@ Optional: Control that switches to the next widget in the stack. (will be create
 Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist)
 
 A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
-A WidgetGroup that is shown when the 'trigger' control is set to 2. (will be created if doesn't exist) 
+A WidgetGroup that is shown when the 'trigger' control is set to 2. (will be created if doesn't exist)
 A WidgetGroup that is shown when the 'trigger' control is set to 3. (will be created if doesn't exist)
 
 
@@ -2897,16 +2897,16 @@ occupy a certain space.
 
 Some examples:
 
-  - Multiple pages of hotcue buttons. 
+  - Multiple pages of hotcue buttons.
   - A collapsed/expanded view of a deck: two children in a
     `WidgetStack`, one with the full deck widgets and one with the
     collapsed deck widgets. A single `<NextControl>` and a
     `<PushButton>` attached to that control allows the user to toggle
-    between the collapsed and expanded view of the deck. 
+    between the collapsed and expanded view of the deck.
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
-New in Mixxx 1.12.0
+New in Mixxx 2.00.0
 
 If you need the stacks to remember which index they were closed with so
 they can start back up in the right state, do it like this:
@@ -2915,7 +2915,7 @@ they can start back up in the right state, do it like this:
 
 The "currentpage" CO doesn't need to be defined anywhere else.
 
-New in Mixxx 1.12.0
+New in Mixxx 2.00.0
 
 You can define which page to select if a group gets a hide signal.
 `on_hide_select` adds a page to the stack. If this page is hidden, the
@@ -2948,7 +2948,7 @@ When any page is hidden, go back to the first page.
 
 ### SizeAwareStack
 
-New in Mixxx 1.12.0
+New in Mixxx 2.00.0
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3001,7 +3001,7 @@ by size, smallest first.
 
 ### Singleton widgets
 
-New in Mixxx 1.12.0
+New in Mixxx 2.00.0
 
 Defines widgets that should only be instantiated once but may appear in
 multiple places in a skin definition. This is useful for complex widgets
@@ -3052,7 +3052,7 @@ same time, behavior is undefined and could be crashy.
 
 ### Launch Image
 
-New in Mixxx 1.12.0
+New in Mixxx 2.00.0
 
 Mixxx features a default launch image that is shown during Mixxx
 launching. It features a centred lable with a progressbar below.
@@ -3114,7 +3114,7 @@ scheme applied)~~
   - [Skin Colour Scheme
     Architecture](Skin%20Colour%20Scheme%20Architecture) - Explains how
     color schemes work in Mixxx 1.6.0+
-  - [Mixxx Skinning Guidelines](Skin%20Guidelines) 
+  - [Mixxx Skinning Guidelines](Skin%20Guidelines)
   - [Skin Color Schemes Tips and
     Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool) - A "walkthrough"
     on creating schemes, includes a link to an online Javascript tool

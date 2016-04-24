@@ -10,6 +10,14 @@ Mixxx is back in Google Summer of Code for 2016\!
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
+The following projects were accepted for Google Summer of Code 2016:
+
+  - [Key mapping GUI](Key%20mapping%20GUI) by Jordi Ortolá Ankum
+  - [Library Layout Redesign](Library%20Layout%20Redesign) by Joan Marcè
+    Igual
+  - [MIDI Sequence Recording](MIDI%20Sequence%20Recording) and Playback
+    by Anirudh Mani
+
 ### 2015
 
 Mixxx applied as a mentor organization for [Google Summer of

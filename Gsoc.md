@@ -15,8 +15,9 @@ The following projects were accepted for Google Summer of Code 2016:
   - [Key mapping GUI](Key%20mapping%20GUI) by Jordi Ortolá Ankum
   - [Library Layout Redesign](Library%20Layout%20Redesign) by Joan Marcè
     Igual
-  - [MIDI Sequence Recording](MIDI%20Sequence%20Recording) and Playback
-    by Anirudh Mani
+  - [MIDI Sequence Recording and
+    Playback](MIDI%20Sequence%20Recording%20and%20Playback) by Anirudh
+    Mani
 
 ### 2015
 

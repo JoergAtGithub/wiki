@@ -74,6 +74,7 @@ controller.
     hotcue.
   - **Shift + sync**: toggle quantize
   - **Shift + cue**: toggle keylock
+  - **Shift + play**: go to beginning of track and stop
   - **Shift + load**: ejects a track from the deck
   - **EQ knobs, volume faders, crossfader, headphone button, play, cue,
     sync, and load** all behave as labeled.

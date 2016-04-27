@@ -462,7 +462,7 @@ smaller percentage), and lower crosstalk (more negative dB value) are
 better. Cheap sound cards tend to not have these specifications
 published.
 
-### Stand-alone USB sound cards
+### USB sound cards
 
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor

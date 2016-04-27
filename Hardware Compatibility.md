@@ -350,7 +350,8 @@ Linux is with JACK (not ALSA). The FFADO project has [a list of Firewire
 interfaces compatible with
 Linux](http://ffado.org/?q=devicesupport/list).
 
-Thunderbolt sound cards are generally only compattible with Mac OS X.
+Thunderbolt sound cards can operate at lower latencies than USB or
+Firewire sound cards, but are generally only compatible with Mac OS X.
 
 ### Sound card considerations
 

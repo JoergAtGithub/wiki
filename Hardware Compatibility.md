@@ -116,9 +116,8 @@ Click the name of the controller for more information.
 
 \<sortable 2=numeric\>
 
-|                                                                            |                   |                                               |                       |                 |                               |
-| -------------------------------------------------------------------------- | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                                                     | Price (USD) \[1\] | Description                                   | Integrated Sound Card | Signal protocol | Supported since Mixxx version |
+| -------------------------------------------------------------------------- | ----------------- | --------------------------------------------- | --------------------- | --------------- | ----------------------------- |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                           | $250              | miscellaneous                                 | no                    | MIDI            | 1.11                          |
 | [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)             | $300              | 2 deck all-in-one                             | yes                   | MIDI            | 1.11                          |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)                     | $300              | 4 deck mixer + pads                           | yes                   | MIDI            | 1.11                          |

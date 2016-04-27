@@ -505,7 +505,8 @@ Numark DJ iO 2 though.
 
 ### Mixers with sound cards
 
-\<sortable 2=numeric\>
+Many of these mixers also send MIDI signals to the computer over USB,
+which could be mapped to control Mixxx. \<sortable 2=numeric\>
 
 |                                                                                     |                    |       |               |
 | ----------------------------------------------------------------------------------- | ------------------ | ----- | ------------- |

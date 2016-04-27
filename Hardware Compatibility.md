@@ -229,9 +229,8 @@ to Mixxx anyway.
 
 \<sortable 2=numeric\>
 
-|                                        |             |                         |                       |                 |                               |
-| -------------------------------------- | ----------- | ----------------------- | --------------------- | --------------- | ----------------------------- |
 | Device                                 | Price (USD) | Description             | Integrated sound card | Signal protocol | Supported since Mixxx version |
+| -------------------------------------- | ----------- | ----------------------- | --------------------- | --------------- | ----------------------------- |
 | [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                    | HID             | 1.11                          |
 | [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                    | HID             | 1.11                          |
 

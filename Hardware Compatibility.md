@@ -251,7 +251,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200                   | 4 deck \[23\] all-in-one        | yes                   | MIDI            |
 | [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | basic 2 deck                    | no                    | MIDI            |
 | [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500 (discontinued?) | 4 deck \[24\] all-in-one        | yes                   | MIDI            |
-| [Hercules P32 DJ](Hercules%20P32%20DJ)                       | $250                   | 4 deck \[25\] mixer + pad grids | yes                   | MIDI            |
+| [Hercules P32 DJ](Hercules%20P32%20DJ)                       | $300                   | 4 deck \[25\] mixer + pad grids | yes                   | MIDI            |
 
 \</sortable\>
 

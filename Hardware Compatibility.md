@@ -552,8 +552,9 @@ which could be mapped to control Mixxx. \<sortable 2=numeric\>
 
 ### Controllers with sound cards
 
-These are USB devices that send MIDI or HID signals to control Mixxx and
-have a built-in sound card. \<sortable 2=numeric\>
+These are USB devices that send MIDI or HID signals to [control
+Mixxx](#controllers) and also have a built-in sound card. \<sortable
+2=numeric\>
 
 | Device                                                               | Price (USD) \[46\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |

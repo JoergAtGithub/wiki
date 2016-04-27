@@ -49,24 +49,54 @@ mostly works as labeled on the controller, but some functionality is
 different and there is additional functionality not labeled on the
 controller.
 
+### Encoders
+
+The encoders do not behave exactly as labeled.
+
   - **Browse encoder**: scrolls through library. Pushing toggles big
     library view. Turning with shift controls the cue/main mix going to
     the headphone output. Pushing with shift toggles split cue mode
     (left ear of headphone output plays cue signal, right ear plays main
     signal).
-  - **Record button**: toggles recording on and off. With shift, toggles
-    between decks 1 & 3 on the left and decks 2 & 4 on the right.
-  - **Slip button**: not mapped yet
   - **Loop/Tempo encoder**: turning left halves loop size; turning right
     doubles loop size. Pushing (de)activates a loop. For loops 1 beat or
     less, the loop only stays active while the encoder is pushed down.
     Turning while holding shift moves the loop. If the loop is 1 beat or
     larger, it moves the loop by 1 beat; if the loop is smaller than 1
     beat, it moves the loop by the size of the loop.
-  - **Filter/Move encoder**: turning controls the filter. Turning with
-    shift adjusts the pitch, or with keylock on, just the tempo. Pushing
-    while holding shift resets the pitch to the track's default.
-  - **Effects knobs and buttons**: not mapped yet
+  - **Filter/Move encoder**: jump forward/backward by beats. Push and
+    turn to select a different number of beats to jump by as shown on
+    the LED display on the controller. When the encoder is released, the
+    LED display goes back to showing the loop size. Turning with shift
+    adjusts the pitch, or with keylock on, just the tempo. Pushing while
+    holding shift resets the pitch to the track's default.
+
+### Effects
+
+The effects controls on the left control Effect Unit 1, the controls on
+the right control Effect Unit 2. This does not change when decks are
+toggled.
+
+Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4. Press
+Shift + Headphone button to activate the effect unit on the headphone
+output.
+
+Turn the FX AMOUNT knobs to adjust effect parameters. Press shift and
+one of the ON/MACRO buttons to select which effect effect in the Effect
+Unit that the parameter knobs control.
+
+Turn the Dry/Wet knob to control the mix of the effect sounds with the
+source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
+Unit.
+
+Be warned that soft takeover does not work for the effects knobs due to
+[a bug in Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008).
+
+### Other controls
+
+  - **Record button**: toggles recording on and off. With shift, toggles
+    between decks 1 & 3 on the left and decks 2 & 4 on the right.
+  - **Slip button**: not mapped yet
   - **Pad grid**: Only the Hotcue layer is mapped yet. Press the Hotcue
     button to activate this layer if the Hotcue button is not lit.
     Pressing an unlit pad in the grid sets a hotcue. Pressing a lit pad

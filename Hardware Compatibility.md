@@ -379,12 +379,12 @@ power. A low sound card output can be worked around by running it
 through a mixer and applying gain or a stand-alone headphone amplifier
 if the headphone output is too quiet.
 
-[Some DJ mixers](#Mixers-with-sound-cards) also include USB sound cards.
-These can be used to send Mixxx's unmixed Deck 1-4 outputs to the
-external mixer. This is more convenient and generally results in higher
-quality sound than having a separate device plugged into a mixer. Most
-DJ mixers have phono preamplifiers, allowing turntables to be plugged
-into them for timecode vinyl control (DVS).
+[Some DJ mixers](#Mixers-with-sound-cards) also include built-in USB
+sound cards. These can be used to send Mixxx's unmixed Deck 1-4 outputs
+to the external mixer. This is more convenient and generally results in
+higher quality sound than having a separate device plugged into a mixer.
+Most DJ mixers have phono preamplifiers, allowing turntables to be
+plugged into them for timecode vinyl control (DVS).
 
 #### Vinyl control, microphones, and preamplifiers
 

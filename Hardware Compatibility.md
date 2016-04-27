@@ -64,7 +64,7 @@ Unlike some proprietary DJ programs, Mixxx works with any sound card
 that your operating system has a driver to use—including for timecode
 vinyl (DVS) use.
 
-## Controller mappings
+## Controllers
 
 Mixxx can be made to work with any standards compliant USB MIDI or USB
 HID controller by mapping the controller's signals to manipulate

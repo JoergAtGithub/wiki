@@ -52,7 +52,10 @@ controller.
 ### User configurable options
 
 There are a few user configurable options available for you to
-customize:
+customize. You can change these by opening the Hercules-P32-scripts.js
+file in your [controller mapping file locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
+and editing the lines at the very top of the file.
 
   - **defaultLoopSize**: loop size (in beats) when Mixxx starts
   - **defaultBeatJumpSize**: beat jump size when Mixxx starts

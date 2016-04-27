@@ -527,9 +527,8 @@ into the mixer.
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx. \<sortable 2=numeric\>
 
-|                                                                                                                             |                    |       |               |               |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | ------------- |
 | Device                                                                                                                      | Price (USD) \[36\] | Decks | Phono preamps | Linux         |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | ------------- |
 | [Numark M101USB](http://www.numark.com/product/m101usb)                                                                     | $100               | 2     | 2             | likely \[37\] |
 | [Numark M6USB](http://www.numark.com/product/m6usb)                                                                         | $150               | 4     | 2             | likely \[38\] |
 | [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | likely \[39\] |

@@ -252,9 +252,8 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \<sortable 2=numeric\>
 
-|                                                              |                        |                                 |                       |                 |
-| ------------------------------------------------------------ | ---------------------- | ------------------------------- | --------------------- | --------------- |
 | Device                                                       | Price (USD) \[22\]     | Description                     | Integrated Sound Card | Signal protocol |
+| ------------------------------------------------------------ | ---------------------- | ------------------------------- | --------------------- | --------------- |
 | [Akai AMX](Akai%20AMX)                                       | $250                   | 2 deck mixer                    | yes                   | MIDI            |
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200                   | 4 deck \[23\] all-in-one        | yes                   | MIDI            |
 | [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | basic 2 deck                    | no                    | MIDI            |

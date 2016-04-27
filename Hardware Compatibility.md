@@ -503,19 +503,46 @@ Numark DJ iO 2 though.
 
 \</sortable\>
 
-### Sound cards integrated into controllers
+### Mixers with sound cards
+
+\<sortable 2=numeric\>
+
+|                                                                                     |                    |                 |         |            |                    |       |
+| ----------------------------------------------------------------------------------- | ------------------ | --------------- | ------- | ---------- | ------------------ | ----- |
+| Device                                                                              | Price (USD) \[36\] | Number of decks | Preamps | Bit depths | Sample rates (kHz) | Linux |
+| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)           | $400               | 2               |         |            |                    |       |
+| [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)            | $1000              | 4               |         |            |                    |       |
+| [Allen & Heath Xone DB2](http://www.allen-heath.com/ahproducts/xonedb2/)            | $1500              | 2               |         |            |                    |       |
+| [Allen & Heath Xone DB4](http://www.allen-heath.com/ahproducts/xonedb4/)            | $2000              | 4               |         |            |                    |       |
+| [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS) | $2500              | 4               |         |            |                    |       |
+| [Pioneer DJM-900NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900NXS)   | $2000              | 4               |         |            |                    |       |
+| [Pioneer DJM-900SRT](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900SRT)   | $2300              | 4               |         |            |                    |       |
+| [Pioneer DJM-850](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-850)         | $1500              | 4               |         |            |                    |       |
+| [Pioneer DJM-750](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-750)         | $1000              | 4               |         |            |                    |       |
+| [Pioneer DJM-5000](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-5000)       | $1000              | 4               |         |            |                    |       |
+| [Rane MP2014](http://dj.rane.com/products/mp2014-mixer)                             | $2000              | 4               |         |            |                    |       |
+| [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                             | $2900              | 4               |         |            |                    |       |
+| [Rane TTM57MkII](http://dj.rane.com/products/ttm57mkii)                             | $1750              | 2               |         |            |                    |       |
+| [Rane Sixty-Four](http://dj.rane.com/products/sixty-four)                           | $2200              | 4               |         |            |                    |       |
+| [Rane Sixty-Two](http://dj.rane.com/products/sixty-two)                             | $2000              | 2               |         |            |                    |       |
+| [Numark M6USB](http://www.numark.com/product/m6usb)                                 | $150               | 4               |         |            |                    |       |
+| [Numark M101USB](http://www.numark.com/product/m101usb)                             | $100               | 2               |         |            |                    |       |
+
+\</sortable\>
+
+### Controllers with sound cards
 
 \<sortable 2=numeric\>
 
 |                                                                      |                    |              |                                                            |             |                                                                          |                |            |                    |       |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
-| Device                                                               | Price (USD) \[36\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
+| Device                                                               | Price (USD) \[37\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)   | $125               | 4            | 2 RCA, 2 1/8" stereo                                       | 0           | none                                                                     | none           | 16         | 44.1               | yes   |
 | [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                             | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1, 48, 88.2, 96 | yes   |
 | [American Audio VMS2](American%20Audio%20VMS2)                       | $250               | 4            | 2 XLR, 4 RCA, 1 1/4" headphone                             | 4           | 4 RCA, 1 XLR mic, 1 1/4" mic                                             | 2 phono, 1 mic | 16         | 44.1               | yes   |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[37\]                                                        | 1 mic          | 24         | 44.1               | yes   |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[38\]                                                        | 1 mic          | 24         | 44.1               | ?     |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[38\]                                                        | 1 mic          | 24         | 44.1               | yes   |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[39\]                                                        | 1 mic          | 24         | 44.1               | ?     |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)               | $300               | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                     | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
 | [Numark N4](Numark%20N4)                                             | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
@@ -680,8 +707,20 @@ Numark DJ iO 2 though.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-37. Microphone input is mixed directly with the master output. It is not
-    sent to the computer.
+37. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 38. Microphone input is mixed directly with the master output. It is not
+    sent to the computer.
+
+39. Microphone input is mixed directly with the master output. It is not
     sent to the computer.

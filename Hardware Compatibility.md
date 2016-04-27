@@ -358,13 +358,13 @@ Linux](http://ffado.org/?q=devicesupport/list).
 
 #### Stand-alone sound cards versus sound cards integrated with controllers or mixers
 
-Most DJ [\#controllers](#controllers) that cost more than $200 have a 4
-output sound card built into them. This is more convenient to transport
-and set up than a stand-alone sound card plus a controller because it
-only requires one device with one USB cable. Most of these produce
-better quality sound than a sound card built into a computer. However,
-the highest quality sound cards like the Apogee Duet and RME Babyface
-Pro are stand alone devices not integrated into controllers.
+Most DJ
+[\#controllers](#controllers)-that-cost-more-than-$200-have-a-4-output-sound-card-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[sound
+card](#USB-sound-cards) plus a controller because it only requires one
+device with one USB cable. Most of these produce better quality sound
+than a sound card built into a computer. However, the highest quality
+sound cards like the Apogee Duet and RME Babyface Pro are stand alone
+devices not integrated into controllers.
 
 If a controller with a built in sound card is only powered by a USB
 cable, the sound card may not be able to reach very high output levels

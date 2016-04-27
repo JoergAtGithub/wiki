@@ -13,7 +13,8 @@ Bare minimum equipment for DJing:
 Helpful but not strictly necessary:
 
   - sound card with 4 mono outputs (2 stereo pairs)
-  - [controller](#controllers) and/or turntables with timecode vinyl
+  - [controller](#controllers) and/or [turntables with timecode
+    vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
   - laptop stand
   - surge protector
   - cases for laptop, controller, and headphones

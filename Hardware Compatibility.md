@@ -505,9 +505,9 @@ Numark DJ iO 2 though.
 
 ### Mixers with sound cards
 
-Every device in an audio signal chain adds noise and distortion, so it
-is better to use the sound card built into a mixer than to plug another
-sound card into the mixer.
+Every conversion of an audio signal between digital and analog forms
+adds noise and distortion, so it is better to use the sound card built
+into a digital mixer than to plug another sound card into the mixer.
 
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx. \<sortable 2=numeric\>

@@ -388,10 +388,10 @@ in the sound card, or a stand alone device. Many higher-end all-in-one
 controllers include sound cards with phono preamps.
 
 Turntables, microphones, and contact microphones (like those used on
-electric guitars) all output quiet signals that need to be amplified to
-line level by a preamplifier before a sound card (or most audio
-equipment) can effectively work with them. Additionally, vinyl records
-have the [RIAA equalization
+electric guitars) all output very low voltage signals that need to be
+amplified to line level by a preamplifier before a sound card (or most
+audio equipment) can effectively work with them. Additionally, vinyl
+records have the [RIAA equalization
 curve](https://en.wikipedia.org/wiki/RIAA_equalization) applied to the
 recording, which needs to be undone by a phono preamplifier. If a device
 has a switch between phono, mic, or instrument (contact microphone)

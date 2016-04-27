@@ -492,13 +492,13 @@ Numark DJ iO 2 though.
 | [Focusrite Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)                                                                                                                                                            | $200               | 4                   | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI           | 2                   | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                             | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96             | yes           |
 | [Native Instruments Komplete Audio 6](http://www.native-instruments.com/en/products/komplete/audio-interfaces/komplete-audio-6-migrated/included-software/)                                                                                    | $230               | 4 analog, 2 digital | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI, 1 optical SPDIF | 4 analog, 2 digital | 2 XLR+1/4" balanced, 2 1/4" balanced, 1 5-pin MIDI, 1 optical SPDIF | 2 mic, 2 instrument | 16, 24     | 44.1, 48, 96                   | yes           |
 | [Native Instruments Traktor Scratch A6](http://www.native-instruments.com/en/products/traktor/digital-vinyl/traktor-scratch-a6/)                                                                                                               | $300               | 6                   | 6 RCA, 1 1/4" headphone                                          | 6                   | 6 RCA                                                               | 2 phono             | 16, 24     | 44.1, 48, 88.2, 96             | yes           |
-| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48, 96                   | likely \[33\] |
+| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48, 96                   | yes           |
 | [Audient iD14](http://audient.com/products/id14)                                                                                                                                                                                               | $300               | 4                   | 2 1/4" balanced, 1 1/4" headphone                                | 2                   | 2 1/4" balanced/XLR combo, 1 1/4" TS instrument                     | 2 mic, 1 instrument | 24         | 44.1, 48, 88.2, 96             | yes           |
 | [Native Instruments Traktor Scratch A10](http://www.native-instruments.com/en/products/traktor/digital-vinyl/traktor-scratch-a10/)                                                                                                             | $500               | 10                  | 10 RCA, 1 1/4" headphone                                         | 10                  | 10 RCA, 1 1/4" mic                                                  | 4 phono, 1 mic      | 16, 24     | 44.1, 48, 88.2, 96             | yes           |
 | [Rane SL2](http://dj.rane.com/products/sl2-for-serato-scratch-live)                                                                                                                                                                            | $500               | 4                   | 4 RCA                                                            | 4                   | 4 RCA                                                               | 2 phono             | 24         | 44.1, 48                       | no            |
-| [Apogee Duet 2](http://www.apogeedigital.com/products/duet) \[34\]                                                                                                                                                                             | $600               | 4                   | 2 1/4" balanced (on breakout cable), 1 1/4" headphone            | 2                   | 2 1/4" balanced/XLR combo (on breakout cable)                       | 2 mic, 2 instrument | 24         | 44.1, 96, 192                  | likely \[35\] |
+| [Apogee Duet 2](http://www.apogeedigital.com/products/duet) \[33\]                                                                                                                                                                             | $600               | 4                   | 2 1/4" balanced (on breakout cable), 1 1/4" headphone            | 2                   | 2 1/4" balanced/XLR combo (on breakout cable)                       | 2 mic, 2 instrument | 24         | 44.1, 96, 192                  | likely \[34\] |
 | [Rane SL3](http://dj.rane.com/products/sl3-for-serato-scratch-live)                                                                                                                                                                            | $700               | 6                   | 6 RCA                                                            | 6                   | 6 RCA                                                               | 3 phono             | 24         | 44.1, 48                       | no            |
-| [RME Babyface Pro](http://babyface.rme-audio.de/)                                                                                                                                                                                              | $750               | 4 analog, 8 digital | 2 XLR, 1 1/8" headphone, 1 1/4" headphone, 1 Toslink SPDIF/ADAT  | 4 analog, 8 digital | 2 XLR, 2 1/4" balanced or unbalanced, 1 Toslink SPDIF/ADAT          | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96, 176.4, 192 | yes \[36\]    |
+| [RME Babyface Pro](http://babyface.rme-audio.de/)                                                                                                                                                                                              | $750               | 4 analog, 8 digital | 2 XLR, 1 1/8" headphone, 1 1/4" headphone, 1 Toslink SPDIF/ADAT  | 4 analog, 8 digital | 2 XLR, 2 1/4" balanced or unbalanced, 1 Toslink SPDIF/ADAT          | 2 mic, 2 instrument | 24         | 44.1, 48, 88.2, 96, 176.4, 192 | yes \[35\]    |
 | [Rane SL4](http://dj.rane.com/products/sl4-for-serato-scratch-live)                                                                                                                                                                            | $900               | 8                   | 8 RCA                                                            | 8                   | 8 RCA                                                               | 4 phono             | 24         | 48, 96                         | no            |
 
 \</sortable\>
@@ -509,13 +509,13 @@ Numark DJ iO 2 though.
 
 |                                                                      |                    |              |                                                            |             |                                                                          |                |            |                    |       |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ---------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ---------- | ------------------ | ----- |
-| Device                                                               | Price (USD) \[37\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
+| Device                                                               | Price (USD) \[36\] | Channels out | Output connectors                                          | Channels in | Input connectors                                                         | Preamps        | Bit depths | Sample rates (kHz) | Linux |
 | [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                    | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | 24         | 44.1               | yes   |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)   | $125               | 4            | 2 RCA, 2 1/8" stereo                                       | 0           | none                                                                     | none           | 16         | 44.1               | yes   |
 | [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                             | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | 24         | 44.1, 48, 88.2, 96 | yes   |
 | [American Audio VMS2](American%20Audio%20VMS2)                       | $250               | 4            | 2 XLR, 4 RCA, 1 1/4" headphone                             | 4           | 4 RCA, 1 XLR mic, 1 1/4" mic                                             | 2 phono, 1 mic | 16         | 44.1               | yes   |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[38\]                                                        | 1 mic          | 24         | 44.1               | yes   |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[39\]                                                        | 1 mic          | 24         | 44.1               | ?     |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[37\]                                                        | 1 mic          | 24         | 44.1               | yes   |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                  | 0           | 1 1/4" mic \[38\]                                                        | 1 mic          | 24         | 44.1               | ?     |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)               | $300               | 4            | 2 RCA, 1 1/8" headphone                                    | 0           | none                                                                     | none           | 16         | 48                 | yes   |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                     | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?          | ?                  | ?     |
 | [Numark N4](Numark%20N4)                                             | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone           | 4           | 4 RCA                                                                    | 2 phono        | 16         | 44.1               | ?     |
@@ -659,20 +659,16 @@ Numark DJ iO 2 though.
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-33. This device is USB class compliant, so it should work without any
+33. No ASIO driver for Windows.
+
+34. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-34. No ASIO driver for Windows.
-
-35. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
-
-36. In class compliant mode. Hold Select and Dim buttons when plugging
+35. In class compliant mode. Hold Select and Dim buttons when plugging
     in USB cable to enable class compliant mode.
 
-37. Prices listed on this page are the prevailing prices for unused
+36. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
     Prices may vary in other parts of the world, but the relative prices
@@ -684,8 +680,8 @@ Numark DJ iO 2 though.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-38. Microphone input is mixed directly with the master output. It is not
+37. Microphone input is mixed directly with the master output. It is not
     sent to the computer.
 
-39. Microphone input is mixed directly with the master output. It is not
+38. Microphone input is mixed directly with the master output. It is not
     sent to the computer.

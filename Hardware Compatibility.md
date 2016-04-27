@@ -30,7 +30,7 @@ diagrams and descriptions of setups with different kinds of hardware.
 See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
 resources.
 
-## Hardware compatibility with Mixxx
+## Hardware compatibility
 
 Because Mixxx is [free
 software](http://www.gnu.org/philosophy/free-sw.html) — free as in

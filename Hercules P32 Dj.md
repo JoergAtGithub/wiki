@@ -93,8 +93,8 @@ Shift + Headphone button to activate the effect unit on the headphone
 output.
 
 Turn the FX AMOUNT knobs to adjust effect parameters. Press shift and
-one of the ON/MACRO buttons to select which effect effect in the Effect
-Unit that the parameter knobs control.
+one of the ON/MACRO buttons to select which effect in the Effect Unit
+that the parameter knobs control.
 
 Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect

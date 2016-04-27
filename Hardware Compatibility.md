@@ -521,11 +521,12 @@ Numark DJ iO 2 though.
 
 These are devices that can mix audio from different sources without
 needing a computer. They also have a built-in USB sound card to connect
-directly to a computer without needing a separate sound card. Every
-device in an audio signal chain and each conversion between digital and
-analog signals adds noise and distortion, so it is generally better to
-use the sound card built into a mixer than to plug another sound card
-into the mixer.
+directly to a computer without needing a separate sound card.
+
+Every device in an audio signal chain and each conversion between
+digital and analog signals adds noise and distortion, so it is generally
+better to use the sound card built into a mixer than to plug another
+sound card into the mixer.
 
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx. \<sortable 2=numeric\>

@@ -260,7 +260,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \</sortable\>
 
-### Controllers that do not yet have Mixxx mappings
+### Not mapped controllers
 
 There are too many DJ controllers out there to list. Some of these
 controllers may have mappings (of unverified quality and may be

@@ -69,13 +69,12 @@ vinyl (DVS) use.
 
 Controllers are devices with knobs, buttons, and other components that
 provide hands-on control of computer software such as Mixxx. They do not
-actually mix audio themselves (with a few exceptions). They send signals
-to a computer that tell Mixxx how to manipulate the music. While it is
-possible to use Mixxx with just a keyboard & mouse, controllers make it
-much easier to access Mixxx's features and use typical DJing techniques.
-Many DJ controllers also have a built-in [sound card](#sound-cards)
-providing 4 channels of audio (2 stereo pairs) for separate main and
-headphone outputs.
+actually mix audio themselves; they send signals to a computer that tell
+Mixxx how to manipulate the music. While it is possible to use Mixxx
+with just a keyboard & mouse, controllers make it much easier to access
+Mixxx's features and use typical DJing techniques. Many DJ controllers
+also have a built-in [sound card](#sound-cards) providing 4 channels of
+audio (2 stereo pairs) for separate main and headphone outputs.
 
 Mixxx can be made to work with any standards compliant USB MIDI or USB
 HID controller by mapping the controller's signals to manipulate

@@ -395,8 +395,10 @@ have phono preamplifiers (one for each deck) somewhere between your
 turntable and sound card to boost the turntable's phono level signal to
 line level. Mixxx can amplify phono level signals in software, but it is
 better to do it in hardware. The phono preamp can be in the turntable,
-in the sound card, or a stand alone device. Many higher-end all-in-one
-controllers include sound cards with phono preamps.
+in the sound card, or a stand alone device. [\#Mixers with sound
+cards](#Mixers%20with%20sound%20cards) have phono preamps on their deck
+inputs, but not necessarily on every deck input. Many higher-end
+all-in-one controllers also include sound cards with phono preamps.
 
 Turntables, microphones, and contact microphones (like those used on
 electric guitars) all output very low voltage signals that need to be

@@ -61,8 +61,10 @@ gEdit) and editing the lines at the very top of the file.
   - **defaultLoopSize**: loop size (in beats) when Mixxx starts
   - **defaultBeatJumpSize**: beat jump size when Mixxx starts
   - **loopEnabledDot**: whether to use the dot on the loop size LED
-    display to indicate that a loop is active. Otherwise it indicates a
-    loop with a size equal to 1/(\# on the LED display).
+    display to indicate that a loop is active. This restricts loop sizes
+    to 2-32 beats and may be helpful if you never use loops less than 2
+    beats long. Otherwise the dot indicates a loop size equal to 1/(\#
+    on the LED display).
 
 ### Encoders
 

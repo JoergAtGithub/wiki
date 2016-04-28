@@ -493,7 +493,7 @@ There is soft takeover after deck switch (1/3 or 2/4) to prevent wide parameter 
 
 ## Troubleshooting
 
-### Jog Wheels not working or controller not responding
+### Jog wheels not working or controller not responding
 
 If your jog wheels doesn't work, or nothing works on the controller even
 when you have carefully read all other resources, you should be aware
@@ -505,10 +505,10 @@ controller:
 
 and maybe a third one: Jog wheel sensitivity
 
-on factory defaults, the jog Wheels are enabled and the midi channel
-used is channel 1. the mapping is made for channel 1 only, if your
-controller is configured for another channel, nothing will work and if
-you launch Mixxx with `-``-controllerDebug` parameter, you will have
+With factory default settings, the jog wheels are enabled and the MIDI
+channel used is channel 1. The mapping is made for channel 1 only. If
+your controller is configured for another channel, nothing will work and
+if you launch Mixxx with `-``-controllerDebug` parameter, you will have
 lines like this one showing in the logs when you press a button on the
 controller :
 
@@ -520,14 +520,15 @@ note the B3 here. it's B\<channel nr -1). So this controller is
 configured on channel 4. controller configured on channel 1 will show
 B0, which is correct.
 
-To change these parameters, you have to use the configuration tool
-shipped by hercules that comes with the hercules driver on on [Hercules
-support
+To change these parameters, you have to use the configuration tool that
+comes with the Hercules driver on on [the Hercules support
 page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=61&pid=241&cid=1).
-Unfortunately, Hercules only provide it for windows and MacOS, we are
-not aware of any solution for linux. So you will have to find a computer
-with windows, install Hercules driver, plug-in the controller and change
-configuration.
+Unfortunately, the configuration tool is only available for Windows and
+Mac OS X. We are not aware of any solution for Linux. So if you normally
+use Linux, you will have to find a computer with Windows or Mac OS X,
+install the Hercules driver, plug-in the controller and change
+configuration. You will only need to do this once, then the controller
+should work with Linux.
 
 ### Controller not recognized as bulk controller
 

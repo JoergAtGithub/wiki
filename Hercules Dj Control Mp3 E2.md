@@ -516,7 +516,7 @@ controller :
 Debug [Controller]: "DJ Control MP3 e2 : 3 bytes: B3 38 38 " 
 ```
 
-note the B3 here. it's B\<channel nr -1). So this controller is
+note the B3 here. it's B\<MIDI Channel \# - 1\>. So this controller is
 configured on channel 4. controller configured on channel 1 will show
 B0, which is correct.
 

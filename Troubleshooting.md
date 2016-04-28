@@ -4,7 +4,9 @@ Mixxx, see [Adjusting Audio Latency](Adjusting%20Audio%20Latency).***
 # Troubleshooting
 
 If you've got a question that's not answered here, please post in the
-[forums](http://www.mixxx.org/forums).
+[forums](http://www.mixxx.org/forums). Please be sure you are using the
+latest version of Mixxx before you ask for help. The latest version is
+available on [the download page](http://mixxx.org/download).
 
 ## I can't plug in my headphones and speakers at the same time
 

@@ -63,7 +63,7 @@ only mentions "enabled" and "master".
 |  | \[Group\]                       |  | Key/Control    |  | Range                                     |  | What it does                                                               |  |
 |  | \[Group\]                       |  | sync\_master   |  | binary, read/write toggle-button          |  | Whether this group is the master. This is set in addition to sync\_enabled |  |
 |  | \[Group\]                       |  | sync\_enabled  |  | binary, read/write latching toggle-button |  | Whether sync is enabled on this group.                                     |  |
-|  | \[Group\]                       |  | sync\_mode     |  | enum, read-only                           |  | An enum representing the current master/slave sync mode.                   |  |
+|  | \[Group\]                       |  | sync\_mode     |  | enum, read-only                           |  | An enum representing the current master/follower sync mode.                |  |
 |  | \[Group\]                       |  | rate           |  | binary, read/write slider                 |  | The current setting of the rate slider                                     |  |
 |  | \[Group\]                       |  | bpm            |  | double, read-only                         |  | The current playback bpm value, regardless of scratch or play/stop         |  |
 |  | \[Group\]                       |  | beat\_distance |  | double, read-only, 0.0-1.0                |  | The distance from the last beat from 0 to 1                                |  |

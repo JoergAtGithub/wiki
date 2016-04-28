@@ -2,8 +2,12 @@
 
 [[/media/16445_.jpg|]]
 
-The Hercules DJ Control MP3 e2 is a USB controller without a built in
-sound card. It is not a class compliant MIDI device. Older versions of
+The Hercules DJ Control MP3 e2 is a USB controller. The controller does
+not have a built in sound card, so a [splitter
+cable](hardware%20compatibility#splitter%20cables) or [separate sound
+card](hardware%20compatibility#USB%20sound%20cards) is recommended for
+use with it. The DJ Control MP3 e2 is not a class compliant MIDI device
+and works in Mixxx as a USB bulk data controller. Older versions of
 Mixxx required using Hercules' MIDI driver, but it is now recommend to
 not use the Hercules driver, whether you use Windows, Mac OS X, or
 GNU/Linux. If you have it installed, it is recommended to uninstall the

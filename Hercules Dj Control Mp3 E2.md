@@ -5,8 +5,9 @@
 The Hercules DJ Control MP3 e2 is a USB controller without a built in
 sound card. It is not a class compliant MIDI device. Older versions of
 Mixxx required using Hercules' MIDI driver, but it is now recommend to
-not use the Hercules driver. If you have it installed, it is recommended
-to uninstall the driver and upgrade to the [latest version of
+not use the Hercules driver, whether you use Windows, Mac OS X, or
+GNU/Linux. If you have it installed, it is recommended to uninstall the
+driver and upgrade to the [latest version of
 Mixxx](http://mixxx.org/download) if you have not already.
 
 The mapping is included in Mixxx and allows you to manipulate 4 decks, 2

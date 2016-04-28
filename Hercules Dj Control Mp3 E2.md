@@ -540,12 +540,13 @@ Uninstall the Hercules driver and use it as a USB bulk controller.
 
 This mapping consist of 4 files:
 
-  - `Hercules DJ Control MP3 e2.midi.xml`: the MIDI xml mapping file. It
-    uses the following script.
-  - `Hercules DJ Control MP3 e2-scripts.js`: The main script for MIDI
-    mapping. Also used by the Bulk/HID compatibility script
-  - `Hercules DJ Control MP3 e2.bulk.xml`: The Bulk/HID xml mapping
-    file. Just saying "hey, pass all incoming data to the compat.js
-    MP3e2.incomingData function"
-  - `Hercules-mp3e2-compat.js`: The Bulk/HID script, that reads HID
-    incoming data and call functions from the MIDI script
+  - `Hercules DJ Control MP3 e2.midi.xml`: MIDI XML mapping file
+  - `Hercules DJ Control MP3 e2-scripts.js`: The main script, used
+    directly by the MIDI XML mapping and by the USB bulk compatibility
+    script.
+  - `Hercules DJ Control MP3 e2.bulk.xml`: The Bulk/HID XML mapping
+    file. Tells Mixxx to pass all incoming data to the
+    MP3e2.incomingData function in the bulk compatibility script.
+  - `Hercules-mp3e2-compat.js`: The USB bulk controller script that
+    reads incoming data and calls the appropriate function in `Hercules
+    DJ Control MP3 e2-scripts.js`

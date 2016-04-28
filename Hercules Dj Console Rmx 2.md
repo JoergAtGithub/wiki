@@ -9,7 +9,9 @@
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=4541)
 
 This all-in-one DJ controller features a built in 4 channel sound card
-with balanced XLR master outputs and a balanced microphone input.
+with balanced XLR master outputs and a balanced microphone input. It is
+a USB class compliant MIDI and audio device (unlike older Hercules
+controllers).
 
 ## Mapping
 

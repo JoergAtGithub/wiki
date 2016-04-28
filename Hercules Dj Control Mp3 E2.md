@@ -529,13 +529,12 @@ not aware of any solution for linux. So you will have to find a computer
 with windows, install Hercules driver, plug-in the controller and change
 configuration.
 
-### Controller not recognized as HID
+### Controller not recognized as bulk controller
 
 It has been reported that when the Hercules drivers are installed on a
-windows system, these driver take over the bulk communication with the
-controller so it can not be recognized by Mixxx as a bulk controller.
-Uninstall the Hercules drivers if you plan to use your controller as a
-bulk/HID controller, or use it as a midi controller.
+Windows, the driver takes over the bulk communication with the
+controller so it cannot be recognized by Mixxx as a bulk controller.
+Uninstall the Hercules driver and use it as a USB bulk controller.
 
 ## Mapping files
 

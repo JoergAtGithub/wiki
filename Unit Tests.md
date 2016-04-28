@@ -110,8 +110,8 @@ class EngineSyncTest : public MockedEngineBackendTest {
 };
 
 
-TEST_F(EngineSyncTest, InternalMasterSetSlaveSliderMoves) {
-  // If internal is master, and we turn on a slave, the slider should move.
+TEST_F(EngineSyncTest, InternalMasterSetFollowerSliderMoves) {
+  // If internal is master, and we turn on a follower, the slider should move.
   QScopedPointer<ControlObjectThread> pButtonMasterSyncInternal(getControlObjectThread(
           ConfigKey("[Master]", "sync_master")));
   pButtonMasterSyncInternal->slotSet(1);
@@ -122,7 +122,7 @@ TEST_F(EngineSyncTest, InternalMasterSetSlaveSliderMoves) {
   
   QScopedPointer<ControlObjectThread> pButtonMasterSync1(getControlObjectThread(
           ConfigKey(m_sGroup1, "sync_mode")));
-  pButtonMasterSync1->slotSet(SYNC_SLAVE);
+  pButtonMasterSync1->slotSet(SYNC_FOLLOWER);
   
   ASSERT_FLOAT_EQ(getRateSliderValue(1.25),
                   ControlObject::getControl(ConfigKey(m_sGroup1, "rate"))->get());

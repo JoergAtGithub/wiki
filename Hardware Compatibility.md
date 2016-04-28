@@ -524,7 +524,10 @@ Numark DJ iO 2 though.
 
 These are devices that can mix audio from different sources without
 needing a computer. They also have a built-in USB sound card to connect
-directly to a computer without needing a separate sound card.
+directly to a computer without needing a separate sound card. They tend
+to be much more expensive than comparable [\#controllers](#controllers)
+and [\#USB sound cards](#USB%20sound%20cards) and installed in venues
+for multiple DJs to use.
 
 Every device in an audio signal chain and each conversion between
 digital and analog signals adds noise and distortion, so it is generally

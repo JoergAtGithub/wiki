@@ -87,25 +87,16 @@ of controller support in Mixxx:
     Team
   - Community Support: mappings provided by the Mixxx Community, but the
     Mixxx Team is unable to verify their quality because we don't have
-    the devices ourselves. Check the wiki page and forum thread for that
-    controller for an idea of the quality of the mapping.
+    the devices ourselves. Check the wiki page and forum thread for
+    information about the completeness of the mapping.
 
-If your controller does not have a mapping, or the mapping for your
-controller does not work how you would like it to, please consider
-[contributing your mapping to Mixxx](contributing%20mappings). Within
-Mixxx, you can easily map any MIDI controller with the MIDI Learning
-Wizard available in Preferences \> Controllers (this does not (yet) work
-for HID devices). For jog wheels and complex functionality, you will
-need to program a JavaScript mapping. See [these wiki
-pages](start#controller%20midi%20mapping%20documentation) for
-documentation on making and editing controller mappings. Feel free to
-ask for help mapping your controller on the forums. If you ask for help,
-please consider that most people reading your post will not have your
-controller, so be specific about what kind of controller you have and
-what you want to map it to do.
-
-If you notice any bugs in the mappings, or wish the mapping would work
-differently, please [report it on our bug tracker](reporting%20bugs).
+If your controller does not have a mapping, refer to the
+[start\#controller mapping
+documentation](start#controller%20mapping%20documentation) for how to
+make a mapping. Feel free to ask for help mapping your controller on the
+forums. If you ask for help, please consider that most people reading
+your post will not have your controller, so be specific about what kind
+of controller you have and what you want to map it to do.
 
 Please update these tables as mappings are added to Mixxx. Keep the
 tables sorted by price and move devices to the bottom of the table when

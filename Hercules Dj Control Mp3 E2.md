@@ -544,7 +544,7 @@ This mapping consist of 4 files:
   - `Hercules DJ Control MP3 e2-scripts.js`: The main script, used
     directly by the MIDI XML mapping and by the USB bulk compatibility
     script.
-  - `Hercules DJ Control MP3 e2.bulk.xml`: The Bulk/HID XML mapping
+  - `Hercules DJ Control MP3 e2.bulk.xml`: The USB bulk XML mapping
     file. Tells Mixxx to pass all incoming data to the
     MP3e2.incomingData function in the bulk compatibility script.
   - `Hercules-mp3e2-compat.js`: The USB bulk controller script that

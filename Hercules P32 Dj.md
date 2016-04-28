@@ -106,8 +106,10 @@ Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
 Unit.
 
-Be warned that soft takeover does not work for the effects knobs due to
-[a bug in Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008).
+Be warned that soft takeover does not work for the effect parameter
+knobs due to [a bug in
+Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008). Soft take over
+does work for switching between dry/wet and the superknob though.
 
 ### Other controls
 

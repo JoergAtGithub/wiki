@@ -535,9 +535,9 @@ Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx.
 
 Most of these have a single USB port, but some have two. Two USB ports
-allows two different DJs to use the mixer's sound card with their own
-computer for collaborative DJ sets and easy, seamless transitions
-between DJs. \<sortable 2=numeric\>
+allows two different DJs to use the mixer's sound card at the same time
+with their own computer for collaborative DJ sets and easy, seamless
+transitions between DJs. \<sortable 2=numeric\>
 
 | Device                                                                                                                      | Price (USD) \[36\] | Decks | Phono preamps | USB ports | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------- |

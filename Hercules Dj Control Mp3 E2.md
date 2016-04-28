@@ -7,12 +7,13 @@ not have a built in sound card, so a [splitter
 cable](hardware%20compatibility#splitter%20cables) or [separate sound
 card](hardware%20compatibility#USB%20sound%20cards) is recommended for
 use with it. The DJ Control MP3 e2 is not a class compliant MIDI device
-and works in Mixxx as a USB bulk data controller. Older versions of
-Mixxx required using Hercules' MIDI driver, but it is now recommend to
-not use the Hercules driver, whether you use Windows, Mac OS X, or
-GNU/Linux. If you have it installed, it is recommended to uninstall the
-driver and upgrade to the [latest version of
-Mixxx](http://mixxx.org/download) if you have not already.
+and works in Mixxx as a USB bulk data controller. [Older versions of
+Mixxx](Hercules%20DJ%20Control%20MP3%20e2%20old) required using
+Hercules' MIDI driver, but it is now recommend to not use the Hercules
+driver, whether you use Windows, Mac OS X, or GNU/Linux. If you have it
+installed, it is recommended to uninstall the driver and upgrade to the
+[latest version of Mixxx](http://mixxx.org/download) if you have not
+already.
 
 The mapping is included in Mixxx and allows you to manipulate 4 decks, 2
 at a time, switching Deck A (left) between Channel 1 and 3 and Deck B

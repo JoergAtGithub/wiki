@@ -141,7 +141,7 @@ turn on when sent value 0x00, your init and shutdown functions could be:
 ### Linking a JavaScript mapping file to an XML mapping file
 
 There is a default script function file called
-`midi-mappings-scripts.js` which contains functions common to all
+`common-controller-scripts.js` which contains functions common to all
 controllers and is always loaded. See [\#available common
 functions](#available%20common%20functions) below for information on
 these functions.

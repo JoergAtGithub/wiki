@@ -947,9 +947,9 @@ MyController.shiftButton = function (channel, control, value, status, group) {
         MyController.activeButtons = MyController.unshiftedButtons;
         engine.connectControl(group, key); // connect callbacks for shifted layer
     } else { // shift button released
-        engine.connectControl(group, key, true);
+        engine.connectControl(group, key, true); // disconnect callbacks for shifted layer
         MyController.activeButtons = MyController.shiftedButtons;
-        engine.connectControl(group, key);
+        engine.connectControl(group, key); // connect callbacks for unshifted layer
     }
 }
 ```

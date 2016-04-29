@@ -226,10 +226,15 @@ ControllerName.functionName = function (channel, control, value, status, group) 
 }
 ```
 
-Note that this is defining a JavaScript variable called
-ControllerName.functionName and setting its value to a function object.
-This variable can be reassigned to a different function by the script to
-change how the mapping handles input for this MIDI signal.
+Note that in JavaScript, everything is an
+[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object),
+including functions. This code defines a property of the ControllerName
+object (which was [defined at the top of your
+script](#script-file-header)) called `functionName` and assigns it to
+the function expression on the right of the `=`. The `functionName`
+property of the `ControllerName` object can be reassigned to a different
+by the script at any time to change how the mapping handles input for
+this MIDI signal.
 
 You can leave off any parameters at the end that you don't need; the
 function is identified only by name (so make sure it's unique\!) For
@@ -240,10 +245,6 @@ ControllerName.functionName = function (channel, control) {
     ...
 }
 ```
-
-*(If more than one function have the same name, only the last one listed
-in the script file(s) will be called, regardless of the number of
-parameters.)*
 
 ### Reading and setting Mixxx control values
 

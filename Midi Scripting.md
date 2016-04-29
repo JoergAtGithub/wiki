@@ -236,19 +236,44 @@ name (as many other programming languages do); it defines a property of
 the `ControllerName` object (which was [defined at the top of your
 script](#script-file-header)) called `functionName` and assigns it to
 the function expression on the right of the `=`. The `functionName`
-property of the `ControllerName` object is a variable that can be
-reassigned to a different by the script at any time to change how the
-mapping handles input for this MIDI signal.
+property of the `ControllerName` object is a variable that could be
+reassigned to a different function by the script at any time to change
+how the mapping handles input for this MIDI signal.
 
-You can leave off any parameters at the end that you don't need; the
-function is identified only by name (so make sure it's unique\!) For
-example, if you only need the MIDI channel and control number, just do:
+In JavaScript, you can leave off any parameters at the end that you
+don't need; the function is identified only by name (so make sure it's
+unique\!). For example, if you only need the MIDI channel and control
+number, just do:
 
 ``` javascript
 ControllerName.functionName = function (channel, control) {
     ...
 }
 ```
+
+However, the order of function arguments does matter. If you wanted
+access to the `group` parameter, you cannot define the function like:
+
+``` javascript
+ControllerName.functionName = function (channel, control, group) {
+    print(group);
+}
+```
+
+In that case, the `group` local variable inside the function is assigned
+to the third parameter that Mixxx passes to the function, which is the
+incoming MIDI message's value byte. To actually get the intended value
+for `group`, the function must be declared like:
+
+``` javascript
+ControllerName.functionName = function (channel, control, value, status, group) {
+    ...
+}
+```
+
+*New in 2.1*: Input handling functions are no longer just identified by
+name, the value of the \<key\> element in the XML is treated as a
+snippet of JS code that must evaluate to a function.
 
 ### Reading and setting Mixxx control values
 

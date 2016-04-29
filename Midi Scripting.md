@@ -881,7 +881,7 @@ MyController.shift = false;
 MyController.shiftButton = function (channel, control, value, status, group) {
     // Note that there is no 'if (value === 127)' here so this executes both when the shift button is pressed and when it is released.
     // Therefore, MyController.shift will only be true while the shift button is held down
-    MyController.shift = ! MyController.shift // '!' inverts a boolean (true/false) value 
+    MyController.shift = ! MyController.shift; // '!' inverts a boolean (true/false) value 
 }
 
 MyController.someButton = function (channel, control, value, status, group) {

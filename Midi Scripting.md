@@ -914,8 +914,8 @@ layer within an object.
 
 ``` javascript
 // A container for the functions of the active layer.
-// Map the MIDI input handling functions to properties of this object,
-// for example, MyController.activeButtons.buttonA
+// In the XML file, map the MIDI input handling functions to
+// properties of this object, for example, MyController.activeButtons.buttonA
 MyController.activeButtons = {};
 
 MyController.unshiftedButtons = {

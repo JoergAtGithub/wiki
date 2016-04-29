@@ -1106,17 +1106,16 @@ MyController.someButton = function (channel, control, value, status, group) {
 }
 ```
 
-### Storing commonly used MIDI codes in global hash tables
+### Storing commonly used MIDI codes in JS objects
 
 Putting codes you need to reference many times throughout your script
-into a global hash table (technically an
-[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
-in JavaScript) makes your code more organized, readable, and easier to
-modify later. A hash table is simply a list of keys (names) and the
-values of those keys (technically in JavaScript, each key is an object
-property). Hash tables are like a convenient container for a list of
-multiple variables. For example, you could store the MIDI notes for
-buttons and the MIDI values for LED colors:
+into a [JavaScript
+object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+makes your code more organized, readable, and easier to modify later. A
+JavaScript object is a container for variables of any other type
+(including functions and other objects), referred to as the Object's
+attributes. For example, you could store the MIDI notes for buttons and
+the MIDI values for LED colors:
 
 ``` javascript
 MyController.buttons = {
@@ -1140,26 +1139,24 @@ MyController.colorCodes = {
 }
 ```
 
-These variables should be declared at the top of your script file,
-outside of any functions, to make them global variables that can be used
-within any function. Now, when writing code to change an LED to green,
-instead of typing the note number for the LED and the value for green
-directly, you can reference the hash tables through your code. In
-addition to being easier to write, this makes your code easier to read.
-Easier to read code helps you remember what it does when you look at it
-again later. It also helps other people who may modify the code later.
-For example, for a function that [automatically reacts to
+Now, when writing code to change an LED to green, instead of typing the
+note number for the LED and the value for green directly, you can
+reference the object's properties through your code. In addition to
+being easier to write, this makes your code easier to read. Easier to
+read code helps you remember what it does when you look at it again
+later. It also helps other people who may modify the code later. For
+example, for a function that [automatically reacts to
 changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
-a track (through the play\_indicator [MixxxControl](MixxxControl)), you
-can write:
+a track (through the play\_indicator [Mixxx Control](MixxxControls)),
+you can write:
 
 ``` javascript
 MyController.playButtonLED = function (value, group, control) {
     midi.sendShortMsg(
                       0x90,
                       MyController.buttons[group].play,
-                      (value) ? MyController.colorCodes.green : MyController.colorCodes.off
-                      // The above line is a shortcut that means: "If value is greater than 0 (which is equivalent to true), then send MyController.colorCodes.green; otherwise, send MyController.colorCodes.off"
+                      (value === 1) ? MyController.colorCodes.green : MyController.colorCodes.off
+                      // The above line is a shortcut that means: "If value is 1, then send MyController.colorCodes.green; otherwise, send MyController.colorCodes.off"
                       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
                      )
 }
@@ -1187,10 +1184,10 @@ MyController.playButtonLED = function (value, group, control) {
 
 The two examples above have the same effects, but the first one is more
 intuitive because the code more clearly and concisely represents what it
-does. The hash tables can help you refer to numbers by what they do
-rather than having a bunch of numbers throughout your code. If you
-decide to change which MIDI controls do what later, it will be easier to
-edit the one line in the hash table than go through and find each MIDI
+does. The objects can help you refer to numbers by what they do rather
+than having a bunch of numbers throughout your code. If you decide to
+change which MIDI controls do what later, it will be easier to edit the
+one line in the object declaration than go through and find each MIDI
 code you need to change.
 
 **Tip:** An explanation of the MIDI signals that your controller sends

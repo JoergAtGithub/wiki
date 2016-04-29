@@ -383,17 +383,9 @@ MyController.syncLED = function (value, group, control) {
 }
 ```
 
-Or like this:
-
-``` javascript
-MyController.syncLED = function (value) {
-    //...what to do with the value goes here...
-}
-```
-
-If the provided three parameters do not fit your needs, then you can use
-the following trick with an anonymous function to provide your own
-parameters to be passed.
+**Tip**: If the provided three parameters do not fit your needs, then
+you can use the following trick with an anonymous function to provide
+your own parameters to be passed.
 
 ``` javascript
 // Pass one parameter '1000' to my callback 

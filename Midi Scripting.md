@@ -1093,24 +1093,23 @@ with the same name even if it's in another script file.
 ### Modifier (shift) buttons
 
 To map MIDI signals to different actions depending on whether a modifier
-button is pressed, declare a global boolean (true/false) variable at the
-top of your JavaScript file to keep track of whether the modifier button
-is currently pressed. In the XML file, map the modifier button to a
-function that toggles the state of this global variable and map other
-controls to functions that check the state of this global variable. For
-example:
+button is pressed, declare a global boolean (true/false) variable to
+keep track of whether the modifier button is currently pressed. In the
+XML file, map the modifier button to a function that toggles the state
+of this variable and map other controls to functions that check the
+state of the variable. For example:
 
 ``` javascript
-MyController.shift = false
+MyController.shift = false;
 
 MyController.shiftButton = function (channel, control, value, status, group) {
-    // Note that there is no 'if (value)' here so this executes both when the shift button is pressed and when it is released.
+    // Note that there is no 'if (value === 127)' here so this executes both when the shift button is pressed and when it is released.
     // Therefore, MyController.shift will only be true while the shift button is held down
     MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
 }
 
 MyController.someButton = function (channel, control, value, status, group) {
-    if (value) { // only do stuff when the button is pressed, not when it is released
+    if (value === 127) { // only do stuff when the button is pressed, not when it is released
         if (MyController.shift) {
             // do something when this button and the shift button are both pressed
         } else {

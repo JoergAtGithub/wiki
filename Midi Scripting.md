@@ -76,23 +76,38 @@ signals (although they could be very different).
 Mixxx. Every time you save your file, Mixxx will reload it immediately.
 This can make testing changes very fast.
 
-## Setting up a JavaScript mapping file
+## Setting up a JavaScript mapping
 
-See the [controller mapping file
-locations](controller%20mapping%20file%20locations) for where to put
-mapping files on your OS.
+### Linking a JavaScript mapping file to an XML mapping file
 
-### Function & variable naming conventions
+All JavaScript files need an accompanying [XML mapping
+file](MIDI%20controller%20mapping%20file%20format). See the [controller
+mapping file locations](controller%20mapping%20file%20locations) for
+where to put mapping files on your OS.
 
-Functions use the naming convention `<manufacturer><device>.<function
-name>` (e.g. `StantonSCS3d.pitchSlider`). Global variables use
-`<manufacturer><device>.<variable name>` (e.g. `StantonSCS3d.deck`).
-These are very important to avoid name collisions with other scripts
-that may be loaded.
+To specify script files to load, add the following section to the
+device's XML file right underneath the \<controller\> tag:
 
-If you write functions for your script that you think would be helpful
-for mapping other controllers, please add them to
-common-controller-scripts.js under the "script" namespace.
+``` XML
+        <scriptfiles>
+            <file filename="Manufacturer-model-scripts.js" functionprefix="MyController"/>
+        </scriptfiles>
+```
+
+The functionprefix attribute specifies the name of the JavaScript object
+in the file that has init and shutdown methods called when the
+controller is opened and closed by Mixxx (typically when the user opens
+and closes Mixxx).
+
+You can add as many \<file\> tags as you like, but be sure to specify
+the appropriate functionprefix in every one. These will all be loaded
+when the controller is activated.
+
+There is a default script function file called
+`common-controller-scripts.js` which contains functions common to all
+controllers and is always loaded. See [\#available common
+functions](#available%20common%20functions) below for information on
+these functions.
 
 ### Script file header
 
@@ -104,21 +119,13 @@ object. It looks like this:
 ...and you would replace `MyController` with whatever you entered for
 'functionprefix' in the XML file above. This declares a new JavaScript
 object representing your controller (in this example, an object called
-`StantonSCS3d`) and assigns it to an empty object. This object needs to
-have properties called "init" and "shutdown" assigned to functions (in
-JavaScript, object methods are just properties whose value is a
-function).
+`MyController`) and assigns it to an empty object.
 
-**All device script files are expected to contain initialization and
-shutdown functions** called `<manufacturer><device>.init(ID,debugging)`
-and `<manufacturer><device>.shutdown()` which will be called when Mixxx
-opens and closes the device, respectively. They can be empty, but are
-useful for putting controllers into known states and/or lighting certain
-LEDs before operation begins or the program exits. The ID parameter is
-the `controller id` attribute from the XML file. This can be used to
-identify the particular controller instance in print statements. The
-`debugging` parameter is set to 'true' if the user specified the
---mididebug parameter on the command line.
+This object should have properties called "init" and "shutdown" defined
+and assigned to functions (in JavaScript, object methods are just
+properties whose value is a function). They can be empty, but are useful
+for putting controllers into known states and/or lighting certain LEDs
+before operation begins or the program exits.
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
@@ -126,7 +133,7 @@ turn on when sent value 0x00, your script could start with:
 
     var MyController = {};
     
-    MyController.init = function () {
+    MyController.init = function (id, debugging) {
         // turn on all LEDs
         for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
                                     // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
@@ -141,35 +148,15 @@ turn on when sent value 0x00, your script could start with:
         }
     }
 
-### Linking a JavaScript mapping file to an XML mapping file
+The ID parameter of the init function is the `controller id` attribute
+from the XML file. This can be used to identify the particular
+controller instance in print statements. The `debugging` parameter is
+set to 'true' if the user specified the --mididebug parameter on the
+command line.
 
-There is a default script function file called
-`common-controller-scripts.js` which contains functions common to all
-controllers and is always loaded. See [\#available common
-functions](#available%20common%20functions) below for information on
-these functions.
-
-To specify additional script files to load, add the following section to
-the device's [XML MIDI mapping
-file](MIDI%20controller%20mapping%20file%20format) right underneath the
-\<controller\> tag:
-
-``` XML
-        <scriptfiles>
-            <file filename="Stanton-SCS3d-scripts.js" functionprefix="StantonSCS3d"/>
-        </scriptfiles>
-```
-
-You can add as many \<file\> tags as you like, but be sure to specify
-the appropriate function prefix in every one. These will all be loaded
-when the controller is activated.
-
-**Tip:** An explanation of the MIDI signals that your controller sends
-to computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer. This is likely in
-a document on the product page for your controller on the manufacturer's
-website. If it is not in a separate document, it is likely at the end of
-the manual.
+**Note**: Instead of using global variables, define properties of your
+controller object (`MyController` in this example) to avoid name
+collisions with other scripts that may be loaded.
 
 ### Linking MIDI signals to JavaScript functions
 

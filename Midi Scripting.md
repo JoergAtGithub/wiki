@@ -104,7 +104,7 @@ controller's object. It looks like this:
 ...and you would replace the name with whatever you entered for
 'functionprefix' in the XML file above. This creates a new JavaScript
 object representing your controller (in this example, an object called
-`StantonSCS3d`).
+`StantonSCS3d`) and assigns it to an empty function.
 
 ### init and shutdown functions
 

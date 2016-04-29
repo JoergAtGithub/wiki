@@ -353,19 +353,20 @@ objects](#storing-commonly-used-MIDI-codes-in-JS-objects)
 
 Up to this point, script functions are only called in response to the
 controller being manipulated. They can also be called automatically in
-response to some value changing within Mixxx, such as when you use the
-mouse to move the channel volume slider, you want the LEDs on the
-controller to react. Here are the related functions:
+response to some value changing within Mixxx, such as when you click the
+sync button on screen, you want an LED on the controller to react. Here
+are the related functions:
 
   - **engine.connectControl**(*control group*, *control name*, *script
     function name*) - This connects the specified Mixxx control signal
-    to the specifed script function. It returns true if the connection
+    to the specified script function. It returns true if the connection
     was successful.
   - **engine.connectControl**(*control group*, *control name*, *script
-    function name*, **true**) - Tacking a `,true` on to the list of
+    function name*, **true**) - Tacking a `, true` on to the list of
     parameters disconnects the specified Mixxx control signal from the
     specified script function. It returns true if the disconnection was
-    successful. Note that the script function name must be in quotes.
+    successful. Note that the script function name must be a string in
+    quotes.
   - **engine.trigger**(*control group*, *control name*) - An easy way to
     cause the specified Mixxx control signal to fire so the connected
     script function is called with the updated value even if it hasn't
@@ -376,48 +377,50 @@ MixxxControl, the group, and the Mixxx control name. So, your connected
 function can look like this:
 
 ``` javascript
-MyController.volumeLEDs = function (value, group, control) {
-    //...what to do with the value, group and control arguments goes here...
+MyController.syncLED = function (value, group, control) {
+    midi.sendShortMsg(byte 1, byte 2, value * 127); // see above section for an explanation of this example line
 }
 ```
 
 Or like this:
 
 ``` javascript
-MyController.volumeLEDs = function (value) {
+MyController.syncLED = function (value) {
     //...what to do with the value goes here...
 }
 ```
 
 If the provided three parameters do not fit your needs, then you can use
-the following trick to provide your own parameters to be passed.
+the following trick with an anonymous function to provide your own
+parameters to be passed.
 
 ``` javascript
 // Pass one parameter '1000' to my callback 
-engine.connectControl("[Master]", "volume", function(value) { MyController.volumeLEDs(1000); });
+engine.connectControl("[Master]", "volume", function(value) { MyController.syncLED(1000); });
 ```
 
 #### Examples
 
-To connect the volume of the current virtual deck to a function called
-MyController.volumeLEDs, do:
+To connect the sync lock state of the current virtual deck to a function
+called MyController.syncLED, do:
 
 ``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs");
+engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED");
 ```
 
-To force the above-mentioned volume LEDs to sync up, just do:
+To force the above-mentioned volume LEDs to sync up, call
+engine.trigger():
 
 ``` javascript
-engine.trigger("[Channel"+MyController.currentDeck+"]","volume");
+engine.trigger("[Channel"+MyController.currentDeck+"]","sync_enabled");
 ```
 
-If you change what the volume LEDs represent (like when switching
-modes,) you would disconnect the Mixxx "volume" control from them like
+If you change what the sync LED represents (like when switching modes),
+you would disconnect the Mixxx "sync\_enabled" control from them like
 this:
 
 ``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]","volume","MyController.volumeLEDs",true);
+engine.connectControl("[Channel"+MyController.currentDeck+"]","sync_enabled","MyController.syncLED",true);
 ```
 
 ### Soft-takeover

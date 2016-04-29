@@ -96,17 +96,18 @@ common-controller-scripts.js under the "script" namespace.
 
 ### Script file header
 
-At the top of your script file, you need to have a declaration of the
-controller's object. It looks like this:
+In your script file, you need to have a declaration of the controller's
+object. It looks like this:
 
     var MyController = {};
 
 ...and you would replace `MyController` with whatever you entered for
 'functionprefix' in the XML file above. This declares a new JavaScript
 object representing your controller (in this example, an object called
-`StantonSCS3d`) and assigns it to an empty object.
-
-### init and shutdown functions
+`StantonSCS3d`) and assigns it to an empty object. This object needs to
+have properties called "init" and "shutdown" assigned to functions (in
+JavaScript, object methods are just properties whose value is a
+function).
 
 **All device script files are expected to contain initialization and
 shutdown functions** called `<manufacturer><device>.init(ID,debugging)`
@@ -117,11 +118,11 @@ LEDs before operation begins or the program exits. The ID parameter is
 the `controller id` attribute from the XML file. This can be used to
 identify the particular controller instance in print statements. The
 `debugging` parameter is set to 'true' if the user specified the
---mididebug parameter on the command line (v1.11 and higher).
+--mididebug parameter on the command line.
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
-turn on when sent value 0x00, your init and shutdown functions could be:
+turn on when sent value 0x00, your script could start with:
 
     var MyController = {};
     
@@ -129,14 +130,14 @@ turn on when sent value 0x00, your init and shutdown functions could be:
         // turn on all LEDs
         for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
                                     // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
-            midi.sendShortMsg(0x90, i, 0x7f)
+            midi.sendShortMsg(0x90, i, 0x7f);
         }
     }
     
     MyController.shutdown = function() {
        // turn off all LEDs
        for (var i = 1; i <= 40; i++) {
-            midi.sendShortMsg(0x90, i, 0x00)
+            midi.sendShortMsg(0x90, i, 0x00);
         }
     }
 

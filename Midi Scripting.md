@@ -764,16 +764,18 @@ you first use them inside a function since it establishes scope. If you
 omit this, the variable becomes global and will clobber anything else
 with the same name even if it's in another script file.
 
-### Modifier (shift) buttons
+### Modifier (shift) buttons and layered mappings
 
 Many controllers send different MIDI signals while a shift button is
 held down. In that case, JavaScript may not be needed and using XML may
-be sufficient. However, if this is not the case, you would need to keep
-track of whether the modifier button is active with a variable in
-JavaScript.
+be sufficient. However, if this is not the case, to have controls do
+something different depending on whether a shift button or layer
+switching button is active, you need to use JavaScript. There are
+multiple ways this can be accomplished.
 
-To map MIDI signals to different actions depending on whether a modifier
-button is pressed, declare a boolean (true/false) variable to keep track
+#### Tracking the state of modifier in a variable
+
+One approach is to declare a boolean (true/false) variable to keep track
 of whether the modifier button is currently pressed. In the XML file,
 map the modifier button to a function that toggles the state of this
 variable and map other controls to functions that check the state of the
@@ -795,6 +797,61 @@ MyController.someButton = function (channel, control, value, status, group) {
         } else {
             // do something else when this button is pressed but the shift button is not pressed
         }
+    }
+}
+```
+
+While this approach can work well for simple cases, if you are checking
+the value of MyController.shift in many functions, it can get
+cumbersome. Also, it can get difficult to keep track of everything that
+happens if each mode, especially if you have more than two modes for a
+control.
+
+#### Reassigning MIDI input functions
+
+An alternative approach is to define different functions for each layer.
+Because [\#MIDI input handling
+functions](#MIDI%20input%20handling%20functions) are variables that can
+be reassigned, the function executed when a shift button or modifier is
+activated can reassign the variables to different values. If you have
+multiple controls you want to change the behavior of in different
+conditions, it helps to group the MIDI input handling functions for each
+layer within an object.
+
+``` javascript
+// A container for the functions of the active layer.
+// Map the MIDI input handling functions to properties of this object,
+// for example, MyController.activeButtons.buttonA
+MyController.activeButtons = {};
+
+MyController.unshiftedButtons = {
+    buttonA = function (channel, control, value, status, group) {
+        //code to be executed when buttonA is pressed without shift
+    },
+    buttonB = function (channel, control, value, status, group) {
+        //code to be executed when buttonB is pressed without shift
+    }
+};
+
+MyController.shiftedButtons = {
+    buttonA = function (channel, control, value, status, group) {
+        //code to be executed when buttonA is pressed with shift
+    },
+    buttonB = function (channel, control, value, status, group) {
+        //code to be executed when buttonB is pressed with shift
+    }
+};
+
+MyController.init = function() {
+    MyController.activeButtons = MyController.unshiftedButtons;
+}
+
+MyController.shiftButton = function (channel, control, value, status, group) {
+    // This function is mapped to the incoming MIDI signals for the shift button in the XML file
+    if (value === 127) { // shift button pressed
+        MyController.activeButtons = MyController.unshiftedButtons;
+    } else { // shift button released
+        MyController.activeButtons = MyController.shiftedButtons;
     }
 }
 ```

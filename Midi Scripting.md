@@ -1198,11 +1198,12 @@ MyController.playButtonLED = function (value, group, control) {
 
 The two examples above have the same effects, but the first one is more
 intuitive because the code more clearly and concisely represents what it
-does. The objects can help you refer to numbers by what they do rather
-than having a bunch of numbers throughout your code. If you decide to
-change which MIDI controls do what later, it will be easier to edit the
-one line in the object declaration than go through and find each MIDI
-code you need to change.
+does. The MyController.buttons and MyController.colorCodes objects can
+help you refer to numbers by what they do rather than having a bunch of
+numbers throughout your code. If you decide to change which MIDI
+controls do what later, it will be easier to edit the one line in the
+object declaration than go through and find each MIDI code you need to
+change.
 
 **Tip:** An explanation of the MIDI signals that your controller sends
 to computers and how it reacts to MIDI signals that computers send to it

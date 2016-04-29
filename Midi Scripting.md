@@ -102,7 +102,7 @@ controller's object. It looks like this:
     var MyController = {};
 
 ...and you would replace `MyController` with whatever you entered for
-'functionprefix' in the XML file above. This creates a new JavaScript
+'functionprefix' in the XML file above. This declares a new JavaScript
 object representing your controller (in this example, an object called
 `StantonSCS3d`) and assigns it to an empty object.
 

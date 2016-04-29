@@ -97,7 +97,7 @@ common-controller-scripts.js under the "script" namespace.
 ### Script file header
 
 At the top of your script file, you need to have a declaration of the
-controller name. It looks like this:
+controller's object. It looks like this:
 
     function StantonSCS3d() {}
 

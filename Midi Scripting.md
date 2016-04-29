@@ -225,7 +225,7 @@ Therefore, function definitions should look like:
 
 ``` javascript
 ControllerName.functionName = function (channel, control, value, status, group) {
-    ...
+    // your custom code goes here
 }
 ```
 
@@ -239,6 +239,17 @@ the function expression on the right of the `=`. The `functionName`
 property of the `ControllerName` object is a variable that could be
 reassigned to a different function by the script at any time to change
 how the mapping handles input for this MIDI signal.
+
+You can leave off parameters you don't need from the end of the function
+declaration, but the parameters must stay in order. For example, if you
+don't need the `status` or `group` variables, you can define an input
+handling function like:
+
+``` javascript
+ControllerName.functionName = function (channel, control, value) {
+    // your custom code goes here
+}
+```
 
 ### Reading and setting Mixxx control values
 

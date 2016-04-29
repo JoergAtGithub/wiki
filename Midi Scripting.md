@@ -804,7 +804,7 @@ MyController.someButton = function (channel, control, value, status, group) {
 While this approach can work well for simple cases, if you are checking
 the value of MyController.shift in many functions, it can get
 cumbersome. Also, it can get difficult to keep track of everything that
-happens if each mode, especially if you have more than two modes for a
+happens in each mode, especially if you have more than two modes for a
 control.
 
 #### Reassigning MIDI input functions

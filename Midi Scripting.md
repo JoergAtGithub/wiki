@@ -405,7 +405,7 @@ To force the above-mentioned volume LEDs to sync up, call
 engine.trigger():
 
 ``` javascript
-engine.trigger("[Channel"+MyController.currentDeck+"]","sync_enabled");
+engine.trigger("[Channel"+MyController.currentDeck+"]", "sync_enabled");
 ```
 
 If you change what the sync LED represents (like when switching modes),
@@ -413,7 +413,7 @@ you would disconnect the Mixxx "sync\_enabled" control from them like
 this:
 
 ``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]","sync_enabled","MyController.syncLED",true);
+engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED",true);
 ```
 
 ### Soft-takeover

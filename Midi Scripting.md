@@ -99,12 +99,12 @@ common-controller-scripts.js under the "script" namespace.
 At the top of your script file, you need to have a declaration of the
 controller's object. It looks like this:
 
-    function StantonSCS3d() {}
+    var MyController = {};
 
-...and you would replace the name with whatever you entered for
+...and you would replace `MyController` with whatever you entered for
 'functionprefix' in the XML file above. This creates a new JavaScript
 object representing your controller (in this example, an object called
-`StantonSCS3d`) and assigns it to an empty function.
+`StantonSCS3d`) and assigns it to an empty object.
 
 ### init and shutdown functions
 

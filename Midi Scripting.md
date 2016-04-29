@@ -222,13 +222,13 @@ ControllerName.functionName = function (channel, control, value, status, group) 
 
 Note that in JavaScript, everything is an
 [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object).
-This code does not merely define a function as it is done in many other
-programming languages do; it defines a property of the [ControllerName
+This code does not define a function as is done in many other
+programming languages; it defines a property of the [ControllerName
 object](#script-file-header) called `functionName` and assigns its value
 to the function expression on the right of the `=` assignment operator.
-`MyController.functionName` is a variable that could be reassigned to a
-different function by the script at any time to change how the mapping
-handles input for this MIDI signal.
+So, `MyController.functionName` is a variable that could be reassigned
+to a different function by the script at any time to change how the
+mapping handles input for this MIDI signal.
 
 You can leave off parameters you don't need from the end of the function
 declaration, but the parameters must stay in order. For example, if you

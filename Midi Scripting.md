@@ -160,13 +160,10 @@ collisions with other scripts that may be loaded.
 
 ### Linking MIDI signals to JavaScript functions
 
-MIDI controller XML mapping files are described on the [MIDI controller
-mapping file format](MIDI%20controller%20mapping%20file%20format) page.
-This XML file defines how MIDI controls are mapped to MIDI commands.
-
-To link a script function to a particular control in the device's XML
-MIDI mapping file, put the full function name in the \<key\> tag, and a
-\<Script-Binding/\> tag in the \<options\> block, like so:
+To link a script function to an incoming MIDI message, put the full
+function name in the \<key\> tag of the MIDI message's \<control\>
+element in the XML file, with a \<Script-Binding/\> tag in the
+\<options\> block, like so:
 
 ``` XML
             <control>    <!--    Pitch slider    -->

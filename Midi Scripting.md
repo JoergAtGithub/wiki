@@ -1076,12 +1076,18 @@ with the same name even if it's in another script file.
 
 ### Modifier (shift) buttons
 
+Many controllers send different MIDI signals while a shift button is
+held down. In that case, JavaScript may not be needed and using XML may
+be sufficient. However, if this is not the case, you would need to keep
+track of whether the modifier button is active with a variable in
+JavaScript.
+
 To map MIDI signals to different actions depending on whether a modifier
-button is pressed, declare a global boolean (true/false) variable to
-keep track of whether the modifier button is currently pressed. In the
-XML file, map the modifier button to a function that toggles the state
-of this variable and map other controls to functions that check the
-state of the variable. For example:
+button is pressed, declare a boolean (true/false) variable to keep track
+of whether the modifier button is currently pressed. In the XML file,
+map the modifier button to a function that toggles the state of this
+variable and map other controls to functions that check the state of the
+variable. For example:
 
 ``` javascript
 MyController.shift = false;

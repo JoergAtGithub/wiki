@@ -125,7 +125,11 @@ This object should have properties called "init" and "shutdown" defined
 and assigned to functions (in JavaScript, object methods are just
 properties whose value is a function). They can be empty, but are useful
 for putting controllers into known states and/or lighting certain LEDs
-before operation begins or the program exits.
+before operation begins or the program exits. A few controllers can be
+sent a MIDI message that tells the controller to send back MIDI messages
+for the position of the controls on the device. If your controller can
+do this, it is helpful to send that message from the init function so
+the state of Mixxx's controls match the hardware when Mixxx opens.
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and

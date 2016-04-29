@@ -764,49 +764,6 @@ you first use them inside a function since it establishes scope. If you
 omit this, the variable becomes global and will clobber anything else
 with the same name even if it's in another script file.
 
-### Modifier (shift) buttons and layered mappings
-
-Many controllers send different MIDI signals while a shift button is
-held down. In that case, JavaScript may not be needed and using XML may
-be sufficient. However, if this is not the case, to have controls do
-something different depending on whether a shift button or layer
-switching button is active, you need to use JavaScript. There are
-multiple ways this can be accomplished.
-
-#### Tracking the state of the modifier in a variable
-
-One approach is to declare a boolean (true/false) variable to keep track
-of whether the modifier button is currently pressed. In the XML file,
-map the modifier button to a function that toggles the state of this
-variable and map other controls to functions that check the state of the
-variable. For example:
-
-``` javascript
-MyController.shift = false;
-
-MyController.shiftButton = function (channel, control, value, status, group) {
-    // Note that there is no 'if (value === 127)' here so this executes both when the shift button is pressed and when it is released.
-    // Therefore, MyController.shift will only be true while the shift button is held down
-    MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
-}
-
-MyController.someButton = function (channel, control, value, status, group) {
-    if (value === 127) { // only do stuff when the button is pressed, not when it is released
-        if (MyController.shift) {
-            // do something when this button and the shift button are both pressed
-        } else {
-            // do something else when this button is pressed but the shift button is not pressed
-        }
-    }
-}
-```
-
-While this approach can work well for simple cases, if you are checking
-the value of MyController.shift in many functions, it can get
-cumbersome. Also, it can get difficult to keep track of everything that
-happens in each mode, especially if you have more than two modes for a
-control.
-
 ### Storing commonly used MIDI codes in JS objects
 
 Putting codes you need to reference many times throughout your script
@@ -900,6 +857,49 @@ should be available from the controller manufacturer. This is likely in
 a document on the product page for your controller on the manufacturer's
 website. If it is not in a separate document, it is likely at the end of
 the manual.
+
+### Modifier (shift) buttons and layered mappings
+
+Many controllers send different MIDI signals while a shift button is
+held down. In that case, JavaScript may not be needed and using XML may
+be sufficient. However, if this is not the case, to have controls do
+something different depending on whether a shift button or layer
+switching button is active, you need to use JavaScript. There are
+multiple ways this can be accomplished.
+
+#### Tracking the state of the modifier in a variable
+
+One approach is to declare a boolean (true/false) variable to keep track
+of whether the modifier button is currently pressed. In the XML file,
+map the modifier button to a function that toggles the state of this
+variable and map other controls to functions that check the state of the
+variable. For example:
+
+``` javascript
+MyController.shift = false;
+
+MyController.shiftButton = function (channel, control, value, status, group) {
+    // Note that there is no 'if (value === 127)' here so this executes both when the shift button is pressed and when it is released.
+    // Therefore, MyController.shift will only be true while the shift button is held down
+    MyController.shift = ! MyController.shift // '!' inverts the value of a boolean (true/false) variable 
+}
+
+MyController.someButton = function (channel, control, value, status, group) {
+    if (value === 127) { // only do stuff when the button is pressed, not when it is released
+        if (MyController.shift) {
+            // do something when this button and the shift button are both pressed
+        } else {
+            // do something else when this button is pressed but the shift button is not pressed
+        }
+    }
+}
+```
+
+While this approach can work well for simple cases, if you are checking
+the value of MyController.shift in many functions, it can get
+cumbersome. Also, it can get difficult to keep track of everything that
+happens in each mode, especially if you have more than two modes for a
+control.
 
 #### Reassigning MIDI input functions
 

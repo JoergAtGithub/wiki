@@ -1058,16 +1058,16 @@ and get progressively more complex.
 
 ### Button presses
 
-MIDI buttons usually send a signal with a value of 0x7f when the button
-is pressed and 0x00 when the button is released. Thus, JavaScript
-functions mapped to button presses will be called both when the button
-is pressed and released. To make the function only do something when the
-button is pressed, wrap the function in an if statement checking the
-value parameter:
+MIDI buttons usually send a signal with a value of 0x7f (127) when the
+button is pressed and 0x00 (0) when the button is released. Thus,
+JavaScript functions mapped to button presses will be called both when
+the button is pressed and released. To make the function only do
+something when the button is pressed, wrap the function in an if
+statement checking the value parameter:
 
 ``` javascript
 MyController.someButton = function (channel, control, value, status, group) {
-    if (value) { // the number 0 is the same as false; positive numbers are the same as true
+    if (value === 127) {
         // do something when this button is pressed
     }
 }

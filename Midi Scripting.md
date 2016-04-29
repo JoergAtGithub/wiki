@@ -346,8 +346,8 @@ a document on the product page for your controller on the manufacturer's
 website. If it is not in a separate document, it is likely at the end of
 the manual.
 
-**Tip:** [Store commonly used MIDI values in global hash
-tables](#storing-commonly-used-MIDI-codes-in-global-hash-tables)
+**Tip:** [Store commonly used MIDI values in JS
+objects](#storing-commonly-used-MIDI-codes-in-JS-objects)
 
 ### Automatic reactions to changes in Mixxx
 

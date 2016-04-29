@@ -118,7 +118,7 @@ object. It looks like this:
 
 ...and you would replace `MyController` with whatever you entered for
 'functionprefix' in the XML file above. This declares a new JavaScript
-object representing your controller (in this example, an object called
+variable representing your controller (in this example, an object called
 `MyController`) and assigns it to an empty object.
 
 This object should have properties called "init" and "shutdown" defined

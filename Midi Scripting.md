@@ -807,55 +807,6 @@ cumbersome. Also, it can get difficult to keep track of everything that
 happens in each mode, especially if you have more than two modes for a
 control.
 
-#### Reassigning MIDI input functions
-
-An alternative approach is to define different functions for each layer.
-Because [\#MIDI input handling
-functions](#MIDI%20input%20handling%20functions) are variables that can
-be reassigned, the function executed when a shift button or modifier is
-activated can reassign the variables to different values. If you have
-multiple controls you want to change the behavior of in different
-conditions, it helps to group the MIDI input handling functions for each
-layer within an object.
-
-``` javascript
-// A container for the functions of the active layer.
-// Map the MIDI input handling functions to properties of this object,
-// for example, MyController.activeButtons.buttonA
-MyController.activeButtons = {};
-
-MyController.unshiftedButtons = {
-    buttonA = function (channel, control, value, status, group) {
-        //code to be executed when buttonA is pressed without shift
-    },
-    buttonB = function (channel, control, value, status, group) {
-        //code to be executed when buttonB is pressed without shift
-    }
-};
-
-MyController.shiftedButtons = {
-    buttonA = function (channel, control, value, status, group) {
-        //code to be executed when buttonA is pressed with shift
-    },
-    buttonB = function (channel, control, value, status, group) {
-        //code to be executed when buttonB is pressed with shift
-    }
-};
-
-MyController.init = function() {
-    MyController.activeButtons = MyController.unshiftedButtons;
-}
-
-MyController.shiftButton = function (channel, control, value, status, group) {
-    // This function is mapped to the incoming MIDI signals for the shift button in the XML file
-    if (value === 127) { // shift button pressed
-        MyController.activeButtons = MyController.unshiftedButtons;
-    } else { // shift button released
-        MyController.activeButtons = MyController.shiftedButtons;
-    }
-}
-```
-
 ### Storing commonly used MIDI codes in JS objects
 
 Putting codes you need to reference many times throughout your script
@@ -949,6 +900,55 @@ should be available from the controller manufacturer. This is likely in
 a document on the product page for your controller on the manufacturer's
 website. If it is not in a separate document, it is likely at the end of
 the manual.
+
+#### Reassigning MIDI input functions
+
+An alternative approach is to define different functions for each layer.
+Because [\#MIDI input handling
+functions](#MIDI%20input%20handling%20functions) are variables that can
+be reassigned, the function executed when a shift button or modifier is
+activated can reassign the variables to different values. If you have
+multiple controls you want to change the behavior of in different
+conditions, it helps to group the MIDI input handling functions for each
+layer within an object.
+
+``` javascript
+// A container for the functions of the active layer.
+// Map the MIDI input handling functions to properties of this object,
+// for example, MyController.activeButtons.buttonA
+MyController.activeButtons = {};
+
+MyController.unshiftedButtons = {
+    buttonA = function (channel, control, value, status, group) {
+        //code to be executed when buttonA is pressed without shift
+    },
+    buttonB = function (channel, control, value, status, group) {
+        //code to be executed when buttonB is pressed without shift
+    }
+};
+
+MyController.shiftedButtons = {
+    buttonA = function (channel, control, value, status, group) {
+        //code to be executed when buttonA is pressed with shift
+    },
+    buttonB = function (channel, control, value, status, group) {
+        //code to be executed when buttonB is pressed with shift
+    }
+};
+
+MyController.init = function() {
+    MyController.activeButtons = MyController.unshiftedButtons;
+}
+
+MyController.shiftButton = function (channel, control, value, status, group) {
+    // This function is mapped to the incoming MIDI signals for the shift button in the XML file
+    if (value === 127) { // shift button pressed
+        MyController.activeButtons = MyController.unshiftedButtons;
+    } else { // shift button released
+        MyController.activeButtons = MyController.shiftedButtons;
+    }
+}
+```
 
 ### Turning a 2 deck controller into a 4 deck controller
 

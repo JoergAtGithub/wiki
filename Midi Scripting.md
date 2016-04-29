@@ -936,7 +936,7 @@ MyController.shiftedButtons = {
     }
 };
 
-MyController.init = function() {
+MyController.init = function(id, debugging) {
     MyController.activeButtons = MyController.unshiftedButtons;
 }
 

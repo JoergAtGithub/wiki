@@ -203,7 +203,7 @@ MIDI signal, such as changing a Mixxx control, sending a MIDI signal
 back to the controller to change an LED, and/or printing a debug
 message.
 
-*/New in 2.1*: The value of the \<key\> element can be any snippet of
+*New in 2.1*: The value of the \<key\> element can be any snippet of
 JavaScript code that evaluates to a function.
 
 ## Programming Mixxx mappings with JavaScript

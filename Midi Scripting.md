@@ -235,10 +235,10 @@ including functions. This code does not merely define a function with a
 name (as many other programming languages do); it defines a property of
 the `ControllerName` object (which was [defined at the top of your
 script](#script-file-header)) called `functionName` and assigns it to
-the function expression on the right of the `=`. The `functionName`
-property of the `ControllerName` object is a variable that could be
-reassigned to a different function by the script at any time to change
-how the mapping handles input for this MIDI signal.
+the function expression on the right of the `=`.
+`MyController.functionName` is a variable that could be reassigned to a
+different function by the script at any time to change how the mapping
+handles input for this MIDI signal.
 
 You can leave off parameters you don't need from the end of the function
 declaration, but the parameters must stay in order. For example, if you

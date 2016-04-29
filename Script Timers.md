@@ -82,7 +82,7 @@ your code :
    }
 ```
 
-You already now that there are two way a timer can be stopped :
+You already know that there are two way a timer can be stopped :
 
   - Automatically, when the timer has ran out, the callback function is
     then called by the scripting engine.

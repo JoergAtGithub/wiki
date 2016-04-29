@@ -773,7 +773,7 @@ something different depending on whether a shift button or layer
 switching button is active, you need to use JavaScript. There are
 multiple ways this can be accomplished.
 
-#### Tracking the state of modifier in a variable
+#### Tracking the state of the modifier in a variable
 
 One approach is to declare a boolean (true/false) variable to keep track
 of whether the modifier button is currently pressed. In the XML file,

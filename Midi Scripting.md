@@ -1220,7 +1220,9 @@ a 4 deck controller by setting up your script following the example
 below. This example is complex, so if you are new to programming, it is
 recommended that you read the examples above before trying to understand
 this one. If you have trouble understanding this code, please ask for
-help [on the forum](http://mixxx.org/forums/viewforum.php?f=3).
+help [on the forum](http://mixxx.org/forums/viewforum.php?f=3). There
+are many different ways to organize the code and this is just one
+example.
 
 For every MIDI control that you want to map to a value that changes
 something about a specific deck, in the XML mapping file, map it to a

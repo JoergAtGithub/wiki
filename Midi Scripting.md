@@ -1167,7 +1167,8 @@ you can write:
 MyController.playButtonLED = function (value, group, control) {
     midi.sendShortMsg(
                       0x90,
-                      MyController.buttons[group].play, // an object's properties can be referenced through either SomeObject.property or SomeObject[property], but with the [] brackets, property can be a variable or other code
+                      MyController.buttons[group].play, // an object's properties can be referenced through either SomeObject.property or SomeObject[property]
+                                                        // but with the [] brackets, property can be a variable or other code
                       (value === 1) ? MyController.colorCodes.green : MyController.colorCodes.off
                       // The above line is a shortcut that means: "If value is 1, then send MyController.colorCodes.green; otherwise, send MyController.colorCodes.off"
                       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator

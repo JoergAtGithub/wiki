@@ -255,7 +255,7 @@ ControllerName.functionName = function (channel, control) {
 Script functions can check and set Mixxx control values using the
 following functions:
 
-``` c++
+``` javascript
 engine.getValue(string group, string key);
 engine.setValue(string group, string key, double newValue);
 ```
@@ -283,6 +283,10 @@ you've defined `currentDeck` and `currentValue` here):
 ``` javascript
 engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
 ```
+
+**Tip**: For toggling the state of a binary Mixxx Control, the
+`script.toggleControl(string group, string key)` function can be used as
+a convenient shortcut.
 
 ### Sending messages to the controller to change LEDs or other controller properties
 

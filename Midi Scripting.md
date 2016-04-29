@@ -265,14 +265,14 @@ To check a Mixxx control value, call `engine.getValue()` with the
 which can be found [here](mixxxcontrols). So for example:
 
 ``` javascript
-var currentValue = engine.getValue("[Channel1]","rate");
+var currentValue = engine.getValue("[Channel1]", "rate");
 ```
 
 Values can be set just as easily by calling `engine.setValue()` with the
 `group` and `key` as above, and the new value to set, like so:
 
 ``` javascript
-engine.setValue("[Channel1]","rate",0.5);
+engine.setValue("[Channel1]", "rate", 0.5);
 ```
 
 Note that since this is a script, you can do calculations and use state
@@ -281,7 +281,7 @@ single controller working with Mixxx's multiple virtual decks (assuming
 you've defined `currentDeck` and `currentValue` here):
 
 ``` javascript
-engine.setValue("[Channel"+currentDeck+"]","rate",(currentValue+10)/2);
+engine.setValue("[Channel"+currentDeck+"]", "rate", (currentValue+10)/2);
 ```
 
 **Tip**: For toggling the state of a binary Mixxx Control, the

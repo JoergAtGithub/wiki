@@ -1150,15 +1150,16 @@ Easier to read code helps you remember what it does when you look at it
 again later. It also helps other people who may modify the code later.
 For example, for a function that [automatically reacts to
 changes](#automatic-reactions-to-changes-in-Mixxx) of the play state of
-a track, you can write:
+a track (through the play\_indicator [MixxxControl](MixxxControl)), you
+can write:
 
 ``` javascript
 MyController.playButtonLED = function (value, group, control) {
     midi.sendShortMsg(
                       0x90,
-                      MyController.buttons[group]['play'],
-                      (value) ? MyController.colorCodes['green'] : MyController.colorCodes['off']
-                      // The above line is a shortcut that means: "If value is greater than 0 (which is equivalent to true), then send MyController.colorCodes['green']; otherwise, send MyController.colorCodes['off']"
+                      MyController.buttons[group].play,
+                      (value) ? MyController.colorCodes.green : MyController.colorCodes.off
+                      // The above line is a shortcut that means: "If value is greater than 0 (which is equivalent to true), then send MyController.colorCodes.green; otherwise, send MyController.colorCodes.off"
                       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
                      )
 }

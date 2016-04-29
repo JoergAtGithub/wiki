@@ -1126,9 +1126,10 @@ into a [JavaScript
 object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 makes your code more organized, readable, and easier to modify later. A
 JavaScript object is a container for variables of any other type
-(including functions and other objects), referred to as the Object's
-attributes. For example, you could store the MIDI notes for buttons and
-the MIDI values for LED colors:
+(including functions and other objects), referred to as the object's
+attributes. In this case, they are used similar to hash tables in other
+programming languages. For example, you could store the MIDI notes for
+buttons and the MIDI values for LED colors:
 
 ``` javascript
 MyController.buttons = {

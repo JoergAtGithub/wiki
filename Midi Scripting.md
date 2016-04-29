@@ -432,8 +432,9 @@ have no effect until the position of the hardware control is close to
 that of the software, at which point it will take over and operate as
 usual. You can enable and disable it at any point, and it operates on
 each MixxxControl independently. Typically, for each control that has
-physical limits on your controller, you would enable soft-takeover in
-the `init()` script function and just leave it enabled.
+physical limits (typically, knobs and sliders) on your controller, you
+would enable soft-takeover in the `init()` script function and just
+leave it enabled.
 
 It's very simple to use:
 
@@ -442,8 +443,9 @@ engine.softTakeover(string group, string key, bool enable);
 ```
 
 So to enable soft-takeover for the pitch control on channel
-1:`engine.softTakeover("[Channel1]","rate",true);
-` ...and to disable it: `engine.softTakeover("[Channel1]","rate",false);
+1:`engine.softTakeover("[Channel1]", "rate", true);
+` ...and to disable it: `engine.softTakeover("[Channel1]", "rate",
+false);
 `
 
 Note that this only works for controls manipulated through
@@ -457,7 +459,7 @@ soft-takeover status each time you change what the physical control is
 manipulating. Do this with the following function:
 
 ``` javascript
-engine.softTakeoverIgnoreNextValue("[Channel1]","rate");
+engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");
 ```
 
 ### Scratching

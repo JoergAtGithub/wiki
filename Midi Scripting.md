@@ -123,6 +123,8 @@ For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
 turn on when sent value 0x00, your init and shutdown functions could be:
 
+    var MyController = {};
+    
     MyController.init = function () {
         // turn on all LEDs
         for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40

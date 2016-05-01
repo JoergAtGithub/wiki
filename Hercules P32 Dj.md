@@ -118,8 +118,8 @@ does work for switching between dry/wet and the superknob though.
   - **Slip button**: not mapped yet
   - **Pad grid**: Press the Hotcue/Loop/Slicer/Sampler buttons to
     activate different modes
-  - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a lit pad
-    to activate a hotcue. Press a lit pad with shift to delete a hotcue.
+  - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a red pad
+    to activate a hotcue. Press a red pad with shift to delete a hotcue.
   - **Loop mode**: not mapped yet
   - **Slicer mode**: not mapped yet
   - **Sampler mode**: Press an unlit pad to load the track selected in

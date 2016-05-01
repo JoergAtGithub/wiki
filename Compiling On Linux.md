@@ -18,7 +18,7 @@ them by running:
       libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
       libvamp-hostsdk3v5 vamp-plugin-sdk libusb-1.0-0-dev libfftw3-dev libmad0-dev \
       portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
-      libid3tag0-dev libflac-dev libsndfile-dev
+      libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev
     sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
     sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 

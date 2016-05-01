@@ -263,13 +263,6 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### Effects framework
 
-Starting in Mixxx 2.0, the equalizers and filter controls have been
-moved to special effects units. The EQs are controlled by
-\[EqualizerRack1\_\[Channel*N*\]\_Effect1\] and the filter knob is
-controlled by \[QuickEffectRack1\_\[Channel*N*\]\]. Users can choose
-between several options for the effects loaded in these racks in the
-Equalizers section of the Preferences window.
-
 See the [effects framework](effects_framework#controls) page for more
 information.
 
@@ -315,6 +308,15 @@ information.
 |  | \[EffectRack1\_EffectUnitN\_EffectM\] |  | button\_parameterK           |  | double               |  | The value of the Kth parameter. See the Parameter Values section for more information.                                     |  |
 |  | \[EffectRack1\_EffectUnitN\_EffectM\] |  | button\_parameterK\_loaded   |  | binary, read-only    |  | Whether or not the Kth parameter slot has an effect parameter loaded into it.                                              |  |
 |  | \[EffectRack1\_EffectUnitN\_EffectM\] |  | button\_parameterK\_type     |  | integer, read-only   |  | The type of the Kth parameter value. See the Parameter Value Types table.                                                  |  |
+
+## EQs and filters
+
+Starting in Mixxx 2.0, the equalizers and filter controls have been
+moved to special effects units. The EQs are controlled by
+\[EqualizerRack1\_\[Channel*N*\]\_Effect1\] and the filter knob is
+controlled by \[QuickEffectRack1\_\[Channel*N*\]\]. Users can choose
+between several options for the effects loaded in these racks in the
+Equalizers section of the Preferences window.
 
 ### Deprecated controls
 

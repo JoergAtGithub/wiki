@@ -116,11 +116,21 @@ does work for switching between dry/wet and the superknob though.
   - **Record button**: toggles recording on and off. With shift, toggles
     between decks 1 & 3 on the left and decks 2 & 4 on the right.
   - **Slip button**: not mapped yet
-  - **Pad grid**: Only the Hotcue layer is mapped yet. Press the Hotcue
-    button to activate this layer if the Hotcue button is not lit.
-    Pressing an unlit pad in the grid sets a hotcue. Pressing a lit pad
-    activates that hotcue. Pressing a lit pad with shift deletes that
+  - **Pad grid**: Press the Hotcue/Loop/Slicer/Sampler buttons to
+    activate different modes
+  - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a lit pad
+    to activates that hotcue. Press a lit pad with shift to deletes a
     hotcue.
+  - **Loop mode**: not mapped yet
+  - **Slicer mode**: not mapped yet
+  - **Sampler mode**: Press an unlit pad to load the track selected in
+    the library to that sampler. Pads are blue when the sampler is
+    loaded but not playing and red when playing. Press a blue pad to
+    play the sample from its cue point. Press a red pad to jump back to
+    the sample's cue point. Press a red pad with shift to stop a playing
+    sample. Press a blue pad with shift to eject a sample. Note that
+    samplers are independent from decks; the left grid controls samplers
+    1-16 and the right grid controls samplers 17-32. 
   - **Shift + sync**: toggle quantize
   - **Shift + cue**: toggle keylock
   - **Shift + play**: go to beginning of track and stop

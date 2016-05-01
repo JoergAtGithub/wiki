@@ -263,8 +263,15 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### Effects framework
 
-(See the [effects framework](effects_framework#controls) page for more
-information.)
+Starting in Mixxx 2.0, the equalizers and filter controls have been
+moved to special effects units. The EQs are controlled by
+\[EqualizerRack1\_\[Channel*N*\]\_Effect1\] and the filter knob is
+controlled by \[QuickEffectRack1\_Effect1\]. Users can choose between
+several options for the effects loaded in these racks in the Equalizers
+section of the Preferences window.
+
+See the [effects framework](effects_framework#controls) page for more
+information.
 
 |  | EffectRack Controls                   |  |                              |  |                      |  |                                                                                                                            |  |
 |  | ------------------------------------- |  | ---------------------------- |  | -------------------- |  | -------------------------------------------------------------------------------------------------------------------------- |  |

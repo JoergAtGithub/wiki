@@ -111,6 +111,13 @@ format:
         <control>
 ```
 
+or this:
+
+``` 
+      <controls length=14> <!-- Optional format that specifies how many bytes the packet must be in order to use this block to interpret the packet. -->
+        <control>
+```
+
 #### MixxxControl
 
 Group and key define the part of Mixxx that you want to affect. For a

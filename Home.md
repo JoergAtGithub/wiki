@@ -115,6 +115,7 @@ please fix it.
 
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
+  - [Google Summer of Code](gsoc) student projects and information.
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
 
@@ -128,7 +129,6 @@ please fix it.
 
 ### Archives
 
-  - [Google Summer of Code](gsoc) information and archives
   - [Developer meeting archives](meetings%20archive)
   - Bazaar (legacy) code browsing on
     [Launchpad](https://code.launchpad.net/mixxx)

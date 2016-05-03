@@ -83,18 +83,6 @@ already installed Homebrew and gotten it working:
     brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt chromaprint rubberband fftw vamp-plugin-sdk opusfile
 ```
 
-If you have trouble compiling *rubberband* and *vamp-plugin-sdk*, try
-the following Homebrew formulas:
-
-  - <http://tuohela.net/irc/vamp-plugin-sdk.rb>
-  - <http://tuohela.net/irc/rubberband.rb>
-
-<!-- end list -->
-
-``` 
-    brew install http://tuohela.net/irc/vamp-plugin-sdk.rb http://tuohela.net/irc/rubberband.rb
-```
-
 **OPTIONAL:** To enable
 [libmodplug](http://modplug-xmms.sourceforge.net/) based module tracker
 support.

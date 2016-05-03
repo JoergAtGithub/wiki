@@ -303,7 +303,7 @@ and install:
 If you used the 1.11 branch, you must type `cd mixxx` twice.
 
     cd mixxx
-    scons hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
+    scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
     scons bundle
 
 This should generate `Mixxx.app` which you can run by double-clicking on
@@ -370,6 +370,12 @@ via the `qtdir` flag. For example, you could try:
     scons qtdir=/Developer
 
 Because /Developer is a common place for Qt to drop its frameworks.
+
+\== Missing "initializer\_list".
+
+This most likely means you are building Mixxx with libstdc++ and not
+libc++. Mixxx now requires C++11 so libstdc++ is no longer an option
+since it does not support C++11 features like initializer\_list.
 
 ##### d: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
 

@@ -378,13 +378,14 @@ via the `qtdir` flag. For example, you could try:
 
 Because /Developer is a common place for Qt to drop its frameworks.
 
-\== Missing "initializer\_list".
+##### Missing "initializer\_list".
 
 This most likely means you are building Mixxx with libstdc++ and not
-libc++. Mixxx now requires C++11 so libstdc++ is no longer an option
-since it does not support C++11 features like initializer\_list.
+libc++. Mixxx versions newer than 2.0 now require C++11 so libstdc++ is
+no longer an option since it does not support C++11 features like
+initializer\_list.
 
-##### d: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
+##### ld: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
 
 Try the "scons" command above like this:
 

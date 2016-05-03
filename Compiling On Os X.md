@@ -292,10 +292,17 @@ your homebrew installation. In this example we will use
 `/usr/local/homebrew` (default is `/usr/local`).
 
     HOMEBREW_PATH=/usr/local/homebrew
-    export CFLAGS=-I$HOMEBREW_PATH/include
-    export CXXFLAGS=-I$HOMEBREW_PATH/include
+    # See the note below about the Opus workaround.
+    export CFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
+    export CXXFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
     export LDFLAGS=-L$HOMEBREW_PATH/lib
     export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.5/
+
+**Opus Workaround:** The version of libopus included with Homebrew has a
+bug where opusfile.h includes the file opus\_multistream.h. In order for
+this file to be present on the include path, we need to add
+$HOMEBREW\_PATH/usr/include/opus to the include path. This will
+hopefully be fixed in future versions of libopusfile.
 
 Change to the newly created `mixxx` directory, and use scons to compile
 and install:

@@ -15,12 +15,12 @@
   - [Blank template
     image](https://www.google.com/search?q=lib/exe/detail.php/hardware:tweaker-blank-template.svg&btnI=lucky)
 
-The Electrix Tweaker is a flexible, well-built MIDI controller. It does
-not take up space with jog wheels; instead, there are a plethora of
-multicolor backlit buttons, 8 velocity-sensitive buttons, and 6
-infinitely rotating encoders surrounded by LED rings (rather than finite
-range EQ knobs). It can be used by itself to control most aspects of
-Mixxx. It has no audio interface, so it requires a [separate sound
+The Electrix Tweaker is an unconventional MIDI controller. Instead of
+jog wheels, it has an 8x4 grid of multicolor backlit buttons, 8
+velocity-sensitive buttons, and 6 infinitely rotating encoders
+surrounded by LED rings (rather than finite range EQ knobs). It can be
+used by itself to control most aspects of Mixxx. It has no audio
+interface, so it requires a [separate sound
 card](hardware%20compatibility#stand-alone%20usb%20sound%20cards)
 (although it does include 5-pin MIDI in and out ports). It apparently
 did not sell well considering how little information there is about it

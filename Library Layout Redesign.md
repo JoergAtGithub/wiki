@@ -115,7 +115,7 @@ When the bugfixing is done this becomes (v. 0.2.0).
 
 [[/media/gsoc_2016/library_0_2_0.png|]]
 
-### v.0.3.0 Browse PC view
+### v.0.3.0 - Browse PC view
 
 This view will extend the current Browse PC view adding the option to
 view a single folder instead of all the system folders tree. When the

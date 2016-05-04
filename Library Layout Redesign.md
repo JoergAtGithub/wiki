@@ -10,15 +10,24 @@ All the weekly development will be posted here:
 
 This proposal consists of the implementation of a library layout
 redesign with tabs for special purpose. The Qt Treeview will be changed
-by a vertical layout of buttons allowing more space in many views (from
-this point this will be called the LibrarySidebar collapsed version).
-Many things are inspired in Clementine player and others are inspired in
-the library layout redesign discussion thread
-(<https://bugs.launchpad.net/mixxx/+bug/986704>). The layout is designed
-taking in account the controllers. This will be developed in different
-small releases
+to a vertical layout of buttons allowing more space in many views (from
+this point this will be called the LibrarySidebar collapsed version, the
+current existing LibrarySidebar will be called the expanded version).
+All things will take in account the controllers. Also, many things are
+inspired in [Clementine](https://www.clementine-player.org/) player and
+others are inspired in the library layout redesign discussion thread
+([Bug \#986704](https://bugs.launchpad.net/mixxx/+bug/986704)). This
+will be developed in different small releases. The changes will be the
+following:
 
-### Timeline:
+  - **Library tab:** add to the current LibrarySidebar a collapsed
+    version (removing the Qt Treeview in some cases).
+  - **Library view:** the Treeview will be changed to create a one
+    similar to the one existing in Clementine player
+  - **Browse PC view:** this will add to this tab the option to see
+    folders as a tree or only a single folder (selected in preferences).
+
+## Timeline:
 
 W1 May 9th - May 15th:
 

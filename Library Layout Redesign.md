@@ -42,7 +42,7 @@ new layout it will be able to fit in small screens (1024\*600).
 
 ## Deliverables
 
-### v.0.1.0 - LibrarySidebar collapsed
+### v.0.1.0 - LibrarySidebar
 
 This is the first step in the project, the LibrarySidebar will have
 small buttons instead of the current treeview items to select the

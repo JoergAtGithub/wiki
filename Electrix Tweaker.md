@@ -19,24 +19,15 @@ The Electrix Tweaker is an unconventional MIDI controller that can
 control most aspects of Mixxx. Instead of jog wheels, it has an 8x4 grid
 of multicolor backlit buttons, 8 velocity-sensitive buttons, and 6
 infinitely rotating encoders surrounded by LED rings (rather than finite
-range EQ knobs). It has no audio interface, so it requires a [separate
-sound card](hardware%20compatibility#stand-alone%20usb%20sound%20cards)
-(although it does include 5-pin MIDI in and out ports). It apparently
-did not sell well considering how little information there is about it
-online. It initially sold for $400 in 2013 but is now available for $100
-with a free case and free shipping in the US from [the
-manufacturer](http://electrixpro.com/).
+range EQ knobs). It does not have a built in sound card, so it requires
+a [separate sound card](hardware%20compatibility#usb%20sound%20cards) or
+[splitter cable](hardware%20compatibility#splitter%20cables) (although
+it does include 5-pin MIDI in and out ports).
 
-The flexibility of the encoders with LED rings and the multicolor
-buttons allows this mapping to fit *a lot* of functionality into a small
-package. The encoders control EQs, gains, loops, and coarse seeking in
-various modes. This mapping can control 4 decks by toggling between
-decks 1/3 on the left and decks 2/4 on the right. Each deck shows 8
-hotcues at a time and 4 pages of hotcues are available, providing access
-to all 32 hotcues allowed by the Mixxx engine. This mapping also takes
-advantage of slip mode, which is not yet available through any of
-Mixxx's skins. With slip mode and all those hotcues, this mapping is
-excellent for cue juggling.
+It apparently did not sell well considering how little information there
+is about it online. It initially sold for $400 in 2013 but is now
+available for $100 with a free case and free shipping in the US from
+[the manufacturer](http://electrixpro.com/).
 
 ## Compatibility
 

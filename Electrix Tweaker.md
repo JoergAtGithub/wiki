@@ -3,13 +3,6 @@
 
   - [Manufacturer's website](http://electrixpro.com/)
   - [Forum topic](http://mixxx.org/forums/viewtopic.php?f=7&t=7189)
-  - [GitHub
-    branch](https://github.com/Be-ing/mixxx/tree/tweaker_mapping):
-    download [Electrix
-    Tweaker.midi.xml](https://raw.githubusercontent.com/Be-ing/mixxx/tweaker_mapping/res/controllers/Electrix%20Tweaker.midi.xml)
-    and
-    [Electrix-Tweaker-scripts.js](https://raw.githubusercontent.com/Be-ing/mixxx/tweaker_mapping/res/controllers/Electrix-Tweaker-scripts.js)
-    to try the latest updates
   - [Manufacturer's
     manual](http://electrixpro.com/wp-content/uploads/2014/10/Tweaker_User_Manual.pdf)
   - [Blank template
@@ -24,12 +17,13 @@ card](hardware%20compatibility#usb%20sound%20cards) or [splitter
 cable](hardware%20compatibility#splitter%20cables) (although it does
 include 5-pin MIDI in and out ports).
 
-## Compatibility
+The mapping is included with Mixxx starting with Mixxx 2.0.
+
+## Compatibility and setup
 
 The Tweaker is a USB MIDI class compliant device, so it does not require
 any special drivers on any operating system. Just plug it in and load
-the Mixxx mapping on any OS that Mixxx runs on. The mapping is included
-with Mixxx starting with Mixxx 2.0.
+the Mixxx mapping on any OS that Mixxx runs on.
 
 Use it with the Tweaker MIDI 1 port (Tweaker MIDI 2 is the 5-pin MIDI
 I/O on the Tweaker).

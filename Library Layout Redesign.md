@@ -56,7 +56,7 @@ only will be changing the LibrarySidebar class model view. This will be
 a new class and will not replace the existing LibrarySidebar so there
 will be a collapsed and a expanded version of the LibrarySidebar.
 
-\[Picture here\]
+[[/media/gsoc_2016/library_0_1_0.png|]]
 
 ### v.0.2.0 - Library View
 
@@ -70,7 +70,7 @@ and the other (at right) for the songs in the playlist/crate. The user
 can add songs with the right click context menu or drag them directly
 from the left to the right.
 
-\[picture here\]
+[[/media/gsoc_2016/library_0_1_1.png|]]
 
 #### v.0.1.2 Add Clementine like view
 
@@ -87,9 +87,9 @@ the following sorting options to group by:
   - Genre / Artist
   - Genre / Artist / Album
 
-\[picture here\]
+[[/media/gsoc_2016/library_0_1_2.png|]]
 
-#### v.0.2.1 Add advanced grouping
+#### v.0.1.2.1 Add advanced grouping
 
 Allows the user to select the 1st, 2nd and 3rd level for grouping
 elements.
@@ -113,7 +113,7 @@ showing the following menu:
 
 When the bugfixing is done this becomes (v. 0.2.0).
 
-\[picture here\]
+[[/media/gsoc_2016/library_0_2_0.png|]]
 
 ### v.0.3.0 Browse PC view
 
@@ -126,6 +126,8 @@ in two different ways, a tree browse or a folder browse (can be selected
 at preferences). The right view shows the found songs in the selected
 folder (it can also show the songs in the subdirs inside the selected
 folder, can be selected at preferences).
+
+[[/media/gsoc_2016/library_0_3_0.png|]]
 
 ## Timeline:
 

@@ -23,11 +23,11 @@ working on Linux as well.
 
 The controls for library browsing are in the center of the controller.
 
-| Control             | Function                                                                                  |
-| ------------------- | ----------------------------------------------------------------------------------------- |
-| Rotary knob         | Track selection                                                                           |
-| Load buttons        | Loads currently highlighted track to the corresponding deck (only if no audio is playing) |
-| Pushing rotary knob | Loads currently highlighted track to the first deck that isn't playing audio              |
+| Control                | Function                                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------- |
+| Rotary encoder         | Track selection                                                                           |
+| Load buttons           | Loads currently highlighted track to the corresponding deck (only if no audio is playing) |
+| Pushing rotary encoder | Loads currently highlighted track to the first deck that isn't playing audio              |
 
 ### Jog wheels
 

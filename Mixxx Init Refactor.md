@@ -35,13 +35,13 @@ For example:
   - etc.
 
 This helps enforce modularity. Services that depend on one-another
-should interface via the public API of the manager classes. Not all code
+should interface via the public API of the manager classes. Not all
 existing code follows this rule, but we aim to.
 
 There is a proliferation of "hidden" dependencies between services in
 Mixxx today. This happens via a variety of mechanisms:
 
-  - State sharing via Controls or UserSettings.
+  - State sharing and message passing via Controls or UserSettings.
   - Singleton classes.
   - Implicit assumptions about ordering of events.
 
@@ -57,9 +57,11 @@ and everything seems fine, features break and in the worst case Mixxx
 crashes at runtime. Not good\!
 
 The lack of organization in the bootup process also leads to long delays
-at startup. Since everything in the bootup process is one long serial
-list of steps to take, we can't show the UI to the user until everything
-has initialized fully.
+at startup. In Mixxx 2.0, this became so pronounced that we found it
+necessary to introduce a splash screen so the user doesn't think the app
+is just broken. Since everything in the bootup process is one long
+serial list of steps to take, we can't show the UI to the user until
+everything has initialized fully.
 
 To disentangle this mess, we propose a significant refactoring based on
 these principles:

@@ -130,3 +130,5 @@ class Manager {
     void readPreferences(UserSettingsPointer pSettings) = 0;
 };
 ```
+
+test

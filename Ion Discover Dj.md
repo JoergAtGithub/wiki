@@ -41,7 +41,7 @@ Pressing the center button will put the jog wheels in scratch mode,
 which means that the deck in Mixxx will follow the absolute movement of
 the jog wheels. In this mode the Scratch button is lit.
 
-### Equalizer
+### Equalizers
 
 This controller only has a 2-band equalizer but Mixxx uses a 3-band EQ.
 Therefore, the volume knob has been mapped to the low EQ, the bass knob

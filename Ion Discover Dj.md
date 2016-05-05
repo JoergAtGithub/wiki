@@ -9,8 +9,8 @@ The ION Discover DJ is a cheap budget MIDI controller meant to "discover
 DJ-ing" for people with a potential interest. It does not have a built
 in sound card, so a [splitter
 cable](hardware%20compatibility#splitter%20cables) or [separate sound
-card](hardware%20compatibility#USB%20sound%20cards) would be required to
-use headphones with it.
+card](hardware%20compatibility#USB%20sound%20cards) is required to use
+headphones with it.
 
 ### Compatibility
 

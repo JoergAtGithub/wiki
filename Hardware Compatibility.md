@@ -15,7 +15,7 @@ Helpful but not strictly necessary:
   - sound card with 4 mono outputs (2 stereo pairs)
   - [controller](#controllers) and/or [turntables with timecode
     vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
-  - laptop stand
+  - [laptop stand](laptop%20stands)
   - surge protector
   - cases for laptop, controller, and headphones
   - backpack or other carrying case

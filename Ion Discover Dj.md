@@ -14,9 +14,10 @@ headphones with it.
 
 ### Compatibility
 
-This controller is USB MIDI class compliant and plug-and-play on all
-platforms. The manufacturer's page only mentions Windows and Mac but
-it's confirmed working on Linux as well.
+This controller is USB MIDI class compliant, so it is plug-and-play on
+all platforms without having to install any special drivers. The
+manufacturer's page only mentions Windows and Mac but it's confirmed
+working on Linux as well.
 
 ### Library browsing
 

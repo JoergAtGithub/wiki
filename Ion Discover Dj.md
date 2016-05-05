@@ -46,7 +46,8 @@ the jog wheels. In this mode the Scratch button is lit.
 This controller only has a 2-band equalizer but Mixxx uses a 3-band EQ.
 Therefore, the volume knob has been mapped to the low EQ, the bass knob
 has been mapped to the mid EQ, and the treble knob has been mapped to
-the high EQ. For volume control between the decks, use the crossfader.
+the high EQ. For controlling the volume of the decks, use the
+crossfader.
 
 ### Other buttons
 

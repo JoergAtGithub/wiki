@@ -5,14 +5,18 @@
     page](http://www.ionaudio.com/products/details/discover-dj)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=939)
 
-The ION Discover DJ is a cheap budget midi-controller meant to "discover
-DJ-ing" for people with a potential interest.
+The ION Discover DJ is a cheap budget MIDI controller meant to "discover
+DJ-ing" for people with a potential interest. It does not have a built
+in sound card, so a [splitter
+cable](hardware%20compatibility#splitter%20cables) or [separate sound
+card](hardware%20compatibility#USB%20sound%20cards) would be required to
+use headphones with it.
 
-### Drivers
+### Compatibility
 
-This controller is MIDI compliant and plug-and-play on all platforms.
-The manufacturer's page only mentions windows and mac but it's confirmed
-working on linux as well.
+This controller is USB MIDI class compliant and plug-and-play on all
+platforms. The manufacturer's page only mentions Windows and Mac but
+it's confirmed working on Linux as well.
 
 ### Library browsing
 
@@ -24,33 +28,36 @@ The controls for library browsing are in the center of the controller.
 | Load buttons        | Loads currently highlighted track to the corresponding deck (only if no audio is playing) |
 | Pushing rotary knob | Loads currently highlighted track to the first deck that isn't playing audio              |
 
-### Switching between search and scratch mode
+### Jog wheels
 
-The button in the center can be used to switch between search and
-scratch mode. in search mode the turntables can be used to seek a
-particular section of a song when paused. When that deck is playing the
-turntables can be pushed/pulled to speed up/slow down the playback. this
-is useful for beatmatching. Pressing the center button will put the
-turntables in scratch mode which means that the deck in mixxx will
-follow the absolute movement of the turntables. In this mode the button
-is lit.
+The button in the center can be used to switch the jog wheels between
+search and scratch mode. In search mode, the jog wheels can be used to
+seek to different parts of a song when paused. When that deck is
+playing, the jog wheels can be pushed/pulled to speed up/slow down the
+playback. This is useful for beatmatching.
+
+Pressing the center button will put the jog wheels in scratch mode,
+which means that the deck in Mixxx will follow the absolute movement of
+the jog wheels. In this mode the Scratch button is lit.
 
 ### Equalizer
 
-This controller only has a 2-band equalizer where mixxx uses a 3-band
-one. Therefore the volume knob has been mapped to the low-EQ, the
-bass-knob has been mapped to the mid-eq and the treble-knob has been
-mapped to the high-eq. For volume control between the decks, use the
-cross-fader.
+This controller only has a 2-band equalizer but Mixxx uses a 3-band EQ.
+Therefore, the volume knob has been mapped to the low EQ, the bass knob
+has been mapped to the mid EQ, and the treble knob has been mapped to
+the high EQ. For volume control between the decks, use the crossfader.
 
-### other buttons
+### Other buttons
 
 The pitch buttons will control the tempo which also controls the pitch,
-except when the pitch is locked (padlock icon)
+except when keylock is on (padlock icon on screen).
 
-| Button     | Function                                                           | Light                                                                                        |
-| ---------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| Sync       | matches the BPM of that deck to the song playing in the other deck | Blinks according to the beatgrid                                                             |
-| Rev        | while held the deck plays in reverse                               | only lights when pressed                                                                     |
-| CUE        | Attached to the cue control in mixxx                               | lights when the playback cursor is on the cue mark, otherwise blinks when the deck is paused |
-| play/pause | Play/pause the deck                                                | lights when the deck is playing                                                              |
+| Button     | Function                                                           | Light                            |
+| ---------- | ------------------------------------------------------------------ | -------------------------------- |
+| Sync       | Matches the BPM of that deck to the song playing in the other deck | Blinks according to the beatgrid |
+| Rev        | While held the deck plays in reverse                               | only lights when pressed         |
+| CUE        | Attached to the cue control in mixxx                               | follows cue button on screen     |
+| play/pause | Play/pause the deck                                                | follows play button on screen    |
+
+The behavior of the cue and play buttons can be configured [in Mixxx's
+preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).

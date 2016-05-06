@@ -2,7 +2,7 @@
 
 ## Summary
 
-**Status**: This specification is **in progress**.
+**Status**: This specification is **implemented**.
 
 Mixxx has over 400 source files, all of which are stored alone in the
 'src' directory. As Mixxx is gaining contributors, it is important for

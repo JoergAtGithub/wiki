@@ -27,7 +27,7 @@ The controls for library browsing are in the center of the controller.
 | ---------------------- | ----------------------------------------------------------------------------------------- |
 | Rotary encoder         | Track selection                                                                           |
 | Load buttons           | Loads currently highlighted track to the corresponding deck (only if no audio is playing) |
-| Pushing rotary encoder | Loads currently highlighted track to the first deck that isn't playing audio              |
+| Pushing rotary encoder | Maximizes/minimizes the library                                                           |
 
 ### Jog wheels
 

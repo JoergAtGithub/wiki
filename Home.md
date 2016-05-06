@@ -122,9 +122,6 @@ please fix it.
 ### Code Reference
 
   - [Performance improvements](Performance%20improvements)
-  - [Code cleanup & cruft removal task list](code_cleanup)
-  - [SoundSource interface (sound
-    proxies)](SoundSource%20interface%20\(sound%20proxies\))
   - [Threads](Threads)
 
 ### Archives

@@ -20,9 +20,14 @@
   - Integrated Development Environments (IDEs):
     [Eclipse](http://eclipse.org/), [Qt
     Creator](http://wiki.qt.io/Category:Tools::QtCreator)
-  - Text editors: [Notepad++](http://notepad-plus.sourceforge.net/)
+  - Text editors: [Notepad++](http://notepad-plus.sourceforge.net/),
+    [emacs](https://www.gnu.org/software/emacs/)
   - Git tools: [Tortise Git](https://tortoisegit.org/), [Git
     Extensions](http://gitextensions.github.io/)
+
+## Mac OS X
+
+  - Text editors: [emacs](https://www.gnu.org/software/emacs/)
 
 ## Using IDEs
 

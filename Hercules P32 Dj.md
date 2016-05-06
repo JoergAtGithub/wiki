@@ -127,8 +127,7 @@ does work for switching between dry/wet and the superknob though.
     to activate a hotcue. Press a red pad with shift to delete a hotcue.
   - **Loop mode**: Control manual loops. From left to right, the pads
     set the loop in point, loop out point, and toggle the loop (without
-    changing its size). Use the loop encoder to set loops of a
-    predefined number of beats.
+    changing its size).
   - **Slicer mode**: not mapped yet
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is

@@ -9,7 +9,8 @@
   - Text editors:
     [gedit](http://www.gnome.org/projects/gedit/screenshots.html),
     [kate](http://kate-editor.org/),
-    [SciTE](http://www.scintilla.org/SciTE.html)
+    [SciTE](http://www.scintilla.org/SciTE.html),
+    [emacs](https://www.gnu.org/software/emacs/)
   - Git tools: gitk (comes with git),
     [git-cola](http://git-cola.github.io/),
     [gitg](https://wiki.gnome.org/Apps/Gitg/)

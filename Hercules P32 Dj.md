@@ -65,6 +65,11 @@ gEdit) and editing the lines at the very top of the file.
     to 2-32 beats and may be helpful if you never use loops less than 2
     beats long. Otherwise the dot indicates a loop size equal to 1/(\#
     on the LED display).
+  - **samplerCrossfaderAssign**: whether to assign the samplers to the
+    crossfader. If true, the samplers controlled by the left pad grid
+    are assigned to the left of the crossfader and the samplers
+    controlled by the right pad grid are assigned to the right of the
+    crossfader.
 
 ### Encoders
 
@@ -120,7 +125,9 @@ does work for switching between dry/wet and the superknob though.
     activate different modes
   - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a red pad
     to activate a hotcue. Press a red pad with shift to delete a hotcue.
-  - **Loop mode**: not mapped yet
+  - **Loop mode**: Control manual loops. From left to right, the pads
+    set the loop in point, loop out point, and toggle the loop (without
+    changing its size).
   - **Slicer mode**: not mapped yet
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is

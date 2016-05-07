@@ -17,11 +17,11 @@ and sample pads for on-the-fly creativity.
 
 ## Mapping
 
-[[/media/hardware/denon_mc4000_controller_layout.svg|]]
-
-The mapping is mostly the same as the standard Serato mapping, with a
-few exceptions which are highlighted below with
+The Mixxx mapping is mostly the same as the standard Serato mapping,
+with a few exceptions which are highlighted below with
 <span class="underline">underlined text</span>.
+
+[[/media/hardware/denon_mc4000_controller_layout.svg|]]
 
 1\. **Channel Level:** Turn this knob to adjust the level of the
 pre-fader, pre-EQ audio signal for the channel.

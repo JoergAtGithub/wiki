@@ -19,7 +19,9 @@ and sample pads for on-the-fly creativity.
 
 The Mixxx mapping is mostly the same as the standard Serato mapping,
 with a few exceptions which are highlighted below with
-<span class="underline">underlined text</span>.
+<span class="underline">underlined text</span> or ~~strikethrough~~
+where a specific functionality that exists in Serato is not (yet)
+implemented in the Mixxx mapping.
 
 [[/media/hardware/denon_mc4000_controller_layout.svg|]]
 

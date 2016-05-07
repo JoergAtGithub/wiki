@@ -4,6 +4,7 @@
 
   - [Manufacturer's product
     page](http://denondj.com/products/view/mc4000)
+  - [Video review](https://www.youtube.com/watch?v=vXyXSGjeT9o)
   - [Manual / Midi
     commands](http://b06ba727c886717f9577-fff53f927840131da4fecbedd819996a.r74.cf2.rackcdn.com//1444/documents/MC4000%20-%20User%20Guide%20-%20v1.2_00.pdf)
   - [Forum

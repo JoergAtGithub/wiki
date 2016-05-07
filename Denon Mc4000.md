@@ -19,6 +19,10 @@ and sample pads for on-the-fly creativity.
 
 [[/media/hardware/denon_mc4000_controller_layout.svg|]]
 
+The mapping is mostly the same as the standard Serato mapping, with a
+few exceptions which are highlighted below with
+<span class="underline">underlined text</span>.
+
 1\. **Channel Level:** Turn this knob to adjust the level of the
 pre-fader, pre-EQ audio signal for the channel.
 
@@ -119,11 +123,10 @@ unit.</span>
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 
 20\. **FX On / Select:** Press this button to turn the corresponding
-effect on or off for the given channel.
-
-Press and hold Shift and then press this button to select an effect in
-the software. <span class="underline">Note: Both decks control the same
-FX unit.</span>
+effect on or off for the given channel. Press and hold Shift and then
+press this button to select an effect in the software.
+<span class="underline">Note: Both decks control the same FX
+unit.</span>
 
 21\. **FX Tap:** ~~Tap this button repeatedly at the desired tempo to
 set the rate of the effects’ lowfrequency oscillators (LFOs). Press and

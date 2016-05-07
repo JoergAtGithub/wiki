@@ -96,11 +96,9 @@ had been playing forward the whole time).
 
 15\. **Key Lock / Range:** Press this button to activate/deactivate Key
 Lock. When Key Lock is activated, the track’s key will remain the same
-even if you adjust its speed.
-
-Press and hold Shift and then press this button to cycle through the
-available ranges of the pitch fader. <span class="underline">Note:
-currently hard coded to +/- 8, 16, 50%</span>
+even if you adjust its speed. Press and hold Shift and then press this
+button to cycle through the available ranges of the pitch fader (+/- 8%,
+16%, 50%).
 
 16\. **Pitch Bend -/+ :** Press and hold one of these buttons to
 momentarily reduce or increase (respectively) the speed of the track.

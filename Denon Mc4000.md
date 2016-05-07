@@ -114,17 +114,16 @@ track. You can adjust its total range with the Key Lock / Range button.
 18\. **FX Level:** Turn this knob to adjust the level of the
 corresponding effect. The FX On button under the knob must be lit for
 this knob to function. Press and hold Shift and then turn this knob to
-scroll through the list of effects. <span class="underline">Note: FX3 is
-currently unmapped.</span>
+scroll through the list of effects.
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 
 20\. **FX On / Select:** Press this button to turn the corresponding
-effect on or off.
+effect on or off for the given channel.
 
 Press and hold Shift and then press this button to select an effect in
-the software. <span class="underline">Note: FX3 is currently
-unmapped.</span>
+the software. <span class="underline">Note: Both decks control the same
+FX unit.</span>
 
 21\. **FX Tap:** ~~Tap this button repeatedly at the desired tempo to
 set the rate of the effects’ lowfrequency oscillators (LFOs). Press and

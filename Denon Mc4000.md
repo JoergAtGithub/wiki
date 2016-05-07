@@ -114,7 +114,8 @@ track. You can adjust its total range with the Key Lock / Range button.
 18\. **FX Level:** Turn this knob to adjust the level of the
 corresponding effect. The FX On button under the knob must be lit for
 this knob to function. Press and hold Shift and then turn this knob to
-scroll through the list of effects.
+scroll through the list of effects. <span class="underline">Note: Both
+decks control the same FX unit.</span>
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 

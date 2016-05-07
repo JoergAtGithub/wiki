@@ -111,11 +111,12 @@ rewind or fast-forward (respectively) through the track.
 17\. **Pitch Fader:** Move this fader to adjust the speed (pitch) of the
 track. You can adjust its total range with the Key Lock / Range button.
 
-18\. **FX Level:** Turn this knob to adjust the level of the
+18\. **FX Level:** Turn this knob to adjust the mix ratio of the
 corresponding effect. The FX On button under the knob must be lit for
-this knob to function. Press and hold Shift and then turn this knob to
-scroll through the list of effects. <span class="underline">Note: Both
-decks control the same FX unit.</span>
+this knob to have an impact on the sound. Press and hold Shift and then
+turn this knob to scroll through the list of effects.
+<span class="underline">Note: Both decks control the same FX
+unit.</span>
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 

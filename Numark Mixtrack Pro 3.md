@@ -6,7 +6,7 @@
     page](http://www.numark.com/product/mixtrack-pro-3)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=7286)
   - [Download
-    mapping](http://mixxx.org/forums/viewtopic.php?f=7&p=28103#p28103)
+    mapping](http://mixxx.org/forums/viewtopic.php?f=7&p=28517#p28517)
 
 The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
 except that the Pro version has an integrated 4 channel output sound
@@ -32,27 +32,26 @@ the values below at the very top of the JavaScript file
   - **smartPFL**: When the Load button is used, the Cue/PFL button is
     automatically activated on the deck being loaded and deactivated on
     the other deck
-  - **printComments**: Used for debugging, print comments on prompt
-    screen
   - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead
     of beatloop command when using pads in Autoloop mode
-  - **PADLoopButtonPressed**: whether to keep loops active only while a
-    pad is held down when the pads are in Autoloop mode
-  - **PADSampleButtonPressed**: whether to keep samplers playing only
-    while a pad is held down when the pads are in Sample mode
+  - **PADLoopButtonHold**: whether to keep loops active only while a pad
+    is held down when the pads are in Autoloop mode
+  - **PADSampleButtonHold**: whether to keep samplers playing only while
+    a pad is held down when the pads are in Sample mode
   - **OnBeatActiveFlash**: whether the TAP LED will flash to the beat
     (except when Shift Lock is on)
   - **TapExpandLibrary**: If "true": TAP button will be used to
     expand/contract library view and Shift TAP will trigger TAP
     function; "false" will invert the functionality
-  - **Skin**: Specify the Skin used for your installation. This is
-    required in order for TapExpandLibrary option to work properly.
-    Different code is required for each skin. Accepted values: 1 =
-    "Deere" or "Shade"; 2 = "Late Night"; 3 = "Dark Metal" 
+  - **DarkMetalSkin**: Specify if Dark Metal skin is used for your
+    installation. This is required in order for Expand Library feature
+    to work properly. 
   - **BeatKnobAsSamplerVolume**: Use Beat knob to adjust Sampler Volume.
     If "true": Deck 1 adjusts Samplers 1-4; Deck 2 adjusts Samplers 5-8
     and Shift + Beat knob moves beat grid. If false: beat knob will
     adjust beatgrid, shift + knob will adjust grid size
+  - **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync
+    button Double Press. 
 
 ## Mapping
 
@@ -61,7 +60,7 @@ the values below at the very top of the JavaScript file
 ### 1\. Browser Knob
 
 Rotate this knob to cycle through tracks in main library window. Press
-the Knob to load selected track into first stopped deck.  
+the Knob to expand library view.  
 **Shift + Turn:** allows selecting Play Lists and side navigation bar
 items.  
 **Shift + Push:** opens / closes selected side navigation bar item.
@@ -255,10 +254,13 @@ control will jump to it.
 Hold Pad Mode and press the pad marked Manual Loop (silkscreened above
 the pad) to assign the lower 4 pads to the functions listed below:  
 
-  - **Loop In** – Sets the beginning of a loop  
-  - **Loop Out** – Sets the end point for the loop  
+  - **Loop In** – Sets the beginning of a loop: When assigned, the Pad
+    LED will light blue  
+  - **Loop Out** – Sets the end point for the loop: When assigned, the
+    Pad LED will light blue  
   - **On/Off** – (De)activate the loop. If a loop has not been set, this
-    button will have no effect.  
+    button will have no effect.: When assigned, the Pad LED will light
+    blue  
   - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
     x1/2 to double the length of the loop.  
 

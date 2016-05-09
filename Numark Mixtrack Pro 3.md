@@ -221,6 +221,10 @@ their beats lined up. If the Sync Lock was previously activated, it just
 deactivates it regardless of the Short press/Double Press  
 **Shift + Sync:** Toggle Key Lock
 
+**Configuration Options:** The
+[noPlayOnSyncDoublePress](#configuration-options) option can be used to
+turn off Play on Sync Double Press.
+
 ### 27\. Cue (Transport Control)
 
 Behavior depends on the [cue

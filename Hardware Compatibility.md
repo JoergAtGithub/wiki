@@ -395,6 +395,7 @@ made for controlling DJ software with timecode vinyl. [\#Mixers with
 sound cards](#Mixers%20with%20sound%20cards) have phono preamps on their
 deck inputs, but not necessarily on every deck input. Many higher-end
 all-in-one controllers also include sound cards with phono preamps.
+Refer to the tables below for some devices with phono preamps.
 
 Turntables, microphones, and contact microphones (like those used on
 electric guitars) all output very low voltage signals that need to be

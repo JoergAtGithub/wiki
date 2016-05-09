@@ -437,11 +437,11 @@ Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
 Sound cards often have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. Some sound cards made for DJing
-have 4 output channels with 4 mono output connectors and 1 stereo
-headphone connector. This does not mean that the sound card can send out
-6 different signals at the same time; rather, the signal on 2 of the
-mono outputs and the stereo headphone output would be the same.
+send or receive an independent signal. For example, some sound cards
+made for DJing have 4 output channels with 4 mono output connectors and
+1 stereo headphone connector. This does not mean that the sound card can
+send out 6 different signals at the same time; rather, the signal on 2
+of the mono outputs and the stereo headphone output would be the same.
 
 #### Bit depth and sample rate
 

@@ -342,7 +342,7 @@ doing it:
     Check if bpm and other meta infomation like cue points are still
     stored with the files.
 
-## Troubleshooting other issues
+## Troubleshooting other issues (Finding the mixxx.log file)
 
 Mixxx logs debugging information, [MIDI/HID/etc.
 messages](command_line_options) it receives and script functions it

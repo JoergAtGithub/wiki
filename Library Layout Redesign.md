@@ -126,7 +126,7 @@ folder, can be selected at preferences).
 
 [[/media/gsoc_2016/library_0_3_0.png|]]
 
-## Timeline:
+## Timeline
 
 W1 May 9th - May 15th:
 
@@ -136,36 +136,60 @@ W1 May 9th - May 15th:
 W2 May 16th - May 22nd:
 
   - Code final Manager class
-  - Implement LibrarySidebar collapsed version still without crates and
-    playlists added
 
 W3 May 23rd - May 29th:
 
-  - Implement LibrarySidebar allowing the Manager to switch between
-    collapsed and expanded versions.
-  - Add crates and playlists to LibrarySidebar collapsed
+  - Implement LibrarySidebar collapsed version still without crates,
+    playlists and model added
 
 W4 May 30th - June 5th:
 
-  - Add crates and playlists to LibrarySidebar collapsed
+  - Add model to LibrarySidebar collapsed and bugfixing
 
 W5 June 6th - June 12th:
 
+  - Add crates and playlists to LibrarySidebar collapsed 
+
 W6 June 13th - June 19th:
 
-W7 June 20th - June 26th:
+  - Study for exams
+  - Begin implementing new crates and playlists view (v.0.1.1)
+
+W7 June 20th - June 26th (mid term evaluations):
+
+  - Full time study for exams (until June 23th)
 
 W8 June 27th - July 3rd:
 
+  - Finish new crates and playlist view (v.0.1.1).
+  - Merge v.0.1.1
+  - Implement advanced grouping like Clementine (v.0.1.2.1).
+
 W9 July 4th - July 10th:
+
+  - Implement new filtering options (v.0.2.0):
+  - Implement search location filtering options (v.0.1.3.0)
 
 W10 July 11th - July 17th:
 
+  - Implement new filtering options (v.0.2.0):
+  - Implement search method filtering options (v.0.1.3.1)
+  - Write tests and bugfixing to filtering options (v.0.1.3.1 -\>
+    v.0.2.0)
+  - Merge v.0.2.0
+
 W11 July 18th - July 24th:
+
+  - Implement new Browse PC view, needs to be Bullet Proof (v.0.3.0)
+  - Merge v.0.3.0
 
 W12 July 25th - July 31st:
 
+  - Bugfixing
+
 W13 August 1st - August 7th:
+
+  - Writing documentation 
 
 W14 August 8th - August 14th:
 

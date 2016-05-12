@@ -432,7 +432,7 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
 
 ### virtual
 
-The "virtual" modifier is inherited by all implementations of that
+The *virtual* modifier is inherited by all implementations of that
 method in derived classes. Keep redundant virtual keywords in derived
 function implementation for documentation purpose.
 
@@ -514,6 +514,11 @@ class should use the *override* keyword.
 In contrast to the pre-C++11 rules (see above) when using *override* on
 a function in a derived class it is recommended to omit the redundant
 *virtual* keyword, because *override* implies *virtual*.
+
+Destructors in derived classes should be marked with *override*, too\!
+This ensures at compile time that the base class has declared a
+*virtual* destructor. If the base class has not declared a *virtual*
+destructor the destructor of derived classes might not be invoked.
 
 ### alignment
 

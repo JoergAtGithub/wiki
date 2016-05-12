@@ -48,8 +48,12 @@ in different QStackedWidget allowing the user to select the desired
 WLibraryFeature to the current stack. All of this is to allow multiple
 instances of the same kind of feature in the library (later I will
 explain the LibrarySidebar collapsed and expanded versions and
-LibraryViewManager will handle this two classes). Here there is a UML
-design:
+LibraryViewManager will handle this two classes).
+
+This design is inspired in the Mixxx init refactor idea by rryan2
+[link](mixxx_init_refactor). Here there is the UML design:
+
+[[/media/gsoc_2016/librarymanager.png|]]
 
 ### v.0.1.0 - LibrarySidebar
 

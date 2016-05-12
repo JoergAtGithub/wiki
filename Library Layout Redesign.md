@@ -39,6 +39,18 @@ new layout it will be able to fit in small screens (1024\*600).
 
 ## Deliverables
 
+### v.0.0.1 - LibraryViewManager
+
+This project will add some elements to the current GUI so it is better
+to have something to handle all this new library features so all related
+to the Library will be a WLibraryFeature. This library features will be
+in different QStackedWidget allowing the user to select the desired
+WLibraryFeature to the current stack. All of this is to allow multiple
+instances of the same kind of feature in the library (later I will
+explain the LibrarySidebar collapsed and expanded versions and
+LibraryViewManager will handle this two classes). Here there is a UML
+design:
+
 ### v.0.1.0 - LibrarySidebar
 
 This is the first step in the project, the LibrarySidebar will have

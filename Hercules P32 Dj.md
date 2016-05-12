@@ -17,8 +17,8 @@
   - [Digital DJ Tips
     review](http://www.digitaldjtips.com/2016/03/review-video-hercules-p32-dj-grid-pad-controller/)
 
-The Hercules P32 DJ is an unconventional DJ controller with a built-in
-sound card. Rather than jog wheels, it has a 4 x 4 multicolor
+The Hercules P32 DJ is a relatively compact DJ controller with a
+built-in sound card. Rather than jog wheels, it has a 4 x 4 multicolor
 (red/blue/purple) pad grid for each deck. The pad grids can be switched
 between 4 different layers to perform a variety of functions.
 

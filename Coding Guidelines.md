@@ -515,10 +515,11 @@ In contrast to the pre-C++11 rules (see above) when using *override* on
 a function in a derived class it is recommended to omit the redundant
 *virtual* keyword, because *override* implies *virtual*.
 
-Destructors in derived classes should be marked with *override*, too\!
-This ensures at compile time that the base class has declared a
-*virtual* destructor. If the base class has not declared a *virtual*
-destructor the destructor of derived classes might not be invoked.
+Destructors in derived classes should also be marked with *override*
+instead of *virtual*. This ensures at compile time that the base class
+has declared a *virtual* destructor. If the base class has not declared
+a *virtual* destructor the destructor of a derived class might not be
+invoked.
 
 ### alignment
 

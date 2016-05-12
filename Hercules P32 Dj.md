@@ -17,15 +17,22 @@
   - [Digital DJ Tips
     review](http://www.digitaldjtips.com/2016/03/review-video-hercules-p32-dj-grid-pad-controller/)
 
+The Hercules P32 DJ is an unconventional DJ controller with a built-in
+sound card. Rather than jog wheels, it has a 4 x 4 multicolor
+(red/blue/purple) pad grid for each deck. The pad grids can be switched
+between 4 different layers to perform a variety of functions.
+
+Thanks to Hercules for supporting the development of this mapping by
+providing a controller.
+
+## Compatibility
+
 This controller is a class compliant USB MIDI and audio device, so it
 can be used without any special drivers on GNU/Linux, Mac OS X, and
 Windows. However, it recommended to install [the
 driver](https://support.hercules.com/en/product/p32dj-en/) on Windows to
 be able to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
-
-Thanks to Hercules for supporting the development of this mapping by
-providing a controller.
 
 ## Sound card setup
 

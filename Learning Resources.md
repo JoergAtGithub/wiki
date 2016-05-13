@@ -55,3 +55,9 @@
 
   - **[Music DSP](http://www.musicdsp.org/)**. Site with a huge database
     of DSP code.
+
+## Software Engineering
+
+  - [C++ in the Audio
+    Industry](https://www.youtube.com/watch?v=boPEO2auJj4&index=184&list=PL9gma1TwJCnHxnb_DEmvSyqS4bk7Ik3CZ).
+    Nice overview of the challenges of audio software engineering.

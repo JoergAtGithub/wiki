@@ -62,3 +62,7 @@
     Industry](https://www.youtube.com/watch?v=boPEO2auJj4&index=184&list=PL9gma1TwJCnHxnb_DEmvSyqS4bk7Ik3CZ).
     Nice talk from CppCon describing the challenges of audio software
     engineering.
+  - [Programming with Lightweight Asynchronous Messages: Some Basic
+    Patterns](http://www.rossbencina.com/code/programming-with-lightweight-asynchronous-messages-some-basic-patterns)
+    blog post from Ross Bencina (PortAudio author) about common audio
+    signal processing patterns.

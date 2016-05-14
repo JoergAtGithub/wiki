@@ -19,7 +19,11 @@ has a built-in 4 channel USB soundcard.
 ## Mapping Description
 
 Most of the board's controls work as described in the G4V's manual, with
-a few exceptions.
+a few exceptions. Snapshots of the board's labeling from the Manual are
+included below:
+
+[[/media/gemini_g4v_top_view.png|]] [[/media/gemini_g4v_front_and_back_view.png|]]
+[[/media/gemini_g4v_legend.png|]]
 
 ### Shift
 

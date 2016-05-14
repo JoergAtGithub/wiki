@@ -216,8 +216,8 @@ move your controller to this table.
 
 #### Esoteric controllers
 
-These are devices that were not designed for DJing but have been mapped
-to Mixxx anyway.
+These are devices that were not designed for controlling music software
+but have been mapped to Mixxx anyway.
 
 \<sortable 2=numeric\>
 

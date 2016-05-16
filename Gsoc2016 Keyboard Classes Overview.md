@@ -27,25 +27,20 @@ Handles loading and saving of Controller presets.
 *Controller::setPreset(const Controller& preset)* needs to know the
 [dynamic
 type](http://stackoverflow.com/questions/7649649/what-is-dynamic-type-of-object)
-of preset, because a *MidiController* should only handle instances of
-*MidiControllerPreset*. This class is inherited by *Controller*. This is
-part of the [Visitor
-pattern](https://en.wikipedia.org/wiki/Visitor_pattern). *Controller*
-inherits from it. This class defines a series of pure virtual methods
-called *visit*. *Controller* subclasses must implement these *visit*
-methods according to their ability to handle each preset type. Like
-this:
+of *preset*, because a controller should only handle its corresponding
+preset types (e.g. a *MidiController* should only handle instances of
+*MidiControllerPreset*).
 
-<https://github.com/mixxxdj/mixxx/blob/master/src/controllers/midi/midicontroller.cpp#L34>
+To achieve this, the [Visitor
+pattern](https://en.wikipedia.org/wiki/Visitor_pattern) is used.
 
-<https://github.com/mixxxdj/mixxx/blob/master/src/controllers/midi/midicontroller.cpp#L44>
-
-Here's the explanation of why this is needed:
-
-<https://github.com/mixxxdj/mixxx/blob/master/src/controllers/controller.h#L34>
-
-More info: [Visitor
-pattern](https://en.wikipedia.org/wiki/Visitor_pattern)
+Suppose *preset* is a *MidiControllerPreset*. First
+*Controller::setPreset(const Controller& preset)* calls the
+*preset.accept(ControllerVisitor\* visitor)*, which calls
+*visitor.visit(this)*. But since *preset* is of type
+*MidiControllerPreset*, the method that is called is
+*Controller::visit(MidiControllerPreset\* preset)*, thus controller now
+knows the type of *preset*.
 
 ### ControllerEngine
 

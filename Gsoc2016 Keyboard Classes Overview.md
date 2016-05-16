@@ -24,10 +24,17 @@ Handles loading and saving of Controller presets.
 
 ### ControllerPresetVisitor
 
-*Controller* inherits from it. This class defines a series of pure
-virtual methods called *visit*. *Controller* subclasses must implement
-these *visit* methods according to their ability to handle each preset
-type. Like this:
+*Controller::setPreset(const Controller& preset)* needs to know the
+[dynamic
+type](http://stackoverflow.com/questions/7649649/what-is-dynamic-type-of-object)
+of preset, because a *MidiController* should only handle instances of
+*MidiControllerPreset*. This class is inherited by *Controller*. This is
+part of the [Visitor
+pattern](https://en.wikipedia.org/wiki/Visitor_pattern). *Controller*
+inherits from it. This class defines a series of pure virtual methods
+called *visit*. *Controller* subclasses must implement these *visit*
+methods according to their ability to handle each preset type. Like
+this:
 
 <https://github.com/mixxxdj/mixxx/blob/master/src/controllers/midi/midicontroller.cpp#L34>
 

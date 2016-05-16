@@ -37,7 +37,8 @@ Here's the explanation of why this is needed:
 
 <https://github.com/mixxxdj/mixxx/blob/master/src/controllers/controller.h#L34>
 
-More info: <https://en.wikipedia.org/wiki/Visitor_pattern>
+More info: [Visitor
+pattern](https://en.wikipedia.org/wiki/Visitor_pattern)
 
 ### ControllerEngine
 
@@ -68,3 +69,9 @@ class wants to access a controller or query the available ones, it asks
 *ControllerManager*. There's only one instance of *ControllerManager*
 that is created in *MixxxMainWindow* (mixxx.cpp) and gets its
 *slotSetUpDevices* method called, at Mixxx start.
+
+### ControllerVisitor
+
+Similar to *ControllerPresetVisitor*. In this case
+*ControllerMappingTableModel* wants to know the dynamic type of a
+*Controller* instance.

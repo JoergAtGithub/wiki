@@ -37,6 +37,8 @@ Here's the explanation of why this is needed:
 
 <https://github.com/mixxxdj/mixxx/blob/master/src/controllers/controller.h#L34>
 
+More info: <https://en.wikipedia.org/wiki/Visitor_pattern>
+
 ### ControllerEngine
 
 It manages the loading and execution of a script. *Controller* class

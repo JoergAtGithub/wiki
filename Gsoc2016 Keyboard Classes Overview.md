@@ -42,6 +42,10 @@ Suppose *preset* is a *MidiControllerPreset*. First
 *Controller::visit(MidiControllerPreset\* preset)*, thus controller now
 knows the type of *preset*.
 
+Providing a fallback *Controller::visit(ControllerPreset\* preset)*
+saves us from implementing a *visit* method for each subclass of
+*ControllerPreset*.
+
 ### ControllerEngine
 
 It manages the loading and execution of a script. *Controller* class

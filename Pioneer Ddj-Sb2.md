@@ -26,9 +26,8 @@ try using a different Sound API (see the Preferences menu).
 
 ### Mac OS X & Linux
 
-The DDJ-SB2 is a USB class compliant MIDI and audio device, so it should
-work with Mac OS X and Linux without any special drivers. If you can
-confirm that it works, please edit this section to say so.
+The DDJ-SB2 is a USB class compliant MIDI and audio device, so it works
+with Mac OS X and Linux without any special drivers.
 
 ## User Options
 

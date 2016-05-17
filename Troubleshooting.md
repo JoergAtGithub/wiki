@@ -200,7 +200,7 @@ fix this, do the following:
 2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
     can change the number and name as appropriate): `sudo nano
     /etc/udev/rules.d/15-mixxx-usb.rules`
-3.  Edit that file and add the following: `# Allow scanning and use of
+3.  Edit that file and add the following: ` # Allow scanning and use of
     USB HID devices
     SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
     ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
@@ -210,9 +210,12 @@ fix this, do the following:
     ATTRS{idVendor}=="06f8", GROUP="users", MODE="0660" # Hercules
     SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
     ATTRS{idVendor}=="15e4", GROUP="users", MODE="0660" # Numark (may be
-    needed for NS7/V7)` (use whatever group name you prefer.) Some
-    distributions (like AV Linux 6.0) may also require adding this line
-    as well: `KERNEL=="hiddev*", NAME="usb/%k", GROUP="users"
+    needed for NS7/V7)
+    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
+    ATTRS{idVendor}=="17cc", GROUP="users", MODE="0660" # Native
+    Instruments (and Traktor)  ` (use whatever group name you prefer.)
+    Some distributions (like AV Linux 6.0) may also require adding this
+    line as well: `KERNEL=="hiddev*", NAME="usb/%k", GROUP="users"
     `
 4.  Save and exit.
 5.  Enter `sudo /etc/init.d/udev restart`

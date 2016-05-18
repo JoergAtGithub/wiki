@@ -9,8 +9,7 @@ Possible approaches:
 
 Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>
 
-don't break tooltips, make them read current keyboard preset. does this
-happen currently?
+don't break tooltips, make them read current keyboard preset.
 
 add CO (if not already existent) to enable/disable controllers (make a
 special one for keyboard controllers?). this is to keep support for the

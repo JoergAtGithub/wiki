@@ -21,3 +21,6 @@ filter:
   - Library extra views (such as the view that groups autodj controls)
     get the *KeyboardEventFilter* installed by their delegates
     constructor.
+  - *SkinLoader* also uses the *KeyboardEventFilter* in its
+    *setupConnection* method to gain information about assigned key
+    combinations to fill the tooltips.

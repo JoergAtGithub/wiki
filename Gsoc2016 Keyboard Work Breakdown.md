@@ -1,3 +1,11 @@
+## 1 - Sub class Controller
+
+Add tests
+
+## 2 - Sub class ControllerEnumerator
+
+## 3 - Sub class ControllerPreset
+
 ### Get keyboard events
 
 Possible approaches:

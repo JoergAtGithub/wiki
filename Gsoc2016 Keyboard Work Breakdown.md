@@ -8,3 +8,6 @@ Possible approaches:
   - Access keyboards with a lower level API.
 
 Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>
+
+don't break tooltips, make them read current keyboard preset. does this
+happen currently?

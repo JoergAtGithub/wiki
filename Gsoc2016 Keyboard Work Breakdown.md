@@ -2,9 +2,13 @@
 
 Add tests
 
-## 2 - Sub class ControllerEnumerator
+## 2 - Sub class *ControllerEnumerator*
 
-## 3 - Sub class ControllerPreset
+## 3 - Modify *ControllerManager*
+
+1.  Append *KeyboardEnumerator* in the *slotInitialize* method.
+
+## 3 - Sub class *ControllerPreset*
 
 ### Get keyboard events
 

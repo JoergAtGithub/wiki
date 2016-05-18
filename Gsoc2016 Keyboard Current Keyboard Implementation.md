@@ -14,6 +14,8 @@ filter:
     KeyboardEventFilter to it. The LegacySkinParser holds a pointer to
     the KeyboardEventFilter. It installs the KeyboardEventFilter to
     every widget it creates.
+  - Library installs the KeyboardEventFilter to some views in its
+    *bindWidget* method,
   - Library features install the KeyboardEventFilter in its bindWidget
     method.
   - Library extra views (such as the view that groups autodj controls)

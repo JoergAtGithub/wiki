@@ -14,3 +14,7 @@ don't break tooltips, make them read current keyboard preset.
 add CO (if not already existent) to enable/disable controllers (make a
 special one for keyboard controllers?). this is to keep support for the
 "enable keyboard shortcuts" option of the options menu.
+
+mixxx currently leaks some keyboard events to Qt. This allows library
+lists to respond to arrow key presses for example. Do we want this?
+Better manage this via mapping like Traktro does?

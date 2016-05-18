@@ -1,8 +1,7 @@
 ### KeyboardEventFilter
 
-This is an [event
-filter](http://doc.qt.io/qt-4.8/eventsandfilters.html). Mixxx installs
-it in the following widgets:
+KeyboardEventFilter is an [event
+filter](http://doc.qt.io/qt-4.8/eventsandfilters.html).
 
 MixxxMainWindow (mixxx.h/.cpp) initializes and holds a global instance
 of KeyboardEventFilter (MixxxMainWindow.m\_pKeyboard). Other Mixxx

@@ -6,3 +6,5 @@ Possible approaches:
     keyboard events. Easier approach, but I think this won't let us
     differentiate between different physical keyboards.
   - Access keyboards with a lower level API.
+
+Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>

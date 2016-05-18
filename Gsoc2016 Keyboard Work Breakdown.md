@@ -1,8 +1,17 @@
 ## 1 - Sub class Controller
 
-``` 
-  - Add tests.
-```
+You have to implement the virtual methods. Take *MidiController* and
+*PortMidiController* or *HidController* as a reference.
+
+1.  Implement destructor.
+2.  Implement *presetExtension* method. Add corresponding \#define in
+    defs\_controller.h.
+3.  Implement the *accept* method (part of the visitor pattern).
+4.  Implement the *savePreset* method (just prepare for the upcoming
+    *KeyboardPresetFileHandler*).
+5.  Create a *KeyboardPresetFileHandler* class (like
+    *MidiControllerPresetFileHandler*).
+6.  Add tests.
 
 ### Get keyboard events
 
@@ -25,7 +34,9 @@ Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>
 
 ## 3 - Sub class ControllerPreset
 
-1.  Add tests.
+1.  Create a *KeyboardPresetFileHandler* class (like
+    *MidiControllerPresetFileHandler*).
+2.  Add tests.
 
 don't break tooltips, make them read current keyboard preset.
 

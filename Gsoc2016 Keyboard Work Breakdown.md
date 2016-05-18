@@ -11,3 +11,7 @@ Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>
 
 don't break tooltips, make them read current keyboard preset. does this
 happen currently?
+
+add CO (if not already existent) to enable/disable controllers (make a
+special one for keyboard controllers?). this is to keep support for the
+"enable keyboard shortcuts" option of the options menu.

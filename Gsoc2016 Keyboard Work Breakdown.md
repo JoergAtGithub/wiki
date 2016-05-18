@@ -1,14 +1,8 @@
 ## 1 - Sub class Controller
 
-Add tests
-
-## 2 - Sub class *ControllerEnumerator*
-
-## 3 - Modify *ControllerManager*
-
-1.  Append *KeyboardEnumerator* in the *slotInitialize* method.
-
-## 3 - Sub class *ControllerPreset*
+``` 
+  - Add tests.
+```
 
 ### Get keyboard events
 
@@ -20,6 +14,18 @@ Possible approaches:
   - Access keyboards with a lower level API.
 
 Reference: <http://doc.qt.io/qt-4.8/eventsandfilters.html>
+
+## 2 - Sub class ControllerEnumerator
+
+1.  Add tests.
+
+## 3 - Modify ControllerManager
+
+1.  Append *KeyboardEnumerator* in the *slotInitialize* method.
+
+## 3 - Sub class ControllerPreset
+
+1.  Add tests.
 
 don't break tooltips, make them read current keyboard preset.
 

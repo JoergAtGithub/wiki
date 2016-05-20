@@ -513,16 +513,19 @@ MyController.wheelTurn = function (channel, control, value, status) {
     
     // A: For a control that centers on 0:
     var newValue;
-    if (value-64 > 0) newValue = value-128;
-    else newValue = value;
-    
+    if (value-64 > 0) {
+        newValue = value-128;
+    } else {
+        newValue = value;
+    }
+
     // B: For a control that centers on 0x40 (64):
-    var newValue=(value-64);
+    var newValue = value - 64;
     
     // --- End choice
     
     // In either case, register the movement
-    engine.scratchTick(MyController.currentDeck,newValue);
+    engine.scratchTick(MyController.currentDeck, newValue);
 }
 ```
 

@@ -828,14 +828,14 @@ rather than:
 
 ``` javascript
 MyController.playButtonLED = function (value, group, control) {
-    if (group == '[Channel1]') {
-        if (value) {
+    if (group === '[Channel1]') {
+        if (value === 0x7F) {
             midi.sendShortMsg(0x90, 0x01, 0x02)
         } else {
             midi.sendShortMsg(0x90, 0x01, 0x00)
         }
-    } else if (group == '[Channel2]') {
-        if (value) {
+    } else if (group === '[Channel2]') {
+        if (value === 0x7F) {
             midi.sendShortMsg(0x90, 0x04, 0x02)
         } else {
             midi.sendShortMsg(0x90, 0x04, 0x00)

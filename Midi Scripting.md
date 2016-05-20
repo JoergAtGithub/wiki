@@ -445,11 +445,13 @@ manipulating. Do this with the following function:
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");
 ```
 
-### Scratching
+### Scratching and jog wheels
 
-We have an easy way to scratch with any MIDI control that sends relative
-(+1/-1) signals. (Others can be scaled to work as well.) The applicable
-functions are:
+Typically jog wheels are mapped so they control scratching when touched
+from the top and temporarily bend the pitch (speed up/slow down
+playback) when touched from the side, like a turntable. We have an easy
+way to scratch with jog wheels that send relative (+1/-1) signals.
+(Others can be scaled to work as well.) The applicable functions are:
 
 ``` c++
 engine.scratchEnable(int deck, int intervalsPerRev, float rpm, float alpha, float beta, bool ramp);
@@ -506,9 +508,6 @@ MyController.wheelTouch = function (channel, control, value, status) {
 
 // The wheel that actually controls the scratching
 MyController.wheelTurn = function (channel, control, value, status) {
-    // See if we're scratching. If not, skip this.
-    if (!engine.isScratching(MyController.currentDeck)) return;
-    
     // --- Choose only one of the following!
     
     // A: For a control that centers on 0:
@@ -525,7 +524,11 @@ MyController.wheelTurn = function (channel, control, value, status) {
     // --- End choice
     
     // In either case, register the movement
-    engine.scratchTick(MyController.currentDeck, newValue);
+    if (engine.isScratching(MyController.currentDeck) {
+        engine.scratchTick(MyController.currentDeck, newValue); // Scratch!
+    } else {
+        engine.setValue('[Channel'+MyController.currentDeck+']', 'jog', newValue); // Pitch bend
+    }
 }
 ```
 

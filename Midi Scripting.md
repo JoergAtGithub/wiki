@@ -590,8 +590,7 @@ Example:
         
         if (activate) {
             engine.brake(deck, true); // enable brake effect
-        }
-        else {
+        } else {
             engine.brake(deck, false); // disable brake effect
         }   
     }

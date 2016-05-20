@@ -524,7 +524,7 @@ MyController.wheelTurn = function (channel, control, value, status) {
     // --- End choice
     
     // In either case, register the movement
-    if (engine.isScratching(MyController.currentDeck) {
+    if (engine.isScratching(MyController.currentDeck)) {
         engine.scratchTick(MyController.currentDeck, newValue); // Scratch!
     } else {
         engine.setValue('[Channel'+MyController.currentDeck+']', 'jog', newValue); // Pitch bend

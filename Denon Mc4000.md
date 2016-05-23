@@ -10,11 +10,11 @@
   - [Forum
     thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=7443)
 
-The MC4000 is a 2-deck Serato DJ controller for the professional
-entertainer wrapping in-demand audio manipulation tools in a robust
-steel chassis for rugged durability. In addition to precision
-touch-activated jog wheels, performers get access to dedicated hot cue
-and sample pads for on-the-fly creativity.
+The MC4000 is a 2-deck DJ controller for the professional entertainer
+wrapping in-demand audio manipulation tools in a robust steel chassis
+for rugged durability. In addition to precision touch-activated jog
+wheels, performers get access to dedicated hot cue and sample pads for
+on-the-fly creativity.
 
 ## Mapping
 
@@ -26,51 +26,38 @@ implemented in the Mixxx mapping.
 
 [[/media/hardware/denon_mc4000_controller_layout.svg|]]
 
-1\. **Channel Level:** Turn this knob to adjust the level of the
-pre-fader, pre-EQ audio signal for the channel.
+1\. **Channel Level:** Adjust the level of the pre-fader, pre-EQ audio
+signal
 
-2\. **Channel EQ:** Turn these knobs to boost or cut the high,
-mid-range, and low frequencies for the channel.
+2\. **Channel EQ:** Boost or cut the high, mid-range, and low
+frequencies
 
-3\. **Channel Filter:** Turn this knob to adjust the filter applied to
-the channel. Turn the knob counterclockwise to apply a low-pass filter.
-Turn the knob clockwise to apply a high-pass filter.
+3\. **Channel Filter:** Turn counterclockwise to apply a low-pass
+filter. Turn clockwise to apply a high-pass filter.
 
-4\. **Channel Cue:** Press this button to send the channel’s pre-fader
-signal to the headphones’ cue channel.
+4\. **Channel Cue:** Send the channel’s pre-fader signal to the
+headphones’ cue channel.
 
-5\. **Channel Fader:** Use this fader to adjust the channel’s volume
-level.
+5\. **Channel Fader:** Adjust the channel’s volume level.
 
-6\. **Crossfader:** Use this crossfader to mix between the two decks.
+6\. **Crossfader:** Mix between the two decks.
 
 7\. **Shift:** Press and hold this button to access secondary functions
 of other controls.
 
-8\. **Sync / Sync Off:** Press this button to automatically match the
-corresponding Deck’s tempo with the opposite Deck’s tempo and phase.
+8\. **Sync / Sync Off:** Automatically match the corresponding Deck’s
+tempo with the opposite Deck’s tempo and phase.
 <span class="underline">Unlike Serato, Shift + sync is not mapped to
 anything.</span>
 
-9\. **Cue / Track Start:** During playback, press this button to return
-the track to a temporary cue point. If you have not set a temporary cue
-point, then press this button to return to the start of the track. (To
-set a temporary cue point, make sure the track is paused, move the
-platter to place the audio playhead at the desired location, and then
-press this button.).
+9\. **Cue / Track Start:** Behavior changes according to the [cue mode
+selected in Mixxx's
+preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).
 
-If the deck is paused, press and hold this button to play the track from
-the temporary cue point. Release the button to return the track to the
-temporary cue point and pause it. To continue playback without returning
-to the temporary cue point, press and hold this button and then press
-and hold the Play button, and then release both buttons.
+Hold Shift and press this button to return to the start of the track.
 
-Press and hold Shift and then press this button to return to the start
-of the track.
-
-10\. **Play/Pause / Stutter:** This button pauses or resumes playback.
-Press and hold Shift and then press this button to “stutter-play” the
-track from the last set cue point.
+10\. **Play/Pause / Stutter:** Play/pause playback. Hold Shift and then
+press this button to “stutter-play” the track from the cue point.
 
 11\. **Hot Cues:** Press any of these 4 pads to set and jump to a hot
 cue point. To set a hot cue point, press an unlit pad at the desired
@@ -82,18 +69,18 @@ Shift and then press a lit pad.
 
 13\. **Platter:** This capacitive, touch-sensitive platter controls the
 audio playhead when the wheel is touched and moved. When the Vinyl
-button is on, move the platter to “scratch” the track as you would with
-a vinyl record. When the Vinyl button is off (or if you are touching
-only the side of the platter), move the platter to temporarily adjust
-the track’s speed.
+button is on, move the platter to “scratch” the track like a vinyl
+record. When the Vinyl button is off (or if you are touching only the
+side of the platter), move the platter to temporarily adjust the track’s
+speed.
 
 ~~While editing a loop, move the platter to adjust the Loop In or Loop
 Out point. Press and hold Shift and then move the platter to move
 quickly through the track.~~
 
-14\. **Vinyl / Censor:** Press this button activate/deactivate a “vinyl
-mode” for the platter. When activated, you can use the platter to
-“scratch” the track as you would with a vinyl record.
+14\. **Vinyl / Censor:** Toggle “vinyl mode” for the platter. When
+activated, you can use the platter to scratch the track as you would
+with a vinyl record.
 
 Press and hold Shift and then press and hold this button to activate the
 Censor feature: the playback of the track will be reversed, but when you
@@ -101,93 +88,83 @@ release the button, normal playback will resume from where it would have
 been if you had never engaged the Censor feature (i.e., as if the track
 had been playing forward the whole time).
 
-15\. **Key Lock / Range:** Press this button to activate/deactivate Key
-Lock. When Key Lock is activated, the track’s key will remain the same
-even if you adjust its speed. Press and hold Shift and then press this
-button to cycle through the available ranges of the pitch fader (+/- 8%,
-16%, 50%).
+15\. **Key Lock / Range:** Toggle Key Lock. When Key Lock is activated,
+the track’s key will remain the same even if you adjust its speed. Hold
+Shift and press to cycle through the available ranges of the pitch fader
+(+/- 8%, 16%, 50%). Other ranges for the fader can be selected in
+Mixxx's Preferences in the Interface section.
 
-16\. **Pitch Bend -/+ :** Press and hold one of these buttons to
-momentarily reduce or increase (respectively) the speed of the track.
+16\. **Pitch Bend -/+ :** Hold one of these buttons to momentarily
+reduce or increase (respectively) the speed of the track.
 
-Press and hold Shift and then press and hold one of these buttons to
-rewind or fast-forward (respectively) through the track.
+Hold Shift and then press and hold one of these buttons to rewind or
+fast-forward (respectively) through the track.
 
 17\. **Pitch Fader:** Move this fader to adjust the speed (pitch) of the
 track. You can adjust its total range with the Key Lock / Range button.
 
-18\. **FX Level:** Turn this knob to adjust the mix ratio of the
+18\. **FX Level:** Turn this knob to adjust the dry/wet mix ratio of the
 corresponding effect. The FX On button under the knob must be lit for
-this knob to have an impact on the sound. Press and hold Shift and then
-turn this knob to scroll through the list of effects.
-<span class="underline">Note: Both decks control the same FX
+the effect to be enabled. Hold Shift and turn to scroll through the list
+of effects. <span class="underline">Note: Both decks control the same FX
 unit.</span>
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 
-20\. **FX On / Select:** Press this button to turn the corresponding
-effect on or off for the given channel. Press and hold Shift and then
-press this button to select an effect in the software.
-<span class="underline">Note: Both decks control the same FX
-unit.</span>
+20\. **FX On / Select:** Press to toggle the corresponding effect on or
+off for the given channel. Hold Shift and press to select an effect in
+the software. <span class="underline">Note: Both decks control the same
+FX unit.</span>
 
 21\. **FX Tap:** ~~Tap this button repeatedly at the desired tempo to
 set the rate of the effects’ lowfrequency oscillators (LFOs). Press and
 hold this button to reset Beat Multiplier to the Deck’s BPM.~~
 (<span class="underline">currently not functional</span>)
 
-22\. **Auto-Loop / Auto 4:** Press this button to toggle a 4 beat loop
-on or off. Press and hold Shift and then press this button to toggle
-beat quantize on or off (I.e quantization of loop start / end points to
-the nearest beat). <span class="underline">Note: this behavior is
-different from Serato</span>.
+22\. **Auto-Loop / Auto 4:** Toggle a 4 beat loop on or off. Hold Shift
+and press to toggle beat quantize on or off (I.e quantization of loop
+start / end points to the nearest beat). <span class="underline">Note:
+this behavior is different from Serato</span>.
 
-23\. **X 1/2 Loop / Loop In:** Press this button to halve the length of
-the current loop.
+23\. **X 1/2 Loop / Loop In:** Halve the length of the current loop.
 
-Press and hold Shift and then press this button to create a Loop In
-point at the current location.
+Hold Shift and press to create a Loop In point at the current location.
 
-24\. **X 2 Loop / Loop Out:** Press this button to double the length of
-the current loop.
+24\. **X 2 Loop / Loop Out:** Double the length of the current loop.
 
-Press and hold Shift and then press this button to create a Loop Out
-point at the current location.
+Hold Shift and press to create a Loop Out point at the current location.
 
-25\. **Reloop:** Press this button to exit the current loop if in loop
-mode, or skip to the last-played loop and activate it immediately if
-playing.
+25\. **Reloop:** Exit the current loop if a loop is active, or skip to
+the last-played loop and activate it immediately if there is no loop
+active.
 
-26\. **Browse / Library Knob:** Turn this knob to navigate through the
-software.
+26\. **Browse / Library Knob:** Turn to navigate through the library.
 
 ~~Press the knob to select an item. Press and hold Shift and then turn
 this knob to browse quickly through the tracks in your library.~~
 
-27\. **Load:** Press this button to load the currently selected track to
-the deck.
+27\. **Load:** Load the currently selected track to the deck.
 
-28\. **Back / Panel:** Press this button to toggle maximized library
+28\. **Back / Panel:** Toggle maximized library
 (<span class="underline">Different from Serato mapping</span>).
 
-29\. **Load Prep / Open Prep:** Press this button to load the currently
-selected track to the preview deck.
+29\. **Load Prep / Open Prep:** Load the currently selected track to the
+preview deck.
 
-Press and hold Shift and then press this button to eject the current
-track from the preview deck. (<span class="underline">Different from
-Serato mapping</span>).
+Hold Shift and press to eject the current track from the preview deck.
+(<span class="underline">Different from Serato mapping</span>).
 
-30\. **Sampler Pads:** Press these pads to play their corresponding
-samples in the software’s sampler (1–4).
+30\. **Sampler Pads:** Press to play the corresponding samples in the
+software’s sampler (1–4).
 
-Press and hold Shift and then press a pad to stop its sample playback.
+Hold Shift and press a pad to stop its sample playback.
 
 31\. **Sample Level:** Turn this knob to adjust the volume level of the
-software’s sampler.
+software’s samplers (1–4).
 
-32\. **Level Meters:** These LEDs display the audio signal depending on
-the state of each deck and Channel Fader. The meters are not affected by
-the position of the Master Knob.
+32\. **Level Meters:** These LEDs display the level of the audio signal
+depending on the state of each deck and Channel Fader. The meters are
+not affected by the position of the Master Knob.
 
 ~~If a Channel Fader is at its minimum position, the meter will show the
 deck’s pre-fader level. The left meter represents Deck 1, and the right
@@ -200,15 +177,25 @@ for the Cue deck will change only if audio is playing. Otherwise, it
 will continue showing the summed, post-fader output of the playing
 deck.~~
 
-33\. **Mic Volume:** <span class="underline">Hardware only</span>
+33\. **Mic Volume:** Adjust the input gain of the microphone. This
+adjusts the hardware microphone preamplifier, not Mixxx's mic gain. The
+microphone input is not available to the computer through the MC4000's
+sound card; it is mixed with the master output in hardware.
 
-34\. **Mic Echo:** <span class="underline">Hardware only</span>
+34\. **Mic Echo:** Toggle an echo effect on the microphone input. This
+effect is done in hardware, not in Mixxx.
 
-35\. **Mic Talk Over / Post:** <span class="underline">Hardware
-only</span>
+35\. **Mic Talk Over / Post:** Toggle microphone talkover, which
+automatically reduces the volume of the music when using the microphone.
+Hold shift and press to toggle whether the microphone input is routed to
+the booth output. These controls are done by the MC4000 in hardware and
+do not affect Mixxx.
 
-36\. **Master:** <span class="underline">Hardware only</span>
+36\. **Master:** Adjust the master output level of the sound card. This
+does not affect the master gain in Mixxx.
 
-37\. **Booth:** <span class="underline">Hardware only</span>
+37\. **Booth:** Adjust the booth output level of the sound card. This
+does not affect anything in Mixxx.
 
-38\. **Aux:** <span class="underline">Hardware only</span>
+38\. **Aux:** Adjust the auxiliary output level of the sound card. This
+does not affect anything in Mixxx.

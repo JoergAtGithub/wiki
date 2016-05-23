@@ -9,15 +9,29 @@
 *Images courtesy of [Reloop](http://www.reloop.com/). Click on either
 for a larger version.*
 
-  - [See the Terminal Mix 2 on Reloop's web
-    site](http://www.reloop.com/reloop-terminal-mix-2)
-  - [See the Terminal Mix 4 on Reloop's web
-    site](http://www.reloop.com/reloop-terminal-mix-4)
+  - [Terminal Mix 2 product
+    page](http://www.reloop.com/reloop-terminal-mix-2)
+  - [Terminal Mix 4 product
+    page](http://www.reloop.com/reloop-terminal-mix-4)
 
-Both of the models in the series use the same preset.
+The Reloop Terminal Mix 2 and Terminal Mix 4 use the same mapping in
+Mixxx.
 
-***Easy customization:*** We have provided the following customization
-variables at the top of the script you can set to your liking:
+## Sound hardware
+
+The Reloop Terminal Mix 2 and Terminal Mix 4 have integrated
+multichannel sound cards.
+
+Both the Terminal Mix 2 and Terminal Mix 4 have microphone inputs that
+can be routed into Mixxx. There is a switch on the controller that
+toggles between routing the microphone to the computer or mixing it with
+the master output in software. If you want to record, broadcast, or put
+effects on the microphone input, route it into Mixxx.
+
+## Mapping options
+
+We have provided the following customization variables at the top of the
+script you can set to your liking:
 
 1.  **pitchRanges**: Set the pitch slider range each time you toggle it.
 

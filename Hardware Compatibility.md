@@ -585,14 +585,14 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
 
 | Device                                                               | Price (USD) \[48\] | Channels out | Output connectors                                                 | Channels in | Input connectors                                                         | Preamps        | Linux |
 | -------------------------------------------------------------------- | ------------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ----- |
-| [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                           | 5           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | yes   |
+| [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                           | 4           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | yes   |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)   | $125               | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                                                     | none           | yes   |
-| [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                                    | 5           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | yes   |
+| [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                                    | 4           | 4 RCA, 1 XLR \[49\]                                                      | 2 phono, 1 mic | yes   |
 | [American Audio VMS2](American%20Audio%20VMS2)                       | $250               | 4            | 2 XLR, 4 RCA, 1 1/4" headphone                                    | 4           | 4 RCA, 1 XLR mic, 1 1/4" mic                                             | 2 phono, 1 mic | yes   |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[49\]                                                        | 1 mic          | yes   |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[50\]                                                        | 1 mic          | ?     |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[50\]                                                        | 1 mic          | yes   |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[51\]                                                        | 1 mic          | ?     |
 | [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)               | $300               | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                                                     | none           | yes   |
-| [Denon MC4000](Denon%20MC4000)                                       | $399               | 4            | 2 RCA, 2 XLR, 2 1/4" balanced, 1 1/8" headphone, 1 1/4" headphone | 0           | 2 RCA, 1 1/4“ XLR combo mic, 1 1/4“ mic                                  | 2 mic          | yes   |
+| [Denon MC4000](Denon%20MC4000)                                       | $399               | 4            | 2 RCA, 2 XLR, 2 1/4" balanced, 1 1/8" headphone, 1 1/4" headphone | 0           | 2 RCA, 1 1/4“ XLR combo mic, 1 1/4“ mic \[52\]                           | 2 mic          | yes   |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                     | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?     |
 | [Numark N4](Numark%20N4)                                             | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone                  | 4           | 4 RCA                                                                    | 2 phono        | ?     |
 | [Denon MC6000Mk2](Denon%20MC6000Mk2)                                 | $700               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone                   | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic                                             | 4 phono, 1 mic | yes   |
@@ -810,8 +810,14 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-49. Microphone input is mixed directly with the master output. It is not
-    sent to the computer.
+49. Microphone input is mixed with the master output in hardware. It is
+    not available to the computer.
 
-50. Microphone input is mixed directly with the master output. It is not
-    sent to the computer.
+50. Microphone input is mixed with the master output in hardware. It is
+    not available to the computer.
+
+51. Microphone input is mixed with the master output in hardware. It is
+    not available to the computer.
+
+52. Microphone and auxiliary inputs are mixed with the master output in
+    hardware. They are not available to the computer.

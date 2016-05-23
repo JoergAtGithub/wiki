@@ -81,11 +81,11 @@ quickly through the track.~~
 activated, you can use the platter to scratch the track as you would
 with a vinyl record.
 
-Press and hold Shift and then press and hold this button to activate the
-Censor feature: the playback of the track will be reversed, but when you
-release the button, normal playback will resume from where it would have
-been if you had never engaged the Censor feature (i.e., as if the track
-had been playing forward the whole time).
+Hold Shift and this button to activate the Censor feature: the playback
+of the track will be reversed, but when you release the button, normal
+playback will resume from where it would have been if you had never
+engaged the Censor feature (i.e., as if the track had been playing
+forward the whole time).
 
 15\. **Key Lock / Range:** Toggle Key Lock. When Key Lock is activated,
 the track’s key will remain the same even if you adjust its speed. Hold

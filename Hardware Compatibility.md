@@ -539,7 +539,8 @@ best to use the sound card built into a mixer (or a digital input if the
 mixer has one). When analog outputs of a separate sound card are plugged
 into a digital mixer, the sound card converts the digital signals to
 analog, then the mixer converts the analog signals back to digital for
-its processing.
+its processing. If the input to the mixer is digital, those two
+conversions do not occur.
 
 However, some of these mixers are analog mixers and the built in sound
 card converts the digital signals from the computer to analog for the

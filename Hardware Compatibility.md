@@ -536,11 +536,13 @@ best to use the sound card built into a mixer (or a digital input if the
 mixer has one). When analog outputs of a separate sound card are plugged
 into a digital mixer, the sound card converts the digital signals to
 analog, then the mixer converts the analog signals back to digital for
-its processing. However, some of these mixers are analog mixers and the
-built in sound card converts the digital signals from the computer to
-analog for the mixer's analog processing. In that case, using the
-mixer's built in sound card may or may not sound better than a separate
-sound card, depending on the quality of each of the sound cards.
+its processing.
+
+However, some of these mixers are analog mixers and the built in sound
+card converts the digital signals from the computer to analog for the
+mixer's analog processing. In that case, using the mixer's built in
+sound card may or may not sound better than a separate sound card,
+depending on the quality of each of the sound cards.
 
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx.

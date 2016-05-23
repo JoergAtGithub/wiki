@@ -59,11 +59,10 @@ Hold Shift and press this button to return to the start of the track.
 10\. **Play/Pause / Stutter:** Play/pause playback. Hold Shift and then
 press this button to “stutter-play” the track from the cue point.
 
-11\. **Hot Cues:** Press any of these 4 pads to set and jump to a hot
-cue point. To set a hot cue point, press an unlit pad at the desired
-location in the track (the pad will then be lit). To jump to that hot
-cue point, press the lit pad. To delete a hot cue point, press and hold
-Shift and then press a lit pad.
+11\. **Hot Cues:** Press a pad to set or jump to a hot cue point. To set
+a hot cue point, press an unlit pad at the desired location in the track
+(the pad will then be lit). To jump to that hot cue point, press the lit
+pad. To delete a hot cue point, hold Shift and press a lit pad.
 
 12\. **Pad Mode:** <span class="underline">Currently unmapped</span>
 

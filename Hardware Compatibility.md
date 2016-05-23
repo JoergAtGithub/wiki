@@ -532,13 +532,13 @@ installed in venues for multiple DJs to use.
 
 Every device in an audio signal chain and each conversion between
 digital and analog signals adds noise and distortion, so if the mixer is
-digital, it is better to use the sound card built into a mixer than to
-plug another sound card into the mixer. However, some of these mixers
-are analog mixers and the built in sound card converts the digital
-signals from the computer to analog for the mixer's processing. In that
-case, using the mixer's built in sound card may or may not sound better
-than a separate sound card, depending on the quality of each of the
-sound cards.
+digital, it is better to use the sound card built into a mixer (or a
+digital input if the mixer has one) than to plug another sound card into
+the mixer. However, some of these mixers are analog mixers and the built
+in sound card converts the digital signals from the computer to analog
+for the mixer's processing. In that case, using the mixer's built in
+sound card may or may not sound better than a separate sound card,
+depending on the quality of each of the sound cards.
 
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx.

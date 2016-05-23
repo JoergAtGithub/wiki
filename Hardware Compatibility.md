@@ -494,8 +494,8 @@ output sound card is recommended. You generally get the sound quality
 you pay for with sound cards.
 
 See [this video](https://www.youtube.com/watch?v=bBi6ecfm-Oo) for a
-comparison of cheaper DJ sound cards. Note that it does not include the
-Numark DJ iO 2 though.
+comparison of some cheaper DJ sound cards. Note that it does not include
+the Numark DJ iO 2, ESI UDJ6, or ESI Maya 44 USB+ sound cards though.
 
 \<sortable 2=numeric\>
 

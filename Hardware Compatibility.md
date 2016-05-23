@@ -730,8 +730,8 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
     special driver. However, there is no information about anyone using
     it with Linux online.
 
-32. Microphone input is mixed directly with the master output. It is not
-    sent to the computer.
+32. Microphone input is mixed with the master output in hardware. It is
+    not available to the computer.
 
 33. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using

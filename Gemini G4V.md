@@ -65,6 +65,9 @@ included below:
     from the library into the respective virtual deck
   - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
     active virtual deck
+  - The deck's CUP buttons will seek the track to the start and stops it
+    when the track is not playing and will start playback from the
+    beginning of the track when the track is playing
   - The Back button toggles the Browse knob's control between the left
     and right panel of the library display
   - The Browse knob scrolls up and down through the active panel in the
@@ -189,4 +192,3 @@ Below is a list of controls on the board that currently do not have any
 functionality
 
   - The Bank Up/Bank Down button
-  - The CUP button

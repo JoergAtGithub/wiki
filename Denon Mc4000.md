@@ -91,7 +91,8 @@ forward the whole time).
 the track’s key will remain the same even if you adjust its speed. Hold
 Shift and press to cycle through the available ranges of the pitch fader
 (+/- 8%, 16%, 50%). Other ranges for the fader can be selected in
-Mixxx's Preferences in the Interface section.
+Mixxx's Preferences in the Interface section, but pressing this button
+with Shift will only cycle through 8%, 16%, and 50%.
 
 16\. **Pitch Bend -/+ :** Hold one of these buttons to momentarily
 reduce or increase (respectively) the speed of the track.

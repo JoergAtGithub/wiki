@@ -84,7 +84,7 @@ Here is an example with the playlists:
 
 Here is the UML for the current classes:
 
-[[/media/gsoc_2016/librarymanager.png|]]
+[[/media/gsoc_2016/librarymanager_2.png|]]
 
 ### v.0.1.0 - LibrarySidebar
 

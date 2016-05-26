@@ -9,7 +9,7 @@ table to look at and use your computer while DJing.
   - [Crane Stand
     Elite](https://store.cranehardware.com/product_info.php/cPath/23/products_id/69)
   - [UDG Creator
-    stand](https://www.udggear.com/udg-creator-laptop-controller-stand-aluminium-black)
+    Stand](https://www.udggear.com/udg-creator-laptop-controller-stand-aluminium-black)
   - [Hercules Stands
     DG400BB](http://www.herculesstands.com/multimedia/DG400BB.html)
     (note: Hercules Stands is not the same company as Hercules, which

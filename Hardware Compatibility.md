@@ -450,8 +450,8 @@ of the mono outputs and the stereo headphone output would be the same.
 #### Bit depth and sample rate
 
 Most music is published with a bit depth of 16 bits at a sample rate of
-44.1 kHz because this is all that is needed to store the music in
-digital form.
+44.1 kHz because this is all that is needed to store all the detail of
+music in digital form.
 
 Bit depth determines the possible dynamic range of the signal. 16 bits
 is more than enough for playing back music. While 24 bits is helpful for
@@ -461,7 +461,9 @@ playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought
 Half the sample rate determines the maximum frequency that can be
 represented by the signal. Humans generally can't hear frequencies above
 20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
-of 22.05 kHz, is fine for playback.
+of 22.05 kHz, is fine for playback. Higher sample rates like 88.2 kHz
+and 96 kHz can be helpful to reduce aliasing distortion when recording,
+but have no benefit for playback and make your computer work harder.
 
 For a more thorough and technical explanation of why 16 bits at 44.1 kHz
 is all that is needed for playback, read [24/192 Music Downloads Are

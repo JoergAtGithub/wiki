@@ -42,16 +42,37 @@ new layout it will be able to fit in small screens (1024\*600).
 ### v.0.0.1 - LibraryViewManager
 
 This project will add some elements to the current GUI so it is better
-to have something to handle all this new library features so all related
-to the Library will be a WLibraryFeature. This library features will be
-in different QStackedWidget allowing the user to select the desired
-WLibraryFeature to the current stack. All of this is to allow multiple
-instances of the same kind of feature in the library (later I will
-explain the LibrarySidebar collapsed and expanded versions and
-LibraryViewManager will handle this two classes).
+to have something to handle all this new library features, so all
+related to the Library will be a WLibraryFeature and all of this will be
+handled by the LibraryViewManager this will respect the Mixxx init
+refactor idea by rryan2 [link](mixxx_init_refactor).
 
-This design is inspired in the Mixxx init refactor idea by rryan2
-[link](mixxx_init_refactor). Here there is the UML design:
+Every feature will have two panes (right and left pane), the left pane
+has the controls or trees needed by it and the right pane has the table
+(if a feature does not need the left pane it is hidden). There will be
+the option to have two features showing at the same time so, when the
+user enables a second feature, it shares the left pane in a statick
+stack and both right panes are visible.
+
+This is inspired in the Nemo File Manager (if you enable the extra pane
+in view menu). When the user focuses one of the two right panes, the
+left pane is changed to show the focused feature's left pane.
+
+[[/media/gsoc_2016/libraryfeature_0_1_0.png|]]
+
+As we can see in the image, a button bar will have all the Library
+Features allowing the user to select a new one (it will be added in the
+current focused pane). Also, there will be the option to show only one
+pane allowing the user to have the current Mixxx layout.
+
+Also, there will be three types of Library Features:
+
+  - Auto DJ like features that have a track table (right pane) and a set
+    of control widgets (left pane)
+  - Crates like features with the tree at the left pane and the table at
+    the right pane
+  - Features without a track table like "Notes" feature (with nothing at
+    the left pane)
 
 [[/media/gsoc_2016/librarymanager.png|]]
 

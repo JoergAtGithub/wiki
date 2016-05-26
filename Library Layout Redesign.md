@@ -17,8 +17,9 @@ others are inspired in the library layout redesign discussion thread
 will be developed in different small releases. The changes will be the
 following:
 
-  - **Library tab:** add to the current LibrarySidebar a collapsed
-    version (removing the Qt Treeview in some cases).
+  - **Library tree:** change the library tree to small buttons and some
+    Lbrary Features will keep their existing tree views. Also there will
+    be the option to have two LibraryFeatures at the same time.
   - **Library view:** the Treeview will be changed to create a one
     similar to the one existing in Clementine player
   - **Browse PC view:** this will add to this tab the option to see
@@ -33,29 +34,21 @@ layout is designed grouping similar things in one tab. Also with this
 new layout it will be able to fit in small screens (1024\*600).
 
   - **Library tab:** now it has small buttons allowing more space,
-    useful for small screens.
+    useful for small screens, and for bigger screens there's the option
+    to have two library features at the same time.
   - **Library view:** now it has the playlists, the crates and the songs
-    all together.
+    all together and it allows to sort the songs by artist, album...
 
-## Deliverables
+## Expected result
 
-### v.0.0.1 - LibraryViewManager
-
-This project will add some elements to the current GUI so it is better
-to have something to handle all this new library features, so all
-related to the Library will be a LibraryFeature and all of this will be
-handled by the LibraryViewManager this will respect the Mixxx init
-refactor idea by rryan2 [link](mixxx_init_refactor). The main function
-for the LibraryViewManager will be to set the proper left pane when the
-focus is changed and show the selected LibraryFeature when clicked in
-the button bar.
-
-Every feature will have two panes (right and left pane), the left pane
-has the controls or trees needed by it and the right pane has the table
-(if a feature does not need the left pane it is hidden). There will be
-the option to have two features showing at the same time so, when the
-user enables a second feature, it shares the left pane in a statick
-stack and both right panes are visible.
+The main idea of this project is to allow a future addition of many
+features to the library. Every feature will have two panes (right and
+left pane), the left pane has the controls or trees needed by it (e.g.
+the crates feature) and the right pane has the table (if a feature does
+not need the left pane it is hidden). There will be the option to have
+two features showing at the same time so, when the user enables a second
+feature, it shares the left pane in a statick stack and both right panes
+are visible.
 
 This is inspired in the Nemo File Manager (if you enable the extra pane
 in view menu). When the user focuses one of the two right panes, the
@@ -82,23 +75,36 @@ Here is an example with the playlists:
 
 [[/media/gsoc_2016/libraryfeature_playlists.png|]]
 
-Here is the UML for the current classes:
+## Deliverables
+
+### v.0.0.1 - LibraryViewManager
+
+This is the first step in the project an as the project will add some
+elements to the current GUI, it is better to have something to handle
+all this new library features. Then, all related to the Library will be
+a LibraryFeature and all of this will be handled by the
+LibraryViewManager class that will respect the Mixxx init refactor idea
+by rryan2 [link](mixxx_init_refactor). The main function for the
+LibraryViewManager will be to set the proper left pane when the focus is
+changed and show the selected LibraryFeature when clicked in the button
+bar. Here is the UML for the LibraryViewManager and LibraryFeature
+classes:
 
 [[/media/gsoc_2016/librarymanager_2.png|]]
 
 ### v.0.1.0 - LibrarySidebar
 
-This is the first step in the project, the LibrarySidebar will have
-small buttons instead of the current treeview items to select the
-desired option. If the buttons do not fit then there is another button
-(+) that opens a popup where there are the remaining options. The model
-of this will be implemented like a tree but the 1st level will be the
-buttons and the 2nd, 3rd… will be a real Qt Treeview allowing to make a
-better integration with current Mixxx code. Theoretically the current
-SidebarModel class should not be changed with this new layout because I
-only will be changing the LibrarySidebar class model view. This will be
-a new class and will not replace the existing LibrarySidebar so there
-will be a collapsed and a expanded version of the LibrarySidebar.
+After the manager is created the LibrarySidebar must be changed to have
+small buttons (button bar) instead of the current treeview items. If the
+buttons do not fit then there is another button (+) that opens a popup
+where there are the remaining options. As noted in the previous sections
+the library features that need a tree will have it and it will be shown
+next to the buttons bar.
+
+Here the LibraryViewManager must handle the clicked() signal of the
+buttons and display the proper feature for the clicked button. With this
+design the current existing tree view won't be the same and will be
+ignored or changed.
 
 [[/media/gsoc_2016/library_0_1_0.png|]]
 

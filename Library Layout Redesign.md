@@ -43,9 +43,12 @@ new layout it will be able to fit in small screens (1024\*600).
 
 This project will add some elements to the current GUI so it is better
 to have something to handle all this new library features, so all
-related to the Library will be a WLibraryFeature and all of this will be
+related to the Library will be a LibraryFeature and all of this will be
 handled by the LibraryViewManager this will respect the Mixxx init
-refactor idea by rryan2 [link](mixxx_init_refactor).
+refactor idea by rryan2 [link](mixxx_init_refactor). The main function
+for the LibraryViewManager will be to set the proper left pane when the
+focus is changed and show the selected LibraryFeature when clicked in
+the button bar.
 
 Every feature will have two panes (right and left pane), the left pane
 has the controls or trees needed by it and the right pane has the table
@@ -62,8 +65,9 @@ left pane is changed to show the focused feature's left pane.
 
 As we can see in the image, a button bar will have all the Library
 Features allowing the user to select a new one (it will be added in the
-current focused pane). Also, there will be the option to show only one
-pane allowing the user to have the current Mixxx layout.
+current focused pane). Also, all the tables shown in the right panes
+will have the Search Bar. Moreover, there will be the option to show
+only one pane allowing the user to have the current Mixxx layout.
 
 Also, there will be three types of Library Features:
 
@@ -73,6 +77,12 @@ Also, there will be three types of Library Features:
     the right pane
   - Features without a track table like "Notes" feature (with nothing at
     the left pane)
+
+Here is an example with the playlists:
+
+[[/media/gsoc_2016/libraryfeature_playlists.png|]]
+
+Here is the UML for the current classes:
 
 [[/media/gsoc_2016/librarymanager.png|]]
 

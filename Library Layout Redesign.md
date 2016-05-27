@@ -198,10 +198,10 @@ folder, can be selected at preferences).
 
   - ~~Code final Manager class (CHANGED)~~
 
-W3 May 23rd - May 29th:
+~~W3 May 23rd - May 29th~~:
 
-  - Fix midterm and weekly goals
-  - Describe the required classes and behavior on the wiki
+  - ~~Fix midterm and weekly goals~~
+  - ~~Describe the required classes and behavior on the wiki~~
 
 W4 May 30th - June 5th:
 
@@ -268,3 +268,5 @@ W15 August 15th - August 23rd:
     report](http://jmigual.blogspot.com.es/2016/05/1-weekly-report.html)
   - [\#2 Weekly
     report](http://jmigual.blogspot.com.es/2016/05/2-weekly-report.html)
+  - [\#3 Weekly
+    report](http://jmigual.blogspot.com.es/2016/05/3-weekly-report.html)

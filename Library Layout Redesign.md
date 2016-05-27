@@ -54,7 +54,7 @@ This is inspired in the Nemo File Manager (if you enable the extra pane
 in view menu). When the user focuses one of the two right panes, the
 left pane is changed to show the focused feature's left pane.
 
-[[/media/gsoc_2016/libraryfeature_0_1_0.png|]]
+[[/media/gsoc_2016/libraryfeature_0_1_0_2.png|]]
 
 As we can see in the image, a button bar will have all the Library
 Features allowing the user to select a new one (it will be added in the
@@ -73,11 +73,13 @@ Also, there will be three types of Library Features:
 
 Here is an example with the playlists:
 
-[[/media/gsoc_2016/libraryfeature_playlists.png|]]
+[[/media/gsoc_2016/libraryfeature_playlists_2.png|]]
 
 ## Deliverables
 
-### v.0.0.1 - LibraryViewManager
+### v.0.1.0 - LibraryFeature
+
+#### v.0.0.1 - LibraryViewManager
 
 This is the first step in the project an as the project will add some
 elements to the current GUI, it is better to have something to handle
@@ -92,7 +94,7 @@ classes:
 
 [[/media/gsoc_2016/librarymanager_2.png|]]
 
-### v.0.1.0 - LibrarySidebar
+#### v.0.0.2 - LibrarySidebar
 
 After the manager is created the LibrarySidebar must be changed to have
 small buttons (button bar) instead of the current treeview items. If the
@@ -106,19 +108,25 @@ buttons and display the proper feature for the clicked button. With this
 design the current existing tree view won't be the same and will be
 ignored or changed.
 
-[[/media/gsoc_2016/library_0_1_0.png|]]
+[[/media/gsoc_2016/library_0_1_0_2.png|]]
+
+#### v.0.0.3 - Two panel focus change
+
+When the LibrarySidebar is finished and is functional, then the second
+right panel is added and the necessary methods to handle the focus
+change and to change the tree on focus changed are added. This should be
+an easy step after coding all the important changes in the v.0.0.2
 
 ### v.0.2.0 - Library View
 
-This step will have some releases:
-
 #### v.0.1.1 Add Playlist/Crates view
 
-When the user selects a playlist or a crate, a split view will appear
-with two Qt TableViews one (at left) for the current songs in library
-and the other (at right) for the songs in the playlist/crate. The user
-can add songs with the right click context menu or drag them directly
-from the left to the right.
+This changes the current playlist/crates view to one that when the user
+selects a playlist or a crate, a split view will appear with two Qt
+TableViews one (at left) for the current songs in library and the other
+(at right) for the songs in the playlist/crate. The user can add songs
+with the right click context menu or drag them directly from the left to
+the right.
 
 [[/media/gsoc_2016/library_0_1_1.png|]]
 
@@ -181,32 +189,35 @@ folder, can be selected at preferences).
 
 ## Timeline
 
-W1 May 9th - May 15th:
+~~W1 May 9th - May 15th:~~
 
-  - Create Manager class prototype
-  - Check viability of Manager class
+  - ~~Create Manager class prototype~~
+  - ~~Check viability of Manager class~~
 
-W2 May 16th - May 22nd:
+~~W2 May 16th - May 22nd:~~
 
-  - Code final Manager class
+  - ~~Code final Manager class (CHANGED)~~
 
 W3 May 23rd - May 29th:
 
-  - Implement LibrarySidebar collapsed version still without crates,
-    playlists and model added
+  - Fix midterm and weekly goals
+  - Describe the required classes and behavior on the wiki
 
 W4 May 30th - June 5th:
 
-  - Add model to LibrarySidebar collapsed and bugfixing
+  - Begin coding new LibraryFeature and LibraryViewManager classes
+    (v.0.0.1)
 
 W5 June 6th - June 12th:
 
-  - Add crates and playlists to LibrarySidebar collapsed 
+  - Finish coding of new LibraryFeature and LibraryViewManager classes
+    (v.0.0.1)
 
 W6 June 13th - June 19th:
 
   - Study for exams
-  - Begin implementing new crates and playlists view (v.0.1.1)
+  - Begin implementing new LibrarySidebar with the LibraryFeature
+    (v.0.0.2)
 
 W7 June 20th - June 26th (mid term evaluations):
 
@@ -214,36 +225,46 @@ W7 June 20th - June 26th (mid term evaluations):
 
 W8 June 27th - July 3rd:
 
-  - Finish new crates and playlist view (v.0.1.1).
-  - Merge v.0.1.1
-  - Implement advanced grouping like Clementine (v.0.1.2.1).
+  - Finish coding of new LibrarySidebar (v.0.0.2)
+  - Add two panel focus change (v.0.0.3)
+  - Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)
 
 W9 July 4th - July 10th:
 
-  - Implement new filtering options (v.0.2.0):
-  - Implement search location filtering options (v.0.1.3.0)
+  - Implement advanced grouping like Clementine (v.0.1.2.1).
 
 W10 July 11th - July 17th:
 
+  - Add new crates and playlists view (v.0.1.1) 
+
+W11 July 18th - July 24th:
+
   - Implement new filtering options (v.0.2.0):
+  - Implement search location filtering options (v.0.1.3.0)
   - Implement search method filtering options (v.0.1.3.1)
   - Write tests and bugfixing to filtering options (v.0.1.3.1 -\>
     v.0.2.0)
   - Merge v.0.2.0
 
-W11 July 18th - July 24th:
+W12 July 25th - July 31st:
 
   - Implement new Browse PC view, needs to be Bullet Proof (v.0.3.0)
   - Merge v.0.3.0
 
-W12 July 25th - July 31st:
-
-  - Bugfixing
-
 W13 August 1st - August 7th:
 
+  - Bugfixing
   - Writing documentation 
 
 W14 August 8th - August 14th:
 
 W15 August 15th - August 23rd:
+
+## Weekly reports
+
+  - [\#0 Weekly
+    report](http://jmigual.blogspot.com.es/2016/05/0-weekly-report.html)
+  - [\#1 Weekly
+    report](http://jmigual.blogspot.com.es/2016/05/1-weekly-report.html)
+  - [\#2 Weekly
+    report](http://jmigual.blogspot.com.es/2016/05/2-weekly-report.html)

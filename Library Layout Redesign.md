@@ -58,9 +58,15 @@ left pane is changed to show the focused feature's left pane.
 
 As we can see in the image, a button bar will have all the Library
 Features allowing the user to select a new one (it will be added in the
-current focused pane). Also, all the tables shown in the right panes
-will have the Search Bar. Moreover, there will be the option to show
-only one pane allowing the user to have the current Mixxx layout.
+current focused pane). For the final version of the button bar the user
+will be able to select which features he wants to be shown in the button
+bar and to allow the user selecting this features the Library Legacy
+Tree will be shown allowing the user to select the feature from it, in
+the midterm version this won't be created already.
+
+Also, all the tables shown in the right panes will have the Search Bar.
+Moreover, there will be the option to show only one pane allowing the
+user to have the current Mixxx layout.
 
 Also, there will be three types of Library Features:
 
@@ -92,7 +98,7 @@ changed and show the selected LibraryFeature when clicked in the button
 bar. Here is the UML for the LibraryViewManager and LibraryFeature
 classes:
 
-[[/media/gsoc_2016/librarymanager_2.png|]]
+[[/media/gsoc_2016/library_layout_redesign/librarymanager_4.png|]]
 
 #### v.0.0.2 - LibrarySidebar
 

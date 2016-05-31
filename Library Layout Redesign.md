@@ -77,6 +77,15 @@ Also, there will be three types of Library Features:
   - Features without a track table like "Notes" feature (with nothing at
     the left pane)
 
+The key mappings to handle the focus feature will be the following:
+
+  - **Up**: SelectPrevItem
+  - **Down**: SelectNextItem
+  - **Left**: move selection left / collapse
+  - **Right**: move selection right / expand
+  - **Enter**: ChooseItem
+  - **Tab**: ToggleFocusWidget
+
 Here is an example with the playlists:
 
 [[/media/gsoc_2016/libraryfeature_playlists_2.png|]]

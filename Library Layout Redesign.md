@@ -134,7 +134,7 @@ TableViews one (at left) for the current songs in library and the other
 with the right click context menu or drag them directly from the left to
 the right.
 
-[[/media/gsoc_2016/library_0_1_1.png|]]
+[[/media/gsoc_2016/library_layout_redesign/library_0_1_1_2.png|]]
 
 #### v.0.1.2 Add Clementine like view
 
@@ -151,7 +151,7 @@ the following sorting options to group by:
   - Genre / Artist
   - Genre / Artist / Album
 
-[[/media/gsoc_2016/library_0_1_2.png|]]
+[[/media/gsoc_2016/library_layout_redesign/library_0_1_2_3.png|]]
 
 #### v.0.1.2.1 Add advanced grouping
 
@@ -177,7 +177,7 @@ showing the following menu:
 
 When the bugfixing is done this becomes (v. 0.2.0).
 
-[[/media/gsoc_2016/library_0_2_0.png|]]
+[[/media/gsoc_2016/library_layout_redesign/library_0_2_0_2.png|]]
 
 ### v.0.3.0 - Browse PC view
 

@@ -7,9 +7,9 @@ rule to follow is this: **Try to make your code blend in with the
 existing code.**
 
 When in doubt, use the [Google C++ Style
-Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml).
-It's a treasure trove of C++ advice. Just double Google's indentation
--\> 2 spaces become 4 spaces; 4 spaces become 8 spaces.
+Guide](https://google.github.io/styleguide/cppguide.html). It's a
+treasure trove of C++ advice. Just double Google's indentation -\> 2
+spaces become 4 spaces; 4 spaces become 8 spaces.
 
 That being said, there are large chunks of Mixxx that are written in
 slightly differing styles (mainly variable naming conventions). In order

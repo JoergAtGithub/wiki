@@ -86,6 +86,17 @@ The key mappings to handle the focus feature will be the following:
   - **Enter**: ChooseItem
   - **Tab**: ToggleFocusWidget
 
+To handle all of this in the skin.xml there will be the following tags:
+
+  - ButtonBar for the ButtonBar
+  - LeftPane for the Left Pane
+  - RightPane for the Right Pane, it can be declared multiple times and
+    all of them will appear and this will allow to show two features at
+    once. Every declared pane must have a unique <id></id> setting to
+    allow the SearchBox to work.
+  - SearchBox can be connected with the corresponding pane setting the
+    same<id></id> tag.
+
 Here is an example with the playlists:
 
 [[/media/gsoc_2016/libraryfeature_playlists_2.png|]]

@@ -111,16 +111,33 @@ Here is an example with the playlists:
 
 This is the first step in the project an as the project will add some
 elements to the current GUI, it is better to have something to handle
-all this new library features. Then, all related to the Library will be
-a LibraryFeature and all of this will be handled by the
-LibraryViewManager class that will respect the Mixxx init refactor idea
-by rryan2 [link](mixxx_init_refactor). The main function for the
-LibraryViewManager will be to set the proper left pane when the focus is
-changed and show the selected LibraryFeature when clicked in the button
-bar. Here is the UML for the LibraryViewManager and LibraryFeature
-classes:
+all this new library features. This is the first step in the project and
+will change a bit the existing Library class that handles the relation
+between the Mixxx frontend (WLibrary, WLibrarySidebar, DlgRecording...)
+and the backend (Library, LibraryFeature, BasePlaylistFeature...).
+Currently all related to the Mixxx library is a LibraryFeature and all
+of this is currently handled by the Library class that will respect the
+Mixxx init refactor idea by rryan2 [link](mixxx_init_refactor).
 
-[[/media/gsoc_2016/library_layout_redesign/librarymanager_4.png|]]
+The main changes to the Library class will be to add the option of
+multiple right panes (currently by deafult there's one pane handled with
+the WLibrary class). Also to make things easy a new class will be
+introduced, LibraryPaneManager and there will be one of this classes for
+each pane helping with events like focusChange. Here is the UML for the
+relations between the existing Library and the LibraryPaneManager:
+
+[[/media/gsoc_2016/library_layout_redesign/librarymanager_5.png|]]
+
+As it can be seen every pane will have two WLibrary. Each pane will have
+a left and a right side and only one left side for all panes can be
+shown (this left side is the left pane stack shown in the mockup). When
+the user focuses a pane the left side of the focused pane is shown, also
+when the user changes the selected feature in the same pane the left
+side changes (is a stack so it only needs to select the widget for the
+feature).
+
+This should allow to have all the features in each pane and that they
+work independently.
 
 #### v.0.0.2 - LibrarySidebar
 

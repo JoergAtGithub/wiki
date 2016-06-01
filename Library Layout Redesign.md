@@ -96,6 +96,8 @@ To handle all of this in the skin.xml there will be the following tags:
     allow the SearchBox to work.
   - SearchBox can be connected with the corresponding pane setting the
     same<id></id> tag.
+  - Overview The currently existing preview (will not be altered)
+  - CoverArt for the existing cover art (will not be altered)
 
 Here is an example with the playlists:
 

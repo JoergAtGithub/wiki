@@ -133,7 +133,7 @@ relations between the existing Library and the LibraryPaneManager:
 
 Here there's a detailed view of the stacked widget of every pane:
 
-[[/media/gsoc_2016/library_layout_redesign/uml/widgetstack_2.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/widgetstack_3.png|]]
 
 As it can be seen every pane will have two WLibrary. Each pane will have
 a left and a right side and only one left side for all panes can be
@@ -146,7 +146,7 @@ feature).
 Here's a detailed view of the Library and LibraryFeature relations and
 inheritance:
 
-[[/media/gsoc_2016/library_layout_redesign/uml/libraryfeature_2.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/libraryfeature_3.png|]]
 
 As it can be seen the LibraryFeature instead of having the bindWidget()
 function it will have a bindLeftPane() and bindRightPane() allowing to

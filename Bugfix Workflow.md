@@ -48,6 +48,12 @@ Ask your questions or discuss your ideas at
     (mailing list) 
   - or at the Mixxx IRC Channel: \#mixxx on
     [Freenode](http://freenode.net/).
+  - [Opening a pull request on
+    GitHub](https://help.github.com/articles/using-pull-requests/) is a
+    good way to allow others to see your code and comment on it. You can
+    open a pull request before your code is ready to be merged with
+    Mixxx, just make sure to say that your code is not ready for merging
+    when you open the pull request. 
 
 ## Fix it\!
 

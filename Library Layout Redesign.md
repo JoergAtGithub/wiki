@@ -86,6 +86,9 @@ The key mappings to handle the focus feature will be the following:
   - **Enter**: ChooseItem
   - **Tab**: ToggleFocusWidget
 
+The mapping for the MIDI/HID control will be the same as the related in
+the following PR: <https://github.com/mixxxdj/mixxx/pull/953>
+
 To handle all of this in the skin.xml there will be the following tags:
 
   - ButtonBar for the ButtonBar

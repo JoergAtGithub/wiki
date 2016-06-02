@@ -126,7 +126,11 @@ introduced, LibraryPaneManager and there will be one of this classes for
 each pane helping with events like focusChange. Here is the UML for the
 relations between the existing Library and the LibraryPaneManager:
 
-[[/media/gsoc_2016/library_layout_redesign/librarymanager_5.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/general.png|]]
+
+Here there's a detailed view of the stacked widget of every pane:
+
+[[/media/gsoc_2016/library_layout_redesign/uml/widgetstack.png|]]
 
 As it can be seen every pane will have two WLibrary. Each pane will have
 a left and a right side and only one left side for all panes can be
@@ -136,8 +140,15 @@ when the user changes the selected feature in the same pane the left
 side changes (is a stack so it only needs to select the widget for the
 feature).
 
-This should allow to have all the features in each pane and that they
-work independently.
+Here's a detailed view of the Library and LibraryFeature relations and
+inheritance:
+
+[[/media/gsoc_2016/library_layout_redesign/uml/libraryfeature.png|]]
+
+As it can be seen the LibraryFeature instead of having the bindWidget()
+function it will have a bindLeftPane() and bindRightPane() allowing to
+have widgets without a left pane or with a left pane that is not a tree
+(e.g. buttons in AutoDJ).
 
 #### v.0.0.2 - LibrarySidebar
 

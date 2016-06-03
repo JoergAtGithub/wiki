@@ -103,11 +103,11 @@ the following PR: <https://github.com/mixxxdj/mixxx/pull/953>
 To handle all of this in the skin.xml there will be the following tags:
 
   - ButtonBar for the ButtonBar
-  - LeftPane for the Left Pane
-  - RightPane for the Right Pane, it can be declared multiple times and
-    all of them will appear and this will allow to show two features at
-    once. Every declared pane must have a unique <id></id> setting to
-    allow the SearchBox to work.
+  - LibraryLeftPane for the Library's Left Pane
+  - LibraryRightPane for the Library's Right Pane, it can be declared
+    multiple times and all of them will appear and this will allow to
+    show two features at once. Every declared pane must have a unique
+    <id></id> setting to allow the SearchBox to work.
   - SearchBox can be connected with the corresponding pane setting the
     same<id></id> tag.
   - Overview The currently existing preview (will not be altered)

@@ -46,9 +46,10 @@ features to the library. Every feature will have two panes (right and
 left pane), the left pane has the controls or trees needed by it (e.g.
 the crates feature) and the right pane has the table (if a feature does
 not need the left pane it is hidden). There will be the option to have
-two features showing at the same time so, when the user enables a second
-feature, it shares the left pane in a statick stack and both right panes
-are visible.
+two (or N) features showing at the same time so, when the user enables a
+second feature, it shares the left pane in a static stack and both right
+panes are visible. This is not limited to only two right pane
+containers, it can be up to N pane containers.
 
 This is inspired in the Nemo File Manager (if you enable the extra pane
 in view menu). When the user focuses one of the two right panes, the
@@ -67,6 +68,16 @@ the midterm version this won't be created already.
 Also, all the tables shown in the right panes will have the Search Bar.
 Moreover, there will be the option to show only one pane allowing the
 user to have the current Mixxx layout.
+
+Here's an "exploded" drawing of the feature's mapping in one pane or
+another:
+
+[[/media/gsoc_2016/library_layout_redesign/library_feature_stack.png|]]
+
+The feature A is loaded in the right pane container 1 because it was
+focused when clicking the A button in the button bar. If the pane
+container 2 had been focused then the feature A would have been loaded
+in the pane container 2.
 
 Also, there will be three types of Library Features:
 

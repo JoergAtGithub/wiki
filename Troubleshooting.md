@@ -201,15 +201,19 @@ USB Bulk devices.
 First, check that your user account is in the group "users". Open a
 console and run the command `groups` to find out what groups your user
 is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
-as root, log out, and log back in.
+as root to add YOUR-USER-NAME to the "users" group, log out, and log
+back in.
 
-The udev rule is installed with the Ubuntu PPA and when compiling Mixxx
-from source, however packages for other distributions may not install it
-correctly. If there is no file in /etc/udev/rules.d/ or
-/lib/udev/rules.d/ for Mixxx, save [the udev
-rule](https://github.com/mixxxdj/mixxx/blob/1.12/res/linux/mixxx.usb.rules)
-to /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root (or
-restart your computer).
+If you still cannot activate your controller, check that the udev rule
+was installed in /lib/udev/rules.d/ or /etc/udev/rules.d/ . The file
+should be called something like mixxx.usb.rules or 40-mixxx-usb.rules.
+It is installed with the Ubuntu PPA and when installing Mixxx from
+source (if you have write access to /etc/udev/rules.d), however packages
+for other distributions may not install it correctly. If that file is
+missing, save [the udev
+rule](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
+in /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root or
+restart your computer.
 
 ## BPM of tracks is not shown in my library
 

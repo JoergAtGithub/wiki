@@ -190,7 +190,7 @@ only show up as an HID device, not a MIDI device. Also, there is [a
 bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
 loading the snd-seq-midi module manually.
 
-8==== HID and USB Bulk controllers on GNU/Linux ====
+### HID and USB Bulk controllers on GNU/Linux
 
 Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
 will say something to this effect in the log when it scans for HID

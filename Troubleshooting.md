@@ -190,42 +190,26 @@ only show up as an HID device, not a MIDI device. Also, there is [a
 bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
 loading the snd-seq-midi module manually.
 
-### HID controllers on GNU/Linux
+8==== HID and USB Bulk controllers on GNU/Linux ====
 
-Mixxx may not have permission to use your HID device. (Mixxx will say
-something to this effect in the log when it scans for HID devices.) To
-fix this, do the following:
+Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
+will say something to this effect in the log when it scans for HID
+devices.) As of version 2.0, Mixxx should automatically install a udev
+rule to give users in the group called "users" permission to use HID and
+USB Bulk devices.
 
-1.  Open a console
-2.  As root, create `/etc/udev/rules.d/15-mixxx-usb.rules` \[1\] (you
-    can change the number and name as appropriate): `sudo nano
-    /etc/udev/rules.d/15-mixxx-usb.rules`
-3.  Edit that file and add the following: ` # Allow scanning and use of
-    USB HID devices
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
-    ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
-    
-    # Vendors with USB Bulk-transfer DJ controllers
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
-    ATTRS{idVendor}=="06f8", GROUP="users", MODE="0660" # Hercules
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
-    ATTRS{idVendor}=="15e4", GROUP="users", MODE="0660" # Numark (may be
-    needed for NS7/V7)
-    SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",
-    ATTRS{idVendor}=="17cc", GROUP="users", MODE="0660" # Native
-    Instruments (and Traktor)  ` (use whatever group name you prefer.)
-    Some distributions (like AV Linux 6.0) may also require adding this
-    line as well: `KERNEL=="hiddev*", NAME="usb/%k", GROUP="users"
-    `
-4.  Save and exit.
-5.  Enter `sudo /etc/init.d/udev restart`
-6.  If your user account is not already a member of `users` (or whatever
-    group name you used in the `rules` file above,) enter `sudo usermod
-    -a -G users $USER`
-7.  Log off and back on so your user account gets the new group and
-    associated permissions.
-8.  Start Mixxx and your HID devices should now be listed under
-    Controllers in the Preferences window.
+First, check that your user account is in the group "users". Open a
+console and run the command `groups` to find out what groups your user
+is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
+as root, log out, and log back in.
+
+The udev rule is installed with the Ubuntu PPA and when compiling Mixxx
+from source, however packages for other distributions may not install it
+correctly. If there is no file in /etc/udev/rules.d/ or
+/lib/udev/rules.d/ for Mixxx, save [the udev
+rule](https://github.com/mixxxdj/mixxx/blob/1.12/res/linux/mixxx.usb.rules)
+to /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root (or
+restart your computer).
 
 ## BPM of tracks is not shown in my library
 
@@ -382,5 +366,3 @@ channel, please attach your `mixxx.log` file to help us help you.
     * The user library folder is listed below the current users home directory
     * Navigate to ''Application Support/Mixxx''
 ```
-
-1.  or /lib/udev/rules.d/15-mixxx-usb.rules in Ubuntu 12.04

@@ -1,31 +1,19 @@
 # THE MIXXX MANUAL HAS MOVED
 
-## To read the Mixxx manual
+  - Manual for the latest Mixxx version:
+    <http://mixxx.org/manual/latest>
+  - Manual for previous Mixxx versions: <http://mixxx.org/manual>
 
-Check here: <http://mixxx.org/manual/latest>
+<!-- end list -->
 
-## To contribute to the Mixxx manual:
+  - Sources for the Mixxx User Manual:
+    <https://github.com/mixxxdj/manual>
+  - Translations for the Mixxx User Manual :
+    <https://www.transifex.com/mixxx-dj-software/mixxxdj-manual/>
 
-Check out the following repository on Launchpad:
-<https://code.launchpad.net/~mixxxdevelopers/mixxx/manual>
-
-## To translate the Mixxx manual:
-
-We will use Launchpad translations as we have for Mixxx itself. This is
-not setup yet, but check back soon.
+-----
 
 # THE MANUAL BELOW IS OUTDATED AND DEPRECATED
-
-# Available Languages
-
-This manual is also available in:
-
-  - [German (Deutsch)](manual_german)
-  - [Spanish (Español)](manual_spanish)
-
-*These translations were graciously provided by Mixxx fans and we depend
-on you to keep them up to date\! (The Mixxx development team speaks
-English primarily.)*
 
 # Table of Contents
 

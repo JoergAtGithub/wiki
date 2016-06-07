@@ -1,13 +1,19 @@
-# Lingue Disponibili
+# THE MIXXX MANUAL HAS MOVED
 
-Questo manuale è disponibile anche in:
+  - Manual for the latest Mixxx version:
+    <http://mixxx.org/manual/latest>
+  - Manual for previous Mixxx versions: <http://mixxx.org/manual>
 
-  - [Tedesco (Deutsch)](manual_german)
-  - [Spagnolo (Español)](manual_spanish)
+<!-- end list -->
 
-*Tali traduzioni sono state cortesemente fornite dai sostenitori di
-MIXXX e noi contiamo su di te per mantenerle aggiornate\! (Il team di
-sviluppo di MIXXX parla principalmente inglese)*
+  - Sources for the Mixxx User Manual:
+    <https://github.com/mixxxdj/manual>
+  - Translations for the Mixxx User Manual :
+    <https://www.transifex.com/mixxx-dj-software/mixxxdj-manual/>
+
+-----
+
+# THE MANUAL BELOW IS OUTDATED AND DEPRECATED
 
 # Indice dei Contenuti
 

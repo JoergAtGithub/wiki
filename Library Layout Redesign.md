@@ -116,6 +116,45 @@ Here is an example with the playlists:
 
 [[/media/gsoc_2016/libraryfeature_playlists_2.png|]]
 
+To create the layout for this example in the skin.xml file it will be
+like this:
+
+``` xml
+<WidgetStack>
+  <Layout>Horizontal</Layout>
+  <Children>
+    <LibrarySidebar></LibrarySidebar>
+    <LibrarySidebarExpanded></LibrarySidebarExpanded>
+    
+    <!-- For Track table 1 -->
+    <WidgetStack>
+      <Layout>Vertical</Layout>
+      <Children>
+        <SearchBox>
+          <id>1</id>
+        </SearchBox>
+        <Library>
+          <id>1</id>
+        </Library>
+      </Children>
+    </WidgetStack>
+    
+    <!-- For Track table 2 -->
+    <WidgetStack>
+      <Layout>Vertical</Layout>
+      <Children>
+        <SearchBox>
+          <id>2</id>
+        </SearchBox>
+        <Library>
+          <id>2</id>
+        </Library>
+      </Children>
+    </WidgetStack>
+  </Children>
+</WidgetStack>
+```
+
 ## Deliverables
 
 ### v.0.1.0 - LibraryFeature
@@ -162,45 +201,6 @@ As it can be seen the LibraryFeature instead of having the bindWidget()
 function it will have a bindSidebarWidget() and bindLibraryWidget()
 allowing to have widgets without a sidebar widget or with a sidebar
 widget that is not a tree (e.g. buttons in AutoDJ).
-
-To create the layout for this example in the skin.xml file it will be
-like this:
-
-``` xml
-<WidgetStack>
-  <Layout>Horizontal</Layout>
-  <Children>
-    <LibrarySidebar></LibrarySidebar>
-    <LibrarySidebarExpanded></LibrarySidebarExpanded>
-    
-    <!-- For Track table 1 -->
-    <WidgetStack>
-      <Layout>Vertical</Layout>
-      <Children>
-        <SearchBox>
-          <id>1</id>
-        </SearchBox>
-        <Library>
-          <id>1</id>
-        </Library>
-      </Children>
-    </WidgetStack>
-    
-    <!-- For Track table 2 -->
-    <WidgetStack>
-      <Layout>Vertical</Layout>
-      <Children>
-        <SearchBox>
-          <id>2</id>
-        </SearchBox>
-        <Library>
-          <id>2</id>
-        </Library>
-      </Children>
-    </WidgetStack>
-  </Children>
-</WidgetStack>
-```
 
 #### v.0.0.2 - LibrarySidebar
 

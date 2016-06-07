@@ -72,7 +72,7 @@ user to have the current Mixxx layout.
 Here's an "exploded" drawing of the feature's mapping in one pane or
 another:
 
-[[/media/gsoc_2016/library_layout_redesign/library_feature_stack_3.png|]]
+[[/media/gsoc_2016/library_layout_redesign/library_feature_stack_4.png|]]
 
 The feature A is loaded in the right pane container 1 because it was
 focused when clicking the A button in the button bar. If the pane

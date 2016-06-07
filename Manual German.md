@@ -1,28 +1,19 @@
-# DAS MIXXX HANDBUCH IST UMGEZOGEN
+# THE MIXXX MANUAL HAS MOVED
 
-## Um das Mixxx Handbuch zu lesen
+  - Manual for the latest Mixxx version:
+    <http://mixxx.org/manual/latest>
+  - Manual for previous Mixxx versions: <http://mixxx.org/manual>
 
-Bisher nur auf Englisch verfügbar: <http://mixxx.org/manual/latest>
+<!-- end list -->
 
-## Um beim Mixxx Handbuch mitzuhelfen:
+  - Sources for the Mixxx User Manual:
+    <https://github.com/mixxxdj/manual>
+  - Translations for the Mixxx User Manual :
+    <https://www.transifex.com/mixxx-dj-software/mixxxdj-manual/>
 
-Schauen Sie sich die folgenden Repository auf Launchpad.net an:
-<https://code.launchpad.net/~mixxxdevelopers/mixxx/manual>
+-----
 
-## Um das Mixxx Handbuch zu übersetzen:
-
-Wir werden Launchpad.net Übersetzungen verwenden welche wir bereits für
-Mixxx selbst nutzen. Momentan sind diese noch nicht verfügbar. Kommen
-Sie später wieder.
-
-# DAS NACHFOLGENDE HANDBUCH IST VERALTET UND WIRD NICHT MEHR GEPFLEGT
-
-# Verfügbare Sprachen
-
-Dieses Handbuch ist außerdem verfügbar in:
-
-  - [Englisch (English)](manual)
-  - [Spanisch (Español)](manual_spanish)
+# THE MANUAL BELOW IS OUTDATED AND DEPRECATED
 
 # Mixxx 1.8 Handbuch
 

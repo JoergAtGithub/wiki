@@ -104,10 +104,10 @@ To handle all of this in the skin.xml there will be the following tags:
 
   - LibrarySideBar for the ButtonBar
   - LibrarySideBarExpanded for the Library's Left Pane
-  - Library for the Library's Right Pane, it can be declared multiple
-    times and all of them will appear and this will allow to show two
-    features at once. Every declared pane must have a unique <id></id>
-    setting to allow the SearchBox to work.
+  - Library for the Library's Pane, it can be declared multiple times
+    and all of them will appear and this will allow to show two features
+    at once. Every declared pane must have a unique <id></id> setting to
+    allow the SearchBox to work.
   - SearchBox can be connected with the corresponding pane setting the
     same<id></id> tag.
   - CoverArt for the existing cover art (will not be altered)

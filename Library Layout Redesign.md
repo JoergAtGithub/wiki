@@ -311,30 +311,38 @@ folder, can be selected at preferences).
   - ~~Fix midterm and weekly goals~~
   - ~~Describe the required classes and behavior on the wiki~~
 
-W4 May 30th - June 5th:
+~~W4 May 30th - June 5th~~:
 
-  - Begin coding new LibraryFeature and LibraryViewManager classes
-    (v.0.0.1)
+  - ~~Begin coding new LibraryFeature and LibraryViewManager classes
+    (v.0.0.1)~~
 
-W5 June 6th - June 12th:
+~~W5 June 6th - June 12th~~:
 
-  - Finish coding of new LibraryFeature and LibraryViewManager classes
-    (v.0.0.1)
+  - ~~Finish coding of new LibraryFeature and LibraryViewManager classes
+    (v.0.0.1)~~
 
 W6 June 13th - June 19th:
 
   - Study for exams
+  - ~~Add new button bar~~
+  - ~~Add sidebar expanded~~
+  - ~~Add multiple panes view~~
+  - Accept drop targets
+  - Add v.0.0.2 design to all skins
   - Begin implementing new LibrarySidebar with the LibraryFeature
     (v.0.0.2)
 
 W7 June 20th - June 26th (mid term evaluations):
 
   - Full time study for exams (until June 23th)
+  - Check properly keyboard mapping
 
-W8 June 27th - July 3rd:
+W8 June 27th - July
 
+  - Show breadcrumbs
+  - Favorites in sidebar - "More" button in sidebar
   - Finish coding of new LibrarySidebar (v.0.0.2)
-  - Add two panel focus change (v.0.0.3)
+  - ~~Add two panel focus change (v.0.0.3)~~
   - Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)
 
 W9 July 4th - July 10th:
@@ -378,3 +386,7 @@ W15 August 15th - August 23rd:
     report](http://jmigual.blogspot.com.es/2016/05/2-weekly-report.html)
   - [\#3 Weekly
     report](http://jmigual.blogspot.com.es/2016/05/3-weekly-report.html)
+  - [\#4 Weekly
+    report](http://jmigual.blogspot.com.es/2016/06/4-weekly-report.html)
+  - [\#5 Weekly
+    report](http://jmigual.blogspot.com.es/2016/06/5-weekly-report.html)

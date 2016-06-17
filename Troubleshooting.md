@@ -138,9 +138,11 @@ Mix" option from "Master output" to "Recording and Broadcasting Only".
 If you do want to mix the signal from your microphone with Mixxx's
 output with an unnoticeably small delay, mix the microphone signal with
 Mixxx's output without digitizing it. DJ controllers with microphone
-inputs and integrated sound cards often do this. If you are plugging
-Mixxx's output into another hardware mixer, this can be done by plugging
-your microphone into that mixer instead of running it through Mixxx.
+inputs and integrated sound cards often do this; however, many of them
+do not digitize the signal so it can't be recorded or broadcasted, only
+heard on the main output. If you are plugging Mixxx's output into
+another hardware mixer, this can be done by plugging your microphone
+into that mixer instead of running it through Mixxx.
 
 Alternatively, sound cards marketed for recording typically have a
 feature called direct monitoring that mixes the input signal directly

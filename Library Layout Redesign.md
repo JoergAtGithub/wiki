@@ -155,6 +155,24 @@ like this:
 </WidgetStack>
 ```
 
+Also to show the focus in the panes a new element in the QSS is added.
+In this example a small border is added in the WBaseLibrary to make
+clear the focus change.
+
+``` css
+/* When the WBaseLibrary does not have the focus */
+WBaseLibrary[showFocus="0"] {
+    padding: 2px 0 0 0;
+    border: none;
+}
+
+/* When the WBaseLibrary has the focus */
+WBaseLibrary[showFocus="1"] {
+    padding: 2px 1px 1px 1px;
+    border-top: 2px solid aqua;
+}
+```
+
 ## Deliverables
 
 ### v.0.1.0 - LibraryFeature
@@ -178,27 +196,25 @@ introduced, LibraryPaneManager and there will be one of this classes for
 each pane helping with events like focusChange. Here is the UML for the
 relations between the existing Library and the LibraryPaneManager:
 
-[[/media/gsoc_2016/library_layout_redesign/uml/general.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/general_7.png|]]
 
 Here there's a detailed view of the stacked widget of every pane:
 
-[[/media/gsoc_2016/library_layout_redesign/uml/widgetstack_3.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/widgetstack_4.png|]]
 
-As it can be seen every pane will have two WLibrary. Each pane will have
-a left and a right side and only one left side for all panes can be
-shown (this left side is the left pane stack shown in the mockup). When
-the user focuses a pane the left side of the focused pane is shown, also
-when the user changes the selected feature in the same pane the left
-side changes (is a stack so it only needs to select the widget for the
-feature).
+As it can be seen every pane will have one WLibrary and the sidebar
+expanded will have a WBaseLibrary. When the user selects a feature the
+library must decide in which pane this feature should be shown. And once
+decided, the Library must show both the SidebarExpanded and the Pane of
+the feature.
 
 Here's a detailed view of the Library and LibraryFeature relations and
 inheritance:
 
-[[/media/gsoc_2016/library_layout_redesign/uml/libraryfeature_3.png|]]
+[[/media/gsoc_2016/library_layout_redesign/uml/libraryfeature_4.png|]]
 
 As it can be seen the LibraryFeature instead of having the bindWidget()
-function it will have a bindSidebarWidget() and bindLibraryWidget()
+function it will have a bindSidebarWidget() and bindPaneWidget()
 allowing to have widgets without a sidebar widget or with a sidebar
 widget that is not a tree (e.g. buttons in AutoDJ).
 

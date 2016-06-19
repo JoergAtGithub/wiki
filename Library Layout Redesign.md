@@ -72,7 +72,7 @@ user to have the current Mixxx layout.
 Here's an "exploded" drawing of the feature's mapping in one pane or
 another:
 
-[[/media/gsoc_2016/library_layout_redesign/library_feature_stack_4.png|]]
+[[/media/gsoc_2016/library_layout_redesign/library_feature_stack_5.png|]]
 
 The feature A is loaded in the right pane container 1 because it was
 focused when clicking the A button in the button bar. If the pane
@@ -339,19 +339,20 @@ folder, can be selected at preferences).
 
 W6 June 13th - June 19th:
 
-  - Study for exams
+  - ~~Study for exams~~
   - ~~Add new button bar~~
   - ~~Add sidebar expanded~~
   - ~~Add multiple panes view~~
-  - Accept drop targets
-  - Add v.0.0.2 design to all skins
-  - Begin implementing new LibrarySidebar with the LibraryFeature
-    (v.0.0.2)
+  - ~~Accept drop targets~~
+  - ~~Add v.0.0.2 design to all skins~~
+  - ~~Begin implementing new LibrarySidebar with the LibraryFeature
+    (v.0.0.2)~~
 
 W7 June 20th - June 26th (mid term evaluations):
 
-  - Full time study for exams (until June 23th)
-  - Check properly keyboard mapping
+  - Full time study for exams (until June 23rd)
+  - Bugfixing new LibrarySidebar
+  - Check properly keyboard mapping (after June 23rd)
 
 W8 June 27th - July
 

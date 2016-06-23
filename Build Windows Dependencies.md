@@ -21,6 +21,7 @@ reason (like for x64,) here are the steps:
 ### Prepare build environment
 
 ``` 
+  - First, check [[https://github.com/sandym/qt-patches/tree/master/windows|This GitHub repo]] for patches and instructions that may apply to the version of Qt you're using.
   - Tweak the Qt configuration:
     - **Full-text search:** Edit ''C:\qt-everywhere-opensource-src-4.6.1\src\plugins\sqldrivers\sqlite\sqlite.pro''
       - Add this, after the first DEFINES += :<code>DEFINES += SQLITE_ENABLE_FTS3 SQLITE_ENABLE_FTS3_PARENTHESIS</code>

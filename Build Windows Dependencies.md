@@ -28,7 +28,7 @@ reason (like for x64,) here are the steps:
       - If you have more than one processor/core, add ''/MP'' to ''QMAKE_CFLAGS''.
       - Add ''-Ox'' to ''QMAKE_CFLAGS_RELEASE'' for "full optimization" (Though ''-O2'' is preferred.)
       - Add ''/arch:SSE'' to ''QMAKE_CFLAGS_RELEASE'' for SSE support (use SSE2 if your CPU supports it)
-      - Add ''/LTCG'' to ''QMAKE_LIB'' to improve linker performance.
+      - Add ''/LTCG'' to ''QMAKE_LIB'' to improve linker performance if using ''-ltcg'' in the configure command below.
       - Change ''QMAKE_LFLAGS_LTCG'' to ''/LTCG:STATUS'' so it tells you how long it will take to generate each executable (Some of them take a loooong time (WebKit and QtScript) so it's nice to know.)
       - You can do the same in ''C:\qt-everywhere-opensource-src-4.6.1\qmake\makefile.win32'' but **don't** add ''-GL'' to CFLAGS on x86 or qmake won't work. Otherwise, you can add any options suitable for your particular system since qmake is just going to run there. (e.g. /arch:SSE2)
     - **Static libraries** (no msvcrtXX.dll dependence, optional): Edit ''C:\qt-everywhere-opensource-src-4.6.1\mkspecs\win32-msvc2008\qmake.conf'':

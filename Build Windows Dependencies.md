@@ -800,11 +800,18 @@ build:
     #else
             #include <arpa/inet.h>
     #endif`
-3.  \- Edit the file `libshout-2.4.1\src\shout_private.h`. Find the line
-    `#include "util.h"` and add underneath it: `#ifdef _MSC_VER
+3.  Edit the file `libshout-2.4.1\include\os.h`. Add the following lines
+    inside the `#ifdef _MSC_VER` block:`  #define strncasecmp _strnicmp
+            #define strcasecmp _stricmp
+            
             typedef unsigned __int8 uint8_t;
             typedef unsigned __int16 uint16_t;
-    #endif`
+     `
+4.  Edit the file `libshout-2.4.1\src\httpp\httpp.h`. Find the line
+    `#define __HTTPP_H` and add underneath it: `#ifdef _MSC_VER
+            #define strcasecmp _stricmp
+    #endif
+    `
 
 #### For libshout v2.3.1
 

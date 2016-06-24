@@ -787,6 +787,25 @@ build:
     1.  Change `#include <os.h>` to `#include "os.h"`
     2.  Change line 25 to `#ifdef __WINDOWS__`
 
+#### For libshout v2.4.1 (on VS2015/VC19)
+
+1.  Edit the file `libshout-2.4.1\src\proto_http.c`. Find the line
+    `#include <strings.h>` and wrap it in an `#ifndef _WIN32`: `#ifndef
+    _WIN32
+            #include <strings.h>
+    #endif`
+2.  Edit the file `libshout-2.4.1\src\proto_roaraudio.c`. Find the line
+    `#include <arpa/inet.h>` and replace it with: `#ifdef _WIN32
+            #include <Winsock2.h>
+    #else
+            #include <arpa/inet.h>
+    #endif`
+3.  \- Edit the file `libshout-2.4.1\src\shout_private.h`. Find the line
+    `#include "util.h"` and add underneath it: `#ifdef _MSC_VER
+            typedef unsigned __int8 uint8_t;
+            typedef unsigned __int16 uint16_t;
+    #endif`
+
 #### For libshout v2.3.1
 
 1.  Edit the file `libshout-2.3.1\src\timing\timing.h` and add near the

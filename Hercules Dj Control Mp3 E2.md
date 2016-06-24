@@ -540,7 +540,7 @@ Uninstall the Hercules driver and use it as a USB bulk controller.
 
 ## Mapping files
 
-This mapping consist of 4 files:
+This mapping consists of 4 files:
 
   - `Hercules DJ Control MP3 e2.midi.xml`: MIDI XML mapping file
   - `Hercules DJ Control MP3 e2-scripts.js`: The main script, used

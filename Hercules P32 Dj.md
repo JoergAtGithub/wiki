@@ -93,12 +93,12 @@ The encoders do not behave exactly as labeled.
     Turning while holding shift moves the loop. If the loop is 1 beat or
     larger, it moves the loop by 1 beat; if the loop is smaller than 1
     beat, it moves the loop by the size of the loop.
-  - **Filter/Move encoder**: jump forward/backward by beats. Push and
-    turn to select how many beats to jump by, shown on the LED display
-    on the controller. When the encoder is released, the LED display
-    goes back to showing the loop size. Turning with shift adjusts the
-    pitch, or with keylock on, just the tempo. Pushing while holding
-    shift resets the pitch to the track's default.
+  - **Filter/Move encoder**: jump forward/backward by beats (default 4
+    beats). Push and turn to select how many beats to jump by, shown on
+    the LED display on the controller. When the encoder is released, the
+    LED display goes back to showing the loop size. Turning with shift
+    adjusts the pitch, or with keylock on, just the tempo. Pushing while
+    holding shift resets the pitch to the track's default.
 
 ### Effects
 

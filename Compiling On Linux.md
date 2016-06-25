@@ -166,6 +166,12 @@ You can now use clang-specific SCons options.
   - To enable colorized output, use the `color=1` scons flag.
   - To enable Address Sanitizer, use the `asan=1` scons flag.
 
+### Troubleshooting scons
+
+If scons can't find installed dependencies, try
+
+    scons --config=force
+
 ## Uninstall
 
 To uninstall a copy of Mixxx that you compiled, `cd` into the directory

@@ -348,18 +348,19 @@ W6 June 13th - June 19th:
   - ~~Begin implementing new LibrarySidebar with the LibraryFeature
     (v.0.0.2)~~
 
-W7 June 20th - June 26th (mid term evaluations):
+~~W7 June 20th - June 26th (mid term evaluations)~~:
 
-  - Full time study for exams (until June 23rd)
-  - Bugfixing new LibrarySidebar
-  - Check properly keyboard mapping (after June 23rd)
+  - ~~Full time study for exams (until June 23rd)~~
+  - ~~Bugfixing new LibrarySidebar~~
+  - ~~Check properly keyboard mapping (after June 23rd)~~
 
-W8 June 27th - July
+W8 June 27th - July 3rd
 
   - Show breadcrumbs
   - Favorites in sidebar - "More" button in sidebar
   - Finish coding of new LibrarySidebar (v.0.0.2)
   - ~~Add two panel focus change (v.0.0.3)~~
+  - Separate LibraryFeature to allow a future plugin behaviour
   - Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)
 
 W9 July 4th - July 10th:

@@ -123,21 +123,21 @@ This step may take a while depending on your computer.
     set ARCHITECTURE=amd64
     
     REM set this to the folder where you built the dependencies
-    set WINLIB_PATH="E:\Mixxx\Buildserver"
+    set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
     
     if "%ARCHITECTURE%" == "i386" (
       set TARGET_MACHINE=x86
-      set VCVARS_ARCH=amd64_x86
+      set VCVARS_ARCH=x86
     ) else ( 
       set TARGET_MACHINE=amd64
-      set VCVARS_ARCH=amd64
+      set VCVARS_ARCH=x86_amd64
     )
     
     REM Adjust to your environment
-    call "E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+    call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
     
     REM Use all CPU cores, allow multiple writers to .pdb file
-    set CL=/MP /FS
+    set CL=/MP
     
     REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
     scons -j2 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=1 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=0

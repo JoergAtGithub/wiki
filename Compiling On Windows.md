@@ -10,16 +10,6 @@ page](Build%20Windows%20installer).)*
   - [Visual Studio 13 for Windows
     Desktop](http://www.visualstudio.com/downloads/download-visual-studio-vs).
     You need a Microsoft account.
-
-We are currently also testing the [Microsoft Visual C++ Build
-Tools 2015](http://go.microsoft.com/fwlink/?LinkId=691126) package which
-explicitly enables building applications without Visual Studio
-installed. If you use this, you do not need to download any Windows SDKs
-below since this will install the one(s) you select as well. (Currently
-it won't build unless you install the Windows 10 SDK as well as the 8.1
-SDK.) If however you are building for Windows XP, you **will** need the
-Windows 7.1 SDK below as well.
-
   - If you install Visual Studio 2013 or newer, it comes with the latest
     Windows SDK. The following links are only needed if you have a
     version of Visual Studio older than this or if you're building for

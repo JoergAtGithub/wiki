@@ -107,8 +107,6 @@ This step may take a while depending on your computer.
 
 <!-- end list -->
 
-    @ECHO OFF
-    
     REM Clean up after old builds.
     del /q /f *.exe
     rmdir /s /q dist32

@@ -346,7 +346,7 @@ folder, can be selected at preferences).
   - ~~Finish coding of new LibraryFeature and LibraryViewManager classes
     (v.0.0.1)~~
 
-W6 June 13th - June 19th:
+~~W6 June 13th - June 19th~~:
 
   - ~~Study for exams~~
   - ~~Add new button bar~~
@@ -365,16 +365,16 @@ W6 June 13th - June 19th:
 
 W8 June 27th - July 3rd
 
-  - Show breadcrumbs
-  - Favorites in sidebar - "More" button in sidebar
-  - Finish coding of new LibrarySidebar (v.0.0.2)
+  - ~~Show breadcrumbs~~
+  - ~~Finish coding of new LibrarySidebar (v.0.0.2)~~
   - ~~Add two panel focus change (v.0.0.3)~~
-  - Separate LibraryFeature to allow a future plugin behaviour
+  - ~~Separate LibraryFeature to allow a future plugin behaviour~~
   - Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)
 
 W9 July 4th - July 10th:
 
   - Implement advanced grouping like Clementine (v.0.1.2.1).
+  - Favorites in sidebar - "More" button in sidebar
 
 W10 July 11th - July 17th:
 

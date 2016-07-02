@@ -109,7 +109,10 @@ To handle all of this in the skin.xml there will be the following tags:
     at once. Every declared pane must have a unique <id></id> setting to
     allow the SearchBox to work.
   - SearchBox can be connected with the corresponding pane setting the
-    same<id></id> tag.
+    same<Id></Id> tag.
+  - LibraryBreadCrumb show's a breadcrumb of the current shown pane to
+    allow visual feedback of the LibraryFeature pane change. It is
+    connected with a pane with the <Id></Id> tag.
   - CoverArt for the existing cover art (will not be altered)
 
 Here is an example with the playlists:
@@ -131,10 +134,13 @@ like this:
       <Layout>Vertical</Layout>
       <Children>
         <SearchBox>
-          <id>1</id>
+          <Id>1</Id>
         </SearchBox>
+        <LibraryBreadCrumb>
+          <Id>1</Id>
+        </LibraryBreadCrumb>
         <Library>
-          <id>1</id>
+          <Id>1</Id>
         </Library>
       </Children>
     </WidgetStack>
@@ -144,10 +150,13 @@ like this:
       <Layout>Vertical</Layout>
       <Children>
         <SearchBox>
-          <id>2</id>
+          <Id>2</Id>
         </SearchBox>
+        <LibraryBreadCrumb>
+          <Id>2</Id>
+        </LibraryBreadCrumb>
         <Library>
-          <id>2</id>
+          <Id>2</Id>
         </Library>
       </Children>
     </WidgetStack>

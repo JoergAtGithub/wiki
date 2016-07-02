@@ -417,3 +417,9 @@ W15 August 15th - August 23rd:
     report](http://jmigual.blogspot.com.es/2016/06/4-weekly-report.html)
   - [\#5 Weekly
     report](http://jmigual.blogspot.com.es/2016/06/5-weekly-report.html)
+  - [\#6 Weekly
+    report](http://jmigual.blogspot.com.es/2016/06/6-weekly-report.html)
+  - [\#7 Weekly
+    report](http://jmigual.blogspot.com.es/2016/06/7-weekly-report.html)
+  - [\#8 Weekly
+    report](http://jmigual.blogspot.com.es/2016/07/8-weekly-report.html)

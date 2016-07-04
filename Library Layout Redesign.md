@@ -363,13 +363,13 @@ folder, can be selected at preferences).
   - ~~Bugfixing new LibrarySidebar~~
   - ~~Check properly keyboard mapping (after June 23rd)~~
 
-W8 June 27th - July 3rd
+~~W8 June 27th - July 3rd~~:
 
   - ~~Show breadcrumbs~~
   - ~~Finish coding of new LibrarySidebar (v.0.0.2)~~
   - ~~Add two panel focus change (v.0.0.3)~~
   - ~~Separate LibraryFeature to allow a future plugin behaviour~~
-  - Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)
+  - ~~Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)~~
 
 W9 July 4th - July 10th:
 

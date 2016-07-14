@@ -224,6 +224,13 @@ Below, *N*=2 up to the number of active microphones. e.g
 |  | mute<sup>7</sup>          |  | binary        |  | Mutes the channel                                                                                                     |  | Mute button                     |  |
 |  | VuMeter<sup>4</sup>       |  | default       |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
 
+### \[Recording\]
+
+|  | Key/Control       |  | Range  |  | What it does                                    |  | On-screen feedback |  |
+|  | ----------------- |  | ------ |  | ----------------------------------------------- |  | ------------------ |  |
+|  | toggle\_recording |  | binary |  | Turns recording on or off.                      |  | Recording icon     |  |
+|  | status            |  | binary |  | Indicates whether Mixxx is currently recording. |  | Recording icon     |  |
+
 ### \[AutoDJ\]
 
 |  | Key/Control                   |  | Range  |  | What it does                                  |  | On-screen feedback                                 |  |

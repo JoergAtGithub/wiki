@@ -19,3 +19,28 @@ multi-colour drum pads, as well as two extensive FX units are the
 foundation for your creativity.
 
 # Mixxx mapping description
+
+### Transport Section
+
+[[/media/reloop-beatmix4_transport-section.png|reloop-beatmix4\_transport-section.png]]
+
+**PLAY/PAUSE** Press to launch and pause your track.
+
+**SHIFT + PLAY/PAUSE** This reverses the direction of the track playing.
+
+**CUE** Cue sets a temporary CUE point. It is set by pausing the track
+and pressing the CUE button. Whilst the track is playing, press CUE to
+return to that point, where it will pause.
+
+**SHIFT+ CUE** Takes you back to the start of your track.
+
+**CUP** Pressing CUP takes you directly to your CUE point, starting
+playback instantly. If no CUE point is set, it will jump to the
+beginning of the track.
+
+**SHIFT + CUP** Changes the pitch range, cycling through 8%, 12% and 16%
+
+**SYNC** Sync automatically matches a track to the BPM of the other deck
+(beatsync).
+
+**SHIFT + SYNC** Turn on master sync (sync\_enabled)

@@ -58,7 +58,7 @@ track.
 
 ## Transport Section
 
-[[/media/reloop-beatmix4_transport-section.png|reloop-beatmix4\_transport-section.png]]
+[[/media/reloop-beatmix4_transport-section.png|]]
 
 **PLAY/PAUSE** Press to launch and pause your track.
 
@@ -80,6 +80,22 @@ beginning of the track.
 (beatsync).
 
 **SHIFT + SYNC** Turn on master sync (sync\_enabled)
+
+## FX Section
+
+[[/media/reloop-beatmix4_fx-section.png|]]
+
+Turning the FX knob will activate and increase the effect parameter.
+
+SHIFT + turning allows you to browse through your effect selection.
+
+Turning the Beats encoder sets the parameter length of the chosen
+effect.
+
+SHIFT + pressing Beats sets a manual TAP tempo for the effects.
+
+Pressing SHIFT + Pitch Bend +/– will activate FX 1 and 2 for the
+corresponding deck.
 
 ## Pad Section
 

@@ -20,7 +20,7 @@ foundation for your creativity.
 
 # Mixxx mapping description
 
-### Transport Section
+## Transport Section
 
 [[/media/reloop-beatmix4_transport-section.png|reloop-beatmix4\_transport-section.png]]
 

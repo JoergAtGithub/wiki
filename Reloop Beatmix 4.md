@@ -44,3 +44,18 @@ beginning of the track.
 (beatsync).
 
 **SHIFT + SYNC** Turn on master sync (sync\_enabled)
+
+## Pad Section
+
+[[/media/reloop-beatmix_pad-section.png|reloop-beatmix\_pad-section.png]]
+
+### Mode A
+
+### Mode B
+
+### Split mode
+
+Split mode is activated by pressing mode A and mode B buttons
+simultaneously. The two leds A and B are lit together. In this mode, to
+top row is configured in A mode, and the bottom row if configured as the
+top row of B mode.

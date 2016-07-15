@@ -24,35 +24,23 @@ foundation for your creativity.
 
 [[/media/reloop-beatmix4_mixer-section.png|]]
 
-1\. **MASTER** Controls the master volume to your main sound system.
-
-2\. **PHONES** Controls your headphones volume.
-
+1\. **MASTER** Controls the master volume to your main sound system.  
+2\. **PHONES** Controls your headphones volume.  
 3\. **CUE MIX** Mixes the headphones CUE signal between your selected
-channel and the master output.
-
+channel and the master output.  
 4\. **TRAX SELECT** Use the trax select encoder to navigate through your
-song library.
-
-5\. **TRACK LOAD** Press 1 - 4 to load tracks on either channel.
-
+song library.  
+5\. **TRACK LOAD** Press 1 - 4 to load tracks on either channel.  
 6\. **FADER-START** Press SHIFT + track load 1 - 4 to enable and launch
-a track using your linefader.
-
-7\. **BACK** Moves you back one step in your track menu.
-
+a track using your linefader.  
+7\. **BACK** Moves you back one step in your track menu.  
 8\. **SAMPLER VOLUME** Controls the master volume of your sampler
-section.
-
-9\. **LINEFADERS** Controls your channel volume.
-
-10\. **CROSSFADER** Enables you to fade between your decks.
-
-11\. **GAIN** Fine adjust the input volume for each deck.
-
+section.  
+9\. **LINEFADERS** Controls your channel volume.  
+10\. **CROSSFADER** Enables you to fade between your decks.  
+11\. **GAIN** Fine adjust the input volume for each deck.  
 12\. **EQ** Tweak the high, mid or low frequencies when mixing your
-track.
-
+track.  
 13\. **DECK** Press the deck button to swap between decks 1 - 3 and 2 -
 4.
 

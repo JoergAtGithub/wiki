@@ -111,9 +111,11 @@ point. If it is already set, jump to this CUE point.
 **Lower Row 4 Pads - LOOP** Press the Drum Pad to activate a loop. Loop
 length (in beats) is respectively 1, 2, 4 and 8 beats.
 
-**Lower Row 4 Pads + SHIFT - LOOP ADJUST** Drum Pad 1 - Sets a loop
-length. Push to define loop start, release to define loop end. Drum Pad
-2 - Shortens (half) the LOOP. Drum Pad 3 - Lengthens (double) the LOOP.
+**Lower Row 4 Pads + SHIFT - LOOP ADJUST**  
+Drum Pad 1 - Sets a loop length. Push to define loop start, release to
+define loop end.  
+Drum Pad 2 - Shortens (half) the LOOP.  
+Drum Pad 3 - Lengthens (double) the LOOP.  
 Drum Pad 4 - Replays the LOOP.
 
 ### Mode B

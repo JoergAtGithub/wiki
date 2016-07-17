@@ -1,4 +1,4 @@
-# Hercules DJ Control Instinct
+# Hercules DJ Control Instinct (and Instinct S)
 
 [[/media/hardware/Hercules-DJ-Control-Instinct.png|Hercules-DJ-Control-Instinct.png]]
 
@@ -7,7 +7,8 @@
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=3907)
 
 This is the cheapest all-in-one controller with an integrated sound
-card.
+card. The Instinct S is functionally identical, but has a brushed
+stainless finish.
 
 ## Setup
 

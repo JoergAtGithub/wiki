@@ -1,6 +1,7 @@
 # Hercules DJ Control Instinct (and Instinct S)
 
 [[/media/hardware/Hercules-DJ-Control-Instinct.png|Hercules-DJ-Control-Instinct.png]]
+[[/media/hardware/instincts.jpg|instincts.jpg]]
 
   - [Manufacturer's product
     page](http://www.hercules.com/us/DJ-Music/bdd/p/187/djcontrol-instinct/)

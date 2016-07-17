@@ -83,3 +83,7 @@ Click on the image for a bigger version.*
 - If pressed while paused sets the cue and when held plays from the cue, when pressed during playback jumps to the cue.
 - Play and pause playback of the respective decks
 ```
+
+#### MIDI Map
+
+<https://docs.google.com/spreadsheets/d/1lNR5fh5pesNiECW_U8hI9UGamxqB5SG3x-9UddwpeHw/edit?usp=sharing>

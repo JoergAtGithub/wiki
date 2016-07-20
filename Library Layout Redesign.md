@@ -285,28 +285,44 @@ the following sorting options to group by:
 Allows the user to select the 1st, 2nd and 3rd level for grouping
 elements.
 
-#### v.0.2.0 Add new search engine
+### v.0.2.0 History view
 
-add a new search engine where the user can select the filtering options,
-showing the following menu:
+Currently History view needs a bit of changes. In this thread
+(<https://bugs.launchpad.net/mixxx/+bug/1127120>) there's a proposal for
+a history view change, changing the sort order and sorting in a tree in
+the following way:
 
-  - Search method (v. 0.1.3.0)
-  - All
-  - Songs
-  - Artists
-  - Albums
-  - File name
-  - Search location (v. 0.1.3.1)
-  - All
-  - This view
-  - Playlists
-  - Crates
+  - Year
+  - Month
 
-When the bugfixing is done this becomes (v. 0.2.0).
+<!-- end list -->
 
-[[/media/gsoc_2016/library_layout_redesign/library_0_2_0_2.png|]]
+``` 
+    * Date
+```
 
-### v.0.3.0 - Browse PC view
+### v.0.3.0 Add new search behavior
+
+Currently there's a small problem with the loose of context. If a party
+guest comes and and requests a track "Do you have the song XXX from last
+year?" the DJ must be able to search the song and return to the previous
+state he was before searching the song.
+
+#### v.0.2.1.0 Save state
+
+To achieve this currently the scroll position is saved but not the sort
+order. So this will store the sort order too to allow a full return
+after searching the selected song.
+
+#### v0.2.1.1 Sticky views
+
+The other added option are the sticky views, this should allow the user
+to save the current state (search, scroll and sort order) to restore it
+later.
+
+When the bugfixing is done this becomes (v. 0.3.0).
+
+### v.0.4.0 - Browse PC view
 
 This view will extend the current Browse PC view adding the option to
 view a single folder instead of all the system folders tree. When the
@@ -371,23 +387,21 @@ folder, can be selected at preferences).
   - ~~Separate LibraryFeature to allow a future plugin behaviour~~
   - ~~Finish of LibraryFeature section (v.0.1.0) -\> Merge (v.0.1.0)~~
 
-W9 July 4th - July 10th:
+~~W9 July 4th - July 10th~~:
 
-  - Implement advanced grouping like Clementine (v.0.1.2.1).
+  - ~~Implement advanced grouping like Clementine (v.0.1.2.1).~~
   - Favorites in sidebar - "More" button in sidebar
 
-W10 July 11th - July 17th:
+~~W10 July 11th - July 17th~~:
 
-  - Add new crates and playlists view (v.0.1.1) 
+  - ~~Add new crates and playlists view (v.0.1.1)~~ 
 
 W11 July 18th - July 24th:
 
-  - Implement new filtering options (v.0.2.0):
-  - Implement search location filtering options (v.0.1.3.0)
-  - Implement search method filtering options (v.0.1.3.1)
-  - Write tests and bugfixing to filtering options (v.0.1.3.1 -\>
-    v.0.2.0)
-  - Merge v.0.2.0
+  - Implement new History Feature (v.0.2.0)
+  - Implement new search behavior (v.0.3.0):
+  - ~~Implement save state (v.0.2.1)~~
+  - Begin implementing sticky views (v.0.2.2)
 
 W12 July 25th - July 31st:
 
@@ -423,3 +437,7 @@ W15 August 15th - August 23rd:
     report](http://jmigual.blogspot.com.es/2016/06/7-weekly-report.html)
   - [\#8 Weekly
     report](http://jmigual.blogspot.com.es/2016/07/8-weekly-report.html)
+  - [\#9 Weekly
+    report](http://jmigual.blogspot.com.es/2016/07/9-weekly-report.html)
+  - [\#10 Weekly
+    report](http://jmigual.blogspot.com.es/2016/07/10-weekly-report.html)

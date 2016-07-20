@@ -25,7 +25,7 @@ particular controllers.
 
 Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
 unfamiliar with hexidecimal numbers, read [this
-tutorial](http://www.codemastershawn.com/library/tutorial/hex.bin.numbers.php).
+tutorial](http://codemastershawn.com/2014/04/03/understanding-binary-and-hex-numbers).
 
 An explanation of the MIDI signals that your controller sends to
 computers and how it reacts to MIDI signals that computers send to it

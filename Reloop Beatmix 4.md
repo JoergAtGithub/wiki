@@ -80,12 +80,13 @@ return to that point, where it will pause.
 playback instantly. If no CUE point is set, it will jump to the
 beginning of the track.
 
-**SHIFT + CUP** Changes the pitch range, cycling through 8%, 12% and 16%
+**SHIFT + CUP** Changes the pitch range, cycling through 8%, 10%, 12%
+and 16%
 
-**SYNC** Sync automatically matches a track to the BPM of the other deck
-(beatsync).
+**SYNC** Syncs the BPM and phase to that of the other track (if BPM is
+detected on both) .
 
-**SHIFT + SYNC** Turn on master sync (sync\_enabled)
+**SHIFT + SYNC** Turn on master sync, keeping sync enabled
 
 ## FX Section
 

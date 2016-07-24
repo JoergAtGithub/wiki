@@ -25,6 +25,7 @@ foundation for your creativity.
 [[/media/reloop-beatmix4_mixer-section.png|]]
 
 1\. **MASTER** Controls the master volume to your main sound system.
+This is a hardware knob, not controlled by Mixxx.
 
 2\. **PHONES** Controls your headphones volume.
 
@@ -32,23 +33,28 @@ foundation for your creativity.
 channel and the master output.
 
 4\. **TRAX SELECT** Use the trax select encoder to navigate through your
-song library.
+song library. Turn it to select track. Push it to load the selected
+track in the first available deck. SHIFT+Turn let you navigate through
+playlists and crates. SHIFT+Push to expand/collapse the selected sidebar
+item.
 
-5\. **TRACK LOAD** Press 1 - 4 to load tracks on either channel.
+5\. **TRACK LOAD** Press 1 - 4 to load tracks on either channel. Long
+press 1-4 to eject the selected deck. These buttons are lit when a track
+is loaded into the associated deck.
 
 6\. **FADER-START** Press SHIFT + track load 1 - 4 to enable and launch
-a track using your linefader.
+a track using your linefader. (hardware function)
 
-7\. **BACK** Moves you back one step in your track menu.
+7\. **BACK** Unused
 
 8\. **SAMPLER VOLUME** Controls the master volume of your sampler
-section.
+section. (\*\* TO BE IMPLEMENTED\*\*)
 
 9\. **LINEFADERS** Controls your channel volume.
 
 10\. **CROSSFADER** Enables you to fade between your decks.
 
-11\. **GAIN** Fine adjust the input volume for each deck.
+11\. **GAIN** Adjust the gain for each deck.
 
 12\. **EQ** Tweak the high, mid or low frequencies when mixing your
 track.

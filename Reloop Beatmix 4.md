@@ -45,7 +45,8 @@ is loaded into the associated deck.
 6\. **FADER-START** Press SHIFT + track load 1 - 4 to enable and launch
 a track using your linefader. (hardware function)
 
-7\. **BACK** Unused
+7\. **BACK** push back button once to navigate tracks/playlists ten by
+ten (fast navigation). Push again to navigate one by one again.
 
 8\. **SAMPLER VOLUME** Controls the master volume of your sampler
 section. (\*\* TO BE IMPLEMENTED\*\*)

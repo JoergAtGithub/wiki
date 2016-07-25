@@ -102,6 +102,7 @@ When the deck is not playing, using the side of the wheel let you quick
 search through your track.
 
 Hold SHIFT and turn the jog wheel to quick search through your track
+
 (shift ignores touch sensitive platter so holding shift and turning
 jogwheel is the same as using the side of the jogwheel).
 

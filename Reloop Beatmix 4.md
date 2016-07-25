@@ -49,7 +49,7 @@ a track using your linefader. (hardware function)
 ten (fast navigation). Push again to navigate one by one again.
 
 8\. **SAMPLER VOLUME** Controls the master volume of your sampler
-section. (\*\* TO BE IMPLEMENTED\*\*)
+section.
 
 9\. **LINEFADERS** Controls your channel volume.
 

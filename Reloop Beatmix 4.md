@@ -107,7 +107,7 @@ jogwheel is the same as using the side of the jogwheel).
 
 .
 
-## FX Section
+## FX Section (to be implemented)
 
 [[/media/reloop-beatmix4_fx-section.png|]]
 

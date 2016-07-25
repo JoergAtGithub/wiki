@@ -156,7 +156,8 @@ sample.
 play types.
 
 **Lower Row 4 Pads + SHIFT - EJECT** Pressing drum pads 5-8 ejects the
-sample.
+sample if sampler is loaded or load the selected track if sampler is
+empty.
 
 ### Split mode
 

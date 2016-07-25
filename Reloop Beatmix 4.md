@@ -106,6 +106,8 @@ Hold SHIFT and turn the jog wheel to quick search through your track
 (shift ignores touch sensitive platter so holding shift and turning
 jogwheel is the same as using the side of the jogwheel).
 
+.
+
 ## FX Section
 
 [[/media/reloop-beatmix4_fx-section.png|]]

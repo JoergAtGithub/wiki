@@ -89,6 +89,20 @@ detected on both) .
 
 **SHIFT + SYNC** Turn on master sync, keeping sync enabled
 
+## Jog Wheel
+
+[[/media/Reloop-Beatmix4_JogWheel.png|]]
+
+Touch and move the jog wheel to scratch (either deck playing or not).
+When playing, use the side of the wheel, without touching the metallic
+platter, to temporarily bend the pitch (speed up/slow down playback).
+When the deck is not playing, using the side of the wheel let you quick
+search through your track.
+
+Hold SHIFT and turn the jog wheel to quick search through your track
+(shift ignores touch sensitive platter so holding shift and turning
+jogwheel is the same as using the side of the jogwheel).
+
 ## FX Section
 
 [[/media/reloop-beatmix4_fx-section.png|]]

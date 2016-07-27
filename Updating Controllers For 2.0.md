@@ -55,8 +55,8 @@ Individual knobs adjust parameters for that effect unit:
 two effects sections), and Y is 1,2,3 (the three knobs).
 
 If your controller has only one "parameter" knob, you can map it to
-`[EffectRack1_EffectUnitX_Effect1],super1` which will modify a number of
-effect parameters at once. (Sean did this for the ADJ VMS4.)
+`[EffectRack1_EffectUnitX],super1` which will modify a number of effect
+parameters at once. (Sean did this for the ADJ VMS4.)
 
 ### Wet/dry
 

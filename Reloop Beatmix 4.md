@@ -133,11 +133,15 @@ two effect modes implemented:
 | Shift + Beats turn | Select Effect Chain       | dry/wet knob                  |
 | Shift + Beats push | Eject Effect Chain        |                               |
 
-To switch from Single Effect mode to Multi Effect mode, you need to edit
-the FxMode variable on top of the javascript file.
-
 You can choose which deck you want to apply EffectUnit 1 and 2 by
-pressing Shift + Pitchbend- / Shift + Pitchbend+ on that deck.
+pressing Shift + Pitchbend- / Shift + Pitchbend+ on that deck (short
+press).
+
+To switch from Single Effect mode to Multi Effect mode, hold down shift
+and press Pitchbend- for more than a second to switch to "Single Effect
+mode" or Pitchbend+ for more than a second to switch to "Multi Effect
+mode". The corresponding led will blink three times, indicating which
+mode you switched to.
 
 ## Pad Section
 

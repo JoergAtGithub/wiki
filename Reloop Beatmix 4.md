@@ -105,7 +105,12 @@ Hold SHIFT and turn the jog wheel to quick search through your track
 (shift ignores touch sensitive platter so holding shift and turning
 jogwheel is the same as using the side of the jogwheel).
 
-TODO: describe jog leds .
+When a deck is playing, jog led will turn around (1 turn every 2
+seconds). When track time left is below 30 seconds, jog leds will blink
+slowly, and when track time remaining is below 15 seconds, jog leds will
+blink quickly.
+
+.
 
 ## FX Section
 

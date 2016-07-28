@@ -61,6 +61,8 @@ track.
 13\. **DECK** Press the deck button to swap between decks 1 - 3 and 2 -
 4.
 
+## Trax selector and Back button
+
 ## Transport Section
 
 [[/media/reloop-beatmix4_transport-section.png|]]

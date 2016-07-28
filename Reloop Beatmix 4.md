@@ -63,7 +63,28 @@ track.
 
 ## Trax selector and Back button
 
-reloop-beatmix4\_trax-selector.png
+[[/media/reloop-beatmix4_trax-selector.png|]]
+
+The trax selector let you navigate through your library (playlist and
+tracks) as well as preview tracks.
+
+The trax selector has three modes :
+
+  - In Track mode (the default one at launch), turning the trax selector
+    will select tracks (one by one), turning with shift will select
+    tracks faster (10 by 10). Pressing the "Back" button will switch to
+    Playlist mode and pushing the trax selector will load the selected
+    track into the preview deck, start playing and switch to Preview
+    mode.
+  - In Playlist mode, turning the trax selector will select sidebar item
+    (one by one), turning with shift will select sidebar item faster (10
+    by 10). Pressing the trax selector will expand/collapse the selected
+    sidebar item and pressing the "Back" button will return to Track
+    mode.
+  - In Preview mode, turning the trax selector let you navigate through
+    the track loaded in the PreviewDeck (faster with shift), pushing the
+    trax selector play/pause the preview deck and pushing the back
+    button return to Track mode.
 
 ## Transport Section
 

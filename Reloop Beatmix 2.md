@@ -3,7 +3,7 @@
 [[/media/reloop-beatmix-2.jpg|]]
 
   - [Manufacturer's product
-    page](http://www.reloop.com/reloop-beatmix-4)
+    page](http://www.reloop.com/reloop-beatmix-2)
   - [Forum thread : mapping to download, users feedback, installation
     notes](http://www.mixxx.org/forums/viewtopic.php?f=7&t=8428)
 

@@ -107,21 +107,37 @@ jogwheel is the same as using the side of the jogwheel).
 
 .
 
-## FX Section (to be implemented)
+## FX Section
 
 [[/media/reloop-beatmix4_fx-section.png|]]
 
-Turning the FX knob will activate and increase the effect parameter.
+The effect section let you control the first to EffectUnits. There is
+two effect modes implemented:
 
-SHIFT + turning allows you to browse through your effect selection.
+  - Single Effect mode (the default), where you can load a single effect
+    in the EffectUnit and control the first 6 parameters
+  - Multi Effect mode, where you can load up to three effects in each
+    EffectUnit and control then with the superKnob
 
-Turning the Beats encoder sets the parameter length of the chosen
-effect.
+|                    |                           |                               |
+| ------------------ | ------------------------- | ----------------------------- |
+|                    | Single Effect mode        | Multi Effect mode             |
+| FX1                | Effect parameter 1        | Turn left to disable effect 1 |
+| FX2                | Effect parameter 2        | Turn left to disable effect 2 |
+| FX3                | Effect parameter 3        | Turn left to disable effect 3 |
+| Shift + FX1        | Effect parameter 4        | select effect 1               |
+| Shift + FX2        | Effect parameter 5        | select effect 2               |
+| Shift + FX3        | Effect parameter 6        | select effect 3               |
+| Beats turn         | dry/wet knob              | SuperKnob                     |
+| Beats push         | EffectUnit enable/disable |                               |
+| Shift + Beats turn | Select Effect Chain       | dry/wet knob                  |
+| Shift + Beats push | Eject Effect Chain        |                               |
 
-SHIFT + pressing Beats sets a manual TAP tempo for the effects.
+To switch from Single Effect mode to Multi Effect mode, you need to edit
+the FxMode variable on top of the javascript file.
 
-Pressing SHIFT + Pitch Bend +/– will activate FX 1 and 2 for the
-corresponding deck.
+You can choose which deck you want to apply EffectUnit 1 and 2 by
+pressing Shift + Pitchbend- / Shift + Pitchbend+ on that deck.
 
 ## Pad Section
 

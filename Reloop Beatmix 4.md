@@ -88,8 +88,9 @@ detected on both) .
 
 **SHIFT + SYNC** Turn on master sync, keeping sync enabled
 
-## Jog Wheel
+## Jog Wheel and pitch slider
 
+[[/media/reloop-beatmix4_pitchslider.png|]]
 [[/media/Reloop-Beatmix4_JogWheel.png|]]
 
 Touch and move the jog wheel to scratch (either deck playing or not).
@@ -110,7 +111,11 @@ seconds). When track time left is below 30 seconds, jog leds will blink
 slowly, and when track time remaining is below 15 seconds, jog leds will
 blink quickly.
 
-.
+The pitch slider let you adjust pitch.
+
+Pitch +/- buttons let you temporarily adjust the the speed one step
+higher/lower These buttons, when used with shift, let you control
+effects. See the effects section.
 
 ## FX Section
 

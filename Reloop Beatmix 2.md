@@ -1,6 +1,6 @@
 # Reloop Beatmix 2
 
-[[/media/reloop-beatmix-4.jpg|]]
+[[/media/reloop-beatmix-2.jpg|]]
 
   - [Manufacturer's product
     page](http://www.reloop.com/reloop-beatmix-4)

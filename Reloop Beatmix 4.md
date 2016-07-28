@@ -63,6 +63,8 @@ track.
 
 ## Trax selector and Back button
 
+reloop-beatmix4\_trax-selector.png
+
 ## Transport Section
 
 [[/media/reloop-beatmix4_transport-section.png|]]

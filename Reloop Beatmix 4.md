@@ -1,8 +1,5 @@
 # Reloop Beatmix 4
 
-\*\* This page is currently a placeholder for a work-in-progress mapping
-\*\*
-
 [[/media/reloop-beatmix-4.jpg|]]
 
   - [Manufacturer's product

@@ -15,6 +15,11 @@ high-quality line-faders, an extremely smooth-running crossfader, 16
 multi-colour drum pads, as well as two extensive FX units are the
 foundation for your creativity.
 
+This controller is a midi and audio class compliant device so it is
+compatible as-is with Linux, MacOS and Windows. However, on windows, the
+manufacturer ship an ASIO low-latency driver that can be found on the
+[Manufacturer's product page](http://www.reloop.com/reloop-beatmix-4).
+
 # Mixxx mapping description
 
 ## Mixer Section

@@ -22,7 +22,8 @@ foundation for your creativity.
 [[/media/reloop-beatmix4_mixer-section.png|]]
 
 1\. **MASTER** Controls the master volume to your main sound system.
-This is a hardware knob, not controlled by Mixxx.
+This controls the built in sound card and has no effect on the master
+gain knob in Mixxx.
 
 2\. **PHONES** Controls your headphones volume.
 
@@ -41,12 +42,12 @@ is loaded into the associated deck.
 a track using your linefader. (hardware function)
 
 7\. **BACK** push back button to switch Trax action between playlists
-(sidebar), tracks and PreviewDeck. See Trax section below for more
+(sidebar), tracks and Preview Deck. See Trax section below for more
 explanation.
 
-8\. **SAMPLER VOLUME** Controls the master volume of the samplers.
+8\. **SAMPLER VOLUME** Controls the volume of all samplers.
 
-9\. **LINEFADERS** Controls your channel volume.
+9\. **LINE FADERS** Controls your channel volume.
 
 10\. **CROSSFADER** Enables you to fade between your decks.
 
@@ -55,8 +56,8 @@ explanation.
 12\. **EQ** Tweak the high, mid or low frequencies when mixing your
 track.
 
-13\. **DECK** Press the deck button to swap between decks 1 - 3 and 2 -
-4.
+13\. **DECK** Press the deck button to swap between decks 1 & 3 on the
+left and 2 & 4 on the right.
 
 ## Trax selector and Back button
 

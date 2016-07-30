@@ -108,7 +108,7 @@ detected on both) .
 
 **SHIFT + SYNC** Turn on master sync, keeping sync enabled
 
-## Jog Wheel and pitch slider
+## Jog wheel and pitch slider
 
 [[/media/Reloop-Beatmix4_JogWheel.png|]]
 [[/media/reloop-beatmix4_pitchslider.png|]]

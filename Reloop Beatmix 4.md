@@ -104,7 +104,7 @@ beginning of the track.
 and 16%
 
 **SYNC** Syncs the BPM and phase to that of the other track (if BPM is
-detected on both) .
+detected on both).
 
 **SHIFT + SYNC** Turn on master sync, keeping sync enabled
 
@@ -182,7 +182,7 @@ mode you switched to.
 **Top Row 4 Pads - CUE Points** Press an unlit pad to set a new CUE
 point. If it is already set, jump to this CUE point.
 
-**Top Row 4 Pads - SHIFT + DRUM PAD** Deletes CUE points.
+**Top Row 4 Pads - SHIFT + PAD** Deletes CUE points.
 
 **Lower Row 4 Pads - LOOP** Press the Drum Pad to activate a loop. Loop
 length (in beats) is respectively 1, 2, 4 and 8 beats.
@@ -196,18 +196,15 @@ Drum Pad 4 - Replays the LOOP.
 
 ### Mode B
 
-**Top Row 4 Pads - SAMPLER PLAY** Pressing drum pads 1-4 launches a
-sample.
+**Top Row 4 Pads - SAMPLER PLAY** Pressing pads 1-4 launches a sample.
 
-**Lower Row 4 Pads - SAMPLER STOP** Pressing drum pads 5-8 stops the
-sample.
+**Lower Row 4 Pads - SAMPLER STOP** Pressing pads 5-8 stops the sample.
 
 **Top Row 4 Pads + SHIFT - CYCLE** Pressing 1 - 4 cycles through sampler
 play types.
 
-**Lower Row 4 Pads + SHIFT - EJECT** Pressing drum pads 5-8 ejects the
-sample if sampler is loaded or load the selected track if sampler is
-empty.
+**Lower Row 4 Pads + SHIFT - EJECT** Pressing pads 5-8 ejects the sample
+if sampler is loaded or load the selected track if sampler is empty.
 
 ### Split mode
 

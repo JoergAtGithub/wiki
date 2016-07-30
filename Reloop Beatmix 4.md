@@ -44,7 +44,9 @@ track using your linefader. (hardware function)
 (sidebar), tracks and Preview Deck. See
 [below](#Trax-selector-and-Back-button) for more explanation.
 
-8\. **SAMPLER VOLUME** Controls the volume of all samplers.
+8\. **SAMPLER VOLUME** Controls the volume of all samplers. Tip: you can
+replace the fader cap of this fader with a [custom colored fader
+cap](custom%20caps) to make it visually stand out more.
 
 9\. **LINE FADERS** Controls your channel volume.
 

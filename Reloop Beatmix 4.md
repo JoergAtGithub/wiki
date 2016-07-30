@@ -200,8 +200,8 @@ Drum Pad 4 - Replays the LOOP.
 
 **Lower Row 4 Pads - SAMPLER STOP** Pressing pads 5-8 stops the sample.
 
-**Top Row 4 Pads + SHIFT - CYCLE** Pressing 1 - 4 cycles through sampler
-play types.
+**Top Row 4 Pads + SHIFT - CYCLE** Pressing 1 - 4 toggles sampler repeat
+mode.
 
 **Lower Row 4 Pads + SHIFT - EJECT** Pressing pads 5-8 ejects the sample
 if sampler is loaded or load the selected track if sampler is empty.

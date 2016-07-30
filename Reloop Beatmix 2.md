@@ -200,8 +200,8 @@ sample.
 **Lower Row 4 Pads - SAMPLER STOP** Pressing drum pads 5-8 stops the
 sample.
 
-**Top Row 4 Pads + SHIFT - CYCLE** Pressing 1 - 4 cycles through sampler
-play types.
+**Top Row 4 Pads + SHIFT - CYCLE** cycling through the sampler play
+types.
 
 **Lower Row 4 Pads + SHIFT - EJECT** Pressing drum pads 5-8 ejects the
 sample if sampler is loaded or load the selected track if sampler is

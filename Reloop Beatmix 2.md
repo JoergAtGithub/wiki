@@ -197,18 +197,18 @@ Drum Pad 4 - Replays the LOOP.
 
 ### Mode B
 
-**Top Row 4 Pads - SAMPLER PLAY** Pressing drum pads 1-4 launches a
-sample.
+**Top Row 4 Pads - SAMPLER PLAY**  
+Pressing drum pads 1-4 launches a sample.
 
-**Lower Row 4 Pads - SAMPLER STOP** Pressing drum pads 5-8 stops the
-sample.
+**Lower Row 4 Pads - SAMPLER STOP**  
+Pressing drum pads 5-8 stops the sample.
 
-**Top Row 4 Pads + SHIFT - CYCLE** Pressing 1 - 4 toggles sampler repeat
-mode.
+**Top Row 4 Pads + SHIFT - CYCLE**  
+Pressing 1 - 4 toggles sampler repeat mode.
 
-**Lower Row 4 Pads + SHIFT - EJECT** Pressing drum pads 5-8 ejects the
-sample if sampler is loaded or load the selected track if sampler is
-empty.
+**Lower Row 4 Pads + SHIFT - EJECT**  
+Pressing drum pads 5-8 ejects the sample if sampler is loaded or load
+the selected track if sampler is empty.
 
 ### Split mode
 

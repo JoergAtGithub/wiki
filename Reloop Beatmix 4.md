@@ -31,19 +31,18 @@ gain knob in Mixxx.
 channel and the master output.
 
 4\. **TRAX SELECT** Use the trax select encoder to navigate through your
-song library. see Trax selector below for detailed explanation on how to
-use it
+song library. See [below](#Trax-selector-and-Back-button) for details.
 
-5\. **TRACK LOAD** Press 1 - 4 to load tracks on either channel. Long
+5\. **TRACK LOAD** Press 1-4 to load tracks on either channel. Long
 press 1-4 to eject the selected deck. These buttons are lit when a track
 is loaded into the associated deck.
 
-6\. **FADER-START** Press SHIFT + track load 1 - 4 to enable and launch
-a track using your linefader. (hardware function)
+6\. **FADER-START** Press SHIFT + track load 1-4 to enable and launch a
+track using your linefader. (hardware function)
 
 7\. **BACK** push back button to switch Trax action between playlists
-(sidebar), tracks and Preview Deck. See Trax section below for more
-explanation.
+(sidebar), tracks and Preview Deck. See
+[below](#Trax-selector-and-Back-button) for more explanation.
 
 8\. **SAMPLER VOLUME** Controls the volume of all samplers.
 

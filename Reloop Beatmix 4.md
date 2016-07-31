@@ -30,7 +30,8 @@ manufacturer ship an ASIO low-latency driver that can be found on the
 This controls the built in sound card and has no effect on the master
 gain knob in Mixxx.
 
-2\. **PHONES** Controls your headphones volume.
+2\. **PHONES** Controls your headphones volume. This controls the built
+in sound card and has no effect on the headphone gain knob in Mixxx.
 
 3\. **CUE MIX** Mixes the headphones CUE signal between your selected
 channel and the master output.

@@ -226,3 +226,5 @@ Split mode is activated by pressing mode A and mode B buttons
 simultaneously. The two leds A and B are lit together. In this mode, to
 top row is configured in mode A, and the bottom row if configured as the
 top row of mode B.
+
+So in this mode, you can control 4 cue points and 4 sampler.

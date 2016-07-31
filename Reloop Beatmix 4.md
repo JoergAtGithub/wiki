@@ -143,7 +143,7 @@ blink quickly.
 The pitch slider let you adjust pitch.
 
 Pitch +/- buttons let you temporarily adjust the the speed one step
-higher/lower These buttons, when used with shift, let you [control
+higher/lower. These buttons, when used with shift, let you [control
 effects](#Effects-Section).
 
 ## Effects Section

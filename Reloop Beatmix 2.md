@@ -140,7 +140,7 @@ Pitch +/- buttons let you temporarily adjust the the speed one step
 higher/lower These buttons, when used with shift, let you control
 effects. See the effects section.
 
-## FX Section
+## Effects Section
 
 [[/media/reloop-beatmix4_fx-section.png|]]
 

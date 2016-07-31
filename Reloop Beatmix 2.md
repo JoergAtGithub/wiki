@@ -180,7 +180,7 @@ mode you switched to.
 
 [[/media/reloop-beatmix_pad-section.png|]]
 
-### Mode A - Cue and Loops
+### Mode A - Cue points and Loops
 
 **Top Row 4 Pads - CUE Points**  
 Press an unlit pad to set a new CUE point. If it is already set, jump to

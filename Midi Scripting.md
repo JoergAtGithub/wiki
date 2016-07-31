@@ -371,6 +371,8 @@ are the related functions:
     cause the specified Mixxx control signal to fire so the connected
     script function is called with the updated value even if it hasn't
     changed, such as when forcing LEDs to update on a mode change.
+    Please note that engine.trigger() will only trigger connected
+    javascript functions and will not refresh outputs connected in XML.
 
 Connected functions are passed three parameters: the new value of the
 MixxxControl, the group, and the Mixxx control name. So, your connected

@@ -186,11 +186,11 @@ mode you switched to.
 Press an unlit pad to set a new CUE point. If it is already set, jump to
 this CUE point.
 
-**Top Row 4 Pads - SHIFT + DRUM PAD**  
+**Top Row 4 Pads - SHIFT + PAD**  
 Deletes CUE points.
 
 **Lower Row 4 Pads - LOOP**  
-Press the Pad to activate a loop. Loop length (in beats) is respectively
+Press the pad to activate a loop. Loop length (in beats) is respectively
 1, 2, 4 and 8 beats.
 
 **Lower Row 4 Pads + SHIFT - LOOP ADJUST**  

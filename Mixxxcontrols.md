@@ -208,7 +208,7 @@ PreviewDeck controls are the same as for *Channel above*. Just replace
 |  | ------------------ |  | ------ |  | --------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
 |  | Toggle<sup>4</sup> |  | binary |  | Moves control by a vinyl control signal from one deck to another if using the single deck vinyl control (VC) feature. |  | If VC isn't enabled on any decks, enable it on the first one we're receiving samples for. If VC is enabled on a single (exclusive) deck, and another deck is setup to receive samples, disable it on the former deck and enable it on the next eligible deck (ordered by deck number). If VC is enabled on multiple decks, don't do anything. |  |
 
-### \[Microphone\]
+### \[MicrophoneN\]
 
 Below, *N*=2 up to the number of active microphones. e.g
 \[Microphone2\], for Mic \#1 just use \[Microphone\]<sup>7</sup>.

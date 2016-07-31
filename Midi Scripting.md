@@ -247,24 +247,33 @@ Script functions can check and set Mixxx control values using the
 following functions:
 
 ``` javascript
+engine.getParameter(string group, string key);
+engine.setParameter(string group, string key, double newValue);
 engine.getValue(string group, string key);
 engine.setValue(string group, string key, double newValue);
 ```
 
-To check a Mixxx control value, call `engine.getValue()` with the
+To check a Mixxx control value, call `engine.getParameter()` with the
 "`group`" and "`key`" values for a particular Mixxx control, a list of
 which can be found [here](mixxxcontrols). So for example:
 
 ``` javascript
-var currentValue = engine.getValue("[Channel1]", "rate");
+var currentValue = engine.getParameter("[Channel1]", "rate");
 ```
 
-Values can be set just as easily by calling `engine.setValue()` with the
-`group` and `key` as above, and the new value to set, like so:
+Values can be set just as easily by calling `engine.setParameter()` with
+the `group` and `key` as above, and the new value to set, like so:
 
 ``` javascript
-engine.setValue("[Channel1]", "rate", 0.5);
+engine.setParameter("[Channel1]", "rate", 0.5);
 ```
+
+`engine.getParameter` and `engine.setParameter` work with values on a
+scale from 0 to 1. The older `engine.getValue` and `engine.setValue`
+functions work with values on the scale listed for each control on the
+[MixxxControls](MixxxControls) page. The `Parameter` functions must be
+used with effects parameters because different effects have parameters
+on different scales.
 
 Note that since this is a script, you can do calculations and use state
 variables so a single function can work for multiple cases, such as a

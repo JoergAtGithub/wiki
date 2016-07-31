@@ -207,18 +207,18 @@ Drum Pad 4 - Replays the LOOP.
 
 ### Mode B
 
-**Top Row 4 Pads - SAMPLER PLAY**  
-Pressing pads 1-4 launches a sample.
+Mode B let you control 8 samplers. Top row is for sampler 1-4 and bottom
+row is for sampler 5-8, each sampler controlled by a pad button.
 
-**Lower Row 4 Pads - SAMPLER STOP**  
-Pressing pads 5-8 stops the sample.
+Press an unlit pad to load the track selected in the library to that
+sampler. Pads are red when the sampler is loaded but not playing and
+purple when playing.
 
-**Top Row 4 Pads + SHIFT - CYCLE**  
-Pressing 1 - 4 toggles sampler repeat mode.
+Press a red pad to play the sample from its cue point. Press a purple
+pad to jump back to the sample's cue point.
 
-**Lower Row 4 Pads + SHIFT - EJECT**  
-Pressing pads 5-8 ejects the sample if sampler is loaded or load the
-selected track if sampler is empty.
+Press a purple pad with shift to stop a playing sample. Press a red pad
+with shift to eject a sample.
 
 ### Split mode
 

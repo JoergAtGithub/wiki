@@ -205,7 +205,7 @@ Drum Pad 2 - Shortens (half) the LOOP.
 Drum Pad 3 - Lengthens (double) the LOOP.  
 Drum Pad 4 - Replays the LOOP.
 
-### Mode B
+### Mode B - Samplers
 
 Mode B let you control 8 samplers. Top row is for sampler 1-4 and bottom
 row is for sampler 5-8, each sampler controlled by a pad button.

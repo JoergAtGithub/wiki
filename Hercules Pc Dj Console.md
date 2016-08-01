@@ -7,9 +7,9 @@ Hercules is supporting the Mixxx project through donations of their
 hardware, we'd like to thank them for that\!
 
 On 2/16/2009, Hercules released Linux MIDI drivers for their DJ
-products. The driver has not been maintained by Hercules in years. It is
-now maintained by a volunteer, Neale Pickett, [on
-GitHub](https://github.com/nealey/hdjd).
+products. The driver has not been maintained by Hercules in years and
+was never merged upstream with Linux. It is now maintained by a
+volunteer, Neale Pickett, [on GitHub](https://github.com/nealey/hdjd).
 
 ## Drivers / Supportability
 

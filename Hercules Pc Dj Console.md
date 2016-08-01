@@ -26,7 +26,9 @@ however. \[December 2015\])
 
   - None of the Hercules devices from Mk1 to RMX are USB-MIDI class
     compliant, they require OS MIDI drivers, which are available for
-    Windows, Linux and OSX.
+    Windows, Linux and Mac OS X. Newer controllers from Hercules are USB
+    MIDI class compliant though. See the tables on the [DJ Hardware
+    Guide](hardware%20compatibility) for details.
 
 ### My Hercules Mk1/RMX doesn't work with Mixxx on Linux
 

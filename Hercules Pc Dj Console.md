@@ -6,11 +6,10 @@ of USB DJ controllers for use with software such as Mixxx.
 Hercules is supporting the Mixxx project through donations of their
 hardware, we'd like to thank them for that\!
 
-**On 2/16/2009, Hercules released Linux MIDI drivers for their DJ
-products. Download: [Hercules Linux Driver
-page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)**
-(This link doesn't appear to display any Linux drivers any more,
-however. \[December 2015\])
+On 2/16/2009, Hercules released Linux MIDI drivers for their DJ
+products. The driver has not been maintained by Hercules in years. It is
+now maintained by a volunteer, Neale Pickett, [on
+GitHub](https://github.com/nealey/hdjd).
 
 ## Drivers / Supportability
 

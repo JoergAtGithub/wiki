@@ -244,18 +244,18 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \<sortable 2=numeric\>
 
-| Device                                                       | Price (USD) \[22\]     | Description                     | Integrated Sound Card | Signal protocol |
-| ------------------------------------------------------------ | ---------------------- | ------------------------------- | --------------------- | --------------- |
-| [Akai AMX](Akai%20AMX)                                       | $250                   | 2 deck mixer                    | yes                   | MIDI            |
-| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200                   | 4 deck \[23\] all-in-one        | yes                   | MIDI            |
-| [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                    | basic 2 deck                    | no                    | MIDI            |
-| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | $\~500 (discontinued?) | 4 deck \[24\] all-in-one        | yes                   | MIDI            |
-| [Reloop Beatmix 2](Reloop%20Beatmix%202)                     | $299                   | 2 deck all-in-one               | yes                   | MIDI            |
-| [Reloop Beatmix 4](Reloop%20Beatmix%204)                     | $399                   | 4 deck all-in-one               | yes                   | MIDI            |
-| [Hercules P32 DJ](Hercules%20P32%20DJ)                       | $300                   | 4 deck \[25\] mixer + pad grids | yes                   | MIDI            |
-| [Denon MC4000](Denon%20MC4000)                               | $399                   | 2 deck controller and mixer     | yes                   | MIDI            |
-| [Gemini G4V](Gemini%20G4V)                                   | $\~282                 | 4 deck \[26\] all-in-one        | yes                   | MIDI            |
-| [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                     | $300                   | 2 deck controller and mixer     | yes                   | MIDI            |
+| Device                                                       | Price (USD) \[22\] | Description                     | Integrated Sound Card | Signal protocol | Released |
+| ------------------------------------------------------------ | ------------------ | ------------------------------- | --------------------- | --------------- | -------- |
+| [Akai AMX](Akai%20AMX)                                       | $250               | 2 deck mixer                    | yes                   | MIDI            | 2014     |
+| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)     | $200               | 4 deck \[23\] all-in-one        | yes                   | MIDI            | 2013     |
+| [Hercules DJControl Compact](Hercules%20DJControl%20Compact) | $80                | basic 2 deck                    | no                    | MIDI            | 2015     |
+| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)               | discontinued       | 4 deck \[24\] all-in-one        | yes                   | MIDI            | 2011     |
+| [Reloop Beatmix 2](Reloop%20Beatmix%202)                     | $299               | 2 deck all-in-one               | yes                   | MIDI            | 2014     |
+| [Reloop Beatmix 4](Reloop%20Beatmix%204)                     | $399               | 4 deck all-in-one               | yes                   | MIDI            | 2014     |
+| [Hercules P32 DJ](Hercules%20P32%20DJ)                       | $300               | 4 deck \[25\] mixer + pad grids | yes                   | MIDI            | 2016     |
+| [Denon MC4000](Denon%20MC4000)                               | $399               | 2 deck controller and mixer     | yes                   | MIDI            | 2015     |
+| [Gemini G4V](Gemini%20G4V)                                   | $\~282             | 4 deck \[26\] all-in-one        | yes                   | MIDI            | 2013     |
+| [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                     | $300               | 2 deck controller and mixer     | yes                   | MIDI            | 2014     |
 
 \</sortable\>
 

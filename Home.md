@@ -52,19 +52,19 @@ please fix it.
 
 ## Controller Mapping Documentation
 
+  - [MIDI controller mapping file
+    format](MIDI%20controller%20mapping%20file%20format): create or
+    change a MIDI mapping file for your controller
+  - [MIDI crash course](MIDI%20crash%20course)
+  - [Controller scripting with JavaScript](midi%20scripting): map
+    advanced behaviors including jog wheel scratching, modifier (shift)
+    buttons, and deck toggle buttons
+  - [Contributing mappings](Contributing%20mappings): describes how to
+    get your mapping included in Mixxx
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
   - [Updating controllers for 2.0](Updating%20controllers%20for%202.0):
     how to adapt old mappings for Mixxx 2.0
-  - [Contributing mappings](Contributing%20mappings): describes how to
-    get your mapping included in Mixxx
-  - [MIDI crash course](MIDI%20crash%20course)
-  - [MIDI controller mapping file
-    format](MIDI%20controller%20mapping%20file%20format): create or
-    change a MIDI mapping file for your controller
-  - [Controller scripting with JavaScript](midi%20scripting): map
-    advanced behaviors including jog wheel scratching, modifier (shift)
-    buttons, and deck toggle buttons
   - [HID & USB Bulk controller presets](manual_hid_preset): create or
     change a preset for your HID or USB bulk-transfer mode controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can

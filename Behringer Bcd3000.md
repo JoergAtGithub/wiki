@@ -1,7 +1,9 @@
 # Behringer BCD3000
 
-[[/media/hardware/behringer_bcd3000.png|]] Behringer no longer has a product
-page for this device. Its manual can be found
+[[/media/hardware/behringer_bcd3000.png|]]
+
+Behringer no longer has a product page for this device. Its manual can
+be found
 [here](https://www.parts-express.com/pedocs/manuals/248-6084-behringer-bcd3000-manual-42714.pdf).
 
 By default, the input channels 1-2 use the RCA phono inputs for the

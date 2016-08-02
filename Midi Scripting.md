@@ -506,7 +506,7 @@ in your text editor.
 
 ``` javascript
 // The button that enables/disables scratching
-MyController.wheelTouch = function (channel, control, value, status) {
+MyController.wheelTouch = function (channel, control, value, status, group) {
     if ((status & 0xF0) === 0x90) {    // If button down
   //if (value === 0x7F) {  // Some wheels send 0x90 on press and release, so you need to check the value
         var alpha = 1.0/8;
@@ -518,7 +518,7 @@ MyController.wheelTouch = function (channel, control, value, status) {
 }
 
 // The wheel that actually controls the scratching
-MyController.wheelTurn = function (channel, control, value, status) {
+MyController.wheelTurn = function (channel, control, value, status, group) {
     // --- Choose only one of the following!
     
     // A: For a control that centers on 0:

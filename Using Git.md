@@ -84,7 +84,7 @@ It is also helpful to use a IDE integrated Git GUIs.
 
 # Cloning the Mixxx Repository
 
-Note: If you plan fixing a bug or contributing a feature, you should
+Note: If you plan on fixing a bug or contributing a feature, you should
 [fork](https://help.github.com/articles/fork-a-repo) the mixxx
 repository on GitHub first. Replace "mixxxdj" with your user name in
 following paragraphs.

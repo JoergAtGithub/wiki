@@ -398,22 +398,28 @@ folder, can be selected at preferences).
 
 W11 July 18th - July 24th:
 
-  - Implement new History Feature (v.0.2.0)
+  - ~~Implement new History Feature (v.0.2.0)~~
   - Implement new search behavior (v.0.3.0):
   - ~~Implement save state (v.0.2.1)~~
-  - Begin implementing sticky views (v.0.2.2)
 
 W12 July 25th - July 31st:
 
-  - Implement new Browse PC view, needs to be Bullet Proof (v.0.3.0)
-  - Merge v.0.3.0
+  - ~~Bugfixing~~
 
 W13 August 1st - August 7th:
 
-  - Bugfixing
-  - Writing documentation 
+  - Implement folders in Library (like Browse PC view) (v.0.4.0)
+  - Add icons only option in WButtonBar
+  - Add <library_icon_color> tag
+  - Fix double sidebar
+  - Fix search selection
 
 W14 August 8th - August 14th:
+
+  - Implement new search behavior (v.0.3.0):
+  - Begin implementing sticky views (v.0.2.2)
+  - Bugfixing
+  - Writing documentation 
 
 W15 August 15th - August 23rd:
 

@@ -14,36 +14,36 @@ thread : <http://www.mixxx.org/forums/viewtopic.php?f=7&t=7865>
 In order for this mapping to work, you will need to use these settings.
 First, enter *System Mode* by pressing the two black buttons in the top
 right encoder section. There is a vertical *System* label next to these
-two buttons. The orange *Sys/Mon* led in the center bottom should be on
+two buttons. The orange *Sys/Mon* LED in the center bottom should be on
 and not blinking.
 
 You can now modify various settings by pressing each of the 4 black
 buttons of the encoder section. There are two possible settings for each
-function, *On* or *Off*, depending which of the corresponding led is
+function, *On* or *Off*, depending which of the corresponding LED is
 lit. There is also a brief explanation of these settings on a gray
 sticker in the back of the controller.
 
   - The top left button controls the *Auto Switch* function. If the
-    *Seek/Scratch* green led, is on, the function is off. If the
-    *List/load* red led is on, the function is on. If the *Auto Switch*
+    *Seek/Scratch* green LED, is on, the function is off. If the
+    *List/load* red LED is on, the function is on. If the *Auto Switch*
     function, the encoder will switch to *Seek/Scratch* after pressing
     the encoder to load a track. This function is up to the user's
     preference and will not affect the mapping.
-  - **The bottom left button must be set to the *Gain* green led for
-    this mapping to work**. If set to the red *Pitch* led, the transport
+  - **The bottom left button must be set to the *Gain* green LED for
+    this mapping to work**. If set to the red *Pitch* LED, the transport
     buttons will have different CC numbers. This is useful if you own a
     second controller which already has transport functions.
   - **The top right button must be set to the *Seek/Scratch* green
-    led.** If set to the *List/Load* red led, the *Auto Play* function
+    LED.** If set to the *List/Load* red LED, the *Auto Play* function
     will be on, meaning that loading a track from the *List/load*
     encoder will trigger playback. You don't want this function on since
     it will conflict with the play button of the transport section which
     would have the same CC number.
-  - **The bottom right button must be set to the *Gain* green led.** If
-    set to the red led, the joystick will have different CC numbers, and
+  - **The bottom right button must be set to the *Gain* green LED.** If
+    set to the red LED, the joystick will have different CC numbers, and
     its mapping won't work properly.
-  - If the green *FX1* led is on, the controller's will use MIDI channel
-    1, and channel 16 if the *FX2* led is on. This is useful if you want
+  - If the green *FX1* LED is on, the controller's will use MIDI channel
+    1, and channel 16 if the *FX2* LED is on. This is useful if you want
     to control four decks using two FaderFox DJ2 controllers. If you use
     only one controller, leave this setting to *FX1*. To change the
     setting, press the *Shift* button and the lower left black button of
@@ -63,14 +63,14 @@ select which function is used for each of the encoders by pushing the
 black buttons of the encoders section. LEDs indicate which function is
 currently selected.
 
-  - *List/Load* (top red led is on) lets you browse your playlist. Push
+  - *List/Load* (top red LED is on) lets you browse your playlist. Push
     the encoder to load the highlighted into the first stopped deck. 
-  - *Seek/Scratch* (top green led is on) acts as a jogwheel. Turn the
+  - *Seek/Scratch* (top green LED is on) acts as a jogwheel. Turn the
     left encoder for Deck A or the right encoder for Deck B. Pushing the
     encoder on that setting will activate *Sync* on that deck.
-  - *Gain* (bottom green led is on) controls the gain of the channel.
+  - *Gain* (bottom green LED is on) controls the gain of the channel.
     Pushing the encoder on that setting will mute the track.
-  - *Pitch* (bottom red led is on) controls the tempo of the deck.
+  - *Pitch* (bottom red LED is on) controls the tempo of the deck.
     Unfortunately there is no MIDI CC number emitted when pushing the
     encoder on that position.
 
@@ -78,9 +78,9 @@ currently selected.
 
 The joystick can be set to control either the first or the second unit
 of the effect rack. To control the first effect unit, press *Shift* +
-the lower black button of the left encoder section (*FX1* green led is
+the lower black button of the left encoder section (*FX1* green LED is
 on). To control the second effect unit, press *Shift* + the lower black
-button of the right encoder section (*FX2* green led is on).
+button of the right encoder section (*FX2* green LED is on).
 
 The horizontal axis of the joystick controls the *Mix* knob of the
 effect unit. The vertical axis control the *Super Knob* of the unit.

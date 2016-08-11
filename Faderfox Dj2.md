@@ -64,7 +64,8 @@ black buttons of the encoders section. LEDs indicate which function is
 currently selected.
 
   - *List/Load* (top red LED is on) lets you browse your playlist. Push
-    the encoder to load the highlighted into the first stopped deck. 
+    the left encoder to load the highlighted track into Deck A or the
+    left encoder for Deck B. 
   - *Seek/Scratch* (top green LED is on) acts as a jogwheel. Turn the
     left encoder for Deck A or the right encoder for Deck B. Pushing the
     encoder on that setting will activate *Sync* on that deck.

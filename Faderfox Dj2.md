@@ -92,19 +92,11 @@ effect unit. The vertical axis control the *Super Knob* of the unit.
   - The *Cue Mix* knob controls the headphone mix. The *Cue A* and *Cue
     B* are used to pre-listen the selected deck.
   - The green *FX ctrl* buttons are used to activate a desired effect
-    unit on the selected deck : 
-  - the left green button on Channel 1 enables fx unit 1 on Channel 1
-  - the right green button on Channel 1 enables fx unit 2 on Channel 1 
-  - *Shift* + left green button on Channel 1 enables fx unit 3 on
-    Channel 1
-  - *Shift* + right green button Channel 1 enables fx unit 4 on Channel
-    1
-  - the left green button on Channel 2 enables fx unit 1 on Channel 2
-  - the right green button on Channel 2 enables fx unit 2 on Channel 2
-  - *Shift* + left green button on Channel 2 enables fx unit 3 on
-    Channel 2
-  - *Shift* + right green button Channel 2 enables fx unit 4 on Channel
-    2
+    unit on the selected deck. 
+  - the left green button enables effect unit 1 on that deck
+  - the right green button enables effect unit 2 on that deck
+  - *Shift* + left green button enables effect unit 3 on that deck
+  - *Shift* + right green button enables fx unit 4 on that deck
   - The *Kill* button controls Low Kill and *Shift + Kill* controls High
     Kill. To use Mid Kill, press *Shift* + *Cue A* (Deck A) or *Shift* +
     *Cue B* (Deck B)

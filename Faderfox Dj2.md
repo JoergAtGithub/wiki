@@ -50,6 +50,11 @@ sticker in the back of the controller.
     the encoder section for channel 1, or the lower right black button
     of the encoder section for channel 16.
 
+*Important* : changes to your settings won't be saved if you just turn
+off the controller on *System Mode*. To save the settings, exit *System
+Mode* by pressing again the two black buttons of the left encoder
+section.
+
 ## Encoders Section
 
 The two encoders on top of the controller control various parameters.

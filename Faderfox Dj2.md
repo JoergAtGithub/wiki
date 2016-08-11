@@ -65,7 +65,7 @@ currently selected.
 
   - *List/Load* (top red LED is on) lets you browse your playlist. Push
     the left encoder to load the highlighted track into Deck A or the
-    left encoder for Deck B. 
+    right encoder for Deck B. 
   - *Seek/Scratch* (top green LED is on) acts as a jogwheel. Turn the
     left encoder for Deck A or the right encoder for Deck B. Pushing the
     encoder on that setting will activate *Sync* on that deck.

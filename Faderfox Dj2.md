@@ -26,9 +26,9 @@ sticker in the back of the controller.
   - The top left button controls the *Auto Switch* function. If the
     *Seek/Scratch* green LED, is on, the function is off. If the
     *List/load* red LED is on, the function is on. If the *Auto Switch*
-    function, the encoder will switch to *Seek/Scratch* after pressing
-    the encoder to load a track. This function is up to the user's
-    preference and will not affect the mapping.
+    function is on, the encoder will switch to *Seek/Scratch* after
+    pressing the encoder to load a track. This function is up to the
+    user's preference and will not affect the mapping.
   - **The bottom left button must be set to the *Gain* green LED for
     this mapping to work**. If set to the red *Pitch* LED, the transport
     buttons will have different CC numbers. This is useful if you own a

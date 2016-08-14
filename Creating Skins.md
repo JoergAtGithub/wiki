@@ -3020,6 +3020,9 @@ New in Mixxx 2.00.0
         <Text>Text</Text>
         <Icon>icon.png</Icon>
       </State>
+      <Connection>
+        <ConfigKey>[Master],show_mixer</ConfigKey>
+      </Connection>
     </ComboBox>
 
 Both \<Text\> and \<Icon\> tags are optional. The order in which the

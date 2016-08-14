@@ -3016,7 +3016,7 @@ New in Mixxx 2.00.0
         <Icon>icon.png</Icon>
       </State>
       <State>
-        <Number>1</Number>
+        <Number>2</Number>
         <Text>Text</Text>
         <Icon>icon.png</Icon>
       </State>

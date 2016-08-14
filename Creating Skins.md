@@ -3021,13 +3021,16 @@ New in Mixxx 2.00.0
         <Icon>icon.png</Icon>
       </State>
       <Connection>
-        <ConfigKey>[Master],show_mixer</ConfigKey>
+        <ConfigKey>[XXX],combobox_selector</ConfigKey>
       </Connection>
     </ComboBox>
 
 Both \<Text\> and \<Icon\> tags are optional. The order in which the
 states are displayed is determined by the order they have in the xml,
-not by the \<Number\> tag. The \<Number\> tag
+not by the \<Number\> tag. What does the \<Number\> tag do?
+
+The control object that holds the state of the combobox is determined
+with the \<Connection\> tag.
 
 ### Singleton widgets
 

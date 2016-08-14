@@ -3009,19 +3009,18 @@ by size, smallest first.
 
 New in Mixxx 2.00.0
 
-|`<ComboBox>
-<State>
-<Number>1</Number>
-<Text>Text</Text>
-<Icon>icon.png</Icon>
-</State>
-<State>
-<Number>1</Number>
-<Text>Text</Text>
-<Icon>icon.png</Icon>
-</State>
-</ComboBox>
-`
+    <ComboBox>
+      <State>
+        <Number>1</Number>
+        <Text>Text</Text>
+        <Icon>icon.png</Icon>
+      </State>
+      <State>
+        <Number>1</Number>
+        <Text>Text</Text>
+        <Icon>icon.png</Icon>
+      </State>
+    </ComboBox>
 
 Both \<Text\> and \<Icon\> are optional.
 

@@ -3005,6 +3005,26 @@ space. It allows GUI elements to easily adopt to window size without
 manual actions.The algorithm is very basic and requires children sorted
 by size, smallest first.
 
+### ComboBox
+
+New in Mixxx 2.00.0
+
+|`<ComboBox>
+<State>
+<Number>1</Number>
+<Text>Text</Text>
+<Icon>icon.png</Icon>
+</State>
+<State>
+<Number>1</Number>
+<Text>Text</Text>
+<Icon>icon.png</Icon>
+</State>
+</ComboBox>
+`
+
+Both \<Text\> and \<Icon\> are optional.
+
 ### Singleton widgets
 
 New in Mixxx 2.00.0

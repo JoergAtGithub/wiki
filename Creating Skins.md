@@ -3022,9 +3022,9 @@ New in Mixxx 2.00.0
       </State>
     </ComboBox>
 
-Both \<Text\> and \<Icon\> tags are optional. The display order of the
-states is determined by the order they have in the xml, not by the
-\<Number\> tag. The \<Number\> tag
+Both \<Text\> and \<Icon\> tags are optional. The order in which the
+states are displayed is determined by the order they have in the xml,
+not by the \<Number\> tag. The \<Number\> tag
 
 ### Singleton widgets
 

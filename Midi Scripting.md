@@ -668,7 +668,7 @@ common-controller-scripts.js file:
     control and it will return a corresponding value suitable for
     Mixxx's pitch sliders ("rate" controls.) So if you just want to set
     those controls, the calling function need only have the single line:
-    `engine.setValue("[Channel"+deck+"]","rate",script.pitch(control,
+    `engine.setValue("[Channel"+deck+"]","rate",script.midiPitch(control,
     value, status));`
   - **script.crossfaderCurve**(value, min, max)<sup>1</sup> - Sets the
     cross-fader's curve based on a value from an absolute control

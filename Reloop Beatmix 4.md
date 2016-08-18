@@ -159,7 +159,7 @@ effects](#Effects-Section).
 
 [[/media/reloop-beatmix4_fx-section.png|]]
 
-The effect section let you control the first to EffectUnits. There are
+The effect section let you control the first two EffectUnits. There are
 two different effect modes mapped:
 
   - Single Effect mode (the default), where you can load a single effect

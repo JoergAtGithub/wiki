@@ -135,10 +135,12 @@ Hold SHIFT and turn the jog wheel to quick search through your track
 (shift ignores touch sensitive platter so holding shift and turning
 jogwheel is the same as using the side of the jogwheel).
 
-When a deck is playing, jog led will turn around (1 turn every 2
-seconds). When track time left is below 30 seconds, jog leds will blink
-slowly, and when track time remaining is below 15 seconds, jog leds will
-blink quickly.
+When a deck is playing, jog led will turn around at 33.3RPM. When track
+time left is below 30 seconds, jog leds will blink slowly, and when
+track time remaining is below 15 seconds, jog leds will blink quickly.
+These delays can be changed by editing the two variables at the
+beginning of the JS file and eventually set to -1 to disable jog led
+blink.
 
 The pitch slider let you adjust pitch.
 

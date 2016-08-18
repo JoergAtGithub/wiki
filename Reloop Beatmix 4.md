@@ -238,3 +238,5 @@ top row is configured in mode A, and the bottom row if configured as the
 top row of mode B.
 
 So in this mode, you can control 4 cue points and 4 samplers.
+
+# developer tips & tricks

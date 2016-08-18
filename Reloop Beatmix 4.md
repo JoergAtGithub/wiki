@@ -240,3 +240,30 @@ top row of mode B.
 So in this mode, you can control 4 cue points and 4 samplers.
 
 # developer tips & tricks
+
+The midi documentation provided by Reloop (the manufacturer) is lacking
+some details. Here they are:
+
+## Effects Units
+
+The effects knobs (FX1-FX3) are deck-independant. They send the same
+midi messages regardless of deck 1/3 switch and deck 2/4 switch. The
+"beat" encoder of the effect unit send different midino for deck 1 and 3
+and for deck 2 and 4.
+
+The Effect knobs (fx1, fx2 and fx3) all send knob (0xB) values, but also
+button (0x9) when at 0. These are not documented and are as follow: ^
+Knob ^ channel ^ midino  
+(unshifted) ^ midino  
+(shifted) ^
+
+|       |      |      |      |
+| ----- | ---- | ---- | ---- |
+| L-FX1 | 0x91 | 0x71 | 0x74 |
+| L-FX2 | 0x91 | 0x72 | 0x75 |
+| L-FX3 | 0x91 | 0x73 | 0x76 |
+| R-FX1 | 0x92 | 0x71 | 0x74 |
+| R-FX2 | 0x92 | 0x72 | 0x75 |
+| R-FX3 | 0x92 | 0x73 | 0x76 |
+
+## SysEx Messages

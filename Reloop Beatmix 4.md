@@ -264,3 +264,12 @@ button (0x9) when at 0. These are not documented and are as follow:
 | R-FX3 | 0x92    | 0x73               | 0x76             |
 
 ## SysEx Messages
+
+SysEx messages are not included in the official documentation. Here are
+the midi SysEx messages Reloop sent me:
+[[/media/reloop_beatmix_4_sysex_messages.png|reloop\_beatmix\_4\_sysex\_messages.png]]
+
+the "Serato Identity Request" SysEx messages forces the controller to
+send the status of all controls on the controller surface. It is used in
+the init function of the mapping to match the Mixxx controls to the
+controller ones.

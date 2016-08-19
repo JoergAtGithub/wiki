@@ -53,6 +53,9 @@ is loaded into the associated deck.
 6\. **FADER-START** Press SHIFT + track load 1-4 to enable and launch a
 track using your linefader. (hardware function)
 
+below 6. **CUE** Pre-listen the selected channel in your headphones.
+This buttons lights-up when activated
+
 7\. **BACK** push back button to switch Trax action between playlists
 (sidebar), tracks and Preview Deck. See
 [below](#Trax-selector-and-Back-button) for more explanation.

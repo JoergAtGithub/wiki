@@ -247,6 +247,13 @@ So in this mode, you can control 4 cue points and 4 samplers.
 The midi documentation provided by Reloop (the manufacturer) is lacking
 some details. Here they are:
 
+## Identity Reply
+
+When pressing the Deck change buttons (either deck 1/3 ot deck 2/4), the
+controller sends a gratuitous "Identity Reply" Universal SysEx message.
+
+// TO BE COMPLETED: insert the message here and detail its content
+
 ## Effects Units
 
 The effects knobs (FX1-FX3) are deck-independant. They send the same

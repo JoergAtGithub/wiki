@@ -252,7 +252,7 @@ some details. Here they are:
 When pressing the Deck change buttons (either deck 1/3 ot deck 2/4), the
 controller sends a gratuitous "Identity Reply" Universal SysEx message.
 
-// TO BE COMPLETED: insert the message here and detail its content
+// **TO BE COMPLETED**: insert the message here and detail its content//
 
 ## Effects Units
 

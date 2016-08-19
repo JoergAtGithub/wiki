@@ -239,7 +239,7 @@ top row of mode B.
 
 So in this mode, you can control 4 cue points and 4 samplers.
 
-# developer tips & tricks
+# Developer tips & tricks
 
 The midi documentation provided by Reloop (the manufacturer) is lacking
 some details. Here they are:

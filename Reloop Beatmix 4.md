@@ -247,6 +247,13 @@ So in this mode, you can control 4 cue points and 4 samplers.
 The midi documentation provided by Reloop (the manufacturer) is lacking
 some details. Here they are:
 
+## Fader Start
+
+Fader Start is a hardware function. When activated, the controller sends
+a "play" signal each time the volume slider of a channel leaves zero and
+a "stop" signal each time the volume slider of a channel gets back to
+zero alongside with the volume slider midi signal.
+
 ## Identity Reply
 
 When pressing the Deck change buttons (either deck 1/3 ot deck 2/4), the

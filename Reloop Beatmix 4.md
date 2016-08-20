@@ -250,9 +250,7 @@ some details. Here they are:
 ## Identity Reply
 
 When pressing the Deck change buttons (either deck 1/3 ot deck 2/4), the
-controller sends a gratuitous "Identity Reply" Universal SysEx message.
-
-The message is
+controller sends a gratuitous "Identity Reply" Universal SysEx message:
 
     [F0 7E 00 06 02 00 20 6E 72 70 00 00 00 17 00 00 F7]
 

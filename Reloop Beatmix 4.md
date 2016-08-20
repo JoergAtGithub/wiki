@@ -308,4 +308,10 @@ the midi SysEx messages Reloop sent me:
 The "Serato Identity Request" SysEx messages forces the controller to
 send the status of all controls on the controller surface. It is used in
 the init function of the mapping to match the Mixxx controls to the
-controller ones.
+controller ones. This SysEx Message is built upon:
+
+  - F0 :=\> Begin SysEx Message
+  - 00 20 7F =\> it's the Serato Manufacturer according to
+    <https://www.midi.org/specifications/item/manufacturer-id-numbers>
+  - 03 01 =\> The Serato's proprietary message
+  - F7 =\> End of SysEx Message

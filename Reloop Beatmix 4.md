@@ -252,7 +252,28 @@ some details. Here they are:
 When pressing the Deck change buttons (either deck 1/3 ot deck 2/4), the
 controller sends a gratuitous "Identity Reply" Universal SysEx message.
 
-// **TO BE COMPLETED**: insert the message here and detail its content//
+The message is
+
+    [F0 7E 00 06 02 00 20 6E 72 70 00 00 00 17 00 00 F7]
+
+  - F0 =\> Sysex (midi standard)
+  - 7E =\> Non real-time Universal Sysex Message (midi standard)
+  - 00 =\> Device Id (1)
+    <http://www.personal.kent.edu/~sbirch/Music_Production/MP-II/MIDI/midi_universal_system_exclusive.htm>
+  - 06 =\> General Information
+    <https://www.midi.org/specifications/item/table-4-universal-system-exclusive-messages>
+  - 02 =\> Identity Reply
+    <https://www.midi.org/specifications/item/table-4-universal-system-exclusive-messages>
+  - 00 20 6E =\> Manufacturer. Ya Horng Electronic Co LTD. Probably the
+    maker of the midi Chip in the controller.
+    <https://www.midi.org/specifications/item/manufacturer-id-numbers>
+  - 72 70 =\> Family code
+    <https://www.midi.org/forum/sysex-identity-reply-is-the-manufacturer-id-one-byte-only>
+  - 00 00 =\> Model Number
+    <https://www.midi.org/forum/sysex-identity-reply-is-the-manufacturer-id-one-byte-only>
+  - 00 17 00 00 =\> Version number. Here firmware 1.7.0
+    <https://www.midi.org/forum/sysex-identity-reply-is-the-manufacturer-id-one-byte-only>
+  - F7 =\> End of sysex
 
 ## Effects Units
 

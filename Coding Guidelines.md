@@ -475,6 +475,13 @@ Yes\! Always prefer to NULL.
 
 Yes\! Prefer to QScopedPointer.
 
+By including the custom file "util/memory.h" instead of the system
+header \<memory\> you are even able to make use of
+std::make\_unique\<\>() that was missing from the C++11 specification
+and is now provided by C++14. This generic function should always be
+used instead of *operator new* for the allocation of objects that are
+wrapped in a *unique\_ptr*.
+
 ### default / delete functions
 
 Use.

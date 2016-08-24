@@ -119,63 +119,20 @@ please fix it.
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
 
-5 Ways to Make Money in Commodities
+### Code Reference
 
-To be part of a race where you need to incur money in products similar
-to shareholders need powerful and nerves. You have to be a sharp here,
-regardless of the variations in the market. The rule one says that no
-matter what the circumstances are, never get panic, as it only ruins the
-existence. Even the best investor must have done the mistake of selling
-due doubts and then waiting for very to bounce. I think the bad mistake
-would be to sell discriminately.
+  - [Performance improvements](Performance%20improvements)
+  - [Threads](Threads)
 
-Consider saving more and increase risk taking ability:
+### Archives
 
-It requires proper and access but its essential, as the investors need
-to access the right picture of what their returns in the public markets
-will be over the 10 years or two. (One more thing) which I found is that
-usually think are likely to return less, which if you wish you either
-need or take more risks.
+  - [Developer meeting archives](meetings%20archive)
+  - Bazaar (legacy) code browsing on
+    [Launchpad](https://code.launchpad.net/mixxx)
+  - SVN (even more legacy) code browsing on
+    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
 
-Look at your account:
+### Other Resources
 
-Many people do the fault of not looking at their account in a down
-cycle. Well, if you are one of them, you could be missing to change the
-assets around to improve your individual risk and meet the goals. For
-this, make a rational picture of how a portfolio is performing in a
-down.
-
-Invest regularly, rebalance and harvest losses:
-
-If you are able to rebalance back to your actual vision for your
-portfolio you to buy low or sell high. Be wise and see if there are some
-assets classes in your account, like bonds, which are operating better
-than the equities, now is the time when you should sell them and
-comparatively and mutual funds.
-
-Diversify globally:
-
-If you think being at one place could solve the aim, then it may get
-difficult to confront the market competition. Emerging markets stocks
-are getting hammered by China's slowdown and an easy way to negotiate is
-to shift your asset allocation one that's more buoyant. There is a
-growing consumer in the developing world now, which people are unaware
-of; it's a blunder.
-
-The total share of the market is:
-
-The US accounts to be 52.6 percent, evolving to 37.8 percent and
-emerging markets are 9.7 percent. This gives a clear picture that to
-match the market you need to increase your international allotment.
-
-Go for long-term bonds:
-
-Try using a time-based motive for investing in long-term bonds. Its
-obvious that long-term bonds have higher risks as it's harder to predict
-the future of the market. With all these ways, money can be brought to a
-profitable extent that will uplift the profit. Buying and selling of
-instruments can be tough and painless at the same time. It is advisable
-that as a market is adjustable, the only thing which works is to keep an
-eye on the working of the market. The person who keeps an acute eye can
-build the profitability level. [Secured
-Options](http://secured-options.weebly.com/)
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)

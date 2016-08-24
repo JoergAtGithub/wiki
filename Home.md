@@ -119,11 +119,6 @@ please fix it.
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
 
-### Code Reference
-
-  - [Performance improvements](Performance%20improvements)
-  - [Threads](Threads)
-
 5 Ways to Make Money in Commodities
 
 To be part of a race where you need to incur money in products similar
@@ -183,4 +178,4 @@ instruments can be tough and painless at the same time. It is advisable
 that as a market is adjustable, the only thing which works is to keep an
 eye on the working of the market. The person who keeps an acute eye can
 build the profitability level. [Secured
-Options](http://secured-options.weebly.com//viewvc/mixxx/)
+Options](http://secured-options.weebly.com/)

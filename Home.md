@@ -124,14 +124,6 @@ please fix it.
   - [Performance improvements](Performance%20improvements)
   - [Threads](Threads)
 
-### Archives
-
-  - [Developer meeting archives](meetings%20archive)
-  - Bazaar (legacy) code browsing on
-    [Launchpad](https://code.launchpad.net/mixxx)
-  - SVN (even more legacy) code browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
-
 5 Ways to Make Money in Commodities
 
 To be part of a race where you need to incur money in products similar
@@ -190,4 +182,5 @@ profitable extent that will uplift the profit. Buying and selling of
 instruments can be tough and painless at the same time. It is advisable
 that as a market is adjustable, the only thing which works is to keep an
 eye on the working of the market. The person who keeps an acute eye can
-build the profitability level. <http://secured-options.weebly.com/>
+build the profitability level. [Secured
+Options](http://secured-options.weebly.com//viewvc/mixxx/)

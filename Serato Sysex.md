@@ -21,8 +21,13 @@ which means:
   - F0 ⇒ Begin SysEx Message
   - 00 20 7F ⇒ it's the Serato Manufacturer according to
     <https://www.midi.org/specifications/item/manufacturer-id-numbers>
-  - 03 01 ⇒ The Serato's proprietary message
+  - 03 01 ⇒ The Serato's proprietary message (controller dump)
   - F7 ⇒ End of SysEx Message
+
+After receiving this message, the controller sends back a midi message
+for each item (knob, slider, ...) sending its current value. Using this
+after the input connections has been done matches the mixxx controls to
+the controls on the controller.
 
 So if you are mapping a serato-certified controller, you can try to send
 this sysex message by adding this declaration at the top of your

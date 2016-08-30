@@ -125,11 +125,13 @@ This object should have properties called "init" and "shutdown" defined
 and assigned to functions (in JavaScript, object methods are just
 properties whose value is a function). They can be empty, but are useful
 for putting controllers into known states and/or lighting certain LEDs
-before operation begins or the program exits. A few controllers can be
+before operation begins or the program exits. Some controllers can be
 sent a MIDI message that tells the controller to send back MIDI messages
 for the position of the controls on the device. If your controller can
 do this, it is helpful to send that message from the init function so
-the state of Mixxx's controls match the hardware when Mixxx opens.
+the state of Mixxx's controls match the hardware when Mixxx opens. For
+controllers designed for Serato, this can be done by sending the [Serato
+sysex](Serato%20sysex) message.
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
@@ -345,11 +347,6 @@ should be available from the controller manufacturer. This is likely in
 a document on the product page for your controller on the manufacturer's
 website. If it is not in a separate document, it is likely at the end of
 the manual.
-
-**Tip:** If you are mapping a serato certified controller, you can try
-to use the [Serato System Exclusive](serato_sysex) dump message to force
-the controller to dump the value of all items on the control surface
-(knobs, sliders, ...).
 
 **Tip:** [Store commonly used MIDI values in JS
 objects](#storing-commonly-used-MIDI-codes-in-JS-objects)

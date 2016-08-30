@@ -1,4 +1,4 @@
-# Serato System Exclusive Midi Message
+# Serato System Exclusive Midi Messages
 
 According to the [list of MIDI manufacturer
 IDs](https://www.midi.org/specifications/item/manufacturer-id-numbers),

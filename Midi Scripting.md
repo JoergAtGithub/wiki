@@ -346,6 +346,11 @@ a document on the product page for your controller on the manufacturer's
 website. If it is not in a separate document, it is likely at the end of
 the manual.
 
+**Tip:** If you are mapping a serato certified controller, you can try
+to use the [Serato System Exclusive](serato_sysex) dump message to force
+the controller to dump the value of all items on the control surface
+(knobs, sliders, ...).
+
 **Tip:** [Store commonly used MIDI values in JS
 objects](#storing-commonly-used-MIDI-codes-in-JS-objects)
 

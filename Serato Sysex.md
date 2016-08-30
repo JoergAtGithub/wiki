@@ -8,6 +8,11 @@ Controller manufacturers and Serato use this manufacturer ID to exchange
 sysex messages from the computer to the controller to trigger some
 functions of the controller.
 
+Currently, the only identified System Exclusive MIDI message using this
+ID is described below
+
+#### Controller status dump
+
 It appears that serato sends the `F0 00 20 7F 03 01 F7` sysex message to
 the serato certified controllers to ask them to send back the status of
 each item on the control surface (the value of all knobs and sliders)

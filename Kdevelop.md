@@ -11,50 +11,61 @@ build process and Protobuf that are \#included by the .cpp files in
 Mixxx's src directory. If KDevelop can't find those, it won't be able to
 parse the structure of Mixxx.
 
+## Configure SCons
+
 In KDevelop, go to Project \> Open/import project. Select the directory
 where the Mixxx source code is (not the "src" directory, the one above
 that; the root of the git repository). Press Next and select Custom
 BuildSystem in the Project manager dropdown. On the left side of
 KDevelop, click Projects. Right click on your project and select Open
-Configuration. Select Language Support on the left of the dialog and
-click the Batch edit button to edit the list of \#include paths.
-KDevelop normally detects the \#include paths from the build system, but
-it is not able to do this with SCons. There are some paths that must be
-included in the Mixxx source tree; these must be absolute paths, not
-relative to the project root.
+Configuration.
 
-Paste this into the Batch edit dialog, replacing /home/be/sw/mixxx with
+## Specify \#include paths
+
+In the Custom BuildSystem pane, under the Build Tools section, type
+`scons` in the Executable field and add your [scons
+arguments](compiling%20on%20linux#compile%20and%20install) to the
+Arguments field (this should at least include your prefix argument).
+This will allow you to build Mixxx easily within KDevelop. Building
+within KDevelop allows you to click on compile errors and warnings to
+open the corresponding source code file at the place where the
+error/warning is pointing to.
+
+Select the Language Support pane and click the Batch edit button to edit
+the list of \#include paths. KDevelop normally detects the \#include
+paths from the build system, but it is not able to do this with SCons.
+There are some paths that must be included in the Mixxx source tree;
+these must be absolute paths, not relative to the project root.
+
+Paste this into the Batch edit dialog, replacing `[MIXXX LOCATION]` with
 wherever you have your Mixxx source tree. The version numbers for the
 libraries in mixxx/lib are for those included with Mixxx 2.1. If they
 have been updated, please update this wiki page. The paths in /usr are
 for those on Fedora 24. They may need some adjustment for your
 distribution.
 
-    /home/be/sw/mixxx/src
-    /home/be/sw/mixxx/vamp-plugins
-    /home/be/sw/mixxx/lin64_build
-    /home/be/sw/mixxx/lib
-    /home/be/sw/mixxx/lib/benchmark/include
-    /home/be/sw/mixxx/lib/fidlib-0.9.10
-    /home/be/sw/mixxx/lib/gtest-1.7.0/include
-    /home/be/sw/mixxx/lib/gmock-1.7.0
-    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest
-    /home/be/sw/mixxx/lib/gmock-1.7.0/include
-    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest/include
-    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest
-    /home/be/sw/mixxx/lib/gtest-1.7.0/include/gtest
-    /home/be/sw/mixxx/lib/hidapi-0.8.0-rc1/hidapi
-    /home/be/sw/mixxx/lib/libebur128-1.1.0/ebur128
-    /home/be/sw/mixxx/lib/portaudio
-    /home/be/sw/mixxx/lib/replaygain
-    /home/be/sw/mixxx/lib/reverb
-    /home/be/sw/mixxx/lib/soundtouch-1.9.2
-    /home/be/sw/mixxx/lib/qtscript-bytearray
-    /home/be/sw/mixxx/lib/vamp-2.6
-    /home/be/sw/mixxx/lib/xwax
+    [MIXXX LOCATION]/lib/benchmark/include
+    [MIXXX LOCATION]/lib/fidlib-0.9.10
+    [MIXXX LOCATION]/lib/gtest-1.7.0/include
+    [MIXXX LOCATION]/lib/gmock-1.7.0
+    [MIXXX LOCATION]/lib/gmock-1.7.0/gtest
+    [MIXXX LOCATION]/lib/gmock-1.7.0/gtest/include
+    [MIXXX LOCATION]/lib/gmock-1.7.0/include
+    [MIXXX LOCATION]/lib/gtest-1.7.0/include/gtest
+    [MIXXX LOCATION]/lib/hidapi-0.8.0-rc1/hidapi
+    [MIXXX LOCATION]/lib/libebur128-1.1.0/ebur128
+    [MIXXX LOCATION]/lib/portaudio
+    [MIXXX LOCATION]/lib/qtscript-bytearray
+    [MIXXX LOCATION]/lib/replaygain
+    [MIXXX LOCATION]/lib/reverb
+    [MIXXX LOCATION]/lib/soundtouch-1.9.2
+    [MIXXX LOCATION]/lib/vamp-2.6
+    [MIXXX LOCATION]/lib/xwax
+    [MIXXX LOCATION]/lin64_build
+    [MIXXX LOCATION]/src
+    [MIXXX LOCATION]/vamp-plugins
     /usr/include
-    /usr/include/c++
-    /usr/include/c++/v1
+    /usr/include/ffmpeg
     /usr/include/glib-2.0
     /usr/lib64/glib-2.0/include
     /usr/include/taglib

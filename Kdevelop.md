@@ -37,12 +37,12 @@ paths from the build system, but it is not able to do this with SCons.
 There are some paths that must be included in the Mixxx source tree;
 these must be absolute paths, not relative to the project root.
 
-Paste this into the Batch edit dialog, replacing `[MIXXX LOCATION]` with
-wherever you have your Mixxx source tree. The version numbers for the
-libraries in mixxx/lib are for those included with Mixxx 2.1. If they
-have been updated, please update this wiki page. The paths in /usr are
-for those on Fedora 24. They may need some adjustment for your
-distribution.
+Copy and paste the list below into the Batch edit dialog, replacing
+`[MIXXX LOCATION]` with wherever you have your Mixxx source tree. The
+version numbers for the libraries in mixxx/lib are for those included
+with Mixxx 2.1. If they have been updated, please update this wiki page.
+The paths in /usr are for those on Fedora 24. They may need some
+adjustment for your distribution.
 
     [MIXXX LOCATION]/lib/benchmark/include
     [MIXXX LOCATION]/lib/fidlib-0.9.10

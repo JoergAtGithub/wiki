@@ -11,8 +11,6 @@ build process and Protobuf that are \#included by the .cpp files in
 Mixxx's src directory. If KDevelop can't find those, it won't be able to
 parse the structure of Mixxx.
 
-## Configure SCons
-
 In KDevelop, go to Project \> Open/import project. Select the directory
 where the Mixxx source code is (not the "src" directory, the one above
 that; the root of the git repository). Press Next and select Custom
@@ -20,7 +18,7 @@ BuildSystem in the Project manager dropdown. On the left side of
 KDevelop, click Projects. Right click on your project and select Open
 Configuration.
 
-## Specify \#include paths
+## Configure SCons
 
 In the Custom BuildSystem pane, under the Build Tools section, type
 `scons` in the Executable field and add your [scons
@@ -30,6 +28,8 @@ This will allow you to build Mixxx easily within KDevelop. Building
 within KDevelop allows you to click on compile errors and warnings to
 open the corresponding source code file at the place where the
 error/warning is pointing to.
+
+## Specify \#include paths
 
 Select the Language Support pane and click the Batch edit button to edit
 the list of \#include paths. KDevelop normally detects the \#include

@@ -24,28 +24,53 @@ included in the Mixxx source tree; these must be absolute paths, not
 relative to the project root.
 
 Paste this into the Batch edit dialog, replacing /home/be/sw/mixxx with
-wherever you have your Mixxx source tree. /home/be/sw/mixxx/src
-/home/be/sw/mixxx/vamp-plugins /home/be/sw/mixxx/lin64\_build
-/home/be/sw/mixxx/lib /home/be/sw/mixxx/lib/reverb
-/home/be/sw/mixxx/lib/replaygain /home/be/sw/mixxx/lib/fidlib-0.9.10
-/home/be/sw/mixxx/lib/gtest-1.7.0/include
-/home/be/sw/mixxx/lib/gmock-1.7.0
-/home/be/sw/mixxx/lib/gmock-1.7.0/gtest
-/home/be/sw/mixxx/lib/gmock-1.7.0/include
-/home/be/sw/mixxx/lib/gmock-1.7.0/gtest/include
-/home/be/sw/mixxx/lib/gmock-1.7.0/gtest
-/home/be/sw/mixxx/lib/gtest-1.7.0/include/gtest
-/home/be/sw/mixxx/lib/hidapi-0.8.0-rc1/hidapi
-/home/be/sw/mixxx/lib/libebur128-1.1.0/ebur128
-/home/be/sw/mixxx/lib/portaudio /home/be/sw/mixxx/lib/soundtouch-1.9.2
-/home/be/sw/mixxx/lib/qtscript-bytearray /home/be/sw/mixxx/lib/vamp-2.6
-/home/be/sw/mixxx/lib/xwax /usr/include /usr/include/c++
-/usr/include/c++/v1 /usr/include/glib-2.0 /usr/include/Qt3Support
-/usr/include/QtXmlPatterns /usr/include/QtNetwork /usr/include/QtScript
-/usr/include/QtCore /usr/include/QtXml /usr/include/QtTest
-/usr/include/QtWebKit /usr/include/QtSvg /usr/include/QtDesigner
-/usr/include/QtDeclarative /usr/include/QtOpenGL /usr/include/QtHelp
-/usr/include/QtScriptTools /usr/include/QtUiTools
-/usr/include/QtMultimedia /usr/include/libupower-glib
-/usr/include/taglib /usr/include/QtGui /usr/include/Qt
-/usr/include/QtSql /usr/include/QtDBus /usr/lib/scons/SCons
+wherever you have your Mixxx source tree.
+
+    /home/be/sw/mixxx/src
+    /home/be/sw/mixxx/vamp-plugins
+    /home/be/sw/mixxx/lin64_build
+    /home/be/sw/mixxx/lib
+    /home/be/sw/mixxx/lib/reverb
+    /home/be/sw/mixxx/lib/replaygain
+    /home/be/sw/mixxx/lib/fidlib-0.9.10
+    /home/be/sw/mixxx/lib/gtest-1.7.0/include
+    /home/be/sw/mixxx/lib/gmock-1.7.0
+    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest
+    /home/be/sw/mixxx/lib/gmock-1.7.0/include
+    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest/include
+    /home/be/sw/mixxx/lib/gmock-1.7.0/gtest
+    /home/be/sw/mixxx/lib/gtest-1.7.0/include/gtest
+    /home/be/sw/mixxx/lib/hidapi-0.8.0-rc1/hidapi
+    /home/be/sw/mixxx/lib/libebur128-1.1.0/ebur128
+    /home/be/sw/mixxx/lib/portaudio
+    /home/be/sw/mixxx/lib/soundtouch-1.9.2
+    /home/be/sw/mixxx/lib/qtscript-bytearray
+    /home/be/sw/mixxx/lib/vamp-2.6
+    /home/be/sw/mixxx/lib/xwax
+    /usr/include
+    /usr/include/c++
+    /usr/include/c++/v1
+    /usr/include/glib-2.0
+    /usr/include/Qt3Support
+    /usr/include/QtXmlPatterns
+    /usr/include/QtNetwork
+    /usr/include/QtScript
+    /usr/include/QtCore
+    /usr/include/QtXml
+    /usr/include/QtTest
+    /usr/include/QtWebKit
+    /usr/include/QtSvg
+    /usr/include/QtDesigner
+    /usr/include/QtDeclarative
+    /usr/include/QtOpenGL
+    /usr/include/QtHelp
+    /usr/include/QtScriptTools
+    /usr/include/QtUiTools
+    /usr/include/QtMultimedia
+    /usr/include/libupower-glib
+    /usr/include/taglib
+    /usr/include/QtGui
+    /usr/include/Qt
+    /usr/include/QtSql
+    /usr/include/QtDBus
+    /usr/lib/scons/SCons

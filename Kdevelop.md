@@ -24,14 +24,16 @@ included in the Mixxx source tree; these must be absolute paths, not
 relative to the project root.
 
 Paste this into the Batch edit dialog, replacing /home/be/sw/mixxx with
-wherever you have your Mixxx source tree.
+wherever you have your Mixxx source tree. The version numbers for the
+libraries in mixxx/lib are for those included with Mixxx 2.1. If they
+have been updated, please update this wiki page. The paths in /usr are
+for those on Fedora 24. They may need some adjustment for your
+distribution.
 
     /home/be/sw/mixxx/src
     /home/be/sw/mixxx/vamp-plugins
     /home/be/sw/mixxx/lin64_build
     /home/be/sw/mixxx/lib
-    /home/be/sw/mixxx/lib/reverb
-    /home/be/sw/mixxx/lib/replaygain
     /home/be/sw/mixxx/lib/fidlib-0.9.10
     /home/be/sw/mixxx/lib/gtest-1.7.0/include
     /home/be/sw/mixxx/lib/gmock-1.7.0
@@ -43,6 +45,8 @@ wherever you have your Mixxx source tree.
     /home/be/sw/mixxx/lib/hidapi-0.8.0-rc1/hidapi
     /home/be/sw/mixxx/lib/libebur128-1.1.0/ebur128
     /home/be/sw/mixxx/lib/portaudio
+    /home/be/sw/mixxx/lib/replaygain
+    /home/be/sw/mixxx/lib/reverb
     /home/be/sw/mixxx/lib/soundtouch-1.9.2
     /home/be/sw/mixxx/lib/qtscript-bytearray
     /home/be/sw/mixxx/lib/vamp-2.6
@@ -51,26 +55,26 @@ wherever you have your Mixxx source tree.
     /usr/include/c++
     /usr/include/c++/v1
     /usr/include/glib-2.0
+    /usr/include/taglib
+    /usr/include/libupower-glib
+    /usr/include/Qt
     /usr/include/Qt3Support
-    /usr/include/QtXmlPatterns
-    /usr/include/QtNetwork
-    /usr/include/QtScript
     /usr/include/QtCore
+    /usr/include/QtDBus
+    /usr/include/QtDeclarative
+    /usr/include/QtDesigner
+    /usr/include/QtGui
+    /usr/include/QtHelp
+    /usr/include/QtMultimedia
+    /usr/include/QtNetwork
+    /usr/include/QtOpenGL
+    /usr/include/QtScript
+    /usr/include/QtScriptTools
+    /usr/include/QtSql
+    /usr/include/QtSvg
     /usr/include/QtXml
     /usr/include/QtTest
-    /usr/include/QtWebKit
-    /usr/include/QtSvg
-    /usr/include/QtDesigner
-    /usr/include/QtDeclarative
-    /usr/include/QtOpenGL
-    /usr/include/QtHelp
-    /usr/include/QtScriptTools
     /usr/include/QtUiTools
-    /usr/include/QtMultimedia
-    /usr/include/libupower-glib
-    /usr/include/taglib
-    /usr/include/QtGui
-    /usr/include/Qt
-    /usr/include/QtSql
-    /usr/include/QtDBus
+    /usr/include/QtWebKit
+    /usr/include/QtXmlPatterns
     /usr/lib/scons/SCons

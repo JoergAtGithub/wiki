@@ -37,7 +37,8 @@ files, it can be difficult to understand how the code fits together.
 ## Using IDEs
 
   - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
-  - Setup [QtCreator](QtCreator) for developing on Mixxx
+  - Set up [KDevelop](KDevelop)
+  - Set up [QtCreator](QtCreator) for developing on Mixxx
 
 You can also use [Qt Creator](http://qt-project.org/downloads) for Mixxx
 development by creating a Qt project file for the source files. You can

@@ -45,8 +45,8 @@ The paths in /usr are for those on Fedora 24. They may need some
 adjustment for your distribution.
 
 When you are done, click Apply. KDevelop will parse the entire Mixxx
-source tree. This could take several hours, so you may want to let your
-computer do this overnight.
+source tree. This could take several hours the first time, so you may
+want to let your computer do this overnight.
 
     [MIXXX LOCATION]/lib/benchmark/include
     [MIXXX LOCATION]/lib/fidlib-0.9.10

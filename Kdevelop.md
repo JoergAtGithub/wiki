@@ -34,6 +34,7 @@ distribution.
     /home/be/sw/mixxx/vamp-plugins
     /home/be/sw/mixxx/lin64_build
     /home/be/sw/mixxx/lib
+    /home/be/sw/mixxx/lib/benchmark/include
     /home/be/sw/mixxx/lib/fidlib-0.9.10
     /home/be/sw/mixxx/lib/gtest-1.7.0/include
     /home/be/sw/mixxx/lib/gmock-1.7.0
@@ -55,6 +56,7 @@ distribution.
     /usr/include/c++
     /usr/include/c++/v1
     /usr/include/glib-2.0
+    /usr/lib64/glib-2.0/include
     /usr/include/taglib
     /usr/include/libupower-glib
     /usr/include/Qt

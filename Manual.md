@@ -320,7 +320,7 @@ FAQ](http://jackaudio.org/faq) is recommended reading, especially the
 section on "How should I configure my Linux 2.6 Operating System?".
 Other useful resources are the Linux Realtime guide and [Gentoo's
 documentation on the
-subject](http://www.gentoo.org/proj/en/desktop/sound/realtime.xml).
+subject](https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications).
 
 The first thing to try if using ALSA is to set your Master output
 hardware to just "default" instead of specific hardware. (This made a

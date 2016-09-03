@@ -160,10 +160,7 @@ deck selects the next effect.
 
 Press this 4 or more times on beat to manually enter a new BPM. The
 software will ignore the track's BPM and follow your manually entered
-tempo. **Configurable option:**  
-If [TapExpandLibrary](#configuration-options) is set to "true", the TAP
-button will expand the Library view and Shift TAP will trigger TAP
-function
+tempo.
 
 ### 22\. Wheel button
 

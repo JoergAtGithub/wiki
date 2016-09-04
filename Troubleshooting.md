@@ -8,6 +8,15 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
+## A deck randomly stops playing
+
+There is currently a known bug with decoding M4A files on Windows in
+Mixxx 2.0 that can cause a deck to seemingly randomly stop playing until
+Mixxx is restarted. If you can help resolve this bug by developing or
+testing on Windows, please contribute\! See the following bug reports:
+<https://bugs.launchpad.net/mixxx/+bug/1490580>
+<https://bugs.launchpad.net/mixxx/+bug/1519472>
+
 ## I can't plug in my headphones and speakers at the same time
 
 This requires either a sound card with 4 (mono) output channels,

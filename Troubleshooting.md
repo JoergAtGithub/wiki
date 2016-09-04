@@ -10,7 +10,7 @@ available on [the download page](http://mixxx.org/download).
 
 ## A deck randomly stops playing
 
-There is currently a known bug with decoding M4A files on Windows in
+There is currently a known bug with decoding M4A/AAC files on Windows in
 Mixxx 2.0 that can cause a deck to seemingly randomly stop playing until
 Mixxx is restarted. If you can help resolve this bug by developing or
 testing on Windows, please contribute\! See the following bug reports:

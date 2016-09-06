@@ -46,7 +46,11 @@ adjustment for your distribution.
 
 When you are done, click Apply. KDevelop will parse the entire Mixxx
 source tree. This could take several hours the first time, so you may
-want to let your computer do this overnight.
+want to let your computer do this overnight. If your computer has \<=
+4GB of memory, make sure you have a swap partition or swap file enabled.
+The parser can take up to 2.5 GB of memory. If your system runs out of
+memory, your system will hang in the middle of the scan until Linux
+kills the process.
 
     [MIXXX LOCATION]/lib/benchmark/include
     [MIXXX LOCATION]/lib/fidlib-0.9.10

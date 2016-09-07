@@ -55,6 +55,7 @@ a DJ program.
     explained](http://tuxradar.com/content/how-it-works-linux-audio-explained):
     explains the relationships between ALSA, OSS, FFADO, JACK,
     PulseAudio, GStreamer, Phonon, and Xine
+  - [Jack vs Pulseaudio](http://unix.stackexchange.com/a/181625)
 
 ### Windows
 

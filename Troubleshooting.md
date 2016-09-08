@@ -220,9 +220,10 @@ back in.
 If you still cannot activate your controller, check that the udev rule
 was installed in /lib/udev/rules.d/ or /etc/udev/rules.d/ . The file
 should be called something like mixxx.usb.rules or 40-mixxx-usb.rules.
-It is installed with the Ubuntu PPA and when installing Mixxx from
-source (if you have write access to /etc/udev/rules.d), however packages
-for other distributions may not install it correctly. If that file is
+It is installed with the Ubuntu PPA and RPMFusion package as well as
+when installing Mixxx from source (if you have write access to
+/etc/udev/rules.d when running `scons install`), however packages for
+other distributions may not install it correctly. If that file is
 missing, save [the udev
 rule](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
 in /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root or

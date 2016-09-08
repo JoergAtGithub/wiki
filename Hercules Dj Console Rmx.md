@@ -5,52 +5,22 @@
   - [Manufacturer's product
     page](http://www.hercules.com/us/DJ-Music/bdd/p/62/dj-console-rmx/)
 
-The Hercules DJ Console RMX is a USB MIDI controller with a built in
-sound card. It is compatible with Mixxx versions 1.6.1+herc and later.
-Both audio and MIDI works in Linux (from kernel \~2.6.27+), Windows (XP,
-Vista, 7), and MAC OS X (10.4.11 (Tiger)/ 10.5.x (Leopard)/ 10.6.x (Snow
-Leopard) 32-bit). It has been discontinued in favor of the [Hercules DJ
-Console RMX 2](Hercules%20DJ%20Console%20RMX%202) which is USB MIDI
-class compliant and requires no special driver.
+The Hercules DJ Console RMX is a USB controller with a built in sound
+card. It is a class compliant USB Audio and HID device. Older versions
+of Mixxx that did not support HID required using Hercules' MIDI driver,
+but it is now recommend to not use the Hercules driver, whether you use
+Windows, Mac OS X, or GNU/Linux. If you have it installed, it is
+recommended to uninstall the driver and upgrade to the [latest version
+of Mixxx](http://mixxx.org/download) if you have not already.
 
 ## Audio
 
 The sound card has 4 inputs and 4 outputs (2 stereo in/out). The inputs
-are switchable between line-in and phono, so you can connect both
-cd-players and turntables on the inputs. The inputs require a high input
+are switchable between line-in and phono, so you can connect both CD
+players and turntables on the inputs. The inputs require a high input
 signal (\~10mV+) for turntables if you want to record audio or mix it to
-the output. Time-coded vinyls, for Vinyl Control, should work ok with
+the output. Time-coded vinyls, for Vinyl Control, should work okay with
 lower input signal.
-
-### Linux
-
-The audio device on the RMX is USB-audio class compliant and works well
-with the ordinary ALSA [USB-audio
-driver](http://www.alsa-project.org/main/index.php/Matrix:Module-usb-audio).
-This should work out of the box on most distributions.
-
-### MAC OS / Windows
-
-Drivers for MAC OS X and Windows can be found on [Hercules support
-page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
-Same package for both Audio and MIDI.
-
-## MIDI
-
-The midi device on the RMX is NOT USB-midi class compliant. For that
-reason it requires specific drivers to be working on each OS.
-
-### Linux
-
-Hercules has released a common MIDI-driver for their DJ controllers.
-Read more on the page for [Hercules Linux kernel
-module](Hercules%20Linux%20kernel%20module)
-
-### MAC OS / Windows
-
-Drivers for MAC OS X and Windows can be found on [Hercules support
-page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=215&cid=1).
-Same package for both Audio and MIDI.
 
 ## MIDI Mappings
 

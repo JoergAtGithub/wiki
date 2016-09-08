@@ -77,6 +77,7 @@ the process.
     /usr/lib64/glib-2.0/include
     /usr/include/taglib
     /usr/include/libupower-glib
+    /usr/include/libusb-1.0
     /usr/include/Qt
     /usr/include/Qt3Support
     /usr/include/QtCore

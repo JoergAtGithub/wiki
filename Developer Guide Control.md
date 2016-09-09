@@ -12,10 +12,7 @@ interact with Mixxx's mixing engine and other subsystems.
 
 The first version (present since the very beginnings of Mixxx) of the
 control system is limited to only double-precision floating point
-values. In the future we would like to replace the control system with
-one that can support any type based on Qt's `QVariant` data type. For
-more information on this project, see the design document: [Revamped
-Control System](revamped_control_system).
+values.
 
 # Control Naming
 
@@ -38,14 +35,18 @@ Examples:
     value of 1 indicates that the virtual button is down while setting
     it to 0 indicates that the virtual button is released.
 
-For a mostly complete list of controls that exist, see the
-[MixxxControls](mixxxcontrols) page.
+For a mostly complete list of controls which are intended to use in
+skins or controller mappings, see the [MixxxControls](mixxxcontrols)
+page. For a complete list, which contains also unstable internal
+controls, start Mixxx from the command line using `mixxx --developer`.
+Now you can open the list by the menu: "Developer" -\> "Developer Tools"
+here you can also watch and edit the current values.
 
 # Creating Controls
 
-To create a control you must instantiate a `ControlObject`. Once you've
-done this, you've created a global control that is accessible by the
-`ConfigKey` you name it with.
+To create a new control you must instantiate a `ControlObject`. Once
+you've done this, you've created a global control that is accessible by
+the `ConfigKey` you name it with.
 
 As an example, let's say we want to create a control that keeps track of
 whether the microphone is enabled:
@@ -62,44 +63,36 @@ pMicEnabled->set(0.0);
 ```
 
 Once you have created a `ControlObject`, it is inserted into a global
-registry of controls and any other Mixxx thread can look it up by name.
+registry of controls and any other Mixxx thread can look it up by name
+using a `ControlProxy`.
 
 For example, if you wanted to create a GUI widget that looked up whether
 the microphone was enabled or not, you would do this:
 
 ``` c++
-ConfigKey micEnabledKey = ConfigKey("[Microphone]", "enabled");
-
-// Lookup the control by ConfigKey in the global registry. Returns NULL if control does not exist!
-ControlObject* pMicEnabledCO = ControlObject::getControl(micEnabledKey);
-
-// If the mic-enabled control exists...
-if (pMicEnabled != NULL) {
-    // You could call pMicEnabledCO->get() to get the controls value but this is not thread safe.
-    // Instead, wrap it the ControlObject in a ControlObjectThread
-    ControlObjectThread* pMicEnabledCOT = new ControlObjectThread(pMicEnabledCO)
-    bool mic_enabled = pMicEnabledCOT->get() > 0.0;
+ControlProxy* pMicEnabled = new ControlProxy("[Microphone]", "enabled");
+bool mic_enabled = pMicEnabled->toBool();
     
-    if (mic_enabled) {
-      // draw a red light indicating the mic is enabled
-    } else {
-      // draw a dim off light indicating the mic is disabled
-    }
+if (mic_enabled) {
+    // draw a red light indicating the mic is enabled
+} else {
+   // draw a dim off light indicating the mic is disabled
 }
+
 ```
 
-Note that we used a `ControlObjectThread` to wrap the `ControlObject` we
+Note that we used a `ControlProxy` to access the `ControlObject` we
 looked up from the control system. This is because we are not the
-original "owner" of this `ControlObject`. Using a `ControlObjectThread`
-allows you to safely access other `ControlObject`s from other places
-within Mixxx.
+original "owner" of this `ControlObject`. Using a `ControlProxy` allows
+you to safely access other `ControlObject`s from other places within
+Mixxx.
 
 To change the microphone-enabled value from elsewhere in Mixxx, it's as
 simple as this:
 
 ``` c++
 // Disable the microphone from elsewhere in Mixxx.
-pMicEnabledCOT->slotSet(0.0);
+pMicEnabled->set(0.0);
 ```
 
 # Types of Controls
@@ -185,8 +178,8 @@ certain controls created elsewhere in Mixxx, you may want to
 automatically take action when one of them changes.
 
 If you are the creator of a control, i.e. you are using the raw
-`ControlObject` and not a `ControlObjectThread` then you can listen to
-changes in your control by connecting to the `ControlObject`'s
+`ControlObject` and not a `ControlProxy` then you can listen to changes
+in your control by connecting to the `ControlObject`'s
 `valueChanged(double)` signal.
 
 ``` c++
@@ -224,13 +217,12 @@ infinite loop of setting and reacting to your `ControlObject`. For this
 reason, there are two different types of value-changed signals.
 
 Going back to the microphone-enabled GUI widget example, if you are
-using a `ControlObjectThread`, you can listen to changes in the control
-by doing the following:
+using a `ControlProxy`, you can listen to changes in the control by
+doing the following:
 
 ``` c++
-ControlObjectThread* pMicEnabledCOT = new ControlObjectThread(ControlObject::getControl(ConfigKey("[Microphone]", "enabled")));
-connect(pMicEnabledCOT, SIGNAL(valueChanged(double)),
-        this, SLOT(slotMicrophoneEnabledChanged(double v)));
+ControlObjectThread* pMicEnabled = new ControlProxy("[Microphone]", "enabled", this);
+pMicEnabled->connectValueChanged(SLOT(slotMicrophoneEnabledChanged(double v)));
   
 // In your slot, handle the changes to the [Microphone],enabled control
 void MicrophoneWidget::slotMicrophoneEnabledChanged(double v) {
@@ -247,22 +239,7 @@ void MicrophoneWidget::slotMicrophoneEnabledChanged(double v) {
 
 # Deleting Controls
 
-In general once you create a control you should not delete it until
-Mixxx shuts down. Since creating a control is like setting up an API
-call, deleting it may cause parts of Mixxx that use your control to
-break.
-
-# ControlObjectThread vs ControlObjectThreadMain vs ControlObjectThreadWidget
-
-`ControlObjectThread`, `ControlObjectThreadMain` and
-`ControlObjectThreadWidget` are the three different types of
-`ControlObject` "proxies". These proxies allow you to safely access a
-`ControlObject` across different threads. In general, you should use
-this rule of thumb:
-
-  - If your code runs in the Main/GUI thread, use a
-    `ControlObjectThreadMain`
-  - If your code runs in a non-Main/GUI thread, use a
-    `ControlObjectThread`
-  - Never use a `ControlObjectThreadWidget` -- it is an implementation
-    detail of the GUI/Widget system.
+Be sure you you delete all ControlObjects after they are not used
+anymore to avoid memory leaks. In general once you create a control you
+should not delete it until Mixxx shuts down. Since creating a control is
+like setting up an API call.

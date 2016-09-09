@@ -49,6 +49,9 @@ Ask your questions or discuss your ideas at
   - or at the Mixxx IRC Channel: \#mixxx on
     [Freenode](http://freenode.net/)
 
+Some notes about the Mixxx Control interface:
+[developer\_guide\_control](developer_guide_control)
+
 ## Fix it\!
 
 Happy coding :-)

@@ -38,9 +38,9 @@ We strongly prefer that any new code classes have tests written for them
 as well in order to consider the code for inclusion into Mixxx
 
 Mixxx uses the [Google C++ Testing
-Framework](http://code.google.com/p/googletest/). If it's new to you,
+Framework](https://github.com/google/googletest). If it's new to you,
 [read the
-primer](http://code.google.com/p/googletest/wiki/Primer#Basic_Concepts).
+primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md).
 
 Make sure to read [this section of the Advanced testing
 guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)

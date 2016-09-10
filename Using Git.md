@@ -240,6 +240,12 @@ opened.
 
 # Keeping Track of Updates from Other Developers
 
+## Testing pull requests
+
+See [these instructions](https://gist.github.com/piscisaureus/3342247).
+
+## Testing other developer's unmerged branches
+
 Sometimes there may be another developer you would like to keep track of
 or regularly merge updates from.
 

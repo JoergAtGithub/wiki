@@ -3,7 +3,7 @@
 [[/media/hardware/hercules_dj_console_rmx.jpg|]]
 
   - [Manufacturer's product
-    page](http://www.hercules.com/us/DJ-Music/bdd/p/62/dj-console-rmx/)
+    page](http://www.hercules.com/us/legacy/bdd/p/62/dj-console-rmx/)
 
 The Hercules DJ Console RMX is a USB controller with a built in sound
 card. It is a class compliant USB Audio and HID device. Older versions

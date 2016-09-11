@@ -39,8 +39,10 @@ as well in order to consider the code for inclusion into Mixxx
 
 Mixxx uses the [Google C++ Testing
 Framework](https://github.com/google/googletest). If it's new to you,
-[read the
-primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md).
+read the [Google Test
+primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)
+and [Google Mock
+primer](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md).
 
 Make sure to read [this section of the Advanced testing
 guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)

@@ -78,7 +78,7 @@ priority than your onboard sound card.
 To set IRQ priorities manually, see [this
 guide](http://subversion.ffado.org/wiki/IrqPriorities).
 
-### Disable CPU frequency scaling or use the 'performance' mode
+### Disable CPU frequency scaling and using the performance governor
 
 CPU frequency scaling is a main cause of Mixxx skipping on laptops. You
 can disable it by running this shell script as root:

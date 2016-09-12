@@ -80,12 +80,14 @@ guide](http://subversion.ffado.org/wiki/IrqPriorities).
 
 ### Disable CPU frequency scaling or use the 'performance' mode
 
-CPU Frequency Scaling is a main cause of Mixxx skipping on laptops. (Do
-`ps aux | grep cpufreq` and kill any processes you find.) -- Actually it
-is better to remove the kernel modules, do \`lsmod | grep freq\` and
-then remove each of the modules using rmmod, note that if you are using
-a notebook it will burn through battery **much** quicker when doing
-this.
+CPU frequency scaling is a main cause of Mixxx skipping on laptops. You
+can disable it by running this shell script as root:
+
+    cd /sys/devices/system/cpu
+    for i in cpu[0-9]*
+    do
+      echo performance >$i/cpufreq/scaling_governor
+    done
 
 ### Disable chipcard2
 

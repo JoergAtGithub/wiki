@@ -83,10 +83,8 @@ guide](http://subversion.ffado.org/wiki/IrqPriorities).
 CPU frequency scaling is a main cause of Mixxx skipping on laptops. You
 can disable it by running this shell script as root:
 
-    cd /sys/devices/system/cpu
-    for i in cpu[0-9]*
-    do
-      echo performance >$i/cpufreq/scaling_governor
+    for i in /sys/devices/system/cpu/cpu[0-9]*; do
+      echo performance >$i/cpufreq/scaling_governor;
     done
 
 ### Disable chipcard2

@@ -253,6 +253,7 @@ Mixxx supports the following audio file formats:
 
   - FLAC
   - OGG
+  - Opus
   - MP3
   - WAV
   - AIFF

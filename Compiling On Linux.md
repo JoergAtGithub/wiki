@@ -38,7 +38,7 @@ Then run:
     su
     [Enter the password for the user "root" at the prompt]
     dnf groupinstall "Development Tools"
-    dnf install gcc-c++
+    dnf install gcc-c++ upower-devel
     dnf builddep mixxx
 
 ### Other

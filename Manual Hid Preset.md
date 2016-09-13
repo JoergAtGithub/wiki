@@ -30,7 +30,7 @@ Read on for more details.
 
 Here is an example file containing the required elements:
 
-    function SuperCool() {}
+    var SuperCool = {};
     
     SuperCool.init = function (ID,debugging) {
         // Do setup here

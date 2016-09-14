@@ -270,18 +270,18 @@ the pad) to assign the lower 4 pads to the functions listed below:
 Hold Pad Mode and press the pad marked Autoloop to assign the lower 4
 pads to the functions listed below: When assigned, the respective Pad
 LED will blink Yellow  
-\* **Auto 1** – Sets and starts playback of a 1/8-beat autoloop.  
+\* **Auto 1** – Sets and starts playback of a 2-beat autoloop.  
 
-  - **Auto 2** – Sets and starts playback of a 1/4-beat autoloop.  
-  - **Auto 3** – Sets and starts playback of a 1/2-beat autoloop.  
-  - **Auto 4** – Sets and starts playback of a 1-beat autoloop.  
-  - **Shift + Auto 1** – Sets and starts playback of a 2-beat
+  - **Auto 2** – Sets and starts playback of a 4-beat autoloop.  
+  - **Auto 3** – Sets and starts playback of a 8-beat autoloop.  
+  - **Auto 4** – Sets and starts playback of a 16-beat autoloop.  
+    \* **Shift + Auto 1** – Sets and starts playback of a 1/8-beat
     autoloop.  
-  - **Shift + Auto 2** – Sets and starts playback of a 4-beat
+  - **Shift + Auto 2** – Sets and starts playback of a 1/4-beat
     autoloop.  
-  - **Shift + Auto 3** – Sets and starts playback of a 8-beat
+  - **Shift + Auto 3** – Sets and starts playback of a 1/2-beat
     autoloop.  
-  - **Shift + Auto 4** – Sets and starts playback of a 16-beat
+  - **Shift + Auto 4** – Sets and starts playback of a 1-beat
     autoloop.  
 
 **Configuration Option:** If the

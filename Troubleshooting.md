@@ -22,7 +22,8 @@ The most reliable workaround would be to convert all your M4A/AAC files
 to FLAC. [Fre:AC](https://www.freac.org/) is a free program that can do
 this. Unfortunately, this wastes a lot of disk space. Keep your original
 M4A/AAC files around so you can delete the FLAC files when this bug is
-fixed.
+fixed. Converting lossy M4A/AAC files to another lossy format will sound
+worse than the starting M4A/AAC files and is not advised.
 
 ## I can't plug in my headphones and speakers at the same time
 

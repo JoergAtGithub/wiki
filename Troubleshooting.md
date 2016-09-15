@@ -19,7 +19,7 @@ https://bugs.launchpad.net/mixxx/+bug/1490580
 <https://bugs.launchpad.net/mixxx/+bug/1519472>
 
 The most reliable workaround would be to convert all your M4A/AAC files
-to FLAC. [Free:AC](https://www.freac.org/) is a free program that can do
+to FLAC. [Fre:AC](https://www.freac.org/) is a free program that can do
 this. Unfortunately, this wastes a lot of disk space. Keep your original
 M4A/AAC files around so you can delete the FLAC files when this bug is
 fixed.

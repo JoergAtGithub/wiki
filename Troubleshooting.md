@@ -14,7 +14,8 @@ There is currently a known bug with decoding M4A/AAC files on Windows in
 Mixxx 2.0 that can cause a deck to seemingly randomly stop playing until
 Mixxx is restarted. If you can help resolve this bug by developing or
 testing on Windows, please contribute\! See the following bug reports:
-https://bugs.launchpad.net/mixxx/+bug/1490580  
+
+<https://bugs.launchpad.net/mixxx/+bug/1490580>
 <https://bugs.launchpad.net/mixxx/+bug/1519472>
 
 The most reliable workaround would be to convert all your M4A/AAC files

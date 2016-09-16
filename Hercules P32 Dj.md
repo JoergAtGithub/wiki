@@ -145,7 +145,7 @@ does work for switching between dry/wet and the superknob though.
     samplers are independent from decks; the left grid controls samplers
     1-16 and the right grid controls samplers 17-32. 
   - **Shift + sync**: toggle quantize
-  - **Shift + cue**: toggle keylock
+  - **Shift + cue**: align beat grid to current position
   - **Shift + play**: go to beginning of track and stop
   - **Shift + load**: ejects a track from the deck
   - **EQ knobs, volume faders, crossfader, headphone button, play, cue,

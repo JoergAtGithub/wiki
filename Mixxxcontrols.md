@@ -360,4 +360,5 @@ the Equalizers section of the Preferences window.
 <sup>5</sup> changed in Mixxx v1.10.0  
 <sup>6</sup> introduced in Mixxx v1.11.0  
 <sup>7</sup> introduced in Mixxx v2.0.0  
-<sup>8</sup> deprecated in Mixxx v2.0.0
+<sup>8</sup> deprecated in Mixxx v2.0.0  
+<sup>9</sup> deprecated in Mixxx v2.1.0

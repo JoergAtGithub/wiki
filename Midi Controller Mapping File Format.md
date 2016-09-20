@@ -116,7 +116,8 @@ XML, write:
                 </options>
 ```
 
-  - **Normal**: No modifications
+  - **Normal**: No modifications, Use MIDI\_NOTE\_OFF or value == 0 as
+    "released" and all other values as "pressed" 
   - **Script-Binding**: Bind to a MIDI script function given in the
     "key" tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
   - **SelectKnob**: For relative controls centered on 64 (0x40)
@@ -130,11 +131,9 @@ XML, write:
     increment/decrement of 1/16 the value but with inverted controls
   - **Rot64fast**: For encoders sending 63 (0x3F) or 65 (0x41),
     increment/decrement the value with a multiplier of 1.5
-  - **Button**: a button has a *Down* (non-zero) and an *Up* (zero)
-    state, these occur together when pressed/released, this switch only
-    triggers on the *Down*, *Up* is ignored. (Herc)
-  - **Switch**: a switch has a *On* (non-zero) and an *Off* (zero)
-    state, these occur separately. (Herc)
+  - Button (deprecated): Ignore opcode, use value \> 0 as "pressed" 
+  - **Switch**: Ignore opcode and value, all messages are used as
+    "pressed"
   - **Spread64**: Exponential spread either side of 64, aka "relative"
     controller
   - **Soft-takeover**: prevents the physical control from affecting

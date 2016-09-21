@@ -5,7 +5,9 @@
 This device has been discontinued. M-Audio discontinued its DJ products
 after the company was bought by inMusic in 2012.
 
-## Getting the leds to work with Mixxx (version \< 2.1)
+## Mixxx version 2.0 or before
+
+### Getting the leds to work with Mixxx
 
 How to start up Xponent in Listening Mode for LED support:
 
@@ -38,7 +40,7 @@ and test both setups with your own system to see how they compare. If
 you require low latency as well as a lot of effects or time stretching,
 you may want to run with the ASIO driver at the expense of the lights.
 
-## Button behaviour in Mixxx (version \< 2.1)
+### Button behaviour in Mixxx
 
 [[/media/hardware/xponent-mapping-3.png|]]
 

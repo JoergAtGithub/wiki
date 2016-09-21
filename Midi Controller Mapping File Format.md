@@ -116,8 +116,8 @@ XML, write:
                 </options>
 ```
 
-  - **Normal**: No modifications, Use MIDI\_NOTE\_OFF or value == 0 as
-    "released" and all other values as "pressed" 
+  - **Normal**: No modifications, MIDI\_NOTE\_OFF or value == 0 is used
+    as "released" and all other values as "pressed" 
   - **Script-Binding**: Bind to a MIDI script function given in the
     "key" tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
   - **SelectKnob**: For relative controls centered on 64 (0x40)

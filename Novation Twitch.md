@@ -1,8 +1,8 @@
 ## Novation Twitch
 
-![http://sinusoid.es/mixco/pic/novation\_twitch.png](http://sinusoid.es/mixco/pic/novation_twitch.png)
+[[/media/wiki/novation_twitch.png|novation\_twitch.png]]
 
-Novation Twitch is supported since Mixxx 2.1.
+**Novation Twitch is supported since Mixxx 2.1**.
 
 More information on what the mapping does here:
 

@@ -38,7 +38,7 @@ and test both setups with your own system to see how they compare. If
 you require low latency as well as a lot of effects or time stretching,
 you may want to run with the ASIO driver at the expense of the lights.
 
-## Button behaviour in Mixxx \< 2.1
+## Button behaviour in Mixxx (version \< 2.1)
 
 [[/media/hardware/xponent-mapping-3.png|]]
 

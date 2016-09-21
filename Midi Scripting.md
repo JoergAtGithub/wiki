@@ -55,6 +55,8 @@ programmers.
 
 Here are some resources for a deeper understanding of JavaScript:
 
+  - [MDN's A Re-Introduction To
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
   - [Douglas Crockford's JavaScript
     website](http://javascript.crockford.com/)
   - [Douglas Crockford on JavaScript -- Act III: Function the

@@ -5,7 +5,17 @@
 This device has been discontinued. M-Audio discontinued its DJ products
 after the company was bought by inMusic in 2012.
 
-## Mixxx version 2.0 or before
+## Mixxx version 2.1 or later
+
+The controller script has been updated such that it does not need
+special tricks to get the lighting work and it uses much more
+functionality from Mixxx. You can read more about the new script,
+including its per-button behavior, on it's documentation page:
+
+  - [M-Audio Xponent script
+    documentation](https://sinusoid.es/mixco/script/maudio_xponent.mixco.html)
+
+## Mixxx version 1.6 to 2.0
 
 ### Getting the leds to work with Mixxx
 

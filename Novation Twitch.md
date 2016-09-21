@@ -1,6 +1,6 @@
 ## Novation Twitch
 
-[[/media/wiki/novation_twitch.png|novation\_twitch.png]]
+[[/media/wiki/hardware/novation_twitch.png|novation\_twitch.png]]
 
 **Novation Twitch is supported since Mixxx 2.1**.
 

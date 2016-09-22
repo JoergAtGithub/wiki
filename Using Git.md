@@ -238,11 +238,17 @@ checkout the master or beta branch then create another branch so your
 new changes are not included in the pull request that you already
 opened.
 
-# Keeping Track of Updates from Other Developers
+# Keeping Track of Updates
+
+## Syncing your fork with upstream
+
+See GitHub's Help article [Syncing a
+fork](https://help.github.com/articles/syncing-a-fork/).
 
 ## Testing pull requests
 
-See [these instructions](https://gist.github.com/piscisaureus/3342247).
+See [Checkout github pull requests
+locally](https://gist.github.com/piscisaureus/3342247).
 
 ## Testing other developer's unmerged branches
 

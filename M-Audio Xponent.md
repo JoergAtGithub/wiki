@@ -7,21 +7,23 @@ after the company was bought by inMusic in 2012. This device is a class
 compliant USB audio and MIDI device, so it does not require a special
 driver on any OS that Mixxx runs on.
 
-**Note for Windows users:** Typically, the ASIO sound API is the best
-option on Windows and it requries an ASIO driver from the sound card
-manufacturer. However, it seems that the current version of the Windows
-Xponent ASIO driver interferes with the ability to send MIDI control
-messages to the Xponent. As a result, if you are running the M-Audio
-Xponent drivers, the lights will not work. If you uninstall the drivers,
-the lights will work, but you can no longer use the Xponent's sound card
-with the ASIO sound API. It is recommended to use the WDM-KS sound API
-instead. It will appear as "Analog Connector 1 (Xponent Audio)" and
-"Analog Connector 2 (Xponent Audio)". Connector 2 is the main out, and
-Connector 1 is the headphones. The latency meter seems to run a bit
-higher than it did under ASIO, so keep this in mind, and test both
-setups with your own system to see how they compare. If you require low
-latency as well as a lot of effects or time stretching, you may want to
-run with the ASIO driver at the expense of the lights.
+## Windows ASIO driver breaks LED feedback
+
+Typically, the ASIO sound API is the best option on Windows and it
+requries an ASIO driver from the sound card manufacturer. However, it
+seems that the current version of the Windows Xponent ASIO driver
+interferes with the ability to send MIDI control messages to the
+Xponent. As a result, if you are running the M-Audio Xponent drivers,
+the lights will not work. If you uninstall the drivers, the lights will
+work, but you can no longer use the Xponent's sound card with the ASIO
+sound API. It is recommended to use the WDM-KS sound API instead. It
+will appear as "Analog Connector 1 (Xponent Audio)" and "Analog
+Connector 2 (Xponent Audio)". Connector 2 is the main out, and Connector
+1 is the headphones. The latency meter seems to run a bit higher than it
+did under ASIO, so keep this in mind, and test both setups with your own
+system to see how they compare. If you require low latency as well as a
+lot of effects or time stretching, you may want to run with the ASIO
+driver at the expense of the lights.
 
 ## Mixxx version 2.0 or later
 

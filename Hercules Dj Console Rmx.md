@@ -8,10 +8,11 @@
 The Hercules DJ Console RMX is a USB controller with a built in sound
 card. It is a class compliant USB Audio and HID device. Older versions
 of Mixxx that did not support HID required using Hercules' MIDI driver,
-but it is now recommend to not use the Hercules driver, whether you use
-Windows, Mac OS X, or GNU/Linux. If you have it installed, it is
-recommended to uninstall the driver and upgrade to the [latest version
-of Mixxx](http://mixxx.org/download) if you have not already.
+but it is now recommend to not use the Hercules driver on GNU/Linux. If
+you have it installed, it is recommended to uninstall the driver and
+upgrade to the [latest version of Mixxx](http://mixxx.org/download) if
+you have not already. On Windows (and Mac OS X?) the driver is still
+recommended.
 
 ## Audio
 

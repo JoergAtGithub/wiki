@@ -16,3 +16,6 @@ The mapping was made with the [Mixco mapping
 framework](https://sinusoid.es/mixco/) and [documentation for the
 mapping](https://sinusoid.es/mixco/script/novation_twitch.mixco.html) is
 available on the Mixco website.
+
+Support for the device was added to Linux in Linux 3.10. If you are
+using an older version of Linux you will need to upgrade.

@@ -7,7 +7,7 @@ after the company was bought by inMusic in 2012. This device is a class
 compliant USB audio and MIDI device, so it does not require a special
 driver on any OS that Mixxx runs on.
 
-## Windows ASIO driver breaks LED feedback
+## Note for Windows users
 
 Typically, the ASIO sound API is the best option on Windows and it
 requries an ASIO driver from the sound card manufacturer. However, it

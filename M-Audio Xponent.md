@@ -3,55 +3,59 @@
 ![http://ecx.images-amazon.com/images/I/41Fm-FrL5gL.jpg](http://ecx.images-amazon.com/images/I/41Fm-FrL5gL.jpg)
 
 This device has been discontinued. M-Audio discontinued its DJ products
-after the company was bought by inMusic in 2012.
+after the company was bought by inMusic in 2012. This device is a class
+compliant USB audio and MIDI device, so it does not require a special
+driver on any OS that Mixxx runs on.
 
-## Mixxx version 2.1 or later
+**Note for Windows users:** Typically, the ASIO sound API is the best
+option on Windows and it requries an ASIO driver from the sound card
+manufacturer. However, it seems that the current version of the Windows
+Xponent ASIO driver interferes with the ability to send MIDI control
+messages to the Xponent. As a result, if you are running the M-Audio
+Xponent drivers, the lights will not work. If you uninstall the drivers,
+the lights will work, but you can no longer use the Xponent's sound card
+with the ASIO sound API. It is recommended to use the WDM-KS sound API
+instead. It will appear as "Analog Connector 1 (Xponent Audio)" and
+"Analog Connector 2 (Xponent Audio)". Connector 2 is the main out, and
+Connector 1 is the headphones. The latency meter seems to run a bit
+higher than it did under ASIO, so keep this in mind, and test both
+setups with your own system to see how they compare. If you require low
+latency as well as a lot of effects or time stretching, you may want to
+run with the ASIO driver at the expense of the lights.
 
-The controller script has been updated such that it does not need
-special tricks to get the lighting work and it uses much more
-functionality from Mixxx. You can read more about the new script,
-including its per-button behavior, on it's documentation page:
+## Mixxx version 2.0 or later
 
-  - [M-Audio Xponent script
-    documentation](https://sinusoid.es/mixco/script/maudio_xponent.mixco.html)
+A new mapping has been merged with Mixxx and will be included in Mixxx
+in the 2.1 release. You can use it now with Mixxx 2.0 by downloading the
+following files and putting them in your [controller mapping file
+locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder):
 
-## Mixxx version 1.6 to 2.0
+  - [JS
+    file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/maudio_xponent.mixco.output.js)
+  - [XML
+    file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/maudio_xponent.mixco.output.midi.xml)
 
-### Getting the leds to work with Mixxx
+The script was written with the [Mixco mapping
+framework](https://sinusoid.es/mixco/). [Documentation for the
+mapping](https://sinusoid.es/mixco/script/maudio_xponent.mixco.html) is
+available on the Mixco website.
+
+## Getting LEDs to work with old mappings (pre-2.0)
+
+The Mixco mapping included with Mixxx 2.1 and usable with Mixxx 2.0 does
+not require these steps.
 
 How to start up Xponent in Listening Mode for LED support:
 
 1.  Hold down the keys "2" (cues, not loops) and "key-lock" on the left
-    deck of the xPponent
+    deck of the Xponent
 2.  Switch on the Xponent (while holding both keys)
 3.  Wait until the Xponent is completely started up (red progress LEDS
     on both decks are fully lit) then release the keys
 4.  Now LEDs work\!
 
-Xponent setup for LEDs
-<http://www.native-instruments.com/forum/showthread.php?t=71882>
-
 You can verify that the Xponent is in "listening" mode by observing the
 button behavior. If the buttons no longer pulse brightly and fade down
 when you press them, then the Xponent is in the correct mode for use
 with Mixxx.
-
-**Note for Windows users:** It seems that the current version of the
-Windows Xponent ASIO driver interferes with the ability to send MIDI
-control messages to the Xponent. As a result, if you are running the
-M-Audio Xponent drivers, the lights will not work. If you uninstall the
-drivers, the lights will work, but you can no longer use the Xponent's
-audio in ASIO mode. The Xponent will still show up using "Windows
-WDM-KS" as the Sound API. It will appear as "Analog Connector 1 (Xponent
-Audio)" and "Analog Connector 2 (Xponent Audio)". Connector 2 is the
-main out, and Connector 1 is the headphones. The latency meter seems to
-run a bit higher than it did under ASIO though, so keep this in mind,
-and test both setups with your own system to see how they compare. If
-you require low latency as well as a lot of effects or time stretching,
-you may want to run with the ASIO driver at the expense of the lights.
-
-### Button behaviour in Mixxx
-
-[[/media/hardware/xponent-mapping-3.png|]]
-
-  - **10:** To-do.

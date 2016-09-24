@@ -76,7 +76,7 @@ pressed. Changes after the previous version are in bold.
 8.  EQ mid
 9.  EQ low
 10. **Pitch** (semitones only)
-11. Filter **(low-high pass)\[3\]**
+11. Filter (high pass only)\[3\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -115,7 +115,7 @@ pressed. Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-9-1, still compatible with 2.0)
+(2016-9-2, still compatible with 2.0)
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -126,8 +126,11 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
 
-3.  change the variable FILTERKNOB in the js file for high or low pass
-    only
+3.  see [the
+    article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
+    or use [Controller
+    Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
+    (choose "Quick Effect Super Knob") for low-high pass
 
 4.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4

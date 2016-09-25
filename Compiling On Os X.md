@@ -7,14 +7,38 @@ knowledge about using and compiling with the command line (eg:
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
 
 This guide is written for Snow Leopard (10.6.x) and Leopard (10.5.x) but
-should work up to Mavericks (10.9.x).
+should work up to El Captain (10.11.x).
 
 ## 1\. Install Xcode development tools
 
 You will need the [Xcode development
-tools](http://developer.apple.com/technologies/tools/) installed. Xcode
-is a package provided by Apple containing compilers, libraries and
-additional tools required to develop applications for Mac OS X.
+tools](https://developer.apple.com/xcode/) installed. Xcode is a package
+provided by Apple containing compilers, libraries and additional tools
+required to develop applications for Mac OS X.
+
+#### Install Xcode on Mac OS X 10.9 Mavericks or later
+
+From OS X 10.9 Mavericks onward, installing the needed Command Line
+Tools is now possible directly and **without** installing the entire
+Xcode package first, no developer account is required either.
+
+Launch the Terminal, and type the following command string:
+
+``` 
+  xcode-select --install
+```
+
+Click *Install* on the software update popup window that will appear,
+and wait for the download and installation to finish (about 150 MB). It
+gets placed in the following directory:
+`/Library/Developer/CommandLineTools/`
+
+<span class="underline">Note</span>: If Xcode is already installed in
+your system, then Command Line Tools become installed as well (you can
+check this by trying to run gcc or make from the terminal). To install
+the latest available version of Xcode for your Mac OS X release, go to
+<https://developer.apple.com/download/>. Downloading it requires a free
+registration at Apple's developer site.
 
 #### Install Xcode on Mac OS X 10.7 Lion or later
 
@@ -95,7 +119,7 @@ If you get the error `No available formula for libmodplug` , enter the
 following:
 
 ``` 
-    brew create http://sourceforge.net/projects/modplug-xmms/files/latest/download     
+    brew create http://sourceforge.net/projects/modplug-xmms/files/latest/download
 ```
 
 Enter Formula name `libmodplug` if asked for, then enter:
@@ -131,13 +155,13 @@ on Mac OS X.
 <!-- end list -->
 
 ``` 
-    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 git taglib libshout2 protobuf-cpp 
+    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 git taglib libshout2 protobuf-cpp
 ```
 
   - Finally, after that has completed, download and install the [Qt SDK
     package](https://qt-project.org/downloads) for your platform (qt-mac
     and qt-mac-debug-libs required, SDK-Installer will not work with
-    standard settings). 
+    standard settings).
 
 <!-- end list -->
 
@@ -253,7 +277,7 @@ You will need to install the following by hand for the compile process:
     some header files are missing e.g. libmad and others. This is due to
     a missing QTCore framework.
   - Git ([Download](http://git-scm.com/)) -- Get the installer for your
-    version of OS X. 
+    version of OS X.
   - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
     "scons" then "sudo scons install" but you probably don't need it
     unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
@@ -404,7 +428,7 @@ how to get a scons project up and running in XCode:
   - In Groups and Files -> Targets, double click the target that was automatically created.
   - Fill in the blanks, i.e. the full path to scons - like "/System/Library/Frameworks/Python.framework/Versions/2.3/bin/scons" or "/usr/local/bin/scons" \\ {{:compiling:xcode_scons_step_4.png|}}
   - You should now be able to build using the Build command from Xcode
-  - Right click "Executables" and choose "Add new custom executable" and point it to the executable you are building and then you can debug using Xcode. 
+  - Right click "Executables" and choose "Add new custom executable" and point it to the executable you are building and then you can debug using Xcode.
     - Note: In Xcode 4 there is no "Add new custom executable" option---you must instead edit the current scheme in order to choose an executable to run.  You can do this by clicking the project name in the upper-left corner of the window and choosing "Edit Scheme..." or by going to Product -> Scheme -> Edit Scheme.  In the edit menu you can also add arguments to be passed to the executable (such as a resource path) when it is launched.
   - Use Debug -> Breakpoints menu to add a symbolic breakpoint at main() - just type main where it says 'Double click for Symbol' - if you don't add this break point none of the breakpoints set in the editors will work, because gdb doesn't have the symbol information until you start debugging ([[http://www.cocoabuilder.com/archive/message/xcode/2006/8/15/8869|Jim Ingham suggests]] turning off "Lazy Symbol Loading" in Debug Preferences.)
 ```

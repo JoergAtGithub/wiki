@@ -2861,10 +2861,10 @@ Mixxx remembers remember the position of moveable GUI elements,
 e.g.
 `<SplitSizesConfigKey>[Deere1280x1024-SXGA],LibrarySidebarSplitSize</SplitSizesConfigKey>`.
 
-\`\`Collapsible\`\` gives which of children can be collapsed. From the
+`Collapsible` gives which of children can be collapsed. From the
 example, none of the 3 `WidgetGroup` can collapse. E.g. if you wish to
 have the 1st widgetgroup collapsible, just change to
-\`\`\<Collapsible\>1,0,0\</Collapsible\>\`\`
+`<Collapsible>1,0,0</Collapsible>`
 
 **NOTE:** `Splitter` derives from `QSplitter`. As of Qt 4.8.3 the
 default `SizePolicy` for `QSplitter` is `QSizePolicy::Expanding`

@@ -418,6 +418,7 @@ editor](#tools) and get started :-)
 ### Mixxx 2.10.0
 
 ``` 
+ * Added support for collapsible [[creating_skins#splitter|<Splitter>]] children. [[https://github.com/mixxxdj/mixxx/pull/917|pull#917]]
  * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. See [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]].
 ```
 
@@ -2816,18 +2817,23 @@ New in Mixxx 1.11.0
 This allows you to create a QSplitter dynamically and to control the
 size of child widgets by dragging the boundary between the children.
 
+New in Mixxx 2.10
+
+Allows to specify which children can be collapsed
+
 New in Mixxx 2.00
 
 Remember splitter layout
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                     |      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                        |      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
 | `<Splitter>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
   <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
   <SplitSizes>1,1,8</SplitSizes>
   <Orientation>horizontal</Orientation>
+  <Collapsible>0,0,0</Collapsible>
   <Children>
     <WidgetGroup>
     </WidgetGroup>
@@ -2854,6 +2860,11 @@ Mixxx remembers remember the position of moveable GUI elements,
 `SplitSizesConfigKey` saves the splits in ConfigKey provided by the skin
 e.g.
 `<SplitSizesConfigKey>[Deere1280x1024-SXGA],LibrarySidebarSplitSize</SplitSizesConfigKey>`.
+
+\`\`Collapsible\`\` gives which of children can be collapsed. From the
+example, none of the 3 `WidgetGroup` can collapse. E.g. if you wish to
+have the 1st widgetgroup collapsible, just change to
+\`\`\<Collapsible\>1,0,0\</Collapsible\>\`\`
 
 **NOTE:** `Splitter` derives from `QSplitter`. As of Qt 4.8.3 the
 default `SizePolicy` for `QSplitter` is `QSizePolicy::Expanding`

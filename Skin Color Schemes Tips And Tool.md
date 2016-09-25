@@ -400,4 +400,4 @@ library widget, the colors of the header, or the style of the
 scrollbars, you need to use the \<Style\> tags. Some CSS statements must
 use QT-specific versions, such as "qlineargradient". The most useful
 page I found was the [stylesheet reference
-list](http://doc.qt.nokia.com/latest/stylesheet-reference.html).
+list](http://doc.qt.io/qt-4.8/stylesheet-reference.html#list-of-properties).

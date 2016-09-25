@@ -223,67 +223,7 @@ Additional skins for Mixxx can be downloaded in the
     
     5. Done.
 
-#### How to resize a skin
-
-As of Mixxx 1.9 it is not possible to resize a skin automatically, Mixxx
-can not handle skins resolution independent. Every skin needs to be
-redrawn by hand. The [Outline skin
-template](/creating_skins#getting_started) guides you and helps to makes
-it easier.  
-Example: Your skin is 1024×768 but your screen is 1280×1024. When going
-into fullscreen Mixxx will fill your screen around the 1024×768 used by
-the skin with the skin\`s background color. This background color is
-defined in skin.xml using the \<*Horizontal\>* key . See [Main
-background](#main-background).  
-So if you would like to have your skin fill the whole screen ( i.e. to
-have more space for the library), you need another variant of your skin
-for 1280×1024.  
-Also see the [Skin guidelines](/skin_guidelines).
-
-#### How to change the size of the library
-
-Same thing as with resizing a skin , as of Mixxx 1.9 it is not possible
-to resize the library automatically. You need another variant of your
-skin  
-Also see the [Skin guidelines](/skin_guidelines).
-
-#### How to change the players orientation (vertical or horizontal)
-
-As of Mixxx 1.9 this is not possible. You can change the orientation of
-Volume level display & Fader using the \<*Horizontal\>* key. See
-[Channel volume](#channel-volume).
-
-#### How to change the font size or color for the text (i.e. artist)
-
-Use the \<*Style\>* key and Qt Style Sheets to define text attributes.
-See [Track information](#track-information).
-
-#### How to change the font size or font color for the playlist
-
-Use the \<*Style\>* key and Qt Style Sheets to define text attributes.
-See example. See [Library display](#library-display)
-
-#### How to change the size or color of the waveform
-
-The values are defined in skin.xml using the \<*Pos\>* and
-\<*SignalColor\>* key. See [Waveform](#waveform).
-
-#### How to use a custom symbol for markers ( i.e. Hotcues)
-
-Custom symbols for markers can be defined for Hotcues, Cues , LoopIn and
-LoopOut in skin.xml using the \<*Pixmap\>* key. See
-[Waveform](#waveform).  
-Notice that your custom markers only show up in the big waveforms.
-
-#### How to use sliders instead of knobs ( i.e. for eq\`s )
-
-~~All elements that are sliders could be knobs an vis a vis. Think of
-some house hardware mixers , sometimes you have no channel line fader
-(slider) but rather rotary fader (knobs).  
-Same for EQ\`s , they could be slider instead knobs.~~ Is that really
-possible?FIXME
-
-#### The filters (e.g. blur) used in my svg files are not visible . Why ?
+#### The filters (e.g. blur) used in my svg files are not visible. Why ?
 
 So you created a nice button with a drop shadow blur effect in svg
 format, only to find the button is displayed without the drop shadow in

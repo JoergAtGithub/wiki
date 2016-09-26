@@ -75,7 +75,8 @@ pressed. Changes after the previous version are in bold.
 7.  EQ high
 8.  EQ mid
 9.  EQ low
-10. **Pitch** (semitones only)
+10. **Pitch (up and down to about whole tone, or on keylock *to 6
+    semitones discretely*)**
 11. Filter (high pass only)\[3\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
@@ -115,7 +116,7 @@ pressed. Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-9-2, still compatible with 2.0)
+(2016-10-1, still compatible with 2.0)
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

@@ -19,7 +19,7 @@ you can connect both cd-players and turntables on the inputs.
   - Inputs are RCA.
   - Outputs are RCA or 1/4" TRS balanced.
   - Microphone input is 1/4" TS
-  - Headphone jack is 1⁄4" (6.35 mm) TRS stereo
+  - Headphone jack is 1/4" (6.35 mm) TRS stereo
 
 ### MAC OS / Windows
 
@@ -28,7 +28,11 @@ page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&c
 Same package for both Audio and MIDI. On Windows, the newest drivers
 support Windows 10.
 
-### Mapping configuration in Mixxx 2.0
+### Mapping configuration in Mixxx 2.0 and above
+
+Note: A mapping existed in Mixxx 1.11 which does not work correctly.  
+Note2: Those functions marked as (2.1) are implemented in a new mapping
+released the 26th of september of 2016.
 
 #### Master / Global controls
 
@@ -36,46 +40,64 @@ support Windows 10.
 <thead>
 <tr class="header">
 <th>Control</th>
+<th>Mode</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Cross-Fader</td>
+<td></td>
 <td>Fades between left and right decks</td>
 </tr>
 <tr class="even">
 <td>Vol. Main</td>
+<td></td>
 <td>Controls the Master volume knob of Mixxx.</td>
 </tr>
 <tr class="odd">
 <td>Scratch</td>
+<td></td>
 <td>Toggles scratch mode. When scratch mode is enabled, pressing a jog wheel controls scratching</td>
 </tr>
 <tr class="even">
 <td>Auto</td>
-<td>Enable AutoDJ or fade to next song if AutoDJ is already enabled.<br />
-In the future this could do autofading in live mode too</td>
+<td></td>
+<td>Enable AutoDJ.<br />
+Stop decks 1 and 2 to disable it using the controller.</td>
 </tr>
 <tr class="odd">
+<td>Auto</td>
+<td>AutoDJ on</td>
+<td>Fade to next song.</td>
+</tr>
+<tr class="even">
 <td>Folders / Files</td>
+<td></td>
 <td>Switches between browsing the sidebar in the library, or the list.<br />
-If Folders is pressed twice, opens/closes the tree branch<br />
-If Files is pressed when in AutoDJ mode, the next song in the Auto DJ cue is skipped</td>
+If Folders is pressed twice, opens/closes the tree branch</td>
+</tr>
+<tr class="odd">
+<td>Files</td>
+<td>AutoDJ on</td>
+<td>The next song in the Auto DJ cue is skipped</td>
 </tr>
 <tr class="even">
 <td>Up / Down</td>
+<td></td>
 <td>Moves up and down in the library track list.<br />
-If held down and a jog wheel is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
+If held down and any of the jog wheels is moved, then the jog wheel takes over the cursor movement until the up/down button is released</td>
 </tr>
 <tr class="odd">
 <td>Cue/Mix</td>
+<td></td>
 <td>Control mix of master and PFL (cue) output in headphones</td>
 </tr>
 <tr class="even">
 <td>Mic On/Off</td>
+<td></td>
 <td>Enables or disables the microphone.<br />
-This is configured by default to be mixed in hardware. The controller's driver allows to change this to use it as an input channel</td>
+The microphone is always mixed in hardware. The trayicon driver configuration allows to choose between direct mixing, or mix it only when enabled with the button. \\(2.1) It no longer tries to activate Mixxx microphone talkover.</td>
 </tr>
 </tbody>
 </table>
@@ -89,125 +111,374 @@ hardware controls (i.e. they don't control Mixxx's interface)
 <thead>
 <tr class="header">
 <th>Control</th>
+<th>Mode</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Play/Pause</td>
-<td>Play track if paused; pause if track is playing</td>
-</tr>
-<tr class="even">
-<td>Stop</td>
-<td>Stops a currently playing track and moves to the beginning.<br />
-If in AutoDJ mode, pressing this button on decks 1 &amp; 2 will disable AutoDJ</td>
-</tr>
-<tr class="odd">
-<td>Cue</td>
-<td>Depends on cue mode set in Mixxx preferences</td>
-</tr>
-<tr class="even">
-<td>Jog wheel</td>
-<td>Seeks forwards and backwards in a stopped track<br />
-Temporarily changes the playback speed for playing tracks<br />
-Scratches when pressed and scratch mode is on (whether or not track is playing)<br />
-Moves up / down in the tracklist if either Up or Down are held down</td>
-</tr>
-<tr class="odd">
-<td>Forward / Backward</td>
-<td>Seeks at high speed in a track. In the future this might skip 4 beats at a time instead of simply seeking.</td>
-</tr>
-<tr class="even">
-<td>Pitch fader</td>
-<td>Adjusts playback speed (range and direction can be adjusted in Mixxx preferences)</td>
-</tr>
-<tr class="odd">
-<td>Pitch bend +/-</td>
-<td>Adjusts playback speed temporarily (range can be adjusted in Mixxx preferences)</td>
-</tr>
-<tr class="even">
-<td>Pitch Scale +/-</td>
-<td>These controls have a different meaning in Mixxx. They have been mapped to changing the musical key</td>
-</tr>
-<tr class="odd">
-<td>Pitch Reset</td>
-<td>This is triggered when both pitch scale buttons are pressed at the same time. This control has a different meaning in Mixxx. It resets the musical key to the track's default.<br />
-The Pitch Reset led is on if the key lock button is enabled for this deck. This might change in a future release.</td>
-</tr>
-<tr class="even">
-<td>Sync</td>
-<td>Automatically sets the speed to match the BPM of the other deck. During playback, the light of this button will be flashing following the beats of the song.<br />
-The beat flashing will be optional in the future, to show the sync button state.</td>
-</tr>
-<tr class="odd">
-<td>Deck A/C, B/D</td>
-<td>Switches the deck to control Deck A/C or Deck B/D. Lights are changed accordingly</td>
+<td>Shift key</td>
+<td></td>
+<td>When this button is pressed and released, it toggles between keypad functions 1-6 to keypad functions 7-12. When keypad functions 7-12 are active, the shift button is lit orange.</td>
 </tr>
 <tr class="even">
 <td>Shift key</td>
-<td>When this button is pressed and released, toggle between keypad functions 1-6 to keypad functions 7-12. When keypad functions 7-12 are active, the shift button is lit orange.<br />
-This button has an additional functionality in Mixxx. If you keep the button pressed while pressing another of the keypad buttons, it will not toggle between buttons 1-6 and 7-12, but instead it will trigger the actions labeled "shift-pressed" described for that button.</td>
+<td>Hold it</td>
+<td>This button has an additional functionality in Mixxx: If you keep the button pressed while pressing one of the other buttons that have the "Shift" mode, it triggers that action.</td>
 </tr>
 <tr class="odd">
-<td>Keypad 1 to 4</td>
-<td>Set/Unset a beatloop of 0.5, 1, 2 and 4 beats. They act like the corresponding buttons in Mixxx.<br />
-If Shift-pressed, buttons 1 and 2 use a beatloop size of 0.125 and 0.25, and buttons 3 and 4 act as loop end/reloop button.<br />
-When a loop is set that isn't one of these four main cases, buttons 3 and 4 will be lit to indicate a loop is present</td>
+<td>Play/Pause</td>
+<td></td>
+<td>Play track if it is not playing; pause it if track is playing</td>
 </tr>
 <tr class="even">
-<td>Keypad 5 to 6</td>
-<td>Reveses playback direction when held down. keypad 6 does it with audio roll (censor-like)</td>
+<td>Play/Pause</td>
+<td>Shift</td>
+<td>(2.1) Play backwards. If slip mode is enabled (triangle image in deere skin), it will resume beyond the previous position (i.e. the playback continues muted until the button is released)</td>
 </tr>
 <tr class="odd">
-<td>Keypad 7 to 10</td>
-<td>Set/Unset the hotcues 1 to 4<br />
-If Shift-pressed, the corresponding hotcue is cleared</td>
+<td>Stop</td>
+<td></td>
+<td>Moves the cursor to the beginning, or to the cue point if it is set, and stops playing it, if it was playing.</td>
 </tr>
 <tr class="even">
-<td>Keypad 11 to 12</td>
-<td>Enables the effect rack 1 and 2 for this specific deck</td>
+<td>Stop</td>
+<td>Shift</td>
+<td>(2.1) Brake (Slow it down progressively). Releasing it will continue playing, except if it has slowed a lot, in which case it stops.</td>
 </tr>
 <tr class="odd">
-<td>Fx knob</td>
-<td>Filter knob (the filter setup in the equalizer preferences)<br />
-While shift button is held down, the knob will move slowly</td>
+<td>Cue</td>
+<td></td>
+<td>Depends on the cue mode set in Mixxx preferences</td>
 </tr>
 <tr class="even">
-<td>Vol. Deck A/B</td>
+<td>Jog wheel</td>
+<td></td>
+<td>Seeks forwards and backwards in a stopped track<br />
+Temporarily changes the playback speed for playing tracks</td>
+</tr>
+<tr class="odd">
+<td>Jog wheel</td>
+<td>Scratch on and jog pressed</td>
+<td>If Scratch is on and the jog is pressed, moving it will do a scratch effect</td>
+</tr>
+<tr class="even">
+<td>Jog wheel</td>
+<td>Up/Down presssed</td>
+<td>Moves up / down in the tracklist if either Up or Down are held down</td>
+</tr>
+<tr class="odd">
+<td>Jog wheel</td>
+<td>LED</td>
+<td>If the beatflash led has been set to jogwheel in the javascript file, the light of this button will be flashing following the beats of the song.</td>
+</tr>
+<tr class="even">
+<td>Forward / Backward</td>
+<td></td>
+<td>(2.0) Seeks at high speed.</td>
+</tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td></td>
+<td>(2.1) Seeks forward or backward in the track in steps of 4 beats (when the beatgrid has already been detected).</td>
+</tr>
+<tr class="even">
+<td>Forward / Backward</td>
+<td>Pressed for 500ms</td>
+<td>(2.1) seeks at high speed.</td>
+</tr>
+<tr class="odd">
+<td>Forward / Backward</td>
+<td>Shift</td>
+<td>(2.1) Seeks forward or backward in the track in steps of 1 beats</td>
+</tr>
+<tr class="even">
+<td>Sync</td>
+<td></td>
+<td>Automatically sets the pitch fader speed to match the BPM of the other deck.</td>
+</tr>
+<tr class="odd">
+<td>Sync</td>
+<td>LED</td>
+<td>If the beatflash led has been set to Sync in the javascript file, the light of this button will be flashing following the beats of the song.</td>
+</tr>
+<tr class="even">
+<td>Sync</td>
+<td>Pressed for 500ms</td>
+<td>(2.1) Activates master sync for this deck.</td>
+</tr>
+<tr class="odd">
+<td>Sync</td>
+<td>Shift</td>
+<td>(2.1) Activates the beatgrid edit mode</td>
+</tr>
+<tr class="even">
+<td>Sync</td>
+<td>Beatgrid edit mode</td>
+<td>(2.1) When the track is stopped, aligns the beatgrid with the current playback position. If playing, synchronizes the beatgrid to align with that of the other playing track.</td>
+</tr>
+<tr class="odd">
+<td>Pitch fader</td>
+<td></td>
+<td>Adjusts playback speed (range and direction can be adjusted in Mixxx preferences)</td>
+</tr>
+<tr class="even">
+<td>Pitch bend +/-</td>
+<td></td>
+<td>Adjusts playback speed temporarily (range can be adjusted in Mixxx preferences)</td>
+</tr>
+<tr class="odd">
+<td>Pitch bend +/-</td>
+<td>Beatgrid edit mode</td>
+<td>(2.1) Increases or decreases the BPM of the track (the detected one).</td>
+</tr>
+<tr class="even">
+<td>Pitch Scale +/-</td>
+<td></td>
+<td>These controls have a different meaning in Mixxx: They have been mapped to change the musical key</td>
+</tr>
+<tr class="odd">
+<td>Pitch Scale +/-</td>
+<td>Beatgrid edit mode</td>
+<td>(2.1) Move the beatgrid to the left or to the right</td>
+</tr>
+<tr class="even">
+<td>Pitch Scale -</td>
+<td>Shift</td>
+<td>(2.1) Activates or deactivates the (musical) keylock mode</td>
+</tr>
+<tr class="odd">
+<td>Pitch Scale +</td>
+<td>Shift</td>
+<td>(2.1) Activates or deactivates the quantize (to beat) mode</td>
+</tr>
+<tr class="even">
+<td>Pitch Reset</td>
+<td></td>
+<td>This is triggered when both pitch scale buttons are pressed at the same time. This control has a different meaning in Mixxx: It resets the musical key to the track's default.</td>
+</tr>
+<tr class="odd">
+<td>Pitch Reset</td>
+<td>LED</td>
+<td>This led has a different meaning in Mixxx: If the beatflash led has been set to pitchreset in the javascript file, the light of this button will be flashing following the beats of the song.<br />
+Else, the led is on if the key lock button is enabled for this deck.</td>
+</tr>
+<tr class="even">
+<td>Deck A/C, B/D</td>
+<td></td>
+<td>Switches the deck to control between Deck A/C or between Deck B/D. Lights are changed accordingly</td>
+</tr>
+<tr class="odd">
+<td>Vol. Deck</td>
+<td></td>
 <td>Controls a deck's output volume</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Cue Select Deck</td>
-<td>Toggles this deck's output to the monitor (headphones) on and off<br />
-When a new track is loaded in a deck, the cue Select of that deck will get activated automatically.</td>
+<td></td>
+<td>Toggles on and off this deck's output to the monitor/prefader listen (headphones)<br />
+By default, it is configured in the javascript to activate it automatically when a new track is loaded in the deck.</td>
+</tr>
+<tr class="odd">
+<td>Load On Left/Right Deck</td>
+<td></td>
+<td>Loads the currently selected track in the track list to the corresponding deck</td>
 </tr>
 <tr class="even">
-<td>Load On Deck A/B</td>
-<td>Loads the currently selected track in the track list to the respective deck</td>
-</tr>
-<tr class="odd">
 <td>Bass knob</td>
+<td></td>
 <td>EQ low frequencies</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Medium knob</td>
+<td></td>
 <td>EQ mid frequencies</td>
 </tr>
-<tr class="odd">
-<td>Treble knob</td>
-<td>EQ high frequencies</td>
-</tr>
 <tr class="even">
-<td>Kill (Bass / Medium / Treble)</td>
-<td>Toggles frequency band completely off</td>
+<td>Treble knob</td>
+<td></td>
+<td>EQ high frequencies</td>
 </tr>
 <tr class="odd">
 <td>Gain</td>
+<td></td>
 <td>Controls a deck's gain before the volume fader</td>
 </tr>
 <tr class="even">
+<td>Kill (Bass/ Medium/ Treble)</td>
+<td></td>
+<td>Toggles that frequency band completely off</td>
+</tr>
+<tr class="odd">
+<td>Kill (Bass/ Medium/ Treble)</td>
+<td>LED</td>
+<td>(2.1) If the vumeter is activated in the javascript file, they will show a vumeter of the master or the deck (if prefader-listen is on).<br />
+They will flicker if the sound clips. \\If kill is enabled, the vumeter is temporarily disabled</td>
+</tr>
+<tr class="even">
 <td>Source 1/2</td>
-<td>Toggles the deck to use the input channel 1/2 as its audio source instead of Mixxx's deck</td>
+<td></td>
+<td>Toggles the deck to use the input channel 1/2 as its audio source instead of Mixxx's deck. Concretely, it activates vinyl passthrough mode.</td>
+</tr>
+<tr class="odd">
+<td>Source 1/2</td>
+<td>LED</td>
+<td>(2.1) If the vumeter is activated in the javascript file, they will show a vumeter of the master or the deck (if prefader-listen is on). If kill is enabled, the vumeter is temporarily disabled</td>
+</tr>
+<tr class="even">
+<td>Keypad 1 to 4</td>
+<td></td>
+<td>(2.0) Set/Unset a beatloop of 0.5, 1, 2 or 4 beats. They act like the corresponding buttons in Mixxx.<br />
+When a loop is set that isn't one of these four main cases, buttons 3 and 4 will light to indicate a loop is present</td>
+</tr>
+<tr class="odd">
+<td>Keypad 1 to 4</td>
+<td>Shift</td>
+<td>(2.0) Set/Unset a beatloop. buttons 1 and 2 use a beatloop size of 0.125 and 0.25, and buttons 3 and 4 act as loop end/reloop button.</td>
+</tr>
+<tr class="even">
+<td>Keypad 5 to 6</td>
+<td></td>
+<td>(2.0) Reveses playback direction when held down. keypad 6 does it with audio roll (censor-like)</td>
+</tr>
+<tr class="odd">
+<td>Keypad 7 to 10</td>
+<td></td>
+<td>(2.0) Set/Unset the hotcues 1 to 4</td>
+</tr>
+<tr class="even">
+<td>Keypad 7 to 10</td>
+<td>Shift</td>
+<td>(2.0) The corresponding hotcue is cleared</td>
+</tr>
+<tr class="odd">
+<td>Keypad 11 to 12</td>
+<td></td>
+<td>(2.0) Enables the effect rack 1 and 2 for this specific deck</td>
+</tr>
+<tr class="even">
+<td>Keypad 1</td>
+<td></td>
+<td>(2.1) Sets the loop begin and Activates the loop edit mode</td>
+</tr>
+<tr class="odd">
+<td>Keypad 1</td>
+<td>Shift</td>
+<td>(2.1) Same as click, but it will be a rolling filter (slip mode)</td>
+</tr>
+<tr class="even">
+<td>Keypad 1</td>
+<td>Loop edit mode</td>
+<td>(2.1) Exits the loop edit mode</td>
+</tr>
+<tr class="odd">
+<td>Keypad 1</td>
+<td>Loop active</td>
+<td>(2.1) Disable the loop</td>
+</tr>
+<tr class="even">
+<td>Keypad 1</td>
+<td>LED</td>
+<td>(2.1) The led is on if the loop is active</td>
+</tr>
+<tr class="odd">
+<td>Keypad 2</td>
+<td></td>
+<td>(2.1) Reloop (Enable or disable the previously existing loop)</td>
+</tr>
+<tr class="even">
+<td>Keypad 2</td>
+<td>Loop edit mode</td>
+<td>(2.1) Sets the loopend and exits the loop edit mode</td>
+</tr>
+<tr class="odd">
+<td>Keypad 2</td>
+<td>LED</td>
+<td>(2.1) The led is on if a loop exists</td>
+</tr>
+<tr class="even">
+<td>Keypad 3 to 4</td>
+<td></td>
+<td>(2.1) Sets a loop of 4 or 16 beats.</td>
+</tr>
+<tr class="odd">
+<td>Keypad 3 to 4</td>
+<td>Shift</td>
+<td>(2.1) Same as click, but it will be a rolling filter (slip mode)</td>
+</tr>
+<tr class="even">
+<td>Keypad 3 to 4</td>
+<td>LED</td>
+<td>(2.1) If a beatloop of 1 or 4 beats is enabled.</td>
+</tr>
+<tr class="odd">
+<td>Keypad 5 to 6</td>
+<td></td>
+<td>(2.1) starts or stops a sampler 1 or 2 (buttons on the left deck), or the sampler 3 or 4 (buttons on the right deck)</td>
+</tr>
+<tr class="even">
+<td>Keypad 3 to 6</td>
+<td>Loop edit mode</td>
+<td>(2.1) Sets a beatloop of 2, 8, 16 or 32 beats</td>
+</tr>
+<tr class="odd">
+<td>Keypad 7 to 10</td>
+<td></td>
+<td>(2.1) Set/Unset the hotcues 1 to 4</td>
+</tr>
+<tr class="even">
+<td>Keypad 7 to 10</td>
+<td>Shift</td>
+<td>(2.1) The corresponding hotcue is cleared</td>
+</tr>
+<tr class="odd">
+<td>Keypad 11 to 12</td>
+<td></td>
+<td>(2.1) Enables the effect rack 1 or 2 for this specific deck</td>
+</tr>
+<tr class="even">
+<td>Fx knob</td>
+<td></td>
+<td>Filter knob (the filter set in the equalizer preferences)</td>
+</tr>
+<tr class="odd">
+<td>Fx knob</td>
+<td>Shift</td>
+<td>Move the filter knob slowly (the filter set in the equalizer preferences)</td>
+</tr>
+<tr class="even">
+<td>Fx knob</td>
+<td>Beatgrid edit mode</td>
+<td>(2.1) Move the beatgrid position</td>
+</tr>
+<tr class="odd">
+<td>Fx knob</td>
+<td>Loop edit mode</td>
+<td>(2.1) Increase or decrease the loop size</td>
+</tr>
+<tr class="even">
+<td>Fx knob</td>
+<td>audio effect pressed</td>
+<td>(2.1) If a keypad number is mapped to an audio effect, holding such button and moving the knob changes the "super" knob of that effect</td>
+</tr>
+<tr class="odd">
+<td>Fx knob</td>
+<td>pitch Scale +/- pressed</td>
+<td>(2.1) Increases or decreases the musical key (it doesn't matter which of the pitch scale numbers is pressed)</td>
+</tr>
+<tr class="even">
+<td>Fx knob</td>
+<td>Loop edit mode</td>
+<td>(2.1) Move the loop forward or backward in steps of one beat</td>
+</tr>
+<tr class="odd">
+<td>Fx knob</td>
+<td>keypad 1 held down</td>
+<td>(2.1) Increase or decrease the loop size</td>
 </tr>
 </tbody>
 </table>
+
+Note: (2.1) The actions of the Keypad buttons can be changed from the
+javascript. There are three preconfigured presets corresponding to
+Manual/Virtual DJ LE, Mixxx 2.0 and Mixxx 2.1.

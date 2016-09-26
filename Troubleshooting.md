@@ -213,6 +213,8 @@ loading the snd-seq-midi module manually.
 
 ### HID and USB Bulk controllers on GNU/Linux
 
+If your controller does not appear in the list of controllers on the
+left pane of Mixxx's Preferences (under the "Controllers" section),
 Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
 will say something to this effect in the log when it scans for HID
 devices.) As of version 2.0, Mixxx should automatically install a udev

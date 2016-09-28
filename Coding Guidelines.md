@@ -461,7 +461,7 @@ Qt5](http://woboq.com/blog/cpp11-in-qt5.html).
 
 <http://en.cppreference.com/w/cpp/language/list_initialization>
 
-Use\!
+Use with caution\!
 
 **WARNING** on windows, they are not well supported with QT4. see the
 following links for details

@@ -76,7 +76,7 @@ page](Build%20Windows%20installer).)*
             `/p:VCTargetsPath="C:\Program Files
             (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\\"`
 4.  Download the latest [Qt 4.x
-    Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.7.zip).
+    Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.zip).
     Unpack the zip archive into **WINLIB\_PATH\\build**
 5.  Download the [ASIO
     SDK](http://www.steinberg.net/en/company/developers.html). You will

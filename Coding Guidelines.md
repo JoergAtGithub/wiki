@@ -463,6 +463,12 @@ Qt5](http://woboq.com/blog/cpp11-in-qt5.html).
 
 Use\!
 
+\*WARNING\* on windows, they are not well supported with QT4. see the
+following links for details
+<https://sourceforge.net/p/mixxx/mailman/message/34805913/>
+<https://bugs.launchpad.net/mixxx/+bug/1627826>
+<https://github.com/mixxxdj/mixxx/pull/1019>
+
 ### static\_assert
 
 Use\!

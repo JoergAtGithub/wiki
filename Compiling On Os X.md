@@ -300,8 +300,10 @@ Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
 code from our git repository:
 
-    git clone -b 1.11 https://github.com/mixxxdj/mixxx.git (for current stable)
-    git clone https://github.com/mixxxdj/mixxx.git (for latest trunk)
+    git clone https://github.com/mixxxdj/mixxx.git 
+    
+    git checkout master (for latest trunk)
+    git checkout release-2.0.0 -b release-2.0.0 (for current stable)
 
 If you wanted to update later to a newer git snapshot, you would go back
 to the mixxx directory and run:

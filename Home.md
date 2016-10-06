@@ -24,6 +24,8 @@ please fix it.
     Mixxx, especially if you don't have programming skills
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
+  - [Live Calls with Skype and
+    Mixxx](https://www.primcast.com/support/live-calls-with-skype-and-mixxx/)
   - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer

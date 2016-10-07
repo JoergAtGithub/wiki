@@ -152,13 +152,12 @@ move your controller to this table.
 | [Akai LPD8](Akai%20LPD8)                                                                           | $70               | miscellaneous                           | no                    | MIDI            | 1.10.1                        | 2010     |
 | [Novation Dicer](Novation%20Dicer)                                                                 | $70 \[8\]         | pads for use with turntables            | no                    | MIDI            | 1.10                          | 2010     |
 | [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75               | pad grid                                | no                    | MIDI            | 2.0                           | 2013     |
-| [Electrix Tweaker](Electrix%20Tweaker)                                                             | $100              | 4 deck\[9\] without jog wheels          | no                    | MIDI            | 2.0                           | 2012     |
 | [Hercules DJ Control Instinct S](Hercules%20DJ%20Control%20Instinct)                               | $100              | basic 2 deck                            | yes                   | MIDI            | 1.10.1                        | 2015     |
-| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150              | 2 deck all-in-one                       | no                    | MIDI            | 2.1\[10\]                     | 2015     |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $250              | 2 deck all-in-one                       | yes                   | MIDI            | 2.1\[11\]                     | 2015     |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck\[12\] all-in-one                 | yes                   | MIDI            | 2.0                           | 2015     |
+| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150              | 2 deck all-in-one                       | no                    | MIDI            | 2.1\[9\]                      | 2015     |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $250              | 2 deck all-in-one                       | yes                   | MIDI            | 2.1\[10\]                     | 2015     |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck\[11\] all-in-one                 | yes                   | MIDI            | 2.0                           | 2015     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                       | yes                   | MIDI            | 1.11                          | 2011     |
-| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | $300              | 4 deck\[13\] all-in-one                 | yes                   | MIDI            | 1.11                          | 2010     |
+| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | $300              | 4 deck\[12\] all-in-one                 | yes                   | MIDI            | 1.11                          | 2010     |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | $400              | 4 deck all-in-one                       | yes                   | MIDI            | 1.11                          | 2012     |
 | [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                       | yes                   | MIDI            | 1.10                          | 2012     |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                       | yes                   | MIDI            | 2.0                           | 2015     |
@@ -175,6 +174,7 @@ move your controller to this table.
 | [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued      | 4 decks                                 | no                    | MIDI            | 1.11                          | 2009     |
 | [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued      | 2 deck mixer                            | no                    | MIDI            | 1.10.1                        | 2009     |
 | [eks Otus](eks%20Otus)                                                                             | discontinued      | 1 turntable + 2 deck mixer              | yes                   | HID             | 1.11                          | 2008     |
+| [Electrix Tweaker](Electrix%20Tweaker)                                                             | discontinued      | 4 deck\[13\] without jog wheels         | no                    | MIDI            | 2.0                           | 2012     |
 | [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued      | knobs + crossfader                      | no                    | MIDI            | 1.6                           | 2006     |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued      | 2 deck mixer                            | no                    | MIDI            | 1.6                           | 2006     |
 | [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued      | basic 2 deck                            | no                    | MIDI            | 1.11                          | 2011     |
@@ -651,13 +651,13 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
 
 8.  The Novation Dicer is priced per pair.
 
-9.  switching between decks 1/3 and decks 2/4
+9.  This mapping is compatible with Mixxx 2.0 and will be included with
+    Mixxx when Mixxx 2.1 is released.
 
 10. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-11. This mapping is compatible with Mixxx 2.0 and will be included with
-    Mixxx when Mixxx 2.1 is released.
+11. switching between decks 1/3 and decks 2/4
 
 12. switching between decks 1/3 and decks 2/4
 

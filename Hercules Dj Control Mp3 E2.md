@@ -1,19 +1,32 @@
-# Hercules DJ Control MP3 e2
+# Hercules DJ Control MP3 e2 / MP3 LE / Glow
 
-[[/media/16445_.jpg|]]
+[[/media/16445_.jpg|16445\_.jpg]]
 
-The Hercules DJ Control MP3 e2 is a USB controller. The controller does
-not have a built in sound card, so a [splitter
+MP3 e2
+
+[[/media/hardware/hercules-dj-control-mp3-le.jpeg|hercules-dj-control-mp3-le.jpeg]]
+
+MP3 LE
+
+[[/media/hardware/hercules-dj-control-glow.jpeg|hercules-dj-control-glow.jpeg]]
+
+Glow
+
+The Hercules DJ Control MP3 e2, MP3 LE, and Glow are USB controllers
+that have identical controls and share the same mapping. These
+controllers do not have a built in sound card, so a [splitter
 cable](hardware%20compatibility#splitter%20cables) or [separate sound
 card](hardware%20compatibility#USB%20sound%20cards) is recommended for
-use with it. The DJ Control MP3 e2 is not a class compliant MIDI device
-and works in Mixxx as a USB bulk data controller. [Older versions of
+use with it. They are not class compliant MIDI device and work in Mixxx
+as a USB bulk data controller. [Older versions of
 Mixxx](Hercules%20DJ%20Control%20MP3%20e2%20old) required using
 Hercules' MIDI driver, but it is now recommend to not use the Hercules
 driver, whether you use Windows, Mac OS X, or GNU/Linux. If you have it
 installed, it is recommended to uninstall the driver and upgrade to the
 [latest version of Mixxx](http://mixxx.org/download) if you have not
-already.
+already. Support for using the MP3 LE and Glow as USB Bulk controllers
+without the driver is available in development versions of Mixxx and
+will be included in Mixxx 2.1.
 
 The mapping is included in Mixxx and allows you to manipulate 4 decks, 2
 at a time, switching Deck A (left) between Channel 1 and 3 and Deck B
@@ -236,7 +249,7 @@ Loop/Fx button to switch to Loop mode.*
 Led blink: master<br />
 Fixed led: Follower<br />
 Led off: none</td>
-<td>Master tempo</td>
+<td>Master tempo (MP3 e2) / Pitch reset (MP3 LE &amp; Glow)</td>
 <td>2</td>
 </tr>
 <tr class="odd">

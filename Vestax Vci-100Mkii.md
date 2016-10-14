@@ -71,9 +71,7 @@ other deck is pressed.** Changes after the previous version are in bold.
     *set next effect to it*** \[Select EffectUnit3/4\] **{Select
     Effect2\[3\] of the EffectUnit}**
 3.  Parameter1 of Effect1**/2** of the EffectUnit **\[set link to super
-    knob\]((left-right inverse -\> right inverse -\> left inverse -\>
-    full inverse -\> none -\> full -\> left -\> right -\> left-right
-    (use Deere skin to show the state) ))**
+    knob\]\[4\] \[5\]**
 4.  Parameter2 of Effect1**/2** of the EffectUnit **\[set link to super
     knob\]**
 5.  Parameter3 of Effect1**/2** of the EffectUnit **\[set link to super
@@ -84,7 +82,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 9.  EQ low
 10. **Pitch (up and down to 3 semitones continuously, or on keylock
     *discretely*)**
-11. Filter (high pass only)\[4\]
+11. Filter (high pass only)\[6\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -103,7 +101,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (default to 4 beats) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
+28. Halve **\[Jump backward by\]** the default length,\[7\] or in loop
     *Halve **\[Move it backward by\]** the loop length*
 29. Double **\[Jump forward by\]** the default length, or in loop
     *Double **\[Move it forward by\]** the loop length*
@@ -136,11 +134,16 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 
 3.  use Deere skin to show the state
 
-4.  see [the
+4.  left-right inverse -\> right inverse -\> left inverse -\> full
+    inverse -\> none -\> full -\> left -\> right -\> left-right
+
+5.  use Deere skin to show the state
+
+6.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     or use [Controller
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-5.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+7.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4

@@ -10,15 +10,15 @@ Vestax went out of business in 2014.
 
 ## Mapping for Mixxx 2.0
 
-Functions in square brackets are executed instead if a shift button is
+\[Functions\] in brackets are executed if a shift button of the deck is
 pressed.
 
-1.  Previous effect \[Select FX1/2\]
-2.  Next effect \[Select FX3/4\]
-3.  FX parameter1
-4.  FX parameter2
-5.  FX parameter3
-6.  FX wet/dry mix
+1.  Set previous effect chain to the EffectUnit \[Select EffectUnit1/2\]
+2.  Set next effect chain to the EffectUnit \[Select EffectUnit3/4\]
+3.  Parameter1 of Effect1 of the EffectUnit
+4.  Parameter2 of Effect1 of the EffectUnit
+5.  Parameter3 of Effect1 of the EffectUnit
+6.  Wet/dry mix of the EffectUnit
 7.  EQ high
 8.  EQ mid
 9.  EQ low
@@ -52,32 +52,39 @@ pressed.
 34. Slip mode (affect scratch, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
-36. FX1 \[FX3\]
-37. FX2 \[FX4\]
+36. Enable EffectUnit1 \[EffectUnit3\]
+37. Enable EffectUnit2 \[EffectUnit4\]
 38. Up: previous track and scroll, Down: next track and scroll, Left:
     load to left, Right: load to right, Push: load to first stopped
 39. Channel select
 
 ## Mapping for Mixxx Development
 
-Functions in square brackets are executed instead if a shift button is
-pressed. Changes after the previous version are in bold.
+\[Functions\] in brackets are executed if a shift button of the deck is
+pressed. **{Functions} in braces are executed if a shift button of the
+other deck is pressed.** Changes after the previous version are in bold.
 
-1.  Previous effect \[Select FX1/2\]
-2.  Next effect \[Select FX3/4\]
-3.  FX parameter1 **\[set link to super knob\]((left-right inverse -\>
-    right inverse -\> left inverse -\> full inverse -\> none -\> full
-    -\> left -\> right -\> left-right (use Deere skin to show the state)
-    ))**
-4.  FX parameter2 **\[set link to super knob\]**
-5.  FX parameter3 **\[set link to super knob\]**
-6.  **FX super knob \[wet/dry mix\]**
+1.  Set previous effect chain to the EffectUnit, **or if Effect2 is
+    selected *set previous effect to it*** \[Select EffectUnit1/2\]
+    **{Select Effect1 of the EffectUnit}**
+2.  Set next effect chain to the EffectUnit, **or if Effect2 is selected
+    *set next effect to it*** \[Select EffectUnit3/4\] **{Select
+    Effect2\[3\] of the EffectUnit}**
+3.  Parameter1 of Effect1**/2** of the EffectUnit **\[set link to super
+    knob\]((left-right inverse -\> right inverse -\> left inverse -\>
+    full inverse -\> none -\> full -\> left -\> right -\> left-right
+    (use Deere skin to show the state) ))**
+4.  Parameter2 of Effect1**/2** of the EffectUnit **\[set link to super
+    knob\]**
+5.  Parameter3 of Effect1**/2** of the EffectUnit **\[set link to super
+    knob\]**
+6.  **Super knob \[wet/dry mix\]** of the EffectUnit
 7.  EQ high
 8.  EQ mid
 9.  EQ low
 10. **Pitch (up and down to 3 semitones continuously, or on keylock
     *discretely*)**
-11. Filter (high pass only)\[3\]
+11. Filter (high pass only)\[4\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -96,7 +103,7 @@ pressed. Changes after the previous version are in bold.
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (default to 4 beats) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[4\] or in loop
+28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
     *Halve **\[Move it backward by\]** the loop length*
 29. Double **\[Jump forward by\]** the default length, or in loop
     *Double **\[Move it forward by\]** the loop length*
@@ -107,8 +114,8 @@ pressed. Changes after the previous version are in bold.
 34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
-36. FX1 \[FX3\]
-37. FX2 \[FX4\]
+36. Enable EffectUnit1 \[EffectUnit3\]
+37. Enable EffectUnit2 \[EffectUnit4\]
 38. Up: previous track and scroll, Down: next track and scroll, Left:
     load to left, Right: load to right, **Push: maximize library**
 39. Channel select
@@ -116,7 +123,7 @@ pressed. Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-10-9, still compatible with 2.0)
+(2016-11-1, still compatible with 2.0)
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -127,11 +134,13 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
 
-3.  see [the
+3.  use Deere skin to show the state
+
+4.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     or use [Controller
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-4.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+5.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4

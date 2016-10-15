@@ -66,10 +66,10 @@ other deck is pressed.** Changes after the previous version are in bold.
 
 1.  Set previous effect chain to the EffectUnit, **or if Effect2 is
     selected *Set previous effect to it*** \[Select EffectUnit1/2\]
-    **{Select Effect1 of the EffectUnit}**
+    **{Select Effect1}**
 2.  Set next effect chain to the EffectUnit, **or if Effect2 is selected
     *Set next effect to it*** \[Select EffectUnit3/4\] **{Select
-    Effect2\[3\] of the EffectUnit}**
+    Effect2}\[3\]**
 3.  Parameter1 of Effect1**/2** of the EffectUnit **\[Set the link to
     super knob\]\[4\] \[5\]**
 4.  Parameter2 of Effect1**/2** of the EffectUnit **\[Set the link to

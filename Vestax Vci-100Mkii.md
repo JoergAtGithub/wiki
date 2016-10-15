@@ -80,7 +80,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 7.  EQ high
 8.  EQ mid
 9.  EQ low
-10. **Pitch (up and down to 3 semitones continuously, or on keylock
+10. **Pitch (up and down to 3 semitones continuously, or in keylock mode
     *discretely*)**
 11. Filter (high pass only)\[6\]
 12. **Gain**

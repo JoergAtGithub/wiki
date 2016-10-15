@@ -65,18 +65,18 @@ pressed. **{Functions} in braces are executed if a shift button of the
 other deck is pressed.** Changes after the previous version are in bold.
 
 1.  Set previous effect chain to the EffectUnit, **or if Effect2 is
-    selected *set previous effect to it*** \[Select EffectUnit1/2\]
+    selected *Set previous effect to it*** \[Select EffectUnit1/2\]
     **{Select Effect1 of the EffectUnit}**
 2.  Set next effect chain to the EffectUnit, **or if Effect2 is selected
-    *set next effect to it*** \[Select EffectUnit3/4\] **{Select
+    *Set next effect to it*** \[Select EffectUnit3/4\] **{Select
     Effect2\[3\] of the EffectUnit}**
-3.  Parameter1 of Effect1**/2** of the EffectUnit **\[set link to super
-    knob\]\[4\] \[5\]**
-4.  Parameter2 of Effect1**/2** of the EffectUnit **\[set link to super
-    knob\]**
-5.  Parameter3 of Effect1**/2** of the EffectUnit **\[set link to super
-    knob\]**
-6.  **Super knob \[wet/dry mix\]** of the EffectUnit
+3.  Parameter1 of Effect1**/2** of the EffectUnit **\[Set the link to
+    super knob\]\[4\] \[5\]**
+4.  Parameter2 of Effect1**/2** of the EffectUnit **\[Set the link to
+    super knob\]**
+5.  Parameter3 of Effect1**/2** of the EffectUnit **\[Set the link to
+    super knob\]**
+6.  **Super knob \[Wet/dry mix\]** of the EffectUnit
 7.  EQ high
 8.  EQ mid
 9.  EQ low

@@ -69,20 +69,20 @@ other deck is pressed.** Changes after the previous version are in bold.
     **{Select Effect1}**
 2.  Set next effect chain to the EffectUnit, **or if Effect2 is selected
     *Set next effect to it*** \[Select EffectUnit3/4\] **{Select
-    Effect2}\[3\]**
-3.  Parameter1 of Effect1**/2** of the EffectUnit **\[Set the link to
-    super knob\]\[4\] \[5\]**
+    Effect2\[3\]}**
+3.  Parameter1 of Effect1**/2** of the EffectUnit **\[Set the link\[4\]
+    to super knob\]\[5\]**
 4.  Parameter2 of Effect1**/2** of the EffectUnit **\[Set the link to
     super knob\]**
 5.  Parameter3 of Effect1**/2** of the EffectUnit **\[Set the link to
     super knob\]**
-6.  **Super knob \[Wet/dry mix\]** of the EffectUnit
+6.  **Super knob\[6\] \[Wet/dry mix\]** of the EffectUnit
 7.  EQ high
 8.  EQ mid
 9.  EQ low
 10. **Pitch (up and down to 3 semitones continuously, or in keylock mode
     *discretely*)**
-11. Filter (high pass only)\[6\]
+11. Filter (high pass only)\[7\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -101,7 +101,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (default to 4 beats) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[7\] or in loop
+28. Halve **\[Jump backward by\]** the default length,\[8\] or in loop
     *Halve **\[Move it backward by\]** the loop length*
 29. Double **\[Jump forward by\]** the default length, or in loop
     *Double **\[Move it forward by\]** the loop length*
@@ -121,7 +121,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-11-1, still compatible with 2.0)
+(2016-11-1, still compatible with 2.0)\[9\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -134,16 +134,21 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 
 3.  use Deere skin to show the state
 
-4.  left-right inverse -\> right inverse -\> left inverse -\> full
+4.  use Deere skin to show the state
+
+5.  left-right inverse -\> right inverse -\> left inverse -\> full
     inverse -\> none -\> full -\> left -\> right -\> left-right
 
-5.  use Deere skin to show the state
+6.  use Deere skin to show the state
 
-6.  see [the
+7.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     or use [Controller
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-7.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+8.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
+
+9.  see [Controller Mapping File
+    Locations](controller_mapping_file_locations) for use

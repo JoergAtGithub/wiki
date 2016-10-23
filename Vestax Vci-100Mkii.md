@@ -76,7 +76,8 @@ other deck is pressed.** Changes after the previous version are in bold.
     super knob\]**
 5.  Parameter3 of Effect1**/2** of the EffectUnit **\[Set the link to
     super knob\]**
-6.  **Super knob\[6\] \[Wet/dry mix\]** of the EffectUnit
+6.  Wet/dry mix of the EffectUnit, **or *Super knob*\[6\] if any
+    parameters are linked to it**
 7.  EQ high
 8.  EQ mid
 9.  EQ low
@@ -121,7 +122,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-11-1, still compatible with 2.0)\[9\]
+(2016-11-2, still compatible with 2.0)\[9\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

@@ -26,7 +26,7 @@ driver and upgrade to the [latest version of
 Mixxx](http://mixxx.org/download) if you have not already. Support for
 using the MP3 LE and Glow as USB Bulk controllers without the driver on
 Linux is available in development versions of Mixxx and will be included
-in Mixxx 2.1.
+in Mixxx 2.1, but the MP3 e2 works with Mixxx 2.0.
 
 The mapping is included in Mixxx and allows you to manipulate 4 decks, 2
 at a time, switching Deck A (left) between Channel 1 and 3 and Deck B

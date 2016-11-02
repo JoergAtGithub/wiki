@@ -28,7 +28,7 @@ osc-server.
 
 If you want to use the data in your own application you can set up your
 own server. An example implementation can be found here:
-<http:%%//%%liblo.sourceforge.net/examples/>
+<http://liblo.sourceforge.net/examples/>
 
 ### OSC-Sceme:
 

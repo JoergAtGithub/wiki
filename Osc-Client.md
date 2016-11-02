@@ -11,9 +11,13 @@ documentation.”
 
 ## What is implemented in Mixxx
 
-This branch can send for each deck: \* if it is playing \* the title, \*
-the volume, \* the (relative) play-position \* the duration of the
-loaded song
+This branch can send for each deck:
+
+  - if it is playing 
+  - the title, 
+  - the volume, 
+  - the (relative) play-position 
+  - the duration of the loaded song
 
 Additionally the number of decks is transmitted
 

@@ -527,10 +527,10 @@ MyController.wheelTurn = function (channel, control, value, status, group) {
     
     // A: For a control that centers on 0:
     var newValue;
-    if ((value - 64) > 0) {
-        newValue = value-128;
-    } else {
+    if (value < 64) {
         newValue = value;
+    } else {
+        newValue = value - 128;
     }
 
     // B: For a control that centers on 0x40 (64):

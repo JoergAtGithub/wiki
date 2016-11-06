@@ -964,6 +964,7 @@ MyController.shiftButton = function (channel, control, value, status, group) {
     // This function is mapped to the incoming MIDI signals for the shift button in the XML file
     if (value === 127) { // shift button pressed
         engine.connectControl(group, key, true); // disconnect callbacks for unshifted layer
+        // see "Automatic reactions to changes in Mixxx" section above
         MyController.activeButtons = MyController.shiftedButtons;
         engine.connectControl(group, key); // connect callbacks for shifted layer
     } else { // shift button released

@@ -143,11 +143,12 @@ does work for switching between dry/wet and the superknob though.
     to set up effect chains. (These are not visible in the LateNight
     skin). The left button toggles whether that effect is enabled (the
     whole effect unit still has to be enabled for a deck for it to be
-    audible). The two purple buttons in the middle scroll through the
-    available effects. The button on the right sets the parameter knobs
-    to control that effect's parameters. The bottom row toggles the
-    effect unit on the headphones, master mix, microphone 1, and
-    auxiliary input 1.
+    audible). With shift, the left button resets the effect's parameters
+    to their default values. The two purple buttons in the middle scroll
+    through the available effects. The button on the right sets the
+    parameter knobs to control that effect's parameters. The bottom row
+    toggles the effect unit on the headphones, master mix, microphone 1,
+    and auxiliary input 1.
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

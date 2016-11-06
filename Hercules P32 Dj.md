@@ -110,9 +110,7 @@ Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4. Press
 Shift + Headphone button to activate the effect unit on the headphone
 output.
 
-Turn the FX AMOUNT knobs to adjust effect parameters. Press shift and
-one of the ON/MACRO buttons to select which effect in the Effect Unit
-that the parameter knobs control.
+Turn the FX AMOUNT knobs to adjust effect parameters.
 
 Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
@@ -135,7 +133,16 @@ does work for switching between dry/wet and the superknob though.
   - **Loop mode**: Control manual loops. From left to right, the pads
     set the loop in point, loop out point, and toggle the loop (without
     changing its size).
-  - **Slicer mode**: not mapped yet
+  - **Slicer mode**: various controls for effects. The top three rows
+    each control an individual effect in the effect unit, allowing you
+    to set up effect chains. (These are not visible in the LateNight
+    skin). The left button toggles whether that effect is enabled (the
+    whole effect unit still has to be enabled for a deck for it to be
+    audible). The two purple buttons in the middle scroll through the
+    available effects. The button on the right sets the parameter knobs
+    to control that effect's parameters. The bottom row toggles the
+    effect unit on the headphones, master mix, microphone 1, and
+    auxiliary input 1.
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

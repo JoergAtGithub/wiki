@@ -14,6 +14,8 @@
     controller mapping
     folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder))
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=8132)
+  - [DJTechTools
+    review](http://djtechtools.com/2016/06/22/can-pads-replace-jogs-hercules-p32-dj-controller/)
   - [Digital DJ Tips
     review](http://www.digitaldjtips.com/2016/03/review-video-hercules-p32-dj-grid-pad-controller/)
 

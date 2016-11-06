@@ -148,7 +148,7 @@ does work for switching between dry/wet and the superknob though.
     through the available effects. The button on the right sets the
     parameter knobs to control that effect's parameters. The bottom row
     toggles the effect unit on the headphones, master mix, microphone 1,
-    and auxiliary input 1.
+    and auxiliary input 1 (from left to right).
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

@@ -108,9 +108,7 @@ The effects controls on the left control Effect Unit 1, the controls on
 the right control Effect Unit 2. This does not change when decks are
 toggled between decks 1/3 or 2/4.
 
-Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4. Press
-Shift + Headphone button to activate the effect unit on the headphone
-output.
+Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4.
 
 Turn the FX AMOUNT knobs to adjust effect parameters.
 

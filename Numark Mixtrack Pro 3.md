@@ -34,22 +34,9 @@ the values below at the very top of the JavaScript file
     the other deck
   - **beatlooprollActivate**: Use beatlooproll (slip mode loop) instead
     of beatloop command when using pads in Autoloop mode
-  - **PADLoopButtonHold**: whether to keep loops active only while a pad
-    is held down when the pads are in Autoloop mode
-  - **PADSampleButtonHold**: whether to keep samplers playing only while
-    a pad is held down when the pads are in Sample mode
-  - **OnBeatActiveFlash**: whether the TAP LED will flash to the beat
-    (except when Shift Lock is on)
-  - **TapExpandLibrary**: If "true": TAP button will be used to
-    expand/contract library view and Shift TAP will trigger TAP
-    function; "false" will invert the functionality
   - **DarkMetalSkin**: Specify if Dark Metal skin is used for your
     installation. This is required in order for Expand Library feature
     to work properly. 
-  - **BeatKnobAsSamplerVolume**: Use Beat knob to adjust Sampler Volume.
-    If "true": Deck 1 adjusts Samplers 1-4; Deck 2 adjusts Samplers 5-8
-    and Shift + Beat knob moves beat grid. If false: beat knob will
-    adjust beatgrid, shift + knob will adjust grid size
   - **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync
     button Double Press. 
 

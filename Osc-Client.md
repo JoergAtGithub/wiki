@@ -6,7 +6,7 @@
 synthesizers, computers, and other multimedia devices for purposes such
 as musical performance or show control. OSC’s advantages include
 interoperability, accuracy, flexibility and enhanced organization and
-documentation.” \[<https://en.wikipedia.org/wiki/Open_Sound_Control>\]
+documentation.” \[ <https://en.wikipedia.org/wiki/Open_Sound_Control> \]
 
 ## What is implemented in Mixxx
 

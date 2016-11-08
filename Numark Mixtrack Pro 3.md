@@ -116,7 +116,13 @@ the deck
 ### 9\. Filter
 
 Adjusts the amount of the filter effect. Turning the knob left controls
-the low pass filter; turning it right controls the high pass filter.
+the low pass filter; turning it right controls the high pass filter.  
+**Shift + Filter:** Adjust FX 1, parameter 4 of the Effect Unit assigned
+to the deck  
+**Padmode + Filter:** Adjust FX 2, parameter 4 of the Effect Unit
+assigned to the deck  
+**Tap + Filter:** Adjust FX 3, parameter 4 of the Effect Unit assigned
+to the deck
 
 ### 10\. Cue/PFL/Headphones
 

@@ -105,10 +105,13 @@ the deck
 
 ### 8 Low EQ Knobs
 
-Adjust Low frequencies of the deck Shift + Mid: Adjust FX 1, parameter 3
-of the Effect Unit assigned to the deck Padmode + Mid : Adjust FX 2,
-parameter 3 of the Effect Unit assigned to the deck Tap + Mid : Adjust
-FX 3 parameter 3 of the Effect Unit assigned to the deck
+Adjust Low frequencies of the deck  
+**Shift + Mid:** Adjust FX 1, parameter 3 of the Effect Unit assigned to
+the deck  
+**Padmode + Mid:** Adjust FX 2, parameter 3 of the Effect Unit assigned
+to the deck  
+**Tap + Mid:** Adjust FX 3 parameter 3 of the Effect Unit assigned to
+the deck
 
 ### 9\. Filter
 

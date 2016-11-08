@@ -200,9 +200,12 @@ stopped when finger is lifted.
 
 ### 21\. Tap BPM
 
-Press this 4 or more times on beat to manually enter a new BPM. The
+Press this 8 or more times on beat to manually enter a new BPM. The
 software will ignore the track's BPM and follow your manually entered
-tempo.
+tempo.  
+**Shift + Tap:** Toggles deck between deck 1-3 (left side) or deck 2-4
+(right side). TAP LED will be RED when deck 3 is active (Left Tap) or
+deck 4 is active (Right Tap)
 
 ### 22\. Wheel button
 

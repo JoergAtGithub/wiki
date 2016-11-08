@@ -42,3 +42,5 @@ own server. An example implementation can be found here:
 
 The messages are sent every half second and on ui changes (e.g. if play
 was pressed)
+
+## How to test?

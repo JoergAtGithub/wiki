@@ -83,7 +83,7 @@ If the [smartPFL option](#configuration-options) is set to true, the
 Cue/PFL button is automatically activated on the deck being loaded and
 deactivated on the other deck.
 
-### 6 High EQ Knobs
+### 6\. High EQ Knobs
 
 Adjust High frequencies of the deck Shift + High : Adjust FX 1,
 parameter 1 of the Effect Unit assigned to the deck Padmode + high :

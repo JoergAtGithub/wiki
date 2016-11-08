@@ -153,10 +153,9 @@ direction
 
 ### 16\. Touch Strip
 
-**Left Strip:** Use the Touch Strip to adjust the Effect Rack 1
-Superknob  
-**Right Strip:** Use the Touch Strip to adjust the Effect Rack 1 Dry/Wet
-mix ratio  
+Use the Touch Strip to adjust the deck’s Effect Unit Superknob. If
+Effects are assigned to Instant FX , they will be enabled instantly on
+touch, and disabled on finger lift.  
 **Shift + Touch Strip:** search through a track’s timeline
 
 ### 17\. Beats Multiplier

@@ -329,9 +329,9 @@ LED will blink Yellow
   - **Shift + Auto 4** – Sets and starts playback of a 1-beat
     autoloop.  
 
-**Configuration Option:** If the
-[PADLoopButtonPressed](#configuration-options) option is set to true,
-the loop will only be active while the pad is held down.
+If the pad is held down more than .5 second (Long Press), the Autoloop
+will be disabled once pad is released. On Short Press, the pad will
+behave as a normal button (ON on first press, OFF on second press)
 
 #### Sample Mode
 
@@ -358,9 +358,9 @@ disabled
     \* **Deck 2 - Sample 4** – Plays the sample assigned to Sample Pad 8
     with the unit Sync activated.  
 
-**Configuration Option:** If the
-[PADSampleButtonPressed](#configuration-options) option is set to true,
-the sample will only play as long as the pad is held down.
+If the pad is held down more than .5 second (Long Press), the sampler
+will be disabled once pad is released. On Short Press, the pad will
+behave as a normal button (ON on first press, OFF on second press)
 
 ### 30\. Master Output LEDs
 

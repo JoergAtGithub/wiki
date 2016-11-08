@@ -166,12 +166,37 @@ right (turn clockwise) **Padmode + Beats:** Adjust Sampler Volume. Left
 beat knob will adjusts Samplers 1-4; Right knob will adjusts Samplers
 5-8
 
-### 18-20. FX 1/2/3 On/Off
+### 18\. FX 1 On/Off
 
-Assigns selected deck to Effect Rack 1, Unit 1/2/3  
-**Shift + FX1/2/3** to select from the list of available effects for the
-respective effect unit. Left deck selects the previous effect, right
-deck selects the next effect.
+Enables FX 1 of the deck’s Effect Unit (Deck 1 = Unit 1, Deck 2 = Unit
+2, Deck 3 = Unit 3, Deck 4 = Unit 4)  
+**Shift + FX 1:** Select from the list of available effects for the
+respective effect.  
+**Padmode + FX 1:** Activates Brake effect  
+**Tap + FX 1:** Assign / unassign FX 1 to Instant FX. When assigned to
+Instant FX, the FX is instantly activated by touching the Strip and
+stopped when finger is lifted.
+
+### 19\. FX 2 On/Off
+
+Enables FX 2 of the deck’s Effect Unit (Deck 1 = Unit 1, Deck 2 = Unit
+2, Deck 3 = Unit 3, Deck 4 = Unit 4)  
+**Shift + FX 2:** Select from the list of available effects for the
+respective effect.  
+**Padmode + FX 2:** Activates Spinback effect  
+**Tap + FX 2:** Assign / unassign FX 1 to Instant FX. When assigned to
+Instant FX, the FX is instantly activated by touching the Strip and
+stopped when finger is lifted.
+
+### 20\. FX 3 On/Off
+
+Enables FX 3 of the deck’s Effect Unit (Deck 1 = Unit 1, Deck 2 = Unit
+2, Deck 3 = Unit 3, Deck 4 = Unit 4)  
+**Shift + FX 3:** Select from the list of available effects for the
+respective effect.  
+**Tap + FX 3:** Assign / unassign FX 1 to Instant FX. When assigned to
+Instant FX, the FX is instantly activated by touching the Strip and
+stopped when finger is lifted.
 
 ### 21\. Tap BPM
 

@@ -93,12 +93,15 @@ assigned to the deck
 **Tap + high :** Adjust FX 2, parameter 1 of the Effect Unit assigned to
 the deck
 
-### 7 Mid EQ Knobs
+### 7\. Mid EQ Knobs
 
-Adjust Mid frequencies of the deck Shift + Mid: Adjust FX 1, parameter 2
-of the Effect Unit assigned to the deck Padmode + Mid: Adjust FX 2,
-parameter 2 of the Effect Unit assigned to the deck Tap + Mid: Adjust FX
-3, parameter 2 of the Effect Unit assigned to the deck
+Adjust Mid frequencies of the deck  
+**Shift + Mid:** Adjust FX 1, parameter 2 of the Effect Unit assigned to
+the deck  
+**Padmode + Mid:** Adjust FX 2, parameter 2 of the Effect Unit assigned
+to the deck  
+**Tap + Mid:** Adjust FX 3, parameter 2 of the Effect Unit assigned to
+the deck  
 
 ### 8 Low EQ Knobs
 

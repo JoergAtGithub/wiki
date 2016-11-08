@@ -160,12 +160,11 @@ touch, and disabled on finger lift.
 
 ### 17\. Beats Multiplier
 
-Moves the beat grid left (turn counterclockwise) or right (turn
-clockwise)  
-**Shift + Beats:** adjust beatgrid size **Configurable option:**  
-If BeatKnobAsSamplerVolume is set to "true", use Beat knob to adjust
-Sampler Volume. Deck 1 beat knob will adjusts Samplers 1-4; Deck 2 knob
-will adjusts Samplers 5-8. Shift + Beat knob will move the beat grid.
+Adjusts the Dry/Mix ratio of the deck’s Effect Unit  
+**Shift + Beats:** Moves the beat grid left (turn counterclockwise) or
+right (turn clockwise) **Padmode + Beats:** Adjust Sampler Volume. Left
+beat knob will adjusts Samplers 1-4; Right knob will adjusts Samplers
+5-8
 
 ### 18-20. FX 1/2/3 On/Off
 

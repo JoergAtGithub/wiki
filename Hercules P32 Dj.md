@@ -159,8 +159,7 @@ does work for switching between dry/wet and the superknob though.
     sample. Press a blue pad with shift to eject a sample. Note that
     samplers are independent from decks; the left grid controls samplers
     1-16 and the right grid controls samplers 17-32. 
-  - **Shift + sync**: toggle quantize
-  - **Shift + cue**: align beat grid to current position
+  - **Shift + sync**: sync beats without enabling sync lock
   - **Shift + play**: go to beginning of track and stop
   - **Shift + load**: ejects a track from the deck
   - **EQ knobs, volume faders, crossfader, headphone button, play, cue,

@@ -133,9 +133,13 @@ does work for switching between dry/wet and the superknob though.
     activate different modes
   - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a red pad
     to activate a hotcue. Press a red pad with shift to delete a hotcue.
-  - **Loop mode**: Control manual loops. From left to right, the pads
-    set the loop in point, loop out point, and toggle the loop (without
-    changing its size).
+  - **Loop mode**: Control manual loops and other miscellaneous
+    functions. On the top row, from left to right, the pads set the loop
+    in point, loop out point, and toggle the loop (without changing its
+    size). On the bottom row, the two purple buttons temporarily
+    decrease/increase the playback speed while they are held down for
+    beatmatching. The button to the right of those shifts the beat grid
+    to the current position. The button on the right toggles quantize. 
   - **Slicer mode**: various controls for effects. The top three rows
     each control an individual effect in the effect unit, allowing you
     to set up effect chains. (These are not visible in the LateNight

@@ -126,9 +126,10 @@ does work for switching between dry/wet and the superknob though.
 
 ### Other controls
 
-  - **Record button**: toggles recording on and off. With shift, toggles
-    between decks 1 & 3 on the left and decks 2 & 4 on the right.
-  - **Slip button**: not mapped yet
+  - **Record button**: toggles recording on and off.
+  - **Slip button**: toggles slip mode on and off for all decks. With
+    shift, toggles between decks 1 & 3 on the left and decks 2 & 4 on
+    the right.
   - **Pad grid**: Press the Hotcue/Loop/Slicer/Sampler buttons to
     activate different modes
   - **Hotcue mode**: Press an unlit pad to set a hotcue. Pres a red pad

@@ -5,34 +5,32 @@
   - [Manufacturer's product
     page](http://www.hercules.com/us/DJ-Music/bdd/p/141/dj-console-4-mx/)
 
-The Hercules DJ Console 4-Mx is a USB MIDI controller with a built in
-sound card. It is very similar to the [Hercules DJ Console
-RMX](Hercules%20DJ%20Console%20RMX), but with switches for 4 decks
+The Hercules DJ Console 4-Mx is a USB controller with a built in sound
+card. It is very similar to the [Hercules DJ Console
+RMX](Hercules%20DJ%20Console%20RMX), but with switches for 4 decks.
+
+The DJ Console 4-Mx is not a USB class compliant MIDI or audio device.
+It does not work on Linux. Drivers for Mac OS X and Windows can be found
+on the [Hercules support
+page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&cid=1).
 
 ## Audio
 
 The sound card has 4 inputs and 4 outputs (2 stereo in/out). The inputs
 are switchable between line-in and phono, and also is possible to select
 different line levels (consumer -10dBV, Pro +4dBu and boost +8dBu ), so
-you can connect both cd-players and turntables on the inputs.
+you can connect both CD players and turntables on the inputs.
 
   - Inputs are RCA.
   - Outputs are RCA or 1/4" TRS balanced.
   - Microphone input is 1/4" TS
   - Headphone jack is 1/4" (6.35 mm) TRS stereo
 
-### MAC OS / Windows
-
-Drivers for MAC OS X and Windows can be found on [Hercules support
-page](http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&cid=1).
-Same package for both Audio and MIDI. On Windows, the newest drivers
-support Windows 10.
-
-### Mapping configuration in Mixxx 2.0 and above
+# Mapping
 
 Note: A mapping existed in Mixxx 1.11 which does not work correctly.  
 Note2: Those functions marked as (2.1) are implemented in a new mapping
-released the 26th of september of 2016.
+released the 26th of September of 2016.
 
 #### Master / Global controls
 

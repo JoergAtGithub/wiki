@@ -6,7 +6,7 @@
     page](http://www.numark.com/product/mixtrack-pro-3)
   - [Forum thread](http://mixxx.org/forums/viewtopic.php?f=7&t=7286)
   - [Download mapping - current
-    version: 2.0](http://mixxx.org/forums/viewtopic.php?p=30464#p30464)
+    version: 2.1](http://mixxx.org/forums/viewtopic.php?p=30795#p30795)
 
 The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
 except that the Pro version has an integrated 4 channel output sound

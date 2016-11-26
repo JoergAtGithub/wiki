@@ -351,12 +351,16 @@ Here is an example of good Javascript style:
 
 We use the automated code testing tools [JSHint](http://jshint.com/) and
 [JSBeautifier](http://jsbeautifier.org/) that check for bad practices in
-Javascript code. You can copy and paste your JS code onto those web
+JavaScript code. You can copy and paste your JS code onto those web
 pages to use them or you can use them locally on your computer with
 Node.js. Using these tools is not for making your coding skill look bad;
 they are to help you make your code even better. If you use these, you
 will already have the basics taken care of when you submit a pull
 request.
+
+JSHint can also be helpful if Mixxx says there is an error in your
+JavaScript code but Mixxx's error message does not make it clear what
+the issue is.
 
 All Javascript files for Mixxx must start with header to make sure
 JSHint doesn't generate errors for missing variables:

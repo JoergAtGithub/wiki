@@ -245,12 +245,22 @@ doesn't have them.
 
 ### Layering & Shift functions
 
+Mapping parts of a controller to do different actions in different
+conditions can be a powerful way to get more out of a limited set of
+controls. However, a mapping can be confusing to use if it is
+overcomplicated.
+
 Mapping multiple controls (shift functions) to faders and knobs is
 confusing to use. If you can, try to think of another way to map the
-alternate function. This is generally not an issue with encoders that
-rotate infinitely, buttons, pads, or touch strips. If there is a way the
-mapping can clearly indicate the active layer, such as activating a
-certain LED or changing the color of LEDs, make use of that.
+alternate function. This is not as much of an issue with encoders that
+rotate infinitely, buttons, pads, or touch strips.
+
+For shift modes that are only active while a button is held down, avoid
+making LEDs change when the shift button is pressed. It can be confusing
+if the user is pressing the shift button to access one alternate
+function and at the same time LEDs flicker for an unrelated part of the
+controller. For layers that stay activated after a button is pressed,
+somehow make the controller clearly indicate which layer is active.
 
 ### Main & Headphone gain knobs
 

@@ -257,8 +257,8 @@ rotate infinitely, buttons, pads, or touch strips.
 
 For shift modes that are only active while a button is held down, avoid
 making LEDs change when the shift button is pressed. It can be confusing
-if the user is pressing the shift button to access one alternate
-function and at the same time LEDs flicker for an unrelated part of the
+if the user presses the shift button to access one alternate function
+and at the same time LEDs flicker for an unrelated part of the
 controller. For layers that stay activated after a button is pressed,
 somehow make the controller clearly indicate which layer is active.
 

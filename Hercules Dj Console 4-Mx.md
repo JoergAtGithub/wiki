@@ -312,8 +312,9 @@ By default, it is configured in the javascript to activate it automatically when
 <tr class="odd">
 <td>Kill (Bass/ Medium/ Treble)</td>
 <td>LED</td>
-<td>(2.1) If the vumeter is activated in the javascript file, they will show a vumeter of the master or the deck (if prefader-listen is on).<br />
-They will flicker if the sound clips. \\If kill is enabled, the vumeter is temporarily disabled</td>
+<td>(2.1) If the useVuMeters option is activated in the JavaScript file, these LEDs will simulate a VU meter of the master or the deck (if prefader-listen is on).<br />
+They will flicker if the sound clips.<br />
+If EQ kill is enabled, the vumeter is temporarily disabled</td>
 </tr>
 <tr class="even">
 <td>Source 1/2</td>

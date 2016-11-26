@@ -36,6 +36,8 @@ released the 26th of September of 2016.
 
 There are several options that can be configured for this mapping. You
 can edit these by opening the Hercules-DJ-Console-4-Mx-scripts.js file
+in your [controller mapping file locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
 in a text editor like Notepad, TextEdit, or gEdit and editing the values
 at the top of the file.
 

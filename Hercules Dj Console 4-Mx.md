@@ -365,7 +365,7 @@ When a loop is set that isn't one of these four main cases, buttons 3 and 4 will
 <tr class="odd">
 <td>Keypad 1</td>
 <td>Shift</td>
-<td>(2.1) Same as click, but it will be a rolling filter (slip mode)</td>
+<td>(2.1) Same as click, but it will be a rolling loop (slip mode)</td>
 </tr>
 <tr class="even">
 <td>Keypad 1</td>
@@ -405,7 +405,7 @@ When a loop is set that isn't one of these four main cases, buttons 3 and 4 will
 <tr class="odd">
 <td>Keypad 3 to 4</td>
 <td>Shift</td>
-<td>(2.1) Same as click, but it will be a rolling filter (slip mode)</td>
+<td>(2.1) Same as click, but it will be a rolling loop (slip mode)</td>
 </tr>
 <tr class="even">
 <td>Keypad 3 to 4</td>
@@ -440,12 +440,12 @@ When a loop is set that isn't one of these four main cases, buttons 3 and 4 will
 <tr class="even">
 <td>Fx knob</td>
 <td></td>
-<td>Filter knob (the filter set in the equalizer preferences)</td>
+<td>Filter knob (the Quick Effect set in the equalizer preferences)</td>
 </tr>
 <tr class="odd">
 <td>Fx knob</td>
 <td>Shift</td>
-<td>Move the filter knob slowly (the filter set in the equalizer preferences)</td>
+<td>Move the filter knob slowly (the Quick Effect set in the equalizer preferences)</td>
 </tr>
 <tr class="even">
 <td>Fx knob</td>

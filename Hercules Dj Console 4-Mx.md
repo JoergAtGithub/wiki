@@ -28,9 +28,10 @@ you can connect both CD players and turntables on the inputs.
 
 # Mapping
 
-Note: A mapping existed in Mixxx 1.11 which does not work correctly.  
-Note2: Those functions marked as (2.1) are implemented in a new mapping
-released the 26th of September of 2016.
+A mapping existed in Mixxx 1.11 which does not work correctly.
+
+Functions marked as (2.1) are implemented in a new mapping released the
+26th of September of 2016.
 
 ## Options
 

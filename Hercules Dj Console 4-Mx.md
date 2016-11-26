@@ -32,7 +32,54 @@ Note: A mapping existed in Mixxx 1.11 which does not work correctly.
 Note2: Those functions marked as (2.1) are implemented in a new mapping
 released the 26th of September of 2016.
 
-#### Master / Global controls
+## Options
+
+There are several options that can be configured for this mapping. You
+can edit these by opening the Hercules-DJ-Console-4-Mx-scripts.js file
+in a text editor like Notepad, TextEdit, or gEdit and editing the values
+at the top of the file.
+
+  - **autoHeadMix**: Indicates if the Headphone/Master mix should
+    automatically be set to master when none of the headphone cue
+    buttons are activated.
+  - **autoHeadcueOnLoad**: Automatically enable the headphone cue select
+    (PFL) of the deck when a song is loaded. (Like in virtual-dj)
+  - **beatFlashLed**: set which LED, if any, blinks with the beat
+  - **useVuMeters**: Simulate vuMeters using the kill and source
+    buttons' LEDs. If enabled, shows master VUs, or deck VU depending if
+    prefader listen button is enabled or not.
+  - **naviScrollSpeed**: KeyRepeat speed for navigating up/down, in
+    milliseconds. 100 is a good value. Lower values make it scroll
+    faster.
+  - **crossfaderScratchCurve**: The controller has two modes to report
+    the crossfader position. The default/beatmix curve, and the scratch
+    curve. The default curve reports the real position of the control.
+    The scratch curve just crossfades on the edges. Setting this setting
+    to true, the curve will change to scratch curve when the scratch
+    mode is on (scratch button). Setting it to false will not change it,
+    so it will use the setting configured in the DJHercules Tray-icon
+    configuration.
+  - **vinylSpeed**: Playback speed of the virtual vinyl that is being
+    scratched. 45.00 and 33.33 are the common speeeds. (Lower number
+    equals faster scratch)
+  - **sensitivity**: Jog wheel sensitivity. You should configure this
+    setting to the same value than in the DJHercules tray icon
+    configuration. (Normal means 1/1). If crossfaderScratchCurve is
+    true, or the setting is changed while Mixxx is active, this value
+    will be detected automatically.
+  - **alpha**: alpha value for the scratch filter (start with 1/8
+    (0.125) and tune from there)
+  - **beta**: beta value for the scratch filter (start with alpha/32 and
+    tune from there)
+  - **deckButtonMode**: This controls the function of the deck C/deck D
+    buttons (changes the setting in the tray-icon configuration, avanced
+    tab). deckmode=0 2 Decks only, deckmode=1 2 Decks with deck switch
+    button command, deckmode=2 4 decks.
+  - **FXbuttonsSetup**: This indicates which mapping for the FX buttons
+    should Mixxx use. The possible values are: mixxx21, mixxx20, and
+    original (Hercules Manual and the default setup in Virtual DJ 7 LE)
+
+### Master / Global controls
 
 <table>
 <thead>
@@ -103,7 +150,7 @@ The microphone is always mixed in hardware. The trayicon driver configuration al
 Note: The Microphone volume and the Headphone volume controls are
 hardware controls (i.e. they don't control Mixxx's interface)
 
-#### Deck / Channel specific controls
+### Deck / Channel specific controls
 
 <table>
 <thead>
@@ -168,7 +215,7 @@ Temporarily changes the playback speed for playing tracks</td>
 <tr class="odd">
 <td>Jog wheel</td>
 <td>LED</td>
-<td>If the beatflash led has been set to jogwheel in the javascript file, the light of this button will be flashing following the beats of the song.</td>
+<td>If the beatflash led has been set to jogwheel in the JavaScript file, the light of this button will be flashing following the beats of the song.</td>
 </tr>
 <tr class="even">
 <td>Forward / Backward</td>
@@ -198,7 +245,7 @@ Temporarily changes the playback speed for playing tracks</td>
 <tr class="odd">
 <td>Sync</td>
 <td>LED</td>
-<td>If the beatflash led has been set to Sync in the javascript file, the light of this button will be flashing following the beats of the song.</td>
+<td>If the beatflash led has been set to Sync in the JavaScript file, the light of this button will be flashing following the beats of the song.</td>
 </tr>
 <tr class="even">
 <td>Sync</td>
@@ -258,7 +305,7 @@ Temporarily changes the playback speed for playing tracks</td>
 <tr class="odd">
 <td>Pitch Reset</td>
 <td>LED</td>
-<td>This led has a different meaning in Mixxx: If the beatflash led has been set to pitchreset in the javascript file, the light of this button will be flashing following the beats of the song.<br />
+<td>This led has a different meaning in Mixxx: If the beatflash led has been set to pitchreset in the JavaScript file, the light of this button will be flashing following the beats of the song.<br />
 Else, the led is on if the key lock button is enabled for this deck.</td>
 </tr>
 <tr class="even">
@@ -275,7 +322,7 @@ Else, the led is on if the key lock button is enabled for this deck.</td>
 <td>Cue Select Deck</td>
 <td></td>
 <td>Toggles on and off this deck's output to the monitor/prefader listen (headphones)<br />
-By default, it is configured in the javascript to activate it automatically when a new track is loaded in the deck.</td>
+By default, it is configured in the JavaScript to activate it automatically when a new track is loaded in the deck.</td>
 </tr>
 <tr class="odd">
 <td>Load On Left/Right Deck</td>
@@ -322,7 +369,7 @@ If EQ kill is enabled, the vumeter is temporarily disabled</td>
 <tr class="odd">
 <td>Source 1/2</td>
 <td>LED</td>
-<td>(2.1) If the vumeter is activated in the javascript file, they will show a vumeter of the master or the deck (if prefader-listen is on). If kill is enabled, the vumeter is temporarily disabled</td>
+<td>(2.1) If the vumeter is activated in the JavaScript file, they will show a vumeter of the master or the deck (if prefader-listen is on). If kill is enabled, the vumeter is temporarily disabled</td>
 </tr>
 <tr class="even">
 <td>Keypad 1 to 4</td>
@@ -479,5 +526,5 @@ When a loop is set that isn't one of these four main cases, buttons 3 and 4 will
 </table>
 
 Note: (2.1) The actions of the Keypad buttons can be changed from the
-javascript. There are three preconfigured presets corresponding to
+JavaScript. There are three preconfigured presets corresponding to
 Manual/Virtual DJ LE, Mixxx 2.0 and Mixxx 2.1.

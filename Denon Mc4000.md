@@ -105,16 +105,16 @@ track. You can adjust its total range with the Key Lock / Range button.
 
 18\. **FX Level:** Turn this knob to adjust the dry/wet mix ratio of the
 corresponding effect. The FX On button under the knob must be lit for
-the effect to be enabled. Hold Shift and turn to scroll through the list
-of effects. <span class="underline">Note: Both decks control the same FX
-unit.</span>
+the effect to be enabled for that deck. Hold Shift and turn to scroll
+through the list of effects. <span class="underline">Note: Both sides of
+the controller are mapped to FX units 1-3.</span>
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 
 20\. **FX On / Select:** Press to toggle the corresponding effect on or
 off for the given channel. Hold Shift and press to select an effect in
-the software. <span class="underline">Note: Both decks control the same
-FX unit.</span>
+the software. <span class="underline">Note: Both sides of the controller
+are mapped to FX units 1-3.</span>
 
 21\. **FX Tap:** ~~Tap this button repeatedly at the desired tempo to
 set the rate of the effects’ lowfrequency oscillators (LFOs). Press and

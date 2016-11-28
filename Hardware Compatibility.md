@@ -624,7 +624,7 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
 
 2.  Mapping has buttons to toggle between decks 1/3 and decks 2/4.
 
-3.  DJ Control Glow will be supported starting with Mixxx 2.1
+3.  DJ Control Glow and MP3 LE will be supported starting with Mixxx 2.1
 
 4.  The default Mixxx mapping has this mapped to hotcues.
 

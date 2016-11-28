@@ -110,14 +110,13 @@ toggled between decks 1/3 or 2/4.
 
 Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4.
 
-Turn the FX AMOUNT knobs to adjust effect parameters.
+Turn the FX AMOUNT knobs to adjust effect parameters. By default, the
+knobs control the parameters of the first effect in the effect unit. The
+other effects can be selected with the Slicer pad mode (see below).
 
 Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
 Unit.
-
-The Slicer mode of the pad grid (described below) has more controls for
-effects.
 
 Be warned that soft takeover does not work for the effect parameter
 knobs when switching between effects due to [a bug in

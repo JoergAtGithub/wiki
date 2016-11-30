@@ -1,16 +1,16 @@
 # Hercules DJ Control MP3 e2 / MP3 LE / Glow
 
-[[/media/16445_.jpg|16445\_.jpg]]
-
 MP3 e2
 
-[[/media/hardware/hercules-dj-control-mp3-le.jpeg|hercules-dj-control-mp3-le.jpeg]]
+[[/media/16445_.jpg|16445\_.jpg]]
 
 MP3 LE
 
-[[/media/hardware/hercules-dj-control-glow.jpeg|hercules-dj-control-glow.jpeg]]
+[[/media/hardware/hercules-dj-control-mp3-le.jpeg|hercules-dj-control-mp3-le.jpeg]]
 
 Glow
+
+[[/media/hardware/hercules-dj-control-glow.jpeg|hercules-dj-control-glow.jpeg]]
 
 The Hercules DJ Control MP3 e2, MP3 LE, and Glow are USB controllers
 that have identical controls and share the same mapping. These

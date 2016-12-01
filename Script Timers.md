@@ -78,7 +78,7 @@ your code :
    if (MyController.MyTimer === 0) {
       print("The timer is not running or failed to start");
    } else {
-      print("My timer is running and it's ID is : " + MyController.MyTimer);
+      print("My timer is running and its ID is : " + MyController.MyTimer);
    }
 ```
 

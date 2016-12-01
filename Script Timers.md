@@ -16,12 +16,9 @@ case) to light up red one second after the beginTimer call: (Note the
 escaped quotes in the target function call.)
 
 ``` javascript
-
-...
-    if (engine.beginTimer(1000,"MyController.lightUp(0x3A,\"red\")",true) == 0) {
-        print("LightUp timer setup failed");
-    }
-...
+if (engine.beginTimer(1000,"MyController.lightUp(0x3A,\"red\")",true) == 0) {
+    print("LightUp timer setup failed");
+}
 
 MyController.lightUp = function (led,color) {
     midi.sendShortMsg(0x90, led, MyController.colorCodes[color]);
@@ -71,14 +68,14 @@ your code :
 ``` javascript
    //Sets our variable to zero
    MyController.MyTimer = 0;
-   
+
    //begin timer 
    MyController.MyTimer = engine.beginTimer(250,"MyController.flash()");
-   
+
    if (MyController.MyTimer === 0) {
       print("The timer is not running or failed to start");
    } else {
-      print("My timer is running and its ID is : " + MyController.MyTimer);
+      print("My timer is running and its ID is: " + MyController.MyTimer);
    }
 ```
 
@@ -93,18 +90,18 @@ and if you don't do it in your code, you will never be able to know if
 your timer is still running or not \! This can be a problem if you try a
 to stop a timer wich is already stopped and do no longer exist (it
 generates warnings internally and that can be seen in your terminal
-window in debug mode (if you have started mixxx from the command line :
+window in debug mode (if you have started mixxx from the command line:
 see [Command line
 options](http://www.mixxx.org/wiki/doku.php/command_line_options)).
 
-Example 1 of bad use :
+Example 1 of bad use:
 
 ``` javascript
-   //begin a timer   
+   //begin a timer
    MyController.MyTimer = engine.beginTimer(250,"MyController.ACallback()",true);
-   ...
+
    //Later on in your code
-   //begin timer : you start a timer, but maybe the previous is still in use
+   //begin timer: you start a timer, but maybe the previous is still in use
    MyController.MyTimer = engine.beginTimer(100,"MyController.flash()");   
 ```
 
@@ -114,18 +111,18 @@ Example 2 of bad use
    //begin a timer   
    MyController.MyTimer = engine.beginTimer(250,"MyController.flash()");
    //Let's say it has started successfully, MyController.MyTimer has now a value different from 0.
-   
-   //stop timer : 
+
+   //stop timer: 
    engine.stopTimer(MyController.MyTimer); 
    //MyController.MyTimer is still different from 0.
-   
+
    //stop it again
    //the timer represented by the MyController.MyTimer value does no longer exist, 
    //and this generates some mess internally
    engine.stopTimer(MyController.MyTimer); 
 ```
 
-How to fix this ?
+How to fix this?
 
   - The first reflex is to set the variable associated to the timer to
     zero, so that elsewhere if needed in your code you know if the timer
@@ -148,18 +145,15 @@ need to use a "one shot" timer :
 ``` javascript
     //Initialize your timer variable to zero at the beginning of the script
     MyController.Timer = 0;
-    
-    ...
-    
+
     MyController.MyButton = function(channel, control, value, status, group) {
         if (value===0x7F) {
             //Button pressed, let's light up a LED
             midi.sendShortMsg(0x90, 0x3A, 0x7F);
-            
         } else {
             //Button released, let's turn off the LED within 5 seconds.
-            //For this, we will use a "one shot" timer" 
-            
+            //For this, we will use a "one shot" timer"
+
             //1) test any pending timer 
             if (MyController.MyTimer !==0) { 
                //if the delayed action is still "programmed" (the timer is still running becaused
@@ -169,7 +163,7 @@ need to use a "one shot" timer :
                //reflex :
                MyController.Timer = 0;
              }
-             
+
              //2) safely start your timer :
              MyController.Timer = engine.beginTimer(250,"MyController.FlashOff()",true);
     };
@@ -182,16 +176,16 @@ need to use a "one shot" timer :
     }
 ```
 
-Example 2 : We want to implement a button in such a way that if we press
+Example 2: We want to implement a button in such a way that if we press
 it loads the selected track, and if we keep it longer, it ejects the
 track, for this, we need a "one shot" timer.
 
 ``` javascript
-    // Part that handles the behaviour of the Load button : 
-    // Long press (>500 ms) : eject the track
-    // Quick press : Load the selected track
+    // Part that handles the behaviour of the Load button: 
+    // Long press (>500 ms): eject the track
+    // Quick press: Load the selected track
     // *****
-    
+
     // Last Time the LOAD Btn was pressed before released
     MyController.LOADlongpress = false;
     MyController.LOADtimer = 0;
@@ -218,7 +212,7 @@ track, for this, we need a "one shot" timer.
         }
     };
     MyController.LoadBtn = function(channel, control, value, status, group) {
-    //LOAD hold <500ms : load track, >500ms : eject
+    //LOAD hold <500ms: load track, >500ms: eject
     if (value == DOWN) {
         MyController.LOADdown();
         } else {
@@ -227,73 +221,73 @@ track, for this, we need a "one shot" timer.
     };
 ```
 
-Example 3 of good usage : This example is much more complex. With one
+Example 3 of good usage: This example is much more complex. With one
 button we want to start a led flashing, and with a second button, we
 want to stop that flashing led. For this, we need two timers, one
 permanent, one "one shot".
 
 ``` javascript
-    //Initialize your timer variable to zero at the beginning of the script
-    MyController.flashTimer = 0;
-    MyController.flashOnceTimer = 0;
-    MyController.num_ms_on = 0;
+//Initialize your timer variable to zero at the beginning of the script
+MyController.flashTimer = 0;
+MyController.flashOnceTimer = 0;
+MyController.num_ms_on = 0;
 
-    // make a light flashing
-    //----------------------
-    // num_ms_on : number of ms the light should stay enlighted when blinking
-    // num_ms_off : number of ms the light should be switched off when blinking
-    MyController.flashOn = function(num_ms_on, num_ms_off) {
-        //stop pending timers
-        MyController.flashOff();
+// make a light flashing
+//----------------------
+// num_ms_on: number of ms the light should stay enlighted when blinking
+// num_ms_off: number of ms the light should be switched off when blinking
+MyController.flashOn = function(num_ms_on, num_ms_off) {
+    //stop pending timers
+    MyController.flashOff();
 
-        // init
-        MyController.num_ms_on = num_ms_on;
+    // init
+    MyController.num_ms_on = num_ms_on;
 
-        // 1st flash
-        // This is because the permanent timer below takes 
-        // num_ms_on milisecs before first flash.
-        MyController.flashOnceOn();
+    // 1st flash
+    // This is because the permanent timer below takes 
+    // num_ms_on milisecs before first flash.
+    MyController.flashOnceOn();
 
-        // flashcount =0 means permanent flash,
-        // flashcount>0 , means temporary flash, first flash already done,
-        // so we don't need this part  if flashcount=1
-        // permanent timer
-        MyController.flashTimer = engine.beginTimer((num_ms_on + num_ms_off), "MyController.flashOnceOn()");
-    };
+    // flashcount =0 means permanent flash,
+    // flashcount>0 , means temporary flash, first flash already done,
+    // so we don't need this part  if flashcount=1
+    // permanent timer
+    MyController.flashTimer = engine.beginTimer((num_ms_on + num_ms_off), "MyController.flashOnceOn()");
+};
 
 
-    // stops the light flashing
-    MyController.FlashOff = function() {
-        // stop pending flashing effects now
-        if (MyController.flashTimer !== 0) {
-            engine.stopTimer(MyController.flashTimer);
-            MyController.flashTimer = 0;
-            MyController.num_ms_on = 0;
-        }
+// stops the light flashing
+MyController.FlashOff = function() {
+    // stop pending flashing effects now
+    if (MyController.flashTimer !== 0) {
+        engine.stopTimer(MyController.flashTimer);
+        MyController.flashTimer = 0;
+        MyController.num_ms_on = 0;
+    }
 
-        if (MyController.flashOnceTimer !== 0) {
-            engine.stopTimer(MyController.flashOnceTimer);
-            MyController.flashOnceTimer = 0;
-        }
-
-        //Turn off the LED
-        midi.sendShortMsg(0x90, 0x3A, 0x00);
-    };
-
-    // Call back function (called in flashon() )
-    MyController.flashOnceOn = function() {
-        //Light up the LED
-        midi.sendShortMsg(0x90, 0x3A, 0x7F);
-        MyController.flashOnceTimer = engine.beginTimer(MyController.flashDuration, "MyController.flashOnceOff()", true);
-    };
-
-    // Call back function (called in flashOnceOn() )
-    MyController.flashOnceOff = function() {
+    if (MyController.flashOnceTimer !== 0) {
+        engine.stopTimer(MyController.flashOnceTimer);
         MyController.flashOnceTimer = 0;
+    }
 
-        //Turn off the LED
-        midi.sendShortMsg(0x90, 0x3A, 0x00);
-    };
+    //Turn off the LED
+    midi.sendShortMsg(0x90, 0x3A, 0x00);
+};
+
+// Call back function (called in flashon() )
+MyController.flashOnceOn = function() {
+    //Light up the LED
+    midi.sendShortMsg(0x90, 0x3A, 0x7F);
+    MyController.flashOnceTimer = engine.beginTimer(MyController.flashDuration, "MyController.flashOnceOff()", true);
+};
+
+// Call back function (called in flashOnceOn() )
+MyController.flashOnceOff = function() {
+    MyController.flashOnceTimer = 0;
+
+    //Turn off the LED
+    midi.sendShortMsg(0x90, 0x3A, 0x00);
+};
 
 MyController.MyButtonFlashOn = function(channel, control, value, status, group) {
     if (value===0x7F) {

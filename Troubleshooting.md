@@ -367,7 +367,7 @@ bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC
 channel, please attach your `mixxx.log` file to help us help you.
 
   - **Linux:** \~/.mixxx/mixxx.log
-  - **Windows:** `%APPDATA%\Mixxx\mixxx.log` on Vista and up,
+  - **Windows:** `%LOCALAPPDATA%\Mixxx\mixxx.log` on Vista and up,
     `%USERPROFILE%\Local Settings\Application Data\Mixxx\mixxx.log` on
     XP and below. (You can just type either of those into the Location
     bar of a Computer or Folder window, or even under Start -\> Run...

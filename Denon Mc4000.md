@@ -103,11 +103,13 @@ fast-forward (respectively) through the track.
 17\. **Pitch Fader:** Move this fader to adjust the speed (pitch) of the
 track. You can adjust its total range with the Key Lock / Range button.
 
-18\. **FX Level:** Turn this knob to adjust the dry/wet mix ratio of the
-corresponding effect. The FX On button under the knob must be lit for
-the effect to be enabled for that deck. Hold Shift and turn to scroll
-through the list of effects. <span class="underline">Note: Both sides of
-the controller are mapped to FX units 1-3.</span>
+18\. **FX Level:** Turn the knobs on the left side of the controller to
+adjust the dry/wet mix ratio of effect units 1-3. Turn the knobs on the
+right side of the controller to adjust the superknob for effect units
+1-3. The FX On button under the knob must be lit for the effect to be
+enabled for that deck. Hold Shift and turn to scroll through the list of
+effects. <span class="underline">Note: Both sides of the controller are
+mapped to FX units 1-3.</span>
 
 19\. **FX Beats:** <span class="underline">currently unmapped</span>
 

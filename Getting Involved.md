@@ -59,10 +59,8 @@ controller script files](midi_scripting) to do crazy-new-awesome things
 or just fix up a function that is already there. If you have access to
 hardware that is not listed as having a Mixxx mapping in the [DJ
 Hardware Guide](hardware%20compatibility), mappings for new devices are
-appreciated\! See [this
-section](midi_scripting#setting_up_git_and_getting_your_mapping_included_in_mixxx)
-on the MIDI Scripting page for how to get your changes included in
-Mixxx.
+appreciated\! Refer to the [Contributing
+Mappings](Contributing%20Mappings) page for more details.
 
 ## Skin it\!
 

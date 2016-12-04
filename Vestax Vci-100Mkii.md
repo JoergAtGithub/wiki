@@ -120,8 +120,8 @@ other deck is pressed.** Changes after the previous version are in bold.
 39. Channel select
 
 [Vestax
-VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
+VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
 (2016-12-1, still compatible with 2.0)\[9\]
 
 1.  see [the

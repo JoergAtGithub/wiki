@@ -20,7 +20,7 @@ to preview tracks in headphones.
 Configuration options can be set in the mapping. You will need to edit
 the values below at the very top of the JavaScript file
 “Numark-Mixtrack-3-scripts.js” and save changes. Allowed values are
-“**true**” or “**false**”
+“**true**” or “**false**” unless specified.
 
   - **TrackEndWarning**: whether the Wheel button flashes near the end
     of a track
@@ -37,8 +37,15 @@ the values below at the very top of the JavaScript file
   - **DarkMetalSkin**: Specify if Dark Metal skin is used for your
     installation. This is required in order for Expand Library feature
     to work properly. 
-  - **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync
-    button Double Press. 
+  - **FXMode**: Select FX Mode based on skin used:
+
+<!-- end list -->
+
+``` 
+    * value "**1**": (Deere skin): Each deck is assigned its own Effect Unit with 3 effects per deck (e.g. Deck 1 = Effect Unit 1, Deck 2 = Effect Unit 2, etc...\\
+    * value "**2**": (other skins): FX button 1 = Effect Unit 1, Effect 1, FX Button 2 = Effect Unit 2, Effect 1,  FX button 3 = Effect Unit 3, Effect 1. Effect settings are shared by each deck.\\
+* **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync button Double Press. 
+```
 
 ## Mapping
 

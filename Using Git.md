@@ -225,7 +225,8 @@ way we prefer you to submit branches is via GitHub pull requests.
 1.  Create an account on GitHub.
 2.  Push your branch to a forked version of the [Mixxx GitHub
     repository](https://github.com/mixxxdj/mixxx).
-3.  Create a pull request from GitHub. 
+3.  Create a pull request from GitHub. If your pull request changes the
+    GUI, please attach screenshots of your changes.
 4.  A Mixxx team member will review and comment on your pull request.
     Work with your reviewer to address their comments. 
 5.  Once it receives an `LGTM` \[1\] then it will be merged into Mixxx\!

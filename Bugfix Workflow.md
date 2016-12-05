@@ -66,6 +66,9 @@ You can open a pull request before your code is ready to be merged with
 Mixxx to show others your code and ask for help, just make sure to say
 that your code is not ready for merging when you open the pull request.
 
+If your pull request changes the GUI, please include screenshots of your
+changes.
+
 ## Fix issues from code review
 
 This is the most annoying part. Because we are sometimes nit pickers ;-)

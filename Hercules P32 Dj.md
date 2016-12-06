@@ -104,7 +104,7 @@ The encoders do not behave exactly as labeled.
 
 ### Effects
 
-## Mixxx 2.0
+#### Mixxx 2.0
 
 The effects controls on the left control Effect Unit 1, the controls on
 the right control Effect Unit 2. This does not change when decks are
@@ -125,7 +125,7 @@ knobs when switching between effects due to [a bug in
 Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008). Soft take over
 does work for switching between dry/wet and the superknob though.
 
-## Mixxx 2.1
+#### Mixxx 2.1
 
 The effects controls on the left control Effect Unit 1, the controls on
 the right control Effect Unit 2. This does not change when decks are

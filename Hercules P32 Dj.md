@@ -104,6 +104,8 @@ The encoders do not behave exactly as labeled.
 
 ### Effects
 
+## Mixxx 2.0
+
 The effects controls on the left control Effect Unit 1, the controls on
 the right control Effect Unit 2. This does not change when decks are
 toggled between decks 1/3 or 2/4.
@@ -123,6 +125,31 @@ knobs when switching between effects due to [a bug in
 Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008). Soft take over
 does work for switching between dry/wet and the superknob though.
 
+## Mixxx 2.1
+
+The effects controls on the left control Effect Unit 1, the controls on
+the right control Effect Unit 2. This does not change when decks are
+toggled between decks 1/3 or 2/4. The mapping script automatically
+enables Effect Unit 1 on decks 1 & 3 and Effect Unit 2 on decks 2 & 4
+when Mixxx starts.
+
+The MACRO button toggles the effect unit between collapsed and expanded
+mode.
+
+When the effect unit is collapsed, the knobs control the metaknob of
+each effect in the unit. The buttons control whether each effect is
+enabled. Pressing a button with shift switches to the next available
+effect.
+
+When the effect unit is expanded, the knobs control the first 3
+parameters of one effect in the effect unit. The effect that the knobs
+manipulate is selected by pressing one of the buttons. Pressing a button
+with shift toggles whether the corresponding effect is enabled.
+
+Turn the Dry/Wet knob to control the mix of the effect sounds with the
+source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
+Unit.
+
 ### Other controls
 
   - **Record button**: toggles recording on and off.
@@ -140,17 +167,18 @@ does work for switching between dry/wet and the superknob though.
     decrease/increase the playback speed while they are held down for
     beatmatching. The button to the right of those shifts the beat grid
     to the current position. The button on the right toggles quantize. 
-  - **Slicer mode**: various controls for effects. The top three rows
-    each control an individual effect in the effect unit, allowing you
-    to set up effect chains. (These are not visible in the LateNight
-    skin). The left button toggles whether that effect is enabled (the
-    whole effect unit still has to be enabled for a deck for it to be
-    audible). With shift, the left button resets the effect's parameters
-    to their default values. The two purple buttons in the middle scroll
-    through the available effects. The button on the right sets the
-    parameter knobs to control that effect's parameters. The bottom row
+  - **Slicer mode**: various controls for effects. The bottom row
     toggles the effect unit on the headphones, master mix, microphone 1,
-    and auxiliary input 1 (from left to right).
+    and auxiliary input 1 (from left to right). In Mixxx 2.0 (not 2.1),
+    the top three rows each control an individual effect in the effect
+    unit, allowing you to set up effect chains. (These are not visible
+    in the LateNight skin). The left button toggles whether that effect
+    is enabled (the whole effect unit still has to be enabled for a deck
+    for it to be audible). With shift, the left button resets the
+    effect's parameters to their default values. The two purple buttons
+    in the middle scroll through the available effects. The button on
+    the right sets the parameter knobs to control that effect's
+    parameters. 
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

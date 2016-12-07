@@ -222,8 +222,9 @@ audio, scratching the track like a vinyl record.
 
 ### 23\. Platter/Jog Wheel
 
-**Touch side:** Pitch bend if track is playing (Wheel On & Off) / track
-positioning (Wheel On)  
+**Touch side:** Pitch bend (nudging) if track is playing (Wheel On
+(always) & Wheel Off - if [PitchBendOnWheelOff](#configuration-options)
+configuration option is true) and / track positioning (Wheel On)  
 **Wheel On + Touch platter:** scratching: touch the platter and move
 it  
 **Shift + Wheel On + Touch platter**: iCut mode: simulates a scratch

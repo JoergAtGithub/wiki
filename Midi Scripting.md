@@ -7,10 +7,10 @@ MIDI controls to be mapped to
 [Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm))
 functions, allowing mappings to manage complex behaviors. These
 user-created functions can then do anything desired with the MIDI event
-info such as have a single controller button simultaneously affect two
-or more [Mixxx properties ("controls")](mixxxcontrols), adjust incoming
-control values to work better with Mixxx (i.e. for
-[\#scratching](#scratching)),-display-a-complex-LED-sequence,-send-messages-to-text-displays-on-the-controller,-or-even-[turn
+info such as affect different controls depending on whether another
+button is pressed, adjust incoming control values to work better with
+Mixxx (i.e. for
+[\#scratching](#scratching)),-send-messages-to-LED-displays-on-the-controller,-or-even-[turn
 a 2 deck controller into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
@@ -39,11 +39,12 @@ to understand for people without any programming experience:
 
   - [Language basics crash
     course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)
-  - [MDN's A Re-Introduction To
-    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
   - [JavaScript
     Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types),
     a more thorough tutorial
+  - [MDN's A Re-Introduction To
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript):
+    recommended to understand the more unusual aspects of JavaScript
   - [JavaScript
     Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 

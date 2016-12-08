@@ -1,16 +1,15 @@
-# MIDI Scripting
+# Controller Scripting
 
 In order to support the features of many MIDI controllers, Mixxx offers
 what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables
 MIDI controls to be mapped to
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
 [Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm))
-functions stored in function library files, freeing Mixxx from a
-one-to-one MIDI mapping ideology. These user-created functions can then
-do anything desired with the MIDI event info such as have a single
-controller button simultaneously affect two or more [Mixxx properties
-("controls")](mixxxcontrols), adjust incoming control values to work
-better with Mixxx (i.e. for
+functions, allowing mappings to manage complex behaviors. These
+user-created functions can then do anything desired with the MIDI event
+info such as have a single controller button simultaneously affect two
+or more [Mixxx properties ("controls")](mixxxcontrols), adjust incoming
+control values to work better with Mixxx (i.e. for
 [\#scratching](#scratching)),-display-a-complex-LED-sequence,-send-messages-to-text-displays-on-the-controller,-or-even-[turn
 a 2 deck controller into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
@@ -40,23 +39,16 @@ to understand for people without any programming experience:
 
   - [Language basics crash
     course](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics#Language_basics_crash_course)
+  - [MDN's A Re-Introduction To
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
   - [JavaScript
     Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types),
     a more thorough tutorial
   - [JavaScript
     Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-The [last
-example](#turning-a-2-deck-controller-into-a-4-deck-controller) at the
-bottom of this page utilizes a lot of features of JavaScript. It has
-lots of comments with links to the MDN JavaScript Reference. It may be
-helpful as a quick introduction to the language for experienced
-programmers.
-
 Here are some resources for a deeper understanding of JavaScript:
 
-  - [MDN's A Re-Introduction To
-    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
   - [Douglas Crockford's JavaScript
     website](http://javascript.crockford.com/)
   - [Douglas Crockford on JavaScript -- Act III: Function the

@@ -18,9 +18,7 @@ please fix it.
 ## User Documentation
 
   - [Beginner DJ Links](Beginner%20DJ%20Links)
-  - [DJ Hardware Guide](Hardware%20compatibility): Explains options for
-    hardware setups for DJing with Mixxx, lists compatible devices with
-    descriptions and prices
+  - [DJ Hardware Guide](Hardware%20compatibility)
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)

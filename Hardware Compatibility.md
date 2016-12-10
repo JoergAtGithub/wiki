@@ -393,18 +393,17 @@ deck inputs, but not necessarily on every deck input. Many higher-end
 all-in-one controllers also include sound cards with phono preamps.
 Refer to the tables below for some devices with phono preamps.
 
-Turntables, microphones, and contact microphones (like those used on
-electric guitars) all output very low voltage signals that need to be
-amplified to line level by a preamplifier before a sound card (or most
-audio equipment) can effectively work with them. Additionally, vinyl
-records have the [RIAA equalization
-curve](https://en.wikipedia.org/wiki/RIAA_equalization) applied to the
-recording, which needs to be undone by a phono preamplifier. If a device
-has a switch between phono, mic, or instrument (contact microphone)
-level and line level, it has a preamplifier in it. If you want to plug a
-microphone into your sound card, it will need a microphone preamplifier.
-If you want to plug an electric guitar or bass into your sound card, it
-will need an instrument preamplifier.
+Turntables, microphones, and instrument pickups all output very low
+voltage signals that need to be amplified to line level by a
+preamplifier before a sound card (or most audio equipment) can
+effectively work with them. Additionally, vinyl records have the [RIAA
+equalization curve](https://en.wikipedia.org/wiki/RIAA_equalization)
+applied to the recording, which needs to be undone by a phono
+preamplifier. If a device has a switch between phono, mic, or instrument
+(contact microphone) level and line level, it has a preamplifier in it.
+If you want to plug a microphone into your sound card, it will need a
+microphone preamplifier. If you want to plug an electric guitar or bass
+into your sound card, it will need an instrument preamplifier.
 
 Note that phono preamplifiers work on a stereo pair (2 input channels)
 whereas microphone and instrument preamplifiers work on a single input

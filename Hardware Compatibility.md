@@ -366,19 +366,6 @@ than a sound card built into a computer. However, the highest quality
 sound cards like the Apogee Duet and RME Babyface Pro are stand alone
 devices not integrated into controllers.
 
-If a controller with a built in sound card is only powered by a USB
-cable, the sound card may not be able to reach very high output levels
-because the electricity available from a USB port has to power the sound
-card as well as the lights and other components of the controller.
-Controllers for which this is a known issue have that information on
-their wiki page. Insufficient power for a high output level is rarely an
-issue for standalone USB sound cards that are not built into
-controllers. Some controllers with built in sound cards have an
-additional power adapter to ensure the sound card output has enough
-power. A low sound card output can be worked around by running it
-through a mixer and applying gain or a stand-alone headphone amplifier
-if the headphone output is too quiet.
-
 [Some DJ mixers](#Mixers-with-sound-cards) also include built-in USB
 sound cards. These can be used to send Mixxx's unmixed Deck 1-4 outputs
 to the external mixer. This is more convenient than having a separate

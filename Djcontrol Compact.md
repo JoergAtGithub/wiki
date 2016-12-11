@@ -16,7 +16,8 @@ to adjust the playback rate.
 This device does not have a built in sound card, so it would require a
 [splitter cable](hardware%20compatibility#splitter%20cables) or
 [separate sound card](hardware%20compatibility#usb%20sound%20cards) to
-be able to preview tracks in headphones.
+be able to preview tracks in headphones. It also does not have buttons
+for routing decks to headphones.
 
 ## Mapping description
 

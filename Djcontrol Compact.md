@@ -70,4 +70,9 @@ Shift-FX buttons are not mapped.
   - Each button activates the hotcue with that number
   - Shift + button clears the hotcue with that number
 
+## MIDI Mapping Reference
+
+Much of the Compact's behavior is hard-coded, including shift button
+messages and button mode selections.
+
 <http://ts.hercules.com/download/sound/manuals/DJC_Compact/DJC_Compact_MIDI_Mapping.pdf>

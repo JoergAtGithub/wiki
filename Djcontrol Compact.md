@@ -1,6 +1,13 @@
-# Hercules DJControl Compact
+# Hercules DJ Control Compact
 
-The Hercules DJControl Compact is a great, simple controller that works
+[[/media/hercules-djcontrol-compact_angle.jpg|]]
+
+[[/media/hercules-djcontrol-compact_top.jpg|]]
+
+  - [Product on manufacturer
+    website](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
+
+The Hercules DJ Control Compact is a great, simple controller that works
 well for basic two-channel mixing. Due to its small size, many buttons
 perform more than one function. For instance although it doesn't have
 rate sliders, the controller has two jog wheels which can also be used

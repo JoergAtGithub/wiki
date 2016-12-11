@@ -22,6 +22,10 @@ describes:
 
 ## Mixxx-specific differences
 
+  - The Auto button toggles Auto-DJ mode
+  - The REC button toggles set recording
+  - You can press and hold the sync buttons to engage Mixxx Master Sync
+
 ### Loop Buttons
 
 In loop mode, the buttons are mapped in a way that's more artistically

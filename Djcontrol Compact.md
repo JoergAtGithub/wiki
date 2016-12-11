@@ -15,15 +15,16 @@ mapping wizard instead.
 
 ## Basic Use
 
-The controller works in Mixxx in many ways identically to how the manual
+The controller works in Mixxx in many ways the same as how the manual
 describes:
 
 <http://ts.hercules.com/download/sound/manuals/DJC_Compact/Manuel_DJCCompact_UK.pdf>
 
+For instance, hold SHIFT and turn the jog wheels to adjust the playback
+rate.
+
 ## Mixxx-specific differences
 
-  - The Auto button toggles Auto-DJ mode
-  - The REC button toggles set recording
   - You can press and hold the sync buttons to engage Mixxx Master Sync
 
 ### Loop Buttons

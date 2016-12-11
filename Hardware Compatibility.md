@@ -307,8 +307,7 @@ outputs from your computer. These plug into the onboard sound card built
 into computer motherboards and split the stereo signal into two separate
 mono signals. However, onboard sound cards are not good quality.
 
-Do not buy splitter cables or adapters that are not marketed as DJ
-splitters. Devices marketed as "headphone splitter" cables or adapters
+Devices marketed as "headphone splitter" instead of DJ splitters
 duplicate one stereo signal in two jacks. These cannot be used for
 headphone cueing. Also, generic stereo-to-mono splitter cables or
 adapters typically have two mono jack outputs. Plugging headphones or

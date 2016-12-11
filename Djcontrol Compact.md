@@ -14,10 +14,9 @@ rate sliders, the controller has two jog wheels which can also be used
 to adjust the playback rate.
 
 This device does not have a built in sound card, so it would require a
-[hardware compatibility\#splitter
-cable](hardware%20compatibility#splitter%20cable) or [separate sound
-card](hardware%20compatibility#usb%20sound%20cards) to be able to
-preview tracks in headphones.
+[splitter cable](hardware%20compatibility#splitter%20cables) or
+[separate sound card](hardware%20compatibility#usb%20sound%20cards) to
+be able to preview tracks in headphones.
 
 ## Configuration
 

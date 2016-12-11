@@ -4,8 +4,8 @@
 
 [[/media/hercules-djcontrol-compact_top.jpg|]]
 
-  - [Product on manufacturer
-    website](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
+  - [Manufacturer's product
+    page](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
 
 The Hercules DJ Control Compact is a great, simple controller that works
 well for basic two-channel mixing. Due to its small size, many buttons
@@ -18,42 +18,55 @@ This device does not have a built in sound card, so it would require a
 [separate sound card](hardware%20compatibility#usb%20sound%20cards) to
 be able to preview tracks in headphones.
 
-## Configuration
+## Mapping description
 
-By default the two EQ knobs control midrange EQ and low EQ. The user may
-decide to edit the mapping to make the first knob adjust high EQ instead
-of midrange. Users can edit the XML file directly or use the midi
-mapping wizard instead.
+The play/pause buttons, EQ knobs, volume knobs, and crossfader all
+behave as labeled. If you would like to change the mapping of the EQ
+knobs (for example to change the mid EQ knob to control the high EQ or
+filter), use the [MIDI Mapping
+Wizard](http://mixxx.org/manual/latest/chapters/advanced_topics.html#controller-wizard)
+or [edit the XML file](MIDI%20controller%20mapping%20file%20format).
 
-## Basic Use
+The cue button behaves differently depending on the [cue mode set in
+Mixxx's
+Preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).
 
-The controller works in Mixxx in many ways the same as how the manual
-describes:
+The sync button synchronizes the tempo to the other deck. Press and hold
+sync to engage [Master
+Sync](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#master-sync).
 
-<http://ts.hercules.com/download/sound/manuals/DJC_Compact/Manuel_DJCCompact_UK.pdf>
+There is only one each of the Mode, Shift, and Scratch buttons, so they
+affect both decks.
 
-For instance, hold SHIFT and turn the jog wheels to adjust the playback
-rate.
+Shift + Scratch (Automix) toggles AutoDJ on/off.
 
-## Mixxx-specific differences
+### Jog Wheels
 
-  - You can press and hold the sync buttons to engage Mixxx Master Sync
+When Scratch is off, turning a jog wheel bends the pitch of the track.
+When Scratch is on, turning a jog wheel scratches that deck. Holding
+Shift and turning a jog wheel adjusts the playback rate (tempo). Enable
+keylock on a deck by clicking the if you do not want the pitch to change
+when adjusting the tempo.
 
-### Loop Buttons
+### Pad Grid
+
+Press the MODE button to cycle through each pad mode.
+
+#### Loop mode
 
 In loop mode, the buttons are mapped in a way that's more artistically
 expressive:
 
   - Button 1 enables and disables the loop
-  - Button 2 enables a 2 bar loop
+  - Button 2 enables an 8 beat loop
   - Button 3 divides the current loop in half
   - Button 4 doubles the length of the current loop
-  - Shift + Button 1 performs an 1/8th bar roll
-  - Shift + Button 2 performs an 1/4th bar roll
-  - Shift + Button 3 performs an 1/2th bar roll
-  - Shift + Button 4 performs an 1 bar roll
+  - Shift + Button 1 performs an 1/8th beat roll
+  - Shift + Button 2 performs an 1/4th beat roll
+  - Shift + Button 3 performs an 1/2th beat roll
+  - Shift + Button 4 performs an 1 beat roll
 
-### FX Buttons
+#### FX mode
 
   - Button 1 enables and disables the first FX chain for Channel 1
   - Button 2 enables and disables the second FX chain for Channel 1
@@ -62,7 +75,7 @@ expressive:
 
 Shift-FX buttons are not mapped.
 
-### Sampler Buttons
+#### Sampler mode
 
   - Button 1 plays Sample Deck 1
   - Button 2 plays Sample Deck 2
@@ -77,14 +90,14 @@ Shift-FX buttons are not mapped.
   - Shift + Button 4 stops Sample Deck 4 and puts the playhead at the
     cue point
 
-### Cue Buttons
+#### Cue mode
 
   - Each button activates the hotcue with that number
   - Shift + button clears the hotcue with that number
 
 ## MIDI Mapping Reference
 
-Much of the Compact's behavior is hard-coded, including shift button
-messages and button mode selections.
+Much of the Compact's behavior is hard-coded into its firmware,
+including shift button messages and button mode selections.
 
 <http://ts.hercules.com/download/sound/manuals/DJC_Compact/DJC_Compact_MIDI_Mapping.pdf>

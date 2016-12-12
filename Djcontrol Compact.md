@@ -46,8 +46,8 @@ Shift + Scratch (Automix) toggles AutoDJ on/off.
 When Scratch is off, turning a jog wheel bends the pitch of the track.
 When Scratch is on, turning a jog wheel scratches that deck. Holding
 Shift and turning a jog wheel adjusts the playback rate (tempo). Enable
-keylock on a deck by clicking the if you do not want the pitch to change
-when adjusting the tempo.
+keylock on a deck by clicking the music note button on screen if you do
+not want the pitch to change when adjusting the tempo.
 
 ### Pad Grid
 

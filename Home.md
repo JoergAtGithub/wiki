@@ -89,6 +89,7 @@ please fix it.
   - [Skin Color Schemes Tips and
     Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
   - [On Icons and Images](On%20Icons%20and%20Images)
+  - [Skin System Changelog](Skin%20System%20Changelog)
   - [Skins forum](http://mixxx.org/forums/viewforum.php?f=8): search for
     skins, share your skins, and ask for help
 

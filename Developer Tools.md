@@ -36,7 +36,7 @@ files, it can be difficult to understand how the code fits together.
 
 ## Using IDEs
 
-  - Playing around with [Eclipse, CDT, and SconsBuilder plugin](eclipse)
+  - Set up [Eclipse](eclipse)
   - Set up [KDevelop](KDevelop)
   - Set up [QtCreator](QtCreator) for developing on Mixxx
 

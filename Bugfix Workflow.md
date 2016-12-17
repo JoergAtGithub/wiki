@@ -40,6 +40,14 @@ easy](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=
 
 More details you will find here: [The Bug Tracker](launchpad_bugs)
 
+## Study the code and debug it
+
+Read the code to figure out what it is doing. Insert
+[qDebug](http://doc.qt.io/qt-4.8/qdebug.html) statements to help
+understand what is happening at specific points in the code. Note that
+you must run mixxx with the `--debugLevel 2` argument to have all
+debugging messages printed to the console.
+
 ## Ask for hints and help
 
 Ask your questions or discuss your ideas at

@@ -2490,12 +2490,13 @@ every node in the tree. WidgetGroups allow to make a group of relatively
 positioned widgets. You can display more than one WidgetGroup node in a
 skin.
 
-|                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `<WidgetGroup>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
   <BackPath>background.png</BackPath>
+  <BackPathHighlighted>alt.png</BackPathHighlighted>
   <Children>
     <PushButton>
       <Pos>0,0</Pos>
@@ -2505,19 +2506,34 @@ skin.
     </SliderComposed>
     <!-- as many regular widgets as you like in here -->
   </Children>
+  <Connection>
+    <ConfigKey>[EffectRack1_EffectUnit1],single_effect_focus</ConfigKey>
+    <BindProperty>highlight</BindProperty>
+    <Transform>
+      <IsEqual>2<IsEqual>
+    <Transform>
+  </Connection>
 </WidgetGroup>
 ` | `
 
 
 
-New in Mixxx 1.11: Loads a background image from the skin folder. Support resizing and color schemes.
-Note: The style sheet is painted on top of the new background set by the <BackPath> node.
+New in Mixxx 1.11 
+New in Mixxx 2.1: if highlight > 0
 
 
 
 
 
 
+
+
+
+
+
+New in Mixxx 2.1: Can be used in styles
+
+New in Mixxx 2.1
 
 
 
@@ -2530,6 +2546,16 @@ child widget outside of the size rectangle is not shown
 In that example, the PushButton child will be at 0,0 relative to its
 parent, or the absolute position 100,200. The SliderComposed widget will
 be at 20,0 relative to its parent or 120,200.
+
+New in Mixxx 1.11: Loads a background image from the skin folder.
+Support resizing and color schemes. Note: The style sheet is painted on
+top of the new background set by the \<BackPath\> node.
+
+New in Mixxx 2.1: The highlight property is used to restyle the widget
+with CSS. The declaration \#MyGroup\[highlight="1"\] { } will define the
+style for the highlighted state. Note: The background property does not
+support color schemes for images, a workaround is to set the background
+image via \<BackPath\> and \<BackPathHighlighted\> from the skin.
 
 #### WidgetGroup Layouts
 

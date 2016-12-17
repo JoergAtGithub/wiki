@@ -650,7 +650,36 @@ possible.
 
 #### \<Connection\>
 
-**TODO(rryan): Document `<Connection>` tags.**
+The connection block can be used to bind a ControlObject to the widget.
+It binds either to the default connection or to any widget property
+using the \<BindProperty\> element. The ControlObject value can be
+transformed using on or more transformers.
+
+| Examples:                                                                                                                                                                                                                                       |                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `<Connection>
+  <ConfigKey>[EffectRack1_EffectUnit1],single_effect_focus</ConfigKey>
+  <BindProperty>highlight</BindProperty>
+  <Transform>
+    <Invert/>
+    <Not/>
+    <Add>0.5</Add>
+    <IsEqual>2</IsEqual>
+  </Transform>
+</Connection>
+` | `
+
+ConfigKey of the ControlObject
+Widget proprty
+
+p = -co
+p = !co
+p = co + 0.5
+New in Mixxx 2.1: p = (co == 2)
+
+
+
+` |
 
 ### Skin Color Scheme
 

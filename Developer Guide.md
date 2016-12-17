@@ -27,6 +27,16 @@ familiar with aspects of Qt that we use heavily:
   - [Signals &
     Slots](http://qt-project.org/doc/latest/signalsandslots.html)
 
+We also highly recommend that you use a C++ IDE rather than a text
+editor. Mixxx is a huge project spread across hundreds of source code
+files. IDEs index the entire code tree and allow you to jump from where
+a function is used to its definition, even if that is in another file
+(which it often is). Without this powerful tool, you will spend a lot of
+time simply finding the code you're looking for instead of understanding
+what it is doing. We have [guides](developer%20tools#using%20IDEs) for
+setting up several IDEs to work on Mixxx, but feel free to use whatever
+IDE you prefer.
+
 # main.cpp
 
 As all C++ programs usually do, Mixxx starts up with a `main` function

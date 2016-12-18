@@ -78,18 +78,10 @@ Shift-FX buttons are not mapped.
 
 #### Sampler mode
 
-  - Button 1 plays Sample Deck 1
-  - Button 2 plays Sample Deck 2
-  - Button 3 plays Sample Deck 3
-  - Button 4 plays Sample Deck 4
-  - Shift + Button 1 stops Sample Deck 1 and puts the playhead at the
-    cue point
-  - Shift + Button 2 stops Sample Deck 2 and puts the playhead at the
-    cue point
-  - Shift + Button 3 stops Sample Deck 3 and puts the playhead at the
-    cue point
-  - Shift + Button 4 stops Sample Deck 4 and puts the playhead at the
-    cue point
+  - Left side buttons play Sample Decks 1 through 4
+  - Right side buttons play Sample Decks 5 through 8
+  - Shift + Buttons stops Sample Deck and puts the playhead at the cue
+    point
 
 #### Cue mode
 

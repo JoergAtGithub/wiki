@@ -28,6 +28,8 @@ filter), use the [MIDI Mapping
 Wizard](http://mixxx.org/manual/latest/chapters/advanced_topics.html#controller-wizard)
 or [edit the XML file](MIDI%20controller%20mapping%20file%20format).
 
+Shift + Play jumps to the beginning of the track and stops playback.
+
 The cue button behaves differently depending on the [cue mode set in
 Mixxx's
 Preferences](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes).

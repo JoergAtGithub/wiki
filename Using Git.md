@@ -356,7 +356,7 @@ changes and switch between branches without affecting your mapping
 branch open at \~/software/mixxx/mapping.
 
 If you want to work on a skin, you can set up another git worktree and
-run mixxx with the --resourcePath option set to the "res" directory
+run mixxx with the `--resourcePath` option set to the `res` directory
 under that worktree.
 
 # GUI clients

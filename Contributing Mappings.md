@@ -96,6 +96,10 @@ directory under that. In \~/software/mixxx, you can work on any other
 changes and switch between branches without affecting your mapping
 branch open at \~/software/mixxx/mapping.
 
+If you want to work on skins too, you can set up another git worktree
+and run mixxx with the --resourcePath option set to the "res" directory
+under that worktree.
+
 ### Submitting your mapping for review
 
 When your mapping is complete, [documented on the

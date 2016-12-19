@@ -75,30 +75,9 @@ your home directory on GNU/Linux, run:
 
 #### Working on your mapping and other branches simultaneously
 
-If you are working on a mapping and you want to work on other changes to
-Mixxx at the same time, you can have both git branches open
-simultaneously with git's handy [worktree
-feature](https://git-scm.com/docs/git-worktree). This will let you use
-your mapping in development while testing your other branches. If your
-git repository is at \~/software/mixxx, you can set this up by running:
-
-    $ cd ~/software/mixxx
-    $ git worktree add mapping your_mapping_branch_name
-    $ echo mapping >> .git/info/exclude # Tell git to ignore your mapping branch when looking at ~/software/mixxx
-    $ ln -s ~/software/mixxx/mapping/res/controllers ~/.mixxx/controllers
-
-Now your mapping branch is open at \~/software/mixxx/mapping. This does
-not have to be under \~/software/mixxx (in which case you can skip
-adding the directory name to .git/info/exclude). You can work on your
-mapping in \~/software/mixxx/mapping/res/controllers and make commits
-when your current directory is \~/software/mixxx/mapping or any
-directory under that. In \~/software/mixxx, you can work on any other
-changes and switch between branches without affecting your mapping
-branch open at \~/software/mixxx/mapping.
-
-If you want to work on skins too, you can set up another git worktree
-and run mixxx with the --resourcePath option set to the "res" directory
-under that worktree.
+Refer to instructions on the [Using
+Git](Using%20Git#Working%20on%20mappings%20and%20skins%20separately%20from%20other%20changes)
+page.
 
 ### Submitting your mapping for review
 

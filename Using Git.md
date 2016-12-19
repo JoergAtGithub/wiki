@@ -337,9 +337,9 @@ If you are working on a mapping or skin and you want to work on other
 changes to Mixxx at the same time, you can have both git branches open
 simultaneously with git's handy [worktree
 feature](https://git-scm.com/docs/git-worktree). This will let you use
-your mapping in development while testing your other branches. If your
-git repository is at \~/software/mixxx, you can set this up for a
-controller mapping by running:
+your mapping or skin in development while testing your other branches.
+If your git repository is at \~/software/mixxx, you can set this up for
+a controller mapping by running:
 
     $ cd ~/software/mixxx
     $ git worktree add mapping your_mapping_branch_name

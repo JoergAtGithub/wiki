@@ -269,7 +269,7 @@ void MicrophoneWidget::slotMicrophoneEnabledChanged(double v) {
 
 # Deleting Controls
 
-Be sure you you delete all ControlObjects after they are not used
-anymore to avoid memory leaks. In general once you create a control you
-should not delete it until Mixxx shuts down. Since creating a control is
-like setting up an API call.
+Be sure you delete all ControlObjects after they are not used anymore to
+avoid memory leaks. In general once you create a control you should not
+delete it until Mixxx shuts down. Since creating a control is like
+setting up an API call.

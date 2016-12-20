@@ -170,6 +170,30 @@ automatically created for them. Assuming a `ConfigKey` of
 
 ## ControlTTRotary
 
+## Read-only ControlObjects
+
+Read-only `ControlObject`s can be created by using a `ControlObject`'s
+`connectValueChangeRequest` method. This method redirects calls of the
+`ControlObject`'s `set` method to the slot connected to its
+`valueChangeRequest` signal. That slot should ignore the request and
+print a warning. To set the value of the `ControlObject` at only the
+specific places it should be set, use its `setAndConfirm` method to
+bypass the `valueChangeRequest` check.
+
+``` c++
+In EngineBuffer constructor:
+m_pTrackLoaded = new ControlObject(ConfigKey(m_group, "track_loaded"), 0, 1);
+m_pTrackLoaded->connectValueChangeRequest(this, SLOT(slotTrackLoadedCO(double)));
+
+...
+
+void EngineBuffer::slotTrackLoadedCO(double v) {
+    Q_UNUSED(v);
+    qWarning() << "WARNING:" << m_group << "\"track_loaded\""
+               << "is a read-only control, ignoring.";
+}
+```
+
 # Automatically reacting to control changes
 
 As different parts of Mixxx change controls that you create, you will

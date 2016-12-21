@@ -178,7 +178,7 @@ A control can be marked read-only by using `ControlObject`'s
 This method intercepts calls to the `set` method of the `ControlObject`
 and any associated `ControlProxy`s and prints a warning message that the
 control is read-only. As the owner, to set the control's value, you must
-use the `ControlObject`'s `setAndConfirm` method. Only the owner of the
+use the `ControlObject`'s `forceSet` method. Only the owner of the
 control (see above) should update it this way -- do not bypass this by
 using `ControlObject::getControl`.
 
@@ -195,8 +195,8 @@ ControlProxy proxy(group, "track_loaded");
 proxy.set(1);
 assert(track_loaded.get() == 0);
 
-// As the owner, the only way to change the control's value is via setAndConfirm.
-track_loaded.setAndConfirm(1);
+// As the owner, the only way to change the control's value is via forceSet.
+track_loaded.forceSet(1);
 assert(track_loaded.get() == 1);
 ```
 

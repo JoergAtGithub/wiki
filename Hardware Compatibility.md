@@ -118,13 +118,9 @@ move your controller to this table.
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $250              | 2 deck all-in-one                       | yes                   | MIDI            | 2.1\[11\]                     | 2015     |
 | [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 4 deck\[12\] all-in-one                 | yes                   | MIDI            | 2.0                           | 2015     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                       | yes                   | MIDI            | 1.11                          | 2011     |
-| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | $300              | 4 deck\[13\] all-in-one                 | yes                   | MIDI            | 1.11                          |          |
-| [Denon MC4000](Denon%20MC4000)                                                                     | $400              | 2 deck controller and mixer             | yes                   | MIDI            | 2.1\[14\]                     | 2015     |
+| [Denon MC4000](Denon%20MC4000)                                                                     | $400              | 2 deck controller and mixer             | yes                   | MIDI            | 2.1\[13\]                     | 2015     |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | $400              | 4 deck all-in-one                       | yes                   | MIDI            | 1.11                          | 2012     |
-| [Numark N4](Numark%20N4)                                                                           | $500              | 4 deck all-in-one                       | yes                   | MIDI            | 1.10                          | 2012     |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700              | 4 deck all-in-one                       | yes                   | MIDI            | 2.0                           | 2015     |
-| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | $900              | CD player                               | yes                   | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2010     |
-| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | $2000             | CD player                               | yes                   | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2009     |
 | [Akai MPD24](Akai%20MPD24)                                                                         | discontinued      | miscellaneous                           | no                    | MIDI            | 1.8                           | 2007     |
 | [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued      | basic 2 deck                            | yes                   | MIDI            | 1.11                          | 2006     |
 | [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued      | CD player                               | no                    | MIDI            | 1.10                          | 2010     |
@@ -136,7 +132,7 @@ move your controller to this table.
 | [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued      | 4 decks                                 | no                    | MIDI            | 1.11                          | 2009     |
 | [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued      | 2 deck mixer                            | no                    | MIDI            | 1.10.1                        | 2009     |
 | [eks Otus](eks%20Otus)                                                                             | discontinued      | 1 turntable + 2 deck mixer              | yes                   | HID             | 1.11                          | 2008     |
-| [Electrix Tweaker](Electrix%20Tweaker)                                                             | discontinued      | 4 deck\[15\] without jog wheels         | no                    | MIDI            | 2.0                           | 2012     |
+| [Electrix Tweaker](Electrix%20Tweaker)                                                             | discontinued      | 4 deck\[14\] without jog wheels         | no                    | MIDI            | 2.0                           | 2012     |
 | [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued      | knobs + crossfader                      | no                    | MIDI            | 1.6                           | 2006     |
 | [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued      | 2 deck mixer                            | no                    | MIDI            | 1.6                           | 2006     |
 | [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued      | basic 2 deck                            | no                    | MIDI            | 1.11                          | 2011     |
@@ -144,7 +140,8 @@ move your controller to this table.
 | [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued      | 2 deck mixer                            | no                    | MIDI            | 1.8.2                         | 2009     |
 | [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued      | 2 deck all-in-one                       | yes                   | MIDI            | 1.11                          | 2012     |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | discontinued      | basic 2 deck                            | yes                   | MIDI            | 1.10.1                        | 2012     |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                       | yes                   | MIDI \[16\]     | 1.7                           | 2004     |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                       | yes                   | MIDI \[15\]     | 1.7                           | 2004     |
+| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued      | 4 deck\[16\] all-in-one                 | yes                   | MIDI            | 1.11                          |          |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                       | yes                   | HID             | 1.11                          | 2003     |
 | [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                       | yes                   | HID \[17\]      | 1.8                           | 2010     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued      | 2 deck all-in-one                       | no                    | HID             | 1.11                          | 2006     |
@@ -161,9 +158,12 @@ move your controller to this table.
 | [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued      | 2 deck all-in-one                       | no                    | MIDI            | 1.6                           | 2007     |
 | [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued      | 2 deck all-in-one                       | no                    | MIDI            | 1.8.2                         | 2010     |
 | [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued      | 2 deck all-in-one                       | yes                   | MIDI            | 1.10                          | 2010     |
+| [Numark N4](Numark%20N4)                                                                           | discontinued      | 4 deck all-in-one                       | yes                   | MIDI            | 1.10                          | 2012     |
 | [Numark NS7](Numark%20NS7)                                                                         | discontinued      | 2 deck all-in-one with motorized wheels | yes                   | MIDI            | 1.9                           | 2009     |
 | [Numark V7](Numark%20V7)                                                                           | discontinued      | 2 deck motorized wheel                  | yes                   | MIDI            | 1.10                          | 2010     |
 | [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued      | CD player                               | no                    | MIDI or HID     | 1.8.2 (MIDI)                  | 2010     |
+| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | discontinued      | CD player                               | yes                   | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2010     |
+| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | discontinued      | CD player                               | yes                   | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2009     |
 | [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | discontinued      | 4 deck\[22\] all-in-one                 | yes                   | MIDI            | 2.0                           | 2014     |
 | [Reloop Beatmix 2](Reloop%20Beatmix%202)                                                           | discontinued      | 2 deck all-in-one                       | yes                   | MIDI            | 2.1\[23\]                     | 2014     |
 | [Reloop Beatmix 4](Reloop%20Beatmix%204)                                                           | discontinued      | 4 deck all-in-one                       | yes                   | MIDI            | 2.1\[24\]                     | 2014     |
@@ -601,16 +601,16 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
 
 12. switching between decks 1/3 and decks 2/4
 
-13. switching between decks 1/3 and decks 2/4
-
-14. This mapping is compatible with Mixxx 2.0 and will be included with
+13. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-15. switching between decks 1/3 and decks 2/4
+14. switching between decks 1/3 and decks 2/4
 
-16. This device is not USB MIDI class compliant. Its signals are
+15. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Mac OS X. There is no
     driver available for Linux or Windows.
+
+16. switching between decks 1/3 and decks 2/4
 
 17. with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)

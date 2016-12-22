@@ -15,6 +15,9 @@ card](hardware%20compatibility#usb%20sound%20cards) to be able to
 preview tracks in headphones. It also does not have buttons for routing
 decks to headphones.
 
+Thanks to Hercules for supporting the development of this mapping by
+providing a controller.
+
 ## Mapping description
 
 The play/pause buttons, EQ knobs, volume knobs, and crossfader all

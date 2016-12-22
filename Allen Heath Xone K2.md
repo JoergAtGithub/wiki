@@ -10,7 +10,8 @@
     diagrams](http://www.allen-heath.com/media/Xone+K2+Blank+Overlays.zip)
 
 The Allen & Heath Xone:K2 is set up like a 4 channel mixer plus a grid
-of buttons. It also has an integrated 4 channel sound card.
+of buttons. It also has an integrated 4 channel sound card with 2 RCA
+jacks and an 1/8" stereo headphone jack.
 
 # Default Mixxx mapping
 

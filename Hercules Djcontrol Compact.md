@@ -6,6 +6,11 @@
 
   - [Manufacturer's product
     page](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
+  - Mapping download: [XML
+    file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Hercules%20DJControl%20Compact.midi.xml)
+    and [JS
+    file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Hercules-DJControl-Compact-scripts.js)
+    (compatible with Mixxx 2.0)
 
 The Hercules DJ Control Compact is a simple controller for basic
 two-channel mixing. This device does not have a built in sound card, so

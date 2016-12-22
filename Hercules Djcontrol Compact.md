@@ -7,17 +7,13 @@
   - [Manufacturer's product
     page](https://www.hercules.com/us/DJ-Music/bdd/p/253/djcontrol-compact/)
 
-The Hercules DJ Control Compact is a great, simple controller that works
-well for basic two-channel mixing. Due to its small size, many buttons
-perform more than one function. For instance although it doesn't have
-rate sliders, the controller has two jog wheels which can also be used
-to adjust the playback rate.
-
-This device does not have a built in sound card, so it would require a
-[splitter cable](hardware%20compatibility#splitter%20cables) or
-[separate sound card](hardware%20compatibility#usb%20sound%20cards) to
-be able to preview tracks in headphones. It also does not have buttons
-for routing decks to headphones.
+The Hercules DJ Control Compact is a simple controller for basic
+two-channel mixing. This device does not have a built in sound card, so
+it would require a [splitter
+cable](hardware%20compatibility#splitter%20cables) or [separate sound
+card](hardware%20compatibility#usb%20sound%20cards) to be able to
+preview tracks in headphones. It also does not have buttons for routing
+decks to headphones.
 
 ## Mapping description
 

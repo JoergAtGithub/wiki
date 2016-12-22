@@ -216,7 +216,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Akai AMX](Akai%20AMX)                                   | $250               | 2 deck mixer                    | yes                   | MIDI            | 2014     |
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a) | $200               | 4 deck \[31\] all-in-one        | yes                   | MIDI            | 2013     |
 | [Hercules P32 DJ](Hercules%20P32%20DJ)                   | $300               | 4 deck \[32\] mixer + pad grids | yes                   | MIDI            | 2016     |
-| [Gemini G4V](Gemini%20G4V)                               | $\~282             | 4 deck \[33\] all-in-one        | yes                   | MIDI            | 2013     |
+| [Gemini G4V](Gemini%20G4V)                               | $350               | 4 deck \[33\] all-in-one        | yes                   | MIDI            | 2013     |
 | [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                 | $300               | 2 deck controller and mixer     | yes                   | MIDI            | 2014     |
 
 \</sortable\>

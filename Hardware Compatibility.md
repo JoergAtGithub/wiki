@@ -526,35 +526,6 @@ transitions between DJs. \<sortable 2=numeric\>
 
 \</sortable\>
 
-### Controllers with sound cards
-
-These are USB devices that send MIDI or HID signals to [control
-Mixxx](#controllers) and also have a built-in sound card. \<sortable
-2=numeric\>
-
-| Device                                                               | Price (USD) \[52\] | Channels out | Output connectors                                                 | Channels in | Input connectors                                                         | Preamps        | Linux |
-| -------------------------------------------------------------------- | ------------------ | ------------ | ----------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | -------------- | ----- |
-| [Behringer BCD3000](Behringer%20BCD3000)                             | $100               | 4            | 2 RCA, 1 1/4" headphone                                           | 4           | 4 RCA, 1 XLR mic                                                         | 2 phono, 1 mic | yes   |
-| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)   | $125               | 4            | 2 RCA, 2 1/8" stereo                                              | 0           | none                                                                     | none           | yes   |
-| [Hercules DJ Console RMX 2](Hercules%20DJ%20Console%20RMX%202)       | $200               | 4            | 2 XLR, 2 RCA, 2 1/4" headphone                                    | 4           | 4 RCA, 1 XLR \[53\]                                                      | 2 phono, 1 mic | yes   |
-| [American Audio VMS2](American%20Audio%20VMS2)                       | $250               | 4            | 2 XLR, 4 RCA, 1 1/4" headphone                                    | 4           | 4 RCA, 1 XLR mic, 1 1/4" mic                                             | 2 phono, 1 mic | yes   |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                   | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[54\]                                                        | 1 mic          | yes   |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                 | $250               | 4            | 2 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 0           | 1 1/4" mic \[55\]                                                        | 1 mic          | yes   |
-| [Allen & Heath Xone K2](Allen%20&%20Heath%20Xone%20K2)               | $300               | 4            | 2 RCA, 1 1/8" headphone                                           | 0           | none                                                                     | none           | yes   |
-| [Denon MC4000](Denon%20MC4000)                                       | $399               | 4            | 2 RCA, 2 XLR, 2 1/4" balanced, 1 1/8" headphone, 1 1/4" headphone | 0           | 2 RCA, 1 1/4“ XLR combo mic, 1 1/4“ mic \[56\]                           | 2 mic          | yes   |
-| [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                     | $400               | 4            | 4 RCA, 2 1/4" balanced, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1/4" mic                                                          | 1 phono, 1 mic | ?     |
-| [Numark N4](Numark%20N4)                                             | $500               | 4            | 4 RCA, 2 XLR, 1 1/4" headphone, 1 1/8" headphone                  | 4           | 4 RCA                                                                    | 2 phono        | ?     |
-| [Denon MC6000Mk2](Denon%20MC6000Mk2)                                 | $700               | 4            | 2 1/4" balanced, 2 XLR, 2 RCA, 1 1/4" headphone                   | 9           | 8 RCA, 1 1/4" mic, 1 XLR mic                                             | 4 phono, 1 mic | yes   |
-| [Behringer BCD2000](Behringer%20BCD2000)                             | discontinued       | 4            | 2 RCA, 1 1/4" headphone                                           | 4           | 4 RCA, 1 XLR                                                             | 2 phono, 1 mic | yes   |
-| [Denon HS5500](Denon%20HS5500)                                       | discontinued       | ?            | ?                                                                 | ?           | ?                                                                        | ?              | ?     |
-| [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)             | discontinued       | 4            | 4 1/4" balanced, 4 RCA, 2 1/4" headphone                          | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | yes   |
-| [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro) | discontinued       | 4            | 4 RCA, 1 1/4" headphone, 1 1/8" headphone                         | 5           | 4 RCA, 1 1/4" mic                                                        | 2 phono, 1 mic | ?     |
-| [Numark Omni Control](Numark%20Omni%20Control)                       | discontinued       | 4            | 4 RCA, 1 1/4" headphone                                           | 1           | 1/14" mic                                                                | 1 mic          | no    |
-| [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                     | discontinued       | 4            | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 1/8" headphone        | 3           | 2 RCA, 1 1/4" mic                                                        | 1 phono, 1 mic | ?     |
-| [Tascam US-428](Tascam%20US-428)                                     | discontinued       | 2            | 2 RCA, 1 optical SPDIF, 2 5-pin MIDI                              | 4           | 2 1/4" balanced, 2 1/4" unbalanced, 2 XLR, 1 optical SPDIF, 2 5-pin MIDI | ?              | yes   |
-
-\</sortable\>
-
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
@@ -755,27 +726,3 @@ Mixxx](#controllers) and also have a built-in sound card. \<sortable
 51. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.
-
-52. Prices listed on this page are the prevailing prices for unused
-    devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop) in the United States.
-    Prices may vary in other parts of the world, but the relative prices
-    of different devices in USD should still provide a rough guide. You
-    may be able to find hardware available for sale cheaper. Devices are
-    marked as discontinued if the manufacturer has declared them as
-    discontinued, the manufacturer has gone out of business, or new
-    units are not widely available online. They may or may not still be
-    available used online. If the price of a device has dropped or it
-    has been discontinued, please update this page.
-
-53. Microphone input is mixed with the master output in hardware. It is
-    not available to the computer.
-
-54. Microphone input is mixed with the master output in hardware. It is
-    not available to the computer.
-
-55. Microphone input is mixed with the master output in hardware. It is
-    not available to the computer.
-
-56. Microphone and auxiliary inputs are mixed with the master output in
-    hardware. They are not available to the computer.

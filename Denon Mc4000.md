@@ -1,6 +1,6 @@
 # Denon MC4000
 
-[[/media/mc4000_angle_web_1200x750.jpg|mc4000\_angle\_web\_1200x750.jpg]]
+[[/media/hardware/mc4000.jpg|mc4000.jpg]]
 
   - [Manufacturer's product
     page](http://denondj.com/products/view/mc4000)

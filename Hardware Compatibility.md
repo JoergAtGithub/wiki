@@ -218,6 +218,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Hercules P32 DJ](Hercules%20P32%20DJ)                   | $300               | 4 deck \[32\] mixer + pad grids | yes                   | no               | MIDI            | 2016     |
 | [Gemini G4V](Gemini%20G4V)                               | $350               | 4 deck \[33\] all-in-one        | yes                   | yes              | MIDI            | 2013     |
 | [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                 | $300               | 2 deck controller and mixer     | yes                   | no               | MIDI            | 2014     |
+| [Behringer CMD Micro](Behringer%20CMD%20Micro)           | $100               | 2 deck controller               | no                    | no               | MIDI            | 2013     |
 
 \</sortable\>
 

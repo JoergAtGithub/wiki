@@ -4,8 +4,9 @@
 
 [[/media/hardware/behringer-cmd-micro-dj-midi-controller.svg|]]
 
-  - ~~[Manufacturer's product
-    page](https://www.music-group.com/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-MICRO/p/P0AJR/)~~
+  - [Manufacturer's product
+    page](https://www.music-group.com/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-MICRO/p/P0AJR/)
+    (offline as of 2016)
 
 The *Behringer CMD Micro* is a simple controller for basic two-channel
 mixing. This device does not have a built in sound card, so it would

@@ -80,6 +80,16 @@ Mixxx only detects sound cards on startup. If you plugged your sound
 card in after starting Mixxx, restart Mixxx and look again under Sound
 Hardware in Options \> Preferences.
 
+On Windows, you need to have a driver for each sound sound card you are
+trying to use with the sound API you have configured. Generally,
+consumer grade sound cards like those built into computer motherboards
+and external monitors do not have ASIO drivers. It might be possible to
+use them with ASIO through [ASIO4ALL](http://asio4all.com/), but
+ASIO4ALL is a wrapper around WDM-KS, so it may be better to use WDM-KS
+directly. Refer to the
+[manual](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+for more information about different sound APIs.
+
 If you are running Mixxx on Windows 10, try following [these
 suggestions](http://wiki.audacityteam.org/wiki/Windows_10_OS#Sound_Device_driver_requirements_and_problems)
 from Audacity. Mixxx and Audacity both use the PortAudio library to

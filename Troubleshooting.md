@@ -89,6 +89,77 @@ Soundtouch. See also [\#What should I do to get Mixxx to run the best it
 can on my
 computer?](#What%20should%20I%20do%20to%20get%20Mixxx%20to%20run%20the%20best%20it%20can%20on%20my%20computer?)
 
+## My controller does not work
+
+To use a MIDI or HID controller with Mixxx, enable the device and load a
+mapping. Go to Options \> Preferences in Mixxx and look for your
+controller under the "Controllers" label on the left. Check the
+"Enabled" box, select a mapping from the drop down menu and press "Ok".
+If Mixxx did not come with a mapping for your controller, [search the
+forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
+made one. If not, you can [map it
+yourself](start#controller%20mapping%20documentation).
+
+If your controller does not show up under "Controllers" on the left side
+of Mixxx's preferences window, Mixxx did not detect your controller.
+Check that your controller is plugged into your computer. If your
+controller has its own power supply, check that the power supply is
+plugged in. If your controller has a power switch, make sure it is on.
+Note that Mixxx will only detect controllers on start up, so if you
+plugged in your controller after starting Mixxx, restart Mixxx and go
+back to the Preferences window.
+
+If you are sure your controller is connected but it still does not show
+up in Mixxx, read the appropriate section below. If you do not know
+whether your controller is a MIDI controller or HID controller, search
+for it on the [DJ Hardware Guide](hardware%20compatibility). If it is
+not listed there, it is most likely a MIDI device.
+
+Some controllers have their own pecularities that are noted on their own
+wiki pages. If the information below does not solve your problem, check
+the wiki page for your controller, which you can find a link to on the
+[DJ Hardware Guide](hardware%20compatibility).
+
+### MIDI controllers on GNU/Linux
+
+Make sure that the snd-seq-midi kernel module has been loaded. Open a
+console and run `lsmod | grep snd_seq_midi` to check if the module has
+been loaded. If it has not, run `modprobe snd-seq-midi` as root and
+restart Mixxx.
+
+This happens on GNU/Linux where devices like the American Audio VMS4.1
+only show up as an HID device, not a MIDI device. Also, there is [a
+bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
+loading the snd-seq-midi module manually.
+
+### HID and USB Bulk controllers on GNU/Linux
+
+If your controller does not appear in the list of controllers on the
+left pane of Mixxx's Preferences (under the "Controllers" section),
+Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
+will say something to this effect in the log when it scans for HID
+devices.) As of version 2.0, Mixxx should automatically install a udev
+rule to give users in the group called "users" permission to use HID and
+USB Bulk devices.
+
+First, check that your user account is in the group "users". Open a
+console and run the command `groups` to find out what groups your user
+is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
+as root to add YOUR-USER-NAME to the "users" group, log out, and log
+back in.
+
+If you still cannot activate your controller, check that the udev rule
+was installed in /lib/udev/rules.d/ or /etc/udev/rules.d/ . The file
+should be called something like mixxx.usb.rules or 40-mixxx-usb.rules.
+It is installed with the Ubuntu PPA and RPMFusion package as well as
+when installing Mixxx from source (if you have write access to
+/etc/udev/rules.d when running `scons install`), however packages for
+other distributions may not install it correctly. If that file is
+missing, save [the udev
+rule](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
+in /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root or
+restart your computer.
+
 ## Mixxx says my sound card does not support the sample format
 
 Try opening a console and running `export PA_ALSA_PLUGHW=1` before
@@ -185,77 +256,6 @@ with the output without digitizing it, and also runs the digitized
 signal to the computer. These sound cards typically have a knob on them
 that controls the mix between the computer output and the direct monitor
 signal. See your sound card's manual for more information.
-
-## My controller does not work
-
-To use a MIDI or HID controller with Mixxx, enable the device and load a
-mapping. Go to Options \> Preferences in Mixxx and look for your
-controller under the "Controllers" label on the left. Check the
-"Enabled" box, select a mapping from the drop down menu and press "Ok".
-If Mixxx did not come with a mapping for your controller, [search the
-forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
-made one. If not, you can [map it
-yourself](start#controller%20mapping%20documentation).
-
-If your controller does not show up under "Controllers" on the left side
-of Mixxx's preferences window, Mixxx did not detect your controller.
-Check that your controller is plugged into your computer. If your
-controller has its own power supply, check that the power supply is
-plugged in. If your controller has a power switch, make sure it is on.
-Note that Mixxx will only detect controllers on start up, so if you
-plugged in your controller after starting Mixxx, restart Mixxx and go
-back to the Preferences window.
-
-If you are sure your controller is connected but it still does not show
-up in Mixxx, read the appropriate section below. If you do not know
-whether your controller is a MIDI controller or HID controller, search
-for it on the [DJ Hardware Guide](hardware%20compatibility). If it is
-not listed there, it is most likely a MIDI device.
-
-Some controllers have their own pecularities that are noted on their own
-wiki pages. If the information below does not solve your problem, check
-the wiki page for your controller, which you can find a link to on the
-[DJ Hardware Guide](hardware%20compatibility).
-
-### MIDI controllers on GNU/Linux
-
-Make sure that the snd-seq-midi kernel module has been loaded. Open a
-console and run `lsmod | grep snd_seq_midi` to check if the module has
-been loaded. If it has not, run `modprobe snd-seq-midi` as root and
-restart Mixxx.
-
-This happens on GNU/Linux where devices like the American Audio VMS4.1
-only show up as an HID device, not a MIDI device. Also, there is [a
-bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
-loading the snd-seq-midi module manually.
-
-### HID and USB Bulk controllers on GNU/Linux
-
-If your controller does not appear in the list of controllers on the
-left pane of Mixxx's Preferences (under the "Controllers" section),
-Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
-will say something to this effect in the log when it scans for HID
-devices.) As of version 2.0, Mixxx should automatically install a udev
-rule to give users in the group called "users" permission to use HID and
-USB Bulk devices.
-
-First, check that your user account is in the group "users". Open a
-console and run the command `groups` to find out what groups your user
-is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
-as root to add YOUR-USER-NAME to the "users" group, log out, and log
-back in.
-
-If you still cannot activate your controller, check that the udev rule
-was installed in /lib/udev/rules.d/ or /etc/udev/rules.d/ . The file
-should be called something like mixxx.usb.rules or 40-mixxx-usb.rules.
-It is installed with the Ubuntu PPA and RPMFusion package as well as
-when installing Mixxx from source (if you have write access to
-/etc/udev/rules.d when running `scons install`), however packages for
-other distributions may not install it correctly. If that file is
-missing, save [the udev
-rule](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
-in /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root or
-restart your computer.
 
 ## BPM of tracks is not shown in my library
 

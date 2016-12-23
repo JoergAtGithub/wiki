@@ -143,6 +143,71 @@ else
 }
 ```
 
+## Namespaces
+
+Please refer to the [Google C++ Style Guide's namespace
+section](https://google.github.io/styleguide/cppguide.html#Namespaces).
+
+In new code, please wrap the code in the "mixxx" namespace (avoid making
+a hierarchy of namespaces). Put module-local helper functions in an
+anonymous namespace.
+
+## In the header file
+
+``` cpp-qt
+#include <SomeQtHeaderUsedInThisHeader>
+
+#include "some/mixxx/file/used/in/this/header.h"
+
+namespace mixxx {
+
+class MyClass {
+  public:
+    MyClass();
+  
+  private:
+    bool m_helper;
+};
+
+bool myFunction();
+
+}  // namespace mixxx
+// ^ Note two spaces after the closing brace.
+```
+
+## In the implementation (.cpp) file
+
+``` cpp-qt
+#include "path/to/myclass.h"
+
+#include <LocallyNeededQtHeader>
+
+#include "locally/needed/mixxx/header.h"
+
+namespace mixxx {
+namespace {
+
+// Put file-local helper functions and constants here.
+bool myHelper() {
+  return true;
+}
+
+}  // namespace 
+// ^ Note two spaces after the closing brace.
+
+// Put class implementations, functions, and constants 
+// that are meant to be used by other parts of Mixxx here.
+MyClass::MyClass() : m_helper(myHelper()) {
+}
+
+bool myFunction() {
+  return myHelper();
+}
+
+}  // namespace mixxx
+// ^ Note two spaces after the closing brace.
+```
+
 ## If Statements
 
 One-line statements following an `if` clause are acceptable, but it is

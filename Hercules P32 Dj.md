@@ -133,18 +133,20 @@ toggled between decks 1/3 or 2/4. The mapping script automatically
 enables Effect Unit 1 on decks 1 & 3 and Effect Unit 2 on decks 2 & 4
 when Mixxx starts.
 
-The MACRO button toggles the effect unit between collapsed and expanded
-mode.
+The MACRO button toggles whether the effect unit shows all the
+parameters of each effect or just the metaknobs.
 
-When the effect unit is collapsed, the knobs control the metaknob of
-each effect in the unit. The buttons control whether each effect is
-enabled. Pressing a button with shift switches to the next available
-effect.
+When the effect unit just shows the metaknobs, the P32's knobs control
+the metaknob of each effect in the unit. The ON buttons control whether
+each effect is enabled. Pressing a button with shift switches to the
+next available effect.
 
-When the effect unit is expanded, the knobs control the first 3
-parameters of one effect in the effect unit. The effect that the knobs
-manipulate is selected by pressing one of the buttons. Pressing a button
-with shift toggles whether the corresponding effect is enabled.
+When the effect unit shows all the parameters of the effects, the knobs
+control the first 3 parameters of the focused effect. The focused effect
+has a box around it on screen. The focused effect can be changed by
+clicking the buttons on screen or pressing shift with the ON button of
+the P32. Without shift, the ON buttons control whether each effect is
+enabled.
 
 Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect

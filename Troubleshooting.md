@@ -25,51 +25,6 @@ M4A/AAC files around so you can delete the FLAC files when this bug is
 fixed. Converting lossy M4A/AAC files to another lossy format will sound
 worse than the starting M4A/AAC files and is not advised.
 
-## I can't plug in my headphones and speakers at the same time
-
-This requires either a sound card with 4 (mono) output channels,
-multiple sound cards, or a DJ splitter cable. See the [DJ Hardware
-Guide](hardware%20compatibility) for more information.
-
-## I pressed the headphone button but I still hear that deck on the main output
-
-To make the track playing in your headphones not play on the main
-output, turn the volume down on the deck you do not want your audience
-to hear yet (or push the crossfader all the way to the opposite side)
-then press the headphone ('PFL') button for that deck. This will not
-turn down the volume in your headphones; it will only turn down the
-volume on the main output.
-
-## I hear crackling
-
-Your audio latency may be set lower than your system can handle. See the
-[Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on
-adjusting your latency.
-
-## There is a delay before I hear a change in the audio
-
-Your audio latency may be set too high. See the [Adjusting Audio
-Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
-latency.
-
-## What should I do to get Mixxx to run the best it can on my computer?
-
-First, try each option for waveform renderer in Preferences \> Waveforms
-\> Summary type and Overview type. Different options will work better on
-different combinations of video card, video driver, and operating
-system. Lower the framerate to the lowest it needs to be before you
-notice the waveforms flicker. Also see [Adjusting Audio
-Latency](Adjusting%20Audio%20Latency).
-
-## How can I get Mixxx to run well on an old or slow computer?
-
-In Preferences \> Sound Hardware, select "Soundtouch (faster)" for
-Keylock/Pitch-Bending Engine. Be careful not to make big changes in
-tempo to a track with keylock on because it will not sound good with
-Soundtouch. See also [\#What should I do to get Mixxx to run the best it
-can on my
-computer?](#What%20should%20I%20do%20to%20get%20Mixxx%20to%20run%20the%20best%20it%20can%20on%20my%20computer?)
-
 ## I can't select my sound card in the Sound Hardware preferences
 
 Check that your sound card is plugged in. If it has its own power
@@ -116,6 +71,24 @@ run Mixxx with [command line options](command%20line%20options), such as
 `--mididebug`, put `--` between `pasuspender` and the rest of the
 command. For example, run `pasuspender -- mixxx --mididebug`
 
+## What should I do to get Mixxx to run the best it can on my computer?
+
+First, try each option for waveform renderer in Preferences \> Waveforms
+\> Summary type and Overview type. Different options will work better on
+different combinations of video card, video driver, and operating
+system. Lower the framerate to the lowest it needs to be before you
+notice the waveforms flicker. Also see [Adjusting Audio
+Latency](Adjusting%20Audio%20Latency).
+
+## How can I get Mixxx to run well on an old or slow computer?
+
+In Preferences \> Sound Hardware, select "Soundtouch (faster)" for
+Keylock/Pitch-Bending Engine. Be careful not to make big changes in
+tempo to a track with keylock on because it will not sound good with
+Soundtouch. See also [\#What should I do to get Mixxx to run the best it
+can on my
+computer?](#What%20should%20I%20do%20to%20get%20Mixxx%20to%20run%20the%20best%20it%20can%20on%20my%20computer?)
+
 ## Mixxx says my sound card does not support the sample format
 
 Try opening a console and running `export PA_ALSA_PLUGHW=1` before
@@ -126,6 +99,33 @@ tell PortAudio, the library Mixxx uses to interact with sound hardware
 on multiple operating systems, to use ALSA's plughw devices rather than
 hw. plughw automatically converts audio streams to a sample format
 supported by the sound card.
+
+## I can't plug in my headphones and speakers at the same time
+
+This requires either a sound card with 4 (mono) output channels,
+multiple sound cards, or a DJ splitter cable. See the [DJ Hardware
+Guide](hardware%20compatibility) for more information.
+
+## I pressed the headphone button but I still hear that deck on the main output
+
+To make the track playing in your headphones not play on the main
+output, turn the volume down on the deck you do not want your audience
+to hear yet (or push the crossfader all the way to the opposite side)
+then press the headphone ('PFL') button for that deck. This will not
+turn down the volume in your headphones; it will only turn down the
+volume on the main output.
+
+## I hear crackling
+
+Your audio latency may be set lower than your system can handle. See the
+[Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on
+adjusting your latency.
+
+## There is a delay before I hear a change in the audio
+
+Your audio latency may be set too high. See the [Adjusting Audio
+Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your
+latency.
 
 ## My sound card randomly stops working
 

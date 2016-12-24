@@ -41,13 +41,12 @@ On Windows, you need to have a driver for each sound sound card you are
 trying to use with the sound API you have configured. Generally,
 consumer grade sound cards like those built into computer motherboards
 and external monitors do not have ASIO drivers. Check the sound card
-manufacturer's website for an ASIO driver to download and install. It
-might be possible to use sound cards that do not have an ASIO driver
-with ASIO through [ASIO4ALL](http://asio4all.com/), but ASIO4ALL is a
-wrapper around WDM-KS, so it may be better to use WDM-KS directly.
-ASIO4ALL can be helpful for using a sound card that has an ASIO driver
-together with another sound card that does not have an ASIO driver.
-Refer to the
+manufacturer's website for an ASIO driver to download and install. If
+there is no ASIO driver for your sound card, it might be possible to use
+[ASIO4ALL](http://asio4all.com/), but ASIO4ALL is a wrapper around
+WDM-KS, so it may be better to use WDM-KS directly. ASIO4ALL can be
+helpful for using a sound card that has an ASIO driver together with
+another sound card that does not have an ASIO driver. Refer to the
 [manual](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
 for more information about different sound APIs.
 

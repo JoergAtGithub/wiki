@@ -28,5 +28,3 @@ selected, but act as the play button when the red layer is selected.
 
 Text in blue describes secondary functions accessible when the shift
 button is held down.
-
-[[/media/xone_k2_mapping.svg|Xone K2 Mapping]]

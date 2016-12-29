@@ -591,8 +591,8 @@ transitions between DJs. \<sortable 2=numeric\>
 18. switching between decks 1/3 and decks 2/4
 
 19. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Mac OS X. There is no
-    driver available for Linux or Windows.
+    translated to MIDI by special drivers on Windows and Mac OS X. There
+    is no driver available for Linux.
 
 20. with MIDI driver. For Linux support, see [this forum
     thread](http://mixxx.org/forums/viewtopic.php?f=3&t=5064)

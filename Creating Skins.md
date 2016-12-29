@@ -2981,28 +2981,6 @@ A a widget to show the laptop battery status.
 The charging/discharging pixmaps will have %1 replaced from 0 to
 NumberStates - 1.
 
-# Convert a Mixxx skin.xml into HTML
-
-Deprecated in Mixxx 1.11
-
-\<del\>The skin.xsl file (contributed by Dave Jarvis) in the "skins"
-directory allows you to do XSL transform which converts a Mixxx skin.xml
-into HTML, to be viewed with a web browser. In plain English: it lets
-you preview a skin in your web browser so you don't have to restart
-Mixxx every time you make a change. Very useful if you're creating a
-skin.
-
-The XSL file can be used by running xsltproc like so:\</del\>
-
-``` 
-  xsltproc skin.xsl skin.xml > skin.html
-```
-
-~~This is what the output looks like (plain Outline skin with no color
-scheme applied)~~
-
-[[/media/skinning/creating_skins/mixxx1.9_xsl_skin.html.png|]]
-
 # Useful Links
 
   - [Skin Colour Scheme

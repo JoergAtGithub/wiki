@@ -827,8 +827,8 @@ Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `
 <Mark>
         <Control>hotcue_X_position</Control>
@@ -843,36 +843,56 @@ end Mark tag
 max. 36 Hotcues(X=1-36), define every Hotcue for its own
 Optional: uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
 Text visible when Hotcue point is set (and no custom marker is defined)
-Defines where text is positioned (Y="top" or "center" or "bottom")
+Defines where text is positioned (vertical only: Y="top", "center", "bottom" or combinations like "vcenter\|left", "bottom\|right, "top\|hcenter")
 Defines text background color
 Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `
 <Mark>
-        <Control>loop_start_position</Control>
+        <Control>hotcue_X_position</Control>
         <Pixmap>custom_marker.png</Pixmap>
-        <Text>LOOP IN</Text>
+        <Text>HOTCUE X</Text>
     <Align>Y</Align>
     <Color>#</Color>
     <TextColor>#</TextColor>
 </Mark>
 
 ` | `begin Mark tag
-Defines a loops starting point
-Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Text visible when starting point is set (and no custom marker is defined)
-Defines where text is positioned (Y="top" or "center" or "bottom")
+max. 36 Hotcues(X=1-36), define every Hotcue for its own
+Optional: uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
+Text visible when Hotcue point is set (and no custom marker is defined)
+Defines where text is positioned (vertical only: Y="top", "center", "bottom" or combinations like "vcenter\|left", "bottom\|right, "top\|hcenter")
 Defines text background color
 Defines text color
 end Mark tag
 ` |
 
-|                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `
+<DefaultMark>
+        <Pixmap>custom_marker.png</Pixmap>
+    <Align>Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+        <Text> %1 </Text>
+</DefaultMark>
+
+` | `begin Mark tag
+Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
+Defines where text is positioned (vertical only: Y="top", "center", "bottom" or combinations like "vcenter\|left", "bottom\|right, "top\|hcenter")
+Defines text background color
+Defines text color
+Is filled with Hotcue number when not defined by respective custom mark
+end Mark tag
+` |
+
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `
 <Mark>
         <Control>loop_end_position</Control>
@@ -887,7 +907,7 @@ end Mark tag
 Defines a loops end point
 Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
 Text visible when end point is set (and no custom marker is defined)
-Defines where text is positioned (Y="top" or "center" or "bottom")
+Defines where text is positioned (vertical only: Y="top", "center", "bottom" or combinations like "vcenter\|left", "bottom\|right, "top\|hcenter")
 Defines text background color
 Defines text color
 end Mark tag

@@ -391,7 +391,7 @@ above like this:
 
     scons stdlib=libc++
 
-##### Error: QT path does not exist or QT4 is not installed.
+##### Error: QT path does not exist or QT5 is not installed.
 
 If you installed Qt to a custom location you will have to provide this
 via the `qtdir` flag. For example, you could try:

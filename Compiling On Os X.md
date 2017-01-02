@@ -104,7 +104,7 @@ already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ``` 
-    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt chromaprint rubberband fftw vamp-plugin-sdk opusfile
+    brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile
 ```
 
 **OPTIONAL:** To enable
@@ -270,12 +270,8 @@ You will need to install the following by hand for the compile process:
     or "sudo port install portmidi"
   - faad2 ([Download](http://sourceforge.net/projects/faac/)) or "sudo
     port install faad2"
-  - QT 4.6.0+ ([Download](https://qt-project.org/downloads)) -- get the
-    Cocoa Mac binary package for Mac OS X 10.5 - 10.6 (32-bit and
-    64-bit) and install to the default location. -- DO NOT use qt4-mac
-    delivered through macports. It will give you an error messages that
-    some header files are missing e.g. libmad and others. This is due to
-    a missing QTCore framework.
+  - QT 5 ([Download](https://www.qt.io/download-open-source/#section-4))
+    -- get the Mac binary package.
   - Git ([Download](http://git-scm.com/)) -- Get the installer for your
     version of OS X.
   - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
@@ -322,7 +318,7 @@ your homebrew installation. In this example we will use
     export CFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
     export CXXFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
     export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt/4.8.5/
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt5/5.7.1/
 
 **Opus Workaround:** The version of libopus included with Homebrew has a
 bug where opusfile.h includes the file opus\_multistream.h. In order for
@@ -336,7 +332,7 @@ and install:
 If you used the 1.11 branch, you must type `cd mixxx` twice.
 
     cd mixxx
-    scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0
+    scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0 qt5=1
     scons bundle
 
 This should generate `Mixxx.app` which you can run by double-clicking on

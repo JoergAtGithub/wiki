@@ -127,11 +127,13 @@ does work for switching between dry/wet and the superknob though.
 
 #### Mixxx 2.1
 
-The effects controls on the left control Effect Unit 1, the controls on
-the right control Effect Unit 2. This does not change when decks are
-toggled between decks 1/3 or 2/4. The mapping script automatically
-enables Effect Unit 1 on decks 1 & 3 and Effect Unit 2 on decks 2 & 4
-when Mixxx starts.
+The effects controls on the left control Effect Unit 1 and the controls
+on the right control Effect Unit 2. When the pad grid is in Slicer mode,
+the top row has switches to enable the Effect Unit on decks 1-4. The
+bottom row has switches to enable the Effect Unit on the headphone,
+master, microphone, and auxiliary signals (in that order left to right).
+Mixxx remembers which signals an Effect Unit is enabled on across
+restarts.
 
 The MACRO button toggles whether the effect unit shows all the
 parameters of each effect or just the metaknobs.
@@ -141,12 +143,14 @@ the metaknob of each effect in the unit. The ON buttons control whether
 each effect is enabled. Pressing a button with shift switches to the
 next available effect.
 
-When the effect unit shows all the parameters of the effects, the knobs
-control the first 3 parameters of the focused effect. The focused effect
-has a box around it on screen. The focused effect can be changed by
-clicking the buttons on screen or pressing shift with the ON button of
-the P32. Without shift, the ON buttons control whether each effect is
-enabled.
+When the effect unit shows all the parameters of the effects, the ON
+buttons control the enable switches for the effect. By default, the
+knobs control the metaknobs of each effect. They can be switched to
+control the first 3 parameters of an effect by focusing that effect.
+Focus an effect by pressing shift + ON when the parameters are showing
+or clicking the focus button on screen. The focused effect has a box
+around it on screen. Unfocus an effect and go back to controlling the
+metaknobs by pressing shift + ON for the focused effect.
 
 Turn the Dry/Wet knob to control the mix of the effect sounds with the
 source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect

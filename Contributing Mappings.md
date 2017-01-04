@@ -129,7 +129,8 @@ If you are not very comfortable writing English, do not worry. Do your
 best to write a description of the mapping on the wiki page and someone
 who knows English better can work on your writing. You are also
 encouraged to write the wiki page in your native language in addition to
-English.
+English. You can translate a wiki page by clicking the button for your
+language at the bottom right of the wiki page.
 
 Please complete the wiki page with labeled diagrams explaining how your
 mapping works. Look at the pages for other controllers on the [DJ

@@ -166,8 +166,8 @@ and check whether the controller's sound card appears as an option for
 inputs to select.
 
 When the input signal is not available to computer, it is mixed in
-hardware with the main output without being digitized and routed to
-sound card. This has the advantage of not introducing the latency of
+hardware with the main output without being digitized and routed to the
+computer. This has the advantage of not introducing the latency of
 routing the signal through an analog-to-digital converter, through the
 computer, and back out through the sound card's digital-to-analog
 converter (and saving the manufacturer the expense of putting an

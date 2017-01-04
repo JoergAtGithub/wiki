@@ -177,7 +177,8 @@ Unit.
     to the current position. The button on the right toggles quantize. 
   - **Slicer mode**: various controls for effects. The bottom row
     toggles the effect unit on the headphones, master mix, microphone 1,
-    and auxiliary input 1 (from left to right). In Mixxx 2.0 (not 2.1),
+    and auxiliary input 1 (from left to right). In Mixxx 2.1, the top
+    row assigns the Effect Unit to decks 1-4. In Mixxx 2.0 (not 2.1),
     the top three rows each control an individual effect in the effect
     unit, allowing you to set up effect chains. (These are not visible
     in the LateNight skin). The left button toggles whether that effect

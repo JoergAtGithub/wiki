@@ -386,7 +386,8 @@ JSHint doesn't generate errors for missing variables:
 ## Coding conventions for XML
 
 Use [LibXML2](http://xmlsoft.org/)'s xmllint tool to format your XML
-code. You can also use [this online
+code. xmllint can also be helpful if there is a syntax error in your XML
+file. Alternatively, you can use [this online
 tool](http://www.freeformatter.com/xml-formatter.html) (with '2 spaces
 per indent level').
 

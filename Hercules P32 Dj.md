@@ -138,10 +138,11 @@ restarts.
 The MACRO button toggles whether the effect unit shows all the
 parameters of each effect or just the metaknobs.
 
-When the effect unit just shows the metaknobs, the P32's knobs control
-the metaknob of each effect in the unit. The ON buttons control whether
-each effect is enabled. Pressing a button with shift switches to the
-next available effect.
+When the effect unit shows the metaknobs without the individual
+parameters of effects, the P32's knobs control the metaknob of each
+effect in the unit. The ON buttons control whether each effect is
+enabled. Pressing a button with shift switches to the next available
+effect.
 
 When the effect unit shows all the parameters of the effects, the ON
 buttons control the enable switches for the effect. By default, the

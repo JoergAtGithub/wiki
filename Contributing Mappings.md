@@ -322,36 +322,50 @@ consistent.
 
 These coding conventions are mandatory for new Javascript code in Mixxx:
 
-  - Do not use `==` and `!=` because these can have unexpected effects
+  - Do not use `==` and `!=` because these can have unexpected results
     when comparing variables of different types. Use `===` or `!==`
-    instead. If they generate errors it should be fixed in the Mixxx
-    Javascript engine, not in Javascript code
-  - Use 4 spaces to indent, not tab characters
+    instead.
+  - Use 4 spaces to indent, not tab characters.
   - Always put `var` before variable declarations to avoid accidentally
     declaring global variables.
-  - Do not write one-line `if` statements.
+  - Do not write one-line `if` statements or one-line functions.
   - Always use brackets for `if` statements. Put the opening `{` on the
     same line as the conditional expression and the closing bracket `}`
     on its own line.
   - Put `else` statements on the same line as the previous closing `}`
+  - For defining functions in object literals, put the opening `function
+    (parameters) {` line on the same line as the property name, then
+    indent the function body 4 spaces. Put the closing `}` at the same
+    indention level as the object properties.
+  - Put `,` after the last property of object literals to avoid errors
+    when adding more properties in the future.
   - All code lines that need it must end with `;`
-  - Use camelCase rather than C-style this\_is\_variable.
-  - `new` must be used when creating new objects or if JShint is fine
-    with then it is OK.
-  - Capitalize the first letter of constructor functions
+  - Use camel case (thisVariableName) rather than C-style variable
+    naming (this\_variable\_name).
+  - Use `new` must be used when creating new objects, except for object
+    literals.
+  - Capitalize the first letter of constructor functions.
 
 Here is an example of good Javascript style:
 
     var someObject = new ShinyObject();
     
-    ShinyObject.someMethod = function () {
-        var someVariable = 0;
-        if (something === another) {
-            someVariable++;
+    var anotherObject = {
+        someFunction: function (parameter) {
+            return parameter++;
+        },
+        anotherFunction: function (parameter) {
+            return parameter--;
+        },
+    }
+    
+    ShinyObject.someMethod = function (someParameter) {
+        var someVariable = someParameter + 2;
+        if (someVariable === 5) {
+            return anotherObject.someFunction(someVariable);
         } else {
-            someVariable--;
+            return anotherObject.anotherFunction(someVariable);
         }
-        return someVariable;
     }
 
 ### Code checking tools

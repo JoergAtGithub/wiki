@@ -325,6 +325,12 @@ These coding conventions are mandatory for new Javascript code in Mixxx:
   - Do not use `==` and `!=` because these can have unexpected results
     when comparing variables of different types. Use `===` or `!==`
     instead.
+  - Assign variables to [function
+    expressions](https://www.sitepoint.com/function-expressions-vs-declarations/)
+    rather than using function declaration syntax. Function declaration
+    syntax obscures the fact that functions are objects and can create
+    [unexpected results because of
+    hoisting](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/).
   - Use 4 spaces to indent, not tab characters.
   - Always put `var` before variable declarations to avoid accidentally
     declaring global variables.

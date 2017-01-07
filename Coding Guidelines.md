@@ -759,3 +759,49 @@ point... atomically. 8-)
 Do not use -- [not supported in
 VC2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx), which
 our build system and many windows developers rely on.
+
+### non-static data member initializers
+
+Use sparingly. While very handy, these can hamper readability since you
+now need to look in multiple places (the constructor member initializer
+list, constructor body, and the member variable declarations) to see
+what value member state takes on.
+
+Rule of thumb: If a class has non-inline constructors or is more than
+100 lines long, do not use.
+
+**Good:**
+
+``` cpp-qt
+class Helper {
+  public:
+    Helper(int baz) : baz(baz) {}
+    
+    int derivedResult() {
+      return foo * bar * baz;
+    }
+    
+  private:
+    int foo = 1;
+    int bar = 2;
+    int baz = 3;
+};
+```
+
+**Avoid:**
+
+``` cpp-qt
+class SomeClass {
+  public:
+    SomeClass(int baz); // Defined in some another file.
+    
+    int derivedResult() {
+      return foo * bar * baz;
+    }
+    
+  private:
+    int foo = 1;
+    int bar = 2;
+    int baz = 3;
+};
+```

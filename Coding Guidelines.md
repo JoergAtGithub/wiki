@@ -564,7 +564,7 @@ emit unnecessary signals.
 Prefer unique\_ptr over the Qt Object tree to manage the lifetime of an
 object.
 
-Site note: Deleting sender objects before receiver objects is faster,
+Side note: Deleting sender objects before receiver objects is faster,
 because the sender owns the connection.
 
 ### default / delete functions

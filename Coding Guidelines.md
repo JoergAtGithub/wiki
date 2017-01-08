@@ -554,6 +554,19 @@ and is now provided by C++14. This generic function should always be
 used instead of *operator new* for the allocation of objects that are
 wrapped in a *unique\_ptr*.
 
+If possible, prefer std::unique\_ptr in std:: containers over
+QSharedPointer in Qt containers.
+
+Do not use unique\_ptr for QObjects which have a parent, in this case
+the parent has the ownership. An early delete due to a smart pointer
+emit unnecessary signals.
+
+Prefer unique\_ptr over the Qt Object tree to manage the lifetime of an
+object.
+
+Site note: Deleting sender objects before receiver objects is faster,
+because the sender owns the connection.
+
 ### default / delete functions
 
 Use.

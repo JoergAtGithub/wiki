@@ -545,7 +545,7 @@ Yes\! Always prefer to NULL.
 
 ### unique\_ptr / std::move
 
-Yes\! Prefer to QScopedPointer.
+Yes\! Prefer over QScopedPointer.
 
 By including the custom file "util/memory.h" instead of the system
 header \<memory\> you are even able to make use of

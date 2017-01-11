@@ -104,19 +104,16 @@ fast-forward (respectively) through the track.
 track. You can adjust its total range with the Key Lock / Range button.
 
 18\. **FX Level:** Turn the knobs on the left side of the controller to
-adjust the dry/wet mix ratio of effect units 1-3. Turn the knobs on the
-right side of the controller to adjust the superknob for effect units
-1-3. The FX On button under the knob must be lit for the effect to be
-enabled for that deck. Hold Shift and turn to scroll through the list of
-effects. <span class="underline">Note: Both sides of the controller are
-mapped to FX units 1-3.</span>
+adjust the effect intensity (i.e. "meta" parameter) for the effects in
+the left chain. Turn the knobs on the right side of the controller to
+adjust the meta parameter for the effect in the right chain. The FX On
+button under the knob must be lit for the effect to be enabled.
 
-19\. **FX Beats:** <span class="underline">currently unmapped</span>
+19\. **FX Beats:** Currently changes the wet/dry ratio of the effect
+chain. This will probably change in the future.
 
 20\. **FX On / Select:** Press to toggle the corresponding effect on or
-off for the given channel. Hold Shift and press to select an effect in
-the software. <span class="underline">Note: Both sides of the controller
-are mapped to FX units 1-3.</span>
+off. Hold Shift and press to assign a different effect to this slot.
 
 21\. **FX Tap:** ~~Tap this button repeatedly at the desired tempo to
 set the rate of the effects’ lowfrequency oscillators (LFOs). Press and
@@ -140,15 +137,15 @@ Hold Shift and press to create a Loop Out point at the current location.
 the last-played loop and activate it immediately if there is no loop
 active.
 
-26\. **Browse / Library Knob:** Turn to navigate through the library.
-
-~~Press the knob to select an item. Press and hold Shift and then turn
-this knob to browse quickly through the tracks in your library.~~
+26\. **Browse / Library Knob:** Turn to browse through the items in the
+currently focused pane (i.e. library or sidebar). Press shift and turn
+to scroll <span class="underline">quickly</span> through the items in
+the currently focused pane. Press the knob to select the current item.
 
 27\. **Load:** Load the currently selected track to the deck.
 
-28\. **Back / Panel:** Toggle maximized library
-(<span class="underline">Different from Serato mapping</span>).
+28\. **Back / Panel:** Change the currently focused pane (i.e. library
+or sidebar) to the next or previous pane.
 
 29\. **Load Prep / Open Prep:** Load the currently selected track to the
 preview deck.

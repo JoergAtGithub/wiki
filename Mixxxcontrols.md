@@ -243,11 +243,26 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### \[Library\]
 
-|  | Key/Control                       |  | Range |  | What it does                                                                                                          |  | On-screen feedback |  |
-|  | --------------------------------- |  | ----- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
-|  | font\_size\_increment<sup>7</sup> |  | FIXME |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used. |  | Library view       |  |
-|  | font\_size\_decrement<sup>7</sup> |  | FIXME |  | Decrease the size of the library font                                                                                 |  | Library view       |  |
-|  | font\_size\_knob<sup>7</sup>      |  | FIXME |  | Increase or decrease the size of the library font                                                                     |  | Library view       |  |
+| Key/Control                       |  | Range    |  | What it does                                                                                                                     |  | On-screen feedback                   |  |
+| --------------------------------- |  | -------- |  | -------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------ |  |
+| MoveUp                            |  | Binary   |  | Equivalent to pressing the UP key on the keyboard                                                                                |  |                                      |  |
+| MoveDown                          |  | Binary   |  | Equivalent to pressing the DOWN key on the keyboard                                                                              |  |                                      |  |
+| MoveVertical                      |  | Relative |  | Move UP or DOWN the specified number of locations (negative for down). Intended to be mapped to an encoder knob.                 |  |                                      |  |
+| ScrollUp                          |  | Binary   |  | Equivalent to pressing the PAGEUP key on the keyboard                                                                            |  |                                      |  |
+| ScrollDown                        |  | Binary   |  | Equivalent to pressing the PAGEDOWN key on the keyboard                                                                          |  |                                      |  |
+| ScrollVertical                    |  | Relative |  | Scroll UP or DOWN the specified number of pages (negative for down). Intended to be mapped to an encoder knob.                   |  |                                      |  |
+| MoveLeft                          |  | Binary   |  | Equivalent to pressing the LEFT key on the keyboard                                                                              |  |                                      |  |
+| MoveRight                         |  | Binary   |  | Equivalent to pressing the RIGHT key on the keyboard                                                                             |  |                                      |  |
+| MoveHorizontal                    |  | Relative |  | Move LEFT or RIGHT the specified number of locations (negative for left). Intended to be mapped to an encoder knob.              |  |                                      |  |
+| MoveFocusForward                  |  | Binary   |  | Equivalent to pressing the TAB key on the keyboard                                                                               |  |                                      |  |
+| MoveFocusBackward                 |  | Binary   |  | Equivalent to pressing the SHIFT+TAB key on the keyboard                                                                         |  |                                      |  |
+| MoveFocus                         |  | Relative |  | Move focus forward or backwards the specified number of panes (negative for backward). Intended to be mapped to an encoder knob. |  |                                      |  |
+| ChooseItem                        |  | Binary   |  | Equivalent to double clicking the currently selected item                                                                        |  |                                      |  |
+| AutoDjAddBottom<sup>7</sup>       |  | Binary   |  | Add selected track(s) to Auto DJ Queue (bottom).                                                                                 |  | Append track(s) to Auto DJ playlist  |  |
+| AutoDjAddTop<sup>7</sup>          |  | Binary   |  | Add selected track(s) to Auto DJ Queue (top).                                                                                    |  | Prepend track(s) to Auto DJ playlist |  |
+| font\_size\_increment<sup>7</sup> |  | Binary   |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used.            |  | Library view                         |  |
+| font\_size\_decrement<sup>7</sup> |  | Binary   |  | Decrease the size of the library font                                                                                            |  | Library view                         |  |
+| font\_size\_knob<sup>7</sup>      |  | Relative |  | Increase or decrease the size of the library font                                                                                |  | Library view                         |  |
 
 ### \[Playlist\]
 

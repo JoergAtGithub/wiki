@@ -105,8 +105,8 @@ track. You can adjust its total range with the Key Lock / Range button.
 
 18\. **FX Level:** Turn the knobs on the left side of the controller to
 adjust the effect intensity (i.e. "meta" parameter) for the effects in
-the left chain. Turn the knobs on the right side of the controller to
-adjust the meta parameter for the effect in the right chain. The FX On
+EffectUnit1. Turn the knobs on the right side of the controller to
+adjust the meta parameter for the effect in EffectUnit2. The FX On
 button under the knob must be lit for the effect to be enabled.
 
 19\. **FX Beats:** Currently changes the wet/dry ratio of the effect

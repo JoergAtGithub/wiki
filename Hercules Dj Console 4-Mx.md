@@ -31,11 +31,11 @@ The drivers for Windows and OS X install an application that can be used to conf
   * ** Audio Mode **: Enables the WDM drivers (non-asio) or the specific ASIO-only driver.
   * ** MIDI pitch resolution **: Sets the resolution of the pitch sliders. Mixxx will work with any of the two settings, but it is recommended to set it to 14bit (8bit used) which doubles the precision versus 7bit.
   * ** ASIO **: You can configure the samplerate, bit depth and latency for the ASIO driver.
-  * ** MIDI channel for controls **: Keep these at 1-2 (Default) when you use it with Mixxx.
+  * ** MIDI channel for controls **: //Keep these at 1-2 (Default) when you use it with Mixxx.//
   * ** Crossfader settings **: Allows to configure how does the crossfader react. Mixxx also offers an alternate invert option in the crossfader settings.
   * ** Headphone channels **: Allows to setup which input channels are sent to the headphone output.
   * ** Channels 1-2 hardware mix **: Allows mixing the line in or the headphone directly in hardware to the speaker output.
-  * ** Deck mode **: Leave this at 4 Decks (Default) if you want to use four decks with Mixxx. Else, you will only be able to use two decks.
+  * ** Deck mode **: //Leave this at 4 Decks (Default) if you want to use four decks with Mixxx. Else, you will only be able to use two decks.//
 
 
 ===== Options =====

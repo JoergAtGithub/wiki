@@ -5,7 +5,7 @@
 The Hercules DJ Console 4-Mx is a USB controller with a built in sound card. It is very similar to the [[Hercules DJ Console RMX]], but with switches for 4 decks.
 
 The DJ Console 4-Mx is not a USB class compliant MIDI device, although it is a USB Audio device. It does not work on Linux out of the box. Drivers for Mac OS X and Windows can be found on the [[http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&cid=1|Hercules support page]].
-Warning on linux audio: It will only produce audio if the device hasn't been configured for ASIO under windows previously. Also, check the volumes in alsamixer.
+\\ Warning on linux audio: It will only produce audio if the device hasn't been configured for ASIO under windows previously. Also, check the volumes in alsamixer.
 
 =====Audio=====
 
@@ -26,7 +26,7 @@ The drivers for Windows and OS X install an application that can be used to conf
 
   * ** Volume/Pan/Mute **: Sets the volume output for channels 1-2 and channels 3-4. Note that the volume of the channels 3-4 refers to the line output from behind. In other words. It does not affect the volume of the headphones.
   * ** Line in mode **: Sets the line level of the inputs. In case of line 1-2, it also allows to redirect the microphone to the line 1-2. Else, it is mixed in hardware to the master out.
-  * ** Talkover attenuation **: Sets how much to attenuate the master output when activating the hardware mixed headphones.
+  * ** Talkover attenuation **: Sets how much to attenuate the master output when activating the hardware mixed microphone.
   * ** Enable/Disable jog wheels **: Allows to disable the jog wheels, in case the user desires not to use them.
   * ** Sensitivity **: Alters the sensitivity of the jog wheels. If you change this, change also the sensitivity option in the script, as described below.
   * ** Audio Mode **: Enables the WDM drivers (non-asio) or the specific ASIO-only driver.
@@ -35,7 +35,7 @@ The drivers for Windows and OS X install an application that can be used to conf
   * ** MIDI channel for controls **: //Keep these at 1-2 (Default) when you use it with Mixxx.//
   * ** Crossfader settings **: Allows to configure how does the crossfader react. Mixxx also offers an alternate invert option in the crossfader settings.
   * ** Headphone channels **: Allows to setup which input channels are sent to the headphone output.
-  * ** Channels 1-2 hardware mix **: Allows mixing the line in or the headphone directly in hardware to the speaker output.
+  * ** Channels 1-2 hardware mix **: Allows mixing the line in or the microphone directly in hardware to the speaker output.
   * ** Deck mode **: //Leave this at 4 Decks (Default) if you want to use four decks with Mixxx. Else, you will only be able to use two decks.//
 
 

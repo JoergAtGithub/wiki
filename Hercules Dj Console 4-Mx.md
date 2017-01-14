@@ -4,7 +4,7 @@
 
 The Hercules DJ Console 4-Mx is a USB controller with a built in sound card. It is very similar to the [[Hercules DJ Console RMX]], but with switches for 4 decks.
 
-The DJ Console 4-Mx is not a USB class compliant MIDI device, although it is an USB Audio device. It does not work on Linux out of the box. Drivers for Mac OS X and Windows can be found on the [[http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&cid=1|Hercules support page]].
+The DJ Console 4-Mx is not a USB class compliant MIDI device, although it is a USB Audio device. It does not work on Linux out of the box. Drivers for Mac OS X and Windows can be found on the [[http://ts.hercules.com/eng/index.php?pg=view_files&gid=17&fid=62&pid=263&cid=1|Hercules support page]].
 Warning on linux audio: It will only produce audio if the device hasn't been configured for ASIO under windows previously. Also, check the volumes in alsamixer.
 
 =====Audio=====

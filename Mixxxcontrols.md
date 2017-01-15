@@ -1,3 +1,9 @@
+You can view the ControlObject connected to any part of a skin by
+running Mixxx with the `--developer` command line option and hovering
+your mouse cursor over part of the skin. If no tooltip appears, enable
+tooltips for the Library and Skin in Options \> Preferences \>
+Interface.
+
 ## List of Controls
 
 The default range is 0.0 to 1.0, unless otherwise noted. Binary means

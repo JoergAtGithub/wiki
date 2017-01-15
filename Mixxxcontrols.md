@@ -4,6 +4,9 @@ your mouse cursor over part of the skin. If no tooltip appears, enable
 tooltips for the Library and Skin in Options \> Preferences \>
 Interface.
 
+When running Mixxx in Developer Mode, you can manually set the state of
+any ControlObject by going to Developer \> Developer Tools.
+
 ## List of Controls
 
 The default range is 0.0 to 1.0, unless otherwise noted. Binary means

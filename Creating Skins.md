@@ -27,8 +27,16 @@ first skin. Read this page, understand how things were done in Outline's
 skin.xml and try to work from there. If you're familiar with HTML, then
 you should pretty comfortable editing the skin.xml.
 
-Keep in mind the [Mixxx Skinning
-Guidelines](http://mixxx.org/wiki/doku.php/skin_guidelines)
+It is helpful to run Mixxx in Developer Mode when working on a skin. Use
+the `--developer` command line option to start Mixxx in Developer Mode.
+A new Developer menu will appear with a Reload Skin item so you do not
+have to restart Mixxx to test every change. Also, Developer Mode fills
+tooltips with a lot of helpful debugging information. If you do not see
+tooltips when you hover your mouse over parts of the skin, go to Options
+\> Preferences \> Interface and select "Skin and Library" for the
+Tooltip option.
+
+Keep in mind the [Skin Guidelines](Skin%20Guidelines).
 
 ### Things to know
 

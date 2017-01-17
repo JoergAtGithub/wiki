@@ -26,9 +26,8 @@ directly.**
 
 Mixxx's old developers more or less used the convention that **indents
 are 4 spaces**. The consensus is that we should try to stick to this, if
-only for consistency.
-
-Please bear this in mind when writing code.
+only for consistency. If your code uses tabs, or does not use 4-space
+indent then you will be asked to change it.
 
 ## Line Widths
 
@@ -36,23 +35,23 @@ Please configure your editor to have a max column-width of 80-columns.
 While it is not a strict requirement, 80-column cleanliness makes it
 easy to tile multiple buffers of code across a laptop screen, which
 provides significant efficiency gains to developers. Use double indent
-for broken lines or aligne with a "(" in the line above, if that not
-results in a 4 space indent.
+(8-spaces) for broken lines or align with the opening "(" in the line
+above for hanging indents.
 
 ## Auto-Formater
 
-We currently do not provide an Auto-Formater or Code-Checker.
+We currently do not provide an auto-formater or code-checker.
 
-If you use Eclipse as IDE, the Code Style "K\&R" works well with these
+If you use Eclipse as IDE, the code style "K\&R" works well with these
 tweaks
 
-  - Tap policy = Space only 
-  - New Lines = before colon in constructor initializer list
+  - tab policy = space only 
+  - new lines = before colon in constructor initializer list
 
-Please not that there are still some exceptions, so do not autoformat a
-whole sourcefile.
+Please not that there are still some exceptions, so do not auto-format a
+whole file.
 
-# Mixxx C++ Style Guide
+# C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team
 follows when writing Mixxx code. Most of these conventions are not

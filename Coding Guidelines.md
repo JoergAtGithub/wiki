@@ -48,8 +48,8 @@ tweaks
   - tab policy = space only 
   - new lines = before colon in constructor initializer list
 
-Please not that there are still some exceptions, so do not auto-format a
-whole file.
+Please note that there are still some exceptions, so do not auto-format
+a whole file.
 
 # C++ Style Guide
 

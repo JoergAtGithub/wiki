@@ -126,9 +126,10 @@ For more informations, go to <http://lldb.llvm.org/lldb-gdb.html>
 
 # Windows: creating a dump file
 
-When reporting crashes on Windows, the most useful thing you can provide
-is a "dump" file. This contains important information about why Mixxx
-crashed which will help the development team find a fix.
+When reporting crashes on Windows in addition to the instructions above
+for creating a backtrace, it is extremely useful if you can provide a
+"dump" file. This contains important information about why Mixxx crashed
+and will help the development team find a fix.
 
 To take a crash dump, follow these instructions:
 

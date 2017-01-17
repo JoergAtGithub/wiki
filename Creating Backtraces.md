@@ -156,9 +156,10 @@ To take a crash dump, follow these instructions:
     32-bit or 64-bit.**
     1.  To find the build number:
         1.  See Help -\> About inside of Mixxx and look for `gitXXXX`.
-        2.  OR right-click mixxx.exe \> Properties \> Details -\> File
+        2.  OR right-click mixxx.exe -\> Properties -\> Details -\> File
             Version and look for a number like `2.1.0.XXXX`
     2.  The easiest way to resolve all confusion is to provide us with
-        the exact filename of the installer you used to install Mixxx.
-        This will contain both the build number (gitXXXX) and whether
-        the build is 32-bit or 64-bit.
+        the exact filename of the installer you used to install Mixxx
+        (and the URL you downloaded it from if you know it). This will
+        contain both the build number (`gitXXXX`) and whether the build
+        is 32-bit or 64-bit.

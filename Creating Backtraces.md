@@ -123,3 +123,29 @@ or tools.
     and then doing a right click and selecting *Copy*
 
 For more informations, go to <http://lldb.llvm.org/lldb-gdb.html>
+
+# Windows: creating a dump file
+
+When reporting crashes on Windows, the most useful thing you can provide
+is a "dump" file. This contains important information about why Mixxx
+crashed which will help the development team find a fix.
+
+To take a crash dump, follow these instructions:
+
+1.  When Mixxx crashes, you'll see a dialog similar to the following: 
+    1.  [[/media/wincrashreport_windows_7.png|]]
+2.  **Do not click "Close the program"\!**
+3.  Hit the keys "control", "alt", and "delete" on your keyboard at the
+    same time and click "Start Task Manager" on the screen that follows.
+    
+    1.  [[/media/start-task-manager.jpg|]].
+4.  Find `mixxx.exe` in the list of programs, right-click it and hit
+    "Create Dump File".
+    1.  [[/media/create-dump-file.jpg|]]
+5.  The dump file will be located on your computer in
+    `%APPDATA%\..\Local\Temp\mixxx.dmp` or similar. 
+    1.  **Tip:** You can copy/paste `%APPDATA%\..\Local\Temp\` into the
+        start menu search box to open this folder.
+6.  Upload `mixxx.dmp` (or whatever the file was called) to the bug
+    report on the [Mixxx bug reporting system on
+    Launchpad](https://bugs.launchpad.net/mixxx/).

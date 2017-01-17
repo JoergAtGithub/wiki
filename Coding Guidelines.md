@@ -1,4 +1,4 @@
-# Coding Guidelines
+# Mixxx Style Guide
 
 ## General Philosophy
 
@@ -819,3 +819,14 @@ class SomeClass {
     int baz = 3;
 };
 ```
+
+### magic statics
+
+C++11 added required thread-safe initialization of static variables.
+Prior to C++11, it was possible for multiple threads to initialize a
+static variable at the same time without a synchronization helper to
+prevent once-initialization.
+
+Due to [https://bugs.launchpad.net/bugs/1653368](Bug%20#1653368) we
+build Mixxx with magic statics disabled on Windows. Until this is fixed,
+we cannot rely on magic statics.

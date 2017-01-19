@@ -31,9 +31,12 @@ as shown below:
 | Visual Studio 2013                                                                                                                 | [x86, amd64 and IA64](https://www.microsoft.com/en-gb/download/details.aspx?id=40784)                               |                                                                                                                           |                                                                                                                      |
 | Visual Studio 2015                                                                                                                 | [x86, amd64 and IA64](https://www.microsoft.com/en-us/download/details.aspx?id=53587)                               |                                                                                                                           |                                                                                                                      |
 
-In any case, once you've located the vcredist installer, if you're doing
-a 32-bit build, copy the x86 installer in the root of your build env. If
-a 64-bit build, copy the x64/AMD64 installer.
+It is strongly recommended that you use Visual Studio 2015. If you
+choose a different version, make sure the installers are named
+`vc_redist.x86.exe` and `vc_redist.x64.exe`. Once you've located the
+vcredist installer, if you're doing a 32-bit build, copy the x86
+installer in the root of your build env. If a 64-bit build, copy the
+x64/AMD64 installer.
 
 ## Make the package
 
@@ -53,6 +56,9 @@ a 64-bit build, copy the x64/AMD64 installer.
     
     REM set this to the folder where you build the dependencies
     set WINLIB_PATH=D:\mixxx-buildserver32
+    SET BIN_DIR=%WINLIB_PATH%\bin
+    set QT_VERSION=4.8.7
+    SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
     
     if "%ARCHITECTURE%" == "i386" (
       set TARGET_MACHINE=x86
@@ -62,11 +68,15 @@ a 64-bit build, copy the x64/AMD64 installer.
       set VCVARS_ARCH=x86_amd64
     )
     
-    call "c:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+    call "c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
     
-    scons mixxx makerelease msvcdebug=0 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
+    rem /MP Use all CPU cores.
+    rem /FS force synchronous PDB writes (prevents PDB corruption with /MP)
+    rem /EHsc Do not handle SEH in try / except blocks.
+    rem /Zc:threadSafeInit- disable C++11 magic static support (Bug #1653368)
+    set CL=/MP /FS /EHsc /Zc:threadSafeInit-
+    
+    set PATH=%BIN_DIR%;%PATH%
+    scons.py mixxx makerelease toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 mssdk_dir="%MSSDK_DIR%" build_number_in_title_bar=0 bundle_pdbs=1
 
-Note: If you want to build 64 bits package, use set ARCHITECTURE=amd64
-and force32=0
-
-  - Execute it
+Note: If you want to build 64 bits package, set `ARCHITECTURE=amd64`

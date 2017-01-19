@@ -3,14 +3,12 @@ page](Build%20Windows%20installer).)*
 
 # Building Mixxx on Windows
 
-## Build 32bit version of Mixxx
+## Programs to install
 
-### Programs to install
-
-  - [Visual Studio 13 for Windows
+  - [Visual Studio 15 Update 3 for Windows
     Desktop](http://www.visualstudio.com/downloads/download-visual-studio-vs).
     You need a Microsoft account.
-  - If you install Visual Studio 2013 or newer, it comes with the latest
+  - If you install Visual Studio 2015 or newer, it comes with the latest
     Windows SDK. The following links are only needed if you have a
     version of Visual Studio older than this or if you're building for
     Windows XP.
@@ -36,7 +34,7 @@ page](Build%20Windows%20installer).)*
     client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
     (featuring a unix like command line)
 
-### Prepare build environment
+## Prepare build environment
 
 1.  Add to or create the following system environment variables
     ([HowTo](http://www.chem.gla.ac.uk/~louis/software/faq/q1.html),)
@@ -59,14 +57,44 @@ page](Build%20Windows%20installer).)*
         the registry. (E.g. If you've installed SDK 7.1, change the
         `v7.0A` to `v7.1` in the `regquery` path.
 
-### Download mixxx dependencies
+## Acquire Mixxx dependencies
+
+To build Mixxx, you need built copies of its dependencies. You may build
+these from source, or download pre-built versions of them from the Mixxx
+team.
+
+### Option 1: Download pre-built Mixxx dependencies
+
+You can download a pre-built version of the Mixxx dependencies
+[here](http://downloads.mixxx.org/builds/appveyor/environments/2.1/).
+
+You may choose between the "release-fastbuild" and "release" variants.
+
+  - release-fastbuild is built with link-time code-generation (LTCG)
+    disabled. This leads to faster builds but potentially results in a
+    slower version of Mixxx (we haven't measured it so we don't know).
+    When we build Mixxx on AppVeyor for continuous integration, this is
+    the version we use.
+  - release is the version used to produce Mixxx releases. It is
+    compiled with LTCG enabled. 
+
+If you want to build a 32-bit version of Mixxx, choose an "x86" variant.
+For 64-bit, choose an "x64" variant.
+
+Download and unzip one of these environments. Remember the folder to
+which the repository was saved. We will refer to that folder as
+**WINLIB\_PATH** later.
+
+### Option 2: Compile Mixxx dependencies from source
+
+If you want to build the Mixxx dependencies from source instead of
+downloading pre-built ones:
 
 1.  Clone the [Mixxx
-    buildserver](https://github.com/mixxxdj/buildserver/tree/windows_environment)
+    buildserver](https://github.com/mixxxdj/buildserver/tree/2.1.x-windows)
     repository. Remember the folder to which the repository was saved.
     We will refer to that folder as **WINLIB\_PATH** later.
-2.  In the buildserver repository, checkout the **windows\_environment**
-    branch
+2.  In the buildserver repository, checkout the **2.1.x-windows** branch
 3.  Edit `%WINLIB_PATH%\build_environment.bat` and change the following
     lines:
     1.  `SET MSVC_PATH=<path containing the vcvarsall.bat file>`
@@ -75,7 +103,7 @@ page](Build%20Windows%20installer).)*
           - If using the VC++ Build Tools, you may need to add/replace
             `/p:VCTargetsPath="C:\Program Files
             (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\\"`
-4.  Download the latest [Qt 4.x
+4.  Download the [Qt 4.8.7
     Sources](http://download.qt-project.org/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.zip).
     Unpack the zip archive into **WINLIB\_PATH\\build**
 5.  Download the [ASIO
@@ -85,62 +113,73 @@ page](Build%20Windows%20installer).)*
     **ASIOSDK2.3** becomes **ASIOSDK**. Move **ASIOSDK** to
     **WINLIB\_PATH\\build\\pa\_stable\_v19\_20140130\\src\\hostapi\\asio\\**.
 
-### Build dependencies
+<!-- end list -->
 
-Start the Windows SDK command prompt (E.g. Start Menu\\Microsoft Windows
-SDK v.7.0\\CMD Shell) and change into the **WINLIB\_PATH** directory.
-Type:
+1.  Start a Windows command prompt (you do not need a Windows SDK
+    command prompt). Open the Start Menu and type "cmd" into the search
+    box and hit enter. 
+2.  change into the **WINLIB\_PATH** directory.
+    1.  `cd WINLIB_PATH_GOES_HERE`
+3.  Build the environment:
+    1.  `build_environment x86 Release`
 
-    build_environment x86 Release
+This step will take a while. Go have some coffee.
 
-This step may take a while depending on your computer.
-
-### Download mixxx-sources
+### Download Mixxx's source code
 
 1.  Clone the [Mixxx](https://github.com/mixxxdj/mixxx.git) repository.
     Remember the folder to which the repository was saved. We will refer
     to that folder as **MIXXX\_REPO** later.
-2.  Start the Windows SDK command prompt (E.g. Start Menu\\Microsoft
-    Windows SDK v.7.0\\CMD Shell) and change into the **MIXXX\_REPO**
-    directory.
+2.  Start a command prompt (it doesn't need to be a Windows SDK prompt)
+    and change into the **MIXXX\_REPO** directory.
 3.  create a file called `build.bat` with the following content:
 
 <!-- end list -->
 
-    REM Clean up after old builds.
-    del /q /f *.exe
-    rmdir /s /q dist32
-    rmdir /s /q dist64
-    
-    REM XP Compatibility requires the v7.1A SDK
-    set MSSDK_DIR="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A"
-    
-    REM this can be either release or debug. For development you want to use debug
-    set BUILD_TYPE=release
-    
-    REM This determines if you build a 32bit or 64bit version of mixxx. 
-    REM 32bit = i386, 64bit = amd64
-    set ARCHITECTURE=amd64
-    
-    REM set this to the folder where you built the dependencies
-    set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
-    
-    if "%ARCHITECTURE%" == "i386" (
-      set TARGET_MACHINE=x86
-      set VCVARS_ARCH=x86
-    ) else ( 
-      set TARGET_MACHINE=amd64
-      set VCVARS_ARCH=x86_amd64
-    )
-    
-    REM Adjust to your environment
-    call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
-    
-    REM Use all CPU cores, allow multiple writers to .pdb file
-    set CL=/MP
-    
-    REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
-    scons -j2 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=1 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=0
+``` 
+REM Clean up after old builds.
+del /q /f *.exe
+rmdir /s /q dist32
+rmdir /s /q dist64
+
+REM XP Compatibility requires the v7.1A SDK
+set MSSDK_DIR="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A"
+
+REM this can be either release or debug. For development you want to use debug
+set BUILD_TYPE=release
+
+REM This determines if you build a 32bit or 64bit version of mixxx. 
+REM 32bit = i386, 64bit = amd64
+set ARCHITECTURE=amd64
+
+REM set this to the folder where you built the dependencies
+set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
+SET BIN_DIR=%WINLIB_PATH%\bin
+set QT_VERSION=4.8.7
+SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
+
+if "%ARCHITECTURE%" == "i386" (
+  set TARGET_MACHINE=x86
+  set VCVARS_ARCH=x86
+) else ( 
+  set TARGET_MACHINE=amd64
+  set VCVARS_ARCH=x86_amd64
+)
+
+REM Adjust to your environment
+call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+
+rem /MP Use all CPU cores.
+rem /FS force synchronous PDB writes (prevents PDB corruption with /MP)
+rem /EHsc Do not handle SEH in try / except blocks.
+rem /Zc:threadSafeInit- disable C++11 magic static support (Bug #1653368)
+set CL=/MP /FS /EHsc /Zc:threadSafeInit-
+
+set PATH=%BIN_DIR%;%PATH%
+REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
+scons.py -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 mssdk_dir="%MSSDK_DIR%" build_number_in_title_bar=0 bundle_pdbs=1
+ 
+```
 
 This script will setup the build environment and call scons with the
 appropriate flags. You have to edit the **WINLIB\_PATH** variable and
@@ -149,18 +188,12 @@ dependencies for mixxx. Then type:
 
     build.bat
 
-NOTE : if Mixxx compilation complains that libtag and chromaprint are
-not available, apply the following workaround :
-<http://sourceforge.net/p/mixxx/mailman/message/32981948/> Remove the
-entire \<ItemGroup\> that contains the cmake invocations in tag.vcxproj
-and chromaprint vcxproj and rebuild your build env
-
 ## Build 64bit version of Mixxx
 
 You have to follow the above guide with two changes.
 
 1.  Build the dependencies with: `build_environment x64 Release`
-2.  Use **set ARCHITECTURE=amd64** and **force32=0** in **build.bat**
+2.  Use **set ARCHITECTURE=amd64** in **build.bat**
 
 **WARNING**: DO NOT mix 32 and 64 bits build in the same CMD Shell
 window or you will have undetermined results. If you need 32 and 64 bits

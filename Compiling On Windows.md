@@ -192,7 +192,9 @@ dependencies for mixxx. Then type:
 
 You have to follow the above guide with two changes.
 
-1.  Build the dependencies with: `build_environment x64 Release`
+1.  Build the dependencies with: `build_environment x64 Release` or make
+    sure you have downloaded the x64 version of the pre-built
+    dependencies.
 2.  Use **set ARCHITECTURE=amd64** in **build.bat**
 
 **WARNING**: DO NOT mix 32 and 64 bits build in the same CMD Shell

@@ -167,7 +167,7 @@ if "%ARCHITECTURE%" == "i386" (
 )
 
 REM Adjust to your environment
-call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
 
 rem /MP Use all CPU cores.
 rem /FS force synchronous PDB writes (prevents PDB corruption with /MP)

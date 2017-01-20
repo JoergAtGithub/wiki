@@ -3,15 +3,18 @@ latest version of Mixxx.
 
 # Mixxx 2.1
 
-\* `engine.setParameter()` now works with `engine.softTakeover()`. If
-your script implemented its own soft takeover mechanism to get around
-that bug, change it to use Mixxx's soft takeover solution instead. \*
-MIDI input handling functions are now called with the appropriate `this`
-object (instead of `this` being set to the global object), allowing
-script files to be written with a more object oriented organization. \*
-`<key>` elements in XML that are bound to script functions can now be
-any JavaScript expression that evaluates to a function in the global
-context \* TODO: document new effects interface
+  - `engine.setParameter()` now works with `engine.softTakeover()`. If
+    your script implemented its own soft takeover mechanism to get
+    around that bug, change it to use Mixxx's soft takeover solution
+    instead.
+  - MIDI input handling functions are now called with the appropriate
+    `this` object (instead of `this` being set to the global object),
+    allowing script files to be written with a more object oriented
+    organization.
+  - `<key>` elements in XML that are bound to script functions can now
+    be any JavaScript expression that evaluates to a function in the
+    global context
+  - TODO: document new effects interface
 
 # Mixxx 2.0
 

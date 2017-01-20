@@ -53,11 +53,6 @@ system mixer](operating%20system%20mixer) program**.
 
 ## Mapping description
 
-This mapping is a work in progress, but is in a usable condition. It
-mostly works as labeled on the controller, but some functionality is
-different and there is additional functionality not labeled on the
-controller.
-
 ### User configurable options
 
 There are a few user configurable options available for you to

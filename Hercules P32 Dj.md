@@ -41,8 +41,8 @@ API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 This device has a built in 4 channel output sound card. There are 2 RCA
 outputs for the main output and a 1/4" TRS stereo headphone jack. There
 are buttons in the center of the controller that adjust the sound card's
-headphone output volume. These do not adjust the headphone gain in
-Mixxx.
+headphone output volume in hardware. These do not adjust the headphone
+gain in Mixxx.
 
 There is no master output volume control on the device, but the master
 output volume of the sound card can be controlled from the OS mixer. The

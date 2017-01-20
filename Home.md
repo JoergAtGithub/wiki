@@ -67,9 +67,8 @@ please fix it.
     get your mapping included in Mixxx
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
-  - [Updating controller mappings
-    for 2.1](Updating%20controller%20mappings%20for%202.1): how to adapt
-    old mappings for Mixxx 2.1
+  - [Updating controller mappings](Updating%20controller%20mappings):
+    how to adapt old mappings for Mixxx 2.1
   - [HID & USB Bulk controller presets](manual_hid_preset): create or
     change a preset for your HID or USB bulk-transfer mode controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can

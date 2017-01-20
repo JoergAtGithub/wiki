@@ -16,6 +16,7 @@ latest version of Mixxx.
     global context
   - TODO: document new effects interface
   - TODO: document new library navigation interface
+  - TODO: move Control library documentation to the wiki
 
 # Mixxx 2.0
 

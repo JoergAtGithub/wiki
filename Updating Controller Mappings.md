@@ -15,6 +15,7 @@ latest version of Mixxx.
     be any JavaScript expression that evaluates to a function in the
     global context
   - TODO: document new effects interface
+  - TODO: document new library navigation interface
 
 # Mixxx 2.0
 

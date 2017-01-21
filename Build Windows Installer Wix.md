@@ -34,14 +34,14 @@ as shown below:
 | [Visual Studio 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569) | [x86](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2) | [x64/amd64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=ba9257ca-337f-4b40-8c14-157cfdffee4e) | [IA64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=dcc211e6-ab82-41d6-8dec-c79937393fe8) |
 | Visual Studio 2010                                                                                                                 | [x86](http://www.microsoft.com/download/en/details.aspx?id=8328)                                                    | [x64/amd64](http://www.microsoft.com/download/en/details.aspx?id=13523)                                                   | [IA64](http://www.microsoft.com/download/en/details.aspx?id=21051)                                                   |
 | Visual Studio 2013                                                                                                                 | [x86, amd64 and IA64](https://www.microsoft.com/en-gb/download/details.aspx?id=40784)                               |                                                                                                                           |                                                                                                                      |
-| Visual Studio 2015                                                                                                                 | [x86 and amd64](https://www.microsoft.com/en-US/download/details.aspx?id=48145)                                     |                                                                                                                           |                                                                                                                      |
+| Visual Studio 2015                                                                                                                 | [x86 and amd64](https://www.microsoft.com/en-us/download/details.aspx?id=53587)                                     |                                                                                                                           |                                                                                                                      |
 
-In any case, once you've located the vcredist installer, if you're doing
-a 32-bit build, copy the x86 installer in the root of your build env
-(not the root of mixxx sources, but the root of the BUILD ENV). If a
-64-bit build, copy the x64/AMD64 installer.
-
-The file should be named vcredist\_x86.exe or vcredist\_x64.exe.
+It is strongly recommended that you use Visual Studio 2015. If you
+choose a different version, make sure the installers are named
+`vc_redist.x86.exe` and `vc_redist.x64.exe`. Once you've located the
+vcredist installer, if you're doing a 32-bit build, copy the x86
+installer in the root of your build env. If a 64-bit build, copy the
+x64/AMD64 installer.
 
 ## Make the package
 
@@ -66,6 +66,9 @@ The file should be named vcredist\_x86.exe or vcredist\_x64.exe.
     
     REM set this to the folder where you build the dependencies
     set WINLIB_PATH=D:\mixxx-buildserver32
+    SET BIN_DIR=%WINLIB_PATH%\bin
+    set QT_VERSION=4.8.7
+    SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
     
     echo "Building %ARCHITECTURE% %BUILD_TYPE% for %PLATFORM%".
     
@@ -77,9 +80,16 @@ The file should be named vcredist\_x86.exe or vcredist\_x64.exe.
       set VCVARS_ARCH=x86_amd64
     )
     
-    call "c:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+    call "c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
     
-    scons mixxx makerelease msvcdebug=0 winlib=%WINLIB_PATH% qtdir=%WINLIB_PATH%\build\qt-everywhere-opensource-src-4.8.6 hss1394=1 mediafoundation=1 opus=0 build=%BUILD_TYPE% machine=%TARGET_MACHINE% toolchain=msvs virtualize=0 test=1 sqlitedll=0 mssdk_dir=%MSSDK_DIR% force32=1
+    rem /MP Use all CPU cores.
+    rem /FS force synchronous PDB writes (prevents PDB corruption with /MP)
+    rem /EHsc Do not handle SEH in try / except blocks.
+    rem /Zc:threadSafeInit- disable C++11 magic static support (Bug #1653368)
+    set CL=/MP /FS /EHsc /Zc:threadSafeInit-
+    
+    set PATH=%BIN_DIR%;%PATH%
+    scons.py mixxx makerelease toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 mssdk_dir="%MSSDK_DIR%" build_number_in_title_bar=0 bundle_pdbs=1
 
 Note: If you want to build 64 bits package, use set ARCHITECTURE=amd64
 and force32=0

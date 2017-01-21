@@ -4,6 +4,8 @@ Vestax went out of business in 2014.
 
   - [Product page in
     archive.org](http://web.archive.org/web/20140809134938/http://www.vestax.com/v/products/detail.php?cate_id=118&parent_id=8)
+  - [ASIO driver for Windows in
+    serato.com](https://support.serato.com/hc/en-us/articles/203593924-Vestax-Hardware-Drivers-and-Firmware)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038)
 
 ![vci100mkii.png](vci100mkii.png)
@@ -39,8 +41,8 @@ pressed.
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Loop in the default length (4 beats at the beginning) \[Reloop\], or
-    in loop *Exit the loop \[Loop out\]*
+27. Loop in the default length (4 beats at startup) \[Reloop\], or in
+    loop *Exit the loop \[Loop out\]*
 28. Halve the default length,\[2\] or in loop *Halve the loop* \[Move
     the loop backward by 1/2 beat\]
 29. Double the default length, or in loop *Double the loop* \[Move the
@@ -100,7 +102,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 24. Sync mode **\[Sync key harmonically with another deck\]**
 25. Quantize mode **\[Zoom out waveform\]**
 26. Keylock mode **\[Zoom in waveform\]**
-27. Loop in the default length (default to 4 beats) \[Reloop\], or in
+27. Loop in the default length (4 beats at startup) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
 28. Halve **\[Jump backward by\]** the default length,\[8\] or in loop
     *Halve **\[Move it backward by\]** the loop length*

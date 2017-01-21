@@ -645,7 +645,7 @@ the code less self-documenting and would require reading the body of the
 function to determine its return type or arguments.
 
 More details can be found here:
-<https://google-styleguide.googlecode.com/svn/trunk/cppguide.html#auto>
+<https://google.github.io/styleguide/cppguide.html#auto>
 
 Good:
 

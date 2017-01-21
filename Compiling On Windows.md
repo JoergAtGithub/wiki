@@ -6,7 +6,7 @@ page](Build%20Windows%20installer).)*
 ## Programs to install
 
   - [Visual Studio 15 Update 3 for Windows
-    Desktop](http://www.visualstudio.com/downloads/download-visual-studio-vs).
+    Desktop](https://www.visualstudio.com/downloads/#visual-studio-2015-update-3).
     You need a Microsoft account.
   - If you install Visual Studio 2015 or newer, it comes with the latest
     Windows SDK. The following links are only needed if you have a

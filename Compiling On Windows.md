@@ -137,6 +137,8 @@ This step will take a while. Go have some coffee.
 <!-- end list -->
 
 ``` 
+@echo off
+SETLOCAL
 REM Clean up after old builds.
 del /q /f *.exe
 rmdir /s /q dist32
@@ -177,7 +179,8 @@ set CL=/MP /FS /EHsc /Zc:threadSafeInit-
 
 set PATH=%BIN_DIR%;%PATH%
 REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
-scons.py -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 mssdk_dir="%MSSDK_DIR%" build_number_in_title_bar=0 bundle_pdbs=1
+scons -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 mssdk_dir="%MSSDK_DIR%" build_number_in_title_bar=0 bundle_pdbs=1
+ENDLOCAL
  
 ```
 

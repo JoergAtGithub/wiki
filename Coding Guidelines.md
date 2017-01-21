@@ -512,8 +512,8 @@ We are limited to what is supported across our 3 supported compilers:
 
   - [Clang 3.3](http://clang.llvm.org/cxx_status.html)
   - [GCC 4.8](https://gcc.gnu.org/projects/cxx0x.html)
-  - [Microsoft Visual
-    Studio 2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
+  - [Microsoft Visual Studio 2015
+    Update 3](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
 
 In general, Microsoft Visual Studio is the one that prevents us from
 using features.
@@ -560,8 +560,8 @@ Do not use unique\_ptr for QObjects which have a parent, in this case
 the parent has the ownership. An early delete due to a smart pointer
 emit unnecessary signals.
 
-Prefer unique\_ptr over the Qt Object tree to manage the lifetime of an
-object.
+Prefer std::unique\_ptr over the Qt Object tree to manage the lifetime
+of an object.
 
 Side note: Deleting sender objects before receiver objects is faster,
 because the sender owns the connection.
@@ -576,20 +576,14 @@ Use.
 
 ### constexpr
 
-**Not Supported in Microsoft Visual Studio**. Blame Microsoft.
-
-Use
-[Q\_DECL\_CONSTEXPR](http://doc.qt.io/qt-5/qtglobal.html#Q_DECL_CONSTEXPR)\!
-On compilers that support it, a constexpr will be used. Otherwise it
-will be evaluated at runtime. Be careful since this means that you're
-relying on the compiler to optimize it out.
+Use.
 
 ### unicode string literals
 
-**Do Not Use**. Use
+**Do Not Use**. Once we switch to Qt5, you should use
 [QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral).
-
-Blame Microsoft.
+This has a variety of
+[benefits](https://woboq.com/blog/qstringliteral.html).
 
 ### right angle brackets
 
@@ -614,13 +608,8 @@ invoked.
 
 ### alignment
 
-**Use carefully.** MSVC only supports some of the C++11 alignment
-keywords:
-
-> Alignment: Neither VC10 nor VC11 implement the Core Language keywords
-> alignas/alignof from the alignment proposal that was voted into the
-> Working Paper. VC10 had aligned\_storage from TR1. VC11 adds
-> aligned\_union and std::align() to the Standard Library.
+Use (support added in VS2015). Some positive reports from [another
+project](https://groups.google.com/forum/#!topic/cryptopp-users/KqODnEPjkbU).
 
 ### cstdint
 
@@ -630,6 +619,10 @@ Appears to be supported by MSVC 2013. Use\!
 
 Use them\! Prefer them over Qt's `foreach` macro which has enjoyed
 widespread usage throughout the Mixxx codebase.
+
+**Be very careful when updating old code from foreach to
+range-based-for. [It is very easy to write a
+bug](https://www.kdab.com/goodbye-q_foreach/).**
 
 ``` cpp-qt
 for (const QString& item : list) {
@@ -641,7 +634,7 @@ for (const QString& item : list) {
 
 We do not follow a aaa-style (almost-always-auto).
 
-Our rules of thump:
+Our rules of thumb:
 
   - use auto to prevent repeating yourself
   - auto when the type is long and does not add any value
@@ -706,7 +699,7 @@ code to avoid the usage by your code reviewer. Before using a closure,
 please consider whether it's truly necessary.
 
 Use 8 space indent for line break or reasonable alignment + 4 indent for
-a new logical block. Allays beak after "},"
+a new logical block. Always beak after "},"
 
 **Good:**
 
@@ -734,7 +727,9 @@ Email mixxx-devel with your use case.
 
 ### r-value references / move constructors / move assignment operators
 
-In general, do not use.
+In general, do not use. Do not add gratuitous move constructors -- this
+decision should be motivated by profiling data to help avoid needless
+copies.
 
 **Note:** *auto&&* is a universal reference and not an r-value
 reference\! It should be used instead of an explicit l-value *auto&*
@@ -761,6 +756,22 @@ body.
 
 Use.
 
+**Good:**
+
+``` cpp-qt
+enum class ButtonState {
+  // ...
+};
+```
+
+**Bad:**
+
+``` cpp-qt
+enum ButtonState {
+  // ...
+};
+```
+
 ### atomics
 
 For now, prefer using Qt atomic primitives. We may switch at some
@@ -768,9 +779,8 @@ point... atomically. 8-)
 
 ### inherited constructors
 
-Do not use -- [not supported in
-VC2013](https://msdn.microsoft.com/en-us/library/hh567368.aspx), which
-our build system and many windows developers rely on.
+Use sparingly (supported in VS2015). Consider the readability
+implications.
 
 ### non-static data member initializers
 
@@ -780,7 +790,7 @@ list, constructor body, and the member variable declarations) to see
 what value member state takes on.
 
 Rule of thumb: If a class has non-inline constructors or is more than
-100 lines long, do not use.
+100 lines long, prefer initializing everything in the constructor.
 
 **Good:**
 

@@ -150,7 +150,7 @@ set BUILD_TYPE=release
 
 REM This determines if you build a 32bit or 64bit version of mixxx. 
 REM 32bit = i386, 64bit = amd64
-set ARCHITECTURE=amd64
+set ARCHITECTURE=i386
 
 REM set this to the folder where you built the dependencies
 set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
@@ -184,7 +184,9 @@ scons.py -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1
 This script will setup the build environment and call scons with the
 appropriate flags. You have to edit the **WINLIB\_PATH** variable and
 set it to the absolute path of the folder where you compiled the
-dependencies for mixxx. Then type:
+dependencies for mixxx. If you build the environment yourself instead of
+using the precompiled environment, you will need to adjust the **QTDIR**
+variable too. When you are ready, type:
 
     build.bat
 

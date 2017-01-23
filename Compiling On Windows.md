@@ -123,7 +123,8 @@ downloading pre-built ones:
 3.  Build the environment:
     1.  `build_environment x86 Release`
 
-This step will take a while. Go have some coffee.
+This step will take 2-3 hours depending on how many CPU cores you have.
+Go have lunch.
 
 ### Download Mixxx's source code
 

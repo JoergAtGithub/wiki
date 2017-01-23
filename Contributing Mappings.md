@@ -213,13 +213,13 @@ manufacturer's mapping does not make sense with Mixxx (or just does not
 make sense), map it how you think it should be. You are encouraged to
 map additional features not included in the manufacturer's mappings,
 *but not at the expense of excluding functionality the controller is
-labeled for*. If you are mapping a controller designed for a purpose
-other than DJing or a controller without labels designed to be mapped in
-creative ways, try to make your mapping have enough features that the
-controller could be used alone without needing another controller to
-fully control Mixxx (unless it has a specific purpose such as a
-dedicated effects controller). If there are not enough physical controls
-on the device to make that practical, do not worry about it too much.
+labeled for*.
+
+Focus your mapping on functionality that is useful to have easy, quick
+access to while mixing. It is okay to leave parts of Mixxx unmapped that
+are not changed frequently while mixing; you do not need to map
+everything. The user can still use their mouse and keyboard to access
+functions not mapped on the controller.
 
 ### User configurable options
 

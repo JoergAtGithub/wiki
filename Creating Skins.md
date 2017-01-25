@@ -412,6 +412,87 @@ example). This will enable a 3rd and 4th deck in Mixxx's engine for the
 skin to interact with. This attribute list can change any Mixxx control
 but will only take effect when the skin is loaded.
 
+### QSS Style
+
+To specify how skins look (for example colors and text sizes), skins use
+a [Qt Style Sheet](http://doc.qt.io/qt-4.8/stylesheet.html) (QSS) file
+which is similar to a [Cascading Style
+Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS) (CSS) file used
+to specify how web pages look. The QSS file is linked to the skin XML
+with a \<Style\> element that is a child of the root \<skin\> element:
+
+    <skin>
+      <manifest>
+        <!-- skin manifest goes here -->
+      </manifest>
+    
+      <Style src="QSS-FILENAME"/>
+    
+      <!-- rest of skin goes here -->
+    </skin>
+
+All the skins included in Mixxx name the QSS file as "style.qss" in the
+root directory of the skin. Widgets are selected in QSS by the name of
+their widget type (the "Mixxx internal name" column in the table below)
+or by a defined name. To define a name for a widget, use the
+`<ObjectName>` element. For example:
+
+    <WidgetGroup>
+      <ObjectName>SomeWidgetGroup</ObjectName>
+      <Children>
+        <!-- A group of widgets you want to apply style to go here -->
+      </Children>
+    </WidgetGroup>
+
+This is similar to setting an `id` attribute on an element in HTML
+except that multiple widgets can share the same `<ObjectName>`. To style
+the above `<WidgetGroup>` in QSS, you would select it with `#`. For
+example:
+
+    #SomeWidgetGroup {
+      background-color: black;
+    }
+
+Knowing what options are available to style is tricky and it involves
+knowing what Qt widget the associated Mixxx widget derives from.
+
+Handy resources:
+
+  - [Qt Style Sheet
+    Documentation](http://qt-project.org/doc/qt-4.8/stylesheet.html)
+  - [Qt Style Sheet
+    Syntax](http://qt-project.org/doc/qt-4.8/stylesheet-syntax.html)
+  - [Qt Style Sheet Widget
+    Reference](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html)
+    -- tells you what widgets support which properties.
+
+Here is a potentially out-of-date list of which Mixxx widgets derive
+from which Qt widgets. If not listed, the widget inherits from
+`QWidget`.
+
+|  | Skin Tag        |  | Mixxx Internal Name |  | Qt Widget                   |  |
+|  | --------------- |  | ------------------- |  | --------------------------- |  |
+|  | WidgetStack     |  | WWidgetStack        |  | QStackedWidget              |  |
+|  | WidgetGroup     |  | WWidgetGroup        |  | QGroupBox                   |  |
+|  | (none)          |  | WTrackTableView     |  | QTableView                  |  |
+|  | (none)          |  | WLibraryTableView   |  | QTableView                  |  |
+|  | Library         |  | WLibrary            |  | QStackedWidget              |  |
+|  | LibrarySidebar  |  | WLibrarySidebar     |  | QTreeView                   |  |
+|  | SearchBox       |  | WSearchLineEdit     |  | QLineEdit                   |  |
+|  | Spinny          |  | WSpinny             |  | QGLWidget                   |  |
+|  | Visual          |  | WWaveformViewer     |  | QWidget                     |  |
+|  | NumberRate      |  | WNumberRate         |  | QWidget with a QLabel child |  |
+|  | NumberPos       |  | WNumberPos          |  | QWidget with a QLabel child |  |
+|  | NumberBpm       |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Number          |  | WNumber             |  | QWidget with a QLabel child |  |
+|  | Label           |  | WLabel              |  | QWidget with a QLabel child |  |
+|  | Text            |  | WTrackText          |  | QWidget with a QLabel child |  |
+|  | TrackProperty   |  | WTrackProperty      |  | QWidget with a QLabel child |  |
+|  | Time            |  | WTime               |  | QWidget with a QLabel child |  |
+|  | Key             |  | WKey                |  | QWidget with a QLabel child |  |
+|  | Splitter        |  | WSplitter           |  | QSplitter                   |  |
+|  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
+
 ### Properties Common to All Widgets
 
 Every skin widget is declared in a block with an opening XML tag and a
@@ -549,74 +630,6 @@ the vertical size policy separated by a comma.
 MinimumExpanding for both horizontal and vertical
 Preferred horizontal, Fixed vertical
 ` |
-
-#### \<Style\>
-
-**(DEPRECATED)** A `<Style>` tag indicates to Mixxx what "Qt Style
-Sheet" (QSS) to use for the widget. Qt Style Sheets are similar to
-[Cascading Style Sheets
-(CSS)](http://en.wikipedia.org/wiki/Cascading_Style_Sheets). It is
-highly recommended that you include a style.qss in your skin.xml file
-instead of styling individual skin elements. This makes it easier to
-make style changes later.
-
-| Examples:                                                                                                                                               |                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Style>
-  QGroupBox {
-    border: 0px solid green;
-    margin: -0px 0px 0px 0px;
-    background: url(skin:/style/style_bg_sampler.png);
-  }
-</Style>
-` | `Open <Style> tag
-Begin style information for QGroupBox widgets
-Set a 0-pixel border (no border)
-Set no margins for the widget.
-Set the background of the widget to "style/style_bg_sampler.png" in your skin's folder.
-End style information for QGroupBox widgets
-Close <Style> tag
-` |
-
-Knowing what options are available to style is tricky and it involves
-knowing what Qt widget the associated Mixxx widget derives from.
-
-Handy resources:
-
-  - [Qt Style Sheet
-    Documentation](http://qt-project.org/doc/qt-4.8/stylesheet.html)
-  - [Qt Style Sheet
-    Syntax](http://qt-project.org/doc/qt-4.8/stylesheet-syntax.html)
-  - [Qt Style Sheet Widget
-    Reference](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html)
-    -- tells you what widgets support which properties.
-
-Here is a potentially out-of-date list of which Mixxx widgets derive
-from which Qt widgets. If not listed, the widget inherits from
-`QWidget`.
-
-|  | Skin Tag        |  | Mixxx Internal Name |  | Qt Widget                   |  |
-|  | --------------- |  | ------------------- |  | --------------------------- |  |
-|  | WidgetStack     |  | WWidgetStack        |  | QStackedWidget              |  |
-|  | WidgetGroup     |  | WWidgetGroup        |  | QGroupBox                   |  |
-|  | (none)          |  | WTrackTableView     |  | QTableView                  |  |
-|  | (none)          |  | WLibraryTableView   |  | QTableView                  |  |
-|  | Library         |  | WLibrary            |  | QStackedWidget              |  |
-|  | LibrarySidebar  |  | WLibrarySidebar     |  | QTreeView                   |  |
-|  | SearchBox       |  | WSearchLineEdit     |  | QLineEdit                   |  |
-|  | Spinny          |  | WSpinny             |  | QGLWidget                   |  |
-|  | Visual          |  | WWaveformViewer     |  | QWidget                     |  |
-|  | NumberRate      |  | WNumberRate         |  | QWidget with a QLabel child |  |
-|  | NumberPos       |  | WNumberPos          |  | QWidget with a QLabel child |  |
-|  | NumberBpm       |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Number          |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Label           |  | WLabel              |  | QWidget with a QLabel child |  |
-|  | Text            |  | WTrackText          |  | QWidget with a QLabel child |  |
-|  | TrackProperty   |  | WTrackProperty      |  | QWidget with a QLabel child |  |
-|  | Time            |  | WTime               |  | QWidget with a QLabel child |  |
-|  | Key             |  | WKey                |  | QWidget with a QLabel child |  |
-|  | Splitter        |  | WSplitter           |  | QSplitter                   |  |
-|  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
 
 #### \<TooltipId\>
 

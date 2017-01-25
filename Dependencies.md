@@ -21,7 +21,7 @@ Repository:
 | libogg        | 1.3.2      | 1.3.2       |
 | libshout      | 2.4.1      | 2.4.1       |
 | libsndfile    | 1.0.26     | 1.0.26      |
-| libsoundtouch | N/A        | N/A         |
+| libsoundtouch | 1.9.2      | 1.9.2       |
 | libtool       | N/A        | 2.4         |
 | libusb        | N/A        | 1.0.20      |
 | libFLAC       | 1.3.1      | 1.3.1       |
@@ -59,7 +59,7 @@ Repository:
 | libogg        | 1.3.2      | 1.3.1       |
 | libshout      | 2.4.0      | 2.4.0       |
 | libsndfile    | 1.0.25     | 1.0.25      |
-| libsoundtouch | N/A        | N/A         |
+| libsoundtouch | 1.8.0      | 1.8.0       |
 | libvorbis     | 1.3.4      | 1.3.3       |
 | libFLAC       | 1.3.0      | 1.3.0       |
 | opus          | 1.1        | 1.1         |

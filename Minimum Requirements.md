@@ -36,7 +36,13 @@ source](start#compile_mixxx_from_source_code).
 <td>Ubuntu 14.04 (Trusty)</td>
 </tr>
 <tr class="even">
-<td>CPU</td>
+<td>CPU Architecture</td>
+<td>i686, amd64</td>
+<td>amd64</td>
+<td>i686, amd64, arm</td>
+</tr>
+<tr class="odd">
+<td>CPU (for non-techies)</td>
 <td>32-bit: Pentium 4 (SSE2)<br />
 64-bit: any but Itanium</td>
 <td>64-bit: any but Itanium</td>

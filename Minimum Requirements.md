@@ -5,17 +5,73 @@ source](start#compile_mixxx_from_source_code).
 
 # Mixxx 2.2 (planned)
 
-| Minimum Requirements | Windows            | Mac OS X  | Ubuntu                  |
-| -------------------- | ------------------ | --------- | ----------------------- |
-| OS Version           | Windows 7          | OS X 10.9 | Ubuntu 16.04 (Xenial)   |
-| CPU Architecture     | i686 (SSE2), amd64 | amd64     | i686 (SSE2), amd64, arm |
+<table>
+<thead>
+<tr class="header">
+<th>Minimum Requirements</th>
+<th>Windows</th>
+<th>Mac OS X</th>
+<th>Ubuntu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OS Version</td>
+<td>Windows 7</td>
+<td>OS X 10.9</td>
+<td>Ubuntu 16.04 (Xenial)</td>
+</tr>
+<tr class="even">
+<td>CPU Architecture</td>
+<td>i686 (SSE2), amd64</td>
+<td>amd64</td>
+<td>i686 (SSE2), amd64</td>
+</tr>
+<tr class="odd">
+<td>CPU (for non-techies)</td>
+<td>32-bit: Pentium 4 onwards<br />
+64-bit: any</td>
+<td>64-bit</td>
+<td>32-bit: Pentium 4 onwards<br />
+64-bit: any</td>
+</tr>
+</tbody>
+</table>
 
 # Mixxx 2.1 (planned)
 
-| Minimum Requirements | Windows            | Mac OS X  | Ubuntu                  |
-| -------------------- | ------------------ | --------- | ----------------------- |
-| OS Version           | Windows XP         | OS X 10.7 | Ubuntu 14.04 (Trusty)   |
-| CPU Architecture     | i686 (SSE2), amd64 | amd64     | i686 (SSE2), amd64, arm |
+<table>
+<thead>
+<tr class="header">
+<th>Minimum Requirements</th>
+<th>Windows</th>
+<th>Mac OS X</th>
+<th>Ubuntu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OS Version</td>
+<td>Windows XP</td>
+<td>OS X 10.7</td>
+<td>Ubuntu 14.04 (Trusty)</td>
+</tr>
+<tr class="even">
+<td>CPU Architecture</td>
+<td>i686 (SSE2), amd64</td>
+<td>amd64</td>
+<td>i686 (SSE2), amd64</td>
+</tr>
+<tr class="odd">
+<td>CPU (for non-techies)</td>
+<td>32-bit: Pentium 4 onwards<br />
+64-bit: any</td>
+<td>64-bit</td>
+<td>32-bit: Pentium 4 onwards<br />
+64-bit: any</td>
+</tr>
+</tbody>
+</table>
 
 # Mixxx 2.0
 
@@ -39,7 +95,7 @@ source](start#compile_mixxx_from_source_code).
 <td>CPU Architecture</td>
 <td>i686 (SSE2), amd64</td>
 <td>amd64</td>
-<td>i686, amd64, arm</td>
+<td>i686, amd64</td>
 </tr>
 <tr class="odd">
 <td>CPU (for non-techies)</td>
@@ -47,8 +103,7 @@ source](start#compile_mixxx_from_source_code).
 64-bit: any</td>
 <td>64-bit</td>
 <td>32-bit: Pentium 4 onwards<br />
-64-bit: any<br />
-Raspberry Pi</td>
+64-bit: any</td>
 </tr>
 </tbody>
 </table>

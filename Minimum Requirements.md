@@ -39,8 +39,7 @@ source](start#compile_mixxx_from_source_code).
 <td>CPU</td>
 <td>32-bit: Pentium 4 (SSE2)<br />
 64-bit: any but Itanium</td>
-<td>32-bit: Pentium 4 (SSE2)<br />
-64-bit: any but Itanium</td>
+<td>64-bit: any but Itanium</td>
 <td>32-bit: Pentium 4 (SSE2)<br />
 64-bit: any but Itanium<br />
 ARM: any?</td>

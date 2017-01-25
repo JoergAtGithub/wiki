@@ -36,8 +36,6 @@ Repository:
 
 # Mixxx 1.11.x
 
-Windows: Dynamic dependencies (DLLs)
-
 | Library       | Windows    | Mac OS X   |
 | ------------- | ---------- | ---------- |
 | Qt            | 4.8.3      | 4.8.3      |
@@ -57,8 +55,6 @@ Windows: Dynamic dependencies (DLLs)
 | ASIO SDK      | 2.2        | N/A        |
 
 # Mixxx 1.10.x
-
-Windows: Dynamic dependencies (DLLs)
 
   - Qt 4.7.4
   - libid3tag 0.15.1b (not on OS X)

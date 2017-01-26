@@ -283,9 +283,6 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 The effects framework was introduced in Mixxx 2.0.
 
-See the [effects framework](effects_framework#controls) page for more
-information.
-
 | EffectRack Controls                           |  |                              |  |                      |  |                                                                                                                                                                                                    |  |
 | --------------------------------------------- |  | ---------------------------- |  | -------------------- |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
 | \[Group\]                                     |  | Key/Control                  |  | Range                |  | What it does                                                                                                                                                                                       |  |
@@ -332,6 +329,39 @@ information.
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | button\_parameterK           |  | double               |  | The value of the Kth parameter. See the Parameter Values section for more information.                                                                                                             |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | button\_parameterK\_loaded   |  | binary, read-only    |  | Whether or not the Kth parameter slot has an effect parameter loaded into it.                                                                                                                      |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | button\_parameterK\_type     |  | integer, read-only   |  | The type of the Kth parameter value. See the Parameter Value Types table.                                                                                                                          |  |
+
+In the above table,
+
+  - EffectRack1 leaves room for future expansion to multiple
+    EffectRacks.
+  - N ranges from 1 to \[EffectRack1\],num\_effectunits, inclusive. 
+  - M ranges from 1 to \[EffectRack1\_EffectUnitN\],num\_effectslots,
+    inclusive. (For a given value of N)
+  - K ranges from 1 to
+    \[EffectRack1\_EffectUnitN\_EffectM\],num\_parameters, inclusive.
+    (For given values of N and M)
+  - I ranges from 1 to \[Master\],num\_decks, inclusive.
+  - J ranges from 1 to \[Master\],num\_samplers, inclusive.
+
+#### Linking Values
+
+Effect parameters can be linked to the effect's metaknob. This linkage
+can be user-controlled by changing the `link_type` and the
+`link_inverse` control of the parameter. The default link type is loaded
+from the effect parameter's manifest's `linkHint` property.
+
+| Link Type         | Integer Value | Intepretation                                |
+| ----------------- | ------------- | -------------------------------------------- |
+| None              | 0             | Not controlled by the metaknob               |
+| Linked            | 1             | Controlled by the metaknob as it is          |
+| Linked Left       | 2             | Controlled by the left side of the metaknob  |
+| Linked Right      | 3             | Controlled by the right side of the metaknob |
+| Linked Left Right | 4             | Controlled by both sides of the metaknob     |
+
+| Link Inverse | Integer Value | Intepretation                  |
+| ------------ | ------------- | ------------------------------ |
+| Normal       | 0             | Linked in equal relation       |
+| Inverse      | 1             | Linked in an inverse relation. |
 
 ### EQs and filters
 

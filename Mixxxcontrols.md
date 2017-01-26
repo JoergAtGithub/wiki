@@ -281,6 +281,8 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### Effects framework
 
+The effects framework was introduced in Mixxx 2.0.
+
 See the [effects framework](effects_framework#controls) page for more
 information.
 

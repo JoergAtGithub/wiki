@@ -14,7 +14,14 @@ latest version of Mixxx.
   - `<key>` elements in XML that are bound to script functions can now
     be any JavaScript expression that evaluates to a function in the
     global context
-  - TODO: document new effects interface
+  - Metaknobs, which act like superknobs for each effect within a chain,
+    were introduced. Also, a new framework for focusing individual
+    effects within a chain was introduced. Focusing an effect does not
+    do anything by itself; it is up to controller mappings to do
+    something different depending on the focused effect. The show\_focus
+    ControlObject of an EffectUnit needs to be set to 1 for the focus to
+    be shown in skins. Refer to [Mixxxcontrols\#Effects
+    framework](Mixxxcontrols#Effects%20framework) for details.
   - TODO: document new library navigation interface
   - TODO: move Control library documentation to the wiki
 

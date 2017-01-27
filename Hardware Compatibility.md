@@ -542,11 +542,11 @@ transitions between DJs. \<sortable 2=numeric\>
 2.  This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-3.  switching between decks 1/3 and decks 2/4
+3.  4 deck control available by toggling between decks 1/3 and decks 2/4
 
 4.  DJ Control Glow and MP3 LE will be supported starting with Mixxx 2.1
 
-5.  switching between decks 1/3 and decks 2/4
+5.  4 deck control available by toggling between decks 1/3 and decks 2/4
 
 6.  This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
@@ -576,7 +576,7 @@ transitions between DJs. \<sortable 2=numeric\>
 13. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-14. switching between decks 1/3 and decks 2/4
+14. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 15. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
@@ -584,7 +584,7 @@ transitions between DJs. \<sortable 2=numeric\>
 16. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-17. switching between decks 1/3 and decks 2/4
+17. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 18. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
@@ -592,13 +592,13 @@ transitions between DJs. \<sortable 2=numeric\>
 19. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-20. switching between decks 1/3 and decks 2/4
+20. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 21. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Mac OS X. There is no
     driver available for Linux or Windows.
 
-22. switching between decks 1/3 and decks 2/4
+22. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 23. This device is not USB MIDI class compliant. Its signals are
     translated to MIDI by special drivers on Windows and Mac OS X. There
@@ -625,7 +625,7 @@ transitions between DJs. \<sortable 2=numeric\>
     translated to MIDI by special drivers on Windows and Mac OS X. There
     is no driver available for Linux.
 
-29. switching between decks 1/3 and decks 2/4
+29. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 30. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
@@ -637,14 +637,14 @@ transitions between DJs. \<sortable 2=numeric\>
     translated to MIDI by special drivers on Windows and Mac OS X. There
     is no driver available for Linux.
 
-33. switching between decks 1/3 and decks 2/4
+33. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 34. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-35. switching between decks 1/3 and decks 2/4
+35. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
-36. switching between decks 1/3 and decks 2/4
+36. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 37. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
@@ -658,7 +658,7 @@ transitions between DJs. \<sortable 2=numeric\>
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-38. switching between decks 1/3 and decks 2/4
+38. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 39. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

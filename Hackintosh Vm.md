@@ -56,7 +56,11 @@ suite running on AMD Opteron CPUs.
     driver for this platform: ACPI", reset the VM and try again using
     the boot parameter `KernelBooter_kexts=Yes`
 7.  The system should now start successfully. Configure as desired.
-8.  *Optional*: download and install the [VirtIO OSX network
+8.  Make the kernel read-only with `chmod -w
+    /Volumes/HD-NAME/System/Library/Kernels/kernel` so system updates
+    don't overwrite it with a non-AMD-compatible one and cause a boot
+    loop.
+9.  *Optional*: download and install the [VirtIO OSX network
     driver](https://github.com/pmj/virtio-net-osx) and change the
     network device on the VM from `e1000` to **VirtIO** for optimal
     performance.

@@ -52,10 +52,9 @@ suite running on AMD Opteron CPUs.
     post](http://forum.amd-osx.com/viewtopic.php?f=24&t=80). Wherever he
     says "USB installer" read "DVD image".
 6.  At the end of that, when attempting to boot into the installed
-    system image, if you experience a complaint about AHCI not being
-    "able to find a driver for this platform" and a crash/hang, reset
-    the VM and try again using the boot parameter
-    `KernelBooter_kexts=Yes`
+    system image, if you experience a kernel panic "Unable to find a
+    driver for this platform: ACPI", reset the VM and try again using
+    the boot parameter `KernelBooter_kexts=Yes`
 7.  The system should now start successfully. Configure as desired.
 8.  *Optional*: download and install the [VirtIO OSX network
     driver](https://github.com/pmj/virtio-net-osx) and change the

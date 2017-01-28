@@ -38,7 +38,8 @@ suite running on AMD Opteron CPUs.
     1.  the kernel `cp -R kernel
         /PATH-TO-MOUNTED-DVD/System/Library/Kernels/`
     2.  the Extra folder `cp -R Extra /PATH-TO-MOUNTED-DVD/`
-    3.  the kernel extensions `cp -R *.kext /System/Library/Extensions/`
+    3.  the kernel extensions `cp -R *.kext
+        /PATH-TO-MOUNTED-DVD/System/Library/Extensions/`
 3.  Unmount the image and continue with the steps on Nicholas' blog
     starting from transferring the ISO DVD image and [Enoch boot
     loader](http://www.insanelymac.com/forum/files/file/71-enoch/) to

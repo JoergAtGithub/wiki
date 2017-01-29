@@ -11,6 +11,8 @@ library and the Controls library:
     <file functionprefix="" filename="lib/lodash.mixxx.js"/>
     <file functionprefix="" filename="lib/midi-controls-0.js"/>
 
+## Control
+
 A Control is a JavaScript object that represents a physical component on
 a controller, such as a button, knob, encoder, or fader. It encapsulates
 all the information needed to receive MIDI input from that component and
@@ -327,10 +329,6 @@ Soft takeover is not activated until the first input is received so it
 does not interfere with setting initial values for controllers that can
 report that information.
 
-The midi attribute does not need to be specified because Pots do not
-send any MIDI output. You may want to specify it anyway to make the code
-self-documenting.
-
 To adapt a Pot for an infinitely rotating encoder, replace its
 inValueScale() function with a function that increments or decrements
 the parameter depending on the direction the encoder is turned. For
@@ -509,15 +507,17 @@ around the CHANNEL\_NAME).
 To map an EffectUnit for your controller, call the constructor with the
 unit number of the effect unit as the only argument. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and
-optionally enableOnChannelButtons (setting the midi attributes for the
-Pots is not necessary because they do not send any output). After the
-midi attributes are set up, call EffectUnit.init() to set up the output
-callbacks. For example:
+optionally enableOnChannelButtons. After the midi attributes are set up,
+call EffectUnit.init() to set up the output callbacks. For example:
 
     MyController.effectUnit = new EffectUnit(1);
     MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
     MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
     MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
+    MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
+    MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
+    MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
+    MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
     MyController.effectUnit.showParametersButton.midi = [0x90, 0x04];
     MyController.effectUnit.enableOnChannelButtons.Channel1 = [0x90, 0x05];
     MyController.effectUnit.enableOnChannelButtons.Channel2 = [0x90, 0x06];

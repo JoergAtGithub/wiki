@@ -23,9 +23,9 @@ many or any custom functions.
 
 Controls should generally be properties of a ControlContainer object,
 which provides functions for conveniently iterating over a collection of
-related Controls. Most Controls should be properties of a custom Deck
-object, which is a derivative of ControlContainer. Refer to the Deck
-documentation for more details and an example.
+related Controls. Most Controls should be properties of a custom
+[\#Deck](#Deck) object, which is a derivative of ControlContainer. Refer
+to the Deck documentation for more details and an example.
 
 The input function needs to be mapped to the incoming MIDI signals in
 the XML file. For example:
@@ -41,15 +41,16 @@ the XML file. For example:
         </options>
     </control>
 
-The output does not need to be mapped in XML. It is handled by the
-library in JavaScript.
+In the future Mixxx will be able to register MIDI inputs from
+JavaScript, so this won't be necessary. The output does not need to be
+mapped in XML. It is handled by the library in JavaScript.
 
 A handful of derivative Control objects are available that are more
 convenient for common use cases. These derivative objects will cover
-most use cases. In practice, most Controls are derivatives of the Button
-or Pot Controls. Only if you need to make a lot of changes to the
-default Control attributes should you use the Control constructor
-directly.
+most use cases. In practice, most Controls are derivatives of
+[\#Button](#Button) or [\#Pot](#Pot). Only if you need to make a lot of
+changes to the default Control attributes should you use the Control
+constructor directly.
 
 Create Controls by calling the constructor with JavaScript's "new"
 keyword. The Control constructor takes a single argument. This is an
@@ -209,13 +210,12 @@ that state. For example, if the LED turns red when sent a MIDI value of
         off: MyController.padColors.blue,
     });
 
-Derivative Buttons are provided for many common use cases, including:
-PlayButton CueButton SyncButton LoopToggleButton HotcueButton
-SamplerButton These make it easy to map those kinds of buttons without
-having to worry about particularities of Mixxx's ControlObjects that can
-make mapping them not so straightforward. The PlayButton, SyncButton,
-HotcueButton, and SamplerButton objects also provide alternate
-functionality for when a shift button is pressed.
+Derivative Buttons are provided for many common use cases, documented in
+the subsections below. These make it easy to map those kinds of buttons
+without having to worry about particularities of Mixxx's ControlObjects
+that can make mapping them not so straightforward. The PlayButton,
+SyncButton, HotcueButton, and SamplerButton objects also provide
+alternate functionality for when a shift button is pressed.
 
 By default, this works for controllers that send MIDI messages with a
 different 3rd byte of the MIDI message (value) to indicate the button
@@ -479,9 +479,14 @@ pressed. 3 buttons are used for enabling effects and the other button
 toggles the effect unit between hiding and showing effect parameters.
 The Controls provided are:
 
-dryWetKnob (Pot) showParametersButton (Button) enableButtons\[1-3\]
-(ControlContainer of Buttons) knobs\[1-3\] (ControlContainer of Pots)
-enableOnChannelButtons (ControlContainer of Buttons)
+  - dryWetKnob ([\#Pot](#Pot))
+  - showParametersButton ([\#Button](#Button))
+  - enableButtons\[1-3\] ([\#ControlContainer](#ControlContainer) of
+    [\#Button](#Button)s)
+  - knobs\[1-3\] ([\#ControlContainer](#ControlContainer) of
+    [\#Pot](#Pot)s)
+  - enableOnChannelButtons ([\#ControlContainer](#ControlContainer) of
+    [\#Button](#Button)s)
 
 When the effect unit is showing the metaknobs of the effects but not
 each parameter, the knobs control the metaknobs. The enableButtons
@@ -500,9 +505,19 @@ for the focused effect again unfocuses the effect.
 The enableOnChannelButtons allow assigning the effect unit to different
 channels and are named after the Mixxx channel they affect. Not all
 controllers have buttons to map these. The following Buttons are
-provided by default: Channel1 Channel2 Channel3 Channel4 Headphones
-Master Microphone Auxiliary1 You can easily add more, for example for
-additional microphones, auxiliary inputs, or samplers by calling
+provided by default:
+
+  - Channel1
+  - Channel2
+  - Channel3
+  - Channel4
+  - Headphones
+  - Master
+  - Microphone
+  - Auxiliary1
+
+You can easily add more, for example for additional microphones,
+auxiliary inputs, or samplers by calling
 enableOnChannelButtons.addButton('CHANNEL\_NAME') (do not put brackets
 around the CHANNEL\_NAME).
 

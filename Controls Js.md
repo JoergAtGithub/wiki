@@ -126,13 +126,15 @@ define separate JavaScript Controls for every physical controller
 component in its shifted and unshifted state, the P32's init function
 has this code:
 
-Control.prototype.shiftOffset = 3; Control.prototype.shiftChannel =
-true; Button.prototype.sendShifted = true; This causes the
-Control.prototype.send function to send both the shifted and unshifted
-MIDI signals when the Control's outCo changes. If your controller uses
-the same MIDI channel but different MIDI control numbers when a shift
-button is pressed, set Control.prototype.shiftControl to true instead of
-Control.prototype.shiftChannel.
+    Control.prototype.shiftOffset = 3;
+    Control.prototype.shiftChannel = true;
+    Button.prototype.sendShifted = true;
+
+This causes the Control.prototype.send function to send both the shifted
+and unshifted MIDI signals when the Control's outCo changes. If your
+controller uses the same MIDI channel but different MIDI control numbers
+when a shift button is pressed, set Control.prototype.shiftControl to
+true instead of Control.prototype.shiftChannel.
 
 This library provides more convenient shortcuts for common situations.
 If inCo and outCo are the same, you can specify 'co' in the options

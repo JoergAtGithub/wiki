@@ -429,7 +429,7 @@ as a string and sets the Controls' group property appropriately,
 including for equalizer knobs and QuickEffect (filter) knobs.
 
 The Deck constructor takes one argument, which is an array of deck
-numbers to cycle through with the\\ toggle() method. Typically this will
+numbers to cycle through with the toggle() method. Typically this will
 be \[1, 3\] or \[2, 4\].
 
 To map your own controller, create a custom derivative of Deck and

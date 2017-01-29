@@ -1,3 +1,16 @@
+# Controls JS Library
+
+Controls JS is a JavaScript library that makes it easier to code
+controller mappings for Mixxx. It helps keep complicated code organized,
+and lets you focus more on implementing functionality and less on the
+details of Mixxx's mapping system. To use the library, in the
+`<scriptfiles>` element at the top of your mapping's [XML
+file](MIDI%20controller%20mapping%20file%20format), load the Lodash
+library and the Controls library:
+
+    <file functionprefix="" filename="lib/lodash.mixxx.js"/>
+    <file functionprefix="" filename="lib/midi-controls-0.js"/>
+
 A Control is a JavaScript object that represents a physical component on
 a controller, such as a button, knob, encoder, or fader. It encapsulates
 all the information needed to receive MIDI input from that component and

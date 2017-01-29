@@ -547,8 +547,8 @@ signal when pushed, it is recommended to map the encoder push to the
 EffectUnit's showParametersButton, otherwise map that to the "Tap"
 button. To use the dryWetKnob Pot with an encoder, replace its
 inValueScale() function with a function that can appropriately handle
-the signals sent by your controller. Refer to the Pot documentation for
-an example.
+the signals sent by your controller. Refer to the [\#Pot](#Pot)
+documentation for an example.
 
 For the shift functionality to work, the shift button of your controller
 must be mapped to a function that calls the shift()/unshift() functions

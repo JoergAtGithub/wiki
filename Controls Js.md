@@ -86,13 +86,13 @@ The function assigned to the `output()` property of the Control is
 responsible for [reacting to
 changes](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx)
 in the outCo [Mixxx ControlObject](mixxxcontrols). The output callback
-is automatically connected and called by the constructor function if the
-outCo, group, and midi properties are specified to the constructor
-(unless the outConnect property is set to false to intentionally avoid
-that). This makes it easy to map the controller so its LEDs stay
-synchronized with the status of Mixxx, whether the outCo changes because
-of the Control receiving MIDI input or the user changing it with the
-keyboard, mouse, or another controller.
+is automatically connected and called by the constructor if the outCo,
+group, and midi properties are specified to the constructor (unless the
+outConnect property is set to false to intentionally avoid that). This
+makes it easy to map the controller so its LEDs stay synchronized with
+the status of Mixxx, whether the outCo changes because of the Control
+receiving MIDI input or the user changing it with the keyboard, mouse,
+or another controller.
 
 The default Control.prototype.output function calls the Control's
 `send()` function, which sends an outgoing MIDI message with the first
@@ -221,12 +221,12 @@ onlyOnPress property to false. For example:
         onlyOnPress: false,
     });
 
-The button's LED is sent the value of the "on" property when outCo \> 0
-and "off" when outCo \<= 0. By default, on is 127 and off is 0. For
-buttons/pads with multicolor LEDs, you can change the color of the LED
-by defining the on and off properties to be the MIDI value to send for
-that state. For example, if the LED turns red when sent a MIDI value of
-127 and blue when sent a value of 126:
+The button's LED is sent the value of the `on` property when outCo \> 0
+and `off` when outCo \<= 0. By default, on is 127 (0x7F) and off is 0.
+For buttons/pads with multicolor LEDs, you can change the color of the
+LED by defining the `on` and `off` properties to be the MIDI value to
+send for that state. For example, if the LED turns red when sent a MIDI
+value of 127 and blue when sent a value of 126:
 
     MyController.padColors = {
         red: 127,

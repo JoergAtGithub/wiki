@@ -19,8 +19,12 @@ the Lodash library and the Controls library:
     <file functionprefix="" filename="lib/lodash.mixxx.js"/>
     <file functionprefix="" filename="lib/midi-controls-0.js"/>
 
-(Controls JS uses a few functions from [Lodash](http://lodash.com/),
-which is why they both need to be loaded.)
+Controls JS uses a few functions from [Lodash](http://lodash.com/),
+which is why they both need to be loaded.
+
+This documentation is a work in progress. Not every capability of the
+library is fully documented yet. Refer to the source code of the library
+if in doubt.
 
 ## Control
 

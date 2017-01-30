@@ -559,7 +559,7 @@ provided by default:
 
 You can easily add more, for example for additional microphones,
 auxiliary inputs, or samplers by calling
-enableOnChannelButtons.addButton('CHANNEL\_NAME') (do not put brackets
+`enableOnChannelButtons.addButton('CHANNEL_NAME')` (do not put brackets
 around the CHANNEL\_NAME).
 
 ### Setup

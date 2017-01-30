@@ -562,6 +562,8 @@ auxiliary inputs, or samplers by calling
 enableOnChannelButtons.addButton('CHANNEL\_NAME') (do not put brackets
 around the CHANNEL\_NAME).
 
+### Setup
+
 To map an EffectUnit for your controller, call the constructor with the
 unit number of the effect unit as the only argument. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and

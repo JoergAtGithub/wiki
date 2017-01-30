@@ -69,7 +69,7 @@ outCo attributes specified:
   - **outCo** (string): when this [Mixxx ControlObject](mixxxcontrols)
     changes value, the JavaScript Control will send MIDI output
   - **group** (string): the group that both the inCo and outCo
-    manipulate, for example `'[Channel1]`' for deck 1
+    manipulate, for example \[Channel1\] for deck 1
 
 For example:
 

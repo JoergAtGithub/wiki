@@ -116,7 +116,7 @@ automatically called by ControlContainer's
 layers of functionality easy.
 
 A Control can react to changes in multiple [Mixxx
-ControlObjects](mixxxcontrol) by overriding its `connect()` function.
+ControlObjects](mixxxcontrols) by overriding its `connect()` function.
 Refer to the source code of [\#SamplerButton](#SamplerButton) for an
 example.
 

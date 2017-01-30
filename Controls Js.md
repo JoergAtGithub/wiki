@@ -69,7 +69,7 @@ outCo attributes specified:
   - **outCo** (string): when this [Mixxx ControlObject](mixxxcontrols)
     changes value, the JavaScript Control will send MIDI output
   - **group** (string): the group that both the inCo and outCo
-    manipulate, for example \[Channel1\] for deck 1
+    manipulate, for example `'[Channel1]`' for deck 1
 
 For example:
 
@@ -80,20 +80,37 @@ For example:
         outCo: 'quantize'
     });
 
-### Managing output callbacks
+### Sending outgoing MIDI messages
 
-The output callback is automatically connected by the constructor
-function if the outCo, group, and midi properties are specified to the
-constructor (unless the outConnect property is set to false to
-intentionally avoid that). This makes it easy to map the controller so
-its LEDs stay synchronized with the status of Mixxx, whether the outCo
-changes because of the Control receiving MIDI input or the user changing
-it with the keyboard, mouse, or another controller. The output callback
-can be easily connected and disconnected by calling the Control's
-`connect()` and `disconnect()` functions. The output callback can also
-be manually run with the appropriate arguments simply by calling the
-Control's `trigger()` function. The `connect()`, `disconnect()`, and
-`trigger()` functions are automatically called by ControlContainer's
+The function assigned to the `output()` property of the Control is
+responsible for [reacting to
+changes](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx)
+in the outCo [Mixxx ControlObject](mixxxcontrols). The output callback
+is automatically connected and called by the constructor function if the
+outCo, group, and midi properties are specified to the constructor
+(unless the outConnect property is set to false to intentionally avoid
+that). This makes it easy to map the controller so its LEDs stay
+synchronized with the status of Mixxx, whether the outCo changes because
+of the Control receiving MIDI input or the user changing it with the
+keyboard, mouse, or another controller.
+
+The default Control.prototype.output function calls the Control's
+`send()` function, which sends an outgoing MIDI message with the first
+two bytes as those specified by the Control's midi property and the
+third byte as the new value of outCo. If you want to send a different
+third byte, implement an `outValueScale()` function that takes the new
+value as its first argument and returns the number to send as the third
+MIDI byte. If you implement custom `input()` or `output()` functions,
+you can call `this.send(valueToSend)` to send an outgoing MIDI message.
+
+The output callback can be easily connected and disconnected by calling
+the Control's `connect()` and `disconnect()` functions. The output
+callback can also be manually run with the appropriate arguments simply
+by calling the Control's `trigger()` function. This is done by the
+constructor if the outCo, group, and midi properties are specified
+(unless the outTrigger property is set to false to intentionally avoid
+that). The `connect()`, `disconnect()`, and `trigger()` functions are
+automatically called by ControlContainer's
 [\#reconnectControls](#reconnectControls) and
 [\#applyLayer](#applyLayer) functions to make activating different
 layers of functionality easy.

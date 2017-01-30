@@ -1,34 +1,36 @@
 # Controls JS Library
 
 Controls JS is a JavaScript library that makes it easier to code
-controller mappings for Mixxx. It helps keep complicated code organized,
-and lets you focus more on implementing functionality and less on the
-details of Mixxx's mapping system. To use the library, in the
-`<scriptfiles>` element at the top of your mapping's [XML
-file](MIDI%20controller%20mapping%20file%20format), load the Lodash
-library and the Controls library:
+controller mappings for Mixxx. It helps keep complicated code organized.
+The library lets you focus more on your mapping and less on the details
+of how Mixxx works. Controls JS is based around JavaScript objects
+called Controls that represent a physical component on a controller,
+such as a button, knob, encoder, or fader. The Controls can be organized
+into ControlContainer objects, making it easy to iterate over them and
+change their behavior to switch between different modes.
+
+To use the library, in the `<scriptfiles>` element at the top of your
+mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load
+the Lodash library and the Controls library:
 
     <file functionprefix="" filename="lib/lodash.mixxx.js"/>
     <file functionprefix="" filename="lib/midi-controls-0.js"/>
 
+(Controls JS uses a few functions from [Lodash](http://lodash.com/),
+which is why they both need to be loaded.)
+
 ## Control
 
-A Control is a JavaScript object that represents a physical component on
-a controller, such as a button, knob, encoder, or fader. It encapsulates
-all the information needed to receive MIDI input from that component and
-send MIDI signals out to the controller to activate its LED(s). It
-provides generic functions that can be made to work for most use cases
-just by changing some attributes of the Control, without having to write
-many or any custom functions.
+A Control represents a physical component on a controller, such as a
+button, knob, encoder, or fader. It encapsulates all the information
+needed to receive MIDI input from that component and send MIDI signals
+out to the controller to activate its LED(s). It provides generic
+functions that can be made to work for most use cases just by changing
+some attributes of the Control, without having to write many or any
+custom functions.
 
-Controls should generally be properties of a ControlContainer object,
-which provides functions for conveniently iterating over a collection of
-related Controls. Most Controls should be properties of a custom
-[\#Deck](#Deck) object, which is a derivative of ControlContainer. Refer
-to the Deck documentation for more details and an example.
-
-The input function needs to be mapped to the incoming MIDI signals in
-the XML file. For example:
+The input function of each Control needs to be mapped to the incoming
+MIDI signals in the XML file. For example:
 
     <control>
         <group>[Channel1]</group>
@@ -42,15 +44,19 @@ the XML file. For example:
     </control>
 
 In the future Mixxx will be able to register MIDI inputs from
-JavaScript, so this won't be necessary. The output does not need to be
-mapped in XML. It is handled by the library in JavaScript.
+JavaScript, so that will not be necessary. The output does not need to
+be mapped in XML. It is handled by the library in JavaScript.
+
+Controls should generally be properties of a
+[\#ControlContainer](#ControlContainer)-object.-Most-Controls-should-be-properties-of-a-custom-[\#Deck](#Deck)-object,-which-is-a-derivative-of-ControlContainer.-Refer-to-the-[Deck
+documentation](#Deck) for more details and an example.
 
 A handful of derivative Control objects are available that are more
 convenient for common use cases. These derivative objects will cover
-most use cases. In practice, most Controls are derivatives of
-[\#Button](#Button) or [\#Pot](#Pot). Only if you need to make a lot of
-changes to the default Control attributes should you use the Control
-constructor directly.
+most use cases and are each documented in the sections below. In
+practice, most Controls are derivatives of [\#Button](#Button) or
+[\#Pot](#Pot). Only use Control directly if you need to make a lot of
+changes to the default Control attributes.
 
 Create Controls by calling the constructor with JavaScript's "new"
 keyword. The Control constructor takes a single argument. This is an
@@ -66,8 +72,8 @@ both the inCo and outCo manipulate, for example '\[Channel1\]' for deck
 1. The inCo property is the name of the [Mixxx
 ControlObject](mixxxcontrols) that this JavaScript Control manipulates
 when it receives a MIDI input signal. When the Mixxx CO specified by
-outCo changes, this JavaScript Control sends MIDI signals back out to
-the controller. For example:
+outCo changes, the JavaScript Control sends MIDI signals back out to the
+controller. For example:
 
     var quantizeButton = new Button({
         midi: [0x91, 0x01],
@@ -84,28 +90,31 @@ its LEDs stay synchronized with the status of Mixxx, whether the outCo
 changes because of the Control receiving MIDI input or the user changing
 it with the keyboard, mouse, or another controller. The output callback
 can be easily connected and disconnected by calling the Control's
-connect() and disconnect() functions. The output callback can also be
-manually run with the appropriate arguments simply by calling the
-Control's trigger() function. The connect(), disconnect(), and trigger()
-functions are automatically called by ControlContainer's
-reconnectControls and applyLayer functions to make activating different
+`connect()` and `disconnect()` functions. The output callback can also
+be manually run with the appropriate arguments simply by calling the
+Control's `trigger()` function. The `connect()`, `disconnect()`, and
+`trigger()` functions are automatically called by ControlContainer's
+[\#reconnectControls](#reconnectControls) and
+[\#applyLayer](#applyLayer) functions to make activating different
 layers of functionality easy.
 
 Controls can be used to manage alternate behaviors in different
 conditions. The most common use case for this is for shift buttons. For
-that case, assign functions to the shift and unshift properties that
+that case, assign functions to the `shift` and `unshift` properties that
 manipulate the Control appropriately. In some cases, using the
-shift/unshift functions to change the Control's inCo, outCo, or group
-properties will be sufficient. Refer to HotcueButton for an example. In
-more complex cases, changing input() and output() may be required. Refer
-to SamplerButton and EffectUnit for examples. To avoid redundancy (like
-typing the name of the inCo both as the inCo property and in the unshift
-function), the Control constructor will automatically call the unshift
-function if it exists. The shift() and unshift() functions of
-ControlContainer will call the appropriate function of all the Controls
-within it that have that function defined and will recursively decend
-into ControlContainers that are properties of the parent
-ControlContainer.
+`shift`/`unshift` functions to change the Control's inCo, outCo, or
+group properties will be sufficient. Refer to the source code for
+[\#HotcueButton](#HotcueButton) for an example. In more complex cases,
+changing `input()` and `output()` may be required. Refer to
+[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
+examples. To avoid redundancy (like typing the name of the inCo both as
+the inCo property and in the `unshift()` function), the Control
+constructor will automatically call the `unshift()` function if it
+exists. The `shift()` and `unshift()` functions of
+[\#ControlContainer](#ControlContainer) will call the appropriate
+function of all the Controls within it that have that function defined
+and will recursively decend into ControlContainers that are properties
+of the parent ControlContainer.
 
 Control and its derivative objects use constructor functions with a
 minimal amount of logic. Most of the functionality of Controls comes
@@ -114,31 +123,32 @@ object's prototype immediately changes all existing and future objects
 that have it in their prototype chain (regardless of the context in
 which the derivative objects were created). This makes it easy to change
 the behavior for all (of a subtype) of Control to accomodate the MIDI
-signals used by a particular controller. For example, the Hercules P32
-controller sends and receives two sets of MIDI signals for most physical
-components, one for when the shift button is pressed and one for when
-the shift button is not pressed. The controller changes the state of its
-LEDs when the shift buttons are pressed, which is controlled by the
-alternate set of MIDI signals. These alternate MIDI signals are the same
-as the unshifted ones, but the MIDI channel is 3 higher. So, to avoid
-having the LEDs flicker when the shift button is pressed or having to
-define separate JavaScript Controls for every physical controller
-component in its shifted and unshifted state, the P32's init function
-has this code:
+signals used by a particular controller. For example, the [Hercules P32
+DJ](Hercules%20P32%20DJ) controller sends and receives two sets of MIDI
+signals for most physical components, one for when the shift button is
+pressed and one for when the shift button is not pressed. The controller
+changes the state of its LEDs when the shift buttons are pressed, which
+is controlled by the alternate set of MIDI signals. These alternate MIDI
+signals are the same as the unshifted ones, but the MIDI channel is 3
+higher. So, to avoid having the LEDs flicker when the shift button is
+pressed or having to define separate JavaScript Controls for every
+physical controller component in its shifted and unshifted state, the
+P32's init function has this code:
 
     Control.prototype.shiftOffset = 3;
     Control.prototype.shiftChannel = true;
     Button.prototype.sendShifted = true;
 
-This causes the Control.prototype.send function to send both the shifted
-and unshifted MIDI signals when the Control's outCo changes. If your
-controller uses the same MIDI channel but different MIDI control numbers
-when a shift button is pressed, set Control.prototype.shiftControl to
-true instead of Control.prototype.shiftChannel.
+This causes the `Control.prototype.send()` function to send both the
+shifted and unshifted MIDI signals when the Control's outCo changes. If
+your controller uses the same MIDI channel but different MIDI control
+numbers when a shift button is pressed, set
+`Control.prototype.shiftControl` to true instead of
+`Control.prototype.shiftChannel`.
 
-This library provides more convenient shortcuts for common situations.
-If inCo and outCo are the same, you can specify 'co' in the options
-object for the constructor to set both inCo and outCo. For example:
+Controls JS provides more convenient shortcuts for common situations. If
+inCo and outCo are the same, you can specify 'co' in the options object
+for the constructor to set both inCo and outCo. For example:
 
     var quantizeButton = new Button({
         midi: [0x91, 0x01],
@@ -164,9 +174,9 @@ instead of
 
 To avoid typing out the group for the constructor of each Control,
 Controls that share a group can be part of a ControlContainer and the
-ControlContainer's reconnectControls method can assign the group to all
-of them. Refer to the Deck ControlContainer documentation for an
-example.
+ControlContainer's [\#reconnectControl](#reconnectControl)s method can
+assign the group to all of them. Refer to the [\#Deck](#Deck)
+ControlContainer documentation for an example.
 
 ## Button
 
@@ -366,33 +376,35 @@ method is below.
 Iterate over all Controls in this ControlContainer and perform an
 operation on them.
 
-operation, function that takes 1 argument: the function to call for each
-Control. Takes each Control as its first argument. "this" in the context
-of the function refers to the ControlContainer. recursive, boolean,
-optional: whether to call forEachControl recursively for each
-ControlContainer within this ControlContainer. Defaults to true if
-ommitted.
+Function arguments:
+
+1.  operation, function that takes 1 argument: the function to call for
+    each Control. Takes each Control as its first argument. "this" in
+    the context of the function refers to the ControlContainer.
+2.  recursive, boolean, optional: whether to call forEachControl
+    recursively for each ControlContainer within this ControlContainer.
+    Defaults to true if ommitted.
 
 ### reconnectControls
 
 Disconnect and reconnect output callbacks for each Control. Optionally
 perform an operation on each Control between disconnecting and
 reconnecting the output callbacks. Arguments are the same as
-forEachControl().
+[\#forEachControl](#forEachControl).
 
 ### shift
 
 Call each Control's shift() function if it exists. This iterates
 recursively on any Controls in ControlContainers that are properties of
 this, so there is no need to call shift() on each child
-ControlContainer.
+ControlContainer. This function takes no arguments.
 
 ### unshift
 
 Call each Control's unshift() function if it exists. This iterates
 recursively on any Controls in ControlContainers that are properties of
 this, so there is no need to call unshift() on each child
-ControlContainer.
+ControlContainer. This function takes no arguments.
 
 ### applyLayer
 
@@ -403,9 +415,9 @@ not define a property for a Control, the Control's old property will be
 retained.
 
 In the most common case, for providing alternate functionality when a
-shift button is pressed, using applyLayer() is likely overcomplicated
-and may be slow. Use shift()/unshift() instead. applyLayer() may be
-useful for cycling through more than two alternate layers.
+shift button is pressed, using `applyLayer()` is likely overcomplicated
+and may be slow. Use `shift()`/`unshift()` instead. ''applyLayer() ''may
+be useful for cycling through more than two alternate layers.
 
 For example:
 
@@ -421,7 +433,7 @@ functionality, pass false as the second argument to applyLayer().
 
 ## Deck
 
-This is a ControlContainer with methods for conveniently changing the
+Deck is a ControlContainer with methods for conveniently changing the
 group attributes of contained Controls to switch the deck that a set of
 Controls is manipulating. The setCurrentDeck() method takes the new deck
 as a string and sets the Controls' group property appropriately,

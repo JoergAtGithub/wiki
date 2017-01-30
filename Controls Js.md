@@ -1,13 +1,13 @@
 # Controls JS Library
 
 Controls JS is a JavaScript library that makes it easier to code
-controller mappings for Mixxx. It helps keep complicated code organized.
-The library lets you focus more on your mapping and less on the details
-of how Mixxx works. Controls JS is based around JavaScript objects
-called Controls that represent a physical component on a controller,
-such as a button, knob, encoder, or fader. The Controls can be organized
-into ControlContainer objects, making it easy to iterate over them and
-change their behavior to switch between different modes.
+controller mappings for Mixxx. It lets you focus more on your mapping
+and less on the details of how Mixxx works. Controls JS is based around
+JavaScript objects called Controls that represent a physical component
+on a controller, such as a button, knob, encoder, or fader. The Controls
+can be organized into ControlContainer objects, making it easy to
+iterate over them and change their behavior to switch between different
+modes.
 
 To use the library, in the `<scriptfiles>` element at the top of your
 mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load

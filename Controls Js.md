@@ -115,6 +115,11 @@ automatically called by ControlContainer's
 [\#applyLayer](#applyLayer) functions to make activating different
 layers of functionality easy.
 
+A Control can react to changes in multiple [Mixxx
+ControlObjects](mixxxcontrol) by overriding its `connect()` function.
+Refer to the source code of [\#SamplerButton](#SamplerButton) for an
+example.
+
 ### Shift layers
 
 Controls can be used to manage alternate behaviors in different

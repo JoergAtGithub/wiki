@@ -2,12 +2,15 @@
 
 Controls JS is a JavaScript library that makes it easier to code
 controller mappings for Mixxx. It lets you focus more on your mapping
-and less on the details of how Mixxx works. Controls JS is based around
+and less on the details of how Mixxx works. It is centered around
 JavaScript objects called Controls that represent a physical component
-on a controller, such as a button, knob, encoder, or fader. The Controls
-can be organized into ControlContainer objects, making it easy to
-iterate over them and change their behavior to switch between different
-modes.
+on a controller, such as a button, knob, encoder, or fader. Control
+provides generic functions that can be made to work for most use cases
+just by changing some attributes of the Control, without having to write
+many or any custom functions. The library also provides more specialized
+Controls for common use cases. Controls can be organized into
+ControlContainer objects, making it easy to iterate over them and change
+their behavior to switch between different modes.
 
 To use the library, in the `<scriptfiles>` element at the top of your
 mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load
@@ -24,10 +27,14 @@ which is why they both need to be loaded.)
 A Control represents a physical component on a controller, such as a
 button, knob, encoder, or fader. It encapsulates all the information
 needed to receive MIDI input from that component and send MIDI signals
-out to the controller to activate its LED(s). It provides generic
-functions that can be made to work for most use cases just by changing
-some attributes of the Control, without having to write many or any
-custom functions.
+out to the controller to activate its LED(s).
+
+Controls should generally be properties of a
+[\#ControlContainer](#ControlContainer) object. Most Controls should be
+properties of a custom [\#Deck](#Deck) object, which is a derivative of
+ControlContainer.
+
+### Setup
 
 The input function of each Control needs to be mapped to the incoming
 MIDI signals in the XML file. For example:
@@ -46,17 +53,6 @@ MIDI signals in the XML file. For example:
 In the future Mixxx will be able to register MIDI inputs from
 JavaScript, so that will not be necessary. The output does not need to
 be mapped in XML. It is handled by the library in JavaScript.
-
-Controls should generally be properties of a
-[\#ControlContainer](#ControlContainer)-object.-Most-Controls-should-be-properties-of-a-custom-[\#Deck](#Deck)-object,-which-is-a-derivative-of-ControlContainer.-Refer-to-the-[Deck
-documentation](#Deck) for more details and an example.
-
-A handful of derivative Control objects are available that are more
-convenient for common use cases. These derivative objects will cover
-most use cases and are each documented in the sections below. In
-practice, most Controls are derivatives of [\#Button](#Button) or
-[\#Pot](#Pot). Only use Control directly if you need to make a lot of
-changes to the default Control attributes.
 
 Create Controls by calling the constructor with JavaScript's "new"
 keyword. The Control constructor takes a single argument. This is an
@@ -82,6 +78,8 @@ controller. For example:
         outCo: 'quantize'
     });
 
+### Managing output callbacks
+
 The output callback is automatically connected by the constructor
 function if the outCo, group, and midi properties are specified to the
 constructor (unless the outConnect property is set to false to
@@ -97,6 +95,8 @@ Control's `trigger()` function. The `connect()`, `disconnect()`, and
 [\#reconnectControls](#reconnectControls) and
 [\#applyLayer](#applyLayer) functions to make activating different
 layers of functionality easy.
+
+### Shift layers
 
 Controls can be used to manage alternate behaviors in different
 conditions. The most common use case for this is for shift buttons. For
@@ -115,6 +115,8 @@ exists. The `shift()` and `unshift()` functions of
 function of all the Controls within it that have that function defined
 and will recursively decend into ControlContainers that are properties
 of the parent ControlContainer.
+
+### Tips and tricks
 
 Control and its derivative objects use constructor functions with a
 minimal amount of logic. Most of the functionality of Controls comes

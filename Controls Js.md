@@ -59,17 +59,19 @@ keyword. The Control constructor takes a single argument. This is an
 options object containing properties that get merged with the Control
 when it is created, making it easy to customize the functionality of the
 Control. Most Controls will need at least their midi, group, inCo, and
-outCo attributes specified.
+outCo attributes specified:
 
-The midi attribute is a two member array corresponding to the first two
-MIDI bytes that the controller sends/receives when the physical
-component changes state. The group property specifies the group that
-both the inCo and outCo manipulate, for example '\[Channel1\]' for deck
-1. The inCo property is the name of the [Mixxx
-ControlObject](mixxxcontrols) that this JavaScript Control manipulates
-when it receives a MIDI input signal. When the Mixxx CO specified by
-outCo changes, the JavaScript Control sends MIDI signals back out to the
-controller. For example:
+  - **midi** (array with 2 numbers): the first two MIDI bytes that the
+    controller sends/receives when the physical component changes state
+  - **inCo** (string): the [Mixxx ControlObject](mixxxcontrols) that
+    this JavaScript Control manipulates when it receives a MIDI input
+    signal
+  - **outCo** (string): when this [Mixxx ControlObject](mixxxcontrols)
+    changes value, the JavaScript Control will send MIDI output
+  - **group** (string): the group that both the inCo and outCo
+    manipulate, for example `'[Channel1]`' for deck 1
+
+For example:
 
     var quantizeButton = new Button({
         midi: [0x91, 0x01],

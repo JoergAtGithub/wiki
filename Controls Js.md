@@ -105,9 +105,11 @@ yourself:
     code of [SamplerButton.prototype.connect](#SamplerButton) for an
     example.
 
-The following methods are called by the default `input` and `output`
-methods. If you do not need to implement complex custom behavior,
-overwrite these instead of the default `input` and `output` methods:
+The following methods are called by the default Control `input` and
+`output` methods, as well as the default `input` functions of
+[\#Button](#Button), [\#Pot](#Pot), and [\#RingEncoder](#RingEncoder).
+If you do not need to implement complex custom behavior, overwrite these
+instead of the default `input` and `output` methods:
 
   - **inValueScale**: takes the third byte of the incoming MIDI signal
     as its first argument and returns the value to set `group`, `inCo`

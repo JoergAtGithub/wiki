@@ -155,9 +155,9 @@ overwrite:
   - **trigger**: manually call `output` with the same arguments as if
     `group`, `outKey` had changed
   - **send**: send a 3 byte (short) MIDI message out to the controller.
-    The first two bytes of the MIDI message are specified by the `midi`
-    property. The third MIDI byte is provided as the first argument to
-    the `send` function.
+    The first two bytes of the MIDI message are specified by the
+    Component's `midi` property. The third MIDI byte is provided as the
+    first argument to the `send` function.
   - **inGetParameter**: returns the value of `group`, `inKey` normalized
     to a 0-1 scale
   - **inSetParameter**: sets the value of `group`, `inKey` to the

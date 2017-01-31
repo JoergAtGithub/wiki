@@ -226,7 +226,7 @@ if necessary.
 
 To avoid typing out the group for the constructor of each Control,
 Controls that share a group can be part of a ControlContainer and the
-[ControlContainer's](ControlContainer) `reconnectControls` method can
+[ControlContainer's](#ControlContainer) `reconnectControls` method can
 assign the group to all of them. Refer to the [\#Deck](#Deck)
 ControlContainer documentation for an example.
 

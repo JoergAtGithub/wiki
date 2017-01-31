@@ -4,7 +4,7 @@
 
 Nearly every knob, button, or fader you see in Mixxx's interface is
 controllable via Mixxx's "control" system. The control system allows
-Skins, MIDI controllers, and HID controllers to control Mixxx via a
+skins, MIDI controllers, and HID controllers to control Mixxx via a
 single interface.
 
 A control is identified by a "group" (which is used for grouping

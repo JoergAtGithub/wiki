@@ -1,6 +1,28 @@
 For each release, these are the versions of each dependency that we
 support.
 
+To update one, do the following:
+
+1.  Clone the repository in question
+2.  Unzip the updated dependency's source
+3.  Commit the clean dependency before changing anything, deleting the
+    old version's folder
+4.  Update the build script for that dependency
+5.  Make changes as required until it builds successfully on all [CPU
+    architectures we support](minimum_requirements)
+6.  Commit the changes to your repository
+7.  Create a pull request against the parent repository
+8.  Await the results of the continuous integration test builds
+9.  If they pass, await code review from other Mixxx developers. (If
+    not, examine why and fix.)
+10. Reviewer suggests changes or merges
+11. Await build server building and publishing a new copy of the
+    environment
+12. Create a PR against
+    [mixxxdj/mixxx](https://github.com/mixxxdj/mixxx/tree/master/build)
+    to update the "golden" version of the dependencies used for release
+    builds.
+
 # Mixxx 2.1
 
 Repository:

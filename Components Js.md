@@ -184,14 +184,28 @@ conditions. The most common use case for this is for shift buttons. If
 your controller sends different MIDI signals depending on whether shift
 is pressed, map both the shifted and unshifted input signals to the
 Component's `input` function in XML. Assign functions to the `shift` and
-`unshift` properties that manipulate the Component appropriately. In
-some cases, using the `shift`/`unshift` functions to change the
+`unshift` properties that manipulate the Component appropriately.
+
+In some cases, using the `shift`/`unshift` functions to change the
 Component's `inKey`, `outKey`, and/or `group` properties will be
-sufficient. Refer to the source code of [\#HotcueButton](#HotcueButton)
-for an example. In more complex cases, overwriting the `input` and
-`output` functions may be required. Refer to
-[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
-examples.
+sufficient. As an example, here is the source code for PlayButton:
+
+    var PlayButton = function (options) {
+        Button.call(this, options);
+    };
+    PlayButton.prototype = new Button({
+        unshift: function () {
+            this.inKey = 'play';
+        },
+        shift: function () {
+            this.inKey = 'start_stop';
+        },
+        outKey: 'play_indicator',
+    });
+
+In more complex cases, overwriting the `input` and `output` functions
+may be required. Refer to [\#SamplerButton](#SamplerButton) and
+[\#EffectUnit](#EffectUnit) for examples.
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists. The `shift` and `unshift` functions of

@@ -70,11 +70,11 @@ way. Most Components need at least these properties defined:
 
   - **midi** (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state
-  - **group** (string): the group that both the inCo and outCo
+  - **group** (string): the group that both the inKey and outKey
     manipulate, for example `'[Channel1]`' for deck 1
-  - **inCo** (string): the [Mixxx ControlObject](mixxxcontrols) that
+  - **inKey** (string): the [Mixxx ControlObject](mixxxcontrols) that
     this Component manipulates when it receives a MIDI input signal
-  - **outCo** (string): when this [Mixxx ControlObject](mixxxcontrols)
+  - **outKey** (string): when this [Mixxx ControlObject](mixxxcontrols)
     changes value, the `output` function will be called
 
 For example:
@@ -82,8 +82,8 @@ For example:
     var quantizeButton = new components.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]'
-        inCo: 'quantize',
-        outCo: 'quantize',
+        inKey: 'quantize',
+        outKey: 'quantize',
     });
 
 ### Methods
@@ -95,12 +95,12 @@ yourself:
 
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)
-  - **output**: the [function that gets called when outCo changes
+  - **output**: the [function that gets called when outKey changes
     value](midi%20scripting#Automatic%20reactions%20to%20changes%20in%20Mixxx).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
   - **connect**: register `output` as the callback function that gets
-    executed when the value of `group`, `outCo` changes. Implement a
+    executed when the value of `group`, `outKey` changes. Implement a
     custom function if you need to connect callbacks for multiple [Mixxx
     ControlObjects](mixxxcontrols) in one Component. Refer to the source
     code of [SamplerButton.prototype.connect](#SamplerButton) for an
@@ -113,40 +113,40 @@ not need to implement complex custom behavior, you can overwrite these
 instead of the default `input` and `output` methods:
 
   - **inValueScale**: takes the third byte of the incoming MIDI signal
-    as its first argument and returns the value to set `group`, `inCo`
+    as its first argument and returns the value to set `group`, `inKey`
     to
-  - **outValueScale**: takes the value of `group`, `outCo` as its first
+  - **outValueScale**: takes the value of `group`, `outKey` as its first
     argument and returns the third byte of the outgoing MIDI signal
 
 Each Component also has these methods that you probably should not
 overwrite:
 
   - **disconnect**: disconnect the `output` function from being called
-    when `group`, `outCo` changes
+    when `group`, `outKey` changes
   - **trigger**: manually call `output` with the same arguments as if
-    `group`, `outCo` had changed
+    `group`, `outKey` had changed
   - **send**: send a 3 byte (short) MIDI message out to the controller.
     The first two bytes of the MIDI message are specified by the `midi`
     property. The third MIDI byte is provided as the first argument to
     the `send` function.
-  - **inGetParameter**: returns the value of `group`, `inCo` normalized
+  - **inGetParameter**: returns the value of `group`, `inKey` normalized
     to a 0-1 scale
-  - **inSetParameter**: sets the value of `group`, `inCo` to the
+  - **inSetParameter**: sets the value of `group`, `inKey` to the
     function's first argument, normalized to a 0-1 scale
-  - **inGetValue**: returns the value of `group`, `inCo`
-  - **inSetValue**: sets the value of `group`, `inCo` to the function's
+  - **inGetValue**: returns the value of `group`, `inKey`
+  - **inSetValue**: sets the value of `group`, `inKey` to the function's
     first argument
-  - **inToggle**: sets `group`, `inCo` to its inverse (0 if it is \>0; 1
-    if it is 0)
-  - **outGetParameter**: returns the value of `group`, `outCo`
-    normalized to a 0-1 scale
-  - **outSetParameter**: sets the value of `group`, `outCo` to the
-    function's first argument, normalized to a 0-1 scale
-  - **outGetValue**: returns the value of `group`, `outCo`
-  - **outSetValue**: sets the value of `group`, `outCo` to the
-    function's first argument
-  - **outToggle**: sets `group`, `outCo` to its inverse (0 if it is \>0;
+  - **inToggle**: sets `group`, `inKey` to its inverse (0 if it is \>0;
     1 if it is 0)
+  - **outGetParameter**: returns the value of `group`, `outKey`
+    normalized to a 0-1 scale
+  - **outSetParameter**: sets the value of `group`, `outKey` to the
+    function's first argument, normalized to a 0-1 scale
+  - **outGetValue**: returns the value of `group`, `outKey`
+  - **outSetValue**: sets the value of `group`, `outKey` to the
+    function's first argument
+  - **outToggle**: sets `group`, `outKey` to its inverse (0 if it is
+    \>0; 1 if it is 0)
 
 ### Shift layers
 
@@ -157,7 +157,7 @@ manipulate the Component appropriately. If you ever need to check
 whether a Component is in a shifted state, set its boolean `isShifted`
 property in your `shift`/`unshift` functions (in most cases this is not
 necessary). In some cases, using the `shift`/`unshift` functions to
-change the Component's `inCo`, `outCo`, or `group` properties will be
+change the Component's `inKey`, `outKey`, or `group` properties will be
 sufficient. Refer to the source code for [\#HotcueButton](#HotcueButton)
 for an example.
 
@@ -190,10 +190,10 @@ initialization. Changing their value after creating the Component does
 not do anything.
 
   - **outConnect** (boolean, default true): whether to call `connect` in
-    the constructor (assuming `group` and `outCo` were specified in the
+    the constructor (assuming `group` and `outKey` were specified in the
     options object)
   - **outTrigger** (boolean, default true): whether to call `trigger` in
-    the constructor (assuming `group` and `outCo` were specified in the
+    the constructor (assuming `group` and `outKey` were specified in the
     options object)
 
 Some controllers send and receive two sets of MIDI signals for most
@@ -224,18 +224,19 @@ controller's `init` function. For example:
 ### Syntactic sugar
 
 Components JS provides convenient shortcuts for common situations. If
-`inCo` and `outCo` are the same, you can specify `co` in the options
-object for the constructor to set both `inCo` and `outCo`. For example:
+`inKey` and `outKey` are the same, you can specify `key` in the options
+object for the constructor to set both `inKey` and `outKey`. For
+example:
 
     var quantizeButton = new components.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]'
-        co: 'quantize'
+        key: 'quantize'
     });
 
 Setting the `co` property after calling the constructor will not
-automatically set `inCo` and `outCo`; you would need to do that manually
-if necessary.
+automatically set `inKey` and `outKey`; you would need to do that
+manually if necessary.
 
 To avoid typing out the group for the constructor of each Component,
 Components that share a group can be part of a ComponentContainer and
@@ -267,24 +268,24 @@ For example:
         co: 'quantize',
     });
 
-Button's `input` function toggles the value of `group`, `inCo` when the
+Button's `input` function toggles the value of `group`, `inKey` when the
 button is pressed, but not when the button is released. For buttons that
-toggle `inCo` when they are pressed and released, set the onlyOnPress
+toggle `inKey` when they are pressed and released, set the onlyOnPress
 property to false. For example:
 
     var tempSlow = new components.Button({
         midi: [0x91, 0x44],
-        inCo: 'rate_temp_down',
+        inKey: 'rate_temp_down',
         onlyOnPress: false,
     });
 
 Button's `output` function sends the value of the `on` property as the
-third MIDI byte when outCo \> 0 and `off` when outCo \<= 0. By default,
-`on` is 127 (0x7F) and `off` is 0. For buttons/pads with multicolor
-LEDs, you can change the color of the LED by defining the `on` and `off`
-properties to be the MIDI value to send for that state. For example, if
-the LED turns red when sent a MIDI value of 127 and blue when sent a
-value of 126:
+third MIDI byte when outKey \> 0 and `off` when outKey \<= 0. By
+default, `on` is 127 (0x7F) and `off` is 0. For buttons/pads with
+multicolor LEDs, you can change the color of the LED by defining the
+`on` and `off` properties to be the MIDI value to send for that state.
+For example, if the LED turns red when sent a MIDI value of 127 and blue
+when sent a value of 126:
 
     MyController.padColors = {
         red: 127,
@@ -427,7 +428,7 @@ For example:
         eqKnobs[i] = new components.Pot({
             midi: [0xB1, 0x02 + i],
             group: '[EqualizerRack1_[Channel1]_Effect1]',
-            inCo: 'parameter' + i,
+            inKey: 'parameter' + i,
         });
     }
 
@@ -443,7 +444,7 @@ own `input` function. For example, for an encoder that sends a value of
     MyController.SomeEncoder = new components.Encoder({
         midi: [0xB1, 0x03],
         group: '[Channel1]',
-        inCo: 'pregain',
+        inKey: 'pregain',
         input: function (channel, control, value, status, group) {
             if (value === 1) {
                 this.setParameterIn(this.getParameterIn() - .05);
@@ -454,10 +455,10 @@ own `input` function. For example, for an encoder that sends a value of
     });
 
 To map an Encoder with an LED ring around it that receives MIDI signals
-on a continuous 0-127 scale, define an `outCo` property in the options
+on a continuous 0-127 scale, define an `outKey` property in the options
 object for the constructor. Similar to `input`, if the LEDs do not
 respond to a continuous 0-127 scale, define your own `output` function.
-If `outCo` and `inCo` are the same, you can just specify one `co`
+If `outKey` and `inKey` are the same, you can just specify one `key`
 property for the constructor.
 
 Encoders can often be pushed like a button. Usually, it is best to use a
@@ -503,8 +504,8 @@ useful for cycling through more than two alternate layers.
 For example:
 
     someComponentContainer.applyLayer({
-        someButton: { inCo: 'alternate inCo' },
-        anotherButton: { outCo: 'alternate outCo' }
+        someButton: { inKey: 'alternate inKey' },
+        anotherButton: { outKey: 'alternate outKey' }
     });
 
 By default, `applyLayer` disconnects old layer's output callbacks and

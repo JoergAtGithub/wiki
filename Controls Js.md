@@ -209,9 +209,9 @@ change the properties of controls.Control.prototype in your controller's
 
 ### Syntactic sugar
 
-Controls JS provides more convenient shortcuts for common situations. If
-inCo and outCo are the same, you can specify 'co' in the options object
-for the constructor to set both inCo and outCo. For example:
+Controls JS provides convenient shortcuts for common situations. If
+`inCo` and `outCo` are the same, you can specify `co` in the options
+object for the constructor to set both `inCo` and `outCo`. For example:
 
     var quantizeButton = new controls.Button({
         midi: [0x91, 0x01],
@@ -219,19 +219,19 @@ for the constructor to set both inCo and outCo. For example:
         co: 'quantize'
     });
 
-Setting the co property after calling the constructor will not
-automatically set inCo and outCo; you would need to do that manually if
-necessary.
+Setting the `co` property after calling the constructor will not
+automatically set `inCo` and `outCo`; you would need to do that manually
+if necessary.
 
 To avoid typing out the group for the constructor of each Control,
 Controls that share a group can be part of a ControlContainer and the
-ControlContainer's [\#reconnectControl](#reconnectControl)s method can
+ControlContainer's [\#reconnectControls](#reconnectControls) method can
 assign the group to all of them. Refer to the [\#Deck](#Deck)
 ControlContainer documentation for an example.
 
-If a Control only needs its midi property specified for its constructor,
-this can be provided simply as an array without wrapping it in an
-object. For example:
+If a Control only needs its `midi` property specified for its
+constructor, this can be provided simply as an array without wrapping it
+in an object. For example:
 
     var playButton = new controls.PlayButton([0x90 + channel, 0x0A]);
 

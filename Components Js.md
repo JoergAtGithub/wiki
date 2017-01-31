@@ -129,11 +129,11 @@ yourself:
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
   - **connect**: register `output` as the callback function that gets
-    executed when the value of `group`, `outKey` changes. Implement a
-    custom function if you need to connect callbacks for multiple [Mixxx
-    ControlObjects](mixxxcontrols) in one Component. Refer to the source
-    code of [SamplerButton.prototype.connect](#SamplerButton) for an
-    example.
+    executed when the value of the [Mixxx ControlObject](mixxxcontrols)
+    specified by `group`, `outKey` changes. Implement a custom function
+    if you need to connect callbacks for multiple Mixxx ControlObjects
+    in one Component. Refer to the source code of
+    [SamplerButton.prototype.connect](#SamplerButton) for an example.
 
 The following methods are called by the default Component `input` and
 `output` methods, as well as the default `input` functions of

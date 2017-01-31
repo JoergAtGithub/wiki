@@ -30,7 +30,7 @@ A Component represents a physical component of a controller, such as a
 button, knob, fader, or encoder. It encapsulates all the information
 needed to receive MIDI input from that component and send MIDI signals
 out to the controller to activate its LED(s). In general, you should not
-use Component directly; instead, use one of its subtypes
+use the Component object directly; instead, use one of its subtypes
 ([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
 do need to use Component directly, do not confuse it with the
 `components` object that contains all the objects for the library;

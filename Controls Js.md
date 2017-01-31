@@ -16,8 +16,8 @@ To use the library, in the `<scriptfiles>` element at the top of your
 mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load
 the Lodash library and the Controls library:
 
-    <file functionprefix="" filename="lodash.mixxx.js"/>
-    <file functionprefix="" filename="midi-controls-0.0.js"/>
+    <file filename="lodash.mixxx.js"/>
+    <file filename="midi-controls-0.0.js"/>
 
 Controls JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded. Importing the
@@ -243,7 +243,7 @@ instead of
 
 ## Button
 
-A Button is a Control derivative for buttons/pads.
+A Button is a subtype of Control for buttons/pads.
 
 For example:
 
@@ -253,10 +253,10 @@ For example:
         co: 'quantize',
     });
 
-By default, the `Button.prototype.input` function toggles the value of
-`group`, `inCo` when the button is pressed. For buttons that activate an
-inCo only while they are held down, set the onlyOnPress property to
-false. For example:
+Button's `input` function toggles the value of `group`, `inCo` when the
+button is pressed, but not when the button is released. For buttons that
+toggle `inCo` when they are pressed and released, set the onlyOnPress
+property to false. For example:
 
     var tempSlow = new controls.Button({
         midi: [0x91, 0x44],
@@ -264,9 +264,9 @@ false. For example:
         onlyOnPress: false,
     });
 
-The default `output` function sends the value of the `on` property as
-the third MIDI byte when outCo \> 0 and `off` when outCo \<= 0. By
-default, on is 127 (0x7F) and off is 0. For buttons/pads with multicolor
+Button's `output` function sends the value of the `on` property as the
+third MIDI byte when outCo \> 0 and `off` when outCo \<= 0. By default,
+`on` is 127 (0x7F) and `off` is 0. For buttons/pads with multicolor
 LEDs, you can change the color of the LED by defining the `on` and `off`
 properties to be the MIDI value to send for that state. For example, if
 the LED turns red when sent a MIDI value of 127 and blue when sent a
@@ -286,11 +286,10 @@ value of 126:
 
 Derivative Buttons are provided for many common use cases, documented in
 the subsections below. These make it easy to map those kinds of buttons
-without having to worry about particularities of Mixxx's ControlObjects
-that can make mapping them not so straightforward. The PlayButton,
-SyncButton, HotcueButton, and SamplerButton objects also provide
-alternate functionality for when a shift button is pressed. To use
-these, you only need to specify their `midi` and `group` properties,
+without having to worry about particularities of Mixxx's ControlObjects.
+The PlayButton, SyncButton, HotcueButton, and SamplerButton objects also
+provide alternate functionality for when a shift button is pressed. To
+use these, you only need to specify their `midi` and `group` properties,
 except for HotcueButton and SamplerButton.
 
 By default, Button works for controllers that send MIDI messages with a
@@ -338,7 +337,7 @@ Shift behavior: delete hotcue
 
 The LED indicates whether the hotcue is set.
 
-Pass the number of the hotcue as the number property of the options
+Pass the number of the hotcue as the `number` property of the options
 argument for the constructor. For example:
 
     var hotcues = [];
@@ -399,22 +398,25 @@ example:
 
 ## Pot
 
-A Pot is a Control for potentiometers (faders and knobs) with finite
-ranges, although it can be adapted for infintely turning encoders. Pot's
-`connect` and `disconnect` methods take care of soft takeover when
-switching layers with ControlContainer's
+A Pot is a Control subtype for potentiometers (faders and knobs) with
+finite ranges, although it can be adapted for infintely turning
+encoders. Pot's `connect` and `disconnect` methods take care of soft
+takeover when switching layers with ControlContainer's
 [\#reconnectControls](#reconnectControls) or [\#applyLayer](#applyLayer)
 methods. Soft takeover is not activated until the first input signal is
 received, so it does not interfere with setting initial values for
 controllers that can report that information.
 
-To adapt a Pot for an infinitely rotating encoder, replace its `input`
-function with a function that increments or decrements the parameter
-depending on the direction the encoder is turned. For example, if the
-encoder sends a MIDI value of 1 for a left turn and 127 for a right
-turn:
+## Encoder
 
-    MyController.SomePot = new control.Pot({
+Encoder is a Control for infinitely turning encoders. The default
+`input` function assumes the encoder sends MIDI signals on a continous
+scale from 0 to 127 (0x7F). If the encoder sends relative MIDI signals
+to indicate whether it turns right or left, you will need to define your
+own `input` function. For example, for an encoder that sends a value of
+1 when it is turned left and a value of 127 when it is turned right:
+
+    MyController.SomeEncoder = new control.Encoder({
         midi: [0xB1, 0x03],
         group: '[Channel1]',
         inCo: 'pregain',
@@ -427,16 +429,15 @@ turn:
         },
     });
 
-## RingEncoder
+To map an Encoder with an LED ring around it that receives MIDI signals
+on a continuous 0-127 scale, define an `outCo` property in the options
+object for the constructor. Similar to `input`, if the LEDs do not
+respond to a continuous 0-127 scale, define your own `output` function.
+If `outCo` and `inCo` are the same, you can just specify one `co`
+property for the constructor.
 
-RingEncoder is a Control for encoders with LED rings around them. These
-are different from Pots because they are sent MIDI messages to keep
-their LED rings in sync with the state of Mixxx and do not require soft
-takeover.
-
-These encoders can often be pushed like a button. Usually, it is best to
-use a separate Button Control to handle the MIDI signals from pushing
-it.
+Encoders can often be pushed like a button. Usually, it is best to use a
+separate Button Control to handle the MIDI signals from pushing it.
 
 ## ControlContainer
 

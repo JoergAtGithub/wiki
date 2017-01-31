@@ -22,6 +22,8 @@ To update one, do the following:
     [mixxxdj/mixxx](https://github.com/mixxxdj/mixxx/tree/master/build)
     to update the "golden" version of the dependencies used for release
     builds.
+13. Update the dependency version listed here for the next version of
+    Mixxx.
 
 # Mixxx 2.1
 

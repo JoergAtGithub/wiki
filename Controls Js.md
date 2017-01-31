@@ -20,7 +20,9 @@ the Lodash library and the Controls library:
     <file functionprefix="" filename="midi-controls-0.0.js"/>
 
 Controls JS uses a few functions from [Lodash](http://lodash.com/),
-which is why they both need to be loaded.
+which is why they both need to be loaded. Importing the
+midi-controls-0.0.js file makes the library accessible by an object
+called `control` (lower case).
 
 This documentation is a work in progress. Not every capability of the
 library is fully documented yet. Refer to the source code of the library
@@ -62,18 +64,17 @@ Create Controls by calling the constructor with JavaScript's "new"
 keyword. The Control constructor takes a single argument. This is an
 options object containing properties that get merged with the Control
 when it is created, making it easy to customize the functionality of the
-Control. Most Controls will need at least their midi, group, inCo, and
-outCo attributes specified:
+Control. Most Controls need at least these properties defined:
 
   - **midi** (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state
+  - **group** (string): the group that both the inCo and outCo
+    manipulate, for example `'[Channel1]`' for deck 1
   - **inCo** (string): the [Mixxx ControlObject](mixxxcontrols) that
     this JavaScript Control manipulates when it receives a MIDI input
     signal
   - **outCo** (string): when this [Mixxx ControlObject](mixxxcontrols)
-    changes value, the JavaScript Control will send MIDI output
-  - **group** (string): the group that both the inCo and outCo
-    manipulate, for example `'[Channel1]`' for deck 1
+    changes value, the `output` function will be called
 
 For example:
 
@@ -81,8 +82,63 @@ For example:
         midi: [0x91, 0x01],
         group: '[Channel1]'
         inCo: 'quantize',
-        outCo: 'quantize'
+        outCo: 'quantize',
     });
+
+### Methods
+
+The following methods (in JavaScript, methods are just properties that
+happen to be functions) must be defined for every Control, but in most
+cases the defaults will work so you do not need to define them yourself:
+
+  - **input**: the [function that receives MIDI
+    input](MIDI%20scripting#MIDI%20input%20handling%20functions)
+  - **inValueScale**: called by the default `input` function, this
+    function takes the third byte of the incoming MIDI signal as its
+    first argument and returns the value to set `group`, `inCo` to
+  - **output**: the [function that gets called when outCo changes
+    value](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx).
+    Typically this sends MIDI output to the controller to change the
+    state of an LED, but it can do anything.
+  - **outValueScale**: called by the default `output` function, this
+    takes the value of `group`, `outCo` as its first argument and
+    returns the third byte of the outgoing MIDI signal
+  - **connect**: register `output` as the callback function that gets
+    executed when the value of `group`, `outCo` changes. Implement a
+    custom function if you need to connect callbacks for multiple [Mixxx
+    ControlObjects](mixxxcontrols) in one Control. Refer to the source
+    code of [SamplerButton.prototype.connect](#SamplerButton) for an
+    example.
+
+Each Control also has these methods that you probably should not
+overwrite:
+
+  - **disconnect**: disconnect the `output` function from being called
+    when `group`, `outCo` changes
+  - **trigger**: manually call `output` with the same arguments as if
+    `group`, `outCo` had changed
+  - **send**: send a 3 byte (short) MIDI message out to the controller.
+    The first two bytes of the MIDI message are specified by the `midi`
+    property. The third MIDI byte is provided as the first argument to
+    the `send` function.
+  - **inGetParameter**: returns the value of `group`, `inCo` normalized
+    to a 0-1 scale
+  - **inSetParameter**: sets the value of `group`, `inCo` to the
+    function's first argument, normalized to a 0-1 scale
+  - **inGetValue**: returns the value of `group`, `inCo`
+  - **inSetValue**: sets the value of `group`, `inCo` to the function's
+    first argument
+  - **inToggle**: sets `group`, `inCo` to its inverse (0 if it is \>0; 1
+    if it is 0)
+  - **outGetParameter**: returns the value of `group`, `outCo`
+    normalized to a 0-1 scale
+  - **outSetParameter**: sets the value of `group`, `outCo` to the
+    function's first argument, normalized to a 0-1 scale
+  - **outGetValue**: returns the value of `group`, `outCo`
+  - **outSetValue**: sets the value of `group`, `outCo` to the
+    function's first argument
+  - **outToggle**: sets `group`, `outCo` to its inverse (0 if it is \>0;
+    1 if it is 0)
 
 ### Sending outgoing MIDI messages
 

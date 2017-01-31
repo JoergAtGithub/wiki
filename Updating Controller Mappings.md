@@ -22,7 +22,11 @@ latest version of Mixxx.
     ControlObject of an EffectUnit needs to be set to 1 for the focus to
     be shown in skins. Refer to [Mixxxcontrols\#Effects
     framework](Mixxxcontrols#Effects%20framework) for details.
-  - [Controls JS](Controls%20JS) library was introduced
+  - [Controls JS](Controls%20JS) library was introduced to make writing
+    JavaScript mappings easier. It provides an [Controls
+    JS\#EffectUnit](Controls%20JS#EffectUnit) object that makes it easy
+    to map the new effects interface to the common layout of 4 knobs (or
+    3 knobs + 1 encoder) + 4 buttons for controlling effects
   - TODO: document new library navigation interface
 
 # Mixxx 2.0

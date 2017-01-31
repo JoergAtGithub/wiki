@@ -16,8 +16,8 @@ To use the library, in the `<scriptfiles>` element at the top of your
 mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load
 the Lodash library and the Controls library:
 
-    <file functionprefix="" filename="lib/lodash.mixxx.js"/>
-    <file functionprefix="" filename="lib/midi-controls-0.js"/>
+    <file functionprefix="" filename="lodash.mixxx.js"/>
+    <file functionprefix="" filename="midi-controls-0.0.js"/>
 
 Controls JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded.
@@ -77,7 +77,7 @@ outCo attributes specified:
 
 For example:
 
-    var quantizeButton = new Button({
+    var quantizeButton = new controls.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]'
         inCo: 'quantize',
@@ -180,7 +180,7 @@ Controls JS provides more convenient shortcuts for common situations. If
 inCo and outCo are the same, you can specify 'co' in the options object
 for the constructor to set both inCo and outCo. For example:
 
-    var quantizeButton = new Button({
+    var quantizeButton = new controls.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]'
         co: 'quantize'
@@ -194,7 +194,7 @@ Also, if a Control only needs its midi property specified for its
 constructor, this can be provided simply as an array without wrapping it
 in an object. For example:
 
-    var playButton = new PlayButton([0x90 + channel, 0x0A]);
+    var playButton = new controls.PlayButton([0x90 + channel, 0x0A]);
 
 instead of
 
@@ -214,7 +214,7 @@ A Button is a Control derivative for buttons/pads.
 
 For example:
 
-    var quantize = new Button({
+    var quantize = new controls.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]',
         co: 'quantize',
@@ -224,7 +224,7 @@ By default, the inCo is toggled only when the button is pressed. For
 buttons that activate an inCo only while they are held down, set the
 onlyOnPress property to false. For example:
 
-    var tempSlow = new Button({
+    var tempSlow = new controls.Button({
         midi: [0x91, 0x44],
         inCo: 'rate_temp_down',
         onlyOnPress: false,
@@ -241,7 +241,7 @@ value of 127 and blue when sent a value of 126:
         red: 127,
         blue: 126
     };
-    MyController.quantize = new Button({
+    MyController.quantize = new controls.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]',
         co: 'quantize',
@@ -305,7 +305,7 @@ argument for the constructor. For example:
 
     var hotcues = [];
     for (var i = 1; i <= 8; i++) {
-        hotcues[i] = new HotcueButton({
+        hotcues[i] = new controls.HotcueButton({
             number: i,
             group: '[Channel1]',
             midi: [0x91, 0x26 + i],
@@ -327,7 +327,7 @@ example:
 
     var samplerButtons = [];
     for (var n = 1; n <= 8; n++) {
-        samplerButtons[n] = new SamplerButton({
+        samplerButtons[n] = new controls.SamplerButton({
             number: n,
             midi: [0x91, 0x02],
         });
@@ -351,7 +351,7 @@ is playing. For example:
         off: 0
     };
     var samplerButton = [];
-    var samplerButton[1] = new SamplerButton(
+    var samplerButton[1] = new controls.SamplerButton(
         midi: [0x91, 0x02],
         number: 1,
         on: MyController.padColors.blue,
@@ -485,7 +485,7 @@ prototype to Deck. For example:
     };
     MyController.Deck = function (deckNumbers, midiChannel) {
         // Call the Deck constructor to setup the currentDeck and deckNumbers properties.
-        Deck.call(this, deckNumbers);
+        controls.Deck.call(this, deckNumbers);
         this.playButton = new PlayButton([0x90 + midiChannel, 0x01]);
         this.CueButton = new CueButton([0x90 + midiChannel, 0x02]);
         this.hotcueButtons = [];
@@ -507,7 +507,7 @@ prototype to Deck. For example:
             }
         });
     };
-    MyController.Deck.prototype = new Deck();
+    MyController.Deck.prototype = new controls.Deck();
 
 ## EffectUnit
 
@@ -570,7 +570,7 @@ attributes for the showParametersButton, enableButtons\[1-3\], and
 optionally enableOnChannelButtons. After the midi attributes are set up,
 call EffectUnit.init() to set up the output callbacks. For example:
 
-    MyController.effectUnit = new EffectUnit(1);
+    MyController.effectUnit = new controls.EffectUnit(1);
     MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
     MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
     MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];

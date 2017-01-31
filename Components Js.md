@@ -92,6 +92,20 @@ For example:
         outKey: 'quantize',
     });
 
+If `inKey` and `outKey` are the same, you can specify `key` in the
+options object for the constructor to set both `inKey` and `outKey`. For
+example:
+
+    var quantizeButton = new components.Button({
+        midi: [0x91, 0x01],
+        group: '[Channel1]'
+        key: 'quantize'
+    });
+
+Setting the `key` property after calling the constructor will not
+automatically set `inKey` and `outKey`; you would need to do that
+manually if necessary.
+
 ### Methods
 
 The following methods (in JavaScript, methods are just object properties
@@ -229,20 +243,7 @@ controller's `init` function. For example:
 
 ### Syntactic sugar
 
-Components JS provides convenient shortcuts for common situations. If
-`inKey` and `outKey` are the same, you can specify `key` in the options
-object for the constructor to set both `inKey` and `outKey`. For
-example:
-
-    var quantizeButton = new components.Button({
-        midi: [0x91, 0x01],
-        group: '[Channel1]'
-        key: 'quantize'
-    });
-
-Setting the `co` property after calling the constructor will not
-automatically set `inKey` and `outKey`; you would need to do that
-manually if necessary.
+Components JS provides convenient shortcuts for common situations.
 
 To avoid typing out the group for the constructor of each Component,
 Components that share a group can be part of a ComponentContainer and

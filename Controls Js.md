@@ -223,9 +223,15 @@ Setting the co property after calling the constructor will not
 automatically set inCo and outCo; you would need to do that manually if
 necessary.
 
-Also, if a Control only needs its midi property specified for its
-constructor, this can be provided simply as an array without wrapping it
-in an object. For example:
+To avoid typing out the group for the constructor of each Control,
+Controls that share a group can be part of a ControlContainer and the
+ControlContainer's [\#reconnectControl](#reconnectControl)s method can
+assign the group to all of them. Refer to the [\#Deck](#Deck)
+ControlContainer documentation for an example.
+
+If a Control only needs its midi property specified for its constructor,
+this can be provided simply as an array without wrapping it in an
+object. For example:
 
     var playButton = new controls.PlayButton([0x90 + channel, 0x0A]);
 
@@ -234,12 +240,6 @@ instead of
     var playButton = new controls.PlayButton({
         midi: [0x90 + channel, 0x0A]
     });
-
-To avoid typing out the group for the constructor of each Control,
-Controls that share a group can be part of a ControlContainer and the
-ControlContainer's [\#reconnectControl](#reconnectControl)s method can
-assign the group to all of them. Refer to the [\#Deck](#Deck)
-ControlContainer documentation for an example.
 
 ## Button
 

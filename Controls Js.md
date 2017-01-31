@@ -407,6 +407,17 @@ soft takeover when switching layers with
 input signal is received, so it does not interfere with setting initial
 values for controllers that can report that information.
 
+For example:
+
+    var eqKnobs = [];
+    for (var i = 1; i <= 3; i++) {
+        eqKnobs[i] = new controls.Pot({
+            midi: [0xB1, 0x02 + i],
+            group: '[EqualizerRack1_[Channel1]_Effect1]',
+            inCo: 'parameter' + i,
+        });
+    }
+
 ## Encoder
 
 Encoder is a Control for infinitely turning encoders. The default

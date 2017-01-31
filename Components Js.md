@@ -180,19 +180,18 @@ overwrite:
 ### Shift layers
 
 Components can be used to manage alternate behaviors in different
-conditions. The most common use case for this is for shift buttons. For
-that case, assign functions to the `shift` and `unshift` properties that
-manipulate the Component appropriately. If you ever need to check
-whether a Component is in a shifted state, set its boolean `isShifted`
-property in your `shift`/`unshift` functions (in most cases this is not
-necessary). In some cases, using the `shift`/`unshift` functions to
-change the Component's `inKey`, `outKey`, or `group` properties will be
-sufficient. Refer to the source code for [\#HotcueButton](#HotcueButton)
-for an example.
-
-In more complex cases, overwriting the `input` and `output` functions
-may be required. Refer to [\#SamplerButton](#SamplerButton) and
-[\#EffectUnit](#EffectUnit) for examples.
+conditions. The most common use case for this is for shift buttons. If
+your controller sends different MIDI signals depending on whether shift
+is pressed, map both the shifted and unshifted input signals to the
+Component's `input` function in XML. Assign functions to the `shift` and
+`unshift` properties that manipulate the Component appropriately. In
+some cases, using the `shift`/`unshift` functions to change the
+Component's `inKey`, `outKey`, and/or `group` properties will be
+sufficient. Refer to the source code of [\#HotcueButton](#HotcueButton)
+for an example. In more complex cases, overwriting the `input` and
+`output` functions may be required. Refer to
+[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
+examples.
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists. The `shift` and `unshift` functions of

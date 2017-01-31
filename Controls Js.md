@@ -65,7 +65,8 @@ Create Controls by calling the constructor with JavaScript's "new"
 keyword. The Control constructor takes a single argument. This is an
 options object containing properties that get merged with the Control
 when it is created, making it easy to customize the functionality of the
-Control. Most Controls need at least these properties defined:
+Control. The constructors for all Control subtypes work the same way.
+Most Controls need at least these properties defined:
 
   - **midi** (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state

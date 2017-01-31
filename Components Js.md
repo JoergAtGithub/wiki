@@ -22,7 +22,7 @@ the Lodash library and the Components library:
 Components JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded. Importing the
 midi-components-0.0.js file makes the library accessible by an object
-called `components` (lower case).
+called `components` (plural, lower case).
 
 ## Component
 
@@ -33,8 +33,8 @@ out to the controller to activate its LED(s). In general, you should not
 use the Component object directly; instead, use one of its subtypes
 ([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
 do need to use Component directly, do not confuse it with the
-`components` object (plural) that contains all the objects for the
-library; access Component as `components.Component`.
+`components` object (plural, lower case) that contains all the objects
+for the library; access Component as `components.Component`.
 
 Components should generally be properties of a
 [\#ComponentContainer](#ComponentContainer) object. Most Components

@@ -95,7 +95,7 @@ yourself:
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)
   - **output**: the [function that gets called when outCo changes
-    value](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx).
+    value](midi%20scripting#Automatic%20reactions%20to%20changes%20in%20Mixxx).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
   - **connect**: register `output` as the callback function that gets
@@ -149,7 +149,7 @@ overwrite:
 
 The function assigned to the `output()` property of the Control is
 responsible for [reacting to
-changes](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx)
+changes](midi%20scripting#Automatic%20reactions%20to%20changes%20in%20Mixxx)
 in the outCo [Mixxx ControlObject](mixxxcontrols). The output callback
 is automatically connected and called by the constructor if the outCo,
 group, and midi properties are specified to the constructor (unless the

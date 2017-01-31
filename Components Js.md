@@ -33,8 +33,8 @@ out to the controller to activate its LED(s). In general, you should not
 use the Component object directly; instead, use one of its subtypes
 ([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
 do need to use Component directly, do not confuse it with the
-`components` object that contains all the objects for the library;
-access Component as `components.Component`.
+`components` object (plural) that contains all the objects for the
+library; access Component as `components.Component`.
 
 Components should generally be properties of a
 [\#ComponentContainer](#ComponentContainer) object. Most Components

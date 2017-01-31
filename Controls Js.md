@@ -400,27 +400,32 @@ example:
 ## Pot
 
 A Pot is a Control for potentiometers (faders and knobs) with finite
-ranges, although it can be adapted for infintely turning encoders. Using
-a Pot Control is helpful because Pot.connect() and Pot.disconnect() take
-care of soft takeover when switching layers with
-ControlContainer.reconnectControls() and ControlContainer.applyLayer().
-Soft takeover is not activated until the first input is received so it
-does not interfere with setting initial values for controllers that can
-report that information.
+ranges, although it can be adapted for infintely turning encoders. Pot's
+`connect` and `disconnect` methods take care of soft takeover when
+switching layers with ControlContainer's
+[\#reconnectControls](#reconnectControls) or [\#applyLayer](#applyLayer)
+methods. Soft takeover is not activated until the first input signal is
+received, so it does not interfere with setting initial values for
+controllers that can report that information.
 
-To adapt a Pot for an infinitely rotating encoder, replace its
-inValueScale() function with a function that increments or decrements
-the parameter depending on the direction the encoder is turned. For
-example, if the encoder sends a MIDI value of 1 for a left turn and 127
-for a right turn:
+To adapt a Pot for an infinitely rotating encoder, replace its `input`
+function with a function that increments or decrements the parameter
+depending on the direction the encoder is turned. For example, if the
+encoder sends a MIDI value of 1 for a left turn and 127 for a right
+turn:
 
-    MyController.SomePot.inValueScale = function (value) {
-        if (value === 1) {
-            return this.getParameterIn() - .05;
-        } else if (value === 127) {
-            return this.getParameterIn() + .05;
-        }
-    }
+    MyController.SomePot = new control.Pot({
+        midi: [0xB1, 0x03],
+        group: '[Channel1]',
+        inCo: 'pregain',
+        input: function (channel, control, value, status, group)) {
+            if (value === 1) {
+                this.setParameterIn(this.getParameterIn() - .05);
+            } else if (value === 127) {
+                this.setParameterIn(this.getParameterIn() + .05);
+            }
+        },
+    });
 
 ## RingEncoder
 

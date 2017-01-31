@@ -31,7 +31,10 @@ button, knob, encoder, or fader. It encapsulates all the information
 needed to receive MIDI input from that component and send MIDI signals
 out to the controller to activate its LED(s). In general, you should not
 use Control directly; instead, use one of its subtypes
-([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)).
+([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
+do need to use Control directly, do not confuse it with the `control`
+object that contains all the objects for the library; access Control as
+`control.Control`.
 
 Controls should generally be properties of a
 [\#ControlContainer](#ControlContainer) object. Most Controls should be

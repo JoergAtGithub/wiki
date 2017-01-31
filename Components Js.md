@@ -208,11 +208,14 @@ may be required. Refer to [\#SamplerButton](#SamplerButton) and
 [\#EffectUnit](#EffectUnit) for examples.
 
 For convenience, the Component constructor will automatically call the
-`unshift` function if it exists. The `shift` and `unshift` functions of
-[\#ComponentContainer](#ComponentContainer) will call the corresponding
-function of all the Components within it that have that function defined
-and will recursively descend into ComponentContainers that are
-properties of the parent ComponentContainer.
+`unshift` function if it exists (otherwise, in the above example for
+PlayButton, `inKey` would have to be specified as a property of the
+prototype object and set in the `unshift` function). The `shift` and
+`unshift` functions of [\#ComponentContainer](#ComponentContainer) will
+call the corresponding function of all the Components within it that
+have that function defined and will recursively descend into
+ComponentContainers that are properties of the parent
+ComponentContainer.
 
 To use separate `output` callback functions in shifted and unshifted
 modes, the Component's `shift` and `unshift` functions need to call

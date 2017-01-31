@@ -33,7 +33,9 @@ if in doubt.
 A Control represents a physical component on a controller, such as a
 button, knob, encoder, or fader. It encapsulates all the information
 needed to receive MIDI input from that component and send MIDI signals
-out to the controller to activate its LED(s).
+out to the controller to activate its LED(s). In general, you should not
+use Control directly; instead, use one of its subtypes
+([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)).
 
 Controls should generally be properties of a
 [\#ControlContainer](#ControlContainer) object. Most Controls should be

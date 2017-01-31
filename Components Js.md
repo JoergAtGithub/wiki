@@ -26,7 +26,7 @@ called `components` (lower case).
 
 ## Component
 
-A Component represents a physical component on a controller, such as a
+A Component represents a physical component of a controller, such as a
 button, knob, encoder, or fader. It encapsulates all the information
 needed to receive MIDI input from that component and send MIDI signals
 out to the controller to activate its LED(s). In general, you should not

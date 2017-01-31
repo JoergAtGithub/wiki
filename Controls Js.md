@@ -158,9 +158,9 @@ your `shift`/`unshift` functions (in most cases this is not necessary).
 In some cases, using the `shift`/`unshift` functions to change the
 Control's inCo, outCo, or group properties will be sufficient. Refer to
 the source code for [\#HotcueButton](#HotcueButton) for an example. In
-more complex cases, overwriting the `input` and `output` functions
-inside your `shift`/`unshift` functions may be required. Refer to
-[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
+more complex cases, overwriting the Control's `input` and `output`
+functions inside your `shift`/`unshift` functions may be required. Refer
+to [\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
 examples. To avoid redundancy (like typing the name of the `inCo` both
 as the `inCo` property and in the `unshift` function), the Control
 constructor will automatically call the `unshift` function if it exists.

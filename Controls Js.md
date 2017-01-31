@@ -145,97 +145,67 @@ overwrite:
   - **outToggle**: sets `group`, `outCo` to its inverse (0 if it is \>0;
     1 if it is 0)
 
-### Sending outgoing MIDI messages
-
-The function assigned to the `output()` property of the Control is
-responsible for [reacting to
-changes](midi%20scripting#Automatic%20reactions%20to%20changes%20in%20Mixxx)
-in the outCo [Mixxx ControlObject](mixxxcontrols). The output callback
-is automatically connected and called by the constructor if the outCo,
-group, and midi properties are specified to the constructor (unless the
-outConnect property is set to false to intentionally avoid that). This
-makes it easy to map the controller so its LEDs stay synchronized with
-the status of Mixxx, whether the outCo changes because of the Control
-receiving MIDI input or the user changing it with the keyboard, mouse,
-or another controller.
-
-The default Control.prototype.output function calls the Control's
-`send()` function, which sends an outgoing MIDI message with the first
-two bytes as those specified by the Control's midi property and the
-third byte as the new value of outCo. If you want to send a different
-third byte, implement an `outValueScale()` function that takes the new
-value as its first argument and returns the number to send as the third
-MIDI byte. If you implement custom `input()` or `output()` functions,
-you can call `this.send(valueToSend)` to send an outgoing MIDI message.
-
-The output callback can be easily connected and disconnected by calling
-the Control's `connect()` and `disconnect()` functions. The output
-callback can also be manually run with the appropriate arguments simply
-by calling the Control's `trigger()` function. This is done by the
-constructor if the outCo, group, and midi properties are specified
-(unless the outTrigger property is set to false to intentionally avoid
-that). The `connect()`, `disconnect()`, and `trigger()` functions are
-automatically called by ControlContainer's
-[\#reconnectControls](#reconnectControls) and
-[\#applyLayer](#applyLayer) functions to make activating different
-layers of functionality easy.
-
-A Control can react to changes in multiple [Mixxx
-ControlObjects](mixxxcontrols) by overriding its `connect()` function.
-Refer to the source code of [\#SamplerButton](#SamplerButton) for an
-example.
-
 ### Shift layers
 
 Controls can be used to manage alternate behaviors in different
 conditions. The most common use case for this is for shift buttons. For
 that case, assign functions to the `shift` and `unshift` properties that
-manipulate the Control appropriately. In some cases, using the
-`shift`/`unshift` functions to change the Control's inCo, outCo, or
-group properties will be sufficient. Refer to the source code for
-[\#HotcueButton](#HotcueButton) for an example. In more complex cases,
-changing `input()` and `output()` may be required. Refer to
-[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
-examples. To avoid redundancy (like typing the name of the inCo both as
-the inCo property and in the `unshift()` function), the Control
-constructor will automatically call the `unshift()` function if it
-exists. The `shift()` and `unshift()` functions of
-[\#ControlContainer](#ControlContainer) will call the appropriate
+manipulate the Control appropriately. If you ever need to check whether
+a Control is in a shifted state, set its boolean `isShifted` property in
+your `shift`/`unshift` functions (in most cases this is not necessary).
+In some cases, using the `shift`/`unshift` functions to change the
+Control's inCo, outCo, or group properties will be sufficient. Refer to
+the source code for [\#HotcueButton](#HotcueButton) for an example. In
+more complex cases, overwriting the `input` and `output` functions may
+be required. Refer to [\#SamplerButton](#SamplerButton) and
+[\#EffectUnit](#EffectUnit) for examples. To avoid redundancy (like
+typing the name of the `inCo` both as the `inCo` property and in the
+`unshift` function), the Control constructor will automatically call the
+`unshift` function if it exists. The `shift` and `unshift` functions of
+[\#ControlContainer](#ControlContainer) will call the corresponding
 function of all the Controls within it that have that function defined
 and will recursively decend into ControlContainers that are properties
 of the parent ControlContainer.
 
-### Tips and tricks
+### Optional properties
 
-Control and its derivative objects use constructor functions with a
-minimal amount of logic. Most of the functionality of Controls comes
-from their prototype objects. In JavaScript, making a change to an
-object's prototype immediately changes all existing and future objects
-that have it in their prototype chain (regardless of the context in
-which the derivative objects were created). This makes it easy to change
-the behavior for all (of a subtype) of Control to accomodate the MIDI
-signals used by a particular controller. For example, the [Hercules P32
-DJ](Hercules%20P32%20DJ) controller sends and receives two sets of MIDI
-signals for most physical components, one for when the shift button is
-pressed and one for when the shift button is not pressed. The controller
-changes the state of its LEDs when the shift buttons are pressed, which
-is controlled by the alternate set of MIDI signals. These alternate MIDI
-signals are the same as the unshifted ones, but the MIDI channel is 3
-higher. So, to avoid having the LEDs flicker when the shift button is
-pressed or having to define separate JavaScript Controls for every
-physical controller component in its shifted and unshifted state, the
-P32's init function has this code:
+The following properties can be specified in the options object passed
+to the Control constructor to customize the Control's initialization.
+Changing their value after creating the Control does not do anything.
 
-    Control.prototype.shiftOffset = 3;
-    Control.prototype.shiftChannel = true;
-    Button.prototype.sendShifted = true;
+  - **outConnect** (boolean, default true): whether to call `connect` in
+    the constructor (assuming `group` and `outCo` were specified in the
+    options object)
+  - **outTrigger** (boolean, default true): whether to call `trigger` in
+    the constructor (assuming `group` and `outCo` were specified in the
+    options object)
 
-This causes the `Control.prototype.send()` function to send both the
-shifted and unshifted MIDI signals when the Control's outCo changes. If
-your controller uses the same MIDI channel but different MIDI control
-numbers when a shift button is pressed, set
-`Control.prototype.shiftControl` to true instead of
-`Control.prototype.shiftChannel`.
+Some controllers send and receive two sets of MIDI signals for most
+physical components, one for when the shift button is pressed and one
+for when the shift button is not pressed. To avoid defining two Controls
+for every physical component of your controller, set the following
+options as appropriate:
+
+  - **sendShifted** (boolean, default false): whether to send a second,
+    shifted MIDI message for every call to `send`
+  - **shiftChannel** (boolean, default false): whether the shifted MIDI
+    message changes the MIDI channel (second nybble of the first byte of
+    the MIDI signal)
+  - **shiftControl** (boolean, default false): whether the shifted MIDI
+    message changes the MIDI control number (second byte) of the MIDI
+    signal
+  - **shiftOffset** (number, default 0): how much to shift the MIDI
+    channel or control number by
+
+To avoid having to define those properties for every Control, you can
+change the properties of controls.Control.prototype in your controller's
+`init` function. For example:
+
+    controls.Control.prototype.shiftOffset = 3;
+    controls.Control.prototype.shiftChannel = true;
+    controls.Control.prototype.sendShifted = true;
+
+### Syntactic sugar
 
 Controls JS provides more convenient shortcuts for common situations. If
 inCo and outCo are the same, you can specify 'co' in the options object

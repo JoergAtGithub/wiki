@@ -158,18 +158,30 @@ manipulate the Control appropriately. If you ever need to check whether
 a Control is in a shifted state, set its boolean `isShifted` property in
 your `shift`/`unshift` functions (in most cases this is not necessary).
 In some cases, using the `shift`/`unshift` functions to change the
-Control's inCo, outCo, or group properties will be sufficient. Refer to
-the source code for [\#HotcueButton](#HotcueButton) for an example. In
-more complex cases, overwriting the `input` and `output` functions may
-be required. Refer to [\#SamplerButton](#SamplerButton) and
-[\#EffectUnit](#EffectUnit) for examples. To avoid redundancy (like
-typing the name of the `inCo` both as the `inCo` property and in the
-`unshift` function), the Control constructor will automatically call the
+Control's `inCo`, `outCo`, or `group` properties will be sufficient.
+Refer to the source code for [\#HotcueButton](#HotcueButton) for an
+example.
+
+In more complex cases, overwriting the `input` and `output` functions
+may be required. Refer to [\#SamplerButton](#SamplerButton) and
+[\#EffectUnit](#EffectUnit) for examples.
+
+For convenience, the Control constructor will automatically call the
 `unshift` function if it exists. The `shift` and `unshift` functions of
 [\#ControlContainer](#ControlContainer) will call the corresponding
 function of all the Controls within it that have that function defined
-and will recursively decend into ControlContainers that are properties
+and will recursively descend into ControlContainers that are properties
 of the parent ControlContainer.
+
+To use separate `output` callback functions in shifted and unshifted
+modes, the Control's `shift` and `unshift` functions need to call
+`disconnect`/`connect` and `trigger`. ControlContainer's
+`shift`/`unshift` methods will not do this automatically. Generally, you
+should avoid making LEDs change when a shift button is pressed. This is
+distracting if the user is pressing shift to use the shifted
+functionality of a different part of the controller. For layers that
+stay activated after a button is released, this is not as much of an
+issue.
 
 ### Optional properties
 

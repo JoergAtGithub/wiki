@@ -227,7 +227,7 @@ if necessary.
 
 To avoid typing out the group for the constructor of each Control,
 Controls that share a group can be part of a ControlContainer and the
-ControlContainer's [\#reconnectControls](#reconnectControls) method can
+[ControlContainer's](ControlContainer) `reconnectControls` method can
 assign the group to all of them. Refer to the [\#Deck](#Deck)
 ControlContainer documentation for an example.
 
@@ -403,11 +403,11 @@ example:
 A Pot is a Control subtype for potentiometers (faders and knobs) with
 finite ranges, although it can be adapted for infintely turning
 encoders. Pot's `connect` and `disconnect` methods take care of soft
-takeover when switching layers with ControlContainer's
-[\#reconnectControls](#reconnectControls) or [\#applyLayer](#applyLayer)
-methods. Soft takeover is not activated until the first input signal is
-received, so it does not interfere with setting initial values for
-controllers that can report that information.
+takeover when switching layers with
+[ControlContainer's](ControlContainer) `reconnectControls` or
+`applyLayer` methods. Soft takeover is not activated until the first
+input signal is received, so it does not interfere with setting initial
+values for controllers that can report that information.
 
 ## Encoder
 
@@ -492,21 +492,22 @@ functionality, pass `false` as the second argument to `applyLayer`.
 
 ## Deck
 
-Deck is a ControlContainer with methods for conveniently changing the
-group attributes of contained Controls to switch the deck that a set of
-Controls is manipulating. The setCurrentDeck() method takes the new deck
-as a string and sets the Controls' group property appropriately,
-including for equalizer knobs and QuickEffect (filter) knobs.
+Deck is a [\#ControlContainer](#ControlContainer) with methods for
+conveniently changing the `group` attributes of contained Controls to
+switch the deck that a set of Controls is manipulating. The
+`setCurrentDeck` method takes the new deck as a string and sets the
+Controls' `group` property appropriately, including for equalizer knobs
+and QuickEffect (filter) knobs.
 
 The Deck constructor takes one argument, which is an array of deck
-numbers to cycle through with the toggle() method. Typically this will
-be \[1, 3\] or \[2, 4\].
+numbers to cycle through with the `toggle` method. Typically this will
+be `[1, 3]` or `[2, 4]`.
 
 To map your own controller, create a custom derivative of Deck and
-create instances of your custom Deck objects in your controller's init()
+create instances of your custom Deck objects in your controller's `init`
 function. Use a constructor function to create all the Controls you need
 for your particular controller and assign your custom derivative's
-prototype to Deck. For example:
+prototype to controls.Deck. For example:
 
     MyController.init = function () {
         this.leftDeck = new MyController.Deck([1, 2]);
@@ -540,14 +541,20 @@ prototype to Deck. For example:
 
 ## EffectUnit
 
-This ControlContainer provides Controls designed to be mapped to the
-common arrangement of 4 knobs and 4 buttons for controlling effects. 3
-knobs are used for controlling effect metaknobs or parameters, depending
-on whether the effects' parameters are shown. The other knob is used for
-the dry/wet knob of the whole chain or the superknob when shift is
-pressed. 3 buttons are used for enabling effects and the other button
-toggles the effect unit between hiding and showing effect parameters.
-The Controls provided are:
+EffectUnit is a [\#ControlContainer](#ControlContainer) that contains
+Controls designed to be mapped to the common arrangement of 4 knobs and
+4 buttons for controlling effects. If your controller's effects section
+has fewer components, the EffectUnit object provided by Controls JS
+probably will not be very helpful. You may want to read the source code
+for the library's EffectUnit to get an idea for how to map your
+controller though.
+
+3 knobs are used for controlling effect metaknobs or parameters,
+depending on whether the effects' parameters are shown. The other knob
+is used for the dry/wet knob of the whole chain or the superknob when
+shift is pressed. 3 buttons are used for enabling effects and the other
+button toggles the effect unit between hiding and showing effect
+parameters. The Controls provided are:
 
   - dryWetKnob ([\#Pot](#Pot))
   - showParametersButton ([\#Button](#Button))
@@ -597,7 +604,8 @@ To map an EffectUnit for your controller, call the constructor with the
 unit number of the effect unit as the only argument. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and
 optionally enableOnChannelButtons. After the midi attributes are set up,
-call EffectUnit.init() to set up the output callbacks. For example:
+call the EffectUnit's `init` method to set up the output callbacks. For
+example:
 
     MyController.effectUnit = new controls.EffectUnit(1);
     MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
@@ -616,16 +624,16 @@ Controllers designed for Serato and Rekordbox often have an encoder
 instead of a dry/wet knob (labeled "Beats" for Serato or "Release FX"
 for Rekordbox) and a button labeled "Tap". If the encoder sends a MIDI
 signal when pushed, it is recommended to map the encoder push to the
-EffectUnit's showParametersButton, otherwise map that to the "Tap"
-button. To use the dryWetKnob Pot with an encoder, replace its
-inValueScale() function with a function that can appropriately handle
-the signals sent by your controller. Refer to the [\#Pot](#Pot)
-documentation for an example.
+EffectUnit's `showParametersButton`, otherwise map that to the "Tap"
+button. To use the `dryWetKnob` Pot with an encoder, replace its `input`
+function with a function that can appropriately handle the signals sent
+by your controller. Refer to the [\#Encoder](#Encoder) documentation for
+an example.
 
 For the shift functionality to work, the shift button of your controller
-must be mapped to a function that calls the shift()/unshift() functions
-of the EffectUnit on button press/release. If the EffectUnit is a
-property of another ControlContainer (for example a Deck), calling
-shift() and unshift() on the parent ControlContainer will recursively
-call it on the EffectUnit too (just like it will for any other
-ControlContainer).
+must be mapped to a function that calls the `shift`/`unshift` methods of
+the EffectUnit on button press/release. If the EffectUnit is a property
+of another [\#ControlContainer](#ControlContainer) (for example a
+[\#Deck](#Deck)), calling `shift` and `unshift` on the parent
+ControlContainer will recursively call it on the EffectUnit too (just
+like it will for any other ControlContainer).

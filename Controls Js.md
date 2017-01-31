@@ -158,13 +158,12 @@ your `shift`/`unshift` functions (in most cases this is not necessary).
 In some cases, using the `shift`/`unshift` functions to change the
 Control's inCo, outCo, or group properties will be sufficient. Refer to
 the source code for [\#HotcueButton](#HotcueButton) for an example. In
-more complex cases, overwriting the Control's `input` and `output`
-functions inside your `shift`/`unshift` functions may be required. Refer
-to [\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
-examples. To avoid redundancy (like typing the name of the `inCo` both
-as the `inCo` property and in the `unshift` function), the Control
-constructor will automatically call the `unshift` function if it exists.
-The `shift` and `unshift` functions of
+more complex cases, overwriting the `input` and `output` functions may
+be required. Refer to [\#SamplerButton](#SamplerButton) and
+[\#EffectUnit](#EffectUnit) for examples. To avoid redundancy (like
+typing the name of the `inCo` both as the `inCo` property and in the
+`unshift` function), the Control constructor will automatically call the
+`unshift` function if it exists. The `shift` and `unshift` functions of
 [\#ControlContainer](#ControlContainer) will call the corresponding
 function of all the Controls within it that have that function defined
 and will recursively decend into ControlContainers that are properties
@@ -232,7 +231,7 @@ in an object. For example:
 
 instead of
 
-    var playButton = new PlayButton({
+    var playButton = new controls.PlayButton({
         midi: [0x90 + channel, 0x0A]
     });
 
@@ -254,9 +253,10 @@ For example:
         co: 'quantize',
     });
 
-By default, the inCo is toggled only when the button is pressed. For
-buttons that activate an inCo only while they are held down, set the
-onlyOnPress property to false. For example:
+By default, the `Button.prototype.input` function toggles the value of
+`group`, `inCo` when the button is pressed. For buttons that activate an
+inCo only while they are held down, set the onlyOnPress property to
+false. For example:
 
     var tempSlow = new controls.Button({
         midi: [0x91, 0x44],
@@ -264,12 +264,13 @@ onlyOnPress property to false. For example:
         onlyOnPress: false,
     });
 
-The button's LED is sent the value of the `on` property when outCo \> 0
-and `off` when outCo \<= 0. By default, on is 127 (0x7F) and off is 0.
-For buttons/pads with multicolor LEDs, you can change the color of the
-LED by defining the `on` and `off` properties to be the MIDI value to
-send for that state. For example, if the LED turns red when sent a MIDI
-value of 127 and blue when sent a value of 126:
+The default `output` function sends the value of the `on` property as
+the third MIDI byte when outCo \> 0 and `off` when outCo \<= 0. By
+default, on is 127 (0x7F) and off is 0. For buttons/pads with multicolor
+LEDs, you can change the color of the LED by defining the `on` and `off`
+properties to be the MIDI value to send for that state. For example, if
+the LED turns red when sent a MIDI value of 127 and blue when sent a
+value of 126:
 
     MyController.padColors = {
         red: 127,
@@ -288,17 +289,20 @@ the subsections below. These make it easy to map those kinds of buttons
 without having to worry about particularities of Mixxx's ControlObjects
 that can make mapping them not so straightforward. The PlayButton,
 SyncButton, HotcueButton, and SamplerButton objects also provide
-alternate functionality for when a shift button is pressed.
+alternate functionality for when a shift button is pressed. To use
+these, you only need to specify their `midi` and `group` properties,
+except for HotcueButton and SamplerButton.
 
-By default, this works for controllers that send MIDI messages with a
+By default, Button works for controllers that send MIDI messages with a
 different 3rd byte of the MIDI message (value) to indicate the button
 being pressed/released, with the first two bytes (status and control)
 remaining the same for both press and release. If your controller sends
-separate MIDI note on/off messages with on indicated by the first nybble
-(hexadecimal digit) of the first (status) byte being 9 and note off with
-the first nybble being 8, in your script's init function, set
-Button.prototype.separateNoteOnOff to true and map both the note on and
-off messages in XML to the Button object's input property.
+separate MIDI note on/off messages with a button press indicated by the
+first nybble (hexadecimal digit) of the first (status) byte being 9 and
+a button release by the first nybble being 8, in your script's init
+function, set `control.Button.prototype.separateNoteOnOff = true;` and
+map both the note on and off messages in XML to the Button object's
+input property.
 
 ### PlayButton
 
@@ -367,18 +371,18 @@ example:
         });
     )};
 
-When the sampler is loaded, the LED will be set to the value of the "on"
-property. When the sampler is empty, the LED will be set to the value of
-the "off" property. These are inherited from Button.prototype if they
-are not manually specified. If your controller's pads have multicolor
-LEDs, specify the value to send for a different LED color with the
-playing property to set the LED to a different color while the sampler
-is playing. For example:
+When the sampler is loaded, the LED will be sent a MIDI message with the
+value of the `on` property (default 127) When the sampler is empty, the
+LED will be sent a MIDI message with the value of the `off` property
+(default 0). If your controller's pads have multicolor LEDs, specify the
+value to send for a different LED color with the `playing` property to
+set the LED to a different color while the sampler is playing. For
+example:
 
     MyController.padColors = {
     // These values are just examples, consult the MIDI documentation from your controller's
-    manufacturer to find the values for your controller. If that information is not available,
-    guess and check to find the values.
+    // manufacturer to find the values for your controller. If that information is not available,
+    // guess and check to find the values.
         red: 125,
         blue: 126,
         purple: 127,

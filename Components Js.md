@@ -565,8 +565,8 @@ need for your particular controller and assign your custom derivative's
 prototype to components.Deck. For example:
 
     MyController.init = function () {
-        this.leftDeck = new MyController.Deck([1, 2]);
-        this.rightDeck = new MyController.Deck([2, 4]);
+        this.leftDeck = new MyController.Deck([1, 2], 1);
+        this.rightDeck = new MyController.Deck([2, 4], 2);
     };
     MyController.Deck = function (deckNumbers, midiChannel) {
         // Call the Deck constructor to setup the currentDeck and deckNumbers properties.

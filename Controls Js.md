@@ -87,9 +87,10 @@ For example:
 
 ### Methods
 
-The following methods (in JavaScript, methods are just properties that
-happen to be functions) must be defined for every Control, but in most
-cases the defaults will work so you do not need to define them yourself:
+The following methods (in JavaScript, methods are just object properties
+that happen to be functions) must be defined for every Control, but in
+most cases the defaults will work so you do not need to define them
+yourself:
 
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)

@@ -11,6 +11,9 @@ if you're using VS 2005.) VS 2010 Express supports x64 projects out of
 the box (but it uses alot more resources than earlier versions due at
 least in part to its (needless) dependence on .NET 4.)
 
+To see the supported version of each library for a given Mixxx version,
+see [dependencies](dependencies).
+
 ## Qt
 
 [Qt](http://www.qt.io/download-open-source/) now provides pre-built

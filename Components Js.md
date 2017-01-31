@@ -59,9 +59,10 @@ MIDI signals in the XML file. For example:
 
 In the future Mixxx will be able to register MIDI inputs from
 JavaScript, so that will not be necessary. Until then, if you decide to
-rename a Component, you need to edit the XML file and reload the mapping
-in Mixxx's Preferences. The output does not need to be mapped in XML. It
-is handled by the library in JavaScript.
+rename a Component or map it to different MIDI signals, you need to edit
+the XML file and reload the mapping in Mixxx's Preferences. The output
+does not need to be mapped in XML. It is handled by the library in
+JavaScript.
 
 Create Components by calling the constructor with JavaScript's "new"
 keyword. The Component constructor takes a single argument. This is an

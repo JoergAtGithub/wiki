@@ -1,16 +1,16 @@
 # Components JS Library
 
 Components JS is a JavaScript library that makes it easier to code
-controller mappings for Mixxx. It lets you focus more on your mapping
-and less on the details of how Mixxx works. It is centered around
-JavaScript objects called Components that represent a physical component
-of a controller, such as a button, knob, encoder, or fader. Components
-provides generic functions that can be made to work for most use cases
-just by changing some attributes of the Component, without having to
-write many or any custom functions. The library also provides more
-specialized Components for common use cases. Components can be organized
-into ComponentContainer objects, making it easy to iterate over them and
-change their behavior to switch between different modes.
+controller mappings for Mixxx. It lets you focus more on your controller
+and less on the details MIDI signals and how Mixxx works. It is centered
+around JavaScript objects called Components that represent a physical
+component of a controller, such as a button, knob, encoder, or fader.
+Components provides generic functions that can be made to work for most
+use cases just by changing some attributes of the Component, without
+having to write many or any custom functions. The library also provides
+more specialized Components for common use cases. Components can be
+organized into ComponentContainer objects, making it easy to iterate
+over them and change their behavior to switch between different modes.
 
 To use the library, in the `<scriptfiles>` element at the top of your
 mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load

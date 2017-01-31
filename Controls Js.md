@@ -94,22 +94,26 @@ yourself:
 
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)
-  - **inValueScale**: called by the default `input` function, this
-    function takes the third byte of the incoming MIDI signal as its
-    first argument and returns the value to set `group`, `inCo` to
   - **output**: the [function that gets called when outCo changes
     value](midi%20scripting#Automatic%20reaction%20to%20changes%20in%20Mixxx).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
-  - **outValueScale**: called by the default `output` function, this
-    takes the value of `group`, `outCo` as its first argument and
-    returns the third byte of the outgoing MIDI signal
   - **connect**: register `output` as the callback function that gets
     executed when the value of `group`, `outCo` changes. Implement a
     custom function if you need to connect callbacks for multiple [Mixxx
     ControlObjects](mixxxcontrols) in one Control. Refer to the source
     code of [SamplerButton.prototype.connect](#SamplerButton) for an
     example.
+
+The following methods are called by the default `input` and `output`
+methods. If you do not need to implement complex custom behavior,
+overwrite these instead of the default `input` and `output` methods:
+
+  - **inValueScale**: takes the third byte of the incoming MIDI signal
+    as its first argument and returns the value to set `group`, `inCo`
+    to
+  - **outValueScale**: takes the value of `group`, `outCo` as its first
+    argument and returns the third byte of the outgoing MIDI signal
 
 Each Control also has these methods that you probably should not
 overwrite:

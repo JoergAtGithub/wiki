@@ -24,6 +24,14 @@ which is why they both need to be loaded. Importing the
 midi-components-0.0.js file makes the library accessible by an object
 called `components` (plural, lower case).
 
+If you are not familiar with object oriented programming in JavaScript,
+read Mozilla Developer Network's [Object-oriented JavaScript
+introduction](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS).
+If you are familiar with OOP in other languages but new to JavaScript,
+you can skip ahead to the [Constructors and object
+instances](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS#Constructors_and_object_instances)
+section of that tutorial.
+
 ## Component
 
 A Component represents a physical component of a controller, such as a

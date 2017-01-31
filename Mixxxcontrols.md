@@ -11,8 +11,8 @@ A control is identified by a "group" (which is used for grouping
 associated controls) and a "key" (the name of the individual control).
 
 For example, the volume fader for Deck 1 is identified by the group
-"\[Channel1\]" and key "volume". Similarly, the volume fader for Sampler
-1 is identified by the group "\[Sampler1\]" and key "volume".
+`[Channel1]` and key `volume`. Similarly, the volume fader for Sampler 1
+is identified by the group `[Sampler1]` and key `volume`.
 
 The group is used to collect all the controls that affect one component
 of Mixxx into one collection. Some groups have a high overlap of
@@ -21,8 +21,8 @@ the same control keys).
 
 In addition to controlling Mixxx, the control system can be used to
 inspect Mixxx's state. For example, the sample rate of the track loaded
-in Deck 1 can be accessed via the "\[Channel1\]", "track\_samplerate"
-control. You can read the "\[Channel3\]", "play" control to determine
+in Deck 1 can be accessed via the `[Channel1]`, `track_samplerate`
+control. You can read the `[Channel3]`, `play` control to determine
 whether Deck 3 is playing.
 
 The following tables list the keys associated with each group.
@@ -68,6 +68,10 @@ The following extensions add some features to ControlPotMeter controls
 
 ### \[Master\]
 
+The `[Master]` group generally corresponds to controls that affect the
+mixing engine. This will bear some similarity to what you will find on a
+DJ mixer (e.g. crossfader controls, headphone cueing controls, etc.).
+
 |  | Key/Control                          |  | Range          |  | What it does                                                                                                                                                        |  | On-screen feedback               |  |
 |  | ------------------------------------ |  | -------------- |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | -------------------------------- |  |
 |  | audio\_latency\_usage\[7\]           |  | 0 .. 25 %      |  | Reflects fraction of latency, given by the audio buffer size, spend for audio processing inside Mixxx. At value near 25 % there is a high risk of buffer underflows |  | latency meter                    |  |
@@ -100,7 +104,9 @@ The following extensions add some features to ControlPotMeter controls
 
 ### \[ChannelN\]
 
-Below, *N*=1 up to the number of active decks/samplers\[21\].
+The `[ChannelN]` group is for each deck in Mixxx. Whenever you see
+`[ChannelN]`, think "Deck N". N can range from 1 to the number of active
+decks in Mixxx.\[21\]
 
 | Key/Control                              |  | Range                |  | What it does                                                                                                                                                                                                                                                                                      |  | On-screen feedback                                                                                                                                                           |  |
 | ---------------------------------------- |  | -------------------- |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
@@ -232,17 +238,20 @@ Below, *N*=1 up to the number of active decks/samplers\[21\].
 
 ### \[SamplerN\]
 
-All Sampler controls are the same as for *Channel* above. Just replace
-`[ChannelN]` with `[SamplerN]`.
+Sample decks ("samplers") in Mixxx are identical to decks, they simply
+have a different purpose (playing samples). Any control listed above for
+`[ChannelN]` will work for a sampler, just replace `[ChannelN]` with
+`[SamplerN]`.
 
 |  | Key/Control                        |  | Range  |  | What it does                                                                                               |  | On-screen feedback                                            |  |
 |  | ---------------------------------- |  | ------ |  | ---------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------- |  |
 |  | \[Sampler\],SaveSamplerBank\[109\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
 |  | \[Sampler\],LoadSamplerBank\[110\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
 
-### \[PreviewDeck\]
+### \[PreviewDeckN\]
 
-PreviewDeck controls are the same as for *Channel above*. Just replace
+Preview decks in Mixxx are identical to regular decks. Any control
+listed above for `[ChannelN]` will work for a preview deck, just replace
 `[ChannelN]` with `[PreviewDeckN]`.
 
 ### \[VinylControl\]

@@ -24,10 +24,6 @@ which is why they both need to be loaded. Importing the
 midi-controls-0.0.js file makes the library accessible by an object
 called `control` (lower case).
 
-This documentation is a work in progress. Not every capability of the
-library is fully documented yet. Refer to the source code of the library
-if in doubt.
-
 ## Control
 
 A Control represents a physical component on a controller, such as a

@@ -73,12 +73,15 @@ way. Most Components need at least these properties defined:
 
   - **midi** (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state
-  - **group** (string): the group that both the inKey and outKey
-    manipulate, for example `'[Channel1]`' for deck 1
-  - **inKey** (string): the [Mixxx ControlObject](mixxxcontrols) that
-    this Component manipulates when it receives a MIDI input signal
-  - **outKey** (string): when this [Mixxx ControlObject](mixxxcontrols)
-    changes value, the `output` function will be called
+  - **group** (string): the group of the [Mixxx
+    ControlObjects](mixxxcontrols) for both inKey and outKey, for
+    example \[Channel1\] for deck 1
+  - **inKey** (string): the key of the [Mixxx
+    ControlObject](mixxxcontrols) that this Component manipulates when
+    it receives a MIDI input signal
+  - **outKey** (string): when the [Mixxx ControlObject](mixxxcontrols)
+    specified by this key changes value, the `output` function will be
+    called
 
 For example:
 

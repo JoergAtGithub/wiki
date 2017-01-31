@@ -93,8 +93,8 @@ For example:
     });
 
 If `inKey` and `outKey` are the same, you can specify `key` in the
-options object for the constructor to set both `inKey` and `outKey`. For
-example:
+options object for the constructor to set both the `inKey` and `outKey`
+properties of the new Component. For example:
 
     var quantizeButton = new components.Button({
         midi: [0x91, 0x01],

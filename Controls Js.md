@@ -418,7 +418,7 @@ turn:
         midi: [0xB1, 0x03],
         group: '[Channel1]',
         inCo: 'pregain',
-        input: function (channel, control, value, status, group)) {
+        input: function (channel, control, value, status, group) {
             if (value === 1) {
                 this.setParameterIn(this.getParameterIn() - .05);
             } else if (value === 127) {

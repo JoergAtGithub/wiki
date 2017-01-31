@@ -427,7 +427,7 @@ to indicate whether it turns right or left, you will need to define your
 own `input` function. For example, for an encoder that sends a value of
 1 when it is turned left and a value of 127 when it is turned right:
 
-    MyController.SomeEncoder = new control.Encoder({
+    MyController.SomeEncoder = new controls.Encoder({
         midi: [0xB1, 0x03],
         group: '[Channel1]',
         inCo: 'pregain',

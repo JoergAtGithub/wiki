@@ -400,9 +400,8 @@ example:
 ## Pot
 
 A Pot is a Control subtype for potentiometers (faders and knobs) with
-finite ranges, although it can be adapted for infintely turning
-encoders. Pot's `connect` and `disconnect` methods take care of soft
-takeover when switching layers with
+finite ranges. Pot's `connect` and `disconnect` methods take care of
+soft takeover when switching layers with
 [ControlContainer's](#ControlContainer) `reconnectControls` or
 `applyLayer` methods. Soft takeover is not activated until the first
 input signal is received, so it does not interfere with setting initial

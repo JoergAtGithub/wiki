@@ -443,57 +443,40 @@ separate Button Control to handle the MIDI signals from pushing it.
 
 ## ControlContainer
 
-A ControlContainer is an object that contains Controls as properties,
-with methods to help iterate over those Controls. Documentation for each
-method is below.
+A ControlContainer is an object that contains Controls as properties. It
+has methods to help iterate over those Controls:
 
-### forEachControl
-
-Iterate over all Controls in this ControlContainer and perform an
-operation on them.
-
-Function arguments:
-
-1.  operation, function that takes 1 argument: the function to call for
-    each Control. Takes each Control as its first argument. "this" in
-    the context of the function refers to the ControlContainer.
-2.  recursive, boolean, optional: whether to call forEachControl
-    recursively for each ControlContainer within this ControlContainer.
-    Defaults to true if ommitted.
-
-### reconnectControls
-
-Disconnect and reconnect output callbacks for each Control. Optionally
-perform an operation on each Control between disconnecting and
-reconnecting the output callbacks. Arguments are the same as
-[\#forEachControl](#forEachControl).
-
-### shift
-
-Call each Control's shift() function if it exists. This iterates
-recursively on any Controls in ControlContainers that are properties of
-this, so there is no need to call shift() on each child
-ControlContainer. This function takes no arguments.
-
-### unshift
-
-Call each Control's unshift() function if it exists. This iterates
-recursively on any Controls in ControlContainers that are properties of
-this, so there is no need to call unshift() on each child
-ControlContainer. This function takes no arguments.
-
-### applyLayer
-
-Activate a new layer of functionality. Layers are merely objects with
-properties to overwrite the properties of the Controls within this
-ControlContainer. Layer objects are deeply merged. If a new layer does
-not define a property for a Control, the Control's old property will be
-retained.
+  - **forEachControl**: Iterate over all Controls in this
+    ControlContainer and perform an operation on them. The operation is
+    a function provided as the first argument to `forEachControl`. The
+    operation function takes each Control as its first argument. In the
+    context of the operation function, `this` refers to the
+    ControlContainer. `forEachControl` iterates recursively through the
+    Controls in any ControlContainers that are properties of this
+    ControlContainer. If you do not want `forEachControl` to operate
+    recursively, pass `false` as the second argument to
+    `forEachControl`.
+  - **reconnectControls**: Disconnect and reconnect output callbacks for
+    each Control. Optionally perform an operation on each Control
+    between disconnecting and reconnecting the output callbacks.
+    Arguments are the same as `forEachControl`.
+  - **shift**: Call each Control's `shift` method if it exists. This
+    iterates recursively on any Controls in ControlContainers that are
+    properties of this ControlContainer, so there is no need to call
+    `shift` on each child ControlContainer. This function takes no
+    arguments.
+  - **unshift**: same as `shift`, but call each Control's `unshift`
+    method
+  - **applyLayer**: Activate a new layer of functionality. Layers are
+    merely objects with properties to overwrite the properties of the
+    Controls within this ControlContainer. Layer objects are deeply
+    merged. If a new layer does not define a property for a Control, the
+    Control's old property will be retained.
 
 In the most common case, for providing alternate functionality when a
-shift button is pressed, using `applyLayer()` is likely overcomplicated
-and may be slow. Use `shift()`/`unshift()` instead. ''applyLayer() ''may
-be useful for cycling through more than two alternate layers.
+shift button is pressed, using `applyLayer` is likely overcomplicated
+and may be slow. Use `shift`/`unshift` instead. `applyLayer` may be
+useful for cycling through more than two alternate layers.
 
 For example:
 
@@ -502,10 +485,10 @@ For example:
         anotherButton: { outCo: 'alternate outCo' }
     });
 
-By default, the old layer's output callbacks are disconnected and the
-new layer's output callbacks are connected. To avoid this behavior,
+By default, `applyLayer` disconnects old layer's output callbacks and
+the new layer's output callbacks are connected. To avoid this behavior,
 which would be desirable if you are not changing any output
-functionality, pass false as the second argument to applyLayer().
+functionality, pass `false` as the second argument to `applyLayer`.
 
 ## Deck
 

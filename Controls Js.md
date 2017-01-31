@@ -22,7 +22,7 @@ the Lodash library and the Controls library:
 Controls JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded. Importing the
 midi-controls-0.0.js file makes the library accessible by an object
-called `control` (lower case).
+called `controls` (lower case).
 
 ## Control
 
@@ -32,9 +32,9 @@ needed to receive MIDI input from that component and send MIDI signals
 out to the controller to activate its LED(s). In general, you should not
 use Control directly; instead, use one of its subtypes
 ([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
-do need to use Control directly, do not confuse it with the `control`
+do need to use Control directly, do not confuse it with the `controls`
 object that contains all the objects for the library; access Control as
-`control.Control`.
+`controls.Control`.
 
 Controls should generally be properties of a
 [\#ControlContainer](#ControlContainer) object. Most Controls should be

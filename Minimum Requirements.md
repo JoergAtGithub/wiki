@@ -53,7 +53,7 @@ source](start#compile_mixxx_from_source_code).
 <tr class="odd">
 <td>OS Version</td>
 <td>Windows XP</td>
-<td>OS X 10.7</td>
+<td>OS X 10.8</td>
 <td>Ubuntu 14.04 (Trusty)</td>
 </tr>
 <tr class="even">

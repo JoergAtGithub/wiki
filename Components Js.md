@@ -669,9 +669,9 @@ around the CHANNEL\_NAME).
 To map an EffectUnit for your controller, call the constructor with the
 unit number of the effect unit as the only argument. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and
-optionally enableOnChannelButtons. After the midi attributes are set up,
-call the EffectUnit's `init` method to set up the output callbacks. For
-example:
+optionally enableOnChannelButtons. After the `midi` attributes are set
+up, call the EffectUnit's `init` method to set up the output callbacks.
+For example:
 
     MyController.effectUnit = new components.EffectUnit(1);
     MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];

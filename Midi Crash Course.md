@@ -23,8 +23,8 @@ controllers are USB MIDI class compliant, but not all. See the [Mixxx DJ
 Hardware Guide](hardware%20compatibility) for information about
 particular controllers.
 
-Mixxx displays the numbers in MIDI signals in hexidecimal. If you are
-unfamiliar with hexidecimal numbers, read [this
+Mixxx displays the numbers in MIDI signals in hexadecimal. If you are
+unfamiliar with hexadecimal numbers, read [this
 tutorial](http://codemastershawn.com/2014/04/03/understanding-binary-and-hex-numbers).
 
 An explanation of the MIDI signals that your controller sends to
@@ -210,7 +210,7 @@ bytes by spaces. For example:
     amidi -p hw:1,0,0 -S "b0 02 7f"
 
 The program `aseqdump` works similarly, but is a bit more verbose than a
-series of hexidecimal numbers:
+series of hexadecimal numbers:
 
     $ aseqdump -l
      Port    Client name                      Port name

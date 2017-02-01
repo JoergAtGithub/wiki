@@ -209,8 +209,7 @@ sufficient. As an example, here is the source code for PlayButton:
 
 In more complex cases, overwriting the `input` and `output` functions
 may be required. Refer to the source code of
-[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
-examples.
+[\#SamplerButton](#SamplerButton) for an example.
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists (otherwise, in the above example for
@@ -231,6 +230,13 @@ distracting if the user is pressing shift to use the shifted
 functionality of a different part of the controller. For layers that
 stay activated after a button is released, this is not as much of an
 issue.
+
+To handle the interaction of shifted and unshifted states with another
+layer, you can create another system of methods for each Component that
+changes properties of the Component when a layer is activated, and
+within those methods, you can change the `shift` and `unshift` of the
+Component. Refer to the source code of [\#EffectUnit](#EffectUnit) for
+an example.
 
 ### Optional properties
 

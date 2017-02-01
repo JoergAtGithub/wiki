@@ -270,7 +270,7 @@ following options as appropriate:
     channel or control number by
 
 To avoid having to define those properties for every Component, you can
-change the properties of components.Component.prototype in your
+change the properties of `components.Component.prototype` in your
 controller's `init` function. For example:
 
     components.Component.prototype.shiftOffset = 3;

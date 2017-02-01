@@ -63,6 +63,8 @@ please fix it.
   - [Controller scripting with JavaScript](midi%20scripting): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
+  - [Components JS](Components%20JS): JavaScript library to help with
+    writing mapping scripts
   - [Contributing mappings](Contributing%20mappings): describes how to
     get your mapping included in Mixxx
   - [Controller mapping file

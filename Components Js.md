@@ -208,8 +208,9 @@ sufficient. As an example, here is the source code for PlayButton:
     });
 
 In more complex cases, overwriting the `input` and `output` functions
-may be required. Refer to [\#SamplerButton](#SamplerButton) and
-[\#EffectUnit](#EffectUnit) for examples.
+may be required. Refer to the source code of
+[\#SamplerButton](#SamplerButton) and [\#EffectUnit](#EffectUnit) for
+examples.
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists (otherwise, in the above example for

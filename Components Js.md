@@ -12,9 +12,11 @@ more specialized Components for common use cases. Components can be
 organized into ComponentContainer objects, making it easy to iterate
 over them and change their behavior to switch between different modes.
 
-To use the library, in the `<scriptfiles>` element at the top of your
-mapping's [XML file](MIDI%20controller%20mapping%20file%20format), load
-the Lodash library and the Components library:
+Components JS is new in Mixxx 2.1 and does not work with older versions
+of Mixxx. To use the library, in the `<scriptfiles>` element at the top
+of your mapping's [XML
+file](MIDI%20controller%20mapping%20file%20format), load the Lodash
+library and the Components library:
 
     <file filename="lodash.mixxx.js"/>
     <file filename="midi-components-0.0.js"/>

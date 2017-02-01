@@ -83,7 +83,9 @@ subtypes work the same way. Most Components need at least these
 properties defined:
 
   - **midi** (array with 2 numbers): the first two MIDI bytes that the
-    controller sends/receives when the physical component changes state
+    controller sends/receives when the physical component changes state.
+    Refer to the [MIDI Crash Course](MIDI%20Crash%20Course) if you do
+    not understand what this means.
   - **inKey** (string): the key of the [Mixxx
     ControlObject](mixxxcontrols) that this Component manipulates when
     it receives a MIDI input signal

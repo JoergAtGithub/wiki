@@ -74,6 +74,8 @@ in JavaScript.
 
 Create Components by calling the constructor with JavaScript's "new"
 keyword. The Component constructor takes a single object as an argument.
+Generally you should provide this as an [object
+literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals).
 Each property of that object passed to the constructor becomes a
 property of the new Component object, making it easy to customize the
 functionality of the Component. The constructors for all Component

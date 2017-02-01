@@ -13,7 +13,7 @@ to run Mixxx without requiring installing any software on the computer.
     BitTorrent](http://linuxtracker.org/index.php?page=torrent-details&id=054465878ca40308a585654d3859786dfd79f133)
   - [Savannah project
     page](https://savannah.nongnu.org/projects/crossfade)
-  - [Techical
+  - [Technical
     support](https://savannah.nongnu.org/support/?group=crossfade)
   - [Bug tracker](https://savannah.nongnu.org/bugs/?group=crossfade)
 
@@ -41,6 +41,9 @@ filesystem backup program, and MATE Disk Usage Analyzer. Crossfade
 GNU/Linux is a Fedora® Remix containing software from sources other than
 Fedora, namely RPMFusion and PlanetCCRMA, as well as scripts and
 configuration specific to Crossfade GNU/Linux.
+
+Crossfade 0.90 is based on Fedora 21 and uses Mixxx 1.11. If you would
+like to update it, please contribute\!
 
 ## DidJiX
 

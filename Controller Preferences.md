@@ -4,6 +4,7 @@ Author: Owen Williams
 
 [Launchpad
 Blueprint](https://blueprints.launchpad.net/mixxx/+spec/controller-options)
+[Proof of Concept](https://github.com/ywwg/mixxx/tree/controller-prefs)
 
 ## Background
 

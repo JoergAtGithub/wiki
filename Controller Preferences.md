@@ -2,9 +2,12 @@
 
 Author: Owen Williams
 
-[Launchpad
-Blueprint](https://blueprints.launchpad.net/mixxx/+spec/controller-options)
-[Proof of Concept](https://github.com/ywwg/mixxx/tree/controller-prefs)
+  - [Launchpad
+    Blueprint](https://blueprints.launchpad.net/mixxx/+spec/controller-options)
+  - [Proof of
+    Concept](https://github.com/ywwg/mixxx/tree/controller-prefs)
+  - [Original Google
+    Doc](https://docs.google.com/document/d/1eWOB2IOrM5fCtAc-iZCVrjxMJ3nBPAX9p2IcglXAk2o/edit?usp=sharing)
 
 ## Background
 

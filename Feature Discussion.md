@@ -6,6 +6,7 @@ page.
 
 ## Specifications for planned features
 
+  - [Controller Preferences](Controller%20Preferences)
   - [Mixxx Init Refactor](Mixxx%20Init%20Refactor)
   - [Controller Script Modules](Controller%20Script%20Modules)
   - [hid\_device\_api](hid_device_api)

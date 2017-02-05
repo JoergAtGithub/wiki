@@ -28,14 +28,23 @@ world-class application, somewhat in order of importance:
 
 ## Release Schedule
 
+### 2.2
+
+  - [2.2.0 Milestone on
+    Launchpad](https://launchpad.net/mixxx/+milestone/2.2.0)
+  - Beta Date
+  - Goal: July 1, 2017
+  - Release Date
+  - Goal: August 1, 2017
+
 ### 2.1
 
   - [2.1.0 Milestone on
     Launchpad](https://launchpad.net/mixxx/+milestone/2.1.0)
   - Beta Date
-  - Goal: February 1, 2016
+  - Goal: February 5, 2017
   - Release Date
-  - Goal: March 1, 2016
+  - Goal: April 1, 2017
 
 #### Feature Targets
 

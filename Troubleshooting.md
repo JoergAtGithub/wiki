@@ -170,13 +170,13 @@ on multiple operating systems, to use ALSA's plughw devices rather than
 hw. plughw automatically converts audio streams to a sample format
 supported by the sound card.
 
-## I can't plug in my headphones and speakers at the same time
+## I can't preview tracks in headphones
 
 This requires either a sound card with 4 (mono) output channels,
 multiple sound cards, or a DJ splitter cable. See the [DJ Hardware
-Guide](hardware%20compatibility) for more information.
-
-## I pressed the headphone button but I still hear that deck on the main output
+Guide](hardware%20compatibility) for more information. Both the Master
+and Headphones outputs must be configured in the Sound Hardware section
+of Options \> Preferences.
 
 To make the track playing in your headphones not play on the main
 output, turn the volume down on the deck you do not want your audience

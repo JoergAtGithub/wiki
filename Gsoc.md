@@ -121,7 +121,8 @@ Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 
 ### 2007
 
-The following students were accepted for Google Summer of Code 2007:
+The following students were accepted for [Google Summer of
+Code 2007](https://mixxxblog.blogspot.com/2007/08/google-summer-of-code-2007-and-mixxx.html):
 
   - Pawel Bartkiewicz
   - Micah Lee

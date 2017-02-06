@@ -118,3 +118,14 @@ The following projects were accepted for Google Summer of Code 2008:
     Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
 
 Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
+
+### 2007
+
+The following students were accepted for Google Summer of Code 2007:
+
+  - Pawel Bartkiewicz
+  - Micah Lee
+  - Nathan Prado
+
+They worked on improved BPM detection, LADSPA support, and a more
+functional library/playlist interface.

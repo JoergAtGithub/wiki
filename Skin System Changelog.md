@@ -1,6 +1,6 @@
 # Skin System Changelog
 
-## Mixxx 2.10.0
+## Mixxx 2.1.0
 
 ``` 
  * Added [[creating_skins#EffectSelector|<EffectSelector>]] widget that allows to select effects from alphabetically ordered lists of available effects.[[https://github.com/mixxxdj/mixxx/pull/1135|pull#1135]]
@@ -8,7 +8,7 @@
  * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]]
 ```
 
-## Mixxx 2.00.0
+## Mixxx 2.0.0
 
 ``` 
  * Allow each child of a [[creating_skins#widgetstack|<WidgetStack>]] to specify which page is show on hide. See [[https://github.com/mixxxdj/mixxx/pull/576|pull#576]]

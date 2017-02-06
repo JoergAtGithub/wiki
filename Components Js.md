@@ -304,11 +304,11 @@ instead of
 ## Button
 
 A Button is a subtype of Component for buttons/pads. Button subtypes are
-provided for many common use cases, documented in the subsections below.
-These make it easy to map those kinds of buttons without having to worry
-about particularities of Mixxx's ControlObjects. To use the Button
-subtypes, you only need to specify their `midi` and `group` properties,
-except for HotcueButton and SamplerButton.
+provided for many common use cases, documented in the subsections below,
+making it easy to map those buttons without having to worry about
+particularities of Mixxx's ControlObjects. To use the Button subtypes,
+you only need to specify their `midi` and `group` properties, except for
+HotcueButton and SamplerButton.
 
 A generic Button toggles the state of a binary `inKey` and sends
 outgoing MIDI messages indicating whether a binary `outKey` is on or

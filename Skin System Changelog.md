@@ -3,8 +3,9 @@
 ## Mixxx 2.10.0
 
 ``` 
+ * Added [[creating_skins#EffectSelector|<EffectSelector>]] widget that allows to select effects from alphabetically ordered lists of available effects.[[https://github.com/mixxxdj/mixxx/pull/1135|pull#1135]]
  * Added support for collapsible [[creating_skins#splitter|<Splitter>]] children. [[https://github.com/mixxxdj/mixxx/pull/917|pull#917]]
- * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. See [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]].
+ * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]]
 ```
 
 ## Mixxx 2.00.0

@@ -303,9 +303,9 @@ instead of
 
 ## Button
 
-A Button is a subtype of Component for buttons/pads. Button subtypes are
-provided for many common use cases, documented in the subsections below,
-making it easy to map those buttons without having to worry about
+A Button is a subtype of Component for buttons/pads. Subtypes of Button
+are provided for many common use cases, documented in the subsections
+below, making it easy to map those buttons without having to worry about
 particularities of Mixxx's ControlObjects. To use the Button subtypes,
 you only need to specify their `midi` and `group` properties, except for
 HotcueButton and SamplerButton.

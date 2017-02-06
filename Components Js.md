@@ -303,34 +303,35 @@ instead of
 
 ## Button
 
-A Button is a subtype of Component for buttons/pads.
+A Button is a subtype of Component for buttons/pads. Button subtypes are
+provided for many common use cases, documented in the subsections below.
+These make it easy to map those kinds of buttons without having to worry
+about particularities of Mixxx's ControlObjects. To use the Button
+subtypes, you only need to specify their `midi` and `group` properties,
+except for HotcueButton and SamplerButton.
 
-For example:
+A generic Button toggles the state of a binary `inKey` and sends
+outgoing MIDI messages indicating whether a binary `outKey` is on or
+off. Button adds the following properties to Component:
 
-    var quantize = new components.Button({
-        midi: [0x91, 0x01],
-        group: '[Channel1]',
-        co: 'quantize',
-    });
+  - **onlyOnPress** (boolean, default true): whether to toggle `group`,
+    `inKey` only when the button is pressed (when onlyOnPress is true),
+    or respond both when the button is pressed and released (when
+    onlyOnPress is false)
+  - **on** (number, default 127): number to send as the third byte of
+    outgoing MIDI messages when `group`, `outKey` is on (its value is \>
+    0)
+  - **off** (number, default 0): number to send as the third byte of
+    outgoing MIDI messages when `group`, `outKey` is off (its value is
+    0)
+  - **isPress** (function): function that takes the same first 4
+    arguments as a MIDI input function (channel, control, value, status)
+    and returns a boolean indicating whether the button was pressed.
 
-Button's `input` function toggles the value of `group`, `inKey` when the
-button is pressed, but not when the button is released. For buttons that
-toggle `inKey` when they are pressed and released, set the onlyOnPress
-property to false. For example:
-
-    var tempSlow = new components.Button({
-        midi: [0x91, 0x44],
-        inKey: 'rate_temp_down',
-        onlyOnPress: false,
-    });
-
-Button's `output` function sends the value of the `on` property as the
-third MIDI byte when outKey \> 0 and `off` when outKey \<= 0. By
-default, `on` is 127 (0x7F) and `off` is 0. For buttons/pads with
-multicolor LEDs, you can change the color of the LED by defining the
-`on` and `off` properties to be the MIDI value to send for that state.
-For example, if the LED turns red when sent a MIDI value of 127 and blue
-when sent a value of 126:
+For buttons/pads with multicolor LEDs, you can change the color of the
+LED by defining the `on` and `off` properties to be the MIDI value to
+send for that state. For example, if the LED turns red when sent a MIDI
+value of 127 and blue when sent a value of 126:
 
     MyController.padColors = {
         red: 127,
@@ -339,29 +340,25 @@ when sent a value of 126:
     MyController.quantize = new components.Button({
         midi: [0x91, 0x01],
         group: '[Channel1]',
-        co: 'quantize',
+        key: 'quantize',
         on: MyController.padColors.red,
         off: MyController.padColors.blue,
     });
 
-Derivative Buttons are provided for many common use cases, documented in
-the subsections below. These make it easy to map those kinds of buttons
-without having to worry about particularities of Mixxx's ControlObjects.
-The PlayButton, SyncButton, HotcueButton, and SamplerButton objects also
-provide alternate functionality for when a shift button is pressed. To
-use these, you only need to specify their `midi` and `group` properties,
-except for HotcueButton and SamplerButton.
+The default `isPress` function works for controllers that indicate
+whether a button is pressed or released by sending a different third
+MIDI byte (value). Some controllers distinguish between a button press
+and release by changing the first nybble (hexadecimal digit) of the
+first byte of the MIDI message, also known as an opcode. These
+controllers typically use an opcode of 9 to indicate a button press and
+8 to indicate a button release. Both the press and release signals need
+to be mapped in the XML file to the Button's `input` method. To make
+Button work for such a controller, overwrite the prototype `isPress`
+function in your mappings's `init` function:
 
-By default, Button works for controllers that send MIDI messages with a
-different 3rd byte of the MIDI message (value) to indicate the button
-being pressed/released, with the first two bytes (status and control)
-remaining the same for both press and release. If your controller sends
-separate MIDI note on/off messages with a button press indicated by the
-first nybble (hexadecimal digit) of the first (status) byte being 9 and
-a button release by the first nybble being 8, in your script's init
-function, set `component.Button.prototype.separateNoteOnOff = true;` and
-map both the note on and off messages in XML to the Button object's
-input property.
+    components.Button.prototype.isPress = function (channel, control, value, status) {
+        return (status & 0xF0) === 0x90;
+    }
 
 ### PlayButton
 

@@ -3001,7 +3001,7 @@ Example definition:
 
 ### Battery
 
-New in Mixxx 2.10.0
+New in Mixxx 2.1.0
 
 A a widget to show the laptop battery status.
 

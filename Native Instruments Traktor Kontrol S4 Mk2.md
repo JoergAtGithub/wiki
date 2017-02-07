@@ -2,11 +2,17 @@
 
 [[/media/native_instrument_traktor_s4-mkii-1.jpg|native\_instrument\_traktor\_s4-mkii-1.jpg]]
 
-The Kontrol S4 MK2 is one of the most popular DJ controllers. The MK2
-has substantial improvements over the previous S4 MK1, including large
-multicolor buttons for easier visibility. The MK1 is not supported and
+  - [Manufacturer's product
+    page](https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-s4/)
+
+The Kontrol S4 MK2 is a 4 deck all-in-one controller with a built in
+sound card. The MK2 has substantial improvements over the previous S4
+MK1, including large multicolor buttons. The MK1 is not supported and
 cannot be supported because it uses a proprietary communication
 protocol. The MK2 uses the open HID standard, so it can work with Mixxx.
+The easiest way to tell the MK1 apart from the MK2 is the appearance of
+the jog wheel. On the MK1, the top of the jog wheel is black plastic; on
+the MK2, the top of the jog wheel is aluminum.
 
 Most of the functions are mapped as they appear on the device and most
 Traktor users shouldn't have a problem picking up and using the

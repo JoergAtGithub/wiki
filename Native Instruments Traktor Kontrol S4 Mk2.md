@@ -22,6 +22,14 @@ guide is not a replacement for the [Mixxx
 Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
 here ("What is keylock?") are addressed there.
 
+The phono inputs on the S4 can be used with turntables for timecode
+vinyl control of Mixxx. Unlike Traktor, there is no additional software
+to install to use timecode with the S4; the free version of Mixxx is the
+full version. However, note that Mixxx is not compatible with Traktor
+Scratch Mk2 timecode; refer to the [Mixxx
+manual](http://mixxx.org/manual/latest/chapters/vinyl_control.html#supported-timecode-media)
+for a list of support types of timecode.
+
 ### Loading the Mapping
 
 To load the S4 mapping:

@@ -25,9 +25,10 @@ wheel is shiny aluminum.
 
 ### Controller
 
-The Kontrol S4 MK2 is compatible with Mixxx without any proprietary
-drivers on GNU/Linux and Mac OS X. On Windows, it is recommended to
-install the [driver from Native
+The Kontrol S4 MK2 is a USB class compliant audio, HID, and MIDI device,
+so it is compatible with Mixxx without any proprietary drivers on
+GNU/Linux and Mac OS X. On Windows, it is recommended to install the
+[driver from Native
 Instruments](https://www.native-instruments.com/en/support/downloads/drivers-other-files/)
 and select the ASIO sound API in the Sound Hardware section of Mixxx's
 Preferences.

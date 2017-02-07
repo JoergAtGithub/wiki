@@ -136,28 +136,34 @@ loading the snd-seq-midi module manually.
 If your controller does not appear in the list of controllers on the
 left pane of Mixxx's Preferences (under the "Controllers" section),
 Mixxx may not have permission to use your HID or USB Bulk device. (Mixxx
-will say something to this effect in the log when it scans for HID
-devices.) As of version 2.0, Mixxx should automatically install a udev
+will say something to this effect in the
+[log](#Troubleshooting-other-issues-\(Finding-the-mixxx.log-file\)) when
+it scans for controllers.) Mixxx should automatically install a udev
 rule to give users in the group called "users" permission to use HID and
-USB Bulk devices.
+USB Bulk devices. It is installed with the Ubuntu PPA and RPMFusion
+package as well as when installing Mixxx from source (if you have write
+access to /etc/udev/rules.d when running `scons install`), however
+packages for other distributions may not install it correctly.
 
-First, check that your user account is in the group "users". Open a
-console and run the command `groups` to find out what groups your user
+The udev rule works for old Hercules USB Bulk controllers, but the rule
+file included in Mixxx 2.0 has a bug that prevents it from working for
+HID devices. If you did not install Mixxx from the Ubuntu PPA or
+RPMFusion, or if you have an HID device such as a Native Instruments
+Traktor controller (refer to the [DJ Hardware
+Guide](hardware%20compatibility) for information about what
+communication protocol your controller uses), you will first need to
+save save [this
+file](https://raw.githubusercontent.com/Be-ing/mixxx/d8bfd189923cfaa22000cbb61041130d6dd7dba3/res/linux/mixxx.usb.rules)
+to /etc/udev/rules.d/mixxx.usb.rules . You will need root privileges
+(use \`\`sudo\`\` or \`\`su\`\`) to copy the file to that location.
+Then, restart your computer.
+
+If you still do not see your controller on the left side of Mixxx's
+Preferences, check that your user account is in the group "users". Open
+a console and run the command `groups` to find out what groups your user
 is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
 as root to add YOUR-USER-NAME to the "users" group, log out, and log
 back in.
-
-If you still cannot activate your controller, check that the udev rule
-was installed in /lib/udev/rules.d/ or /etc/udev/rules.d/ . The file
-should be called something like mixxx.usb.rules or 40-mixxx-usb.rules.
-It is installed with the Ubuntu PPA and RPMFusion package as well as
-when installing Mixxx from source (if you have write access to
-/etc/udev/rules.d when running `scons install`), however packages for
-other distributions may not install it correctly. If that file is
-missing, save [the udev
-rule](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
-in /etc/udev/rules.d/ and run `/etc/init.d/udev restart` as root or
-restart your computer.
 
 ## Mixxx says my sound card does not support the sample format
 

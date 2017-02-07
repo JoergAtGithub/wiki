@@ -14,6 +14,20 @@ The easiest way to tell the MK1 apart from the MK2 is the appearance of
 the jog wheel. On the MK1, the top of the jog wheel is black plastic; on
 the MK2, the top of the jog wheel is aluminum.
 
+The Kontrol S4 MK2 is compatible with Mixxx without any proprietary
+drivers on GNU/Linux and Mac OS X. On Windows, it is recommended to
+install the [driver from Native
+Instruments](https://www.native-instruments.com/en/support/downloads/drivers-other-files/)
+and select the ASIO sound API in the Sound Hardware section of Mixxx's
+Preferences.
+
+With the S4 plugged in, a MIDI device is listed as an available
+controller in Mixxx's Preferences. That is the MIDI input/output ports
+on the back of the S4 for connecting external MIDI gear; no mapping for
+the S4 will appear in the menu for the MIDI device. The controller uses
+HID, so the mapping can only be loaded when you select the HID device on
+the left side of Mixxx's Preferences.
+
 Most of the functions are mapped as they appear on the device and most
 Traktor users shouldn't have a problem picking up and using the
 controller right away. While there's a lot of overlap between Mixxx and
@@ -28,7 +42,7 @@ to install to use timecode with the S4; the free version of Mixxx is the
 full version. However, note that Mixxx is not compatible with Traktor
 Scratch Mk2 timecode; refer to the [Mixxx
 manual](http://mixxx.org/manual/latest/chapters/vinyl_control.html#supported-timecode-media)
-for a list of support types of timecode.
+for a list of supported types of timecode.
 
 ### Loading the Mapping
 

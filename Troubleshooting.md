@@ -143,7 +143,7 @@ rule to give users in the group called "users" permission to use HID and
 USB Bulk devices. It is installed with the Ubuntu PPA and RPMFusion
 package as well as when installing Mixxx from source (if you have write
 access to /etc/udev/rules.d when running `scons install`), however
-packages for other distributions may not install it correctly.
+packages for other distributions might not install it correctly.
 
 The udev rule works for old Hercules USB Bulk controllers, but the rule
 file included in Mixxx 2.0 has a bug that prevents it from working for

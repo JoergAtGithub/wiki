@@ -115,7 +115,7 @@ controller preferences easier to change in the future. For now you'll
 have to make a small change to the mapping script file. Don't worry, the
 actual edit only involves replacing a single word in a text file.
 
-1.  Open Mixxx Preferences and select the Kontorl S4 in the side list.
+1.  Open Mixxx Preferences and select the Kontrol S4 in the side list.
 2.  You should see a series of tabs at the top of the preferences
     window, one of which is "Scripts". Select that tab.
 3.  Select "Traktor-Kontrol-S4-MK2-hid-scripts.js". 

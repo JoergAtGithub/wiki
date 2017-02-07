@@ -21,6 +21,9 @@ apart from the MK2 is the appearance of the jog wheel. On the MK1, the
 top of the jog wheel is black plastic; on the MK2, the top of the jog
 wheel is shiny aluminum.
 
+The mapping for the Kontrol S4 Mk2 is included in Mixxx 2.0, although it
+is incomplete.
+
 ## Compatibility
 
 ### Controller

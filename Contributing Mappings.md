@@ -4,11 +4,12 @@ The more choice users have for devices to use with Mixxx, the better.
 There are many DJ controllers on the market and most of them aren't very
 cheap. The Mixxx developers do not have resources to get every
 controller out there and map it, so the community generally relies on
-users to contribute mappings. While we try to make mapping as easy as
-possible, making a complete mapping often takes some technical skill
-beyond what many users have. So, getting a controller that doesn't have
-a Mixxx mapping yet and making a mapping is a great way to contribute to
-Mixxx if you have some technical skill but may not know C++.
+users to contribute mappings. We try to make mapping as easy as
+possible, but making a complete mapping typically takes some technical
+skill beyond what many users have. So, getting a controller that doesn't
+have a Mixxx mapping yet and making a mapping is a great way to
+contribute to Mixxx if you have some technical skill but may not know
+C++.
 
 Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
@@ -18,8 +19,17 @@ mapping. Some controllers will require a mapping mostly or completely
 written in JavaScript. Both XML and JavaScript are fairly
 straightforward and easy to learn. Using JavaScript to map your
 controller could be a good introduction to programming. If you are
-unfamiliar with MIDI, see the [MIDI Crash Course](MIDI%20Crash%20Course)
-page.
+unfamiliar with MIDI, refer to the [MIDI Crash
+Course](MIDI%20Crash%20Course) page.
+
+For someone with prior programming experience, writing an initial
+mapping for a controller can be done in a few days. However, you will
+likely want to change some of your initial design decisions as you use
+the mapping, especially if you do not have much experience with DJ
+equipment. Refining the design is a gradual process that takes
+experimentation and revising. You are encouraged to seek feedback from
+users on the [Mixxx forum](http://mixxx.org/forums/viewforum.php?f=7) as
+you develop the mapping.
 
 The processes and guidelines on this page are to ensure that new
 mappings included in Mixxx are quality, complete, and documented. This

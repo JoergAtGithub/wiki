@@ -36,8 +36,9 @@ With the S4 plugged in, a MIDI device is listed as an available
 controller in Mixxx's Preferences. That is the MIDI input/output ports
 on the back of the S4 for connecting external MIDI gear; no mapping for
 the S4 will appear in the menu for the MIDI device. The controller uses
-HID, so the mapping can only be loaded when you select the HID device on
-the left side of Mixxx's Preferences.
+HID for the knobs, buttons, and other components on the device, so the
+mapping can only be loaded when you select the HID device on the left
+side of Mixxx's Preferences.
 
 ### Timecode vinyl
 

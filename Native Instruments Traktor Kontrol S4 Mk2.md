@@ -4,15 +4,22 @@
 
   - [Manufacturer's product
     page](https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-s4/)
+  - [DJTechTools
+    review](http://djtechtools.com/2013/10/22/review-traktor-kontrol-s4-mk2-and-s2-mk2/)
+  - [Digital DJ Tips
+    review](http://www.digitaldjtips.com/2013/10/review-video-traktor-kontrol-s4-mk2/)
+  - [DJWORX
+    review](https://djworx.com/review-ni-traktor-kontrol-s4-mk2-dj-controller/)
 
-The Kontrol S4 MK2 is a 4 deck all-in-one controller with a built in
-sound card. The MK2 has substantial improvements over the previous S4
-MK1, including large multicolor buttons. The MK1 is not supported and
-cannot be supported because it uses a proprietary communication
-protocol. The MK2 uses the open HID standard, so it can work with Mixxx.
-The easiest way to tell the MK1 apart from the MK2 is the appearance of
-the jog wheel. On the MK1, the top of the jog wheel is black plastic; on
-the MK2, the top of the jog wheel is aluminum.
+The Kontrol S4 MK2 is a 4 deck all-in-one controller with a sturdy build
+quality and integrated sound card. The MK2 has substantial improvements
+over the S4 MK1, including large multicolor buttons. The MK1 is not
+supported and cannot be supported because it uses a proprietary
+communication protocol exclusive to Traktor. The MK2 uses the open HID
+standard, so it can work with Mixxx. The easiest way to tell the MK1
+apart from the MK2 is the appearance of the jog wheel. On the MK1, the
+top of the jog wheel is black plastic; on the MK2, the top of the jog
+wheel is shiny aluminum.
 
 Most of the functions are mapped as they appear on the device and most
 Traktor users shouldn't have a problem picking up and using the
@@ -50,7 +57,7 @@ Scratch Mk2 timecode; refer to the [Mixxx
 manual](http://mixxx.org/manual/latest/chapters/vinyl_control.html#supported-timecode-media)
 for a list of supported types of timecode.
 
-## Mapping
+## Mapping description
 
 Note that Mixxx doesn't have the concept of a single "master" deck for
 sync. Instead, you should push and hold the sync button to "lock" sync
@@ -74,14 +81,11 @@ Currently only one effect can be loaded in each bank.
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-  - Shift + Loop Move will adjust the musical pitch of the track without
-    changing the speed.
-  - Shift + pressing the Loop Move knob will reset the musical pitch to
-    natural.
-  - Shift + Loop Size will seek quickly through the track for easy
-    previewing.
-  - Shift + Load will eject the track.
-  - Shift + Remix Slot will create a loop of predetermined size.
+\* Shift + Loop Move will adjust the musical pitch of the track without
+changing the speed. \* Shift + pressing the Loop Move knob will reset
+the musical pitch to natural. \* Shift + Loop Size will seek quickly
+through the track for easy previewing. \* Shift + Load will eject the
+track. \* Shift + Remix Slot will create a loop of predetermined size.
 
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software
@@ -90,7 +94,7 @@ however. So if you see or hear clipping, it won't help to lower the
 master volume knob -- adjust the knob in the Mixxx GUI or lower the gain
 of the playing tracks.
 
-### Unused Buttons
+### Unused controls
 
   - Snap button does nothing (in Mixxx, Quantize does both Quantizing
     and Snapping)
@@ -99,7 +103,7 @@ of the playing tracks.
   - FX knob buttons do nothing
   - While the Flux button works, the Reset button does nothing
 
-### User Configurable Mapping Changes
+### Mapping options
 
 If you choose, you can edit the controller script and change the Remix
 Slot buttons to perform loop rolls instead. Also by default, Shift + CUE

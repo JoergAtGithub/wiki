@@ -14,6 +14,18 @@ The easiest way to tell the MK1 apart from the MK2 is the appearance of
 the jog wheel. On the MK1, the top of the jog wheel is black plastic; on
 the MK2, the top of the jog wheel is aluminum.
 
+Most of the functions are mapped as they appear on the device and most
+Traktor users shouldn't have a problem picking up and using the
+controller right away. While there's a lot of overlap between Mixxx and
+Traktor, some buttons on the S4 don't quite translate to Mixxx. This
+guide is not a replacement for the [Mixxx
+Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
+here ("What is keylock?") are addressed there.
+
+## Compatibility
+
+### Controller
+
 The Kontrol S4 MK2 is compatible with Mixxx without any proprietary
 drivers on GNU/Linux and Mac OS X. On Windows, it is recommended to
 install the [driver from Native
@@ -28,13 +40,7 @@ the S4 will appear in the menu for the MIDI device. The controller uses
 HID, so the mapping can only be loaded when you select the HID device on
 the left side of Mixxx's Preferences.
 
-Most of the functions are mapped as they appear on the device and most
-Traktor users shouldn't have a problem picking up and using the
-controller right away. While there's a lot of overlap between Mixxx and
-Traktor, some buttons on the S4 don't quite translate to Mixxx. This
-guide is not a replacement for the [Mixxx
-Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
-here ("What is keylock?") are addressed there.
+### Timecode vinyl
 
 The phono inputs on the S4 can be used with turntables for timecode
 vinyl control of Mixxx. Unlike Traktor, there is no additional software
@@ -44,22 +50,7 @@ Scratch Mk2 timecode; refer to the [Mixxx
 manual](http://mixxx.org/manual/latest/chapters/vinyl_control.html#supported-timecode-media)
 for a list of supported types of timecode.
 
-### Loading the Mapping
-
-To load the S4 mapping:
-
-1.  Open the Mixxx Preferences and click on the Controller category in
-    the left-hand list. 
-2.  You should see multiple items listed for the Kontrol S4. Find the
-    Kontrol S4 HID device, not the MIDI device. 
-3.  Click the drop-down list labelled "Load Preset." 
-4.  Look for Traktor Kontrol S4 MK2 and select it. 
-5.  Hit "Apply" at the bottom of the preferences window. 
-
-The controller should light up satisfyingly and should be immediately
-usable.
-
-### Mapping Notes
+## Mapping
 
 Note that Mixxx doesn't have the concept of a single "master" deck for
 sync. Instead, you should push and hold the sync button to "lock" sync
@@ -135,6 +126,7 @@ actual edit only involves replacing a single word in a text file.
 
 There are some features we still plan to add to this mapping:
 
+  - New effects interface in Mixxx 2.1
   - Loop size readout / selection
   - On Air indicator for shoutcast or set recording
   - Find uses for other unused buttons

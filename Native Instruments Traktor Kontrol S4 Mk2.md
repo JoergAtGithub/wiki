@@ -21,14 +21,6 @@ apart from the MK2 is the appearance of the jog wheel. On the MK1, the
 top of the jog wheel is black plastic; on the MK2, the top of the jog
 wheel is shiny aluminum.
 
-Most of the functions are mapped as they appear on the device and most
-Traktor users shouldn't have a problem picking up and using the
-controller right away. While there's a lot of overlap between Mixxx and
-Traktor, some buttons on the S4 don't quite translate to Mixxx. This
-guide is not a replacement for the [Mixxx
-Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
-here ("What is keylock?") are addressed there.
-
 ## Compatibility
 
 ### Controller
@@ -58,6 +50,14 @@ manual](http://mixxx.org/manual/latest/chapters/vinyl_control.html#supported-tim
 for a list of supported types of timecode.
 
 ## Mapping description
+
+Most of the functions are mapped as they appear on the device and most
+users coming from Traktor should not have a problem picking up and using
+the controller right away. While there is a lot of overlap between Mixxx
+and Traktor, some buttons on the S4 do not quite translate to Mixxx.
+This guide is not a replacement for the [Mixxx
+Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
+here ("What is keylock?") are addressed there.
 
 Note that Mixxx doesn't have the concept of a single "master" deck for
 sync. Instead, you should push and hold the sync button to "lock" sync

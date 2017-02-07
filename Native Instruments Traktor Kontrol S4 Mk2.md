@@ -94,11 +94,14 @@ Currently only one effect can be loaded in each bank.
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-\* Shift + Loop Move will adjust the musical pitch of the track without
-changing the speed. \* Shift + pressing the Loop Move knob will reset
-the musical pitch to natural. \* Shift + Loop Size will seek quickly
-through the track for easy previewing. \* Shift + Load will eject the
-track. \* Shift + Remix Slot will create a loop of predetermined size.
+  - Shift + Loop Move will adjust the musical pitch of the track without
+    changing the speed.
+  - Shift + pressing the Loop Move knob will reset the musical pitch to
+    natural.
+  - Shift + Loop Size will seek quickly through the track for easy
+    previewing.
+  - Shift + Load will eject the track.
+  - Shift + Remix Slot will create a loop of predetermined size.
 
 The Master Volume knob on the S4 controls the built-in hardware volume
 directly, so we have chosen not to also bind it to the Mixxx software

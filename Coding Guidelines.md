@@ -500,7 +500,7 @@ The *virtual* modifier is inherited by all implementations of that
 method in derived classes. Keep redundant virtual keywords in derived
 function implementation for documentation purpose.
 
-### Pointer, Object Live Time / Ownership
+### Pointer, Object live time / Ownership
 
   - Follow the isocpp [no naked new
     rule](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es60-avoid-new-and-delete-outside-resource-management-functions).

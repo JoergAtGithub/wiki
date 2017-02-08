@@ -25,10 +25,9 @@ jog wheel is shiny aluminum.
 The mapping for the Kontrol S4 Mk2 is included in Mixxx 2.0, although it
 is incomplete.
 
-The Kontrol S4 Mk2 can run from USB bus power. The separate power supply
-is useful for increasing the brightness of the LEDs, which is helpful
-for using it in daylight, as well as increasing the maximum volume of
-the headphone output.
+The Kontrol S4 Mk2 can run from USB bus power. Using the separate power
+supply increases the brightness of the LEDs, which is helpful for using
+it in daylight, and increases the volume of the headphone output.
 
 ## Compatibility
 

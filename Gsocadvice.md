@@ -10,13 +10,14 @@ website](https://summerofcode.withgoogle.com).
 In general, your project proposal can be inspired by any of the
 following:
 
-  - A project from our [GSoC 2016 Ideas Page](gsoc2016ideas)
+  - A project from our [GSoC 2016 Ideas Page](gsoc2017ideas)
   - A project you come up with\! Make sure to contact us **before**
     submitting to get feedback if this is your plan.
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
   - Projects from our past GSoC ideas pages: 
+  - [GSoC 2016](gsoc2016ideas)
   - [GSoC 2015](gsoc2015ideas)
   - [GSoC 2014](gsoc2014ideas)
   - [GSoC 2013](gsoc2013ideas)
@@ -39,9 +40,9 @@ following ways:
 1.  Send an email to our public developers' mailing list:
     [mixxx-devel](http://lists.sourceforge.net/lists/listinfo/mixxx-devel)
 2.  Contact our GSoC administrators directly via email: 
-    1.  gsoc2014-mentors -A-T- mixxx.org
+    1.  gsoc2017-mentors -A-T- mixxx.org
 3.  Hop on our IRC channel (\#mixxx on Freenode) and see if our mentors
-    are around (bkgood, asantoni, rryan). 
+    are around. 
     1.  We encourage idling in our IRC channel to get acquainted with
         the wider Mixxx community as well.
 
@@ -87,7 +88,9 @@ rely on are `Qt`, `scons`, `portaudio` and `git`.
 
 #### Communication
 
-  - write us at least once a week a short report
+  - write a weekly report on your progress
+  - This can be delivered via mailing list message, blog post, or email
+    to the mentors list.
   - commit early commit often and push to github so that we can see it
   - actively work on your project plan and communicate with us during
     the community bonding period

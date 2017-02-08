@@ -10,7 +10,7 @@ website](https://summerofcode.withgoogle.com).
 In general, your project proposal can be inspired by any of the
 following:
 
-  - A project from our [GSoC 2016 Ideas Page](gsoc2017ideas)
+  - A project from our [GSoC 2017 Ideas Page](gsoc2017ideas)
   - A project you come up with\! Make sure to contact us **before**
     submitting to get feedback if this is your plan.
   - You can use our [Wishlist

@@ -500,6 +500,50 @@ The *virtual* modifier is inherited by all implementations of that
 method in derived classes. Keep redundant virtual keywords in derived
 function implementation for documentation purpose.
 
+### Pointer, Object Live Time / Ownership
+
+  - Follow the isocpp [no naked new
+    rule](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es60-avoid-new-and-delete-outside-resource-management-functions).
+    Instead of using \`new\` and \`delete\` statements, use one of the
+    following "smart pointers" to convey ownership right from the start:
+  - \`std::unique\_ptr\` for exclusive ownership: e.g. \`auto p =
+    std::make\_unique\<T\>(...)\`
+  - \`std::shared\_ptr\` for shared ownership: e.g. \`auto p =
+    std::make\_shared\<T\>(...)\`
+  - \`parented\_ptr\` for ownership by the QT object tree: e.g. \`auto p
+    = make\_parented\<T\>(...)\`
+
+<!-- end list -->
+
+  - A raw pointer \`T\*\` can be freely passed into or returned from a
+    function, but a function which receives a raw pointer should not
+    hold onto the pointer outside the scope of the function (e.g. by
+    storing it in a member variable). An exception is the parent pointer
+    passed into the constructor of a \`QObject\` and internally stored
+    as a non owning reference.
+
+<!-- end list -->
+
+  - \`parented\_ptr\` requires the parent to be passed into the
+    constructor at the time of creation. If a pointer that will
+    eventually be managed by the QT object tree needs to be temporarily
+    created without a parent, first create the object \`p\` with
+    \`std::make\_unique\`, and then later create a new variable using
+    \`parented\_ptr(p.release())\` once the underlying object gets a
+    parent.
+
+<!-- end list -->
+
+  - Never store a \`parented\_ptr\` in an object that outlives the
+    parent. If the lifetime of the child relative to the parent is not
+    clear then store the output of \`parented\_ptr::toWeakRef()\`
+    instead.
+
+<!-- end list -->
+
+  - Any exceptions to these guidelines must be clearly documented inline
+    in the code
+
 ## C++11
 
 As of the Mixxx 2.0 release, Mixxx is switching to C++11. We are taking

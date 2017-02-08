@@ -153,7 +153,7 @@ Traktor controller (refer to the [DJ Hardware
 Guide](hardware%20compatibility) for information about what
 communication protocol your controller uses), you will first need to
 save save [this
-file](https://raw.githubusercontent.com/Be-ing/mixxx/d8bfd189923cfaa22000cbb61041130d6dd7dba3/res/linux/mixxx.usb.rules)
+file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
 to /etc/udev/rules.d/mixxx.usb.rules . You will need root privileges
 (use `sudo` or `su`) to copy the file to that location. Then, restart
 your computer.

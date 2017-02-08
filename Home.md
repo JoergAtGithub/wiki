@@ -12,8 +12,8 @@ the language icon at the bottom of a page.
 Most of the contents of this wiki can be edited by anyone, the main
 exception to this is the [development roadmap](development%20roadmap)
 which is a fairly authoritative description of the development team's
-plans. If you find outdated or incorrect information on this wiki,
-please fix it.
+plans. If you find outdated, incorrect, or incomplete information on
+this wiki, please fix it.
 
 ## User Documentation
 

@@ -16,10 +16,11 @@ quality and integrated sound card. The MK2 has substantial improvements
 over the S4 MK1, including large multicolor buttons. The MK1 is not
 supported and cannot be supported because it uses a proprietary
 communication protocol exclusive to Traktor. The MK2 uses the standard
-HID protocol (also used by keyboards & mice), so it can work with Mixxx.
-The easiest way to tell the MK1 apart from the MK2 is the appearance of
-the jog wheel. On the MK1, the top of the jog wheel is black plastic; on
-the MK2, the top of the jog wheel is shiny aluminum.
+HID protocol (also used by keyboards & mice) to send and receive signals
+from a computer, so it can work with Mixxx. The easiest way to tell the
+MK1 apart from the MK2 is the appearance of the jog wheel. On the MK1,
+the top of the jog wheel is black plastic; on the MK2, the top of the
+jog wheel is shiny aluminum.
 
 The mapping for the Kontrol S4 Mk2 is included in Mixxx 2.0, although it
 is incomplete.

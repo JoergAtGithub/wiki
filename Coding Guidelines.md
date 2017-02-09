@@ -509,12 +509,12 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
 
 <!-- end list -->
 
-  - A raw pointer `T*` can be freely passed into or returned from a
-    function, but a function which receives a raw pointer should not
-    hold onto the pointer outside the scope of the function (e.g. by
-    storing it in a member variable). An exception is the parent pointer
-    passed into the constructor of a `QObject` and internally stored as
-    a non owning reference.
+  - Pass raw pointer `T*` if no ownership is transfered. A function
+    which receives a raw pointer should not hold onto the pointer
+    outside the scope of the function (e.g. by storing it in a member
+    variable). An exception is the parent pointer passed into the
+    constructor of a `QObject` and internally stored as a non owning
+    reference. Do not pass smart pointers by reference. 
 
 <!-- end list -->
 

@@ -11,12 +11,12 @@ driver on any OS that Mixxx runs on.
 
 Typically, the ASIO sound API is the best option on Windows and it
 requries an ASIO driver from the sound card manufacturer. However, it
-seems that the current version of the Windows Xponent ASIO driver
+seems that the current version of the Xponent ASIO driver for Windows
 interferes with the ability to send MIDI control messages to the
-Xponent. As a result, if you are running the M-Audio Xponent drivers,
-the lights will not work. If you uninstall the drivers, the lights will
-work, but you can no longer use the Xponent's sound card with the ASIO
-sound API.
+Xponent. As a result, if you are running M-Audio's Xponent ASIO drivers
+on Windows, the lights will not work. If you uninstall the drivers, the
+lights will work, but you can no longer use the Xponent's sound card
+with the ASIO sound API.
 
 It is recommended to **use the WDM-KS sound API** instead. The sound
 card will appear as "Analog Connector 1 (Xponent Audio)" and "Analog

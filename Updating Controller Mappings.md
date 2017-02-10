@@ -28,6 +28,9 @@ latest version of Mixxx.
     easy to map the new effects interface to the common layout of 4
     knobs (or 3 knobs + 1 encoder) + 4 buttons for controlling effects
   - TODO: document new library navigation interface
+  - A new \[ChannelX\], track\_loaded ControlObject was added. If your
+    script previously used track\_samples to detect if a track was
+    loaded, switch to the more readable track\_loaded.
 
 # Mixxx 2.0
 

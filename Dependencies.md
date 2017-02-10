@@ -33,7 +33,7 @@ Repository:
 
 | Library       | Windows    | Mac OS X    |
 | ------------- | ---------- | ----------- |
-| Qt            | 4.8.7      | 4.8.6       |
+| Qt            | 4.8.7      | 4.8.7       |
 | autoconf      | N/A        | 2.69        |
 | automake      | N/A        | 1.15        |
 | chromaprint   | 1.3.1      | 1.3.1       |
@@ -53,7 +53,7 @@ Repository:
 | opus          | 1.1.2      | 1.1.2       |
 | opusfile      | 0.7        | 0.7         |
 | pkg-config    | N/A        | 0.29.1      |
-| portaudio     | 2014-01-30 | 2014-01-30  |
+| portaudio     | 2014-01-30 | 2016-10-30  |
 | portmidi      | 228        | 217         |
 | protobuf      | 2.6.1      | 2.6.1       |
 | pthreads      | 2.9.1      | N/A         |

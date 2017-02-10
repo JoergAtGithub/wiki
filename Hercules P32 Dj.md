@@ -84,15 +84,15 @@ The encoders do not behave exactly as labeled.
     the headphone output. Pushing with shift toggles split cue mode
     (left ear of headphone output plays cue signal, right ear plays main
     signal).
-  - **Loop/Tempo encoder**: turning left halves loop size; turning right
-    doubles loop size. Pushing (de)activates a loop. For loops 1 beat or
-    less, the loop only stays active while the encoder is pushed down.
-    Turning while holding shift moves the loop. If the loop is 1 beat or
-    larger, it moves the loop by 1 beat; if the loop is smaller than 1
-    beat, it moves the loop by the size of the loop. Pressing while
+  - **Loop/Tempo encoder**: turning halves/doubles the loop size.
+    Pushing (de)activates a loop. For loops 1 beat or less, the loop
+    only stays active while the encoder is pushed down. Pressing while
     holding shift sets a manual loop. The loop start point is set when
     the encoder is pressed and the loop out point is set when the
-    encoder is released.
+    encoder is released. Turning while holding shift moves the loop. If
+    the loop is 1 beat or larger, it moves the loop by 1 beat; if the
+    loop is smaller than 1 beat, it moves the loop by the size of the
+    loop.
   - **Filter/Move encoder**: Turning adjusts the pitch, or with keylock
     on, just the tempo. Pushing resets the pitch to the track's default.
     Turning with shift jumps forward/backward by beats (default 4

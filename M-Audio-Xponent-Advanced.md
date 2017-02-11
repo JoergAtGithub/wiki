@@ -2,6 +2,10 @@
 
 [[/media/hardware/m-audio/xponent/xponent.jpg|]]
 
+This is preliminary documentation. This mapping is not yet included in
+the Mixxx distribution. The latest version can be found in this [Forum
+Post](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8884).
+
 This mapping expands on the stock 2.0 mapping by adding advanced
 features such as:
 

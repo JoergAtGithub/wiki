@@ -39,7 +39,9 @@ Please refer to the following diagram for control numbers. Note: Items
 <td>11</td>
 <td>Jog Wheel</td>
 <td>When the track is stopped, the jog wheel seeks forward and backward in the corresponding track.<br />
+<br />
 When the track is playing, the jog wheel speeds up or slows down the track.<br />
+<br />
 When scratch mode is enabled, moving the wheel by touching the top surface will scratch, while moving the wheel by touching the outer ring will act as a normal jog-wheel.</td>
 </tr>
 <tr class="even">
@@ -51,12 +53,14 @@ When scratch mode is enabled, moving the wheel by touching the top surface will 
 <td>13</td>
 <td>Master Output Volume</td>
 <td>Controls the volume of the master audio output.<br />
+<br />
 <strong>Note:</strong> This is a hardware control, and changes will not be reflected in the Mixxx UI</td>
 </tr>
 <tr class="even">
 <td>14</td>
 <td>Booth Output Volume</td>
 <td>Controls the volume of the booth audio output.<br />
+<br />
 <strong>Note:</strong> This is a hardware control, and changes will not be reflected in the Mixxx UI</td>
 </tr>
 <tr class="odd">
@@ -83,6 +87,7 @@ When scratch mode is enabled, moving the wheel by touching the top surface will 
 <td>19</td>
 <td>MIDI Mode Button</td>
 <td>Changes the Trackpad and mouse buttons (See #16, #17, #18) into an X/Y input and two additional note inputs.<br />
+<br />
 <strong>Note:</strong> These MIDI inputs are not used in this mapping.</td>
 </tr>
 <tr class="even">
@@ -94,6 +99,7 @@ When scratch mode is enabled, moving the wheel by touching the top surface will 
 <td>21</td>
 <td>Brake / Play Backwards</td>
 <td>The Big X button is tied to the Brake effect. Releasing the brake before the track has stopped will resume playing, while holding it until the track has stopped completely will leave the track paused.<br />
+<br />
 The Big Minus button momentarily plays the corresponding track backwards. Normal play will resume when it is released</td>
 </tr>
 <tr class="even">
@@ -105,6 +111,7 @@ The Big Minus button momentarily plays the corresponding track backwards. Normal
 <td>23</td>
 <td>VU Meters</td>
 <td>Displays the current output level for the corresponding deck.<br />
+<br />
 <strong>Note:</strong> This behavior can be switched to behave as a master-out meter instead by setting the value of MaudioXponent.vuMeterMode to 1 in the M-Audio-Xponent-Advanced-scripts.js file</td>
 </tr>
 <tr class="even">
@@ -132,6 +139,7 @@ The right-hand side controls effects. Pressing one of the buttons will give the 
 <td>28</td>
 <td>Headphone Volume</td>
 <td>Controls the volume of the headphones.<br />
+<br />
 <strong>Note:</strong> This is a hardware control, and changes will not be reflected in the Mixxx UI.</td>
 </tr>
 <tr class="even">

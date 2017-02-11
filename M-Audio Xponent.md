@@ -45,6 +45,11 @@ framework](https://sinusoid.es/mixco/). [Documentation for the
 mapping](https://sinusoid.es/mixco/script/maudio_xponent.mixco.html) is
 available on the Mixco website.
 
+A separate, "[Advanced](M-Audio-Xponent-Advanced)" mapping has also been
+created, and is currently in testing, but is available from the Mixxx
+forums
+[here](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8884&sid=f9e6ecc3e7882a88a5dbe178a84dc8e7).
+
 ## Getting LEDs to work with old mappings (pre-2.0)
 
 The Mixco mapping included with Mixxx 2.1 and usable with Mixxx 2.0 does

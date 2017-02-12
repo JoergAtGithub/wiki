@@ -81,6 +81,14 @@ would be fun. Refer to the [Launchpad
 ticket](https://bugs.launchpad.net/mixxx/+bug/1518185) for previous
 discussion about this.
 
+# Sample sets
+
+Currently, samples have to be loaded to sample decks one-by-one each
+time Mixxx is restarted to load the samples. It would be helpful to save
+collections of samples to Mixxx's database so they could all be loaded
+together. It would also be helpful to let users separate audio files
+used as short samples from full tracks in the library.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

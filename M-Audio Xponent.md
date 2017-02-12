@@ -78,7 +78,8 @@ Post](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8884).
 This mapping expands on the stock 2.0 mapping by adding advanced
 features such as:
 
-  - Lights
+  - Lights (No need to hold down any keys, but see the note for Windows
+    users above)
   - Samplers
   - Effects
   - Beatgrid manipulation

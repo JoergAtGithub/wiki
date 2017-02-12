@@ -69,7 +69,7 @@ button behavior. If the buttons no longer pulse brightly and fade down
 when you press them, then the Xponent is in the correct mode for use
 with Mixxx.
 
-# M-Audio Xponent (Advanced)
+## M-Audio Xponent (Advanced)
 
 A separate "Advanced" mapping is currently in its testing phase. The
 latest version can be found in this [Forum

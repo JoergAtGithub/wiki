@@ -34,7 +34,34 @@ broadcasting profiles or presets.
 Live broadcasters have requested the ability to stream to multiple
 stations at once.
 
-## Something Else\!
+# Cue point enhancements
+
+Currently, Mixxx's hotcues are limited. They cannot store any
+information other than a position in a track. It would be helpful to
+expand the capabilities of this in a number of ways. For example,
+letting users label hotcues with custom text and set their own color
+coding for hotcues. Setting specially marked mix in and mix out markers
+would be helpful both for live performance and for telling AutoDJ when
+to start automatic crossfading. Storing multiple loops per track that
+could be activated with a hotcue would be helpful too.
+
+A collection of ideas for improving cue points can be found in the
+[Launchpad
+blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0).
+
+# Crate improvements
+
+Mixxx's crates allow DJs to create their own organization system for
+their music library. It could become an even more powerful tool by
+[letting crates be organized in a
+hierarchy](https://bugs.launchpad.net/mixxx/+bug/671632) and [adding a
+search filter for
+crates](https://bugs.launchpad.net/mixxx/+bug/1402133). These
+improvements would turn crates into a system that would allow DJs to
+arbitrarily tag and search their library in complex ways that uniquely
+fit their workflow.
+
+# Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions
 we've made here. If you've got a great idea for a project involving

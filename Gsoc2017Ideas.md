@@ -61,6 +61,26 @@ improvements would turn crates into a system that would allow DJs to
 arbitrarily tag and search their library in complex ways that uniquely
 fit their workflow.
 
+# Effects
+
+## Microphone effects
+
+Mixxx could use some effects specifically for applying to microphone
+inputs, for example a gate, automatic feedback cancellation, and
+acoustic echo cancellation. Consider looking for third party libraries
+like the [WebRTC AEC library](http://webrtc.org/) that can help with
+these and using them in Mixxx.
+
+## Beat synchronized effects
+
+Synchronizing temporal effects with the rhythm of their input signals is
+important for making them sound musical. Currently, only the autopan
+effect is capable of this. It would be really helpful to add this
+functionality to the echo and reverb effects. Also, a beatmasher effect
+would be fun. Refer to the [Launchpad
+ticket](https://bugs.launchpad.net/mixxx/+bug/1518185) for previous
+discussion about this.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

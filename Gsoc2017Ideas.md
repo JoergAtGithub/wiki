@@ -66,10 +66,10 @@ fit their workflow.
 ## Microphone effects
 
 Mixxx could use some effects specifically for applying to microphone
-inputs, for example a gate, automatic feedback cancellation, and
-acoustic echo cancellation. Consider looking for third party libraries
-like the [WebRTC AEC library](http://webrtc.org/) that can help with
-these and using them in Mixxx.
+inputs, for example a gate and acoustic echo cancellation. Consider
+looking for third party libraries like the [WebRTC AEC
+library](http://webrtc.org/) that can help with these and using them in
+Mixxx.
 
 ## Beat synchronized effects
 

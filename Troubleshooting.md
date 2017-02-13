@@ -25,6 +25,22 @@ M4A/AAC files around so you can delete the FLAC files when this bug is
 fixed. Converting lossy M4A/AAC files to another lossy format will sound
 worse than the starting M4A/AAC files and is not advised.
 
+## Other programs do not make sound while Mixxx is running
+
+On GNU/Linux, running Mixxx from a GUI menu or from the launcher icon
+automatically suspends PulseAudio while Mixxx is running so Mixxx can
+use your sound card with ALSA directly. To keep other programs playing
+sound, either they all need to use JACK, or you can try using the
+"pulse" virtual ALSA device with Mixxx when running Mixxx on the command
+line without pasuspender. Refer to the Mixxx manual for more information
+about [sound
+APIs](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+
+On Windows, the recommended ASIO sound API typically requires that only
+one program uses a sound card at a time. Refer to the Mixxx manual for
+more information about [sound
+APIs](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+
 ## I can't select my sound card in the Sound Hardware preferences
 
 Check that your sound card is plugged in. If it has its own power

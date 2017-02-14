@@ -69,7 +69,9 @@ Mixxx could use some effects specifically for applying to microphone
 inputs, for example a gate and acoustic echo cancellation. Consider
 looking for third party libraries like the [WebRTC AEC
 library](http://webrtc.org/) that can help with these and using them in
-Mixxx.
+Mixxx. If you choose to implement this, you will need a microphone to
+test with. You do not need an expensive microphone; any microphone
+should work.
 
 ## Beat synchronized effects
 

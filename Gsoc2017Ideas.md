@@ -70,8 +70,10 @@ inputs, for example a gate and acoustic echo cancellation. Consider
 looking for third party libraries like the [WebRTC AEC
 library](http://webrtc.org/) that can help with these and using them in
 Mixxx. If you choose to implement this, you will need a microphone to
-test with. You do not need an expensive microphone; any microphone
-should work.
+test with and a sound card to plug it into. You do not need an expensive
+microphone; any microphone should work. Likewise, you do not need a
+fancy sound card; if you can plug a microphone and speakers into the
+onboard sound card on your laptop at the same time, that will work.
 
 ## Beat synchronized effects
 

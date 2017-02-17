@@ -238,6 +238,9 @@ new messages are added or [build Mixxx](Compiling%20on%20Windows) with
 will cause it to pop up a console window when you run it and the MIDI
 messages received by your controller will be displayed there.
 
+[MIDI OX](http://www.midiox.com/) can intercept MIDI messages from
+programs other than Mixxx.
+
 ### Mac OS X
 
 Download the free [MIDI Monitor](http://www.snoize.com/MIDIMonitor/)

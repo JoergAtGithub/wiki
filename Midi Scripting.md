@@ -81,12 +81,14 @@ mapping file locations](controller%20mapping%20file%20locations) for
 where to put mapping files on your OS.
 
 To specify script files to load, add the following section to the
-device's XML file right underneath the \<controller\> tag:
+device's XML file inside the \<controller\> tag:
 
 ``` XML
+ <controller id="controller">
         <scriptfiles>
             <file filename="Manufacturer-model-scripts.js" functionprefix="MyController"/>
         </scriptfiles>
+        
 ```
 
 The functionprefix attribute specifies the name of the JavaScript object

@@ -134,9 +134,9 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/71c0502d79a2
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
 
-3.  clear if the next effect button is pressed
+3.  clear if both buttons are pressed
 
-4.  clear if the previous effect button is pressed
+4.  clear if both buttons are pressed
 
 5.  use Deere skin to show the state
 

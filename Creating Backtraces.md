@@ -9,9 +9,10 @@ crashed.
     Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) (get
     the official release version) and save it to the root of your C:
     drive. (`C:\`)
-2.  Download Mixxx's debug symbol file:
-    1.  32-bit: FIXME
-    2.  64-bit: FIXME
+2.  Download Mixxx's debug symbol file: 
+    1.  2.0 32-bit: FIXME
+    2.  2.1: Re-instal Mixxx 2.1 slect "Change" and enebale "PDB debug
+        files" 
 3.  Open a Windows prompt: 
 
 <!-- end list -->

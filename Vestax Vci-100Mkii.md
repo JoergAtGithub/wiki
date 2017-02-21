@@ -123,7 +123,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/71c0502d79a2ce4f2b1e9fbbea7dfaf4666a3c45/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/71c0502d79a2ce4f2b1e9fbbea7dfaf4666a3c45/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-2-1, still compatible with 2.0)\[11\]
+(2017-2-2, still compatible with 2.0)\[11\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

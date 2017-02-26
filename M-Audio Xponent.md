@@ -240,8 +240,8 @@ The right-hand side controls effects. Pressing one of the buttons will give the 
 </tr>
 <tr class="odd">
 <td>31</td>
-<td>Loops and Beatgrid manipulation</td>
-<td>The numbered buttons set or activate hotcues. Holding shift while pressing a hotcue button clears that hotcue.<br />
+<td>Hotcues and Beatgrid</td>
+<td>The upper numbered buttons set or activate hotcues. Holding shift while pressing a hotcue button clears that hotcue.<br />
 <br />
 The &lt; and &gt; buttons shift the beatgrid left or right and can be used to make minor corrections on the fly. Holding shift while pressing either button will align the beatgrid to the current position.<br />
 <br />
@@ -264,7 +264,7 @@ The + and - buttons increase or decrease the speed of the corresponding track.</
 <td>Sync</td>
 <td>Normal function. Flashes on each beat of the corresponding track.<br />
 <br />
-<strong>Note:</strong> The flashing behavior can be customized by setting the MaudioXponent.syncFlashMode value in the M-Audio-Xponent-Advanced-scripts.js file. 0=No flash, 1=Simple flash, 2=Toggle flash. In Toggle mode, the button will toggle between lit and unlit with each beat.</td>
+<strong>Note:</strong> The flashing behavior can be customized by setting the MaudioXponent.syncFlashMode value in the M-Audio-Xponent-Advanced-scripts.js file. 0=No flash, 1=Simple flash, 2=Toggle flash. In Toggle mode, the button will toggle between lit and unlit with each beat. Holding both shift buttons while pressing either Sync button will cycle through the available modes at runtime.</td>
 </tr>
 <tr class="odd">
 <td>35</td>
@@ -274,7 +274,7 @@ The + and - buttons increase or decrease the speed of the corresponding track.</
 <tr class="even">
 <td>36</td>
 <td>Loops</td>
-<td>The 1, 2, 4, and 8 buttons behave as normal, starting a loop of X beats at the current position. Pressing them again while looping will disable that loop. Holding shift while pressing them will do a rolling beat loop of 1, 1/2, 1/4, or 1/8th beats, continuing where the song would have been without the loop when they are released.</td>
+<td>The 1, 2, 4, and 8 buttons behave as normal, starting a loop of X beats at the current position. Pressing the same button again while looping will exit that loop. Holding shift while pressing the loop buttons will do a rolling beat loop of 1, 1/2, 1/4, or 1/8th beats, continuing where the song would have been without the loop when they are released.</td>
 </tr>
 <tr class="odd">
 <td>37</td>

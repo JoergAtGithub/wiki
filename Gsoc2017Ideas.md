@@ -34,6 +34,14 @@ broadcasting profiles or presets.
 Live broadcasters have requested the ability to stream to multiple
 stations at once.
 
+## Metadata Output
+
+Mixxx has currently no interface to pass over metadata like the playing
+track and artist to third party applications. This is required to
+publish the current track via RDS or to a web service like Twitter or
+just to the OS info area. This can be don by writing a file, rss feeds,
+OSC or .... (Add your own ideas ..)
+
 # Cue point enhancements
 
 Currently, Mixxx's hotcues are limited. They cannot store any

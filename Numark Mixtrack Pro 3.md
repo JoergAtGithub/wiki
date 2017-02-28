@@ -375,3 +375,45 @@ behave as a normal button (ON on first press, OFF on second press)
 ### 30\. Master Output LEDs
 
 Displays the audio level going to the Master Output.
+
+## Proposed Changes
+
+This set of changes is implemented in a [pull
+request](https://github.com/mixxxdj/mixxx/pull/1180).
+
+#### Effects
+
+  - Focus effect with **Tap + FX button**
+  - Move mapping of InstantFX to **Padmode + FX button**
+  - **Shift + High** controls parameter 1 of focused effect
+  - **Shift + Mid** controls parameter 2 of focused effect
+  - **Shift + Low** controls parameter 3 of focused effect
+  - **Shift + Filter** controls parameter 4 of focused effect
+
+If no effects are focused, the super knob of the effect rack is
+controlled by the touch strip. If an effect is focused, the touch strip
+control its meta knob. If any effects are added to InstantFX, they are
+turned on when the touch strip is activated, and off when it is not.
+While active, their meta knobs are controlled by the touch strip.
+
+#### Sampler changes
+
+  - Move sampler volume to **Padmode + Browse knob** from **Padmode +
+    Beats knob**.
+  - Load sample by selecting track and pressing **Sample X**
+  - Eject sample by **Tap + Sample X**
+
+#### Loop-move
+
+  - Move loop with **Shift + Pitch Bend +/-**
+  - Adjust loop move amount with **Shift + Beats knob**
+
+#### Beat jump
+
+  - Beat jump with **Tap + Pitch Bend +/-**
+  - Adjust beat jump size with **Tap + Beats knob**
+
+#### Others
+
+  - Move slip mode to **Shift + Wheel**
+  - Move beat grid alignment to **Padmode + Beats knob**

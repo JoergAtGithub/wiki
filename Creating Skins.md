@@ -608,14 +608,15 @@ no maximum width, maximum height 300
 on the available space. Size policy refers to the Qt
 [QSizePolicy](http://qt-project.org/doc/qt-4.8/qsizepolicy.html#Policy-enum).
 
-|  | SizePolicy       |  | Skin Abbreviation |  | What it does                                                                                                                                                                  |  |
-|  | ---------------- |  | ----------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
-|  | Fixed            |  | f                 |  | The size in the given dimension is fixed and should not grow or shrink.                                                                                                       |  |
-|  | Minimum          |  | min               |  | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this.                                                                 |  |
-|  | Maximum          |  | max               |  | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this.                                                                |  |
-|  | Preferred        |  | p                 |  | The widget size in this dimension is the preferred size. It can be shrunk and still be useful. It can grow but there is no advantage to it growing.                           |  |
-|  | Expanding        |  | e                 |  | The widget size in this dimension can be shrunk and still be useful. The widget can make use of extra space in this dimension so it should receive as much space as possible. |  |
-|  | MinimumExpanding |  | me                |  | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible.       |  |
+| SizePolicy       |  | Skin Abbreviation |  | What it does                                                                                                                                                                  |  |
+| ---------------- |  | ----------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
+| Fixed            |  | f                 |  | The size in the given dimension is fixed and should not grow or shrink.                                                                                                       |  |
+| Minimum          |  | min               |  | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this.                                                                 |  |
+| Maximum          |  | max               |  | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this.                                                                |  |
+| Preferred        |  | p                 |  | The widget size in this dimension is the preferred size. It can be shrunk and still be useful. It can grow but there is no advantage to it growing.                           |  |
+| Expanding        |  | e                 |  | The widget size in this dimension can be shrunk and still be useful. The widget can make use of extra space in this dimension so it should receive as much space as possible. |  |
+| MinimumExpanding |  | me                |  | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible.       |  |
+| Ignored          |  | i                 |  | The widget size in this dimension is ignored. The widget will get as much space as possible.                                                                                  |  |
 
 The `<SizeHint>` property is formatted as the skin abbreviation (from
 the above table) for the horizontal size and the skin abbreviation for

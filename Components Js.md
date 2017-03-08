@@ -702,8 +702,8 @@ For the shift functionality to work, the shift button of your controller
 must be mapped to a function that calls the `shift`/`unshift` methods of
 the EffectUnit on button press/release. Also, if your controller sends
 different MIDI signals when shift is pressed, map those as well as the
-unshifted signals to the `input` method of each Component. If the
-EffectUnit is a property of another
+unshifted signals to the `input` method of each Component in your XML
+file. If the EffectUnit is a property of another
 [\#ComponentContainer](#ComponentContainer) (for example a
 [\#Deck](#Deck)), calling `shift` and `unshift` on the parent
 ComponentContainer will recursively call it on the EffectUnit too (just

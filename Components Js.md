@@ -17,10 +17,12 @@ Components JS is new in Mixxx 2.1 and does not work with older versions
 of Mixxx. To use the library, in the `<scriptfiles>` element at the top
 of your mapping's [XML
 file](MIDI%20controller%20mapping%20file%20format), load the Lodash
-library and the Components library:
+library and the Components library (above the link to your controller's
+script file):
 
     <file filename="lodash.mixxx.js"/>
     <file filename="midi-components-0.0.js"/>
+    <file functionprefix="MyController" filename="My_Controller_SCRIPT.js"/>
 
 Components JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded. Importing the

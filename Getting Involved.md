@@ -4,11 +4,11 @@ You want to make Mixxx better, but what can you do?
 
 \<cue Daft Punk synths\>
 
-*Code it\! Tune it\!*
+//Code it\! Test it\! //
 
-*Tweak it\! Skin it\!*
+//Tune it\! Tweak it\! //
 
-*Teach it\! Test it\!*
+//Skin it\! Teach it\! //
 
 *Show it\! Support it\!*
 
@@ -43,6 +43,18 @@ year, depending on the bug\!)
 
 **So you're somewhat technical but not a C++ coder, what else can you
 do?**
+
+## Test it\!
+
+Grab the latest development builds from [our build
+server](http://downloads.mixxx.org/builds/master/release/) or [compile
+the source code from git](start#compile%20mixxx%20from%20source%20code).
+Suggest improvements and [report bugs](reporting%20bugs).
+
+If you'd really like to be on the bleeding edge, [checkout GitHub pull
+requests locally](https://gist.github.com/piscisaureus/3342247) and
+provide feedback on experimental features before they are merged into
+the master git branch.
 
 ## Tune it\!
 
@@ -93,12 +105,6 @@ by contributing to [the manual](https://github.com/mixxxdj/manual).
 
 If you are fluent and literate in languages other than English, you can
 [help translate Mixxx](internationalization).
-
-## Test it\!
-
-Grab the latest development builds from our build server or [compile
-them from git](start#building%20Mixxx) and try them out. Suggest
-improvements and [report bugs](reporting%20bugs).
 
 ## Show it\!
 

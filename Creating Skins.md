@@ -107,8 +107,6 @@ below.
   - Skin Colour Scheme - allows the creation of different [colour
     schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
     of a skin
-  - Background picture - Image file which all elements will be displayed
-    on
   - Library display - Widget holds all your music information,
     playlists, search bar etc.
 
@@ -159,7 +157,6 @@ below.
   - Pitch bend - apply a temporary pitch-bend to the tempo of a song
   - Pre-listen - sends the channel's audio to the Headphones
   - Repeat - repeats track if you go past the end or before the start
-  - FX (Flanger) - enables a effect on the selected channel
   - Frequency Kill - cuts the high, mid and low frequencies
 
 [6.Knobs (Rotary fader)](#sectionknobs-rotaryfader-)
@@ -167,8 +164,6 @@ below.
   - Master Volume - controls the volume and of the master output
   - Balance - controls the balance (stereo distribution) of the master
     output
-  - FX (Flanger) settings - controls the different flanger effect
-    parameter
   - Headphone volume - controls the volume of the headphone output
   - Headphone mix - controls what you hear on the headphone output
   - Gain - apply extra amplification to a song
@@ -703,45 +698,40 @@ Allows the creation of different color schemes, see [Color scheme
 architecture](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
 for details
 
-### Main background
-
-|                                                                                         |                                                                                                                                                                                                                                                                                                                     |
-| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Background>
-    <Path>background.png</Path>
-    <BgColor>#</BgColor>
-</Background>
-
-` | `start background tag
-Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
-Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black)
-end background tag
-` |
-
 ### Library display
 
-|                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<TableView>
-    <Style></Style>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <BgColor>#</BgColor>
-    <FgColor>#</FgColor>
-    <BgColorRowEven>#</BgColorRowEven>
-    <BgColorRowUneven>#</BgColorRowUneven>
-</TableView>
+The library manages all of your music files. This is where you can find
+the tracks you want to play and load them into a deck or sampler.
 
-` | `start TableView tag
-Defines the appearance of the library widget
-Defines the element position
-Defines the element size
-Background color library widget (i.e. background color search widget)
-Foreground color library widget (i.e. text in "Analyze" widget)
-Background color even line right library pane
-Background color uneven lines right library pane
-end TableView tag
-` |
+The library typically consist of:
+
+  - library sidebar: Contains different collections of music, and let
+    you browse for files.
+  - library table: The track list view displays the tracks in those
+    collections.
+  - Library searchbox: The search function filters the currently
+    displayed list (e.g. a playlist, a crate, or even the whole library)
+    for tracks that match your search query.
+
+FIXME: Add code example for typical library
+
+#### Library Sidebar
+
+|                                     |
+| ----------------------------------- |
+| `<LibrarySidebar></LibrarySidebar>` |
+
+#### Library Table
+
+|                       |
+| --------------------- |
+| `<Library></Library>` |
+
+#### Library SearchBox
+
+|                           |
+| ------------------------- |
+| `<SearchBox></SearchBox>` |
 
 ## Section: Visual
 
@@ -2216,105 +2206,6 @@ Defines connected Channel (X = 1 .. 4) , performed action
 
 ` |
 
-### End of track mode
-
-**Deprecated in Mixxx 1.9.0, use the [Repeat](creating_skins#repeat)
-button instead**
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<PushButton>
-    <Tooltips></Tooltips>
-    <NumberStates>3</NumberStates>
-    <State>
-        <Number>0</Number>
-        <Pressed>stop.png</Pressed>
-        <Unpressed>stop.png</Unpressed>
-    </State>
-    <State>
-        <Number>1</Number>
-        <Pressed>next.png</Pressed>
-        <Unpressed>next.png</Unpressed>
-    </State>
-    <State>
-        <Number>2</Number>
-        <Pressed>loop.png</Pressed>
-        <Unpressed>loop.png</Unpressed>
-    </State>
-    <Pos>X,Y</Pos>
-    <Connection>
-        <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
-    </Connection>
-</PushButton>
-` | `
-
-End of track mode control (see manual)
-
-
-
-Button visible in STOP mode
-
-
-
-
-Button visible in NEXT mode
-
-
-
-
-Button visible in LOOP mode
-
-
-
-
-Defines connected Channel (X = 1 .. 2) , performed action (TrackEndMode)
-
-
-
-` |
-
-### FX (Flanger)
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<PushButton>
-    <TooltipId>flanger</TooltipId>
-    <NumberStates>2</NumberStates>
-    <State>
-        <Number>0</Number>
-        <Pressed>pressed.png</Pressed>
-        <Unpressed>unpressed.png</Unpressed>
-    </State>
-    <State>
-        <Number>1</Number>
-        <Pressed>pressed.png</Pressed>
-        <Unpressed>unpressed.png</Unpressed>
-    </State>
-    <Pos>X,Y</Pos>
-    <Connection>
-        <ConfigKey>[ChannelX],flanger</ConfigKey>
-    </Connection>
-</PushButton>` | `
-
-Apply flanger effect to Channel X
-
-
-
-Default button visible
-
-
-
-
-Button visible when active
-
-
-
-
-Defines connected Channel (X = 1 .. 4) , performed action (flanger)
-
-
-` |
-
 ### Frequency Kill
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                              |
@@ -2384,31 +2275,6 @@ Example: X=41 states (270 degree rotation / 40 knobs + the 0-state) .
 You need 20 knobs rotate from -135 degree to 0 degree, one knob 0 degree (default knob visible) ,
 20 knobs rotate from -135 degree to 0 degree
 Defines connected Channel (Master) , performed action (Y=volume or balance)
-
-
-` |
-
-### Flanger (FX) setting
-
-|                                                                                                                                                                                                                          |                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Knob>
-    <TooltipId>???</TooltipId>
-    <NumberStates>X</NumberStates>
-    <Path>knob_rotary_s%1.png</Path>
-    <Pos>X,Y</Pos>
-    <Connection>
-        <ConfigKey>[Flanger],Y</ConfigKey>
-    </Connection>
-</Knob>` | `
-???= lfoDelay or lfoDepth or lfoPeriod
-
-
-
-
-
-Defines connected Channel (Flanger),
-performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
 
 
 ` |
@@ -2961,6 +2827,182 @@ A a widget to show the laptop battery status.
 
 The charging/discharging pixmaps will have %1 replaced from 0 to
 NumberStates - 1.
+
+## Deprecated keys
+
+### Main background
+
+**Deprecated in Mixxx 1.11.0, use
+[WidgetGroup](creating_skins?#widgetgroup) instead**
+
+|                                                                                     |                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<Background>
+  <Path>background.png</Path>
+  <BgColor>#</BgColor>
+</Background>
+
+` | `start background tag
+Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
+Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black)
+end background tag
+` |
+
+#### Library TableView
+
+\*Deprecated in Mixxx 1.11.0, use the different keys of the [Library
+display](creating_skins#library_display) instead\*\*
+
+|                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<TableView>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <BgColor>#</BgColor>
+  <FgColor>#</FgColor>
+  <BgColorRowEven>#</BgColorRowEven>
+  <BgColorRowUneven>#</BgColorRowUneven>
+</TableView>
+
+` | `start TableView tag
+Defines the element position
+Defines the element size
+Background color library widget (i.e. background color search widget)
+Foreground color library widget (i.e. text in "Analyze" widget)
+Background color even line right library pane
+Background color uneven lines right library pane
+end TableView tag
+` |
+
+### End of track mode
+
+**Deprecated in Mixxx 1.9.0, use the [Repeat](creating_skins#repeat)
+button instead**
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+  <Tooltips></Tooltips>
+  <NumberStates>3</NumberStates>
+  <State>
+    <Number>0</Number>
+    <Pressed>stop.png</Pressed>
+    <Unpressed>stop.png</Unpressed>
+  </State>
+  <State>
+    <Number>1</Number>
+    <Pressed>next.png</Pressed>
+    <Unpressed>next.png</Unpressed>
+  </State>
+  <State>
+    <Number>2</Number>
+    <Pressed>loop.png</Pressed>
+    <Unpressed>loop.png</Unpressed>
+  </State>
+  <Pos>X,Y</Pos>
+  <Connection>
+    <ConfigKey>[ChannelX],TrackEndMode</ConfigKey>
+  </Connection>
+</PushButton>
+` | `
+
+End of track mode control (see manual)
+
+
+
+Button visible in STOP mode
+
+
+
+
+Button visible in NEXT mode
+
+
+
+
+Button visible in LOOP mode
+
+
+
+
+Defines connected Channel (X = 1 .. 2) , performed action (TrackEndMode)
+
+
+
+` |
+
+### FX (Flanger)
+
+\*Deprecated in Mixxx 1.11.0, use the [effects
+framework](mixxxcontrols#effects_framework) instead\*\*
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<PushButton>
+  <TooltipId>flanger</TooltipId>
+  <NumberStates>2</NumberStates>
+  <State>
+    <Number>0</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+  </State>
+  <State>
+    <Number>1</Number>
+    <Pressed>pressed.png</Pressed>
+    <Unpressed>unpressed.png</Unpressed>
+  </State>
+  <Pos>X,Y</Pos>
+  <Connection>
+    <ConfigKey>[ChannelX],flanger</ConfigKey>
+  </Connection>
+</PushButton>` | `
+
+Apply flanger effect to Channel X
+
+
+
+Default button visible
+
+
+
+
+Button visible when active
+
+
+
+
+Defines connected Channel (X = 1 .. 4) , performed action (flanger)
+
+
+` |
+
+### Flanger (FX) setting
+
+\*Deprecated in Mixxx 1.11.0, use the [effects
+framework](mixxxcontrols#effects_framework) instead\*\*
+
+|                                                                                                                                                                                                          |                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<Knob>
+  <TooltipId>???</TooltipId>
+  <NumberStates>X</NumberStates>
+  <Path>knob_rotary_s%1.png</Path>
+  <Pos>X,Y</Pos>
+  <Connection>
+    <ConfigKey>[Flanger],Y</ConfigKey>
+  </Connection>
+</Knob>` | `
+???= lfoDelay or lfoDepth or lfoPeriod
+
+
+
+
+
+Defines connected Channel (Flanger),
+performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
+
+
+` |
 
 # Useful Links
 

@@ -3,6 +3,7 @@
 ## Mixxx 2.1.0
 
 ``` 
+ * Added ''PlayedOverlayColor'' to [[creating_skins#waveform_overview|<Overview>]] that makes the overview-waveform darker for the played portion of the track. Support ARGB for ''PlayedOverlayColor'', ''AxesColor'', ''PlayPosColor'', and ''BgColor'' [[https://github.com/mixxxdj/mixxx/pull/1203|pull#1203]]
  * Added [[creating_skins#EffectSelector|<EffectSelector>]] widget that allows to select effects from alphabetically ordered lists of available effects.[[https://github.com/mixxxdj/mixxx/pull/1135|pull#1135]]
  * Added support for collapsible [[creating_skins#splitter|<Splitter>]] children. [[https://github.com/mixxxdj/mixxx/pull/917|pull#917]]
  * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]]

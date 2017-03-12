@@ -59,15 +59,14 @@ element and their attributes defined in the skin.xml can be found
 | syntax | Info |
 | ------ | ---- |
 
-|                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<!--Comment-->
 <!DOCTYPE skin>
 <skin>
 <manifest>...</manifest>
 <elementname>
   <TooltipId>...</TooltipId>
-  <Style>...</Style>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
   <MinimumSize>W,H</MinimumSize>
@@ -82,7 +81,6 @@ Skin opening tag
 Manifest describing skin properties (author, title, version, etc.)
 Elements opening tag
 Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
-Stylesheet (depends on the element)
 Position on the screen
 Size (depending on the element)
 Minimum Size
@@ -502,9 +500,6 @@ shows the current key of a playing deck:
         <TooltipId>visual_key</TooltipId>
         <Pos>X,Y</Pos>
         <Size>W,H</Size>
-        <Style>
-            font; bg-color; color; text-align; (padding);
-        </Style>
         <Connection>
             <ConfigKey>[ChannelX],visual_key</ConfigKey>
         </Connection>
@@ -747,27 +742,6 @@ Background color even line right library pane
 Background color uneven lines right library pane
 end TableView tag
 ` |
-
-New starting in Mixxx 1.9.0:  
-[Qt Style Sheets](http://doc.qt.nokia.com/latest/stylesheet.html) can
-now be used within \<Style\>\</Style\> to customize the appearance of
-various library widgets, and when used for the specific elements defined
-above, will supersede them. A few examples of what QT Style Sheets can
-provide are:
-
-``` 
-  * Custom images for splitter and checkboxes in library
-  * Custom images for branch triangle in treeview
-  * Visual feedback when searchbox has focus
-  * General appearance of text and buttons in library & tooltips
-```
-
-See the [Spartan Skin for
-Mixxx 1.9](http://mixxx.org/forums/viewtopic.php?f=8&t=1812) as an
-example, it makes heavy use of Qt Style Sheets. Also, you may wish to
-peruse [Qt Style Sheets
-Examples](http://doc.qt.nokia.com/latest/stylesheet-examples.html) for
-reference.
 
 ## Section: Visual
 
@@ -1100,17 +1074,15 @@ end StatusLight (Volume Peak Indicator) tag
 
 ### Label
 
-|                                                                                                            |  |                                                                                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                               |  |                                                                                                             |
+| ----------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------- |
 | `<Label>
-    <Style>...</Style>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Text>Hello</Text>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <Text>Hello</Text>
  </Label>
 ` |  | `
 Displays a text label.
-<Style> Example= "QLabel { font: 15px/17px Arial;background-color: transparent; color: #ACACAC; text-align: center; padding-left: 1px; }"
 Defines the element position
 Defines the element size
 The text to be displayed
@@ -1122,20 +1094,18 @@ The text to be displayed
 
 New in Mixxx 1.10
 
-|                                                                                                                                                                                         |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                                                                                                                                                        |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<Time>
-    <TooltipId>time</TooltipId>
-    <Style>...</Style>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <ShowSeconds>false</ShowSeconds>
-    <ClockFormat>24</ClockFormat>
+  <TooltipId>time</TooltipId>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <ShowSeconds>false</ShowSeconds>
+  <ClockFormat>24</ClockFormat>
 </Time>
 ` |  | `
 This widget displays the current time.
 Tooltip to be displayed on mouseover
-<Style> Example= "QLabel { font: 15px/17px Arial;background-color: transparent; color: #ACACAC; text-align: center; padding-left: 1px; }"
 Defines the element position
 Defines the element size
 Determines, whether seconds are shown ("true") or not ("false"). Default is "false".
@@ -1154,23 +1124,18 @@ You can replace the whole \<Text\> node with
 [TrackProperty](/creating_skins#trackproperty)\`s to display more
 advanced track informations.
 
-|                                                                                                                                                                                       |  |                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                           |  |                                               |
+| --------------------------------------------------------------------------------------------------------- |  | --------------------------------------------- |
 | `<Text>
-    <TooltipId>text</TooltipId>
-    <Channel>X</Channel>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Style>font; bg-color; color; text-align; padding;
-    </Style>
+  <TooltipId>text</TooltipId>
+  <Channel>X</Channel>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
 </Text>` |  | `
 
 Defines connected Channel (X = 1 or 2)
 
 
-Uses CSS. Example=font: bold 13px/15px Lucida Grande, Lucida Sans Unicode,
-Arial, Verdana, sans-serif; background-color: transparent; color: #0099FF;
-text-align: left; padding-left: 1%;
 ` |
 
 ### BPM number display
@@ -1179,19 +1144,17 @@ Changed in Mixxx 2.00
 
 Use `visual_bpm` key instead `bpm`
 
-|                                                                                                                                                                                                                                                                                                                                        |  |                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                              |  |                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
 | `<NumberBpm>
-    <TooltipId>visual_bpm</TooltipId>
-    <Channel>X</Channel>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Style>font; bg-color; color; text-align; (padding);
-    </Style>
-    <NumberOfDigits>6</NumberOfDigits>
-    <Connection>
-        <ConfigKey>[ChannelX],visual_bpm</ConfigKey>
-    </Connection>
+  <TooltipId>visual_bpm</TooltipId>
+  <Channel>X</Channel>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <NumberOfDigits>6</NumberOfDigits>
+  <Connection>
+  <ConfigKey>[ChannelX],visual_bpm</ConfigKey>
+  </Connection>
 </NumberBpm>` |  | `
 
 
@@ -1212,18 +1175,16 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 New in Mixxx 2.00
 
-|                                                                                                                                                                                                                                                                                                      |  |                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------- |
+|                                                                                                                                                                                                          |  |                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------- |
 | `<Key>
-    <TooltipId>visual_key</TooltipId>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Style>font; bg-color; color; text-align; (padding);
-    </Style>
-        <DisplayCents>true</DisplayCents>
-    <Connection>
-        <ConfigKey>[ChannelX],visual_key</ConfigKey>
-    </Connection>
+  <TooltipId>visual_key</TooltipId>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <DisplayCents>true</DisplayCents>
+  <Connection>
+  <ConfigKey>[ChannelX],visual_key</ConfigKey>
+  </Connection>
 </Key>` |  | `
 
 
@@ -1241,19 +1202,17 @@ Display the distance to the next key
 
 ### Playing position / Time remaining
 
-|                                                                                                                                                                                                                                                                                                                                          |  |                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                |  |                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
 | `<NumberPos>
-    <TooltipId>track_time</TooltipId>
-    <Channel>X</Channel>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Style>font; bg-color; color; text-align; (padding);
-    </Style>
-    <NumberOfDigits>6</NumberOfDigits>
-    <Connection>
-        <ConfigKey>[ChannelX],playposition</ConfigKey>
-    </Connection>
+  <TooltipId>track_time</TooltipId>
+  <Channel>X</Channel>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <NumberOfDigits>6</NumberOfDigits>
+  <Connection>
+  <ConfigKey>[ChannelX],playposition</ConfigKey>
+  </Connection>
 </NumberPos>` |  | `
 
 
@@ -1272,18 +1231,16 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### Pitch rate display
 
-|                                                                                                                                                                                                                                                                                                        |  |                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                        |  |                                                                                                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<NumberRate>
-    <TooltipId>rate_display</TooltipId>
-    <Channel>X</Channel>
-    <Pos>X,Y</Pos>
-    <Size>W,H</Size>
-    <Style>font; background-color; color; text-align; (padding);
-    </Style>
-    <Connection>
-        <ConfigKey>[ChannelX],rate</ConfigKey>
-    </Connection>
+  <TooltipId>rate_display</TooltipId>
+  <Channel>X</Channel>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <Connection>
+  <ConfigKey>[ChannelX],rate</ConfigKey>
+  </Connection>
 </NumberRate>
 ` |  | `
 
@@ -1435,43 +1392,42 @@ be triggered when that particular mouse button (left or right) is down.
 
 ### Recording
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
-    <TooltipId>???</TooltipId>
-    <Style>...</Style>
-    <NumberStates>3</NumberStates>
-    <LeftClickIsPushButton>true</LeftClickIsPushButton>
-    <RightClickIsPushButton>true</RightClickIsPushButton>
-    <State>
-        <!-- RECORD OFF -->
-        <Number>0</Number>
-        <Pressed>btn_record_over.png</Pressed>
-        <Unpressed>btn_record.png</Unpressed>
-    </State>
-    <State>
-        <!-- RECORD READY-->
-        <Number>1</Number>
-        <Pressed>btn_record_over.png</Pressed>
-        <Unpressed>btn_record_over.png</Unpressed>
-    </State>
-    <State>
-        <!-- RECORD ON-->
-        <Number>2</Number>
-        <Pressed>btn_record_over.png</Pressed>
-        <Unpressed>btn_record_over.png</Unpressed>
-    </State>
-    <Pos>199,114</Pos>
-    <Connection>
-        <ConfigKey>[Recording],toggle_recording</ConfigKey>
-        <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
-        <ButtonState>LeftButton</ButtonState>
-        <ConnectValueToWidget>false</ConnectValueToWidget>
-    </Connection>
-    <Connection>
-        <ConfigKey>[Recording],status</ConfigKey>
-        <ConnectValueFromWidget>false</ConnectValueFromWidget>
-    </Connection>
+  <TooltipId>???</TooltipId>
+  <NumberStates>3</NumberStates>
+  <LeftClickIsPushButton>true</LeftClickIsPushButton>
+  <RightClickIsPushButton>true</RightClickIsPushButton>
+  <State>
+    <!-- RECORD OFF -->
+    <Number>0</Number>
+    <Pressed>btn_record_over.png</Pressed>
+    <Unpressed>btn_record.png</Unpressed>
+  </State>
+  <State>
+    <!-- RECORD READY-->
+    <Number>1</Number>
+    <Pressed>btn_record_over.png</Pressed>
+    <Unpressed>btn_record_over.png</Unpressed>
+  </State>
+  <State>
+    <!-- RECORD ON-->
+    <Number>2</Number>
+    <Pressed>btn_record_over.png</Pressed>
+    <Unpressed>btn_record_over.png</Unpressed>
+  </State>
+  <Pos>199,114</Pos>
+  <Connection>
+    <ConfigKey>[Recording],toggle_recording</ConfigKey>
+    <EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+    <ButtonState>LeftButton</ButtonState>
+    <ConnectValueToWidget>false</ConnectValueToWidget>
+  </Connection>
+  <Connection>
+    <ConfigKey>[Recording],status</ConfigKey>
+    <ConnectValueFromWidget>false</ConnectValueFromWidget>
+  </Connection>
 </PushButton>
 ` | `New in Mixxx 1.11
 
@@ -2127,26 +2083,25 @@ Defines connected Channel (X = 1 or 2) , performed action (beatsync)
 
 ### BPM tap
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                            |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<PushButton>
-    <TooltipId>???</TooltipId>
-    <Style>...</Style>
-    <NumberStates>1</NumberStates>
-    <State>
+  <TooltipId>???</TooltipId>
+  <NumberStates>1</NumberStates>
+  <State>
     <Number>0</Number>
     <Pressed>pressed.png</Pressed>
     <Unpressed>unpressed.png</Unpressed>
-    </State>
-    <Pos>X,Y</Pos>
-    <Connection>
+  </State>
+  <Pos>X,Y</Pos>
+  <Connection>
     <ConfigKey>[ChannelX],bpm_tap</ConfigKey>
     <EmitOnDownPress>true</EmitOnDownPress>
-    </Connection>
-    <Connection>
+  </Connection>
+  <Connection>
     <ConfigKey>[ChannelX],bpm_tap</ConfigKey>
     <EmitOnDownPress>false</EmitOnDownPress>
-    </Connection>
+  </Connection>
 </PushButton>
 ` | `
 
@@ -2516,36 +2471,31 @@ these special nodes.
 
 ### TrackProperty
 
-New in Mixxx 1.9  
+New in Mixxx 1.9
+
 Replace the [Text](/creating_skins#track_information) node with
 TrackProperty\`s to display more advanced track informations. You can
-display more than one TrackProperty node in a skin. |\<code=xml\>
-\<TrackProperty\>
+display more than one TrackProperty node in a skin.
 
-``` 
-    <TooltipId>???</TooltipId>
-    <Style>...</Style>
-    <Property>...</Property>
-    <Channel>X</Channel>
-    <Pos>x,y</Pos>
-    <Size>a,b</Size>
- </TrackProperty>
-```
+|                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<TrackProperty>
+      <TooltipId>???</TooltipId>
+      <Property>...</Property>
+      <Channel>X</Channel>
+      <Pos>x,y</Pos>
+      <Size>a,b</Size>
+   </TrackProperty>
+` | `
 
-\</code\>|`
-
-???= check //src/skin/tooltips.cpp// for the correct tooltip ID for each
-key
+???= check //src/skin/tooltips.cpp// for the correct tooltip ID for each key
 
 The "Property" field can be any of:
-artist, title, album, genre, year, track_number, times_played, comment,
-bpm, bpmFormatted, duration, durationFormatted, key (new in Mixxx 1.11)
+artist, title, album, genre, year, track_number, times_played, comment, bpm, bpmFormatted, duration, durationFormatted, key (new in Mixxx 1.11)
 
-bpm will be the full precision number (i.e. 1.333333333) while
-bpmFormatted is to 3 decimal places (1.333),
-duration is the duration in seconds, while durationFormatted is the
-duration in hh:mm:ss.xx format.
-`|
+bpm will be the full precision number (i.e. 1.333333333) while bpmFormatted is to 3 decimal places (1.333),
+duration is the duration in seconds, while durationFormatted is the duration in hh:mm:ss.xx format.
+` |
 
 ### WidgetGroup
 

@@ -244,8 +244,8 @@ see <http://doc.qt.io/qt-5/svgrendering.html>
 ### Skin licensing & copyright
 
 The principles on licensing found on the [Creative Common
-Wiki](http://wiki.creativecommons.org/Before_Licensing) apply for other
-licenses too.
+Wiki](https://wiki.creativecommons.org/index.php?title=Considerations_for_licensors_and_licensees)
+apply for other licenses too.
 
 If you are going to make a skin from scratch , think about which license
 to choose for your work. Make sure you have **the rights** to apply the
@@ -335,23 +335,19 @@ Further reads:
 
 ### Tools
 
-  - Free Text editors - Online ([Piratepad](http://piratepad.net/),
-    [Google Docs](http://docs.google.com/)), Windows
-    ([Pspad](http://www.pspad.com/)), Mac OSX
-    ([Textwrangler](http://www.barebones.com/products/textwrangler/)),
-    Linux (Kate, Gedit)
+  - Free Code editors - Cross-platform ([Visual Code
+    Studio](https://code.visualstudio.com/)), ([Atom](https://atom.io/))
   - Free Images editors - Online
     ([Phoenix](http://aviary.com/tools/phoenix),
     [Pixlr](http://www.pixlr.com/)), Windows
-    ([Paint.net](http://www.getpaint.net/),
-    [Gimp](http://gimp-win.sourceforge.net/) ) Mac OSX
+    ([Paint.net](http://www.getpaint.net/)) Mac OSX
     ([Pixelmator](http://www.pixelmator.com/) -trial-), Linux (Gimp,
     Inkscape)
   - Free color tools - Online ([Color Palette
     Generator](http://bighugelabs.com/colors.php),
-    [Colorblender](http://www.colorblender.com/) , [Color Scheme
-    Designer](http://colorschemedesigner.com/))
-  - Free knob tools - Windows, MacOSX & Linux
+    [Colorblender](http://www.colorblender.com/) , [Paletton, the color
+    scheme designer](http://paletton.com/))
+  - Free knob tools - Cross-platform
     ([JKnobman](http://www.g200kg.com/en/software/knobman.html))
 
 # Skin.xml in-depth review
@@ -459,11 +455,11 @@ knowing what Qt widget the associated Mixxx widget derives from.
 Handy resources:
 
   - [Qt Style Sheet
-    Documentation](http://qt-project.org/doc/qt-4.8/stylesheet.html)
+    Documentation](https://doc.qt.io/doc/qt-4.8/stylesheet.html)
   - [Qt Style Sheet
-    Syntax](http://qt-project.org/doc/qt-4.8/stylesheet-syntax.html)
+    Syntax](https://doc.qt.io/doc/qt-4.8/stylesheet-syntax.html)
   - [Qt Style Sheet Widget
-    Reference](http://qt-project.org/doc/qt-4.8/stylesheet-reference.html)
+    Reference](https://doc.qt.io/doc/qt-4.8/stylesheet-reference.html)
     -- tells you what widgets support which properties.
 
 Here is a potentially out-of-date list of which Mixxx widgets derive
@@ -606,7 +602,7 @@ no maximum width, maximum height 300
 
 `<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
 on the available space. Size policy refers to the Qt
-[QSizePolicy](http://qt-project.org/doc/qt-4.8/qsizepolicy.html#Policy-enum).
+[QSizePolicy](https://doc.qt.io/qt-4.8/qsizepolicy.html#Policy-enum).
 
 | SizePolicy       |  | Skin Abbreviation |  | What it does                                                                                                                                                                  |  |
 | ---------------- |  | ----------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
@@ -1150,7 +1146,7 @@ capitalized AM/PM
 seconds are shown or not. Default was false.
 You could set a custom format with <CustomFormat> instead of
 <ClockFormat>, which accepts the same expressions as QTime::toString
-(http://qt-project.org/doc/qt-4.8/qtime.html#toString)
+(https://doc.qt.io/qt-4.8/qt-4.8/qtime.html#toString)
 `|
 
 ### Track information
@@ -2639,9 +2635,8 @@ automatically layout its children according to their size policies and
 minimum/maximum widths (see `<SizePolicy>` info above). As of Mixxx
 2.00.0 the valid layout types are "horizontal" and "vertical". These
 correspond to putting all the child widgets in a
-[QHBoxLayout](http://qt-project.org/doc/qt-4.8/qhboxlayout.html) and
-[QVBoxLayout](http://qt-project.org/doc/qt-4.8/qvboxlayout.html),
-respectively.
+[QHBoxLayout](https://doc.qt.io/qt-4.8/qhboxlayout.html) and
+[QVBoxLayout](https://doc.qt.io/qt-4.8/qvboxlayout.html), respectively.
 
 |                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                              |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

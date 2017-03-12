@@ -32,9 +32,7 @@ The following tables list the keys associated with each group.
 You can view the control connected to any part of a skin by running
 Mixxx with the `--developer` command line option and hovering your mouse
 cursor over part of the skin. If no tooltip appears, enable tooltips for
-the Library and Skin in *Options \> Preferences \> Interface*. A
-searchable list of controls and their current values is available in
-*Developer \> Developer Tools*
+the Library and Skin in Options \> Preferences \> Interface.
 
 ## Tip: Changing any control from the GUI in Developer Mode
 

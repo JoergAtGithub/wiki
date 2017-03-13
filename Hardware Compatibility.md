@@ -525,7 +525,7 @@ transitions between DJs. \<sortable 2=numeric\>
 
 \</sortable\>
 
-### Microphones
+#### Microphones
 
 Mixxx can work with any microphone that you can plug into a [\#sound
 card](#sound%20card) that your operating system supports.

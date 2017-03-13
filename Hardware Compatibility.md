@@ -525,6 +525,24 @@ transitions between DJs. \<sortable 2=numeric\>
 
 \</sortable\>
 
+### Microphones
+
+Mixxx can work with any microphone that you can plug into a [\#sound
+card](#sound%20card) that your operating system supports.
+
+USB microphones are not recommended on Windows. These devices have their
+own sound card built in. Every sound card runs on its own clock and no
+two sound cards' clocks will stay synchronized. When using
+unsynchronized clocks, it is likely that there will be glitches in the
+audio. Mixxx is able to compensate for the differences between multiple
+sound cards' clocks, but ASIO, the [recommended sound
+API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+on Windows, can only work with one sound card at a time. It is possible
+to use [ASIO4ALL](http://asio4all.com/) to use multiple sound cards at a
+time with ASIO, but that makes all the sound cards appear as one device
+to Mixxx, so Mixxx's methods for accommodating multiple clocks will not
+work.
+
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.

@@ -527,8 +527,8 @@ transitions between DJs. \<sortable 2=numeric\>
 
 ## Microphones
 
-Mixxx can work with any microphone that you can plug into a [\#sound
-card](#sound%20card) that your operating system supports.
+Mixxx can work with any microphone that you can plug into a [sound
+card](#sound-cards) that your operating system supports.
 
 USB microphones are not recommended on Windows. These devices have their
 own sound card built in. Every sound card runs on its own clock and no

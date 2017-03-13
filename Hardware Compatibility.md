@@ -307,11 +307,6 @@ API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
 on Windows. Most work with Linux, but not all; check the table for
 details.
 
-If you have a Firewire/IEEE 1394 interface, the only way to use it with
-Linux is with JACK (not ALSA). The FFADO project has [a list of Firewire
-interfaces compatible with
-Linux](http://ffado.org/?q=devicesupport/list).
-
 Thunderbolt sound cards can operate at lower latencies than USB or
 Firewire sound cards, but are generally only compatible with Mac OS X.
 

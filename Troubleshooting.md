@@ -142,11 +142,6 @@ console and run `lsmod | grep snd_seq_midi` to check if the module has
 been loaded. If it has not, run `modprobe snd-seq-midi` as root and
 restart Mixxx.
 
-This happens on GNU/Linux where devices like the American Audio VMS4.1
-only show up as an HID device, not a MIDI device. Also, there is [a
-bug](https://bugs.archlinux.org/task/44286) in Arch Linux that requires
-loading the snd-seq-midi module manually.
-
 ### HID and USB Bulk controllers on GNU/Linux
 
 If your controller does not appear in the list of controllers on the

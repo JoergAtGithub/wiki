@@ -284,7 +284,10 @@ For shift modes that are only active while a button is held down, avoid
 making LEDs change when the shift button is pressed. It can be
 distracting and confusing if the user presses the shift button to access
 one alternate function and at the same time LEDs flicker for an
-unrelated part of the controller. For layers that stay activated after a
+unrelated part of the controller. If the shift button only affects a
+specific part of the controller (for example the effects buttons),
+changing LEDs when it is pressed is okay if the button will only be
+pressed for one specific purpose. For layers that stay activated after a
 button is pressed, somehow make the controller clearly indicate which
 layer is active.
 

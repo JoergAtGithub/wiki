@@ -16,6 +16,17 @@ Virtual DJ.
 
 Vestax went out of business in 2014.
 
+# Compatibility
+
+The original VCI-400 firmware has a bug that prevents the sound card
+from working with Linux. Now that Vestax is out of business, drivers and
+firmware for Vestax devices are hosted on [Serato's
+website](https://support.serato.com/hc/en-us/articles/203593924-Vestax-Hardware-Drivers-and-Firmware).
+If your VCI-400's sound card does not appear as an available device
+using Linux, use the firmware updater on a computer running Windows or
+Mac OS X. This will only need to be done once and then it will continue
+to work with Linux.
+
 ## New Mapping (2.0+)
 
 **The new VCI-400 mapping for Mixxx is based on the Serato Limited

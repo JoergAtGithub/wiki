@@ -293,7 +293,9 @@ layer is active.
 Sampler buttons should behave as follows:
 
   - Press when no sample is loaded: LoadSelectedTrack
-  - Press when a sample is loaded: cue\_gotoandplay
+  - Press when a sample is loaded: cue\_gotoandplay. This allows samples
+    to be replayed repeatedly from their cue point without the user
+    having to stop the sample first.
   - Shift + press: If sample is playing, stop it. If a sample is loaded
     but not playing, eject it.
 

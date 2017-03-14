@@ -110,7 +110,8 @@ this wiki, please fix it.
 
   - [Bugfix Workflow](Bugfix%20Workflow) 
   - [Using Git](Using%20Git)
-  - [Developer Guide](Developer%20Guide)
+  - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
+    architecture
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
   - [Bug Tracker](launchpad_bugs)

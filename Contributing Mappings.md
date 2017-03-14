@@ -292,8 +292,7 @@ layer is active.
 
 Sampler buttons should behave as follows:
 
-  - Press when no sample is loaded: load the selected track in the
-    library
+  - Press when no sample is loaded: LoadSelectedTrack
   - Press when a sample is loaded: cue\_gotoandplay
   - Shift + press: If sample is playing, stop it. If a sample is loaded
     but not playing, eject it.

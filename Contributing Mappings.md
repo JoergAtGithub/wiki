@@ -238,6 +238,10 @@ variables that control those options at the very top of your JavaScript
 file with comments explaining how to set the options. Also explain how
 to set these options on the wiki page for your controller.
 
+Try to add as few options as necessary. If you think you should add more
+options, reconsider your design first. Only use an option where there is
+not one best way to do it.
+
 ### Blinking LEDs
 
 Mappings should not blink LEDs for an extended period of time. If you
@@ -260,6 +264,10 @@ selected by the user in the preferences. If the user does not want
 blinking LEDs, they can choose a cue mode in Mixxx's preferences that
 doesn't have them.
 
+The [Components JS\#PlayButton](Components%20JS#PlayButton) and
+[Components JS\#CueButton](Components%20JS#CueButton) objects in
+Components JS can take care of these details for you.
+
 ### Layering & Shift functions
 
 Mapping parts of a controller to do different actions in different
@@ -279,6 +287,24 @@ one alternate function and at the same time LEDs flicker for an
 unrelated part of the controller. For layers that stay activated after a
 button is pressed, somehow make the controller clearly indicate which
 layer is active.
+
+### Sampler buttons
+
+Sampler buttons should behave as follows:
+
+  - Press when no sample is loaded: load the selected track in the
+    library
+  - Press when a sample is loaded: cue\_gotoandplay
+  - Shift + press: If sample is playing, stop it. If a sample is loaded
+    but not playing, eject it.
+
+If your controller can turn the sampler buttons multiple colors, use
+those to distinguish between a sampler that is loaded but not playing, a
+sampler that is playing, and (if you have enough colors available) a
+sampler that is playing and looping.
+
+The [Components JS\#SamplerButton](Components%20JS#SamplerButton) object
+in Components JS will can take care of these details for you a
 
 ### Main & Headphone gain knobs
 

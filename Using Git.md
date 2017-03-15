@@ -375,7 +375,9 @@ tested:
   - [TortoiseGit](https://tortoisegit.org/)
   - [Git Extensions](http://gitextensions.github.io/)
 
-#### Mac OS X
+#### macOS
+
+  - \[\[[https://www.sourcetreeapp.com/|SourceTree](https://www.sourcetreeapp.com/%7CSourceTree)\]
 
 #### Linux
 

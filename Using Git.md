@@ -377,7 +377,7 @@ tested:
 
 #### macOS
 
-  - \[\[[https://www.sourcetreeapp.com/|SourceTree](https://www.sourcetreeapp.com/%7CSourceTree)\]
+  - [SourceTree](https://www.sourcetreeapp.com/)
 
 #### Linux
 

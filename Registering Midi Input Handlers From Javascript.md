@@ -73,7 +73,12 @@ Here is a little demonstration that would handle deck 1's play button:
         });
     };
     
-    var someObject = new ConstructorFunction('[Channel1']);
+    var someObject = new ConstructorFunction('[Channel1]');
+    
+    ... stuff happens ...
+    
+    someObject.group = '[Channel3]';
+    // someObject now handles the play button for Channel 3 with the same MIDI input callback
 
 A `bind` method on the connection objects could be provided to change
 the `this` object. That might open the door to innovative ways of

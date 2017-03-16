@@ -38,6 +38,14 @@ this wiki, please fix it.
 
   - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
     mixes, download and share controller mappings and skins
+  - [Development
+    builds](http://downloads.mixxx.org/builds/master/release/):
+    installers for the latest code we are working on. Please help us
+    test the latest code and report bugs. We try to make sure code is
+    reasonably stable before including it in these, but only use
+    development builds if you are comfortable using bleeding edge
+    software. Do not upgrade to a new version without adequate time to
+    test it before a performance.
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list
   - [Mixxx website](http://www.mixxx.org)

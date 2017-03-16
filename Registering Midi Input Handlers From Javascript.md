@@ -3,7 +3,7 @@
 This feature is in planning. It will not be included in Mixxx 2.1.
 Hopefully it will be ready for Mixxx 2.2.
 
-### Background
+# Background
 
 Working with the hybrid JavaScript & XML system is an unpleasant
 developer experience. Most controllers require most if not (almost) all

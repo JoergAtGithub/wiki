@@ -91,9 +91,11 @@ code. Thoughts?
 The [Components JS](Components%20JS) library would continue to work in
 largely the same way. The input callback would be registered by the
 generic `Component` constructor using the Component's `midi` and `input`
-properties as arguments to `midi.makeInputHandler`. The input connection
-object would be stored as a property of the Componenet. As before, input
-callbacks would use `this.group` and `this.inKey` to refer to a
+properties as arguments to `midi.makeInputHandler`. Like the output
+connections, the input connection objects would be stored in an array
+property of the Component and the library would provide prototype
+methods for connecting/disconnecting the input handlers. As before,
+input callbacks would use `this.group` and `this.inKey` to refer to a
 ControlObject specified by the Component.
 
 ## Working with layers

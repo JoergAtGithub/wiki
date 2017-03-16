@@ -46,12 +46,12 @@ this wiki, please fix it.
     development builds if you are comfortable using bleeding edge
     software. Do not upgrade to a new version without adequate time to
     test it before a performance.
-  - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-    email list
-  - [Mixxx website](http://www.mixxx.org)
   - [Bug tracker](https://bugs.launchpad.net/mixxx/) and [development
     blueprint planning](https://blueprints.launchpad.net/mixxx) are
     hosted on [Launchpad](http://launchpad.net/mixxx/)
+  - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
+    email list
+  - [Mixxx website](http://www.mixxx.org)
   - [Internationalization](Internationalization): Help translate Mixxx
     into other languages
   - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)

@@ -6,15 +6,15 @@ Hopefully it will be ready for Mixxx 2.2.
 ## Background
 
 Working with the hybrid JavaScript & XML system is an unpleasant
-developer experience. Most controllers require most if not (almost) all
-of the mapping to be written in JavaScript for a fully functional
-mapping. XML files quickly become very unwieldy and practically
-impossible to organize. Every time a JavaScript input handler is renamed
-or a mapping is rearranged, the XML file must be edited and manually
-reloaded. It would be easier to write mappings if development could be
-done entirely in JavaScript. The JavaScript system can already handle
-output to controllers; the only missing piece is registering functions
-to handle input from controllers.
+developer experience. Most controllers require (almost) all of the
+mapping to be written in JavaScript for a fully functional mapping. XML
+files quickly become very unwieldy and practically impossible to
+organize. Every time a JavaScript input handler is renamed or a mapping
+is rearranged, the XML file must be edited and manually reloaded. It
+would be easier to write mappings if development could be done entirely
+in JavaScript. The JavaScript system can already handle output to
+controllers; the only missing piece is registering functions to handle
+input from controllers.
 
 ## Overview
 

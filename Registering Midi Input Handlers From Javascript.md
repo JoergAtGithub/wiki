@@ -53,7 +53,7 @@ argument would be the callback function. The callback function would
 receive a single argument that is an array with each member being a byte
 of the incoming MIDI message.
 
-    var connection = midi.registerInput([0x91, 0x40], function (input) {
+    var connection = midi.makeInputHandler([0x91, 0x40], function (input) {
         engine.setValue('group', 'item', input[2] / 127);
     });
     connection.disconnect();
@@ -68,7 +68,7 @@ Here is a little demonstration that would handle deck 1's play button:
 
     var ConstructorFunction = function (group) {
         this.group = group;
-        this.inputConnection = midi.registerInput([0x91, 0x40], function (input) {
+        this.inputConnection = midi.makeInputHandler([0x91, 0x40], function (input) {
             engine.setValue(this.group, 'play', input[2] / 127);
         });
     };
@@ -91,7 +91,7 @@ code. Thoughts?
 The [Components JS](Components%20JS) library would continue to work in
 largely the same way. The input callback would be registered by the
 generic `Component` constructor using the Component's `midi` and `input`
-properties as arguments to `midi.registerInput`. As before, input
+properties as arguments to `midi.makeInputHandler`. As before, input
 callbacks would use `this.group` and `this.inKey` to refer to a
 ControlObject specified by the Component.
 
@@ -123,7 +123,7 @@ those objects to return the connection objects to scripts with
 Q\_INVOKABLE methods (disconnect, bind, and any other methods we think
 may be useful).
 
-Add the Q\_INVOKABLE registerInput function as a protected method of
+Add the Q\_INVOKABLE makeInputHandler function as a protected method of
 MidiController. This function would create a MidiInputMapping and insert
 it into the m\_preset.inputMappings QMultiHash. MidiInputMapping would
 be modified to hold the connection object described above.

@@ -82,11 +82,12 @@ code. Thoughts?
 
 ## Integrating with Components
 
-Com=ponents would continue to work in largely the same way. The input
-callback would be registered by the generic `Component` constructor
-using the Component's `midi` and `input` properties as arguments to
-`midi.registerInput`. As before, input callbacks would use `this.group`
-and `this.inKey` to refer to a ControlObject specified by the Component.
+The [Components JS](Components%20JS) library would continue to work in
+largely the same way. The input callback would be registered by the
+generic `Component` constructor using the Component's `midi` and `input`
+properties as arguments to `midi.registerInput`. As before, input
+callbacks would use `this.group` and `this.inKey` to refer to a
+ControlObject specified by the Component.
 
 ## Working with layers
 

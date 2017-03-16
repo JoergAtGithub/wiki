@@ -1,0 +1,108 @@
+# Registering MIDI input handlers from JavaScript
+
+This feature is in planning. It will not be included in Mixxx 2.1.
+Hopefully it will be ready for Mixxx 2.2.
+
+### Background
+
+Working with the hybrid JavaScript & XML system is an unpleasant
+developer experience. Most controllers require most if not (almost) all
+of the mapping to be written in JavaScript for a fully functional
+mapping. XML files quickly become very unwieldy and practically
+impossible to organize. Every time a JavaScript input handler is renamed
+or a mapping is rearranged, the XML file must be edited and manually
+reloaded. It would be easier to write mappings if development could be
+done entirely in JavaScript. The JavaScript system can already handle
+output to controllers; the only missing piece is registering functions
+to handle input from controllers.
+
+# Overview
+
+Registering controller input handlers would be done similar to how
+output handlers are registered. A special Q\_INVOKABLE C++ function
+would be called by the script that would return an object to the script
+representing the input connection. This connection object would have a
+UUID and a `disconnect` method, but not do anything else (maybe add a
+`connect` method to disconnect and reconnect without creating a new
+object?). There would not be a limit to the number of connections that
+could be registered to each MIDI input signal.
+
+Each controller mapping would still require an XML file, but this would
+be reduced to providing metadata to the preferences so Mixxx does not
+have to evaluate every JavaScript file in the mapping directories to
+find available mappings. The `<controls>` element would no longer be
+needed.
+
+# JavaScript API
+
+Instead of mimicking the old hybrid XML/JS system, use this opportunity
+to provide a cleaner API that is easy to remember. I still have to copy
+and paste because I can't remember the function signature for MIDI input
+callbacks registered with XML.
+
+The input handlers will not do much by themselves. Instead of
+associating information needed by the input callback (such as a
+ControlObject to work with) with the input handler object, leave this
+responsibility with scripts. Components will make that easy.
+
+## Basic form
+
+The first argument to the function creating the connection would be an
+array containing the first MIDI bytes of the incoming signal. The second
+argument would be the callback function. The callback function would
+receive a single argument that is an array with each member being a byte
+of the incoming MIDI message.
+
+    var connection = midi.registerInput([0x91, 0x40], function (input) {
+        engine.setValue('group', 'item', input[2] / 127);
+    });
+    connection.disconnect();
+
+## Fitting in with object oriented JavaScript
+
+Like registering output connections, the callbacks registered via
+`midi.registerInput` would be executed with JavaScript's `this` keyword
+set to the object in which `midi.registerInput` was called.
+
+Here is a little demonstration that would handle deck 1's play button:
+
+    var ConstructorFunction = function (group) {
+        this.group = group;
+        midi.registerInput([0x91, 0x40], function (input) {
+            engine.setValue(group, 'play', input[2] / 127);
+        });
+    };
+    
+    var someObject = new ConstructorFunction('[Channel1']);
+
+A `bind` method on the connection objects could be provided to change
+the `this` object. That might open the door to innovative ways of
+structuring code better, but it might lead to unnecessarily complex
+code. Thoughts?
+
+## Working with Components
+
+Components would continue to work in largely the same way. The input
+callback would be registered by the generic `Component` constructor
+using the Component's `midi` and `input` properties as arguments to
+`midi.registerInput`. As before, input callbacks would use `this.group`
+and `this.inKey` to refer to a ControlObject specified by the Component.
+
+## Working with layers
+
+When controllers send different MIDI signals with a shift button
+pressed, a second input callback would have to be registered for every
+shifted input signal. Like it is currently handled with Components, this
+could be the same function as the unshifted callback. Shifted
+functionality could be provided by referring to properties of the
+Component (such as `inKey`) that are changed by the Component's `shift`
+& `unshift` functions (which are called by ComponentContainer's `shift`
+and `unshift` methods). Alternatively, separate functions could be
+provided for the shifted and unshifted callbacks.
+
+For managing layers when the controller does not send different MIDI
+signals for each layer, the input callback could be disconnected by
+calling the connection object's `disconnect` method, then a new callback
+could be registered.
+
+\======= C++ side ======

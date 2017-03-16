@@ -6,6 +6,8 @@ page.
 
 ## Specifications for planned features
 
+  - [Registering MIDI input handlers from
+    JavaScript](Registering%20MIDI%20input%20handlers%20from%20JavaScript)
   - [Controller Preferences](Controller%20Preferences)
   - [Mixxx Init Refactor](Mixxx%20Init%20Refactor)
   - [Controller Script Modules](Controller%20Script%20Modules)

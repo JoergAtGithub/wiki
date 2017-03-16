@@ -3,7 +3,7 @@
 This feature is in planning. It will not be included in Mixxx 2.1.
 Hopefully it will be ready for Mixxx 2.2.
 
-# Background
+## Background
 
 Working with the hybrid JavaScript & XML system is an unpleasant
 developer experience. Most controllers require most if not (almost) all
@@ -16,7 +16,7 @@ done entirely in JavaScript. The JavaScript system can already handle
 output to controllers; the only missing piece is registering functions
 to handle input from controllers.
 
-# Overview
+## Overview
 
 Registering controller input handlers would be done similar to how
 output handlers are registered. A special Q\_INVOKABLE C++ function
@@ -106,13 +106,15 @@ calling the connection object's `disconnect` method, then a new callback
 could be registered. Component and ComponentContainer will provide ways
 to manage this.
 
-\======= C++ side ====== Input callback connections would be stored with
-a struct similar to a ScriptConnection created for an output callback.
-These structs would hold a QUuid, the callback QScriptValue, and the
-`this` object QScriptValue as members. A Q\_OBJECT wrapper would be
-created around those objects to return the connection objects to scripts
-with Q\_INVOKABLE methods (disconnect, bind, and any other methods we
-think may be useful).
+## C++ side
+
+Input callback connections would be stored with a struct similar to a
+ScriptConnection created for an output callback. These structs would
+hold a QUuid, the callback QScriptValue, and the `this` object
+QScriptValue as members. A Q\_OBJECT wrapper would be created around
+those objects to return the connection objects to scripts with
+Q\_INVOKABLE methods (disconnect, bind, and any other methods we think
+may be useful).
 
 Add the Q\_INVOKABLE registerInput function as a protected method of
 MidiController. This function would create a MidiInputMapping and insert

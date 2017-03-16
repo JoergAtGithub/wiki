@@ -80,9 +80,9 @@ the `this` object. That might open the door to innovative ways of
 structuring code better, but it might lead to unnecessarily complex
 code. Thoughts?
 
-## Working with Components
+## Integrating with Components
 
-Components would continue to work in largely the same way. The input
+Com=ponents would continue to work in largely the same way. The input
 callback would be registered by the generic `Component` constructor
 using the Component's `midi` and `input` properties as arguments to
 `midi.registerInput`. As before, input callbacks would use `this.group`
@@ -106,7 +106,7 @@ calling the connection object's `disconnect` method, then a new callback
 could be registered. Component and ComponentContainer will provide ways
 to manage this.
 
-## C++ side
+# C++ side
 
 Input callback connections would be stored with a struct similar to a
 ScriptConnection created for an output callback. These structs would

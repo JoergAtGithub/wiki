@@ -78,7 +78,8 @@ Here is a little demonstration that would handle deck 1's play button:
     // ... stuff happens ...
     
     someObject.group = '[Channel3]';
-    // someObject now handles the play button for deck 3 using the same MIDI input callback connected to the same MIDI signal
+    // someObject now handles the play button for deck 3
+    // using the same MIDI input callback connected to the same MIDI signal
 
 A `bind` method on the connection objects could be provided to change
 the `this` object. That might open the door to innovative ways of

@@ -75,7 +75,7 @@ Here is a little demonstration that would handle deck 1's play button:
     
     var someObject = new ConstructorFunction('[Channel1]');
     
-    ... stuff happens ...
+    // ... stuff happens ...
     
     someObject.group = '[Channel3]';
     // someObject now handles the play button for Channel 3 with the same MIDI input callback

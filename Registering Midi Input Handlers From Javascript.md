@@ -61,8 +61,8 @@ of the incoming MIDI message.
 ## Fitting in with object oriented JavaScript
 
 Like registering output connections, the callbacks registered via
-`midi.registerInput` would be executed with JavaScript's `this` keyword
-set to the object in which `midi.registerInput` was called.
+`midi.makeInputHandler` would be executed with JavaScript's `this`
+keyword set to the object in which `midi.makeInputHandler` was called.
 
 Here is a little demonstration that would handle deck 1's play button:
 

@@ -103,7 +103,8 @@ provided for the shifted and unshifted callbacks.
 For managing layers when the controller does not send different MIDI
 signals for each layer, the input callback could be disconnected by
 calling the connection object's `disconnect` method, then a new callback
-could be registered.
+could be registered. Component and ComponentContainer will provide ways
+to manage this.
 
 \======= C++ side ====== Input callback connections would be stored with
 a struct similar to a ScriptConnection created for an output callback.

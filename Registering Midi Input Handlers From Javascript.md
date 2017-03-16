@@ -27,11 +27,11 @@ UUID and a `disconnect` method, but not do anything else (maybe add a
 object?). There would not be a limit to the number of connections that
 could be registered to each MIDI input signal.
 
-Each controller mapping would still require an XML file, but this would
-be reduced to providing metadata to the preferences so Mixxx does not
-have to evaluate every JavaScript file in the mapping directories to
-find available mappings. The `<controls>` element would no longer be
-needed.
+Each controller mapping would still require an XML file, but the role of
+this would be reduced to providing metadata to the preferences so Mixxx
+does not have to evaluate every JavaScript file in the mapping
+directories to find available mappings. The `<controls>` element would
+no longer be needed in the XML file.
 
 # JavaScript API
 

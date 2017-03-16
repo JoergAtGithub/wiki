@@ -69,7 +69,7 @@ Here is a little demonstration that would handle deck 1's play button:
     var ConstructorFunction = function (group) {
         this.group = group;
         midi.registerInput([0x91, 0x40], function (input) {
-            engine.setValue(group, 'play', input[2] / 127);
+            engine.setValue(this.group, 'play', input[2] / 127);
         });
     };
     

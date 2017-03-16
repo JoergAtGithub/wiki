@@ -105,4 +105,17 @@ signals for each layer, the input callback could be disconnected by
 calling the connection object's `disconnect` method, then a new callback
 could be registered.
 
-\======= C++ side ======
+\======= C++ side ====== Input callback connections would be stored with
+a struct similar to a ScriptConnection created for an output callback.
+These structs would hold a QUuid, the callback QScriptValue, and the
+`this` object QScriptValue as members. A Q\_OBJECT wrapper would be
+created around those objects to return the connection objects to scripts
+with Q\_INVOKABLE methods (disconnect, bind, and any other methods we
+think may be useful).
+
+Add the Q\_INVOKABLE registerInput function as a protected method of
+MidiController. This function would create a MidiInputMapping and insert
+it into the m\_preset.inputMappings QMultiHash. MidiInputMapping would
+be modified to hold the connection object described above.
+MidiController::processInputMapping would check if the MidiInputMapping
+contained a script connected callback, and if so, execute it.

@@ -70,12 +70,13 @@ MIDI signals in the XML file. For example:
         </options>
     </control>
 
-In the future Mixxx will be able to register MIDI inputs from
-JavaScript, so that will not be necessary. Until then, if you decide to
-rename a Component or map it to different MIDI input signals, you need
-to edit the XML file and reload the mapping in Mixxx's Preferences. The
-output does not need to be mapped in XML. It is handled by the library
-in JavaScript.
+In the future Mixxx will be able to [register MIDI inputs from
+JavaScript](registering%20midi%20input%20handlers%20from%20javascript),
+so that will not be necessary. Until then, if you decide to rename a
+Component or map it to different MIDI input signals, you need to edit
+the XML file and reload the mapping in Mixxx's Preferences. The output
+does not need to be mapped in XML. It is handled by the library in
+JavaScript.
 
 Create Components by calling the constructor with JavaScript's "new"
 keyword. The Component constructor takes a single object as an argument.

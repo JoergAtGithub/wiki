@@ -187,63 +187,6 @@ overwrite:
   - **outToggle**: sets `group`, `outKey` to its inverse (0 if it is
     \>0; 1 if it is 0)
 
-### Shift layers
-
-Components can be used to manage alternate behaviors in different
-conditions. The most common use case for this is for shift buttons. If
-your controller sends different MIDI signals depending on whether shift
-is pressed, map both the shifted and unshifted input signals to the
-Component's `input` function in XML. Assign functions to the `shift` and
-`unshift` properties that manipulate the Component appropriately.
-
-In some cases, using the `shift`/`unshift` functions to change the
-Component's `inKey`, `outKey`, and/or `group` properties will be
-sufficient. As an example, here is the source code for PlayButton:
-
-    var PlayButton = function (options) {
-        Button.call(this, options);
-    };
-    PlayButton.prototype = new Button({
-        unshift: function () {
-            this.inKey = 'play';
-        },
-        shift: function () {
-            this.inKey = 'start_stop';
-        },
-        outKey: 'play_indicator',
-    });
-
-In more complex cases, overwriting the `input` and `output` functions
-may be required. Refer to the source code of
-[\#SamplerButton](#SamplerButton) for an example.
-
-For convenience, the Component constructor will automatically call the
-`unshift` function if it exists (otherwise, in the above example for
-PlayButton, `inKey` would have to be specified as a property of the
-prototype object and set in the `unshift` function). The `shift` and
-`unshift` functions of [\#ComponentContainer](#ComponentContainer) will
-call the corresponding function of all the Components within it that
-have that function defined and will recursively descend into
-ComponentContainers that are properties of the parent
-ComponentContainer.
-
-To use separate `output` callback functions in shifted and unshifted
-modes, the Component's `shift` and `unshift` functions need to call
-`disconnect`/`connect` and `trigger`. ComponentContainer's
-`shift`/`unshift` methods will not do this automatically. Generally, you
-should avoid making LEDs change when a shift button is pressed. This is
-distracting if the user is pressing shift to use the shifted
-functionality of a different part of the controller. For layers that
-stay activated after a button is released, this is not as much of an
-issue.
-
-To handle the interaction of shifted and unshifted states with another
-layer, you can create another system of methods for each Component that
-changes properties of the Component when a layer is activated, and
-within those methods, you can change the `shift` and `unshift` of the
-Component. Refer to the source code of [\#EffectUnit](#EffectUnit) for
-an example.
-
 ### Optional properties
 
 The following properties can be specified in the options object passed
@@ -510,10 +453,12 @@ property for the constructor.
 Encoders can often be pushed like a button. Usually, it is best to use a
 separate Button Component to handle the MIDI signals from pushing it.
 
-## ComponentContainer
+## ComponentContainer and Managing Layers
 
 A ComponentContainer is an object that contains Components as
-properties. It has methods to help iterate over those Components:
+properties. ComponentContainer has methods to easily iterate through the
+Components, which makes it easy to manage different layers of
+functionality. The basic ComponentContainer methods are:
 
   - **forEachComponent**: Iterate over all Components in this
     ComponentContainer and perform an operation on them. The operation
@@ -521,43 +466,83 @@ properties. It has methods to help iterate over those Components:
     The operation function takes each Component as its first argument.
     In the context of the operation function, `this` refers to the
     ComponentContainer. `forEachComponent` iterates recursively through
-    the Components in any ComponentContainers that are properties of
-    this ComponentContainer. If you do not want `forEachComponent` to
-    operate recursively, pass `false` as the second argument to
-    `forEachComponent`.
-  - **reconnectComponents**: Disconnect and reconnect output callbacks
-    for each Component. Optionally perform an operation on each
-    Component between disconnecting and reconnecting the output
-    callbacks. Arguments are the same as `forEachComponent`.
-  - **shift**: Call each Component's `shift` method if it exists. This
-    iterates recursively on any Components in ComponentContainers that
-    are properties of this ComponentContainer, so there is no need to
-    call `shift` on each child ComponentContainer. This function takes
-    no arguments.
-  - **unshift**: same as `shift`, but call each Component's `unshift`
-    method
-  - **applyLayer**: Activate a new layer of functionality. Layers are
-    merely objects with properties to overwrite the properties of the
-    Components within this ComponentContainer. Layer objects are deeply
-    merged. If a new layer does not define a property for a Component,
-    the Component's old property will be retained.
+    the Components in any ComponentContainers and arrays that are
+    properties of this ComponentContainer. If you do not want
+    `forEachComponent` to operate recursively, pass `false` as the
+    second argument to `forEachComponent`.
+  - **reconnectComponents**: Call each Component's `disconnect` method,
+    optionally perform an operation on it, then call its `connect` and
+    `trigger` methods to sync the state of the controller's LEDs.
+    Arguments are the same as `forEachComponent`.
 
-In the most common case, for providing alternate functionality when a
-shift button is pressed, using `applyLayer` is likely overcomplicated
-and may be slow. Use `shift`/`unshift` instead. `applyLayer` may be
-useful for cycling through more than two alternate layers.
+Typically, `reconnectComponents` is used to switch between layers. The
+callback passed to reconnectComponents can manipulate each Component's
+properties as appropriate for the new layer. Below is a basic example
+for switching between decks 1 and 3. This is a simple example that does
+not handle the complexities presented by EQs, QuickEffects, or
+EffectAssignmentButtons like [Deck.setCurrentDeck](#Deck) does.
 
-For example:
+    var ExampleContainer = function () {
+        this.play = new components.PlayButton({
+            midi: [0x91, 0x40],
+            group: '[Channel1]',
+        });
+        this.cue = new components.CueButton({
+            midi: [0x91, 0x41],
+            group: '[Channel1]',
+        });
+    };
+    // This will give any object instatiated with "new exampleContainer()"
+    // the ComponentContainer methods.
+    exampleContainer.prototype = new components.ComponentContainer();
+    
+    var demonstration = new ExampleContainer();
+    demonstration.reconnectComponents(function (component) {
+        component.group = '[Channel3]';
+    )};
 
-    someComponentContainer.applyLayer({
-        someButton: { inKey: 'alternate inKey' },
-        anotherButton: { outKey: 'alternate outKey' }
-    });
+In simple cases like the demonstration above, changing a property of
+each Component in the callback passed to `reconnectComponents` is
+sufficient. When more complex manipulation is required, especially if
+the manipulation varies between Components, it is a good idea to use the
+`reconnectComponents` callback to call a specific method on each
+Component. This delegates responsibility for knowing how to switch
+layers to each Component.
 
-By default, `applyLayer` disconnects old layer's output callbacks and
-the new layer's output callbacks are connected. To avoid this behavior,
-which would be desirable if you are not changing any output
-functionality, pass `false` as the second argument to `applyLayer`.
+### Shift layers
+
+The most common use case for changing layers is for shift buttons. If
+your controller sends different MIDI signals depending on whether shift
+is pressed, map both the shifted and unshifted input signals to the
+Component's `input` function in XML. For each Component that has
+different behavior depending on whether shift is pressed, implement
+`shift` and `unshift` methods that manipulate the Component
+appropriately. When the shift button is pressed call
+`ComponentContainer.shift()` and the shift method of each Component in
+the ComponentContainer will be executed (if it exists). When the shift
+button is released, call `ComponentContainer.unshift()` to call each
+Component's `unshift` method.
+
+For convenience, the Component constructor will automatically call the
+`unshift` function if it exists. This allows you to avoid redundancy
+when constructing Components.
+
+To use separate `output` callback functions in shifted and unshifted
+modes, the Component's `shift` and `unshift` functions need to call
+`disconnect`/`connect` and `trigger`. ComponentContainer's
+`shift`/`unshift` methods will not do this automatically like
+`reconnectComponents`. Generally, you should avoid making LEDs change
+when a shift button is pressed. This is distracting if the user is
+pressing shift to use the shifted functionality of a different part of
+the controller. For layers that stay activated after a button is
+released, this is not as much of an issue.
+
+To handle the interaction of shifted and unshifted states with another
+layer, you can create another system of methods for each Component that
+changes properties of the Component when a layer is activated, and
+within those methods, you can change the `shift` and `unshift` of the
+Component. Refer to the source code of [\#EffectUnit](#EffectUnit) for
+an example.
 
 ## Deck
 

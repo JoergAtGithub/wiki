@@ -117,8 +117,8 @@ properties of the new Component. For example:
 
     var quantizeButton = new components.Button({
         midi: [0x91, 0x01],
-        group: '[Channel1]'
-        key: 'quantize'
+        group: '[Channel1]',
+        key: 'quantize',
     });
 
 Setting the `key` property after calling the constructor will not

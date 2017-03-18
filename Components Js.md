@@ -400,6 +400,23 @@ example:
         // off is inherited from Button.prototype
     )};
 
+### EffectAssignmentButton
+
+An EffectAssignmentButton routes a deck through an EffectUnit. It is
+separate from the
+[\#EffectUnit](#EffectUnit)-ComponentContainer-because-it-is-meant-to-be-a-part-of-a-[\#Deck](#Deck).-Using-[Deck.setCurrentDeck](#Deck)
+to switch decks will switch the deck an EffectAssignmentButton assigns
+an EffectUnit to.
+
+    var effectAssignmentButtons = [];
+    for (var u = 1; u <= 4; u++) {
+        effectAssignmentButtons = new components.EffectAssignmentButton({
+            midi: [0x92, 0x20 + u],
+            effectUnit: u,
+            group: '[Channel1]',
+        )};
+    }
+
 ## Pot
 
 A Pot is a Component subtype for potentiometers (faders and knobs) with
@@ -617,8 +634,6 @@ parameters. The Components provided are:
     [\#Button](#Button)s)
   - knobs\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
     [\#Pot](#Pot)s)
-  - enableOnChannelButtons ([\#ComponentContainer](#ComponentContainer)
-    of [\#Button](#Button)s)
 
 When the effect unit is showing the metaknobs of the effects but not
 each parameter, the knobs control the metaknobs. The enableButtons
@@ -634,24 +649,13 @@ effect. An effect can be focused by pressing shift + its enableButton or
 clicking the focus button on screen. Pressing shift + the enableButton
 for the focused effect again unfocuses the effect.
 
-The enableOnChannelButtons allow assigning the effect unit to different
-channels and are named after the Mixxx channel they affect. Not all
-controllers have buttons to map these. The following Buttons are
-provided by default:
-
-  - Channel1
-  - Channel2
-  - Channel3
-  - Channel4
-  - Headphones
-  - Master
-  - Microphone
-  - Auxiliary1
-
-You can easily add more, for example for additional microphones,
-auxiliary inputs, or samplers by calling
-`enableOnChannelButtons.addButton('CHANNEL_NAME')` (do not put brackets
-around the CHANNEL\_NAME).
+Generally, most controllers should use
+[\#EffectAssignmentButton](#EffectAssignmentButton)s in [\#Deck](#Deck)s
+to enable effect units on decks. If you have a dedicated effects
+controller that does not manipulate decks, the enableOnChannelButtons
+provided by EffectUnit would be more appropriate. You can easily create
+these by calling `enableOnChannelButtons.addButton('CHANNEL_NAME')` (do
+not put brackets around the CHANNEL\_NAME) on the EffectUnit object.
 
 ### Setup
 
@@ -671,8 +675,6 @@ For example:
     MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
     MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
     MyController.effectUnit.showParametersButton.midi = [0x90, 0x04];
-    MyController.effectUnit.enableOnChannelButtons.Channel1 = [0x90, 0x05];
-    MyController.effectUnit.enableOnChannelButtons.Channel2 = [0x90, 0x06];
     MyController.effectUnit.init();
 
 Controllers designed for Serato and Rekordbox often have an encoder

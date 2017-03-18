@@ -482,6 +482,7 @@ for switching between decks 1 and 3. This is a simple example that does
 not handle the complexities presented by EQs, QuickEffects, or
 EffectAssignmentButtons like [Deck.setCurrentDeck](#Deck) does.
 
+    // Define a constructor for a ComponentContainer that adds some Components to it
     var ExampleContainer = function () {
         this.play = new components.PlayButton({
             midi: [0x91, 0x40],
@@ -492,7 +493,7 @@ EffectAssignmentButtons like [Deck.setCurrentDeck](#Deck) does.
             group: '[Channel1]',
         });
     };
-    // This will give any object instatiated with "new exampleContainer()"
+    // This will give any object created with "new exampleContainer()"
     // the ComponentContainer methods.
     exampleContainer.prototype = new components.ComponentContainer();
     

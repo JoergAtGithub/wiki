@@ -103,12 +103,11 @@ and pressing certain buttons.
   - Shift + Load will eject the track.
   - Shift + Remix Slot will create a loop of predetermined size.
 
-The Master Volume knob on the S4 controls the built-in hardware volume
-directly, so we have chosen not to also bind it to the Mixxx software
-master volume control. Peak display is only generated from software,
-however. So if you see or hear clipping, it won't help to lower the
-master volume knob -- adjust the knob in the Mixxx GUI or lower the gain
-of the playing tracks.
+The Master Volume knob on the S4 controls the volume of the S4's master
+output in hardware, so it does not affect the software master gain knob
+in Mixxx. Peak display is only generated from software, however. So if
+you see or hear clipping, lower the gain of the playing decks; adjusting
+the master volume knob on the S4 will not help.
 
 ### Unused controls
 

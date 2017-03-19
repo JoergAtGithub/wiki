@@ -27,8 +27,8 @@ providing a controller.
 
 The play/pause buttons, EQ knobs, volume knobs, and crossfader all
 behave as labeled. If you would like to change the mapping of the EQ
-knobs (for example to change the mid EQ knob to control the high EQ or
-filter), use the [MIDI Mapping
+knobs (for example to change the volume knob to control the high EQ and
+use the crossfader for volume), use the [MIDI Mapping
 Wizard](http://mixxx.org/manual/latest/chapters/advanced_topics.html#controller-wizard)
 or [edit the XML file](MIDI%20controller%20mapping%20file%20format).
 

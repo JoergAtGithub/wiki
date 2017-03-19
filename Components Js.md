@@ -365,7 +365,7 @@ function in your mappings's `init` function:
 ### PlayButton
 
 Default behavior: play/pause  
-Shift behavior: go to start of track and stop
+Shift behavior: reverse playback
 
 LED behavior depends on cue mode selected by the user in the preferences
 Refer to the
@@ -374,8 +374,9 @@ for details.
 
 ### CueButton
 
-Behavior depends on cue mode configured by the user in the preferences  
-Refer to the
+Default behavior: depends on cue mode configured by the user in the
+preferences  
+Shift behavior: stop playback and go to start of track Refer to the
 [manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
 for details.
 

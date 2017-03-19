@@ -668,15 +668,14 @@ the enableButtons will go back to controlling the effect enable
 switches.
 
 The LED of the effectFocusButton indicates whether any effect is
-focused. If no effect is focused, its LED is off. If any effect is
-focused, the effectFocusButton's LED will turn on. You can hold the
-effectFocusButton down to see which effect is focused without having to
-look at the computer screen. To unfocus the effect, you can briefly
-press the effectFocusButton. The focused effect is remembered, so when
-you short press the effectFocusButton again, the previously focused
-effect will be refocused. Alternatively, if you want to keep all the
-parameters showing, you can press and hold the effectFocusButton, then
-press the enableButton of the focused effect to unfocus it.
+focused. When its LED is on, you can hold the effectFocusButton down to
+see which effect is focused without having to look at the computer
+screen. To unfocus the effect, you can briefly press the
+effectFocusButton. The focused effect is remembered, so when you short
+press the effectFocusButton again, the previously focused effect will be
+refocused. Alternatively, if you want to keep all the parameters showing
+on screen, you can press and hold the effectFocusButton, then press the
+enableButton of the focused effect to unfocus it.
 
 If the parameters of each effect are not showing on screen, they will be
 shown when the effectFocusButton is pressed. When effect parameters are

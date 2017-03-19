@@ -39,12 +39,11 @@ section of that tutorial.
 
 ## File structure
 
-To map your own controller, create a custom subtype of [\#Deck](#Deck)
-and create instances of your custom Deck objects in your controller's
-`init` function. Use the custom Deck's constructor function to create
-all the Components you need for your particular controller. There is a
-lot to explain here, so don't try to understand every detail of this
-just yet:
+To map most controllers, create a custom subtype of [\#Deck](#Deck) and
+create instances of your custom Deck objects in your controller's `init`
+function. Use the custom Deck's constructor function to create all the
+Components you need for your particular controller. There is a lot to
+explain here, so don't try to understand every detail of this just yet:
 
     // Declare the variable for your controller and assign it to an empty object
     var MyController = {};
@@ -87,6 +86,9 @@ just yet:
     };
     // give your custom Deck all the methods of the generic Deck in the Components library
     MyController.Deck.prototype = new components.Deck();
+
+If you are mapping a controller that does not have a typical layout, a
+different structure for your code may make more sense.
 
 ## Component
 

@@ -656,28 +656,16 @@ effects. The Components provided are:
   - knobs\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
     [\#Pot](#Pot)s)
 
-When the effect unit is showing the metaknobs of the effects but not
-each parameter, the knobs control the metaknobs. The enableButtons
-control whether each effect is enabled.
+When there is no focused effect (the default state), the knobs control
+the effect metaknobs. When an effect is focused, the knobs control the
+first 3 parameters of the focused effect.
 
-When the effect unit is showing all the parameters, the knobs behave
-differently depending on whether an effect is focused. When there is no
-focused effect (the default state), the knobs control the effect
-metaknobs like they do when parameters are not showing. When an effect
-is focused, the knobs control the first 3 parameters of the focused
-effect.
-
-The effectFocusButton behaves differently depending on whether an effect
-is focused and whether the button is pressed briefly or held down. Its
-behavior is complicated to explain, but it is intuitive to use once you
-understand it.
-
-To focus an effect, press and hold the effectFocusButton. The LEDs of
-the enableButtons will switch to show which effect is focused. Press any
-of the enableButtons to focus that effect. Press the enableButton of the
-focused effect to unfocus it and switch the knobs back to controlling
-metaknobs. When the effectFocusButton is released, the enableButtons
-will go back to controlling the effect enable switches.
+To focus an effect, press and hold the effectFocusButton. The
+enableButtons will switch to choosing which effect is focused. Press the
+enableButton of the focused effect to unfocus it and switch the knobs
+back to controlling metaknobs. When the effectFocusButton is released,
+the enableButtons will go back to controlling the effect enable
+switches.
 
 The LED of the effectFocusButton indicates whether any effect is
 focused. If no effect is focused, its LED is off. If any effect is
@@ -686,14 +674,16 @@ effectFocusButton down to see which effect is focused without having to
 look at the computer screen. To unfocus the effect, you can briefly
 press the effectFocusButton. The focused effect is remembered, so when
 you short press the effectFocusButton again, the previously focused
-effect will be refocused.
+effect will be refocused. Alternatively, if you want to keep all the
+parameters showing, you can press and hold the effectFocusButton, then
+press the enableButton of the focused effect to unfocus it.
 
 If the parameters of each effect are not showing on screen, they will be
 shown when the effectFocusButton is pressed. When effect parameters are
 showing, briefly presssing the effectFocusButton hides them and
 unfocuses if any effect is focused.
 
-When shift is pressed with the effectFocusButton, it toggles the
+When the effectFocusButton is pressed with shift, it toggles the
 EffectUnit ComponentContainer between controlling different EffectUnits
 in Mixxx. Typically this is used to toggle between EffectUnits 1 & 3 or
 2 & 4, like deck toggle buttons.

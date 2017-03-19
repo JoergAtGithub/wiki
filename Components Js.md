@@ -715,7 +715,7 @@ For example:
     MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
     MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
     MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
-    MyController.effectUnit.showParametersButton.midi = [0x90, 0x04];
+    MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
     MyController.effectUnit.init();
 
 Controllers designed for Serato and Rekordbox often have an encoder

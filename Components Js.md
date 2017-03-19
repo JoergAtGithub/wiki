@@ -90,20 +90,22 @@ just yet:
 
 ## Component
 
-A Component represents a physical component of a controller, such as a
-button, knob, fader, or encoder. It encapsulates all the information
-needed to receive MIDI input from that component and send MIDI signals
-out to the controller to activate its LED(s). In general, you should not
-use the Component object directly; instead, use one of its subtypes
-([\#Button](#Button), [\#Pot](#Pot), or [\#Encoder](#Encoder)). If you
-do need to use Component directly, do not confuse it with the
-`components` object (plural, lower case) that contains all the objects
-for the library; access Component as `components.Component`.
+The basic building block of the library are Component objects that
+represent a physical component of a controller, such as a button, knob,
+fader, or encoder. The JavaScript object encapsulates all the
+information needed to receive MIDI input from that component and send
+MIDI signals out to the controller to activate its LED(s). In general,
+you should not use the basic Component constructor directly; instead,
+use one of its subtypes ([\#Button](#Button), [\#Pot](#Pot), or
+[\#Encoder](#Encoder)). If you do need to use Component directly, do not
+confuse it with the `components` object (plural, lower case) that
+contains all the objects for the library; access Component as
+`components.Component`.
 
 Components should generally be properties of a
 [\#ComponentContainer](#ComponentContainer) object. Most Components
-should be properties of a custom [\#Deck](#Deck) object, which is a
-subtype of ComponentContainer.
+should be properties of a custom [\#Deck](#Deck) object as demonstrated
+in the example in the previous section.
 
 ### Setup
 

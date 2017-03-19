@@ -37,6 +37,55 @@ you can skip ahead to the [Constructors and object
 instances](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS#Constructors_and_object_instances)
 section of that tutorial.
 
+## File structure
+
+To map your own controller, create a custom subtype of [\#Deck](#Deck)
+and create instances of your custom Deck objects in your controller's
+`init` function. Use the custom Deck's constructor function to create
+all the Components you need for your particular controller. For example:
+
+    // Declare the variable for your controller and assign it to an empty object
+    var MyController = {};
+    
+    // Mixxx calls this function on startup or when the controller
+    // is enabled in the Mixxx Preferences
+    MyController.init = function () {
+        this.leftDeck = new MyController.Deck([1, 2], 1);
+        this.rightDeck = new MyController.Deck([2, 4], 2);
+    };
+    
+    MyController.shutdown = function () {
+        // send whatever MIDI messages you need to turn off the lights of your controller
+    };
+    
+    // implement a constructor for a custom Deck object specific to your controller
+    MyController.Deck = function (deckNumbers, midiChannel) {
+        // Call the Deck constructor to setup the currentDeck and deckNumbers properties.
+        components.Deck.call(this, deckNumbers);
+        this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
+        this.cueButton = new components.CueButton([0x90 + midiChannel, 0x02]);
+        this.hotcueButtons = [];
+        for (var i = 1; i <= 8; i++) {
+            this.hotcueButtons[i] = new components.HotcueButton({
+                midi: [0x90 + midiChannel, 0x10 + i],
+                number: i,
+            });
+        }
+        // ... define as many other Components as necessary ...
+    
+        // Set the group properties of the above Components and connect their output callback functions
+        // Without this, the group property for each Component would have to be specified to its
+        // constructor.
+        this.reconnectComponents(function (c) {
+            if (c.group === undefined) {
+                // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer.
+                c.group = this.currentDeck;
+            }
+        });
+    };
+    // give your custom Deck all the methods of the generic Deck in the Components library
+    MyController.Deck.prototype = new components.Deck();
+
 ## Component
 
 A Component represents a physical component of a controller, such as a
@@ -208,9 +257,7 @@ Components for every physical component of your controller, set the
 following options as appropriate:
 
   - **sendShifted** (boolean, default false): whether to send a second,
-    shifted MIDI message for every call to `send`. If you use this, map
-    both the shifted and unshifted input signals in the XML file to the
-    Component's `input` method.
+    shifted MIDI message for every call to `send`
   - **shiftChannel** (boolean, default false): whether the shifted MIDI
     message changes the MIDI channel (second nybble of the first byte of
     the MIDI signal)
@@ -308,9 +355,6 @@ function in your mappings's `init` function:
     components.Button.prototype.isPress = function (channel, control, value, status) {
         return (status & 0xF0) === 0x90;
     }
-
-Both the button down and button up MIDI signals need to be mapped to
-each Component's `input` method in the XML file.
 
 ### PlayButton
 
@@ -529,8 +573,9 @@ each Component in the callback passed to `reconnectComponents` is
 sufficient. When more complex manipulation is required, especially if
 the manipulation varies between Components, it is a good idea to use the
 `reconnectComponents` callback to call a specific method on each
-Component. This delegates responsibility for knowing how to switch
-layers to each Component.
+Component. This keeps all the logic for that Component together instead
+of scattering it between the Component construction and the layer
+switching function.
 
 ### Shift layers
 
@@ -554,18 +599,20 @@ To use separate `output` callback functions in shifted and unshifted
 modes, the Component's `shift` and `unshift` functions need to call
 `disconnect`/`connect` and `trigger`. ComponentContainer's
 `shift`/`unshift` methods will not do this automatically like
-`reconnectComponents`. Generally, you should avoid making LEDs change
-when a shift button is pressed. This is distracting if the user is
-pressing shift to use the shifted functionality of a different part of
-the controller. For layers that stay activated after a button is
-released, this is not as much of an issue.
+`reconnectComponents`.
+
+Generally, you should avoid making LEDs change when a shift button is
+pressed. This is distracting if the user is pressing shift to use the
+shifted functionality of a different part of the controller. If the
+alternate layer is confined to a specific part of the controller,
+changing LEDs is not an issue.
 
 To handle the interaction of shifted and unshifted states with another
 layer, you can create another system of methods for each Component that
 changes properties of the Component when a layer is activated, and
-within those methods, you can change the `shift` and `unshift` of the
-Component. Refer to the source code of [\#EffectUnit](#EffectUnit) for
-an example.
+within those methods, you can assign the `shift` and `unshift`
+properties of the Component to different functions. Refer to the source
+code of [\#EffectUnit](#EffectUnit) for an example.
 
 ## Deck
 
@@ -580,41 +627,8 @@ The Deck constructor takes one argument, which is an array of deck
 numbers to cycle through with the `toggle` method. Typically this will
 be `[1, 3]` or `[2, 4]`.
 
-To map your own controller, create a custom subtype of Deck and create
-instances of your custom Deck objects in your controller's `init`
-function. Use a constructor function to create all the Components you
-need for your particular controller and assign your custom subtype's
-prototype to components.Deck. For example:
-
-    MyController.init = function () {
-        this.leftDeck = new MyController.Deck([1, 2], 1);
-        this.rightDeck = new MyController.Deck([2, 4], 2);
-    };
-    MyController.Deck = function (deckNumbers, midiChannel) {
-        // Call the Deck constructor to setup the currentDeck and deckNumbers properties.
-        components.Deck.call(this, deckNumbers);
-        this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
-        this.CueButton = new components.CueButton([0x90 + midiChannel, 0x02]);
-        this.hotcueButtons = [];
-        for (var i = 1; i <= 8; i++) {
-            this.hotcueButtons[i] = new components.HotcueButton({
-                midi: [0x90 + midiChannel, 0x10 + i],
-                number: i
-            });
-        }
-        // ... define as many other Components as necessary ...
-    
-        // Set the group properties of the above Components and connect their output callback functions
-        // Without this, the group property for each Component would have to be specified to its
-        // constructor.
-        this.reconnectComponents(function (c) {
-            if (c.group === undefined) {
-                // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer.
-                c.group = this.currentDeck;
-            }
-        });
-    };
-    MyController.Deck.prototype = new components.Deck();
+Refer to the [\#File structure](#File%20structure) section above for an
+example.
 
 ## EffectUnit
 
@@ -627,14 +641,14 @@ the source code for the library's EffectUnit to get an idea for how to
 map your controller though.
 
 3 knobs are used for controlling effect metaknobs or parameters,
-depending on whether the effects' parameters are shown. The other knob
-is used for the dry/wet knob of the whole chain or the superknob when
-shift is pressed. 3 buttons are used for enabling effects and the other
-button toggles the effect unit between hiding and showing effect
-parameters. The Components provided are:
+depending on whether an effect is focused. The other knob is used for
+the dry/wet knob of the whole chain or the superknob when shift is
+pressed. The 3 buttons next to the 3 meta/parameter knobs toggle the
+enable switch for that effect. The last button is used for focusing
+effects. The Components provided are:
 
   - dryWetKnob ([\#Pot](#Pot))
-  - showParametersButton ([\#Button](#Button))
+  - effectFocusButton ([\#Button](#Button))
   - enableButtons\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
     [\#Button](#Button)s)
   - knobs\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
@@ -642,36 +656,58 @@ parameters. The Components provided are:
 
 When the effect unit is showing the metaknobs of the effects but not
 each parameter, the knobs control the metaknobs. The enableButtons
-control whether each effect is enabled. Pressing an enableButton with
-shift switches to the next available effect.
+control whether each effect is enabled.
 
 When the effect unit is showing all the parameters, the knobs behave
 differently depending on whether an effect is focused. When there is no
 focused effect (the default state), the knobs control the effect
 metaknobs like they do when parameters are not showing. When an effect
 is focused, the knobs control the first 3 parameters of the focused
-effect. An effect can be focused by pressing shift + its enableButton or
-clicking the focus button on screen. Pressing shift + the enableButton
-for the focused effect again unfocuses the effect.
+effect.
 
-Generally, most controllers should use
-[\#EffectAssignmentButton](#EffectAssignmentButton)s in [\#Deck](#Deck)s
-to enable effect units on decks. If you have a dedicated effects
-controller that does not manipulate decks, the enableOnChannelButtons
-provided by EffectUnit would be more appropriate. You can easily create
-these by calling `enableOnChannelButtons.addButton('CHANNEL_NAME')` (do
-not put brackets around the CHANNEL\_NAME) on the EffectUnit object.
+The effectFocusButton behaves differently depending on whether an effect
+is focused and whether the button is pressed briefly or held down. Its
+behavior is complicated to explain, but it is intuitive to use once you
+understand it.
+
+To focus an effect, press and hold the effectFocusButton. The LEDs of
+the enableButtons will switch to show which effect is focused. Press any
+of the enableButtons to focus that effect. Press the enableButton of the
+focused effect to unfocus it and switch the knobs back to controlling
+metaknobs. When the effectFocusButton is released, the enableButtons
+will go back to controlling the effect enable switches.
+
+The LED of the effectFocusButton indicates whether any effect is
+focused. If no effect is focused, its LED is off. If any effect is
+focused, the effectFocusButton's LED will turn on. You can hold the
+effectFocusButton down to see which effect is focused without having to
+look at the computer screen. To unfocus the effect, you can briefly
+press the effectFocusButton. The focused effect is remembered, so when
+you short press the effectFocusButton again, the previously focused
+effect will be refocused.
+
+If the parameters of each effect are not showing on screen, they will be
+shown when the effectFocusButton is pressed. When effect parameters are
+showing, briefly presssing the effectFocusButton hides them and
+unfocuses if any effect is focused.
+
+When shift is pressed with the effectFocusButton, it toggles the
+EffectUnit ComponentContainer between controlling different EffectUnits
+in Mixxx. Typically this is used to toggle between EffectUnits 1 & 3 or
+2 & 4, like deck toggle buttons.
 
 ### Setup
 
-To map an EffectUnit for your controller, call the constructor with the
-unit number of the effect unit as the only argument. Then, set the midi
+To map an EffectUnit for your controller, call the constructor like the
+[\#Deck](#Deck) constructor. The only argument to the constructor is an
+array of numbers that specifies which EffectUnits pressing the
+effectFocusButton with shift toggles between. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and
 optionally enableOnChannelButtons. After the `midi` attributes are set
 up, call the EffectUnit's `init` method to set up the output callbacks.
 For example:
 
-    MyController.effectUnit = new components.EffectUnit(1);
+    MyController.effectUnit = new components.EffectUnit([1, 3]);
     MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
     MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
     MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
@@ -702,3 +738,14 @@ file. If the EffectUnit is a property of another
 [\#Deck](#Deck)), calling `shift` and `unshift` on the parent
 ComponentContainer will recursively call it on the EffectUnit too (just
 like it will for any other ComponentContainer).
+
+### Assignment switches
+
+Generally, most controllers should use
+[\#EffectAssignmentButton](#EffectAssignmentButton)s in [\#Deck](#Deck)s
+to enable effect units on decks. If you have a dedicated effects
+controller that does not manipulate decks, the enableOnChannelButtons
+provided by EffectUnit would be more appropriate. You can easily create
+these by calling `enableOnChannelButtons.addButton('CHANNEL_NAME')` (do
+not put brackets around the CHANNEL\_NAME) on the EffectUnit object,
+then define their `midi` properties.

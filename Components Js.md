@@ -208,7 +208,9 @@ Components for every physical component of your controller, set the
 following options as appropriate:
 
   - **sendShifted** (boolean, default false): whether to send a second,
-    shifted MIDI message for every call to `send`
+    shifted MIDI message for every call to `send`. If you use this, map
+    both the shifted and unshifted input signals in the XML file to the
+    Component's `input` method.
   - **shiftChannel** (boolean, default false): whether the shifted MIDI
     message changes the MIDI channel (second nybble of the first byte of
     the MIDI signal)

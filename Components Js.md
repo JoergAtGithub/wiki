@@ -309,6 +309,9 @@ function in your mappings's `init` function:
         return (status & 0xF0) === 0x90;
     }
 
+Both the button down and button up MIDI signals need to be mapped to
+each Component's `input` method in the XML file.
+
 ### PlayButton
 
 Default behavior: play/pause  

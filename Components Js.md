@@ -722,7 +722,7 @@ Controllers designed for Serato and Rekordbox often have an encoder
 instead of a dry/wet knob (labeled "Beats" for Serato or "Release FX"
 for Rekordbox) and a button labeled "Tap". If the encoder sends a MIDI
 signal when pushed, it is recommended to map the encoder push to the
-EffectUnit's `showParametersButton`, otherwise map that to the "Tap"
+EffectUnit's `effectFocusButton`, otherwise map that to the "Tap"
 button. To use the `dryWetKnob` Pot with an encoder, replace its `input`
 function with a function that can appropriately handle the signals sent
 by your controller. Refer to the [\#Encoder](#Encoder) documentation for

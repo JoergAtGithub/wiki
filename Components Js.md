@@ -42,7 +42,9 @@ section of that tutorial.
 To map your own controller, create a custom subtype of [\#Deck](#Deck)
 and create instances of your custom Deck objects in your controller's
 `init` function. Use the custom Deck's constructor function to create
-all the Components you need for your particular controller. For example:
+all the Components you need for your particular controller. There is a
+lot to explain here, so don't try to understand every detail of this
+just yet:
 
     // Declare the variable for your controller and assign it to an empty object
     var MyController = {};

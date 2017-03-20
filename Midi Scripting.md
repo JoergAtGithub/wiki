@@ -453,7 +453,8 @@ the fix will be in Mixxx 2.1.
 that has hard stops at max and min positions) that is controlling
 MixxxControls with soft-takeover enabled, you will need to reset the
 soft-takeover status each time you change what the physical control is
-manipulating. Do this with the following function:
+manipulating. Do this with the following function, supplying the
+MixxxControl you're switching control away from:
 
 ``` javascript
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");

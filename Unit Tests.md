@@ -13,13 +13,24 @@ and invalid input values to check for all of the following:
   - That all code paths have been exhaustively tested for the above
 
 Such tests should be run on all of Mixxx after every code change, as
-this also finds unintended interactions or consequences of a change. Our
-build servers will be configured to do this automatically and will fail
-a build if a test fails.
+this also finds unintended interactions or consequences of a change. We
+have two continuous integration (CI) services set up with our GitHub
+project that automatically build each pull request and run all the
+tests. Every time you push an update to a branch that you have an open
+pull request for, they will rebuild your branch and run the tests again.
+It is a good idea to run the tests locally first so you do not have to
+wait for CI to let you know you broke a test (which typically takes
+around an hour, sometimes longer) -- especially if you are working on a
+complicated area of Mixxx where it is easy to break things. Travis is
+our CI service for GNU/Linux & Mac OS X and AppVeyor is our CI service
+for Windows. We use the free version of these services which have a time
+limit for each job, so sometimes a build times out before it finishes.
+If Travis or AppVeyor fails, check their log to see if the build or a
+test actually broke or just timed out.
 
 Writing tests can be difficult at first, especially when trying to
 isolate pieces of a very large codebase like Mixxx. However the payoff
-is large, and as the test suite grows it will become more and more easy
+is large, and as the test suite grows it will become easier and easier
 to add new tests.
 
 ## Running the test suite

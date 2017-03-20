@@ -675,7 +675,7 @@ switches.
 The LED of the effectFocusButton indicates whether any effect is
 focused. When its LED is on, you can hold the effectFocusButton down to
 see which effect is focused without having to look at the computer
-screen. To unfocus the effect, you can briefly press the
+screen. To unfocus the effect, you can short press the
 effectFocusButton. The focused effect is remembered, so when you short
 press the effectFocusButton again, the previously focused effect will be
 refocused. Alternatively, if you want to keep all the parameters showing
@@ -684,8 +684,8 @@ enableButton of the focused effect to unfocus it.
 
 If the parameters of each effect are not showing on screen, they will be
 shown when the effectFocusButton is pressed. When effect parameters are
-showing, briefly presssing the effectFocusButton hides them and
-unfocuses if any effect is focused.
+showing, short pressing the effectFocusButton hides them and unfocuses
+if any effect is focused.
 
 When the effectFocusButton is pressed with shift, it toggles the
 EffectUnit ComponentContainer between controlling different EffectUnits

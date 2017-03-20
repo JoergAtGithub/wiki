@@ -130,7 +130,10 @@ option must be the same as before or scons will recompile Mixxx before
 installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
-`optimize=native` to `optimize=portable`
+`optimize=native` to `optimize=portable`.
+
+To compile on a Raspberry Pi, use the arguments: `optimize=native
+opengles=1 machine=armhf` with scons.
 
 ### Optional: Build with m4a/AAC file support
 

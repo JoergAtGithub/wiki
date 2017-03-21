@@ -52,8 +52,8 @@ explain here, so don't try to understand every detail of this just yet:
     // is enabled in the Mixxx Preferences
     MyController.init = function () {
         // create an instance of your custom Deck object for each side of your controller
-        this.leftDeck = new MyController.Deck([1, 2], 1);
-        this.rightDeck = new MyController.Deck([2, 4], 2);
+        MyController.leftDeck = new MyController.Deck([1, 2], 1);
+        MyController.rightDeck = new MyController.Deck([2, 4], 2);
     };
     
     MyController.shutdown = function () {
@@ -62,7 +62,10 @@ explain here, so don't try to understand every detail of this just yet:
     
     // implement a constructor for a custom Deck object specific to your controller
     MyController.Deck = function (deckNumbers, midiChannel) {
-        // Call the Deck constructor to setup the currentDeck and deckNumbers properties.
+        // Call the Deck constructor to setup the currentDeck and deckNumbers properties,
+        // use Function.prototype.call to assign the custom Deck being constructed
+        // to 'this' in the context of the generic components.Deck constructor
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
         components.Deck.call(this, deckNumbers);
         this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
         this.cueButton = new components.CueButton([0x90 + midiChannel, 0x02]);

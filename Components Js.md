@@ -51,6 +51,7 @@ explain here, so don't try to understand every detail of this just yet:
     // Mixxx calls this function on startup or when the controller
     // is enabled in the Mixxx Preferences
     MyController.init = function () {
+        // create an instance of your custom Deck object for each side of your controller
         this.leftDeck = new MyController.Deck([1, 2], 1);
         this.rightDeck = new MyController.Deck([2, 4], 2);
     };

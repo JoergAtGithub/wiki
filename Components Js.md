@@ -109,7 +109,7 @@ use one of its subtypes ([\#Button](#Button), [\#Pot](#Pot), or
 [\#Encoder](#Encoder)). If you do need to use Component directly, do not
 confuse it with the `components` object (plural, lower case) that
 contains all the objects for the library; access Component as
-`components.Component`.
+`components.Component` (plural lower case then singular upper case).
 
 Components should generally be properties of a
 [\#ComponentContainer](#ComponentContainer) object. Most Components

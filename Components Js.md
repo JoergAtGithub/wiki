@@ -83,10 +83,13 @@ explain here, so don't try to understand every detail of this just yet:
         // constructor.
         this.reconnectComponents(function (c) {
             if (c.group === undefined) {
-                // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer.
+                // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer
+                // so 'this' refers to the custom Deck object being constructed
                 c.group = this.currentDeck;
             }
         });
+        // when called with JavaScript's 'new' keyword, a constructor function
+        // implicitly returns 'this'
     };
     // give your custom Deck all the methods of the generic Deck in the Components library
     MyController.Deck.prototype = new components.Deck();

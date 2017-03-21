@@ -429,8 +429,8 @@ published.
 
 These devices allow a computer to output and input sound. It is possible
 to use just a sound card plus a keyboard & mouse to use Mixxx, but a
-separate [controller](#controllers) makes using Mixxx easier and more
-intuitive.
+separate [controller](#controllers) makes using Mixxx easier, more
+intuitive, and more fun.
 
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor

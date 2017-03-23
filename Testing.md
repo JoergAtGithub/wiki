@@ -17,7 +17,7 @@ build for several practice sets before your gig to check that it works
 with your particular setup. If you encounter a bug, please [report
 it](reporting%20bugs).
 
-## Testing GitHub pull requests
+## GitHub pull requests
 
 If you would really like to be on the bleeding edge, you can try out
 [pull requests on GitHub](https://github.com/mixxxdj/mixxx/pulls) before

@@ -8,11 +8,11 @@ Our build server regularly makes new Mixxx installers from our master
 git branch [available for
 download](http://downloads.mixxx.org/builds/master/release/). We try to
 keep the master branch reasonably stable and not merge new features
-until we're fairly confident they are not going to create new issues.
-However, if you want to perform with these, do so at your own risk. If
-you do decide to perform with a master build, test the same build for
-several practice sets before your gig to check that it works with your
-particular setup. If you encounter a bug, please [report
+until we're fairly confident they are not going to create serious
+issues. However, if you want to perform with these, do so at your own
+risk. If you do decide to perform with a master build, test the same
+build for several practice sets before your gig to check that it works
+with your particular setup. If you encounter a bug, please [report
 it](reporting%20bugs).
 
 If you would really like to be on the bleeding edge, you can try out

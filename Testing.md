@@ -25,8 +25,8 @@ the 64 bit ("dist64") or 32 bit ("dist32") build, then click "Artifacts"
 to get the link to the installer MSI file. For Mac OS X and GNU/Linux,
 you will need to [start\#compile Mixxx from source
 code](start#compile%20Mixxx%20from%20source%20code) yourself. You can
-set up the git repository on your computer to make it easy to
-[https://gist.github.com/piscisaureus/3342247](checkout%20pull%20requests%20locally),
+set up the git repository on your computer to make it easy to [checkout
+pull requests locally](https://gist.github.com/piscisaureus/3342247),
 then compile them. If there is an issue with a build from a pull
 request, comment on the pull request on GitHub instead of opening a bug
 on Launchpad.

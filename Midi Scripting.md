@@ -582,15 +582,26 @@ can cause Mixxx to stutter.) **Always use a timer instead\!**
 See the [script timers](script%20timers) page for more details on best
 practices for using timers.
 
-### Spinback and brake effect
+### Spinback, brake and soft start effect
 
-A forwards or backwards brake effect can be enabled/disabled using one
-of the two following functions. engine.spinback() just calls
+A forwards or backwards brake effect can be enabled/disabled using
+engine.brake() or engine.spinback(). engine.spinback() just calls
 engine.brake() with default settings to make it behave like a spinback.
+
+To achieve a forward acceleration effect from standstill to normal speed
+use engine.softStart().
+
+When disabled, all three functions would jump to normal playback speed.
+
+Both engine.softStart() and engine.brake()/engine.spinback() can
+interrupt each other: slow down a track with engine.brake() and, before
+it has stopped, get it back to normal speed with engine.softStart(). See
+last example how to map this to press/release of just one button.
 
 ``` javascript
 brake(int deck, bool activate, [float factor], [float rate])
 spinback(int deck, bool activate, [float factor], [float rate])
+softStart(int deck, bool activate, [float factor])
 ```
 
   - **deck** - the deck number to use, e.g: 1
@@ -598,9 +609,12 @@ spinback(int deck, bool activate, [float factor], [float rate])
   - **factor** (optional) - how quickly the deck should come to a stop.
     start with a value of 1 and increase to increase the deceleration
   - **rate** (optional) - the initial speed of the deck when enabled.
-    "1" means normal speed forwards, "-10" means 10x speed in reverse
+    "1" (default) means normal speed forwards, "-10" means 10x speed in
+    reverse
 
-Example:
+Examples:
+
+Activate brake on button press, jump to normal speed on button release
 
 ``` javascript
     MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
@@ -615,12 +629,18 @@ Example:
     }
 ```
 
+Activate brake on button press, jump to normal speed on button release
+(short version)
+
 ``` javascript
     MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
         var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
         engine.brake(deck, value > 0, 1.2, -10); // start at a rate of -10 and decrease at a factor of 1.2
     }
 ```
+
+Activate spinback on button press, jump to normal speed on button
+release
 
 ``` javascript
     MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
@@ -629,8 +649,32 @@ Example:
     }
 ```
 
+Activate softStart on button press, jump to normal speed on button
+release
+
+``` javascript
+    MyControllerPrefix.softStart_button = function(channel, control, value, status, group) {
+        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
+        engine.softStart(deck, value > 0, 2.0); // double the default acceleration
+    }
+```
+
+Brake on button press, softStart on button release
+
+``` javascript
+    MyControllerPrefix.brake_SoftStart_button = function(channel, control, value, status, group) {
+        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
+        var activate = value > 0;
+        if (activate) { // act on button press
+            engine.brake(deck, true); // slow down the track
+        } else { // act on button release
+            engine.softStart(deck, true);
+        }
+    }
+```
+
 The effects can also be mapped directly via XML using either
-**script.spinback** or **script.brake**:
+**script.spinback**, **script.brake** or **script.softStart**:
 
 ``` XML
     <control>

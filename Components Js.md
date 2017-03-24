@@ -700,6 +700,9 @@ EffectUnit ComponentContainer between controlling different EffectUnits
 in Mixxx. Typically this is used to toggle between EffectUnits 1 & 3 or
 2 & 4, like deck toggle buttons.
 
+When an enableButton is pressed with shift, the next available effect is
+loaded in that effect slot.
+
 ### Setup
 
 To map an EffectUnit for your controller, call the constructor like the

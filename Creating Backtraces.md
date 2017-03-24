@@ -5,31 +5,38 @@ crashed.
 
 ## Windows
 
-1.  Download [GDB for
-    Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) (get
-    the official release version) and save it to the root of your C:
-    drive. (`C:\`)
-2.  Download Mixxx's debug symbol file: 
+1.  Download [x64dbg](https://sourceforge.net/projects/x64dbg/) an
+    open-source x64/x32 debugger for windows that runs without
+    installation from a folder and support the symbols file mixxx.pdb.
+    (The alternative [GDB for
+    Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) is not
+    able to read the pdb file) 
+2.  Extract the downloaded zip file into a folder of your choice. (When
+    writing this we get snapshot\_2017-03-19\_13-21.zip) 
+3.  Download Mixxx's debug symbol file: 
     1.  2.0: FIXME
-    2.  2.1: Re-instal Mixxx 2.1 slect "Change" and enebale "PDB debug
+    2.  2.1: Re-instal Mixxx 2.1 select "Change" and enable "PDB debug
         files" 
-3.  Open a Windows prompt: 
-
-<!-- end list -->
-
-  - Win 7: Open a command prompt by clicking Start-\>Run... then type
-    `cmd` in the box and press Enter.
-  - Win 10: Type `cmd` to the task bar search box and press Enter
-
-<!-- end list -->
-
-1.  Change to the the directory where Mixxx is installed: type the
-    following then press Enter: `cd %PROGRAMFILES%\Mixxx`
-2.  Run GDB: type the following command and press Enter: `C:\gdb
-    mixxx.exe`
-3.  Load optional debug symbols \*.pdb installed on your system.
-    `add-symbol-file mixxx.pdb`
-4.  [Continue below](#for-all-of-the-above)
+4.  Copy the mixxx.pdb file from the mixxx install folder to the x64dbg
+    symbols folder, create the folder if not exist 
+    1.  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.pdb -\>
+        snapshot\_2017-03-19\_13-21\\release\\x64\\symbols
+    2.  32 bit: %PROGRAMFILES(x86)%\\Mixxx\\mixxx.pdb -\>
+        snapshot\_2017-03-19\_13-21\\release\\x64\\symbols
+5.  Start x64dbg via double click on the bug icon of 
+    1.  64 bit: snapshot\_2017-03-19\_13-21\\release\\x64\\x64dbg.exe
+    2.  32 bit: snapshot\_2017-03-19\_13-21\\release\\x32\\x32dbg.exe
+6.  Load mixxx.exe: File -\> open -\> browse to Mixxx.exe (F3) 
+    1.  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.exe
+    2.  32 bit: %PROGRAMFILES(x86)%\\Mixxx\\mixxx.exe
+7.  Start and continue Mixxx: Debug -\> Run (F9) (three times) 
+8.  Make Mixxx crash. 
+9.  When it does, Go to the Call Stack View: View -\> Call Stack
+    (Ctrl+K)
+10. Right Click: Copy -\> Full Table, To Log 
+11. Go to the log: View -\> Log Window (Ctrl+L) 
+12. Right Click: Copy 
+13. [Continue below at 6.](#for-all-of-the-above)
 
 ## Linux & Mac OS X with Xcode 4.x
 

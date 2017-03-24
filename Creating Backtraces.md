@@ -22,7 +22,7 @@ crashed.
     1.  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.pdb -\>
         snapshot\_2017-03-19\_13-21\\release\\x64\\symbols
     2.  32 bit: %PROGRAMFILES(x86)%\\Mixxx\\mixxx.pdb -\>
-        snapshot\_2017-03-19\_13-21\\release\\x64\\symbols
+        snapshot\_2017-03-19\_13-21\\release\\x32\\symbols
 5.  Start x64dbg via double click on the bug icon of 
     1.  64 bit: snapshot\_2017-03-19\_13-21\\release\\x64\\x64dbg.exe
     2.  32 bit: snapshot\_2017-03-19\_13-21\\release\\x32\\x32dbg.exe

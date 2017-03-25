@@ -1158,6 +1158,18 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ` |
 
+### Reording duration
+
+New in mixxx 2.1
+
+Displays the duration of the running recording, otherwise it shows
+"--:--"
+
+    <RecordingDuration>
+      <Pos>X,Y</Pos>
+      <Size>W,H</Size>
+    </RecordingDuration>
+
 ### Pitch rate display
 
 |                                                                                                                                                                                                        |  |                                                                                                                                                                                                            |

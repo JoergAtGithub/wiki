@@ -1162,8 +1162,8 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 New in mixxx 2.1
 
-Displays the duration of the running recording, otherwise it shows
-"--:--"
+Displays the duration of the running recording. When recording is
+inactive/stopped it shows "--:--"
 
     <RecordingDuration>
       <Pos>X,Y</Pos>

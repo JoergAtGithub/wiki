@@ -1158,9 +1158,9 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ` |
 
-### Reording duration
+### Recording duration
 
-New in mixxx 2.1
+New in Mixxx 2.1
 
 Displays the duration of the running recording. When recording is
 inactive/stopped it shows "--:--"

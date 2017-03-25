@@ -376,10 +376,11 @@ behave as a normal button (ON on first press, OFF on second press)
 
 Displays the audio level going to the Master Output.
 
-## Proposed Changes
+## Changes in Mixxx 2.1
 
-This set of changes is implemented in a [pull
-request](https://github.com/mixxxdj/mixxx/pull/1180).
+This set of changes is implemented in development versions of Mixxx 2.1
+available from the [build
+server](http://downloads.mixxx.org/builds/master/release/).
 
 #### Effects
 

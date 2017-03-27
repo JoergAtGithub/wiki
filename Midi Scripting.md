@@ -607,7 +607,10 @@ softStart(int deck, bool activate, [float factor])
   - **deck** - the deck number to use, e.g: 1
   - **activate** - true to activate or false to disable. 
   - **factor** (optional) - how quickly the deck should come to a stop.
-    start with a value of 1 and increase to increase the deceleration
+    start with a value of 1 and increase to increase the
+    acceleration/deceleration. Be aware that brake/spinback with a low
+    factors (about 0.5 and lower) would keep the deck running altough
+    the resulting very low sounds are not audible anymore.
   - **rate** (optional) - the initial speed of the deck when enabled.
     "1" (default) means normal speed forwards, "-10" means 10x speed in
     reverse

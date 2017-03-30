@@ -537,6 +537,35 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
   - Any exceptions to these guidelines must be clearly documented inline
     in the code
 
+### Assertions
+
+Use Mixxx assert macros form util/assert.h to assert an assumption that
+can never fail.
+
+The DEBUG\_ASSERT macro works only in debug builds. When the assert
+fails, a message is logged. If Mixxx is compiled with `scons
+debug_assertions_fatal=1` and Mixxx will be terminated after that. If
+Mixxx is started under a debugger with `mixxx --debugAssertBreak` it
+will breaks (SIGINT) in that case.
+
+Use VERIFY\_OR\_DEBUG\_ASSERT if an error handling is required to
+recover gracefully in a release build.
+
+**Good**
+
+``` cpp-qt
+#include <util/assert.h>
+
+...
+
+bool failed = neverFails();
+VERIFY_OR_DEBUG_ASSERT(!failed)
+{
+   qWarning() << "neverFails() has failed"
+   return;
+}
+```
+
 ## C++11
 
 As of the Mixxx 2.0 release, Mixxx is switching to C++11. We are taking

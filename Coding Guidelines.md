@@ -559,8 +559,7 @@ recover gracefully in a release build.
 ...
 
 bool failed = neverFails();
-VERIFY_OR_DEBUG_ASSERT(!failed)
-{
+VERIFY_OR_DEBUG_ASSERT(!failed) {
    qWarning() << "neverFails() has failed"
    return;
 }

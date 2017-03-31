@@ -537,7 +537,7 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
   - Any exceptions to these guidelines must be clearly documented inline
     in the code
 
-### Assertions
+## Assertions
 
 Use Mixxx assert macros form util/assert.h to assert an assumption that
 can never fail.

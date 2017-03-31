@@ -544,9 +544,9 @@ can never fail.
 
 The DEBUG\_ASSERT macro works only in debug builds. When the assert
 fails, a message is logged. If Mixxx is compiled with `scons
-debug_assertions_fatal=1` and Mixxx will be terminated after that. If
-Mixxx is started under a debugger with `mixxx --debugAssertBreak` it
-will breaks (SIGINT) in that case.
+debug_assertions_fatal=1` it will be terminated after that. If Mixxx is
+started under a debugger with `mixxx --debugAssertBreak` it will break
+(SIGINT) in that case.
 
 Use VERIFY\_OR\_DEBUG\_ASSERT if an error handling is required to
 recover gracefully in a release build.

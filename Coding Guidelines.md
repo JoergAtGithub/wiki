@@ -488,7 +488,7 @@ class Library : public QObject {
 };
 ```
 
-### GOTO
+#### GOTO
 
 Using the `goto` statement is not allowed. Typically uses of `goto` are
 better handled by the C++ idiom of [Resource Acquisition Is

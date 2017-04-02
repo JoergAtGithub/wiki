@@ -220,7 +220,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Gemini G4V](Gemini%20G4V)                                                                       | $350               | 2 deck\[38\] all-in-one     | yes                   | yes              | MIDI            | 2013     |
 | [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                                                         | $300               | 2 deck controller and mixer | yes                   | no               | MIDI            | 2014     |
 | [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600               | 4 deck all-in-one           | yes                   | yes              | HID             | 2013     |
-| [Pioneer DDJ-SX](Pioneer%20DDJ-SX)                                                               | $900               | 4 deck controller/mixer     | yes                   | yes              | MIDI            | 2012     |
+| [Pioneer DDJ-SX](Pioneer%20DDJ-SX)                                                               | discontinued       | 4 deck controller/mixer     | yes                   | yes              | MIDI            | 2012     |
 
 \</sortable\>
 

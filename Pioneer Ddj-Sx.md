@@ -99,6 +99,11 @@ settings can be made:
 |             | 4          | \-             | EQ HIGH                       | Controls deck's equalizer/filter high frequencies                                                                   |
 |             | 5          | \-             | EQ MID                        | Controls deck's equalizer/filter mid frequencies                                                                    |
 |             | 6          | \-             | EQ LOW                        | Controls deck's equalizer/filter low frequencies                                                                    |
+|             | 7          | \-             | \[**CUE**\]                   | Toggles PFL/Cue (headphones) for specific deck                                                                      |
+|             | 7          | \[**SHIFT**\]  | \[**CUE**\]                   | BPM Tab function for specific deck                                                                                  |
+|             | 9          | \-             | \[**MASTER CUE**\]            | Mixxx-independant, controlled by controller itself: Master cue function                                             |
+|             | 9          | \[**SHIFT**\]  | \[**MASTER CUE**\]            | Toggles split cue (headphones)                                                                                      |
+|             | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
 
 ## Deck Functions
 

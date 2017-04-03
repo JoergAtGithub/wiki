@@ -80,19 +80,23 @@ settings can be made:
 
 ## General Functions
 
-| Group       | Figure     | \+ \[**SHIFT**\]? | Button Name                   | Description                                                                                                         |
-| ----------- | ---------- | ----------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 5 - BROWSER | 2, 3, 4, 5 | \-                | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
-|             | 2          | \[**SHIFT**\]     | \[**LOAD**\]                  | AutoDJ - Toggle BPM sync                                                                                            |
-|             | 3          | \[**SHIFT**\]     | \[**LOAD**\]                  | AutoDJ - Toggle Key sync                                                                                            |
-|             | 1          | \-                | \[**ROTARY SELECTOR**\]       | See user options: default = Select track in Playlist (alt. = MoveVertical)                                          |
-|             | 1          | \-                | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Add track to AutoDJ queue at bottom (alt. = at top)                                     |
-|             | 1          | \[**SHIFT**\]     | \[**ROTARY SELECTOR**\]       | See user options: default = Select Playlist (alt. = MoveHorizontal)                                                 |
-|             | 1          | \[**SHIFT**\]     | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Toggle selected sidebar item (alt. = ChooseItem)                                        |
-|             | 6          | \-                | \[**BACK**\]                  | See user options: default = AutoDJ - Skip next track in queue (alt. = MoveFocusBackward)                            |
-|             | 6          | \[**SHIFT**\]     | \[**BACK**\]                  | Maximize view of Library                                                                                            |
-|             | 7          | \-                | \[**LOAD PREPARE**\]          | Load selected track into PreviewDeck, jump to position (see user options) and play, else stop already playing track |
-|             |            |                   |                               |                                                                                                                     |
+| Group       | Figure     | \[**SHIFT**\]? | Button Name                   | Description                                                                                                         |
+| ----------- | ---------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 5 - BROWSER | 2, 3, 4, 5 | \-             | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
+|             | 2          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle BPM sync                                                                                            |
+|             | 3          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle Key sync                                                                                            |
+|             | 1          | \-             | \[**ROTARY SELECTOR**\]       | See user options: default = Select track in Playlist (alt. = MoveVertical)                                          |
+|             | 1          | \-             | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Add track to AutoDJ queue at bottom (alt. = at top)                                     |
+|             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR**\]       | See user options: default = Select Playlist (alt. = MoveHorizontal)                                                 |
+|             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Toggle selected sidebar item (alt. = ChooseItem)                                        |
+|             | 6          | \-             | \[**BACK**\]                  | See user options: default = AutoDJ - Skip next track in queue (alt. = MoveFocusBackward)                            |
+|             | 6          | \[**SHIFT**\]  | \[**BACK**\]                  | Maximize view of Library                                                                                            |
+|             | 7          | \-             | \[**LOAD PREPARE**\]          | Load selected track into PreviewDeck, jump to position (see user options) and play, else stop already playing track |
+| 3 - MIXER   | 1          | \-             | Crossfader                    | Controls Mixxx crossfader, fades between deck 1, 3 and 2, 4                                                         |
+|             | 2          | \-             | Channel fader                 | Controls deck volume                                                                                                |
+|             | 2          | \[**SHIFT**\]  | Channel fader                 | Fader start (starts playing deck when rising deck volume)                                                           |
+|             | 3          |                | TRIM                          | Controls deck gain                                                                                                  |
+|             | 4          |                | EQ HIGH                       | Controls equalizer/filter high frequencies                                                                          |
 
 ## Deck Functions
 

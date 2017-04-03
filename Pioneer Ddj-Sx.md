@@ -80,7 +80,16 @@ settings can be made:
 
 ## General Functions
 
-Todo
+| Group       | Fig.               | Description |
+| ----------- | ------------------ | ----------- |
+| 5 - BROWSER | 5-2, 5-3, 5-4, 5-5 |             |
+|             |                    |             |
+|             |                    |             |
+|             |                    |             |
+|             |                    |             |
+|             |                    |             |
+|             |                    |             |
+|             |                    |             |
 
 ## Deck Functions
 

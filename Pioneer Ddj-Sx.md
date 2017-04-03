@@ -98,6 +98,10 @@ settings can be made:
 
 Todo
 
+## Effect Functions
+
+Todo
+
 ## References
 
   - Product page:

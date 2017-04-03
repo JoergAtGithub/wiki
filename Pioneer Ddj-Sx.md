@@ -105,7 +105,7 @@ settings can be made:
 |                 | 9          | \[**SHIFT**\]  | \[**MASTER CUE**\]            | Toggles split cue (headphones)                                                                                      |
 |                 | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
 | 4 - FRONT PANEL | 1          | \-             | Crossfader curve              | Controls Mixxx crossfader curve                                                                                     |
-| 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Shows/hides Sampler decks / Effect rack                                                                             |
+| 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Show/hide Sampler decks / Effect rack                                                                               |
 
 ## Deck Functions
 

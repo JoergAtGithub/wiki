@@ -80,16 +80,16 @@ settings can be made:
 
 ## General Functions
 
-| Group       | Fig.               | Description |
-| ----------- | ------------------ | ----------- |
-| 5 - BROWSER | 5-2, 5-3, 5-4, 5-5 |             |
-|             |                    |             |
-|             |                    |             |
-|             |                    |             |
-|             |                    |             |
-|             |                    |             |
-|             |                    |             |
-|             |                    |             |
+| Group       | Figure     | \+ \[**SHIFT**\]? | Button Name  | Description                                     |
+| ----------- | ---------- | ----------------- | ------------ | ----------------------------------------------- |
+| 5 - BROWSER | 2, 3, 4, 5 | \-                | \[**LOAD**\] | Loads the selected track into the specific deck |
+|             | 2          | \[**SHIFT**\]     | \[**LOAD**\] | AutoDJ - Toggle BPM sync                        |
+|             |            |                   |              |                                                 |
+|             |            |                   |              |                                                 |
+|             |            |                   |              |                                                 |
+|             |            |                   |              |                                                 |
+|             |            |                   |              |                                                 |
+|             |            |                   |              |                                                 |
 
 ## Deck Functions
 

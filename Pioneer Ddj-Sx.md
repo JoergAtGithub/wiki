@@ -95,8 +95,8 @@ settings can be made:
 | 3 - MIXER   | 1          | \-             | Crossfader                    | Controls Mixxx crossfader, fades between deck 1, 3 and 2, 4                                                         |
 |             | 2          | \-             | Channel fader                 | Controls deck volume                                                                                                |
 |             | 2          | \[**SHIFT**\]  | Channel fader                 | Fader start (starts playing deck when rising deck volume)                                                           |
-|             | 3          |                | TRIM                          | Controls deck gain                                                                                                  |
-|             | 4          |                | EQ HIGH                       | Controls equalizer/filter high frequencies                                                                          |
+|             | 3          | \-             | TRIM                          | Controls deck gain                                                                                                  |
+|             | 4          | \-             | EQ HIGH                       | Controls equalizer/filter high frequencies                                                                          |
 
 ## Deck Functions
 

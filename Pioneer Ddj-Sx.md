@@ -96,7 +96,9 @@ settings can be made:
 |             | 2          | \-             | Channel fader                 | Controls deck volume                                                                                                |
 |             | 2          | \[**SHIFT**\]  | Channel fader                 | Fader start (starts playing deck when rising deck volume)                                                           |
 |             | 3          | \-             | TRIM                          | Controls deck gain                                                                                                  |
-|             | 4          | \-             | EQ HIGH                       | Controls equalizer/filter high frequencies                                                                          |
+|             | 4          | \-             | EQ HIGH                       | Controls deck's equalizer/filter high frequencies                                                                   |
+|             | 5          | \-             | EQ MID                        | Controls deck's equalizer/filter mid frequencies                                                                    |
+|             | 6          | \-             | EQ LOW                        | Controls deck's equalizer/filter low frequencies                                                                    |
 
 ## Deck Functions
 

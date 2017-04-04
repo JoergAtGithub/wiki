@@ -155,6 +155,9 @@ The following functions are directly controlled by the controller
 | :::      | 23     | \-             | \[**GRID SLIDE**\]           | Hold and touch/rotate Jog dial to set/translate beat grid earlier/later                                                                                                            |
 | :::      | 24     | \-             | \[**SHIFT**\]                | Switches to shifted controls, no direct function                                                                                                                                   |
 
+The following functions are directly controlled by the controller
+(Mixxx-independent): ToDo
+
 ## Effect Functions
 
 Todo

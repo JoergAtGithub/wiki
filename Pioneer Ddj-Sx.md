@@ -120,7 +120,22 @@ The following functions are directly controlled by the controller
 
 ## Deck Functions
 
-Todo
+| Group    | Figure | \[**SHIFT**\]? | Button Name                  | Description                                                                                                                                                                        |
+| -------- | ------ | -------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 - DECK | 1      | \-             | \[**PLAY/PAUSE**\]           | Toggles play/pause                                                                                                                                                                 |
+| :::      | 1      | \[**SHIFT**\]  | \[**PLAY/PAUSE**\]           | Toggles play stutter                                                                                                                                                               |
+| :::      | 2      | \-             | \[**CUE**\]                  | Toggles default cue (sets cue point/ goes to cue point)                                                                                                                            |
+| :::      | 2      | \[**SHIFT**\]  | \[**CUE**\]                  | Toggles brake                                                                                                                                                                      |
+| :::      | 3      | \-             | Jog dial (Platter)           | Vinyl-Mode enabled: performs scratching when pressed and rotated, Vinyl-Mode disabled: performs pitch bend                                                                         |
+| :::      | 3      | \[**SHIFT**\]  | Jog dial (Platter)           | Vinyl-Mode enabled: performs scratching considering user-options multiplier when touched and rotated, Vinyl-Mode disabled: performs pitch bend considering user-options multiplier |
+| :::      | 3      | \-             | Jog dial (Wheel side)        | Performs pitch bend when rotated                                                                                                                                                   |
+| :::      | 3      | \[**SHIFT**\]  | Jog dial (Wheel side)        | Performs pitch bend when rotated considering user-options multiplier                                                                                                               |
+| :::      | 4      | \-             | TEMPO                        | Controls pitch/tempo ratio                                                                                                                                                         |
+| :::      | 5      | \-             | \[**KEYLOCK**\]              | Toggles keylock                                                                                                                                                                    |
+| :::      | 5      | \[**SHIFT**\]  | \[**KEYLOCK**\]              | Changes TEMPO slider range: 8% -\> 16% -\> 32% -\> 64% -\> 100% -\> 8%...                                                                                                          |
+| :::      | 5      | \-             | \[**KEYLOCK**\] (Long press) | Toggles pitch/tempo reset                                                                                                                                                          |
+| :::      | 6      | \-             | \[**NEEDLE SEARCH**\]        | Jumps to equivalent absolute position in track                                                                                                                                     |
+| :::      | 5      | \-             | \[**KEYLOCK**\] (Long press) | Toggles pitch/tempo reset                                                                                                                                                          |
 
 ## Effect Functions
 

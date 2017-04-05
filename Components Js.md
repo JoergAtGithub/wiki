@@ -198,7 +198,7 @@ yourself:
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)
   - **output**: the [function that gets called when outKey changes
-    value](midi%20scripting#Automatic%20reactions%20to%20changes%20in%20Mixxx).
+    value](midi%20scripting#Connect%20output%20callback%20functions).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
   - **connect**: register `output` as the callback function that gets

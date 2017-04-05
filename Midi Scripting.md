@@ -73,7 +73,7 @@ This can make testing changes very fast.
 
 ## Setting up a JavaScript mapping
 
-### Linking a JavaScript mapping file to an XML mapping file
+### Specifying the JS file
 
 All JavaScript files need an accompanying [XML mapping
 file](MIDI%20controller%20mapping%20file%20format). See the [controller
@@ -161,7 +161,7 @@ command line.
 controller object (`MyController` in this example) to avoid name
 collisions with other scripts that may be loaded.
 
-### Linking MIDI signals to JavaScript functions
+### Linking MIDI input signals to JavaScript
 
 To link a script function to an incoming MIDI message, put the full
 function name in the \<key\> tag of the MIDI message's \<control\>
@@ -181,28 +181,34 @@ element in the XML file, with a \<Script-Binding/\> tag in the
 ```
 
 The value for \<group\> doesn't matter when using a script function, but
-it still needs to be valid or the XML parser will report an error. It is
-also passed to the function as an extra parameter (since v1.8.) (This is
-useful for multi-deck controllers because you only need one function
-that checks the \<group\> and reacts appropriately.) No tags or options
-are considered other than those shown above, so you can leave them out.
+it is available to the script function as an extra parameter. This can
+be useful so one script function can be used for manipulate decks.
 
-When this device control is operated, the named script function is
-called. That function then determines what action is taken based on the
-MIDI signal, such as changing a Mixxx control, sending a MIDI signal
-back to the controller to change an LED, and/or printing a debug
-message.
+When Mixxx receives a MIDI signal with the first two bytes matching the
+\`\<status\>\` and \`\<midino\>\` elements, the named script function is
+called. That function then determines how to change the state of Mixxx
+and/or script variables.
+
+For system exclusive messages, the status byte must be `0xF0` and there
+does not need to be a `midino` element. If the controller can send
+multiple different SysEx messages, the one script function specified by
+the `<key>` element is responsible for deciding which has been received
+then taking the appropriate action.
 
 *New in 2.1*: The value of the \<key\> element can be any snippet of
-JavaScript code that evaluates to a function.
+JavaScript code that evaluates to a function (when executed in the
+global context).
 
-## Programming Mixxx mappings with JavaScript
+## JavaScript mapping basics
 
 ### MIDI input handling functions
 
-Data passed to [functions linked to MIDI input from the controller in
-the XML file](#linking-MIDI-signals-to-JavaScript-functions) are, in
-order:
+#### Short 3-byte messages
+
+Except for system exclusive message, most MIDI signals are 3 byte
+messages. The parameters passed to [functions linked to MIDI input from
+the controller in the XML
+file](#linking-MIDI-signals-to-JavaScript-functions) are, in order:
 
 1.  MIDI channel (0x00 = Channel 1..0x0F = Channel 16,)
 2.  Control/note number (byte 2)
@@ -239,6 +245,34 @@ ControllerName.functionName = function (channel, control, value) {
     // your custom code goes here
 }
 ```
+
+#### System Exclusive messages
+
+Data passed from SysEx messages to functions are, in order:
+
+1.  an array of raw data bytes
+2.  the length of that array
+
+Therefore, function definition should look like:
+
+``` javascript
+ControllerName.inboundSysex = function (data, length) {
+    ...
+}
+```
+
+If the controller can send multiple different SysEx messages, this one
+script function is responsible for deciding which has been received then
+taking the appropriate action.
+
+*Note that some controllers may send bytes that violate MIDI standards,
+e.g. setting the high bit in a data byte or using undefined status bytes
+(like `0xF9`.) On Linux, recent versions of ALSA (from November 2012
+onward) automatically standardize these by breaking the bytes into two
+nybbles and sending two bytes for every one received from the
+controller. For example `0xF0 0x97 0x30 0xF7` would become
+`0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
+details.*
 
 ### Reading and setting Mixxx control values
 
@@ -286,6 +320,107 @@ engine.setValue("[Channel"+currentDeck+"]", "rate", (currentValue+10)/2);
 **Tip**: For toggling the state of a binary Mixxx Control, the
 `script.toggleControl(string group, string key)` function can be used as
 a convenient shortcut.
+
+### Output callback functions
+
+To keep the state of your controller in sync with the state of Mixxx,
+register callback functions that Mixxx will execute when the state of a
+[Mixxx Control](MixxxControls) changes.
+
+#### Mixxx 2.1
+
+Callback functions are registered with the `engine.makeConnection`
+function, which takes 3 parameters:
+
+1.  group of the Mixxx Control (string)
+2.  name of the Mixxx Control (string)
+3.  JavaScript function to execute when the Mixxx Control changes. This
+    function takes three parameters: the new value of the MixxxControl,
+    the group, and the Mixxx control name. `this` in the context of the
+    function refers to the value of `this` where `engine.makeConnection`
+    was called.
+
+`engine.makeConnection` returns an object that represents the callback
+connection. This object should be stored in a script variable. To switch
+the controller between different modes, such as controlling a different
+deck:
+
+``` 
+ - disconnect the old connection object by calling its ''disconnect'' method
+ - register the new connection with ''engine.makeConnection''
+ - call the ''trigger'' method of the new connection object to  immediately execute the callback using the state of the new Mixxx Control.
+```
+
+The `disconnect` and `trigger` methods of the connection objects do not
+take any arguments.
+
+For example:
+
+``` javascript
+var syncButtonOutputCallback = function (value, group, control) {
+    midi.sendShortMsg(byte 1, byte 2, value * 127); // see below section for an explanation of this example line
+};
+
+var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', syncButtonOutputCallback);
+
+// when switching to deck 3:
+syncConnection.disconnect();
+syncConnection = engine.makeConnection('[Channel3]', 'sync_enabled', syncButtonOutputCallback);
+syncConnection.trigger();
+```
+
+#### Mixxx 2.0 and older
+
+Callback functions take the same three arguments as those passed to the
+new `engine.makeConnection` function described above, but the
+connections are registered with these functions:
+
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function*) - Connects the specified Mixxx control signal to the
+    script function. The script function can either be a JavaScript
+    function or a string of JavaScript code.
+  - **engine.connectControl**(*control group*, *control name*, *script
+    function name*, **true**) - Tacking a `, true` on to the list of
+    parameters disconnects the specified Mixxx control signal from the
+    specified script function. The script function can only be a string
+    of JavaScript code; if the callback was registered by passing it as
+    a JavaScript function, it cannot be disconnected.
+  - **engine.trigger**(*control group*, *control name*) - An easy way to
+    cause the specified Mixxx control signal to fire so the connected
+    script function is called with the updated value even if it hasn't
+    changed, such as when forcing LEDs to update on a mode change. This
+    will only trigger connected JavaScript functions and will not
+    refresh outputs connected in XML.
+
+#### Examples
+
+To connect the sync lock state of the current virtual deck to a function
+called MyController.syncLED, do:
+
+``` javascript
+engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED");
+```
+
+``` javascript
+MyController.syncLED = function (value, group, control) {
+    midi.sendShortMsg(byte 1, byte 2, value * 127); // see below section for an explanation of this example line
+}
+```
+
+To force the above-mentioned volume LEDs to sync up, call
+engine.trigger():
+
+``` javascript
+engine.trigger("[Channel"+MyController.currentDeck+"]", "sync_enabled");
+```
+
+If you change what the sync LED represents (like when switching modes),
+you would disconnect the Mixxx "sync\_enabled" control from them like
+this:
+
+``` javascript
+engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED",true);
+```
 
 ### Sending MIDI output to the controller
 
@@ -351,75 +486,7 @@ function.
 **Tip:** [Store commonly used MIDI values in JS
 objects](#storing-commonly-used-MIDI-codes-in-JS-objects)
 
-### Automatic reactions to changes in Mixxx
-
-Up to this point, script functions are only called in response to the
-controller being manipulated. They can also be called automatically in
-response to some value changing within Mixxx, such as when you click the
-sync button on screen, you want an LED on the controller to react. Here
-are the related functions:
-
-  - **engine.connectControl**(*control group*, *control name*, *script
-    function name*) - This connects the specified Mixxx control signal
-    to the specified script function. It returns true if the connection
-    was successful.
-  - **engine.connectControl**(*control group*, *control name*, *script
-    function name*, **true**) - Tacking a `, true` on to the list of
-    parameters disconnects the specified Mixxx control signal from the
-    specified script function. It returns true if the disconnection was
-    successful. Note that the script function name must be a string in
-    quotes.
-  - **engine.trigger**(*control group*, *control name*) - An easy way to
-    cause the specified Mixxx control signal to fire so the connected
-    script function is called with the updated value even if it hasn't
-    changed, such as when forcing LEDs to update on a mode change.
-    Please note that engine.trigger() will only trigger connected
-    javascript functions and will not refresh outputs connected in XML.
-
-Connected functions are passed three parameters: the new value of the
-MixxxControl, the group, and the Mixxx control name. So, your connected
-function can look like this:
-
-``` javascript
-MyController.syncLED = function (value, group, control) {
-    midi.sendShortMsg(byte 1, byte 2, value * 127); // see above section for an explanation of this example line
-}
-```
-
-**Tip**: If the provided three parameters do not fit your needs, then
-you can use the following trick with an anonymous function to provide
-your own parameters to be passed.
-
-``` javascript
-// Pass one parameter '1000' to my callback 
-engine.connectControl("[Master]", "volume", function(value) { MyController.syncLED(1000); });
-```
-
-#### Examples
-
-To connect the sync lock state of the current virtual deck to a function
-called MyController.syncLED, do:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED");
-```
-
-To force the above-mentioned volume LEDs to sync up, call
-engine.trigger():
-
-``` javascript
-engine.trigger("[Channel"+MyController.currentDeck+"]", "sync_enabled");
-```
-
-If you change what the sync LED represents (like when switching modes),
-you would disconnect the Mixxx "sync\_enabled" control from them like
-this:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED",true);
-```
-
-### Soft-takeover
+## Soft-takeover
 
 To prevent sudden wide parameter changes when the on-screen control
 diverges from a hardware control, use soft-takeover. While it's active
@@ -464,7 +531,7 @@ you're switching control away from:
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");
 ```
 
-### Scratching and jog wheels
+## Scratching and jog wheels
 
 Typically jog wheels are mapped so they control scratching when touched
 from the top and temporarily bend the pitch (speed up/slow down
@@ -556,7 +623,7 @@ to these script functions [as described
 above](#Linking-MIDI-signals-to-JavaScript-functions) and you'll be
 ready to tear up some tracks.
 
-### Timed reactions
+## Timed reactions
 
 Sometimes you need to be able to do things at certain time intervals
 regardless of whether the controller is manipulated or something changes
@@ -585,7 +652,7 @@ can cause Mixxx to stutter.) **Always use a timer instead\!**
 See the [script timers](script%20timers) page for more details on best
 practices for using timers.
 
-### Spinback, brake and soft start effect
+## Spinback, brake and soft start effect
 
 A forwards or backwards brake effect can be enabled/disabled using
 engine.brake() or engine.spinback(). engine.spinback() just calls
@@ -696,12 +763,7 @@ The effects can also be mapped directly via XML using either
     </control>
 ```
 
-### Object prototype enhancements
-
-**String**.prototype**.toInt** - returns an ASCII byte array for all the
-characters in any string. Use like so: `"Test string".toInt()`
-
-## Available common functions
+## Helper functions
 
 Here is a list of functions available to you from the always-loaded
 common-controller-scripts.js file:
@@ -754,49 +816,10 @@ common-controller-scripts.js file:
     the pitch range is large enough to reach it. (This depends on the
     track having the correct original BPM value.) If more than two
     seconds pass between taps, the history is erased.
+  - **String**.prototype**.toInt** - returns an ASCII byte array for all
+    the characters in any string. Use like so: `"Test string".toInt()`
 
 <sup>1</sup> Introduced in 1.11.0 <sup>2</sup> Renamed in 1.11.
-
-### System-exclusive (sysex) message handing functions
-
-Data passed from SysEx messages to functions are, in order:
-
-1.  an array of raw data bytes
-2.  the length of that array
-
-Therefore, function definitions should look like:
-
-``` javascript
-ControllerName.inboundSysex = function (data, length) {
-    ...
-}
-```
-
-To invoke the above function, add the following mapping to the
-`<controls>` section of your XML preset file:
-
-    <control>
-        <status>0xf0</status>
-        <group>[Master]</group>
-        <key>ControllerName.inboundSysex</key>
-        <options>
-            <Script-Binding/>
-        </options>
-    </control>
-
-The bytes received are completely up to the controller so consult the
-user manual or the manufacturer for details. If the controller can send
-different SysEx messages, your single function is responsible for
-deciding which has been received then taking the appropriate action.
-
-*Note that some controllers may send bytes that violate MIDI standards,
-e.g. setting the high bit in a data byte or using undefined status bytes
-(like `0xF9`.) On Linux, recent versions of ALSA (from November 2012
-onward) automatically standardize these by breaking the bytes into two
-nybbles and sending two bytes for every one received from the
-controller. For example `0xF0 0x97 0x30 0xF7` would become
-`0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
-details.*
 
 ## Additional examples
 

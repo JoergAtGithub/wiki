@@ -274,10 +274,10 @@ controller. For example `0xF0 0x97 0x30 0xF7` would become
 `0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
 details.*
 
-### Read and set Mixxx Control values
+### Interacting with Mixxx
 
-Script functions can check and set Mixxx control values using the
-following functions:
+Scripts can access the state of Mixxx through the [Mixxx
+Control](MixxxControls) system using the following functions:
 
 ``` javascript
 engine.getParameter(string group, string key);
@@ -287,26 +287,27 @@ engine.setValue(string group, string key, double newValue);
 ```
 
 To check a Mixxx control value, call `engine.getParameter()` with the
-"`group`" and "`key`" values for a particular Mixxx control, a list of
-which can be found [here](mixxxcontrols). So for example:
+"`group`" and "`key`" values for a particular Mixxx Control, a list of
+which can be found [here](mixxxcontrols). For example:
 
 ``` javascript
 var currentValue = engine.getParameter("[Channel1]", "rate");
 ```
 
-Values can be set just as easily by calling `engine.setParameter()` with
-the `group` and `key` as above, and the new value to set, like so:
+Values can be set by calling `engine.setParameter()` with the `group`
+and `key` as above, and the new value to set, like so:
 
 ``` javascript
 engine.setParameter("[Channel1]", "rate", 0.5);
 ```
 
 `engine.getParameter` and `engine.setParameter` work with values on a
-scale from 0 to 1. The older `engine.getValue` and `engine.setValue`
-functions work with values on the scale listed for each control on the
-[MixxxControls](MixxxControls) page. The `Parameter` functions must be
-used with effects parameters because different effects have parameters
-on different scales.
+scale from 0 to 1. These should be used for Mixxx Controls with a
+continuous range like `volume`, `rate`, and `parameterN`. The older
+`engine.getValue` and `engine.setValue` functions work with values on
+the scale listed for each Control on the [MixxxControls](MixxxControls)
+page. The `engine.get/setValue` functions should be used for Controls
+with discrete states like `orientation`.
 
 Note that since this is a script, you can do calculations and use state
 variables so a single function can work for multiple cases, such as a
@@ -486,8 +487,9 @@ Mixxx Controls, then it would be appropriate to call
 `midi.sendShortMsg`/`midi.sendSysexMsg` from the input handling
 function.
 
-**Tip:** [Store commonly used MIDI values in JS
-objects](#storing-commonly-used-MIDI-codes-in-JS-objects)
+## Components library
+
+Now that you understand the basics,
 
 ## Soft-takeover
 

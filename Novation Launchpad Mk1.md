@@ -9,3 +9,10 @@ to MIDI by special drivers on Windows and Mac OS X. There is no driver
 available for Linux. It has been discontinued in favor of the [Novation
 Launchpad Mk2](Novation%20Launchpad%20Mk2) which is USB MIDI class
 compliant and has RGB pads.
+
+## Mappings
+
+[Novation Launchpad Mapping by
+szdavid92](Novation%20Launchpad%20Mapping%20by%20szdavid92) \[1\]
+
+1.  since Mixxx 2.1

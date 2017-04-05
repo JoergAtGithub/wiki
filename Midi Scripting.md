@@ -474,7 +474,7 @@ Generally, you should not call `midi.sendShortMsg` or
 Instead, the input function should change the state of a [Mixxx
 Control](MixxxControls) and you should call
 `midi.sendShortMsg`/`midi.sendSysexMsg` in a callback function that
-reacts to changes in that Mixxx Control. Refer to the section below for
+reacts to changes in that Mixxx Control. Refer to the section above for
 details. This way, the state of the controller will always be in sync
 with what Mixxx is actually doing, even if the user manipulates Mixxx
 with the keyboard, mouse, or another controller. If the MIDI input

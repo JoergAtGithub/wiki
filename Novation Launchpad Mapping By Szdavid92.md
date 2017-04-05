@@ -68,7 +68,7 @@ occupy the upper 5 buttons. Their functions from top to bottom:
 > longer, the scrolling activates. This comes in handy when navigating
 > lengthy playlists.
 
-[[/media/docs/lp-mki-layout.png|layout]]
+[[/media/szdavid92-lp-mki-layout.png|layout]]
 
 **Modifier keys** are located on the lower 2 buttons of the sidebar, and
 used for the same purpose as you would expect on a computer keyboard.
@@ -105,9 +105,9 @@ layouts that is generated for 1 (single channel), 2, 3 and 4 note
 chords. Once more the algorithm will fill out the spaces with the
 largest default preset.
 
-| [[/media/docs/lp-1.png|1]] | [[/media/docs/lp-2.png|2]] |
-| -------------------- | -------------------- |
-| [[/media/docs/lp-3.png|3]] | [[/media/docs/lp-4.png|4]] |
+| [[/media/szdavid92-lp-1.png|1]] | [[/media/szdavid92-lp-2.png|2]] |
+| ------------------------- | ------------------------- |
+| [[/media/szdavid92-lp-3.png|3]] | [[/media/szdavid92-lp-4.png|4]] |
 
 This means that e.g. if you press down D3-D2-S1 in this chord sequence,
 - D3 will be mapped to block 1 with the default tall preset, - D2 will
@@ -130,11 +130,11 @@ secondary: default then all others in fixed but not specified order.
 See, not that complicated after all. Let's see the actual presets that
 are featured out of the box:
 
-|        | default                                                                            |                                                                                               |
-| ------ | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| grande | [[/media/docs/lp-mki-grande.png|grande]] **GRANDE** is currently the only grande layout. |                                                                                               |
-| tall   | [[/media/docs/lp-mki-tall.png|tall]] **TALL** is the default tall layout.                | [[/media/docs/lp-mki-juggler.png|juggler]] **JUGGLER** is a tall layout optimized for beat jumping. |
-| short  | [[/media/docs/lp-mki-short.png|short]] **SHORT** is the default short layout.            | [[/media/docs/lp-mki-sampler.png|sampler]] **SAMPLER** is an all-cue short layout for samplers.     |
+|        | default                                                                                 |                                                                                                    |
+| ------ | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| grande | [[/media/szdavid92-lp-mki-grande.png|grande]] **GRANDE** is currently the only grande layout. |                                                                                                    |
+| tall   | [[/media/szdavid92-lp-mki-tall.png|tall]] **TALL** is the default tall layout.                | [[/media/szdavid92-lp-mki-juggler.png|juggler]] **JUGGLER** is a tall layout optimized for beat jumping. |
+| short  | [[/media/szdavid92-lp-mki-short.png|short]] **SHORT** is the default short layout.            | [[/media/szdavid92-lp-mki-sampler.png|sampler]] **SAMPLER** is an all-cue short layout for samplers.     |
 
 <sup>1</sup> No identification with actual persons (living or deceased),
 places, buildings, and products is intended or should be inferred.

@@ -8,6 +8,9 @@ redesigned layout scheme.
 
 ## Mapping
 
+[Novation Launchpad Mapping by
+szdavid92](Novation%20Launchpad%20Mapping%20by%20szdavid92)
+
 ## Links
 
 [Mapping Sources on

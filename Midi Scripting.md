@@ -287,7 +287,7 @@ engine.setValue("[Channel"+currentDeck+"]", "rate", (currentValue+10)/2);
 `script.toggleControl(string group, string key)` function can be used as
 a convenient shortcut.
 
-### Sending messages to the controller to change LEDs or other controller properties
+### Sending MIDI output to the controller
 
 You can send three-byte "short" messages and arbitrary-length
 system-exclusive "long" ones to the controller using the following

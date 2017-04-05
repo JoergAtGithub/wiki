@@ -382,3 +382,15 @@ Feedback
 
   - **bright green**: loop on
   - **dim green**: loop off
+
+## Contributing
+
+[Project on GitHub](https://github.com/szdavid92/mixxx-launchpad)
+
+**Would like to contribute?**
+
+Fork the project. The README helps you start out.
+
+**Got an issue?**
+
+Report it on the Issues tab\!

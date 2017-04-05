@@ -289,61 +289,64 @@ a convenient shortcut.
 
 ### Sending MIDI output to the controller
 
-You can send three-byte "short" messages and arbitrary-length
-system-exclusive "long" ones to the controller using the following
-functions:
+To light LEDs and change other states of the controller, send MIDI
+messages back to the controller from your script. There are different
+functions for typical three-byte "short" messages and less common
+system-exclusive "long" messages:
 
 ``` c++
-midi.sendShortMsg(status, byte2, byte3);
-midi.sendSysexMsg(data, length);
+midi.sendShortMsg(byte1, byte2, byte3);
+midi.sendSysexMsg([array of bytes], length);
 ```
 
-Together, these cover virtually all types of MIDI messages you would
-need to send. (This is how you light LEDs, change displays, etc.)
+Generally, buttons have their LEDs controlled by sending a 3 byte short
+message with the same first two bytes as when the controller sends a
+signal for a button press. For example, if the controller sends a
+`0x91, 0x11, 0x7F` message when a button is pressed, calling
+`midi.sendShortMsg(0x91, 0x11, 0x7F)` will light the LED and calling
+`midi.sendShortMsg(0x91, 0x11, 0x00)` will turn the LED off. If the LED
+has multiple colors, typically the color is determined by the third
+byte.
 
-For short messages, call `midi.sendShortMsg()` with:
-
-  - the MIDI status byte
-  - the second data byte
-  - the third data byte
-
-It's completely up to you (and your controller's MIDI spec) what those
-bytes can be. (Status will usually be 0x90, 0x80 or 0xB0.) For example:
-
-``` javascript
-midi.sendShortMsg(0x90,0x11,0x01);   // This might light an LED
-```
+An explanation of the MIDI signals that your controller sends and
+receives should be available from the controller manufacturer. This is
+likely in a document on the product page for your controller on the
+manufacturer's website. If it is not in a separate document, it is
+likely at the end of the manual. If you cannot find this documentation,
+contact the manufacturer to ask for it. If they do not provide it, you
+will have to intercept the MIDI messages other DJ software uses or guess
+and check to figure out the messages to send to your controller. To
+intercept MIDI messages from other programs, you can use
+[MIDIOX](http://www.midiox.com/) on Windows or [MIDI
+Monitor](https://www.snoize.com/MIDIMonitor/) on Mac OS X.
 
 For system-exclusive messages, call `midi.sendSysexMsg()` with:
 
   - An array of data bytes to send, always leading with `0xF0` and
     ending with `0xF7`
   - The number of bytes in the array, including the 0xF0 and 0xF7 (start
-    counting with 1 or just use the .length property as below)
+    counting with 1 or just `Array.prototype.length` property as below)
 
 <!-- end list -->
 
 ``` javascript
 var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
-midi.sendSysexMsg(byteArray,byteArray.length);
+midi.sendSysexMsg(byteArray, byteArray.length);
 ```
 
-Here again, it's completely up to you (and your controller's MIDI spec)
-what those bytes should be for the change you wish to effect.
-
-**Tip:** If you send MIDI signals to the controller in functions that
-automatically react to changes in Mixxx (see below) rather than
-functions that handle incoming MIDI signals, the LEDs and other
-properties of your controllers will always be in sync with what Mixxx is
-actually doing, even if you manipulate Mixxx with the keyboard, mouse,
-or another controller.
-
-**Tip:** An explanation of the MIDI signals that your controller sends
-to computers and how it reacts to MIDI signals that computers send to it
-should be available from the controller manufacturer. This is likely in
-a document on the product page for your controller on the manufacturer's
-website. If it is not in a separate document, it is likely at the end of
-the manual.
+Generally, you should not call `midi.sendShortMsg` or
+`midi.sendSysexMsg` directly from functions that handle MIDI input.
+Instead, the input function should change the state of a [Mixxx
+Control](MixxxControls) and you should call
+`midi.sendShortMsg`/`midi.sendSysexMsg` in a callback function that
+reacts to changes in that Mixxx Control. Refer to the section below for
+details. This way, the state of the controller will always be in sync
+with what Mixxx is actually doing, even if the user manipulates Mixxx
+with the keyboard, mouse, or another controller. If the MIDI input
+handling function only changes the state of script variables but not
+Mixxx Controls, then it would be appropriate to call
+`midi.sendShortMsg`/`midi.sendSysexMsg` from the input handling
+function.
 
 **Tip:** [Store commonly used MIDI values in JS
 objects](#storing-commonly-used-MIDI-codes-in-JS-objects)

@@ -489,7 +489,8 @@ function.
 
 ## Components library
 
-Now that you understand the basics,
+Now that you understand the basics, it is suggested to use the
+[Components JS](Components%20JS) library for new mappings for Mixxx 2.1.
 
 ## Soft-takeover
 

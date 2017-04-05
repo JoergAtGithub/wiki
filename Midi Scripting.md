@@ -71,9 +71,9 @@ signals (although they could be very different).
 Mixxx. Every time you save your file, Mixxx will reload it immediately.
 This can make testing changes very fast.
 
-## Setting up a JavaScript mapping
+## Set up a JavaScript mapping
 
-### Specifying the JS file
+### Specify the JS file
 
 All JavaScript files need an accompanying [XML mapping
 file](MIDI%20controller%20mapping%20file%20format). See the [controller
@@ -161,7 +161,7 @@ command line.
 controller object (`MyController` in this example) to avoid name
 collisions with other scripts that may be loaded.
 
-### Linking MIDI input signals to JavaScript
+### Link MIDI input signals to JavaScript
 
 To link a script function to an incoming MIDI message, put the full
 function name in the \<key\> tag of the MIDI message's \<control\>
@@ -274,7 +274,7 @@ controller. For example `0xF0 0x97 0x30 0xF7` would become
 `0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
 details.*
 
-### Reading and setting Mixxx control values
+### Read and set Mixxx Control values
 
 Script functions can check and set Mixxx control values using the
 following functions:
@@ -321,11 +321,14 @@ engine.setValue("[Channel"+currentDeck+"]", "rate", (currentValue+10)/2);
 `script.toggleControl(string group, string key)` function can be used as
 a convenient shortcut.
 
-### Output callback functions
+### Connect output callback functions
 
 To keep the state of your controller in sync with the state of Mixxx,
 register callback functions that Mixxx will execute when the state of a
-[Mixxx Control](MixxxControls) changes.
+[Mixxx Control](MixxxControls) changes. Typically these callback
+functions will [\#send MIDI output to the
+controller](#send%20MIDI%20output%20to%20the%20controller), but they can
+also be used to change the state of script variables.
 
 #### Mixxx 2.1
 
@@ -422,7 +425,7 @@ this:
 engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED",true);
 ```
 
-### Sending MIDI output to the controller
+### Send MIDI output to the controller
 
 To light LEDs and change other states of the controller, send MIDI
 messages back to the controller from your script. There are different

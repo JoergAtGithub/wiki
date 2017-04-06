@@ -228,7 +228,43 @@ The following functions are directly controlled by the controller
 
 ## Effect Functions
 
-Todo
+| Group       | Figure         | \[**SHIFT**\]? | Button Name        | Description                                                  |
+| ----------- | -------------- | -------------- | ------------------ | ------------------------------------------------------------ |
+| 2 - EFFECTS | 1 (L)          | \-             | FX1-1              | Controls EffectRack1-EffectUnit1-Effect1 meta                |
+| :::         | 1 (L)          | \[**SHIFT**\]  | FX1-1              | Controls EffectRack1-EffectUnit1 active effect's parameter 1 |
+| :::         | 1 (R)          | \-             | FX2-1              | Controls EffectRack1-EffectUnit2-Effect1 meta                |
+| :::         | 1 (R)          | \[**SHIFT**\]  | FX2-1              | Controls EffectRack1-EffectUnit2 active effect's parameter 1 |
+| :::         | 2 (L)          | \-             | FX1-2              | Controls EffectRack1-EffectUnit1-Effect2 meta                |
+| :::         | 2 (L)          | \[**SHIFT**\]  | FX1-2              | Controls EffectRack1-EffectUnit1 active effect's parameter 2 |
+| :::         | 2 (R)          | \-             | FX2-2              | Controls EffectRack1-EffectUnit2-Effect2 meta                |
+| :::         | 2 (R)          | \[**SHIFT**\]  | FX2-2              | Controls EffectRack1-EffectUnit2 active effect's parameter 2 |
+| :::         | 3 (L)          | \-             | FX1-3              | Controls EffectRack1-EffectUnit1-Effect3 meta                |
+| :::         | 3 (L)          | \[**SHIFT**\]  | FX1-3              | Controls EffectRack1-EffectUnit1 active effect's parameter 3 |
+| :::         | 3 (R)          | \-             | FX2-3              | Controls EffectRack1-EffectUnit2-Effect3 meta                |
+| :::         | 3 (R)          | \[**SHIFT**\]  | FX2-3              | Controls EffectRack1-EffectUnit2 active effect's parameter 3 |
+| :::         | 4 (L)          | \-             | FX1 BEATS          | Controls EffectRack1-EffectUnit1 super1 knob                 |
+| :::         | 4 (R)          | \-             | FX2 BEATS          | Controls EffectRack1-EffectUnit2 super1 knob                 |
+| :::         | 4 (L)          | \[**SHIFT**\]  | FX1 BEATS          | Controls EffectRack1-EffectUnit1 mix                         |
+| :::         | 4 (R)          | \[**SHIFT**\]  | FX2 BEATS          | Controls EffectRack1-EffectUnit2 mix                         |
+| :::         | 5 (L)          | \-             | \[**FX1-1 ON**\]   | Toggles EffectRack1-EffectUnit1-Effect1                      |
+| :::         | 5 (R)          | \-             | \[**FX2-1 ON**\]   | Toggles EffectRack1-EffectUnit2-Effect1                      |
+| :::         | 5 (L)          | \[**SHIFT**\]  | \[**FX1-1 ON**\]   | Selects next effect for EffectRack1-EffectUnit1-Effect1      |
+| :::         | 5 (R)          | \[**SHIFT**\]  | \[**FX2-1 ON**\]   | Selects next effect for EffectRack1-EffectUnit2-Effect1      |
+| :::         | 6 (L)          | \-             | \[**FX1-2 ON**\]   | Toggles EffectRack1-EffectUnit1-Effect2                      |
+| :::         | 6 (R)          | \-             | \[**FX2-2 ON**\]   | Toggles EffectRack1-EffectUnit2-Effect2                      |
+| :::         | 6 (L)          | \[**SHIFT**\]  | \[**FX1-2 ON**\]   | Selects next effect for EffectRack1-EffectUnit1-Effect2      |
+| :::         | 6 (R)          | \[**SHIFT**\]  | \[**FX2-2 ON**\]   | Selects next effect for EffectRack1-EffectUnit2-Effect2      |
+| :::         | 7 (L)          | \-             | \[**FX1-3 ON**\]   | Toggles EffectRack1-EffectUnit1-Effect3                      |
+| :::         | 7 (R)          | \-             | \[**FX2-3 ON**\]   | Toggles EffectRack1-EffectUnit2-Effect3                      |
+| :::         | 7 (L)          | \[**SHIFT**\]  | \[**FX1-3 ON**\]   | Selects next effect for EffectRack1-EffectUnit1-Effect3      |
+| :::         | 7 (R)          | \[**SHIFT**\]  | \[**FX2-3 ON**\]   | Selects next effect for EffectRack1-EffectUnit2-Effect3      |
+| :::         | 8 (L)          | \-             | \[**FX1 TAP**\]    | Toggles EffectRack1-EffectUnit1                              |
+| :::         | 8 (R)          | \-             | \[**FX2 TAP**\]    | Toggles EffectRack1-EffectUnit2                              |
+| :::         | 8 (L)          | \[**SHIFT**\]  | \[**FX1 TAP**\]    | Selects next chain for EffectRack1-EffectUnit1               |
+| :::         | 8 (R)          | \[**SHIFT**\]  | \[**FX2 TAP**\]    | Selects next chain for EffectRack1-EffectUnit2               |
+| :::         | 9, 10, 11, 12  | \-             | \[**FX1 ASSIGN**\] | Assign EffectRack1-EffectUnit1 to specific deck              |
+| :::         | 13, 14, 15, 16 | \-             | \[**FX2 ASSIGN**\] | Assign EffectRack1-EffectUnit2 to specific deck              |
+| :::         | 17, 18, 19, 20 | \-             | FILTER             | Control QuickEffectRack1 super1 knob (e.g. moog filter)      |
 
 ## References
 

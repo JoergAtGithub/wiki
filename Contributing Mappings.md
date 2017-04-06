@@ -25,8 +25,8 @@ Course](MIDI%20Crash%20Course) page.
 For someone with prior programming experience, writing an initial
 mapping for a controller can be done in a few days. However, you will
 likely want to change some of your initial design decisions as you use
-the mapping, especially if you do not have much experience with DJ
-equipment. Refining the design is a gradual process that takes
+the mapping, especially if you do not have much experience using DJ
+controllers. Refining the design is a gradual process that takes
 experimentation and revising. You are encouraged to seek feedback from
 users on the [Mixxx forum](http://mixxx.org/forums/viewforum.php?f=7) as
 you develop the mapping.

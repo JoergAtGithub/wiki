@@ -274,7 +274,7 @@ controller. For example `0xF0 0x97 0x30 0xF7` would become
 `0xF0 0x09 0x07 0x03 0x00 0xF7.` Consult the ALSA documentation for full
 details.*
 
-### Interacting with Mixxx
+### Interact with Mixxx
 
 Scripts can access the state of Mixxx through the [Mixxx
 Control](MixxxControls) system using the following functions:

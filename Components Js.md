@@ -69,6 +69,11 @@ explain here, so worry about understanding every detail yet:
         components.Deck.call(this, deckNumbers);
         this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
         this.cueButton = new components.CueButton([0x90 + midiChannel, 0x02]);
+        this.syncButton = new components.SyncButton([0x90 + midiChannel, 0x03]);
+        this.pflButton = new components.Button({
+            midi: [0x90 + channel, 0x04],
+            key: 'pfl',
+        });
         this.hotcueButtons = [];
         for (var i = 1; i <= 8; i++) {
             this.hotcueButtons[i] = new components.HotcueButton({
@@ -76,6 +81,21 @@ explain here, so worry about understanding every detail yet:
                 number: i,
             });
         }
+        
+        this.volume = new components.Pot({
+            midi: [0xB0 + midiChannel, 0x01],
+            inKey: 'volume',
+        });
+        
+        this.eqKnob = [];
+        for (var k = 1; k <= 3; k++) {
+            this.eqKnob[k] = new components.Pot({
+                midi: [0xB0 + midiChannel, 0x02 + k],
+                group: '[EqualizerRack1_' + this.currentDeck + '_Effect1]',
+                inKey: 'parameter' + k,
+            });
+        }
+        
         // ... define as many other Components as necessary ...
     
         // Set the group properties of the above Components and connect their output callback functions

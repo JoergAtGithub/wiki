@@ -213,8 +213,7 @@ file](#linking-MIDI-signals-to-JavaScript-functions) are, in order:
 1.  MIDI channel (0x00 = Channel 1..0x0F = Channel 16,)
 2.  Control/note number (byte 2)
 3.  Value of the control (byte 3)
-4.  MIDI status byte (Note (0x9\#), Control Change (0xB\#), Pitch
-    (0xE\#) etc.)
+4.  MIDI status byte (byte 1)
 5.  MixxxControl group (from the \<group\> value in the XML file)
 
 Therefore, function definitions should look like:

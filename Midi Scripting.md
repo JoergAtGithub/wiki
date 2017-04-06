@@ -339,8 +339,8 @@ function, which takes 3 parameters:
 1.  group of the Mixxx Control (string)
 2.  name of the Mixxx Control (string)
 3.  JavaScript function to execute when the Mixxx Control changes. This
-    function takes three parameters: the new value of the MixxxControl,
-    the group, and the Mixxx control name. `this` in the context of the
+    function takes three parameters: the new value of the Mixxx Control,
+    the group, and the Mixxx Control name. `this` in the context of the
     function refers to the value of `this` where `engine.makeConnection`
     was called.
 
@@ -350,13 +350,10 @@ the controller between different modes, such as controlling a different
 deck:
 
 ``` 
- - disconnect the old connection object by calling its ''disconnect'' method
+ - disconnect the old connection object by calling its ''disconnect'' method (with no arguments)
  - register the new connection with ''engine.makeConnection''
- - call the ''trigger'' method of the new connection object to  immediately execute the callback using the state of the new Mixxx Control.
+ - call the ''trigger'' method of the new connection object (with no arguments) to immediately execute the callback using the state of the new Mixxx Control.
 ```
-
-The `disconnect` and `trigger` methods of the connection objects do not
-take any arguments.
 
 For example:
 
@@ -375,56 +372,32 @@ syncConnection.trigger();
 
 #### Mixxx 2.0 and older
 
-Callback functions take the same three arguments as those passed to the
-new `engine.makeConnection` function described above, but the
-connections are registered with these functions:
+Callback functions take the same 3 arguments as those passed to the new
+`engine.makeConnection` function described above, but the connections
+are registered with these functions:
 
   - **engine.connectControl**(*control group*, *control name*, *script
     function*) - Connects the specified Mixxx control signal to the
     script function. The script function can either be a JavaScript
-    function or a string of JavaScript code.
+    function or a string of JavaScript code that evaluates to a
+    function.
   - **engine.connectControl**(*control group*, *control name*, *script
     function name*, **true**) - Tacking a `, true` on to the list of
-    parameters disconnects the specified Mixxx control signal from the
-    specified script function. The script function can only be a string
-    of JavaScript code; if the callback was registered by passing it as
-    a JavaScript function, it cannot be disconnected.
-  - **engine.trigger**(*control group*, *control name*) - An easy way to
-    cause the specified Mixxx control signal to fire so the connected
-    script function is called with the updated value even if it hasn't
-    changed, such as when forcing LEDs to update on a mode change. This
-    will only trigger connected JavaScript functions and will not
-    refresh outputs connected in XML.
+    parameters disconnects the specified Mixxx Control from the
+    specified script function. However, this only works when the script
+    function is specified as a string of JavaScript code that evaluates
+    to a function, not when an actual JavaScript function is passed.
+  - **engine.trigger**(*control group*, *control name*) - Cause the
+    specified Mixxx Control signal to fire so the connected script
+    function is called with the updated value even if it hasn't changed,
+    such as when forcing LEDs to update on a mode change. If multiple
+    callbacks are connected, they will all be executed. This will only
+    trigger connected JavaScript functions and will not refresh outputs
+    connected in XML.
 
-#### Examples
-
-To connect the sync lock state of the current virtual deck to a function
-called MyController.syncLED, do:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED");
-```
-
-``` javascript
-MyController.syncLED = function (value, group, control) {
-    midi.sendShortMsg(byte 1, byte 2, value * 127); // see below section for an explanation of this example line
-}
-```
-
-To force the above-mentioned volume LEDs to sync up, call
-engine.trigger():
-
-``` javascript
-engine.trigger("[Channel"+MyController.currentDeck+"]", "sync_enabled");
-```
-
-If you change what the sync LED represents (like when switching modes),
-you would disconnect the Mixxx "sync\_enabled" control from them like
-this:
-
-``` javascript
-engine.connectControl("[Channel"+MyController.currentDeck+"]", "sync_enabled", "MyController.syncLED",true);
-```
+These functions are deprecated because there is no way to individually
+disconnect or trigger specific callback functions when multiple
+callbacks were connected to the same Mixxx Control.
 
 ### Send MIDI output to the controller
 

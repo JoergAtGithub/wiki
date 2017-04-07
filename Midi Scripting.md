@@ -639,12 +639,14 @@ engine.brake() with default settings to make it behave like a spinback.
 To achieve a forward acceleration effect from standstill to normal speed
 use engine.softStart().
 
-When disabled, all three functions would jump to normal playback speed.
+When disabled while active, all three functions would jump to normal
+playback speed.
 
 Both engine.softStart() and engine.brake()/engine.spinback() can
-interrupt each other: slow down a track with engine.brake() and, before
-it has stopped, get it back to normal speed with engine.softStart(). See
-last example how to map this to press/release of just one button.
+interrupt each other: slow down a track with engine.brake() and (even
+before track has stopped) get it back to normal speed with
+engine.softStart(). See last example how to map this to press/release of
+just one button.
 
 ``` javascript
 brake(int deck, bool activate, [float factor], [float rate])

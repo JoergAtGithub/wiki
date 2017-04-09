@@ -42,8 +42,11 @@ section of that tutorial.
 To map most controllers, create a custom subtype of [\#Deck](#Deck) and
 create instances of your custom Deck objects in your controller's `init`
 function. Use the custom Deck's constructor function to create all the
-Components you need for your particular controller. There is a lot to
-explain here, so worry about understanding every detail yet:
+Components you need for your particular controller. The example below is
+for a typical 2 deck controller. If you are mapping a controller with a
+different layout, some changes to this general structure may be
+necessary. There is a lot to explain here, so worry about understanding
+every detail yet:
 
     // Declare the variable for your controller and assign it to an empty object
     var MyController = {};
@@ -113,9 +116,6 @@ explain here, so worry about understanding every detail yet:
     };
     // give your custom Deck all the methods of the generic Deck in the Components library
     MyController.Deck.prototype = new components.Deck();
-
-If you are mapping a controller that does not have a typical 2 deck
-layout, a different structure for your code may make more sense.
 
 ## Component
 

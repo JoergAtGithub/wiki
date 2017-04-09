@@ -114,8 +114,8 @@ explain here, so worry about understanding every detail yet:
     // give your custom Deck all the methods of the generic Deck in the Components library
     MyController.Deck.prototype = new components.Deck();
 
-If you are mapping a controller that does not have a typical layout, a
-different structure for your code may make more sense.
+If you are mapping a controller that does not have a typical 2 deck
+layout, a different structure for your code may make more sense.
 
 ## Component
 

@@ -27,7 +27,7 @@ latest version of Mixxx.
     JS\#EffectUnit](Components%20JS#EffectUnit) object that makes it
     easy to map the new effects interface to the common layout of 4
     knobs (or 3 knobs + 1 encoder) + 4 buttons for controlling effects
-  - New [MixxxControl](MixxxControl)s for looping and beatjumping were
+  - New [MixxxControls](MixxxControls) for looping and beatjumping were
     introduced. If your mapping has buttons mapped to fixed loop sizes,
     update it to use beatloop\_toggle, beatlooproll\_activate, and
     beatloop\_halve/double.

@@ -539,8 +539,8 @@ faders with master sync. For example:
 
     var tempoFader = new components.Pot({
         midi: [0xB1, 0x32],
-        inKey: 'rate',
         group: '[Channel1]',
+        inKey: 'rate',
         relative: true,
     });
 

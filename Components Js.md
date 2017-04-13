@@ -525,8 +525,8 @@ For example:
 To use a Pot with a fader or knob that uses 14 bit MIDI (sends two MIDI
 messages, one with a least significant byte and one with a most
 significant byte) for higher precision, map the incoming signals to the
-Pot's `inputLSB` and `inputMSB` functions instead of `input`. Nothing
-extra needs to be done in JavaScript.
+Pot's `inputLSB` and `inputMSB` functions instead of `input` in the XML
+file. Nothing extra needs to be done in JavaScript.
 
 ## Encoder
 

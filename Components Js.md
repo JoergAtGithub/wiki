@@ -531,11 +531,11 @@ file. Nothing extra needs to be done in JavaScript.
 Pot Components support an optional relative mode as an alternative to
 dealing with soft takeover. To use it, set the `relative` property to
 `true` in the options object for the constructor. In this mode, moving
-the Pot will adjust Mixxx Control relative to its current value. Holding
-shift and moving the Pot will not affect the Mixxx Control so the user
-can continue adjusting the Mixxx Control after the Pot has reached an
-end of its physical range. This mode may be helpful for using tempo
-faders with master sync. For example:
+the Pot will adjust the Mixxx Control relative to its current value.
+Holding shift and moving the Pot will not affect the Mixxx Control. This
+allows the user to continue adjusting the Mixxx Control after the Pot
+has reached the end of its physical range. This mode may be helpful for
+using tempo faders with master sync. For example:
 
     var tempoFader = new components.Pot({
         midi: [0xB1, 0x32],

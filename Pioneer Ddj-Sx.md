@@ -66,8 +66,6 @@ settings can be made:
   - **PioneerDDJSX.jumpPreviewPosition**: Sets the preview player
     absolute position, being set at releasing \[**ROTARY SELECTOR**\]
     and if "jumpPreviewEnabled" is enabled.
-  - **PioneerDDJSX.samplerShowLoadDialog**: If true, LoadSamplerBank
-    file dialog will show up at running init.
   - **PioneerDDJSX.samplerCueGotoAndPlay**: If true, pad press in
     \[**SAMPLER**\]-PAD-MODE repeatedly causes *sampler* to play loaded
     track from cue-point, else it causes to play loaded track from the

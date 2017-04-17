@@ -102,6 +102,7 @@ settings can be made:
 | :::             | 7          | \-             | \[**CUE**\]                   | Toggles PFL/Cue (headphones) for specific deck                                                                      |
 | :::             | 7          | \[**SHIFT**\]  | \[**CUE**\]                   | BPM Tab function for specific deck                                                                                  |
 | :::             | 9          | \[**SHIFT**\]  | \[**MASTER CUE**\]            | Toggles split cue (headphones)                                                                                      |
+| :::             | 10         | \-             | Crossfader Assign             | Crossfader assignment - deck to crossfader (left (A), right (B) or center (THRU))                                   |
 | :::             | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
 | 4 - FRONT PANEL | 1          | \-             | Crossfader curve              | Controls Mixxx crossfader curve                                                                                     |
 | 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Show/hide Sampler decks / Effect rack                                                                               |
@@ -109,14 +110,13 @@ settings can be made:
 The following functions are directly controlled by the controller
 (Mixxx-independent):
 
-| Group           | Figure | \[**SHIFT**\]? | Button Name         | Description                                                       |
-| --------------- | ------ | -------------- | ------------------- | ----------------------------------------------------------------- |
-| 3 - MIXER       | 8      | \-             | MASTER LEVEL        | Controls the master output volume                                 |
-| :::             | 9      | \-             | \[**MASTER CUE**\]  | Toggles master cue                                                |
-| :::             | 10     | \-             | Crossfader Assign   | Crossfader assignment to deck, useless when using deck with Mixxx |
-| :::             | 13     | \-             | HEADPHONES MIX      | Controls headphone's audio source (cue, master)                   |
-| :::             | 15     | \-             | BOOTH MONITOR LEVEL | Controls the booth output volume                                  |
-| 4 - FRONT PANEL | 2      | \-             | INPUT SELECT        | Controls deck source (PC, MIC, CD, PHONO, LINE)                   |
+| Group           | Figure | \[**SHIFT**\]? | Button Name         | Description                                     |
+| --------------- | ------ | -------------- | ------------------- | ----------------------------------------------- |
+| 3 - MIXER       | 8      | \-             | MASTER LEVEL        | Controls the master output volume               |
+| :::             | 9      | \-             | \[**MASTER CUE**\]  | Toggles master cue                              |
+| :::             | 13     | \-             | HEADPHONES MIX      | Controls headphone's audio source (cue, master) |
+| :::             | 15     | \-             | BOOTH MONITOR LEVEL | Controls the booth output volume                |
+| 4 - FRONT PANEL | 2      | \-             | INPUT SELECT        | Controls deck source (PC, MIC, CD, PHONO, LINE) |
 
 ## Deck Functions
 

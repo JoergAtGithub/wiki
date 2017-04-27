@@ -12,17 +12,14 @@ The Pioneer DDJ-SB2 is an all-in-one 4 deck USB MIDI controller with a
 built in soundcard. Mixxx allows it to control 4 decks. It is compatible
 with Mixxx since version 2.0.
 
-## Drivers
+## Compatibility
 
 ### Windows
 
-Windows Vista, Windows 7 and Windows 8 are supported. You can download
-the latest drivers and firmware from
-<http://www.pioneerdj.com/en/product/controller/ddj-sb2/black/support/#info>.
-
-**<span class="underline">IMPORTANT for Windows users</span>**: If you
-are having issues getting both sound outputs to work properly, please
-try using a different Sound API (see the Preferences menu).
+Pioneer has a
+[driver](https://www.pioneerdj.com/en/support/software/ddj-sb2/#drivers)
+for Windows versions 7 and newer. When using Mixxx, use the ASIO sound
+API.
 
 ### Mac OS X & Linux
 

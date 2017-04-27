@@ -29,8 +29,8 @@ outputs.
 
 Pioneer has a
 [driver](https://www.pioneerdj.com/en/support/software/ddj-sb2/#drivers)
-for Windows versions 7 and newer. When using Mixxx, use the ASIO sound
-API.
+for Windows versions 7 and newer. Select the ASIO sound API in Mixxx's
+Sound Hardware Preferences.
 
 ### Mac OS X & Linux
 

@@ -20,7 +20,8 @@ signals). There is a 1/4" microphone input with an adjustable gain knob.
 The microphone input is mixed directly with the main RCA outputs in
 hardware. The microphone preamplifier is very noisy, so it is
 recommended to keep the microphone gain knob all the way down when not
-using a microphone.
+using a microphone, otherwise there will be noise added to the main RCA
+outputs.
 
 ## Compatibility
 

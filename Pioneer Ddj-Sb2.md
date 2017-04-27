@@ -8,9 +8,19 @@
  *[[https://github.com/dg3nec/mixxx/tree/DDJ-SB2/res/controllers]]
 ```
 
-The Pioneer DDJ-SB2 is an all-in-one 4 deck USB MIDI controller with a
-built in soundcard. Mixxx allows it to control 4 decks. It is compatible
-with Mixxx since version 2.0.
+The Pioneer DDJ-SB2 is an all-in-one USB MIDI controller with a built in
+sound card. It has controls for 2 decks that can be toggled between
+decks to play with 4 decks. It is compatible with Mixxx since version
+2.0.
+
+The sound card has 2 RCA jacks for the main output. There are two
+headphone jacks, one small (1/8") and one large (1/4") connector (each
+jack plays the same channels, they cannot be used for independent
+signals). There is a 1/4" microphone input with an adjustable gain knob.
+The microphone input is mixed directly with the main RCA outputs in
+hardware. The microphone preamplifier is very noisy, so it is
+recommended to keep the microphone gain knob all the way down when not
+using a microphone.
 
 ## Compatibility
 

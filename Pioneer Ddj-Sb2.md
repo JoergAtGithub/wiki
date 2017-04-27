@@ -242,6 +242,8 @@ blinking) you can make the pads behave as EQ kill switches.
 
 ### Effects
 
+#### Mixxx 2.0
+
 Over the jogwheels there are sections allowing to control effects 1 & 2.
 
 Turning the knobs will control the mix of an effect.
@@ -265,6 +267,22 @@ Pressing FX buttons toogles output On/Off.
 
 You can choose between effects by entering "kill mode" and using pads 1
 and 2 while holding shift.
+
+#### Mixxx 2.1
+
+The knob controls either the dry/wet knob of the whole effect chain when
+no effect is focused or the metaknob of the focused effect. Focus an
+effect by pressing one of the effect buttons. Unfocus by pressing the
+button of the focused effect again to manipulate the dry/wet knob. Press
+and hold an effect button to toggle the enable switch for that effect.
+The enable switches for each effect are not shown on the controller's
+LEDs, so you need to look at the screen to check the state of those.
+
+Unfortunately the DDJ-SB2 does not have enough buttons to assign effect
+units to different decks. You may want to set up a [custom keyboard
+mapping](https://mixxx.org/manual/latest/chapters/advanced_topics.html#making-a-custom-keyboard-mapping)
+to have easy access to those switches. Otherwise, you can use your mouse
+to click the buttons on screen.
 
 ### Auto DJ
 

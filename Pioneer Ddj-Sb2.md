@@ -291,8 +291,8 @@ again.
 
 Press and hold an effect button to toggle the enable switch for that
 effect. The enable switches for each effect are not shown on the
-controller's LEDs, so you need to look at the screen to check the state
-of those.
+controller's LEDs, so you need to look at the screen to check whether an
+effect is on. All effects are off when Mixxx starts.
 
 The DDJ-SB2 does not have enough buttons to control assigning effect
 units to different decks. You may want to set up a [custom keyboard

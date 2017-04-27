@@ -171,6 +171,8 @@ way, but controlling hotcues 5 to 8.
 Pressing the pads in auto loop mode will make loops of a specific length
 measured in beats.
 
+#### Mixxx 2.0
+
 | Control       | Function     |
 | ------------- | ------------ |
 | Pad 1         | 1 beat loop  |
@@ -180,6 +182,19 @@ measured in beats.
 | Shift + pad 1 | 16 beat loop |
 | Shift + pad 2 | 32 beat loop |
 | Shift + pad 3 | 64 beat loop |
+
+#### Mixxx 2.1
+
+| Control       | Function                                                                           |
+| ------------- | ---------------------------------------------------------------------------------- |
+| Pad 1         | set a loop of the selected number of beats                                         |
+| Pad 2         | halve the selected loop length                                                     |
+| Pad 3         | double the selected loop length                                                    |
+| Pad 4         | reloop (reactivate a pre-existing loop)                                            |
+| Shift + pad 1 | set a rolling loop of the selected number of beats                                 |
+| Shift + pad 2 | move loop backwards by 1 beat, or by the loop size if the loop is less than 1 beat |
+| Shift + pad 3 | move loop forwards by 1 beat, or by the loop size if the loop is less than 1 beat  |
+| Shift + pad 4 | enable loop, jump to loop in marker, and stop playback                             |
 
 ### Pads - manual loop mode
 

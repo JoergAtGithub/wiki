@@ -270,15 +270,19 @@ and 2 while holding shift.
 
 #### Mixxx 2.1
 
-The knob controls either the dry/wet knob of the whole effect chain when
-no effect is focused or the metaknob of the focused effect. Focus an
-effect by pressing one of the effect buttons. Unfocus by pressing the
-button of the focused effect again to manipulate the dry/wet knob. Press
-and hold an effect button to toggle the enable switch for that effect.
-The enable switches for each effect are not shown on the controller's
-LEDs, so you need to look at the screen to check the state of those.
+The knob controls the dry/wet knob of the whole effect chain when no
+effect is focused. When an effect is focused, the knob controls the
+metaknob of the focused effect. Focus an effect by pressing one of the
+effect buttons. To switch the controller's knob back to manipulating the
+dry/wet knob, unfocus by pressing the button of the focused effect
+again.
 
-Unfortunately the DDJ-SB2 does not have enough buttons to assign effect
+Press and hold an effect button to toggle the enable switch for that
+effect. The enable switches for each effect are not shown on the
+controller's LEDs, so you need to look at the screen to check the state
+of those.
+
+The DDJ-SB2 does not have enough buttons to control assigning effect
 units to different decks. You may want to set up a [custom keyboard
 mapping](https://mixxx.org/manual/latest/chapters/advanced_topics.html#making-a-custom-keyboard-mapping)
 to have easy access to those switches. Otherwise, you can use your mouse

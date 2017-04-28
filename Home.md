@@ -21,6 +21,9 @@ this wiki, please fix it.
   - [DJ Hardware Guide](Hardware%20compatibility)
   - [Manual](http://mixxx.org/manual/latest/)
   - [Troubleshooting](Troubleshooting)
+  - [Finding the Mixxx.log file](Mixxx.log%20file) can be helpful when
+    Mixxx isn't working right. Please attach this file to forum posts
+    and bug reports.
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
   - [Reporting bugs](Reporting%20bugs) is a great way to contribute to
     Mixxx, especially if you don't have programming skills

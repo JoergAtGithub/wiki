@@ -699,12 +699,7 @@ Components JS probably will not be very helpful. You may want to read
 the source code for the library's EffectUnit to get an idea for how to
 map your controller though.
 
-3 knobs are used for controlling effect metaknobs or parameters,
-depending on whether an effect is focused. The other knob is used for
-the dry/wet knob of the whole chain or the superknob when shift is
-pressed. The 3 buttons next to the 3 meta/parameter knobs toggle the
-enable switch for that effect. The last button is used for focusing
-effects. The Components provided are:
+The Components provided are:
 
   - dryWetKnob ([\#Pot](#Pot))
   - effectFocusButton ([\#Button](#Button))
@@ -713,39 +708,11 @@ effects. The Components provided are:
   - knobs\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
     [\#Pot](#Pot)s)
 
-When there is no focused effect (the default state), the knobs control
-the effect metaknobs. When an effect is focused, the knobs control the
-first 3 parameters of the focused effect.
-
-To focus an effect, press and hold the effectFocusButton. The
-enableButtons will switch to choosing which effect is focused. Press the
-enableButton of the focused effect to unfocus it and switch the knobs
-back to controlling metaknobs. When the effectFocusButton is released,
-the enableButtons will go back to controlling the effect enable
-switches.
-
-The LED of the effectFocusButton indicates whether any effect is
-focused. When its LED is on, you can hold the effectFocusButton down to
-see which effect is focused without having to look at the computer
-screen. To unfocus the effect, you can short press the
-effectFocusButton. The focused effect is remembered, so when you short
-press the effectFocusButton again, the previously focused effect will be
-refocused. Alternatively, if you want to keep all the parameters showing
-on screen, you can press and hold the effectFocusButton, then press the
-enableButton of the focused effect to unfocus it.
-
-If the parameters of each effect are not showing on screen, they will be
-shown when the effectFocusButton is pressed. When effect parameters are
-showing, short pressing the effectFocusButton hides them and unfocuses
-if any effect is focused.
-
-When the effectFocusButton is pressed with shift, it toggles the
-EffectUnit ComponentContainer between controlling different EffectUnits
-in Mixxx. Typically this is used to toggle between EffectUnits 1 & 3 or
-2 & 4, like deck toggle buttons.
-
-When an enableButton is pressed with shift, the next available effect is
-loaded in that effect slot.
+Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
+page for a description of how to use the EffectUnit object. On the wiki
+page for your controller, link to the [Standard Effects
+Mapping](Standard%20Effects%20Mapping) page instead of rewriting a
+description for your controller.
 
 ### Setup
 

@@ -164,7 +164,7 @@ on a playing deck before using it.
     decrease/increase the playback speed while they are held down for
     beatmatching. The button to the right of those shifts the beat grid
     to the current position.
-  - **Slicer mode**: assign the deck to Effect Units 1-4.
+  - **Slicer mode**: refer to Effects section above
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

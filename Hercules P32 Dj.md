@@ -123,6 +123,18 @@ knobs when switching between effects due to [a bug in
 Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008). Soft take over
 does work for switching between dry/wet and the superknob though.
 
+The Slicer pad mode has additional controls for effects. The top three
+rows each control an individual effect in the effect unit, allowing you
+to set up effect chains. (These are not visible in the LateNight skin).
+The left button toggles whether that effect is enabled (the whole effect
+unit still has to be enabled for a deck for it to be audible). With
+shift, the left button resets the effect's parameters to their default
+values. The two purple buttons in the middle scroll through the
+available effects. The button on the right sets the parameter knobs to
+control that effect's parameters. The bottom row toggles the effect unit
+on the headphones, master mix, microphone 1, and auxiliary input 1 (from
+left to right).
+
 #### Mixxx 2.1
 
 Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
@@ -152,18 +164,7 @@ on a playing deck before using it.
     decrease/increase the playback speed while they are held down for
     beatmatching. The button to the right of those shifts the beat grid
     to the current position.
-  - **Slicer mode**: In Mixxx 2.1, the pads in the top left assign the
-    deck to Effect Units 1-4. In Mixxx 2.0 (not 2.1), the top three rows
-    each control an individual effect in the effect unit, allowing you
-    to set up effect chains. (These are not visible in the LateNight
-    skin). The left button toggles whether that effect is enabled (the
-    whole effect unit still has to be enabled for a deck for it to be
-    audible). With shift, the left button resets the effect's parameters
-    to their default values. The two purple buttons in the middle scroll
-    through the available effects. The button on the right sets the
-    parameter knobs to control that effect's parameters. The bottom row
-    toggles the effect unit on the headphones, master mix, microphone 1,
-    and auxiliary input 1 (from left to right).
+  - **Slicer mode**: assign the deck to Effect Units 1-4.
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to

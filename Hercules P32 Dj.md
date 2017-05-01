@@ -172,6 +172,8 @@ on a playing deck before using it.
     sample. Press a blue pad with shift to eject a sample. Note that
     samplers are independent from decks; the left grid controls samplers
     1-16 and the right grid controls samplers 17-32. 
+  - **Sync**: Short press to sync to other deck. Press and hold to
+    enable master sync.
   - **Shift + sync**: toggle quantize
   - **Shift + cue**: jump to beginning of track and stop
   - **Shift + play**: toggle reverse playback

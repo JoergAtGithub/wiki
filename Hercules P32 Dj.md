@@ -151,20 +151,19 @@ on a playing deck before using it.
     size). On the bottom row, the two purple buttons temporarily
     decrease/increase the playback speed while they are held down for
     beatmatching. The button to the right of those shifts the beat grid
-    to the current position. The button on the right toggles quantize. 
-  - **Slicer mode**: various controls for effects. The bottom row
+    to the current position.
+  - **Slicer mode**: In Mixxx 2.1, the pads in the top left assign the
+    deck to Effect Units 1-4. In Mixxx 2.0 (not 2.1), the top three rows
+    each control an individual effect in the effect unit, allowing you
+    to set up effect chains. (These are not visible in the LateNight
+    skin). The left button toggles whether that effect is enabled (the
+    whole effect unit still has to be enabled for a deck for it to be
+    audible). With shift, the left button resets the effect's parameters
+    to their default values. The two purple buttons in the middle scroll
+    through the available effects. The button on the right sets the
+    parameter knobs to control that effect's parameters. The bottom row
     toggles the effect unit on the headphones, master mix, microphone 1,
-    and auxiliary input 1 (from left to right). In Mixxx 2.1, the top
-    row assigns the Effect Unit to decks 1-4. In Mixxx 2.0 (not 2.1),
-    the top three rows each control an individual effect in the effect
-    unit, allowing you to set up effect chains. (These are not visible
-    in the LateNight skin). The left button toggles whether that effect
-    is enabled (the whole effect unit still has to be enabled for a deck
-    for it to be audible). With shift, the left button resets the
-    effect's parameters to their default values. The two purple buttons
-    in the middle scroll through the available effects. The button on
-    the right sets the parameter knobs to control that effect's
-    parameters. 
+    and auxiliary input 1 (from left to right).
   - **Sampler mode**: Press an unlit pad to load the track selected in
     the library to that sampler. Pads are blue when the sampler is
     loaded but not playing and red when playing. Press a blue pad to
@@ -173,8 +172,9 @@ on a playing deck before using it.
     sample. Press a blue pad with shift to eject a sample. Note that
     samplers are independent from decks; the left grid controls samplers
     1-16 and the right grid controls samplers 17-32. 
-  - **Shift + sync**: sync beats without enabling sync lock
-  - **Shift + play**: go to beginning of track and stop
+  - **Shift + sync**: toggle quantize
+  - **Shift + cue**: jump to beginning of track and stop
+  - **Shift + play**: toggle reverse playback
   - **Shift + load**: ejects a track from the deck
   - **EQ knobs, volume faders, crossfader, headphone button, play, cue,
     sync, and load** all behave as labeled.

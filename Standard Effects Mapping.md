@@ -24,6 +24,9 @@ remembered, so when you short press the focus button again, the
 previously focused effect will be refocused. Alternatively, if you want
 to keep all the parameters showing on screen, you can press and hold the
 focus button, then press the button of the focused effect to unfocus it.
+Showing all the parameters without having an effect focused is helpful
+for experimenting with different ways of linking parameters to the
+metaknob.
 
 When the focus button is pressed with shift, it toggles the EffectUnit
 between controlling different EffectUnits in Mixxx. Typically this is

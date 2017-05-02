@@ -62,8 +62,6 @@ folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20fo
 with your text editor of choice (such as Notepad, TextEdit, Kate, or
 gEdit) and editing the lines at the very top of the file.
 
-  - **defaultLoopSize**: loop size (in beats) when Mixxx starts
-  - **defaultBeatJumpSize**: beat jump size when Mixxx starts
   - **loopEnabledDot**: whether to use the dot on the loop size LED
     display to indicate that a loop is active. This restricts loop sizes
     to 2-32 beats and may be helpful if you never use loops less than 2

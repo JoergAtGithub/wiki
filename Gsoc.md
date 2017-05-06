@@ -10,6 +10,14 @@ Mixxx is back in Google Summer of Code for 2017\!
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
+The following projects were accepted for Google Summer of Code 2017:
+
+  - [Crate Enhancements](Crate%20Enhancements) by Anastasis Grammenos
+    (gramanas) 
+  - [Microphone effects chain](Microphone%20effects%20chain) by Aris
+    Stathakis 
+  - [Multi-broadcasting](Multi-broadcasting) by Stéphane Lepin (Palakis)
+
 ### 2016
 
 Mixxx was an accepted mentoring organization for Google Summer of Code,

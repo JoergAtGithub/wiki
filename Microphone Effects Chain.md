@@ -1,0 +1,6 @@
+# Microphone effects chain
+
+by Aris Stathakis
+
+[Final
+Proposal](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/4745309562339328_1491224579_proposal.pdf?Expires=1494150950&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=FX6XeaanVWPxnGqIqIfDDmOCnnNcnFY1ZBJ1aGyQIa%2FzzBd8V%2FICZls1sqHSZTx2EOZRncwElKwSMo0P6l0PNfCsJQbVKWnCeSqljSXkobKyfg17uSANj4eddp3q7UVqeR%2FI%2FED3EuvcZDawGOQso1H2PeY%2BE56S3Nyi62niopGvwkFQRVyd9CVBo3U3fGAeG%2F7ig1TIuIkcc1ajcnDj%2Fq60FcEotRKl1k1lh5MmfrCKrjHgGLfYFM7xUByi8RemBQD86Y7%2B0TAojuqoP%2BzjpSr7%2FazPGxwJWfemMEInnOK0WqduD1oif4UnFN1jzzJ0VSikzzwFR8AYIHY2I%2BTcsA%3D%3D)

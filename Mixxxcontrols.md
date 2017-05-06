@@ -51,7 +51,9 @@ that it is either 'ON' (non-zero) or 'OFF' (zero).
 
 The following extensions add some features to ControlPotMeter controls
 (volume, crossfader, ...). Use in conjunction with \[Channel*N*\],
-\[Sampler*N*\], \[Master\] ... groups
+\[Sampler*N*\], \[Master\] ... groups. Please note, this doesn't work in
+JavaScript files, so you can not do, for example,
+`engine.setValue('MyController', 'keylock_toggle')`.
 
 |  | Key/Control            |  | Range   |  | What it does                                                                      |  | On-screen feedback                                                                              |  |
 |  | ---------------------- |  | ------- |  | --------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------- |  |

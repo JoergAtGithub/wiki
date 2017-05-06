@@ -92,6 +92,7 @@ see them in other sections.
   - [Shoutcast](developer_guide_shoutcast)
   - [Mixing Engine](developer_guide_engine)
   - [Deck/Sampler Processing](developer_guide_engine_player)
+  - [Effects](developer_guide_effects)
   - [SoundManager (OS audio interface)](developer_guide_soundmanager)
   - [SoundSource (per-format audio
     decoding)](developer_guide_soundsource)

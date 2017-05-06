@@ -264,11 +264,11 @@ Components JS can take care of these details for you.
 
 ### Level meter LEDs
 
-Level meters on the controller should match the ones on screen. Red LEDs
-on level meters should only be lit when the signal is clipping. The
-`PeakIndicator` [Control](Mixxx%20Controls) indicates when the signal is
-clipping. Yellow LEDs on the controller's level meters should light up
-only when the meters on screen are in the yellow region.
+Level meters on the controller should match the meters on screen. Red
+LEDs should only be lit when the signal is clipping, indicated by the
+`PeakIndicator` [Control](MixxxControls). Yellow LEDs on the
+controller's level meters should light up only when the meters on screen
+are in the yellow region.
 
 ### Layering & Shift functions
 

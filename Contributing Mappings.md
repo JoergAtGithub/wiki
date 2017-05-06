@@ -262,6 +262,14 @@ The [Components JS\#PlayButton](Components%20JS#PlayButton) and
 [Components JS\#CueButton](Components%20JS#CueButton) objects in
 Components JS can take care of these details for you.
 
+### Level meter LEDs
+
+Level meters on the controller should match the ones on screen. Red LEDs
+on level meters should only be lit when the signal is clipping. The
+`PeakIndicator` [Control](Mixxx%20Controls) indicates when the signal is
+clipping. Yellow LEDs on the controller's level meters should light up
+only when the meters on screen are in the yellow region.
+
 ### Layering & Shift functions
 
 Mapping parts of a controller to do different actions in different

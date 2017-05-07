@@ -226,6 +226,20 @@ The following functions are directly controlled by the controller
 | :::      | 11     | \-             | \[**DUAL DECK**\] | Toggles left deck to dual deck control and illumination (DECK 1 and 3)  |
 | :::      | 12     | \-             | \[**DUAL DECK**\] | Toggles right deck to dual deck control and illumination (DECK 2 and 4) |
 
+### Loop/Loop-Roll parameter sets
+
+By using the \[**PARAMETER LEFT**\] and \[**PARAMETER RIGHT**\] buttons
+in BEATLOOP ROLL (default parameter set: 2) or BEATLOOP mode (default
+parameter set: 0), you can change the pad-assigned loop size. The
+following table shows the possible assignments (unit: beats).
+
+| Set No. | PAD1 | PAD2 | PAD3 | PAD4 | PAD5 | PAD6 | PAD7 | PAD8 |
+| ------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 0       | 1/4  | 1/2  | 1    | 2    | 4    | 8    | 16   | 32   |
+| 1       | 1/8  | 1/4  | 1/2  | 1    | 2    | 4    | 8    | 16   |
+| 2       | 1/16 | 1/8  | 1/4  | 1/2  | 1    | 2    | 4    | 8    |
+| 3       | 1/32 | 1/16 | 1/8  | 1/4  | 1/2  | 1    | 2    | 4    |
+
 ## Effect Functions
 
 | Group       | Figure         | \[**SHIFT**\]? | Button Name        | Description                                                  |

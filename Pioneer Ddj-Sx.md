@@ -257,7 +257,35 @@ following table shows the possible assignments (unit: beats).
 
 ### Slicer description
 
-ToDo
+For a detailed explanation of the slicer mode, take a look at the
+controller's
+[manual](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRI1096_manual/?_ga=1.221242769.826661553.1489418053).
+A limited slicer functionality is implemented into the controller
+mapping as described below.
+
+There are two slicer types, 1 and 2, which can be selected by pressing
+the \[**SLICER**\] mode button. If none or only one PAD (beat) is lit,
+slicer type 1 is active. If you press \[**SLICER**\] mode button again,
+slicer type 2 will be activated and all PADs, except one for the beat,
+will light up.
+
+#### Slicer type 1
+
+Starting with the first beat marked on a playing track, the track is
+divided into sections of 8 beats (not visible). If the first 8 beats are
+reached, the next section starts. The PADs are assigned to one section,
+each time the active section changes, the PADs will be assigned to the
+new active section.
+
+By pressing PAD X, the play position jumps to the beat X of the active
+section. If you have pressed the PAD on-beat and hold it, the play
+position is playing in loop. The beat loop length depends on the
+selected slicer quantization (changeable by pressing \[**PARAMETER
+LEFT**\] or \[**PARAMETER RIGHT**\]). If you release the PAD, the
+playback will resume where the track would have been if the slicer
+wouldn't have been activated (slip mode).
+
+#### Slicer type 2
 
 ## Effect Functions
 

@@ -302,6 +302,8 @@ As soon as slicer type 2 is activated, the active section is played in
 loop (not visible). If the end of the active section is reached, the
 play position jumps back to the beginning of the active section.
 
+[[/media/hardware/pioneerddjsx/pioneerddjsx_slicertype2.png|]]
+
 By pressing PAD X, the play position jumps to the beat X of the active
 section. In slicer type 2 beat loop is not possible.
 

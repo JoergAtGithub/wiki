@@ -19,15 +19,15 @@ The DDJ-SX provides several settings, which can be changed in a special
   - For saving and exiting *Utility-Mode*, switch off the unit again
     \[**STANDBY/ON**\].
 
-### Setting for usage of different DJ-software
+### Setting for usage of Serato DJ
 
-To use the DDJ-SX with a different DJ-software than Serato and get
-proper MIDI-messages, you have to change this setting (default is for
-using Serato).  
+To use the DDJ-SX with MIXXX, the controller must be configured for the
+usage of Serato DJ. You can check/change this setting as follows
+(default is for using Serato DJ):  
 **Press the \[KEY LOCK\] button at the left deck:**
 
   - \[**KEY LOCK**\] button off: Controller is configured for using
-    Serato.
+    Serato DJ.
   - \[**KEY LOCK**\] button on (lit): Controller is configured for using
     different DJ-software.
 

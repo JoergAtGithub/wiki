@@ -214,6 +214,8 @@ The following functions are directly controlled by the controller
 | :::                  | 14     | \-             | \[**PARAMETER RIGHT**\] (SAMPLER mode) | Increment active sampler bank (0-3), button LED is illuminated at sampler bank 1, 3                                                                                                |
 | :::                  | 14     | \-             | \[**PARAMETER RIGHT**\] (GROUP2 mode)  | Increment active loop-interval parameter set (0-3), button LED is illuminated at parameter set 1, 3                                                                                |
 
+### Direct controls (Mixxx-independent)
+
 The following functions are directly controlled by the controller
 (Mixxx-independent):
 

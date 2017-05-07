@@ -219,7 +219,8 @@ The following functions are directly controlled by the controller
 | :::                  | 12     | \-             | \[**DUAL DECK**\]                 | Toggles right deck to dual deck control and illumination (DECK 2 and 4) |
 | 6 - PERFORMANCE PADS | 9      | \-             | \[**HOT CUE**\] mode              | Switches PAD control and illumination to HOT CUE mode                   |
 | :::                  | 10     | \-             | \[**ROLL**\] mode                 | Switches PAD control and illumination to BEATLOOP ROLL mode             |
-| :::                  | 11     | \-             | \[**SLICER**\] mode               | Switches PAD control and illumination to BEATLOOP mode                  |
+| :::                  | 10     | \[**SHIFT**\]  | \[**GROUP2**\] mode               | Switches PAD control and illumination to BEATLOOP mode                  |
+| :::                  | 11     | \-             | \[**SLICER**\] mode               | Switches PAD control and illumination to SLICER mode                    |
 | :::                  | 12     | \-             | \[**SAMPLER**\] mode              | Switches PAD control and illumination to SAMPLER mode                   |
 | :::                  | 12     | \-             | \[**SAMPLER**\] mode (long press) | Toggles SAMPLER PADS velocity mode (velocity \~ volume)                 |
 

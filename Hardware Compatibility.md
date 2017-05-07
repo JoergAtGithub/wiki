@@ -223,6 +223,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600               | 4 deck all-in-one           | yes                   | yes              | HID             | 2013     |
 | [Pioneer DDJ-SX](Pioneer%20DDJ-SX)                                                               | discontinued       | 4 deck controller/mixer     | yes                   | yes              | MIDI            | 2012     |
 | [Behringer CMD PL-1](Behringer%20CMD%20PL-1)                                                     | $100               | 1 deck controller           | no                    | no               | MIDI            | 2013     |
+| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                     | $100               | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
 
 \</sortable\>
 

@@ -312,6 +312,14 @@ sampler that is playing and looping.
 The [Components JS\#SamplerButton](Components%20JS#SamplerButton) object
 in Components JS will can take care of these details for you a
 
+### Touch strips
+
+Touch strips are easy to touch accidentally, so do not map them in a way
+that is easy to accidentally throw off the user's mixing. For example,
+if the touch strip is only used for seeking within the track (needle
+dropping), require the deck to be stopped to seek and require a shift
+button to be held if the deck is playing.
+
 ### Main & Headphone gain knobs
 
 Controllers have knobs for the main and headphone outputs that work in a

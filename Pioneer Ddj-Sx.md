@@ -22,12 +22,11 @@ The DDJ-SX provides several settings, which can be changed in a special
 ### Setting for usage of Serato DJ
 
 To use the DDJ-SX with MIXXX, the controller must be configured for the
-usage of Serato DJ. You can check/change this setting as follows
-(default is for using Serato DJ):  
+usage of Serato DJ. You can check/change this setting as follows:  
 **Press the \[KEY LOCK\] button at the left deck:**
 
   - \[**KEY LOCK**\] button off: Controller is configured for using
-    Serato DJ.
+    Serato DJ (default).
   - \[**KEY LOCK**\] button on (lit): Controller is configured for using
     different DJ-software.
 

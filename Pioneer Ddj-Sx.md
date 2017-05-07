@@ -199,6 +199,12 @@ The following functions are directly controlled by the controller
 | :::                  | 7      | \[**SHIFT**\]  | \[**PAD 7**\] (SAMPLER mode)           | Sample deck index 7 (according sampler bank) - playing: stop deck, stopped: eject track                                                                                            |
 | :::                  | 8      | \-             | \[**PAD 8**\] (SAMPLER mode)           | Sample deck index 8 (according sampler bank) - empty: Load selected track into sample deck, track loaded: start play (default, see user options) sample deck                       |
 | :::                  | 8      | \[**SHIFT**\]  | \[**PAD 8**\] (SAMPLER mode)           | Sample deck index 8 (according sampler bank) - playing: stop deck, stopped: eject track                                                                                            |
+| :::                  | 9      | \-             | \[**HOT CUE**\] mode                   | Switches PAD control and illumination to HOT CUE mode                                                                                                                              |
+| :::                  | 10     | \-             | \[**ROLL**\] mode                      | Switches PAD control and illumination to BEATLOOP ROLL mode                                                                                                                        |
+| :::                  | 10     | \[**SHIFT**\]  | \[**ROLL**\] mode                      | Switches PAD control and illumination to GROUP2 (BEATLOOP) mode                                                                                                                    |
+| :::                  | 11     | \-             | \[**SLICER**\] mode                    | Switches PAD control and illumination to SLICER mode, in SLICER mode switches between slicer type 1 and 2                                                                          |
+| :::                  | 12     | \-             | \[**SAMPLER**\] mode                   | Switches PAD control and illumination to SAMPLER mode                                                                                                                              |
+| :::                  | 12     | \-             | \[**SAMPLER**\] mode (long press)      | Toggles SAMPLER PADS velocity mode (velocity \~ volume)                                                                                                                            |
 | :::                  | 13     | \-             | \[**PARAMETER LEFT**\] (ROLL mode)     | Decrement active looproll-interval parameter set (0-3), button LED is illuminated at parameter set 2, 3                                                                            |
 | :::                  | 13     | \-             | \[**PARAMETER LEFT**\] (SLICER mode)   | Decrement active loop-interval parameter set (0-3), button LED is illuminated at parameter set 2, 3                                                                                |
 | :::                  | 13     | \-             | \[**PARAMETER LEFT**\] (SAMPLER mode)  | Decrement active sampler bank (0-3), button LED is illuminated at sampler bank 2, 3                                                                                                |
@@ -209,20 +215,14 @@ The following functions are directly controlled by the controller
 The following functions are directly controlled by the controller
 (Mixxx-independent):
 
-| Group                | Figure | \[**SHIFT**\]? | Button Name                       | Description                                                                                               |
-| -------------------- | ------ | -------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| 1 - DECK             | 7      | \-             | \[**DECK 1**\]                    | Switches left deck to DECK 1 control and illumination                                                     |
-| :::                  | 8      | \-             | \[**DECK 2**\]                    | Switches right deck to DECK 2 control and illumination                                                    |
-| :::                  | 9      | \-             | \[**DECK 3**\]                    | Switches left deck to DECK 3 control and illumination                                                     |
-| :::                  | 10     | \-             | \[**DECK 4**\]                    | Switches right deck to DECK 4 control and illumination                                                    |
-| :::                  | 11     | \-             | \[**DUAL DECK**\]                 | Toggles left deck to dual deck control and illumination (DECK 1 and 3)                                    |
-| :::                  | 12     | \-             | \[**DUAL DECK**\]                 | Toggles right deck to dual deck control and illumination (DECK 2 and 4)                                   |
-| 6 - PERFORMANCE PADS | 9      | \-             | \[**HOT CUE**\] mode              | Switches PAD control and illumination to HOT CUE mode                                                     |
-| :::                  | 10     | \-             | \[**ROLL**\] mode                 | Switches PAD control and illumination to BEATLOOP ROLL mode                                               |
-| :::                  | 10     | \[**SHIFT**\]  | \[**GROUP2**\] mode               | Switches PAD control and illumination to BEATLOOP mode                                                    |
-| :::                  | 11     | \-             | \[**SLICER**\] mode               | Switches PAD control and illumination to SLICER mode, in SLICER mode switches between slicer type 1 and 2 |
-| :::                  | 12     | \-             | \[**SAMPLER**\] mode              | Switches PAD control and illumination to SAMPLER mode                                                     |
-| :::                  | 12     | \-             | \[**SAMPLER**\] mode (long press) | Toggles SAMPLER PADS velocity mode (velocity \~ volume)                                                   |
+| Group    | Figure | \[**SHIFT**\]? | Button Name       | Description                                                             |
+| -------- | ------ | -------------- | ----------------- | ----------------------------------------------------------------------- |
+| 1 - DECK | 7      | \-             | \[**DECK 1**\]    | Switches left deck to DECK 1 control and illumination                   |
+| :::      | 8      | \-             | \[**DECK 2**\]    | Switches right deck to DECK 2 control and illumination                  |
+| :::      | 9      | \-             | \[**DECK 3**\]    | Switches left deck to DECK 3 control and illumination                   |
+| :::      | 10     | \-             | \[**DECK 4**\]    | Switches right deck to DECK 4 control and illumination                  |
+| :::      | 11     | \-             | \[**DUAL DECK**\] | Toggles left deck to dual deck control and illumination (DECK 1 and 3)  |
+| :::      | 12     | \-             | \[**DUAL DECK**\] | Toggles right deck to dual deck control and illumination (DECK 2 and 4) |
 
 ## Effect Functions
 

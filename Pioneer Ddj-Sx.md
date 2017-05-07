@@ -37,9 +37,6 @@ To change the mapping's user options, you have to open the script file
 (\*.js). At the top of the file under **USER OPTIONS** the following
 settings can be made:
 
-  - **PioneerDDJSX.blinkingSync**: If true, the \[**SYNC**\] button
-    blinks with the beat. If false, the \[**SYNC**\] button is lit when
-    *sync* is enabled.
   - **PioneerDDJSX.jogwheelSensivity**: Sets the jogwheel sensivity. 1 =
     default, 2 is twice as sensitive, 0.5 is half as sensitive.
   - **PioneerDDJSX.jogwheelShiftMultiplier**: Sets how much more

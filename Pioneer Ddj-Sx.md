@@ -353,12 +353,12 @@ if the slicer wouldn't have been activated (slip mode).
 
 ## References
 
-  - Product page:
-    <https://www.pioneerdj.com/en/product/controller/ddj-sx/black/overview/>
-  - Manual:
-    <http://docs.pioneerdj.com/Manuals/DDJ_SX_DRI1096_manual/?_ga=1.221242769.826661553.1489418053>
-  - MIDI:
-    <https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/software-info/controller/ddj-sx/ddj-sx_list_of_midi_messages_e.pdf?la=en>
-  - Forum: <http://www.mixxx.org/forums/viewtopic.php?f=7&t=8310>
+  - [Manufacturer's product
+    page](https://www.pioneerdj.com/en-us/product/controller/ddj-sx/black/overview/)
+  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=8310)
+  - [Manual
+    (multi-language)](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRH1193_manual/)
+  - [List of MIDI
+    messages](https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/software-info/controller/ddj-sx/ddj-sx_list_of_midi_messages_e.pdf?la=en)
   - [Controller Scripting](midi_scripting)
   - [Mixxx Controls](mixxxcontrols)

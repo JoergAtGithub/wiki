@@ -255,6 +255,10 @@ following table shows the possible assignments (unit: beats).
 | 2       | 1/16 | 1/8  | 1/4  | 1/2  | 1    | 2    | 4    | 8    |
 | 3       | 1/32 | 1/16 | 1/8  | 1/4  | 1/2  | 1    | 2    | 4    |
 
+### Slicer description
+
+ToDo
+
 ## Effect Functions
 
 | Group       | Figure         | \[**SHIFT**\]? | Button Name        | Description                                                  |

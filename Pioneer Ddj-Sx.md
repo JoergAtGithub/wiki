@@ -269,13 +269,16 @@ slicer type 1 is active. If you press \[**SLICER**\] mode button again,
 slicer type 2 will be activated and all PADs, except one for the beat,
 will light up.
 
-#### Slicer type 1
-
 Starting with the first beat marked on a playing track, the track is
 divided into sections of 8 beats (not visible). If the first 8 beats are
 reached, the next section starts. The PADs are assigned to one section,
 each time the active section changes, the PADs will be assigned to the
-new active section.
+new active section (PAD 1..8 = section beat 1..8).
+
+#### Slicer type 1
+
+The PAD lights show the active beat in the active section: The active
+beat PAD is lit, all other PAD lights are off.
 
 By pressing PAD X, the play position jumps to the beat X of the active
 section. If you have pressed the PAD on-beat and hold it, the play
@@ -286,6 +289,20 @@ playback will resume where the track would have been if the slicer
 wouldn't have been activated (slip mode).
 
 #### Slicer type 2
+
+The PAD lights show the active beat in the active section: The active
+beat PAD light is off, all other PADs are lit.
+
+As soon as slicer type 2 is activated, the active section is played in
+loop (not visible). If the end of the active section is reached, the
+play position jumps back to the beginning of the active section.
+
+By pressing PAD X, the play position jumps to the beat X of the active
+section. In slicer type 2 beat loop is not possible.
+
+As soon as slicer type 2 is deactivated (by pressing \[**SLICER**\] mode
+button again), the playback will resume where the track would have been
+if the slicer wouldn't have been activated (slip mode).
 
 ## Effect Functions
 

@@ -280,6 +280,11 @@ new active section (PAD 1..8 = section beat 1..8).
 The PAD lights show the active beat in the active section: The active
 beat PAD is lit, all other PAD lights are off.
 
+Slicer type 1 moves to the next section if the end of the previous
+active section is reached.
+
+[[/media/hardware/pioneerddjsx/pioneerddjsx_slicertype1.png|]]
+
 By pressing PAD X, the play position jumps to the beat X of the active
 section. If you have pressed the PAD on-beat and hold it, the play
 position is playing in loop. The beat loop length depends on the

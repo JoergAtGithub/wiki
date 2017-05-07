@@ -117,6 +117,8 @@ The following functions are directly controlled by the controller
 
 ## Deck Functions
 
+### Managed by Mixxx
+
 | Group                | Figure | \[**SHIFT**\]? | Button Name                            | Description                                                                                                                                                                        |
 | -------------------- | ------ | -------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 - DECK             | 1      | \-             | \[**PLAY/PAUSE**\]                     | Toggles play/pause                                                                                                                                                                 |

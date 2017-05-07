@@ -77,6 +77,8 @@ settings can be made:
 
 ## General Functions
 
+### Managed by Mixxx
+
 | Group           | Figure     | \[**SHIFT**\]? | Button Name                   | Description                                                                                                         |
 | --------------- | ---------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | 5 - BROWSER     | 2, 3, 4, 5 | \-             | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
@@ -103,6 +105,8 @@ settings can be made:
 | :::             | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
 | 4 - FRONT PANEL | 1          | \-             | Crossfader curve              | Controls Mixxx crossfader curve                                                                                     |
 | 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Show/hide Sampler decks / Effect rack                                                                               |
+
+### Managed by the controller
 
 The following functions are directly controlled by the controller
 (Mixxx-independent):

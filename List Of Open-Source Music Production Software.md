@@ -89,6 +89,6 @@ DJing and/or music production:
 
   - 64 Studio - <http://www.64studio.com/>
   - ArtistX - <http://www.artistx.org/site3/>
-  - AVLinux - <http://www.bandshed.net/AVLinux.html>
+  - AVLinux - <http://www.bandshed.net/avlinux/>
   - Dream Studio - <http://dream.dickmacinnis.com>
   - Ubuntu Studio - <http://ubuntustudio.org/>

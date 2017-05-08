@@ -4,32 +4,6 @@ The DDJ-SX delivers intuitive control of all MIXXX's exciting features.
 Dedicated buttons and dials deliver plug-and-play control of 4 decks.
 [[/media/hardware/pioneerddjsx_layout.png|]]
 
-## Controller Configuration
-
-The DDJ-SX provides several settings, which can be changed in a special
-*Utility-Mode*.
-
-### Utility-Mode
-
-  - Disconnect USB-cable.
-  - Switch off \[**STANDBY/ON**\] the unit.
-  - Hold \[**SHIFT**\] button and \[**PLAY/PAUSE**\] button at the left
-    deck while switching on the unit \[**STANDBY/ON**\].
-  - Now *Utility-Mode* is activated.
-  - For saving and exiting *Utility-Mode*, switch off the unit again
-    \[**STANDBY/ON**\].
-
-### Setting for usage of Serato DJ
-
-To use the DDJ-SX with MIXXX, the controller must be configured for the
-usage of Serato DJ. You can check/change this setting as follows:  
-**Press the \[KEY LOCK\] button at the left deck:**
-
-  - \[**KEY LOCK**\] button off: Controller is configured for using
-    Serato DJ (default).
-  - \[**KEY LOCK**\] button on (lit): Controller is configured for using
-    different DJ-software.
-
 ## User Options
 
 To change the mapping's user options, you have to open the script file
@@ -350,6 +324,34 @@ if the slicer wouldn't have been activated (slip mode).
 | :::         | 9, 10, 11, 12  | \-             | \[**FX1 ASSIGN**\] | Assign EffectRack1-EffectUnit1 to specific deck              |
 | :::         | 13, 14, 15, 16 | \-             | \[**FX2 ASSIGN**\] | Assign EffectRack1-EffectUnit2 to specific deck              |
 | :::         | 17, 18, 19, 20 | \-             | FILTER             | Control QuickEffectRack1 super1 knob (e.g. moog filter)      |
+
+## Troubleshooting
+
+If you experience any strange behavior of a button or a LED (e.g. wheel
+LEDs not working), make sure your controller is set up correctly to work
+with MIXXX. The DDJ-SX provides several settings, which can be changed
+in a special *Utility-Mode*.
+
+### Utility-Mode
+
+  - Disconnect USB-cable.
+  - Switch off \[**STANDBY/ON**\] the unit.
+  - Hold \[**SHIFT**\] button and \[**PLAY/PAUSE**\] button at the left
+    deck while switching on the unit \[**STANDBY/ON**\].
+  - Now *Utility-Mode* is activated.
+  - For saving and exiting *Utility-Mode*, switch off the unit again
+    \[**STANDBY/ON**\].
+
+### Setting for usage of Serato DJ
+
+To use the DDJ-SX with MIXXX, the controller must be configured for the
+usage of Serato DJ. You can check/change this setting as follows:  
+**Press the \[KEY LOCK\] button at the left deck:**
+
+  - \[**KEY LOCK**\] button off: Controller is configured for using
+    Serato DJ (default).
+  - \[**KEY LOCK**\] button on (lit): Controller is configured for using
+    different DJ-software.
 
 ## References
 

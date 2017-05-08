@@ -146,7 +146,8 @@ rmdir /s /q dist32
 rmdir /s /q dist64
 
 REM XP Compatibility requires the v7.1A SDK
-set MSSDK_DIR="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A"
+REM No quotes needed here!
+set MSSDK_DIR=C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A
 
 REM this can be either release or debug. For development you want to use debug
 set BUILD_TYPE=release

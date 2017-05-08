@@ -55,7 +55,7 @@ every detail yet:
     // is enabled in the Mixxx Preferences
     MyController.init = function () {
         // create an instance of your custom Deck object for each side of your controller
-        MyController.leftDeck = new MyController.Deck([1, 2], 1);
+        MyController.leftDeck = new MyController.Deck([1, 3], 1);
         MyController.rightDeck = new MyController.Deck([2, 4], 2);
     };
     

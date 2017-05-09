@@ -18,8 +18,8 @@ developers.**
 To understand this guide, you should have a working experience with a
 systems language like C, C++, or Java. You should be able to get by with
 trial and error even if you don't know these. It will help significantly
-if you have some experience with the [Qt
-Framework](http://qt.nokia.com/products/) which Mixxx uses extensively.
+if you have some experience with the [Qt Framework](http://doc.qt.io/)
+which Mixxx uses extensively.
 
 We recommend you review these sections of the Qt documentation to get
 familiar with aspects of Qt that we use heavily:

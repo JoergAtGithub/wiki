@@ -17,8 +17,6 @@ settings can be made:
     to disable jogwheel sensitivity increase when holding \[**SHIFT**\].
   - **PioneerDDJSX.speedSliderRange**: Sets the default speed slider
     range (0.08 = 8%), set at controller init.
-  - **PioneerDDJSX.cutVumeter**: Cuts level-meter low frequencies and
-    expands upper frequencies.
   - **PioneerDDJSX.twinkleVumeterAutodjOn**: If true, level-meter
     twinkles if *AutoDJ* is enabled.
   - **PioneerDDJSX.autoDJAddTop**: If true, the selected track will be

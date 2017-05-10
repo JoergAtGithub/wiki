@@ -235,25 +235,25 @@ controller's
 A limited slicer functionality is implemented into the controller
 mapping as described below.
 
-There are two slicer types, 1 and 2, which can be selected by pressing
-the \[**SLICER**\] mode button. If none or only one PAD (beat) is lit,
-slicer type 1 is active. If you press \[**SLICER**\] mode button again,
-slicer type 2 will be activated and all PADs, except one for the beat,
-will light up.
+There are two slicer modes, continuous slice and loop slice, which can
+be selected by pressing the \[**SLICER**\] mode button. If none or only
+one PAD (beat) is lit, continuous slice mode is active. If you press
+\[**SLICER**\] mode button again, loop slice mode will be activated and
+all PADs, except one for the beat, will light up.
 
 Starting with the first beat marked on a playing track, the track is
-divided into sections of 8 beats (not visible). If the first 8 beats are
-reached, the next section starts. The PADs are assigned to one section,
-each time the active section changes, the PADs will be assigned to the
-new active section (PAD 1..8 = section beat 1..8).
+divided into sections of 8 beats (not visible in waveform). If the first
+8 beats are reached, the next section starts. The PADs are assigned to
+one section, each time the active section changes, the PADs will be
+assigned to the new active section (PAD 1..8 = section beat 1..8).
 
-#### Slicer type 1
+#### Continuous slice mode
 
 The PAD lights show the active beat in the active section: The active
 beat PAD is lit, all other PAD lights are off.
 
-Slicer type 1 moves to the next section if the end of the previous
-active section is reached.
+Continuous slice mode moves to the next section if the end of the
+previous active section is reached.
 
 [[/media/hardware/pioneerddjsx/pioneerddjsx_slicertype1.png|]]
 
@@ -265,23 +265,24 @@ LEFT**\] or \[**PARAMETER RIGHT**\]). If you release the PAD, the
 playback will resume where the track would have been if the slicer
 wouldn't have been activated (slip mode).
 
-#### Slicer type 2
+#### Loop slice mode
 
 The PAD lights show the active beat in the active section: The active
 beat PAD light is off, all other PADs are lit.
 
-As soon as slicer type 2 is activated, the active section is played in
-loop (not visible). If the end of the active section is reached, the
-play position jumps back to the beginning of the active section.
+As soon as loop slice mode is activated, the active section is played in
+loop (not visible in waveform). If the end of the active section is
+reached, the play position jumps back to the beginning of the active
+section.
 
 [[/media/hardware/pioneerddjsx/pioneerddjsx_slicertype2.png|]]
 
 By pressing PAD X, the play position jumps to the beat X of the active
-section. In slicer type 2 beat loop is not possible.
+section. In loop slice mode beat loop is not possible.
 
-As soon as slicer type 2 is deactivated (by pressing \[**SLICER**\] mode
-button again), the playback will resume where the track would have been
-if the slicer wouldn't have been activated (slip mode).
+As soon as loop slice mode is deactivated (by pressing \[**SLICER**\]
+mode button again), the playback will resume where the track would have
+been if the slicer wouldn't have been activated (slip mode).
 
 ## Effect Functions
 

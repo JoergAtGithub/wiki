@@ -73,6 +73,9 @@ from Audacity. Mixxx and Audacity both use the PortAudio library to
 access sound cards on multiple OSs, so those suggestions apply to both
 programs.
 
+If you are considering what sound card to get for use with Mixxx, read
+the [DJ Hardware Guide](Hardware%20Compatibility).
+
 ### GNU/Linux
 
 If you are starting Mixxx from a command line on GNU/Linux, you probably

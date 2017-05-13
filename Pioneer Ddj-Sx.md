@@ -230,9 +230,9 @@ following table shows the possible assignments (unit: beats).
 
 For a detailed explanation of the slicer mode, take a look at the
 controller's
-[manual](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRI1096_manual/?_ga=1.221242769.826661553.1489418053).
-A limited slicer functionality is implemented into the controller
-mapping as described below.
+[manual](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRH1193_manual/). A
+limited slicer functionality is implemented into the controller mapping
+as described below.
 
 There are two slicer modes, continuous slice and loop slice, which can
 be selected by pressing the \[**SLICER**\] mode button. If none or only

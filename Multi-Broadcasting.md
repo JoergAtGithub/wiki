@@ -2,7 +2,70 @@
 
 by Stéphane Lepin
 
-[Final
-Proposal](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5251303641972736_1491218973_Stephane_Lepin_-_GSoC_Project_Proposal_-_Mixxx.pdf?Expires=1494151010&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=N475FgjpREUaaS3wcG27eV26Mp%2FuDjGPh2iGG39LEMhcTf1ztUm054nJT9ow%2BEQhqQ3PP9KtTRe9l8eu2SR2D49n3l0FdbgUqGVHmMgyR1PB7DHEje0qUQvmXY5bASuOim8Ulj7Fl%2B6nBLDG7zTQV4M1tqxELsHpKSanGRuX1BYXHs1fjFoOk4Xi%2FsdlCxvcNEkrylJhH7T8D0nwlB7QDherqs5PV9sCfOb2lFbZ%2FJtLP6%2Bod6R3%2FTUHP8YlyM9m66i64%2Bg%2FJwkIeieXcLEP5DKJ%2BYevOQum64Zk95vBKfAx0SE5KgBWLazxQqnBqLlNvpDqYBO8aebpqgjENTgcDA%3D%3D)
-
 **Current State**: Community bonding period
+
+## Introduction
+
+This project for Mixxx aims to implement several features potentially
+useful for users willing to broadcast live with Mixxx in simple and more
+advanced ways.
+
+## Project deliverables
+
+### Community bonding period (May 4 - May 30) :
+
+\- Getting familiar with Mixxx’s codebase and community - Fixing
+“starter issues” and general issues referenced in the issue tracker -
+Providing support to users on the project communication channels
+
+### Phase 1 (May 31 - June 30) :
+
+Implement broadcasting profiles (quickly-loadable presets of streaming
+server credentials and connection information) and their accompanying UI
+operations (create, delete, rename, select)
+
+### Phase 2 and Final Phase (July 1st - August 21) :
+
+Implement the ability to broadcast to several outputs (streaming
+servers) simultaneously, within the range of Mixxx’s currently supported
+protocols
+
+### Final week (August 22 - August 29) :
+
+Polishing and bug hunting
+
+### Bonus : good to have <span class="underline">if time and dependencies allow it</span> :
+
+RTMP output of a simple live video stream composed of a static image
+muxed with Mixxx’s audio output
+
+## Implementation details
+
+This project will be implemented in two parts, each leading to a working
+result : the broadcasting profiles first, and then the multiple
+broadcasting outputs.
+
+### Broadcasting profiles (part one)
+
+The broadcast profile selection will be integrated under the “Live
+Broadcasting” section of Mixxx’s preferences as a dropdown list, with
+three buttons (or a dropdown menu) at its right to create, delete and
+rename the currently selected profile, integrated within the existing
+GUI of the panel and reusing its widgets. A newly created profile will
+have default values.
+
+[[/media/wiki/broadcasting_profiles.png|]]
+
+### Multiple broadcasting outputs (part two)
+
+The new “Live Broadcasting” settings panel will consist of a list of
+broadcasting outputs. The existing GUI for Live Broadcasting settings is
+to be moved to a dedicated dialog, which will be spawned when the user
+clicks on “Edit” next to an item of the outputs list.
+
+Under the hood, the EngineBroadcast class will be adapted to be an
+individually-instanciable class for each broadcasting output. This class
+already has comprehensive streaming protocols support. Multithreading of
+the outputs (one thread per output) may be implemented.
+
+[[/media/wiki/multi-broadcasting.png|]]

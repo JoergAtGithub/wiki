@@ -168,7 +168,7 @@ touch, and disabled on finger lift.
 
 ### 17\. Beats Multiplier
 
-Adjusts the Dry/Mix ratio of the deck’s Effect Unit  
+Adjusts the Dry/Wet mix of the deck’s Effect Unit  
 **Shift + Beats:** Moves the beat grid left (turn counterclockwise) or
 right (turn clockwise) **Padmode + Beats:** Adjust Sampler Volume. Left
 beat knob will adjusts Samplers 1-4; Right knob will adjusts Samplers

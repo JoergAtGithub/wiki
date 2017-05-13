@@ -4,3 +4,5 @@ by Stéphane Lepin
 
 [Final
 Proposal](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5251303641972736_1491218973_Stephane_Lepin_-_GSoC_Project_Proposal_-_Mixxx.pdf?Expires=1494151010&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=N475FgjpREUaaS3wcG27eV26Mp%2FuDjGPh2iGG39LEMhcTf1ztUm054nJT9ow%2BEQhqQ3PP9KtTRe9l8eu2SR2D49n3l0FdbgUqGVHmMgyR1PB7DHEje0qUQvmXY5bASuOim8Ulj7Fl%2B6nBLDG7zTQV4M1tqxELsHpKSanGRuX1BYXHs1fjFoOk4Xi%2FsdlCxvcNEkrylJhH7T8D0nwlB7QDherqs5PV9sCfOb2lFbZ%2FJtLP6%2Bod6R3%2FTUHP8YlyM9m66i64%2Bg%2FJwkIeieXcLEP5DKJ%2BYevOQum64Zk95vBKfAx0SE5KgBWLazxQqnBqLlNvpDqYBO8aebpqgjENTgcDA%3D%3D)
+
+**Current State**: Community bonding period

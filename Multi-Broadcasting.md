@@ -14,9 +14,10 @@ advanced ways.
 
 ### Community bonding period (May 4 - May 30) :
 
-\- Getting familiar with Mixxx’s codebase and community - Fixing
-“starter issues” and general issues referenced in the issue tracker -
-Providing support to users on the project communication channels
+  - Getting familiar with Mixxx’s codebase and community
+  - Fixing “starter issues” and general issues referenced in the issue
+    tracker
+  - Providing support to users on the project communication channels
 
 ### Phase 1 (May 31 - June 30) :
 

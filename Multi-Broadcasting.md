@@ -34,11 +34,6 @@ protocols
 
 Polishing and bug hunting
 
-### Bonus : good to have <span class="underline">if time and dependencies allow it</span> :
-
-RTMP output of a simple live video stream composed of a static image
-muxed with Mixxx’s audio output
-
 ## Implementation details
 
 This project will be implemented in two parts, each leading to a working

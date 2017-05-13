@@ -43,8 +43,6 @@ settings can be made:
   - **PioneerDDJSX.useNewLibraryControls**: If true, new in Mixxx 2.1
     introduced library controls will be used, else old playlist controls
     will be used.
-  - **PioneerDDJSX.needleSearchShiftEnable**: If true, \[**SHIFT**\] has
-    to be pressed to activate needle search control.
 
 ## General Functions
 

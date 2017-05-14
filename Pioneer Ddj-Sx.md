@@ -15,8 +15,6 @@ settings can be made:
   - **PioneerDDJSX.jogwheelShiftMultiplier**: Sets how much more
     sensitive the jogwheels get when holding \[**SHIFT**\]. Set it to 1
     to disable jogwheel sensitivity increase when holding \[**SHIFT**\].
-  - **PioneerDDJSX.speedSliderRange**: Sets the default speed slider
-    range (0.08 = 8%), set at controller init.
   - **PioneerDDJSX.twinkleVumeterAutodjOn**: If true, level-meter
     twinkles if *AutoDJ* is enabled.
   - **PioneerDDJSX.autoDJAddTop**: If true, the selected track will be

@@ -241,15 +241,19 @@ one PAD (beat) is lit, continuous slice mode is active. If you press
 all PADs, except one for the beat, will light up.
 
 Starting with the first beat marked on a playing track, the track is
-divided into sections of 8 beats (not visible in waveform). If the first
-8 beats are reached, the next section starts. The PADs are assigned to
-one section, each time the active section changes, the PADs will be
-assigned to the new active section (PAD 1..8 = section beat 1..8).
+divided into sections of 8 equal parts (not visible in waveform). If the
+first 8 parts are reached, the next section starts. The PADs are
+assigned to one section, each time the active section changes, the PADs
+will be assigned to the new active section (PAD 1..8 = section part
+1..8). The section size is dependent of the selected slicer domain,
+changeable by pressing \[**SHIFT**\] + \[**PARAMETER LEFT**\] or
+\[**PARAMETER RIGHT**\]. The default slicer domain is 8 beats, so each
+part represents the part between one beat and the following beat.
 
 #### Continuous slice mode
 
-The PAD lights show the active beat in the active section: The active
-beat PAD is lit, all other PAD lights are off.
+The PAD lights show the active part in the active section: The active
+part PAD is lit, all other PAD lights are off.
 
 Continuous slice mode moves to the next section if the end of the
 previous active section is reached.
@@ -266,8 +270,8 @@ wouldn't have been activated (slip mode).
 
 #### Loop slice mode
 
-The PAD lights show the active beat in the active section: The active
-beat PAD light is off, all other PADs are lit.
+The PAD lights show the active part in the active section: The active
+part PAD light is off, all other PADs are lit.
 
 As soon as loop slice mode is activated, the active section is played in
 loop (not visible in waveform). If the end of the active section is

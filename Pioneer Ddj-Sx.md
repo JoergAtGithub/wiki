@@ -249,6 +249,7 @@ will be assigned to the new active section (PAD 1..8 = section part
 changeable by pressing \[**SHIFT**\] + \[**PARAMETER LEFT**\] or
 \[**PARAMETER RIGHT**\]. The default slicer domain is 8 beats, so each
 part represents the part between one beat and the following beat.
+Possible slicer domains are 8, 16, 32, 64 beats.
 
 #### Continuous slice mode
 

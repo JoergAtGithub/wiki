@@ -50,7 +50,27 @@ Here is an example file containing the required elements:
 There is no standard HID packet arrangement/structure. The length and
 contents (and even
 [endianness](https://en.wikipedia.org/wiki/Endianness)) are completely
-up to the manufacturer.
+up to the manufacturer. For input packets, you can watch the incoming
+packets in Mixxx's console output when running Mixxx with the
+`--controllerDebug` command line option. For output, you can examine the
+USB descriptors of the HID device to figure out what packets to send. On
+Linux you can use the
+[usbhid-dump](https://github.com/DIGImend/usbhid-dump) and
+[hidrd-convert](https://github.com/DIGImend/hidrd) tools to show these
+descriptors in a human readable format. First, identify the USB product
+and vendor ID of your device with lsusb:
+
+    $ lsusb
+    Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+
+Here the vendor ID is 046d and the product ID is c52b. Use these with
+usbhid-dump:
+
+    usbhid-dump -dVENDORID:PRODUCTID | grep -v : | xxd -r -p | hidrd-convert -o spec
+
+Refer to this
+[tutorial](http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/)
+for how to interpret the information from hidrd-convert.
 
 #### Input
 

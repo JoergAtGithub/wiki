@@ -735,7 +735,7 @@ information about any particular controller.
     modify the hardware to work with Mixxx.
 
 44. Microphone input is mixed with the master output in hardware. It is
-    not available to the computer.
+    not available to the computer for broadcasting or recording.
 
 45. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using

@@ -413,10 +413,6 @@ for details.
 Default behavior: momentary sync without toggling sync lock  
 Shift behavior: toggle sync lock (master sync)
 
-### LoopToggleButton
-
-Toggle a loop on/off
-
 ### HotcueButton
 
 Default behavior: set hotcue if it is not set. If it is set, jump to

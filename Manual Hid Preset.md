@@ -72,28 +72,6 @@ Refer to this
 [tutorial](http://eleccelerator.com/tutorial-about-usb-hid-report-descriptors/)
 for how to interpret the information from hidrd-convert.
 
-#### Input
-
-You'll need to either obtain the HID spec from the manufacturer, or run
-Mixxx with the `-``-controllerDebug` parameter and note which bytes
-change (and how) as you operate controls. (Some HID controllers also
-send data (like time stamps) even when sitting still.)
-
-#### Output
-
-Due to the arbitrary nature of HID packets, how to affect outputs (like
-LEDs, displays, screens, etc.) is a total guessing game without the
-spec. If you've not been able to get it from the manufacturer, your best
-bet is to run a USB/HID packet sniffing program on an OS and DJ software
-that are supported by them to see what data is transmitted from the
-software to the controller and make notes.
-
-:\!: **Warning:** Using a trial-and-error "brute force" method of
-sending random bytes to the controller to see what happens is
-discouraged because you may inadvertently send a "firmware update"
-message and render the controller permanently inoperable short of
-factory repair.
-
 ### Sending data to the controller
 
 Once you know what data you want to send, simply call

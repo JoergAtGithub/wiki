@@ -75,8 +75,8 @@ settings can be made:
 
 ### Managed by the controller
 
-The following functions are directly controlled by the controller
-(Mixxx-independent):
+The following functions directly affect the controller's sound card, so
+adjusting these will not change anything on screen in Mixxx:
 
 | Group           | Figure | \[**SHIFT**\]? | Button Name         | Description                                     |
 | --------------- | ------ | -------------- | ------------------- | ----------------------------------------------- |

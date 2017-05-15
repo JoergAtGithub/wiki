@@ -573,7 +573,8 @@ controllers' sound card in hardware. If this is the case, it is not
 possible to get the microphone signal into the computer to broadcast
 with Mixxx. Some controllers do make the microphone input available to
 the computer though. Check the controllers' wiki page linked in the
-tables above for information about this.
+tables above for information about this and search online for
+information about any particular controller.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

@@ -559,8 +559,9 @@ The microphone inputs on DJ controllers, particularly cheaper DJ
 controllers, is often mixed directly with the master output of the DJ
 controllers' sound card in hardware. If this is the case, it is not
 possible to get the microphone signal into the computer to broadcast
-with Mixxx. Check the controllers' wiki page linked in the tables above
-for information about this.
+with Mixxx. Some controllers do make the microphone input available to
+the computer though. Check the controllers' wiki page linked in the
+tables above for information about this.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

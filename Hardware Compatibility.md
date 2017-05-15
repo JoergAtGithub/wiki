@@ -448,12 +448,12 @@ intuitive, and more fun.
 Many extremely cheap ($1-$10) 2 channel output USB sound cards that look
 like USB flash drives are available, but these tend to be very poor
 quality, sometimes even worse than onboard sound cards, and sometimes
-can be difficult to configure properly. [\#Surround sound
-cards](#Surround%20sound%20cards) are not recommended either.
-[\#Splitter cables](#Splitter%20cables) are a good option in that price
-range and tend to be easier to set up. Mixxx 2.0 can use multiple sound
-cards at the same time, so it is possible to use a 2 output sound card
-for the main stereo output and the onboard sound card on a computer for
+can be difficult to configure properly. Surround sound (5.1 or 7.1)
+cards are [not recommended either](#surround-sound-cards). [\#Splitter
+cables](#Splitter%20cables) are a good option in that price range and
+tend to be easier to set up. Mixxx 2.0 can use multiple sound cards at
+the same time, so it is possible to use a 2 output sound card for the
+main stereo output and the onboard sound card on a computer for
 headphones. However, a higher quality, 4 output sound card is
 recommended. You generally get the sound quality you pay for with sound
 cards.

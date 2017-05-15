@@ -540,7 +540,9 @@ Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)
 is recommended. These types sound cards are typically advertised for
 recording music, but they can work just as well for broadcasting. You do
 not need an external mixer unless you have more microphones than your
-sound card has microphone inputs.
+sound card has microphone inputs. The simpler your signal chain is, the
+better it will sound, so using an external mixer is not recommended
+unless you have a specific reason to need one.
 
 USB microphones are not recommended on Windows. These devices have their
 own sound card built in. Every sound card runs on its own clock and no

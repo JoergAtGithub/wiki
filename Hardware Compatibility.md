@@ -529,10 +529,18 @@ transitions between DJs. \<sortable 2=numeric\>
 
 \</sortable\>
 
-## Microphones
+## Microphones and broadcasting
 
 Mixxx can work with any microphone that you can plug into a [sound
-card](#sound-cards) that your operating system supports.
+card](#sound-cards) that your operating system supports. To preview the
+music you will play next in headphones and have microphone input, a
+single sound card with 4 output channels and microphone inputs such as
+the [Focusrite
+Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)
+is recommended. These types sound cards are typically advertised for
+recording music, but they can work just as well for broadcasting. You do
+not need an external mixer unless you have more microphones than your
+sound card has microphone inputs.
 
 USB microphones are not recommended on Windows. These devices have their
 own sound card built in. Every sound card runs on its own clock and no
@@ -546,6 +554,13 @@ to use [ASIO4ALL](http://asio4all.com/) to use multiple sound cards at a
 time with ASIO, but that makes all the sound cards appear as one device
 to Mixxx, so Mixxx's methods for accommodating multiple clocks will not
 work.
+
+The microphone inputs on DJ controllers, particularly cheaper DJ
+controllers, is often mixed directly with the master output of the DJ
+controllers' sound card in hardware. If this is the case, it is not
+possible to get the microphone signal into the computer to broadcast
+with Mixxx. Check the controllers' wiki page linked in the tables above
+for information about this.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

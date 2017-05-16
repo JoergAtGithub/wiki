@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: Community bonding period
+**Current State**: project technical planning
 
 ## Project description
 

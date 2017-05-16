@@ -4,6 +4,12 @@ by Stéphane Lepin
 
 **Current State**: project technical planning
 
+## Useful info about the student
+
+  - School project from May 18th to 26th
+  - Another school project from June 22th to June 30th
+  - School Year end: July 12th 2017
+
 ## Project description
 
 This project for Mixxx aims to implement several features potentially
@@ -67,9 +73,3 @@ protocols
 ### Final week (August 22 - August 29) :
 
 Polishing and bug hunting
-
-## Useful info about the student
-
-  - School project from May 18th to 26th
-  - Another school project from June 22th to June 30th
-  - School Year end: July 12th 2017

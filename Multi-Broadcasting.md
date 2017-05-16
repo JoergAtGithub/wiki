@@ -4,38 +4,11 @@ by Stéphane Lepin
 
 **Current State**: Community bonding period
 
-## Introduction
+## Project description
 
 This project for Mixxx aims to implement several features potentially
 useful for users willing to broadcast live with Mixxx in simple and more
 advanced ways.
-
-## Project deliverables
-
-### Community bonding period (May 4 - May 30) :
-
-  - Getting familiar with Mixxx’s codebase and community
-  - Fixing “starter issues” and general issues referenced in the issue
-    tracker
-  - Providing support to users on the project communication channels
-
-### Phase 1 (May 31 - June 30) :
-
-Implement broadcasting profiles (quickly-loadable presets of streaming
-server credentials and connection information) and their accompanying UI
-operations (create, delete, rename, select)
-
-### Phase 2 and Final Phase (July 1st - August 21) :
-
-Implement the ability to broadcast to several outputs (streaming
-servers) simultaneously, within the range of Mixxx’s currently supported
-protocols
-
-### Final week (August 22 - August 29) :
-
-Polishing and bug hunting
-
-## Implementation details
 
 This project will be implemented in two parts, each leading to a working
 result : the broadcasting profiles first, and then the multiple
@@ -65,3 +38,38 @@ already has comprehensive streaming protocols support. Multithreading of
 the outputs (one thread per output) may be implemented.
 
 [[/media/wiki/multi-broadcasting.png|]]
+
+## Technical details
+
+*TODO*
+
+## Project deliverables
+
+### Community bonding period (May 4 - May 30) :
+
+  - Getting familiar with Mixxx’s codebase and community
+  - Fixing “starter issues” and general issues referenced in the issue
+    tracker
+  - Providing support to users on the project communication channels
+
+### Phase 1 (May 31 - June 30) :
+
+Implement broadcasting profiles (quickly-loadable presets of streaming
+server credentials and connection information) and their accompanying UI
+operations (create, delete, rename, select)
+
+### Phase 2 and Final Phase (July 1st - August 21) :
+
+Implement the ability to broadcast to several outputs (streaming
+servers) simultaneously, within the range of Mixxx’s currently supported
+protocols
+
+### Final week (August 22 - August 29) :
+
+Polishing and bug hunting
+
+## Useful info about the student
+
+  - School project from May 18th to 26th
+  - Another school project from June 22th to June 30th
+  - School Year end: July 12th 2017

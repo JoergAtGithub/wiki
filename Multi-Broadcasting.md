@@ -86,27 +86,6 @@ clicks on “Edit” next to an item of the outputs list.
 <span class="underline">Possible evolution</span>: make the broadcasting
 code more generic and not specific to libshout.
 
-## Project deliverables
+## Weekly schedule
 
-### Community bonding period (May 4 - May 30) :
-
-  - Getting familiar with Mixxx’s codebase and community
-  - Fixing “starter issues” and general issues referenced in the issue
-    tracker
-  - Providing support to users on the project communication channels
-
-### Phase 1 (May 31 - June 30) :
-
-Implement broadcasting profiles (quickly-loadable presets of streaming
-server credentials and connection information) and their accompanying UI
-operations (create, delete, rename, select)
-
-### Phase 2 and Final Phase (July 1st - August 21) :
-
-Implement the ability to broadcast to several outputs (streaming
-servers) simultaneously, within the range of Mixxx’s currently supported
-protocols
-
-### Final week (August 22 - August 29) :
-
-Polishing and bug hunting
+*Will be written once the technical specifications are complete*

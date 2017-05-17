@@ -20,6 +20,8 @@ a dedicated dialog in Mixxx's settings or a new settings panel. Profiles
 have the standard Icecast/Shoutcast and encoder settings currently
 available in the Live Broadcasting panel.
 
+[[/media/wiki/broadcasting_profiles.png|]]
+
 #### Technical details
 
   - Design and write a new BroadcastProfile class
@@ -36,6 +38,8 @@ The new “Live Broadcasting” settings panel will consist of a list of
 broadcasting outputs. The existing GUI for Live Broadcasting settings is
 to be moved to a dedicated dialog, which will be spawned when the user
 clicks on “Edit” next to an item of the outputs list.
+
+[[/media/wiki/multi-broadcasting.png|]]
 
 #### Technical details
 
@@ -54,16 +58,12 @@ clicks on “Edit” next to an item of the outputs list.
     * Stop output
     * Push uncompressed audio frame to output (encode in a separate thread?)
 * The settings code must be updated to handle several outputs
-* A new Live Broadcasting settings UI must be implemented (see UI draft below)
+* A new Live Broadcasting settings UI must be implemented (see UI mockup above)
 * The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's button in the new Outputs list UI.
 ```
 
 <span class="underline">Possible evolution</span>: make the broadcasting
 code more generic and not specific to libshout.
-
-### UI drafts
-
-[[/media/wiki/multi-broadcasting.png|]]
 
 ### Ideas
 

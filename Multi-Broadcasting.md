@@ -23,13 +23,8 @@ available in the Live Broadcasting panel.
 #### Technical details
 
   - Design and write a new BroadcastProfile class
-  - Fixed fields/attributes:
-  - Server type
-  - Server hostname
-  - Server port
-  - Username (used only for Icecast)
-  - Password
-  - Mountpoint (used only for Icecast)
+  - Fixed fields/attributes: server info/credentials and encoding
+    settings
   - The Settings UI must be updated to add control over and use of
     broadcasting profiles
   - The settings code must be updated to accomodate broadcasting

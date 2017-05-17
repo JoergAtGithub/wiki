@@ -43,13 +43,26 @@ clicks on “Edit” next to an item of the outputs list.
 
 ## Technical details
 
-  - The EngineBroadcast class will be adapted to be an
-    individually-instanciable class for each broadcasting output. This
-    class already has comprehensive streaming protocols support.
-    Multithreading of the outputs (one thread per output) may be
-    implemented (**needs more research**).
+  - The EngineBroadcast must be modified to only act as a "broadcast
+    manager" : receive audio samples and push them to the output
+    instances
+  - The broadcasting code must be separated from EngineBroadcast. An
+    IBroadcastOutput interface for outputs is to be defined so that
+    several types of outputs can be implemented.
+  - Interface methods:
 
-*TODO*
+<!-- end list -->
+
+``` 
+    * (static) Get output properties (used by the UI)
+    * Set output settings (based on the properties)  
+    * Start output
+    * Stop output
+    * Push uncompressed audio frame to output
+* The current libshout logic implemented in EngineBroadcast will be moved to a class ("ShoutOutput") implementing IBroadcastOutput 
+```
+
+*TODO: UML diagram*
 
 ## Project deliverables
 

@@ -43,26 +43,48 @@ clicks on “Edit” next to an item of the outputs list.
 
 ## Technical details
 
-  - The EngineBroadcast must be modified to only act as a "broadcast
-    manager" : receive audio samples and push them to the output
-    instances
-  - The broadcasting code must be separated from EngineBroadcast. An
-    IBroadcastOutput interface for outputs is to be defined so that
-    several types of outputs can be implemented.
-  - Interface methods:
+  - Engine changes for Broadcasting Profiles
+  - Fixed fields:
 
 <!-- end list -->
 
 ``` 
-    * (static) Get output properties (used by the UI)
-    * Set output settings (based on the properties)  
-    * Start output
-    * Stop output
-    * Push uncompressed audio frame to output
-* The current libshout logic implemented in EngineBroadcast will be moved to a class ("ShoutOutput") implementing IBroadcastOutput 
+    * Server type
+    * Server hostname
+    * Server port
+    * Username (used only for types Icecast and Shoutcast V2)
+    * Password
+    * Mountpoint (used only for types Icecast and Shoutcast V2)
+* Implement a new class BroadcastProfile
+* The BroadcastProfile class can be passed to an ShoutOutput instance
+* The settings code must be updated to accomodate broadcasting profiles
 ```
 
+  - Engine changes for Multiple Outputs
+  - The EngineBroadcast sidechain filter must be modified to only act as
+    a "broadcast manager" : receive audio samples and push them to the
+    output instances
+  - The current libshout logic implemented in EngineBroadcast must be
+    moved to a new class ShoutOutput
+
+<!-- end list -->
+
+``` 
+    * Class methods:
+      * Set broadcasting profiles  
+      * Start output
+      * Stop output
+      * Push uncompressed audio frame to output
+* The settings code must be updated to handle several outputs
+```
+
+  - UI
+  - *TODO* 
+
 *TODO: UML diagram*
+
+<span class="underline">Possible evolution</span>: make the broadcasting
+code more generic and not specific to libshout.
 
 ## Project deliverables
 

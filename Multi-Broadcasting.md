@@ -65,7 +65,7 @@ in the Live Broadcasting panel.
 
 ``` 
     * Class methods:
-      * Set broadcasting profiles  
+      * Set broadcasting profile (instance of BroadcastProfile)
       * Start output
       * Stop output
       * Push uncompressed audio frame to output

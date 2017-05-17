@@ -10,21 +10,21 @@ This project for Mixxx aims to add several features potentially useful
 for users willing to broadcast live with Mixxx. Two new features will be
 implemented : broadcasting profiles and multiple broadcasting outputs.
 
-### Broadcasting profiles
-
-The broadcast profile selection will be integrated under the “Live
-Broadcasting” section of Mixxx’s preferences as a dropdown list, with
-three buttons (or a dropdown menu) at its right to create, delete and
-rename the currently selected profile, integrated within the existing
-GUI of the panel and reusing its widgets. A newly created profile will
-have default values.
-
 ### Multiple broadcasting outputs
 
 The new “Live Broadcasting” settings panel will consist of a list of
 broadcasting outputs. The existing GUI for Live Broadcasting settings is
 to be moved to a dedicated dialog, which will be spawned when the user
 clicks on “Edit” next to an item of the outputs list.
+
+### Broadcasting profiles
+
+Broadcasting profiles allow management of several sets of server
+settings/credentials and encoder settings. These can be managed through
+a dedicated dialog in Mixxx's settings or a new settings panel, and
+assigned to an output in the new Live Broadcasting panel. Profiles have
+the standard Icecast/Shoutcast and encoder settings currently available
+in the Live Broadcasting panel.
 
 ### UI drafts
 

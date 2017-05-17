@@ -43,11 +43,11 @@ clicks on “Edit” next to an item of the outputs list.
 
 ## Technical details
 
-  - Under the hood, the EngineBroadcast class will be adapted to be an
+  - The EngineBroadcast class will be adapted to be an
     individually-instanciable class for each broadcasting output. This
     class already has comprehensive streaming protocols support.
     Multithreading of the outputs (one thread per output) may be
-    implemented.
+    implemented (**needs more research**).
 
 *TODO*
 

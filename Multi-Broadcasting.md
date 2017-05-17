@@ -70,6 +70,7 @@ clicks on “Edit” next to an item of the outputs list.
       * Stop output
       * Push uncompressed audio frame to output
 * The settings code must be updated to handle several outputs
+* **Implement Shoutcast 2 support ?**
 ```
 
   - UI

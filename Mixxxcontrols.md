@@ -258,10 +258,11 @@ have a different purpose (playing samples). Any control listed above for
 `[ChannelN]` will work for a sampler, just replace `[ChannelN]` with
 `[SamplerN]`.
 
-|  | Key/Control                        |  | Range  |  | What it does                                                                                               |  | On-screen feedback                                            |  |
-|  | ---------------------------------- |  | ------ |  | ---------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------- |  |
-|  | \[Sampler\],SaveSamplerBank\[126\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
-|  | \[Sampler\],LoadSamplerBank\[127\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
+| Key/Control                        |  | Range  |  | What it does                                                                                               |  | On-screen feedback                                            |  |
+| ---------------------------------- |  | ------ |  | ---------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------- |  |
+| \[Samplers\],show\_samplers        |  | binary |  |                                                                                                            |  | Shows Sampler bank(s)                                         |  |
+| \[Sampler\],SaveSamplerBank\[126\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
+| \[Sampler\],LoadSamplerBank\[127\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
 
 ### \[PreviewDeckN\]
 

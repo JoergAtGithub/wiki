@@ -19,14 +19,14 @@ rename the currently selected profile, integrated within the existing
 GUI of the panel and reusing its widgets. A newly created profile will
 have default values.
 
-[[/media/wiki/broadcasting_profiles.png|]]
-
 ### Multiple broadcasting outputs
 
 The new “Live Broadcasting” settings panel will consist of a list of
 broadcasting outputs. The existing GUI for Live Broadcasting settings is
 to be moved to a dedicated dialog, which will be spawned when the user
 clicks on “Edit” next to an item of the outputs list.
+
+### UI drafts
 
 [[/media/wiki/multi-broadcasting.png|]]
 

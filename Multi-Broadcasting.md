@@ -32,7 +32,7 @@ in the Live Broadcasting panel.
 
 ## Ideas
 
-  - Drop-down item in the menu bar to start/stop streaming to one or all
+  - Drop-down item in the menu bar to start/stop streaming of one or all
     outputs
 
 ## Technical details

@@ -12,15 +12,11 @@ by Stéphane Lepin
 
 ## Project description
 
-This project for Mixxx aims to implement several features potentially
-useful for users willing to broadcast live with Mixxx in simple and more
-advanced ways.
+This project for Mixxx aims to add several features potentially useful
+for users willing to broadcast live with Mixxx. Two new features will be
+implemented : broadcasting profiles and multiple broadcasting outputs.
 
-This project will be implemented in two parts, each leading to a working
-result : the broadcasting profiles first, and then the multiple
-broadcasting outputs.
-
-### Broadcasting profiles (part one)
+### Broadcasting profiles
 
 The broadcast profile selection will be integrated under the “Live
 Broadcasting” section of Mixxx’s preferences as a dropdown list, with
@@ -31,21 +27,27 @@ have default values.
 
 [[/media/wiki/broadcasting_profiles.png|]]
 
-### Multiple broadcasting outputs (part two)
+### Multiple broadcasting outputs
 
 The new “Live Broadcasting” settings panel will consist of a list of
 broadcasting outputs. The existing GUI for Live Broadcasting settings is
 to be moved to a dedicated dialog, which will be spawned when the user
 clicks on “Edit” next to an item of the outputs list.
 
-Under the hood, the EngineBroadcast class will be adapted to be an
-individually-instanciable class for each broadcasting output. This class
-already has comprehensive streaming protocols support. Multithreading of
-the outputs (one thread per output) may be implemented.
-
 [[/media/wiki/multi-broadcasting.png|]]
 
+## Ideas
+
+  - Drop-down item in the menu bar to start/stop streaming to one or all
+    outputs
+
 ## Technical details
+
+  - Under the hood, the EngineBroadcast class will be adapted to be an
+    individually-instanciable class for each broadcasting output. This
+    class already has comprehensive streaming protocols support.
+    Multithreading of the outputs (one thread per output) may be
+    implemented.
 
 *TODO*
 

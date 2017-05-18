@@ -3,57 +3,11 @@
 This is a brief step by step description about a typical work flow of
 fixing a first Mixxx bug. Follow the links for more details.
 
-The remark [homestead](http://homestead.org/) can bring up a mind image
-of sprawling acres in addition to log small house. But actually,
-homesteads move toward in all form and amount . It is the do something
-of creating a creative house, which can be prepared no matter the size
-of the home or else the property. The smell of fresh cut down hay, the
-noise of a hen blow your own horn, the sight of alpacas grazing and the
-feel of a moment ago twisted soil at home homesteader's hands is what
-put together their feeling beat in the company of a homesteading zeal.
-It's a homesteading life in addition to a good quality one\! The key to
-a booming homestead does not no more than stretch out on top of being
-able in the direction of grow your be the owner of food but on top of
-additional skills at the same time as in good health. at this point is
-our catalog of homesteading ability that will definitely help you be
-alive doing well at home your built up homesteading trip.
+## Fork Mixxx on GitHub
 
-4 Homesteading skills up to date homesteaders have to in the direction
-of know\!
+The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
 
-1.Farming
-
-The homestead garden is a starting place of a lot of homesteading hard
-work. Whether you are on the increase herbs or else maintaining a big
-backyard in the company of lasting trees in addition to under growth,
-there's not anything to a certain extent in the vein of the taste of
-your house full growth bring into being. Gardening is a vast part of
-your homestead. You contain an assortment of annual gardens as well as
-fruit, brambles, shrubs, nut plants and vines.
-
-2\. Home cough medicine in addition to usual Health
-
-existence is full of bruises in addition to bump, tummy aches in
-addition to extra minor ill health. With a little be on familiar terms
-with how, you can care for many common ailments with bits and pieces
-from your store cupboard or else garden.
-
-3.Food stuff Storage
-
-Once the crop starts near term in, you'll wish for to protect your
-reward in the direction of take pleasure in year surrounding. Buying
-bulk regular produce in addition to preserving it at house can be a huge
-alternative intended for store your homestead pantry, even if you don't
-have a backyard\!
-
-4.Recipe and Kitchen guidelines
-
-[The kitchen](https://en.wikipedia.org/wiki/The_Kitchen_\(TV_series\)')
-is great put to set up your homesteading journey, as we all need to
-have. house cooked meals help you to save cash in addition to choose
-high quality quality ingredients for your table. Along with food, we in
-addition contain some formula used for personal care items like
-deodorant, calm and ferments such as dandelion wine.
+<https://help.github.com/articles/fork-a-repo>
 
 ## Create a Local Branch
 

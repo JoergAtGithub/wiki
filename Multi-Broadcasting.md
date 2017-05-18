@@ -24,6 +24,7 @@ available in the Live Broadcasting panel.
 
 #### Technical details
 
+  - Changes will be made in majority in the settings engine and UI.
   - Design and write a new BroadcastProfile class
   - Fixed fields/attributes: server info/credentials and encoding
     settings

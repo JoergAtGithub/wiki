@@ -98,9 +98,7 @@ code more generic and not specific to libshout.
 
 ##### June 12 - June 16
 
-``` 
-* 
-```
+  - Testing and bug hunting
 
 ##### June 19 - June 23
 

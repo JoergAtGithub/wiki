@@ -103,6 +103,7 @@ code more generic and not specific to libshout.
 
 ##### June 19 - June 23
 
+  - **First milestone: have this feature mergeable**
   - Project planning for Phase 2
 
 #### Phase 2: Multi-broadcasting

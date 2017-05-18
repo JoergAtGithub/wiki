@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: project technical planning
+**Current State**: project planning
 
 ### Project description
 
@@ -29,6 +29,14 @@ available in the Live Broadcasting panel.
     settings
   - The Settings UI must be updated to add control over and use of
     broadcasting profiles
+  - Add a combo list of profiles
+  - Selecting a profile loads its settings in the fields of the Live
+    Broadcasting panel
+  - Saving settings applies the current values to the currently selected
+    profile
+  - Add buttons to create, delete and rename profiles
+  - The current profile can't be changed or edited while streaming is
+    running
   - The settings code must be updated to accomodate broadcasting
     profiles
 
@@ -56,10 +64,11 @@ clicks on “Edit” next to an item of the outputs list.
     * Set broadcasting profile (instance of BroadcastProfile)
     * Start output
     * Stop output
-    * Push uncompressed audio frame to output (encode in a separate thread?)
+    * Push uncompressed audio frame to output
+* Each instance should have its own thread(s)
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)
-* The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's button in the new Outputs list UI.
+* The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.
 ```
 
 <span class="underline">Possible evolution</span>: make the broadcasting
@@ -72,7 +81,36 @@ code more generic and not specific to libshout.
 
 ### Weekly schedule
 
-*Will be written once the technical specifications are complete*
+*Work in progress*
+
+#### Phase 1: Broadcasting profiles
+
+##### May 30 - June 2nd
+
+  - Implement the BroadcastProfile class
+  - Adapt the settings code to be able to load/save profiles
+
+##### June 5 - June 9
+
+  - Edit the Live Broadcasting UI panel to add the profile widgets
+    (combo list + buttons)
+  - Write the logic of these widgets and link them with the engine
+
+##### June 12 - June 16
+
+``` 
+* 
+```
+
+##### June 19 - June 23
+
+``` 
+* 
+```
+
+#### Phase 2: Multi-broadcasting
+
+To be defined.
 
 ### Useful info about the student's schedule
 

@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: project planning
+**Current State**: phase 1 planning
 
 ### Project description
 
@@ -102,9 +102,7 @@ code more generic and not specific to libshout.
 
 ##### June 19 - June 23
 
-``` 
-* 
-```
+  - Project planning for Phase 2
 
 #### Phase 2: Multi-broadcasting
 

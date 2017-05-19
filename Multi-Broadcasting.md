@@ -56,16 +56,16 @@ clicks on “Edit” next to an item of the outputs list.
     a "broadcast manager" : receive audio samples and push them to the
     output instances
   - The current libshout logic must be separated from EngineBroadcast
-    and moved to a new class ShoutOutput
+    and moved to a new class ShoutOutput (with QThread inheritance)
   - Class methods:
 
 <!-- end list -->
 
 ``` 
     * Set broadcasting profile (instance of BroadcastProfile)
-    * Start output
+    * Start output (overrides QThread::run)
     * Stop output
-    * Push uncompressed audio frame to output
+    * Slot: Push uncompressed audio samples to output
 * Each instance should have its own thread(s)
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)

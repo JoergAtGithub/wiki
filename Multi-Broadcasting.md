@@ -65,6 +65,8 @@ clicks on “Edit” next to an item of the outputs list.
 
 #### Technical details
 
+*Incomplete analysis ATM*
+
   - The EngineBroadcast sidechain filter must be modified to only act as
     a "broadcast manager" : receive audio samples and push them to the
     output instances
@@ -79,7 +81,6 @@ clicks on “Edit” next to an item of the outputs list.
     * Start output (overrides QThread::run)
     * Stop output
     * Slot: Push uncompressed audio samples to output
-* Each instance should have its own thread(s)
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)
 * The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.

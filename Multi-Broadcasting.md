@@ -24,12 +24,11 @@ available in the Live Broadcasting panel.
 
 #### Technical details
 
-  - Changes will be made in majority in the settings engine and UI.
   - Design and write a new BroadcastProfile class
   - Fixed fields/attributes: server info/credentials and encoding
     settings
-  - The Settings UI must be updated to add control over and use of
-    broadcasting profiles
+  - The Settings UI (DlgPrefBroadcast class) must be updated to add
+    control over and use of broadcasting profiles
   - Add a combo list of profiles
   - Selecting a profile loads its settings in the fields of the Live
     Broadcasting panel
@@ -38,8 +37,13 @@ available in the Live Broadcasting panel.
   - Add buttons to create, delete and rename profiles
   - The current profile can't be changed or edited while streaming is
     running
-  - The settings code must be updated to accomodate broadcasting
-    profiles
+  - Additions to DlgPrefBroadcast::slotApply : code to save (at least
+    pass to settings management) the broadcasting profiles
+  - Maybe no other major change in DlgPrefBroadcast::slotApply : values
+    from the currently selected profile are already set in the UI's
+    fields, which are passed to an instance of BroadcastSettings
+  - The settings code (BroadcastSettings class) must be updated to
+    accomodate broadcasting profiles
 
 ### Multiple broadcasting outputs (phase 2)
 

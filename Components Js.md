@@ -737,8 +737,25 @@ instead of a dry/wet knob (labeled "Beats" for Serato or "Release FX"
 for Rekordbox) and a button labeled "Tap". Map the `effectFocusButton`
 to the controller's "Tap" button. To use the `dryWetKnob` Pot with an
 encoder, replace its `input` function with a function that can
-appropriately handle the signals sent by your controller. Refer to the
-[\#Encoder](#Encoder) documentation for an example.
+appropriately handle the signals sent by your controller. For example:
+
+    MyController.effectUnit = new components.EffectUnit([1, 3]);
+    MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
+    MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
+    MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
+    MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
+    MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
+    MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
+    MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
+    MyController.effectUnit.dryWetKnob.input = function (channel, control, value, status, group) {
+        if (value === 1) {
+           this.setParameterIn(this.getParameterIn() - .05);
+        } else if (value === 127) {
+           this.setParameterIn(this.getParameterIn() + .05);
+        }
+    };
+    MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
+    MyController.effectUnit.init();
 
 For the shift functionality to work, the shift button of your controller
 must be mapped to a function that calls the `shift`/`unshift` methods of

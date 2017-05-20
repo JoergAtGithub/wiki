@@ -35,3 +35,5 @@ used to toggle between EffectUnits 1 & 3 or 2 & 4, like deck toggle
 buttons.
 
 To load different effects, hold shift and turn the knob for an effect.
+
+FIXME: Make a video to demonstrate all this.

@@ -1,8 +1,15 @@
 # Pioneer DDJ-SX
 
-The DDJ-SX delivers intuitive control of all MIXXX's exciting features.
-Dedicated buttons and dials deliver plug-and-play control of 4 decks.
 [[/media/hardware/pioneerddjsx_layout.png|]]
+
+  - [Manufacturer's product
+    page](https://www.pioneerdj.com/en-us/product/controller/ddj-sx/black/overview/)
+  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=8310)
+  - [Manual
+    (multi-language)](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRH1193_manual/)
+
+The Pioneer DDJ-SX is a 4 deck all-in-one controller that provides
+intuitive control of all of Mixxx's features.
 
 ## User Options
 
@@ -355,11 +362,6 @@ usage of Serato DJ. You can check/change this setting as follows:
 
 ## References
 
-  - [Manufacturer's product
-    page](https://www.pioneerdj.com/en-us/product/controller/ddj-sx/black/overview/)
-  - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=8310)
-  - [Manual
-    (multi-language)](http://docs.pioneerdj.com/Manuals/DDJ_SX_DRH1193_manual/)
   - [List of MIDI
     messages](https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/software-info/controller/ddj-sx/ddj-sx_list_of_midi_messages_e.pdf?la=en)
   - [Controller Scripting](midi_scripting)

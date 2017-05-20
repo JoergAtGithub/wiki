@@ -557,9 +557,9 @@ own `input` function. For example, for an encoder that sends a value of
         inKey: 'pregain',
         input: function (channel, control, value, status, group) {
             if (value === 1) {
-                this.setParameterIn(this.getParameterIn() - .05);
+                this.inSetParameter(this.inGetParameter() - .05);
             } else if (value === 127) {
-                this.setParameterIn(this.getParameterIn() + .05);
+                this.inSetParameter(this.inGetParameter() + .05);
             }
         },
     });

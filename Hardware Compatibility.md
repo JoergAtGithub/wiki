@@ -401,11 +401,11 @@ of the mono outputs and the stereo headphone output would be the same.
 #### Surround sound cards
 
 Sound cards made for consumer surround sound setups such as 5.1 or 7.1
-configurations often do not work with Mixxx because it is not possible
-to get independent outputs from them. Instead, they typically do signal
-processing in hardware or in the driver to split a stereo signal into
-multiple components. A single sound card with 4 independent mono outputs
-is recommended.
+configurations are not recommended. They typically do signal processing
+in hardware or in the driver to split a stereo signal into multiple
+components. It may be possible to configure them to output a separate
+master and headphone stereo signals, but it is often tricky to do so. A
+single sound card with 4 independent mono outputs is recommended.
 
 #### Bit depth and sample rate
 

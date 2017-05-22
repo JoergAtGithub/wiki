@@ -12,7 +12,8 @@ Bare minimum equipment for DJing:
 
 Helpful but not strictly necessary:
 
-  - [sound card](#sound-cards) with 4 mono outputs (2 stereo pairs)
+  - [sound card](#sound-cards) with 4 mono output channels (2 stereo
+    pairs)
   - [controller](#controllers) and/or [turntables with timecode
     vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
   - [laptop stand](laptop%20stands)

@@ -31,9 +31,9 @@ latest version of Mixxx.
     introduced. If your mapping has buttons mapped to fixed loop sizes,
     update it to use beatloop\_activate and beatlooproll\_activate.
     Replace reloop\_exit with reloop\_toggle, and add a mapping for the
-    new reloop\_andstop Control.
-  - The confusingly named "reloop\_exit" Control was renamed to
-    "reloop\_toggle".
+    new reloop\_andstop Control. Replace loop\_move\_X\_forward/backward
+    with beatjumping, which now acts to move the loop if there is a loop
+    enabled.
   - TODO: document new library navigation interface
   - A new \[ChannelX\], track\_loaded ControlObject was added. If your
     script previously used track\_samples to detect if a track was

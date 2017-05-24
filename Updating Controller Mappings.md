@@ -29,8 +29,9 @@ latest version of Mixxx.
     knobs (or 3 knobs + 1 encoder) + 4 buttons for controlling effects
   - New [MixxxControls](MixxxControls) for looping and beatjumping were
     introduced. If your mapping has buttons mapped to fixed loop sizes,
-    update it to use beatloop\_toggle, beatlooproll\_activate, and
-    beatloop\_halve/double.
+    update it to use beatloop\_activate and beatlooproll\_activate.
+    Replace reloop\_exit with reloop\_toggle, and add a mapping for the
+    new reloop\_andstop Control.
   - The confusingly named "reloop\_exit" Control was renamed to
     "reloop\_toggle".
   - TODO: document new library navigation interface

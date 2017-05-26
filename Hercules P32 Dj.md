@@ -93,7 +93,7 @@ asymmetrically like the rest of the deck controls:
     shift beatjumps by 1 beat forward/backward, or if a loop is enabled,
     moves the loop 1 beat forward/backward. Pushing (de)activates a
     loop. Pushing with shift reactivates a disabled loop, or if a loop
-    is enabled, jumps to the loop in point and stops playback.
+    is enabled, jumps to the loop in point and stops the deck.
   - **Right encoder**: Turning adjusts the pitch, or with keylock on,
     just the tempo. Pushing resets the pitch to the track's default.
     Turning with shift jumps forward/backwards by the beatjump size. If

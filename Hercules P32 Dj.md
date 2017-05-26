@@ -82,6 +82,28 @@ The encoders do not behave exactly as labeled.
     the headphone output. Pushing with shift toggles split cue mode
     (left ear of headphone output plays cue signal, right ear plays main
     signal).
+
+#### Mixxx 2.1
+
+The mapping of the encoders does not match their labels. They are
+labeled on the controller symmetrically, but they are mapped
+asymmetrically like the rest of the deck controls:
+
+  - **Left encoder**: Turning halves/doubles the loop size. Turning with
+    shift beatjumps by 1 beat forward/backward, or if a loop is enabled,
+    moves the loop 1 beat forward/backward. Pushing (de)activates a
+    loop. Pushing with shift reactivates a disabled loop, or if a loop
+    is enabled, jumps to the loop in point and stops playback.
+  - **Right encoder**: Turning adjusts the pitch, or with keylock on,
+    just the tempo. Pushing resets the pitch to the track's default.
+    Turning with shift jumps forward/backwards by the beatjump size. If
+    a loop is enabled, turning with shift moves the loop by the beatjump
+    size. Hold shift, push, and turn to adjust the beatjump size, shown
+    on the LED display on the controller. When the encoder is released,
+    the LED display goes back to showing the loop size.
+
+#### Mixxx 2.0
+
   - **Loop/Tempo encoder**: turning halves/doubles the loop size.
     Pushing (de)activates a loop. For loops 1 beat or less, the loop
     only stays active while the encoder is pushed down. Pressing while

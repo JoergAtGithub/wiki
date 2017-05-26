@@ -122,6 +122,19 @@ asymmetrically like the rest of the deck controls:
 
 ### Effects
 
+#### Mixxx 2.1
+
+Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
+page for details on how to use the effects sections.
+
+When the pad grid is in Slicer mode, the pads in the top left of the
+grid assign the deck to Effect Units 1-4.
+
+Pressing the headphone button with shift assigns the effect unit on that
+side to the headphone channel. This is useful for previewing an effect
+on a playing deck before using it. The headphone (PFL) button must also
+be pressed on the deck to hear the effect on it in headphones.
+
 #### Mixxx 2.0
 
 The effects controls on the left control Effect Unit 1, the controls on
@@ -154,18 +167,6 @@ available effects. The button on the right sets the parameter knobs to
 control that effect's parameters. The bottom row toggles the effect unit
 on the headphones, master mix, microphone 1, and auxiliary input 1 (from
 left to right).
-
-#### Mixxx 2.1
-
-Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
-page for details on how to use the effects sections.
-
-When the pad grid is in Slicer mode, the pads in the top left of the
-grid assign the deck to Effect Units 1-4.
-
-Pressing the headphone button with shift assigns the effect unit on that
-side to the headphone channel. This is useful for previewing an effect
-on a playing deck before using it.
 
 ### Other controls
 

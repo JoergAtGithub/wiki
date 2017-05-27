@@ -92,11 +92,12 @@ clicks on “Edit” next to an item of the outputs list.
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)
 * The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.
+* Add AAC support for streaming (certainly possible with FFmpeg)
+* See [[https://bugs.launchpad.net/mixxx/+bug/726991]]
 ```
 
 <span class="underline">Possible evolutions</span>:
 
-  - Add an AAC encoder (using FFmpeg)
   - Make the broadcasting code more generic and not specific to
     libshout.
   - Implement Shoutcast 2 support

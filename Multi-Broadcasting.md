@@ -71,11 +71,18 @@ broadcasting outputs. The existing GUI for Live Broadcasting settings is
 to be moved to a dedicated dialog, which will be spawned when the user
 clicks on “Edit” next to an item of the outputs list.
 
-[[/media/wiki/multi-broadcasting.png|]]
+[[/media/multi-broadcasting.png|]]
+
+*New Live Broadcasting panel UI*
+
+-----
+
+[[/media/wiki/edit_connection.png|]]
+
+*The current Live Broadcasting settings UI will be moved to a dedicated
+dialog, instanciable per profile*
 
 #### Technical details
-
-*Incomplete analysis ATM*
 
   - The current libshout logic in EngineBroadcast must be separated from
     it and moved to a new class ShoutOutput (with QThread inheritance)
@@ -92,9 +99,11 @@ clicks on “Edit” next to an item of the outputs list.
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)
 * The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.
+* If time allows it:
+* Add "server profiles" to allow reuse of server credentials (e.g. : multi-bitrate/multi-codec streaming to the same server)
 * Add AAC support for streaming 
-* Encoder: maybe possible with FFmpeg's new built-in aac encoder
-* Libshout support: See [[https://bugs.launchpad.net/mixxx/+bug/726991]]
+    * Encoder: maybe possible with FFmpeg's new built-in aac encoder
+    * Libshout support: See [[https://bugs.launchpad.net/mixxx/+bug/726991]]
 ```
 
 <span class="underline">Possible evolutions</span>:

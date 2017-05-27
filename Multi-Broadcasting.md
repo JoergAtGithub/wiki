@@ -53,7 +53,7 @@ available in the Live Broadcasting panel.
 * Selecting a profile loads its settings in the fields of the Live Broadcasting panel
 * Saving settings applies the current values to the currently selected profile
 * Add buttons to create, delete and rename profiles
-* The current profile can't be changed or edited while streaming is running
+* Constraint: the current profile can't be changed or edited while streaming is running
 * DlgPrefBroadcast::slotApply : add code to save broadcasting profiles
 ```
 

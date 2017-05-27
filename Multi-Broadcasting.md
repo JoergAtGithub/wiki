@@ -77,11 +77,8 @@ clicks on “Edit” next to an item of the outputs list.
 
 *Incomplete analysis ATM*
 
-  - The EngineBroadcast sidechain filter must be modified to only act as
-    a "broadcast manager" : receive audio samples and push them to the
-    output instances
-  - The current libshout logic must be separated from EngineBroadcast
-    and moved to a new class ShoutOutput (with QThread inheritance)
+  - The current libshout logic in EngineBroadcast must be separated from
+    it and moved to a new class ShoutOutput (with QThread inheritance)
   - Class methods:
 
 <!-- end list -->
@@ -91,18 +88,18 @@ clicks on “Edit” next to an item of the outputs list.
     * Start output (overrides QThread::run)
     * Stop output
     * Slot: Push uncompressed audio samples to output
+* The EngineBroadcast sidechain filter must be refactored to only act as a "broadcast manager" that receives audio samples and pushes them to output instances
 * The settings code must be updated to handle several outputs
 * A new Live Broadcasting settings UI must be implemented (see UI mockup above)
 * The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.
 ```
 
-<span class="underline">Possible evolution</span>: make the broadcasting
-code more generic and not specific to libshout.
+<span class="underline">Possible evolutions</span>:
 
-### Ideas
-
-  - Drop-down item in the menu bar to start/stop streaming of one or all
-    outputs
+  - Add an AAC encoder (using FFmpeg)
+  - Make the broadcasting code more generic and not specific to
+    libshout.
+  - Implement Shoutcast 2 support
 
 ### Weekly schedule
 
@@ -123,15 +120,16 @@ code more generic and not specific to libshout.
   - Write the logic of the new UI elements:
   - Loading the profile list on instanciation
   - Ability to create, rename and delete profiles
-  - On profile selection, fill the form fields with values from that
-    profile
-  - On settings apply, save the form fields into the current profile
+  - On profile selection, put the current form fields into the
+    previously-selected profile and fill the form fields with values
+    from the newly-selected profile
+  - On settings apply, save all profiles
 
 ##### June 12 - June 16
 
   - Testing and bug hunting
 
-##### June 19 - June 23
+##### June 19 - June 28
 
   - **First milestone: have this feature mergeable**
   - Project planning for Phase 2
@@ -142,6 +140,5 @@ To be defined.
 
 ### Useful info about the student's schedule
 
-  - School project from May 18th to 26th
-  - Another school project from June 22th to June 30th
+  - School project from June 22th to June 30th
   - School Year end: July 12th 2017

@@ -102,6 +102,7 @@ clicks on “Edit” next to an item of the outputs list.
   - Make the broadcasting code more generic and not specific to
     libshout.
   - Implement Shoutcast 2 support
+  - Add an Opus streaming encoder
 
 ### Weekly schedule
 

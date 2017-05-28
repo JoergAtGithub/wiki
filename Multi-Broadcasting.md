@@ -12,7 +12,7 @@ implemented : broadcasting profiles and multiple broadcasting outputs.
 These features will be implemented in two parts, matching the GSoC
 phases schedule.
 
-### Broadcasting profiles (phase 1)
+### Phase 1: Broadcasting profiles
 
 Broadcasting profiles allow management of several sets of server
 settings/credentials and encoder settings. These can be managed through
@@ -63,7 +63,16 @@ available in the Live Broadcasting panel.
     * On Cancel: discard the clones and cloned list, and don't save changes to profiles.
 ```
 
-### Multiple broadcasting outputs (phase 2)
+##### UML diagrams
+
+|                                              |                                             |
+| -------------------------------------------- | ------------------------------------------- |
+| [[/media/wiki/gsoc_palakis_phase1_umlbefore.png|]] | [[/media/wiki/gsoc_palakis_phase1_umlafter.png|]] |
+| *Class structure before modifications*       | *Class structure after modifications*       |
+
+-----
+
+### Phase 2: Multiple broadcasting outputs
 
 The new “Live Broadcasting” settings panel will consist of a list of
 broadcasting outputs. The existing GUI for Live Broadcasting settings is
@@ -111,6 +120,8 @@ dialog, instanciable per connection*
     libshout.
   - Implement Shoutcast 2 support
   - Add an Opus streaming encoder
+
+-----
 
 ### Weekly schedule
 

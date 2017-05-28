@@ -80,7 +80,7 @@ clicks on “Edit” next to an item of the outputs list.
 [[/media/wiki/edit_connection.png|]]
 
 *The current Live Broadcasting settings UI will be moved to a dedicated
-dialog, instanciable per profile*
+dialog, instanciable per connection*
 
 #### Technical details
 

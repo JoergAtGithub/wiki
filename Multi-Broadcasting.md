@@ -63,6 +63,9 @@ currently available in the Live Broadcasting panel.
     * On Cancel: discard the clones and cloned list, and don't save changes to profiles.
 ```
 
+**TODO:** Implement password encryption (see
+<https://bugs.launchpad.net/mixxx/+bug/1642765>)
+
 ##### UML diagrams
 
 |                                              |                                             |

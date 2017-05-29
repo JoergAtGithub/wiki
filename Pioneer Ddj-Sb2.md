@@ -305,6 +305,10 @@ effect. The enable switches for each effect are not shown on the
 controller's LEDs, so you need to look at the screen to check whether an
 effect is on. All effects are off when Mixxx starts.
 
+Use shift and the mixer knobs to control the parameters of the focused
+effect. The trim knob controls parameter 1, the equalizer knobs control
+parameters 2-4, and the filter knob controls parameter 5.
+
 The DDJ-SB2 does not have enough buttons to control assigning effect
 units to different decks. You may want to set up a [custom keyboard
 mapping](https://mixxx.org/manual/latest/chapters/advanced_topics.html#making-a-custom-keyboard-mapping)

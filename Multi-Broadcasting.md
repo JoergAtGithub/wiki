@@ -15,10 +15,10 @@ phases schedule.
 ### Phase 1: Broadcasting profiles
 
 Broadcasting profiles allow management of several sets of server
-settings/credentials and encoder settings. These can be managed through
-a dedicated dialog in Mixxx's settings or a new settings panel. Profiles
-have the standard Icecast/Shoutcast and encoder settings currently
-available in the Live Broadcasting panel.
+settings/credentials and encoder settings. These will be managed through
+dedicated controls in Mixxx's existing Live Broadcasting preferences UI.
+Profiles have the standard Icecast/Shoutcast and encoder settings
+currently available in the Live Broadcasting panel.
 
 [[/media/wiki/broadcasting_profiles.png|]]
 

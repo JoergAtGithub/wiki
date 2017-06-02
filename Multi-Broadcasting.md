@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: phase 1 planning
+**Current State**: phase 1 coding
 
 ### Project description
 

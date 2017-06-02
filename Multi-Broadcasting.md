@@ -4,6 +4,41 @@ by Stéphane Lepin
 
 **Current State**: phase 1 coding
 
+### Weekly schedule
+
+#### Phase 1: Broadcasting profiles
+
+##### May 30 - June 2nd
+
+  - Write the BroadcastProfile class and its XML load/save code
+  - Adapt the BroadcastSettings class: move select attributes to
+    BroadcastProfile and implement get/set profile code
+
+##### June 5 - June 9
+
+  - Edit the Live Broadcasting UI panel to add the profile select and
+    edit widgets
+  - Write the logic of the new UI elements:
+  - Loading the profile list on instanciation
+  - Ability to create, rename and delete profiles
+  - On profile selection, put the current form fields into the
+    previously-selected profile and fill the form fields with values
+    from the newly-selected profile
+  - On settings apply, save all profiles
+
+##### June 12 - June 16
+
+  - Testing and bug hunting
+
+##### June 19 - June 28
+
+  - **First milestone: have this feature mergeable**
+  - Project planning for Phase 2
+
+#### Phase 2: Multi-broadcasting
+
+To be defined.
+
 ### Project description
 
 This project for Mixxx aims to add several features potentially useful
@@ -125,41 +160,6 @@ dialog, instanciable per connection*
   - Add an Opus streaming encoder
 
 -----
-
-### Weekly schedule
-
-#### Phase 1: Broadcasting profiles
-
-##### May 30 - June 2nd
-
-  - Write the BroadcastProfile class and its XML load/save code
-  - Adapt the BroadcastSettings class: move select attributes to
-    BroadcastProfile and implement get/set profile code
-
-##### June 5 - June 9
-
-  - Edit the Live Broadcasting UI panel to add the profile select and
-    edit widgets
-  - Write the logic of the new UI elements:
-  - Loading the profile list on instanciation
-  - Ability to create, rename and delete profiles
-  - On profile selection, put the current form fields into the
-    previously-selected profile and fill the form fields with values
-    from the newly-selected profile
-  - On settings apply, save all profiles
-
-##### June 12 - June 16
-
-  - Testing and bug hunting
-
-##### June 19 - June 28
-
-  - **First milestone: have this feature mergeable**
-  - Project planning for Phase 2
-
-#### Phase 2: Multi-broadcasting
-
-To be defined.
 
 ### Useful info about the student's schedule
 

@@ -128,8 +128,6 @@ dialog, instanciable per connection*
 
 ### Weekly schedule
 
-*Work in progress*
-
 #### Phase 1: Broadcasting profiles
 
 ##### May 30 - June 2nd

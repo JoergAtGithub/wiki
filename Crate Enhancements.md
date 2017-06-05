@@ -40,4 +40,33 @@ the trackIds of the songs matching the crate the user has entered.
 
 ## Nested Crates
 
-***TBA***
+This will likely be developed on top of [Library
+Redesign](https://github.com/mixxxdj/mixxx/pull/1117). With that in mind
+I'd like to add some notes on the implementation of the Nested Crates.
+
+  - [QT Tree
+    Model](http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html)
+    will be used for the nesting purposes.
+  - A new table in the database will hold the parent child relationship
+    and aplly the nessecary restrictions. (Child can't be parent of it's
+    parent nor itself)
+
+## Timeline
+
+<span class="underline">**May 15 - June 5**</span>
+
+  - Crate Filter
+  - Crate Filter Tests
+
+<span class="underline">**June 6 - June 15**</span>
+
+  - Plan for Nested Crates implementation
+  - Familiarize with the new library layout
+
+<span class="underline">**June 16 - June 26**</span>
+
+  - Get ready for the first evaluation
+
+<span class="underline">\*\*June 27 - \*\*</span>
+
+  - *TBA*

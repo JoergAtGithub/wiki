@@ -11,20 +11,12 @@ by Stéphane Lepin
 ##### May 30 - June 2nd
 
   - Write the BroadcastProfile class and its XML load/save code
-  - Adapt the BroadcastSettings class: move select attributes to
-    BroadcastProfile and implement get/set profile code
 
 ##### June 5 - June 9
 
-  - Edit the Live Broadcasting UI panel to add the profile select and
-    edit widgets
-  - Write the logic of the new UI elements:
-  - Loading the profile list on instanciation
-  - Ability to create, rename and delete profiles
-  - On profile selection, put the current form fields into the
-    previously-selected profile and fill the form fields with values
-    from the newly-selected profile
-  - On settings apply, save all profiles
+  - Refactor the Live Broadcasting preferences panel
+  - Refactor the BroadcastSettings class as a "proxy" between
+    DlgPrefBroadcast and instances of BroadcastProfile
 
 ##### June 12 - June 16
 
@@ -55,8 +47,6 @@ dedicated controls in Mixxx's existing Live Broadcasting preferences UI.
 Profiles have the standard Icecast/Shoutcast and encoder settings
 currently available in the Live Broadcasting panel.
 
-[[/media/wiki/broadcasting_profiles.png|]]
-
 #### Technical details
 
   - Profiles are saved as \*.bcp.xml files under a "broadcast\_profiles"
@@ -83,19 +73,6 @@ currently available in the Live Broadcasting panel.
 * Add a setCurrentProfile() method with an instance of BroadcastProfile as its sole parameter. Calling this will also set the value of CurrentProfile in mixxx.cfg
 * Add a getCurrentProfile() method which returns an instance of BroadcastProfile (typically called when streaming starts).
 * The Settings UI (DlgPrefBroadcast class) must be refactored to add control over and use of broadcasting profiles
-* Add a combo list of profiles
-* Selecting a profile loads its settings in the fields of the Live Broadcasting panel
-    * It first puts the settings into the previously-selected profile
-* Constraint: the current profile can't be changed or edited while streaming is running
-* Add buttons to create, delete and rename profiles
-* Update the logic of DlgPrefBroadcast to accomodate for the API changes in BroadcastSettings
-    * DlgPrefBroadcast Constructor:
-      * Clone the instances and list from BroadcastSettings' list of profile. Profile changes from the preferences GUI will be made to these clones.
-      * Get the current settings from the current profile 
-    * DlgPrefBroadcast::slotApply :
-      * Move the clones and list back to BroadcastSettings and save all profiles.
-      * Call BroadcastSettings::setCurrentProfile()
-    * On Cancel: discard the clones and cloned list, and don't save changes to profiles.
 ```
 
 **TODO:** Implement password encryption (see
@@ -113,9 +90,9 @@ currently available in the Live Broadcasting panel.
 ### Phase 2: Multiple broadcasting outputs
 
 The new “Live Broadcasting” settings panel will consist of a list of
-broadcasting outputs. The existing GUI for Live Broadcasting settings is
-to be moved to a dedicated dialog, which will be spawned when the user
-clicks on “Edit” next to an item of the outputs list.
+broadcasting outputs, with the existing settings form under the
+connections table. Editing a connection profile will be made through the
+refactored existing UI.
 
 [[/media/multi-broadcasting.png|]]
 

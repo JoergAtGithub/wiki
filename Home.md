@@ -36,7 +36,7 @@ this wiki, please fix it.
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
   - [Command line options](Command%20line%20options)
-  - [Music-reactive lighting](MIDI%20for%20light)
+  - [MIDI clock output](MIDI%20clock%20output)
 
 ## Community Resources
 

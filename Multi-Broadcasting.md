@@ -14,9 +14,9 @@ by Stéphane Lepin
 
 ##### June 5 - June 9
 
-  - Refactor the Live Broadcasting preferences panel
   - Refactor the BroadcastSettings class as a "proxy" between
     DlgPrefBroadcast and instances of BroadcastProfile
+  - Refactor the Live Broadcasting preferences panel
 
 ##### June 12 - June 16
 

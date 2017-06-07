@@ -31,6 +31,8 @@ by Stéphane Lepin
 
 To be defined.
 
+-----
+
 ### Project description
 
 This project for Mixxx aims to add several features potentially useful
@@ -164,6 +166,12 @@ switched to Qt Creator, and it suits me for now.
 
 For the next week of coding, I expect to have results on the XML
 profiles load/save mechanisms and UI by Friday.
+
+#### Week 2: June 5 - June 9
+
+*Work in Progress*
+
+-----
 
 ### Useful info about the student's schedule
 

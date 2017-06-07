@@ -138,6 +138,33 @@ dialog, instanciable per connection*
 
 -----
 
+### Weekly reports
+
+#### Week 1: May 30th - June 2th
+
+I wrote the implementation for the BroadcastProfile class: it currently
+has its XML load/save code that needs to be tested and the get/set
+behaviour of settings is a bit different compared to the settings
+management in BroadcastSettings: settings get/set methods in
+BroadcastSettings (that will be removed) "directly talk" with the
+mixxx.cfg file, while BroadcastProfile stores values temporarily in
+private members until save() is called to write the values to the
+profile's XML file. Also, methods beginning with "getDefault" don't
+exist in BroadcastProfile because these are set on instanciation of the
+class.
+
+I got a bit late because of dev setup issues on my Windows system: I
+tried to work on Mixxx with Eclipse on Windows by using the build.bat
+provided in the Windows Dev Setup guide from the wiki. Building works,
+cleaning too (with a small addition to the Batch script) but Eclipse's
+"code checker" throws a lot of errors about undefined symbols (for the
+record: include paths for Qt and Mixxx's source code where added in the
+project's settings, along with appropriate search paths). In the end, I
+switched to Qt Creator, and it suits me for now.
+
+For the next week of coding, I expect to have results on the XML
+profiles load/save mechanisms and UI by Friday.
+
 ### Useful info about the student's schedule
 
   - School project from June 22th to June 30th

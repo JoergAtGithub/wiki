@@ -78,8 +78,8 @@ Basicaly I'll add a table
 
 exaclty as in the example above.
 
-Also I'll modify the `crates` table to have a `crates.path` string that
-will get generated whenever the user updates the database by
+Also I'll add a table with columns `| CrateID | path |` where path is a
+string that will get generated whenever the user updates the database by
 creating/moving/renaming/delete a crate. This will be used in the crate:
 filter witch will itself be used to replace the way the crates are
 currently displayed (by generated a query just like in the new library
@@ -108,8 +108,9 @@ Consider the following example:
 
 After each modification of the crate database by the user
 (add/delete/move/rename a crate), a string will be generated for each
-crate from the table I mentioned above, witch will correspond to the
-"path" of the crate in the tree. This path is actually quite useful.
+crate from the first table I mentioned above, and get stored to the path
+table, witch will correspond to the "path" of the crate in the tree.
+This path is actually quite useful.
 
 It will look like this for the examples above:
 

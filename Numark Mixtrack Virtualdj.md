@@ -10,7 +10,7 @@ Pro](Numark%20Mixtrack%20Pro) but without a built-in sound card. It has
 been discontinued and succeeded by the [Numark Mixtrack
 3](Numark%20Mixtrack%20Pro%203).
 
-# Numark Mixtrack Support in Mixxx
+# Numark Mixtrack VirtualDJ Support in Mixxx
 
 ## What is the state of the support in Mixxx ?
 

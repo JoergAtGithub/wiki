@@ -20,7 +20,7 @@ updated to take the remarks and improvements into account. Which can be
 found in the [corresponding forum
 thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 
-## Current mapping (06/08/2017)
+## Mapping
 
 **The mapping is very similar like VirtualDJ software work with this
 controller.**

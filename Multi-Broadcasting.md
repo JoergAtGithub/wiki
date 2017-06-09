@@ -175,10 +175,12 @@ file named "Default Profile.bcp.xml" in
 $SETTINGS\_DIR/broadcast\_profiles.
 
 Actual implementation of BroadcastProfile differs a bit from the
-original design: file management was initially planned to be done in a
-profile instance itself, but was eventually moved to BroadcastSettings
-to have this responsibility handled in a single class instead of several
-parts across several classes.
+original design: file management (create/rename/delete/open) was
+initially planned to be done in a profile instance itself, but was
+eventually moved to BroadcastSettings to have this responsibility
+handled in a single class instead of several parts across several
+classes. However, the XML save/load code is still the responsibility of
+BroadcastProfile.
 
 I got late with UI, so next week's plan is:
 

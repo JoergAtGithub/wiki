@@ -1,4 +1,4 @@
-# Numark Mixtrack
+# Numark Mixtrack VirtualDJ
 
 [[/media/numark_mixtrack_angle_large.jpg|]]
 

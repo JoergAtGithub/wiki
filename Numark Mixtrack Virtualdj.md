@@ -23,7 +23,8 @@ thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 ## Mapping
 
 **The mapping is very similar like VirtualDJ software work with this
-controller.**
+controller.** For example "loopBackMode" for the autoloop, for manual
+loop is not developed yet.
 
 [[/media/numarkmixtrack_tech.png|]]
 

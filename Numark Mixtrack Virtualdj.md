@@ -12,7 +12,7 @@ been discontinued and succeeded by the [Numark Mixtrack
 
 # Support in Mixxx
 
-## Releases Vs. Updates?
+## Releases Vs. Updates
 
 As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. The
 community-made controller mapping and backing script is regularly

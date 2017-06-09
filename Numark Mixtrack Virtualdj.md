@@ -22,6 +22,9 @@ thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 
 ## Current mapping (06/08/2017)
 
+**The mapping is very similar like VirtualDJ software work with this
+controller.**
+
 [[/media/numarkmixtrack_tech.png|]]
 
 1.  Usb cable

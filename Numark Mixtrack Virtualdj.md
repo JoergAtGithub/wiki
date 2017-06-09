@@ -48,7 +48,7 @@ controller.**
     or pause point if not playing work like play button
 18. CUE: plays from the cue point if hold. When released, jumps back to
     the cue point
-19. SYNC: automatically matches the corresponding Deck's tempo to the
+19. Sync: automatically matches the corresponding Deck's tempo to the
     other Deck's tempo 
 20. Pitch Faders
 21. Pitch Bend: when pressed, the pitch will adjust -/+4%, when
@@ -56,7 +56,7 @@ controller.**
 22. Keylock
 23. Delete: delete hotcue's for Deck A
 24. Delete: delete hotcue's for Deck B
-25. Hotcue: Hotcue's 1, 2 and 3
+25. Hotcue: Hotcue's 1, 2 and 3 control
 26. Effect On/Off: turn on/off the flanger effect
 27. Select: select effect and if press change the output of effect
 28. Control: control the filter and gain

@@ -14,12 +14,10 @@ been discontinued and succeeded by the [Numark Mixtrack
 
 ## What is the state of the support in Mixxx ?
 
-As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. There are two
-known mappings; one included, and one community-supported. The
+As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. The
 community-made controller mapping and backing script is regularly
-updated to take the remarks and improvements into account. As an
-example, the "stutter" functionality was implemented in the 1.0b
-mapping, which can be found in the [corresponding forum
+updated to take the remarks and improvements into account. Which can be
+found in the [corresponding forum
 thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 
 ## Current mapping (06/08/2017)

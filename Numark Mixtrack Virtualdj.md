@@ -56,7 +56,7 @@ controller.**
 22. Keylock
 23. Delete: delete hotcue's for Deck A
 24. Delete: delete hotcue's for Deck B
-25. Hotcue: Hotcue's 1, 2 and 3 control
+25. Hotcue: control hotcue's 1, 2 and 3
 26. Effect On/Off: turn on/off the flanger effect
 27. Select: select effect and if press change the output of effect
 28. Control: control the filter and gain

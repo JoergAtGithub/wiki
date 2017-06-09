@@ -169,6 +169,27 @@ profiles load/save mechanisms and UI by Friday.
 
 #### Week 2: June 5 - June 9
 
+I refactored BroadcastSettings as a manager of BroadcastProfile
+instances. It's integrated in the current UI, which saves settings to a
+file named "Default Profile.bcp.xml" in
+$SETTINGS\_DIR/broadcast\_profiles.
+
+Actual implementation of BroadcastProfile differs a bit from the
+original design: file management was initially planned to be done in a
+profile instance itself, but was eventually moved to BroadcastSettings
+to have this responsibility handled in a single class instead of several
+parts across several classes.
+
+I got late with UI, so next week's plan is:
+
+  - First, make sure BroadcastSettings is instancianted only once
+  - Replace instances in DlgPrefBroadcast and EngineBroadcast with a
+    pointer to a single instance
+  - Work on UI from Monday to Wednesday
+  - Testing during the remaining days.
+
+#### Week 3: June 12 - June 16
+
 *Work in Progress*
 
 -----

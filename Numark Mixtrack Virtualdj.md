@@ -34,8 +34,8 @@ thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 6.  Cue Gain: adjust audio level of cue channel
 7.  Cue Mix: adjust mix between Cue and Audio out in the headphones.
 8.  Browser Knob: help browse through your collection without using a
-    mouse or trackpad
-9.  Back: takes you up one level in your file hierarchy
+    mouse or trackpad if press change to file browse
+9.  Back: change to folder browse or open directories
 10. Load A/Load B: Load the highlighted track to the corresponding Deck
 11. Channel faders: control the volume of each channel
 12. Master fader: adjust the output volume of mixxx
@@ -44,6 +44,7 @@ thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
 15. Scratch mode (see below for details)
 16. Play/Pause
 17. Stutter: press while music is playing to jump back to the cue point
+    or pause point if not playing work like play button
 18. CUE: plays from the cue point if hold. When released, jumps back to
     the cue point
 19. SYNC: automatically matches the corresponding Deck's tempo to the

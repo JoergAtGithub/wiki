@@ -10,10 +10,6 @@ is the final proposal with witch I got accepted as a participant in GSoC
 
 **<span class="underline">Current State</span>**
 
-  - [Crate filter](https://github.com/mixxxdj/mixxx/pull/1263) is merged
-    in master.
-  - There is an open PR for [crate filter
-    tests](https://github.com/mixxxdj/mixxx/pull/1277).
   - Currently planing for the Nested Crates feature.
 
 ## Crate Filter
@@ -148,7 +144,7 @@ clicking a crate to something else that will only list the tracks under
 it's argument exactly to the path, so `/Metal` crate gets returned but
 not `/Metal/Progressive` or `/SomeOtherCrate/Metal`
 
-## Timeline
+# Timeline
 
 <span class="underline">**May 15 - June 5**</span>
 
@@ -169,3 +165,41 @@ not `/Metal/Progressive` or `/SomeOtherCrate/Metal`
 <span class="underline">\*\*June 27 - \*\*</span>
 
   - *TBA*
+
+# Weekly Devlog
+
+In this section I will mark my progress with a weekly report about the
+stuff I've been up to with mixxx.
+
+Since I am starting this at June 13 here is a summary of what has been
+done so far:
+
+  - [Crate filter](https://github.com/mixxxdj/mixxx/pull/1263) is merged
+    in master.
+  - [Crate filter tests](https://github.com/mixxxdj/mixxx/pull/1277) as
+    well.
+  - There was some issues with the filters with the new library redesign
+    and there is an open PR at [daschuer's
+    repo](https://github.com/daschuer/mixxx/pull/19) to fix this.
+
+<span class="underline">**June 12 - June 19**</span>
+
+<span class="underline">**June 19 - June 26**</span>
+
+<span class="underline">**June 26 - July 3**</span>
+
+<span class="underline">**July 3 - July 10**</span>
+
+<span class="underline">**July 10 - July 17**</span>
+
+<span class="underline">**July 17 - July 24**</span>
+
+<span class="underline">**July 24 - July 31**</span>
+
+<span class="underline">**July 31 - August 7**</span>
+
+<span class="underline">**August 7 - August 14**</span>
+
+<span class="underline">**August 14 - August 21**</span>
+
+<span class="underline">**August 21 - August 28**</span>

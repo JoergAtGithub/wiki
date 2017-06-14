@@ -79,7 +79,7 @@ string that will get generated whenever the user updates the database by
 creating/moving/renaming/deleting a crate. This will be used in the
 crate: filter witch will itself be used to replace the way the crates
 are currently displayed (by generated a query just like in the new
-library redesign). <sub>*more on the filter later*</sub>
+library redesign).
 
 ### Crate Filter
 

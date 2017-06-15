@@ -87,6 +87,11 @@ can disable it by running this shell script as root:
       echo performance >$i/cpufreq/scaling_governor;
     done
 
+The CPU governor will be reset when rebooting your computer. To run this
+every time your computer boots, save the above shell script to
+/etc/rc.d/rc.local (this should work even on distributions using
+systemd).
+
 ### Disable chipcard2
 
 This utility polls for smart cards every few seconds, and when it does,

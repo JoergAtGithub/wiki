@@ -24,8 +24,9 @@ sources of effects that Mixxx can make use of.
 The interface is defined here:
 [EffectsBackend](https://github.com/mixxxdj/mixxx/blob/master/src/effects/effectsbackend.h).
 
-It's quite simple. A backend must simply support a method to get a list
-of supported effects, and a method that instantiates an effect.
+It's fairly simple. If you stand back and squint, a backend must support
+a method to get a list of available effects, and a method that
+instantiates one of those effects.
 
 Today, we only have the "native" backend, which is for built-in effects.
 These effects can make strong assumptions about Mixxx since they are

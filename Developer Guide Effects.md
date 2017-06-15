@@ -11,7 +11,7 @@ The system aims to accomplish the following:
     different effects into new creations and easily share them with
     others.
   - Provide a standard interface for controlling effects that the Mixxx
-    GUI can target.
+    GUI and DJ controllers can target.
 
 ## Effect Backends
 

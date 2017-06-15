@@ -3,7 +3,7 @@
 Mixxx has a modular effects system to allow the user to creatively
 customize the audio produced by Mixxx's engine.
 
-The system aims to accomplish two purposes:
+The system aims to accomplish the following:
 
   - Support the use of audio effects from multiple effect providers /
     backends.

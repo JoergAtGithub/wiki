@@ -91,7 +91,8 @@ The CPU governor will be reset when rebooting your computer. To run this
 every time your computer boots, save the above shell script to
 /etc/rc.d/rc.local and set that file to be executable `chmod +x
 /etc/rc.d/rc.local` (this should work even on distributions using
-systemd).
+systemd). Note that this will run through your battery's charge much
+faster.
 
 ### Disable chipcard2
 

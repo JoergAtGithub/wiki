@@ -2,7 +2,7 @@
 
 *by Anastasis Grammenos* (gramanas)
 
-<span class="underline">Email:</span> `anastasis.gramm2@gmail.com`
+<span class="underline">Email:</span> <anastasis.gramm2@gmail.com>
 
 [This](https://drive.google.com/file/d/0Bx6GQqCGx6HhdzJHaHVRdWt5aU0/view?usp=sharing)
 is the final proposal with witch I got accepted as a participant in GSoC

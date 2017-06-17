@@ -184,6 +184,31 @@ done so far:
 
 <span class="underline">**June 12 - June 19**</span>
 
+This week has been pretty slow. I got finals at the moment so I spend
+some of my time studying.
+
+After the merge of the recent master commits to the new library redesign
+a SearchQueryParser test was failing, so since I want to start working
+on the new filter for the nested crates I had to fix it.
+
+After some discussions we decided to change the filter functionality
+from what it used to be, in order to work better with the library query
+helper that generates the queries when the user selects something from
+the new library column. Used to be that `artist:""` for example would
+return all the library since it's just an empty filter. Now in order for
+the user to be able to narrow down to songs with NULL artist `artist:""`
+returns just that (Unknown artist).
+
+This was already implemented but in a slightly wrong way, so the test
+failed.
+
+The [pull request](https://github.com/daschuer/mixxx/pull/19) got merged
+and now I am ready to start working on the crates themselves.
+
+Next will I'll delve into the `CrateFeature` code. From what I
+understand a tree item model is already in use for the crates, it's just
+that there are no levels.
+
 <span class="underline">**June 19 - June 26**</span>
 
 <span class="underline">**June 26 - July 3**</span>

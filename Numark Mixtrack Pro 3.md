@@ -393,28 +393,27 @@ server](http://downloads.mixxx.org/builds/master/release/).
 
 If no effects are focused, the super knob of the effect rack is
 controlled by the touch strip. If an effect is focused, the touch strip
-control its meta knob. If any effects are added to InstantFX, they are
-turned on when the touch strip is activated, and off when it is not.
-While active, their meta knobs are controlled by the touch strip.
+controls the meta knob of the focused effect. If any effects are added
+to InstantFX, they are turned on when the touch strip is activated, and
+off when it is not. While active, the meta knobs associated with effects
+with InstantFX enabled are controlled by the touch strip.
 
 #### Sampler changes
 
-  - Move sampler volume to **Padmode + Browse knob** from **Padmode +
-    Beats knob**.
   - Load sample by selecting track and pressing **Sample X**
+  - Pressing sample button when sample is already playing goes back to
+    cue and plays
+  - Shift + sample to stop sample
   - Eject sample by **Tap + Sample X**
-
-#### Loop-move
-
-  - Move loop with **Shift + Pitch Bend +/-**
-  - Adjust loop move amount with **Shift + Beats knob**
 
 #### Beat jump
 
-  - Beat jump with **Tap + Pitch Bend +/-**
-  - Adjust beat jump size with **Tap + Beats knob**
+  - Adjust beatjump amount with **Shift + Beats knob**
+  - Beatjump with **Shift + Pitch Bend +/-**. If loop is activated, move
+    loop by beatjump amount instead.
 
 #### Others
 
   - Move slip mode to **Shift + Wheel**
-  - Move beat grid alignment to **Padmode + Beats knob**
+  - Move quantize toggle to **Shift + PFL** (single press)
+  - Move beat grid alignment to **Tap + Beats knob**

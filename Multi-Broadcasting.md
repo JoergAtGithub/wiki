@@ -192,6 +192,20 @@ I got late with UI, so next week's plan is:
 
 #### Week 3: June 12 - June 16
 
+I had progress on the UI but there was still a lot of work left to do to
+make sure everything is functioning properly. Instead of implementing
+the new Broadcasting Profiles UI, Daniel and I agreed on a slimmed-down
+schedule for the remaining of phase 1. The plan is to focus on the XML
+profile subsystem to have a good foundation for multiple broadcasting
+outputs (a.k.a multi-broadcasting, each profile being a connection) for
+phase 2, with proper instance reference passing and unit tests. See
+[this Pull Request](https://github.com/mixxxdj/mixxx/pull/1283).
+
+The UI will be left untouched, and the work already done is kept
+separately for later re-use.
+
+#### Week 4: June 19 - June 23
+
 *Work in Progress*
 
 -----

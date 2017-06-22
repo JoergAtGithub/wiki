@@ -104,6 +104,39 @@ and celebrate with a fine music mix.
 
 ### Weekly reports
 
-##### week 1-2
+##### week 1-3
 
-WIP
+A dataset for evaluating the work on microphone signal processing chain
+was collected and can be found here:
+[dataset](https://drive.google.com/open?id=0B1dik9fZbclrNHBsTVZFVUFRNFk).
+This dataset is a set of recordings for two speakers for two different
+types of microphones for different usecases. More detailed info can be
+found in the readme file inside the dataset folder.
+
+In order to better understand mixxx engine and mixxx native effects, a
+[utility effect](https://github.com/mixxxdj/mixxx/pull/1284) was
+developed and an accompanying article in the wiki was started
+demonstrating a practical way on how an native effect can be developed.
+[Mixxx Effect Development
+Example](https://mixxx.org/wiki/doku.php/effect_development_example)
+
+Also a minimal framework have been developed in python for prototyping
+and tuning audio dsp algorithms in python with numpy and other existing
+python packages such as adaptfilt and speexdsp-python. The pull request
+can be found [here](https://github.com/mixxxdj/mixxx/pull/1290)
+
+The framework supports both file input/output and realtime audio
+processing. For the realtime audio capabilities it requires sounddevice
+which requires portaudio.
+
+Currently I am porting CAPS [noise
+gate](http://quitte.de/dsp/caps.html#Noisegate) algorithm as a native
+mixxx effect in order to gain more experience with mixxx engine.
+
+##### week 4-5
+
+Plan for the next two weeks is to have the noise gate implemented, and
+have decided on and implemented a microphone effect rack (help needed
+here) that will later be the place in the skin for setting up microphone
+effects, and other microphone related settings and possibly be
+selectively routed to the main effects rack.

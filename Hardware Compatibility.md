@@ -548,9 +548,8 @@ Mixxx can work with any microphone that you can plug into a [sound
 card](#sound-cards) that your operating system supports. To preview the
 music you will play next in headphones and have microphone input, a
 single sound card with 4 output channels and microphone inputs such as
-the [Focusrite
-Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)
-is recommended. These types sound cards are typically advertised for
+the [Roland Rubix 24](https://www.roland.com/us/products/rubix24/) is
+recommended. These types sound cards are typically advertised for
 recording music, but they can work just as well for broadcasting. You do
 not need an external mixer unless you have more microphones than your
 sound card has microphone inputs. The simpler your signal chain is, the

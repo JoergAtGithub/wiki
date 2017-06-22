@@ -212,5 +212,5 @@ separately for later re-use.
 
 ### Useful info about the student's schedule
 
-  - School project from June 22th to June 30th
+  - School project from June 26th to July 2nd
   - School Year end: July 12th 2017

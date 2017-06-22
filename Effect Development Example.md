@@ -6,9 +6,8 @@ This is a practical guide of how to develop a simple native effect for
 mixxx effects framework. In order to demonstrate actual steps needed, a
 simple utility effect is used as an example effect.
 
-More analytical info on topic can be found here: [Introduction to the
-Mixxx Effects
-Framework](https://mixxx.org/wiki/doku.php/developer_guide_effects).
+More analytical info on topic can be found in the [Effects section of
+the Developer Guide](Developer%20Guide%20Effects).
 
 ## Utility Effect
 

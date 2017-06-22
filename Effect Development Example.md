@@ -53,3 +53,12 @@ in a similar interleaved way with the processed samples.
 This Utility effect implements also a simple ramping function, by adding
 a controllable ramp envelope when effect state is mutually changed from
 muted to unmuted and from enabled to disabled.
+
+In order for the native effect backend be aware of the new effect, it
+should be included and registered in
+src/effects/native/nativebackend.cpp and
+src/test/nativeeffects\_test.cpp
+
+Finally in order for scons to be able to correctly build mixxx with the
+newly created effect files, new files should be added in
+build/depends.py

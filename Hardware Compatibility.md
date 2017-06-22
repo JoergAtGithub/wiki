@@ -556,12 +556,12 @@ sound card has microphone inputs. The simpler your signal chain is, the
 better it will sound, so using an external mixer is not recommended
 unless you have a specific reason to need one.
 
-USB microphones are not recommended on Windows. These devices have their
-own sound card built in. Every sound card runs on its own clock and no
-two sound cards' clocks will stay synchronized. When using
-unsynchronized clocks, it is likely that there will be glitches in the
-audio. Mixxx is able to compensate for the differences between multiple
-sound cards' clocks, but ASIO, the [recommended sound
+USB microphones are not recommended, especially on Windows. These
+devices have their own sound card built in. Every sound card runs on its
+own clock and no two sound cards' clocks will stay synchronized. When
+using unsynchronized clocks, it is likely that there will be glitches in
+the audio. Mixxx is able to compensate for the differences between
+multiple sound cards' clocks, but ASIO, the [recommended sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
 on Windows, can only work with one sound card at a time. It is possible
 to use [ASIO4ALL](http://asio4all.com/) to use multiple sound cards at a

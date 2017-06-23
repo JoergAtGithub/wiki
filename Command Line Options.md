@@ -18,7 +18,7 @@ You can load supported sound files directly into the virtual decks by specifying
 |''-''''-safeMode''|Enables safe-mode. Disables OpenGL waveforms, and spinning vinyl widgets. Try this option if Mixxx is crashing on startup.| |
 |''-''''-locale LOCALE ''|Use a custom locale for loading translations (e.g 'fr')|main.cpp, line |
 |''-f'', ''-''''-fullScreen''|Causes Mixxx to start in full-screen mode|main.cpp, line |
-|''-f'', ''-''''-logLevel LEVEL''|Sets the verbosity of command line logging
+|''-''''-logLevel LEVEL''|Sets the verbosity of command line logging
   critical - Critical/Fatal only
   warning  - Above + Warnings
   info     - Above + Informational messages

@@ -25,6 +25,7 @@ You can load supported sound files directly into the virtual decks by specifying
   debug    - Above + Debug/Developer messages
   trace    - Above + Profiling messages
 | |
+|''-''''-debugAssertBreak''|Breaks (SIGINT) Mixxx, if a DEBUG_ASSERT evaluates to false. Under a debugger you can continue afterwards.|
 |''-h'', ''-''''-help''|Displays all current command line options|main.cpp, line |
 
 ===== 2.0 =====

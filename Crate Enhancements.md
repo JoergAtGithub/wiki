@@ -10,7 +10,8 @@ is the final proposal with witch I got accepted as a participant in GSoC
 
 **<span class="underline">Current State</span>**
 
-  - Currently planing for the Nested Crates feature.
+  - Currently coding the Nested Crates feature. ([More
+    details](https://gramanas.github.io/website/NestedCrates.html))
 
 ## Crate Filter
 
@@ -210,6 +211,23 @@ understand a tree item model is already in use for the crates, it's just
 that there are no levels.
 
 <span class="underline">**June 19 - June 26**</span>
+
+I started with modifying the database and adding the aforementioned
+tables for the crate hierarchy.
+
+Since everything is at a testing phase for now I have them embedded in
+the code as crate storage functions that create the tables and insert
+the data to them.
+
+The closure table works really fine, and I've been able to generate
+paths for the nested crates as well.
+
+The next step for the database is to implement ways to check that the
+hierarchy follows the rules. (No same name children etc...)
+
+Now my goal is to use the paths to create the tree. For that I've
+created a `CrateTreeModel` that derives from `TreeItemModel` and will
+handle the drawing of the tree just like `mixxxlibraryfeature`.
 
 <span class="underline">**June 26 - July 3**</span>
 

@@ -24,8 +24,8 @@ firmware for Vestax devices are hosted on [Serato's
 website](https://support.serato.com/hc/en-us/articles/203593924-Vestax-Hardware-Drivers-and-Firmware).
 If your VCI-400's sound card does not appear as an available device
 using Linux, use the firmware updater on a computer running Windows or
-Mac OS X. This will only need to be done once and then it will continue
-to work with Linux.
+Mac OS X. This will only need to be done once and then the controller
+will continue to work with Linux.
 
 ## New Mapping (2.0+)
 

@@ -66,26 +66,30 @@ pressed.
 pressed. **{Functions} in braces are executed if a shift button of the
 other deck is pressed.** Changes after the previous version are in bold.
 
-1.  Set previous effect chain to the EffectUnit, **or if Effect2 is
-    selected *Set previous effect to it*** \[Select EffectUnit1/2\]
-    **{Select Effect1}**
-2.  Set next effect chain to the EffectUnit, **or if Effect2 is selected
-    *Set next effect to it*** \[Select EffectUnit3/4\] **{Select
-    Effect2\[3\]}**
-3.  Parameter1 of Effect1**/2** of the EffectUnit **\[Set the link\[4\]
-    to super knob\]\[5\]**
-4.  Parameter2 of Effect1**/2** of the EffectUnit **\[Set the link to
-    super knob\]**
-5.  Parameter3 of Effect1**/2** of the EffectUnit **\[Set the link to
-    super knob\]**
-6.  Wet/dry mix of the EffectUnit, **or *Super knob*\[6\] if any
-    parameters are linked to it**
+1.  Set previous effect chain to the EffectUnit, **or if EffectSlotN is
+    focused *Set previous effect to it*** \[Select EffectUnit1/2\]
+    **{Clear the EffectUnit/Slot}**
+2.  Set next effect chain to the EffectUnit, **or if EffectSlotN is
+    focused *Set next effect to it*** \[Select EffectUnit3/4\] **{Change
+    the focus}**
+3.  **Meta knob of the EffectSlot1 \[with enable/disabling\], or if
+    EffectSlotN is focused *Parameter1 of it \[Set the link to meta
+    knob\]*\[3\]**
+4.  **Meta knob of the EffectSlot2 \[with enable/disabling\], or if
+    EffectSlotN is focused *Parameter2 of it \[Set the link to super
+    knob\]***
+5.  **Meta knob of the EffectSlot3 \[with enable/disabling\], or if
+    EffectSlotN is focused *Parameter3 of it \[Set the link to super
+    knob\]***
+6.  **Super knob of the EffectUnit \[with enable/disabling\], or if
+    EffectSlotN is focused *Parameter4 of it \[Set the link to super
+    knob\]***
 7.  EQ high
 8.  EQ mid
 9.  EQ low
 10. **Pitch (up and down to 3 semitones continuously, or in keylock mode
     *discretely*)**
-11. Filter (high pass only)\[7\]
+11. Filter (high pass only)\[4\]
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -104,7 +108,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 26. Keylock mode **\[Zoom in waveform\]**
 27. Loop in the default length (4 beats at startup) \[Reloop\], or in
     loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[8\] or in loop
+28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
     *Halve **\[Move it backward by\]** the loop length*
 29. Double **\[Jump forward by\]** the default length, or in loop
     *Double **\[Move it forward by\]** the loop length*
@@ -117,14 +121,15 @@ other deck is pressed.** Changes after the previous version are in bold.
     it)
 36. Enable EffectUnit1 \[EffectUnit3\]
 37. Enable EffectUnit2 \[EffectUnit4\]
-38. Up: previous track and scroll, Down: next track and scroll, Left:
-    load to left, Right: load to right, **Push: maximize library**
+38. Up: previous **item** and scroll, Down: next **item** and scroll,
+    Left: load to left, Right: load to right, **Push: next pane \[choose
+    item\]**
 39. Channel select
 
 [Vestax
-VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
-[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2016-12-1, still compatible with 2.0)\[9\]
+VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
+[Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
+(2017-6-1, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -135,23 +140,17 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res
 2.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
 
-3.  use Deere skin to show the state
-
-4.  use Deere skin to show the state
-
-5.  left-right inverse -\> right inverse -\> left inverse -\> full
+3.  left-right inverse -\> right inverse -\> left inverse -\> full
     inverse -\> none -\> full -\> left -\> right -\> left-right
 
-6.  use Deere skin to show the state
-
-7.  see [the
+4.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
     or use [Controller
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-8.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
+5.  no LED: default length = 4, LED29: default length \> 4, LED28: 1/4 ≤
     default length \< 4, LED28 & LED29: default length \< 1/4
 
-9.  see [Controller Mapping File
+6.  see [Controller Mapping File
     Locations](controller_mapping_file_locations) for use

@@ -112,9 +112,9 @@ This path is actually quite useful.
 It will look like this for the examples above:
 
 `/Metal`  
+`/Metal/Alternative`  
 `/Metal/Progressive`  
 `/Metal/Progressive/Instrumental`  
-`/Metal/Alternative`  
 `/Rock`  
 `/Rock/Instrumental`  
 The text the user has inserted after `crate:` filter will get matched to
@@ -145,6 +145,23 @@ clicking a crate to something else that will only list the tracks under
 it's argument exactly to the path, so `/Metal` crate gets returned but
 not `/Metal/Progressive` or `/SomeOtherCrate/Metal`
 
+#### Implementation
+
+I think a nice way to create the tree is to use the paths of each crate.
+
+Using the closure table I can get all the ancestors of a crate sorted by
+depth. Then it's just a matter of iterating through them and appenind
+them to the end of a string.
+
+Next the `TreeItemModel` will read the paths table and for each crate if
+it has a previous crate in it's path insert it there as a child, else
+insert it at the top.
+
+You can be sure that every time you add a child the parent is already
+there, because this whole think is sorted alphabetically (Just like the
+example with the paths above - In order for `/Metal/Alternative` to be
+added it must come after `/Metal`).
+
 # Timeline
 
 <span class="underline">**May 15 - June 5**</span>
@@ -163,7 +180,17 @@ not `/Metal/Progressive` or `/SomeOtherCrate/Metal`
   - Get ready for the first evaluation
   - Start modifying the database adding triggers and the new table
 
-<span class="underline">\*\*June 27 - \*\*</span>
+<span class="underline">**June 27 - July 20**</span>
+
+  - Start work on the tree model
+  - Add lmitations to the database
+  - Start tweaking the filter and the way crates are selected
+
+<span class="underline">**July 20 - July 28**</span>
+
+  - 2nd evaluation
+
+<span class="underline">\*\*July 29 - \*\*</span>
 
   - *TBA*
 

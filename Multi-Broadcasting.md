@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: phase 1 coding
+**Current State**: phase 2 planning
 
 ### Weekly schedule
 

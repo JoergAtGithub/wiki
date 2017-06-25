@@ -76,13 +76,13 @@ other deck is pressed.** Changes after the previous version are in bold.
     EffectSlotN is focused *Parameter1 of it \[Set the link to meta
     knob\]*\[3\]**
 4.  **Meta knob of the EffectSlot2 \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter2 of it \[Set the link to super
+    EffectSlotN is focused *Parameter2 of it \[Set the link to meta
     knob\]***
 5.  **Meta knob of the EffectSlot3 \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter3 of it \[Set the link to super
+    EffectSlotN is focused *Parameter3 of it \[Set the link to meta
     knob\]***
 6.  **Super knob of the EffectUnit \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter4 of it \[Set the link to super
+    EffectSlotN is focused *Parameter4 of it \[Set the link to meta
     knob\]***
 7.  EQ high
 8.  EQ mid

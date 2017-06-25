@@ -16,7 +16,7 @@ by Stéphane Lepin
 
   - Refactor the BroadcastSettings class as a "proxy" between
     DlgPrefBroadcast and instances of BroadcastProfile
-  - Refactor the Live Broadcasting preferences panel
+  - ~~Refactor the Live Broadcasting preferences panel~~ (obsolete)
 
 ##### June 12 - June 16
 
@@ -41,13 +41,16 @@ implemented : broadcasting profiles and multiple broadcasting outputs.
 These features will be implemented in two parts, matching the GSoC
 phases schedule.
 
-### Phase 1: Broadcasting profiles
+### Phase 1: Broadcasting profiles subsystem
 
 Broadcasting profiles allow management of several sets of server
 settings/credentials and encoder settings. These will be managed through
 dedicated controls in Mixxx's existing Live Broadcasting preferences UI.
 Profiles have the standard Icecast/Shoutcast and encoder settings
-currently available in the Live Broadcasting panel.
+currently available in the Live Broadcasting panel. The goal of Phase 1
+is to replace the existing Live Broadcasting settings subsystem (in
+mixxx.cfg) with a new XML subsystem of profiles within the existing UI.
+The new UI along with multi-broadcasting is the goal of Phase 2.
 
 #### Technical details
 
@@ -71,14 +74,7 @@ currently available in the Live Broadcasting panel.
 * Move all properties to BroadcastProfile
 * Keep a QList of broadcast profiles
 * Add a method to fill the QList of broadcast profiles by listing the contents of the "broadcast_profiles" settings subdirectory and call this method in the constructor
-* Add a "CurrentProfile" config key to mixxx.cfg through BroadcastSettings. A value for this key is the name of a file under "broadcast_profiles/", without the .bcp.xml extension
-* Add a setCurrentProfile() method with an instance of BroadcastProfile as its sole parameter. Calling this will also set the value of CurrentProfile in mixxx.cfg
-* Add a getCurrentProfile() method which returns an instance of BroadcastProfile (typically called when streaming starts).
-* The Settings UI (DlgPrefBroadcast class) must be refactored to add control over and use of broadcasting profiles
 ```
-
-**TODO:** Implement password encryption (see
-<https://bugs.launchpad.net/mixxx/+bug/1642765>)
 
 ##### UML diagrams
 
@@ -98,15 +94,6 @@ refactored existing UI.
 
 [[/media/multi-broadcasting.png|]]
 
-*New Live Broadcasting panel UI*
-
------
-
-[[/media/wiki/edit_connection.png|]]
-
-*The current Live Broadcasting settings UI will be moved to a dedicated
-dialog, instanciable per connection*
-
 #### Technical details
 
   - The current libshout logic in EngineBroadcast must be separated from
@@ -121,11 +108,9 @@ dialog, instanciable per connection*
     * Stop output
     * Slot: Push uncompressed audio samples to output
 * The EngineBroadcast sidechain filter must be refactored to only act as a "broadcast manager" that receives audio samples and pushes them to output instances
-* The settings code must be updated to handle several outputs
-* A new Live Broadcasting settings UI must be implemented (see UI mockup above)
-* The existing Live Broadcasting settings UI must be moved to an instanciable dialog spawned by an item's "Edit" button in the new Outputs list UI.
+* The Live Broadcasting settings UI must be updated (see UI mockup above)
 * If time allows it:
-* Add "server profiles" to allow reuse of server credentials (e.g. : multi-bitrate/multi-codec streaming to the same server)
+* Implement password encryption (see [[https://bugs.launchpad.net/mixxx/+bug/1642765]])
 * Add AAC support for streaming 
     * Encoder: maybe possible with FFmpeg's new built-in aac encoder
     * Libshout support: See [[https://bugs.launchpad.net/mixxx/+bug/726991]]
@@ -133,10 +118,10 @@ dialog, instanciable per connection*
 
 <span class="underline">Possible evolutions</span>:
 
-  - Make the broadcasting code more generic and not specific to
-    libshout.
   - Implement Shoutcast 2 support
   - Add an Opus streaming encoder
+  - Make the broadcasting code more generic and not specific to
+    libshout.
 
 -----
 

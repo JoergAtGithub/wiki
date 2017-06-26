@@ -384,7 +384,8 @@ server](http://downloads.mixxx.org/builds/master/release/).
 
 #### Effects
 
-  - Focus effect with **Tap + FX button**
+  - Focus effect with **FX button**
+  - Toggle effect with **Tap + FX button**
   - Move mapping of InstantFX to **Padmode + FX button**
   - **Shift + High** controls parameter 1 of focused effect
   - **Shift + Mid** controls parameter 2 of focused effect

@@ -36,16 +36,19 @@ weekly reports for this.**
   - Project planning and design updates for Phase 2
   - Libshout streaming logic separate from EngineBroadcast to new class
     ShoutOutput
-  - Add QList\<ShoutOutput\> instance list
+  - Add QList\<ShoutOutput\> instance list to EngineBroadcast
 
 ##### July 3 - July 7
 
-  - Implement a way to keep BroadcastSettings' profile list in sync with
-    EngineBroadcast's instance list
+  - Keep BroadcastSettings' profile list in sync with EngineBroadcast's
+    instance list
+  - Only on "Apply" button click on Live Broadcasting preferences
+  - Active connections shouldn't be restarted
   - Begin work on settings UI refactor
 
 ##### July 10 - July 14
 
+  - Continue work on settings UI refactor
   - Implement password encryption in BroadcastProfile
 
 ##### July 17 - July 21

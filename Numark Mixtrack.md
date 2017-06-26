@@ -173,4 +173,5 @@ The options is set in the javascript file on the section `root.options`.
 
 Select, when a loop is set by number of beats ('loop 4'), if the loop
 starts from the current position (false) or ends at the current position
-(true). Smart means set start when paused o set end when playing.
+(true). Smart means set start when paused o set end when playing. NOTE:
+This function work in auto loop mode only.

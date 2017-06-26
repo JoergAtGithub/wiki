@@ -48,6 +48,7 @@ weekly reports for this.**
   - Only on "Apply" button click on Live Broadcasting preferences
   - Active connections shouldn't be restarted
   - Begin work on settings UI refactor
+  - BroadcastSettings: add "rename profile" method
 
 ##### July 17 - July 21
 

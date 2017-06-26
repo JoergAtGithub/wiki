@@ -116,3 +116,45 @@ worse, produce a "blank".
     press the "Load A" or "Load B" button, instead of the corresponding
     track's "cue" button. They are very near, the error is easy and
     produces the most dire effect in a party: an awful blank \!
+
+# Virtual DJ-like mapping
+
+``` 
+ - Usb cable
+- Channel Treble
+- Channel Mid
+- Channel Bass
+- Cue: send the corresponding track to the headphones
+- Cue Gain: adjust audio level of cue channel
+- Cue Mix: adjust mix between Cue and Audio out in the headphones.
+- Browser Knob: help browse through your collection without using a mouse or trackpad if press change to file browse
+- Back: change to folder browse or open directories
+- Load A/Load B: Load the highlighted track to the corresponding Deck
+- Channel faders: control the volume of each channel
+- Master fader: adjust the output volume of mixxx
+- Crossfader
+- Jog Wheels (see below for details)
+- Scratch mode (see below for details)
+- Play/Pause
+- Stutter: press while music is playing to jump back to the cue point or pause point if not playing work like play button
+- CUE: plays from the cue point if hold. When released, jumps back to the cue point
+- Sync: automatically matches the corresponding Deck's tempo to the other Deck's tempo 
+- Pitch Faders
+- Pitch Bend: when pressed, the pitch will adjust -/+4%, when released, the tempo will set back to the right one
+- Keylock
+- Delete: delete hotcue's for Deck A
+- Delete: delete hotcue's for Deck B
+- Hotcue: control hotcue's 1, 2 and 3
+- Effect On/Off: turn on/off the flanger effect
+- Select: select effect and if press change the output of effect
+- Control: control the filter and gain
+- Loop Mode: press to alternate between manual or autolooping
+   * Manual Looping
+     * In: set loop start
+     * Out: set loop end
+     * Reloop: exit or reenter loop 
+   * Auto Looping
+     * 1/2 X: devide loop length by 2
+     * 1 Bar: exit or reenter loop
+     * 2 X: multiply loop length by 2
+```

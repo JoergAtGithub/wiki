@@ -178,4 +178,4 @@ function work in autolooping mode only*.
 
 ## Known problems
 
-  - The effects cannot be mapped like Virtual DJ.
+  - The effects cannot be mapped completely like Virtual DJ.

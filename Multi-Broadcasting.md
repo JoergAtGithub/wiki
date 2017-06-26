@@ -33,12 +33,15 @@ weekly reports for this.**
 
 ##### June 26 - June 30
 
-  - Project planning and design updates for Phase 2
+  - School project
+
+##### July 3 - July 7
+
   - Libshout streaming logic separate from EngineBroadcast to new class
     ShoutOutput
   - Add QList\<ShoutOutput\> instance list to EngineBroadcast
 
-##### July 3 - July 7
+##### July 10 - July 14
 
   - Keep BroadcastSettings' profile list in sync with EngineBroadcast's
     instance list
@@ -46,14 +49,10 @@ weekly reports for this.**
   - Active connections shouldn't be restarted
   - Begin work on settings UI refactor
 
-##### July 10 - July 14
+##### July 17 - July 21
 
   - Continue work on settings UI refactor
   - Implement password encryption in BroadcastProfile
-
-##### July 17 - July 21
-
-  - TBD
 
 -----
 

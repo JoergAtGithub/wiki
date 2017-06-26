@@ -115,6 +115,8 @@ and [JS
 file](https://raw.githubusercontent.com/TraITech/mixxx/numark-mixtrack-virtualdj/res/controllers/Numark-Mixtrack-VirtualDJ-scripts.js)
 are available on GitHub.
 
+[[/media/numarkmixtrack_tech.png|]]
+
 1.  USB cable
 2.  Channel Treble
 3.  Channel Mid

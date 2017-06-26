@@ -10,23 +10,13 @@ Pro](Numark%20Mixtrack%20Pro) but without a built-in sound card. It has
 been discontinued and succeeded by the [Numark Mixtrack
 3](Numark%20Mixtrack%20Pro%203).
 
-# Numark Mixtrack Support in Mixxx
+# Default Mixxx mapping
 
-## What is the state of the support in Mixxx ?
-
-As of Mixxx 1.8.2, the Numark Mixtrack is fully supported. There are two
-known mappings; one included, and one community-supported. The
-community-made controller mapping and backing script is regularly
-updated to take the remarks and improvements into account. As an
-example, the "stutter" functionality was implemented in the 1.0b
-mapping, which can be found in the [corresponding forum
-thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=1808&start=30#p10182).
-
-## Current mapping (1.0b)
+This mapping is included in Mixxx as of version 1.11.
 
 [[/media/numarkmixtrack_tech.png|]]
 
-1.  Usb cable
+1.  USB cable
 2.  Channel Treble
 3.  Channel Mid
 4.  Channel Bass
@@ -119,36 +109,50 @@ worse, produce a "blank".
 
 # Virtual DJ-like mapping
 
+This is an alternative mapping designed to work like VirtualDJ. The [XML
+file](https://raw.githubusercontent.com/TraITech/mixxx/numark-mixtrack-virtualdj/res/controllers/Numark%20Mixtrack%20VirtualDJ.midi.xml)
+and [JS
+file](https://raw.githubusercontent.com/TraITech/mixxx/numark-mixtrack-virtualdj/res/controllers/Numark-Mixtrack-VirtualDJ-scripts.js)
+are available on GitHub.
+
+1.  USB cable
+2.  Channel Treble
+3.  Channel Mid
+4.  Channel Bass
+5.  Cue: send the corresponding track to the headphones
+6.  Cue Gain: adjust audio level of cue channel
+7.  Cue Mix: adjust mix between Cue and Audio out in the headphones.
+8.  Browser Knob: help browse through your collection without using a
+    mouse or trackpad if press change to file browse
+9.  Back: change to folder browse or open directories
+10. Load A/Load B: Load the highlighted track to the corresponding Deck
+11. Channel faders: control the volume of each channel
+12. Master fader: adjust the output volume of mixxx
+13. Crossfader
+14. Jog Wheels (see below for details)
+15. Scratch mode (see below for details)
+16. Play/Pause
+17. Stutter: press while music is playing to jump back to the cue point
+    or pause point if not playing work like play button
+18. CUE: plays from the cue point if hold. When released, jumps back to
+    the cue point
+19. Sync: automatically matches the corresponding Deck's tempo to the
+    other Deck's tempo 
+20. Pitch Faders
+21. Pitch Bend: when pressed, the pitch will adjust -/+4%, when
+    released, the tempo will set back to the right one
+22. Keylock
+23. Delete: delete hotcue's for Deck A
+24. Delete: delete hotcue's for Deck B
+25. Hotcue: control hotcue's 1, 2 and 3
+26. Effect On/Off: turn on/off the flanger effect
+27. Select: select effect and if press change the output of effect
+28. Control: control the filter and gain
+29. Loop Mode: press to alternate between manual or autolooping
+
+<!-- end list -->
+
 ``` 
- - Usb cable
-- Channel Treble
-- Channel Mid
-- Channel Bass
-- Cue: send the corresponding track to the headphones
-- Cue Gain: adjust audio level of cue channel
-- Cue Mix: adjust mix between Cue and Audio out in the headphones.
-- Browser Knob: help browse through your collection without using a mouse or trackpad if press change to file browse
-- Back: change to folder browse or open directories
-- Load A/Load B: Load the highlighted track to the corresponding Deck
-- Channel faders: control the volume of each channel
-- Master fader: adjust the output volume of mixxx
-- Crossfader
-- Jog Wheels (see below for details)
-- Scratch mode (see below for details)
-- Play/Pause
-- Stutter: press while music is playing to jump back to the cue point or pause point if not playing work like play button
-- CUE: plays from the cue point if hold. When released, jumps back to the cue point
-- Sync: automatically matches the corresponding Deck's tempo to the other Deck's tempo 
-- Pitch Faders
-- Pitch Bend: when pressed, the pitch will adjust -/+4%, when released, the tempo will set back to the right one
-- Keylock
-- Delete: delete hotcue's for Deck A
-- Delete: delete hotcue's for Deck B
-- Hotcue: control hotcue's 1, 2 and 3
-- Effect On/Off: turn on/off the flanger effect
-- Select: select effect and if press change the output of effect
-- Control: control the filter and gain
-- Loop Mode: press to alternate between manual or autolooping
    * Manual Looping
      * In: set loop start
      * Out: set loop end

@@ -165,7 +165,9 @@ are available on GitHub.
      * 2 X: multiply loop length by 2
 ```
 
-### The Options
+### Options
+
+The options is set in the javascript file on the section `root.options`.
 
 #### loopBackMode
 

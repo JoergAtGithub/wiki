@@ -27,6 +27,9 @@ by Stéphane Lepin
   - **First milestone: have this feature mergeable**
   - Project planning for Phase 2
 
+**Work on Phase 1 is over. Schedule may differ from actual progress, see
+weekly reports for this.**
+
 #### Phase 2: Multi-broadcasting
 
 To be defined.
@@ -191,7 +194,16 @@ separately for later re-use.
 
 #### Week 4: June 19 - June 23
 
-*Work in Progress*
+Work went as planned for this week: unit tests for BroadcastProfile were
+written, pointers to BroadcastProfile instances are now QSharedPointers,
+turned BroadcastSettings into a Qt object to be able to implement basic
+read-only model support and profile name synchronization with signals &
+slots between BroadcastSettings' hashmap and the instances' name
+attribute. getCurrentProfile and setCurrentProfile were deleted because
+no longer useful, and were instead replaced with a more future-proof
+call to profileAt(int) that returns a profile based on its list index.
+Seems like work on Phase 1 is over. Further additions will come during
+phase 2, where those will be testable.
 
 -----
 

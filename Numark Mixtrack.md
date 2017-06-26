@@ -167,7 +167,8 @@ are available on GitHub.
 
 ### Options
 
-The options is set in the javascript file on the section `root.options`.
+The options is set in the javascript file on the property
+`root.options`.
 
 #### loopBackMode
 

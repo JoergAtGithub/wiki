@@ -22,17 +22,35 @@ by Stéphane Lepin
 
   - Testing and bug hunting
 
-##### June 19 - June 28
+##### June 19 - June 23
 
   - **First milestone: have this feature mergeable**
-  - Project planning for Phase 2
 
 **Work on Phase 1 is over. Schedule may differ from actual progress, see
 weekly reports for this.**
 
 #### Phase 2: Multi-broadcasting
 
-To be defined.
+##### June 26 - June 30
+
+  - Project planning and design updates for Phase 2
+  - Libshout streaming logic separate from EngineBroadcast to new class
+    ShoutOutput
+  - Add QList\<ShoutOutput\> instance list
+
+##### July 3 - July 7
+
+  - Implement a way to keep BroadcastSettings' profile list in sync with
+    EngineBroadcast's instance list
+  - Begin work on settings UI refactor
+
+##### July 10 - July 14
+
+  - Implement password encryption in BroadcastProfile
+
+##### July 17 - July 21
+
+  - TBD
 
 -----
 

@@ -4,6 +4,18 @@ As we develop new features and fix bugs for Mixxx, we need feedback from
 users. Testing the latest developments is a great way to contribute to
 Mixxx.
 
+## Backup settings and database
+
+Before switching from a stable release of Mixxx to a development
+version, it is recommended to make a backup copy of your settings and
+library database. We try to ensure that upgrading to new versions does
+not interfere with settings from older versions, but we might not catch
+every potential issue immediately. You can make a backup by copying the
+whole folder [where the mixxx.log file
+is](Finding%20the%20mixxx.log%20file). If you want to switch back to a
+stable release of Mixxx after testing a development version, you can
+copy your backed up settings folder to its original location.
+
 ## Master builds
 
 Our build server regularly makes new Mixxx installers from our master

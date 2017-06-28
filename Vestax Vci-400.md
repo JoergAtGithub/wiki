@@ -27,10 +27,10 @@ using Linux, use the firmware updater on a computer running Windows or
 Mac OS X. This will only need to be done once and then the controller
 will continue to work with Linux.
 
-Note that the VCI-400 and VCI-400 Special Edition are incompatible.
+Note that the VCI-400 and VCI-400 Ean Golden Edition are incompatible.
 Their firmwares use different MIDI messages to communicate with the
 computer. Unfortunately, [it is not possible to switch between the
-VCI-400 and VCI-400 SE
+VCI-400 and VCI-400 EGE
 firmware](http://forum.djtechtools.com/showthread.php?t=64071&p=572022&viewfull=1#post572022).
 
 ## New Mapping (2.0+)

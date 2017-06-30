@@ -1,7 +1,8 @@
 # Adjusting Audio Latency
 
-Being able to lower the Latency in Mixxx's Sound Hardware Preferences as
-much as possible makes a huge difference in its responsiveness. However,
+The smaller the Audio Buffer you select in Mixxx's Sound Hardware
+Preferences, the faster you will hear changes when you manipulate
+controls in Mixxx, on a controller, or with timecode vinyl. However,
 lowering it beyond what your system can handle will cause audible
 glitches (pops). Here are some tips to configure your system to handle
 lower latency audio:

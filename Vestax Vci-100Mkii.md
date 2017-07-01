@@ -106,12 +106,12 @@ other deck is pressed.** Changes after the previous version are in bold.
 24. Sync mode **\[Sync key harmonically with another deck\]**
 25. Quantize mode **\[Zoom out waveform\]**
 26. Keylock mode **\[Zoom in waveform\]**
-27. Loop in the default length (4 beats at startup) \[Reloop\], or in
-    loop *Exit the loop \[Loop out\]*
-28. Halve **\[Jump backward by\]** the default length,\[5\] or in loop
-    *Halve **\[Move it backward by\]** the loop length*
-29. Double **\[Jump forward by\]** the default length, or in loop
-    *Double **\[Move it forward by\]** the loop length*
+27. Loop in **default loop size** \[Reloop\], or in loop *Exit the loop
+    \[Loop out\]*
+28. **Halve default loop size \[Jump backward\],\[5\] or in loop *Halve
+    the loop \[Move it backward by jump size\]* {Halve jump size}**
+29. **Double default loop size \[Jump forward\], or in loop *Double the
+    loop \[Move it forward by jump size\]* {Double jump size}**
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2
 32. Activate \[Clear\] hotcue3
@@ -129,7 +129,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-6-1, not compatible with 2.0)\[6\]
+(2017-7-1, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

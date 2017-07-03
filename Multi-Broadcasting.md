@@ -226,6 +226,14 @@ call to profileAt(int) that returns a profile based on its list index.
 Seems like work on Phase 1 is over. Further additions will come during
 phase 2, where those will be testable.
 
+#### Week 5: June 26 - June 30
+
+School project
+
+#### Week 6: July 3 - July 7
+
+*Work in progress*
+
 -----
 
 ### Useful info about the student's schedule

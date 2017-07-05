@@ -206,9 +206,12 @@ done so far:
     in master.
   - [Crate filter tests](https://github.com/mixxxdj/mixxx/pull/1277) as
     well.
-  - There was some issues with the filters with the new library redesign
-    and there is an open PR at [daschuer's
-    repo](https://github.com/daschuer/mixxx/pull/19) to fix this.
+  - There were some issues with the filters with the new library
+    redesign and here is
+
+<!-- end list -->
+
+    the now merged PR at [[https://github.com/daschuer/mixxx/pull/19|daschuer's repo]] to fix them.
 
 <span class="underline">**June 12 - June 19**</span>
 
@@ -257,6 +260,16 @@ created a `CrateTreeModel` that derives from `TreeItemModel` and will
 handle the drawing of the tree just like `mixxxlibraryfeature`.
 
 <span class="underline">**June 26 - July 3**</span>
+
+I got the tree structure working with my dummy database. So I have the
+DB mockup and the UI mockup. The problem is that this is untestable to
+everyone else but me.
+
+I'll work on solving that by providing functions to insert child crate
+and such. This is far from the final product, in witch you can freely
+move crates to other crates to change their parents etc.
+
+I hope by the end of the following week I'll have a work in progress PR.
 
 <span class="underline">**July 3 - July 10**</span>
 

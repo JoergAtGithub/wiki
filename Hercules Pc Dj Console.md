@@ -16,7 +16,8 @@ volunteer, Neale Pickett, [on GitHub](https://github.com/nealey/hdjd).
 ### What is the state of Hercules device support for the different Hercules DJ Consoles?
 
   - On Windows/OSX/Linux you can use any of Mk1, MP3 Control, Mk2, RMX,
-    DJ Steel Control via MIDI or as a HID controller with Mixxx 1.11+. 
+    DJ Steel Control via MIDI or as a USB Bulk controller with Mixxx
+    1.11+. 
   - These devices are remappable via the XML config files that
     correspond to their names. 
   - LED support works with scripts.

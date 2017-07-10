@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: phase 2 planning
+**Current State**: phase 2 coding
 
 ### Weekly schedule
 
@@ -232,11 +232,27 @@ School project
 
 #### Week 6: July 3 - July 7
 
+So here starts Phase 2, where I get to implement multi-broadcasting\!
+The streaming code has been separated from EngineBroadcast into a new
+class (ShoutOutput) that can be instanciated as needed. A ShoutOutput
+instance is linked with a profile pointer (BroadcastProfilePtr). Values
+are passed to libshout on connection start and when settings are applied
+from the Live Broadcasting preferences panel. Frames are polled from
+EngineBroadcast's thread like before, but are then passed to each
+ShoutOutput's process() method. Connections within EngineBroadcast are
+kept in sync with BroadcastSettings' profiles list using several
+signals/slots.
+
+Currently I see one design flaw in my code: instead of passing a
+BroadcastProfilePtr to a ShoutOutput, ShoutOutput should be a child
+class of BroadcastProfile. Since the profile is never changed during the
+lifetime of a ShoutOutput instance, this would make the link between the
+two more obvious and logical.
+
+Week 7's work is for the Preferences UI. Testing is already possible
+with the current UI, and the first WIP of the new UI will allow for
+testing on several streaming outputs.
+
+#### Week 7: July 10 - July 14
+
 *Work in progress*
-
------
-
-### Useful info about the student's schedule
-
-  - School project from June 26th to July 2nd
-  - School Year end: July 12th 2017

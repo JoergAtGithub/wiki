@@ -271,6 +271,18 @@ I hope by the end of the following week I'll have a work in progress PR.
 
 <span class="underline">**July 3 - July 10**</span>
 
+I opened a PR with the progress I made
+[here](https://github.com/mixxxdj/mixxx/pull/1304) I am wondering if the
+way I do things leaves a big impact on memory.
+
+The next step is to tie the filter the the crates feature. Selecting a
+crate will generate the correspoding filter search just like the
+libraryfeature. For starters I'm gonna have to understand the current
+way crates are being displayed and then alter it.
+
+I am very happy with the progress so far. I hope I'll have the filter
+working by next week.
+
 <span class="underline">**July 10 - July 17**</span>
 
 <span class="underline">**July 17 - July 24**</span>

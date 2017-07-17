@@ -285,6 +285,35 @@ working by next week.
 
 <span class="underline">**July 10 - July 17**</span>
 
+Well I haven't touch the filter yet\!
+
+There is some discussion regarding `TrackCollection` class and how it
+will interface with `CrateStorage`/`CrateHierarchy`.
+
+For now I've split the `CrateStorage` file taking away all the helper
+classes and puting them inside `CrateStorageHelper.h` and also merged
+`CrateHierarchy` into it.
+
+ATM `CrateStorage` handles all the data writing and reading regarding
+crates. This resutls to a huge file \~900 lines, witch is bound to get
+bigger. I could split it into write and read operations or maybe there
+is a better approach, but it's an issue that has to be adressed before
+any real work can be done regarding the hierarchy features
+(move/delete).
+
+I got limmited time avaliable until the end of the month (summer job to
+pay the bills), and in the two weeks left, I would like to have the
+filter search work, at least at an experimental stage. I would also like
+to figure things out with `CrateStorage` and move on to the recursion
+stuff.
+
+With August approaching I'm confident the nested crates feature will be
+completed in time.
+
+By the way, I've found
+[this](https://www.percona.com/blog/2011/02/14/moving-subtrees-in-closure-table/)
+it might help in the weeks to come.
+
 <span class="underline">**July 17 - July 24**</span>
 
 <span class="underline">**July 24 - July 31**</span>

@@ -1,6 +1,6 @@
 # Mixxx Add-ons
 
-This page will contain user-contributed add-ons for Mixxx.
+This page will contain user-contributed add-ons for Mixxx.wma.
 
 For **extra skins**, check out the [skins subforum on the Mixxx
 forums](http://mixxx.org/forums/viewforum.php?f=8).

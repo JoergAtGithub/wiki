@@ -24,7 +24,7 @@ Linux:
 
 Windows:
 
-  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\mp4
+  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\mp4\\wma
 
 OSX:
 

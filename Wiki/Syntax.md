@@ -222,12 +222,12 @@ above.
 
 DokuWiki can embed the following media formats directly.
 
-|       |                           |
-| ----- | ------------------------- |
-| Image | `gif`, `jpg`, `png`       |
-| Video | `webm`, `ogv`, `mp4`      |
-| Audio | `ogg`, `mp3`, `wav`,"wma" |
-| Flash | `swf`                     |
+|       |                      |
+| ----- | -------------------- |
+| Image | `gif`, `jpg`, `png`  |
+| Video | `webm`, `ogv`, `mp4` |
+| Audio | `ogg`, `mp3`, `wav`  |
+| Flash | `swf`                |
 
 If you specify a filename that is not a supported media format, then it
 will be displayed as a link instead.

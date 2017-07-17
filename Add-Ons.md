@@ -1,6 +1,6 @@
 # Mixxx Add-ons
 
-This page will contain user-contributed add-ons for Mixxx.wma.
+This page will contain user-contributed add-ons for Mixxx.
 
 For **extra skins**, check out the [skins subforum on the Mixxx
 forums](http://mixxx.org/forums/viewforum.php?f=8).
@@ -24,7 +24,7 @@ Linux:
 
 Windows:
 
-  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\mp4\\wma\\wma
+  - %ProgramFiles%\\Mixxx\\plugins\\soundsource\\mp4
 
 OSX:
 

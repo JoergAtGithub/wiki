@@ -33,7 +33,8 @@ by Stéphane Lepin
 
 ##### July 24 - July 28
 
-  - Bugfixing in the Live Broadcasting engine
+  - Bug hunting in the Live Broadcasting engine
+  - Write PoC for secure credential storage
 
 #### Phase 3: Final period
 

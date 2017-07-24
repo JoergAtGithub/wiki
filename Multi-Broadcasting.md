@@ -230,14 +230,26 @@ Week 7's work is for the Preferences UI. Testing is already possible
 with the current UI, and the first WIP of the new UI will allow for
 testing on several streaming outputs.
 
-#### Week 7: July 10 - July 14
+#### Week 7 and 8: July 10 - July 23
 
-*TODO: complete this*
+In this past two weeks, I managed to work my way mostly through UI work.
+The QTableView used as a profile list is now properly formatted, and
+removing profiles/connections is now possible. Working with QTableView
+and Qt models was a bit confusing at first, but I managed to find
+solutions for my problems.
 
-#### Week 8: July 17 - July 21
+Engine-wise, I've migrated most of EngineBroadcast's code to a separate
+class called ShoutOutput. The initial design planned to pass each frame
+received by EngineBroadcast to every instance of ShoutOutput with
+ShoutOutput::process(), but this caused crackling audio (due to
+excessive latency between calls to process()) when too many connections
+were involved, with crackling increasing with the number of active
+connections. In the end, each ShoutOutput now has a FIFO buffer where
+EngineBroadcast puts new frames available to read. An idea to try out
+would be to implement a "slow start" for the ShoutOutput threads, where
+each thread waits for a defined number of available frames to be
+available before processing them.
 
-*TODO: complete this*
-
-#### Week 9: July 22 - July 28
+#### Week 9: July 24 - July 28
 
 *Work in progress*

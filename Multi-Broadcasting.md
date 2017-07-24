@@ -248,7 +248,10 @@ connections. In the end, each ShoutOutput now has a FIFO buffer where
 EngineBroadcast puts new frames available to read. An idea to try out
 would be to implement a "slow start" for the ShoutOutput threads, where
 each thread waits for a defined number of available frames to be
-available before processing them.
+available before processing them. Still engine-wise, I've made a lot of
+improvements and bugfixes to the sync process between BroadcastSettings
+and EngineBroadcast. There are still improvements to be made in that
+area, though.
 
 #### Week 9: July 24 - July 28
 

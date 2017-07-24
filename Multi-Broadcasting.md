@@ -232,8 +232,12 @@ testing on several streaming outputs.
 
 #### Week 7: July 10 - July 14
 
-*TODO: write this*
+*TODO: complete this*
 
 #### Week 8: July 17 - July 21
+
+*TODO: complete this*
+
+#### Week 9: July 22 - July 28
 
 *Work in progress*

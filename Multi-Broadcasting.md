@@ -6,29 +6,6 @@ by Stéphane Lepin
 
 ### Weekly schedule
 
-#### Phase 1: Broadcasting profiles
-
-##### May 30 - June 2nd
-
-  - Write the BroadcastProfile class and its XML load/save code
-
-##### June 5 - June 9
-
-  - Refactor the BroadcastSettings class as a "proxy" between
-    DlgPrefBroadcast and instances of BroadcastProfile
-  - ~~Refactor the Live Broadcasting preferences panel~~ (obsolete)
-
-##### June 12 - June 16
-
-  - Testing and bug hunting
-
-##### June 19 - June 23
-
-  - **First milestone: have this feature mergeable**
-
-**Work on Phase 1 is over. Schedule may differ from actual progress, see
-weekly reports for this.**
-
 #### Phase 2: Multi-broadcasting
 
 ##### June 26 - June 30
@@ -254,5 +231,9 @@ with the current UI, and the first WIP of the new UI will allow for
 testing on several streaming outputs.
 
 #### Week 7: July 10 - July 14
+
+*TODO: write this*
+
+#### Week 8: July 17 - July 21
 
 *Work in progress*

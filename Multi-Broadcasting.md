@@ -30,7 +30,32 @@ by Stéphane Lepin
 ##### July 17 - July 21
 
   - Continue work on settings UI refactor
-  - Implement password encryption in BroadcastProfile
+
+##### July 24 - July 28
+
+  - Bugfixing in the Live Broadcasting engine
+
+#### Phase 3: Final period
+
+  - Complete the new Live Broadcasting preferences UI
+  - Implement secure password storage for broadcasting profiles
+  - Add AAC and AAC+ encoders for recording and streaming
+
+##### July 31 - August 4
+
+*TBD*
+
+##### August 7 - August 11
+
+*TBD*
+
+##### August 14 - August 18
+
+*TBD*
+
+##### August 21 - August 25
+
+*TBD*
 
 -----
 

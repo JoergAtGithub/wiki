@@ -40,19 +40,19 @@ by Stéphane Lepin
 
 ##### July 31 - August 4
 
-*TBD*
+  - Live Broadcasting: preferences UI polishing
 
 ##### August 7 - August 11
 
-*TBD*
+  - Implement secure password storage for Broadcasting profiles
 
 ##### August 14 - August 18
 
-*TBD*
+  - Add support for AAC and AAC+ streaming
 
 ##### August 21 - August 25
 
-*TBD*
+  - Add support for Opus streaming
 
 -----
 
@@ -146,14 +146,14 @@ form (which is also editable).
 
 #### Broadcasting profiles: secure password storage
 
-#### AAC and AAC+ support
+#### AAC and AAC+ streaming support
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Encoder: maybe possible with FFmpeg's new built-in aac encoder
   - Libshout support: see first link
 
-#### Opus support
+#### Opus streaming support
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/1338413>

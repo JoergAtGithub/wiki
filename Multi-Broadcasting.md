@@ -148,6 +148,8 @@ form (which is also editable).
 
 #### AAC and AAC+ streaming support
 
+*TODO: check if legally possible*
+
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Encoder: maybe possible with FFmpeg's new built-in aac encoder

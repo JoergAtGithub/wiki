@@ -181,16 +181,20 @@ added it must come after `/Metal`).
 <span class="underline">**June 27 - July 20**</span>
 
   - Start work on the tree model
-  - Add lmitations to the database
+  - Add limitations to the database
   - Start tweaking the filter and the way crates are selected
 
 <span class="underline">**July 20 - July 28**</span>
 
   - 2nd evaluation
 
-<span class="underline">\*\*July 29 - \*\*</span>
+<span class="underline">**July 29 - August 15**</span>
 
-  - *TBA*
+  - Finish the recursive aspects of the nested crates
+
+<span class="underline">**August 15 - August 30**</span>
+
+  - Testing and final tweaking 
 
 # Weekly Devlog
 

@@ -48,7 +48,7 @@ by Stéphane Lepin
 
 ##### August 14 - August 18
 
-  - Add support for AAC and AAC+ streaming
+  - Add support for AAC streaming
 
 ##### August 21 - August 25
 
@@ -146,14 +146,16 @@ form (which is also editable).
 
 #### Broadcasting profiles: secure password storage
 
-#### AAC and AAC+ streaming support
-
-*TODO: check if legally possible*
+#### AAC streaming support
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
-  - Encoder: maybe possible with FFmpeg's new built-in aac encoder
-  - Libshout support: see first link
+  - Libshout support: see link above
+  - Legally, this seems possible with FFmpeg's built-in AAC encoder,
+    which seems to be covered by LGPLv2.1 (see [source
+    code](https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/aacenc.c))
+  - Not possible for AAC+ with FFmpeg, because it relies on non-free
+    libfdk\_aac.
 
 #### Opus streaming support
 

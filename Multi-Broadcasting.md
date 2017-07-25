@@ -40,7 +40,10 @@ by Stéphane Lepin
 
   - Complete the new Live Broadcasting preferences UI
   - Implement secure password storage for broadcasting profiles
-  - Add AAC and AAC+ encoders for recording and streaming
+  - Add AAC and AAC+ support for recording and streaming
+  - Encoder: maybe possible with FFmpeg's new built-in aac encoder
+  - Libshout support: See <https://bugs.launchpad.net/mixxx/+bug/726991>
+  - Add Opus support for recording and streaming
 
 ##### July 31 - August 4
 
@@ -115,43 +118,32 @@ The new UI along with multi-broadcasting is the goal of Phase 2.
 
 ### Phase 2: Multiple broadcasting outputs
 
-**Outdated software design. TODO fix**
+This feature allows live audio streaming to several servers
+simultaneously and relies on the broadcasting profiles added in Phase 1.
+Management of the streaming connections is done through a new “Live
+Broadcasting” settings panel, which has a list of broadcasting outputs
+with the profile settings form under the connections table. Selecting a
+profile/connection in the list shows its settings in the aforementioned
+form (which is also editable).
 
-The new “Live Broadcasting” settings panel will consist of a list of
-broadcasting outputs, with the existing settings form under the
-connections table. Editing a connection profile will be made through the
-refactored existing UI.
-
-[[/media/multi-broadcasting.png|]]
+[[/media/multi-broadcasting.png|]] *UI mockup of the original design*
 
 #### Technical details
 
   - The current libshout logic in EngineBroadcast must be separated from
     it and moved to a new class ShoutOutput (with QThread inheritance)
-  - Class methods:
+  - ShoutOutput features:
 
 <!-- end list -->
 
 ``` 
-    * Set broadcasting profile (instance of BroadcastProfile)
-    * Start output (overrides QThread::run)
-    * Stop output
-    * Slot: Push uncompressed audio samples to output
+    * Broadcasting profile (instance of BroadcastProfile) as constructor parameter
+    * Has its own FIFO buffer filled by the engine
+    * Has its own thread (base on EngineBroadcast's) to process frames available in the FIFO buffer
 * The EngineBroadcast sidechain filter must be refactored to only act as a "broadcast manager" that receives audio samples and pushes them to output instances
+* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profile list
 * The Live Broadcasting settings UI must be updated (see UI mockup above)
-* If time allows it:
-* Implement password encryption (see [[https://bugs.launchpad.net/mixxx/+bug/1642765]])
-* Add AAC support for streaming 
-    * Encoder: maybe possible with FFmpeg's new built-in aac encoder
-    * Libshout support: See [[https://bugs.launchpad.net/mixxx/+bug/726991]]
 ```
-
-<span class="underline">Possible evolutions</span>:
-
-  - Implement Shoutcast 2 support
-  - Add an Opus streaming encoder
-  - Make the broadcasting code more generic and not specific to
-    libshout.
 
 -----
 

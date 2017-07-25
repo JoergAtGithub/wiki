@@ -158,9 +158,10 @@ There are several aspects to cover:
 
 In XML broadcasting profiles, two fields are considered sensitive:
 "Login" (username) and "Password" Currently, these sensitive fields are
-stored in plaintext. These should be encrypted to avoid privacy and/or
-security issues. One way of securely storing credentials would be to use
-the OS' keychain using the [3rd-party QtKeychain
+stored in plaintext. These should be optionally (enabled/disabled by a
+user setting) encrypted to avoid privacy and/or security issues. One way
+of securely storing credentials would be to use the OS' keychain using
+the [3rd-party QtKeychain
 library](https://github.com/frankosterfeld/qtkeychain), which is
 compatible with Windows, Linux and OS X. The broadcasting profile
 subsystem would then put and fetch sensitive information from the

@@ -40,7 +40,7 @@ by Stéphane Lepin
 
 ##### July 31 - August 4
 
-  - Live Broadcasting: preferences UI polishing
+  - Live Broadcasting: UI polishing
 
 ##### August 7 - August 11
 
@@ -142,9 +142,46 @@ form (which is also editable).
 
 ### Phase 3: Final period
 
-#### Live Broadcasting: preferences UI polishing
+#### Live Broadcasting: UI polishing
+
+There are several aspects to cover:
+
+  - Changes in LB preferences UI:
+  - Complete the "connection removal" user experience
+  - Show each connection state in the profile list
+  - Error reporting: show an error message when one or more active
+    connections failed to connect
+  - Addition: Live Broadcasting Status dialog (a read-only list of each
+    output connection)
 
 #### Broadcasting profiles: secure password storage
+
+In XML broadcasting profiles, two fields are considered sensitive:
+"Login" (username) and "Password" Currently, these sensitive fields are
+stored in plaintext. These should be encrypted to avoid privacy and/or
+security issues. One way of securely storing credentials would be to use
+the OS' keychain using the
+[https://github.com/frankosterfeld/qtkeychain](3rd-party%20QtKeychain%20library),
+which is compatible with Windows, Linux and OS X. The broadcasting
+profile subsystem would then put and fetch sensitive information from
+the keychain instead of the profile's XML document. Broadcasting
+profiles are currently not meant for import/export and sharing, so
+storing values outside of the XML document is fine. Users doing manual
+transfers of profiles from one system to another should then see empty
+values for the sensitive fields.
+
+Entries stored through QtKeychain have three attributes
+
+  - Service: application name
+  - Key: generally used as the account's name
+  - Data: generally used as the account's password
+
+A simple schema for entries meant for broadcasting profile would look
+like this:
+
+  - Service: broadcasting profile name, prefixed by "Mixxx - "
+  - Key: field name ("Login", "Password", ...)
+  - Data: value for the aforementioned field
 
 #### AAC streaming support
 
@@ -159,11 +196,14 @@ form (which is also editable).
     with Mixxx's GPLv2.
   - Not possible for AAC+ with FFmpeg, because it relies on non-free
     libfdk\_aac.
+  - FFmpeg is already a Mixxx dependency
 
 #### Opus streaming support
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/1338413>
+  - libopus is quite easy to use
+  - The Opus datastream must be muxed in an Ogg stream
 
 -----
 

@@ -148,8 +148,10 @@ form (which is also editable).
 
 #### AAC and AAC+ support
 
+  - Confirmed on the wishlist:
+    <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Encoder: maybe possible with FFmpeg's new built-in aac encoder
-  - Libshout support: See <https://bugs.launchpad.net/mixxx/+bug/726991>
+  - Libshout support: see first link
 
 #### Opus support
 

@@ -134,7 +134,7 @@ form (which is also editable).
     * Has its own FIFO buffer filled by the engine
     * Has its own thread (base on EngineBroadcast's) to process frames available in the FIFO buffer
 * The EngineBroadcast sidechain filter must be refactored to only act as a "broadcast manager" that receives audio samples and pushes them to output instances
-* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profile list
+* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profile list using signals and slots
 * The Live Broadcasting settings UI must be updated (see UI mockup above)
 ```
 

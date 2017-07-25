@@ -38,13 +38,6 @@ by Stéphane Lepin
 
 #### Phase 3: Final period
 
-  - Complete the new Live Broadcasting preferences UI
-  - Implement secure password storage for broadcasting profiles
-  - Add AAC and AAC+ support for recording and streaming
-  - Encoder: maybe possible with FFmpeg's new built-in aac encoder
-  - Libshout support: See <https://bugs.launchpad.net/mixxx/+bug/726991>
-  - Add Opus support for recording and streaming
-
 ##### July 31 - August 4
 
 *TBD*
@@ -144,6 +137,24 @@ form (which is also editable).
 * Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profile list
 * The Live Broadcasting settings UI must be updated (see UI mockup above)
 ```
+
+-----
+
+### Phase 3: Final period
+
+#### Live Broadcasting: preferences UI polishing
+
+#### Broadcasting profiles: secure password storage
+
+#### AAC and AAC+ support
+
+  - Encoder: maybe possible with FFmpeg's new built-in aac encoder
+  - Libshout support: See <https://bugs.launchpad.net/mixxx/+bug/726991>
+
+#### Opus support
+
+  - Confirmed on the wishlist:
+    <https://bugs.launchpad.net/mixxx/+bug/1338413>
 
 -----
 

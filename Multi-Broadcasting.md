@@ -152,7 +152,7 @@ form (which is also editable).
     <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Libshout support: see link above
   - Legally, this seems possible with FFmpeg's built-in AAC encoder,
-    which seems to be covered by LGPLv2.1 (see [source
+    which is covered by LGPLv2.1 (see [source
     code](https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/aacenc.c)),
     that license being seemingly
     [compatible](https://www.gnu.org/licenses/gpl-faq.html#AllCompatibility)

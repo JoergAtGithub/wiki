@@ -276,7 +276,7 @@ I opened a PR with the progress I made
 way I do things leaves a big impact on memory.
 
 The next step is to tie the filter the the crates feature. Selecting a
-crate will generate the correspoding filter search just like the
+crate will generate the corresponding filter search just like the
 libraryfeature. For starters I'm gonna have to understand the current
 way crates are being displayed and then alter it.
 
@@ -295,13 +295,13 @@ classes and puting them inside `CrateStorageHelper.h` and also merged
 `CrateHierarchy` into it.
 
 ATM `CrateStorage` handles all the data writing and reading regarding
-crates. This resutls to a huge file \~900 lines, witch is bound to get
+crates. This results to a huge file \~900 lines, witch is bound to get
 bigger. I could split it into write and read operations or maybe there
-is a better approach, but it's an issue that has to be adressed before
+is a better approach, but it's an issue that has to be addressed before
 any real work can be done regarding the hierarchy features
 (move/delete).
 
-I got limmited time avaliable until the end of the month (summer job to
+I got limited time available until the end of the month (summer job to
 pay the bills), and in the two weeks left, I would like to have the
 filter search work, at least at an experimental stage. I would also like
 to figure things out with `CrateStorage` and move on to the recursion
@@ -315,6 +315,32 @@ By the way, I've found
 it might help in the weeks to come.
 
 <span class="underline">**July 17 - July 24**</span>
+
+This week the focus was on refactoring `CrateStorage` to make it easier
+to maintain and read through the code, with classes that (I hope) make
+more sense.
+
+The changes made are described
+[here](https://github.com/mixxxdj/mixxx/pull/1304#issuecomment-317280988)
+but I'll copy-paste them here for better readability.
+
+`CrateStorage` was refactored into 5 new files:
+
+  - `CrateStorageHelpers`
+  - with the helper functions like CrateSelectResult
+  - `CrateManager`
+  - general manager for crates initialized at TrackCollection
+  - `CrateStorage`
+  - handles the crate storage data read/write
+  - `CrateHierarchy`
+  - handles the crate hierarchy data read/write
+  - `CrateTracks`
+  - handles the crate tracks data read/write
+
+The biggest challenge of course was the design of the architecture. I
+settled in the classes above by trying to keep each separate crate
+related data access to the DB to it's own class. When I read through the
+code I think it's easier to understand what does what.
 
 <span class="underline">**July 24 - July 31**</span>
 

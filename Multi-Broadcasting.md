@@ -189,8 +189,8 @@ like this:
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Libshout support: see link above
-  - First solution: legally, this seems possible with FFmpeg's built-in
-    AAC encoder, which is covered by LGPLv2.1 (see [source
+  - First solution: legally, it is possible to use FFmpeg's built-in AAC
+    encoder, which is covered by LGPLv2.1 (see [source
     code](https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/aacenc.c)),
     that license being seemingly
     [compatible](https://www.gnu.org/licenses/gpl-faq.html#AllCompatibility)

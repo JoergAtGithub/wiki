@@ -189,15 +189,19 @@ like this:
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
   - Libshout support: see link above
-  - Legally, this seems possible with FFmpeg's built-in AAC encoder,
-    which is covered by LGPLv2.1 (see [source
+  - First solution: legally, this seems possible with FFmpeg's built-in
+    AAC encoder, which is covered by LGPLv2.1 (see [source
     code](https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/aacenc.c)),
     that license being seemingly
     [compatible](https://www.gnu.org/licenses/gpl-faq.html#AllCompatibility)
     with Mixxx's GPLv2.
   - Not possible for AAC+ with FFmpeg, because it relies on non-free
-    libfdk\_aac.
+    libfdkaac.
   - FFmpeg is already a Mixxx dependency
+  - Second solution: use dynamic loading of platform-available libraries
+  - Apple's CoreAudio on Windows (bundled with iTunes) and OS X
+  - libfdkaac on Linux
+  - Both AAC (LC) and AAC+ (HE-AAC and HE-AAC v2) would be supported
 
 #### Opus streaming support
 

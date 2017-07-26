@@ -198,10 +198,11 @@ like this:
   - Not possible for AAC+ with FFmpeg, because it relies on non-free
     libfdkaac.
   - FFmpeg is already a Mixxx dependency
-  - Second solution: use dynamic loading of platform-available libraries
-  - Apple's CoreAudio on Windows (bundled with iTunes) and OS X
-  - libfdkaac on Linux
+  - Second solution: use dynamic loading of libfdkaac
   - Both AAC (LC) and AAC+ (HE-AAC and HE-AAC v2) would be supported
+  - Windows: extract libfdk-aac-1.dll from a BUTT installation
+  - OS X: install fdk-aac from Homebrew (maybe too technical?)
+  - Linux: install libfdkaac package
 
 #### Opus streaming support
 

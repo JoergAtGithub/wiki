@@ -12,6 +12,10 @@ made with a help of 3D model.
 
 [[[/media/hardware/behringer/behringer_cmd_mm-1-legend.png|behringer\_cmd\_mm-1-legend.png]]](https://mixxx.org/wiki/lib/exe/fetch.php/hardware:behringer:behringer_cmd_mm-1-legend.png)
 
+LEDs has three states: orange, blue or blinking blue. You can not turn
+them off. But you can dim their brightnes by pressing 4 CUE buttons
+simultaneously<sup>[1](http://resolume.com/forum/viewtopic.php?f=7&t=10639#p42068)</sup>
+
 ### Shift button
 
 [[/media/hardware/behringer/behringer_cmd_mm-1-shift.jpg|behringer\_cmd\_mm-1-shift.jpg]]
@@ -46,7 +50,8 @@ will activate Fast Forward.
 
 ### See aslo
 
-\* [Begringer CMD DC-1](behringer_cmd_dc-1)
+\* [Begringer CMD DC-1](behringer_cmd_dc-1)  
+\* [Begringer CMD DV-1](behringer_cmd_dv-1)
 
 ### Links
 

@@ -136,3 +136,8 @@ They are located to the bottom of controller with numbers
     **DOUBLE** mode and select the desired deck(s)
   - <span class="underline">Remove</span> HotCue : Press **ERASE**
     button and select the desired HotCue you want to remove
+
+### See also
+
+\* [Behringer CMD DC-1](behringer_cmd_dc-1)  
+\* [Behringer CMD MM-1](behringer_cmd_mm-1)

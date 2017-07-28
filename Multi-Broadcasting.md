@@ -40,19 +40,20 @@ by Stéphane Lepin
 
 ##### July 31 - August 4
 
+  - Implement secure password storage for Broadcasting profiles
   - Live Broadcasting: UI polishing
 
 ##### August 7 - August 11
 
-  - Implement secure password storage for Broadcasting profiles
+  - Add support for AAC streaming
 
 ##### August 14 - August 18
 
-  - Add support for AAC streaming
+  - Add support for Opus streaming
 
 ##### August 21 - August 25
 
-  - Add support for Opus streaming
+*TBD*
 
 -----
 

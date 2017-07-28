@@ -41,12 +41,12 @@ pressed.
 24. Sync mode \[Move beatgrid later\]
 25. Quantize mode \[Zoom in waveform\]
 26. Keylock mode \[Zoom out waveform\]
-27. Loop in default size (4 beats at startup)\[2\] \[Reloop\], or in
-    loop *Exit the loop \[Set loop out position\]*
-28. Halve default size, or in loop *Halve the loop* \[Move the loop
+27. Loop by default loop size\[2\] \[Reloop\], or in loop *Exit the loop
+    \[Set loop out position\]*
+28. Halve default loop size, or in loop *Halve the loop* \[Move the loop
     backward by 1/2 beat\]
-29. Double default size, or in loop *Double the loop* \[Move the loop
-    forward by 1/2 beat\]
+29. Double default loop size, or in loop *Double the loop* \[Move the
+    loop forward by 1/2 beat\]
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2
 32. Activate \[Clear\] hotcue3
@@ -106,13 +106,14 @@ other deck is pressed.** Changes after the previous version are in bold.
 24. Sync mode **\[Sync key harmonically with another deck\]**
 25. Quantize mode **\[Zoom out waveform\]**
 26. Keylock mode **\[Zoom in waveform\]**
-27. Loop in **default loop size**\[5\] \[Reloop\], or in loop *Exit the
-    loop \[Set loop out position\]*
-28. Halve **default loop size \[Jump backward\]**, or in loop *Halve the
-    loop **\[Move it backward by jump size\]*** **{Halve jump size}**
-29. Double **default loop size \[Jump forward\]**, or in loop *Double
-    the loop **\[Move it forward by jump size\]*** **{Double jump
-    size}**
+27. Loop by default loop size\[5\] \[Reloop\], or in loop *Exit the loop
+    \[Set loop out position\]*
+28. Halve default loop size **\[Jump backward\]**, or in loop *Halve the
+    loop **\[Jump it backward\]*** **{Halve jump size\[6\] of the other
+    deck}**
+29. Double default loop size **\[Jump forward\]**, or in loop *Double
+    the loop **\[Jump it forward\]*** **{Double jump size of the other
+    deck}**
 30. Activate \[Clear\] hotcue1
 31. Activate \[Clear\] hotcue2
 32. Activate \[Clear\] hotcue3
@@ -130,7 +131,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-7-1, not compatible with 2.0)\[6\]
+(2017-7-1, not compatible with 2.0)\[7\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -138,8 +139,8 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-2.  no LED: size = 4, LED29: size \> 4, LED28: 1/4 ≤ size \< 4, LED28 &
-    LED29: size \< 1/4
+2.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
+    64** LED29, **size \> 64** LED28 & 29
 
 3.  left-right inverse -\> right inverse -\> left inverse -\> full
     inverse -\> none -\> full -\> left -\> right -\> left-right
@@ -150,8 +151,11 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-5.  no LED: size = 4, LED29: size \> 4, LED28: 1/4 ≤ size \< 4, LED28 &
-    LED29: size \< 1/4
+5.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
+    64** LED29, **size \> 64** LED28 & 29
 
-6.  see [Controller Mapping File
+6.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
+    64** LED29, **size \> 64** LED28 & 29
+
+7.  see [Controller Mapping File
     Locations](controller_mapping_file_locations) for use

@@ -80,3 +80,8 @@ encoders :
 They are assigned to the big buttons to the bottom of the controller.
 
   - **\[1\] .. \[16\]** : HotCues from 1 to 16
+
+### See aslo
+
+\* [Begringer CMD DV-1](behringer_cmd_dv-1)  
+\* [Begringer CMD MM-1](behringer_cmd_mm-1)

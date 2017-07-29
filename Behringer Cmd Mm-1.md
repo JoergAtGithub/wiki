@@ -11,6 +11,7 @@ made with a help of 3D model.
 ##### (click to enlarge)
 
 [[[/media/hardware/behringer/behringer_cmd_mm-1-legend.png|behringer\_cmd\_mm-1-legend.png]]](https://mixxx.org/wiki/lib/exe/fetch.php/hardware:behringer:behringer_cmd_mm-1-legend.png)
+[[[/media/hardware/behringer/behringer_cmd_mm-1-controls.jpg|behringer\_cmd\_mm-1-controls.jpg]]](https://mixxx.org/wiki/lib/exe/fetch.php/behringer_cmd_mm-1-controls.png)
 
 LEDs has three states: orange, blue or blinking blue. You can not turn
 them off. But you can dim their brightnes by pressing 4 CUE buttons

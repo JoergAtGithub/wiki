@@ -164,14 +164,14 @@ defined by the HID description writers only, people using the HID device
 description only need to read the assigned field names. HIDPacket
 packets have some common functions to use:
 
-  - **AddControl**(group, name, offset, pack, bitmask, callback,
+  - **addControl**(group, name, offset, pack, bitmask, callback,
     is\_encoder): This function is used to add a normal field to packet,
     as described above. Same function is used to add numeric value
     fields (bitmask is undefined) and bit mask field offsets (bitmask
     has a valid value). The last parameter is\_encoder is a boolean
     value to define how the field values are processed. See details
     above.
-  - **AddLED**(group, name, offset, pack, bitmask): This function is
+  - **addLED**(group, name, offset, pack, bitmask): This function is
     used to define an output LED control to output packets: LEDs are
     specialized fields to allow us to define LED colors nicely and to
     add API functions like

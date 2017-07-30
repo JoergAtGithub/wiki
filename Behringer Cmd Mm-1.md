@@ -49,6 +49,10 @@ If you press `Right` again, selected track will be loaded into the
 *PreviewDeck*. While it's playing pressing and holding `Right` again
 will activate Fast Forward.
 
+### Video
+
+[[[/media/hardware/behringer/behringer_cmd_mm-1-youtube.jpg|behringer\_cmd\_mm-1-youtube.jpg]]](https://www.youtube.com/watch?v=33t6J1hUFjM)
+
 ### See aslo
 
 \* [Begringer CMD DC-1](behringer_cmd_dc-1)  

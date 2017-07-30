@@ -113,10 +113,10 @@ the appropriate parts:
         </controller>
     </MixxxControllerPreset>
 
-There is also an [experimental HID packet parser
-script](HID%20Device%20API) in the `res/controllers` directory you can
-examine for parsing hints. (If you would like to try using it directly,
-simply add it to the top of the `scriptfiles` list in your XML file:)
+There is also an [HID Packet Parser](HID%20Packet%20Parser) script in
+the `res/controllers` directory you can examine for parsing hints. (If
+you would like to try using it directly, simply add it to the top of the
+`scriptfiles` list in your XML file:)
 
 ``` 
              <file filename="common-hid-packet-parser.js" functionprefix=""/>

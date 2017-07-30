@@ -113,13 +113,10 @@ details:
     string, but if it matches a valid Mixxx control name in the group
     defined for field, the system attempts to attach it directly to the
     correct field. Together group and name form ID for the field
-    (group.name).
-
-Offset defines field's offset from the start of the packet. For example,
-with 2 byte header, first field in packet must have offset of 2, and if
-the first field was packing h or H (a 2 byte short integer), second
-field should have offset 4.
-
+    (group.name). Offset defines field's offset from the start of the
+    packet. For example, with 2 byte header, first field in packet must
+    have offset of 2, and if the first field was packing h or H (a 2
+    byte short integer), second field should have offset 4.
   - **pack**: is one of the field packing types mentioned above. Purpose
     of this is to allow script writer to receive or send the correct
     numeric values for a field, not bothering with end of field or

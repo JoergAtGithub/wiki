@@ -345,4 +345,17 @@ area, though.
 
 #### Week 9: July 24 - July 28
 
+I finally managed to have working multi-broadcasting\! The initial
+design was broken and lacked testing. Each ShoutOutput has its own FIFO
+buffer, fed by EngineBroadcast's thread which is in turn fed by
+EngineNetworkStream (responsible for overall buffer sync management).
+The final version must get rid of EngineBroadcast's thread and have
+proper buffer management as in EngineNetworkStream.
+
+Regarding the idea of having secure password storage in XML profiles, I
+managed to have a working implementation using QtKeychain, so that's one
+less thing to worry about.
+
+#### Week 10: July 31st - August 4
+
 *Work in progress*

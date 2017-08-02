@@ -225,7 +225,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 | [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600                                         | 4 deck all-in-one           | yes                   | yes              | HID             | 2013     |
 | [Behringer CMD PL-1](Behringer%20CMD%20PL-1)                                                     | $100                                         | 1 deck controller           | no                    | no               | MIDI            | 2013     |
 | [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                     | [Behringer CMD MM-1](Behringer%20CMD%20MM-1) | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
-| [Behringer CMD MM-1 (Advanced Mapping)](Behringer%20CMD%20MM-1%20\(Advanced%20Mapping\))         | $100                                         | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
+| **[Behringer CMD MM-1 (Advanced Mapping)](Behringer%20CMD%20MM-1%20\(Advanced%20Mapping\))**     | $100                                         | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
 
 \</sortable\>
 

@@ -18,9 +18,16 @@ control keys on your PC-Keyboard. Most of the features can be explained
 via the renderings where the functionalities are marked via the
 formatting of the Text (\[*SHIFT*\] and \[**CTRL**\])
 
-### Global Variables
+### Global variables
 
-TODO
+There are four global variables at the top of the script:
+
+  - CHANNELNUMBER: The standard channelnumber of the CMD MM-1 is 5 but
+    it can differ. If thats the case you can change it here
+  - INVERTCOLOR: Swaps the colors which suits certain skins more
+  - STANDARDCHANNELSEQUENCE: Defines if the channels laid out in
+    \[1,2,3,4\] or \[3,1,2,4\] sequence by default.
+  - STANDARDKNOBBEHAVIOR: Defines the default mapping of the knobs.
 
 ### The top row
 

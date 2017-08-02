@@ -73,5 +73,19 @@ Third: Reassing Channel Sequence (Swaps between \[3,1,2,4\] to
 \[1\]&\[2\] Buttons:
 
   - Normal: Toggle Fx1&2 for desired Channel
+  - Shift: Change Crossfaderside (Orientation)
+  - Ctrl: Toggle Fx3&4 for desired Channel
 
-WILL FINISH THIS EVENING xD
+\[CUE\] Buttons:
+
+  - Pre-Fader-Listening
+  - Load selected Track to Deck
+  - Enable Fx-PFL for Unit according to channel number.
+  - reset BPM-Fader FIXME
+
+### Faders
+
+[[/media/hardware/behringer/behringercmdmm1-fadeslabeled.png|]]
+
+  - Normal: Volume Fader
+  - Shift: Rate-/BPM-Faders

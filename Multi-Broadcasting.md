@@ -45,11 +45,13 @@ by Stéphane Lepin
 
 ##### August 7 - August 11
 
-  - Add support for AAC streaming
+  - Live Broadcasting preferences: actually apply settings to profiles
+    only when clicking "Apply" or "OK"
+  - Add support for Opus streaming
 
 ##### August 14 - August 18
 
-  - Add support for Opus streaming
+  - Add support for AAC streaming 
 
 ##### August 21 - August 25
 

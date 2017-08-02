@@ -99,3 +99,22 @@ Third: Reassing Channel Sequence (Swaps between \[3,1,2,4\] to
 
   - Normal: Volume Fader
   - Shift: Rate-/BPM-Faders
+
+### Troubleshooting
+
+MY CONTROLLER DOESNT LIGHT UP, HELP\!\!\!11 The issue is probably the
+Midi-Channel of your MM-1. Behringer has a tool that allows every
+controller in the CMD-series to change its midi-channel. So your
+controller is probably set to the wrong channel. The easiest way to fix
+this is to use Behringers tool and set it do MIDI-CHANNEL 5 (THIS IS
+IMPORTANT).
+<https://musicgroup-prod.mindtouch.us/04_BEHRINGER/CMD-_How_Do_I_Change_MIDI_Channel_On_My_CMD_Controller%3F>
+If you cant do that for some reason, you have to find out the channel
+your MM-1 is sending on at the time. Once you know that you should go
+change the line where it says "var CHANNELNUMBER = 5;" of the file
+"Behringer-CMD-MM-1-Advanced-scripts.js" in the folder with the mappings
+so there is the number of your channel instead of the 5. (IMPORTANT: NO
+PARENTHESES). The you have to find the file "Behringer
+CMD-MM-1-Advanced.midi.xml" in the same folder and replace the 4 at the
+end of 0x94, 0x84 and 0xB4 with your CHANNEL-NUMBER MINUS 1. Restart mix
+and then it should work.

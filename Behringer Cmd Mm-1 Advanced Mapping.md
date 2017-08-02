@@ -16,7 +16,10 @@ modifiers: \[*SHIFT*\] and \[**CTRL**\] These allow each button to have
 up to four functionalities. They behave like the normal shift and
 control keys on your PC-Keyboard. Most of the features can be explained
 via the renderings where the functionalities are marked via the
-formatting of the Text (\[*SHIFT*\] and \[**CTRL**\])
+formatting of the Text (\[*SHIFT*\] and \[**CTRL**\]).
+
+Its also possible to remap the entire order of the channel from
+\[3,1,2,4\] to \[1,2,3,4\].
 
 ### Global variables
 

@@ -217,15 +217,16 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \<sortable 2=numeric\>
 
-| Device                                                                                           | Price (USD) \[38\]                           | Description                 | Integrated Sound Card | Balanced outputs | Signal protocol | Released |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------- | --------------------------- | --------------------- | ---------------- | --------------- | -------- |
-| [Akai AMX](Akai%20AMX)                                                                           | $250                                         | 2 deck mixer                | yes                   | no               | MIDI            | 2014     |
-| [Gemini G4V](Gemini%20G4V)                                                                       | $350                                         | 2 deck\[39\] all-in-one     | yes                   | yes              | MIDI            | 2013     |
-| [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                                                         | $300                                         | 2 deck controller and mixer | yes                   | no               | MIDI            | 2014     |
-| [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600                                         | 4 deck all-in-one           | yes                   | yes              | HID             | 2013     |
-| [Behringer CMD PL-1](Behringer%20CMD%20PL-1)                                                     | $100                                         | 1 deck controller           | no                    | no               | MIDI            | 2013     |
-| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                     | [Behringer CMD MM-1](Behringer%20CMD%20MM-1) | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
-| **[Behringer CMD MM-1 (Advanced Mapping)](Behringer%20CMD%20MM-1%20\(Advanced%20Mapping\))**     | $100                                         | MIDI mixer                  | no                    | no               | MIDI            | 2013     |
+| Device                                                                                           | Price (USD) \[38\]                           | Description                 | Integrated Sound Card | Balanced outputs  | Signal protocol | Released |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------- | --------------------------- | --------------------- | ----------------- | --------------- | -------- |
+| [Akai AMX](Akai%20AMX)                                                                           | $250                                         | 2 deck mixer                | yes                   | no                | MIDI            | 2014     |
+| [Gemini G4V](Gemini%20G4V)                                                                       | $350                                         | 2 deck\[39\] all-in-one     | yes                   | yes               | MIDI            | 2013     |
+| [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                                                         | $300                                         | 2 deck controller and mixer | yes                   | no                | MIDI            | 2014     |
+| [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600                                         | 4 deck all-in-one           | yes                   | yes               | HID             | 2013     |
+| [Behringer CMD PL-1](Behringer%20CMD%20PL-1)                                                     | $100                                         | 1 deck controller           | no                    | no                | MIDI            | 2013     |
+| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                     | [Behringer CMD MM-1](Behringer%20CMD%20MM-1) | MIDI mixer                  | no                    | no                | MIDI            | 2013     |
+| **[Behringer CMD MM-1 (Advanced Mapping)](Behringer%20CMD%20MM-1%20\(Advanced%20Mapping\))**     | $100                                         | MIDI mixer                  | no                    | no                | MIDI            | 2013     |
+| [JBSystems DJ-kontrol 3](JBSystems%20DJ-kontrol%203)                                             | $200                                         | 2 deck controller           | yes                   | XLR: yes, RCA: no | MIDI            | 2012     |
 
 \</sortable\>
 

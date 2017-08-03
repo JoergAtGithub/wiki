@@ -348,6 +348,45 @@ code I think it's easier to understand what does what.
 
 <span class="underline">**July 24 - July 31**</span>
 
+This week I implemeted a couple of new features for the nested crates.
+
+\* Crate Filter
+
+Finally I've implemented crate filter using the crate `namePath` witch
+enables the recursive view of the crates.
+
+Also just like `tracksFeature` selecting the crate will invoke the
+corresponding filter search and that's how the crate is displayed.
+
+The whole process seems to me a bit clumsy but it works for now. I am
+thinking of ways I can improve that.
+
+\* Duplicate crate
+
+Duplicating a crate now makes a duplicate at level 1, containing just
+the tracks of this crate.
+
+\* Rename Crate
+
+Here I optimised the way the crate naming works to secure the database
+from corrupted entries (same name in different crate, hierarchy naming
+conventions, etc)
+
+Also you can freely rename crates while making sure the database won't
+break.
+
+Also I fixed various small details and made little optimisations here
+and there.
+
+Now about moving crates, I feel like it's a lot of effort for a feature
+not really that useful. The naming conventions will be really hard to
+enforce. Instead of moving crates you could just create them from
+scratch or rename them to what you want them to be.
+
+I am thinking about being able to move only the level 1 crates so the
+workflow would be like: duplicate \> move to position but it might be a
+bit confusing to the end user.
+
 <span class="underline">**July 31 - August 7**</span>
 
 <span class="underline">**August 7 - August 14**</span>

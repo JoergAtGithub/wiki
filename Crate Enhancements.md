@@ -350,7 +350,7 @@ code I think it's easier to understand what does what.
 
 This week I implemeted a couple of new features for the nested crates.
 
-\* Crate Filter
+  - Crate Filter
 
 Finally I've implemented crate filter using the crate `namePath` witch
 enables the recursive view of the crates.
@@ -361,12 +361,12 @@ corresponding filter search and that's how the crate is displayed.
 The whole process seems to me a bit clumsy but it works for now. I am
 thinking of ways I can improve that.
 
-\* Duplicate crate
+  - Duplicate crate
 
 Duplicating a crate now makes a duplicate at level 1, containing just
 the tracks of this crate.
 
-\* Rename Crate
+  - Rename Crate
 
 Here I optimised the way the crate naming works to secure the database
 from corrupted entries (same name in different crate, hierarchy naming

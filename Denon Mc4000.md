@@ -16,11 +16,11 @@ for rugged durability. In addition to precision touch-activated jog
 wheels, performers get access to dedicated hot cue and sample pads for
 on-the-fly
 
-The microphone and auxilliary inputs are not available to the computer
-through the MC4000's sound card. They are mixed with the master output
-in hardware, so this controller's sound card is not suitable for
-broadcasting or recording the inputs. You could use the controller with
-a separate [USB Sound
+The microphone and auxilliary inputs are mixed with the master output in
+hardware and are not available to the computer through the MC4000's
+sound card. They are mixed with the master output in hardware, so this
+controller's sound card is not suitable for broadcasting or recording
+the inputs. You could use the controller with a separate [USB Sound
 Card](Hardware%20Compatibility#USB%20Sound%20Cards) for that purpose.
 
 ## Mapping

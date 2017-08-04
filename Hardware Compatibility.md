@@ -321,13 +321,12 @@ Firewire sound cards, but are generally only compatible with Mac OS X.
 
 #### Stand-alone sound cards versus sound cards integrated with controllers or mixers
 
-Most DJ
-[\#controllers](#controllers)-that-cost-more-than-$200-have-a-4-output-sound-card-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[sound
+Many DJ
+[\#controllers](#controllers)-have-a-4-output-sound-card-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[sound
 card](#USB-sound-cards) plus a controller because it only requires one
-device with one USB cable. Most of these produce better quality sound
-than a sound card built into a computer. However, the highest quality
-sound cards like the Apogee Duet and RME Babyface Pro are stand alone
-devices not integrated into controllers.
+device with one USB cable. However, stand-alone sound cards are
+generally higher quality than those built into controllers (except for
+the cheapest stand-alone sound cards).
 
 [Some DJ mixers](#Mixers-with-sound-cards) also include built-in USB
 sound cards. These can be used to send Mixxx's unmixed Deck 1-4 outputs

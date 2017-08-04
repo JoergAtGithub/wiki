@@ -17,11 +17,12 @@ wheels, performers get access to dedicated hot cue and sample pads for
 on-the-fly
 
 The microphone and auxilliary inputs are mixed with the master output in
-hardware and are not available to the computer through the MC4000's
-sound card. They are mixed with the master output in hardware, so this
-controller's sound card is not suitable for broadcasting or recording
-the inputs. You could use the controller with a separate [USB Sound
-Card](Hardware%20Compatibility#USB%20Sound%20Cards) for that purpose.
+hardware. They are not available to the computer through the MC4000's
+sound card, so this controller's sound card is not suitable for
+broadcasting or recording the inputs. You could use the controller with
+a separate [USB Sound
+Card](Hardware%20Compatibility#USB%20Sound%20Cards) that has a
+microphone input for that purpose.
 
 ## Mapping
 

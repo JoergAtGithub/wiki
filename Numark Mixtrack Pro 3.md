@@ -16,6 +16,14 @@ a [splitter cable](hardware%20compatibility#splitter%20cables) or
 [separate sound card](hardware%20compatibility#sound%20cards) to be able
 to preview tracks in headphones.
 
+The microphone input on the Pro version is not available to the computer
+through the controller's sound card. It is mixed with the master output
+in hardware, so this controller's sound card is not suitable for
+broadcasting or recording the inputs. If you want to use the controller
+for broadcasting or recording, getting the non-Pro version with a
+separate [USB Sound Card](Hardware%20Compatibility#USB%20Sound%20Cards)
+with a microphone input is suggested.
+
 ## Configuration options
 
 Configuration options can be set in the mapping. You will need to edit

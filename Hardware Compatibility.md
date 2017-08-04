@@ -400,6 +400,8 @@ made for DJing have 4 output channels with 4 mono output connectors and
 1 stereo headphone connector. This does not mean that the sound card can
 send out 6 different signals at the same time; rather, the signal on 2
 of the mono outputs and the stereo headphone output would be the same.
+Also, many controllers have separate master and booth outputs with
+independent volume controls, but they both play the same signal.
 
 #### Surround sound cards
 

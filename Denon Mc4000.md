@@ -14,7 +14,14 @@ The MC4000 is a 2-deck DJ controller for the professional entertainer
 wrapping in-demand audio manipulation tools in a robust steel chassis
 for rugged durability. In addition to precision touch-activated jog
 wheels, performers get access to dedicated hot cue and sample pads for
-on-the-fly creativity.
+on-the-fly
+
+The microphone and auxilliary inputs are not available to the computer
+through the MC4000's sound card. They are mixed with the master output
+in hardware, so this controller's sound card is not suitable for
+broadcasting or recording the inputs. You could use the controller with
+a separate [USB Sound
+Card](Hardware%20Compatibility#USB%20Sound%20Cards) for that purpose.
 
 ## Mapping
 

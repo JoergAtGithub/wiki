@@ -18,10 +18,14 @@ headphone jacks, one small (1/8") and one large (1/4") connector (each
 jack plays the same channels, they cannot be used for independent
 signals). There is a 1/4" microphone input with an adjustable gain knob.
 The microphone input is mixed directly with the main RCA outputs in
-hardware. The microphone preamplifier is very noisy, so it is
-recommended to keep the microphone gain knob all the way down when not
-using a microphone, otherwise there will be noise added to the main RCA
-outputs.
+hardware. It is not available to the computer, so cannot record or
+broadcast with the microphone input on the controller. You could use the
+controller with a separate [USB Sound
+Card](Hardware%20Compatibility#USB%20Sound%20Cards) that has a
+microphone input for that purpose. The microphone preamplifier is very
+noisy, so it is recommended to keep the microphone gain knob all the way
+down when not using a microphone, otherwise there will be noise added to
+the main RCA outputs.
 
 ## Compatibility
 

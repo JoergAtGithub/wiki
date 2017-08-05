@@ -1,6 +1,6 @@
 # Pioneer DDJ-SB
 
-![http://cdn.pioneerdj.com/\~/media/pioneerdj/images/products/controller/ddj-sb/black/ddj-sb-main.png](http://cdn.pioneerdj.com/~/media/pioneerdj/images/products/controller/ddj-sb/black/ddj-sb-main.png)
+![https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-sb/black/ddj-sb-main.png](https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-sb/black/ddj-sb-main.png)
 
 ``` 
  *[[http://www.pioneerdj.com/en/product/controller/ddj-sb/|Manufacturer's product page]]

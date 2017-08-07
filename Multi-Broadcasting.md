@@ -361,4 +361,16 @@ less thing to worry about.
 
 #### Week 10: July 31st - August 4
 
+The secure password storage implementation is now complete, along with a
+proper compile flag to disable it at compile time. The preferences UI
+for Live Broadcasting has its design complete too. Work remains of minor
+behaviour fixes and the ability to cancel changes made to profiles.
+Engine-wise, work has been done to remove EngineBroadcast's thread and
+have proper buffer management with multiple streaming connections as
+SoundDeviceNetwork and EngineNetworkStream did before with a single
+connection. Most of the heavy thinking has been done on this, so what
+remains to do is putting proper structure into the latest changes.
+
+#### Week 11: August 7 - August 11
+
 *Work in progress*

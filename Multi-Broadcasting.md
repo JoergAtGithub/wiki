@@ -181,12 +181,11 @@ Entries stored through QtKeychain have three attributes
   - Key: generally used as the account's name
   - Data: generally used as the account's password
 
-A simple schema for entries meant for broadcasting profile would look
-like this:
+The schema for entries meant for broadcasting profiles look like this:
 
   - Service: broadcasting profile name, prefixed by "Mixxx - "
-  - Key: field name ("Login", "Password", ...)
-  - Data: value for the aforementioned field
+  - Key: server username (called Login in profiles)
+  - Data: server password
 
 #### AAC streaming support
 

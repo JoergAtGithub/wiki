@@ -277,7 +277,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 </tr>
 <tr class="even">
 <td><a href="Behringer CMD MM-1">Behringer CMD MM-1</a><br />
-<a href="Behringer CMD MM-1">(Alternative advanced mapping)</a></td>
+<a href="behringer_cmd_mm-1_advanced_mapping">(Alternative advanced mapping)</a></td>
 <td>$100</td>
 <td>MIDI mixer</td>
 <td>no</td>

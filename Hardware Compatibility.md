@@ -217,16 +217,85 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 \<sortable 2=numeric\>
 
-| Device                                                                                           | Price (USD) \[38\]                           | Description                 | Integrated Sound Card | Balanced outputs  | Signal protocol | Released |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------- | --------------------------- | --------------------- | ----------------- | --------------- | -------- |
-| [Akai AMX](Akai%20AMX)                                                                           | $250                                         | 2 deck mixer                | yes                   | no                | MIDI            | 2014     |
-| [Gemini G4V](Gemini%20G4V)                                                                       | $350                                         | 2 deck\[39\] all-in-one     | yes                   | yes               | MIDI            | 2013     |
-| [Pioneer DDJ-WeGO3](Pioneer%20DDJ-WeGO3)                                                         | $300                                         | 2 deck controller and mixer | yes                   | no                | MIDI            | 2014     |
-| [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2) | $600                                         | 4 deck all-in-one           | yes                   | yes               | HID             | 2013     |
-| [Behringer CMD PL-1](Behringer%20CMD%20PL-1)                                                     | $100                                         | 1 deck controller           | no                    | no                | MIDI            | 2013     |
-| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                     | [Behringer CMD MM-1](Behringer%20CMD%20MM-1) | MIDI mixer                  | no                    | no                | MIDI            | 2013     |
-| **[Behringer CMD MM-1 (Advanced Mapping)](Behringer%20CMD%20MM-1%20\(Advanced%20Mapping\))**     | $100                                         | MIDI mixer                  | no                    | no                | MIDI            | 2013     |
-| [JBSystems DJ-kontrol 3](JBSystems%20DJ-kontrol%203)                                             | $200                                         | 2 deck controller           | yes                   | XLR: yes, RCA: no | MIDI            | 2012     |
+<table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Price (USD) [38]</th>
+<th>Description</th>
+<th>Integrated Sound Card</th>
+<th>Balanced outputs</th>
+<th>Signal protocol</th>
+<th>Released</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="Akai AMX">Akai AMX</a></td>
+<td>$250</td>
+<td>2 deck mixer</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2014</td>
+</tr>
+<tr class="even">
+<td><a href="Gemini G4V">Gemini G4V</a></td>
+<td>$350</td>
+<td>2 deck[39] all-in-one</td>
+<td>yes</td>
+<td>yes</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
+<td><a href="Pioneer DDJ-WeGO3">Pioneer DDJ-WeGO3</a></td>
+<td>$300</td>
+<td>2 deck controller and mixer</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2014</td>
+</tr>
+<tr class="even">
+<td><a href="Native Instruments Traktor Kontrol S4 Mk2">Native Instruments Traktor Kontrol S4 Mk2</a></td>
+<td>$600</td>
+<td>4 deck all-in-one</td>
+<td>yes</td>
+<td>yes</td>
+<td>HID</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
+<td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
+<td>$100</td>
+<td>1 deck controller</td>
+<td>no</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="even">
+<td><a href="Behringer CMD MM-1">Behringer CMD MM-1</a><br />
+<a href="Behringer CMD MM-1">(Alternative advanced mapping)</a></td>
+<td>$100</td>
+<td>MIDI mixer</td>
+<td>no</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
+<td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a></td>
+<td>$200</td>
+<td>2 deck controller</td>
+<td>yes</td>
+<td>XLR: yes, RCA: no</td>
+<td>MIDI</td>
+<td>2012</td>
+</tr>
+</tbody>
+</table>
 
 \</sortable\>
 

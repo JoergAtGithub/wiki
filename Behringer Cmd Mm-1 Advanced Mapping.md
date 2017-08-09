@@ -103,8 +103,8 @@ of EffectUnit1, Channel 2 controls EffectUnit2, etc.
 
 Normal: toggle maximize library, Shift: recenter Crossfader Ctrl: Cycle
 Knob assignment (swaps the mapping of the knobs as mentioned earlier.
-Third: Reassing Channel Sequence (Swaps between \[3,1,2,4\] to
-\[1,2,3,4\])
+Third: Reassing Channel Sequence (resets mapping back do the global
+defaults (look at global vars))
 
 ### Buttons
 

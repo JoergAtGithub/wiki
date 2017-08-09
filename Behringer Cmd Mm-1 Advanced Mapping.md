@@ -34,14 +34,9 @@ unused controls.
 
 Both can be changed when in ***thirdMode***: Pressing the cue-button
 toggles between Deck- and Fx-Mode. The Channelnumber is assigned with
-the \[1\]&\[2\] buttons. \<nerd speech\>
-
-``` 
-  They are mapped in a sort of two bit encoded system
-```
-
-\</nerd speech\> If you have no Idea what that is these are the combos
-and the corresponding number:
+the \[1\]&\[2\] buttons. \<nerd speech\> They are mapped in a sort of
+two bit encoded system \</nerd speech\> If you have no Idea what that is
+these are the combos and the corresponding number:
 
   - \[ \] & \[ \] = Channel 1
   - \[x\] & \[ \] = Channel 2

@@ -157,8 +157,14 @@ defaults (look at global vars))
 
 [[/media/hardware/behringer/behringercmdmm1-fadeslabeled.png|]]
 
+DeckMode:
+
   - Normal: Volume Fader
   - Shift: Rate-/BPM-Faders
+
+FxMode:
+
+  - EffectUnit Mix
 
 ### Troubleshooting
 

@@ -3,9 +3,11 @@
 This is my Advanced mapping for the Behringer CMD MM-1. Its main focus
 was not to make a complete mapping for the whole CMD series, but instead
 to add the features that the mapping for the Novation Launchpad MK2 is
-missing. [Mixxx mapping for Novation Launchpad
-🦄](novation_launchpad_mapping_by_szdavid92) Thanks to Mevsme for the
-3D-Model of the controller.
+missing [Mixxx mapping for Novation Launchpad
+🦄](novation_launchpad_mapping_by_szdavid92). This mapping can of
+course also by itself.
+
+Thanks to Mevsme for the 3D-Model of the controller.
 
 [[/media/hardware/behringer/behringercmdmm1overview.png|]]
 

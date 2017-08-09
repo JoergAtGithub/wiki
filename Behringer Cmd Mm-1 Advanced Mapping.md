@@ -108,20 +108,41 @@ Third: Reassing Channel Sequence (Swaps between \[3,1,2,4\] to
 
 ### Buttons
 
-[[/media/hardware/behringer/behringercmdmm1-buttonslabeled.png|]]
+##### DECKMODE
+
+[[/media/hardware/behringer/buttons_orientationlabeled-min.png|]]
 
 \[1\]&\[2\] Buttons:
 
-  - Normal: Toggle Fx1&2 for desired Channel
-  - Shift: Change Crossfaderside (Orientation)
+  - Normal: Change Crossfader side (Orientation)
+  - Shift: Toggle Fx1&2 for desired Channel
   - Ctrl: Toggle Fx3&4 for desired Channel
+  - Third: Change ChannelNumber/Assignment
 
 \[CUE\] Buttons:
 
-  - Pre-Fader-Listening
-  - Load selected Track to Deck
-  - Enable Fx-PFL for Unit according to channel number.
-  - reset BPM-Fader FIXME
+  - Normal: Pre-Fader-Listening
+  - Shift: Load selected Track to Deck
+  - Ctrl: Enable Fx-PFL for Unit according to channel number.
+  - Third: Change Channelmode
+
+##### FXMODE
+
+[[/media/hardware/behringer/buttonsofflabeledfxmode-min.png|]]
+
+\[1\]&\[2\] Buttons:
+
+  - Normal: Toggle Channel1&2 for desired FxUnit
+  - Shift: Toggle Channel3&4 for desired FxUnit
+  - Ctrl: Toggle Effect 1&2 in desired FxUnit
+  - Third: Change ChannelNumber/Assignment
+
+\[CUE\] Buttons:
+
+  - Normal: Pre-Fader-Listening for FxUnit
+  - Shift: assign to master
+  - Ctrl: Toggle Effect 3 for desired FxUnit
+  - Third: Change Channelmode
 
 ### Faders
 

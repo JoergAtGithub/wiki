@@ -13,15 +13,43 @@ Thanks to Mevsme for the 3D-Model of the controller.
 
 ### The concept
 
+##### Modifiers
+
 Similar to the mentioned Launchpad Mapping, this mapping features two
 modifiers: \[*SHIFT*\] and \[**CTRL**\] These allow each button to have
 up to four functionalities. They behave like the normal shift and
 control keys on your PC-Keyboard. Most of the features can be explained
-via the renderings where the functionalities are marked via the
+via the renderings where the functionalities are marked by the
 formatting of the Text (\[*SHIFT*\] and \[**CTRL**\]).
 
-Its also possible to remap the entire order of the channel from
-\[3,1,2,4\] to \[1,2,3,4\].
+##### Channels
+
+Each Channel can be put into Deck- and FX-Mode, as well as reassigned to
+a different Deck/FxUnit on the fly or via a variable at the top of the
+script. This makes it possible for people that only use two decks to use
+the other channels for controlling an EffectUnit instead of wasting the
+unused controls.
+
+##### Reassigning Channelmode and -number
+
+Both can be changed when in ***thirdMode***: Pressing the cue-button
+toggles between Deck- and Fx-Mode. The Channelnumber is assigned with
+the \[1\]&\[2\] buttons. \<nerd speech\>
+
+``` 
+  They are mapped in a sort of two bit encoded system
+```
+
+\</nerd speech\> If you have no Idea what that is these are the combos
+and the corresponding number:
+
+  - \[ \] & \[ \] = Channel 1
+  - \[x\] & \[ \] = Channel 2
+  - \[ \] & \[x\] = Channel 3
+  - \[x\] & \[x\] = Channel 4
+
+So you can change between channel 1&3 by pressing the \[1\] button, and
+channel 2&4 by pressing the \[2\] button.
 
 ### Global variables
 

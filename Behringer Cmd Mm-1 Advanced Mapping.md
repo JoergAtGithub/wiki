@@ -54,12 +54,13 @@ channel 2&4 by pressing the \[2\] button.
 
 There are four global variables at the top of the script:
 
-  - CHANNELNUMBER: The standard channelnumber of the CMD MM-1 is 5 but
+  - channelNumber: The standard channelnumber of the CMD MM-1 is 5 but
     it can differ. If thats the case you can change it here
-  - INVERTCOLOR: Swaps the colors which suits certain skins more
-  - STANDARDCHANNELSEQUENCE: Defines if the channels laid out in
-    \[1,2,3,4\] or \[3,1,2,4\] sequence by default.
-  - STANDARDKNOBBEHAVIOR: Defines the default mapping of the knobs.
+  - invertColor: Swaps the colors which suits certain skins more
+  - defaultChannelSequence: Defines how the channels are mapped by
+    default.
+  - channelMode: Defines if a channel is in Deck- or FxMode by default.
+  - standardKnobBehavior: Defines the default mapping of the knobs.
 
 ### The top row
 

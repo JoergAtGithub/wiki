@@ -1,9 +1,10 @@
 # Behringer CMD MM-1 Advanced Mapping
 
 This is my Advanced mapping for the Behringer CMD MM-1. Its main focus
-was not to make a complete mapping for the whole CMD series, but instead
-to add the features that the mapping for the Novation Launchpad MK2 is
-missing [Mixxx mapping for Novation Launchpad
+was not to make a complete mapping for the whole CMD series (see this
+mapping: [Behringer CMD MM-1](behringer_cmd_mm-1)), but instead to add
+the features that the mapping for the Novation Launchpad MK2 is missing
+[Mixxx mapping for Novation Launchpad
 🦄](novation_launchpad_mapping_by_szdavid92). This mapping can of
 course also by itself.
 

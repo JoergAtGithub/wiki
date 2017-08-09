@@ -91,11 +91,20 @@ The Cue Vol/Mix knobs have no alternative functionality.
 The Knobs have three different mappings which can be cycled while in
 operation. (more on that later) The first one is the standard
 \[High,Mid,Low,Quickeffect\]-Combo. The second one shifts everything up
-and is mapped to \[Gain,High,Mid,Low\] which some DJs might prefer. The
-third one controls the EffectUnits \[Meta1,Meta2,Meta3,Mix\]. The
+and is mapped to \[Gain,High,Mid,Low\] which some people might prefer.
+The third one controls the EffectUnits \[Meta1,Meta2,Meta3,Mix\]. The
 Effectunit is based on the channel/deck number, so the channel that
 controls the knobs/buttons/faders of channel 1 also controls the knobs
 of EffectUnit1, Channel 2 controls EffectUnit2, etc.
+
+#### FxMode-Knobs
+
+[[/media/hardware/behringer/channelstriplabeled-min.png|]]
+
+The Knobs in FxMode overwrite the assigned mapping and are mapped as
+\[Effect1Meta,Effect2Meta,Effect3Meta,Super\] but the fader is also
+mapped to the mix of the EffectUnit. The Buttons are documented in their
+own section.
 
 ### MiddleButton/exShift ;-)
 

@@ -54,8 +54,8 @@ pressed.
 34. Slip mode (affect scratch, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
-36. Enable EffectUnit1 \[EffectUnit3\]
-37. Enable EffectUnit2 \[EffectUnit4\]
+36. Enable EffectUnit1 \[EffectUnit3\] for the channel
+37. Enable EffectUnit2 \[EffectUnit4\] for the channel
 38. Up: previous track and scroll, Down: next track and scroll, Left:
     load to left, Right: load to right, Push: load to first stopped
 39. Channel select
@@ -68,22 +68,16 @@ other deck is pressed.** Changes after the previous version are in bold.
 
 1.  Set previous effect chain to the EffectUnit, **or if EffectSlotN is
     focused *Set previous effect to it*** \[Select EffectUnit1/2\]
-    **{Clear the EffectUnit/Slot}**
 2.  Set next effect chain to the EffectUnit, **or if EffectSlotN is
-    focused *Set next effect to it*** \[Select EffectUnit3/4\] **{Change
-    the focus}**
-3.  **Meta knob of the EffectSlot1 \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter1 of it \[Set the link to meta
-    knob\]*\[3\]**
-4.  **Meta knob of the EffectSlot2 \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter2 of it \[Set the link to meta
-    knob\]***
-5.  **Meta knob of the EffectSlot3 \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter3 of it \[Set the link to meta
-    knob\]***
-6.  **Super knob of the EffectUnit \[with enable/disabling\], or if
-    EffectSlotN is focused *Parameter4 of it \[Set the link to meta
-    knob\]***
+    focused *Set next effect to it*** \[Select EffectUnit3/4\]
+3.  **Meta knob of the EffectSlot1, or if EffectSlotN is focused
+    *Parameter1 of it \[Set the link to meta knob\]*\[3\]**
+4.  **Meta knob of the EffectSlot2, or if EffectSlotN is focused
+    *Parameter2 of it \[Set the link to meta knob\]***
+5.  **Meta knob of the EffectSlot3, or if EffectSlotN is focused
+    *Parameter3 of it \[Set the link to meta knob\]***
+6.  **Super knob of the EffectUnit, or if EffectSlotN is focused
+    *Parameter4 of it \[Set the link to meta knob\]***
 7.  EQ high
 8.  EQ mid
 9.  EQ low
@@ -101,11 +95,11 @@ other deck is pressed.** Changes after the previous version are in bold.
     resumes)\]**
 20. Jog (locked in slip mode)
 21. Play **\[Reverse\]**
-22. Cue **\[Adjust beatgrid to the current playposition\]**
-23. Cue and Play **\[Adjust beatgrid to match another playing deck\]**
-24. Sync mode **\[Sync key harmonically with another deck\]**
-25. Quantize mode **\[Zoom out waveform\]**
-26. Keylock mode **\[Zoom in waveform\]**
+22. Cue **\[Cue and Play\]**
+23. **Activate \[Clear\] hotcue1**
+24. **Activate \[Clear\] hotcue2**
+25. **Sync mode \[Adjust beatgrid to the current playposition\]**
+26. Keylock mode **\[Quantize mode\]**
 27. Loop by default loop size\[5\] \[Reloop\], or in loop *Exit the loop
     \[Set loop out position\]*
 28. Halve default loop size **\[Jump backward\]**, or in loop *Halve the
@@ -114,15 +108,15 @@ other deck is pressed.** Changes after the previous version are in bold.
 29. Double default loop size **\[Jump forward\]**, or in loop *Double
     the loop **\[Jump it forward\]*** **{Double jump size of the other
     deck}**
-30. Activate \[Clear\] hotcue1
-31. Activate \[Clear\] hotcue2
-32. Activate \[Clear\] hotcue3
-33. Activate \[Clear\] hotcue4
+30. **Enable \[Focus\] EffectSlot1 of the EffectUnit**
+31. **Enable \[Focus\] EffectSlot2 of the EffectUnit**
+32. **Enable \[Focus\] EffectSlot3 of the EffectUnit**
+33. **Enable the EffectUnit \[Unfocus EffectSlot\]**
 34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
-36. Enable EffectUnit1 \[EffectUnit3\]
-37. Enable EffectUnit2 \[EffectUnit4\]
+36. Enable EffectUnit1 \[EffectUnit3\] for the channel
+37. Enable EffectUnit2 \[EffectUnit4\] for the channel
 38. Up: previous **item** and scroll, Down: next **item** and scroll,
     Left: load to left, Right: load to right, **Push: next pane \[choose
     item\]**
@@ -131,7 +125,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-8-1, not compatible with 2.0)\[7\]
+(2017-8-9, not compatible with 2.0)\[7\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

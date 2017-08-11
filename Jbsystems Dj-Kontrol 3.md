@@ -3,13 +3,53 @@
 ![https://jb-systems.eu/media/catalog/product/cache/19/image/1600x1600/9df78eab33525d08d6e5fb8d27136e95/3/8/382-1.jpg](https://jb-systems.eu/media/catalog/product/cache/19/image/1600x1600/9df78eab33525d08d6e5fb8d27136e95/3/8/382-1.jpg)
 
   - [Manufacturer's product page](https://jb-systems.eu/de/dj-kontrol-3)
-  - [Forum
-    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9281)
+  - [Forum thread (Mapping
+    Download)](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9281)
 
 This DJ controller includes a 2 channel sound card with balanced XLR
 outputs (+ unbalanced RCA) and a microphone input. This controller works
 with USB cable connected only, but for better stability, it's recommend
 to use the external 5V 1A Poweradapter as well.
+
+## Usage
+
+Download the Mapping .zip file from the Forum Thread (above), unzip it
+and copy the two files (.js / .xml) to your Mixxx controllers folder.
+
+  - Linux: \~/.mixxx/controllers
+  - Windows: %USERPROFILE%\\Local Settings\\Application
+    Data\\Mixxx\\controllers
+  - Mac OS X: \~/Library/Application Support/Mixxx/controllers
+
+Start Mixxx
+
+  - On some Linux systems, Pulseaudio blocks the driver for Mixxx, so
+    you have to start Mixxx via Terminal with:
+  - pasuspender mixxx
+
+In Mixxx goto:
+
+1.  Options-\>Preferences-\>Sound Hardware:
+
+<!-- end list -->
+
+  - Sound API: ALSA
+  - Sample Rate: 48000Hz
+  - Output / Master / JB Systems DJ-Kontrol 3: USB Audio / Channels 3 -
+    4
+  - Output / Headphones / JB Systems DJ-Kontrol 3: USB Audio / Channels
+    1 - 2
+
+<!-- end list -->
+
+1.  Options-\>Preferences-\>Controllers:
+
+<!-- end list -->
+
+  - check: Enabled
+  - Load Preset for this controller
+
+Now the controller should work with Mixxx\!
 
 ## Mapping
 

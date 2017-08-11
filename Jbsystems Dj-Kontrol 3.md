@@ -13,27 +13,63 @@ to use the external 5V 1A Poweradapter as well.
 
 ## Mapping
 
-1.  Jog wheel: 
+[[/media/jbs_dj-kontrol_3_mapping2.png|]]
 
-<!-- end list -->
+1.  Select Knop
+2.  Load to Deck 1
+3.  Load to Deck 2
+4.  Back 
+5.  Deck Gain
+6.  EQ High
+7.  EQ Mid
+8.  EQ Low
+9.  Deck Volume Fader
+10. Mic Volume
+11. Mic Input
+12. Crossfader
+13. Crossfader Curve Select
+14. CUE Mix
+15. CUE Volume
+16. Headphones Output
+17. CUE Pre-fader listening (Pfl) Deck 1
+18. CUE Pre-fader listening (Pfl) Deck 2
+19. Master (Output) Volume
+20. Set Cue
+21. Cue
+22. Play/Pause
+23. Jogwheel
+24. Scratch
+25. SYNC
+26. Loop In
+27. Loop Out (Exit)
+28. Reloop
+29. 2-Beat Loop
+30. 4-Beat Loop
+31. 8-Beat Loop
+32. Halve Loop
+33. Double Loop
+34. Pitch range
+35. Speed-/Pitch Fader
+36. Pitch Bend +/-
+37. Hot-Cue, delete on shift mode
+38. Shift Mode
+39. Needle Drop Sensor
+40. Key
+41. Effect on/off
+42. Effect select
+43. Effect Parameter 1
+44. Effect Parameter 2
+45. USB Port
+46. RCA unbalanced output
+47. XLR balanced output
+48. Switch between XLR/RCA
+49. external Power-plug port
+
+-----
+
+### Jogwheel functions
 
   - Scratch Mode On: touched on top scratch
   - Scratch Mode On: touched on side pitchbend
   - Scratch Mode Off: always pitchbend
   - Shift Mode On: Loop Move
-
-<!-- end list -->
-
-1.  Deck Volume Fader
-2.  Crossfader
-3.  Speed-/Pitch Fader
-4.  Pitch Bend +/-
-5.  Deck Mixing EQ
-6.  Deck Gain
-7.  Deck Pre-fader listening (PFL)
-8.  Hot-Cue buttons, delete on shift mode
-9.  Shift Mode button
-10. Scratch button
-11. Play/pause
-12. Cue
-13. Set Cue

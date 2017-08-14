@@ -47,10 +47,11 @@ by Stéphane Lepin
 
   - Live Broadcasting preferences: actually apply settings to profiles
     only when clicking "Apply" or "OK"
-  - Initial work on new streaming encoders
+  - Work on preferences UI
 
 ##### August 14 - August 18
 
+  - Bug fixing in multi-broadcasting
   - Add support for AAC/AAC+ streaming with fdkaac
   - Add support for Opus streaming 
 

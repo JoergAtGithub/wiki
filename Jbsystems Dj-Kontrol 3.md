@@ -113,3 +113,13 @@ Now the controller should work with Mixxx\!
   - Scratch Mode On: touched on side pitchbend
   - Scratch Mode Off: always pitchbend
   - Shift Mode On: Loop Move
+
+### Special features
+
+  - Parameter 1 Knob is mapped to dry/wet
+  - Parameter 1 Shift Knob (Filter) is mapped as Super Knob
+  - Parameter 2 Knob is mapped to the first setting of the selected
+    effect
+  - Pitch Fader are inverted (up = + , down = -)
+  - Shift Btn is mapped as toggle (press to activate, press again to
+    deactivate)

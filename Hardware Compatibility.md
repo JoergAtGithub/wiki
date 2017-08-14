@@ -291,7 +291,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>$200</td>
 <td>2 deck controller</td>
 <td>yes</td>
-<td>XLR: yes, RCA: no</td>
+<td>yes</td>
 <td>MIDI</td>
 <td>2012</td>
 </tr>

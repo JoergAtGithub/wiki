@@ -116,3 +116,20 @@ Nun sollte der Controller in Mixxx funktionieren.
   - Scratch Mode An: Berührung an der Seitenkante - pitchbend
   - Scratch Mode Aus: immer pitchbend
   - Shift Mode An: Loop Move
+
+### Spezielle Funktionen
+
+  - Parameter 1 Knob steuert dry/wet
+  - Parameter 1 Shift Knob (Filter) steuert den Super Knob
+  - Parameter 2 Knob steuert den ersten Parameter des gewählten Effects
+  - Pitch Fader sind invertiert (hoch = + , runter = -)
+  - Shift drücken zum Aktivieren und nochmal drücken zum Deaktivieren
+
+### (noch) keine Funktion
+
+  - Xfader Curve Btn
+  - Pitch Lock Btn
+  - S.Start Btn
+  - Zoom Push Btn
+  - Reverse Btn
+  - Jogwheel Led Animationen

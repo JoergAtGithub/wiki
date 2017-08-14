@@ -372,4 +372,22 @@ remains to do is putting proper structure into the latest changes.
 
 #### Week 11: August 7 - August 11
 
+Secure password storage now has error messages in case something goes
+wrong when reading from or writing to the OS keychain. The preferences
+UI now has proper separation between temporary settings and "live"
+settings. To achieve this, the model parts of BroadcastSettings were
+moved to a separate class, with a sync mechanism between the two
+triggered only when applying settings. With this and the colorful
+connection states, the preferences UI is near feature-complete. The
+audio engine part is now complete: work on the audio engine refactor for
+multi-broadcasting has been merged into the main work branch, and the
+remaining bits to tidy up (input of NetworkStreamWorker, proper
+structure) were addressed.
+
+There's little much left to do on multi-broadcasting: bug hunting/fixing
+and fixing minor UI aspects still in discussion. Next week's focus will
+be to address these, as well as implementing new streaming encoders.
+
+#### Week 12: August 14 - August 18
+
 *Work in progress*

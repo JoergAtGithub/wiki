@@ -71,6 +71,7 @@ searching for the package name without the "lib" prefix.
   - [librubberband](http://breakfastquay.com/rubberband/)
   - libchromaprint
   - libsqlite3
+  - libupower-glib-dev
 
 ## Get Mixxx
 

@@ -286,7 +286,8 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2013</td>
 </tr>
 <tr class="odd">
-<td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a></td>
+<td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a><br />
+<a href="Resident DJ-kontrol 3">(Resident DJ-kontrol 3 identically?)</a></td>
 <td>$200</td>
 <td>2 deck controller</td>
 <td>yes</td>

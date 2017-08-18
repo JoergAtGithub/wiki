@@ -39,6 +39,48 @@ contributing code to other areas of mixxx that affected my project. I
 cate to appreciate OSS a bit more cause of them, and for that I have to
 thank them\!
 
+### The work I've done
+
+Througout the summer I made a revamp to the crates subsystem. I
+redisigned the class that manages crates, I added support for the
+nesting features and I created a crate filter to use in the library.
+
+These are the pr's I've made for this project:
+
+  - [Crate filter](https://github.com/mixxxdj/mixxx/pull/1263)
+  - [Crate filter tests](https://github.com/mixxxdj/mixxx/pull/1277)
+  - [Small issues](https://github.com/daschuer/mixxx/pull/19)
+  - [Nested Crates](https://github.com/mixxxdj/mixxx/pull/1304)
+
+The last one changed the filter to it's current state in order to work
+recursively.
+
+All the work I've done is based on gsoc 2016 [Library
+redesign](https://github.com/mixxxdj/mixxx/pull/1117) witch at the
+moment of writing is not yet ready to ship and is in need of further
+developement. This means that the nested crates feature will be delayed
+until developement of the library redesign is finished. Witch brings us
+to my final point.
+
+### What remains to be done
+
+The current model used for the tree view of the library doesn't support
+what I call "dynamic expansion". Dynamic expasion is the ability to
+insert new items in the tree or change the current ones (rename/remove)
+without the need for the whole tree to be reloaded (witch results in the
+folding of the tree).
+
+It also doesn't support internal drag and drop(Drag one crate to
+another). For this to work the tree items might need to also adapt to
+support internal drag and drop.
+
+I think the tree item model should be expanded to support those
+features. This needs to happen carefully due to the fact that the tree
+item model is used by other library features that don't need the extra
+stuff (d\&d, dynamic expansion) to work.
+
+I plan on sticking here to work on them in the comming weeks.
+
 ## Crate Filter
 
 A new filter is added in mixxx's search bar. User can now type `crate:`

@@ -67,11 +67,11 @@ the database.
   - [What we'll
     implement](http://dirtsimple.org/2010/11/simplest-way-to-do-tree-based-queries.html)
 
-Basicaly I'll add a table
+Basically I'll add a table
 
 '' | ParentID | ChildID | Depth | ''
 
-exaclty as in the example above.
+exactly as in the example above.
 
 Also I'll add a table with columns `| CrateID | path |` where path is a
 string that will get generated whenever the user updates the database by

@@ -13,6 +13,32 @@ is the final proposal with witch I got accepted as a participant in GSoC
   - Currently coding the Nested Crates feature. ([More
     details](https://gramanas.github.io/website/NestedCrates.html))
 
+## GSoC 2017 recap
+
+### Introduction
+
+It's been a real pleasure working on this c++ software this summer, I
+got hands on with a huuuge project and I somewhat understood how things
+would work in a production environment. I learned a lot about the
+database and how to interact with it though code, and maybe most
+importantly I've learned the value of objects in OOP and how to use them
+correctly to abstract away details that other classes shouldn't care
+about.
+
+Before I was accepted I was skimming through the code to see what I
+would have to face in case I got in, and I was really unsure if I'm
+gonna make it. It turns out it's a lot easier than it seems. You just
+have to have a plan, work slowly and carefully and take note of your
+progress. [Org Mode](http://orgmode.org/) really helped me to plan out
+my algorithms in plain words and to keep track of what I've done so far
+in the sometimes big files I had to deal with.
+
+My two mentors also helped a lot, each in their own way, both with our
+private conversations and with their comments on my PRs, and also by
+contributing code to other areas of mixxx that affected my project. I
+cate to appreciate OSS a bit more cause of them, and for that I have to
+thank them\!
+
 ## Crate Filter
 
 A new filter is added in mixxx's search bar. User can now type `crate:`

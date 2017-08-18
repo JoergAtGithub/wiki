@@ -75,10 +75,8 @@ exaclty as in the example above.
 
 Also I'll add a table with columns `| CrateID | path |` where path is a
 string that will get generated whenever the user updates the database by
-creating/moving/renaming/deleting a crate. This will be used in the
-crate: filter witch will itself be used to replace the way the crates
-are currently displayed (by generated a query just like in the new
-library redesign).
+creating/moving/renaming/deleting a crate. This is used to format the
+tree of the crates.
 
 ### Crate Filter
 

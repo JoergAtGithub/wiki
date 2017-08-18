@@ -108,7 +108,7 @@ The user can narrow down his search either by typing `crate:rock
 crate:instrumental` *(Here I assume that the different filters are
 joined together by `AND`)* to get everything under rock/instrumental.
 
-\* To get all the instrumental tracks of this library the user naturally
+To get all the instrumental tracks of this library the user naturally
 searches for `crate:instrumental`
 
 ### Crate Tree Model

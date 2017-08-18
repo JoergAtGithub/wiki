@@ -81,6 +81,9 @@ stuff (d\&d, dynamic expansion) to work.
 
 I plan on sticking here to work on them in the comming weeks.
 
+The following are the ideas for the project, and the devlog where I was
+writing what happened each week.
+
 ## Crate Filter
 
 A new filter is added in mixxx's search bar. User can now type `crate:`

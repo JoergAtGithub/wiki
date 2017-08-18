@@ -99,27 +99,14 @@ Consider the following example:
   
 ```
 
-After each modification of the crate database by the user
-(add/delete/move/rename a crate), a string will be generated for each
-crate from the first table I mentioned above, and get stored to the path
-table, witch will correspond to the "path" of the crate in the tree.
-This path is actually quite useful.
+When the user types some letters after `crate:` a query is executed that
+joins the closure table with the crates table and returns all the crate
+id's that match this word and all their children. Then using these id's
+it finds the tracks and displays them just like any other filter.
 
-It will look like this for the examples above:
-
-`/Metal`  
-`/Metal/Alternative`  
-`/Metal/Progressive`  
-`/Metal/Progressive/Instrumental`  
-`/Rock`  
-`/Rock/Instrumental`  
-The text the user has inserted after `crate:` filter will get matched to
-this string, so that the user can narrow down his search either by
-typing `crate:rock crate:instrumental` *(Here I assume that the
-different filters are joined together by `AND`)* or
-`crate:rock/instrumental` to get everything under rock/instrumental.
-Also since the new library has an exact filter match I will also add an
-exact crate filter `crate:=` for consistency.
+The user can narrow down his search either by typing `crate:rock
+crate:instrumental` *(Here I assume that the different filters are
+joined together by `AND`)* to get everything under rock/instrumental.
 
 \* To get all the instrumental tracks of this library the user naturally
 searches for `crate:instrumental`

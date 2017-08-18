@@ -371,10 +371,11 @@ bit confusing to the end user.
 
 <span class="underline">**July 31 - August 14**</span>
 
-I re implemented the crate filter and it no longer works with paths. I
-found the new one to be a bit faster and it will also be much more
-stable in it's results because it doesn't rely on a path string like
-before and uses the closure table to get it's results.
+I re implemented the crate filter and it no longer works with paths. It
+now uses the closure table. I found the new one to be a bit faster and
+it will also be much more stable in it's results because it doesn't rely
+on a path string like before and uses the closure table to get it's
+results.
 
 I also changed the naming conventions according to what we think the
 user will expect. You can name a crate whatever you want except:

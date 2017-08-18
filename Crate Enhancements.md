@@ -369,9 +369,34 @@ I am thinking about being able to move only the level 1 crates so the
 workflow would be like: duplicate \> move to position but it might be a
 bit confusing to the end user.
 
-<span class="underline">**July 31 - August 7**</span>
+<span class="underline">**July 31 - August 14**</span>
 
-<span class="underline">**August 7 - August 14**</span>
+I re implemented the crate filter and it no longer works with paths. I
+found the new one to be a bit faster and it will also be much more
+stable in it's results because it doesn't rely on a path string like
+before and uses the closure table to get it's results.
+
+I also changed the naming conventions according to what we think the
+user will expect. You can name a crate whatever you want except:
+
+  - The name of it's parent
+  - The name of any of it's siblings (same level as the one we are
+    creating/renaming and with the same parent)
+  - The name of it's immediate children (direct children of a crate)
+
+So it's basically more like a file system but you can't do this:
+`/aName/aName/aName` You can do this however (if you feel like it):
+`/aName/anotherName/aName`
+
+I added the crate summary that existed before to give some info for each
+crate.
+
+Also if you rightclick a track and then add to crate, it now displays
+the crate path so the user can distinguish one crate from the other.
+
+The feature works great so far, and I can't make it crash mixxx or slow
+the performance. Even with 15k tracks the crate queries take 100-150ms
+with the setup of \~50 crates.
 
 <span class="underline">**August 14 - August 21**</span>
 

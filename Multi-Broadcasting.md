@@ -435,7 +435,43 @@ be to address these, as well as implementing new streaming encoders.
 
 #### Week 12: August 14 - August 18
 
-*Writing in progress, publishing ASAP*
+Opus, AAC and HE-AAC encoders are now a reality in Mixxx\! These
+encoders are on the project's wishlist and much awaited by users. But in
+the process, other aspects mentioned in the previous report were
+slightly overlooked...
+
+The Opus encoder uses libopus for encoding, and the resulting encoded
+data in muxed into an Ogg stream using libogg. Opus streams embed in Ogg
+need a special "OpusHead" header packet sent to make the stream
+recognized as Opus data, and a "OpusTags" packet to provide stream/track
+comments (artist/title metadata) to players in a format identical to
+Vorbis comments. No library exists to generate instance of these two
+packets, but fortunately the structure is easy to understand and simple
+enough to implement with bit manipulations.
+
+Each Opus frame has a fixed frame size in milliseconds, defined by the
+user or developer among a set of possible values. This means the encoder
+requires a specific amount of frames to be passed to it, no less, no
+more. Whether in Live Broadcasting or Recording uses, the engine
+provides way too much samples that the encoder can't process in one go,
+so a FIFO buffer is used to store samples and get a specific number of
+samples from it on each encoder call. The same situation happens in the
+AAC encoder, with one difference: the frame size/sample count is not
+configurable by the user.
+
+The AAC encoder uses libfdk-aac and the resulting encoded data doesn't
+need additional muxing or specific headers (these aspects are handled by
+libfdk-aac, depending on encoder configuation). Mixxx's encoder
+implementation currently supports AAC-LC (traditional plain AAC), HE-AAC
+(previously AAC+) and HE-AAC v2.
+
+The AAC encoder doesn't require libfdk-aac when compiling and
+distributing Mixxx. Instead, the external library is loaded at run-time
+(a process called dynamic loading) from a known name and location. This
+behaviour is similar to Mixxx's use of libmp3lame for MP3 encoding. The
+library can be placed in Mixxx's installation folder or searched for in
+potential locations (including finding it in B.U.T.T's installation
+folder on Windows if installed in AppData)
 
 #### Final week: August 21 - August 27
 

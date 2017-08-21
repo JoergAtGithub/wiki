@@ -21,10 +21,31 @@ licensing/patent holders rights
 
   - Multi-broadcasting: [PR \#1300 on Mixxx's
     repository](https://github.com/mixxxdj/mixxx/pull/1300)
+  - Preferences UI works (still with some interaction bugs though),
+    audio engine side works without known problems.
+  - Left to do: fix preferences UI bugs
   - Opus encoder: [Internal PR \#3 on my fork of
     Mixxx](https://github.com/Palakis/mixxx/pull/3)
+  - Works without major bugs, both in Recording and Live Broadcasting
+  - Left to do: needs a clean way to size the internal FIFO frame
+    buffer, or get rid of it by telling the engine how many samples to
+    pass on every encoding call
   - AAC/HE-AAC encoder using fdk-aac: [Internal PR \#4 on my fork of
     Mixxx](https://github.com/Palakis/mixxx/pull/4)
+  - Works without major bugs (tested in Recording)
+  - Finds a dynamically-loadable libfdk-aac automatically. Windows
+    version can even find and use B.U.T.T's ("Broadcast Using This Tool"
+    by Daniel Nöthen) version of the library.
+  - Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
+  - Left to do:
+
+<!-- end list -->
+
+``` 
+    * Same as Opus: needs a clean way to size the internal FIFO frame buffer, or get rid of it by telling the engine how many samples to pass on every encoding call
+    * Live Broadcasting integration: update libshout (Icecast/Shoutcast library used by Mixxx) to support AAC streams
+    * Add options for VBR recording
+```
 
 ### GSoC Phase 1: Broadcasting profiles subsystem
 

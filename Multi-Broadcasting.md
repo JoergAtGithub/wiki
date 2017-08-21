@@ -7,44 +7,40 @@ Google Summer of Code project by Stéphane Lepin
 ### Project description
 
 This project adds multi-broadcasting to Mixxx as well as support for
-some Opus and AAC/HE-AAC encoding (which has been requested by users in
-the past). Multi-broadcasting is the ability to do live audio
-broadcasting to several streaming servers, each broadcasting connection
-having its own set of stream and encoding settings. One example use case
-of this would be a DJ willing to provide several levels of bitrates and
-audio formats to its listeners. Opus and AAC encoders are implemented as
+Opus and AAC/HE-AAC encoding (which has been requested by users in the
+past). Multi-broadcasting is the ability to do live audio broadcasting
+to several streaming servers, each broadcasting connection having its
+own set of stream and encoding settings. One example use case of this
+would be a DJ willing to provide several levels of bitrates and audio
+formats to its listeners. Opus and AAC encoders are implemented as
 recording and live streaming encoders, and the AAC encoder uses dynamic
 loading to avoid infringing both Mixx's FOSS license and AAC's
 licensing/patent holders rights
 
-### Source code
+### Relevant source code
 
   - Multi-broadcasting: [PR \#1300 on Mixxx's
     repository](https://github.com/mixxxdj/mixxx/pull/1300)
   - Preferences UI works (still with some interaction bugs though),
     audio engine side works without known problems.
-  - Left to do: fix preferences UI bugs
-  - Opus encoder: [Internal PR \#3 on my fork of
-    Mixxx](https://github.com/Palakis/mixxx/pull/3)
-  - Works without major bugs, both in Recording and Live Broadcasting
-  - Left to do: needs a clean way to size the internal FIFO frame
-    buffer, or get rid of it by telling the engine how many samples to
-    pass on every encoding call
-  - AAC/HE-AAC encoder using fdk-aac: [Internal PR \#4 on my fork of
-    Mixxx](https://github.com/Palakis/mixxx/pull/4)
-  - Works without major bugs (tested in Recording)
-  - Finds a dynamically-loadable libfdk-aac automatically. Windows
-    version can even find and use B.U.T.T's ("Broadcast Using This Tool"
-    by Daniel Nöthen) version of the library.
-  - Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
-  - Left to do:
 
 <!-- end list -->
 
 ``` 
+    * Changes made to SoundDeviceNetwork may need additional review
+* Left to do: fix preferences UI bugs and add a Status window outside the Preferences window
+* Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]
+* Works without major bugs, both in Recording and Live Broadcasting
+* Left to do: needs a clean way to size the internal FIFO frame buffer, or get rid of it by telling the engine how many samples to pass on every encoding call
+* AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]
+* Works without major bugs (tested in Recording)
+* Finds a dynamically-loadable libfdk-aac automatically. Windows version can even find and use B.U.T.T's ("Broadcast Using This Tool" by Daniel Nöthen) version of the library.
+* Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
+* Left to do:
     * Same as Opus: needs a clean way to size the internal FIFO frame buffer, or get rid of it by telling the engine how many samples to pass on every encoding call
     * Live Broadcasting integration: update libshout (Icecast/Shoutcast library used by Mixxx) to support AAC streams
     * Add options for VBR recording
+    * Add track metadata
 ```
 
 ### GSoC Phase 1: Broadcasting profiles subsystem
@@ -97,31 +93,36 @@ Broadcasting settings schema.
 
 ### GSoC Phase 2: Multiple broadcasting outputs
 
-This feature allows live audio streaming to several servers
-simultaneously and relies on the broadcasting profiles added in Phase 1.
-Management of the streaming connections is done through a new “Live
-Broadcasting” settings panel, which has a list of broadcasting outputs
-with the profile settings form under the connections table. Selecting a
-profile/connection in the list shows its settings in the aforementioned
-form (which is also editable).
+Built on top of the profiles subsystem implement of Phase 1, these
+additions provide the actual multi-broadcasting functionalities which
+will allow users to do Live Broadcasting to several Icecast/Shoutcast
+servers. Management of the streaming connections is done in the Live
+Broadcasting Preferences panel. It shows the list of configured
+broadcasting outputs, and selecting a connection in the list shows its
+profile settings in an editable form below the connections list. While
+Live Broadcasting is active, each individual connection can be enabled,
+disabled and re-enabled again.
 
 [[/media/multi-broadcasting.png|]] *UI mockup of the original design*
 
 #### Technical details
 
-  - The current libshout logic in EngineBroadcast must be separated from
-    it and moved to a new class ShoutOutput (with QThread inheritance)
-  - ShoutOutput features:
+  - The streaming code originally in EngineBroadcast has been put into a
+    new class named ShoutConnection, and EngineBroadcast has been
+    deleted
+  - ShoutConnection features:
 
 <!-- end list -->
 
 ``` 
-    * Broadcasting profile (instance of BroadcastProfile) as constructor parameter
+    * Linked with a Broadcasting Profile (instance of BroadcastProfile) passed as constructor parameter
     * Has its own FIFO buffer filled by the engine
-    * Has its own thread (base on EngineBroadcast's) to process frames available in the FIFO buffer
-* The EngineBroadcast sidechain filter must be refactored to only act as a "broadcast manager" that receives audio samples and pushes them to output instances
-* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profile list using signals and slots
-* The Live Broadcasting settings UI must be updated (see UI mockup above)
+    * Has its own thread (base on EngineBroadcast's) to process frames made available in the FIFO buffer
+ * SoundDeviceNetwork (audio engine part responsible for Live Broadcasting) now handles several outputs
+ * Management of ShoutConnection instances is done by a refactored BroadcastManager. 
+* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profiles using signals and slots
+* Manages output workers in EngineNetworkStream (which has been reworked to have several output workers and a seperate input worker)
+* The Live Broadcasting settings UI has been updated (see description above)
 ```
 
 -----
@@ -130,11 +131,9 @@ form (which is also editable).
 
 #### Live Broadcasting: UI polishing
 
-There are several aspects to cover:
-
   - Changes in LB preferences UI:
-  - Complete the "connection removal" user experience
-  - Show each connection state in the profile list
+  - Simpler and complete "Remove connection" workflow
+  - Show state of each connection in the profile list
   - Error reporting: show an error message when one or more active
     connections failed to connect
   - Addition: Live Broadcasting Status dialog (a read-only list of each
@@ -143,19 +142,20 @@ There are several aspects to cover:
 #### Broadcasting profiles: secure password storage
 
 In XML broadcasting profiles, two fields are considered sensitive:
-"Login" (username) and "Password" Currently, these sensitive fields are
-stored in plaintext. These should be optionally (enabled/disabled by a
-user setting) encrypted to avoid privacy and/or security issues. One way
-of securely storing credentials would be to use the OS' keychain using
-the [3rd-party QtKeychain
+"Login" (username) and "Password" By default, these sensitive fields are
+stored in plaintext within . These can be optionally encrypted
+(enabled/disabled by a user setting) to avoid privacy and/or security
+issues. One way of securely storing credentials is to use the OS'
+keychain using the [3rd-party QtKeychain
 library](https://github.com/frankosterfeld/qtkeychain), which is
-compatible with Windows, Linux and OS X. The broadcasting profile
-subsystem would then put and fetch sensitive information from the
-keychain instead of the profile's XML document. Broadcasting profiles
-are currently not meant for import/export and sharing, so storing values
-outside of the XML document is fine. Users doing manual transfers of
-profiles from one system to another should then see empty values for the
-sensitive fields.
+compatible with Windows, Linux and OS X. With secure password storage
+enabled, the broadcasting profile subsystem puts and gets sensitive
+information into and from the encrypted OS' keychain instead of the
+plaintext profile document. Broadcasting profiles are currently not
+meant for import/export and sharing, so storing values outside of the
+XML document is fine. Users doing manual transfers of profiles from one
+system to another do so at their own responsibility and will see empty
+values for the sensitive fields on the target computer.
 
 Entries stored through QtKeychain have three attributes
 
@@ -173,28 +173,33 @@ The schema for entries meant for broadcasting profiles look like this:
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/726991>
-  - Libshout support: see link above
-  - First solution: legally, it is possible to use FFmpeg's built-in AAC
-    encoder, which is covered by LGPLv2.1 (see [source
-    code](https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/aacenc.c)),
-    that license being seemingly
-    [compatible](https://www.gnu.org/licenses/gpl-faq.html#AllCompatibility)
-    with Mixxx's GPLv2.
-  - Not possible for AAC+ with FFmpeg, because it relies on non-free
-    libfdkaac.
-  - FFmpeg is already a Mixxx dependency
-  - Second solution: use dynamic loading of libfdkaac
-  - Both AAC (LC) and AAC+ (HE-AAC and HE-AAC v2) would be supported
-  - Windows: extract libfdk-aac-1.dll from a BUTT installation
+  - Uses libfdk-aac via dynamic loading
+  - Both AAC (LC) and AAC+ (HE-AAC and HE-AAC v2) are supported, among
+    other AAC object types
+  - Windows: extract libfdk-aac-1.dll from a BUTT installation, or find
+    and use from BUTT installation
   - OS X: install fdk-aac from Homebrew (maybe too technical?)
   - Linux: install libfdkaac package
+  - Libshout support: needs a custom version, because upstream doesn't
+    support AAC streams (unsupported MIME)
+  - Uses a FIFO buffer internally to always feed the encoder with a
+    defined number of samples
 
 #### Opus streaming support
 
   - Confirmed on the wishlist:
     <https://bugs.launchpad.net/mixxx/+bug/1338413>
   - libopus is quite easy to use
-  - The Opus datastream must be muxed in an Ogg stream
+  - Opus encoded data is muxed in an Ogg stream
+  - Requires header frames specific to Opus streams: OpusHead and
+    OpusTags
+  - These headers are standard. No library exist to generate these,
+    however their structure is quite simple and similar to Vorbis'
+    headers and comment packets.
+  - Same as fdk-aac encoder: uses a FIFO buffer internally to always
+    feed the encoder with a defined number of samples
+  - Contrary to fdk-aac, this is clearly stated in the encoder's
+    documentation
 
 -----
 

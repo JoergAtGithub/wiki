@@ -1,65 +1,8 @@
 # Multi-broadcasting
 
-by Stéphane Lepin
+Google Summer of Code project by Stéphane Lepin
 
 **Current State**: final coding period
-
-### Weekly schedule
-
-#### Phase 2: Multi-broadcasting
-
-##### June 26 - June 30
-
-  - School project
-
-##### July 3 - July 7
-
-  - Libshout streaming logic separate from EngineBroadcast to new class
-    ShoutOutput
-  - Add QList\<ShoutOutput\> instance list to EngineBroadcast
-
-##### July 10 - July 14
-
-  - Keep BroadcastSettings' profile list in sync with EngineBroadcast's
-    instance list
-  - Only on "Apply" button click on Live Broadcasting preferences
-  - Active connections shouldn't be restarted
-  - Begin work on settings UI refactor
-  - BroadcastSettings: add "rename profile" method
-
-##### July 17 - July 21
-
-  - Continue work on settings UI refactor
-
-##### July 24 - July 28
-
-  - Bug hunting in the Live Broadcasting engine
-  - Write PoC for secure credential storage
-
-#### Phase 3: Final period
-
-##### July 31 - August 4
-
-  - Implement secure password storage for Broadcasting profiles
-  - Live Broadcasting: UI polishing
-
-##### August 7 - August 11
-
-  - Live Broadcasting preferences: actually apply settings to profiles
-    only when clicking "Apply" or "OK"
-  - Work on preferences UI
-
-##### August 14 - August 18
-
-  - Bug fixing in multi-broadcasting
-  - Add support for AAC/AAC+ streaming with fdkaac
-  - Add support for Opus streaming 
-
-##### August 21 - August 25
-
-*TBD*
-
------
 
 ### Project description
 
@@ -214,6 +157,64 @@ The schema for entries meant for broadcasting profiles look like this:
     <https://bugs.launchpad.net/mixxx/+bug/1338413>
   - libopus is quite easy to use
   - The Opus datastream must be muxed in an Ogg stream
+
+-----
+
+### Weekly schedule
+
+#### Phase 2: Multi-broadcasting
+
+##### June 26 - June 30
+
+  - School project
+
+##### July 3 - July 7
+
+  - Libshout streaming logic separate from EngineBroadcast to new class
+    ShoutOutput
+  - Add QList\<ShoutOutput\> instance list to EngineBroadcast
+
+##### July 10 - July 14
+
+  - Keep BroadcastSettings' profile list in sync with EngineBroadcast's
+    instance list
+  - Only on "Apply" button click on Live Broadcasting preferences
+  - Active connections shouldn't be restarted
+  - Begin work on settings UI refactor
+  - BroadcastSettings: add "rename profile" method
+
+##### July 17 - July 21
+
+  - Continue work on settings UI refactor
+
+##### July 24 - July 28
+
+  - Bug hunting in the Live Broadcasting engine
+  - Write PoC for secure credential storage
+
+#### Phase 3: Final period
+
+##### July 31 - August 4
+
+  - Implement secure password storage for Broadcasting profiles
+  - Live Broadcasting: UI polishing
+
+##### August 7 - August 11
+
+  - Live Broadcasting preferences: actually apply settings to profiles
+    only when clicking "Apply" or "OK"
+  - Work on preferences UI
+
+##### August 14 - August 18
+
+  - Bug fixing in multi-broadcasting
+  - Add support for AAC/AAC+ streaming with fdkaac
+  - Add support for Opus streaming 
+
+##### August 21 - August 25
+
+  - Fix remaining UI bugs
+  - Rework parts of the wiki page
 
 -----
 
@@ -390,5 +391,9 @@ and fixing minor UI aspects still in discussion. Next week's focus will
 be to address these, as well as implementing new streaming encoders.
 
 #### Week 12: August 14 - August 18
+
+*Writing in progress, publishing ASAP*
+
+#### Final week: August 21 - August 27
 
 *Work in progress*

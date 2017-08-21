@@ -2,7 +2,7 @@
 
 by Stéphane Lepin
 
-**Current State**: phase 2 coding
+**Current State**: final coding period
 
 ### Weekly schedule
 

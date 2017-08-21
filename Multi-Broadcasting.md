@@ -120,7 +120,7 @@ disabled and re-enabled again.
     * Has its own thread (base on EngineBroadcast's) to process frames made available in the FIFO buffer
  * SoundDeviceNetwork (audio engine part responsible for Live Broadcasting) now handles several outputs
  * Management of ShoutConnection instances is done by a refactored BroadcastManager. 
-* Has an internal list of ShoutOutput instances, kept in sync with BroadcastSettings' profiles using signals and slots
+* Has an internal list of ShoutConnection instances, kept in sync with BroadcastSettings' profiles using signals and slots
 * Manages output workers in EngineNetworkStream (which has been reworked to have several output workers and a seperate input worker)
 * The Live Broadcasting settings UI has been updated (see description above)
 ```
@@ -363,7 +363,7 @@ two more obvious and logical.
 
 Week 7's work is for the Preferences UI. Testing is already possible
 with the current UI, and the first WIP of the new UI will allow for
-testing on several streaming outputs.
+testing on several streaming outputs. // EDIT: bad idea.//
 
 #### Week 7 and 8: July 10 - July 23
 

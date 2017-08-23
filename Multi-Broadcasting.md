@@ -21,14 +21,13 @@ licensing/patent holders rights
 
   - **Multi-broadcasting: [PR \#1300 on Mixxx's
     repository](https://github.com/mixxxdj/mixxx/pull/1300)**
-  - Preferences UI works (still with some interaction bugs though),
-    audio engine side works without known problems.
+  - Preferences UI works, audio engine side works without known
+    problems.
 
 <!-- end list -->
 
 ``` 
-    * Changes made to SoundDeviceNetwork may need external review
-* Left to do: fix preferences UI bugs and add a Status window outside the Preferences window
+    * Changes made to SoundDeviceNetwork may need external review by people with more experience in audio engines
 * **Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]**
 * Works and tested in Recording and Live Broadcasting
 * **AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]**
@@ -134,8 +133,6 @@ disabled and re-enabled again.
   - Show state of each connection in the profile list
   - Error reporting: show an error message when one or more active
     connections failed to connect
-  - Addition: Live Broadcasting Status dialog (a read-only list of each
-    output connection)
 
 #### Broadcasting profiles: secure password storage
 

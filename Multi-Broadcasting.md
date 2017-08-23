@@ -27,7 +27,7 @@ licensing/patent holders rights
 <!-- end list -->
 
 ``` 
-    * Changes made to SoundDeviceNetwork may need additional review
+    * Changes made to SoundDeviceNetwork may need external review
 * Left to do: fix preferences UI bugs and add a Status window outside the Preferences window
 * **Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]**
 * Works and tested in Recording and Live Broadcasting

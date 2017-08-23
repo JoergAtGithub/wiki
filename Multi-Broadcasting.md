@@ -19,8 +19,8 @@ licensing/patent holders rights
 
 ### Relevant source code
 
-  - Multi-broadcasting: [PR \#1300 on Mixxx's
-    repository](https://github.com/mixxxdj/mixxx/pull/1300)
+  - **Multi-broadcasting: [PR \#1300 on Mixxx's
+    repository](https://github.com/mixxxdj/mixxx/pull/1300)**
   - Preferences UI works (still with some interaction bugs though),
     audio engine side works without known problems.
 
@@ -29,9 +29,9 @@ licensing/patent holders rights
 ``` 
     * Changes made to SoundDeviceNetwork may need additional review
 * Left to do: fix preferences UI bugs and add a Status window outside the Preferences window
-* Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]
+* **Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]**
 * Works without major bugs, both in Recording and Live Broadcasting
-* AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]
+* **AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]**
 * Works without major bugs (tested in Recording), some bugs in Live Broadcasting
 * Live Broadcasting implemented with [[https://launchpad.net/~palakis/+archive/ubuntu/libshout-aac|a version of libshout]] modified for AAC streaming
 * Finds a dynamically-loadable libfdk-aac automatically. Windows version can even find and use B.U.T.T's ("Broadcast Using This Tool" by Daniel Nöthen) version of the library.

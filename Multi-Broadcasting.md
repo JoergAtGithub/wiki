@@ -31,14 +31,12 @@ licensing/patent holders rights
 * Left to do: fix preferences UI bugs and add a Status window outside the Preferences window
 * Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]
 * Works without major bugs, both in Recording and Live Broadcasting
-* Left to do: needs a clean way to size the internal FIFO frame buffer, or get rid of it by telling the engine how many samples to pass on every encoding call
 * AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]
-* Works without major bugs (tested in Recording)
+* Works without major bugs (tested in Recording), some bugs in Live Broadcasting
+* Live Broadcasting implemented with [[https://launchpad.net/~palakis/+archive/ubuntu/libshout-aac|a version of libshout]] modified for AAC streaming
 * Finds a dynamically-loadable libfdk-aac automatically. Windows version can even find and use B.U.T.T's ("Broadcast Using This Tool" by Daniel Nöthen) version of the library.
 * Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
 * Left to do:
-    * Same as Opus: needs a clean way to size the internal FIFO frame buffer, or get rid of it by telling the engine how many samples to pass on every encoding call
-    * Live Broadcasting integration: update libshout (Icecast/Shoutcast library used by Mixxx) to support AAC streams
     * Add options for VBR recording
     * Add track metadata
 ```

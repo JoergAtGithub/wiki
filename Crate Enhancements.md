@@ -10,8 +10,7 @@ is the final proposal with witch I got accepted as a participant in GSoC
 
 **<span class="underline">Current State</span>**
 
-  - Currently coding the Nested Crates feature. ([More
-    details](https://gramanas.github.io/website/NestedCrates.html))
+Final days
 
 ## GSoC 2017 recap
 

@@ -44,7 +44,7 @@ Througout the summer I made a revamp to the crates subsystem. I
 redisigned the class that manages crates, I added support for the
 nesting features and I created a crate filter to use in the library.
 
-These are the pr's I've made for this project:
+These are the PR's I've made for this project:
 
   - [Crate filter](https://github.com/mixxxdj/mixxx/pull/1263)
   - [Crate filter tests](https://github.com/mixxxdj/mixxx/pull/1277)

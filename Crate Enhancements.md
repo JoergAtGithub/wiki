@@ -469,6 +469,22 @@ The feature works great so far, and I can't make it crash mixxx or slow
 the performance. Even with 15k tracks the crate queries take 100-150ms
 with the setup of \~50 crates.
 
-<span class="underline">**August 14 - August 21**</span>
+<span class="underline">**August 14 - August 28**</span>
 
-<span class="underline">**August 21 - August 28**</span>
+These last weeks I've been cleaning the code here and there, while I've
+also added some new features.
+
+Moving crates throughout the tree is now possible via a right click
+menu, witch displays only the valid positions you can move the selected
+subtree. I found
+[this](https://www.percona.com/blog/2011/02/14/moving-subtrees-in-closure-table/)
+sometime ago, witch provided me with a really god way of moving subtrees
+in a closure table via sql queries, and it proved to be real easy to
+implement, after I figured out how to do it in sqlite instead of mysql.
+
+While moving crates I encountered the problem of a user moving a crate
+to a parent with the same name. Instead of throwing an error I decided
+to just add a "\_" to the end of the crate's name. I made it so that no
+matter what you can't break the naming conventions.
+
+I also corrected the failing crate filter tests.

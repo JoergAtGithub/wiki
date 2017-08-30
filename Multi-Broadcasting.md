@@ -2,7 +2,8 @@
 
 Google Summer of Code project by Stéphane Lepin
 
-**Current State**: final coding period
+**Current State**: Coding period over, Final Mentor evaluation in
+progress
 
 ### Project description
 
@@ -470,4 +471,17 @@ folder on Windows if installed in AppData)
 
 #### Final week: August 21 - August 27
 
-*Work in progress*
+Here it is. Three months and more than 170 (and counting) commits later,
+the official final coding period for the Google Summer of Code is over.
+Remaining engine issues in multi-broadcasting and, to a lesser extent,
+the fdk-aac and Opus encoders have been fixed. Actual work is not over
+yet\! Discussion is still going on regarding some few specific details
+of the new Live Broadcasting user experience and takes place in the
+GitHub Pull Request for multi-broadcasting.
+
+It's been an honor as well as a great pleasure to work on Mixxx during
+GSoC. In the process, I got better at C++ and with Qt and had a glimpse
+at what an audio engine looks like. Once the work on multi-broadcasting
+is done, I'd be happy to contribute other features to Mixx outside of
+GSoC. Thanks to the Mixxx Team (and Daniel, my mentor) for letting me be
+part of this adventure\!

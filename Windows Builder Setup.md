@@ -1,5 +1,4 @@
-[External Link](http://example.com)====== Setting up a Windows Builder
-======
+# Setting up a Windows Builder
 
 # Environment
 

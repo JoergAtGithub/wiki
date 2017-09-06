@@ -427,7 +427,7 @@ with InstantFX enabled are controlled by the touch strip.
   - Starting with
     [commit 2c129ea0af838543b987d55538b903e115f08ba5](https://github.com/mixxxdj/mixxx/commit/2c129ea0af838543b987d55538b903e115f08ba5),
     the Loop x1/2 button is disabled unless the corresponding deck is
-    quantized
+    set to be quantized
 
 #### Others
 

@@ -538,16 +538,16 @@ cards.
 
 \<sortable 2=numeric\>
 
-| Device                                                                                                                                                                                                                                         | Price (USD) \[40\] | Channels out         | Output connectors                                                       | Channels in          | Input connectors                                                                        | Preamps             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | -------------------- | ----------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | ------------------- |
-| [Behringer U-Control UCA202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA202/p/P0484) & [UCA222](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA222/p/P0A31) \[41\] | $30                | 2                    | 2 RCA, 1 1/8" headphone, 1 SPDIF Toslink                                | 2                    | 2 RCA                                                                                   | none                |
-| [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)\[42\]                                                                                                               | $30                | 2                    | 2 RCA, 1 1/8" headphone                                                 | 2                    | 2 RCA                                                                                   | 1 phono             |
-| [Native Instruments Traktor Audio 2 DJ (Mk2)](http://www.native-instruments.com/en/products/traktor/dj-audio-interfaces/traktor-audio-2/)                                                                                                      | $100               | 4                    | 2 1/8" stereo                                                           | 0                    | none                                                                                    | none                |
-| [ESI Maya 44 USB+](http://www.esi-audio.com/products/maya44usb+/)                                                                                                                                                                              | $140               | 4                    | 4 RCA, 1 1/4" headphone/SPDIF optical combo                             | 4                    | 4 RCA                                                                                   | none                |
-| [Focusrite Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)                                                                                                                                                            | $180               | 4                    | 2 1/4" balanced, 4 RCA, 1 1/4" headphone, 1 5-pin MIDI                  | 2                    | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                                 | 2 mic, 2 instrument |
-| [Roland Rubix24](https://www.roland.com/us/products/rubix24/)                                                                                                                                                                                  | $200               | 4                    | 4 1/4" balanced, 1 1/4" headphone, 1 5-pin MIDI                         | 2                    | 2 XLR+1/4" balanced combo, 1 5-pin MIDI                                                 | 2 mic, 1 instrument |
-| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4                    | 4 RCA                                                                   | 4                    | 4 RCA                                                                                   | 2 phono             |
-| [MOTU Ultralite AVB](http://motu.com/products/avb/ultralite-avb/)                                                                                                                                                                              | $650               | 10 analog, 8 digital | 8 1/4" balanced, 1 1/4" headphone, 1 Toslink SPDIF/ADAT, 1 AVB Ethernet | 10 analog, 8 digital | 2 XLR, 2 1/4" Hi-Z, 6 1/4" balanced or unbalanced, 1 Toslink SPDIF/ADAT, 1 AVB Ethernet | 2 mic, 2 instrument |
+| Device                                                                                                                                                                                                                                         | Price (USD) \[40\] | Channels out | Channels in | Notes                                                                                                                                                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Behringer U-Control UCA202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA202/p/P0484) & [UCA222](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UCA222/p/P0A31) \[41\] | $30                | 2            | 2           | Unlike **UFO**202, not suitable for vinyl control because it does not have phono preamps.                                                                                                                                                     |
+| [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)                                                                                                                     | $30                | 2            | 2           | Cheapest option for vinyl control, but [requires a small hardware modification](http://mixxx.org/forums/viewtopic.php?f=6&t=2438) and a separate device for each deck.                                                                        |
+| [Native Instruments Traktor Audio 2 DJ (Mk2)](http://www.native-instruments.com/en/products/traktor/dj-audio-interfaces/traktor-audio-2/)                                                                                                      | $100               | 4            | 0           | Cheap option with 4 output channels. Does not have any inputs.                                                                                                                                                                                |
+| [ESI Maya 44 USB+](http://www.esi-audio.com/products/maya44usb+/)                                                                                                                                                                              | $140               | 4            | 4           | Reported to work with vinyl control.                                                                                                                                                                                                          |
+| [Focusrite Scarlett 2i4](http://us.focusrite.com/usb-audio-interfaces/scarlett-2i4)                                                                                                                                                            | $180               | 4            | 2           | Good for incorporating live inputs (like microphones for radio broadcasting). Balanced outputs can plug directly into a PA system without needing external mixer.                                                                             |
+| [Roland Rubix24](https://www.roland.com/us/products/rubix24/)                                                                                                                                                                                  | $200               | 4            | 2           | Good for incorporating live inputs (like microphones for radio broadcasting). Has hardware compressors on inputs that can be used with direct monitoring. Balanced outputs can plug directly into a PA system without needing external mixer. |
+| [Denon DS1](http://denondj.com/products/view/ds1)                                                                                                                                                                                              | $300               | 4            | 4           | Higher quality option for vinyl control, comes with Serato timecode vinyl compatible with Mixxx.                                                                                                                                              |
+| [MOTU Ultralite AVB](http://motu.com/products/avb/ultralite-avb/)                                                                                                                                                                              | $650               | 10           | 10          | High quality balanced outputs can plug directly into a PA system and booth monitors without needing an external mixer. Also works as WiFi controllable mixer with DSP effects without needing a computer.                                     |
 
 \</sortable\>
 
@@ -583,26 +583,26 @@ allows two different DJs to use the mixer's sound card at the same time
 with their own computer for collaborative DJ sets and easy, seamless
 transitions between DJs. \<sortable 2=numeric\>
 
-| Device                                                                                                                      | Price (USD) \[43\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
+| Device                                                                                                                      | Price (USD) \[42\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
-| [Numark M101USB](http://www.numark.com/product/m101usb)                                                                     | $100               | 2     | 2             | 1         | ?                        | likely \[44\] |
-| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[45\] |
-| [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[46\] |
-| [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[47\] |
+| [Numark M101USB](http://www.numark.com/product/m101usb)                                                                     | $100               | 2     | 2             | 1         | ?                        | likely \[43\] |
+| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[44\] |
+| [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[45\] |
+| [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[46\] |
 | [Pioneer DJM-750](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-750)                                                 | $1000              | 4     | 2             | 1         | digital                  | ?             |
 | [Pioneer DJM-5000](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-5000)                                               | $1000              | 4     | 0             | 1         | digital                  | ?             |
 | [Allen & Heath Xone DB2](http://www.allen-heath.com/ahproducts/xonedb2/)                                                    | $1500              | 4     | 4             | 1         | digital                  | no            |
 | [Pioneer DJM-850](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-850)                                                 | $1500              | 4     | 2             | 1         | digital                  | ?             |
-| [Rane TTM57MkII](http://dj.rane.com/products/ttm57mkii)                                                                     | $1750              | 2     | 2             | 2         | digital                  | likely \[48\] |
-| [Rane MP2014](http://dj.rane.com/products/mp2014-mixer)                                                                     | $2000              | 4     | 2             | 2         | digital                  | likely \[49\] |
+| [Rane TTM57MkII](http://dj.rane.com/products/ttm57mkii)                                                                     | $1750              | 2     | 2             | 2         | digital                  | likely \[47\] |
+| [Rane MP2014](http://dj.rane.com/products/mp2014-mixer)                                                                     | $2000              | 4     | 2             | 2         | digital                  | likely \[48\] |
 | [Allen & Heath Xone DB4](http://www.allen-heath.com/ahproducts/xonedb4/)                                                    | $2000              | 4     | 4             | 1         | digital                  | no            |
 | [Pioneer DJM-900NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900NXS)                                           | $2000              | 4     | 2             | 1         | digital                  | ?             |
 | [Rane Sixty-Two](http://dj.rane.com/products/sixty-two)                                                                     | $2000              | 2     | 2             | 2         | digital                  | no            |
 | [Pioneer DJM-900NXS2](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/)                            | $2200              | 4     | 4             | 2         | digital                  | ?             |
 | [Rane Sixty-Four](http://dj.rane.com/products/sixty-four)                                                                   | $2200              | 4     | 4             | 2         | digital                  | no            |
 | [Pioneer DJM-900SRT](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900SRT)                                           | $2300              | 4     | 2             | 1         | digital                  | ?             |
-| [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS)                                         | $2500              | 4     | 2             | 1         | digital                  | likely \[50\] |
-| [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[51\] |
+| [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS)                                         | $2500              | 4     | 2             | 1         | digital                  | likely \[49\] |
+| [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[50\] |
 
 \</sortable\>
 
@@ -793,11 +793,7 @@ information about any particular controller.
 41. The only difference between the Behringer U-Control UCA202 & UCA222
     are the color and the software they are bundled with.
 
-42. See [this forum
-    thread](http://mixxx.org/forums/viewtopic.php?f=6&t=2438) for how to
-    modify the hardware to work with Mixxx.
-
-43. Prices listed on this page are the prevailing prices for unused
+42. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
     Shopping](https://www.google.com/?tbm=shop) in the United States.
     Prices may vary in other parts of the world, but the relative prices
@@ -808,6 +804,10 @@ information about any particular controller.
     units are not widely available online. They may or may not still be
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
+
+43. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
 
 44. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
@@ -834,9 +834,5 @@ information about any particular controller.
     it with Linux online.
 
 50. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
-
-51. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.

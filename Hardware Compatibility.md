@@ -378,11 +378,8 @@ recommended to use a sound card with phono preamplifiers.
 ### Compatibility
 
 As stated above, Mixxx can use any sound card that your OS has a driver
-to use. All sound cards listed in the table below work with Mac OS X.
-All except the Apogee Duet have drivers for the recommended [ASIO sound
-API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
-on Windows. Most work with Linux, but not all; check the table for
-details.
+to use. All USB sound cards listed in the table below work with Windows,
+macOS, and Linux.
 
 Thunderbolt sound cards can operate at lower latencies than USB or
 Firewire sound cards, but are generally only compatible with Mac OS X.

@@ -345,7 +345,8 @@ MIDI.
 Splitter cables are **the cheapest way** to get two separate sound
 outputs from your computer. These plug into the onboard sound card built
 into computer motherboards and split the stereo signal into two separate
-mono signals. However, onboard sound cards are not good quality.
+mono signals. However, onboard sound cards are not good quality, and you
+cannot hear the arrangement of different sounds in space.
 
 Devices marketed as "headphone splitter" instead of DJ splitters
 duplicate one stereo signal in two jacks. These cannot be used for

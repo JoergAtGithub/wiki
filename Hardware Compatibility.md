@@ -605,21 +605,29 @@ transitions between DJs. \<sortable 2=numeric\>
 Mixxx can work with any microphone that you can plug into a [sound
 card](#sound-cards) that your operating system supports. To preview the
 music you will play next in headphones and have microphone input, a
-single sound card with 4 output channels and microphone inputs such as
-the [Roland Rubix 24](https://www.roland.com/us/products/rubix24/) is
-recommended. These types sound cards are typically advertised for
-recording music, but they can work just as well for broadcasting. You do
-not need an external mixer unless you have more microphones than your
-sound card has microphone inputs. The simpler your signal chain is, the
-better it will sound, so using an external mixer is not recommended
-unless you have a specific reason to need one.
+single sound card with 4 output channels is recommended. To hear
+yourself on the microphone without noticeable latency, a sound card that
+supports direct monitoring is recommended. The sound cards built into
+computers meet neither of these requirements. A dedicated sound card
+such as the [Roland
+Rubix 24](https://www.roland.com/us/products/rubix24/) is recommended.
+These types sound cards are typically advertised for recording music,
+but they can work just as well for broadcasting. You do not need an
+external mixer unless you have more microphones than your sound card has
+microphone inputs. The simpler your signal chain is, the better it will
+sound, so using an external mixer is not recommended unless you have a
+specific reason to need one.
 
-USB microphones are not recommended, especially on Windows. These
-devices have their own sound card built in. Every sound card runs on its
-own clock and no two sound cards' clocks will stay synchronized. When
-using unsynchronized clocks, it is likely that there will be glitches in
-the audio. Mixxx is able to compensate for the differences between
-multiple sound cards' clocks, but ASIO, the [recommended sound
+USB microphones are not recommended. These are devices that combine a
+microphone with a USB sound card with one microphone input channel. Many
+USB microphones have a headphone jack for direct monitoring the input,
+but the computer cannot output to this jack, so you'd only hear your
+voice, but not the music from Mixxx. Again, a dedicated sound card that
+supports direct monitoring is recommended. Also, every sound card runs
+on its own clock and no two sound cards' clocks will stay synchronized.
+When using unsynchronized clocks, it is likely that there will be
+glitches in the audio. Mixxx is able to compensate for the differences
+between multiple sound cards' clocks, but ASIO, the [recommended sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
 on Windows, can only work with one sound card at a time. It is possible
 to use [ASIO4ALL](http://asio4all.com/) to use multiple sound cards at a
@@ -629,12 +637,12 @@ work.
 
 The microphone inputs on DJ controllers, particularly cheaper DJ
 controllers, is often mixed directly with the master output of the DJ
-controllers' sound card in hardware. If this is the case, it is not
-possible to get the microphone signal into the computer to broadcast
-with Mixxx. Some controllers do make the microphone input available to
-the computer though. Check the controllers' wiki page linked in the
-tables above for information about this and search online for
-information about any particular controller.
+controllers' sound card in hardware, but not digitized and sent to the
+computer. If this is the case, it is not possible to get the microphone
+signal into Mixxx for broadcasting or recording. Some controllers do
+make the microphone input available to the computer though. Check the
+controllers' wiki page linked in the tables above for information about
+this and search online for information about any particular controller.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

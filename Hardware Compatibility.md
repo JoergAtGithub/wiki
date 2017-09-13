@@ -511,12 +511,13 @@ recommended for most uses. Refer to the [Mixxx
 manual](https://mixxx.org/manual/latest/chapters/setup.html) for
 details. If your sound card does not have 4 output channels, it is
 possible to use multiple sound cards. However, this increases latency
-and there may be crackling on one sound card. Surround sound (5.1 or
-7.1) cards are [not recommended](#surround-sound-cards). They sometimes
-do signal processing in hardware or in the driver to split a stereo
-signal into multiple components. It may be possible to configure them to
-output a separate master and headphone stereo signals, but it is often
-tricky to do so.
+and there may be crackling on one sound card.
+
+Surround sound (5.1 or 7.1) cards are [not
+recommended](#surround-sound-cards). They sometimes do signal processing
+in hardware or in the driver to split a stereo signal into multiple
+components. It may be possible to configure them to output a separate
+master and headphone stereo signals, but it is often tricky to do so.
 
 This table only lists a handful of available USB sound cards that are
 currently in production and suitable for use with Mixxx. There are many

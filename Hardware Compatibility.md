@@ -602,26 +602,21 @@ transitions between DJs. \<sortable 2=numeric\>
 
 ## Microphones and broadcasting
 
-Mixxx can work with any microphone that you can plug into a [sound
-card](#sound-cards) that your operating system supports. To preview the
-music you will play next in headphones and have microphone input, a
-single sound card with 4 output channels is recommended. To hear
-yourself on the microphone without noticeable latency, a sound card that
-supports direct monitoring is recommended. The sound cards built into
-computers meet neither of these requirements. A dedicated sound card
-such as the [Roland
-Rubix 24](https://www.roland.com/us/products/rubix24/) is recommended.
-These types sound cards are typically advertised for recording music,
-but they can work just as well for broadcasting. You do not need an
-external mixer unless you have more microphones than your sound card has
-microphone inputs. The simpler your signal chain is, the better it will
-sound, so using an external mixer is not recommended unless you have a
-specific reason to need one.
+Mixxx can work with any microphone that you can plug into a sound card
+that your operating system supports. To hear yourself on the microphone
+without noticeable latency, a sound card that supports direct monitoring
+is recommended. To preview the music you will play next in headphones
+and have microphone input, a single sound card with 4 output channels is
+recommended. The sound cards built into computers meet neither of these
+criteria, so a dedicated sound card is recommended. Some options are
+listed in the [\#USB sound cards](#USB%20sound%20cards) table above. You
+do not need an external mixer, and using one is generally discouraged
+because it adds unnecessary noise and distortion to your signal chain.
 
 USB microphones are not recommended. These are devices that combine a
 microphone with a USB sound card with one microphone input channel. Many
 USB microphones have a headphone jack for direct monitoring the input,
-but the computer cannot output to this jack, so you'd only hear your
+but the computer cannot output to this jack, so you would only hear your
 voice, but not the music from Mixxx. Again, a dedicated sound card that
 supports direct monitoring is recommended. Also, every sound card runs
 on its own clock and no two sound cards' clocks will stay synchronized.

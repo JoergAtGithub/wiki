@@ -460,7 +460,7 @@ Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
 
 #### Number of channels
 
-Sound cards often have multiple connectors for a single channel,
+Sound cards sometimes have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
 send or receive an independent signal. For example, some sound cards
 made for DJing have 4 output channels with 4 mono output connectors and
@@ -469,15 +469,6 @@ send out 6 different signals at the same time; rather, the signal on 2
 of the mono outputs and the stereo headphone output would be the same.
 Also, many controllers have separate master and booth outputs with
 independent volume controls, but they both play the same signal.
-
-#### Surround sound cards
-
-Sound cards made for consumer surround sound setups such as 5.1 or 7.1
-configurations are not recommended. They typically do signal processing
-in hardware or in the driver to split a stereo signal into multiple
-components. It may be possible to configure them to output a separate
-master and headphone stereo signals, but it is often tricky to do so. A
-single sound card with 4 independent mono outputs is recommended.
 
 #### Bit depth and sample rate
 
@@ -525,7 +516,11 @@ manual](https://mixxx.org/manual/latest/chapters/setup.html) for
 details. If your sound card does not have 4 output channels, it is
 possible to use multiple sound cards. However, this increases latency
 and there may be crackling on one sound card. Surround sound (5.1 or
-7.1) cards are [not recommended](#surround-sound-cards).
+7.1) cards are [not recommended](#surround-sound-cards). They sometimes
+do signal processing in hardware or in the driver to split a stereo
+signal into multiple components. It may be possible to configure them to
+output a separate master and headphone stereo signals, but it is often
+tricky to do so.
 
 This table only lists a handful of available USB sound cards that are
 currently in production and suitable for use with Mixxx. There are many

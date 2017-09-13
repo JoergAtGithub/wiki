@@ -612,7 +612,8 @@ recommended. The sound cards built into computers meet neither of these
 criteria, so a dedicated sound card is recommended. Some options are
 listed in the [\#USB sound cards](#USB%20sound%20cards) table above. You
 do not need an external mixer, and using one is generally discouraged
-because it adds unnecessary noise and distortion to your signal chain.
+because it is overcomplicated and adds unnecessary noise & distortion to
+your signal chain.
 
 USB microphones are not recommended. These are devices that combine a
 microphone with a USB sound card with one microphone input channel. Many

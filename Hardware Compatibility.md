@@ -619,17 +619,7 @@ microphone with a USB sound card with one microphone input channel. Many
 USB microphones have a headphone jack for direct monitoring the input,
 but the computer cannot output to this jack, so you would only hear your
 voice, but not the music from Mixxx. Again, a dedicated sound card that
-supports direct monitoring is recommended. Also, every sound card runs
-on its own clock and no two sound cards' clocks will stay synchronized.
-When using unsynchronized clocks, it is likely that there will be
-glitches in the audio. Mixxx is able to compensate for the differences
-between multiple sound cards' clocks, but ASIO, the [recommended sound
-API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
-on Windows, can only work with one sound card at a time. It is possible
-to use [ASIO4ALL](http://asio4all.com/) to use multiple sound cards at a
-time with ASIO, but that makes all the sound cards appear as one device
-to Mixxx, so Mixxx's methods for accommodating multiple clocks will not
-work.
+supports direct monitoring is recommended.
 
 The microphone inputs on DJ controllers, particularly cheaper DJ
 controllers, is often mixed directly with the master output of the DJ

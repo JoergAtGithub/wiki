@@ -695,6 +695,9 @@ Components JS probably will not be very helpful. You may want to read
 the source code for the library's EffectUnit to get an idea for how to
 map your controller though.
 
+There is no need to use Components for the rest of your mapping if you
+just want to use the EffectUnit from the library.
+
 The Components provided are:
 
   - dryWetKnob ([\#Pot](#Pot))

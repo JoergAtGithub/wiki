@@ -11,9 +11,6 @@ latest version of Mixxx.
     `this` object (instead of `this` being set to the global object),
     allowing script files to be written with a more object oriented
     organization.
-  - `<key>` elements in XML that are bound to script functions can now
-    be any JavaScript expression that evaluates to a function in the
-    global context
   - Metaknobs, which act like superknobs for each effect within a chain,
     were introduced. Also, a new framework for focusing individual
     effects within a chain was introduced. Focusing an effect does not
@@ -38,6 +35,10 @@ latest version of Mixxx.
   - A new \[ChannelX\], track\_loaded ControlObject was added. If your
     script previously used track\_samples to detect if a track was
     loaded, switch to the more readable track\_loaded.
+  - `<key>` elements in XML that are bound to script functions can now
+    be any JavaScript expression that evaluates to a function in the
+    global context. Just because you can embed a JavaScript function in
+    the XML file does not mean you should though.
 
 # Mixxx 2.0
 

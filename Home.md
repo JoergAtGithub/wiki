@@ -136,11 +136,6 @@ this wiki, please fix it.
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
 
-### Code Reference
-
-  - [Performance improvements](Performance%20improvements)
-  - [Threads](Threads)
-
 ### Archives
 
   - [Developer meeting archives](meetings%20archive)

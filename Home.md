@@ -153,4 +153,5 @@ this wiki, please fix it.
 
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Engine Library format](Engine%20Library%20format)
+  - [Engine Library format](Engine%20Library%20format) (for Denon Prime
+    hardware)

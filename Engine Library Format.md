@@ -273,11 +273,13 @@ Meanings of the `type` column:
 3.  **TBC** - unsure, not populated for any sample tracks
 4.  **TBC** - unsure, not populated for any sample tracks
 5.  **TBC** - unsure, not populated for any sample tracks
-6.  **TBC** - unsure. Have seen values shared across multiple tracks,
-    which suggests it is some kind of linking UUID/key or a hash. The
-    field is not populated if a track doesn't appear in the
-    `HistorylistTrackList` table. Always seems to be an 18 or 19-digit
-    number
+6.  A 18 or 19-digit number acting as a hash that indicates which tracks
+    have been played in the most recent 'playthrough' of songs from this
+    database. See the `currentPlayedIndicator` column in the
+    `Information` table. The field is not populated if a track hasn't
+    ever been played (i.e. doesn't appear in the `HistorylistTrackList`
+    table). Unsure if the number has any inherent meaning other than for
+    hashing.
 7.  **TBC** - unsure, seems to be set to 1 for all sample tracks
 
 | Column | Type    | Meaning                                                          |

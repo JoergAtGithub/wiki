@@ -387,7 +387,7 @@ in the `m.db` database.
 | schemaVersionMajor     | INTEGER | Major part of the three-part version number for the Engine Prime library schema.                                     |
 | schemaVersionMinor     | INTEGER | Minor part of the three-part version number for the Engine Prime library schema.                                     |
 | schemaVersionPatch     | INTEGER | Patch part of the three-part version number for the Engine Prime library schema.                                     |
-| currentPlayedIndicator | INTEGER | **TBC** - appears to be set to 0 for the `p.db` database                                                             |
+| currentPlayedIndicator | INTEGER | Always set to 0 for the `p.db` database                                                                              |
 
 ### `PerformanceData`
 

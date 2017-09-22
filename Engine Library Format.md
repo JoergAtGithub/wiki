@@ -64,11 +64,14 @@ art (as determined by hashing the image data), then only one entry
 should be written in `AlbumArt` and all such tracks should set their
 `track.idAlbumArt` column to point to it.
 
-| Column   | Type    | Meaning                                              |
-| -------- | ------- | ---------------------------------------------------- |
-| id       | INTEGER | Surrogate primary key                                |
-| hash     | TEXT    | Hash of image data; **TBC - what hash algorithm???** |
-| albumArt | BLOB    | Binary image data                                    |
+**TBC** - unsure how the hash is computed. It appears to be an SHA1 hash
+from the length, but not sure what it is a hash of.
+
+| Column   | Type    | Meaning               |
+| -------- | ------- | --------------------- |
+| id       | INTEGER | Surrogate primary key |
+| hash     | TEXT    | Hash of image data    |
+| albumArt | BLOB    | Binary image data     |
 
 ### `CopiedTrack`
 

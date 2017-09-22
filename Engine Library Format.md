@@ -164,14 +164,14 @@ Versioning](http://semver.org)). When the original author of this
 document tried this out on a newly-bought Denon SC5000 Prime purchased
 in August 2017, the schema version created by the player was v1.6.0.
 
-| Column                 | Type    | Meaning                                                                                                              |
-| ---------------------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| id                     | INTEGER | Surrogate primary key                                                                                                |
-| uuid                   | TEXT    | Unique identifier for this Engine Library, in order to distinguish from other Engine Prime libraries on other media. |
-| schemaVersionMajor     | INTEGER | Major part of the three-part version number for the Engine Prime library schema.                                     |
-| schemaVersionMinor     | INTEGER | Minor part of the three-part version number for the Engine Prime library schema.                                     |
-| schemaVersionPatch     | INTEGER | Patch part of the three-part version number for the Engine Prime library schema.                                     |
-| currentPlayedIndicator | INTEGER | **TBC** - appears to match type 10 values in `MetaDataInteger`                                                       |
+| Column                 | Type    | Meaning                                                                                                                                                                                                                                                                     |
+| ---------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                     | INTEGER | Surrogate primary key                                                                                                                                                                                                                                                       |
+| uuid                   | TEXT    | Unique identifier for this Engine Library, in order to distinguish from other Engine Prime libraries on other media.                                                                                                                                                        |
+| schemaVersionMajor     | INTEGER | Major part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
+| schemaVersionMinor     | INTEGER | Minor part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
+| schemaVersionPatch     | INTEGER | Patch part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
+| currentPlayedIndicator | INTEGER | A hash of some kind, in the form of an 18 or 19-digit number, which can be used to find all tracks that have been played in the most recent 'playthrough' of tracks from the current database. The number will appear in the `MetaDataInteger` table for values of type 10. |
 
 ### `MetaData`
 

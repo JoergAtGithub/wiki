@@ -129,7 +129,7 @@ crate. A track may belong to any number of crates
 ### `Historylist`
 
 Each row represents an instance when the media containing the current
-database was loaded (and potentially played) on a compatible player.
+database was played on a compatible player.
 
 | Column | Type    | Meaning                                                                                                                                              |
 | ------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

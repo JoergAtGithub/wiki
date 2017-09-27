@@ -5,11 +5,11 @@
   - [Manufacturer's product page](http://www.faderfox.de/dj44.html)
   - [Forum
     thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9366&p=33897#p33897)
-  - [Manufacturer's User
-    Guide](http://www.faderfox.de/PDF/Manual%20DJ44%20V01.pdf)
+  - [Manufacturer's user
+    guide](http://www.faderfox.de/PDF/Manual%20DJ44%20V01.pdf)
   - [Description for hardware-implemented options in system
     mode](http://www.faderfox.de/PDF/short%20description%20DJ44%20system%20V0100.PDF)
-  - [Standard mapping for Traktor ((Link will vanish, when graphical
+  - [Standard mapping for Traktor ((link will vanish, when graphical
     mapping chart is available
     here](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
 

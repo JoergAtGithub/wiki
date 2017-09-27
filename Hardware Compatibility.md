@@ -242,7 +242,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <tr class="even">
 <td><strong><a href="Faderfox DJ44">Faderfox DJ44</a></strong></td>
 <td>€499</td>
-<td>2 deck[39]</td>
+<td>2/4 deck[39] mobile controller</td>
 <td>no</td>
 <td>no</td>
 <td>MIDI</td>

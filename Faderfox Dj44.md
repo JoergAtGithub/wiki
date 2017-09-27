@@ -1,4 +1,6 @@
-\======= Faderfox DJ44 ======
+# Faderfox DJ44
+
+[[/media/1130404.jpg|]]
 
   - [Manufacturer's product page](http://www.faderfox.de/dj44.html)
   - [Forum
@@ -11,7 +13,7 @@
     mapping chart is available
     here](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
 
-# Description
+## Description
 
 Fully midi compliant controller, industrial style, built by hand in
 Hamburg, Germany by Mathias Fuchß. Compact style for mobile DJ-ing, the
@@ -19,6 +21,8 @@ controller comes in its own carrying case. No jog wheels, scratching
 (kind of) and strip search can be done via encoders. The crossfader also
 is not initially built for scratching, as it runs pretty tight and
 slower (but precise).
+
+## Mapping
 
 Every control is sending a midi note, so the basic mapping is easy.
 Javascript is needed for Loop section and perhaps some LED.

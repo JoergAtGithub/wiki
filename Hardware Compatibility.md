@@ -240,6 +240,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
+<td><strong><a href="Faderfox DJ44">Faderfox DJ44</a></strong></td>
+<td>€499</td>
+<td>2 deck mixer, 4 deck via toggle</td>
+<td>no</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
 <td><a href="Gemini G4V">Gemini G4V</a></td>
 <td>$350</td>
 <td>2 deck[39] all-in-one</td>
@@ -248,7 +257,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Pioneer DDJ-WeGO">Pioneer DDJ-WeGO</a></td>
 <td>discontinued</td>
 <td>2 deck controller and mixer</td>
@@ -257,7 +266,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Pioneer DDJ-WeGO3">Pioneer DDJ-WeGO3</a></td>
 <td>$300</td>
 <td>2 deck controller and mixer</td>
@@ -266,7 +275,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Native Instruments Traktor Kontrol S4 Mk2">Native Instruments Traktor Kontrol S4 Mk2</a></td>
 <td>$600</td>
 <td>4 deck all-in-one</td>
@@ -275,7 +284,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
 <td>$100</td>
 <td>1 deck controller</td>
@@ -284,7 +293,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Behringer CMD MM-1">Behringer CMD MM-1</a><br />
 <a href="behringer_cmd_mm-1_advanced_mapping">(Alternative advanced mapping)</a></td>
 <td>$100</td>
@@ -294,7 +303,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a><br />
 <a href="Resident DJ-kontrol 3">(Resident DJ-kontrol 3 identically?)</a></td>
 <td>$200</td>

@@ -1,5 +1,9 @@
 # Faderfox DJ44
 
+[[/media/hardware/faderfox_dj44_01-2.jpg|]]
+[[/media/hardware/faderfox_dj44_02-2.jpg|]]
+[[/media/hardware/faderfox_dj44_03-2.jpg|]]
+
   - [Manufacturer's product page](http://www.faderfox.de/dj44.html)
   - [Forum
     thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9366&p=33897#p33897)

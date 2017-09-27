@@ -1,0 +1,24 @@
+\======= Faderfox DJ44 ======
+
+  - [Manufacturer's product page](http://www.faderfox.de/dj44.html)
+  - [Forum
+    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9366&p=33897#p33897)
+  - [Manufacturer's User
+    Guide](http://www.faderfox.de/PDF/Manual%20DJ44%20V01.pdf)
+  - [Description for hardware-implemented options in system
+    mode](http://www.faderfox.de/PDF/short%20description%20DJ44%20system%20V0100.PDF)
+  - [Standard mapping for Traktor ((Link will vanish, when graphical
+    mapping chart is available
+    here](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
+
+# Description
+
+Fully midi compliant controller, industrial style, built by hand in
+Hamburg, Germany by Mathias Fuchß. Compact style for mobile DJ-ing, the
+controller comes in its own carrying case. No jog wheels, scratching
+(kind of) and strip search can be done via encoders. The crossfader also
+is not initially built for scratching, as it runs pretty tight and
+slower (but precise).
+
+Every control is sending a midi note, so the basic mapping is easy.
+Javascript is needed for Loop section and perhaps some LED.

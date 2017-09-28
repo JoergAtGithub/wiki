@@ -7,8 +7,8 @@
 ## Links (englisch)
 
   - [Produktseite des Herstellers](http://www.faderfox.de/dj44.html)
-  - [Forum
-    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9366&p=33897#p33897)
+  - [Forum zum
+    DJ44](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9366&p=33897#p33897)
   - [Handbuch des
     Herstellers](http://www.faderfox.de/PDF/Manual%20DJ44%20V01.pdf)
   - [Beschreibung der Einstellungen im
@@ -17,7 +17,7 @@
     Traktor](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
     \[1\]
 
-## Description
+## Beschreibung
 
 Voll Midi-kompatibler Controller im Industrie-Stil, handgefertigt in
 Hamburg von Mathias Fuch? Der Controller ist kompakt genug für mobiles
@@ -32,7 +32,7 @@ können.
 
 ## Mapping
 
-Jedes Bedienelement sendet eine Mini-Noto, das dass das Basis-Mapping
+Jedes Bedienelement sendet eine Mini-Note, so dass das Basis-Mapping
 recht einfach geht. Javascript muss für die Loop-Sektion, das Scratching
 über die Encoder und wohl auch für einige LED eingesetzt werden.
 

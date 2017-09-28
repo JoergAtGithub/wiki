@@ -29,4 +29,5 @@ for 4 decks.
 ## Mapping
 
 Every control is sending a midi note, so the basic mapping is easy.
-Javascript is needed for Loop section and perhaps some LED.
+Javascript is needed for Loop section, scratching via encoders and
+perhaps for some LED.

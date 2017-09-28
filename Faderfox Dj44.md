@@ -22,7 +22,9 @@ Hamburg, Germany by Mathias Fuchß. Compact style for mobile DJ-ing, the
 controller comes in its own carrying case. No jog wheels, scratching
 (kind of) and strip search can be done via encoders. The crossfader also
 is not initially built for scratching, as it runs pretty tight and
-slower (but precise).
+slower (but precise). Default values for Deck, FX slots and global
+controls can be changed, so one can use two DJ44 devices side by side
+for 4 decks.
 
 ## Mapping
 

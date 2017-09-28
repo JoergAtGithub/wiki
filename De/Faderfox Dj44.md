@@ -20,7 +20,7 @@
 ## Beschreibung
 
 Voll Midi-kompatibler Controller im Industrie-Stil, handgefertigt in
-Hamburg von Mathias Fuch? Der Controller ist kompakt genug für mobiles
+Hamburg von Mathias Fuchß. Der Controller ist kompakt genug für mobiles
 DJ-ing und bringt sein eigenes Gehäuse mit. Er hat keine Jog-Wheels,
 (einfachstes) Scratching und die Navigation im Track (strip search/seek)
 läuft über Endlosknöpfe (Encoder). Der Crossfader ist ebenfalls nicht

@@ -3,7 +3,7 @@
 This page will contain user-contributed add-ons for Mixxx.
 
 For **extra skins**, check out the [skins subforum on the Mixxx
-forums](http://mixxx.org/forums/viewforum.php?f=8).
+forums](http://dhkgzp.org/forums/viewforum.php?f=8).
 
 # Audio Playback Plugins
 

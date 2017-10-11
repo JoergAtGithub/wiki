@@ -36,5 +36,14 @@ Jedes Bedienelement sendet eine Mini-Note, so dass das Basis-Mapping
 recht einfach geht. Javascript muss für die Loop-Sektion, das Scratching
 über die Encoder und wohl auch für einige LED eingesetzt werden.
 
+### Fortschritt
+
+v0.5: Basis-Mapping für Mixxx 2.0 via xml ist fertig und bedient die
+wichtigsten Funktionen und LED. Das Looping-Display funktioniert noch
+nicht, das Ändern der Loop-Größe braucht noch die Shift-Taste (der
+Encoder liegt brach) und die Effektzuordnung braucht mehr
+Aufmerksamkeit. Der Quick-Filter-Knopf und die LED liegen ebenfalls
+brach. Javascript-Mapping für mehr Komfort wird benötigt.
+
 1.  der Link verschwindet, wenn hier eine invidiuelle Mapping-Übersicht
     für das Mixxx-Mapping zur Verfügung steht

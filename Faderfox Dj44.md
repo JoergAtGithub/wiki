@@ -32,14 +32,10 @@ Every control is sending a midi note, so the basic mapping is easy.
 Javascript is needed for Loop section, scratching via encoders and
 perhaps for some LED.
 
-### Files
+### Progress
 
-  - Basic mapping, xml only - with continious play and loop LED
-  - Essential functions work. Improvements neede for looping (LED,
-    encoder instead of shift+buttons) and FX section.
-
-<!-- end list -->
-
-  - Basic mapping, xml only - *with blinking play and loop LED*
-  - essential functions work. Improvements neede for looping (LED,
-    encoder instead of shift+buttons) and FX section.
+v0.5: Basic mapping for Mixxx 2.0. is done via xml for essential
+functions and LED. Looping display does not work so far, changing loop
+size works via Shift+Button at the moment (encoder unused) and effects
+sections need more attention. Quick Filter button and LED is unused at
+the moment. Javascript mapping is needed for more comfort.

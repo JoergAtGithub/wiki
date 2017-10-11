@@ -31,3 +31,15 @@ for 4 decks.
 Every control is sending a midi note, so the basic mapping is easy.
 Javascript is needed for Loop section, scratching via encoders and
 perhaps for some LED.
+
+### Files
+
+  - Basic mapping, xml only - with continious play and loop LED
+  - Essential functions work. Improvements neede for looping (LED,
+    encoder instead of shift+buttons) and FX section.
+
+<!-- end list -->
+
+  - Basic mapping, xml only - *with blinking play and loop LED*
+  - essential functions work. Improvements neede for looping (LED,
+    encoder instead of shift+buttons) and FX section.

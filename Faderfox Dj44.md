@@ -95,6 +95,8 @@ Graphical overview comes later, let's say, in v1?
   - Load track in previews section and start play (left black button
     above tree browser)
   - Toggle library maximizing (right black button above tree browser)
+  - **unused:** Shift + tree and track browsing encoders, shift + black
+    buttons above tree browser/under track browser
 
 #### Equalizer
 

@@ -49,6 +49,7 @@ Mixxx 2.0
   - Understanding effect section and filtering and effects assigning
     (not so important for me originally)
   - Better nudging (progressive possible?)
+  - Check 4 deck mode - what's nescessary for that?
 
 Mixxx 2.1
 

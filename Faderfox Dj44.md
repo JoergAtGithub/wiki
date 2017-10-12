@@ -11,9 +11,9 @@
     guide](http://www.faderfox.de/PDF/Manual%20DJ44%20V01.pdf)
   - [Description for hardware-implemented options in system
     mode](http://www.faderfox.de/PDF/short%20description%20DJ44%20system%20V0100.PDF)
-  - [Standard mapping for Traktor ((link will vanish, when graphical
-    mapping chart is available
-    here](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
+  - [Standard mapping for
+    Traktor](http://www.faderfox.de/PDF/short%20description%20DJ44%20Traktor%20Pro%202%20V01.pdf)
+    \[1\]
 
 ## Description
 
@@ -128,3 +128,7 @@ more attention, since I don't use effects until today.
   - Move loop forward/backward via Shift + dark gray transport buttons
   - **unused:** Loop encoder, loop encoder push, Shift + loop encoder
     push, loop display --\> Javascript)
+
+<!-- end list -->
+
+1.  link will vanish, when graphical mapping chart is available here

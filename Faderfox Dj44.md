@@ -91,9 +91,9 @@ Graphical overview comes later, let's say, in v1?
 
   - Tree browsing, open/close elements (encoder push)
   - Track browsing, loading in next stopped deck via push, load in Deck
-    A or B via black buttons
+    A or B (via black buttons under track browser)
   - Load track in previews section and start play (left black button
-    above tree browser
+    above tree browser)
   - Toggle library maximizing (right black button above tree browser)
 
 #### Equalizer

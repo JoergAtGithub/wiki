@@ -103,7 +103,7 @@ Graphical overview comes later, let's say, in v1?
   - Deck Gain
   - High, Mid and Low EQ
   - Kill low and mid EQ with LED (Shift = mid)
-  - **unused:** Pan knobs
+  - **unused:** Pan knobs, shift + all buttons for effects
 
 #### Effects, filters
 

@@ -40,6 +40,21 @@ size works via Shift+Button at the moment (encoder unused) and effects
 sections need more attention. Quick Filter button and LED is unused at
 the moment. Javascript mapping is needed for more comfort.
 
+### Roadmap
+
+Mixxx 2.0
+
+  - Javascript mapping for Loop section and display, scratching, VuMeter
+    perhaps.
+  - Understanding effect section and filtering and effects assigning
+    (not so important for me originally)
+  - Better nudging (progressive possible?)
+
+Mixxx 2.1
+
+  - Using new Component JS
+  - Adapting effects section
+
 ### Overview (what's working?)
 
 Graphical overview comes later, let's say, in v1?

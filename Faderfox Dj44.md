@@ -46,7 +46,8 @@ Graphical overview comes later, let's say, in v1?
 
 #### Transport
 
-  - Play/Pause with LED (static or blinking)
+  - Play/Pause with LED (static or blinking - control commands are
+    documented in xml)
   - Cue (Shift+Play)
   - Fast play forward/backward (grey buttons)
   - Nudging forward/backward (dark grey buttons) - but not progressive
@@ -106,7 +107,8 @@ more attention, since I don't use effects until today.
 
   - Loop in and out
   - Double and halve loop lengt (Shift plus in/out)
-  - Start/Stop loop with LED (static or blinking)
+  - Start/Stop loop with LED (static or blinking - control commands are
+    documented in xml)
   - Move loop forward/backward via Shift + dark gray transport buttons
   - **unused:** Loop encoder, loop encoder push, Shift + loop encoder
     push, loop display --\> Javascript)

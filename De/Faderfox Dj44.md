@@ -45,5 +45,17 @@ Encoder liegt brach) und die Effektzuordnung braucht mehr
 Aufmerksamkeit. Der Quick-Filter-Knopf und die LED liegen ebenfalls
 brach. Javascript-Mapping für mehr Komfort wird benötigt.
 
+### Weitere Planung
+
+[Erstmal auf
+Englisch](https://mixxx.org/wiki/doku.php/faderfox_dj44#roadmap) - die
+deutsche Übersetzung folgt etwas später.
+
+### Überblick
+
+[Erstmal auf
+Englisch](https://mixxx.org/wiki/doku.php/faderfox_dj44#overview_what_s_working)
+- die deutsche Übersetzung folgt etwas später.
+
 1.  der Link verschwindet, wenn hier eine invidiuelle Mapping-Übersicht
     für das Mixxx-Mapping zur Verfügung steht

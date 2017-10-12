@@ -39,3 +39,54 @@ functions and LED. Looping display does not work so far, changing loop
 size works via Shift+Button at the moment (encoder unused) and effects
 sections need more attention. Quick Filter button and LED is unused at
 the moment. Javascript mapping is needed for more comfort.
+
+### Overview (what's working?)
+
+Graphical overview comes later, let's say, in v1?
+
+#### Transport
+
+  - Play/Pause with LED (static or blinking)
+  - Cue (Shift+Play)
+  - Fast play forward/backward (grey buttons)
+  - Nudging forward/backward (dark grey buttons) - but not progressive
+  - Pitch up/down, Pitch reset (encoder push)
+  - Key reset (at any Pitch rate, Shift plus encoder push)
+  - Hotcues 1 to 8 (clear with Shift)
+  - Sync button and LED (Shift unused so far)
+  - Seek encoders (push unused, should be scratching later --\>
+    Javascript)
+
+#### Mixing
+
+  - Crossfader
+  - Line fader
+  - Prelisten buttons and LED
+
+#### Master
+
+  - Master volume
+  - Headphones volume
+  - Headphone mix
+
+#### Equalizer
+
+  - Deck Gain
+  - High, Mid and Low EQ
+  - Kill low and mid EQ with LED (Shift = mid)
+  - **unused:** Pan knob
+
+#### Effects, filters
+
+  - Quick filter knob
+  - **unused:** button and LED for Quick filter (possibly: LED for
+    effect loaded?)
+
+#### Looping
+
+  - Loop in and out
+  - Double and halve loop lengt (Shift plus in/out)
+  - Start/Stop loop with LED (static or blinking)
+  - Move loop forward/backward via Shift + dark gray transport buttons
+  - **unused:** Loop encoder, loop encoder push, Shift + loop encoder
+    push, loop display --\> Javascript)

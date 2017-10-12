@@ -62,6 +62,7 @@ Graphical overview comes later, let's say, in v1?
   - Crossfader
   - Line fader
   - Prelisten buttons and LED
+  - **unused:** VuMeter (to solve, possibly Javascript)
 
 #### Master
 
@@ -69,18 +70,37 @@ Graphical overview comes later, let's say, in v1?
   - Headphones volume
   - Headphone mix
 
+#### Library
+
+  - Tree browsing, open/close elements (encoder push)
+  - Track browsing, loading in next stopped deck via push, load in Deck
+    A or B via black buttons
+  - Load track in previews section and start play (left black button
+    above tree browser
+  - Toggle library maximizing (right black button above tree browser)
+
 #### Equalizer
 
   - Deck Gain
   - High, Mid and Low EQ
   - Kill low and mid EQ with LED (Shift = mid)
-  - **unused:** Pan knob
+  - **unused:** Pan knobs
 
 #### Effects, filters
+
+Mixxx 2.0 - only first two racks are mapped. The whole sections needs
+more attention, since I don't use effects until today.
 
   - Quick filter knob
   - **unused:** button and LED for Quick filter (possibly: LED for
     effect loaded?)
+  - Switch effect rack on/off
+  - Next effect in Rack (Reset button used)
+  - Activate effect for Master output (button 1)
+  - Activate effect for Headphone output (button 2)
+  - Dry/wet knob, parameter knobs 1 to 3, parameter 4 must be done via
+    mouse
+  - **unused**: FX assing buttons and LED (todo, what could they do...)
 
 #### Looping
 

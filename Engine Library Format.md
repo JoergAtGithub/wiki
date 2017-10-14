@@ -481,12 +481,12 @@ $
 
 ### `trackData` Format
 
-| Field                                          | Type   | Values                 |
-| ---------------------------------------------- | ------ | ---------------------- |
-| Sample rate of track (in Hz)                   | double | Usually 44100          |
-| Length of track (in samples)                   | uint64 | Positive number        |
-| **TODO** - Some kind of position (in seconds)? | double |                        |
-| Analysed key of track                          | uint32 | As per MetadataInteger |
+| Field                                          | Type   | Values                                  |
+| ---------------------------------------------- | ------ | --------------------------------------- |
+| Sample rate of track (in Hz)                   | double | Usually 44100                           |
+| Length of track (in samples)                   | uint64 | Positive number                         |
+| **TODO** - Some kind of position (in seconds)? | double |                                         |
+| Analysed key of track                          | uint32 | As per MetadataInteger (for `type` = 4) |
 
 ### `highResolutionWaveFormData` Format
 

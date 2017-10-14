@@ -524,6 +524,10 @@ repeating frame can also be of varying length.
 | Whether main cue position is overridden from default | byte      | 0 or 1              |
 | Auto-detect cue position                             | double    | real number         |
 
+The standard cue colours are shown below:
+
+[[/media/standardcuecolours.png|]]
+
 ### `loops` Format
 
 **TODO** - not documented yet

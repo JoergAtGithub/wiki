@@ -474,7 +474,7 @@ Example usage (assuming the above source file is compiled to a binary
 called "ep\_uncompress"):
 
 ``` bash
-$ sqlite3 Engine\ Library/p.db "select hex(trackData) from PerformanceData where id = 1;" | xargs ./ep_uncompress 
+$ sqlite3 p.db "select hex(trackData) from PerformanceData where id = 1;" | xargs ./ep_uncompress 
 40e58880000000000000000001337a003fe2342ca00000000000000b
 $
 ```

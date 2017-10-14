@@ -350,7 +350,7 @@ stored as a file.
 | lengthCalculated          | INTEGER | Length of the track, in seconds (rounded up), as determined by track analysis                                                                  |
 | bpm                       | INTEGER | Whole-number tempo of the track, as reported by the audio file's metadata                                                                      |
 | year                      | INTEGER | Year of the track, as reported by the audio file's metadata                                                                                    |
-| path                      | TEXT    | Path to the audio file on disk, \*relative to the Engine Library directory\*                                                                   |
+| path                      | TEXT    | Path to the audio file on disk, *relative to the Engine Library directory*                                                                     |
 | filename                  | TEXT    | Name of the audio file (without any directory prefix)                                                                                          |
 | bitrate                   | INTEGER | Bitrate of the audio file                                                                                                                      |
 | bpmAnalyzed               | REAL    | Real number tempo of the track, as determined by track analysis, and usually (but not always) rounded to 1 decimal place                       |

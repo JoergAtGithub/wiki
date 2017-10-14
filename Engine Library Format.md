@@ -400,12 +400,12 @@ loops, the beat grid, as well as waveform data.
 | id                         | INTEGER | Track identifier; soft foreign key to `Track.id` in `m.db`                           |
 | isAnalyzed                 | NUMERIC | 1 if the track has been analysed, 0 if not                                           |
 | isRendered                 | NUMERIC | **TBC** - seems to always be set to 0                                                |
-| trackData                  | BLOB    |                                                                                      |
-| highResolutionWaveFormData | BLOB    |                                                                                      |
-| overviewWaveFormData       | BLOB    |                                                                                      |
-| beatData                   | BLOB    |                                                                                      |
-| quickCues                  | BLOB    |                                                                                      |
-| loops                      | BLOB    |                                                                                      |
+| trackData                  | BLOB    | Compressed track data (see below)                                                    |
+| highResolutionWaveFormData | BLOB    | Compressed waveform data (see below)                                                 |
+| overviewWaveFormData       | BLOB    | Compressed detailed waveform data (see below)                                        |
+| beatData                   | BLOB    | Compressed beat data (see below)                                                     |
+| quickCues                  | BLOB    | Compressed hot cue data (see below)                                                  |
+| loops                      | BLOB    | Loop data (not compressed, see below)                                                |
 | hasSeratoValues            | NUMERIC | **TBC** - presumably 1 if the track was imported from a Serato database, or 0 if not |
 
 ## `sm.db` Database Schema
@@ -423,3 +423,107 @@ On a sample USB stick, the 'sp' database is apparently identical to the
 from the Information table.
 
 **TBC** - perhaps the 's' in 'sp' stands for Serato?
+
+## `PerformanceData` Encoding Format
+
+The `PerformanceData` table in the `p.db` database contains a number of
+`BLOB` columns, most of which are a compressed binary format. These are
+described below.
+
+With the exception of the `loops` column, the `BLOB`s are compressed
+using zlib, but the compressed data payload is prefixed with an unsigned
+32-bit integer containing the uncompressed data length. This is the
+format used by the `qCompress` and `qUncompress` [convenience
+methods](http://doc.qt.io/qt-5/qbytearray.html#qUncompress) of the
+`QByteArray` class from the QT library, a library which is used by
+Engine Prime. If you extract compressed `BLOB` data directly from the
+SQLite database, you *will* need to uncompress it first to examine the
+contents.
+
+An example C++ program which can do this is shown below:
+
+``` cpp
+#include <iostream>
+#include <QtCore>
+
+int main(int argc, char**argv)
+{
+    if (argc != 2)
+    {
+        std::cerr << "Usage:" << std::endl;
+        std::cerr << argv[0] << " hexstring" << std::endl;
+        return 1;
+    }
+    
+    QByteArray blob = QByteArray::fromHex(argv[1]);
+
+    // Uncompress
+    QByteArray uncompressed = qUncompress(blob);
+    if (uncompressed.isEmpty())
+    {
+        std::cerr << "Corrupt input, unable to uncompress" << std::endl;
+        return 1;
+    }
+
+    // Print hexdump of the buffer
+    std::cout << uncompressed.toHex().data() << std::endl;
+}
+```
+
+Example usage (assuming the above source file is compiled to a binary
+called "ep\_uncompress"):
+
+``` bash
+$ sqlite3 Engine\ Library/p.db "select hex(trackData) from PerformanceData where id = 1;" | xargs ./ep_uncompress 
+40e58880000000000000000001337a003fe2342ca00000000000000b
+$
+```
+
+### `trackData` Format
+
+| Field                                          | Type   | Values                 |
+| ---------------------------------------------- | ------ | ---------------------- |
+| Sample rate of track (in Hz)                   | double | Usually 44100          |
+| Length of track (in samples)                   | uint64 | Positive number        |
+| **TODO** - Some kind of position (in seconds)? | double |                        |
+| Analysed key of track                          | uint32 | As per MetadataInteger |
+
+### `highResolutionWaveFormData` Format
+
+**TODO** - not documented yet
+
+### `overviewWaveFormData` Format
+
+**TODO** - not documented yet
+
+### `beatData` Format
+
+**TODO** - not documented yet
+
+### `quickCues` Format
+
+Note that the `quickCues` format has the hot cue label length, label,
+position, and colour fields 8 times sequentially, for each of the 8 hot
+cues. This is shown in the below table as a 'repeating frame', for
+brevity. Also note that since cue labels can be of varying length, each
+repeating frame can also be of varying length.
+
+| Field                                                | Type      | Values              |
+| ---------------------------------------------------- | --------- | ------------------- |
+| Num Hot Cues                                         | uint64    | Always 8            |
+| *(begin repeating frame)*                            |           |                     |
+| Hot Cue Label Length (0 = no cue point set)          | byte      | 1-255               |
+| Hot Cue Label (no null terminator)                   | char \* N | e.g. "Cue 1"        |
+| Hot Cue position (in samples, or -1 if none)         | double    | real number         |
+| Hot Cue Colour - Alpha                               | byte      | Always 255          |
+| Hot Cue Colour - Red                                 | byte      | 0-255 (dark-bright) |
+| Hot Cue Colour - Green                               | byte      | 0-255 (dark-bright) |
+| Hot Cue Colour - Blue                                | byte      | 0-255 (dark-bright) |
+| *(end repeating frame)*                              |           |                     |
+| Main cue position (i.e. using cue button)            | double    | real number         |
+| Whether main cue position is overridden from default | byte      | 0 or 1              |
+| Auto-detect cue position                             | double    | real number         |
+
+### `loops` Format
+
+**TODO** - not documented yet

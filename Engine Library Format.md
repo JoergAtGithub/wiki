@@ -522,7 +522,7 @@ repeating frame can also be of varying length.
 | *(end repeating frame)*                              |           |                     |
 | Main cue position (i.e. using cue button)            | double    | real number         |
 | Whether main cue position is overridden from default | byte      | 0 or 1              |
-| Auto-detect cue position                             | double    | real number         |
+| Default auto-detected cue position                   | double    | real number         |
 
 The standard cue colours are shown below:
 

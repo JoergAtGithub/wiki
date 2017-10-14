@@ -401,8 +401,8 @@ loops, the beat grid, as well as waveform data.
 | isAnalyzed                 | NUMERIC | 1 if the track has been analysed, 0 if not                                           |
 | isRendered                 | NUMERIC | **TBC** - seems to always be set to 0                                                |
 | trackData                  | BLOB    | Compressed track data (see below)                                                    |
-| highResolutionWaveFormData | BLOB    | Compressed waveform data (see below)                                                 |
-| overviewWaveFormData       | BLOB    | Compressed detailed waveform data (see below)                                        |
+| highResolutionWaveFormData | BLOB    | Compressed detailed waveform data (see below)                                        |
+| overviewWaveFormData       | BLOB    | Compressed high-level waveform data (see below)                                      |
 | beatData                   | BLOB    | Compressed beat data (see below)                                                     |
 | quickCues                  | BLOB    | Compressed hot cue data (see below)                                                  |
 | loops                      | BLOB    | Loop data (not compressed, see below)                                                |

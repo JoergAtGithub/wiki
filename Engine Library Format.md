@@ -430,6 +430,8 @@ The `PerformanceData` table in the `p.db` database contains a number of
 `BLOB` columns, most of which are a compressed binary format. These are
 described below.
 
+### Compression
+
 With the exception of the `loops` column, the `BLOB`s are compressed
 using zlib, but the compressed data payload is prefixed with an unsigned
 32-bit integer containing the uncompressed data length. This is the
@@ -478,6 +480,16 @@ $ sqlite3 p.db "select hex(trackData) from PerformanceData where id = 1;" | xarg
 40e58880000000000000000001337a003fe2342ca00000000000000b
 $
 ```
+
+### Note on track positions
+
+A number of fields in the PerformanceData `BLOB`s refer to positions
+within the track. These positions are usually measured in *samples*,
+rather than elapsed time. To convert to seconds, you will need to divide
+by the track's sample rate, which is stored in both `trackData` and
+`beatData`. The vast majority of tracks downloaded from the internet
+will have 44100Hz as their sample rate, although 48000Hz makes an
+appearance on occasion too.
 
 ### `trackData` Format
 

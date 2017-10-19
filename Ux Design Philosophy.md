@@ -7,15 +7,12 @@
     required to use them. Features whose use is not time sensitive do
     not need to be as easily accessible. Discoverability matters, but
     being intuitive and easy to use while performing is more important.
-3.  **Screen space is precious.** Mixxx has a lot of features and it is
-    difficult to fit them all on a laptop screen. Use screen space
-    wisely, considering the above mentioned focus on live performance.
-4.  **Minimize mutable state.** The more moving parts a user has to keep
+3.  **Minimize mutable state.** The more moving parts a user has to keep
     track of, the more likely it is they will do something accidentally.
-5.  **"Works for me" is not good enough.** It must work for everyone.
+4.  **"Works for me" is not good enough.** It must work for everyone.
     People use Mixxx with a wide variety of hardware for a wide variety
     of purposes. Your changes should not interfere with how other people
     use Mixxx. Minimize assumptions about how people use Mixxx.
-6.  **There are no power users.** Everyone should be able to use and
+5.  **There are no power users.** Everyone should be able to use and
     understand all features of Mixxx. If they cannot, the design and/or
     documentation are inadequate.

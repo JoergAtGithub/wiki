@@ -1,12 +1,18 @@
+# Mixxx User Experience Design Philosophy
+
+This is a proposal to provide guiding principals for the design of
+Mixxx.
+
 1.  **The answer is not more options.** If you feel compelled to add a
     preference that's exposed to the user, it's very possible you've
     made a wrong turn somewhere. (Copied from
     [Signal](https://github.com/WhisperSystems/Signal-Android/blob/master/CONTRIBUTING.md#development-ideology).)
 2.  **Live performance is the focus.** Features that are meant to be
     used while mixing must be easily accessible with a minimum of steps
-    required to use them. Features whose use is not time sensitive do
-    not need to be as easily accessible. Discoverability matters, but
-    being intuitive and easy to use while performing is more important.
+    (clicks, button presses, or other interactions) required to use
+    them. Features whose use is not time sensitive do not need to be as
+    easily accessible. Discoverability matters, but being intuitive and
+    easy to use while performing is more important.
 3.  **Minimize mutable state.** The more moving parts a user has to keep
     track of, the more likely it is they will do something accidentally.
 4.  **"Works for me" is not good enough.** It must work for everyone.

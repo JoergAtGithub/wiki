@@ -1,7 +1,7 @@
 1.  **The answer is not more options.** If you feel compelled to add a
     preference that's exposed to the user, it's very possible you've
     made a wrong turn somewhere. (Copied from
-    [Signal](https://github.com/WhisperSystems/Signal-Android/blob/master/CONTRIBUTING.md#development-ideology))
+    [Signal](https://github.com/WhisperSystems/Signal-Android/blob/master/CONTRIBUTING.md#development-ideology).)
 2.  **Live performance is the focus.** Features that are meant to be
     used while mixing must be easily accessible with a minimum of steps
     required to use them. Features whose use is not time sensitive do
@@ -15,4 +15,7 @@
 5.  **"Works for me" is not good enough.** It must work for everyone.
     People use Mixxx with a wide variety of hardware for a wide variety
     of purposes. Your changes should not interfere with how other people
-    use Mixxx.
+    use Mixxx. Minimize assumptions about how people use Mixxx.
+6.  **There are no power users.** Everyone should be able to use and
+    understand all features of Mixxx. If they cannot, the design and/or
+    documentation are inadequate.

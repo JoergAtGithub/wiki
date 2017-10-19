@@ -21,4 +21,4 @@ Mixxx.
     use Mixxx. Minimize assumptions about how people use Mixxx.
 4.  **Everyone can be a power user.** Everyone should be able to use and
     understand all features of Mixxx. If they cannot, the design and/or
-    documentation are inadequate.
+    documentation are not good enough.

@@ -19,6 +19,6 @@ Mixxx.
     People use Mixxx with a wide variety of hardware for a wide variety
     of purposes. Your changes should not interfere with how other people
     use Mixxx. Minimize assumptions about how people use Mixxx.
-5.  **There are no power users.** Everyone should be able to use and
+5.  **Everyone can be a power user.** Everyone should be able to use and
     understand all features of Mixxx. If they cannot, the design and/or
     documentation are inadequate.

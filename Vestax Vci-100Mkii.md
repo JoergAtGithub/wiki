@@ -83,7 +83,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 9.  EQ low
 10. **Pitch (up and down to 3 semitones continuously, or in keylock mode
     *discretely*)**
-11. Filter (high pass only)\[4\]
+11. Filter **(super knob of Quick Effect)**
 12. **Gain**
 13. Rate \[Rate by quantized BPM\]
 14. Channel fader
@@ -100,10 +100,10 @@ other deck is pressed.** Changes after the previous version are in bold.
 24. **Activate \[Clear\] hotcue2**
 25. **Sync mode \[Adjust beatgrid to the current playposition\]**
 26. Keylock mode **\[Quantize mode\]**
-27. Loop by default loop size\[5\] \[Reloop\], or in loop *Exit the loop
+27. Loop by default loop size\[4\] \[Reloop\], or in loop *Exit the loop
     \[Set loop out position\]*
 28. Halve default loop size **\[Jump backward\]**, or in loop *Halve the
-    loop **\[Jump it backward\]*** **{Halve jump size\[6\] of the other
+    loop **\[Jump it backward\]*** **{Halve jump size\[5\] of the other
     deck}**
 29. Double default loop size **\[Jump forward\]**, or in loop *Double
     the loop **\[Jump it forward\]*** **{Double jump size of the other
@@ -125,7 +125,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-10-9, not compatible with 2.0)\[7\]
+(2017-11-1, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
@@ -139,17 +139,11 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
 3.  left-right inverse -\> right inverse -\> left inverse -\> full
     inverse -\> none -\> full -\> left -\> right -\> left-right
 
-4.  see [the
-    article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)
-    or use [Controller
-    Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
-    (choose "Quick Effect Super Knob") for low-high pass
+4.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
+    64** LED29, **size \> 64** LED28 & 29
 
 5.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
     64** LED29, **size \> 64** LED28 & 29
 
-6.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
-    64** LED29, **size \> 64** LED28 & 29
-
-7.  see [Controller Mapping File
+6.  see [Controller Mapping File
     Locations](controller_mapping_file_locations) for use

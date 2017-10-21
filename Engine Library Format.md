@@ -491,6 +491,45 @@ by the track's sample rate, which is stored in both `trackData` and
 will have 44100Hz as their sample rate, although 48000Hz makes an
 appearance on occasion too.
 
+Furthermore, some position fields (for example, in `beatData` and
+`loops`) are stored as doubles but in *little-endian* format, and so the
+endianness will need to be changed before working with the numbers. The
+below function can do this for a 64-bit integer (containing the bits
+that will subsequently be interpreted as a double):
+
+``` cpp
+uint64_t change_endianness(uint64_t v)
+{
+    uint64_t result = 0;
+    result |= (v & 0x00000000000000ff) << 56;
+    result |= (v & 0x000000000000ff00) << 40;
+    result |= (v & 0x0000000000ff0000) << 24;
+    result |= (v & 0x00000000ff000000) << 8;
+    result |= (v & 0x000000ff00000000) >> 8;
+    result |= (v & 0x0000ff0000000000) >> 24;
+    result |= (v & 0x00ff000000000000) >> 40;
+    result |= (v & 0xff00000000000000) >> 56;
+    return result;
+}
+```
+
+#### Standard Cue/Loop Colours
+
+The standard cue/loop colours are shown below:
+
+[[/media/standardcuecolours.png|]]
+
+| Cue/Loop No. | RGB ([Hex triplet](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)) |
+| ------------ | ------------------------------------------------------------------------- |
+| 1            | EAC532                                                                    |
+| 2            | EA8F32                                                                    |
+| 3            | B855BF                                                                    |
+| 4            | BA2A41                                                                    |
+| 5            | 86C64B                                                                    |
+| 6            | 20C67C                                                                    |
+| 7            | 00A8B1                                                                    |
+| 8            | 158EE2                                                                    |
+
 ### `trackData` Format
 
 | Field                                          | Type   | Values                                  |
@@ -536,10 +575,30 @@ repeating frame can also be of varying length.
 | Whether main cue position is overridden from default | byte      | 0 or 1              |
 | Default auto-detected cue position                   | double    | real number         |
 
-The standard cue colours are shown below:
-
-[[/media/standardcuecolours.png|]]
-
 ### `loops` Format
 
-**TODO** - not documented yet
+Note that the `loops` format has the loop label length, label, position,
+and colour fields 8 times sequentially, for each of the 8 loops. This is
+shown in the below table as a 'repeating frame', for brevity. Also note
+that since labels can be of varying length, each repeating frame can
+also be of varying length.
+
+Note also that, unlike the other fields in `PerformanceData`, `loops` is
+not compressed.
+
+| Field                                       | Type                     | Values              |
+| ------------------------------------------- | ------------------------ | ------------------- |
+| Num Loops                                   | byte                     | Always 8            |
+| Padding                                     | byte \* 7                | Always 0            |
+| *(begin repeating frame)*                   |                          |                     |
+| Loop Label Length (0 = no loop set)         | byte                     | 1-255               |
+| Loop Label (no null terminator)             | char \* N                | e.g. "Loop 1"       |
+| Start position (in samples, -1 = not set)   | double (little-endian\!) | \+ve number         |
+| End position (in samples, -1 = not set)     | double (little-endian\!) | \+ve number         |
+| Loop start point set (0 = not set, 1 = set) | byte                     | 0 or 1              |
+| Loop end point set (0 = not set, 1 = set)   | byte                     | 0 or 1              |
+| Loop Colour - Alpha                         | byte                     | Always 255          |
+| Loop Colour - Red                           | byte                     | 0-255 (dark-bright) |
+| Loop Colour - Green                         | byte                     | 0-255 (dark-bright) |
+| Loop Colour - Blue                          | byte                     | 0-255 (dark-bright) |
+| *(end repeating frame)*                     |                          |                     |

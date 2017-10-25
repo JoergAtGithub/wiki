@@ -167,14 +167,14 @@ Versioning](http://semver.org)). When the original author of this
 document tried this out on a newly-bought Denon SC5000 Prime purchased
 in August 2017, the schema version created by the player was v1.6.0.
 
-| Column                 | Type    | Meaning                                                                                                                                                                                                                                                                     |
-| ---------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                     | INTEGER | Surrogate primary key                                                                                                                                                                                                                                                       |
-| uuid                   | TEXT    | Unique identifier for this Engine Library, in order to distinguish from other Engine Prime libraries on other media.                                                                                                                                                        |
-| schemaVersionMajor     | INTEGER | Major part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
-| schemaVersionMinor     | INTEGER | Minor part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
-| schemaVersionPatch     | INTEGER | Patch part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                            |
-| currentPlayedIndicator | INTEGER | A hash of some kind, in the form of an 18 or 19-digit number, which can be used to find all tracks that have been played in the most recent 'playthrough' of tracks from the current database. The number will appear in the `MetaDataInteger` table for values of type 10. |
+| Column                 | Type    | Meaning                                                                                                                                                                                                                                                             |
+| ---------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                     | INTEGER | Surrogate primary key                                                                                                                                                                                                                                               |
+| uuid                   | TEXT    | Unique identifier for this Engine Library, in order to distinguish from other Engine Prime libraries on other media.                                                                                                                                                |
+| schemaVersionMajor     | INTEGER | Major part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                    |
+| schemaVersionMinor     | INTEGER | Minor part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                    |
+| schemaVersionPatch     | INTEGER | Patch part of the three-part version number for the Engine Prime library schema.                                                                                                                                                                                    |
+| currentPlayedIndicator | INTEGER | A hash of some kind, in the form of an 64-bit number, which can be used to find all tracks that have been played in the most recent 'playthrough' of tracks from the current database. The number will appear in the `MetaDataInteger` table for values of type 10. |
 
 ### `MetaData`
 
@@ -276,8 +276,8 @@ Meanings of the `type` column:
 3.  **TBC** - unsure, not populated for any sample tracks
 4.  **TBC** - unsure, not populated for any sample tracks
 5.  **TBC** - unsure, not populated for any sample tracks
-6.  A 18 or 19-digit number acting as a hash that indicates which tracks
-    have been played in the most recent 'playthrough' of songs from this
+6.  A 64-bit number acting as a hash that indicates which tracks have
+    been played in the most recent 'playthrough' of songs from this
     database. See the `currentPlayedIndicator` column in the
     `Information` table. The field is not populated if a track hasn't
     ever been played (i.e. doesn't appear in the `HistorylistTrackList`
@@ -549,7 +549,101 @@ The standard cue/loop colours are shown below:
 
 ### `beatData` Format
 
-**TODO** - not documented yet
+The `beatData` format has two sub-structures nested within it: the beat
+grid, and a beat grid marker. There are two beat grids in each field:
+one for the *default* beat grid (as analyzed by Engine Prime or an
+SC5000) and an *adjusted* beat grid (if you mess around with it by
+hand). Each beat grid contains a number of beat grid markers, of which
+there are a minimum of two.
+
+The *first* beat marker in any beat grid is always "beat -4", i.e. four
+beats before the first usable beat in the track. Hence, its sample
+offset in the file is negative (before the start of the track\!).
+Naturally, it is not possible to actually play any audio from a period
+in time before the track has actually begun, but the position is still
+useful to allow for the beat grid to be manually adjusted by up to 4
+beats.
+
+The *last* beat marker in any beat grid is always "beat N + 1", i.e. one
+beat past the last usable beat in the track. Hence, its sample offset in
+the file is beyond the last sample in the track.
+
+Also note that when discussing the index/number of any given beat, the
+`beatData` format always assumes that the first beat in the file is beat
+1, and the last is beat N.
+
+Note that the BPM can be calculated from the information in `beatData`
+as follows:
+
+> BPM = SampleRate \* 60 \* (LastMarkerBeatIndex - FirstMarkerBeatIndex)
+> / (LastMarkerSampleOffset - FirstMarkerSampleOffset)
+
+Main `beatData` format:
+
+| Field                                        | Type     | Values          |
+| -------------------------------------------- | -------- | --------------- |
+| Sample Rate (in Hertz)                       | double   | usually 44100   |
+| Track length (in samples)                    | double   | positive number |
+| Is beat data set (always 1)                  | byte     | always 1        |
+| Default beatgrid                             | beatgrid | see below..     |
+| Adjusted beatgrid (same as default if unadj) | beatgrid | see below..     |
+
+`beatgrid` format:
+
+| Field                                  | Type      | Values            |
+| -------------------------------------- | --------- | ----------------- |
+| Number N of "markers" in this beatgrid | uint64    | 2 or 3, usually 2 |
+| Beat grid marker (repeated N times)    | marker\*N | see below..       |
+
+`marker` format:
+
+| Field                                         | Type                     | Values               |
+| --------------------------------------------- | ------------------------ | -------------------- |
+| Sample offset                                 | double (little-endian\!) | \-ve or +ve number\! |
+| Beat number/index                             | uint64 (little-endian\!) | \-ve or +ve number\! |
+| Number of beats until next marker (0 if done) | uint32 (little-endian\!) | \+ve, or 0 if done   |
+| Unknown field?\!?                             | uint32 (little-endian\!) | ???                  |
+
+**TODO** - there is still an unknown value in the beat grid marker
+sub-structure. This is populated with varying values, but its exact form
+and function is not currently known.
+
+#### Example `beatData` field
+
+As `beatData` is one of the more complex fields in the Engine Library
+format, an example always helps. The below is from an example track,
+where the beatgrid has been adjusted in Engine Prime to correct a
+mis-identified tempo (wrongly thought to be 97, but was actually 108.3):
+
+| Field                             | Value       |
+| --------------------------------- | ----------- |
+| Sample Rate (in Hertz)            | 44100       |
+| Track length (in samples)         | 16988686    |
+| Is beat data set (always 1)       | 1           |
+| **Default beatgrid**              |             |
+| Num markers                       | 2           |
+| 1st marker offset                 | \-88813.78  |
+| 1st marker beat index             | \-4         |
+| 1st marker beat until next marker | 628         |
+| 1st marker unknown field          | ???         |
+| 2nd marker offset                 | 17000758.37 |
+| 2nd marker beat index             | 624         |
+| 2nd marker beat until next marker | 0           |
+| 2nd marker unknown field          | ???         |
+| **Adjusted beatgrid**             |             |
+| Num markers                       | 2           |
+| 1st marker offset                 | \-57722.04  |
+| 1st marker beat index             | \-4         |
+| 1st marker beat until next marker | 698         |
+| 1st marker unknown field          | ???         |
+| 2nd marker offset                 | 16995906.29 |
+| 2nd marker beat index             | 694         |
+| 2nd marker beat until next marker | 0           |
+| 2nd marker unknown field          | ???         |
+
+Using the adjusted beatgrid values above, the BPM can be calculated as:
+
+> BPM = 44100 \* 60 \* (694 + 4) / (16995906.29 + 57722.04) = 108.3
 
 ### `quickCues` Format
 

@@ -600,7 +600,7 @@ Main `beatData` format:
 | Field                                         | Type                     | Values               |
 | --------------------------------------------- | ------------------------ | -------------------- |
 | Sample offset                                 | double (little-endian\!) | \-ve or +ve number\! |
-| Beat number/index                             | uint64 (little-endian\!) | \-ve or +ve number\! |
+| Beat number/index                             | int64 (little-endian\!)  | \-ve or +ve number\! |
 | Number of beats until next marker (0 if done) | uint32 (little-endian\!) | \+ve, or 0 if done   |
 | Unknown field?\!?                             | uint32 (little-endian\!) | ???                  |
 

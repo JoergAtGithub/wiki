@@ -570,7 +570,8 @@ the file is beyond the last sample in the track.
 
 Also note that when discussing the index/number of any given beat, the
 `beatData` format always assumes that the first beat in the file is beat
-1, and the last is beat N.
+0, and the last is beat N. The index/number of a given beat is not shown
+to the end user in either Engine Prime or an SC5000's display.
 
 Note that the BPM can be calculated from the information in `beatData`
 as follows:

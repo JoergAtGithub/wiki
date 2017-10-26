@@ -615,31 +615,31 @@ format, an example always helps. The below is from an example track,
 where the beatgrid has been adjusted in Engine Prime to correct a
 mis-identified tempo (wrongly thought to be 97, but was actually 108.3):
 
-| Field                             | Value       |
-| --------------------------------- | ----------- |
-| Sample Rate (in Hertz)            | 44100       |
-| Track length (in samples)         | 16988686    |
-| Is beat data set (always 1)       | 1           |
-| **Default beatgrid**              |             |
-| Num markers                       | 2           |
-| 1st marker offset                 | \-88813.78  |
-| 1st marker beat index             | \-4         |
-| 1st marker beat until next marker | 628         |
-| 1st marker unknown field          | ???         |
-| 2nd marker offset                 | 17000758.37 |
-| 2nd marker beat index             | 624         |
-| 2nd marker beat until next marker | 0           |
-| 2nd marker unknown field          | ???         |
-| **Adjusted beatgrid**             |             |
-| Num markers                       | 2           |
-| 1st marker offset                 | \-57722.04  |
-| 1st marker beat index             | \-4         |
-| 1st marker beat until next marker | 698         |
-| 1st marker unknown field          | ???         |
-| 2nd marker offset                 | 16995906.29 |
-| 2nd marker beat index             | 694         |
-| 2nd marker beat until next marker | 0           |
-| 2nd marker unknown field          | ???         |
+| Field                              | Value       |
+| ---------------------------------- | ----------- |
+| Sample Rate (in Hertz)             | 44100       |
+| Track length (in samples)          | 16988686    |
+| Is beat data set (always 1)        | 1           |
+| **Default beatgrid**               |             |
+| Num markers                        | 2           |
+| 1st marker offset                  | \-88813.78  |
+| 1st marker beat index              | \-4         |
+| 1st marker beats until next marker | 628         |
+| 1st marker unknown field           | ???         |
+| 2nd marker offset                  | 17000758.37 |
+| 2nd marker beat index              | 624         |
+| 2nd marker beats until next marker | 0           |
+| 2nd marker unknown field           | ???         |
+| **Adjusted beatgrid**              |             |
+| Num markers                        | 2           |
+| 1st marker offset                  | \-57722.04  |
+| 1st marker beat index              | \-4         |
+| 1st marker beats until next marker | 698         |
+| 1st marker unknown field           | ???         |
+| 2nd marker offset                  | 16995906.29 |
+| 2nd marker beat index              | 694         |
+| 2nd marker beats until next marker | 0           |
+| 2nd marker unknown field           | ???         |
 
 Using the adjusted beatgrid values above, the BPM can be calculated as:
 

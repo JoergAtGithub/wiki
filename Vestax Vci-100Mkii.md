@@ -77,7 +77,8 @@ other deck is pressed.** Changes after the previous version are in bold.
 5.  **Meta knob of the EffectSlot3, or if EffectSlotN is focused
     *Parameter3 of it \[Set the link to meta knob\]***
 6.  **Super knob of the EffectUnit, or if EffectSlotN is focused
-    *Parameter4 of it \[Set the link to meta knob\]***
+    *Parameter4 of it \[Set the link to meta knob\]*, or if enabled by
+    SW33 *wet/dry mix of the EffectUnit***
 7.  EQ high
 8.  EQ mid
 9.  EQ low
@@ -111,21 +112,22 @@ other deck is pressed.** Changes after the previous version are in bold.
 30. **Enable \[Focus\] EffectSlot1 of the EffectUnit**
 31. **Enable \[Focus\] EffectSlot2 of the EffectUnit**
 32. **Enable \[Focus\] EffectSlot3 of the EffectUnit**
-33. **Enable the EffectUnit \[Unfocus EffectSlot\]**
+33. **Enable wet/dry mix control of the EffectUnit \[Unfocus
+    EffectSlot\]**
 34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
 36. Enable EffectUnit1 \[EffectUnit3\] for the channel
 37. Enable EffectUnit2 \[EffectUnit4\] for the channel
-38. Up: previous **item** and scroll, Down: next **item** and scroll,
-    Left: load to left, Right: load to right, **Push: next pane \[choose
-    item\]**
+38. Up: previous **item \[pane\]** and scroll, Down: next **item
+    \[pane\]** and scroll, Left: load to left, Right: load to right,
+    Push: **choose item**
 39. Channel select
 
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-11-1, not compatible with 2.0)\[6\]
+(2017-11-2, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

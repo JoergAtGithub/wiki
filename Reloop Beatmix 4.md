@@ -165,24 +165,24 @@ effects](#Effects-Section).
 The effect section let you control the first two EffectUnits. There are
 two different effect modes mapped:
 
-  - Single Effect mode (the default), where you can load a single effect
-    in the EffectUnit and control the first 6 parameters
-  - Multi Effect mode, where you can load up to three effects in each
-    EffectUnit and control then with the superKnob
+  - Multi Effect mode (the default), where you can load up to three
+    effects in each EffectUnit and control then with the superKnob
+  - Single Effect mode, where you can load a single effect in the
+    EffectUnit and control the first 6 parameters
 
-|                    |                           |                               |
-| ------------------ | ------------------------- | ----------------------------- |
-|                    | Single Effect mode        | Multi Effect mode             |
-| FX1                | Effect parameter 1        | Turn left to disable effect 1 |
-| FX2                | Effect parameter 2        | Turn left to disable effect 2 |
-| FX3                | Effect parameter 3        | Turn left to disable effect 3 |
-| Shift + FX1        | Effect parameter 4        | select effect 1               |
-| Shift + FX2        | Effect parameter 5        | select effect 2               |
-| Shift + FX3        | Effect parameter 6        | select effect 3               |
-| Beats turn         | dry/wet knob              | SuperKnob                     |
-| Beats push         | EffectUnit enable/disable |                               |
-| Shift + Beats turn | Select Effect Chain       | dry/wet knob                  |
-| Shift + Beats push | Eject Effect Chain        |                               |
+|                    |                               |                     |
+| ------------------ | ----------------------------- | ------------------- |
+|                    | Multi Effect mode             | Single Effect mode  |
+| FX1                | Turn left to disable effect 1 | Effect parameter 1  |
+| FX2                | Turn left to disable effect 2 | Effect parameter 2  |
+| FX3                | Turn left to disable effect 3 | Effect parameter 3  |
+| Shift + FX1        | select effect 1               | Effect parameter 4  |
+| Shift + FX2        | select effect 2               | Effect parameter 5  |
+| Shift + FX3        | select effect 3               | Effect parameter 6  |
+| Beats turn         | SuperKnob                     | dry/wet knob        |
+| Beats push         | EffectUnit enable/disable     |                     |
+| Shift + Beats turn | dry/wet knob                  | Select Effect Chain |
+| Shift + Beats push | Eject Effect Chain            |                     |
 
 You can choose which deck you want to apply EffectUnit 1 and 2 by
 pressing Shift + Pitchbend- / Shift + Pitchbend+ on that deck (short

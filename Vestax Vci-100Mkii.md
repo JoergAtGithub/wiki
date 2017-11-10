@@ -119,15 +119,15 @@ other deck is pressed.** Changes after the previous version are in bold.
     it)
 36. Enable EffectUnit1 \[EffectUnit3\] for the channel
 37. Enable EffectUnit2 \[EffectUnit4\] for the channel
-38. Up: previous **item \[pane\]** and scroll, Down: next **item
-    \[pane\]** and scroll, Left: load to left, Right: load to right,
-    Push: **choose item**
+38. Up: previous **item** and scroll, Down: next **item** and scroll,
+    Left: **previous pane \[load to left\]**, Right: **next pane \[load
+    to right\]**, Push: **choose item**
 39. Channel select
 
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-11-2, not compatible with 2.0)\[6\]
+(2017-11-3, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

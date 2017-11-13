@@ -66,10 +66,9 @@ pressed.
 pressed. **{Functions} in braces are executed if a shift button of the
 other deck is pressed.** Changes after the previous version are in bold.
 
-1.  Set previous effect chain to the EffectUnit, **or if EffectSlotN is
-    focused *Set previous effect to it*** \[Select EffectUnit1/2\]
-2.  Set next effect chain to the EffectUnit, **or if EffectSlotN is
-    focused *Set next effect to it*** \[Select EffectUnit3/4\]
+1.  **Focus previous EffectSlot of the EffectUnit** \[Select
+    EffectUnit1/2\]
+2.  **Focus next EffectSlot of the EffectUnit** \[Select EffectUnit3/4\]
 3.  **Meta knob of the EffectSlot1, or if EffectSlotN is focused
     *Parameter1 of it \[Set the link to meta knob\]*\[3\]**
 4.  **Meta knob of the EffectSlot2, or if EffectSlotN is focused
@@ -109,11 +108,11 @@ other deck is pressed.** Changes after the previous version are in bold.
 29. Double default loop size **\[Jump forward\]**, or in loop *Double
     the loop **\[Jump it forward\]*** **{Double jump size of the other
     deck}**
-30. **Enable \[Focus\] EffectSlot1 of the EffectUnit**
-31. **Enable \[Focus\] EffectSlot2 of the EffectUnit**
-32. **Enable \[Focus\] EffectSlot3 of the EffectUnit**
-33. **Enable wet/dry mix control of the EffectUnit \[Unfocus
-    EffectSlot\]**
+30. **Enable \[Set next effect to\] EffectSlot1 of the EffectUnit**
+31. **Enable \[Set next effect to\] EffectSlot2 of the EffectUnit**
+32. **Enable \[Set next effect to\] EffectSlot3 of the EffectUnit**
+33. **Enable wet/dry mix control of \[Set next effect chain to\] the
+    EffectUnit**
 34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
@@ -127,7 +126,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-11-3, not compatible with 2.0)\[6\]
+(2017-11-4, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

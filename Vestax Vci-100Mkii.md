@@ -75,9 +75,9 @@ other deck is pressed.** Changes after the previous version are in bold.
     *Parameter2 of it \[Set the link to meta knob\]***
 5.  **Meta knob of the EffectSlot3, or if EffectSlotN is focused
     *Parameter3 of it \[Set the link to meta knob\]***
-6.  **Super knob of the EffectUnit, or if EffectSlotN is focused
-    *Parameter4 of it \[Set the link to meta knob\]*, or if enabled by
-    SW33 *wet/dry mix of the EffectUnit***
+6.  **Super knob, or if EffectSlotN is focused *Parameter4 of it \[Set
+    the link to meta knob\]*, or if enabled by \#33 *Wet/dry mix* of the
+    EffectUnit**
 7.  EQ high
 8.  EQ mid
 9.  EQ low
@@ -111,8 +111,8 @@ other deck is pressed.** Changes after the previous version are in bold.
 30. **Enable \[Set next effect to\] EffectSlot1 of the EffectUnit**
 31. **Enable \[Set next effect to\] EffectSlot2 of the EffectUnit**
 32. **Enable \[Set next effect to\] EffectSlot3 of the EffectUnit**
-33. **Enable wet/dry mix control of \[Set next effect chain to\] the
-    EffectUnit**
+33. **Enable \#6 to control wet/dry mix of \[Set next effect chain to\]
+    the EffectUnit**
 34. Slip mode (affect scratch, brake, pause, reverse, loop and hotcue)
 35. PFL \[PFL solo\] (if headphone mix is cue or master only then switch
     it)
@@ -134,17 +134,17 @@ VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/c
     Wizard](http://www.mixxx.org/manual/2.0/chapters/advanced_topics.html)
     (choose "Quick Effect Super Knob") for low-high pass
 
-2.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
-    64** LED29, **size \> 64** LED28 & 29
+2.  size \< 1/4: LED28 & 29; 1/4 ≤ size \< 4: LED28; 4 \< size ≤ 64:
+    LED29; 64 \< size: LED28 & 29
 
 3.  left-right inverse -\> right inverse -\> left inverse -\> full
     inverse -\> none -\> full -\> left -\> right -\> left-right
 
-4.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
-    64** LED29, **size \> 64** LED28 & 29
+4.  size \< 1/4: LED28 & 29; 1/4 ≤ size \< 4: LED28; 4 \< size ≤ 64:
+    LED29; 64 \< size: LED28 & 29
 
-5.  **size \< 1/4** LED28 & 29, **1/4 ≤ size \< 4** LED28, **4 \< size ≤
-    64** LED29, **size \> 64** LED28 & 29
+5.  size \< 1/4: LED28 & 29; 1/4 ≤ size \< 4: LED28; 4 \< size ≤ 64:
+    LED29; 64 \< size: LED28 & 29
 
 6.  see [Controller Mapping File
     Locations](controller_mapping_file_locations) for use

@@ -344,10 +344,14 @@ A generic Button toggles the state of a binary `inKey` and sends
 outgoing MIDI messages indicating whether a binary `outKey` is on or
 off. Button adds the following properties to Component:
 
-  - **onlyOnPress** (boolean, default true): whether to toggle `group`,
-    `inKey` only when the button is pressed (when onlyOnPress is true),
-    or respond both when the button is pressed and released (when
-    onlyOnPress is false)
+  - **type**: determines the behavior of the Button. Can be any of these
+    values:
+  - *Button.prototype.types.push* (default): set inKey to 1 on button
+    press and 0 on button release
+  - *Button.prototype.types.toggle*: invert value of inKey on button
+    press
+  - *Button.prototype.types.powerWindow*: like toggle, but toggles the
+    value of inKey again on button up when long pressed
   - **on** (number, default 127): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is on (its value is \>
     0)
@@ -371,6 +375,7 @@ value of 127 and blue when sent a value of 126:
         midi: [0x91, 0x01],
         group: '[Channel1]',
         key: 'quantize',
+        type: Button.prototype.types.toggle,
         on: MyController.padColors.red,
         off: MyController.padColors.blue,
     });
@@ -383,7 +388,7 @@ first byte of the MIDI message, also known as an opcode. These
 controllers typically use an opcode of 9 to indicate a button press and
 8 to indicate a button release. Both the press and release signals need
 to be mapped in the XML file to the Button's `input` method. To make
-Button work for such a controller, overwrite the prototype `isPress`
+Button work for such a controller, reimplement the prototype `isPress`
 function in your mappings's `init` function:
 
     components.Button.prototype.isPress = function (channel, control, value, status) {

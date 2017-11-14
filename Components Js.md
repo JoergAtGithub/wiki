@@ -649,11 +649,14 @@ appropriately. When the shift button is pressed call
 `ComponentContainer.shift()` and the shift method of each Component in
 the ComponentContainer will be executed (if it exists). When the shift
 button is released, call `ComponentContainer.unshift()` to call each
-Component's `unshift` method. Note that any *push* type
-[Buttons](#Button) in the ComponentContainer will have their inKey reset
-to 0 if the user happens to have them pressed when
-`ComponentContainer.shift()` or `ComponentContainer.unshift()` is
-called.
+Component's `unshift` method.
+
+Note that any *Button.prototype.types.push* type [Buttons](#Button) in
+the ComponentContainer will have their inKey reset to 0 if the user
+happens to have them pressed when `ComponentContainer.shift()` or
+`ComponentContainer.unshift()` is called. This prevents the Button's
+inKey from getting stuck in a pressed (1) state, which can cause
+confusing behavior with some [MixxxControls](MixxxControls).
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists. This allows you to avoid redundancy

@@ -47,6 +47,12 @@ Migration tools:
 
 ### Disadvantages
 
+  - Doesn't explicitly support rich states other than just open/closed
+  - Using labels for this is just a workaround and might become
+    confusing. 
+  - Not possible to link related issues
+  - Not possible to specify different kinds of relationships
+    (parent/child, predecessor/successor, duplicates, etc.)
   - Someone needs to commit to managing migration
 
 ## Apache Allura

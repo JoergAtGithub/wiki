@@ -1,6 +1,10 @@
 # Phrases of the development cycle / mottos
 
-### 1.12.0
+### 2.1.0
+
+  - Busy with life
+
+### 1.12.0/2.0.0
 
   - LGTM (code review\!)
 

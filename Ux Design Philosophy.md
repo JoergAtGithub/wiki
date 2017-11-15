@@ -18,9 +18,10 @@ Mixxx.
         to keep track of, the more likely it is they will do something
         accidentally.
 3.  **"Works for me" is not good enough.** It must work for everyone.
-    People use Mixxx with a wide variety of hardware for a wide variety
-    of purposes. Your changes should not interfere with how other people
-    use Mixxx. Minimize assumptions about how people use Mixxx.
+    People use Mixxx with a wide variety of hardware with a wide variety
+    of music for a wide variety of purposes. Your changes should not
+    interfere with how other people use Mixxx. Minimize assumptions
+    about how people use Mixxx.
 4.  **Everyone can be a power user.** Everyone should be able to use and
     understand all features of Mixxx. If they cannot, the design and/or
     documentation are not good enough.

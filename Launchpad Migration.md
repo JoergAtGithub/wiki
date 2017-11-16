@@ -127,3 +127,4 @@ Migration tools:
   - Manual test management is only available in the paid version
   - Must also run Gerrit for code review functionality, Mattermost for
     chat
+  - Someone needs to commit to managing migration

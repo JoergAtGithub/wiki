@@ -19,7 +19,9 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
   - Can't edit comments
   - They can be hidden though.
   - E-mail notifications are slow
-  - Running our own instance would fix this
+  - There is an intentional 5-minute delay so that modifications done
+    close together are sent in one message. Beyond that, running our own
+    instance would fix this.
   - Categorization system for issues is inflexible
   - *Give example.*
   - Can't @mention people

@@ -13,6 +13,8 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
 
   - Login process is complex: it is a multi step process and the
     platform keeps asking about showing some username
+  - *Is this currently still a problem? The Ubuntu One login now only
+    asks for your name, E-mail address and a password.*
   - No formatting
   - Can't edit comments
   - They can be hidden though.

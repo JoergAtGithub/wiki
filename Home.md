@@ -130,6 +130,11 @@ this wiki, please fix it.
 
 ### Development Topics
 
+  - [To-do list for the next release](2.1.0_todo) - Help us get the next
+    release ready\!
+
+<!-- end list -->
+
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
   - [Google Summer of Code](gsoc) student projects and information.

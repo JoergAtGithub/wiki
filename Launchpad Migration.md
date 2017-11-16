@@ -5,23 +5,23 @@ Launchpad](https://bugs.launchpad.net/mixxx). This is a place to
 enumerate the problems so we have an objective list when comparing
 alternate solutions.
 
-Note that LaunchPad is open-source, so it is possible for us to directly
-improve it. (See below.)
+Note that Launchpad is open-source, so it is possible for us to directly
+improve it. (See below.) It also now supports Git repositories.
 
 ([Discussion on the
 forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
 
-  - Login process is complex: it is a multi step process and the
-    platform keeps asking about showing some username
-  - *Is this currently still a problem? The Ubuntu One login now only
-    asks for your name, E-mail address and a password.*
+  - ~~Login process is complex: it is a multi step process and the
+    platform keeps asking about showing some username~~ The Ubuntu One
+    registration/login only asks for your name, E-mail address and a
+    password.
   - No formatting
   - Can't edit comments
-  - They can be hidden though.
+  - They can be hidden on bugs though.
   - E-mail notifications are slow
   - There is an intentional 5-minute delay so that modifications done
     close together are sent in one message. Beyond that, running our own
-    instance would fix this.
+    instance could fix this.
   - Categorization system for issues is inflexible
   - *Give example.*
   - Can't @mention people
@@ -60,23 +60,7 @@ Migration tools:
   - Not possible to specify different kinds of relationships
     (parent/child, predecessor/successor, duplicates, etc.)
   - Someone needs to commit to managing migration
-
-## Apache Allura
-
-<http://allura.apache.org/>
-
-### Advantages
-
-  - Integrated code, wiki and tickets/issues
-  - Can run our own instance (if ever GitHub closes or decides to
-    charge)
-
-### Disadvantages
-
-  - Must run our own instance (no pre-hosted environments, though
-    possibly from third party)
-  - Need to migrate data from three different systems
-  - Someone needs to commit to managing migration
+  - Closed-source
 
 ## Improve Launchpad
 
@@ -87,7 +71,60 @@ Migration tools:
   - No need to migrate data
   - Can run our own instance (if ever GitHub closes or decides to
     charge)
+  - Open-source
 
 ### Disadvantages
 
   - Developer resources taken away from Mixxx temporarily
+
+## Apache Allura
+
+<http://allura.apache.org/>
+
+### Advantages
+
+  - Integrated code, wiki and tickets/issues
+  - Can run our own instance (if ever GitHub closes or decides to
+    charge)
+  - Open-source
+
+### Disadvantages
+
+  - Must run our own instance (no pre-hosted environments, though
+    possibly from third party)
+  - Need to migrate data from three different systems
+  - Someone needs to commit to managing migration
+
+## GitLab
+
+<https://about.gitlab.com/>
+
+### Advantages
+
+  - Open-source
+
+### Disadvantages
+
+``` 
+* 
+```
+
+## Tuleap
+
+<https://www.tuleap.org/>
+
+### Advantages
+
+  - Complete integration (code hosting & versioning with Git, code
+    review, bugs/tickets, docs/files, CI/Jenkins, project management,
+    collaboration)
+  - Can run our own instance (if ever GitHub closes or decides to
+    charge)
+  - Open-source
+
+### Disadvantages
+
+  - Must run our own instance to avoid charges
+  - Manual test management is only available in the paid version
+  - Must also run Gerrit for code review functionality, Mattermost for
+    chat

@@ -29,7 +29,8 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
   - Yet another account needed. (Now six total: forum, Freenode, wiki,
     Launchpad, GitHub, mailing list)
   - [OpenID Connect](http://openid.net/connect/faq/) (which uses OAuth)
-    would be a good solution to this in general.
+    would be a good solution to this in general. See [bug
+    \#1732715](https://bugs.launchpad.net/mixxx/+bug/1732715).
 
 # Possible solutions
 

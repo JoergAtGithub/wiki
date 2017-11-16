@@ -649,7 +649,7 @@ engine.softStart(). See last example how to map this to press/release of
 just one button.
 
 ``` javascript
-brake(int deck, bool activate, [float factor], [float rate])
+brake(int deck, bool activate, [float factor])
 spinback(int deck, bool activate, [float factor], [float rate])
 softStart(int deck, bool activate, [float factor])
 ```
@@ -688,7 +688,7 @@ Activate brake on button press, jump to normal speed on button release
 (short version)
 
 ``` javascript
-    MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
+    MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
         var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
         engine.brake(deck, value > 0, 1.2, -10); // start at a rate of -10 and decrease at a factor of 1.2
     }

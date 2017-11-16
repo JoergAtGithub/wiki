@@ -664,8 +664,8 @@ softStart(int deck, bool activate, [float factor])
     audible anymore. Accordingly, softStart with low factors would take
     a while until sound is audible.
   - **rate** (optional) - the initial speed of the deck when enabled.
-    "1" (default) means normal speed forwards, "-10" means 10x speed in
-    reverse
+    "-10" (default) means 10x speed in reverse. Positive values like
+    "10" also work, thhough then it's spinning forward obviously.
 
 Examples:
 

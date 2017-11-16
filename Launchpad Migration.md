@@ -105,9 +105,8 @@ Migration tools:
 
 ### Disadvantages
 
-``` 
-* 
-```
+  - Someone needs to commit to managing migration
+  - ?
 
 ## Tuleap
 

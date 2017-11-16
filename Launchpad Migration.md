@@ -15,6 +15,7 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
     platform keeps asking about showing some username
   - No formatting
   - Can't edit comments
+  - They can be hidden though.
   - E-mail notifications are slow
   - Running our own instance would fix this
   - Categorization system for issues is inflexible

@@ -77,7 +77,7 @@ Migration tools:
 
 Note that for public open source repositories, the [GitLab.com hosted
 service](https://about.gitlab.com/gitlab-com/) has all the features of
-the paid nonfree Enterprise Edition Premium server software.
+the paid proprietary Enterprise Edition Premium server software.
 
   - Company is highly engaged with the community with a public issue
     tracker and accepts code contributions

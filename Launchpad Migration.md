@@ -98,6 +98,8 @@ the paid Enterprise Edition Premium server software.
     for issues
   - [Related
     issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
+  - [Multiple assignees for
+    issues](https://docs.gitlab.com/ee/user/project/issues/multiple_assignees_for_issues.html)
   - [Issue
     weighting](https://docs.gitlab.com/ee/workflow/issue_weight.html)
   - [Easily move discussion from code review to a new
@@ -105,6 +107,10 @@ the paid Enterprise Edition Premium server software.
   - [Threaded discussions](https://docs.gitlab.com/ce/user/discussions/)
     on issues and merge requests with ability to mark different parts of
     the conversation as resolved
+  - [Image
+    discussions](https://docs.gitlab.com/ee/user/discussions/#image-discussions)
+  - [Protected Git
+    branches](https://docs.gitlab.com/ee/user/project/protected_branches.html)
   - [Templates](https://docs.gitlab.com/ce/user/project/description_templates.html)
     for issues and merge requests with possibility for different
     templates (such as bug report and feature request)
@@ -118,6 +124,9 @@ the paid Enterprise Edition Premium server software.
     completes](https://docs.gitlab.com/ce/user/project/merge_requests/merge_when_pipeline_succeeds.html)
   - Wouldn't have to pay for CI that doesn't time out like Travis and
     AppVeyor free plans
+  - [Hosting artifacts from
+    CI](https://docs.gitlab.com/ee/user/project/pipelines/job_artifacts.html)
+    (built packages, manual PDFs)
   - [Todo list](https://docs.gitlab.com/ce/workflow/todos.html) can
     replace email notifications
   - Migrating code from GitHub would be easy and it wouldn't be hard for

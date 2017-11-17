@@ -119,6 +119,11 @@ Migration tools:
   - [Due
     dates](https://docs.gitlab.com/ee/user/project/issues/due_dates.html)
     for issues
+  - [Easily move discussion from code review to a new
+    issue](https://docs.gitlab.com/ee/user/discussions/#move-all-unresolved-discussions-in-a-merge-request-to-an-issue)
+  - [Threaded discussions](https://docs.gitlab.com/ee/user/discussions/)
+    on issues and merge requests with ability to mark different parts of
+    the conversation as resolved
   - Projects can have multiple repositories (for example, code and
     manual) with interrelated milestones and issues
   - More nuanced [permission

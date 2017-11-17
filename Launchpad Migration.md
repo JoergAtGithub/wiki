@@ -116,6 +116,8 @@ the paid Enterprise Edition Premium server software.
   - Continuous integration service is integrated
   - [Automatic merge when CI
     completes](https://docs.gitlab.com/ce/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+  - Wouldn't have to pay for CI that doesn't time out like Travis and
+    AppVeyor free plans
   - [Todo list](https://docs.gitlab.com/ce/workflow/todos.html) can
     replace email notifications
   - Migrating code from GitHub would be easy and it wouldn't be hard for

@@ -138,6 +138,8 @@ the paid proprietary Enterprise Edition Premium server software.
     improved lately and they're continuing to work very hard on this
   - Some features only available in paid Enterprise editions for
     self-hosted server software
+  - Write access to GitLab wikis is coupled with write access to source
+    code
 
 ## Improve Launchpad
 

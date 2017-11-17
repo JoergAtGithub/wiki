@@ -86,7 +86,10 @@ the paid Enterprise Edition Premium server software.
   - Server software is developing rapidly with new features rolled out
     monthly
   - [Issue Board](https://about.gitlab.com/features/issueboard/) with
-    drag-and-drop UI for organizing issues
+    drag-and-drop workflow for organizing issues. Can [span across
+    multiple
+    repositories](https://docs.gitlab.com/ee/user/project/issue_board.html#group-issue-boards)
+    (code, manual, website)
   - [Automatic issue
     closing](https://docs.gitlab.com/ce/user/project/issues/automatic_issue_closing.html)
     when code is merged (GitHub can do this too)

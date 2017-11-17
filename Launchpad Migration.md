@@ -65,8 +65,9 @@ Migration tools:
     (parent/child, predecessor/successor, duplicates, etc.)
   - Someone needs to commit to managing migration
   - Closed-source
-  - Company is not very responsive to community feature requests and has
-    no public issue tracker for their server software
+  - Company is [not very responsive to community feature
+    requests](https://github.com/dear-github/dear-github) and has no
+    public issue tracker for their server software
   - Requires nonfree client-side JavaScript
 
 ## GitLab

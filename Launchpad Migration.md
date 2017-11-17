@@ -124,6 +124,8 @@ Migration tools:
   - [Threaded discussions](https://docs.gitlab.com/ee/user/discussions/)
     on issues and merge requests with ability to mark different parts of
     the conversation as resolved
+  - [Templates](https://docs.gitlab.com/ee/user/project/description_templates.html)
+    for issues and merge requests
   - Projects can have multiple repositories (for example, code and
     manual) with interrelated milestones and issues
   - More nuanced [permission

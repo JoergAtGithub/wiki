@@ -83,6 +83,7 @@ the paid proprietary Enterprise Edition Premium server software.
     tracker and accepts code contributions
   - Server software is developing rapidly with new features rolled out
     monthly
+  - Modern look-and-feel
   - [Issue Board](https://about.gitlab.com/features/issueboard/) with
     drag-and-drop workflow for organizing issues. Can [span across
     multiple

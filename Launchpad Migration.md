@@ -22,11 +22,11 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
   - There is an intentional 5-minute delay so that modifications done
     close together are sent in one message. Beyond that, running our own
     instance could fix this.
-  - Categorization system for issues is inflexible
-  - *Give example.*
+  - "Wishlist" designation is mutually exclusive with a priority
+    designation, making it impossible to prioritize feature requests
   - Can't @mention people
-  - Posting code and screenshots is clunky
-  - *What exactly is wrong? Give an example of what would be good.*
+  - Posting code and screenshots requires attaching a separate file that
+    isn't displayed inline in the conversation.
   - Can't make templates for bug reports (e.g. to have people attach
     `mixxx.log` in the initial report)
   - No integration with the code review system (side effect of no longer

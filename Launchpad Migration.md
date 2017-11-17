@@ -162,10 +162,8 @@ the paid proprietary Enterprise Edition Premium server software.
 
 ### Disadvantages
 
-  - ~~Coding our own bug tracker would be an enormous for Mixxx
-    developers~~ - This is only about improving what's already there,
-    addressing the issues enumerated at the top of this page
-  - Developer resources taken away from Mixxx temporarily
+  - Maintaining our own bug tracker would be an enormous drain for Mixxx
+    developers that would be better spent developing Mixxx
 
 ## Apache Allura
 

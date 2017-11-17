@@ -65,6 +65,7 @@ Migration tools:
   - Closed-source
   - Company is not very responsive to community feature requests and has
     no public issue tracker for their server software
+  - Requires nonfree client-side JavaScript
 
 ## Improve Launchpad
 

@@ -67,39 +67,6 @@ Migration tools:
     no public issue tracker for their server software
   - Requires nonfree client-side JavaScript
 
-## Improve Launchpad
-
-<https://dev.launchpad.net/>
-
-### Advantages
-
-  - No need to migrate data
-  - Can run our own instance (if ever GitHub closes or decides to
-    charge)
-  - Open-source
-
-### Disadvantages
-
-  - Developer resources taken away from Mixxx temporarily
-
-## Apache Allura
-
-<http://allura.apache.org/>
-
-### Advantages
-
-  - Integrated code, wiki and tickets/issues
-  - Can run our own instance (if ever GitHub closes or decides to
-    charge)
-  - Open-source
-
-### Disadvantages
-
-  - Must run our own instance (no pre-hosted environments, though
-    possibly from third party)
-  - Need to migrate data from three different systems
-  - Someone needs to commit to managing migration
-
 ## GitLab
 
 <https://about.gitlab.com/>
@@ -154,6 +121,39 @@ the paid Enterprise Edition Premium server software.
     improved lately and they're continuing to work very hard on this
   - Some features only available in paid Enterprise editions for
     self-hosted server software
+
+## Improve Launchpad
+
+<https://dev.launchpad.net/>
+
+### Advantages
+
+  - No need to migrate data
+  - Can run our own instance (if ever GitHub closes or decides to
+    charge)
+  - Open-source
+
+### Disadvantages
+
+  - Coding our own bug tracker would be an enormous for Mixxx developers
+
+## Apache Allura
+
+<http://allura.apache.org/>
+
+### Advantages
+
+  - Integrated code, wiki and tickets/issues
+  - Can run our own instance (if ever GitHub closes or decides to
+    charge)
+  - Open-source
+
+### Disadvantages
+
+  - Must run our own instance (no pre-hosted environments, though
+    possibly from third party)
+  - Need to migrate data from three different systems
+  - Someone needs to commit to managing migration
 
 ## Tuleap
 

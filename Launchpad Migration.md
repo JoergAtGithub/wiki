@@ -38,6 +38,8 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
     \#1732715](https://bugs.launchpad.net/mixxx/+bug/1732715).
   - Run by Canonical, which [does not have the greatest track
     record](https://en.wikipedia.org/wiki/Ubuntu_\(operating_system\)#Amazon_controversy)
+  - Development of Launchpad has slowed and the platform doesn't seem to
+    receive much attention anymore
 
 # Possible solutions
 

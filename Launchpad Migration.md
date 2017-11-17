@@ -169,6 +169,7 @@ the paid proprietary Enterprise Edition Premium server software.
 
   - Must run our own instance (no pre-hosted environments, though
     possibly from third party)
+  - Looks like SourceForge
   - Need to migrate data from three different systems
   - Someone needs to commit to managing migration
 

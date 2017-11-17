@@ -51,7 +51,9 @@ Migration tools:
 
 ### Advantages
 
-  - Integrates with code review system
+  - Easy to cross-reference pull requests and issues
+  - [Close issues automatically when merging pull
+    requests](https://github.com/blog/1506-closing-issues-via-pull-requests)
 
 ### Disadvantages
 

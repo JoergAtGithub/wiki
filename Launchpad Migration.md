@@ -79,8 +79,6 @@ Note that for public open source repositories, the [GitLab.com hosted
 service](https://about.gitlab.com/gitlab-com/) has all the features of
 the paid nonfree Enterprise Edition Premium server software.
 
-  - Server is run with free software. We could run our own instance if
-    that was ever needed.
   - Company is highly engaged with the community with a public issue
     tracker and accepts code contributions
   - Server software is developing rapidly with new features rolled out

@@ -127,7 +127,8 @@ Migration tools:
     completes](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
   - [Todo list](https://docs.gitlab.com/ee/workflow/todos.html) can
     replace email notifications
-  - Migrating code from GitHub would be easy
+  - Migrating code from GitHub would be easy and it wouldn't be hard for
+    developers to adapt
 
 ### Disadvantages
 

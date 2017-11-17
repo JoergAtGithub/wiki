@@ -103,6 +103,10 @@ Migration tools:
 
 ### Advantages
 
+Note that for public open source repositories, the GitLab.com hosted
+service has all the features of the paid Enterprise Edition Premium
+server software.
+
   - Server is run with free software. We could run our own instance if
     that was ever needed.
   - Company is highly engaged with the community with a public issue
@@ -117,6 +121,8 @@ Migration tools:
   - [Due
     dates](https://docs.gitlab.com/ce/user/project/issues/due_dates.html)
     for issues
+  - [Related
+    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
   - [Easily move discussion from code review to a new
     issue](https://docs.gitlab.com/ce/user/discussions/#move-all-unresolved-discussions-in-a-merge-request-to-an-issue)
   - [Threaded discussions](https://docs.gitlab.com/ce/user/discussions/)
@@ -137,11 +143,6 @@ Migration tools:
     replace email notifications
   - Migrating code from GitHub would be easy and it wouldn't be hard for
     developers to adapt
-
-Enterprise Edition only features:
-
-  - [Related
-    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
 
 ### Disadvantages
 

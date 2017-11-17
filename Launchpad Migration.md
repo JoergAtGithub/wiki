@@ -98,6 +98,8 @@ the paid Enterprise Edition Premium server software.
     for issues
   - [Related
     issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
+  - [Issue
+    weighting](https://docs.gitlab.com/ee/workflow/issue_weight.html)
   - [Easily move discussion from code review to a new
     issue](https://docs.gitlab.com/ce/user/discussions/#move-all-unresolved-discussions-in-a-merge-request-to-an-issue)
   - [Threaded discussions](https://docs.gitlab.com/ce/user/discussions/)

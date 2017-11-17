@@ -139,13 +139,13 @@ the paid proprietary Enterprise Edition Premium server software.
 
 ### Disadvantages
 
+  - Write access to GitLab wikis is coupled with write access to source
+    code, so we still need to run our own wiki
   - Someone needs to commit to managing migration
   - Has had issues with page load speed and uptime in the past but has
     improved lately and they're continuing to work very hard on this
   - Some features only available in paid Enterprise editions for
     self-hosted server software
-  - Write access to GitLab wikis is coupled with write access to source
-    code
 
 ## Improve Launchpad
 
@@ -153,14 +153,19 @@ the paid proprietary Enterprise Edition Premium server software.
 
 ### Advantages
 
-  - No need to migrate data
+  - Very good bug tracking and release management features
+  - No need to migrate
   - Can run our own instance (if ever GitHub closes or decides to
     charge)
   - Open-source
+  - Would (eventually) suit us perfectly
 
 ### Disadvantages
 
-  - Coding our own bug tracker would be an enormous for Mixxx developers
+  - ~~Coding our own bug tracker would be an enormous for Mixxx
+    developers~~ - This is only about improving what's already there,
+    addressing the issues enumerated at the top of this page
+  - Developer resources taken away from Mixxx temporarily
 
 ## Apache Allura
 
@@ -178,6 +183,7 @@ the paid proprietary Enterprise Edition Premium server software.
   - Must run our own instance (no pre-hosted environments, though
     possibly from third party)
   - Looks like SourceForge
+  - Indeed, SourceForge uses it
   - Need to migrate data from three different systems
   - Someone needs to commit to managing migration
 

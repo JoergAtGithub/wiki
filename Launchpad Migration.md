@@ -101,7 +101,33 @@ Migration tools:
 
 ### Advantages
 
-  - Open-source
+  - Server is run with free software. We could run our own instance if
+    that was ever needed.
+  - Company is highly engaged with the community with a public issue
+    tracker and accepts code contributions
+  - Server software is developing rapidly with new features rolled out
+    monthly
+  - [Issue Board](https://about.gitlab.com/features/issueboard/) with
+    drag-and-drop UI for organizing issues
+  - [Related
+    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
+  - [Automatic issue
+    closing](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html)
+    when code is merged (GitHub can do this too)
+  - [Due
+    dates](https://docs.gitlab.com/ee/user/project/issues/due_dates.html)
+    for issues
+  - Projects can have multiple repositories (for example, code and
+    manual) with interrelated milestones and issues
+  - More nuanced [permission
+    system](https://docs.gitlab.com/ee/user/permissions.html) than
+    GitHub
+  - Continuous integration service is integrated
+  - [Automatic merge when CI
+    completes](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+  - [Todo list](https://docs.gitlab.com/ee/workflow/todos.html) can
+    replace email notifications
+  - Migrating code from GitHub would be easy
 
 ### Disadvantages
 

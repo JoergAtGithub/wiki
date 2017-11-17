@@ -103,9 +103,9 @@ Migration tools:
 
 ### Advantages
 
-Note that for public open source repositories, the GitLab.com hosted
-service has all the features of the paid Enterprise Edition Premium
-server software.
+Note that for public open source repositories, the [GitLab.com hosted
+service](https://about.gitlab.com/gitlab-com/) has all the features of
+the paid Enterprise Edition Premium server software.
 
   - Server is run with free software. We could run our own instance if
     that was ever needed.

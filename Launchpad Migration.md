@@ -6,7 +6,8 @@ enumerate the problems so we have an objective list when comparing
 alternate solutions.
 
 Note that Launchpad is open-source, so it is possible for us to directly
-improve it. (See below.) It also now supports Git repositories.
+improve it. (See below.) It also now supports Git repositories and has a
+[Web services API](https://help.launchpad.net/API/).
 
 ([Discussion on the
 forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
@@ -38,7 +39,10 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
     \#1732715](https://bugs.launchpad.net/mixxx/+bug/1732715).
   - Run by Canonical, which [does not have the greatest track
     record](https://en.wikipedia.org/wiki/Ubuntu_\(operating_system\)#Amazon_controversy)
-  - Development of Launchpad has stagnated
+  - Development of Launchpad has ~~stagnated~~ slowed in recent years.
+  - LP had its staffing heavily cut a few years back, but there are
+    still a couple paid full-time developers working on it -- and
+    several major features that have been developed since that cut.
 
 # Possible solutions
 

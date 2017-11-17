@@ -112,33 +112,35 @@ Migration tools:
   - [Issue Board](https://about.gitlab.com/features/issueboard/) with
     drag-and-drop UI for organizing issues
   - [Related
-    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
+    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)\*
   - [Automatic issue
-    closing](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html)
+    closing](https://docs.gitlab.com/ce/user/project/issues/automatic_issue_closing.html)
     when code is merged (GitHub can do this too)
   - [Due
-    dates](https://docs.gitlab.com/ee/user/project/issues/due_dates.html)
+    dates](https://docs.gitlab.com/ce/user/project/issues/due_dates.html)
     for issues
   - [Easily move discussion from code review to a new
-    issue](https://docs.gitlab.com/ee/user/discussions/#move-all-unresolved-discussions-in-a-merge-request-to-an-issue)
-  - [Threaded discussions](https://docs.gitlab.com/ee/user/discussions/)
+    issue](https://docs.gitlab.com/ce/user/discussions/#move-all-unresolved-discussions-in-a-merge-request-to-an-issue)
+  - [Threaded discussions](https://docs.gitlab.com/ce/user/discussions/)
     on issues and merge requests with ability to mark different parts of
     the conversation as resolved
-  - [Templates](https://docs.gitlab.com/ee/user/project/description_templates.html)
+  - [Templates](https://docs.gitlab.com/ce/user/project/description_templates.html)
     for issues and merge requests with possibility for different
     templates (such as bug report and feature request)
   - Projects can have multiple repositories (for example, code and
     manual) with interrelated milestones and issues
   - More nuanced [permission
-    system](https://docs.gitlab.com/ee/user/permissions.html) than
+    system](https://docs.gitlab.com/ce/user/permissions.html) than
     GitHub
   - Continuous integration service is integrated
   - [Automatic merge when CI
-    completes](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-  - [Todo list](https://docs.gitlab.com/ee/workflow/todos.html) can
+    completes](https://docs.gitlab.com/ce/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+  - [Todo list](https://docs.gitlab.com/ce/workflow/todos.html) can
     replace email notifications
   - Migrating code from GitHub would be easy and it wouldn't be hard for
     developers to adapt
+
+\* Enterprise Edition only
 
 ### Disadvantages
 

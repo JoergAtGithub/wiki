@@ -140,7 +140,9 @@ Migration tools:
 ### Disadvantages
 
   - Someone needs to commit to managing migration
-  - ?
+  - Has had issues with page load speed and uptime in the past but has
+    improved lately and they're continuing to work very hard on this
+  - Some features only available in paid Enterprise editions
 
 ## Tuleap
 

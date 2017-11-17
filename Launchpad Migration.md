@@ -111,8 +111,6 @@ Migration tools:
     monthly
   - [Issue Board](https://about.gitlab.com/features/issueboard/) with
     drag-and-drop UI for organizing issues
-  - [Related
-    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)\*
   - [Automatic issue
     closing](https://docs.gitlab.com/ce/user/project/issues/automatic_issue_closing.html)
     when code is merged (GitHub can do this too)
@@ -140,7 +138,10 @@ Migration tools:
   - Migrating code from GitHub would be easy and it wouldn't be hard for
     developers to adapt
 
-\* Enterprise Edition only
+Enterprise Edition only features:
+
+  - [Related
+    issues](https://docs.gitlab.com/ee/user/project/issues/related_issues.html)
 
 ### Disadvantages
 

@@ -300,7 +300,7 @@ for your new music.
 Mixxx supports the following audio file formats:
 
   - FLAC
-  - OGG
+  - OGG/Vorbis
   - Opus
   - MP3
   - WAV

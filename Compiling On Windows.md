@@ -7,7 +7,8 @@ page](Build%20Windows%20installer).)*
 
   - [Visual Studio 15 Update 3 for Windows
     Desktop](https://www.visualstudio.com/downloads/#visual-studio-2015-update-3).
-    You need a Microsoft account.
+    You need a Microsoft account. Make sure you check the `Programming
+    Languages -> Visual C++` feature in the installer.
   - If you install Visual Studio 2015 or newer, it comes with the latest
     Windows SDK. The following links are only needed if you have a
     version of Visual Studio older than this or if you're building for

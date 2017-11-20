@@ -97,7 +97,7 @@ downloading pre-built ones:
 2.  In the buildserver repository, checkout the **2.1.x-windows** branch
 3.  Edit `%WINLIB_PATH%\build_environment.bat` and change the following
     lines:
-    1.  `SET MSVC_PATH=<path containing the vcvarsall.bat file>`
+    1.  `SET MSVC_PATH=<Visual Studio installation directory>`
     2.  If you're using only the Windows 7.1 SDK (no Visual Studio,)
         `SET MSBUILD=msbuild /p:PlatformToolset=Windows7.1SDK`
           - If using the VC++ Build Tools, you may need to add/replace

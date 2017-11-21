@@ -339,9 +339,17 @@ function, which takes 3 parameters:
 2.  name of the Mixxx Control (string)
 3.  JavaScript function to execute when the Mixxx Control changes. This
     function takes three parameters: the new value of the Mixxx Control,
-    the group, and the Mixxx Control name. `this` in the context of the
-    function refers to the value of `this` where `engine.makeConnection`
-    was called.
+    the group, and the Mixxx Control name.
+
+For example:
+
+``` javascript
+var syncButtonOutputCallback = function (value, group, control) {
+    midi.sendShortMsg(byte 1, byte 2, value * 127); // see section below for an explanation of this example line
+};
+
+var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', syncButtonOutputCallback);
+```
 
 `engine.makeConnection` returns an object that represents the callback
 connection. This object should be stored in a script variable. To switch
@@ -357,17 +365,14 @@ deck:
 For example:
 
 ``` javascript
-var syncButtonOutputCallback = function (value, group, control) {
-    midi.sendShortMsg(byte 1, byte 2, value * 127); // see below section for an explanation of this example line
-};
-
-var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', syncButtonOutputCallback);
-
 // when switching to deck 3:
 syncConnection.disconnect();
 syncConnection = engine.makeConnection('[Channel3]', 'sync_enabled', syncButtonOutputCallback);
 syncConnection.trigger();
 ```
+
+`this` in the context of the function refers to the value of `this`
+where `engine.makeConnection` was called.
 
 #### Mixxx 2.0 and older
 

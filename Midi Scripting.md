@@ -339,7 +339,9 @@ function, which takes 3 parameters:
 2.  name of the Mixxx Control (string)
 3.  JavaScript function to execute when the Mixxx Control changes. This
     function takes three parameters: the new value of the Mixxx Control,
-    the group, and the Mixxx Control name.
+    the group, and the Mixxx Control name. `this` in the context of the
+    function refers to the value of `this` where `engine.makeConnection`
+    was called.
 
 For example:
 
@@ -370,9 +372,6 @@ syncConnection.disconnect();
 syncConnection = engine.makeConnection('[Channel3]', 'sync_enabled', syncButtonOutputCallback);
 syncConnection.trigger();
 ```
-
-`this` in the context of the function refers to the value of `this`
-where `engine.makeConnection` was called.
 
 #### Mixxx 2.0 and older
 

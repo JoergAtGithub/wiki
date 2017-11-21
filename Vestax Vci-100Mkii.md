@@ -66,8 +66,7 @@ pressed.
 pressed. **{Functions} in braces are executed if a shift button of the
 other deck is pressed.** Changes after the previous version are in bold.
 
-1.  **Focus previous EffectSlot of the EffectUnit** \[Select
-    EffectUnit1/2\]
+1.  **Unfocus EffectSlot of the EffectUnit** \[Select EffectUnit1/2\]
 2.  **Focus next EffectSlot of the EffectUnit** \[Select EffectUnit3/4\]
 3.  **Meta knob of the EffectSlot1, or if EffectSlotN is focused
     *Parameter1 of it \[Set the link to meta knob\]*\[3\]**
@@ -126,7 +125,7 @@ other deck is pressed.** Changes after the previous version are in bold.
 [Vestax
 VCI-100MKII.midi.xml](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax%20VCI-100MKII.midi.xml)
 [Vestax-VCI-100MKII-scripts.js](https://raw.githubusercontent.com/sohet/mixxx/master/res/controllers/Vestax-VCI-100MKII-scripts.js)
-(2017-11-4, not compatible with 2.0)\[6\]
+(2017-11-5, not compatible with 2.0)\[6\]
 
 1.  see [the
     article](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6038&start=20#p25804)

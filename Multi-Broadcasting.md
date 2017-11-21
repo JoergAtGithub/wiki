@@ -19,12 +19,12 @@ licensing/patent holders rights
 
 ### Relevant source code
 
-  - **Multi-broadcasting: [PR \#1300 on Mixxx's
-    repository](https://github.com/mixxxdj/mixxx/pull/1300)**
-  - **Opus encoder: [Internal PR \#3 on my fork of
-    Mixxx](https://github.com/Palakis/mixxx/pull/3)**
-  - **AAC/HE-AAC encoder using fdk-aac: [Internal PR \#4 on my fork of
-    Mixxx](https://github.com/Palakis/mixxx/pull/4)**
+  - **Multi-broadcasting: [Mixx PR \#1300 on
+    GitHub](https://github.com/mixxxdj/mixxx/pull/1300)**
+  - **Opus encoder: [Mixxx PR \#1386 on
+    GitHub](https://github.com/mixxxdj/mixxx/pull/1386)**
+  - **AAC/HE-AAC encoder using fdk-aac: [Mixxx PR \#1387 on
+    GitHub](https://github.com/mixxxdj/mixxx/pull/1387)**
   - Live Broadcasting implemented with [a version of
     libshout](https://launchpad.net/~palakis/+archive/ubuntu/libshout-aac)
     modified for AAC streaming

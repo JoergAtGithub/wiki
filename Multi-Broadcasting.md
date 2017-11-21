@@ -2,8 +2,7 @@
 
 Google Summer of Code project by Stéphane Lepin
 
-**Current State**: Coding period over, Final Mentor evaluation in
-progress
+**Current State**: GSoC ended
 
 ### Project description
 
@@ -22,21 +21,22 @@ licensing/patent holders rights
 
   - **Multi-broadcasting: [PR \#1300 on Mixxx's
     repository](https://github.com/mixxxdj/mixxx/pull/1300)**
-  - Preferences UI works, audio engine side works without known
-    problems.
+  - **Opus encoder: [Internal PR \#3 on my fork of
+    Mixxx](https://github.com/Palakis/mixxx/pull/3)**
+  - **AAC/HE-AAC encoder using fdk-aac: [Internal PR \#4 on my fork of
+    Mixxx](https://github.com/Palakis/mixxx/pull/4)**
+  - Live Broadcasting implemented with [a version of
+    libshout](https://launchpad.net/~palakis/+archive/ubuntu/libshout-aac)
+    modified for AAC streaming
+  - Finds a dynamically-loadable libfdk-aac automatically. Windows
+    version can even find and use B.U.T.T's ("Broadcast Using This Tool"
+    by Daniel Nöthen) version of the library.
+  - Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
+  - Left to do:
 
 <!-- end list -->
 
 ``` 
-    * Changes made to SoundDeviceNetwork may need external review by people with more experience in audio engines
-* **Opus encoder: [[https://github.com/Palakis/mixxx/pull/3|Internal PR #3 on my fork of Mixxx]]**
-* Works and tested in Recording and Live Broadcasting
-* **AAC/HE-AAC encoder using fdk-aac: [[https://github.com/Palakis/mixxx/pull/4|Internal PR #4 on my fork of Mixxx]]**
-* Works and tested in Recording and Live Broadcasting
-* Live Broadcasting implemented with [[https://launchpad.net/~palakis/+archive/ubuntu/libshout-aac|a version of libshout]] modified for AAC streaming
-* Finds a dynamically-loadable libfdk-aac automatically. Windows version can even find and use B.U.T.T's ("Broadcast Using This Tool" by Daniel Nöthen) version of the library.
-* Supports AAC-LC (a.k.a traditional AAC), HE-AAC and HE-AACv2
-* Left to do:
     * Add options for VBR recording
     * Add track metadata
 ```

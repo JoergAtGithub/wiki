@@ -2,7 +2,8 @@
 
 Google Summer of Code project by Stéphane Lepin
 
-**Current State**: GSoC ended
+**Current State**: code merged 11/20/2017 in
+[PR 1300](https://github.com/mixxxdj/mixxx/pull/1300)
 
 ### Project description
 

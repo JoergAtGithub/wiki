@@ -66,9 +66,9 @@ Aside of the kernel driver, there is an [user-mode
 driver](hercules_linux_usermode_driver) which supports a different set
 of controllers
 
-As of Mixxx 1.11 some of the Hercules devices including the Dj Console
-Mk2 and Mk1 can be used as HID devices under Linux without the need for
-the special Hercules driver.
+Since of Mixxx 1.11 some of the Hercules devices including the Dj
+Console Mk2 and Mk1 can be used as HID devices under Linux without the
+need for the special Hercules driver.
 
 In order to use a HID device in Linux you must have read and write
 permission to the hid devices see details at this page:

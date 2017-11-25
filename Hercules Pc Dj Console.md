@@ -44,6 +44,7 @@ controllers](hercules) in this wiki.
 
 ## Hardware Models
 
-Currently, there are multiple models supported in Mixxx:
-
-    Check the [[hardware_compatibility|hardware compatibility]] page, or the specific controller pages that you can access from [[hercules|Hercules wiki page on Mixxx]]
+Currently, there are multiple models supported in Mixxx. Check the
+[hardware compatibility](hardware_compatibility) page, or the specific
+controller pages that you can access from [Hercules wiki page on
+Mixxx](hercules)

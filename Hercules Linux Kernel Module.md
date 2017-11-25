@@ -54,5 +54,7 @@ Another old source of this kernel is here:
 
 [](hercules_pc_dj_console)
 
+[Linux user mode driver](hercules_linux_usermode_driver)
+
 [Old forum thread talking about this kernel
 module](http://mixxx.org/forums/viewtopic.php?f=1&t=851)

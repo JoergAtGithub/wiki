@@ -199,3 +199,7 @@ Compact](hercules_djcontrol_compact)
 ## Hercules P32 DJ
 
 Find it here -\> [Hercules P32 DJ](hercules_p32_dj)
+
+## Additional information
+
+[More information about the DJ console series](hercules_pc_dj_console)

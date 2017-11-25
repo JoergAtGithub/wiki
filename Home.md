@@ -148,6 +148,7 @@ this wiki, please fix it.
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
+  - [Reviews](Reviews) of Mixxx
 
 ### Other Resources
 

@@ -53,3 +53,6 @@ Another old source of this kernel is here:
 [Hercules/Guillemot DJ Console Series Controllers](hercules)
 
 [](hercules_pc_dj_console)
+
+[Old forum thread talking about this kernel
+module](http://mixxx.org/forums/viewtopic.php?f=1&t=851)

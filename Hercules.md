@@ -14,50 +14,41 @@ free open source DJ software and the only one that runs on Windows, Mac
 OSX and Linux (**[download Mixxx](http://mixxx.org/download.php)**)...
 Hercules does not directly develop or support troubleshooting of Mixxx,
 so please direct questions/bugs encountered/comments/praise about Mixxx
-to the [Mixxx community sites](#mixxx-community-sites) at the top of
-this page.
-
-## Mixxing into the Future
-
-**[Skip this Ad](#Hercules-Support)** ^\_^
-
-Mixxx is always evolving, changing and getting better... Mixxx is
-powered by a handful of unpaid part-time developers we've got lots of
-plans and we are always looking for new contributions from all places.
-
-Some of the things in the Mixxx pipeline (many of these things are in
-[Trunk](http://mixxx.svn.sourceforge.net/viewvc/mixxx/trunk/mixxx/?view=log)
-or
-[branches](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/?view=log)):
-
-  - Midi Script, midi input controls bound to user definable JavaScript
-    functions \[ Trunk \]
-  - Shoutcast support \[ Trunk, currently Linux and MinGW Win32 only \]
-  - Real-time Sound FX processing via the
-    [LADSPA](http://en.wikipedia.org/wiki/LADSPA) plug-in architecture
-    \[ Trunk - needs refactoring \]
-  - Apple iTunes Plus/M4A support \[ Trunk, currently Linux only \]
-  - Library rewrite \[ [Features\_sqlite
-    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_sqlite/)
-    \]
-  - Looping support \[ [planning on wiki](looping)
-    [Features\_rryan-looping
-    branch](http://mixxx.svn.sourceforge.net/viewvc/mixxx/branches/Features_rryan-looping/)
-    \]
-  - MIDI training UI to remap controls without [manual editing XML
-    files](midi_controller_mapping_file_format) \[ Trunk \]
+to the Mixxx community sites at the top of this page.
 
 Join us if you want to help\!
 
   - If you can code C++, then [build mixxx](start#build_mixxx), and
-    [send us patches](#mixxx-community-sites)
+    [send us patches](start#mixxx_community_sites)
   - If you can't code, join the [community
-    forums](#mixxx-community-sites), test Mixxx, cheer on the Mixxx dev
-    team or [![Mixxx PayPal Donation
-    Button](https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donations%40mixxx%2eorg&lc=GB&item_name=Mixxx&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
-    to Mixxx.
+    forums](start#mixxx_community_sites), test Mixxx, help [translating
+    it](internationalization) or cheer on the Mixxx dev team.
 
-## Hercules Support
+### What this Page Covers
+
+The purpose of this document is to be a front page for information on
+how to configure Mixxx to use your Hercules controllers.
+
+On each of the different subpages, you will find how controls have been
+mapped to different or non-obvious functions in Mixxx, controls not
+listed there should behave as you would expect (i.e. Crossfader cross
+fades, Play - plays/pauses, etc). Most of the mappings should work for
+Windows and OSX, and most of them should also work in Linux (depending
+if you need HID or MIDI support). These are default mappings and can be
+changed by editing the [XML mappings (click to see
+how)](midi_controller_mapping_file_format).
+
+Bracketed numbers indicate a control's position on the control diagrams.
+Controller diagrams are copyright of Hercules/Guillemot corporation.
+
+## Hardware installation / Driver support
+
+Users of Hercules products on Windows and OSX have had functional
+drivers available from Hercules Website for a long time, and can use the
+mappings already shipped with the current versions of Mixxx.
+
+Under Linux, there are three options, depending on the controller that
+you use: Kernel module, user-mode driver or HID mapping.
 
 On Feb 16, 2009 - Hercules released [GPL Linux MIDI
 drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)
@@ -66,65 +57,34 @@ this wonderful development, the Mixxx team released an updated build of
 Mixxx for Linux - 1.6.1+Herc. <span class="underline">Thanks go out to
 Hercules for supporting their Linux users\!</span>
 
-Note about Linux support: As of January 2011, the drivers available from
-the Hercules site are not functional out of the box with modern
-distributions (kernel \> 2.6.30) and require patching. The Dj Console
-MP3 e2 is also not supported by those drivers (another patch required).
-Please refer to the thread below for further information:
-<http://mixxx.org/forums/viewtopic.php?f=1&t=851>
+Later on, the development halted and newer Linux versions broke the
+support. From then on, other community member have been keeping it in
+working condition. Check out more information in the [Hercules Linux
+kernel module](hercules_linux_kernel_module) page.
 
-Users of Hercules products on Windows and OSX will want to read the
-[updating mapping files](#updating-mapping-files) section to get the
-latest mapping files from the 1.6.1+Herc release and beyond. Mixxx 1.6.1
-on non-Linux OSes can use these files.
+Aside of the kernel driver, there is an [user-mode
+driver](hercules_linux_usermode_driver)
 
-as of Mixxx 1.11 several Hercules devices including the Dj Console Mk2
-and Mk1 may be used as HID devices Without the need for the special
-hercules driver. see these threads in the forum:
+As of Mixxx 1.11 some of the Hercules devices including the Dj Console
+Mk2 and Mk1 can be used as HID devices under Linux without the need for
+the special Hercules driver.
+
+In order to use a HID device in Linux you must have read and write
+permission to the hid devices see details at this page:
+<http://www.mixxx.org/wiki/doku.php/troubleshooting>
+
+If you want more information, you can read on these threads in the
+forum:
 
 <http://www.mixxx.org/forums/viewtopic.php?f=7&t=3712&sid=d6b392ca77e54fd7b21c468d0e77b3e7>
 
 <http://www.mixxx.org/forums/viewtopic.php?f=7&t=4081>
 
-to use a hid device in linux you must have read and write permission to
-the hid devices see details at this page:
-<http://www.mixxx.org/wiki/doku.php/troubleshooting>
+## Configuring Mixxx to use a Hercules controller
 
-### What this Page Covers
+[[/media/hercules_midi_mapping_setup.png|hercules\_midi\_mapping\_setup.png]]
 
-The purpose of this document is to show how to configure Mixxx to user
-your Hercules device.
-
-It also serves to show you how controls have been mapped to different or
-non-obvious functions in Mixxx, controls not listed here should behave
-as you would expect (i.e. Crossfader cross fades, Play - plays/pauses,
-etc). These mappings work with Hercules MIDI drivers for Linux, Mac OSX
-and Windows. *Untested* mappings are based on MIDI code documentation in
-the Hercules manuals and have not yet been extensively validated by the
-Mixxx community. These are default mappings and can be changed by
-editing the [XML mappings (click to see
-how)](midi_controller_mapping_file_format), in future versions of Mixxx
-we will offer a configuration screen to train/retrain/remap this
-controls from within Mixxx.
-
-Bracketed numbers indicate a control's position on the control diagrams.
-Controller diagrams are copyright of Hercules/Guillemot corporation.
-
-> > > **Linux NOTE:** To properly make use of Mixxx **via the [Hercules
-> > > Linux MIDI
-> > > drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1)**
-> > > you will need a release of Mixxx 1.6.1+Herc (released in Feb 2009)
-> > > or higher. Previous versions of Mixxx built for Linux will work
-> > > with Hercules devices via libDJConsole but can not be remapped via
-> > > the [XML mappings](midi_controller_mapping_file_format).
-
-## Configuring Mixxx to use a Hercules MIDI driver
-
-> > **Linux NOTE:** On Linux Mixxx version \>= 1.6.1+Herc is required
-> > (1.6.1 is too old), you must also have compiled and installed the
-> > Hercules dkms kernel module into your Linux kernel
-
-[[/media/hercules_midi_mapping_setup.png|]] \*\* Steps \*\*
+\*\* Steps \*\*
 
 1.  Start Mixxx, open preferences panel (Ctrl+P).
 2.  Select ***Input Controllers***.
@@ -134,7 +94,7 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
     devices is not plugged in.
 4.  Choose the ***Controller Mapping*** matching your Hercules device.
 
-## Hercules DJ Console MK2 and Hercules MP3 Control (Tested)
+## Hercules DJ Console MK2 and Hercules MP3 Control
 
 > > **Note:** Both the MP3 and MK2 controllers are mapped the same way,
 > > but have different configuration files, picking the wrong config
@@ -178,12 +138,11 @@ Controller diagrams are copyright of Hercules/Guillemot corporation.
 ## Hercules Dj Console Mk1
 
 The Hercules Dj Console Mk1 does not work with the Hercules driver, but
-can be used as a hid device in mixxx 1.11 and up. see this link for a
-hid mapping: <http://www.mixxx.org/forums/viewtopic.php?f=7&t=4081>
-remember that you need permission to the HID devices:
+can be used as a hid device in mixxx 1.11 and up. remember that you need
+permission to the HID devices:
 <http://www.mixxx.org/wiki/doku.php/troubleshooting>
 
-the Dj Console Mk1 apears in the mixxx preferences as 3 separate
+The Dj Console Mk1 apears in the mixxx preferences as 3 separate
 devices, the first one is the controler, the second one is the joystick
 mouse(which is unuasble) and the third apears to do nothing.
 
@@ -195,52 +154,47 @@ but can trivialy be cleaned to restore your controler to like new
 condition:
 <http://djconsole.blogspot.it/2007/11/1-how-can-i-repair-my-dj-console-mk1-to.html>
 
-## Hercules RMX (Tested)
+## Hercules Dj Console MK4
+
+There isn't currently a specific page for the MK4.
+
+In order to use it under Linux, you will need the Linux [user-mode
+driver](hercules_linux_usermode_driver).
+
+## Hercules DJ Console RMX
 
 Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)
 
-## Hercules DJ Control Steel (Tested)
+## Hercules DJ Console RMX 2
+
+Find it here -\> [Hercules DJ Console RMX 2](hercules_dj_console_rmx_2)
+
+## Hercules DJ Console 4-Mx
+
+Find it here -\>[Hercules DJ Console 4-Mx](hercules_dj_console_4-mx)
+
+## Hercules DJ Control Steel
 
 Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
 
-## Hercules DJ Control MP3 e2 (Tested)
+## Hercules DJ Control MP3 e2 / MP3 LE / Glow
 
 Moved -\> [Hercules DJ Control MP3 e2](hercules_dj_control_mp3_e2)
 
-## Updating Mapping Files
+## Hercules DJ Control Air
 
-The most recent mapping files where included with Mixxx 1.7.0, released
-August 6th, 2009
+Find it here -\> [Hercules DJ Control Air](hercules_dj_control_air)
 
-\<del\>
+## Hercules DJ Control Instinct
 
-### On Windows
+Find it here -\> [Hercules DJ Control
+Instinct](hercules_dj_control_instinct)
 
-1.  Download the appropriate controller file to the Desktop
-2.  Open a run dialog - Win+R type "%ProgramFiles%\\Mixxx\\midi\\" and
-    hit Ok
-3.  Drag the file from Desktop to "%ProgramFiles%\\Mixxx\\midi\\" folder
-    window
-4.  Restart Mixxx
+## Hercules DJ Control Compact
 
-### On OSX
+Find it here -\> [Hercules DJ Control
+Compact](hercules_djcontrol_compact)
 
-1.  Download the appropriate controller file to the Desktop
-2.  Open Mixxx.app/Contents/Resources/midi in Finder (you can either go
-    to your copy of Mixxx, right-click it, and click "Show Package
-    Contents" and then navigate down, or run "open
-    /Applications/Mixxx.app/Contents/Resources/midi"). 
-3.  Drag the file from Desktop to folder window
-4.  Restart Mixxx
+## Hercules P32 DJ
 
-### On Linux
-
-Currently 1.6.1+Herc has these mapping files, however in future you can
-update them manually by following these steps:
-
-1.  Download the appropriate controller file to the Desktop
-2.  Open a terminal
-3.  type "sudo cp \~/Desktop/Hercules\*.xml /usr/share/mixxx/midi/"
-4.  Restart Mixxx
-
-\</del\>
+Find it here -\> [Hercules P32 DJ](hercules_p32_dj)

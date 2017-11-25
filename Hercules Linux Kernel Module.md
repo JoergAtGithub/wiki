@@ -5,45 +5,50 @@ and controllers. Since it's been outdated by newer kernel versions,
 community members are now maintaining it, so it works also in newer
 kernel versions.
 
+\*\* Note: This module supports only the following models: \*\*
+
+  - DJ Console MK1
+  - DJ Console MK2
+  - DJ Console Rmx
+  - DJ Console Steel
+
+Also, you don't need this kernel if you just want to use them with
+recent Mixxx versions, because they are supported with HID mappings,
+which communicate directly with the controller.
+
 ## Ubuntu PPA
 
-Reported working on Ubuntu 10.10 and 11.04. Launchpad link:
 <https://launchpad.net/~rojtberg/+archive/hdjmod>
 
-`sudo add-apt-repository ppa:rojtberg/hdjmod`
+There are builds for Ubuntu 12.04, 14.04, 14.10, 15.04, 15.10, 16.04,
+16.10 and 17.04:
 
-`sudo apt-get update`
+You can get it using the following instructions:
 
-`sudo apt-get install hdjmod-dkms`
+  - sudo add-apt-repository ppa:rojtberg/hdjmod
+  - sudo apt-get update
+  - sudo apt-get install hdjmod-dkms
+  - sudo modprobe hdj\_mod
 
-`sudo modprobe hdj_mod`
+## lightrush fork
 
-## Package .deb
+There was a fork of the previous repository that fixed some problems
+with versions 10.04 and 10.10 of Ubuntu. These are no longer needed
+because rojtberg repository was updated and is currently more up to
+date:
 
-For Ubuntu 10.04 and up, you'll want lightrush's patched version:
+You will find here some instructions on how to install the control
+panel, so here it is.
 
 <https://sites.google.com/site/lightrush/random-1/herculesdjconsoleonkernel2635orubuntumaverick>.
 
 ## Package dkms
 
-dkms means: Dynamic Kernel Module Support
-
-It is supported by all recent linux distros. When your distro will
-update the kernel, it will automatically rebuild and reinstall the
-drivers\!
-
-Please follow instruction file: readme\_driver\_dkms.txt
+Another old source of this kernel is here:
 
 <http://slist.lilotux.net/linux/deejay/mixxx/>
 
-Update :
-
-  - Ubuntu 10.10 : OK
-  - Ubuntu 11.04 : OK
-
-## Old information
-
-Some more (older) information can be found on these pages:
+## Related pages
 
 [Hercules/Guillemot DJ Console Series Controllers](hercules)
 

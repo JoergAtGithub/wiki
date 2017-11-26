@@ -822,26 +822,12 @@ body.
 Use. Both the name of the enum type and its enumerated values should be
 written in CamelCase with the first letter capitalized.
 
-**Good:**
-
 ``` cpp-qt
 enum class ChannelLayout {
     Unknown,
     Mono,     // 1 channel
     DualMono, // 2 channels with identical signals
     Stereo,   // 2 independent channels left/right
-    // ...
-};
-```
-
-**Bad:**
-
-``` cpp-qt
-enum ChannelLayout {
-    UNKNOWN,
-    MONO,      // 1 channel
-    DUAL_MONO, // 2 channels with identical signals
-    STEREO,    // 2 independent channels left/right
     // ...
 };
 ```

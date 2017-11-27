@@ -18,6 +18,7 @@ Mixxx.
     3.  Discoverability matters, but in case there is a conflict between
         discoverability and ease of use for experienced users, being
         intuitive and easy to use while performing is more important.
+        Strive for designs that are both discoverable and easy to use.
 3.  **"Works for me" is not good enough.** It must work for everyone.
     People use Mixxx with a wide variety of hardware with a wide variety
     of music for a wide variety of purposes. Your changes should not

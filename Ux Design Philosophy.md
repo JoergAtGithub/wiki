@@ -30,3 +30,7 @@ Mixxx.
 5.  **Test your assumptions.** The people who make a design cannot
     anticipate all the issues other people will have with it. Do
     usability tests both with experienced DJs and novice users.
+6.  **Use convention as a guide.** DJ software and hardware has long
+    standing conventions about how things work. Only break expectations
+    if there is a good reason to. Don't be afraid to innovate and do it
+    better than the conventional way though.

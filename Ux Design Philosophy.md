@@ -12,11 +12,12 @@ Mixxx.
         accessible with a minimum of steps (clicks, button presses, or
         other interactions) required to use them. Features whose use is
         not time sensitive do not need to be as easily accessible.
-    2.  Discoverability matters, but being intuitive and easy to use
-        while performing is more important.
-    3.  Minimize mutable state, because the more moving parts a user has
+    2.  Minimize mutable state, because the more moving parts a user has
         to keep track of, the more likely it is they will do something
         accidentally.
+    3.  Discoverability matters, but in case there is a conflict between
+        discoverability and ease of use for experienced users, being
+        intuitive and easy to use while performing is more important.
 3.  **"Works for me" is not good enough.** It must work for everyone.
     People use Mixxx with a wide variety of hardware with a wide variety
     of music for a wide variety of purposes. Your changes should not

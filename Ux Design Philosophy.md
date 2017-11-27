@@ -28,4 +28,5 @@ Mixxx.
     understand all features of Mixxx. If they cannot, the design and/or
     documentation are not good enough.
 5.  **Test your assumptions.** The people who make a design cannot
-    anticipate all the issues other people will have with it.
+    anticipate all the issues other people will have with it. Do
+    usability tests both with experienced DJs and novice users.

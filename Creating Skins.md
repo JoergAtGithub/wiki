@@ -1162,13 +1162,21 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 New in Mixxx 2.1
 
-Displays the duration of the running recording. When recording is
-inactive/stopped it shows "--:--"
+|                                                                                                                     |  |                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------- |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<RecordingDuration>
+  <Pos>X,Y</Pos>
+  <Size>W,H</Size>
+  <InactiveText>foo</InactiveText>
+ </RecordingDuration>
+` |  | `
+Displays the duration of the running recording.
+Defines the element position
+Defines the element size
+Custom text to be displayed when recording is inactive/stopped, default is “–:–”
 
-    <RecordingDuration>
-      <Pos>X,Y</Pos>
-      <Size>W,H</Size>
-    </RecordingDuration>
+
+` |
 
 ### Pitch rate display
 

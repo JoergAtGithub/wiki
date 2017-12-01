@@ -5,8 +5,8 @@ crashed.
 
 ## Windows
 
-1.  Download [x64dbg](https://sourceforge.net/projects/x64dbg/) an
-    open-source x64/x32 debugger for windows that runs without
+1.  Download [x64dbg](https://github.com/x64dbg/x64dbg/releases), an
+    open-source x64/x32 debugger for Windows that runs without
     installation from a folder and support the symbols file mixxx.pdb.
     (The alternative [GDB for
     Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) is not

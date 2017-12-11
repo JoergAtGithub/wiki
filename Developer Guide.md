@@ -37,6 +37,16 @@ what it is doing. We have [guides](developer%20tools#using%20IDEs) for
 setting up several IDEs to work on Mixxx, but feel free to use whatever
 IDE you prefer.
 
+We highly recommend these resources from the Xiph.org Foundation for
+background information on digital and analog signal processing:
+
+  - [A Digital Media Primer For
+    Geeks](https://wiki.xiph.org/Videos/A_Digital_Media_Primer_For_Geeks)
+  - [Digital Show and
+    Tell](https://wiki.xiph.org/Videos/Digital_Show_and_Tell)
+  - [24/192 Music Downloads are Very Silly
+    Indeed](https://xiph.org/~xiphmont/demo/neil-young.html)
+
 # main.cpp
 
 As all C++ programs usually do, Mixxx starts up with a `main` function

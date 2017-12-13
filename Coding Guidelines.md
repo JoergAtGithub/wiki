@@ -369,6 +369,13 @@ underscore.
 #endif
 ```
 
+For new header files use a \#pragma once directive instead of \#include
+guards:
+
+``` cpp-qt
+#pragma once
+```
+
 ### includes
 
 File includes should be done in the following order:

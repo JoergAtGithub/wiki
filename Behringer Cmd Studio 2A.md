@@ -47,7 +47,7 @@ explanations.
     items.
   - The FILE button focus on files list.
   - The UP and DOWN buttons change the selected item (file or folder) up
-    or down one by one. If Mode button is active, file selection moves
+    or down one by one. If MODE button is active, file selection moves
     up or down ten by ten.
 
 ### Transport Control

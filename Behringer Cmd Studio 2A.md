@@ -1,4 +1,4 @@
-This is the Work in progress page of **Behringer CMS Studio 2a** mapping
+This is the Work in progress page of **Behringer CMD Studio 2a** mapping
 for Mixxx
 
 # Behringer CMD Studio 2a

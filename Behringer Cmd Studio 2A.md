@@ -32,10 +32,8 @@ All the buttons and knobs on the controller behave as they are labelled:
 
 [[/media/esquema2.png|]]
 
-Mode, Vinyl, Assign A and B buttons require explanations.
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Not
-edited yet
+However, some buttons (Mode, Vinyl, Assign A and Assign B) require extra
+explanations.
 
 ### Mixer
 

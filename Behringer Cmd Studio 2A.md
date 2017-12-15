@@ -74,11 +74,14 @@ explanations.
     the current playback position.
   - If already set, pressing a HOT CUE button jumps to that hot cue
     position.
-  - If the DEL button is \*held\*, pressing an already set HOT CUE
-    button will clear that hot cue.
-  - Tapping the DEL button toggles [\#DEL-mode](#DEL-mode). The button
-    will light up blue. DEL-mode alters some of the other button
-    functions like a shift button on other controllers.
+  - If the MODE button is active, pressing an already set HOT CUE button
+    will clear that hot cue.
+
+<!-- end list -->
+
+``` 
+* 
+```
 
 ### Playback Pitch/Rate
 

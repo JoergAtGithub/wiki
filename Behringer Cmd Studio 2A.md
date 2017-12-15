@@ -37,10 +37,8 @@ explanations.
 
 ### Mixer
 
-  - The HIGH, MID, and LOW EQ knobs & kill buttons, deck faders,
-    cross-fader, master, and headphone monitoring (mix & volume) knobs
-    all operate as labelled.
-  - Each deck also has a gain knob (leftmost "FX Control" knob).
+  - The HIGH, MID, and LOW EQ knobs, deck faders, crossfader, and
+    headphone monitoring (head gain) knob, all operate as labelled.
 
 ### Navigation Control
 

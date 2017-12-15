@@ -37,8 +37,9 @@ explanations.
 
 ### Mixer
 
-  - The HIGH, MID, and LOW EQ knobs, deck faders, crossfader, and
-    headphone monitoring (head gain) knob, all operate as labelled.
+  - The HIGH, MID, and LOW EQ knobs, deck faders, crossfader, CUE A and
+    CUE B (headphone monitoring), and headphone knob (head gain), all
+    operate as labelled.
 
 ### Navigation Control
 

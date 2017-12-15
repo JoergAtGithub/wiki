@@ -89,22 +89,12 @@ explanations.
   - The PITCH BEND +/- buttons reset the tempo to normal rate when both
     are pressed simultaneously.
 
-### FX Control Buttons
+### ASSIGN A and ASSIGN B Buttons
 
-These do not control effects; they have other functions:
-
-  - FX Control button 1 toggles the deck slip-mode on/off, (button
-    lights blue when active). Slip-mode is not available in any Mixxx
-    skin yet so may be unfamiliar. When slip-mode is active, playback
-    continues (muted in the background) during a loop/scratch etc. Once
-    disabled, playback will resume where the track would have been if
-    the loop/scratch has not taken place (thus preserving the track
-    beat).
-  - FX Control button 2 toggles the deck repeat mode, (button lights
-    blue when active).
-  - FX Control button 3 can be tapped to adjust the beat-grid position.
-  - FX Control button 4 toggles the deck quantise mode on/off, (button
-    lights blue when active).
+  - ASSIGN A button activates loop mode.
+  - ASSIGN B button toggles loop enabled.
+  - When loop mode is active, +/- buttons set loop in and loop out
+    points.
 
 ### FX Control knobs
 

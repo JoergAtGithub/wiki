@@ -8,9 +8,8 @@ Interface
 
 [[/media/cmd-studio-2a_p0avw_top_l.png|]]
 
-The Behringer CMD Studio 2a is a 2 deck controller that supports 2
-virtual decks and has a built in 4 channel (one stereo master, one
-stereo headphones) USB sound card built in.
+The Behringer CMD Studio 2a is a 2 deck controller and has 4 channel
+(one stereo master, one stereo headphones) USB sound card built in.
 
   - [Mixxx Forum
     Thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9359)

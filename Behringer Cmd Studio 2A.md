@@ -77,12 +77,6 @@ explanations.
   - If the MODE button is active, pressing an already set HOT CUE button
     will clear that hot cue.
 
-<!-- end list -->
-
-``` 
-* 
-```
-
 ### Playback Pitch/Rate
 
   - The pitch knobs control the pitch sliders in Mixxx and change the

@@ -49,13 +49,6 @@ explanations.
     or down one by one. If Mode button is active, file selection moves
     up or down ten by ten.
 
-### Deck Select Buttons
-
-  - The deck select buttons (A, B, C, D) make the respective "virtual"
-    deck active.
-  - On the left deck: A = Channel 1, C = Channel 3.
-  - On the right deck: B = Channel 2, D = Channel 4.
-
 ### Transport Control
 
   - The deck LOAD buttons will load the currently highlighted track in

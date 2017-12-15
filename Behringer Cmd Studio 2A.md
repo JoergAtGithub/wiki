@@ -28,13 +28,14 @@ stereo headphones) USB sound card built in.
 
 ## Mapping description
 
-Most of the buttons and knobs on the controller behave as they are
-labelled:
+All the buttons and knobs on the controller behave as they are labelled:
 
 [[/media/esquema2.png|]]
 
-The only major departure from the above are the 4 "FX Control" knobs and
-buttons at the top of each deck.
+Mode, Vinyl, Assign A and B buttons require explanations.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Not
+edited yet
 
 ### Mixer
 

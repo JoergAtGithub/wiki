@@ -53,7 +53,7 @@ explanations.
 ### Transport Control
 
   - The LOAD A and LOAD B buttons will load the currently highlighted
-    track in the library window into that deck.
+    track in the library window into deck A or B.
   - The deck CUE, PLAY and SYNC buttons work as labelled (SYNC toggles
     master sync for the deck).
 

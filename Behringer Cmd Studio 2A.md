@@ -65,8 +65,8 @@ explanations.
     search.
   - When the top wheel surface is touched the wheels act as as a
     precision jog.
-  - When the SCRATCH button is activated, moving the wheel while
-    touching the top surface scratches the track.
+  - When the VINYL button is activated, moving the wheel while touching
+    the top surface scratches the track.
 
 ### Hot Cue Buttons
 

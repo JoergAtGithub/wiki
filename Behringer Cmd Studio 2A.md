@@ -82,13 +82,12 @@ explanations.
 
 ### Playback Pitch/Rate
 
-  - The pitch sliders control the pitch.
+  - The pitch knobs control the pitch sliders in Mixxx and change the
+    tempo permanently.
   - The PITCH BEND +/- buttons step the playback rate up or down
-    (pressing both resets the rate back to normal).
-  - The LOCK buttons turn on key lock so the pitch doesn't change when
-    the playback rate changes.
-  - The PITCH BEND button lights will indicate whether the current pitch
-    is higher or lower than normal.
+    temporally while pressed.
+  - The PITCH BEND +/- buttons reset the tempo to normal rate when both
+    are pressed simultaneously.
 
 ### FX Control Buttons
 

@@ -3,6 +3,9 @@ for Mixxx
 
 # Behringer CMD Studio 2a
 
+Ultra-Portable Dual-Deck DJ MIDI Controller with 4-Channel Audio
+Interface
+
 [[/media/cmd-studio-2a_p0avw_top_l.png|]]
 
 The Behringer CMD Studio 2a is a 2 deck controller that supports 2
@@ -25,13 +28,10 @@ stereo headphones) USB sound card built in.
 
 ## Mapping description
 
-(This page details v1.4 of the Behringer CMD STUDIO 2a controler
-mapping)
-
 Most of the buttons and knobs on the controller behave as they are
 labelled:
 
-[[/media/hardware/cmd-studio-4a-layout.png|]]
+[[/media/esquema2.png|]]
 
 The only major departure from the above are the 4 "FX Control" knobs and
 buttons at the top of each deck.

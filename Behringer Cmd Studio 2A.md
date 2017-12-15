@@ -93,7 +93,7 @@ explanations.
   - When loop mode is active, +/- buttons set loop in and loop out
     points.
 
-### FX Control knobs
+### FX Con
 
   - FX Control knob 1 = Deck gain.
   - FX Control knob 2 = FX 1 "super" control (FX unit 1 on left deck,

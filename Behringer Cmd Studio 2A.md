@@ -42,11 +42,12 @@ explanations.
 
 ### Navigation Control
 
-  - The BROWSE knob scrolls thorough the track list in the library
-    panel.
-  - The BROWSE LEFT/RIGHT buttons move through the library tree (and can
-    also select effects, see later).
-  - The ENTER button expands/collapses library tree items.
+  - The FOLDER button focus on folders tree and expand/collapses library
+    items.
+  - The FILE button focus on files list.
+  - The UP and DOWN buttons change the selected item (file or folder) up
+    or down one by one. If Mode button is active, file selection moves
+    up or down ten by ten.
 
 ### Deck Select Buttons
 

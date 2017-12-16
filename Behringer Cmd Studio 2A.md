@@ -107,15 +107,11 @@ explanations.
 
 Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-### FX Assign Buttons
+### Sample Buttons
 
-  - Tapping either of the 2 FX ASSIGN buttons on each deck will toggle
-    the deck's output to one (or both) of two effects in the (default)
-    4-unit effects rack. The left deck (A or C) can be assigned to
-    effect units 1 and/or 2. The right deck (B or D) can be assigned to
-    effect units 3 and/or 4.
-  - \*Holding\* an FX ASSIGN button allows the effect in that effect
-    unit to be changed using the BROWSE LEFT/RIGHT buttons.
+  - When samples are loaded, deck A sample buttons trigger samples 1 to
+    4 of bank 1 and deck B sample buttons trigger samples 1 to 4 of bank
+    2. 
 
 ### DEL-mode
 

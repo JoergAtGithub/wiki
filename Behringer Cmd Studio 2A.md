@@ -105,8 +105,6 @@ explanations.
     state. Navigation up or down into library sets the state to locked.
     Other actions sets to off.
 
-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 ### Sample Buttons
 
   - When samples are loaded, deck A sample buttons trigger samples 1 to

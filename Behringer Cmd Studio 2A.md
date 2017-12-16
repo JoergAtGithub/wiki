@@ -120,6 +120,6 @@ the behaviour of a number of the controller buttons as follows:
 
   - The HOT CUE buttons clear the current hot cue point if defined.
   - The sample buttons stop the current sample and go to start.
-  - The UP and DOWN buttons in file navigation move ten by ten items up
-    or down.
+  - The UP and DOWN buttons, in file navigation, move ten by ten items
+    up or down.
   - The CUE buttons go to start cue.

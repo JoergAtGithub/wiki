@@ -93,15 +93,17 @@ explanations.
   - When loop mode is active, +/- buttons set loop in and loop out
     points.
 
-### FX Con
+### MODE button
 
-  - FX Control knob 1 = Deck gain.
-  - FX Control knob 2 = FX 1 "super" control (FX unit 1 on left deck,
-    unit 3 on right deck).
-  - FX Control knob 3 = FX 2 "super" control (FX unit 2 on left deck,
-    unit 4 on right deck).
-  - FX Control knob 4 = Deck "quick effect" control (by default this is
-    a filter effect but can be changed in Mixxx's preferences).
+  - The MODE button has three states: off, shifted and locked. When off,
+    led is orange. When shifted, led is blinking blue. When locked, led
+    is blue.
+  - Pressing the MODE button once activates shifted mode. Pressing the
+    button twice activates the locked mode. Pressig again toggles mode
+    off.
+  - When MODE is shifted, next action will determine a different MODE
+    state. Navigation up or down into library sets the state to locked.
+    Other actions sets to off.
 
 ### FX Assign Buttons
 

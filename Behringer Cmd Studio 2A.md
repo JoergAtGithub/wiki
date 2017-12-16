@@ -1,5 +1,5 @@
 This is the Work in progress page of **Behringer CMD Studio 2a** mapping
-for Mixxx
+for Mixxx 2.0.0
 
 # Behringer CMD Studio 2a
 

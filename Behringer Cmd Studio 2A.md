@@ -109,7 +109,9 @@ explanations.
 
   - When samples are loaded, deck A sample buttons trigger samples 1 to
     4 of bank 1 and deck B sample buttons trigger samples 1 to 4 of bank
-    2. 
+    2.
+  - When MODE button is active, pressing a sample button stops the
+    current sample playing and goes to start.
 
 ### DEL-mode
 

@@ -93,6 +93,14 @@ explanations.
   - When loop mode is active, +/- buttons set loop in and loop out
     points.
 
+### Sample Buttons
+
+  - When samples are loaded, deck A sample buttons trigger samples 1 to
+    4 of bank 1 and deck B sample buttons trigger samples 1 to 4 of bank
+    2.
+  - When MODE button is active, pressing a sample button stops the
+    current sample playing and goes to start.
+
 ### MODE button
 
   - The MODE button has three states: off, shifted and locked. When off,
@@ -105,50 +113,11 @@ explanations.
     state. Navigation up or down into library sets the state to locked.
     Other actions sets to off.
 
-### Sample Buttons
+### MODE actions
 
-  - When samples are loaded, deck A sample buttons trigger samples 1 to
-    4 of bank 1 and deck B sample buttons trigger samples 1 to 4 of bank
-    2.
-  - When MODE button is active, pressing a sample button stops the
-    current sample playing and goes to start.
+This is equivalent to a shift button on other controllers and so changes
+the behaviour of a number of the controller buttons as follows:
 
-### DEL-mode
-
-DEL-mode is activated by \*tapping\* the deck's hot cue DEL button (the
-button will light up blue). This is equivalent to a shift button on
-other controllers and so changes the behaviour of a number of the
-controller buttons as follows:
-
-  - The HOT CUE buttons act as auto-loop triggers (when \*held\*) in
-    DEL-mode. The button layout follows the default "LateNight" skin
-    (i.e. top row = \[1/8\] to \[1\], bottom row = \[2\] to \[16\]
-    beats). Longer auto-loops can be "locked" (so the HOT CUE button
-    doesn't have to be held) by pressing the LOOP ON/OFF button after an
-    auto-loop is selected, (locked/playing auto-loops can also be
-    resized by selecting a different auto-loop and then re-locking the
-    new size with the LOOP ON/OFF button).
-  - The CUE button triggers reverse playback (while \*held\*).
-  - The PLAY button triggers reverse-slip playback (while \*held\*). NB:
-    if you already have slip-mode activated before you trigger
-    reverse-slip playback, (e.g. by having pressed FX-Control button 1),
-    then slip-mode will be turned off as soon as you release the PLAY
-    button (and you will return to the playback point where you would
-    have been if you hadn't altered the playback).
-  - The PITCH BEND +/- buttons step the key up/down without altering the
-    playback rate. If both PITCH BEND buttons are pressed together, the
-    playback key is reset to normal.
-
-### Auto-Loops and Slip-Mode
-
-There are no "slip-mode aware" skins in Mixxx yet so the auto-loop
-behaviour of this controller (which \*is\* "slip-mode aware") may be a
-little different than you might expect to take advantage of this
-feature.
-
-  - Auto-loop buttons are (by default) only active when held.
-  - In slip-mode, releasing an auto-loop button will immediately
-    "re-sync" playback (by disabling, then immediately re-enabling slip
-    mode), you may see the slip-mode button flash briefly when this
-    happens. This allows for some very interesting "slip-auto-loop"
-    effects.
+  - The HOT CUE buttons clear the current hot cue point if defined.
+  - The sample buttons stop the current sample and go to start.
+  - The CUE buttons go to cue.

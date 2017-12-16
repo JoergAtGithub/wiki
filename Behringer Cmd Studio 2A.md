@@ -99,11 +99,13 @@ explanations.
     led is orange. When shifted, led is blinking blue. When locked, led
     is blue.
   - Pressing the MODE button once activates shifted mode. Pressing the
-    button twice activates the locked mode. Pressig again toggles mode
+    button twice activates the locked mode. Pressing again toggles mode
     off.
   - When MODE is shifted, next action will determine a different MODE
     state. Navigation up or down into library sets the state to locked.
     Other actions sets to off.
+
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### FX Assign Buttons
 

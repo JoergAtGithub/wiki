@@ -151,3 +151,7 @@ Follow this procedure to reset the unit to its default factory settings
     blink.
   - Release the pressed buttons and the unit reset will be completed.
     Lights will turn on.
+
+### MIDI controls diagram
+
+To do.

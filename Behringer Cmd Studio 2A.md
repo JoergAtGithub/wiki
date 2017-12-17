@@ -130,12 +130,12 @@ the behaviour of a number of the controller buttons as follows:
 
   - Default MIDI channel witch with the unit works is channel 1 (0x0).
   - The unit offers the ability to change the MIDI channel if is needed,
-    but then, JS and XML mapping files must be changed too according to
-    match the new channel in order to work properly.
+    but then, in order to work properly, JS and XML mapping files must
+    be changed too according to match the new channel.
   - The manufacturer offers a channel changer application in his
     [download
     page](http://www.musictri.be/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-STUDIO-2A/p/P0AVW/downloads)
-    for Mac an Win users. GNU/Linux users can try the Win one with Wine
-    (tested on Ubuntu 16.04 LTS and works fine).
+    for Mac an Windows users. GNU/Linux users can try the Windows
+    version with Wine (tested on Ubuntu 16.04 LTS and works fine).
 
 ### Reset to factory defaults

@@ -123,3 +123,19 @@ the behaviour of a number of the controller buttons as follows:
   - The UP and DOWN buttons, in file navigation, move ten by ten items
     up or down.
   - The CUE buttons go to start cue.
+
+## Hardware configuration
+
+### MIDI Channel
+
+  - Default MIDI channel witch with the unit works is channel 1 (0x0).
+  - The unit offers the ability to change the MIDI channel if is needed,
+    but then, JS and XML mapping files must be changed too according to
+    match the new channel in order to work properly.
+  - The manufacturer offers a channel changer application in his
+    [download
+    page](http://www.musictri.be/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-STUDIO-2A/p/P0AVW/downloads)
+    for Mac an Win users. GNU/Linux users can try the Win one with Wine
+    (tested on Ubuntu 16.04 LTS and works fine).
+
+### Reset to factory defaults

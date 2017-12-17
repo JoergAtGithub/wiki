@@ -124,7 +124,7 @@ the behaviour of a number of the controller buttons as follows:
     up or down.
   - The CUE buttons go to start cue.
 
-## Hardware configuration
+## Hardware settings
 
 ### MIDI Channel
 

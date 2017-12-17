@@ -8,7 +8,9 @@ channels in and 4 channels out. It features both balanced 1/4" and
 unbalanced RCA master outputs plus RCA booth outputs with an independent
 volume control. It can also be used as a stand-alone mixer, or used to
 mix an analog source with music files in Mixxx. This device requires a
-power adapter in addition to the USB cable.
+power adapter in addition to the USB cable. This device is not USB MIDI
+class compliant. Its signals are translated to MIDI by special drivers
+on Windows and Mac OS X. *There is no driver available for Linux.*
 
   - [Mixxx Forum
     Thread](http://mixxx.org/forums/viewtopic.php?f=7&t=5418)

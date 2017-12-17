@@ -262,7 +262,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2013</td>
 </tr>
 <tr class="even">
-<td><strong><a href="Korg KAOSS DJ">Korg KAOSS DJ</a></strong></td>
+<td><strong><a href="https://mixxx.org/forums/viewtopic.php?f=7&amp;t=8479#p34521">Korg KAOSS DJ</a></strong></td>
 <td>€120 / $270</td>
 <td>2 deck controller and standalone mixer (switchable)</td>
 <td>yes</td>

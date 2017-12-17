@@ -141,7 +141,7 @@ the behaviour of a number of the controller buttons as follows:
 ### Reset to factory defaults
 
 Follow this procedure to reset the unit to its default factory settings
-(including resetting MIDI channel to 1).
+(including resetting MIDI channel to 1):
 
   - Unplug the USB cable if it was plugged to the unit. Lights will turn
     off.

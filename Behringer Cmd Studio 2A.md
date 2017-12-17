@@ -139,3 +139,15 @@ the behaviour of a number of the controller buttons as follows:
     version with Wine (tested on Ubuntu 16.04 LTS and works fine).
 
 ### Reset to factory defaults
+
+Follow this procedure to reset the unit to its default factory settings
+(including resetting MIDI channel to 1).
+
+  - Unplug the USB cable if it was plugged to the unit. Lights will turn
+    off.
+  - Hold simultaneously left CUE and left PLAY buttons and, while
+    holding, plug the USB cable to the unit.
+  - After a few seconds, right CUE and right PLAY buttons start to
+    blink.
+  - Release the pressed buttons and the unit reset will be completed.
+    Lights will turn on.

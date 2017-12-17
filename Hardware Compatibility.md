@@ -48,8 +48,8 @@ Mixxx work with it.
 Mixxx can work with any controller that sends MIDI or HID signals to
 your computer; it just needs a controller mapping to tell Mixxx what to
 do with the signals. Standards compliant MIDI controllers do not need
-any special drivers on Linux, Mac OS X, or Windows. Standards compliant
-HID controllers do not need any special drivers. Most DJ controllers are
+any special drivers on Linux, macOS, or Windows. Standards compliant HID
+controllers do not need any special drivers. Most DJ controllers are
 standards compliant MIDI controllers and so are these in the tables
 below. Exceptions from the standard are noted in the tables below.
 
@@ -59,9 +59,9 @@ Controllers that have integrated sound cards often have a USB Audio
 Class compliant sound card. Sound cards that aren't USB Audio Class
 compliant need a driver for each OS. USB Audio Class compliant sound
 cards, both stand-alone and integrated into controllers, do not need any
-special drivers for Linux or Mac OS X. On Windows, they can be used
-without any special drivers, but a driver is needed from the
-manufacturer to use the recommended [ASIO sound
+special drivers for Linux or macOS. On Windows, they can be used without
+any special drivers, but a driver is needed from the manufacturer to use
+the recommended [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 Sound cards that are advertised for use with iOS devices are class
 compliant.
@@ -349,13 +349,13 @@ the mapping to Mixxx](contributing%20mappings).
 Native Instruments' newer DJ controllers are USB HID class compliant
 devices
 ([source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/)).
-The Windows and Mac OS X drivers can translate the HID signals to MIDI,
-but this is not available on GNU/Linux. So, if you make a mapping for
-these controllers, please make an HID mapping so it is compatible with
-every OS that Mixxx runs on.
+The Windows and macOS drivers can translate the HID signals to MIDI, but
+this is not available on GNU/Linux. So, if you make a mapping for these
+controllers, please make an HID mapping so it is compatible with every
+OS that Mixxx runs on.
 
 Native Instruments' older DJ controllers use a proprietary protocol
-called NHL that Mixxx does not support. The Windows and Mac OS X drivers
+called NHL that Mixxx does not support. The Windows and macOS drivers
 can switch these controllers to a MIDI mode by pressing certain buttons
 (see [the Native Instruments
 website](https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/)
@@ -414,7 +414,7 @@ to use. All USB sound cards listed in the table below work with Windows,
 macOS, and Linux.
 
 Thunderbolt sound cards can operate at lower latencies than USB or
-Firewire sound cards, but are generally only compatible with Mac OS X.
+Firewire sound cards, but are generally only compatible with macOS.
 
 ### Sound card considerations
 
@@ -727,16 +727,16 @@ this and search online for information about any particular controller.
 21. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 22. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Mac OS X. There is no
-    driver available for Linux or Windows.
+    translated to MIDI by special drivers on macOS. There is no driver
+    available for Linux or Windows.
 
 23. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 24. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
+    translated to MIDI by special drivers on Windows and macOS. There is
+    no driver available for Linux.
 
-25. [Mac OS X driver](http://www.joemattiello.com/dm2/); [Linux MIDI
+25. [macOS driver](http://www.joemattiello.com/dm2/); [Linux MIDI
     Driver](http://www.jockusch.de/dm2/dm2-pre20080225.tgz), [Alternate
     Linux MIDI driver
     (unfinished)](http://prophet.homelinux.org/usbdm2/usbdm2.tar.bz2),
@@ -744,8 +744,8 @@ this and search online for information about any particular controller.
     sf.net](http://sourceforge.net/project/showfiles.php?group_id=198453)
 
 26. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
+    translated to MIDI by special drivers on Windows and macOS. There is
+    no driver available for Linux.
 
 27. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
@@ -754,8 +754,8 @@ this and search online for information about any particular controller.
     Mixxx when Mixxx 2.1 is released.
 
 29. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
+    translated to MIDI by special drivers on Windows and macOS. There is
+    no driver available for Linux.
 
 30. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
@@ -766,14 +766,14 @@ this and search online for information about any particular controller.
     Mixxx when Mixxx 2.1 is released.
 
 33. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Windows and Mac OS X. There
-    is no driver available for Linux.
+    translated to MIDI by special drivers on Windows and macOS. There is
+    no driver available for Linux.
 
 34. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 35. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on Mac OS X. There is no
-    driver available for Linux or Windows.
+    translated to MIDI by special drivers on macOS. There is no driver
+    available for Linux or Windows.
 
 36. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.

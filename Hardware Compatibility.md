@@ -43,7 +43,7 @@ it is impossible, it only means that no one has made it work with Mixxx
 yet. Anyone, including you, who has the hardware is welcome to make
 Mixxx work with it.
 
-#### MIDI standard and Windows, Mac OS and Linux
+#### Controllers
 
 Mixxx can work with any controller that sends MIDI or HID signals to
 your computer; it just needs a controller mapping to tell Mixxx what to
@@ -53,7 +53,7 @@ HID controllers do not need any special drivers. Most DJ controllers are
 standards compliant MIDI controllers and so are these in the tables
 below. Exceptions from the standard are noted in the tables below.
 
-#### Integrated sound card compatiblity
+#### Sound cards
 
 Controllers that have integrated sound cards often have a USB Audio
 Class compliant sound card. Sound cards that aren't USB Audio Class

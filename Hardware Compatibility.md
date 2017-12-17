@@ -262,13 +262,13 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2013</td>
 </tr>
 <tr class="even">
-<td><a href="https://mixxx.org/forums/viewtopic.php?f=7&amp;t=8479">[[Korg KAOSS DJ</a>]]</td>
+<td><a href="Korg KAOSS DJ">Korg KAOSS DJ</a></td>
 <td>€120 / $270</td>
 <td>2 deck controller and standalone mixer (switchable)</td>
 <td>yes</td>
-<td></td>
-<td></td>
-<td></td>
+<td>no</td>
+<td>MIDI</td>
+<td>2015</td>
 </tr>
 <tr class="odd">
 <td><a href="Pioneer DDJ-WeGO">Pioneer DDJ-WeGO</a></td>

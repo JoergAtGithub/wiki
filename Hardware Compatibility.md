@@ -329,7 +329,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <tr class="odd">
 <td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
 <td>$100</td>
-<td>2 deck DJ controller and mixer, ultra-portable.</td>
+<td>2 deck controller</td>
 <td>yes</td>
 <td>no</td>
 <td>MIDI</td>

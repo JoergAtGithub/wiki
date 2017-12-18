@@ -244,7 +244,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td><strong><a href="Faderfox DJ44">Faderfox DJ44</a></strong></td>
+<td><a href="Faderfox DJ44">Faderfox DJ44</a></td>
 <td>€499</td>
 <td>2/4 deck[40] mobile controller</td>
 <td>no</td>
@@ -262,7 +262,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2013</td>
 </tr>
 <tr class="even">
-<td><strong><a href="https://mixxx.org/forums/viewtopic.php?f=7&amp;t=8479#p34521">Korg KAOSS DJ</a></strong></td>
+<td><a href="https://mixxx.org/forums/viewtopic.php?f=7&amp;t=8479#p34521">Korg KAOSS DJ</a></td>
 <td>€120 / $270</td>
 <td>2 deck controller and standalone mixer (switchable)</td>
 <td>yes</td>
@@ -327,7 +327,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2012</td>
 </tr>
 <tr class="odd">
-<td><strong><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></strong></td>
+<td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
 <td>$100</td>
 <td>2 deck DJ controller and mixer, ultra-portable.</td>
 <td>yes</td>

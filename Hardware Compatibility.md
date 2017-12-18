@@ -326,6 +326,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
+<tr class="odd">
+<td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
+<td>$100</td>
+<td>2 deck controller and mixer, ultra-portable.</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2017</td>
+</tr>
 </tbody>
 </table>
 

@@ -38,3 +38,13 @@ to play m4a files from a trunk build without installing, call `./mixxx
 --pluginPath ./linux_build/plugins/linux_build`, changing linux\_build
 to the appropriate directory name as necessary). As many --pluginPath
 arguments may be specified as necessary.
+
+# Auto DJ with Beatmatching and Harmonic Mixing
+
+A script, which extends Auto DJ with BPM- and key-based track selection,
+beatmatching, and basic EQ fade mixing, is [available through
+forums](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8318&p=34531#p34531).
+It works reasonably well, but is technically quirky and unclean;
+therefore, Mixxx developers are working on ways to offer similar
+functionality cleanly and directly in Mixxx. If you're impatient, the
+script might satisfy your needs today.

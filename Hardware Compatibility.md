@@ -273,7 +273,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <tr class="odd">
 <td><a href="Pioneer DDJ-WeGO">Pioneer DDJ-WeGO</a></td>
 <td>discontinued</td>
-<td>2 deck controller and mixer</td>
+<td>2 deck controller</td>
 <td>yes</td>
 <td>n/a</td>
 <td>MIDI</td>
@@ -282,7 +282,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <tr class="even">
 <td><a href="Pioneer DDJ-WeGO3">Pioneer DDJ-WeGO3</a></td>
 <td>$300</td>
-<td>2 deck controller and mixer</td>
+<td>2 deck controller</td>
 <td>yes</td>
 <td>no</td>
 <td>MIDI</td>
@@ -310,7 +310,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td><a href="Behringer CMD MM-1">Behringer CMD MM-1</a><br />
 <a href="behringer_cmd_mm-1_advanced_mapping">(Alternative advanced mapping)</a></td>
 <td>$100</td>
-<td>MIDI mixer</td>
+<td>4 deck mixer</td>
 <td>no</td>
 <td>no</td>
 <td>MIDI</td>

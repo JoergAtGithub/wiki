@@ -327,7 +327,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2012</td>
 </tr>
 <tr class="odd">
-<td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
+<td><strong><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></strong></td>
 <td>$100</td>
 <td>2 deck controller and mixer, ultra-portable.</td>
 <td>yes</td>

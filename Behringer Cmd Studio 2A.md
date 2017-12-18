@@ -128,7 +128,7 @@ the behaviour of a number of the controller buttons as follows:
 
 ### MIDI Channel
 
-  - Default MIDI channel witch with the unit works is channel 1 (0x0).
+  - Default MIDI channel with which the unit works is channel 1 (0x0).
   - The unit offers the ability to change the MIDI channel if is needed,
     but then, in order to work properly, JS and XML mapping files must
     be changed too according to match the new channel.

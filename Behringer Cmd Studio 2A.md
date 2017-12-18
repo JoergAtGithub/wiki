@@ -135,8 +135,8 @@ the behaviour of a number of the controller buttons as follows:
   - The manufacturer offers a channel changer application in his
     [download
     page](http://www.musictri.be/Categories/Behringer/Computer-Audio/DJ-Controllers/CMD-STUDIO-2A/p/P0AVW/downloads)
-    for Mac an Windows users. GNU/Linux users can try the Windows
-    version with Wine (tested on Ubuntu 16.04 LTS and works fine).
+    for Mac and Windows users. GNU/Linux users can try the Windows
+    version with Wine (tested on Ubuntu 16.04 LTS and working fine).
 
 ### Reset to factory defaults
 

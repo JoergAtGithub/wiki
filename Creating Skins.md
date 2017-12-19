@@ -6,10 +6,10 @@ the interface, potentially making the program easier to use.
 
 ### Getting started
 
-A skin for Mixxx is basically a folder with various images and one text
-file named skin.xml. The skin.xml defines all the elements (widgets) of
-the skin, what the images are used for and and where they are placed on
-screen.
+A skin for Mixxx is basically a folder with various images, a text file
+named skin.xml, and other XML template files. The skin.xml and template
+files define all the elements (widgets) of the skin, what the images are
+used for and and where they are placed on screen.
 
 Reading this page helps to understand how skins work in Mixxx‚ it will
 save you time eventually.

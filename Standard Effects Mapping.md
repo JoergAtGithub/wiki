@@ -13,9 +13,16 @@ designed for Serato, the "Beats" encoder is used as the mix knob.
 The button next to the mix knob is used for focusing effects. On
 controllers designed for Serato, this button is labeled "Tap". While
 holding this button pressed, the enable buttons for each effect switch
-to choosing which effect is focused. When an effect is focused, the
-knobs switch to controlling the first 3 parameters of that effect
-instead of the metaknobs of each effect in the chain.
+to choosing which effect is focused. When an effect is focused,
+
+  - the knobs switch to controlling the first 3 parameters of that
+    effect instead of the metaknobs of each effect in the chain;
+  - the buttons switch to controlling the first 3 button parameters of
+    the effect; and
+  - the enable buttons of the effects in the chain can still be accessed
+    by pressing the parameter buttons with shift, although the enable
+    switches will not be shown on the LEDs until the effect is
+    unfocused.
 
 The LED of the focus button indicates whether any effect is focused.
 When its LED is on, you can hold the button down to see which effect is

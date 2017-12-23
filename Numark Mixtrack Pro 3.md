@@ -1,6 +1,6 @@
 # Numark Mixtrack (Pro) 3
 
-![https://www.numark.com/images/sized/images/product\_large/MixtrackProIII\_ortho\_web\_1200x750-624x390.jpg](https://www.numark.com/images/sized/images/product_large/MixtrackProIII_ortho_web_1200x750-624x390.jpg)
+[[/media/hardware/numark-mixtrack-pro-3.jpg|numark-mixtrack-pro-3.jpg]]
 
   - [Manufacturer's product
     page](http://www.numark.com/product/mixtrack-pro-3)

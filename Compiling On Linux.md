@@ -100,7 +100,7 @@ page](http://www.mixxx.org/download.php), or checkout a snapshot from
 our git repository: (See [Using Git](Using%20Git) for more details &
 options.)
 
-  - For the latest stable branch: `git clone -b 2.1
+  - For the latest beta branch: `git clone -b 2.1
     https://github.com/mixxxdj/mixxx.git`
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`

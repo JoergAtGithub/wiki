@@ -197,16 +197,16 @@ measured in beats.
 
 #### Mixxx 2.1
 
-| Control       | Function                                                                                                |
-| ------------- | ------------------------------------------------------------------------------------------------------- |
-| Pad 1         | set a loop of the selected number of beats                                                              |
-| Pad 2         | halve the selected loop length                                                                          |
-| Pad 3         | double the selected loop length                                                                         |
-| Pad 4         | reloop (reactivate a pre-existing loop)                                                                 |
-| Shift + pad 1 | set a rolling loop of the selected number of beats                                                      |
-| Shift + pad 2 | beatjump backwards by the beatjump size, or move the backwards loop by beatjump size if loop is enabled |
-| Shift + pad 3 | beatjump forwards by the beatjump size, or move the loop forwards by beatjump size if loop is enabled   |
-| Shift + pad 4 | enable loop, jump to loop in marker, and stop playback                                                  |
+| Control       | Function                                                                                                        |
+| ------------- | --------------------------------------------------------------------------------------------------------------- |
+| Pad 1         | set a loop of the selected number of beats                                                                      |
+| Pad 2         | halve the selected loop length                                                                                  |
+| Pad 3         | double the selected loop length                                                                                 |
+| Pad 4         | reloop (reactivate a pre-existing loop)                                                                         |
+| Shift + pad 1 | set a rolling loop of the selected number of beats                                                              |
+| Shift + pad 2 | beatjump backwards by the beatjump size, or move the loop backwards by the beatjump size if the loop is enabled |
+| Shift + pad 3 | beatjump forwards by the beatjump size, or move the loop forwards by the beatjump size if the loop is enabled   |
+| Shift + pad 4 | enable loop, jump to loop in marker, and stop playback                                                          |
 
 ### Pads - manual loop mode
 

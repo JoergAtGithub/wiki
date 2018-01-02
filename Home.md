@@ -114,6 +114,8 @@ this wiki, please fix it.
   - [SCons Build System](SCons%20Build%20System)
   - [Packaging / Making a Mixxx
     Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
+  - [Setting-up CI on your own
+    fork](Setting-up%20CI%20on%20your%20own%20fork)
 
 ### Getting Started
 

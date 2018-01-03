@@ -8,10 +8,6 @@
 is the final proposal with witch I got accepted as a participant in GSoC
 2017.
 
-**<span class="underline">Current State</span>**
-
-Final days
-
 ## GSoC 2017 recap
 
 ### Introduction

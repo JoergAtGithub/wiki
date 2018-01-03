@@ -69,5 +69,5 @@ FIXME
 [[/media/appveyor-11.jpg|]]
 
   - You're now done. You can manually trigger a build of the master
-    branch by clicking on "New Build" nad each push and PR will trigger
+    branch by clicking on "New Build" and each push and PR will trigger
     a build.

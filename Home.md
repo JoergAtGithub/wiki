@@ -44,8 +44,7 @@ this wiki, please fix it.
     users and developers. Native apps can be [downloaded from Zulip's
     website](https://zulipchat.com/apps/) and configured to use the
     server mixxx.zulipchat.com, or use the [web
-    app](https://mixxx.zulipchat.com/). Most project communication is on
-    Zulip.
+    app](https://mixxx.zulipchat.com/).
   - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
     mixes, download and share controller mappings and skins
   - [Development
@@ -60,7 +59,8 @@ this wiki, please fix it.
     blueprint planning](https://blueprints.launchpad.net/mixxx) are
     hosted on [Launchpad](http://launchpad.net/mixxx/)
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-    email list
+    email list. Note that most project communication is on Zulip now, so
+    you are more likely to get an answer to a question there.
   - [Mixxx website](http://www.mixxx.org)
   - [Internationalization](Internationalization): Help translate Mixxx
     into other languages

@@ -40,6 +40,12 @@ this wiki, please fix it.
 
 ## Community Resources
 
+  - [Zulip chat](https://mixxx.zulipchat.com/): Ask for help, chat with
+    users and developers. Native apps can be [downloaded from Zulip's
+    website](https://zulipchat.com/apps/) and configured to use the
+    server mixxx.zulipchat.com, or use the [web
+    app](https://mixxx.zulipchat.com/). Most project communication is on
+    Zulip.
   - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
     mixes, download and share controller mappings and skins
   - [Development
@@ -59,9 +65,6 @@ this wiki, please fix it.
   - [Internationalization](Internationalization): Help translate Mixxx
     into other languages
   - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)
-  - Our IRC channel is \#mixxx on [Freenode](http://freenode.net/). You
-    can access it via [the website](http://mixxx.org/irc/) or your
-    preferred IRC client.
   - [Blog](http://mixxxblog.blogspot.com)
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)

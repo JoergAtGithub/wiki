@@ -24,7 +24,8 @@ page](Build%20Windows%20installer).)*
     build 64-bit versions if used without Visual Studio.)
   - [Python](http://python.org/download/) 2.7.x Install for user only\!
     Otherwise scons can't find the installation
-  - [SCONS 2.3.3](http://scons.org/pages/download.html)
+  - [SCONS 2.3.6](http://scons.org/pages/download.html) (version 2.3.6
+    is the minimal version that work with visual studio 2015)
   - Install [CMake 3.3.x](http://www.cmake.org/download) with default
     options. The CMake directory does not need to be added to the PATH
     environment variable.

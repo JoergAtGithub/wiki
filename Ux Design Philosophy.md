@@ -26,7 +26,7 @@ Mixxx.
     about how people use Mixxx.
 4.  **Everyone can be a power user.** Everyone should be able to use and
     understand all features of Mixxx. If they cannot, the design and/or
-    documentation are should be improved.
+    documentation should be improved.
 5.  **Test your assumptions.** The people who make a design cannot
     anticipate all the issues other people will have with it. Do
     usability tests both with experienced DJs and novice users.

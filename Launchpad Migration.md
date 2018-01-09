@@ -140,12 +140,13 @@ the paid proprietary Enterprise Edition Premium server software.
 ### Disadvantages
 
   - Write access to GitLab wikis is coupled with write access to source
-    code, so we still need to run our own wiki
+    code, so we still need to run our own wiki.
+    <https://gitlab.com/gitlab-org/gitlab-ce/issues/19798>
   - Someone needs to commit to managing migration
   - Has had issues with page load speed and uptime in the past but has
     improved lately and they're continuing to work very hard on this
   - Some features only available in paid Enterprise editions for
-    self-hosted server software
+    self-hosted server software. <https://about.gitlab.com/products/>
 
 ## Improve Launchpad
 

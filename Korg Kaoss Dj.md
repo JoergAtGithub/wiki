@@ -15,10 +15,20 @@
 
 [[/media/hardware/korg_kaoss_dj_diagram.png|]]
 
-| No. | Name           | Function                                                                     | Shifted Operation          |
-| --- | -------------- | ---------------------------------------------------------------------------- | -------------------------- |
-| 1   | Headphone knob | Adjusts the headphone level                                                  | \---                       |
-| 2   | Balance knob   | Adjusts the balance between the master level and the headphone monitor level | \---                       |
-| 3   | Master knob    | Adjust the master level                                                      | \---                       |
-| 4   | Browse knob    | Browse the main playlist                                                     | \---                       |
-| 5   | Display        | Indicates the effect number or parameter                                     | Indicates the key or scale |
+| No. | Name                         | Function                                                                     | Shifted Operation          |
+| --- | ---------------------------- | ---------------------------------------------------------------------------- | -------------------------- |
+| 1   | Headphone knob               | Adjusts the headphone level                                                  | \---                       |
+| 2   | Balance knob                 | Adjusts the balance between the master level and the headphone monitor level | \---                       |
+| 3   | Master knob                  | Adjust the master level                                                      | \---                       |
+| 4   | Browse knob                  | Browse the main playlist                                                     | \---                       |
+| 5   | Display                      | Indicates the effect number or parameter                                     | Indicates the key or scale |
+| 6   | Touchpad Mode Button         | Touchpad mode change. Long press to switch to sampler mode (LED turns blue)  |                            |
+| 7   | Program/Value Knob           | Selects an effect                                                            | Selects a Key/Scale        |
+| 8   | Tap Button                   |                                                                              |                            |
+| 9   | Hold Button                  |                                                                              |                            |
+| 10  | Touchpad (controller mode)   |                                                                              |                            |
+| ::: | Touchpad (sampler mode)      | Play samplers 1, 2, 3 and 4                                                  | \---                       |
+| ::: | Touchpad (Kaoss Effect Mode) |                                                                              |                            |
+| 11  | Crossfader                   |                                                                              |                            |
+| 12  | Touch Slider mode button     | Switches the touch slider between Normal, Hot Cue and Loop Mode              | \---                       |
+|     |                              |                                                                              |                            |

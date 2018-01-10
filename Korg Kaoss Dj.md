@@ -32,3 +32,7 @@
 | 11  | Crossfader                   |                                                                              |                            |
 | 12  | Touch Slider mode button     | Switches the touch slider between Normal, Hot Cue and Loop Mode              | \---                       |
 |     |                              |                                                                              |                            |
+| 19  | Touch Wheel                  | Scratches or temporarily adjusts the pitch                                   | Move the beatgrid          |
+|     |                              |                                                                              |                            |
+|     |                              |                                                                              |                            |
+|     |                              |                                                                              |                            |

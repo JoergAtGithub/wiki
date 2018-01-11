@@ -12,10 +12,8 @@ page](Build%20Windows%20installer).)*
     of visual studio are not suitable to build mixxx because their lack
     of support for some C++11 features used in Mixxx code like
     constexpr.
-  - FIXME (VS version \>= 2015 mandatory) If you install Visual Studio
-    2015 or newer, it comes with the latest Windows SDK. The following
-    links are only needed if you have a version of Visual Studio older
-    than this or if you're building for Windows XP.
+  - Visual Studio 2015 or newer comes with the latest Windows SDK. The
+    following links are only needed if you're building for Windows XP.
   - [Microsoft Windows 7 (& .NET 3.5)
     SDK](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=c17ba869-9671-4330-a63e-1fd44e0e2505&displaylang=en)
   - Or the [Windows 7.1 (& .NET 4)

@@ -24,9 +24,12 @@ page](Build%20Windows%20installer).)*
     [below](#Prepare-build-environment)) and is missing files needed to
     build 64-bit versions if used without Visual Studio.)
   - [Python](http://python.org/download/) 2.7.x Install for user only\!
-    Otherwise scons can't find the installation
+    Otherwise scons can't find the installation. Mixxx build scripts are
+    not yet compatible with python3 \!
   - [SCONS 2.3.6](http://scons.org/pages/download.html) (version 2.3.6
-    is the minimal version that work with visual studio 2015)
+    is the minimal version that work with visual studio 2015). scons
+    version 3.0.0+ has not been validated yet to successfully build
+    Mixxx.
   - Install [CMake 3.3.x](http://www.cmake.org/download) with default
     options. The CMake directory does not need to be added to the PATH
     environment variable.

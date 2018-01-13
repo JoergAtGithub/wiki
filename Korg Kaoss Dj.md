@@ -2,7 +2,7 @@
 
 2-deck controller with touch controlled jogwheels, built-in 4-channel
 soundcard and a Korg Kaoss Pad as built-in effect section (can be
-switched of for using software effects).
+switched off for using software effects).
 
 [[/media/hardware/korg_kaoss_dj.png|korg\_kaoss\_dj.png]]
 [[/media/hardware/korg-kaoss-dj_mode-switch.jpg|]]

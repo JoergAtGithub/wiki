@@ -6,8 +6,8 @@ chain or controlling each parameter of one effect.
 
 By default, 3 knobs are used for controlling effect metaknobs and the
 buttons under them toggle each effect on/off. To temporarily toggle an
-effect on/off, pressing and hold an effect enable button. The 4th knob
-is used for the mix (dry/wet) knob of the whole chain. On controllers
+effect on/off, press and hold an effect enable button. The 4th knob is
+used for the mix (dry/wet) knob of the whole chain. On controllers
 designed for Serato, the "Beats" encoder is used as the mix knob.
 
 The button next to the mix knob is used for focusing effects. On

@@ -23,8 +23,8 @@ M4A/AAC files around so you can delete the FLAC files when Mixxx 2.1 is
 released. Converting lossy M4A/AAC files to another lossy format will
 sound worse than the starting M4A/AAC files and is not advised.
 
-This bug has been fixed in [development versions of
-Mixxx](http://downloads.mixxx.org/builds/master/release/).
+This bug has been fixed in [Mixxx 2.1
+beta](http://downloads.mixxx.org/builds/2.1/release/).
 
 ## Other programs do not make sound while Mixxx is running
 

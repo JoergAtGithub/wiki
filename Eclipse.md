@@ -139,6 +139,7 @@ If the discovering fails, you may add the required info manually:
 
 <!-- end list -->
 
+  - Add c++11 flag:
   - Right click on the project -\> Properties -\> C/C++ General -\>
     Preprocessor Include Paths, Macros etc. -\> Providers -\> CDT GCC
     BUild-In Compiler Settings

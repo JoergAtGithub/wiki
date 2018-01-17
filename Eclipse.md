@@ -139,6 +139,14 @@ If the discovering fails, you may add the required info manually:
 
 <!-- end list -->
 
+  - Right click on the project -\> Properties -\> C/C++ General -\>
+    Preprocessor Include Paths, Macros etc. -\> Providers -\> CDT GCC
+    BUild-In Compiler Settings
+  - add -std=c++11, like this 
+  - ${COMMAND} ${FLAGS} -E -P -v -dD "${INPUTS}" -std=c++11
+
+<!-- end list -->
+
   - Alternative you can start with my project files (.cproject .project
     .gdbinit) and adapt them to your
     system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>

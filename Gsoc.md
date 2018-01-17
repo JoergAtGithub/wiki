@@ -2,6 +2,12 @@
 is an annual program that provides paid internships for students to work
 on free software projects.
 
+### 2018
+
+  - See the list of suggested projects: [GSoC 2018 Ideas](gsoc2018ideas)
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
 ### 2017
 
 Mixxx is back in Google Summer of Code for 2017\!

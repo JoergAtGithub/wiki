@@ -15,7 +15,10 @@ plan for implementing a solution.**
 
 # Advanced Track Metadata
 
-# Downbeats
+# Beatgrid enhancements
+
+Improve handling of tracks with varying tempos like Serato
+<https://www.youtube.com/watch?v=oD9J7azlhrQ>
 
 Mixxx does not distinguish Beats from Downbeats. It has no indicator for
 the track measure. This project should change this.
@@ -42,26 +45,6 @@ could be activated with a hotcue would be helpful too.
 A collection of ideas for improving cue points can be found in the
 [Launchpad
 blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
-
-# Microphone effects
-
-Mixxx could use some effects specifically for applying to microphone
-inputs, for example a gate and acoustic echo cancellation. Consider
-looking for third party libraries like the [WebRTC AEC
-library](http://webrtc.org/) that can help with these and using them in
-Mixxx. If you choose to implement this, you will need a microphone to
-test with and a sound card to plug it into. You do not need an expensive
-microphone; any microphone should work. Likewise, you do not need a
-fancy sound card; if you can plug a microphone and speakers into the
-onboard sound card on your computer at the same time, that will work.
-
-# Sample sets
-
-Currently, samples have to be loaded to sample decks one-by-one each
-time Mixxx is restarted to load the samples. It would be helpful to save
-collections of samples to Mixxx's database so they could all be loaded
-together. It would also be helpful to let users separate audio files
-used as short samples from full tracks in the library.
 
 # Something Else\!
 

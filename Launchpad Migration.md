@@ -210,6 +210,7 @@ the paid proprietary Enterprise Edition Premium server software.
 ## JIRA
 
 from <https://www.mixxx.org/forums/viewtopic.php?f=1&t=9425&start=10>
+
 Jira seems to be popular for open source projects and free Jira hosting
 is available for open source projects. It's a far better issue tracker
 than what github offers. Some one wrote about porting issues fro

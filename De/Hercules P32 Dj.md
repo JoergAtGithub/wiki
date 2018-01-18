@@ -195,7 +195,8 @@ Mikrofon 1 und Aux-Eingang 1 umgeschaltet (von links nach rechts).
     Halten Sie gedrückt, um die Hauptsynchronisation zu aktivieren.
   - **Shift + sync**: umschalten der Quantisieren-Funktion
   - **Shift + cue**: Springe zum Anfang des Tracks und Stoppe
-  - **Shift + play**: rückwärts Spielen (Wiedergabe umkehren)
+  - **Shift + play**: rückwärts Spielen (Wiedergabe umkehren) (Mixxx 2.0
+    wie shift + cue)
   - **Shift + load**: leeren des Decks (auswerfen)
   - **EQ-Knöpfe, Lautstärke-Regler, crossfader, headphone button, play,
     cue, sync, and load** verhalten sich so, wie gekennzeichnet.

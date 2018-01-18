@@ -217,6 +217,8 @@ than what github offers. Some one wrote about porting issues fro
 Launchpad to Jira:
 <https://mariadb.org/scripts-for-migrating-bug-reporting-from-launchpad-to-jira/>
 
+QT uses Jira <https://bugreports.qt.io> as well
+
 ### Advantages
 
   - Launchpad migration without loosing Metadata

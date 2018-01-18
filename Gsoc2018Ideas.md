@@ -38,7 +38,7 @@ blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
 
 \======= Effects =======
 
-## Microphone effects
+# Microphone effects
 
 Mixxx could use some effects specifically for applying to microphone
 inputs, for example a gate and acoustic echo cancellation. Consider

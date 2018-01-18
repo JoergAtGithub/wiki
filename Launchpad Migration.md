@@ -229,4 +229,7 @@ Launchpad to Jira:
 
 ### Disadvantages
 
-\* Source Code available for review \* Not FOSS
+``` 
+ * Source Code available for review 
+ * Not FOSS 
+```

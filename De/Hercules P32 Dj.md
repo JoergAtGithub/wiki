@@ -62,7 +62,7 @@ gEdit) Die betreffenden Zeilen in dieser Datei sind:
 
 ``` 
  ***loopEnabledDot**: Option, den Punkt in der LED Anzeige der Loop-Größe anzuzeigen. Abgeschaltet wird die Loop-Größe von 2-32 Takten benutzt. Dies ist hilfreich, wenn man kleine Loops (unter 2 Takten) nicht benutzt. Aktiviert werden Loops im Verhältnis 1/n benutzt (.2=halber Takt). 
- ***samplerCrossfaderAssign:** Aktiviert (true): Die Sampler auf dem linken Pad sind mit der linken Seite des Crossfaders verbunden. Genauso die rechte Seite mit dem rechten Pad.
+ ***samplerCrossfaderAssign:** Aktiviert (true): Die Sampler auf dem linken Pad-Raster sind mit der linken Seite des Crossfaders verbunden. Genauso die rechte Seite mit dem rechten Pad-Raster.
 ```
 
 ### Stellregler

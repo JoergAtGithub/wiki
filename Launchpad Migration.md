@@ -219,7 +219,7 @@ Launchpad to Jira:
 
 ### Advantages
 
-  - ItemLaunchpad migration without loosing Metadata
+  - Launchpad migration without loosing Metadata
     <https://github.com/rasmushoj/LP2JIRA>
   - Using the Launchpad workflow, customise it. 
   - Open Source License:

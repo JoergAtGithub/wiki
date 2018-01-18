@@ -206,3 +206,24 @@ the paid proprietary Enterprise Edition Premium server software.
   - Must also run Gerrit for code review functionality, Mattermost for
     chat
   - Someone needs to commit to managing migration
+
+## JIRA
+
+from <https://www.mixxx.org/forums/viewtopic.php?f=1&t=9425&start=10>
+Jira seems to be popular for open source projects and free Jira hosting
+is available for open source projects. It's a far better issue tracker
+than what github offers. Some one wrote about porting issues fro
+Launchpad to Jira:
+<https://mariadb.org/scripts-for-migrating-bug-reporting-from-launchpad-to-jira/>
+
+### Advantages
+
+\* Launchpad migration without loosing Metadata
+<https://github.com/rasmushoj/LP2JIRA> \* Using the Launchpad workflow,
+customise it. \* Open Source License:
+<https://www.atlassian.com/software/views/open-source-license-request>
+\* REST API \* Marketplace with 1,000+ plug-and-play add-ons
+
+### Disadvantages
+
+\* Source Code available for review \* Not FOSS

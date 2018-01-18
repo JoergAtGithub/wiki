@@ -219,11 +219,13 @@ Launchpad to Jira:
 
 ### Advantages
 
-\* Launchpad migration without loosing Metadata
-<https://github.com/rasmushoj/LP2JIRA> \* Using the Launchpad workflow,
-customise it. \* Open Source License:
-<https://www.atlassian.com/software/views/open-source-license-request>
-\* REST API \* Marketplace with 1,000+ plug-and-play add-ons
+  - Unordered List ItemLaunchpad migration without loosing Metadata
+    <https://github.com/rasmushoj/LP2JIRA>
+  - Using the Launchpad workflow, customise it. 
+  - Open Source License:
+    <https://www.atlassian.com/software/views/open-source-license-request>
+  - REST API
+  - Marketplace with 1,000+ plug-and-play add-ons
 
 ### Disadvantages
 

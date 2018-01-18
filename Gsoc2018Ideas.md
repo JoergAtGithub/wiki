@@ -13,6 +13,13 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
+# Advanced Track Metadata
+
+# Downbeats
+
+Mixxx does not distinguish Beats from Downbeats. It has no indicator for
+the track measure. This project should change this.
+
 # Metadata Output
 
 Mixxx has currently no interface to pass over metadata like the playing

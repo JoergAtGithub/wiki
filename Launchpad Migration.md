@@ -224,8 +224,10 @@ QT uses Jira <https://bugreports.qt.io> as well
   - Launchpad migration without loosing Metadata
     <https://github.com/rasmushoj/LP2JIRA>
   - Using the Launchpad workflow, customise it. 
-  - Open Source License:
+  - Open Source Plan:
     <https://www.atlassian.com/software/views/open-source-license-request>
+  - Integrates with GitHub
+    <https://www.atlassian.com/blog/jira-software/connecting-jira-6-2-github>
   - REST API
   - Marketplace with 1,000+ plug-and-play add-ons
 

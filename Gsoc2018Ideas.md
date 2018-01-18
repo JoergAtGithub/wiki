@@ -36,8 +36,6 @@ A collection of ideas for improving cue points can be found in the
 [Launchpad
 blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
 
-\======= Effects =======
-
 # Microphone effects
 
 Mixxx could use some effects specifically for applying to microphone

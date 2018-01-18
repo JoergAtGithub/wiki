@@ -13,7 +13,7 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-## Metadata Output
+# Metadata Output
 
 Mixxx has currently no interface to pass over metadata like the playing
 track and artist to third party applications. This is required to

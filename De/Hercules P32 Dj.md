@@ -53,7 +53,7 @@ zugeordnet.
 
 ## Beschreibung der Zuordnungen
 
-### Vom Benutzer konfigurierbare Optionen
+### Vom Benutzer programmierbare Voreinstellungen
 
 Es gibt ein paar vom Benutzer konfigurierbare Optionen. Diese lassen
 sich durch Änderungen in der Datei Hercules-P32-scripts.js durchführen

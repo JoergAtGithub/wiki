@@ -17,7 +17,11 @@ plan for implementing a solution.**
 
 # Beatgrid enhancements
 
-Improve handling of tracks with varying tempos like Serato
+Mixxx currently assumes that tracks have a constant tempo for their
+entire duration. There is an option to disable that assumption, but it
+goes to the other extreme and treats the tempo as always changing. Both
+of these do not work well for lots of music. Improve handling of tracks
+with varying tempos like Serato
 <https://www.youtube.com/watch?v=oD9J7azlhrQ>
 
 Mixxx does not distinguish Beats from Downbeats. It has no indicator for

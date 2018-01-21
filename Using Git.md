@@ -369,6 +369,7 @@ tested:
   - gitk, comes with git
   - [Git Cola](http://git-cola.github.io/)
   - [Meld](http://meldmerge.org/) helps review diffs
+  - [GitKraken](https://www.gitkraken.com/) 
 
 #### Windows
 

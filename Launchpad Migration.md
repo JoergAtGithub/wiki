@@ -229,11 +229,12 @@ QT uses Jira <https://bugreports.qt.io> as well
   - Integrates with GitHub
     <https://www.atlassian.com/blog/jira-software/connecting-jira-6-2-github>
   - REST API
+  - Allows anonymous bug filing.
   - Marketplace with 1,000+ plug-and-play add-ons
 
 ### Disadvantages
 
 ``` 
- * Source Code available for review 
- * Not FOSS 
+ * Source Code available for review only
+ * Not FOSS
 ```

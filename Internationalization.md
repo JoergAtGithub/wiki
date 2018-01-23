@@ -60,12 +60,12 @@ collection of terms with definitions, uses, and associated notes.
 
 [Log in](https://www.transifex.com/signin/?next=/home/), go to the
 [Mixxx Translation Project
-Overview](https://www.transifex.com/projects/p/mixxxdj/) and request
-access to a translation team for the language(s) you want to translate
-(German in this example). One of the developers or translation
-coordinators will approve your request. You should get an e-mail answer
-within 48 hours that you have been accepted to the team for the
-requested language.
+Overview](https://www.transifex.com/mixxx-dj-software/public/) and
+request access to a translation team for the item(s) and language(s) you
+want to translate (German in this example). One of the developers or
+translation coordinators will approve your request. You should get an
+e-mail answer within 48 hours that you have been accepted to the team
+for the requested language.
 
 |                                                     |
 | --------------------------------------------------- |

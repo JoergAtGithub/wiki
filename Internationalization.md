@@ -32,9 +32,10 @@ of the year.
 ### I want to help translate Mixxx, what do I need to do ?
 
 You need a translator account to access
-[Transifex](https://www.transifex.com/), our translation site. Sign up
-for a free translator account or use your existing social network
-credentials to login <https://www.transifex.com/signup/contributor/>.
+[Transifex](https://www.transifex.com/mixxx-dj-software/public/), our
+translation site. Sign up for a free translator account or use your
+existing social network credentials to login
+<https://www.transifex.com/signup/contributor/>.
 
 ### What about the skills required for translating ?
 

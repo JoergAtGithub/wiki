@@ -230,6 +230,7 @@ QT uses Jira <https://bugreports.qt.io> as well
     <https://www.atlassian.com/blog/jira-software/connecting-jira-6-2-github>
   - REST API
   - Allows anonymous bug filing.
+  - Zulip integration
   - Marketplace with 1,000+ plug-and-play add-ons
 
 ### Disadvantages

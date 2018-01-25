@@ -26,11 +26,30 @@ some off beats and tries to detect the drummers target speed in real
 rock music. Only musically "intended" speed changes school be reflected
 in the beat grid.
 
-Mixxx does not distinguish Beats from Downbeats. It has no indicator for
-the track measure. This project should change this as well.
+Mixxx does not currently distinguish beats from downbeats. It has no
+indicator for the track measure nor how many beats are in each measure.
+Other DJ software assumes that all music has a 4/4 time signature, but
+that is incorrect for lots of music. The solution implemented by this
+project should allow for handling tracks that change time signatures.
+Adding this information to the beat grid could be used to account for
+changing tempos by marking each downbeat and dividing the time between
+the downbeats by the number of beats in the measure.
 
-Mandatory is a way to edit these info manually. Any kind of auto
-algorithms are welcome as well.
+Ideas for algorithms to detect downbeats and beats per measure
+automatically are welcome if you already have a strong background in
+signal processing, but this should come last after completing the rest
+of the project. If you do not have this experience, we welcome
+applications that would assume 4/4 by default and allow users to adjust
+this manually.
+
+A strong application will list some specific tracks with changing tempos
+that will be used for testing the new features. These should include
+both tracks played by live musicians and tracks produced on a grid in a
+computer. Also, the application should propose how the new information
+available in the beat grid could be edited by users in a fast, intuitive
+way. Students with backgrounds in music theory and/or playing percussion
+instruments are encouraged to apply for this project, but if you do not
+have these experiences we still welcome your application.
 
 # Metadata Output
 

@@ -32,12 +32,12 @@ Sections with changing tempos could be marked by indicating which beats
 are downbeats and how many beats are in each measure. Then Mixxx could
 place the beat markers by dividing the space between the downbeats by
 the beats per measure. This would allow the tempo to change between
-downbeats (gradually or suddenly). For example, this
-\[<https://www.youtube.com/watch?v=oD9J7azlhrQ> video tutorial\]
-demonstrates how Serato DJ handles this. However, Serato and other DJ
-software assumes that all music has a 4/4 time signature, which is
-incorrect for lots of music. The solution implemented by this project
-should allow for handling tracks that change time signatures.
+downbeats (gradually or suddenly). For example, this [video
+tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ) demonstrates how
+Serato DJ handles this. However, Serato and other DJ software assumes
+that all music has a 4/4 time signature, which is incorrect for lots of
+music. The solution implemented by this project should allow for
+handling tracks that change time signatures.
 
 Adding this information to the beatgrid would allow existing features
 that rely on the beatgrid to work better for a wider variety of music.

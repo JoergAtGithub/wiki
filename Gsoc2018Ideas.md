@@ -41,8 +41,8 @@ downbeats (gradually or suddenly). For example, this [video
 tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ) demonstrates how
 Serato DJ handles this. However, Serato and other DJ software assumes
 that all music has a 4/4 time signature, which is incorrect for lots of
-music. The solution implemented by this project should allow for
-handling tracks that change time signatures.
+music. A proposal for this project should allow for handling tracks that
+change time signatures.
 
 Adding this information to the beatgrid would allow existing features
 that rely on the beatgrid to work better for a wider variety of music.

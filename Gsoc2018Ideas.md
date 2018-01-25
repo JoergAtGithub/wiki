@@ -15,6 +15,8 @@ plan for implementing a solution.**
 
 # Advanced Track Metadata
 
+????
+
 # Beatgrid enhancements
 
 Mixxx currently assumes that tracks have a constant tempo for their

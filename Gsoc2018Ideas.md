@@ -64,8 +64,9 @@ both tracks played by live musicians and tracks produced on a grid in a
 computer. Also, the application should propose how the new information
 available in the beat grid could be edited by users in a fast, intuitive
 way. Students with backgrounds in music theory and/or playing percussion
-instruments are encouraged to apply for this project, but if you do not
-have these experiences we still welcome your application.
+instruments are encouraged to apply for this project, but these are not
+requirements and we welcome your application if you do not have that
+experience.
 
 # Metadata Output
 

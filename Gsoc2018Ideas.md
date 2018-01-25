@@ -92,6 +92,10 @@ A collection of ideas for improving cue points can be found in the
 [Launchpad
 blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
 
+A strong application will include mockups for how these new features
+could be accessed by users in an intuitive user interface that does not
+clutter the screen with an excess of information.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

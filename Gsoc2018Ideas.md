@@ -72,8 +72,9 @@ have these experiences we still welcome your application.
 Mixxx has currently no interface to pass over metadata like the playing
 track and artist to third party applications. This is required to
 publish the current track via RDS or to a web service like Twitter or
-just to the OS info area. This can be don by writing a file, rss feeds,
-OSC or .... (Add your own ideas ..)
+just to the OS info area. This can be done by writing a file, rss feeds,
+OSC or .... (Add your own ideas ..) Ideally, this should be done in a
+cross-platform way.
 
 # Cue point enhancements
 

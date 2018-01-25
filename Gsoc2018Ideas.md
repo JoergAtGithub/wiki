@@ -19,21 +19,32 @@ plan for implementing a solution.**
 
 # Beatgrid enhancements
 
-Mixxx currently assumes that tracks have a constant tempo for their
-entire duration. There is an option to disable that assumption, but it
-goes to the other extreme and treats the tempo as always changing. Both
-of these do not work well for lots of music. There should be an
-intermediate solution that allows for marking sections of a constant
-tempo and sections where the tempo is changing.
+Mixxx uses information about the tempo and location of beats for many
+features including sync, looping, and quantizing cue points. Currently,
+Mixxx assumes that tracks have a constant tempo for their entire
+duration. There is an option to disable that assumption, but it goes to
+the other extreme and treats the tempo as always changing. Both of these
+do not work well for lots of music. There should be an intermediate
+solution that allows for marking sections of a constant tempo and
+sections where the tempo is changing.
 
 Sections with changing tempos could be marked by indicating which beats
 are downbeats and how many beats are in each measure. Then Mixxx could
 place the beat markers by dividing the space between the downbeats by
 the beats per measure. This would allow the tempo to change between
-downbeats (gradually or suddenly). Other DJ software assumes that all
-music has a 4/4 time signature, but that is incorrect for lots of music.
-The solution implemented by this project should allow for handling
-tracks that change time signatures.
+downbeats (gradually or suddenly). For example, this
+\[<https://www.youtube.com/watch?v=oD9J7azlhrQ> video tutorial\]
+demonstrates how Serato DJ handles this. However, Serato and other DJ
+software assumes that all music has a 4/4 time signature, which is
+incorrect for lots of music. The solution implemented by this project
+should allow for handling tracks that change time signatures.
+
+Adding this information to the beatgrid would allow existing features
+that rely on the beatgrid to work better for a wider variety of music.
+Additionally, new features that rely on knowing the location of
+downbeats and beats per measure could be implemented. You are encouraged
+to propose some possibilities for new features relying on this new
+beatgrid information in your application.
 
 Ideas for algorithms to detect downbeats and beats per measure
 automatically are welcome if you already have a strong background in

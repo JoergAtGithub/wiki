@@ -13,6 +13,11 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
+**Also, an application from a student who we are not familiar with will
+NOT be accepted. You must have some interaction with the Mixxx community
+before the days leading up to the application deadline for your
+application to be accepted.**
+
 # Advanced Track Metadata
 
 ????

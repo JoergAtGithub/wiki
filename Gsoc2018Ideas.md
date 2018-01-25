@@ -20,12 +20,17 @@ plan for implementing a solution.**
 Mixxx currently assumes that tracks have a constant tempo for their
 entire duration. There is an option to disable that assumption, but it
 goes to the other extreme and treats the tempo as always changing. Both
-of these do not work well for lots of music. Improve handling of tracks
-with varying tempos like Serato
-<https://www.youtube.com/watch?v=oD9J7azlhrQ>
+of these do not work well for lots of music. There should be an
+intermediate solution, that continues the beats in short brakes, allows
+some off beats and tries to detect the drummers target speed in real
+rock music. Only musically "intended" speed changes school be reflected
+in the beat grid.
 
 Mixxx does not distinguish Beats from Downbeats. It has no indicator for
-the track measure. This project should change this.
+the track measure. This project should change this as well.
+
+Mandatory is a way to edit these info manually. Any kind of auto
+algorithms are welcome as well.
 
 # Metadata Output
 

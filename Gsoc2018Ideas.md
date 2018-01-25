@@ -23,19 +23,17 @@ Mixxx currently assumes that tracks have a constant tempo for their
 entire duration. There is an option to disable that assumption, but it
 goes to the other extreme and treats the tempo as always changing. Both
 of these do not work well for lots of music. There should be an
-intermediate solution, that continues the beats in short brakes, allows
-some off beats and tries to detect the drummers target speed in real
-rock music. Only musically "intended" speed changes school be reflected
-in the beat grid.
+intermediate solution that allows for marking sections of a constant
+tempo and sections where the tempo is changing.
 
-Mixxx does not currently distinguish beats from downbeats. It has no
-indicator for the track measure nor how many beats are in each measure.
-Other DJ software assumes that all music has a 4/4 time signature, but
-that is incorrect for lots of music. The solution implemented by this
-project should allow for handling tracks that change time signatures.
-Adding this information to the beat grid could be used to account for
-changing tempos by marking each downbeat and dividing the time between
-the downbeats by the number of beats in the measure.
+Sections with changing tempos could be marked by indicating which beats
+are downbeats and how many beats are in each measure. Then Mixxx could
+place the beat markers by dividing the space between the downbeats by
+the beats per measure. This would allow the tempo to change between
+downbeats (gradually or suddenly). Other DJ software assumes that all
+music has a 4/4 time signature, but that is incorrect for lots of music.
+The solution implemented by this project should allow for handling
+tracks that change time signatures.
 
 Ideas for algorithms to detect downbeats and beats per measure
 automatically are welcome if you already have a strong background in

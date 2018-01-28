@@ -112,6 +112,22 @@ their target DAW systems. Then implement the most common interface in
 Mixxx, and add first class support for one of these remote apps, ideal
 with a FOSS license.
 
+# Cartwall Player
+
+In a broadcasting show, it is required to have a set of jingles and
+background sounds under a finger tip. Currently you can use Mixxx's
+sampler decks for this.
+
+Unfortunately there are some shortcomings compared to specialised
+dedicated cartwall player.
+
+In this project you need to compare various existing solutions and
+propose how to implement the most important features with Mixxx.
+
+A highly requested feature is to automate these carts in a way. What are
+the requirements for automation? How can this be implemented along this
+projects,
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

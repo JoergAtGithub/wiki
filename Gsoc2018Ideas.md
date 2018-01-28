@@ -68,6 +68,8 @@ experience.
 
 [Ableton Link](https://www.ableton.com/en/link/) is a relatively new
 protocol for synchronizing music software running on multiple computers.
+It has already been adopted fairly widely by proprietary music programs
+including DJ programs, DAWs, software synthesizers, and sequencers.
 Ableton has published [documentation](https://ableton.github.io/link/)
 and [a reference C++ library](https://github.com/Ableton/link) that
 could be used to synchronize Mixxx's [Master Sync

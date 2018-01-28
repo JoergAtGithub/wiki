@@ -16,8 +16,6 @@ free software projects.
 Mixxx is back in Google Summer of Code for 2017\!
 
   - See the list of suggested projects: [GSoC 2017 Ideas](gsoc2017ideas)
-  - Advice for students thinking of applying: [GSoC Advice for
-    Students](gsocadvice)
 
 The following projects were accepted for Google Summer of Code 2017:
 

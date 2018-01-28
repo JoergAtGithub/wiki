@@ -18,10 +18,6 @@ NOT be accepted. You must have some interaction with the Mixxx community
 before the days leading up to the application deadline for your
 application to be accepted.**
 
-# Advanced Track Metadata
-
-????
-
 # Beatgrid enhancements
 
 Mixxx uses information about the tempo and location of beats for many

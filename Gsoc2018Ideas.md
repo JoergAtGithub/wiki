@@ -64,6 +64,17 @@ instruments are encouraged to apply for this project, but these are not
 requirements and we welcome your application if you do not have that
 experience.
 
+# Ableton Link Support
+
+[Ableton Link](https://www.ableton.com/en/link/) is a relatively new
+protocol for synchronizing music software running on multiple computers.
+Ableton has published [documentation](https://ableton.github.io/link/)
+and [a reference C++ library](https://github.com/Ableton/link) that
+could be used to synchronize Mixxx's [Master Sync
+feature](https://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#master-sync)
+with Ableton Link compatible applications, including Mixxx running on
+another computer.
+
 # Metadata Output
 
 Mixxx has currently no interface to pass over metadata like the playing

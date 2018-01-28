@@ -2,11 +2,12 @@
 is an annual program that provides paid internships for students to work
 on free software projects.
 
-### 2018
-
-  - See the list of suggested projects: [GSoC 2018 Ideas](gsoc2018ideas)
+  - See the list of suggested projects: **[GSoC 2018
+    Ideas](gsoc2018ideas)**
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
+
+## Past Years
 
 ### 2017
 
@@ -25,11 +26,6 @@ The following projects were accepted for Google Summer of Code 2017:
   - [Multi-broadcasting](Multi-broadcasting) by Stéphane Lepin (Palakis)
 
 ### 2016
-
-Mixxx was an accepted mentoring organization for Google Summer of Code,
-2016.
-
-  - See the list of suggested projects: [GSoC 2016 Ideas](gsoc2016ideas)
 
 The following projects were accepted for Google Summer of Code 2016:
 

@@ -10,13 +10,14 @@ website](https://summerofcode.withgoogle.com).
 In general, your project proposal can be inspired by any of the
 following:
 
-  - A project from our [GSoC 2017 Ideas Page](gsoc2017ideas)
+  - A project from our [GSoC 2018 Ideas Page](gsoc2018ideas)
   - A project you come up with\! Make sure to contact us **before**
     submitting to get feedback if this is your plan.
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
   - Projects from our past GSoC ideas pages: 
+  - [GSoC 2017](gsoc2017ideas)
   - [GSoC 2016](gsoc2016ideas)
   - [GSoC 2015](gsoc2015ideas)
   - [GSoC 2014](gsoc2014ideas)

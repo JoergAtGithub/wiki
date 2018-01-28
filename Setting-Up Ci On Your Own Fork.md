@@ -14,11 +14,29 @@ forked Mixxx on github.
 
 ## Travis-CI
 
-FIXME
+  - go to the [travis-ci.org](https://travis-ci.org) website
+
+[[/media/travis-1.jpg|]]
+
+  - click "sign-in with github" on top-right and login using your github
+    account
+  - authorize travis-ci to connect to your github account
+
+[[/media/travis-2.jpg|]]
+
+  - Once your repositories are listed, activate your Mixxx fork by
+    clicking on the slider next to your fork name
+
+[[/media/travis-3.jpg|]] [[/media/travis-4.jpg|]]
+
+  - Click on your fork repository name to view all build history
+  - You're now done. Each push and PR will trigger a build.
+
+[[/media/travis-5.jpg|]]
 
 ## Appveyor
 
-  - go to the appveyor.com website
+  - go to the [appveyor.com](https://www.appveyor.com) website
 
 [[/media/appveyor-01.jpg|]]
 

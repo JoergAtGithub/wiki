@@ -68,10 +68,16 @@ experience.
 
 Mixxx has currently no interface to pass over metadata like the playing
 track and artist to third party applications. This is required to
-publish the current track via RDS or to a web service like Twitter or
-just to the OS info area. This can be done by writing a file, rss feeds,
-OSC or .... (Add your own ideas ..) Ideally, this should be done in a
-cross-platform way.
+publish the current broadcasted track via RDS or to a web service like
+the upcoming <https://listenbrainz.org>, Twitter or just to the OS info
+area. This can be done by writing a file, rss feeds, OSC or .... (Add
+your own ideas ..) Ideally, this should be done in a cross-platform and
+extensible way.
+
+Since we will probably have the demand to interface a great variety of
+services, you should consider how to implement this in a extensible way.
+In the project you may focus to interface one service, in a way that it
+can be easily extended for other services.
 
 # Cue point enhancements
 

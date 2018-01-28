@@ -1,6 +1,8 @@
-[Google Summer of Code](https://developers.google.com/open-source/soc/)
-is an annual program that provides paid internships for students to work
-on free software projects.
+## GSoC
+
+[Google Summer of Code](https://summerofcode.withgoogle.com/) is an
+annual program that provides paid internships for students to work on
+free software projects.
 
   - See the list of suggested projects: **[GSoC 2018
     Ideas](gsoc2018ideas)**

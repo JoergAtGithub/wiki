@@ -10,8 +10,8 @@ page.
 
 ## Preparation
 
-You first need to download and install [NullSoft Install
-System](http://nsis.sourceforge.net/Download) version 2.46
+You first need to download and install [WIX
+Toolset](http://wixtoolset.org/releases/) version 3.9+
 
 When built with MSVC, Mixxx requires that certain MSVC DLL files be
 present in order to run. Many people have these already installed on
@@ -24,12 +24,8 @@ install it at the root of your build env directory.
 There's a different one for each architecture and compiler combination,
 as shown below:
 
-| Visual Studio 2005                                                                                                                 | [x86](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=200b2fd9-ae1a-4a14-984d-389c36f85647) | [x64/amd64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=eb4ebe2d-33c0-4a47-9dd4-b9a6d7bd44da) | [IA64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=747aad7c-5d6b-4432-8186-85df93dd51a9) |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [Visual Studio 2008](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=f3fbb04e-92c2-4701-b4ba-92e26e408569) | [x86](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2) | [x64/amd64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=ba9257ca-337f-4b40-8c14-157cfdffee4e) | [IA64](http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=dcc211e6-ab82-41d6-8dec-c79937393fe8) |
-| Visual Studio 2010                                                                                                                 | [x86](http://www.microsoft.com/download/en/details.aspx?id=8328)                                                    | [x64/amd64](http://www.microsoft.com/download/en/details.aspx?id=13523)                                                   | [IA64](http://www.microsoft.com/download/en/details.aspx?id=21051)                                                   |
-| Visual Studio 2013                                                                                                                 | [x86, amd64 and IA64](https://www.microsoft.com/en-gb/download/details.aspx?id=40784)                               |                                                                                                                           |                                                                                                                      |
-| Visual Studio 2015                                                                                                                 | [x86, amd64 and IA64](https://www.microsoft.com/en-us/download/details.aspx?id=53587)                               |                                                                                                                           |                                                                                                                      |
+| Visual Studio 2015 | [x86, amd64 and IA64](https://www.microsoft.com/en-us/download/details.aspx?id=53587) |  |  |
+| ------------------ | ------------------------------------------------------------------------------------- |  |  |
 
 It is strongly recommended that you use Visual Studio 2015. If you
 choose a different version, make sure the installers are named

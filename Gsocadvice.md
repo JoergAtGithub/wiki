@@ -1,9 +1,16 @@
 # Google Summer of Code Advice
 
 Thank you for your interest in working on Mixxx with Google Summer of
-Code\! This page has some general advice for people thinking about
-applying for Summer of Code with Mixxx. If you wish to apply for the
-program then you will need to visit [the official Google Summer of Code
+Code\! GSOC can be a fun and rewarding way to put your coding skills to
+use improving free software used by thousands of people around the
+world. GSOC students gain valuable experience not only in programming,
+but also participating in an international community. We welcome you
+into our community and hope that you find working on Mixxx as fun as we
+do\!
+
+This page has some general advice for students thinking about applying
+for Summer of Code with Mixxx. If you wish to apply for the program then
+you will need to visit [the official Google Summer of Code
 website](https://summerofcode.withgoogle.com).
 
 ## What Project Should I Work On?

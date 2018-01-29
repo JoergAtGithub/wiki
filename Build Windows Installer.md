@@ -11,7 +11,8 @@ page.
 ## Preparation
 
 You first need to download and install [WIX
-Toolset](http://wixtoolset.org/releases/) version 3.9+
+Toolset](http://wixtoolset.org/releases/) version 3.9+ and add it to
+your %PATH%
 
 When built with MSVC, Mixxx requires that certain MSVC DLL files be
 present in order to run. Many people have these already installed on

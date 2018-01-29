@@ -98,7 +98,7 @@ another computer.
 
 # MusicBrainz Integration
 
-Mixxx uses [AcoustID](https://acoustid.org/) to identidy tracks by
+Mixxx uses [AcoustID](https://acoustid.org/) to identify tracks by
 fingerprinting their audio data. Subsequently the results are used to
 query the [MusicBrainz](https://musicbrainz.org/) database for metdata
 about the identified track. Currently we don't utilize the full
@@ -108,17 +108,19 @@ just a few track properties to complement missing metadata.
 ## MusicBrainz IDs
 
 All entities in the MusicBrainz database are identified by UUIDs. These
-UUIDs could be used for various purposes: \* Detecting exact duplicates
-or variants of a track independent of the actual audio encoding. Use
-Case: When migrating your files from lower quality MP3 to higher quality
-FLAC encoding, obsolete MP3 files could be identified based on their IDs
-and proposed for removal. \* Relocating a track after it has been moved.
-Identifying tracks by their IDs will be much more reliable than by a
-combination of some properties. Use Case: You reorganize your files
-using a tool like [Beets](http://beets.io/) and don't want to lose all
-your carefully crafted crate/playlist/history contents when Mixxx is not
-able to asscociate your tracks in the library with the new file
-locations.
+UUIDs could be used for various purposes:
+
+  - Detecting exact duplicates or variants of a track independent of the
+    actual audio encoding. Use Case: When migrating your files from
+    lower quality MP3 to higher quality FLAC encoding, obsolete MP3
+    files could be identified based on their IDs and proposed for
+    removal.
+  - Relocating a track after it has been moved. Identifying tracks by
+    their IDs will be much more reliable than by a combination of some
+    properties. Use Case: You reorganize your files using a tool like
+    [Beets](http://beets.io/) and don't want to lose all your carefully
+    crafted crate/playlist/history contents when Mixxx is not able to
+    asscociate your tracks in the library with the new file locations.
 
 We recently implemented the import/export of MusicBrainz IDs according
 to the [Picard Tag

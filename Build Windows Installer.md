@@ -1,7 +1,7 @@
 # Making a Windows installer package
 
-Mixxx uses the [NullSoft Install System](http://nsis.sourceforge.net/)
-for building Windows self-extracting installers. This page contains
+Mixxx uses the [WIX Toolset](http://wixtoolset.org/releases/) for
+building Windows self-extracting installers. This page contains
 information on making such packages.
 
 First, we assume you've built & run Mixxx successfully from the

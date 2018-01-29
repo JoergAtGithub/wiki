@@ -8,6 +8,14 @@ international community to make awesome software used by thousands of
 people around the world. We welcome you into our community and hope that
 you find working on Mixxx as fun as we do\!
 
+Mixxx is relatively small project, so students' work often makes a large
+impact. During and after your Summer of Code project you will have the
+opportunity to put your work in the hands of real DJs and hear how
+they've used it. Past students have had a lot of fun working on Mixxx
+and learned a lot at the same time. If you want challenging problems,
+freedom to develop your ideas, interesting people and an all-round
+brilliant summer, then apply to work on Mixxx.
+
 This page has some general advice for students thinking about applying
 for Summer of Code with Mixxx. If you wish to apply for the program then
 you will need to visit [the official Google Summer of Code
@@ -61,15 +69,6 @@ and support a huge range of MIDI and audio hardware devices. Students
 with Mixxx will have an opportunity to learn advanced skills like
 low-latency programming and cross-platform application deployment which
 will look great on your resumé.
-
-We also very much value the contributions students make. Because Mixxx
-is relatively small, students' work often makes a large impact. During
-and after your Summer of Code project you will have the opportunity to
-put your work in the hands of real DJs and hear how they've used it.
-Past students have had a lot of fun working on Mixxx and learned a lot
-at the same time. If you want challenging problems, freedom to develop
-your ideas, interesting people and an all-round brilliant Summer, then
-apply to work on Mixxx.
 
 ## Am I Experienced Enough?
 

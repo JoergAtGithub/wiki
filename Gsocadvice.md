@@ -17,8 +17,9 @@ website](https://summerofcode.withgoogle.com).
 
 We consider more than the words in your application when deciding which
 students to accept. We look for signs that you will become an active
-participant in our community and hopefully continue to stay involved
-after GSOC ends. The best way to show us this is to get involved before
+participant in our community. Although it is not a requirement, we hope
+you continue to stay involved after GSOC ends. The best way to show us
+you will become a part of our community is to get involved before
 beginning your application. Here are some ways to get started:
 
   - Read the [Mixxx manual](https://mixxx.org/manual/latest/) to get a

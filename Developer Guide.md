@@ -10,7 +10,7 @@ lines of code so it can be daunting at first. If you know how to get
 around then it really isn't that big and scary.
 
 **This guide is a work in progress. If you have any questions, join the
-[Mixxx IRC channel](http://mixxx.org/irc.php) to get live help from
+[Mixxx Zulip chat](https://mixxx.zulipchat.com/) to get live help from
 developers.**
 
 # Prerequisites

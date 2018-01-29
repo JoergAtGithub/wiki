@@ -92,6 +92,35 @@ services, you should consider how to implement this in a extensible way.
 In the project you may focus to interface one service, in a way that it
 can be easily extended for other services.
 
+# MusicBrainz Integration
+
+Mixxx uses [https:*acoustid.org/\]\] to identidy tracks by
+fingerprinting their audio data. Subsequently the results are used to
+query the \[\[MusicBrainz|https:*musicbrainz.org/](AcoustID) database
+for metdata about the identified track. Currently we don't utilize the
+full potential that the MusicBrainz database is providing. We are
+reading just a few track properties to complement missing metadata.
+
+MusicBrainz IDs All entities in the MusicBrainz database are identified
+by UUIDs. These UUIDs could be used for various purposes: \* Detecting
+exact duplicates or variants of a track independent of the actual audio
+encoding. Use Case: When migrating your files from lower quality MP3 to
+higher quality FLAC encoding, obsolete MP3 files could be identified
+based on their IDs and proposed for removal. \* Relocating a track after
+it has been moved. Identifying tracks by their IDs will be much more
+reliable than by a combination of some properties. Use Case: You
+reorganize your files using a tool like [http://beets.io/](Beets) and
+don't want to lose all your carefully crafted crate/playlist/history
+contents when Mixxx is not able to asscociate your tracks in the library
+with the new file locations.
+
+We recently implemented the import/export of MusicBrainz IDs according
+to the
+[https://picard.musicbrainz.org/docs/mappings/](Picard%20Tag%20Mapping)
+proposal. The next step is extending the MusicBrainz client for
+retrieving and the Mixxx database and storing those IDs. Afterwards your
+proposed features can be added based on these IDs.
+
 # Cue point enhancements
 
 Currently, Mixxx's hotcues are limited. They cannot store any

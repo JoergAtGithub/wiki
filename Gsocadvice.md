@@ -24,9 +24,11 @@ beginning your application. Here are some ways to get started:
   - Read the [Mixxx manual](https://mixxx.org/manual/latest/) to get a
     better understanding of what Mixxx can do and what people use it
     for.
-  - Hang out on our [Zulip chat](https://mixxx.zulipchat.com/) and
-    [forum](https://mixxx.org/forums/). Helping users with technical
-    questions about Mixxx would be appreciated\!
+  - Introduce yourself on our [Zulip
+    chat](https://mixxx.zulipchat.com/). Start a new topic in the \#gsoc
+    stream.
+  - Help users with technical questions about Mixxx on the
+    [forum](https://mixxx.org/forums/).
   - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
   - Look through the [start\#Developer
     Documentation](start#Developer%20Documentation) and make a small
@@ -46,19 +48,6 @@ project proposal can be inspired by any of the following:
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
-
-## How Do I Contact Mixxx?
-
-You are more than welcome to contact us before submitting your
-application, we will be happy to advise on most aspects of the process.
-Getting in touch first is especially recommended if you are planning to
-apply to work on an original idea, rather than one of our suggestions
-from the ideas page.
-
-So if you'd like to discuss your application, your ideas or just
-introduce yourself, then feel free to get in touch by joining our [Zulip
-chat](https://mixxx.zulipchat.com/) and starting a new topic in the
-\#gsoc stream.
 
 ## What Would Working On Mixxx Be Like?
 

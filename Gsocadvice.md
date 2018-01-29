@@ -124,11 +124,19 @@ something you're going to enjoy. Once you've made your mind up:
 1.  Make sure you've thought about the project and understand what it
     entails
 2.  Don't be afraid to come up with original solutions to the problem
-3.  Don't be afraid to give us lots of detail about how you would
+3.  [Set up an IDE](Developer%20Tools#Using%20IDEs) to start exploring
+    the area of the code you will be working on and understanding how
+    the classes work together. Feel free to ask us on
+    [Zulip](https://mixxx.zulipchat.com/) if you need help figuring out
+    where to start looking in the code. Read the [Developer
+    Guide](Developer%20Guide) for an introduction to the organization of
+    the Mixxx code.
+4.  Figure out what parts of the code need to be changed and come up
+    with a general idea of what those changes will be.
+5.  Don't be afraid to give us lots of detail about how you would
     approach the project
-    1.  Things like UI mockups are very much encouraged where
-        appropriate
-4.  Consider how much time you need for each part of the project
+6.  UI mockups are very much encouraged where appropriate
+7.  Consider how much time you need for each part of the project
 
 Overall, your application should make us believe that you are capable of
 completing the project and delivering the functionality to our users. If

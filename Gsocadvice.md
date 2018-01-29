@@ -117,7 +117,7 @@ rely on are Qt, SQLite, and Git.
 
 ## How Do I Write A Great Application?
 
-Firstly, think about your choice of project carefully, you're going to
+Firstly, think about your choice of project carefully. You're going to
 be doing it for a couple of months, so it's important that you choose
 something you're going to enjoy. Once you've made your mind up:
 
@@ -161,7 +161,7 @@ A good example for this is 'Improve our track managment':
 
 Another approach is to analyze what the absolute minimal requirements
 are and then adding features on top of that. eg 'implement cover art in
-mixxx':
+Mixxx':
 
 ``` 
  - handle reading/storing covers in the database and application
@@ -170,17 +170,18 @@ mixxx':
  - add picture flow
 ```
 
-During your summer you'll encounter bugs in mixxx or find code that can
+During your summer you'll encounter bugs in Mixxx or find code that can
 be refactored to help you implement your ideas. You can also immediately
 fix them in the master branch and help us all out. This has several
 advantages. All your pull request will only concentrate on specific
 features and are much better to review. And you'll also get direct
-feedback from other devs and user during the summer.
+feedback from other developers and user during the summer.
 
 Since this is a hard requirement we as mentors will also have an eye on
 that and check if your proposal incorporates it and also warn you ahead
 of time during the summer if we see that you might not make it.
-Communicating with us on a regular basis is vital for that though.
+Communicating with us on a regular basis is vital for keeping your
+project on track.
 
 #### Having good time estimates
 

@@ -76,24 +76,26 @@ rely on are Qt, SQLite, and Git.
 
 #### Communication
 
-  - write a weekly report on your progress
+  - Write a weekly report on your progress
   - This can be delivered via mailing list message, blog post, or email
     to the mentors list.
-  - commit early commit often and push to github so that we can see it
-  - actively work on your project plan and communicate with us during
+  - Commit early, commit often, and push to GitHub so that we can see it
+  - Actively work on your project plan and communicate with us during
     the community bonding period
-  - Communicate every working day with your mentor. Just say "hello" If
-    you like. It can be via email,IRC or github comments.
-  - If there are good reasons, for not communicating please announce
-    them early.
+  - Communicate every working day with your mentor. Just say "hello" if
+    you like. We primarily use [Zulip](https://mixxx.zulipchat.com/) and
+    comments on [GitHub pull
+    requests](https://github.com/mixxxdj/mixxx/pulls) to communicate.
+  - If there are good reasons for not communicating please announce them
+    early.
   - If you don't communicate with us regularly we will fail you.
 
 #### Midterm and Final evaluations
 
-  - set a realistic goal for mid-term. If you fail to meet your own goal
+  - Set a realistic goal for mid-term. If you fail to meet your own goal
     we are more likely to fail you in the evaluations.
-  - have some code merged into master at the end of the summer to pass
-    the final evaluation.
+  - Have some code merged into the master Git branch at the end of the
+    summer to pass the final evaluation.
   - The later is a hard requirement so make sure that your time plan
     includes it.
 

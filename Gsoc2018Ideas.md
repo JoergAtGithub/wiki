@@ -18,7 +18,7 @@ NOT be accepted. You must have some interaction with the Mixxx community
 before the days leading up to the application deadline for your
 application to be accepted.**
 
-# Beatgrid enhancements
+# Beatgrid Enhancements
 
 Mixxx uses information about the tempo and location of beats for many
 features including sync, looping, and quantizing cue points. Currently,
@@ -64,6 +64,25 @@ instruments are encouraged to apply for this project, but these are not
 requirements and we welcome your application if you do not have that
 experience.
 
+# Cue Point Enhancements
+
+Currently, Mixxx's hotcues are limited. They cannot store any
+information other than a position in a track. It would be helpful to
+expand the capabilities of this in a number of ways. For example,
+letting users label hotcues with custom text and set their own color
+coding for hotcues. Setting specially marked mix in and mix out markers
+would be helpful both for live performance and for telling AutoDJ when
+to start automatic crossfading. Storing multiple loops per track that
+could be activated with a hotcue would be helpful too.
+
+A collection of ideas for improving cue points can be found in the
+[Launchpad
+blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
+
+A strong application will include mockups for how these new features
+could be accessed by users in an intuitive user interface that does not
+clutter the screen with an excess of information.
+
 # Ableton Link Support
 
 [Ableton Link](https://www.ableton.com/en/link/) is a relatively new
@@ -77,21 +96,6 @@ feature](https://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#master-s
 with Ableton Link compatible applications, including Mixxx running on
 another computer.
 
-# Metadata Output
-
-Mixxx has currently no interface to pass over metadata like the playing
-track and artist to third party applications. This is required to
-publish the current broadcasted track via RDS or to a web service like
-the upcoming <https://listenbrainz.org>, Twitter or just to the OS info
-area. This can be done by writing a file, rss feeds, OSC or .... (Add
-your own ideas ..) Ideally, this should be done in a cross-platform and
-extensible way.
-
-Since we will probably have the demand to interface a great variety of
-services, you should consider how to implement this in a extensible way.
-In the project you may focus to interface one service, in a way that it
-can be easily extended for other services.
-
 # MusicBrainz Integration
 
 Mixxx uses [AcoustID](https://acoustid.org/) to identidy tracks by
@@ -101,7 +105,7 @@ about the identified track. Currently we don't utilize the full
 potential that the MusicBrainz database is providing. We are reading
 just a few track properties to complement missing metadata.
 
-### MusicBrainz IDs
+## MusicBrainz IDs
 
 All entities in the MusicBrainz database are identified by UUIDs. These
 UUIDs could be used for various purposes: \* Detecting exact duplicates
@@ -123,7 +127,7 @@ next step is extending the MusicBrainz client for retrieving and the
 Mixxx database and storing those IDs. Afterwards your proposed features
 can be added based on these IDs.
 
-### Custom Tags
+## Custom Tags
 
 One essential feature that Mixxx is missing is the ability to assign and
 manage custom tags to tracks. We have already collected some ideas what
@@ -135,38 +139,20 @@ simple textual tags could be stored in an inverse index Tag String -\>
 Track ID. It should also be possible to attach the custom tags of a
 track to the file by exporting/importing them as file tags.
 
-# Cue point enhancements
+# Live Metadata Output
 
-Currently, Mixxx's hotcues are limited. They cannot store any
-information other than a position in a track. It would be helpful to
-expand the capabilities of this in a number of ways. For example,
-letting users label hotcues with custom text and set their own color
-coding for hotcues. Setting specially marked mix in and mix out markers
-would be helpful both for live performance and for telling AutoDJ when
-to start automatic crossfading. Storing multiple loops per track that
-could be activated with a hotcue would be helpful too.
+Mixxx has currently no interface to pass over metadata like the playing
+track and artist to third party applications. This is required to
+publish the current broadcasted track via RDS or to a web service like
+the upcoming <https://listenbrainz.org>, Twitter or just to the OS info
+area. This can be done by writing a file, rss feeds, OSC or .... (Add
+your own ideas ..) Ideally, this should be done in a cross-platform and
+extensible way.
 
-A collection of ideas for improving cue points can be found in the
-[Launchpad
-blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
-
-A strong application will include mockups for how these new features
-could be accessed by users in an intuitive user interface that does not
-clutter the screen with an excess of information.
-
-# Wireless Remote
-
-There is a demand for wireless remote controling Mixxx.
-
-There is already a great variety of remote control apps available in
-your Mobile Phone App Store. Just search for "DAW Remote".
-
-Unfortunately non of them works out of the Box.
-
-In this project you need to find out how the majority interfaces to
-their target DAW systems. Then implement the most common interface in
-Mixxx, and add first class support for one of these remote apps, ideal
-with a FOSS license.
+Since we will probably have the demand to interface a great variety of
+services, you should consider how to implement this in a extensible way.
+In the project you may focus to interface one service, in a way that it
+can be easily extended for other services.
 
 # Cartwall Player
 
@@ -183,6 +169,20 @@ propose how to implement the most important features with Mixxx.
 A highly requested feature is to automate these carts in a way. What are
 the requirements for automation? How can this be implemented along this
 projects,
+
+# Wireless Remote
+
+There is a demand for wireless remote controling Mixxx.
+
+There is already a great variety of remote control apps available in
+your Mobile Phone App Store. Just search for "DAW Remote".
+
+Unfortunately non of them works out of the Box.
+
+In this project you need to find out how the majority interfaces to
+their target DAW systems. Then implement the most common interface in
+Mixxx, and add first class support for one of these remote apps, ideal
+with a FOSS license.
 
 # Transition Effects
 

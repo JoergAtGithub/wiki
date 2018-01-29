@@ -31,8 +31,6 @@ beginning your application. Here are some ways to get started:
   - Look through the [start\#Developer
     Documentation](start#Developer%20Documentation) and make a small
     code contribution to fix a bug or enhance an existing feature.
-  - Read the [Pro Git](https://git-scm.com/book/en/v2) book to get
-    familiar with Git before you need to use it for your project.
 
 ## What Project Should I Work On?
 

@@ -7,8 +7,11 @@ website](https://summerofcode.withgoogle.com).
 
 ## What Project Should I Work On?
 
-In general, your project proposal can be inspired by any of the
-following:
+GSOC lasts several months, so it is important that you choose a project
+that you are personally passionate about that you will be excited to
+work on for an extended period. We cannot tell you want you want to work
+on, but we have some suggestions for project ideas. In general, your
+project proposal can be inspired by any of the following:
 
   - A project from our [GSoC 2018 Ideas Page](gsoc2018ideas)
   - A project you come up with\! Make sure to contact us **before**
@@ -16,15 +19,6 @@ following:
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.
-  - Projects from our past GSoC ideas pages: 
-  - [GSoC 2017](gsoc2017ideas)
-  - [GSoC 2016](gsoc2016ideas)
-  - [GSoC 2015](gsoc2015ideas)
-  - [GSoC 2014](gsoc2014ideas)
-  - [GSoC 2013](gsoc2013ideas)
-  - [GSoC 2012](gsoc2012ideas) 
-  - [GSoC 2011](gsoc2011ideas) 
-  - [GSoC 2010](gsoc2010ideas) 
 
 ## How Do I Contact Mixxx?
 

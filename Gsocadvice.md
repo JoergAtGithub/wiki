@@ -57,19 +57,20 @@ apply to work on Mixxx.
 ## Am I Experienced Enough?
 
 This is a common question asked by prospective students, the answer is
-generally: "Yes". The Mixxx Summer of Code team value intelligence and
-enthusiasm above specific knowledge of the libraries or algorithms we
-use. We have found in the past that an interested and motivated student
-who is willing to learn is more valuable than anything else.
+generally: "Yes". You do need some prior experience with C++, even if it
+was only for a small school project, but you do not need experience with
+the specific libraries or algorithms Mixxx uses.
 
-We also value general software design and development experience above
-specific knowledge of a library or API. For example, if you've never
-used Qt before but have done lots of Java and Gtk+ UI development then
-you should make sure you let us know about it in your application.
+We value general software design and development experience above
+specific knowledge of a library or API. We have found in the past that
+an interested and motivated student who is willing to learn is more
+valuable than anything else. For example, if you've never used Qt before
+but have done lots of Java and Gtk+ UI development then you should make
+sure you let us know about it in your application.
 
 Of course if you do have direct experience with the tools we use, you
 should definitely tell us about that too. The main external tools we
-rely on are `Qt`, `scons`, `portaudio` and `git`.
+rely on are Qt, SQLite, and Git.
 
 ## Our expectations from students
 

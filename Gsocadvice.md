@@ -29,17 +29,9 @@ apply to work on an original idea, rather than one of our suggestions
 from the ideas page.
 
 So if you'd like to discuss your application, your ideas or just
-introduce yourself, then feel free to get in touch in one of the
-following ways:
-
-1.  Send an email to our public developers' mailing list:
-    [mixxx-devel](http://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-2.  Contact our GSoC administrators directly via email: 
-    1.  gsoc2017-mentors -A-T- mixxx.org
-3.  Hop on our IRC channel (\#mixxx on Freenode) and see if our mentors
-    are around. 
-    1.  We encourage idling in our IRC channel to get acquainted with
-        the wider Mixxx community as well.
+introduce yourself, then feel free to get in touch by joining our [Zulip
+chat](https://mixxx.zulipchat.com/) and starting a new topic in the
+\#gsoc stream.
 
 ## What Would Working On Mixxx Be Like?
 

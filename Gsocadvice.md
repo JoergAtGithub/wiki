@@ -13,6 +13,26 @@ for Summer of Code with Mixxx. If you wish to apply for the program then
 you will need to visit [the official Google Summer of Code
 website](https://summerofcode.withgoogle.com).
 
+## Getting Involved
+
+We consider more than the words in your application when deciding which
+students to accept. We look for signs that you will become an active
+participant in our community and hopefully continue to stay involved
+after GSOC ends. The best way to show us this is to get involved before
+beginning your application. Here are some ways to get started:
+
+  - Read the [Mixxx manual](https://mixxx.org/manual/latest/) to get a
+    better understanding of what Mixxx can do and what people use it
+    for.
+  - Hang out on our [Zulip chat](https://mixxx.zulipchat.com/) and
+    [forum](https://mixxx.org/forums/). Helping users with technical
+    questions about Mixxx would be appreciated\!
+  - Look through the [start\#Developer
+    Documentation](start#Developer%20Documentation) and make a small
+    code contribution to fix a bug or enhance an existing feature.
+  - Read the [Pro Git](https://git-scm.com/book/en/v2) book to get
+    familiar with Git before you need to use it for your project.
+
 ## What Project Should I Work On?
 
 GSOC lasts several months, so it is important that you choose a project
@@ -182,28 +202,4 @@ task. I know that giving these estimates is not easy and that also
 professionals have problems with it. Having a good plan, knowing its
 weak and strong points are can help a lot.
 
-#### Some other (entirely optional) things you might consider doing
-
-1.  Why not introduce yourself on the mailing list? Even just to say
-    hello, your name and what you're applying to work on
-2.  If you don't have Mixxx already, download it, play around with it
-    for a while, let us know what you like or don't like
-3.  For lots of bonus points:
-    1.  Check out [the source](using_git) and compile it, play around
-        with the code a little
-        1.  Be sure to write about what you did in your application
-        2.  If you can't get it to compile, it's probably our fault not
-            yours, don't be embarrased to ask for help
-    2.  Check out our
-        [Wishlist](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
-        bugs and [Easy
-        Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=NEW&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.status%3Alist=INPROGRESS&field.status%3Alist=INCOMPLETE_WITH_RESPONSE&field.status%3Alist=INCOMPLETE_WITHOUT_RESPONSE&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_commenter=&field.subscriber=&field.structural_subscriber=&field.tag=easy+weekend+&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&field.has_blueprints.used=&field.has_blueprints=on&field.has_no_blueprints.used=&field.has_no_blueprints=on&search=Search)
-        lists. 
-        1.  Try picking something on the list and tackling it as a
-            starter project\!
-        2.  [Bugfix Workflow](Bugfix%20Workflow) 
-4.  As mentioned in the contact section above, hang around on IRC at
-    freenode.net \#mixxx
-5.  Sign up for [the forums](http://www.mixxx.org/forums)
-
-We look forward to your application :) - The Mixxx Development Team
+We look forward to your application\! :) - The Mixxx Development Team

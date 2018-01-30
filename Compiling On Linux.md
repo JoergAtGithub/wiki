@@ -52,11 +52,13 @@ repository](http://rpmfusion.org/Configuration). You only need to enable
 the free repository; the nonfree repository is not necessary for Mixxx.
 Then run:
 
-    su
-    [Enter the password for the user "root" at the prompt]
-    dnf groupinstall "Development Tools"
-    dnf install gcc-c++ upower-devel
-    dnf builddep mixxx
+``` bash
+su
+[Enter the password for the user "root" at the prompt]
+dnf groupinstall "Development Tools"
+dnf install gcc-c++ upower-devel
+dnf builddep mixxx
+```
 
 ### Other
 

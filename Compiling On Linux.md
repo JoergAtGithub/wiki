@@ -57,7 +57,7 @@ apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
   libid3tag0-dev libflac-dev libsndfile1-dev libupower-glib-dev
 sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
 sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
-sudo apt-get install g++-4.7 # raspberry pi
+sudo apt-get install libmp3lame-dev
 ```
 
 Download, build and install:

@@ -28,14 +28,16 @@ As a workaround you can simply install SCons 2 side by side::
 If your distribution is Debian based (such as Ubuntu), you can install
 them by running:
 
-    sudo apt-get build-dep mixxx 
-    sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
-      libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
-      libusb-1.0-0-dev libfftw3-dev libmad0-dev \
-      portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
-      libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev
-    sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
-    sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
+``` bash
+sudo apt-get build-dep mixxx 
+sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
+  libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
+  libusb-1.0-0-dev libfftw3-dev libmad0-dev \
+  portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
+  libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev
+sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
+sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
+```
 
 NOTE: Updated these for Mixxx 2.0 and Ubuntu 15.10, if this does not
 work on recent versions of Debian please split this section up.

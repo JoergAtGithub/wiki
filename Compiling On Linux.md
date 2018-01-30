@@ -45,6 +45,35 @@ work on recent versions of Debian please split this section up.
 TODO: Please consider putting these instructions into version control so
 they can be kept in sync with a particular version or branch.
 
+### Raspberry Pi (Raspian)
+
+If your distribution is Raspian, you can install them by running:
+
+``` bash
+apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
+  libopusfile-dev libshout3-dev libtag1-dev libprotobuf-dev protobuf-compiler \
+  libusb-1.0-0-dev libfftw3-dev libmad0-dev \
+  portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
+  libid3tag0-dev libflac-dev libsndfile1-dev libupower-glib-dev
+sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
+sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
+sudo apt-get install g++-4.7 # raspberry pi
+```
+
+Download and install:
+
+[https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz](opus-1.2.1)
+
+[https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz](opusfile-0.9)
+
+``` bash
+sudo apt-get remove g++
+sudo apt-get autoremove
+sudo apt-get remove g++-4.7
+ln -s /usr/bin/g++-4.7 /usr/bin/g++
+scons -c -j 2 opengles=1 staticlibs=1 optimize=portable
+```
+
 ### Fedora
 
 On Fedora, [enable the RPMFusion package

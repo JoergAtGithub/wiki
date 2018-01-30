@@ -67,11 +67,11 @@ Download, build and install:
 [https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz](opusfile-0.9)
 
 ``` bash
-scons -c 
 sudo apt-get remove g++ g++-4.7
 sudo apt-get autoremove
 sudo apt-get install g++-4.8
 ln -s /usr/bin/g++-4.8 /usr/bin/g++
+scons -c 
 scons -j 2 opengles=1 staticlibs=1 optimize=portable
 ```
 

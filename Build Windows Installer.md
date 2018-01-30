@@ -25,8 +25,9 @@ install it at the root of your build env directory.
 There's a different one for each architecture and compiler combination,
 as shown below:
 
-| Visual Studio 2015 | [x86, amd64 and IA64](https://www.microsoft.com/en-us/download/details.aspx?id=53587) |  |  |
-| ------------------ | ------------------------------------------------------------------------------------- |  |  |
+| Visual studio \< 2015 | Not supported to build Mixxx                                                          |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| Visual Studio 2015    | [x86, amd64 and IA64](https://www.microsoft.com/en-us/download/details.aspx?id=53587) |
 
 It is strongly recommended that you use Visual Studio 2015. If you
 choose a different version, make sure the installers are named

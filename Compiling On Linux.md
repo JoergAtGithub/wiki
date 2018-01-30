@@ -67,11 +67,12 @@ Download, build and install:
 [https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz](opusfile-0.9)
 
 ``` bash
+scons -c 
 sudo apt-get remove g++
 sudo apt-get autoremove
 sudo apt-get remove g++-4.7
 ln -s /usr/bin/g++-4.7 /usr/bin/g++
-scons -c -j 2 opengles=1 staticlibs=1 optimize=portable
+scons -j 2 opengles=1 staticlibs=1 optimize=portable
 ```
 
 ### Fedora

@@ -60,7 +60,7 @@ sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 sudo apt-get install g++-4.7 # raspberry pi
 ```
 
-Download and install:
+Download, build and install:
 
 [https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz](opus-1.2.1)
 

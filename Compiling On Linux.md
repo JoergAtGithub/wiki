@@ -50,8 +50,8 @@ they can be kept in sync with a particular version or branch.
 If your distribution is Raspian, you can install them by running:
 
 ``` bash
-apt-get remove libtag1-vanilla
-apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
+sudo apt-get remove libtag1-vanilla
+sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
   libopusfile-dev libshout3-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev \
   portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \

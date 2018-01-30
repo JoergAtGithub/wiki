@@ -61,7 +61,8 @@ sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 sudo apt-get install libmp3lame-dev
 ```
 
-Download, build and install:
+If the libopusfile-dev is not avaliable for you, download, build and
+install:
 
 [https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz](opus-1.2.1)
 

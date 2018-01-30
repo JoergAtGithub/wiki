@@ -68,10 +68,10 @@ Download, build and install:
 
 ``` bash
 scons -c 
-sudo apt-get remove g++
+sudo apt-get remove g++ g++-4.7
 sudo apt-get autoremove
-sudo apt-get remove g++-4.7
-ln -s /usr/bin/g++-4.7 /usr/bin/g++
+sudo apt-get install g++-4.8
+ln -s /usr/bin/g++-4.8 /usr/bin/g++
 scons -j 2 opengles=1 staticlibs=1 optimize=portable
 ```
 

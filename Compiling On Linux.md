@@ -86,6 +86,8 @@ Raspberry pi 2 i had the error:
 
 It seems a memory limitation.
 
+Tested on: 2017-11-29-raspbian-stretch.img
+
 ### Fedora
 
 On Fedora, [enable the RPMFusion package

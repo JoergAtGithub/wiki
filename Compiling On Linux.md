@@ -71,11 +71,20 @@ install:
 ``` bash
 sudo apt-get remove g++ g++-4.7
 sudo apt-get autoremove
-sudo apt-get install g++-4.8
-ln -s /usr/bin/g++-4.8 /usr/bin/g++
-scons -c 
-scons -j 2 opengles=1 staticlibs=1 optimize=portable
+sudo apt-get install g++-5
+ln  /usr/bin/g++-5  /usr/bin/g++
+scons -c && scons -j 2 opengles=1 staticlibs=1 optimize=portable
 ```
+
+**Important**
+
+You must build in Raspberry pi 3.
+
+Raspberry pi 2 i had the error:
+
+*Error: open CFI at the end of file; missing .cfi\_endproc directive*
+
+It seems a memory limitation.
 
 ### Fedora
 

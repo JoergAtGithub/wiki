@@ -64,9 +64,9 @@ sudo apt-get install libmp3lame-dev
 If the libopusfile-dev is not avaliable for you, download, build and
 install:
 
-[https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz](opus-1.2.1)
+[opus-1.2.1](https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz)
 
-[https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz](opusfile-0.9)
+[opusfile-0.9](https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz)
 
 ``` bash
 sudo apt-get remove g++ g++-4.7

@@ -32,7 +32,7 @@ Ubuntu Packages to Install (but possible outdated) would be:
 
 # Step by Step Setup
 
-For Eclipse Indigo (and Kepler)
+For Eclipse Oxygen
 
   - Start Eclipse.
   - File -\> New -\> Makefile Project with Existing Code (or do import
@@ -47,7 +47,7 @@ For Eclipse Indigo (and Kepler)
     -\> C/C++ Build (if Project Explorer is not visible, go to Window
     -\> Show View -\> Project Explorer).
   - Uncheck "Use default build command".
-  - Build command = `scons`.
+  - Build command = `scons`
   - Switch to Behavior tab.
   - Built: remove `all`.
   - Clean: remove `clean` and set instead `-c`.
@@ -60,7 +60,7 @@ icon).
 
   - Run -\> Run configurations.
   - Select C/C++ Application.
-  - Press "New" button. 
+  - Press "New launch configuration" button. 
   - Main tab:
   - C/C++ Application = `mixxx`.
   - Disable auto build.
@@ -72,6 +72,9 @@ icon).
 
   - Run -\> Debug configurations 
   - Next step similar to "Setup run"
+  - Arguments tab 
+  - Program arguments = `--resourcePath res --developer
+    --debugAssertBreak`
   - You `.gdbinit` should be setup before, but that's an other story.
   - Sample:
     [.gedbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).

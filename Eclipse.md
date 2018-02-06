@@ -147,7 +147,7 @@ If the discovering fails, you may add the required info manually:
     Preprocessor Include Paths, Macros etc. -\> Providers -\> CDT GCC
     BUild-In Compiler Settings
   - add -std=c++11, like this 
-  - ${COMMAND} ${FLAGS} -E -P -v -dD "${INPUTS}" -std=c++11
+  - ${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD "${INPUTS}" 
 
 <!-- end list -->
 

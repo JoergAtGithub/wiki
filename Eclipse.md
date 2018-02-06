@@ -19,7 +19,7 @@ system.
 It is the best to install the ready to use setup **"Eclipse IDE for
 C/C++ Developers"**:
 
-  - <http://www.eclipse.org/downloads/>
+  - <http://www.eclipse.org/downloads/eclipse-packages/>
 
 Or you might install the CDT into your exiting eclipse
 

@@ -23,5 +23,5 @@ plug-and-play on Linux.
 
 ## Mapping
 
-A mapping is currently under development, see
+A mapping is currently being developed, see
 [Github](https://github.com/Lykos153/mixxx/tree/Mapping-DJ-202)

@@ -4,7 +4,7 @@
 page](http://www.pioneerdj.com/en/product/controller/ddj-rb/)
 
 The Pioneer DDJ-RB is a USB controller with a built in sound card. It is
-a class compliant HID device but the sound card is proprietary.
+a class compliant HID but the sound card is proprietary.
 
 ## Drivers
 

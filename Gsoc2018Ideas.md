@@ -94,7 +94,9 @@ and [a reference C++ library](https://github.com/Ableton/link) that
 could be used to synchronize Mixxx's [Master Sync
 feature](https://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#master-sync)
 with Ableton Link compatible applications, including Mixxx running on
-another computer.
+another computer. Working on this project would require testing your
+changes to Mixxx for compatibility with other applications that support
+Ableton Link.
 
 # MusicBrainz Integration
 

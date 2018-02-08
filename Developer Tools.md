@@ -38,6 +38,7 @@ files, it can be difficult to understand how the code fits together.
 
   - Set up [Eclipse](eclipse)
   - Set up [KDevelop](KDevelop)
+  - Set up [Emacs](emacs)
   - Set up [QtCreator](QtCreator) for developing on Mixxx
 
 You can also use [Qt Creator](http://qt-project.org/downloads) for Mixxx

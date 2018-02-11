@@ -268,9 +268,9 @@ done so far:
 This week has been pretty slow. I got finals at the moment so I spend
 some of my time studying.
 
-After the merge of the recent master commits to the new library redesign
-a SearchQueryParser test was failing, so since I want to start working
-on the new filter for the nested crates I had to fix it.
+After the merge of the recent commits to the new library redesign a
+SearchQueryParser test was failing, so since I want to start working on
+the new filter for the nested crates I had to fix it.
 
 After some discussions we decided to change the filter functionality
 from what it used to be, in order to work better with the library query

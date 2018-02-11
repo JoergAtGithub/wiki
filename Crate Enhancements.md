@@ -74,8 +74,6 @@ features. This needs to happen carefully due to the fact that the tree
 item model is used by other library features that don't need the extra
 stuff (d\&d, dynamic expansion) to work.
 
-I plan on sticking here to work on them in the comming weeks.
-
 The following are the ideas for the project, and the devlog where I was
 writing what happened each week.
 

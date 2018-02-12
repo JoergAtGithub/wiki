@@ -178,8 +178,9 @@ that control, which you can ignore for the purposes of mapping.
 <!-- end list -->
 
   - Just plug the first two bytes into a `<control>` XML block for
-    `<status>` and `<midino>` respectively. This is detailed in the next
-    section.
+    `<status>` and `<midino>` respectively. This is detailed on the
+    [MIDI Controller Mapping File
+    Format](midi_controller_mapping_file_format#inputs) page.
 
 ## Additional MIDI tools
 

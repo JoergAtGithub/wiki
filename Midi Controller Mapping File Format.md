@@ -108,9 +108,9 @@ a brief introduction to MIDI signals.
 
 Some controllers send messages with a status byte of `0xEn` which, per
 the MIDI standard (see the [MIDI Crash Course](MIDI%20Crash%20Course),)
-are followed by two value bytes in LSB format. These are usually pitch
-sliders or pitch wheels. To map these controls, do the same as above but
-omit the `<midino>` element.
+are followed by two value bytes in little-endian format. These are
+usually pitch sliders or pitch wheels. To map these controls, do the
+same as above but omit the `<midino>` element.
 
 ### Input options
 

@@ -15,8 +15,11 @@ switched off for using software effects).
     page](http://www.korg.com/uk/products/dj/kaoss_dj/)
   - [Forum
     thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8479)
-  - [Download mapping for
+  - [Original mapping for
     Mixxx 2.1](https://www.mixxx.org/forums/viewtopic.php?f=7&t=8479&sid=ab4dc81e20ea737dd318d1b478fbb8ec&start=10#p33220)
+  - [Current mapping for
+    Mixxx 2.1](https://github.com/larromba/mixxx_kaoss_dj)
+  - [Pull request on Github](https://github.com/mixxxdj/mixxx/pull/1509)
 
 ## Configuration options
 

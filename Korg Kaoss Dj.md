@@ -95,7 +95,7 @@ Long-press this button to access the auto BPM function</td>
 <tr class="even">
 <td>10</td>
 <td>Touchpad (controller mode)</td>
-<td>Controls the effects of the DJ software (TODO)</td>
+<td>Controls the effects of the DJ software</td>
 <td>Adjusts the Beats Multiplier (TODO)</td>
 </tr>
 <tr class="odd">
@@ -175,7 +175,8 @@ Boosts or Cuts the Lo EQ</td>
 <tr class="odd">
 <td>17</td>
 <td>Fx button</td>
-<td>Applies the effect to the selected deck (TODO)</td>
+<td>Left - FX1 rack mix knob can be manipulated when enabled<br />
+Right - FX2 rack mix knob can be manipulated when enabled</td>
 <td>---</td>
 </tr>
 <tr class="even">

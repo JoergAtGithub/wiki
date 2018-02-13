@@ -107,7 +107,7 @@ Long-press this button to access the auto BPM function</td>
 <tr class="even">
 <td>:::</td>
 <td>Touchpad (sampler mode)</td>
-<td>Controls the sampler function of the DJ software (TODO)</td>
+<td>Controls the sampler function of the DJ software</td>
 <td>---</td>
 </tr>
 <tr class="odd">

@@ -83,7 +83,7 @@ switched off for using software effects).
 <td>8</td>
 <td>Tap Button</td>
 <td>Sets the tempo<br />
-Long-press this button to access the auto BPM function (TODO)</td>
+Long-press this button to access the auto BPM function</td>
 <td>Key setting mode</td>
 </tr>
 <tr class="odd">

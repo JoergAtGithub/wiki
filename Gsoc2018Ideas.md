@@ -29,16 +29,16 @@ do not work well for lots of music. There should be an intermediate
 solution that allows for marking sections of a constant tempo and
 sections where the tempo is changing.
 
-Sections with changing tempos could be marked by indicating which beats
-are downbeats and how many beats are in each measure. Then Mixxx could
-place the beat markers by dividing the space between the downbeats by
-the beats per measure. This would allow the tempo to change between
-downbeats (gradually or suddenly). For example, this [video
-tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ) demonstrates how
-Serato DJ handles this. However, Serato and other DJ software assumes
-that all music has a 4/4 time signature, which is incorrect for lots of
-music. A proposal for this project should allow for handling tracks that
-change time signatures.
+One way to approach this would be to mark sections with changing tempos
+by indicating which beats are downbeats and how many beats are in each
+measure. Then Mixxx could place the beat markers by dividing the space
+between the downbeats by the beats per measure. This would allow the
+tempo to change between downbeats (gradually or suddenly). For example,
+this [video tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ)
+demonstrates how Serato DJ handles this. However, Serato and other DJ
+software assumes that all music has a 4/4 time signature, which is
+incorrect for lots of music. A proposal for this project should allow
+for handling tracks that change time signatures.
 
 Adding this information to the beatgrid would allow existing features
 that rely on the beatgrid to work better for a wider variety of music.
@@ -47,12 +47,14 @@ downbeats and beats per measure could be implemented. You are encouraged
 to propose some possibilities for new features relying on this new
 beatgrid information in your application.
 
-Ideas for algorithms to detect downbeats and beats per measure
-automatically are welcome if you already have a strong background in
-signal processing, but this should come last after completing the rest
-of the project. If you do not have this experience, we welcome
-applications that would assume 4/4 by default and allow users to adjust
-this manually.
+The analyzer Mixxx uses provides the exact locations of each beat. This
+might be used to automatically guess whether to treat a part of a track
+as a constant tempo or changing tempo. Ideas for algorithms to detect
+downbeats and beats per measure automatically are welcome if you already
+have a strong background in signal processing, but this should come last
+after completing the rest of the project. If you do not have this
+experience, we welcome applications that would assume 4/4 by default and
+allow users to adjust this manually.
 
 A strong application will list some specific tracks with changing tempos
 that will be used for testing the new features. These should include

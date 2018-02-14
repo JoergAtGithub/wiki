@@ -151,18 +151,14 @@ track to the file by exporting/importing them as file tags.
 
 # Live Metadata Output
 
-Mixxx has currently no interface to pass over metadata like the playing
-track and artist to third party applications. This is required to
-publish the current broadcasted track via RDS or to a web service like
-the upcoming <https://listenbrainz.org>, Twitter or just to the OS info
-area. This can be done by writing a file, rss feeds, OSC or .... (Add
-your own ideas ..) Ideally, this should be done in a cross-platform and
-extensible way.
-
-Since we will probably have the demand to interface a great variety of
-services, you should consider how to implement this in a extensible way.
-In the project you may focus to interface one service, in a way that it
-can be easily extended for other services.
+Many users would like to be able to show what music Mixxx is playing
+from other applications. There are lots of formats this information
+could be output to, for example MPRIS, HTTP APIs of various web services
+like [ListenBrainz](https://listenbrainz.org), or simply writing to a
+log file. This project should make an extensible foundation that will
+make it easy to add new output formats. A proposal for this project
+should identify specifically which output formats will be implemented
+and explain some use cases for them.
 
 # Cartwall Player
 

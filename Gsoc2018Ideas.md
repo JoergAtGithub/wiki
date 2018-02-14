@@ -83,7 +83,10 @@ blueprint](https://blueprints.launchpad.net/mixxx/+spec/cuepoints-2.0-new).
 
 A strong application will include mockups for how these new features
 could be accessed by users in an intuitive user interface that does not
-clutter the screen with an excess of information.
+clutter the screen with an excess of information. We suggest studying
+how other DJ applications handle cue points for inspiration. If you do
+not have access to proprietary applications, you can search YouTube for
+tutorial videos and read the manuals of other DJ software.
 
 # Ableton Link Support
 

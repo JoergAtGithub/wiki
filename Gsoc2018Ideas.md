@@ -155,10 +155,10 @@ Many users would like to be able to show what music Mixxx is playing
 from other applications. There are lots of formats this information
 could be output to, for example MPRIS, HTTP APIs of various web services
 like [ListenBrainz](https://listenbrainz.org), or simply writing to a
-log file. This project should make an extensible foundation that will
-make it easy to add new output formats. A proposal for this project
-should identify specifically which output formats will be implemented
-and explain some use cases for them.
+plain text log file. This project should make an extensible foundation
+that will make it easy to add new output formats. A proposal for this
+project should identify specifically which output formats will be
+implemented and explain some use cases for them.
 
 # Cartwall Player
 

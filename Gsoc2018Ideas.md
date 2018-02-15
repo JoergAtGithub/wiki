@@ -192,20 +192,6 @@ A highly requested feature is to automate these carts in a way. What are
 the requirements for automation? How can this be implemented along this
 projects,
 
-# Wireless Remote
-
-There is a demand for wireless remote controling Mixxx.
-
-There is already a great variety of remote control apps available in
-your Mobile Phone App Store. Just search for "DAW Remote".
-
-Unfortunately non of them works out of the Box.
-
-In this project you need to find out how the majority interfaces to
-their target DAW systems. Then implement the most common interface in
-Mixxx, and add first class support for one of these remote apps, ideal
-with a FOSS license.
-
 # Transition Effects
 
 Currently effects are basically applied to one channel only. If you like

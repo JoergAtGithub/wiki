@@ -38,10 +38,15 @@ beginning your application. Here are some ways to get started:
     stream.
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
-  - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - [Test pull requests](testing).
   - Look through the [start\#Developer
     Documentation](start#Developer%20Documentation) and make a small
     code contribution to fix a bug or enhance an existing feature.
+  - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
+
+We expect that you make an effort to answer your own questions before
+asking us. We are happy to give you guidance and assist you when you get
+stuck working on code, but we will not do work for you.
 
 ## What Project Should I Work On?
 

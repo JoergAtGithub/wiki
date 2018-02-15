@@ -15,6 +15,9 @@ developers.**
 
 # Prerequisites
 
+First, you will need to download the cod of Mixxx [using
+Git](using%20Git).
+
 To understand this guide, you should have a working experience with a
 systems language like C, C++, or Java. You should be able to get by with
 trial and error even if you don't know these. It will help significantly
@@ -114,24 +117,3 @@ see them in other sections.
   - [Preferences Dialogs](developer_guide_preferences)
   - [Waveform](developer_guide_waveform)
   - [GUI Widgets](developer_guide_widgets)
-
-# How to write Mixxx Code
-
-Now that you've had a brief overview of the Mixxx codebase. It's time to
-dive in\!
-
-This section will go over how to be a Mixxx developer -- building Mixxx
-yourself, to filing bugs, submitting patches and getting your feature
-branches merged.
-
-## Getting the Code
-
-## Building Mixxx
-
-## Choosing an IDE or Text Editor
-
-## Filing Bugs
-
-## Submitting Patches
-
-## Using Branches

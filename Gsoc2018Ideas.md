@@ -150,6 +150,20 @@ simple textual tags could be stored in an inverse index Tag String -\>
 Track ID. It should also be possible to attach the custom tags of a
 track to the file by exporting/importing them as file tags.
 
+# Startup & Shutdown Optimization and Refactoring
+
+Over many years, the code for Mixxx's initialization and shutdown
+processes have become very messy. For users, this makes Mixxx slow to
+start up and shut down. For developers, this means that any changes to
+the initialization order are likely to introduce serious bugs. This
+project would involve refactoring large parts of the code to create a
+consistent structure that is easy for developers to understand and
+maintain. Also, this project would require profiling to measure what
+code in the startup and shutdown processes are taking lots of time to
+execute and implementing ways to optimize those bottlenecks. Refer to
+the [Mixxx Init Refactoring](Mixxx%20Init%20Refactoring) page for more
+background information and some ideas to get started.
+
 # Live Metadata Output
 
 Many users would like to be able to show what music Mixxx is playing

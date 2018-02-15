@@ -56,9 +56,9 @@ work on for an extended period. We cannot tell you want you want to work
 on, but we have some suggestions for project ideas. Before thinking too
 much about what project you want to work on, we suggest spending time
 using Mixxx and [\#Getting Involved](#Getting%20Involved) in the
-community to develop an understanding of what features would be
-appreciated by users. In general, your project proposal can be inspired
-by any of the following:
+community. This will help you understand what Mixxx currently does well
+and what areas could be improved. In general, your project proposal can
+be inspired by any of the following:
 
   - A project from our [GSoC 2018 Ideas Page](gsoc2018ideas)
   - A project you come up with\! Make sure to contact us on

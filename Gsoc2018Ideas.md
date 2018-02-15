@@ -115,8 +115,9 @@ just a few track properties to complement missing metadata.
 
 ## MusicBrainz IDs
 
-All entities in the MusicBrainz database are identified by UUIDs. These
-UUIDs could be used for various purposes:
+All entities in the MusicBrainz database are identified by
+[UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+These UUIDs could be used for various purposes:
 
   - Detecting exact duplicates or variants of a track independent of the
     actual audio encoding. Use Case: When migrating your files from

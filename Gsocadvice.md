@@ -53,8 +53,12 @@ stuck working on code, but we will not do work for you.
 GSOC lasts several months, so it is important that you choose a project
 that you are personally passionate about that you will be excited to
 work on for an extended period. We cannot tell you want you want to work
-on, but we have some suggestions for project ideas. In general, your
-project proposal can be inspired by any of the following:
+on, but we have some suggestions for project ideas. Before thinking too
+much about what project you want to work on, we suggest spending time
+using Mixxx and [\#Getting Involved](#Getting%20Involved) in the
+community to develop an understanding of what features would be
+appreciated by users. In general, your project proposal can be inspired
+by any of the following:
 
   - A project from our [GSoC 2018 Ideas Page](gsoc2018ideas)
   - A project you come up with\! Make sure to contact us on

@@ -96,11 +96,12 @@ rely on are Qt, SQLite, and Git.
 
 ## Our expectations from students
 
-#### Communication
-
-  - Write a weekly report on your progress
-  - This can be delivered via mailing list message, blog post, or email
-    to the mentors list.
+  - Be self-motivated and stick to the schedule you write in your
+    proposal
+  - Try to answer your own questions before asking for help
+  - Ask for help when you are not sure about the best way forward
+  - Write a weekly report on your progress on the wiki page for your
+    project.
   - Commit early, commit often, and push to GitHub so that we can see it
   - Actively work on your project plan and communicate with us during
     the community bonding period
@@ -109,7 +110,9 @@ rely on are Qt, SQLite, and Git.
     comments on [GitHub pull
     requests](https://github.com/mixxxdj/mixxx/pulls) to communicate.
   - If there are good reasons for not communicating please announce them
-    early.
+    early. If you know there will be times that you are not able to work
+    on your project as much during the summer, please let us know in
+    your application.
   - If you don't communicate with us regularly we will fail you.
 
 #### Midterm and Final evaluations
@@ -117,7 +120,8 @@ rely on are Qt, SQLite, and Git.
   - Set a realistic goal for mid-term. If you fail to meet your own goal
     we are more likely to fail you in the evaluations.
   - Have some code merged into the master Git branch at the end of the
-    summer to pass the final evaluation.
+    summer to pass the final evaluation. This does not necessarily mean
+    that your whole project must be 100% complete by the end of GSOC.
   - The later is a hard requirement so make sure that your time plan
     includes it.
 

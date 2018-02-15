@@ -176,22 +176,6 @@ that will make it easy to add new output formats. A proposal for this
 project should identify specifically which output formats will be
 implemented and explain some use cases for them.
 
-# Cartwall Player
-
-In a broadcasting show, it is required to have a set of jingles and
-background sounds under a finger tip. Currently you can use Mixxx's
-sampler decks for this.
-
-Unfortunately there are some shortcomings compared to specialised
-dedicated cartwall player.
-
-In this project you need to compare various existing solutions and
-propose how to implement the most important features with Mixxx.
-
-A highly requested feature is to automate these carts in a way. What are
-the requirements for automation? How can this be implemented along this
-projects,
-
 # Transition Effects
 
 Currently effects are basically applied to one channel only. If you like

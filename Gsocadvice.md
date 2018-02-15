@@ -65,8 +65,8 @@ be inspired by any of the following:
     [Zulip](https://mixxx.zulipchat.com/) **before** submitting to get
     feedback if this is your plan. We recommend spending a while using
     Mixxx and participating in the community before suggesting your own
-    ideas so you can develop an understanding of what Mixxx's current
-    weaknesses are that could use improvement.
+    ideas. This will help you develop an understanding of what Mixxx's
+    current weaknesses are that could use improvement.
   - You can use our [Wishlist
     Bugs](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=-importance&field.importance%3Alist=WISHLIST&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.tag=&field.tags_combinator=ANY&field.has_cve.used=&field.omit_dupes.used=&field.omit_dupes=on&field.affects_me.used=&field.has_patch.used=&field.has_branches.used=&field.has_branches=on&field.has_no_branches.used=&field.has_no_branches=on&search=Search)
     page for inspiration for your project.

@@ -47,14 +47,14 @@ downbeats and beats per measure could be implemented. You are encouraged
 to propose some possibilities for new features relying on this new
 beatgrid information in your application.
 
-The analyzer Mixxx uses provides the exact locations of each beat. This
-might be used to automatically guess whether to treat a part of a track
-as a constant tempo or changing tempo. Ideas for algorithms to detect
-downbeats and beats per measure automatically are welcome if you already
-have a strong background in signal processing, but this should come last
-after completing the rest of the project. If you do not have this
-experience, we welcome applications that would assume 4/4 by default and
-allow users to adjust this manually.
+The analyzer that Mixxx uses provides the exact locations of each beat.
+This might be used to automatically guess whether to treat a part of a
+track as a constant tempo or changing tempo. Ideas for algorithms to
+detect downbeats and beats per measure automatically are welcome if you
+already have a strong background in signal processing, but this should
+come last after completing the rest of the project. If you do not have
+this experience, we welcome applications that would assume 4/4 by
+default and allow users to adjust this manually.
 
 A strong application will list some specific tracks with changing tempos
 that will be used for testing the new features. These should include

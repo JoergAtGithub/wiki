@@ -37,6 +37,8 @@ sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev 
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev
 sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
 sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
+sudo apt-get install libqt4-opengl libqt4-svg libqt4-xmlpatterns libqt4-sql  # Linux Mint/KDE  
+sudo apt-get install libx11-dev libqt4-dev libgl-dev libqt4-opengl-dev # Linux Mint/KDE
 ```
 
 NOTE: Updated these for Mixxx 2.0 and Ubuntu 15.10, if this does not

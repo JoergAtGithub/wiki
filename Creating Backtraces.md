@@ -93,10 +93,11 @@ crashed.
     comment.
 2.  If you do not want to use Launchpad, post the results in the forum,
     email them to mixxx-devel, or [pastebin](http://www.pastebin.ca)
-    them and drop the link on IRC. We'll then try to figure out where
-    the crash is. Do not assume a developer will hear you in IRC, using
-    a static system (bug tracker, e-mail, forum) is much preferred. The
-    IRC channel is great for technical support though.
+    them and drop the link on [Zulip](https://mixxx.zulipchat.com/) or
+    IRC. We'll then try to figure out where the crash is. Do not assume
+    a developer will hear you in IRC, using a static system (bug
+    tracker, e-mail, forum) is much preferred. The IRC channel is great
+    for technical support though.
 
 **Note:** To get a backtrace for a thread freeze you can do the same
 thing as above, but to get the gdb prompt, you have to press CTRL+Z in

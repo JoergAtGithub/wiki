@@ -1,7 +1,7 @@
 # How to compile Mixxx for Mac OS X
 
 Compiling Mixxx for Mac OS X is a simple process once you have all
-dependancies and Qt set up properly. This guide assumes you have basic
+dependencies and Qt set up properly. This guide assumes you have basic
 knowledge about using and compiling with the command line (eg:
 ./configure, make). If you don’t, there is a basic guide available at
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
@@ -309,22 +309,25 @@ to the mixxx directory and run:
 ## 4\. Compile and install
 
 If you used Homebrew, you need to set your compiler paths accordingly.
-In the below code you should customize `HOMEBREW_PATH` to be the path to
-your homebrew installation. In this example we will use
-`/usr/local/homebrew` (default is `/usr/local`).
+In the below code you should customize `HOMEBREW_PATH` to the path where
+your Homebrew folder can be found. In this example we will use the
+default, `/usr/local`.
 
-    HOMEBREW_PATH=/usr/local/homebrew
+    HOMEBREW_PATH=/usr/local
     # See the note below about the Opus workaround.
-    export CFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
-    export CXXFLAGS=-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus
+    export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
+    export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
     export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt5/5.7.1/
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt5/%VERSION%/
 
 **Opus Workaround:** The version of libopus included with Homebrew has a
 bug where opusfile.h includes the file opus\_multistream.h. In order for
 this file to be present on the include path, we need to add
-$HOMEBREW\_PATH/usr/include/opus to the include path. This will
-hopefully be fixed in future versions of libopusfile.
+$HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
+fixed in future versions of libopusfile.
+
+**QTDIR** will tell scons where to find your Qt installation. Replace
+%VERSION% with the folder name, e.g. 5.10.1
 
 Change to the newly created `mixxx` directory, and use scons to compile
 and install:
@@ -338,7 +341,7 @@ If you used the 1.11 branch, you must type `cd mixxx` twice.
 This should generate `Mixxx.app` which you can run by double-clicking on
 or typing `open Mixxx.app`. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip
-`scons bundle` and instead on the first run of mixxx run it as:
+`scons bundle` and instead on the first run of Mixxx run it as:
 
     ./mixxx --resourcePath res/
 

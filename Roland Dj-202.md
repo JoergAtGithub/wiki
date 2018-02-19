@@ -21,6 +21,19 @@ You can download the latest drivers and firmware from
 The DJ-202 is a USB class compliant MIDI and audio device, so it's
 plug-and-play on Linux.
 
+#### Enabling generic mode
+
+If the device is not properly detected as a MIDI device, you need to
+enable generic mode in the system settings:
+
+1.  Hold \[LOAD\] Button when plugging in the USB cable until the
+    sequencer start/stop button blinks
+2.  Press \[R channel performance pad 1\]
+3.  Turn the rotary selector left, so only the upper left corner of the
+    master level indicator is lit
+4.  Press the blinking start/stop button
+5.  Wait until all pads light up, then disconnect USB cable
+
 ## Mapping
 
 A mapping is currently being developed, see

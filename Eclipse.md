@@ -65,8 +65,8 @@ LDFLAGS   | -L/usr/local/lib
 QTDIR     | /usr/local/Cellar/qt5/%VERSION%                 
 ```
 
-  - Replace %VERSION% with the folder name for your version of Qt, e.g.
-    5.10.1 
+  - Replace `%VERSION%` with the folder name for your version of Qt,
+    e.g. 5.10.1 
   - You may also have to manually add to the system PATH setting to
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.

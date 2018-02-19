@@ -95,7 +95,7 @@ icon).
     --debugAssertBreak`
   - Your `.gdbinit` should be setup before, but that's another story.
   - Sample:
-    [.gedbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
+    [.gdbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
   - Qt pretty printer
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
   - "Debug" button for run Mixxx.

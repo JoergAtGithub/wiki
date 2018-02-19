@@ -5,15 +5,16 @@
 Bare minimum equipment for DJing:
 
   - computer (preferably a laptop)
-  - [splitter cable](#splitter-cables) or [sound card](#sound-cards)
+  - [splitter cable](#splitter-cables) or [audio
+    interface](#audio-interfaces)
   - [headphones](DJ%20headphones)
   - speakers
   - audio cables and adapters
 
 Helpful but not strictly necessary:
 
-  - [sound card](#sound-cards) with 4 mono output channels (2 stereo
-    pairs)
+  - [audio interface](#audio-interfaces) with 4 mono output channels (2
+    stereo pairs)
   - [controller](#controllers) and/or [turntables with timecode
     vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
   - [laptop stand](laptop%20stands)
@@ -55,20 +56,20 @@ below. Exceptions from the standard are noted in the tables below.
 
 #### Sound cards
 
-Controllers that have integrated sound cards often have a USB Audio
-Class compliant sound card. Sound cards that aren't USB Audio Class
-compliant need a driver for each OS. USB Audio Class compliant sound
-cards, both stand-alone and integrated into controllers, do not need any
-special drivers for Linux or macOS. On Windows, they can be used without
-any special drivers, but a driver is needed from the manufacturer to use
-the recommended [ASIO sound
+Controllers that have integrated audio interfaces often have a USB Audio
+Class compliant audio interface. Sound cards that aren't USB Audio Class
+compliant need a driver for each OS. USB Audio Class compliant audio
+interfaces, both stand-alone and integrated into controllers, do not
+need any special drivers for Linux or macOS. On Windows, they can be
+used without any special drivers, but a driver is needed from the
+manufacturer to use the recommended [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
 Sound cards that are advertised for use with iOS devices are class
 compliant.
 
-Unlike some proprietary DJ programs, Mixxx works with any sound card
-that your operating system has a driver to use—including for timecode
-vinyl (DVS) use.
+Unlike some proprietary DJ programs, Mixxx works with any audio
+interface that your operating system has a driver to use—including for
+timecode vinyl (DVS) use.
 
 ### Mixxx Certified Mappings
 
@@ -112,83 +113,83 @@ move your controller to this table.
 
 \<sortable 2=numeric\>
 
-| Device                                                                                             | Price (USD) \[11\] | Description                             | Integrated sound card | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
-| -------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------- | --------------------- | ---------------- | --------------- | ----------------------------- | -------- |
-| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60                | basic 2 deck                            | no                    | N/A              | MIDI            | 1.10                          | 2011     |
-| [Korg nanoKONTROL 2](Korg%20nanoKONTROL%202)                                                       | $60                | miscellaneous                           | no                    | N/A              | MIDI            | 1.11                          | 2011     |
-| [Akai LPD8](Akai%20LPD8)                                                                           | $70                | miscellaneous                           | no                    | N/A              | MIDI            | 1.10.1                        | 2010     |
-| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75                | pad grid                                | no                    | N/A              | MIDI            | 2.0                           | 2013     |
-| [Novation Dicer](Novation%20Dicer)                                                                 | $100 \[12\]        | pads for use with turntables            | no                    | N/A              | MIDI            | 1.10                          | 2010     |
-| [Hercules DJ Control Instinct S](Hercules%20DJ%20Control%20Instinct)                               | $100               | basic 2 deck                            | yes                   | no               | MIDI            | 1.10.1                        | 2015     |
-| [Novation Launchpad Mk2](Novation%20Launchpad%20Mk2)                                               | $150               | pad grid                                | no                    | N/A              | MIDI            | 2.1\[13\]                     | 2015     |
-| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150               | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 2.1\[14\]                     | 2015     |
-| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200               | 2 deck \[15\] all-in-one                | yes                   | no               | MIDI            | 2.1\[16\]                     | 2013     |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200               | 2 deck all-in-one                       | yes                   | no               | MIDI            | 2.1\[17\]                     | 2015     |
-| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250               | miscellaneous                           | no                    | N/A              | MIDI            | 1.11                          | 2012     |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250               | 2 deck\[18\] all-in-one                 | yes                   | no               | MIDI            | 2.0                           | 2015     |
-| [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250               | 2 deck all-in-one                       | yes                   | yes              | MIDI            | 1.11                          | 2011     |
-| [Denon MC4000](Denon%20MC4000)                                                                     | $400               | 2 deck controller and mixer             | yes                   | yes              | MIDI            | 2.1\[19\]                     | 2015     |
-| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700               | 4 deck all-in-one                       | yes                   | yes              | MIDI            | 2.0                           | 2015     |
-| [Akai MPD24](Akai%20MPD24)                                                                         | discontinued       | miscellaneous                           | no                    | N/A              | MIDI            | 1.8                           | 2007     |
-| [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued       | basic 2 deck                            | yes                   | no               | MIDI            | 1.11                          | 2006     |
-| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued       | CD player                               | no                    | N/A              | MIDI            | 1.10                          | 2010     |
-| [Behringer BCD3000](Behringer%20BCD3000)                                                           | discontinued       | basic 2 deck                            | yes                   | no               | MIDI            | 1.6                           | 2007     |
-| [Behringer CMD Micro](Behringer%20CMD%20Micro)                                                     | discontinued       | basic 2 deck                            | no                    | N/A              | MIDI            | 2.1\[20\]                     | 2013     |
-| [Denon SC2000](Denon%20SC2000)                                                                     | discontinued       | 1 deck                                  | no                    | N/A              | MIDI            | 1.8                           | 2010     |
-| [DJ Tech CDJ-101](DJ%20Tech%20CDJ-101)                                                             | discontinued       | 2 deck jog wheel                        | no                    | N/A              | MIDI            | 1.11                          | 2011     |
-| [DJ Tech DJM-101](DJ%20Tech%20DJM-101)                                                             | discontinued       | 2 deck mixer                            | no                    | N/A              | MIDI            | 1.11                          | 2011     |
-| [DJ Tech iMix Reload](DJ%20Tech%20iMix%20Reload)                                                   | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.10                          | 2009     |
-| [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued       | 4 decks                                 | no                    | N/A              | MIDI            | 1.11                          | 2009     |
-| [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued       | 2 deck mixer                            | no                    | N/A              | MIDI            | 1.10.1                        | 2009     |
-| [eks Otus](eks%20Otus)                                                                             | discontinued       | 1 turntable + 2 deck mixer              | yes                   | no               | HID             | 1.11                          | 2008     |
-| [Electrix Tweaker](Electrix%20Tweaker)                                                             | discontinued       | 2 deck\[21\] without jog wheels         | no                    | N/A              | MIDI            | 2.0                           | 2012     |
-| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued       | knobs + crossfader                      | no                    | N/A              | MIDI            | 1.6                           | 2006     |
-| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued       | 2 deck mixer                            | no                    | N/A              | MIDI            | 1.6                           | 2006     |
-| [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued       | basic 2 deck                            | no                    | N/A              | MIDI            | 1.11                          | 2011     |
-| [Kontrol DJ KDJ500](Kontrol%20DJ%20KDJ500)                                                         | discontinued       | basic 2 deck                            | no                    | N/A              | MIDI            | 1.10                          | 2003     |
-| [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued       | 2 deck mixer                            | no                    | N/A              | MIDI            | 1.8.2                         | 2009     |
-| [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 1.11                          | 2012     |
-| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | discontinued       | basic 2 deck                            | yes                   | no               | MIDI            | 1.10.1                        | 2012     |
-| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI \[22\]     | 1.7                           | 2004     |
-| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued       | 2 deck\[23\] all-in-one                 | yes                   | yes              | MIDI \[24\]     | 1.11                          | 2010     |
-| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued       | 2 deck all-in-one                       | yes                   | no               | HID             | 1.11                          | 2003     |
-| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued       | 2 deck all-in-one                       | yes                   | no               | USB Bulk        | 1.8                           | 2010     |
-| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued       | 2 deck all-in-one                       | no                    | N/A              | HID             | 1.11                          | 2006     |
-| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued       | 2 deck all-in-one                       | no                    | N/A              | HID             | 1.11                          | 2009     |
-| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued       | basic 2 deck                            | no                    | N/A              | MIDI            | 1.8                           | 2009     |
-| [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued       | 2 deck all-in-one                       | yes                   | N/A              | MIDI            | 1.6                           | 2007     |
-| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued       | 2 decks                                 | no                    | N/A              | MIDI \[25\]     | 1.7                           | 2001     |
-| [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202%20Pro)                                   | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.10.1                        | 2011     |
-| [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 1.11                          | 2011     |
-| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued       | pad grid                                | no                    | N/A              | MIDI \[26\]     | 1.11, 2.1\[27\]               | 2009     |
-| [Novation Twitch](Novation%20Twitch)                                                               | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 2.1\[28\]                     | 2011     |
-| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | discontinued       | 2 deck all-in-one                       | yes                   | N/A              | MIDI            | 1.11                          | 2013     |
-| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI \[29\]     | 1.10                          | 2008     |
-| [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.6                           | 2007     |
-| [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.8.2                         | 2010     |
-| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 1.10                          | 2010     |
-| [Numark N4](Numark%20N4)                                                                           | discontinued       | 4 deck all-in-one                       | yes                   | yes              | MIDI            | 1.10                          | 2012     |
-| [Numark NS7](Numark%20NS7)                                                                         | discontinued       | 2 deck all-in-one with motorized wheels | yes                   | yes              | MIDI            | 1.9                           | 2009     |
-| [Numark V7](Numark%20V7)                                                                           | discontinued       | 2 deck motorized wheel                  | yes                   | no               | MIDI            | 1.10                          | 2010     |
-| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued       | CD player                               | no                    | N/A              | MIDI or HID     | 1.8.2 (MIDI)                  | 2010     |
-| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | discontinued       | CD player                               | yes                   | no               | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2010     |
-| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | discontinued       | CD player                               | yes                   | no               | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2009     |
-| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | discontinued       | 2 deck\[30\] all-in-one                 | yes                   | no               | MIDI            | 2.0                           | 2014     |
-| [Pioneer DDJ-SX](Pioneer%20DDJ-SX)                                                                 | discontinued       | 4 deck all-in-one controller/mixer      | yes                   | yes              | MIDI            | 2.1                           | 2012     |
-| [Reloop Beatmix 2](Reloop%20Beatmix%202)                                                           | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 2.1\[31\]                     | 2014     |
-| [Reloop Beatmix 4](Reloop%20Beatmix%204)                                                           | discontinued       | 4 deck all-in-one                       | yes                   | no               | MIDI            | 2.1\[32\]                     | 2014     |
-| [Reloop Beatpad](Reloop%20Beatpad)                                                                 | discontinued       | 2 deck all-in-one                       | yes                   | yes              | MIDI            | 2.0                           | 2014     |
-| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.8                           | 2009     |
-| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued       | 2 deck all-in-one                       | yes                   | yes              | MIDI \[33\]     | 1.8                           | 2009     |
-| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)                                                     | discontinued       | 2 deck\[34\] all-in-one                 | yes                   | yes              | MIDI \[35\]     | 2.1\[36\]                     | 2011     |
-| [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued       | 2 deck\[37\] all-in-one                 | yes                   | yes              | MIDI            | 1.11                          | 2012     |
-| [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | discontinued       | 4 deck all-in-one                       | yes                   | yes              | MIDI            | 1.11                          | 2012     |
-| [Tascam US-428](Tascam%20US-428)                                                                   | discontinued       | mixing console                          | yes                   | no               | MIDI            | 1.6.2                         | 2001     |
-| [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued       | 2 deck all-in-one                       | no                    | N/A              | MIDI            | 1.6                           | 2007     |
-| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued       | 2 deck\[38\] all-in-one                 | yes                   | no               | MIDI            | 2.0                           | 2011     |
-| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued       | 2 deck all-in-one                       | yes                   | yes              | MIDI            | 1.11                          | 2008     |
-| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 1.9                           | 2010     |
-| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued       | 2 deck all-in-one                       | yes                   | no               | MIDI            | 1.9                           | 2009     |
+| Device                                                                                             | Price (USD) \[11\] | Description                             | Integrated audio interface | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
+| -------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------- | -------------------------- | ---------------- | --------------- | ----------------------------- | -------- |
+| [Numark DJ2GO](Numark%20DJ2GO)                                                                     | $60                | basic 2 deck                            | no                         | N/A              | MIDI            | 1.10                          | 2011     |
+| [Korg nanoKONTROL 2](Korg%20nanoKONTROL%202)                                                       | $60                | miscellaneous                           | no                         | N/A              | MIDI            | 1.11                          | 2011     |
+| [Akai LPD8](Akai%20LPD8)                                                                           | $70                | miscellaneous                           | no                         | N/A              | MIDI            | 1.10.1                        | 2010     |
+| [Novation Launchpad Mini](Novation%20Launchpad%20Mini)                                             | $75                | pad grid                                | no                         | N/A              | MIDI            | 2.0                           | 2013     |
+| [Novation Dicer](Novation%20Dicer)                                                                 | $100 \[12\]        | pads for use with turntables            | no                         | N/A              | MIDI            | 1.10                          | 2010     |
+| [Hercules DJ Control Instinct S](Hercules%20DJ%20Control%20Instinct)                               | $100               | basic 2 deck                            | yes                        | no               | MIDI            | 1.10.1                        | 2015     |
+| [Novation Launchpad Mk2](Novation%20Launchpad%20Mk2)                                               | $150               | pad grid                                | no                         | N/A              | MIDI            | 2.1\[13\]                     | 2015     |
+| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150               | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 2.1\[14\]                     | 2015     |
+| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200               | 2 deck \[15\] all-in-one                | yes                        | no               | MIDI            | 2.1\[16\]                     | 2013     |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200               | 2 deck all-in-one                       | yes                        | no               | MIDI            | 2.1\[17\]                     | 2015     |
+| [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250               | miscellaneous                           | no                         | N/A              | MIDI            | 1.11                          | 2012     |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250               | 2 deck\[18\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2015     |
+| [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250               | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2011     |
+| [Denon MC4000](Denon%20MC4000)                                                                     | $400               | 2 deck controller and mixer             | yes                        | yes              | MIDI            | 2.1\[19\]                     | 2015     |
+| [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700               | 4 deck all-in-one                       | yes                        | yes              | MIDI            | 2.0                           | 2015     |
+| [Akai MPD24](Akai%20MPD24)                                                                         | discontinued       | miscellaneous                           | no                         | N/A              | MIDI            | 1.8                           | 2007     |
+| [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.11                          | 2006     |
+| [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued       | CD player                               | no                         | N/A              | MIDI            | 1.10                          | 2010     |
+| [Behringer BCD3000](Behringer%20BCD3000)                                                           | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.6                           | 2007     |
+| [Behringer CMD Micro](Behringer%20CMD%20Micro)                                                     | discontinued       | basic 2 deck                            | no                         | N/A              | MIDI            | 2.1\[20\]                     | 2013     |
+| [Denon SC2000](Denon%20SC2000)                                                                     | discontinued       | 1 deck                                  | no                         | N/A              | MIDI            | 1.8                           | 2010     |
+| [DJ Tech CDJ-101](DJ%20Tech%20CDJ-101)                                                             | discontinued       | 2 deck jog wheel                        | no                         | N/A              | MIDI            | 1.11                          | 2011     |
+| [DJ Tech DJM-101](DJ%20Tech%20DJM-101)                                                             | discontinued       | 2 deck mixer                            | no                         | N/A              | MIDI            | 1.11                          | 2011     |
+| [DJ Tech iMix Reload](DJ%20Tech%20iMix%20Reload)                                                   | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.10                          | 2009     |
+| [DJ Tech Kontrol One](DJ%20Tech%20Kontrol%20One)                                                   | discontinued       | 4 decks                                 | no                         | N/A              | MIDI            | 1.11                          | 2009     |
+| [DJ Tech Mixer One](DJ%20Tech%20Mixer%20One)                                                       | discontinued       | 2 deck mixer                            | no                         | N/A              | MIDI            | 1.10.1                        | 2009     |
+| [eks Otus](eks%20Otus)                                                                             | discontinued       | 1 turntable + 2 deck mixer              | yes                        | no               | HID             | 1.11                          | 2008     |
+| [Electrix Tweaker](Electrix%20Tweaker)                                                             | discontinued       | 2 deck\[21\] without jog wheels         | no                         | N/A              | MIDI            | 2.0                           | 2012     |
+| [Evolution X-Session](Evolution%20X-Session)                                                       | discontinued       | knobs + crossfader                      | no                         | N/A              | MIDI            | 1.6                           | 2006     |
+| [FaderFox DJ2](FaderFox%20DJ2)                                                                     | discontinued       | 2 deck mixer                            | no                         | N/A              | MIDI            | 1.6                           | 2006     |
+| [Gemini FirstMix](Gemini%20FirstMix)                                                               | discontinued       | basic 2 deck                            | no                         | N/A              | MIDI            | 1.11                          | 2011     |
+| [Kontrol DJ KDJ500](Kontrol%20DJ%20KDJ500)                                                         | discontinued       | basic 2 deck                            | no                         | N/A              | MIDI            | 1.10                          | 2003     |
+| [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued       | 2 deck mixer                            | no                         | N/A              | MIDI            | 1.8.2                         | 2009     |
+| [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 1.11                          | 2012     |
+| [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.10.1                        | 2012     |
+| [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI \[22\]     | 1.7                           | 2004     |
+| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued       | 2 deck\[23\] all-in-one                 | yes                        | yes              | MIDI \[24\]     | 1.11                          | 2010     |
+| [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued       | 2 deck all-in-one                       | yes                        | no               | HID             | 1.11                          | 2003     |
+| [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued       | 2 deck all-in-one                       | yes                        | no               | USB Bulk        | 1.8                           | 2010     |
+| [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued       | 2 deck all-in-one                       | no                         | N/A              | HID             | 1.11                          | 2006     |
+| [Hercules DJ Control Steel](Hercules%20PC%20DJ%20Console)                                          | discontinued       | 2 deck all-in-one                       | no                         | N/A              | HID             | 1.11                          | 2009     |
+| [Ion Discover DJ](Ion%20Discover%20DJ)                                                             | discontinued       | basic 2 deck                            | no                         | N/A              | MIDI            | 1.8                           | 2009     |
+| [M-Audio Xponent](M-Audio%20Xponent)                                                               | discontinued       | 2 deck all-in-one                       | yes                        | N/A              | MIDI            | 1.6                           | 2007     |
+| [Mixman DM2](Mixman%20DM2)                                                                         | discontinued       | 2 decks                                 | no                         | N/A              | MIDI \[25\]     | 1.7                           | 2001     |
+| [Mixvibes U-Mix Control 2](Mixvibes%20U-Mix%20Control%202%20Pro)                                   | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.10.1                        | 2011     |
+| [Mixvibes U-Mix Control 2 Pro](Mixvibes%20U-Mix%20Control%202%20Pro)                               | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 1.11                          | 2011     |
+| [Novation Launchpad Mk1](Novation%20Launchpad%20Mk1)                                               | discontinued       | pad grid                                | no                         | N/A              | MIDI \[26\]     | 1.11, 2.1\[27\]               | 2009     |
+| [Novation Twitch](Novation%20Twitch)                                                               | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 2.1\[28\]                     | 2011     |
+| [Numark Mixtrack Pro II](Numark%20Mixtrack%20Pro%20II)                                             | discontinued       | 2 deck all-in-one                       | yes                        | N/A              | MIDI            | 1.11                          | 2013     |
+| [Numark Omni Control](Numark%20Omni%20Control)                                                     | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI \[29\]     | 1.10                          | 2008     |
+| [Numark Total Control](Numark%20Total%20Control)                                                   | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.6                           | 2007     |
+| [Numark Mixtrack](Numark%20Mixtrack)                                                               | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.8.2                         | 2010     |
+| [Numark Mixtrack Pro](Numark%20Mixtrack%20Pro)                                                     | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 1.10                          | 2010     |
+| [Numark N4](Numark%20N4)                                                                           | discontinued       | 4 deck all-in-one                       | yes                        | yes              | MIDI            | 1.10                          | 2012     |
+| [Numark NS7](Numark%20NS7)                                                                         | discontinued       | 2 deck all-in-one with motorized wheels | yes                        | yes              | MIDI            | 1.9                           | 2009     |
+| [Numark V7](Numark%20V7)                                                                           | discontinued       | 2 deck motorized wheel                  | yes                        | no               | MIDI            | 1.10                          | 2010     |
+| [Pioneer CDJ-350](Pioneer%20CDJ-350)                                                               | discontinued       | CD player                               | no                         | N/A              | MIDI or HID     | 1.8.2 (MIDI)                  | 2010     |
+| [Pioneer CDJ-850](Pioneer%20CDJ-850)                                                               | discontinued       | CD player                               | yes                        | no               | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2010     |
+| [Pioneer CDJ-2000](Pioneer%20CDJ-2000)                                                             | discontinued       | CD player                               | yes                        | no               | MIDI or HID     | 1.10 (MIDI), 1.11 (HID)       | 2009     |
+| [Pioneer DDJ-SB](Pioneer%20DDJ-SB)                                                                 | discontinued       | 2 deck\[30\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2014     |
+| [Pioneer DDJ-SX](Pioneer%20DDJ-SX)                                                                 | discontinued       | 4 deck all-in-one controller/mixer      | yes                        | yes              | MIDI            | 2.1                           | 2012     |
+| [Reloop Beatmix 2](Reloop%20Beatmix%202)                                                           | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 2.1\[31\]                     | 2014     |
+| [Reloop Beatmix 4](Reloop%20Beatmix%204)                                                           | discontinued       | 4 deck all-in-one                       | yes                        | no               | MIDI            | 2.1\[32\]                     | 2014     |
+| [Reloop Beatpad](Reloop%20Beatpad)                                                                 | discontinued       | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 2.0                           | 2014     |
+| [Reloop Digital Jockey 2 Controller Edition](Reloop%20Digital%20Jockey%202%20Controller%20Edition) | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.8                           | 2009     |
+| [Reloop Digital Jockey 2 Master Edition](Reloop%20Digital%20Jockey%202%20Master%20Edition)         | discontinued       | 2 deck all-in-one                       | yes                        | yes              | MIDI \[33\]     | 1.8                           | 2009     |
+| [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)                                                     | discontinued       | 2 deck\[34\] all-in-one                 | yes                        | yes              | MIDI \[35\]     | 2.1\[36\]                     | 2011     |
+| [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued       | 2 deck\[37\] all-in-one                 | yes                        | yes              | MIDI            | 1.11                          | 2012     |
+| [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | discontinued       | 4 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2012     |
+| [Tascam US-428](Tascam%20US-428)                                                                   | discontinued       | mixing console                          | yes                        | no               | MIDI            | 1.6.2                         | 2001     |
+| [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued       | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 1.6                           | 2007     |
+| [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued       | 2 deck\[38\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2011     |
+| [Vestax VCI-300](Vestax%20VCI-300)                                                                 | discontinued       | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2008     |
+| [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 1.9                           | 2010     |
+| [Vestax Spin](Vestax%20Spin)                                                                       | discontinued       | 2 deck all-in-one                       | yes                        | no               | MIDI            | 1.9                           | 2009     |
 
 \</sortable\>
 
@@ -199,10 +200,10 @@ but have been mapped to Mixxx anyway.
 
 \<sortable 2=numeric\>
 
-| Device                                 | Price (USD) | Description             | Integrated sound card | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
-| -------------------------------------- | ----------- | ----------------------- | --------------------- | ---------------- | --------------- | ----------------------------- | -------- |
-| [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                    | N/A              | HID             | 1.11                          | 2006     |
-| [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                    | N/A              | HID             | 1.11                          | 2006     |
+| Device                                 | Price (USD) | Description             | Integrated audio interface | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
+| -------------------------------------- | ----------- | ----------------------- | -------------------------- | ---------------- | --------------- | ----------------------------- | -------- |
+| [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                         | N/A              | HID             | 1.11                          | 2006     |
+| [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                         | N/A              | HID             | 1.11                          | 2006     |
 
 \</sortable\>
 
@@ -392,10 +393,11 @@ MIDI.
 ## Splitter cables
 
 Splitter cables are **the cheapest way** to get two separate sound
-outputs from your computer. These plug into the onboard sound card built
-into computer motherboards and split the stereo signal into two separate
-mono signals. However, onboard sound cards are not good quality, and you
-lose the stereo effect of hearing different sounds arranged in space.
+outputs from your computer. These plug into the onboard audio interface
+built into computer motherboards and split the stereo signal into two
+separate mono signals. However, onboard audio interfaces are not good
+quality, and you lose the stereo effect of hearing different sounds
+arranged in space.
 
 Devices marketed as "headphone splitter" instead of DJ splitters
 duplicate one stereo signal in two jacks. These cannot be used for
@@ -413,47 +415,47 @@ Available DJ splitter cables:
     Cable](https://griffintechnology.com/us/products/audio/dj-accessories/dj-cable):
     $20
 
-## Sound cards
+## Audio interfaces
 
 To be able to hear the next track you want to mix in before your
 audience hears it, you need two separate sound outputs. Most computers
-come with a sound card built into the motherboard with only 1 stereo
-1/8“ headphone output (2 mono channels). Onboard sound cards built
-into computers generally have bad sound quality and may pick up
+come with an audio interface built into the motherboard with only 1
+stereo 1/8“ headphone output (2 mono channels). Onboard audio interfaces
+built into computers generally have bad sound quality and may pick up
 interference from other devices in the computer, especially the charger
-or power supply. **It is recommended to use one sound card with at least
-4 mono output channels (2 stereo channels).** For vinyl control, it is
-recommended to use a sound card with phono preamplifiers.
+or power supply. **It is recommended to use one audio interface with at
+least 4 mono output channels (2 stereo channels).** For vinyl control,
+it is recommended to use an audio interface with phono preamplifiers.
 
 ### Compatibility
 
-As stated above, Mixxx can use any sound card that your OS has a driver
-to use. All USB sound cards listed in the table below work with Windows,
-macOS, and Linux.
+As stated above, Mixxx can use any audio interface that your OS has a
+driver to use. All USB audio interfaces listed in the table below work
+with Windows, macOS, and Linux.
 
-Thunderbolt sound cards can operate at lower latencies than USB or
-Firewire sound cards, but are generally only compatible with macOS.
+Thunderbolt audio interfaces can operate at lower latencies than USB or
+Firewire audio interfaces, but are generally only compatible with macOS.
 
 ### Sound card considerations
 
-#### Stand-alone sound cards versus sound cards integrated with controllers or mixers
+#### Stand-alone audio interfaces versus audio interfaces integrated with controllers or mixers
 
 Many DJ
-[\#controllers](#controllers)-have-a-4-output-sound-card-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[sound
-card](#USB-sound-cards) plus a controller because it only requires one
-device with one USB cable. However, stand-alone sound cards are
-generally higher quality than those built into controllers (except for
-the cheapest stand-alone sound cards).
+[\#controllers](#controllers)-have-a-4-output-audio-interface-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[audio
+interface](#USB-audio-interfaces) plus a controller because it only
+requires one device with one USB cable. However, stand-alone audio
+interfaces are generally higher quality than those built into
+controllers (except for the cheapest stand-alone audio interfaces).
 
-[Some DJ mixers](#Mixers-with-sound-cards) also include built-in USB
-sound cards. These can be used to send Mixxx's unmixed Deck 1-4 outputs
-to the external mixer. This is more convenient than having a separate
-device plugged into a mixer. Most DJ mixers have phono preamplifiers,
-allowing turntables to be plugged into them for timecode vinyl control
-(DVS). If the mixer is a digital mixer, the sound quality would be
-better using a sound card built into the mixer than plugging in a
-separate sound card because it would skip converting the signal from
-digital to analog and back again.
+[Some DJ mixers](#Mixers-with-audio-interfaces) also include built-in
+USB audio interfaces. These can be used to send Mixxx's unmixed Deck 1-4
+outputs to the external mixer. This is more convenient than having a
+separate device plugged into a mixer. Most DJ mixers have phono
+preamplifiers, allowing turntables to be plugged into them for timecode
+vinyl control (DVS). If the mixer is a digital mixer, the sound quality
+would be better using an audio interface built into the mixer than
+plugging in a separate audio interface because it would skip converting
+the signal from digital to analog and back again.
 
 #### Vinyl control, microphones, and preamplifiers
 
@@ -461,59 +463,63 @@ If you want to use [vinyl
 control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
 sometimes referred to as a Digital Vinyl System (DVS), it is best to
 have phono preamplifiers (one for each deck) somewhere between your
-turntable and sound card to boost the turntable's phono level signal to
-line level. Mixxx can amplify phono level signals in software, but it is
-better to do it in hardware. The phono preamp can be in the turntable,
-in the sound card, or a stand alone device. Most sound cards do not have
-phono preamps; these are generally found on sound cards specifically
-made for controlling DJ software with timecode vinyl. [\#Mixers with
-sound cards](#Mixers%20with%20sound%20cards) have phono preamps on their
-deck inputs, but not necessarily on every deck input. Many higher-end
-all-in-one controllers also include sound cards with phono preamps.
-Refer to the tables below for some devices with phono preamps.
+turntable and audio interface to boost the turntable's phono level
+signal to line level. Mixxx can amplify phono level signals in software,
+but it is better to do it in hardware. The phono preamp can be in the
+turntable, in the audio interface, or a stand alone device. Most audio
+interfaces do not have phono preamps; these are generally found on audio
+interfaces specifically made for controlling DJ software with timecode
+vinyl. [\#Mixers with audio
+interfaces](#Mixers%20with%20audio%20interfaces) have phono preamps on
+their deck inputs, but not necessarily on every deck input. Many
+higher-end all-in-one controllers also include audio interfaces with
+phono preamps. Refer to the tables below for some devices with phono
+preamps.
 
 Turntables, microphones, and instrument pickups all output very low
 voltage signals that need to be amplified to line level by a
-preamplifier before a sound card (or most audio equipment) can
+preamplifier before an audio interface (or most audio equipment) can
 effectively work with them. Additionally, vinyl records have the [RIAA
 equalization curve](https://en.wikipedia.org/wiki/RIAA_equalization)
 applied to the recording, which needs to be undone by a phono
 preamplifier. If a device has a switch between phono, mic, or instrument
 (contact microphone) level and line level, it has a preamplifier in it.
-If you want to plug a microphone into your sound card, it will need a
-microphone preamplifier. If you want to plug an electric guitar or bass
-into your sound card, it will need an instrument preamplifier.
+If you want to plug a microphone into your audio interface, it will need
+a microphone preamplifier. If you want to plug an electric guitar or
+bass into your audio interface, it will need an instrument preamplifier.
 
 #### Connector and cable types
 
 If you are unfamiliar with professional audio equipment, read Digital DJ
 Tips' [Essential Guide to Audio Cables for
 DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
-to understand the different kinds of connectors on sound cards. It is
-better to use a sound card with balanced outputs, especially if you will
-run long cables directly into an amplifier or active speakers without
-going through a hardware mixer. Balanced signals reject interference and
-are less susceptible to ground loop hum issues (which can be a problem
-when plugging unbalanced gear into separate power sources). However,
-most venues have DJs plug into hardware DJ mixers, which typically only
-have RCA inputs (RCA cables cannot be balanced). Most home/computer
-speakers and amplifiers have RCA and/or 1/8" TRS stereo inputs. Most
-live sound mixers have balanced 1/4" TRS mono inputs. If you need to
-interconnect balanced and unbalanced gear, see [this
-guide](http://www.presonus.com/news/articles/balanced-unbalanced) from
-Presonus and [this guide](http://www.rane.com/note110.html) from Rane.
+to understand the different kinds of connectors on audio interfaces. It
+is better to use an audio interface with balanced outputs, especially if
+you will run long cables directly into an amplifier or active speakers
+without going through a hardware mixer. Balanced signals reject
+interference and are less susceptible to ground loop hum issues (which
+can be a problem when plugging unbalanced gear into separate power
+sources). However, most venues have DJs plug into hardware DJ mixers,
+which typically only have RCA inputs (RCA cables cannot be balanced).
+Most home/computer speakers and amplifiers have RCA and/or 1/8" TRS
+stereo inputs. Most live sound mixers have balanced 1/4" TRS mono
+inputs. If you need to interconnect balanced and unbalanced gear, see
+[this guide](http://www.presonus.com/news/articles/balanced-unbalanced)
+from Presonus and [this guide](http://www.rane.com/note110.html) from
+Rane.
 
 #### Number of channels
 
 Sound cards sometimes have multiple connectors for a single channel,
 resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. For example, some sound cards
-made for DJing have 4 output channels with 4 mono output connectors and
-1 stereo headphone connector. This does not mean that the sound card can
-send out 6 different signals at the same time; rather, the signal on 2
-of the mono outputs and the stereo headphone output would be the same.
-Also, many controllers have separate master and booth outputs with
-independent volume controls, but they both play the same signal.
+send or receive an independent signal. For example, some audio
+interfaces made for DJing have 4 output channels with 4 mono output
+connectors and 1 stereo headphone connector. This does not mean that the
+audio interface can send out 6 different signals at the same time;
+rather, the signal on 2 of the mono outputs and the stereo headphone
+output would be the same. Also, many controllers have separate master
+and booth outputs with independent volume controls, but they both play
+the same signal.
 
 #### Bit depth and sample rate
 
@@ -543,24 +549,25 @@ When considering specifications, higher dynamic range, higher
 signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
 (Total Harmonic Distortion + Noise; look for a more negative dB value or
 smaller percentage), and lower crosstalk (more negative dB value) are
-better. Cheap sound cards tend to not have these specifications
+better. Cheap audio interfaces tend to not have these specifications
 published.
 
-### USB sound cards
+### USB audio interfaces
 
-These devices allow a computer to output and input sound. Any sound card
-that your operating system has a driver to use can be used with Mixxx.
-All the USB sound cards in the table below are compatible with Windows,
-macOS, and Linux. It is possible to use just a sound card plus a
-keyboard & mouse to use Mixxx, but a separate [controller](#controllers)
-makes using Mixxx easier, more intuitive, and more fun.
+These devices allow a computer to output and input sound. Any audio
+interface that your operating system has a driver to use can be used
+with Mixxx. All the USB audio interfaces in the table below are
+compatible with Windows, macOS, and Linux. It is possible to use just an
+audio interface plus a keyboard & mouse to use Mixxx, but a separate
+[controller](#controllers) makes using Mixxx easier, more intuitive, and
+more fun.
 
-A sound card with at least 4 mono output channels (2 stereo pairs) is
-recommended for most uses. Refer to the [Mixxx
+An audio interface with at least 4 mono output channels (2 stereo pairs)
+is recommended for most uses. Refer to the [Mixxx
 manual](https://mixxx.org/manual/latest/chapters/setup.html) for
-details. If your sound card does not have 4 output channels, it is
-possible to use multiple sound cards. However, this increases latency
-and there may be crackling on one sound card.
+details. If your audio interface does not have 4 output channels, it is
+possible to use multiple audio interfaces. However, this increases
+latency and there may be crackling on one audio interface.
 
 Surround sound (5.1 or 7.1) cards are not recommended. They sometimes do
 signal processing in hardware or in the driver to split a stereo signal
@@ -568,17 +575,17 @@ into multiple components. It may be possible to configure them to output
 a separate master and headphone stereo signals, but it is often tricky
 to do so.
 
-This table only lists a handful of available USB sound cards that are
-currently in production and suitable for use with Mixxx. There are many
-more options available that may be better for you depending on your
+This table only lists a handful of available USB audio interfaces that
+are currently in production and suitable for use with Mixxx. There are
+many more options available that may be better for you depending on your
 input and output needs and the sound quality you can afford. You
-generally get the sound quality you pay for with sound cards.
+generally get the sound quality you pay for with audio interfaces.
 
 \<sortable 2=numeric\>
 
 | Device                                                                                                                         | Price (USD) \[43\] | Channels out | Balanced outputs | Channels in | Microphone input with direct monitoring | Phono preamp | Notes                                                                                                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------ | ---------------- | ----------- | --------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Generic USB sound cards                                                                                                        | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard sound cards. [\#Splitter cables](#Splitter%20cables) are another option in this price range.                                                                                                         |
+| Generic USB audio interfaces                                                                                                   | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard audio interfaces. [\#Splitter cables](#Splitter%20cables) are another option in this price range.                                                                                                    |
 | [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)     | $30                | 2            | no               | 2           | no                                      | yes          | Cheapest option for vinyl control, but requires using 2 of them and making [a small hardware modification](http://mixxx.org/forums/viewtopic.php?f=6&t=2438). Not to be confused with the Behringer U-Control **UCA**202 & **UCA**222, which do not have phono preamps and cannot be used for vinyl control. |
 | [Behringer U-Phoria UMC204HD](http://www.musictri.be/Categories/Behringer/Computer-Audio/Interfaces/UMC204HD/p/P0BK0)          | $80                | 4            | yes              | 2           | yes                                     | no           | Cheapest option for broadcasting with a microphone input and independent main & headphone outputs. However, it has no loopback input, so it is more complicated to configure the microphone input. There are also no sound quality measurements published.                                                   |
 | [ESI Maya 44 USB+](http://www.esi-audio.com/products/maya44usb+/)                                                              | $140               | 4            | no               | 4           | no                                      | no           | Does not have phono preamps on the inputs, but has been reported to work for vinyl control.                                                                                                                                                                                                                  |
@@ -589,37 +596,38 @@ generally get the sound quality you pay for with sound cards.
 
 \</sortable\>
 
-### Mixers with sound cards
+### Mixers with audio interfaces
 
 These are devices that can mix audio from different sources without
-needing a computer. They also have a built-in USB sound card to connect
-directly to a computer without needing a separate sound card. They tend
-to be much more expensive than comparable [\#controllers](#controllers)
-and [\#USB sound cards](#USB%20sound%20cards). They are often found
-installed in venues for multiple DJs to use.
+needing a computer. They also have a built-in USB audio interface to
+connect directly to a computer without needing a separate audio
+interface. They tend to be much more expensive than comparable
+[\#controllers](#controllers) and [\#USB audio
+interfaces](#USB%20audio%20interfaces). They are often found installed
+in venues for multiple DJs to use.
 
 Each conversion of a signal between digital and analog forms adds noise
 and distortion. So, if the mixer's processing is done digitally, it is
-best to use the sound card built into a mixer (or a digital input if the
-mixer has one). When analog outputs of a separate sound card are plugged
-into a digital mixer, the sound card converts the digital signals to
-analog, then the mixer converts the analog signals back to digital for
-its processing. If the input to the mixer is digital, those two
-conversions do not occur.
+best to use the audio interface built into a mixer (or a digital input
+if the mixer has one). When analog outputs of a separate audio interface
+are plugged into a digital mixer, the audio interface converts the
+digital signals to analog, then the mixer converts the analog signals
+back to digital for its processing. If the input to the mixer is
+digital, those two conversions do not occur.
 
-However, some of these mixers are analog mixers and the built in sound
-card converts the digital signals from the computer to analog for the
-mixer's analog processing. In that case, using the mixer's built in
-sound card may or may not sound better than a separate sound card,
-depending on the quality of each of the sound cards.
+However, some of these mixers are analog mixers and the built in audio
+interface converts the digital signals from the computer to analog for
+the mixer's analog processing. In that case, using the mixer's built in
+audio interface may or may not sound better than a separate audio
+interface, depending on the quality of each of the audio interfaces.
 
 Many of these mixers also send MIDI signals to the computer over USB,
 which could be mapped to control Mixxx.
 
 Most of these have a single USB port, but some have two. Two USB ports
-allows two different DJs to use the mixer's sound card at the same time
-with their own computer for collaborative DJ sets and easy, seamless
-transitions between DJs. \<sortable 2=numeric\>
+allows two different DJs to use the mixer's audio interface at the same
+time with their own computer for collaborative DJ sets and easy,
+seamless transitions between DJs. \<sortable 2=numeric\>
 
 | Device                                                                                                                      | Price (USD) \[44\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
@@ -646,32 +654,34 @@ transitions between DJs. \<sortable 2=numeric\>
 
 ## Microphones and broadcasting
 
-Mixxx can work with any microphone that you can plug into a sound card
-that your operating system supports. To hear yourself on the microphone
-without noticeable latency, a sound card that supports direct monitoring
-is recommended. To preview the music you will play next in headphones
-and have microphone input, a single sound card with 4 output channels is
-recommended. The sound cards built into computers meet neither of these
-criteria, so a dedicated sound card is recommended. Some options are
-listed in the [\#USB sound cards](#USB%20sound%20cards) table above. You
-do not need an external mixer, and using one is generally discouraged
-because it adds unnecessary noise and distortion to your signal chain.
+Mixxx can work with any microphone that you can plug into an audio
+interface that your operating system supports. To hear yourself on the
+microphone without noticeable latency, an audio interface that supports
+direct monitoring is recommended. To preview the music you will play
+next in headphones and have microphone input, a single audio interface
+with 4 output channels is recommended. The audio interfaces built into
+computers meet neither of these criteria, so a dedicated audio interface
+is recommended. Some options are listed in the [\#USB audio
+interfaces](#USB%20audio%20interfaces) table above. You do not need an
+external mixer, and using one is generally discouraged because it adds
+unnecessary noise and distortion to your signal chain.
 
 USB microphones are not recommended. These are devices that combine a
-microphone with a USB sound card with one microphone input channel. Many
-USB microphones have a headphone jack for direct monitoring the input,
-but the computer cannot output to this jack, so you would only hear your
-voice, but not the music from Mixxx. Again, a dedicated sound card that
-supports direct monitoring is recommended.
+microphone with a USB audio interface with one microphone input channel.
+Many USB microphones have a headphone jack for direct monitoring the
+input, but the computer cannot output to this jack, so you would only
+hear your voice, but not the music from Mixxx. Again, a dedicated audio
+interface that supports direct monitoring is recommended.
 
 The microphone inputs on DJ controllers, particularly cheaper DJ
 controllers, is often mixed directly with the master output of the DJ
-controllers' sound card in hardware, but not digitized and sent to the
-computer. If this is the case, it is not possible to get the microphone
-signal into Mixxx for broadcasting or recording. Some controllers do
-make the microphone input available to the computer though. Check the
-controllers' wiki page linked in the tables above for information about
-this and search online for information about any particular controller.
+controllers' audio interface in hardware, but not digitized and sent to
+the computer. If this is the case, it is not possible to get the
+microphone signal into Mixxx for broadcasting or recording. Some
+controllers do make the microphone input available to the computer
+though. Check the controllers' wiki page linked in the tables above for
+information about this and search online for information about any
+particular controller.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

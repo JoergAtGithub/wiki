@@ -54,7 +54,7 @@ controllers do not need any special drivers. Most DJ controllers are
 standards compliant MIDI controllers and so are these in the tables
 below. Exceptions from the standard are noted in the tables below.
 
-#### Sound cards
+#### Audio interfaces
 
 Controllers that have integrated audio interfaces often have a USB Audio
 Class compliant audio interface. Sound cards that aren't USB Audio Class
@@ -436,122 +436,6 @@ with Windows, macOS, and Linux.
 Thunderbolt audio interfaces can operate at lower latencies than USB or
 Firewire audio interfaces, but are generally only compatible with macOS.
 
-### Sound card considerations
-
-#### Stand-alone audio interfaces versus audio interfaces integrated with controllers or mixers
-
-Many DJ
-[\#controllers](#controllers)-have-a-4-output-audio-interface-built-into-them.-This-is-more-convenient-to-transport-and-set-up-than-a-stand-alone-[audio
-interface](#USB-audio-interfaces) plus a controller because it only
-requires one device with one USB cable. However, stand-alone audio
-interfaces are generally higher quality than those built into
-controllers (except for the cheapest stand-alone audio interfaces).
-
-[Some DJ mixers](#Mixers-with-audio-interfaces) also include built-in
-USB audio interfaces. These can be used to send Mixxx's unmixed Deck 1-4
-outputs to the external mixer. This is more convenient than having a
-separate device plugged into a mixer. Most DJ mixers have phono
-preamplifiers, allowing turntables to be plugged into them for timecode
-vinyl control (DVS). If the mixer is a digital mixer, the sound quality
-would be better using an audio interface built into the mixer than
-plugging in a separate audio interface because it would skip converting
-the signal from digital to analog and back again.
-
-#### Vinyl control, microphones, and preamplifiers
-
-If you want to use [vinyl
-control](http://mixxx.org/manual/latest/chapters/vinyl_control.html),
-sometimes referred to as a Digital Vinyl System (DVS), it is best to
-have phono preamplifiers (one for each deck) somewhere between your
-turntable and audio interface to boost the turntable's phono level
-signal to line level. Mixxx can amplify phono level signals in software,
-but it is better to do it in hardware. The phono preamp can be in the
-turntable, in the audio interface, or a stand alone device. Most audio
-interfaces do not have phono preamps; these are generally found on audio
-interfaces specifically made for controlling DJ software with timecode
-vinyl. [\#Mixers with audio
-interfaces](#Mixers%20with%20audio%20interfaces) have phono preamps on
-their deck inputs, but not necessarily on every deck input. Many
-higher-end all-in-one controllers also include audio interfaces with
-phono preamps. Refer to the tables below for some devices with phono
-preamps.
-
-Turntables, microphones, and instrument pickups all output very low
-voltage signals that need to be amplified to line level by a
-preamplifier before an audio interface (or most audio equipment) can
-effectively work with them. Additionally, vinyl records have the [RIAA
-equalization curve](https://en.wikipedia.org/wiki/RIAA_equalization)
-applied to the recording, which needs to be undone by a phono
-preamplifier. If a device has a switch between phono, mic, or instrument
-(contact microphone) level and line level, it has a preamplifier in it.
-If you want to plug a microphone into your audio interface, it will need
-a microphone preamplifier. If you want to plug an electric guitar or
-bass into your audio interface, it will need an instrument preamplifier.
-
-#### Connector and cable types
-
-If you are unfamiliar with professional audio equipment, read Digital DJ
-Tips' [Essential Guide to Audio Cables for
-DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
-to understand the different kinds of connectors on audio interfaces. It
-is better to use an audio interface with balanced outputs, especially if
-you will run long cables directly into an amplifier or active speakers
-without going through a hardware mixer. Balanced signals reject
-interference and are less susceptible to ground loop hum issues (which
-can be a problem when plugging unbalanced gear into separate power
-sources). However, most venues have DJs plug into hardware DJ mixers,
-which typically only have RCA inputs (RCA cables cannot be balanced).
-Most home/computer speakers and amplifiers have RCA and/or 1/8" TRS
-stereo inputs. Most live sound mixers have balanced 1/4" TRS mono
-inputs. If you need to interconnect balanced and unbalanced gear, see
-[this guide](http://www.presonus.com/news/articles/balanced-unbalanced)
-from Presonus and [this guide](http://www.rane.com/note110.html) from
-Rane.
-
-#### Number of channels
-
-Sound cards sometimes have multiple connectors for a single channel,
-resulting in more connectors than channels. So, not every connector can
-send or receive an independent signal. For example, some audio
-interfaces made for DJing have 4 output channels with 4 mono output
-connectors and 1 stereo headphone connector. This does not mean that the
-audio interface can send out 6 different signals at the same time;
-rather, the signal on 2 of the mono outputs and the stereo headphone
-output would be the same. Also, many controllers have separate master
-and booth outputs with independent volume controls, but they both play
-the same signal.
-
-#### Bit depth and sample rate
-
-Most music is published with a bit depth of 16 bits at a sample rate of
-44.1 kHz because this is all that is needed to store all the detail of
-music in digital form.
-
-Bit depth determines the possible dynamic range of the signal. 16 bits
-is more than enough for playing back music. While 24 bits is helpful for
-recording, [it is useless for
-playback](http://www.sonicscoop.com/2013/08/29/why-almost-everything-you-thought-you-knew-about-bit-depth-is-probably-wrong/).
-
-Half the sample rate determines the maximum frequency that can be
-represented by the signal. Humans generally can't hear frequencies above
-20 kHz, so a sampling rate of 44.1 kHz, representing a maximum frequency
-of 22.05 kHz, is fine for playback. Higher sample rates like 88.2 kHz
-and 96 kHz can be helpful to reduce aliasing distortion when recording,
-but have no benefit for playback and make your computer work harder.
-
-For a more thorough and technical explanation of why 16 bits at 44.1 kHz
-is all that is needed for playback, read [24/192 Music Downloads Are
-Very Silly Indeed](http://xiph.org/~xiphmont/demo/neil-young.html).
-
-#### Specifications
-
-When considering specifications, higher dynamic range, higher
-signal-to-noise ratio (SNR), higher maximum output level, lower THD+N
-(Total Harmonic Distortion + Noise; look for a more negative dB value or
-smaller percentage), and lower crosstalk (more negative dB value) are
-better. Cheap audio interfaces tend to not have these specifications
-published.
-
 ### USB audio interfaces
 
 These devices allow a computer to output and input sound. Any audio
@@ -651,37 +535,6 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 | [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[51\] |
 
 \</sortable\>
-
-## Microphones and broadcasting
-
-Mixxx can work with any microphone that you can plug into an audio
-interface that your operating system supports. To hear yourself on the
-microphone without noticeable latency, an audio interface that supports
-direct monitoring is recommended. To preview the music you will play
-next in headphones and have microphone input, a single audio interface
-with 4 output channels is recommended. The audio interfaces built into
-computers meet neither of these criteria, so a dedicated audio interface
-is recommended. Some options are listed in the [\#USB audio
-interfaces](#USB%20audio%20interfaces) table above. You do not need an
-external mixer, and using one is generally discouraged because it adds
-unnecessary noise and distortion to your signal chain.
-
-USB microphones are not recommended. These are devices that combine a
-microphone with a USB audio interface with one microphone input channel.
-Many USB microphones have a headphone jack for direct monitoring the
-input, but the computer cannot output to this jack, so you would only
-hear your voice, but not the music from Mixxx. Again, a dedicated audio
-interface that supports direct monitoring is recommended.
-
-The microphone inputs on DJ controllers, particularly cheaper DJ
-controllers, is often mixed directly with the master output of the DJ
-controllers' audio interface in hardware, but not digitized and sent to
-the computer. If this is the case, it is not possible to get the
-microphone signal into Mixxx for broadcasting or recording. Some
-controllers do make the microphone input available to the computer
-though. Check the controllers' wiki page linked in the tables above for
-information about this and search online for information about any
-particular controller.
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

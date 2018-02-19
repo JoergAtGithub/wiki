@@ -337,7 +337,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td><strong><a href="Roland DJ-202">Roland DJ-202</a></strong></td>
+<td><a href="Roland DJ-202">Roland DJ-202</a></td>
 <td>$300</td>
 <td>2 deck[42] all-in-one</td>
 <td>yes</td>

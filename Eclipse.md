@@ -4,8 +4,8 @@ Just some notes on how to setup Eclipse IDE for developing on Mixxx.
 
 # Setup mixxx source
 
-First you have to setup the Mixxx source and manage to compile it on
-command line, as outlined here:
+First you have to setup the Mixxx source and manage to compile it via
+the command line, as outlined here:
 [compiling\_on\_linux](compiling_on_linux) or
 [compiling\_on\_os\_x](compiling_on_os_x) or
 [compiling\_on\_windows](compiling_on_windows)
@@ -16,16 +16,16 @@ Of course, install Eclipse and CDT (C/C++ developer toolkit). Either
 simply from their homepage or use the packages for your operating
 system.
 
-It is the best to install the ready to use setup **"Eclipse IDE for
-C/C++ Developers"**:
+It is best to install the ready to use setup **"Eclipse IDE for C/C++
+Developers"**:
 
   - <http://www.eclipse.org/downloads/eclipse-packages/>
 
-Or you might install the CDT into your exiting eclipse
+Or you might install the CDT into your existing eclipse
 
   - <http://www.eclipse.org/cdt/downloads.php>
 
-Ubuntu Packages to Install (but possible outdated) would be:
+Ubuntu Packages to install (possibly outdated) would be:
 
   - eclipse-cdt
   - eclipse-pydev
@@ -37,21 +37,39 @@ For Eclipse Oxygen
   - Start Eclipse.
   - File -\> New -\> Makefile Project with Existing Code (or do import
     as described above).
-  - Set Project name to your mixxx branch name e.g. `mixxx`.
-  - Browse to your mixxx folder e.g. `~/workspace/mixxx/mixxx`.
+  - Set Project Name to your mixxx branch name e.g. `mixxx`.
+  - Browse to your Mixxx folder e.g. `~/workspace/mixxx/mixxx`.
   - Check only C++ language (uncheck C).
-  - Select Toolchain for indexer setting = `Linux GCC` (in case of Linux
-    host).
+  - Select Toolchain for indexer setting = `Linux GCC` (this would be
+    for a Linux host, substitute your OS as applicable).
   - Finish.
   - Right click on the new project in Project Explorer -\> Properties
     -\> C/C++ Build (if Project Explorer is not visible, go to Window
     -\> Show View -\> Project Explorer).
   - Uncheck "Use default build command".
-  - Build command = `scons`
+  - Build command = `scons stdlib=libc++ hss1394=0 mad=0 faad=0
+    coreaudio=1 verbose=0 qt5=1`
   - Switch to Behavior tab.
-  - Built: remove `all`.
+  - Builx: remove `all`.
   - Clean: remove `clean` and set instead `-c`.
   - Check "Enable parallel builds".
+  - Expand C/C++ Build -\> Environment
+  - Add the following Variable-Value pairs:
+
+<!-- end list -->
+
+``` 
+CFLAGS    | -I/usr/local/include -I/usr/local/include/opus  
+CXXFLAGS  | -I/usr/local/include -I/usr/local/include/opus  
+LDFLAGS   | -L/usr/local/lib                                
+QTDIR     | /usr/local/Cellar/qt5/%VERSION%                 
+```
+
+  - Replace %VERSION% with the folder name for your version of Qt, e.g.
+    5.10.1 
+  - You may also have to manually add to the system PATH setting to
+    include, for example, /usr/local/bin and /usr/local/include. Do this
+    the same way as the above. Separate individual paths with colons.
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).
@@ -75,7 +93,7 @@ icon).
   - Arguments tab 
   - Program arguments = `--resourcePath res --developer
     --debugAssertBreak`
-  - You `.gdbinit` should be setup before, but that's an other story.
+  - Your `.gdbinit` should be setup before, but that's another story.
   - Sample:
     [.gedbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
   - Qt pretty printer
@@ -97,7 +115,7 @@ Some can get error "Warning \[Main\]: mixxx: cannot connect to X
 server".
 
 The general causes for this is that `DISPLAY` is not set in the
-environment. So, go to Project properies -\> C/C++ Build -\>
+environment. So, go to Project properties -\> C/C++ Build -\>
 Environment. Here you must add variable `DISPLAY` and set its value to
 `${DISPLAY}`.
 
@@ -113,7 +131,7 @@ from the scons output. After a build, you can check it at
 
 Project -\> Properties -\> C/C++ General -\> Path and Symbols
 
-by checking "Show build-in values"
+by checking "Show built-in values"
 
 If the discovering fails, you may add the required info manually:
 
@@ -145,21 +163,21 @@ If the discovering fails, you may add the required info manually:
   - Add c++11 flag:
   - Right click on the project -\> Properties -\> C/C++ General -\>
     Preprocessor Include Paths, Macros etc. -\> Providers -\> CDT GCC
-    BUild-In Compiler Settings
+    Built-In Compiler Settings
   - add -std=c++11, like this 
   - ${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD "${INPUTS}" 
 
 <!-- end list -->
 
-  - Alternative you can start with my project files (.cproject .project
-    .gdbinit) and adapt them to your
+  - Alternatively you can start with my project files (.cproject
+    .project .gdbinit) and adapt them to your
     system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>
 
 <!-- end list -->
 
   - Or merge from git@github.com:daschuer/mixxx.git
 
-After changing these settings, The index needs to be rebuild
+After changing these settings, The index needs to be rebuilt
 
 Project -\> C/C++ Index -\> Rebuild
 
@@ -167,7 +185,7 @@ Troubleshooting:
 
 The indexer preferences can be set here:
 
-Windwow -\> Preferences -\> C/C++ -\> Indexer
+Window -\> Preferences -\> C/C++ -\> Indexer
 
 You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 

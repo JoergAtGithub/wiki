@@ -463,7 +463,10 @@ This table only lists a handful of available USB audio interfaces that
 are currently in production and suitable for use with Mixxx. There are
 many more options available that may be better for you depending on your
 input and output needs and the sound quality you can afford. You
-generally get the sound quality you pay for with audio interfaces.
+generally get the sound quality you pay for with audio interfaces. The
+[Mixxx
+manual](http://mixxx-manual.readthedocs.io/en/manual-2.1.x/chapters/hardware.html#audio-interface-considerations)
+has more information to help decide on an audio interface to use.
 
 \<sortable 2=numeric\>
 

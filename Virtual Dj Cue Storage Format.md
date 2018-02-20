@@ -1,5 +1,5 @@
-Virtual DJ stores it entire library in a XML file called database.xml.
-The default location under Windows is under
+Virtual DJ stores its entire library in a XML file called database.xml.
+The default location under Windows is at
 C:\\Users\\\<username\>\\Documents\\VirtualDJ. The file format is pretty
 self-explanatory where each track or sample has the following structure:
 

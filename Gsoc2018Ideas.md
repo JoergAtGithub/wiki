@@ -89,21 +89,6 @@ copy how another program works exactly. If you do not have access to
 proprietary applications, you can search YouTube for tutorial videos and
 read the manuals of other DJ software.
 
-# Ableton Link Support
-
-[Ableton Link](https://www.ableton.com/en/link/) is a relatively new
-protocol for synchronizing music software running on multiple computers.
-It has already been adopted fairly widely by proprietary music programs
-including DJ programs, DAWs, software synthesizers, and sequencers.
-Ableton has published [documentation](https://ableton.github.io/link/)
-and [a reference C++ library](https://github.com/Ableton/link) that
-could be used to synchronize Mixxx's [Master Sync
-feature](https://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#master-sync)
-with Ableton Link compatible applications, including Mixxx running on
-another computer. Working on this project would require testing your
-changes to Mixxx for compatibility with other applications that support
-Ableton Link.
-
 # MusicBrainz Integration
 
 Mixxx uses [AcoustID](https://acoustid.org/) to identify tracks by

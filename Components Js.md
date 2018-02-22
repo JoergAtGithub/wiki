@@ -212,8 +212,8 @@ manually if necessary.
 
 The following methods (in JavaScript, methods are just object properties
 that happen to be functions) must be defined for every Component, but in
-most cases the defaults will work so you do not need to define them
-yourself:
+most cases the defaults (from the inherited prototype Component) will
+work so you do not need to define them yourself:
 
   - **input**: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)

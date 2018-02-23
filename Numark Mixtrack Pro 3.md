@@ -13,16 +13,17 @@ The Numark Mixtrack 3 and Numark Mixtrack Pro 3 are the same controller
 except that the Pro version has an integrated 4 channel output sound
 card and costs $50 more. If you use the non-Pro version, you would need
 a [splitter cable](hardware%20compatibility#splitter%20cables) or
-[separate sound card](hardware%20compatibility#sound%20cards) to be able
-to preview tracks in headphones.
+[separate audio interface](hardware%20compatibility#audio%20interfaces1)
+to be able to preview tracks in headphones.
 
 The microphone input on the Pro version is not available to the computer
 through the controller's sound card. It is mixed with the master output
 in hardware, so this controller's sound card is not suitable for
 broadcasting or recording the inputs. If you want to use the controller
 for broadcasting or recording, getting the non-Pro version with a
-separate [USB Sound Card](Hardware%20Compatibility#USB%20Sound%20Cards)
-with a microphone input is suggested.
+separate [USB audio
+interface](Hardware%20Compatibility#USB%20Audio%20Interfaces) with a
+microphone input is suggested.
 
 ## Configuration options
 

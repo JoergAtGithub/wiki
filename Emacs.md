@@ -16,8 +16,8 @@ all without the need to ever exit or close emacs.
 
 ## Warning
 
-Emacs is a really old piece of software (first release at 1976) and a
-lot of terminology used is different than what most people are used to.
+Emacs is an old piece of software (first release at 1976) and a lot of
+terminology used is different than what most people are used to.
 
 For the first many hours of usage your productivity will be extremely
 low, since you have to remember a bunch of keybindings and commands just

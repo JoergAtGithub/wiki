@@ -122,10 +122,10 @@ this wiki, please fix it.
 
 ### Getting Started
 
-  - [Bugfix Workflow](Bugfix%20Workflow) 
-  - [Using Git](Using%20Git)
   - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
     architecture
+  - [Using Git](Using%20Git)
+  - [Bugfix Workflow](Bugfix%20Workflow) 
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
   - [Bug Tracker](launchpad_bugs)

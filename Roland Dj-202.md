@@ -1,7 +1,8 @@
 # Roland DJ-202
 
 [Manufacturer's product
-page](https://www.roland.com/global/products/dj-202/)
+page](https://www.roland.com/global/products/dj-202/) [Forum
+thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=11664#p37423)
 
 The Roland DJ-202 is an all-in-one USB MIDI controller with a built in
 sound card. It has controls for 2 decks that can be toggled between

@@ -79,11 +79,11 @@ for a setup using this tool.
 ### magit
 
 [magit](https://magit.vc/) is considered to be one of the best packaged
-out there. Rumours say that some open emacs only to use this package
-(even vim users). It is a git interface that is extremely fast and
-intuitive and makes almost every task in git easier. One minor issue is
-that it can't handle big merges, since it will take forever to load each
-commit. This is still best done via terminal.
+out there. Rumours say that some open emacs just for this (even vim
+users). It is a git interface that is extremely fast and intuitive and
+makes almost every task in git easier. One minor issue is that it can't
+handle big merges, since it will take forever to load each commit. This
+is still best done via terminal.
 
 ### Debugging
 

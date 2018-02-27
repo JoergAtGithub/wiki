@@ -93,6 +93,11 @@ icon).
   - Arguments tab 
   - Program arguments = `--resourcePath res --developer
     --debugAssertBreak`
+  - Debugging in Eclipse relies on
+    [GDB](https://www.gnu.org/software/gdb/). For Mac users running OS X
+    10.9 Mavericks or later, see [this
+    article](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html)
+    about installing and setting up GDB.
   - Your `.gdbinit` should be setup before, but that's another story.
   - Sample:
     [.gdbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).

@@ -50,7 +50,7 @@ For Eclipse Oxygen
   - Build command = `scons stdlib=libc++ hss1394=0 mad=0 faad=0
     coreaudio=1 verbose=0 qt5=1`
   - Switch to Behavior tab.
-  - Builx: remove `all`.
+  - Build: remove `all`.
   - Clean: remove `clean` and set instead `-c`.
   - Check "Enable parallel builds".
   - Expand C/C++ Build -\> Environment

@@ -794,6 +794,9 @@ common-controller-scripts.js file:
   - **script.absoluteNonLinInverse**(value, low, mid, high, min, max) -
     The inverse of the above function. This is useful for sending MIDI
     values back to controllers. *New in 1.12*
+  - **script.deckFromGroup**(group) - Takes a group string for a deck
+    such as "\[Channel1\]" and returns the deck number (in this case, 1)
+    
   - **bpm.tapButton**(deck) - Call this every time the desired tap
     button is pressed. It takes the progressive average of the last 8
     taps and sets the bpm of the specified deck to that value, assuming

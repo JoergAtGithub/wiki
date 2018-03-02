@@ -93,17 +93,22 @@ icon).
   - Arguments tab 
   - Program arguments = `--resourcePath res --developer
     --debugAssertBreak`
-  - Debugging in Eclipse relies on
-    [GDB](https://www.gnu.org/software/gdb/). For Mac users running OS X
-    10.9 Mavericks or later, see [this
-    article](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html)
-    about installing and setting up GDB.
+  - Use GDB for debugging in Eclipse
+    ([GDB](https://www.gnu.org/software/gdb/)). Mac users may have more
+    luck using LLDB (see note below.)
   - Your `.gdbinit` should be setup before, but that's another story.
   - Sample:
     [.gdbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
   - Qt pretty printer
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
   - "Debug" button for run Mixxx.
+
+**Note for Mac users running OS X 10.9 Mavericks or later:** in recent
+versions of OS X, it is difficult if not impossible to get GDB working
+properly in Eclipse. If you get through the numerous steps to manually
+install GDB and create a working certificate for it, you will likely
+still run into issues such as those detailed
+[here](https://stefan.budeanu.com/mac-os-x-sierra-and-ruby-debugging-an-unhappy-marriage/).
 
 For git integration (in case of using a git clone of mixxx):
 

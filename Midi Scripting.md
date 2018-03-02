@@ -568,9 +568,9 @@ MyController.wheelTouch = function (channel, control, value, status, group) {
   //if (value === 0x7F) {  // Some wheels send 0x90 on press and release, so you need to check the value
         var alpha = 1.0/8;
         var beta = alpha/32;
-        engine.scratchEnable(MyController.currentDeck, 128, 33+1/3, alpha, beta);
+        engine.scratchEnable(deckNumber, 128, 33+1/3, alpha, beta);
     } else {    // If button up
-        engine.scratchDisable(MyController.currentDeck);
+        engine.scratchDisable(deckNumber);
     }
 }
 
@@ -593,9 +593,9 @@ MyController.wheelTurn = function (channel, control, value, status, group) {
     
     // In either case, register the movement
     if (engine.isScratching(MyController.currentDeck)) {
-        engine.scratchTick(MyController.currentDeck, newValue); // Scratch!
+        engine.scratchTick(deckNumber, newValue); // Scratch!
     } else {
-        engine.setValue('[Channel'+MyController.currentDeck+']', 'jog', newValue); // Pitch bend
+        engine.setValue('[Channel'+deckNumber+']', 'jog', newValue); // Pitch bend
     }
 }
 ```

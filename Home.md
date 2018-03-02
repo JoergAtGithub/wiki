@@ -117,8 +117,6 @@ this wiki, please fix it.
   - [SCons Build System](SCons%20Build%20System)
   - [Packaging / Making a Mixxx
     Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
-  - [Setting-up CI on your own
-    fork](Setting-up%20CI%20on%20your%20own%20fork)
 
 ### Getting Started
 
@@ -137,9 +135,8 @@ this wiki, please fix it.
 
   - [To-do list for the next release](2.1.0_todo) - Help us get the next
     release ready\!
-
-<!-- end list -->
-
+  - [Setting-up CI on your own
+    fork](Setting-up%20CI%20on%20your%20own%20fork)
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
   - [Google Summer of Code](gsoc) student projects and information.

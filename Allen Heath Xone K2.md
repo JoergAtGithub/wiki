@@ -13,6 +13,16 @@ The Allen & Heath Xone:K2 is set up like a 4 channel mixer plus a grid
 of buttons. It also has an integrated 4 channel sound card with 2 RCA
 jacks and an 1/8" stereo headphone jack.
 
+# Audio setup
+
+Configure channels 1-2 for Mixxx's Headphones output and channels 3-4
+for the Master output (this is the opposite of most DJ controllers with
+an integrated audio interface).
+
+There are no hardware controls for the volume; they are always at full
+volume. You can adjust the volume of the master and headphone outputs by
+adjusting the gain controls for those outputs in Mixxx.
+
 # Default Mixxx mapping
 
 For the default mapping to work correctly, the device must be set to

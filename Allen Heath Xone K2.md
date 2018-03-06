@@ -35,10 +35,14 @@ they can both be connected with their own USB cable and this same
 mapping can be loaded for each.
 
 The layout of the mapping depends on the configured MIDI channel of the
-controller. Channel 15 (default out of the box): two decks + two effect
-units with decks in the middle Channel 14: two decks + two effect units
-with effect units in the middle Channel 13: four decks Channel 12: four
-effect units
+controller.
+
+  - Channel 15 (default out of the box): two decks + two effect units
+    with decks in the middle
+  - Channel 14: two decks + two effect units with effect units in the
+    middle
+  - Channel 13: four decks
+  - Channel 12: four effect units
 
 Change the MIDI channel of the controller by pressing the bottom right
 encoder (labeled "Power On Setup/Scroll/Set") while plugging in the

@@ -100,7 +100,7 @@ the same time activates supershift mode.
     * shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
     * supershift: halve beatjump size
 * Bottom buttons (hotcue layer, red):
-* activate hotcues 1-4
+* activate hotcues 1-4 or set the hotcue if the is not one set yet
 * shift: delete hotcues 1-4
 ```
 

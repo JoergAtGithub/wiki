@@ -102,6 +102,15 @@ the same time activates supershift mode.
 
 ## Effects
 
+The top part of the column uses the [Standard Effects
+Mapping](Standard%20Effects%20Mapping). Pressing the top encoder acts as
+the effect focus button. When no effect is focused, the buttons are red.
+When holding the top encoder to choose an effect to focus, the buttons
+are green. When an effect is focused, the buttons are amber.
+
+The fader acts as the dry/wet knob. The bottom buttons assign the effect
+unit to the corresponding deck.
+
 # Mixxx 2.0 mapping
 
 For the default mapping to work correctly, the device must be set to

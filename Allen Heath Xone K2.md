@@ -35,7 +35,9 @@ they can both be connected with their own USB cable and this same
 mapping can be loaded for each.
 
 The layout of the mapping depends on the configured MIDI channel of the
-controller.
+controller. Note that these numbers are counting from 1 (1-16 range, not
+0-15) and match the number of buttons lit up when selecting the MIDI
+channel in the controller's setup mode.
 
   - Channel 15 (default out of the box): two decks + two effect units
     with decks in the middle

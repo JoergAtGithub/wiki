@@ -10,8 +10,9 @@
     diagrams](http://www.allen-heath.com/media/Xone+K2+Blank+Overlays.zip)
 
 The Allen & Heath Xone:K2 is set up like a 4 channel mixer plus a grid
-of buttons. It also has an integrated 4 channel sound card with 2 RCA
-jacks and an 1/8" stereo headphone jack.
+of buttons. It also has an integrated 4 channel audio interface with 2
+RCA jacks and an 1/8" stereo headphone jack. The Xone K1 is the same as
+the Xone K2 but without the built in audio interface.
 
 # Audio setup
 
@@ -23,7 +24,85 @@ There are no hardware controls for the volume; they are always at full
 volume. You can adjust the volume of the master and headphone outputs by
 adjusting the gain controls for those outputs in Mixxx.
 
-# Default Mixxx mapping
+# Mixxx 2.1 mapping
+
+## Setup
+
+This mapping can used with one or multiple Xone K2s/K1s. Multiple Xone
+K2s/K1s can be connected to each other via X-Link with one of them
+connected to the computer via USB. Alternatively, when using 2 K2s/K1s,
+they can both be connected with their own USB cable and this same
+mapping can be loaded for each.
+
+The layout of the mapping depends on the configured MIDI channel of the
+controller. Channel 15 (default out of the box): two decks + two effect
+units with decks in the middle Channel 14: two decks + two effect units
+with effect units in the middle Channel 13: four decks Channel 12: four
+effect units
+
+Change the MIDI channel of the controller by pressing the bottom right
+encoder (labeled "Power On Setup/Scroll/Set") while plugging in the
+controller. If you are using K2s, they must have Latching Layers turned
+off, which is the default (the K1 does not have Latching Layers). Refer
+to the [Xone K2/K1 product manual from Allen &
+Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
+details.
+
+## Decks
+
+The bottom right button is the shift button. The bottom left button
+toggles the bottom button grid between a loop layer (amber) and a hotcue
+layer (red). Holding shift then holding the bottom left layer button at
+the same time activates supershift mode.
+
+  - Top encoder:
+  - jog
+  - shift: key
+  - supershift: gain
+  - Top encoder press:
+  - sync
+  - shift: reset key
+  - supershift: reset tempo
+  - Knobs: high/mid/low equalizer knobs
+  - Top button 1:
+  - headphones/PFL
+  - supershift: set beatgrid to current position
+  - Top button 2:
+  - cue
+  - shift: go to beginning of track and stop
+  - supershift: keylock
+  - Top button 3:
+  - play
+  - shift: reverse
+  - supershift: quantize
+  - Fader: volume
+  - Bottom buttons (loop layer):
+  - Bottom button 1 (red):
+
+<!-- end list -->
+
+``` 
+    * reloop/disable loop
+    * shift: jump to to beginning of loop, stop playback, and activate loop
+* Bottom button 2 (green):
+    * activate loop of selected size
+    * shift: activate rolling loop of selected size
+* Bottom button 3 (amber):
+    * double loop size
+    * shift: beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+    * supershift: double beatjump size
+* Bottom button 4 (amber):
+    * halve loop size
+    * shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+    * supershift: halve beatjump size
+* Bottom buttons (hotcue layer, red):
+* activate hotcues 1-4
+* shift: delete hotcues 1-4
+```
+
+## Effects
+
+# Mixxx 2.0 mapping
 
 For the default mapping to work correctly, the device must be set to
 operate on MIDI channel 16 and "latching layers" must be set to "Switch

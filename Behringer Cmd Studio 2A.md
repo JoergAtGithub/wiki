@@ -155,4 +155,4 @@ Follow this procedure to reset the unit to its default factory settings
 ### MIDI controls diagram
 
 Default MIDI channel is number 1 (0x0).
-[[/media/cmd_studio_2a_esquema_senyals_midi.png|]]
+[[/media/cmd_studio2a_esquema_senyals_midi.png|]]

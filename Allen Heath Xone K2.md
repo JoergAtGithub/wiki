@@ -35,16 +35,22 @@ they can both be connected with their own USB cable and this same
 mapping can be loaded for each.
 
 The layout of the mapping depends on the configured MIDI channel of the
-controller. Note that these numbers are counting from 1 (1-16 range, not
-0-15) and match the number of buttons lit up when selecting the MIDI
-channel in the controller's setup mode.
+controller. Change the MIDI channel of the controller by pressing the
+bottom right encoder (labeled "Power On Setup/Scroll/Set") while
+plugging in the controller. Scroll with the encoder to select a MIDI
+channel. The letter in parentheses corresponds to the last lit button
+when selecting the channel:
 
-  - Channel 15 (default out of the box): two decks + two effect units
+  - Channel 15 (O, default out of the box): two decks + two effect units
     with decks in the middle
-  - Channel 14: two decks + two effect units with effect units in the
-    middle
-  - Channel 13: four decks
-  - Channel 12: four effect units
+  - Channel 14 (N): two decks + two effect units with effect units in
+    the middle
+  - Channel 13 (M): two decks + two effect units with decks on left
+  - Channel 12 (L): two decks + two effect units with decks on right
+  - Channel 11 (K): four decks ordered 3 1 2 4
+  - Channel 10 (J): four decks ordered 1 2 3 4
+  - Channel 9 (I): four effect units ordered 3 1 2 4
+  - Channel 8 (H): four effect units ordered 1 2 3 4
 
 Change the MIDI channel of the controller by pressing the bottom right
 encoder (labeled "Power On Setup/Scroll/Set") while plugging in the

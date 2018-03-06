@@ -22,7 +22,8 @@ an integrated audio interface).
 
 There are no hardware controls for the volume; they are always at full
 volume. You can adjust the volume of the master and headphone outputs by
-adjusting the gain controls for those outputs in Mixxx.
+adjusting the gain controls for those outputs in Mixxx with the
+controller mapping.
 
 # Mixxx 2.1 mapping
 

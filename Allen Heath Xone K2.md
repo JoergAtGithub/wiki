@@ -52,6 +52,21 @@ to the [Xone K2/K1 product manual from Allen &
 Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
 details.
 
+## Global controls
+
+These are available on any configuration with decks, but not the 4
+effect unit layout.
+
+  - Bottom left encoder:
+  - adjust tempo of all decks with sync enabled
+  - press and turn: PFL/master mix in headphones
+  - shift: headphone gain
+  - press with shift: toggle split cue mode
+  - Bottom right encoder
+  - scroll through tracks in library
+  - press: load selected track into first stopped deck
+  - shift: master gain
+
 ## Decks
 
 The bottom right button is the shift button. The bottom left button

@@ -1,4 +1,4 @@
-\======= Allen & Heath Xone:K2 ======
+\======= Allen & Heath Xone:K2/K1 ======
 ![http://www.allen-heath.com/media/XoneK2\_Front\_Main-463x1024.jpg](http://www.allen-heath.com/media/XoneK2_Front_Main-463x1024.jpg)
 
   - [Manufacturer's product
@@ -130,17 +130,22 @@ are green. When an effect is focused, the buttons are amber.
 The fader acts as the dry/wet knob. The bottom buttons assign the effect
 unit to the corresponding deck.
 
+The bottom left layer button currently does nothing to effects columns.
+Also, the bottom encoders are not mapped in the 4 effect unit layout.
+
 # Mixxx 2.0 mapping
 
-For the default mapping to work correctly, the device must be set to
-operate on MIDI channel 16 and "latching layers" must be set to "Switch
-Matrix" (2nd state). For information on how to do that read the user
-guide of the device (linked above).
+For the mapping to work correctly, the device must be set to operate on
+MIDI channel 16 and Latching Layers must be set to "Switch Matrix" (2nd
+state). For information on how to do that read the [manual from Allen &
+Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf).
+Latching Layers is not available on the Xone K1, so this mapping is not
+compatible with the Xone K1.
 
 The behavior of the grid buttons depends on which layer is active, which
-is changed by pressing the Layer button. The color of the text
-background indicates what the button does in that layer, e.g. the
-buttons of the last row activate hotcue 4 when the green layout is
+is changed by pressing the Layer button in the bottom left. The color of
+the text background indicates what the button does in that layer, e.g.
+the buttons of the last row activate hotcue 4 when the green layout is
 selected, but act as the play button when the red layer is selected.
 
 Text in blue describes secondary functions accessible when the shift

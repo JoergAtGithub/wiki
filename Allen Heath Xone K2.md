@@ -52,11 +52,9 @@ when selecting the channel:
   - Channel 9 (I): four effect units ordered 3 1 2 4
   - Channel 8 (H): four effect units ordered 1 2 3 4
 
-Change the MIDI channel of the controller by pressing the bottom right
-encoder (labeled "Power On Setup/Scroll/Set") while plugging in the
-controller. If you are using K2s, they must have Latching Layers turned
-off, which is the default (the K1 does not have Latching Layers). Refer
-to the [Xone K2/K1 product manual from Allen &
+If you are using K2s, they must have Latching Layers turned off, which
+is the default (the K1 does not have Latching Layers). Refer to the
+[Xone K2/K1 product manual from Allen &
 Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
 details.
 

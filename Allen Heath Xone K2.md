@@ -71,7 +71,9 @@ effect unit layout.
   - press with shift: toggle split cue mode
   - Bottom right encoder
   - scroll through tracks in library
-  - press: load selected track into first stopped deck
+  - press and release: load selected track into first stopped deck
+  - press and hold: load selected track into a deck by pressing the top
+    button of the deck (headphones/PFL)
   - shift: master gain
 
 ## Decks

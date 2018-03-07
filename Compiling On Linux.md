@@ -197,7 +197,8 @@ option must be the same as before or scons will recompile Mixxx before
 installing it.
 
 If you want to be able to run Mixxx on different types of CPUs, change
-`optimize=native` to `optimize=portable`.
+`optimize=native` to `optimize=portable`. If you want to contribute code
+to Mixxx and use a debugger, use `optimize=off`.
 
 To compile on a Raspberry Pi, use the arguments: `optimize=native
 opengles=1 machine=armhf` with scons.

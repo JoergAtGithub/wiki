@@ -347,11 +347,13 @@ off. Button adds the following properties to Component:
   - **type**: determines the behavior of the Button. Can be any of these
     values:
   - *Button.prototype.types.push* (default): set inKey to 1 on button
-    press and 0 on button release
+    press and 0 on button release. For example, use this type with the
+    beatloop\_activate [Control](mixxxcontrols)
   - *Button.prototype.types.toggle*: invert value of inKey on button
-    press
+    press, for example with pfl Control
   - *Button.prototype.types.powerWindow*: like toggle, but toggles the
-    value of inKey again on button up when long pressed
+    value of inKey again on button up when long pressed, for example
+    with \[EffectRack1\_EffectUnit2\_Effect1\], enabled Control.
   - **on** (number, default 127): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is on (its value is \>
     0)

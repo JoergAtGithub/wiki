@@ -350,7 +350,8 @@ off. Button adds the following properties to Component:
     press and 0 on button release. For example, use this type with the
     beatloop\_activate [Control](mixxxcontrols)
   - *Button.prototype.types.toggle*: invert value of inKey on button
-    press, for example with pfl Control
+    press. Use this with Controls whose values indicate the state of a
+    switch, for example pfl
   - *Button.prototype.types.powerWindow*: like toggle, but toggles the
     value of inKey again on button up when long pressed, for example
     with \[EffectRack1\_EffectUnit2\_Effect1\], enabled Control.

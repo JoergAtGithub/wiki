@@ -51,8 +51,8 @@ by Mixxx:
 |                                    |                |
 | ---------------------------------- | -------------- |
 | Vinyl                              | Responsiveness |
-| Serato CV02 Vinyl                  | Very high      |
-| Serato CV02 CD                     | Very high      |
+| Serato CV02/2.5 Vinyl              | Very high      |
+| Serato CV02/2.5 CD                 | Very high      |
 | Traktor Scratch MK1 Vinyl          | Very high      |
 | Traktor Scratch MK2 Vinyl          | Not supported  |
 | MixVibes DVS V2 Vinyl <sup>1</sup> | Very high      |

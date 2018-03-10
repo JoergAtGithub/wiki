@@ -110,14 +110,27 @@ dnf builddep mixxx
 If you are on Arch you can do the following:
 
 ``` bash
-# get the build tool
-sudo pacman -S scons
-
 # install the dependancies
 sudo pacman -S libid3tag libmad portaudio qt libogg \
 libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
 taglib protobuf vamp-plugin-sdk rubberband \
 chromaprint sqlite upower
+```
+
+Arch no longer provides scons-2.\* in the repos and since mixxx's build
+system doesn't work with python3 you must use a standalone version.
+
+The workaround is quite easy, as mentioned at the top of this page:
+
+Download a standalone version of SCons 2.5.1 from
+[here](https://sourceforge.net/projects/scons/files/scons/2.5.1/scons-2.5.1.tar.gz/download)
+and then do the following:
+
+``` bash
+tar xzvf /path/to/scons-2.5.1.tar.gz /path/to/where-you-want-it-to-live
+
+# and then inside the cloned mixxx directory use it as such
+python2 </path/to/where-you-want-it-to-live>/scripts/scons ...
 ```
 
 ### Other

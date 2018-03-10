@@ -11,8 +11,8 @@ Mixxx relies on several external libraries for various features.
 ### SCons 2.x
 
 The Mixxx build scripts still rely on SCons 2 and don't work with SCons
-3 and Python 3. If your distribution (Fedora 27, ...) already comes with
-SCons 3 the build will fail when following the instructions.
+3 and Python 3. If your distribution (Fedora 27, Arch linux...) already
+comes with SCons 3 the build will fail when following the instructions.
 
 As a workaround you can simply install SCons 2 side by side::
 

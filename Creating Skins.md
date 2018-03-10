@@ -2977,3 +2977,6 @@ performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
     creating a minimal skin, with focus on the common problems a skin
     designer will encounter when setting the layout of various skin
     elements.
+  - [Skin System Changelog](skin_system_changelog) - Follow the changes
+    as Mixxx evolves, and learn how to apply these changes when creating
+    skins.

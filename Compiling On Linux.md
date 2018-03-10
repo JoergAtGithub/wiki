@@ -130,7 +130,7 @@ and then do the following:
 tar xzvf /path/to/scons-2.5.1.tar.gz /path/to/where-you-want-it-to-live
 
 # and then inside the cloned mixxx directory use it as such
-python2 </path/to/where-you-want-it-to-live>/scripts/scons ...
+python2 /path/to/where-you-want-it-to-live/scripts/scons ...
 ```
 
 ### Other

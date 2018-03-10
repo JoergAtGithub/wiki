@@ -17,7 +17,7 @@ available for download.
 
 # Design
 
-\[\[===== Optimize preset loading and mapping =====
+## Optimize preset loading and mapping
 
   - Use Case
 
@@ -53,7 +53,7 @@ few changes to ‘dlgprefcontrollerdlg.ui’, see Fig.1.
 
   - Fig.2
 
-[[/media/manager.png|]]\]\]
+[[/media/manager.png|]]
 
 ## Support getting controller mapping resources from web
 

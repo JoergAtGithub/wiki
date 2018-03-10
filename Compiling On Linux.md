@@ -105,6 +105,14 @@ dnf install gcc-c++ upower-devel
 dnf builddep mixxx
 ```
 
+### Arch & Derivatives
+
+If you are an Arch user you can do the following:
+
+``` bash
+$ sudo pacman -S scons libid3tag libmad portaudio qt libogg libvorbis libsndfile portmidi libmp4v2 faad2 libshout taglib protobuf vamp-plugin-sdk rubberband chromaprint sqlite upower
+```
+
 ### Other
 
 For other distributions, you will need to install the following through

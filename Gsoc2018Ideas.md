@@ -66,6 +66,34 @@ instruments are encouraged to apply for this project, but these are not
 requirements and we welcome your application if you do not have that
 experience.
 
+# Effects customizations
+
+Mixxx's effects system is really flexible, but there is room for
+improvement to allow users to customize their setup more. Currently,
+users can load effects and set their parameters and Mixxx will remember
+this state when they start Mixxx again. This functionality could be
+expanded upon by allowing users to [save and reload custom effect chain
+presets](https://bugs.launchpad.net/mixxx/+bug/1707961). That would
+allow users to have quick access to more effect chain setups than they
+can load at a time (most controllers only have controls for 2 effect
+units although Mixxx provides 4). These presets could be exported and
+shared by users online.
+
+Additionally, it would be convenient for users to be able to
+[arbitrarily rearrange and hide effects
+parameters](https://bugs.launchpad.net/mixxx/+bug/1653325). Most
+controllers only have knobs for 3 effect parameters but some effects
+have more than 3 parameters. Adding this would allow users to decide to
+have access to different parameters than the developers decide are the
+best ones to access on a controller.
+
+Another feature which would be useful would be implementing a way for
+users to [set custom per-effect
+defaults](https://bugs.launchpad.net/mixxx/+bug/1740504) so each time
+they load a particular effect the parameters would be set how they want
+(and together with the above feature, the parameter order would be set
+too).
+
 # Cue Point Enhancements
 
 Currently, Mixxx's hotcues are limited. They cannot store any

@@ -56,6 +56,7 @@ the values below at the very top of the JavaScript file
     * value "**2**": (other skins): FX button 1 = Effect Unit 1, Effect 1, FX Button 2 = Effect Unit 2, Effect 1,  FX button 3 = Effect Unit 3, Effect 1. Effect settings are shared by each deck.\\
 * **PitchBendOnWheelOff**: allow nudge with wheel when wheel is not active. 
 * **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync button Double Press. 
+* **ShiftFilterFX4**: Specify Shift+Filter control behavior - FX parameter 4 (true) or Channel Gain (false)
 ```
 
 ## Mapping

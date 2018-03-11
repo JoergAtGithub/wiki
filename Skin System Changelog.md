@@ -6,7 +6,7 @@
  * Added [[creating_skins#recording_duration|<RecordingDuration>]] widget that Displays the duration of the running recording.[[https://github.com/mixxxdj/mixxx/pull/1221|pull#1221]],  [[https://github.com/mixxxdj/mixxx/pull/1398|pull#1398]]
  * Added ''PlayedOverlayColor'' to [[creating_skins#waveform_overview|<Overview>]] that makes the overview-waveform darker for the played portion of the track. Support ARGB for ''PlayedOverlayColor'', ''AxesColor'', ''PlayPosColor'', and ''BgColor'' [[https://github.com/mixxxdj/mixxx/pull/1203|pull#1203]]
  * Added [[creating_skins#EffectSelector|<EffectSelector>]] widget that allows to select effects from alphabetically ordered lists of available effects.[[https://github.com/mixxxdj/mixxx/pull/1135|pull#1135]]
- * Added support for vertical waveforms [[https://github.com/mixxxdj/mixxx/pull/983|pull#983]]
+ * Added ''Orientation'' to [[creating_skins#waveform|<Visual>]] and [[creating_skins#waveform_overview|<Overview>]] which allows choosing between horizontal and vertical waveforms/overviews. [[https://github.com/mixxxdj/mixxx/pull/983|pull#983]]
  * Added support for collapsible [[creating_skins#splitter|<Splitter>]] children. [[https://github.com/mixxxdj/mixxx/pull/917|pull#917]]
  * Added [[creating_skins#battery|<Battery>]] widget to show the battery status. [[https://github.com/mixxxdj/mixxx/pull/401|pull#401]]
 ```

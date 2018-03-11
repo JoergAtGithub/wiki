@@ -107,18 +107,25 @@ dnf builddep mixxx
 
 ### Arch & Derivatives
 
-If you are on Arch you can do the following:
+If you are developing in Arch, you should have the
+[base-devel](https://www.archlinux.org/groups/x86_64/base-devel/) group
+installed.
+
+The tools you are gonna need for workin with mixxx are:
 
 ``` bash
-# install the dependancies
-sudo pacman -S libid3tag libmad portaudio qt libogg \
-libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
-taglib protobuf vamp-plugin-sdk rubberband \
-chromaprint sqlite upower
+# for cloning the repo and version control
+pacman -S git
+
+# for compiling
+pacman -S gcc
+# or if you want clang
+pacman -S clang
 ```
 
-Arch no longer provides scons-2.\* in the repos and since mixxx's build
-system doesn't work with python3 you must use a standalone version.
+You will also need SCons-2.\* to build the project. Arch no longer
+provides scons-2.\* in the repos and since mixxx's build system doesn't
+work with python3 you must use a standalone version.
 
 The workaround is quite easy, as mentioned at the top of this page:
 
@@ -131,6 +138,16 @@ tar xzvf /path/to/scons-2.5.1.tar.gz /path/to/where-you-want-it-to-live
 
 # and then inside the cloned mixxx directory use it as such
 python2 /path/to/where-you-want-it-to-live/scripts/scons ...
+```
+
+Then you just need the dependancies:
+
+``` bash
+# install the dependancies
+sudo pacman -S libid3tag libmad portaudio qt libogg \
+libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
+taglib protobuf vamp-plugin-sdk rubberband \
+chromaprint sqlite upower
 ```
 
 ### Other

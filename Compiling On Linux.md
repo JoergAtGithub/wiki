@@ -134,7 +134,8 @@ Download a standalone version of SCons 2.5.1 from
 and then do the following:
 
 ``` bash
-tar xzvf /path/to/scons-2.5.1.tar.gz /path/to/where-you-want-it-to-live
+tar xzvf /path/to/scons-2.5.1.tar.gz scons-2.5.1/
+mv scons-2.5.1 /path/to/where-you-want-it-to-live
 
 # and then inside the cloned mixxx directory use it as such
 python2 /path/to/where-you-want-it-to-live/scripts/scons ...

@@ -150,10 +150,6 @@ taglib protobuf vamp-plugin-sdk rubberband \
 chromaprint sqlite upower
 ```
 
-Then continue to the [Compile and
-Install](https://mixxx.org/wiki/doku.php/compiling_on_linux#compile_and_install)
-section.
-
 ### Other
 
 For other distributions, you will need to install the following through

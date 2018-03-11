@@ -66,7 +66,7 @@ instruments are encouraged to apply for this project, but these are not
 requirements and we welcome your application if you do not have that
 experience.
 
-# Effects customizations
+# Effects Customizations
 
 Mixxx's effects system is really flexible, but there is room for
 improvement to allow users to customize their setup more. Currently,

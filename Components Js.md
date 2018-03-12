@@ -767,6 +767,7 @@ appropriately handle the signals sent by your controller. For example:
     MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
     MyController.effectUnit.dryWetKnob.input = function (channel, control, value, status, group) {
         if (value === 1) {
+           // 0.05 is an example. Adjust that value to whatever works well for your controller.
            this.inSetParameter(this.inGetParameter() - .05);
         } else if (value === 127) {
            this.inSetParameter(this.inGetParameter() + .05);

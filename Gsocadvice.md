@@ -95,8 +95,8 @@ We value general software design and development experience above
 specific knowledge of a library or API. We have found in the past that
 an interested and motivated student who is willing to learn is more
 valuable than anything else. For example, if you've never used Qt before
-but have done lots of Java and Gtk+ UI development then you should make
-sure you let us know about it in your application.
+but have done lots of Java and Gtk+ UI development, please let us know
+that in your application.
 
 Of course if you do have direct experience with the tools we use, you
 should definitely tell us about that too. The main external tools we

@@ -22,11 +22,22 @@ mapping](https://github.com/snowyoneill/Mixxx-Numark-MixTrack-Pro-II-2016.midi).
 
 ### 1\. Browser Knob
 
+Rotate the knob to cycle through folders and tracks.  
+**Press:** Same as Back button.
+
 ### 2\. Load
+
+Press one of these buttons while a track is selected to assign it to
+Deck 1 or 2, respectively, in the software.
 
 ### 3\. Back
 
+Cycles between the file structure and the music library in the software.
+
 ### 4\. Shift
+
+Allows multiple control commands to be triggered when pressed and held
+first along with other buttons.
 
 ### 5\. Play/Pause
 
@@ -47,15 +58,34 @@ set in the Mixxx preferences.
 
 ### 8\. Platter/Jog Wheel
 
+This capacitive, touch-sensitive jog wheel controls the audio when the
+wheel is touched and moved. When the Scratch button is not active, use
+the wheel to bend the pitch of the track. When the Scratch button is
+active, use the wheel to grab and move the audio, "scratching" the track
+as you would with a vinyl record. You can also grab the
+non-touch-sensitive outer wheel to bend the pitch of the track.
+
 ### 9\. Scratch
+
+Controls the behavior of the platters. When not active, the platter will
+function as Pitch Bend. When active, the platter will have the ability
+to scratch.
 
 ### 10\. Pitch Fader
 
+Controls the tempo (speed) of the individual decks.
+
 ### 11\. Pitch Bend -
+
+Press and hold to momentarily reduce the speed of the track.
 
 ### 12\. Pitch Bend +
 
+Press and hold to momentarily increase the speed of the track.
+
 ### 13\. Sync
+
+Enables BPM syncing between decks.
 
 ### 14\. Effect Control
 
@@ -69,37 +99,112 @@ Adjusts the Dry/Wet mix of the deck's EffectUnit.
 
 ### 16\. Loop In
 
+Function of this button depends on the current Pad Mode.  
+**Shift + Loop In:** Sets the current Pad Mode to "Loop Mode".  
+**Loop Mode:** Press this pad to set the beginning of a loop.  
+**Sample Mode:** Plays the sample assigned to Sampler 1 (left deck) or
+Sampler 5 (right deck).  
+**Cue Mode:** If Hotcue 1 has not already been set for the loaded track,
+this control will set Hotcue 1 at current position in the track. If
+Hotcue 1 has already been set, this control will jump to Hotcue 1.
+
 ### 17\. Loop Out
+
+Function of this button depends on the current Pad Mode.  
+**Shift + Loop Out:** Sets the current pad mode to “Sample Mode".  
+**Loop Mode:** Press this pad to set the end of a loop.  
+**Sample Mode:** Plays the sample assigned to Sampler 2 (left deck) or
+Sampler 6 (right deck).  
+**Cue Mode:** If Hotcue 2 has not already been set for the loaded track,
+this control will set Hotcue 2 at current position in the track. If
+Hotcue 2 has already been set, this control will jump to Hotcue 2.
 
 ### 18\. Reloop
 
+Function of this button depends on the current Pad Mode.  
+**Shift + Reloop:** Sets the current pad mode to "Cue Mode".  
+**Loop Mode:** Press this pad when inside a loop to turn the loop off.
+When this button is pressed again outside a loop, this will activate the
+loop and start playback from its Loop In point.  
+**Sample Mode:** Plays the sample assigned to Sampler 3 (left deck) or
+Sampler 7 (right deck).  
+**Cue Mode:** If Hotcue 3 has not already been set for the loaded track,
+this control will set Hotcue 3 at current position in the track. If
+Hotcue 3 has already been set, this control will jump to Hotcue 3.
+
 ### 19\. Loop x1/2
+
+Function of this button depends on the current Pad Mode.  
+**Loop Mode:** Press this pad to cut the length of currently playing
+loop to half.  
+**Shift + Loop x1/2 when in Loop Mode:** Press this pad to double the
+length of the currently playing loop.  
+**Sample Mode:** Plays the sample assigned to Sampler 4 (left deck) or
+Sampler 8 (right deck).  
+**Cue Mode:** Toggles Hotcue Delete Mode. Press this button, and then
+press one of the other pads in the row to delete that Hotcue.
 
 ### 20\. FX 1 On/Off
 
+Turns FX 1 on and off per deck.  
+**Shift + FX 1:** Sets and starts playback of a 1-beat autoloop.
+
 ### 21\. FX 2 On/Off
+
+Turns FX 2 on and off per deck.  
+**Shift + FX 2:** Sets and starts playback of a 2-beat autoloop.
 
 ### 22\. FX 3 On/Off
 
+Turns FX 3 on and off per deck.  
+**Shift + FX 3:** Sets and starts playback of a 4-beat autoloop.
+
 ### 23\. Tap
+
+Allows manual entry of song's BPM by repeated pressing along the beats
+of the track.  
+**Shift + Tap:** Sets and starts playback of a 16-beat autoloop.  
+**Note:** This button will blink at each detected beat in the track.
 
 ### 24\. Channel Volume
 
+Adjusts the volume of the individual channels in the software.
+
 ### 25\. Master Gain
+
+Adjusts the volume of the master mix coming from the software.  
+**Note:** This does not affect the microphone volume. Use the Mic Gain
+knob to control the microphone volume.
 
 ### 26\. Crossfader
 
+Controls the blend between the two decks.
+
 ### 27\. High EQ
+
+Controls the treble frequencies for the individual channels.
 
 ### 28\. Mid EQ
 
+Controls the mid range frequencies for the individual channels.
+
 ### 29\. Low EQ
+
+Controls the bass frequencies for the individual channels.
 
 ### 30\. Cue Gain
 
+Adjusts the volume for headphone cueing in the software.
+
 ### 31\. Cue Mix
 
+Adjusts the software’s audio output to the headphones, mixing between
+the cue output and the master mix output.
+
 ### 32\. Stutter
+
+Press this button while the music is playing to jump back to the last
+set cue point, creating a "stutter" effect.
 
 ## Other Community Mappings
 

@@ -193,13 +193,7 @@ be refactored to help you implement your ideas. You can also immediately
 fix them in the master branch and help us all out. This has several
 advantages. All your pull request will only concentrate on specific
 features and are much better to review. And you'll also get direct
-feedback from other developers and user during the summer.
-
-Since this is a hard requirement we as mentors will also have an eye on
-that and check if your proposal incorporates it and also warn you ahead
-of time during the summer if we see that you might not make it.
-Communicating with us on a regular basis is vital for keeping your
-project on track.
+feedback from other developers and users during the summer.
 
 #### Having good time estimates
 

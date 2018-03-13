@@ -121,7 +121,7 @@ rely on are Qt, SQLite, and Git.
     early. If you know there will be times that you are not able to work
     on your project as much during the summer, please let us know in
     your application.
-  - If you don't communicate with us regularly we will fail you.
+  - If you don't communicate with us regularly, we will fail you.
 
 #### Midterm and Final evaluations
 

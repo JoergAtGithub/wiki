@@ -72,8 +72,8 @@ effect unit layout.
   - Bottom right encoder
   - scroll through tracks in library
   - press and release: load selected track into first stopped deck
-  - press and hold: load selected track into a deck by pressing the top
-    button of the deck (headphones/PFL)
+  - press and hold: load selected track into a deck by pressing the play
+    button of the deck
   - shift: master gain
 
 ## Decks

@@ -52,10 +52,10 @@ stuck working on code, but we will not do work for you.
 
 GSOC lasts several months, so it is important that you choose a project
 that you are personally passionate about that you will be excited to
-work on for an extended period. We cannot tell you want you want to work
-on, but we have some suggestions for project ideas. Before thinking too
-much about what project you want to work on, we suggest spending time
-using Mixxx and [\#Getting Involved](#Getting%20Involved) in the
+work on for an extended period. We cannot tell you what want you want to
+work on, but we have some suggestions for project ideas. Before thinking
+too much about what project you want to work on, we suggest spending
+time using Mixxx and [\#Getting Involved](#Getting%20Involved) in the
 community. This will help you understand what Mixxx currently does well
 and what areas could be improved. In general, your project proposal can
 be inspired by any of the following:

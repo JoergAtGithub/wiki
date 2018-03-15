@@ -393,7 +393,7 @@ This set of changes is implemented in development versions of Mixxx 2.1
 available from the [build
 server](http://downloads.mixxx.org/builds/master/release/).
 
-## Configuration options
+#### Configuration options
 
 Some configuration options that exist in 2.0 are no longer available in
 2.1. Version 2.1 supports the following options:

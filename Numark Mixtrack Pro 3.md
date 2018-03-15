@@ -393,6 +393,25 @@ This set of changes is implemented in development versions of Mixxx 2.1
 available from the [build
 server](http://downloads.mixxx.org/builds/master/release/).
 
+## Configuration options
+
+Some configuration options that exist in 2.0 are no longer available in
+2.1. Version 2.1 supports the following options:
+
+  - **TrackEndWarning**: whether the Wheel button flashes near the end
+    of a track
+  - **iCutEnabled**: whether to enable iCut with the jog wheel. See
+    [\#platter/jog wheel](#platter/jog%20wheel) section for details
+  - **smartPFL**: When the Load button is used, the Cue/PFL button is
+    automatically activated on the deck being loaded and deactivated on
+    the other deck
+  - **noPlayOnSyncDoublePress**: Specify if Play is disabled on Sync
+    button Double Press. 
+  - **ShiftFilterFX4**: Specify Shift+Filter control behavior - FX
+    parameter 4 (true) or Channel Gain (false)
+  - **PitchBendOnWheelOff**: allow nudge with wheel when wheel is not
+    active. 
+
 #### Effects
 
   - Focus effect with **FX button**

@@ -59,7 +59,7 @@ the values below at the very top of the JavaScript file
 * **ShiftFilterFX4**: Specify Shift+Filter control behavior - FX parameter 4 (true) or Channel Gain (false)
 ```
 
-## Mapping
+## Mixxx 2.0 Mapping
 
 [[/media/numarkmixtrackpro3mapping.gif|]]
 

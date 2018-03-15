@@ -144,6 +144,14 @@ which effect units are assigned to a deck.
 The bottom left layer button currently does nothing to effects columns.
 Also, the bottom encoders are not mapped in the 4 effect unit layout.
 
+## Troubleshooting
+
+If your K2 switches between 3 layers (amber, red, and green) instead of
+2 (amber and red only) and supershift does not work, make sure Latching
+Layers is turned off. Refer to the [Xone K2 product manual from Allen &
+Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
+details.
+
 # Mixxx 2.0 mapping
 
 For the mapping to work correctly, the device must be set to operate on

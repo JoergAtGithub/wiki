@@ -213,7 +213,7 @@ weak and strong points are can help a lot.
 
 #### Example
 
-Stéphane Lepin has kindly published his successful 2017 application:
-<https://docs.google.com/document/d/1rbMR85tzp9VDIoMOSuSbToIwXSpzl3XmjaJh3ABxZGY>
+Stéphane Lepin has kindly published his [successful 2017
+application](https://docs.google.com/document/d/1rbMR85tzp9VDIoMOSuSbToIwXSpzl3XmjaJh3ABxZGY).
 
 We look forward to your application\! :) - The Mixxx Development Team

@@ -12,7 +12,8 @@
 The Allen & Heath Xone:K2 is set up like a 4 channel mixer plus a grid
 of buttons. It also has an integrated 4 channel audio interface with 2
 RCA jacks and an 1/8" stereo headphone jack. The Xone K1 is the same as
-the Xone K2 but without the built in audio interface.
+the Xone K2 but without the built in audio interface and does not come
+with the EVA travel case that the K2 comes with.
 
 # Audio setup
 

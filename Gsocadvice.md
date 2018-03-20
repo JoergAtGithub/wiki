@@ -170,7 +170,10 @@ Here are some criteria that we consider when reviewing applications:
   - Does the student understand the purpose of their project? Do they
     understand what impact their project will have on users?
   - Has the student demonstrated that they have the ability to work with
-    Mixxx's code?
+    Mixxx's code? The best way to do this is by submitting pull requests
+    and getting them merged. It can also be okay if a student works on a
+    bug but is unable to solve it before the application deadline if
+    they demonstrate competence working with the Mixxx code. 
   - Does the student understand the design and technical details of what
     will be required to implement their proposal?
   - Is the proposed timeline realistic considering any other obligations

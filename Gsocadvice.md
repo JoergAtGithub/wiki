@@ -161,7 +161,22 @@ completing the project and delivering the functionality to our users. If
 you aren't sure about anything, get in touch with us, we're happy to
 advise you.
 
-#### Splitting up your project into smaller pieces
+### Application evaluation criteria
+
+Here are some criteria that we consider when reviewing applications:
+
+  - Has the student interacted with the Mixxx community before
+    submitting their application?
+  - Does the student understand the purpose of their project? Do they
+    understand what impact their project will have on users?
+  - Has the student demonstrated that they have the ability to work with
+    Mixxx's code?
+  - Does the student understand the design and technical details of what
+    will be required to implement their proposal?
+  - Is the proposed timeline realistic considering any other obligations
+    the student may have during GSOC?
+
+### Splitting up your project into smaller pieces
 
 We require our students to merge some of their code into our master
 branch before the end of the summer. The best way to achieve this is to
@@ -195,7 +210,7 @@ advantages. All your pull request will only concentrate on specific
 features and are much better to review. And you'll also get direct
 feedback from other developers and users during the summer.
 
-#### Having good time estimates
+### Having good time estimates
 
 To get a feeling for the code and get some experience with our code you
 can go and tackle some of our easy bugs. Look at the code that you want

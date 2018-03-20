@@ -242,6 +242,27 @@ if( expression ){
 }
 ```
 
+Do not manipulate variables inside conditional expressions. Variable
+assignment should be on its own line (except in the opening line of
+`for` loops).
+
+**OK**:
+
+``` cpp-qt
+++counter;
+if (counter > threshold) {
+
+}
+```
+
+**Bad**:
+
+``` cpp-qt
+if (++counter > threshold) {
+
+}
+```
+
 ## For Loops
 
 Similarly to `if`-statements, there should be a single-space of padding

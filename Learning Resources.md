@@ -1,8 +1,22 @@
 # Learning resources
 
-## Qt documentation
+This page has some resources to learn background information that may
+help you contribute to Mixxx.
 
-<http://doc.qt.io/qt-4.8/>
+As a start, we highly recommend these resources from the Xiph.org
+Foundation for background information on digital and analog signal
+processing:
+
+  - [A Digital Media Primer For
+    Geeks](https://wiki.xiph.org/Videos/A_Digital_Media_Primer_For_Geeks)
+  - [Digital Show and
+    Tell](https://wiki.xiph.org/Videos/Digital_Show_and_Tell)
+  - [24/192 Music Downloads are Very Silly
+    Indeed](https://xiph.org/~xiphmont/demo/neil-young.html)
+
+Ethan Winer's book [The Audio Expert](http://ethanwiner.com/book.htm)
+explains everything from decibels to digital-to-analog converters to
+equalizers.
 
 ## Signal theory
 

@@ -163,7 +163,8 @@ advise you.
 
 ### Application evaluation criteria
 
-Here are some criteria that we consider when reviewing applications:
+Here are some criteria that we consider when reviewing applications. We
+suggest that you think about these when writing your application.
 
   - Has the student interacted with the Mixxx community before
     submitting their application?

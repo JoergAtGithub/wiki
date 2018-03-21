@@ -519,7 +519,6 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 
 | Device                                                                                                                      | Price (USD) \[45\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
-| [Pioneer DJM-250 Mk2](https://www.pioneerdj.com/en/product/mixer/djm-250mk2/black/overview/)                                | $350               | 2     | 2             | 1         | digital                  | ?             |
 | [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[46\] |
 | [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[47\] |
 | [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[48\] |

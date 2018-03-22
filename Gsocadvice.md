@@ -46,7 +46,9 @@ beginning your application. Here are some ways to get started:
 
 We expect that you make an effort to answer your own questions before
 asking us. We are happy to give you guidance and assist you when you get
-stuck working on code, but we will not do work for you.
+stuck working on code, but we will not do work for you. **If you
+repeatedly ask questions that are clearly answered by documentation
+(including this page), you will not be accepted.**
 
 ## What Project Should I Work On?
 

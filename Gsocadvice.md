@@ -179,6 +179,9 @@ suggest that you think about these when writing your application.
     they demonstrate competence working with the Mixxx code. Students
     *must* have submitted a pull request to Mixxx or provide links to
     code they have written before in their application (ideally both).
+  - Has the student demonstrated that they can work independently and
+    solve problems on their own without asking for help every step of
+    the way?
   - Does the student understand the design and technical details of what
     will be required to implement their proposal?
   - Is the proposed timeline realistic considering any other obligations

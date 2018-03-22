@@ -176,7 +176,9 @@ suggest that you think about these when writing your application.
     Mixxx's code? The best way to do this is by submitting pull requests
     and getting them merged. It can also be okay if a student works on a
     bug but is unable to solve it before the application deadline if
-    they demonstrate competence working with the Mixxx code. 
+    they demonstrate competence working with the Mixxx code. Students
+    *must* have submitted a pull request to Mixxx or provide links to
+    code they have written before in their application (ideally both).
   - Does the student understand the design and technical details of what
     will be required to implement their proposal?
   - Is the proposed timeline realistic considering any other obligations

@@ -93,7 +93,7 @@ Adjusts effect metaknobs.
 
 ### 15\. Beats
 
-Adjusts the Dry/Wet mix of the deck's EffectUnit.  
+Adjusts the Dry/Wet mix of the EffectUnit.  
 **Shift + Beats:** Adjust the deck's QuickEffect.
 
 ### 16\. Loop In

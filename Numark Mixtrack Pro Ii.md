@@ -142,17 +142,17 @@ press one of the other pads in the row to delete that Hotcue.
 
 ### 20\. FX 1 On/Off
 
-Turns FX 1 on and off per deck.  
+Toggle the 1st effect in the unit on/off.  
 **Shift + FX 1:** Sets and starts playback of a 1-beat autoloop.
 
 ### 21\. FX 2 On/Off
 
-Turns FX 2 on and off per deck.  
+Toggle the 2nd effect in the unit on/off.  
 **Shift + FX 2:** Sets and starts playback of a 2-beat autoloop.
 
 ### 22\. FX 3 On/Off
 
-Turns FX 3 on and off per deck.  
+Toggle the 3rd effect in the unit on/off.  
 **Shift + FX 3:** Sets and starts playback of a 4-beat autoloop.
 
 ### 23\. Tap

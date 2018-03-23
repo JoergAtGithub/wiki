@@ -164,7 +164,7 @@ of the track.
 
 ### 24\. Channel Volume
 
-Adjusts the volume of the individual channels in the software.
+Adjusts the volume of the deck
 
 ### 25\. Master Gain
 

@@ -111,7 +111,7 @@ Hotcue 1 has already been set, this control will jump to Hotcue 1.
 
 Function of this button depends on the current Pad Mode.  
 **Shift + Loop Out:** Sets the current pad mode to “Sample Mode".  
-**Loop Mode:** Press this pad to set the end of a loop.  
+**Loop Mode:** Set the end of a loop.  
 **Sample Mode:** Plays the sample assigned to Sampler 2 (left deck) or
 Sampler 6 (right deck).  
 **Cue Mode:** If Hotcue 2 has not already been set for the loaded track,
@@ -122,9 +122,8 @@ Hotcue 2 has already been set, this control will jump to Hotcue 2.
 
 Function of this button depends on the current Pad Mode.  
 **Shift + Reloop:** Sets the current pad mode to "Cue Mode".  
-**Loop Mode:** Press this pad when inside a loop to turn the loop off.
-When this button is pressed again outside a loop, this will activate the
-loop and start playback from its Loop In point.  
+**Loop Mode:** Deactivate an active loop. If no loop is active, this
+will activate the loop and start playback from its Loop In point.  
 **Sample Mode:** Plays the sample assigned to Sampler 3 (left deck) or
 Sampler 7 (right deck).  
 **Cue Mode:** If Hotcue 3 has not already been set for the loaded track,
@@ -134,10 +133,8 @@ Hotcue 3 has already been set, this control will jump to Hotcue 3.
 ### 19\. Loop x1/2
 
 Function of this button depends on the current Pad Mode.  
-**Loop Mode:** Press this pad to cut the length of currently playing
-loop to half.  
-**Shift + Loop x1/2 when in Loop Mode:** Press this pad to double the
-length of the currently playing loop.  
+**Loop Mode:** Half the loop size.  
+**Shift + Loop x1/2 when in Loop Mode:** Double the loop size.  
 **Sample Mode:** Plays the sample assigned to Sampler 4 (left deck) or
 Sampler 8 (right deck).  
 **Cue Mode:** Toggles Hotcue Delete Mode. Press this button, and then

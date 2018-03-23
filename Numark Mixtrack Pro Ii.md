@@ -27,8 +27,7 @@ Rotate the knob to cycle through folders and tracks.
 
 ### 2\. Load
 
-Press one of these buttons while a track is selected to assign it to
-Deck 1 or 2, respectively, in the software.
+Load the track selected in the library to the deck
 
 ### 3\. Back
 

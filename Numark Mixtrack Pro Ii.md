@@ -178,15 +178,15 @@ Controls the blend between the two decks.
 
 ### 27\. High EQ
 
-Controls the treble frequencies for the individual channels.
+Controls the treble frequencies for the deck.
 
 ### 28\. Mid EQ
 
-Controls the mid range frequencies for the individual channels.
+Controls the mid range frequencies for the deck.
 
 ### 29\. Low EQ
 
-Controls the bass frequencies for the individual channels.
+Controls the bass frequencies for the deck.
 
 ### 30\. Cue Gain
 

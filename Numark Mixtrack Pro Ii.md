@@ -89,7 +89,7 @@ Enables BPM syncing between decks.
 
 ### 14\. Effect Control
 
-Adjusts effect.  
+Adjusts effect metaknobs.  
 **Shift + Effect Control:** Selects effect.
 
 ### 15\. Beats

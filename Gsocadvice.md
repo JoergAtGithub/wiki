@@ -36,8 +36,8 @@ beginning your application. Here are some ways to get started:
     for.
   - Introduce yourself on our [Zulip
     chat](https://mixxx.zulipchat.com/). Start a new topic in the \#gsoc
-    stream. If the first question you ask is answered on this page, you
-    will not be accepted.
+    stream. If the first question you ask is clearly answered on this
+    page, you will not be accepted.
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
   - [Test pull requests](testing).

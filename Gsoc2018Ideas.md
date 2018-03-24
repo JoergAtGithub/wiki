@@ -5,8 +5,8 @@ part of [Google Summer of
 Code 2018](https://summerofcode.withgoogle.com/). Each of these projects
 represents something that we think would make a really big difference to
 our users and that we as a development team are really excited about. If
-you are interested in applying to GSOC, read [GSoC Advice](gsocadvice)
-before applying or getting involved.
+you are interested in applying to GSoC, **read [GSoC Advice](gsocadvice)
+before applying or getting involved.**
 
 An application from a student who we are not familiar with will *NOT* be
 accepted. You must have some interaction with the Mixxx community before
@@ -16,10 +16,10 @@ not be able to write a better proposal than students who started getting
 involved weeks ago.** You are welcome to try again next year and start
 earlier.
 
-**A GSoC application that simply repeats the project description will
-NOT be accepted. We expect you to think about the feature and how it
-aligns with Mixxx's goals, describe potential use cases and propose a
-plan for implementing a solution.**
+A GSoC application that simply repeats the project description will NOT
+be accepted. We expect you to think about the feature and how it aligns
+with Mixxx's goals, describe potential use cases and propose a plan for
+implementing a solution.
 
 # Beatgrid Enhancements
 

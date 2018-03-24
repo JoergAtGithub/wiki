@@ -8,9 +8,8 @@ our users and that we as a development team are really excited about. If
 you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
 before applying or getting involved.
 
-**If you are reading this for the first time now, you will not be able
-to write a better proposal than students who started getting involved
-weeks ago.** An application from a student who we are not familiar with
+**If you are reading this for the first time now, you will not be
+accepted.** An application from a student who we are not familiar with
 will *NOT* be accepted. You are welcome to try again next year and start
 earlier. You must have some interaction with the Mixxx community before
 the days leading up to the application deadline for your application to

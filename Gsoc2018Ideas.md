@@ -13,10 +13,12 @@ NOT be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, outline potential use-cases and propose a
 plan for implementing a solution.**
 
-**Also, an application from a student who we are not familiar with will
+Also, an application from a student who we are not familiar with will
 NOT be accepted. You must have some interaction with the Mixxx community
 before the days leading up to the application deadline for your
-application to be accepted.**
+application to be accepted. **If you are just reading this for the first
+time now, it is highly unlikely that you will write a better proposal
+than students who started getting involved weeks ago.**
 
 # Beatgrid Enhancements
 

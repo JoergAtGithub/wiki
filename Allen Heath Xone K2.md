@@ -142,8 +142,30 @@ unit to the corresponding deck. You can look down a column to see which
 decks an effect unit is assigned to or you can look across a row to see
 which effect units are assigned to a deck.
 
-The bottom left layer button currently does nothing to effects columns.
-Also, the bottom encoders are not mapped in the 4 effect unit layout.
+The bottom encoders are not mapped in the 4 effect unit layout.
+
+### Effect unit focusing
+
+In addition to focusing one effect in a unit at a time with the
+[Standard Effects Mapping](Standard%20Effects%20Mapping), the Xone K2/K1
+has another mode for focusing a whole effect unit. This allows for
+controlling the parameters of all 3 effects in the unit at a time. This
+mode is only available on the 4 effect unit layouts. To access it, press
+the Layer button in the bottom left. Press one of the top encoders to
+choose which effect unit to focus.
+
+In this mode, each horizontal row of knobs and buttons controls one
+effect. The button in the leftmost column controls the enable button of
+the effect and turns amber when it is on. The rest of the buttons
+control the button parameters of the effect and turn green when active
+(not all effects have button parameters). The faders still control the
+dry/wet knobs and the bottom button grid still controls the routing
+buttons.
+
+To get back to controlling all 4 effect units, press the Layer button
+again. The next time Layer is pressed, the effect unit that was focused
+before will be remembered (but it will not be remembered after
+restarting Mixxx).
 
 ## Troubleshooting
 

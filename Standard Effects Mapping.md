@@ -29,12 +29,12 @@ When its LED is on, you can hold the button down to see which effect is
 focused without having to look at the computer screen. To unfocus the
 effect, you can short press the focus button. The focused effect is
 remembered, so when you short press the focus button again, the
-previously focused effect will be refocused. Alternatively, if you want
-to keep all the parameters showing on screen, you can press and hold the
-focus button, then press the button of the focused effect to unfocus it.
-Showing all the parameters without having an effect focused is helpful
-for experimenting with different ways of linking parameters to the
-metaknob.
+previously focused effect will be refocused (it is not remembered when
+you shut down Mixxx though). Alternatively, if you want to keep all the
+parameters showing on screen, you can press and hold the focus button,
+then press the button of the focused effect to unfocus it. Showing all
+the parameters without having an effect focused is helpful for
+experimenting with different ways of linking parameters to the metaknob.
 
 When the focus button is pressed with shift, it toggles the EffectUnit
 between controlling different EffectUnits in Mixxx. Typically this is

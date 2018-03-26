@@ -113,9 +113,11 @@ the same time activates supershift mode.
 ``` 
     * reloop/disable loop
     * shift: jump to to beginning of loop, stop playback, and activate loop
+    * supershift: set loop in point. Hold to move loop in point within an active loop.
 * Bottom button 2 (green):
     * activate loop of selected size
     * shift: activate rolling loop of selected size
+    * supershift: set loop out point. Hold to move loop out point within an active loop.
 * Bottom button 3 (amber):
     * double loop size
     * shift: beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.

@@ -91,10 +91,11 @@ the same time activates supershift mode.
   - Top encoder press:
   - sync
   - shift: reset key
-  - supershift: reset tempo
+  - supershift: reset gain
   - Knobs: high/mid/low equalizer knobs
   - Top button 1:
   - headphones/PFL
+  - shift: reset tempo
   - supershift: set beatgrid to current position
   - Top button 2:
   - cue

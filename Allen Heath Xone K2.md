@@ -139,8 +139,8 @@ are green. When an effect is focused, the buttons are amber.
 
 The fader acts as the dry/wet knob. The bottom buttons assign the effect
 unit to the corresponding deck. You can look down a column to see which
-decks an effect unit is assigned to or you can look across a row to see
-which effect units are assigned to a deck.
+decks an effect unit is assigned. You can look across a row to see which
+effect units are assigned to a deck.
 
 The bottom encoders are not mapped in the 4 effect unit layout.
 

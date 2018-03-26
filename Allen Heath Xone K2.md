@@ -164,12 +164,13 @@ the Layer button in the bottom left. Press one of the top encoders to
 choose which effect unit to focus.
 
 In this mode, each horizontal row of knobs and buttons controls one
-effect. The button in the leftmost column controls the enable button of
-the effect and turns amber when it is on. The rest of the buttons
-control the button parameters of the effect and turn green when active
-(not all effects have button parameters). The faders still control the
-dry/wet knobs and the bottom button grid still controls the routing
-buttons.
+effect. The knobs control the parameters of the effects. Turning any of
+the knobs with shift loads different effects. The button in the leftmost
+column controls the enable button of the effect and turns amber when it
+is on. The rest of the buttons control the button parameters of the
+effect and turn green when active (not all effects have button
+parameters). The faders still control the dry/wet knobs and the bottom
+button grid still controls the routing buttons.
 
 To get back to controlling all 4 effect units, press the Layer button
 again. The next time Layer is pressed, the effect unit that was focused

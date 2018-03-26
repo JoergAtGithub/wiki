@@ -139,10 +139,17 @@ the effect focus button. When no effect is focused, the buttons are red.
 When holding the top encoder to choose an effect to focus, the buttons
 are green. When an effect is focused, the buttons are amber.
 
-The fader acts as the dry/wet knob. The bottom buttons assign the effect
-unit to the corresponding deck. You can look down a column to see which
-decks an effect unit is assigned. You can look across a row to see which
-effect units are assigned to a deck.
+The fader acts as the dry/wet knob.
+
+The bottom buttons assign the effect unit to different input channels
+and light up red. On the two deck layouts, from top to bottom, they
+assign the effect unit to deck 1, deck 2, master mix, and headphones. On
+the four effect unit layouts, they assign the effect unit to decks 1-4
+going down the column. You can look down a column to see which decks an
+effect unit is assigned. You can look across a row to see which effect
+units are assigned to a deck. When shift is pressed, the bottom two
+buttons switch to controlling the routing buttons for the master and
+headphones channels and light up amber.
 
 The bottom encoders are not mapped in the 4 effect unit layout.
 

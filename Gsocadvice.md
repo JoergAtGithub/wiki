@@ -106,7 +106,7 @@ that in your application.
 
 Of course if you do have direct experience with the tools we use, you
 should definitely tell us about that too. The main external tools we
-rely on are Qt, SQLite, and Git.
+rely on are Qt and Git.
 
 ## Our expectations from students
 

@@ -69,11 +69,10 @@ occupy the upper 5 buttons. Their functions from top to bottom:
 
 [[/media/szdavid92-lp-mki-layout.png|layout]]
 
-**Modifier keys** are located on the lower 2 buttons of the sidebar, and
-used for the same purpose as you would expect on a computer keyboard.
-
-The figures show Shift in **bold**, Ctrl in *italic*, Ctrl+Shift in
-***bold italic***.
+**Modifier keys** are located on the lower 2 buttons of the sidebar.
+Holding these and pressing other buttons activates alternate
+functionality. The figures show Shift in **bold**, Ctrl in *italic*,
+Ctrl+Shift in ***bold italic***.
 
 > Note: For some controls the modifier keys will act like toggles, but
 > the modifier keys themselves are never toggled globally.

@@ -43,6 +43,9 @@ here for Mixxx 1.9)**
 
 ## Technical Stuff
 
+There are two techniques of colour changing implemented. A color
+filtering, for changing pixmaps and a color schema style sheet.
+
 The color filtering architecture is implemented as a chain of plugins
 which are queried by the user interface code as the skin is initialised.
 The filter chain is configured by a series of elements in the skin's

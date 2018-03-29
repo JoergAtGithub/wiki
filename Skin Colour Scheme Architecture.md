@@ -17,13 +17,13 @@ HSVTweak values.
 
 ## Color Scheme Demo
 
-Mixxx comes pre-loaded with several skins. In Mixxx 1.11 the only ones
-with build-in color schemes are the **Outline** skins.
+Mixxx comes pre-loaded with several skins. In Mixxx 2.1 the only one
+with build-in color schemes is the **Shade** skins.
 
 How to change a skin and the skins color scheme in Mixxx
 
   - Go to the *Interface* tab in the preferences dialog
-  - Select one of the *Outline* skins like in the picture below 
+  - Select one of the *Shade* skins like in the picture below 
   - Select a scheme from the drop down and click ok.
 
 If you select a skin that does not support color schemes, the *Scheme*

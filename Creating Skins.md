@@ -2702,14 +2702,23 @@ singleton does not actually appear where it is defined.
 
 Example definition:
 
-``` 
-  <SingletonDefinition>
+|                                                                                                                                                                             |                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `   <SingletonDefinition>
     <ObjectName>LibrarySingleton</ObjectName>
     <Children>
       <Template src="skin:library.xml"/>
     </Children>
   </SingletonDefinition>
-```
+ ` | `
+
+
+
+The skin:prefex is replaced by the skin folder first, if this fails the current directory is used
+
+
+
+` |
 
 The ObjectName is used to identify this singleton elsewhere in the skin
 files.

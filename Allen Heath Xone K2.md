@@ -121,12 +121,12 @@ the same time activates supershift mode.
     * shift: activate rolling loop of selected size
     * supershift: set loop out point. Hold to move loop out point with play position.
 * Bottom button 3 (amber):
-    * double loop size
-    * shift: beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+    * beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+    * shift: double loop size
     * supershift: double beatjump size
 * Bottom button 4 (amber):
-    * halve loop size
-    * shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+    * beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+    * shift: halve loop size
     * supershift: halve beatjump size
 * Bottom buttons (hotcue layer, red):
 * activate hotcues 1-4 or set the hotcue if the is not one set yet

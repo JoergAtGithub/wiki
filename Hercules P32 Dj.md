@@ -72,6 +72,9 @@ gEdit) and editing the lines at the very top of the file.
     are assigned to the left of the crossfader and the samplers
     controlled by the right pad grid are assigned to the right of the
     crossfader.
+  - **toggleEffectUnitsWithDecks**\*: whether to automatically toggle
+    the effect unit controls between units 1 & 3 on the left and units 2
+    & 4 on the right when toggling decks between decks 1 & 3 and 2 & 4
 
 ### Encoders
 

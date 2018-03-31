@@ -54,7 +54,7 @@ Download and install git from
 We recommend using [TortoiseGit](https://code.google.com/p/tortoisegit/)
 on Windows since using the terminal on Windows is a giant pain.
 
-## OS X
+## macOS
 
 Git comes preinstalled in macOS.
 

@@ -51,10 +51,9 @@ If you like you may install a additional GUI Tools like:
 ## Windows
 
 Download and install git from
-[git-scm.org](http://git-scm.com/downloads/).
-
-We recommend using [TortoiseGit](https://code.google.com/p/tortoisegit/)
-on Windows since using the terminal on Windows is a giant pain.
+[git-scm.org](http://git-scm.com/downloads/). We recommend using
+[TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows since
+using the terminal on Windows is a giant pain.
 
 ## macOS
 

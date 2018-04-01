@@ -79,7 +79,7 @@ The Effect Unit number is the same as the channel/deck number, so the
 channel that controls the knobs/buttons/faders of deck 1 also controls
 the knobs of EffectUnit1, Channel 2 controls EffectUnit2, and so on.
 
-### FX Mode
+#### FX Mode
 
 [[/media/hardware/behringer/channelstriplabeled-min.png|]]
 
@@ -99,7 +99,7 @@ their own section.
   - Third: Reassing Channel Sequence (resets mapping back do the global
     defaults (look at global vars))
 
-#### Buttons
+### Buttons
 
 #### Deck Mode
 

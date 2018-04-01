@@ -37,23 +37,6 @@ There are four global variables at the top of the script file:
   - standardKnobBehavior: Defines the mapping of the knobs when Mixxx
     starts
 
-### Modifiers
-
-There are two modifier buttons in this mapping, \[*SHIFT*\] and
-\[**CTRL**\]. These allow each button to have up to four
-functionalities. They behave like the normal Shift and Control keys on a
-computer keyboard. Most of the features can be explained via the
-renderings where the functionalities are marked by the formatting of the
-Text (\[*SHIFT*\] and \[**CTRL**\]).
-
-### Channels
-
-Each Channel can be put into Deck or FX Mode, as well as reassigned to a
-different Deck/FxUnit on the fly or via a variable at the top of the
-script. This makes it possible for people that only use two decks to use
-the other channels for controlling an EffectUnit instead of wasting the
-unused controls.
-
 ### Top row
 
 [[/media/hardware/behringer/behringercmdmm1-toprowlabeled.png|]]
@@ -61,8 +44,12 @@ unused controls.
 The Out 1 knob controls the Master balance and the Out 2 knob controls
 the Master gain.
 
-You can see the L/R buttons besides the encoder as Shift and Ctrl
-buttons.
+You can see the L/R buttons besides the encoder as \[*SHIFT*\] and
+\[**CTRL**\] buttons. These allow each button to have up to four
+functionalities. They behave like the Shift and Control keys on a
+computer keyboard. Most of the features can be explained via the
+renderings where the functionalities are marked by the formatting of the
+Text (\[*SHIFT*\] and \[**CTRL**\]).
 
 The encoder in the middle is able to browse the library and jump on the
 preview deck (16 steps) while holding shift. When pressing the encoder,
@@ -76,14 +63,18 @@ The Cue Vol/Mix knobs have no alternative functionality.
 
 [[/media/hardware/behringer/behringercmdmm1-knoboptionslabeled.png|]]
 
-The Knobs have three different mappings which can be cycled while in
-operation. (more on that later) The first one is the standard
-\[High,Mid,Low,Quickeffect\]-Combo. The second one shifts everything up
-and is mapped to \[Gain,High,Mid,Low\] which some people might prefer.
-The third one controls the EffectUnits \[Meta1,Meta2,Meta3,Mix\]. The
-Effectunit is based on the channel/deck number, so the channel that
-controls the knobs/buttons/faders of channel 1 also controls the knobs
-of EffectUnit1, Channel 2 controls EffectUnit2, etc.
+The Knobs have three different modes which can be cycled while in
+operation.
+
+``` 
+# Deck [High, Mid, Low, QuickEffect (filter by default)]
+# Deck [Gain, High, Mid, Low]
+# Effect Unit [Meta 1, Meta 2, Meta 3, Mix]. 
+```
+
+The Effect Unit number is the same as the channel/deck number, so the
+channel that controls the knobs/buttons/faders of deck 1 also controls
+the knobs of EffectUnit1, Channel 2 controls EffectUnit2, and so on.
 
 ### FX Mode
 

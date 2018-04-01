@@ -33,8 +33,8 @@ folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20fo
 with your text editor of choice (such as Notepad, TextEdit, Kate, or
 gEdit) and editing the lines at the very top of the file.
 
-  - channelNumber: The standard MIDI channel number of the CMD MM-1 is 5
-    but it can differ. If that is the case, you can change it here.
+  - channelNumber: change this if your [\#controller does not light
+    up](#controller%20does%20not%20light%20up)
   - invertColor: Swaps the colors which suits certain skins more
   - defaultChannelSequence: Defines how the channels are mapped when
     Mixxx starts

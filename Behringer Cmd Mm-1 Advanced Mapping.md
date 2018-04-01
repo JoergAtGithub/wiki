@@ -67,12 +67,14 @@ There are four global variables at the top of the script:
 
 [[/media/hardware/behringer/behringercmdmm1-toprowlabeled.png|]]
 
-The Out1 and Out2 buttons didn't have any obvious functionality so they
-control the knobs of the EffectUnits. You can see that they control the
-super-knobs of FxUnit1 & FxUnit2 in normal mode (no formating), The
+**NOTE:** The Out-Knobs now affect the Master balance/gain.
+
+~~The Out1 and Out2 buttons didn't have any obvious functionality so
+they control the knobs of the EffectUnits. You can see that they control
+the super-knobs of FxUnit1 & FxUnit2 in normal mode (no formating), The
 mix-knobs of FxUnit1 & FxUnit2 in shift mode (*italic*), the super-knobs
 of FxUnit3 & FxUnit4 in ctrl mode (**bold**) and the mix-knobs of
-FxUnit3 & FxUnit4 in thirdMode (***bold\&italic***).
+FxUnit3 & FxUnit4 in thirdMode (***bold\&italic***).~~
 
 You can see the L/R buttons besides the encoder as shift- and
 ctrlbuttons.

@@ -310,8 +310,8 @@ to the mixxx directory and run:
 
 If you used Homebrew, you need to set your compiler paths accordingly.
 In the below code you should customize `HOMEBREW_PATH` to the path where
-your Homebrew folder can be found. In this example we will use the
-default, `/usr/local`.
+your Homebrew folder can be found. Copy and paste the code below into
+\~/.bashrc:
 
     HOMEBREW_PATH=/usr/local
     # See the note below about the Opus workaround.
@@ -319,6 +319,8 @@ default, `/usr/local`.
     export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
     export LDFLAGS=-L$HOMEBREW_PATH/lib
     export QTDIR=$HOMEBREW_PATH/Cellar/qt5/%VERSION%/
+
+then run `source ~/.bashrc`.
 
 **Opus Workaround:** The version of libopus included with Homebrew has a
 bug where opusfile.h includes the file opus\_multistream.h. In order for
@@ -332,8 +334,6 @@ fixed in future versions of libopusfile.
 Change to the newly created `mixxx` directory, and use scons to compile
 and install:
 
-If you used the 1.11 branch, you must type `cd mixxx` twice.
-
     cd mixxx
     scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0 qt5=1
     scons bundle
@@ -345,8 +345,8 @@ scanning and relinking steps so if you want to avoid this you can skip
 
     ./mixxx --resourcePath res/
 
-So that it records res/ in mixxx.cfg as where to find skins etc instead
-of dying at startup.
+So that it records res/ in mixxx.cfg as where to find skins, controller
+mappings, and other resources instead of dying at startup.
 
 ### Optional: Use Clang to build
 

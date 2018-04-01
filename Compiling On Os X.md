@@ -282,6 +282,9 @@ and install:
     scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0 qt5=1
     scons bundle
 
+If you are compiling with Qt4, replace `qt5=1` with
+`qtdir=/usr/local/Cellar/qt\@4/4.8.7_3/`
+
 This should generate `Mixxx.app` which you can run by double-clicking on
 or typing `open Mixxx.app`. Generating the .app has some expensive
 scanning and relinking steps so if you want to avoid this you can skip

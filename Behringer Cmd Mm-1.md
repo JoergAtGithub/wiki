@@ -172,17 +172,21 @@ channel 2&4 by pressing the \[2\] button.
 
 ### Controller does not light up
 
-The issue is probably the MIDI channel of your MM-1. Behringer has a
-tool that can set the controller to a different MIDI channel. So your
-controller is probably set to the wrong channel. The easiest way to fix
-this is to use Behringers tool and set it do MIDI channel 5.
-<https://musicgroup-prod.mindtouch.us/04_BEHRINGER/CMD-_How_Do_I_Change_MIDI_Channel_On_My_CMD_Controller%3F>
-If you can't do that for some reason, you have to find out the channel
-your MM-1 is sending on at the time. Once you know that you should go
-change the line where it says "var CHANNELNUMBER = 5;" of the file
-"Behringer-CMD-MM-1-Advanced.js" in the folder with the mappings so
-there is the number of your channel instead of the 5. (IMPORTANT: NO
-PARENTHESES). The you have to find the file "Behringer
-CMD-MM-1.midi.xml" in the same folder and replace the 4 at the end of
-0x94, 0x84 and 0xB4 with your CHANNEL-NUMBER MINUS 1. Restart Mixxx and
-then it should work.
+The issue is probably the MIDI channel of your MM-1. Behringer had a
+tool that can set the controller to a different MIDI channel, however
+this is no longer available for download from Behringer's website. So
+you will have to modify the controller mapping to use the MIDI channel
+that your controller is set to. Refer to [MIDI Crash
+Course](midi_crash_course#sniffing_your_controller_with_mixxx) for how
+to see incoming MIDI messages from your controller.
+
+Once you know the MIDI channel of your controller, open the file
+`Behringer-CMD-MM-1-scripts.js` file in your [controller mapping file
+locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
+with your text editor of choice (such as Notepad, TextEdit, Kate, or
+gEdit) and replace the number `5` in the line where it says `var
+CHANNELNUMBER = 5;`. Then, open the file `Behringer CMD-MM-1.midi.xml`
+in the same folder and replace the 4 at the end of 0x94, 0x84 and 0xB4
+with your CHANNEL-NUMBER MINUS 1. Restart Mixxx, reload the mapping in
+Mixxx's preferences, and then it should work.

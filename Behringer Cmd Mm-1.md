@@ -88,7 +88,7 @@ The Knobs in FxMode overwrite the assigned mapping and are mapped as
 also mapped to the mix of the EffectUnit. The buttons are documented in
 their own section.
 
-#### MiddleButton/exShift
+### Middle button
 
 [[/media/hardware/behringer/behringercmdmm1-knobslabeled.png|]]
 

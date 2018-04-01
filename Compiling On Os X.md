@@ -43,9 +43,13 @@ already installed Homebrew and gotten it working:
 
 <!-- end list -->
 
-``` 
     brew install scons portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile
-```
+
+If you will be compiling with Qt4, also run:
+
+    brew tap cartr/qt4
+    brew tap-pin cartr/qt4
+    brew install qt@4
 
 **OPTIONAL:** To enable
 [libmodplug](http://modplug-xmms.sourceforge.net/) based module tracker

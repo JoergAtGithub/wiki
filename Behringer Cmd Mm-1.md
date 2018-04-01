@@ -8,7 +8,10 @@
 
 The Behringer CMD MM-1 is a flexible controller that controls 4 decks by
 default. The mapping can be easily configured to control any combination
-of decks and effect units.
+of decks and effect units. The [Behringer CMD DC-1](behringer_cmd_dc-1)
+and [Behringer CMD DV-1](behringer_cmd_dv-1) are designed to be used
+together with the CMD MM-1, but the CMD MM-1 can be used alone or with
+other controllers.
 
 The pictures above are a render and a real life photo. All following
 examples will be made with a help of a [3D
@@ -189,8 +192,3 @@ PARENTHESES). The you have to find the file "Behringer
 CMD-MM-1.midi.xml" in the same folder and replace the 4 at the end of
 0x94, 0x84 and 0xB4 with your CHANNEL-NUMBER MINUS 1. Restart Mixxx and
 then it should work.
-
-## See also
-
-  - [Behringer CMD DC-1](behringer_cmd_dc-1)
-  - [Behringer CMD DV-1](behringer_cmd_dv-1)

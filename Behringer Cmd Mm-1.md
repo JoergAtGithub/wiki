@@ -25,7 +25,13 @@ every channel in Deck mode:
 
 ### Mapping options
 
-There are four global variables at the top of the script file:
+There are a few user configurable options available for you to
+customize. You can change these by opening the
+`Behringer-CMD-MM-1-scripts.js` file in your [controller mapping file
+locations\#user controller mapping
+folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder)
+with your text editor of choice (such as Notepad, TextEdit, Kate, or
+gEdit) and editing the lines at the very top of the file.
 
   - channelNumber: The standard MIDI channel number of the CMD MM-1 is 5
     but it can differ. If that is the case, you can change it here.

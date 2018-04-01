@@ -67,22 +67,16 @@ There are four global variables at the top of the script:
 
 [[/media/hardware/behringer/behringercmdmm1-toprowlabeled.png|]]
 
-**NOTE:** The Out-Knobs now affect the Master balance/gain.
+The Out 1 knob controls the Master balance and the Out 2 knob controls
+the Master gain.
 
-~~The Out1 and Out2 buttons didn't have any obvious functionality so
-they control the knobs of the EffectUnits. You can see that they control
-the super-knobs of FxUnit1 & FxUnit2 in normal mode (no formating), The
-mix-knobs of FxUnit1 & FxUnit2 in shift mode (*italic*), the super-knobs
-of FxUnit3 & FxUnit4 in ctrl mode (**bold**) and the mix-knobs of
-FxUnit3 & FxUnit4 in thirdMode (***bold\&italic***).~~
+You can see the L/R buttons besides the encoder as Shift and Ctrl
+buttons.
 
-You can see the L/R buttons besides the encoder as shift- and
-ctrlbuttons.
-
-The Encoder in the middle is able to browse the library and jump on the
-previewdeck (16 steps) while holding shift. When pressing the encoder,
+The encoder in the middle is able to browse the library and jump on the
+preview deck (16 steps) while holding shift. When pressing the encoder,
 the selected/highlighted track in the library gets loaded into the
-previewdeck. The Previewdeck can be played/paused when holding shift
+preview deck. The preview deck can be played/paused when holding shift
 while pressing the encoder down.
 
 The Cue Vol/Mix knobs have no alternative functionality.
@@ -171,7 +165,7 @@ FxMode:
 
 ### Troubleshooting
 
-MY CONTROLLER DOESNT LIGHT UP, HELP\!\!\!11
+#### Controller does not light up
 
 The issue is probably the Midi-Channel of your MM-1. Behringer has a
 tool that allows every controller in the CMD-series to change its

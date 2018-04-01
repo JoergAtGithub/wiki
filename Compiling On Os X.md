@@ -11,18 +11,7 @@ should work up to El Captain (10.11.x).
 
 ## 1\. Install Xcode development tools
 
-You will need the [Xcode development
-tools](https://developer.apple.com/xcode/) installed. Xcode is a package
-provided by Apple containing compilers, libraries and additional tools
-required to develop applications for Mac OS X.
-
-#### Install Xcode on Mac OS X 10.9 Mavericks or later
-
-From OS X 10.9 Mavericks onward, installing the needed Command Line
-Tools is now possible directly and **without** installing the entire
-Xcode package first, no developer account is required either.
-
-Launch the Terminal, and type the following command string:
+Launch the Terminal application, and type the following command string:
 
 ``` 
   xcode-select --install
@@ -39,52 +28,6 @@ check this by trying to run gcc or make from the terminal). To install
 the latest available version of Xcode for your Mac OS X release, go to
 <https://developer.apple.com/download/>. Downloading it requires a free
 registration at Apple's developer site.
-
-#### Install Xcode on Mac OS X 10.7 Lion or later
-
-Get the latest version of Xcode for free using the [Mac App
-Store](http://itunes.apple.com/us/app/xcode/id448457090?mt=12).
-Alternatively download Xcode as a disk image from the [Apple developer
-website](https://developer.apple.com/downloads/index.action).
-Downloading it requires a free registration at Apple's developer site.
-
-After installing Xcode, the Command Line Tools for Xcode must be
-installed. Goto *Xcode \> Preferences \> Downloads \> Components \>
-Command line tools* and click *Install* or download the latest version
-for your OS manually from the [Apple developer
-website](https://developer.apple.com/downloads/index.action).
-
-#### Install Xcode on Mac OS X 10.6 Snow Leopard
-
-Xcode 3.2.6 is the last version that can be downloaded for free for
-users of Snow Leopard (10.6.x) . Downloading it requires a free
-registration at Apple's developer site (but a paid developer program
-membership is not required).
-[Download](https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_3.2.6_and_ios_sdk_4.3__final/xcode_3.2.6_and_ios_sdk_4.3.dmg)
-
-Xcode 4.2 for Snow Leopard (10.6.x) requires that you have a [PAID
-(99$/year) developer account](http://developer.apple.com/programs/mac/),
-it can NOT be downloaded or updated from the Mac App Store (MAS).
-[Download](https://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_4.2_with_ios_5_sdk/xcode_4.2_and_ios_5_sdk_for_snow_leopard.dmg)
-
-#### Install Xcode on Mac OS X 10.5 Leopard or earlier
-
-If you have an earlier release of Mac OS X, you may download the latest
-version of Xcode for OS X 10.5
-([v3.1.4](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20491))
-or for 10.4
-([v2.5](http://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=19907)).
-
-Older versions of Xcode can be be installed from your original Mac OS X
-Install Disc 2 as well, look at [this
-page](http://www.techsww.com/tutorials/operating_systems/macosx/tools/configuring_macosx_compile_install_software_xcode_tools.php)
-for a guide. Run Software Update after installation to get the latest
-version for your OS.
-
-If you need a specific older version, check the [Apple Developer Tools
-download
-archive](https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wo/5.1.17.2.1.3.3.1.0.1.1.0.3.1.3.3.1).
-Downloading it requires a free registration at Apple's developer site.
 
 ## 2\. Install build dependencies
 

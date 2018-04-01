@@ -6,9 +6,6 @@ knowledge about using and compiling with the command line (eg:
 ./configure, make). If you don’t, there is a basic guide available at
 <http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
 
-This guide is written for Snow Leopard (10.6.x) and Leopard (10.5.x) but
-should work up to El Captain (10.11.x).
-
 ## 1\. Install Xcode development tools
 
 Launch the Terminal application, and type the following command string:

@@ -47,8 +47,9 @@ gEdit) and editing the lines at the very top of the file.
 
 [[/media/hardware/behringer/behringercmdmm1-toprowlabeled.png|]]
 
-The Out 1 knob controls the Master balance and the Out 2 knob controls
-the Master gain.
+The top left knobs control the Master balance and Master gain. The top
+right knobs control the headphone gain and cue mix (PFL/master mix in
+Headphones output).
 
 You can see the L/R buttons besides the encoder as \[*SHIFT*\] and
 \[**CTRL**\] buttons. These allow each button to have up to four
@@ -62,8 +63,6 @@ preview deck (16 steps) while holding shift. When pressing the encoder,
 the selected/highlighted track in the library gets loaded into the
 preview deck. The preview deck can be played/paused when holding shift
 while pressing the encoder down.
-
-The Cue Vol/Mix knobs have no alternative functionality.
 
 ### Knobs
 

@@ -64,13 +64,11 @@ The Cue Vol/Mix knobs have no alternative functionality.
 [[/media/hardware/behringer/behringercmdmm1-knoboptionslabeled.png|]]
 
 The Knobs have three different modes which can be cycled while in
-operation.
+operation. The knobs in each mode, from top to bottom, control:
 
-``` 
-# Deck [High, Mid, Low, QuickEffect (filter by default)]
-# Deck [Gain, High, Mid, Low]
-# Effect Unit [Meta 1, Meta 2, Meta 3, Mix]. 
-```
+1.  Deck: High, Mid, Low, QuickEffect (filter by default)
+2.  Deck: Gain, High, Mid, Low
+3.  Effect Unit: Meta 1, Meta 2, Meta 3, Mix
 
 The Effect Unit number is the same as the channel/deck number, so the
 channel that controls the knobs/buttons/faders of deck 1 also controls

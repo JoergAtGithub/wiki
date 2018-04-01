@@ -3,7 +3,8 @@
 [[/media/hardware/behringer/behringer_cmd_mm-1-overall.jpg|behringer\_cmd\_mm-1-overall.jpg]]
 [[/media/hardware/behringer/behringer_cmd_mm-1-overall-irl.jpg|behringer\_cmd\_mm-1-overall-irl.jpg]]
 
-\* [Forum thread](https://mixxx.org/forums/viewtopic.php?f=7&t=8762)
+  - [Forum
+    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9276)
 
 The Behringer CMD MM-1 is a flexible controller that controls 4 decks by
 default. The mapping can be easily configured to control any combination
@@ -21,24 +22,26 @@ every channel in Deck mode:
 
 ### Mapping options
 
-There are four global variables at the top of the script:
+There are four global variables at the top of the script file:
 
-  - channelNumber: The standard channelnumber of the CMD MM-1 is 5 but
-    it can differ. If thats the case you can change it here
+  - channelNumber: The standard MIDI channel number of the CMD MM-1 is 5
+    but it can differ. If that is the case, you can change it here.
   - invertColor: Swaps the colors which suits certain skins more
-  - defaultChannelSequence: Defines how the channels are mapped by
-    default.
-  - channelMode: Defines if a channel is in Deck- or FxMode by default.
-  - standardKnobBehavior: Defines the default mapping of the knobs.
+  - defaultChannelSequence: Defines how the channels are mapped when
+    Mixxx starts
+  - channelMode: Defines if a channel is in Deck or FX Mode when Mixxx
+    starts
+  - standardKnobBehavior: Defines the mapping of the knobs when Mixxx
+    starts
 
 ### Modifiers
 
-There are two modifiers buttons in this mapping: \[*SHIFT*\] and
-\[**CTRL**\] These allow each button to have up to four functionalities.
-They behave like the normal shift and control keys on your PC-Keyboard.
-Most of the features can be explained via the renderings where the
-functionalities are marked by the formatting of the Text (\[*SHIFT*\]
-and \[**CTRL**\]).
+There are two modifier buttons in this mapping, \[*SHIFT*\] and
+\[**CTRL**\]. These allow each button to have up to four
+functionalities. They behave like the normal Shift and Control keys on a
+computer keyboard. Most of the features can be explained via the
+renderings where the functionalities are marked by the formatting of the
+Text (\[*SHIFT*\] and \[**CTRL**\]).
 
 ### Channels
 

@@ -20,7 +20,7 @@ is a plain text file that can be read with any text editor.
     Windows 7 and up, extensions for known file types are set to hidden.
     See [How to show or hide file name extensions in Windows
     Explorer](http://support.microsoft.com/kb/865219).
-  - **macOS:** `/Users/<username>/Library/Application Support/Mixxx`
+  - **macOS:** `~/Library/Application Support/Mixxx`
   - Note: The user library folder is hidden by default, so use one of
     the following methods to open the Mixxx folder.
 
@@ -29,7 +29,7 @@ is a plain text file that can be read with any text editor.
 ``` 
     * __Method A__:
     * In the Finder, choose Go > Go To Folder.
-    * In the Go To Folder dialog, type ''~Library/Application Support/Mixxx''
+    * In the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
     * Click Go.
     * __Method B__:
     * Hold down the Alt (Option) key when using the Go menu

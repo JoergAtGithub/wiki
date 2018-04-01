@@ -5,8 +5,12 @@
 
 \* [Forum thread](https://mixxx.org/forums/viewtopic.php?f=7&t=8762)
 
-This is a render and a real life photo. All following examples will be
-made with a help of a [3D
+The Behringer CMD MM-1 is a flexible controller that controls 4 decks by
+default. The mapping can be easily configured to control any combination
+of decks and effect units.
+
+The pictures above are a render and a real life photo. All following
+examples will be made with a help of a [3D
 model](http://stunkit.com/data/files/etc/cmd-mm-1.blend.zip).
 
 This demonstration video shows how the mapping works by default with

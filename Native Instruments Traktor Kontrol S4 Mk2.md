@@ -86,10 +86,17 @@ decks.
 The Loop Size select knob is not fully implemented. Currently, pressing
 the "Loop Set" knob always creates an 8 bar loop, and turning the knob
 will change the size of existing loops. This will be fixed in a future
-update to allow creation of arbitrary-sized loops.
+update to allow creation of arbitrary-sized loops. (Fixed in 2.1)
 
 The FX Mode button changes which effect is loaded in the FX bank.
 Currently only one effect can be loaded in each bank.
+
+\*\*Additions in 2.1: \*\*
+
+  - FX buttons turn on or off the FX, with Shift+FX cycling through the
+    effects.
+  - Snap button toggles library fullscreen
+  - Loop record button repurposed for set recording
 
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
@@ -102,6 +109,9 @@ and pressing certain buttons.
     previewing.
   - Shift + Load will eject the track.
   - Shift + Remix Slot will create a loop of predetermined size.
+  - Shift + Gain up/down will move the beatgrid (added in 2.1)
+  - Shift + Wheel nudge allows fast search through track when not
+    playing (added in 2.1)
 
 The Master Volume knob on the S4 controls the volume of the S4's master
 output in hardware, so it does not affect the software master gain knob

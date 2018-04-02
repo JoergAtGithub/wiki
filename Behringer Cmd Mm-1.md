@@ -1,7 +1,6 @@
 # Behringer CMD MM-1
 
-[[/media/hardware/behringer/behringer_cmd_mm-1-overall.jpg|behringer\_cmd\_mm-1-overall.jpg]]
-[[/media/hardware/behringer/behringer_cmd_mm-1-overall-irl.jpg|behringer\_cmd\_mm-1-overall-irl.jpg]]
+[[/media/hardware/behringer/behringercmdmm1overview.png|]]
 
   - [Forum
     thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=9276)
@@ -11,14 +10,15 @@ default. The mapping can be easily configured to control any combination
 of decks and effect units. The [Behringer CMD DC-1](behringer_cmd_dc-1)
 and [Behringer CMD DV-1](behringer_cmd_dv-1) are designed to be used
 together with the CMD MM-1, but the CMD MM-1 can be used alone or with
-other controllers.
+other controllers (especially the [Novation
+Launchpad](novation_launchpad_mapping_by_szdavid92))
 
-The pictures above are a render and a real life photo. All following
-examples will be made with a help of a [3D
+All following examples will be made with a help of a [3D
 model](http://stunkit.com/data/files/etc/cmd-mm-1.blend.zip).
 
 This demonstration video shows how the mapping works by default with
-every channel in Deck mode:
+every channel in Deck mode: (*Outdated*)
+
 [[[/media/hardware/behringer/behringer_cmd_mm-1-youtube.jpg|behringer\_cmd\_mm-1-youtube.jpg]]](https://www.youtube.com/watch?v=33t6J1hUFjM)
 
 ## Mapping description

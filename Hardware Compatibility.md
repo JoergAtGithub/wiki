@@ -123,17 +123,17 @@ move your controller to this table.
 | [Novation Dicer](Novation%20Dicer)                                                                 | $100 \[13\]        | pads for use with turntables            | no                         | N/A              | MIDI            | 1.10                          | 2010     |
 | [Hercules DJ Control Instinct S](Hercules%20DJ%20Control%20Instinct)                               | $100               | basic 2 deck                            | yes                        | no               | MIDI            | 1.10.1                        | 2015     |
 | [Novation Launchpad Mk2](Novation%20Launchpad%20Mk2)                                               | $150               | pad grid                                | no                         | N/A              | MIDI            | 2.1\[14\]                     | 2015     |
-| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                       | $100               | 4 deck mixer                            | no                         | no               | MIDI            | 2.1\[15\]                     | 2013     |
-| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150               | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 2.1\[16\]                     | 2015     |
-| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200               | 2 deck \[17\] all-in-one                | yes                        | no               | MIDI            | 2.1\[18\]                     | 2013     |
-| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200               | 2 deck all-in-one                       | yes                        | no               | MIDI            | 2.1\[19\]                     | 2015     |
+| [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150               | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 2.1\[15\]                     | 2015     |
+| [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200               | 2 deck \[16\] all-in-one                | yes                        | no               | MIDI            | 2.1\[17\]                     | 2013     |
+| [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200               | 2 deck all-in-one                       | yes                        | no               | MIDI            | 2.1\[18\]                     | 2015     |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250               | miscellaneous                           | no                         | N/A              | MIDI            | 1.11                          | 2012     |
-| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250               | 2 deck\[20\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2015     |
+| [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250               | 2 deck\[19\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2015     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250               | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2011     |
-| [Denon MC4000](Denon%20MC4000)                                                                     | $400               | 2 deck controller and mixer             | yes                        | yes              | MIDI            | 2.1\[21\]                     | 2015     |
+| [Denon MC4000](Denon%20MC4000)                                                                     | $400               | 2 deck controller and mixer             | yes                        | yes              | MIDI            | 2.1\[20\]                     | 2015     |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700               | 4 deck all-in-one                       | yes                        | yes              | MIDI            | 2.0                           | 2015     |
 | [Akai MPD24](Akai%20MPD24)                                                                         | discontinued       | miscellaneous                           | no                         | N/A              | MIDI            | 1.8                           | 2007     |
 | [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.11                          | 2006     |
+| [Behringer CMD MM-1](Behringer%20CMD%20MM-1)                                                       | discontinued       | 4 deck mixer                            | no                         | no               | MIDI            | 2.1\[21\]                     | 2013     |
 | [American Audio Radius 1000 / 2000 / 3000](American%20Audio%20Radius%201000%20/%202000%20/%203000) | discontinued       | CD player                               | no                         | N/A              | MIDI            | 1.10                          | 2010     |
 | [Behringer BCD3000](Behringer%20BCD3000)                                                           | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.6                           | 2007     |
 | [Behringer CMD Micro](Behringer%20CMD%20Micro)                                                     | discontinued       | basic 2 deck                            | no                         | N/A              | MIDI            | 2.1\[22\]                     | 2013     |
@@ -585,18 +585,18 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 15. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-16. This mapping is compatible with Mixxx 2.0 and will be included with
-    Mixxx when Mixxx 2.1 is released.
+16. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
-17. 4 deck control available by toggling between decks 1/3 and decks 2/4
+17. This mapping is compatible with Mixxx 2.0 and will be included with
+    Mixxx when Mixxx 2.1 is released.
 
 18. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.
 
-19. This mapping is compatible with Mixxx 2.0 and will be included with
-    Mixxx when Mixxx 2.1 is released.
+19. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
-20. 4 deck control available by toggling between decks 1/3 and decks 2/4
+20. This mapping is compatible with Mixxx 2.0 and will be included with
+    Mixxx when Mixxx 2.1 is released.
 
 21. This mapping is compatible with Mixxx 2.0 and will be included with
     Mixxx when Mixxx 2.1 is released.

@@ -125,16 +125,16 @@ their own section.
 
 \[1\]&\[2\] Buttons:
 
-  - Normal: Toggle Channel1&2 for desired FxUnit
-  - Shift: Toggle Channel3&4 for desired FxUnit
-  - Ctrl: Toggle Effect 1&2 in desired FxUnit
+  - Normal: Toggle Effect 1&2 in desired FxUnit
+  - Shift: Toggle Channel1&2 for desired FxUnit
+  - Ctrl: Toggle Channel3&4 for desired FxUnit
   - Third: Change ChannelNumber/Assignment
 
 \[CUE\] Buttons:
 
-  - Normal: Pre-Fader-Listening for FxUnit
-  - Shift: assign to master
-  - Ctrl: Toggle Effect 3 for desired FxUnit
+  - Normal: Toggle Effect 3 for desired FxUnit
+  - Shift: Pre-Fader-Listening for FxUnit
+  - Ctrl: assign to master
   - Third: Change Channelmode
 
 ### Faders

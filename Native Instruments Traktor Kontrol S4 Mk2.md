@@ -156,7 +156,8 @@ actual edit only involves replacing a single word in a text file.
 There are some features we still plan to add to this mapping:
 
   - New effects interface in Mixxx 2.1
-  - Loop size readout / selection (fixed in 2.1)
-  - On Air indicator for shoutcast or set recording
+  - Loop size readout / selection (added in 2.1)
+  - On Air indicator for shoutcast or set recording (added in 2.1)
   - Find uses for other unused buttons
   - Microphone volume knob
+  - Fix manual looping

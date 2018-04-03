@@ -95,12 +95,25 @@ in Mixxx. Peak display is only generated from software, however. So if
 you see or hear clipping, lower the gain of the playing decks; adjusting
 the master volume knob on the S4 will not help.
 
-### Loop encoders
+### Looping
 
-Turning the Loop Size encoder on the right doubles or halves the loop
-size. Press the encoder to enable a loop of that size. Press the
-Activate encoder on the left to exit the loop or re-enable a loop that
-has already been set.
+  - right encoder turn: double/halve loop size
+  - right encoder press: activate loop of set size from current position
+  - right encoder turn + shift: adjust key
+  - right encoder press + shift: reset key
+
+<!-- end list -->
+
+  - left encoder turn: beatjump forward/backward by beatjump size (shown
+    on screen but not on controller), or move the loop by beatjump size
+    if there is a loop enabled
+  - left encoder press: re-enable a loop that has been set previously.
+    Pressing this before a loop will keep playing until the loop is
+    entered.
+  - left encoder turn + shift: adjust beatjump size
+  - left encoder press + shift: jump to loop in point, activate loop,
+    and stop playback. This is helpful for preparing to mix a track in
+    with a loop.
 
 ### Effects
 

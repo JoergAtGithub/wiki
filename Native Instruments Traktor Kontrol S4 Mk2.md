@@ -79,11 +79,16 @@ cue point.
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-  - Shift + Load will eject the track.
-  - Shift + Remix Slot will create a loop of predetermined size.
-  - Shift + Gain up/down will move the beatgrid
-  - Shift + Wheel nudge allows fast search through track when not
-    playing
+### Mixer section
+
+  - Gain, equalizer high/mid/low, and cue (headphones) behave as
+    labelled.
+  - Filter: controls QuickEffect superknob. This controls the Filter
+    effect, but a different effect can be chosen in the Equalizer
+    section of Mixxs's Preferences.
+  - Snap: toggles library fullscreen
+  - Loop record: toggles whether Mixxx is recording your set
+  - Shift + Gain: up/down will move the beatgrid
 
 The Master Volume knob on the S4 controls the volume of the S4's master
 output in hardware, so it does not affect the software master gain knob
@@ -91,7 +96,14 @@ in Mixxx. Peak display is only generated from software, however. So if
 you see or hear clipping, lower the gain of the playing decks; adjusting
 the master volume knob on the S4 will not help.
 
-### Looping
+### Decks
+
+  - Shift + Load will eject the track.
+  - Shift + Wheel nudge allows fast search through track when not
+    playing
+  - Shift + Remix Slot: create a loop of predetermined size.
+
+#### Looping
 
   - right encoder turn: double/halve loop size. The loop size is shown
     on the controller. A dot on the right indicates a fractional loop
@@ -133,9 +145,6 @@ Mapping](Standard%20Effects%20Mapping).
 
 The buttons at the top of each mixer column control which decks are
 routed to which effects units.
-
-  - Snap button toggles library fullscreen
-  - Loop record button repurposed for set recording
 
 ### Mapping options
 

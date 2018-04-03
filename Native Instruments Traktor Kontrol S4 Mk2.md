@@ -159,14 +159,3 @@ actual edit only involves replacing a single word in a text file.
     right click the file and select an option to edit it.
 6.  At the top of the file will be short instructions explaining what to
     do.
-
-### TODO
-
-There are some features we still plan to add to this mapping:
-
-  - New effects interface in Mixxx 2.1
-  - Loop size readout / selection (added in 2.1)
-  - On Air indicator for shoutcast or set recording (added in 2.1)
-  - Find uses for other unused buttons
-  - Microphone volume knob
-  - Fix manual looping

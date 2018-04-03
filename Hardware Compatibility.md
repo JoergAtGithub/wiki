@@ -130,6 +130,7 @@ move your controller to this table.
 | [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250               | 2 deck\[19\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2015     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250               | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2011     |
 | [Denon MC4000](Denon%20MC4000)                                                                     | $400               | 2 deck controller and mixer             | yes                        | yes              | MIDI            | 2.1\[20\]                     | 2015     |
+| [Native Instruments Traktor Kontrol S4 Mk2](Native%20Instruments%20Traktor%20Kontrol%20S4%20Mk2)   | $600               | 4 deck all-in-one                       | yes                        | yes              | HID             | 2.1                           | 2013     |
 | [Denon MC6000MK2](Denon%20MC6000MK2)                                                               | $700               | 4 deck all-in-one                       | yes                        | yes              | MIDI            | 2.0                           | 2015     |
 | [Akai MPD24](Akai%20MPD24)                                                                         | discontinued       | miscellaneous                           | no                         | N/A              | MIDI            | 1.8                           | 2007     |
 | [Behringer BCD2000](Behringer%20BCD2000)                                                           | discontinued       | basic 2 deck                            | yes                        | no               | MIDI            | 1.11                          | 2006     |
@@ -292,15 +293,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="odd">
-<td><a href="Native Instruments Traktor Kontrol S4 Mk2">Native Instruments Traktor Kontrol S4 Mk2</a></td>
-<td>$600</td>
-<td>4 deck all-in-one</td>
-<td>yes</td>
-<td>yes</td>
-<td>HID</td>
-<td>2013</td>
-</tr>
-<tr class="even">
 <td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
 <td>$100</td>
 <td>1 deck controller</td>
@@ -309,7 +301,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a><br />
 <a href="Resident DJ-kontrol 3">(Resident DJ-kontrol 3 identically?)</a></td>
 <td>$200</td>
@@ -319,7 +311,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
 <td>$100</td>
 <td>2 deck controller</td>
@@ -328,7 +320,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Roland DJ-202">Roland DJ-202</a></td>
 <td>$300</td>
 <td>2 deck[44] all-in-one</td>

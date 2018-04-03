@@ -137,13 +137,13 @@ the master volume knob on the S4 will not help.
 
 ### Effects
 
-The knob on the right of each effect unit controls the mix (dry/wet)
-knob for all 3 effects in the unit. The other knobs control the
-metaknobs of the effects. The buttons below the metaknobs control the
-effect enable buttons. When pressed with shift, they cycle through the
-available effects. The button below the mix knob toggles whether the
-effect parameters are showing on screen. This will be expanded in a
-future update to implement the [Standard Effects
+The knob on the left of each effect unit controls the mix (dry/wet) knob
+for all 3 effects in the unit. The other knobs control the metaknobs of
+the effects. The buttons below the metaknobs control the effect enable
+buttons. When pressed with shift, they cycle through the available
+effects. The button below the mix knob toggles whether the effect
+parameters are showing on screen. This will be expanded in a future
+update to implement the [Standard Effects
 Mapping](Standard%20Effects%20Mapping).
 
 The buttons at the top of each mixer column control which decks are

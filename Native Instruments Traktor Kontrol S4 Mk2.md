@@ -72,12 +72,8 @@ manual](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sy
 for details.
 
 Mixxx does not have remix decks, so the four remix slot buttons control
-the samplers. Press an unlit button to load the track selected into the
-library into a sampler. Press a lit button to play the sampler from its
-cue point.
-
-There are some more bonus actions that can be accessed by holding shift
-and pressing certain buttons.
+the samplers. There are some more bonus actions that can be accessed by
+holding shift and pressing certain buttons.
 
 ### Mixer
 
@@ -98,6 +94,14 @@ the master volume knob on the S4 will not help.
 
 ### Decks
 
+  - Small buttons with play icons: play a sampler from its cue point. If
+    no track is loaded in the sampler, the track selected in the library
+    will be loaded.
+  - Small buttons with play icons + shift: If sampler is playing, stop
+    it. If sampler is not playing, the loaded eject track from the
+    sampler.
+  - 1-4 numbered buttons: set/activate hotcue
+  - 1-4 numbered buttons + shift: clear hotcue
   - Shift + Load will eject the track.
   - Shift + Wheel nudge allows fast search through track when not
     playing

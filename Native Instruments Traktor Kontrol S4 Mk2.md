@@ -79,10 +79,10 @@ cue point.
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-### Mixer section
+### Mixer
 
-  - Gain, equalizer high/mid/low, and cue (headphones) behave as
-    labelled.
+  - Gain, effects routing, equalizer high/mid/low, and cue (headphones)
+    behave as labelled.
   - Filter: controls QuickEffect superknob. This controls the Filter
     effect, but a different effect can be chosen in the Equalizer
     section of Mixxs's Preferences.

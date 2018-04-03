@@ -95,7 +95,7 @@ Long-press this button to access the auto BPM function</td>
 <tr class="even">
 <td>10</td>
 <td>Touchpad (controller mode)</td>
-<td>Controls the effects of the DJ software</td>
+<td>Controls the effects of the DJ software. The vertical axis controls the mix (dry/wet) knob and the horizontal axis controls the super knob.</td>
 <td>Adjusts the Beats Multiplier (TODO)</td>
 </tr>
 <tr class="odd">

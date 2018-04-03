@@ -97,7 +97,9 @@ the master volume knob on the S4 will not help.
 
 ### Looping
 
-  - right encoder turn: double/halve loop size
+  - right encoder turn: double/halve loop size. The loop size is shown
+    on the controller. A dot on the right indicates a fractional loop
+    size. Two dots indicates a loop size larger than 99 beats.
   - right encoder press: activate loop of set size from current position
   - right encoder turn + shift: adjust key
   - right encoder press + shift: reset key

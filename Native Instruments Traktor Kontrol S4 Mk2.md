@@ -113,6 +113,13 @@ the master volume knob on the S4 will not help.
     and stop playback. This is helpful for preparing to mix a track in
     with a loop.
 
+<!-- end list -->
+
+  - In button: set loop in point manually. Hold pressed while moving the
+    jog wheel to finely adjust the loop in point.
+  - Out button: set loop out point manually. Hold pressed while moving
+    the jog wheel to finely adjust the loop out point.
+
 ### Effects
 
 The knob on the right of each effect unit controls the mix (dry/wet)

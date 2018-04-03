@@ -72,22 +72,18 @@ manual](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sy
 for details.
 
 Mixxx does not have remix decks, so the four remix slot buttons control
-the samplers.
+the samplers. Press an unlit button to load the track selected into the
+library into a sampler. Press a lit button to play the sampler from its
+cue point.
 
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
 
-  - Shift + Loop Move will adjust the musical pitch of the track without
-    changing the speed.
-  - Shift + pressing the Loop Move knob will reset the musical pitch to
-    natural.
-  - Shift + Loop Size will seek quickly through the track for easy
-    previewing.
   - Shift + Load will eject the track.
   - Shift + Remix Slot will create a loop of predetermined size.
-  - Shift + Gain up/down will move the beatgrid (added in 2.1)
+  - Shift + Gain up/down will move the beatgrid
   - Shift + Wheel nudge allows fast search through track when not
-    playing (added in 2.1)
+    playing
 
 The Master Volume knob on the S4 controls the volume of the S4's master
 output in hardware, so it does not affect the software master gain knob

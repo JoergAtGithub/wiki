@@ -94,6 +94,8 @@ the master volume knob on the S4 will not help.
 
 ### Decks
 
+  - Load: load track selected in library to the deck.
+  - Load + shift: eject track
   - Small buttons with play icons: play a sampler from its cue point. If
     no track is loaded in the sampler, the track selected in the library
     will be loaded.
@@ -102,10 +104,7 @@ the master volume knob on the S4 will not help.
     sampler.
   - 1-4 numbered buttons: set/activate hotcue
   - 1-4 numbered buttons + shift: clear hotcue
-  - Shift + Load will eject the track.
-  - Shift + Wheel nudge allows fast search through track when not
-    playing
-  - Shift + Remix Slot: create a loop of predetermined size.
+  - Wheel nudge + shift: fast search through track when not playing
 
 #### Looping
 

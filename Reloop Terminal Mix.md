@@ -154,3 +154,8 @@ Use the knob to adjust the curve from a smooth fade to a fast cut.
 
 *The remaining controls on the front of the unit adjust hardware
 parameters and are not MIDI-mappable.*
+
+#### Effects controls
+
+This mapping uses the [Standard Effects
+Mapping](Standard%20Effects%20Mapping).

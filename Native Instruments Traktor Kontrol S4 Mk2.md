@@ -80,8 +80,8 @@ holding shift and pressing certain buttons.
   - Gain, effects routing, equalizer high/mid/low, and cue (headphones)
     behave as labelled.
   - Filter: controls QuickEffect superknob. This controls the Filter
-    effect, but a different effect can be chosen in the Equalizer
-    section of Mixxs's Preferences.
+    effect by default, but a different effect can be chosen in the
+    Equalizer section of Mixxs's Preferences.
   - Snap: toggles library fullscreen
   - Loop record: toggles whether Mixxx is recording your set
   - Shift + Gain: up/down will move the beatgrid

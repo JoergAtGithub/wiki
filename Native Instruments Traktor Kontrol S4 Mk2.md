@@ -64,39 +64,15 @@ for a list of supported types of timecode.
 
 ## Mapping description
 
-Most of the functions are mapped as they appear on the device and most
-users coming from Traktor should not have a problem picking up and using
-the controller right away. While there is a lot of overlap between Mixxx
-and Traktor, some buttons on the S4 do not quite translate to Mixxx.
-This guide is not a replacement for the [Mixxx
-Manual](http://www.mixxx.org/manual/2.0/) and any questions not answered
-here ("What is keylock?") are addressed there.
-
 Note that Mixxx doesn't have the concept of a single "master" deck for
-sync. Instead, you should push and hold the sync button to "lock" sync
-on for all decks you want to remain in sync. Or you can push Shift +
-Sync to lock sync on. See [the Mixxx
+sync. Instead, push and hold the sync button to "lock" sync on for all
+decks you want to remain in sync. Or you can push Shift + Sync to lock
+sync on. Refer to [the Mixxx
 manual](http://www.mixxx.org/manual/2.0/chapters/djing_with_mixxx.html#master-sync)
 for details.
 
-Mixxx does not have remix decks, so the four remix slot buttons have
-been repurposed. By default, they will launch samples in the sampler
-decks.
-
-The Loop Size select knob is not fully implemented. Currently, pressing
-the "Loop Set" knob always creates an 8 bar loop, and turning the knob
-will change the size of existing loops. This will be fixed in a future
-update to allow creation of arbitrary-sized loops. (Fixed in 2.1)
-
-The FX Mode button changes which effect is loaded in the FX bank.
-Currently only one effect can be loaded in each bank.
-
-\*\*Additions in 2.1: \*\*
-
-  - FX buttons turn on or off the FX, with Shift+FX cycling through the
-    effects.
-  - Snap button toggles library fullscreen
-  - Loop record button repurposed for set recording
+Mixxx does not have remix decks, so the four remix slot buttons control
+the samplers.
 
 There are some more bonus actions that can be accessed by holding shift
 and pressing certain buttons.
@@ -119,14 +95,29 @@ in Mixxx. Peak display is only generated from software, however. So if
 you see or hear clipping, lower the gain of the playing decks; adjusting
 the master volume knob on the S4 will not help.
 
-### Unused controls
+### Loop encoders
 
-  - Snap button does nothing (in Mixxx, Quantize does both Quantizing
-    and Snapping)
-  - Master button does nothing, but lights up when sync is enabled
-  - Loop recorder knob and buttons do nothing
-  - FX knob buttons do nothing
-  - While the Flux button works, the Reset button does nothing
+Turning the Loop Size encoder on the right doubles or halves the loop
+size. Press the encoder to enable a loop of that size. Press the
+Activate encoder on the left to exit the loop or re-enable a loop that
+has already been set.
+
+### Effects
+
+The knob on the right of each effect unit controls the mix (dry/wet)
+knob for all 3 effects in the unit. The other knobs control the
+metaknobs of the effects. The buttons below the metaknobs control the
+effect enable buttons. When pressed with shift, they cycle through the
+available effects. The button below the mix knob toggles whether the
+effect parameters are showing on screen. This will be expanded in a
+future update to implement the [Standard Effects
+Mapping](Standard%20Effects%20Mapping).
+
+The buttons at the top of each mixer column control which decks are
+routed to which effects units.
+
+  - Snap button toggles library fullscreen
+  - Loop record button repurposed for set recording
 
 ### Mapping options
 

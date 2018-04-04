@@ -1,320 +1,185 @@
-# Translating Mixxx
+====== Translating Mixxx ======
 
-FIXME **Work in progress-** --- *[jus](jus) 2013/07/21*
+===== Introduction =====
 
-## Introduction
+==== Why translate ? ====
+Mixxx is written and documented in English, and use English for communication between developers, maintainers and users from all countries. However, English is not the primary language of most people, and they are more comfortable with their own native language.
 
-### Why translate ?
+Translating helps to reach a wider audience, provides a better user experience, and you can DJ using Mixxx in your mother tongue.
 
-Mixxx is written and documented in English, and use English for
-communication between developers, maintainers and users from all
-countries. However, English is not the primary language of most people,
-and they are more comfortable with their own native language.
+==== About Locales ====
+Locales customize programs to languages and regional dialects. Often locales correspond to countries, as is the case with Portuguese (Portugal) and Portuguese (Brazil). The default locale of Mixxx is English (United States) (en_US).
 
-Translating helps to reach a wider audience, provides a better user
-experience, and you can DJ using Mixxx in your mother tongue.
+You can do a translation for any locale, such as German (Germany) (de_DE) or German (Austria) (de_AT), to adjust for regional spelling and idioms. A locale will define how characters are sorted, how the date and time are represented, the names of the days of the week and months of the year.
 
-### About Locales
+===== Getting Started =====
 
-Locales customize programs to languages and regional dialects. Often
-locales correspond to countries, as is the case with Portuguese
-(Portugal) and Portuguese (Brazil). The default locale of Mixxx is
-English (United States) (en\_US).
+==== I want to help translate Mixxx, what do I need to do ? ====
 
-You can do a translation for any locale, such as German (Germany)
-(de\_DE) or German (Austria) (de\_AT), to adjust for regional spelling
-and idioms. A locale will define how characters are sorted, how the date
-and time are represented, the names of the days of the week and months
-of the year.
+You need a translator account to access [[https://www.transifex.com/mixxx-dj-software/public/|Transifex]], our translation site. Sign up for a free translator account or use your existing social network credentials to login [[https://www.transifex.com/signup/contributor/]].
+==== What about the skills required for translating ? ====
 
-## Getting Started
+  * Bilingual -- fluent in both written English and the language(s) you will be translating into. Casual knowledge of either one will make translating difficult for you, or make the localization you create confusing to native speakers.
+  * You should be familiar with human language constructs: nouns, verbs, articles, etc., different types of each, and be able to identify variations of their contexts in English.
+  * Experience in Djìng and using audio software in general -- you'll benefit from it because you already know the typical concepts and terms.
 
-### I want to help translate Mixxx, what do I need to do ?
+To keep your translations consistent with those of other translators, our [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|glossary]] helps you to get familiar with the core features of Mixxx. It contains a collection of terms with definitions, uses, and associated notes.
 
-You need a translator account to access
-[Transifex](https://www.transifex.com/mixxx-dj-software/public/), our
-translation site. Sign up for a free translator account or use your
-existing social network credentials to login
-<https://www.transifex.com/signup/contributor/>.
+==== Ok, I have my Transifex account and I am ready to get busy. How to translate then? ====
 
-### What about the skills required for translating ?
+[[https://www.transifex.com/signin/?next=/home/|Log in]], go to the [[https://www.transifex.com/mixxx-dj-software/public/|Mixxx Translation Project Overview]] and request access to a translation team for the item(s) and language(s) you want to translate (German in this example). One of the developers or translation coordinators will approve your request. You should get an e-mail answer within 48 hours that you have been accepted to the team for the requested language.
 
-  - Bilingual -- fluent in both written English and the language(s) you
-    will be translating into. Casual knowledge of either one will make
-    translating difficult for you, or make the localization you create
-    confusing to native speakers.
-  - You should be familiar with human language constructs: nouns, verbs,
-    articles, etc., different types of each, and be able to identify
-    variations of their contexts in English.
-  - Experience in Djìng and using audio software in general -- you'll
-    benefit from it because you already know the typical concepts and
-    terms.
+|   {{ :i18n:transifex_join_a_translation-team.gif |}}      |
+^   **Request to join a translation team on Transifex**       ^
 
-To keep your translations consistent with those of other translators,
-our
-[glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/)
-helps you to get familiar with the core features of Mixxx. It contains a
-collection of terms with definitions, uses, and associated notes.
+Now that you have been accepted to the translation team, you are ready to to translate Mixxx from English to your language.
 
-### Ok, I have my Transifex account and I am ready to get busy. How to translate then?
+  * Go to the [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx Translation Project Overview]]
+  * Click on your team's language, you will see available “language resources” to be translated.
+  * Click on a available resource to proceed.
+  * A pop-up window opens, click the **Translate Now** button.
+  * The Web Editor opens, and displays all translatable strings.
+  * Click on the **Untranslated** tab to search for all strings with missing translations.
+  * Select a source string from the navigation panel to the left and type your translation into the box to the right.
+  * Click the **Save** button to save your translated string.
+  * Congrats, you just translated your first string in Mixxx. Easy.
 
-[Log in](https://www.transifex.com/signin/?next=/home/), go to the
-[Mixxx Translation Project
-Overview](https://www.transifex.com/mixxx-dj-software/public/) and
-request access to a translation team for the item(s) and language(s) you
-want to translate (German in this example). One of the developers or
-translation coordinators will approve your request. You should get an
-e-mail answer within 48 hours that you have been accepted to the team
-for the requested language.
+|   {{ :i18n:transifex_submit_translation_using_web_editor.gif |}}     |
+^   **Submit a translation using the web editor**       ^
 
-|                                                     |
-| --------------------------------------------------- |
-| [[/media/i18n/transifex_join_a_translation-team.gif|]]    |
-| **Request to join a translation team on Transifex** |
+As a translator, you will be spending most of your time in the translation editor. It's the place where you can see all the text (strings) that need to be translated, submit translations, and collaborate with others. Take a look at Transifex' [[http://support.transifex.com/customer/portal/articles/972120-introduction-to-the-web-editor|Introduction to the Web Editor]] to get acquainted with the basics.
 
-Now that you have been accepted to the translation team, you are ready
-to to translate Mixxx from English to your language.
+Should you run into any questions about using Transifex, check out their [[http://support.transifex.com/customer/portal/topics/414107-translators/articles|support portal]].
 
-  - Go to the [Mixxx Translation Project
-    Overview](https://www.transifex.com/projects/p/mixxxdj/)
-  - Click on your team's language, you will see available “language
-    resources” to be translated.
-  - Click on a available resource to proceed.
-  - A pop-up window opens, click the **Translate Now** button.
-  - The Web Editor opens, and displays all translatable strings.
-  - Click on the **Untranslated** tab to search for all strings with
-    missing translations.
-  - Select a source string from the navigation panel to the left and
-    type your translation into the box to the right.
-  - Click the **Save** button to save your translated string.
-  - Congrats, you just translated your first string in Mixxx. Easy.
+==== How can i be notified for languages I translate? ====
 
-|                                                              |
-| ------------------------------------------------------------ |
-| [[/media/i18n/transifex_submit_translation_using_web_editor.gif|]] |
-| **Submit a translation using the web editor**                |
+You can get notified whenever the translation of a resource is modified. When watching Mixxx or one of its languages, you will receive email notifications, whenever the translation sources are updated and there is translation work to be done.
 
-As a translator, you will be spending most of your time in the
-translation editor. It's the place where you can see all the text
-(strings) that need to be translated, submit translations, and
-collaborate with others. Take a look at Transifex' [Introduction to the
-Web
-Editor](http://support.transifex.com/customer/portal/articles/972120-introduction-to-the-web-editor)
-to get acquainted with the basics.
+You can find the links to watch Mixxx or a specific language at the bottom of the [[https://www.transifex.com/projects/p/mixxxdj/|main project]] and language page respectively. You can also subscribe to the [[https://www.transifex.com/projects/p/mixxxdj/feed/|Mixxx translation RSS-feed]]
 
-Should you run into any questions about using Transifex, check out their
-[support
-portal](http://support.transifex.com/customer/portal/topics/414107-translators/articles).
+===== Resources =====
 
-### How can i be notified for languages I translate?
+==== Glossaries ====
 
-You can get notified whenever the translation of a resource is modified.
-When watching Mixxx or one of its languages, you will receive email
-notifications, whenever the translation sources are updated and there is
-translation work to be done.
+A glossary makes the translation process much easier for translators as terms have agreed-upon definitions and translations, shortening the amount of time required to translate Mixxx.
 
-You can find the links to watch Mixxx or a specific language at the
-bottom of the [main
-project](https://www.transifex.com/projects/p/mixxxdj/) and language
-page respectively. You can also subscribe to the [Mixxx translation
-RSS-feed](https://www.transifex.com/projects/p/mixxxdj/feed/)
+  * [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|Mixxx glossary]]  - The Mixxx glossary in english, translatable to your own language.
+  * [[https://www.microsoft.com/Language|microsoft.com/Language]] - Search Microsoft’s terminology and glossaries in 70 languages.
+  * [[https://developer.apple.com/downloads/index.action?name=localization|developer.apple.com]] - Download Apple OS X glossaries.
 
-## Resources
+==== Translation memory (TM) ====
 
-### Glossaries
+TM systems promote quality and consistency. They provide automatic suggestions based on similarities between source strings, allowing translators to leverage previous translations. Translators can use TM suggestions or adjust them to create new, more contextually appropriate translations.
 
-A glossary makes the translation process much easier for translators as
-terms have agreed-upon definitions and translations, shortening the
-amount of time required to translate Mixxx.
+  * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx TM]] - The available TM entries are under the ‘suggestions’ tab of each translatable string of your language.
+  * [[http://open-tran.eu/|open-tran.eu]] - Memory Translation database of open source projects.
+  * [[http://mymemory.translated.net/|mymemory.translated.net]] - The world largest collaborative translation archive.
 
-  - [Mixxx
-    glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/)
-    - The Mixxx glossary in english, translatable to your own language.
-  - [microsoft.com/Language](https://www.microsoft.com/Language) -
-    Search Microsoft’s terminology and glossaries in 70 languages.
-  - [developer.apple.com](https://developer.apple.com/downloads/index.action?name=localization)
-    - Download Apple OS X glossaries.
+==== Online Translation and Dictionaries ====
 
-### Translation memory (TM)
+   * [[http://www.yourdictionary.com/|yourdictionary.com]] - The easiest to use on-line dictionary and thesaurus. Clear. Clean. Uncluttered.
+   * [[http://tradukka.com/|tradukka.com]] - Translate in real time with definitions and forums for your questions.
+   * [[http://www.omegawiki.org/|omegawiki.org]] - A multilingual dictionary with lexicological, terminological and thesaurus information.
+   * [[http://imtranslator.net/translation/|imtranslator.net]] - Provides dictionaries and instant translation of words, phrases and texts in many languages.
 
-TM systems promote quality and consistency. They provide automatic
-suggestions based on similarities between source strings, allowing
-translators to leverage previous translations. Translators can use TM
-suggestions or adjust them to create new, more contextually appropriate
-translations.
+==== Offline Translation software ====
 
-  - [Mixxx TM](https://www.transifex.com/projects/p/mixxxdj/) - The
-    available TM entries are under the ‘suggestions’ tab of each
-    translatable string of your language.
-  - [open-tran.eu](http://open-tran.eu/) - Memory Translation database
-    of open source projects.
-  - [mymemory.translated.net](http://mymemory.translated.net/) - The
-    world largest collaborative translation archive.
+If you are more comfortable translating locally on your computer, instead online in a web browser.
 
-### Online Translation and Dictionaries
+  * [[https://doc.qt.io/qt-5/qtlinguist-index.html|Qt Linguist]] - Provides a set of tools that speed the translation and internationalization of applications. Windows, Linux, macOS
+  * [[http://www.lingoes.net/| Lingoes]] - An easy and intuitive dictionary and text translation software. Windows
+  * [[http://virtaal.translatehouse.org/|Virtaal]] - A feature rich translation tool that allows you to focus on translation. Windows, Linux, macOS
+  * [[http://www.kde.org/applications/development/lokalize/|Lokalize]] - A computer-aided translation system that focuses on productivity and quality assurance. Windows, Linux
 
-``` 
- * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx Auto Translate]] - Click ‘Machine Translation’ next to the ‘Submit’ button of the translatable string of your language.
- * [[http://www.yourdictionary.com/|yourdictionary.com]] - The easiest to use on-line dictionary and thesaurus. Clear. Clean. Uncluttered.
- * [[http://tradukka.com/|tradukka.com]] - Translate in real time with definitions and forums for your questions.
- * [[http://www.omegawiki.org/|omegawiki.org]] - A multilingual dictionary with lexicological, terminological and thesaurus information.
- * [[http://imtranslator.net/translation/|imtranslator.net]] - Provides dictionaries and instant translation of words, phrases and texts in many languages.
-```
+===== Common Pitfalls in Translation =====
 
-### Offline Translation software
+==== Ampersands (&) ====
+Some texts in the translation template contain an ampersand (&) followed by one char.
+This marks the letter which can be used to quickly access that particular menu or other GUI element when holding the ALT key, often called "Accelerator key".
 
-If you are more comfortable translating locally on your computer,
-instead online in a web browser.
+If a string to be translated has an ampersand (&) in it, then the translation for that string should also have an ampersand in it, preferably in front of the same character. Accelerators should not show up twice in the same menu to prevent "accelerator clashes". E.g. something like "&Save" and "&Save as" won't work, but "&Save" and "Save &as" will do.
 
-  - [Qt Linguist](http://qt-project.org/doc/qt-4.8/linguist-manual.html)
-    - Provides a set of tools that speed the translation and
-    internationalization of applications. Windows, Linux, MacOS X FIXME
-    <sup>Add DL Links to standalone Linguist binaries</sup>
-    *\[\[|jus\]\] 2013/07/21*
-  - [Lingoes](http://www.lingoes.net/) - An easy and intuitive
-    dictionary and text translation software. Windows
-  - [Virtaal](http://virtaal.translatehouse.org/) - A feature rich
-    translation tool that allows you to focus on translation. Windows,
-    Linux, MacOS X
-  - [Lokalize](http://www.kde.org/applications/development/lokalize/) -
-    A computer-aided translation system that focuses on productivity and
-    quality assurance. Windows, Linux
+== Example ==
 
-## Common Pitfalls in Translation
+^ Source (English,en_US)      ^ Translation (German,de_DE)                 ^ Comment         ^
+| ''&File''            | ''&Datei''                   | Pressing the shortcut **Alt+F** on the keyboard will access the **File** menu on top of the Mixxx application window. Using Mixxx with the german translation, the shortcut will be **Alt+D**.            |
+==== Variables (%1,%2, ...) ===
+Variables like %1, %2, %3, etc. will be replaced with actual contents on runtime of the program. The variables of the original string must all show up in the translation, Only change the variable placement inside the translation if it is necessary to adapt to the sentence structure and word order of your language.
 
-### Ampersands (&)
+== Example ==
 
-Some texts in the translation template contain an ampersand (&) followed
-by one char. This marks the letter which can be used to quickly access
-that particular menu or other GUI element when holding the ALT key,
-often called "Accelerator key".
+^ Source (English,en_US)      ^ Translation (German,de_DE)                 ^ Comment         ^
+| ''Analyzing %1/%2 %3%''            | ''Analysiere %1/%2 %3%''                   | When analyzing tracks, a progress label is displayed which shows the current track number (%1), the overall number of tracks in the analyze queue (%2) and the analysis progress of the current track (%3) in percent (%). So it becomes **Analyzing 10/15 50%** or, using Mixxx with the german translation, **Analysiere 10/15 50%**.           |
 
-If a string to be translated has an ampersand (&) in it, then the
-translation for that string should also have an ampersand in it,
-preferably in front of the same character. Accelerators should not show
-up twice in the same menu to prevent "accelerator clashes". E.g.
-something like "\&Save" and "\&Save as" won't work, but "\&Save" and
-"Save \&as" will do.
+==== HTML tags (</a>, <br/>, </b>, </ul>) ====
 
-##### Example
+Here and there you may encounter some small bits of HTML code in the source strings. Simply copy/paste them onto your translated string.
+When translating in the Transifex Web editor, red arrows indicate that there is a newline character (Enter) in that position of the source string. Since that newline can be extremely important when the string is displayed in Mixxx being localized, translators are highly encouraged to adjust their translations as accurately as possible, by pressing the “Enter” key in the closest position possible.
 
-| Source (English,en\_US) | Translation (German,de\_DE) | Comment                                                                                                                                                                                        |
-| ----------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `&File`                 | `&Datei`                    | Pressing the shortcut **Alt+F** on the keyboard will access the **File** menu on top of the Mixxx application window. Using Mixxx with the german translation, the shortcut will be **Alt+D**. |
+== Example ==
 
-### Variables (%1,%2, ...)
+^ Source (English,en_US)      ^ Translation (German,de_DE)                 ^ Comment         ^
+| ''<a href="http://mixxx.org/">Official Website</a>''            | ''<a href="http://mixxx.org/">Offizielle Webseite</a>''                   | A link to the Mixxx website is shown in the **About** window, like **[[http://mixxx.org/|Official Website]]** or, using Mixxx with the german translation, **[[http://mixxx.org/|Offizielle Webseite]]**.
+           |
 
-Variables like %1, %2, %3, etc. will be replaced with actual contents on
-runtime of the program. The variables of the original string must all
-show up in the translation, Only change the variable placement inside
-the translation if it is necessary to adapt to the sentence structure
-and word order of your language.
+====== Developers - i18n/l10n and Mixxx ======
 
-##### Example
-
-| Source (English,en\_US) | Translation (German,de\_DE) | Comment                                                                                                                                                                                                                                                                                                                                 |
-| ----------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Analyzing %1/%2 %3%`   | `Analysiere %1/%2 %3%`      | When analyzing tracks, a progress label is displayed which shows the current track number (%1), the overall number of tracks in the analyze queue (%2) and the analysis progress of the current track (%3) in percent (%). So it becomes **Analyzing 10/15 50%** or, using Mixxx with the german translation, **Analysiere 10/15 50%**. |
-
-### HTML tags (\</a\>, \<br/\>, \</b\>, \</ul\>)
-
-Here and there you may encouter some small bits of HTML code in the
-source strings. Simply copy/paste them onto your translated string. When
-translating in the Transifex Web editor, red arrows indicate that there
-is a newline character (Enter) in that position of the source string.
-Since that newline can be extremely important when the string is
-displayed in Mixxx being localized, translators are highly encouraged to
-adjust their translations as accurately as possible, by pressing the
-“Enter” key in the closest position possible.
-
-##### Example
-
-| Source (English,en\_US)                            | Translation (German,de\_DE)                           | Comment                                                                                                                                                                                                 |
-| -------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<a href="http://mixxx.org/">Official Website</a>` | `<a href="http://mixxx.org/">Offizielle Webseite</a>` | A link to the Mixxx website is shown in the **About** window, like **[Official Website](http://mixxx.org/)** or, using Mixxx with the german translation, **[Offizielle Webseite](http://mixxx.org/)**. |
-
-# Developers - i18n/l10n and Mixxx
-
-## Tools
-
-The following tools are used to update the Mixxx translation templates
-and to merge updated translations submitted by translators.
+===== Tools ====
+The following tools are used to update the Mixxx translation templates and to merge updated translations submitted by translators.
 
 **Required**
-
-  - *lupdate* and *lrelease*, part of [Qt development
-    toolkit](http://qt-project.org/downloads)
-  - *po2ts* and *ts2po*, part of [Translate
-    Toolkit](http://toolkit.translatehouse.org/download.html)
+  * //lupdate// and //lrelease//, part of [[http://qt-project.org/downloads|Qt development toolkit]]
+  * [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
 
 **Optional**
+  * [[http://www.zsh.org/|Zsh]] (Z shell), a powerful shell that operates as both an interactive shell and as a scripting language interpreter.
 
-  - [Zsh](http://www.zsh.org/) (Z shell), a powerful shell that operates
-    as both an interactive shell and as a scripting language
-    interpreter.
+==== Installation example ====
 
-### Installation example
+===macOS===
+  * Install the [[https://www.qt.io/download|Qt development toolkit]]
+  * Install the [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
+      * <code>sudo easy_install pip
+        sudo pip install transifex-client</code>
+  * Optional, install Zsh using [[https://brew.sh/|Brew]]
+      * <code>brew install zsh</code>
 
-#### Mac OSX
+===== Updating translation templates =====
 
-  - Install the [Qt development
-    toolkit](http://qt-project.org/downloads)
-  - Install [Homebrew](http://brew.sh/), a package manager for Mac OSX
-  - Install the *libxml2* dependency
+//This procedure extracts translatable strings from Mixxx's code into QT template files (*.ts) so that Transifex' interface can present the most current strings to translators. Check the required [[https://docs.transifex.com/teams/understanding-user-roles|user permissions on Transifex]]//
 
-<!-- end list -->
+  * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
+  * Update source template
+  * ''lupdate src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts''
+  * Commit changes to HEAD
+  * ''git commit -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"''
+  * Push changes to remote repository
+  * ''git push origin branchname''
+  * Push changed *.ts template (the translation source file) to Transifex
+  * ''tx push -s''
 
-``` 
-    * <code>brew install libxml2</code>
-* Install //lxml//, a library for processing XML
-    * <code>easy_install lxml</code>
-* [[http://toolkit.translatehouse.org/download.html|Download]], unpack,and install the //Translate toolkit//
-    * <code>sudo ./setup.py install</code>
-* Optional, install Zsh
-    * <code>brew install zsh</code>
-```
+Transifex will pick up the changes to the template after a short while, and notify maintainers/subscribers by email.
 
-## Updating translation templates
+**TODO:** make the sconscript do this as part of a normal build so code changes that change or add strings automatically update the templates.
 
-*This procedure extracts translatable strings from Mixxx's code into
-template files (Qt/POT) so that Launchpad's interface can present the
-most current strings to translators.*
+===== Updating translations =====
 
-  - **Make a clean checkout of the Mixxx code branch you are in. NO
-    EXCEPTIONS**
-  - `lupdate src -recursive -extensions cpp,h,ui -ts
-    res/translations/mixxx.ts`
-  - `ts2po -P -i res/translations/mixxx.ts -o
-    res/translations/mixxx/mixxx.pot`
-  - Commit, push.
+//This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.//
 
-Launchpad will pick up the changes to the template automatically.
+  * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex
+  * ''tx pull -a''
+  * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
+  * For every mixxx_xx.ts file in res/translations/, ''lrelease res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm''
+  * In ZSH: ''for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done''
+  * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
+  * Add all new translation translation TS and QM files to Git
+  * In ZSH: ''git add res/translations/mixxx_*.(ts|qm)''
+  * **Update res/mixxx.qrc file to add any new languages that were not previously present.**
+  * Commit changes to HEAD
+  * ''git commit -m "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"''
+  * Push changes to remote repository
+  * ''git push origin branchname''
 
-**TODO:** make the sconscript do this as part of a normal build so code
-changes that change or add strings automatically update the templates.
+**TODO:** make the sconscript do this as part of a normal build so Mixxx contains the latest translations.
 
-## Updating translations
-
-*This procedure updates Mixxx with translations (PO files) that have
-been contributed by Launchpad users.*
-
-  - For every PO file in res/translations/mixxx/, `po2ts
-    res/translations/mixxx/xx.po res/translations/mixxx_xx.ts`
-  - In ZSH: `for XX in res/translations/mixxx/*.po; do po2ts -i $XX -o
-    res/translations/mixxx_${$(basename $XX)%.*}.ts; done`
-  - For every mixxx\_xx.ts file in res/translations/, `lrelease
-    res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm`
-  - In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease
-    -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm;
-    done`
-  - If you are testing a translation and would like untranslated strings
-    to show up as blank, do not give the 'nounfinished' argument to
-    lrelease.
-  - Add all new translation translation TS and QM files to Git
-  - In ZSH: `git add res/translations/mixxx_*.(ts|qm)`
-  - **Update res/mixxx.qrc file to add any new languages that were not
-    previously present.**
-  - Commit, push.
-
-**TODO:** make the sconscript do this as part of a normal build so Mixxx
-contains the latest translations.
+Note: The process for updating the translations of Mixxx windows installer is documented in the [[https://github.com/mixxxdj/mixxx/blob/master/build/wix/Localization/README-Translations.md|Github branch]]

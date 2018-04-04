@@ -7,6 +7,14 @@ Mixxx is written and documented in English, and use English for communication be
 
 Translating helps to reach a wider audience, provides a better user experience, and you can DJ using Mixxx in your mother tongue.
 
+==== What about the skills required for translating ? ====
+
+  * Bilingual -- fluent in both written English and the language(s) you will be translating into. Casual knowledge of either one will make translating difficult for you, or make the localization you create confusing to native speakers.
+  * You should be familiar with human language constructs: nouns, verbs, articles, etc., different types of each, and be able to identify variations of their contexts in English.
+  * Experience in Djìng and using audio software in general -- you'll benefit from it because you already know the typical concepts and terms.
+
+To keep your translations consistent with those of other translators, our [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|glossary]] helps you to get familiar with the core features of Mixxx. It contains a collection of terms with definitions, uses, and associated notes.
+
 ==== About Locales ====
 Locales customize programs to languages and regional dialects. Often locales correspond to countries, as is the case with Portuguese (Portugal) and Portuguese (Brazil). The default locale of Mixxx is English (United States) (en_US).
 
@@ -16,28 +24,24 @@ You can do a translation for any locale, such as German (Germany) (de_DE) or Ger
 
 ==== I want to help translate Mixxx, what do I need to do ? ====
 
-You need a translator account to access [[https://www.transifex.com/mixxx-dj-software/public/|Transifex]], our translation site. Sign up for a free translator account or use your existing social network credentials to login [[https://www.transifex.com/signup/contributor/]].
-==== What about the skills required for translating ? ====
 
-  * Bilingual -- fluent in both written English and the language(s) you will be translating into. Casual knowledge of either one will make translating difficult for you, or make the localization you create confusing to native speakers.
-  * You should be familiar with human language constructs: nouns, verbs, articles, etc., different types of each, and be able to identify variations of their contexts in English.
-  * Experience in Djìng and using audio software in general -- you'll benefit from it because you already know the typical concepts and terms.
+Learn how you can help translate content that’s on Transifex, our translations management provider. This guide will walk you through:
 
-To keep your translations consistent with those of other translators, our [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|glossary]] helps you to get familiar with the core features of Mixxx. It contains a collection of terms with definitions, uses, and associated notes.
+  * Signing up for an account
+  * Joining a translation team
+  * Finding and translating content
+
+https://docs.transifex.com/getting-started/translators
+
 
 ==== Ok, I have my Transifex account and I am ready to get busy. How to translate then? ====
 
-[[https://www.transifex.com/signin/?next=/home/|Log in]], go to the [[https://www.transifex.com/mixxx-dj-software/public/|Mixxx Translation Project Overview]] and request access to a translation team for the item(s) and language(s) you want to translate (German in this example). One of the developers or translation coordinators will approve your request. You should get an e-mail answer within 48 hours that you have been accepted to the team for the requested language.
-
-|   {{ :i18n:transifex_join_a_translation-team.gif |}}      |
-^   **Request to join a translation team on Transifex**       ^
-
-Now that you have been accepted to the translation team, you are ready to to translate Mixxx from English to your language.
-
-  * Go to the [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx Translation Project Overview]]
-  * Click on your team's language, you will see available “language resources” to be translated.
-  * Click on a available resource to proceed.
-  * A pop-up window opens, click the **Translate Now** button.
+  * [[https://www.transifex.com/signin/?next=/home/|Log in]]
+  * Go to the [[https://www.transifex.com/mixxx-dj-software/public/|Mixxx Translation Project Dashboard]]
+  * Select from a available a projects (application, manual, website etc.)
+  * Hover over a language and requesting to join the project's team.
+  * Click **Join Team**, select a language and accept the CLA, finish by clicking **Join**
+  * Click on the projects **Translate** button.
   * The Web Editor opens, and displays all translatable strings.
   * Click on the **Untranslated** tab to search for all strings with missing translations.
   * Select a source string from the navigation panel to the left and type your translation into the box to the right.
@@ -47,9 +51,9 @@ Now that you have been accepted to the translation team, you are ready to to tra
 |   {{ :i18n:transifex_submit_translation_using_web_editor.gif |}}     |
 ^   **Submit a translation using the web editor**       ^
 
-As a translator, you will be spending most of your time in the translation editor. It's the place where you can see all the text (strings) that need to be translated, submit translations, and collaborate with others. Take a look at Transifex' [[http://support.transifex.com/customer/portal/articles/972120-introduction-to-the-web-editor|Introduction to the Web Editor]] to get acquainted with the basics.
+As a translator, you will be spending most of your time in the translation editor. It's the place where you can see all the text (strings) that need to be translated, submit translations, and collaborate with others. Take a look at Transifex' [[https://docs.transifex.com/translation/translating-with-the-web-editor|Introduction to the Web Editor]] to get acquainted with the basics.
 
-Should you run into any questions about using Transifex, check out their [[http://support.transifex.com/customer/portal/topics/414107-translators/articles|support portal]].
+Should you run into any questions about using Transifex, check out their [[https://docs.transifex.com/|support portal]].
 
 ==== How can i be notified for languages I translate? ====
 
@@ -139,8 +143,8 @@ The following tools are used to update the Mixxx translation templates and to me
 ===macOS===
   * Install the [[https://www.qt.io/download|Qt development toolkit]]
   * Install the [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
-      * <code>sudo easy_install pip
-        sudo pip install transifex-client</code>
+      * <code>sudo easy_install pip 
+sudo pip install transifex-client</code>
   * Optional, install Zsh using [[https://brew.sh/|Brew]]
       * <code>brew install zsh</code>
 

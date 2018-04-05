@@ -159,6 +159,15 @@ sudo pip install transifex-client</code>
   * <code>git commit -a -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"</code>
   * Push changes to remote repository
   * <code>git push origin branchname</code>
+  * If you are a maintainer, create a credetial file ~/.transifexrc
+  * <code>[https://www.transifex.com]
+api_hostname = https://api.transifex.com
+hostname = https://www.transifex.com
+password = ******
+token = 
+username = user
+</code> 
+
   * Push changed *.ts template (the translation source file) to Transifex
   * <code>tx push -s</code>
 

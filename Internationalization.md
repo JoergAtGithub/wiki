@@ -154,13 +154,13 @@ sudo pip install transifex-client</code>
 
   * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
   * Update source template
-  * ''lupdate src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts''
+  * <code>lupdate src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts</code>
   * Commit changes to HEAD
-  * ''git commit -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"''
+  * <code>git commit -a -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"</code>
   * Push changes to remote repository
-  * ''git push origin branchname''
+  * <code>git push origin branchname</code>
   * Push changed *.ts template (the translation source file) to Transifex
-  * ''tx push -s''
+  * <code>tx push -s</code>
 
 Transifex will pick up the changes to the template after a short while, and notify maintainers/subscribers by email.
 

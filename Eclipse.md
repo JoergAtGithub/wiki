@@ -1,8 +1,8 @@
-\======= How to setup Eclipse for developing on Mixxx =======
+\======= How to set up Eclipse for developing on Mixxx =======
 
 Just some notes on how to setup Eclipse IDE for developing on Mixxx.
 
-# Setup mixxx source
+# Set up mixxx source
 
 First you have to setup the Mixxx source and manage to compile it via
 the command line, as outlined here:
@@ -30,7 +30,7 @@ Ubuntu Packages to install (possibly outdated) would be:
   - eclipse-cdt
   - eclipse-pydev
 
-# Step by Step Setup
+# Step-by-Step Setup
 
 For Eclipse Oxygen
 
@@ -54,19 +54,17 @@ For Eclipse Oxygen
   - Clean: remove `clean` and set instead `-c`.
   - Check "Enable parallel builds".
   - Expand C/C++ Build -\> Environment
-  - Add the following Variable-Value pairs:
+  - Add the following Variable-Value pairs (below is written for Mac):
 
 <!-- end list -->
 
-``` 
-CFLAGS    | -I/usr/local/include -I/usr/local/include/opus  
-CXXFLAGS  | -I/usr/local/include -I/usr/local/include/opus  
-LDFLAGS   | -L/usr/local/lib                                
-QTDIR     | /usr/local/Cellar/qt5/%VERSION%                 
-```
+    CFLAGS    | -I/usr/local/include -I/usr/local/include/opus  
+    CXXFLAGS  | -I/usr/local/include -I/usr/local/include/opus  
+    LDFLAGS   | -L/usr/local/lib                                
+    QTDIR     | /<path to Qt install directory>/%VERSION% #eg /usr/local/Cellar/qt5/5.10.1
 
-  - Replace `%VERSION%` with the folder name for your version of Qt,
-    e.g. 5.10.1 
+  - Replace `%VERSION%` with the folder name for your version of Qt. Mac
+    users may have to rely on Qt 4.x to get Mixxx to build.
   - You may also have to manually add to the system PATH setting to
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.
@@ -74,7 +72,7 @@ QTDIR     | /usr/local/Cellar/qt5/%VERSION%
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).
 
-**Setup Run:**
+**Set up Run:**
 
   - Run -\> Run configurations.
   - Select C/C++ Application.
@@ -86,29 +84,26 @@ icon).
   - Program arguments = `--resourcePath res --developer`
   - "Run" button for run Mixxx
 
-**Setup Debug:**
+**Set up Debug:**
 
   - Run -\> Debug configurations 
   - Next step similar to "Setup run"
   - Arguments tab 
   - Program arguments = `--resourcePath res --developer
     --debugAssertBreak`
-  - Use GDB for debugging in Eclipse
-    ([GDB](https://www.gnu.org/software/gdb/)). Mac users may have more
-    luck using LLDB (see note below.)
+  - Non-Mac users should use GDB for debugging in Eclipse
+    ([GDB](https://www.gnu.org/software/gdb/)).
   - Your `.gdbinit` should be setup before, but that's another story.
   - Sample:
     [.gdbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
   - Qt pretty printer
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
   - "Debug" button for run Mixxx.
-
-**Note for Mac users running OS X 10.9 Mavericks or later:** in recent
-versions of OS X, it is difficult if not impossible to get GDB working
-properly in Eclipse. If you get through the numerous steps to manually
-install GDB and create a working certificate for it, you will likely
-still run into issues such as those detailed
-[here](https://stefan.budeanu.com/mac-os-x-sierra-and-ruby-debugging-an-unhappy-marriage/).
+  - Mac users running OS X 10.9 Mavericks or later are recommended to
+    use LLDB for debugging. In recent versions of OS X, it is difficult
+    if not impossible to get GDB working properly in Eclipse. LLDB seems
+    somewhat problematic from within Eclipse, so debugging may be better
+    done via Terminal.
 
 For git integration (in case of using a git clone of mixxx):
 

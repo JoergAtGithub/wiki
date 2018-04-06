@@ -28,7 +28,7 @@ is a plain text file that can be read with any text editor.
 
 ``` 
     * __Method A__:
-    * When attaching a file to a bug report, forum post, or Zulip message, press Command + Shift + G.
+    * When attaching a file to a bug report, forum post, or Zulip message and your browser is asking you to pick a file, press Command + Shift + G.
     * In the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
     * Click Go.
     * __Method B__:

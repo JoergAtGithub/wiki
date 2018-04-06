@@ -357,16 +357,21 @@ with a \<Style\> element that is a child of the root \<skin\> element:
         <!-- skin manifest goes here -->
       </manifest>
     
-      <Style src="QSS-FILENAME"/>
+      <Style src="skin:style.qss" src-windows="skin:style-windows.qss"
+       src-mac="skin:style-mac.qss" src-linux="skin:style-linux.qss"/>
     
       <!-- rest of skin goes here -->
     </skin>
 
-All the skins included in Mixxx name the QSS file as "style.qss" in the
-root directory of the skin. Widgets are selected in QSS by the name of
-their widget type (the "Mixxx internal name" column in the table below)
-or by a defined name. To define a name for a widget, use the
-`<ObjectName>` element. For example:
+All the skins included in Mixxx name the QSS file as `style.qss` in the
+root directory of the skin. Any name with the `*.qss` or `*.css` file
+extension will work. Optionally, you can add up to three additional QSS
+files to your skin directory, e.g. to work around platform-dependent
+quirks in styling.
+
+Widgets are selected in QSS by the name of their widget type (the "Mixxx
+internal name" column in the table below) or by a defined name. To
+define a name for a widget, use the `<ObjectName>` element. For example:
 
     <WidgetGroup>
       <ObjectName>SomeWidgetGroup</ObjectName>
@@ -423,6 +428,7 @@ from which Qt widgets. If not listed, the widget inherits from
 |  | Key             |  | WKey                |  | QWidget with a QLabel child |  |
 |  | Splitter        |  | WSplitter           |  | QSplitter                   |  |
 |  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
+|  | EffectSelector  |  | WEffectSelector     |  | QComboBox                   |  |
 
 ### Properties Common to All Widgets
 

@@ -28,10 +28,14 @@ is a plain text file that can be read with any text editor.
 
 ``` 
     * __Method A__:
-    * In the Finder, choose Go > Go To Folder.
+    * When attaching a file to a bug report, forum post, or Zulip message, press Command + Shift + G.
     * In the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
     * Click Go.
     * __Method B__:
+    * In the Finder, choose Go > Go To Folder.
+    * In the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
+    * Click Go.
+    * __Method C__:
     * Hold down the Alt (Option) key when using the Go menu
     * The user library folder is listed below the current users home directory
     * Navigate to ''Application Support/Mixxx''

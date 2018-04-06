@@ -130,6 +130,8 @@ this wiki, please fix it.
   - [Coding Guidelines](Coding%20Guidelines)
   - [Developer Tools](Developer%20Tools)
   - [Learning Resources](Learning%20Resources)
+  - [Code profiling](Profiling) to see what parts of the code are using
+    more CPU time than others
 
 ### Development Topics
 

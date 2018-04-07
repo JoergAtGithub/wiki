@@ -180,6 +180,17 @@ that your controller is set to. Refer to [MIDI Crash
 Course](midi_crash_course#sniffing_your_controller_with_mixxx) for how
 to see incoming MIDI messages from your controller.
 
+**NOTE:** The Behringer Website is currently (07.04.2018) undergoing
+some update which is why the productpage and the channelswitcher utility
+is currently unavailable. After Emailing the support, they provided a
+link to the
+[Channelswitcher](https://music--c.ap7.content.force.com/servlet/servlet.EmailAttachmentDownload?q=%2FwSnKlUyyB%2BzbQSKctPoiJvsTfYczcfDzIqBxz2ocDse1VdWx4S8NXjyHKhbFfsBbxCe3uhNzEnFic%2FsTkPPxg%3D%3D)
+([Mirror](https://mega.nz/#!4zhjxQKQ!A_HJjx40YzyHdoV1nPdPmWL83nmUGspssKNdxyf00Tc))
+and a
+[manual](https://music--c.ap7.content.force.com/servlet/servlet.EmailAttachmentDownload?q=%2FwSnKlUyyB%2BzbQSKctPoiBsPNgXKYtUs%2FOnHuE8nfl3EFaYPHCHQaat%2B50yN3fR%2FIe3k9mnNj%2FSe5xTcwwM23g%3D%3D)
+([Mirror](https://mega.nz/#!JzITlC4a!GOeJb-wVjwp6gYnhSXvWeTZ02QcYlSo2tqTPSHZWeds))
+for the whole CMD line up.
+
 Once you know the MIDI channel of your controller, open the file
 `Behringer-CMD-MM-1-scripts.js` file in your [controller mapping file
 locations\#user controller mapping

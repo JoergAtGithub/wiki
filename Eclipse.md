@@ -63,8 +63,7 @@ For Eclipse Oxygen
     LDFLAGS   | -L/usr/local/lib                                
     QTDIR     | /<path to Qt install directory>/%VERSION% #eg /usr/local/Cellar/qt5/5.10.1
 
-  - Replace `%VERSION%` with the folder name for your version of Qt. Mac
-    users may have to rely on Qt 4.x to get Mixxx to build.
+  - Replace `%VERSION%` with the folder name for your version of Qt.
   - You may also have to manually add to the system PATH setting to
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.

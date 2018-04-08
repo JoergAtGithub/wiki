@@ -47,6 +47,9 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
   - **Range** button - Toggles the pitch slider range. (See top of page
     to customize.)
   - **Keylock** button - Toggles key lock.
+
+### FX Controls
+
   - **FX** knobs & buttons - These control the FX units via
     components-js, see bootom of page (Note: these don't switch to decks
     3 and 4.)
@@ -59,6 +62,9 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     current play position.
   - **Tap** button - This is the FX focus button (see bottom of page).
     It also flashes on each beat. 
+
+### Loop Controls
+
   - **Loop length** knob
   - Turning this doubles or halves the current loop size visible in loop
     size spinbox in each skin.
@@ -86,6 +92,9 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     position of the current loop by 1/8 beat per detent. This helps to
     correct the loop in point in case it's set slightly too early or too
     late.
+
+### Hot cues / Sampler buttons
+
   - **Hot cue buttons**
   - Press to set or recall a hot cue. The buttons light up when one is
     set.
@@ -96,9 +105,9 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     the sample.
   - **Scissor** button - Switches hot cue & sampler button grid for
     access to hot cues/samplers 5-8
-  - **Vinyl/Search** button
-  - Press and release to toggle scratching with the wheel.
-  - Hold down and turn the wheel to seek through the track.
+
+### Wheel & Vinyl button
+
   - **Wheel**
   - Move the wheel while touching the top black area to scratch the
     current track like a vinyl record if vinyl mode is enabled
@@ -106,6 +115,12 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     perform a temporary pitch bend. With scratch mode disabled, all
     regions of the wheel can be touched and turned to perform a
     temporary pitch bend.
+  - **Vinyl/Search** button
+  - Press and release to toggle scratching with the wheel.
+  - Hold down and turn the wheel to seek through the track.
+
+### Transport buttons
+
   - **\>\< (Sync)** button - Synchronizes the tempo and beat phase of
     this deck to that of the other. \[ToDo: long-press to toggle master
     sync\]

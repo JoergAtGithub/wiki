@@ -49,49 +49,84 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
   - **Range** button - Toggles the pitch slider range. (See top of page
     to customize.)
   - **Keylock** button - Toggles key lock.
-  - **FX** knobs - These adjust the depth, delay and LFO period of the
-    Flanger effect.
-  - **FX** buttons - Toggle the flanger effect on Deck 1 or 2 (these
-    don't switch to decks 3 and 4.)
-  - **Beats knob** - Pressing this moves the beat grid to the current
-    play position. (Turning it does nothing.)
-  - **Tap** button - Tapping this in time with the music adjusts the BPM
-    of the track to match. It also flashes on each beat.
-  - **Loop length** knob - Turning this doubles or halves the current
-    loop. Pressing it toggles the loop.
-  - **Loop in/halve** button - Sets the loop in point. When shifted,
-    halves the length of the current loop. Flashes when a loop is
-    active.
-  - **Loop out/double** button - Sets the loop out point. When shifted,
-    doubles the length of the current loop. Flashes when a loop is
-    active.
-  - **Loop move knob** - Turning this moves the position of the current
-    loop by a half beat per detent. Pressing it sets a 4-beat loop at
-    the current position. Pressing it with shift held down toggles
-    quantize (locking loop in/out and cue points to the nearest beat.)
-  - **Hot cue buttons** - Press to set or recall a hot cue. The buttons
-    light up when one is set. Hold shift and press to delete the cue.
-  - **Scissor** button - Switches hot cue page for access to hot cues
-    5-8
+  - **FX** knobs & buttons - These control the FX units via
+    components-js, see bootom of page (Note: these don't switch to decks
+    3 and 4.)
+  - **Beats knob**
+  - Turning this adjusts Wet/Dry for the respective FX unit (see bottom
+    of page).
+  - Pressing this repeatedly adjusts the BPM (not the pitch/speed\!) of
+    the loaded track.
+  - Pressing this with Shift moves the nearest beat marker to the
+    current play position.
+  - **Tap** button - This is the FX focus button (see bottom of page).
+    It also flashes on each beat. 
+  - **Loop length** knob
+  - Turning this doubles or halves the current loop size visible in loop
+    size spinbox in each skin.
+  - Pressing it sets a loop of that size. Pressing it with Shift
+    re-activates the previous loop and plays from loop in point.
+  - **Loop in/halve** button
+  - Sets the loop in point and flashes when a loop is active.
+  - While a loop is active, press and hold it to drag the loop in point.
+  - **Loop out/double** button
+  - Sets the loop out point and flashes when a loop is active.
+  - While a loop is active, press and hold it to drag the loop out
+    point.
+  - **Loop move knob**
+  - Press and turn this to adjust the beatjump size visible in beatjump
+    spinbox in each skin.
+  - Turning without an active loop jumps back or forth by the size set
+    in beatjump spinbox.
+  - Turning with Shift pressed while a loop is active shifts the loop
+    back or forth by the size set in beatjump spinbox.
+  - Turning it while a loop is active and quantize is On, moves the
+    position of the current loop by one beat per detent. This helps to
+    correct the loop in point in case it snapped to the wrong beat
+    marker.
+  - Turning it while a loop is active and quantize is Off, moves the
+    position of the current loop by 1/8 beat per detent. This helps to
+    correct the loop in point in case it's set slightly too early or too
+    late.
+  - **Hot cue buttons**
+  - Press to set or recall a hot cue. The buttons light up when one is
+    set.
+  - Hold shift and press to delete the cue.
   - **Sampler** buttons - These light up when a sample is loaded to the
     corresponding sampler and flash when that sampler is playing. Press
     to play the sample from the beginning. When shifted, press to stop
     the sample.
-  - **Vinyl/Search** button - Press and release to toggle scratching
-    with the wheel (and the on-screen vinyl widget.) Hold down and turn
-    the wheel to seek through the track.
+  - **Scissor** button - Switches hot cue & sampler button grid for
+    access to hot cues/samplers 5-8
+  - **Vinyl/Search** button
+  - Press and release to toggle scratching with the wheel.
+  - Hold down and turn the wheel to seek through the track.
   - **Wheel**
   - Move the wheel while touching the top black area to scratch the
     current track like a vinyl record if vinyl mode is enabled
   - Move the wheel without touching the top (so on the gray sides) to
     perform a temporary pitch bend.
   - **\>\< (Sync)** button - Synchronizes the tempo and beat phase of
-    this deck to that of the other. (Only works between decks 1 & 2 in
-    v1.11.x.)
+    this deck to that of the other. \[ToDo: long-press to toggle master
+    sync\]
   - **CUP** button - This stands for Cue-Play which starts playback from
     the cue point. This is also known as stutter play.
-  - **Q (Cue)** button - Sets or recalls the main cue point on the track
+  - **Q (Cue)** button - Sets or recalls the main cue point on the
+    track. Is lit or flashes when play position is at cue point. [set
+    cue
+    mode](https://mixxx.org/manual/2.1/chapters/user_interface.html#using-cue-modes)
   - **\> || (Play/Pause)** button - Toggles playback of the track.
+  - **\>\< (Sync)** button (left deck) / **\> || (Play/Pause)** button
+    (right deck)
+  - Holding Shift and pressing one of those buttons initiates the [brake
+    effect](https://www.mixxx.org/wiki/doku.php/midi_scripting#spinback_brake_and_soft_start_effect)
+    for the respective deck: track slows down to full stop (open script
+    file to adjust parameters). This can be interrupted by touching the
+    wheel when scratch mode is enabled: track speed jumps back to normal
+    (considering th pitch slider) and playback continues as soon as the
+    wheel is released.
+  - **3** / **4** button - When lit all deck controls (except FX
+    controls) control deck 3 (deck 4 respectively).
 
 ## Mixer controls
 

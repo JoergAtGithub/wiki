@@ -103,7 +103,9 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
   - Move the wheel while touching the top black area to scratch the
     current track like a vinyl record if vinyl mode is enabled
   - Move the wheel without touching the top (so on the gray sides) to
-    perform a temporary pitch bend.
+    perform a temporary pitch bend. With scratch mode disabled, all
+    regions of the wheel can be touched and turned to perform a
+    temporary pitch bend.
   - **\>\< (Sync)** button - Synchronizes the tempo and beat phase of
     this deck to that of the other. \[ToDo: long-press to toggle master
     sync\]
@@ -118,11 +120,11 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     (right deck)
   - Holding Shift and pressing one of those buttons initiates the [brake
     effect](https://www.mixxx.org/wiki/doku.php/midi_scripting#spinback_brake_and_soft_start_effect)
-    for the respective deck: track slows down to full stop (open script
-    file to adjust parameters). This can be interrupted by touching the
-    wheel when scratch mode is enabled: track speed jumps back to normal
-    (considering th pitch slider) and playback continues as soon as the
-    wheel is released.
+    for the respective deck: track slows down to full stop. This can be
+    interrupted by touching the wheel when scratch mode is enabled:
+    track speed jumps back to normal (considering th pitch slider) and
+    playback continues as soon as the wheel is released. Open the
+    `controllers/Reloop Terminal Mix 2-4.js` file to adjust parameters.
   - **3** / **4** button - When lit all deck controls (except FX
     controls) control deck 3 (deck 4 respectively).
 

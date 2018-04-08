@@ -138,39 +138,47 @@ virtual deck.*
   - **Gain** knob - Adjusts the pre-fader gain
   - **High/Mid/Low EQ** knobs - Adjust the volume of the respective
     frequency range
-  - **Filter** knob - Performs a pseudo-filter effect by adjusting
-    multiple EQ knobs at once (until Mixxx gets a proper filter effect.)
+  - **Filter** knob - Adjust the QuickEffect Meta knob (default: filter)
   - **Headphone** button - Toggles hearing the deck in the headphone
     output
-  - **Number** button - Press to load the currently highlighted song
-    into that deck. Shift and press to toggle fader-start (on the
-    channel fader and cross-fader when applicable.) The button flashes
-    when fader-start is enabled on that deck.
+  - **Arrow** / **Number** button
+  - Press to load the currently highlighted song into that deck.
+  - Shift and press to toggle fader-start (on the channel fader and
+    cross-fader when applicable.) The button flashes when fader-start is
+    enabled on that deck.
   - **Channel slider** - Adjusts the output volume
 
 *The below controls are not deck-specific.*
 
   - ***Master** knob - Adjusts the master output volume of the internal
-    sound card. (This is not mapped in Mixxx.)*
+    sound card. (Hard-wired knob. This is not mapped in Mixxx.)*
   - ***Booth** knob - Adjusts the booth output volume of the internal
-    sound card. (This is not mapped in Mixxx.)*
+    sound card. (Hard-wired knob. This is not mapped in Mixxx.)*
   - ***Phones** knob - Adjusts the headphone output volume of the
-    internal sound card. (This is not mapped in Mixxx.)*
+    internal sound card. (Hard-wired knob. This is not mapped in
+    Mixxx.)*
   - **Cue mix** knob - Adjusts in hardware how much of the headphone bus
     vs the master output you hear in the headphones.
   - **Sampler volume** knob - Adjusts the volume of all of the samplers
     at once.
   - ***Crates** button - Does nothing at the moment. (Mixxx's library
-    doesn't yet support direct panel selection.)*
-  - ***View** button - Does nothing at the moment.*
-  - ***Prep** button - Does nothing at the moment.*
-  - **Back** button - When lit, the Trax knob moves the highlight in the
-    active library panel. When unlit, the knob moves the highlight in
-    the left tree.
-  - **TRAX knob** - Turn to move the highlight. Press to switch to the
-    highlighted library panel (when the Back button is unlit,) or to
-    load the currently selected track into the first stopped deck (when
-    the Back button is lit.)
+    doesn't yet support direct panel selection.) Use the MIDI Learning
+    Wizard to assign an action.*
+  - ***View** button - Does nothing at the moment. Use the MIDI Learning
+    Wizard to assign an action.*
+  - ***Prep** button - Does nothing at the moment. Use the MIDI Learning
+    Wizard to assign an action.*
+  - **Back** button - Pressing moves the highlight in the active library
+    panel to the right. With Shift it moves the highlight to the left.
+  - **TRAX knob**
+  - Turn to move the highlight up/down by one line.
+  - Shift and turn to move the highlight one page up/down
+  - Press while Tree panel has focus expands an item if possible. If
+    item can't be expanded further, it is selected and and highight is
+    shifted rightwarde to the respective tracks table.
+  - Press while tracks table has focus performs the Track Load Action
+    specified in *Preferences \> Library* (default: load track to next
+    empty deck)
 
 ### Cross-fader section
 

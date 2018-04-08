@@ -196,3 +196,22 @@ parameters and are not MIDI-mappable.*
 
 This mapping uses the [Standard Effects
 Mapping](Standard%20Effects%20Mapping).
+
+  - **FX1/2/3** knobs
+  - Those control the Meta knob of each effect.
+  - In focus mode they control the first three knob parameters of the
+    focused effect.
+  - **ON** buttons
+  - Those toggle the effects. Press and hold to temporarily toggle an
+    effect.
+  - In focus mode they control the first three button parameters of the
+    focused effect.
+  - **Beats** encoder
+  - Turning adjust the Wet/Dry knob of the effect unit
+  - Pressing this repeatedly adjusts the BPM (not the pitch/speed\!) of
+    the loaded track.
+  - **Tap** button
+  - Holding this and pressing any ON button focuses the respective
+    effect
+  - Pressing this with Shift switches between FX units 1/3 and 2/4
+    respectively

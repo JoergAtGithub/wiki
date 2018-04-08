@@ -20,13 +20,11 @@ Mixxx.
 ## Sound hardware
 
 The Reloop Terminal Mix 2 and Terminal Mix 4 have integrated
-multichannel sound cards.
-
-Both the Terminal Mix 2 and Terminal Mix 4 have a microphone and a
-switchable line/phono input that can be routed into Mixxx. For both
-inputs there is a gain knob and a switch on the controller that toggles
+multichannel sound cards. Both have a microphone and a switchable
+line/phono input that can be routed into Mixxx. For both inputs there is
+a gain knob and a switch on the controller's front side that toggles
 between routing the signal to the computer or mixing it directly with
-the master output, which is allows to already play music from external
+the master output. The latter allows to already play music from external
 sources while setting up Mixxx software. If you want to record,
 broadcast, or put effects on the microphone input, route it into Mixxx.
 

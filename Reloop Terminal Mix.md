@@ -191,7 +191,7 @@ either side.
 to choose on which side of the cross fader that deck will be heard.
 (Note that the fader-start functionality correctly follows this
 assignment.) If "thru" is selected, the cross-fader will not affect the
-audio from that deck.
+audio from that deck and it will always be heared.
 
 #### Curve adjust
 

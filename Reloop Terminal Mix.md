@@ -51,16 +51,18 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
 ### FX Controls
 
   - **FX** knobs & buttons - These control the FX units via
-    components-js, see bootom of page (Note: these don't switch to decks
-    3 and 4.)
+    components-js, see [Effect
+    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)
+    (Note: these don't switch to decks 3 and 4.)
   - **Beats knob**
-  - Turning this adjusts Wet/Dry for the respective FX unit (see bottom
-    of page).
+  - Turning this adjusts Wet/Dry for the respective FX unit (see [Effect
+    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)).
   - Pressing this repeatedly adjusts the BPM (not the pitch/speed\!) of
     the loaded track.
   - Pressing this with Shift moves the nearest beat marker to the
     current play position.
-  - **Tap** button - This is the FX focus button (see bottom of page).
+  - **Tap** button - This is the FX focus button (see [Effect
+    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)).
     It also flashes on each beat. 
 
 ### Loop Controls

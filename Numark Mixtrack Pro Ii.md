@@ -14,8 +14,9 @@ The audio interface is recognized in Ubuntu 14.04 out of the box.
 
 ## Mapping
 
-There is a [pending PR](https://github.com/mixxxdj/mixxx/pull/1540) to
-integrate this mapping into Mixxx 2.1. This mapping is based on [this
+This mapping is integrated in Mixxx 2.1 with [this
+PR](https://github.com/mixxxdj/mixxx/pull/1540). This mapping is based
+on [this
 mapping](https://github.com/snowyoneill/Mixxx-Numark-MixTrack-Pro-II-2016.midi).
 
 [[/media/hardware/numarkmixtrackproii.png|numarkmixtrackproii.png]]
@@ -27,7 +28,7 @@ Rotate the knob to cycle through folders and tracks.
 
 ### 2\. Load
 
-Load the track selected in the library to the deck
+Load the track selected in the library to the deck.
 
 ### 3\. Back
 
@@ -76,11 +77,13 @@ Controls the tempo (speed) of the individual decks.
 
 ### 11\. Pitch Bend -
 
-Press and hold to momentarily reduce the speed of the track.
+Press and hold to momentarily reduce the speed of the track.  
+**Shift + Pitch Bend -:** Toggles keylock on/off.
 
 ### 12\. Pitch Bend +
 
-Press and hold to momentarily increase the speed of the track.
+Press and hold to momentarily increase the speed of the track.  
+**Shift + Pitch Bend +:** Changes pitch fader range.
 
 ### 13\. Sync
 
@@ -138,7 +141,8 @@ Function of this button depends on the current Pad Mode.
 **Sample Mode:** Plays the sample assigned to Sampler 4 (left deck) or
 Sampler 8 (right deck).  
 **Cue Mode:** Toggles Hotcue Delete Mode. Press this button, and then
-press one of the other pads in the row to delete that Hotcue.
+press one of the other pads in the row to delete that Hotcue.  
+**Note:** This button is lit when in Hotcue Delete Mode.
 
 ### 20\. FX 1 On/Off
 
@@ -164,7 +168,7 @@ of the track.
 
 ### 24\. Channel Volume
 
-Adjusts the volume of the deck
+Adjusts the volume of the deck.
 
 ### 25\. Master Gain
 

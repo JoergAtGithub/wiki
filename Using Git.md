@@ -1,8 +1,8 @@
 # Using Git for Mixxx Development
 
 Mixxx uses [Git](http://git-scm.com/) for source control. Git is a
-distributed version control system that allows us to develop, share, and
-maintain code easily. Our code is hosted on
+distributed version control system that allows us to keep track of how
+our code changes and work together on it. Our code is hosted on
 [GitHub](https://github.com/mixxxdj/mixxx).
 
 # Tutorials

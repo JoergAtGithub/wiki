@@ -5,6 +5,7 @@
   - [Manufacturer's product
     page](http://denondj.com/products/view/mc6000mk2)
   - [Forum thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=6251)
+  - [Mixxx maintainer](https://github.com/uklotzde)
 
 # Mapping description
 

@@ -1,4 +1,4 @@
-# How to compile Mixxx for Mac OS X
+# How to compile Mixxx for macOS
 
 Compiling Mixxx for Mac OS X is a simple process once you have all
 dependencies and Qt set up properly. This guide assumes you have basic

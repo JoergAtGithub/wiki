@@ -238,33 +238,8 @@ for an explanation of the different sound APIs.
 
 ## I hear the microphone input echoed back with a delay
 
-By default, Mixxx combines microphone inputs with the main output,
-broadcasting, and recording signals. It takes time for the signal from
-your microphone to go through your sound card's analog-to-digital
-converter, through Mixxx, and back out through your sound card's
-digital-to-analog converter. So, the microphone signal reaches your
-speakers and/or headphones a few milliseconds after you make the sound.
-If you are only interested in broadcasting or recording with your
-microphone input, you can prevent Mixxx from mixing the delayed input
-signal with the main output to your sound card. Go to Options \>
-Preferences \> Sound Hardware in Mixxx. Change the "Microphone/Talkover
-Mix" option from "Master output" to "Recording and Broadcasting Only".
-
-If you do want to mix the signal from your microphone with Mixxx's
-output with an unnoticeably small delay, mix the microphone signal with
-Mixxx's output without digitizing it. However, you won't be able to
-record or broadcast the microphone signal. DJ controllers with
-microphone inputs and integrated sound cards often do this. If you are
-plugging Mixxx's output into another hardware mixer, this can be done by
-plugging your microphone into that mixer instead of running it through
-Mixxx.
-
-Alternatively, sound cards marketed for recording typically have a
-feature called direct monitoring that mixes the input signal directly
-with the output without digitizing it, and also runs the digitized
-signal to the computer. These sound cards typically have a knob on them
-that controls the mix between the computer output and the direct monitor
-signal. See your sound card's manual for more information.
+Refer to the [Using Microphones chapter of the
+manual](https://mixxx.org/manual/latest/en/chapters/microphones.html).
 
 ## BPM of tracks is not shown in my library
 

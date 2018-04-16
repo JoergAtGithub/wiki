@@ -10,21 +10,10 @@ available on [the download page](http://mixxx.org/download).
 
 ## A deck randomly stops playing
 
-There is currently a known bug with decoding M4A/AAC files on Windows in
-Mixxx 2.0 that can cause a deck to seemingly randomly stop playing until
-Mixxx is restarted.
-
-There are two workarounds. If you are not comfortable running a
-prerelease verison of Mixxx and want to stick with Mixxx 2.0, the most
-reliable workaround would be to convert all your M4A/AAC files to FLAC.
-[Fre:AC](https://www.freac.org/) is a free program that can do this.
-Unfortunately, this wastes a lot of disk space. Keep your original
-M4A/AAC files around so you can delete the FLAC files when Mixxx 2.1 is
-released. Converting lossy M4A/AAC files to another lossy format will
-sound worse than the starting M4A/AAC files and is not advised.
-
-This bug has been fixed in [Mixxx 2.1
-beta](http://downloads.mixxx.org/builds/2.1/release/).
+There was a known bug with decoding M4A/AAC files on Windows in Mixxx
+2.0 that can cause a deck to seemingly randomly stop playing until Mixxx
+is restarted. This bug has been fixed in Mixxx 2.1. [Download
+Mixxx 2.1](https://mixxx.org/download/).
 
 ## Other programs do not make sound while Mixxx is running
 

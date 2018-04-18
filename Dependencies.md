@@ -33,6 +33,47 @@ Repository:
 
 | Library       | Windows    | Mac OS X    |
 | ------------- | ---------- | ----------- |
+| Qt            | 5.10.1     | 5.10.1      |
+| autoconf      | N/A        | 2.69        |
+| automake      | N/A        | 1.15        |
+| chromaprint   | 1.3.1      | 1.3.1       |
+| cmake         | N/A        | 3.5.2       |
+| fftw          | 3.3.4      | N/A         |
+| hss1394       | r8         | r8          |
+| libid3tag     | 0.15.1b    | N/A         |
+| libmad        | 0.15.1b    | N/A         |
+| libmp3lame    | 3.99.5     | 3.100       |
+| libogg        | 1.3.2      | 1.3.2       |
+| libshout      | 2.4.1      | 2.4.1       |
+| libsndfile    | 1.0.26     | 1.0.26      |
+| libsoundtouch | 1.9.2      | 1.9.2       |
+| libtool       | N/A        | 2.4         |
+| libusb        | N/A        | 1.0.20      |
+| libFLAC       | 1.3.1      | 1.3.1       |
+| openssl       | 1.0.2h     | 1.0.2h      |
+| opus          | 1.1.2      | 1.1.2       |
+| opusfile      | 0.7        | 0.7         |
+| pkg-config    | N/A        | 0.29.1      |
+| portaudio     | 2014-01-30 | 2016-10-30  |
+| portmidi      | 228        | 217         |
+| protobuf      | 2.6.1      | 2.6.1       |
+| pthreads      | 2.9.1      | N/A         |
+| rubberband    | 1.8.1      | 1.8.1       |
+| scons         | 2.5.1      | 2.5.0       |
+| sqlite        | 3130000    | 3130000     |
+| taglib        | 1.10       | 1.11        |
+| vorbis        | 1.3.5      | 1.3.5       |
+| zlib          | 1.2.8      | Qt internal |
+| ASIO SDK      | 2.3        | N/A         |
+
+# Mixxx 2.1
+
+Repository:
+[Windows](https://github.com/mixxxdj/buildserver/tree/2.1.x-windows)
+[macOS](https://github.com/mixxxdj/buildserver/tree/2.1.x-unix)
+
+| Library       | Windows    | Mac OS X    |
+| ------------- | ---------- | ----------- |
 | Qt            | 4.8.7      | 4.8.7       |
 | autoconf      | N/A        | 2.69        |
 | automake      | N/A        | 1.15        |

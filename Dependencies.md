@@ -25,11 +25,11 @@ To update one, do the following:
 13. Update the dependency version listed here for the next version of
     Mixxx.
 
-# Mixxx 2.1
+# Mixxx 2.2
 
 Repository:
-[Windows](https://github.com/mixxxdj/buildserver/tree/2.1.x-windows)
-[macOS](https://github.com/mixxxdj/buildserver/tree/2.1.x-unix)
+[Windows](https://github.com/mixxxdj/buildserver/tree/2.2.x-windows)
+[macOS](https://github.com/mixxxdj/buildserver/tree/2.2.x-unix)
 
 | Library       | Windows    | Mac OS X    |
 | ------------- | ---------- | ----------- |

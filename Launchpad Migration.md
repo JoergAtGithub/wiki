@@ -223,9 +223,9 @@ QT uses Jira <https://bugreports.qt.io> as well
 
 ### Advantages
 
-  - Launchpad migration without loosing Metadata
+  - Launchpad migration without losing Metadata
     <https://github.com/rasmushoj/LP2JIRA>
-  - Using the Launchpad workflow, customise it. 
+  - Using the Launchpad workflow, customize it. 
   - Open Source Plan:
     <https://www.atlassian.com/software/views/open-source-license-request>
   - Integrates with GitHub

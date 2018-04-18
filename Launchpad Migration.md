@@ -46,6 +46,9 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
 
 # Possible solutions
 
+[Comparison chart of different project management software packages on
+Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_project_management_software)
+
 ## GitHub Issues
 
 Many have suggested using GitHub's issue tracker since it naturally

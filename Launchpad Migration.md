@@ -181,8 +181,8 @@ the paid proprietary Enterprise Edition Premium server software.
 
   - Must run our own instance (no pre-hosted environments, though
     possibly from third party)
-  - Looks like SourceForge
-  - Indeed, SourceForge uses it
+  - Looks like old SourceForge
+  - Indeed, SourceForge (used to?) use(s) it
   - Need to migrate data from three different systems
   - Someone needs to commit to managing migration
 

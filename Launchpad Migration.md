@@ -211,12 +211,10 @@ the paid proprietary Enterprise Edition Premium server software.
 
 from <https://www.mixxx.org/forums/viewtopic.php?f=1&t=9425&start=10>
 
-Jira seems to be popular for open source projects and ~~free Jira
-hosting is available for open source projects.~~ Please provide a link
-to back this up. I (Sean) can't find any such offer.
-
-It's a far better issue tracker than what github offers. Someone wrote
-about porting issues from Launchpad to Jira:
+Jira seems to be popular for open source projects and free Jira hosting
+is available for open source projects. It's a far better issue tracker
+than what github offers. Some one wrote about porting issues fro
+Launchpad to Jira:
 <https://mariadb.org/scripts-for-migrating-bug-reporting-from-launchpad-to-jira/>
 
 QT uses Jira <https://bugreports.qt.io> as well

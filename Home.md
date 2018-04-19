@@ -135,8 +135,8 @@ this wiki, please fix it.
 
 ### Development Topics
 
-  - [To-do list for the next release](2.1.0_todo) - Help us get the next
-    release ready\!
+  - [To-do list for the next major release](2.2.0_todo) - Help us get
+    the next release ready\!
   - [Setting-up CI on your own
     fork](Setting-up%20CI%20on%20your%20own%20fork)
   - [Development Roadmap](Development%20Roadmap)

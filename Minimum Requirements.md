@@ -38,7 +38,7 @@ source](start#compile_mixxx_from_source_code).
 </tbody>
 </table>
 
-# Mixxx 2.1 (planned)
+# Mixxx 2.1
 
 <table>
 <thead>

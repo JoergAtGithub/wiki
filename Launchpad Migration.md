@@ -46,6 +46,9 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
 
 # Possible solutions
 
+[List of Application Lifecycle Management
+suites](https://en.wikipedia.org/wiki/Application_lifecycle_management#ALM_software_suites)
+
 [Comparison chart of different project management software packages on
 Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_project_management_software)
 

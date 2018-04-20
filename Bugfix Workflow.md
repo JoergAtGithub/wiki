@@ -50,7 +50,7 @@ debugging messages printed to the console.
 
 ## Ask for hints and help
 
-Ask your questions or discuss your ideas at
+Ask your questions or discuss your ideas on
 [Zulip](https://mixxx.zulipchat.com) chat.
 
 There is also the

@@ -127,7 +127,7 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
 
   - **\>\< (Sync)** button - Synchronizes the tempo and beat phase of
     this deck to that of the other. \[ToDo: long-press to toggle master
-    sync\]
+    sync incl. LED feedback\]
   - **CUP** button - This stands for Cue-Play which starts playback from
     the cue point. This is also known as stutter play.
   - **Q (Cue)** button - Sets or recalls the main cue point on the
@@ -143,7 +143,8 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     interrupted by touching the wheel when scratch mode is enabled:
     track speed jumps back to normal (considering th pitch slider) and
     playback continues as soon as the wheel is released. Open the
-    `controllers/Reloop Terminal Mix 2-4.js` file to adjust parameters.
+    `controllers/Reloop Terminal Mix 2-4.js` file and look for
+    `TerminalMix.brake` to adjust parameters.
   - **3** / **4** button - When lit all deck controls (except FX
     controls) control deck 3 (deck 4 respectively).
 

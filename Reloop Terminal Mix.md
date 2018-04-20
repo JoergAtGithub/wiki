@@ -145,8 +145,13 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
     playback continues as soon as the wheel is released. Open the
     `controllers/Reloop Terminal Mix 2-4.js` file and look for
     `TerminalMix.brake` to adjust parameters.
-  - **3** / **4** button - When lit all deck controls (except FX
-    controls) control deck 3 (deck 4 respectively).
+
+<!-- end list -->
+
+``` 
+  [ToDo: add sofStart function as well]
+* **3** / **4** button - When lit all deck buttons (except FX controls) control deck 3 (deck 4 respectively).
+```
 
 ## Mixer controls
 

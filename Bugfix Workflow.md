@@ -51,11 +51,7 @@ debugging messages printed to the console.
 ## Ask for hints and help
 
 Ask your questions or discuss your ideas at
-
-  - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-    (mailing list) 
-  - or at the Mixxx IRC Channel: \#mixxx on
-    [Freenode](http://freenode.net/)
+[Zulip](https://mixxx.zulipchat.com) chat
 
 Some notes about the Mixxx Control interface:
 [developer\_guide\_control](developer_guide_control)

@@ -76,6 +76,15 @@ has support for many languages besides C/C++.
 [Here](https://onze.io/emacs/c++/2017/03/16/emacs-cpp.html) is a guide
 for a setup using this tool.
 
+### cquery
+
+[cquery](https://github.com/cquery-project/cquery) is really easy to set
+up and provides everything: syntax checker, auto-completion, navigation,
+documentation. It's developed for and tested with huge codebases. It can
+also work without a `compiler_commands.json` making it even greater for
+mixxx since with scons generating the json can be quite hard. Everything
+you need to install it can be found in the repo's wiki.
+
 ### magit
 
 [magit](https://magit.vc/) is considered to be one of the best packaged

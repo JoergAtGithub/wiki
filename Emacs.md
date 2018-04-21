@@ -106,4 +106,4 @@ details of how to set it up in tuhdo's guide I mentioned above.
 > \- Emacs user
 
 Emacs is all about trying new stuff and having fun. I hope this
-collection of links and tools can help wnyone who might need them.
+collection of links and tools can help anyone who might need them.

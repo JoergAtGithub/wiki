@@ -53,10 +53,6 @@ debugging messages printed to the console.
 Ask your questions or discuss your ideas on
 [Zulip](https://mixxx.zulipchat.com) chat.
 
-There is also the
-[mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-mailing list, but it's not that active any more.
-
 Some notes about the Mixxx Control interface:
 [developer\_guide\_control](developer_guide_control)
 

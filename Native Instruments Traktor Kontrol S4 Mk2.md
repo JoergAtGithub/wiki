@@ -35,11 +35,8 @@ it in daylight, and increases the volume of the headphone output.
 
 The Kontrol S4 MK2 is a USB class compliant audio, HID, and MIDI device,
 so it is compatible with Mixxx without any proprietary drivers on
-GNU/Linux and Mac OS X. However, with Mixxx 2.0 on GNU/Linux, an
-additional [udev rule
-file](troubleshooting#hid%20and%20usb%20bulk%20controllers%20on%20gnu%20linux)
-needs to be installed for the HID device to be detected by Mixxx. On
-Windows, it is recommended to install the [driver from Native
+GNU/Linux and Mac OS X. On Windows, it is recommended to install the
+[driver from Native
 Instruments](https://www.native-instruments.com/en/support/downloads/drivers-other-files/)
 and select the ASIO sound API in the Sound Hardware section of Mixxx's
 Preferences.

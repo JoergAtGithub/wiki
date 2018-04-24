@@ -254,6 +254,9 @@ It has a issue tracker similar to Launchpad but not that complicated the
 Jira. It combines code hosting, code review and issue tracking in the
 same was as GitHub does.
 
+Example
+<https://bitbucket.org/tortoisehg/thg/issues?status=new&status=open>
+
 ### Advantages
 
   - Launchpad migration without losing Metadata

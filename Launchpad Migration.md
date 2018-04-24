@@ -247,3 +247,27 @@ QT uses Jira <https://bugreports.qt.io> as well
  * Source Code available for review only
  * Not FOSS
 ```
+
+## BitBucket
+
+It has a issue tracker similar to Launchpad but not that complicated the
+Jira. It combines code hosting, code review and issue tracking in the
+same was as GitHub does.
+
+### Advantages
+
+  - Launchpad migration without losing Metadata
+    <https://bitbucket.org/jonathanj/lp2bb>
+  - Using the Launchpad workflow.
+  - Open Source Plan:
+    <https://www.atlassian.com/software/views/open-source-license-request>
+  - REST API
+  - Allows anonymous bug filing.
+  - Zulip integration
+
+### Disadvantages
+
+``` 
+ * Source Code available for review only
+ * Not FOSS
+```

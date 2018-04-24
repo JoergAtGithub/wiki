@@ -6,10 +6,19 @@ free software projects.
 
 ## 2018
 
+Mixxx was excepted for Google Summer of Code
+
   - See the list of suggested projects: **[GSoC 2018
     Ideas](gsoc2018ideas)**
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
+
+The following projects were accepted for Google Summer of Code 2017:
+
+  - [Live metadata output](Live%20metadata%20output) by David Hernández
+    Morales (davidhm) 
+  - [Mixxx Effects Proposal](Mixxx%20Effects%20Proposal) by Kshitij
+    Gupta 
 
 ## Past Years
 

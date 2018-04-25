@@ -84,6 +84,7 @@ Migration tools:
 ## GitLab
 
 <https://about.gitlab.com/>
+<https://blueprints.launchpad.net/mixxx/+spec/gitlab-migration>
 
 ### Advantages
 

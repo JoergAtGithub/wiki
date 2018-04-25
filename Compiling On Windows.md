@@ -65,9 +65,9 @@ page](Build%20Windows%20installer).)*
 
 ## Acquire Mixxx dependencies
 
-To build Mixxx, you need built copies of its dependencies. You may build
-these from source, or download pre-built versions of them from the Mixxx
-team.
+To build Mixxx, you need built copies of its dependencies. You may
+download pre-built versions of them from the Mixxx team (recommended,)
+or build them from source.
 
 ### Option 1: Download pre-built Mixxx dependencies
 

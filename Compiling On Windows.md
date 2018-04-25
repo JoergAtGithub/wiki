@@ -132,7 +132,7 @@ downloading pre-built ones:
 This step will take 2-3 hours depending on how many CPU cores you have.
 Go have lunch.
 
-### Download Mixxx's source code
+## Download Mixxx's source code
 
 1.  Clone the [Mixxx](https://github.com/mixxxdj/mixxx.git) repository.
     Remember the folder to which the repository was saved. We will refer

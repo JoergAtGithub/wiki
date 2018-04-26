@@ -6,7 +6,7 @@ This mapping features full 4-deck support and seamless integration of
 external devices.
 
 This mapping has some unusual features like per Deck shift buttons and
-multiple pages of hotcues. [[/media/hardware/numark/n4_traktor_overlay.svg|]]
+multiple pages of hotcues. [[/media/hardware/numark/n4_mixxx_overlay.svg|]]
 
 This overlay can be downloaded in a ready to print format for DIN
 [[/media/hardware/numark/numarkn4-mixxx-overlay-a3.pdf|A3]] and

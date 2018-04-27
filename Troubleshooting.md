@@ -149,16 +149,10 @@ package as well as when installing Mixxx from source (if you have write
 access to /etc/udev/rules.d when running `scons install`), however
 packages for other distributions might not install it correctly.
 
-The udev rule works for old Hercules USB Bulk controllers, but the rule
-file included in Mixxx 2.0 has a bug that prevents it from working for
-HID devices. If you did not install Mixxx from the Ubuntu PPA or
-RPMFusion, or if you have an HID device such as a Native Instruments
-Traktor controller (refer to the [DJ Hardware
-Guide](hardware%20compatibility) for information about what
-communication protocol your controller uses), you will first need to
-save save [this
+If you did not install Mixxx from the Ubuntu PPA or RPMFusion, you may
+need to save save [this
 file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
-to /etc/udev/rules.d/mixxx.usb.rules . You will need root privileges
+to `/etc/udev/rules.d/mixxx.usb.rules`. You will need root privileges
 (use `sudo` or `su`) to copy the file to that location. Then, restart
 your computer.
 

@@ -17,4 +17,4 @@ szdavid92](Novation%20Launchpad%20Mapping%20by%20szdavid92)
 GitHub](https://github.com/szdavid92/mixxx-launchpad)
 
 [Official Programmer's
-Manual](https://d19ulaff0trnck.cloudfront.net/sites/default/files/novation/downloads/10529/launchpad-mk2-programmers-reference-guide-v1-02.pdf)
+Manual](https://global.novationmusic.com/sites/default/files/novation/downloads/10529/launchpad-mk2-programmers-reference-guide_0.pdf)

@@ -149,19 +149,19 @@ package as well as when installing Mixxx from source (if you have write
 access to /etc/udev/rules.d when running `scons install`), however
 packages for other distributions might not install it correctly.
 
-If you did not install Mixxx from the Ubuntu PPA or RPMFusion, you may
-need to save save [this
-file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
-to `/etc/udev/rules.d/mixxx.usb.rules`. You will need root privileges
-(use `sudo` or `su`) to copy the file to that location. Then, restart
-your computer.
-
 If you still do not see your controller on the left side of Mixxx's
 Preferences, check that your user account is in the group "users". Open
 a console and run the command `groups` to find out what groups your user
 is in. If `users` is not listed, run `usermod -aG users YOUR-USER-NAME`
 as root to add YOUR-USER-NAME to the "users" group, log out, and log
 back in.
+
+If you did not install Mixxx from the Ubuntu PPA or RPMFusion, you may
+need to save save [this
+file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
+to `/etc/udev/rules.d/mixxx.usb.rules`. You will need root privileges
+(use `sudo` or `su`) to copy the file to that location. Then, restart
+your computer.
 
 ## Mixxx says my sound card does not support the sample format
 

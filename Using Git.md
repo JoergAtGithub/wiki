@@ -113,7 +113,9 @@ When you are ready to start making changes to the Mixxx code, create a
 new Git branch for your work. Git branches are a way to organize your
 work into separate workspaces, which allows you to work on multiple
 bugs/features in parallel and independently propose them for inclusion
-in Mixxx whenever each one is ready.
+in Mixxx whenever each one is ready. **Every time you start fixing
+another bug or working on a new feature, make a new branch** following
+these steps:
 
 First, download the latest updates before you start working on new
 changes:
@@ -130,13 +132,12 @@ switch to it:
 
     git checkout -b fixing_some_bug
 
-**Every time you start fixing another bug or working on a new feature,
-switch back to the upstream master or beta branch before starting your
-new branch.** This will allow you to propose your new set of changes for
-inclusion in Mixxx independently of what you were working on before. If
-you do not do this first, when you make a pull request for inclusion in
-Mixxx (see below), both what you were working on before and your new
-changes will be included in the pull request.
+Doing this every time you start working on a new feature or bug fix will
+allow you to propose your new set of changes for inclusion in Mixxx
+independently of what you were working on before. If you do not do this
+first, when you make a pull request for inclusion in Mixxx (see below),
+both what you were working on before and your new changes will be
+included in the pull request.
 
 # Committing changes
 

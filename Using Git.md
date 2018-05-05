@@ -23,10 +23,13 @@ the IDE.
 
 First, [sign up for an account on GitHub](https://github.com/). Then, go
 to the [mixxxdj/mixxx repository](https://github.com/mixxxdj/mixxx) and
-click the "Fork" button in the top right. To download the Mixxx code,
-run this command in your shell:
+click the "Fork" button in the top right. [Add an SSH key for your
+GitHub
+account](https://help.github.com/articles/connecting-to-github-with-ssh/)
+(otherwise you will need to re-enter your username and password
+frequently). To download the Mixxx code, run this command in your shell:
 
-    git clone https://github.com/YOUR-GITHUB-USER-NAME/mixxx.git
+    git clone git@github.com:YOUR-GITHUB-USER-NAME/mixxx.git
 
 Open the `.git/config` file in the new `mixxx` folder that was created
 by the above `git clone` command with your favorite text editor. Copy

@@ -74,9 +74,9 @@ website.
 
 # Create a new branch
 
-When you are ready to start making changes to the Mixxx code, create a
-new Git branch for your work. Git branches are a way to organize your
-work into separate workspaces, which allows you to work on multiple
+When you are ready to start editing the Mixxx code, create a new Git
+branch for your work. Git branches are a way to organize your changes
+into separate workspaces, which allows you to work on multiple
 bugs/features in parallel and independently propose them for inclusion
 in Mixxx whenever each one is ready. **Every time you start fixing
 another bug or working on a new feature, make a new branch** following

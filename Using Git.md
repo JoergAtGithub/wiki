@@ -77,10 +77,16 @@ and paste the following lines at the top of the file:
 
 This makes it easy to interact with the upstream [mixxxdj/mixxx
 repository on GitHub's server](https://github.com/mixxxdj/mixxx). To
-download the latest updates, run `git fetch upstream`. That will only
-download the updates though. To change the files on your computer to
-match the latest updates, run `git checkout upstream/master` to switch
-to the upstream master branch.
+download the latest updates, run
+
+    git fetch upstream
+
+That will only download the updates though. To change the files on your
+computer to match the latest updates, run
+
+    git checkout upstream/master
+
+to switch to the upstream master branch.
 
 Note that your fork on GitHub's server is accessed with the remote
 called "origin", which is separate from "upstream".

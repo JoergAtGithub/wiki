@@ -127,6 +127,12 @@ repository:
 
     git checkout upstream/master
 
+If there is currently a beta release and you want your changes included
+in the upcoming release, checkout the release branch instead of the
+master branch, for example:
+
+    git checkout upstream/2.1
+
 Create a new branch on your computer called 'fixing\_some\_bug' and
 switch to it:
 

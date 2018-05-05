@@ -112,12 +112,11 @@ included in the pull request.
 
 # Committing changes
 
-**Important: First you need to set your name and email address. If you
-don't do this then your commits will not be associated with your name
-(or your account on GitHub) and you won't get the glory and recognition
-you deserve\!** For your commits to be associated with your GitHub
-account, make sure to use an email address that is associated with your
-GitHub account.
+First you need to set your name and email address. If you don't do this
+then your commits will not be associated with your name (or your account
+on GitHub) and you won't get the glory and recognition you deserve\! For
+your commits to be associated with your GitHub account, make sure to use
+an email address that is associated with your GitHub account.
 
     git config --global user.name "Your Name"
     git config --global user.email "you@example.com"

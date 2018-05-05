@@ -109,20 +109,26 @@ website.
 
 # Create a new branch
 
-Branches give you scratch space to work on new features and ideas
-without having to commit on top of an existing branch (like the `master`
-branch). This allows you to work on multiple bugs/features in parallel
-and independently propose them for inclusion in Mixxx whenever each one
-is ready.
+When you are ready to start making changes to the Mixxx code, create a
+new Git branch for your work. Git branches are a way to organize your
+work into separate workspaces, which allows you to work on multiple
+bugs/features in parallel and independently propose them for inclusion
+in Mixxx whenever each one is ready.
 
-    $ git fetch upstream
-    Download the latest updates before you start working on new changes
-    
-    $ git checkout upstream/master
-    Switch to the master branch from the upstream repository
-    
-    $ git checkout -b fixing_some_bug
-    Create a new branch on your computer called 'fixing_some_bug' and switch to it
+First, download the latest updates before you start working on new
+changes:
+
+    git fetch upstream
+
+Switch the files on your computer to the master branch from the upstream
+repository:
+
+    git checkout upstream/master
+
+Create a new branch on your computer called 'fixing\_some\_bug' and
+switch to it:
+
+    git checkout -b fixing_some_bug
 
 **Every time you start fixing another bug or working on a new feature,
 switch back to the upstream master or beta branch before starting your

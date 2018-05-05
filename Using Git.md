@@ -242,7 +242,7 @@ automatically be included in the pull request you already have open.
 When the changes are approved, we will merge them into the upstream
 Mixxx code\!
 
-To work on a different bug or feature, [\#create a new
+To work on another bug or feature, [\#create a new
 branch](#create%20a%20new%20branch).
 
 # Merging new changes from upstream

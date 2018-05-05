@@ -41,9 +41,11 @@ Git GUI. Here are some stand-alone GUI programs:
 
 ``` 
  * gitk (comes with git)
- * [[http://git-cola.github.io/|Git Cola]]
+ * [[http://git-cola.github.io/|Git Cola]] (cross platform)
  * [[https://tortoisegit.org/|Tortoise Git]] (Windows only)
- * [[https://wiki.gnome.org/Apps/Gitg/|gitg]]
+ * [[http://gitextensions.github.io/|Git Extensions]] (Windows only)
+ * [[https://www.sourcetreeapp.com/|Source Tree]] (Windows and macOS)
+ * [[https://wiki.gnome.org/Apps/Gitg/|gitg]] (Linux only)
 ```
 
 These IDEs have some integration with Git:
@@ -52,6 +54,7 @@ These IDEs have some integration with Git:
  * [[Eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
  * [[QtCreator]] has built in support of Git (but be warned, it has is own opinion which files will be added to the Index)
  * [[KDevelop]] also has built in support for Git
+ * [[https://magit.vc/|Magit]] provides Git integration for Emacs
 ```
 
 # Set Up Git
@@ -197,98 +200,6 @@ checkout the master or beta branch then create another branch so your
 new changes are not included in the pull request that you already
 opened.
 
-# Keeping Track of Updates
-
-## Syncing your fork with upstream
-
-See GitHub's Help article [Syncing a
-fork](https://help.github.com/articles/syncing-a-fork/).
-
-## Testing pull requests
-
-See [Checkout github pull requests
-locally](https://gist.github.com/piscisaureus/3342247).
-
-## Testing other developer's unmerged branches
-
-Sometimes there may be another developer you would like to keep track of
-or regularly merge updates from.
-
-Let's say I would like to keep track of `ywwg`, another GitHub user who
-is working on Mixxx. First, add the developer's Git repository as a
-remote to your repository.
-
-    $ git remote add ywwg https://github.com/ywwg/mixxx.git
-
-Adding a repository as a remote is a way to assign a shortcut name to an
-external repository you would like to pull changes from or push changes
-to. Adding a remote doesn't do anything but add the alias. Next, you
-need to fetch the latest changes from `ywwg`'s repository.
-
-    $ git fetch ywwg 
-    remote: Counting objects: 1771, done.
-    remote: Compressing objects: 100% (714/714), done.
-    remote: Total 1522 (delta 1301), reused 1014 (delta 804)
-    Receiving objects: 100% (1522/1522), 469.46 KiB, done.
-    Resolving deltas: 100% (1301/1301), completed with 154 local objects.
-    From https://github.com/ywwg/mixxx
-     * [new branch]      1.11       -> ywwg/1.11
-     * [new branch]      master     -> ywwg/master
-     * [new branch]      master_sync -> ywwg/master_sync
-
-Cool\! Now I have all of `ywwg`'s branches as remote heads in my
-repository. We can confirm this by looking at the remote branch list.
-
-    $ git branch -r
-    ...
-      remotes/ywwg/1.11
-      remotes/ywwg/master
-      remotes/ywwg/master_sync
-    ...
-
-Now, if I want to merge the latest changes from `ywwg`'s `master_sync`
-branch, I can just merge them directly into my current branch.
-
-    git merge ywwg/master_sync
-
-Or, if I want to work on my own changes to master\_sync, I can create a
-new local branch with `remotes/ywwg/master_sync` set as its "tracking
-branch". This means that when you type `git pull` with no arguments,
-your local `master_sync` branch knows to pull changes from `ywwg`'s
-`master_sync` branch.
-
-To checkout a branch as a tracking branch:
-
-    git checkout -b master_sync --track ywwg/master_sync
-
-Once you've made local changes you would like `ywwg` to accept, you can
-submit a pull request to `ywwg` on GitHub or just contact him in person
-to ask him to merge changes from your branch.
-
-## Uncommitted Changes
-
-Creating a patch of your uncommitted changes is as simple as running the
-command `git diff`.
-
-    git diff > my_changes.patch
-
-`my_changes.patch` now contains the changes you made.
-
-Note: In git-parlance, this is actually a patch of your "unstaged"
-differences.
-
-## Changes relative to the remote master branch
-
-If you have committed your changes locally either to a personal branch
-or to an existing branch like `master`, then you may be interested in
-creating a patch of the changes in your branch relative to the remote
-branch on GitHub. Doing this is also simple:
-
-    git diff origin/master > my_changes.patch
-
-`my_changes.patch` is now a patch of the changes (both committed and
-uncommitted) in your branch relative to the `master` branch on GitHub.
-
 # Working on mappings and skins separately from other changes
 
 If you are working on a mapping or skin and you want to work on other
@@ -316,55 +227,5 @@ branch open at \~/software/mixxx/mapping.
 If you want to work on a skin, you can set up another git worktree and
 run mixxx with the `--resourcePath` option set to the `res` directory
 under that worktree.
-
-# GUI clients
-
-Here's a list of graphical Git clients that Mixxx developers have
-tested:
-
-#### Cross-Platform
-
-  - gitk, comes with git
-  - [Git Cola](http://git-cola.github.io/)
-  - [Meld](http://meldmerge.org/) helps review diffs
-  - [GitKraken](https://www.gitkraken.com/) 
-
-#### Windows
-
-  - [TortoiseGit](https://tortoisegit.org/)
-  - [Git Extensions](http://gitextensions.github.io/)
-
-#### macOS
-
-  - [SourceTree](https://www.sourcetreeapp.com/)
-
-#### Linux
-
-  - [GitG](http://freecode.com/projects/gitg)
-
-# Other Resources
-
-Here are some handy and great guides to learning how to use Git.
-
-  - [Typical workflow with GitHub on shared
-    project](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project/)
-  - [Git Cheat Sheet](http://cheat.errtheblog.com/s/git)
-  - [Pro Git -- the official Git book, free](http://git-scm.com/book)
-  - [Git for Computer
-    Scientists](http://eagain.net/articles/git-for-computer-scientists/)
-    
-  - [git ready -- git tips and tricks](http://gitready.com/)
-  - [git
-    stash](http://gitready.com/beginner/2009/01/10/stashing-your-changes.html)
-    -- a command to temporarily store local changes to a "stash".
-  - [A successful Git branching
-    model.](http://nvie.com/posts/a-successful-git-branching-model/)
-  - [magit -- an emacs mode for Git](https://github.com/magit/magit)
-  - [Git Rebase](http://git-scm.com/book/en/Git-Branching-Rebasing) --
-    An advanced Git technique for keeping a clean history.
-  - [git - the simple guide](http://rogerdudler.github.io/git-guide/) --
-    Just a simple guide for getting started with git
-
-<!-- end list -->
 
 1.  Looks Good To Me

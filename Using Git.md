@@ -223,9 +223,9 @@ If you want to merge changes from a beta or release branch, change
 
 A full guide for how to use Git is outside the scope of this article.
 Git is an awesome tool, but it can be confusing to learn, so we
-**strongly suggest** you have a look at one of these tutorials. They are
-sorted according to the time needed to complete them. The first one is
-the shortest.
+**strongly suggest** you have a look at one of these tutorials now that
+you know the basics. They are sorted according to the time needed to
+complete them. The first one is the shortest.
 
 1.  [git - the simple guide by Roger Dudler (in 14
     languages)](http://rogerdudler.github.io/git-guide/)

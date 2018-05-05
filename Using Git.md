@@ -42,6 +42,7 @@ Git GUI. Here are some stand-alone GUI programs:
 ``` 
  * gitk (comes with git)
  * [[http://git-cola.github.io/|Git Cola]]
+ * [[https://tortoisegit.org/|Tortoise Git]] (Windows only)
  * [[https://wiki.gnome.org/Apps/Gitg/|gitg]]
 ```
 

@@ -191,28 +191,48 @@ commit -a`:
 Be careful with `git commit -a` because it can be easy to accidentally
 include changes that you did not intend to commit.
 
-# Issuing a Pull Request
+# Pushing commits
 
-Once you are done hacking up a new feature in your clone of the Mixxx
-repository, it's time to get that branch merged into Mixxx. The standard
-way we prefer you to submit branches is via GitHub pull requests.
+When you make a commit in Git, that commit only exists on your computer
+until you push it to a remote repository to share with others. To push
+commits to another repository, you need to configure the branch on your
+computer to follow a branch in a remote repository. You can do this in
+one step together with your first push:
 
-1.  Create an account on GitHub.
-2.  Push your branch to a forked version of the [Mixxx GitHub
-    repository](https://github.com/mixxxdj/mixxx).
-3.  Create a pull request from GitHub. If your pull request changes the
-    GUI, please attach screenshots of your changes.
-4.  A Mixxx team member will review and comment on your pull request.
-    Work with your reviewer to address their comments. 
-5.  Once it receives an `LGTM` \[1\] then it will be merged into Mixxx\!
+    git push --set-upstream origin your_branch_name
 
-**NOTE: If you push new commits to a branch you have made a pull request
-for, those commits will be included in the pull request.** To address
-comments of reviewers, push new commits to the same branch that you
-opened the pull request for. To work on a different bug or feature,
-checkout the master or beta branch then create another branch so your
-new changes are not included in the pull request that you already
-opened.
+This sets up your branch to push commits to the fork for your user on
+GitHub's server. Once you have run this initial command, you can push
+more commits on that branch by simply running `git push`.
+
+# Opening a Pull Request
+
+When you are ready to propose the commits in your branch for inclusion
+in Mixxx, first push your latest commits (refer to the sections above).
+Then, go to the [upstream mixxxdj/mixxx repository on GitHub's
+website](https://github.com/mixxxdj/mixxx). If you have pushed to your
+fork recently, you will see a message prompting you to make a new pull
+request. If you see that, click it. Otherwise, click the "New pull
+request" button. On the page for making a new pull request, click the
+link that says "compare across forks". Leave the base fork as
+mixxxdj/mixxx. By default, the base branch is the master branch, but if
+you want your changes included in a beta branch, be sure to selected it
+here. For the "head fork", select the fork for your GitHub user. Where
+it says "compare", select the branch on your fork that you have been
+working on. Write a title and description for your pull request, scroll
+down to check that the changes in the pull request only include the
+changes you intend, then click the "Create pull request" button.
+
+A Mixxx team member will review and comment on your pull request. Work
+with your reviewer to address their comments. To add new changes to your
+pull request in response to review comments, add commits to the branch
+on your computer and push them. When you push new commits, they will
+automatically be included in the pull request you already have open.
+When the changes are approved, we will merge them into the upstream
+Mixxx code\!
+
+To work on a different bug or feature, [\#create a new
+branch](#create%20a%20new%20branch).
 
 # Working on mappings and skins separately from other changes
 
@@ -241,5 +261,3 @@ branch open at \~/software/mixxx/mapping.
 If you want to work on a skin, you can set up another git worktree and
 run mixxx with the `--resourcePath` option set to the `res` directory
 under that worktree.
-
-1.  Looks Good To Me

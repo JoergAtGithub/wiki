@@ -56,12 +56,11 @@ These IDEs have some integration with Git:
 
 # Set Up Git
 
-Note: If you plan on fixing a bug or contributing a feature, you should
-[fork](https://help.github.com/articles/fork-a-repo) the mixxxdj/mixxx
-repository on GitHub first. Replace "mixxxdj" with your user name in
-following paragraphs.
+First, [Sign up for an account on GitHub](https://github.com/). Then, go
+to the [mixxxdj/mixxx repository](https://github.com/mixxxdj/mixxx) and
+click the "Fork" button in the top right.
 
-From the command line, simply type:
+From the command line, type:
 
     git clone https://github.com/YOUR-GITHUB-USER-NAME/mixxx.git
 

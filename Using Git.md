@@ -56,7 +56,7 @@ These IDEs have some integration with Git:
 
 # Set Up Git
 
-First, [Sign up for an account on GitHub](https://github.com/). Then, go
+First, [sign up for an account on GitHub](https://github.com/). Then, go
 to the [mixxxdj/mixxx repository](https://github.com/mixxxdj/mixxx) and
 click the "Fork" button in the top right.
 

@@ -160,22 +160,18 @@ branch. [\#GUI Tools](#GUI%20Tools) are helpful for this.
 
 ### Making the commit
 
-Git is a little different from other version control systems you might
-have tried. Before committing, you first have to tell it what changes
-you want to "stage". You do this using the `git add` command. Once you
-have staged your changes, you can issue a `git commit` (which will feel
-familiar to `bzr` and `svn`)
+Before committing your changes in Git, you first have to tell it what
+changes you want to "stage". You do this using the `git add` command.
+Once you have staged your changes, you can use `git commit`
 
     emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
     git add src/engine/enginebuffer.cpp # Tip: pressing tab will only autocomplete file names of files that have changed.
     git commit -m "Bugfixes to EngineBuffer."
 
-This commits the change locally only. In contrast to Bazaar and
-Subversion, there is no concept of committing and automatically pushing
-the changes to the remote repository in Git. If you omit the -m "COMMIT
-MESSAGE" at the end, git will automatically open the editor specified in
-your $EDITOR environment variable with a new file. Type your commit
-message, then save this file in the editor to make the commit.
+This commits the change locally only. If you omit the -m "COMMIT
+MESSAGE" at the end, Git will automatically open the editor you have
+configured for Git. Type your commit message, then save this file in the
+editor to make the commit.
 
 To automatically stage all changes that have been made to the repository
 (i.e. every change that shows up in `git diff`) then you can use `git
@@ -183,6 +179,9 @@ commit -a`:
 
     emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
     git commit -a -m "Bugfixes to EngineBuffer."
+
+Be careful with `git commit -a` because it can be easy to accidentally
+include changes that you did not intend to commit.
 
 # Issuing a Pull Request
 

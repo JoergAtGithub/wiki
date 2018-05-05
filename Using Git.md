@@ -154,8 +154,8 @@ then save this file in the editor to make the commit.
 Instead of using `git add` and `git commit`, you can use a [GUI Git
 client](https://git-scm.com/downloads/guis) to pick what changes to
 include in a commit. This is helpful for splitting a large set of
-changes into smaller, independent commits, which makes it easy for other
-developers to review your code.
+changes into smaller, independent commits, which makes it easier for
+other developers to review your code.
 
 # Push commits
 

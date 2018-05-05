@@ -228,7 +228,9 @@ complete them. The first one is the shortest.
     GitHub](http://try.github.io/levels/1/challenges/1)
 3.  [Ry's git Tutorial](http://rypress.com/tutorials/git/index)
 4.  [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
-5.  [Pro Git (the big manual)](http://git-scm.com/book)
+5.  [Pro Git (the big manual)](http://git-scm.com/book), especially the
+    [Branching
+    chapter](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 All of these tutorials are interactive and guide you with helpful
 graphics. Don't worry if you don't understand everything the first time.

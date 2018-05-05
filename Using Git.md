@@ -88,9 +88,6 @@ computer to match the latest updates, run
 
 to switch to the upstream master branch.
 
-Note that your fork on GitHub's server is accessed with the remote
-called "origin", which is separate from "upstream".
-
 # Test a pull request
 
 Developers propose changes to the Mixxx code by opening "pull requests"

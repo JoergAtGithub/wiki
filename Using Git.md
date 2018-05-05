@@ -227,12 +227,12 @@ request" button.
 On the page for making a new pull request, click the link that says
 "compare across forks". Leave the base fork as mixxxdj/mixxx. By
 default, the base branch is the master branch, but if you want your
-changes included in a beta branch, be sure to selected it here. For the
+changes included in a beta branch, be sure to select it here. For the
 "head fork", select the fork for your GitHub user. Where it says
 "compare", select the branch on your fork that you have been working on.
-Write a title and description for your pull request, scroll down to
+Write a title and description for your pull request. Scroll down to
 check that the changes in the pull request only include the changes you
-intend, then click the "Create pull request" button.
+intend. When you are ready, click the "Create pull request" button.
 
 A Mixxx team member will review and comment on your pull request. Work
 with your reviewer to address their comments. To add new changes to your

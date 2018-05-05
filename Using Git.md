@@ -82,6 +82,27 @@ to the upstream master branch.
 Note that your fork on GitHub's server is accessed with the remote
 called "origin", which is separate from "upstream".
 
+# Test a pull request
+
+Developers propose changes to the Mixxx code by opening "pull requests"
+on GitHub. The currently active pull requests are listed [on the GitHub
+website](https://github.com/mixxxdj/mixxx/pulls). Testing these pull
+requests and providing your feedback is really helpful and a great way
+to start getting involved in Mixxx even if you don't know how to
+program. To test a pull request, first fetch the latest updates:
+
+    git fetch upstream
+
+Find the number of the pull request from the [the GitHub
+website](https://github.com/mixxxdj/mixxx/pulls), then run
+
+    git checkout upstream/pr/PULL-REQUEST-NUMBER
+
+Now you can [start\#Compile Mixxx From Source
+Code](start#Compile%20Mixxx%20From%20Source%20Code) to test the proposed
+changes. Give feedback by commenting on the pull request on the GitHub
+website.
+
 # Create a new branch
 
 Branches give you scratch space to work on new features and ideas

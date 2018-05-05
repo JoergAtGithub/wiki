@@ -3,59 +3,21 @@
 Mixxx uses [Git](http://git-scm.com/) for source control. Git is a
 distributed version control system that allows us to keep track of how
 our code changes and work together on it. Our code is hosted on
-[GitHub](https://github.com/mixxxdj/mixxx).
-
-# Tutorials
-
-A full guide for how to use Git is outside the scope of this article.
-This article aims to get you up to speed with the basics of Git and we
-are glossing over a lot of finer details about Git. Git is an awesome
-tool, but it can be confusing to learn, so we **strongly suggest** you
-have a look at one of these tutorials. They are sorted according to the
-time needed to complete them. The first one is the shortest.
-
-1.  [git - the simple guide by Roger Dudler (in 14
-    languages)](http://rogerdudler.github.io/git-guide/)
-2.  [introduction to Git by
-    GitHub](http://try.github.io/levels/1/challenges/1)
-3.  [Ry's git Tutorial](http://rypress.com/tutorials/git/index)
-4.  [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
-5.  [Pro Git (the big manual)](http://git-scm.com/book)
-
-All of these tutorials are interactive and guide you with helpful
-graphics. Don't worry if you don't understand everything the first time.
-
-![https://imgs.xkcd.com/comics/git.png](https://imgs.xkcd.com/comics/git.png)
+[GitHub](https://github.com/mixxxdj/mixxx). This page aims to get you up
+to speed with the basics of Git and how to use it with our workflow on
+GitHub. We are intentionally glossing over a lot of finer details which
+are explained in more detail in other [\#Tutorials](#Tutorials).
 
 # Installing Git
 
 Git comes preinstalled on macOS and many GNU/Linux distributions. If
 not, then install the `git` package through your distribution's package
-manager. On Windows, download and install git from
-[git-scm.org](http://git-scm.com/downloads/).
-
-## GUI Tools
-
-It is also helpful to use a GUI Git tool or an IDE with an integrated
-Git GUI. Here are some stand-alone GUI programs:
-
-``` 
- * gitk (comes with git)
- * [[http://git-cola.github.io/|Git Cola]] (cross platform)
- * [[https://tortoisegit.org/|Tortoise Git]] (Windows only)
- * [[http://gitextensions.github.io/|Git Extensions]] (Windows only)
- * [[https://www.sourcetreeapp.com/|Source Tree]] (Windows and macOS)
- * [[https://wiki.gnome.org/Apps/Gitg/|gitg]] (Linux only)
-```
-
-These IDEs have some integration with Git:
-
-``` 
- * [[Eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
- * [[QtCreator]] has built in support of Git (but be warned, it has is own opinion which files will be added to the Index)
- * [[KDevelop]] also has built in support for Git
- * [[https://magit.vc/|Magit]] provides Git integration for Emacs
-```
+manager. On Windows, download and install Git from
+[git-scm.org](http://git-scm.com/downloads/). In addition to the command
+line tool, there are lots of [GUI Git
+Clients](https://git-scm.com/downloads/guis) available. Many IDEs have
+some integrated Git functionality or have a plugin for using Git within
+the IDE.
 
 # Set Up Git
 
@@ -256,6 +218,27 @@ to include in a branch you are working on, run:
 
 If you want to merge changes from a beta or release branch, change
 `upstream/master` to that branch, for example `upstream/2.1`.
+
+# Tutorials
+
+A full guide for how to use Git is outside the scope of this article.
+Git is an awesome tool, but it can be confusing to learn, so we
+**strongly suggest** you have a look at one of these tutorials. They are
+sorted according to the time needed to complete them. The first one is
+the shortest.
+
+1.  [git - the simple guide by Roger Dudler (in 14
+    languages)](http://rogerdudler.github.io/git-guide/)
+2.  [introduction to Git by
+    GitHub](http://try.github.io/levels/1/challenges/1)
+3.  [Ry's git Tutorial](http://rypress.com/tutorials/git/index)
+4.  [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
+5.  [Pro Git (the big manual)](http://git-scm.com/book)
+
+All of these tutorials are interactive and guide you with helpful
+graphics. Don't worry if you don't understand everything the first time.
+
+![https://imgs.xkcd.com/comics/git.png](https://imgs.xkcd.com/comics/git.png)
 
 # Working on mappings and skins separately from other changes
 

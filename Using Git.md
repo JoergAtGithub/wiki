@@ -19,7 +19,7 @@ Clients](https://git-scm.com/downloads/guis) available. Many IDEs have
 some integrated Git functionality or have a plugin for using Git within
 the IDE.
 
-# Set Up Git
+# Set up Git
 
 First, [sign up for an account on GitHub](https://github.com/). Then, go
 to the [mixxxdj/mixxx repository](https://github.com/mixxxdj/mixxx) and

@@ -89,7 +89,7 @@ on GitHub. The currently active pull requests are listed [on the GitHub
 website](https://github.com/mixxxdj/mixxx/pulls). Testing these pull
 requests and providing your feedback is really helpful and a great way
 to start getting involved in Mixxx even if you don't know how to
-program. To test a pull request, first fetch the latest updates:
+program. To test a pull request, first download the latest updates:
 
     git fetch upstream
 
@@ -98,7 +98,8 @@ website](https://github.com/mixxxdj/mixxx/pulls), then run
 
     git checkout upstream/pr/PULL-REQUEST-NUMBER
 
-Now you can [start\#Compile Mixxx From Source
+to switch the code files on your computer to the proposed changes. Now
+you can [start\#Compile Mixxx From Source
 Code](start#Compile%20Mixxx%20From%20Source%20Code) to test the proposed
 changes. Give feedback by commenting on the pull request on the GitHub
 website.

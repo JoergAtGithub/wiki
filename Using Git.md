@@ -27,7 +27,8 @@ click the "Fork" button in the top right. [Add an SSH key for your
 GitHub
 account](https://help.github.com/articles/connecting-to-github-with-ssh/)
 (otherwise you will need to re-enter your username and password
-frequently). To download the Mixxx code, run this command in your shell:
+frequently). To download the Mixxx code after you have set up SSH, run
+this command in your shell:
 
     git clone git@github.com:YOUR-GITHUB-USER-NAME/mixxx.git
 

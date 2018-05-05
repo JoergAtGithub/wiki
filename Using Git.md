@@ -110,7 +110,7 @@ first, when you make a pull request for inclusion in Mixxx (see below),
 both what you were working on before and your new changes will be
 included in the pull request.
 
-# Committing changes
+# Commit changes
 
 First you need to set your name and email address. If you don't do this
 then your commits will not be associated with your name (or your account

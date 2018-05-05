@@ -34,7 +34,7 @@ not, then install the `git` package through your distribution's package
 manager. On Windows, download and install git from
 [git-scm.org](http://git-scm.com/downloads/).
 
-## IDE Plug-Ins and GUI Tools
+## GUI Tools
 
 It is also helpful to use a GUI Git tool or an IDE with an integrated
 Git GUI. Here are some stand-alone GUI programs:

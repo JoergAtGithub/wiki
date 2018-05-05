@@ -29,44 +29,28 @@ graphics. Don't worry if you don't understand everything the first time.
 
 # Installing Git
 
-You need to install Git to work with the Mixxx Git repository.
+Git comes preinstalled on macOS and many GNU/Linux distributions. If
+not, then install the `git` package through your distribution's package
+manager. On Windows, download and install git from
+[git-scm.org](http://git-scm.com/downloads/).
 
-## Debian / Ubuntu
+## IDE Plug-Ins and GUI Tools
 
-Install the `git` package from the software center or install it from
-the command-line using `apt-get`.
-
-    sudo apt-get install git
-
-If you like you may install a additional GUI Tools like:
+It is also helpful to use a GUI Git tool or an IDE with an integrated
+Git GUI. Here are some stand-alone GUI programs:
 
 ``` 
- * meld for a comparing revisions 
- * gitk for viewing history 
+ * gitk (comes with git)
+ * [[http://git-cola.github.io/|Git Cola]]
+ * [[https://wiki.gnome.org/Apps/Gitg/|gitg]]
 ```
 
-    sudo apt-get install meld
-    sudo apt-get install gitk
-
-## Windows
-
-Download and install git from
-[git-scm.org](http://git-scm.com/downloads/). We recommend using
-[TortoiseGit](https://code.google.com/p/tortoisegit/) on Windows since
-using the terminal on Windows is a giant pain.
-
-## macOS
-
-Git comes preinstalled in macOS.
-
-## IDE Plug-Ins
-
-It is also helpful to use a IDE integrated Git GUIs.
+These IDEs have some integration with Git:
 
 ``` 
- * [[eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
- * [[qtcreator]] has built in support of Git (but be warned, it has is own opinion which files will be added to the Index)
- * [[KDevelop]] also has built in support of Git
+ * [[Eclipse]] has very advanced Git PlugIn [[http://www.eclipse.org/egit/|EGit]] bundled with the C/C++ edition of Eclipse 
+ * [[QtCreator]] has built in support of Git (but be warned, it has is own opinion which files will be added to the Index)
+ * [[KDevelop]] also has built in support for Git
 ```
 
 # Set Up Git
@@ -99,24 +83,13 @@ to the upstream master branch.
 Note that your fork on GitHub's server is accessed with the remote
 called "origin", which is separate from "upstream".
 
-# Using Branches
+# Create a new branch
 
 Branches give you scratch space to work on new features and ideas
 without having to commit on top of an existing branch (like the `master`
 branch). This allows you to work on multiple bugs/features in parallel
 and independently propose them for inclusion in Mixxx whenever each one
 is ready.
-
-**Do not work directly on the master or beta branch. Make a branch off
-the the master or beta branch for every independent feature/bug fix you
-want to propose to be included in Mixxx.**
-
-## Check what branch you are currently on
-
-    $ git branch
-    * master
-
-## Create a new branch
 
     $ git fetch upstream
     Download the latest updates before you start working on new changes
@@ -134,35 +107,6 @@ inclusion in Mixxx independently of what you were working on before. If
 you do not do this first, when you make a pull request for inclusion in
 Mixxx (see below), both what you were working on before and your new
 changes will be included in the pull request.
-
-## Switch between branches
-
-    $ git branch
-    * experimental
-      master
-    [make some changes in your IDE of choice]
-    $ git stash # save uncommitted changes to git's temporary stash.
-    # Do this if you have made edits that you are not yet ready to commit to the branch you are switching from.
-    # If you have created new files, be sure to run 'git add' on them before running 'git stash'
-    
-    $ git checkout master # switch to the master branch
-    
-    $ git branch 
-      experimental
-    * master
-    
-    $ scons install # build latest version of master branch
-    # see http://mixxx.org/wiki/doku.php/start#compile_mixxx_from_source_code for details
-    $ mixxx # test new version of mixxx
-    
-    $ git checkout experimental
-    $ git stash pop # reapply uncommitted changes from git's temporary stash
-    [continue working on experimental branch and make commits when you are ready]
-
-## Delete a local branch
-
-    $ git branch -d experimental  # requires the branch is fully merged
-    $ git branch -D experimental  # deletes the branch regardless of whether it is merged
 
 # Committing changes
 

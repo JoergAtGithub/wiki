@@ -127,9 +127,9 @@ repository:
 
     git checkout upstream/master
 
-If there is currently a beta release and you want your changes included
-in the upcoming release, checkout the release branch instead of the
-master branch, for example:
+If you want your changes included in a current beta release or a bugfix
+point release (such as 2.1.1), checkout the release branch instead of
+the master branch, for example:
 
     git checkout upstream/2.1
 
@@ -239,6 +239,18 @@ Mixxx code\!
 
 To work on a different bug or feature, [\#create a new
 branch](#create%20a%20new%20branch).
+
+# Merging new changes from upstream
+
+If there have been new changes in the upstream code that you would like
+to include in a branch you are working on, run:
+
+    git checkout your_branch_name
+    git fetch upstream
+    git merge upstream/master
+
+If you want to merge changes from a beta or release branch, change
+`upstream/master` to that branch, for example `upstream/2.1`.
 
 # Working on mappings and skins separately from other changes
 

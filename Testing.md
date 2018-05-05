@@ -51,8 +51,6 @@ the 64 bit ("dist64") or 32 bit ("dist32") build, then click "Artifacts"
 to get the link to the installer MSI file.
 
 For Mac OS X and GNU/Linux, you will need to [start\#compile Mixxx from
-source code](start#compile%20Mixxx%20from%20source%20code) yourself. You
-can set up the git repository on your computer to make it easy to
-[checkout pull requests
-locally](https://gist.github.com/piscisaureus/3342247), then compile
-them.
+source code](start#compile%20Mixxx%20from%20source%20code) yourself.
+Refer to the [Using Git](Using%20Git) wiki page for how to set up Git on
+your computer for downloading the code to test pull requests.

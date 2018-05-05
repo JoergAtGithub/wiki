@@ -58,9 +58,8 @@ These IDEs have some integration with Git:
 
 First, [sign up for an account on GitHub](https://github.com/). Then, go
 to the [mixxxdj/mixxx repository](https://github.com/mixxxdj/mixxx) and
-click the "Fork" button in the top right.
-
-From the command line, type:
+click the "Fork" button in the top right. To download the Mixxx code,
+run this command in your shell:
 
     git clone https://github.com/YOUR-GITHUB-USER-NAME/mixxx.git
 

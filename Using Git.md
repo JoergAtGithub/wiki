@@ -8,7 +8,7 @@ to speed with the basics of Git and how to use it with our workflow on
 GitHub. We are intentionally glossing over a lot of finer details which
 are explained in other [\#Tutorials](#Tutorials).
 
-# Installing Git
+# Install Git
 
 Git comes preinstalled on macOS and many GNU/Linux distributions. If
 not, then install the `git` package through your distribution's package
@@ -126,7 +126,7 @@ used when writing messages describing your commits:
 
     git config --global core.editor nano
 
-### Reviewing your changes
+### Review your changes
 
 Running `git status` will show which files have changes that have not
 been committed. Running `git diff` will show a color coded diff
@@ -136,32 +136,28 @@ on code, you may end up trying some changes that you do not end up
 needing. Reviewing your own code is helpful for making sure you only
 commit the changes that are needed.
 
-### Making the commit
+### Make the commit
 
 Before committing your changes in Git, you first have to tell it what
-changes you want to "stage". You do this using the `git add` command.
-Once you have staged your changes, you can use `git commit`
+changes you want to "stage" for inclusion in the commit. You do this
+using the `git add` command. Once you have staged your changes, you can
+use `git commit`
 
     emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
     git add src/engine/enginebuffer.cpp # Tip: pressing tab will only autocomplete file names of files that have changed.
     git commit -m "Bugfixes to EngineBuffer."
 
-This commits the change locally only. If you omit the -m "COMMIT
-MESSAGE" at the end, Git will automatically open the editor you have
-configured for Git. Type your commit message, then save this file in the
-editor to make the commit.
+If you omit the -m "COMMIT MESSAGE" at the end, Git will automatically
+open the editor you have configured for Git. Type your commit message,
+then save this file in the editor to make the commit.
 
-To automatically stage all changes that have been made to the repository
-(i.e. every change that shows up in `git diff`) then you can use `git
-commit -a`:
+Instead of using `git add` and `git commit`, you can use a [GUI Git
+client](https://git-scm.com/downloads/guis) to pick what changes to
+include in a commit. This is helpful for splitting a large set of
+changes into smaller, independent commits, which makes it easy for other
+developers to review your code.
 
-    emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
-    git commit -a -m "Bugfixes to EngineBuffer."
-
-Be careful with `git commit -a` because it can be easy to accidentally
-include changes that you did not intend to commit.
-
-# Pushing commits
+# Push commits
 
 When you make a commit in Git, that commit only exists on your computer
 until you push it to a remote repository to share with others. To push
@@ -175,7 +171,7 @@ This sets up your branch to push commits to the fork for your user on
 GitHub's server. Once you have run this initial command, you can push
 more commits on that branch by simply running `git push`.
 
-# Opening a Pull Request
+# Open a pull request
 
 When you are ready to propose the commits in your branch for inclusion
 in Mixxx, first push your latest commits (refer to the sections above).

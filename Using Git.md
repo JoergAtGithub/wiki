@@ -165,9 +165,9 @@ include changes that you did not intend to commit.
 
 When you make a commit in Git, that commit only exists on your computer
 until you push it to a remote repository to share with others. To push
-commits to another repository, you need to configure the branch on your
-computer to follow a branch in a remote repository. You can do this in
-one step together with your first push:
+commits to another repository, configure the branch on your computer to
+follow a branch in a remote repository. You can do this in one step
+together with your first push:
 
     git push --set-upstream origin your_branch_name
 

@@ -151,8 +151,8 @@ GitHub account.
     git config --global user.name "Your Name"
     git config --global user.email "you@example.com"
 
-Also, configure Git to use the editor of your choice. This will be used
-when writing messages describing your commits:
+Also, configure Git to use the text editor of your choice. This will be
+used when writing messages describing your commits:
 
     git config --global core.editor nano
 

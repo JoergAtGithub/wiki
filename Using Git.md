@@ -69,31 +69,35 @@ It is also helpful to use a IDE integrated Git GUIs.
  * [[KDevelop]] also has built in support of Git
 ```
 
-# Cloning the Mixxx Repository
+# Set Up Git
 
 Note: If you plan on fixing a bug or contributing a feature, you should
-[fork](https://help.github.com/articles/fork-a-repo) the mixxx
+[fork](https://help.github.com/articles/fork-a-repo) the mixxxdj/mixxx
 repository on GitHub first. Replace "mixxxdj" with your user name in
 following paragraphs.
 
-From the commandline, simply type:
+From the command line, simply type:
 
-    git clone https://github.com/mixxxdj/mixxx.git
+    git clone https://github.com/YOUR-GITHUB-USER-NAME/mixxx.git
 
-This will clone the `master` branch by default which is where the latest
-Mixxx code is developed.
+Open the `.git/config` file in the new `mixxx` folder that was created
+by the above `git clone` command with your favorite text editor. Copy
+and paste the following lines at the top of the file:
 
-If you would like to clone a specific branch, use the `-b` argument:
+    [remote "upstream"]
+        url = git@github.com:mixxxdj/mixxx.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+        fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 
-    git clone -b 1.11 https://github.com/mixxxdj/mixxx.git
+This makes it easy to interact with the upstream [mixxxdj/mixxx
+repository on GitHub's server](https://github.com/mixxxdj/mixxx). To
+download the latest updates, run `git fetch upstream`. That will only
+download the updates though. To change the files on your computer to
+match the latest updates, run `git checkout upstream/master` to switch
+to the upstream master branch.
 
-This clones the `1.11` branch. You can view a web summary of the
-available branches here on
-[GitHub](https://github.com/mixxxdj/mixxx/branches).
-
-Once the command succeeds, you will have a new folder (typically named
-`mixxx`) in the current directory. Congrats, you've cloned the Mixxx
-code repository to your local machine\!
+Note that your fork on GitHub's server is accessed with the remote
+called "origin", which is separate from "upstream".
 
 # Using Branches
 

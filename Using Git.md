@@ -118,16 +118,18 @@ want to propose to be included in Mixxx.**
 
 ## Create a new branch
 
-    $ git checkout -b experimental
-    Create a new branch called 'experimental' and switch to it
+    $ git fetch upstream
+    Download the latest updates before you start working on new changes
     
-    $ git branch # show which branch you are on
-    * experimental
-      master
+    $ git checkout upstream/master
+    Switch to the master branch from the upstream repository
+    
+    $ git checkout -b fixing_some_bug
+    Create a new branch on your computer called 'fixing_some_bug' and switch to it
 
 **Every time you start fixing another bug or working on a new feature,
-switch back to the master or beta branch before starting your new
-branch.** This will allow you to propose your new set of changes for
+switch back to the upstream master or beta branch before starting your
+new branch.** This will allow you to propose your new set of changes for
 inclusion in Mixxx independently of what you were working on before. If
 you do not do this first, when you make a pull request for inclusion in
 Mixxx (see below), both what you were working on before and your new

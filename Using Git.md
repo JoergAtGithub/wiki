@@ -6,7 +6,7 @@ our code changes and work together on it. Our code is hosted on
 [GitHub](https://github.com/mixxxdj/mixxx). This page aims to get you up
 to speed with the basics of Git and how to use it with our workflow on
 GitHub. We are intentionally glossing over a lot of finer details which
-are explained in more detail in other [\#Tutorials](#Tutorials).
+are explained in other [\#Tutorials](#Tutorials).
 
 # Installing Git
 

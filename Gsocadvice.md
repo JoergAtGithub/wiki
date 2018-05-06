@@ -31,9 +31,9 @@ you continue to stay involved after GSOC ends. The best way to show us
 you will become a part of our community is to get involved before
 beginning your application. Here are some ways to get started:
 
-  - Read the [Mixxx manual](https://mixxx.org/manual/latest/) to get a
-    better understanding of what Mixxx can do and what people use it
-    for.
+  - Play with Mixxx and explore what it can do. Read the [Mixxx
+    manual](https://mixxx.org/manual/latest/) to get a better
+    understanding of Mixxx's capabilities and what people use it for.
   - Introduce yourself on our [Zulip
     chat](https://mixxx.zulipchat.com/). Start a new topic in the \#gsoc
     stream. **If the first question you ask is clearly answered on this

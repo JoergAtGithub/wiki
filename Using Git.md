@@ -76,6 +76,10 @@ Code](start#Compile%20Mixxx%20From%20Source%20Code) to test the proposed
 changes. Give feedback by commenting on the pull request on the GitHub
 website.
 
+Alternatively, on Windows, you can use the builds from AppVeyor instead
+of compiling pull requests yourself. Refer to the [Testing
+page](Testing#GitHub%20pull%20requests) for details.
+
 # Create a new branch
 
 When you are ready to start editing the Mixxx code, create a new Git

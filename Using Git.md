@@ -120,10 +120,10 @@ included in the pull request.
 
 (Note that there is usually no need to use the origin/master branch or
 maintain a master branch on your computer. Instead, starting every
-branch from upstream/master will keep you up to date with a little less
-busywork. Only developers with write access to the mixxxdj/mixxx
-repository need to maintain a local master branch for occasionally
-pushing directly to the master branch.)
+branch from upstream/master will keep you up to date with less busywork.
+Only developers with write access to the mixxxdj/mixxx repository need
+to maintain a local master branch for occasionally pushing directly to
+the master branch.)
 
 # Commit changes
 

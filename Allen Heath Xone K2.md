@@ -218,4 +218,4 @@ controller plugged into a powered USB hub and disconnecting the hub from
 the computer, the controller will not send MIDI input until it is
 powered down (unplugged) and plugged back in. If you would like these
 issues to be fixed, please let [Allen & Heath
-Support](Allen%20&%20Heath%20Support) know.
+Support](https://www.allen-heath.com/support/) know.

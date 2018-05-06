@@ -206,3 +206,16 @@ Text in blue describes secondary functions accessible when the shift
 button is held down.
 
 [[/media/xone_k2_mapping.svg|Xone K2 Mapping]]
+
+# Known issues
+
+There are a few known issues with the Xone K2/K1 firmware. First, there
+is no way for Mixxx to ask the controller about the positions of all the
+knobs and faders when Mixxx starts, so they are out of sync with the
+state of Mixxx until they are first moved. Also, when the USB connection
+is interrupted and the controller stays powered on, such as leaving the
+controller plugged into a powered USB hub and disconnecting the hub from
+the computer, the controller will not send MIDI input until it is
+powered down (unplugged) and plugged back in. If you would like these
+issues to be fixed, please let [Allen & Heath
+Support](Allen%20&%20Heath%20Support) know.

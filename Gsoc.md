@@ -17,8 +17,7 @@ The following projects were accepted for Google Summer of Code 2018:
 
   - [Live metadata output](Live%20metadata%20output) by David Hernández
     Morales (davidhm) 
-  - [Mixxx Effects Proposal](Mixxx%20Effects%20Proposal) by Kshitij
-    Gupta 
+  - [Effects customization](Effects%20customization) by Kshitij Gupta 
 
 ## Past Years
 

@@ -231,7 +231,7 @@ changes, run:
 Note that there is usually no need to use the origin/master branch or
 maintain a master branch on your computer. Only developers with write
 access to the mixxxdj/mixxx repository need to maintain a local master
-branch for occasionally pushing directly to the master branch.)
+branch for occasionally pushing directly to the master branch.
 
 # Tutorials
 

@@ -210,7 +210,7 @@ Mixxx code\!
 To work on another bug or feature, [\#create a new
 branch](#create%20a%20new%20branch).
 
-# Merge new changes from upstream
+# Keeping up to date with upstream
 
 If there have been new changes in the upstream code that you would like
 to include in a branch you are working on, run:

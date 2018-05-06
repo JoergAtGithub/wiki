@@ -37,7 +37,7 @@ by the above `git clone` command with your favorite text editor. Copy
 and paste the following lines at the top of the file:
 
     [remote "upstream"]
-        url = git@github.com:mixxxdj/mixxx.git
+        url = https://github.com/mixxxdj/mixxx.git
         fetch = +refs/heads/*:refs/remotes/upstream/*
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 

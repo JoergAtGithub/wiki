@@ -15,7 +15,7 @@ developers.**
 
 # Prerequisites
 
-First, you will need to download the cod of Mixxx [using
+First, you will need to download the code of Mixxx [using
 Git](using%20Git).
 
 To understand this guide, you should have a working experience with a

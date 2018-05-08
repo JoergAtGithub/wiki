@@ -34,9 +34,10 @@ The time estimates are rough, given in person-weeks.
     plug-in: 1 PW
   - Make Library side bar extensible and show custom content in the
     pane: 1 PW
-  - Add column in Library that marks a track temporary, with a hint on
-    how to fetch it, redirecting to a download link: 1 PW (We can also
-    consider moving Traktor/Rythmbox/Banshee support to this concept)
+  - Add column in Library that marks a track as downloadable/not-local,
+    with a hint on how to fetch it, redirecting to a download link: 1 PW
+    (We can also consider moving Traktor/Rythmbox/Banshee support to
+    this concept)
 
 ### Implement a demo download Web page plug-in
 

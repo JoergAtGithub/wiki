@@ -45,9 +45,6 @@ settings can be made:
     beginning.
   - **PioneerDDJSX.autoPFL**: If true, PFL / Cue (headphone) is being
     activated by loading a track into certain deck.
-  - **PioneerDDJSX.useNewLibraryControls**: If true, new in Mixxx 2.1
-    introduced library controls will be used, else old playlist controls
-    will be used.
 
 ## General Functions
 

@@ -30,7 +30,8 @@ The time estimates are rough, given in person-weeks.
 
   - Find and load Library plug-Ins: 1 PW 
   - Make preferences extensible, in this case a Live Tracks icon on the
-    left that shows a custom preferences pane: 1 PW
+    left that shows a custom preferences pane for each loaded service
+    plug-in: 1 PW
   - Make Library side bar extensible and show custom content in the
     pane: 1 PW
   - Add column in Library that marks a track temporary, with a hint on

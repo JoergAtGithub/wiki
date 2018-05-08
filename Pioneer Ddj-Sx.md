@@ -55,11 +55,11 @@ settings can be made:
 | 5 - BROWSER     | 2, 3, 4, 5 | \-             | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
 | :::             | 2          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle BPM sync                                                                                            |
 | :::             | 3          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle Key sync                                                                                            |
-| :::             | 1          | \-             | \[**ROTARY SELECTOR**\]       | See user options: default = Select track in Playlist (alt. = MoveVertical)                                          |
-| :::             | 1          | \-             | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Add track to AutoDJ queue at bottom (alt. = at top)                                     |
-| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR**\]       | See user options: default = Select Playlist (alt. = MoveHorizontal)                                                 |
-| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR PRESS**\] | See user options: default = Toggle selected sidebar item (alt. = ChooseItem)                                        |
-| :::             | 6          | \-             | \[**BACK**\]                  | See user options: default = AutoDJ - Skip next track in queue (alt. = MoveFocusBackward)                            |
+| :::             | 1          | \-             | \[**ROTARY SELECTOR**\]       | Move UP or DOWN the specified number of locations in Library (MoveVertical function)                                |
+| :::             | 1          | \-             | \[**ROTARY SELECTOR PRESS**\] | Equivalent to double clicking the currently selected item in Library (GoToItem function)                            |
+| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR**\]       | Move LEFT or RIGHT the specified number of locations in Library (MoveHorizontal function)                           |
+| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR PRESS**\] | Add track from Library to AutoDJ queue at top/bottom (see user options: default = at bottom)                        |
+| :::             | 6          | \-             | \[**BACK**\]                  | Currently focused pane changes in Library - previously focused pane will be focused (MoveFocusBackward function)    |
 | :::             | 6          | \[**SHIFT**\]  | \[**BACK**\]                  | Maximize view of Library                                                                                            |
 | :::             | 7          | \-             | \[**LOAD PREPARE**\]          | Load selected track into PreviewDeck, jump to position (see user options) and play, else stop already playing track |
 | 3 - MIXER       | 1          | \-             | Crossfader                    | Controls Mixxx crossfader, fades between deck 1, 3 and 2, 4                                                         |

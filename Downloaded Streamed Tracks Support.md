@@ -11,10 +11,11 @@ loaded from a shared object file. This architecture provides the most
 stability and flexibility.
 
 As well, since much of the infrastructure required for streamed track
-support applies to direct downloading within Mixxx, we should implement
-with this use case in mind as well. (For example, to avoid drop-outs
-mid-song, it would be useful to cache large portions of a streamed
-track, which is essentially a download.)
+support applies to direct downloading within Mixxx such as from online
+stores and music services/DJ pools, we should implement with this use
+case in mind as well. (For example, to avoid drop-outs mid-song, it
+would be useful to cache large portions of a streamed track, which is
+essentially a download.)
 
 ## Preconditions
 

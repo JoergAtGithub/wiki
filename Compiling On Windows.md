@@ -82,8 +82,10 @@ You may choose between the "release-fastbuild" and "release" variants.
     When we build Mixxx on AppVeyor for continuous integration, this is
     the version we use.
   - release is the version used to produce Mixxx releases. It is
-    compiled with LTCG enabled and requires at least 8 GB of memory to
-    link Mixxx.
+    compiled with LTCG enabled and requires at least 8 GB of memory (or
+    equivalent free space on the disk with your [paging
+    file](https://www.howtogeek.com/126430/htg-explains-what-is-the-windows-page-file-and-should-you-disable-it/))
+    to link Mixxx.
 
 If you want to build a 32-bit version of Mixxx, choose an "x86" variant.
 For 64-bit, choose an "x64" variant.

@@ -1,5 +1,8 @@
 # Instant/live download & streamed track support
 
+[Launchpad
+blueprint](https://blueprints.launchpad.net/mixxx/+spec/streamed-live-downloaded-tracks)
+
 There is much interest in being able to play tracks directly from
 various streaming services in Mixxx during a DJ set. Since each service
 may have different terms of use both for the service itself and its API,

@@ -24,7 +24,8 @@ essentially a download.)
 
 ## Steps
 
-The time estimates are rough, given in person-weeks.
+The time estimates are rough, given in person-weeks. (One developer
+working 40 hours.)
 
 ### Library plug-Ins
 

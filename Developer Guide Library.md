@@ -9,4 +9,4 @@ This is a container for all the model-side aspects of the library.
 
 #### LibraryFeature
 
-Interface for the varius library features.
+Interface for the various library features.

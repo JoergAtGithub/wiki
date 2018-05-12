@@ -42,3 +42,7 @@ using Postman or Google test as needed.
 During this week I will continue implementing and testing the classes
 and testing and also think about how to integrate Last.fm into the UI
 seeing as the user will probably need to OAuth with Mixxx.
+
+## Proposed deadline goals
+
+### First deadline: 11th June

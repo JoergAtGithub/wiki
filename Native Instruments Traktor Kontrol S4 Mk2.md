@@ -39,7 +39,8 @@ GNU/Linux and Mac OS X. On Windows, it is recommended to install the
 [driver from Native
 Instruments](https://www.native-instruments.com/en/support/downloads/drivers-other-files/)
 and select the ASIO sound API in the Sound Hardware section of Mixxx's
-Preferences.
+Preferences. **There is currently a bug in the mapping preventing it
+from working on Windows.**
 
 With the S4 plugged in, a MIDI device is listed as an available
 controller in Mixxx's Preferences. That is the MIDI input/output ports

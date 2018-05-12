@@ -19,9 +19,8 @@ apps can receive this info.
 During this week I will think about the operations that need to be added
 to the base abstract class of every service by checking the various
 services that I want to implement. Then I will add a listener class that
-will receive the signal `newTrackLoaded` from the class
-`BaseTrackPlayerImpl` and broadcast it via another signal to all service
-implementing interfaces.
+will receive the proper signal that a track has been changed and
+broadcast it via another signal to all service implementing interfaces.
 
 ### Second week: May 21st to May 27th
 

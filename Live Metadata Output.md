@@ -22,7 +22,9 @@ services that I want to implement. Then I will add a listener class that
 will receive the proper signal that a track has been changed and
 broadcast it via another signal to all service implementing interfaces.
 This will be a very busy week since I have a Bachelor's thesis deadline
-and also German finals.
+and also German finals. Specifically, in **Tuesday 15th** I won't be
+able to work at all because I have Bachelor's thesis work during the
+morning and German exam in the afternoon.
 
 ### Second week: May 21st to May 27th
 

@@ -24,7 +24,9 @@ broadcast it via another signal to all service implementing interfaces.
 This will be a very busy week since I have a Bachelor's thesis deadline
 and also German finals. Specifically, in **Tuesday 15th** I won't be
 able to work at all because I have Bachelor's thesis work during the
-morning and German exam in the afternoon.
+morning and German exam in the afternoon. Also, in **Thursday 17th** I
+won't be able to work as much because I have another German final in the
+afternoon.
 
 ### Second week: May 21st to May 27th
 

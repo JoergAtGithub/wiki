@@ -48,3 +48,8 @@ seeing as the user will probably need to OAuth with Mixxx.
 ## Proposed deadline goals
 
 ### First deadline: 11th June
+
+Since Last.fm API integration will take a while I probably won't have it
+ready by the 11th of June. So for this deadline I should have a solid
+code base and a proof of concept of a scrobbler in the form of a txt
+file.

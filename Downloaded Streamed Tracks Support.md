@@ -7,8 +7,8 @@ There is much interest in being able to play tracks directly from
 various streaming services in Mixxx during a DJ set. Since each service
 may have different terms of use both for the service itself and its API,
 Mixxx needs a library plug-in mechanism where each service's plugin is
-loaded from a shared object file. This architecture provides the most
-stability and flexibility.
+loaded from a shared object file (`.so, .dylib, .dll`). This
+architecture provides the most stability and flexibility.
 
 As well, since much of the infrastructure required for streamed track
 support applies to direct downloading within Mixxx such as from online

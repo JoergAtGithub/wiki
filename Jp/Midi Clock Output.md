@@ -143,13 +143,18 @@ Stop, forward, backward and jumps are transmitted correctly.
 | VU right average meter 3 | B ( 107 / 0x6b )   | 0-127 / 0x0-0x7f             |
 | VU right average meter 4 | C ( 108 / 0x6c )   | 0-127 / 0x0-0x7f             |
 
-## personal settings
+## 極私的な設定
 
 You can define the midi-signals they should be send. In the file
 Midi\_for\_light.js is at the top a block with variables for that.
 Mostly you define: Send this or not. But one variable is for setup of
 the midi channel. Attention. This is global for all events these are
 send by note.
+
+あなたは送信すべき midi-signals を設定することが出来ます。Midi\_for\_light.js
+のファイル内の先頭のブロックに変数亭があります。あなたが定義すべき内容はほとんど、それらのパラメータを送信するか否か、ということです。然しながら
+midi-channel を設定する必要があります。ご注意ください。これは全てのイベントに対するグローバル変数であり、これらは note
+を通じて送信されます。
 
 ### table personal settings
 

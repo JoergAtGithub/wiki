@@ -1,4 +1,4 @@
-# MIDI clock output
+# MIDIクロック送信
 
 Mixxx includes a "MIDI for light" script that can send MIDI clock output
 for controlling lights or other MIDI synced hardware or software. The
@@ -6,10 +6,18 @@ script requires no intervention as soon as you have configured it
 according to your needs. The DJ using Mixxx does not need to be
 disturbed during the event.
 
+Mixxx は、"Midi for light"
+と呼ばれるスクリプトを内蔵しています。このスクリプトはLEDライトの制御を行うMIDIクロックを送信したり、その他様々のハードウェアとの同期を取るために利用されます。スクリプトは、必要に応じてすぐに介入する必要はありません。
+Mixxxを使用しているDJは、イベント中に妨害する必要はありません。
+
 To use it, have the sound card with the MIDI output port plugged in or a
 virtual software MIDI output port created before starting Mixxx. Then
 select the MIDI output port in Options \> Preferences \> Controllers and
 load the "MIDI for light" script like a MIDI controller mapping.
+
+このスクリプトを利用するためには、MIDI出力ポートを予め備えているサウンドカードを用意するか、もしくは、Mixxx起動前に、ソフトウェアで仮想的にMIDI出力ポートを作成してください。Mixxxを起動後に、Options
+\> Prefereces \> Controolers の順にメニューをたどり、"MIDI for light"
+スクリプトを、コントローラのマッピングと同じようにロードする必要があります。
 
 ## The current deck
 

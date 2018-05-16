@@ -182,7 +182,7 @@ Transifex will pick up the changes to the template after a short while, and noti
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex
   * ''tx pull -a''
   * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
-  * For every mixxx_xx.ts file in res/translations/, ''lrelease res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm''
+  * For every mixxx_xx.ts file in res/translations/, ''lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm''
   * In ZSH: ''for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done''
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git

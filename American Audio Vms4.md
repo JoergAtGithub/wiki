@@ -180,6 +180,11 @@ unit 2.
     unit number
   - **Parameter** - Toggles what the above Control knob adjusts
 
+#### 2.1
+
+Same as 2.0, except the Select knob affects only the first effect in the
+unit.
+
 ### Sample section
 
 The left side of the controller controls Sampler 1, and the right,

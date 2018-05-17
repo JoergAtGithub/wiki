@@ -119,17 +119,17 @@ locations of the controls are the key things to pay attention to.**
 *The controls are the same on both sides of the controller. The left
 side controls Deck 1 and the right side controls Deck 2.*
 
-  - **Sync/Range/Hot Cue** button - Changes the BPM of this deck to
-    match that of the other. When shifted, toggles the pitch slider
-    range. (See top of page to customize.)
+  - **Sync/Range** button - Changes the BPM of this deck to match that
+    of the other. When shifted, toggles the pitch slider range. (See top
+    of page to customize.)
   - **Hot cue buttons** - Press to set or recall a hot cue. The buttons
     light up red when one is set.
-  - 1.9: You can only access hot cues 1-4. Hold shift and press to
-    delete the cue.
   - 1.10+: Hold Shift and press to access hot cues 5-8. (The buttons
     light up blue for these.) Hold Vinyl and press to delete the cue.
     (Note: there is a bug in some firmware versions that causes hot cues
     5 and 6 to be deleted simultaneously.)
+  - 1.9: You can only access hot cues 1-4. Hold shift and press to
+    delete the cue.
   - **Pitch Bend +/-**
   - Momentarily speeds up or slows down the deck while the button is
     held down.
@@ -140,20 +140,33 @@ side controls Deck 1 and the right side controls Deck 2.*
   - **Reloop** - Toggle a previously-set loop. Lights red when a loop is
     active.
   - **Loop/Smart**
-  - 1.9: Toggle track repeat mode
   - 1.10+: Start a 4-beat loop. Hold Shift and press to toggle
     quantization (locking to the nearest beat.)
+  - 1.9: Toggle track repeat mode
   - **Vinyl/Keylock** - *(Does nothing on its own when un-shifted at the
     moment.)* When shifted, toggles key lock.
   - **\<\< Search/ /2** - Fast-rewind
   - 1.10+: Hold Shift and press to halve the current loop length
   - **Search \>\>/ \*2** - Fast-forward
   - 1.10+: Hold Shift and press to double the current loop length
-  - **Wheel**
-  - Move the wheel while touching the top to scratch the current track
-    like a vinyl record
-  - Move the wheel without touching the top (so on the sides) to perform
-    a temporary pitch bend
+  - **Touch strip**
+  - 2.1.1+: Scroll through the respective Library panes. (Left for the
+    folders/crates list, right for the track list.)
+
+<!-- end list -->
+
+``` 
+    * Hold Shift and touch to affect the Dry/Wet knob on the respective effect unit.
+* 2.1.0 and below: Needle drop - touch to search through the track (only when stopped in 2.1.0.)
+* **Wheel**
+* Move the wheel while touching the top to scratch the current track like a vinyl record
+* Move the wheel without touching the top (so on the sides) to perform a temporary pitch bend
+* **CUE** - Operates according to the Cue mode set in Mixxx's preferences
+* 2.1+ - Hold Shift and press to play immediately from the cue point (known as Cue+Play or CUP.)
+* **Play** - Press to toggle deck playback
+* 2.1+ - Hold Shift and press to set this deck as the master for syncing with another
+* **Pause** - Stops the deck playback
+```
 
 ### Effects section
 

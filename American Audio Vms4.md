@@ -204,6 +204,14 @@ Sampler 2.
 
 ## Mixer controls
 
+### 2.1
+
+Same as 2.0 but the volume sliders no longer control the ones in Mixxx
+because direct Deck outputs are now affected by Mixxx's internal ones.
+([See this commit
+message](https://github.com/mixxxdj/mixxx/commit/7ce9a6fbe1df3087ecdd03793bb766f06b3001d8)
+for further explanation.)
+
 ### 2.0
 
   - **Midilog 1** - This strip controls Deck 3/C

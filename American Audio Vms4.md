@@ -1,6 +1,6 @@
 # American Audio VMS4/4.1
 
-[[/media/hardware/american_audio/vms4_angle.jpg|vms4\_angle.jpg]]
+[[/media/hardware/american_audio/vms4.1_angle.jpg|vms4.1\_angle.jpg]]
 
 Manufacturer's Web site links:
 
@@ -95,7 +95,7 @@ or controlled Mixxx's internal mixer another way.
 
 This guide explains how the VMS4 is mapped by default in Mixxx.
 
-[[/media/hardware/american_audio/vms4_top.jpg|]]
+[[/media/hardware/american_audio/vms4.1_top.jpg|]]
 
 *Image courtesy of [American Audio](http://www.adjaudio.com/). Click on
 it for a larger version.*

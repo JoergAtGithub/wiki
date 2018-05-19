@@ -193,13 +193,10 @@ page](http://www.mixxx.org/download.php), or checkout a snapshot from
 our git repository: (See [Using Git](Using%20Git) for more details &
 options.)
 
-  - For the latest beta branch: `git clone -b 2.1
-    https://github.com/mixxxdj/mixxx.git`
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 1.12
-    https://github.com/mixxxdj/mixxx.git` (the git branch for 2.0 is
-    still called 1.12)
+  - For the latest stable branch: `git clone -b 2.1
+    https://github.com/mixxxdj/mixxx.git`
 
 To update to the latest version of a git branch, enter (`cd` into) the
 directory you cloned the git repository into and run `git pull`. See

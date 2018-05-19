@@ -35,7 +35,7 @@ sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev 
   libusb-1.0-0-dev libfftw3-dev libmad0-dev \
   portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
-  libavcodec-dev libavformat-dev
+  libavcodec-dev libavformat-dev liblilv-dev
 sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
 sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 sudo apt-get install libqt4-opengl libqt4-svg libqt4-xmlpatterns libqt4-sql  # Linux Mint/KDE  
@@ -58,7 +58,7 @@ sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev 
   libopusfile-dev libshout3-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev \
   portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
-  libid3tag0-dev libflac-dev libsndfile1-dev libupower-glib-dev
+  libid3tag0-dev libflac-dev libsndfile1-dev libupower-glib-dev liblilv-dev
 sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
 sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
 sudo apt-get install libmp3lame-dev
@@ -102,7 +102,7 @@ Then run:
 su
 [Enter the password for the user "root" at the prompt]
 dnf groupinstall "Development Tools"
-dnf install gcc-c++ upower-devel
+dnf install gcc-c++ upower-devel lilv-devel
 dnf builddep mixxx
 ```
 
@@ -112,17 +112,13 @@ If you are developing in Arch, you should have the
 [base-devel](https://www.archlinux.org/groups/x86_64/base-devel/) group
 installed.
 
-The tools you are gonna need for workin with mixxx are:
+The tools you are going to need for working with Mixxx are:
 
 ``` bash
-# for cloning the repo and version control
-pacman -S git
-
-# for compiling
-pacman -S gcc
-# or if you want clang
-pacman -S clang
+pacman -S git gcc
 ```
+
+Alternatively, you can substitute clang for gcc.
 
 You will also need SCons-2.\* to build the project. Arch no longer
 provides scons-2.\* in the repos and since mixxx's build system doesn't
@@ -142,14 +138,14 @@ mv scons-2.5.1 /path/to/where-you-want-it-to-live
 python2 /path/to/where-you-want-it-to-live/scripts/scons ...
 ```
 
-Then you just need the dependancies:
+Then you just need the dependencies:
 
 ``` bash
-# install the dependancies
+# install the dependencies
 sudo pacman -S libid3tag libmad portaudio qt libogg \
 libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
 taglib protobuf vamp-plugin-sdk rubberband \
-chromaprint sqlite upower
+chromaprint sqlite upower lilv
 ```
 
 ### Other
@@ -183,6 +179,7 @@ searching for the package name without the "lib" prefix.
   - libchromaprint
   - libsqlite3
   - libupower-glib-dev
+  - [lilv](http://drobilla.net/software/lilv)
 
 ## Get Mixxx
 

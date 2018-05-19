@@ -330,6 +330,18 @@ Below, *N*=2 up to the number of active microphones. e.g
 | font\_size\_decrement\[157\] |  | Binary   |  | Decrease the size of the library font                                                                                             |  | Library view                         |  |
 | font\_size\_knob\[158\]      |  | Relative |  | Increase or decrease the size of the library font                                                                                 |  | Library view                         |  |
 
+### \[Playlist\]
+
+This group is going to be deprecated at some point, with its controls
+added to `[Library]` above. (See [bug
+\#1772184](https://bugs.launchpad.net/mixxx/+bug/1772184) for the
+current status.)
+
+|  | Key/Control     |  | Range          |  | What it does                                                                                                              |  | On-screen feedback            |  |
+|  | --------------- |  | -------------- |  | ------------------------------------------------------------------------------------------------------------------------- |  | ----------------------------- |  |
+|  | SelectPlaylist  |  | relative value |  | Scrolls the given number of items (view, playlist, crate, etc.) in the side pane (can be negative for reverse direction). |  | Library sidebar highlight     |  |
+|  | SelectTrackKnob |  | relative value |  | Scrolls the given number of tracks in the track table (can be negative for reverse direction).                            |  | Library track table highlight |  |
+
 ### \[Controls\]
 
 |  | Key/Control         |  | Range  |  | What it does                                                                                                                                                                                           |  | On-screen feedback |  |

@@ -55,3 +55,8 @@ Since Last.fm API integration will take a while I probably won't have it
 ready by the 11th of June. So for this deadline I should have a solid
 code base and a proof of concept of a scrobbler in the form of a txt
 file.
+
+## Weekly blog
+
+[1st
+week](http://lkese3ker.blogspot.com.es/2018/05/week-1-14th-may-20th-may.html)

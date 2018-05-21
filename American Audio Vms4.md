@@ -156,7 +156,9 @@ side controls Deck 1 and the right side controls Deck 2.*
 <!-- end list -->
 
 ``` 
-    * Hold Shift and touch to affect the Dry/Wet knob on the respective effect unit.
+    * Hold Shift and touch:
+      - to affect the Dry/Wet knob on the respective effect unit while the deck is playing
+      - for Needle drop - search through the track while the deck is stopped
 * 2.1.0 and below: Needle drop - touch to search through the track (only when stopped in 2.1.0.)
 * **Wheel**
 * Move the wheel while touching the top to scratch the current track like a vinyl record

@@ -29,6 +29,7 @@ If your distribution is Debian based (such as Ubuntu), you can install
 them by running:
 
 ``` bash
+sudo add-apt-repository ppa:mixxx/mixxx
 sudo apt-get build-dep mixxx 
 sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
   libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \

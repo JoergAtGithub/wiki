@@ -56,6 +56,13 @@ ready by the 11th of June. So for this deadline I should have a solid
 code base and a proof of concept of a scrobbler in the form of a txt
 file.
 
+## Project outline
+
+Here's a rough outline of the intention of the project. This is far from
+complete.
+
+[[/media/gsoc_2018/livemetadataoutline.jpg|livemetadataoutline.jpg]]
+
 ## Weekly blog
 
 [1st

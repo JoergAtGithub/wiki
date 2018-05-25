@@ -29,25 +29,23 @@ If your distribution is Debian based (such as Ubuntu), you can install
 them by running:
 
 ``` bash
-sudo add-apt-repository ppa:mixxx/mixxx
-sudo apt-get build-dep mixxx 
-sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
-  libopusfile-dev libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
-  libusb-1.0-0-dev libfftw3-dev libmad0-dev \
-  portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
+sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
+  libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
+  libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
+  libchromaprint-dev librubberband-dev libsqlite3-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
-  libavcodec-dev libavformat-dev liblilv-dev
-sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
-sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
-sudo apt-get install libqt4-opengl libqt4-svg libqt4-xmlpatterns libqt4-sql  # Linux Mint/KDE  
-sudo apt-get install libx11-dev libqt4-dev libgl-dev libqt4-opengl-dev # Linux Mint/KDE
+  libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
+  libjack-dev libjack0 portaudio19-dev \  # because of Bug #1464120
+  libfaad-dev libmp4v2-dev \  # required for M4A support
 ```
 
-NOTE: Updated these for Mixxx 2.0 and Ubuntu 15.10, if this does not
-work on recent versions of Debian please split this section up.
+If you are building the master Git branch, run:
 
-TODO: Please consider putting these instructions into version control so
-they can be kept in sync with a particular version or branch.
+    sudo apt-get install qt5-default libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
+
+If you are building Mixxx 2.1, run:
+
+    sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
 
 ### Raspberry Pi (Raspian)
 

@@ -105,6 +105,12 @@ dnf install gcc-c++ upower-devel lilv-devel
 dnf builddep mixxx
 ```
 
+If you are building the master Git branch, also run:
+
+``` bash
+dnf install qt5-devel
+```
+
 ### Arch & Derivatives
 
 If you are developing in Arch, you should have the

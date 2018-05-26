@@ -123,7 +123,7 @@ The tools you are going to need for working with Mixxx are:
 pacman -S git gcc
 ```
 
-Alternatively, you can substitute clang for gcc.
+Alternatively, you can substitute gcc with clang.
 
 You will also need SCons-2.\* to build the project. Arch no longer
 provides scons-2.\* in the repos and since mixxx's build system doesn't

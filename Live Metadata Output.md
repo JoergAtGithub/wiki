@@ -76,6 +76,10 @@ A track counts as a new listen when:
     assumed that the user will not keep restarting the app and playing
     the same track over and over again).
 
+For the "now listening" signal (i.e much less restrictive than the full
+listen), every second the track with the most overall volume is the one
+selected.
+
 ## Weekly blog
 
 [1st

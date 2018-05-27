@@ -66,15 +66,17 @@ complete.
 A track counts as a new listen when:
 
   - The track has a duration greater than 30 seconds and has been
-    listened to (through master, even if the crossfader is giving 80%
-    volume to the other track, and the line fader is at 20%) for half of
-    its duration or 4 minutes, whichever is shorter. This played time is
-    paused while the song is not audible. And it gets reset if the track
-    is unloaded.
+    listened to (through master, see definition of audible below) for
+    half of its duration or 4 minutes, whichever is shorter. This played
+    time is paused while the song is not audible. And it gets reset if
+    the track is unloaded.
   - The time between the last unload and the current load of the track
     is greater than 5 minutes. Not counting application resets (it is
     assumed that the user will not keep restarting the app and playing
     the same track over and over again).
+
+A track is audible if its final volume is above 20% (including pregain
+and faders).
 
 For the "now listening" signal (i.e much less restrictive than the full
 listen), every second the track with the most overall volume is the one

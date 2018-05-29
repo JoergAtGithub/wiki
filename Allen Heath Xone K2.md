@@ -187,26 +187,6 @@ Layers is turned off. Refer to the [Xone K2 product manual from Allen &
 Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
 details.
 
-# Mixxx 2.0 mapping
-
-For the mapping to work correctly, the device must be set to operate on
-MIDI channel 16 and Latching Layers must be set to "Switch Matrix" (2nd
-state). For information on how to do that read the [manual from Allen &
-Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf).
-Latching Layers is not available on the Xone K1, so this mapping is not
-compatible with the Xone K1.
-
-The behavior of the grid buttons depends on which layer is active, which
-is changed by pressing the Layer button in the bottom left. The color of
-the text background indicates what the button does in that layer, e.g.
-the buttons of the last row activate hotcue 4 when the green layout is
-selected, but act as the play button when the red layer is selected.
-
-Text in blue describes secondary functions accessible when the shift
-button is held down.
-
-[[/media/xone_k2_mapping.svg|Xone K2 Mapping]]
-
 # Known issues
 
 There are a few known issues with the Xone K2/K1 firmware. First, there

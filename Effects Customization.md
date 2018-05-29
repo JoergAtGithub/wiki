@@ -19,34 +19,67 @@ refactoring the effects section of Mixxx to support the integration of
 
 ##### Week 1 (May 14 - May 20)
 
-During this week, I'll be working on effect blacklisting for LV2
+\<del\>During this week, I'll be working on effect blacklisting for LV2
 effects. I will also start working on connecting EngineEffect\* and the
-Effect\* classes if I have enough time during the end of the week.
+Effect\* classes if I have enough time at the end of the week.
 
 I will be able to work during nights or early mornings during this week
 because I have a workshop scheduled from May 15th to May 30th during the
-days.
+days.\</del\>
+
+I was able to add the blacklisting feature by the end of the week. A
+little work was required to be done on top of it.
 
 ##### Week 2 (May 21 - May 27)
 
-I aim to finish connecting EngineEffect\* classes to their corresponding
-Effect\* classes during this week.
+~~I aim to finish connecting EngineEffect\* classes to their
+corresponding Effect\* classes during this week.~~
 
-##### Week 3 (May 28 - June 3)
+I spent time working on the blacklisting feature only. Due to a workshop
+scheduled in college, I couldn't find much time during the weekdays. A
+few segmentation faults took a lot of time during development.
 
-I will start working on the consolidating the slot classes into their
-corresponding Effect\* classes during this week.
+Got the Effect Blacklisting branch
+[merged](https://github.com/mixxxdj/mixxx/pull/1674)\!
 
-##### Week 4 (June 4 - June 10)
+##### Week 3-6 (May 28 - June 24)
 
-I will mainly focus on testing and documentation during this week.
+I will focus on refactoring the effects engine architecture during this
+period. The currently implemented architecture is overcomplicated and is
+the reason behind many bugs and less extensibility.
+
+I will start by discussing the architecture thoroughly. Mostly, I will
+start by consolidating the EffectChain/EffectChainSlot classes and other
+Effect\*/Effect\*Slot classes. Then I will proceed on to refactor how
+the effects are connected to their corresponding Engine classes.
+
+##### Week 7-8 (June 25 - July 8)
+
+I will work on implementing importing/exporting effect chains during
+these weeks.
+
+##### Week 9-10 (July 9 - July 22)
+
+I will work on implementing effect parameter hiding and rearrangement
+during these weeks.
+
+##### Week 11 (July 23 - July 29)
+
+I will work on implementing custom defaults and ranges(if time allows)
+programmatically.
+
+##### Week 12-13 (July 30 - August 14)
+
+I will implement any missed out functionality in these weeks and write
+the final documentation in this period.
 
 #### Proposed Deadlines
 
 ##### May 21
 
 Finish working on LV2 effects branch with effect blacklisting.
+([Merged](https://github.com/mixxxdj/mixxx/pull/1674))
 
-##### June 10
+##### June 25
 
 Finish working on the new effects architecture.

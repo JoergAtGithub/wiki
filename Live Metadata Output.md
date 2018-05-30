@@ -68,7 +68,12 @@ user, manual authentication will be used, up to this point. Here I will
 add a toggle that enables the interaction as well as a browser pop-up
 asking for authentication to the user.
 
-### Eighth week: June 25th to July 1st
+### Eighth week: July 2nd to July 7th
+
+During this week I will wrap up the interaction, solving any bugs,
+errors or obstacles that will come up. If I have finished early I will
+start the MPRIS interaction by looking at [this github
+branch](https://github.com/daschuer/mixxx/tree/mpris) for ideas.
 
 ## Proposed deadline goals
 

@@ -44,8 +44,8 @@ tracks, works.
 During this week I will have finished with the Listener class, which
 will give me some time to write a proof of concept of the service
 interface with the writing of a file. This will leave the project ready
-for the evaluation. However, on Monday the 4th I have two exams and I
-will probably work less, since I have to stay at uni for 5 hours.
+for the evaluation. However, on **Monday the 4th** I have two exams and
+I will probably work less, since I have to stay at uni for 5 hours.
 
 ### Fifth week: June 11th to June 17th
 

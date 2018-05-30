@@ -68,12 +68,30 @@ user, manual authentication will be used, up to this point. Here I will
 add a toggle that enables the interaction as well as a browser pop-up
 asking for authentication to the user.
 
-### Eighth week: July 2nd to July 7th
+### Eighth week: July 2nd to July 8th
 
 During this week I will wrap up the interaction, solving any bugs,
 errors or obstacles that will come up. If I have finished early I will
 start the MPRIS interaction by looking at [this github
 branch](https://github.com/daschuer/mixxx/tree/mpris) for ideas.
+
+### Ninth week: July 9th to July 15th
+
+During this week I will start implementing the MPRIS interface. If I
+haven't looked at the github branch for ideas I will in this week. I
+will also talk to the devs to see what ideas they have since I'm told
+this is a somewhat popular request. I will use QDBus for this.
+
+### Tenth week: July 16th to July 22nd
+
+During this week I will continue implementing the MPRIS interface.
+
+### Eleventh week: July 23rd to July 29th
+
+During this week I expect to have finished with the MPRIS interface as
+well as test how it interacts with other programs.
+
+### Eleventh week: July 23rd to July 29th
 
 ## Proposed deadline goals
 

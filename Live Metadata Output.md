@@ -41,11 +41,34 @@ tracks, works.
 
 ### Fourth week: June 4th to June 10th
 
-During this week I will hopefully have finished with the Listener class,
-which will give me some time to write a proof of concept of the service
+During this week I will have finished with the Listener class, which
+will give me some time to write a proof of concept of the service
 interface with the writing of a file. This will leave the project ready
 for the evaluation. However, on Monday the 4th I have two exams and I
 will probably work less, since I have to stay at uni for 5 hours.
+
+### Fifth week: June 11th to June 17th
+
+During this week I will start implementing the interface that interacts
+with Qt. I will start by writing a simple class that creates the request
+objects and will use an interface to interact with the
+QNetworkAccessManager. This way I can mock up the manager and write
+individual tests for the aforementioned interface.
+
+### Sixth week: June 18th to June 24th
+
+During this week I will finish the interaction with the API itself and
+make sure it works as intended to move on to the menu.
+
+### Seventh week: June 25th to July 1st
+
+During this week I will add options to the broadcasting menu to enable
+user authentication. Since the previous tests will be done with my own
+user, manual authentication will be used, up to this point. Here I will
+add a toggle that enables the interaction as well as a browser pop-up
+asking for authentication to the user.
+
+### Eighth week: June 25th to July 1st
 
 ## Proposed deadline goals
 

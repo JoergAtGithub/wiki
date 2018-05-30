@@ -18,18 +18,6 @@ Modified as of 29/05/2018.
 
 ### First week: May 14th to May 20th
 
-~~ During this week I will think about the operations that need to be
-added to the base abstract class of every service by checking the
-various services that I want to implement. Then I will add a listener
-class that will receive the proper signal that a track has been changed
-and broadcast it via another signal to all service implementing
-interfaces. This will be a very busy week since I have a Bachelor's
-thesis deadline and also German finals. Specifically, in **Tuesday
-15th** I won't be able to work at all because I have Bachelor's thesis
-work during the morning and German exam in the afternoon. Also, in
-**Thursday 17th** I won't be able to work as much because I have another
-German final in the afternoon.~~
-
 During this week I added the necessary signals to track when a track is
 paused, resumed, loaded and unloaded. I also created some timers to
 count the played time, necessary to know when a track is scrobbable. I
@@ -37,11 +25,6 @@ wrote some tests for the Track object, which was intended to hold this
 information.
 
 ### Second week: May 21st to May 27th
-
-~~Here I will add a basic service interface implementation that will
-simply display the current track being played in a file. I will also add
-any necessary unit tests and will start looking at the Last.fm scrobbler
-API.~~
 
 During this week I moved all the metadata management to a separate
 class, instead of the Player Manager, moved the timers away from the
@@ -61,14 +44,28 @@ tracks, works.
 During this week I will hopefully have finished with the Listener class,
 which will give me some time to write a proof of concept of the service
 interface with the writing of a file. This will leave the project ready
-for the evaluation.
+for the evaluation. However, on Monday the 4th I have two exams and I
+will probably work less, since I have to stay at uni for 5 hours.
 
 ## Proposed deadline goals
 
 ### First deadline: 11th June
 
-For this deadline I should have a solid code base and a proof of concept
+For this deadline, I will have a solid code base and a proof of concept
 of a scrobbler in the form of a txt file.
+
+### Second deadline: 9th July
+
+For this deadline, I will have the full interaction with Last.fm
+scrobbler. Including the option added to the broadcast, the
+authentication process and the uploading of the scrobbles. As well as
+solving any bugs that come up.
+
+### Third deadline: 6th August
+
+For this date, I will have finished the interaction with the MPRIS
+interface, and if I have time I will implement a ListenBrainz
+interaction.
 
 ## Project outline
 

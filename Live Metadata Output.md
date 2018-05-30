@@ -91,7 +91,10 @@ During this week I will continue implementing the MPRIS interface.
 During this week I expect to have finished with the MPRIS interface as
 well as test how it interacts with other programs.
 
-### Eleventh week: July 23rd to July 29th
+### Twelfth week: July 30th to August 5th
+
+This week will be dedicated to wrap up the MPRIS interface as well as
+solve any bugs or problems that come up.
 
 ## Proposed deadline goals
 

@@ -42,7 +42,7 @@ will refactor the current code so each class has a clearly defined role:
     chain presets, where the QString is the user-defined name for the
     preset. When the user selects a chain preset,
     WEffectChainPresetSelector tells EffectManager to load it, which
-    triggers EffectManager to send the EffectChainPreset to EffectChain
+    triggers EffectsManager to send the EffectChainPreset to EffectChain
 
 Here is a sketch for a new effectchainpreset.h file:
 

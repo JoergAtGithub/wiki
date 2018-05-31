@@ -15,6 +15,53 @@ refactoring the effects section of Mixxx to support the integration of
   - Rearrange Effect Parameters
   - Set Custom Defaults and Ranges
 
+### Architecture goal
+
+The current architecture of the effects code is overcomplicated and
+makes it easy to create bugs when adding new features. In the GUI
+thread, classes for handling effects and chains are split into pairs of
+classes, EffectChain/EffectChainSlot and Effect/EffectSlot, but there is
+not a clear separation of responsibilities between the members of each
+pair. It is not clear what the role of EffectChain should be versus
+EffectChainSlot. This has created a situation where state needs to be
+duplicated and kept in sync between two classes, which is
+overcomplicated and error-prone. Before we can implement new features,
+we will refactor the current code so each class has a clearly defined
+role:
+
+EngineEffectChain: does the audio processing in the engine thread
+EffectChain: holds the ControlObjects for interacting with skins and
+controllers in the GUI thread. Communicates state changes from the
+ControlObjects to EngineEffectChain via the effect MessagePipe FIFO.
+EffectChainPreset: holds a snapshot of the state of EffectChain. Used by
+EffectsManager to communicate with EffectChain EffectsManager:
+saves/loads XML files to a private QHash\<QString, EffectChainPreset\>,
+where the QString index is the user-defined name for the preset
+WEffectChainPresetSelector (subclass of QComboBox): On startup, gets a
+QList\<QString\> from EffectsManager for the list of available chain
+presets, where the QString is the user-defined name for the preset. When
+the user selects a chain preset, WEffectChainPresetSelector tells
+EffectManager to load it, which triggers EffectManager to send the
+EffectChainPreset to EffectChain
+
+Here is a sketch for a new effectchainpreset.h file:
+
+    class EffectChainPreset {
+      public:
+        EffectChainPreset();
+        EffectChainPreset(QDomElement savedPresetXml);
+        ~EffectChainPreset();
+    
+        double dMix;
+        double dSuper;
+        EffectChainMixMode mixMode;
+    
+        QDomElement toXml();
+    
+      private
+        QList<EffectPreset> m_effectPresets;
+    }
+
 ### Proposed Timeline
 
 ##### Week 1 (May 14 - May 20)

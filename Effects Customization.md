@@ -32,6 +32,8 @@ will refactor the current code so each class has a clearly defined role:
   - EffectChain: holds the ControlObjects for interacting with skins and
     controllers in the GUI thread. Communicates state changes from the
     ControlObjects to EngineEffectChain via the effect MessagePipe FIFO.
+    This class will be made by combining the current EffectChain &
+    EffectChainSlot classes.
   - EffectChainPreset: holds a snapshot of the state of EffectChain.
     Used by EffectsManager to communicate with EffectChain
   - EffectsManager: saves/loads XML files to a private QHash\<QString,

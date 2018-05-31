@@ -29,20 +29,21 @@ overcomplicated and error-prone. Before we can implement new features,
 we will refactor the current code so each class has a clearly defined
 role:
 
-EngineEffectChain: does the audio processing in the engine thread
-EffectChain: holds the ControlObjects for interacting with skins and
-controllers in the GUI thread. Communicates state changes from the
-ControlObjects to EngineEffectChain via the effect MessagePipe FIFO.
-EffectChainPreset: holds a snapshot of the state of EffectChain. Used by
-EffectsManager to communicate with EffectChain EffectsManager:
-saves/loads XML files to a private QHash\<QString, EffectChainPreset\>,
-where the QString index is the user-defined name for the preset
-WEffectChainPresetSelector (subclass of QComboBox): On startup, gets a
-QList\<QString\> from EffectsManager for the list of available chain
-presets, where the QString is the user-defined name for the preset. When
-the user selects a chain preset, WEffectChainPresetSelector tells
-EffectManager to load it, which triggers EffectManager to send the
-EffectChainPreset to EffectChain
+  - EngineEffectChain: does the audio processing in the engine thread
+  - EffectChain: holds the ControlObjects for interacting with skins and
+    controllers in the GUI thread. Communicates state changes from the
+    ControlObjects to EngineEffectChain via the effect MessagePipe FIFO.
+  - EffectChainPreset: holds a snapshot of the state of EffectChain.
+    Used by EffectsManager to communicate with EffectChain
+  - EffectsManager: saves/loads XML files to a private QHash\<QString,
+    EffectChainPreset\>, where the QString index is the user-defined
+    name for the preset
+  - WEffectChainPresetSelector (subclass of QComboBox): On startup, gets
+    a QList\<QString\> from EffectsManager for the list of available
+    chain presets, where the QString is the user-defined name for the
+    preset. When the user selects a chain preset,
+    WEffectChainPresetSelector tells EffectManager to load it, which
+    triggers EffectManager to send the EffectChainPreset to EffectChain
 
 Here is a sketch for a new effectchainpreset.h file:
 

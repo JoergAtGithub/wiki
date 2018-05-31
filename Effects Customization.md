@@ -19,15 +19,14 @@ refactoring the effects section of Mixxx to support the integration of
 
 The current architecture of the effects code is overcomplicated and
 makes it easy to create bugs when adding new features. In the GUI
-thread, classes for handling effects and chains are split into pairs of
-classes, EffectChain/EffectChainSlot and Effect/EffectSlot, but there is
-not a clear separation of responsibilities between the members of each
-pair. It is not clear what the role of EffectChain should be versus
+thread, classes for handling effects and chains are split into two pairs
+of classes, EffectChain/EffectChainSlot and Effect/EffectSlot, but there
+is not a clear separation of responsibilities between the members of
+each pair. It is not clear what the role of EffectChain should be versus
 EffectChainSlot. This has created a situation where state needs to be
-duplicated and kept in sync between two classes, which is
-overcomplicated and error-prone. Before we can implement new features,
-we will refactor the current code so each class has a clearly defined
-role:
+duplicated and kept in sync between the classes of each pair, which is
+overcomplicated and error-prone. Before we implement new features, we
+will refactor the current code so each class has a clearly defined role:
 
   - EngineEffectChain: does the audio processing in the engine thread
   - EffectChain: holds the ControlObjects for interacting with skins and

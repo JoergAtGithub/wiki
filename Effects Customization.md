@@ -60,9 +60,9 @@ Here is a sketch for a new effectchainpreset.h file:
     
         QDomElement toXml();
     
-      private
+      private:
         QList<EffectPreset> m_effectPresets;
-    }
+    };
 
 ### Proposed Timeline
 

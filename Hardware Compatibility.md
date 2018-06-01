@@ -428,13 +428,15 @@ is recommended for most uses. Refer to the [Mixxx
 manual](https://mixxx.org/manual/latest/chapters/setup.html) for
 details. If your audio interface does not have 4 output channels, it is
 possible to use multiple audio interfaces. However, this increases
-latency and there may be crackling on one audio interface.
+latency. On Windows, it can be tricky to configure Mixxx to use both of
+them at the same time depending on the sound APIs supported by each
+audio interface's driver.
 
 Surround sound (5.1 or 7.1) cards are not recommended. They sometimes do
 signal processing in hardware or in the driver to split a stereo signal
 into multiple components. It may be possible to configure them to output
-a separate master and headphone stereo signals, but it is often tricky
-to do so.
+separate master and headphone stereo signals, but it is often tricky to
+do so.
 
 This table only lists a handful of available USB audio interfaces that
 are currently in production and suitable for use with Mixxx. There are
@@ -442,7 +444,7 @@ many more options available that may be better for you depending on your
 input and output needs and the sound quality you can afford. You
 generally get the sound quality you pay for with audio interfaces. The
 [Mixxx
-manual](http://mixxx-manual.readthedocs.io/en/manual-2.1.x/chapters/hardware.html#audio-interface-considerations)
+manual](http://mixxx.org/manual/latest/en/chapters/hardware.html#audio-interface-considerations)
 has more information to help decide on an audio interface to use.
 
 \<sortable 2=numeric\>

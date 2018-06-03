@@ -145,6 +145,6 @@ selected.
 ## Weekly blog
 
 [1st
-week](http://lkese3ker.blogspot.com.es/2018/05/week-1-14th-may-20th-may.html)
+week](http://lkese3ker.blogspot.com.es/2018/05/week-1-14th-may-20th-may.html)  
 [2nd
 week](http://lkese3ker.blogspot.com/2018/05/week-2-21st-may-27th-may.html)

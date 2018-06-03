@@ -180,18 +180,18 @@ Transifex will pick up the changes to the template after a short while, and noti
 //This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.//
 
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex
-  * ''tx pull -a''
+  * <code>tx pull -a</code>
   * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
-  * For every mixxx_xx.ts file in res/translations/, ''lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm''
-  * In ZSH: ''for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done''
+  * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
+  * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git
-  * In ZSH: ''git add res/translations/mixxx_*.(ts|qm)''
+  * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>
   * **Update res/mixxx.qrc file to add any new languages that were not previously present.**
   * Commit changes to HEAD
-  * ''git commit -m "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"''
+  * <code>git commit -m "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"</code>
   * Push changes to remote repository
-  * ''git push origin branchname''
+  * <code>git push origin branchname</code>
 
 **TODO:** make the sconscript do this as part of a normal build so Mixxx contains the latest translations.
 

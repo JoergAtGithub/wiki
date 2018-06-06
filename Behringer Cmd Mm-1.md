@@ -16,11 +16,6 @@ Launchpad](novation_launchpad_mapping_by_szdavid92))
 All following examples will be made with a help of a [3D
 model](http://stunkit.com/data/files/etc/cmd-mm-1.blend.zip).
 
-This demonstration video shows how the mapping works by default with
-every channel in Deck mode: (*Outdated*)
-
-[[[/media/hardware/behringer/behringer_cmd_mm-1-youtube.jpg|behringer\_cmd\_mm-1-youtube.jpg]]](https://www.youtube.com/watch?v=33t6J1hUFjM)
-
 ## Mapping description
 
 ### Mapping options

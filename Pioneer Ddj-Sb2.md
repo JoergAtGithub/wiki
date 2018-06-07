@@ -183,20 +183,6 @@ way, but controlling hotcues 5 to 8.
 Pressing the pads in auto loop mode will make loops of a specific length
 measured in beats.
 
-#### Mixxx 2.0
-
-| Control       | Function     |
-| ------------- | ------------ |
-| Pad 1         | 1 beat loop  |
-| Pad 2         | 2 beat loop  |
-| Pad 3         | 4 beat loop  |
-| Pad 4         | 8 beat loop  |
-| Shift + pad 1 | 16 beat loop |
-| Shift + pad 2 | 32 beat loop |
-| Shift + pad 3 | 64 beat loop |
-
-#### Mixxx 2.1
-
 | Control       | Function                                                                                                        |
 | ------------- | --------------------------------------------------------------------------------------------------------------- |
 | Pad 1         | set a loop of the selected number of beats                                                                      |
@@ -268,34 +254,6 @@ blinking) you can make the pads behave as EQ kill switches.
 | Pad 4   | Mute      |
 
 ### Effects
-
-#### Mixxx 2.0
-
-Over the jogwheels there are sections allowing to control effects 1 & 2.
-
-Turning the knobs will control the mix of an effect.
-
-Turning the knobs while holding one of the three FX buttons will control
-the first, second or third parameter of an effect, respectively.
-
-If holding shift when using the knobs the "super" parameter can be
-controlled.
-
-Pressing FX buttons toogles output On/Off.
-
-| Button  | Output    |
-| ------- | --------- |
-| 1       | Deck 1    |
-| shift 1 | Deck 3    |
-| 2       | Headphone |
-| shift 2 | Master    |
-| 3       | Deck 2    |
-| shift 3 | Deck 4    |
-
-You can choose between effects by entering "kill mode" and using pads 1
-and 2 while holding shift.
-
-#### Mixxx 2.1
 
 The knob controls the dry/wet knob of the whole effect chain when no
 effect is focused. When an effect is focused, the knob controls the

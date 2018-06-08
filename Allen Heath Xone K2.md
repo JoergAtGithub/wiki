@@ -29,6 +29,8 @@ controller mapping.
 
 # Mixxx mapping
 
+TODO: make labelled diagrams and a video demonstrating the mapping
+
 ## Setup
 
 This mapping can used with one or multiple Xone K2s/K1s. Multiple Xone

@@ -98,21 +98,16 @@ changes:
 
     git fetch upstream
 
-Switch the files on your computer to the master branch from the upstream
-repository:
+Create a new branch on your computer called 'fixing\_some\_bug' starting
+from the upstream/master branch:
 
-    git checkout upstream/master
+    git checkout -b fixing_some_bug upstream/master
 
 If you want your changes included in a current beta release or a bugfix
-point release (such as 2.1.1), checkout the release branch instead of
-the master branch, for example:
+point release (such as 2.1.1), start your new branch from the release
+branch instead of the master branch, for example:
 
-    git checkout upstream/2.1
-
-Create a new branch on your computer called 'fixing\_some\_bug' and
-switch to it:
-
-    git checkout -b fixing_some_bug
+    git checkout -b fixing_some_bug upstream/2.1
 
 Doing this every time you start working on a new feature or bug fix will
 allow you to propose your new set of changes for inclusion in Mixxx

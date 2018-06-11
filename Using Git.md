@@ -226,11 +226,7 @@ If there have been new changes in the upstream code that you would like
 to include in a branch you are working on, run:
 
     git checkout your_branch_name
-    git fetch upstream
-    git merge upstream/master
-
-If you want to merge changes from a beta or release branch, change
-`upstream/master` to that branch, for example `upstream/2.1`.
+    git pull
 
 If you want to try the latest code from upstream without any of your own
 changes, run:

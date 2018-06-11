@@ -226,7 +226,7 @@ If there have been new changes in the upstream code that you would like
 to include in a branch you are working on, run:
 
     git checkout your_branch_name
-    git pull
+    git pull # a shortcut for 'git fetch upstream && git merge upstream/master'
 
 If you want to try the latest code from upstream without any of your own
 changes, run:

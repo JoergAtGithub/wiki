@@ -54,7 +54,7 @@ out of memory, it will hang in the middle of the scan until Linux kills
 the process.
 
     [MIXXX LOCATION]/lib/benchmark/include
-    [MIXXX LOCATION]/lib/fidlib-0.9.10
+    [MIXXX LOCATION]/lib/fidlib
     [MIXXX LOCATION]/lib/gtest-1.7.0/include
     [MIXXX LOCATION]/lib/gmock-1.7.0
     [MIXXX LOCATION]/lib/gmock-1.7.0/gtest
@@ -67,7 +67,7 @@ the process.
     [MIXXX LOCATION]/lib/qtscript-bytearray
     [MIXXX LOCATION]/lib/replaygain
     [MIXXX LOCATION]/lib/reverb
-    [MIXXX LOCATION]/lib/soundtouch-1.9.2
+    [MIXXX LOCATION]/lib/soundtouch-2.0.0
     [MIXXX LOCATION]/lib/vamp-2.6
     [MIXXX LOCATION]/lib/xwax
     [MIXXX LOCATION]/lin64_build

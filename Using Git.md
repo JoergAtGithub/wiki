@@ -209,6 +209,14 @@ automatically be included in the pull request you already have open.
 When the changes are approved, we will merge them into the upstream
 Mixxx code\!
 
+Please note that Mixxx is an entirely volunteer project, so do not
+expect anyone to review your code instantly. We try not to let pull
+requests sit without review for more than a week or two, but please
+leave a friendly comment on your pull request to remind us about it if
+you do not hear any updates for a while. If you [test and review other
+developers' pull requests](#test-a-pull-request), they will likely feel
+more inclined to reciprocate and review yours more quickly.
+
 To work on another bug or feature, [\#create a new
 branch](#create%20a%20new%20branch).
 

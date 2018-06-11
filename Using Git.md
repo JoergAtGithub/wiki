@@ -54,6 +54,10 @@ computer to match the latest updates, run
 
 to switch to the upstream master branch.
 
+Configure Git so that you push to your fork by default for new branches:
+
+    git config remote.pushDefault origin
+
 # Test a pull request
 
 Developers propose changes to the Mixxx code by opening "pull requests"

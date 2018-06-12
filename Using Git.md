@@ -167,12 +167,6 @@ include in a commit. This is helpful for splitting a large set of
 changes into smaller, independent commits, which makes it easier for
 other developers to review your code.
 
-**IMPORTANT\!** *Every* commit should compile and run, even if you are
-aware some functionality is broken. This is important in case someone
-has to use [Git
-bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git)
-later to find what caused a bug.
-
 # Push commits
 
 When you make a commit in Git, that commit only exists on your computer

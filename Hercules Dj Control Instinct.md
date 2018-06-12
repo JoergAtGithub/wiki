@@ -89,3 +89,9 @@ Click on the image for a bigger version.*
 #### MIDI Map
 
 <https://docs.google.com/spreadsheets/d/1lNR5fh5pesNiECW_U8hI9UGamxqB5SG3x-9UddwpeHw/edit?usp=sharing>
+
+### Mapping / Control files DJ Control Instinct S
+
+Standard DJ Control Instinct doesn't work with the "Instinct S" variant.
+This mapping works best: (download raw files):
+<https://github.com/nikmartin/hercules-mixxx-mapping/tree/master/controllers>

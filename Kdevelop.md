@@ -68,7 +68,7 @@ the process.
     [MIXXX LOCATION]/lib/replaygain
     [MIXXX LOCATION]/lib/reverb
     [MIXXX LOCATION]/lib/soundtouch-2.0.0
-    [MIXXX LOCATION]/lib/vamp-2.6
+    [MIXXX LOCATION]/lib/vamp
     [MIXXX LOCATION]/lib/xwax
     [MIXXX LOCATION]/lin64_build
     [MIXXX LOCATION]/src

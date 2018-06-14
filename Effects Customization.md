@@ -47,8 +47,8 @@ to the current architecture *italicized*:
   - **EffectProcessor**: an instance of a specific effect such as Echo
     or Flanger. This is an abstract base class to provide an interface
     for EngineEffectSlot to interact with the EffectProcessorImpl
-    subclass without being concerned which type of effect is loaded. No
-    change from the present implementation.
+    subclass without EngineEffectSlot being concerned which type of
+    effect is loaded. No change from the present implementation.
   - **EffectManifest**: declares the metadata for a specific type of
     effect such as Echo or Flanger. This metadata includes the effect's
     name; available parameters; and the ranges, types, and defaults of

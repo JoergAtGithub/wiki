@@ -30,11 +30,65 @@ EffectRack layer above EffectChain/EffectChainSlot which does nothing
 but overcomplicate the code. This layer will be removed and what are
 currently called "chains"/"units" will be renamed "racks" to align with
 common English audio terminology. For the ControlObjects, what is
-currently called "\[EffectRack1\_EffectUnitX\_EffectY\], parameterZ"
-will be renamed to "\[EffectRackX\_EffectY\], parameterZ" and what is
-"\[EqualizerRack1\_\[Channel1\]\_Effect1\], parameterZ" will be renamed
-to "[custom per-effect
-defaults](/Channel1]_EqualizerRack_Effect1],%20parameterZ"%20\(the%20old%20names%20will%20be%20aliased%20for%20backwards%20compatibility\).%20Before%20we%20implement%20new%20features,%20we%20will%20refactor%20the%20current%20code%20so%20each%20class%20has%20a%20clearly%20defined%20role.%20From%20the%20bottom%20up/% A% A%20%20*%20**EffectProcessor**/%20an%20instance%20of%20a%20specific%20effect%20such%20as%20Echo%20or%20Flanger.%20This%20is%20an%20abstract%20base%20class%20to%20provide%20an%20interface%20for%20EngineEffectSlot%20to%20interact%20with%20the%20EffectProcessorImpl%20subclass%20without%20being%20concerned%20which%20type%20of%20effect%20is%20loaded.%20No%20change%20from%20the%20present%20implementation.% A%20%20*%20**EffectManifest**/%20declares%20the%20metadata%20for%20a%20specific%20type%20of%20effect%20such%20as%20Echo%20or%20Flanger.%20This%20metadata%20includes%20the%20effect's%20name;%20available%20parameters;%20and%20the%20ranges,%20types,%20and%20defaults%20of%20those%20parameters.%20No%20change%20from%20the%20present%20implementation.% A%20%20*%20**EffectsBackend**/%20enumerates%20available%20effect%20types%20and%20instantiates%20an%20EffectProcessor%20from%20an%20EffectManifest.%20Each%20category%20of%20effect,%20namely%20Mixxx's%20built-in%20effects%20and%20LV2%20effect%20plugins,%20has%20its%20own%20EffectsBackend%20subclass.% A% AEvery%20specific%20effect%20like%20Echo%20or%20Flanger%20is%20implemented%20as%20a%20pair%20of%20an%20EngineEffectState%20subclass%20and%20an%20EffectProcessorImpl%20subclass/% A%20%20*%20**EngineEffectState**/%20an%20abstract%20base%20class%20for%20the%20state%20of%20an%20instance%20of%20an%20effect%20for%20one%20combination%20of%20input%20and%20output%20channels.%20This%20state%20persists%20across%20cycles%20of%20the%20audio%20engine%20thread.%20This%20will%20be%20made%20by%20renaming%20EffectState%20to%20EngineEffectState.% A%20%20*%20**EffectProcessorImpl\<EngineEffectState\>**/%20a%20template%20abstract%20base%20class%20which%20contains%20the%20logic%20for%20managing%20the%20EngineEffectStates%20so%20the%20implementation%20of%20specific%20effects%20like%20Echo%20and%20Flanger%20do%20not%20need%20to%20be%20concerned%20with%20memory%20management.%20Each%20effect%20implements%20a%20subclass%20of%20this%20declaring%20its%20parameters%20with%20an%20EffectManifest%20and%20containing%20a%20processChannel%20function%20with%20its%20DSP%20logic.%20No%20change%20from%20the%20present%20implementation.% A% A%20%20*%20**EngineEffectSlot**/%20A%20place%20where%20an%20effect%20may%20be%20loaded%20that%20lives%20in%20the%20audio%20engine%20thread.%20It%20may%20contain%20an%20EffectProcessor%20or%20be%20empty.%20This%20class%20contains%20logic%20for%20smoothly%20toggling%20effects%20on%20and%20off%20without%20audible%20pops.%20This%20class%20will%20be%20made%20by%20renaming%20EngineEffect.% A%20%20*%20**EffectSlot**/%20holds%20the%20ControlObjects%20for%20interacting%20with%20skins%20and%20controllers%20in%20the%20GUI%20thread.%20Communicates%20state%20changes%20from%20the%20ControlObjects%20to%20EngineEffectSlot%20via%20the%20effect%20MessagePipe%20FIFO.%20Passes%20EffectProcessor%20instances%20to%20the%20EngineEffectSlot%20also%20via%20the%20MessagePipe%20FIFO.%20Decouples%20the%20set%20of%20potential%20effect%20parameters%20from%20the%20parameters%20exposed%20to%20skins%20and%20controllers%20so%20that%20users%20can%20hide%20and%20rearrange%20parameters%20as%20they%20prefer.%20This%20will%20be%20made%20by%20combining%20the%20present%20Effect%20&%20EffectSlot%20classes.% A%20%20*%20**EffectPreset**/%20contains%20a%20snapshot%20of%20the%20state%20of%20an%20EffectSlot%20and%20serializes/deserializes%20this%20to%20XML.%20This%20will%20be%20used%20both%20to%20create%20EffectRackPresets%20and%20implement%20[[https///bugs.launchpad.net/mixxx/+bug/1740504)
+currently called `[EffectRack1_EffectUnitX_EffectY], parameterZ` will be
+renamed to `[EffectRackX_EffectY], parameterZ` and what is
+`[EqualizerRack1_[Channel1]_Effect1], parameterZ` will be renamed to
+`[[Channel1]_EqualizerRack_Effect1], parameterZ` (the old names will be
+aliased for backwards compatibility). Before we implement new features,
+we will refactor the current code so each class has a clearly defined
+role. From the bottom up:
+
+  - **EffectProcessor**: an instance of a specific effect such as Echo
+    or Flanger. This is an abstract base class to provide an interface
+    for EngineEffectSlot to interact with the EffectProcessorImpl
+    subclass without being concerned which type of effect is loaded. No
+    change from the present implementation.
+  - **EffectManifest**: declares the metadata for a specific type of
+    effect such as Echo or Flanger. This metadata includes the effect's
+    name; available parameters; and the ranges, types, and defaults of
+    those parameters. No change from the present implementation.
+  - **EffectsBackend**: enumerates available effect types and
+    instantiates an EffectProcessor from an EffectManifest. Each
+    category of effect, namely Mixxx's built-in effects and LV2 effect
+    plugins, has its own EffectsBackend subclass.
+
+Every specific effect like Echo or Flanger is implemented as a pair of
+an EngineEffectState subclass and an EffectProcessorImpl subclass:
+
+  - **EngineEffectState**: an abstract base class for the state of an
+    instance of an effect for one combination of input and output
+    channels. This state persists across cycles of the audio engine
+    thread. This will be made by renaming EffectState to
+    EngineEffectState.
+  - **EffectProcessorImpl\<EngineEffectState\>**: a template abstract
+    base class which contains the logic for managing the
+    EngineEffectStates so the implementation of specific effects like
+    Echo and Flanger do not need to be concerned with memory management.
+    Each effect implements a subclass of this declaring its parameters
+    with an EffectManifest and containing a processChannel function with
+    its DSP logic. No change from the present implementation.
+
+<!-- end list -->
+
+  - **EngineEffectSlot**: A place where an effect may be loaded that
+    lives in the audio engine thread. It may contain an EffectProcessor
+    or be empty. This class contains logic for smoothly toggling effects
+    on and off without audible pops. This class will be made by renaming
+    EngineEffect.
+  - **EffectSlot**: holds the ControlObjects for interacting with skins
+    and controllers in the GUI thread. Communicates state changes from
+    the ControlObjects to EngineEffectSlot via the effect MessagePipe
+    FIFO. Passes EffectProcessor instances to the EngineEffectSlot also
+    via the MessagePipe FIFO. Decouples the set of potential effect
+    parameters from the parameters exposed to skins and controllers so
+    that users can hide and rearrange parameters as they prefer. This
+    will be made by combining the present Effect & EffectSlot classes.
+  - **EffectPreset**: contains a snapshot of the state of an EffectSlot
+    and serializes/deserializes this to XML. This will be used both to
+    create EffectRackPresets and implement [custom per-effect
+    defaults](https://bugs.launchpad.net/mixxx/+bug/1740504)
+
+<!-- end list -->
 
   - **EngineEffectRack**: contains a chain of 3 EngineEffectSlots. This
     will be made by renaming EngineEffectChain.

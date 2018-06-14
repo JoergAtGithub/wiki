@@ -95,6 +95,12 @@ an EngineEffectState subclass and an EffectProcessorImpl subclass:
     the ControlObjects to EngineEffectRack via the effect MessagePipe
     FIFO. This class will be made by combining the current EffectChain &
     EffectChainSlot classes.
+  - **EqualizerRack**, **QuickEffectRack**, **OutputEffectRack**:
+    EffectRack subclasses for the deck equalizers and QuickEffects plus
+    the master output equalizer. When the old superfluous EffectRack
+    layer is removed, these will be reimplemented as subclasses of the
+    new EffectRack class made from consolidate the old EffectChain &
+    EffectChainSlot classes.
   - **EffectRackPreset**: holds a snapshot of the state of an EffectRack
     and serializes/deserializes this state to XML. Used by
     EffectsManager to communicate with EffectRack.

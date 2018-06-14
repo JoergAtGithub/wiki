@@ -42,9 +42,10 @@ From the bottom up:
     effect such as Echo or Flanger. This metadata includes the effect's
     name; available parameters; and the ranges, types, and defaults of
     those parameters. No change from the present implementation.
-  - **EffectsBackend**: instantiates an EffectProcessor from an
-    EffectManifest. Each category of effect, namely Mixxx's built-in
-    effects and LV2 effect plugins, has its own EffectsBackend subclass.
+  - **EffectsBackend**: enumerates available effect types and
+    instantiates an EffectProcessor from an EffectManifest. Each
+    category of effect, namely Mixxx's built-in effects and LV2 effect
+    plugins, has its own EffectsBackend subclass.
 
 Every specific effect like Echo or Flanger is implemented as a pair of
 an EngineEffectState subclass and an EffectProcessorImpl subclass:

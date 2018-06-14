@@ -34,12 +34,7 @@ currently called "\[EffectRack1\_EffectUnitX\_EffectY\], parameterZ"
 will be renamed to "\[EffectRackX\_EffectY\], parameterZ" (the old names
 will be aliased for backwards compatibility). Before we implement new
 features, we will refactor the current code so each class has a clearly
-defined role.
-
-The current ControlObject namespace is very confusing and will be
-aliased to a new namespace.
-
-From the bottom up:
+defined role. From the bottom up:
 
   - **EffectProcessor**: an instance of a specific effect such as Echo
     or Flanger. This is an abstract base class to provide an interface

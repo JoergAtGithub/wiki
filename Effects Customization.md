@@ -25,36 +25,105 @@ is not a clear separation of responsibilities between the members of
 each pair. It is not clear what the role of EffectChain should be versus
 EffectChainSlot. This has created a situation where state needs to be
 duplicated and kept in sync between the classes of each pair, which is
-overcomplicated and error-prone. Before we implement new features, we
-will refactor the current code so each class has a clearly defined role:
+overcomplicated and error-prone. Furthermore, there is a superfluous
+EffectRack layer above EffectChain/EffectChainSlot which does nothing
+but overcomplicate the code. This layer will be removed and what are
+currently called "chains"/"units" will be renamed "racks" to align with
+common English audio terminology. Before we implement new features, we
+will refactor the current code so each class has a clearly defined role.
+From the bottom up:
 
-  - EngineEffectChain: does the audio processing in the engine thread
-  - EffectChain: holds the ControlObjects for interacting with skins and
-    controllers in the GUI thread. Communicates state changes from the
-    ControlObjects to EngineEffectChain via the effect MessagePipe FIFO.
-    This class will be made by combining the current EffectChain &
+  - **EffectProcessor**: an instance of a specific effect such as Echo
+    or Flanger. This is an abstract base class to provide an interface
+    for EngineEffectSlot to interact with the EffectProcessorImpl
+    subclass without being concerned which type of effect is loaded. No
+    change from the present implementation.
+  - **EffectManifest**: declares the metadata for a specific type of
+    effect such as Echo or Flanger. This metadata includes the effect's
+    name; available parameters; and the ranges, types, and defaults of
+    those parameters. No change from the present implementation.
+  - **EffectsBackend**: instantiates an EffectProcessor from an
+    EffectManifest. Each category of effect, namely Mixxx's built-in
+    effects and LV2 effect plugins, has its own EffectsBackend subclass.
+
+Every specific effect like Echo or Flanger is implemented as a pair of
+an EngineEffectState subclass and an EffectProcessorImpl subclass:
+
+  - **EngineEffectState**: an abstract base class for the state of an
+    instance of an effect for one combination of input and output
+    channels. This state persists across cycles of the audio engine
+    thread. This will be made by renaming EffectState to
+    EngineEffectState.
+  - **EffectProcessorImpl\<EngineEffectState\>**: a template abstract
+    base class which contains the logic for managing the
+    EngineEffectStates so the implementation of specific effects like
+    Echo and Flanger do not need to be concerned with memory management.
+    Each effect implements a subclass of this declaring its parameters
+    with an EffectManifest and containing a processChannel function with
+    its DSP logic. No change from the present implementation.
+
+<!-- end list -->
+
+  - **EngineEffectSlot**: A place where an effect may be loaded that
+    lives in the audio engine thread. It may contain an EffectProcessor
+    or be empty. This class contains logic for smoothly toggling effects
+    on and off without audible pops. This class will be made by renaming
+    EngineEffect.
+  - **EffectSlot**: holds the ControlObjects for interacting with skins
+    and controllers in the GUI thread. Communicates state changes from
+    the ControlObjects to EngineEffectSlot via the effect MessagePipe
+    FIFO. Passes EffectProcessor instances to the EngineEffectSlot also
+    via the MessagePipe FIFO. Decouples the set of potential effect
+    parameters from the parameters exposed to skins and controllers so
+    that users can hide and rearrange parameters as they prefer. This
+    will be made by combining the present Effect & EffectSlot classes.
+  - **EffectPreset**: contains a snapshot of the state of an EffectSlot
+    and serializes/deserializes this to XML. This will be used both to
+    create EffectRackPresets and implement [custom per-effect
+    defaults](https://bugs.launchpad.net/mixxx/+bug/1740504)
+
+<!-- end list -->
+
+  - **EngineEffectRack**: contains a chain of 3 EngineEffectSlots. This
+    will be made by renaming EngineEffectChain.
+  - **EffectRack**: holds the ControlObjects for interacting with skins
+    and controllers in the GUI thread. Communicates state changes from
+    the ControlObjects to EngineEffectRack via the effect MessagePipe
+    FIFO. This class will be made by combining the current EffectChain &
     EffectChainSlot classes.
-  - EffectChainPreset: holds a snapshot of the state of EffectChain.
-    Used by EffectsManager to communicate with EffectChain
-  - EffectsManager: saves/loads XML files to a private QHash\<QString,
-    EffectChainPreset\>, where the QString index is the user-defined
-    name for the preset
-  - WEffectChainPresetSelector (subclass of QComboBox): On startup, gets
-    a QList\<QString\> from EffectsManager for the list of available
-    chain presets, where the QString is the user-defined name for the
-    preset. When the user selects a chain preset,
+  - **EffectRackPreset**: holds a snapshot of the state of an EffectRack
+    and serializes/deserializes this state to XML. Used by
+    EffectsManager to communicate with EffectRack.
+
+<!-- end list -->
+
+  - **EffectsManager**: saves/loads XML files to a private
+    QHash\<QString, EffectRackPreset\>, where the QString index is the
+    user-defined name for the preset
+  - **MessagePipe**: a FIFO for communicating state changes and objects
+    from the main thread to the audio engine thread without blocking.
+    EffectProcessors and EffectStates are allocated on the heap in the
+    main thread and pointers to them are passed on the MessagePipe to
+    the EngineEffectSlots.
+  - **EngineEffectsManager**: provides an interface for the rest of the
+    audio engine to the
+    EngineEffectRacks/EngineEffectSlots/EffectProcessors. Receives
+    messages from the MessagePipe and relays them to EngineEffectRacks
+  - **WEffectRackPresetSelector**: subclass of QComboBox. On startup,
+    gets a QList\<QString\> from EffectsManager for the list of
+    available EffectRackPresets, where the QString is the user-defined
+    name for the preset. When the user selects an EffectRackPreset,
     WEffectChainPresetSelector tells EffectManager to load it, which
-    triggers EffectsManager to send the EffectChainPreset to EffectChain
+    triggers EffectsManager to send the EffectRackPreset to EffectRack
 
-Here is a sketch for a new effectchainpreset.h file:
+Here is a sketch for a new effectrackpreset.h file:
 
-    class EffectChainPreset {
+    class EffectRackPreset {
       public:
         EffectChainPreset();
         EffectChainPreset(QDomElement savedPresetXml);
         ~EffectChainPreset();
     
-        double dMix;
         double dSuper;
         EffectChainMixMode mixMode;
     

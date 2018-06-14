@@ -123,9 +123,9 @@ an EffectProcessorState subclass and an EffectProcessorImpl subclass:
     user-defined name for the preset.
   - **MessagePipe**: a FIFO for communicating state changes and objects
     from the main thread to the audio engine thread without blocking.
-    EffectProcessors and EffectStates are allocated on the heap in the
-    main thread and pointers to them are passed on the MessagePipe to
-    the EngineEffectSlots.
+    EffectProcessors and EffectProcessorStates are allocated on the heap
+    in the main thread and pointers to them are passed on the
+    MessagePipe to the EngineEffectSlots.
   - **EngineEffectsManager**: provides an interface for the rest of the
     audio engine to the
     EngineEffectRacks/EngineEffectSlots/EffectProcessors. Receives

@@ -29,14 +29,19 @@ overcomplicated and error-prone. Furthermore, there is a superfluous
 EffectRack layer above EffectChain/EffectChainSlot which does nothing
 but overcomplicate the code. This layer will be removed and what are
 currently called "chains"/"units" will be renamed "racks" to align with
-common English audio terminology. For the ControlObjects, what is
-currently called `[EffectRack1_EffectUnitX_EffectY], parameterZ` will be
-renamed to `[EffectRackX_EffectY], parameterZ` and what is
-`[EqualizerRack1_[Channel1]_Effect1], parameterZ` will be renamed to
-`[[Channel1]_EqualizerRack_Effect1], parameterZ` (the old names will be
-aliased for backwards compatibility). Before we implement new features,
-we will refactor the current code so each class has a clearly defined
-role. From the bottom up:
+common English audio terminology. The ControlObjects will be renamed to
+align with the new implementation and aliases will be provided for
+backwards compatibility:
+
+  - `[EffectRack1_EffectUnitX_EffectY], parameterZ` -\>
+    `[EffectRackX_EffectY], parameterZ`
+  - `[EqualizerRack1_[Channel1]_Effect1], parameterZ`
+    -\>`[[Channel1]_EqualizerRack_Effect1], parameterZ`
+  - `[QuickEffectRack1_[Channel1]_Effect1], parameterZ` -\>
+    `[[Channel1]_QuickEffectRack_Effect1], parameterZ`
+
+Before we implement new features, we will refactor the current code so
+each class has a clearly defined role. From the bottom up:
 
   - **EffectProcessor**: an instance of a specific effect such as Echo
     or Flanger. This is an abstract base class to provide an interface

@@ -60,13 +60,13 @@ to the current architecture *italicized*:
     to instantiate EffectProcessors instead of old Effect class.*
 
 Every specific effect like Echo or Flanger is implemented as a pair of
-an EngineEffectState subclass and an EffectProcessorImpl subclass:
+an EffectProcessorState subclass and an EffectProcessorImpl subclass:
 
-  - **EngineEffectState**: an abstract base class for the state of an
+  - **EffectProcessorState**: an abstract base class for the state of an
     instance of an effect for one combination of input and output
     channels. This state persists across cycles of the audio engine
     thread. This will be made by *renaming EffectState*.
-  - **EffectProcessorImpl\<EngineEffectState\>**: a template abstract
+  - **EffectProcessorImpl\<EffectProcessorState\>**: a template abstract
     base class which contains the logic for managing the
     EngineEffectStates so the implementation of specific effects like
     Echo and Flanger do not need to be concerned with memory management.

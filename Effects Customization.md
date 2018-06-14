@@ -29,8 +29,16 @@ overcomplicated and error-prone. Furthermore, there is a superfluous
 EffectRack layer above EffectChain/EffectChainSlot which does nothing
 but overcomplicate the code. This layer will be removed and what are
 currently called "chains"/"units" will be renamed "racks" to align with
-common English audio terminology. Before we implement new features, we
-will refactor the current code so each class has a clearly defined role.
+common English audio terminology. For the ControlObjects, what is
+currently called "\[EffectRack1\_EffectUnitX\_EffectY\], parameterZ"
+will be renamed to "\[EffectRackX\_EffectY\], parameterZ" (the old names
+will be aliased for backwards compatibility). Before we implement new
+features, we will refactor the current code so each class has a clearly
+defined role.
+
+The current ControlObject namespace is very confusing and will be
+aliased to a new namespace.
+
 From the bottom up:
 
   - **EffectProcessor**: an instance of a specific effect such as Echo

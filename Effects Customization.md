@@ -41,7 +41,8 @@ backwards compatibility:
     `[[Channel1]_QuickEffectRack_Effect1], parameterZ`
 
 Before we implement new features, we will refactor the current code so
-each class has a clearly defined role. From the bottom up:
+each class has a clearly defined role. From the bottom up, with changes
+to the current architecture *italicized*:
 
   - **EffectProcessor**: an instance of a specific effect such as Echo
     or Flanger. This is an abstract base class to provide an interface
@@ -55,7 +56,8 @@ each class has a clearly defined role. From the bottom up:
   - **EffectsBackend**: enumerates available effect types and
     instantiates an EffectProcessor from an EffectManifest. Each
     category of effect, namely Mixxx's built-in effects and LV2 effect
-    plugins, has its own EffectsBackend subclass.
+    plugins, has its own EffectsBackend subclass. *Refactoring required
+    to instantiate EffectProcessors instead of old Effect class.*
 
 Every specific effect like Echo or Flanger is implemented as a pair of
 an EngineEffectState subclass and an EffectProcessorImpl subclass:
@@ -63,8 +65,7 @@ an EngineEffectState subclass and an EffectProcessorImpl subclass:
   - **EngineEffectState**: an abstract base class for the state of an
     instance of an effect for one combination of input and output
     channels. This state persists across cycles of the audio engine
-    thread. This will be made by renaming EffectState to
-    EngineEffectState.
+    thread. This will be made by *renaming EffectState*.
   - **EffectProcessorImpl\<EngineEffectState\>**: a template abstract
     base class which contains the logic for managing the
     EngineEffectStates so the implementation of specific effects like
@@ -78,8 +79,8 @@ an EngineEffectState subclass and an EffectProcessorImpl subclass:
   - **EngineEffectSlot**: A place where an effect may be loaded that
     lives in the audio engine thread. It may contain an EffectProcessor
     or be empty. This class contains logic for smoothly toggling effects
-    on and off without audible pops. This class will be made by renaming
-    EngineEffect.
+    on and off without audible pops. This class will be made by
+    *renaming EngineEffect*.
   - **EffectSlot**: holds the ControlObjects for interacting with skins
     and controllers in the GUI thread. Communicates state changes from
     the ControlObjects to EngineEffectSlot via the effect MessagePipe
@@ -87,36 +88,39 @@ an EngineEffectState subclass and an EffectProcessorImpl subclass:
     via the MessagePipe FIFO. Decouples the set of potential effect
     parameters from the parameters exposed to skins and controllers so
     that users can hide and rearrange parameters as they prefer. This
-    will be made by combining the present Effect & EffectSlot classes.
+    will be made by *combining the present Effect & EffectSlot classes*.
   - **EffectPreset**: contains a snapshot of the state of an EffectSlot
     and serializes/deserializes this to XML. This will be used both to
     create EffectRackPresets and implement [custom per-effect
-    defaults](https://bugs.launchpad.net/mixxx/+bug/1740504)
+    defaults](https://bugs.launchpad.net/mixxx/+bug/1740504). This will
+    be a *new class*.
 
 <!-- end list -->
 
   - **EngineEffectRack**: contains a chain of 3 EngineEffectSlots. This
-    will be made by renaming EngineEffectChain.
+    will be made by *renaming EngineEffectChain*.
   - **EffectRack**: holds the ControlObjects for interacting with skins
     and controllers in the GUI thread. Communicates state changes from
     the ControlObjects to EngineEffectRack via the effect MessagePipe
-    FIFO. This class will be made by combining the current EffectChain &
-    EffectChainSlot classes.
+    FIFO. This class will be made by *combining the current EffectChain
+    & EffectChainSlot classes. The old EffectRack & EngineEffectRack
+    classes that don't do anything will be removed.*
   - **EqualizerRack**, **QuickEffectRack**, **OutputEffectRack**:
     EffectRack subclasses for the deck equalizers and QuickEffects plus
     the master output equalizer. When the old superfluous EffectRack
-    layer is removed, these will be reimplemented as subclasses of the
-    new EffectRack class made from consolidate the old EffectChain &
+    layer is removed, these will be *reimplemented as subclasses of the
+    new EffectRack class* made from consolidate the old EffectChain &
     EffectChainSlot classes.
   - **EffectRackPreset**: holds a snapshot of the state of an EffectRack
     and serializes/deserializes this state to XML. Used by
-    EffectsManager to communicate with EffectRack.
+    EffectsManager to communicate with EffectRack. This will be a *new
+    class*.
 
 <!-- end list -->
 
   - **EffectsManager**: saves/loads XML files to a private
     QHash\<QString, EffectRackPreset\>, where the QString index is the
-    user-defined name for the preset
+    user-defined name for the preset.
   - **MessagePipe**: a FIFO for communicating state changes and objects
     from the main thread to the audio engine thread without blocking.
     EffectProcessors and EffectStates are allocated on the heap in the
@@ -125,13 +129,14 @@ an EngineEffectState subclass and an EffectProcessorImpl subclass:
   - **EngineEffectsManager**: provides an interface for the rest of the
     audio engine to the
     EngineEffectRacks/EngineEffectSlots/EffectProcessors. Receives
-    messages from the MessagePipe and relays them to EngineEffectRacks
+    messages from the MessagePipe and relays them to EngineEffectRacks.
   - **WEffectRackPresetSelector**: subclass of QComboBox. On startup,
     gets a QList\<QString\> from EffectsManager for the list of
     available EffectRackPresets, where the QString is the user-defined
     name for the preset. When the user selects an EffectRackPreset,
     WEffectChainPresetSelector tells EffectManager to load it, which
-    triggers EffectsManager to send the EffectRackPreset to EffectRack
+    triggers EffectsManager to send the EffectRackPreset to EffectRack.
+    This will be a *new class*.
 
 Here is a sketch for a new effectrackpreset.h file:
 

@@ -371,7 +371,7 @@ directory:
 
   - **Linux**: The configuration is stored in a directory called `mixxx`
     off of your home directory. Rename it using the console command `mv
-    ~/mixxx ~/mixxx-backup`
+    ~/.mixxx ~/.mixxx-backup`
   - **Windows**: 
     1.  Open a File Explorer window and browse to `%LOCALAPPDATA%`.
     2.  Rename the `Mixxx` folder there to something else like

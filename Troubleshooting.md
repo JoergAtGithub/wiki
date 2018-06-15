@@ -354,6 +354,34 @@ doing it:
     Check if bpm and other meta infomation like cue points are still
     stored with the files.
 
+## Starting with a new configuration
+
+Sometimes an old or invalid configuration setting can cause Mixxx to do
+strange or unexpected things. It's always a good idea to try with a
+fresh, clean default configuration to see if your problem disappears.
+
+First, close Mixxx completely. Then rename your Mixxx configuration
+directory:
+
+  - **Linux**: The configuration is stored in a directory called `mixxx`
+    off of your home directory. Rename it using the console command `mv
+    ~/mixxx ~/mixxx-backup`
+  - **Windows**: 
+    1.  Open a File Explorer window and browse to `%LOCALAPPDATA%`.
+    2.  Rename the `Mixxx` folder there to something else like
+        `Mixxx-Backup`. 
+
+<!-- end list -->
+
+  - **macOS**: Rename your Mixxx configuration directory by opening a
+    Terminal (under Applications -\> Utilities) and entering `mv
+    ~/Library/Application Support/Mixxx ~/Library/Application
+    Support/Mixxx-backup`
+
+Then start Mixxx again and test to see if your problem still exists.
+(You can rename or copy the directory back to restore your settings when
+you're done testing.)
+
 ## Troubleshooting other issues (Finding the mixxx.log file)
 
 Refer to [Finding the mixxx.log file](Finding%20the%20mixxx.log%20file)

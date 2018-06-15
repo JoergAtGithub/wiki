@@ -369,9 +369,9 @@ fresh, clean default configuration to see if your problem disappears.
 First, close Mixxx completely. Then rename your Mixxx configuration
 directory:
 
-  - **Linux**: The configuration is stored in a directory called `mixxx`
-    off of your home directory. Rename it using the console command `mv
-    ~/.mixxx ~/.mixxx-backup`
+  - **Linux**: The configuration is stored in a hidden directory called
+    `.mixxx` off of your home directory. Rename it using the console
+    command `mv ~/.mixxx ~/.mixxx-backup`
   - **Windows**: 
     1.  Open a File Explorer window and browse to `%LOCALAPPDATA%`.
     2.  Rename the `Mixxx` folder there to something else like

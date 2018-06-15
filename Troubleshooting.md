@@ -165,14 +165,20 @@ your computer.
 
 ## Mixxx says my sound card does not support the sample format
 
-Try opening a console and running `export PA_ALSA_PLUGHW=1` before
-running `mixxx` (or `pasuspender mixxx`, see above). To avoid having to
-do this every time you run Mixxx, add `export PA_ALSA_PLUGHW=1` to the
-end of /etc/profile or \~/.bashrc, log out, and log back in. This will
-tell PortAudio, the library Mixxx uses to interact with sound hardware
-on multiple operating systems, to use ALSA's plughw devices rather than
-hw. plughw automatically converts audio streams to a sample format
-supported by the sound card.
+First try using each of the Sample Rate options on the Audio Hardware
+page in Mixxx's preferences. (You have to press OK or Apply after
+changing the setting for it to take effect.) Nearly all sound interfaces
+support at least one of 48000 Hz or 44100 Hz so try both of those first.
+
+If that doesn't help and you're on Linux, try opening a console and
+running `export PA_ALSA_PLUGHW=1` before running `mixxx` (or
+`pasuspender mixxx`, see above). To avoid having to do this every time
+you run Mixxx, add `export PA_ALSA_PLUGHW=1` to the end of /etc/profile
+or \~/.bashrc, log out, and log back in. This will tell PortAudio, the
+library Mixxx uses to interact with sound hardware on multiple operating
+systems, to use ALSA's plughw devices rather than hw. plughw
+automatically converts audio streams to a sample format supported by the
+sound card.
 
 ## I can't preview tracks in headphones
 

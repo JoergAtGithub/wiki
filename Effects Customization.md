@@ -4,6 +4,8 @@
 
 <span class="underline">Email:</span> <kgupta119@gmail.com>
 
+*mentor: Be*
+
 ### Abstract
 
 This project focuses on the effects section of Mixxx. I will be
@@ -76,11 +78,9 @@ an EffectProcessorState subclass and an EffectProcessorImpl subclass:
 
 <!-- end list -->
 
-  - **EngineEffectSlot**: A place where an effect may be loaded that
-    lives in the audio engine thread. It may contain an EffectProcessor
-    or be empty. This class contains logic for smoothly toggling effects
-    on and off without audible pops. This class will be made by
-    *renaming EngineEffect*.
+  - **EngineEffect**: A wrapper around EffectProcessor with some common
+    contains logic for smoothly toggling effects on and off without
+    audible pops. No change from current implementation.
   - **EffectSlot**: holds the ControlObjects for interacting with skins
     and controllers in the GUI thread. Communicates state changes from
     the ControlObjects to EngineEffectSlot via the effect MessagePipe

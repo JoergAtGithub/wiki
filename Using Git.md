@@ -1,4 +1,4 @@
-# Using Git for Mixxx Development
+# Using Git for Mixxx Testing and Development
 
 Mixxx uses [Git](http://git-scm.com/) for source control. Git is a
 distributed version control system that allows us to keep track of how

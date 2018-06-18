@@ -35,38 +35,33 @@ the waveforms conflict with the use of QTimer's timeout signal.
 
 ### Third week: May 28th to June 3rd
 
-During this week I will finish and make sure that the Listener class,
-which listens for paused and resumed events and polls the volume of the
-tracks, works.
+This week I finished the scrobbling manager and wrote some automatic
+tests for it. I also started working on the file listener.
 
 ### Fourth week: June 4th to June 10th
 
-During this week I will have finished with the Listener class, which
-will give me some time to write a proof of concept of the service
-interface with the writing of a file. This will leave the project ready
-for the evaluation. However, on **Monday the 4th** I have two exams and
-I will probably work less, since I have to stay at uni for 5 hours.
+This week I refactored the file listener into a factory and template to
+accommodate for the various file formats admitted by the broadcasting
+APPS. I also refactored the scrobbling manager to allow for dependency
+injection and changed the isTrackAudible function into a strategy
+pattern.
 
 ### Fifth week: June 11th to June 17th
 
-During this week I will start implementing the interface that interacts
-with Qt. I will start by writing a simple class that creates the request
-objects and will use an interface to interact with the
-QNetworkAccessManager. This way I can mock up the manager and write
-individual tests for the aforementioned interface.
+I've decided to start with the user settings before programming the API
+client that will interact with Last.fm. I wrote a new tab in the user
+settings and refactored the file listener so it uses those settings (a
+previous version).
 
 ### Sixth week: June 18th to June 24th
 
-During this week I will finish the interaction with the API itself and
-make sure it works as intended to move on to the menu.
+During this week I will start writing the interaction with Last.fm as
+well as deciding whether to use plugins, javascript or whatever for the
+service implementations.
 
 ### Seventh week: June 25th to July 1st
 
-During this week I will add options to the broadcasting menu to enable
-user authentication. Since the previous tests will be done with my own
-user, manual authentication will be used, up to this point. Here I will
-add a toggle that enables the interaction as well as a browser pop-up
-asking for authentication to the user.
+This week I will continue writing the interaction with Last.fm.
 
 ### Eighth week: July 2nd to July 8th
 
@@ -151,4 +146,6 @@ week](http://lkese3ker.blogspot.com/2018/05/week-2-21st-may-27th-may.html)
 [3rd
 week](http://lkese3ker.blogspot.com/2018/06/week-3-28th-may-3rd-june.html)  
 [4th
-week](http://lkese3ker.blogspot.com/2018/06/week-4-4th-june-10th-june.html)
+week](http://lkese3ker.blogspot.com/2018/06/week-4-4th-june-10th-june.html)  
+[5h
+week](https://lkese3ker.blogspot.com/2018/06/week-5-11th-june-17th-june.html)

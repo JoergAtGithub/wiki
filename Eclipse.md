@@ -139,6 +139,8 @@ by checking "Show built-in values"
 
 If the discovering fails, you may add the required info manually:
 
+#### Linux
+
   - Right click on the project -\> Properties -\> C/C++ General -\> Path
     and Symbols -\> Fill in tabs "Includes" and "Symbols".
   - Add the src/ folder in your workspace, and select "add to all
@@ -192,6 +194,47 @@ The indexer preferences can be set here:
 Window -\> Preferences -\> C/C++ -\> Indexer
 
 You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
+
+#### macOS
+
+  - Right click on the project -\> Properties -\> C/C++ General -\>
+    Paths and Symbols
+  - Under the 'Includes' and 'Symbols' tabs, add:
+  - /usr/local/include
+  - /usr/local/Cellar/qt/5.10.1/include
+  - /usr/local/Cellar/qt/5.10.1/include/QtCharts
+  - /usr/local/Cellar/qt/5.10.1/include/QtConcurrent
+  - /usr/local/Cellar/qt/5.10.1/include/QtCore
+  - /usr/local/Cellar/qt/5.10.1/include/QtGui
+  - /usr/local/Cellar/qt/5.10.1/include/QtNetwork
+  - /usr/local/Cellar/qt/5.10.1/include/QtOpenGL
+  - /usr/local/Cellar/qt/5.10.1/include/QtScript
+  - /usr/local/Cellar/qt/5.10.1/include/QtScriptTools
+  - /usr/local/Cellar/qt/5.10.1/include/QtSql
+  - /usr/local/Cellar/qt/5.10.1/include/QtSvg
+  - /usr/local/Cellar/qt/5.10.1/include/QtTest
+  - /usr/local/Cellar/qt/5.10.1/include/QtWidgets
+  - /usr/local/Cellar/qt/5.10.1/include/QtXml
+
+<!-- end list -->
+
+  - Add your workspace's src folder (eg \~/\<workspace folder
+    name\>/mixxx/src). Select "Add to all languages" and "Add to all
+    configurations".
+  - Do the same for your workspace's lib folder.
+  - Also add /usr/include as a file system path.
+
+After changing these settings, the index needs to be rebuilt. Eclipse
+will usually detect that relevant changes have been made and will
+rebuild the index on clicking Apply and Close. To do it manually:
+
+Right-click in Project Explorer Pane -\> Index -\> Rebuild
+
+Troubleshooting:
+
+The indexer preferences can be set here:
+
+Window -\> Preferences -\> C/C++ -\> Indexer
 
 ### Eclipse code formatter
 

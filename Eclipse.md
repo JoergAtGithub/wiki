@@ -199,7 +199,7 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 
   - Right click on the project -\> Properties -\> C/C++ General -\>
     Paths and Symbols
-  - Under the 'Includes' and 'Symbols' tabs, add:
+  - Under the 'Includes' and 'Symbols' tabs, choose GNU C++ and add:
   - /usr/local/include
   - /usr/local/Cellar/qt/5.10.1/include
   - /usr/local/Cellar/qt/5.10.1/include/QtCharts
@@ -225,8 +225,8 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
   - Also add /usr/include as a file system path.
 
 After changing these settings, the index needs to be rebuilt. Eclipse
-will usually detect that relevant changes have been made and will
-rebuild the index on clicking Apply and Close. To do it manually:
+will usually detect that changes have been made to Symbols settings and
+will rebuild the index on clicking Apply and Close. To do it manually:
 
 Right-click in Project Explorer Pane -\> Index -\> Rebuild
 

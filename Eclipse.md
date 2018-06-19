@@ -218,11 +218,10 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 
 <!-- end list -->
 
-  - Add your workspace's src folder (eg \~/\<workspace folder
-    name\>/mixxx/src). Select "Add to all languages" and "Add to all
-    configurations".
+  - To the Symbols tab, add your workspace's src folder (eg
+    \~/\<workspace folder name\>/mixxx/src). Select "Add to all
+    languages" and "Add to all configurations".
   - Do the same for your workspace's lib folder.
-  - Also add /usr/include as a file system path.
 
 After changing these settings, the index needs to be rebuilt. Eclipse
 will usually detect that changes have been made to Symbols settings and

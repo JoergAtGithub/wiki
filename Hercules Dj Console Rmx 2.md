@@ -71,30 +71,63 @@ adjusting these will not change anything on screen in Mixxx:
 
 ## Deck Functions
 
-| Figure   | \[**SHIFT**\]? | Long-press? | Control Name                | Description                                                                                                    |
-| -------- | -------------- | ----------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| 3(-)     | ✘              | ✘           | \[**PITCH BEND MINUS**\]    | Pitch bend down                                                                                                |
-| 3(-)     | ✔              | ✘           | \[**PITCH BEND MINUS**\]    | Decrement (halve) pitch range                                                                                  |
-| 3(+)     | ✘              | ✘           | \[**PITCH BEND PLUS**\]     | Pitch bend up                                                                                                  |
-| 3(+)     | ✔              | ✘           | \[**PITCH BEND PLUS**\]     | Increment (double) pitch range                                                                                 |
-| 2(Left)  | ✘              | ✘           | \[**REWIND**\]              | Fast backward in loaded track                                                                                  |
-| 2(Left)  | ✔              | ✘           | \[**REWIND**\]              | Spinback effect                                                                                                |
-| 2(Right) | ✘              | ✘           | \[**REWIND**\]              | Fast forward in loaded track                                                                                   |
-| 2(Right) | ✔              | ✘           | \[**REWIND**\]              | Brake effect                                                                                                   |
-| 9        | ✘              | ✘           | \[**SOURCE**\]              | Toggle pass thru                                                                                               |
-| 17       | ✘              | ✘           | \[**PREVIEW**\]             | Toggle pfl                                                                                                     |
-| 17       | ✔              | ✘           | \[**PREVIEW**\]             | Toggle keylock                                                                                                 |
-| 30       | ✘              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                       |
-| 30       | ✔              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                       |
-| 29       | ✘              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                        |
-| 29       | ✔              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                        |
-| 28       | ✘              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                       |
-| 28       | ✔              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                       |
-| 16       | ✘              | ✘           | \[**LOAD**\]                | Load selected track                                                                                            |
-| 16       | ✔              | ✘           | \[**LOAD**\]                | Eject track                                                                                                    |
-| 8        | ✘              | ✘           | \[**LOOP MODE**\] encoder   | Adjust beatloop size                                                                                           |
-| 8        | ✔              | ✘           | \[**LOOP MODE**\] encoder   | Move loop forward/backward                                                                                     |
-| 8        | ✘              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's mix knob, in EffectFocusMode in combination with ParameterEditMode - Controls effect's parameters |
-| 8        | ✔              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's super knob                                                                                        |
-| 8        | ✘              | ✘           | \[**SAMPLE MODE**\] encoder | Switch between 4 sampler banks (each of 4 samplers)                                                            |
-| 8        | ✘              | ✘           | \[**CUE MODE**\] encoder    | Adjust key of loaded track                                                                                     |
+| Figure    | \[**SHIFT**\]? | Long-press? | Control Name                | Description                                                                                                        |
+| --------- | -------------- | ----------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 3 (-)     | ✘              | ✘           | \[**PITCH BEND MINUS**\]    | Pitch bend down                                                                                                    |
+| 3 (-)     | ✔              | ✘           | \[**PITCH BEND MINUS**\]    | Decrement (halve) pitch range                                                                                      |
+| 3 (+)     | ✘              | ✘           | \[**PITCH BEND PLUS**\]     | Pitch bend up                                                                                                      |
+| 3 (+)     | ✔              | ✘           | \[**PITCH BEND PLUS**\]     | Increment (double) pitch range                                                                                     |
+| 2 (Left)  | ✘              | ✘           | \[**REWIND**\]              | Fast backward in loaded track                                                                                      |
+| 2 (Left)  | ✔              | ✘           | \[**REWIND**\]              | *Spinback* effect                                                                                                  |
+| 2 (Right) | ✘              | ✘           | \[**REWIND**\]              | Fast forward in loaded track                                                                                       |
+| 2 (Right) | ✔              | ✘           | \[**REWIND**\]              | *Brake* effect                                                                                                     |
+| 9         | ✘              | ✘           | \[**SOURCE**\]              | Toggle pass thru                                                                                                   |
+| 17        | ✘              | ✘           | \[**PREVIEW**\]             | Toggle pfl                                                                                                         |
+| 17        | ✔              | ✘           | \[**PREVIEW**\]             | Toggle keylock                                                                                                     |
+| 30        | ✘              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                           |
+| 30        | ✔              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                           |
+| 29        | ✘              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                            |
+| 29        | ✔              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                            |
+| 28        | ✘              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                           |
+| 28        | ✔              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                           |
+| 16        | ✘              | ✘           | \[**LOAD**\]                | Load selected track                                                                                                |
+| 16        | ✔              | ✘           | \[**LOAD**\]                | Eject track                                                                                                        |
+| 8         | ✘              | ✘           | \[**LOOP MODE**\] encoder   | Adjust beatloop size                                                                                               |
+| 8         | ✔              | ✘           | \[**LOOP MODE**\] encoder   | Move loop forward/backward                                                                                         |
+| 8         | ✘              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's mix knob, in *EffectFocusMode* in combination with *ParameterEditMode* - Controls effect's parameters |
+| 8         | ✔              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's super knob                                                                                            |
+| 8         | ✘              | ✘           | \[**SAMPLE MODE**\] encoder | Switch between 4 sampler banks (each of 4 samplers)                                                                |
+| 8         | ✘              | ✘           | \[**CUE MODE**\] encoder    | Adjust key of loaded track                                                                                         |
+| 24-1      | ✘              | ✘           | \[**LOOP PAD 1**\]          | Toggles beatloop over beatloop size                                                                                |
+| 24-2      | ✘              | ✘           | \[**LOOP PAD 2**\]          | Toggles beatloop over 2 beats                                                                                      |
+| 24-3      | ✘              | ✘           | \[**LOOP PAD 3**\]          | Toggles beatloop over 4 beats                                                                                      |
+| 24-4      | ✘              | ✘           | \[**LOOP PAD 4**\]          | Toggles beatloop over 8 beats                                                                                      |
+| 24-1      | ✔              | ✘           | \[**LOOP PAD 1**\]          | Toggles beatlooproll over 1/16 beats                                                                               |
+| 24-2      | ✔              | ✘           | \[**LOOP PAD 2**\]          | Toggles beatlooproll over 1/8 beats                                                                                |
+| 24-3      | ✔              | ✘           | \[**LOOP PAD 3**\]          | Toggles beatlooproll over 1/4 beats                                                                                |
+| 24-4      | ✔              | ✘           | \[**LOOP PAD 4**\]          | Toggles beatlooproll over 1/2 beats                                                                                |
+| 24-1      | ✘              | ✘           | \[**FX PAD 1**\]            | Enables effect 1 of EffectUnit 1                                                                                   |
+| 24-2      | ✘              | ✘           | \[**FX PAD 2**\]            | Enables effect 2 of EffectUnit 1                                                                                   |
+| 24-3      | ✘              | ✘           | \[**FX PAD 3**\]            | Enables effect 3 of EffectUnit 1                                                                                   |
+| 24-4      | ✘              | ✘           | \[**FX PAD 4**\]            | Shows/hides focus of EffectUnit 1                                                                                  |
+| 24-4      | ✘              | ✔           | \[**FX PAD 4**\]            | Enables *EffectFocusMode* (+ press \[**FX PAD 1..3**\] to focus an effect)                                         |
+| 24-1      | ✔              | ✘           | \[**FX PAD 1**\]            | Enables effect 1 of EffectUnit 1 and controls meta its meta knob by velocity                                       |
+| 24-2      | ✔              | ✘           | \[**FX PAD 2**\]            | Enables effect 2 of EffectUnit 1 and controls meta its meta knob by velocity                                       |
+| 24-3      | ✔              | ✘           | \[**FX PAD 3**\]            | Enables effect 3 of EffectUnit 1 and controls meta its meta knob by velocity                                       |
+| 24-4      | ✔              | ✘           | \[**FX PAD 4**\]            | Cycle through *effectUnit* numbers array                                                                           |
+| 24-1      | ✘              | ✘           | \[**SAMPLE PAD 1**\]        | Load selected track into Sampler (Index 1) if empty, else go to cue point and play - velocity (volume) controlled  |
+| 24-2      | ✘              | ✘           | \[**SAMPLE PAD 2**\]        | Load selected track into Sampler (Index 2) if empty, else go to cue point and play - velocity (volume) controlled  |
+| 24-3      | ✘              | ✘           | \[**SAMPLE PAD 3**\]        | Load selected track into Sampler (Index 3) if empty, else go to cue point and play - velocity (volume) controlled  |
+| 24-4      | ✘              | ✘           | \[**SAMPLE PAD 4**\]        | Load selected track into Sampler (Index 4) if empty, else go to cue point and play - velocity (volume) controlled  |
+| 24-1      | ✔              | ✘           | \[**SAMPLE PAD 1**\]        | Stop Sampler (Index 1) if playing, else eject loaded track                                                         |
+| 24-2      | ✔              | ✘           | \[**SAMPLE PAD 2**\]        | Stop Sampler (Index 2) if playing, else eject loaded track                                                         |
+| 24-3      | ✔              | ✘           | \[**SAMPLE PAD 3**\]        | Stop Sampler (Index 3) if playing, else eject loaded track                                                         |
+| 24-4      | ✔              | ✘           | \[**SAMPLE PAD 4**\]        | Stop Sampler (Index 4) if playing, else eject loaded track                                                         |
+| 24-1      | ✘              | ✘           | \[**CUE PAD 1**\]           | Hotcue 1 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-2      | ✘              | ✘           | \[**CUE PAD 2**\]           | Hotcue 2 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-3      | ✘              | ✘           | \[**CUE PAD 3**\]           | Hotcue 3 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-4      | ✘              | ✘           | \[**CUE PAD 4**\]           | Hotcue 4 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-1      | ✔              | ✘           | \[**CUE PAD 1**\]           | Hotcue 1 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-2      | ✔              | ✘           | \[**CUE PAD 2**\]           | Hotcue 2 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-3      | ✔              | ✘           | \[**CUE PAD 3**\]           | Hotcue 3 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 24-4      | ✔              | ✘           | \[**CUE PAD 4**\]           | Hotcue 4 *HotcueButton* behavior of [components](components_js) lib                                                |

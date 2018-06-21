@@ -71,7 +71,30 @@ adjusting these will not change anything on screen in Mixxx:
 
 ## Deck Functions
 
-| Figure | \[**SHIFT**\]? | Long-press? | Control Name      | Description                           |
-| ------ | -------------- | ----------- | ----------------- | ------------------------------------- |
-| 22     | \-             | \-          | HEADPHONES VOLUME | Controls the headphones output volume |
-| 6      | \-             | \-          | MIC VOLUME        | Controls the microphone volume (gain) |
+| Figure   | \[**SHIFT**\]? | Long-press? | Control Name                | Description                                                                                                    |
+| -------- | -------------- | ----------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 3(-)     | ✘              | ✘           | \[**PITCH BEND MINUS**\]    | Pitch bend down                                                                                                |
+| 3(-)     | ✔              | ✘           | \[**PITCH BEND MINUS**\]    | Decrement (halve) pitch range                                                                                  |
+| 3(+)     | ✘              | ✘           | \[**PITCH BEND PLUS**\]     | Pitch bend up                                                                                                  |
+| 3(+)     | ✔              | ✘           | \[**PITCH BEND PLUS**\]     | Increment (double) pitch range                                                                                 |
+| 2(Left)  | ✘              | ✘           | \[**REWIND**\]              | Fast backward in loaded track                                                                                  |
+| 2(Left)  | ✔              | ✘           | \[**REWIND**\]              | Spinback effect                                                                                                |
+| 2(Right) | ✘              | ✘           | \[**REWIND**\]              | Fast forward in loaded track                                                                                   |
+| 2(Right) | ✔              | ✘           | \[**REWIND**\]              | Brake effect                                                                                                   |
+| 9        | ✘              | ✘           | \[**SOURCE**\]              | Toggle pass thru                                                                                               |
+| 17       | ✘              | ✘           | \[**PREVIEW**\]             | Toggle pfl                                                                                                     |
+| 17       | ✔              | ✘           | \[**PREVIEW**\]             | Toggle keylock                                                                                                 |
+| 30       | ✘              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                       |
+| 30       | ✔              | ✘           | \[**PLAY**\]                | *PlayButton* behavior of [components](components_js) lib                                                       |
+| 29       | ✘              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                        |
+| 29       | ✔              | ✘           | \[**CUE**\]                 | *CueButton* behavior of [components](components_js) lib                                                        |
+| 28       | ✘              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                       |
+| 28       | ✔              | ✘           | \[**SYNC**\]                | *SyncButton* behavior of [components](components_js) lib                                                       |
+| 16       | ✘              | ✘           | \[**LOAD**\]                | Load selected track                                                                                            |
+| 16       | ✔              | ✘           | \[**LOAD**\]                | Eject track                                                                                                    |
+| 8        | ✘              | ✘           | \[**LOOP MODE**\] encoder   | Adjust beatloop size                                                                                           |
+| 8        | ✔              | ✘           | \[**LOOP MODE**\] encoder   | Move loop forward/backward                                                                                     |
+| 8        | ✘              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's mix knob, in EffectFocusMode in combination with ParameterEditMode - Controls effect's parameters |
+| 8        | ✔              | ✘           | \[**FX MODE**\] encoder     | EffectUnit's super knob                                                                                        |
+| 8        | ✘              | ✘           | \[**SAMPLE MODE**\] encoder | Switch between 4 sampler banks (each of 4 samplers)                                                            |
+| 8        | ✘              | ✘           | \[**CUE MODE**\] encoder    | Adjust key of loaded track                                                                                     |

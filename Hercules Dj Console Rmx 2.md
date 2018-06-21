@@ -72,13 +72,10 @@ settings can be made:
 The following functions directly affect the controller's sound card, so
 adjusting these will not change anything on screen in Mixxx:
 
-| Group           | Figure | \[**SHIFT**\]? | Button Name         | Description                                     |
-| --------------- | ------ | -------------- | ------------------- | ----------------------------------------------- |
-| 3 - MIXER       | 8      | \-             | MASTER LEVEL        | Controls the master output volume               |
-| :::             | 9      | \-             | \[**MASTER CUE**\]  | Toggles master cue                              |
-| :::             | 13     | \-             | HEADPHONES MIX      | Controls headphone's audio source (cue, master) |
-| :::             | 15     | \-             | BOOTH MONITOR LEVEL | Controls the booth output volume                |
-| 4 - FRONT PANEL | 2      | \-             | INPUT SELECT        | Controls deck source (PC, MIC, CD, PHONO, LINE) |
+| Figure | \[**SHIFT**\]? | Long-press? | Control Name      | Description                           |
+| ------ | -------------- | ----------- | ----------------- | ------------------------------------- |
+| 3      | \-             | \-          | HEADPHONES VOLUME | Controls the headphones output volume |
+| 22     | \-             | \-          | MIC VOLUME        | Controls the microphone volume (gain) |
 
 ## Deck Functions
 

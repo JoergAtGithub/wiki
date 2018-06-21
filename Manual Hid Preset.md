@@ -121,3 +121,6 @@ top of the `scriptfiles` list in your XML file:)
 ``` 
              <file filename="common-hid-packet-parser.js" functionprefix=""/>
 ```
+
+However, the structure of this library's code is messy and it may cause
+as many hassles to use it as it solves.

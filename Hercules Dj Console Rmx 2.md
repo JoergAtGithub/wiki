@@ -36,6 +36,52 @@ settings can be made:
   - **DJCRMX2.showHideSamplersEffectsOnPadMode**: If true, *Samplers*
     and *EffectRack* get shown or hidden in dependance of Pad-Mode.
 
+## General Functions
+
+### Managed by Mixxx
+
+| Group           | Figure     | \[**SHIFT**\]? | Button Name                   | Description                                                                                                         |
+| --------------- | ---------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 5 - BROWSER     | 2, 3, 4, 5 | \-             | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
+| :::             | 2          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle BPM sync                                                                                            |
+| :::             | 3          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle Key sync                                                                                            |
+| :::             | 1          | \-             | \[**ROTARY SELECTOR**\]       | Move UP or DOWN the specified number of locations in Library (MoveVertical function)                                |
+| :::             | 1          | \-             | \[**ROTARY SELECTOR PRESS**\] | Equivalent to double clicking the currently selected item in Library (GoToItem function)                            |
+| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR**\]       | Move LEFT or RIGHT the specified number of locations in Library (MoveHorizontal function)                           |
+| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR PRESS**\] | Add track from Library to AutoDJ queue at top/bottom (see user options: default = at bottom)                        |
+| :::             | 6          | \-             | \[**BACK**\]                  | Currently focused pane changes in Library - previously focused pane will be focused (MoveFocusBackward function)    |
+| :::             | 6          | \[**SHIFT**\]  | \[**BACK**\]                  | Maximize view of Library                                                                                            |
+| :::             | 7          | \-             | \[**LOAD PREPARE**\]          | Load selected track into PreviewDeck, jump to position (see user options) and play, else stop already playing track |
+| 3 - MIXER       | 1          | \-             | Crossfader                    | Controls Mixxx crossfader, fades between deck 1, 3 and 2, 4                                                         |
+| :::             | 2          | \-             | Channel fader                 | Controls deck volume                                                                                                |
+| :::             | 2          | \[**SHIFT**\]  | Channel fader                 | Fader start (starts playing deck when rising deck volume)                                                           |
+| :::             | 3          | \-             | TRIM                          | Controls deck gain                                                                                                  |
+| :::             | 4          | \-             | EQ HIGH                       | Controls deck's equalizer/filter high frequencies                                                                   |
+| :::             | 5          | \-             | EQ MID                        | Controls deck's equalizer/filter mid frequencies                                                                    |
+| :::             | 6          | \-             | EQ LOW                        | Controls deck's equalizer/filter low frequencies                                                                    |
+| :::             | 7          | \-             | \[**CUE**\]                   | Toggles PFL/Cue (headphones) for specific deck                                                                      |
+| :::             | 7          | \[**SHIFT**\]  | \[**CUE**\]                   | BPM Tab function for specific deck                                                                                  |
+| :::             | 9          | \[**SHIFT**\]  | \[**MASTER CUE**\]            | Toggles split cue (headphones)                                                                                      |
+| :::             | 10         | \-             | Crossfader Assign             | Crossfader assignment - deck to crossfader (left (A), right (B) or center (THRU))                                   |
+| :::             | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
+| 4 - FRONT PANEL | 1          | \-             | Crossfader curve              | Controls Mixxx crossfader curve                                                                                     |
+| 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Show/hide Sampler decks / Effect rack                                                                               |
+
+### Managed by the controller
+
+The following functions directly affect the controller's sound card, so
+adjusting these will not change anything on screen in Mixxx:
+
+| Group           | Figure | \[**SHIFT**\]? | Button Name         | Description                                     |
+| --------------- | ------ | -------------- | ------------------- | ----------------------------------------------- |
+| 3 - MIXER       | 8      | \-             | MASTER LEVEL        | Controls the master output volume               |
+| :::             | 9      | \-             | \[**MASTER CUE**\]  | Toggles master cue                              |
+| :::             | 13     | \-             | HEADPHONES MIX      | Controls headphone's audio source (cue, master) |
+| :::             | 15     | \-             | BOOTH MONITOR LEVEL | Controls the booth output volume                |
+| 4 - FRONT PANEL | 2      | \-             | INPUT SELECT        | Controls deck source (PC, MIC, CD, PHONO, LINE) |
+
+## Deck Functions
+
 ## Mapping
 
 [[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]

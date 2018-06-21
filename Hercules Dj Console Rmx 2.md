@@ -36,7 +36,7 @@ settings can be made:
   - **DJCRMX2.showHideSamplersEffectsOnPadMode**: If true, *Samplers*
     and *EffectRack* get shown or hidden in dependance of Pad-Mode.
 
-[[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]
+[[/media/hardware/hercules-djconsole-rmx-2.png|]]
 
 ## General Functions
 

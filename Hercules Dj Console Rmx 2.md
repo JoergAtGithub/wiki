@@ -66,8 +66,8 @@ adjusting these will not change anything on screen in Mixxx:
 
 | Figure | \[**SHIFT**\]? | Long-press? | Control Name              | Description                           |
 | ------ | -------------- | ----------- | ------------------------- | ------------------------------------- |
-| 22     | \-             | \-          | \[**HEADPHONES VOLUME**\] | Controls the headphones output volume |
-| 6      | \-             | \-          | \[**MIC VOLUME**\]        | Controls the microphone volume (gain) |
+| 22     | ✘              | ✘           | \[**HEADPHONES VOLUME**\] | Controls the headphones output volume |
+| 6      | ✘              | ✘           | \[**MIC VOLUME**\]        | Controls the microphone volume (gain) |
 
 ## Deck Functions
 

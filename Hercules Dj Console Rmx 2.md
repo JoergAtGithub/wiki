@@ -131,3 +131,8 @@ adjusting these will not change anything on screen in Mixxx:
 | 24-2      | ✔              | ✘           | \[**CUE PAD 2**\]           | Hotcue 2 *HotcueButton* behavior of [components](components_js) lib                                                |
 | 24-3      | ✔              | ✘           | \[**CUE PAD 3**\]           | Hotcue 3 *HotcueButton* behavior of [components](components_js) lib                                                |
 | 24-4      | ✔              | ✘           | \[**CUE PAD 4**\]           | Hotcue 4 *HotcueButton* behavior of [components](components_js) lib                                                |
+| 1         | ✘              | ✘           | \[**JOG WHEEL**\]           | Jog/Scratch loaded track                                                                                           |
+| 1         | ✔              | ✘           | \[**JOG WHEEL**\]           | Jog/Scratch loaded track using *DJCRMX2.jogwheelShiftMultiplier* option                                            |
+| 10        | ✘              | ✘           | \[**GAIN**\]                | Controls pregain                                                                                                   |
+| 18/19     | ✘              | ✘           | \[**VOLUME FADER**\]        | Controls volume                                                                                                    |
+| 4         | ✘              | ✘           | \[**PITCH FADER**\]         | Controls rate (speed control)                                                                                      |

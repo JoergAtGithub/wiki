@@ -71,40 +71,7 @@ adjusting these will not change anything on screen in Mixxx:
 
 ## Deck Functions
 
-## Mapping
-
-1.  Jog wheel: Scratch when pressed, seek while paused, pitchbend while
-    playing
-2.  Fast-forward/rewind, with shift: jump to start/end
-3.  Pitch Bend -/+
-4.  Speed control, Tempo and pitch, depending on keylock 
-5.  Microphone jack
-6.  Microphone volume (controls the built in sound card, not software
-    microphone gain in Mixxx)
-7.  Enable/disable microphone (controls the built in sound card, not
-    microphone control in Mixxx)
-8.  Effect Super knob, with shift: Dry/Wet 
-9.  Source 1/2 unused 
-10. Gain
-11. Master Gain (controls software gain in Mixxx)
-12. EQ Kill
-13. Vinyl (unused)
-14. Mixing EQ
-15. Library navigation
-16. Load selected track to deck A/deck B
-17. Pre-fader listening (PFL) to deck A/deck B
-18. Volume meter
-19. Deck volume
-20. Crossfader
-21. Headphone mix
-22. Headphone volume (controls the built in sound card, not software
-    headphone gain in Mixxx)
-23. Headphone jack
-24. Multifunctional pads for loops, effects, samples, and hot-cues.
-    (pressure sensitivity unused)
-25. Multifunctional pads mode display (hardwired)
-26. Multifunctional pads mode selection (hardwired)
-27. Shift
-28. Sync enable
-29. Cue
-30. Play/pause
+| Figure | \[**SHIFT**\]? | Long-press? | Control Name      | Description                           |
+| ------ | -------------- | ----------- | ----------------- | ------------------------------------- |
+| 22     | \-             | \-          | HEADPHONES VOLUME | Controls the headphones output volume |
+| 6      | \-             | \-          | MIC VOLUME        | Controls the microphone volume (gain) |

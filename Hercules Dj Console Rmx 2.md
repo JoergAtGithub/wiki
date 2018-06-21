@@ -40,32 +40,22 @@ settings can be made:
 
 ### Managed by Mixxx
 
-| Group           | Figure     | \[**SHIFT**\]? | Button Name                   | Description                                                                                                         |
-| --------------- | ---------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 5 - BROWSER     | 2, 3, 4, 5 | \-             | \[**LOAD**\]                  | Loads the selected track into the specific deck                                                                     |
-| :::             | 2          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle BPM sync                                                                                            |
-| :::             | 3          | \[**SHIFT**\]  | \[**LOAD**\]                  | AutoDJ - Toggle Key sync                                                                                            |
-| :::             | 1          | \-             | \[**ROTARY SELECTOR**\]       | Move UP or DOWN the specified number of locations in Library (MoveVertical function)                                |
-| :::             | 1          | \-             | \[**ROTARY SELECTOR PRESS**\] | Equivalent to double clicking the currently selected item in Library (GoToItem function)                            |
-| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR**\]       | Move LEFT or RIGHT the specified number of locations in Library (MoveHorizontal function)                           |
-| :::             | 1          | \[**SHIFT**\]  | \[**ROTARY SELECTOR PRESS**\] | Add track from Library to AutoDJ queue at top/bottom (see user options: default = at bottom)                        |
-| :::             | 6          | \-             | \[**BACK**\]                  | Currently focused pane changes in Library - previously focused pane will be focused (MoveFocusBackward function)    |
-| :::             | 6          | \[**SHIFT**\]  | \[**BACK**\]                  | Maximize view of Library                                                                                            |
-| :::             | 7          | \-             | \[**LOAD PREPARE**\]          | Load selected track into PreviewDeck, jump to position (see user options) and play, else stop already playing track |
-| 3 - MIXER       | 1          | \-             | Crossfader                    | Controls Mixxx crossfader, fades between deck 1, 3 and 2, 4                                                         |
-| :::             | 2          | \-             | Channel fader                 | Controls deck volume                                                                                                |
-| :::             | 2          | \[**SHIFT**\]  | Channel fader                 | Fader start (starts playing deck when rising deck volume)                                                           |
-| :::             | 3          | \-             | TRIM                          | Controls deck gain                                                                                                  |
-| :::             | 4          | \-             | EQ HIGH                       | Controls deck's equalizer/filter high frequencies                                                                   |
-| :::             | 5          | \-             | EQ MID                        | Controls deck's equalizer/filter mid frequencies                                                                    |
-| :::             | 6          | \-             | EQ LOW                        | Controls deck's equalizer/filter low frequencies                                                                    |
-| :::             | 7          | \-             | \[**CUE**\]                   | Toggles PFL/Cue (headphones) for specific deck                                                                      |
-| :::             | 7          | \[**SHIFT**\]  | \[**CUE**\]                   | BPM Tab function for specific deck                                                                                  |
-| :::             | 9          | \[**SHIFT**\]  | \[**MASTER CUE**\]            | Toggles split cue (headphones)                                                                                      |
-| :::             | 10         | \-             | Crossfader Assign             | Crossfader assignment - deck to crossfader (left (A), right (B) or center (THRU))                                   |
-| :::             | 14         | \-             | SAMPLER VOLUME                | Controls volume of all available Sampler decks                                                                      |
-| 4 - FRONT PANEL | 1          | \-             | Crossfader curve              | Controls Mixxx crossfader curve                                                                                     |
-| 1 - DECK        | 25         | \-             | \[**PANEL SELECT**\]          | Show/hide Sampler decks / Effect rack                                                                               |
+| Figure     | \[**SHIFT**\]? | Long-press? | Control Name        | Description                                  |
+| ---------- | -------------- | ----------- | ------------------- | -------------------------------------------- |
+| 11         | ✘              | ✘           | \[**MAIN VOLUME**\] | Controls *Master* volume                     |
+| 13         | ✘              | ✘           | \[**VINYL**\]       | Split headcue                                |
+| 13         | ✔              | ✘           | \[**VINYL**\]       | Maximize library                             |
+| 20         | ✘              | ✘           | \[**CROSS FADER**\] | Controls crossfader                          |
+| 21         | ✘              | ✘           | \[**CUE TO MIX**\]  | Controls headmix                             |
+| 7          | ✘              | ✘           | \[**MIC ON/OFF**\]  | Toggle microphone on/off and talkover on/off |
+| 15 (Left)  | ✘              | ✘           | \[**FILES**\]       | Go To Item in Library                        |
+| 15 (Left)  | ✔              | ✘           | \[**FILES**\]       | Add to bottom of Auto DJ playlist            |
+| 15 (Right) | ✘              | ✘           | \[**FOLDERS**\]     | Move focus backward in Library               |
+| 15 (Right) | ✔              | ✘           | \[**FOLDERS**\]     | Toggle Auto DJ                               |
+| 15 (Up)    | ✘              | ✘           | \[**UP**\]          | Move vertically up in Library                |
+| 15 (Up)    | ✘              | ✔           | \[**UP**\]          | Scroll vertically up in Library              |
+| 15 (Down)  | ✘              | ✘           | \[**DOWN**\]        | Move vertically down in Library              |
+| 15 (Down)  | ✘              | ✔           | \[**DOWN**\]        | Scroll vertically down in Library            |
 
 ### Managed by the controller
 

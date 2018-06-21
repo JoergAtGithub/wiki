@@ -36,6 +36,8 @@ settings can be made:
   - **DJCRMX2.showHideSamplersEffectsOnPadMode**: If true, *Samplers*
     and *EffectRack* get shown or hidden in dependance of Pad-Mode.
 
+[[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]
+
 ## General Functions
 
 ### Managed by Mixxx
@@ -70,8 +72,6 @@ adjusting these will not change anything on screen in Mixxx:
 ## Deck Functions
 
 ## Mapping
-
-[[/media/hardware/hercules-djconsole-rmx-2.png|hercules-djconsole-rmx-2.png]]
 
 1.  Jog wheel: Scratch when pressed, seek while paused, pitchbend while
     playing

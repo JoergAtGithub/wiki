@@ -78,8 +78,8 @@ Once you know what data you want to send, simply call
 `controller.send()` with:
 
   - An array of data bytes to send,
-  - The number of bytes in the array (start counting at 1 or just use
-    the .length property as below,)
+  - null (the second parameter is required for backwards compatibility,
+    but it is actually ignored by Mixxx)
   - The HID report ID. If the controller only supports a single report
     packet, set this as 0.
 

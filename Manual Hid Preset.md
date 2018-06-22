@@ -80,8 +80,8 @@ Once you know what data you want to send, simply call
   - An array of data bytes to send,
   - The number of bytes in the array (start counting at 1 or just use
     the .length property as below,)
-  - (Optional) the HID report ID (0 by default.) Most controllers only
-    support a single report ID (of 0) so you can ignore this.
+  - The HID report ID. If the controller only supports a single report
+    packet, set this as 0.
 
 <!-- end list -->
 

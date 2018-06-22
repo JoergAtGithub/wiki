@@ -87,7 +87,7 @@ Once you know what data you want to send, simply call
 
 ``` javascript
 var byteArray = [ byte1, byte2, byte3, ..., byteN ];
-controller.send(byteArray,byteArray.length, reportID);
+controller.send(byteArray, null, reportID);
 ```
 
 ## XML file

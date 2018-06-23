@@ -195,8 +195,7 @@ using your normal unprivileged user account (press Ctrl + D or run
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release from our [downloads
 page](http://www.mixxx.org/download.php), or checkout a snapshot from
-our git repository: (See [Using Git](Using%20Git) for more details &
-options.)
+our git repository:
 
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
@@ -204,8 +203,8 @@ options.)
     https://github.com/mixxxdj/mixxx.git`
 
 To update to the latest version of a git branch, enter (`cd` into) the
-directory you cloned the git repository into and run `git pull`. See
-[Using Git](Using%20Git) for more details.
+directory you cloned the git repository into and run `git pull`. Refer
+to [Using Git](Using%20Git) for more details.
 
 ## Compile and install
 

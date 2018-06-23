@@ -255,11 +255,6 @@ If you want to play m4a files, add `faad=1` to your scons commands
 above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be
 installed.
 
-### Optional: Build with Qt4
-
-To build with Qt4 instead of Qt5, use the scons option `qt5=0`. Support
-for Qt4 will be dropped when it is no longer convenient to maintain.
-
 ### Optional: Compile with Clang
 
 [Clang](http://clang.llvm.org) is a C/C++ compiler based on

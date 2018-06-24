@@ -24,12 +24,12 @@ sound, either they all need to use JACK, or you can try using the
 "pulse" virtual ALSA device with Mixxx when running Mixxx on the command
 line without pasuspender. Refer to the Mixxx manual for more information
 about [sound
-APIs](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+APIs](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api).
 
 On Windows, the recommended ASIO sound API typically requires that only
 one program uses a sound card at a time. Refer to the Mixxx manual for
 more information about [sound
-APIs](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+APIs](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api).
 
 ## I can't select my sound card in the Sound Hardware preferences
 

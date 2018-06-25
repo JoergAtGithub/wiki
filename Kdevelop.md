@@ -107,5 +107,6 @@ the process.
     /usr/include/qt5/QtTest
     /usr/include/qt5/QtUiTools
     /usr/include/qt5/QtWebKit
+    /usr/include/qt5/QtWidgets
     /usr/include/qt5/QtXmlPatterns
     /usr/lib/scons/SCons

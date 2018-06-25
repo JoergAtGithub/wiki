@@ -52,8 +52,8 @@ these must be absolute paths, not relative to the project root.
 Copy and paste the list below into the Batch edit dialog, replacing
 `[MIXXX LOCATION]` with wherever you have your Mixxx source tree. The
 version numbers for the libraries in mixxx/lib are for those included
-with Mixxx 2.1. If they have been updated, please update this wiki page.
-The paths in /usr are for those on Fedora 25. They may need some
+with Mixxx 2.2. If they have been updated, please update this wiki page.
+The paths in /usr are for those on Fedora 27. They may need some
 adjustment for your distribution.
 
 When you are done, click Apply. KDevelop will parse the entire Mixxx

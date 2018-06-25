@@ -80,24 +80,5 @@ the process.
     /usr/include/taglib
     /usr/include/libupower-glib
     /usr/include/libusb-1.0
-    /usr/include/Qt
-    /usr/include/Qt3Support
-    /usr/include/QtCore
-    /usr/include/QtDBus
-    /usr/include/QtDeclarative
-    /usr/include/QtDesigner
-    /usr/include/QtGui
-    /usr/include/QtHelp
-    /usr/include/QtMultimedia
-    /usr/include/QtNetwork
-    /usr/include/QtOpenGL
-    /usr/include/QtScript
-    /usr/include/QtScriptTools
-    /usr/include/QtSql
-    /usr/include/QtSvg
-    /usr/include/QtXml
-    /usr/include/QtTest
-    /usr/include/QtUiTools
-    /usr/include/QtWebKit
-    /usr/include/QtXmlPatterns
+    /usr/include/qt5
     /usr/lib/scons/SCons

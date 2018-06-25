@@ -91,4 +91,21 @@ the process.
     /usr/include/libupower-glib
     /usr/include/libusb-1.0
     /usr/include/qt5
+    /usr/include/qt5/QtCore
+    /usr/include/qt5/QtDBus
+    /usr/include/qt5/QtDesigner
+    /usr/include/qt5/QtGui
+    /usr/include/qt5/QtHelp
+    /usr/include/qt5/QtMultimedia
+    /usr/include/qt5/QtNetwork
+    /usr/include/qt5/QtOpenGL
+    /usr/include/qt5/QtScript
+    /usr/include/qt5/QtScriptTools
+    /usr/include/qt5/QtSql
+    /usr/include/qt5/QtSvg
+    /usr/include/qt5/QtXml
+    /usr/include/qt5/QtTest
+    /usr/include/qt5/QtUiTools
+    /usr/include/qt5/QtWebKit
+    /usr/include/qt5/QtXmlPatterns
     /usr/lib/scons/SCons

@@ -22,7 +22,7 @@ Configuration.
 
 ## Configure SCons
 
-In the Custom BuildSystem pane, under the Build Tools section, type
+In the Custom Build System pane, under the Build Tools section, type
 `scons` in the Executable field and add your [scons
 arguments](compiling%20on%20linux#compile%20and%20install) to the
 Arguments field (this should at least include your prefix argument).
@@ -30,6 +30,16 @@ This will allow you to build Mixxx easily within KDevelop. Building
 within KDevelop allows you to click on compile errors and warnings to
 open the corresponding source code file at the place where the
 error/warning is pointing to.
+
+## Filter out redundant files
+
+scons keeps a cached build for every Git branch in the `cache`
+directory. Telling KDevelop's indexer to scan this is a waste of time.
+So, in the Project Filter pane, click the Add button and type "cache".
+Change the Target column to Folders instead of Files and Folders. If you
+are [using multile Git
+worktrees](Using%20Git#Working%20on%20mappings%20and%20skins%20separately%20from%20other%20changes),
+you may want to filter out those folders too.
 
 ## Specify \#include paths
 

@@ -55,9 +55,10 @@ previous version).
 
 ### Sixth week: June 18th to June 24th
 
-During this week I will start writing the interaction with Last.fm as
-well as deciding whether to use plugins, javascript or whatever for the
-service implementations.
+This week I refactored the metadata settings dialog, deleting the table
+view and moved the file settings to a new class. I added a work in
+progress concurrency for the file listener and I removed the factory and
+template method.
 
 ### Seventh week: June 25th to July 1st
 
@@ -147,5 +148,7 @@ week](http://lkese3ker.blogspot.com/2018/05/week-2-21st-may-27th-may.html)
 week](http://lkese3ker.blogspot.com/2018/06/week-3-28th-may-3rd-june.html)  
 [4th
 week](http://lkese3ker.blogspot.com/2018/06/week-4-4th-june-10th-june.html)  
-[5h
-week](https://lkese3ker.blogspot.com/2018/06/week-5-11th-june-17th-june.html)
+[5th
+week](https://lkese3ker.blogspot.com/2018/06/week-5-11th-june-17th-june.html)  
+[6th
+week](http://lkese3ker.blogspot.com/2018/06/week-6-june-18th-to-june-24th.html)

@@ -262,7 +262,7 @@ your Homebrew folder can be found. Copy and paste the code below into
     export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
     export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
     export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt5/%VERSION%/
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt/%VERSION%/
 
 then run `source ~/.bashrc`.
 
@@ -283,7 +283,7 @@ and install:
     scons bundle
 
 If you are compiling with Qt4, replace `qt5=1` with
-`qtdir=/usr/local/Cellar/qt\@4/4.8.7_3/`
+`qtdir=/usr/local/Cellar/qt@4/4.8.7_3/`
 
 This should generate `Mixxx.app` which you can run by double-clicking on
 or typing `open Mixxx.app`. Generating the .app has some expensive

@@ -273,7 +273,8 @@ $HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
 fixed in future versions of libopusfile.
 
 **QTDIR** will tell scons where to find your Qt installation. Replace
-%VERSION% with the folder name, e.g. 5.10.1
+%VERSION% with the folder name, e.g. 5.10.1 . Run `brew list --versions`
+to see what version(s) you have installed.
 
 Change to the newly created `mixxx` directory, and use scons to compile
 and install:
@@ -283,7 +284,8 @@ and install:
     scons bundle
 
 If you are compiling with Qt4, replace `qt5=1` with
-`qtdir=/usr/local/Cellar/qt@4/4.8.7_3/`
+`qtdir=/usr/local/Cellar/qt@4/%VERSION%/`. Replace %VERSION% with the
+folder name, e.g. 4.8.7\_5 .
 
 This should generate `Mixxx.app` which you can run by double-clicking on
 or typing `open Mixxx.app`. Generating the .app has some expensive

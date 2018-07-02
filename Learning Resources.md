@@ -70,6 +70,12 @@ equalizers.
   - **[Music DSP](http://www.musicdsp.org/)**. Site with a huge database
     of DSP code.
 
+<!-- end list -->
+
+  - **[The Art of VA Filter
+    Design](https://www.native-instruments.com/fileadmin/ni_media/downloads/pdf/VAFilterDesign_2.0.0a.pdf)**
+    by Vadim Zavalishin (Native Instruments)
+
 ## Software Engineering
 
   - [C++ in the Audio

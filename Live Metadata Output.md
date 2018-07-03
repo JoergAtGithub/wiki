@@ -62,7 +62,8 @@ template method.
 
 ### Seventh week: June 25th to July 1st
 
-This week I will continue writing the interaction with Last.fm.
+This week I refactored the file listener class to use a dedicated thread
+and started implementing the ListenBrainz API interaction.
 
 ### Eighth week: July 2nd to July 8th
 

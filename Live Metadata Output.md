@@ -102,8 +102,8 @@ of a scrobbler in the form of a txt file.
 
 ### Second deadline: 9th July
 
-For this deadline, I will have the full interaction with Last.fm
-scrobbler. Including the option added to the broadcast, the
+For this deadline, I will have the full interaction with the
+ListenBrainz API. Including the option added to the preferences, the
 authentication process and the uploading of the scrobbles. As well as
 solving any bugs that come up.
 

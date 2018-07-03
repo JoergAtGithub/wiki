@@ -110,8 +110,7 @@ solving any bugs that come up.
 ### Third deadline: 6th August
 
 For this date, I will have finished the interaction with the MPRIS
-interface, and if I have time I will implement a ListenBrainz
-interaction.
+interface, and if I have time I will implement a Last.fm interaction.
 
 ## Project outline
 

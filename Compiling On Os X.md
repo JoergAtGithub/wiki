@@ -238,17 +238,8 @@ You will need to install the following by hand for the compile process:
 If you want to compile Mixxx, you'll need to download the source code.
 Either grab the source for the latest release off our [downloads
 page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
-code from our git repository:
-
-    git clone https://github.com/mixxxdj/mixxx.git 
-    
-    git checkout master (for latest trunk)
-    git checkout release-2.0.0 -b release-2.0.0 (for current stable)
-
-If you wanted to update later to a newer git snapshot, you would go back
-to the mixxx directory and run:
-
-    git pull
+code from our Git repository. Refer to [Using Git](Using%20Git) for more
+details.
 
 ## 4\. Compile and install
 

@@ -246,7 +246,7 @@ details.
 If you used Homebrew, you need to set your compiler paths accordingly.
 In the below code you should customize `HOMEBREW_PATH` to the path where
 your Homebrew folder can be found. Copy and paste the code below into
-\~/.bashrc:
+\~/.bash\_profile:
 
     HOMEBREW_PATH=/usr/local
     # See the note below about the Opus workaround.
@@ -255,7 +255,7 @@ your Homebrew folder can be found. Copy and paste the code below into
     export LDFLAGS=-L$HOMEBREW_PATH/lib
     export QTDIR=$HOMEBREW_PATH/Cellar/qt/%VERSION%/
 
-then run `source ~/.bashrc`.
+then run `source ~/.bash_profile`.
 
 **Opus Workaround:** The version of libopus included with Homebrew has a
 bug where opusfile.h includes the file opus\_multistream.h. In order for

@@ -14,7 +14,7 @@ apps can receive this info.
 
 ## Proposed schedule
 
-Modified as of 3/07/2018.
+Modified as of 9/07/2018.
 
 ### First week: May 14th to May 20th
 

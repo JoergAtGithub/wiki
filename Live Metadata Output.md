@@ -153,4 +153,6 @@ week](https://lkese3ker.blogspot.com/2018/06/week-5-11th-june-17th-june.html)
 [6th
 week](http://lkese3ker.blogspot.com/2018/06/week-6-june-18th-to-june-24th.html)  
 [7th
-week](http://lkese3ker.blogspot.com/2018/07/week-7-25th-june-1st-july.html)
+week](http://lkese3ker.blogspot.com/2018/07/week-7-25th-june-1st-july.html)  
+[8th
+week](http://lkese3ker.blogspot.com/2018/07/week-8-2nd-july-8th-july.html)

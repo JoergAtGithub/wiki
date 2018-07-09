@@ -67,10 +67,8 @@ and started implementing the ListenBrainz API interaction.
 
 ### Eighth week: July 2nd to July 8th
 
-During this week I will wrap up the interaction, solving any bugs,
-errors or obstacles that will come up. If I have finished early I will
-start the MPRIS interaction by looking at [this github
-branch](https://github.com/daschuer/mixxx/tree/mpris) for ideas.
+This week I finished the ListenBrainz interaction and fixed the metadata
+preferences tab.
 
 ### Ninth week: July 9th to July 15th
 

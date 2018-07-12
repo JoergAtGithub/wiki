@@ -90,7 +90,7 @@ var byteArray = [ byte1, byte2, byte3, ..., byteN ];
 controller.send(byteArray, null, reportID);
 ```
 
-#### Cross platform compability
+#### Cross platform compatibility
 
 Due to system specific implementation differences of hidapi the first
 byte of the data should always be sent as the `reportID` parameter and

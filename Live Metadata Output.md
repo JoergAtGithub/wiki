@@ -72,10 +72,8 @@ preferences tab.
 
 ### Ninth week: July 9th to July 15th
 
-During this week I will start implementing the MPRIS interface. If I
-haven't looked at the github branch for ideas I will in this week. I
-will also talk to the devs to see what ideas they have since I'm told
-this is a somewhat popular request. I will use QDBus for this.
+This week I started implementing the MPRIS interface. It took a while
+because Qt's DBus implementation is incomplete and I didn't realize.
 
 ### Tenth week: July 16th to July 22nd
 

@@ -14,7 +14,7 @@ apps can receive this info.
 
 ## Proposed schedule
 
-Modified as of 9/07/2018.
+Modified as of 16/07/2018.
 
 ### First week: May 14th to May 20th
 
@@ -151,4 +151,6 @@ week](http://lkese3ker.blogspot.com/2018/06/week-6-june-18th-to-june-24th.html)
 [7th
 week](http://lkese3ker.blogspot.com/2018/07/week-7-25th-june-1st-july.html)  
 [8th
-week](http://lkese3ker.blogspot.com/2018/07/week-8-2nd-july-8th-july.html)
+week](http://lkese3ker.blogspot.com/2018/07/week-8-2nd-july-8th-july.html)  
+[9th
+week](http://lkese3ker.blogspot.com/2018/07/week-9-9th-july-15th-july.html)

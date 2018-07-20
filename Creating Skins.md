@@ -2774,13 +2774,19 @@ Example definition:
       }
       QProgressBar {
         background-color: #202020;
+        <!-- You can also use an image instead. To avoid blur, size it according to data below -->
+        background: url(skin:/style/progressbar_bg.svg);
         border:none;
         min-width: 208px;
         min-height: 3px;
         max-width: 208px;
         max-height: 3px;
       }
-      QProgressBar::chunk { background-color: #ec4522; }
+      QProgressBar::chunk {
+        background-color: #ec4522;
+        <!-- You can also use an image instead. To avoid blur, size it like the QProgressBar -->
+        background: url(skin:/style/progressbar.svg);
+      }
     </LaunchImageStyle>
 
 ### Battery

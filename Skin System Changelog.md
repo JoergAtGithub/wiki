@@ -3,6 +3,7 @@
 ## Mixxx 2.1.0
 
 ``` 
+ * Display [[creating_skins#skin_preview_image|skin preview screenshots]] in Preferences -> Interface [[https://github.com/mixxxdj/mixxx/pull/1525|pull#1525]]
  * Added support for platform-dependent [[creating_skins#qss_style|skin styling]]. [[https://github.com/mixxxdj/mixxx/pull/1590|pull#1590]]
  * Added [[creating_skins#recording_duration|<RecordingDuration>]] widget that Displays the duration of the running recording.[[https://github.com/mixxxdj/mixxx/pull/1221|pull#1221]],  [[https://github.com/mixxxdj/mixxx/pull/1398|pull#1398]]
  * Added ''PlayedOverlayColor'' to [[creating_skins#waveform_overview|<Overview>]] that makes the overview-waveform darker for the played portion of the track. Support ARGB for ''PlayedOverlayColor'', ''AxesColor'', ''PlayPosColor'', and ''BgColor'' [[https://github.com/mixxxdj/mixxx/pull/1203|pull#1203]]

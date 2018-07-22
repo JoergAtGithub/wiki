@@ -2748,6 +2748,19 @@ group gets a show event, the Singleton widget is reparented to this
 location in the skin. Note that if a Singleton is visible twice at the
 same time, behavior is undefined and could be crashy.
 
+### Skin Preview Image
+
+New in Mixxx 2.1.0
+
+To provide users a rough impression of what skins look like before they
+switch to a different skin, show a preview screenshot when a skin is
+selected with the combobox in `Preferences --> Interfaces --> Skin`.
+
+The screenshoot should show skins in their default configuration. Save
+as `preferences_preview_screenshot.png` in the root folder of the
+corresponding skin. Is no screenshoot provided, a placeholder is
+displayed.
+
 ### Launch Image
 
 New in Mixxx 2.00.0

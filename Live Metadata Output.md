@@ -77,7 +77,8 @@ because Qt's DBus implementation is incomplete and I didn't realize.
 
 ### Tenth week: July 16th to July 22nd
 
-During this week I will continue implementing the MPRIS interface.
+This week I wrote a dedicated class to implement the MPRIS
+MediaPlayer2Player logic.
 
 ### Eleventh week: July 23rd to July 29th
 

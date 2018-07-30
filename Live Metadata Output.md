@@ -82,8 +82,7 @@ MediaPlayer2Player logic.
 
 ### Eleventh week: July 23rd to July 29th
 
-During this week I expect to have finished with the MPRIS interface as
-well as test how it interacts with other programs.
+This week I finished the MPRIS implementation.
 
 ### Twelfth week: July 30th to August 5th
 

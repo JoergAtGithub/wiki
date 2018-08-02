@@ -612,14 +612,13 @@ regardless of whether the controller is manipulated or something changes
 in Mixxx. Timed reactions let you do just that with 20ms resolution.
 Here are the functions:
 
-  - **engine.beginTimer**(*milliseconds*, `"function"`, *one-shot*) -
-    Starts a timer that will call the specified script function (with
-    parameters if desired) repeatedly every time (if *one-shot* is false
-    or not present) or just once (if *one-shot* is true) the given
-    number of milliseconds (1/1000 second) pass. It returns an ID number
-    for the timer (0 on failure) that you'll want to store in a variable
-    so you can stop it later if it's a repeating timer. Note that the
-    function must be enclosed in quotes.
+  - **engine.beginTimer**(*milliseconds*, *function*, *one-shot*) -
+    Starts a timer that will call the specified script function
+    repeatedly every time (if *one-shot* is false or not present) or
+    just once (if *one-shot* is true) the given number of milliseconds
+    (1/1000 second) pass. It returns an ID number for the timer (0 on
+    failure) that you'll want to store in a variable so you can stop it
+    later if it's a repeating timer.
   - **engine.stopTimer**(*timer ID*) - Stops the specified timer.
 
 You can create and stop timers as much as you like but be aware that the

@@ -618,8 +618,18 @@ Here are the functions:
     just once (if *one-shot* is true) the given number of milliseconds
     (1/1000 second) pass. It returns an ID number for the timer (0 on
     failure) that you'll want to store in a variable so you can stop it
-    later if it's a repeating timer.
+    later if it's a repeating timer. When the function is executed
+    `this` is set to whatever `this` was where `engine.beginTimer` was
+    called.
   - **engine.stopTimer**(*timer ID*) - Stops the specified timer.
+
+If you need to pass arguments to a function used with
+`engine.beginTimer`, wrap the function call in an anonymous function
+expression, for example:
+
+    engine.beginTimer(250, function() {
+        someFunctionToExecute(parameter1, parameter2, parameter3);
+    });
 
 You can create and stop timers as much as you like but be aware that the
 operating system has limits on the number of timers it will allow, so

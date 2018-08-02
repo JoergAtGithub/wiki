@@ -42,22 +42,22 @@ settings can be made:
 
 ### Managed by Mixxx
 
-| Figure     | \[**SHIFT**\]? | Long-press? | Control Name        | Description                                  |
-| ---------- | -------------- | ----------- | ------------------- | -------------------------------------------- |
-| 11         | ✘              | ✘           | \[**MAIN VOLUME**\] | Controls *Master* volume                     |
-| 13         | ✘              | ✘           | \[**VINYL**\]       | Split headcue                                |
-| 13         | ✔              | ✘           | \[**VINYL**\]       | Maximize library                             |
-| 20         | ✘              | ✘           | \[**CROSS FADER**\] | Controls crossfader                          |
-| 21         | ✘              | ✘           | \[**CUE TO MIX**\]  | Controls headmix                             |
-| 7          | ✘              | ✘           | \[**MIC ON/OFF**\]  | Toggle microphone on/off and talkover on/off |
-| 15 (Left)  | ✘              | ✘           | \[**FILES**\]       | Go To Item in Library                        |
-| 15 (Left)  | ✔              | ✘           | \[**FILES**\]       | Add to bottom of Auto DJ playlist            |
-| 15 (Right) | ✘              | ✘           | \[**FOLDERS**\]     | Move focus backward in Library               |
-| 15 (Right) | ✔              | ✘           | \[**FOLDERS**\]     | Toggle Auto DJ                               |
-| 15 (Up)    | ✘              | ✘           | \[**UP**\]          | Move vertically up in Library                |
-| 15 (Up)    | ✘              | ✔           | \[**UP**\]          | Scroll vertically up in Library              |
-| 15 (Down)  | ✘              | ✘           | \[**DOWN**\]        | Move vertically down in Library              |
-| 15 (Down)  | ✘              | ✔           | \[**DOWN**\]        | Scroll vertically down in Library            |
+| Figure     | \[**SHIFT**\]? | Long-press? | Control Name        | Description                                              |
+| ---------- | -------------- | ----------- | ------------------- | -------------------------------------------------------- |
+| 11         | ✘              | ✘           | \[**MAIN VOLUME**\] | Controls *Master* volume                                 |
+| 13         | ✘              | ✘           | \[**VINYL**\]       | Split headcue                                            |
+| 13         | ✔              | ✘           | \[**VINYL**\]       | Maximize library                                         |
+| 20         | ✘              | ✘           | \[**CROSS FADER**\] | Controls crossfader                                      |
+| 21         | ✘              | ✘           | \[**CUE TO MIX**\]  | Controls mix in headphones between PFL and master signal |
+| 7          | ✘              | ✘           | \[**MIC ON/OFF**\]  | Toggle microphone on/off and talkover on/off             |
+| 15 (Left)  | ✘              | ✘           | \[**FILES**\]       | Go To Item in Library                                    |
+| 15 (Left)  | ✔              | ✘           | \[**FILES**\]       | Add to bottom of Auto DJ playlist                        |
+| 15 (Right) | ✘              | ✘           | \[**FOLDERS**\]     | Move focus backward in Library                           |
+| 15 (Right) | ✔              | ✘           | \[**FOLDERS**\]     | Toggle Auto DJ                                           |
+| 15 (Up)    | ✘              | ✘           | \[**UP**\]          | Move vertically up in Library                            |
+| 15 (Up)    | ✘              | ✔           | \[**UP**\]          | Scroll vertically up in Library                          |
+| 15 (Down)  | ✘              | ✘           | \[**DOWN**\]        | Move vertically down in Library                          |
+| 15 (Down)  | ✘              | ✔           | \[**DOWN**\]        | Scroll vertically down in Library                        |
 
 ### Managed by the controller
 

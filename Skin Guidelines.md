@@ -117,13 +117,13 @@ height**)
 | Netbook          | 1024  | 600    | \=              | 1008  | 500    |
 | XGA – standard   | 1024  | 768    | \=              | 1008  | 668    |
 | WXGA – wide      | 1280  | 800    | \=              | 1264  | 700    |
-| WXGA (HD ready)  | 1366  | 768    | \=              |       | 668    |
+| WXGA (HD ready)  | 1366  | 768    | \=              | 1302  | 668    |
 | WXGA+ - wide     | 1440  | 900    | \=              | 1424  | 800    |
 | SXGA – standard  | 1280  | 1024   | \=              | 1264  | 924    |
 | SXGA+ - standard | 1400  | 1050   | \=              | 1384  | 950    |
 | WSXGA+ - wide    | 1680  | 1050   | \=              | 1664  | 950    |
 | UXGA – standard  | 1600  | 1200   | \=              | 1584  | 1100   |
-| 1080p (Full HD)  | 1920  | 1080   | \=              |       | 980    |
+| 1080p (Full HD)  | 1920  | 1080   | \=              | 1865  | 980    |
 | WUXGA – wide     | 1920  | 1200   | \=              | 1904  | 1100   |
 
 **The overall size of a skin is defined by the size of its [background

@@ -86,19 +86,20 @@ Default window decoration for various Operating Systems
 
 Default window decoration for various Operating Systems
 
-|                            |        |         |        |        |        |
-| -------------------------- | ------ | ------- | ------ | ------ | ------ |
-|                            | MacOSX | Gnome   | KDE    | WinXP  | Win7   |
-| Taskbar Top                | 22     | 25      | 0      | 0      | 0      |
-| Window Titlebar            | 22     | 22      | 24     | 22     | 30     |
-| Window decoration Top      | 0      | 25      | 24     | 20     | 22     |
-| Window decoration Bottom   | 0      | 3       | 8      | 4      | 8      |
-| Taskbar Bottom             | 0      | 25      | 30     | 30     | 30     |
-| **Vertical decorations**   | **44** | **100** | **86** | **76** | **90** |
-|                            |        |         |        |        |        |
-| Window decoration left     | 0      | 3       | 4      | 4      | 8      |
-| Window decoration right    | 0      | 3       | 4      | 4      | 8      |
-| **Horizontal decorations** | **0**  | **6**   | **8**  | **8**  | **16** |
+|                            |        |         |        |        |        |        |
+| -------------------------- | ------ | ------- | ------ | ------ | ------ | ------ |
+|                            | MacOSX | Gnome   | KDE    | Unity  | WinXP  | Win7   |
+| Taskbar Top                | 22     | 25      | 0      | 24     | 0      | 0      |
+| TaskbarLeft                |        |         |        | 64     |        |        |
+| Window Titlebar            | 22     | 22      | 24     | 28     | 22     | 30     |
+| Window decoration Top      | 0      | 25      | 24     | 0      | 20     | 22     |
+| Window decoration Bottom   | 0      | 3       | 8      | 0      | 4      | 8      |
+| Taskbar Bottom             | 0      | 25      | 30     | 0      | 30     | 30     |
+| **Vertical decorations**   | **44** | **100** | **86** | **52** | **76** | **90** |
+|                            |        |         |        |        |        |        |
+| Window decoration left     | 0      | 3       | 4      | 0      | 4      | 8      |
+| Window decoration right    | 0      | 3       | 4      | 0      | 4      | 8      |
+| **Horizontal decorations** | **0**  | **6**   | **8**  | **64** | **8**  | **16** |
 
 Note: If a window in Win7 is maximized the horizontal decoration is only
 2\*4 instead 2\*8 pixel.

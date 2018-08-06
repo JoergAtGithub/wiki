@@ -157,4 +157,6 @@ week](http://lkese3ker.blogspot.com/2018/07/week-9-9th-july-15th-july.html)
 [10th
 week](http://lkese3ker.blogspot.com/2018/07/week-10-23th-july-29th-july.html)  
 [11th
-week](http://lkese3ker.blogspot.com/2018/07/week-11th-23th-july-29th-july.html)
+week](http://lkese3ker.blogspot.com/2018/07/week-11th-23th-july-29th-july.html)  
+[12th
+week](http://lkese3ker.blogspot.com/2018/08/week-12th-30th-july-5th-august.html)

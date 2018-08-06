@@ -134,6 +134,10 @@ For the "now listening" signal (i.e much less restrictive than the full
 listen), every second the track with the most overall volume is the one
 selected.
 
+## Github code
+
+<https://github.com/mixxxdj/mixxx/pull/1675>
+
 ## Weekly blog
 
 [1st

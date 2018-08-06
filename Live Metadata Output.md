@@ -86,8 +86,8 @@ This week I finished the MPRIS implementation.
 
 ### Twelfth week: July 30th to August 5th
 
-This week will be dedicated to wrap up the MPRIS interface as well as
-solve any bugs or problems that come up.
+This week I refactored the code to meet some propositions on github as
+well as simplifying implementations and changing UIs.
 
 ## Proposed deadline goals
 

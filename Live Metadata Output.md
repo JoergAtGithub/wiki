@@ -39,7 +39,7 @@ API scrobbler but I didn't have the time.
 
 Modified as of 16/07/2018.
 
-### First week: May 14th to May 20th
+#### First week: May 14th to May 20th
 
 During this week I added the necessary signals to track when a track is
 paused, resumed, loaded and unloaded. I also created some timers to

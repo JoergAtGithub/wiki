@@ -631,6 +631,10 @@ expression, for example:
         someFunctionToExecute(parameter1, parameter2, parameter3);
     });
 
+Note that within the function expression, you can access variables from
+the surrounding scope because [JavaScript functions create
+closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+
 You can create and stop timers as much as you like but be aware that the
 operating system has limits on the number of timers it will allow, so
 remember to stop them as soon as you're done with them. (Not to mention

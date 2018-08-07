@@ -41,7 +41,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
 
 If you are building the master Git branch, run:
 
-    sudo apt-get install qt5-default libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
+    sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
 
 If you are building Mixxx 2.1, run:
 

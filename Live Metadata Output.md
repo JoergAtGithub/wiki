@@ -2,19 +2,38 @@
 
 Author: David Hernández (davidhm)
 
-Email: david.hm.1994@gmail.com
+Email: <david.hm.1994@gmail.com>
+
+## GSoC 2018 recap
+
+Working in this community has been a lot of fun. It has given me
+valuable experience in coding on collaborative projects. Previously,
+almost all my work has been individual or with a group of 4/5 students,
+but it has never been of this scale. I've learned about the way open
+source projects work, with pull requests, code review, bug tracking,
+etc. and I've deepened my knowledge of C++ and the Qt framework. I've
+also learned that IDEs are invaluable when it comes to handling this
+scale of code otherwise it becomes cumbersome to navigate and read the
+necessary code.
+
+I thank my mentor @daschuer for his help, especially for his comments on
+the code and the patience to deal with my schedule issues. Overall, it's
+been an intense project, but a rewarding one. Coding is always fun, but
+it is yet more fun when you see the (hopefully correct) results of your
+code.
+
+## Original proposal
 
 In this project I will write the code foundation that will broadcast the
 tracks currently being played in the Mixxx app to various services
 (online or not) dedicated to compile this information and display it for
 everyone. First I will implement a proof-of-concept text file displaying
-the current track. Then I will work on a [Last.fm
-scrobbler](https://www.last.fm/home). Afterwards, I will write a
-[Listenbrainz listener](https://listenbrainz.org/). And lastly, if I
-have time, I will make a [MPRIS
+the current track. Then I will work on a [Listenbrainz
+listener](https://listenbrainz.org/). Afterwards, I will make a [MPRIS
 broadcaster](https://specifications.freedesktop.org/mpris-spec/latest/)
 with [QtDbus](http://doc.qt.io/qt-5/qtdbus-index.html) so that other
-apps can receive this info.
+apps can receive this info. I originally intended to include a Last.fm
+API scrobbler but I didn't have the time.
 
 ## Proposed schedule
 

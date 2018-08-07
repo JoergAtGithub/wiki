@@ -47,7 +47,7 @@ count the played time, necessary to know when a track is scrobbable. I
 wrote some tests for the Track object, which was intended to hold this
 information.
 
-### Second week: May 21st to May 27th
+#### Second week: May 21st to May 27th
 
 During this week I moved all the metadata management to a separate
 class, instead of the Player Manager, moved the timers away from the
@@ -56,12 +56,12 @@ take into account besides whether if a track is being played or not and
 redid the implementation of the timer to use GuiTick50ms as I was told
 the waveforms conflict with the use of QTimer's timeout signal.
 
-### Third week: May 28th to June 3rd
+#### Third week: May 28th to June 3rd
 
 This week I finished the scrobbling manager and wrote some automatic
 tests for it. I also started working on the file listener.
 
-### Fourth week: June 4th to June 10th
+#### Fourth week: June 4th to June 10th
 
 This week I refactored the file listener into a factory and template to
 accommodate for the various file formats admitted by the broadcasting
@@ -69,45 +69,45 @@ APPS. I also refactored the scrobbling manager to allow for dependency
 injection and changed the isTrackAudible function into a strategy
 pattern.
 
-### Fifth week: June 11th to June 17th
+#### Fifth week: June 11th to June 17th
 
 I've decided to start with the user settings before programming the API
 client that will interact with Last.fm. I wrote a new tab in the user
 settings and refactored the file listener so it uses those settings (a
 previous version).
 
-### Sixth week: June 18th to June 24th
+#### Sixth week: June 18th to June 24th
 
 This week I refactored the metadata settings dialog, deleting the table
 view and moved the file settings to a new class. I added a work in
 progress concurrency for the file listener and I removed the factory and
 template method.
 
-### Seventh week: June 25th to July 1st
+#### Seventh week: June 25th to July 1st
 
 This week I refactored the file listener class to use a dedicated thread
 and started implementing the ListenBrainz API interaction.
 
-### Eighth week: July 2nd to July 8th
+#### Eighth week: July 2nd to July 8th
 
 This week I finished the ListenBrainz interaction and fixed the metadata
 preferences tab.
 
-### Ninth week: July 9th to July 15th
+#### Ninth week: July 9th to July 15th
 
 This week I started implementing the MPRIS interface. It took a while
 because Qt's DBus implementation is incomplete and I didn't realize.
 
-### Tenth week: July 16th to July 22nd
+#### Tenth week: July 16th to July 22nd
 
 This week I wrote a dedicated class to implement the MPRIS
 MediaPlayer2Player logic.
 
-### Eleventh week: July 23rd to July 29th
+#### Eleventh week: July 23rd to July 29th
 
 This week I finished the MPRIS implementation.
 
-### Twelfth week: July 30th to August 5th
+#### Twelfth week: July 30th to August 5th
 
 This week I refactored the code to meet some propositions on github as
 well as simplifying implementations and changing UIs.

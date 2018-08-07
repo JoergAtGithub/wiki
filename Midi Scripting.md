@@ -647,6 +647,13 @@ can cause Mixxx to stutter.) **Always use a timer instead\!**
 See the [script timers](script%20timers) page for more details on best
 practices for using timers.
 
+Old controller scripts used strings that evaluate to functions instead
+of actual functions as an argument to `engine.beginTimer`. This
+functionality is kept for backwards compatibility, but it is deprecated
+because it violates JavaScript convention. Passing a function as an
+argument to `engine.beginTimer` is preferred for all new controller
+scripts.
+
 ## Spinback, brake and soft start effect
 
 A forwards or backwards brake effect can be enabled/disabled using

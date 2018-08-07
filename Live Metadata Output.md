@@ -1,5 +1,9 @@
 # Live metadata output
 
+Author: David Hernández (davidhm)
+
+Email: david.hm.1994@gmail.com
+
 In this project I will write the code foundation that will broadcast the
 tracks currently being played in the Mixxx app to various services
 (online or not) dedicated to compile this information and display it for

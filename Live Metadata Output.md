@@ -22,6 +22,24 @@ been an intense project, but a rewarding one. Coding is always fun, but
 it is yet more fun when you see the (hopefully correct) results of your
 code.
 
+### Work done
+
+Further below the original proposal with the full details of the project
+is found. The whole code is in the following github pull request:
+
+<https://github.com/mixxxdj/mixxx/pull/1675>
+
+In hindsight, perhaps the pull request should have been split in several
+PRs to keep comments and reviews of the code focused on only one topic.
+
+### Future work
+
+Clearly, one of the things that remains to be done is the Last.fm API,
+which I will finish when I find the time. Beyond that, perhaps what
+needs to be done is further testing with more broadcasting products
+suggested in <https://bugs.launchpad.net/mixxx/+bug/1775095> and mantain
+the code generated.
+
 ## Original proposal
 
 In this project I will write the code foundation that will broadcast the
@@ -156,10 +174,6 @@ and faders).
 For the "now listening" signal (i.e much less restrictive than the full
 listen), every second the track with the most overall volume is the one
 selected.
-
-## Github code
-
-<https://github.com/mixxxdj/mixxx/pull/1675>
 
 ## Weekly blog
 

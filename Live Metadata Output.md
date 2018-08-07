@@ -35,7 +35,7 @@ with [QtDbus](http://doc.qt.io/qt-5/qtdbus-index.html) so that other
 apps can receive this info. I originally intended to include a Last.fm
 API scrobbler but I didn't have the time.
 
-## Proposed schedule
+### Proposed schedule
 
 Modified as of 16/07/2018.
 

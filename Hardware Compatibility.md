@@ -322,6 +322,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2017</td>
 </tr>
+<tr class="even">
+<td><a href="DJ Tech Tools MIDI Fighter Twister">DJ Tech Tools MIDI Fighter Twister</a></td>
+<td>$200</td>
+<td>2 deck controller</td>
+<td>no</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2015</td>
+</tr>
 </tbody>
 </table>
 

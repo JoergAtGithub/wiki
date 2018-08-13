@@ -6,6 +6,39 @@
 
 *mentor: Be*
 
+## GSoC 2018 recap
+
+It has been a great experience to work with Mixxx for this summer. I
+learned a lot through the summer. I focused mostly on the
+maintainability of code during the entire summer, from a clean git
+history to a better architecture. It helped me sharpen my programming
+skills and also made me more confident to work with C++ and the Qt
+framework.
+
+I give a special thanks to my mentor *Be* for all the code reviews,
+discussions and all the help during the summer.
+
+### Work done
+
+The work done during the summer can be found in the following pull
+requests:
+
+  - [Effect Blacklisting PR](https://github.com/mixxxdj/mixxx/pull/1674)
+
+<!-- end list -->
+
+  - [Effects Refactoring PR](https://github.com/mixxxdj/mixxx/pull/1705)
+
+### Future work
+
+The GUI for effect parameters and importing/exporting effect chains is
+yet to be implemented. The new naming of classes is also not finalized,
+and requires more discussions with the community. I aim to complete them
+before release 2.2.0 so that it is thoroughly tested before release
+2.3.0
+
+## Original proposal
+
 ### Abstract
 
 This project focuses on the effects section of Mixxx. I will be
@@ -155,32 +188,28 @@ Here is a sketch for a new effectrackpreset.h file:
         QList<EffectPreset> m_effectPresets;
     };
 
-### Proposed Timeline
+## Proposed Timeline
+
+Some changes were made to the proposed timeline:
+
+  - Effect Parameter Hiding and Rearrangement was implemented before
+    working on importing/exporting effect chains because the order also
+    needs to be stored.
 
 ##### Week 1 (May 14 - May 20)
 
-\<del\>During this week, I'll be working on effect blacklisting for LV2
+During this week, I'll be working on effect blacklisting for LV2
 effects. I will also start working on connecting EngineEffect\* and the
 Effect\* classes if I have enough time at the end of the week.
 
 I will be able to work during nights or early mornings during this week
 because I have a workshop scheduled from May 15th to May 30th during the
-days.\</del\>
-
-I was able to add the blacklisting feature by the end of the week. A
-little work was required to be done on top of it.
+days.
 
 ##### Week 2 (May 21 - May 27)
 
-~~I aim to finish connecting EngineEffect\* classes to their
-corresponding Effect\* classes during this week.~~
-
-I spent time working on the blacklisting feature only. Due to a workshop
-scheduled in college, I couldn't find much time during the weekdays. A
-few segmentation faults took a lot of time during development.
-
-Got the Effect Blacklisting branch
-[merged](https://github.com/mixxxdj/mixxx/pull/1674)\!
+I aim to finish connecting EngineEffect\* classes to their corresponding
+Effect\* classes during this week.
 
 ##### Week 3-6 (May 28 - June 24)
 
@@ -213,13 +242,93 @@ programmatically.
 I will implement any missed out functionality in these weeks and write
 the final documentation in this period.
 
-#### Proposed Deadlines
+## Weekly Blog
 
-##### May 21
+##### Week 1
 
-Finish working on LV2 effects branch with effect blacklisting.
-([Merged](https://github.com/mixxxdj/mixxx/pull/1674))
+I was able to add the blacklisting feature by the end of the week. A
+little work was required to be done on top of it.
 
-##### June 25
+##### Week 2
 
-Finish working on the new effects architecture.
+I spent time working on the blacklisting feature only. Due to a workshop
+scheduled in college, I couldn't find much time during the weekdays. A
+few segmentation faults took a lot of time during development. The plan
+for effect refactoring was also discussed thoroughly towards the end of
+the week.
+
+Got the Effect Blacklisting branch
+[merged](https://github.com/mixxxdj/mixxx/pull/1674)\!
+
+##### Week 3
+
+During this week, We came up with the plan to keep *Preset* classes. I
+worked on consolidating the highly convoluted EffectChain and
+EffectChainSlot classes. After going through numerous segfaults, I was
+able to push changes.
+
+##### Week 4
+
+The Effect was not being added to the engine properly and hence I fixed
+those issues during the week and made changes in accordance with the
+code reviews. We also came up with the new naming of classes, and had
+discussions regarding the same with the community.
+
+##### Week 5
+
+I successfully removed the EffectChainManager and the EngineEffectRack
+layer in the engine in this week and had discussions on removing the
+EffectRack layer.
+
+##### Week 6
+
+I worked on removing the superfluous EffectRack layer. I faced many
+cyclic dependency issues and learned to deal with them after the removal
+of EffectChainManager layer which acted as an interface over
+EffectChainSlot class.
+
+##### Week 7
+
+I was a little busy in presentations at my college and hence could take
+out less time to work on my project. I successfully managed to remove
+the EffectRack layer and get the software working without any errors. I
+parallelly started working on importing/exporting chains, which I pushed
+on a different branch which can be merged onto the effects\_refactoring
+branch once everything else is done.
+
+##### Week 8
+
+We discussed on refactoring EffectInstantiator which was tightly coupled
+with the loading of effects. I worked on consolidating Effect and
+EffectSlot classes and implemented a new flow for loading effects into
+slots.
+
+##### Week 9
+
+I successfully consolidated Effect and EffectSlot classes during this
+week in accordance with the code reviews. I also faced numerous issues
+with upgrading Qt.
+
+##### Week 10
+
+I removed the EffectParameter class abstraction over
+EffectManifestParameter. I also changed the way assertions were
+implemented for EffectParameters to ensure valid ranges. I also worked
+on renaming various classes in the entire codebase.
+
+##### Week 11
+
+After long discussions, We decided to reimplement the EffectParameter
+class. I worked reimplementing the EffectParameter class to be
+compatible with effect parameter hiding and rearrangement. Also, I
+worked on renaming the classes(EffectKnobParameter classes) again.
+
+##### Week 12
+
+I implemented effect parameter hiding and re-arrangement without
+reloading the effects to the default state during this week.
+
+##### Week 13
+
+*(Ongoing...) I am working on custom ranges, defaults in
+EffectParameters and importing/exporting of effect chains.*

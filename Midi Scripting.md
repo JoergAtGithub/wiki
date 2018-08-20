@@ -774,6 +774,7 @@ common-controller-scripts.js file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
+  - **print**(*string*) - Prints the passed in string to the console.
   - **secondstominutes**(*seconds*) - Returns the given quantity of
     seconds in `MM:SS` format.
   - **msecondstominutes**(*milliseconds*) - Returns the given quantity

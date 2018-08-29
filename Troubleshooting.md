@@ -8,13 +8,6 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
-## A deck randomly stops playing
-
-There was a known bug with decoding M4A/AAC files on Windows in Mixxx
-2.0 that can cause a deck to seemingly randomly stop playing until Mixxx
-is restarted. This bug has been fixed in Mixxx 2.1. [Download
-Mixxx 2.1](https://mixxx.org/download/).
-
 ## Other programs do not make sound while Mixxx is running
 
 On GNU/Linux, running Mixxx from a GUI menu or from the launcher icon

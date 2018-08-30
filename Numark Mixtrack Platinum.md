@@ -25,7 +25,15 @@ microphone input is suggested.
 
 ## Configuration options
 
-None.
+Configuration options can be set in the mapping. You will need to edit
+the values below at the very top of the JavaScript file
+`Numark-Mixtrack-Platinum-scripts.js` and save changes. Allowed values
+are “true” or “false” unless specified.
+
+\* **EnableWheel**: if true, wheel/vinyl mode will be enabled by default
+(defaults to true) \* **ShowTimeElapsed**: if true, time elapsed will be
+show by default on the displays, otherwise time remaining will be
+displayed (defaults to true)
 
 ## Mapping
 

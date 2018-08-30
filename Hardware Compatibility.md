@@ -385,6 +385,15 @@ to HID or MIDI, Mixxx would need to be able to read Linux input events,
 or a program would need to translate the Linux input events to HID or
 MIDI.
 
+## Microphones
+
+Mixxx can work with any microphone that can be plugged into your audio
+interface. Refer to the [Mixxx
+Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html)
+for a detailed explanation of different options for setting up Mixxx
+with microphones. As explained in the manual, **USB microphones are not
+recommended. Behringer Xenyx mixers are not recommended.**
+
 ## Splitter cables
 
 Splitter cables are **the cheapest way** to get two separate sound

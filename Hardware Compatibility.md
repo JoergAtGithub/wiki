@@ -392,9 +392,10 @@ interface. Refer to the [Mixxx
 Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html)
 for a detailed explanation of different options for setting up Mixxx
 with microphones. As explained in the manual, **USB microphones are not
-recommended. Behringer Xenyx mixers are not recommended.** The table of
-[\#USB audio interfaces](#USB%20audio%20interfaces) below has notes
-regarding use of some audio interfaces with microphones.
+recommended. Behringer Xenyx mixers are [not
+recommended](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers).**
+The table of [\#USB audio interfaces](#USB%20audio%20interfaces) below
+has notes regarding use of some audio interfaces with microphones.
 
 ## Splitter cables
 

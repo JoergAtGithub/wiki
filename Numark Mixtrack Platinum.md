@@ -23,7 +23,13 @@ for broadcasting or recording, a separate [USB audio
 interface](Hardware%20Compatibility#USB%20Audio%20Interfaces) with a
 microphone input is suggested.
 
-## Configuration options
+## Soundcard
+
+The **master** output of the Mixtrack Platinum maps to channels 1 and 2
+of the soundcard and the \*\*headphone \*\* output maps to channels 3
+and 4.
+
+## Configuration Options
 
 Configuration options can be set in the mapping. You will need to edit
 the values below at the very top of the JavaScript file

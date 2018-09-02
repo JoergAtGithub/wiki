@@ -64,7 +64,8 @@ Use the Mic Gain knob to control the microphone volume.
 mixing between the cue (PFL) output and the master mix output.
 
 4\. **Cue Gain:** Adjusts the volume for headphone cueing in the
-software.
+software.  
+**Shift+Cue Gain:** adjust the volume of the first 4 sampler banks
 
 5\. **VU Meter:** Monitor the volume levels of the master output and
 each channel. When cue/pfl is active on any channel, the meter shows the
@@ -213,11 +214,7 @@ the pad) to assign the upper 4 pads to the functions listed below:
     button will have no effect.: When assigned, the Pad LED will light
     blue  
   - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
-    x1/2 to double the length of the loop.  
-    \* Starting with
-    [commit 2c129ea0af838543b987d55538b903e115f08ba5](https://github.com/mixxxdj/mixxx/commit/2c129ea0af838543b987d55538b903e115f08ba5),
-    the Loop x1/2 button is disabled unless the corresponding deck is
-    set to be quantized
+    x1/2 to double the length of the loop.
 
 #### Auto Loop Mode
 
@@ -244,6 +241,8 @@ press of any of the sample buttons will load a sample if non are loaded.
 Shift + sample pad will unload a sample if it is not playing. Pressing a
 pad when a sample is loaded will play the sample, pressing shift +
 sample pad while a sample is playing will stop it.
+
+Use shift+cue gain to adjust the volume of the sampler.
 
 Note: there are 4 sample slots for the entire controller. The sampler on
 each deck controls the same 4 slots.

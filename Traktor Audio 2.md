@@ -1,5 +1,6 @@
-Copy and paste this to \~/.asoundrc to be able to select channels 3-4
-for the headphone output in Mixxx:
+Copy and paste this to \~/.asoundrc and select "djAB" as the output
+device to be able to select channels 3-4 for the headphone output in
+Mixxx:
 
     #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     # Native Instruments :: Audio2DJ ALSA Configuration

@@ -1,6 +1,8 @@
-Copy and paste this to \~/.asoundrc and select "djAB" as the output
-device to be able to select channels 3-4 for the headphone output in
-Mixxx:
+To use the original version of the Native Instruments Traktor Audio 2
+(the one with two 1/4 inch/6.35 mm jacks; the one with 1/8" inch/3.5mm
+jacks is the newer model) with Mixxx on Linux, copy and paste this to
+`~/.asoundrc`. Select "djAB" as the output device with Channels 1-2 for
+Mixxx's Master output and channels 3-4 for Mixxx's Headphones output:
 
     #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     # Native Instruments :: Audio2DJ ALSA Configuration

@@ -1,11 +1,5 @@
-if you're running ubuntu you need this ppa, install the latest
-linux-alsa-driver-modules-2.6.35 module for your kernel.
-<https://launchpad.net/~ubuntu-audio-dev/+archive/ppa>
-
-then you need this .asoundrc file:
-
-I found that I was then able to drive headphones at djA which is as far
-as I've test so far.
+Copy and paste this to \~/.asoundrc to be able to select channels 3-4
+for the headphone output in Mixxx:
 
     #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     # Native Instruments :: Audio2DJ ALSA Configuration

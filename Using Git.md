@@ -8,6 +8,9 @@ to speed with the basics of Git and how to use it with our workflow on
 GitHub. We are intentionally glossing over a lot of finer details which
 are explained in other [\#Tutorials](#Tutorials).
 
+If you have still have questions after reading this, feel free to ask on
+[Zulip](https://mixxx.zulipchat.com/).
+
 # Install Git
 
 Git comes preinstalled on macOS and many GNU/Linux distributions. If

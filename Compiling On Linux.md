@@ -185,7 +185,8 @@ searching for the package name without the "lib" prefix.
   - libsqlite3
   - libupower-glib-dev
   - [lilv](http://drobilla.net/software/lilv)
-  - libmodplug (optional, for MOD file playback support)
+  - [libmodplug](http://modplug-xmms.sourceforge.net/) (optional, for
+    MOD file playback support)
 
 ## Get Mixxx
 

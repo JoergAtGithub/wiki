@@ -55,7 +55,7 @@ instead of by item.
 **Shift + Push:** Focus next library pane, allows you to toggle between
 the left and right panes.
 
-2\. **\*Master Gain:** Adjusts the master volume in the software.  
+2\. **Master Gain:** Adjusts the master volume in the software.  
 **Note:** This control does not affect the microphone volume which is
 summed with the final output of the Master Gain to the Master Output.
 Use the Mic Gain knob to control the microphone volume.

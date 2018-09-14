@@ -52,7 +52,7 @@ a DJ program.
 ### GNU/Linux
 
   - [How it works: Linux audio
-    explained](http://tuxradar.com/content/how-it-works-linux-audio-explained):
+    explained](https://web.archive.org/web/20170622190455/http://tuxradar.com/content/how-it-works-linux-audio-explained):
     explains the relationships between ALSA, OSS, FFADO, JACK,
     PulseAudio, GStreamer, Phonon, and Xine
   - [Jack vs Pulseaudio](http://unix.stackexchange.com/a/181625)

@@ -142,6 +142,7 @@ this wiki, please fix it.
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature_discussion)
   - [Google Summer of Code](gsoc) student projects and information.
+  - [Google Code-in](gci) task list and information
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
 

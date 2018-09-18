@@ -39,7 +39,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libfaad-dev libmp4v2-dev \  # required for M4A support
 ```
 
-If you are building the master Git branch, run:
+If you are building Mixxx 2.2 or the master Git branch, run:
 
     sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
 
@@ -105,7 +105,7 @@ dnf install gcc-c++ upower-devel lilv-devel
 dnf builddep mixxx
 ```
 
-If you are building the master Git branch, also run:
+If you are building Mixxx 2.2 or the master Git branch, also run:
 
 ``` bash
 dnf install qt5-devel
@@ -165,8 +165,7 @@ searching for the package name without the "lib" prefix.
   - libid3tag
   - libmad
   - [PortAudio-v19](http://www.portaudio.com)
-  - QT 4.6.0+ (if installing from packages, make sure to get
-    libqt4-opengl and libqt4-svg too.)
+  - QT 5
   - libogg, libvorbis, libvorbisfile
   - libsndfile
   - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
@@ -200,6 +199,8 @@ page](http://www.mixxx.org/download.php), or checkout a snapshot from
 our git repository:
 
   - For the latest development (master) branch: `git clone
+    https://github.com/mixxxdj/mixxx.git`
+  - For the latest beta branch: `git clone -b 2.2
     https://github.com/mixxxdj/mixxx.git`
   - For the latest stable branch: `git clone -b 2.1
     https://github.com/mixxxdj/mixxx.git`

@@ -10,9 +10,10 @@ Mixxx relies on several external libraries for various features.
 
 ### SCons 2.x
 
-The Mixxx build scripts still rely on SCons 2 and don't work with SCons
-3 and Python 3. If your distribution (Fedora 27, Arch linux...) already
-comes with SCons 3 the build will fail when following the instructions.
+The Mixxx 2.1 and 2.2 branch still rely on SCons 2 and don't work with
+SCons 3 and Python 3. If your distribution (Fedora 27, Arch linux...)
+already comes with SCons 3 the build will fail when following the
+instructions. This is fixed in the master branch.
 
 As a workaround you can simply install SCons 2 side by side::
 
@@ -165,7 +166,7 @@ searching for the package name without the "lib" prefix.
   - libid3tag
   - libmad
   - [PortAudio-v19](http://www.portaudio.com)
-  - QT 5
+  - Qt 5
   - libogg, libvorbis, libvorbisfile
   - libsndfile
   - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)

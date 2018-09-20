@@ -8,6 +8,18 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
+## Broadcasting signal is silent
+
+Check if you have anything configured for the Record/Broadcast input in
+the Sound Hardware section of the Preferences. When this input is
+configured, Mixxx will broadcast and record the signal from it instead
+of the output of Mixxx. This is for recording and broadcasting from an
+external hardware mixer or an audio interface with a loopback input. If
+you are not using either of those, do not configure the Record/Broadcast
+input. Refer to the [Using
+Microphones](https://mixxx.org/manual/latest/en/chapters/microphones.html)
+section of the manual for more information.
+
 ## Other programs do not make sound while Mixxx is running
 
 On GNU/Linux, running Mixxx from a GUI menu or from the launcher icon

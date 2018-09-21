@@ -30,8 +30,8 @@ already have at least some familiarity with it.
 
 That said, even after 42 years there is a big and active community of
 developers and users around Emacs and it is safe to say that it keeps
-growing. If you want to learn emacs there are a lot guides out there.
-I'll list some that helped me below.
+growing. If you want to learn emacs there are a lot of guides out there.
+I'll list some below.
 
 ## Guides
 

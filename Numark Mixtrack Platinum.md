@@ -225,14 +225,14 @@ pads to the functions listed below:
   - **Auto 2:** – Sets and starts playback of a 2-beat autoloop.  
   - **Auto 3:** – Sets and starts playback of a 4-beat autoloop.  
   - **Auto 4:** – Sets and starts playback of a 8-beat autoloop.  
-    \* **Shift + Auto 1:** – Sets and starts playback of a 1/16-beat
-    autoloop.  
-  - **Shift + Auto 2:** – Sets and starts playback of a 1/8-beat
-    autoloop.  
-  - **Shift + Auto 3:** – Sets and starts playback of a 1/4-beat
-    autoloop.  
-  - **Shift + Auto 4:** – Sets and starts playback of a 1/2-beat
-    autoloop.  
+    \* **Shift + Auto 1:** – When held, starts a 1/16-beat loop roll.  
+  - **Shift + Auto 2:** – When held, starts a 1/8-beat loop roll.  
+  - **Shift + Auto 3:** – When held, starts a 1/4-beat loop roll.  
+  - **Shift + Auto 4:** – When held, starts a 1/2-beat loop roll.
+
+Note: loop rolls activate slip mode so the play position continues to
+advance normally, such that when the loop is released, play continues
+from the place it would have been if no loop had been activated.
 
 #### Sample Mode
 

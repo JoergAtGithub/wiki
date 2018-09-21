@@ -78,7 +78,7 @@ software.
 5\. **VU Meter:** Monitor the volume levels of the master output and
 each channel. When cue/pfl is active on any channel, the meter shows the
 levels for each channel. Otherwise the meter shows the levels of the
-master outpt.
+master output.
 
 6\. **Load:** Press one of these buttons while a track is selected in
 the library window to assign it to Deck 1 and 2 (or 3 and 4),
@@ -197,8 +197,17 @@ mode, while holding select between Manual Loop, Auto Loop, and Sampler
 modes. Additionally control of hotcues 5-8 can be activated using
 shift+pad mode+loop mode (either manual or auto loop). Setting either of
 the **UseManualLoopAsCue** or **UseAutoLoopAsCue** options will reverse
-the selection of hotcue vs loop mode when shift is held.
-
+the selection of hotcue vs loop mode when shift is held.  
+**Pad Mode+Manual Loop:** set the top row of pads to manual loop control
+mode (see below)  
+**Pad Mode+Auto Loop:** set the top row of pads to auto loop/loop roll
+control mode (see below)  
+**Pad Mode+Sampler:** set the top row of pads to sampler control mode
+(see below)  
+**Shift+Pad Mode+Manual Loop:** set the top row of pads to control
+hotcues 5-8 (see below)  
+**Shift+Pad Mode+Auto Loop:** set the top row of pads to control hotcues
+5-8 (see below)  
 33\. **Performance Pads:**
 
 The top row of pads is for controlling loops and samples. To select a
@@ -277,7 +286,7 @@ Shift + sample pad will unload a sample if it is not playing. Pressing a
 pad when a sample is loaded will play the sample, pressing shift +
 sample pad while a sample is playing will stop it.
 
-Use shift+cue gain to adjust the volume of the sampler.
+Use **shift+cue gain** to adjust the volume of the sampler.
 
 Note: there are 4 sample slots for the entire controller. The sampler on
 each deck controls the same 4 slots.

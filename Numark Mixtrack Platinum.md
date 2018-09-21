@@ -41,6 +41,14 @@ are “true” or “false” unless specified.
   - **ShowTimeElapsed:** if true, time elapsed will be show by default
     on the displays, otherwise time remaining will be displayed
     (defaults to true)
+  - **UseManualLoopAsCue:** if true, the manual loop controls will
+    behave as hotcues 5-8. When enabled, the normal loop control
+    behavior can be activated using shift+pad mode+mode button and pad
+    mode+mode to use the hotcue behavior (defaults to false)
+  - **UseAutoLoopAsCue:** if true, the auto loop controls will behave as
+    hotcues 5-8. When enabled, the normal loop control behavior can be
+    activated using shift+pad mode+mode button and pad mode+mode to use
+    the hotcue behavior (defaults to false)
 
 ## Mapping
 
@@ -186,7 +194,10 @@ of the track.
 
 32\. **Pad Mode:** Hold this button to see the currently selected pad
 mode, while holding select between Manual Loop, Auto Loop, and Sampler
-modes.
+modes. Additionally control of hotcues 5-8 can be activated using
+shift+pad mode+loop mode (either manual or auto loop). Setting either of
+the **UseManualLoopAsCue** or **UseAutoLoopAsCue** options will reverse
+the selection of hotcue vs loop mode when shift is held.
 
 33\. **Performance Pads:**
 
@@ -200,6 +211,10 @@ point has not already been set for the loaded track, this control will
 mark the hotcue point. If a hotcue point has already been set, this
 control will jump to it.  
 **Shift + Hot Cue**: Deletes the assigned hotcue point
+
+Note: the top row can be made to control hotcues 5-8 using shift+pad
+mode+loop mode (being Auto Loop or Manual Loop). This can also be made
+the default using a config option (see documentation above and below).
 
 #### Manual Loop Mode
 
@@ -215,6 +230,16 @@ the pad) to assign the upper 4 pads to the functions listed below:
     blue  
   - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
     x1/2 to double the length of the loop.
+
+If Manual Loop is selected with Shift and Pad Mode held down this will
+activate control of hotcues 5-8 on the upper row instead of the looping
+controls. Select Manual Loop again while holding Pad Mode to restore the
+default behavior. There will be no indication of which mode is selected
+(beyond the LEDs on the keys themselves, which will vary depending on
+loop and hotcue status). The **UseManualLoopAsCue** config option can be
+set in the mapping file (see above) to swap the default "shadow" mode of
+the looping controls such that hotcue control will be the default and
+manual loop control with be selected when Shift is used.
 
 #### Auto Loop Mode
 
@@ -233,6 +258,16 @@ pads to the functions listed below:
 Note: loop rolls activate slip mode so the play position continues to
 advance normally, such that when the loop is released, play continues
 from the place it would have been if no loop had been activated.
+
+If Auto Loop is selected with Shift and Pad Mode held down this will
+activate control of hotcues 5-8 on the upper row instead of the looping
+controls. Select Auto Loop again while holding Pad Mode to restore the
+default behavior. There will be no indication of which mode is selected
+(beyond the LEDs on the keys themselves, which will vary depending on
+loop and hotcue status). The **UseAutoLoopAsCue** config option can be
+set in the mapping file (see above) to swap the default "shadow" mode of
+the looping controls such that hotcue control will be the default and
+auto loop control with be selected when Shift is used.
 
 #### Sample Mode
 

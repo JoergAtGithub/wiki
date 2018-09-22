@@ -47,12 +47,17 @@ Developers"**:
 
   - <http://www.eclipse.org/downloads/eclipse-packages/>
 
+Or use the installer as described here
+
+  - <https://askubuntu.com/questions/695382/how-to-install-eclipse-using-its-installer>
+
 Or you might install the CDT into your existing eclipse
 
   - <http://www.eclipse.org/cdt/downloads.php>
 
 Ubuntu Packages to install (possibly outdated) would be:
 
+  - eclipse
   - eclipse-cdt
   - eclipse-pydev
 

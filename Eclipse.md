@@ -6,16 +6,35 @@ Just some notes on how to setup Eclipse IDE for developing on Mixxx.
 
 The default location on Linux would be
 
-\~/eclipse-workspace/mixxx
+    ~/eclipse-workspace/mixxx
 
-This guide assumes you have already setup you personal github repository
-as described here [using\_git](here).
+This guide assumes you have already setup you personal GitHub repository
+as described [here](using_git). From you terminal or git shell
+(Windows):
 
-First you have to setup the Mixxx source and manage to compile it via
-the command line, as outlined here:
+``` bash
+mkdir eclipse-workspace # if not already exists 
+cd eclipse-workspace
+git clone git@github.com:YOUR-GITHUB-USER-NAME/mixxx.git
+git remote add upstream https://github.com/mixxxdj/mixxx.git
+```
+
+Now have to setup the Mixxx source and manage to compile it via the
+command line, as outlined here:
 [compiling\_on\_linux](compiling_on_linux) or
 [compiling\_on\_os\_x](compiling_on_os_x) or
-[compiling\_on\_windows](compiling_on_windows)
+[compiling\_on\_windows](compiling_on_windows) This may take up to 60
+min on the fist time.
+
+``` bash
+scons -j4 # replace 4 with the number of CPU cores that can be utilized 
+```
+
+Test your build:
+
+``` bash
+./mixxx
+```
 
 # Install Eclipse (packages or source)
 

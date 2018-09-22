@@ -4,6 +4,10 @@ Just some notes on how to setup Eclipse IDE for developing on Mixxx.
 
 # Set up mixxx source
 
+The default location on Linux would be
+
+\~/eclipse-workspace/mixxx
+
 First you have to setup the Mixxx source and manage to compile it via
 the command line, as outlined here:
 [compiling\_on\_linux](compiling_on_linux) or

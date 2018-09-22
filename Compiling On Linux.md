@@ -36,17 +36,22 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libchromaprint-dev librubberband-dev libsqlite3-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
   libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
-  libjack-dev libjack0 portaudio19-dev \  # because of Bug #1464120
-  libfaad-dev libmp4v2-dev \  # required for M4A support
+  libjack-dev libjack0 portaudio19-dev \
+  libfaad-dev libmp4v2-dev \
+# libfaad-dev libmp4v2-dev required for M4A support
 ```
 
-If you are building Mixxx 2.2 or the master Git branch, run:
+If you are building Mixxx **2.2** or the **master** Git branch, run:
 
-    sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
+``` bash
+sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
+```
 
-If you are building Mixxx 2.1, run:
+If you are building Mixxx **2.1**, run:
 
-    sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
+``` bash
+sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
+```
 
 ### Raspberry Pi (Raspian)
 

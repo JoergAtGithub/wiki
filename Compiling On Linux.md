@@ -53,6 +53,12 @@ If you are building Mixxx **2.1**, run:
 sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
 ```
 
+Build
+
+``` bash
+sudo optimize=native -j4 # substitute 4 with the number ob utilized CPU cores 
+```
+
 ### Raspberry Pi (Raspian)
 
 If your distribution is Raspian, you can install them by running:

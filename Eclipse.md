@@ -8,6 +8,9 @@ The default location on Linux would be
 
 \~/eclipse-workspace/mixxx
 
+This guide assumes you have already setup you personal github repository
+as described here [using\_git](here).
+
 First you have to setup the Mixxx source and manage to compile it via
 the command line, as outlined here:
 [compiling\_on\_linux](compiling_on_linux) or

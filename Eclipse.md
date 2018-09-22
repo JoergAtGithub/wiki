@@ -75,13 +75,12 @@ sudo update-alternatives --config java
 
 # Step-by-Step Setup
 
-For Eclipse Oxygen
+For Eclipse 2018-09
 
   - Start Eclipse.
-  - File -\> New -\> Makefile Project with Existing Code (or do import
-    as described above).
-  - Set Project Name to your mixxx branch name e.g. `mixxx`.
-  - Browse to your Mixxx folder e.g. `~/workspace/mixxx/mixxx`.
+  - File -\> New -\> Makefile Project with Existing Code.
+  - Set Project Name to `mixxx`.
+  - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
   - Check only C++ language (uncheck C).
   - Select Toolchain for indexer setting = `Linux GCC` (this would be
     for a Linux host, substitute your OS as applicable).
@@ -90,26 +89,31 @@ For Eclipse Oxygen
     -\> C/C++ Build (if Project Explorer is not visible, go to Window
     -\> Show View -\> Project Explorer).
   - Uncheck "Use default build command".
-  - Build command = `scons stdlib=libc++ hss1394=0 mad=0 faad=0
-    coreaudio=1 verbose=0 qt5=1`
-  - Switch to Behavior tab.
-  - Build: remove `all`.
-  - Clean: remove `clean` and set instead `-c`.
-  - Check "Enable parallel builds".
-  - Expand C/C++ Build -\> Environment
-  - Add the following Variable-Value pairs (below is written for Mac):
+  - Build command 
 
 <!-- end list -->
 
-    CFLAGS    | -I/usr/local/include -I/usr/local/include/opus  
-    CXXFLAGS  | -I/usr/local/include -I/usr/local/include/opus  
-    LDFLAGS   | -L/usr/local/lib                                
-    QTDIR     | /<path to Qt install directory>/%VERSION% #eg /usr/local/Cellar/qt5/5.10.1
+``` 
+   * Linux ''scons faad=1'' 
+   * Mac ''scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 qt5=1''
+* Switch to Behavior tab.
+* Build: remove ''all''.
+* Clean: remove ''clean'' and set instead ''-c''.
+* Check "Enable parallel builds".
+* Expand C/C++ Build -> Environment
+* On Mac only: Add the following Variable-Value pairs: <code>
+```
 
-  - Replace `%VERSION%` with the folder name for your version of Qt.
-  - You may also have to manually add to the system PATH setting to
-    include, for example, /usr/local/bin and /usr/local/include. Do this
-    the same way as the above. Separate individual paths with colons.
+CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
+-I/usr/local/include -I/usr/local/include/opus LDFLAGS |
+-L/usr/local/lib QTDIR | /\<path to Qt install directory\>/%VERSION%
+\#eg /usr/local/Cellar/qt5/5.10.1 \</code\>
+
+``` 
+    * Replace ''%VERSION%'' with the folder name for your version of Qt.
+    * You may also have to manually add to the system PATH setting to include, for example, /usr/local/bin and /usr/local/include. Do this the same way as the above. Separate individual paths with colons.
+* Exclude the *_build folder from build (in this case from indexer)  
+```
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).

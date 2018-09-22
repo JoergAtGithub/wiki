@@ -15,7 +15,7 @@ as described [here](using_git). From you terminal or git shell
 ``` bash
 mkdir eclipse-workspace # if not already exists 
 cd eclipse-workspace
-git clone git@github.com:YOUR-GITHUB-USER-NAME/mixxx.git
+git clone https://github.com/YOUR-GITHUB-USER-NAME/mixxx.git
 git remote add upstream https://github.com/mixxxdj/mixxx.git
 ```
 

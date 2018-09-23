@@ -120,7 +120,9 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
     "${INPUTS}"` 
   - Close preferences 
   - Open it again for the \*\_build folder
-  - Exclude the \*\_build folder from build (in this case from indexer) 
+  - Exclude the "\*\_build" folder from build (in this case from
+    indexer) 
+  - Repeat the steps to exclude the "cache" folder 
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).

@@ -133,7 +133,7 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon). The indexer should work after a full rebuild that allows Eclipse
-to pares all compiler arguments.
+to parse all compiler arguments.
 
   - Right click on the new project in Project Explorer -\> Clean Project
   - Right click on the new project in Project Explorer -\> Build Project

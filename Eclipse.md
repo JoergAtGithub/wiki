@@ -78,6 +78,13 @@ sudo update-alternatives --config java
 For Eclipse 2018-09
 
   - Start Eclipse.
+  - Window -\> Preferences
+  - Expand General -\> Editors -\> Autosave 
+  - Check Save automatically before build
+  - Uncheck Build automatically 
+  - Expand C/C++ -\> Indexer
+  - Skip files larger than 80 MB
+  - Skip include files larger than 160 MB 
   - File -\> New -\> Makefile Project with Existing Code.
   - Set Project Name to `mixxx`.
   - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
@@ -125,7 +132,11 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
   - Repeat the steps to exclude the "cache" folder 
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
-icon).
+icon). The indexer should work after a full rebuild that allows Eclipse
+to pares all compiler arguments.
+
+  - Right click on the new project in Project Explorer -\> Clean Project
+  - Right click on the new project in Project Explorer -\> Build Project
 
 **Set up Run:**
 

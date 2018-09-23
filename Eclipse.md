@@ -157,21 +157,26 @@ to parse all compiler arguments.
   - Arguments tab 
   - Program arguments = `--resourcePath res --developer
     --debugAssertBreak`
+  - For stepping through the Qt source, you need to place it in your
+    workspace folder `cd eclipse-workspace
+    apt-get source libqt5core5
+    ln -s qtbase-opensource-src-5.2.1+dfsg qt5 # adjust version 
+    `
   - Non-Mac users should use GDB for debugging in Eclipse
     ([GDB](https://www.gnu.org/software/gdb/)).
   - Your `.gdbinit` should be setup before`dir
-    ~/workspace/qt5/src/corelib
-    dir ~/workspace/qt5/src/corelib/io
-    dir ~/workspace/qt5/src/corelib/tools
-    dir ~/workspace/qt5/src/gui
-    dir ~/workspace/qt5/src/gui/image
-    dir ~/workspace/qt5/src/gui/kernel
-    dir ~/workspace/qt5/src/network
-    dir ~/workspace/qt5/src/sql
-    dir ~/workspace/qt5/src/sql/drivers/sqlite
-    dir ~/workspace/qt5/src/opengl
-    dir ~/workspace/sqlite/sqlite3-3.7.4
-    dir ~/workspace/portaudio/src/hostapi/alsa/
+    ~/eclipse-workspace/qt5/src/corelib
+    dir ~/eclipse-workspace/qt5/src/corelib/io
+    dir ~/eclipse-workspace/qt5/src/corelib/tools
+    dir ~/eclipse-workspace/qt5/src/gui
+    dir ~/eclipse-workspace/qt5/src/gui/image
+    dir ~/eclipse-workspace/qt5/src/gui/kernel
+    dir ~/eclipse-workspace/qt5/src/network
+    dir ~/eclipse-workspace/qt5/src/sql
+    dir ~/eclipse-workspace/qt5/src/sql/drivers/sqlite
+    dir ~/eclipse-workspace/qt5/src/opengl
+    dir ~/eclipse-workspace/sqlite/sqlite3-3.7.4
+    dir ~/eclipse-workspace/portaudio/src/hostapi/alsa/
     
     python
     import sys

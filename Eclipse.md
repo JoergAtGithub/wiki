@@ -231,28 +231,11 @@ If the discovering fails, you may add the required info manually:
   - /usr/include/qt5/QtXml
   - /usr/include/qt5/QtSvg
 
-<!-- end list -->
+After changing these settings, the index needs to be rebuilt. Eclipse
+will usually detect that changes have been made to Symbols settings and
+will rebuild the index on clicking Apply and Close. To do it manually:
 
-  - Add c++11 flag:
-  - Right click on the project -\> Properties -\> C/C++ General -\>
-    Preprocessor Include Paths, Macros etc. -\> Providers -\> CDT GCC
-    Built-In Compiler Settings
-  - add -std=c++11, like this 
-  - ${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD "${INPUTS}" 
-
-<!-- end list -->
-
-  - Alternatively you can start with my project files (.cproject
-    .project .gdbinit) and adapt them to your
-    system:<http://bazaar.launchpad.net/%7Edaschuer/mixxx/daschuers_trunk/files/head:/mixxx/>
-
-<!-- end list -->
-
-  - Or merge from git@github.com:daschuer/mixxx.git
-
-After changing these settings, The index needs to be rebuilt
-
-Project -\> C/C++ Index -\> Rebuild
+Right-click in Project Explorer Pane -\> Index -\> Rebuild
 
 Troubleshooting:
 

@@ -102,7 +102,7 @@ For Eclipse 2018-09
 
 ``` 
    * Linux ''scons faad=1 test=1'' 
-   * Mac ''scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 qt5=1 test=1''
+   * Mac ''scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 test=1''
 * Switch to Behavior tab.
 * Build: remove ''all''.
 * Clean: remove ''clean'' and set instead ''-c''.

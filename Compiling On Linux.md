@@ -37,9 +37,12 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
   libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
-  libfaad-dev libmp4v2-dev \
-# libfaad-dev libmp4v2-dev required for M4A support
+  libfaad-dev libmp4v2-dev
 ```
+
+Note: libfaad-dev libmp4v2-dev required for M4A support. The
+installation order is
+[important](https://bugs.launchpad.net/mixxx/+bug/1464120).
 
 If you are building Mixxx **2.2** or the **master** Git branch, run:
 
@@ -51,12 +54,6 @@ If you are building Mixxx **2.1**, run:
 
 ``` bash
 sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
-```
-
-Build
-
-``` bash
-sudo optimize=native -j4 # substitute 4 with the number ob utilized CPU cores 
 ```
 
 ### Raspberry Pi (Raspian)

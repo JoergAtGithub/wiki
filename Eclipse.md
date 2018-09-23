@@ -159,9 +159,30 @@ to parse all compiler arguments.
     --debugAssertBreak`
   - Non-Mac users should use GDB for debugging in Eclipse
     ([GDB](https://www.gnu.org/software/gdb/)).
-  - Your `.gdbinit` should be setup before, but that's another story.
-  - Sample:
-    [.gdbinit](http://bazaar.launchpad.net/~daschuer/mixxx/daschuers_trunk/view/head:/mixxx/.gdbinit).
+  - Your `.gdbinit` should be setup before`dir
+    ~/workspace/qt5/src/corelib
+    dir ~/workspace/qt5/src/corelib/io
+    dir ~/workspace/qt5/src/corelib/tools
+    dir ~/workspace/qt5/src/gui
+    dir ~/workspace/qt5/src/gui/image
+    dir ~/workspace/qt5/src/gui/kernel
+    dir ~/workspace/qt5/src/network
+    dir ~/workspace/qt5/src/sql
+    dir ~/workspace/qt5/src/sql/drivers/sqlite
+    dir ~/workspace/qt5/src/opengl
+    dir ~/workspace/sqlite/sqlite3-3.7.4
+    dir ~/workspace/portaudio/src/hostapi/alsa/
+    
+    python
+    import sys
+    
+    sys.path.insert(0, '/home/<user_name>/workspace')
+    from qt import register_qt_printers
+    register_qt_printers (None)
+    end
+    set print pretty 1
+    set charset UTF-8
+    `
   - Qt pretty printer
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
   - "Debug" button for run Mixxx.

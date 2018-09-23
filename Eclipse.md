@@ -85,6 +85,9 @@ For Eclipse 2018-09
   - Expand C/C++ -\> Indexer
   - Skip files larger than 80 MB
   - Skip include files larger than 160 MB 
+  - Expand C/C++ -\> Build -\> console
+  - Limit console output = 10000
+  - \---
   - File -\> New -\> Makefile Project with Existing Code.
   - Set Project Name to `mixxx`.
   - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.

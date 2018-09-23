@@ -100,8 +100,8 @@ For Eclipse 2018-09
 * Build: remove ''all''.
 * Clean: remove ''clean'' and set instead ''-c''.
 * Check "Enable parallel builds".
-* Expand C/C++ Build -> Environment
-* On Mac only: Add the following Variable-Value pairs: <code>
+* On Mac only: Expand C/C++ Build -> Environment
+* Add the following Variable-Value pairs: <code>
 ```
 
 CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
@@ -109,11 +109,18 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
 -L/usr/local/lib QTDIR | /\<path to Qt install directory\>/%VERSION%
 \#eg /usr/local/Cellar/qt5/5.10.1 \</code\>
 
-``` 
-    * Replace ''%VERSION%'' with the folder name for your version of Qt.
-    * You may also have to manually add to the system PATH setting to include, for example, /usr/local/bin and /usr/local/include. Do this the same way as the above. Separate individual paths with colons.
-* Exclude the *_build folder from build (in this case from indexer)  
-```
+  - Replace `%VERSION%` with the folder name for your version of Qt.
+  - You may also have to manually add to the system PATH setting to
+    include, for example, /usr/local/bin and /usr/local/include. Do this
+    the same way as the above. Separate individual paths with colons.
+  - Expand "C/C++ General" -\> "Preprocessor Include Paths, Macros etc."
+  - Select "Providers Tab" -\> "CDT GCC Build-In Compiler settings" 
+  - Uncheck "Use global providers ..."
+  - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
+    "${INPUTS}"` 
+  - Close preferences 
+  - Open it again for the \*\_build folder
+  - Exclude the \*\_build folder from build (in this case from indexer) 
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).

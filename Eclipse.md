@@ -297,6 +297,7 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 
 <!-- end list -->
 
+  - (replace /usr/local/Cellar/qt/5.10.1 above with your QtDir)
   - To the Symbols tab, add your workspace's src folder (eg
     \~/\<workspace folder name\>/mixxx/src). Select "Add to all
     languages" and "Add to all configurations".

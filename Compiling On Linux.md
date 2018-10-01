@@ -37,7 +37,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
   libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
-  libfaad-dev libmp4v2-dev
+  libfaad-dev libmp4v2-dev libmp3lame-dev
 ```
 
 Note: libfaad-dev libmp4v2-dev required for M4A support. The
@@ -159,7 +159,7 @@ Then you just need the dependencies:
 sudo pacman -S libid3tag libmad portaudio qt libogg \
 libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
 taglib protobuf vamp-plugin-sdk rubberband \
-chromaprint sqlite upower lilv
+chromaprint sqlite upower lilv lame
 ```
 
 ### Other

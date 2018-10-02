@@ -13,7 +13,7 @@ lower latency audio:
 
 In Preferences \> Sound hardware, if there is a link to this page, Mixxx
 is not running with real time priority. To enable Mixxx to run with real
-time priority, you wil need to set up your kernel and scheduling
+time priority, you will need to set up your kernel and scheduling
 permissions.
 
 #### Kernel setup
@@ -41,8 +41,11 @@ Ubuntu users can install the [kernel-rt or
 kernel-lowlatency](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel)
 packages. [Crossfade](http://nongnu.org/crossfade) and [Ubuntu
 Studio](http://ubuntustudio.org/) are distributions that come with a
-realtime patched kernel. Note that kernels with the realtime patch set
-may have some stability issues.
+realtime patched kernel. Arch Linux users can install the
+[linux-rt](https://aur.archlinux.org/packages/linux-rt/) or
+[linux-rt-lts](https://aur.archlinux.org/packages/linux-rt-lts/)
+packages. Note that kernels with the realtime patch set may have some
+stability issues.
 
 #### User permissions
 

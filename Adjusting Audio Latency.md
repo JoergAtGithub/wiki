@@ -49,12 +49,18 @@ stability issues.
 
 #### User permissions to create realtime threads.
 
-Enabling real time scheduling in your kernel will only have an effect if
-your user has permission to run Mixxx with realtime priority. Set the
-maximum rtprio for your user by editing `/etc/security/limits.conf` as
-root and add `<your user name> - rtprio 99` to allow Mixxx (and other
-processes you run) to increase their thread priority to maximum. Reboot
-for this to take effect.
+Whether you are using a generic kernel or a kernel with the "real-time
+patch set", your user needs permission to create threads with a
+real-time scheduling policy (`SCHED_FIFO` or `SCHED_RR`). This
+permission is disabled by default on major distributions due to
+denial-of-service risks (a user with realtime permissions can easily
+hard-lock a machine, requiring reboot). Distributions such as Ubuntu
+Studio enable this permission by default.
+
+Set the maximum rtprio for your user by editing
+`/etc/security/limits.conf` as root and add `<your user name> -
+rtprio 99` to allow Mixxx (and other processes you run) to increase
+their thread priority to maximum. Reboot for this to take effect.
 
 On Arch linux, install
 [realtime-privileges](https://www.archlinux.org/packages/community/any/realtime-privileges/),

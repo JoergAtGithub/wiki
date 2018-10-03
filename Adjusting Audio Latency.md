@@ -61,6 +61,41 @@ On Arch linux, install
 and `usermod $USER -a -G realtime` to add your user to the `realtime`
 group. Logout and log back in for the changes to take effect.
 
+You can use `cyclictest` (see below) to verify that your user has
+permission to schedule realtime threads.
+
+#### Testing your scheduling latency.
+
+To test your best-case latency (CPU-only) using realtime threads,
+`cyclictest` and `hackbench` from the `rt-tests` package are useful.
+
+    # Generate some load on the kernel scheduler.
+    hackbench -l 10000000& 
+    # Test the latency a SCHED_FIFO thread sees when attempting to wake up once per millisecond.
+    cyclictest -s -i 1000 -l 10000000 -m --policy fifo
+    # Don't forget to kill hackbench when you're done:
+    pkill -9 hackbench
+
+**Do not run the above commands via sudo\!** If you cannot run these as
+an unprivileged user, then your `/etc/security/limits.conf` change did
+not work.
+
+The output will look like this:
+
+``` 
+T: 0 ( 8078) P: 2 I:1000 C:   3601 Min:      9 Act:   13 Avg:   11 Max:     254
+
+```
+
+The number to watch is the "Max", which tells you the maximum observed
+latency in microseconds between the desired wake-up time and the actual
+wake-up time. For a `SCHED_FIFO` thread on a realtime kernel, a max
+latency of under 10 microseconds is easily achievable. For a generic
+kernel, this will be harder.
+
+To see how a non-realtime thread behaves, try `--policy other`, which
+uses the SCHED\_OTHER scheduling policy (the default).
+
 ### Raise the IRQ priority of your sound card
 
 IRQs (interrupt requests) allow devices to get the operating system

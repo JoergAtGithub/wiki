@@ -113,6 +113,14 @@ This utility polls for smart cards every few seconds, and when it does,
 it can cause Mixxx's audio to skip, even with the latency set really
 high.
 
+### References
+
+  - [Linux Audio Wiki: System
+    Configuration](https://wiki.linuxaudio.org/wiki/system_configuration)
+  - [Arch Linux Wiki: Realtime Kernel
+    Patchset](https://wiki.archlinux.org/index.php/Realtime_kernel_patchset)
+  - [cyclictest](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start)
+
 ## Windows
 
   - **Sound API**: See [the

@@ -67,22 +67,23 @@ IRQs (interrupt requests) allow devices to get the operating system
 kernel's attention. You can improve the audio performance of your
 computer by configuring your OS to give more attention to your sound
 card than other devices. This will not have any effect unless you have
-enabled realtime scheduling in your kernel as described above.
+enabled threadirqs with a generic kernel, or are running a kernel with
+the realtime patchset.
 
 The easiest way to raise the IRQ priority of your sound card is by
 installing [rtirq](http://www.rncbc.org/archive/#rtirq) and setting it
 to run on boot. To set rtirq to run on boot on distributions using
-systemd (which is most distros), run `systemctl enable rtirq` as root.
-Check that rtirq set your IRQ priorities correctly by running `rtirq
-status`. The IRQ for your sound card will end in ehci\_hcd for devices
-plugged into USB 2.0 ports and xhci\_hcd for USB 3.0 ports. If it is not
-a USB sound card, look for "snd" in the last column. This should be
-above other IRQs listed by `rtirq status`. The configuration file for
-rtirq is located at `/etc/sysconfig/rtirq` in Fedora and
-`/etc/default/rtirq` in Ubuntu. If you use a USB sound card, you may
-want to put "usb" in front of "snd" in the RTIRQ\_NAME\_LIST in rtirq's
-configuration file (or remove "snd") to give your USB sound card higher
-priority than your onboard sound card.
+systemd (which is most distros), run `systemctl enable rtirq`. Check
+that rtirq set your IRQ priorities correctly by running `rtirq status`.
+The IRQ for your sound card will end in ehci\_hcd for devices plugged
+into USB 2.0 ports and xhci\_hcd for USB 3.0 ports. If it is not a USB
+sound card, look for "snd" in the last column. This should be above
+other IRQs listed by `rtirq status`. The configuration file for rtirq is
+located at `/etc/sysconfig/rtirq` in Fedora and `/etc/default/rtirq` in
+Ubuntu. If you use a USB sound card, you may want to put "usb" in front
+of "snd" in the RTIRQ\_NAME\_LIST in rtirq's configuration file (or
+remove "snd") to give your USB sound card higher priority than your
+onboard sound card.
 
 To set IRQ priorities manually, see [this
 guide](http://subversion.ffado.org/wiki/IrqPriorities).
@@ -95,6 +96,9 @@ can disable it by running this shell script as root:
     for i in /sys/devices/system/cpu/cpu[0-9]*; do
       echo performance >$i/cpufreq/scaling_governor;
     done
+
+Alternately, you can use the `cpupower` utility: `sudo cpupower
+frequency-set -g performance`.
 
 The CPU governor will be reset when rebooting your computer. To run this
 every time your computer boots, save the above shell script to

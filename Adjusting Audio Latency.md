@@ -96,7 +96,7 @@ latency of under 10 microseconds is easily achievable. For a generic
 kernel, this will be harder.
 
 To see how a non-realtime thread behaves, try `--policy other`, which
-uses the SCHED\_OTHER scheduling policy (the default).
+uses the `SCHED_OTHER` scheduling policy (the default).
 
 ### Raise the IRQ priority of your sound card
 

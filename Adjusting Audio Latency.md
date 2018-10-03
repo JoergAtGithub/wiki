@@ -145,11 +145,11 @@ Processing](https://www.native-instruments.com/en/support/knowledge-base/show/31
 from Native Instruments (this information applies to versions of Windows
 newer than Vista as well).
 
-## Mac OS X
+## macOS
 
 Raise the priority of Mixxx. While Mixxx is running, open Terminal and
 run `` sudo renice -20 `pidof mixxx` `` (your user must be in
 `/etc/sudoers`).
 
-If you know of any more tips for reducing audio latency in Mac OS X,
-please edit this page and add them here.
+If you know of any more tips for reducing audio latency on macOS, please
+edit this page and add them here.

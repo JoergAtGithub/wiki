@@ -67,7 +67,9 @@ permission to schedule realtime threads.
 #### Testing your scheduling latency.
 
 To test your best-case latency (CPU-only) using realtime threads,
-`cyclictest` and `hackbench` from the `rt-tests` package are useful.
+`cyclictest` and `hackbench` from the
+[rt-tests](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/rt-tests)
+package are useful.
 
     # Generate some load on the kernel scheduler.
     hackbench -l 10000000& 

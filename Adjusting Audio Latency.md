@@ -47,7 +47,7 @@ realtime patched kernel. Arch Linux users can install the
 packages. Note that kernels with the realtime patch set may have some
 stability issues.
 
-#### User permissions
+#### User permissions to create realtime threads.
 
 Enabling real time scheduling in your kernel will only have an effect if
 your user has permission to run Mixxx with realtime priority. Set the
@@ -55,6 +55,11 @@ maximum rtprio for your user by editing `/etc/security/limits.conf` as
 root and add `<your user name> - rtprio 99` to allow Mixxx (and other
 processes you run) to increase their thread priority to maximum. Reboot
 for this to take effect.
+
+On Arch linux, install
+[realtime-privileges](https://www.archlinux.org/packages/community/any/realtime-privileges/),
+and `usermod $USER -a -G realtime` to add your user to the `realtime`
+group. Logout and log back in for the changes to take effect.
 
 ### Raise the IRQ priority of your sound card
 

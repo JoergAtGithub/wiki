@@ -41,6 +41,31 @@ lspci -v on Linux.
 Obtain the following information and add it as an attachment to your bug
 report:
 
+### Ubuntu
+
+On Ubuntu, if Mixxx crashes and Ubuntu asks if you would like to report
+the problem, please click report. We receive these crash reports, and
+they are quite useful.
+
+If you are filing a bug, see if you have a crash report, stored in
+`/var/crash`, and if you find one for Mixxx, please attach it to your
+bug report. If you don't find an error report, please use the
+`ubuntu-bug` tool to create an error report. From a terminal, or by
+pressing `Alt + F2` to invoke the run dialog, enter:
+
+    ubuntu-bug mixxx --save mixxx.crash
+
+This will create a mixxx.crash file in your home directory which you can
+attach to the bug report you file on our [Bug
+Tracker](https://bugs.launchpad.net/mixxx). However, since this isn't a
+crash from an actual run of Mixxx, it will not contain details on your
+specific bug -- just background information about your system that will
+be useful to us. If you are reporting a crash bug, it would be useful if
+you could include a crash report from `/var/crash` from a time when
+Mixxx actually crashed. Additionally, see below about generating
+backtraces. Crash reports sometimes include backtraces, but if you
+collect one yourself it may be more informative.
+
 ### Linux & Mac OSX
 
   - Most recent console output at the time of the error (About 50 lines

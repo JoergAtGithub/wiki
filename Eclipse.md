@@ -69,7 +69,7 @@ sudo apt-get install default-jre
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-# Oracle JDK 8 is activated by default you can switch between you Java installations using
+# Oracle JDK 8 is activated by default you can switch between your Java installations using
 sudo update-alternatives --config java
 ```
 
@@ -124,7 +124,7 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.
   - Expand "C/C++ General" -\> "Preprocessor Include Paths, Macros etc."
-  - Select "Providers Tab" -\> "CDT GCC Build-In Compiler settings" 
+  - Select "Providers Tab" -\> "CDT GCC Built-In Compiler settings" 
   - Uncheck "Use global providers ..."
   - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
     "${INPUTS}"` 

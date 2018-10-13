@@ -119,6 +119,10 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
 -L/usr/local/lib QTDIR | /\<path to Qt install directory\>/%VERSION%
 \#eg /usr/local/Cellar/qt5/5.10.1 \</code\>
 
+  - To build with clang rather than gcc (recommended) add the below: `CC
+    | clang 
+    CXX | clang++
+    `
   - Replace `%VERSION%` with the folder name for your version of Qt.
   - You may also have to manually add to the system PATH setting to
     include, for example, /usr/local/bin and /usr/local/include. Do this

@@ -129,6 +129,8 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
     `
   - Expand "C/C++ General" -\> "Preprocessor Include Paths, Macros etc."
   - Select Providers Tab -\> CDT GCC Build Output Parser
+  - Set Compiler command pattern to
+    `(g?cc)|([gc]\+\+)|(clang)|([clang]\+\+)`
   - Under 'Container to keep discovered entries' (you may need to expand
     the window for this to be visible) select 'Project (use when
     settings are the same for all files in the project)':

@@ -124,11 +124,19 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.
   - Expand "C/C++ General" -\> "Preprocessor Include Paths, Macros etc."
+  - Select Providers Tab -\> CDT GCC Build Output Parser
+  - Under 'Container to keep discovered entries (you may need to expand
+    the window for this to be visible) select 'Project (use when
+    settings are the same for all files in the project)':
+
+[[/media/outputparser.png|]]
+
   - Select "Providers Tab" -\> "CDT GCC Built-In Compiler settings" 
   - Uncheck "Use global providers ..."
   - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
     "${INPUTS}"` 
-  - Close preferences 
+  - Close preferences
+  - In the Project tree, right-click on the 
   - Open it again for the \*\_build folder
   - Exclude the "\*\_build" folder from build (in this case from
     indexer) 
@@ -298,14 +306,10 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 <!-- end list -->
 
   - (replace /usr/local/Cellar/qt/5.10.1 above with your QtDir)
-  - To the Symbols tab, add your workspace's src folder (eg
-    \~/\<workspace folder name\>/mixxx/src). Select "Add to all
-    languages" and "Add to all configurations".
-  - Do the same for your workspace's lib folder.
 
 After changing these settings, the index needs to be rebuilt. Eclipse
-will usually detect that changes have been made to Symbols settings and
-will rebuild the index on clicking Apply and Close. To do it manually:
+will usually detect that changes have been made and will rebuild the
+index on clicking Apply and Close. To do it manually:
 
 Right-click in Project Explorer Pane -\> Index -\> Rebuild
 

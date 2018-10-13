@@ -135,12 +135,11 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
   - Uncheck "Use global providers ..."
   - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
     "${INPUTS}"` 
-  - Close preferences
-  - In the Project tree, right-click on the 
-  - Open it again for the \*\_build folder
-  - Exclude the "\*\_build" folder from build (in this case from
-    indexer) 
-  - Repeat the steps to exclude the "cache" folder 
+  - Close Properties
+  - In the Project tree, right-click on the build folder and choose
+    Properties
+  - Check 'Exclude resource from build', Apply and Close
+  - Repeat for the cache folder 
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon). The indexer should work after a full rebuild that allows Eclipse

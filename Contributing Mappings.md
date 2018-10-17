@@ -102,13 +102,6 @@ bugs. To update your mapping in response to reviewers' comments, edit
 your file(s), make a new git commit, and push your git commit. The new
 commit(s) will automatically show up in the pull request.
 
-### After your mapping is merged
-
-You are encouraged to join the
-[Mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-email list to stay involved with Mixxx and keep your mapping up to date
-with new Mixxx features.
-
 ## Documenting the mapping
 
 Post [on the forum](http://mixxx.org/forums/viewforum.php?f=7) early so

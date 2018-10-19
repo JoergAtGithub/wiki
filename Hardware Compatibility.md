@@ -342,7 +342,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 </tr>
 <tr class="even">
 <td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
-<td>$100</td>
+<td>€90</td>
 <td>2 deck[30] all-in-one</td>
 <td>yes</td>
 <td>no</td>

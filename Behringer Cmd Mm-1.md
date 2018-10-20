@@ -13,10 +13,15 @@ together with the CMD MM-1, but the CMD MM-1 can be used alone or with
 other controllers (especially the [Novation
 Launchpad](novation_launchpad_mapping_by_szdavid92))
 
-All following examples will be made with a help of a [3D
-model](http://stunkit.com/data/files/etc/cmd-mm-1.blend.zip).
-
 ## Mapping description
+
+### Architecture
+
+The controller has four strips of channels, each of which can be
+configured to control a different Deck or even an EffectUnit. These
+options can be changed during runtime via the Buttons in the of the
+***ThirdLayer***. You can find more about how to use this at the end of
+this document.
 
 ### Mapping options
 
@@ -35,8 +40,11 @@ gEdit) and editing the lines at the very top of the file.
     Mixxx starts
   - channelMode: Defines if a channel is in Deck or FX Mode when Mixxx
     starts
+  - faderMode: Defines how the faders behave in FX Mode by default
   - standardKnobBehavior: Defines the mapping of the knobs when Mixxx
     starts
+  - navEncoderScale: the factor of speedup when using the encoder with a
+    modifier 
 
 ### Top row
 
@@ -49,19 +57,9 @@ Headphones output).
 You can see the L/R buttons besides the encoder as \[*SHIFT*\] and
 \[**CTRL**\] buttons. These allow each button to have up to four
 functionalities. They behave like the Shift and Control keys on a
-computer keyboard. Most of the features can be explained via the
-renderings where the functionalities are marked by the formatting of the
-Text (\[*SHIFT*\] and \[**CTRL**\]).
-
-The encoder in the middle is able to browse the library and jump on the
-preview deck (16 steps) while holding shift. When pressing the encoder,
-the selected/highlighted track in the library gets loaded into the
-preview deck. The preview deck can be played/paused when holding shift
-while pressing the encoder down.
+computer keyboard.
 
 ### Knobs
-
-[[/media/hardware/behringer/behringercmdmm1-knoboptionslabeled.png|]]
 
 The Knobs have three different modes which can be cycled while in
 operation. The knobs in each mode, from top to bottom, control:
@@ -76,8 +74,6 @@ the knobs of EffectUnit1, Channel 2 controls EffectUnit2, and so on.
 
 #### FX Mode
 
-[[/media/hardware/behringer/channelstriplabeled-min.png|]]
-
 The Knobs in FxMode overwrite the assigned mapping and are mapped as
 \[Effect 1 Meta, Effect 2 Meta, Effect 3 Meta, Super\] and the fader is
 also mapped to the mix of the EffectUnit. The buttons are documented in
@@ -85,20 +81,13 @@ their own section.
 
 ### Middle button
 
-[[/media/hardware/behringer/behringercmdmm1-knobslabeled.png|]]
-
-  - Normal: toggle maximize library
-  - Shift: recenter Crossfader
-  - Ctrl: Cycle Knob assignment (swaps the mapping of the knobs as
-    mentioned earlier.
-  - Third: Reassing Channel Sequence (resets mapping back do the global
-    defaults (look at global vars))
+  - Normal: recenter Crossfader
+  - Shift: Cycle Knob assignment (swaps the mapping of the knobs as
+    mentioned earlier)
 
 ### Buttons
 
 #### Deck Mode
-
-[[/media/hardware/behringer/buttons_orientationlabeled-min.png|]]
 
 \[1\]&\[2\] Buttons:
 
@@ -111,7 +100,7 @@ their own section.
 
   - Normal: Pre-Fader-Listening
   - Shift: Load selected Track to Deck
-  - Ctrl: Enable Fx-PFL for Unit according to channel number.
+  - Ctrl: enable Sync for the Deck.
   - Third: Change Channelmode
 
 #### FX Mode
@@ -129,21 +118,20 @@ their own section.
 
   - Normal: Toggle Effect 3 for desired FxUnit
   - Shift: Pre-Fader-Listening for FxUnit
-  - Ctrl: assign to master
+  - Ctrl: change mix\_mode of Unit
   - Third: Change Channelmode
 
 ### Faders
 
-[[/media/hardware/behringer/behringercmdmm1-fadeslabeled.png|]]
-
 DeckMode:
 
   - Normal: Volume Fader
-  - Shift: Rate-/BPM-Faders
 
 FxMode:
 
   - EffectUnit Mix (dry/wet)
+  - Third: Reconfigure Fader to control Rate/BPM/Pitch of the Channel as
+    if it was in Deckmode
 
 ### Reassigning channel mode and number
 
@@ -163,6 +151,11 @@ They are mapped in a sort of two bit encoded system:
 So you can change between channel 1&3 by pressing the \[1\] button, and
 channel 2&4 by pressing the \[2\] button.
 
+You can change the Channel mode (Deck/Fx) via the Cue Button. (Note:
+there is a rare issue where you have to change the Channel mode after
+the assignment for it to work. So it is suggested that you always change
+the assignment first).
+
 ## Troubleshooting
 
 ### Controller does not light up
@@ -176,9 +169,9 @@ Course](midi_crash_course#sniffing_your_controller_with_mixxx) for how
 to see incoming MIDI messages from your controller.
 
 **NOTE:** The Behringer Website is currently (07.04.2018) undergoing
-some update which is why the productpage and the channelswitcher utility
-is currently unavailable. After Emailing the support, they provided a
-link to the
+some maintenance which is why the productpage and the channelswitcher
+utility is currently unavailable. After Emailing the support, they
+provided a link to the
 [Channelswitcher](https://music--c.ap7.content.force.com/servlet/servlet.EmailAttachmentDownload?q=%2FwSnKlUyyB%2BzbQSKctPoiJvsTfYczcfDzIqBxz2ocDse1VdWx4S8NXjyHKhbFfsBbxCe3uhNzEnFic%2FsTkPPxg%3D%3D)
 ([Mirror](https://mega.nz/#!4zhjxQKQ!A_HJjx40YzyHdoV1nPdPmWL83nmUGspssKNdxyf00Tc))
 and a

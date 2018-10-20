@@ -111,16 +111,19 @@ Shifted: Toggles magnet (quantize)
 
 Default: Tap the desired BPM of the Channel  
 Shifted: ^^  
+Note: This functionality is broken until
+[\#1811](https://github.com/mixxxdj/mixxx/pull/1811) gets merged
 
 #### Search/Scratch
 
-Default: Toggle search acceleration  
-Shifted: ^^  
+Default: Enable Scratching (otherwise it just works just like moving the
+Jog without the platter)  
+Shifted: Speeds up platter movement for searching within the track  
 
 #### Keylock
 
 Default: Toggles track keylock  
-Shifted:^^  
+Shifted: Syncs Key  
 
 #### Pitch Range
 
@@ -254,7 +257,7 @@ Line.
 
 #### Crossfader Countour
 
-Works but the parameters within mixxx have to be tweaked.
+Somewhat broken...
 
 #### Cue-Master Mix
 

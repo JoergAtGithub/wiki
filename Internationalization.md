@@ -184,6 +184,7 @@ Transifex will pick up the changes to the template after a short while, and noti
   * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
   * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
   * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
+  * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git
   * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>

@@ -180,7 +180,7 @@ Transifex will pick up the changes to the template after a short while, and noti
 //This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.//
 
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex
-  * <code>tx pull -a</code>
+  * <code>tx pull -a -f</code>
   * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
   * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
   * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>

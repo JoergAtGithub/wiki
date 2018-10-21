@@ -208,6 +208,9 @@ control mode (see below)
 hotcues 5-8 (see below)  
 **Shift+Pad Mode+Auto Loop:** set the top row of pads to control hotcues
 5-8 (see below)  
+**Shift+Pad Mode+Sampler:** set the top row of pads to control sampler
+banks 5-8 (see below)
+
 33\. **Performance Pads:**
 
 The top row of pads is for controlling loops and samples. To select a
@@ -280,13 +283,18 @@ auto loop control with be selected when Shift is used.
 
 #### Sample Mode
 
-Hold Pad Mode and press the pad marked Sampler to enter sampler mode. A
-press of any of the sample buttons will load a sample if non are loaded.
-Shift + sample pad will unload a sample if it is not playing. Pressing a
-pad when a sample is loaded will play the sample, pressing shift +
-sample pad while a sample is playing will stop it.
+Hold Pad Mode and press the pad marked Sampler to enter sampler mode
+(hold down shift as well to control slots 5-8). A press of any of the
+sample buttons will load a sample if non are loaded. Shift + sample pad
+will unload a sample if it is not playing. Pressing a pad when a sample
+is loaded will play the sample, pressing shift + sample pad while a
+sample is playing will stop it.
 
-Use **shift+cue gain** to adjust the volume of the sampler.
+Use **shift+cue gain** to adjust the volume of the sampler. When
+switching to the pad mode to sampler, hold down shift to control slots
+5-8 instead of slots 1-4.
 
-Note: there are 4 sample slots for the entire controller. The sampler on
-each deck controls the same 4 slots.
+Note: there are 4 sample buttons for the entire controller. The sampler
+on each deck controls the same 4 slots. Switching to control sample
+slots 5-8 switches this on every deck, you cannot have one deck
+controlling 1-4 and another controlling 5-8.

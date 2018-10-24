@@ -10,7 +10,12 @@ It features 16 knobs that you can press as buttons.
 
 You can reset each knob by pressing it.
 
+#### Help Wanted
+
+[It would be great to map this controller for Mixxx's effects
+too.](https://github.com/mixxxdj/mixxx/pull/1778#issuecomment-429711266)
+
 #### Links
 
 [Mapping
-XML](https://github.com/mixxxdj/mixxx/blob/c2d9d05fe5fedc9a83833188b7d3ddadf234fbe1/res/controllers/DJ%20TechTools%20MIDI%20Fighter%20Twister.midi.xml)
+XML](https://github.com/mixxxdj/mixxx/blob/9a56aac440ca8bb2742108c5d75d29ce3b747d04/res/controllers/DJ%20TechTools%20MIDI%20Fighter%20Twister.midi.xml)

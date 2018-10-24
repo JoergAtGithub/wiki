@@ -18,4 +18,4 @@ too.](https://github.com/mixxxdj/mixxx/pull/1778#issuecomment-429711266)
 #### Links
 
 [Mapping
-XML](https://github.com/mixxxdj/mixxx/blob/9a56aac440ca8bb2742108c5d75d29ce3b747d04/res/controllers/DJ%20TechTools%20MIDI%20Fighter%20Twister.midi.xml)
+XML](https://github.com/mixxxdj/mixxx/blob/9e8bec58eed120a476864a857cb74a85ec4d0e41/res/controllers/DJ%20TechTools%20MIDI%20Fighter%20Twister.midi.xml)

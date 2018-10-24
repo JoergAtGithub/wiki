@@ -6,7 +6,7 @@ It features 16 knobs that you can press as buttons.
 
 #### Mapping
 
-[[/media/56bdd712d28e081f03c6d2baf6b57fd3ef87fae5_l.jpg|]]
+[[/media/midi_fighter_twister_mapping.jpg|]]
 
 You can reset each knob by pressing it.
 

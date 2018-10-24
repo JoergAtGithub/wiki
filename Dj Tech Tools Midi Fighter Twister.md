@@ -8,7 +8,8 @@ It features 16 knobs that you can press as buttons.
 
 [[/media/midi_fighter_twister_mapping.jpg|]]
 
-You can reset each knob by pressing it.
+You can reset each knob by pressing it. And you can toggle PFL by
+pressing faders knob.
 
 #### Help Wanted
 

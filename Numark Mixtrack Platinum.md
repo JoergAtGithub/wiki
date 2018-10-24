@@ -49,6 +49,11 @@ are “true” or “false” unless specified.
     hotcues 5-8. When enabled, the normal loop control behavior can be
     activated using shift+pad mode+mode button and pad mode+mode to use
     the hotcue behavior (defaults to false)
+  - **UseCueAsSampler:** if true, the hotcues will control sampler slots
+    5-8 when sampler mode is active. When enabled, the normal hotcue
+    control behavior can be activated using shift+pad mode+sampler while
+    pad mode+sampler will activate the special behavior (defaults to
+    false)
 
 ## Mapping
 

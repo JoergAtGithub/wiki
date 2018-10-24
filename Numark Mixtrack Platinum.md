@@ -73,7 +73,7 @@ mixing between the cue (PFL) output and the master mix output.
 
 4\. **Cue Gain:** Adjusts the volume for headphone cueing in the
 software.  
-**Shift+Cue Gain:** adjust the volume of the first 4 sampler banks
+**Shift+Cue Gain:** adjust the volume of the first 8 sampler banks
 
 5\. **VU Meter:** Monitor the volume levels of the master output and
 each channel. When cue/pfl is active on any channel, the meter shows the
@@ -208,8 +208,8 @@ control mode (see below)
 hotcues 5-8 (see below)  
 **Shift+Pad Mode+Auto Loop:** set the top row of pads to control hotcues
 5-8 (see below)  
-**Shift+Pad Mode+Sampler:** set the top row of pads to control sampler
-banks 5-8 (see below)
+**Shift+Pad Mode+Sampler:** set the bottom row of pads to control
+sampler banks 5-8 (see below)
 
 33\. **Performance Pads:**
 
@@ -284,17 +284,15 @@ auto loop control with be selected when Shift is used.
 #### Sample Mode
 
 Hold Pad Mode and press the pad marked Sampler to enter sampler mode
-(hold down shift as well to control slots 5-8). A press of any of the
-sample buttons will load a sample if non are loaded. Shift + sample pad
-will unload a sample if it is not playing. Pressing a pad when a sample
-is loaded will play the sample, pressing shift + sample pad while a
-sample is playing will stop it.
+(hold down shift as well to control slots 5-8 using the hotcue buttons).
+A press of any of the sample buttons will load a sample if non are
+loaded. Shift + sample pad will unload a sample if it is not playing.
+Pressing a pad when a sample is loaded will play the sample, pressing
+shift + sample pad while a sample is playing will stop it.
 
 Use **shift+cue gain** to adjust the volume of the sampler. When
 switching to the pad mode to sampler, hold down shift to control slots
-5-8 instead of slots 1-4.
+5-8 using the hotcue buttons.
 
-Note: there are 4 sample buttons for the entire controller. The sampler
-on each deck controls the same 4 slots. Switching to control sample
-slots 5-8 switches this on every deck, you cannot have one deck
-controlling 1-4 and another controlling 5-8.
+Note: the 8 sample slots on each deck all control the same 8 slots in
+Mixxx no matter which deck the sampler is active on.

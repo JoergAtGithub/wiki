@@ -86,8 +86,6 @@ The encoders do not behave exactly as labeled.
     (left ear of headphone output plays cue signal, right ear plays main
     signal).
 
-#### Mixxx 2.1
-
 The mapping of the encoders does not match their labels. They are
 labeled on the controller symmetrically, but they are mapped
 asymmetrically like the rest of the deck controls:
@@ -105,27 +103,7 @@ asymmetrically like the rest of the deck controls:
     on the LED display on the controller. When the encoder is released,
     the LED display goes back to showing the loop size.
 
-#### Mixxx 2.0
-
-  - **Loop/Tempo encoder**: turning halves/doubles the loop size.
-    Pushing (de)activates a loop. For loops 1 beat or less, the loop
-    only stays active while the encoder is pushed down. Pressing while
-    holding shift sets a manual loop. The loop start point is set when
-    the encoder is pressed and the loop out point is set when the
-    encoder is released. Turning while holding shift moves the loop. If
-    the loop is 1 beat or larger, it moves the loop by 1 beat; if the
-    loop is smaller than 1 beat, it moves the loop by the size of the
-    loop.
-  - **Filter/Move encoder**: Turning adjusts the pitch, or with keylock
-    on, just the tempo. Pushing resets the pitch to the track's default.
-    Turning with shift jumps forward/backward by beats (default 4
-    beats). Hold shift, push, and turn to select how many beats to jump
-    by, shown on the LED display on the controller. When the encoder is
-    released, the LED display goes back to showing the loop size. 
-
 ### Effects
-
-#### Mixxx 2.1
 
 Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
 page for details on how to use the effects sections.
@@ -137,39 +115,6 @@ Pressing the headphone button with shift assigns the effect unit on that
 side to the headphone channel. This is useful for previewing an effect
 on a playing deck before using it. The headphone (PFL) button must also
 be pressed on the deck to hear the effect on it in headphones.
-
-#### Mixxx 2.0
-
-The effects controls on the left control Effect Unit 1, the controls on
-the right control Effect Unit 2. This does not change when decks are
-toggled between decks 1/3 or 2/4.
-
-Press ON/MACRO buttons to activate the Effect Unit on Decks 1-4.
-
-Turn the FX AMOUNT knobs to adjust effect parameters. By default, the
-knobs control the parameters of the first effect in the effect unit. The
-other effects can be selected with the Slicer pad mode (see below).
-
-Turn the Dry/Wet knob to control the mix of the effect sounds with the
-source deck(s). Shift + Dry/Wet adjusts the super knob for the Effect
-Unit.
-
-Be warned that soft takeover does not work for the effect parameter
-knobs when switching between effects due to [a bug in
-Mixxx](https://bugs.launchpad.net/mixxx/+bug/1479008). Soft take over
-does work for switching between dry/wet and the superknob though.
-
-The Slicer pad mode has additional controls for effects. The top three
-rows each control an individual effect in the effect unit, allowing you
-to set up effect chains. (These are not visible in the LateNight skin).
-The left button toggles whether that effect is enabled (the whole effect
-unit still has to be enabled for a deck for it to be audible). With
-shift, the left button resets the effect's parameters to their default
-values. The two purple buttons in the middle scroll through the
-available effects. The button on the right sets the parameter knobs to
-control that effect's parameters. The bottom row toggles the effect unit
-on the headphones, master mix, microphone 1, and auxiliary input 1 (from
-left to right).
 
 ### Other controls
 

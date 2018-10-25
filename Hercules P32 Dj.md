@@ -1,6 +1,6 @@
 # Hercules P32 DJ
 
-![http://www.hercules.com/fichier/h\_photo/1492/photo\_file\_p32dj\_top.png](http://www.hercules.com/fichier/h_photo/1492/photo_file_p32dj_top.png)
+![https://www.hercules.com/wp-content/uploads/2018/05/HerculesDJ\_HerculesP32DJ\_top-1400x747.jpg](https://www.hercules.com/wp-content/uploads/2018/05/HerculesDJ_HerculesP32DJ_top-1400x747.jpg)
 
   - [Manufacturer's product
     page](http://www.hercules.com/uk/advanced-controllers/bdd/p/258/hercules-p32-dj/)

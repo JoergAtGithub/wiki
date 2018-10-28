@@ -58,7 +58,7 @@ Steps where you enter `-c` as Command argument.
 
 ## GammaRay
 
-[https://www.kdab.com/gammaray](KDAB's%20GammaRay) is a tool for
+[KDAB's GammaRay](https://www.kdab.com/gammaray) is a tool for
 dynamically inspecting applications built with Qt. Its feature set is
 too long to list, but of particular use for Mixxx development is:
 

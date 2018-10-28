@@ -54,6 +54,23 @@ additional Command arguments (such as `qdebug=1` when in debug
 configuration). Respectively, follow the same procedure for the Clean
 Steps where you enter `-c` as Command argument.
 
+# Debugging Tools
+
+## GammaRay
+
+[https://www.kdab.com/gammaray](KDAB's%20GammaRay) is a tool for
+dynamically inspecting applications built with Qt. Its feature set is
+too long to list, but of particular use for Mixxx development is:
+
+  - The ability to see all current signals/slots being fired by Mixxx,
+    with the ability to jump to the object that is firing them.
+  - The ability to inspect the tree of all QObjects that exist, and for
+    each object being able to see its properties, methods and
+    inbound/output connections.
+  - The ability to debug the render process of a QWidget, showing you at
+    each step of a QPainter what the widget looks like, including
+    performance details about each step.
+
 # Console development tools
 
 On Ubuntu Linux, G uses:

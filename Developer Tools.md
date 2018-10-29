@@ -32,6 +32,10 @@ files, it can be difficult to understand how the code fits together.
 
 ## macOS
 
+  - Integrated Development Environments (IDEs):
+    [Eclipse](http://eclipse.org/), [Qt
+    Creator](http://wiki.qt.io/Category:Tools::QtCreator),
+    [XCode](https://developer.apple.com/xcode/)
   - Text editors: [emacs](https://www.gnu.org/software/emacs/)
 
 ## Using IDEs

@@ -43,20 +43,7 @@ files, it can be difficult to understand how the code fits together.
   - Set up [Eclipse](eclipse)
   - Set up [KDevelop](KDevelop)
   - Set up [Emacs](emacs)
-  - Set up [QtCreator](QtCreator) for developing on Mixxx
-
-You can also use [Qt Creator](http://qt-project.org/downloads) for Mixxx
-development by creating a Qt project file for the source files. You can
-do this by running `qmake -project` under Mixxx's root directory. When
-using the created project file, you are able to use Creators editing
-features such as following symbols (F2) and switching between code and
-header files (F4). When compiling you will still have to resort to SCons
-as the project file will not resolve the dependencies. To accomplish
-this, switch to the project tab, remove any build steps and "Add Build
-Step"-\>"Custom Process Step". Enter `scons` as Command and any
-additional Command arguments (such as `qdebug=1` when in debug
-configuration). Respectively, follow the same procedure for the Clean
-Steps where you enter `-c` as Command argument.
+  - Set up [QtCreator](QtCreator)
 
 # Debugging Tools
 

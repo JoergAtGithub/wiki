@@ -30,7 +30,7 @@ files, it can be difficult to understand how the code fits together.
   - Git tools: [Tortise Git](https://tortoisegit.org/), [Git
     Extensions](http://gitextensions.github.io/)
 
-## Mac OS X
+## macOS
 
   - Text editors: [emacs](https://www.gnu.org/software/emacs/)
 

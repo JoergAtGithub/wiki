@@ -62,6 +62,19 @@ too long to list, but of particular use for Mixxx development is:
     each step of a QPainter what the widget looks like, including
     performance details about each step.
 
+## Debuggers
+
+Debuggers allow you to inspect the state of Mixxx while its running (and
+after Mixxx has crashed, via a core dump file).
+
+  - [gdb](https://www.gnu.org/software/gdb/) (for gcc)
+  - [lldb](https://lldb.llvm.org/) (for Clang)
+  - Visual Studio (Windows-only)
+
+## Profilers
+
+See [profiling](profiling).
+
 # Console development tools
 
 On Ubuntu Linux, G uses:

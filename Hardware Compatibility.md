@@ -128,6 +128,7 @@ move your controller to this table.
 | [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150              | 2 deck all-in-one                       | no                         | N/A              | MIDI            | 2.1                           | 2015     |
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200              | 2 deck \[10\] all-in-one                | yes                        | no               | MIDI            | 2.1                           | 2013     |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200              | 2 deck all-in-one                       | yes                        | no               | MIDI            | 2.1                           | 2015     |
+| [DJ Tech Tools MIDI Fighter Twister](DJ%20Tech%20Tools%20MIDI%20Fighter%20Twister)                 | $220              | 2 deck controller                       | no                         | no               | MIDI            | 2.1.5                         | 2015     |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250              | miscellaneous                           | no                         | N/A              | MIDI            | 1.11                          | 2012     |
 | [Pioneer DDJ-SB2](Pioneer%20DDJ-SB2)                                                               | $250              | 2 deck\[11\] all-in-one                 | yes                        | no               | MIDI            | 2.0                           | 2015     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                       | yes                        | yes              | MIDI            | 1.11                          | 2011     |
@@ -323,15 +324,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2017</td>
 </tr>
 <tr class="even">
-<td><a href="DJ Tech Tools MIDI Fighter Twister">DJ Tech Tools MIDI Fighter Twister</a></td>
-<td>$200</td>
-<td>2 deck controller</td>
-<td>no</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2015</td>
-</tr>
-<tr class="odd">
 <td><a href="Numark Mixtrack Platinum">Numark Mixtrack Platinum</a></td>
 <td>$250</td>
 <td>2 deck[29] all-in-one</td>
@@ -340,7 +332,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
 <td>€90</td>
 <td>2 deck[30] all-in-one</td>

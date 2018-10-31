@@ -84,7 +84,7 @@ See [profiling](profiling).
 specifically for looking through source code. There are a number of
 tools that make searching through source repositories much nicer (e.g.
 they won't go searching in the `.git` subfolder, or digging through
-binary files for your search string).
+binary files for your regex).
 
   - [ack](https://beyondgrep.com/)
   - [ripgrep](https://blog.burntsushi.net/ripgrep/)

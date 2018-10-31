@@ -75,3 +75,17 @@ after Mixxx has crashed, via a core dump file).
 ## Profilers
 
 See [profiling](profiling).
+
+# Command-line Tools
+
+## grep / ack / ag / ripgrep
+
+`grep` is nice for searching files with regexes, but it isn't designed
+specifically for looking through source code. There are a number of
+tools that make searching through source repositories much nicer (e.g.
+they won't go searching in the `.git` subfolder, or digging through
+binary files for your search string).
+
+  - [ack](https://beyondgrep.com/)
+  - [ripgrep](https://blog.burntsushi.net/ripgrep/)
+  - [ag / The Silver Searcher](https://geoff.greer.fm/ag/)

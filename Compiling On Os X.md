@@ -1,11 +1,10 @@
 # Compiling on macOS
 
-Compiling Mixxx for macOS is a simple process once you have all
-dependencies and Qt set up properly. This guide assumes you have basic
-knowledge about using and compiling with the command line (eg:
-./configure, make).
+Compiling Mixxx for macOS is simple once you have all the dependencies
+installed. This guide assumes you have basic knowledge about using the
+command line.
 
-## 1\. Install Xcode development tools
+## 1\. Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
 
@@ -19,11 +18,11 @@ gets placed in the following directory:
 `/Library/Developer/CommandLineTools/`
 
 <span class="underline">Note</span>: If Xcode is already installed in
-your system, then Command Line Tools become installed as well (you can
-check this by trying to run gcc or make from the terminal). To install
-the latest available version of Xcode for your Mac OS X release, go to
-<https://developer.apple.com/download/>. Downloading it requires a free
-registration at Apple's developer site.
+your system, then Command Line Tools are installed as well (you can
+check this by trying to run `clang` or `make` from the terminal). To
+install the latest available version of Xcode for your macOS release, go
+to <https://developer.apple.com/download/>. Downloading it requires a
+free registration at Apple's developer site.
 
 ## 2\. Install build dependencies
 
@@ -179,7 +178,7 @@ Change to the newly created `mixxx` directory, and use scons to compile
 Mixxx:
 
     cd mixxx
-    scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0 qt5=1
+    scons verbose=0
 
 If you are compiling with Qt 4, set `qt5=0`. Qt 4 is only supported in
 Mixxx 2.1 and earlier.

@@ -1,10 +1,9 @@
-# How to compile Mixxx for macOS
+# Compiling on macOS
 
-Compiling Mixxx for Mac OS X is a simple process once you have all
+Compiling Mixxx for macOS is a simple process once you have all
 dependencies and Qt set up properly. This guide assumes you have basic
 knowledge about using and compiling with the command line (eg:
-./configure, make). If you don’t, there is a basic guide available at
-<http://www.ee.surrey.ac.uk/Teaching/Unix/unix7.html>.
+./configure, make).
 
 ## 1\. Install Xcode development tools
 
@@ -28,13 +27,13 @@ registration at Apple's developer site.
 
 ## 2\. Install build dependencies
 
-### Method 1 - Install using Homebrew
+### Method 1: Homebrew
 
-**This is the preferred method of compiling Mixxx on OS X**
+**This is the preferred method of compiling Mixxx on macOS**
 
 [Homebrew](http://mxcl.github.com/homebrew/) is yet another package
-manager for OS X. It is growing quickly in popularity. Assuming you have
-already installed Homebrew and gotten it working:
+manager for macOS. It is growing quickly in popularity. Assuming you
+have already installed Homebrew and gotten it working:
 
   - Open the
     [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
@@ -45,15 +44,53 @@ already installed Homebrew and gotten it working:
 
     brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame
 
+Next you need to set your environment variables so that the compiler can
+find Homebrew-installed dependencies. In the below code you should
+customize `HOMEBREW_PATH` to the path where your Homebrew folder can be
+found. Copy and paste the code below into \~/.bash\_profile:
+
+    HOMEBREW_PATH=/usr/local
+    # See the note below about the Opus workaround.
+    export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
+    export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
+    export LDFLAGS=-L$HOMEBREW_PATH/lib
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt/%VERSION%/
+
+then run `source ~/.bash_profile`.
+
+**Opus Workaround:** The version of libopus included with Homebrew has a
+bug where opusfile.h includes the file opus\_multistream.h. In order for
+this file to be present on the include path, we need to add
+$HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
+fixed in future versions of libopusfile.
+
+**QTDIR** tells scons where to find your Qt installation. Replace
+%VERSION% with the folder name, e.g. 5.11.2 . Run `brew list --versions
+qt` to see what version(s) you have installed.
+
+#### Optional: Qt 4
+
+**Qt 4 is only supported in Mixxx 2.1 and earlier. Newer versions of
+Mixxx do not build with it.**
+
 If you will be compiling with Qt4, also run:
 
     brew tap cartr/qt4
     brew tap-pin cartr/qt4
     brew install qt@4
 
-**OPTIONAL:** To enable
-[libmodplug](http://modplug-xmms.sourceforge.net/) based module tracker
-support.
+Set the `$QTDIR` environment variable (e.g. in your `.bash_profile`, as
+described above) to point to Qt 4:
+
+    export QTDIR=$HOMEBREW_PATH/Cellar/qt@4/%VERSION%/
+
+Replace %VERSION% with the folder name, e.g. 4.8.7\_5 . Run `brew list
+--versions qt@4` to see what version(s) you have installed.
+
+#### Optional: ModPlug support
+
+To enable [libmodplug](http://modplug-xmms.sourceforge.net/) based
+module tracker support.
 
 ``` 
     brew install libmodplug
@@ -72,226 +109,103 @@ Enter Formula name `libmodplug` if asked for, then enter:
     brew install libmodplug
 ```
 
-**OPTIONAL:** Mixxx supports using OSX-provided versions of the MP3 and
-AAC codec. If you don't want to use the OSX versions of these codecs you
-can build the codecs into Mixxx directly. To do this, you have to
-install the MP3 and AAC codecs using Homebrew:
+#### Optional: Alternative MP3/AAC support
+
+Mixxx supports using macOS-provided versions of the MP3 and AAC codec,
+so you do not need this step for MP3/AAC support. If you don't want to
+use the macOS versions of these codecs you can build the codecs into
+Mixxx directly. To do this, you have to install the MP3 and AAC codecs
+using Homebrew:
 
 ``` 
     brew install libid3tag libmad mp4v2 faad2
 ```
 
-### Method 2 - MacPorts
+### Method 2: Use a pre-built environment
 
-Mixxx relies on several external libraries for various features.
-Fortunately, you can automatically download and install most of these
-dependencies through [MacPorts](http://www.macports.org/). MacPorts is a
-package management system that simplifies the installation of software
-on Mac OS X.
+**These instructions only work for Mixxx 2.3 and later.**
 
-  - Start by downloading and installing one of the .dmg disk images for
-    MacPorts: <http://www.macports.org/install.php>
-  - Next, open the
-    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
-    application and use the following command to install the necessary
-    libraries:
+The Mixxx build server produces pre-built macOS build environments.
 
-<!-- end list -->
+See
+[downloads.mixxxx.org](http://downloads.mixxx.org/builds/buildserver/)
+and select the series of Mixxx you would like to develop for (e.g.
+`2.3.x-macosx`). Download the latest build environment you see, or check
+[build/osx/golden\_environment](https://github.com/mixxxdj/mixxx/blob/master/build/osx/golden_environment)
+to see the current official version.
 
-``` 
-    sudo port install scons libid3tag libmad portaudio libsndfile libogg libvorbis mp4v2 portmidi faad2 git taglib libshout2 protobuf-cpp
-```
-
-  - Finally, after that has completed, download and install the [Qt SDK
-    package](https://qt-project.org/downloads) for your platform (qt-mac
-    and qt-mac-debug-libs required, SDK-Installer will not work with
-    standard settings).
-
-<!-- end list -->
-
-  - Optionally, also install HSS1394 (a high-speed MIDI-over-Firewire
-    protocol). See the entry for HSS1394 under the section "[Install
-    build dependencies (Method 2 - Compile by
-    hand)](compiling_on_os_x#install_build_dependencies_method_2_-_compile_by_hand)"
-    for details about installation or exclusion.
-
-#### If This is Your First Time Using MacPorts
-
-After installing MacPorts, using MacPorts to install the required
-libraries is a simple process. Using the command `sudo port install X`,
-where X is the name of each library you’ll need, MacPorts will
-automatically download and install the required dependencies. This can
-be done one at time by entering single entries like `sudo port install
-scons` for each library listed above or all at once by entering the
-entire command given above.
-
-Note that if you attempt to install everything at once and an error
-occurs in installation of a library, MacPorts will not continue past the
-library that caused the error. For example, if after entering the full
-command you receive an error with `git`, you’ll need to sort out the
-error and then finish the installation by entering `sudo port install
-git taglib libshout2` to properly install `git` and then continue with
-installing `taglib` and `libshout2`.
-
-If a library already happens to be installed on your computer, that's a
-time-saver, and you'll see something similar to this:
+After you extract your build environment, you need to tell Mixxx where
+to find it:
 
 ``` 
- ~/Music/mixxx>sudo port install libmad
- Skipping org.macports.activate (libmad ) since this port is already active
- --->  Cleaning libmad
+export OSXLIB=/path/to/build/environment; 
+# Make sure to edit this to match what is actually present in $OSXLIB.
+export QTDIR=${OSXLIB}/Qt-5.11.2; 
+export PATH=${OSXLIB}/bin:${QTDIR}/bin:$PATH; 
+export CXXFLAGS="-isystem ${OSXLIB}/include"; 
+export CFLAGS="-isystem ${OSXLIB}/include"
+export LDFLAGS="-L${OSXLIB}/lib -F${OSXLIB}/lib -Wl,-rpath,${OSXLIB}/lib"; 
 ```
 
-Otherwise, MacPorts will automatically install the library and you'll
-see something similar to this:
+You may need to adjust `$QTDIR` in the above example, depending on what
+is actually present in the environment.
 
-``` 
- ~/Music/mixxx>sudo port install libid3tag
- Password:
- --->  Fetching libid3tag
- --->  Attempting to fetch libid3tag-0.15.1b.tar.gz from ftp://ftp.mars.org/pub/mpeg/
- --->  Verifying checksum(s) for libid3tag
- --->  Extracting libid3tag
- --->  Configuring libid3tag
- --->  Building libid3tag with target all
- --->  Staging libid3tag into destroot
- --->  Installing libid3tag 0.15.1b_0
- --->  Activating libid3tag 0.15.1b_0
- --->  Cleaning libid3tag
-```
+### Method 3: Manual
 
-Note that the password asked for is an admin password for your local
-machine. This is because you are going into super-user mode in order to
-write the libraries to your hard drive. It's basically a safe operation,
-but they put it behind a password so the area where the libraries are
-stored doesn't get touched very often.
-
-If you get a message like this:
-
-``` 
- Error: Target org.macports.fetch returned: fetch failed
-```
-
-It probably means that the config file for port hasn't been updated.
-Perhaps there has been a newer version of the library released. You may
-be hosed at this point, but if you have an older version of the library
-already installed on your system, it may still compile and run properly.
-
-### Method 3 - Compile by hand
-
-You will need to install the following by hand for the compile process:
-
-  - scons ([Download](http://www.scons.org/download.php), [Install
-    guide](http://www.scons.org/doc/0.97/HTML/scons-user/x166.html)) --
-    if you have Macports and have already installed its version of
-    python then "sudo port install scons" is also a reasonable way to
-    get this installed.
-  - libid3tag
-    ([Download](http://sourceforge.net/project/showfiles.php?group_id=12349))
-    -- \`./configure && sudo make install\` or "sudo port install
-    libid3tag"
-  - libmad
-    ([Download](http://sourceforge.net/project/showfiles.php?group_id=12349))
-    -- \`./configure && sudo make install\` or "sudo port install
-    libmad" . If you run into the following error with libmad in 10.6:
-    *version.c:1: error: CPU you selected does not support x86-64
-    instructions* run the following *export CFLAGS="-arch i686"* then,
-    configure, make, sudo make install as normal.
-  - Portaudio [Download](http://www.portaudio.com) -- Use the latest
-    "v19" trunk snapshot -- \`./configure && sudo make install\` or
-    "sudo port install portaudio"
-  - libsndfile
-    ([Download](http://www.mega-nerd.com/libsndfile/#Download)) --
-    \`./configure && sudo make install\` or "sudo port install
-    libsndfile"
-  - libogg, libvorbis ([Download](http://xiph.org/downloads/)) --
-    \`./configure && sudo make install\` or if you have been using port,
-    :?: this will have already been covered by previous ports.:?:
-  - mp4v2 ([Download](http://code.google.com/p/mp4v2/downloads/list)) or
-    "sudo port install mp4v2"
-  - portmidi
-    ([Download](http://sourceforge.net/apps/trac/portmedia/wiki/portmidi),
-    or "sudo port install portmidi"
-  - faad2 ([Download](http://sourceforge.net/projects/faac/)) or "sudo
-    port install faad2"
-  - QT 5 ([Download](https://www.qt.io/download-open-source/#section-4))
-    -- get the Mac binary package.
-  - Git ([Download](http://git-scm.com/)) -- Get the installer for your
-    version of OS X.
-  - HSS1394 -- only applicable to 1.9+ -- "bzr checkout lp:hss1394" then
-    "scons" then "sudo scons install" but you probably don't need it
-    unless you got a HSS1394 MIDI device like the Stanton SCS 1 series.
-    Get around this by including "hss1394=0" when running scons on mixxx
-    (see below).
-  - taglib --
-    ([Download](http://developer.kde.org/~wheeler/taglib.html)) -- or
-    "sudo port install taglib"
-  - libshout -- ([Download](http://www.icecast.org/download.php)) -- or
-    "sudo port install libshout2"
-  - [protobuf](http://code.google.com/p/protobuf/) -- or "sudo port
-    install protobuf-cpp"
-  - [vamp-plugin-sdk](http://www.vamp-plugins.org/develop.html)
-    (**optional** if not installed, Mixxx uses an internal version)
+You can of course install all of [Mixxx's dependencies](dependencies) by
+hand. We don't recommend it.
 
 ## 3\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.
-Either grab the source for the latest release off our [downloads
-page](http://www.mixxx.org/download.php), or checkout the latest Mixxx
-code from our Git repository. Refer to [Using Git](Using%20Git) for more
-details.
+Either grab the source for the latest release from our [downloads
+page](https://www.mixxx.org/download), or checkout a snapshot from our
+git repository:
+
+  - For the latest development (master) branch: `git clone
+    https://github.com/mixxxdj/mixxx.git`
+  - For the latest beta branch: `git clone -b 2.2
+    https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b 2.1
+    https://github.com/mixxxdj/mixxx.git`
+
+To update to the latest version of a git branch, enter (`cd` into) the
+directory you cloned the git repository into and run `git pull`. Refer
+to [Using Git](Using%20Git) for more details.
 
 ## 4\. Compile and install
 
-If you used Homebrew, you need to set your compiler paths accordingly.
-In the below code you should customize `HOMEBREW_PATH` to the path where
-your Homebrew folder can be found. Copy and paste the code below into
-\~/.bash\_profile:
-
-    HOMEBREW_PATH=/usr/local
-    # See the note below about the Opus workaround.
-    export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-    export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-    export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt/%VERSION%/
-
-then run `source ~/.bash_profile`.
-
-**Opus Workaround:** The version of libopus included with Homebrew has a
-bug where opusfile.h includes the file opus\_multistream.h. In order for
-this file to be present on the include path, we need to add
-$HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
-fixed in future versions of libopusfile.
-
-**QTDIR** will tell scons where to find your Qt installation. Replace
-%VERSION% with the folder name, e.g. 5.10.1 . Run `brew list --versions
-qt` to see what version(s) you have installed.
-
 Change to the newly created `mixxx` directory, and use scons to compile
-and install:
+Mixxx:
 
     cd mixxx
     scons stdlib=libc++ hss1394=0 mad=0 faad=0 coreaudio=1 verbose=0 qt5=1
-    scons bundle
 
-If you are compiling with Qt4, replace `qt5=1` with
-`qtdir=/usr/local/Cellar/qt@4/%VERSION%/`. Replace %VERSION% with the
-folder name, e.g. 4.8.7\_5 . Run `brew list --versions qt@4` to see what
-version(s) you have installed.
+If you are compiling with Qt 4, set `qt5=0`. Qt 4 is only supported in
+Mixxx 2.1 and earlier.
 
-This should generate `Mixxx.app` which you can run by double-clicking on
-or typing `open Mixxx.app`. Generating the .app has some expensive
-scanning and relinking steps so if you want to avoid this you can skip
-`scons bundle` and instead on the first run of Mixxx run it as:
+If the build succeeds, there will be a `mixxx` binary in the current
+directory that you can run:
 
     ./mixxx --resourcePath res/
 
-So that it records res/ in mixxx.cfg as where to find skins, controller
-mappings, and other resources instead of dying at startup.
+This runs Mixxx, telling it to use the `res` folder as its source of
+skins, controller presets, etc. This is usually desirable for local
+development.
+
+Alternatively, you can build a macOS `.app` bundle by running:
+
+    scons bundle
+
+This will generate a `Mixxx.app` bundle in the `osx64_build` folder,
+which you can run by double-clicking on or typing `open
+osx64_build/Mixxx.app`. Generating the .app has some expensive scanning
+and relinking steps so for iterative development, we suggest using the
+bare binary instead of creating a bundle.
 
 ### Optional: Use Clang to build
 
-On OS X, GCC is a wrapper around [Clang](http://clang.llvm.org) -- a
+On macOS, GCC is a wrapper around [Clang](http://clang.llvm.org) -- a
 compiler based on [LLVM](http://llvm.org). Using Clang has various
 benefits:
 
@@ -303,7 +217,7 @@ benefits:
     [MemorySanitizer](http://clang.llvm.org/docs/MemorySanitizer.html),
     etc.)
 
-The GCC wrapper around Clang on OS X tries to behave like GCC which
+The GCC wrapper around Clang on macOS tries to behave like GCC which
 loses some of these benefits. To use Clang directly, before running
 `scons`:
 
@@ -315,15 +229,21 @@ You can now use clang-specific SCons options.
   - To enable colorized output, use the `color=1` scons flag.
   - To enable Address Sanitizer, use the `asan=1` scons flag.
 
-### Optional: Alternate source of MP3/M4A support
+### Optional: Alternative MP3/AAC support
 
-As of v1.12, Mixxx will use CoreAudio to decode MP3 and AAC files by
+As of Mixxx 2.0, Mixxx will use CoreAudio to decode MP3 and AAC files by
 default. If you want to use `libmad` or `libfaad` for MP3 and AAC
 decoding, simply set the `mad` and `faad` flags and clear the
-`coreaudio` flag. To enable libmodplug based module tracker support, set
-the `modplug` flag. For example:
+`coreaudio` flag. For example:
 
-    scons hss1394=0 mad=1 faad=1 coreaudio=0 modplug=1 verbose=0
+    scons mad=1 faad=1 coreaudio=0
+
+### Optional: ModPlug Support
+
+To enable libmodplug based module tracker support, set the `modplug`
+flag. For example:
+
+    scons modplug=1
 
 ### Common error messages & solutions
 

@@ -44,6 +44,7 @@ files, it can be difficult to understand how the code fits together.
   - Set up [KDevelop](KDevelop)
   - Set up [Emacs](emacs)
   - Set up [QtCreator](QtCreator)
+  - Set up [Xcode](Xcode)
 
 # Debugging Tools
 

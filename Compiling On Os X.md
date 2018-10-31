@@ -43,7 +43,7 @@ already installed Homebrew and gotten it working:
 
 <!-- end list -->
 
-    brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv
+    brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame
 
 If you will be compiling with Qt4, also run:
 

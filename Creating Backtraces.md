@@ -13,9 +13,8 @@ crashed.
     able to read the pdb file) 
 2.  Extract the downloaded zip file into a folder of your choice. (When
     writing this we get snapshot\_2017-03-19\_13-21.zip) 
-3.  Download Mixxx's debug symbol file: 
-    1.  2.0: FIXME
-    2.  2.1: Re-install Mixxx 2.1 select "Change" and enable "PDB debug
+3.  Install Mixxx's debug symbol file: 
+    1.  Re-install Mixxx 2.1 select "Change" and enable "PDB debug
         files" 
 4.  Copy the mixxx.pdb file from the mixxx install folder to the x64dbg
     symbols folder, create the folder if not exist 

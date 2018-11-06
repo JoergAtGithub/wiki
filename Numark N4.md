@@ -40,6 +40,10 @@ encoder tick
 reverse\_roll  
 *type:* boolean  
 *range:* true or false  
+\=== resetHotCuePageOnTrackLoad === The Hotcuepage should be reset to 1
+when a new Track is loaded into the Deck  
+*type:* boolean  
+*range:* true or false  
 \=== rateRanges === An array of rateRanges in percent  
 *type:* array  
 *range:* \]0;3\]  

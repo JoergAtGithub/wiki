@@ -64,7 +64,7 @@ JavaScript files, so you can not do, for example,
 |  | \_set\_one\[1\]        |  | default |  | Sets the value to 1.0                                                             |  | e.g. "\[Channel*N*\],volume\_set\_one" sets the channel volume to full                          |  |
 |  | \_set\_minus\_one\[2\] |  | default |  | Sets the value to -1.0                                                            |  | e.g. "\[Channel*N*\],volume\_set\_minus\_one" sets the channel volume to zero                   |  |
 |  | \_set\_default\[3\]    |  | default |  | Sets the control to its default                                                   |  | e.g. "\[Channel*N*\],waveform\_zoom\_set\_default" return to default waveform zoom level        |  |
-|  | \_set\_zero\[4\]       |  | default |  | Sets the value to 0.0                                                             |  | e.g. "\[Master\],crossfader\_zero" put the crossfader in the middle again                       |  |
+|  | \_set\_zero\[4\]       |  | default |  | Sets the value to 0.0                                                             |  | e.g. "\[Master\],crossfader\_set\_zero" put the crossfader in the middle again                  |  |
 |  | \_toggle\[5\]          |  | default |  | Sets the value to 0.0 if the value was \> 0.0, and to 1.0 if the value was 0.0    |  | e.g. "\[Channel*N*\],volume\_toggle" will cut off/on a track while you're playing               |  |
 |  | \_minus\_toggle\[6\]   |  | default |  | Sets the value to -1.0 if the value was \> -1.0, and to 1.0 if the value was -1.0 |  | e.g. "\[Master\],crossfader\_minus\_toggle" can tilt the crossfader from left to right          |  |
 

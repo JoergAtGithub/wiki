@@ -123,7 +123,9 @@ show channel output levels instead of master output levels on all decks.
 14\. **Crossfader:** Controls the blend between the two decks.
 
 15-16. **Pitch Bend Down/Up:** Press and hold to momentarily reduce the
-speed of the track.
+speed of the track. **Shift + Pitch Bend:** adjust the key of the
+playing track up or down. Press both buttons to reset the key. **\*Pitch
+Bend Up + Pitch Bend Down:** toggle keylock
 
 17\. **Pitch Fader:** Adjust the speed of the music (activate keylock to
 adjust tempo without affecting pitch). Note that moving the fader down

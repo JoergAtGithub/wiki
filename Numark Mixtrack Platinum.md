@@ -111,8 +111,9 @@ this deck.
 knob left controls the low pass filter; turning it right controls the
 high pass filter. The effect applied here can be configured (the Quick
 Effect option in the Equalizer preferences).  
-**Shift + Filter:** Adjust parameter 1 of the currently focused effect
-on this deck.
+**Shift + Filter:** With no effect focused, this controls the Superknob
+of the effects unit. With an effect focused, this adjusts parameter 1 of
+the currently focused effect on this deck.
 
 12\. **Cue/PFL/Headphones:** Sends pre-fader audio to the headphone
 output. If any channels have the cue button active, the VU meter will

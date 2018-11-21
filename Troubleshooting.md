@@ -20,6 +20,31 @@ input. Refer to the [Using
 Microphones](https://mixxx.org/manual/latest/en/chapters/microphones.html)
 section of the manual for more information.
 
+## Graphical user interface (GUI) is too big or too small
+
+As of Mixxx 2.2, Mixxx uses Qt's automatic scaling for high pixel
+density screens. This relies on the
+[EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data)
+information reported by your monitor. Unfortunately, many monitors
+report incorrect EDID information, resulting in inappropriate scaling.
+
+You can disable automatic scaling by running
+
+    export QT_AUTO_SCREEN_SCALE_FACTOR=0
+
+before running Mixxx. Alternatively, you can manually set a scale factor
+by running
+
+    export QT_SCREEN_SCALE_FACTORS=your-scale-factor
+
+To avoid needing to run these commands every time you run Mixxx, you can
+add them to /etc/profile or \~/.bashrc (assuming you are using Bash as
+your shell), log out, and log back in.
+
+Refer to [Qt's
+documentation](http://doc.qt.io/qt-5/highdpi.html#high-dpi-support-in-qt)
+for details.
+
 ## Other programs do not make sound while Mixxx is running
 
 On GNU/Linux, running Mixxx from a GUI menu or from the launcher icon

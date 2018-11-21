@@ -54,6 +54,8 @@ are “true” or “false” unless specified.
     control behavior can be activated using shift+pad mode+sampler while
     pad mode+sampler will activate the special behavior (defaults to
     false)
+  - \* **ShiftLoadEjects:** if true, pressing shift + load will eject a
+    track (defaults to false)
 
 ## Mapping
 
@@ -88,6 +90,9 @@ master output.
 6\. **Load:** Press one of these buttons while a track is selected in
 the library window to assign it to Deck 1 and 2 (or 3 and 4),
 respectively, in the software.  
+**Shift + Load:** Load the track and play (or if the ShiftLoadEjects
+option is set, eject the track)
+
 7\. **Gain Knobs:** Adjust the gain of the deck.  
 **Shift + Gain:** Adjust parameter 2 of the currently focused effect on
 this deck.

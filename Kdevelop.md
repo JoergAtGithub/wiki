@@ -99,6 +99,7 @@ the process.
     /usr/include/qt5/QtMultimedia
     /usr/include/qt5/QtNetwork
     /usr/include/qt5/QtOpenGL
+    /usr/include/qt5/QtQml
     /usr/include/qt5/QtScript
     /usr/include/qt5/QtScriptTools
     /usr/include/qt5/QtSql

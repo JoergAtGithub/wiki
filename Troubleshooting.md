@@ -23,12 +23,8 @@ section of the manual for more information.
 ## Graphical user interface (GUI) is too big or too small
 
 As of Mixxx 2.2, Mixxx uses Qt's automatic scaling for high pixel
-density screens. This relies on the
-[EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data)
-information reported by your monitor. Unfortunately, many monitors
-report incorrect EDID information, resulting in inappropriate scaling.
-
-You can disable automatic scaling by running
+density screens. Unfortunately, this does not always work well. You can
+disable automatic scaling by running
 
     export QT_AUTO_SCREEN_SCALE_FACTOR=0
 

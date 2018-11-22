@@ -23,7 +23,10 @@ section of the manual for more information.
 ## Graphical user interface (GUI) is too big or too small
 
 As of Mixxx 2.2, Mixxx uses Qt's automatic scaling for high pixel
-density screens. Unfortunately, this does not always work well. You can
+density screens. Unfortunately, this does not always work well.
+Sometimes it uses scaling to make the GUI too big on screens that do not
+need scaling, or if your screen does require scaling you may prefer a
+different size than the automatically determined default. You can
 disable automatic scaling by running
 
     export QT_AUTO_SCREEN_SCALE_FACTOR=0

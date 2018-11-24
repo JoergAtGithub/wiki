@@ -54,7 +54,7 @@ are “true” or “false” unless specified.
     control behavior can be activated using shift+pad mode+sampler while
     pad mode+sampler will activate the special behavior (defaults to
     false)
-  - \* **ShiftLoadEjects:** if true, pressing shift + load will eject a
+  - **ShiftLoadEjects:** if true, pressing shift + load will eject a
     track (defaults to false)
 
 ## Mapping

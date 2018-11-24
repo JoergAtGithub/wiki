@@ -104,12 +104,12 @@ this deck.
 
 9\. **Mid EQ Knobs:** Adjust the volume of the mid frequencies of the
 deck.  
-**Shift + Mid:** Adjust parameter 3 of the currently focused effect on
+**Shift + Mid:** Adjust parameter 4 of the currently focused effect on
 this deck.
 
 10\. **Low EQ Knobs:** Adjust the volume of the low frequencies of the
 deck.  
-**Shift + Low:** Adjust parameter 3 of the currently focused effect on
+**Shift + Low:** Adjust parameter 5 of the currently focused effect on
 this deck.
 
 11\. **Filter:** Adjusts the amount of the filter effect. Turning the

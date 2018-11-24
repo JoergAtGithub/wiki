@@ -85,7 +85,7 @@ don't do anything. Neither does the sampler volume slider.
 
 Some additional functions are accessible with the shift button:
 
-  - Unordered List ItemShift + Load to eject a track.
+  - Shift + Load to eject a track.
   - Shift + Play while the deck is playing does a breaking stop.
   - Shift + Censor does a spinback stop.
 

@@ -490,8 +490,8 @@ false);
 `
 
 Note that this only works for controls manipulated through
-engine.setValue() or engine.setParameter() in a script. It does not work
-for controls mapped in an XML file.
+`engine.setValue()` or `engine.setParameter()` in a script. It does not
+work for controls mapped in an XML file.
 
 If you change the function of an absolute control (one that has hard
 stops at max and min positions) that is controlling MixxxControls with

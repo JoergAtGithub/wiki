@@ -479,15 +479,14 @@ leave it enabled.
 
 It's very simple to use:
 
-``` c++
+``` javascript
 engine.softTakeover(string group, string key, bool enable);
 ```
 
 So to enable soft-takeover for the pitch control on channel
 1:`engine.softTakeover("[Channel1]", "rate", true);
-` ...and to disable it: `engine.softTakeover("[Channel1]", "rate",
-false);
-`
+` (You can disable it by changing `true` to `false`, but there generally
+is no need to do that.)
 
 Note that this only works for controls manipulated through
 `engine.setValue()` or `engine.setParameter()` in a script. It does not
@@ -495,11 +494,11 @@ work for controls mapped in an XML file.
 
 If you change the function of an absolute control (one that has hard
 stops at max and min positions) that is controlling MixxxControls with
-soft-takeover enabled, you will need to reset the soft-takeover status
-each time you change what the physical control is manipulating to avoid
-an abrupt jump when switching the physical control back. Do this with
-the following function, supplying the MixxxControl you're switching
-control away from:
+soft-takeover enabled, you will need to tell Mixxx each time you change
+what the physical control is manipulating to avoid an abrupt jump when
+switching the physical control back. Do this with the following
+function, supplying the MixxxControl you're switching control *away*
+from:
 
 ``` javascript
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");

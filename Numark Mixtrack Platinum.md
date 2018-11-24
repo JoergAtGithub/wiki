@@ -151,19 +151,22 @@ effect's meta knob.
 **Shift + FX 1:** Cycle to the next effect.  
 **Hold + FX 1:** Enable this effect in instant mode, after the button is
 released the effect will be disabled again.  
-**Tap + FX 1:** Focus this effect to allow adjusting it's parameters.
+**Tap + FX 1:** Focus this effect to allow adjusting its metaknob with
+the touch strip.
 
 21\. **FX 2 On/Off:** Toggle FX 2 of the deck’s Effect Unit  
 **Shift + FX 2:** Cycle to the next effect.  
 **Hold + FX 2:** Enable this effect in instant mode, after the button is
 released the effect will be disabled again.  
-**Tap + FX 2:** Focus this effect to allow adjusting it's parameters.
+**Tap + FX 2:** Focus this effect to allow adjusting its metaknob with
+the touch strip.
 
 22\. **FX 3 On/Off:** Toggle FX 3 of the deck’s Effect Unit  
 **Shift + FX 3:** Cycle to the next effect.  
 **Hold + FX 3:** Enable this effect in instant mode, after the button is
 released the effect will be disabled again.  
-**Tap + FX 3:** Focus this effect to allow adjusting it's parameters.
+**Tap + FX 3:** Focus this effect to allow adjusting its metaknob with
+the touch strip.
 
 23\. **Tap BPM:** Press this button several times on beat to manually
 enter a new BPM. The software will ignore the track's BPM and follow

@@ -180,8 +180,6 @@ display.
 will result in vinyl scratching, when disabled, nothing will happen and
 the entire jog wheel behaves as if the side was touched.  
 **Touch side:** Pitch bend (nudging) if track is playing  
-**Wheel On + Touch platter:** scratching: touch the platter and move
-it  
 **Shift + Touch platter:** Quickly scroll through the track  
 **Shift + Touch side:** Beat jump  
 26\. **Jog Wheel Display:** The display is fully functional with this

@@ -330,8 +330,6 @@ functions will [\#send MIDI output to the
 controller](#send%20MIDI%20output%20to%20the%20controller), but they can
 also be used to change the state of script variables.
 
-#### Mixxx 2.1
-
 Callback functions are registered with the `engine.makeConnection`
 function, which takes 3 parameters:
 
@@ -375,9 +373,11 @@ syncConnection.trigger();
 
 #### Mixxx 2.0 and older
 
-Callback functions take the same 3 arguments as those passed to the new
-`engine.makeConnection` function described above, but the connections
-are registered with these functions:
+These functions are deprecated because there is no way to individually
+disconnect or trigger specific callback functions when multiple
+callbacks were connected to the same Mixxx Control. Do not use these
+functions in new code. This documentation is kept here to help
+understand old code.
 
   - **engine.connectControl**(*control group*, *control name*, *script
     function*) - Connects the specified Mixxx control signal to the
@@ -397,10 +397,6 @@ are registered with these functions:
     callbacks are connected, they will all be executed. This will only
     trigger connected JavaScript functions and will not refresh outputs
     connected in XML.
-
-These functions are deprecated because there is no way to individually
-disconnect or trigger specific callback functions when multiple
-callbacks were connected to the same Mixxx Control.
 
 ### Send MIDI output to the controller
 

@@ -11,23 +11,23 @@
     
 
 The Numark Mixtrack Platinum is a 2 channel (with 4 channel layering)
-entry level DJ controller with an integrated sound card. The stand out
-feature of the Mixtrack Platinum is the LCD displays integrated into the
-jog wheels.
+entry level DJ controller with an integrated audio interface. The stand
+out feature of the Mixtrack Platinum is the LCD displays integrated into
+the jog wheels. It is a USB Audio and MIDI Class compliant device and
+works with Linux, macOS, and Windows.
+
+## Audio interface
+
+Configure Mixxx's Master output for channels 1-2 and Headphones output
+for Channels 3-4.
 
 The microphone input on this controller is not available to the computer
-through the controller's sound card. It is mixed with the master output
-in hardware, so this controller's sound card is not suitable for
-broadcasting or recording the inputs. If you want to use the controller
-for broadcasting or recording, a separate [USB audio
+through the controller's audio interface. It is mixed with the master
+output in hardware, so this controller's audio itnerface is not suitable
+for broadcasting or recording the inputs. If you want to use the
+controller for broadcasting or recording, a separate [USB audio
 interface](Hardware%20Compatibility#USB%20Audio%20Interfaces) with a
 microphone input is suggested.
-
-## Soundcard
-
-The **master** output of the Mixtrack Platinum maps to channels 1 and 2
-of the soundcard and the \*\*headphone \*\* output maps to channels 3
-and 4.
 
 ## Configuration Options
 

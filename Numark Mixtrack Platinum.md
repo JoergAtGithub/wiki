@@ -200,7 +200,8 @@ of the other track
 30\. **Cue (Transport Control):** Behavior depends on the [cue
 mode](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
 set in the Mixxx preferences.  
-**Shift + Cue:** return the play head to the start of the track.
+**Shift + Cue:** return the play head to the start of the track and stop
+the deck.
 
 31\. **Play/Pause:** Starts and stops playback.  
 **Shift + Play/Pause:** stutter the track from the last set cue point.

@@ -302,10 +302,10 @@ auto loop control with be selected when Shift is used.
 
 Hold Pad Mode and press the pad marked Sampler to enter sampler mode
 (hold down shift as well to control slots 5-8 using the hotcue buttons).
-A press of any of the sample buttons will load a sample if non are
-loaded. Shift + sample pad will unload a sample if it is not playing.
-Pressing a pad when a sample is loaded will play the sample, pressing
-shift + sample pad while a sample is playing will stop it.
+A press of any of the sample buttons will load a sample if the sampler
+is not loaded. Shift + sample pad will unload a sample if it is not
+playing. Pressing a pad when a sample is loaded will play the sample,
+pressing shift + sample pad while a sample is playing will stop it.
 
 Use **shift+cue gain** to adjust the volume of the sampler. When
 switching to the pad mode to sampler, hold down shift to control slots

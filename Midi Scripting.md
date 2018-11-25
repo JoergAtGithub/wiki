@@ -504,6 +504,12 @@ from:
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");
 ```
 
+This should be called when receiving MIDI input for the knob/fader that
+switches its behavior. If it is called unconditionally when switching to
+another layer and the user doesn't actually move the knob/fader before
+the next layer change, Mixxx will mistakenly initiate soft takeover if
+the user moves the knob/fader fast enough.
+
 ## Scratching and jog wheels
 
 Typically jog wheels are mapped so they control scratching when touched

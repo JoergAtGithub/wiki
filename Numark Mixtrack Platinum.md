@@ -312,4 +312,7 @@ switching to the pad mode to sampler, hold down shift to control slots
 5-8 using the hotcue buttons.
 
 Note: the 8 sample slots on each deck all control the same 8 slots in
-Mixxx no matter which deck the sampler is active on.
+Mixxx no matter which deck the sampler is active on. This is because the
+controller sends the same MIDI codes for button presses on each side, so
+there is no way for Mixxx to tell whether a sampler button was pressed
+on the left or right side of the controller.

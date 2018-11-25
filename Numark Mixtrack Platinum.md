@@ -256,7 +256,8 @@ the pad) to assign the upper 4 pads to the functions listed below:
     button will have no effect.: When assigned, the Pad LED will light
     blue  
   - **Loop x1/2** – Halve the length of the loop. Press Shift + Loop
-    x1/2 to double the length of the loop.
+    x1/2 to double the length of the loop. Note that this does not
+    update the beatloop size shown on screen.
 
 If Manual Loop is selected with Shift and Pad Mode held down this will
 activate control of hotcues 5-8 on the upper row instead of the looping

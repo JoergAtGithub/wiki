@@ -25,10 +25,10 @@ Defines the speedup-factor used when using the searchbutton and
 scrolling.  
 *type:* number  
 *range:* \]0;+∞\[  
-\=== warnAfterPosition === Percent after which the triangular led over
-the channel starts to blink.  
+\=== warnAfterTime === Time in seconds before the end of the track in
+which the controller should warn you.  
 *type:* number  
-*range:* \]0;1\]  
+*range:* \[0;+∞\]  
 \=== blinkInterval === Timeinterval for the triangular Leds in ms  
 *type:* number  
 *range:* \[20;+∞\[  
@@ -36,12 +36,12 @@ the channel starts to blink.
 encoder tick  
 *type:* number  
 *range:* \]0;1\]  
-\=== cueReverseRoll === If \[SHIFT\]+\[CUE\] should trigger a
-reverse\_roll  
-*type:* boolean  
-*range:* true or false  
 \=== resetHotCuePageOnTrackLoad === The Hotcuepage should be reset to 1
 when a new Track is loaded into the Deck  
+*type:* boolean  
+*range:* true or false  
+\=== cueReverseRoll === If \[SHIFT\]+\[CUE\] should trigger a
+reverse\_roll  
 *type:* boolean  
 *range:* true or false  
 \=== rateRanges === An array of rateRanges in percent  
@@ -170,8 +170,7 @@ Shifted: Toggles Slip
 #### Reloop
 
 Default: De-/Re-activates the last loop  
-Shifted: Toggles Repeat (Deck will repeat the current Track
-infinitely)  
+Shifted: Jumps to start of last loop and stops playback there  
 
 #### FX1 Knob
 
@@ -187,12 +186,12 @@ Shifted: Controls the Mix Knob on EffectRack2.
 
 Default: visit [\#special\_features](#special_features) for more info on
 what this encoder does  
-Shifted: Change the current Loop size  
+Shifted: Double/Halve current Loop Size  
 
 #### Beat Jump
 
 Default: Jump in the direction turned  
-Shifted: Change beatjump size  
+Shifted: Double/Halve current Beat Jump Size  
 
 ## Mixer
 
@@ -254,14 +253,16 @@ Shift: Maximize Library
 The Crossfader and its assignment buttons are integrated seamlessly with
 Mixxx.
 
-#### Line/PC Input
+#### Line/PC Input Source
 
 Function as expected: Mutes the corresponding Deck in Mixxx if set to
 Line.
 
-#### Crossfader Countour
+#### Crossfader Contour
 
-Somewhat broken...
+Normal: Uses the crossfader parameters that were present when the
+mapping was loaded Scratch: Uses Scratch typical parameters for hard
+cuts
 
 #### Cue-Master Mix
 

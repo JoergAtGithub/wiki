@@ -83,9 +83,10 @@ software.
 **Shift+Cue Gain:** adjust the volume of the first 8 sampler banks
 
 5\. **VU Meter:** Monitor the volume levels of the master output and
-each channel. When cue/pfl is active on any channel, the meter shows the
-levels for each channel. Otherwise the meter shows the levels of the
-master output.
+each channel. When cue/pfl is active on ANY channel, the meter shows the
+mono levels each channel (left meter shows the deck on the left, right
+meter for the deck on the right). Otherwise the meter shows the stereo
+levels of the master output.
 
 6\. **Load:** Press one of these buttons while a track is selected in
 the library window to assign it to Deck 1 and 2 (or 3 and 4),

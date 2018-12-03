@@ -30,7 +30,7 @@ free registration at Apple's developer site.
 
 **This is the preferred method of compiling Mixxx on macOS**
 
-[Homebrew](http://mxcl.github.com/homebrew/) is yet another package
+[Homebrew](https://github.com/Homebrew/brew) is yet another package
 manager for macOS. It is growing quickly in popularity. Assuming you
 have already installed Homebrew and gotten it working:
 

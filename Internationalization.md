@@ -76,7 +76,6 @@ A glossary makes the translation process much easier for translators as terms ha
 TM systems promote quality and consistency. They provide automatic suggestions based on similarities between source strings, allowing translators to leverage previous translations. Translators can use TM suggestions or adjust them to create new, more contextually appropriate translations.
 
   * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx TM]] - The available TM entries are under the ‘suggestions’ tab of each translatable string of your language.
-  * [[http://open-tran.eu/|open-tran.eu]] - Memory Translation database of open source projects.
   * [[http://mymemory.translated.net/|mymemory.translated.net]] - The world largest collaborative translation archive.
 
 ==== Online Translation and Dictionaries ====

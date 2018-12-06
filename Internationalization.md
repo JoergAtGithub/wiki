@@ -90,9 +90,9 @@ TM systems promote quality and consistency. They provide automatic suggestions b
 
 If you are more comfortable translating locally on your computer, instead online in a web browser.
 
-  * [[https://doc.qt.io/qt-5/qtlinguist-index.html|Qt Linguist]] - Provides a set of tools that speed the translation and internationalization of applications. Windows, Linux, macOS
+  * [[https://doc.qt.io/qt-5/qtlinguist-index.html|Qt Linguist]] - Provides a set of tools that speed the translation and internationalisation of applications. Windows, Linux, macOS. [[https://github.com/lelegard/qtlinguist-installers|Standalone Installer]]
   * [[http://www.lingoes.net/| Lingoes]] - An easy and intuitive dictionary and text translation software. Windows
-  * [[http://virtaal.translatehouse.org/|Virtaal]] - A feature rich translation tool that allows you to focus on translation. Windows, Linux, macOS
+  * [[https://omegat.org/|OmegaT]] - A free translation memory application written in Java. It is a tool intended for professional translators. Windows, Linux, macOS
   * [[http://www.kde.org/applications/development/lokalize/|Lokalize]] - A computer-aided translation system that focuses on productivity and quality assurance. Windows, Linux
 
 ===== Common Pitfalls in Translation =====

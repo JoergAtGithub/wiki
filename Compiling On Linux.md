@@ -47,7 +47,7 @@ installation order is
 If you are building Mixxx **2.2** or the **master** Git branch, run:
 
 ``` bash
-sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev
+sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev
 ```
 
 If you are building Mixxx **2.1**, run:
@@ -110,7 +110,7 @@ Then run:
 su
 [Enter the password for the user "root" at the prompt]
 dnf groupinstall "Development Tools"
-dnf install gcc-c++ upower-devel lilv-devel
+dnf install gcc-c++ upower-devel lilv-devel qt5-qtx11extras-devel
 dnf builddep mixxx
 ```
 

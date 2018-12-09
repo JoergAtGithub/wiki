@@ -122,16 +122,16 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 
 ### Hot cues / Sampler buttons
 
-  - **Hot cue buttons**
-  - Press to set or recall a hot cue. The buttons light up when one is
-    set.
-  - Hold shift and press to delete the cue.
-  - **Sampler** buttons - These light up when a sample is loaded to the
-    corresponding sampler and flash when that sampler is playing. Press
-    to play the sample from the beginning. When shifted, press to stop
-    the sample.
-  - **Scissor** button - Switches hot cue & sampler button grid for
-    access to hot cues/samplers 5-8
+  - **1-4** Hot cue buttons
+  - LED: lit if a hot cue is set
+  - Press: set or recall a hot cue
+  - Shift & press: delete the hot cue
+  - **▶ 1-4** Sampler buttons
+  - LED: lit when a sample is loaded to the corresponding sampler,
+    flashes when that sampler is playing.
+  - Press: play the sample from the beginning
+  - Shift & Press: stop the sample
+  - **Scissor** button - Switches hot cues 5-8 & samplers 5-8
 
 ### Wheel & Vinyl button
 

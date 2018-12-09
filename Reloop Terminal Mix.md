@@ -193,30 +193,29 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 *The below controls adjust the specified parameter of the respective
 virtual deck.*
 
-  - **Gain** knob - Adjusts the pre-fader gain
-  - **High/Mid/Low EQ** knobs - Adjust the volume of the respective
-    frequency range
-  - **Filter** knob - Adjust the QuickEffect Meta knob (default: filter)
+  - **GAIN** knob - Adjusts the pre-fader gain
+  - **HIGH**/**MID**/**LOW** EQ knobs - Adjust the volume of the
+    respective frequency range
+  - **FILTER** knob - Adjust the QuickEffect Meta knob (default: filter)
   - **Headphone** button - Toggles hearing the deck in the headphone
     output
-  - **Arrow** / **Number** button
-  - Press to load the currently highlighted song into that deck.
-  - Shift and press to toggle fader-start (on the channel fader and
+  - 🡄 / 🡆 / **1** / **2** / **3** / **4**
+  - Press: load the currently highlighted song into that deck.
+  - Shift & press: toggle fader-start (on the channel fader and
     cross-fader when applicable.) The button flashes when fader-start is
     enabled on that deck.
-  - **Channel slider** - Adjusts the output volume
+  - **Channel slider** - Adjust the output volume
 
 *The below controls are not deck-specific.*
 
-  - ***Master** knob - Adjusts the master output volume of the internal
-    sound card. (Hard-wired knob. This is not mapped in Mixxx.)*
-  - ***Booth** knob - Adjusts the booth output volume of the internal
-    sound card. (Hard-wired knob. This is not mapped in Mixxx.)*
-  - ***Phones** knob - Adjusts the headphone output volume of the
-    internal sound card. (Hard-wired knob. This is not mapped in
-    Mixxx.)*
-  - **Cue mix** knob - Adjusts in hardware how much of the headphone bus
-    vs the master output you hear in the headphones.
+  - **Master** knob - Adjust the master output volume of the internal
+    sound card. *(Hard-wired knob, does not send MIDI messages)*
+  - **Booth** knob - Adjust the booth output volume of the internal
+    sound card. *(Hard-wired knob, does not send MIDI messages)*
+  - **Phones** knob - Adjust the headphone output volume of the internal
+    sound card. *(Hard-wired knob, does not send MIDI messages)*
+  - **Cue mix** knob - Adjust how much of the headphone bus vs the
+    master output you hear in the headphones.
   - **Sampler volume** knob - Adjusts the volume of all of the samplers
     at once.
   - ***Crates** button - Does nothing at the moment. (Mixxx's library
@@ -226,17 +225,23 @@ virtual deck.*
     Wizard to assign an action.*
   - ***Prep** button - Does nothing at the moment. Use the MIDI Learning
     Wizard to assign an action.*
-  - **Back** button - Pressing moves the highlight in the active library
-    panel to the right. With Shift it moves the highlight to the left.
+  - **Back** button
+  - Press: move the highlight in the active library panel to the right
+  - Shift & Press: move the highlight to the left
   - **TRAX knob**
-  - Turn to move the highlight up/down by one line.
-  - Shift and turn to move the highlight one page up/down
-  - Press while Tree panel has focus expands an item if possible. If
+  - Turn: move the highlight up/down by one line
+  - Shift & turn: move the highlight one page up/down
+  - Press while Tree panel has focus: expand an item if possible. If
     item can't be expanded further, it is selected and and highight is
     shifted rightwarde to the respective tracks table.
-  - Press while tracks table has focus performs the Track Load Action
+  - Press while tracks table has focus: perform the Track Load Action
     specified in *Preferences \> Library* (default: load track to next
     empty deck)
+  - **Shift Lock** switch at the back side
+  - ON: press **Shift** buttons once to switch to secondary button/knob
+    actions
+  - OFF: press & hold **Shift** buttons to switch to secondary
+    button/knob actions
 
 ### Cross-fader section
 

@@ -66,20 +66,32 @@ side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
 
 ### FX Controls
 
-  - **FX** knobs & buttons - These control the FX units via
-    components-js, see [Effect
-    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)
-    (Note: these don't switch to decks 3 and 4.)
-  - **Beats knob**
-  - Turning this adjusts Wet/Dry for the respective FX unit (see [Effect
-    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)).
-  - Pressing this repeatedly adjusts the BPM (not the pitch/speed\!) of
-    the loaded track.
-  - Pressing this with Shift moves the nearest beat marker to the
-    current play position.
-  - **Tap** button - This is the FX focus button (see [Effect
-    Controls](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#effects_controls)).
-    It also flashes on each beat. 
+This mapping uses the [Standard Effects
+Mapping](Standard%20Effects%20Mapping) via components-js to control the
+FX units.  
+Note: these knobs & buttons don't switch to decks 3 and 4.
+
+  - **FX1/2/3** knobs
+  - control the Meta knob of each effect
+  - focused effect: control the first three knob parameters of the
+    focused effect
+  - **ON** buttons
+  - Press: toggle the effects
+  - Press & hold: temporarily toggle an effect
+  - focused effect: control the first three button parameters of the
+    focused effect
+  - **Beats** encoder
+  - Turn: adjust the Wet/Dry knob of the effect unit
+  - Press repeatedly: adjust the BPM (not the pitch/speed\!) of the
+    loaded track
+  - Shift & Press: move the nearest beat marker to the current play
+    position
+  - **Tap** button
+  - LED flashes on each beat
+  - Press & hold, then press any ON button to focus the respective
+    effect
+  - Shift & Press: switch between FX units 1/3 (left FX section) and 2/4
+    (right FX section)
 
 ### Loop Controls
 

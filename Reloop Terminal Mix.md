@@ -131,7 +131,7 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
     flashes when that sampler is playing.
   - Press: play the sample from the beginning
   - Shift & Press: stop the sample
-  - **Scissor** button - Switches hot cues 5-8 & samplers 5-8
+  - **✂ (scissors)** button - Switches hot cues 5-8 & samplers 5-8
 
 ### Wheel & Vinyl button
 

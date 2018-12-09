@@ -162,7 +162,7 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
     mode](https://mixxx.org/manual/2.1/chapters/user_interface.html#using-cue-modes)
   - Press: Set or recall the main cue point on the track
   - Press & hold: play from Cue point. Release stops playback
-  - **▶ || (Play/Pause)** button - Toggles playback of the track.
+  - **▶ || (Play/Pause)** Toggle playback of the track
   - **Shift & ▶◀ (Sync)** (left deck) / **Shift & ▶|| (Play/Pause)**
     (right deck)
   - initiate the [brake

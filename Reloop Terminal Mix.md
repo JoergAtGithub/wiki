@@ -95,33 +95,30 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 
 ### Loop Controls
 
-  - **Loop length** knob
-  - Turning this doubles or halves the current loop size visible in loop
-    size spinbox in each skin.
-  - Pressing it sets a loop of that size. Pressing it with Shift
-    re-activates the previous loop and plays from loop in point.
-  - **Loop in/halve** button
-  - Sets the loop in point and flashes when a loop is active.
-  - While a loop is active, press and hold it to drag the loop in point.
-  - **Loop out/double** button
-  - Sets the loop out point and flashes when a loop is active.
-  - While a loop is active, press and hold it to drag the loop out
-    point.
-  - **Loop move knob**
-  - Press and turn this to adjust the beatjump size visible in beatjump
-    spinbox in each skin.
-  - Turning without an active loop jumps back or forth by the size set
-    in beatjump spinbox.
-  - Turning with Shift pressed while a loop is active shifts the loop
-    back or forth by the size set in beatjump spinbox.
-  - Turning it while a loop is active and quantize is On, moves the
-    position of the current loop by one beat per detent. This helps to
-    correct the loop in point in case it snapped to the wrong beat
-    marker.
-  - Turning it while a loop is active and quantize is Off, moves the
-    position of the current loop by 1/8 beat per detent. This helps to
-    correct the loop in point in case it's set slightly too early or too
-    late.
+  - **Length** knob
+  - Turn: double or halve the current *loop size* (beats) visible in
+    loop size spinbox in each skin.
+  - Press: set a loop of *loop size*
+  - Shift & Press: re-activate the previous loop
+
+<!-- end list -->
+
+``` 
+    * play position behind loop: jumps to loop in point and plays loop from there
+    * play position before loop: activates loop and plays it as soon as play position crosses loop-in marker
+* **IN** / **1/2x** button
+* Press: set the loop in point, flashes when a loop is active
+* Press & hold: drags the loop in point of an active loop
+* **OUT** / **2x** button
+* Press: set the loop out point, flashes when a loop is active
+* Press & hold: drags the loop out point of an active loop
+* **MOVE** knob
+* Press & turn: adjust the //beatjump size// visible in beatjump spinbox in each skin
+* Turn, no active loop: jump back or forth in the track by //beatjump size//
+* Shift & turn, active loop: shift the loop back or forth by //beatjump size//
+* Shift & turn, active loop, Qunatize ON: move the loop position by one beat per detent (helpful to correct the loop in point in case it snapped to the wrong beat marker)
+* Shift & turn, actvei loop, Quantize OFF: move the loop position by 1/8 beat per detent (helpful to correct the loop in point in case it's set slightly too early or too late)
+```
 
 ### Hot cues / Sampler buttons
 

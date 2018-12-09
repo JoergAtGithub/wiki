@@ -135,16 +135,20 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 
 ### Wheel & Vinyl button
 
-  - **Wheel**
-  - Move the wheel while touching the top black area to scratch the
-    current track like a vinyl record if vinyl mode is enabled
-  - Move the wheel without touching the top (so on the gray sides) to
-    perform a temporary pitch bend. With scratch mode disabled, all
-    regions of the wheel can be touched and turned to perform a
-    temporary pitch bend.
   - **Vinyl/Search** button
-  - Press and release to toggle scratching with the wheel.
-  - Hold down and turn the wheel to seek through the track.
+  - Press & release: toggle scratching with the wheel (LED On)
+  - Hold down & turn the wheel: seek through the track
+  - **Wheel**
+  - Vinyl mode ON
+
+<!-- end list -->
+
+``` 
+    * Touch the top black area & turn: scratch the current track like a vinyl record
+    * Touch gray rim only & turn: perform a temporary pitch bend
+* Vinyl mode OFF
+    *  Touch wheel anywhere & turn: perform a temporary pitch bend
+```
 
 ### Transport buttons
 

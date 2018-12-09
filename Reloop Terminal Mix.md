@@ -96,17 +96,17 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 
 ### Loop Controls
 
-  - **Length** knob
+  - **LENGTH** knob
   - Turn: double or halve the current *loop size* (beats) visible in
     loop size spinbox in each skin.
-  - Press: set a loop of *loop size*
+  - Press: set and activate a loop of *loop size*
   - Shift & Press: re-activate the previous loop
 
 <!-- end list -->
 
 ``` 
-    * play position behind loop: jumps to loop in point and plays loop from there
-    * play position before loop: activates loop and plays it as soon as play position crosses loop-in marker
+    * play position behind loop-out: jump to loop-in point and play loop from there
+    * play position before loop: activate loop, keep playing and enter loop when play position crosses loop-in marker
 * **IN** / **1/2x** button
 * Press: set the loop in point, flashes when a loop is active
 * Press & hold: drags the loop in point of an active loop

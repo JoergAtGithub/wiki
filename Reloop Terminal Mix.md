@@ -152,26 +152,26 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 
 ### Transport buttons
 
-  - **\>\< (Sync)** button - Synchronizes the tempo and beat phase of
-    this deck to that of the other. \[ToDo: long-press to toggle master
-    sync incl. LED feedback\]
-  - **CUP** button - This stands for Cue-Play which starts playback from
-    the cue point. This is also known as stutter play.
-  - **Q (Cue)** button - Sets or recalls the main cue point on the
-    track. Is lit or flashes when play position is at cue point. [set
-    cue
+  - **▶◀ (Sync)** - Synchronizes the tempo and beat phase of this deck
+    to that of the other. \[ToDo: long-press to toggle master sync incl.
+    LED feedback\]
+  - **CUP** (Cue-Play) Start playback from the cue point (also known as
+    stutter play)
+  - **Q (Cue)**
+  - LED: lit or flashes when play position is at cue point. [set cue
     mode](https://mixxx.org/manual/2.1/chapters/user_interface.html#using-cue-modes)
-  - **\> || (Play/Pause)** button - Toggles playback of the track.
-  - **\>\< (Sync)** button (left deck) / **\> || (Play/Pause)** button
+  - Press: Set or recall the main cue point on the track
+  - Press & hold: play from Cue point. Release stops playback
+  - **▶ || (Play/Pause)** button - Toggles playback of the track.
+  - **Shift & ▶◀ (Sync)** (left deck) / **Shift & ▶|| (Play/Pause)**
     (right deck)
-  - Holding Shift and pressing one of those buttons initiates the [brake
+  - initiate the [brake
     effect](https://www.mixxx.org/wiki/doku.php/midi_scripting#spinback_brake_and_soft_start_effect)
-    for the respective deck: track slows down to full stop. This can be
-    interrupted by touching the wheel when scratch mode is enabled:
-    track speed jumps back to normal (considering th pitch slider) and
-    playback continues as soon as the wheel is released. Open the
-    `controllers/Reloop Terminal Mix 2-4.js` file and look for
-    `TerminalMix.brake` to adjust parameters.
+    for the respective deck: track slows down to full stop.
+  - Touch wheel, Vinyl mode ON: track speed jumps back to normal
+    (considering the pitch slider) and playback continues as soon as the
+    wheel is released. Open the `controllers/Reloop Terminal Mix 2-4.js`
+    file and look for `TerminalMix.brake` to adjust parameters.
 
 <!-- end list -->
 

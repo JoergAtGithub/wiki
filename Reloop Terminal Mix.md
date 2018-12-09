@@ -20,10 +20,12 @@ Mixxx.
 ## Sound hardware
 
 The Reloop Terminal Mix 2 and Terminal Mix 4 have integrated
-multichannel sound cards. <span class="underline">Inputs</span> Both
-have a microphone and a switchable line/phono input that can be routed
-into Mixxx. The Microphone jack is the front side of the controller, the
-RCA line jacks are at the back next to the line/phono switch.  
+multichannel sound cards.
+
+<span class="underline">Inputs</span> Both have a microphone and a
+switchable line/phono input that can be routed into Mixxx. The
+Microphone jack is the front side of the controller, the RCA line jacks
+are at the back next to the line/phono switch.  
 For both inputs there is a gain knob and a switch on the controller's
 front side that toggles between routing the signal to the computer
 (`SW`) or mixing it directly with the master output (`MST`). `MST`

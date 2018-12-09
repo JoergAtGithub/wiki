@@ -126,6 +126,11 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
   - **1-4** Hot cue buttons
   - LED: lit if a hot cue is set
   - Press: set or recall a hot cue
+  - Press & hold when deck is stopped: play from hot cue as long as
+    button is pressed. Press Play to continue playing after releasing
+    hot cue button
+  - Press & hold when deck is playing: jump to hot cue and play from
+    there
   - Shift & press: delete the hot cue
   - **▶ 1-4** Sampler buttons
   - LED: lit when a sample is loaded to the corresponding sampler,

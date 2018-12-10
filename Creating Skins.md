@@ -93,9 +93,8 @@ Skin closing tag
 
 ### Skin 101
 
-Lets have a look at the Mixxx user interface (with Outline skin
-applied). The various elements of the skin are marked and explained
-below.
+Lets have a look at this simplified example of the Mixxx user interface.
+The various elements of the skin are marked and explained below.
 
 [[/media/skinning/creating_skins/mixxx1.9_gui_explained_outline.png|]]
 

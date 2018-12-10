@@ -93,7 +93,8 @@ Skin closing tag
 
 ### Skin 101
 
-Lets have a look at this simplified example of the Mixxx user interface.
+Lets have a look at this simplified example of the Mixxx user interface
+(deprecated Outline skin template).  
 The various elements of the skin are marked and explained below.
 
 [[/media/skinning/creating_skins/mixxx1.9_gui_explained_outline.png|]]

@@ -203,7 +203,8 @@ virtual deck.*
   - **Headphone** button - Toggles hearing the deck in the headphone
     output
   - 🡄 / 🡆 / **1** / **2** / **3** / **4**
-  - Press: load the currently highlighted song into that deck.
+  - Press: load the currently highlighted song into that deck. \[ToDo:
+    long-press to eject track\]
   - Shift & press: toggle fader-start (on the channel fader and
     cross-fader when applicable.) The button flashes when fader-start is
     enabled on that deck.

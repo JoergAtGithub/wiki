@@ -19,3 +19,7 @@ how to get a scons project up and running in XCode:
     - Note: In Xcode 4 there is no "Add new custom executable" option---you must instead edit the current scheme in order to choose an executable to run.  You can do this by clicking the project name in the upper-left corner of the window and choosing "Edit Scheme..." or by going to Product -> Scheme -> Edit Scheme.  In the edit menu you can also add arguments to be passed to the executable (such as a resource path) when it is launched.
   - Use Debug -> Breakpoints menu to add a symbolic breakpoint at main() - just type main where it says 'Double click for Symbol' - if you don't add this break point none of the breakpoints set in the editors will work, because gdb doesn't have the symbol information until you start debugging ([[http://www.cocoabuilder.com/archive/message/xcode/2006/8/15/8869|Jim Ingham suggests]] turning off "Lazy Symbol Loading" in Debug Preferences.)
 ```
+
+## Setup Qt formatters
+
+<https://bitbucket.org/lukeworth/lldb-qt-formatters/overview>

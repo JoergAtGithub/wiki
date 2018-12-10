@@ -252,13 +252,14 @@ virtual deck.*
 Move the cross-fader to smoothly fade between the decks assigned to
 either side.
 
-#### Deck assign
+#### Deck assign switches
 
-*(Terminal Mix 4 only)* Use the four switches on the front of the unit
-to choose on which side of the cross fader that deck will be heard.
-(Note that the fader-start functionality correctly follows this
-assignment.) If "thru" is selected, the cross-fader will not affect the
-audio from that deck and it will always be heared.
+*(Terminal Mix 4 only)*  
+Use the four switches on the front of the unit to choose on which side
+of the cross fader that deck will be heard. (Note that the fader-start
+functionality correctly follows this assignment.) If "thru" is selected,
+the cross-fader will not affect the audio from that deck and it will
+always be heared.
 
 #### Curve adjust
 

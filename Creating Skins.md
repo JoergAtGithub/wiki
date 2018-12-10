@@ -7,25 +7,25 @@ the interface, potentially making the program easier to use.
 ### Getting started
 
 A skin for Mixxx is basically a folder with various images, a text file
-named skin.xml, and other XML template files. The skin.xml and template
-files define all the elements (widgets) of the skin, what the images are
-used for and and where they are placed on screen.
+named skin.xml, other XML template files and a [style.qss
+file](/creating_skins#qss_style). The skin.xml and template files define
+all the elements (widgets) of the skin, what the images are used for and
+and where they are placed on screen.
 
 Reading this page helps to understand how skins work in Mixxx‚ it will
 save you time eventually.
 
-**You can download the most recent source file for the *"Outline*" skin
-used in the following example from
-[Github](https://github.com/mixxxdj/mixxx/tree/master/res/images/templates),
-our code hosting platform.** The file is GPL-licensed and free available
-in SVG format for use with [Inkscape](/creating_skins#tools).
-
 Start a new skin by navigating to your local [Mixxx resource
-folder](/creating_skins#skin_faq), duplicate the "Outline" directory and
-rename it. Use the content of the new folder as starting point for your
-first skin. Read this page, understand how things were done in Outline's
-skin.xml and try to work from there. If you're familiar with HTML, then
-you should pretty comfortable editing the skin.xml.
+folder](/creating_skins#skin_faq), duplicate the directory of the skin
+you like to work on and rename it. Use the content of the new folder as
+starting point for your first skin. Read this page, understand how
+things were done in the skin you copied and try to work from there. If
+you're familiar with HTML, then you should pretty comfortable editing
+the skin.xml.
+
+**You can download the most recent source files for skins from
+[Github](https://github.com/mixxxdj/mixxx/tree/master/res/skins), our
+code hosting platform.**
 
 It is helpful to run Mixxx in Developer Mode when working on a skin. Use
 the `--developer` command line option to start Mixxx in Developer Mode.

@@ -608,8 +608,16 @@ possible.
 
 The connection block can be used to bind a ControlObject to the widget.
 It binds either to the default connection or to any widget property
-using the \<BindProperty\> element. The ControlObject value can be
-transformed using on or more transformers.
+using the \<BindProperty\> element.  
+The ControlObject value can be transformed using on or more
+transformers.  
+Currently supported properties:
+
+  - `visible` Display the widget only if (transformed) \<ConfigKey\>
+    equals `1`
+  - `highlight`' Apply styles to the widget via qss when (transformed)
+    \<ConfigKey\> equals N. QSS code: \#NameOfObject\[highlight="N"\] {
+    ... }
 
 | Examples:                                                                                                                                                                                                                                       |                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |

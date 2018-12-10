@@ -287,9 +287,9 @@ Further reads:
 # Skin.xml in-depth review
 
 In this section all elements and the values of their keys are explained
-on the example of **Outline** skin.  
-So open up the skin.xml in the Outline folder with your favorite [text
-editor](#tools) and get started :-)
+with examples.  
+Open up the skin.xml in the skin folder you duplicated earlier with your
+favorite [text editor](#tools) and get started :-)
 
 ## Section: General
 

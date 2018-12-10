@@ -166,14 +166,13 @@ they're currently hidden in GUI\]
     LED feedback\]
   - **CUP** (Cue-Play) Start playback from the cue point (also known as
     stutter play)
-  - **Q (Cue)**
+  - **Q** (Cue)
   - LED: lit or flashes when play position is at cue point. [set cue
     mode](https://mixxx.org/manual/2.1/chapters/user_interface.html#using-cue-modes)
   - Press: Set or recall the main cue point on the track
   - Press & hold: play from Cue point. Release stops playback
-  - **▶ || (Play/Pause)** Toggle playback of the track
-  - **Shift & ▶◀ (Sync)** (left deck) / **Shift & ▶|| (Play/Pause)**
-    (right deck)
+  - **▶ ||** (Play/Pause) Toggle playback of the track
+  - \*\*Shift & \*\*▶◀ (left deck) / **Shift & ▶||** (right deck)
   - initiate the [brake
     effect](https://www.mixxx.org/wiki/doku.php/midi_scripting#spinback_brake_and_soft_start_effect)
     for the respective deck: track slows down to full stop.
@@ -181,12 +180,13 @@ they're currently hidden in GUI\]
     (considering the pitch slider) and playback continues as soon as the
     wheel is released. Open the `controllers/Reloop Terminal Mix 2-4.js`
     file and look for `TerminalMix.brake` to adjust parameters.
+  - **3** / **4** button - When lit all deck buttons (except FX
+    controls) control deck 3 (deck 4 respectively).
 
 <!-- end list -->
 
 ``` 
-  [ToDo: add sofStart function as well]
-* **3** / **4** button - When lit all deck buttons (except FX controls) control deck 3 (deck 4 respectively).
+  [ToDo: add sofStart function to Shift & CUP (left) / Shift & Q (right)]
 ```
 
 ## Mixer controls

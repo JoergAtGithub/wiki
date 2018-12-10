@@ -115,11 +115,14 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
 * Press & hold: drags the loop out point of an active loop
 * **MOVE** knob
 * Press & turn: adjust the //beatjump size// visible in beatjump spinbox in each skin
-* Turn, no active loop: jump back or forth in the track by //beatjump size//
-* Shift & turn, active loop: shift the loop back or forth by //beatjump size//
-* Shift & turn, active loop, Qunatize ON: move the loop position by one beat per detent (helpful to correct the loop in point in case it snapped to the wrong beat marker)
-* Shift & turn, actvei loop, Quantize OFF: move the loop position by 1/8 beat per detent (helpful to correct the loop in point in case it's set slightly too early or too late)
+* Turn with no active loop: jump back or forth in the track by //beatjump size//
+* Turn with active loop & Quantize OFF: move the loop position by 1/8 beat per detent (helpful to correct the loop in point in case it's set slightly too early or too late)
+* Turn with active loop & Quantize ON: move the loop position by one beat per detent (helpful to correct the loop in point in case it snapped to the wrong beat marker)
+* Shift & turn with active loop: shift the loop back or forth by //beatjump size//
 ```
+
+\[ToDo: press & hold MOVE to temporarily show loop/jump controls if
+they're currently hidden in GUI\]
 
 ### Hot cues / Sampler buttons
 

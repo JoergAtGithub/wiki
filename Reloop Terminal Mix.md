@@ -81,13 +81,13 @@ Note: these knobs & buttons don't switch to decks 3 and 4.
   - Press & hold: temporarily toggle an effect
   - focused effect: control the first three button parameters of the
     focused effect
-  - **Beats** encoder
+  - **BEATS** encoder
   - Turn: adjust the Wet/Dry knob of the effect unit
   - Press repeatedly: adjust the BPM (not the pitch/speed\!) of the
     loaded track
   - Shift & Press: move the nearest beat marker to the current play
     position
-  - **Tap** button
+  - **TAP** button
   - LED flashes on each beat
   - Press & hold, then press any ON button to focus the respective
     effect

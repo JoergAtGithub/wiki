@@ -231,9 +231,8 @@ Additional skins for Mixxx can be downloaded in the
 
 So you created a nice button with a drop shadow blur effect in svg
 format, only to find the button is displayed without the drop shadow in
-Mixxx? [Qt](https://en.wikipedia.org/wiki/Qt_\(software\)) Qt supports
-the [static
-features](http://www.w3.org/Graphics/SVG/feature/1.2/#SVG-static) of SVG
+Mixxx? [Qt](https://en.wikipedia.org/wiki/Qt_\(software\)) supports the
+[static features](https://www.w3.org/TR/SVGMobile12/feature.html) of SVG
 1.2 Tiny. ECMA scripts and DOM manipulation are currently not supported,
 see <http://doc.qt.io/qt-5/svgrendering.html>
 

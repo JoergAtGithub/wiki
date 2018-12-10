@@ -366,7 +366,8 @@ All the skins included in Mixxx name the QSS file as `style.qss` in the
 root directory of the skin. Any name with the `*.qss` or `*.css` file
 extension will work. Optionally, you can add up to three additional QSS
 files to your skin directory, e.g. to work around platform-dependent
-quirks in styling.
+quirks in styling: `src-windows="..."`, `src-mac="..."` `and
+src-linux="..."`
 
 Widgets are selected in QSS by the name of their widget type (the "Mixxx
 internal name" column in the table below) or by a defined name. To

@@ -163,5 +163,5 @@ if it doesn't exist yet and documenting your findings. Even if you can't
 do the actual mapping, if you have a specification for how the inputs
 and outputs are arranged someone more experienced should be able to
 quickly write that up for you. An example for such a specification is
-the [Native Instruments Traktor Kontrol Z1
+the [Traktor Kontrol Z1
 page](native_instruments_traktor_kontrol_z1#hid_specification).

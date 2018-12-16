@@ -440,9 +440,10 @@ from the effect parameter's manifest's `linkHint` property.
 Starting in Mixxx 2.0, the equalizers and filter controls have been
 moved to special [effects units](#effects-framework). The EQs are
 controlled by \[EqualizerRack1\_\[Channel*N*\]\_Effect1\] and the filter
-knob is controlled by \[QuickEffectRack1\_\[Channel*N*\]\]. Users can
-choose between several options for the effects loaded in these racks in
-the Equalizers section of the Preferences window.
+knob is controlled by \[QuickEffectRack1\_\[Channel*N*\]\],super and
+\[QuickEffectRack1\_\[ChannelN\]\_Effect1\],enabled. Users can choose
+between several options for the effects loaded in these racks in the
+Equalizers section of the Preferences window.
 
 ### Deprecated controls
 

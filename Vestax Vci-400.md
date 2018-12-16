@@ -4,7 +4,9 @@
 
 The Vestax VCI-400 is a 4 deck controller. It has an integrated audio
 interface with balanced outputs (XLR and 1/4" TRS), two pairs of RCA
-inputs, and two XLR / 1/4" combination microphone inputs.
+inputs, and two XLR / 1/4" combination microphone inputs. The microphone
+inputs can be sent to the computer for recording and broadcasting. The
+VCI-400 requires its own power supply; it does not run on USB bus power.
 
 Vestax went out of business in 2014.
 

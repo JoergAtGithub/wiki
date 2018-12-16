@@ -30,6 +30,10 @@ familiar with aspects of Qt that we use heavily:
   - [Signals &
     Slots](http://qt-project.org/doc/latest/signalsandslots.html)
 
+If you're not familiar with C++, [The Cherno
+Project](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+on YouTube has a good series dedicated to the core concepts.
+
 We also highly recommend that you use a C++ IDE rather than a text
 editor. Mixxx is a huge project spread across hundreds of source code
 files. IDEs index the entire code tree and allow you to jump from where

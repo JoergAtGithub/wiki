@@ -346,9 +346,9 @@ current status.)
 
 ### \[Controls\]
 
-|  | Key/Control         |  | Range  |  | What it does                                                                                                                                                                                           |  | On-screen feedback |  |
-|  | ------------------- |  | ------ |  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ------------------ |  |
-|  | touch\_shift\[161\] |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in 2.1 |  | All Widgets        |  |
+|  | Key/Control         |  | Range  |  | What it does                                                                                                                                                                                                   |  | On-screen feedback |  |
+|  | ------------------- |  | ------ |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
+|  | touch\_shift\[161\] |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in the future. |  | All Widgets        |  |
 
 ### Effects framework
 

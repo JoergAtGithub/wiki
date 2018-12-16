@@ -137,18 +137,18 @@ top of the `scriptfiles` list in your XML file:)
 However, the structure of this library's code is messy and it may cause
 as many hassles to use it as it solves.
 
-### How to map a new HID device
+## How to map a new HID device
 
 Familiarise yourself with HID scripting by reading the previous sections
 and looking into existing HID mappings. Basic programming knowledge is
 required.
 
-#### Inputs
+### Inputs
 
 Run `mixxx --controllerDebug` and see which bytes change when you toy
 around with the controls. Map these bytes to the mixxx controls.
 
-#### Outputs (e.g. LEDs)
+### Outputs (e.g. LEDs)
 
 Go into Windows and download software which natively supports this
 controller (e.g. you can use the demo of Traktor Pro for Traktor

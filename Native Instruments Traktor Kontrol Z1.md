@@ -46,7 +46,7 @@ FX Button right - 0x8
 
 ### Output
 
-Header: 80
+Header: 0x80
 
 #### All bytes represent Brightness and can be set granularly from 00 to 7F (Even though Traktor always sends either 0A or 7F)
 

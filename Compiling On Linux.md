@@ -8,22 +8,6 @@ straightforward on Linux. The steps below outline what to do.
 
 Mixxx relies on several external libraries for various features.
 
-### SCons 2.x
-
-The Mixxx 2.1 and 2.2 branch still rely on SCons 2 and don't work with
-SCons 3 and Python 3. If your distribution (Fedora 27, Arch linux...)
-already comes with SCons 3 the build will fail when following the
-instructions. This is fixed in the master branch.
-
-As a workaround you can simply install SCons 2 side by side::
-
-1.  Download a standalone version of SCons 2.5.1 from
-    [here](https://sourceforge.net/projects/scons/files/scons/2.5.1/scons-2.5.1.tar.gz/download)
-2.  Extract the archive into any directory, e.g. /opt or somewhere into
-    your home directory
-3.  Execute *python2 \<your-installation-dir\>/scons-2.5.1/script/scons*
-    instead of *scons*
-
 ### Debian / Ubuntu
 
 If your distribution is Debian based (such as Ubuntu), you can install

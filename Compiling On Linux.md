@@ -167,9 +167,9 @@ chromaprint sqlite upower lilv lame
 If your distribution's Qt package is older than the version required by
 Mixxx, download the latest [Qt source
 code](https://download.qt.io/archive/qt/). For each Qt version, it is
-available at that link in a directory called "single" and have a
-filename like `qt-everywhere-src-VERSION.tar.xz`. Extract that archive
-with
+available at that link in a directory called "single" and has a filename
+like `qt-everywhere-src-VERSION.tar.xz`. Extract that archive and
+compile the source code:
 
     tar xf qt-everywhere-src-VERSION.tar.xz
     cd qt-everywhere-src-VERSION

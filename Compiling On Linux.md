@@ -162,6 +162,22 @@ taglib protobuf vamp-plugin-sdk rubberband \
 chromaprint sqlite upower lilv lame
 ```
 
+### Non-system Qt
+
+If your distribution's Qt package is older than the version required by
+Mixxx, download the latest [Qt source
+code](https://download.qt.io/archive/qt/). For each Qt version, it is
+available at that link in a directory called "single" and have a
+filename like `qt-everywhere-src-VERSION.tar.xz`. Extract that archive
+with
+
+    tar xf qt-everywhere-src-VERSION.tar.xz
+    cd qt-everywhere-src-VERSION
+    ./configure --prefix=/path/to/install -system-sqlite -sql-sqlite -qt-zlib -opensource -confirm-license -nomake examples -nomake tests -skip qt3d -skip qtwebengine
+    gmake -j4 # replace 4 with however many threads your CPU can run. This will take a long time.
+    gmake install
+    export PKG_CONFIG_PATH=/path/to/install # otherwise scons will use your system Qt package
+
 ### Other
 
 For other distributions, you will need to install the following through

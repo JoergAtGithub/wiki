@@ -20,7 +20,13 @@ Mixxx.
 ## Sound hardware
 
 The Reloop Terminal Mix 2 and Terminal Mix 4 have integrated
-multichannel sound cards.
+multichannel sound cards. Usually, the TerminalMix runs very well with
+USB power only. If you experience issues especially when powering both
+Master and Booth outputs at high levels you should use the additional
+power supply (6v/1.5A).  
+The official manual from Reloop states not to operate the unit at
+temperatures below 5°C/41°F. However, the audio output may start
+crackling if the temperatur drops below 10°C.  
 
 **Inputs**  
 Both have a microphone and a switchable line/phono input that can be

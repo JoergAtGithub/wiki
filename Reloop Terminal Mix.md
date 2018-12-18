@@ -25,8 +25,9 @@ USB power only. If you experience issues especially when powering both
 Master and Booth outputs at high levels you should use the additional
 power supply (6v/1.5A).  
 The official manual from Reloop states not to operate the unit at
-temperatures below 5°C/41°F. However, the audio output may start
-crackling if the temperatur drops below 10°C.  
+temperatures below 5°C/41°F as it might damage A/D converters and other
+components. However, the audio output may already start crackling if the
+temperatur drops below 10°C.  
 
 **Inputs**  
 Both have a microphone and a switchable line/phono input that can be
@@ -49,6 +50,25 @@ well as a balanced master output (1/4").
 The output level of both master ouputs, booth and headphone outputs are
 all controlled by respective hard-wired knobs in the center column which
 can't be mapped to software.
+
+## Controller hardware / Maintenance
+
+The jog wheels' touch sensitivity can be adjusted seperately. Refer to
+the [official
+manual](http://www.reloop.com/media/custom/upload/Reloop-TM4_Factory+JogReset.pdf)
+for instructions.  
+When used in dusty environment for a while you might find the MIDI LED
+flickering although you didn't touch any of the controls. This is mostly
+due to dust/fuzz particles in the 'comb' at the jog wheels' underside
+that is distracting the IR light barriers that detect platter movement.
+Remove the particles with a vacuum cleaner, or blow into the gap between
+wheel and housing.  
+After a few years of heavy usage the pushbuttons and sliders may start
+to wear out. Then, buttons need to be pressed harder or in a different
+manner than what was working before, and sliders may send false values
+when they are actually in the 'off zone'. Luckily, the pushbuttons are
+standart parts and relatively easy to replace, and the sliders'
+conductive surface can be cleaned with Q-tips and alcohol.
 
 ## Mapping options
 

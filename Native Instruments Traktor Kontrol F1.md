@@ -13,7 +13,7 @@ such as hotcues.
 
 ### Input
 
-Header: 0x1
+Report ID: 0x1
 
 #### Buttons
 
@@ -45,7 +45,7 @@ each, starting at 6
 
 ### Output
 
-Header: 0x80
+Report ID: 0x80
 
 All bytes represent Brightness and can be set granularly from 00 to 7F.
 

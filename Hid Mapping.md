@@ -90,18 +90,6 @@ var byteArray = [ byte1, byte2, byte3, ..., byteN ];
 controller.send(byteArray, null, reportID);
 ```
 
-#### Cross platform compatibility
-
-Due to system specific implementation differences of hidapi the first
-byte of the data should always be sent as the `reportID` parameter and
-omitted from the array given in the first parameter. Example:
-
-``` javascript
-// send byte sequence 0x80 0x01 0x02 0x03 to the controller - on any system
-var byteArray = [ 0x01, 0x02, 0x03 ];
-controller.send(byteArray, null, 0x80];
-```
-
 ## XML file
 
 Here is an example containing everything you need. Just copy and change

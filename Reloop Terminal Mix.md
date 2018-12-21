@@ -87,7 +87,7 @@ Edit & save and Mixxx will automatically reload the preset.
 side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
 
   - **Range** button - Toggles the pitch slider range. (See [Mapping
-    Options](#mapping-options))
+    Options](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#mapping_options))
   - **Keylock** button - Toggles key lock. \[ToDo: map long-press to
     reset track key\]
 
@@ -267,6 +267,21 @@ virtual deck.*
   - Press while tracks table has focus: perform the Track Load Action
     specified in *Preferences \> Library* (default: load track to next
     empty deck)
+  - **Volume Level Meter**
+  - LEDs dislay the hardware(\!) volume of the Master output (2 blue
+    LEDs at the top indicate clipping)
+  - *Attention:* the Master volume might already clip in Mixxx before
+    the hardware LEDs light up. You can adjust the hardware Master
+    volume knob and target loudness in *Preferences \> Normalization \>
+    ReplayGain* to keep enough headroom for the Master volume in Mixxx
+    and make the lower blue LEDs light up when the Master volume clips
+    in Mixxx
+  - **POWER** LED (red)
+  - **MIDI** LED (blue)
+  - flashes when a MIDI messages was sent
+  - when it flashes although no control is touched, it's probaly due to
+    dust in the jogwheels (See [Controler Hardware /
+    Maintenance](#controller-hardware-maintenance))
   - **Shift Lock** switch at the back side
   - ON: press **Shift** buttons once to switch to secondary button/knob
     actions

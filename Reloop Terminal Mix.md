@@ -87,7 +87,7 @@ Edit & save and Mixxx will automatically reload the preset.
 side controls Deck 1 or 3 and the right side controls Deck 2 or 4.*
 
   - **Range** button - Toggles the pitch slider range. (See [Mapping
-    Options](https://mixxx.org/wiki/doku.php/reloop_terminal_mix#mapping_options))
+    Options](#mapping-options))
   - **Keylock** button - Toggles key lock. \[ToDo: map long-press to
     reset track key\]
 

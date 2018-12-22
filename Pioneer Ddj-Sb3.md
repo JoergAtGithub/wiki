@@ -1,7 +1,10 @@
 # Pioneer DDJ-SB3
 
-[[/media/hardware/ddj-sb3-main.png|]] \*[Manufacturer's product
-page](https://www.pioneerdj.com/en-us/product/controller/ddj-sb3/black/overview/)
+[[/media/hardware/ddj-sb3-main.png|]]
+
+``` 
+ *[[https://www.pioneerdj.com/en-us/product/controller/ddj-sb3/black/overview/|Manufacturer's product page]]
+```
 
 The Pioneer DDJ-SB3 is an all-in-one USB MIDI controller with a built in
 sound card.

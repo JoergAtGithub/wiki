@@ -28,8 +28,13 @@ Note: libfaad-dev libmp4v2-dev required for M4A support. The
 installation order is
 [important](https://bugs.launchpad.net/mixxx/+bug/1464120).
 
-If you are building Mixxx **2.2** or the **master** Git branch,
-additionally run:
+If you are building the Mixxx **master** Git branch, additionally run:
+
+``` bash
+sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0
+```
+
+If you are building Mixxx **2.2** Git branch, additionally run:
 
 ``` bash
 sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev

@@ -143,10 +143,16 @@ The byte offset of the field within the packet, starting from 0.
 Instead of telling the packet field length, HIDPacket parses the fields
 based on *pack* attribute. The packing tells the size and numeric range
 for each field, and allows us to convert the input number to and from
-exactly correct value. Valid 'pack' values are b (signed byte), B
-(unsigned byte), h (signed short), H (unsigned short), i (unsigned int)
-and I (signed int). A field containing bits still needs to be given
-valid 'pack' value, to calculate bit vector masks and check boundaries.
+exactly correct value. Currently supported 'pack' values are
+
+|       |                                        |
+| ----- | -------------------------------------- |
+| b / B | unsigned/signed byte                   |
+| h / H | unsigned/signed two byte value (short) |
+| i / I | unsigned/signed four byte value (int)  |
+
+A field containing bits still needs to be given valid 'pack' value, to
+calculate bit vector masks and check boundaries.
 
 #### Bitmask
 

@@ -46,10 +46,11 @@ bytes.
 The current Mixxx JavaScript implementation for HID input packets
 supports following types of fields in the parser:
 
-  - One byte signed or unsigned numeric value (packing codes b and B)
-  - Two byte signed and unsgined numeric value (packing codes h and H)
-  - Four byte signed and unsigned numeric value (packing codes i and I)
-  - Parsing of bit mask fields from one packet of above sizes
+|       |                                        |
+| ----- | -------------------------------------- |
+| b / B | unsigned/signed byte                   |
+| h / H | unsigned/signed two byte value (short) |
+| i / I | unsigned/signed four byte value (int)  |
 
 The bit mask fields are implemented as normal numeric value field, which
 has type bitvector and which has value of internal class HIDBitVector.

@@ -1,163 +1,56 @@
-# Welcome to the Mixxx Wiki\!
+**Xcelance Web Solutions- Advanced Marketing Management**
 
-Mixxx has an unusually broad community for an open-source project,
-encompassing performing musicians, C++ addicts, amateur DJs, Internet
-radio broadcasters, and casual users. The Mixxx Wiki contains useful
-information for users, developers, and artists, and is summarized in the
-categories below.
+In this fast-paced world, news now travels at a very high speed and due
+to which maintaining a positive image of a business is more important
+than ever - and moreover complicated to do. This also brings confront
+for all the features of advanced marketing management. It is vital to
+get familiar with the concept and meaning of the term used in the
+business world. Moreover, it is also crucial to recognize how and when
+to apply this particular term. Best seo company in Chandigarh
 
-Some pages have translations available. You can read them by clicking
-the language icon at the bottom of a page.
+When you dig deep to know about marketing management, the most important
+thing to know before it is the concept of marketing. In simple words,
+marketing is to take care of customer relations, particularly those that
+are beneficial. Majority of the people think that marketing is only
+limited to advertising and selling but the fact is that it is all about
+gratifying the wants of the customers.
 
-Most of the contents of this wiki can be edited by anyone, the main
-exception to this is the [development roadmap](development%20roadmap)
-which is a fairly authoritative description of the development team's
-plans. If you find outdated, incorrect, or incomplete information on
-this wiki, please fix it.
+Here are a few things to know about advance marketing management before
+you take any further step:
 
-## User Documentation
+**1. What a company has to offer?**
 
-  - [Beginner DJ Links](Beginner%20DJ%20Links)
-  - [DJ Hardware Guide](Hardware%20compatibility)
-  - [Manual](http://mixxx.org/manual/latest/)
-  - [Troubleshooting](Troubleshooting)
-  - [Finding the Mixxx.log file](Finding%20the%20Mixxx.log%20file) can
-    be helpful when Mixxx isn't working right. Please attach this file
-    to bug reports and forum posts when asking for help.
-  - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
-  - [Reporting bugs](Reporting%20bugs) is a great way to contribute to
-    Mixxx, especially if you don't have programming skills
-  - [Testing](Testing) the latest features helps speed up development 
-  - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
-    even more awesome? You don't need to be a programmer to help us.
-  - [Live Calls with Skype and
-    Mixxx](https://www.primcast.com/support/live-calls-with-skype-and-mixxx/)
-  - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):
-    Run Mixxx from a USB drive or DVD without having to install anything
-    on the computer
-  - [Command line options](Command%20line%20options)
-  - [MIDI clock output](MIDI%20clock%20output)
+What a company is able to deliver to their customers in terms of
+products and services is the most important thing to consider. Your
+marketing efforts must include both the products as well as services.
+The most frequent blunder committed by most of the businesses is that
+they put all their energy and efforts into generating the products but
+they overlook the type of benefits customers will be receiving from the
+products. This is a distinctive case where all the concentration is
+transferred to the needs of the customers but not their requirements.
 
-## Community Resources
+**2. Satisfaction of the Customers**
 
-  - [Zulip chat](https://mixxx.zulipchat.com/): Ask for help, chat with
-    users and developers. Native apps can be [downloaded from Zulip's
-    website](https://zulipchat.com/apps/) and configured to use the
-    server mixxx.zulipchat.com, or use the [web
-    app](https://mixxx.zulipchat.com/).
-  - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
-    mixes, download and share controller mappings and skins
-  - [Development
-    builds](http://downloads.mixxx.org/builds/master/release/):
-    installers for the latest code we are working on. Please help us
-    test the latest code and report bugs. We try to make sure code is
-    reasonably stable before including it in these, but only use
-    development builds if you are comfortable using bleeding edge
-    software. Do not upgrade to a new version without adequate time to
-    test it before a performance.
-  - [Bug tracker](https://bugs.launchpad.net/mixxx/) and [development
-    blueprint planning](https://blueprints.launchpad.net/mixxx) are
-    hosted on [Launchpad](http://launchpad.net/mixxx/)
-  - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
-    email list. Note that most project communication is on Zulip now, so
-    you are more likely to get an answer to a question there.
-  - [Mixxx website](http://www.mixxx.org)
-  - [Internationalization](Internationalization): Help translate Mixxx
-    into other languages
-  - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)
-  - [Blog](http://mixxxblog.blogspot.com)
-  - [List of open-source music production
-    software](List%20of%20open-source%20music%20production%20software)
+Every customer has diverse prospects when it comes to a meticulous
+market. Your capability to bring on that prospect must never be too low
+neither ought to be high. Once you realize this you may be well on your
+path to set up enduring customer relations.
 
-## Controller Mapping Documentation
+**3. Exchanges**
 
-  - [MIDI controller mapping file
-    format](MIDI%20controller%20mapping%20file%20format): create or
-    change a MIDI mapping file for your controller
-  - [MIDI crash course](MIDI%20crash%20course)
-  - [Controller scripting with JavaScript](midi%20scripting): map
-    advanced behaviors including jog wheel scratching, modifier (shift)
-    buttons, and deck toggle buttons
-  - [Components JS](Components%20JS): JavaScript library to help with
-    writing mapping scripts
-  - [Contributing mappings](Contributing%20mappings): describes how to
-    get your mapping included in Mixxx
-  - [Controller mapping file
-    locations](Controller%20mapping%20file%20locations)
-  - [Updating controller mappings](Updating%20controller%20mappings):
-    how to adapt old mappings for the latest version of Mixxx
-  - [HID & USB Bulk controller mappings](hid%20mapping): create or
-    change a mapping for your HID or USB bulk-transfer mode controller
-  - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
-    be manipulated by controller mappings
-  - [Controller mapping
-    forum](http://mixxx.org/forums/viewforum.php?f=7): search for
-    mappings, share your mappings, and ask for help
+The short-term goal of any organization must be to create a product
+which is attractive to a customer but the long-term goal must be to keep
+those customers in touch for a longer period. And, this can be achieved
+by exchanging an item for another. If a customer is not satisfied with
+the product, the company must be willing to exchange the product in
+order to make a customer satisfied.
 
-## Skin Documentation
+**4. Final Words**
 
-  - [Creating Skins](Creating%20Skins)
-  - [Skin Guidelines](Skin%20Guidelines)
-  - [Skin Colour Scheme
-    Architecture](Skin%20Colour%20Scheme%20Architecture)
-  - [Skin Color Schemes Tips and
-    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
-  - [On Icons and Images](On%20Icons%20and%20Images)
-  - [Skin System Changelog](Skin%20System%20Changelog)
-  - [Skins forum](http://mixxx.org/forums/viewforum.php?f=8): search for
-    skins, share your skins, and ask for help
-
-## Developer Documentation
-
-### Compile Mixxx From Source Code
-
-  - [Compiling on Linux](Compiling%20on%20Linux)
-  - [Compiling on Windows](Compiling%20on%20Windows)
-  - [Compiling on macOS](Compiling%20on%20OS%20X)
-  - [SCons Build System](SCons%20Build%20System)
-  - [Packaging / Making a Mixxx
-    Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
-
-### Getting Started
-
-  - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
-    architecture
-  - [Using Git](Using%20Git)
-  - [Bugfix Workflow](Bugfix%20Workflow) 
-  - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
-    crashes
-  - [Bug Tracker](launchpad_bugs)
-  - [Coding Guidelines](Coding%20Guidelines)
-  - [Developer Tools](Developer%20Tools)
-  - [Learning Resources](Learning%20Resources)
-  - [Code profiling](Profiling) to see what parts of the code are using
-    more CPU time than others
-
-### Development Topics
-
-  - [To-do list for the next major release](2.2.0_todo) - Help us get
-    the next release ready\!
-  - [Setting-up CI on your own
-    fork](Setting-up%20CI%20on%20your%20own%20fork)
-  - [Development Roadmap](Development%20Roadmap)
-  - [Feature Design Documents](feature_discussion)
-  - [Google Summer of Code](gsoc) student projects and information.
-  - [Google Code-in](gci) task list and information
-  - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
-    is essential for new code\!
-
-### Archives
-
-  - [Developer meeting archives](meetings%20archive)
-  - Bazaar (legacy) code browsing on
-    [Launchpad](https://code.launchpad.net/mixxx/+branches)
-  - SVN (even more legacy) code browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
-  - [Press](Press) about Mixxx
-
-### Other Resources
-
-  - [Pitch percentages for semitones and
-    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Engine Library format](Engine%20Library%20format) (for Denon Prime
-    hardware)
+If any organization wants to be in the back in terms of advanced
+marketing management, it is very crucial to know the concepts and follow
+them after that. These concepts moreover, are very easy to follow on
+condition that you have capable and helpful financial staff in your
+organization. If you are aware of such type of knowledge your
+organization is certain to get on a way to develop strong marketing
+management skills. <https://www.xcelance.com/>

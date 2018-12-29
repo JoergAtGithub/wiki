@@ -1,6 +1,11 @@
 This page has information for updating old controller mappings for the
 latest version of Mixxx.
 
+# Mixxx 2.2
+
+There were no changes to the controller mapping system between Mixxx 2.1
+and Mixxx 2.2.
+
 # Mixxx 2.1
 
   - `engine.setParameter()` now works with `engine.softTakeover()`. If

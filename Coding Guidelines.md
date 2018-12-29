@@ -733,7 +733,7 @@ Our rules of thumb:
   - auto when the type is long and does not add any value
 
 Auto is acceptable in function-level scopes (i.e. only within function
-bodies. Do not use auto in a function or method prototype as this makes
+bodies). Do not use auto in a function or method prototype as this makes
 the code less self-documenting and would require reading the body of the
 function to determine its return type or arguments.
 

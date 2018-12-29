@@ -792,7 +792,7 @@ code to avoid the usage by your code reviewer. Before using a closure,
 please consider whether it's truly necessary.
 
 Use 8 space indent for line break or reasonable alignment + 4 indent for
-a new logical block. Always beak after "},"
+a new logical block. Always break after "},"
 
 **Good:**
 

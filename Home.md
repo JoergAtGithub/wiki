@@ -90,6 +90,7 @@ this wiki, please fix it.
     change a mapping for your HID or USB bulk-transfer mode controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
+  - [Controller Engine versions](Controller%20Engine%20versions)
   - [Controller mapping
     forum](http://mixxx.org/forums/viewforum.php?f=7): search for
     mappings, share your mappings, and ask for help

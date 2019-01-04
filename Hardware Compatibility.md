@@ -75,13 +75,14 @@ timecode vinyl (DVS) use.
 
 If you are considering buying a controller or audio interface, the
 easiest way to tell if it is USB class compliant before you buy it is to
-search for macOS drivers for the device on the manufacturer's website.
-If it is advertised as compatible with macOS but there are no drivers to
-download for macOS, it does not require drivers from the manufacturer
-because it is class compliant. If it is advertised as compatible with
-iOS, it is class compliant because Apple does not let manufacturers
-provide proprietary drivers on iOS. USB class compliant audio, MIDI, and
-HID devices can be used with Mixxx on Linux, macOS, and Windows.
+search for macOS drivers for the device on the manufacturer's website,
+even if you do not use macOS. If it is advertised as compatible with
+macOS but there are no drivers to download for macOS, it does not
+require drivers from the manufacturer on macOS because it is class
+compliant. If it is advertised as compatible with iOS, it is class
+compliant because Apple does not let manufacturers provide proprietary
+drivers on iOS. USB class compliant audio, MIDI, and HID devices can be
+used with Mixxx on Linux, macOS, and Windows.
 
 ### Mixxx Certified Mappings
 

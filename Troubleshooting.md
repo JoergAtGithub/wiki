@@ -8,7 +8,7 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
-## Broadcasting signal is silent
+## Broadcasting or recording signal is silent
 
 Check if you have anything configured for the Record/Broadcast input in
 the Sound Hardware section of the Preferences. When this input is

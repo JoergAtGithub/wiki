@@ -215,9 +215,7 @@ our git repository:
 
   - For the latest development (master) branch: `git clone
     https://github.com/mixxxdj/mixxx.git`
-  - For the latest beta branch: `git clone -b 2.2
-    https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 2.1
+  - For the latest stable branch: `git clone -b 2.2
     https://github.com/mixxxdj/mixxx.git`
 
 To update to the latest version of a git branch, enter (`cd` into) the

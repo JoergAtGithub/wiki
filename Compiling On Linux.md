@@ -306,7 +306,7 @@ If scons can't find installed dependencies, try
 
     scons --config=force
 
-## Compile and build \*.deb package
+### Compile and build \*.deb package
 
 ## Uninstall
 

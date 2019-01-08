@@ -304,10 +304,6 @@ If scons can't find installed dependencies, try
 
     scons --config=force
 
-### Compile and build \*.deb package
-
-WIP
-
 ## Uninstall
 
 To uninstall a copy of Mixxx that you compiled, `cd` into the directory

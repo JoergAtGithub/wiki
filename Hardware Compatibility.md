@@ -271,7 +271,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>€499</td>
 <td>2/4 deck[28] mobile controller</td>
 <td>no</td>
-<td>no</td>
+<td>-</td>
 <td>MIDI</td>
 <td>2013</td>
 </tr>
@@ -307,7 +307,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>$100</td>
 <td>1 deck controller</td>
 <td>no</td>
-<td>no</td>
+<td>-</td>
 <td>MIDI</td>
 <td>2013</td>
 </tr>
@@ -347,6 +347,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>no</td>
 <td>MIDI</td>
 <td>2016</td>
+</tr>
+<tr class="odd">
+<td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
+<td>$200</td>
+<td>originally branded as "Remix controller", but very versatile</td>
+<td>no</td>
+<td>-</td>
+<td>HID</td>
+<td>2012</td>
 </tr>
 </tbody>
 </table>

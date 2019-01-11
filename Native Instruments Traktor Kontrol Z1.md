@@ -8,11 +8,26 @@
 The Traktor Kontrol Z1 is a small, portable 2-deck controller with an
 integrated soundcard.
 
+## Usage
+
+A mapping for the Kontrol Z1 exists that maps all controls to Mixxx just
+as they are labelled, except for the "Mode" button, which right now does
+nothing.
+
+You can use the Kontrol Z1 as a sound output. Channel 1-2 will go to the
+Main Out, two cinch ports at the top of the controller, with volume
+being regulated by the "Main" knob. Channel 3-4 will go to the phones, a
+single 3.5mm stereo jack at the bottom of the controller, with volume
+being regulated by the "Cue Vol" knob.
+
 ## HID Specification
 
 ### Input
 
-Header: 0x1
+> Note: The "Main" and "Cue Vol" controls operate on the hardware level
+> and thus do not send any signals
+
+Report ID: 0x1
 
 #### Knobs & faders
 
@@ -48,7 +63,7 @@ their bitmask:
 
 ### Output
 
-Header: 0x80
+Report ID: 0x80
 
 All bytes represent Brightness and can be set granularly from 00 to 7F
 (Even though Traktor always sends either 0A or 7F).

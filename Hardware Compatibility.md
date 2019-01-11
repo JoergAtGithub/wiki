@@ -224,8 +224,8 @@ but have been mapped to Mixxx anyway.
 
 | Device                                 | Price (USD) | Description             | Integrated audio interface | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
 | -------------------------------------- | ----------- | ----------------------- | -------------------------- | ---------------- | --------------- | ----------------------------- | -------- |
-| [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                         | N/A              | HID             | 1.11                          | 2006     |
-| [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                         | N/A              | HID             | 1.11                          | 2006     |
+| [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                         | \-               | HID             | 1.11                          | 2006     |
+| [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                         | \-               | HID             | 1.11                          | 2006     |
 
 \</sortable\>
 

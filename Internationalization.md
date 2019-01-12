@@ -196,3 +196,11 @@ Transifex will pick up the changes to the template after a short while, and noti
 **TODO:** make the sconscript do this as part of a normal build so Mixxx contains the latest translations.
 
 Note: The process for updating the translations of Mixxx windows installer is documented in the [[https://github.com/mixxxdj/mixxx/blob/master/build/wix/Localization/README-Translations.md|Github branch]]
+
+===== Git & Merging ====
+The following files should be excluded when merging between release or development branches:
+  * ''/build/wix/Localization/po/*.po''
+  * ''/build/wix/Localization/po/*.wxl''
+  * ''/res/translations/*.ts''
+  * ''/res/translations/*.qm''
+Please refer to the instructions in the file ''/.gitattributes'' on how to configure your Git settings to respect those rules when performing a merge locally.

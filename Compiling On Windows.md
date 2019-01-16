@@ -29,8 +29,8 @@ build them from source.
 
 ### Option 1: Download pre-built Mixxx dependencies
 
-You can download pre-built Mixxx dependencies
-[here](http://downloads.mixxx.org/builds/buildserver//environments/2.1/).
+You can find pre-built Mixxx dependencies at the bottom of this [Github
+Page](https://github.com/mixxxdj/buildserver).
 
 The folder `2.?.x-windows` contains build environments for the `2.?`
 release of Mixxx. If you are working on the master branch, always pick

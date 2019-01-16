@@ -72,15 +72,12 @@ downloading pre-built ones:
 2.  In the buildserver repository, checkout the **2.?.x-windows**
     branch, depending on which version of Mixxx you are building the
     dependencies for.
-
-<!-- end list -->
-
-1.  Start a Windows command prompt (you do not need a Windows SDK
+3.  Start a Windows command prompt (you do not need a Windows SDK
     command prompt). Open the Start Menu and type "cmd" into the search
     box and hit enter. 
-2.  change into the **WINLIB\_PATH** directory.
+4.  change into the **WINLIB\_PATH** directory.
     1.  `cd WINLIB_PATH_GOES_HERE`
-3.  Build the environment:
+5.  Build the environment:
     1.  32-bit: `build_environment x86 Release`
     2.  64-bit: `build_environment x64 Release`
 

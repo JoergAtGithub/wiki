@@ -11,4 +11,7 @@ before applying or getting involved.
 A GSoC application that simply repeats the project description will
 *NOT* be accepted. We expect you to think about the feature and how it
 aligns with Mixxx's goals, describe potential use cases and propose a
-plan for implementing a solution.
+plan for implementing a solution. Only students that are active members
+of the Mixxx community are accepted. If this is not the case yet, just
+say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
+use cases with us.

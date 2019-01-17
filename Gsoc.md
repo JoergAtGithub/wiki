@@ -15,7 +15,7 @@ Mixxx is planning to apply for a slot in Google Summer of Code 2018\!
 
 ## Past Years
 
-## 2018
+### 2018
 
 Mixxx was accepted for Google Summer of Code 2018\!
 

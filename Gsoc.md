@@ -19,8 +19,6 @@ The following projects were accepted for Google Summer of Code 2018:
     Morales (davidhm) 
   - [Effects customization](Effects%20customization) by Kshitij Gupta 
 
-## Past Years
-
 ### 2017
 
 Mixxx is back in Google Summer of Code for 2017\!

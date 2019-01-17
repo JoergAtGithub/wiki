@@ -4,8 +4,6 @@
 annual program that provides paid internships for students to work on
 free software projects.
 
-## Past Years
-
 # 2018
 
 Mixxx is planning to apply for a slot in Google Summer of Code 2018\!

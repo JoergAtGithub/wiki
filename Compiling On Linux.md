@@ -31,13 +31,13 @@ installation order is
 If you are building the Mixxx **master** Git branch, additionally run:
 
 ``` bash
-sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0
+sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0 libqt5sql5-sqlite
 ```
 
 If you are building Mixxx **2.2** Git branch, additionally run:
 
 ``` bash
-sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev
+sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libqt5sql5-sqlite
 ```
 
 If you are building Mixxx **2.1**, additionally run:

@@ -38,9 +38,9 @@ provides significant efficiency gains to developers. Use double indent
 (8-spaces) for broken lines or align with the opening "(" in the line
 above for hanging indents.
 
-## Auto-Formater
+## Auto-Formatter
 
-We currently do not provide an auto-formater or code-checker.
+We currently do not provide an auto-formatter or code-checker.
 
 If you use Eclipse as IDE, the code style "K\&R" works well with these
 tweaks

@@ -369,6 +369,11 @@ files to your skin directory, e.g. to work around platform-dependent
 quirks in styling: `src-windows="..."`, `src-mac="..."` `and
 src-linux="..."`
 
+**Note:** You can add style sheets to [colour
+schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture),
+as well. They are added to the style sheets described above and will
+override attributes in case of conflicts.
+
 Widgets are selected in QSS by the name of their widget type (the "Mixxx
 internal name" column in the table below) or by a defined name. To
 define a name for a widget, use the `<ObjectName>` element. For example:

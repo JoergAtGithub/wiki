@@ -435,6 +435,30 @@ from which Qt widgets. If not listed, the widget inherits from
 |  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
 |  | EffectSelector  |  | WEffectSelector     |  | QComboBox                   |  |
 
+### Set Variables
+
+You can use variables throughout the skin templates for various
+purposes. For example, you can call a deck template and pass the channel
+number to it, or define color values:
+
+    <Template src="skin:deck_container.xml>
+      <SetVariable name="channum">1</SetVariable>
+      <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
+    </Template>
+
+The deck template can use the channel number and the color value to set
+up an waveform overview widget:
+
+``` 
+  <Overview>
+    <Size>XX,YY</Size>
+    ...
+    <Channel><Variable name="channum"/></Channel>
+    <BgColor><Variable name="SignalBgColor"/></BgColor>
+    ...
+  </Overview>
+```
+
 ### Properties Common to All Widgets
 
 Every skin widget is declared in a block with an opening XML tag and a

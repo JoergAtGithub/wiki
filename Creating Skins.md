@@ -438,26 +438,44 @@ from which Qt widgets. If not listed, the widget inherits from
 ### Set Variables
 
 You can use variables throughout the skin templates for various
-purposes. For example, you can call a deck template and pass the channel
-number to it, or define color values:
+purposes. Variables are inherited by all child templates. They are set
+like this `<SetVariable name="veryDescriptiveName">String</SetVariable>`
+and recalled via `<Variable name="veryDescriptiveName"/>`.  
+
+Variables can be used to set channel numbers, `<ObjectName>`s or to
+define color, just to name a few.  
+**Note:** Variables can not be used within tags or within values:
+
+    <Template src="skin:deck_container_<Variable name="side"/>.xml/> <!-- Wrong. skin parser will fail -->
+
+For example, let's call a deck template, pass the channel number and
+side to it and define a color:
 
     <Template src="skin:deck_container.xml>
       <SetVariable name="channum">1</SetVariable>
       <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
     </Template>
 
-The deck template can use the channel number and the color value to set
-up an waveform overview widget:
+The variables are automatically passed on to children of the deck
+template, for example to button templates or
+[Spinny](#spinning-vinyl-image-spinny) templates. In following example
+the variables are used to set up a waveform overview widget:
 
 ``` 
   <Overview>
     <Size>XX,YY</Size>
+    <Objectname>Overview<Variable name="side"/></Overview>
     ...
     <Channel><Variable name="channum"/></Channel>
     <BgColor><Variable name="SignalBgColor"/></BgColor>
     ...
   </Overview>
 ```
+
+If you want to use variables for multiple templates it's best to set
+them in `skin.xml` directly after the first `<Children>` node, before
+any template is loaded. For example to set the RGB signal colors of all
+waveform and overview widgets in decks, samplers and preview decks.
 
 ### Properties Common to All Widgets
 

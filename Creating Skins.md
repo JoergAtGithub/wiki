@@ -452,6 +452,7 @@ For example, let's call a deck template, pass the channel number and
 side to it and define a color:
 
     <Template src="skin:deck_container.xml>
+      <SetVariable name="side">Left</SetVariable>
       <SetVariable name="channum">1</SetVariable>
       <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
     </Template>

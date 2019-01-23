@@ -438,12 +438,14 @@ from which Qt widgets. If not listed, the widget inherits from
 ### Set Variables
 
 You can use variables throughout the skin templates for various
-purposes. Variables are inherited by all child templates. They are set
-like this `<SetVariable name="veryDescriptiveName">String</SetVariable>`
-and recalled via `<Variable name="veryDescriptiveName"/>`.  
+purposes, as well as in [colour
+schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture).  
+Variables are inherited by all child templates. They are set like this
+`<SetVariable name="veryDescriptiveName">String</SetVariable>` and
+recalled via `<Variable name="veryDescriptiveName"/>`.  
 
-Variables can be used to set channel numbers, `<ObjectName>`s or to
-define color, just to name a few.  
+Variables can be used to set channel numbers, effect numbers,
+`<ObjectName>`s or to define colors, just to name a few.  
 **Note:** Variables can not be used within tags or within values:
 
     <Template src="skin:deck_container_<Variable name="side"/>.xml/> <!-- Wrong. skin parser will fail -->

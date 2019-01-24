@@ -38,9 +38,10 @@ and/or opensource is a lot more limited.
 
 All the above converters, and probably MIXXX in the future, are
 susceptible to the following issue: For some mp3s, all cues will be
-shifted in time for a constant number of samples. This issue depends on
-the actual decoder definition of the 00:00:00 time point ( [more
-info](https://www.youtube.com/watch?v=Vl4nbvYmiP4))
+shifted in time for a constant number of samples.
+
+This issue depends on the actual decoder definition of the 00:00:00 time
+point ( [more info here](https://www.youtube.com/watch?v=Vl4nbvYmiP4))
 
 Only some converters specifically address this issue. Known successes
 are:

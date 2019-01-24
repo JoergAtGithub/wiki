@@ -1,4 +1,4 @@
-\= 1. MIXXX support =
+### 1\. MIXXX support
 
 Traktor uses XML to store metadata. Currently MIXXX imports the
 filenames, but not the cue points.
@@ -6,7 +6,7 @@ filenames, but not the cue points.
   - MIXXX user request: <https://bugs.launchpad.net/mixxx/+bug/1475416>
   - MIXXX patch: <https://github.com/mixxxdj/mixxx/pull/1411>
 
-\= 2. Alternatives =
+### 2\. Alternatives
 
 There are several programs that are able to achieve this conversion. The
 most complete programs are proprietary and for MacOS only. Windows users

@@ -38,9 +38,9 @@ and/or opensource is a lot more limited.
 
 All the above converters, and probably MIXXX in the future, are
 susceptible to the following issue: For some mp3s, all cues will be
-shifted in time for a constant number of samples. This depends on the
-actual decoder definition of the 00:00:00 time point
-[https://www.youtube.com/watch?v=Vl4nbvYmiP4](link).
+shifted in time for a constant number of samples. This issue depends on
+the actual decoder definition of the 00:00:00 time point ( [more
+info](https://www.youtube.com/watch?v=Vl4nbvYmiP4))
 
 Only some converters specifically address this issue. Known successes
 are:
@@ -49,7 +49,7 @@ are:
     beta 2.1.0(557)](https://forums.next.audio/t/traktor-rekordbox-cues-shifted-in-time-2/593):
     does conversion and correction in a single go
   - [DJCU RECU](https://www.youtube.com/watch?v=y7s0Jw9R_ds): requires a
-    seperate correction step after conversion
+    separate correction step after conversion
 
 The other converters have been confirmed to be affected by this issue.
 

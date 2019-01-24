@@ -38,10 +38,11 @@ and/or opensource is a lot more limited.
 
 All the above converters, and probably MIXXX in the future, are
 susceptible to the following issue: For some mp3s, all cues will be
-shifted in time for a constant number of samples.
+shifted in time for a constant number of samples. This issue depends on
+the actual decoder definition of the 00:00:00 time point ( [more info
+here](https://www.youtube.com/watch?v=Vl4nbvYmiP4))
 
-This issue depends on the actual decoder definition of the 00:00:00 time
-point ( [more info here](https://www.youtube.com/watch?v=Vl4nbvYmiP4))
+Example: [[/media/crossdj_-_cues_shifted_in_time.png|]]
 
 Only some converters specifically address this issue. Known successes
 are:

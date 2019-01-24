@@ -5,6 +5,8 @@ filenames, but not the cue points.
 
   - MIXXX user request: <https://bugs.launchpad.net/mixxx/+bug/1475416>
   - MIXXX patch: <https://github.com/mixxxdj/mixxx/pull/1411>
+  - MIXXX other formats:
+    <https://mixxx.org/wiki/doku.php/other_programs_cue_storage_formats>
 
 ### 2\. Alternatives
 

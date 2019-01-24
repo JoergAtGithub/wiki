@@ -1,4 +1,4 @@
-h2. MIXXX support
+##### MIXXX support
 
 Traktor uses XML to store metadata. Currently MIXXX imports the
 filenames, but not the cue points.
@@ -6,13 +6,13 @@ filenames, but not the cue points.
   - MIXXX user request: <https://bugs.launchpad.net/mixxx/+bug/1475416>
   - MIXXX patch: <https://github.com/mixxxdj/mixxx/pull/1411>
 
-h2. Alternatives
+##### Alternatives
 
 There are several programs that are able to achieve this conversion. The
 most complete programs are proprietary and for MacOS only. Windows users
 and/or opensource is a lot more limited.
 
-h3. Proprietary programs:
+#### Proprietary programs:
 
   - [Rekord Buddy](http://nextaudiolabs.com/): two way sync between
     Traktor, RekordBox, Serato libraries. MacOS Only
@@ -22,22 +22,24 @@ h3. Proprietary programs:
   - [CrossDJ](http://www.mixvibes.com/cross-dj-software-mac-pc/):
     Imports Traktor, exports Rekordbox. PC and Mac
 
-h3. Open Source programs (PC and Mac):
+#### Open Source programs (PC and Mac):
 
-  - [ErikMinekus
-    converter](https://github.com/ErikMinekus/traktor-scripts/blob/master/rekordbox-export.py):
-    TK-\>RB conversion. Language is Python.
   - [alzadude
     converter](https://github.com/digital-dj-tools/dj-data-converter/releases):
     TK-\>RB conversion. Language Clojure. in active development as of
     jan 2019.
+  - [ErikMinekus
+    converter](https://github.com/ErikMinekus/traktor-scripts/blob/master/rekordbox-export.py):
+    TK-\>RB conversion. Language is Python.
   - [Psobot traktor](https://github.com/psobot/traktor): Auto-generate
     cues for traktor XML. Language: Python 
 
-h2. Cues shifted in time issue All the above converters, and probably
-MIXXX in the future, are susceptible to the following issue: For some
-mp3s, all cues will be shifted in time for a constant number of samples.
-This depends on the actual decoder definition of the 00:00:00 time point
+##### h2. Cues shifted in time issue
+
+All the above converters, and probably MIXXX in the future, are
+susceptible to the following issue: For some mp3s, all cues will be
+shifted in time for a constant number of samples. This depends on the
+actual decoder definition of the 00:00:00 time point
 [https://www.youtube.com/watch?v=Vl4nbvYmiP4](link).
 
 Only some converters specifically address this issue. Known successes
@@ -52,7 +54,7 @@ are:
 
 The other converters have been confirmed to be affected by this issue.
 
-h2. MacOS virtual Machine on Windows
+##### MacOS virtual Machine on Windows
 
 Some Windows users are able to convert their collections using MacOS
 VMs. The simplest method uses a full import/export to an external drive.

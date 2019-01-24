@@ -471,8 +471,8 @@ deck side to it and define a background color:
       <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
     </Template>
 
-`channum` is a perfect example how to make use of the inheritance: the
-variable is automatically passed on to button templates or
+`channum` is a perfect example of how to make use of the inheritance:
+the variable is automatically passed on to button templates or
 [Spinny](#spinning-vinyl-image-spinny) templates loaded by that specific
 deck template (other deck templates would load with other variables).  
 Here, the variables defined above are used to set up a waveform overview

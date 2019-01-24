@@ -439,19 +439,31 @@ from which Qt widgets. If not listed, the widget inherits from
 
 You can use variables throughout the skin templates for various
 purposes, as well as in [colour
-schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture).  
-Variables are inherited by all child templates. They are set like this
-`<SetVariable name="veryDescriptiveName">String</SetVariable>` and
-recalled via `<Variable name="veryDescriptiveName"/>`.  
+schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture),
+to set channel numbers, effect numbers, `<ObjectName>`s or to define
+colors for widgets, just to name a few.  
+If a skin contains color schemes, this would be the the first place
+where the skin parser would look for them. As variables are inherited by
+all child templates the `<Scheme>` node would also be a good place to
+define scheme-specific properties like RGB signal colors, background
+colors or the alignment of cue markers in all waveform and overview
+widgets in decks, samplers and preview decks.  
+If the skin doesn't bring color schemes, the second best place to make
+variables available to multiple templates is in `skin.xml` directly
+after the first `<Children>` opening tag, before any other template is
+loaded.
 
-Variables can be used to set channel numbers, effect numbers,
-`<ObjectName>`s or to define colors, just to name a few.  
+Variables are set like this `<SetVariable
+name="veryDescriptiveName">String</SetVariable>` and recalled via
+`<Variable name="veryDescriptiveName"/>`.
+
 **Note:** Variables can not be used within tags or within values:
 
-    <Template src="skin:deck_container_<Variable name="side"/>.xml/> <!-- Wrong. skin parser will fail -->
+    <Template src="skin:deck_container_<Variable name="side"/>.xml"/> <!-- Wrong. skin parser will fail -->
+    <Template <SetVariable name="Alignment">left|top</SetVariable>src="skin:library.xml"/> <!-- Wrong... -->
 
-For example, let's call a deck template, pass the channel number and
-side to it and define a color:
+For example, let's load a deck template, pass the channel number and
+deck side to it and define a background color:
 
     <Template src="skin:deck_container.xml>
       <SetVariable name="side">Left</SetVariable>
@@ -459,10 +471,11 @@ side to it and define a color:
       <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
     </Template>
 
-The variables are automatically passed on to children of the deck
-template, for example to button templates or
-[Spinny](#spinning-vinyl-image-spinny) templates. In following example
-the variables are used to set up a waveform overview widget:
+`channum` is a perfect example how to make use of the inheritance: the
+variable is automatically passed on to button templates or
+[Spinny](#spinning-vinyl-image-spinny) templates loaded by a deck
+template. Here, the variables defined above are used to set up a
+waveform overview widget:
 
 ``` 
   <Overview>
@@ -474,11 +487,6 @@ the variables are used to set up a waveform overview widget:
     ...
   </Overview>
 ```
-
-If you want to use variables for multiple templates it's best to set
-them in `skin.xml` directly after the first `<Children>` node, before
-any template is loaded. For example to set the RGB signal colors of all
-waveform and overview widgets in decks, samplers and preview decks.
 
 ### Properties Common to All Widgets
 

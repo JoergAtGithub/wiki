@@ -473,17 +473,20 @@ deck side to it and define a background color:
 
 `channum` is a perfect example how to make use of the inheritance: the
 variable is automatically passed on to button templates or
-[Spinny](#spinning-vinyl-image-spinny) templates loaded by a deck
-template. Here, the variables defined above are used to set up a
-waveform overview widget:
+[Spinny](#spinning-vinyl-image-spinny) templates loaded by that specific
+deck template (other deck templates would load with other variables).  
+Here, the variables defined above are used to set up a waveform overview
+widget:
 
 ``` 
   <Overview>
     <Size>XX,YY</Size>
-    <Objectname>Overview<Variable name="side"/></Overview>
+    <Objectname>Overview<Variable name="side"/></Overview> <!-- = <Objectname>OverviewLeft</Overview> -->
     ...
-    <Channel><Variable name="channum"/></Channel>
-    <BgColor><Variable name="SignalBgColor"/></BgColor>
+    <Channel><Variable name="channum"/></Channel> <!-- = <Channel>1</Channel> -->
+    <!-- Or, if this was a sampler we'd inject the variable 'samplernum': -->
+    <Group>[Sampler<Variable name="samplernum"/>]</Group>
+    <BgColor><Variable name="SignalBgColor"/></BgColor> <!-- exactly, it's <BgColor>#0a0a0a</BgColor> -->
     ...
   </Overview>
 ```

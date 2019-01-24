@@ -34,7 +34,7 @@ and/or opensource is a lot more limited.
   - [Psobot traktor](https://github.com/psobot/traktor): Auto-generate
     cues for traktor XML. Language: Python 
 
-#### Cues shifted in time issue
+### 3\. Cues shifted in time issue
 
 All the above converters, and probably MIXXX in the future, are
 susceptible to the following issue: For some mp3s, all cues will be
@@ -55,7 +55,7 @@ are:
 
 The other converters have been confirmed to be affected by this issue.
 
-#### MacOS virtual Machine on Windows
+### 4\. MacOS virtual Machine on Windows
 
 Some Windows users are able to convert their collections using MacOS
 VMs. The simplest method uses a full import/export to an external drive.

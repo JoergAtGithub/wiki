@@ -2,8 +2,9 @@
 
 Google Summer of Code project by Stéphane Lepin
 
-**Current State**: code merged 11/20/2017 in
-[PR 1300](https://github.com/mixxxdj/mixxx/pull/1300)
+**Current State** (as of 2019-01-25): Multi-broadcasting released in
+2.1, Opus encoding merged (likely released in the upcoming 2.3),
+finishing touches on the FDK-AAC encoder
 
 ### Project description
 

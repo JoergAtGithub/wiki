@@ -100,7 +100,7 @@ Then run:
 su
 [Enter the password for the user "root" at the prompt]
 dnf groupinstall "Development Tools"
-dnf install gcc-c++ upower-devel lilv-devel qt5-qtx11extras-devel
+dnf install gcc-c++ lame-devel
 dnf builddep mixxx
 ```
 

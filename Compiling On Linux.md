@@ -104,12 +104,6 @@ dnf install gcc-c++ lame-devel
 dnf builddep mixxx
 ```
 
-If you are building Mixxx 2.2 or the master Git branch, also run:
-
-``` bash
-dnf install qt5-devel
-```
-
 ### Arch & Derivatives
 
 If you are developing in Arch, you should have the

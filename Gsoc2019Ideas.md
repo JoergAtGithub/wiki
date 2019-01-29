@@ -89,7 +89,7 @@ about the identified track. Currently we don't utilize the full
 potential that the MusicBrainz database is providing. We are reading
 just a few track properties to complement missing metadata.
 
-## MusicBrainz IDs
+#### MusicBrainz IDs
 
 All entities in the MusicBrainz database are identified by
 [UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).

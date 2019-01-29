@@ -39,6 +39,12 @@ beat grids by a new editor and visualize them on the waveform.
 The project might be extended towards a sync feature using this new info
 or into a feature that auto detect bars and phases.
 
+A strong application will list some specific tracks with different time
+signatures that will be used for testing the new features. Students with
+backgrounds in music theory and/or playing percussion instruments are
+encouraged to apply for this project, but these are not requirements and
+we welcome your application if you do not have that experience.
+
 # Changing Tempo Tracks
 
 Currently, Mixxx assumes either that tracks have a constant tempo for

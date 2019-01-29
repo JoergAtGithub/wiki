@@ -125,3 +125,17 @@ used as a starting point and for synchronization. In the Mixxx database
 simple textual tags could be stored in an inverse index Tag String -\>
 Track ID. It should also be possible to attach the custom tags of a
 track to the file by exporting/importing them as file tags.
+
+# Something Else\!
+
+As always with Summer of Code, you aren't limited to the suggestions
+we've made here. If you've got a great idea for a project involving
+Mixxx then we're looking forward to hearing about it. We recommend
+spending more than a few days using Mixxx and participating in the
+community to develop a better understanding nof areas where Mixxx could
+use improvement. Our bug tracker is full of wishlist bugs and other
+ideas scattered throughout, so if you browse through it, you may find
+many more ideas for GSoC projects.
+
+**IMPORTANT: You should [contact us](gsocadvice) first to get feedback
+if you're going to submit a proposal for your own project idea\!**

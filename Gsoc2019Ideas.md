@@ -126,6 +126,20 @@ simple textual tags could be stored in an inverse index Tag String -\>
 Track ID. It should also be possible to attach the custom tags of a
 track to the file by exporting/importing them as file tags.
 
+#### Aux Tracks
+
+Currently Mixxx is able to play tracks from any other source like CD or
+Record Players, or other desktop Applications. Unfortunately the only
+visualization is a VU-Meter.
+
+In this project, there should be some more features of the normal Decks
+become available for the Aux input as well. These are first of all BPM
+and Beat detection, waveform analysis loops and more.
+
+This project may also streamline the setup to use the system sound as
+Aux input. This is currently tricky depending on the used OS and sound
+API.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

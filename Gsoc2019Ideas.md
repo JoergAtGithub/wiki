@@ -114,7 +114,7 @@ next step is extending the MusicBrainz client for retrieving and the
 Mixxx database and storing those IDs. Afterwards your proposed features
 can be added based on these IDs.
 
-## Custom Tags
+#### Custom Tags
 
 One essential feature that Mixxx is missing is the ability to assign and
 manage custom tags to tracks. We have already collected some ideas what

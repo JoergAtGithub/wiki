@@ -126,7 +126,7 @@ simple textual tags could be stored in an inverse index Tag String -\>
 Track ID. It should also be possible to attach the custom tags of a
 track to the file by exporting/importing them as file tags.
 
-#### Aux Tracks
+# Aux Tracks
 
 Currently Mixxx is able to play tracks from any other source like CD or
 Record Players, or other desktop Applications. Unfortunately the only

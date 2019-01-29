@@ -15,3 +15,64 @@ plan for implementing a solution. Only students that are active members
 of the Mixxx community are accepted. If this is not the case yet, just
 say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
 use cases with us.
+
+# Measures, Downbeats, Bars and Phrases
+
+Mixxx uses information about the tempo and location of beats for many
+features including sync, looping, and quantize cue points.
+
+For a smooth transition between tracks it is also required to sync the
+bars, the first beat in a measure. Currently the DJ counts the beats 1 2
+3 4 and places the CUE at such a beat 1 (downbeat) of the incoming track
+by listening to the track in headphones. Now he can count the playing
+track and hit play at beat 1. Mixxx can help and adjust this exactly to
+the desired beat, but unfortunately not more. See: [video
+tutorial](https://www.youtube.com/watch?v=Jy2s8C8mAiw)
+
+Most tracks have a 4/4 measure but Mixxx should also allow less common
+measures like 3/4 or 7/8. This would be major benefit compared to other
+DJ software that assumes that all music has a 4/4 measure, which is
+incorrect for lots of music. Currently Mixxx is not aware of bars and
+measures. It is a part of the project to place bars on the auto detected
+beat grids by a new editor and visualize them on the waveform.
+
+The project might be extended towards a sync feature using this new info
+or into a feature that auto detect bars and phases.
+
+# Changing Tempo Tracks Beatgrid
+
+Currently, Mixxx assumes either that tracks have a constant tempo for
+their entire duration or always changing tempo. The first option works
+nice for most electronic tracks, because it creates a reliable beat
+grid, even if some beats are not detected. It fails for hand made track
+where a drummer has no crystal clock in his head. In this case the
+second approach works better. But if you try to sync an other track to
+the hand made track it is yowling because it tries to exactly follow the
+drummer.
+
+In this project you should find an approach that is able to iron out a
+small beat jitter of hand made tracks, but follow major tempo changes.
+It should be also be aware of breaks and britches and other difficult to
+detect elements.
+
+One way to approach this would be to mark sections with changing tempos
+by special markers. For example, this [video
+tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ) demonstrates how
+Serato DJ handles this.
+
+A proposal for this project should allow for handling tracks that change
+time signatures.
+
+The analyzer that Mixxx uses provides the exact locations of each beat.
+This might be used to automatically guess whether to treat a part of a
+track as a constant tempo or changing tempo.
+
+A strong application will list some specific tracks with changing tempos
+that will be used for testing the new features. These should include
+both tracks played by live musicians and tracks produced on a grid in a
+computer. Also, the application should propose how the new information
+available in the beat grid could be edited by users in a fast, intuitive
+way. Students with backgrounds in music theory and/or playing percussion
+instruments are encouraged to apply for this project, but these are not
+requirements and we welcome your application if you do not have that
+experience.

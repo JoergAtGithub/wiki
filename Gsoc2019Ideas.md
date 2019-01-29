@@ -39,7 +39,7 @@ beat grids by a new editor and visualize them on the waveform.
 The project might be extended towards a sync feature using this new info
 or into a feature that auto detect bars and phases.
 
-# Changing Tempo Tracks Beatgrid
+# Changing Tempo Tracks
 
 Currently, Mixxx assumes either that tracks have a constant tempo for
 their entire duration or always changing tempo. The first option works

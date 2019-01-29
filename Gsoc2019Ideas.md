@@ -79,3 +79,49 @@ way. Students with backgrounds in music theory and/or playing percussion
 instruments are encouraged to apply for this project, but these are not
 requirements and we welcome your application if you do not have that
 experience.
+
+# MusicBrainz Integration
+
+Mixxx uses [AcoustID](https://acoustid.org/) to identify tracks by
+fingerprinting their audio data. Subsequently the results are used to
+query the [MusicBrainz](https://musicbrainz.org/) database for metdata
+about the identified track. Currently we don't utilize the full
+potential that the MusicBrainz database is providing. We are reading
+just a few track properties to complement missing metadata.
+
+## MusicBrainz IDs
+
+All entities in the MusicBrainz database are identified by
+[UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+These UUIDs could be used for various purposes:
+
+  - Detecting exact duplicates or variants of a track independent of the
+    actual audio encoding. Use Case: When migrating your files from
+    lower quality MP3 to higher quality FLAC encoding, obsolete MP3
+    files could be identified based on their IDs and proposed for
+    removal.
+  - Relocating a track after it has been moved. Identifying tracks by
+    their IDs will be much more reliable than by a combination of some
+    properties. Use Case: You reorganize your files using a tool like
+    [Beets](http://beets.io/) and don't want to lose all your carefully
+    crafted crate/playlist/history contents when Mixxx is not able to
+    asscociate your tracks in the library with the new file locations.
+
+We recently implemented the import/export of MusicBrainz IDs according
+to the [Picard Tag
+Mapping](https://picard.musicbrainz.org/docs/mappings/) proposal. The
+next step is extending the MusicBrainz client for retrieving and the
+Mixxx database and storing those IDs. Afterwards your proposed features
+can be added based on these IDs.
+
+## Custom Tags
+
+One essential feature that Mixxx is missing is the ability to assign and
+manage custom tags to tracks. We have already collected some ideas what
+and how to store this information in [Launchpad
+\#1743702](https://bugs.launchpad.net/mixxx/+bug/1743702). MusicBrainz
+records user-provided tags and ratings in their libary which could be
+used as a starting point and for synchronization. In the Mixxx database
+simple textual tags could be stored in an inverse index Tag String -\>
+Track ID. It should also be possible to attach the custom tags of a
+track to the file by exporting/importing them as file tags.

@@ -140,6 +140,23 @@ This project may also streamline the setup to use the system sound as
 Aux input. This is currently tricky depending on the used OS and sound
 API.
 
+# Transition Effects
+
+Currently effects are basically applied to one channel only. If you like
+to use them for transitions, you have to controls more than one knob at
+a time. It would be nice to make effect transitions as easy as cross
+fading.
+
+During this project you need to define and implement an extensible way
+to control transition effects with a single knob.
+
+A simple example is a "EQ transition" The EQ knobs are used to avoid to
+much bass during long cross fades. Currently the DJ has to turn various
+EQ knobs play/pause and the cross fader simultaneously.
+
+Once this project is implemented the DJ should only select "EQ
+transition" and move the cross fader.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

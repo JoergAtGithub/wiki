@@ -60,9 +60,6 @@ by special markers. For example, this [video
 tutorial](https://www.youtube.com/watch?v=oD9J7azlhrQ) demonstrates how
 Serato DJ handles this.
 
-A proposal for this project should allow for handling tracks that change
-time signatures.
-
 The analyzer that Mixxx uses provides the exact locations of each beat.
 This might be used to automatically guess whether to treat a part of a
 track as a constant tempo or changing tempo.

@@ -57,6 +57,10 @@ are:
 
 The other converters have been confirmed to be affected by this issue.
 
+update: some research hints this issue is correlated with the specific
+LAME encoder version:
+<https://github.com/digital-dj-tools/dj-data-converter/issues/3>
+
 ### 4\. MacOS virtual Machine on Windows
 
 Some Windows users are able to convert their collections using MacOS

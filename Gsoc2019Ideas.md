@@ -33,8 +33,14 @@ Most tracks have a 4/4 measure but Mixxx should also allow less common
 measures like 3/4 or 7/8. This would be major benefit compared to other
 DJ software that assumes that all music has a 4/4 measure, which is
 incorrect for lots of music. Currently Mixxx is not aware of bars and
-measures. It is a part of the project to place bars on the auto detected
-beat grids by a new editor and visualize them on the waveform.
+measures. It would be part of the project to place bars on the auto
+detected beat grids by a new editor and visualize them on the waveform.
+
+Some preliminary work for drawing this information on the waveforms has
+been [started](https://github.com/mixxxdj/mixxx/pull/1918). However, for
+this to be really useful Mixxx needs a way to store the new time
+signature and downbeat information in the database and an intuitive user
+interface for users to edit this information.
 
 The project might be extended towards a sync feature using this new info
 or into a feature that auto detect bars and phases.

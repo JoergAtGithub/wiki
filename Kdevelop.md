@@ -52,8 +52,8 @@ these must be absolute paths, not relative to the project root.
 Copy and paste the list below into the Batch edit dialog, replacing
 `[MIXXX LOCATION]` with wherever you have your Mixxx source tree. The
 version numbers for the libraries in mixxx/lib are for those included
-with Mixxx 2.2. If they have been updated, please update this wiki page.
-The paths in /usr are for those on Fedora 27. They may need some
+with Mixxx 2.3. If they have been updated, please update this wiki page.
+The paths in /usr are for those on Fedora 29. They may need some
 adjustment for your distribution.
 
 When you are done, click Apply. KDevelop will parse the entire Mixxx
@@ -72,13 +72,12 @@ the process.
     [MIXXX LOCATION]/lib/gmock-1.7.0/include
     [MIXXX LOCATION]/lib/gtest-1.7.0/include/gtest
     [MIXXX LOCATION]/lib/hidapi-0.8.0-rc1/hidapi
-    [MIXXX LOCATION]/lib/libebur128-1.1.0/ebur128
+    [MIXXX LOCATION]/lib/libebur128/ebur128
     [MIXXX LOCATION]/lib/portaudio
     [MIXXX LOCATION]/lib/qtscript-bytearray
     [MIXXX LOCATION]/lib/replaygain
     [MIXXX LOCATION]/lib/reverb
     [MIXXX LOCATION]/lib/soundtouch-2.0.0
-    [MIXXX LOCATION]/lib/vamp
     [MIXXX LOCATION]/lib/xwax
     [MIXXX LOCATION]/lin64_build
     [MIXXX LOCATION]/src

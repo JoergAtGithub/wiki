@@ -204,3 +204,5 @@ The following files should be excluded when merging between release or developme
   * ''/res/translations/*.ts''
   * ''/res/translations/*.qm''
 Please refer to the instructions in the file ''/.gitattributes'' on how to configure your Git settings to respect those rules when performing a merge locally.
+
+**//Note: All translations files without conflicts or new files still need to be excluded manually from those merge commits!//**

@@ -2,30 +2,14 @@
 
 ## What is a control?
 
-Nearly every knob, button, or fader you see in Mixxx's interface is
-controllable via Mixxx's "control" system. The control system allows
-skins, MIDI controllers, and HID controllers to control Mixxx via a
-single interface.
+1164/5000
+Mixxxのインターフェースにあるほぼすべてのノブ、ボタン、またはフェーダーは、Mixxxの「コントロール」システムを介してコントロール可能です。コントロールシステムは、スキン、MIDIコントローラー、そしてHIDコントローラーが単一のインターフェースを介してMixxxをコントロールすることを可能にします。コントロールは、「グループ」（関連するコントロールをグループ化するために使用される）と「キー」（個々のコントロールの名前）で識別されます。
 
-A control is identified by a "group" (which is used for grouping
-associated controls) and a "key" (the name of the individual control).
-
-For example, the volume fader for Deck 1 is identified by the group
-`[Channel1]` and key `volume`. Similarly, the volume fader for Sampler 1
-is identified by the group `[Sampler1]` and key `volume`.
-
-The group is used to collect all the controls that affect one component
-of Mixxx into one collection. Some groups have a high overlap of
-controls in common (e.g. samplers, decks, and the preview deck all share
-the same control keys).
-
-In addition to controlling Mixxx, the control system can be used to
-inspect Mixxx's state. For example, the sample rate of the track loaded
-in Deck 1 can be accessed via the `[Channel1]`, `track_samplerate`
-control. You can read the `[Channel3]`, `play` control to determine
-whether Deck 3 is playing.
-
-The following tables list the keys associated with each group.
+たとえば、デッキ1のボリュームフェーダーは、グループ\[Channel
+1\]とキーボリュームによって識別されます。同様に、サンプラー1のボリュームフェーダーは、グループ\[Sampler1\]とキーボリュームによって識別されます。このグループは、Mixxxの1つのコンポーネントに影響するすべてのコントロールを1つのコレクションにまとめるために使用されます。いくつかのグループは共通のコントロールの高い重なりを持っています（例えば、サンプラー、デッキ、およびプレビューデッキはすべて同じコントロールキーを共有します）。
+Mixxxの制御に加えて、制御システムを使用してMixxxの状態を検査することができます。たとえば、デッキ1にロードされているトラックのサンプルレートは、\[Channel
+1\]、track\_samplerateコントロールを介してアクセスできます。デッキ3が演奏されているかどうかは、\[Channel
+3\]の演奏コントロールで確認できます。次の表は、各グループに関連付けられているキーの一覧です。
 
 ## Tip: Discovering Controls used in Skins
 

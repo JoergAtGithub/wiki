@@ -1,9 +1,8 @@
-将来的にたくさんのMIDIコントローラーをサポートに受けるため、MixxxはMIDIスクリプティングを提案しました（Mixxx
-v1.7.0から）。 これはMIDIコントロールを
+将来的にたくさんのMIDIコントローラーのサポートを受けるため、Mixxxは（v1.7.0から）MIDIスクリプティングを提案しました。これはMIDIコントロールを
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html)([Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)
 /
 [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)と同じものと考えて良いです）で割当し、Mixxxの機能
-ライブラリファイルに備えられた機能に自由に一つ一つMIDIマッピングを有効にする考えです。
+ライブラリファイルに備えられた機能に自由に一つ一つMIDIマッピングを有効にするアイデアです。
 ユーザー制作機能は色々な機能を実装でき、MIDIイベント情報を一つのコントローラーのボタンに実装すると同時に、
 他の [Mixxx
 properties(“controls”)](mixxxcontrols)のコントロール値を変更し、Mixxxの挙動を変えることができ（例えば[scratching](midi_scripting#scratching))、
@@ -13,7 +12,7 @@ LEDの複雑な表示シーケンス、テキスト表示の信号をコント�
 Mappings](contributing_mappings)ページのコーディングガイドラインをご覧ください。
 
 JavaScriptは複雑な機能をWebページにプログラミングするのに不可欠です。たくさんのチュートリアルがありますが、[W3Schools](http://www.w3schools.com/js/default.asp)はプログラミングを今までしたことがない人を
-対象とています。しかし理解するにはHTMLも理解しておかなければなりません。その言語はWebページを書くのに使われています。HTMLはかなりシンプルで簡単に学習でき、基本です。
+対象としています。しかし理解するにはHTMLも理解しておかなければなりません。その言語はWebページを書くのに使われています。HTMLはかなりシンプルで簡単に学習でき、基本です。
 それと似たXML、その言語はMixxxの[MIDI controller mapping file
 format](midi_controller_mapping_file_format)として使われています。
 [付加的な例](midi_scripting#additional_examples)の項の下の方は、少々、またはプログラミングに詳しくない人を対象にしています。この例は一般的な使用法で構成とメンテナンスされているMIDIスクリプティングの一番最初の助けです。これが作れると簡単にあなたや他の人のコードをすぐに編集できるようになります。

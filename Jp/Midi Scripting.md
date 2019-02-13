@@ -277,6 +277,9 @@ midi.sendSysexMsg(byteArray,byteArray.length);
 **Tip** :
 [[midi_scripting#storing_commonly_used_midi_codes_in_js_objects|よく使うMIDIコードをJavaScriptオブジェクトに備える]]
 
+===== Components library =====
+Now that you understand the basics, it is suggested to use the
+[[Components JS]] library for new mappings.
 ==== Mixxxの自動応答 ====
 
 この章のポイントは、スクリプトの関数はコントローラーの返答を巧みに扱うことに限定しています。

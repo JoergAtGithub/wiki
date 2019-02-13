@@ -1,3 +1,5 @@
+# Controller Scripting
+
 将来的にたくさんのMIDIコントローラーのサポートを受けるため、Mixxxは（v1.7.0から）MIDIスクリプティングを提案しました。これはMIDIコントロールを
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html)([Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)
 /
@@ -54,9 +56,9 @@ Guide](http://shop.oreilly.com/product/9780596805531.do)
 **Tip** :
 あなたのスクリプトをテストしたいときは、Mixxxxを再起動しないでください。いつもあなたがファイルを保存するとき、Mixxxは再読み込みしています。これで開発とテストを高速に切り替えられます。
 
-### JavaScriptマッピングをセットアップ
+## JavaScriptマッピングをセットアップ
 
-#### JavaScriptマッピングファイルをXMLマップファイルとリンクさせる
+### JavaScriptマッピングファイルをXMLマップファイルとリンクさせる
 
 全てのJavaScriptファイルは
 [XMLマッピングファイル]([midi_controller_mapping_file_format)と同梱することを望みます。
@@ -80,7 +82,7 @@ shutdown メソッドがMixxxの起動時と終了時に呼び出されます。
 で呼ばれ、常時呼び出され、全てのコントローラーの一般的な機能を呼び出します。[[midi_scripting#available_common_functions|利用できる一般関数]]にこれらの機能の情報が見れます。
 
 
-=== スクリプトファイルヘッダー ===
+==== スクリプトファイルヘッダー ====
 
 スクリプトにあなたのコントローラーのオブジェクトを宣言します。以下のようになります:
 
@@ -128,7 +130,7 @@ init関数のIDパラメーターはXMLファイルから来る ''controller id'
 **Note** : グローバル変数を使うより、コントローラーオブジェクトのプロパティを定義したほうが（ ''MyController''
 サンプルの場合）他のスクリプトをロードした時に 衝突を起こさないでしょう。
 
-=== MIDI信号をJavaScript関数にリンクさせる ===
+==== MIDI信号をJavaScript関数にリンクさせる ====
 
 関数とMIDI信号をリンクさせるには、XMLファイルの<control>要素の<key>タグの中に完全な関数名を入れ、
 <options>ブロックの中に<Scritpt-Binding/>と入れます。こんな感じです：
@@ -156,8 +158,8 @@ init関数のIDパラメーターはXMLファイルから来る ''controller id'
 //2.1の新機能// : <key>要素の値がJavaScriptの断片だった場合、JavaScriptのコードとして評価します。
 
 
-==== Mixxxマッピングプログラミング with JavaScript ====
-=== MIDI入力ハンドリング関数 ===
+===== Mixxxマッピングプログラミング with JavaScript =====
+==== MIDI入力ハンドリング関数 ====
 [[midi_scripting#linking_midi_signals_to_javascript_functions|関数とコントローラのXMLファイルのリンク]]が通ったら、以下が順序付けられます。
 
 - MIDIチャンネル（0x00 = チャンネル 1 〜 0x0F = チャンネル16,）

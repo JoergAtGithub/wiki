@@ -132,8 +132,10 @@ The following tools are used to update the Mixxx translation templates and to me
 
 **Required**
   * //lupdate// and //lrelease//, part of [[http://qt-project.org/downloads|Qt development toolkit]]
-  * for Ubuntu: ''%%sudo apt-get install qttools5-dev-tools%%'' 
+  * for Ubuntu: <code>sudo apt-get install qttools5-dev-tools</code> 
   * [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
+  * for Ubuntu: <code>sudo apt-get install transifex-client</code>
+  * Note the Xenial version is broken lp:1557957 use the Debian Stretch package [[https://packages.debian.org/stretch/all/transifex-client/download|Debian Stretch package]] 
 
 **Optional**
   * [[http://www.zsh.org/|Zsh]] (Z shell), a powerful shell that operates as both an interactive shell and as a scripting language interpreter.

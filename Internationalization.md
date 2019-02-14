@@ -132,6 +132,7 @@ The following tools are used to update the Mixxx translation templates and to me
 
 **Required**
   * //lupdate// and //lrelease//, part of [[http://qt-project.org/downloads|Qt development toolkit]]
+  * for Ubuntu: ''%%sudo apt-get install qttools5-dev-tools%%'' 
   * [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
 
 **Optional**

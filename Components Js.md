@@ -223,9 +223,11 @@ work so you do not need to define them yourself:
     state of an LED, but it can do anything.
   - **connect**: register `output` as the callback function that gets
     executed when the value of the [Mixxx ControlObject](mixxxcontrols)
-    specified by `group`, `outKey` changes. Implement a custom function
-    if you need to connect callbacks for multiple Mixxx ControlObjects
-    in one Component. Refer to the source code of
+    specified by `group`, `outKey` changes. This is called automatically
+    by the Component constructor if `group` and `outKey` are defined
+    (otherwise it needs to be called after construction). Implement a
+    custom function if you need to connect callbacks for multiple Mixxx
+    ControlObjects in one Component. Refer to the source code of
     [SamplerButton.prototype.connect](#SamplerButton) for an example.
 
 The following methods are called by the default Component `input` and

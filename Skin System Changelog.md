@@ -1,5 +1,12 @@
 # Skin System Changelog
 
+## Mixxx 2.3.0
+
+``` 
+ * If supported by the selected skin, display [[creating_skins#skin_preview_image|skin preview screenshots]] for a set of color variations to choose from in Preferences -> Interface -> Color Scheme [[https://github.com/mixxxdj/mixxx/pull/2008|pull#2008]]
+ * Allow to set set variables within color schemes [[creating_skins#skin_preview_image|skin preview screenshots]] for a set of color variations to choose from in Preferences -> Interface -> Scheme [[https://github.com/mixxxdj/mixxx/pull/1988|pull#1988]]
+```
+
 ## Mixxx 2.1.0
 
 ``` 

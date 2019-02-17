@@ -17,31 +17,26 @@ HSVTweak values.
 
 ## Color Scheme Demo
 
-Mixxx comes pre-loaded with several skins. In Mixxx 2.1 the only one
-with build-in color schemes is the **Shade** skins.
+Mixxx comes pre-loaded with several skins, some of which support color
+schemes.
 
-How to change a skin and the skins color scheme in Mixxx
+How to change a skin and the skins color scheme in Mixxx:
 
-  - Go to the *Interface* tab in the preferences dialog
-  - Select one of the *Shade* skins like in the picture below 
-  - Select a scheme from the drop down and click ok.
+  - Go to Preferences -\> Interface
+  - Select one of the skins like in the picture below 
+  - Select a scheme from the drop down menu and click *OK*
 
 If you select a skin that does not support color schemes, the *Scheme*
 drop-down menu is grayed out.
 
-[[/media/skinning/color_scheme/mixxx-1.9-color-scheme-preferences.png|]]
+**Default Color Scheme (Classic) for Shade skin (Depicted here for Mixxx
+2.3)**  
+[[/media/skinning/color_scheme/capture_2019-02-17_09-35-53_am.png|]]
 
-**Default Color Scheme (Dark Mixxx) for Outline skins (Depicted here for
-Mixxx 1.9)**  
-[[/media/skinning/color_scheme/mixxx-1.9-color-scheme1.png|]]  
-**Alternative Color Scheme (Still Awake Mixxx) for Outline skins
-(Depicted here for Mixxx 1.9)**  
-[[/media/skinning/color_scheme/mixxx-1.9-color-scheme2-1.png|]]  
-**Alternative Color Scheme (Classic Mixxx) for Outline skins (Depicted
-here for Mixxx 1.9)**  
-[[/media/skinning/color_scheme/mixxx-1.9-color-scheme3.png|]]
-
-## Technical Stuff
+**Alternative Color Scheme (Dark) for Shade skin (Depicted here for
+Mixxx 2.3)**  
+[[/media/skinning/color_scheme/capture_2019-02-17_09-36-35_am.png|]]  
+\===== Technical Stuff =====
 
 There are two techniques of colour changing implemented. A color
 filtering, for changing pixmaps and a color schema style sheet.

@@ -2819,16 +2819,26 @@ same time, behavior is undefined and could be crashy.
 
 ### Skin Preview Image
 
-New in Mixxx 2.1.0
+New in Mixxx 2.1.0, Changed in Mixxx 2.3.0
 
 To provide users a rough impression of what skins look like before they
 switch to a different skin, show a preview screenshot when a skin is
 selected with the combobox in `Preferences --> Interfaces --> Skin`.
 
 The screenshoot should show skins in their default configuration. Save
-as `preferences_preview_screenshot.png` in the root folder of the
-corresponding skin. Is no screenshoot provided, a placeholder is
-displayed.
+as `skin_preview.png` in the root folder of the corresponding skin (was
+`preferences_preview_screenshot.png` prior to Mixxx 2.3). Is no
+screenshoot provided, a placeholder is displayed.
+
+New in Mixxx 2.3.0
+
+If [color schemes](creating_skins#skin_color_scheme) are supported by
+the selected skin, show a preview screenshots for a set of color
+variations to choose from in Preferences -\> Interface -\> Color Scheme.
+Save as `skin_preview_$SchemeName.png` ( replace *$SchemeName* with the
+actual value of the respective
+[\<Name\>](skin_colour_scheme_architecture#scheme_format) key) in the
+root folder of the corresponding skin.
 
 ### Launch Image
 

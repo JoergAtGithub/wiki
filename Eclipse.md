@@ -175,8 +175,9 @@ to parse all compiler arguments.
     --debugAssertBreak`
   - For stepping through the Qt source, you need to place it in your
     workspace folder `cd eclipse-workspace
-    apt-get source libqt5core5
+    apt-get source qtbase5-dev
     ln -s qtbase-opensource-src-5.2.1+dfsg qt5 # adjust version 
+    sudo apt-get install qtbase5-dbg
     `
   - Non-Mac users should use GDB for debugging in Eclipse
     ([GDB](https://www.gnu.org/software/gdb/)).

@@ -198,7 +198,7 @@ to parse all compiler arguments.
     python
     import sys
     
-    sys.path.insert(0, '/home/<user_name>/workspace')
+    sys.path.insert(0, '/home/<user_name>/eclipse-workspace')
     from qt import register_qt_printers
     register_qt_printers (None)
     end

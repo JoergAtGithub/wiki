@@ -464,6 +464,21 @@ example:
         });
     )};
 
+You can also make the SamplerButtons velocity sensitive by setting the
+`volumeByVelocity: true` property on the object that gets passed to the
+constructor. This will change the volume at which the sample is being
+played at depending on how hard you pressed the button. Obviously, it
+will only work if your hardware features velocity sensitive buttons.
+
+    var samplerButtons = [];
+    for (var n = 1; n <= 8; n++) {
+        samplerButtons[n] = new components.SamplerButton({
+            number: n,
+            midi: [0x91, 0x02],
+            volumeByVelocity: true,
+        });
+    )};
+
 When the sampler is loaded, the LED will be sent a MIDI message with the
 value of the `on` property (default 127) When the sampler is empty, the
 LED will be sent a MIDI message with the value of the `off` property

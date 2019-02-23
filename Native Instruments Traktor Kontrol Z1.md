@@ -11,12 +11,15 @@ integrated soundcard.
 ## Usage
 
 A mapping for the Kontrol Z1 exists that maps all controls to Mixxx just
-as they are labelled, except for the "Mode" button, which right now does
-nothing.
+as they are labelled. A few extra functions are available to make this
+controller usable by itself without other controllers:
+
+  - Mode + Filter on: play
+  - Mode + headphones: cue
 
 You can use the Kontrol Z1 as a sound output. Channel 1-2 will go to the
-Main Out, two cinch ports at the top of the controller, with volume
-being regulated by the "Main" knob. Channel 3-4 will go to the phones, a
+Main Out, two RCA jacks at the top of the controller, with volume being
+regulated by the "Main" knob. Channel 3-4 will go to the phones, a
 single 3.5mm stereo jack at the bottom of the controller, with volume
 being regulated by the "Cue Vol" knob.
 

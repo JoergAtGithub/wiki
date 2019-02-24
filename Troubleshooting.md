@@ -11,10 +11,12 @@ available on [the download page](http://mixxx.org/download).
 ## Master signal is silent or too low
 
 In Preferences \> Equalizers, check if the master EQ is enabled. Disable
-or reset to defaults to test whether this is the cause.  
+or reset to defaults to test whether this is the cause.
+
 In Preferences \> Normalization, check if both target Loudness and
 Initial Boost are at reasonable values. If in doubt, reset the page to
-default values.  
+default values.
+
 In the skin, check if microphone talkover ducking is enabled (set to
 Auto or Manual). Even with no microphone configured this setting could
 affect Master volume to the extent that Master is silent if the Ducking

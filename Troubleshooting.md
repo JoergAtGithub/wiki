@@ -8,6 +8,20 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
+## Master signal is silent or too low
+
+In Preferences \> Equalizers, check if the master EQ is enabled. Disable
+or reset to defaults to test wether this is the cause.  
+In Preferences \> Normalization, check if both target Loudness and
+Initial Boost are at reasonable values. In doubt, reset the page to
+default values.  
+In the skin, check if there's microphone talkover ducking enabled (set
+to Auto or Manual). Even with no microphone configured this setting
+would affect Master volume to the extent that Master is silent if the
+Ducking knob is turned all the way to the left. In case you have such a
+knob on your controller, check that as well as its position might be
+read the next time you start Mixxx.
+
 ## Broadcasting or recording signal is silent
 
 Check if you have anything configured for the Record/Broadcast input in

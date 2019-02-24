@@ -297,9 +297,9 @@ following options as appropriate:
   - **shiftChannel** (boolean, default false): whether the shifted MIDI
     message changes the MIDI channel (second nybble of the first byte of
     the MIDI signal)
-  - **shiftComponent** (boolean, default false): whether the shifted
-    MIDI message changes the MIDI control number (second byte) of the
-    MIDI signal
+  - **shiftControl** (boolean, default false): whether the shifted MIDI
+    message changes the MIDI control number (second byte) of the MIDI
+    signal
   - **shiftOffset** (number, default 0): how much to shift the MIDI
     channel or control number by
 

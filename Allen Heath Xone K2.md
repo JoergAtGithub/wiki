@@ -33,6 +33,11 @@ TODO: make labelled diagrams and a video demonstrating the mapping
 
 ## Setup
 
+**Requirement**: The Xone K2 must have Latching Layers turned off, which
+is the default. Refer to the [Xone K2/K1
+manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
+for details. The K1 does not have Latching Layers.
+
 This mapping can used with one or multiple Xone K2s/K1s. Multiple Xone
 K2s/K1s can be connected to each other via X-Link with one of them
 connected to the computer via USB. Alternatively, when using 2 K2s/K1s,
@@ -56,11 +61,6 @@ when selecting the channel:
   - Channel 10 (J): four decks ordered 1 2 3 4
   - Channel 9 (I): four effect units ordered 3 1 2 4
   - Channel 8 (H): four effect units ordered 1 2 3 4
-
-The Xone K2 must have Latching Layers turned off, which is the default.
-Refer to the [Xone K2/K1
-manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
-for details. The K1 does not have Latching Layers.
 
 ## Global controls
 

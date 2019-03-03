@@ -59,9 +59,9 @@ when selecting the channel:
 
 If you are using K2s, they must have Latching Layers turned off, which
 is the default (the K1 does not have Latching Layers). Refer to the
-[Xone K2/K1 product manual from Allen &
-Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
-details.
+[Xone K2/K1
+manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
+for details.
 
 ## Global controls
 

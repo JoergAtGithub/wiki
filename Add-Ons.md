@@ -8,7 +8,7 @@ forums](http://mixxx.org/forums/viewforum.php?f=8).
 # Audio Playback Plugins
 
 If you write an audio playback plugin, here's a good place to link to
-it. sPOTIFY
+it.
 
 ## Technical Details
 

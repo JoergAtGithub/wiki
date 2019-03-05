@@ -184,9 +184,9 @@ restarting Mixxx).
 
 If your K2 switches between 3 layers (amber, red, and green) instead of
 2 (amber and red only) and supershift does not work, make sure Latching
-Layers is turned off. Refer to the [Xone K2 product manual from Allen &
-Heath](http://www.allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) for
-details.
+Layers is turned off. Refer to the [Xone K2
+manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
+for details.
 
 # Known issues
 

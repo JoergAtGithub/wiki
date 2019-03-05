@@ -34,7 +34,7 @@ TODO: make labelled diagrams and a video demonstrating the mapping
 ## Setup
 
 **Requirement**: The Xone K2 must have Latching Layers turned off, which
-is the default. Refer to the [Xone K2/K1
+is the default. Refer to the [Xone K2
 manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
 for details. The K1 does not have Latching Layers.
 

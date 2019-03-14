@@ -1,8 +1,12 @@
 [[/media/hardware/hercules_dj/hdjc_jogvision.png|]]
 
-<https://www.hercules.com/en-us/product/djcontroljogvision-2old/>
-<https://support.hercules.com/en/product/djcontroljogvision-en/>
-
+\* [Manufacturer's product
+page](https://www.hercules.com/en-us/product/djcontroljogvision-2old/)  
+\* [Manufacturer's support and downloads
+page](https://support.hercules.com/en/product/djcontroljogvision-en/)  
+\* [Forum
+thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12580)  
+  
 Whether you’re just getting started DJing or you’ve already refined your
 skills, you can let your creativity run wild. Enjoy excellent precision
 and comfort to create your mixes using the circular displays on the jog

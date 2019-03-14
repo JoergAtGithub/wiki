@@ -1,10 +1,11 @@
 [[/media/hardware/hercules_dj/djcstarlight.png|]]
 
 \* [Manufacturer's product
-page](https://www.hercules.com/en-us/product/djcontrolstarlight/) \*
-[Manufacturer's support and downloads
-page](https://support.hercules.com/en/product/djcontrolstarlight-en/) \*
-[Forum thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12570)
+page](https://www.hercules.com/en-us/product/djcontrolstarlight/)  
+\* [Manufacturer's support and downloads
+page](https://support.hercules.com/en/product/djcontrolstarlight-en/)  
+\* [Forum
+thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12570)  
 
 Ultra-compact, ultra-light, ultra-practical and ultra-unique with its
 lights, the DJControl Starlight packs all the features needed to mix and

@@ -16,36 +16,45 @@ bright and powerful RGB backlighting.
 
 **Decks:**
 
-Sync = Sync lock // SHIFT + SYNC = Sync master
+Sync = Sync lock  
+SHIFT + SYNC = Sync master.  
 
-Cue = Cue point // SHIFT + CUE = Return to beginning of loaded song.
+Cue = Cue point  
+SHIFT + CUE = Return to beginning of loaded song.  
 
-Play = Play/Pause // SHIFT + Play = Cue Stutter
+Play = Play/Pause  
+SHIFT + Play = Cue Stutter.  
 
-Vinyl = Scratch On/Off (Default: ON)
+  
+
+Vinyl = Scratch On/Off (Default: ON)  
 
 When Vinyl is on, turning a jog wheel scratches that deck. When Vinyl is
-off, turning a jog wheel bends the pitch of the track.
+off, turning a jog wheel bends the pitch of the track.  
+  
 
-**PADS - Hot Cue:**
+**PADS - Hot Cue:**  
 
-Set and trigger Hot Cue 1-4 // SHIFT + Pad = Delete Hot Cue 1-4.
+Set and trigger Hot Cue 1-4  
+SHIFT + Pad = Delete Hot Cue 1-4.  
 
-**PADS - Loop:**
+**PADS - Loop:**  
 
-Beatloop 1/2 / 1 / 2 / 4 beats
+Beatloop 1/2 / 1 / 2 / 4 beats  
 
-**PADS - FX Mode:**
+**PADS - FX Mode:**  
 
-FX 1-3 on/off // Shift + Pad = FX 1-3 Select PAD 4 = FX Rack 1/2 On/Off
-(Deck A/B respectively)
-
-**PADS - Sample:**
-
-Trigger Sampler 1-4 (Deck A) Trigger Sampler 5-8 (Deck B)
-
-**Base LED:**
-
-Link to VU Meter for light show effect on each deck respectively.
-
+FX 1-3 on/off  
+SHIFT + Pad = FX 1-3 Select  
+PAD 4 = FX Rack 1/2 On/Off (Deck A/B respectively)  
+  
+**PADS - Sample:**  
+  
+Trigger Sampler 1-4 (Deck A)  
+Trigger Sampler 5-8 (Deck B)  
+  
+**Base LED:**  
+  
+Link to VU Meter for light show effect on each deck respectively.  
+  
 Other controls as labeled.

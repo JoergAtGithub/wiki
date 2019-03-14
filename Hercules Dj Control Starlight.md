@@ -1,4 +1,4 @@
-<https://mixxx.org/wiki/lib/exe/fetch.php/hardware:hercules_dj:djcstarlight.png?w=120&h=33&t=1552571352&tok=368ec8>
+[[/media/hardware/hercules_dj/djcstarlight.png|]]
 
 <https://www.hercules.com/en-us/product/djcontrolstarlight/>
 

@@ -200,6 +200,10 @@ Compact](hercules_djcontrol_compact)
 
 Find it here -\> [Hercules P32 DJ](hercules_p32_dj)
 
+## Hercules DJControl Starlight
+
+Find it here -\> [DJControl Starlight](hercules_dj_control_starlight)
+
 ## Additional information
 
 [More information about the DJ console series](hercules_pc_dj_console)

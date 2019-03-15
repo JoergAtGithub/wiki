@@ -358,6 +358,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2015</td>
 </tr>
 <tr class="even">
+<td><a href="Hercules Universal DJ">Hercules Universal DJ</a></td>
+<td>$250</td>
+<td>2 deck all-in-one controller</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2014</td>
+</tr>
+<tr class="odd">
 <td><a href="Hercules DJ Control Starlight">Hercules DJ Control Starlight</a></td>
 <td>$99</td>
 <td>2 deck all-in-one compact controller</td>
@@ -366,7 +375,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
 <td>$200</td>
 <td>originally branded as "Remix controller", but very versatile</td>

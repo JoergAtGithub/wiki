@@ -196,6 +196,10 @@ Instinct](hercules_dj_control_instinct)
 Find it here -\> [Hercules DJ Control
 Compact](hercules_djcontrol_compact)
 
+## Hercules Universal DJ
+
+Find it here -\> [Hercules Universal DJ](hercules_universal_dj)
+
 ## Hercules DJ Control Jogvision
 
 Find it here -\> [Hercules DJ Control

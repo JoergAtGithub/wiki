@@ -174,6 +174,10 @@ Find it here -\> [Hercules DJ Console RMX 2](hercules_dj_console_rmx_2)
 
 Find it here -\>[Hercules DJ Console 4-Mx](hercules_dj_console_4-mx)
 
+## Hercules DJ Console 4Set
+
+Find it here -\>[Hercules DJ Console 4Set](hercules_dj_4set)
+
 ## Hercules DJ Control Steel
 
 Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
@@ -185,6 +189,10 @@ Moved -\> [Hercules DJ Control MP3 e2](hercules_dj_control_mp3_e2)
 ## Hercules DJ Control Air
 
 Find it here -\> [Hercules DJ Control Air](hercules_dj_control_air)
+
+## Hercules DJ Control Air+
+
+Find it here -\> [Hercules DJ Control Air+](hercules_dj_control_air)
 
 ## Hercules DJ Control Instinct
 

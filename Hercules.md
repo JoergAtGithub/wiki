@@ -192,7 +192,7 @@ Find it here -\> [Hercules DJ Control Air](hercules_dj_control_air)
 
 ## Hercules DJ Control Air+
 
-Find it here -\> [Hercules DJ Control Air+](hercules_dj_control_air)
+Find it here -\> [Hercules DJ Control Air+](hercules_djcontrol_air_plus)
 
 ## Hercules DJ Control Instinct
 

@@ -376,7 +376,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2018</td>
 </tr>
 <tr class="even">
-<td><a href="Hercules DJControl AIR+">Hercules DJControl AIR+</a></td>
+<td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>
 <td>2 deck all-in-one controller</td>
 <td>yes</td>

@@ -221,6 +221,10 @@ Find it here -\> [Hercules P32 DJ](hercules_p32_dj)
 
 Find it here -\> [DJControl Starlight](hercules_dj_control_starlight)
 
+## Hercules DJControl Inpulse 200
+
+Find it here -\> [DJControl Inpulse 200](hercules_djcontrol_inpulse_200)
+
 ## Additional information
 
 [More information about the DJ console series](hercules_pc_dj_console)

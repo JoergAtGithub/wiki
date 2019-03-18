@@ -11,7 +11,6 @@ DJ controllers brand. There's actually many versions of it :
   - DJ Control Air (The one shown in picture above)
   - DJ Control Air Street Edition (Limited Edition)
   - DJ Control Air S Series
-  - DJ Control Air+ S Series (PADs moved under Jogs)
   - DJ Control Air for iPad
 
 This controller have built-in soundcard with mixer output (3.5mm jack)

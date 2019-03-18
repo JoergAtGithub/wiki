@@ -376,6 +376,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2018</td>
 </tr>
 <tr class="even">
+<td><a href="Hercules DJControl Inpulse 200">Hercules DJControl Inpulse 200</a></td>
+<td>$129</td>
+<td>2 deck all-in-one compact controller</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2018</td>
+</tr>
+<tr class="odd">
 <td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>
 <td>2 deck all-in-one controller</td>
@@ -384,7 +393,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJ 4set">Hercules DJ 4set</a></td>
 <td>Discontinued</td>
 <td>2 deck[32] all-in-one controller</td>
@@ -393,7 +402,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2011</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
 <td>$200</td>
 <td>originally branded as "Remix controller", but very versatile</td>

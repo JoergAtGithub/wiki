@@ -120,4 +120,5 @@ see them in other sections.
   - [Keyboard Control](developer_guide_keyboard)
   - [Preferences Dialogs](developer_guide_preferences)
   - [Waveform](developer_guide_waveform)
-  - [GUI Widgets](developer_guide_widgets)
+  - [Skins](developer_guide_skins)
+  - [GUI Widgets (non-skin)](developer_guide_widgets)

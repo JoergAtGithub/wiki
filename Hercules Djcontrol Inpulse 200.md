@@ -57,9 +57,10 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 
 #### Controls not included in this mapping
 
-\* Master knob (Hardware control) \* Headphone knob (Hardware control)
-\* Master buttons (Hardware control) \* Beatmatch guide (Hardware
-control)
+\* Master knob (Hardware control)  
+\* Headphone knob (Hardware control)  
+\* Master buttons (Hardware control)  
+\* Beatmatch guide (Hardware control)  
 
 **Decks:**
 

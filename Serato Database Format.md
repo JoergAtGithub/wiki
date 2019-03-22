@@ -45,3 +45,6 @@ it's only present in the filename. Also, some not-very-useful fields are
 omitted in this example; for example there appear to be fields that give
 the order that the title/artist/key/BPM columns should appear in the
 browser.
+
+[Here is some Python 3 code that can parse the .crate file
+format.](https://gist.github.com/kerrickstaley/8eb04988c02fa7c62e75c4c34c04cf02)

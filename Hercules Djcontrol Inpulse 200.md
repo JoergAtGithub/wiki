@@ -81,9 +81,6 @@ Loop Out = Beatloop Off
 
 Beat Align LED = Track end warning (Make sure **Beatmatch Guide** is
 **On** for this to work)  
-  
-Loop In = Beatloop 4 beats  
-Loop Out = Beatloop Off
 
   
 **Browser:**

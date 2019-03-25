@@ -79,6 +79,12 @@ Vinyl = Scratch On/Off (Default: ON)
 Loop In = Beatloop 4 beats  
 Loop Out = Beatloop Off
 
+Beat Align LED = Track end warning (Make sure **Beatmatch Guide** is
+**On** for this to work)  
+  
+Loop In = Beatloop 4 beats  
+Loop Out = Beatloop Off
+
   
 **Browser:**
 
@@ -105,6 +111,7 @@ When in FX mode, each pad will send multiple and different Note and CC
 messages. As these could not all be used properly with Mixxx current
 effect framework still in development, a simplified configuration was
 assigned using the pad in SHIFT mode for convenience.  
+  
 SHIFT + Pad 1-3 = FX 1-3 on/off  
 SHIFT + Pad 4 = FX Rack 1/2 On/Off (Deck A/B respectively)  
   

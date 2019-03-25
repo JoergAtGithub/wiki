@@ -14,7 +14,7 @@ Windows. However, if you wish to use the [ASIO sound
 API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
 under Windows, please install the latest driver package available from
 the [Support
-page](https://support.hercules.com/en/product/djcontrolinpulse200-en//).
+page](https://support.hercules.com/en/product/djcontrolinpulse300-en//).
 
 ## Sound card setup
 

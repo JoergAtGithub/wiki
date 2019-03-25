@@ -91,8 +91,9 @@ Beat Align LED = Track end warning (Make sure **Beatmatch Guide** is
 **On** for this to work)  
   
 Loop In = Beatloop 4 beats  
-Loop Out = Beatloop Off
-
+SHIFT + Loop In = Loop Halve.  
+Loop Out = Beatloop Off  
+SHIFT + Loop Out = Loop Double.  
   
 **Browser:**
 

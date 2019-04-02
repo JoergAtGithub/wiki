@@ -247,7 +247,8 @@ Project -\> Properties -\> C/C++ General -\> Path and Symbols
 
 by checking "Show built-in values"
 
-If the discovering fails, you may add the required info manually:
+This process does not always work perfectly. If the discovering fails,
+you can help things along by adding the required info manually:
 
 #### Linux
 
@@ -292,26 +293,25 @@ You may set "Heap Size" to 20 % and "Absolute Limit" to 100 MB
 
   - Right click on the project -\> Properties -\> C/C++ General -\>
     Paths and Symbols
-  - Under the 'Includes' and 'Symbols' tabs, choose GNU C++ and add:
+  - Under the 'Includes' tabs, choose GNU C++ and add:
   - /usr/local/include
-  - /usr/local/Cellar/qt/5.10.1/include
-  - /usr/local/Cellar/qt/5.10.1/include/QtCharts
-  - /usr/local/Cellar/qt/5.10.1/include/QtConcurrent
-  - /usr/local/Cellar/qt/5.10.1/include/QtCore
-  - /usr/local/Cellar/qt/5.10.1/include/QtGui
-  - /usr/local/Cellar/qt/5.10.1/include/QtNetwork
-  - /usr/local/Cellar/qt/5.10.1/include/QtOpenGL
-  - /usr/local/Cellar/qt/5.10.1/include/QtScript
-  - /usr/local/Cellar/qt/5.10.1/include/QtScriptTools
-  - /usr/local/Cellar/qt/5.10.1/include/QtSql
-  - /usr/local/Cellar/qt/5.10.1/include/QtSvg
-  - /usr/local/Cellar/qt/5.10.1/include/QtTest
-  - /usr/local/Cellar/qt/5.10.1/include/QtWidgets
-  - /usr/local/Cellar/qt/5.10.1/include/QtXml
+  - ${QTDIR}/include
+  - ${QTDIR}/include/QtCharts
+  - ${QTDIR}/include/QtConcurrent
+  - ${QTDIR}/include/QtCore
+  - ${QTDIR}/include/QtGui
+  - ${QTDIR}/include/QtNetwork
+  - ${QTDIR}/include/QtOpenGL
+  - ${QTDIR}/include/QtScript
+  - ${QTDIR}/include/QtScriptTools
+  - ${QTDIR}/include/QtSql
+  - ${QTDIR}/include/QtSvg
+  - ${QTDIR}/include/QtTest
+  - ${QTDIR}/include/QtWidgets
+  - ${QTDIR}/include/QtXml
 
-<!-- end list -->
-
-  - (replace /usr/local/Cellar/qt/5.10.1 above with your QtDir)
+Note that the use of ${QTDIR} depends on you having set this variable
+under Project Properties \> C/C++ Build \> Environment
 
 After changing these settings, the index needs to be rebuilt. Eclipse
 will usually detect that changes have been made and will rebuild the

@@ -123,7 +123,7 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
   - You may also have to manually add to the system PATH setting to
     include, for example, /usr/local/bin and /usr/local/include. Do this
     the same way as the above. Separate individual paths with colons.
-  - To build with clang rather than gcc (recommended) add the below: `CC
+  - To build with clang (recommended) rather than gcc add the below: `CC
     | clang 
     CXX | clang++
     `

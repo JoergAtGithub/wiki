@@ -133,7 +133,7 @@ tar xzvf /path/to/scons-2.5.1.tar.gz scons-2.5.1/
 mv scons-2.5.1 /path/to/where-you-want-it-to-live
 
 # and then inside the cloned mixxx directory use it as such
-python2 /path/to/where-you-want-it-to-live/scripts/scons ...
+python2 /path/to/where-you-want-it-to-live/script/scons ...
 ```
 
 Then you just need the dependencies:

@@ -371,8 +371,9 @@ syncConnection = engine.makeConnection('[Channel3]', 'sync_enabled', syncButtonO
 syncConnection.trigger();
 ```
 
-You can check if a connection is disconnected by checking `isConnected`
-or by comparing the return value of `disconnect()`:
+*New in Mixxx 2.3:* You can check if a connection is disconnected by
+checking `isConnected` or by comparing the return value of
+`disconnect()`:
 
 ``` javascript
 var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', function () {});

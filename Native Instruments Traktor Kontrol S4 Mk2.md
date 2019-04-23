@@ -22,9 +22,6 @@ MK1 apart from the MK2 is the appearance of the jog wheel. On the MK1,
 the top of the jog wheel is black plastic; on the MK2, the top of the
 jog wheel is shiny aluminum.
 
-The mapping for the Kontrol S4 Mk2 is included in Mixxx 2.0, although it
-is incomplete.
-
 The Kontrol S4 Mk2 can run from USB bus power. Using the separate power
 supply increases the brightness of the LEDs, which is helpful for using
 it in daylight, and increases the volume of the headphone output.
@@ -39,8 +36,7 @@ GNU/Linux and Mac OS X. On Windows, it is recommended to install the
 [driver from Native
 Instruments](https://www.native-instruments.com/en/support/downloads/drivers-other-files/)
 and select the ASIO sound API in the Sound Hardware section of Mixxx's
-Preferences. **There is currently a bug in the mapping preventing it
-from working on Windows.**
+Preferences.
 
 With the S4 plugged in, a MIDI device is listed as an available
 controller in Mixxx's Preferences. That is the MIDI input/output ports

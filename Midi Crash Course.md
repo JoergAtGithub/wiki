@@ -95,13 +95,13 @@ Every controller works differently, but these are some typical patterns.
 
 ### LEDs
 
-If there's an LED behind the button, that is typically controlled by
-sending a message to the controller with the same first two bytes
-(status and note number) that the controller sends when the button is
-pressed. As for the value byte, for LEDs that can only be turned on or
-off, typically `0x00` turns it off and `0x01` or `0x7F` turns it on. For
-multi-color LEDs, the color is typically controlled by sending different
-values. Which ones correspond to which colors should be in the MIDI
+If there's a LED behind the button, usually it can be controlled by
+sending a message to the controller using the same status and note
+number that the controller sends when the button is pressed. As for the
+value field, for LEDs that can only be turned on or off, typically
+`0x00` turns it off and `0x01` or `0x7F` turns it on. For multi-color
+LEDs, the color is typically controlled by sending different values.
+Which ones correspond to which colors should be in the MIDI
 specification document for your controller. If they are not, you will
 have to look at mappings for other DJ software, or just try a few
 different values.

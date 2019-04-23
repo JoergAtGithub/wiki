@@ -4,7 +4,7 @@ completed these tests, please communicate your results in the topic for
 the release in the [\#development stream on
 Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development).
 
-  - load tracks into 2 decks and play at the same time. Confirm that you
+  - Load tracks into 2 decks and play at the same time. Confirm that you
     can hear audio output.
   - Go to Preferences -\> Waveform and verify that the RGB, RGB (GL),
     and RGB (GLSL) waveform renderers all work.

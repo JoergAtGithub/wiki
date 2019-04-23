@@ -1,7 +1,9 @@
 Before publishing a new version of Mixxx, the final release builds
-should be manually tested on Windows, macOS, and Linux. When you have
-completed these tests, please communicate your results in the topic for
-the release in the [\#development stream on
+should be manually tested on Windows, macOS, and Linux. The purpose of
+these tests is to confirm that nothing catastrophic broke at the last
+minute, not to find every little bug. When you have completed these
+tests, please communicate your results in the topic for the release in
+the [\#development stream on
 Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development).
 
   - Load tracks into 2 decks and play at the same time. Confirm that you

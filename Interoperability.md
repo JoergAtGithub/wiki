@@ -8,7 +8,10 @@ collection of resources.
 [Forum Thread:
 Interoperability](https://www.mixxx.org/forums/viewtopic.php?f=1&t=8838)
 
-[Launchpad: Multi-value tag/metadata
+[Launchpad Blueprint: Portable library database &
+analyses](https://blueprints.launchpad.net/mixxx/+spec/portable-library)
+
+[Launchpad Issue: Multi-value tag/metadata
 support](https://bugs.launchpad.net/mixxx/+bug/1743699)
 
 ## Projects
@@ -35,7 +38,7 @@ Open encyclopedia for collecting music metadata.
 
 [Homepage](https://musicbrainz.org)
 
-[Launchpad: Synchronize ratings and
+[Launchpad Issue: Synchronize ratings and
 crates](https://bugs.launchpad.net/mixxx/+bug/1741147)
 
 ## Products
@@ -52,11 +55,20 @@ hardware.
 [Zulip
 Topic](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Export.20to.20Engine.20Prime)
 
-[Launchpad: Export](https://bugs.launchpad.net/mixxx/+bug/1826162)
+[Launchpad Issue: Export](https://bugs.launchpad.net/mixxx/+bug/1826162)
 
 [libdjinterop on GitHub](https://github.com/xsco/libdjinterop)
 
 [Engine Prime File/Database Format](engine_library_format)
+
+### Native Instruments Traktor DJ/PRO
+
+Music management, analysis, and performance software for Traktor DJ
+hardware.
+
+#### Links
+
+[Homepage](https://www.native-instruments.com/products/traktor)
 
 ### Pioneer rekordbox
 
@@ -70,9 +82,12 @@ hardware.
 [XML Playlist Export Format
 Spec](http://www.prodjnet.com/rekordbox/support/pdf/xml_format_list.pdf)
 
-[Launchpad: Import](https://bugs.launchpad.net/mixxx/+bug/1476290)
+[Forum Thread:
+Export](https://www.mixxx.org/forums/viewtopic.php?f=1&t=8838)
 
-[Launchpad: Export](https://bugs.launchpad.net/mixxx/+bug/1796177)
+[Launchpad Issue: Import](https://bugs.launchpad.net/mixxx/+bug/1476290)
+
+[Launchpad Issue: Export](https://bugs.launchpad.net/mixxx/+bug/1796177)
 
 ### Serato DJ
 
@@ -83,11 +98,17 @@ certified hardware.
 
 [Homepage](https://serato.com/dj)
 
+[Zulip Topic: Crate
+support](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Serato.20crate.20support.20-.20need.20pointers)
+
 ### VirtualDJ
 
 #### Links
 
 [Homepage](https://www.virtualdj.com/)
+
+[Launchpad Issue:
+Import/Export](https://bugs.launchpad.net/mixxx/+bug/1750737)
 
 ## Services
 
@@ -96,3 +117,6 @@ certified hardware.
 Music streaming service.
 
 [Developer Resources](https://developer.spotify.com)
+
+[Zulip Topic: Sync crates and
+playlists](https://mixxx.zulipchat.com/#narrow/stream/109122-general/topic/Sync.20Mixxx.20crates.20and.20Spotify.20playlists)

@@ -70,9 +70,9 @@ hardware.
 [XML Playlist Export Format
 Spec](http://www.prodjnet.com/rekordbox/support/pdf/xml_format_list.pdf)
 
-[Launchpad Issue: Import](https://bugs.launchpad.net/mixxx/+bug/1476290)
+[Launchpad: Import](https://bugs.launchpad.net/mixxx/+bug/1476290)
 
-[Launchpad Issue: Export](https://bugs.launchpad.net/mixxx/+bug/1796177)
+[Launchpad: Export](https://bugs.launchpad.net/mixxx/+bug/1796177)
 
 ### Serato DJ
 
@@ -88,3 +88,11 @@ certified hardware.
 #### Links
 
 [Homepage](https://www.virtualdj.com/)
+
+## Services
+
+### Spotify
+
+Music streaming service.
+
+[Developer Resources](https://developer.spotify.com)

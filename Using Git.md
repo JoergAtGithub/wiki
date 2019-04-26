@@ -265,6 +265,8 @@ graphics. Don't worry if you don't understand everything the first time.
 
 [[/media/git-xkcd.png|git-xkcd.png]]
 
+Image from [xkcd](https://xkcd.com/1597/)
+
 # Working on mappings and skins separately from other changes
 
 If you are working on a mapping or skin and you want to work on other

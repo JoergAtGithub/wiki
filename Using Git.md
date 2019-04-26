@@ -263,7 +263,7 @@ complete them. The first one is the shortest.
 All of these tutorials are interactive and guide you with helpful
 graphics. Don't worry if you don't understand everything the first time.
 
-![https://imgs.xkcd.com/comics/git.png](https://imgs.xkcd.com/comics/git.png)
+[[/media/git-xkcd.png|git-xkcd.png]]
 
 # Working on mappings and skins separately from other changes
 

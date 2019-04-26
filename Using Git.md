@@ -114,7 +114,7 @@ If you want your changes included in a current beta release or a bugfix
 point release (such as 2.1.1), start your new branch from the release
 branch instead of the master branch, for example:
 
-    git checkout -b fixing_some_bug upstream/2.1
+    git checkout -b fixing_some_bug upstream/2.2
 
 Doing this every time you start working on a new feature or bug fix will
 allow you to propose your new set of changes for inclusion in Mixxx

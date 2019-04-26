@@ -77,6 +77,14 @@ sound, either they all need to use JACK, or you can try using the
 line without pasuspender. Refer to the Mixxx manual for more information
 about [sound
 APIs](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api).
+If you use JACK and do not want Mixxx to pause PulseAudio, you can edit
+/usr/share/applications/mixxx.desktop to change the line:
+
+`Exec=sh -c "pasuspender -- mixxx || mixxx"`
+
+to
+
+`Exec=mixxx`
 
 On Windows, the recommended ASIO sound API typically requires that only
 one program uses a sound card at a time. Refer to the Mixxx manual for

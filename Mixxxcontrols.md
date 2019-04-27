@@ -224,35 +224,35 @@ decks in Mixxx.\[26\]
 | scratch2\[105\]                          |  | \-3.0..3.0           |  | Affects **absolute** play speed & direction whether currently playing or not when *scratch2\_enabled* is active. (multiplicative). Use [JavaScript engine.scratch functions](MIDI%20scripting#scratching) to manipulate in controller mappings.                                                   |  | Waveform                                                                                                                                                                     |  |
 | scratch2\_enable\[106\]                  |  | binary               |  | Takes over play speed & direction for *scratch2*.                                                                                                                                                                                                                                                 |  | Waveform                                                                                                                                                                     |  |
 | slip\_enabled\[107\]                     |  | binary               |  | Toggles slip mode. When active, the playback continues muted in the background during a loop, scratch etc. Once disabled, the audible playback will resume where the track would have been.                                                                                                       |  | Slip mode button                                                                                                                                                             |  |
-| stars\_up                                |  | binary               |  | Increase the rating of the currently loaded track (if the skin has star widgets in the decks section)                                                                                                                                                                                             |  | Star count is increased in the deck's star widget and in the libary table                                                                                                    |  |
-| stars\_down                              |  | binary               |  | Decrease the rating of the currently loaded track (if the skin has star widgets in the decks section)                                                                                                                                                                                             |  | Star count is decreased in the deck's star widget and in the libary table                                                                                                    |  |
+| stars\_up\[108\]                         |  | binary               |  | Increase the rating of the currently loaded track (if the skin has star widgets in the decks section)                                                                                                                                                                                             |  | Star count is increased in the deck's star widget and in the library table                                                                                                   |  |
+| stars\_down\[109\]                       |  | binary               |  | Decrease the rating of the currently loaded track (if the skin has star widgets in the decks section)                                                                                                                                                                                             |  | Star count is decreased in the deck's star widget and in the library table                                                                                                   |  |
 | start                                    |  | binary               |  | Jump to start of track                                                                                                                                                                                                                                                                            |  | Track jumps to start                                                                                                                                                         |  |
-| start\_play\[108\]                       |  | binary               |  | Start playback from the beginning of the deck.                                                                                                                                                                                                                                                    |  | Deck plays from beginning                                                                                                                                                    |  |
-| start\_stop\[109\]                       |  | binary               |  | Seeks a player to the start and then stops it.                                                                                                                                                                                                                                                    |  | Deck stops at the beginning                                                                                                                                                  |  |
-| stop\[110\]                              |  | binary               |  | Stops a player.                                                                                                                                                                                                                                                                                   |  | Pause Button. Deck pauses at the current position                                                                                                                            |  |
-| sync\_enabled\[111\]                     |  | binary               |  | Syncs the BPM and phase (depending on quantize) to that of the other track (if BPM is detected on both). Click & hold for at least one second activates Master sync on that deck.                                                                                                                 |  | SYNC button & Speed slider snaps to the appropriate value                                                                                                                    |  |
-| sync\_master\[112\]                      |  | binary               |  | Sets deck as master clock                                                                                                                                                                                                                                                                         |  |                                                                                                                                                                              |  |
-| sync\_mode\[113\]                        |  | binary               |  | SYNC\_NONE = 0; SYNC\_FOLLOWER = 1; SYNC\_MASTER = 2,                                                                                                                                                                                                                                             |  |                                                                                                                                                                              |  |
-| sync\_key\[114\]                         |  | ?                    |  | Match musical key                                                                                                                                                                                                                                                                                 |  | Key value widget                                                                                                                                                             |  |
-| track\_loaded\[115\]                     |  | binary               |  | (Read-only) Whether a track is loaded in the specified deck                                                                                                                                                                                                                                       |  | Waveform and track metadata shown in deck                                                                                                                                    |  |
-| track\_samplerate\[116\]                 |  | absolute value       |  | (Read-only) Sample rate of the track loaded on the specified deck                                                                                                                                                                                                                                 |  | n/a                                                                                                                                                                          |  |
+| start\_play\[110\]                       |  | binary               |  | Start playback from the beginning of the deck.                                                                                                                                                                                                                                                    |  | Deck plays from beginning                                                                                                                                                    |  |
+| start\_stop\[111\]                       |  | binary               |  | Seeks a player to the start and then stops it.                                                                                                                                                                                                                                                    |  | Deck stops at the beginning                                                                                                                                                  |  |
+| stop\[112\]                              |  | binary               |  | Stops a player.                                                                                                                                                                                                                                                                                   |  | Pause Button. Deck pauses at the current position                                                                                                                            |  |
+| sync\_enabled\[113\]                     |  | binary               |  | Syncs the BPM and phase (depending on quantize) to that of the other track (if BPM is detected on both). Click & hold for at least one second activates Master sync on that deck.                                                                                                                 |  | SYNC button & Speed slider snaps to the appropriate value                                                                                                                    |  |
+| sync\_master\[114\]                      |  | binary               |  | Sets deck as master clock                                                                                                                                                                                                                                                                         |  |                                                                                                                                                                              |  |
+| sync\_mode\[115\]                        |  | binary               |  | SYNC\_NONE = 0; SYNC\_FOLLOWER = 1; SYNC\_MASTER = 2,                                                                                                                                                                                                                                             |  |                                                                                                                                                                              |  |
+| sync\_key\[116\]                         |  | ?                    |  | Match musical key                                                                                                                                                                                                                                                                                 |  | Key value widget                                                                                                                                                             |  |
+| track\_loaded\[117\]                     |  | binary               |  | (Read-only) Whether a track is loaded in the specified deck                                                                                                                                                                                                                                       |  | Waveform and track metadata shown in deck                                                                                                                                    |  |
+| track\_samplerate\[118\]                 |  | absolute value       |  | (Read-only) Sample rate of the track loaded on the specified deck                                                                                                                                                                                                                                 |  | n/a                                                                                                                                                                          |  |
 | track\_samples                           |  | absolute value       |  | (Read-only) Number of sound samples in the track loaded on the specified deck                                                                                                                                                                                                                     |  | n/a                                                                                                                                                                          |  |
 | volume                                   |  | default              |  | Adjusts the channel volume fader                                                                                                                                                                                                                                                                  |  | VOL fader                                                                                                                                                                    |  |
-| mute\[117\]                              |  | binary               |  | Mutes the channel                                                                                                                                                                                                                                                                                 |  | Mute button                                                                                                                                                                  |  |
-| vinylcontrol\_enabled\[118\]             |  | binary               |  | Toggles whether a deck is being controlled by digital vinyl                                                                                                                                                                                                                                       |  | When enabled, a vinyl indication should appear onscreen indicating green for Enabled                                                                                         |  |
-| vinylcontrol\_cueing\[119\]              |  | 0.0-2.0              |  | Determines how cue points are treated in vinyl control Relative mode                                                                                                                                                                                                                              |  | Off - cue points ignored; One Cue - If needle is dropped after the cue point, track will seek to that cue point; hot cue - track will seek to nearest previous hot cue point |  |
-| vinylcontrol\_mode\[120\]                |  | 0.0-2.0              |  | Determines how vinyl control interprets needle information: absolute mode - track position equals needle position and speed; relative mode - track speed equals needle speed regardless of needle position; constant mode - track speed equals last known-steady speed regardless of needle input |  | 3-way button indicates status                                                                                                                                                |  |
-| vinylcontrol\_status\[121\]              |  | 0.0-3.0 (read-only)  |  | Provides visual feedback with regards to vinyl control status                                                                                                                                                                                                                                     |  | Off for control disabled, green for control enabled, blinking yellow for when the needle reaches the end of the record, and red for needle skip detected                     |  |
-| visual\_bpm\[122\]                       |  | ?                    |  | BPM to display in the UI (updated more slowly than the actual bpm)                                                                                                                                                                                                                                |  | BPM value widget                                                                                                                                                             |  |
-| visual\_key\[123\]                       |  | ?                    |  | Current musical key after pitch shifting to display in the UI using the notation selected in the preferences                                                                                                                                                                                      |  | Key value widget                                                                                                                                                             |  |
-| visual\_key\_distance\[124\]             |  | \-0.5..0.5           |  | The distance to the nearest key measured in cents                                                                                                                                                                                                                                                 |  | Key value widget                                                                                                                                                             |  |
+| mute\[119\]                              |  | binary               |  | Mutes the channel                                                                                                                                                                                                                                                                                 |  | Mute button                                                                                                                                                                  |  |
+| vinylcontrol\_enabled\[120\]             |  | binary               |  | Toggles whether a deck is being controlled by digital vinyl                                                                                                                                                                                                                                       |  | When enabled, a vinyl indication should appear onscreen indicating green for Enabled                                                                                         |  |
+| vinylcontrol\_cueing\[121\]              |  | 0.0-2.0              |  | Determines how cue points are treated in vinyl control Relative mode                                                                                                                                                                                                                              |  | Off - cue points ignored; One Cue - If needle is dropped after the cue point, track will seek to that cue point; hot cue - track will seek to nearest previous hot cue point |  |
+| vinylcontrol\_mode\[122\]                |  | 0.0-2.0              |  | Determines how vinyl control interprets needle information: absolute mode - track position equals needle position and speed; relative mode - track speed equals needle speed regardless of needle position; constant mode - track speed equals last known-steady speed regardless of needle input |  | 3-way button indicates status                                                                                                                                                |  |
+| vinylcontrol\_status\[123\]              |  | 0.0-3.0 (read-only)  |  | Provides visual feedback with regards to vinyl control status                                                                                                                                                                                                                                     |  | Off for control disabled, green for control enabled, blinking yellow for when the needle reaches the end of the record, and red for needle skip detected                     |  |
+| visual\_bpm\[124\]                       |  | ?                    |  | BPM to display in the UI (updated more slowly than the actual bpm)                                                                                                                                                                                                                                |  | BPM value widget                                                                                                                                                             |  |
+| visual\_key\[125\]                       |  | ?                    |  | Current musical key after pitch shifting to display in the UI using the notation selected in the preferences                                                                                                                                                                                      |  | Key value widget                                                                                                                                                             |  |
+| visual\_key\_distance\[126\]             |  | \-0.5..0.5           |  | The distance to the nearest key measured in cents                                                                                                                                                                                                                                                 |  | Key value widget                                                                                                                                                             |  |
 | VuMeter                                  |  | default              |  | Outputs the current instantaneous deck volume                                                                                                                                                                                                                                                     |  | Deck VU meter                                                                                                                                                                |  |
 | VuMeterL                                 |  | default              |  | Outputs the current instantaneous deck volume for the left channel                                                                                                                                                                                                                                |  | Deck VU meter L                                                                                                                                                              |  |
 | VuMeterR                                 |  | default              |  | Outputs the current instantaneous deck volume for the right channel                                                                                                                                                                                                                               |  | Deck VU meter R                                                                                                                                                              |  |
-| waveform\_zoom\[125\]                    |  | 1.0 - 10.0           |  | Zooms the waveform to look ahead or back as needed.                                                                                                                                                                                                                                               |  | Waveform zoom buttons                                                                                                                                                        |  |
-| waveform\_zoom\_up\[126\]                |  | ?                    |  | Waveform Zoom Out                                                                                                                                                                                                                                                                                 |  | Waveform zoom buttons                                                                                                                                                        |  |
-| waveform\_zoom\_down\[127\]              |  | ?                    |  | Waveform Zoom In                                                                                                                                                                                                                                                                                  |  | Waveform zoom buttons                                                                                                                                                        |  |
-| waveform\_zoom\_set\_default\[128\]      |  | ?                    |  | Return to default waveform zoom level                                                                                                                                                                                                                                                             |  | Waveform zoom buttons                                                                                                                                                        |  |
+| waveform\_zoom\[127\]                    |  | 1.0 - 10.0           |  | Zooms the waveform to look ahead or back as needed.                                                                                                                                                                                                                                               |  | Waveform zoom buttons                                                                                                                                                        |  |
+| waveform\_zoom\_up\[128\]                |  | ?                    |  | Waveform Zoom Out                                                                                                                                                                                                                                                                                 |  | Waveform zoom buttons                                                                                                                                                        |  |
+| waveform\_zoom\_down\[129\]              |  | ?                    |  | Waveform Zoom In                                                                                                                                                                                                                                                                                  |  | Waveform zoom buttons                                                                                                                                                        |  |
+| waveform\_zoom\_set\_default\[130\]      |  | ?                    |  | Return to default waveform zoom level                                                                                                                                                                                                                                                             |  | Waveform zoom buttons                                                                                                                                                        |  |
 | wheel                                    |  | \-3.0..3.0           |  | Affects relative play speed & direction persistently (additive offset & must manually be undone)                                                                                                                                                                                                  |  | Waveform                                                                                                                                                                     |  |
 
 ### \[SamplerN\]
@@ -265,8 +265,8 @@ have a different purpose (playing samples). Any control listed above for
 | Key/Control                        |  | Range  |  | What it does                                                                                               |  | On-screen feedback                                            |  |
 | ---------------------------------- |  | ------ |  | ---------------------------------------------------------------------------------------------------------- |  | ------------------------------------------------------------- |  |
 | \[Samplers\],show\_samplers        |  | binary |  |                                                                                                            |  | Shows Sampler bank(s)                                         |  |
-| \[Sampler\],SaveSamplerBank\[129\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
-| \[Sampler\],LoadSamplerBank\[130\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
+| \[Sampler\],SaveSamplerBank\[131\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
+| \[Sampler\],LoadSamplerBank\[132\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
 
 ### \[PreviewDeckN\]
 
@@ -278,23 +278,23 @@ listed above for `[ChannelN]` will work for a preview deck, just replace
 
 |  | Key/Control   |  | Range  |  | What it does                                                                                                          |  | On-screen feedback                                                                                                                                                                                                                                                                                                                            |  |
 |  | ------------- |  | ------ |  | --------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
-|  | Toggle\[131\] |  | binary |  | Moves control by a vinyl control signal from one deck to another if using the single deck vinyl control (VC) feature. |  | If VC isn't enabled on any decks, enable it on the first one we're receiving samples for. If VC is enabled on a single (exclusive) deck, and another deck is setup to receive samples, disable it on the former deck and enable it on the next eligible deck (ordered by deck number). If VC is enabled on multiple decks, don't do anything. |  |
+|  | Toggle\[133\] |  | binary |  | Moves control by a vinyl control signal from one deck to another if using the single deck vinyl control (VC) feature. |  | If VC isn't enabled on any decks, enable it on the first one we're receiving samples for. If VC is enabled on a single (exclusive) deck, and another deck is setup to receive samples, disable it on the former deck and enable it on the next eligible deck (ordered by deck number). If VC is enabled on multiple decks, don't do anything. |  |
 
 ### \[MicrophoneN\]
 
 Below, *N*=2 up to the number of active microphones. e.g
-\[Microphone2\], for Mic \#1 just use \[Microphone\]\[132\].
+\[Microphone2\], for Mic \#1 just use \[Microphone\]\[134\].
 
 |  | Key/Control          |  | Range         |  | What it does                                                                                                          |  | On-screen feedback              |  |
 |  | -------------------- |  | ------------- |  | --------------------------------------------------------------------------------------------------------------------- |  | ------------------------------- |  |
-|  | enabled\[133\]       |  | binary        |  | 1 if a microphone input is enabled, 0 if not.                                                                         |  | Microphone is enabled.          |  |
-|  | orientation\[134\]   |  | 0-2           |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
-|  | PeakIndicator\[135\] |  | binary        |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
-|  | talkover\[136\]      |  | binary        |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | Talk button                     |  |
-|  | volume\[137\]        |  | default       |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
+|  | enabled\[135\]       |  | binary        |  | 1 if a microphone input is enabled, 0 if not.                                                                         |  | Microphone is enabled.          |  |
+|  | orientation\[136\]   |  | 0-2           |  | Set microphone orientation, 0 = left side of crossfader, 1 = center, 2 = right side of crossfader. Default is center. |  | N/A                             |  |
+|  | PeakIndicator\[137\] |  | binary        |  | Indicates when the signal is clipping (too loud for the hardware and is being distorted)                              |  | Microphone Clip light           |  |
+|  | talkover\[138\]      |  | binary        |  | Hold value at 1 to mix microphone input into the master output.                                                       |  | Talk button                     |  |
+|  | volume\[139\]        |  | default       |  | Adjusts the microphone volume fader                                                                                   |  | Microphone volume fader changes |  |
 |  | pregain              |  | 0.0..1.0..4.0 |  | Adjusts the gain of the mic input                                                                                     |  | Microphone gain knob            |  |
-|  | mute\[138\]          |  | binary        |  | Mutes the channel                                                                                                     |  | Mute button                     |  |
-|  | VuMeter\[139\]       |  | default       |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
+|  | mute\[140\]          |  | binary        |  | Mutes the channel                                                                                                     |  | Mute button                     |  |
+|  | VuMeter\[141\]       |  | default       |  | Outputs the current instantaneous microphone volume                                                                   |  | Microphone VU meter changes     |  |
 
 ### \[Recording\]
 
@@ -307,34 +307,34 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 |  | Key/Control              |  | Range  |  | What it does                                  |  | On-screen feedback                                 |  |
 |  | ------------------------ |  | ------ |  | --------------------------------------------- |  | -------------------------------------------------- |  |
-|  | enabled\[140\]           |  | binary |  | Turns Auto DJ on or off.                      |  | AutoDJ button                                      |  |
-|  | shuffle\_playlist\[141\] |  | binary |  | Shuffles the content of the Auto DJ playlist. |  | Order of tracks in the AutoDJ playlist changes.    |  |
-|  | skip\_next\[142\]        |  | binary |  | Skips the next track in the Auto DJ playlist. |  | Skipped track is removed from the AutoDJ playlist. |  |
-|  | fade\_now\[143\]         |  | binary |  | Triggers the transition to the next track.    |  | Crossfader slider moves to the other side.         |  |
+|  | enabled\[142\]           |  | binary |  | Turns Auto DJ on or off.                      |  | AutoDJ button                                      |  |
+|  | shuffle\_playlist\[143\] |  | binary |  | Shuffles the content of the Auto DJ playlist. |  | Order of tracks in the AutoDJ playlist changes.    |  |
+|  | skip\_next\[144\]        |  | binary |  | Skips the next track in the Auto DJ playlist. |  | Skipped track is removed from the AutoDJ playlist. |  |
+|  | fade\_now\[145\]         |  | binary |  | Triggers the transition to the next track.    |  | Crossfader slider moves to the other side.         |  |
 
 ### \[Library\]
 
 | Key/Control                  |  | Range    |  | What it does                                                                                                                      |  | On-screen feedback                   |  |
 | ---------------------------- |  | -------- |  | --------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------ |  |
-| MoveUp\[144\]                |  | Binary   |  | Equivalent to pressing the UP key on the keyboard                                                                                 |  | Currently selected item changes      |  |
-| MoveDown\[145\]              |  | Binary   |  | Equivalent to pressing the DOWN key on the keyboard                                                                               |  | Currently selected item changes      |  |
-| MoveVertical\[146\]          |  | Relative |  | Move UP or DOWN the specified number of locations (negative for UP). Intended to be mapped to an encoder knob.                    |  | Currently selected item changes      |  |
-| ScrollUp\[147\]              |  | Binary   |  | Equivalent to pressing the PAGEUP key on the keyboard                                                                             |  | Currently selected item changes      |  |
-| ScrollDown\[148\]            |  | Binary   |  | Equivalent to pressing the PAGEDOWN key on the keyboard                                                                           |  | Currently selected item changes      |  |
-| ScrollVertical\[149\]        |  | Relative |  | Scroll UP or DOWN the specified number of pages (negative for UP). Intended to be mapped to an encoder knob.                      |  | Currently selected item changes      |  |
-| MoveLeft\[150\]              |  | Binary   |  | Equivalent to pressing the LEFT key on the keyboard                                                                               |  | Currently selected item changes      |  |
-| MoveRight\[151\]             |  | Binary   |  | Equivalent to pressing the RIGHT key on the keyboard                                                                              |  | Currently selected item changes      |  |
-| MoveHorizontal\[152\]        |  | Relative |  | Move LEFT or RIGHT the specified number of locations (negative for LEFT). Intended to be mapped to an encoder knob.               |  | Currently selected item changes      |  |
-| MoveFocusForward\[153\]      |  | Binary   |  | Equivalent to pressing the TAB key on the keyboard                                                                                |  | Currently focused pane changes       |  |
-| MoveFocusBackward\[154\]     |  | Binary   |  | Equivalent to pressing the SHIFT+TAB key on the keyboard                                                                          |  | Currently focused pane changes       |  |
-| MoveFocus\[155\]             |  | Relative |  | Move focus forward or backwards the specified number of panes (negative for SHIFT+TAB). Intended to be mapped to an encoder knob. |  | Currently focused pane changes       |  |
-| GoToItem\[156\]              |  | Binary   |  | Equivalent to double clicking the currently selected item                                                                         |  | Context dependent                    |  |
-| AutoDjAddBottom\[157\]       |  | Binary   |  | Add selected track(s) to Auto DJ Queue (bottom).                                                                                  |  | Append track(s) to Auto DJ playlist  |  |
-| AutoDjAddTop\[158\]          |  | Binary   |  | Add selected track(s) to Auto DJ Queue (top).                                                                                     |  | Prepend track(s) to Auto DJ playlist |  |
+| MoveUp\[146\]                |  | Binary   |  | Equivalent to pressing the UP key on the keyboard                                                                                 |  | Currently selected item changes      |  |
+| MoveDown\[147\]              |  | Binary   |  | Equivalent to pressing the DOWN key on the keyboard                                                                               |  | Currently selected item changes      |  |
+| MoveVertical\[148\]          |  | Relative |  | Move UP or DOWN the specified number of locations (negative for UP). Intended to be mapped to an encoder knob.                    |  | Currently selected item changes      |  |
+| ScrollUp\[149\]              |  | Binary   |  | Equivalent to pressing the PAGEUP key on the keyboard                                                                             |  | Currently selected item changes      |  |
+| ScrollDown\[150\]            |  | Binary   |  | Equivalent to pressing the PAGEDOWN key on the keyboard                                                                           |  | Currently selected item changes      |  |
+| ScrollVertical\[151\]        |  | Relative |  | Scroll UP or DOWN the specified number of pages (negative for UP). Intended to be mapped to an encoder knob.                      |  | Currently selected item changes      |  |
+| MoveLeft\[152\]              |  | Binary   |  | Equivalent to pressing the LEFT key on the keyboard                                                                               |  | Currently selected item changes      |  |
+| MoveRight\[153\]             |  | Binary   |  | Equivalent to pressing the RIGHT key on the keyboard                                                                              |  | Currently selected item changes      |  |
+| MoveHorizontal\[154\]        |  | Relative |  | Move LEFT or RIGHT the specified number of locations (negative for LEFT). Intended to be mapped to an encoder knob.               |  | Currently selected item changes      |  |
+| MoveFocusForward\[155\]      |  | Binary   |  | Equivalent to pressing the TAB key on the keyboard                                                                                |  | Currently focused pane changes       |  |
+| MoveFocusBackward\[156\]     |  | Binary   |  | Equivalent to pressing the SHIFT+TAB key on the keyboard                                                                          |  | Currently focused pane changes       |  |
+| MoveFocus\[157\]             |  | Relative |  | Move focus forward or backwards the specified number of panes (negative for SHIFT+TAB). Intended to be mapped to an encoder knob. |  | Currently focused pane changes       |  |
+| GoToItem\[158\]              |  | Binary   |  | Equivalent to double clicking the currently selected item                                                                         |  | Context dependent                    |  |
+| AutoDjAddBottom\[159\]       |  | Binary   |  | Add selected track(s) to Auto DJ Queue (bottom).                                                                                  |  | Append track(s) to Auto DJ playlist  |  |
+| AutoDjAddTop\[160\]          |  | Binary   |  | Add selected track(s) to Auto DJ Queue (top).                                                                                     |  | Prepend track(s) to Auto DJ playlist |  |
 | show\_coverart               |  | Binary   |  | Toggle the Cover Art in Library                                                                                                   |  |                                      |  |
-| font\_size\_increment\[159\] |  | Binary   |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used.             |  | Library view                         |  |
-| font\_size\_decrement\[160\] |  | Binary   |  | Decrease the size of the library font                                                                                             |  | Library view                         |  |
-| font\_size\_knob\[161\]      |  | Relative |  | Increase or decrease the size of the library font                                                                                 |  | Library view                         |  |
+| font\_size\_increment\[161\] |  | Binary   |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used.             |  | Library view                         |  |
+| font\_size\_decrement\[162\] |  | Binary   |  | Decrease the size of the library font                                                                                             |  | Library view                         |  |
+| font\_size\_knob\[163\]      |  | Relative |  | Increase or decrease the size of the library font                                                                                 |  | Library view                         |  |
 
 ### \[Playlist\]
 
@@ -352,7 +352,7 @@ current status.)
 
 |  | Key/Control         |  | Range  |  | What it does                                                                                                                                                                                                   |  | On-screen feedback |  |
 |  | ------------------- |  | ------ |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
-|  | touch\_shift\[162\] |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in the future. |  | All Widgets        |  |
+|  | touch\_shift\[164\] |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in the future. |  | All Widgets        |  |
 
 ### Effects framework
 
@@ -368,7 +368,7 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\]                  |  | chain\_selector              |  | \+1/-1               |  | Select EffectChain preset. \> 0 goes one forward; \< 0 goes one backward.                                                                                                                          |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | clear                        |  | binary               |  | Clear the currently loaded EffectChain in this EffectUnit.                                                                                                                                         |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | enabled                      |  | binary, default true |  | If true, the EffectChain in this EffectUnit will be processed. Meant to allow the user a quick toggle for the effect unit.                                                                         |  |
-| \[EffectRack1\_EffectUnitN\] \[163\]          |  | focused\_effect              |  | 0..num\_effects      |  | 0 indicates no effect is focused; \> 0 indicates the index of the focused effect. Focusing an effect only does something if a controller mapping changes how it behaves when an effect is focused. |  |
+| \[EffectRack1\_EffectUnitN\] \[165\]          |  | focused\_effect              |  | 0..num\_effects      |  | 0 indicates no effect is focused; \> 0 indicates the index of the focused effect. Focusing an effect only does something if a controller mapping changes how it behaves when an effect is focused. |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[ChannelI\]\_enable  |  | binary               |  | Whether or not this EffectChain applies to Deck I                                                                                                                                                  |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[Headphone\]\_enable |  | binary               |  | Whether or not this EffectChain applies to the Headphone output                                                                                                                                    |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[Master\]\_enable    |  | binary               |  | Whether or not this EffectChain applies to the Master output                                                                                                                                       |  |
@@ -379,8 +379,8 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\]                  |  | num\_effects                 |  | integer, read-only   |  | The number of Effects that this EffectChain has                                                                                                                                                    |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | num\_effectslots             |  | integer, read-only   |  | The number of effect slots available in this EffectUnit.                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | prev\_chain                  |  | binary               |  | Cycle to the previous EffectChain preset before the currently loaded preset.                                                                                                                       |  |
-| \[EffectRack1\_EffectUnitN\] \[164\]          |  | show\_focus                  |  | binary               |  | Whether to show focus buttons and draw a border around the focused effect in skins. This should not be manipulated by skins; it should only be changed by controller mappings.                     |  |
-| \[EffectRack1\_EffectUnitN\] \[165\]          |  | show\_parameters             |  | binary               |  | Whether to show all the parameters of each effect in skins or only show metaknobs.                                                                                                                 |  |
+| \[EffectRack1\_EffectUnitN\] \[166\]          |  | show\_focus                  |  | binary               |  | Whether to show focus buttons and draw a border around the focused effect in skins. This should not be manipulated by skins; it should only be changed by controller mappings.                     |  |
+| \[EffectRack1\_EffectUnitN\] \[167\]          |  | show\_parameters             |  | binary               |  | Whether to show all the parameters of each effect in skins or only show metaknobs.                                                                                                                 |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | super1                       |  | 0.0..1.0             |  | The EffectChain superknob. Moves the metaknobs for each effect in the chain.                                                                                                                       |  |
 | Effect Controls                               |  |                              |  |                      |  |                                                                                                                                                                                                    |  |
 | \[Group\]                                     |  | Key/Control                  |  | Range                |  | What it does                                                                                                                                                                                       |  |
@@ -393,7 +393,7 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_parameterslots          |  | integer, read-only   |  | The number of parameter slots available.                                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_button\_parameters      |  | integer, read-only   |  | The number of button parameters the currently loaded effect has. 0 if no effect is loaded                                                                                                          |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_button\_parameterslots  |  | integer, read-only   |  | The number of button parameter slots available.                                                                                                                                                    |  |
-| \[EffectRack1\_EffectUnitN\_EffectM\] \[166\] |  | meta                         |  | 0..1                 |  | Controls the parameters that are linked to the metaknob.                                                                                                                                           |  |
+| \[EffectRack1\_EffectUnitN\_EffectM\] \[168\] |  | meta                         |  | 0..1                 |  | Controls the parameters that are linked to the metaknob.                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | prev\_effect                 |  | binary               |  | Cycle to the previous effect before the currently loaded effect.                                                                                                                                   |  |
 | EffectParameter Controls                      |  |                              |  |                      |  |                                                                                                                                                                                                    |  |
 | \[Group\]                                     |  | Key/Control                  |  | Range                |  | What it does                                                                                                                                                                                       |  |
@@ -457,19 +457,19 @@ Equalizers section of the Preferences window.
 | \[Channel*N*\] |  | jog                              |  | \-3.0..3.0           |  | Affects relative play speed & direction for short instances (additive & is automatically reset to 0)                                                   |  | waveform                                         |  | [JavaScript engine.scratch functions](MIDI%20scripting#scratching)                  |  |
 | \[Channel*N*\] |  | reloop\_exit                     |  | binary               |  | Toggles the current loop on or off. If the loop is ahead of the current play position, the track will keep playing normally until it reaches the loop. |  | Loop range in waveform activates or deactivates. |  | reloop\_toggle                                                                      |  |
 | \[Channel*N*\] |  | scratch                          |  | \-3.0..3.0           |  | Affects play speed & direction ([differently whether currently playing or not](https://bugs.launchpad.net/mixxx/+bug/530281)) (multiplicative)         |  | Waveform                                         |  | [JavaScript engine.scratch functions](MIDI%20scripting#scratching)                  |  |
-| \[Channel*N*\] |  | filter\[167\],\[168\]            |  | binary               |  | Toggles the filter effect                                                                                                                              |  | Filter button                                    |  | [\[QuickEffectRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], enabled          |  |
-| \[Channel*N*\] |  | filterDepth\[169\],\[170\]       |  | default              |  | Adjusts the intensity of the filter effect                                                                                                             |  | Filter depth knob                                |  | [\[QuickEffectRack1\_\[ChannelN](#effects-framework)\]\], super1                    |  |
-| \[Channel*N*\] |  | filterLow\[171\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the low EQ filter                                                                                                                  |  | LOW knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter1         |  |
-| \[Channel*N*\] |  | filterLowKill\[172\]             |  | binary               |  | Holds the gain of the low EQ to -inf while active                                                                                                      |  | LOW kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter1 |  |
-| \[Channel*N*\] |  | filterMid\[173\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the mid EQ filter                                                                                                                  |  | MID knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter2         |  |
-| \[Channel*N*\] |  | filterMidKill\[174\]             |  | binary               |  | Holds the gain of the mid EQ to -inf while active                                                                                                      |  | MID kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter2 |  |
-| \[Channel*N*\] |  | filterHigh\[175\]                |  | 0.0..1.0..4.0        |  | Adjusts the gain of the high EQ filter                                                                                                                 |  | HIGH knob                                        |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter3         |  |
-| \[Channel*N*\] |  | filterHighKill\[176\]            |  | binary               |  | Holds the gain of the high EQ to -inf while active                                                                                                     |  | HIGH kill knob                                   |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter3 |  |
-| \[Flanger\]    |  | lfoDepth\[177\]                  |  | default              |  | Adjusts the intensity of the flange effect                                                                                                             |  | Depth knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Flanger\]    |  | lfoDelay\[178\]                  |  | 50..10000            |  | Adjusts the phase delay of the flange effect in microseconds                                                                                           |  | Delay knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Flanger\]    |  | lfoPeriod\[179\]                 |  | 50000..2000000       |  | Adjusts the wavelength of the flange effect in microseconds                                                                                            |  | LFO knob                                         |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Channel*N*\] |  | flanger\[180\]                   |  | binary               |  | Toggles the flange effect                                                                                                                              |  | FLANGER button                                   |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Channel*N*\] |  | beatloop\_X\[181\]               |  | toggle               |  | Setup a loop over X beats. A control exists for X = 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                                          |  | A loop is shown over X beats.                    |  | \[Channel*N*\], beatloop\_X\_activate                                               |  |
+| \[Channel*N*\] |  | filter\[169\],\[170\]            |  | binary               |  | Toggles the filter effect                                                                                                                              |  | Filter button                                    |  | [\[QuickEffectRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], enabled          |  |
+| \[Channel*N*\] |  | filterDepth\[171\],\[172\]       |  | default              |  | Adjusts the intensity of the filter effect                                                                                                             |  | Filter depth knob                                |  | [\[QuickEffectRack1\_\[ChannelN](#effects-framework)\]\], super1                    |  |
+| \[Channel*N*\] |  | filterLow\[173\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the low EQ filter                                                                                                                  |  | LOW knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter1         |  |
+| \[Channel*N*\] |  | filterLowKill\[174\]             |  | binary               |  | Holds the gain of the low EQ to -inf while active                                                                                                      |  | LOW kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter1 |  |
+| \[Channel*N*\] |  | filterMid\[175\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the mid EQ filter                                                                                                                  |  | MID knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter2         |  |
+| \[Channel*N*\] |  | filterMidKill\[176\]             |  | binary               |  | Holds the gain of the mid EQ to -inf while active                                                                                                      |  | MID kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter2 |  |
+| \[Channel*N*\] |  | filterHigh\[177\]                |  | 0.0..1.0..4.0        |  | Adjusts the gain of the high EQ filter                                                                                                                 |  | HIGH knob                                        |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter3         |  |
+| \[Channel*N*\] |  | filterHighKill\[178\]            |  | binary               |  | Holds the gain of the high EQ to -inf while active                                                                                                     |  | HIGH kill knob                                   |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter3 |  |
+| \[Flanger\]    |  | lfoDepth\[179\]                  |  | default              |  | Adjusts the intensity of the flange effect                                                                                                             |  | Depth knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Flanger\]    |  | lfoDelay\[180\]                  |  | 50..10000            |  | Adjusts the phase delay of the flange effect in microseconds                                                                                           |  | Delay knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Flanger\]    |  | lfoPeriod\[181\]                 |  | 50000..2000000       |  | Adjusts the wavelength of the flange effect in microseconds                                                                                            |  | LFO knob                                         |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Channel*N*\] |  | flanger\[182\]                   |  | binary               |  | Toggles the flange effect                                                                                                                              |  | FLANGER button                                   |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Channel*N*\] |  | beatloop\_X\[183\]               |  | toggle               |  | Setup a loop over X beats. A control exists for X = 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                                          |  | A loop is shown over X beats.                    |  | \[Channel*N*\], beatloop\_X\_activate                                               |  |
 | \[Channel*N*\] |  | Hercules1                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
 | \[Channel*N*\] |  | Hercules2                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
 | \[Channel*N*\] |  | Hercules3                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
@@ -484,9 +484,11 @@ Equalizers section of the Preferences window.
 | \[Playlist\]   |  | LoadSelectedIntoFirstStopped     |  | binary               |  | Loads the currently highlighted song into the first stopped deck                                                                                       |  | Waveform view                                    |  | \[Library\] GoToItem                                                                |  |
 | \[Playlist\]   |  | SelectNextPlaylist               |  | binary               |  | Switches to the next view (Library, Queue, etc.)                                                                                                       |  | Library sidebar                                  |  | \[Library\] MoveDown                                                                |  |
 | \[Playlist\]   |  | SelectPrevPlaylist               |  | binary               |  | Switches to the previous view (Library, Queue, etc.)                                                                                                   |  | Library sidebar                                  |  | \[Library\] MoveUp                                                                  |  |
-| \[Playlist\]   |  | ToggleSelectedSidebarItem\[182\] |  | binary               |  | Toggles (expands/collapses) the currently selected sidebar item.                                                                                       |  | Library sidebar                                  |  | \[Library\] GoToItem                                                                |  |
+| \[Playlist\]   |  | ToggleSelectedSidebarItem\[184\] |  | binary               |  | Toggles (expands/collapses) the currently selected sidebar item.                                                                                       |  | Library sidebar                                  |  | \[Library\] GoToItem                                                                |  |
 | \[Playlist\]   |  | SelectNextTrack                  |  | binary               |  | Scrolls to the next track in the track table.                                                                                                          |  | Library track table highlight                    |  | \[Library\] MoveDown                                                                |  |
 | \[Playlist\]   |  | SelectPrevTrack                  |  | binary               |  | Scrolls to the previous track in the track table.                                                                                                      |  | Library track table highlight                    |  | \[Library\] MoveUp                                                                  |  |
+
+stars
 
 1.  introduced in Mixxx v1.11.0
 
@@ -702,59 +704,59 @@ Equalizers section of the Preferences window.
 
 107. introduced in Mixxx v1.11.0
 
-108. introduced in Mixxx v1.10.0
+108. introduced in Mixxx v2.3.0
 
-109. introduced in Mixxx v1.10.0
+109. introduced in Mixxx v2.3.0
 
 110. introduced in Mixxx v1.10.0
 
-111. introduced in Mixxx v2.0.0
+111. introduced in Mixxx v1.10.0
 
-112. introduced in Mixxx v2.0.0
+112. introduced in Mixxx v1.10.0
 
 113. introduced in Mixxx v2.0.0
 
 114. introduced in Mixxx v2.0.0
 
-115. introduced in Mixxx v2.1.0
+115. introduced in Mixxx v2.0.0
 
-116. introduced in Mixxx v1.9.0
+116. introduced in Mixxx v2.0.0
 
-117. introduced in Mixxx v2.0.0
+117. introduced in Mixxx v2.1.0
 
-118. introduced in Mixxx v1.10.0
+118. introduced in Mixxx v1.9.0
 
-119. introduced in Mixxx v1.10.0
+119. introduced in Mixxx v2.0.0
 
 120. introduced in Mixxx v1.10.0
 
 121. introduced in Mixxx v1.10.0
 
-122. introduced in Mixxx v2.0.0
+122. introduced in Mixxx v1.10.0
 
-123. introduced in Mixxx v2.0.0
+123. introduced in Mixxx v1.10.0
 
 124. introduced in Mixxx v2.0.0
 
-125. introduced in Mixxx v1.11.0
+125. introduced in Mixxx v2.0.0
 
-126. introduced in Mixxx v1.11.0
+126. introduced in Mixxx v2.0.0
 
 127. introduced in Mixxx v1.11.0
 
 128. introduced in Mixxx v1.11.0
 
-129. introduced in Mixxx v2.0.0
+129. introduced in Mixxx v1.11.0
 
-130. introduced in Mixxx v2.0.0
+130. introduced in Mixxx v1.11.0
 
-131. introduced in Mixxx v1.10.0
+131. introduced in Mixxx v2.0.0
 
 132. introduced in Mixxx v2.0.0
 
 133. introduced in Mixxx v1.10.0
 
-134. introduced in Mixxx v1.10.0
+134. introduced in Mixxx v2.0.0
 
 135. introduced in Mixxx v1.10.0
 
@@ -762,21 +764,21 @@ Equalizers section of the Preferences window.
 
 137. introduced in Mixxx v1.10.0
 
-138. introduced in Mixxx v2.0.0
+138. introduced in Mixxx v1.10.0
 
 139. introduced in Mixxx v1.10.0
 
-140. introduced in Mixxx v1.11.0
+140. introduced in Mixxx v2.0.0
 
-141. introduced in Mixxx v1.11.0
+141. introduced in Mixxx v1.10.0
 
 142. introduced in Mixxx v1.11.0
 
 143. introduced in Mixxx v1.11.0
 
-144. introduced in Mixxx v2.1.0
+144. introduced in Mixxx v1.11.0
 
-145. introduced in Mixxx v2.1.0
+145. introduced in Mixxx v1.11.0
 
 146. introduced in Mixxx v2.1.0
 
@@ -800,9 +802,9 @@ Equalizers section of the Preferences window.
 
 156. introduced in Mixxx v2.1.0
 
-157. introduced in Mixxx v2.0.0
+157. introduced in Mixxx v2.1.0
 
-158. introduced in Mixxx v2.0.0
+158. introduced in Mixxx v2.1.0
 
 159. introduced in Mixxx v2.0.0
 
@@ -812,23 +814,23 @@ Equalizers section of the Preferences window.
 
 162. introduced in Mixxx v2.0.0
 
-163. introduced in Mixxx v2.1.0
+163. introduced in Mixxx v2.0.0
 
-164. introduced in Mixxx v2.1.0
+164. introduced in Mixxx v2.0.0
 
 165. introduced in Mixxx v2.1.0
 
 166. introduced in Mixxx v2.1.0
 
-167. introduced in Mixxx v2.0.0
+167. introduced in Mixxx v2.1.0
 
-168. deprecated in Mixxx v2.0.0
+168. introduced in Mixxx v2.1.0
 
 169. introduced in Mixxx v2.0.0
 
 170. deprecated in Mixxx v2.0.0
 
-171. deprecated in Mixxx v2.0.0
+171. introduced in Mixxx v2.0.0
 
 172. deprecated in Mixxx v2.0.0
 
@@ -848,6 +850,10 @@ Equalizers section of the Preferences window.
 
 180. deprecated in Mixxx v2.0.0
 
-181. introduced in Mixxx v1.10.0
+181. deprecated in Mixxx v2.0.0
 
-182. introduced in Mixxx v1.11.0
+182. deprecated in Mixxx v2.0.0
+
+183. introduced in Mixxx v1.10.0
+
+184. introduced in Mixxx v1.11.0

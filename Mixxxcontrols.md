@@ -488,8 +488,6 @@ Equalizers section of the Preferences window.
 | \[Playlist\]   |  | SelectNextTrack                  |  | binary               |  | Scrolls to the next track in the track table.                                                                                                          |  | Library track table highlight                    |  | \[Library\] MoveDown                                                                |  |
 | \[Playlist\]   |  | SelectPrevTrack                  |  | binary               |  | Scrolls to the previous track in the track table.                                                                                                      |  | Library track table highlight                    |  | \[Library\] MoveUp                                                                  |  |
 
-stars
-
 1.  introduced in Mixxx v1.11.0
 
 2.  introduced in Mixxx v1.11.0

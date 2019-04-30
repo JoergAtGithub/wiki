@@ -804,6 +804,19 @@ file. If the EffectUnit is a property of another
 ComponentContainer will recursively call it on the EffectUnit too (just
 like it will for any other ComponentContainer).
 
+By default an effect can only be focused when the respective GUI unit is
+expanded: when the focus button of a collapsed unit is pressed, the GUI
+counterpart is expanded. Accordingly, units release the effect focus and
+switch back to Meta knob mapping as soon as an unit is collapsed.  
+However, there are situations when the on-screen parameters of a focused
+effect can safely stay hidden while the controller is mapped to the
+parameter knobs. Collapsed units show a focus indicator then. To enable
+this mode instatiate effect units with 'true' added after the effect
+unit numbers array. For example:
+
+    MyController.effectUnit = new components.EffectUnit([1, 3],true);
+    ...
+
 ### Assignment switches
 
 Generally, most controllers should use

@@ -195,8 +195,8 @@ high.
     Disable this in the Device Manager (under Control
     Panel-\>System-\>Hardware)
 
-For more tips, see [Windows Vista Tuning Tips for Audio
-Processing](https://www.native-instruments.com/en/support/knowledge-base/show/314/windows-vista-tuning-tips-for-audio-processing/)
+For more tips, see [Windows Tuning Tips for Audio
+Processing](https://support.native-instruments.com/hc/en-us/articles/209571729-Windows-Tuning-Tips-for-Audio-Processing/)
 from Native Instruments (this information applies to versions of Windows
 newer than Vista as well).
 

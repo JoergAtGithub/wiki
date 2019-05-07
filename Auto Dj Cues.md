@@ -50,9 +50,6 @@ which was identified to be too volatile depending on the DJ style. The
 "Intro End" and "Outro Start" cues are also respected to not destroy the
 main part of a track.
 
-Extra feature: One click beat loop starting at Outro Start, do have
-unlimited time to cue the track in.
-
 Proposed Parameter:
 
   - Load at CUE, a new Load CUE, at "Intro End - Transition time", at
@@ -61,4 +58,7 @@ Proposed Parameter:
   - Transition starts at Outro start if set, else Transition end at
     Outro End 
   - Transition time = 0 s ... X s but ends at Into End or Outro End
-    which comes first.
+    which comes first. 
+
+Extra feature: One click beat loop starting at Outro Start, do have
+unlimited time to cue the track in.

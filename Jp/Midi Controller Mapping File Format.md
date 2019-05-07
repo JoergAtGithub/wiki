@@ -34,34 +34,32 @@ name = "Stanton SCS.3d"\> ''では、 '' name ''は '' controller ''要素の属
 `）。開始タグと終了タグの間に、要素にデータまたは他の要素を含めることができます。空の要素も許可されます。空の要素には、「>」の前にスラッシュを付けます（例：`\<SelectKnob
 /\>''）。
 
-## Header
+## ヘッダー
 
-Each XML mapping file starts with a header with metadata:
+各XMLマッピングファイルは、メタデータを含むヘッダーで始まります。
 
-    <?xml version="1.0" encoding="utf-8"?>
-        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.11.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
-        <info>
-            <name>Example MIDI Preset for Mixxx</name>
-            <author>Tom Care</author>
-            <description>This is an example XML MIDI preset for Mixxx. The scope of the preset could be from a small functionality addition, to a complete mapping for a controller, to a complex personal setup with multiple controllers. This description is intended for distribution and could include comments about the extent of the functionality.</description>
-                    <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
-                    <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
-        </info>
-        <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once -->
+``` =
+<？xml version = "1.0" encoding = "utf-8"？>
+    <MixxxMIDIPreset schemaVersion = "1" mixxxVersion = "1.11.0 +"> <！ - 互換性を高めるためのスキーマのバージョン番号。MIDIフォーマットが変更された場合に備えてください - >
+<info>
+<name> Mixxx用のMIDIプリセットの例</name>
+<author>Tom Care</author>
+<description>これはMixxx用のXML MIDIプリセットの例です。プリセットの範囲は、小さな機能の追加から、コントローラの完全なマッピング、複数のコントローラを使用した複雑な個人設定までです。この説明は配布を目的としており、機能の範囲に関するコメントを含めることができます。</description>
+                <wiki>このコントローラマッピングを記述したMixxx wikiページへのエンコードされたURL </wiki>
+                <forums>このコントローラマッピング用のMixxxディスカッションフォーラムページへのエンコードされたURL </forums>
+</info>
+<controller id = "controller name"> <！ -  1つのファイルに多数のコントローラがサポートされています。コントローラーは一度だけ現れるべきです - >
+```
 
-The schemaVersion and mixxxVersion attributes of the MixxxMIDIPreset
-element are important for future compatibility as the Mixxx MIDI mapping
-format changes. The child elements of the \<info\> element are used to
-display information about the mapping in the Mixxx controller
-preferences. Note that `&` is a reserved character in XML, so the URL to
-the forum thread must use `&` instead of just `&`. (When a preset does
-not have a name in its \<info\> section, Mixxx 1.11+ use the filename
-without extension.)
+MixxxMIDIPreset要素のschemaVersion属性とmixxxVersion属性は、Mixxx
+MIDIマッピングフォーマットが変更されるため、将来の互換性のために重要です。
+\<info\>要素の子要素は、Mixxxコントローラ設定のマッピングに関する情報を表示するために使用されます。 ''＆
+''はXMLの予約文字なので、フォーラムスレッドのURLは ''＆ ''ではなく ''＆amp;
+''を使用する必要があります。 （プリセットの\<info\>セクションに名前がない場合、Mixxx
+1.11以降では拡張子なしのファイル名が使用されます。）
 
-Write the brand and model of the controller (for example, "Stanton
-SCS.3d") in the id attribute of the \<controller\> element. The
-\<controller\> element is a container for a \<controls\> element and an
-\<outputs\> element, which are described below.
+\<controller\>要素のid属性に、コントローラのブランドとモデル（たとえば、 "Stanton SCS.3d"）を書きます。
+\<controller\>要素は、以下で説明する\<controls\>要素と\<outputs\>要素のコンテナです。
 
 ## Inputs
 

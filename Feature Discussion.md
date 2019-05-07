@@ -25,6 +25,7 @@ page.
   - [Cues and loops 2.0](Cues%20and%20loops%202.0)
   - [OSC-Client](OSC-Client)
   - [Ctlra Support](Ctlra%20Support)
+  - [Auto DJ Cues](Auto%20DJ%20Cues)
 
 ## Implemented Specifications
 

@@ -52,7 +52,7 @@ main part of a track.
 
 Proposed Parameter:
 
-  - Load at CUE, a new Load CUE, at "Intro End - Transition time", at
+  - Load at CUE, a new "Load CUE", at "Intro End - Transition time", at
     "Intro End - Outro druation";
   - Once Mixxx is aware of downbeats it should load at a downbeat. 
   - Transition starts at Outro start if set, else Transition end at

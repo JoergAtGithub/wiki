@@ -18,31 +18,21 @@ MIDIの仕組みに慣れていない場合は、[MIDI Crash Course](MIDI%20Cras
 If you would like your mapping included in Mixxx, see [Contributing
 Mappings](Contributing%20Mappings).
 
-## XML Crash Course
+## XMLクラッシュコース
 
-Mixxx uses a well defined XML format to store its MIDI mappings. It is
-easy to learn the basics of XML so you can edit Mixxx mappings. If you
-know HTML, the language that is used to define web pages, that will help
-because XML is very similar.
+Mixxxは、MIDIマッピングを保存するために明確に定義されたXMLフォーマットを使います。
+Mixxxマッピングを編集できるように、XMLの基本を学ぶのは簡単です。
+Webページを定義するために使用される言語であるHTMLを知っていれば、XMLが非常に似ているのでそれは役に立ちます。
 
-XML is a language for describing data. It does not do anything by itself
-and it has no predefined uses. Many other programs have their own ways
-of using XML that convey different information. For example, Traktor TSI
-controller mapping files are XML files, but Traktor's mapping system is
-completely different from Mixxx's mapping systems, so TSI files make no
-sense to Mixxx.
+XMLはデータを記述するための言語です。それ自体では何もしませんし、定義済みの用途もありません。他の多くのプログラムには、さまざまな情報を伝えるための独自のXML使用方法があります。たとえば、Traktor
+TSIコントローラマッピングファイルはXMLファイルですが、TraktorのマッピングシステムはMixxxのマッピングシステムとはまったく異なるため、TSIファイルはMixxxには意味がありません。
 
-XML files are hierarchies of elements. Elements have starting and
-closing tags surrounded by angle brackets (also known as less than (\<)
-and greater than (\>) signs). The starting tags can be as simple as
-naming the element surrounded by angle brackets, for example, `<group>`.
-Starting tags can also have attributes to specify more detail about the
-element, for example, in `<controller name="Stanton SCS.3d">`, `name` is
-an attribute of the `controller` element with a value of `Stanton
-SCS.3d`. Ending tags have a slash after the `<`, for example,
-`</group>`. Between the starting and ending tags, elements can contain
-data or other elements. Empty elements are also allowed, which have a
-slash before the `>`, for example, `<SelectKnob/>`.
+XMLファイルは要素の階層です。要素には山括弧で囲まれた開始タグと終了タグがあります（小なり記号（\<）と大なり記号（\>）としても知られています）。開始タグは、山括弧で囲まれた要素に名前を付けるのと同じくらい簡単です（例：
+'' \<group\> ''）。開始タグには、要素に関する詳細を指定する属性を含めることもできます。たとえば、 '' \<controller
+name = "Stanton SCS.3d"\> ''では、 '' name ''は '' controller ''要素の属性です。値は
+'' Stanton SCS.3d ''です。終了タグには、 '' \<''の後にスラッシュが付きます（例： '' \</group\>
+`）。開始タグと終了タグの間に、要素にデータまたは他の要素を含めることができます。空の要素も許可されます。空の要素には、「>」の前にスラッシュを付けます（例：`\<SelectKnob
+/\>''）。
 
 ## Header
 

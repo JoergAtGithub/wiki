@@ -15,8 +15,11 @@ The AutoDJ loads the track at 0:00 and starts it when the previous track
 reaches the end. In ideal case there should be no gap at all (important
 for live CDs).
 
-Proposed Parameter: \* Load at 0:00 \* Transition end at Track End \*
-Transition time = 0 s (can be changed)
+Proposed Parameter:
+
+  - Load at 0:00
+  - Transition end at Track End 
+  - Transition time = 0 s (can be changed)
 
 ### Juke-Box / Radio Mode
 
@@ -30,10 +33,13 @@ unusable garbage. In addition there is "Intro End" and "Outro Start"
 cues surrounding the region that should not be touched in any
 circumstances.
 
-Proposed Parameter: \* Load at Intro Start \* Transition end at Outro
-End \* Transition starts not before reaching Outro Start (if set) \*
-Transition time = 0 s ... X s but ends at Into End or Outro End which
-comes first.
+Proposed Parameter:
+
+  - Load at Intro Start 
+  - Transition end at Outro End 
+  - Transition starts not before reaching Outro Start (if set) 
+  - Transition time = 0 s ... X s but ends at Into End or Outro End
+    which comes first. 
 
 ### DJing Mode
 
@@ -47,8 +53,12 @@ main part of a track.
 Extra feature: One click beat loop starting at Outro Start, do have
 unlimited time to cue the track in.
 
-Proposed Parameter: \* Load at CUE, a new Load CUE, at "Intro End -
-Transition time", at "Intro End - Outro druation"; \* Once Mixxx is
-aware of downbeats it should load at a downbeat. \* Transition starts at
-Outro start if set, else Transition end at Outro End \* Transition time
-= 0 s ... X s but ends at Into End or Outro End which comes first.
+Proposed Parameter:
+
+  - Load at CUE, a new Load CUE, at "Intro End - Transition time", at
+    "Intro End - Outro druation";
+  - Once Mixxx is aware of downbeats it should load at a downbeat. 
+  - Transition starts at Outro start if set, else Transition end at
+    Outro End 
+  - Transition time = 0 s ... X s but ends at Into End or Outro End
+    which comes first.

@@ -732,11 +732,11 @@ Good:
 void mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) {
   auto bufferSize = 256; // this avoids uninitialised locals
   
-  for (const auto& value: values) { // Type can't get wrong 
+  for (const auto& value : values) { // Type can't get wrong 
       qDebug() << "blah:" << value;
   }
   
-  for (auto* channel: *channels) {
+  for (auto* channel : *channels) {
       channel->process(bufferSize);
   }
 }

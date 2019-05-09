@@ -170,8 +170,7 @@ class MyClass {
 
 bool myFunction();
 
-}  // namespace mixxx
-// ^ Note two spaces after the closing brace.
+} // namespace mixxx
 ```
 
 ## In the implementation (.cpp) file

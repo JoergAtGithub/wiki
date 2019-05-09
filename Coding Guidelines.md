@@ -872,10 +872,10 @@ Rule of thumb: If a class has non-inline constructors or is more than
 class Helper {
   public:
     Helper() {}
-    Helper(int baz) : baz(baz) {}
+    Helper(int baz): baz(baz) {}
     
     int derivedResult() {
-      return foo * bar * baz;
+        return foo * bar * baz;
     }
     
   private:
@@ -893,7 +893,7 @@ class SomeClass {
     SomeClass(int baz); // Defined in some other file.
     
     int derivedResult() {
-      return foo * bar * baz;
+        return foo * bar * baz;
     }
     
   private:

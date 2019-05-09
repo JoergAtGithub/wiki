@@ -469,9 +469,10 @@ class Library : public QObject {
     
     // bindWidget gives the Library a chance to insert logic into the library 
     // widgets (WLibrary and WLibrarySidebar).
-    void bindWidget(WLibrarySidebar* sidebarWidget,
-                    WLibrary* libraryWidget,
-                    MixxxKeyboard* pKeyboard);
+    void bindWidget(
+            WLibrarySidebar* sidebarWidget,
+            WLibrary* libraryWidget,
+            MixxxKeyboard* pKeyboard);
                     
     // Add a LibraryFeature to the list of features enabled in the Library.
     void addFeature(LibraryFeature* feature);

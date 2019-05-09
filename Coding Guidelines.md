@@ -295,26 +295,11 @@ doSomething();
 ```
 
 Plain-text comments should be separated from the comment symbol by a
-single space. Commented-out code should have no space between the
-comment symbol and the code:
+single space.
 
-**Good:**
-
-``` cpp-qt
-// Textual comment
-//if (thisSectionIsDeprecated) {
-//    // Do something crufty
-//}
-```
-
-**Bad:**
-
-``` cpp-qt
-//Textual comment
-// if (thisSectionIsDeprecated) {
-//     // Do something crufty
-// }
-```
+Avoid to comment out code unless a preceding textual comment explains
+the exact purpose of the following lines and why this code needs to be
+preserved as a comment.
 
 Avoid comments that do not add more information than the words contained
 in the statement that follows them. Instead, write a descriptive summary

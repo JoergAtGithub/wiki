@@ -191,7 +191,6 @@ bool myHelper() {
 }
 
 } // namespace 
-// ^ Note one space after the closing brace.
 
 // Put class implementations, functions, and constants 
 // that are meant to be used by other parts of Mixxx here.
@@ -203,7 +202,6 @@ bool myFunction() {
 }
 
 } // namespace mixxx
-// ^ Note one space after the closing brace.
 ```
 
 ## If Statements

@@ -188,23 +188,23 @@ namespace {
 
 // Put file-local helper functions and constants here.
 bool myHelper() {
-  return true;
+    return true;
 }
 
-}  // namespace 
-// ^ Note two spaces after the closing brace.
+} // namespace 
+// ^ Note one space after the closing brace.
 
 // Put class implementations, functions, and constants 
 // that are meant to be used by other parts of Mixxx here.
-MyClass::MyClass() : m_helper(myHelper()) {
+MyClass::MyClass(): m_helper(myHelper()) {
 }
 
 bool myFunction() {
-  return myHelper();
+    return myHelper();
 }
 
-}  // namespace mixxx
-// ^ Note two spaces after the closing brace.
+} // namespace mixxx
+// ^ Note one space after the closing brace.
 ```
 
 ## If Statements

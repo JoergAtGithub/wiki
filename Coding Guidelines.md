@@ -818,11 +818,11 @@ containers as shown below.
 **Good:**
 
 ``` cpp-qt
-for (auto&& item: mutableContainer) {
+for (auto&& item : mutableContainer) {
   // read and write item
 } 
 
-for (const auto& item: immutableContainer) {
+for (const auto& item : immutableContainer) {
   // read only item
 } 
 ```

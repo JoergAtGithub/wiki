@@ -36,8 +36,8 @@ The following options are available for auto-formatting the code.
 
 ### ClangFormat CLI
 
-Apply *clang-format* to individual source files or entire
-subdirectories:
+Apply *clang-format* to individual source files (only permitted for new
+files):
 
 `clang-format -style=file [<file> ...]`
 

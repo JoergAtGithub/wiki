@@ -65,6 +65,11 @@ It is convenient to enable auto-formatting on save:
 
   - ***editor.formatOnSave*** = *true*
 
+### KDevelop
+
+[KDevelop](KDevelop) has a [clang-tidy
+plugin](https://github.com/KDE/kdev-clang-tidy).
+
 ## Tabs vs. Spaces
 
 Mixxx's old developers more or less used the convention that **indents

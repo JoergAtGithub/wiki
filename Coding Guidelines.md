@@ -338,8 +338,8 @@ year, along with your user name.
 doSomething();
 ```
 
-Prefer to use C++-style trailing line comments. All trailing line
-comments start with a single space after the separator.
+Prefer to use C++-style comments. All trailing line comments start with
+a single space after the separator.
 
 Avoid to use C-style comments or Java-style multi-line comments.
 

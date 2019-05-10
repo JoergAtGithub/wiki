@@ -1,9 +1,6 @@
 # Roland DJ-505
 
-  - [Manufacturer's product
-    page](https://www.roland.com/global/products/dj-505/)
-  - [Owner's
-    Manual](https://www.roland.com/global/support/by_product/dj-505/owners_manuals/)
+![https://static.roland.com/assets/images/products/gallery/dj-505\_t\_gal.jpg](https://static.roland.com/assets/images/products/gallery/dj-505_t_gal.jpg)
 
 The Roland DJ-505 is an all-in-one USB MIDI controller with an
 integrated audio interface. It has controls for 2 decks that can be
@@ -13,17 +10,42 @@ sequencer with sounds from the TR-808 and the TR-909 drum machines
 
 ## Drivers
 
-### Windows & MacOS
+You can download the latest Windows & MacOS drivers and firmware from
+the [manufacturer's
+website](https://www.roland.com/global/products/dj-505/downloads/).
+Since the DJ-505 is a USB class compliant MIDI and audio device, the
+device is plug-and-play on Linux.
 
-You can download the latest drivers and firmware from
-<https://www.roland.com/global/products/dj-505/downloads/>.
+## Controller Mapping
 
-### Linux
+A mapping is currently being developed and [can be found on
+GitHub](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping).
 
-The DJ-505 is a USB class compliant MIDI and audio device, so it's
-plug-and-play on Linux.
+The mapping relies on the following channel assignments (for Line/Phono
+input support, applying effects to the TR-S output, etc.):
 
-## Mapping
+| Output Channels | Assigned to |
+| --------------- | ----------- |
+| 1-2             | Master      |
+| 2-3             | Headphones  |
 
-A mapping is currently being developed, see
-[Github](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping).
+| Input Channels        | Assigned to |
+| --------------------- | ----------- |
+| 1-2 (CH 1 Line/Phono) | Aux 1       |
+| 3-4 (CH 2 Line/Phono) | Aux 2       |
+| 7-8 (TR-S output)     | Aux 3       |
+
+## Links
+
+  - [Manufacturer's product
+    page](https://www.roland.com/global/products/dj-505/)
+  - [Serato DJ Hardware
+    Page](https://serato.com/dj/hardware/roland-dj-505)
+  - [Owner's
+    Manual](https://www.roland.com/global/support/by_product/dj-505/owners_manuals/)
+  - [Driver/Firmware/TR-S Samples Download
+    Page](https://www.roland.com/global/products/dj-505/downloads)
+  - [Mapping Forum
+    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12688)
+  - [Mapping Git
+    Repository](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping)

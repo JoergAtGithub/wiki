@@ -34,6 +34,8 @@ need to touch it\!**
 
 The following options are available for auto-formatting the code.
 
+clang-format \>= 4.0 is required
+
 ### Command line
 
 Use

@@ -88,8 +88,6 @@ above for hanging indents.
 
 ## Auto-Formatter
 
-We currently do not provide an auto-formatter or code-checker.
-
 If you use Eclipse as IDE, the code style "K\&R" works well with these
 tweaks
 

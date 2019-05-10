@@ -34,7 +34,14 @@ need to touch it\!**
 
 The following options are available for auto-formatting the code.
 
-clang-format \>= 4.0 is required
+clang-format version \>= 4.0 is required
+
+On Ubuntu, you can install clang format via.
+
+``` bash
+sudo apt-get install clang-format clang-format-4.0
+sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-4.0 1000
+```
 
 ### Command line
 

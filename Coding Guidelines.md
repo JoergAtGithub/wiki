@@ -72,6 +72,21 @@ noise to your pull request.
 [KDevelop](KDevelop) has a [clang-tidy
 plugin](https://github.com/KDE/kdev-clang-tidy).
 
+### Eclipse
+
+If you use Eclipse as IDE, the code style "K\&R" works well with these
+tweaks
+
+  - tab policy = space only 
+  - new lines = before colon in constructor initializer list
+
+Please note that there are still some exceptions, so do not auto-format
+a whole file.
+
+In addition you can install
+<https://marketplace.eclipse.org/content/cppstyle> to use clang-format
+from the GUI
+
 ## Tabs vs. Spaces
 
 Mixxx's old developers more or less used the convention that **indents

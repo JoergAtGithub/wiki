@@ -17,10 +17,53 @@ to avoid this in the future, it's best for us to have some coding
 guidelines for developers to follow.
 
 **As you change a part of Mixxx, please update it to match this style
-guide. That way, eventually all of Mixxx will be written in this style.
-Do not send us patches that are purely cosmetic with respect to source
-changes -- this is a waste of time since it does not benefit users
-directly.**
+guide and reformat it with ClangFormat. That way, eventually all of
+Mixxx will be written in this style. Do not send us patches that are
+purely cosmetic with respect to source changes -- this is a waste of
+time since it does not benefit users directly.**
+
+## Code Formatting
+
+Since 2019-05-09 our code formatting rules are defined by the
+[.clang-format](https://github.com/mixxxdj/mixxx/blob/master/.clang-format)
+configuration file. It can be found in the project root directory and
+contains settings for
+[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html). **Make use
+of it by auto-formatting new or modified code as soon as you need to
+touch it\!**
+
+The following options are available for auto-formatting the code.
+
+### ClangFormat CLI
+
+Apply *clang-format* to individual source files or entire
+subdirectories:
+
+`clang-format -style=file [<file> ...]`
+
+*clang-format* will pick up the *.clang-format* file from the current or
+any parent directory of the source file(s).
+
+### VisualStudio Code
+
+Code formatting is available in [Visual Studio
+Code](https://code.visualstudio.com). Install the [C/C++
+Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+and verify or update the following settings:
+
+  - ***C\_Cpp.formatting*** = *Default* (default)
+  - ***C\_Cpp.clang\_format\_style*** = *file* (default)
+  - ***C\_Cpp.clang\_format\_fallbackStyle*** = *Google*
+  - ***C\_Cpp.clang\_format\_sortIncludes*** = *null* (default)
+  - ***C\_Cpp.clang\_format\_path*** = *null* (default) or *path to your
+    clang-format executable* (optional)
+
+If you open the root folder of the project VS Code will pick up the
+settings from the *.clang-format* file.
+
+It is convenient to enable auto-formatting on save:
+
+  - ***editor.formatOnSave*** = *true*
 
 ## Tabs vs. Spaces
 

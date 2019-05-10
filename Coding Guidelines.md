@@ -88,17 +88,6 @@ provides significant efficiency gains to developers. Use double indent
 (8-spaces) for broken lines or align with the opening "(" in the line
 above for hanging indents.
 
-## Auto-Formatter
-
-If you use Eclipse as IDE, the code style "K\&R" works well with these
-tweaks
-
-  - tab policy = space only 
-  - new lines = before colon in constructor initializer list
-
-Please note that there are still some exceptions, so do not auto-format
-a whole file.
-
 # C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team

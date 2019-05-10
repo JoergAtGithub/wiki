@@ -834,7 +834,9 @@ body.
 ### forward declared / strongly typed enums
 
 Use. Both the name of the enum type and its enumerated values should be
-written in CamelCase with the first letter capitalized.
+written in CamelCase with the first letter capitalized. Do not add new C
+style enums and please replace those with enum classes when you are
+working on code that uses them.
 
 ``` cpp-qt
 enum class ChannelLayout {

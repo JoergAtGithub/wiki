@@ -340,15 +340,24 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2017</td>
 </tr>
 <tr class="even">
+<td><a href="Roland DJ-505">Roland DJ-505</a></td>
+<td>$550</td>
+<td>2 deck[31] all-in-one</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2017</td>
+</tr>
+<tr class="odd">
 <td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
 <td>€90</td>
-<td>2 deck[31] all-in-one</td>
+<td>2 deck[32] all-in-one</td>
 <td>yes</td>
 <td>no</td>
 <td>MIDI</td>
 <td>2016</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJ Control Jogvision">Hercules DJ Control Jogvision</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -357,7 +366,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2015</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules Universal DJ">Hercules Universal DJ</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -366,7 +375,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJ Control Starlight">Hercules DJ Control Starlight</a></td>
 <td>$99</td>
 <td>2 deck all-in-one compact controller</td>
@@ -375,7 +384,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJControl Inpulse 200">Hercules DJControl Inpulse 200</a></td>
 <td>$129</td>
 <td>2 deck all-in-one controller</td>
@@ -384,7 +393,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJControl Inpulse 300">Hercules DJControl Inpulse 300</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -393,7 +402,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>
 <td>2 deck all-in-one controller</td>
@@ -402,16 +411,16 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJ 4set">Hercules DJ 4set</a></td>
 <td>Discontinued</td>
-<td>2 deck[32] all-in-one controller</td>
+<td>2 deck[33] all-in-one controller</td>
 <td>yes</td>
 <td>no</td>
 <td>MIDI</td>
 <td>2011</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
 <td>$200</td>
 <td>originally branded as "Remix controller", but very versatile</td>
@@ -564,7 +573,7 @@ has more information to help decide on an audio interface to use.
 
 \<sortable 2=numeric\>
 
-| Device                                                                                                                                 | Price (USD) \[33\] | Channels out | Balanced outputs | Channels in | Microphone input with direct monitoring | Phono preamp | Notes                                                                                                                                                                                                                                                                                                                                        |
+| Device                                                                                                                                 | Price (USD) \[34\] | Channels out | Balanced outputs | Channels in | Microphone input with direct monitoring | Phono preamp | Notes                                                                                                                                                                                                                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ | ---------------- | ----------- | --------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Generic USB audio interfaces                                                                                                           | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard audio interfaces. [\#Splitter cables](#Splitter%20cables) are another option in this price range.                                                                                                                                    |
 | [Behringer U-Phono UFO202](http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UFO202/p/P0A12)             | $30                | 2            | no               | 2           | no                                      | yes          | Cheapest option for vinyl control, but requires using 2 of them and making [a small hardware modification](http://mixxx.org/forums/viewtopic.php?f=6&t=2438). Not to be confused with the Behringer U-Control **UCA**202 & **UCA**222, which do not have phono preamps and cannot be used for vinyl control.                                 |
@@ -612,25 +621,25 @@ allows two different DJs to use the mixer's audio interface at the same
 time with their own computer for collaborative DJ sets and easy,
 seamless transitions between DJs. \<sortable 2=numeric\>
 
-| Device                                                                                                                      | Price (USD) \[34\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
+| Device                                                                                                                      | Price (USD) \[35\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
-| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[35\] |
-| [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[36\] |
-| [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[37\] |
+| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[36\] |
+| [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[37\] |
+| [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[38\] |
 | [Pioneer DJM-750](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-750)                                                 | $1000              | 4     | 2             | 1         | digital                  | ?             |
 | [Pioneer DJM-5000](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-5000)                                               | $1000              | 4     | 0             | 1         | digital                  | ?             |
 | [Allen & Heath Xone DB2](http://www.allen-heath.com/ahproducts/xonedb2/)                                                    | $1500              | 4     | 4             | 1         | digital                  | no            |
 | [Pioneer DJM-850](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-850)                                                 | $1500              | 4     | 2             | 1         | digital                  | ?             |
-| [Rane TTM57MkII](http://dj.rane.com/products/ttm57mkii)                                                                     | $1750              | 2     | 2             | 2         | digital                  | likely \[38\] |
-| [Rane MP2014](http://dj.rane.com/products/mp2014-mixer)                                                                     | $2000              | 4     | 2             | 2         | digital                  | likely \[39\] |
+| [Rane TTM57MkII](http://dj.rane.com/products/ttm57mkii)                                                                     | $1750              | 2     | 2             | 2         | digital                  | likely \[39\] |
+| [Rane MP2014](http://dj.rane.com/products/mp2014-mixer)                                                                     | $2000              | 4     | 2             | 2         | digital                  | likely \[40\] |
 | [Allen & Heath Xone DB4](http://www.allen-heath.com/ahproducts/xonedb4/)                                                    | $2000              | 4     | 4             | 1         | digital                  | no            |
 | [Pioneer DJM-900NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900NXS)                                           | $2000              | 4     | 2             | 1         | digital                  | ?             |
 | [Rane Sixty-Two](http://dj.rane.com/products/sixty-two)                                                                     | $2000              | 2     | 2             | 2         | digital                  | no            |
 | [Pioneer DJM-900NXS2](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/)                            | $2200              | 4     | 4             | 2         | digital                  | ?             |
 | [Rane Sixty-Four](http://dj.rane.com/products/sixty-four)                                                                   | $2200              | 4     | 4             | 2         | digital                  | no            |
 | [Pioneer DJM-900SRT](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900SRT)                                           | $2300              | 4     | 2             | 1         | digital                  | ?             |
-| [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS)                                         | $2500              | 4     | 2             | 1         | digital                  | likely \[40\] |
-| [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[41\] |
+| [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS)                                         | $2500              | 4     | 2             | 1         | digital                  | likely \[41\] |
+| [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[42\] |
 
 \</sortable\>
 
@@ -746,17 +755,7 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 
 32. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
-33. Prices listed on this page are the prevailing prices for unused
-    devices found from [searching Google
-    Shopping](https://www.google.com/?tbm=shop) in the United States.
-    Prices may vary in other parts of the world, but the relative prices
-    of different devices in USD should still provide a rough guide. You
-    may be able to find hardware available for sale cheaper. Devices are
-    marked as discontinued if the manufacturer has declared them as
-    discontinued, the manufacturer has gone out of business, or new
-    units are not widely available online. They may or may not still be
-    available used online. If the price of a device has dropped or it
-    has been discontinued, please update this page.
+33. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 34. Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google
@@ -770,9 +769,17 @@ seamless transitions between DJs. \<sortable 2=numeric\>
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-35. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+35. Prices listed on this page are the prevailing prices for unused
+    devices found from [searching Google
+    Shopping](https://www.google.com/?tbm=shop) in the United States.
+    Prices may vary in other parts of the world, but the relative prices
+    of different devices in USD should still provide a rough guide. You
+    may be able to find hardware available for sale cheaper. Devices are
+    marked as discontinued if the manufacturer has declared them as
+    discontinued, the manufacturer has gone out of business, or new
+    units are not widely available online. They may or may not still be
+    available used online. If the price of a device has dropped or it
+    has been discontinued, please update this page.
 
 36. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
@@ -795,5 +802,9 @@ seamless transitions between DJs. \<sortable 2=numeric\>
     it with Linux online.
 
 41. This device is USB class compliant, so it should work without any
+    special driver. However, there is no information about anyone using
+    it with Linux online.
+
+42. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using
     it with Linux online.

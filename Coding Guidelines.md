@@ -74,9 +74,6 @@ and verify or update the following settings:
   - ***C\_Cpp.clang\_format\_path*** = *null* (default) or *path to your
     clang-format executable* (optional)
 
-If you open the root folder of the project VS Code will pick up the
-settings from the *.clang-format* file.
-
 Don't enable auto-formatting on save, because this will add unnecessary
 noise to your pull request.
 

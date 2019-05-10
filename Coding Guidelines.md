@@ -37,7 +37,7 @@ The following options are available for auto-formatting the code.
 ### Command line
 
 Use
-[|git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
+[git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
 to make sure your changes follow the mixxx style.
 
 [Setting-up

@@ -65,7 +65,7 @@ Don't enable auto-formatting on save, because this will add unnecessary
 noise to your pull request.
 
   - ***editor.formatOnSave*** = *false*
-  - ***editor.formatOnType*** = //true/
+  - ***editor.formatOnType*** = *true*
 
 ### KDevelop
 

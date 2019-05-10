@@ -839,9 +839,9 @@ written in CamelCase with the first letter capitalized.
 ``` cpp-qt
 enum class ChannelLayout {
     Unknown,
-    Mono,     // 1 channel
+    Mono, // 1 channel
     DualMono, // 2 channels with identical signals
-    Stereo,   // 2 independent channels left/right
+    Stereo, // 2 independent channels left/right
     // ...
 };
 ```

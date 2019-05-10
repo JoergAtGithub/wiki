@@ -34,7 +34,14 @@ need to touch it\!**
 
 The following options are available for auto-formatting the code.
 
-### ClangFormat CLI
+### Command line
+
+Use
+[|git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
+to make sure your changes follow the mixxx style.
+
+[Setting-up
+git-clang-format](https://dx13.co.uk/articles/2015/4/3/Setting-up-git-clang-format.html)
 
 Apply *clang-format* to individual source files (only permitted for new
 files):

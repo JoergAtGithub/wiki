@@ -29,8 +29,8 @@ Since 2019-05-09 our code formatting rules are defined by the
 configuration file. It can be found in the project root directory and
 contains settings for
 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html). **Make use
-of it by auto-formatting new or modified code as soon as you need to
-touch it\!**
+of it by auto-formatting new or modified code segments as soon as you
+need to touch it\!**
 
 The following options are available for auto-formatting the code.
 

@@ -278,10 +278,6 @@ for (initializer; conditional; increment) {
 
 ## Comments
 
-Use C++-style trailing line comments only. All trailing line comments
-start with a single space after the separator. Do not use C-style
-comments or Java-style comments.
-
 Comments should be complete, descriptive sentences in the present tense.
 If a comment is a warning or something that might need to be
 re-evaluated in the future, date the comment with the current month and
@@ -294,12 +290,19 @@ year, along with your user name.
 doSomething();
 ```
 
-Plain-text comments should be separated from the comment symbol by a
-single space.
+Prefer to use C++-style trailing line comments. All trailing line
+comments start with a single space after the separator. Avoid to use
+C-style comments or Java-style multi-line comments.
 
-Avoid to comment out code unless a preceding textual comment explains
-the exact purpose of the following lines and why this code needs to be
-preserved as a comment.
+**Bad:**
+
+``` cpp-qt
+/*
+ * Java-style comment
+ */ 
+thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
+/* C-style comment -- avoid because you can't nest them */
+```
 
 Avoid comments that do not add more information than the words contained
 in the statement that follows them. Instead, write a descriptive summary
@@ -312,15 +315,10 @@ of what the following lines accomplish.
 initBoofar();
 ```
 
-**Bad:**
-
-``` cpp-qt
-/*
- * Java-style comment
- */ 
-thisCommentIsReallyVerboseFactoryMethodInjectorObserver()
-/* C-style comment -- avoid because you can't nest them */
-```
+Avoid to comment out code unless a preceding textual comment explains
+the exact purpose of the following lines and why this code needs to be
+preserved as a comment. Commented out debugging statements without an
+additional description are acceptable if the intend is obvious.
 
 ### TODO's
 

@@ -55,7 +55,7 @@ git-clang-format](https://dx13.co.uk/articles/2015/4/3/Setting-up-git-clang-form
 Apply *clang-format* to individual source files (only permitted for new
 files):
 
-`clang-format -style=file [<file> ...]`
+`clang-format -i -style=file [<file> ...]`
 
 *clang-format* will pick up the *.clang-format* file from the current or
 any parent directory of the source file(s).

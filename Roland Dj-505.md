@@ -19,7 +19,9 @@ device is plug-and-play on Linux.
 ## Controller Mapping
 
 A mapping is currently being developed and [can be found on
-GitHub](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping).
+GitHub](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping)
+and a [pull request has been
+opened](https://github.com/mixxxdj/mixxx/pull/2111).
 
 ### Audio Channels
 

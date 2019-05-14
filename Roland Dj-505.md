@@ -33,11 +33,12 @@ input support, applying effects to the TR-S output, etc.):
 | 1-2             | Master      |
 | 2-3             | Headphones  |
 
-| Input Channels        | Assigned to |
-| --------------------- | ----------- |
-| 1-2 (CH 1 Line/Phono) | Aux 1       |
-| 3-4 (CH 2 Line/Phono) | Aux 2       |
-| 7-8 (TR-S output)     | Aux 3       |
+| Input Channels        | Assigned to                   |
+| --------------------- | ----------------------------- |
+| 1-2 (CH 1 Line/Phono) | Auxiliary 1 & Vinyl Control 1 |
+| 3-4 (CH 2 Line/Phono) | Auxiliary 2 & Vinyl Control 2 |
+| 5-6 (Mix)             | Record/Broadcast              |
+| 7-8 (TR-S output)     | Auxiliary 3                   |
 
 ### Controls
 

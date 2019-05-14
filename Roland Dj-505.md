@@ -42,6 +42,9 @@ input support, applying effects to the TR-S output, etc.):
 
 ### Controls
 
+A schematic drawing with the control numbers that are used here can be
+found on the specified page in the Owner's Manual.
+
 | Browser section (p. 4) |                                              |                                                                                                    |
 | ---------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | No.                    | Control                                      | Function                                                                                           |

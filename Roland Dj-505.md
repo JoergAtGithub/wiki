@@ -101,10 +101,7 @@ input support, applying effects to the TR-S output, etc.):
 | Effect section (p. 7)  |                                              |                                                                                                    |
 | No.                    | Control                                      | Function                                                                                           |
 | 1                      | CH ASSIGN area                               | Toggle FX 1/2 for decks 1/2 (3/4 if \[SHIFT\] is pressed) or the TR-S (Aux 3) and Samplers 1-16.   |
-| 2                      | Effect parameter knobs                       | Change Meta value of effect (or parameter 1/2/3 if of an effect if an effect is focused).          |
-| 3                      | \[BEATS\] knob                               | Change Dry/Wet value of FX unit.                                                                   |
-| 4                      | Effect buttons                               | Toggle effect (or focus effect in effect focus mode).                                              |
-| 5                      | \[TAP\] button                               | Toggle effect focus mode.                                                                          |
+| 2-5                    | *Various*                                    | *See [Standard effects mapping](standard_effects_mapping).*                                        |
 | TR-S section (p. 8)    |                                              |                                                                                                    |
 | No.                    | Control                                      | Function                                                                                           |
 | 1                      | \[VALUE\] knob                               | *See Owner's Manual.*                                                                              |

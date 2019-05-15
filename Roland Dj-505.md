@@ -25,20 +25,25 @@ opened](https://github.com/mixxxdj/mixxx/pull/2111).
 
 ### Audio Channels
 
-The mapping relies on the following channel assignments (for Line/Phono
+The mapping relies on the following channel assignments (for line/phono
 input support, applying effects to the TR-S output, etc.):
 
-| Output Channels | Assigned to |
-| --------------- | ----------- |
-| 1-2             | Master      |
-| 2-3             | Headphones  |
+| Output                |                  |
+| --------------------- | ---------------- |
+| Channels              | Assigned to      |
+| 1-2                   | Master           |
+| 2-3                   | Headphones       |
+| Input                 |                  |
+| Channels              | Assigned to      |
+| 1-2 (CH 1 Line/Phono) | Vinyl Control 1  |
+| 3-4 (CH 2 Line/Phono) | Vinyl Control 2  |
+| 5-6 (Mix)             | Record/Broadcast |
+| 7-8 (TR-S output)     | Auxiliary 1      |
 
-| Input Channels        | Assigned to                   |
-| --------------------- | ----------------------------- |
-| 1-2 (CH 1 Line/Phono) | Auxiliary 1 & Vinyl Control 1 |
-| 3-4 (CH 2 Line/Phono) | Auxiliary 2 & Vinyl Control 2 |
-| 5-6 (Mix)             | Record/Broadcast              |
-| 7-8 (TR-S output)     | Auxiliary 3                   |
+**Note:** You should assign the Vinyl Control input channels even if you
+do not intend to use timecode vinyl. These channel assignments are also
+needed to make the CH 1/2 PC/LINE/PHONO switches work (i. e. passing
+through line or phono input to the left/right deck).
 
 ### Controls
 

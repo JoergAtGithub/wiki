@@ -183,6 +183,26 @@ but sets a non-rolling beatloop instead.
 The other modes that are described in the owner's manual (Slicer, Slicer
 Loop, Saved Loop, Flip) are currently not mapped.
 
+### Known Issues
+
+  - TR-S Syncing currently works at the BPM level, but phase syncing is
+    not implemented yet. As a workaround, the NUDGE button can be used
+    to adjust the phase.
+  - Some performance pad modes are missing (Slicer \[ [Launchpad Bug
+    \#1828886](https://bugs.launchpad.net/mixxx/+bug/1828886) \], Slicer
+    Loop, Saved Loop, Flip)
+  - Buttons for sorting the library by BPM/Song/Artist/Key are not
+    mapped since no Mixxx controls seem to exist for it ([Launchpad Bug
+    \#1828882](https://bugs.launchpad.net/mixxx/+bug/1828882))
+  - Some buttons are not mapped yet (e.g. BACK)
+  - LEDs on BACK/ADD PREPARE do not work (this seems to be a
+    hardware/firmware bug and does not work in Serato either)
+  - Controller does not send current cross fader value on Serato Sysex
+    Message (this seems to be a hardware/firmware bug and does not work
+    in Serato either)
+  - Support for colored hotcues is still missing (currently, the hotcue
+    button colors are hardcoded).
+
 ## Links
 
   - [Manufacturer's product

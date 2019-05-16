@@ -52,6 +52,20 @@ to make sure your changes follow the mixxx style.
 [Setting-up
 git-clang-format](https://dx13.co.uk/articles/2015/4/3/Setting-up-git-clang-format.html)
 
+You can for example do this after each commit during development:
+
+``` bash
+git-clang-format HEAD^1
+git commit -a --amend
+```
+
+or if the PR is already under review:
+
+``` bash
+git-clang-format upstream/master 
+git commit -a -m"apply git-clang-format changes"
+```
+
 Apply *clang-format* to individual source files (only permitted for new
 files):
 

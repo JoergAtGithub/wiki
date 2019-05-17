@@ -187,7 +187,8 @@ Loop, Saved Loop, Flip) are currently not mapped.
 
   - TR-S Syncing currently works at the BPM level, but phase syncing is
     not implemented yet. As a workaround, the NUDGE button can be used
-    to adjust the phase.
+    to adjust the phase. This depends on MIDI clock I/O ([Launchpad Bug
+    \#682221](https://bugs.launchpad.net/mixxx/+bug/682221)).
   - Some performance pad modes are missing (Slicer \[ [Launchpad Bug
     \#1828886](https://bugs.launchpad.net/mixxx/+bug/1828886) \], Slicer
     Loop, Saved Loop, Flip)

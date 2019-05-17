@@ -202,8 +202,8 @@ Loop, Saved Loop, Flip) are currently not mapped.
     Message (this seems to be a hardware/firmware bug and does not work
     in Serato either)
   - Support for colored hotcues is still missing (currently the hotcue
-    button colors are hardcoded). This feature depends on \[PR
-    \#2030\](<https://github.com/mixxxdj/mixxx/pull/2030>).
+    button colors are hardcoded). This feature depends on [PR
+    \#2030](https://github.com/mixxxdj/mixxx/pull/2030).
 
 ## Links
 

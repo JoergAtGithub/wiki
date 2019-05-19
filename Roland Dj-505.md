@@ -54,7 +54,7 @@ found on the specified page in the Owner's Manual.
 | ---------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | No.                    | Control                                      | Function                                                                                           |
 | 1                      | \[LOAD\] buttons                             | Load song into deck.                                                                               |
-| 1                      | \[SHIFT\] + \[LOAD\] buttons                 | Eject song from deck.                                                                              |
+| 1                      | \[SHIFT\] + \[LOAD\] buttons                 | *Not yet mapped.*                                                                                  |
 | 2                      | Rotary Selector                              | Turn to move tracklist cursor up/down.                                                             |
 | 2                      | \[SHIFT\] + Rotary Selector                  | Turn to move sidebar cursor up/down. Press to toggle the selected item.                            |
 | 3                      | \[BACK\] button                              | *Not yet mapped.*                                                                                  |

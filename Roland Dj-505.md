@@ -194,7 +194,8 @@ Loop, Saved Loop, Flip) are currently not mapped.
     Loop, Saved Loop, Flip)
   - Buttons for sorting the library by BPM/Song/Artist/Key are not
     mapped since no Mixxx controls seem to exist for it ([Launchpad Bug
-    \#1828882](https://bugs.launchpad.net/mixxx/+bug/1828882))
+    \#1828882](https://bugs.launchpad.net/mixxx/+bug/1828882), [GitHub
+    PR \#2118](https://github.com/mixxxdj/mixxx/pull/2118))
   - Some buttons are not mapped yet (e.g. BACK)
   - LEDs on BACK/ADD PREPARE do not work (this seems to be a
     hardware/firmware bug and does not work in Serato either)

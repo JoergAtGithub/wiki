@@ -92,4 +92,8 @@ Load/Prepare Button = AutoDJ On/Off
 Cue Button = Switch monitor cue level to max.  
 Mix Button = Switch monitor cue mix to 50%.  
   
+**Jog wheel LEDs:**  
+White LEDs = Play position  
+Blue LEDs= Currently not mapped  
+  
 Other controls as labeled.

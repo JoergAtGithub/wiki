@@ -400,11 +400,11 @@ knowing what Qt widget the associated Mixxx widget derives from.
 Handy resources:
 
   - [Qt Style Sheet
-    Documentation](https://doc.qt.io/doc/qt-4.8/stylesheet.html)
+    Documentation](https://doc.qt.io/archives/qt-4.8/stylesheet.html)
   - [Qt Style Sheet
-    Syntax](https://doc.qt.io/doc/qt-4.8/stylesheet-syntax.html)
+    Syntax](https://doc.qt.io/archives/qt-4.8/stylesheet-syntax.html)
   - [Qt Style Sheet Widget
-    Reference](https://doc.qt.io/doc/qt-4.8/stylesheet-reference.html)
+    Reference](https://doc.qt.io/archives/qt-4.8/stylesheet-reference.html)
     -- tells you what widgets support which properties.
 
 Here is a potentially out-of-date list of which Mixxx widgets derive

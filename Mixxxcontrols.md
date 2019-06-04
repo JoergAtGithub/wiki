@@ -48,7 +48,9 @@ The keys of existing controls use different naming conventions, namely
   - ***camelCase***: `headSplit`, `duckStrength`, ...
   - ***snake\_case***: `beatjump_forward`, `cue_indicator`
 
-Newly added controls should use the ***snake\_case*** naming convention.
+Newly added controls should use the ***snake\_case*** naming
+convention(())[GitHub PR \#2118 - Naming conventions for new
+controls](https://github.com/mixxxdj/mixxx/pull/2118#issuecomment-498126595).
 
 ## List of Controls
 

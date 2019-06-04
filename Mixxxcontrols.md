@@ -40,6 +40,16 @@ When running Mixxx in Developer Mode (with the `--developer` command
 line option), you can view and manually set the state of any control in
 Mixxx by going to Developer \> Developer Tools.
 
+## Naming Conventions
+
+The keys of existing controls use different naming conventions, namely
+
+  - ***PascalCase***: `VuMeter`, `MoveUp`, ...
+  - ***camelCase***: `headSplit`, `duckStrength`, ...
+  - ***snake\_case***: `beatjump_forward`, `cue_indicator`
+
+Newly added controls should use the ***snake\_case*** naming convention.
+
 ## List of Controls
 
 The default range is 0.0 to 1.0, unless otherwise noted. Binary means

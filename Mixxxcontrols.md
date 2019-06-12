@@ -325,27 +325,64 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### \[Library\]
 
-| Key/Control                  |  | Range    |  | What it does                                                                                                                      |  | On-screen feedback                   |  |
-| ---------------------------- |  | -------- |  | --------------------------------------------------------------------------------------------------------------------------------- |  | ------------------------------------ |  |
-| MoveUp\[147\]                |  | Binary   |  | Equivalent to pressing the UP key on the keyboard                                                                                 |  | Currently selected item changes      |  |
-| MoveDown\[148\]              |  | Binary   |  | Equivalent to pressing the DOWN key on the keyboard                                                                               |  | Currently selected item changes      |  |
-| MoveVertical\[149\]          |  | Relative |  | Move UP or DOWN the specified number of locations (negative for UP). Intended to be mapped to an encoder knob.                    |  | Currently selected item changes      |  |
-| ScrollUp\[150\]              |  | Binary   |  | Equivalent to pressing the PAGEUP key on the keyboard                                                                             |  | Currently selected item changes      |  |
-| ScrollDown\[151\]            |  | Binary   |  | Equivalent to pressing the PAGEDOWN key on the keyboard                                                                           |  | Currently selected item changes      |  |
-| ScrollVertical\[152\]        |  | Relative |  | Scroll UP or DOWN the specified number of pages (negative for UP). Intended to be mapped to an encoder knob.                      |  | Currently selected item changes      |  |
-| MoveLeft\[153\]              |  | Binary   |  | Equivalent to pressing the LEFT key on the keyboard                                                                               |  | Currently selected item changes      |  |
-| MoveRight\[154\]             |  | Binary   |  | Equivalent to pressing the RIGHT key on the keyboard                                                                              |  | Currently selected item changes      |  |
-| MoveHorizontal\[155\]        |  | Relative |  | Move LEFT or RIGHT the specified number of locations (negative for LEFT). Intended to be mapped to an encoder knob.               |  | Currently selected item changes      |  |
-| MoveFocusForward\[156\]      |  | Binary   |  | Equivalent to pressing the TAB key on the keyboard                                                                                |  | Currently focused pane changes       |  |
-| MoveFocusBackward\[157\]     |  | Binary   |  | Equivalent to pressing the SHIFT+TAB key on the keyboard                                                                          |  | Currently focused pane changes       |  |
-| MoveFocus\[158\]             |  | Relative |  | Move focus forward or backwards the specified number of panes (negative for SHIFT+TAB). Intended to be mapped to an encoder knob. |  | Currently focused pane changes       |  |
-| GoToItem\[159\]              |  | Binary   |  | Equivalent to double clicking the currently selected item                                                                         |  | Context dependent                    |  |
-| AutoDjAddBottom\[160\]       |  | Binary   |  | Add selected track(s) to Auto DJ Queue (bottom).                                                                                  |  | Append track(s) to Auto DJ playlist  |  |
-| AutoDjAddTop\[161\]          |  | Binary   |  | Add selected track(s) to Auto DJ Queue (top).                                                                                     |  | Prepend track(s) to Auto DJ playlist |  |
-| show\_coverart               |  | Binary   |  | Toggle the Cover Art in Library                                                                                                   |  |                                      |  |
-| font\_size\_increment\[162\] |  | Binary   |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used.             |  | Library view                         |  |
-| font\_size\_decrement\[163\] |  | Binary   |  | Decrease the size of the library font                                                                                             |  | Library view                         |  |
-| font\_size\_knob\[164\]      |  | Relative |  | Increase or decrease the size of the library font                                                                                 |  | Library view                         |  |
+| Key/Control                  |  | Range           |  | What it does                                                                                                                                                      |  | On-screen feedback                                         |  |
+| ---------------------------- |  | --------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------- |  |
+| MoveUp\[147\]                |  | Binary          |  | Equivalent to pressing the UP key on the keyboard                                                                                                                 |  | Currently selected item changes                            |  |
+| MoveDown\[148\]              |  | Binary          |  | Equivalent to pressing the DOWN key on the keyboard                                                                                                               |  | Currently selected item changes                            |  |
+| MoveVertical\[149\]          |  | Relative        |  | Move UP or DOWN the specified number of locations (negative for UP). Intended to be mapped to an encoder knob.                                                    |  | Currently selected item changes                            |  |
+| ScrollUp\[150\]              |  | Binary          |  | Equivalent to pressing the PAGEUP key on the keyboard                                                                                                             |  | Currently selected item changes                            |  |
+| ScrollDown\[151\]            |  | Binary          |  | Equivalent to pressing the PAGEDOWN key on the keyboard                                                                                                           |  | Currently selected item changes                            |  |
+| ScrollVertical\[152\]        |  | Relative        |  | Scroll UP or DOWN the specified number of pages (negative for UP). Intended to be mapped to an encoder knob.                                                      |  | Currently selected item changes                            |  |
+| MoveLeft\[153\]              |  | Binary          |  | Equivalent to pressing the LEFT key on the keyboard                                                                                                               |  | Currently selected item changes                            |  |
+| MoveRight\[154\]             |  | Binary          |  | Equivalent to pressing the RIGHT key on the keyboard                                                                                                              |  | Currently selected item changes                            |  |
+| MoveHorizontal\[155\]        |  | Relative        |  | Move LEFT or RIGHT the specified number of locations (negative for LEFT). Intended to be mapped to an encoder knob.                                               |  | Currently selected item changes                            |  |
+| MoveFocusForward\[156\]      |  | Binary          |  | Equivalent to pressing the TAB key on the keyboard                                                                                                                |  | Currently focused pane changes                             |  |
+| MoveFocusBackward\[157\]     |  | Binary          |  | Equivalent to pressing the SHIFT+TAB key on the keyboard                                                                                                          |  | Currently focused pane changes                             |  |
+| MoveFocus\[158\]             |  | Relative        |  | Move focus forward or backwards the specified number of panes (negative for SHIFT+TAB). Intended to be mapped to an encoder knob.                                 |  | Currently focused pane changes                             |  |
+| GoToItem\[159\]              |  | Binary          |  | Equivalent to double clicking the currently selected item                                                                                                         |  | Context dependent                                          |  |
+| AutoDjAddBottom\[160\]       |  | Binary          |  | Add selected track(s) to Auto DJ Queue (bottom).                                                                                                                  |  | Append track(s) to Auto DJ playlist                        |  |
+| AutoDjAddTop\[161\]          |  | Binary          |  | Add selected track(s) to Auto DJ Queue (top).                                                                                                                     |  | Prepend track(s) to Auto DJ playlist                       |  |
+| show\_coverart               |  | Binary          |  | Toggle the Cover Art in Library                                                                                                                                   |  |                                                            |  |
+| font\_size\_increment\[162\] |  | Binary          |  | Increase the size of the library font. If the row height is smaller than the font-size the larger of the two is used.                                             |  | Library view                                               |  |
+| font\_size\_decrement\[163\] |  | Binary          |  | Decrease the size of the library font                                                                                                                             |  | Library view                                               |  |
+| font\_size\_knob\[164\]      |  | Relative        |  | Increase or decrease the size of the library font                                                                                                                 |  | Library view                                               |  |
+| sort\_column\[165\]          |  | See table below |  | Indicates the sorting column the track table                                                                                                                      |  | Sorting indicator in the column headers of the track table |  |
+| sort\_column\_toggle\[166\]  |  | See table below |  | Equivalent to clicking on column headers. A new value sets sort\_column to that value and sort\_order to 0, setting the same value again will toggle sort\_order. |  | Sorting indicator in the column headers of the track table |  |
+| sort\_order\[167\]           |  | Binary          |  | Indicate the sort order of the track table (0 for ascending, 1 for descending)                                                                                    |  | Sorting indicator in the column headers of the track table |  |
+
+#### Allowed values for sort\_column/sort\_column\_toggle
+
+|       |                    | Availability |          |       |        |
+| ----- | ------------------ | ------------ | -------- | ----- | ------ |
+| Index | Description        | Library      | Playlist | Crate | Browse |
+| 0     | Artist             | X            | X        | X     | X      |
+| 1     | Title              | X            | X        | X     | X      |
+| 2     | Album              | X            | X        | X     | X      |
+| 3     | Albumartist        | X            | X        | X     | X      |
+| 4     | Year               | X            | X        | X     | X      |
+| 5     | Genre              | X            | X        | X     | X      |
+| 6     | Composer           | X            | X        | X     | X      |
+| 7     | Grouping           | X            | X        | X     | X      |
+| 8     | Tracknumber        | X            | X        | X     | X      |
+| 9     | Filetype           | X            | X        | X     | X      |
+| 10    | Native Location    | X            | X        | X     | X      |
+| 11    | Comment            | X            | X        | X     | X      |
+| 12    | Duration           | X            | X        | X     | X      |
+| 13    | Bitrate            | X            | X        | X     | X      |
+| 14    | BPM                | X            | X        | X     | X      |
+| 15    | ReplayGain         | X            | X        | X     | X      |
+| 16    | Datetime Added     | X            | X        | X     | X      |
+| 17    | Times Played       | X            | X        | X     | X      |
+| 18    | Rating             | X            | X        | X     | X      |
+| 19    | Key                | X            | X        | X     | X      |
+| 20    | Preview            | X            | X        | X     | X      |
+| 21    | Coverart           | X            | X        | X     |        |
+| 22    | Position           |              | X        |       |        |
+| 23    | Playlist ID        |              | X        |       |        |
+| 24    | Location           |              | X        |       |        |
+| 25    | Filename           |              |          |       | X      |
+| 26    | File Modified Time |              |          |       | X      |
+| 27    | File Creation Time |              |          |       | X      |
 
 ### \[Playlist\]
 
@@ -363,8 +400,8 @@ current status.)
 
 |  | Key/Control             |  | Range  |  | What it does                                                                                                                                                                                                   |  | On-screen feedback |  |
 |  | ----------------------- |  | ------ |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ------------------ |  |
-|  | touch\_shift\[165\]     |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in the future. |  | All Widgets        |  |
-|  | AutoHotcueColors\[166\] |  | binary |  | If enabled, colors will be assigned to newly created hot cue points automatically.                                                                                                                             |  | N/A                |  |
+|  | touch\_shift\[168\]     |  | binary |  | Once enabled, all touch tab events are interpreted as right click. This control has been added to provide touchscreen compatibility in 2.0 and might be replaced by a general modifier solution in the future. |  | All Widgets        |  |
+|  | AutoHotcueColors\[169\] |  | binary |  | If enabled, colors will be assigned to newly created hot cue points automatically.                                                                                                                             |  | N/A                |  |
 
 ### Effects framework
 
@@ -380,7 +417,7 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\]                  |  | chain\_selector              |  | \+1/-1               |  | Select EffectChain preset. \> 0 goes one forward; \< 0 goes one backward.                                                                                                                          |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | clear                        |  | binary               |  | Clear the currently loaded EffectChain in this EffectUnit.                                                                                                                                         |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | enabled                      |  | binary, default true |  | If true, the EffectChain in this EffectUnit will be processed. Meant to allow the user a quick toggle for the effect unit.                                                                         |  |
-| \[EffectRack1\_EffectUnitN\] \[167\]          |  | focused\_effect              |  | 0..num\_effects      |  | 0 indicates no effect is focused; \> 0 indicates the index of the focused effect. Focusing an effect only does something if a controller mapping changes how it behaves when an effect is focused. |  |
+| \[EffectRack1\_EffectUnitN\] \[170\]          |  | focused\_effect              |  | 0..num\_effects      |  | 0 indicates no effect is focused; \> 0 indicates the index of the focused effect. Focusing an effect only does something if a controller mapping changes how it behaves when an effect is focused. |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[ChannelI\]\_enable  |  | binary               |  | Whether or not this EffectChain applies to Deck I                                                                                                                                                  |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[Headphone\]\_enable |  | binary               |  | Whether or not this EffectChain applies to the Headphone output                                                                                                                                    |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | group\_\[Master\]\_enable    |  | binary               |  | Whether or not this EffectChain applies to the Master output                                                                                                                                       |  |
@@ -391,8 +428,8 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\]                  |  | num\_effects                 |  | integer, read-only   |  | The number of Effects that this EffectChain has                                                                                                                                                    |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | num\_effectslots             |  | integer, read-only   |  | The number of effect slots available in this EffectUnit.                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | prev\_chain                  |  | binary               |  | Cycle to the previous EffectChain preset before the currently loaded preset.                                                                                                                       |  |
-| \[EffectRack1\_EffectUnitN\] \[168\]          |  | show\_focus                  |  | binary               |  | Whether to show focus buttons and draw a border around the focused effect in skins. This should not be manipulated by skins; it should only be changed by controller mappings.                     |  |
-| \[EffectRack1\_EffectUnitN\] \[169\]          |  | show\_parameters             |  | binary               |  | Whether to show all the parameters of each effect in skins or only show metaknobs.                                                                                                                 |  |
+| \[EffectRack1\_EffectUnitN\] \[171\]          |  | show\_focus                  |  | binary               |  | Whether to show focus buttons and draw a border around the focused effect in skins. This should not be manipulated by skins; it should only be changed by controller mappings.                     |  |
+| \[EffectRack1\_EffectUnitN\] \[172\]          |  | show\_parameters             |  | binary               |  | Whether to show all the parameters of each effect in skins or only show metaknobs.                                                                                                                 |  |
 | \[EffectRack1\_EffectUnitN\]                  |  | super1                       |  | 0.0..1.0             |  | The EffectChain superknob. Moves the metaknobs for each effect in the chain.                                                                                                                       |  |
 | Effect Controls                               |  |                              |  |                      |  |                                                                                                                                                                                                    |  |
 | \[Group\]                                     |  | Key/Control                  |  | Range                |  | What it does                                                                                                                                                                                       |  |
@@ -405,7 +442,7 @@ The effects framework was introduced in Mixxx 2.0.
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_parameterslots          |  | integer, read-only   |  | The number of parameter slots available.                                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_button\_parameters      |  | integer, read-only   |  | The number of button parameters the currently loaded effect has. 0 if no effect is loaded                                                                                                          |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | num\_button\_parameterslots  |  | integer, read-only   |  | The number of button parameter slots available.                                                                                                                                                    |  |
-| \[EffectRack1\_EffectUnitN\_EffectM\] \[170\] |  | meta                         |  | 0..1                 |  | Controls the parameters that are linked to the metaknob.                                                                                                                                           |  |
+| \[EffectRack1\_EffectUnitN\_EffectM\] \[173\] |  | meta                         |  | 0..1                 |  | Controls the parameters that are linked to the metaknob.                                                                                                                                           |  |
 | \[EffectRack1\_EffectUnitN\_EffectM\]         |  | prev\_effect                 |  | binary               |  | Cycle to the previous effect before the currently loaded effect.                                                                                                                                   |  |
 | EffectParameter Controls                      |  |                              |  |                      |  |                                                                                                                                                                                                    |  |
 | \[Group\]                                     |  | Key/Control                  |  | Range                |  | What it does                                                                                                                                                                                       |  |
@@ -469,19 +506,19 @@ Equalizers section of the Preferences window.
 | \[Channel*N*\] |  | jog                              |  | \-3.0..3.0           |  | Affects relative play speed & direction for short instances (additive & is automatically reset to 0)                                                   |  | waveform                                         |  | [JavaScript engine.scratch functions](MIDI%20scripting#scratching)                  |  |
 | \[Channel*N*\] |  | reloop\_exit                     |  | binary               |  | Toggles the current loop on or off. If the loop is ahead of the current play position, the track will keep playing normally until it reaches the loop. |  | Loop range in waveform activates or deactivates. |  | reloop\_toggle                                                                      |  |
 | \[Channel*N*\] |  | scratch                          |  | \-3.0..3.0           |  | Affects play speed & direction ([differently whether currently playing or not](https://bugs.launchpad.net/mixxx/+bug/530281)) (multiplicative)         |  | Waveform                                         |  | [JavaScript engine.scratch functions](MIDI%20scripting#scratching)                  |  |
-| \[Channel*N*\] |  | filter\[171\],\[172\]            |  | binary               |  | Toggles the filter effect                                                                                                                              |  | Filter button                                    |  | [\[QuickEffectRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], enabled          |  |
-| \[Channel*N*\] |  | filterDepth\[173\],\[174\]       |  | default              |  | Adjusts the intensity of the filter effect                                                                                                             |  | Filter depth knob                                |  | [\[QuickEffectRack1\_\[ChannelN](#effects-framework)\]\], super1                    |  |
-| \[Channel*N*\] |  | filterLow\[175\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the low EQ filter                                                                                                                  |  | LOW knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter1         |  |
-| \[Channel*N*\] |  | filterLowKill\[176\]             |  | binary               |  | Holds the gain of the low EQ to -inf while active                                                                                                      |  | LOW kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter1 |  |
-| \[Channel*N*\] |  | filterMid\[177\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the mid EQ filter                                                                                                                  |  | MID knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter2         |  |
-| \[Channel*N*\] |  | filterMidKill\[178\]             |  | binary               |  | Holds the gain of the mid EQ to -inf while active                                                                                                      |  | MID kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter2 |  |
-| \[Channel*N*\] |  | filterHigh\[179\]                |  | 0.0..1.0..4.0        |  | Adjusts the gain of the high EQ filter                                                                                                                 |  | HIGH knob                                        |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter3         |  |
-| \[Channel*N*\] |  | filterHighKill\[180\]            |  | binary               |  | Holds the gain of the high EQ to -inf while active                                                                                                     |  | HIGH kill knob                                   |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter3 |  |
-| \[Flanger\]    |  | lfoDepth\[181\]                  |  | default              |  | Adjusts the intensity of the flange effect                                                                                                             |  | Depth knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Flanger\]    |  | lfoDelay\[182\]                  |  | 50..10000            |  | Adjusts the phase delay of the flange effect in microseconds                                                                                           |  | Delay knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Flanger\]    |  | lfoPeriod\[183\]                 |  | 50000..2000000       |  | Adjusts the wavelength of the flange effect in microseconds                                                                                            |  | LFO knob                                         |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Channel*N*\] |  | flanger\[184\]                   |  | binary               |  | Toggles the flange effect                                                                                                                              |  | FLANGER button                                   |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
-| \[Channel*N*\] |  | beatloop\_X\[185\]               |  | toggle               |  | Setup a loop over X beats. A control exists for X = 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                                          |  | A loop is shown over X beats.                    |  | \[Channel*N*\], beatloop\_X\_activate                                               |  |
+| \[Channel*N*\] |  | filter\[174\],\[175\]            |  | binary               |  | Toggles the filter effect                                                                                                                              |  | Filter button                                    |  | [\[QuickEffectRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], enabled          |  |
+| \[Channel*N*\] |  | filterDepth\[176\],\[177\]       |  | default              |  | Adjusts the intensity of the filter effect                                                                                                             |  | Filter depth knob                                |  | [\[QuickEffectRack1\_\[ChannelN](#effects-framework)\]\], super1                    |  |
+| \[Channel*N*\] |  | filterLow\[178\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the low EQ filter                                                                                                                  |  | LOW knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter1         |  |
+| \[Channel*N*\] |  | filterLowKill\[179\]             |  | binary               |  | Holds the gain of the low EQ to -inf while active                                                                                                      |  | LOW kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter1 |  |
+| \[Channel*N*\] |  | filterMid\[180\]                 |  | 0.0..1.0..4.0        |  | Adjusts the gain of the mid EQ filter                                                                                                                  |  | MID knob                                         |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter2         |  |
+| \[Channel*N*\] |  | filterMidKill\[181\]             |  | binary               |  | Holds the gain of the mid EQ to -inf while active                                                                                                      |  | MID kill knob                                    |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter2 |  |
+| \[Channel*N*\] |  | filterHigh\[182\]                |  | 0.0..1.0..4.0        |  | Adjusts the gain of the high EQ filter                                                                                                                 |  | HIGH knob                                        |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], parameter3         |  |
+| \[Channel*N*\] |  | filterHighKill\[183\]            |  | binary               |  | Holds the gain of the high EQ to -inf while active                                                                                                     |  | HIGH kill knob                                   |  | [\[EqualizerRack1\_\[ChannelN\]\_Effect1](#effects-framework)\], button\_parameter3 |  |
+| \[Flanger\]    |  | lfoDepth\[184\]                  |  | default              |  | Adjusts the intensity of the flange effect                                                                                                             |  | Depth knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Flanger\]    |  | lfoDelay\[185\]                  |  | 50..10000            |  | Adjusts the phase delay of the flange effect in microseconds                                                                                           |  | Delay knob                                       |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Flanger\]    |  | lfoPeriod\[186\]                 |  | 50000..2000000       |  | Adjusts the wavelength of the flange effect in microseconds                                                                                            |  | LFO knob                                         |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Channel*N*\] |  | flanger\[187\]                   |  | binary               |  | Toggles the flange effect                                                                                                                              |  | FLANGER button                                   |  | No direct replacement. See [\#effects frameworks](#effects%20frameworks) section    |  |
+| \[Channel*N*\] |  | beatloop\_X\[188\]               |  | toggle               |  | Setup a loop over X beats. A control exists for X = 0.03125, 0.0625, 0.125, 0.25, 0.5, 1, 2, 4, 8, 16, 32, 64                                          |  | A loop is shown over X beats.                    |  | \[Channel*N*\], beatloop\_X\_activate                                               |  |
 | \[Channel*N*\] |  | Hercules1                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
 | \[Channel*N*\] |  | Hercules2                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
 | \[Channel*N*\] |  | Hercules3                        |  | ?                    |  | deprecated                                                                                                                                             |  | ?                                                |  |                                                                                     |  |
@@ -496,7 +533,7 @@ Equalizers section of the Preferences window.
 | \[Playlist\]   |  | LoadSelectedIntoFirstStopped     |  | binary               |  | Loads the currently highlighted song into the first stopped deck                                                                                       |  | Waveform view                                    |  | \[Library\] GoToItem                                                                |  |
 | \[Playlist\]   |  | SelectNextPlaylist               |  | binary               |  | Switches to the next view (Library, Queue, etc.)                                                                                                       |  | Library sidebar                                  |  | \[Library\] MoveDown                                                                |  |
 | \[Playlist\]   |  | SelectPrevPlaylist               |  | binary               |  | Switches to the previous view (Library, Queue, etc.)                                                                                                   |  | Library sidebar                                  |  | \[Library\] MoveUp                                                                  |  |
-| \[Playlist\]   |  | ToggleSelectedSidebarItem\[186\] |  | binary               |  | Toggles (expands/collapses) the currently selected sidebar item.                                                                                       |  | Library sidebar                                  |  | \[Library\] GoToItem                                                                |  |
+| \[Playlist\]   |  | ToggleSelectedSidebarItem\[189\] |  | binary               |  | Toggles (expands/collapses) the currently selected sidebar item.                                                                                       |  | Library sidebar                                  |  | \[Library\] GoToItem                                                                |  |
 | \[Playlist\]   |  | SelectNextTrack                  |  | binary               |  | Scrolls to the next track in the track table.                                                                                                          |  | Library track table highlight                    |  | \[Library\] MoveDown                                                                |  |
 | \[Playlist\]   |  | SelectPrevTrack                  |  | binary               |  | Scrolls to the previous track in the track table.                                                                                                      |  | Library track table highlight                    |  | \[Library\] MoveUp                                                                  |  |
 
@@ -829,29 +866,29 @@ Equalizers section of the Preferences window.
 
 164. introduced in Mixxx v2.0.0
 
-165. introduced in Mixxx v2.0.0
+165. introduced in Mixxx v2.3.0
 
 166. introduced in Mixxx v2.3.0
 
-167. introduced in Mixxx v2.1.0
+167. introduced in Mixxx v2.3.0
 
-168. introduced in Mixxx v2.1.0
+168. introduced in Mixxx v2.0.0
 
-169. introduced in Mixxx v2.1.0
+169. introduced in Mixxx v2.3.0
 
 170. introduced in Mixxx v2.1.0
 
-171. introduced in Mixxx v2.0.0
+171. introduced in Mixxx v2.1.0
 
-172. deprecated in Mixxx v2.0.0
+172. introduced in Mixxx v2.1.0
 
-173. introduced in Mixxx v2.0.0
+173. introduced in Mixxx v2.1.0
 
-174. deprecated in Mixxx v2.0.0
+174. introduced in Mixxx v2.0.0
 
 175. deprecated in Mixxx v2.0.0
 
-176. deprecated in Mixxx v2.0.0
+176. introduced in Mixxx v2.0.0
 
 177. deprecated in Mixxx v2.0.0
 
@@ -869,6 +906,12 @@ Equalizers section of the Preferences window.
 
 184. deprecated in Mixxx v2.0.0
 
-185. introduced in Mixxx v1.10.0
+185. deprecated in Mixxx v2.0.0
 
-186. introduced in Mixxx v1.11.0
+186. deprecated in Mixxx v2.0.0
+
+187. deprecated in Mixxx v2.0.0
+
+188. introduced in Mixxx v1.10.0
+
+189. introduced in Mixxx v1.11.0

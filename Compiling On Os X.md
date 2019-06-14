@@ -244,7 +244,7 @@ flag. For example:
 
     scons modplug=1
 
-### Common error messages & solutions
+\==== Common error messages & solutions ====
 
 ##### ld: symbol(s) not found for architecture x86\_64
 
@@ -275,6 +275,39 @@ initializer\_list.
 Try the "scons" command above like this:
 
     scons machine=x86_64
+
+##### Unmet dependency: Could not find libtag or its development headers.
+
+Dependency errors happen from time to time , even if the dependencies
+are installed. This is not limited to \`\`libtag\`\`. You are not able
+to compile the source, and the mixxx build aborts.
+
+First, try updating brew and upgrading the packages
+
+``` 
+ brew update && brew upgrade
+```
+
+Force SCons to ignore any cached results, delete temporary files and
+return the source tree to the original state. From the Mixxx build
+directory, run
+
+``` 
+ rm -R config.log .sconsign.dblite .sconf_temp .sconsign.branch
+```
+
+Build Mixxx
+
+``` 
+ scons
+```
+
+If build is finished, start the executable
+
+``` 
+ ./mixxx --controllerDebug --developer --resourcePath res/
+ 
+```
 
 ## 5\. Configure your development tools
 

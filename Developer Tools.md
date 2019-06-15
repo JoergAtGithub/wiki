@@ -40,6 +40,7 @@ files, it can be difficult to understand how the code fits together.
 
 ## Using IDEs
 
+  - Set up [Visual Studio Code](Visual%20Studio%20Code)
   - Set up [Eclipse](eclipse)
   - Set up [KDevelop](KDevelop)
   - Set up [Emacs](emacs)

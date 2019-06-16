@@ -53,13 +53,14 @@ found on the specified page in the Owner's Manual.
 | ---------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | No.                    | Control                                      | Function                                                                                           |
 | 1                      | \[LOAD\] buttons                             | Load song into deck.                                                                               |
-| 1                      | \[SHIFT\] + \[LOAD\] buttons                 | *Not yet mapped.*                                                                                  |
+| 1                      | \[SHIFT\] + \[LOAD\] button (left)           | Sort library by BPM (press repeatedly to toggle ascending/descending order).                       |
+| 1                      | \[SHIFT\] + \[LOAD\] button (right)          | Sort library by key (press repeatedly to toggle ascending/descending order).                       |
 | 2                      | Rotary Selector                              | Turn to move tracklist cursor up/down.                                                             |
 | 2                      | \[SHIFT\] + Rotary Selector                  | Turn to move sidebar cursor up/down. Press to toggle the selected item.                            |
 | 3                      | \[BACK\] button                              | *Not yet mapped.*                                                                                  |
-| 3                      | \[SHIFT\] + \[BACK\] button                  | *Not yet mapped.*                                                                                  |
+| 3                      | \[SHIFT\] + \[BACK\] button                  | Sort library by title (press repeatedly to toggle ascending/descending order).                     |
 | 4                      | \[ADD PREPARE\] button                       | (Un-)Maximizes the library view.                                                                   |
-| 4                      | \[SHIFT\] + \[ADD PREPARE\] button           | *Not yet mapped.*                                                                                  |
+| 4                      | \[SHIFT\] + \[ADD PREPARE\] button           | Sort library by artist (press repeatedly to toggle ascending/descending order).                    |
 | Deck section (p. 5-6)  |                                              |                                                                                                    |
 | No.                    | Control                                      | Function                                                                                           |
 | 1                      | Jog dial (top surface)                       | Perform scratch operation.                                                                         |
@@ -191,10 +192,6 @@ Loop, Saved Loop, Flip) are currently not mapped.
   - Some performance pad modes are missing (Slicer \[ [Launchpad Bug
     \#1828886](https://bugs.launchpad.net/mixxx/+bug/1828886) \], Slicer
     Loop, Saved Loop, Flip)
-  - Buttons for sorting the library by BPM/Song/Artist/Key are not
-    mapped since no Mixxx controls seem to exist for it ([Launchpad Bug
-    \#1828882](https://bugs.launchpad.net/mixxx/+bug/1828882), [GitHub
-    PR \#2118](https://github.com/mixxxdj/mixxx/pull/2118))
   - Some buttons are not mapped yet (e.g. BACK)
   - LEDs on BACK/ADD PREPARE do not work (this seems to be a
     hardware/firmware bug and does not work in Serato either)

@@ -657,20 +657,21 @@ VERIFY_OR_DEBUG_ASSERT(!failed) {
 }
 ```
 
-## C++11
+## C++14
 
-As of the Mixxx 2.0 release, Mixxx is switching to C++11. We are taking
-a conservative approach to adopting C++11 features and whitelisting them
-one by one. If a C++11 feature you would like to use is not listed here,
-please email mixxx-devel to make a case for it and we will consider
-whitelisting it.
+As of the Mixxx 2.3 release, Mixxx is switching to C++14. We are taking
+a conservative approach to adopting C++11/14 features and whitelisting
+them one by one. If a C++11/14 feature you would like to use is not
+listed here, please email mixxx-devel to make a case for it and we will
+consider whitelisting it.
 
 We are limited to what is supported across our 3 supported compilers:
 
-  - [Clang 3.3](http://clang.llvm.org/cxx_status.html)
-  - [GCC 4.8](https://gcc.gnu.org/projects/cxx0x.html)
-  - [Microsoft Visual Studio 2015
-    Update 3](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
+  - [Clang \>= 3.4](http://clang.llvm.org/cxx_status.html)
+  - [GCC \>= 5.4 (Ubuntu
+    Xenial)](https://gcc.gnu.org/projects/cxx0x.html)
+  - [Microsoft Visual Studio 2017 (\_MSC\_VER
+    \>= 1910)](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
 
 In general, Microsoft Visual Studio is the one that prevents us from
 using features.

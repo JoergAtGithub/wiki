@@ -32,9 +32,7 @@ contains settings for
 of it by auto-formatting new or modified code segments as soon as you
 need to touch it\!**
 
-The following options are available for auto-formatting the code.
-
-clang-format version \>= 4.0 is required
+ClangFormat version \>= 4.0 is required.
 
 On Ubuntu, you can install clang format via.
 

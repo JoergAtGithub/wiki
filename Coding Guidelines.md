@@ -599,33 +599,49 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
 
 <!-- end list -->
 
-  - Pass raw pointer `T*` if no ownership is transfered. A function
-    which receives a raw pointer should not hold onto the pointer
-    outside the scope of the function (e.g. by storing it in a member
-    variable). An exception is the parent pointer passed into the
-    constructor of a `QObject` and internally stored as a non owning
-    reference. Do not pass smart pointers by reference. 
+  - Pass reference `const T&` or `T&` if no ownership is transfered.
+    Pass raw pointer `const T*` or `T*` if no ownership is transfered
+    and `nullptr` is a valid argument value. A function which receives a
+    reference or raw pointer should not hold onto it outside the scope
+    of the function (e.g. by storing it in a member variable). An
+    exception is the parent pointer passed into the constructor of a
+    `QObject` and internally stored as a non owning reference.
 
 <!-- end list -->
 
-  - `parented_ptr` requires the parent to be passed into the constructor
-    at the time of creation. If a pointer that will eventually be
-    managed by the QT object tree needs to be temporarily created
-    without a parent, first create the object `p` with
-    `std::make_unique`, and then later create a new variable using
-    `parented_ptr(p.release())` once the underlying object gets a
-    parent.
+  - Pass smart pointers by value if ownership is transfered
+    (`std::unique_ptr`) or shared (`std::shared_ptr`). Do not pass smart
+    pointers by reference.
 
 <!-- end list -->
 
-  - Never store a `parented_ptr` in an object that outlives the parent.
-    If the lifetime of the child relative to the parent is not clear
-    then store the output of `parented_ptr::toWeakRef()` instead.
+  - Use `make_parented` to create objects derived from `QObject` that
+    will be assigned to a parent (and will therefore be managed by the
+    Qt object tree). The created object must get a parent before the
+    `parented_ptr` is destructed. Example:
+
+<!-- end list -->
+
+``` 
+  auto pBrowseButton = make_parented<QPushButton>(tr("Browse"));
+  // *pBrowseButton is not assigned to a parent yet
+  pLayout->addWidget(pBrowseButton);
+  // Now *pLayout is the parent
+```
+
+  - The destructor of `parented_ptr` asserts that the pointed-to object
+    actually has a parent. This ensures that the pointed-to object isn't
+    leaked. A consequence is that **a `parented_ptr` must never
+    dangle**. Never store a `parented_ptr` in an object that outlives
+    the parent. This is most easily done by storing the `parented_ptr`
+    inside exact the parent. If the lifetime of the pointer relative to
+    the parent is not clear then store the output of
+    `parented_ptr::toWeakRef()` instead of a `parented_ptr`.
 
 <!-- end list -->
 
   - Any exceptions to these guidelines must be clearly documented inline
-    in the code
+    in the code.
 
 ## Assertions
 

@@ -788,12 +788,12 @@ The effects can also be mapped directly via XML using either
 As most DJing applications, mixxx is capable of colored hotcues. There
 are several ways of accessing and processing color information in
 scripts. To keep compability with color limited hardware, we provide a
-\[n\] colors colorpalette: \[Insert here\]. Each of those colors has a
+[8 color colorpalette](hotcue_colors). `abc` Each of those colors has a
 unique ID. This ID can be retrieved via the
-engine.getValue('\[ChannelN\]', 'hotcue\_X\_color\_id') (where N and X
-are the respective Deck and hotcue whose information is being accessed).
-To prevent some code duplication and to provide a more robust API, a new
-color object was created. It features methods that return a
+\`engine.getValue('\[ChannelN\]', 'hotcue\_X\_color\_id')\` (where N and
+X are the respective Deck and hotcue whose information is being
+accessed). To prevent some code duplication and to provide a more robust
+API, a new color object was created. It features methods that return a
 struct/hashmap/dictionary which contain the properties of the colors in
 the Color palette. It contains the following properties:
 
@@ -806,9 +806,9 @@ the Color palette. It contains the following properties:
 
 The color API features two methods:
 
-  - **predefinedColorFromID(*id*)** - returns a single color object by
+  - **predefinedColorFromID**(*id*) - returns a single color object by
     the provided ID.
-  - **predefinedColorsList()** - returns the whole color palette in the
+  - **predefinedColorsList**() - returns the whole color palette in the
     form of a color object array. Since controllers handle colors
     differently from model to model, it is up to you to interpret the
     color and send it to the controller. however, \[Components JS\] has

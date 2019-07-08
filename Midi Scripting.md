@@ -794,10 +794,10 @@ ID. This ID can be retrieved via the `engine.getValue('[ChannelN]',
 whose information is being accessed). The color API features two
 methods:
 
-  - **predefinedColorFromID**(*id*) - returns a single color object by
-    the provided ID.
-  - **predefinedColorsList**() - returns the whole color palette in the
-    form of a color object array. Since controllers handle colors
+  - **color.predefinedColorFromID**(*id*) - returns a single color
+    object by the provided ID.
+  - **color.predefinedColorsList**() - returns the whole color palette
+    in the form of a color object array. Since controllers handle colors
     differently from model to model, it is up to you to interpret the
     color and send it to the controller.
 
@@ -815,8 +815,9 @@ the Color palette. It contains the following properties:
   - **id** - internal ID of the color.
 
 Since these Methods might seem a bit confusing, we provide hotcuebutton
-class via \[Components JS\], which is able to take care of the color
-feature automatically (see \[component js hotcue button color\]).
+class via [Components JS](components_js), which is able to take care of
+the color feature automatically (see [Components JS
+Hotcue](components_js#hotcuebutton)).
 
 ## Helper functions
 

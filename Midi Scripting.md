@@ -1,4 +1,4 @@
-# Controller Scripting
+\====== Controller Scripting ======
 
 In order to support the features of many MIDI controllers, Mixxx offers
 what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables
@@ -782,6 +782,38 @@ The effects can also be mapped directly via XML using either
         </options>
     </control>
 ```
+
+## Color API
+
+As most DJing applications, mixxx is capable of colored hotcues. There
+are several ways of accessing and processing color information in
+scripts. To keep compability with color limited hardware, we provide a
+\[n\] colors colorpalette: \[Insert here\]. Each of those colors has a
+unique ID. This ID can be retrieved via the
+engine.getValue('\[ChannelN\]', 'hotcue\_X\_color\_id') (where N and X
+are the respective Deck and hotcue whose information is being accessed).
+To prevent some code duplication and to provide a more robust API, a new
+color object was created. It features methods that return a
+struct/hashmap/dictionary which contain the properties of the colors in
+the Color palette. It contains the following properties:
+
+  - **red** - red color channel (*8-bit precision*).
+  - **green** - (green color channel (*8-bit precision*).
+  - **blue** - (blue color channel (*8-bit precision*).
+  - **alpha** - alpha color channel (*8-bit precision*); currently
+    unused.
+  - **id** - internal ID of the color.
+
+The color API features two methods:
+
+  - **predefinedColorFromID(*id*)** - returns a single color object by
+    the provided ID.
+  - **predefinedColorsList()** - returns the whole color palette in the
+    form of a color object array. Since controllers handle colors
+    differently from model to model, it is up to you to interpret the
+    color and send it to the controller. however, \[Components JS\] has
+    a hotcuebutton component that is able to take care of the color
+    feature (see \[component js hotcue button color\]).
 
 ## Helper functions
 

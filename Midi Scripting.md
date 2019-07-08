@@ -788,12 +788,22 @@ The effects can also be mapped directly via XML using either
 As most DJing applications, mixxx is capable of colored hotcues. There
 are several ways of accessing and processing color information in
 scripts. To keep compability with color limited hardware, we provide a
-[8 color colorpalette](hotcue_colors). `abc` Each of those colors has a
-unique ID. This ID can be retrieved via the
-\`engine.getValue('\[ChannelN\]', 'hotcue\_X\_color\_id')\` (where N and
-X are the respective Deck and hotcue whose information is being
-accessed). To prevent some code duplication and to provide a more robust
-API, a new color object was created. It features methods that return a
+[8 color colorpalette](hotcue_colors). Each of those colors has a unique
+ID. This ID can be retrieved via the `engine.getValue('[ChannelN]',
+'hotcue_X_color_id')` (where N and X are the respective Deck and hotcue
+whose information is being accessed). The color API features two
+methods:
+
+  - **predefinedColorFromID**(*id*) - returns a single color object by
+    the provided ID.
+  - **predefinedColorsList**() - returns the whole color palette in the
+    form of a color object array. Since controllers handle colors
+    differently from model to model, it is up to you to interpret the
+    color and send it to the controller.
+
+To prevent some code duplication and to provide a more robust API, a new
+color object was created. It can be retrieved by using
+`color.predefinedColorFromID(id)` and it returns a
 struct/hashmap/dictionary which contain the properties of the colors in
 the Color palette. It contains the following properties:
 
@@ -804,16 +814,9 @@ the Color palette. It contains the following properties:
     unused.
   - **id** - internal ID of the color.
 
-The color API features two methods:
-
-  - **predefinedColorFromID**(*id*) - returns a single color object by
-    the provided ID.
-  - **predefinedColorsList**() - returns the whole color palette in the
-    form of a color object array. Since controllers handle colors
-    differently from model to model, it is up to you to interpret the
-    color and send it to the controller. however, \[Components JS\] has
-    a hotcuebutton component that is able to take care of the color
-    feature (see \[component js hotcue button color\]).
+Since these Methods might seem a bit confusing, we provide hotcuebutton
+class via \[Components JS\], which is able to take care of the color
+feature automatically (see \[component js hotcue button color\]).
 
 ## Helper functions
 

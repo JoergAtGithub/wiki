@@ -443,6 +443,87 @@ argument for the constructor. For example:
         });
     }
 
+In addition, the HotcueButton has also got a built functionality to
+handle color. There are three ways of implementing color. Which one to
+choose depends on the controller.
+
+1.  Set color via single byte based on controller internal palette
+2.  Set color via SysEx based on custom palette.
+3.  Set color via SysEx based on predefined colors by Mixxx.
+
+Option 1. is the simplest and most common method for most controllers.
+You must figure out which Midi values correspond to which colors and the
+correlate it with the [predefined hotcue colors](hotcue_colors).
+Creating such HotcueButton could look like this:
+
+    var hotcueButton = new components.HotcueButton({
+        number: 1,
+        group: '[Channel1]',
+        midi: [0x91, 0x26],
+        // key-value map to correlate the Mixxx ColorID
+        // with the value the controller expects for 
+        // specific colors
+        colors: {
+            0: 0x10,
+            1: 0x18,
+            2: 0x20,
+            ...
+        },
+        // value to turn off the buttons LED.
+        off: 0x00,
+    });
+
+With the second option, you can send predefined colors from the palette
+to the controller but this time via SysEx. Since SysEx is very
+controller specific, it is mandatory to specify a custom `sendRGB`
+method which is responsible for taking a color description, extracting
+the relevant information, and sending the SysEx Message to the
+controller.
+
+    var hotcueButton = new components.HotcueButton({
+        number: 1,
+        group: '[Channel1]',
+        midi: [0x91, 0x26],
+        // key-value map to correlate the Mixxx ColorID
+        // with an array which contains (in this case)
+        // the RGB components of a color
+        colors: {
+            0: [0x00,0x00,0x00], // black
+            1: [0xFF,0x00,0x00], // pure red
+            2: [0xFF,0xFF,0x00], // pure Yellow
+            ...
+        },
+        sendRGB: function (color_obj) {
+            // example Message (hardcoded bytes are controller specific).
+        // colors entries contain 8-bit values, but SysEx only supports 7-bit values
+        // so were bitshifting by 1 to reduce the resolution.
+            var msg = [0xF0, 0x00, 0x01, color_obj[0]>>1,color_obj[1]>>1,color_obj[2]>>1];
+            // send message
+        midi.sendSysexMsg(msg, msg.length);
+        }
+    });
+
+The third Option is similar to the second one. You need to define a
+SendRGB method again, but this time Mixxx provides the color palette
+automatically. However, this time the `sendRGB(color)` method gets a
+color object (more on the color API [here](midi_scripting#color_api)).
+Such a button could be defined like this:
+
+    var hotcueButton = new components.HotcueButton({
+        number: 1,
+        group: '[Channel1]',
+        midi: [0x91, 0x26],
+        // colors automatically assigned by Components.JS framework
+        sendRGB: function (color_obj) {
+            // example Message (hardcoded bytes are controller specific).
+        // colors entries contain 8-bit values, but SysEx only supports 7-bit values
+        // so were bitshifting by 1 to reduce the resolution.
+            var msg = [0xF0, 0x00, 0x01, color_obj.red>>1,color_obj.green>>1,color_obj.blue>>1];
+            // send message
+        midi.sendSysexMsg(msg, msg.length);
+        }
+    });
+
 ### SamplerButton
 
 Default behavior: Press the button to load the track selected in the

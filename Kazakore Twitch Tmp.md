@@ -51,6 +51,8 @@ selected. This shouldn't be noticed in normal operation.
 
 ## User Options
 
+These can be found at the very top of the mappings .js file.
+
 **fxOnUnitMaster** Set to 0 for FX On buttons to globally turn On/Off
 effect 1-4 Set to 1 for FX On buttons to assign Master to effects 1-4.
 DEFAULT is 1 as this is how the GUIs have been designed. (No included

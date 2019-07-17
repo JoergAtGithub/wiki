@@ -1,4 +1,4 @@
-\=======Novation Twitch=======
+\========Novation Twitch========
 [[/media/hardware/novation-twitch-top-down-flat-xl.jpg|]]
 
 [Serato's Product
@@ -8,12 +8,13 @@ manuals and MIDI reference guide can be found by search the Twitch
 product at: [The Novation Support
 Page](https://customer.novationmusic.com/support/downloads?brand=Novation&product_by_range=485&download_type=all)
 
-## Audio Setup
+\=======Audio Setup=======
 
 Configure Channels 1 & 2 for Master output and 3 & 4 for the Headphone
 Cue. The top right section are analogue hardware controls for the
 onboard audio interface and do not affect the related controls within
-Mixxx.
+Mixxx. Note that the Headphone Mix knob has fully anti-clockwise for
+Master and fully clockwise for Cue, the reverse of most DJ mixers.
 
 VU Meters have been configured to display Master if no PFL is selected
 and to display the Channel selected on the side which has PFL On
@@ -21,7 +22,7 @@ and to display the Channel selected on the side which has PFL On
 calibration so if the top LED is lit then your signal will be running
 into clipping. It's best to keep is so the very top LED remains unlit.
 
-## Mixxx Mapping
+\=======Mixxx Mapping=======
 
 The above shows the controller as per the manufacturers website with the
 Serato layout printed on the hardware. This is based on what in the MIDI
@@ -35,3 +36,100 @@ Serato layout is really not applicable if programming in Basic Mode.
 
 This is a photo of the overlay for the Traktor/Basic Mode the Mixxx
 mapping has been based from.
+
+Throughout this guide I will display the button labels as on the Traktor
+overlay first with the labels on the hardware unit displayed in ()
+parenthesis so it is clear for users of both.
+
+## Known Issues
+
+None of the Init codes in the manual either remembered or reset the FX
+Params paging, thus if the mapping is (re)loaded while Mixxx is in
+operation and it's not set on the default (no LED lit) page then it will
+not display as controlling the FX page it's on until a button has been
+selected. This shouldn't be noticed in normal operation.
+
+## User Options
+
+**fxOnUnitMaster** Set to 0 for FX On buttons to globally turn On/Off
+effect 1-4 Set to 1 for FX On buttons to assign Master to effects 1-4.
+DEFAULT is 1 as this is how the GUIs have been designed. (No included
+GUI has on screen indication of if an FX is enabled but the LEDs work
+and you may find this more useful than assigning to master, plus it's
+useful to be able to turn them On/Off no matter which page for the Pads
+you currently have activate.)
+
+## Master Section
+
+These are hardware controls, see the above Audio Setup section
+
+## Browse Section
+
+**BROWSER (AREA)**  
+Press to change between library pane navigated.  
+SHIFT+Press to expand Library
+
+**4 DECK (VIEW)**  
+Press to toggle between 2 and 4 deck view in the GUI  
+SHIFT + Press to toggle view of Samplers in GUI.
+
+**LOAD A/C (LOAD A)**  
+Loads selected track in Deck A or C depending on layer in operation by
+left side of controller.
+
+**LOAD B/D (LOAD B)**  
+Loads selected track in Deck B or D depending on layer in operation by
+right side of controller.
+
+**CLOSE (BACK)**  
+Closes (unexpands) folder when navigating in Tree section of Library
+Browser.
+
+**OPEN (FWD)**  
+Opens (expands) folder when navigating in Tree section of Library
+Browser.
+
+**TREE/LIST (SCROLL) Encoder**  
+Rotate to navigate within Library Browser.  
+With either the Encoder Pressed or SHIFT held down navigation will be
+faster (\~11 tracks per tick.)  
+With both the Encoder Pressed and SHIFT held down together navigation
+will be much faster (over 100 tracks per tick.)  
+Rotation is velocity sensitive, the faster you rotate the further you
+will move.
+
+## Deck Controls
+
+**DECK A/B C/D (SHIFT)**  
+Hardware control buttons to switch layer controls by left or right side
+of deck for controlling of 4 decks.
+
+**SYNC (SET/CLR)**  
+Press to Sync to playing deck  
+Hold to enable Master Sync  
+SHIFT + Press to toggle Quantise  
+**SHIFT (ADJUST/SLIP)**  
+SHIFT button (hold to activate any functions listed with SHIFT on this
+page.
+
+**TEMPO (PITCH) Encoder**  
+Rotate to adjust the playback rate of deck (clockwise = faster whichever
+way the faders are set.)  
+Press + Rotate to adjust playback rate in larger steps.  
+SHIFT + Press to reset playback rate to 0% offset.
+
+**\< BACK (KEYLOCK)**  
+Press to toggle Keylock  
+SHIFT + Press to Reset Key to original
+
+**FWD \> (SYNC/AUTO)**  
+Press to toggle Slip Mode  
+SHIFT + Press to enable Repeat mode.
+
+**CUE**  
+Pres for standard Cue control. Exact operation may depend on your
+Preference settings.  
+Shift + Press to Stop and Rewind to Star of track.
+
+**PLAY/PAUSE** Press to toggle Play and Pause. Shift + Press to toggle
+Reverse Playback.

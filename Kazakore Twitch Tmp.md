@@ -131,5 +131,6 @@ Pres for standard Cue control. Exact operation may depend on your
 Preference settings.  
 Shift + Press to Stop and Rewind to Star of track.
 
-**PLAY/PAUSE** Press to toggle Play and Pause. Shift + Press to toggle
-Reverse Playback.
+**PLAY/PAUSE**  
+Press to toggle Play and Pause.  
+Shift + Press to toggle Reverse Playback.

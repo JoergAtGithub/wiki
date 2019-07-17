@@ -134,3 +134,21 @@ Shift + Press to Stop and Rewind to Star of track.
 **PLAY/PAUSE**  
 Press to toggle Play and Pause.  
 Shift + Press to toggle Reverse Playback.
+
+**SWIPE & DROP**  
+Hardware controls for the Touchstrip. See below
+
+**TOUCHSTRIP**  
+SWIPE active: When Paused shuttle through track. When in Play Jog the
+playback pitch to adjust timing.  
+DROP active: (Reverts to SWIPE after single operation.) Press or drag on
+touchstrip to position the play cursor in relative position in track.  
+HOT CUE BANK button + TOUCHSTRIP: Scratch Mode activation. Playback will
+resume once HOT CUE Select Button is released (as long as it's from the
+same Deck.) zz SHIFT + TOUCHSTRIP: Scratch Mode activation. Subtle
+difference in that track will come to stop if SHIFT is released before
+motion finishes (if performing EG a SpinBack.) Touch TOUCHSTRIP again to
+release Scratch and have full control again. Using a HOT CUE BANK button
+from the opposite deck will have similar behaviour.
+
+## PAD BANKS

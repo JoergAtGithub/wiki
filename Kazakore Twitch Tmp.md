@@ -201,15 +201,9 @@ SHIFT + 8: Set Beatgrid to cursor position
 
 ## Mixer Section
 
-**FILTER (TRIM) Knobs** Channel Pregain.
-
-**HIGH/MID/LOW Knobs** EQ controls
-
-**FX SELECT (ACTIVATE) Encoder**\* Quick FX control
-
-**FILTER ON (CUE)** Quick FX On/Off
-
-**CUE (ON/OFF)** Headphone cue selectors.
+**FILTER (TRIM) Knobs** Channel Pregain. **HIGH/MID/LOW Knobs** EQ
+controls **FX SELECT (ACTIVATE) Encoder**\* Quick FX control **FILTER ON
+(CUE)** Quick FX On/Off **CUE (ON/OFF)** Headphone cue selectors.
 
 ## Effects Section
 

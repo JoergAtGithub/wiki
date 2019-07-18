@@ -210,8 +210,9 @@ SHIFT + 8: Set Beatgrid to cursor position
 ## Effects Section
 
 The FX PARAMS Buttons controller hardware level switching for layer of
-the knobs. With FX1 to FX4 selected it works almost as
-[https://www.mixxx.org/wiki/doku.php/standard\_effects\_mapping](Standard%20Effects%20Mapping)
+the knobs. With FX1 to FX4 selected it works almost as the [Standard
+Effects
+Mapping](https://www.mixxx.org/wiki/doku.php/standard_effects_mapping)
 minus the ability to control individual controls within an effect. The
 forth button, which would enable this, currently expands/collapses the
 view of that effect. (TODO is to bring these controls fully to the

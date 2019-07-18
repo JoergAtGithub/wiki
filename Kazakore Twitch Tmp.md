@@ -147,10 +147,81 @@ DROP active: (Reverts to SWIPE after single operation.) Press or drag on
 touchstrip to position the play cursor in relative position in track.  
 HOT CUE BANK button + TOUCHSTRIP: Scratch Mode activation. Playback will
 resume once HOT CUE Select Button is released (as long as it's from the
-same Deck.) zz SHIFT + TOUCHSTRIP: Scratch Mode activation. Subtle
-difference in that track will come to stop if SHIFT is released before
-motion finishes (if performing EG a SpinBack.) Touch TOUCHSTRIP again to
-release Scratch and have full control again. Using a HOT CUE BANK button
-from the opposite deck will have similar behaviour.
+same Deck.)  
+SHIFT + TOUCHSTRIP: Scratch Mode activation. Subtle difference in that
+track will come to stop if SHIFT is released before motion finishes (if
+performing EG a SpinBack.) Touch TOUCHSTRIP again to release Scratch and
+have full control again. Using a HOT CUE BANK button from the opposite
+deck will have similar behaviour.
 
 ## PAD BANKS
+
+**HOT CUES**  
+BANK BUTTON: Hardware selection of Hot Cue bank. Also used as Modifier
+key for TOUCHSTRIP Scratch Mode and for Hot Cue Looping.  
+PADS 1-8: Press to trigger HotCue 1-8  
+SHIFT + Press to delete HotCue 1-8  
+HOTCUES Bank + Press to enable a Loop of Beatloop Size at play position
+on Pad release.
+
+**FX (SLICER)**  
+BANK BUTTON: Hardware selection of FX bank SHIFT + FX BANK: Show FX in
+GUI  
+PADS 1-4: Turn FX Chain 1-4 On/Off for relevant Deck. PADS 5-8:
+Load/Triggers Samplers. Deck A Samplers 1-4. Deck B Samplers 5-8. Deck C
+Sampler 9-12. Deck D Sampler 13-16. SHIFT + Pads 5-8: Stop/Unload
+Samplers as per above.
+
+**LOOP (AUTO LOOP)**  
+BANK BUTTON: Hardware selection of LOOP bank  
+PADS 1-4: Trigger Loop of 4/8/16/32 beats.  
+PAD 5: Half Loop size  
+PAD 6: Double Loops size  
+PAD 7: Enable Loop of Beatsize.  
+PAD 8: Reloop Toggle  
+SHIFT + 1: Set Loop In  
+SHIFT + 2: Set Loop Out  
+SHIFT + 5: Jump backwards 16 beats  
+SHIFT + 6: Jump backwards 4 beats  
+SHIFT + 7: Jump forwards 4 beats  
+SHIFT + 8 Jump forwards 16 beats  
+**BEAT GRID (LOOP ROLL)**  
+BANK BUTTON: Hardware selection of Loop Roll/Beat Grid Bank.  
+PADS 1-4: Trigger LoopRoll (Stutter) of 0.25/0.5/1/2 beats.  
+PAD 5: Jump back 4 beats  
+PAD 6: Jump back 1 beat  
+PAD 7: Jump forwards 1 beat  
+PAD 8: Jump forwards 4 beats  
+SHIFT + 2: Adjust track tempo down  
+SHIFT + 3: Adjust track tempo up  
+SHIFT + 5: Tap Tempo  
+SHIFT + 6: Move Beatgrid left  
+SHIFT + 7: Move Beatgrid right  
+SHIFT + 8: Set Beatgrid to cursor position
+
+## Mixer Section
+
+**FILTER (TRIM) Knobs** Channel Pregain.
+
+**HIGH/MID/LOW Knobs** EQ controls
+
+**FX SELECT (ACTIVATE) Encoder**\* Quick FX control
+
+**FILTER ON (CUE)** Quick FX On/Off
+
+**CUE (ON/OFF)** Headphone cue selectors.
+
+## Effects Section
+
+The FX PARAMS Buttons controller hardware level switching for layer of
+the knobs. With FX1 to FX4 selected it works almost as
+[https://www.mixxx.org/wiki/doku.php/standard\_effects\_mapping](Standard%20Effects%20Mapping)
+minus the ability to control individual controls within an effect. The
+forth button, which would enable this, currently expands/collapses the
+view of that effect. (TODO is to bring these controls fully to the
+standard.)
+
+With FX layer 0 selected (no LEDs lit.) FX On buttons select the effect
+to Master with an configurable option to instead globally Enable/Disable
+the effect chain. The knobs control the 4 Super controls in normal mode
+and control the 4 Wet/Dry Mix controls when used with SHIFT.

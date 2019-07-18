@@ -63,6 +63,7 @@ Migration tools:
 ### Advantages
 
   - Easy to cross-reference pull requests and issues
+  - Rich formatting
   - [Close issues automatically when merging pull
     requests](https://github.com/blog/1506-closing-issues-via-pull-requests)
 

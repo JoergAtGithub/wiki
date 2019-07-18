@@ -214,7 +214,7 @@ the knobs. With FX1 to FX4 selected it works almost as the [Standard
 Effects
 Mapping](https://www.mixxx.org/wiki/doku.php/standard_effects_mapping)
 minus the ability to control individual controls within an effect. The
-forth button, which would enable this, currently expands/collapses the
+fourth button, which would enable this, currently expands/collapses the
 view of that effect. (TODO is to bring these controls fully to the
 standard.)
 

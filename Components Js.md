@@ -701,6 +701,9 @@ functionality. The basic ComponentContainer methods are:
     optionally perform an operation on it, then call its `connect` and
     `trigger` methods to sync the state of the controller's LEDs.
     Arguments are the same as `forEachComponent`.
+  - **shutdown**: Iterate over all Components and call their shutdown
+    methods. The Button is the only component with a predefined shutdown
+    method. All other components have to be implemented manually.
 
 Typically, `reconnectComponents` is used to switch between layers. The
 callback passed to reconnectComponents can manipulate each Component's

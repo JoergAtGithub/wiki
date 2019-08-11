@@ -104,7 +104,7 @@ found on the specified page in the Owner's Manual.
 | 13                     | Tempo slider                                 | Adjust song playback speed (and pitch if key lock if off).                                         |
 | Mixer section (p. 7)   |                                              |                                                                                                    |
 | No.                    | Control                                      | Function                                                                                           |
-| 1                      | \[TRIM\] knobs                               | Adjust the volume.                                                                                 |
+| 1                      | \[TRIM\] knobs                               | Adjust the deck gain (prefader)                                                                    |
 | 2                      | \[HI\], \[MID\], \[LOW\] knobs               | Adjust the high/mid/low-frequency regions of the song.                                             |
 | 3                      | \[FILTER\] knobs                             | Applies high-pass/low-pass filter of the song.                                                     |
 | 4                      | Channel \[CUE\] buttons                      | Toggle PFL for each channel.                                                                       |

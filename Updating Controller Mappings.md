@@ -1,6 +1,10 @@
 This page has information for updating old controller mappings for the
 latest version of Mixxx.
 
+# Mixxx 2.3
+
+Support for [colored hotcues](MIDI%20scripting#color%20API) was added.
+
 # Mixxx 2.2
 
 There were no changes to the controller mapping system between Mixxx 2.1

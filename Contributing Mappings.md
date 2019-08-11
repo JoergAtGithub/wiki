@@ -199,6 +199,12 @@ computer motherboards often has one microphone input jack, typically a
 1/8" TS or TRS jack, often colored pink and labeled with a microphone
 icon, that can be used for this purpose.
 
+Some controllers have a loopback/mix record input that includes the
+microphone mixed with the master output from Mixxx (and often external
+audio inputs). If your controller has this, it should be configured for
+Mixxx's Record/Broadcast input and this should be explained on the wiki
+page for the controller.
+
 ## File naming convention
 
 Please name your mapping files according to these conventions before

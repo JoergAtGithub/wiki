@@ -140,7 +140,6 @@ move your controller to this table.
 | [Numark Mixtrack 3](Numark%20Mixtrack%20Pro%203)                                                   | $150              | 2 deck all-in-one                                            | no                         | \-               | MIDI            | 2.1                           | 2015     |
 | [Behringer CMD Studio 4a](Behringer%20CMD%20Studio%204a)                                           | $200              | 2 deck \[10\] all-in-one                                     | yes                        | no               | MIDI            | 2.1                           | 2013     |
 | [Native Instruments Traktor Kontrol F1](Native%20Instruments%20Traktor%20Kontrol%20F1)             | $200              | originally branded as "Remix controller", but very versatile | no                         | \-               | HID             | 1.11                          | 2012     |
-| [Native Instruments Traktor Kontrol Z1](Native%20Instruments%20Traktor%20Kontrol%20Z1)             | $200              | 2 deck compact                                               | yes                        | no               | HID             | 2.2.1                         | 2013     |
 | [Numark Mixtrack Pro 3](Numark%20Mixtrack%20Pro%203)                                               | $200              | 2 deck all-in-one                                            | yes                        | no               | MIDI            | 2.1                           | 2015     |
 | [DJ Tech Tools MIDI Fighter Twister](DJ%20Tech%20Tools%20MIDI%20Fighter%20Twister)                 | $220              | 2 deck controller \[11\]                                     | no                         | \-               | MIDI            | 2.1.5                         | 2015     |
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250              | miscellaneous                                                | no                         | \-               | MIDI            | 1.11                          | 2012     |
@@ -422,6 +421,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2011</td>
 </tr>
 <tr class="odd">
+<td><a href="Native Instruments Traktor Kontrol Z1">Native Instruments Traktor Kontrol Z1</a></td>
+<td>$200</td>
+<td>2 deck compact</td>
+<td>yes</td>
+<td>no</td>
+<td>HID</td>
+<td>2013</td>
+</tr>
+<tr class="even">
 <td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
 <td>$200</td>
 <td>originally branded as "Remix controller", but very versatile</td>

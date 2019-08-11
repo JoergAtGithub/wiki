@@ -125,6 +125,8 @@ pages for controllers should include:
     Document whether it is USB class compliant (if it is compatible with
     macOS and the manufacturer does not provide a macOS driver, it is
     class compliant).
+  - Notes about any features of the controller that are not (yet)
+    supported in Mixxx
   - Any special instructions required for using the controller with
     Mixxx beyond the usual loading of the mapping in Mixxx's preferences
   - The inputs and outputs of the audio interface if the device has one.

@@ -4,6 +4,8 @@ latest version of Mixxx.
 # Mixxx 2.3
 
 Support for [colored hotcues](MIDI%20scripting#color%20API) was added.
+Intro & outro cues were added too. These can be mapped the same way as
+hotcues. Refer to [MixxxControls](MixxxControls) for details.
 
 # Mixxx 2.2
 

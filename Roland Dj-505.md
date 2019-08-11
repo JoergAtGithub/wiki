@@ -211,18 +211,3 @@ Loop, Saved Loop, Flip) are currently not mapped.
   - Controller does not send current cross fader value on Serato Sysex
     Message (this seems to be a hardware/firmware bug and does not work
     in Serato either)
-
-## Links
-
-  - [Manufacturer's product
-    page](https://www.roland.com/global/products/dj-505/)
-  - [Serato DJ Hardware
-    Page](https://serato.com/dj/hardware/roland-dj-505)
-  - [Owner's
-    Manual](https://www.roland.com/global/support/by_product/dj-505/owners_manuals/)
-  - [Driver/Firmware/TR-S Samples Download
-    Page](https://www.roland.com/global/products/dj-505/downloads)
-  - [Mapping Forum
-    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12688)
-  - [Mapping Git
-    Repository](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping)

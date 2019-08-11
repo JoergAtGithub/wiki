@@ -111,10 +111,30 @@ Guide](hardware%20compatibility#mappings%20in%20development) and start a
 wiki page for your controller. To make a wiki page, put double brackets
 around the name of your controller in the Hardware Guide, for example
 \[\[My Controller\]\]. Save your edit to the Hardware Guide page, then
-click on the red link in the Hardware Guide to create the new page. Add
-a picture of the controller (use the syntax {{URL to picture}} to embed
-a picture), a link to the manufacturer's website, a brief description, a
-link to the forum thread, and links to some reviews of the controller.
+click on the red link in the Hardware Guide to create the new page. Wiki
+pages for controllers should include:
+
+  - A picture of the controller (use the syntax {{URL to picture}} to
+    embed a picture)
+  - A link to the manufacturer's website (Use the syntax \[\[URL to link
+    to|text of link\]\] for a link)
+  - A link to the forum thread
+  - Links to some reviews (optional, but nice to have)
+  - A brief description of the controller
+  - Notes about (in)compatibility with Windows, Linux, and macOS.
+    Document whether it is USB class compliant (if it is compatible with
+    macOS and the manufacturer does not provide a macOS driver, it is
+    class compliant).
+  - Any special instructions required for using the controller with
+    Mixxx beyond the usual loading of the mapping in Mixxx's preferences
+  - The inputs and outputs of the audio interface if the device has one.
+    Explain how to set these up with Mixxx. Usually this is just
+    configuring channels 1-2 for master and channels 3-4 for headphones,
+    but mention if there is anything else to set up. Document if the
+    microphone inputs are available to the computer (more details below)
+  - Labelled diagrams of the controller. Often you can find one in the
+    manufacturer's manual
+  - An explanation of how the mapping works
 
 You do not need to explain how Mixxx works; explain how the controller
 affects Mixxx. Feel free to link to the [Mixxx

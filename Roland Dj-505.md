@@ -29,13 +29,7 @@ website](https://www.roland.com/global/products/dj-505/downloads/).
 Since the DJ-505 is a USB class compliant MIDI and audio device, the
 device is plug-and-play on Linux.
 
-## Controller Mapping
-
-A mapping has been [added to
-Mixxx](https://github.com/mixxxdj/mixxx/pull/2111) prior to the 2.3.0
-release.
-
-### Audio Channels
+## Audio Setup
 
 The mapping relies on the following channel assignments (for line/phono
 input support, applying effects to the TR-S output, etc.):
@@ -56,6 +50,12 @@ input support, applying effects to the TR-S output, etc.):
 do not intend to use timecode vinyl. These channel assignments are also
 needed to make the CH 1/2 PC/LINE/PHONO switches work (i. e. passing
 through line or phono input to the left/right deck).
+
+## Controller Mapping
+
+A mapping has been [added to
+Mixxx](https://github.com/mixxxdj/mixxx/pull/2111) prior to the 2.3.0
+release.
 
 ### Controls
 

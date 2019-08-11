@@ -8,6 +8,19 @@ toggled between decks to play with 4 decks. It also features a TR-S step
 sequencer with sounds from the TR-808 and the TR-909 drum machines
 (TR-606 and TR-707 are available via firmware update).
 
+  - [Manufacturer's product
+    page](https://www.roland.com/global/products/dj-505/)
+  - [Serato DJ Hardware
+    Page](https://serato.com/dj/hardware/roland-dj-505)
+  - [Owner's
+    Manual](https://www.roland.com/global/support/by_product/dj-505/owners_manuals/)
+  - [Driver/Firmware/TR-S Samples Download
+    Page](https://www.roland.com/global/products/dj-505/downloads)
+  - [Mapping Forum
+    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12688)
+  - [Mapping Git
+    Repository](https://github.com/Holzhaus/mixxx/tree/roland-dj-505-mapping)
+
 ## Drivers
 
 You can download the latest Windows & MacOS drivers and firmware from

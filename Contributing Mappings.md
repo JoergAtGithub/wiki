@@ -116,9 +116,9 @@ pages for controllers should include:
 
   - A picture of the controller (use the syntax {{URL to picture}} to
     embed a picture)
-  - A link to the manufacturer's website (Use the syntax \[\[URL to link
-    to|text of link\]\] for a link)
-  - A link to the forum thread
+  - A link to the manufacturer's webpage for the controller (Use the
+    syntax \[\[URL to link to|text of link\]\] for a link)
+  - A link to the Mixxx forum thread for the controller
   - Links to some reviews (optional, but nice to have)
   - A brief description of the controller
   - Notes about (in)compatibility with Windows, Linux, and macOS.
@@ -131,7 +131,8 @@ pages for controllers should include:
     Explain how to set these up with Mixxx. Usually this is just
     configuring channels 1-2 for master and channels 3-4 for headphones,
     but mention if there is anything else to set up. Document if the
-    microphone inputs are available to the computer (more details below)
+    microphone inputs are available to the computer (more details
+    [below](#microphone-inputs)).
   - Labelled diagrams of the controller. Often you can find one in the
     manufacturer's manual
   - An explanation of how the mapping works

@@ -115,7 +115,7 @@ found on the specified page in the Owner's Manual.
 | 6                      | Cross fader                                  | Fades between left and right deck.                                                                   |
 | 7                      | \[MASTER LEVEL\] knob                        | Adjusts the master output level.                                                                     |
 | 8                      | \[BOOTH LEVEL\] knob                         | Adjusts the output level of the BOOTH OUT jacks.                                                     |
-| 9                      | \[MIXING\] knob                              | Fades between PFL and master output.                                                                 |
+| 9                      | \[MIXING\] knob                              | Fades between PFL and master output in headphones                                                    |
 | 10                     | \[TR/SAMPLER LEVEL\] knob                    | Adjusts output of the TR-S (Aux 3) and Samplers 1-16.                                                |
 | 11                     | TR/SAMPLER \[CUE\] button                    | Toggle PFL of the TR-S (Aux 3) and Samplers 1-16.                                                    |
 | 12                     | Level indicator                              | Indicate the output level of each channel and master.                                                |

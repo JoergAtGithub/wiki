@@ -136,7 +136,8 @@ pages for controllers should include:
     microphone inputs are available to the computer (more details
     [below](#microphone-inputs)).
   - Labelled diagrams of the controller. Often you can find one in the
-    manufacturer's manual
+    manufacturer's manual. This is not strictly required but it is
+    helpful for explaining the mapping.
   - An explanation of how the mapping works
 
 You do not need to explain how Mixxx works; explain how the controller

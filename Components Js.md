@@ -443,9 +443,9 @@ argument for the constructor. For example:
         });
     }
 
-In addition, the HotcueButton has also got a built functionality to
-handle color. There are three ways of implementing color. Which one to
-choose depends on the controller.
+HotcueButton can show hotcue colors on the controller. There are three
+ways of implementing this. Which one to choose depends on the
+controller.
 
 1.  Set color via single byte based on controller internal palette
 2.  Set color via SysEx based on custom palette.

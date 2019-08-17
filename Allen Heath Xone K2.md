@@ -142,7 +142,7 @@ the effect focus button. When no effect is focused, the buttons are red.
 When holding the top encoder to choose an effect to focus, the buttons
 are green. When an effect is focused, the buttons are amber.
 
-The fader acts as the dry/wet knob.
+The fader acts as the mix knob.
 
 The bottom buttons assign the effect unit to different input channels
 and light up red. On the two deck layouts, from top to bottom, they

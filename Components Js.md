@@ -509,7 +509,7 @@ object are passed as the input to the `sendRGB` method.
         }
     });
 
-The third Option is similar to the second one. You need to define a
+The third option is similar to the second one. You need to define a
 `sendRGB` method again, but in this Mixxx provides the color palette
 automatically and you do not provide a `colors` object for the
 HotcueButton. The `sendRGB(color)` method gets passed a color object

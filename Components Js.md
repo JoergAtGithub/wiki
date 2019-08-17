@@ -453,10 +453,11 @@ controller.
 2.  Set color via SysEx based on custom palette.
 3.  Set color via SysEx based on predefined colors by Mixxx.
 
-Option 1. is the simplest and most common method for most controllers.
-You must figure out which Midi values correspond to which colors and the
-correlate it with the [predefined hotcue colors](hotcue_colors).
-Creating such HotcueButton could look like this:
+Option 1 is the simplest and most common method for most controllers.
+You must figure out which MIDI values correspond to which colors and the
+correlate it with the [predefined hotcue colors](hotcue_colors) (the
+controller's manual from the manufacturer may document this). Creating
+such HotcueButton could look like this:
 
     var hotcueButton = new components.HotcueButton({
         number: 1,
@@ -464,7 +465,8 @@ Creating such HotcueButton could look like this:
         midi: [0x91, 0x26],
         // key-value map to correlate the Mixxx ColorID
         // with the value the controller expects for 
-        // specific colors
+        // specific colors. These values are passed to
+        // the HotcueButton's send method.
         colors: {
             0: 0x10,
             1: 0x18,
@@ -480,7 +482,8 @@ to the controller but this time via SysEx. Since SysEx is very
 controller specific, it is mandatory to specify a custom `sendRGB`
 method which is responsible for taking a color description, extracting
 the relevant information, and sending the SysEx Message to the
-controller.
+controller. In this case, the values of the attributes in the `colors`
+object are passed as the input to the `sendRGB` method.
 
     var hotcueButton = new components.HotcueButton({
         number: 1,
@@ -488,7 +491,8 @@ controller.
         midi: [0x91, 0x26],
         // key-value map to correlate the Mixxx ColorID
         // with an array which contains (in this case)
-        // the RGB components of a color
+        // the RGB components of a color. These values
+        // are passed as input to the sendRGB method.
         colors: {
             0: [0x00,0x00,0x00], // black
             1: [0xFF,0x00,0x00], // pure red
@@ -506,10 +510,11 @@ controller.
     });
 
 The third Option is similar to the second one. You need to define a
-SendRGB method again, but this time Mixxx provides the color palette
-automatically. However, this time the `sendRGB(color)` method gets a
-color object (more on the color API [here](midi_scripting#color_api)).
-Such a button could be defined like this:
+`sendRGB` method again, but in this Mixxx provides the color palette
+automatically and you do not provide a `colors` object for the
+HotcueButton. The `sendRGB(color)` method gets passed a color object
+(more on the color API [here](midi_scripting#color_api)). Such a button
+could be defined like this:
 
     var hotcueButton = new components.HotcueButton({
         number: 1,

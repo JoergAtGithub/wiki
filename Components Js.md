@@ -443,6 +443,8 @@ argument for the constructor. For example:
         });
     }
 
+#### Hotcue colors
+
 HotcueButton can show hotcue colors on the controller. There are three
 ways of implementing this. Which one to choose depends on the
 controller.

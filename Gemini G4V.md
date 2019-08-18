@@ -63,20 +63,21 @@ included below:
 
   - The LOAD buttons at the top of the board load the selected track
     from the library into the respective virtual deck
-  - Shify+LOAD unloads the respective deck
+  - Pressing Shift+LOAD unloads the respective deck
   - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
     active virtual deck
-  - The deck's CUP buttons will seek the track to the start and stops it
-    when the track is not playing and will start playback from the
-    beginning of the track when the track is playing
-  - The Back button toggles the Browse knob's control between the left
-    and right panel of the library display
-  - The Browse knob scrolls up and down through the active panel in the
-    library display
-  - Pressing the Browse knob while the right panel is active will place
-    the selected track in the first stopped virtual deck
-  - Pressing the Browse knob while the left panel is active expands and
-    collapses menus
+  - The deck's CUP buttons will start playback from the beginning of the
+    track
+  - The Back button toggles the Browse knob's control between the
+    folders list and the track list in the library display
+  - The Browse knob scrolls up and down through the active list in the
+    library display, if there is a track loaded in the preview deck it
+    will move the play position back and forward
+  - Shift+Browse knob while the left panel is active expand and
+    collapses the different folders
+  - Pressing the Browse knob while the track list is active will load
+    the selected track in the preview deck and start playing in the
+    headphone, if the preview deck is already loaded it will unload it 
 
 ### Wheels and Scratch/Search button
 

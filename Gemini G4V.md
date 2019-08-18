@@ -2,8 +2,8 @@
 
 [[/media/g4v-top-4-893x490.jpg|g4v-top-4-893x490.jpg]]
 
-The Gemini G4V is a 2 deck controller that supports 4 virtual decks and
-has a built-in 4 channel USB soundcard.
+The Gemini G4V is a 2 deck controller that supports 4 virtual decks, a 4
+way mixer and has a built-in 4 channel USB soundcard.
 
   - [Mixxx Forum
     Thread](http://www.mixxx.org/forums/viewtopic.php?f=7&t=8185)

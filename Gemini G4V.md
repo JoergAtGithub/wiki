@@ -71,32 +71,36 @@ included below:
   - Pressing the Browse knob while the track list is active will load
     the selected track in the preview deck and start playing in the
     headphone, if the preview deck is already loaded it will unload it 
-
-### Transport Controls
-
   - The LOAD buttons at the top of the board load the selected track
     from the library into the respective virtual deck
   - Pressing Shift+LOAD unloads the respective deck
+
+### Transport Controls
+
   - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
     active virtual deck
   - The deck's CUP buttons will start playback from the beginning of the
     track
 
-### Wheels and Scratch/Search button
+### Jog Wheels
 
-  - When the Scratch/Search button is lit up (scratch mode), turning the
-    wheel and pressing down on the top surface will scratch the track
-  - When the Scratch/Search button is not lit up, turning the wheel
-    during playback causing temporary change to tempo
-  - When the Scratch/Search button is flashing (search mode), turning
-    the wheel quick searches through the track
-  - Search is toggled by holding the shift button
+  - Pressing the top of the Jog Wheel will change the mode to vinyl
+    mode. It will stop playing
+
+<!-- end list -->
+
+``` 
+   * Turning the jog wheel will move the track play head, for scratching or fine placement
+   * Turning the jog wheel while pressing shift will change the track play head fast, for fast search
+* Turning the jog wheel without pressing the top will temporarily change the tempo, for nudging
+```
 
 ### Performance Pads
 
 ``` 
  * Above the wheel on each deck is a set of 8 performance pads (top pads numbered 1-4 and bottom pads numbered 5-8 for the remainder of this wiki page)
- * The functionality of the performance pads is determined by toggle buttons underneath the pads, labeled Hot Cue, Auto Loop, Sample, and Loop Roll
+ * The functionality of the performance pads is determined by the pads mode: Hot Cue, Auto Loop, Sample, Loop Roll, manual Loop and Beat Jump.
+ * You can can change the mode by using the mode buttons as indicated.
 ```
 
 ### Hot Cue
@@ -118,16 +122,16 @@ included below:
 ### Sample
 
   - To enable Sample mode, press the Sample button
+  - It will show the sample decks if the skin has support for them
   - When the performance pads are in Sample mode, the Sample button will
     be lit up
-  - Only the first 4 performance pads have controls in Sample mode, and
-    these pads start playback of the sample corresponding to that pad's
-    number
-  - If a sample is playing, the corresponding performance pad will be
-    lit up if the deck is in Sample mode
-  - The Sample Volume knobs on the right deck control the volume for
-    Samples 2 and 4 while the knobs on the left deck control the volume
-    for Samples 1 and 3
+  - Pads are not linked to the deck
+
+<!-- end list -->
+
+    * 
+    * If a sample is playing, the corresponding performance pad will be lit up if the deck is in Sample mode
+    * The Sample Volume knobs on the right deck control the volume for Samples 2 and 4 while the knobs on the left deck control the volume for Samples 1 and 3
 
 ### Looping
 

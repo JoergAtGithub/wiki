@@ -103,7 +103,7 @@ included below:
  * You can can change the mode by using the mode buttons as indicated.
 ```
 
-### Hot Cue
+### Hot Cue Mode
 
   - To enable Hot Cue mode, press the Hot Cue button
   - When the performance pads are in Hot Cue mode, the Hot Cue button
@@ -119,60 +119,70 @@ included below:
     pressed while the deck's Shift button is being held, the hot cue
     will be deleted
 
-### Sample
+### Sample Mode
 
   - To enable Sample mode, press the Sample button
-  - It will show the sample decks if the skin has support for them
   - When the performance pads are in Sample mode, the Sample button will
     be lit up
-  - Pads are not linked to the deck
+  - It will show the sample decks if the skin has support for them
+  - The Sample button will be lit up if they have a track loaded
+  - Each deck control 8 samples, deck 1 controls samples 1 to 8, deck 2
+    controls samples 9 to 16, an so on
+  - The Sample Volume knobs control the volume for all the samples
 
-<!-- end list -->
+### Auto Loop Mode
 
-    * 
-    * If a sample is playing, the corresponding performance pad will be lit up if the deck is in Sample mode
-    * The Sample Volume knobs on the right deck control the volume for Samples 2 and 4 while the knobs on the left deck control the volume for Samples 1 and 3
-
-### Looping
-
-  - The performance pads can be used to control loops in the virtual
-    deck's track
-  - The Loop Move knob shifts the loop position in the virtual deck
-
-#### Auto Loop
-
-  - To enable Auto Loop mode, press the Auto Loop button
+  - To enable looping mode, press the Auto Loop button
   - When the performance pads are in Auto Loop mode, the Auto Loop
     button will be lit up
-  - The performance pads are labeled just below the pad to the right
-    with the length of the auto loop
-  - If an auto loop is active and the deck is in Auto Loop mode, the
-    corresponding performance pad will be lit up
+  - Pressing a pad start a loop of the length indicated in the pad, the
+    pad will lit up
+  - Pressing the lit pad stop the loop
+  - Pressing a different pad will stop the first pad and will start a
+    new loop
+  - The Loop Move knob shifts the loop position in the virtual deck
 
-#### Loop Roll
+### Loop Roll Mode
 
-  - To enable Loop Roll mode, press the Loop Roll button
+  - To enable loop roll mode, press the Loop Roll button
   - When the performance pads are in Loop Roll mode, the Loop Roll
     button will be lit up
-  - When a performance pad is pressed and held while in Loop Roll mode,
-    the virtual deck will loop for the labeled length and the
-    performance pad will be lit up
+  - Pressing a pad start a loop of the length indicated in the pad, the
+    pad will lit up
+  - Pressing the lit pad stop the loop
+  - Pressing a different pad will stop the first pad and will start a
+    new loop
+  - When a loop is started the deck will change to Slip mode, when the
+    loop is stopped the track position will move to the position it will
+    have been if the loop never happened
+  - The Loop Move knob shifts the loop position in the virtual deck
 
-#### Manual Loop
+#### Manual Loop Mode
 
   - To enable Manual Loop mode, press the Loop Roll button while holding
-    the deck's Shift button
+    the Shift button
   - When the performance pads are in Manual Loop mode, the Loop Roll
     button will flash
   - When a manual loop is set, all 8 performance pads are lit
-  - Performance pad 1 sets the loops IN point
-  - Performance pad 2 sets the loops OUT point
+  - Performance pad 1 sets the loop IN point
+  - Performance pad 2 sets the loop OUT point
   - Performance pads 3 and 4 enable and disable the loop once the IN and
     OUT points are set
   - Performance pad 5 doubles the length of the loop
   - Performance pad 6 halves the length of the loop
-  - Performance pad 7 moves the loop 1/4 beat backward
-  - Performance pad 8 moves the loop 1/4 beat forward
+  - Performance pad 7 moves the loop 1 beat backward
+  - Performance pad 8 moves the loop 1 beat forward
+
+### Beat Jump Mode
+
+  - To enable Beat Jump mode, press the Sample button while holding the
+    Shift button
+  - When the performance pads are in Beat Jump mode, the Sample button
+    will flash
+  - Pressing a pad jumps forward the number of beats indicated in the
+    pad
+  - Pressing a pad while holding the Shift button jumps backward the
+    number of beats indicated in the pad
 
 ### FX and Effects
 
@@ -188,12 +198,17 @@ included below:
     parameters, respectively, for the first effect in the Effect Unit's
     effect chain
 
+### Slip Mode
+
+  - The Slip button enables/disables slip mode on the virtual deck, the
+    button will be lit up if Slip mode is on
+  - When releasing the jog wheel top after scratching will, the track
+    play head will jump the the same position it was when the jog wheel
+    top was pressed
+
 ### Misc Controls
 
-  - The Slip button enables/disables slip mode on the virtual deck
   - The Keylock button enables/disables keylock on the virtual deck
-  - The Range button, accessed by holding Shift and pressing the Keylock
-    button, enables/disables Quantize on the virtual deck
 
 ### Unused controls
 
@@ -201,3 +216,4 @@ Below is a list of controls on the board that currently do not have any
 functionality
 
   - The Bank Up/Bank Down button
+  - The Scratch button

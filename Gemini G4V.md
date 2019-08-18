@@ -9,7 +9,7 @@ way mixer and has a built-in 4 channel USB soundcard.
     Thread](https://www.mixxx.org/forums/viewtopic.php?f=6&t=12919)
   - [Manufacturer's product page](http://geminisound.com/product/g4v)
   - [Manufacturer's
-    manual](http://geminisound.com/wp-content/uploads/G2V-G4V-User-Manual.pdf)
+    manual](https://www.manualslib.com/manual/826563/Gemini-G4v.html)
 
 ## Mixxx Sound Hardware Preferences
 

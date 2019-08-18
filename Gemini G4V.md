@@ -54,9 +54,9 @@ included below:
   - Just below the Tempo slider on either side of the board is a Deck
     Sel button (1|3 on the left and 2|4 on the right). These buttons
     toggle the controls on the board between the virtual decks.
-  - When the button is lit up, the first deck (1 on the left or 2 on the
-    right) is the active virtual deck
-  - When the button is flashing, the second deck (3 on the left or 4 on
+  - When the button is not lit, the first deck (1 on the left or 2 on
+    the right) is the active virtual deck
+  - When the button is lit up, the second deck (3 on the left or 4 on
     the right) is the active virtual deck
 
 ### Transport Controls

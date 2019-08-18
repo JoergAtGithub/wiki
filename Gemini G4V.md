@@ -63,6 +63,7 @@ included below:
 
   - The LOAD buttons at the top of the board load the selected track
     from the library into the respective virtual deck
+  - Shify+LOAD unloads the respective deck
   - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
     active virtual deck
   - The deck's CUP buttons will seek the track to the start and stops it

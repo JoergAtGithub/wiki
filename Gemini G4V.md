@@ -59,15 +59,8 @@ included below:
   - When the button is lit up, the second deck (3 on the left or 4 on
     the right) is the active virtual deck
 
-### Transport Controls
+### Library controls
 
-  - The LOAD buttons at the top of the board load the selected track
-    from the library into the respective virtual deck
-  - Pressing Shift+LOAD unloads the respective deck
-  - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
-    active virtual deck
-  - The deck's CUP buttons will start playback from the beginning of the
-    track
   - The Back button toggles the Browse knob's control between the
     folders list and the track list in the library display
   - The Browse knob scrolls up and down through the active list in the
@@ -78,6 +71,16 @@ included below:
   - Pressing the Browse knob while the track list is active will load
     the selected track in the preview deck and start playing in the
     headphone, if the preview deck is already loaded it will unload it 
+
+### Transport Controls
+
+  - The LOAD buttons at the top of the board load the selected track
+    from the library into the respective virtual deck
+  - Pressing Shift+LOAD unloads the respective deck
+  - The deck's Play/Pause, CUE, and SYNC buttons work as normal on the
+    active virtual deck
+  - The deck's CUP buttons will start playback from the beginning of the
+    track
 
 ### Wheels and Scratch/Search button
 

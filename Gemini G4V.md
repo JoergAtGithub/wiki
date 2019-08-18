@@ -92,6 +92,8 @@ included below:
 ``` 
    * Turning the jog wheel will move the track play head, for scratching or fine placement
    * Turning the jog wheel while pressing shift will change the track play head fast, for fast search
+   * When the jog wheel top is released, the jog wheel will stay in vinyl mode until it stops moving, for spin backs or similar actions
+   * If the deck was in slip mode before entering in vinyl mode, the play head will move to the position it wil have been if no manipulation happened, useful for scratching without loosing the beat
 * Turning the jog wheel without pressing the top will temporarily change the tempo, for nudging
 ```
 

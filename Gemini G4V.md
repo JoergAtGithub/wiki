@@ -115,7 +115,7 @@ included below:
  * You can can change the mode by using the mode buttons as indicated.
 ```
 
-### Hot Cue Mode
+#### Hot Cue Mode
 
   - To enable Hot Cue mode, press the Hot Cue button
   - When the performance pads are in Hot Cue mode, the Hot Cue button
@@ -131,7 +131,7 @@ included below:
     pressed while the deck's Shift button is being held, the hot cue
     will be deleted
 
-### Sample Mode
+#### Sample Mode
 
   - To enable Sample mode, press the Sample button
   - When the performance pads are in Sample mode, the Sample button will
@@ -142,7 +142,7 @@ included below:
     controls samples 9 to 16, an so on
   - The Sample Volume knobs control the volume for all the samples
 
-### Auto Loop Mode
+#### Auto Loop Mode
 
   - To enable looping mode, press the Auto Loop button
   - When the performance pads are in Auto Loop mode, the Auto Loop
@@ -154,7 +154,7 @@ included below:
     new loop
   - The Loop Move knob shifts the loop position in the virtual deck
 
-### Loop Roll Mode
+#### Loop Roll Mode
 
   - To enable loop roll mode, press the Loop Roll button
   - When the performance pads are in Loop Roll mode, the Loop Roll
@@ -185,7 +185,7 @@ included below:
   - Performance pad 7 moves the loop 1 beat backward
   - Performance pad 8 moves the loop 1 beat forward
 
-### Beat Jump Mode
+#### Beat Jump Mode
 
   - To enable Beat Jump mode, press the Sample button while holding the
     Shift button

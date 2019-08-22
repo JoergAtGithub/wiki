@@ -86,6 +86,8 @@ toggles the bottom button grid between a loop layer (amber) and a hotcue
 layer (red). Holding shift then holding the bottom left layer button at
 the same time activates supershift mode.
 
+### Mixxx 2.1 - 2.2
+
   - Top encoder:
   - jog
   - shift: key
@@ -109,7 +111,7 @@ the same time activates supershift mode.
   - supershift: quantize
   - Fader: volume
 
-### Bottom buttons (Mixxx 2.1 - 2.2)
+<!-- end list -->
 
   - Bottom buttons (loop layer):
   - Bottom button 1 (red):
@@ -137,7 +139,32 @@ the same time activates supershift mode.
 * shift: delete hotcues 1-4
 ```
 
-### Bottom buttons (Mixxx 2.3)
+### Mixxx 2.3
+
+  - Top encoder:
+  - gain
+  - shift: jog
+  - supershift: adjust key
+  - Top encoder press:
+  - reset gain
+  - shift: master sync
+  - supershift: reset key
+  - Knobs: high/mid/low equalizer knobs
+  - Top button 1:
+  - headphones/PFL
+  - shift: reset tempo
+  - supershift: set beatgrid to current position
+  - Top button 2:
+  - cue
+  - shift: go to beginning of track and stop
+  - supershift: keylock
+  - Top button 3:
+  - play
+  - shift: reverse
+  - supershift: quantize
+  - Fader: volume
+
+<!-- end list -->
 
   - Bottom buttons (intro/outro cue layer, amber):
   - Intro/outro cues from top to bottom are ordered:

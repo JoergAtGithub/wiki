@@ -176,14 +176,14 @@ the same time activates supershift mode.
     - Intro end
     - Outro start
     - Outro end
-* Pressing a button jumps to that cue or sets it if it is not set.
-* Pressing a button with shift seeks forward/back. The top two (intro) buttons seek quickly; the bottom two (outro) seek slowly.
-* Pressing a button with supershift deletes that cue.
+* press: jump to that cue or sets it if it is not set
+* shift: seek forward/back. The top two (intro) buttons seek quickly; the bottom two (outro) seek slowly
+* supershift: delete cue
 * Bottom buttons (hotcue layer, red):
 * Hotcues are ordered 1-4 from top to bottom
-* Pressing a button jumps to that hotcue or sets it if it is not set.
-* Pressing a button with shift seeks forward/back. The top two buttons seek quickly; the bottom seek slowly.
-* Pressing a button with supershift deletes that hotcue.
+* press: jump to that hotcue or sets it if it is not set
+* shift: seek forward/back. The top two buttons seek quickly; the bottom two seek slowly
+* supershift: delete hotcue
 * Bottom buttons (loop layer, green):
 * Bottom button 1 (red):
     * reloop/disable loop

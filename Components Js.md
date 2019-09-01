@@ -710,7 +710,8 @@ functionality. The basic ComponentContainer methods are:
     Arguments are the same as `forEachComponent`.
   - **shutdown**: Iterate over all Components and call their shutdown
     methods. The Button is the only component with a predefined shutdown
-    method. All other components have to be implemented manually.
+    method. All other components have to be implemented manually if they
+    require anything to be done when Mixxx shuts down.
 
 Typically, `reconnectComponents` is used to switch between layers. The
 callback passed to reconnectComponents can manipulate each Component's

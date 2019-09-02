@@ -16,7 +16,8 @@ configured, Mixxx will broadcast and record the signal from it instead
 of the output of Mixxx. This is for recording and broadcasting from an
 external hardware mixer or an audio interface with a loopback input. If
 you are not using either of those, do not configure the Record/Broadcast
-input. Refer to the [Using
+input. You probably want to use a Microphone input instead. Refer to the
+[Using
 Microphones](https://mixxx.org/manual/latest/en/chapters/microphones.html)
 section of the manual for more information.
 

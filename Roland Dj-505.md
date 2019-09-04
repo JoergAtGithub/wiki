@@ -207,7 +207,11 @@ Loop, Saved Loop, Flip) are currently not mapped.
     \#682221](https://bugs.launchpad.net/mixxx/+bug/682221)).
   - Some performance pad modes are missing (Slicer \[ [Launchpad Bug
     \#1828886](https://bugs.launchpad.net/mixxx/+bug/1828886) \], Slicer
-    Loop, Saved Loop, Flip)
+    Loop, Saved Loop \[ [Launchpad Bug
+    \#1367159](https://bugs.launchpad.net/mixxx/+bug/1367159), [PR
+    \#2194](https://github.com/mixxxdj/mixxx/pull/2194) \], Flip \[
+    [Launchpad Bug
+    \#1768113](https://bugs.launchpad.net/mixxx/+bug/1768113) \])
   - Some buttons are not mapped yet (e.g. BACK)
   - LEDs on BACK/ADD PREPARE do not work (this seems to be a
     hardware/firmware bug and does not work in Serato either)

@@ -2,24 +2,35 @@
 
 [[/media/pioneer_ddj-400.png|]]
 
-The Pioneer DDJ-400 is an 2 Channel DJ-Controller with integrates
-Soundcard designed for Rekordbox DJ.
+  - [Manufacturer's product
+    page](https://www.pioneerdj.com/en-us/product/controller/ddj-400/black/overview/)
+  - [Manufacturer's User
+    Manual](http://docs.pioneerdj.com/Manuals/DDJ_400_DRI1551A_manual/)
+  - [Midi
+    Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-400/ddj-400_midi_message_list_e1.pdf)
+  - [Hardware
+    Diagram](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-400/ddj-400_hardwarediagram_rekordboxdj_e1.pdf?la=en-us)
+  - [Mapping Forum
+    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12113)
+  - [Mapping Git
+    Repository](https://github.com/WarkerAnhaltRanger/mixxx/tree/master/res/controllers)
+
+The Pioneer DDJ-400 is a 2 deck DJ controller with integrated audio
+interface designed for Rekordbox DJ.
+
+## Audio Setup
+
+| Output   |             |
+| -------- | ----------- |
+| Channels | Assigned to |
+| 1-2      | Master      |
+| 3-4      | Headphones  |
 
 ## Controller Mapping
 
 A mapping has been [added to
 Mixxx](https://github.com/mixxxdj/mixxx/pull/2143) prior to the 2.3.0
 release.
-
-### Audio Channels
-
-The mapping relies on the following channel assignments:
-
-| Output   |             |
-| -------- | ----------- |
-| Channels | Assigned to |
-| 1-2      | Master      |
-| 2-3      | Headphones  |
 
 ### Controls
 
@@ -148,18 +159,3 @@ enabled
 ### Known Issues
 
   - Hot Cue Loops Pads will be discarded on loading a track
-
-## Links
-
-  - [Manufacturer's product
-    page](https://www.pioneerdj.com/en-us/product/controller/ddj-400/black/overview/)
-  - [User
-    Manual](http://docs.pioneerdj.com/Manuals/DDJ_400_DRI1551A_manual/)
-  - [Midi
-    Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-400/ddj-400_midi_message_list_e1.pdf)
-  - [Hardware
-    Diagram](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-400/ddj-400_hardwarediagram_rekordboxdj_e1.pdf?la=en-us)
-  - [Mapping Forum
-    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12113)
-  - [Mapping Git
-    Repository](https://github.com/WarkerAnhaltRanger/mixxx/tree/master/res/controllers)

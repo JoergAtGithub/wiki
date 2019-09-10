@@ -95,7 +95,7 @@ If you already know you are a kick-ass DJ, please show us your awesome
 skills and teach us a thing or two about how to use Mixxx to DJ better
 by doing a video and putting it up on
 [Youtube](http://www.youtube.com/results?search_query=mixxx) or
-[Vimeo](http://www.vimeo.com/videos/search:mixxx).
+[Vimeo](https://vimeo.com/search?q=mixxx).
 
 Mixxx is looking for a resident DJ to teach the rest of us. ;)
 

@@ -4,6 +4,8 @@
 
   - [Manufacturer's product
     page](https://www.native-instruments.com/de/products/traktor/traktor-for-ios/traktor-kontrol-z1/)
+  - [GitHub pull request for
+    mapping](https://github.com/mixxxdj/mixxx/pull/1989)
 
 The Traktor Kontrol Z1 is a small, portable 2-deck controller with an
 integrated soundcard.

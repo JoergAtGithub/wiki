@@ -5,25 +5,6 @@ Make DJing with Mixxx fun on Launchpad\!**
 
 [Go to sources on GitHub](https://github.com/szdavid92/mixxx-launchpad)
 
-There's already a Launchpad mapping shipping with Mixxx however it has
-several quirks and limitations:
-
-  - it has a single hardcoded layout, supporting only the first 2 decks.
-    You can't e.g. change to decks 3 and 4, or sampler decks. This
-    painfully limits usability especially if you have multiple
-    Launchpads (as I do\!) and want to control more decks.
-  - It would be better if the deck layout was customizable. This is a
-    problem that crops up as you add support for sampler decks. E.g.
-    when you play samplers, a small 4x4 interface with only hotcues is
-    ideal.
-  - Some of the controls are broken on recent Mixxx.
-  - It has a mixer interface, but why? Launchpad is really not fit for
-    mixing.
-  - 8 of the buttons have no mapping, what a waste of resources\!
-
-So I decided to make one that is more stable, flexible and
-customizable\!
-
 ## Features ✨
 
   - map from 1 up to 4 channels (decks or samplers) on a single

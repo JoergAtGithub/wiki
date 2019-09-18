@@ -4,6 +4,7 @@
 
 ``` 
  *[[https://www.pioneerdj.com/en-us/product/controller/ddj-sb3/black/overview/|Manufacturer's product page]]
+ *[[https://github.com/Dancephy/Mixxx-Pioneer-DDJ-SB3|Controller Mapping (not complete)]]
 ```
 
 The Pioneer DDJ-SB3 is an all-in-one USB MIDI controller with a built in

@@ -776,7 +776,8 @@ Destructors in derived classes should also be marked with *override*
 instead of *virtual*. This ensures at compile time that the base class
 has declared a *virtual* destructor. If the base class has not declared
 a *virtual* destructor the destructor of a derived class might not be
-invoked.
+invoked. This applies also for default destructors \~destructor override
+= default;" which may look noisy.
 
 ### alignment
 

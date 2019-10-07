@@ -30,10 +30,10 @@ components. However, the audio output may already start crackling if the
 temperatur drops below 10°C.  
 
 **Inputs**  
-Both have a microphone and a switchable line/phono input that can be
-routed into Mixxx. The Microphone jack is the front side of the
-controller, the RCA line jacks are at the back next to the line/phono
-switch.  
+Both TerminalMix 2 & 4 have a microphone and a switchable line/phono
+input that can be routed into Mixxx. The Microphone jack is at the front
+side of the controller, the RCA line jacks are at the back next to the
+line/phono switch.  
 For both inputs there is a gain knob and a switch on the controller's
 front side that toggles between routing the signal to the computer
 (`SW`) or mixing it directly with the master output (`MST`).  

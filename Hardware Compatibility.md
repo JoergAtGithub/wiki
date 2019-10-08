@@ -447,6 +447,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2012</td>
 </tr>
+<tr class="even">
+<td><a href="Native Instruments Traktor Kontrol S2 MK3">Native Instruments Traktor Kontrol S2 MK3</a></td>
+<td>$300</td>
+<td>2 deck controller all-in-one</td>
+<td>yes</td>
+<td>no</td>
+<td>HID</td>
+<td>2018</td>
+</tr>
 </tbody>
 </table>
 

@@ -10,11 +10,18 @@
     Review](https://djworx.com/the-small-and-perfectly-formed-traktor-kontrol-s2-mk3/)
 
 The Kontrol S2 MK3 is a two-channel controller with an integrated sound
-card. The MK2 uses the standard HID protocol to send and receive signals
-from a computer, so it can work with Mixxx. The Kontrol S2 MK3 can run
-from USB bus power. Using the separate power supply increases the
-brightness of the LEDs, which is helpful for using it in daylight, and
-increases the volume of the headphone output.
+card. It has two integrated stereo outputs (line and 1/8" / 3.5 mm TRS),
+headphone outputs (1/8" / 3.5 mm TRS) and microphone inputs (1/4" / 6.3
+mm TRS). The MK2 uses the standard HID protocol to send and receive
+signals from a computer, so it can work with Mixxx. The Kontrol S2 MK3
+can run from USB bus power. Using the separate power supply increases
+the brightness of the LEDs, which is helpful for using it in daylight,
+and increases the volume of the headphone output.
+
+### Mixxx Sound Hardware Preferences
+
+  - Master output: channels 1-2
+  - Headphone output: channels 3-4
 
 ### Mixxx mapping
 

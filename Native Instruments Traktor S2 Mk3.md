@@ -1,0 +1,142 @@
+# Native Instruments Traktor Kontrol S2 MK3
+
+  - [Manufacturer's product
+    page](https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-s2/)
+  - [DJTechTools
+    Review](https://djtechtools.com/2018/09/06/traktor-kontrol-s2-mk3-simplified-and-mobile-friendly/)
+  - [Digital DJ Tips
+    Review](https://www.digitaldjtips.com/reviews/traktor-kontrol-s2-mk3/)
+  - [DJWORX
+    Review](https://djworx.com/the-small-and-perfectly-formed-traktor-kontrol-s2-mk3/)
+
+The Kontrol S2 MK3 is a two-channel controller with an integrated sound
+card. The MK2 uses the standard HID protocol to send and receive signals
+from a computer, so it can work with Mixxx. The Kontrol S2 MK3 can run
+from USB bus power. Using the separate power supply increases the
+brightness of the LEDs, which is helpful for using it in daylight, and
+increases the volume of the headphone output.
+
+### Technical details
+
+**USB HID descriptors**
+
+    $> usbhid-dump -d17cc:1710 | grep -v : | xxd -r -p | hidrd-convert -o spec
+    
+     Usage Page (FF01h),          ; FF01h, vendor-defined
+     Usage (00h),
+     Collection (Application),
+         Usage (01h),
+         Collection (Logical),
+            Report ID (1),
+            Usage (02h),
+            Logical Minimum (0),
+            Logical Maximum (1),
+            Report Size (1),
+            Report Count (64),
+            Input (Variable),
+            Usage (03h),
+            Logical Minimum (0),
+            Logical Maximum (15),
+            Report Size (4),
+            Report Count (6),
+            Input (Variable),
+            Usage (31h),
+            Logical Minimum (0),
+            Logical Maximum (65535),
+            Report Size (16),
+            Report Count (4),
+            Input (Variable),
+        End Collection,
+        Usage (01h),
+        Collection (Logical),
+            Report ID (2),
+            Usage (05h),
+            Logical Minimum (0),
+            Logical Maximum (4095),
+            Report Size (16),
+            Report Count (5),
+            Input (Variable),
+            Usage (04h),
+            Logical Minimum (0),
+            Logical Maximum (4095),
+            Report Size (16),
+            Report Count (14),
+            Input (Variable),
+        End Collection,
+        Usage (80h),
+        Collection (Logical),
+            Report ID (128),
+            Usage (81h),
+            Logical Minimum (0),
+            Logical Maximum (127),
+            Report Size (8),
+            Report Count (61),
+            Output (Variable),
+        End Collection,
+    End Collection
+
+There are two types of incoming packets. Packets with reportID 0x1
+represents the state of the buttons and the jog wheels, while reportID
+0x2 is about the scalers. Here are the details for reportID 0x1:
+
+``` 
+    Offset 0x01, Bitmasks:
+    - 0x01 Rev Left - 0x02 FLX Left - 0x04 Prepation Left - 0x08 Browse View Left 
+    - 0x10 Grid Left - 0x20 Shift Left - 0x40 Hotcues Left - 0x80 Samples Left
+    Offset 0x02, Bitmasks:
+    - 0x01 Sync Left - 0x02 Keylock Left - 0x04 Cue Left - 0x08 Play Left
+    - 0x10 Hotcue1 Left - 0x20 Hotcue2 Left - 0x40 Hotcue3 Left - 0x80 Hotcue4 Left
+    Offset 0x03, Bitmasks:
+    - 0x01 Hotcue5 Left - 0x02 Hotcue6 Left - 0x04 Hotcue7 Left - 0x08 Hotcue8 Left
+    - 0x10 FX Select1 - 0x20 FX Select2 - 0x40 FX Select3 - 0x80 FX Select4
+    Offset 0x04, Bitmasks:
+    - 0x01 Phones Left - 0x02 Phones Right - 0x04 Rev Right - 0x08 FLX Right
+    - 0x10 Prepation Right - 0x20 Browse View Right - 0x40 Grid Right - 0x80 Shift Right
+    Offset 0x05, Bitmasks:
+    - 0x01 Hotcues Right - 0x02 Samples Right - 0x04 Sync Right - 0x08 Keylock Right
+    - 0x10 Cue Right - 0x20 Play Right - 0x40 Hotcue1 Right - 0x80 Hotcue2 Right
+    Offset 0x06, Bitmasks:
+    - 0x01 Hotcue3 Right - 0x02 Hotcue4 Right - 0x04 Hotcue5 Right - 0x08 Hotcue6 Right
+    - 0x10 Hotcue7 Right - 0x20 Hotcue8 Right - 0x40 GNT - 0x80 MIC
+    Offset 0x07, Bitmasks:
+    - 0x01 Browse Left Click - 0x02 Move Left Click - 0x04 Loop Left Click - 0x08 Browse Right Click
+    - 0x10 Move Right Click - 0x20 Loop Right Click - 0x40 ??? - 0x80 ???
+    Offset 0x08, Bitmasks:
+    - 0x01 Browse Left Touch - 0x02 Move Left Touch - 0x04 Loop Left Touch - 0x08 Browse Right Touch
+    - 0x10 Move Right Touch - 0x20 Loop Right Touch - 0x40 Jog Wheel Left Touch - 0x80 Jog Wheel Right Touch
+    Offset 0x09, Bitmasks:
+    - Lowest nibble: Browse Left
+    - Highest nibble: Move Left
+    Offset 0x0A, Bitmasks:
+    - Lowest nibble: Loop Left
+    - Highest nibble: Browse Right
+    Offset 0x0B, Bitmasks:
+    - Lowest nibble: Move Right
+    - Highest nibble: Loop Right
+    Offset 0x0C - 0x0F: Jog Wheel Left
+    Offset 0x10 - 0x13: Jog Wheel Right
+```
+
+Outgoing packets with reportID 0x80 control only the LEDs on the
+controller. No light is 0x00 and full light is 0x7E (except for the
+multi-color hotcue buttons).
+
+``` javascript
+var data_string = "00 00 00 \n" + // Rev Left, FLX Left, Preparation Left
+               "00 00 00 00 \n" + // Browse View Left, Grid Left, Shift Left, Hotcues Left
+               "00 00 00 00 \n" + // Samples Left, Sync Left, Keylock Left, Cue Left
+               "00 00 00 00 \n" + // Play Left, Hotcue1 Left, Hotcue2 Left, Hotcue3 Left
+               "00 00 00 00 \n" + // Hotcue4 Left, Hotcue5 Left, Hotcue6 Left, Hotcue7 Left
+               "00 00 00 00 \n" + // Hotcue8 Left, Sample Mixer LED, FX Select1, FX Select2
+               "00 00 00 00 \n" + // FX Select3, FX Select4, Phones Left, Phones Right
+               "00 00 00 00 \n" + // Level Channel A -18, -12, -6, 0
+               "00 00 00 00 \n" + // Level Channel A 6, Level Channel B -18, -12
+               "00 00 00 00 \n" + // Level Channel B -6, 0, 6, Clip
+               "00 00 00 00 \n" + // Rev Right, FLX Right, Preparation Right, Browse View Right
+               "00 00 00 00 \n" + // Grid Right, Shift Right, Hotcues Right, Samples Right
+               "00 00 00 00 \n" + // Sync Right, Keylock Right, Cue Right, Play Right
+               "00 00 00 00 \n" + // Hotcue1 Right, Hotcue2 Right, Hotcue3 Right, Hotcue4 Right
+               "00 00 00 00 \n" + // Hotcue5 Right, Hotcue6 Right, Hotcue7 Right, Hotcue8 Right
+               "00 00"; // GNT, MIC
+this.rawOutput(data_string);
+```

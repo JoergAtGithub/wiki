@@ -16,6 +16,12 @@ from USB bus power. Using the separate power supply increases the
 brightness of the LEDs, which is helpful for using it in daylight, and
 increases the volume of the headphone output.
 
+### Mixxx mapping
+
+The mapping script is so far under development. Have a look at the
+corresponding thread in the forums:
+<https://www.mixxx.org/forums/viewtopic.php?uid=14478&f=7&t=12999&start=0>
+
 ### Technical details
 
 **USB HID descriptors**

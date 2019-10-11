@@ -2,10 +2,12 @@
 
 [[/media/pioneer_ddj-400.png|]]
 
-  - [Manufacturer's product
-    page](https://www.pioneerdj.com/en-us/product/controller/ddj-400/black/overview/)
+  - [Manufacturer's Product
+    Page](https://www.pioneerdj.com/en-us/product/controller/ddj-400/black/overview/)
   - [Manufacturer's User
     Manual](http://docs.pioneerdj.com/Manuals/DDJ_400_DRI1551A_manual/)
+  - [Manufacturer's Firmware
+    Update](https://www.pioneerdj.com/en/support/software/controller/ddj-400/)
   - [Midi
     Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-400/ddj-400_midi_message_list_e1.pdf)
   - [Hardware

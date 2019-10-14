@@ -29,6 +29,33 @@ The mapping script is so far under development. Have a look at the
 corresponding thread in the forums:
 <https://www.mixxx.org/forums/viewtopic.php?uid=14478&f=7&t=12999&start=0>
 
+[[/media/hardware/nativeinstruments/traktorkontrols2mk3-schema.png|]]
+
+| Element                 | Primary function                                                                                  | Secondary function                                                |
+| ----------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| (1) REV Button          | Reverse play while held                                                                           | Reverse play + slip mode while held                               |
+| (2) FLX Button          | Enable and disable slip mode                                                                      |                                                                   |
+| (3) Browse knob (turn)  | Browse track list                                                                                 | Horizontal browsing                                               |
+| (3) Browse knob (press) | Load selected track into deck                                                                     |                                                                   |
+| (4) Preparation button  | *Not mapped yet*                                                                                  |                                                                   |
+| (5) Browse view button  | Maximizes the library                                                                             |                                                                   |
+| (6) Sync button         | Syncs the BPM and phase (depending on quantize). Long press to activate master sync on that deck. |                                                                   |
+| (7) Keylock button      | Enable key-lock for the deck                                                                      |                                                                   |
+| (8) Loop knob (turn)    | Halve or double loop size                                                                         |                                                                   |
+| (8) Loop knob (press)   | Toggles the current loop on or off                                                                | Activate current loop and stop                                    |
+| (9) Samples button      | Active sampler mode (for the number buttons)                                                      |                                                                   |
+| (10) Hotcues button     | Activate hotcue mode (for the number buttons)                                                     |                                                                   |
+| (11) Move knob (turn)   | Beatjump backword and forward                                                                     | Halve or double beatjump size                                     |
+| (12) Jog wheels         | Enable scratching                                                                                 |                                                                   |
+| (13) Grid button        | *Not mapped yet*                                                                                  |                                                                   |
+| (14) Shift button       | Activates secondary functions when pressed                                                        |                                                                   |
+| (15) CUE button         | CUE default                                                                                       | If the CUE point is set, jump to it and stops                     |
+| (16) Play button        | Toggles playing                                                                                   | Sets a CUE point at the current location                          |
+| (17) Number buttons     | Function depends on current mode                                                                  |                                                                   |
+| Hotcue mode             | If hotcue is set, seeks the player to hotcue position. Otherwise set hotcue at current position   | Clear the hotcue                                                  |
+| Samples mode            | If track is loaded into corresponding slot, go to CUE point and play                              | If track is playing, CUE default behaviour. Otherwise eject track |
+| (18) Tempo fader        | Speed control                                                                                     |                                                                   |
+
 ### Technical details
 
 **USB HID descriptors**

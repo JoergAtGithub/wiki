@@ -55,6 +55,13 @@ corresponding thread in the forums:
 | Hotcue mode             | If hotcue is set, seeks the player to hotcue position. Otherwise set hotcue at current position   | Clear the hotcue                                                  |
 | Samples mode            | If track is loaded into corresponding slot, go to CUE point and play                              | If track is playing, CUE default behaviour. Otherwise eject track |
 | (18) Tempo fader        | Speed control                                                                                     |                                                                   |
+| (19) Quantize button    | Toggles quantization for both decks                                                               |                                                                   |
+| (20) Gain knob          | Adjusts the gain for the master output                                                            |                                                                   |
+| (21) Microphone button  | Toggles microphone talkover, long press for permanent activation                                  |                                                                   |
+| (22) Pre-Gain knob      | Adjusts the pre-fader gain of the deck                                                            |                                                                   |
+| (23) HI knob            | High frequency filter                                                                             |                                                                   |
+| (24) MID knob           | Middle frequency filter                                                                           |                                                                   |
+| (25) LOW knob           | Low frequency filter                                                                              |                                                                   |
 
 ### Technical details
 

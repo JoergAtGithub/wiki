@@ -36,7 +36,7 @@ corresponding thread in the forums:
 | (1) REV Button           | Reverse play while held                                                                           | Reverse play + slip mode while held                               |
 | (2) FLX Button           | Enable and disable slip mode                                                                      |                                                                   |
 | (3) Browse knob (turn)   | Browse track list                                                                                 | Horizontal browsing                                               |
-| (3) Browse knob (press)  | Load selected track into deck                                                                     |                                                                   |
+| (3) Browse knob (press)  | Load selected track into deck                                                                     | Eject current track                                               |
 | (4) Preparation button   | *Not mapped yet*                                                                                  |                                                                   |
 | (5) Browse view button   | Maximizes the library                                                                             |                                                                   |
 | (6) Sync button          | Syncs the BPM and phase (depending on quantize). Long press to activate master sync on that deck. |                                                                   |

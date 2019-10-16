@@ -31,7 +31,7 @@ corresponding thread in the forums:
 
 [[/media/hardware/nativeinstruments/traktorkontrols2mk3-schema.png|]]
 
-| Element                  | Primary function                                                                                  | Secondary function                                                |
+| Element                  | Primary function                                                                                  | Secondary function (+ SHIFT)                                      |
 | ------------------------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | (1) REV Button           | Reverse play while held                                                                           | Reverse play + slip mode while held                               |
 | (2) FLX Button           | Enable and disable slip mode                                                                      |                                                                   |
@@ -47,7 +47,7 @@ corresponding thread in the forums:
 | (10) Hotcues button      | Activate hotcue mode (for the number buttons)                                                     |                                                                   |
 | (11) Move knob (turn)    | Beatjump backword and forward                                                                     | Halve or double beatjump size                                     |
 | (12) Jog wheels          | Enable scratching                                                                                 |                                                                   |
-| (13) Grid button         | *Not mapped yet*                                                                                  |                                                                   |
+| (13) Grid button         | Adjust beatgrid so closest beat is aligned with the current play position                         | Adjust beatgrid to match another playing deck                     |
 | (14) Shift button        | Activates secondary functions when pressed                                                        |                                                                   |
 | (15) CUE button          | CUE default                                                                                       | If the CUE point is set, jump to it and stops                     |
 | (16) Play button         | Toggles playing                                                                                   | Sets a CUE point at the current location                          |

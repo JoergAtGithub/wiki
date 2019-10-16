@@ -62,7 +62,7 @@ corresponding thread in the forums:
 | (23) HI knob             | High frequency filter                                                                             |                                                                   |
 | (24) MID knob            | Middle frequency filter                                                                           |                                                                   |
 | (25) LOW knob            | Low frequency filter                                                                              |                                                                   |
-| (26) Effect Superknob    | Effect chain superknob for the corresponding deck                                                 |                                                                   |
+| (26) Effect Superknob    | Quick effect superknob for the corresponding deck                                                 |                                                                   |
 | (27) Sample knob         | *Not mapped yet*                                                                                  |                                                                   |
 | (28) Headphone mix knob  | Adjusts the cue/main mix in the headphone output                                                  |                                                                   |
 | (29) Headphone gain knob | Adjusts the headphone output gain                                                                 |                                                                   |

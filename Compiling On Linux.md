@@ -260,8 +260,8 @@ opengles=1 machine=armhf` with scons.
 
 ### Developer build options
 
-To catch bugs early during development are encouraged to build Mixxx
-with the following options.
+To catch bugs early during development build Mixxx with the following
+options.
 
 #### SCons
 

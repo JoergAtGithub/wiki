@@ -258,6 +258,27 @@ to Mixxx and use a debugger, use `optimize=off`.
 To compile on a Raspberry Pi, use the arguments: `optimize=native
 opengles=1 machine=armhf` with scons.
 
+### Developer build options
+
+To catch bugs early during development are encouraged to build Mixxx
+with the following options.
+
+#### SCons
+
+    build=debug debug_assertions_fatal=1
+
+#### CMake (...will be available soon)
+
+    -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON
+
+#### Testing debug builds
+
+Debug builds should started with the option `--debugAssertBreak` to
+trigger a breakpoint in the debugger if debug assertions are violated or
+to abort Mixxx immediately. This ensures that messages about violated
+debug assertions are not missed between various other debug log
+messages.
+
 ### Optional: Build with m4a/AAC file support
 
 If you want to play m4a files, add `faad=1` to your scons commands

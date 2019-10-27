@@ -263,11 +263,11 @@ opengles=1 machine=armhf` with scons.
 To catch bugs early during development build Mixxx with the following
 options.
 
-#### SCons
+#### Debug build with SCons
 
     build=debug debug_assertions_fatal=1
 
-#### CMake (...will be available soon)
+#### Debug build with CMake (...coming soon)
 
     -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON
 

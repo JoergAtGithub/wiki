@@ -1,5 +1,7 @@
 # Native Instruments Traktor Kontrol S2 MK3
 
+[[/media/hardware/nativeinstruments/traktorkontrols2mk3.png|]]
+
   - [Manufacturer's product
     page](https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-s2/)
   - [DJTechTools
@@ -25,8 +27,8 @@ and increases the volume of the headphone output.
 
 ### Mixxx mapping
 
-The mapping script is so far under development. Have a look at the
-corresponding thread in the forums:
+Have a look at the corresponding thread in the forums for questions and
+feedback:
 <https://www.mixxx.org/forums/viewtopic.php?uid=14478&f=7&t=12999&start=0>
 
 [[/media/hardware/nativeinstruments/traktorkontrols2mk3-schema.png|]]

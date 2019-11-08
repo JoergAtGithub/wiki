@@ -1,22 +1,28 @@
 # SysEx for DDJ-SX2
 
-#### DVS Mode
+#### Switch Controller Mode and DVS Mode
+
+The DDJ-SX2 can be either in Controller Mode or DVS Mode. In controller
+mode the sound card is named "DDJSX2" (linux) and has a single stereo
+output with 24Bit 44.1KHz. In dvs mode it is named "P2IN2OUT" and has
+two stereo outputs with 16Bit 44.1KHz.
+
+After turning the SX2 on it is always in Controller Mode.
+
+Set into DVS mode:
 
     [0xF0, 0x00, 0x20, 0x7F, 0x64, 0x01, 0xF7]
 
 answers with
 
-    [0xF0, 0x00, 0x20, 0x7F, 0x64, 0x00, 0xF7]
+    [0xF0, 0x00, 0x20, 0x7F, 0x64, 0x01, 0xF7] when changed
+    [0xF0, 0x00, 0x20, 0x7F, 0x64, 0x00, 0xF7] when unchanged
 
-and switches the DDJ-SX2 from Controller Mode into DVS Mode. Under Linux
-the sound card name changes from "DDJSX2" to "P2IN2OUT" and has two
-stereo outputs with 16Bit 44.1KHz instead of the single stereo output
-with 24Bit 44.1KHz.
-
-#### Unidentified Messages
+Set into Controller mode:
 
     [0xF0, 0x00, 0x20, 0x7F, 0x63, 0x01, 0xF7]
 
 answers with
 
-    [0xF0, 0x00, 0x20, 0x7F, 0x63, 0x00, 0xF7]
+    [0xF0, 0x00, 0x20, 0x7F, 0x63, 0x01, 0xF7] when changed
+    [0xF0, 0x00, 0x20, 0x7F, 0x63, 0x00, 0xF7] when unchanged

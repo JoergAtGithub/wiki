@@ -465,6 +465,22 @@ Then start Mixxx again and test to see if your problem still exists.
 (You can rename or copy the directory back to restore your settings when
 you're done testing.)
 
+## Mixxx on Wayland
+
+Some Linux distributions like
+[Fedora 31](https://fedoraproject.org/wiki/Changes/Qt_Wayland_By_Default_On_Gnome)
+switched to using [QtWayland](https://wiki.qt.io/QtWayland) as the
+default *platform plugin* for Qt applications in a *Wayland* desktop
+environment. This [does not work as
+expected](https://bugs.launchpad.net/mixxx/+bug/1850729) for Mixxx.
+There are two options to enforce using the X11 platform plugin `xcb`
+instead of `wayland`:
+
+  - Set the environment variable `QT_QPA_PLATFORM=xcb`
+  - Start Mixxx with the command-line argument `-platform xcb`
+
+The desktop launchers in the source repository already include this fix.
+
 ## Troubleshooting other issues (Finding the mixxx.log file)
 
 Refer to [Finding the mixxx.log file](Finding%20the%20mixxx.log%20file)

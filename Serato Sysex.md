@@ -49,3 +49,7 @@ midi.sendSysexMsg(ControllerStatusSysex, ControllerStatusSysex.length);
 
 This should make Mixxx match the state of your controller when Mixxx
 starts up and the mapping is loaded.
+
+#### Special SysEx'
+
+  - [DDJ-SX2](DDJ-SX2)

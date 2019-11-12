@@ -61,5 +61,6 @@ the private Zulip stream for the core team.
     timed out, either manually restart it or build the branch and run
     the tests locally before merging.
   - Default to open; only post in the private Zulip stream for
-    discussions that should be private. Most of the time, post to a
-    public Zulip stream so anyone can participate in the discussion.
+    discussions that have a reason to be private. Most of the time, post
+    to a public Zulip stream so anyone can participate in the
+    discussion.

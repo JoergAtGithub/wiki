@@ -20,7 +20,17 @@
     inline in the code on GitHub lose their connection to that spot in
     the code. If you want to correct minor mistakes with a rebase or
     `git commit --amend` within a few minutes of pushing commits, that
-    is okay as long as no one has started reviewing those commits yet. 
+    is okay as long as no one has started reviewing those commits yet.
+  - Please help review other people's pull requests. When others review
+    your pull requests, please return the favor. The continued progress
+    of Mixxx depends on all of us working together. Even if you are not
+    familiar with the area of the code being changed in a pull request,
+    you can be helpful by building the branch, verifying that it works
+    as described, and commenting with feedback about the user experience
+    design.
+  - If you demonstrate good coding skills, help review pull requests,
+    contribute major features, and show a commitment to Mixxx over time,
+    we may invite you to the core team.
 
 ## Core team
 

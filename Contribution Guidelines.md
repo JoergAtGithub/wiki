@@ -17,3 +17,6 @@
   - Check CI to ensure builds works and tests pass before merging. If CI
     timed out, either manually restart it or build the branch and run
     the tests locally before merging.
+  - Default to open; only post in the private Zulip stream for
+    discussions that should be private. Most of the time, post to a
+    public Zulip stream so anyone can participate in the discussion.

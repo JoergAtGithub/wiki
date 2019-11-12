@@ -1,3 +1,32 @@
+\======= Mixxx Contribution Guidelines ======
+
+## All contributors
+
+  - Each feature/bug fix should be done on its own Git branch so they
+    can be reviewed and merged independently. Refer to [Using
+    Git](Using%20Git) for how to do this. Please ask for help on
+    [Zulip](https://mixxx.zulipchat.com/) if you have questions about
+    using Git after reading that page.
+  - Low risk bug fixes should be targeted at the stable branch
+    (currently 2.2). However, bug fixes for the stable branches must
+    have a direct impact on users. If you spot a minor bug reading the
+    code or only want to clean up the code, target that at the master or
+    beta branch.
+  - Controller mappings should be targeted at the stable branch unless
+    they use features that are new in the beta or master branch.
+  - Generally, prefer merging to rebasing. Do not rebase unless you have
+    discussed that with whoever is reviewing the pull request. When you
+    rebase a branch with an open pull request, review comments made
+    inline in the code on GitHub lose their connection to that spot in
+    the code. If you want to correct minor mistakes with a rebase or
+    `git commit --amend` within a few minutes of pushing commits, that
+    is okay as long as no one has started reviewing those commits yet. 
+
+## Core team
+
+Mixxx core team members are contributors who have write access to the
+[upstream mixxxdj repositories](https://github.com/mixxxdj/) on GitHub.
+
   - *Never* force push to an upstream repository (mixxxdj). If you
     encounter an error from Git saying you would need to force push,
     stop what you are doing and discuss the situation on Zulip.

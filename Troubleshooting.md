@@ -143,7 +143,8 @@ command. For example, run `pasuspender -- mixxx --mididebug`
 ## Bluetooth audio is delayed
 
 Bluetooth audio always has a high latency and is not recommended for
-DJing. Use wired connections instead.
+DJing. Bluetooth audio also uses lossy compression which reduces the
+audio quality. Use wired connections instead.
 
 ## What should I do to get Mixxx to run the best it can on my computer?
 

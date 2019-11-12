@@ -18,9 +18,9 @@
     they use features that are new in the beta or master branch.
   - Generally, prefer merging to rebasing. Do not rebase unless you have
     discussed that with whoever is reviewing the pull request. When you
-    rebase a branch with an open pull request, review comments made
-    inline in the code on GitHub lose their connection to that spot in
-    the code. If you want to correct minor mistakes with a rebase or
+    rebase a branch with an open pull request, prior review comments
+    made inline in the code on GitHub lose their connection to that spot
+    in the code. If you want to correct minor mistakes with a rebase or
     `git commit --amend` within a few minutes of pushing commits, that
     is okay as long as no one has started reviewing those commits yet.
   - Please help review other people's pull requests. When others review

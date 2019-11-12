@@ -7,6 +7,8 @@
     Git](Using%20Git) for how to do this. Please ask for help on
     [Zulip](https://mixxx.zulipchat.com/) if you have questions about
     using Git after reading that page.
+  - If you are making changes to the GUI with a pull request, please
+    post screenshots of the changes.
   - Low risk bug fixes should be targeted at the stable branch
     (currently 2.2). However, bug fixes for the stable branches must
     have a direct impact on users. If you spot a minor bug reading the

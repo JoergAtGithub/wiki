@@ -55,7 +55,7 @@ Mixxx core team members are contributors who have write access to the
     immediately.
   - If there is disagreement about changes in a pull request, do not
     merge it until a consensus has been reached.
-  - Check CI to ensure builds works and tests pass before merging. If CI
+  - Check CI to ensure builds work and tests pass before merging. If CI
     timed out, either manually restart it or build the branch and run
     the tests locally before merging.
   - Default to open; only post in the private Zulip stream for

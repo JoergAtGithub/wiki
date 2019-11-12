@@ -140,6 +140,11 @@ run Mixxx with [command line options](command%20line%20options), such as
 `--mididebug`, put `--` between `pasuspender` and the rest of the
 command. For example, run `pasuspender -- mixxx --mididebug`
 
+## Bluetooth audio is delayed
+
+Bluetooth audio always has a high latency and is not recommended for
+DJing. Use wired connections instead.
+
 ## What should I do to get Mixxx to run the best it can on my computer?
 
 First, try each option for waveform renderer in Preferences \> Waveforms

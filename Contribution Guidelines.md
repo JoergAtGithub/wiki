@@ -64,3 +64,5 @@ the private Zulip stream for the core team.
     discussions that have a reason to be private. Most of the time, post
     to a public Zulip stream so anyone can participate in the
     discussion.
+  - When Mixxx participates in Google Summer of Code, you may volunteer
+    as a mentor if you like.

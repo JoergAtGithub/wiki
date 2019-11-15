@@ -26,14 +26,29 @@ command line, as outlined here:
 [compiling\_on\_windows](compiling_on_windows) This may take up to 60
 min on the fist time.
 
+**Using Scons:**
+
 ``` bash
 scons -j4 # replace 4 with the number of CPU cores that can be utilized 
 ```
 
-Test your build:
+** Using CMake (experimental):**
+
+To save during comiling time after switching branches make sure ccache
+is installed.
+
+``` bash
+mkdir debug 
+cd debug
+cmake ..
+make -j4 # replace 4 with the number of CPU cores that can be utilized
+```
+
+** Test your build:**
 
 ``` bash
 ./mixxx
+./mixxx_test
 ```
 
 # Install Eclipse (packages or source)

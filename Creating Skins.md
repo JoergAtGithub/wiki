@@ -2904,6 +2904,15 @@ A a widget to show the laptop battery status.
 The charging/discharging pixmaps will have %1 replaced from 0 to
 NumberStates - 1.
 
+Changed in Mixxx 2.3
+
+The Battery widget is hidden by default and only becomes visible once
+the status is known. This means that the unknown-icons are never
+presented to the user.
+
+The status can be unknown if there is no battery present or if there are
+problems reading the status.
+
 ## Deprecated keys
 
 ### Main background

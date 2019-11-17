@@ -38,7 +38,7 @@ input support, applying effects to the TR-S output, etc.):
 | --------------------- | ---------------- |
 | Channels              | Assigned to      |
 | 1-2                   | Master           |
-| 2-3                   | Headphones       |
+| 3-4                   | Headphones       |
 | Input                 |                  |
 | Channels              | Assigned to      |
 | 1-2 (CH 1 Line/Phono) | Vinyl Control 1  |

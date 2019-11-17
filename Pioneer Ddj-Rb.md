@@ -24,7 +24,9 @@ GROUP="users", MODE="0660"`
 
 ## Mapping
 
-There is no mapping available yet, but the
-[DDJ-SB2](https://www.mixxx.org/wiki/doku.php/pioneer_ddj-sb2) one seems
-like a sane starting point. ([Forum
+There is a preliminary mapping at
+<https://github.com/jbramsden/DDJ-RB-MIXXX> which could be used as a
+starting point. Failing that, check out
+[DDJ-SB2](https://www.mixxx.org/wiki/doku.php/pioneer_ddj-sb2) as well
+([Forum
 link](https://www.mixxx.org/forums/viewtopic.php?f=3&t=9464#p34297))

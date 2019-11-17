@@ -74,7 +74,6 @@ Ubuntu Packages to install (possibly outdated) would be:
 
   - eclipse
   - eclipse-cdt
-  - eclipse-pydev
 
 The latest Eclipse 2018-9 requires Oracle JDK 8 This can be installed on
 Ubuntu like that:

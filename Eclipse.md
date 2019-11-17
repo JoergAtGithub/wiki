@@ -91,6 +91,8 @@ sudo update-alternatives --config java
 
 For Eclipse 2018-09
 
+General:
+
   - Start Eclipse.
   - Window -\> Preferences
   - Expand General -\> Editors -\> Autosave 
@@ -101,7 +103,15 @@ For Eclipse 2018-09
   - Skip include files larger than 160 MB 
   - Expand C/C++ -\> Build -\> console
   - Limit console output = 10000
-  - \---
+  - Verify Project Explorer is visible. If not go to Window -\> Show
+    View -\> Project Explorer
+  - In the Project tree, right-click on the build folder and choose
+    Properties
+  - Check 'Exclude resource from build', Apply and Close
+  - Repeat for the cache folder 
+
+For Scons builds:
+
   - File -\> New -\> Makefile Project with Existing Code.
   - Set Project Name to `mixxx`.
   - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
@@ -110,8 +120,7 @@ For Eclipse 2018-09
     for a Linux host, substitute your OS as applicable).
   - Finish.
   - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ Build (if Project Explorer is not visible, go to Window
-    -\> Show View -\> Project Explorer).
+    -\> C/C++ Build 
   - Uncheck "Use default build command".
   - Build command 
 
@@ -155,15 +164,40 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
   - Uncheck "Use global providers ..."
   - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
     "${INPUTS}"` 
-  - Close Properties
-  - In the Project tree, right-click on the build folder and choose
-    Properties
-  - Check 'Exclude resource from build', Apply and Close
-  - Repeat for the cache folder 
+  - Note: The indexer should work after a full rebuild that allows
+    Eclipse to parse all compiler arguments.
+
+For CMake Builds (experimental)
+
+  - Install cmake4eclipse via the Eclipse Marketplace 
+  - Help -\> Eclipse Marketplace...
+  - search for cmake4eclipse and press Install. 
+  - Follow the install Wizzard and restart Eclipse
+  - File -\> New -\> Project... -\> C++ Project 
+  - Set Project Name to `mixxx`
+  - Uncheck "Use default location"
+  - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
+  - Project Type: Executable -\> Empty Project
+  - Toolchains: Linux GCC (this would be for a Linux host, substitute
+    your OS as applicable).
+  - click Finish 
+  - Right click on the new project in Project Explorer -\> Properties
+    -\> C/C++ Build -\> Tool Chain Editor (if Project Explorer is not
+    visible, go to Window -\> Show View -\> Project Explorer).
+  - Curent builder: "CMake Builder (portable)"
+  - Right click on the new project in Project Explorer -\> Properties
+    -\> C/C++ Build
+  - Switch to Behavior tab.
+  - Check "Enable parallel builds".
+  - Right click on the new project in Project Explorer -\> Properties
+    -\> C/C++ General -\> Preprocessor Include ... 
+  - Switch to Providers tab
+  - check "CMAKE\_COMPILE\_COMMANDS\_JSON Parser" and
+    "CMAKE\_COMPILE\_COMMANDS\_JSON Compiler Built-Ins" and uncheck
+    others
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
-icon). The indexer should work after a full rebuild that allows Eclipse
-to parse all compiler arguments.
+icon).
 
   - Right click on the new project in Project Explorer -\> Clean Project
   - Right click on the new project in Project Explorer -\> Build Project

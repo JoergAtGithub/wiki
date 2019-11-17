@@ -71,9 +71,13 @@ Trigger Sampler 5-8 (MODE 4 Sample bank)
 Loop X 1/2 = Half loop size  
 LOOP ON = Loop on/off (when you end looping playback resumes from end of
 loop).  
+SHIFT + LOOP ON = Set loop start at current point (or nearest beat, if
+"quantize" is active).  
 Loop X 2 = Double loop size.  
   
-Loop Encoder (Single mode) = Loop Half/Double size  
+Loop Encoder (Single mode) = Beatjump Half/Double  
+SHIFT + Loop Encoder (Single mode) = Move loop Forward/Backward by
+defined "beatjump\_size" amount of beats  
   
 **FX Mode:**  
 FX 1-3 on/off  
@@ -94,6 +98,6 @@ Mix Button = Switch monitor cue mix to 50%.
   
 **Jog wheel LEDs:**  
 White LEDs = Play position  
-Blue LEDs= Currently not mapped  
+Blue LEDs= Play status (rotation)  
   
 Other controls as labeled.

@@ -38,9 +38,9 @@ To save during comiling time after switching branches make sure ccache
 is installed.
 
 ``` bash
-mkdir debug 
-cd debug
-cmake ..
+mkdir build/Debug 
+cd build/Debug
+cmake ../..
 make -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
 

@@ -197,8 +197,16 @@ Additional skins for Mixxx can be downloaded in the
     so you get
     /usr/share/mixxx/skins/NewSkin
     
-    Note that you may get permission error while copying,
-    make sure you have root privileges
+    Note that you may get permission errors while copying,
+    make sure you have root privileges.
+    
+    Another method would be to backup the official skins,
+    then create a link 'skins' to a regular user folder there.
+    This allows to simply put new skins into ~/Downloads/newMixxxSkins
+    without having to worry about root.
+    
+    sudo mv /usr/share/mixxx/skins/ /usr/share/mixxx/skins_backup/
+    sudo ln -s /home/yourUserName/Downloads/newMixxxSkins /usr/share/mixxx/skins/
     
     Windows
     *************

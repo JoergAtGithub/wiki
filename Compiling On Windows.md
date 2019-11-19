@@ -9,9 +9,10 @@ page](Build%20Windows%20installer).)*
     Tools.
   - (Visual Studio 2015 may work, but will likely stop working once we
     start using C++ features that are not implemented by VS2015).
-  - [Python](http://python.org/download/) 2.7.x or 3.x. Ensure Python is
-    on your system PATH (there is an option in the installer to do
-    this).
+  - [Python](http://python.org/download/) 2.7.x. Ensure Python is on
+    your system PATH (there is an option in the installer to do this).
+    Don't use Python 3.x as [Scons is not compatible with
+    it](https://github.com/SCons/scons/wiki/FrequentlyAskedQuestions#what-version-of-python-do-i-need).
   - [SCONS](http://scons.org/pages/download.html) (download the latest
     version).
   - A Git client like [Git for

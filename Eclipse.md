@@ -40,7 +40,7 @@ is installed.
 ``` bash
 mkdir build/Debug 
 cd build/Debug
-cmake ../..
+cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON ../.. 
 make -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
 

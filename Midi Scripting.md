@@ -154,8 +154,8 @@ turn on when sent value 0x00, your script could start with:
 The ID parameter of the init function is the `controller id` attribute
 from the XML file. This can be used to identify the particular
 controller instance in print statements. The `debugging` parameter is
-set to 'true' if the user specified the --mididebug parameter on the
-command line.
+set to 'true' if the user specified the `--controllerDebug` parameter on
+the command line (`--mididebug` until Mixxx 1.10).
 
 **Note**: Instead of using global variables, define properties of your
 controller object (`MyController` in this example) to avoid name
@@ -822,7 +822,7 @@ Hotcue](components_js#hotcuebutton)).
 ## Helper functions
 
 Here is a list of functions available to you from the always-loaded
-common-controller-scripts.js file:
+`common-controller-scripts.js` file:
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.

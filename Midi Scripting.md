@@ -155,7 +155,7 @@ The ID parameter of the init function is the `controller id` attribute
 from the XML file. This can be used to identify the particular
 controller instance in print statements. The `debugging` parameter is
 set to 'true' if the user specified the `--controllerDebug` parameter on
-the command line (`--mididebug` until Mixxx 1.10).
+the command line (`--midiDebug` until Mixxx 1.10).
 
 **Note**: Instead of using global variables, define properties of your
 controller object (`MyController` in this example) to avoid name
@@ -477,6 +477,16 @@ handling function only changes the state of script variables but not
 Mixxx Controls, then it would be appropriate to call
 `midi.sendShortMsg`/`midi.sendSysexMsg` from the input handling
 function.
+
+## Debugging your mappings
+
+As mentioned above, you don't have to restart Mixxx, when you're testing
+your scripts. Every time you save your file, Mixxx will reload it
+immediately. Additionally if you specify `--controllerDebug` (or
+`--midiDebug` prior to verion 1.11), Mixxx then logs all incoming and
+outgoing MIDI messages. Also you can use `print()` in your script to
+output further messages. The second parameter passed to your `init()`
+functions specifies if the controller debug mode is enabled.
 
 ## Components library
 

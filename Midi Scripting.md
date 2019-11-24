@@ -9,9 +9,9 @@ functions, allowing mappings to manage complex behaviors. These
 user-created functions can then do anything desired with the MIDI event
 info such as affect different controls depending on whether another
 button is pressed, adjust incoming control values to work better with
-Mixxx (i.e. for
-[\#scratching](#scratching)),-send-messages-to-LED-displays-on-the-controller,-or-even-[turn
-a 2 deck controller into a 4 deck
+Mixxx (i.e. for [scratching](#Scratching-and-jog-wheels)), send messages
+to LED displays on the controller, or even [turn a 2 deck controller
+into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
 If you would like your mapping included in Mixxx, please see the coding
@@ -102,9 +102,9 @@ when the controller is activated.
 
 There is a default script function file called
 `common-controller-scripts.js` which contains functions common to all
-controllers and is always loaded. See [\#available common
-functions](#available%20common%20functions) below for information on
-these functions.
+controllers and is always loaded. See [\#Helper
+functions](#Helper%20functions) below for information on these
+functions.
 
 ### Script file header
 
@@ -583,6 +583,10 @@ Here is how to use them:
 - When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp which also allows spin-backs with wheels.)
 ```
 
+**Note:** You can use `script.deckFromGroup(group)` to get the virtual
+deck number from the group string. See [\#Helper
+functions](#Helper%20functions) for more information.
+
 Here is an example for the two most common types of wheels. Click the
 tab labeled 'scratchingExample.js' below to open this example as a file
 in your text editor.
@@ -590,6 +594,7 @@ in your text editor.
 ``` javascript
 // The button that enables/disables scratching
 MyController.wheelTouch = function (channel, control, value, status, group) {
+    var deckNumber = script.deckFromGroup(group);
     if ((status & 0xF0) === 0x90) {    // If button down
   //if (value === 0x7F) {  // Some wheels send 0x90 on press and release, so you need to check the value
         var alpha = 1.0/8;
@@ -618,10 +623,11 @@ MyController.wheelTurn = function (channel, control, value, status, group) {
     // --- End choice
     
     // In either case, register the movement
+    var deckNumber = script.deckFromGroup(group);
     if (engine.isScratching(deckNumber)) {
         engine.scratchTick(deckNumber, newValue); // Scratch!
     } else {
-        engine.setValue('[Channel'+deckNumber+']', 'jog', newValue); // Pitch bend
+        engine.setValue(group, 'jog', newValue); // Pitch bend
     }
 }
 ```

@@ -49,6 +49,14 @@ input support, applying effects to the TR-S output, etc.):
 The microphone, TR-S drum machine, and external inputs are mixed
 together in input channels 5-6, so Mixxx can record and broadcast them.
 
+The knobs for MASTER LEVEL, BOOTH LEVEL, PHONES VOLUME, MIC LEVEL,
+TR/SAMPLER LEVEL and CUE/MASTER MIXING are controlling the hardware
+mixer of the built-in audio interface. Hence, turning the knobs will
+change values in the Mixxx GUI and you'll need to set them to their
+default values when using the controller:
+
+[[/media/2019-11-27-130732_182x403_scrot.png|]]
+
 **Note:** You should assign the Vinyl Control input channels even if you
 do not intend to use timecode vinyl. These channel assignments are also
 needed to make the CH 1/2 PC/LINE/PHONO switches work (i. e. passing

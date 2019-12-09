@@ -65,7 +65,7 @@ feedback:
 | (24) MID knob            | Middle frequency filter                                                                                             |                                                                   |
 | (25) LOW knob            | Low frequency filter                                                                                                |                                                                   |
 | (26) Effect Superknob    | Quick effect superknob for the corresponding deck                                                                   |                                                                   |
-| (27) Sample knob         | *Not mapped yet*                                                                                                    |                                                                   |
+| (27) Sample knob         | Adjusts the pregain for all the sample decks combined                                                               |                                                                   |
 | (28) Headphone mix knob  | Adjusts the cue/main mix in the headphone output                                                                    |                                                                   |
 | (29) Headphone gain knob | Adjusts the headphone output gain                                                                                   |                                                                   |
 | (30) Effect buttons      | Enable or disable effect units for both decks                                                                       |                                                                   |

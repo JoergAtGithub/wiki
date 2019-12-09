@@ -40,9 +40,16 @@ forum](https://mixxx.org/forums/viewtopic.php?f=1&t=9425).)
   - Run by Canonical, which [does not have the greatest track
     record](https://en.wikipedia.org/wiki/Ubuntu_\(operating_system\)#Amazon_controversy)
   - Development of Launchpad has ~~stagnated~~ slowed in recent years.
+    <https://github.com/live-clones/launchpad/graphs/contributors>
   - LP had its staffing heavily cut a few years back, but there are
     still a couple paid full-time developers working on it -- and
     several major features that have been developed since that cut.
+  - launchpad, sourceforge, savannah once played and important role in
+    OSS, but are now rather niche. New users and developers are less
+    likely to be familiar with it, and thus less likely to interact with
+    the platform.
+  - No integration with the source code on GitHub. Automatic PR/issue
+    interactions not possible.
 
 # Possible solutions
 

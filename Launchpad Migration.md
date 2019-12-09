@@ -73,6 +73,7 @@ Migration tools:
   - Rich formatting
   - [Close issues automatically when merging pull
     requests](https://github.com/blog/1506-closing-issues-via-pull-requests)
+  - Everyone uses it.
 
 ### Disadvantages
 

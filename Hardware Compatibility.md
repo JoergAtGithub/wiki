@@ -145,6 +145,7 @@ move your controller to this table.
 | [Keith McMillen QuNeo](Keith%20McMillen%20QuNeo)                                                   | $250              | miscellaneous                                                | no                         | \-               | MIDI            | 1.11                          | 2012     |
 | [Numark Mixtrack Platinum](Numark%20Mixtrack%20Platinum)                                           | $250              | 2 deck\[12\] all-in-one                                      | yes                        | no               | MIDI            | 2.2.0                         | 2016     |
 | [American Audio VMS2](American%20Audio%20VMS2)                                                     | $250              | 2 deck all-in-one                                            | yes                        | yes              | MIDI            | 1.11                          | 2011     |
+| [Native Instruments Traktor Kontrol S2 MK3](Native%20Instruments%20Traktor%20Kontrol%20S2%20MK3)   | $300              | 2 deck controller all-in-one                                 | yes                        | no               | HID             | 2.2.4                         | 2018     |
 | [Denon MC4000](Denon%20MC4000)                                                                     | $400              | 2 deck controller and mixer                                  | yes                        | yes              | MIDI            | 2.1                           | 2015     |
 | [Roland DJ-505](Roland%20DJ-505)                                                                   | $550              | 2 deck\[13\] all-in-one with integrated drum machine         | yes                        | no               | MIDI            | 2.3.0                         | 2017     |
 | [Akai MPD24](Akai%20MPD24)                                                                         | discontinued      | miscellaneous                                                | no                         | \-               | MIDI            | 1.8                           | 2007     |
@@ -446,15 +447,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>-</td>
 <td>HID</td>
 <td>2012</td>
-</tr>
-<tr class="even">
-<td><a href="Native Instruments Traktor Kontrol S2 MK3">Native Instruments Traktor Kontrol S2 MK3</a></td>
-<td>$300</td>
-<td>2 deck controller all-in-one</td>
-<td>yes</td>
-<td>no</td>
-<td>HID</td>
-<td>2018</td>
 </tr>
 </tbody>
 </table>

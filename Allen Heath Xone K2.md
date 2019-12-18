@@ -29,8 +29,8 @@ Note: This Channel setup is the opposite of what most DJ controllers
 with an integrated audio interface use. The design choice to not use
 Channel 1 - 2 for Master Output is known to cause problems, when users
 want to use the Xone:K2 as default system audio output as the operating
-system will always use Channel 1 - 2. So system audio will thus go to
-the headphones.
+system will always use Channel 1 - 2. Thus system audio will go to the
+headphones.
 
 There are no hardware controls for the volume so they are always at max
 volume. Adjusting the volume of master and headphone outputs is done by

@@ -18,7 +18,7 @@ with.
 
 # Audio setup
 
-The Xone K2 is setup in Mixxx \> Preferences \> Sound Hardware \> Output
+The Xone:K2 is setup in Mixxx \> Preferences \> Sound Hardware \> Output
 
 | Output     | Device  | Channel       |
 | ---------- | ------- | ------------- |
@@ -28,7 +28,7 @@ The Xone K2 is setup in Mixxx \> Preferences \> Sound Hardware \> Output
 Note: This Channel setup is the opposite of what most DJ controllers
 with an integrated audio interface use. The design choice to not use
 Channel 1 - 2 for Master Output is known to cause problems, when users
-want to use the Xone K2 as default system audio output. Allan & Heath is
+want to use the Xone:K2 as default system audio output. Allan & Heath is
 aware of this problem, which could be fixed with a firmware update.
 Contact [Allen & Heath Support](https://www.allen-heath.com/support/) if
 you want this default to change.

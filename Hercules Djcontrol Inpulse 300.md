@@ -4,7 +4,8 @@
 page](https://www.hercules.com/en-us/product/djcontrolinpulse300//)  
 \* [Manufacturer's support and downloads
 page](https://support.hercules.com/en/product/djcontrolinpulse300-en//)  
-\* [Forum thread](https://www.mixxx.org/forums/)  
+\* [Forum
+thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12599)  
 
 ## Compatibility
 

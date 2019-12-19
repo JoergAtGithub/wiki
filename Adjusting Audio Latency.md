@@ -181,7 +181,7 @@ can disable it by running this shell script as root:
     done
 
 Alternately, you can use the `cpupower` utility: `sudo cpupower
-frequency-set -g performance`.
+frequency-set -g performance`
 
 The CPU governor will be reset when rebooting your computer. To run this
 every time your computer boots, save the above shell script to

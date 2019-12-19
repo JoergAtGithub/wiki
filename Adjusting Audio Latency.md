@@ -21,8 +21,9 @@ computer is turning on. Which key you need to press is different on
 every computer, so watch if it says on screen or refer to the computer
 manufacturer's documentation. Unfortunately some computers do not have
 an option to disable SMT/HyperThreading in the BIOS/EFI settings. On
-Linux, this can be disabled by setting the "nosmt" kernel parameter as
-described below.
+these computers with Linux, SMT can still be disabled by setting the
+"nosmt" kernel parameter as [described
+below](#Disable-HyperThreading/SMT1).
 
 SMT makes the CPU appear to the OS as if each physical CPU core was 2
 cores (thus a dual core processor seems like it has 4 cores or a quad
@@ -39,11 +40,14 @@ your audience will hear a glitch.
 
 ### Disable HyperThreading/SMT
 
-Disable HyperThreading/SMT by adding "nosmt" to the kernel boot
-parameters. How to do this may vary depending on your distribution, so
-refer to your distribution's documentation for details. On Fedora, edit
-the text file /etc/default/grub as root. There should be a line that
-shows something like:
+First, try disabling HyperThreading/SMT by turning it off in your
+computer's BIOS/EFI settings as [described
+above](#Disable-Hyperthreading/SMT). If that option is not available on
+your computer, SMT can be disabled by Linux by adding "nosmt" to the
+kernel boot parameters. How to do this may vary depending on your
+distribution, so refer to your distribution's documentation for details.
+On Fedora, edit the text file /etc/default/grub as root. There should be
+a line that shows something like:
 
     GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora/root rd.luks.uuid=luks-8847b15d-fd3c-4b93-a107-1e5166685508 rd.lvm.lv=fedora/swap rhgb quiet"
 

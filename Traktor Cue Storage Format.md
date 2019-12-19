@@ -18,9 +18,14 @@ and/or opensource is a lot more limited.
 
   - [Rekord Buddy](http://nextaudiolabs.com/): two way sync between
     Traktor, RekordBox, Serato libraries. MacOS Only
-  - [DJCU](https://www.youtube.com/watch?v=y7s0Jw9R_ds&feature=youtu.be):
-    one way sync from Traktor to Rekordbox. Also companion programs for
-    Engine and DJay support. MacOS Only
+  - [DJ Conversion Utility(DJCU)](https://sellfy.com/p/emUY/): Two way
+    conversion from Traktor and Serato To/From Rekordbox.One way
+    conversion from Virtual DJ to Rekordbox. One way conversion from
+    Rekordbox to iTunes, djay Pro 2. The out put from one conversion
+    step can serve as input for the next without the use of Rekordbox in
+    between. With the aid from another app the Denon Conversion Utility
+    (DeCU) DJCU can convert from all its source platforms to Denon Prime
+    as well. MacOS Only
   - [CrossDJ](http://www.mixvibes.com/cross-dj-software-mac-pc/):
     Imports Traktor, exports Rekordbox. PC and Mac
 

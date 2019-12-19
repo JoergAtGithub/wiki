@@ -57,8 +57,10 @@ are:
   - [Rekordbuddy2 June
     beta 2.1.0(557)](https://forums.next.audio/t/traktor-rekordbox-cues-shifted-in-time-2/593):
     does conversion and correction in a single go
-  - [DJCU RECU](https://www.youtube.com/watch?v=y7s0Jw9R_ds): requires a
-    separate correction step after conversion
+  - [DJCU](https://youtu.be/MAObe2e7qx4): does conversion and correction
+    in a single step. DJCU uses the most advanced shift correction in
+    the business. The Denon Conversion also has the automatic shift
+    correction build in.
 
 The other converters have been confirmed to be affected by this issue.
 

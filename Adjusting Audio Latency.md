@@ -9,6 +9,46 @@ lower latency audio:
 
 ## Linux
 
+### Disable HyperThreading/SMT
+
+Disable HyperThreading/SMT by adding "nosmt" to the kernel boot
+parameters. How to do this may vary depending on your distribution, so
+refer to your distribution's documentation for details. On Fedora, edit
+the text file /etc/default/grub as root. There should be a line that
+shows something like:
+
+    GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora/root rd.luks.uuid=luks-8847b15d-fd3c-4b93-a107-1e5166685508 rd.lvm.lv=fedora/swap rhgb quiet"
+
+Add the "nosmt" parameter to the end of this:
+
+    GRUB_CMDLINE_LINUX="rd.lvm.lv=fedora/root rd.luks.uuid=luks-8847b15d-fd3c-4b93-a107-1e5166685508 rd.lvm.lv=fedora/swap rhgb quiet nosmt"
+
+Then, regenerate your GRUB configuration file:
+
+    grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+
+On other distributions, use "grub-mkconfig" instead of "grub2-mkconfig"
+and the file path grub.cfg (after the "-o") will change as well. Then
+reboot your computer.
+
+SMT can also be toggled while Linux is running with the command:
+
+    echo off > /sys/devices/system/cpu/smt/control
+
+but this will be reset when you reboot unless you change the kernel boot
+options as decribed above.
+
+Simultaneous Multithreading (SMT), or HyperThreading (HT) as Intel calls
+it, makes the CPU appear to the OS as if each physical CPU core was 2
+cores (thus a dual core processor seems like it has 4 cores or a quad
+core processor seems like it has 8 cores). This allows two threads to
+switch off between using one CPU core, which may be beneficial for
+software that makes heavy use of parallel processing. However, realtime
+audio software like Mixxx requires reliable, uninterrupted time to use
+the CPU to avoid audio glitches (xruns). When two threads sharing the
+same CPU core with SMT, it is much more likely that Mixxx (or other
+realtime audio software) will glitch.
+
 ### Enable realtime scheduling
 
 In Preferences \> Sound hardware, if there is a link to this page, Mixxx

@@ -12,18 +12,17 @@ lower latency audio:
 ### Disable HyperThreading/SMT
 
 Simultaneous Multithreading (SMT), or HyperThreading (HT) as Intel calls
-it (AMD CPUs can also have SMT), can make some programs faster but makes
-realtime audio software like Mixxx much more likely to glitch. Most
-modern computers have SMT enabled by default. On some computers, it can
-be disabled in the BIOS/EFI firmware settings when booting your
-computer. These settings can be accessed by pressing a key as the
-computer is turning on. Which key you need to press is different on
-every computer, so watch if it says on screen or refer to the computer
-manufacturer's documentation. Unfortunately some computers do not have
-an option to disable SMT/HyperThreading in the BIOS/EFI settings. On
-these computers, SMT can still be disabled when using Linux by setting
-the "nosmt" kernel parameter as [described
-below](#Disable-HyperThreading/SMT1).
+it, can make some programs faster but makes realtime audio software like
+Mixxx much more likely to glitch. Most modern computers have SMT enabled
+by default. On some computers, it can be disabled in the BIOS/EFI
+firmware settings when booting your computer. These settings can be
+accessed by pressing a key as the computer is turning on. Which key you
+need to press is different on every computer, so watch if it says on
+screen or refer to the computer manufacturer's documentation.
+Unfortunately some computers do not have an option to disable
+SMT/HyperThreading in the BIOS/EFI settings. On these computers, SMT can
+still be disabled when using Linux by setting the "nosmt" kernel
+parameter as [described below](#Disable-HyperThreading/SMT1).
 
 SMT makes the CPU appear to the OS as if each physical CPU core was 2
 cores (thus a dual core processor seems like it has 4 cores or a quad

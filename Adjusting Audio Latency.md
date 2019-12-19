@@ -21,8 +21,8 @@ computer is turning on. Which key you need to press is different on
 every computer, so watch if it says on screen or refer to the computer
 manufacturer's documentation. Unfortunately some computers do not have
 an option to disable SMT/HyperThreading in the BIOS/EFI settings. On
-these computers with Linux, SMT can still be disabled by setting the
-"nosmt" kernel parameter as [described
+these computers, SMT can still be disabled when using Linux by setting
+the "nosmt" kernel parameter as [described
 below](#Disable-HyperThreading/SMT1).
 
 SMT makes the CPU appear to the OS as if each physical CPU core was 2

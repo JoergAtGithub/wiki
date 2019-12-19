@@ -13,7 +13,7 @@ lower latency audio:
 
 Simultaneous Multithreading (SMT), or HyperThreading (HT) as Intel calls
 it (AMD CPUs can also have SMT), can make some programs faster but makes
-realtime audio software like Mixxx more likely to glitch. On some
+realtime audio software like Mixxx much more likely to glitch. On some
 computers, it can be disabled in the BIOS/EFI firmware settings when
 booting your computer. These settings can be accessed by pressing a key
 as the computer is turning on. Which key you need to press is different

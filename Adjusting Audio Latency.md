@@ -7,6 +7,33 @@ lowering it beyond what your system can handle will cause audible
 glitches (pops). Here are some tips to configure your system to handle
 lower latency audio:
 
+## All operating systems
+
+### Disable HyperThreading/SMT
+
+Simultaneous Multithreading (SMT), or HyperThreading (HT) as Intel calls
+it (AMD CPUs can also have SMT), can make some programs faster but makes
+realtime audio software like Mixxx more likely to glitch. On some
+computers, it can be disabled in the BIOS/EFI firmware settings when
+booting your computer. These settings can be accessed by pressing a key
+as the computer is turning on. Which key you need to press is different
+on every computer, so watch if it says on screen or refer to the
+computer manufacturer's documentation. Unfortunately some computers do
+not have an option to disable SMT/HyperThreading in the BIOS/EFI
+settings. On Linux, this can be disabled by setting the "nosmt" kernel
+parameter as described below.
+
+SMT makes the CPU appear to the OS as if each physical CPU core was 2
+cores (thus a dual core processor seems like it has 4 cores or a quad
+core processor seems like it has 8 cores). This allows two threads to
+switch off between using one CPU core, which may be beneficial for
+software that makes heavy use of parallel processing. However, realtime
+audio software like Mixxx requires reliable, uninterrupted time to use
+the CPU to avoid audio glitches (xruns). When two threads share the same
+CPU core with SMT, it is much more likely that Mixxx (or other realtime
+audio software) will not generate the audio it needs in time so you and
+your audience will hear a glitch.
+
 ## Linux
 
 ### Disable HyperThreading/SMT
@@ -37,17 +64,6 @@ SMT can also be toggled while Linux is running with the command:
 
 but this will be reset when you reboot unless you change the kernel boot
 options as decribed above.
-
-Simultaneous Multithreading (SMT), or HyperThreading (HT) as Intel calls
-it, makes the CPU appear to the OS as if each physical CPU core was 2
-cores (thus a dual core processor seems like it has 4 cores or a quad
-core processor seems like it has 8 cores). This allows two threads to
-switch off between using one CPU core, which may be beneficial for
-software that makes heavy use of parallel processing. However, realtime
-audio software like Mixxx requires reliable, uninterrupted time to use
-the CPU to avoid audio glitches (xruns). When two threads sharing the
-same CPU core with SMT, it is much more likely that Mixxx (or other
-realtime audio software) will glitch.
 
 ### Enable realtime scheduling
 

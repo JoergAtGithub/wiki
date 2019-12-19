@@ -60,7 +60,7 @@ permissions.
 
 To use real time scheduling, you will either need to boot Linux with the
 "threadirqs" parameter or use a kernel with the [realtime patch
-set](https://rt.wiki.kernel.org/index.php/Main_Page). To always boot
+set](https://wiki.linuxfoundation.org/realtime/start). To always boot
 with the "threadirqs" kernel argument, add it to your grub.cfg by
 editing /etc/default/grub as root, adding "threadirqs" to the line for
 GRUB\_CMDLINE\_LINUX, then generate a new grub.cfg file. On most

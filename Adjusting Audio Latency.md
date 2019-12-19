@@ -67,7 +67,12 @@ SMT can also be toggled while Linux is running with the command:
     echo off > /sys/devices/system/cpu/smt/control
 
 but this will be reset when you reboot unless you change the kernel boot
-options as decribed above.
+options as described above. You can also use
+
+    echo on > /sys/devices/system/cpu/smt/control
+
+to turn it back on if you want to test the impact of having it on versus
+off.
 
 ### Enable realtime scheduling
 

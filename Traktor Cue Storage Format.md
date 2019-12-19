@@ -81,8 +81,7 @@ step can be made manually, or be scripted as well.
   - [using Rekordbuddy + external
     drive](https://www.reddit.com/r/Beatmatch/comments/52dvst/how_to_transfer_your_windowsbased_dj_library_from/)
   - [using DJCU to convert Windows
-    collections](https://www.youtube.com/playlist?list=PL4-PAOT-xI9XTFla6vKctGPFqVLj34y9u):
-    note: this still requires a manual step
+    collections](https://www.youtube.com/playlist?list=PL4-PAOT-xI9XTFla6vKctGPFqVLj34y9u)
   - [bash scripts to run Rekorbuddy2 inside a
     VM](https://github.com/pestrela/music_scripts): fully automated
     process

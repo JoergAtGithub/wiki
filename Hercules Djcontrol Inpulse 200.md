@@ -86,10 +86,15 @@ Beat Align LED = Track end warning (Make sure **Beatmatch Guide** is
   
 **Browser:**
 
-Encoder = Move up/down list Encoder button = Switch focus between List
-and file view SHIFT + Encoder button = Maximize/Minimize broser view
+Encoder = Move up/down list  
+Encoder button = Switch focus between List and file view  
+SHIFT + Encoder button = Maximize/Minimize broser view  
 Assistant = AutoDJ On/Off
 
+##### NOTE
+
+Be sure a playlist was created for AutoDJ before activatig this
+function  
   
 **PADS - Hot Cue:**  
 

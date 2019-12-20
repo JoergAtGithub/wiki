@@ -16,7 +16,7 @@ Xone K1 is the same as the Xone K2 but without the built in audio
 interface and does not come with the EVA travel case that the K2 comes
 with.
 
-# Audio setup
+# Audio Setup
 
 The Xone:K2 is setup in Mixxx \> Preferences \> Sound Hardware \> Output
 

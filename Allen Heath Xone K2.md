@@ -37,7 +37,7 @@ volume. Adjusting the volume of master and headphone outputs is done by
 adjusting the gain for those outputs in Mixxx using the controller
 mapping.
 
-# Mixxx mapping
+# Mixxx Mapping
 
 TODO: make labelled diagrams and a video demonstrating the mapping
 

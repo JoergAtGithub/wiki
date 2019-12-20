@@ -72,7 +72,7 @@ when selecting the channel:
   - Channel 9 (I): four effect units ordered 3 1 2 4
   - Channel 8 (H): four effect units ordered 1 2 3 4
 
-## Global controls
+## Global Controls
 
 These are available on any configuration with decks, but not the 4
 effect unit layout.

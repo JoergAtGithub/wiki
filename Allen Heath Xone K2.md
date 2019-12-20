@@ -267,7 +267,7 @@ Layers is turned off. Refer to the [Xone K2
 manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
 for details.
 
-# Known issues
+# Known Issues
 
 There are a few known issues with the Xone K2/K1 firmware. First, there
 is no way for Mixxx to ask the controller about the positions of all the

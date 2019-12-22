@@ -761,13 +761,6 @@ Use.
 
 Use.
 
-### unicode string literals
-
-**Do Not Use**. Once we switch to Qt5, you should use
-[QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral).
-This has a variety of
-[benefits](https://woboq.com/blog/qstringliteral.html).
-
 ### right angle brackets
 
 <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html>

@@ -677,10 +677,22 @@ Use [QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral).
 This has a variety of
 [benefits](https://woboq.com/blog/qstringliteral.html).
 
-From Mixxx 2.3 we set QT\_USE\_QSTRINGBUILDER to use QStringBuilder for
-operator+
+Escape non ASCII characters:
 
-Use + instead of % for bedder readability.
+``` cpp-qt
+QStringLiteral("Hello I\u2019ve to go");
+```
+
+QChars can be initialized with ASCII characters 16 bit Unicode
+L’\\u00fc' if required. Both are constexpr.
+
+``` cpp-qt
+constexpr QChar kc = 'c'
+constexpr QChar kue = L'\u00fc' // for "ü"
+```
+
+From Mixxx 2.3 we set QT\_USE\_QSTRINGBUILDER to use QStringBuilder for
+operator+. Use + in favour of % for better readability.
 
 ## C++14
 

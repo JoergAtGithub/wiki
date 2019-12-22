@@ -671,6 +671,17 @@ VERIFY_OR_DEBUG_ASSERT(!failed) {
 }
 ```
 
+## QString
+
+Use [QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral).
+This has a variety of
+[benefits](https://woboq.com/blog/qstringliteral.html).
+
+From Mixxx 2.3 we set QT\_USE\_QSTRINGBUILDER to use QStringBuilder for
+operator+
+
+Use + instead of % for bedder readability.
+
 ## C++14
 
 As of the Mixxx 2.3 release, Mixxx is switching to C++14. We are taking

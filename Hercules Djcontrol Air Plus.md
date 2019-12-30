@@ -51,7 +51,7 @@ panel in order to prevent unnecessary MIDI data being sent to Mixxx
 
 **Decks:**
 
-Vinyl = Scratch On/Off (Default: ON)  
+**Vinyl** = Scratch On/Off (Default: ON)  
   
 **Gain** knob = Filter  
   
@@ -80,7 +80,7 @@ Trigger Sampler 5-8 (Deck B)
 Button 1-3 = FX 1-3 on/off  
 Button 4 = FX Rack 1/2 On/Off (Deck A/B respectively)  
   
-**BANK 1 - Loop Mode:**  
+**BANK 2 - Loop Mode:**  
 
 Button 1-4 = Beatloop 1/2 / 1 / 2 / 4 beats  
   

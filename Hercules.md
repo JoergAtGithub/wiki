@@ -199,6 +199,11 @@ Find it here -\> [Hercules DJ Control Air+](hercules_djcontrol_air_plus)
 Find it here -\> [Hercules DJ Control
 Instinct](hercules_dj_control_instinct)
 
+## Hercules DJ Control Instinct P8
+
+Find it here -\> [Hercules DJ Control Instinct
+P8](hercules_dj_control_instinct_p8)
+
 ## Hercules DJ Control Compact
 
 Find it here -\> [Hercules DJ Control

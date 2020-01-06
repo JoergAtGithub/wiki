@@ -448,6 +448,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2012</td>
 </tr>
+<tr class="even">
+<td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
+<td>$85</td>
+<td>2 deck controller</td>
+<td>no</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2019</td>
+</tr>
 </tbody>
 </table>
 

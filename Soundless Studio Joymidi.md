@@ -8,6 +8,8 @@
   - [User
     Manual](https://984bf1a1-5190-4ce1-b1ac-4b857c6baad7.filesusr.com/ugd/fb7f0b_5a2a82c2d00747fda3deb592ef0747f1.pdf)
     (See the chapter 7.3 , DJ controller mode)
+  - [Forum
+    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13166&p=43644#p43644)
   - Mapping download: [XML
     file](https://raw.githubusercontent.com/bcc6/joyMIDI-SW-Mixxx-mapping/master/Soundless_joyMIDI.midi.xml)
     and [JS
@@ -45,3 +47,7 @@ After power-on press the right button to enter the DJ controller mode.
 ### Bank4
 
 [[/media/joymidi_bank4.jpg|]]
+
+## Enjoy it
+
+[[/media/joymidi_3.jpg|]]

@@ -2,8 +2,6 @@
 
 [[/media/joymidi_1.jpg|]]
 
-[[/media/joymidi_2.jpg|]]
-
   - [Manufacturer's product page](https://www.sndlss.com/?lang=en)
   - Mapping download: [XML
     file](https://raw.githubusercontent.com/bcc6/joyMIDI-SW-Mixxx-mapping/master/Soundless_joyMIDI.midi.xml)

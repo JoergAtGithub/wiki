@@ -50,4 +50,10 @@ After power-on press the right button to enter the DJ controller mode.
 
 ## Enjoy it
 
+### DrumPad mode (Non-DJ)
+
 [[/media/joymidi_3.jpg|]]
+
+### Maker Faire Taipei 2019
+
+[[/media/joymidi_4.jpg|]]

@@ -21,3 +21,9 @@ modes in it, Keyboard(MIDI), DrumPad(MIDI), **DJ(MIDI)** and
 GamePad(HID-joystick). Which the case is 3D print (open source on
 [Onshape](https://cad.onshape.com/documents/c5f92a07a4d54ab29d262073/w/195dd1080bfce9ec5ba8b2bb/e/f9290828ff0d2bcdf7fc0cec)
 ). Support for smartphone, tablet and PC.
+
+## DJ Controller mode
+
+After power-on press the right button to enter the DJ controller mode.
+
+[[/media/joymidi_enterdj.jpg|]]

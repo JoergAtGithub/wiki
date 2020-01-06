@@ -27,3 +27,21 @@ GamePad(HID-joystick). Which the case is 3D print (open source on
 After power-on press the right button to enter the DJ controller mode.
 
 [[/media/joymidi_enterdj.jpg|]]
+
+## Function
+
+### Bank1
+
+[[/media/joymidi_bank1.jpg|]]
+
+### Bank2
+
+[[/media/joymidi_bank2.jpg|]]
+
+### Bank3
+
+[[/media/joymidi_bank3.jpg|]]
+
+### Bank4
+
+[[/media/joymidi_bank4.jpg|]]

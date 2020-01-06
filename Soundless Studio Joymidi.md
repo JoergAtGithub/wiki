@@ -60,7 +60,7 @@ After power-on press the right button to enter the DJ controller mode.
 
 ## Contact us
 
-    Soundless Studio
+    SOUNDLESS STUDIO
     MAIL: ozzy.chc@gmail.com
     NAME: Ozzy Chiu
     Location: Taiwan, Taipei City

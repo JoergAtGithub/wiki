@@ -57,3 +57,10 @@ After power-on press the right button to enter the DJ controller mode.
 ### Maker Faire Taipei 2019
 
 [[/media/joymidi_4.jpg|]]
+
+## Contact us
+
+    Soundless Studio
+    MAIL: ozzy.chc@gmail.com
+    NAME: Ozzy Chiu
+    Location: Taiwan, Taipei City

@@ -41,7 +41,7 @@ is installed.
 mkdir build/Debug 
 cd build/Debug
 cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON ../.. 
-make -j4 # replace 4 with the number of CPU cores that can be utilized
+cmake --build . -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
 
 ** Test your build:**

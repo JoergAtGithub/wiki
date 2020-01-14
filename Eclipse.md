@@ -173,28 +173,17 @@ For CMake Builds (experimental)
   - Help -\> Eclipse Marketplace...
   - search for cmake4eclipse and press Install. 
   - Follow the install Wizzard and restart Eclipse
-  - File -\> New -\> Project... -\> C++ Project 
+  - File -\> New -\> Project... -\> C++ Project (\!**Not** File -\> New
+    -\> C/C++ Project) 
   - Set Project Name to `mixxx`
   - Uncheck "Use default location"
   - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
-  - Project Type: Executable -\> Empty Project
-  - Toolchains: Linux GCC (this would be for a Linux host, substitute
-    your OS as applicable).
+  - Project Type: CMake driven -\> Empty Project
   - click Finish 
-  - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ Build -\> Tool Chain Editor (if Project Explorer is not
-    visible, go to Window -\> Show View -\> Project Explorer).
-  - Curent builder: "CMake Builder (portable)"
   - Right click on the new project in Project Explorer -\> Properties
     -\> C/C++ Build
   - Switch to Behavior tab.
-  - Check "Enable parallel builds".
-  - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ General -\> Preprocessor Include ... 
-  - Switch to Providers tab
-  - check "CMAKE\_COMPILE\_COMMANDS\_JSON Parser" and
-    "CMAKE\_COMPILE\_COMMANDS\_JSON Compiler Built-Ins" and uncheck
-    others
+  - Check "Enable parallel builds" and select "Use optimal jobs"
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).

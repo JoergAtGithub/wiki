@@ -450,7 +450,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 </tr>
 <tr class="even">
 <td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
-<td>$80</td>
+<td>$85</td>
 <td>2 deck controller</td>
 <td>no</td>
 <td>no</td>

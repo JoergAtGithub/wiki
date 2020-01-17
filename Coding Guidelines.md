@@ -694,13 +694,13 @@ constexpr QChar kue = L'\u00fc' // for "ü"
 From Mixxx 2.3 we set QT\_USE\_QSTRINGBUILDER to use QStringBuilder for
 operator+. Use + in favour of % for better readability.
 
-## C++14
+## C++17
 
-As of the Mixxx 2.3 release, Mixxx is switching to C++14. We are taking
-a conservative approach to adopting C++11/14 features and whitelisting
-them one by one. If a C++11/14 feature you would like to use is not
-listed here, please email mixxx-devel to make a case for it and we will
-consider whitelisting it.
+As of the Mixxx 2.3 release, Mixxx is switching to C++17. We are taking
+a conservative approach to adopting C++11/14/17 features and
+whitelisting them one by one. If a C++11/14/17 feature you would like to
+use is not listed here, please email mixxx-devel to make a case for it
+and we will consider whitelisting it.
 
 We are limited to what is supported across our 3 supported compilers:
 

@@ -223,6 +223,43 @@ more inclined to reciprocate and review yours more quickly.
 To work on another bug or feature, [\#create a new
 branch](#create%20a%20new%20branch).
 
+# Targeting another base branch
+
+Sometimes you [started your work](#create-a-new-branch) from the wrong
+base branch. Maybe you wrote a bugfix or a controller mapping that
+should be merged into current stable release, but started from the
+`master` branch instead of the stable version's branch.
+
+In these cases you need to
+[rebase](https://git-scm.com/book/en/Git-Branching-Rebasing) your work
+on the correct branch. For example, the current stable version is 2.2.3
+and you want your changes to be a part of the 2.2.4 release, but you
+based your work on `master`, you need to rebase onto the `2.2` branch.
+
+To rebase your work in the `fixing_some_bug` from `master` onto `2.2`,
+run:
+
+    git fetch upstream
+    git rebase --onto upstream/2.2 upstream/master fixing_some_bug
+
+Now a text editor opens a file containing a list of all commits that
+exist in your feature branch, but not in the new base branch (i.e.
+`upstream/2.2`). Hence, the list will also contain commits from the
+`master` branch that have nothing to do with your changes. **You need to
+remove all lines containing these unrelated entries, so that the only
+lines that reference *your commits* remain**. Then save the file and
+close the editor. If there are no conflicts, your work will now be based
+on `2.2` instead of `master`.
+
+Since this changes commits that you already pushed to the server, you
+need to use the `-f` flag when pushing the changes to the remote
+repository:
+
+    git push -f origin fixing_some_bug
+
+If you already opened a PR, you need to [change it's base
+branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/changing-the-base-branch-of-a-pull-request).
+
 # Keeping up to date with upstream
 
 If there have been new changes in the upstream code that you would like

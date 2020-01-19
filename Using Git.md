@@ -242,15 +242,6 @@ run:
     git fetch upstream
     git rebase --onto upstream/2.2 upstream/master fixing_some_bug
 
-Now a text editor opens a file containing a list of all commits that
-exist in your feature branch, but not in the new base branch (i.e.
-`upstream/2.2`). Hence, the list will also contain commits from the
-`master` branch that have nothing to do with your changes. **You need to
-remove all lines containing these unrelated entries, so that the only
-lines that reference *your commits* remain**. Then save the file and
-close the editor. If there are no conflicts, your work will now be based
-on `2.2` instead of `master`.
-
 Since this changes commits that you already pushed to the server, you
 need to use the `-f` flag when pushing the changes to the remote
 repository:

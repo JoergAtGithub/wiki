@@ -236,8 +236,8 @@ on the correct branch. For example, the current stable version is 2.2.3
 and you want your changes to be a part of the 2.2.4 release, but you
 based your work on `master`, you need to rebase onto the `2.2` branch.
 
-To rebase your work in the `fixing_some_bug` from `master` onto `2.2`,
-run:
+To rebase your work in the `fixing_some_bug` branch from `master` onto
+`2.2`, run:
 
     git fetch upstream
     git rebase --onto upstream/2.2 upstream/master fixing_some_bug

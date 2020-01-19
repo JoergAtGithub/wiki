@@ -248,7 +248,7 @@ repository:
 
     git push -f origin fixing_some_bug
 
-If you already opened a PR, you need to [change it's base
+If you already opened a PR, you need to [change its base
 branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/changing-the-base-branch-of-a-pull-request).
 
 # Keeping up to date with upstream

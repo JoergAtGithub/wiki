@@ -53,14 +53,22 @@ in one commit. Start by creating a [GitHub](http://github.com/) account,
 [forking Mixxx](https://github.com/mixxxdj/mixxx), and cloning your
 forked git repository onto your computer.
 
-Make a new git branch (run `git checkout -b new_branch_name` from within
-your git repository). Make changes to your mapping and commit them when
-your changes work. Before making any commits, configure git to use your
-name and email in your commits. See the [Using Git](Using%20Git) wiki
-page for more information. Please prefix your git commit messages with
-the name of your controller so others can easily tell what the commits
-are for after your changes are merged. For example, a good commit
-message could look like:  
+Usually, new mappings can be released as part of bugfix releases. Hence,
+you should usually use the current stable release branch (e.g. \`2.2\`)
+instead of the \`master\` branch as a starting point for your new
+mapping branch. You run `git checkout -b new_branch_name 2.2` from
+within your git repository to that. If you're making use of unreleased
+features that are only present in \`master\`, you can also use
+\`master\` as base branch instead (run `git checkout -b new_branch_name
+master`).
+
+Make changes to your mapping and commit them when your changes work.
+Before making any commits, configure git to use your name and email in
+your commits. See the [Using Git](Using%20Git) wiki page for more
+information. Please prefix your git commit messages with the name of
+your controller so others can easily tell what the commits are for after
+your changes are merged. For example, a good commit message could look
+like:  
 `Hercules P32: push browse encoder to maximize/minimize library`
 
 #### Working on your mapping in your git repository
@@ -90,7 +98,10 @@ wiki](#Documenting-the-mapping), and you are ready to submit your
 mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
 that the target branch of mixxxdj/mixxx for your pull request is the
 branch that you started your git branch from (if it isn't, you'll see
-commits unrelated to your mapping included in your pull request).
+commits unrelated to your mapping included in your pull request). If you
+accidently started from the wrong branch when working on your mapping,
+you can also [rebase and change the target of your
+PR](https://mixxx.org/wiki/doku.php/using_git#targeting_another_base_branch).
 
 Although we try not to let pull requests linger without review, keep in
 mind that Mixxx is a volunteer project and someone will review your pull

@@ -13,10 +13,10 @@ C++.
 
 Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
-[JavaScript](MIDI%20scripting). While mappings can be made with just
-XML, most controllers will require some JavaScript to make a complete
-mapping. Some controllers will require a mapping mostly or completely
-written in JavaScript. Both XML and JavaScript are fairly
+[JavafixedScript](MIDI%20scripting). While mappings can be made with
+just XML, most controllers will require some JavaScript to make a
+complete mapping. Some controllers will require a mapping mostly or
+completely written in JavaScript. Both XML and JavaScript are fairly
 straightforward and easy to learn. Using JavaScript to map your
 controller could be a good introduction to programming. If you are
 unfamiliar with MIDI, refer to the [MIDI Crash
@@ -54,13 +54,12 @@ in one commit. Start by creating a [GitHub](http://github.com/) account,
 forked git repository onto your computer.
 
 Usually, new mappings can be released as part of bugfix releases. Hence,
-you should usually use the current stable release branch (e.g. \`2.2\`)
+you should usually use the current stable release branch (e.g. `2.2`)
 instead of the \`master\` branch as a starting point for your new
 mapping branch. You run `git checkout -b new_branch_name 2.2` from
 within your git repository to that. If you're making use of unreleased
-features that are only present in \`master\`, you can also use
-\`master\` as base branch instead (run `git checkout -b new_branch_name
-master`).
+features that are only present in `master`, you can also use `master` as
+base branch instead (run `git checkout -b new_branch_name master`).
 
 Make changes to your mapping and commit them when your changes work.
 Before making any commits, configure git to use your name and email in
@@ -414,10 +413,10 @@ These coding conventions are mandatory for new Javascript code in Mixxx:
     same line as the conditional expression and the closing bracket `}`
     on its own line.
   - Put `else` statements on the same line as the previous closing `}`
-  - For defining functions in object literals, put the opening `function
-    (parameters) {` line on the same line as the property name, then
-    indent the function body 4 spaces. Put the closing `}` at the same
-    indention level as the object properties.
+  - For defining functions in object literals, put the opening
+    `function(parameters) {` line on the same line as the property name,
+    then indent the function body 4 spaces. Put the closing `}` at the
+    same indention level as the object properties.
   - Put `,` after the last property of object literals to avoid errors
     when adding more properties in the future.
   - All code lines that need it must end with `;`
@@ -432,15 +431,15 @@ Here is an example of good Javascript style:
     var someObject = new ShinyObject();
     
     var anotherObject = {
-        someFunction: function (parameter) {
+        someFunction: function(parameter) {
             return parameter++;
         },
-        anotherFunction: function (parameter) {
+        anotherFunction: function(parameter) {
             return parameter--;
         },
     }
     
-    ShinyObject.someMethod = function (someParameter) {
+    ShinyObject.someMethod = function(someParameter) {
         var someVariable = someParameter + 2;
         if (someVariable === 5) {
             return anotherObject.someFunction(someVariable);
@@ -449,34 +448,27 @@ Here is an example of good Javascript style:
         }
     }
 
-### Code checking tools
+### Automated code checking (linting)
 
-We use the automated code testing tools [JSHint](http://jshint.com/) and
-[JSBeautifier](http://jsbeautifier.org/) that check for bad practices in
-JavaScript code. You can copy and paste your JS code onto those web
-pages to use them or you can use them locally on your computer with
-Node.js. Using these tools is not for making your coding skill look bad;
-they are to help you make your code even better. If you use these, you
-will already have the basics taken care of when you submit a pull
-request.
+We use the automated code checking tool [eslint](https://eslint.org/)
+that looks for bad practices and potential problems in JavaScript code.
+The Mixxx repository contains a configuration file, so that you can
+easily use it to check the code of JavaScript files on your computer by
+running `eslint path/to/my-controller-script.js`. Some IDEs or editors
+like [Visual Studio Code](https://code.visualstudio.com/) or
+[(Neo-)Vim](https://www.vim.org/) with the
+[ALE](https://github.com/dense-analysis/ale) plugin should even pick it
+up automatically and warn you about potential problems while you are
+typing.
 
-JSHint can also be helpful if Mixxx says there is an error in your
+Using this tool is not for making your coding skill look bad; it is to
+help you make your code even better. If you use it, you will already
+have the basics taken care of when you submit a pull request. Running
+eslint can also be helpful if Mixxx says there is an error in your
 JavaScript code but Mixxx's error message does not make it clear what
-the issue is.
-
-All Javascript files for Mixxx must start with header to make sure
-JSHint doesn't generate errors for missing variables:
-
-``` 
-////////////////////////////////////////////////////////////////////////
-// JSHint configuration                                               //
-////////////////////////////////////////////////////////////////////////
-/* global engine                                                      */
-/* global script                                                      */
-/* global print                                                       */
-/* global midi                                                        */
-//////////////////////////////////////////////////////////////////////// 
-```
+the issue is. Some common formatting issues can also be fixed
+automatically by using the `--fix` parameter (run `eslint --fix
+path/to/my-controller-script.js`).
 
 ## Coding conventions for XML
 

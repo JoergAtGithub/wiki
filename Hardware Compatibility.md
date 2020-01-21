@@ -290,7 +290,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>$279</td>
 <td>2 deck controller all-in-one</td>
 <td>yes</td>
-<td>yes</td>
+<td>no</td>
 <td>MIDI</td>
 <td>2018</td>
 </tr>

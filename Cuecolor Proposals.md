@@ -59,4 +59,8 @@ Cons:
   - Would not maintain "no color" state from VirtualDJ. However,
     VirtualDJ can also read Serato tags, so importing exporting to
     VirtualDJ's metadata format would not be required for
-    interoperability with Mixxx if Mixxx can export to Serato tags.
+    interoperability with Mixxx if Mixxx can export to Serato tags. To
+    import metadata from VirtualDJ, Mixxx would either need to assume
+    the color of VirtualDJ's "no color" cues or read [VirtualDJ's
+    nonColoredPoi](https://www.virtualdj.com/manuals/virtualdj/interface/decks/decksadvanced/pads.html)
+    setting to determine how VirtualDJ would show them.

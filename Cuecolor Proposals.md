@@ -1,3 +1,23 @@
+Previously, in Mixxx 2.1, cue colors were [stored in the database as an
+RGB value](https://github.com/mixxxdj/mixxx/pull/992), however there was
+no support for using these colors in skins and controller mappings and
+there was no way to set them in the GUI. When support for editing cue
+colors was added for Mixxx
+2.3[\[1](https://github.com/mixxxdj/mixxx/pull/1830)\][\[2](https://github.com/mixxxdj/mixxx/pull/2016)\],
+the database representation was changed to be an integer index in a
+hardcoded palette of colors. At this time, a special default "no color"
+value was added, in which case the displayed color of a cue depended on
+the skin. Using a hardcoded palette turned out to be
+[problematic](https://github.com/mixxxdj/mixxx/pull/2119#issuecomment-539347901)
+when importing cues from other software, namely Rekordbox, because other
+software does not use the same palette as Mixxx. So the decision was
+made unanimously to switch back to storing the color as an RGB value.
+
+The present question is whether we should maintain the "no color" state
+from the database format that used the hardcoded color palette. That
+format was committed to master and used by some developers for some
+months, but it was never released.
+
 # No special states
 
 All hotcues always have a color. Colors with the "no color" state in the

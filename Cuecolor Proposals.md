@@ -18,6 +18,11 @@ from the database format that used the hardcoded color palette. That
 format was committed to master and used by some developers for some
 months, but it was never released.
 
+Open pull requests regarding this:
+<https://github.com/mixxxdj/mixxx/pull/2345>
+<https://github.com/mixxxdj/mixxx/pull/2399>
+<https://github.com/mixxxdj/mixxx/pull/2398>
+
 # No special states
 
 All hotcues always have a color. Colors with the "no color" state in the

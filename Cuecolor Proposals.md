@@ -64,4 +64,8 @@ Cons:
     the color of VirtualDJ's "no color" cues or read [VirtualDJ's
     nonColoredPoi
     setting](https://www.virtualdj.com/manuals/virtualdj/interface/decks/decksadvanced/pads.html)
-    to determine how VirtualDJ would show them.
+    to determine how VirtualDJ would show them. Without Mixxx
+    maintaining a "no color" state, cues imported from VirtualDJ and
+    exported back to VirtualDJ (potentially through Serato tags) would
+    lose the "no color" state and not change colors when the user
+    changes the nonColoredPoi setting in VirtualDJ.

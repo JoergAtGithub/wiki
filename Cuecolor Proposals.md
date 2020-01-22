@@ -29,20 +29,20 @@ All hotcues always have a color. Colors with the "no color" state in the
 database schema currently in master will be set to the new default
 color.
 
+If the user wants to change old cues to a new color (when they change
+the preference for the default cue color), a tool will be provided to
+replace all cues of one color to a new color.
+
 Pros:
 
   - Trivially simple to implement
   - Trivially simple for users to understand
   - No loss of information with round trip to/from Serato file tags
+  - Find-and-replace tool would also be useful if the user wants to o
+    change the colors of cues they have manually set the color of.
 
 Cons:
 
-  - When users change default cue color preference, Mixxx would need to
-    do a mass find-and-replace if the user wants to update their old
-    cues to the new setting. This database operation might be a bit
-    slow, but this remains to be seen as it has not been implemented
-    yet. Regardless, the potentially slow operation would only occur
-    when changing the setting in the preferences window.
   - Would not maintain "no color" state from Rekordbox. However,
     Rekordbox always shows "memory cues" (what Mixxx calls "hot cues",
     although Rekordbox has a different meaning for "hot cue") as orange.

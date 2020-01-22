@@ -19,9 +19,9 @@ format was committed to master and used by some developers for some
 months, but it was never released.
 
 Open pull requests regarding this:
-<https://github.com/mixxxdj/mixxx/pull/2345>
-<https://github.com/mixxxdj/mixxx/pull/2399>
-<https://github.com/mixxxdj/mixxx/pull/2398>
+[\#2345](https://github.com/mixxxdj/mixxx/pull/2345),
+[\#2399](https://github.com/mixxxdj/mixxx/pull/2399),
+[\#2398](https://github.com/mixxxdj/mixxx/pull/2398)
 
 # No special states
 

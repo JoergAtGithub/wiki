@@ -1,4 +1,4 @@
-## No special states
+# No special states
 
 All hotcues always have a color. Colors with the "no color" state in the
 database schema currently in master will be set to the new default

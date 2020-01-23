@@ -121,6 +121,7 @@ this wiki, please fix it.
 
 ### Getting Started
 
+  - [Contribution Guidelines](Contribution%20Guidelines)
   - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
     architecture
   - [Using Git](Using%20Git)

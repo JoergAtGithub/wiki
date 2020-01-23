@@ -38,7 +38,7 @@ Pros:
   - Trivially simple to implement
   - Trivially simple for users to understand
   - No loss of information with round trip to/from Serato file tags
-  - Find-and-replace tool would also be useful if the user wants to o
+  - Find-and-replace tool would also be useful if the user wants to
     change the colors of cues they have manually set the color of.
 
 Cons:

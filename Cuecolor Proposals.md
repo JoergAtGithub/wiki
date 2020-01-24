@@ -23,17 +23,49 @@ Open pull requests regarding this:
 [\#2399](https://github.com/mixxxdj/mixxx/pull/2399),
 [\#2398](https://github.com/mixxxdj/mixxx/pull/2398)
 
-# No special states
+\======= No special states =======
 
-All hotcues always have a color. Colors with the "no color" state in the
-database schema currently in master will be set to the new default
-color.
+All hotcues always have a color. There is no "no color"/"default color"
+state.
 
-If the user wants to change old cues to a new color (when they change
-the preference for the default cue color), a tool will be provided to
+Users can set a single default color that is assigned to newly created
+hotcues in the preferences. It will also be possible to define a list of
+default colors instead, such that:
+
+  - the first list entry is assigned to a new hotcue at hotcue slot \#1
+  - the second list entry is assigned to a new hotcue at hotcue slot \#2
+  - ...
+  - the nth list entry is assigned to a new hotcue at hotcue slot \#n
+  - the first list entry is assigned to a new hotcue at hotcue slot
+    \#n+1
+  - the second list entry is assigned to a new hotcue at hotcue slot
+    \#n+2
+  - ...
+
+Since there is no `is_default_color` flag, it is not possible to
+distinguish hotcues whose color has been set by the "default color"
+preference at creation time and hotcues whose color has been manually
+set by the user (e.g. via the Cue Menu Popup).
+
+If the user wants to mass-replace cue colors, a tool will be provided to
 replace all cues of one color to a new color.
 
-Pros:
+### Migration
+
+Colors with the "no color" state in the database schema currently in
+master will be set to the new default color. Ideally, this would be
+"white" since white is not an actual color (and thus transports the
+previous "no color" state) and also looks good in all skins.
+
+If a user does not want to use the cue color feature but dislikes the
+default color and wants to restore the exact cue button color as in
+previous versions of Mixxx, the color-mass-replace tool can be used to
+replace the default color with the previous button color of the skin in
+use manually.
+
+### Pros & Cons of this approach
+
+#### Pros
 
   - Trivially simple to implement
   - Trivially simple for users to understand
@@ -41,8 +73,12 @@ Pros:
   - Find-and-replace tool would also be useful if the user wants to
     change the colors of cues they have manually set the color of.
 
-Cons:
+#### Cons
 
+  - By default, the look of hotcue buttons with previously uncolored
+    hotcues will change (e.g. red hotcue buttons in the LateNight skin
+    will turn white), but the original look can be restored using the
+    mass-color-replace tool (see above).
   - Would not maintain "no color" state from Rekordbox. However,
     Rekordbox always shows "memory cues" (what Mixxx calls "hot cues",
     although Rekordbox has a different meaning for "hot cue") as orange.

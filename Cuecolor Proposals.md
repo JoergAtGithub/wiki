@@ -53,9 +53,8 @@ replace all cues of one color to a new color.
 ### Migration
 
 Colors with the "no color" state in the database schema currently in
-master will be set to the new default color. Ideally, this would be
-"white" since white is not an actual color (and thus transports the
-previous "no color" state) and also looks good in all skins.
+master will be set to the new default color. Ideally, this would be a
+color that looks good in all skins.
 
 If a user does not want to use the cue color feature but dislikes the
 default color and wants to restore the exact cue button color as in
@@ -77,8 +76,8 @@ use manually.
 
   - By default, the look of hotcue buttons with previously uncolored
     hotcues will change (e.g. red hotcue buttons in the LateNight skin
-    will turn white), but the original look can be restored using the
-    mass-color-replace tool (see above).
+    will turn to the new default color), but the original look can be
+    restored using the mass-color-replace tool (see above).
   - Would not maintain "no color" state from Rekordbox. However,
     Rekordbox always shows "memory cues" (what Mixxx calls "hot cues",
     although Rekordbox has a different meaning for "hot cue") as orange.

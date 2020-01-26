@@ -137,16 +137,33 @@ One possible solution is implemented in
 It uses black (0) in the database color as indicator that the user has
 not selected a color. This color is replaced on the fly with the
 selected default, which can be off palette color to keep the
-intermediate state or plette color which replaces the 0 color in the
+intermediate state or palette color which replaces the 0 color in the
 database color as well. The 0 replacement is an implementation detail of
 the DAO class. For the rest of Mixxx and from the user perspective cues
 have always a color.
 
 The user has the option to select a palette color for default (1;2) if
-he likes to get immediately rid of the default state. He may alternative
-select the skin color (default), a off palette default color or cue
-color by number, if he wants to postpone the decision of a suitable
-default color.
+he likes to get immediately rid of the default state this is the
+"individual stored default state". He may alternative select the skin
+color (default), a off palette default color or cue color by number, if
+he wants to postpone the decision of a suitable default color. The
+actual color is set on the fly.
+
+**Compasion**
+
+| Feature                                       | Mixxx alpha | On the fly default | individual stored default |
+| --------------------------------------------- | ----------- | ------------------ | ------------------------- |
+| Unabigious color for skin and mapping         | ✕           | ✔                  | ✔                         |
+| No "No color" in UI                           | ✕           | ✔                  | ✔                         |
+| Default color by skin                         | ✔           | ✔                  | ✕                         |
+| Default by mapping                            | ✔           | possible           | ✕                         |
+| Default by deck                               | possible    | possible           | ✕                         |
+| Don't touch tracks with no cue colors         | ✔           | ✔                  | ✕                         |
+| Lossless Roundtrip RecordBox                  | possible    | possible           | ✕                         |
+| Lossless Roundtrip Serato                     | ✕           | ✕                  | ✔                         |
+| Keep exact external color code                | ✕           | ✔                  | ✔                         |
+| Instant change of default color               | ✔           | ✔                  | ✕                         |
+| Switch to one default from cue by number mode | ✕           | ✔                  | ✕                         |
 
 **Other solution**
 

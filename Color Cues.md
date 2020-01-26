@@ -159,7 +159,7 @@ actual color is set on the fly.
 | Default by mapping                            | ✔           | possible           | ✕                         |
 | Default by deck                               | possible    | possible           | ✕                         |
 | Don't touch tracks with no cue colors         | ✔           | ✔                  | ✕                         |
-| Lossless Roundtrip RecordBox                  | possible    | possible           | ✕                         |
+| Lossless Roundtrip RecordBox                  | ✕           | possible           | ✕                         |
 | Lossless Roundtrip Serato                     | ✕           | ✕                  | ✔                         |
 | Keep exact external color code                | ✕           | ✔                  | ✔                         |
 | Instant change of default color               | ✔           | ✔                  | ✕                         |

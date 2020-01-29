@@ -1,8 +1,8 @@
-# Student Project Ideas for Google Summer of Code 2019
+# Student Project Ideas for Google Summer of Code 2020
 
 This page lists the suggested projects for students working on Mixxx as
 part of [Google Summer of
-Code 2019](https://summerofcode.withgoogle.com/). Each of these projects
+Code 2020](https://summerofcode.withgoogle.com/). Each of these projects
 represents something that we think would make a really big difference to
 our users and that we as a development team are really excited about. If
 you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)

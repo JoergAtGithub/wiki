@@ -17,12 +17,18 @@ Mixxx is planning to apply for a slot in Google Summer of Code 2020\!
 
 ### 2019
 
-Mixxx is planning to apply for a slot in Google Summer of Code 2019\!
+Mixxx applied as a mentor organization for [Google Summer of
+Code, 2019](https://www.google-melange.com/gsoc/homepage/google/gsoc2019?PageSpeed=noscript)
+but was declined this year in order to make room for newer organizations
 
-  - See the list of suggested projects: **[GSoC 2019
-    Ideas](gsoc2019ideas)**
-  - Advice for students thinking of applying: [GSoC Advice for
-    Students](gsocadvice)
+To all the students who were interested, you don't have to get involved
+with Mixxx through GSoC\! If you'd like we can work with you to scope
+out a project and get your work in the hands of DJs worldwide. Working
+on Mixxx (and open source in general) is a great learning experience and
+also looks good on a resume.
+
+  - See the list of suggested projects: \[\[gsoc2019ideas|GSoC 2015
+    Ideas\]
 
 ### 2018
 

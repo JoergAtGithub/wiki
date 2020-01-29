@@ -27,7 +27,7 @@ out a project and get your work in the hands of DJs worldwide. Working
 on Mixxx (and open source in general) is a great learning experience and
 also looks good on a resume.
 
-  - See the list of suggested projects: [GSoC 2015 Ideas](gsoc2019ideas)
+  - See the list of suggested projects: [GSoC 2019 Ideas](gsoc2019ideas)
 
 ### 2018
 

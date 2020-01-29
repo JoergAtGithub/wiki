@@ -4,7 +4,18 @@
 annual program that provides paid internships for students to work on
 free software projects.
 
-# 2019
+# 2020
+
+Mixxx is planning to apply for a slot in Google Summer of Code 2020\!
+
+  - See the list of suggested projects: **[GSoC 2020
+    Ideas](gsoc2020ideas)**
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
+
+## Past Years
+
+### 2019
 
 Mixxx is planning to apply for a slot in Google Summer of Code 2019\!
 
@@ -12,8 +23,6 @@ Mixxx is planning to apply for a slot in Google Summer of Code 2019\!
     Ideas](gsoc2019ideas)**
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
-
-## Past Years
 
 ### 2018
 

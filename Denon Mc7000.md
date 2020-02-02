@@ -10,8 +10,8 @@
     Guide](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-UserGuide-v1.1.pdf)
   - [Hardware Setting
     Specification](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-Hardware-Settings-Mode-Specification-v1_4.pdf)
-  - [Denon MC7000 Mapping thread within the MIXXX
-    forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
+  - [Find the mapping files in Denon MC7000 Mapping thread inside the
+    MIXXX forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
 
 The Denon MC7000 is a professional DJ controller which has got 4-channel
 capability and dual USB connections. These two USB audio interfaces
@@ -60,10 +60,27 @@ COMPATIBILITY
 ## Mapping
 
 This controller is made for Serato DJ and most of the mapping is made
-for MIXXX accordingly. Anyhow there are several changes made in order to
-have a better experience. If you have any wishes to improve the mapping,
-then please visit the forum and write them into the Denon MC7000 Mapping
+for MIXXX accordingly. Anyhow there are several changes not matching the
+Serato mapping. If you have any wishes to improve the mapping, then
+please visit the forum and write them into the Denon MC7000 Mapping
 thread.
+
+#### User Variables
+
+Please check the \*.js mapping file for user variables to:
+
+  - de-/activate NeedleDrop sensor while a track is playing (default:
+    false)
+  - set the Pitch Fader ranges in % to toggle between them (default: 4,
+    6, 10, 16)
+  - Platter Ring LED mode: single LED on or off (default: 1). Can be
+    switched with SHIFT + Deck button
+  - Vinyl Mode on or off at MIXXX start which also triggers the Platter
+    Ring LED function (default: 1)
+  - Scratch Parameters (default: 33.3, 1/10, 1/10/32)
+  - Jog Parameters (default: 30, 3)
+
+#### Layout and functions
 
 [[/media/denonmc7000-layout.png|]]
 
@@ -106,7 +123,8 @@ right decks.
 corresponding channel.
 
 12\. **Sampler Volume:** Turn this knob to adjust the volume level of
-the software’s sampler.
+the software’s sampler. If the volume is set to 0 then the Sampler banks
+are hidden, otherwise shown.
 
 13\. **Master Level Meters:** These LEDs show the Master Audio signal
 (hardware). **They will not match with the Master Level in MIXXX.**
@@ -294,4 +312,40 @@ this button to sort the tracks by title.*
 length of the entire track. Place your finger on a point along this
 sensor to jump to that point in the track.
 
-55\. \*\*
+55\. **FX On / Select:** Press this button to turn the corresponding
+effect on or off. Press and hold Shift and then press this button to
+select an effect from the list that was enabled in the MIXXX Properties
+FX section.
+
+56\. **FX Level:** Turn this knob to adjust the level of the
+corresponding effect. The FX On button under the knob must be lit for
+this knob to function.
+
+57\. **FX Beats:** Turn this knob to adjust the Wet/Dry rate of the
+effects.
+
+58\. **FX Tap:** Press this button will activate effects for the Master
+Signal instead of the individual Decks. Press and hold Shift and then
+press this button to have the effects also on the Headphone preview.
+
+Front Panel. **Crossfader Contour:** Adjusts the slope of the crossfader
+curve. Turn the knob to the left for a smooth fade (mixing) or to the
+right for a sharp cut (scratching). The center position is a typical
+setting. This seams to have a very minor effect in MIXXX.
+
+#### LEDs
+
+As mentioned before the Master Volume Meter is not correlated to MIXXX
+GUI as the controller handles that in Hardware.
+
+The Channel Volume Meters matches to the ones in MIXXX GUI
+
+Button LEDs are only mapped for the first function. As you press and
+hold Shift then the secondary function has no illumination (yet).
+
+Platter Ring LEDs are correlated with the VINYL button.
+
+  - If VINYL is set ON then the LED follows the 33.3 rpm value and is
+    correlated with the platter movement too.
+  - If VINYL is set OFF the current track position is indicated by the
+    platter LEDs where top is start and end.

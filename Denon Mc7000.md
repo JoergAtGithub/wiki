@@ -66,6 +66,12 @@ improve the mapping, then please visit the forum and write them into the
 [Denon MC7000
 Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
+Download the \*.xml and the \*.js file from the first post within the
+[Denon MC7000
+Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
+[Read here where to place the mapping files for your
+system.](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)
+
 ### User Variables
 
 Please check the \*.js mapping file for user variables to:

@@ -59,18 +59,18 @@ analogue (vinyl) and digital sources.
 
 ## Mapping
 
-This controller is made for Serato DJ and most of the mapping is made
-for MIXXX accordingly. Anyhow, there are several differences for
-functions not matching the Serato mapping. If you have any wishes to
-improve the mapping, then please visit the forum and the [Denon MC7000
-Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
-
-Download the \*.xml and the \*.js file from the first post within the
-[Denon MC7000
+To get the mapping just download the \*.xml and the \*.js file from the
+first post within the [Denon MC7000
 Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 Read here [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)
 for your system.
+
+This controller is made for Serato DJ and most of the mapping is made
+for MIXXX accordingly. Anyhow, there are several differences for
+functions not matching the Serato mapping. If you have any wishes to
+improve the mapping, then please visit the [Denon MC7000
+Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
 ### User Variables
 

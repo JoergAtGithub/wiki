@@ -2,14 +2,14 @@
 
 [[/media/hardware/DenonDJ-img-MC7000.jpg|DenonDJ-img-MC7000.jpg]]
 
+  - [Find the mapping files in Denon MC7000 Mapping thread inside the
+    MIXXX forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
   - [Manufacturer's product
     page](https://www.denondj.com/professional-dj-controller-for-serato-mc7000xus)
   - [User
     Guide](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-UserGuide-v1.1.pdf)
   - [Hardware Setting
     Specification](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-Hardware-Settings-Mode-Specification-v1_4.pdf)
-  - [Find the mapping files in Denon MC7000 Mapping thread inside the
-    MIXXX forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
 
 ## General
 
@@ -60,9 +60,10 @@ analogue (vinyl) and digital sources.
 ## Mapping
 
 This controller is made for Serato DJ and most of the mapping is made
-for MIXXX accordingly. Anyhow there are several changes not matching the
-Serato mapping. If you have any wishes to improve the mapping, then
-please visit the forum and write them into the [Denon MC7000
+for MIXXX accordingly. Anyhow, there are several differences for
+functions not matching the Serato mapping. If you have any wishes to
+improve the mapping, then please visit the forum and write them into the
+[Denon MC7000
 Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
 ### User Variables

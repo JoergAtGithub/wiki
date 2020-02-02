@@ -11,6 +11,8 @@
   - [Find the mapping files in Denon MC7000 Mapping thread inside the
     MIXXX forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
 
+## General
+
 The Denon MC7000 is a professional DJ controller which has got 4-channel
 capability and dual USB connections. These two USB audio interfaces
 enable two DJs to play together. This controller includes Denon's high
@@ -24,7 +26,7 @@ harmonically match musical keys. The unit’s comprehensive, multi-input
 mixer also provides access to line/phono inputs from both authentic
 analogue (vinyl) and digital sources.
 
-FEATURES
+### FEATURES
 
   - 4-channel DJ controller with digital mixer
   - Dual USB audio interfaces - connect 2 computers at once
@@ -34,7 +36,7 @@ FEATURES
   - 2 mic inputs with dedicated controls
   - XLR Booth and Master connections
 
-COMPATIBILITY
+### COMPATIBILITY
 
   - Windows users need to install the Windows Driver from [Denon
     Download Site](https://www.denondj.com/downloads)
@@ -63,7 +65,7 @@ Serato mapping. If you have any wishes to improve the mapping, then
 please visit the forum and write them into the Denon MC7000 Mapping
 thread.
 
-#### User Variables
+### User Variables
 
 Please check the \*.js mapping file for user variables to:
 
@@ -78,7 +80,7 @@ Please check the \*.js mapping file for user variables to:
   - Scratch Parameters (default: 33.3, 1/10, 1/10/32)
   - Jog Parameters (default: 30, 3)
 
-#### Layout and functions
+### Layout and functions
 
 [[/media/denonmc7000-layout.png|]]
 
@@ -331,7 +333,7 @@ curve. Turn the knob to the left for a smooth fade (mixing) or to the
 right for a sharp cut (scratching). The center position is a typical
 setting. This seams to have a very minor effect in MIXXX.
 
-#### LEDs
+### LEDs
 
 As mentioned before the Master Volume Meter is not correlated to MIXXX
 GUI as the controller handles that in Hardware.

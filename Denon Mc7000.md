@@ -62,8 +62,8 @@ analogue (vinyl) and digital sources.
 This controller is made for Serato DJ and most of the mapping is made
 for MIXXX accordingly. Anyhow there are several changes not matching the
 Serato mapping. If you have any wishes to improve the mapping, then
-please visit the forum and write them into the Denon MC7000 Mapping
-thread.
+please visit the forum and write them into the [Denon MC7000
+Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
 ### User Variables
 

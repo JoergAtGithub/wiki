@@ -1,5 +1,7 @@
 # Denon MC7000
 
+(THIS SITE IS STILL UNDER CONSTRUCTION)
+
 [[/media/hardware/DenonDJ-img-MC7000.jpg|DenonDJ-img-MC7000.jpg]]
 
   - [Manufacturer's product

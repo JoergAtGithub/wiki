@@ -79,7 +79,7 @@ one USB Port is connected the controller activates this automatically.
 pre-fader, pre-EQ audio signal for the channel.
 
 4\. **Channel Level Meters:** These LEDs display the audio signal level
-of the channel.
+of the channel as in MIXXX GUI.
 
 5\. **Channel EQ:** Turn these knobs to boost or cut the high,
 mid-range, and low frequencies for the channel.
@@ -108,5 +108,190 @@ corresponding channel.
 12\. **Sampler Volume:** Turn this knob to adjust the volume level of
 the software’s sampler.
 
-13\. **Master Level Meters:** These LEDs show the Master Audio signal in
-hardware. **They will not match with the Master Level in MIXXX.**
+13\. **Master Level Meters:** These LEDs show the Master Audio signal
+(hardware). **They will not match with the Master Level in MIXXX.**
+
+14\. **Master Level:** Turn this knob to adjust the volume level of the
+master outputs (hardware).
+
+15\. **Booth Level:** Turn this knob to adjust the volume level of the
+booth outputs (hardware).
+
+16\. **Mic On/Off:** Press this button to activate/deactivate the
+microphones (hardware).
+
+17\. **Mic Level:** Turn these knobs to adjust the volume levels of the
+corresponding microphone inputs (hardware). The Peak light next to each
+knob indicates the current signal level by its color: green (low), amber
+(normal/optimal), or red (maximum/peak).
+
+18\. **MIC settings: Left Deck:** *Mic EQ:* Turn these knobs to boost or
+cut the high and low frequencies for Mic 1. **Right Deck:** *Tone:* Turn
+this knob to adjust the tone of the Mic 2 audio signal. *Mic Echo
+Level:* Turn this knob to adjust the amount of the echo effect on the
+microphones’ audio signal. This works on both: Mic 1 and Mic 2.
+
+19\. **MIC switch: Left Deck:** Talkover/Post: Press this button to use
+the “talkover” feature, which automatically reduces the volume level of
+the master mix when you speak into the microphones. Press and hold Shift
+and then press this button to activate/deactivate the “post” feature.
+When on, the microphones’ signal will be sent to the Booth Outputs. When
+off, the microphones’ signal will not be routed to the Booth Outputs.
+**Right Deck:** Echo On/Off: Press this button to activate or deactivate
+the echo effect on the microphones’ audio signal.
+
+20\. **Phones Level:** Adjusts the volume of the headphones (hardware).
+
+21\. **Phones Mix:** Adjusts the software’s audio output to the
+headphones, mixing between the cue output and the master mix output
+(hardware).
+
+22\. **Split Cue:** When this switch is in the On position, the
+headphone audio will be “split” such that all channels sent to cue
+channel are summed to mono and sent to the left headphone channel and
+the master mix is summed to mono and sent to the right channel. When the
+switch is in the Off position, the cue channel and master mix will be
+“blended” together.
+
+23\. **Deck:** Selects which deck in the software is controlled by that
+hardware deck. The left deck can control Deck 1 or 3; the right deck can
+control Deck 2 or 4.
+
+24\. **Shift:** Press and hold this button to access secondary functions
+of other controls.
+
+25\. **Sync / Sync Off:** Press this button to automatically match the
+corresponding deck’s tempo with the tempo and phase of the opposite
+deck. Press again to deactivate Sync. Hold this button down for one sec
+to permanently match the tempo.
+
+26\. **Cue / Track Start:** During playback, press this button to return
+the track to the cue point. If a cue point is not set yet, then press
+this button to set it at the current track position. If the deck is
+paused, press and hold this button to play the track from the cue point.
+Release the button to return the track to the cue point and pause it. To
+continue playback without returning to the cue point, press and hold
+this button and then press the Play button, afterwards release cue
+button. Press and hold Shift and then press this button to return to the
+start of the track.
+
+27\. **Play/Pause / Stutter:** This button pauses or resumes playback.
+Press and hold Shift and then press this button to “stutter-play” the
+track from the last set cue point.
+
+28\. **Platter:** This capacitive, touch-sensitive platter controls the
+audio playhead when the wheel is touched and moved. When the Vinyl
+button is on, move the platter to “scratch” the track as you would with
+a vinyl record. When the Vinyl button is off (or if you are touching
+only the side of the platter), move the platter to temporarily adjust
+the track’s speed.
+
+29\. **Stop Time:** Controls the rate at which the track slows to a
+complete stop (“brake time”) during backspin.
+
+30\. **Vinyl:** Press this button to activate/deactivate a “vinyl mode”
+for the platter. When activated, you can use the platter to “scratch”
+the track as you would with a vinyl record.
+
+31\. **Pitch Fader:** Move this fader to adjust the speed (pitch) of the
+track. You can adjust its total range with the Pitch Bend buttons.
+
+32\. **Pitch Bend –/+:** Press and hold one of these buttons to
+momentarily reduce or increase (respectively) the speed of the track.
+Press and hold Shift and then press one of these buttons to set the
+range of the pitch fader.
+
+33\. **Key Lock / Key Sync:** Press this button to activate/deactivate
+Key Lock. When Key Lock is activated, the track’s key will remain the
+same even if you adjust its speed. Press and hold Shift, and then press
+this button to automatically match the corresponding deck’s key with the
+key of the opposite deck.
+
+34\. **Key Select/Reset:** Turn this knob to raise or lower the key of
+the track. Press this knob to reset the track’s key to its original key.
+
+35\. **Pads:** *Currently all Pads are mapped as HotCue. This section
+needs further development.*
+
+36\. **Cue / Cue Loop / Flip:** *This section needs further
+development.* **HELP APPRECIATED**
+
+37\. **Roll / Saved Loop:** *This section needs further development.*
+**HELP APPRECIATED**
+
+38\. **Slicer / Slicer Loop:** *This section needs further development.*
+**HELP APPRECIATED**
+
+39\. **Sampler / Velocity Samp.:** *This section needs further
+development.* **HELP APPRECIATED**
+
+40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with
+the length of 8 beats. Press and hold Shift and then press this button
+to toggle the current loop on or off. If the loop is ahead of the
+current play position, the track will keep playing normally until it
+reaches the loop.
+
+41\. **X 1/2 Loop / Loop In:** Press this button to halve the length of
+the current loop. Press and hold Shift and then press this button to
+create a Loop In point at the current Location.
+
+42\. **X 2 Loop / Loop Out:** Press this button to double the length of
+the current loop. Press and hold Shift and then press this button to
+create a Loop Out point at the current Location.
+
+43\. **\< / \> Param 1/2:** These are currently used to beat jump
+backward or forward by 8 beats. Press and hold Shift and then press
+these buttons jumps 32 beats. *This section needs further development.*
+**HELP APPRECIATED**
+
+44\. **Slip:** Press this button to enable or disable Slip Mode. In Slip
+Mode, you can jump to cue points, trigger loop rolls, or use the
+platters, while the track’s timeline continues. In other words, when you
+stop the action, the track will resume normal playback from where it
+would have been if you had never done anything (i.e., as if the track
+had been playing forward the whole time).
+
+45\. **Censor / Rev:** Press this button to activate the Backspin
+feature. If the track did not stop yet then when you release the button,
+normal playback will resume. Press and hold Shift and then press this
+button to reverse the playback of the track.
+
+46\. **Adjust/Set:** Press this button to adjust the Beat Grid to the
+current location.
+
+47\. **Slide/Clr:** Press this button to adjust the Beat Grid to another
+playing track.
+
+48\. **Select/Load Knob:** Turn this knob to navigate through lists.
+Press and hold Shift and then turn this knob to browse quickly through
+the tracks in your library. Press the left side button to load a track
+into the active Deck (1 or 3), press the right side button to load a
+track into the active Deck (2 or 4). Press and hold Shift and push the
+knob to open folders on the left side of the library.
+
+49\. **Sort:** *will be implemented with MIXXX 2.3*
+
+50\. **Back/Fwd/Sort BPM:** Press this button to move to the previous
+window. Press and hold Shift and then press this button to move to the
+next window. *MIXXX 2.3: Press and hold Sort and then press this button
+to sort the tracks by BPM.*
+
+51\. **Load Prep/Open Prep/Sort Key:** Press this button to load the
+currently selected track to the Preview Deck. Press and hold Shift and
+then press this button to start the track in Preview Deck. *MIXXX 2.3:
+Press and hold Sort and then press this button to sort the tracks by
+key.*
+
+52\. **Files/History/Sort Artist:** Press this to maximise the library.
+*MIXXX 2.3: Press and hold Sort and then press this button to sort the
+tracks by artist.*
+
+53\. **Panel/View/Sort Title:** Press this to open and close the FX
+section inside the GUI. *MIXXX 2.3: Press and hold Sort and then press
+this button to sort the tracks by title.*
+
+54\. **Needle Drop Strip:** The length of this strip represents the
+length of the entire track. Place your finger on a point along this
+sensor to jump to that point in the track.
+
+55\. \*\*

@@ -26,7 +26,7 @@ harmonically match musical keys. The unit’s comprehensive, multi-input
 mixer also provides access to line/phono inputs from both authentic
 analogue (vinyl) and digital sources.
 
-### FEATURES
+### Features
 
   - 4-channel DJ controller with digital mixer
   - Dual USB audio interfaces - connect 2 computers at once
@@ -36,7 +36,7 @@ analogue (vinyl) and digital sources.
   - 2 mic inputs with dedicated controls
   - XLR Booth and Master connections
 
-### COMPATIBILITY
+### Compatibility
 
   - Windows users need to install the Windows Driver from [Denon
     Download Site](https://www.denondj.com/downloads)
@@ -311,7 +311,8 @@ this button to sort the tracks by title.*
 
 54\. **Needle Drop Strip:** The length of this strip represents the
 length of the entire track. Place your finger on a point along this
-sensor to jump to that point in the track.
+sensor to jump to that point in the track. Press and hold Shift to jump
+to a position while a track is currently playing.
 
 55\. **FX On / Select:** Press this button to turn the corresponding
 effect on or off. Press and hold Shift and then press this button to
@@ -339,14 +340,14 @@ setting. This seams to have a very minor effect in MIXXX.
 As mentioned before the Master Volume Meter is not correlated to MIXXX
 GUI as the controller handles that in Hardware.
 
-The Channel Volume Meters matches to the ones in MIXXX GUI
+The Channel Volume Meters matches to the ones in MIXXX GUI.
 
 Button LEDs are only mapped for the first function. As you press and
 hold Shift then the secondary function has no illumination (yet).
 
 Platter Ring LEDs are correlated with the VINYL button.
 
-  - If VINYL is set ON then the LED follows the 33.3 rpm value and is
-    correlated with the platter movement too.
-  - If VINYL is set OFF the current track position is indicated by the
-    platter LEDs where top is start and end.
+  - If VINYL Mode is set ON then the LED follows the 33.3 rpm value and
+    is correlated with the platter movement too.
+  - If VINYL Mode is set OFF the current track position is indicated by
+    the Platter LEDs starting at the top.

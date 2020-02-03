@@ -18,7 +18,7 @@
     Repository](https://github.com/WarkerAnhaltRanger/mixxx/tree/master/res/controllers)
 
 The Pioneer DDJ-400 is a 2 deck DJ controller with integrated audio
-interface designed for Rekordbox DJ.
+interface designed for rekordbox DJ.
 
 ## Audio Setup
 
@@ -45,14 +45,14 @@ found on the specified page in the User Manual in the Links section.
 | 1                       | \[LOAD\] buttons                           | loads the selected tracks to the respective decks                                                                                                                |
 | 1                       | \[LOAD\] buttons pressed twice             | *Not yet mapped.* (instant double / Clone from deck)                                                                                                             |
 | 1                       | \[SHIFT\] + \[LOAD\] button (left)         | *Not yet mapped.* (Sort library by criteria)                                                                                                                     |
-| 1                       | \[SHIFT\] + \[LOAD\] button (right)        | *Not yet mapped.* (enlage / shrink library view)                                                                                                                 |
-| 2                       | Rotary Selector                            | Turn to move tracklist cursor up/down.                                                                                                                           |
-| 2                       | Rotary Selector Press                      | cycle focus between Folderview an Tacklist                                                                                                                       |
+| 1                       | \[SHIFT\] + \[LOAD\] button (right)        | *Not yet mapped.* (enlarge / shrink library view)                                                                                                                |
+| 2                       | Rotary Selector                            | Turn to move track list cursor up/down.                                                                                                                          |
+| 2                       | Rotary Selector Press / \[SHIFT\] + press  | cycle focus between folder view an track list                                                                                                                    |
 | 2                       | \[SHIFT\] + Rotary Selector                | Turn to zoom in or out the Waveform on the Deck which Shift button is pressed                                                                                    |
 | Deck section (p. 6 - 7) |                                            |                                                                                                                                                                  |
 | No.                     | Control                                    | Function                                                                                                                                                         |
 | 1                       | \[BEAT SYNC\] button                       | Match tempo and phase of other deck. Long press to enable Master Sync.                                                                                           |
-| 1                       | \[SHIFT\] + \[BEAT SYNC\] button           | Cycle Tempofader Ranges between 6%, 10%, 16% and 25%                                                                                                             |
+| 1                       | \[SHIFT\] + \[BEAT SYNC\] button           | Cycle tempo fader ranges between 6%, 10%, 16% and 25%                                                                                                            |
 | 2                       | \[CUE/LOOP CALL \>\] button                | Selects and calls out a cue point or loop point in the Track; while playing a loop doubles the loop length                                                       |
 | 2                       | \[SHIFT\] + \[CUE/LOOP CALL \>\] button    | *Not yet mapped.* (saves cue point while not playing, when playing a loop it saves the loop)                                                                     |
 | 3                       | \[CUE/LOOP CALL \<\] button                | Selects and calls out a cue point or loop point in the Track; while playing a loop halves the loop length                                                        |

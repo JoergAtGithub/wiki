@@ -222,9 +222,9 @@ ignore, e.g.:
 
 You can now start the application, either directly (if it runs on Linux)
 or in a virtual machine running Windows (e.g. VirtualBox or
-qemu/KVM/virt-manager). Note that you have to \[redirect the USB device
+qemu/KVM/virt-manager). Note that you have to [redirect the USB device
 to the virtual
-machine\](<https://blog.wikichoon.com/2014/04/spice-usb-redirection-in-virt-manager.html>)
+machine](https://blog.wikichoon.com/2014/04/spice-usb-redirection-in-virt-manager.html)
 to be able to access the controller from the VM.
 
 ## Additional MIDI tools

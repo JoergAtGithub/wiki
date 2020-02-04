@@ -371,3 +371,4 @@ Beta 11:
 
   - a lot of more functionality
   - small bug fixes
+  - Code cleaning

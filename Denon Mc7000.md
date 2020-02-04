@@ -2,8 +2,8 @@
 
 [[/media/hardware/DenonDJ-img-MC7000.jpg|DenonDJ-img-MC7000.jpg]]
 
-  - [Find the mapping files in Denon MC7000 Mapping thread inside the
-    MIXXX forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
+  - [Denon MC7000 Mapping thread inside the MIXXX
+    forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
   - [Manufacturer's product
     page](https://www.denondj.com/professional-dj-controller-for-serato-mc7000xus)
   - [User
@@ -60,8 +60,13 @@ analogue (vinyl) and digital sources.
 ## Mapping
 
 To get the mapping just download the \*.xml and the \*.js file from the
-first post within the [Denon MC7000
-Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
+forum or here:
+
+  - [Denon MC7000 Mapping \*.xml
+    file](https://www.mixxx.org/forums/download/file.php?id=2800)
+  - [Denon MC7000 Mapping \*.js
+    file](https://www.mixxx.org/forums/download/file.php?id=2800)
+
 Read here [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)
 for your system.
@@ -69,7 +74,7 @@ for your system.
 This controller is made for Serato DJ and most of the mapping is made
 for MIXXX accordingly. Anyhow, there are several differences for
 functions not matching the Serato mapping. If you have any wishes to
-improve the mapping, then please visit the [Denon MC7000
+improve the mapping, then please discuss it in the [Denon MC7000
 Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
 ### User Variables
@@ -357,3 +362,10 @@ Platter Ring LEDs are correlated with the VINYL button.
     is correlated with the platter movement too.
   - If VINYL Mode is set OFF the current track position is indicated by
     the Platter LEDs starting at the top.
+
+### Change Log
+
+Beta 11:
+
+  - a lot of more functionality
+  - small bug fixes

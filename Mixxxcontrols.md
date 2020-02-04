@@ -300,6 +300,12 @@ have a different purpose (playing samples). Any control listed above for
 | \[Sampler\],SaveSamplerBank\[152\] |  | binary |  | Save sampler configuration. Make currently loaded tracks in samplers instantly available at a later point. |  | Opens file dialog. Configuration file can be named and saved. |  |
 | \[Sampler\],LoadSamplerBank\[153\] |  | binary |  | Load saved sampler configuration file and add tracks to the available samplers.                            |  | Opens file dialog. Select configuration file.                 |  |
 
+### \[AuxiliaryN\]
+
+You can map audio interface's inputs to auxiliary channel and connect
+external audio source to it. Then use your midi controller to control
+it's volume and some other parameters.
+
 ### \[PreviewDeckN\]
 
 Preview decks in Mixxx are identical to regular decks. Any control

@@ -182,6 +182,51 @@ that control, which you can ignore for the purposes of mapping.
     [MIDI Controller Mapping File
     Format](midi_controller_mapping_file_format#inputs) page.
 
+## Sniffing MIDI messages sent your controller by commercial DJ applications
+
+If you're running Linux, you can eavesdrop on the MIDI messages that are
+sent to your controller.
+
+First, you need to load the kernel module that allows monitoring the USB
+connection:
+
+    $ sudo modprobe usbmon
+
+Now run `lsusb` to find out with USB bus your controller is connected
+to, e.g.:
+
+    $ lsusb
+    [...]
+    Bus 001 Device 016: ID 0582:0208 Roland Corp. DJ-505
+
+The controller in the example is connected to Bus 001, which means that
+you need to use the `usbmon1` interface for capturing data.
+
+Next, you can start monitoring the outgoing USB packets by using
+`tshark` or `Wireshark`. If you're using the former, just run:
+
+    $ tshark -i usbmon1 -Y 'usb.capdata && usb.src == host' -e usb.capdata -Tfields
+    Capturing on 'usbmon1'
+
+This will print all outgoing USB packets on interface `usbmon1` that
+have a `usb.capdata` field (that contains the MIDI messages).
+
+The captured data will start with an extra byte which you'll have to
+ignore, e.g.:
+
+| Captured USB data | MIDI message |
+| ----------------- | ------------ |
+| `0990007f`        | `90 00 7f`   |
+| `0bbf6400`        | `bf 64 00`   |
+| `09900100`        | `90 01 00`   |
+
+You can now start the application, either directly (if it runs on Linux)
+or in a virtual machine running Windows (e.g. VirtualBox or
+qemu/KVM/virt-manager). Note that you have to \[redirect the USB device
+to the virtual
+machine\](<https://blog.wikichoon.com/2014/04/spice-usb-redirection-in-virt-manager.html>)
+to be able to access the controller from the VM.
+
 ## Additional MIDI tools
 
 ### Linux

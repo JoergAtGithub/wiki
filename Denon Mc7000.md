@@ -2,6 +2,8 @@
 
 [[/media/hardware/DenonDJ-img-MC7000.jpg|DenonDJ-img-MC7000.jpg]]
 
+### Useful Links
+
   - [Denon MC7000 Mapping thread inside the MIXXX
     forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
   - [Manufacturer's product

@@ -302,9 +302,11 @@ have a different purpose (playing samples). Any control listed above for
 
 ### \[AuxiliaryN\]
 
-You can map audio interface's inputs to auxiliary channel and connect
-external audio source to it. Then use your midi controller to control
-it's volume and some other parameters.
+You can map audio interface's inputs to mixxx's auxiliary input channels
+and connect external audio source to it (cellphone, mp3 player). Then
+you can use your midi controller to control its volume and some other
+parameters (orientation, gain, volume), apply effects and use listen
+function.
 
 ### \[PreviewDeckN\]
 

@@ -182,10 +182,11 @@ that control, which you can ignore for the purposes of mapping.
     [MIDI Controller Mapping File
     Format](midi_controller_mapping_file_format#inputs) page.
 
-## Sniffing MIDI messages sent your controller by commercial DJ applications
+## Sniffing MIDI messages sent to your controller
 
 If you're running Linux, you can eavesdrop on the MIDI messages that are
-sent to your controller.
+sent to your controller by commercial DJ applications like Serato or
+Traktor.
 
 First, you need to load the kernel module that allows monitoring the USB
 connection:

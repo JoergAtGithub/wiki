@@ -128,6 +128,10 @@ provides significant efficiency gains to developers. Use double indent
 (8-spaces) for broken lines or align with the opening "(" in the line
 above for hanging indents.
 
+For Mixxx's clang-format compatibility: \* Use double indent (8-spaces)
+for broken lines \* Break line after binary operators. \* If you break a
+list of function parameters, put each parameter on a single line.
+
 # C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team

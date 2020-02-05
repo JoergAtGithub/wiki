@@ -124,9 +124,7 @@ indent then you will be asked to change it.
 Please configure your editor to have a max column-width of 80-columns.
 While it is not a strict requirement, 80-column cleanliness makes it
 easy to tile multiple buffers of code across a laptop screen, which
-provides significant efficiency gains to developers. Use double indent
-(8-spaces) for broken lines or align with the opening "(" in the line
-above for hanging indents.
+provides significant efficiency gains to developers.
 
 For Mixxx's clang-format compatibility (ColumnLimit: 0):
 

@@ -521,13 +521,15 @@ Note that this only works for controls manipulated through
 `engine.setValue()` or `engine.setParameter()` in a script. It does not
 work for controls mapped in an XML file.
 
-If you change the function of an absolute control (one that has hard
-stops at max and min positions) that is controlling MixxxControls with
-soft-takeover enabled, you will need to tell Mixxx each time you change
-what the physical control is manipulating to avoid an abrupt jump when
-switching the physical control back. Do this with the following
-function, supplying the MixxxControl you're switching control *away*
-from:
+If you change the functionality of an absolute control (one that has
+hard stops, max and min position, not infinite encoder) which is
+controlling [mixxxcontrols](mixxxcontrols) and has soft-takeover
+enabled, you will need to tell Mixxx each time you change its
+functionality (e.g. press *shift* button) what physical rotary you are
+manipulating. This will prevent an abrupt jump to its current value from
+the old one, when switching the old functionality back (i.e. *unshift*).
+Do this with the following function, supplying the MixxxControl you're
+switching control *away* from:
 
 ``` javascript
 engine.softTakeoverIgnoreNextValue("[Channel1]", "rate");

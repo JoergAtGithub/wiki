@@ -128,7 +128,7 @@ provides significant efficiency gains to developers. Use double indent
 (8-spaces) for broken lines or align with the opening "(" in the line
 above for hanging indents.
 
-For Mixxx's clang-format compatibility:
+For Mixxx's clang-format compatibility (ColumnLimit: 0):
 
   - Use double indent (8-spaces) for broken lines
   - Break line after binary operators. 

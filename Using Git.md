@@ -57,6 +57,22 @@ computer to match the latest updates, run
 
 to switch to the upstream master branch.
 
+  
+If you get an error that says:
+
+``` bash
+error: Your local changes to the following files would be overwritten by checkout:
+some/file/path.h
+another/file/name.cpp
+Please commit your changes or stash them before you switch branches.
+Aborting
+```
+
+You can discard your local changes by '' git reset --hard'' or `git
+checkout -t -f remote/branch`
+
+  
+  
 Configure Git so that you push to your fork by default for new branches:
 
     git config remote.pushDefault origin

@@ -242,20 +242,29 @@ key of the opposite deck.
 34\. **Key Select/Reset:** Turn this knob to raise or lower the key of
 the track. Press this knob to reset the track’s key to its original key.
 
-35\. **Pads:** *Currently all Pads are mapped as HotCue. This section
-needs further development.*
+35\. **Pads:** Performance PADs have different functions based on the
+PAD Mode described below.
 
-36\. **Cue / Cue Loop / Flip:** *This section needs further
-development.* **HELP APPRECIATED**
+36\. **Cue / Cue Loop / Flip:**
 
-37\. **Roll / Saved Loop:** *This section needs further development.*
-**HELP APPRECIATED**
+  - HOT CUE is working for all Decks. Push a Performance PAD to set or
+    play a HOT CUE. Press and hold Shift to delete HOT CUE.
+  - *This section needs further development.* **HELP APPRECIATED**
 
-38\. **Slicer / Slicer Loop:** *This section needs further development.*
-**HELP APPRECIATED**
+37\. **Roll / Saved Loop:**
 
-39\. **Sampler / Velocity Samp.:** *This section needs further
-development.* **HELP APPRECIATED**
+  - *This section needs further development.* **HELP APPRECIATED**
+
+38\. **Slicer / Slicer Loop:**
+
+  - *This section needs further development.* **HELP APPRECIATED**
+
+39\. **Sampler / Velocity Samp.:**
+
+  - SAMPLER is working to start and stop 16 samplers aligned to the GUI:
+  - 01 02 03 04 05 06 07 08
+  - 09 10 11 12 13 14 15 16
+  - *This section needs further development.* **HELP APPRECIATED**
 
 40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with
 the length of 8 beats. Press and hold Shift and then press this button

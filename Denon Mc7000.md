@@ -367,8 +367,14 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Change Log
 
-Beta 11:
+Beta 0.12:
 
-  - a lot of more functionality
-  - small bug fixes
-  - Code cleaning
+  - first introduction to PAD Modes
+  - HOT CUE working
+  - SAMPLER working
+
+<!-- end list -->
+
+  - known issues: 
+  - LEDs are not switching over from one mode to the other when
+    switching Decks, please push PAD Mode button once again.

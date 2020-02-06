@@ -261,8 +261,8 @@ PAD Mode described below.
 
 39\. **Sampler / Velocity Samp.:**
 
-  - SAMPLER is working to start and stop 16 samplers. Position is
-    aligned to the GUI:
+  - SAMPLER is working to load, start and stop the same 8 samplers on
+    all 4 channels.
   - *This section needs further development.* **HELP APPRECIATED**
 
 40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with

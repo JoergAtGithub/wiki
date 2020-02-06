@@ -384,5 +384,5 @@ Beta 0.12:
 <!-- end list -->
 
   - known issues: 
-  - LEDs are not switching over from one mode to the other when
-    switching Decks, please push PAD Mode button once again.
+  - Performance PAD LEDs are still not 100% working, especially if you
+    are in different mode on both channels

@@ -375,7 +375,7 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Change Log
 
-Beta 0.12:
+**Beta 0.12:**
 
   - first introduction to PAD Modes
   - HOT CUE working

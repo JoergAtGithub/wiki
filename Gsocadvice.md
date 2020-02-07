@@ -36,10 +36,11 @@ beginning your application. Here are some ways to get started:
     understanding of Mixxx's capabilities and what people use it for.
   - Introduce yourself on our [Zulip
     chat](https://mixxx.zulipchat.com/). Start a new topic in the \#gsoc
-    stream. **If the first question you ask is clearly answered on this
-    page, you will not be accepted.** Starting by asking a question that
-    is answered here strongly suggests that you lack the ability to work
-    independently.
+    stream. Do not hesitate to ask questions, or ask for a helping hand
+    to get started. Please make sure you have read **this** page
+    carefully before. **If the first question you ask is clearly
+    answered on this page, you will likely not be accepted, because it
+    strongly suggests that you lack the ability to work independently**
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
   - [Test pull requests](testing).

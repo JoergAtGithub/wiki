@@ -49,11 +49,15 @@ beginning your application. Here are some ways to get started:
     code contribution to fix a bug or enhance an existing feature.
   - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
 
-We expect that you make an effort to answer your own questions before
-asking us. We are happy to give you guidance and assist you when you get
-stuck working on code, but we will not do work for you. **If you
-repeatedly ask questions that are clearly answered by documentation
-(including this page), you will not be accepted.**
+We expect that you make an effort to answer your own questions like
+reading the source or exploring this wiki before asking us. But don't
+hesitate to ask if this does not answered your questions in a short
+time.
+
+We are happy to give you guidance and assist you when you get stuck
+working on code, but we will not do work for you. **If your questions
+show us, you have not read the code or not even practiced with Mixxx,
+you will likely not excepted**
 
 ## What Project Should I Work On?
 

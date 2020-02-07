@@ -2,7 +2,7 @@
 
 Thank you for your interest in working on Mixxx with Google Summer of
 Code\! GSoC can be a fun and rewarding way to put your coding skills to
-use by contributing to free software. GSOC students gain valuable
+use by contributing to free software. GSoC students gain valuable
 experience not only in programming, but also collaborating with an
 international community to make awesome software used by thousands of
 people around the world. We welcome you into our community and hope that

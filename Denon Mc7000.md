@@ -375,6 +375,17 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Change Log
 
+**coming changes**
+
+  - eject loaded Sampler using Shift + PAD button
+  - "BEAT GRID - set" to be used for quantize
+
+<!-- end list -->
+
+``` 
+* 
+```
+
 **Beta 0.12:**
 
   - first introduction of working PAD Modes

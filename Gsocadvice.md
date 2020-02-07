@@ -56,8 +56,8 @@ time.
 
 We are happy to give you guidance and assist you when you get stuck
 working on code, but we will not do work for you. **If your questions
-show us, you have not read the code or not even practiced with Mixxx,
-you will likely not excepted**
+show us, you have not explored the code or not even practiced with
+Mixxx, you will likely not excepted**
 
 ## What Project Should I Work On?
 

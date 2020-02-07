@@ -358,13 +358,15 @@ setting. This seams to have a very minor effect in MIXXX.
 
 ### LEDs
 
+The Channel Volume Meters matches to the ones shown in MIXXX GUI. Only
+when clipping the red LED illuminates.
+
 As mentioned before the Master Volume Meter is not correlated to MIXXX
 GUI as the controller handles that in Hardware.
 
-The Channel Volume Meters matches to the ones in MIXXX GUI.
-
-Button LEDs are only mapped for the first function. As you press and
-hold Shift then the secondary function has no illumination (yet).
+Button LEDs are fully mapped for the first function. As you press and
+hold Shift then the secondary function has only got some mappings, e.g.
+flashing TAP and KEY SYNC when activated.
 
 Platter Ring LEDs are correlated with the VINYL button.
 

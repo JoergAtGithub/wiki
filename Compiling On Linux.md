@@ -299,14 +299,14 @@ installed.
     etc.)
 
 On Debian, Clang is provided as a package with a version number
-attached. Using 3.6 as an example, install it like this:
+attached. Using 6.0 as an example, install it like this:
 
-    sudo apt-get install clang-3.6
+    sudo apt-get install clang-6.0
 
-To compile Mixxx using Clang 3.6, before running `scons`:
+To compile Mixxx using Clang 6.0, before running `scons`:
 
-    export CC=clang-3.6
-    export CXX=clang++-3.6
+    export CC=clang-6.0
+    export CXX=clang++-6.0
 
 You can now use clang-specific SCons options.
 

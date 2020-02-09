@@ -399,3 +399,23 @@ Platter Ring LEDs are correlated with the VINYL button.
   - known issues: 
   - Performance PAD LEDs are still not 100% working, especially if you
     are in different mode on both channels
+
+### Wish List
+
+All additional wishes will be listed here:
+
+  - improve Platter Ring LED performance. Currently only 26 signals are
+    sent for one complete turn around for 48 LEDs
+
+## Contact and DJ Web Sites
+
+If you like to contact me then please visit [the
+Forum](http://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) or contact
+me on [Facebook](http://www.facebook.com/OsZ.DJ/).
+
+To check out my performances with this MC7000 using MIXXX please visit
+me on [Mixcloud](http://www.mixcloud.com/DJ_OsZ/uploads/) or
+[Hearthis.at](http://www.hearthis.at/osz/).
+
+A new Website for our DJ Team is also online @ [Techno Connection UK
+Underground fm](http://www.technoconnection.com).

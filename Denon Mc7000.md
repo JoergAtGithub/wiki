@@ -406,6 +406,8 @@ All additional wishes will be listed here:
 
   - improve Platter Ring LED performance. Currently only 26 signals are
     sent for one complete turn around for 48 LEDs
+  - let Platter Ring LEDs flash during the last minute (or other time
+    period) of a track
 
 ## Contact and DJ Web Sites
 

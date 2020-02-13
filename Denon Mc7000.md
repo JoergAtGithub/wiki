@@ -40,24 +40,14 @@ analogue (vinyl) and digital sources.
 
 ### Compatibility
 
+  - Mac users should be just fine connecting the MC7000 and go.
   - Windows users need to install the Windows Driver from [Denon
-    Download Site](https://www.denondj.com/downloads)
-  - Mac users should be just fine connecting the MC7000 and go
+    Download Site](https://www.denondj.com/downloads).
   - Linux users need to know that the internal sound device is not
-    available out-of-the-box, due to non accepted USB clock source. You
-    may just use a different audio interface and do without the MC7000
-    sound device. Anyhow, a workaround is available by removing the
-    clock source check and recompile the kernel as described here:
-  - [How to modify sound/usb/clock.c to get sound
-    working](https://narkive.com/2tDAO87f.11)
-  - [How to compile the Linux
-    Kernel](https://www.cyberciti.biz/tips/compiling-linux-kernel-26.html)
-  - When the Hardware is detected then you have got 2 outputs
-    (Master/Booth out and Headphone) as well as 3 Input devices for
-    Microphones.
-  - I am in contact with the ALSA development team in order to resolve
-    that issue so hopefully the sound device will be supported by the
-    Linux Kernel in the future.
+    available out-of-the-box until Linux Kernel 5.5.3. You may just use
+    a different audio interface and do without the MC7000 internal audio
+    interface or read on [how to patch your
+    Kernel](denon_mc7000#appendixlinux_kernel).
 
 ## Mapping
 

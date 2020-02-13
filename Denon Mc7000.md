@@ -452,9 +452,10 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
   - sudo make install
   - reboot your machine and select the new kernel in Grub boot menu. 
 
-You now have got working sound out of your Denon\!
+You now have got working sound out of your Denon\! When the new kernel
+is installed you are save to remove the complete \~/Kernel directory.
 
-  - to remove all new kernel items just do:
+  - to remove all installed kernel items just do:
   - locate -b -e \*5.x.x\* | xargs -p sudo rm -r *\#remark\#* \*5.x.x\*
     indicates the kernel version to delete (change to your version)
   - sudo update-grub

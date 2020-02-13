@@ -439,7 +439,9 @@ implemented I gonna give the Kernel version number here.
 flavours of Ubuntu, Mint, KDE Neon etc.:
 
   - create a folder named "Kernel" in your home directory.
-  - download the patch and store it in the "Kernel" directory.
+  - download the zipped
+    [patch](https://www.mixxx.org/forums/download/file.php?id=2816) and
+    extract the file into the "Kernel" directory.
   - download the [Kernel source](https://www.kernel.org/) into the
     "Kernel" folder and unpack the file as user. A new sub-folder
     "linux-5.x.x" is generated.
@@ -462,6 +464,6 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
 You now have got working sound out of your Denon\!
 
   - to remove all new kernel items just do:
-  - locate -b -e \*5.5.2\* | xargs -p sudo rm -r *\#remark\#* \*5.5.2\*
-    indicates the kernel version to delete
+  - locate -b -e \*5.x.x\* | xargs -p sudo rm -r *\#remark\#* \*5.x.x\*
+    indicates the kernel version to delete (change to your version)
   - sudo update-grub

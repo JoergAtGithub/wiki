@@ -433,7 +433,7 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
     [patch](https://www.mixxx.org/forums/download/file.php?id=2816) and
     extract the file into the "Kernel" directory.
   - download the [Kernel source](https://www.kernel.org/) into the
-    "Kernel" folder and unpack the file as user. A new sub-folder
+    "Kernel" folder and unpack the file as user. A new sub-folder, e.g.
     "linux-5.x.x" is generated.
   - open a terminal and move into the new generated
     "\~/Kernel/linux-5.x.x" folder
@@ -451,10 +451,9 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
   - sudo make modules\_install
   - sudo make install
   - reboot your machine and select the new kernel in Grub boot menu. 
-
-You now have got working sound out of your Denon\! When the new kernel
-is installed you are save to remove the complete \~/Kernel directory.
-
+  - you should have got working sound out of your Denon now\!
+  - When the new kernel is installed you are save to remove the complete
+    \~/Kernel directory.
   - to remove all installed kernel items just do:
   - locate -b -e \*5.x.x\* | xargs -p sudo rm -r *\#remark\#* \*5.x.x\*
     indicates the kernel version to delete (change to your version)

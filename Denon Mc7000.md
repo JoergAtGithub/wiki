@@ -435,7 +435,8 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
   - download the [Kernel source](https://www.kernel.org/) into the
     "Kernel" folder and unpack the file as user. A new sub-folder
     "linux-5.x.x" is generated.
-  - open a terminal and move into the new generated "linux-5.x.x" folder
+  - open a terminal and move into the new generated
+    "\~/Kernel/linux-5.x.x" folder
   - apply the patch using following command
   - patch -p1 \< ../0001-ALSA-usb-audio-Add-clock-validity-quirk.patch 
   - now copy the existing running kernel configuration to the new one

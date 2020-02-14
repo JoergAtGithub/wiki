@@ -455,6 +455,18 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
   - When the new kernel is installed you are save to remove the complete
     \~/Kernel directory.
   - to remove all installed kernel items just do:
-  - locate -b -e \*5.x.x\* | xargs -p sudo rm -r *\#remark\#* \*5.x.x\*
-    indicates the kernel version to delete (change to your version)
-  - sudo update-grub
+  - locate -b -e \*5.x.x\* | xargs -p sudo rm -r
+
+<!-- end list -->
+
+``` 
+    * remark: *5.x.x* indicates the kernel version to delete (change to your version)
+    * **important:** the copy command will ask for confirmation - **check before confirming**. There should only be items in /boot , /lib/modules and /var/lib/initramfs-tools/. Adjust the "locate" search string accordingly if needed.
+* sudo update-grub
+```
+
+Disclaimer: The method described here is tested using Ubuntu 16.04 and
+mentioned as guidance only. You are solely responsible for your system
+and if you are unsure then consult your Distro documentation. If you are
+very uncertain about compiling or deleting the kernel then wait until
+the patch is available upstream. PS: You can always contact me for help.

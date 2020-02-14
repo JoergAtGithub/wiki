@@ -461,7 +461,7 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
 
 ``` 
     * remark: *5.x.x* indicates the kernel version to delete (change to your version)
-    * **important:** the copy command will ask for confirmation - **check before confirming**. There should only be items in /boot , /lib/modules and /var/lib/initramfs-tools/. Adjust the "locate" search string accordingly if needed.
+    * **important:** the command will list all items to be deleted and ask for confirmation - **check before confirming**. There should only be items in /boot , /lib/modules and /var/lib/initramfs-tools/. Adjust the "locate" search string accordingly if needed.
 * sudo update-grub
 ```
 

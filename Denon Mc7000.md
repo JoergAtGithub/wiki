@@ -468,5 +468,6 @@ flavours of Ubuntu, Mint, KDE Neon etc.:
 Disclaimer: The method described here is tested using Ubuntu 16.04 and
 mentioned as guidance only. You are solely responsible for your system
 and if you are unsure then consult your Distro documentation. If you are
-very uncertain about compiling or deleting the kernel then wait until
-the patch is available upstream. PS: You can always contact me for help.
+very uncertain about compiling or deleting the kernel then better just
+wait until the patch is available upstream. PS: You can always contact
+me for help.

@@ -52,8 +52,8 @@ analogue (vinyl) and digital sources.
 
 ## Mapping
 
-To get the mapping just download the \*.xml and the \*.js file from the
-forum or here:
+To get the mapping just download both, the \*.xml and the \*.js file
+from the forum or here:
 
   - [Denon MC7000 Mapping \*.xml
     file](https://www.mixxx.org/forums/download/file.php?id=2807)

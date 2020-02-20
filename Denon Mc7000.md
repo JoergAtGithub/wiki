@@ -409,5 +409,6 @@ To check out my performances with this MC7000 using MIXXX please visit
 me on [Mixcloud](http://www.mixcloud.com/DJ_OsZ/uploads/) or
 [Hearthis.at](http://www.hearthis.at/osz/).
 
-A new Website for our DJ Team @ [Techno Connection UK Underground
-fm](http://www.technoconnection.com) is also online.
+Listen 24/7 to Techno shows (recorded and live) directly on our website
+[Techno Connection UK Underground fm](http://www.technoconnection.com)
+or at [Radio Garden](https://radio.garden/listen/techno-connection/).

@@ -40,15 +40,15 @@ analogue (vinyl) and digital sources.
 
 ### Compatibility
 
-  - Mac users should be just fine connecting the MC7000 and go.
-  - Windows users need to install the Windows Driver from [Denon
+  - **Mac** users should be just fine connecting the MC7000 and go.
+  - **Windows** users need to install the Windows Driver from [Denon
     Download Site](https://www.denondj.com/downloads).
-  - Linux users need to know that the MC7000 internal audio interface is
-    not available out-of-the-box for older Linux Kernels. You should
-    upgrade your **Kernel** to minimum versions LTS: **4.19.105** or
-    **5.4.21**, stable branch **5.5.5** or current **5.6** (valid at
-    date 2020-02-19). Newer Kernels will surely also provide native
-    audio support for this controller.
+  - **Linux** users need to know that the MC7000 internal audio
+    interface is not available out-of-the-box for older Linux Kernels.
+    You should upgrade your **Kernel** to minimum versions LTS:
+    **4.19.105** or **5.4.21**, stable branch **5.5.5** or current
+    **5.6** (valid at date 2020-02-19). Newer Kernels will surely also
+    provide native audio support for this controller.
 
 ## Mapping
 

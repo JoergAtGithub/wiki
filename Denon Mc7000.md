@@ -411,5 +411,5 @@ me on [Mixcloud](http://www.mixcloud.com/DJ_OsZ/uploads/) or
 [Hearthis.at](http://www.hearthis.at/osz/).
 
 Listen 24/7 to Techno shows (recorded and live) directly on our website
-[Techno Connection UK Underground fm](http://www.technoconnection.com)
-or at [Radio Garden](https://radio.garden/listen/techno-connection/).
+[Techno Connection](http://www.technoconnection.com) or at [Radio
+Garden](https://radio.garden/listen/techno-connection/).

@@ -55,8 +55,8 @@ hesitate to ask if you cannot answer a question on your own.
 
 We are happy to give you guidance and assist you when you get stuck
 working on code, but we will not do work for you. **If your questions
-show us, you have not explored the code or not even practiced with
-Mixxx, you will likely not excepted**
+show us that you have not explored the code nor even practiced using
+Mixxx, you will likely not be accepted.**
 
 ## What Project Should I Work On?
 

@@ -8,7 +8,7 @@ straightforward on Linux. The steps below outline what to do.
 
 Mixxx relies on several external libraries for various features.
 
-### Debian / Ubuntu
+### Debian / Ubuntu / Raspbian
 
 If your distribution is Debian based (such as Ubuntu), you can install
 them by running:
@@ -45,49 +45,6 @@ If you are building Mixxx **2.1**, additionally run:
 ``` bash
 sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
 ```
-
-### Raspberry Pi (Raspian)
-
-If your distribution is Raspian, you can install them by running:
-
-``` bash
-sudo apt-get remove libtag1-vanilla
-sudo apt-get install g++ git scons libqt4-dev libqt4-sql-sqlite libportmidi-dev \
-  libopusfile-dev libshout3-dev libtag1-dev libprotobuf-dev protobuf-compiler \
-  libusb-1.0-0-dev libfftw3-dev libmad0-dev \
-  portaudio19-dev libchromaprint-dev librubberband-dev libsqlite3-dev \
-  libid3tag0-dev libflac-dev libsndfile1-dev libupower-glib-dev liblilv-dev
-sudo apt-get install libjack-dev libjack0 portaudio19-dev # because of Bug #1464120
-sudo apt-get install libfaad-dev libmp4v2-dev # required for M4A support
-sudo apt-get install libmp3lame-dev
-```
-
-If the libopusfile-dev is not avaliable for you, download, build and
-install:
-
-[opus-1.2.1](https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz)
-
-[opusfile-0.9](https://archive.mozilla.org/pub/opus/opusfile-0.9.tar.gz)
-
-``` bash
-sudo apt-get remove g++ g++-4.7
-sudo apt-get autoremove
-sudo apt-get install g++-5
-ln  /usr/bin/g++-5  /usr/bin/g++
-scons -c && scons -j 2 opengles=1 staticlibs=1 optimize=portable
-```
-
-**Important**
-
-You must build in Raspberry pi 3.
-
-Raspberry pi 2 i had the error:
-
-*Error: open CFI at the end of file; missing .cfi\_endproc directive*
-
-It seems a memory limitation.
-
-Tested on: 2017-11-29-raspbian-stretch.img
 
 ### Fedora
 
@@ -255,8 +212,8 @@ If you want to be able to run Mixxx on different types of CPUs, change
 `optimize=native` to `optimize=portable`. If you want to contribute code
 to Mixxx and use a debugger, use `optimize=off`.
 
-To compile on a Raspberry Pi, use the arguments: `optimize=native
-opengles=1 machine=armhf` with scons.
+To compile on a Raspberry Pi (only compatible on Rapsberry Pi 3 and
+later), use the arguments: `optimize=native machine=armhf` with scons.
 
 ### Developer build options
 

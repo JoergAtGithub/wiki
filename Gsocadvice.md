@@ -51,12 +51,11 @@ beginning your application. Here are some ways to get started:
 
 We expect that you make an effort to answer your own questions like
 reading the source or exploring this wiki before asking us. But don't
-hesitate to ask if you cannot answer a question on your own.
-
-We are happy to give you guidance and assist you when you get stuck
-working on code, but we will not do work for you. **If your questions
-show us that you have not explored the code nor even practiced using
-Mixxx, you will likely not be accepted.**
+hesitate to ask if you cannot answer a question on your own. We are
+happy to give you guidance and assist you when you get stuck working on
+code, but we will not do work for you. **If your questions show us that
+you have not explored the code nor even practiced using Mixxx, you will
+likely not be accepted.**
 
 ## What Project Should I Work On?
 

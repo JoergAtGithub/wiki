@@ -40,7 +40,7 @@ beginning your application. Here are some ways to get started:
     to get started. Please make sure you have read **this** page
     carefully before. **If the first question you ask is clearly
     answered on this page, you will likely not be accepted, because it
-    strongly suggests that you lack the ability to work independently**
+    strongly suggests that you lack the ability to work independently.**
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
   - [Test pull requests](testing).

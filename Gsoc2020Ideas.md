@@ -40,6 +40,25 @@ A strong applicant for working on this project would have links to GUI
 designs they have done before. Experience doing UX testing by observing
 people using software would be an advantage.
 
+# AutoDJ Improvements
+
+Users have proposed many ideas for improving AutoDJ. Many users have
+suggested features to make it easier to plan the timing when tracks will
+play in AutoDJ: <https://bugs.launchpad.net/mixxx/+bug/1293980>
+<https://bugs.launchpad.net/mixxx/+bug/1467156>
+<https://bugs.launchpad.net/mixxx/+bug/1568928>
+<https://bugs.launchpad.net/mixxx/+bug/1523252>
+
+Users have suggested ways to make AutoDJ more intuitive to use:
+<https://bugs.launchpad.net/mixxx/+bug/1727747>
+<https://bugs.launchpad.net/mixxx/+bug/1095287>
+<https://bugs.launchpad.net/mixxx/+bug/1334279>
+
+There have also been suggestions for alternate ways to have AutoDJ mix
+the tracks: <https://bugs.launchpad.net/mixxx/+bug/1766164>
+<https://bugs.launchpad.net/mixxx/+bug/1807647>
+<https://bugs.launchpad.net/mixxx/+bug/1384873>
+
 # Measures, Downbeats, Bars and Phrases
 
 Mixxx uses information about the tempo and location of beats for many

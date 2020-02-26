@@ -34,8 +34,10 @@ beginning your application. Here are some ways to get started:
   - Play with Mixxx and explore what it can do. Read the [Mixxx
     manual](https://mixxx.org/manual/latest/) to get a better
     understanding of Mixxx's capabilities and what people use it for.
-  - Introduce yourself on our [Zulip
-    chat](https://mixxx.zulipchat.com/). Start a new topic in the \#gsoc
+  - Introduce yourself early on our [Zulip
+    chat](https://mixxx.zulipchat.com/). **If you have not introduced
+    yourself until a few days before the application deadline, we will
+    not accept your application.** Start a new topic in the \#gsoc
     stream. Do not hesitate to ask questions, or ask for a helping hand
     to get started. Please make sure you have read **this** page
     carefully before. **If the first question you ask is clearly

@@ -91,6 +91,26 @@ backgrounds in music theory and/or playing percussion instruments are
 encouraged to apply for this project, but these are not requirements and
 we welcome your application if you do not have that experience.
 
+# Syncing with external clocks
+
+It can be fun to go beyond pure DJing - you can produce your own live
+music and incorporating it into your sets. To be able to do this
+seamlessly and keep in sync with the other audio sources, a lot of
+hardware like drum machines, grooveboxes, etc. support syncing from/to
+external clocks. Some DJ Controllers even have an integrated drum
+computer (e.g. the \[Roland DJ-505\]) that can be synced to the
+currently playing track. However, Mixxx currently does not support clock
+I/O.
+
+In this project you should integrate support for syncing to different
+clock sources and targets. This should be implemented in a generic way,
+so that Mixxx is able to support different protocols. Building upon
+this, support [MIDI beat clock
+I/O](https://en.wikipedia.org/wiki/MIDI_beat_clock) and [Ableton
+Link](https://ableton.github.io/link/) should be implemented.
+
+Related Launchpad issue: <https://bugs.launchpad.net/mixxx/+bug/682221>
+
 # Changing Tempo Tracks
 
 Currently, Mixxx assumes either that tracks have a constant tempo for

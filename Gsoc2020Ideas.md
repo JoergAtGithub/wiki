@@ -91,6 +91,24 @@ backgrounds in music theory and/or playing percussion instruments are
 encouraged to apply for this project, but these are not requirements and
 we welcome your application if you do not have that experience.
 
+# Saved Hotcue Routines ("Flips")
+
+Cue point juggling, sliding faders *and* playing with effects can be
+quite difficult if you want to do it all at once. This can be mitigated
+by allowing to pre-record your hotcue jumps, so that they will be
+triggered automatically when a certain track position is reached. Serato
+DJ Pro calls this feature ["Serato
+Flip"](https://serato.com/dj/pro/expansions/flip) - [here's an
+example](https://www.youtube.com/watch?v=xD3QP4Qfmlk) where you can see
+it in action.
+
+This project's scope includes implementing the data structures and
+[Mixxx Controls](mixxxcontrols) necessary to save these kinds of edits,
+adding support to Mixxx' engine code and designing a GUI for recording
+them.
+
+Related Launchpad Issue: <https://bugs.launchpad.net/mixxx/+bug/1768113>
+
 # Syncing with external clocks
 
 It can be fun to go beyond pure DJing - you can produce your own live

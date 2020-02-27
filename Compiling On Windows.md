@@ -93,70 +93,66 @@ Go have lunch.
 2.  Start a command prompt (it doesn't need to be a Windows SDK prompt)
     and change into the **MIXXX\_REPO** directory.
 3.  If you are building Mixxx 2.1 or 2.2, create a file called
-    `build.bat` with the following content:
+    `build.bat` with the following content: ` @echo off
+    SETLOCAL
+    REM Clean up after old builds.
+    del /q /f *.exe
+    rmdir /s /q dist32
+    rmdir /s /q dist64
+    
+    REM this can be either release or debug. For development you want to
+    use debug
+    set BUILD_TYPE=release
+    
+    REM This determines if you build a 32bit or 64bit version of mixxx. 
+    REM 32bit = i386, 64bit = amd64
+    set ARCHITECTURE=i386
+    
+    REM set this to the folder where you built the dependencies
+    set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
+    SET BIN_DIR=%WINLIB_PATH%\bin
+    REM make sure the Qt version matches the version in WINLIB_PATH.
+    set QT_VERSION=5.11.2
+    SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
+    
+    if "%ARCHITECTURE%" == "i386" (
+            set TARGET_MACHINE=x86
+            set VCVARS_ARCH=x86
+    ) else ( 
+            set TARGET_MACHINE=amd64
+            set VCVARS_ARCH=x86_amd64
+    )
+    
+    REM Adjust to your environment
+    call "C:\Program Files (x86)\Microsoft Visual
+    Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
+    
+    rem /MP Use all CPU cores.
+    rem /FS force synchronous PDB writes (prevents PDB corruption with
+    /MP)
+    rem /EHsc Do not handle SEH in try / except blocks.
+    set CL=/MP /FS /EHsc
+    
+    set PATH=%BIN_DIR%;%PATH%
+    REM Set the -j value to the number of CPU cores (not HT "virtual"
+    cores but physical cores) you have
+    scons -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE%
+    staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE%
+    qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1
+    optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0
+    build_number_in_title_bar=0 bundle_pdbs=1
+    ENDLOCAL
+         ` This script will setup the build environment and call scons with
+    the appropriate flags. You have to edit the **WINLIB\_PATH**
+    variable and set it to the absolute path of the folder where you
+    compiled the dependencies for mixxx. If you build the environment
+    yourself instead of using the precompiled environment, you will need
+    to adjust the **QTDIR** variable too.
 
 <!-- end list -->
-
-``` 
-@echo off
-SETLOCAL
-REM Clean up after old builds.
-del /q /f *.exe
-rmdir /s /q dist32
-rmdir /s /q dist64
-
-REM this can be either release or debug. For development you want to use debug
-set BUILD_TYPE=release
-
-REM This determines if you build a 32bit or 64bit version of mixxx. 
-REM 32bit = i386, 64bit = amd64
-set ARCHITECTURE=i386
-
-REM set this to the folder where you built the dependencies
-set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
-SET BIN_DIR=%WINLIB_PATH%\bin
-REM make sure the Qt version matches the version in WINLIB_PATH.
-set QT_VERSION=5.11.2
-SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
-
-if "%ARCHITECTURE%" == "i386" (
-  set TARGET_MACHINE=x86
-  set VCVARS_ARCH=x86
-) else ( 
-  set TARGET_MACHINE=amd64
-  set VCVARS_ARCH=x86_amd64
-)
-
-REM Adjust to your environment
-call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
-
-rem /MP Use all CPU cores.
-rem /FS force synchronous PDB writes (prevents PDB corruption with /MP)
-rem /EHsc Do not handle SEH in try / except blocks.
-set CL=/MP /FS /EHsc
-
-set PATH=%BIN_DIR%;%PATH%
-REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
-scons -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE% staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE% qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1 optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0 build_number_in_title_bar=0 bundle_pdbs=1
-ENDLOCAL
- 
-```
-
-This script will setup the build environment and call scons with the
-appropriate flags. You have to edit the **WINLIB\_PATH** variable and
-set it to the absolute path of the folder where you compiled the
-dependencies for mixxx. If you build the environment yourself instead of
-using the precompiled environment, you will need to adjust the **QTDIR**
-variable too. When you are ready, type:
-
-    build.bat
 
 1.  If you are building Mixxx 2.3, create a file called `build.bat` with
-    the following content
-
-<!-- end list -->
-
-    @echo off
+    the following content `@echo off
     SETLOCAL enableDelayedExpansion
     
     if "%1" == "clean" (
@@ -175,36 +171,54 @@ variable too. When you are ready, type:
     REM x86 or x64
     SET LOCAL_PROCESSOR=x64
     
-    REM debug, release or release-fastbuild. Warning: The debug buildenv is not prebuilt so you need to build it yourself.
+    REM debug, release or release-fastbuild. Warning: The debug buildenv
+    is not prebuilt so you need to build it yourself.
     SET LOCAL_BUILDMODE=release-fastbuild
     
-    REM The name of the directory where the libraries are located (and the name of the file to download).
-    REM For the precompiled ones, it is automatically filled from ./build/windows/golden_environment 
-    REM You can replace this detection with the correct name if it does not apply to your setup.
+    REM The name of the directory where the libraries are located (and
+    the name of the file to download).
+    REM For the precompiled ones, it is automatically filled from
+    ./build/windows/golden_environment 
+    REM You can replace this detection with the correct name if it does
+    not apply to your setup.
     set /P LOCAL_WINLIB_NAME=<build/windows/golden_environment
     set LOCAL_WINLIB_NAME=!LOCAL_WINLIB_NAME:PLATFORM=%LOCAL_PROCESSOR%!
-    set LOCAL_WINLIB_NAME=!LOCAL_WINLIB_NAME:CONFIGURATION=%LOCAL_BUILDMODE%!
+    set
+    LOCAL_WINLIB_NAME=!LOCAL_WINLIB_NAME:CONFIGURATION=%LOCAL_BUILDMODE%!
     
     REM %~dp0.. means the parent folder of your mixxx source code.
     SET LOCAL_WINLIB_PARENT=%~dp0..
     
-    REM This sets the number of processors to half or what Windows reports. 
-    REM This is done because most processors have some sort of hyperthreading and we want only real cores.
+    REM This sets the number of processors to half or what Windows
+    reports. 
+    REM This is done because most processors have some sort of
+    hyperthreading and we want only real cores.
     IF %NUMBER_OF_PROCESSORS% GTR 1 (
-      SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%/2
+            SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%/2
     ) ELSE (
-      SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%
+            SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%
     )
     SET SCONS_NUMBER_PROCESSORS=-j%LOCAL_NUMBER_PROCS%
     
-    call ./build/windows/install_buildenv.bat http://downloads.mixxx.org/builds/buildserver/2.3.x-windows/ %LOCAL_WINLIB_NAME% %LOCAL_WINLIB_PARENT%
+    call ./build/windows/install_buildenv.bat
+    http://downloads.mixxx.org/builds/buildserver/2.3.x-windows/
+    %LOCAL_WINLIB_NAME% %LOCAL_WINLIB_PARENT%
     if ERRORLEVEL 1 ENDLOCAL && EXIT /b
     
-    REM skiptest means that we don't want to build and execute the mixxx-test.
-    REM skipinstaller means that we don't want to generate the installer after the build.
-    ./build/appveyor/build_mixxx.bat %LOCAL_PROCESSOR% %LOCAL_BUILDMODE% %LOCAL_WINLIB_PARENT%\%LOCAL_WINLIB_NAME% skiptest skipinstaller
+    REM skiptest means that we don't want to build and execute the
+    mixxx-test.
+    REM skipinstaller means that we don't want to generate the installer
+    after the build.
+    ./build/appveyor/build_mixxx.bat %LOCAL_PROCESSOR% %LOCAL_BUILDMODE%
+    %LOCAL_WINLIB_PARENT%\%LOCAL_WINLIB_NAME% skiptest skipinstaller
     
     ENDLOCAL
+    `
+2.  When you are ready, type:
+
+<!-- end list -->
+
+    build.bat
 
 ## Build 64bit version of Mixxx
 

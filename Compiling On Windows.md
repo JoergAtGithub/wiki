@@ -214,11 +214,7 @@ Go have lunch.
     
     ENDLOCAL
     `
-2.  When you are ready, type:
-
-<!-- end list -->
-
-    build.bat
+2.  When you are ready, type: `build.bat`
 
 ## Build 64bit version of Mixxx
 

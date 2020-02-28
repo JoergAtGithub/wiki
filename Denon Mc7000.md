@@ -370,6 +370,7 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 **coming changes**
 
+  - ROLL section gonna be working
   - eject loaded Sampler using Shift + PAD button
   - "BEAT GRID - set" to be used for quantize
 

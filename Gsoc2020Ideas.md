@@ -174,9 +174,8 @@ next step is extending the MusicBrainz client for retrieving and the
 Mixxx database and storing those IDs. Afterwards your proposed features
 can be added based on these IDs.
 
-Retrieval of UUIDs and a new network communication layer is already work
-in progress:
-[uklotzde/mixxx:musicbrainz](https://github.com/uklotzde/mixxx/tree/musicbrainz).
+Retrieval of UUIDs and a new network communication layer is ready: [PR
+\#2522](https://github.com/mixxxdj/mixxx/pull/2522).
 
 # Aux Tracks
 

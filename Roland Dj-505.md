@@ -177,8 +177,10 @@ but sets a non-rolling beatloop instead.
 
   - **Hot Cue Mode:** Press a pad that is unlit to assign a hot cue
     point to it. If a pad is lit, press it to start playback from the
-    hot cue location. Hold \[SHIFT\] and a pad to clear the hot cue. Use
-    the PARAMETER BUTTONS for moving the beatgrid left/right.
+    hot cue location. Hold \[SHIFT\] and press a pad to clear the hot
+    cue. After setting or using a hot cue, use the PARAMETER BUTTONS to
+    change its color. Use the PARAMETER BUTTONS while holding \[SHIFT\]
+    for moving the beatgrid left/right.
   - **Cue Loop Mode:** When the deck is playing and a pad that is lit is
     pressed, auto loop will start from the location of the hot cue point
     that is assigned to the pad. If the pad is not lit, a hot cue is

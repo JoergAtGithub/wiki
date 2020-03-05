@@ -56,9 +56,9 @@ To get the mapping just download both, the \*.xml and the \*.js file
 from the forum or here:
 
   - [Denon MC7000 Mapping \*.xml
-    file](https://www.mixxx.org/forums/download/file.php?id=2807)
+    file](https://www.mixxx.org/forums/download/file.php?id=2830)
   - [Denon MC7000 Mapping \*.js
-    file](https://www.mixxx.org/forums/download/file.php?id=2808)
+    file](https://www.mixxx.org/forums/download/file.php?id=2829)
 
 Read further [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)

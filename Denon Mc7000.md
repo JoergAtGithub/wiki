@@ -370,15 +370,27 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 **coming changes**
 
-  - ROLL section gonna be working
-  - eject loaded Sampler using Shift + PAD button
-  - "BEAT GRID - set" to be used for quantize
-
-<!-- end list -->
-
 ``` 
 * 
 ```
+
+**Beta 0.13**
+
+  - PAD Modes:
+  - ROLL section is working now with 1/16, 1/8, 1/4, 1/2, 1, 2, 4, 8
+    beat loops
+  - CUE LOOP initially implemented but still with issues
+  - Eject loaded Sampler using Shift + PAD button while in SAMPLER mode
+  - "BEAT GRID - set" to be used for quantize
+  - "SHIFT + AUTOLOOP" to deactivate an active loop
+
+<!-- end list -->
+
+  - known issues:
+  - Performance PAD LEDs are still not 100% working for CUE, CUE LOOP
+    and Sampler modes
+  - CUE LOOP works initially but while playing and a PAD button is
+    pressed then the loop does not start at cue point 
 
 **Beta 0.12:**
 

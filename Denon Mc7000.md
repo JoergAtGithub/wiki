@@ -248,8 +248,10 @@ PAD Mode described below.
 37\. **Roll / Saved Loop:**
 
   - ROLL Mode lets you repeat a number of beats while keep pushing the
-    PAD button down. The SLIP function remains active so that the track
-    continues at the position where it would be running through.
+    PAD button down. From 1st to 8th PAD button the loop is set as 1/16,
+    1/8, 1/4, 1/2, 1, 2, 4 and 8 beats. The SLIP function remains active
+    so that the track continues at the position where it had been
+    playing forward the whole time.
   - *This section needs further development.* **HELP APPRECIATED**
 
 38\. **Slicer / Slicer Loop:**

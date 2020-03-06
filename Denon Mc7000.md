@@ -238,12 +238,18 @@ PAD Mode described below.
 
 36\. **Cue / Cue Loop / Flip:**
 
-  - HOT CUE is working for all Decks. Push a Performance PAD to set or
-    play a HOT CUE. Press and hold Shift to delete HOT CUE.
+  - HOT CUE: Push a Performance PAD to set or play a HOT CUE. Press and
+    hold Shift to delete HOT CUE.
+  - CUE LOOP: Same as above but will additionally activate a loop at the
+    HOT CUE position. This function is initially implemented but got
+    issues still - use carefully.
   - *This section needs further development.* **HELP APPRECIATED**
 
 37\. **Roll / Saved Loop:**
 
+  - ROLL Mode lets you repeat a number of beats while keep pushing the
+    PAD button down. The SLIP function remains active so that the track
+    continues at the position where it would be running through.
   - *This section needs further development.* **HELP APPRECIATED**
 
 38\. **Slicer / Slicer Loop:**
@@ -252,15 +258,19 @@ PAD Mode described below.
 
 39\. **Sampler / Velocity Samp.:**
 
-  - SAMPLER is working to load, start and stop the same 8 samplers on
-    all 4 channels.
+  - SAMPLER: 8 samplers can be triggered from either Deck. Add samplers
+    to the sampler bank pushing a PAD button. If a sampler is loaded
+    then the push will start the sampler, push again while playing will
+    stop it. Press and hold SHIFT and push a PAD button to eject a
+    sampler.
   - *This section needs further development.* **HELP APPRECIATED**
 
 40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with
-the length of 8 beats. Press and hold Shift and then press this button
-to toggle the current loop on or off. If the loop is ahead of the
-current play position, the track will keep playing normally until it
-reaches the loop.
+the length that is selected in the GUI. You may change the length of
+beats by using the 1/2 or X2 buttons. Press and hold Shift and then
+press this button to toggle the current loop on or off. If the loop is
+ahead of the current play position, the track will keep playing normally
+until it reaches the loop.
 
 41\. **X 1/2 Loop / Loop In:** Press this button to halve the length of
 the current loop. Press and hold Shift and then press this button to

@@ -77,10 +77,9 @@ Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
 
 Please check the \*.js mapping file for user variables to:
 
-  - de-/activate NeedleDrop sensor while a track is playing (default:
-    false)
+  - activate NeedleDrop sensor while a track is playing (default: false)
   - set the Pitch Fader ranges in % to toggle between them (default: 4,
-    6, 10, 16)
+    6, 10, 16, 24)
   - Platter Ring LED mode: single LED on or off (default: 1). Can be
     switched with SHIFT + Deck button
   - Vinyl Mode on or off at MIXXX start which also triggers the Platter

@@ -225,7 +225,8 @@ track. You can adjust its total range with the Pitch Bend buttons.
 32\. **Pitch Bend –/+:** Press and hold one of these buttons to
 momentarily reduce or increase (respectively) the speed of the track.
 Press and hold Shift and then press one of these buttons to set the
-range of the pitch fader.
+range of the Pitch Fader to values of 4%, 6%, 10%, 16% and 24%. Can be
+customized within the \*.js file.
 
 33\. **Key Lock / Key Sync:** Press this button to activate/deactivate
 Key Lock. When Key Lock is activated, the track’s key will remain the

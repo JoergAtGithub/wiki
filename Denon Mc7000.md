@@ -385,9 +385,7 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 **coming changes**
 
-``` 
-* 
-```
+  - CUE LOOP improvements
 
 **Beta 0.13**
 

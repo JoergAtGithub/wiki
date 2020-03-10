@@ -250,7 +250,8 @@ In these cases you need to
 [rebase](https://git-scm.com/book/en/Git-Branching-Rebasing) your work
 on the correct branch. For example, the current stable version is 2.2.3
 and you want your changes to be a part of the 2.2.4 release, but you
-based your work on `master`, you need to rebase onto the `2.2` branch.
+based your work on `master` (which will become the 2.3 release), you
+need to rebase onto the `2.2` branch.
 
 To rebase your work in the `fixing_some_bug` branch from `master` onto
 `2.2`, run:

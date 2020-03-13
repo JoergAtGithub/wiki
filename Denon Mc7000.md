@@ -425,7 +425,6 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 All additional wishes will be listed here:
 
-  - check for Hot Cue points when loading track
   - improve Platter Ring LED performance. Currently only 26 signals are
     sent for one complete turn around for 48 LEDs
   - let Platter Ring LEDs flash during the last minute (or other time

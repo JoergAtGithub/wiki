@@ -52,13 +52,13 @@ analogue (vinyl) and digital sources.
 
 ## Mapping
 
-To get the mapping just download both, the \*.xml and the \*.js file
-from the forum or here:
+The latest version is on GitHub, to get it please just right click each
+of the links and "save link as".
 
   - [Denon MC7000 Mapping \*.xml
-    file](https://www.mixxx.org/forums/download/file.php?id=2830)
+    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000.midi.xml)
   - [Denon MC7000 Mapping \*.js
-    file](https://www.mixxx.org/forums/download/file.php?id=2829)
+    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000-scripts.js)
 
 Read further [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)

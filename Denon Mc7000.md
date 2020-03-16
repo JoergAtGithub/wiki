@@ -385,10 +385,12 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 **coming changes**
 
+  - code clean up and simplifications
   - PAD Mode LED improvements
   - HotCue LED will be triggered on or off when loading and ejecting a
     track
-  - CUE LOOP improvements
+  - Sampler LEDs now working on all Decks
+  - CUE LOOP switched off 
   - set default Pitch Fader RANGE to 4, 6, 10, 16, 24 (%)
 
 **Beta 0.13**

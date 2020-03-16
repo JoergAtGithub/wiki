@@ -243,9 +243,6 @@ PAD Mode described below.
 
   - HOT CUE: Push a Performance PAD to set or play a HOT CUE. Press and
     hold Shift to delete HOT CUE.
-  - CUE LOOP: Same as above but will additionally activate a loop at the
-    HOT CUE position. This function is initially implemented but got
-    issues still - use carefully.
   - *This section needs further development.* **HELP APPRECIATED**
 
 37\. **Roll / Saved Loop:**
@@ -266,8 +263,9 @@ PAD Mode described below.
   - SAMPLER: 8 samplers can be triggered from either Deck. Add samplers
     to the sampler bank pushing a PAD button. If a sampler is loaded
     then the push will start the sampler, push again while playing will
-    stop it. Press and hold SHIFT and push a PAD button to eject a
-    sampler.
+    replay the track from start. Press and hold SHIFT and push a PAD
+    button to stop a sampler while playing or eject a sampler when
+    stopped.
   - *This section needs further development.* **HELP APPRECIATED**
 
 40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with

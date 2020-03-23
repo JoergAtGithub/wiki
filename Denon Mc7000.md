@@ -256,6 +256,9 @@ PAD Mode described below.
 
 38\. **Slicer / Slicer Loop:**
 
+  - SLICER Mode is set as beatjump only (way different to Serato). The
+    first row buttons jump forward by 1, 2, 4 and 8 beats. The 2nd row
+    buttons jump backward by 1, 2, 4 and 8 beats.
   - *This section needs further development.* **HELP APPRECIATED**
 
 39\. **Sampler / Velocity Samp.:**

@@ -271,7 +271,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td><strong><a href="Denon MC7000">Denon MC7000</a></strong></td>
 <td>$850</td>
 <td>4 Channel Controller (Left side: Deck 1/3 - Right Side: Deck 2/4) with Dual USB</td>
-<td>yes (for Linux a workaround is needed)</td>
+<td>yes (only with newer Linux Kernel, see Wiki page)</td>
 <td>yes (2 x XLR)</td>
 <td>MIDI</td>
 <td>2017</td>

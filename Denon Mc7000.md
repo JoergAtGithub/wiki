@@ -64,8 +64,8 @@ Read further [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)
 for your system.
 
-You need to activate the mapping in Preferences -\> Controller -\> chose
-the MC7000 mapping.
+**You need to activate the mapping in Preferences -\> Controller -\>
+chose the MC7000 mapping.**
 
 This controller is made for Serato DJ and most of the mapping is made
 for MIXXX accordingly. Anyhow, there are several differences for

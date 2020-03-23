@@ -471,7 +471,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>Discontinued</td>
 <td>2 deck controller [35] all-in-one</td>
 <td>yes</td>
-<td>no</td>
+<td>yes</td>
 <td>MIDI</td>
 <td>2012</td>
 </tr>

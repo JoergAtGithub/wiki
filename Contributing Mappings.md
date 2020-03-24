@@ -13,10 +13,10 @@ C++.
 
 Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
-[JavafixedScript](MIDI%20scripting). While mappings can be made with
-just XML, most controllers will require some JavaScript to make a
-complete mapping. Some controllers will require a mapping mostly or
-completely written in JavaScript. Both XML and JavaScript are fairly
+[JavaScript](MIDI%20scripting). While mappings can be made with just
+XML, most controllers will require some JavaScript to make a complete
+mapping. Some controllers will require a mapping mostly or completely
+written in JavaScript. Both XML and JavaScript are fairly
 straightforward and easy to learn. Using JavaScript to map your
 controller could be a good introduction to programming. If you are
 unfamiliar with MIDI, refer to the [MIDI Crash

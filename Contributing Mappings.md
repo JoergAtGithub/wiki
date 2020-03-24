@@ -408,7 +408,16 @@ These coding conventions are mandatory for new Javascript code in Mixxx:
   - Use 4 spaces to indent, not tab characters.
   - Always put `var` before variable declarations to avoid accidentally
     declaring global variables.
-  - Do not write one-line `if` statements or one-line functions.
+  - Do not write one-line `if` statements or one-line functions...
+    :note: For more information, go to
+
+<!-- end list -->
+
+``` 
+        `<https://mixxx.org/wiki/doku.php/midi_scripting>`_
+        and `<https://mixxx.org/wiki/doku.php/hid_mapping_format>`_.
+```
+
   - Always use brackets for `if` statements. Put the opening `{` on the
     same line as the conditional expression and the closing bracket `}`
     on its own line.

@@ -79,11 +79,11 @@ Configure Git so that you push to your fork by default for new branches:
 
 # Set up automatic code checking
 
-If you're want to get your changes merged into Mixxx, it's necessary to
-make sure that your code matches our code style requirements. You can
-make git check this automatically every time you commit your changes by
-using the [pre-commit framework](https://pre-commit.com). We strongly
-recommend using it.
+To get your changes merged into Mixxx it's necessary to make sure that
+your code matches our code style requirements. You can make git check
+this automatically every time you commit your changes by using the
+[pre-commit framework](https://pre-commit.com). We strongly recommend
+using it.
 
 First, [install pre-commit](https://pre-commit.com/#install) (you'll
 need at least Python 3.6). Then, you have to set up the hooks that will

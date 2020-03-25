@@ -848,7 +848,7 @@ Connect a callback to `[ChannelN]`, `hotcue_X_color` to set LEDs to
 match the hotcue color, for example:
 
     var hotcueLEDcallback = engine.makeConnection('[Channel1]', 'hotcue_2_color', function (value, group, control) {
-      if (value != -1) { // hotcue is set
+      if (value !== -1) { // hotcue is set
         midi.sendShortMsg(0x90, 0x60, myControllerColorMapper.getNearestColor(value));
       } else { // hotcue is unset, turn off LED
         midi.sendShortMsg(0x90, 0x60, 0);

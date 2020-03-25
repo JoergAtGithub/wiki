@@ -88,7 +88,7 @@ using it.
 First, [install pre-commit](https://pre-commit.com/#install) (you'll
 need at least Python 3.6). Then, you have to set up the hooks that will
 check your code every time you commit. Run these from a shell within the
-git repository:
+mixxx git repository:
 
     pre-commit install
     pre-commit install -t pre-push

@@ -803,39 +803,53 @@ The effects can also be mapped directly via XML using either
 
 ## Color API
 
-As most DJing applications, mixxx is capable of colored hotcues. There
-are several ways of accessing and processing color information in
-scripts. To keep compability with color limited hardware, we provide a
-[8 color colorpalette](hotcue_colors). Each of those colors has a unique
-ID. This ID can be retrieved via the `engine.getValue('[ChannelN]',
-'hotcue_X_color_id')` (where N and X are the respective Deck and hotcue
-whose information is being accessed). The color API features two
-methods:
+The color of hotcues is accessible with `engine.getValue('[ChannelN]',
+'hotcue_X_color')` (where N and X are the respective Deck and hotcue
+whose information is being accessed) as an RGB color code. The scripting
+environment provides some functions to make it easier to work with these
+RGB color codes:
 
-  - **color.predefinedColorFromID**(*id*) - returns a single color
-    object by the provided ID.
-  - **color.predefinedColorsList**() - returns the whole color palette
-    in the form of a color object array. Since controllers handle colors
-    differently from model to model, it is up to you to interpret the
-    color and send it to the controller.
+  - **colorCodeToObject**(*RGB color code*): Converts an RGB color code
+    from `[ChannelN]`, `hotcue_X_color` (for example `0xFF0000`) into an
+    object with `red`, `green` and `blue` properties with a value range
+    of 0-255
+  - **colorCodeFromObject**(*RGB object*): Converts an object with
+    `red`, `green`, and `blue` properties (value range 0-255) into an
+    RGB color code that can be used to set a value for `[ChannelN]`,
+    `hotcue_X_color`
 
-To prevent some code duplication and to provide a more robust API, a new
-color object was created. It can be retrieved by using
-`color.predefinedColorFromID(id)` and it returns a
-struct/hashmap/dictionary which contain the properties of the colors in
-the Color palette. It contains the following properties:
+Additionally, there is a ColorMapper class to map the MIDI values for
+colors supported by the controller to RGB color codes. Mixxx supports
+setting hotcues to any arbitrary color which may not exactly match what
+the controller hardware supports, so use ColorMapper to match colors to
+the nearest color supported by the controller. Create a ColorMapper by
+passing an object with RGB codes as the keys and the corresponding MIDI
+codes as values:
 
-  - **red** - red color channel (*8-bit precision*).
-  - **green** - (green color channel (*8-bit precision*).
-  - **blue** - (blue color channel (*8-bit precision*).
-  - **alpha** - alpha color channel (*8-bit precision*); currently
-    unused.
-  - **id** - internal ID of the color.
+``` type=js
+var myControllerColorMapper = new ColorMapper({
+    "#FF0000": 1, // red
+    "#00FF00": 2, // green
+    "#0000FF": 3, // blue
+});
+```
 
-Since these Methods might seem a bit confusing, we provide hotcuebutton
-class via [Components JS](components_js), which is able to take care of
-the color feature automatically (see [Components JS
-Hotcue](components_js#hotcuebutton)).
+In this example, the controller's buttons would be lit red by sending
+MIDI code 1, green with MIDI code 2, and blue with MIDI code 3.
+ColorMapper has two methods:
+
+  - **getValueForNearestColor**(*RGB color code*): returns the mapped
+    value matching the nearest color in the map. For example, if
+    `0xFF0000` was passed in the above example, this method would return
+    `1`. If `0xFF0001` was passed, it would also return `1`.
+  - **getNearestColor**(*RGB color code*): returns an RGB object with
+    `red`, `green`, and `blue` properties on a 0-255 scale like
+    `colorCodeToObject` for the nearest color in the map
+
+The Components library supports passing a ColorMapper object to the
+[HotcueButton class](components_js#hotcuebutton) so all the logic for
+matching nearest colors to MIDI codes when a hotcue is created or
+deleted are taken care of for you.
 
 ## Helper functions
 

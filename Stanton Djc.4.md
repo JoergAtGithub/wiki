@@ -79,8 +79,6 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 #### Controls not included in this mapping
 
   - Master knob (Hardware control)
-  - Headphone level knob (Hardware control)
-  - Headphone mix knob (Hardware control)
   - Mic level knob (Hardware control)
   - Mic on/off switch (Hardware control)
   - Loop Delete button (no matching function in Mixxx)

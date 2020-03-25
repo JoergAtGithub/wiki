@@ -77,6 +77,36 @@ Configure Git so that you push to your fork by default for new branches:
 
     git config remote.pushDefault origin
 
+# Set up automatic code checking
+
+If you're want to get your changes merged into Mixxx, it's necessary to
+make sure that your code matches our code style requirements. You can
+make git check this automatically every time you commit your changes by
+using the [pre-commit framework](https://pre-commit.com). We strongly
+recommend using it.
+
+First, [install pre-commit](https://pre-commit.com/#install) (you'll
+need at least Python 3.6). Then, you have to set up the hooks that will
+check your code every time you commit:
+
+    pre-commit install
+    pre-commit install -t pre-push
+
+It will now run relevant hooks automatically on every `git commit` or
+`git push` in the mixxx git repository.
+
+If you have a problems with a particular hook, you can use the `SKIP`
+environment variable to disable hooks:
+
+    SKIP=clang-format,end-of-file-fixer git commit
+
+This can also be used to separate logic changes and autoformatting into
+two subsequent commits.
+
+Using the `SKIP` var is preferable to using `git commit --no-verify`
+(which also disables the checks) because it won't prevent catching
+other, unrelated issues.
+
 # Test a pull request
 
 Developers propose changes to the Mixxx code by opening "pull requests"
@@ -187,7 +217,9 @@ staged your changes, you can use `git commit`.
 
 Git will automatically open the editor you have configured for Git. Type
 your commit message, then save this file in the editor to make the
-commit.
+commit. If you've [set up automatic code
+checking](#set-up-automatic-code-checking), these will now perform
+checks and ask you to make changes if necessary.
 
 Instead of using `git add` and `git commit`, you can use a [GUI Git
 client](https://git-scm.com/downloads/guis) to pick what changes to

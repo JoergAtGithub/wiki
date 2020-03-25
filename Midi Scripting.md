@@ -826,13 +826,11 @@ the nearest color supported by the controller. Create a ColorMapper by
 passing an object with RGB codes as the keys and the corresponding MIDI
 codes as values:
 
-``` type=js
-var myControllerColorMapper = new ColorMapper({
-    "#FF0000": 1, // red
-    "#00FF00": 2, // green
-    "#0000FF": 3, // blue
-});
-```
+    var myControllerColorMapper = new ColorMapper({
+        "#FF0000": 1, // red
+        "#00FF00": 2, // green
+        "#0000FF": 3, // blue
+    });
 
 In this example, the controller's buttons would be lit red by sending
 MIDI code 1, green with MIDI code 2, and blue with MIDI code 3.
@@ -845,6 +843,17 @@ ColorMapper has two methods:
   - **getNearestColor**(*RGB color code*): returns an RGB object with
     `red`, `green`, and `blue` properties on a 0-255 scale like
     `colorCodeToObject` for the nearest color in the map
+
+Connect a callback to `[ChannelN]`, `hotcue_X_color` to set LEDs to
+match the hotcue color, for example:
+
+    var hotcueLEDcallback = engine.makeConnection('[Channel1]', 'hotcue_2_color', function (value, group, control) {
+      if (value != -1) { // hotcue is set
+        midi.sendShortMsg(0x90, 0x60, myControllerColorMapper.getNearestColor(value));
+      } else { // hotcue is unset, turn off LED
+        midi.sendShortMsg(0x90, 0x60, 0);
+      }
+    });
 
 The Components library supports passing a ColorMapper object to the
 [HotcueButton class](components_js#hotcuebutton) so all the logic for

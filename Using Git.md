@@ -165,20 +165,29 @@ on code, you may end up trying some changes that you do not end up
 needing. Reviewing your own code is helpful for making sure you only
 commit the changes that are needed.
 
-### Make the commit
+You can tell Git to show you a diff of the changes you are about to
+commit inside the commit message editor window. To do that, enable
+verbose commits via the configuration:
+
+    git config --global commit.verbose true
+
+### Make a commit
 
 Before committing your changes in Git, you first have to tell it what
 changes you want to "stage" for inclusion in the commit. You do this
-using the `git add` command. Once you have staged your changes, you can
-use `git commit`
+using the `git add` command. You can stage all changes, single files or
+even pick only a part of the changes you did to a file. Once you have
+staged your changes, you can use `git commit`.
 
-    emacs src/engine/enginebuffer.cpp # Change enginebuffer.cpp
-    git add src/engine/enginebuffer.cpp # Tip: pressing tab will only autocomplete file names of files that have changed.
-    git commit -m "Bugfixes to EngineBuffer."
+    vim src/engine/enginebuffer.h  # Change enginebuffer.h
+    vim src/engine/enginebuffer.cpp  # Change enginebuffer.cpp
+    git add src/engine/enginebuffer.h  # Stage all changes from enginebuffer.h (use TAB for autocompleting file names)
+    git add -p  # Show all remaining unstaged changes and pick them for inclusion individually)
+    git commit
 
-If you omit the -m "COMMIT MESSAGE" at the end, Git will automatically
-open the editor you have configured for Git. Type your commit message,
-then save this file in the editor to make the commit.
+Git will automatically open the editor you have configured for Git. Type
+your commit message, then save this file in the editor to make the
+commit.
 
 Instead of using `git add` and `git commit`, you can use a [GUI Git
 client](https://git-scm.com/downloads/guis) to pick what changes to

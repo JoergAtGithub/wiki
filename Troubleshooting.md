@@ -241,10 +241,10 @@ back in.
 
 If you did not install Mixxx from the Ubuntu PPA or RPMFusion, you may
 need to save save [this
-file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx.usb.rules)
-to `/etc/udev/rules.d/mixxx.usb.rules`. You will need root privileges
-(use `sudo` or `su`) to copy the file to that location. Then, restart
-your computer.
+file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx-usb-uaccess.rules)
+to `/etc/udev/rules.d/mixxx-usb-uaccess.rules`. You will need root
+privileges (use `sudo` or `su`) to copy the file to that location. Then,
+restart your computer.
 
 ## Mixxx says my sound card does not support the sample format
 

@@ -232,6 +232,8 @@ package as well as when installing Mixxx from source (if you have write
 access to /etc/udev/rules.d when running `scons install`), however
 packages for other distributions might not install it correctly.
 
+**Up to version 2.2.x**
+
 If you still do not see your controller on the left side of Mixxx's
 Preferences, check that your user account is in the group "users". Open
 a console and run the command `groups` to find out what groups your user
@@ -245,6 +247,12 @@ file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx-usb
 to `/etc/udev/rules.d/mixxx-usb-uaccess.rules`. You will need root
 privileges (use `sudo` or `su`) to copy the file to that location. Then,
 restart your computer.
+
+**Version 2.3 and later**
+
+Please refer to the instructions in the [udev .rules
+file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx-usb-uaccess.rules).
+Install location and file name depends on your Linux distribution.
 
 ## Mixxx says my sound card does not support the sample format
 

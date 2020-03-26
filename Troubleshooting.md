@@ -252,7 +252,8 @@ restart your computer.
 
 Please refer to the instructions in the [udev .rules
 file](https://raw.githubusercontent.com/mixxxdj/mixxx/master/res/linux/mixxx-usb-uaccess.rules).
-Install location and file name depends on your Linux distribution.
+Both install location and target file name depend on your Linux
+distribution.
 
 ## Mixxx says my sound card does not support the sample format
 

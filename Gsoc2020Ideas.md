@@ -1,3 +1,6 @@
+\*\* If you are reading this for the first time now, it is too late to
+apply for this year. \*\*
+
 ## Student Project Ideas for Google Summer of Code 2020
 
 This page lists the suggested projects for students working on Mixxx as

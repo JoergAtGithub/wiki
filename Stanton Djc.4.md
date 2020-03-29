@@ -339,7 +339,7 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 <tr class="even">
 <td>7</td>
 <td>BEAT MULTIPLIER encoder</td>
-<td>Set the length of the loop in beats that will get set with BEAT MULTIPLIER button.</td>
+<td>Turn to move the loop left or right by 1 beat per click.</td>
 </tr>
 <tr class="odd">
 <td>7</td>

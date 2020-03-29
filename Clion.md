@@ -31,3 +31,5 @@ macOS:
 ``` 
   -DQt5_DIR=
 ```
+
+cmake\_build to gitignore and clion

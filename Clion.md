@@ -32,4 +32,11 @@ macOS:
   -DQt5_DIR=
 ```
 
-cmake\_build to gitignore and clion
+Set the **Generation path** field to `cmake_build`:
+
+[[/media/clion_2019-3-5_build_options_generation_path.png|]]
+
+CLion will generate the build files in this folder, which will be create
+in the root path of the project. Don't commit this folder. Configure git
+to exclude it. Open `.git/info/exclude` and append `cmake_build` in a
+new line.

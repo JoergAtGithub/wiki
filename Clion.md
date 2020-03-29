@@ -7,3 +7,10 @@ licenses to contributors free of charge. You can apply
 # Step-by-Step Setup
 
 For CLion 2019.3.5.
+
+Open CLion.
+
+Select **Open** [[/media/clion_2019-3-5_welcome_screen.png|]]
+
+Open the preferences window and navigate to **Build, Execution,
+Deployment** \> CMake

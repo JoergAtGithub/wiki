@@ -1,3 +1,6 @@
+\*\* If you are reading this for the first time now, it is too late to
+apply for this year. \*\*
+
 # Google Summer of Code Advice
 
 Thank you for your interest in working on Mixxx with Google Summer of

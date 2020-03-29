@@ -65,7 +65,7 @@ in order to learn how to set your levels properly when using Mixxx.
 
 [[/media/hardware/stanton-djc-4-front.jpg|]]
 
-### Mapping description
+## Mapping description
 
 Currently the mapping files are available from this [Git
 repository](https://github.com/nuess0r/mixxx/tree/Stanton-DJC.4/res/controllers//)
@@ -389,3 +389,14 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 </tr>
 </tbody>
 </table>
+
+### Tweakables
+
+At the top of the file \`Stanton-DJC-4-scripts.js\` there are a few
+customizable options to change the default mapping.
+
+| Variable          | Function                                                                                   | Default |
+| ----------------- | ------------------------------------------------------------------------------------------ | ------- |
+| autoShowFourDecks | If a track gets loaded into deck 3 or 4, should automatically four decks be shown in Mixxx | false   |
+| showMasterVu      | If set to false, show channel VU meter instead of Master L/R                               | true    |
+| dryWetAdjustValue | Amount the dryWetKnob changes the value for each increment                                 | 0.05    |

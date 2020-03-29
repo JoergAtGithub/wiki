@@ -46,6 +46,7 @@ files, it can be difficult to understand how the code fits together.
   - Set up [Emacs](emacs)
   - Set up [QtCreator](QtCreator)
   - Set up [Xcode](Xcode)
+  - Set up [CLion](CLion)
 
 # Debugging Tools
 

@@ -22,4 +22,12 @@ Select **Open as Project**:
 [[/media/clion_2019-3-5_open_dialog.png|]]
 
 Open the preferences window and navigate to **Build, Execution,
-Deployment** \> **CMake**
+Deployment** \> **CMake**.
+
+Add the following options to the **CMake options** field:
+
+macOS:
+
+``` 
+  -DQt5_DIR=
+```

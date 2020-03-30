@@ -199,11 +199,11 @@ suggest that you think about these when writing your application.
     the way?
   - Does the student understand the design and technical details of what
     will be required to implement their proposal? What classes would
-    need to be modified and how? How would the classes interact? We are
-    not looking for you to have every detail figured out; you won't know
-    that until you actually write the code. But we want to see that you
-    understand the code you'll be working with and have a general plan
-    of how to change it.
+    need to be modified and how? Do new classes need to be added? How
+    would the classes interact? We are not looking for you to have every
+    detail figured out; you won't know that until you actually write the
+    code. But we want to see that you understand the code you'll be
+    working with and have a general plan of how to change it.
   - Is the proposed timeline realistic considering any other obligations
     the student may have during GSOC?
 

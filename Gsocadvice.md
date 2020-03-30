@@ -163,10 +163,14 @@ something you're going to enjoy. Once you've made your mind up:
     where to start looking in the code.
 4.  Figure out what parts of the code need to be changed and come up
     with a general idea of what those changes will be.
-5.  Don't be afraid to give us lots of detail about how you would
+5.  Write a draft application **early** so we can help you with feedback
+    before the final application deadline. If you wait until the last
+    few days to submit your first draft, it will be hard for you to
+    respond to feedback.
+6.  Don't be afraid to give us lots of detail about how you would
     approach the project
-6.  UI mockups are very much encouraged where appropriate
-7.  Consider how much time you need for each part of the project
+7.  UI mockups are very much encouraged where appropriate
+8.  Consider how much time you need for each part of the project
 
 Overall, your application should make us believe that you are capable of
 completing the project and delivering the functionality to our users. If

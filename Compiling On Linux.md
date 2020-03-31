@@ -181,13 +181,6 @@ Mixxx uses the CMake build system as of Mixxx 2.3 (currently the master
 branch). Building and installing Mixxx follows the standard CMake
 procedures.
 
-We highly recommend installing [CCache](https://ccache.dev/) if you will
-be contributing code to Mixxx. If you won't be writing or testing code
-and are just building Mixxx to use it for yourself, you can skip
-installing CCache. CCache drastically speeds up the time to recompile
-Mixxx, especially when switching Git branches. CMake works with CCache
-automatically.
-
 To build with CMake, first create a new directory and enter it.
 Typically it is in the top level of the Git repository, but it can be
 anywhere you want.
@@ -226,6 +219,21 @@ assertions are violated or to abort Mixxx immediately. This ensures that
 messages about violated debug assertions are not missed between various
 other debug log messages. We recommend this if you are working on Mixxx
 code, but not if you are performing with Mixxx.
+
+### ccache
+
+We highly recommend installing [CCache](https://ccache.dev/) if you will
+be contributing code to Mixxx. If you won't be writing or testing code
+and are just building Mixxx to use it for yourself, you can skip
+installing CCache. CCache drastically speeds up the time to recompile
+Mixxx, especially when switching Git branches. CMake works with CCache
+automatically.
+
+You will probably want to increase the default ccache size of 5.0GB to
+something much larger to accommodate Mixxx's large build sizes. You can
+adjust the cache size with the --set-config flag:
+
+    ccache --set-config=max_size=20.0G
 
 ### SCons
 

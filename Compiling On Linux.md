@@ -179,8 +179,18 @@ to [Using Git](Using%20Git) for more details.
 
 Mixxx uses the CMake build system as of Mixxx 2.3 (currently the master
 branch). Building and installing Mixxx follows the standard CMake
-procedures. First, create a new directory and enter it. Typically it is
-in the top level of the Git repository, but it can be anywhere you want.
+procedures.
+
+We highly recommend installing [CCache](https://ccache.dev/) if you will
+be contributing code to Mixxx. If you won't be writing or testing code
+and are just building Mixxx to use it for yourself, you can skip
+installing CCache. CCache drastically speeds up the time to recompile
+Mixxx, especially when switching Git branches. CMake works with CCache
+automatically.
+
+To build with CMake, first create a new directory and enter it.
+Typically it is in the top level of the Git repository, but it can be
+anywhere you want.
 
     $ mkdir build
     $ cd build
@@ -205,15 +215,6 @@ Install Mixxx. If you want to compile and install in one step, you can
 skip the compilation step above and just run this command.
 
     $ cmake --build . --target install --parallel 2
-
-#### CCache
-
-We highly recommend installing [CCache](https://ccache.dev/) if you will
-be contributing code to Mixxx. This will drastically speed up the time
-to compile Mixxx, especially when switching Git branches. CMake works
-with CCache automatically. However, if you install CCache after you
-built Mixxx with CMake, rerun the CMake configure step to get it to use
-CCache.
 
 #### Debug build
 

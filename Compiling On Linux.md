@@ -175,6 +175,51 @@ to [Using Git](Using%20Git) for more details.
 
 ## Compile and install
 
+### CMake
+
+Mixxx uses the CMake build system as of Mixxx 2.3 (currently the master
+branch). Building and installing Mixxx follows the standard CMake
+procedures. First, create a new directory and enter it. Typically it is
+in the top level of the Git repository, but it can be anywhere you want.
+
+    $ mkdir build
+    $ cd build
+
+Now configure CMake. This checks if you have all the dependencies
+installed, similar to the configure script of GNU autotools. `/usr` is
+used as the installation path in this example, but you can set this to
+anywhere as long as your `$PATH` environment variable includes a `bin`
+directory under the installation path (`/usr/bin` if the installation
+path is `/usr`).
+
+    $ cmake -DCMAKE_INSTALL_PREFIX=/usr /path/to/mixxx/git/repository
+
+Compile Mixxx. Set the `--parallel` option to the number of CPU cores
+you have.
+
+    $ cmake --build . --parallel 2
+
+Install Mixxx. If you want to compile and install in one step, you can
+skip the compilation step above and just run this command.
+
+    $ cmake --build . --target install --parallel 2
+
+#### Debug build
+
+If you want to make a debug build, add `-DCMAKE_BUILD_TYPE=Debug
+-DDEBUG_ASSERTIONS_FATAL=ON` to the end of the cmake configure command.
+Debug builds should be started with the command line option
+`--debugAssertBreak` to trigger a breakpoint in the debugger if debug
+assertions are violated or to abort Mixxx immediately. This ensures that
+messages about violated debug assertions are not missed between various
+other debug log messages. We recommend this if you are working on Mixxx
+code, but not if you are performing with Mixxx.
+
+### SCons
+
+Mixxx 2.2 and earlier use the SCons build system. Mixxx 2.3 also
+supports SCons, but SCons support will be removed in Mixxx 2.4.
+
 Once you have the source code, change to the newly created "mixxx"
 directory (run `cd mixxx`). Mixxx uses the [SCons](http://scons.org/)
 build system rather than the more common GNU autotools and GNU make.
@@ -215,34 +260,27 @@ to Mixxx and use a debugger, use `optimize=off`.
 To compile on a Raspberry Pi (only compatible on Rapsberry Pi 3 and
 later), use the arguments: `optimize=native machine=armhf` with scons.
 
-### Developer build options
+#### Debug build
 
 To catch bugs early during development build and run Mixxx with the
 following options.
 
-#### Debug build with SCons
-
     build=debug debug_assertions_fatal=1
 
-#### Debug build with CMake (...coming soon)
+Debug builds should be started with the command line option
+`--debugAssertBreak` to trigger a breakpoint in the debugger if debug
+assertions are violated or to abort Mixxx immediately. This ensures that
+messages about violated debug assertions are not missed between various
+other debug log messages. We recommend this if you are working on Mixxx
+code, but not if you are performing with Mixxx.
 
-    -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON
-
-#### Testing debug builds
-
-Debug builds should started with the option `--debugAssertBreak` to
-trigger a breakpoint in the debugger if debug assertions are violated or
-to abort Mixxx immediately. This ensures that messages about violated
-debug assertions are not missed between various other debug log
-messages.
-
-### Optional: Build with m4a/AAC file support
+#### Optional: Build with m4a/AAC file support
 
 If you want to play m4a files, add `faad=1` to your scons commands
 above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be
 installed.
 
-### Optional: Compile with Clang
+#### Optional: Compile with Clang
 
 [Clang](http://clang.llvm.org) is a C/C++ compiler based on
 [LLVM](http://llvm.org). Using Clang has various benefits:
@@ -270,16 +308,16 @@ You can now use clang-specific SCons options.
   - To enable colorized output, use the `color=1` scons flag.
   - To enable Address Sanitizer, use the `asan=1` scons flag.
 
-### Troubleshooting scons
+#### Troubleshooting scons
 
 If scons can't find installed dependencies, try
 
     scons --config=force
 
-## Uninstall
+#### Uninstall
 
-To uninstall a copy of Mixxx that you compiled, `cd` into the directory
-where you ran `scons` before, then run:
+To uninstall a copy of Mixxx that you compiled with SCons, `cd` into the
+directory where you ran `scons` before, then run:
 
     scons -c prefix=INSTALLATION_DIRECTORY install
 
@@ -287,7 +325,7 @@ INSTALLATION\_DIRECTORY must be the same as that used when compiling and
 installing. If you needed to use `sudo` to install, also use `sudo` to
 uninstall.
 
-## Clean up
+#### Clean up
 
 If `scons` fails with mysterious errors about not finding dependencies
 that you know are installed, it may be using outdated cached information

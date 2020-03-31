@@ -185,12 +185,13 @@ in the top level of the Git repository, but it can be anywhere you want.
     $ mkdir build
     $ cd build
 
-Now configure CMake. This checks if you have all the dependencies
-installed, similar to the configure script of GNU autotools. `/usr` is
-used as the installation path in this example, but you can set this to
-anywhere as long as your `$PATH` environment variable includes a `bin`
-directory under the installation path (`/usr/bin` if the installation
-path is `/usr`).
+Now configure CMake. This only needs to be done once; you don't need to
+repeat it when you compile Mixxx again. This step checks if you have all
+the dependencies installed, similar to the configure script of GNU
+autotools. `/usr` is used as the installation path in this example, but
+you can set this to anywhere as long as your `$PATH` environment
+variable includes a `bin` directory under the installation path
+(`/usr/bin` if the installation path is `/usr`).
 
     $ cmake -DCMAKE_INSTALL_PREFIX=/usr /path/to/mixxx/git/repository
 
@@ -204,6 +205,15 @@ Install Mixxx. If you want to compile and install in one step, you can
 skip the compilation step above and just run this command.
 
     $ cmake --build . --target install --parallel 2
+
+#### CCache
+
+We highly recommend installing [CCache](https://ccache.dev/) if you will
+be contributing code to Mixxx. This will drastically speed up the time
+to compile Mixxx, especially when switching Git branches. CMake works
+with CCache automatically. However, if you install CCache after you
+built Mixxx with CMake, rerun the CMake configure step to get it to use
+CCache.
 
 #### Debug build
 

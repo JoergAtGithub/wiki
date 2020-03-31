@@ -12,6 +12,10 @@ easy. Go to Project -\> Open / Import Project and open the folder where
 your [mixxx git repository](using%20git) is. KDevelop will detect that
 it is a CMake project and set up everything for you.
 
+If you want KDevelop to install Mixxx when you press the Build button in
+KDevelop, go to Project -\> Open Configuration -\> Make -\> Default make
+target and enter "install"
+
 ## Mixxx 2.2
 
 ### Create a new project

@@ -195,7 +195,8 @@ path is `/usr`).
     $ cmake -DCMAKE_INSTALL_PREFIX=/usr /path/to/mixxx/git/repository
 
 Compile Mixxx. Set the `--parallel` option to the number of CPU cores
-you have.
+you have. This will take a while, depending on the speed of your
+computer.
 
     $ cmake --build . --parallel 2
 

@@ -10,7 +10,8 @@ KDevelop 5 to work on Mixxx.
 Mixxx 2.3 supports the CMake build system so setting up KDevelop is
 easy. Go to Project -\> Open / Import Project and open the folder where
 your [mixxx git repository](using%20git) is. KDevelop will detect that
-it is a CMake project and set up everything for you.
+it is a CMake project, prompt you which directory you want to build
+Mixxx in, then set up everything for you.
 
 If you want KDevelop to install Mixxx when you press the Build button in
 KDevelop, go to Project -\> Open Configuration -\> Make -\> Default make

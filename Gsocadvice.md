@@ -102,6 +102,8 @@ the specific libraries or algorithms Mixxx uses.
 
 Students who have experience with DJ hardware are at a big advantage in
 terms of proposing projects that will have a meaningful impact on users.
+You don't need to own DJ hardware for a successful GSOC project, but it
+is helpful.
 
 We value general software design and development experience above
 specific knowledge of a library or API. We have found in the past that

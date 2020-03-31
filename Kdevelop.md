@@ -11,11 +11,13 @@ Mixxx 2.3 supports the CMake build system so setting up KDevelop is
 easy. Go to Project -\> Open / Import Project and open the folder where
 your [mixxx git repository](using%20git) is. KDevelop will detect that
 it is a CMake project, prompt you which directory you want to build
-Mixxx in, then set up everything for you.
+Mixxx in, then set almost everything up for you. Then, go to Project -\>
+Open Configuration -\> Language Support -\> C/C++ Parser -\> C++ Profile
+and select "c++17".
 
 If you want KDevelop to install Mixxx when you press the Build button in
 KDevelop, go to Project -\> Open Configuration -\> Make -\> Default make
-target and enter "install"
+target and enter "install".
 
 ## Mixxx 2.2
 

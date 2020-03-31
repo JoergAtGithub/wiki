@@ -220,7 +220,7 @@ messages about violated debug assertions are not missed between various
 other debug log messages. We recommend this if you are working on Mixxx
 code, but not if you are performing with Mixxx.
 
-### ccache
+#### ccache
 
 We highly recommend installing [CCache](https://ccache.dev/) if you will
 be contributing code to Mixxx. If you won't be writing or testing code

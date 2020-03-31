@@ -100,6 +100,9 @@ generally: "Yes". You do need some prior experience with C++, even if it
 was only for a small school project, but you do not need experience with
 the specific libraries or algorithms Mixxx uses.
 
+Students who have experience with DJ gear are at a big advantage in
+terms of proposing projects that will have a meaningful impact on users.
+
 We value general software design and development experience above
 specific knowledge of a library or API. We have found in the past that
 an interested and motivated student who is willing to learn is more

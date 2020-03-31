@@ -174,6 +174,8 @@ something you're going to enjoy. Once you've made your mind up:
     approach the project
 7.  UI mockups are very much encouraged where appropriate
 8.  Consider how much time you need for each part of the project
+9.  Include links to C++ code you have written before
+10. If you have prior experience DJing, mention it in your application
 
 Overall, your application should make us believe that you are capable of
 completing the project and delivering the functionality to our users. If

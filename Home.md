@@ -147,7 +147,6 @@ this wiki, please fix it.
   - [Google Code-in](gci) task list and information
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
-  - [Color cues](Color%20cues)
 
 ### Archives
 

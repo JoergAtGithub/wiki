@@ -185,8 +185,8 @@ To build with CMake, first create a new directory and enter it.
 Typically it is in the top level of the Git repository, but it can be
 anywhere you want.
 
-    $ mkdir build
-    $ cd build
+    $ mkdir cbuild
+    $ cd cbuild
 
 Now configure CMake. This only needs to be done once; you don't need to
 repeat it when you compile Mixxx again. This step checks if you have all

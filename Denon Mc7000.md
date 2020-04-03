@@ -56,9 +56,9 @@ The latest version is on GitHub, to get it please just right click each
 of the links and "save link as".
 
   - [Denon MC7000 Mapping \*.xml
-    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000.midi.xml)
+    file](https://github.com/mixxxdj/mixxx/raw/master/res/controllers/Denon-MC7000.midi.xml)
   - [Denon MC7000 Mapping \*.js
-    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000-scripts.js)
+    file](https://github.com/mixxxdj/mixxx/blob/master/res/controllers/Denon-MC7000-scripts.js)
 
 Read further [where to place the mapping
 files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)

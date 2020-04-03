@@ -52,8 +52,8 @@ analogue (vinyl) and digital sources.
 
 ## Mapping
 
-The latest version is on GitHub, to get it please just right click each
-of the links and "save link as".
+The stable version for current MIXXX 2.2.x is on GitHub. You need both
+files so please just right click each of the links and "save link as".
 
   - [Denon MC7000 Mapping \*.xml
     file](https://github.com/mixxxdj/mixxx/raw/master/res/controllers/Denon-MC7000.midi.xml)

@@ -338,10 +338,43 @@ Below, *N*=2 up to the number of active microphones. e.g
 
 ### \[Recording\]
 
-|  | Key/Control       |  | Range  |  | What it does                                    |  | On-screen feedback |  |
-|  | ----------------- |  | ------ |  | ----------------------------------------------- |  | ------------------ |  |
-|  | toggle\_recording |  | binary |  | Turns recording on or off.                      |  | Recording icon     |  |
-|  | status            |  | binary |  | Indicates whether Mixxx is currently recording. |  | Recording icon     |  |
+<table>
+<thead>
+<tr class="header">
+<th>Key/Control</th>
+<th></th>
+<th>Range</th>
+<th></th>
+<th>What it does</th>
+<th></th>
+<th>On-screen feedback</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>toggle_recording</td>
+<td></td>
+<td>binary</td>
+<td></td>
+<td>Turns recording on or off.</td>
+<td></td>
+<td>Recording icon</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>status</td>
+<td></td>
+<td>0-2</td>
+<td></td>
+<td>Indicates whether Mixxx is currently recording:<br />
+0 = recording stopped, 1 = initialize recording, 2 = recording active</td>
+<td></td>
+<td>Recording icon</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 ### \[AutoDJ\]
 

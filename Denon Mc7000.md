@@ -301,7 +301,9 @@ had been playing forward the whole time).
 45\. **Censor / Rev:** Press this button to activate the Backspin
 feature. If the track did not stop yet then when you release the button,
 normal playback will resume. Press and hold Shift and then press this
-button to reverse the playback of the track.
+button to reverse the playback of the track. The original CENSOR
+function (as in Serato) can be manually triggered by activating SLIP
+followed by SHIFT + CENSOR.
 
 46\. **Adjust/Set:** Press this button to adjust the Beat Grid to the
 current location.

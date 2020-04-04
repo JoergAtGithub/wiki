@@ -269,15 +269,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td><strong><a href="Denon MC7000">Denon MC7000</a></strong></td>
-<td>$850</td>
-<td>4 Channel Controller (Left side: Deck 1/3 - Right Side: Deck 2/4) with Dual USB</td>
-<td>yes (only with newer Linux Kernel, see Wiki page)</td>
-<td>yes (2 x XLR)</td>
-<td>MIDI</td>
-<td>2017</td>
-</tr>
-<tr class="odd">
 <td><a href="Faderfox DJ44">Faderfox DJ44</a></td>
 <td>€499</td>
 <td>2/4 deck[29] mobile controller</td>
@@ -286,7 +277,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Gemini G4V">Gemini G4V</a></td>
 <td>$350</td>
 <td>2 deck[30] all-in-one</td>
@@ -295,7 +286,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Pioneer DDJ-400">Pioneer DDJ-400</a></td>
 <td>$279</td>
 <td>2 deck controller all-in-one</td>
@@ -304,7 +295,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Pioneer DDJ-SB3">Pioneer DDJ-SB3</a></td>
 <td>$249</td>
 <td>2 deck controller [31] all-in-one</td>
@@ -313,7 +304,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Pioneer DDJ-WeGO">Pioneer DDJ-WeGO</a></td>
 <td>discontinued</td>
 <td>2 deck controller</td>
@@ -322,7 +313,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Pioneer DDJ-WeGO3">Pioneer DDJ-WeGO3</a></td>
 <td>$300</td>
 <td>2 deck controller</td>
@@ -331,7 +322,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
 <td>$100</td>
 <td>1 deck controller</td>
@@ -340,7 +331,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a><br />
 <a href="Resident DJ-kontrol 3">(Resident DJ-kontrol 3 identically?)</a></td>
 <td>$200</td>
@@ -350,7 +341,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
 <td>$100</td>
 <td>2 deck controller</td>
@@ -359,7 +350,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Roland DJ-202">Roland DJ-202</a></td>
 <td>$300</td>
 <td>2 deck[32] all-in-one</td>
@@ -368,7 +359,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2017</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
 <td>€90</td>
 <td>2 deck[33] all-in-one</td>
@@ -377,7 +368,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2016</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJ Control Jogvision">Hercules DJ Control Jogvision</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -386,7 +377,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2015</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules Universal DJ">Hercules Universal DJ</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -395,7 +386,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJ Control Starlight">Hercules DJ Control Starlight</a></td>
 <td>$99</td>
 <td>2 deck all-in-one compact controller</td>
@@ -404,7 +395,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJControl Inpulse 200">Hercules DJControl Inpulse 200</a></td>
 <td>$129</td>
 <td>2 deck all-in-one controller</td>
@@ -413,7 +404,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJControl Inpulse 300">Hercules DJControl Inpulse 300</a></td>
 <td>$250</td>
 <td>2 deck all-in-one controller</td>
@@ -422,7 +413,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>
 <td>2 deck all-in-one controller</td>
@@ -431,7 +422,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Hercules DJ 4set">Hercules DJ 4set</a></td>
 <td>Discontinued</td>
 <td>2 deck[34] all-in-one controller</td>
@@ -440,7 +431,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2011</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Native Instruments Traktor Kontrol Z1">Native Instruments Traktor Kontrol Z1</a></td>
 <td>$200</td>
 <td>2 deck compact</td>
@@ -449,7 +440,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2013</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
 <td>$200</td>
 <td>originally branded as "Remix controller", but very versatile</td>
@@ -458,7 +449,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2012</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
 <td>$85</td>
 <td>2 deck controller</td>
@@ -467,7 +458,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2019</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Stanton DJC.4">Stanton DJC.4</a></td>
 <td>Discontinued</td>
 <td>2 deck controller [35] all-in-one</td>

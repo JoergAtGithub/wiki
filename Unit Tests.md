@@ -51,7 +51,7 @@ as well in order to consider the code for inclusion into Mixxx
 Mixxx uses the [Google C++ Testing
 Framework](https://github.com/google/googletest). If it's new to you,
 read the [Google Test
-primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)
+primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
 and [Google Mock
 primer](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md).
 

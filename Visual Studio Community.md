@@ -12,12 +12,17 @@ improves that support.
 ### Installation
 
 First, when installing Visual studio, you need to specify the following
-elements: \* C++ Desktop development \* Windows 10 SDK \* CMake Tools \*
-MSVC v141 - VS 2017 C++ Build tools (These allow to compile with 2017
-compilers on Visual Studio 2019)
+elements:
 
-Once Installed, launch it, go to the Extensions menu and add: \* Qt
-Visual Studio tools
+  - C++ Desktop development
+  - Windows 10 SDK
+  - CMake Tools
+  - MSVC v141 - VS 2017 C++ Build tools (These allow to compile with
+    2017 compilers on Visual Studio 2019)
+
+Once Installed, launch it, go to the Extensions menu and add:
+
+  - Qt Visual Studio tools
 
 ### Opening Mixxx source code
 

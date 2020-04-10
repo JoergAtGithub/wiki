@@ -33,10 +33,11 @@ Then, open the CMake configuration (One place where you can do this is
 selecting the CMakelists.txt file, right click and select the configure
 CMake for mixxx).
 
-On top, click on the "CMakeSettings.json". This file is a file from
-visual studio that allows to configure some settings to pass them to
-CMake. Add the following after "ctestCommandArgs": "", (You might need
-to add that last comma)
+On top, click on the "CMakeSettings.json".  
+This file is a file from visual studio that allows to configure some
+settings to pass them to CMake.  
+Add the following after "ctestCommandArgs": "", (You might need to add
+that last comma)
 
 ``` 
      "variables": [

@@ -1,8 +1,7 @@
 **Visual Studio Code** is a free open source code editor / IDE that is
 easy to set-up.  
 It is a completely different editor than [Visual Studio
-Community](Visual%20Studio%20Community), which is easier to use for some
-languages (Used a lot for javascript/TypeScript development)
+Community](Visual%20Studio%20Community)
 
 Follow this instructions to set-up Visual Studio Code for Mixxx
 development.

@@ -22,7 +22,9 @@ files, it can be difficult to understand how the code fits together.
 
 ## Windows
 
-  - Integrated Development Environments (IDEs):
+  - Integrated Development Environments (IDEs): [Visual Studio
+    Community](https://visualstudio.microsoft.com/), [Visual Studio
+    Code](https://code.visualstudio.com/),
     [Eclipse](http://eclipse.org/), [Qt
     Creator](http://wiki.qt.io/Category:Tools::QtCreator)
   - Text editors: [Notepad++](http://notepad-plus.sourceforge.net/),

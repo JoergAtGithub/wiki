@@ -26,6 +26,9 @@ Once Installed, launch it, go to the Extensions menu and add:
 
 ### Opening Mixxx source code
 
+Note: CMake support has been added to Mixxx 2.3. You need this version
+or newer in order to use these instructions.
+
 Open Visual Studio, go to File-Open-\>CMake... and select the
 CMakelists.txt from the root of the Mixxx source folder.
 

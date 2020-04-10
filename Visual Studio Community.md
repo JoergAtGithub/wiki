@@ -1,4 +1,6 @@
-#### Description
+## Visual Studio IDE
+
+### Description
 
 **Microsoft Visual Studio** is the full-featured IDE from Microsoft for
 multiple languages. Since version 2015, there is a free-to-use Community
@@ -7,7 +9,7 @@ edition.
 Since version 2017, it includes support for CMake projects, version 2019
 improves that support.
 
-#### Installation
+### Installation
 
 First, when installing Visual studio, you need to specify the following
 elements: \* C++ Desktop development \* Windows 10 SDK \* CMake Tools \*
@@ -17,7 +19,7 @@ compilers on Visual Studio 2019)
 Once Installed, launch it, go to the Extensions menu and add: \* Qt
 Visual Studio tools
 
-#### Opening Mixxx source code
+### Opening Mixxx source code
 
 Open Visual Studio, go to File-Open-\>CMake... and select the
 CMakelists.txt from the root of the Mixxx source folder.
@@ -183,7 +185,7 @@ This is a sample output
     1> Modelo de código extraído.
     1> La generación de CMake ha finalizado.
 
-#### Debugging
+### Debugging
 
 Now, on the toolbar, next to the dropwdown that select the build (Debug
 or release) you can select the file that will be launched for debugging.

@@ -195,11 +195,13 @@ This is a sample output
 Now, on the toolbar, next to the dropwdown that select the build (Debug
 or release) you can select the file that will be launched for debugging.
 Select Mixxx and then go to the Menu "Debug -\> Start and debug
-configuration for mixxx". A file vslaunch.json will open. After "name":
-"mixxx.exe", you will need to add the resourcesPath argument in order to
-launch it. Current compilation from Visual studio does not prepare the
-directory, so you will need to tell it to use it from the sources, like
-this:
+configuration for mixxx". A file vslaunch.json will open.
+
+After  
+"name": "mixxx.exe",  
+you will need to add the resourcesPath argument in order to launch it.  
+Current compilation from Visual studio does not prepare the directory,
+so you will need to tell it to use it from the sources, like this:
 
 ``` 
       "args": [

@@ -51,7 +51,7 @@ together in input channels 5-6, so Mixxx can record and broadcast them.
 
 The knobs for MASTER LEVEL, BOOTH LEVEL, PHONES VOLUME, MIC LEVEL,
 TR/SAMPLER LEVEL and CUE/MASTER MIXING are controlling the hardware
-mixer of the built-in audio interface. Hence, turning the knobs will
+mixer of the built-in audio interface. Hence, turning the knobs will not
 change values in the Mixxx GUI and you'll need to set them to their
 default values when using the controller:
 

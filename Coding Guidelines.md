@@ -704,6 +704,47 @@ constexpr QChar kue = L'\u00fc' // for "ü"
 From Mixxx 2.3 we set QT\_USE\_QSTRINGBUILDER to use QStringBuilder for
 operator+. Use + in favour of % for better readability.
 
+## Non-Const References
+
+In the C++ community are two mutually exclusive styles established:
+
+1.) Google/Qt: "References can be confusing, as they have value syntax
+but pointer semantics."
+<https://google.github.io/styleguide/cppguide.html#Reference_Arguments>
+
+2.) Cpp Core Guidelines: "This makes it clear to callers that the object
+is assumed to be modified"
+<https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f17-for-in-out-parameters-pass-by-reference-to-non-const>
+
+Since we follow the Google style we avoid using value syntax to change
+variables via a lvalue reference. Using rvalue references to access
+nested variables is permitted.
+
+**Good:**
+
+``` cpp-qt
+
+T& X::refIObject();
+
+x.refObject().setValue() // The effected object is still part of the statement 
+
+T* pObject = &refObject(); 
+...
+pObject->setValue(5); // The pointer syntax reveals the an external object is written 
+
+```
+
+**Bad:**
+
+``` cpp-qt
+
+T& X::refIObject();
+
+T& object = refObject(); 
+...
+object->setValue(5); // It looks like a local variable is changed.  
+```
+
 ## C++17
 
 As of the Mixxx 2.3 release, Mixxx is switching to C++17. We are taking

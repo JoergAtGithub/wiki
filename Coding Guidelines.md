@@ -47,7 +47,7 @@ To adjust the code style in every commit, it is recommended to install
 the pre-commit framework. The required config file is in the Mixxx
 source tree
 [.pre-commit-config.yaml](https://github.com/mixxxdj/mixxx/blob/master/.pre-commit-config.yaml)
-and contains also insatall instructions.
+and contains also install instructions.
 
 ### Command line
 

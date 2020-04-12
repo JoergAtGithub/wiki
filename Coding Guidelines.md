@@ -47,9 +47,6 @@ Use
 [git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
 to make sure your changes follow the mixxx style.
 
-[Setting-up
-git-clang-format](https://dx13.co.uk/articles/2015/4/3/Setting-up-git-clang-format.html)
-
 You can for example do this after each commit during development:
 
 ``` bash

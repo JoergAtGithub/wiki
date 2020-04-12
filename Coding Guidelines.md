@@ -51,9 +51,9 @@ and contains also install instructions.
 
 ### Command line
 
-Use
+Alternatively you may use
 [git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
-to make sure your changes follow the mixxx style.
+from the command line.
 
 You can for example do this after each commit during development:
 

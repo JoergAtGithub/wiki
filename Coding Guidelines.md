@@ -41,6 +41,14 @@ sudo apt-get install clang-format clang-format-4.0
 sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-4.0 1000
 ```
 
+### pre-commit
+
+To adjust the code style in every commit, it is recommended to install
+the pre-commit framework. The required config file is in the Mixxx
+source tree
+[.pre-commit-config.yaml](https://github.com/mixxxdj/mixxx/blob/master/.pre-commit-config.yaml)
+and contains also insatall instructions.
+
 ### Command line
 
 Use

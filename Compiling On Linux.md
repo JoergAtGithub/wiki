@@ -21,7 +21,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
   libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
-  libfaad-dev libmp4v2-dev libmp3lame-dev
+  libfaad-dev libmp4v2-dev libmp3lame-dev libebur-128-dev
 ```
 
 Note: libfaad-dev libmp4v2-dev required for M4A support. The

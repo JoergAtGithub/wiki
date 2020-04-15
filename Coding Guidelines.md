@@ -408,6 +408,16 @@ the exact purpose of the following lines and why this code needs to be
 preserved as a comment. Commented out debugging statements without an
 additional description are acceptable if the intend is obvious.
 
+### Documentation
+
+Use '///' for documentation comments above class and member definitions
+in header files. These comments are shown in IDEs associated with the
+symbol.
+
+Add a few sentences to explain the purpose and use of a class to its
+header file for every new class you add. Much of the Mixxx code does not
+have any documentation, so add it whenever you edit a class.
+
 ### TODO's
 
 If you'd like to leave a `TODO` for yourself, format them like this:

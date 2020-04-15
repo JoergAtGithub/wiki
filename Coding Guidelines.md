@@ -410,7 +410,7 @@ additional description are acceptable if the intend is obvious.
 
 ### Documentation
 
-Use '///' for documentation comments above class and member definitions
+Use `///` for documentation comments above class and member definitions
 in header files. These comments are shown in IDEs associated with the
 symbol.
 

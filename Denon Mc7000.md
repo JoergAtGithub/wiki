@@ -253,10 +253,10 @@ PAD Mode described below.
 37\. **Roll / Saved Loop:**
 
   - ROLL Mode lets you repeat a number of beats while keep pushing the
-    PAD button down. From first to 8th PAD button the loop is set as
-    1/16, 1/8, 1/4, 1/2, 1, 2, 4 and 8 beats. The SLIP function remains
-    active so that the track continues at the position where it had been
-    playing forward the whole time.
+    PAD button down. From first to 8th PAD button the loop size is set
+    as 1/16, 1/8, 1/4, 1/2, 1, 2, 4 and 8 beats. The SLIP function
+    remains active so that the track continues at the position where it
+    had been playing forward the whole time.
   - *This section needs further development.* **HELP APPRECIATED**
 
 38\. **Slicer / Slicer Loop:**
@@ -277,11 +277,11 @@ PAD Mode described below.
   - *This section needs further development.* **HELP APPRECIATED**
 
 40\. **Auto-Loop/Reloop:** Press this button to create an auto-loop with
-the length that is selected in the GUI. You may change the length of
-beats by using the 1/2 or X2 buttons. Press and hold Shift and then
-press this button to toggle the current loop on or off. If the loop is
-ahead of the current play position, the track will keep playing normally
-until it reaches the loop.
+the length of 4 beats. You may change the length of beats by using the
+1/2 or X2 buttons. Press and hold Shift and then press this button to
+toggle the current loop on or off. If the loop is ahead of the current
+play position, the track will keep playing normally until it reaches the
+loop.
 
 41\. **X 1/2 Loop / Loop In:** Press this button to halve the length of
 the current loop. Press and hold Shift and then press this button to

@@ -391,11 +391,12 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Change Log
 
-**coming changes**
+**Release for Mixxx 2.2.4**
 
-``` 
-* 
-```
+  - The current version of Mixxx does not yet support sort function in
+    library. This will be mapped with Mixxx 2.3
+  - all other functions and LEDs are working except PAD mode 2nd and 3rd
+    function
 
 **Beta 0.14**
 
@@ -408,36 +409,6 @@ Platter Ring LEDs are correlated with the VINYL button.
   - SLICER mapped as beatjump buttons forward and backward by 1, 2, 4
     and 8 beats
   - set default Pitch Fader RANGE to 4, 6, 10, 16, 24 (%)
-
-**Beta 0.13**
-
-  - PAD Modes:
-  - ROLL section is working now with 1/16, 1/8, 1/4, 1/2, 1, 2, 4, 8
-    beat loops
-  - CUE LOOP initially implemented but still with issues
-  - Eject loaded Sampler using Shift + PAD button while in SAMPLER mode
-  - "BEAT GRID - set" to be used for quantize
-  - "SHIFT + AUTOLOOP" to deactivate an active loop
-
-<!-- end list -->
-
-  - known issues:
-  - Performance PAD LEDs are still not 100% working for CUE, CUE LOOP
-    and Sampler modes
-  - CUE LOOP works initially but while playing and a PAD button is
-    pressed then the loop does not start at cue point 
-
-**Beta 0.12:**
-
-  - first introduction of working PAD Modes
-  - HOT CUE working
-  - SAMPLER working
-
-<!-- end list -->
-
-  - known issues: 
-  - Performance PAD LEDs are still not 100% working, especially if you
-    are in different mode on both channels
 
 ### Wish List
 

@@ -467,7 +467,7 @@ There are many header files with legacy include guards like:
 #endif
 ```
 
-Replaces these with `#pragma once` when you edit a header file.
+Replace these with `#pragma once` when you edit a header file.
 
 ### includes
 

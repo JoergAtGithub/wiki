@@ -449,10 +449,16 @@ declarations, and so any file-level declarations would be redundant.
 // Created 2/21/2011 by RJ Ryan <email> 
 ```
 
-### ifndef guard
+### pragma once guard
 
-The \#ifndef guard should be the filename with the dots replaced with an
-underscore.
+For new header files use a \#pragma once directive instead of \#include
+guards:
+
+``` cpp-qt
+#pragma once
+```
+
+There are many header files with legacy include guards like:
 
 ``` cpp-qt
 #ifndef LIBRARY_H
@@ -461,12 +467,7 @@ underscore.
 #endif
 ```
 
-For new header files use a \#pragma once directive instead of \#include
-guards:
-
-``` cpp-qt
-#pragma once
-```
+Replaces these with `#pragma once` when you edit a header file.
 
 ### includes
 

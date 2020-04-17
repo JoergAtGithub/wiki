@@ -9,6 +9,10 @@
     using Git after reading that page.
   - If you are making changes to the GUI with a pull request, please
     post before and after screenshots of the changes.
+  - If you are helping with someone else's pull request that is not yet
+    merged, open a pull request targeted at their fork. Leave a comment
+    on the upstream pull request (which targets mixxxdj/mixxx) so other
+    Mixxx contributors are aware of your changes.
   - Low risk bug fixes should be targeted at the stable branch
     (currently 2.2). However, bug fixes for the stable branches must
     have a direct impact on users. If you spot a minor bug reading the

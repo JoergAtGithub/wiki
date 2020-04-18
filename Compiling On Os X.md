@@ -28,7 +28,9 @@ free registration at Apple's developer site.
 
 ### Method 1: Homebrew
 
-**This is the preferred method of compiling Mixxx on macOS**
+**There is currently a major performance problem with Qt 5.14 and Mixxx
+on macOS. We recommend using our prebuilt dependencies until this is
+[fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
 
 [Homebrew](https://github.com/Homebrew/brew) is yet another package
 manager for macOS. It is growing quickly in popularity. Assuming you

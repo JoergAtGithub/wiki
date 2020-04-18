@@ -79,7 +79,7 @@ Configure Git so that you push to your fork by default for new branches:
 
 # Set up automatic code checking
 
-\*WARNING\*: This currently only works for linux, since "clang-format"
+**WARNING**: This currently only works for linux, since "clang-format"
 under python is only compiled for linux (
 <https://github.com/mgevaert/clang-format-wheel/issues/2> )
 

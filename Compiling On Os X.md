@@ -29,7 +29,8 @@ free registration at Apple's developer site.
 ### Method 1: Homebrew
 
 **There is currently a major performance problem with Qt 5.14 and Mixxx
-on macOS. We recommend using our prebuilt dependencies until this is
+on macOS. We recommend [using our prebuilt
+dependencies](#method-2use-a-pre-built-environment) until this is
 [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
 
 [Homebrew](https://github.com/Homebrew/brew) is yet another package
@@ -69,7 +70,7 @@ fixed in future versions of libopusfile.
 %VERSION% with the folder name, e.g. 5.11.2 . Run `brew list --versions
 qt` to see what version(s) you have installed.
 
-#### Optional: Qt 4
+#### Legacy: Qt 4
 
 **Qt 4 is only supported in Mixxx 2.1 and earlier. Newer versions of
 Mixxx do not build with it.**

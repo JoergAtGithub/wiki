@@ -77,7 +77,7 @@ files):
 *clang-format* will pick up the *.clang-format* file from the current or
 any parent directory of the source file(s).
 
-### VisualStudio Code
+### Visual Studio Code
 
 Code formatting is available in [Visual Studio
 Code](https://code.visualstudio.com). Install the [C/C++
@@ -116,6 +116,11 @@ a whole file.
 In addition you can install
 <https://marketplace.eclipse.org/content/cppstyle> to use clang-format
 from the GUI
+
+### CLion
+
+Make sure the ClangFormat plugin is installed and enable it in the
+Settings under Editor \> Code Style.
 
 ## Tabs vs. Spaces
 

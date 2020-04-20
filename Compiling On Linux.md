@@ -114,10 +114,9 @@ compile the source code:
 
     tar xf qt-everywhere-src-VERSION.tar.xz
     cd qt-everywhere-src-VERSION
-    ./configure -prefix /path/to/install -system-sqlite -sql-sqlite -qt-zlib -opensource -confirm-license -nomake examples -nomake tests -skip qt3d -skip qtwebengine
+    ./configure -prefix /path/to/qt/install -system-sqlite -sql-sqlite -qt-zlib -opensource -confirm-license -nomake examples -nomake tests -skip qt3d -skip qtwebengine
     gmake -j4 # replace 4 with however many threads your CPU can run. This will take a long time.
     gmake install
-    export PKG_CONFIG_PATH=/path/to/install # otherwise scons will use your system Qt package
 
 ### Other
 
@@ -234,6 +233,13 @@ something much larger to accommodate Mixxx's large build sizes. You can
 adjust the cache size with the --set-config flag:
 
     ccache --set-config=max_size=20.0G
+
+#### Non-System-Qt
+
+Append `-DCMAKE_PREFIX_PATH=/path/to/qt/install` (where
+`/path/to/qt/install` is the path you used when [building
+Qt](compiling_on_linux#non-system_qt)) to the cmake configure command to
+instruct cmake to prefer the Qt version from that path.
 
 ### SCons
 

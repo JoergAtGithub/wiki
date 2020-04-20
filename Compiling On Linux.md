@@ -115,8 +115,8 @@ compile the source code:
     tar xf qt-everywhere-src-VERSION.tar.xz
     cd qt-everywhere-src-VERSION
     ./configure -prefix /path/to/qt/install -system-sqlite -sql-sqlite -qt-zlib -opensource -confirm-license -nomake examples -nomake tests -skip qt3d -skip qtwebengine
-    gmake -j4 # replace 4 with however many threads your CPU can run. This will take a long time.
-    gmake install
+    make -j4 # replace 4 with however many threads your CPU can run. This will take a long time.
+    make install
 
 ### Other
 

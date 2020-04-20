@@ -203,6 +203,9 @@ computer.
 
     $ cmake --build . --parallel 2
 
+Contrary to the behavior of SCons, CMake does not move the produced
+binaries into the root folder of the git repository.
+
 Install Mixxx. If you want to compile and install in one step, you can
 skip the compilation step above and just run this command.
 

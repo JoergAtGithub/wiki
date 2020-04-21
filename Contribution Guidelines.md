@@ -7,15 +7,15 @@
     Git](Using%20Git) for how to do this. Please ask for help on
     [Zulip](https://mixxx.zulipchat.com/) if you have questions about
     using Git after reading that page.
-  - Every commit should build. This is important so [git
-    bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#_binary_search)
-    works.
   - Commits should be as small as makes sense. The smaller the commit,
     the easier it is to review. It also makes it easier to revert if it
     is later identified as the source of a bug. If you have lots of
     changes that you need to commit, a [GUI Git
     client](https://git-scm.com/downloads/guis) can be helpful for
     picking out specific changes for multiple small commits.
+  - Every commit should build. This is important so [git
+    bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#_binary_search)
+    works.
   - Generally, prefer merging to rebasing. Do not rebase unless you have
     discussed that with whoever is reviewing the pull request. When you
     rebase a branch with an open pull request, prior review comments

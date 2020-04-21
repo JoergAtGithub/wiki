@@ -16,8 +16,13 @@
     changes that you need to commit, a [GUI Git
     client](https://git-scm.com/downloads/guis) can be helpful for
     picking out specific changes for multiple small commits.
-  - If you are making changes to the GUI with a pull request, please
-    post before and after screenshots of the changes.
+  - Generally, prefer merging to rebasing. Do not rebase unless you have
+    discussed that with whoever is reviewing the pull request. When you
+    rebase a branch with an open pull request, prior review comments
+    made inline in the code on GitHub lose their connection to that spot
+    in the code. If you want to correct minor mistakes with a rebase or
+    `git commit --amend` within a few minutes of pushing commits, that
+    is okay as long as no one has started reviewing those commits yet.
   - If you are helping with someone else's pull request that is not yet
     merged, open a pull request targeted at their fork. Leave a comment
     on the upstream pull request (which targets mixxxdj/mixxx) with a
@@ -30,13 +35,8 @@
     beta branch.
   - Controller mappings should be targeted at the stable branch unless
     they use features that are new in the beta or master branch.
-  - Generally, prefer merging to rebasing. Do not rebase unless you have
-    discussed that with whoever is reviewing the pull request. When you
-    rebase a branch with an open pull request, prior review comments
-    made inline in the code on GitHub lose their connection to that spot
-    in the code. If you want to correct minor mistakes with a rebase or
-    `git commit --amend` within a few minutes of pushing commits, that
-    is okay as long as no one has started reviewing those commits yet.
+  - If you are making changes to the GUI with a pull request, please
+    post before and after screenshots of the changes.
   - Please help review other people's pull requests. When others review
     your pull requests, please return the favor. The continued progress
     of Mixxx depends on all of us working together. Even if you are not

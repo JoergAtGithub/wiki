@@ -10,6 +10,9 @@
   - Every commit should build. This is important so [git
     bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#_binary_search)
     works.
+  - Commits should be as small as makes sense. The smaller the commit,
+    the easier it is to review. It also makes it easier to revert if it
+    is later identified as the source of a bug.
   - If you are making changes to the GUI with a pull request, please
     post before and after screenshots of the changes.
   - If you are helping with someone else's pull request that is not yet

@@ -7,6 +7,9 @@
     Git](Using%20Git) for how to do this. Please ask for help on
     [Zulip](https://mixxx.zulipchat.com/) if you have questions about
     using Git after reading that page.
+  - Every commit should build. This is important so [git
+    bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#_binary_search)
+    works.
   - If you are making changes to the GUI with a pull request, please
     post before and after screenshots of the changes.
   - If you are helping with someone else's pull request that is not yet

@@ -12,7 +12,10 @@
     works.
   - Commits should be as small as makes sense. The smaller the commit,
     the easier it is to review. It also makes it easier to revert if it
-    is later identified as the source of a bug.
+    is later identified as the source of a bug. If you have lots of
+    changes that you need to commit, a [GUI Git
+    client](https://git-scm.com/downloads/guis) can be helpful for
+    picking out specific changes for multiple small commits.
   - If you are making changes to the GUI with a pull request, please
     post before and after screenshots of the changes.
   - If you are helping with someone else's pull request that is not yet

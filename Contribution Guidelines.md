@@ -54,7 +54,8 @@ Mixxx core team members are contributors who have write access to the
 [upstream mixxxdj repositories](https://github.com/mixxxdj/) on GitHub,
 access to the Jenkins web interface for the build servers, and access to
 the private Zulip stream for the core team (we mostly use the private
-stream for discussing infrastructure; most discussion is public).
+stream for discussing infrastructure; all development discussion is
+public).
 
   - Enable [two-factor authentication
     (2FA)](https://help.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa)

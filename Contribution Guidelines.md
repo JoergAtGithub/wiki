@@ -77,6 +77,10 @@ the private Zulip stream for the core team.
   - Check CI to ensure builds work and tests pass before merging. If CI
     timed out, either manually restart it or build the branch and run
     the tests locally before merging.
+  - When you merge a pull request to a stable branch, merge the stable
+    branch to the beta branch afterwards. If you merge a pull request to
+    a beta branch, merge the beta branch to master afterwards. When
+    backporting, cherry-pick or rebase rather than merge.
   - Default to open; only post in the private Zulip stream for
     discussions that have a reason to be private. Most of the time, post
     to a public Zulip stream so anyone can participate in the

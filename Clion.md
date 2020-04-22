@@ -17,6 +17,8 @@ Mixxx dependencies **using Homebrew** and get the Mixxx source code.
 
 *Tested on CLion 2020.1*
 
+## Build configuration
+
 Open CLion.
 
 Select **Open** in the welcome window:
@@ -47,3 +49,5 @@ CLion will generate the build files in this folder, which will be
 created in the root path of the project. Don't commit this folder.
 Configure git to exclude it. Open `.git/info/exclude` and append
 `cmake-build/` in a new line.
+
+## Run configuration

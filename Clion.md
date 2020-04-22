@@ -10,8 +10,8 @@ licenses to contributors free of charge. You can apply
 
 **macOS**
 
-Follow [Compiling on macOS](compiling_on_os_x) steps 1 to 3 to install
-Mixxx dependencies and get the Mixxx source code.
+Follow [Compiling on macOS](compiling_on_os_x), steps 1 to 3 to install
+Mixxx dependencies **using Homebrew** and get the Mixxx source code.
 
 # Step-by-Step Setup
 
@@ -23,8 +23,8 @@ Select **Open** in the welcome window:
 
 [[/media/clion_2019-3-5_welcome_screen.png|]]
 
-Navigate to the mixxx folder, select the `CMakeLists.txt` file and click
-**Open**.
+Navigate to the mixxx source folder, select the `CMakeLists.txt` file
+and click **Open**.
 
 Select **Open as Project**:
 
@@ -35,7 +35,7 @@ Deployment** \> **CMake**.
 
 Add the following options to the **CMake options** field:
 
-macOS:
+**macOS**
 
     -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/
 

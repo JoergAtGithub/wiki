@@ -59,3 +59,11 @@ Select **mixxx** on the Run configuration drop-down menu:
 Press the Build button to build Mixxx\! [[/media/clion_build_button.png|]]
 
 ## Run configuration
+
+Clion automatically detects the built mixxx binary.
+
+Open **Run \> Edit Configurations...** and select **mixxx** on the
+left-side list. Add the following arguments to the **Program arguments**
+field:
+
+    --resourcePath res --settingsPath settings --developer --controllerDebug --debugAssertBreak

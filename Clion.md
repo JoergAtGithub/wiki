@@ -6,7 +6,7 @@ JetBrains supports non-commercial open-source projects by providing
 licenses to contributors free of charge. You can apply
 [here](https://www.jetbrains.com/community/opensource/#support).
 
-# Prerequisite
+# Prerequisites
 
 **macOS**
 

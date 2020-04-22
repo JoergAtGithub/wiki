@@ -67,3 +67,5 @@ left-side list. Add the following arguments to the **Program arguments**
 field:
 
     --resourcePath res --settingsPath settings --developer --controllerDebug --debugAssertBreak
+
+[[/media/clion_2020-1_edit_run_configurations.png|]]

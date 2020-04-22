@@ -8,7 +8,7 @@ licenses to contributors free of charge. You can apply
 
 # Step-by-Step Setup
 
-For CLion 2019.3.5.
+For CLion 2020.1
 
 Open CLion.
 

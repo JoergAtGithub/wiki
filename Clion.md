@@ -8,7 +8,8 @@ licenses to contributors free of charge. You can apply
 
 # Step-by-Step Setup
 
-For CLion 2020.1
+Follow the steps in [Compiling on macOS](compiling_on_os_x) For CLion
+2020.1
 
 Open CLion.
 
@@ -30,9 +31,7 @@ Add the following options to the **CMake options** field:
 
 macOS:
 
-``` 
-  -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/
-```
+    -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/
 
 Set the **Generation path** field to `cmake_build`:
 

@@ -69,3 +69,5 @@ field:
     --resourcePath res --settingsPath settings --developer --controllerDebug --debugAssertBreak
 
 [[/media/clion_2020-1_edit_run_configurations.png|]]
+
+Press the Run button to run Mixxx\! [[/media/clion_run_button.png|]]

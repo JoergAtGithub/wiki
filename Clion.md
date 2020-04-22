@@ -50,4 +50,6 @@ created in the root path of the project. Don't commit this folder.
 Configure git to exclude it. Open `.git/info/exclude` and append
 `cmake-build/` in a new line.
 
+Click **OK** to close save the changes and close the preferences window.
+
 ## Run configuration

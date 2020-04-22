@@ -6,10 +6,16 @@ JetBrains supports non-commercial open-source projects by providing
 licenses to contributors free of charge. You can apply
 [here](https://www.jetbrains.com/community/opensource/#support).
 
+# Prerequisite
+
+**macOS**
+
+Follow [Compiling on macOS](compiling_on_os_x) steps 1 to 3 to install
+Mixxx dependencies and get the Mixxx source code.
+
 # Step-by-Step Setup
 
-Follow the steps in [Compiling on macOS](compiling_on_os_x) For CLion
-2020.1
+*Tested on CLion 2020.1*
 
 Open CLion.
 

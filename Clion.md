@@ -1,5 +1,3 @@
-**This is a work in progress guide**
-
 CLion is a **commercial** Cross-Platform IDE for C and C++ by JetBrains.
 
 JetBrains supports non-commercial open-source projects by providing

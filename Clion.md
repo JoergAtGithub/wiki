@@ -53,6 +53,7 @@ Configure git to exclude it. Open `.git/info/exclude` and append
 Click **OK** to save the changes and close the preferences window.
 
 Select **mixxx** on the Run configuration drop-down menu:
+
 [[/media/clion_2020-1_run_configuration.png|]]
 
 Select **mixxx**

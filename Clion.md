@@ -56,6 +56,6 @@ Select **mixxx** on the Run configuration drop-down menu:
 
 [[/media/clion_2020-1_run_configuration.png|]]
 
-Select **mixxx**
+Press the Build button to build Mixxx\! [[/media/clion_build_button.png|]]
 
 ## Run configuration

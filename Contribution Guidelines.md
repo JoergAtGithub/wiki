@@ -16,6 +16,24 @@
   - Every commit should build. This is important so [git
     bisect](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#_binary_search)
     works.
+  - Commit messages should succinctly describe what is changed in that
+    commit and why. For example, this is a good commit message:
+
+<!-- end list -->
+
+    DlgPrefEffects: add QListWidget to set order of chains
+    
+    This order will soon be used by new ControlObjects to load them
+    from controllers.
+
+The first line should be \<= 50 characters and the body should line wrap
+at 72 characters. This is not a good commit message:
+
+    address comments from PR review
+
+Refer to [How to Write a Git Commit
+Message](https://chris.beams.io/posts/git-commit/) for more details.
+
   - Generally, prefer merging to rebasing. Do not rebase unless you have
     discussed that with whoever is reviewing the pull request. When you
     rebase a branch with an open pull request, prior review comments

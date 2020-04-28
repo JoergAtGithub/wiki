@@ -53,8 +53,10 @@ analogue (vinyl) and digital sources.
     End-Of-Life.
   - **Linux Distributions** built upon Ubuntu 18.04 and derivatives,
     like Linux Mint, KDE Neon etc. must update the Kernel to one of the
-    mentioned above. Ubuntu 20.04 already comes with Kernel 5.4.x so it
-    supports the MC7000 Audio Interface out-of-the-box. 
+    mentioned above. Using
+    [UKUU](https://mintguide.org/tools/691-ukuu-ubuntu-kernel-upgrade-utility.html)
+    for this is recommended. Ubuntu 20.04 already comes with Kernel
+    5.4.x so it supports the MC7000 Audio Interface out-of-the-box. 
 
 ## Mapping
 

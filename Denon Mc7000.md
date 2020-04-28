@@ -46,9 +46,15 @@ analogue (vinyl) and digital sources.
   - **Linux** users need to know that the MC7000 internal audio
     interface is not available out-of-the-box for older Linux Kernels.
     You should upgrade your **Kernel** to minimum versions LTS:
-    **4.19.105** or **5.4.21**, stable branch **5.5.5** or current
-    **5.6** (valid at date 2020-02-19). Newer Kernels will surely also
-    provide native audio support for this controller.
+    **4.19.105** or **5.4.21**, stable branch **5.6.x** or mainline
+    **5.7.x** (valid at date 2020-04-28). Newer Kernels will also
+    provide native audio support for this controller. Linux Kernel 5.3.x
+    does not support that device and together with 5.5.x reached
+    End-Of-Life.
+  - **Linux Distributions** built upon Ubuntu 18.04 and derivatives,
+    like Linux Mint, KDE Neon etc. must update the Kernel to one of the
+    mentioned above. Ubuntu 20.04 already comes with Kernel 5.4.x so it
+    supports the MC7000 Audio Interface out-of-the-box. 
 
 ## Mapping
 

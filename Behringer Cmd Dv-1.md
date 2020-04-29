@@ -40,7 +40,9 @@ show buttons LEDs \[ 7 \]&\[ 8 \] dimmed and buttons LEDs \[ 3 \]&\[ 4
 
 The following description mapping is for a community mapping that you
 can find in the forums
-[here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7910)
+~~[here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7910)~~.  
+Up to date mapping can be found on github :
+<https://github.com/Tikeri/mixxxstuff>.
 
 ### FX Rows
 

@@ -32,7 +32,9 @@ forum](http://resolume.com/forum/viewtopic.php?f=7&t=10639#p42068)
 
 The following description mapping is for a community mapping that you
 can find in the forums
-[here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7945)
+~~[here](http://www.mixxx.org/forums/viewtopic.php?f=7&t=7945)~~. Up to
+date mapping can be found on github :
+<https://github.com/Tikeri/mixxxstuff>.
 
 ### Library browsing & Load tracks
 

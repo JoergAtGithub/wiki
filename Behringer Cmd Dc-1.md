@@ -66,6 +66,9 @@ They are located in the corners above encoders :
 Effect units processing can be enabled/disabled by buttons \[ 1 \]..\[ 4
 \] located under encoders.
 
+:\!: <span class="underline">Changed since Mixxx</span> 2.2.3 : Now
+toggles enable effect from 1 to 3 of the desired effect unit processor.
+
 ### HotCues Modes
 
 Mode is switching automatically by calling the following buttons under

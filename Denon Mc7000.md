@@ -62,10 +62,10 @@ analogue (vinyl) and digital sources.
     MC7000 Audio Interface out-of-the-box. A fresh install is
     recommended but you can read further how to [upgrade Ubuntu 18.04
     to 20.04](https://ubuntu.com/tutorials/tutorial-upgrading-ubuntu-desktop#1-before-you-start).
-  - OpenSUSE Tumbleweed is currently on Kernel 5.6.6 supporting the
+  - OpenSUSE Tumbleweed is currently on Kernel 5.6.x supporting the
     MC7000 Audio Interface.
-  - Manjaro Linux 20.0 was just released with Linux Kernel 5.4.35
-    supporting the MC7000 Audio Interface.
+  - Manjaro Linux 19.0 and 20.0 feature Linux Kernel 5.4.x supporting
+    the MC7000 Audio Interface.
 
 ## Mapping
 

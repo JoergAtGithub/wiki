@@ -47,10 +47,10 @@ around this big encoder.
 
 They are located in the corners above encoders :
 
-|                     |  |  |                     |
-| ------------------- |  |  | ------------------- |
-| Deck A \[Channel1\] |  |  | Deck B \[Channel2\] |
-| Deck C \[Channel3\] |  |  | Deck D \[Channel4\] |
+|                     |                     |                                 |                     |
+| ------------------- | ------------------- | ------------------------------- | ------------------- |
+| Deck A \[Channel1\] | Show effect racks   | Show full window library        | Deck B \[Channel2\] |
+| Deck C \[Channel3\] | Show samplers panel | Show microphone /auxilary panel | Deck D \[Channel4\] |
 
 ### Encoders
 

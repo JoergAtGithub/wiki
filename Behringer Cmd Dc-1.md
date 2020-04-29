@@ -38,10 +38,12 @@ can find in the forums
 
 The big encoder is used to scroll through the library and pressing on it
 will load the selected track to the available deck that is currently not
-playing.
+playing. Loading selected track to a specified Deck is done by calling
+**<span class="underline">top buttons around this big encoder</span>**.
 
-Loading selected track to a specified Deck is done by calling buttons
-around this big encoder.
+:\!: <span class="underline">Changed in Mixxx version</span> **2.2.3** :
+You must first get the focus into the library window (Using TAB shortcut
+as example)
 
 ### Deck Selection
 

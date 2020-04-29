@@ -38,7 +38,7 @@ analogue (vinyl) and digital sources.
   - 2 mic inputs with dedicated controls
   - XLR Booth and Master connections
 
-### Compatibility
+## Compatibility
 
   - **Mac** users should be just fine connecting the MC7000 and go.
   - **Windows** users need to install the Windows Driver from [Denon
@@ -51,10 +51,17 @@ analogue (vinyl) and digital sources.
     provide native audio support for this controller. Linux Kernel 5.3.x
     does not support that device and together with 5.5.x reached
     End-Of-Life.
-  - **Linux Distributions** built upon Ubuntu 18.04 and derivatives,
-    like Linux Mint, KDE Neon etc. must update the Kernel to one of the
-    mentioned above. Ubuntu 20.04 already comes with Kernel 5.4.x so it
-    supports the MC7000 Audio Interface out-of-the-box. 
+  - Linux Distributions built upon Ubuntu 18.04 and derivatives, like
+    Linux Mint, KDE Neon etc. must update the Kernel to one of the
+    mentioned above. For Ubuntu there is an [Kernel update
+    script](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
+    available that helps fetching and installing newer Linux Kernels
+    from the Ubuntu Kernel PPA. I can confirm it works for KDE Neon as
+    well.
+  - Ubuntu 20.04 already comes with Kernel 5.4.x so it supports the
+    MC7000 Audio Interface out-of-the-box. A fresh install is
+    recommended but you can read further how to [upgrade Ubuntu 18.04
+    to 20.04](https://ubuntu.com/tutorials/tutorial-upgrading-ubuntu-desktop#1-before-you-start).
 
 ## Mapping
 

@@ -67,6 +67,10 @@ The following projects were accepted for Google Summer of Code 2016:
     Playback](MIDI%20Sequence%20Recording%20and%20Playback) by Anirudh
     Mani
 
+<!-- end list -->
+
+  - See the list of suggested projects: [GSoC 2016 Ideas](gsoc2016ideas)
+
 ### 2015
 
 Mixxx applied as a mentor organization for [Google Summer of

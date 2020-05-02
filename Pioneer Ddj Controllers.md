@@ -1,6 +1,6 @@
 This page describes the Pioneer DDJ controllers support in MIXXX.
 
-#### DDJ support
+### DDJ support
 
 Built-in support:
 
@@ -20,9 +20,9 @@ User contributed mappings (forum):
   - DDJ-400: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=12113>
   - DDJ-200: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13160>
 
-#### Generic DDJ Technical info
+### Generic DDJ Technical info
 
-##### DDJ pad colors
+#### DDJ pad colors
 
   - 0: off
   - 1: blue
@@ -52,7 +52,7 @@ User contributed mappings (forum):
     * 
     * >65: default    color for that mode
 
-##### DDJ midi codes
+#### DDJ midi codes
 
 List of all Pioneer MIDI
 codes:[https://github.com/pestrela/music/tree/master/ddj/1%20MIDI%20codes](here)
@@ -68,25 +68,25 @@ Differences are:
     shift layers on the software side (because the hardware shift layer
     is tipically already busy).
 
-##### Serato Family
+#### Serato Family
 
   - All "S" controllers (SB, SX, SX2, SZ ...)
   - All "R" controllers (RB, RX, ...)
   - DDJ-1000SRT
 
-##### Rekordbox-only Family
+#### Rekordbox-only Family
 
   - DDJ-1000 
   - DDJ-800
   - etc
 
-##### XDJ family
+#### XDJ family
 
   - XDJ-XZ
   - XDJ-RX2
   - etc
 
-##### DDJ Channels overview
+#### DDJ Channels overview
 
 |                 | Serato    | RB-only    | XDJ  |
 | --------------- | --------- | ---------- | ---- |
@@ -98,3 +98,14 @@ Differences are:
 | Pad regular     | 8,9,10,11 | 8,10,12,14 | 6..9 |
 | Pad shift       | same      | 9,11,13,15 | same |
 | Pad sub pages   | no        | yes        | no   |
+
+the different DDJs can be emulated to use a single mapping. This
+requires converting both input and output messages.
+
+In [this traktor example](https://maps.djtechtools.com/mappings/9222),
+DDJ-SZ midi messages are converted to DDJ-1000 messages, and then feed
+to the DDJ-1000 mapping.
+
+In [this other traktor
+example](https://maps.djtechtools.com/mappings/10305), the whole mapping
+was ported as a one-off to the XDJ-XZ.

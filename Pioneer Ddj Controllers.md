@@ -17,7 +17,9 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
 
 ### User contributed mappings
 
-  - DDJ-1000: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13346>
+  - DDJ-1000: 
+  - mapping: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13346>
+  - tehcnical info: [ddj-1000](ddj-1000)
   - DDJ-800: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13367>
   - DDJ-400: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=12113>
   - DDJ-200: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13160>
@@ -27,12 +29,14 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
 ### DDJ-1000 vs DDJ-1000SRT
 
 Note that the 1000SRT has technical differences fom the original 1000.
+Similar story for the 800 vs 10000.
 
-|             | Jog Screens              | PionnerFX              |
-| ----------- | ------------------------ | ---------------------- |
-| DDJ-1000    | both MIDI and HID        | **Only** BeatFX Master |
-| DDJ-1000SRT | **only HID**             | Any inputs             |
-| DDJ-800     | MIDI screens broken, HID | Unk                    |
+|             | Jog Screens      |     | PionnerFX              |
+| ----------- | ---------------- | --- | ---------------------- |
+|             | MIDI             | HID |                        |
+| DDJ-1000    | yes              | yes | **Only** BeatFX Master |
+| DDJ-1000SRT | **no**           | yes | Any inputs             |
+| DDJ-800     | **firmware bug** | yes | Unk                    |
 
 more info:
 <https://www.mixxx.org/wiki/doku.php/ddj-1000#pioneer_hardware_effects>

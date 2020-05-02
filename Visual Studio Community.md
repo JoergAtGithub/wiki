@@ -20,10 +20,6 @@ following elements:
   - MSVC v141 - VS 2017 C++ Build tools (These allow to compile with
     2017 compilers on Visual Studio 2019)
 
-Once Installed, launch it, go to the Extensions menu and add:
-
-  - Qt Visual Studio tools
-
 ### Opening Mixxx source code
 
 Note: CMake support has been added to Mixxx 2.3. You need this version

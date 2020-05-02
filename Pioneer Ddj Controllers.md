@@ -4,7 +4,7 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
 
 ## MIXXX DDJ support
 
-Built-in support:
+### Built-in support
 
   - [ddj-sx2](ddj-sx2)
   - [pioneer\_ddj-400](pioneer_ddj-400)
@@ -15,7 +15,7 @@ Built-in support:
   - [pioneer\_ddj-sx](pioneer_ddj-sx)
   - [pioneer\_ddj-wego](pioneer_ddj-wego)
 
-User contributed mappings (forum):
+### User contributed mappings
 
   - DDJ-1000: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13346>
   - DDJ-800: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13367>
@@ -23,6 +23,19 @@ User contributed mappings (forum):
   - DDJ-200: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13160>
 
 ## Generic DDJ Technical info
+
+### DDJ-1000 vs DDJ-1000SRT
+
+Note that the 1000SRT has technical differences fom the original 1000.
+
+|             | Jog Screens              | PionnerFX              |
+| ----------- | ------------------------ | ---------------------- |
+| DDJ-1000    | both MIDI and HID        | **Only** BeatFX Master |
+| DDJ-1000SRT | **only HID**             | Any inputs             |
+| DDJ-800     | MIDI screens broken, HID | Unk                    |
+
+more info:
+<https://www.mixxx.org/wiki/doku.php/ddj-1000#pioneer_hardware_effects>
 
 ### DDJ pad colors
 

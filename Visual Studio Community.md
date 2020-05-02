@@ -71,9 +71,9 @@ that last comma)
           "type": "BOOL"
         },
         {
-          "name": "OPTIMIZE",
-          "value": "fastbuild",
-          "type": "STRING"
+          "name": "BUILD_TESTING",
+          "value": "False",
+          "type": "BOOL"
         }
       ]
 ```
@@ -95,6 +95,24 @@ debug build)
       "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
 ```
+
+Also, I recommend to add the fastbuild OPTIMIZE flag to avoid having a
+4GB build dir. Final exe is a bit bigger but also link time is faster
+and requires slightly less memory.
+
+``` 
+        {
+          "name": "OPTIMIZE",
+          "value": "fastbuild",
+          "type": "STRING"
+        }
+```
+
+Note that one of the flags is "BUILD\_TESTING" to False. This flag tells
+not to build mixxx-test.exe. I recommend to have this flag off by
+default, and only set to on after you've build mixxx and want to build
+mixxx-test too. It will build just the additional classes and linking
+needed for the mixxx-test.
 
 Save CMakeSettings.json, go back to the CMakelists.txt configuration and
 click on "Save and generate the CMake cache memory to load variables".

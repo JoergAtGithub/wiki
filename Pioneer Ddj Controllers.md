@@ -59,11 +59,14 @@ codes:[https://github.com/pestrela/music/tree/master/ddj/1%20MIDI%20codes](here)
 
 Inside the same family, the DDJ controllers are mostly compatible.
 
-Differences are: - Buttons added: these get a new MIDI code - Buttons
-moved around: The maitain the same midi code unless the feature is
-slightly different - Buttons removed: if needed these can be emulated
-using additional shift layers on the software side (because the hardware
-shift layer is tipically already busy).
+Differences are:
+
+1.  Buttons added: these get a new MIDI code
+2.  Buttons moved around: The maitain the same midi code unless the
+    feature is slightly different
+3.  Buttons removed: if needed these can be emulated using additional
+    shift layers on the software side (because the hardware shift layer
+    is tipically already busy).
 
 ##### Serato Family
 

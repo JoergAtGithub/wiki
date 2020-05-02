@@ -69,6 +69,11 @@ that last comma)
           "name": "CLCACHE_SUPPORT",
           "value": "False",
           "type": "BOOL"
+        },
+        {
+          "name": "OPTIMIZE",
+          "value": "fastbuild",
+          "type": "STRING"
         }
       ]
 ```

@@ -19,7 +19,7 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
 
   - DDJ-1000: 
   - mapping: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13346>
-  - tehcnical info: [ddj-1000](ddj-1000)
+  - technical info: [ddj-1000](ddj-1000)
   - DDJ-800: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13367>
   - DDJ-400: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=12113>
   - DDJ-200: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13160>

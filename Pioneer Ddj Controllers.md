@@ -1,6 +1,8 @@
+# Pioneer DDJ Controllers
+
 This page describes the Pioneer DDJ controllers support in MIXXX.
 
-### DDJ support
+## MIXXX DDJ support
 
 Built-in support:
 
@@ -20,9 +22,9 @@ User contributed mappings (forum):
   - DDJ-400: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=12113>
   - DDJ-200: <https://www.mixxx.org/forums/viewtopic.php?f=7&t=13160>
 
-### Generic DDJ Technical info
+## Generic DDJ Technical info
 
-#### DDJ pad colors
+### DDJ pad colors
 
   - 0: off
   - 1: blue
@@ -52,7 +54,7 @@ User contributed mappings (forum):
     * 
     * >65: default    color for that mode
 
-#### DDJ midi codes
+### DDJ midi codes
 
 List of all Pioneer MIDI
 codes:[https://github.com/pestrela/music/tree/master/ddj/1%20MIDI%20codes](here)
@@ -86,7 +88,7 @@ Differences are:
   - XDJ-RX2
   - etc
 
-#### DDJ Channels overview
+### DDJ Channels overview
 
 |                 | Serato    | RB-only    | XDJ  |
 | --------------- | --------- | ---------- | ---- |
@@ -109,5 +111,3 @@ to the DDJ-1000 mapping.
 In [this other traktor
 example](https://maps.djtechtools.com/mappings/10305), the whole mapping
 was ported as a one-off to the XDJ-XZ.
-
-###

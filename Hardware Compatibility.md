@@ -244,25 +244,65 @@ When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
 
-\<sortable 2=numeric\> ^ Device ^ Price (USD) \[28\] ^ Description ^
-Integrated Sound Card ^ Balanced outputs ^ Signal protocol ^ Released ^
-^ [Akai AMX](Akai%20AMX) | $250 | 2 deck mixer | yes | no | MIDI | 2014
-| ^ [Faderfox DJ44](Faderfox%20DJ44) | €499 | 2/4 deck\[29\] mobile
-controller | no | - | MIDI | 2013 | ^ [Gemini G4V](Gemini%20G4V) | $350
-| 2 deck\[30\] all-in-one | yes | yes | MIDI | 2013 | ^ [Pioneer
-DDJ-400](Pioneer%20DDJ-400) | $279 | 2 deck controller all-in-one | yes
-| no | MIDI | 2018 | ^ [Pioneer DDJ-1000](Pioneer%20DDJ-1000) | $1199
+\<sortable 2=numeric\>
 
 <table>
+<thead>
+<tr class="header">
+<th>Device</th>
+<th>Price (USD) [28]</th>
+<th>Description</th>
+<th>Integrated Sound Card</th>
+<th>Balanced outputs</th>
+<th>Signal protocol</th>
+<th>Released</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
+<td><a href="Akai AMX">Akai AMX</a></td>
+<td>$250</td>
+<td>2 deck mixer</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2014</td>
+</tr>
+<tr class="even">
+<td><a href="Faderfox DJ44">Faderfox DJ44</a></td>
+<td>€499</td>
+<td>2/4 deck[29] mobile controller</td>
+<td>no</td>
+<td>-</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
+<td><a href="Gemini G4V">Gemini G4V</a></td>
+<td>$350</td>
+<td>2 deck[30] all-in-one</td>
+<td>yes</td>
+<td>yes</td>
+<td>MIDI</td>
+<td>2013</td>
+</tr>
+<tr class="even">
+<td><a href="Pioneer DDJ-400">Pioneer DDJ-400</a></td>
+<td>$279</td>
+<td>2 deck controller all-in-one</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2018</td>
+</tr>
+<tr class="odd">
+<td><a href="DDJ-1000">Pioneer DDJ-1000</a></td>
+<td>1199</td>
 <td>4 deck controller all-in-one</td>
 <td>yes</td>
 <td>yes</td>
 <td>MIDI and HID</td>
 <td>2018</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td><a href="Pioneer DDJ-SB3">Pioneer DDJ-SB3</a></td>

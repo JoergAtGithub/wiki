@@ -22,7 +22,7 @@ User contributed mappings (forum):
 
 #### Generic DDJ Technical info
 
-##### Pioneer DDJ pad colors
+##### DDJ pad colors
 
   - 0: off
   - 1: blue
@@ -51,3 +51,47 @@ User contributed mappings (forum):
 
     * 
     * >65: default    color for that mode
+
+##### DDJ midi codes
+
+List of all Pioneer MIDI
+codes:[https://github.com/pestrela/music/tree/master/ddj/1%20MIDI%20codes](here)
+
+Inside the same family, the DDJ controllers are mostly compatible.
+
+Differences are: - Buttons added: these get a new MIDI code - Buttons
+moved around: The maitain the same midi code unless the feature is
+slightly different - Buttons removed: if needed these can be emulated
+using additional shift layers on the software side (because the hardware
+shift layer is tipically already busy).
+
+##### Serato Family
+
+  - All "S" controllers (SB, SX, SX2, SZ ...)
+  - All "R" controllers (RB, RX, ...)
+  - DDJ-1000SRT
+
+##### Rekordbox-only Family
+
+  - DDJ-1000 
+  - DDJ-800
+  - etc
+
+##### XDJ family
+
+  - XDJ-XZ
+  - XDJ-RX2
+  - etc
+
+##### DDJ Channels overview
+
+|                 | Serato    | RB-only    | XDJ  |
+| --------------- | --------- | ---------- | ---- |
+| Mixer           | 1..4      | 1..4       | 5    |
+| Effect          | 5+6       | 5 only     | 5    |
+| Browser, Global | 7         | 7          | 1    |
+| Jog Display     | NA        | 1..4       | 12   |
+|                 |           |            |      |
+| Pad regular     | 8,9,10,11 | 8,10,12,14 | 6..9 |
+| Pad shift       | same      | 9,11,13,15 | same |
+| Pad sub pages   | no        | yes        | no   |

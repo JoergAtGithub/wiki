@@ -45,3 +45,6 @@ Just configuring channels 1-2 for master and channels 3-4 for headphones
 Mapping is based on [Numark DJ2GO2
 Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13156) by
 [Kafuzke](https://www.mixxx.org/forums/memberlist.php?mode=viewprofile&u=11674)
+
+Scratching feature has been added to take advantage of the touch
+capacity of the jog wheels of the controller.

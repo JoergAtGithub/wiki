@@ -476,6 +476,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2012</td>
 </tr>
+<tr class="odd">
+<td><a href="Numark DJ2GO2 Touch">Numark DJ2GO2 Touch</a></td>
+<td>$79</td>
+<td>2 deck pocket dj controller with capacitive touch jog wheels</td>
+<td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2019</td>
+</tr>
 </tbody>
 </table>
 

@@ -827,9 +827,9 @@ passing an object with RGB codes as the keys and the corresponding MIDI
 codes as values:
 
     var myControllerColorMapper = new ColorMapper({
-        "#FF0000": 1, // red
-        "#00FF00": 2, // green
-        "#0000FF": 3, // blue
+        0xFF0000: 1, // red
+        0x00FF00: 2, // green
+        0x0000FF: 3, // blue
     });
 
 In this example, the controller's buttons would be lit red by sending

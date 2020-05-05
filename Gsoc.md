@@ -13,6 +13,16 @@ Mixxx has been accepted for Google Summer of Code 2020\!
   - Advice for students thinking of applying: [GSoC Advice for
     Students](gsocadvice)
 
+The following projects were accepted for Google Summer of Code 2020:
+
+  - [Downbeats and phrase
+    detection](Downbeats%20and%20phrase%20detection) by Cristiano
+    Lacerda (crisclacerda)
+  - [Measures, Downbeats, Bars and
+    Phrases](Measures,%20Downbeats,%20Bars%20and%20Phrases) by Harshit
+    Maurya (hacksdump)
+  - [Mixxx Macros](Mixxx%20Macros) by Janek (xerus2000)
+
 ## Past Years
 
 ### 2019

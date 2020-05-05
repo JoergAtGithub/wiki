@@ -47,11 +47,11 @@ beginning your application. Here are some ways to get started:
     your GSOC project.
   - [Test and review pull requests](testing). Post comments on GitHub
     pull requests suggesting ways to improve the code more.
-  - Help users with technical questions about Mixxx on the
-    [forum](https://mixxx.org/forums/).
   - Look through the [start\#Developer
     Documentation](start#Developer%20Documentation) and make a small
     code contribution to fix a bug or enhance an existing feature.
+  - Help users with technical questions about Mixxx on the
+    [forum](https://mixxx.org/forums/).
   - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
 
 We expect that you make an effort to answer your own questions like

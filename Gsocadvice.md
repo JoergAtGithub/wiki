@@ -66,12 +66,14 @@ accepted.**
 GSOC lasts several months, so it is important that you choose a project
 that you are personally passionate about that you will be excited to
 work on for an extended period. We cannot tell you what want you want to
-work on, but we have some suggestions for project ideas. Before thinking
-too much about what project you want to work on, we suggest spending
-time using Mixxx and [\#Getting Involved](#Getting%20Involved) in the
-community. This will help you understand what Mixxx currently does well
-and what areas could be improved. In general, your project proposal can
-be inspired by any of the following:
+work on, but we have some suggestions for project ideas. The best
+project for you is one that you would continue to use years later even
+if GSOC didn't exist. Before thinking too much about what project you
+want to work on, we suggest spending time using Mixxx and [\#Getting
+Involved](#Getting%20Involved) in the community. This will help you
+understand what Mixxx currently does well and what areas could be
+improved. In general, your project proposal can be inspired by any of
+the following:
 
   - A project from our [GSoC 2020 Ideas Page](gsoc2020ideas)
   - A project you come up with\! Make sure to contact us on

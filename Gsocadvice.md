@@ -45,7 +45,8 @@ beginning your application. Here are some ways to get started:
     strongly suggests that you lack the ability to work independently.**
   - Participate in Zulip discussions that are not directly related to
     your GSOC project.
-  - [Test and review pull requests](testing).
+  - [Test and review pull requests](testing). Post comments on GitHub
+    pull requests suggesting ways to improve the code more.
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
   - Look through the [start\#Developer

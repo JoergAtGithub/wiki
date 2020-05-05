@@ -1,0 +1,3 @@
+This page will be worked on later. Meanwhile here is a link for the
+submitted proposal: [Downbeats and phrase
+detection](https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5489411359244288_1585669013_LacerdaMixxxProposal.pdf?Expires=1588775718&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=Rz%2B8OuLlZJxam2LgaC%2BuRwdK8SQlT9jdE3u83jzmA8kYLB5jl0ESa%2FAdXv9i%2BGTEeilYpaqzyfZ3VkKMK63KuBPx9V5my6HZumJO6qd0X%2BilDhz7baj%2F3mlK2314ADhKi8fE13w6OnCwlNO8X8XsFuKj7B2ji12%2Bsx7ILny6zcB%2F4YV0m7GhXZvKreeKx9bx9OBKbeMgLnrFinySICavl6%2FMzagL%2BmH6T8KCO3tRBQ2kTEaaDcnuOWUvRDc3mOoDl9mXEdlh1OS0j6d4Q7310iZu2dO6NusUH7pMQcIzKR%2BW05aa7NZZNvy7kEQFr5Ud58fgvoRJuPzn9pTYy8%2FGRQ%3D%3D)

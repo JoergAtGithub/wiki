@@ -217,12 +217,13 @@ suggest that you think about these when writing your application.
   - Is the proposed timeline realistic considering any other obligations
     the student may have during GSOC?
   - Do we think that the student will continue contributing to Mixxx
-    after GSOC? Ideally we want more from a GSOC student than a cool new
-    feature at the end of the summer; we want someone who will become
-    part of the community and continue to contribute cool features long
-    after GSOC ends. The best way to show us this is to get involved
-    early, participate in discussions on Zulip that aren't directly
-    related to your GSOC project, and test and review pull requests.
+    after GSOC? The best outcome we can get from GSOC is not just a cool
+    new feature at the end of the summer; we want someone who will
+    become part of the community and continue to contribute cool
+    features years after GSOC ends. The best way to show us this is to
+    get involved early, participate in discussions on Zulip that aren't
+    directly related to your GSOC project, and test and review pull
+    requests.
 
 ### Splitting up your project into smaller pieces
 

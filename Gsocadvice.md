@@ -84,7 +84,8 @@ be inspired by any of the following:
 ## What Would Working On Mixxx Be Like?
 
 The Mixxx development environment is cooperative and relatively
-informal. Our community is small but unusually diverse. Working on Mixxx
+informal. Our community is small but unusually diverse with contributors
+from a variety of backgrounds and all over the world. Working on Mixxx
 you would have an opportunity to interact with a unique mixture of
 programmers, artists and DJs. Mixxx as a piece of software also offers
 some unique challenges, we are both cross-platform and (soft) real-time

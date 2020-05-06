@@ -44,7 +44,7 @@ accented beats and time-signature can be visualized from the waveform
 for added intuition to the DJ. This will be helpful to set cues visually
 since phrases become more apparent to the player.
 
-## Design and UI changes
+### Design and UI changes
 
 ### Downbeat markers
 

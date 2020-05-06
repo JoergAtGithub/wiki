@@ -51,12 +51,15 @@ find Homebrew-installed dependencies. In the below code you should
 customize `HOMEBREW_PATH` to the path where your Homebrew folder can be
 found. Copy and paste the code below into \~/.bash\_profile:
 
-    HOMEBREW_PATH=/usr/local
-    # See the note below about the Opus workaround.
-    export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-    export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-    export LDFLAGS=-L$HOMEBREW_PATH/lib
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt/%VERSION%/
+``` 
+HOMEBREW_PATH=/usr/local
+# See the note below about the Opus workaround.
+export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
+export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
+export LDFLAGS=-L$HOMEBREW_PATH/lib
+export QTDIR=$HOMEBREW_PATH/Cellar/qt/`brew list --versions qt | ruby -ne 'print $_.split.last'`/
+
+```
 
 then run `source ~/.bash_profile`.
 
@@ -65,10 +68,6 @@ bug where opusfile.h includes the file opus\_multistream.h. In order for
 this file to be present on the include path, we need to add
 $HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
 fixed in future versions of libopusfile.
-
-**QTDIR** tells scons where to find your Qt installation. Replace
-%VERSION% with the folder name, e.g. 5.11.2 . Run `brew list --versions
-qt` to see what version(s) you have installed.
 
 #### Legacy: Qt 4
 
@@ -182,6 +181,8 @@ Mixxx:
 
     cd mixxx
     scons verbose=0
+
+If you get an error about hss1394, set `hss1394=0`.
 
 If you are compiling with Qt 4, set `qt5=0`. Qt 4 is only supported in
 Mixxx 2.1 and earlier.

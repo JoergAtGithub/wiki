@@ -46,13 +46,21 @@ since phrases become more apparent to the player.
 
 ### Design and UI changes
 
-### Downbeat markers
+#### Downbeat markers
 
-### Bar Counter
+\<Insert Wireframe\>
 
-### Phrase divisions
+#### Bar Counter
 
-### Time signature editor
+\<Insert Wireframe\>
+
+#### Phrase divisions
+
+\<Insert Wireframe\>
+
+#### Time signature editor
+
+\<Insert Wireframe\>
 
 ### Implementation
 
@@ -68,6 +76,6 @@ controller interactions for features such as looping, beat jumps, etc.
 
 Will be updated soon
 
-### Weekly logs/blogs
+## Weekly logs/blogs
 
 To be added per week.

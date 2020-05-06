@@ -52,7 +52,7 @@ since phrases become more apparent to the player.
 
 #### Bar Counter
 
-\<Insert Wireframe\>
+[[/media/undefined/screenshot_from_2020-05-06_18-24-12.png|]]
 
 #### Phrase divisions
 

@@ -243,6 +243,10 @@ encouraged to map additional features not included in the manufacturer's
 mappings, *but not at the expense of excluding functionality the
 controller is labeled for*.
 
+**Do not make any LEDs blink all the time.** This is *very* distracting.
+It might be okay to make LEDs blink to indicate a temporary state, but
+you should **not** make an LED flash with the beat.
+
 Focus your mapping on functionality that is useful to have easy, quick
 access to while mixing. It is okay to leave parts of Mixxx unmapped that
 are not changed frequently while mixing; you do not need to map

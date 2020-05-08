@@ -284,3 +284,5 @@ Example
  * Source Code available for review only
  * Not FOSS
 ```
+
+# Selected solution: GitHub issues

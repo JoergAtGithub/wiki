@@ -357,8 +357,7 @@ If it is closed by automatic expiration the bot will add a comment.
 
   - STATUS:INCOMPLETE - Status Incomplete 
   - STATUS:OBSERVATION - Status New 
-  - STATUS:CONFIRMED - Status Confirmed / Triaged / In Progress / Fix
-    Released / Fix Committed 
+  - STATUS:CONFIRMED - Status Confirmed / Triaged / In Progress 
   - STATUS:WONTFIX - Status Won't fix
   - STATUS:INVALID - Status Invalid / Opinion 
 

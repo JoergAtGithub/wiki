@@ -289,8 +289,7 @@ Example
 
 We have selected GitHub issues, because our source code lives on GitHub
 and we want to have the benefit of the integration of source code
-repository and bug tracking. We have decided to not move both elsewhere,
-because GitHub has the best marked spread.
+repository and bug tracking.
 
 ## Proposal daschuer
 

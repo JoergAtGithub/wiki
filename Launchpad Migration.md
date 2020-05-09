@@ -302,17 +302,17 @@ a simplified set of tags:
   - feature request
   - good-first-pr
 
+We will use [Close Stale
+Issues](https://github.com/marketplace/actions/close-stale-issues) to
+prevent issues from piling up. The "feature request", "beta blocker",
+and "release blocker" labels will be exempt from automatic closing.
+
 We are explicitly choosing not to have more "priority" states than "beta
 blocker" and "release blocker" because these only cause useless
 disagreements over subjective priorities. What matters is having a clear
 view of what must be done for a release. We all have different
 priorities for Mixxx; if you think something is important, do it
 yourself.
-
-Every new issue should be assigned to a milestone, tagged as "needs
-info", closed, or tagged as a feature request. Issues tagged "needs
-info" will automatically be closed by a bot after ?? days and the bot
-will add a comment. This should prevent issues from piling up.
 
 For duplicates type "Duplicate of" followed by the issue number and
 close the issue. GitHub will automatically catch that.

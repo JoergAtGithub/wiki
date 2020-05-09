@@ -411,6 +411,7 @@ For duplicates type "Duplicate of" followed by the issue number and
 close the issue. GitHub will automatically catch that.
 
 In addition a "Launchpad" label is added to all imported issues.
-
-Status Fix Released / Fix Committed / Status Won't fix / Invalid /
-Opinion are not imported from Launchpad.
+Imported issues will be closed automatically by Close Stale Issues like
+any other issue. Bugs marked "wishlist" on Launchpad will be imported
+with the "feature request" label. Status Fix Released / Fix Committed /
+Status Won't fix / Invalid / Opinion are not imported from Launchpad.

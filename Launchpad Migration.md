@@ -304,7 +304,8 @@ a simplified set of tags:
 
 We are explicitly choosing not to have more "priority" states than "beta
 blocker" and "release blocker" because these only cause useless
-disagreements over subjective priorities. We all have different
+disagreements over subjective priorities. What matters is having a clear
+view of what must be done for a release. We all have different
 priorities for Mixxx; if you think something is important, do it
 yourself.
 

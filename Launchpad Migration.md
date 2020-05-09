@@ -333,7 +333,7 @@ explaining why.
 If it is closed by automatic expiration the bot will add a comment.
 
 For duplicates type "Duplicate of" followed by the issue number and
-close the issue.
+close the issue.GitHub will automatically catch that.
 
 ### Lable Color Code
 

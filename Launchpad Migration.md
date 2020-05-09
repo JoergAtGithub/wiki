@@ -310,10 +310,9 @@ priorities for Mixxx; if you think something is important, do it
 yourself.
 
 Every new issue should be assigned to a milestone, tagged as "needs
-info", closed, or tagged as a feature request.
-
-Issues tagged "needs info" will automatically be closed by a bot after
-?? days and the bot will add a comment.
+info", closed, or tagged as a feature request. Issues tagged "needs
+info" will automatically be closed by a bot after ?? days and the bot
+will add a comment. This should prevent issues from piling up.
 
 For duplicates type "Duplicate of" followed by the issue number and
 close the issue. GitHub will automatically catch that.

@@ -298,7 +298,6 @@ a simplified set of tags:
 
   - beta blocker
   - release blocker
-  - needs info
   - feature request
   - good-first-pr
 

@@ -332,6 +332,9 @@ explaining why.
 
 If it is closed by automatic expiration the bot will add a comment.
 
+For duplicates type "Duplicate of" followed by the issue number and
+close the issue.
+
 ### Lable Color Code
 
   - STATUS:INCOMPLETE - dark Purple/Pink 

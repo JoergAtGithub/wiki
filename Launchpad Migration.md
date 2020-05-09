@@ -309,8 +309,8 @@ view of what must be done for a release. We all have different
 priorities for Mixxx; if you think something is important, do it
 yourself.
 
-Every new issue should be assigned to a milestone, closed, or tagged as
-a feature request.
+Every new issue should be assigned to a milestone, tagged as "needs
+info", closed, or tagged as a feature request.
 
 If it is closed by automatic expiration the bot will add a comment.
 

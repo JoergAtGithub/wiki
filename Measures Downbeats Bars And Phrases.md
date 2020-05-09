@@ -6,6 +6,9 @@
 
 **Mentors:** Be (Be-ing), Jan Holthuis (Holzhaus), Uwe Klotz (uklotzde)
 
+**Related Project:**
+[downbeats\_and\_phrase\_detection](https://www.mixxx.org/wiki/doku.php/downbeats_and_phrase_detection)
+
 This is the final
 [proposal](https://drive.google.com/file/d/1Micg2kqdE-XpCIgcjb58CrZoqrgIHUnv/view?usp=sharing)
 that got accepted in GSoC 2020.

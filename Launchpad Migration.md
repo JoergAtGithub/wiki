@@ -312,12 +312,13 @@ yourself.
 Every new issue should be assigned to a milestone, tagged as "needs
 info", closed, or tagged as a feature request.
 
-If it is closed by automatic expiration the bot will add a comment.
+Issues tagged "needs info" will automatically be closed by a bot after
+?? days and the bot will add a comment.
 
 For duplicates type "Duplicate of" followed by the issue number and
 close the issue. GitHub will automatically catch that.
 
-In addition a "Launchpad" label is added to all imported issues
+In addition a "Launchpad" label is added to all imported issues.
 
 Status Fix Released / Fix Committed / Status Won't fix / Invalid /
 Opinion are not imported from Launchpad.

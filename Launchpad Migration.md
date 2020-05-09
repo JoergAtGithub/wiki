@@ -286,3 +286,93 @@ Example
 ```
 
 # Selected solution: GitHub issues
+
+We have selected GitHub issues, because our source code lives on GitHub
+and we want to have the benefit of the integration of source code
+repository and bug tracking. We have decided to not move both elsewhere,
+because GitHub has the best marked spread.
+
+### Workflow
+
+New Bugs are created by the reporter without label, no expiration,
+whining after 14 days.
+
+A reviewer classifies the bug with one STATUS label and with one
+IMPORTANCE labels to stop whining.
+
+  - STATUS:INCOMPLETE - Responds from the reporter is required,
+    expiration after 60 days 
+  - STATUS:OBSERVATION - Bug-report is complete, but no one has been
+    able to reproduce the issue or shares the opinion, expiration after
+    one year. 
+  - STATUS:CONFIRMED - One else is able to reproduce the bug or shares
+    the opinion, issue is waiting to be adopted form a contributor, no
+    expiration. 
+  - STATUS:WONTFIX - A valid bug report, which will not be fixed for
+    some reasons described in the comment. Close Bug
+  - STATUS:INVALID - Observation error or support request. Close Bug 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER - If a Blocker is on a Milestone, the Milestone
+    cannot be released 
+  - IMPORTANCE:CRITICAL - Party stopper 
+  - IMPORTANCE:MAJOR - Annoying Bug, effecting many users
+  - IMPORTANCE:MINOR - An issue, not of the above 
+  - IMPORTANCE:WISHLIST - A feature request
+  - REGRESSION - can be added in addition if a previous working feature
+    has an issue 
+
+To adopt a bug and start to work, set Assign it to yourself and to a
+milestone.
+
+A a bug can also be closed. It is automatically closed if a connected PR
+has been merged. If it is closed manually a comment is required,
+explaining why.
+
+If it is closed by automatic expiration the bot will add a comment.
+
+### Lable Color Code
+
+  - STATUS:INCOMPLETE - dark Purple/Pink 
+  - STATUS:OBSERVATION - light Purple/Pink 
+  - STATUS:CONFIRMED - medium Purple/Pink 
+  - STATUS:WONTFIX - grey
+  - STATUS:INVALID - grey 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER - Dark red 
+  - IMPORTANCE:CRITICAL - darker red 
+  - IMPORTANCE:MAJOR - lighter red 
+  - IMPORTANCE:MINOR - light red 
+  - IMPORTANCE:WISHLIST - celeste 
+  - REGRESSION - darker red 
+
+<!-- end list -->
+
+  - Tags: yellow 
+
+### Launchpad Migration
+
+  - STATUS:INCOMPLETE - Status Incomplete 
+  - STATUS:OBSERVATION - Status New 
+  - STATUS:CONFIRMED - Status Confirmed / Triaged / In Progress / Fix
+    Released / Fix Committed 
+  - STATUS:WONTFIX - Status Won't fix
+  - STATUS:INVALID - Status Invalid / Opinion 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER
+  - IMPORTANCE:CRITICAL - Importance Critical 
+  - IMPORTANCE:MAJOR - Importance High / Medium
+  - IMPORTANCE:MINOR - Importance Low
+  - IMPORTANCE:WISHLIST - Importance Wishlist
+
+Tags are imported one by one as labels,
+
+In addition a "Launchpad" label is added to all imported issues
+
+Status Fix Released / Fix Committed / Status Won't fix / Invalid /
+Opinion are not imported.

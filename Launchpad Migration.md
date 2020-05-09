@@ -289,7 +289,102 @@ Example
 
 We have selected GitHub issues, because our source code lives on GitHub
 and we want to have the benefit of the integration of source code
-repository and bug tracking.
+repository and bug tracking. We have decided to not move both elsewhere,
+because GitHub has the best marked spread.
+
+## Proposal daschuer
+
+### Workflow
+
+We will not be mirroring Launchpad'​s states on GitHub. We will be using
+a simplified workflow:
+
+New Bugs are created by the reporter without label, no expiration,
+whining after 14 days.
+
+A reviewer classifies the bug with one STATUS label and with one
+IMPORTANCE labels to stop whining.
+
+  - STATUS:INCOMPLETE - Responds from the reporter is required,
+    expiration after 60 days 
+  - STATUS:OBSERVATION - Bug-report is complete, but no one has been
+    able to reproduce the issue or shares the opinion, expiration after
+    one year. 
+  - STATUS:CONFIRMED - One else is able to reproduce the bug or shares
+    the opinion, issue is waiting to be adopted form a contributor, no
+    expiration. 
+  - STATUS:WONTFIX - A valid bug report, which will not be fixed for
+    some reasons described in the comment. Close Bug
+  - STATUS:INVALID - Observation error or support request. Close Bug 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER - If a Blocker is on a Milestone, the Milestone
+    cannot be released this is the only priority state 
+  - IMPORTANCE:PATYSTOPPER - For things like crashes or other things
+    that makes the crown stop dancing 
+  - IMPORTANCE:REGRESSION - can be added in addition if a previous
+    working feature has an issue
+  - IMPORTANCE:WISHLIST - A feature request
+  - IMPORTANCE:BUG - for all other misbehavior not one of above. 
+  - GOODSTARTER - Can be set in addition for easy bugs that do not
+    require a deep knowledge of the code base and have a limited scope
+
+To adopt a bug and start to work, set Assign it to yourself and to a
+milestone.
+
+A a bug can also be closed. It is automatically closed if a connected PR
+has been merged. If it is closed manually a comment is required,
+explaining why.
+
+If it is closed by automatic expiration the bot will add a comment.
+
+For duplicates type "Duplicate of" followed by the issue number and
+close the issue.GitHub will automatically catch that.
+
+### Lable Color Code
+
+  - STATUS:INCOMPLETE - dark Purple/Pink 
+  - STATUS:OBSERVATION - light Purple/Pink 
+  - STATUS:CONFIRMED - medium Purple/Pink 
+  - STATUS:WONTFIX - grey
+  - STATUS:INVALID - grey 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER - Dark red 
+  - IMPORTANCE:PATYSTOPPER - darker red 
+  - IMPORTANCE:REGRESSION - lighter red 
+  - IMPORTANCE:BUG - light red 
+  - IMPORTANCE:WISHLIST - celeste 
+
+<!-- end list -->
+
+  - Tags: yellow 
+
+### Launchpad Migration
+
+  - STATUS:INCOMPLETE - Status Incomplete 
+  - STATUS:OBSERVATION - Status New 
+  - STATUS:CONFIRMED - Status Confirmed / Triaged / In Progress 
+  - STATUS:WONTFIX - Status Won't fix
+  - STATUS:INVALID - Status Invalid / Opinion 
+
+<!-- end list -->
+
+  - IMPORTANCE:BLOCKER
+  - IMPORTANCE:PATYSTOPPER - Importance Critical 
+  - IMPORTANCE:BUG - Importance High / Medium / Low 
+  - IMPORTANCE:WISHLIST - Importance Wishlist
+
+Tags are imported one by one as labels,
+
+In addition a "Launchpad" label is added to all imported issues
+
+Status Fix Released / Fix Committed / Status Won't fix / Invalid /
+Opinion are not imported.
+
+## Proposal Be
 
 ### Workflow
 

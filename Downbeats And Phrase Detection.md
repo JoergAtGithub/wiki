@@ -1,4 +1,4 @@
-# Improve Beat Analyzer to recognize the meter, measures, phrases and sections
+# Rhytm Detector
 
 **Student:** Cristiano Lacerda (cristiano.lacerda@usp.br)  
 **Mentor:** Daniel Schürmann  
@@ -10,31 +10,66 @@
 **Status:** Drafting (If you have any thoughts on this please join the
 discussion on Zulip)
 
-**Motivation**
+**Main idea**
 
-When mixing two or more tracks, beatmatching is an essential technique
-that allows us to listen to more than a piece of music together in a
-pleasant way. However, beatmatching alone is not enough for good and
-memorable transactions since every track has many hierarchical
-structures in time, in which the beat is the basic one. Thus for a
-seamless blending of tracks ideally, all these structures should be
-matched, this includes the measures, which is just a group of beats
-determined by the meter of the song. After that, we got a phrase which
-is quite an ambiguous terms but is nothing more than a group of measures
-that makes sense together. And past that, we still have a section of the
-track which, in an analogous way is a group of phrases that makes sense
-as a whole.
+A beat is the small unit of rhythm.
 
-Mixxx currently can detect beats and help the DJ by either automatically
-quantizing beats or simply by providing visual aid through the scrolling
-waveform in the form of a beatgrid. This project aims to improve that by
-adding to the beat analyzer the tools to automatically detect the meter
-and downbeats, and to segment phrases and sections of the track.
+A measure is a combination of one or more beats. Determined by the
+number of beats in the bar, this is the upper part of the time
+signature.
 
-Meanwhile, Harshit Maurya will work on the related project to make use
-of these features so they can enable better DJing either automatically
-or by providing helpful visuals cues. Also, no auto-detection algorithms
-are perfect so the UI should be able to allow the user to manually
-specify these features and painless disregard wrong information.
+A phrase is a combination of one more measure that has a complete
+musical sense. This is rather vague and ambiguous a more restrictive but
+still subjective rule is that a phrase is a place you can hardly cut or
+loop a track without it sounding "wrong".
 
-**Design:**
+A section is a combination of one or more phrases that also has a
+complete musical sense. A more restrictive rule is that a section a
+major structural part of the track, or where a DJ would intuitively mix
+for a smooth transition.  
+A track is a combination of one or more sections.
+
+\*\* Design \*\*
+
+Rhythm Detector will have three main methods and algorithms that will
+all perform sequentially on a beatList.
+
+1.  beat and tempo detection
+
+<!-- end list -->
+
+  - Parameters: track mono samples and audio features, such as the
+    onsetDetectionFunction,
+  - Returns: a beatList. Each beat has a frame position. The first beat
+    also has a bpm. If the track has a varying tempo each beat that has
+    a different tempo also has a bpm. Note that a constant tempo should
+    not be considered to be perfect, small unintended fluctuations
+    should not be accounted for.
+
+<!-- end list -->
+
+1.  downbeat and time signature detection
+
+<!-- end list -->
+
+  - Parameters: audio features, such as the beatSpectrum, and a beatList
+    returned by beat and tempo detection method
+  - Returns: a new beatList where the first beats of each measure have a
+    type set to downbeat. The first beat now also has a time signature.
+    If the track has a varying time signature, each beat that has a
+    different one also has a time signature.
+
+<!-- end list -->
+
+1.  phrases and sections detection
+
+<!-- end list -->
+
+  - Parameters: audio features such as ??? and a beatList returned by
+    downbeat and time signature detection method
+  - Returns a new beatList, where every beat that starts a phrase or a
+    section have they type set accordingly.
+
+**Schedule Planning:**
+
+2 six-weeks sprints, both with 2 weeks working on each method.

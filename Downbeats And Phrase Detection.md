@@ -1,4 +1,4 @@
-# Rhytm Detector
+# Rhythm Detector
 
 **Student:** Cristiano Lacerda (cristiano.lacerda@usp.br)  
 **Mentor:** Daniel Schürmann  
@@ -8,7 +8,8 @@
 ## Summary
 
 **Status:** Drafting (If you have any thoughts on this please join the
-discussion on Zulip)
+discussion on
+[Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Rhythm.20Detector)
 
 **Main idea**
 

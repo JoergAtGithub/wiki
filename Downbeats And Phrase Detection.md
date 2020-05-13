@@ -13,7 +13,7 @@ discussion on
 
 **Main idea**
 
-A beat is the small unit of rhythm.
+A beat is the smallest unit of rhythm.
 
 A measure is a combination of one or more beats. Determined by the
 number of beats in the bar, this is the upper part of the time
@@ -22,12 +22,14 @@ signature.
 A phrase is a combination of one more measure that has a complete
 musical sense. This is rather vague and ambiguous a more restrictive but
 still subjective rule is that a phrase is a place you can hardly cut or
-loop a track without it sounding "wrong".
+loop a track without it sounding "wrong". An arbitrary rule is that a
+phrase should have at maximum 16 bars.
 
 A section is a combination of one or more phrases that also has a
 complete musical sense. A more restrictive rule is that a section a
 major structural part of the track, or where a DJ would intuitively mix
-for a smooth transition.
+for a smooth transition. An arbitrary rule is that a section should have
+at minimum 16 bars.
 
 A track is a combination of one or more sections.
 

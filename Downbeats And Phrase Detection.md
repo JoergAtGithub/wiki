@@ -9,7 +9,7 @@
 
 **Status:** Drafting (If you have any thoughts on this please join the
 discussion on
-[Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Rhythm.20Detector)
+[Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Rhythm.20Detector))
 
 **Main idea**
 
@@ -74,6 +74,6 @@ all perform sequentially on a beatList.
   - Returns a new beatList, where every beat that starts a phrase or a
     section have they type set accordingly.
 
-**Schedule Planning:**
+**Schedule Planning**
 
 2 six-weeks sprints, both with 2 weeks working on each method.

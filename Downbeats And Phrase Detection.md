@@ -27,7 +27,8 @@ loop a track without it sounding "wrong".
 A section is a combination of one or more phrases that also has a
 complete musical sense. A more restrictive rule is that a section a
 major structural part of the track, or where a DJ would intuitively mix
-for a smooth transition.  
+for a smooth transition.
+
 A track is a combination of one or more sections.
 
 \*\* Design \*\*

@@ -74,6 +74,34 @@ all perform sequentially on a beatList.
   - Returns a new beatList, where every beat that starts a phrase or a
     section have they type set accordingly.
 
-**Schedule Planning**
+**Bonus (nice to have if time allows):** Each beat should/could also
+have a key, this would be especially useful for beats of type phrases
+and sections.
+
+## Schedule Planning
 
 2 six-weeks sprints, both with 2 weeks working on each method.
+
+**First sprint**
+
+**Week 1:** Implement a multi-feature beat detector using a combination
+of the OnSetFunctions provided by the QM library.  
+This should not only provide better accuracy but also enables to output
+the confidence of the tempo detection.
+
+**Week 2:** Implement BPM Histogram and compute statistics
+descriptors.  
+This should enable handling tracks with varying tempo properly.
+
+**Week 3:** Port [this meter detection
+algorithm](https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach/blob/master/library/musicMeterTempoInduction.m)
+from MATLAB to C++.
+
+**Week 4:** Extend the previous implementation to include the ideas
+described in [this paper](https://arrow.tudublin.ie/argcon/52/), mainly
+the beat similarity matrix.
+
+**Week 5:** Implement section detection using the segmenter algorithm
+provided by the QM library.
+
+**week 6:** Implement phrases detection using also using segmenter.

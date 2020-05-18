@@ -53,6 +53,7 @@ CW 32:
 CW 33:  
 CW 34:
 
-Deliverable:
+Deliverable: Integration with other tools (Serato Flip, Export/Import,
+Edit Dialog, Auto DJ?)
 
 ## Details

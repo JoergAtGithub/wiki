@@ -13,6 +13,12 @@ discussion on
 
 **Main idea**
 
+Temporal and structural regularities - *I.e.* rhythm - are perhaps the
+most prominent characteristic of music and offer people a huge incentive
+and easy way to interact physically with the music. This can be being in
+the form of just taping the foot or nodding the head to the beat or
+dancing to elaborate piece-long choreographies.
+
 A beat is the smallest unit of rhythm.
 
 A measure is a combination of one or more beats. Determined by the

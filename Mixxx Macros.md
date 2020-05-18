@@ -4,6 +4,8 @@
 
 [[/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf|Proposal]]
 
+## Introduction
+
 There are moves through which a DJ expresses himself - and there are
 many other, sometimes tedious tasks that need to be done as groundwork.
 Instead of having to juggle beatmatching, effects, cues and sliders all
@@ -19,3 +21,38 @@ messing with effects and getting the next track ready can be tricky;
 that is where Mixxx Macros come in. With this feature implemented, it
 will be possible to record specific moves while playing a track and
 store them in a rack, to be used when it gets hot.
+
+## Timeline
+
+CW 21: Establish Timeline, work on open PRs, survey existing Serato Flip
+uses & collect input  
+CW 22: Review the design of how Macros will be structured
+
+**June - Design Phase:**
+
+CW 23:  
+CW 24:  
+CW 25:  
+CW 26:
+
+Deliverable: Format specification, tbd
+
+**July - Coding Phase:**
+
+CW 27:  
+CW 28:  
+CW 29:  
+CW 30:
+
+Deliverable: Implemented controls with mapping to a skin and controller
+
+**August - Refinement Phase:**
+
+CW 31:  
+CW 32:  
+CW 33:  
+CW 34:
+
+Deliverable:
+
+## Details

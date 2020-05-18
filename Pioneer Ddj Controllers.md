@@ -6,7 +6,6 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
 
 ### Built-in support
 
-  - [ddj-sx2](ddj-sx2)
   - [pioneer\_ddj-400](pioneer_ddj-400)
   - [pioneer\_ddj-rb](pioneer_ddj-rb)
   - [pioneer\_ddj-sb](pioneer_ddj-sb)
@@ -14,6 +13,10 @@ This page describes the Pioneer DDJ controllers support in MIXXX.
   - [pioneer\_ddj-sb3](pioneer_ddj-sb3)
   - [pioneer\_ddj-sx](pioneer_ddj-sx)
   - [pioneer\_ddj-wego](pioneer_ddj-wego)
+  - [ddj-sx2](ddj-sx2)
+
+Complete list: [github
+code](https://github.com/mixxxdj/mixxx/tree/master/res/controllers)
 
 ### User contributed mappings
 

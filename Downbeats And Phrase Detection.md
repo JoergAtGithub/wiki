@@ -17,27 +17,50 @@ Temporal and structural regularities - *I.e.* rhythm - are perhaps the
 most prominent characteristic of music and offer people a huge incentive
 and easy way to interact physically with the music. This can be being in
 the form of just taping the foot or nodding the head to the beat or
-dancing to elaborate piece-long choreographies.
+dancing to elaborate piece-long choreographies. We define music rhythm
+is a hierarchical structure as follows:
 
-A beat is the smallest unit of rhythm.
-
-A measure is a combination of one or more beats. Determined by the
-number of beats in the bar, this is the upper part of the time
-signature.
-
-A phrase is a combination of one more measure that has a complete
-musical sense. This is rather vague and ambiguous a more restrictive but
-still subjective rule is that a phrase is a place you can hardly cut or
-loop a track without it sounding "wrong". An arbitrary rule is that a
-phrase should have at maximum 16 bars.
-
-A section is a combination of one or more phrases that also has a
-complete musical sense. A more restrictive rule is that a section a
-major structural part of the track, or where a DJ would intuitively mix
-for a smooth transition. An arbitrary rule is that a section should have
-at minimum 16 bars.
-
+A beat is the smallest unit of rhythm.  
+A measure is a combination of one or more beats.  
+A phrase is a combination of one more measure.  
+A section is a combination of one or more phrases.  
 A track is a combination of one or more sections.
+
+The beat and the measure are rigorously described by the time
+signature.  
+The length of the beat is the denominator and the numerator defines the
+number of beats per measure.  
+The definition of phrases and sections is rather subjective, both should
+have a complete musical sense, the phrase is the smallest unit that does
+that and the section is a major structural part of the track.
+Intuitively the phrase is where a hard cut or a loop should not sound
+wrong and the section is where there is a big change in the mood of the
+track.  
+To clear out any ambiguity we are going to arbitrarily define that a
+phrase should be at most 8 bars while the section is at least that.
+
+**Use cases**
+
+As rhythm is perhaps the highest incentive for us to interact physically
+with the music matching all levels of rhythm enable for the smoothest
+transitions and highest impact transitions.  
+It's a common technique for example for big room house DJs to hit play
+on the drop (one section) of the incoming track as the build (another
+section) of the current one reaches the end.  
+Other styles of electronic dance music such as techno often rely on
+extended smooth transitions in this case the DJs would usually mix the
+outro (one section) of the current track with the intro (another
+section) of the incoming one.  
+The section detector should allow the DJ to easily recognize (and
+navigate to) the places where one intuitively would mix in and out
+tracks irrespectively of the style of transitions.
+
+A phrase being on a level down in the hierarchy a phrase has a strong
+relation to the track within and would work best for making live remixes
+or edits of a track.  
+A phrase marker should help DJs recognize (and navigate to) the places
+where one would intuitively play with effects, loop the track, and jump
+to a hot cue for example.  
 
 \*\* Design \*\*
 

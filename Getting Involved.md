@@ -19,11 +19,7 @@ You want to make Mixxx better, but what can you do?
 The most direct way to help Mixxx is through coding. Patches that fix
 bugs are welcomed with open arms. Mixxx is written in C++ and makes
 extensive use of the [Qt](http://qt.io/) libraries, which make C++ more
-like Java than C.
-
-See [Using Git](Using%20Git) for how to get your changes included in
-Mixxx.
-
+like Java than C.  
 If you have some programming experience but don't know C++, working on
 Mixxx can be a great way to start learning C++. Take a look at the
 [Learning Resources](Learning%20Resources) page. If you do not already
@@ -31,11 +27,15 @@ use one, it is a lot easier to work on a huge C++ program like Mixxx
 with an IDE such as KDevelop or Eclipse than a text editor such as Kate
 or GEdit.
 
+Have a look at the [Developer
+Documentation](start#developer_documentation) part in the wiki for
+compiling and guidelines. See [Using Git](Using%20Git) for how to get
+your changes included in Mixxx.
+
 The best way to get familiar with the code base is to tackle some of the
 [easy bugs that can be fixed in a
 weekend](https://bugs.launchpad.net/mixxx?field.tag=easy+weekend&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED).
-
-And here's a [list of wishlist
+There are also lots of [wishlist
 bugs](https://bugs.launchpad.net/mixxx?field.tag=easy+weekend&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&field.importance%3Alist=WISHLIST).
 These are things that people have requested be added to Mixxx.
 Completing any of these will make someone's day (or a lot of people's

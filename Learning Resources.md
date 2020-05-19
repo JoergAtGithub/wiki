@@ -70,10 +70,10 @@ to work on Mixxx.
 <!-- end list -->
 
 ``` 
-    - [[https://ccrma.stanford.edu/~jos/mdft/|Mathematics of the Discrete Fourier Transform (DFT)]]
-    - [[https://ccrma.stanford.edu/~jos/filters/|Introduction to Digital Filters]]
-    - [[https://ccrma.stanford.edu/~jos/pasp/|Physical Audio Signal Processing]]
-    - [[https://ccrma.stanford.edu/~jos/sasp/|Spectral Audio Signal Processing]]
+    * [[https://ccrma.stanford.edu/~jos/mdft/|Mathematics of the Discrete Fourier Transform (DFT)]]
+    * [[https://ccrma.stanford.edu/~jos/filters/|Introduction to Digital Filters]]
+    * [[https://ccrma.stanford.edu/~jos/pasp/|Physical Audio Signal Processing]]
+    * [[https://ccrma.stanford.edu/~jos/sasp/|Spectral Audio Signal Processing]]
 ```
 
   - **[The Scientist and Engineer's Guide to Digital Signal

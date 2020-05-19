@@ -1096,3 +1096,10 @@ synchronization helper.
 Due to [Bug \#1653368](https://bugs.launchpad.net/bugs/1653368) we build
 Mixxx with magic statics disabled on Windows. Until this is fixed, we
 cannot rely on magic statics.
+
+### attribute [nodiscard](nodiscard)
+
+Use it when not checking the return value is a program error like a
+memory leak. Don't use it everywhere, like in simple getter functions
+where the compiler will discard the call if the return value is not
+used.

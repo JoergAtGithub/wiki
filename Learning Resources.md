@@ -18,6 +18,27 @@ Ethan Winer's book [The Audio Expert](http://ethanwiner.com/book.htm)
 explains everything from decibels to digital-to-analog converters to
 equalizers.
 
+## Software Engineering
+
+  - [Time Waits For
+    Nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing):
+    brief introduction to the challenges of writing realtime code (for
+    audio or other purposes)
+  - [C++ in the Audio
+    Industry](https://www.youtube.com/watch?v=boPEO2auJj4&index=184&list=PL9gma1TwJCnHxnb_DEmvSyqS4bk7Ik3CZ)
+    - one-hour talk from CppCon describing the challenges of audio
+    software engineering.
+  - [Programming with Lightweight Asynchronous Messages: Some Basic
+    Patterns](http://www.rossbencina.com/code/programming-with-lightweight-asynchronous-messages-some-basic-patterns)
+    - blog post from Ross Bencina (PortAudio author) about common audio
+    signal processing patterns.
+  - Real-time 101, a two-hour talk about real-time development. Focuses
+    on issues of real-time threads and their communication with the
+    outside world. [Part I: Investigating the real-time problem
+    space](https://www.youtube.com/watch?v=Q0vrQFyAdWI&list=PLe2skUvADfhvu_pyet1veIIEAH0LA4iFK&index=3)
+    and [Part II: The real-time audio developer’s
+    toolbox](https://www.youtube.com/watch?v=PoZAo2Vikbo&list=PLe2skUvADfhvu_pyet1veIIEAH0LA4iFK&index=12).
+
 ## Signal theory
 
   - **MIT OpenCourseWare lectures:**
@@ -75,20 +96,3 @@ equalizers.
   - **[The Art of VA Filter
     Design](https://www.native-instruments.com/fileadmin/ni_media/downloads/pdf/VAFilterDesign_2.0.0a.pdf)**
     by Vadim Zavalishin (Native Instruments)
-
-## Software Engineering
-
-  - [C++ in the Audio
-    Industry](https://www.youtube.com/watch?v=boPEO2auJj4&index=184&list=PL9gma1TwJCnHxnb_DEmvSyqS4bk7Ik3CZ)
-    - one-hour talk from CppCon describing the challenges of audio
-    software engineering.
-  - [Programming with Lightweight Asynchronous Messages: Some Basic
-    Patterns](http://www.rossbencina.com/code/programming-with-lightweight-asynchronous-messages-some-basic-patterns)
-    - blog post from Ross Bencina (PortAudio author) about common audio
-    signal processing patterns.
-  - Real-time 101, a two-hour talk about real-time development. Focuses
-    on issues of real-time threads and their communication with the
-    outside world. [Part I: Investigating the real-time problem
-    space](https://www.youtube.com/watch?v=Q0vrQFyAdWI&list=PLe2skUvADfhvu_pyet1veIIEAH0LA4iFK&index=3)
-    and [Part II: The real-time audio developer’s
-    toolbox](https://www.youtube.com/watch?v=PoZAo2Vikbo&list=PLe2skUvADfhvu_pyet1veIIEAH0LA4iFK&index=12).

@@ -134,8 +134,7 @@ unintended fluctuations in time. Having the BPM jumping around is a
 terrible user-experience and it also messes with the sync feature. It
 also struggles by detecting a different tempo than the intended one on
 parts without a steady drum.  
-Implement proof-of-concept of the other methods with minimum
-modifications of the underlying QM library.
+Implement proof-of-concept of the other methods.
 
 **Week 1:** Implement a multi-feature beat detector using a combination
 of the OnSetFunctions provided by the QM library.  

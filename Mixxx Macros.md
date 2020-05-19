@@ -24,13 +24,13 @@ store them in a rack, to be used when it gets hot.
 
 ## Timeline
 
-CW 21: Establish Timeline, work on open PRs, survey existing Serato Flip
-uses & collect input  
-CW 22: Review the design of how Macros will be structured
+CW 21: Establish Timeline, work on open PRs, initial survey &
+discussion  
+CW 22: Survey existing Serato Flip uses & collect input
 
 **June - Design Phase:**
 
-CW 23:  
+CW 23: Review the design of how Macros will be structured  
 CW 24:  
 CW 25:  
 CW 26:

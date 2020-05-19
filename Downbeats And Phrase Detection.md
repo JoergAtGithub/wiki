@@ -121,7 +121,7 @@ key, this would be especially useful for beats of type phrases.
 
 2 six-weeks sprints, both with 2 weeks working on each method.
 
-**First sprint**  
+**First sprint** Getting up and running  
 **Main objectives:**  
 Create instanciable rhythm detector analyzer class and add related
 preferences for tempo detector, the user should be able to turn on/off
@@ -167,7 +167,7 @@ at this point only 4/4 time signatures will be considered.
 **Week 4:** Prepare a Pull Request with the new features. This will have
 a complete description, production code, unit tests, and accuracy
 benchmarks. This will be used as an objective measure for the first
-evaluation for Google.
+evaluation of Google.
 
 **Week 5:** Implement an algorithm that programmatically optimizes the
 Segmenter parameters for section detection. The first step is
@@ -178,9 +178,36 @@ method.
 
 **week 6:** Implement an algorithm that programmatically optimizes
 Segmenter for phrase detection. The chosen approach will be to use the
-segments detected in the previous step and fed the in as independent
-inputs constrained the minimum length at the measure level and
+segments detected in the previous step and fed them in as independent
+inputs, constraining the minimum length at the measure length, and
 optimizing the number of segments types iteratively.
 
-**Second sprint**  
-**Main objectives:**
+**Second sprint** An holistic approach to rhythm detection  
+**Main objectives:**  
+Implement a reasonable accurately meter detection algorithm.  
+Explore the synergy of all levels of the rhythm analyzer.  
+Optimize running time and memory usage.  
+**Week 1:** Dig into the Segmenter code. Use downbeat positions for
+starting new segments. Explore if adding new parameters such as a
+maximum segment length or a maximum number of segments improves the
+phrase and section detection.
+
+**Week 2:** Prepare a PR for section and phrase detection. This will
+have a complete description, production code, unit tests, and accuracy
+benchmarks. This will be used as an objective measure for the second
+evaluation of Google.
+
+**Week 3:** Implement meter detection by modifying QM downbeat plugin.
+Use it's already computed autocorrelation functions and Viberti
+algorithm to find the best time signature given a list of beat
+positions.
+
+**Week 4:** Benchmark and accuracy tunning.
+
+**Week 5:** Optimize all analyzers to remove redundancies and extra
+unnecessary iterations, that can be reduced to a single step.
+
+**Week 6:** Prepare final PR for rhythm detection. This will have a
+complete description, production code, unit tests, and accuracy
+benchmarks. This will be used as an objective measure for the final
+evaluation of Google.

@@ -41,6 +41,10 @@ equalizers.
 
 ## Signal theory
 
+These resources go more in depth about signal processing. Unless you're
+writing effects code, you probably don't need to know this much detail
+to work on Mixxx.
+
   - **MIT OpenCourseWare lectures:**
 
 <!-- end list -->

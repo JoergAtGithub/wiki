@@ -13,12 +13,14 @@ discussion on
 
 **Main idea**
 
-Temporal and structural regularities - *I.e.* rhythm - are perhaps the
-most prominent characteristic of music and offer people a huge incentive
-and easy way to interact physically with the music. This can be being in
-the form of just taping the foot or nodding the head to the beat or
-dancing to elaborate piece-long choreographies. We define music rhythm
-is a hierarchical structure as follows:
+Temporal and structural regularities - *I.e.* rhythm - are together with
+melody and harmony the most prominent characteristics of music, but the
+rhythm is by far the one that offers the biggest incentive and easiest
+way to interact physically with the music, which can be simple in the
+form of just taping the foot or nodding the head to the beat to dancing
+to elaborate piece-long choreographies or all night long on a
+dancefloor. We define music rhythm is a hierarchical structure as
+follows:
 
 A beat is the smallest unit of rhythm.  
 A measure is a combination of one or more beats.  
@@ -30,37 +32,46 @@ The beat and the measure are rigorously described by the time
 signature.  
 The length of the beat is the denominator and the numerator defines the
 number of beats per measure.  
-The definition of phrases and sections is rather subjective, both should
-have a complete musical sense, the phrase is the smallest unit that does
-that and the section is a major structural part of the track.
+The definition of phrases and sections is rather subjective, music
+theory states that both should have a complete musical sense, the phrase
+being the smallest unit that does that, and the section being a major
+structural part of the track.  
 Intuitively the phrase is where a hard cut or a loop should not sound
 wrong and the section is where there is a big change in the mood of the
 track.  
 To clear out any ambiguity we are going to arbitrarily define that a
-phrase should be at most 8 bars while the section is at least that.
+phrase should be at most 8 bars while the section should be at least
+that.
 
 **Use cases**
 
-As rhythm is perhaps the highest incentive for us to interact physically
-with the music matching all levels of rhythm enable for the smoothest
-transitions and highest impact transitions.  
-It's a common technique for example for big room house DJs to hit play
-on the drop (one section) of the incoming track as the build (another
-section) of the current one reaches the end.  
-Other styles of electronic dance music such as techno often rely on
-extended smooth transitions in this case the DJs would usually mix the
-outro (one section) of the current track with the intro (another
-section) of the incoming one.  
+Beatmatching is a quintessential DJ technique that allows us to listen
+to more than one track simultaneously in a pleasant way, but as beats
+represent the lowest level on the rhythm hierarchy, this is the bare
+minimum of DJing and is not enough for good DJing and memorable sets.
+
 The section detector should allow the DJ to easily recognize (and
 navigate to) the places where one intuitively would mix in and out
-tracks irrespectively of the style of transitions.
+tracks irrespectively of the style of transitions.  
+For example, for highest impact transitions it's a common technique for
+example for big room house DJs to hit play on the drop (one section) of
+the incoming track as the build (another section) of the current one
+reaches the end.  
+Or for the smoothest transitions, other styles of electronic dance music
+such as techno often rely on extended transitions, in this case, the DJs
+would usually mix the outro (one section) of the current track with the
+intro (another section) of the incoming one.
 
-A phrase being on a level down in the hierarchy a phrase has a strong
-relation to the track within and would work best for making live remixes
-or edits of a track.  
+A phrase being on a level down in the rhythm hierarchy has a strong
+relation to the track itself and work best for making live remixes or
+edits of a track.  
 A phrase marker should help DJs recognize (and navigate to) the places
 where one would intuitively play with effects, loop the track, and jump
-to a hot cue for example.  
+to a hot cue for example.
+
+Downbeat matching is useful for more creative and out-of-the-box
+performance and transitions giving more freedom to the DJ while still
+getting keeping the flow of the tracks.
 
 \*\* Design \*\*
 
@@ -103,34 +114,73 @@ all perform sequentially on a beatList.
   - Returns a new beatList, where every beat that starts a phrase or a
     section have they type set accordingly.
 
-**Bonus (nice to have if time allows):** Each beat should/could also
-have a key, this would be especially useful for beats of type phrases
-and sections.
+**Bonus (nice to have if time allows):** Each beat could also have a
+key, this would be especially useful for beats of type phrases.
 
 ## Schedule Planning
 
 2 six-weeks sprints, both with 2 weeks working on each method.
 
-**First sprint**
+**First sprint**  
+**Main objectives:**  
+Create instanciable rhythm detector analyzer class and add related
+preferences for tempo detector, the user should be able to turn on/off
+beat detection, downbeat detection, phrase detection, and section
+detection.  
+Solid, testable, and self-contained improvements on the current beat and
+tempo detector. Currently, the underlying beatmap feature does not work
+well. It struggles with constant tempos as it does not account for small
+unintended fluctuations in time. Having the BPM jumping around is a
+terrible user-experience and it also messes with the sync feature. It
+also struggles by detecting a different tempo than the intended one on
+parts without a steady drum.  
+Implement proof-of-concept of the other methods with minimum
+modifications of the underlying QM library.
 
 **Week 1:** Implement a multi-feature beat detector using a combination
 of the OnSetFunctions provided by the QM library.  
-This should not only provide better accuracy but also enables to output
-the confidence of the tempo detection.
+The available functions are "complex domain", which is the most
+versatile and the one Mixxx current uses, "spectral difference" which is
+appropriate for percussive recordings, "phase deviation" which performs
+best on for non-percussive music, and "broadband energy rise" which is
+for identifying percussive onsets in mixed music.  
+The new detector will consider at least 2 more functions with a
+combination of the default one and compare their outputs for deriving a
+final and more reliable list of beat positions and a confidence value
+for each beat based on the agreement of the different methods.
 
-**Week 2:** Implement BPM Histogram and compute statistics
-descriptors.  
-This should enable handling tracks with varying tempo properly.
+**Week 2:** Implement a BPM frequency histogram and compute statistics
+descriptors. With the frequency of all tempo estimates and dispersion
+measures, an algorithm should be able to infer unintended fluctuations
+around a center value. It should only return the tempo of these center
+values and anchor them to the first beat where this tempo happens. If
+the track has a constant tempo this should be the only BPM value, if the
+track has an accelerando or ritardando part the algorithm will not able
+to identify a center value, and the fluctuation of the tempo will be
+captured. When it stabilizes on a new tempo, or for sudden changes the
+new value will be added to the first beat that has the new tempo.
 
-**Week 3:** Port [this meter detection
-algorithm](https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach/blob/master/library/musicMeterTempoInduction.m)
-from MATLAB to C++.
+**Week 3:** Implement a draft of section and phrases detection using the
+QM Segmenter plugin and measure detection with the QM Downbeat plugin,
+at this point only 4/4 time signatures will be considered.
 
-**Week 4:** Extend the previous implementation to include the ideas
-described in [this paper](https://arrow.tudublin.ie/argcon/52/), mainly
-the beat similarity matrix.
+**Week 4:** Prepare a Pull Request with the new features. This will have
+a complete description, production code, unit tests, and accuracy
+benchmarks. This will be used as an objective measure for the first
+evaluation for Google.
 
-**Week 5:** Implement section detection using the segmenter algorithm
-provided by the QM library.
+**Week 5:** Implement an algorithm that programmatically optimizes the
+Segmenter parameters for section detection. The first step is
+determining the minimum length of the segments by using the tempo
+information and the arbitrary rule that a section should be at least 8
+bars. Then optimize the number of segments types with the silhouette
+method.
 
-**week 6:** Implement phrases detection using also using segmenter.
+**week 6:** Implement an algorithm that programmatically optimizes
+Segmenter for phrase detection. The chosen approach will be to use the
+segments detected in the previous step and fed the in as independent
+inputs constrained the minimum length at the measure level and
+optimizing the number of segments types iteratively.
+
+**Second sprint**  
+**Main objectives:**

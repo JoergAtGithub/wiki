@@ -184,9 +184,11 @@ segments types iteratively.
 
 **Second sprint:** An holistic approach to rhythm detection  
 **Main objectives:**  
-Implement a reasonable accurately meter detection algorithm.  
-Explore the synergy of all levels of the rhythm analyzer.  
-Optimize running time and memory usage.  
+Implement a reasonable accurately meter detection algorithm to complete
+the features of the rhythm analyzer.  
+Explore the synergy of all levels of the rhythm analyzer to improve
+accuracy and optimize running time and memory usage.
+
 **Week 1:** Dig into the Segmenter code. Use downbeat positions for
 starting new segments. Explore if adding new parameters such as a
 maximum segment length or a maximum number of segments improves the
@@ -197,15 +199,17 @@ will have a complete description, production code, unit tests, and
 accuracy benchmarks. This will be used as an objective measure for the
 second evaluation of Google.
 
-**Week 3:** Implement meter detection by modifying QM downbeat plugin.
-Use it's already computed autocorrelation functions and Viberti
-algorithm to find the best time signature given a list of beat
-positions.
+**Week 3:** Implement meter detection by modifying the QM downbeat
+plugin. Using it's already computed autocorrelation functions and
+dynamic programming to find the best time signature.
 
-**Week 4:** Benchmark and accuracy tunning.
+**Week 4:** Benchmark and accuracy tunning. Test the meter and downbeat
+detection against professional drummers annotations on the GTZAN
+dataset. See what kind of mistakes are happening and fix them if
+possible.
 
-**Week 5:** Optimize all analyzers to remove redundancies and extra
-unnecessary iterations, that can be reduced to a single step.
+**Week 5:** Optimize the analyzers to remove redundancies and shared
+computations that can be reutilized between them.
 
 **Week 6:** Prepare final PR for the complete rhythm detection analyzer.
 This will have a complete description, production code, unit tests, and

@@ -14,7 +14,7 @@ processing:
   - [24/192 Music Downloads are Very Silly
     Indeed](https://xiph.org/~xiphmont/demo/neil-young.html)
 
-## Software Engineering With Realtime Audio
+## Software Engineering For Realtime Audio
 
   - [Time Waits For
     Nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing):

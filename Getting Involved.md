@@ -51,10 +51,9 @@ server](http://downloads.mixxx.org/builds/master/release/) or [compile
 the source code from git](start#compile%20mixxx%20from%20source%20code).
 Suggest improvements and [report bugs](reporting%20bugs).
 
-If you'd really like to be on the bleeding edge, [checkout GitHub pull
-requests locally](https://gist.github.com/piscisaureus/3342247) and
-provide feedback on experimental features before they are merged into
-the master git branch.
+You can also provide feedback on experimental features before they are
+merged into the master git branch by [checking out GitHub pull requests
+locally](https://gist.github.com/piscisaureus/3342247).
 
 ## Tune it\!
 

@@ -129,6 +129,8 @@ are 4 spaces**. The consensus is that we should try to stick to this, if
 only for consistency. If your code uses tabs, or does not use 4-space
 indent then you will be asked to change it.
 
+## Line brake indentation
+
 We use 8 spaces for line break, which allows easily to distinguish
 broken lines of conditions from logical blocks.
 

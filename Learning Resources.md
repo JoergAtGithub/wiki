@@ -14,10 +14,6 @@ processing:
   - [24/192 Music Downloads are Very Silly
     Indeed](https://xiph.org/~xiphmont/demo/neil-young.html)
 
-Ethan Winer's book [The Audio Expert](http://ethanwiner.com/book.htm)
-explains everything from decibels to digital-to-analog converters to
-equalizers.
-
 ## Software Engineering
 
   - [Time Waits For
@@ -44,6 +40,12 @@ equalizers.
 These resources go more in depth about signal processing. Unless you're
 writing effects code, you probably don't need to know this much detail
 to work on Mixxx.
+
+  - Ethan Winer's book [The Audio
+    Expert](http://ethanwiner.com/book.htm) explains everything from
+    decibels to digital-to-analog converters to equalizers.
+
+<!-- end list -->
 
   - **MIT OpenCourseWare lectures:**
 

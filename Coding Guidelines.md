@@ -138,7 +138,7 @@ provides significant efficiency gains to developers.
 
 For Mixxx's clang-format compatibility (ColumnLimit: 0):
 
-  - Use double indent (8-spaces) for broken lines
+  - Use double indent (8-spaces) for broken lines (Continuation Indent).
   - Break line after binary operators. 
   - If you break a list of function parameters, put each parameter on a
     single line. 

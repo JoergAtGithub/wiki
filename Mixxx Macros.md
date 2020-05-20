@@ -33,7 +33,7 @@ CW 22: Survey existing Serato Flip uses & collect input
 CW 23: Review the design of how Macros will be structured  
 CW 24:  
 CW 25:  
-CW 26:
+~~CW 26~~ (blocked)
 
 Deliverable: Format specification, tbd
 

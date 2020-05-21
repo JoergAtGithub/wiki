@@ -129,7 +129,22 @@ are 4 spaces**. The consensus is that we should try to stick to this, if
 only for consistency. If your code uses tabs, or does not use 4-space
 indent then you will be asked to change it.
 
-## Continuation Indent
+## Line Wrapping
+
+Please configure your editor to have a max column-width of 80-columns.
+While it is not a strict requirement, 80-column cleanliness makes it
+easy to tile multiple buffers of code across a laptop screen, which
+provides significant efficiency gains to developers.
+
+For Mixxx's clang-format compatibility (ColumnLimit: 0):
+
+  - Use double indent (8-spaces) for broken lines (ContinuationIndent:
+    8).
+  - Break line after binary operators. 
+  - If you break a list of function parameters, put each parameter on a
+    single line (BinPackArguments: false & BinPackParameters: false).
+
+### Continuation Indent
 
 We add 8 spaces of indentation for broken lines, which helps to easily
 distinguish them from logical blocks.
@@ -156,21 +171,6 @@ if (long_expression1 ||
 }
 
 ```
-
-## Line Widths
-
-Please configure your editor to have a max column-width of 80-columns.
-While it is not a strict requirement, 80-column cleanliness makes it
-easy to tile multiple buffers of code across a laptop screen, which
-provides significant efficiency gains to developers.
-
-For Mixxx's clang-format compatibility (ColumnLimit: 0):
-
-  - Use double indent (8-spaces) for broken lines (ContinuationIndent:
-    8).
-  - Break line after binary operators. 
-  - If you break a list of function parameters, put each parameter on a
-    single line (BinPackArguments: false & BinPackParameters: false).
 
 # C++ Style Guide
 

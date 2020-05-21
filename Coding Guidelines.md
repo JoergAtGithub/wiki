@@ -738,6 +738,11 @@ Escape non ASCII characters:
 const QString kMessage = QStringLiteral("Hello I\u2019ve to go");
 ```
 
+Due to [copy/move
+elision](https://en.cppreference.com/w/cpp/language/copy_elision) in
+C++11 no temporary objects will be created by the assignment. Prefer
+this style for all new code to improve readability.
+
 QChars can be initialized with ASCII characters 16 bit Unicode
 L’\\u00fc' if required. Both are constexpr.
 

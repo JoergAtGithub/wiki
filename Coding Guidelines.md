@@ -735,7 +735,7 @@ This has a variety of
 Escape non ASCII characters:
 
 ``` cpp-qt
-QStringLiteral("Hello I\u2019ve to go");
+const QString kMessage = QStringLiteral("Hello I\u2019ve to go");
 ```
 
 QChars can be initialized with ASCII characters 16 bit Unicode

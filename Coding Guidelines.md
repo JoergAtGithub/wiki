@@ -52,6 +52,8 @@ The required config file, including installation instructions, is in the
 Mixxx repository at
 [.pre-commit-config.yaml](https://github.com/mixxxdj/mixxx/blob/master/.pre-commit-config.yaml).
 Please note that it requires at least Python 3.7.
+[Here](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-8-on-ubuntu-18-04-lts/)
+are instructions for updating python3 on Ubuntu LTS.
 
 ### Command line
 

@@ -45,12 +45,13 @@ sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/c
 
 To automatically adjust the code style in every commit, it is
 recommended to install the [pre-commit](https://pre-commit.com/)
-framework. The required config file, including installation
-instructions, is in the Mixxx repository at
-[.pre-commit-config.yaml](https://github.com/mixxxdj/mixxx/blob/master/.pre-commit-config.yaml).
+framework. It will run a few scripts, including clang-format, to ensure
+the code style guidelines are met.
 
-This will run a few scripts, including clang-format, to ensure the code
-style guidelines are met.
+The required config file, including installation instructions, is in the
+Mixxx repository at
+[.pre-commit-config.yaml](https://github.com/mixxxdj/mixxx/blob/master/.pre-commit-config.yaml).
+Please note that it requires at least Python 3.7.
 
 ### Command line
 

@@ -244,251 +244,55 @@ When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
 
-\<sortable 2=numeric\>
-
-<table>
-<thead>
-<tr class="header">
-<th>Device</th>
-<th>Price (USD) [28]</th>
-<th>Description</th>
-<th>Integrated Sound Card</th>
-<th>Balanced outputs</th>
-<th>Signal protocol</th>
-<th>Released</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="Akai AMX">Akai AMX</a></td>
-<td>$250</td>
-<td>2 deck mixer</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2014</td>
-</tr>
-<tr class="even">
-<td><a href="Faderfox DJ44">Faderfox DJ44</a></td>
-<td>€499</td>
-<td>2/4 deck[29] mobile controller</td>
-<td>no</td>
-<td>-</td>
-<td>MIDI</td>
-<td>2013</td>
-</tr>
-<tr class="odd">
-<td><a href="Gemini G4V">Gemini G4V</a></td>
-<td>$350</td>
-<td>2 deck[30] all-in-one</td>
-<td>yes</td>
-<td>yes</td>
-<td>MIDI</td>
-<td>2013</td>
-</tr>
-<tr class="even">
-<td><a href="Pioneer DDJ-400">Pioneer DDJ-400</a></td>
-<td>$279</td>
-<td>2 deck controller all-in-one</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
-<tr class="odd">
-<td><a href="DDJ-1000">Pioneer DDJ-1000</a></td>
-<td>1199</td>
-<td>4 deck controller all-in-one</td>
-<td>yes</td>
-<td>yes</td>
-<td>MIDI and HID</td>
-<td>2018</td>
-</tr>
-<tr class="even">
-<td><a href="Pioneer DDJ-SB3">Pioneer DDJ-SB3</a></td>
-<td>$249</td>
-<td>2 deck controller [31] all-in-one</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
-<tr class="odd">
-<td><a href="Pioneer DDJ-WeGO">Pioneer DDJ-WeGO</a></td>
-<td>discontinued</td>
-<td>2 deck controller</td>
-<td>yes</td>
-<td>n/a</td>
-<td>MIDI</td>
-<td>2012</td>
-</tr>
-<tr class="even">
-<td><a href="Pioneer DDJ-WeGO3">Pioneer DDJ-WeGO3</a></td>
-<td>$300</td>
-<td>2 deck controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2014</td>
-</tr>
-<tr class="odd">
-<td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
-<td>$100</td>
-<td>1 deck controller</td>
-<td>no</td>
-<td>-</td>
-<td>MIDI</td>
-<td>2013</td>
-</tr>
-<tr class="even">
-<td><a href="JBSystems DJ-kontrol 3">JBSystems DJ-kontrol 3</a><br />
-<a href="Resident DJ-kontrol 3">(Resident DJ-kontrol 3 identically?)</a></td>
-<td>$200</td>
-<td>2 deck controller</td>
-<td>yes</td>
-<td>yes</td>
-<td>MIDI</td>
-<td>2012</td>
-</tr>
-<tr class="odd">
-<td><a href="Behringer CMD Studio 2a">Behringer CMD Studio 2a</a></td>
-<td>$100</td>
-<td>2 deck controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2014</td>
-</tr>
-<tr class="even">
-<td><a href="Roland DJ-202">Roland DJ-202</a></td>
-<td>$300</td>
-<td>2 deck[32] all-in-one</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2017</td>
-</tr>
-<tr class="odd">
-<td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
-<td>€90</td>
-<td>2 deck[33] all-in-one</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2016</td>
-</tr>
-<tr class="even">
-<td><a href="Hercules DJ Control Jogvision">Hercules DJ Control Jogvision</a></td>
-<td>$250</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2015</td>
-</tr>
-<tr class="odd">
-<td><a href="Hercules Universal DJ">Hercules Universal DJ</a></td>
-<td>$250</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2014</td>
-</tr>
-<tr class="even">
-<td><a href="Hercules DJ Control Starlight">Hercules DJ Control Starlight</a></td>
-<td>$99</td>
-<td>2 deck all-in-one compact controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
-<tr class="odd">
-<td><a href="Hercules DJControl Inpulse 200">Hercules DJControl Inpulse 200</a></td>
-<td>$129</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
-<tr class="even">
-<td><a href="Hercules DJControl Inpulse 300">Hercules DJControl Inpulse 300</a></td>
-<td>$250</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
-<tr class="odd">
-<td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
-<td>Discontinued</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2013</td>
-</tr>
-<tr class="even">
-<td><a href="Hercules DJ 4set">Hercules DJ 4set</a></td>
-<td>Discontinued</td>
-<td>2 deck[34] all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2011</td>
-</tr>
-<tr class="odd">
-<td><a href="Native Instruments Traktor Kontrol Z1">Native Instruments Traktor Kontrol Z1</a></td>
-<td>$200</td>
-<td>2 deck compact</td>
-<td>yes</td>
-<td>no</td>
-<td>HID</td>
-<td>2013</td>
-</tr>
-<tr class="even">
-<td><a href="Native Instruments Traktor Kontrol F1">Native Instruments Traktor Kontrol F1</a></td>
-<td>$200</td>
-<td>originally branded as "Remix controller", but very versatile</td>
-<td>no</td>
-<td>-</td>
-<td>HID</td>
-<td>2012</td>
-</tr>
-<tr class="odd">
-<td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
-<td>$85</td>
-<td>2 deck controller</td>
-<td>no</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2019</td>
-</tr>
-<tr class="even">
-<td><a href="Stanton DJC.4">Stanton DJC.4</a></td>
-<td>Discontinued</td>
-<td>2 deck controller [35] all-in-one</td>
-<td>yes</td>
-<td>yes</td>
-<td>MIDI</td>
-<td>2012</td>
-</tr>
-<tr class="odd">
-<td><a href="Numark DJ2GO2 Touch">Numark DJ2GO2 Touch</a></td>
-<td>$79</td>
-<td>2 deck pocket dj controller with capacitive touch jog wheels</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2019</td>
-</tr>
-</tbody>
-</table>
-
-\</sortable\>
+\<sortable 2=numeric\> ^ Device ^ Price (USD) \[28\] ^ Description ^
+Integrated Sound Card ^ Balanced outputs ^ Signal protocol ^ Released ^
+^ [Akai AMX](Akai%20AMX) | $250 | 2 deck mixer | yes | no | MIDI | 2014
+| ^ [Faderfox DJ44](Faderfox%20DJ44) | €499 | 2/4 deck\[29\] mobile
+controller | no | - | MIDI | 2013 | ^ [Gemini G4V](Gemini%20G4V) | $350
+| 2 deck\[30\] all-in-one | yes | yes | MIDI | 2013 | ^ [Pioneer
+DDJ-400](Pioneer%20DDJ-400) | $279 | 2 deck controller all-in-one | yes
+| no | MIDI | 2018 | ^ [Pioneer DDJ-1000](DDJ-1000) | 1199 | 4 deck
+controller all-in-one | yes | yes | MIDI and HID | 2018 | ^ [Pioneer
+DDJ-SB3](Pioneer%20DDJ-SB3) | $249 | 2 deck controller \[31\] all-in-one
+| yes | no | MIDI | 2018 | ^ [Pioneer DDJ-WeGO](Pioneer%20DDJ-WeGO) |
+discontinued | 2 deck controller | yes | n/a | MIDI | 2012 | ^ [Pioneer
+DDJ-WeGO3](Pioneer%20DDJ-WeGO3) | $300 | 2 deck controller | yes | no |
+MIDI | 2014 | ^ [Behringer CMD PL-1](Behringer%20CMD%20PL-1) | $100 | 1
+deck controller | no | - | MIDI | 2013 | ^ [JBSystems
+DJ-kontrol 3](JBSystems%20DJ-kontrol%203)  
+[(Resident DJ-kontrol 3 identically?)](Resident%20DJ-kontrol%203) | $200
+| 2 deck controller | yes | yes | MIDI | 2012 | ^ [Behringer CMD
+Studio 2a](Behringer%20CMD%20Studio%202a) | $100 | 2 deck controller |
+yes | no | MIDI | 2014 | ^ [Roland DJ-202](Roland%20DJ-202) | $300 | 2
+deck\[32\] all-in-one | yes | no | MIDI | 2017 | ^ [Hercules DJ Control
+Instinct P8](Hercules%20DJ%20Control%20Instinct%20P8) | €90 | 2
+deck\[33\] all-in-one | yes | no | MIDI | 2016 | ^ [Hercules DJ Control
+Jogvision](Hercules%20DJ%20Control%20Jogvision) | $250 | 2 deck
+all-in-one controller | yes | no | MIDI | 2015 | ^ [Hercules Universal
+DJ](Hercules%20Universal%20DJ) | $250 | 2 deck all-in-one controller |
+yes | no | MIDI | 2014 | ^ [Hercules DJ Control
+Starlight](Hercules%20DJ%20Control%20Starlight) | $99 | 2 deck
+all-in-one compact controller | yes | no | MIDI | 2018 | ^ [Hercules
+DJControl Inpulse 200](Hercules%20DJControl%20Inpulse%20200) | $129 | 2
+deck all-in-one controller | yes | no | MIDI | 2018 | ^ [Hercules
+DJControl Inpulse 300](Hercules%20DJControl%20Inpulse%20300) | $250 | 2
+deck all-in-one controller | yes | no | MIDI | 2018 | ^ [Hercules
+DJControl AIR Plus](Hercules%20DJControl%20AIR%20Plus) | Discontinued |
+2 deck all-in-one controller | yes | no | MIDI | 2013 | ^ [Hercules
+DJ 4set](Hercules%20DJ%204set) | Discontinued | 2 deck\[34\] all-in-one
+controller | yes | no | MIDI | 2011 | ^ [Native Instruments Traktor
+Kontrol Z1](Native%20Instruments%20Traktor%20Kontrol%20Z1) | $200 | 2
+deck compact | yes | no | HID | 2013 | ^ [Native Instruments Traktor
+Kontrol F1](Native%20Instruments%20Traktor%20Kontrol%20F1) | $200 |
+originally branded as "Remix controller", but very versatile | no | - |
+HID | 2012 | ^ [Soundless Studio joyMIDI](Soundless%20Studio%20joyMIDI)
+| $85 | 2 deck controller | no | no | MIDI | 2019 | ^ [Stanton
+DJC.4](Stanton%20DJC.4) | Discontinued | 2 deck controller \[35\]
+all-in-one | yes | yes | MIDI | 2012 | ^ [Numark DJ2GO2
+Touch](Numark%20DJ2GO2%20Touch)| $79 | 2 deck pocket dj controller with
+capacitive touch jog wheels | yes | no |MIDI |2019| ^ [Numark iDJ Live
+II](Numark%20iDJ%20Live%20II) | discontinued | basic 2 deck | no | - |
+MIDI | 2014 \</sortable\>
 
 ### Not mapped controllers
 

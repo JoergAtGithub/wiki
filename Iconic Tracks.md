@@ -29,8 +29,8 @@ measure while the rest of the band is at 3/4.
 <https://www.youtube.com/watch?v=PivWY9wn5ps>
 
 This 1987 Electronic Pop track has on of the most famous key change. It
-comes along with a‘CHANGE’ in the lyrics at \~2:45. The key changes from
-G Major to A♭ Major.
+comes along with a "CHANGE" in the lyrics at \~2:45. The key changes
+from G Major to A♭ Major.
 
 # External Sources
 

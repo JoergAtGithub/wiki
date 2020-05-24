@@ -46,3 +46,7 @@ noise added by the compression algorithm. The calculated replay gain is
 Key changes:
 
 <https://www.classicfm.com/discover-music/music-theory/best-key-changes-pop-song/>
+
+Skipped or added beats:
+
+<https://www.youtube.com/watch?v=ec7wiBkHLC4>

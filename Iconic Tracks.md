@@ -23,3 +23,16 @@ Key: E♭ minor Tempo: 174 bpm
 This 1975 Classic Rock track, is an icon for a polymetre track where two
 metrics are played simultaneously. In this case, the drummer plays a 4/4
 measure while the rest of the band is at 3/4.
+
+## Michael Jackson - Man In The Mirror
+
+<https://www.youtube.com/watch?v=PivWY9wn5ps>
+
+This 1987 Electronic Pop track has on of the most famous key change. It
+comes along with a‘CHANGE’ in the lyrics at \~2:45. The key changes from
+G Major to A♭ Major.
+
+# External Sources
+
+Key changes: \*
+<https://www.classicfm.com/discover-music/music-theory/best-key-changes-pop-song/>

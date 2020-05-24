@@ -32,6 +32,15 @@ This 1987 Electronic Pop track has on of the most famous key change. It
 comes along with a "CHANGE" in the lyrics at \~2:45. The key changes
 from G Major to A♭ Major.
 
+## Green Day - Holiday
+
+<https://www.youtube.com/watch?v=A1OqtIqzScI>
+
+This 2004 Punk track is one of the loudest recorded tracks. A mp3
+version of this track is clipping after decoding due to the additional
+noise added by the compression algorithm. The calculated replay gain is
+-12 dB where a typical values are around -6 dB.
+
 # External Sources
 
 Key changes:

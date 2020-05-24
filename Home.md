@@ -147,6 +147,8 @@ this wiki, please fix it.
   - [Google Code-in](gci) task list and information
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
+  - [Iconic Tracks](Iconic%20Tracks) A list of tracks, useful for
+    discussing Mixxx features.
 
 ### Archives
 

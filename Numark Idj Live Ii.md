@@ -1,5 +1,7 @@
 # Numark iDJ Live II
 
+![https://www.numark.com/images/sized/images/product\_large/iDJLiveII\_ortho\_web\_lg-624x390.jpg](https://www.numark.com/images/sized/images/product_large/iDJLiveII_ortho_web_lg-624x390.jpg)
+
 \* [Manufacturer's product
 page](https://www.numark.com/product/idj-live-ii)
 

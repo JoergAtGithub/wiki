@@ -41,6 +41,15 @@ version of this track is clipping after decoding due to the additional
 noise added by the compression algorithm. The calculated replay gain is
 -12 dB where a typical values are around -6 dB.
 
+## ABBA - Dancing Queen
+
+<https://www.youtube.com/watch?v=xFrGuyw1V8s>
+
+This 1976 Disco track is a manually played 100 bpm track. It is
+interesting, because we Mixxx 2.3 beat detector can handle it well. The
+non const beat mode cycles around 100 bpm makes it useless for auto sync
+and the a const beat grid is heavily off at many places of the track.
+
 # External Sources
 
 Key changes:

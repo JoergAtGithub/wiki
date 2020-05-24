@@ -20,7 +20,9 @@ on Mac so far.
 ## Button mapping
 
 Most of the mapping is self-explanatory and matches up to labels in the
-Mixxx UI.
+Mixxx UI. The mapping script only handles the jog wheels and scratch
+button, so you can remap everything else using the learning wizard if
+you'd like.
 
 ### Play/cue/sync buttons
 
@@ -30,6 +32,14 @@ the play and sync buttons do.
 The "SET" buttons set the cue point and the arrow buttons jump to the
 cue point. They do not change behavior depending on whether the track is
 playing or paused.
+
+The sync LEDs do nothing by default. To make them flash with the beat,
+add these two rows to "Output mappings" in the controller settings:
+
+| Channel | Opcode  | Control | On Value | Off Value | Action                    | Min | Max |
+| ------- | ------- | ------- | -------- | --------- | ------------------------- | --- | --- |
+| 1       | Note On | 0x40    | 0x7F     | 0x00      | \[Channel1\],beat\_active | 0.5 | 1   |
+| 1       | Note On | 0x47    | 0x7F     | 0x00      | \[Channel2\],beat\_active | 0.5 | 1   |
 
 ### Jog wheels and scratch button
 

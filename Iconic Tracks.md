@@ -34,5 +34,7 @@ from G Major to A♭ Major.
 
 # External Sources
 
-Key changes: \*
+Key changes:
+
+\*
 <https://www.classicfm.com/discover-music/music-theory/best-key-changes-pop-song/>

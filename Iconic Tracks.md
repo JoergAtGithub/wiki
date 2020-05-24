@@ -15,3 +15,11 @@ The Wikipedia contains a detailed description of the section and phrases
 structure of the track. <https://en.wikipedia.org/wiki/Take_Five>
 
 Key: E♭ minor Tempo: 174 bpm
+
+## Kashmir - Led Zeppelin
+
+<https://www.youtube.com/watch?v=sfR_HWMzgyc>
+
+This 1975 Classic Rock track, is an icon for a polymetre track where two
+metrics are played simultaneously. In this case, the drummer plays a 4/4
+measure while the rest of the band is at 3/4.

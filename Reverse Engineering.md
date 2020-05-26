@@ -9,6 +9,9 @@ and faders when the DJ application starts) or completely missing. In
 these cases, you'll need to reverse engineer how the hardware
 communicates with other DJ software to get it working with Mixxx.
 
+The [MIDI Crash Course](MIDI%20Crash%20Course) page has more background
+information about interpreting MIDI messages.
+
 ## Observing MIDI/HID messages with Mixxx
 
 1.  Start Mixxx from a command prompt using the `--controllerDebug`

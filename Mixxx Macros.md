@@ -49,10 +49,10 @@ ideally working recording system
 
 ### August - Refinement Phase:
 
-CW 31:  
-CW 32:  
-CW 33:  
-CW 34:
+CW 31: Refine UX & Integrate into other Skins  
+CW 32: Enable Import from Serato & explore possibilities for sharing  
+CW 33: *Buffer*  
+CW 34: *Buffer*
 
 Deliverable: Integration with other tools (Serato Flip, Export/Import,
 Edit Dialog, Auto DJ?)

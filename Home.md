@@ -75,6 +75,7 @@ this wiki, please fix it.
     format](MIDI%20controller%20mapping%20file%20format): create or
     change a MIDI mapping file for your controller
   - [MIDI crash course](MIDI%20crash%20course)
+  - [Reverse engineering](Reverse%20engineering) tips for DJ hardware
   - [Controller scripting with JavaScript](midi%20scripting): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons

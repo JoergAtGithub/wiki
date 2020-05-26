@@ -1,3 +1,5 @@
+# Reverse Engineering Communication Protocols of MIDI-/USB-based DJ Hardware
+
 Often to get DJ hardware working with Mixxx, it is necessary to reverse
 engineer how it communicates with other DJ software. This page has some
 tips to get started with that.

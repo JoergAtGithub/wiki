@@ -21,3 +21,5 @@ captured traffic files out of the VM.
 
 If you use VirtualBox, you need to install the VirtualBox guest
 extensions with experimental 3D acceleration to run VirtualDJ or Serato.
+
+TODO: Is there anything in particular to configure for QEMU?

@@ -28,7 +28,7 @@ CW 21: Establish Timeline, work on open PRs, initial survey &
 discussion  
 CW 22: Survey existing Serato Flip uses & collect input
 
-**June - Design Phase:**
+### June - Design Phase:
 
 CW 23: Specify the Macro format  
 CW 24: Design & integrate into existing skins  
@@ -37,7 +37,7 @@ CW 25: *Buffer*
 
 Deliverable: Format specification, tbd
 
-**July - Coding Phase:**
+### July - Coding Phase:
 
 CW 27:  
 CW 28:  
@@ -46,7 +46,7 @@ CW 30:
 
 Deliverable: Implemented controls with mapping to a skin and controller
 
-**August - Refinement Phase:**
+### August - Refinement Phase:
 
 CW 31:  
 CW 32:  

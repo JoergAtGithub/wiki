@@ -11,6 +11,9 @@ be used to analyze traffic for USB Audio and MIDI devices (MIDI is part
 of the USB Audio Class standard). Wireshark also has a [USB HID
 filter](https://www.wireshark.org/docs/dfref/u/usbhid.html).
 
+Use `usbaudio.midi.event` as the filter in Wireshark to separate audio
+signals from MIDI.
+
 ## Running VMs on a Linux host
 
 If you are using Linux, you can run other DJ software in a Windows

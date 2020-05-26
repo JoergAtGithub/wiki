@@ -12,7 +12,8 @@ of the USB Audio Class standard). Wireshark also has a [USB HID
 filter](https://www.wireshark.org/docs/dfref/u/usbhid.html).
 
 Use `usbaudio.midi.event` as the filter in Wireshark to separate audio
-signals from MIDI.
+signals from MIDI. The `usbaudio.sysex.reassembled.data` filter shows
+only system exclusive (sysex) messages.
 
 ## Running VMs on a Linux host
 

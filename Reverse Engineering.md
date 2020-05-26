@@ -27,3 +27,12 @@ If you use VirtualBox, you need to install the VirtualBox guest
 extensions with experimental 3D acceleration to run VirtualDJ or Serato.
 
 TODO: Is there anything in particular to configure for QEMU?
+
+## Bare metal windows workflow
+
+1.  explain software used
+2.  explain minimizing bus traffic
+3.  mention wsl as workflow accelerator
+4.  usb RE-workflows
+5.  timed captures
+6.  Explain the difference between real USB vs USB-capture

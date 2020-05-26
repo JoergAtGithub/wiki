@@ -39,12 +39,13 @@ Deliverable: Format specification, tbd
 
 ### July - Coding Phase:
 
-CW 27:  
-CW 28:  
-CW 29:  
-CW 30:
+CW 27: Implement the data structures  
+CW 28: Implement the controls  
+CW 29: Create recording infrastructure  
+CW 30: Tie it all together
 
-Deliverable: Implemented controls with mapping to a skin and controller
+Deliverable: Implemented controls with mapping to a skin and controller,
+ideally working recording system
 
 ### August - Refinement Phase:
 

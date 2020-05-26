@@ -20,10 +20,11 @@ only system exclusive (sysex) messages.
 ## Running VMs on a Linux host
 
 If you are using Linux, you can run other DJ software in a Windows
-virtual machine and record the USB traffic with Wireshark. You can run
-Wireshark on the Linux host or inside the virtual machine, but if you
-run Wireshark in Linux you don't need to bother transferring the
-captured traffic files out of the VM.
+virtual machine and record the USB traffic with Wireshark (macOS is a
+hassle to run in a VM but Windows is easy). You can run Wireshark on the
+Linux host or inside the virtual machine, but if you run Wireshark in
+Linux you don't need to bother transferring the captured traffic files
+out of the VM.
 
 If you use VirtualBox, you need to install the VirtualBox guest
 extensions with experimental 3D acceleration to run VirtualDJ or Serato.

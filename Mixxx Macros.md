@@ -30,9 +30,9 @@ CW 22: Survey existing Serato Flip uses & collect input
 
 **June - Design Phase:**
 
-CW 23: Review the design of how Macros will be structured  
-CW 24:  
-CW 25:  
+CW 23: Specify the Macro format  
+CW 24: Design & integrate into existing skins  
+CW 25: *Buffer*  
 ~~CW 26~~ (blocked)
 
 Deliverable: Format specification, tbd

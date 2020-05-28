@@ -51,6 +51,13 @@ it well. The non const beat mode cycles around 100 bpm makes it useless
 for auto sync and the a const beat grid is heavily off at many places of
 the track.
 
+## Atenna - Zorba The Greek
+
+<https://www.youtube.com/watch?v=nrCu94kpE1Q>
+
+This is a 1995 Club Mix of Sirtaki, taken from the 1965 movie with the
+same name. It starts with gentle 105 bpm and speeds up to 180 bpm
+
 # External Sources
 
 Key changes:

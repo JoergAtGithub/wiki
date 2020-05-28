@@ -4,17 +4,17 @@ This page groups info relevant to tracks with multiple BPMs.
 
 ## MIXXX support
 
-Mapping commands: [mixxxcontrols?\#master](mixxxcontrols?#master) Manual
-(Preferences):
+\* Mapping commands: [mixxxcontrols?\#master](mixxxcontrols?#master) \*
+Manual (Preferences):
 <https://www.mixxx.org/manual/latest/en/chapters/preferences.html?highlight=analyse#beat-detection>
-Forum post: <https://www.mixxx.org/forums/viewtopic.php?f=3&t=11629>
-GSOC project 2020:
+\* Forum post: <https://www.mixxx.org/forums/viewtopic.php?f=3&t=11629>
+\* GSOC project 2020:
 [measures\_downbeats\_bars\_and\_phrases](measures_downbeats_bars_and_phrases)
-GSOC project 2018:
+\* GSOC project 2018:
 [gsoc2018ideas?\#beatgrid\_enhancements](gsoc2018ideas?#beatgrid_enhancements)
-Zulip Chat:
+\* Zulip Chat:
 <https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Rhythm.20Detector>
-Serato Comparison:
+\* Serato Comparison:
 [here](https://www.reddit.com/r/DJs/comments/gs49z6/serato_or_rekordbox_now_that_rekordbox_needs_a/fs313ck/)
 
 ## Definitions

@@ -35,8 +35,13 @@ There are two types of tracks that have multiple BPMs:
     Examples:
   - Abrupt 85-\>115 bpm: [Magic Drum Orchestra - Drop it like its
     Hot](https://youtu.be/W-nrHptw4Ow)
+
+<!-- end list -->
+
   - Smooth 126-\>98 bpm: [Planet Soul - Set me
     Free](https://www.youtube.com/watch?v=v5HEfbxk7Mw)
+
+See also this wiki page: [iconic\_tracks](iconic_tracks)
 
 more lists:
 [list1](https://www.reddit.com/r/DJs/comments/2hmtgc/do_you_know_of_any_house_songs_that_increase_in/)

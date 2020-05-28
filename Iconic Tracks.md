@@ -56,7 +56,9 @@ the track.
 <https://www.youtube.com/watch?v=nrCu94kpE1Q>
 
 This is a 1995 Club Mix of Sirtaki, taken from the 1965 movie with the
-same name. It starts with gentle 105 bpm and speeds up to 180 bpm
+same name. It starts with gentle 105 bpm and speeds up to 180 bpm. It
+has clear sections, some with constant bpm and some with increasing
+tempo.
 
 # External Sources
 

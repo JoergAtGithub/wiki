@@ -80,8 +80,6 @@ results into this wiki page when appropriate.
 ### CW 21 & 22
 
   - Work on general PRs:
-    <https://github.com/pulls?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
-    or
     <https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
   - Code Style discussions (Zulip & PRs)
   - Planning & initial Research:

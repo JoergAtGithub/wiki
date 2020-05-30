@@ -81,6 +81,8 @@ results into this wiki page when appropriate.
 
   - Work on general PRs:
     <https://github.com/pulls?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
+    or
+    <https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
   - Code Style discussions (Zulip & PRs)
   - Planning & initial Research:
     <https://www.notion.so/xerus/Mixxx-Macros-GSoC-Research-5ab430eb8f0a41efafc075c220029560>

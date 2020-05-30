@@ -2,7 +2,8 @@
 
 *By Janek Fischer (xerus/xerus2000)*
 
-[[/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf|Proposal]]
+![Official GSoC
+Proposal](/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
 
 ## Introduction
 
@@ -22,6 +23,10 @@ that is where Mixxx Macros come in. With this feature implemented, it
 will be possible to record specific moves while playing a track and
 store them in a rack, to be used when it gets hot.
 
+## Details
+
+*tbd*
+
 ## Timeline
 
 CW 21: Establish Timeline, work on open PRs, initial survey &
@@ -35,7 +40,7 @@ CW 24: Design & integrate into existing skins
 CW 25: *Buffer*  
 ~~CW 26~~ (blocked)
 
-Deliverable: Format specification, tbd
+Deliverable: Format specification
 
 ### July - Coding Phase:
 
@@ -59,10 +64,18 @@ Edit Dialog, Auto DJ?)
 
 ## Log
 
-Note: I tend to branch out to other open source contributions when I
-want to work on something - I am almost unable to idle ;)  
+### How I work
+
+I tend to branch out to other open source contributions when I want to
+work on something - I am almost unable to idle ;)  
 Evidence of that are regular reports on GitHub:
-<https://github.com/search?q=xerus2000&s=created&type=Issues>
+<https://github.com/search?q=xerus2000&s=created&type=Issues>  
+However, this can also lead to delays in what I was supposed to work on.
+
+I currently use <https://notion.so> to take notes and may link some
+pages here as proof of work - but these are personal working areas and
+not optimized for general understanding. I will always incorporate
+results into this wiki page when appropriate.
 
 ### CW 21 & 22
 
@@ -72,4 +85,26 @@ Evidence of that are regular reports on GitHub:
   - Planning & initial Research:
     <https://www.notion.so/xerus/Mixxx-Macros-GSoC-Research-5ab430eb8f0a41efafc075c220029560>
 
-## Details
+### CW 23
+
+Mo:
+
+Tu:
+
+We:
+
+Thu:
+
+Fr:
+
+### CW 24
+
+Mo:
+
+Tu:
+
+We:
+
+Thu:
+
+Fr:

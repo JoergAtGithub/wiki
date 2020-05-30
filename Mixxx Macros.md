@@ -57,4 +57,19 @@ CW 34: *Buffer*
 Deliverable: Integration with other tools (Serato Flip, Export/Import,
 Edit Dialog, Auto DJ?)
 
+## Log
+
+Note: I tend to branch out to other open source contributions when I
+want to work on something - I am almost unable to idle ;)  
+Evidence of that are regular reports on GitHub:
+<https://github.com/search?q=xerus2000&s=created&type=Issues>
+
+### CW 21 & 22
+
+  - Work on general PRs:
+    <https://github.com/pulls?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
+  - Code Style discussions (Zulip & PRs)
+  - Planning & initial Research:
+    <https://www.notion.so/xerus/Mixxx-Macros-GSoC-Research-5ab430eb8f0a41efafc075c220029560>
+
 ## Details

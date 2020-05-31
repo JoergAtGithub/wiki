@@ -55,18 +55,29 @@ The downbeat markers will be more opaque than the other bar beats.
 
 [[/media/image156.png|image156.png]]
 
-**Phrase markers**
+**Adjustment markers**
 
-These markers define the start of a new phrase. The phrase markers will
-be colored different and more accented than the downbeat markers.
-
-[[/media/image20-5-1.png|image20-5-1.png]]
+[[/media/image20-5-5.png|image20-5-5.png]]
 
 **Sections bands**
 
 The sections will be displayed on the waveform as tabbed strips.
 
 [[/media/image20.png|image20.png]]
+
+**Phrase markers**
+
+~~These markers define the start of a new phrase. The phrase markers
+will be coloured differently and more accented than the downbeat
+markers.~~
+
+[[/media/image20-5-1.png|image20-5-1.png]]
+
+Cleaner option
+
+[[/media/phrasenew.png|phrasenew.png]]
+
+Note: The start of a section implicitly indicates the start of a phrase.
 
 -----
 
@@ -134,6 +145,18 @@ applicable) Added option:
 
   - Remove phrase marker
 
+**Adjustment markers** Markers define ranges of user defined changes
+from the previously set marker (or the default in case no marker is set
+before) to the upcoming marker (or the end of the track). This will
+enable us to make multiple adjustments in the track. The marker encodes
+BPM and time signature information. (Time signature can only be changed
+at a downbeat)
+
+**Marker BPM context menu** Adjust BPM ahead by tapping the buttons or
+setting a value in the input box.
+
+[[/media/rect1265.png|rect1265.png]]
+
 **Note:** Quarter note = beat and no adjustments will be allowed to this
 convention.
 
@@ -181,3 +204,139 @@ analyzer to find phrases and section. Thus, every edit by the user will
 trigger another analysis based on the new empirical data and gather the
 rest of the data so that the user does not have to edit the rest of it
 manually.
+
+### Implemetation Detail
+
+The scrolling waveform, which currently only renders the waveform and
+the tracks metadata, will be made interactive. To do so, the elements
+must share common interfaces such as `WaveformItemClickable`,
+`WaveformItemDraggable`.
+
+Since the skins can be very different in a way that a skin might not
+even have the buttons or panel that another one has, the scrolling
+waveform context menus will be used as the primary way to adjust
+beatgrid via the GUI.
+
+#### New classes
+
+**TimeSignature**
+
+Members:
+
+  - int beatsPerBar
+  - int noteValue
+
+**Section**
+
+Members:
+
+  - int beatOffset
+  - QColor color
+  - QString label
+  - TrackPointer pTrack
+
+**GridAdjustmentMarker**
+
+Members:
+
+  - int beatOffset
+  - TimeSignature newTimeSignature
+  - Bpm newBpm
+
+## Planned Timeline
+
+### Phase 1
+
+In the first phase, the groundwork for subsequent work, the base for all
+track metadata, that is, beats will be perfected. This will involve
+setting BPM, time signature and downbeats.
+
+**Week 1**
+
+  - Add `Downbeat Offset` and `Time Signature` as members of the Track
+    class. Initially, this data will not be persistent.
+  - Add mouse pointer interaction capabilities to beats on the scrolling
+    waveform. Additionally, try to create a general interface for
+    functionality common to scrolling waveform elements (Currently, they
+    are only rendered and can't be interacted with).
+  - Add context menu to mark a beat as downbeat and set global time
+    signature for the track.
+  - Create tests to check downbeats and time signature data are in sync.
+
+**Week 2**
+
+  - Persist the data by adding time signature (single global value, not
+    repeated) and downbeat offset fields to beats.proto.
+  - Shift from global metadata adjustment to a marker based system.
+  - Add an adjustment marker renderer.
+  - Add tests to check multiple marker data.
+
+**Week 3**
+
+  - Implement changes to recalculate marker dependent values like
+    `waveformrenderbeat`.
+  - Add bar/beat counter near play marker.
+
+**Week 4**
+
+  - Finalize PR with granular beatgrid editing features. This PR will
+    enable us to set downbeats, and arbitrary BPM and time signature via
+    adjustment markers.
+
+### Phase 2
+
+Sections and phrases.
+
+**Week 5**
+
+  - Start by creating in memory sections as a member of Track. A Track
+    stores a list of section dividers which demarcate the start of a new
+    section. A section always clamps to a beat.
+  - Add tests.
+
+**Week 6**
+
+  - Create a new `SectionOverviewWidget` with draggable section
+    boundaries and splitting capability with scissor-like pointer.
+  - Create a PR with a section overview widget displayed under the
+    waveform overview with editing capabilities.
+
+**Week 7**
+
+  - Create a new renderer `WaveformRenderSection` to draw on scrolling
+    waveform.
+  - Add drag and split interactions.
+
+**Week 8**
+
+  - Working on section context menu to change color and label.
+  - Add context menu option to downbeat/beat to mark a part of section
+    as phrase demarcation.
+  - Prepare a PR with new section renderer with editing and phrase
+    addition capabilities.
+
+### Phase 3
+
+Oriented towards DJing functionality aided by the new metadata and
+beatgrid editing with button controls (without context menus)
+
+**Week 9**
+
+  - Add loop and jump combobox selector for setting units.
+  - Create a PR for the same.
+
+**Week 10**
+
+  - AutoDJ changes to match track downbeats during transition.
+  - Create a new PR for this feature.
+
+**Week 11**
+
+  - Integrating results from the analyser.
+  - Create a separate PR for this integration.
+
+**Week 12**
+
+  - Create a beatgrid editing panel with buttons mappable to controller.
+  - Add controls to edit beatgrid using the current play position.
+  - Create the final PR.

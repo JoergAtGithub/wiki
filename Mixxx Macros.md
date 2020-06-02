@@ -87,9 +87,10 @@ results into this wiki page when appropriate.
 
 ### CW 23
 
-Mo:
-
 Tu:
+
+  - catch up on Zulip discussion
+  - create surveys
 
 We:
 

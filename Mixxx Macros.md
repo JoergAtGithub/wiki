@@ -60,24 +60,19 @@ Only complaint is that it might be a little bland
 
 ### Discussion
 
-[[/media/screenshot_20200602_112730.png|]]
-
-Record could be implemented using [data emitted from the engine on cue
-jumps](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197293806)
-(not a signal, realtime\!)
-
-[Use developer window/shortcuts for debugging
-controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197532422),
-implement them first and then look at skins.
-
-[Macros are bound to one track - beware of scope
-creep](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984243)
-
-[Should be usable from a controller - keep number of controls at
-minimum](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984726)
-
-[Might activate actual loops - user can then disable
-it](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/198009610)
+  - Recording could be implemented using [data emitted from the engine
+    on cue
+    jumps](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197293806)
+    (not a signal, realtime\!)
+  - [Use developer window/shortcuts for debugging
+    controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197532422),
+    implement them first and then look at skins.
+  - [Macros are bound to one track - beware of scope
+    creep](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984243)
+  - [Should be usable from a controller - keep number of controls at
+    minimum](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984726)
+  - [Might activate actual loops - user can then disable
+    it](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/198009610)
 
 ## Timeline
 

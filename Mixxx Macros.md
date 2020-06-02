@@ -136,8 +136,11 @@ results into this wiki page when appropriate.
 
 Tu:
 
-  - revisit Zulip discussion & update wiki page
-  - create surveys
+  - revisited & summarized Zulip discussion in wiki page (timeline,
+    details)
+  - sifted through reddit
+    (<https://www.reddit.com/search?q=serato%20flip>) - summary for now
+    in Notion
 
 We:
 

@@ -25,7 +25,59 @@ store them in a rack, to be used when it gets hot.
 
 ## Details
 
-*tbd*
+### Data Format
+
+  - reference cues vs timestamps
+  - timestamps: used by Serato Flip, persistent, but hardly editable;
+    can break when track offset changes (when music file is swapped out)
+  - cues: can be moved, but that could also [accidentally mess up a
+    flip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197284228)
+    and cues can't currently be shifted; add [confirmation dialog
+    similar to when deleting a track in a
+    playlist](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197283721)
+    to avoid breaking things -\> but then cue needs to be aware of the
+    Macros it's used in
+  - how relevant is editing afterwards, how can we facilitate it?
+  - Serato Flip ["just
+    works"](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197286852)
+    - Flip is fixed after recording, not blocking any hotcues or any
+    chance of breakage
+
+### Name
+
+"Macros" sounds like something to be triggered manually at any time -
+the point of flips is that they usually happen automatically.
+
+Suggestions: Spin, Routines, Twist, MicroFlow, Mow
+
+"Routines" sounds nice, is
+[descriptive](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282607)
+and
+[well-received](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197421948)
+- [we don't need to sell it
+either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).
+Only complaint is that it might be a little bland
+
+### Discussion
+
+[[/media/screenshot_20200602_112730.png|]]
+
+Record could be implemented using [data emitted from the engine on cue
+jumps](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197293806)
+(not a signal, realtime\!)
+
+[Use developer window/shortcuts for debugging
+controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197532422),
+implement them first and then look at skins.
+
+[Macros are bound to one track - beware of scope
+creep](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984243)
+
+[Should be usable from a controller - keep number of controls at
+minimum](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984726)
+
+[Might activate actual loops - user can then disable
+it](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/198009610)
 
 ## Timeline
 
@@ -89,7 +141,7 @@ results into this wiki page when appropriate.
 
 Tu:
 
-  - catch up on Zulip discussion
+  - revisit Zulip discussion & update wiki page
   - create surveys
 
 We:

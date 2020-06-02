@@ -80,26 +80,26 @@ CW 21: Establish Timeline, work on open PRs, initial survey &
 discussion  
 CW 22: Survey existing Serato Flip uses & collect input
 
-### June - Design Phase:
+**June**
 
-CW 23: Specify the Macro format  
-CW 24: Design & integrate into existing skins  
-CW 25: *Buffer*  
+CW 23: Work out details of the format  
+CW 24: Start implementation of data structures, controls  
+CW 25: Create recording infrastructure  
 ~~CW 26~~ (blocked)
 
 Deliverable: Format specification
 
-### July - Coding Phase:
+**July**
 
-CW 27: Implement the data structures  
-CW 28: Implement the controls  
+CW 27: Design controls & integrate into a skin  
+CW 28: *Buffer*  
 CW 29: Create recording infrastructure  
 CW 30: Tie it all together
 
 Deliverable: Implemented controls with mapping to a skin and controller,
 ideally working recording system
 
-### August - Refinement Phase:
+**August**
 
 CW 31: Refine UX & Integrate into other Skins  
 CW 32: Enable Import from Serato & explore possibilities for sharing  

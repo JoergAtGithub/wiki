@@ -87,17 +87,17 @@ CW 24: Start implementation of data structures, controls
 CW 25: Create recording infrastructure  
 ~~CW 26~~ (blocked)
 
-Deliverable: Format specification
+Deliverable: Format specification with examples
 
 **July**
 
 CW 27: Design controls & integrate into a skin  
-CW 28: *Buffer*  
-CW 29: Create recording infrastructure  
-CW 30: Tie it all together
+CW 28: Tie it all together  
+CW 29: *Buffer*  
+CW 30: *Buffer*
 
 Deliverable: Implemented controls with mapping to a skin and controller,
-ideally working recording system
+working recording system
 
 **August**
 

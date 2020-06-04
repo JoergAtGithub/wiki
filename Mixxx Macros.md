@@ -134,19 +134,12 @@ results into this wiki page when appropriate.
 
 ### CW 23
 
-Tu:
-
   - revisited & summarized Zulip discussion in wiki page (timeline,
     details)
   - sifted through reddit
     (<https://www.reddit.com/search?q=serato%20flip>) - summary for now
     in Notion
-
-We:
-
-Thu:
-
-Fr:
+  - plan community call
 
 ### CW 24
 

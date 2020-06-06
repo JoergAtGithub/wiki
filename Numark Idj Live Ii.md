@@ -33,13 +33,15 @@ The "SET" buttons set the cue point and the arrow buttons jump to the
 cue point. They do not change behavior depending on whether the track is
 playing or paused.
 
-The sync LEDs do nothing by default. To make them flash with the beat,
-add these two rows to "Output mappings" in the controller settings:
+By default, the sync LEDs only light up when pressed or locked. To make
+them flash with the beat, go to "Output mappings" in the controller
+settings. Look for these rows, and replace "sync\_enabled" with
+"beat\_active":
 
-| Channel | Opcode  | Control | On Value | Off Value | Action                    | Min | Max |
-| ------- | ------- | ------- | -------- | --------- | ------------------------- | --- | --- |
-| 1       | Note On | 0x40    | 0x7F     | 0x00      | \[Channel1\],beat\_active | 0.5 | 1   |
-| 1       | Note On | 0x47    | 0x7F     | 0x00      | \[Channel2\],beat\_active | 0.5 | 1   |
+| Channel | Opcode  | Control | On Value | Off Value | Action                     | Min | Max |
+| ------- | ------- | ------- | -------- | --------- | -------------------------- | --- | --- |
+| 1       | Note On | 0x40    | 0x7F     | 0x00      | \[Channel1\],sync\_enabled | 0.5 | 1   |
+| 1       | Note On | 0x47    | 0x7F     | 0x00      | \[Channel2\],sync\_enabled | 0.5 | 1   |
 
 ### Jog wheels and scratch button
 

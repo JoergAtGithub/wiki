@@ -684,7 +684,7 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 
 | Device                                                                                                                      | Price (USD) \[37\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
-| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | likely \[38\] |
+| [Allen & Heath Xone 23C](http://www.allen-heath.com/ahproducts/xone-23c/)                                                   | $400               | 2     | 2             | 1         | analog                   | yes \[38\]    |
 | [Native Instruments Traktor Kontrol Z2](http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/) | $600               | 2     | 2             | 1         | ?                        | likely \[39\] |
 | [Allen & Heath Xone 43C](http://www.allen-heath.com/ahproducts/xone43C/)                                                    | $1000              | 4     | 4             | 1         | analog                   | likely \[40\] |
 | [Pioneer DJM-750](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-750)                                                 | $1000              | 4     | 2             | 1         | digital                  | ?             |
@@ -846,9 +846,9 @@ seamless transitions between DJs. \<sortable 2=numeric\>
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-38. This device is USB class compliant, so it should work without any
-    special driver. However, there is no information about anyone using
-    it with Linux online.
+38. Needs a udev rule to configure it as a 4 input + 4 output mixer for
+    DVS - see this
+    [gist](https://gist.github.com/timnugent/ed65a79b2bd6c63788bfada3624756a4)
 
 39. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using

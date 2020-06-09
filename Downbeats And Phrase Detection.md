@@ -119,25 +119,12 @@ key, this would be especially useful for beats of type phrases.
 
 ## Schedule Planning
 
-2 six-weeks sprints.
+3-1 month phases.
 
-**First sprint:** Up and running  
-**Main objectives:**  
-Create instanciable rhythm detector analyzer class and add related
-preferences for tempo detector, the user should be able to turn on/off
-beat detection, downbeat detection, phrase detection, and section
-detection.  
-Solid, testable, and self-contained improvements on the current beat and
-tempo detector. Currently, the underlying beatmap feature does not work
-well. It struggles with constant tempos as it does not account for small
-unintended fluctuations in time. Having the BPM jumping around is a
-terrible user-experience and it also messes with the sync feature. It
-also struggles by detecting a different tempo than the intended one on
-parts without a steady drum.  
-Implement proof-of-concept of the other methods.
+**First month**
 
-**Week 1:** Implement a multi-feature beat detector using a combination
-of the OnSetFunctions provided by the QM library.  
+~~**Week 1:** Implement a multi-feature beat detector using a
+combination of the OnSetFunctions provided by the QM library.  
 The available functions are "complex domain", which is the most
 versatile and the one Mixxx current uses, "spectral difference" which is
 appropriate for percussive recordings, "phase deviation" which performs
@@ -146,71 +133,54 @@ for identifying percussive onsets in mixed music.
 The new detector will consider at least 2 more functions with a
 combination of the default one and compare their outputs for deriving a
 final and more reliable list of beat positions and a confidence value
-for each beat based on the agreement of the different methods.
+for each beat based on the agreement of the different methods. ~~
+**~~Week 2:~~ Moved to week 1** Implement a BPM frequency histogram and
+compute statistics descriptors. With the frequency of all tempo
+estimates and dispersion measures, an algorithm should be able to infer
+unintended fluctuations around a center value. It should only return the
+tempo of these center values and anchor them to the first beat where
+this tempo happens. If the track has a constant tempo this should be the
+only BPM value, if the track has an accelerando or ritardando part the
+algorithm will not able to identify a center value, and the fluctuation
+of the tempo will be captured. When it stabilizes on a new tempo, or for
+sudden changes the new value will be added to the first beat that has
+the new tempo. **Done**
+[\#2847](https://github.com/mixxxdj/mixxx/pull/2847)
 
-**Week 2:** Implement a BPM frequency histogram and compute statistics
-descriptors. With the frequency of all tempo estimates and dispersion
-measures, an algorithm should be able to infer unintended fluctuations
-around a center value. It should only return the tempo of these center
-values and anchor them to the first beat where this tempo happens. If
-the track has a constant tempo this should be the only BPM value, if the
-track has an accelerando or ritardando part the algorithm will not able
-to identify a center value, and the fluctuation of the tempo will be
-captured. When it stabilizes on a new tempo, or for sudden changes the
-new value will be added to the first beat that has the new tempo.
+**Week 2:** Implement a draft of downbeat and measure detection with the
+QM Downbeat plugin, at this point only 4/4 time signatures will be
+considered. Explore how to simultaneous track beat and downbeat
+positions, or at least share low-level audio processing between
+analysis. Update \#2847 and address review commentary.
 
-**Week 3:** Implement a draft of section and phrases detection using the
-QM Segmenter plugin and measure detection with the QM Downbeat plugin,
-at this point only 4/4 time signatures will be considered.
+**Week 3:** Implement a draft of sections and phrases analyses using the
+QM Segmenter plugin.
 
-**Week 4:** Prepare a Pull Request with the new features. This will have
-a complete description, production code, unit tests, and accuracy
-benchmarks. This will be used as an objective measure for the first
-evaluation of Google.
+**Week 4:** Fix and update any opened PRs but mostly reserved for
+research. Dive into the SFFT, Note Onset Detection, and Hiden Markov
+Models. After a quick glimpse of the code of all levels of the rhythm
+structure, I will take the time to research more about the main
+algorithms at that code and how to tie them all together in the next
+phase. The short-time Fourier transform for example is a quintessential
+technique for audio processing, and its resolution has a profound impact
+on the extraction of audio features. The resulted spectogram can also be
+further processed in several ways before extracting any features. With
+logarithmic compression being an obvious idea because hearing and notes
+frequencies are a log function. Another interesting idea is to have an
+adaptive windowing with a step size the roughly map a beat periodicity.
+These ideas are
+presented[here](http://resources.mpi-inf.mpg.de/departments/d4/teaching/ss2010/mp_mm/2010_MuellerGrosche_Lecture_MusicProcessing_BeatTracking_handout.pdf)
+and discussed in more details at the
+[book](https://www.springer.com/gp/book/9783319219448) Audio features
+are the input of the Note Onset Detection function which is the basis of
+the beat tracking algorithm. A very large and comprehensive paper
+discussing different audio features for computing it are discussed
+[here](https://ieeexplore.ieee.org/document/1495485) Hidden Markov
+Models are a powerful probabilistic method used by the QM segmenter and
+it can be used for meter recognition and beat tracking as well as
+described
+[here](https://hal.archives-ouvertes.fr/hal-00655779v1/document).
 
-**Week 5:** Implement an algorithm that programmatically optimizes the
-Segmenter parameters for section detection. The first step is
-determining the minimum length of the segments by using the tempo
-information and the arbitrary rule that a section should be at least 8
-bars. Then optimize the number of segments types with the silhouette
-method.
+**Second and Third months.**
 
-**week 6:** Implement an algorithm that optimizes Segmenter for phrase
-detection. The chosen approach will be to use the segments detected in
-the previous step and fed them in as independent inputs, constraining
-the minimum length at the measure length, and optimizing the number of
-segments types iteratively.
-
-**Second sprint:** An holistic approach to rhythm detection  
-**Main objectives:**  
-Implement a reasonable accurately meter detection algorithm to complete
-the features of the rhythm analyzer.  
-Explore the synergy of all levels of the rhythm analyzer to improve
-accuracy and optimize running time and memory usage.
-
-**Week 1:** Dig into the Segmenter code. Use downbeat positions for
-starting new segments. Explore if adding new parameters such as a
-maximum segment length or a maximum number of segments improves the
-phrase and section detection.
-
-**Week 2:** Prepare a PR for improved section and phrase detection. This
-will have a complete description, production code, unit tests, and
-accuracy benchmarks. This will be used as an objective measure for the
-second evaluation of Google.
-
-**Week 3:** Implement meter detection by modifying the QM downbeat
-plugin. Using it's already computed autocorrelation functions and
-dynamic programming to find the best time signature.
-
-**Week 4:** Benchmark and accuracy tunning. Test the meter and downbeat
-detection against professional drummers annotations on the GTZAN
-dataset. See what kind of mistakes are happening and fix them if
-possible.
-
-**Week 5:** Optimize the analyzers to remove redundancies and shared
-computations that can be reutilized between them.
-
-**Week 6:** Prepare final PR for the complete rhythm detection analyzer.
-This will have a complete description, production code, unit tests, and
-accuracy benchmarks. This will be used as an objective measure for the
-final evaluation of Google.
+Yet to be determined.

@@ -134,6 +134,7 @@ The new detector will consider at least 2 more functions with a
 combination of the default one and compare their outputs for deriving a
 final and more reliable list of beat positions and a confidence value
 for each beat based on the agreement of the different methods. ~~
+
 **~~Week 2:~~ Moved to week 1** Implement a BPM frequency histogram and
 compute statistics descriptors. With the frequency of all tempo
 estimates and dispersion measures, an algorithm should be able to infer

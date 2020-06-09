@@ -146,6 +146,11 @@ results into this wiki page when appropriate.
 
 ### CW 24
 
+  - describe data format
+  - actively survey DJs
+
+### CW 25
+
 Mo:
 
 Tu:

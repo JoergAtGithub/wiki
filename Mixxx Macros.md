@@ -27,7 +27,26 @@ store them in a rack, to be used when it gets hot.
 
 ### Data Format
 
-  - reference cues vs timestamps
+A Macro needs to have a name and id, needs to be coupled to a track and
+consists of an array of actions.
+
+#### Actions
+
+Each actions has some data and a type, the essential ones (as present in
+Serato Flip) being censor and jump. Loop is also a consideration, but
+bears some more questions: Should it use the same loop system the user
+uses? If not, aren't jumps sufficient?
+
+A big question is whether each action has its own start-point, or
+whether there is a "wait" action that waits for a cue or timestamp to
+occur. The latter may make sense in scripting, since it allows to easily
+chain actions, but when recording there can hardly be a case where two
+actions wouldn't be separated by a wait action. And if that is the case,
+each action might as well have its own start-point - which might be a
+hotcue or a timestamp, as outlined below.
+
+#### Referencing cues vs timestamps
+
   - timestamps: used by Serato Flip, persistent, but hardly editable;
     can break when track offset changes (when music file is swapped out)
   - cues: can be moved, but that could also [accidentally mess up a

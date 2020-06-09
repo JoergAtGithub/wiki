@@ -24,9 +24,10 @@ thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13376)
 
 #### Notes about (in)compatibility with Windows, Linux, and macOS.
 
-Tested on Linux Ubuntu 18.04LTS with Mixxx 2.2.3 (build 2.2 r6750)
+Tested with Mixxx 2.2.3 (build 2.2 r6750) on Linux Ubuntu 18.04LTS and
+macOS Catalina 10.15.4
 
-Should probably work flawlessly with Windows and macOS (not tested).
+Should probably work flawlessly with Windows too (not tested).
 
 USB class compliant
 

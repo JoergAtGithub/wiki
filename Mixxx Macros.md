@@ -142,7 +142,7 @@ results into this wiki page when appropriate.
   - sifted through reddit
     (<https://www.reddit.com/search?q=serato%20flip>) - summary for now
     in Notion
-  - plan community call
+  - organized community call
 
 ### CW 24
 

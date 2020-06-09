@@ -55,8 +55,11 @@ Suggestions: Spin, Routines, Twist, MicroFlow, Mow
 and
 [well-received](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197421948)
 - [we don't need to sell it
-either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).
-Only complaint is that it might be a little bland
+either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).  
+It sounds a little bland though, and doesn't capture the whole idea of
+using it to create non-destructive edits of a track. It also doesn't
+blend well with other terms, such as "Routine Mode" (for recording a
+routine).
 
 ### Discussion
 

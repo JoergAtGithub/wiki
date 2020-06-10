@@ -13,6 +13,10 @@ Linux and Mac.
 The Windows release of OBS Studio supports Windows 8, 8.1 and 10. The
 installation is done via the usuall windows installer.
 
+**Installing on Mac**
+
+Just follow the instructions from the official download page.
+
 **Installing on Linux**
 
 The Linux release is available officially for Ubuntu 18.04 and newer.

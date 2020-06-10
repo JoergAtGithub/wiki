@@ -60,9 +60,10 @@ local rtmp server or just make a file output.
 
 Here you can find and adjust the settings if you are recording or
 "streaming" to an rtmp server. Using nginx with rtmp should make it
-possible to setup this quite easily. If you use docker, Tiangolo has
-provided an image with a ready-made solution for a server with rtmp
-module -
+possible to setup this quite easily.
+
+If you use docker, Tiangolo has provided an image with a ready-made
+solution for a server with rtmp module -
 [tiangolo/nginx-rtmp](https://hub.docker.com/r/tiangolo/nginx-rtmp/)
 
 **Settings -\> Video**

@@ -40,7 +40,7 @@ there will be also no sources setup as shown here:
 
 [[/media/obs_sources.png|]]
 
-One scene you could create is by inserting a picture or a screencast
+Once scene you could create is by inserting a picture or a screencast
 from Mixxx.
 
   - If you want to insert a picture, just click on the "+" and select

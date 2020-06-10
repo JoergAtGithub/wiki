@@ -25,6 +25,6 @@ After installing FFmpeg, install OBS Studio using:
     sudo add-apt-repository ppa:obsproject/obs-studio
     sudo apt install obs-studio
 
-You can find more information about building and install OBS Studio on
-other Linux distros
+You can find more information about building and installing OBS Studio
+on other Linux distros
 [here](https://github.com/obsproject/obs-studio/wiki/Install-Instructions).

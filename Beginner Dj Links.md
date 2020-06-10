@@ -34,9 +34,10 @@ a DJ program.
 ## Using Mixxx
 
   - [Mixxx DJ Hardware Guide](hardware%20compatibility)
-  - [Mixxx Manual](http://mixxx.org/manual/latest/)
-  - [Setting Your Levels Properly (Gain
-    Staging)](http://mixxx.org/manual/latest/chapters/djing_with_mixxx.html#setting-your-levels-properly-gain-staging)
+  - [Broadcasting with OBS \* \[\[http:*mixxx.org/manual/latest/|Mixxx
+    Manual\]\] \*
+    \[\[http:*mixxx.org/manual/latest/chapters/djing\_with\_mixxx.html\#setting-your-levels-properly-gain-staging|Setting
+    Your Levels Properly (Gain Staging)](broadcasting%20with%20obs)
 
 ## Tips, tutorials, and DJing websites
 

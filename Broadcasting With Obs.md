@@ -18,12 +18,12 @@ installation is done via the usuall windows installer.
 The Linux release is available officially for Ubuntu 18.04 and newer.
 FFmpeg is required.
 
-\`sudo apt install ffmpeg\`
+    sudo apt install ffmpeg
 
 After installing FFmpeg, install OBS Studio using:
 
-\`\`\` sudo add-apt-repository ppa:obsproject/obs-studio sudo apt
-install obs-studio \`\`\`
+    sudo add-apt-repository ppa:obsproject/obs-studio
+    sudo apt install obs-studio
 
 You can find more information about building and install OBS Studio on
 other Linux distros

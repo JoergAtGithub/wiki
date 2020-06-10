@@ -29,7 +29,7 @@ You can find more information about building and installing OBS Studio
 on other Linux distros
 [here](https://github.com/obsproject/obs-studio/wiki/Install-Instructions).
 
-## Recording/Broadcasting with Mixxx
+## Setting up the screne with OBS Studio
 
 When you first start OBS Studio, a default scene will be created and
 there will be also no sources setup as shown here:

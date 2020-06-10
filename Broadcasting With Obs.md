@@ -35,3 +35,18 @@ When you first start OBS Studio, a default scene will be created and
 there will be also no sources setup as shown here:
 
 [[/media/obs_sources.png|]]
+
+One scene you could create is by inserting a picture or a screencast
+from Mixxx.
+
+  - If you want to insert a picture, just click on the "+" and select
+    "Image". 
+  - If you want to insert a screencast, just click on the "+" and select
+    "Screen Capture"
+
+Do not forget to also insert the audio input from Mixxx by clicking on
+the "+" and selecting audio input.
+
+A scene could look like this:
+
+[[/media/obs_mixxx.png|]]

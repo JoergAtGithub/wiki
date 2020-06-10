@@ -50,3 +50,22 @@ the "+" and selecting audio input.
 A scene could look like this:
 
 [[/media/obs_mixxx.png|]]
+
+## Video and streaming settings
+
+OBS Studio is able to stream to a lot of services, but also stream to a
+local rtmp server or just make a file output.
+
+**Settings -\> Output**
+
+Here you can find and adjust the settings if you are recording or
+"streaming" to an rtmp server. Using nginx with rtmp should make it
+possible to setup this quite easily. If you use docker, Tiangolo has
+provided an image with a ready-made solution for a server with rtmp
+module -
+[tiangolo/nginx-rtmp](https://hub.docker.com/r/tiangolo/nginx-rtmp/)
+
+**Settings -\> Video**
+
+Here you can make basic settings about the canvas (your scene) and the
+fps.

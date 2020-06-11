@@ -17,6 +17,10 @@ installation is done via the usuall windows installer.
 
 Just follow the instructions from the official download page.
 
+MacOS users that manage packages with Homebrew can also be install with:
+
+    brew cask install obs
+
 **Installing on Linux**
 
 The Linux release is available officially for Ubuntu 18.04 and newer.

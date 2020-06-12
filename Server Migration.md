@@ -138,7 +138,7 @@ Jenkins.
 1.  Get SSH access to the download server
 2.  Modify Travis CI config to deploy build artifacts
 
-### Download Server
+## Download Server
 
 Currently hosted by Garth, can stay as-is but we needs credentials to
 deploy files from CI.

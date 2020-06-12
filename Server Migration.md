@@ -3,8 +3,8 @@
 Mixxx is currently in a bad situation because too much of it's critical
 infrastructure in relying on private servers and single individuals
 (i.e. a lot of important key infrastructure is maintained by few
-persons, which leads to a \[bad "bus
-factor"\](<https://en.wikipedia.org/wiki/Bus_factor>)).
+persons, which leads to a [bad "bus
+factor"](https://en.wikipedia.org/wiki/Bus_factor)).
 
 Also, maintaing custom servers is time-intensive and boring. We need to
 make sure everything is updated regularily or risk being hacked.

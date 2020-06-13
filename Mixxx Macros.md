@@ -25,6 +25,24 @@ store them in a rack, to be used when it gets hot.
 
 ## Details
 
+### Use cases
+
+Adapted from
+<https://m.facebook.com/story.php?story_fbid=10152750292038764&id=11864088763>
+
+1.  Making edits 
+    1.  basic rearranging of tracks to create things like intros and
+        outros, extend breaks, shorten or lengthen tracks, swap phrases
+    2.  create "clean"/censored version of a track
+    3.  create transition to another track e.g. double time version
+    4.  create new beats from cue point drumming
+2.  Live-looping of cue point drumming or tone play - being able to drum
+    out a pattern using the cue points in a track and then seamlessly
+    loop it at the touch of a button.
+
+\-\> You never need the Macro recording controls and the audio recording
+controls at the same time, so maybe they can be remapped.
+
 ### Data Format
 
 A Macro needs to have a name and id, needs to be coupled to a track and

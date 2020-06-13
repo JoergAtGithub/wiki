@@ -186,7 +186,7 @@ results into this wiki page when appropriate.
 ### CW 24
 
   - document data format ideas
-  - create & send out survey
+  - create & send out [survey](https://forms.gle/oUTHKUCQcczUZtHA8)
   - finish remaining open PRs
 
 ### CW 25

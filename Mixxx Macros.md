@@ -167,8 +167,9 @@ results into this wiki page when appropriate.
 
 ### CW 24
 
-  - describe data format
-  - actively survey DJs
+  - document data format ideas
+  - create & send out survey
+  - finish remaining open PRs
 
 ### CW 25
 

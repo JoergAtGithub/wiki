@@ -408,6 +408,13 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Change Log
 
+**Release for Mixxx 2.3**
+
+  - GIT commit waiting approval yet
+  - added Library sort function for Artist, Title, BPM, Key
+  - added Softtakeover for Pitch faders
+  - some minor code cleaning and improvements
+
 **Release for Mixxx 2.2.4**
 
   - The current version of Mixxx does not yet support sort function in

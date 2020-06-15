@@ -3,6 +3,18 @@
 This page has some resources to learn background information that may
 help you contribute to Mixxx.
 
+## Basics
+
+We recommend you review these sections of the Qt documentation to get
+familiar with aspects of Qt that we use heavily:
+
+  - [Signals &
+    Slots](http://qt-project.org/doc/latest/signalsandslots.html)
+
+If you're not familiar with C++, [The Cherno
+Project](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+on YouTube has a good series dedicated to the core concepts.
+
 As a start, we highly recommend these resources from the Xiph.org
 Foundation for background information on digital and analog signal
 processing:

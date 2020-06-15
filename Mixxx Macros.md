@@ -194,8 +194,8 @@ results into this wiki page when appropriate.
 Mo:
 
   - Wiki Improvements
-  - Get acquainted with code
-    (<https://github.com/mixxxdj/mixxx/pull/2870>)
+  - [Get more acquainted with
+    code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
 
 Tu:
 

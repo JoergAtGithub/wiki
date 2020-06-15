@@ -19,16 +19,6 @@ trial and error even if you don't know these. It will help significantly
 if you have some experience with the [Qt Framework](http://doc.qt.io/)
 which Mixxx uses extensively.
 
-We recommend you review these sections of the Qt documentation to get
-familiar with aspects of Qt that we use heavily:
-
-  - [Signals &
-    Slots](http://qt-project.org/doc/latest/signalsandslots.html)
-
-If you're not familiar with C++, [The Cherno
-Project](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
-on YouTube has a good series dedicated to the core concepts.
-
 We also highly recommend that you use a C++ IDE rather than a text
 editor. Mixxx is a huge project spread across hundreds of source code
 files. IDEs index the entire code tree and allow you to jump from where
@@ -39,7 +29,8 @@ what it is doing. We have [guides](developer%20tools#using%20IDEs) for
 setting up several IDEs to work on Mixxx, but feel free to use whatever
 IDE you prefer.
 
-Check out the [Learning resources](Learning%20resources)
+Please check out the [Learning resources](Learning%20resources) page to
+learn about the basics and underlying concepts
 
 ## Core Infrastructure
 

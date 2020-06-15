@@ -176,7 +176,14 @@ this wiki, please fix it.
   - [Google Summer of Code](gsoc) student projects and information.
   - [Google Code-in](gci) task list and information
 
-### Archives
+### Specs
+
+  - [Pitch percentages for semitones and
+    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
+  - [Engine Library format](Engine%20Library%20format) (for Denon Prime
+    hardware)
+
+## Archives
 
   - [Press](Press) about Mixxx
   - [Developer meeting archives](meetings%20archive)
@@ -184,10 +191,3 @@ this wiki, please fix it.
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
-
-### Other Resources
-
-  - [Pitch percentages for semitones and
-    notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Engine Library format](Engine%20Library%20format) (for Denon Prime
-    hardware)

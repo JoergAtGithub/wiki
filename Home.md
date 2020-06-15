@@ -132,18 +132,27 @@ this wiki, please fix it.
 ### Getting Started
 
   - [Contribution Guidelines](Contribution%20Guidelines)
+  - [Coding Guidelines](Coding%20Guidelines)
+
+<!-- end list -->
+
   - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
     architecture
+  - [Developer Tools](Developer%20Tools)
   - [Using Git](Using%20Git)
+  - [Bug Tracker](launchpad_bugs)
+
+<!-- end list -->
+
   - [Bugfix Workflow](Bugfix%20Workflow) 
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
-  - [Bug Tracker](launchpad_bugs)
-  - [Coding Guidelines](Coding%20Guidelines)
-  - [Developer Tools](Developer%20Tools)
-  - [Learning Resources](Learning%20Resources)
   - [Code profiling](Profiling) to see what parts of the code are using
     more CPU time than others
+
+<!-- end list -->
+
+  - [Learning Resources](Learning%20Resources)
 
 ### Development Topics
 

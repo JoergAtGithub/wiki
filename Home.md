@@ -162,12 +162,12 @@ this wiki, please fix it.
 
 ### Archives
 
+  - [Press](Press) about Mixxx
   - [Developer meeting archives](meetings%20archive)
   - Bazaar (legacy) code browsing on
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
-  - [Press](Press) about Mixxx
 
 ### Other Resources
 

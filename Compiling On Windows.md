@@ -3,8 +3,9 @@ page](Build%20Windows%20installer).)*
 
 # Building Mixxx on Windows
 
-*Note: Mixxx is fading out SCons in favor of [cmake](https://cmake.org)
-starting in 2.3 and will completely switch in 2.4. This page isn't
+*FIXME Mixxx is fading out SCons in favor of [cmake](https://cmake.org)
+starting in 2.3 and [will completely switch
+in 2.4](https://github.com/mixxxdj/mixxx/pull/2777). This page isn't
 updated with the appropriate instructions yet.*
 
 ## Programs to install

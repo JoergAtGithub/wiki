@@ -206,9 +206,8 @@ included below:
     Effect Unit is enabled
   - Holding Shift and pressing the FX Select button will scroll through
     the Effect Unit's effect chains
-  - The Par 1 and Par 2 knobs will change the first and second
-    parameters, respectively, for the first effect in the Effect Unit's
-    effect chain
+  - The Par 1 and Par 2 knobs control the meta knob and the effect mix
+    level , respectively, for the Effect Chain
 
 ### Slip Mode
 

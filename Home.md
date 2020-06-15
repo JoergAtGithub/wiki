@@ -17,25 +17,35 @@ this wiki, please fix it.
 
 ## User Documentation
 
+### Getting Started
+
   - [Beginner DJ Links](Beginner%20DJ%20Links)
   - [DJ Hardware Guide](Hardware%20compatibility)
-  - [Manual](http://mixxx.org/manual/latest/)
+  - [Manual](http://mixxx.org/manual)
+
+### Troubleshooting
+
   - [Troubleshooting](Troubleshooting)
   - [Finding the Mixxx.log file](Finding%20the%20Mixxx.log%20file) can
     be helpful when Mixxx isn't working right. Please attach this file
     to bug reports and forum posts when asking for help.
   - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
+
+### Getting Involved
+
   - [Reporting bugs](Reporting%20bugs) is a great way to contribute to
     Mixxx, especially if you don't have programming skills
   - [Testing](Testing) the latest features helps speed up development 
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
-  - [Live Calls with Skype and
-    Mixxx](https://www.primcast.com/support/live-calls-with-skype-and-mixxx/)
+
+### Extras
+
   - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
-  - [Command line options](Command%20line%20options)
+  - [Live Calls with Skype and
+    Mixxx](https://www.primcast.com/support/live-calls-with-skype-and-mixxx/)
   - [MIDI clock output](MIDI%20clock%20output)
 
 ## Community Resources

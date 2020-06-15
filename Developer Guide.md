@@ -1,17 +1,15 @@
 # Mixxx Developer Guide
 
-# Overview
-
 The purpose of this guide is to give you, our intrepid contributor, an
 overview of the Mixxx codebase. Mixxx is a big project with millions of
 lines of code so it can be daunting at first. If you know how to get
 around then it really isn't that big and scary.
 
-**This guide is a work in progress. If you have any questions, join the
+*This guide is a work in progress. If you have any questions, join the
 [Mixxx Zulip chat](https://mixxx.zulipchat.com/) to get live help from
-developers.**
+developers*
 
-# Prerequisites
+## Prerequisites
 
 First, you will need to download the code of Mixxx [using
 Git](using%20Git).
@@ -52,7 +50,7 @@ background information on digital and analog signal processing:
   - [24/192 Music Downloads are Very Silly
     Indeed](https://xiph.org/~xiphmont/demo/neil-young.html)
 
-# main.cpp
+## main.cpp
 
 As all C++ programs usually do, Mixxx starts up with a `main` function
 located in `src/main.cpp`. It looks roughly like this:
@@ -69,7 +67,7 @@ of what it does is:
   - Interpret command line arguments
   - Create a `MixxxApp` class which is what starts up the rest of Mixxx.
 
-# MixxxApp Class
+## MixxxApp Class
 
 `MixxxApp` is the class that ties everything Mixxx does together. Mixxx
 is made up of a variety of subsystems that all accomplish different
@@ -92,7 +90,7 @@ Among the things it does (in no particular order) are:
   - Load and save the Mixxx config file.
   - Initializes and displays the Mixxx GUI
 
-# Core Infrastructure
+## Core Infrastructure
 
 These are the fundamental building blocks used almost everywhere in
 Mixxx. You should skim these first so that you aren't confused when you
@@ -101,7 +99,7 @@ see them in other sections.
   - [Control System (ControlObjects)](developer_guide_control)
   - [Config System (ConfigObject, ConfigKey)](developer_guide_config)
 
-# Major Subsystems
+## Major Subsystems
 
   - [Library](developer_guide_library)
   - [Shoutcast](developer_guide_shoutcast)
@@ -114,9 +112,10 @@ see them in other sections.
   - [Analysers (beat detection, key detection, waveform analysis,
     replaygain, etc.)](developer_guide_analysers)
   - [Vinyl Control](developer_guide_vinyl_control)
-  - [Controllers (MIDI, HID, etc.)](developer_guide_controllers)
+  - [Controllers (MIDI, HID,
+    etc.)](https://www.mixxx.org/wiki/doku.php/start#controller_mapping_documentation)
   - [Keyboard Control](developer_guide_keyboard)
   - [Preferences Dialogs](developer_guide_preferences)
   - [Waveform](developer_guide_waveform)
-  - [Skins](developer_guide_skins)
+  - [Skins](start#skin_documentation)
   - [GUI Widgets (non-skin)](developer_guide_widgets)

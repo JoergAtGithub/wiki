@@ -193,6 +193,30 @@ results into this wiki page when appropriate.
 
 Mo:
 
+  - Wiki Improvements
+  - Get acquainted with code
+    (<https://github.com/mixxxdj/mixxx/pull/2870>)
+
+Tu:
+
+We:
+
+Thu:
+
+Fr:
+
+### CW 26
+
+Mo:
+
+Thu:
+
+Fr:
+
+### CW 27
+
+Mo:
+
 Tu:
 
 We:

@@ -196,6 +196,8 @@ Mo:
   - Wiki Improvements
   - [Get more acquainted with
     code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
+  - Revisit [reddit
+    post](https://www.reddit.com/r/DJs/comments/h8av2o/reimagining_serato_flip)
 
 Tu:
 

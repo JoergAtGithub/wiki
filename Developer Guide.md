@@ -1,7 +1,5 @@
 # Mixxx Developer Guide
 
-Welcome to the Mixxx Developer Guide.
-
 # Overview
 
 The purpose of this guide is to give you, our intrepid contributor, an

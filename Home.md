@@ -147,18 +147,22 @@ this wiki, please fix it.
 
 ### Development Topics
 
-  - [To-do list for the next major release](2.2.0_todo) - Help us get
-    the next release ready\!
   - [Setting-up CI on your own
     fork](Setting-up%20CI%20on%20your%20own%20fork)
-  - [Development Roadmap](Development%20Roadmap)
-  - [Feature Design Documents](feature_discussion)
-  - [Google Summer of Code](gsoc) student projects and information.
-  - [Google Code-in](gci) task list and information
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
   - [Iconic Tracks](Iconic%20Tracks) A list of tracks, useful for
     discussing Mixxx features.
+
+<!-- end list -->
+
+  - [Development Roadmap](Development%20Roadmap)
+  - [Feature Design Documents](feature_discussion)
+
+<!-- end list -->
+
+  - [Google Summer of Code](gsoc) student projects and information.
+  - [Google Code-in](gci) task list and information
 
 ### Archives
 

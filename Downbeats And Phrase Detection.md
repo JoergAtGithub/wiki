@@ -135,41 +135,44 @@ combination of the default one and compare their outputs for deriving a
 final and more reliable list of beat positions and a confidence value
 for each beat based on the agreement of the different methods. ~~
 
-**~~Week 2:~~ Moved to week 1** Implement a BPM frequency histogram and
-compute statistics descriptors. With the frequency of all tempo
-estimates and dispersion measures, an algorithm should be able to infer
-unintended fluctuations around a center value. It should only return the
-tempo of these center values and anchor them to the first beat where
-this tempo happens. If the track has a constant tempo this should be the
-only BPM value, if the track has an accelerando or ritardando part the
-algorithm will not able to identify a center value, and the fluctuation
-of the tempo will be captured. When it stabilizes on a new tempo, or for
-sudden changes the new value will be added to the first beat that has
-the new tempo. **Done**
-[\#2847](https://github.com/mixxxdj/mixxx/pull/2847)
+**~~Week 2:~~ Week 1** Implement a BPM frequency histogram and compute
+statistics descriptors. With the frequency of all tempo estimates and
+dispersion measures, an algorithm should be able to infer unintended
+fluctuations around a center value. It should only return the tempo of
+these center values and anchor them to the first beat where this tempo
+happens. If the track has a constant tempo this should be the only BPM
+value, if the track has an accelerando or ritardando part the algorithm
+will not able to identify a center value, and the fluctuation of the
+tempo will be captured. When it stabilizes on a new tempo, or for sudden
+changes the new value will be added to the first beat that has the new
+tempo. **Done** [\#2847](https://github.com/mixxxdj/mixxx/pull/2847)
 
 **Week 2:** Implement a draft of downbeat and measure detection with the
 QM Downbeat plugin, at this point only 4/4 time signatures will be
 considered. Explore how to simultaneous track beat and downbeat
 positions, or at least share low-level audio processing between
-analysis. Update \#2847 and address review commentary.
+analysis. ~~Update \#2847 and address review commentary~~. Created the
+new rhythm detector class with downbeats and beats detection. Created
+the preference window for the rhythm detector.
 
-**Week 3:** Implement a draft of sections and phrases analyses using the
-QM Segmenter plugin.
+**Week 3:** Implement sections and phrases analyses using the QM
+Segmenter plugin on the new rhythm detector. Actually use the
+preferences of the new detector.
 
-**Week 4:** Fix and update any opened PRs but mostly reserved for
-research. Dive into the SFFT, Note Onset Detection, and Hiden Markov
-Models. After a quick glimpse of the code of all levels of the rhythm
-structure, I will take the time to research more about the main
-algorithms at that code and how to tie them all together in the next
-phase. The short-time Fourier transform for example is a quintessential
-technique for audio processing, and its resolution has a profound impact
-on the extraction of audio features. The resulted spectogram can also be
-further processed in several ways before extracting any features. With
-logarithmic compression being an obvious idea because hearing and notes
-frequencies are a log function. Another interesting idea is to have an
-adaptive windowing with a step size the roughly map a beat periodicity.
-These ideas are
+**Week 4:** Prepare the first-month deliverable. Also, do more research:
+
+Dive into the SFFT, Note Onset Detection, and Hiden Markov Models. After
+a quick glimpse of the code of all levels of the rhythm structure, I
+will take the time to research more about the main algorithms at that
+code and how to tie them all together in the next phase. The short-time
+Fourier transform for example is a quintessential technique for audio
+processing, and its resolution has a profound impact on the extraction
+of audio features. The resulted spectogram can also be further processed
+in several ways before extracting any features. With logarithmic
+compression being an obvious idea because hearing and notes frequencies
+are a log function. Another interesting idea is to have an adaptive
+windowing with a step size the roughly map a beat periodicity. These
+ideas are
 presented[here](http://resources.mpi-inf.mpg.de/departments/d4/teaching/ss2010/mp_mm/2010_MuellerGrosche_Lecture_MusicProcessing_BeatTracking_handout.pdf)
 and discussed in more details at the
 [book](https://www.springer.com/gp/book/9783319219448) Audio features
@@ -182,6 +185,41 @@ it can be used for meter recognition and beat tracking as well as
 described
 [here](https://hal.archives-ouvertes.fr/hal-00655779v1/document).
 
-**Second and Third months.**
+**First Month deliverable** A pull request for the new rhythm detector
+capable of detecting beats, downbeats, phrases, and sections, including
+a complete description, production code, test code, and a comparative
+benchmark in the form of a spreadsheet.
 
-Yet to be determined.
+**Second month**
+
+**Week 1:** Improvements on downbeat detection. Explore how to use code
+from the beat detection (autocorrelation function and Viterbi algorithm)
+for time signature recognition.
+
+**Week 2:** Improvements on downbeat detection. Explore how to use code
+from segmenter (hidden Markov models) for time signature recognition.
+
+**Week 3:** Improvements on phrases detection.
+
+**Week 4:** Improvements on sections detection.
+
+**Second-month deliverable** A pull request with the improvements on the
+rhythm detector, this version should be capable of handling time
+signatures different from 4/4 and should have an overall better accuracy
+and performance.
+
+**Third month**
+
+**Week 1:** Integration with Harshit progress.
+
+**Week 2:** Code cleaning, performance optimization, accuracy
+benchmarks.
+
+**Week 3:** Finish up any pending work for the final deliverable.
+
+**Week 4:** Write-up on this wiki and/or a blog post a
+tutorial/introduction on beat/downbeat/phrases and section detection
+with an overview of all the research and code done during summer.
+
+**Final Deliverable** Update and work on the previous deliverable so
+it's ready to merge.

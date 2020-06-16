@@ -201,7 +201,7 @@ Mo:
   - Start writing [project-related
     code](https://github.com/mixxxdj/mixxx/pull/2873)
 
-Tu:
+Tu: Specify required controls & format
 
 We:
 

@@ -27,12 +27,14 @@ WIP project.
 
 ### \[ChannelN\]
 
-| Key/Control       | Range       | What it does                                                              |
-| ----------------- | ----------- | ------------------------------------------------------------------------- |
-| macros\_show      | binary      | Whether to show the Macro Rack for this deck                              |
-| macros\_count     | integer, RO | Amount of Macros saved in this deck                                       |
-| macro\_X\_status  | 0-2, RO     | Whether this Macro is currently running                                   |
-| macro\_X\_enabled | binary      | Whether this Macro will automatically be started when the track is loaded |
-| macro\_X\_loop    | binary      | Whether this Macro should loop infinitely                                 |
+| Key/Control        | Range       | What it does                                                                                           |
+| ------------------ | ----------- | ------------------------------------------------------------------------------------------------------ |
+| macros\_show       | binary      | Whether to show the Macro Rack for this deck                                                           |
+| macros\_count      | integer, RO | Amount of Macros saved in this deck                                                                    |
+| macro\_X\_activate | binary      | If Macro X exists, seek to the first action and start it. If Macro X is unset, start recording for it. |
+| macro\_X\_status   | 0-2, RO     | Whether this Macro is currently running                                                                |
+| macro\_X\_enabled  | binary      | Whether this Macro will automatically be started when the track is loaded                              |
+| macro\_X\_loop     | binary      | Whether this Macro should loop infinitely                                                              |
+| macro\_X\_clear    | binary      | If Macro X is set, delete it and remove it from the Rack                                               |
 
 ## Format

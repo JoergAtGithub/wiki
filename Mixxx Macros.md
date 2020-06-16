@@ -201,7 +201,7 @@ Mo:
   - Start writing [project-related
     code](https://github.com/mixxxdj/mixxx/pull/2873)
 
-Tu: Specify required controls & format
+Tu: Specify required controls & format in [Macros](Macros) page
 
 We:
 

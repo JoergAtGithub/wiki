@@ -17,13 +17,14 @@ WIP project.
 
 ### \[MacroRecording\]
 
-| Key/Control       | Range   | What it does                                                                                              | On-screen feedback |
-| ----------------- | ------- | --------------------------------------------------------------------------------------------------------- | ------------------ |
-| recording\_toggle | binary  | Arms Macro recording & stops it                                                                           | Recording icon     |
-| recording\_status | 0-2, RO | Indicates whether a Macros is being recorded: 0 = no recording, 1 = recording armed, 2 = recording active | Recording icon     |
-| deck              | integer | The deck the Macro is being recorded to (0 if the recording\_status \!= 2)                                | Toggle Button      |
-| quantize          | binary  | Whether to quantize the recorded timestamps                                                               | Toggle Button      |
-| save              | binary  | Save the current Macro to its respective MacroRack                                                        | Button             |
+| Key/Control       | Range          | What it does                                                                                              | On-screen feedback |
+| ----------------- | -------------- | --------------------------------------------------------------------------------------------------------- | ------------------ |
+| recording\_toggle | binary         | Arms Macro recording & stops it                                                                           | Recording icon     |
+| recording\_status | 0-2, read-only | Indicates whether a Macros is being recorded: 0 = no recording, 1 = recording armed, 2 = recording active | Recording icon     |
+| deck              | integer        | The deck the Macro is being recorded to (0 if the recording\_status \!= 2)                                | Toggle Button      |
+| save              | binary         | Save the current Macro to its respective MacroRack                                                        | Button             |
+
+Note: uses quantize setting from hotcues
 
 ### \[ChannelN\]
 

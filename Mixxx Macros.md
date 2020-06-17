@@ -27,7 +27,7 @@ store them in a rack, to be used when it gets hot.
 
 [Macros](Macros)
 
-[Macro Requirements](Macro%20Requirements)
+[Mixxx Macros Requirements](Mixxx%20Macros%20Requirements)
 
 ## Components
 

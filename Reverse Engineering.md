@@ -184,10 +184,15 @@ the first picture)
 f0 00 02 0b 7f 01 60 00 04 04 01 00 00 f7
 
 from MIDI-OX to the controller then the MC4000 replies back with the
-current status of all knobs.
+current status of all knobs. This message can now be used on the MC4000
+MIDI script file inside the init section as following:
 
-This message can now be used on the MC4000 MIDI script file inside the
-init section.
+``` 
+  var byteArray = [ 0xF0, 0x00, 0x02, 0x0B, 0x7F, 0x01, 0x60, 0x00, 0x04, 0x04, 0x01, 0x00, 0x00, 0xF7 ];
+  midi.sendSysexMsg(byteArray,byteArray.length);
+```
+
+and MIXXX also will recognise the knobs positions during start.
 
 ##### Denon MC7000 example
 

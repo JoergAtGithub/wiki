@@ -127,6 +127,72 @@ ignore, e.g.:
 | `0bbf6400`        | `bf 64 00`   |
 | `09900100`        | `90 01 00`   |
 
+#### Wireshark GUI example
+
+Here you can find a Wireshark example running wireshark-gtk (for KDE you
+may want use wireshark-qt) GUI on Ubuntu using the left screen and Win10
+with MIDI-OX and Serato in VirtualBox on the right screen. We wanna
+check for the Serato communication with Denon MC4000 and MC7000 to find
+out what information the Software and controllers exchange during
+startup of Serato.
+
+To set up Wireshark I recommend you to check the [Wireshark
+WIKI](https://wiki.wireshark.org/) and your distribution specific
+documentation. Another source you need to look at is the [MIDI
+Manufacturer
+ID](https://www.midi.org/specifications/item/manufacturer-id-numbers).
+
+To keep analyzing as simple as possible it is recommended to capture USB
+data only for a few seconds while you do one specific action. Capturing
+30 seconds while starting Serato can easily record 70-100MB of data.
+
+##### Denon MC4000 example
+
+Starting with the Denon MC4000 to learn something about the USB traffic
+signals and how to find the SysEx messages that Serato exchange with the
+MC4000 during start ...
+
+[[/media/sysex1.png|]]
+
+Analyzing the Wireshark record from left to right side of the picture
+above.
+
+1\) left side window called "\*usbmon1": inside either you use the
+filter or sort column "Protocol" and look for "SYSEX". The example shows
+2 lines where we check the first one in more detail by double click the
+line so the details window will open with all information about that
+package and brings us to ....
+
+2\) the 2nd window called "Wireshark - Paket 24689 - usbmon1". In there
+you gonna find the sections "Frame", "USB URB" and "USB Audio". The
+later one we are interested in so open that section by clicking on the
+triangle. Several MIDI signals are present indicated by the red arrows.
+Here a more detailed view:
+
+[[/media/sysex3.png|]]
+
+The raw signal shows blocks of 3 MIDI signals (red arrows) always
+starting with a 04 to indicate that another MIDI packet is coming (green
+underline and arrows). The last packet is indicated by either 05 or 06
+(here 06). Changing the TAB in that window to "Reassembled Message" will
+show the MIDI signal only. Wireshark just deletes the control bytes 04
+and 06 and assembles the SysEx message from the 5 Event Packets.
+
+3\) So when checking and sending that SysEx message (see right side of
+the first picture)
+
+f0 00 02 0b 7f 01 60 00 04 04 01 00 00 f7
+
+from MIDI-OX to the controller then the MC4000 replies back with the
+current status of all knobs.
+
+This message can now be used on the MC4000 MIDI script file inside the
+init section.
+
+##### Denon MC7000 example
+
+yet to come ...
+
 ### Windows
 
 1.  explain software used

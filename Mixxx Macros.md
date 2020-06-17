@@ -87,7 +87,7 @@ hotcue or a timestamp, as outlined below.
   - how relevant is editing afterwards, how can we facilitate it?
   - Serato Flip ["just
     works"](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197286852)
-    - Flip is fixed after recording, not blocking any hotcues or any
+    - Flip is locked after recording, not blocking any hotcues or any
     chance of breakage
 
 ### Name

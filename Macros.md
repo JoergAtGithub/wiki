@@ -6,13 +6,6 @@ the recording and reproduction of jumps and particular control changes.
 See [Mixxx Macros](Mixxx%20Macros) for more infos as long as this is a
 WIP project.
 
-## Needed parts
-
-  - send info on cue jumps (but not on scrubbing)
-  - database table to store Macros
-  - recording buttons (deck-independent)
-  - macro list for each deck with name, loop option, enable option
-
 ## Controls
 
 ### \[MacroRecording\]

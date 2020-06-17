@@ -203,7 +203,7 @@ Mo:
 
 Tu: Specify required controls & format in [Macros](Macros) page
 
-We:
+We: Architecture discussion & add user stories
 
 Thu:
 

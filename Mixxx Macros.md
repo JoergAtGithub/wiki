@@ -30,7 +30,7 @@ store them in a rack, to be used when it gets hot.
 Adapted from
 <https://m.facebook.com/story.php?story_fbid=10152750292038764&id=11864088763>
 
-1.  Making edits 
+1.  Making edits
     1.  basic rearranging of tracks to create things like intros and
         outros, extend breaks, shorten or lengthen tracks, swap phrases
     2.  create "clean"/censored version of a track

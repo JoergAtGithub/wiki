@@ -25,6 +25,17 @@ store them in a rack, to be used when it gets hot.
 
 ## Details
 
+[Macros](Macros)
+
+[Macro Requirements](Macro%20Requirements)
+
+## Components
+
+  - database table to store Macros
+  - recording buttons (deck-independent)
+  - send info on cue jumps (but not on scrubbing)
+  - macro list for each deck with name, loop option, enable option
+
 ### Use cases
 
 Adapted from

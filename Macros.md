@@ -3,8 +3,9 @@
 This is the format specification for Mixxx Macros, a feature that allows
 the recording and reproduction of jumps and particular control changes.
 
-See [Mixxx Macros](Mixxx%20Macros) for more infos as long as this is a
-WIP project.
+See [Mixxx Macros](Mixxx%20Macros) and [Mixxx Macros
+Requirements](Mixxx%20Macros%20Requirements) for background on the
+project.
 
 ## Controls
 

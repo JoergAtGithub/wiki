@@ -216,9 +216,9 @@ Tu: Specify required controls & format in [Macros](Macros) page
 We: Architecture discussion & add [user
 stories](Mixxx%20Macros%20Requirements)
 
-Thu:
+Th: Investigation of Mixxx code
 
-Fr:
+Fr: Work on MacroManager
 
 ### CW 26
 

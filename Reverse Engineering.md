@@ -146,7 +146,7 @@ To keep analyzing as simple as possible it is recommended to capture USB
 data only for a few seconds while you do one specific action. Capturing
 30 seconds while starting Serato can easily record 70-100MB of data.
 
-##### Denon MC4000 example
+#### Denon MC4000 example
 
 Starting with the Denon MC4000 to learn something about the USB traffic
 signals and how to find the SysEx messages that Serato exchange with the
@@ -181,7 +181,9 @@ and 06 and assembles the SysEx message from the 5 Event Packets.
 3\) So when checking and sending that SysEx message (see right side of
 the first picture)
 
-f0 00 02 0b 7f 01 60 00 04 04 01 00 00 f7
+``` 
+f0 00 02 0b 7f 01 60 00 04 04 01 00 00 f7 
+```
 
 from MIDI-OX to the controller then the MC4000 replies back with the
 current status of all knobs. This message can now be used on the MC4000
@@ -192,9 +194,73 @@ MIDI script file inside the init section as following:
 
 and MIXXX also will recognise the knobs positions during start.
 
-##### Denon MC7000 example
+#### Denon MC7000 example
 
-yet to come ...
+Now the MC7000 is not that straight forward as Denon hides all the
+specifications including MIDI signals.
+
+Looking to the USB traffic, there is no Protocol SysEx that we can
+search for. But we know the manufacturer is Denon and so we can look for
+the [MIDI Manufacturer
+ID](https://www.midi.org/specifications/item/manufacturer-id-numbers).
+Searching for Denon gives the Midi ID "00 02 0B". Searching that string
+does not give any result though.
+
+What we have learned from the MC4000 is important now ...
+
+\* The SysEx message always starts with f0 and ends with f7 \* There are
+control bytes grouping 3 MIDI bytes: 04 to start/continue a message and
+05 or 06 to indicate the last package.
+
+So for Denon MC7000 a better HEX search is
+
+    04 f0 00 02 04 0B
+
+  - 04 -\> Control Byte to start a MIDI message block
+  - f0 -\> SysEx message start
+  - 00 02 -\> Denon Manufacturer ID
+  - 04 -\> Control Byte to continue the next 3 MIDI bytes
+  - 0b -\> Denon Manufacturer ID
+
+Unfortunately, there is no result either.
+
+We know that Denon partnered with Serato selling the bundle of Hard- and
+Software. So maybe we are more lucky with the MIDI Serato Manufacturer
+ID.
+
+Searching HEX Value for Serato would look like this:
+
+    04 f0 00 20 04 7f
+
+and we get several results that look like MIDI SysEx messages. They are
+stored in "Leftover Capture Data". Now some manual work is needed as
+Wireshark cannot re-assemble the MIDI bytes as they are not declared as
+such.
+
+[[/media/sysex4.png|]]
+
+1\) So this means to copy all Messages found starting with f0 and Serato
+Manufacturer ID and end with f7 to a text file.
+
+2\) Manually delete all control bytes. The first byte 04 the 5th byte 04
+the 9th byte 04 and so on. Remember that the last 3 MIDI bytes are
+indicated by a 05 or 06 that must be deleted as well.
+
+3\) Send all SysEx messages to the controller using MIDI-OX and look for
+the response. In this example the 3rd message seems to be the right one
+as there are many answers coming back from the controller.
+
+This is exactly the SysEx message that Serato uses for other controllers
+in order to receive feedback. See here
+<https://www.mixxx.org/wiki/doku.php/serato_sysex>
+
+So in the MIDI script file it can be used like:
+
+    var byteArray = [ 0xF0, 0x00, 0x20, 0x7F, 0x03, 0x01, 0xF7 ];
+    midi.sendSysexMsg(byteArray,byteArray.length);
+
+to set the knobs and sliders to the actual value of the hardware
+controller.
 
 ### Windows
 

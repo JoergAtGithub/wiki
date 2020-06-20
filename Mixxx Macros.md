@@ -218,7 +218,15 @@ stories](Mixxx%20Macros%20Requirements)
 
 Th: Investigation of Mixxx code
 
-Fr: Work on MacroManager
+Fr:
+
+  - Playing around with MacroManager
+  - More architecture considerations
+  - Trying to understand Controls, Signals & Slots
+
+Sa:
+
+  - Connect a control
 
 ### CW 26
 

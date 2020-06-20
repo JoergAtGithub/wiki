@@ -208,9 +208,9 @@ does not give any result though.
 
 What we have learned from the MC4000 is important now ...
 
-\* The SysEx message always starts with f0 and ends with f7 \* There are
-control bytes grouping 3 MIDI bytes: 04 to start/continue a message and
-05 or 06 to indicate the last package.
+  - The SysEx message always starts with f0 and ends with f7
+  - There are control bytes grouping 3 MIDI bytes: 04 to start/continue
+    a message and 05 or 06 to indicate the last package.
 
 So for Denon MC7000 a better HEX search is
 
@@ -225,10 +225,12 @@ So for Denon MC7000 a better HEX search is
 Unfortunately, there is no result either.
 
 We know that Denon partnered with Serato selling the bundle of Hard- and
-Software. So maybe we are more lucky with the MIDI Serato Manufacturer
-ID.
+Software. So maybe we are more lucky with the MIDI Manufacturer ID of
+Serato which would be:
 
-Searching HEX Value for Serato would look like this:
+    00 20 7F
+
+Searching HEX Value inside the USB dump would look like this:
 
     04 f0 00 20 04 7f
 

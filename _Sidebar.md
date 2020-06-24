@@ -20,7 +20,7 @@ Developers
 [[Contribution Guidelines]]  
 [[Coding Guidelines]]  
 [[Using Git]]  
-[[Mixxx Developer Guide]]  
+[[Developer Guide]]  
 
 Mapping Creators
 -----

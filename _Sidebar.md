@@ -11,7 +11,7 @@ Users
 
 [Manual](http://mixxx.org/manual/)  
 [[Hardware Compatibility]]  
-[[Reporting Bugs]]
+[[Reporting Bugs]]  
 [[Getting Involved]]  
 
 Developers

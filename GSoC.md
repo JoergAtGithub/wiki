@@ -1,4 +1,3 @@
-# GSoC
 
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is an
 annual program that provides paid internships for students to work on

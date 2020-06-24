@@ -1,0 +1,89 @@
+# this is your configuration file for pbuilder.
+# the file in /usr/share/pbuilder/pbuilderrc is the default template.
+# /etc/pbuilderrc is the one meant for editing.
+#
+# read pbuilderrc.5 document for notes on specific options.
+
+BASETGZ=/var/cache/pbuilder/base.tgz
+# EXTRAPACKAGES="debhelper docbook-to-man libdjconsole-dev libjack-dev libsamplerate-dev libaudiofile-dev libsoundtouch1-dev ladspa-sdk libgpod-dev"
+# EXTRAPACKAGES="libsoundtouch1-dev" 
+EXTRAPACKAGES="fakeroot libsoundtouch1-dev libmp4v2-dev libfaad-dev libsamplerate0-dev bzr debhelper docbook-to-man libdjconsole-dev libjack-dev libaudiofile-dev ladspa-sdk libgpod-dev comerr-dev libasound2-dev libaudio-dev libaudio2 libdrm2 libflac-dev libflac8 libgl1-mesa-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev libid3tag0 libid3tag0-dev libjack0.100.0-dev libjpeg62-dev libkadm55 libkrb5-dev liblcms1 liblcms1-dev libmad0 libmad0-dev libmng-dev libmng1 libmysqlclient15off libogg-dev libogg0 libportaudio2 libpq-dev libpq5 libqt4-core libqt4-dev libqt4-opengl-dev libqt4-gui libqt4-qt3support libqt4-sql libsndfile1 libsndfile1-dev libsqlite0 libsqlite0-dev libssl-dev libvorbis-dev libvorbis0a libvorbisenc2 libvorbisfile3 libxmu-dev libxmu-headers libxmu6 libxt-dev libxt6 libxxf86vm1 mesa-common-dev mysql-common portaudio19-dev python-central scons xlibmesa-gl-dev"
+export DEBIAN_BUILDARCH=amd64
+BUILDPLACE=/var/cache/pbuilder/build/
+MIRRORSITE=http://archive.ubuntu.com/ubuntu
+#OTHERMIRROR="deb http://www.home.com/updates/ ./"
+#export http_proxy=http://your-proxy:8080/
+USEPROC=yes
+USEDEVPTS=yes
+USEDEVFS=no
+# BUILDRESULT=/home/mixxx/public_html/nightly/
+BUILDRESULT=./dist
+
+# specifying the distribution forces the distribution on "pbuilder update"
+DISTRIBUTION=jaunty
+# specifying the components of the distribution (default is "main")
+COMPONENTS="main restricted universe multiverse"
+#specify the cache for APT 
+APTCACHE="/var/cache/pbuilder/aptcache/"
+APTCACHEHARDLINK="yes"
+REMOVEPACKAGES="lilo"
+#HOOKDIR="/usr/lib/pbuilder/hooks"
+HOOKDIR=""
+
+# make debconf not interact with user
+export DEBIAN_FRONTEND="noninteractive"
+
+DEBEMAIL=""
+
+# for pbuilder debuild (sudo -E keeps the environment as-is)
+BUILDSOURCEROOTCMD="fakeroot"
+PBUILDERROOTCMD="sudo -E"
+
+# command to satisfy build-dependencies; the default is an internal shell
+# implementation which is relatively slow; there are two alternate
+# implementations, the "experimental" implementation,
+# "pbuilder-satisfydepends-experimental", which might be useful to pull
+# packages from experimental or from repositories with a low APT Pin Priority,
+# and the "aptitude" implementation, which will resolve build-dependencies and
+# build-conflicts with aptitude which helps dealing with complex cases but does
+# not support unsigned APT repositories
+PBUILDERSATISFYDEPENDSCMD="/usr/lib/pbuilder/pbuilder-satisfydepends"
+
+#Command-line option passed on to dpkg-buildpackage.
+#DEBBUILDOPTS="-IXXX -iXXX"
+# DEBBUILDOPTS=""
+
+# MIXXX: prepend .obj, .scons*, .bzr, debian/* filters to dpkg-source -i regex exclusion defaults '(?:^|/)\.obj|(?:^|/)\.scon.*|'
+DEBBUILDOPTS="-i'(?:^|/)\.bzr|(?:^|/)\.obj|(?:^|/)\.scon.*|(?:^|/).*~$|(?:^|/)\.#.*$|(?:^|/)\..*\.swp$|(?:^|/),,.*(?:$|/.*$)|(?:^|/)(?:DEADJOE|\.cvsignore|\.arch-inventory|\.bzrignore|\.gitignore)$|(?:^|/)(?:CVS|RCS|\.deps|\{arch\}|\.arch-ids|\.svn|\.hg|_darcs|\.git|\.shelf|\.bzr(?:\.backup|tags)?)(?:$|/.*$)'"
+
+#APT configuration files directory
+APTCONFDIR=""
+
+# the username and ID used by pbuilder, inside chroot. Needs fakeroot, really
+BUILDUSERID=1234
+BUILDUSERNAME=pbuilder
+
+# BINDMOUNTS is a space separated list of things to mount
+# inside the chroot.
+BINDMOUNTS=""
+
+# Set the debootstrap variant to 'buildd' type.
+# DEBOOTSTRAPOPTS[0]='--variant=buildd'
+# or work around bug in debootstrap 3.0.0 (314858)
+unset DEBOOTSTRAPOPTS
+
+# Set the PATH I am going to use inside pbuilder: default is "/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin"
+export PATH="/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin"
+
+# SHELL variable is used inside pbuilder by commands like 'su'; and they need sane values
+export SHELL=/bin/bash
+
+# The name of debootstrap command.
+DEBOOTSTRAP="debootstrap"
+
+# default file extension for pkgname-logfile
+PKGNAME_LOGFILE_EXTENTION="_$(dpkg --print-architecture).build"
+
+# default PKGNAME_LOGFILE
+PKGNAME_LOGFILE=""
+

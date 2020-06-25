@@ -1,4 +1,4 @@
-\====== Controller Scripting ======
+# Controller Scripting
 
 In order to support the features of many MIDI controllers, Mixxx offers
 what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables

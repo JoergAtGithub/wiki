@@ -1,6 +1,6 @@
 # Bear and Bar Edit Workflow
 
-this page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out limitations of the chooses model.  
+this page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out limitations of the choosen model.  
 
 ## Assumptions ##
 

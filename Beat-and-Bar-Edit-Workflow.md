@@ -70,9 +70,11 @@ In case the artist only skips a fraction of a beat, you may change the denominat
 sometimes beats are slight shifted to sound interesting like:  
 [Igorrr - Vegetable Soup](https://www.youtube.com/watch?v=5LN7W3EtRMg)
 
-(need to verify ...)
+The beat detector fails with this track. It is detected as a 70 BPM track, because only the downbeats are found and the tempo is shifting heavily. Here the user can manually annotate a first measure. 
+I would say you need a 24/32 grid with beats at 1 / 8 / 14 / 20 @ 840 1/32-BPM = 105 BPM   
 
-The beat detector fails with this track. Here the user can manually annotate a first measure. 
+Here is the workflow for a less exotic 7/16 example:  
+
 First he can made up fine 1/16 grid which is counted:
 ```
 1e+a2e+1e+a2e+1e+a2e+1e+a2e+a 

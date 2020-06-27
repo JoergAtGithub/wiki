@@ -93,8 +93,30 @@ Now press "infer right" and the beat detector will snap the measure template to 
 Done. 
 
 
+## supporting data structure ##
 
+```
+message Bar {
+  required double frame_position = 1 [ default = 0 ];
+  optional Source source = 2 [ default = ANALYZER ];
+  optional int signature_nominator = 4 [ default = 4 ];  // 0 for individual set beats 
+  optional int signature_denominator = 5 [ default = 4 ];  
+  repeated int quarter_beats = 6; // can be empty for regular 1/4 beats   
+}
 
+```
+
+For a 7/16 measure like above it looks like: 
+
+```
+  frame_position = 0;
+  source = USER;
+  signature_nominator = 7; 
+  signature_denominator = 16;  
+  quarter_beats[1] = 4; for 4/16    
+}
+
+```
 
 
 

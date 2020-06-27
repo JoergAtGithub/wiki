@@ -60,6 +60,16 @@ same name. It starts with gentle 105 bpm and speeds up to 180 bpm. It
 has clear sections, some with constant bpm and some with increasing
 tempo.
 
+## The Winstons - Amen Brother
+
+<https://www.youtube.com/watch?v=GxZuq57_bYM>
+
+This is the b-side of a chart-topping single from 1969. It contains the most used sample (> 2000 times) of all, the "Amen Break". 
+It consists of just 8 betas starting at 1:27.
+
+After these breaks, a odd measure follows that shift the downbeat by a half beat. A normal 4/4 measure is played and that a odd measure shifts the downbeat back to the original position.  
+
+
 # External Sources
 
 Key changes:

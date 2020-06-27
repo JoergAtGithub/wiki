@@ -188,9 +188,8 @@ results into this wiki page when appropriate.
 
   - revisited & summarized Zulip discussion in wiki page (timeline,
     details)
-  - sifted through reddit
-    (<https://www.reddit.com/search?q=serato%20flip>) - summary for now
-    in Notion
+  - sifted through [reddi]t(https://www.reddit.com/search?q=serato%20flip) - 
+    summary for now in Notion
   - organized community call
 
 ### CW 24
@@ -204,12 +203,9 @@ results into this wiki page when appropriate.
 Mo:
 
   - Wiki Improvements
-  - [Get more acquainted with
-    code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
-  - Revisit [reddit
-    post](https://www.reddit.com/r/DJs/comments/h8av2o/reimagining_serato_flip)
-  - Start writing [project-related
-    code](https://github.com/mixxxdj/mixxx/pull/2873)
+  - [Get more acquainted with code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
+  - Revisit [reddit post](https://www.reddit.com/r/DJs/comments/h8av2o/reimagining_serato_flip)
+  - Start writing [project-related code](https://github.com/mixxxdj/mixxx/pull/2873)
 
 Tu: Specify required controls & format in [Macros](Macros) page
 
@@ -227,14 +223,11 @@ Fr:
 Sa:
 
   - Connect a control
+  - Factor out RecordingManagerBase
 
 ### CW 26
 
-Mo:
-
-Thu:
-
-Fr:
+Mo: Recording works!
 
 ### CW 27
 

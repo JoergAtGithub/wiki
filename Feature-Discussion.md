@@ -26,6 +26,7 @@ page.
   - [OSC-Client](OSC-Client)
   - [Ctlra Support](Ctlra%20Support)
   - [Auto DJ Cues](Auto%20DJ%20Cues)
+  - [Beat and Bar Edit Workflow]
 
 ## Implemented Specifications
 

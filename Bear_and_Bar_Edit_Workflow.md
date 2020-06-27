@@ -20,6 +20,60 @@ We need to make some assumptions that will help to keep our model simple but pow
 
 ## Workflow ##
 
+## Constant 4/4 Track ## 
+
+Nothing to do, the beat, bar detector is able to do everything automatically. 
+
+## 4/4 Track with changing tempo ## 
+
+The detector tries to follow the changes, if this fails: 
+* adjust a down-beat
+* Select "infer right" to start the beat detector again from this point. 
+
+## 4/4 Track with skipped or added beats ## 
+
+[Joan Jett - I Love Rock 'n' Roll](https://www.youtube.com/watch?v=iC8oP4Z_xPw) has a chorus of 4/4 4/4 4/4 3/4 which makes the detected down-beat shift by one. The user needs to help here. 
+
+original:
+```
+|   d   d   d   |   d   d   d   |   d   d   d   |   d   d   |   d   d   d   |   d   d   d   | 
+```
+beat detector:
+```
+|   d   d   d   |   d   d   d   |   d   d   d   |   d   d   d   |   d   d   d   |   d   d   d   
+```
+1 step: adjust the down-beat
+```
+|   d   d   d   |   d   d   d   |   d   d   d   |           |   d   d   d   |   d   d   d 
+```
+Mixx will change the tempo of the measure. Remember that we snap the beats to the grid mad up by the signature and not to the detected beats. 
+```
+|   d   d   d   |   d   d   d   |   d   d   d   |  d  d  d  |   d   d   d   |   d   d   d
+```
+2 step: Adjust the nominator of the signature to 3 for a 3/4 measure  
+```
+|   d   d   d   |   d   d   d   |   d   d   d   |   d   d   |   d   d   d   |   d   d   d
+```
+Done 
+
+This works in the same if the artist added a beat. 
+
+In case the artist only skips a fraction of a beat, you may change the denominator for a finer gids the beats are snapped to. For instance if a 1/2 beat is skipped, the time signature will be 4/4 7/8. By default the last beat quarter of a measure is shorten.
+
+```
+.   .   .   .   . . . . . . . .   .   .   .   .  // grid    
+|   d   d   d   |   d   d   d |   d   d   d   |  // beats 
+```
+  
+
+
+
+
+ 
+ 
+
+
+
 
 
 

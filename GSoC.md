@@ -18,7 +18,7 @@ The following projects were accepted for Google Summer of Code 2020:
     detection](Downbeats%20and%20phrase%20detection) by Cristiano
     Lacerda (crisclacerda)
   - [Measures, Downbeats, Bars and
-    Phrases](Measures,%20Downbeats,%20Bars%20and%20Phrases) by Harshit
+    Phrases](measures_downbeats_bars_and_phrases) by Harshit
     Maurya (hacksdump)
   - [Mixxx Macros](Mixxx%20Macros) by Janek (xerus2000)
 

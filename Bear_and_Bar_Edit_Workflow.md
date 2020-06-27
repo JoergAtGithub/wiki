@@ -20,17 +20,17 @@ We need to make some assumptions that will help to keep our model simple but pow
 
 ## Workflow ##
 
-## Constant 4/4 Track ## 
+### Constant 4/4 Track ### 
 
 Nothing to do, the beat, bar detector is able to do everything automatically. 
 
-## 4/4 Track with changing tempo ## 
+### 4/4 Track with changing tempo ### 
 
 The detector tries to follow the changes, if this fails: 
 * adjust a down-beat
 * Select "infer right" to start the beat detector again from this point. 
 
-## 4/4 Track with skipped or added beats ## 
+### 4/4 Track with skipped or added beats ### 
 
 [Joan Jett - I Love Rock 'n' Roll](https://www.youtube.com/watch?v=iC8oP4Z_xPw) has a chorus of 4/4 4/4 4/4 3/4 which makes the detected down-beat shift by one. The user needs to help here. 
 
@@ -64,6 +64,46 @@ In case the artist only skips a fraction of a beat, you may change the denominat
 .   .   .   .   . . . . . . . .   .   .   .   .  // grid    
 |   d   d   d   |   d   d   d |   d   d   d   |  // beats 
 ```
+
+### Odd measures like 7/16 Tracks with shifted beats ###
+
+sometimes beats are slight shifted to sound interesting like:  
+[Igorrr - Vegetable Soup](https://www.youtube.com/watch?v=5LN7W3EtRMg)
+
+(need to verify ...)
+
+The beat detector fails with this track. Here the user can manually annotate a first measure. 
+First he can made up fine 1/16 grid which is counted:
+```
+1e+a2e+1e+a2e+1e+a2e+1e+a2e+a 
+.............................   
+```
+Now set the downbeats, and adjust the tempo by selecting the number of beats in the measure. in this case 7/16 
+```
+1e+a2e+1e+a2e+1e+a2e1e+a2e+a 
+D......D   
+```
+Than place the quarter beats. 
+```
+1e+a2e+1e+a2e+1e+a2e1e+a2e+a 
+D...b..D   
+```
+Now press "infer right" and the beat detector will snap the measure template to the detected beats. 
+
+Done. 
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 

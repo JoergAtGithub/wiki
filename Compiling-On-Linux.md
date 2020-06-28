@@ -10,23 +10,39 @@ Mixxx relies on several external libraries for various features.
 
 ### Debian / Ubuntu / Raspbian
 
-If your distribution is Debian based (such as Ubuntu), you can install
+If your distribution is Debian 9/10 based (such as Ubuntu 16.04/18.04), you can install
 them by running:
 
-``` bash
+```bash
 sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
   libchromaprint-dev librubberband-dev libsqlite3-dev \
   libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
-  libavcodec-dev libavformat-dev libgl-dev liblilv-dev \
+  libavcodec-dev libavformat-dev \
+  libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
-  libfaad-dev libmp4v2-dev libmp3lame-dev libebur128-dev
+  libfaad-dev libmp4v2-dev \
+  libmp3lame-dev libebur128-dev
 ```
 
 Note: libfaad-dev libmp4v2-dev required for M4A support. The
 installation order is
 [important](https://bugs.launchpad.net/mixxx/+bug/1464120).
+
+Beginning with Debian 11 (Ubuntu 20.04) support for libmp4v2 has been dropped. Instead install additional FFmpeg packages to build Mixxx with FFmpeg enabled:
+
+```bash
+sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
+  libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
+  libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
+  libchromaprint-dev librubberband-dev libsqlite3-dev \
+  libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
+  libavcodec-dev libavformat-dev libavutil-dev libswresample-dev \
+  libgl-dev liblilv-dev \
+  libjack-dev libjack0 portaudio19-dev \
+  libmp3lame-dev libebur128-dev
+```
 
 If you are building the Mixxx **master** Git branch, additionally run:
 
@@ -50,15 +66,13 @@ sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg l
 
 On Fedora, [enable the RPMFusion package
 repository](http://rpmfusion.org/Configuration). You only need to enable
-the free repository; the nonfree repository is not necessary for Mixxx.
+the *free* repository; the *nonfree* repository is not necessary for Mixxx.
 Then run:
 
 ``` bash
-su
-[Enter the password for the user "root" at the prompt]
-dnf groupinstall "Development Tools"
-dnf install gcc-c++ lame-devel
-dnf builddep mixxx
+sudo dnf groupinstall "Development Tools"
+sudo dnf install gcc-c++ lame-devel
+sudo dnf builddep mixxx
 ```
 
 ### Arch & Derivatives

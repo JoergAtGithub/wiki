@@ -1,4 +1,4 @@
-# Mixxx Macros
+# Mixxx Macros GSoC project
 
 *By Janek Fischer (xerus/xerus2000)*
 

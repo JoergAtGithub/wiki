@@ -1,8 +1,8 @@
-\======= How to set up Eclipse for developing on Mixxx =======
+# How to set up Eclipse for developing on Mixxx
 
 Just some notes on how to setup Eclipse IDE for developing on Mixxx.
 
-# Set up mixxx source
+## Set up mixxx source
 
 The default location on Linux would be
 
@@ -51,7 +51,7 @@ cmake --build . -j4 # replace 4 with the number of CPU cores that can be utilize
 ./mixxx_test
 ```
 
-# Install Eclipse (packages or source)
+## Install Eclipse (packages or source)
 
 Of course, install Eclipse and CDT (C/C++ developer toolkit). Either
 simply from their homepage or use the packages for your operating
@@ -87,7 +87,7 @@ sudo apt-get install oracle-java8-installer
 sudo update-alternatives --config java
 ```
 
-# Step-by-Step Setup
+## Step-by-Step Setup
 
 For Eclipse 2018-09
 
@@ -258,9 +258,9 @@ For git integration (in case of using a git clone of mixxx):
   - Select git.
   - Next -\> Finish.
 
-# Additional hints
+## Additional hints
 
-## Setting $DISPLAY
+### Setting $DISPLAY
 
 Some can get error "Warning \[Main\]: mixxx: cannot connect to X
 server".
@@ -270,11 +270,11 @@ environment. So, go to Project properties -\> C/C++ Build -\>
 Environment. Here you must add variable `DISPLAY` and set its value to
 `${DISPLAY}`.
 
-## Enable full power of Eclipse
+### Enable full power of Eclipse
 
 This was tested without the SCons plugin installed.
 
-### Eclipse indexer
+#### Eclipse indexer
 
 To enable the full power of Eclipse indexer Eclipse needs to know all
 include files and symbols. Eclipse is able to discover path and symbols

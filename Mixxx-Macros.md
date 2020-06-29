@@ -1,4 +1,4 @@
-# Mixxx Macros GSoC project
+# Mixxx Macros - Google Summer of Code 2020 project
 
 *By Janek Fischer (xerus/xerus2000)*
 

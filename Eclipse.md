@@ -32,7 +32,7 @@ min on the fist time.
 scons -j4 # replace 4 with the number of CPU cores that can be utilized 
 ```
 
-** Using CMake (experimental):**
+**Using CMake (experimental):**
 
 To save during comiling time after switching branches make sure ccache
 is installed.
@@ -44,7 +44,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON ../..
 cmake --build . -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
 
-** Test your build:**
+**Test your build:**
 
 ``` bash
 ./mixxx

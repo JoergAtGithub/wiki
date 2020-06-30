@@ -139,17 +139,16 @@ CW 24: Start implementation of data structures, controls
 CW 25: Create recording infrastructure  
 ~~CW 26~~ (blocked)
 
-Deliverable: Format specification with examples
+Deliverable: (Format specification with examples) Basic working recording implementation
 
 **July**
 
-CW 27: Design controls & integrate into a skin  
-CW 28: Tie it all together  
-CW 29: *Buffer*  
-CW 30: *Buffer*
+CW 27: Clean up, test & improve code
+CW 28: Create database integration
+CW 29: Design controls & integrate into a skin  
+CW 30: Tie it all together
 
-Deliverable: Implemented controls with mapping to a skin and controller,
-working recording system
+Deliverable: Implemented controls with mapping to a skin and controller, can save macro
 
 **August**
 
@@ -231,9 +230,9 @@ Mo: Recording works!
 
 ### CW 27
 
-Mo:
+Mo: Getting back into code, wiki work
 
-Tu:
+Tu: Make Macro recording realtime-proof
 
 We:
 

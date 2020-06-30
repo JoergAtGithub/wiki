@@ -6,47 +6,42 @@ When you're writing code for open source projects, the most important
 rule to follow is this: **Try to make your code blend in with the
 existing code.**
 
-When in doubt, use the [Google C++ Style
-Guide](https://google.github.io/styleguide/cppguide.html). It's a
-treasure trove of C++ advice. Just double Google's indentation -\> 2
-spaces become 4 spaces; 4 spaces become 8 spaces.
+When in doubt, use the
+[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). 
+It's a treasure trove of C++ advice. Just double Google's indentation - 
+2 spaces become 4 spaces; 4 spaces become 8 spaces.
 
-That being said, there are large chunks of Mixxx that are written in
+That being said, large chunks of Mixxx are written in
 slightly differing styles (mainly variable naming conventions). In order
 to avoid this in the future, it's best for us to have some coding
 guidelines for developers to follow.
 
 **As you change a part of Mixxx, please update it to match this style
 guide and reformat it with ClangFormat. That way, eventually all of
-Mixxx will be written in this style. Do not send us patches that are
-purely cosmetic with respect to source changes -- this is a waste of
-time since it does not benefit users directly.**
+Mixxx will be written in this style. 
+Do not send us patches that are purely cosmetic with respect to source changes -- 
+this is a waste of time since it does not benefit users directly.**
 
 ## Code Formatting
 
 Since 2019-05-09 our code formatting rules are defined by the
 [.clang-format](https://github.com/mixxxdj/mixxx/blob/master/.clang-format)
-configuration file. It can be found in the project root directory and
-contains settings for
-[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html). **Make use
-of it by auto-formatting new or modified code segments as soon as you
-need to touch it\!**
+configuration file in the project root. 
+**Make use of it by auto-formatting new or modified code segments - but take care not to mass reformat unrelated code\!**
 
-ClangFormat version \>= 4.0 is required.
-
-On Ubuntu, you can install clang format via.
-
-``` bash
-sudo apt-get install clang-format clang-format-4.0
-sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-4.0 1000
+[ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version \>= 4.0 is required.
+On Ubuntu, ClangFormat is in the [official repositories](https://packages.ubuntu.com/search?suite=all&searchon=names&keywords=clang-format). From bionic (18.04) on you can install the plain `clang-format` package, use this on older distros as it is outdated there:
+```sh
+sudo apt-get install clang-format-8
+sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-8 1000
 ```
 
 ### pre-commit
 
 To automatically adjust the code style in every commit, it is
 recommended to install the [pre-commit](https://pre-commit.com/)
-framework. It will run a few scripts, including clang-format, to ensure
-the code style guidelines are met.
+framework. It will run a few scripts, including clang-format, 
+on every commit and pugh, to ensure the code guidelines are met.
 
 The required config file, including installation instructions, is in the
 Mixxx repository at
@@ -61,25 +56,23 @@ Alternatively you may use
 [git-clang-format](https://raw.githubusercontent.com/llvm-mirror/clang/master/tools/clang-format/git-clang-format)
 from the command line.
 
-You can for example do this after each commit during development:
-
-``` bash
+Use it like this to reformat after each commit:
+``` sh
 git-clang-format HEAD^1
 git commit -a --amend
 ```
 
 or if the PR is already under review:
-
-``` bash
+``` sh
 git-clang-format upstream/master 
-git commit -a -m"apply git-clang-format changes"
+git commit -a -m "apply git-clang-format changes"
 ```
 
 Apply *clang-format* to individual source files (only permitted for new
 files):
-
-`clang-format -i -style=file [<file> ...]`
-
+```sh
+clang-format -i -style=file [<file> ...]
+```
 *clang-format* will pick up the *.clang-format* file from the current or
 any parent directory of the source file(s).
 
@@ -131,21 +124,18 @@ Settings under Editor \> Code Style.
 ## Tabs vs. Spaces
 
 Mixxx's old developers more or less used the convention that **indents
-are 4 spaces**. The consensus is that we should try to stick to this, if
-only for consistency. If your code uses tabs, or does not use 4-space
-indent then you will be asked to change it.
+are 4 spaces**. Stick to this and do not use tabs, if only for consistency.
 
 ## Line Wrapping
 
-Please configure your editor to have a max column-width of 80-columns.
+Please set up a max column-width of 80 columns in your editor.
 While it is not a strict requirement, 80-column cleanliness makes it
-easy to tile multiple buffers of code across a laptop screen, which
-provides significant efficiency gains to developers.
+easy to tile multiple buffers of code across a screen, which provides 
+significant efficiency gains to developers.
 
 For Mixxx's clang-format compatibility (ColumnLimit: 0):
 
-  - Use double indent (8-spaces) for broken lines (ContinuationIndent:
-    8).
+  - Use double indent (8-spaces) for broken lines (ContinuationIndent: 8).
   - Break line after binary operators. 
   - If you break a list of function parameters, put each parameter on a
     single line (BinPackArguments: false & BinPackParameters: false).
@@ -181,15 +171,13 @@ if (long_expression1 ||
 # C++ Style Guide
 
 This is an overview of the various conventions that the Mixxx team
-follows when writing Mixxx code. Most of these conventions are not
-intended to start holy-wars, rather they are simply intended to keep the
-Mixxx codebase **consistent**. You should strive to follow these
-guidelines as much as possible. If you do not, we may ask you to clean
-up your code to follow the style guide during code-review.
+follows when writing Mixxx code. Do not start holy wars over these 
+conventions - they are simply intended to keep the Mixxx codebase 
+**consistent**. Strive to follow these guidelines as much as possible.
+If you do not, we may ask you to clean up your code to follow the 
+style guide during code-review.
 
 ## Naming
-
-What's in a name?
 
 ### Variables
 

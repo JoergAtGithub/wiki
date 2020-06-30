@@ -2,8 +2,8 @@
 
 *By Janek Fischer (xerus/xerus2000)*
 
-![Official GSoC
-Proposal](/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
+[Official GSoC
+Proposal](https://github.com/mixxxdj/mixxx/wiki/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
 
 ## Introduction
 

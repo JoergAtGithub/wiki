@@ -1071,8 +1071,9 @@ enum class ChannelLayout {
 
 ### atomics
 
-For now, prefer using Qt atomic primitives. We may switch at some
-point... atomically. 8-)
+For now, prefer using [Qt atomic](https://doc.qt.io/qt-5/atomic-operations.html)
+[primitives](https://doc.qt.io/qt-5/qatomicinteger.html).
+We may switch at some point... atomically. 8-)
 
 ### inherited constructors
 

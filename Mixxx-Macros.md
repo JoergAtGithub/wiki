@@ -14,7 +14,7 @@ at once, a DJ should be able to rely on his tools so he can focus on
 what really matters. For some, beatmatching and keeping all tracks in
 sync is an art in itself - for others, including me, it is something
 happily delegated to the software - that is why there is a sync
-function.  
+function.
 But sometimes, more sophisticated automation can be helpful - maybe you
 want to skip a breakdown, shuffle around verses, loop an intro a
 specific way or deliberately repeat certain parts. Handling that while
@@ -102,7 +102,7 @@ Suggestions: Spin, Routines, Twist, MicroFlow, Mow
 and
 [well-received](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197421948)
 - [we don't need to sell it
-either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).  
+either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).
 It sounds a little bland though, and doesn't capture the whole idea of
 using it to create non-destructive edits of a track. It also doesn't
 blend well with other terms, such as "Routine Mode" (for recording a
@@ -129,33 +129,33 @@ routine).
 ## Timeline
 
 CW 21: Establish Timeline, work on open PRs, initial survey &
-discussion  
+discussion
 CW 22: Survey existing Serato Flip uses & collect input
 
 **June**
 
-CW 23: Work out details of the format  
-CW 24: Start implementation of data structures, controls  
-CW 25: Create recording infrastructure  
-~~CW 26~~ (blocked)
+- CW 23: Work out details of the format
+- CW 24: Start implementation of data structures, controls
+- CW 25: Create recording infrastructure
+- ~~CW 26~~ (blocked)
 
 Deliverable: (Format specification with examples) Basic working recording implementation
 
 **July**
 
-CW 27: Clean up, test & improve code
-CW 28: Create database integration
-CW 29: Design controls & integrate into a skin  
-CW 30: Tie it all together
+- CW 27: Clean up, test & improve code
+- CW 28: Create database integration
+- CW 29: Design controls & integrate into a skin
+- CW 30: Tie it all together
 
 Deliverable: Implemented controls with mapping to a skin and controller, can save macro
 
 **August**
 
-CW 31: Refine UX & Integrate into other Skins  
-CW 32: Enable Import from Serato & explore possibilities for sharing  
-CW 33: *Buffer*  
-CW 34: *Buffer*
+- CW 31: Refine UX & Integrate into other Skins
+- CW 32: Enable Import from Serato & explore possibilities for sharing
+- CW 33: *Buffer*
+- CW 34: *Buffer*
 
 Deliverable: Integration with other tools (Serato Flip, Export/Import,
 Edit Dialog, Auto DJ?)
@@ -165,9 +165,9 @@ Edit Dialog, Auto DJ?)
 ### How I work
 
 I tend to branch out to other open source contributions when I want to
-work on something - I am almost unable to idle ;)  
+work on something - I am almost unable to idle ;)
 Evidence of that are regular reports on GitHub:
-<https://github.com/search?q=xerus2000&s=created&type=Issues>  
+<https://github.com/search?q=xerus2000&s=created&type=Issues>
 However, this can also lead to delays in what I was supposed to work on.
 
 I currently use <https://notion.so> to take notes and may link some
@@ -187,7 +187,7 @@ results into this wiki page when appropriate.
 
   - revisited & summarized Zulip discussion in wiki page (timeline,
     details)
-  - sifted through [reddi]t(https://www.reddit.com/search?q=serato%20flip) - 
+  - sifted through [reddi]t(https://www.reddit.com/search?q=serato%20flip) -
     summary for now in Notion
   - organized community call
 

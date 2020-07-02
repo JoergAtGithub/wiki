@@ -2,8 +2,7 @@
 
 *By Janek Fischer (xerus/xerus2000)*
 
-[Official GSoC
-Proposal](https://github.com/mixxxdj/mixxx/wiki/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
+[Official GSoC Proposal](https://github.com/mixxxdj/mixxx/wiki/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
 
 ## Introduction
 
@@ -208,8 +207,7 @@ Mo:
 
 Tu: Specify required controls & format in [Macros](Macros) page
 
-We: Architecture discussion & add [user
-stories](Mixxx%20Macros%20Requirements)
+We: Architecture discussion & add [user stories](Mixxx%20Macros%20Requirements)
 
 Th: Investigation of Mixxx code
 
@@ -226,7 +224,9 @@ Sa:
 
 ### CW 26
 
-Mo: Recording works!
+Mo: Recording Macros works!
+
+Unfortunately I wasn't able to do any further this week due to personal reasons.
 
 ### CW 27
 
@@ -234,8 +234,8 @@ Mo: Getting back into code, wiki work
 
 Tu: Make Macro recording realtime-proof
 
-We:
+We: Some clean-up
 
-Thu:
+Th: Work on wiki and start writing tests
 
 Fr:

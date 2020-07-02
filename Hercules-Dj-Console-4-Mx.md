@@ -43,7 +43,7 @@ The drivers for Windows and OS X install an application that can be used to conf
 
 
 # Options
-There are several options that can be configured for this mapping. You can edit these by opening the Hercules-DJ-Console-4-Mx-scripts.js file in your [[controller mapping file locations#user controller mapping folder]] in a text editor like Notepad, TextEdit, or gEdit and editing the values at the top of the file.
+There are several options that can be configured for this mapping. You can edit these by opening the Hercules-DJ-Console-4-Mx-scripts.js file in your [user controller mapping folder](#controller mapping file locations) in a text editor like Notepad, TextEdit, or gEdit and editing the values at the top of the file.
 
   * **autoHeadMix**: Indicates if the Headphone/Master mix should automatically be set to master when none of the headphone cue buttons are activated.
   * **autoHeadcueOnLoad**: Automatically enable the headphone cue select (PFL) of the deck when a song is loaded. (Like in virtual-dj)
@@ -52,7 +52,7 @@ There are several options that can be configured for this mapping. You can edit 
   * **naviScrollSpeed**: KeyRepeat speed for navigating up/down, in milliseconds. 100 is a good value. Lower values make it scroll faster.
   * **crossfaderScratchCurve**: The controller has two modes to report the crossfader position. The default/beatmix curve, and the scratch curve. The default curve reports the real position of the control. 
       The scratch curve just crossfades on the edges. Setting this setting to true, the curve will change to scratch curve when the scratch mode is on (scratch button). Setting it to false will not change it, so it will use the setting configured in the DJHercules Tray-icon configuration.
-  * **vinylSpeed**: Playback speed of the virtual vinyl that is being scratched. 45.00 and 33.33 are the common speeeds. (Lower number equals faster scratch)
+  * **vinylSpeed**: Playback speed of the virtual vinyl that is being scratched. 45.00 and 33.33 are the common speeds. (Lower number equals faster scratch)
   * **sensitivity**: Jog wheel sensitivity. You should configure this setting to the same value than in the DJHercules tray icon configuration. (Normal means 1/1). If crossfaderScratchCurve is true, or the setting is changed while Mixxx is active, this value will be detected automatically.
   * **alpha**: alpha value for the scratch filter (start with 1/8 (0.125) and tune from there)
   * **beta**: beta value for the scratch filter (start with alpha/32 and tune from there)
@@ -83,7 +83,7 @@ Note: The Microphone volume and the Headphone volume controls are hardware contr
 | Shift key           |           | When this button is pressed and released, it toggles between keypad functions 1-6 to keypad functions 7-12. When keypad functions 7-12 are active, the shift button is lit orange. |
 | Shift key           | Hold it  | This button has an additional functionality in Mixxx: If you keep the button pressed while pressing one of the other buttons that have the "Shift" mode, it triggers that action.  |
 | Play/Pause            |        | Play track if it is not playing; pause it if track is playing   |
-| Play/Pause            | Shift  | (2.1) Play backwards. If slip mode is enabled (triangle image in deere skin), it will resume beyond the previous position (i.e. the playback continues muted until the button is released)  |
+| Play/Pause            | Shift  | (2.1) Play backwards. If slip mode is enabled (triangle image in Deere skin), it will resume beyond the previous position (i.e. the playback continues muted until the button is released)  |
 | Stop                  |        | Moves the cursor to the beginning, or to the cue point if it is set, and stops playing it, if it was playing.  |
 | Stop                  | Shift  | (2.1) Brake (Slow it down progressively). Releasing it will continue playing, except if it has slowed a lot, in which case it stops.  |
 | Cue                   |         | Depends on the cue mode set in Mixxx preferences |

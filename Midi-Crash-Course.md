@@ -91,7 +91,7 @@ Every controller works differently, but these are some typical patterns.
 
 ### Buttons
 
-  - When pressed: Op-code `0x9`, value of `0xf7`
+  - When pressed: Op-code `0x9`, value of `0x7F`
   - When released: Op-code `0x9`, value of `0x00`
   - or Op-code `0x8`, value of `0x00`
 

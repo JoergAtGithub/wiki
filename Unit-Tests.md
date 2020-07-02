@@ -18,7 +18,7 @@ tests. Every time you push an update to a branch that you have an open
 pull request for, they will rebuild your branch and run the tests again.
 It is a good idea to run the tests locally first so you do not have to
 wait for CI to let you know you broke a test (which typically takes
-around an hour, sometimes longer) -- especially if you are working on a
+around an hour, sometimes longer) - especially if you are working on a
 complicated area of Mixxx where it is easy to break things. Travis is
 our CI service for GNU/Linux & Mac OS X and AppVeyor is our CI service
 for Windows. We use the free version of these services which have a time
@@ -37,35 +37,31 @@ To manually run the existing tests on your copy of Mixxx (required
 before final submission of patches or branch merge proposals,) do the
 following:
 
-1.  Build Mixxx with `scons test=1`
-2.  To run all tests: `$ ./mixxx-test` 
-3.  To run a specific test: `$ ./mixxx-test --gtest_filter=MyTest*`
+1.  Build Mixxx with `cmake --build . --target mixxx-test --parallel $(nproc)`
+2.  To run all tests: `./mixxx-test` 
+3.  To run a specific test: `./mixxx-test --gtest_filter=MyTest*`
 
 ## Writing a new test
 
 We strongly prefer that any new code classes have tests written for them
 as well in order to consider the code for inclusion into Mixxx
 
-Mixxx uses the [Google C++ Testing
-Framework](https://github.com/google/googletest). If it's new to you,
-read the [Google Test
-primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
-and [Google Mock
-primer](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md).
+Mixxx uses the [Google C++ Testing Framework](https://github.com/google/googletest).
+If it's new to you, read the 
+[Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
+and [Google Mock primer](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md).
 
-Make sure to read [this section of the Advanced testing
-guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)
-on floating point comparison. It is very important for writing Mixxx
-audio tests.
+Make sure to read
+[this section of the Advanced testing guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)
+on floating point comparison. It is very important for writing Mixxx audio tests.
 
 After you understand how it works, do the following:
 
 1.  Write the code that will test your chosen Mixxx class and place it
-    in mixxx/src/test/
-    1.  **If your class is ClassName, please name your test file
-        `classname_test.cpp`**
-2.  Follow the above steps for Running the tests. Mixxx will
-    automatically see and build your new test.
+    in src/test/  
+    **If your class is ClassName, please name your test file `classname_test.cpp`**
+2.  Follow the above steps for Running the tests. 
+    Mixxx will automatically see and build your new test.
 
 ## Using Mocks
 
@@ -76,12 +72,12 @@ testing Bar. Mocks allow you to solve this problem by creating a mock of
 Bar. Using a mocking framework, you create a MockBar class which returns
 arbitrary data.
 
-For mocking, we use the [Google
-Mock](http://code.google.com/p/googlemock/) framework. It integrates
-very well with Google Test. To see an example of mocking in action, see
-the EngineMaster tests in `src/test/enginemastertest.cpp`. The [Mocking
-For Dummies](http://code.google.com/p/googlemock/wiki/ForDummies) guide
-on the Google Mock wiki is great for learning more about mocking,
+For mocking, we use the
+[Google Mock framework](http://code.google.com/p/googlemock/). 
+It integrates very well with Google Test. To see an example of mocking 
+in action, see the EngineMaster tests in `src/test/enginemastertest.cpp`.
+The [Mocking For Dummies](http://code.google.com/p/googlemock/wiki/ForDummies)
+guide on the Google Mock wiki is great for learning more about mocking,
 dependency injection, and other advanced testing techniques.
 
 ## What do I test?
@@ -105,16 +101,13 @@ When you are investigating a bug report, begin by writing a test that
 exercises the bug. While you're fixing the bug you can run the test
 instead of starting up Mixxx every time you rebuild. This will improve
 your iteration time dramatically. Then, once you're done, you'll have a
-regression test all ready to go -- that particular bug should never
-happen again.
+regression test all ready to go - that particular bug should never
+slip through again.
 
 ## An example test
 
-Here's an excerpt of a test that Owen wrote for the master sync branch.
-[View the whole test on
-GitHub](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginesynctest.cpp).
-
-``` 
+Here's an excerpt of [a test that Owen wrote for the master sync branch](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginesynctest.cpp):
+``` cpp
 #include "test/mockedenginebackendtest.h"
 
 class EngineSyncTest : public MockedEngineBackendTest {
@@ -144,7 +137,7 @@ TEST_F(EngineSyncTest, InternalMasterSetFollowerSliderMoves) {
 
 This tests the interaction of various control objects when Master Sync
 is active. The function definition "TEST\_F" is actually a specialized
-macro -- the parameters are the name of the testing class. In this case,
+macro - the parameters are the name of the testing class. In this case,
 the class EngineSyncTest is a copy of another testing class called
 MockedEngineBackendTest, which sets up an engine master, two decks
 (called \[Test1\] and \[Test2\]), and even loads a couple of fake tracks
@@ -161,21 +154,21 @@ Note the use of ASSERT\_FLOAT\_EQ, which tests equality at a low enough
 tolerance that minor floating point errors won't cause test failures.
 
 Some tests only make sense if a track is playing. To test a playing
-track, you can set the "play" CO and then tell the testing enginemaster
+track, set the "play" CO and then tell the testing enginemaster
 to process one callback buffer:
 
-``` 
+``` cpp
 ControlObject::getControl(ConfigKey(m_sGroup1, "play"))->set(1.0);
 
 ProcessBuffer();
-
 ```
 
-You can find a test in enginesynctest.cpp that calls ProcessBuffer() a
-couple times to see if the actual playback rate of the decks has been
-correctly updated.
+You can find a test in [enginesynctest.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginesynctest.cpp)
+that calls ProcessBuffer() a couple times to see if the actual 
+playback rate of the decks has been correctly updated.
 
-The fake tracks always produce complete silence -- a buffer of all
+The fake tracks always produce complete silence - a buffer of all
 zeros. So this particular testing class is only useful for testing
 rates, seeking, and other playback metadata. If you want to test actual
-sound processing, take a look at enginebufferscalelineartest.cpp.
+sound processing, take a look at 
+[enginebufferscalelineartest.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginebufferscalelineartest.cpp).

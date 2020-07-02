@@ -232,7 +232,7 @@ high.
 ## Windows
 
   - **Sound API**: See [the
-    manual](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+    manual](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api)
     for information on choosing the best sound API for your setup
   - **ASIO sample rate**: The sample rate used by ASIO should be the
     same as the sample rate in Mixxx's Sound Hardware preferences.

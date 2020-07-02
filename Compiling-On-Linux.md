@@ -42,7 +42,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libmp3lame-dev libebur128-dev
 ```
 
-If you are building the Mixxx **master** Git branch, additionally run:
+If you are building the Mixxx **master** git branch, additionally run:
 
 ``` sh
 sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0 libqt5sql5-sqlite libmodplug-dev
@@ -165,12 +165,12 @@ branch). Building and installing Mixxx follows the standard CMake
 procedures.
 
 To build with CMake, first create a new directory and enter it.
-Typically it is in the top level of the Git repository, but it can be
-anywhere you want.
+This is typically under the project root, but it can be anywhere you want.
 ```sh
 mkdir cmake_build
 cd cmake_build
 ```
+
 Now configure CMake. This only needs to be done once; you don't need to
 repeat it when you compile Mixxx again. This step checks if you have all
 the dependencies installed, similar to the configure script of GNU
@@ -179,21 +179,25 @@ you can set this to anywhere as long as your `$PATH` environment
 variable includes a `bin` directory under the installation path
 (`/usr/bin` if the installation path is `/usr`).
 ```sh
-cmake -DCMAKE_INSTALL_PREFIX=/usr .. # Replace .. with the path to the git repository root if you are outside it
+cmake -DCMAKE_INSTALL_PREFIX=/usr .. # Replace .. with the path to the project root if you are outside it
 ```
-Compile Mixxx. Set the `--parallel` option to the number of CPU cores
+
+##### Compile Mixxx
+Set the `--parallel` option to the number of CPU cores
 you have. This will take a while, depending on the speed of your
 computer.
 ```sh
-cmake --build . --parallel 2
+cmake --build . --parallel `nproc`
 ```
-Contrary to the behavior of SCons, CMake does not move the produced
-binaries into the root folder of the git repository.
 
-Install Mixxx. If you want to compile and install in one step, you can
+Contrary to the behavior of SCons, CMake does not move the produced
+binaries into the root folder of the project.
+
+##### Install Mixxx
+If you want to compile and install in one step, you can
 skip the compilation step above and just run this command.
 ```sh
-cmake --build . --target install --parallel 2
+cmake --build . --target install --parallel `nproc`
 ```
 #### Debug build
 
@@ -212,8 +216,8 @@ We highly recommend installing [CCache](https://ccache.dev/) if you will
 be contributing code to Mixxx. If you won't be writing or testing code
 and are just building Mixxx to use it for yourself, you can skip
 installing CCache. CCache drastically speeds up the time to recompile
-Mixxx, especially when switching Git branches. CMake works with CCache
-automatically.
+Mixxx, especially when switching between git branches. CMake works with
+CCache automatically.
 
 You will probably want to increase the default ccache size of 5.0GB to
 something much larger to accommodate Mixxx's large build sizes. You can

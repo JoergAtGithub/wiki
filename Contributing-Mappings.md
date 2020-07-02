@@ -1,6 +1,4 @@
-# Contributing Mappings
-
-The more choice users have for devices to use with Mixxx, the better.
+The more choices users have for devices to use with Mixxx, the better.
 There are many DJ controllers on the market and most of them aren't very
 cheap. The Mixxx developers do not have resources to get every
 controller out there and map it, so the community generally relies on
@@ -8,13 +6,13 @@ users to contribute mappings. We try to make mapping as easy as
 possible, but making a complete mapping typically takes some technical
 skill beyond what many users have. So, getting a controller that doesn't
 have a Mixxx mapping yet and making a mapping is a great way to
-contribute to Mixxx if you have some technical skill but may not know
-C++.
+contribute to Mixxx, especially if you have some technical skill but are
+not familiar with C++.
 
 Controller mappings are written in
 [XML](MIDI%20controller%20mapping%20file%20format) and
-[JavaScript](MIDI%20scripting). While mappings can be made with just
-XML, most controllers will require some JavaScript to make a complete
+[JavaScript](MIDI%20scripting). While mappings can be made with only
+XML, most controllers will require some JavaScript for a complete
 mapping. Some controllers will require a mapping mostly or completely
 written in JavaScript. Both XML and JavaScript are fairly
 straightforward and easy to learn. Using JavaScript to map your
@@ -32,12 +30,9 @@ users on the [Mixxx forum](http://mixxx.org/forums/viewforum.php?f=7) as
 you develop the mapping.
 
 The processes and guidelines on this page are to ensure that new
-mappings included in Mixxx are quality, complete, and documented. This
-gives users the most choice and the ability to make their own informed
+mappings included in Mixxx are of good quality, complete, and documented. 
+This gives users the most choice and the ability to make their own informed
 decisions about what equipment to get for using Mixxx.
-
-This page is a continual work in progress and is updated as we learn
-from reviewing more mappings.
 
 ## Using Git with your mapping
 
@@ -82,13 +77,10 @@ link to the `res/controllers` directory in your git repository. For
 example, if your git repository is under the "software" directory in
 your home directory on GNU/Linux, run:
 
-`ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers`
+    ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers
 
-#### Working on your mapping and other branches simultaneously
-
-Refer to instructions on the [Using
-Git](Using%20Git#Working%20on%20mappings%20and%20skins%20separately%20from%20other%20changes)
-page.
+Instructions for working on your mapping and other branches simultaneously are on the 
+[Using Git](Using-Git#working-on-mappings-and-skins-separately-from-other-changes) page.
 
 ### Submitting your mapping for review
 
@@ -100,15 +92,18 @@ branch that you started your git branch from (if it isn't, you'll see
 commits unrelated to your mapping included in your pull request). If you
 accidently started from the wrong branch when working on your mapping,
 you can also [rebase and change the target of your
-PR](https://mixxx.org/wiki/doku.php/using_git#targeting_another_base_branch).
+PR](using-git#targeting-another-base-branch).
 
 Although we try not to let pull requests linger without review, keep in
 mind that Mixxx is a volunteer project and someone will review your pull
 request when they have time available. Mappings will be reviewed to
-check that they follow the
-[\#design-guidelines](#design-guidelines),-[\#coding-conventions-for-JavaScript](#coding-conventions-for-JavaScript),-[\#coding-conventions-for-XML](#coding-conventions-for-XML),-to-check-that-the-mapping-is-[documented
-well on the wiki](#documenting-the-mapping), and to look for potential
-bugs. To update your mapping in response to reviewers' comments, edit
+- check that they follow the [design guidelines](#design-guidelines) and
+- [coding conventions for JavaScript](#coding-conventions-for-JavaScript) and
+- [coding conventions for XML](#coding-conventions-for-XML)
+- to check that the mapping is [documented well on the wiki](#documenting-the-mapping)
+- to look for potential bugs
+
+To update your mapping in response to reviewers' comments, edit
 your file(s), make a new git commit, and push your git commit. The new
 commit(s) will automatically show up in the pull request.
 

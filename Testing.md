@@ -10,7 +10,7 @@ library database. We try to ensure that upgrading to new versions does
 not interfere with settings from older versions, but we might not catch
 every potential issue immediately. You can make a backup by copying the
 whole folder [where the mixxx.log file
-is](Finding%20the%20mixxx.log%20file). If you want to switch back to a
+is](finding-the-mixxx.log-file). If you want to switch back to a
 stable release of Mixxx after testing a development version, you can
 copy your backed up settings folder to its original location.
 
@@ -24,12 +24,12 @@ until we're fairly confident they are not going to create serious
 issues. However, if you want to perform with these, do so at your own
 risk. If you do decide to perform with a master build, test the same
 build for several practice sets before your gig to check that it works
-with your particular setup. If you encounter a bug, please [[report
-it|reporting-bugs]].
+with your particular setup. If you encounter a bug, please [report
+it](reporting-bugs).
 
 If you are using a GNU/Linux distribution other than Ubuntu or a
 derivative distribution that is compatible with Ubuntu .deb packages,
-you will need to [[compile from source code|compiling-on-Linux]] to
+you will need to [compile from source code](compiling-on-Linux) to
 test the master git branch.
 
 ## GitHub pull requests
@@ -50,5 +50,5 @@ to get the link to the installer MSI file.
 
 For Mac OS X and GNU/Linux, you will need to [compile Mixxx from
 source](home#compile-mixxx-from-source-code) yourself.
-Refer to the [Using Git](Using%20Git) wiki page for how to set up Git on
+Refer to the [Using Git](using-git) wiki page for how to set up Git on
 your computer for downloading the code to test pull requests.

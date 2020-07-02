@@ -171,7 +171,7 @@ move your controller to this table.
 | [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI            | 1.11                          | 2012     |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | discontinued      | basic 2 deck                                                 | yes                        | no               | MIDI            | 1.10.1                        | 2012     |
 | [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI \[15\]     | 1.7                           | 2004     |
-| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued      | 2 deck\[16\] all-in-one                                      | yes                        | yes              | MIDI \[17\]     | 1.11                          | 2010     |
+| [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued      | 4 deck\[16\] all-in-one                                      | yes                        | yes              | USB Bulk \[17\]     | 1.11                          | 2010     |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                            | yes                        | no               | HID             | 1.11                          | 2003     |
 | [Hercules DJ Console Mk4](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                            | yes                        | no               | USB Bulk        | 1.8                           | 2010     |
 | [Hercules DJ Control MP3](Hercules_PC_DJ_Console)                                                  | discontinued      | 2 deck all-in-one                                            | no                         | \-               | HID             | 1.11                          | 2006     |
@@ -754,8 +754,8 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 14. 4 deck control available by toggling between decks 1/3 and decks 2/4
 
 15. This device is not USB MIDI class compliant. Its signals are
-    translated to MIDI by special drivers on macOS. There is no driver
-    available for Linux or Windows.
+    translated to MIDI by special drivers on macOS. On Linux, 
+    [hdjd](https://github.com/nealey/hdjd) can be used.
 
 16. 4 deck control available by toggling between decks 1/3 and decks 2/4
 

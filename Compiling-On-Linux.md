@@ -1,5 +1,3 @@
-# Compiling on Linux
-
 Compiling software is the process of turning human-readable source code
 into machine code a computer can execute. Compiling Mixxx is fairly
 straightforward on Linux. The steps below outline what to do.
@@ -13,7 +11,7 @@ Mixxx relies on several external libraries for various features.
 If your distribution is Debian 9/10 based (such as Ubuntu 16.04/18.04), you can install
 them by running:
 
-```bash
+```sh
 sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
@@ -26,13 +24,13 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libmp3lame-dev libebur128-dev
 ```
 
-Note: libfaad-dev libmp4v2-dev required for M4A support. The
-installation order is
-[important](https://bugs.launchpad.net/mixxx/+bug/1464120).
+Note: `libfaad-dev libmp4v2-dev` are required for M4A support. The
+installation order is [important](https://bugs.launchpad.net/mixxx/+bug/1464120).
 
-Beginning with Debian 11 (Ubuntu 20.04) support for libmp4v2 has been dropped. Instead install additional FFmpeg packages to build Mixxx with FFmpeg enabled:
+Beginning with Debian 11 (Ubuntu 20.04) support for libmp4v2 has been dropped.
+Instead install additional FFmpeg packages to build Mixxx with FFmpeg enabled:
 
-```bash
+```sh
 sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
@@ -46,30 +44,27 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
 
 If you are building the Mixxx **master** Git branch, additionally run:
 
-``` bash
+``` sh
 sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0 libqt5sql5-sqlite libmodplug-dev
 ```
 
-If you are building Mixxx **2.2** Git branch, additionally run:
-
-``` bash
+If you are building Mixxx **2.2**, additionally run:
+``` sh
 sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libqt5sql5-sqlite libmodplug-dev
 ```
 
 If you are building Mixxx **2.1**, additionally run:
-
-``` bash
+``` sh
 sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
 ```
 
 ### Fedora
 
-On Fedora, [enable the RPMFusion package
-repository](http://rpmfusion.org/Configuration). You only need to enable
-the *free* repository; the *nonfree* repository is not necessary for Mixxx.
+On Fedora, [enable the RPMFusion package repository](http://rpmfusion.org/Configuration).
+You only need to enable the *free* repository; the *nonfree* repository is not necessary for Mixxx.
 Then run:
 
-``` bash
+``` sh
 sudo dnf groupinstall "Development Tools"
 sudo dnf install gcc-c++ lame-devel
 sudo dnf builddep mixxx
@@ -78,43 +73,21 @@ sudo dnf builddep mixxx
 ### Arch & Derivatives
 
 If you are developing in Arch, you should have the
-[base-devel](https://www.archlinux.org/groups/x86_64/base-devel/) group
+[base-devel group](https://www.archlinux.org/groups/x86_64/base-devel/)
 installed.
 
 The tools you are going to need for working with Mixxx are:
-
-``` bash
-pacman -S git gcc
+``` sh
+pacman -S git gcc cmake
 ```
-
 Alternatively, you can substitute gcc with clang.
 
-You will also need SCons-2.\* to build the project. Arch no longer
-provides scons-2.\* in the repos and since mixxx's build system doesn't
-work with python3 you must use a standalone version.
-
-The workaround is quite easy, as mentioned at the top of this page:
-
-Download a standalone version of SCons 2.5.1 from
-[here](https://sourceforge.net/projects/scons/files/scons/2.5.1/scons-2.5.1.tar.gz/download)
-and then do the following:
-
-``` bash
-tar xzvf /path/to/scons-2.5.1.tar.gz scons-2.5.1/
-mv scons-2.5.1 /path/to/where-you-want-it-to-live
-
-# and then inside the cloned mixxx directory use it as such
-python2 /path/to/where-you-want-it-to-live/script/scons ...
-```
-
 Then you just need the dependencies:
-
-``` bash
-# install the dependencies
+``` sh
 sudo pacman -S libid3tag libmad portaudio qt libogg \
-libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
-taglib protobuf vamp-plugin-sdk rubberband \
-chromaprint sqlite upower lilv lame
+    libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
+    taglib protobuf vamp-plugin-sdk rubberband \
+    chromaprint sqlite upower lilv lame
 ```
 
 ### Non-system Qt

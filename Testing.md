@@ -1,5 +1,3 @@
-\======= Testing Mixxx development ======
-
 As we develop new features and fix bugs for Mixxx, we need feedback from
 users. Testing the latest developments is a great way to contribute to
 Mixxx.
@@ -18,7 +16,7 @@ copy your backed up settings folder to its original location.
 
 ## Master builds
 
-Our build server regularly makes new Mixxx installers from our master
+Our build server regularly creates new Mixxx installers from our master
 git branch [available for
 download](http://downloads.mixxx.org/builds/master/release/). We try to
 keep the master branch reasonably stable and not merge new features
@@ -26,12 +24,12 @@ until we're fairly confident they are not going to create serious
 issues. However, if you want to perform with these, do so at your own
 risk. If you do decide to perform with a master build, test the same
 build for several practice sets before your gig to check that it works
-with your particular setup. If you encounter a bug, please [report
-it](reporting%20bugs).
+with your particular setup. If you encounter a bug, please [[report
+it|reporting-bugs]].
 
 If you are using a GNU/Linux distribution other than Ubuntu or a
 derivative distribution that is compatible with Ubuntu .deb packages,
-you will need to [compile from source code](compiling%20on%20Linux) to
+you will need to [[compile from source code|compiling-on-Linux]] to
 test the master git branch.
 
 ## GitHub pull requests
@@ -50,7 +48,7 @@ all checks", then "Details" for AppVeyor. On the AppVeyor website, click
 the 64 bit ("dist64") or 32 bit ("dist32") build, then click "Artifacts"
 to get the link to the installer MSI file.
 
-For Mac OS X and GNU/Linux, you will need to [start\#compile Mixxx from
-source code](start#compile%20Mixxx%20from%20source%20code) yourself.
+For Mac OS X and GNU/Linux, you will need to [compile Mixxx from
+source](home#compile-mixxx-from-source-code) yourself.
 Refer to the [Using Git](Using%20Git) wiki page for how to set up Git on
 your computer for downloading the code to test pull requests.

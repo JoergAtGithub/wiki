@@ -1,5 +1,3 @@
-# MIDI Controller Mapping File Format
-
 Support for additional MIDI devices can be added to Mixxx by creating a
 new "MIDI preset" file. This file tells Mixxx how to translate, or map,
 MIDI messages from a controller into commands that Mixxx understands.

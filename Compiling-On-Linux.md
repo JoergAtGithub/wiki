@@ -63,7 +63,6 @@ sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg l
 On Fedora, [enable the RPMFusion package repository](http://rpmfusion.org/Configuration).
 You only need to enable the *free* repository; the *nonfree* repository is not necessary for Mixxx.
 Then run:
-
 ``` sh
 sudo dnf groupinstall "Development Tools"
 sudo dnf install gcc-c++ lame-devel
@@ -82,7 +81,7 @@ pacman -S git gcc cmake
 ```
 Alternatively, you can substitute gcc with clang.
 
-Then you just need the dependencies:
+Then install the dependencies:
 ``` sh
 sudo pacman -S libid3tag libmad portaudio qt libogg \
     libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
@@ -146,14 +145,12 @@ using your normal unprivileged user account (press Ctrl + D or run
 `exit`).
 
 If you want to compile Mixxx, you'll need to download the source code.
-Either grab the source for the latest release from our [downloads
-page](http://www.mixxx.org/download.php), or checkout a snapshot from
-our git repository:
+Either grab the source for the latest release from the
+[downloads page on the website](https://www.mixxx.org/download), 
+or checkout a snapshot from our git repository:
 
-  - For the latest development (master) branch: `git clone
-    https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 2.2
-    https://github.com/mixxxdj/mixxx.git`
+  - For the latest development (master) branch: `git clone https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b <version> https://github.com/mixxxdj/mixxx.git`
 
 To update to the latest version of a git branch, enter (`cd` into) the
 directory you cloned the git repository into and run `git pull`. Refer
@@ -170,10 +167,10 @@ procedures.
 To build with CMake, first create a new directory and enter it.
 Typically it is in the top level of the Git repository, but it can be
 anywhere you want.
-
-    $ mkdir cbuild
-    $ cd cbuild
-
+```sh
+mkdir cmake_build
+cd cmake_build
+```
 Now configure CMake. This only needs to be done once; you don't need to
 repeat it when you compile Mixxx again. This step checks if you have all
 the dependencies installed, similar to the configure script of GNU
@@ -181,23 +178,23 @@ autotools. `/usr` is used as the installation path in this example, but
 you can set this to anywhere as long as your `$PATH` environment
 variable includes a `bin` directory under the installation path
 (`/usr/bin` if the installation path is `/usr`).
-
-    $ cmake -DCMAKE_INSTALL_PREFIX=/usr /path/to/mixxx/git/repository
-
+```sh
+cmake -DCMAKE_INSTALL_PREFIX=/usr .. # Replace .. with the path to the git repository root if you are outside it
+```
 Compile Mixxx. Set the `--parallel` option to the number of CPU cores
 you have. This will take a while, depending on the speed of your
 computer.
-
-    $ cmake --build . --parallel 2
-
+```sh
+cmake --build . --parallel 2
+```
 Contrary to the behavior of SCons, CMake does not move the produced
 binaries into the root folder of the git repository.
 
 Install Mixxx. If you want to compile and install in one step, you can
 skip the compilation step above and just run this command.
-
-    $ cmake --build . --target install --parallel 2
-
+```sh
+cmake --build . --target install --parallel 2
+```
 #### Debug build
 
 If you want to make a debug build, add `-DCMAKE_BUILD_TYPE=Debug
@@ -221,8 +218,9 @@ automatically.
 You will probably want to increase the default ccache size of 5.0GB to
 something much larger to accommodate Mixxx's large build sizes. You can
 adjust the cache size with the --set-config flag:
-
-    ccache --set-config=max_size=20.0G
+```sh
+ccache --set-config=max_size=20.0G
+```
 
 #### Non-System-Qt
 
@@ -242,9 +240,9 @@ build system rather than the more common GNU autotools and GNU make.
 Running `scons -h` in the "mixxx" directory shows a complete list of
 build flags if you'd like to customize. To compile without any special
 options, as a regular user, run:
-
-    scons prefix=INSTALLATION_DIRECTORY -j NUMBER_OF_CPU_CORES optimize=native
-
+```sh
+scons prefix=INSTALLATION_DIRECTORY -j NUMBER_OF_CPU_CORES optimize=native
+```
 Change INSTALLATION\_DIRECTORY to the location you want to install Mixxx
 to. If you want to install Mixxx for all users of the OS, you do not
 need to specify a prefix and can leave it as the default, which is
@@ -261,9 +259,9 @@ performance.
 
 Once Mixxx has compiled, if you set the prefix options for scons to a
 directory that your normal user does not have write access to, run
-
-    sudo scons prefix=INSTALLATION_DIRECTORY install
-
+```sh
+sudo scons prefix=INSTALLATION_DIRECTORY install
+```
 to install it. If you set the prefix to a directory your user does have
 write access to, then you do not need `sudo` before `scons`. The prefix
 option must be the same as before or scons will recompile Mixxx before
@@ -298,13 +296,13 @@ installed.
 
 #### Optional: Compile with Clang
 
-[Clang](http://clang.llvm.org) is a C/C++ compiler based on
-[LLVM](http://llvm.org). Using Clang has various benefits:
+[Clang](http://clang.llvm.org) is a C/C++ compiler based on [LLVM](http://llvm.org).
+Using Clang has various benefits:
 
-  - [Better error messages.](http://clang.llvm.org/diagnostics.html)
-  - Colorized compilation output.
-  - Better tools for analyzing problems in your program ([Address
-    Sanitizer](http://clang.llvm.org/docs/AddressSanitizer.html),
+  - [Better error messages](http://clang.llvm.org/diagnostics.html)
+  - Colorized compilation output
+  - Better tools for analyzing problems in your program (
+    [Address Sanitizer](http://clang.llvm.org/docs/AddressSanitizer.html),
     [Thread Sanitizer](http://clang.llvm.org/docs/ThreadSanitizer.html),
     [MemorySanitizer](http://clang.llvm.org/docs/MemorySanitizer.html),
     etc.)
@@ -351,11 +349,10 @@ recompiling Mixxx.
 
 ## Run without installing
 
-If you want to just run this copy without installing, from the same
-directory, run: (WARNING this uses and may overwrite user-wide configs)
+If you want to run your compiled version without installing,
+from the same directory, run:
 
-    ./mixxx --resourcePath res/
+    ./mixxx --resourcePath res/ --settingsPath <folder>
 
-To also run from a different settings folder use:
-
-    ./mixxx --resourcePath res/ --settingsPath /*the folder you like*/
+You can omit the `--settingsPath` argument, but then mixxxx will
+use and potentially overwrite your user-wide configs.

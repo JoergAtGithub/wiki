@@ -1,5 +1,3 @@
-# Roland DJ-505
-
 ![https://static.roland.com/assets/images/products/gallery/dj-505\_t\_gal.jpg](https://static.roland.com/assets/images/products/gallery/dj-505_t_gal.jpg)
 
 The Roland DJ-505 is an all-in-one USB MIDI controller with an

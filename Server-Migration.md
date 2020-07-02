@@ -30,9 +30,12 @@ We can preview multiple different PRs via the Netlify interface.
 
 ### Migration
 
-1.  Merge PR: <https://github.com/mixxxdj/website/pull/98>
-2.  Enable Netlify for mixxxdj/website
-3.  Switch mixxx.org domain over to Netlify
+[x] Merge PR: <https://github.com/mixxxdj/website/pull/98>
+[x] Enable Netlify for mixxxdj/website: https://mixxx-website.netlify.app/
+[x] Migrate forum
+[ ] Migrate manual
+[ ] Switch mixxx.org domain over to Netlify
+[ ] Write Netlify redirects for old forum and manual links
 
 ## Manual
 
@@ -61,10 +64,11 @@ on `docs.mixxx.org`.
 
 ### Migration
 
-1.  Merge PR: <https://github.com/mixxxdj/manual/pull/113>
-2.  Enable Travis CI for mixxxdj/manual repository
-3.  Enable Netlify for mixxxdj/manual repository
-4.  Add custom domain for the manual
+[ ] Merge PR: <https://github.com/mixxxdj/manual/pull/113>
+[ ] Enable Travis CI for mixxxdj/manual repository
+[ ] Enable Netlify for mixxxdj/manual repository
+[ ] Add custom domain for the manual
+[ ] Write Netlify redirect for old mixxx.org/manual URLs
 
 ## Forum
 
@@ -79,10 +83,10 @@ We can switch to a hosted Discourse instance and host it at
 
 ### Migration
 
-1.  Apply for a hosted Discourse forum (already done by Be)
-2.  Point forums.mixx.org subdomain to hosted Discourse instance
-3.  Migrate existing content using an SQL dump from our current phpBB
-    install
+[x] Apply for a hosted Discourse forum: https://mixxx.discourse.group/
+[x] Get SQL dump of phpBB data and import into Discourse locally
+[x] Upload Discourse backup to https://mixxx.discourse.group/
+[ ] Write Netlify redirect from https://mixxx.org/forums to https://mixxx.discourse.group/
 
 ## Wiki
 
@@ -106,12 +110,10 @@ This will move the Wiki from mixxx.org/wiki to
 
 ### Migration
 
-1.  Enable GitHub Wiki on mixxxdj/mixxx repository
-2.  Migrate existing content from DocuWiki to GH Wiki
-    (<https://github.com/hoxu/dokuwiki2git>) (We need RJ to give us
-    access to server data)
-3.  Add redirect from `/wiki` to
-    `https://github.com/mixxxdj/mixxx/wiki`.
+[x] Enable GitHub Wiki on mixxxdj/mixxx repository
+[x] Migrate existing content from DocuWiki to GH Wiki (<https://github.com/hoxu/dokuwiki2git>)
+[x] Add Apache redirect from `/wiki` `https://github.com/mixxxdj/mixxx/wiki`.
+[ ] Add Netlify redirect
 
 ## Build Server
 
@@ -135,8 +137,8 @@ Jenkins.
 
 ### Migration
 
-1.  Get SSH access to the download server
-2.  Modify Travis CI config to deploy build artifacts
+[ ] Get SSH access to the download server
+[ ] Modify Travis CI config to deploy build artifacts
 
 ## Download Server
 

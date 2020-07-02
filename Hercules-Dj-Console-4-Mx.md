@@ -70,7 +70,6 @@ There are several options that can be configured for this mapping. You can edit 
 | Folders / Files  | | Switches between browsing the sidebar in the library, or the list.  If Folders is pressed twice, opens/closes the tree branch |
 | Files  | AutoDJ on | The next song in the Auto DJ cue is skipped  |
 | Up / Down        | | Moves up and down in the library track list.  If held down and any of the jog wheels is moved, then the jog wheel takes over the cursor movement until the up/down button is released   |
-
 | Cue/Mix          | | Control mix of master and PFL (cue) output in headphones                                                        |
 | Mic On/Off       | | Enables or disables the microphone.  The  microphone is always mixed in hardware. The trayicon driver configuration allows to choose between direct mixing, or mix it only when enabled with the button. (2.1) It no longer tries to activate Mixxx microphone talkover.        |
 

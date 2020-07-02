@@ -1,5 +1,3 @@
-# Unit testing
-
 Essential to any software quality control process is unit testing:
 isolating each piece of a system and hitting it with all manner of valid
 and invalid input values to check for all of the following:
@@ -30,8 +28,8 @@ test actually broke or just timed out.
 
 Writing tests can be difficult at first, especially when trying to
 isolate pieces of a very large codebase like Mixxx. However the payoff
-is large, and as the test suite grows it will become easier and easier
-to add new tests.
+is great, and as the test suite grows it becomes gradually easier to 
+add new tests.
 
 ## Running the test suite
 

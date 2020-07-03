@@ -44,23 +44,22 @@ following:
 ## Writing a new test
 
 We strongly prefer that any new code classes have tests written for them
-as well in order to consider the code for inclusion into Mixxx
+as well in order to consider the code for inclusion into Mixxx.
 
 Mixxx uses the [Google C++ Testing Framework](https://github.com/google/googletest).
-If it's new to you, read the 
-[Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
-and [Google Mock primer](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md).
+If it's new to you, read the [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
+and [Google Mock primer](https://github.com/google/googletest/blob/master/googlemock/docs/for_dummies.md).
 
 Make sure to read
-[this section of the Advanced testing guide](http://code.google.com/p/googletest/wiki/AdvancedGuide#Floating-Point_Comparison)
-on floating point comparison. It is very important for writing Mixxx audio tests.
+[this section of the advanced testing guide on floating point comparison](https://github.com/google/googletest/blob/master/googletest/docs/advanced.md#floating-point-comparison).
+It is very important for writing Mixxx audio tests.
 
 After you understand how it works, do the following:
 
-1.  Write the code that will test your chosen Mixxx class and place it
-    in src/test/  
+1.  Write the code that will test your chosen Mixxx class and place it in src/test/  
     **If your class is ClassName, please name your test file `classname_test.cpp`**
-2.  Follow the above steps for Running the tests. 
+2.  Add it the mixxx-test target in the CMakeLists.txt
+3.  Follow the above steps for Running the tests. 
     Mixxx will automatically see and build your new test.
 
 ## Using Mocks
@@ -69,15 +68,15 @@ Mocking is an advanced technique for testing code. Say you have two
 classes, Foo and Bar. If Foo relies on calling methods of Bar, then
 using traditional unit testing methods you can't test Foo without also
 testing Bar. Mocks allow you to solve this problem by creating a mock of
-Bar. Using a mocking framework, you create a MockBar class which returns
-arbitrary data.
+Bar. Using a mocking framework, you create a MockBar class with a stub
+implementation that usually follows predefined behavior.
 
-For mocking, we use the
-[Google Mock framework](http://code.google.com/p/googlemock/). 
-It integrates very well with Google Test. To see an example of mocking 
-in action, see the EngineMaster tests in `src/test/enginemastertest.cpp`.
-The [Mocking For Dummies](http://code.google.com/p/googlemock/wiki/ForDummies)
-guide on the Google Mock wiki is great for learning more about mocking,
+For mocking, we use the [Google Mock framework](https://github.com/google/googletest/tree/master/googlemock). 
+It integrates very well with Google Test.
+To see an example of mocking in action, see the EngineMaster tests in
+[src/test/enginemastertest.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/test/enginemastertest.cpp).
+The [Mocking For Dummies](https://github.com/google/googletest/blob/master/googlemock/docs/for_dummies.md)
+guide in the Google Mock project is great for learning more about mocking,
 dependency injection, and other advanced testing techniques.
 
 ## What do I test?

@@ -1,5 +1,3 @@
-# Components JS Library
-
 Components JS is a JavaScript library that makes it easier to code
 controller mappings for Mixxx. It lets you focus more on your controller
 and less on the details of MIDI signals and how Mixxx works. It is

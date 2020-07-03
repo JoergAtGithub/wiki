@@ -1,5 +1,3 @@
-\======= Mixxx Contribution Guidelines ======
-
 ## All contributors
 
   - Each feature/bug fix should be done on its own Git branch so they

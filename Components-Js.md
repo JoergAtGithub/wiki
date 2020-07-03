@@ -20,9 +20,11 @@ file](MIDI%20controller%20mapping%20file%20format), load the Lodash
 library and the Components library (above the link to your controller's
 script file):
 
-    <file filename="lodash.mixxx.js"/>
-    <file filename="midi-components-0.0.js"/>
-    <file functionprefix="MyController" filename="My_Controller_SCRIPT.js"/>
+```xml
+<file filename="lodash.mixxx.js"/>
+<file filename="midi-components-0.0.js"/>
+<file functionprefix="MyController" filename="My_Controller_SCRIPT.js"/>
+```
 
 Components JS uses a few functions from [Lodash](http://lodash.com/),
 which is why they both need to be loaded. Importing the
@@ -48,74 +50,76 @@ different layout, some changes to this general structure may be
 necessary. There is a lot to explain here, so worry about understanding
 every detail yet:
 
-    // Declare the variable for your controller and assign it to an empty object
-    var MyController = {};
-    
-    // Mixxx calls this function on startup or when the controller
-    // is enabled in the Mixxx Preferences
-    MyController.init = function () {
-        // create an instance of your custom Deck object for each side of your controller
-        MyController.leftDeck = new MyController.Deck([1, 3], 1);
-        MyController.rightDeck = new MyController.Deck([2, 4], 2);
-    };
-    
-    MyController.shutdown = function () {
-        // send whatever MIDI messages you need to turn off the lights of your controller
-    };
-    
-    // implement a constructor for a custom Deck object specific to your controller
-    MyController.Deck = function (deckNumbers, midiChannel) {
-        // Call the generic Deck constructor to setup the currentDeck and deckNumbers properties,
-        // using Function.prototype.call to assign the custom Deck being constructed
-        // to 'this' in the context of the generic components.Deck constructor
-        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
-        components.Deck.call(this, deckNumbers);
-        this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
-        this.cueButton = new components.CueButton([0x90 + midiChannel, 0x02]);
-        this.syncButton = new components.SyncButton([0x90 + midiChannel, 0x03]);
-        this.pflButton = new components.Button({
-            midi: [0x90 + channel, 0x04],
-            key: 'pfl',
+```javascript
+// Declare the variable for your controller and assign it to an empty object
+var MyController = {};
+
+// Mixxx calls this function on startup or when the controller
+// is enabled in the Mixxx Preferences
+MyController.init = function () {
+    // create an instance of your custom Deck object for each side of your controller
+    MyController.leftDeck = new MyController.Deck([1, 3], 1);
+    MyController.rightDeck = new MyController.Deck([2, 4], 2);
+};
+
+MyController.shutdown = function () {
+    // send whatever MIDI messages you need to turn off the lights of your controller
+};
+
+// implement a constructor for a custom Deck object specific to your controller
+MyController.Deck = function (deckNumbers, midiChannel) {
+    // Call the generic Deck constructor to setup the currentDeck and deckNumbers properties,
+    // using Function.prototype.call to assign the custom Deck being constructed
+    // to 'this' in the context of the generic components.Deck constructor
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+    components.Deck.call(this, deckNumbers);
+    this.playButton = new components.PlayButton([0x90 + midiChannel, 0x01]);
+    this.cueButton = new components.CueButton([0x90 + midiChannel, 0x02]);
+    this.syncButton = new components.SyncButton([0x90 + midiChannel, 0x03]);
+    this.pflButton = new components.Button({
+        midi: [0x90 + channel, 0x04],
+        key: 'pfl',
+    });
+    this.hotcueButtons = [];
+    for (var i = 1; i <= 8; i++) {
+        this.hotcueButtons[i] = new components.HotcueButton({
+            midi: [0x90 + midiChannel, 0x10 + i],
+            number: i,
         });
-        this.hotcueButtons = [];
-        for (var i = 1; i <= 8; i++) {
-            this.hotcueButtons[i] = new components.HotcueButton({
-                midi: [0x90 + midiChannel, 0x10 + i],
-                number: i,
-            });
+    }
+
+    this.volume = new components.Pot({
+        midi: [0xB0 + midiChannel, 0x01],
+        inKey: 'volume',
+    });
+
+    this.eqKnob = [];
+    for (var k = 1; k <= 3; k++) {
+        this.eqKnob[k] = new components.Pot({
+            midi: [0xB0 + midiChannel, 0x02 + k],
+            group: '[EqualizerRack1_' + this.currentDeck + '_Effect1]',
+            inKey: 'parameter' + k,
+        });
+    }
+
+    // ... define as many other Components as necessary ...
+
+    // Set the group properties of the above Components and connect their output callback functions
+    // Without this, the group property for each Component would have to be specified to its
+    // constructor.
+    this.reconnectComponents(function (c) {
+        if (c.group === undefined) {
+            // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer
+            // so 'this' refers to the custom Deck object being constructed
+            c.group = this.currentDeck;
         }
-        
-        this.volume = new components.Pot({
-            midi: [0xB0 + midiChannel, 0x01],
-            inKey: 'volume',
-        });
-        
-        this.eqKnob = [];
-        for (var k = 1; k <= 3; k++) {
-            this.eqKnob[k] = new components.Pot({
-                midi: [0xB0 + midiChannel, 0x02 + k],
-                group: '[EqualizerRack1_' + this.currentDeck + '_Effect1]',
-                inKey: 'parameter' + k,
-            });
-        }
-        
-        // ... define as many other Components as necessary ...
-    
-        // Set the group properties of the above Components and connect their output callback functions
-        // Without this, the group property for each Component would have to be specified to its
-        // constructor.
-        this.reconnectComponents(function (c) {
-            if (c.group === undefined) {
-                // 'this' inside a function passed to reconnectComponents refers to the ComponentContainer
-                // so 'this' refers to the custom Deck object being constructed
-                c.group = this.currentDeck;
-            }
-        });
-        // when called with JavaScript's 'new' keyword, a constructor function
-        // implicitly returns 'this'
-    };
-    // give your custom Deck all the methods of the generic Deck in the Components library
-    MyController.Deck.prototype = new components.Deck();
+    });
+    // when called with JavaScript's 'new' keyword, a constructor function
+    // implicitly returns 'this'
+};
+// give your custom Deck all the methods of the generic Deck in the Components library
+MyController.Deck.prototype = new components.Deck();
+```
 
 ## Component
 
@@ -126,13 +130,13 @@ information needed to receive MIDI input from that component and send
 MIDI signals out to the controller to activate its LED(s).
 
 Components should generally be properties of a
-[\#ComponentContainer](#ComponentContainer) object. Most Components
+[ComponentContainer](#componentcontainer-and-managing-layers) object. Most Components
 should be properties of a custom [\#Deck](#Deck) object as demonstrated
 in the example in the previous section.
 
 In general, you should not use the basic Component constructor directly;
-instead, use one of its subtypes ([\#Button](#Button), [\#Pot](#Pot), or
-[\#Encoder](#Encoder)). If you do need to use Component directly, do not
+instead, use one of its subtypes ([Button](#Button), [Pot](#Pot), or
+[Encoder](#Encoder)). If you do need to use Component directly, do not
 confuse it with the `components` object (plural, lower case) that
 contains all the objects for the library; access Component as
 `components.Component` (plural lower case then singular upper case).
@@ -142,16 +146,18 @@ contains all the objects for the library; access Component as
 The input function of each Component needs to be mapped to the incoming
 MIDI signals in the XML file. For example:
 
-    <control>
-        <group>[Channel1]</group>
-        <!-- MyController.leftDeck would be an instance of a custom Deck. -->
-        <key>MyController.leftDeck.quantizeButton.input</key>
-        <status>0x90</status>
-        <midino>0x01</midino>
-        <options>
-            <script-binding/>
-        </options>
-    </control>
+```xml
+<control>
+    <group>[Channel1]</group>
+    <!-- MyController.leftDeck would be an instance of a custom Deck. -->
+    <key>MyController.leftDeck.quantizeButton.input</key>
+    <status>0x90</status>
+    <midino>0x01</midino>
+    <options>
+        <script-binding/>
+    </options>
+</control>
+```
 
 In the future Mixxx will be able to [register MIDI inputs from
 JavaScript](registering%20midi%20input%20handlers%20from%20javascript),
@@ -171,38 +177,42 @@ functionality of the Component. The constructors for all Component
 subtypes work the same way. Most Components need at least these
 properties defined:
 
-  - **midi** (array with 2 numbers): the first two MIDI bytes that the
+  - `midi` (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state.
     Refer to the [MIDI Crash Course](MIDI%20Crash%20Course) if you do
     not understand what this means.
-  - **inKey** (string): the key of the [Mixxx
+  - `inKey` (string): the key of the [Mixxx
     ControlObject](mixxxcontrols) that this Component manipulates when
     it receives a MIDI input signal
-  - **outKey** (string): when the [Mixxx ControlObject](mixxxcontrols)
+  - `outKey` (string): when the [Mixxx ControlObject](mixxxcontrols)
     specified by this key changes value, the `output` function will be
     called
-  - **group** (string): the group of the [Mixxx
+  - `group` (string): the group of the [Mixxx
     ControlObjects](mixxxcontrols) for both inKey and outKey, for
-    example \[Channel1\] for deck 1
+    example `[Channel1]` for deck 1
 
 For example:
 
-    var quantizeButton = new components.Button({
-        midi: [0x91, 0x01],
-        group: '[Channel1]'
-        inKey: 'quantize',
-        outKey: 'quantize',
-    });
+```javascript
+var quantizeButton = new components.Button({
+    midi: [0x91, 0x01],
+    group: '[Channel1]'
+    inKey: 'quantize',
+    outKey: 'quantize',
+});
+```
 
 If `inKey` and `outKey` are the same, you can specify `key` in the
 options object for the constructor to set both the `inKey` and `outKey`
 properties of the new Component. For example:
 
-    var quantizeButton = new components.Button({
-        midi: [0x91, 0x01],
-        group: '[Channel1]',
-        key: 'quantize',
-    });
+```javascript
+var quantizeButton = new components.Button({
+    midi: [0x91, 0x01],
+    group: '[Channel1]',
+    key: 'quantize',
+});
+```
 
 Setting the `key` property after calling the constructor will not
 automatically set `inKey` and `outKey`; you would need to do that
@@ -215,13 +225,13 @@ that happen to be functions) must be defined for every Component, but in
 most cases the defaults (from the inherited prototype Component) will
 work so you do not need to define them yourself:
 
-  - **input**: the [function that receives MIDI
+  - `input`: the [function that receives MIDI
     input](MIDI%20scripting#MIDI%20input%20handling%20functions)
-  - **output**: the [function that gets called when outKey changes
+  - `output`: the [function that gets called when outKey changes
     value](midi%20scripting#Connect%20output%20callback%20functions).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
-  - **connect**: register `output` as the callback function that gets
+  - `connect`: register `output` as the callback function that gets
     executed when the value of the [Mixxx ControlObject](mixxxcontrols)
     specified by `group`, `outKey` changes. This is called automatically
     by the Component constructor if `group` and `outKey` are defined
@@ -232,44 +242,44 @@ work so you do not need to define them yourself:
 
 The following methods are called by the default Component `input` and
 `output` methods, as well as the default `input` functions of
-[\#Button](#Button), [\#Pot](#Pot), and [\#Encoder](#Encoder). If you do
+[Button](#Button), [Pot](#Pot), and [Encoder](#Encoder). If you do
 not need to implement complex custom behavior, you can overwrite these
 instead of the default `input` and `output` methods:
 
-  - **inValueScale**: takes the third byte of the incoming MIDI signal
+  - `inValueScale`: takes the third byte of the incoming MIDI signal
     as its first argument and returns the value to set `group`, `inKey`
     to
-  - **outValueScale**: takes the value of `group`, `outKey` as its first
+  - `outValueScale`: takes the value of `group`, `outKey` as its first
     argument and returns the third byte of the outgoing MIDI signal
 
 Each Component also has these methods that you probably should not
 overwrite:
 
-  - **disconnect**: disconnect the `output` function from being called
+  - `disconnect`: disconnect the `output` function from being called
     when `group`, `outKey` changes
-  - **trigger**: manually call `output` with the same arguments as if
+  - `trigger`: manually call `output` with the same arguments as if
     `group`, `outKey` had changed
-  - **send**: send a 3 byte (short) MIDI message out to the controller.
+  - `send`: send a 3 byte (short) MIDI message out to the controller.
     The first two bytes of the MIDI message are specified by the
     Component's `midi` property. The third MIDI byte is provided as the
     first argument to the `send` function.
-  - **inGetParameter**: returns the value of `group`, `inKey` normalized
+  - `inGetParameter`: returns the value of `group`, `inKey` normalized
     to a 0-1 scale
-  - **inSetParameter**: sets the value of `group`, `inKey` to the
+  - `inSetParameter`: sets the value of `group`, `inKey` to the
     function's first argument, normalized to a 0-1 scale
-  - **inGetValue**: returns the value of `group`, `inKey`
-  - **inSetValue**: sets the value of `group`, `inKey` to the function's
+  - `inGetValue`: returns the value of `group`, `inKey`
+  - `inSetValue`: sets the value of `group`, `inKey` to the function's
     first argument
-  - **inToggle**: sets `group`, `inKey` to its inverse (0 if it is \>0;
+  - `inToggle`: sets `group`, `inKey` to its inverse (0 if it is \>0;
     1 if it is 0)
-  - **outGetParameter**: returns the value of `group`, `outKey`
+  - `outGetParameter`: returns the value of `group`, `outKey`
     normalized to a 0-1 scale
-  - **outSetParameter**: sets the value of `group`, `outKey` to the
+  - `outSetParameter`: sets the value of `group`, `outKey` to the
     function's first argument, normalized to a 0-1 scale
-  - **outGetValue**: returns the value of `group`, `outKey`
-  - **outSetValue**: sets the value of `group`, `outKey` to the
+  - `outGetValue`: returns the value of `group`, `outKey`
+  - `outSetValue`: sets the value of `group`, `outKey` to the
     function's first argument
-  - **outToggle**: sets `group`, `outKey` to its inverse (0 if it is
+  - `outToggle`: sets `group`, `outKey` to its inverse (0 if it is
     \>0; 1 if it is 0)
 
 ### Optional properties
@@ -279,10 +289,10 @@ to the Component constructor to customize the Component's
 initialization. Changing their value after creating the Component does
 not do anything.
 
-  - **outConnect** (boolean, default true): whether to call `connect` in
+  - `outConnect` (boolean, default true): whether to call `connect` in
     the constructor (assuming `group` and `outKey` were specified in the
     options object)
-  - **outTrigger** (boolean, default true): whether to call `trigger` in
+  - `outTrigger` (boolean, default true): whether to call `trigger` in
     the constructor (assuming `group` and `outKey` were specified in the
     options object)
 
@@ -292,15 +302,15 @@ for when the shift button is not pressed. To avoid defining two
 Components for every physical component of your controller, set the
 following options as appropriate:
 
-  - **sendShifted** (boolean, default false): whether to send a second,
+  - `sendShifted` (boolean, default false): whether to send a second,
     shifted MIDI message for every call to `send`
-  - **shiftChannel** (boolean, default false): whether the shifted MIDI
+  - `shiftChannel` (boolean, default false): whether the shifted MIDI
     message changes the MIDI channel (second nybble of the first byte of
     the MIDI signal)
-  - **shiftControl** (boolean, default false): whether the shifted MIDI
+  - `shiftControl` (boolean, default false): whether the shifted MIDI
     message changes the MIDI control number (second byte) of the MIDI
     signal
-  - **shiftOffset** (number, default 0): how much to shift the MIDI
+  - `shiftOffset` (number, default 0): how much to shift the MIDI
     channel or control number by
 
 To avoid having to define those properties for every Component, you can
@@ -325,13 +335,17 @@ If a Component only needs its `midi` property specified for its
 constructor, this can be provided simply as an array without wrapping it
 in an object. For example:
 
-    var playButton = new components.PlayButton([0x90 + channel, 0x0A]);
+```javascript
+var playButton = new components.PlayButton([0x90 + channel, 0x0A]);
+```
 
 instead of
 
-    var playButton = new components.PlayButton({
-        midi: [0x90 + channel, 0x0A]
-    });
+```javascript
+var playButton = new components.PlayButton({
+    midi: [0x90 + channel, 0x0A]
+});
+```
 
 ## Button
 
@@ -346,24 +360,24 @@ A generic Button toggles the state of a binary `inKey` and sends
 outgoing MIDI messages indicating whether a binary `outKey` is on or
 off. Button adds the following properties to Component:
 
-  - **type**: determines the behavior of the Button. Can be any of these
+  - `type`: determines the behavior of the Button. Can be any of these
     values:
-  - *Button.prototype.types.push* (default): set inKey to 1 on button
+    - `Button.prototype.types.push` (default): set inKey to 1 on button
     press and 0 on button release. For example, use this type with the
     beatloop\_activate [Control](mixxxcontrols)
-  - *Button.prototype.types.toggle*: invert value of inKey on button
+    - `Button.prototype.types.toggle`: invert value of inKey on button
     press. Use this with Controls whose values indicate the state of a
     switch, for example pfl
-  - *Button.prototype.types.powerWindow*: like toggle, but toggles the
+    - `Button.prototype.types.powerWindow`: like toggle, but toggles the
     value of inKey again on button up when long pressed, for example
     with \[EffectRack1\_EffectUnit2\_Effect1\], enabled Control.
-  - **on** (number, default 127): number to send as the third byte of
+  - `on` (number, default 127): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is on (its value is \>
     0)
-  - **off** (number, default 0): number to send as the third byte of
+  - `off` (number, default 0): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is off (its value is
     0)
-  - **isPress** (function): function that takes the same first 4
+  - `isPress` (function): function that takes the same first 4
     arguments as a MIDI input function (channel, control, value, status)
     and returns a boolean indicating whether the button was pressed.
 
@@ -372,18 +386,20 @@ LED by defining the `on` and `off` properties to be the MIDI value to
 send for that state. For example, if the LED turns red when sent a MIDI
 value of 127 and blue when sent a value of 126:
 
-    MyController.padColors = {
-        red: 127,
-        blue: 126
-    };
-    MyController.quantize = new components.Button({
-        midi: [0x91, 0x01],
-        group: '[Channel1]',
-        key: 'quantize',
-        type: Button.prototype.types.toggle,
-        on: MyController.padColors.red,
-        off: MyController.padColors.blue,
-    });
+```javascript
+MyController.padColors = {
+    red: 127,
+    blue: 126
+};
+MyController.quantize = new components.Button({
+    midi: [0x91, 0x01],
+    group: '[Channel1]',
+    key: 'quantize',
+    type: Button.prototype.types.toggle,
+    on: MyController.padColors.red,
+    off: MyController.padColors.blue,
+});
+```
 
 The default `isPress` function works for controllers that indicate
 whether a button is pressed or released by sending a different third
@@ -396,13 +412,15 @@ to be mapped in the XML file to the Button's `input` method. To make
 Button work for such a controller, reimplement the prototype `isPress`
 function in your mappings's `init` function:
 
-    components.Button.prototype.isPress = function (channel, control, value, status) {
-        return (status & 0xF0) === 0x90;
-    }
+```javascript
+components.Button.prototype.isPress = function (channel, control, value, status) {
+    return (status & 0xF0) === 0x90;
+}
+```
 
 ### PlayButton
 
-Default behavior: play/pause  
+Default behavior: play/pause
 Shift behavior: reverse playback
 
 LED behavior depends on cue mode selected by the user in the preferences
@@ -413,20 +431,20 @@ for details.
 ### CueButton
 
 Default behavior: depends on cue mode configured by the user in the
-preferences  
+preferences
 Shift behavior: stop playback and go to start of track Refer to the
 [manual](http://mixxx.org/manual/latest/chapters/user_interface.html#interface-cue-modes)
 for details.
 
 ### SyncButton
 
-Default behavior: momentary sync without toggling sync lock  
+Default behavior: momentary sync without toggling sync lock
 Shift behavior: toggle sync lock (master sync)
 
 ### HotcueButton
 
 Default behavior: set hotcue if it is not set. If it is set, jump to
-it.  
+it.
 Shift behavior: delete hotcue
 
 The LED indicates whether the hotcue is set.
@@ -434,14 +452,16 @@ The LED indicates whether the hotcue is set.
 Pass the number of the hotcue as the `number` property of the options
 argument for the constructor. For example:
 
-    var hotcues = [];
-    for (var i = 1; i <= 8; i++) {
-        hotcues[i] = new components.HotcueButton({
-            number: i,
-            group: '[Channel1]',
-            midi: [0x91, 0x26 + i],
-        });
-    }
+```javascript
+var hotcues = [];
+for (var i = 1; i <= 8; i++) {
+    hotcues[i] = new components.HotcueButton({
+        number: i,
+        group: '[Channel1]',
+        midi: [0x91, 0x26 + i],
+    });
+}
+```
 
 #### Hotcue colors
 
@@ -459,23 +479,25 @@ correlate it with the [predefined hotcue colors](hotcue_colors) (the
 controller's manual from the manufacturer may document this). Creating
 such HotcueButton could look like this:
 
-    var hotcueButton = new components.HotcueButton({
-        number: 1,
-        group: '[Channel1]',
-        midi: [0x91, 0x26],
-        // key-value map to correlate the Mixxx ColorID
-        // with the value the controller expects for 
-        // specific colors. These values are passed to
-        // the HotcueButton's send method.
-        colors: {
-            0: 0x10,
-            1: 0x18,
-            2: 0x20,
-            ...
-        },
-        // value to turn off the buttons LED.
-        off: 0x00,
-    });
+```javascript
+var hotcueButton = new components.HotcueButton({
+    number: 1,
+    group: '[Channel1]',
+    midi: [0x91, 0x26],
+    // key-value map to correlate the Mixxx ColorID
+    // with the value the controller expects for
+    // specific colors. These values are passed to
+    // the HotcueButton's send method.
+    colors: {
+        0: 0x10,
+        1: 0x18,
+        2: 0x20,
+        ...
+    },
+    // value to turn off the buttons LED.
+    off: 0x00,
+});
+```
 
 With the second option, you can send predefined colors from the palette
 to the controller but this time via SysEx. Since SysEx is very
@@ -485,29 +507,31 @@ the relevant information, and sending the SysEx Message to the
 controller. In this case, the values of the attributes in the `colors`
 object are passed as the input to the `sendRGB` method.
 
-    var hotcueButton = new components.HotcueButton({
-        number: 1,
-        group: '[Channel1]',
-        midi: [0x91, 0x26],
-        // key-value map to correlate the Mixxx ColorID
-        // with an array which contains (in this case)
-        // the RGB components of a color. These values
-        // are passed as input to the sendRGB method.
-        colors: {
-            0: [0x00,0x00,0x00], // black
-            1: [0xFF,0x00,0x00], // pure red
-            2: [0xFF,0xFF,0x00], // pure Yellow
-            ...
-        },
-        sendRGB: function (color_obj) {
-            // example Message (hardcoded bytes are controller specific).
-        // colors entries contain 8-bit values, but SysEx only supports 7-bit values
-        // so were bitshifting by 1 to reduce the resolution.
-            var msg = [0xF0, 0x00, 0x01, color_obj[0]>>1,color_obj[1]>>1,color_obj[2]>>1];
-            // send message
-        midi.sendSysexMsg(msg, msg.length);
-        }
-    });
+```javascript
+var hotcueButton = new components.HotcueButton({
+    number: 1,
+    group: '[Channel1]',
+    midi: [0x91, 0x26],
+    // key-value map to correlate the Mixxx ColorID
+    // with an array which contains (in this case)
+    // the RGB components of a color. These values
+    // are passed as input to the sendRGB method.
+    colors: {
+        0: [0x00,0x00,0x00], // black
+        1: [0xFF,0x00,0x00], // pure red
+        2: [0xFF,0xFF,0x00], // pure Yellow
+        ...
+    },
+    sendRGB: function (color_obj) {
+        // example Message (hardcoded bytes are controller specific).
+    // colors entries contain 8-bit values, but SysEx only supports 7-bit values
+    // so were bitshifting by 1 to reduce the resolution.
+        var msg = [0xF0, 0x00, 0x01, color_obj[0]>>1,color_obj[1]>>1,color_obj[2]>>1];
+        // send message
+    midi.sendSysexMsg(msg, msg.length);
+    }
+});
+```
 
 The third option is similar to the second one. You need to define a
 `sendRGB` method again, but in this Mixxx provides the color palette
@@ -516,27 +540,29 @@ HotcueButton. The `sendRGB(color)` method gets passed a color object
 (more on the color API [here](midi_scripting#color_api)). Such a button
 could be defined like this:
 
-    var hotcueButton = new components.HotcueButton({
-        number: 1,
-        group: '[Channel1]',
-        midi: [0x91, 0x26],
-        // colors automatically assigned by Components.JS framework
-        sendRGB: function (color_obj) {
-            // example Message (hardcoded bytes are controller specific).
-        // colors entries contain 8-bit values, but SysEx only supports 7-bit values
-        // so were bitshifting by 1 to reduce the resolution.
-            var msg = [0xF0, 0x00, 0x01, color_obj.red>>1,color_obj.green>>1,color_obj.blue>>1];
-            // send message
-        midi.sendSysexMsg(msg, msg.length);
-        }
-    });
+```javascript
+var hotcueButton = new components.HotcueButton({
+    number: 1,
+    group: '[Channel1]',
+    midi: [0x91, 0x26],
+    // colors automatically assigned by Components.JS framework
+    sendRGB: function (color_obj) {
+        // example Message (hardcoded bytes are controller specific).
+    // colors entries contain 8-bit values, but SysEx only supports 7-bit values
+    // so were bitshifting by 1 to reduce the resolution.
+        var msg = [0xF0, 0x00, 0x01, color_obj.red>>1,color_obj.green>>1,color_obj.blue>>1];
+        // send message
+    midi.sendSysexMsg(msg, msg.length);
+    }
+});
+```
 
 ### SamplerButton
 
 Default behavior: Press the button to load the track selected in the
 library into an empty sampler. Press a loaded sampler to play it from
 its cue point. Press again while playing to jump back to the cue
-point.  
+point.
 Shift behavior: If the sampler is playing, stop it. If the sampler is
 stopped, eject it.
 
@@ -544,13 +570,15 @@ Specify the sampler number as the number property of the object passed
 to the constructor. There is no need to manually specify the group. For
 example:
 
-    var samplerButtons = [];
-    for (var n = 1; n <= 8; n++) {
-        samplerButtons[n] = new components.SamplerButton({
-            number: n,
-            midi: [0x91, 0x02],
-        });
-    )};
+```javascript
+var samplerButtons = [];
+for (var n = 1; n <= 8; n++) {
+    samplerButtons[n] = new components.SamplerButton({
+        number: n,
+        midi: [0x91, 0x02],
+    });
+)};
+```
 
 You can also make the SamplerButtons velocity sensitive by setting the
 `volumeByVelocity: true` property on the object that gets passed to the
@@ -558,14 +586,17 @@ constructor. This will change the volume at which the sample is being
 played at depending on how hard you pressed the button. Obviously, it
 will only work if your hardware features velocity sensitive buttons.
 
-    var samplerButtons = [];
-    for (var n = 1; n <= 8; n++) {
-        samplerButtons[n] = new components.SamplerButton({
-            number: n,
-            midi: [0x91, 0x02],
-            volumeByVelocity: true,
-        });
-    )};
+```javascript
+var samplerButtons = [];
+for (var n = 1; n <= 8; n++) {
+    samplerButtons[n] = new components.SamplerButton({
+        number: n,
+        midi: [0x91, 0x02],
+        volumeByVelocity: true,
+    });
+)};
+```
+
 
 When the sampler is loaded, the LED will be sent a MIDI message with the
 value of the `on` property (default 127) When the sampler is empty, the
@@ -575,40 +606,44 @@ value to send for a different LED color with the `playing` property to
 set the LED to a different color while the sampler is playing. For
 example:
 
-    MyController.padColors = {
-    // These values are just examples, consult the MIDI documentation from your controller's
-    // manufacturer to find the values for your controller. If that information is not available,
-    // guess and check to find the values.
-        red: 125,
-        blue: 126,
-        purple: 127,
-        off: 0
-    };
-    var samplerButton = [];
-    var samplerButton[1] = new components.SamplerButton(
-        midi: [0x91, 0x02],
-        number: 1,
-        on: MyController.padColors.blue,
-        playing: MyController.padColors.red,
-        // off is inherited from Button.prototype
-    )};
+```javascript
+MyController.padColors = {
+// These values are just examples, consult the MIDI documentation from your controller's
+// manufacturer to find the values for your controller. If that information is not available,
+// guess and check to find the values.
+    red: 125,
+    blue: 126,
+    purple: 127,
+    off: 0
+};
+var samplerButton = [];
+var samplerButton[1] = new components.SamplerButton(
+    midi: [0x91, 0x02],
+    number: 1,
+    on: MyController.padColors.blue,
+    playing: MyController.padColors.red,
+    // off is inherited from Button.prototype
+)};
+```
 
 ### EffectAssignmentButton
 
 An EffectAssignmentButton routes a deck through an EffectUnit. It is
 separate from the
-[\#EffectUnit](#EffectUnit)-ComponentContainer-because-it-is-meant-to-be-a-part-of-a-[\#Deck](#Deck).-Using-[Deck.setCurrentDeck](#Deck)
+[EffectUnit](#EffectUnit) ComponentContainer because it is-meant to be a part of a [Deck](#Deck). Using `Deck.setCurrentDeck`
 to switch decks will switch the deck an EffectAssignmentButton assigns
 an EffectUnit to.
 
-    var effectAssignmentButtons = [];
-    for (var u = 1; u <= 4; u++) {
-        effectAssignmentButtons = new components.EffectAssignmentButton({
-            midi: [0x92, 0x20 + u],
-            effectUnit: u,
-            group: '[Channel1]',
-        )};
-    }
+```javascript
+var effectAssignmentButtons = [];
+for (var u = 1; u <= 4; u++) {
+    effectAssignmentButtons = new components.EffectAssignmentButton({
+        midi: [0x92, 0x20 + u],
+        effectUnit: u,
+        group: '[Channel1]',
+    )};
+}
+```
 
 ## Pot
 
@@ -622,14 +657,16 @@ values for controllers that can report that information.
 
 For example:
 
-    var eqKnobs = [];
-    for (var i = 1; i <= 3; i++) {
-        eqKnobs[i] = new components.Pot({
-            midi: [0xB1, 0x02 + i],
-            group: '[EqualizerRack1_[Channel1]_Effect1]',
-            inKey: 'parameter' + i,
-        });
-    }
+```javascript
+var eqKnobs = [];
+for (var i = 1; i <= 3; i++) {
+    eqKnobs[i] = new components.Pot({
+        midi: [0xB1, 0x02 + i],
+        group: '[EqualizerRack1_[Channel1]_Effect1]',
+        inKey: 'parameter' + i,
+    });
+}
+```
 
 To use a Pot with a fader or knob that uses 14 bit MIDI (sends two MIDI
 messages, one with a least significant byte and one with a most
@@ -648,12 +685,14 @@ using tempo faders with master sync. If the controller sends different
 MIDI signals for the potentiometer when shift is pressed, be sure to map
 both the unshifted and shifted signals in the XML file. For example:
 
-    var tempoFader = new components.Pot({
-        midi: [0xB1, 0x32],
-        group: '[Channel1]',
-        inKey: 'rate',
-        relative: true,
-    });
+```javascript
+var tempoFader = new components.Pot({
+    midi: [0xB1, 0x32],
+    group: '[Channel1]',
+    inKey: 'rate',
+    relative: true,
+});
+```
 
 ## Encoder
 
@@ -664,18 +703,20 @@ to indicate whether it turns right or left, you will need to define your
 own `input` function. For example, for an encoder that sends a value of
 1 when it is turned left and a value of 127 when it is turned right:
 
-    MyController.SomeEncoder = new components.Encoder({
-        midi: [0xB1, 0x03],
-        group: '[Channel1]',
-        inKey: 'pregain',
-        input: function (channel, control, value, status, group) {
-            if (value === 1) {
-                this.inSetParameter(this.inGetParameter() - .05);
-            } else if (value === 127) {
-                this.inSetParameter(this.inGetParameter() + .05);
-            }
-        },
-    });
+```javascript
+MyController.SomeEncoder = new components.Encoder({
+    midi: [0xB1, 0x03],
+    group: '[Channel1]',
+    inKey: 'pregain',
+    input: function (channel, control, value, status, group) {
+        if (value === 1) {
+            this.inSetParameter(this.inGetParameter() - .05);
+        } else if (value === 127) {
+            this.inSetParameter(this.inGetParameter() + .05);
+        }
+    },
+});
+```
 
 To map an Encoder with an LED ring around it that receives MIDI signals
 on a continuous 0-127 scale, define an `outKey` property in the options
@@ -694,7 +735,7 @@ properties. ComponentContainer has methods to easily iterate through the
 Components, which makes it easy to manage different layers of
 functionality. The basic ComponentContainer methods are:
 
-  - **forEachComponent**: Iterate over all Components in this
+  - `forEachComponent`: Iterate over all Components in this
     ComponentContainer and perform an operation on them. The operation
     is a function provided as the first argument to `forEachComponent`.
     The operation function takes each Component as its first argument.
@@ -704,11 +745,11 @@ functionality. The basic ComponentContainer methods are:
     properties of this ComponentContainer. If you do not want
     `forEachComponent` to operate recursively, pass `false` as the
     second argument to `forEachComponent`.
-  - **reconnectComponents**: Call each Component's `disconnect` method,
+  - `reconnectComponents`: Call each Component's `disconnect` method,
     optionally perform an operation on it, then call its `connect` and
     `trigger` methods to sync the state of the controller's LEDs.
     Arguments are the same as `forEachComponent`.
-  - **shutdown**: Iterate over all Components and call their shutdown
+  - `shutdown`: Iterate over all Components and call their shutdown
     methods. The Button is the only component with a predefined shutdown
     method. All other components have to be implemented manually if they
     require anything to be done when Mixxx shuts down.
@@ -720,25 +761,27 @@ for switching between decks 1 and 3. This is a simple example that does
 not handle the complexities presented by EQs, QuickEffects, or
 EffectAssignmentButtons like [Deck.setCurrentDeck](#Deck) does.
 
-    // Define a constructor for a ComponentContainer that adds some Components to it
-    var ExampleContainer = function () {
-        this.play = new components.PlayButton({
-            midi: [0x91, 0x40],
-            group: '[Channel1]',
-        });
-        this.cue = new components.CueButton({
-            midi: [0x91, 0x41],
-            group: '[Channel1]',
-        });
-    };
-    // This will give any object created with "new exampleContainer()"
-    // the ComponentContainer methods.
-    exampleContainer.prototype = new components.ComponentContainer();
-    
-    var demonstration = new ExampleContainer();
-    demonstration.reconnectComponents(function (component) {
-        component.group = '[Channel3]';
-    )};
+```javascript
+// Define a constructor for a ComponentContainer that adds some Components to it
+var ExampleContainer = function () {
+    this.play = new components.PlayButton({
+        midi: [0x91, 0x40],
+        group: '[Channel1]',
+    });
+    this.cue = new components.CueButton({
+        midi: [0x91, 0x41],
+        group: '[Channel1]',
+    });
+};
+// This will give any object created with "new exampleContainer()"
+// the ComponentContainer methods.
+exampleContainer.prototype = new components.ComponentContainer();
+
+var demonstration = new ExampleContainer();
+demonstration.reconnectComponents(function (component) {
+    component.group = '[Channel3]';
+)};
+```
 
 In simple cases like the demonstration above, changing a property of
 each Component in the callback passed to `reconnectComponents` is
@@ -848,16 +891,18 @@ optionally enableOnChannelButtons. After the `midi` attributes are set
 up, call the EffectUnit's `init` method to set up the output callbacks.
 For example:
 
-    MyController.effectUnit = new components.EffectUnit([1, 3]);
-    MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
-    MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
-    MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
-    MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
-    MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
-    MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
-    MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
-    MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
-    MyController.effectUnit.init();
+```javascript
+MyController.effectUnit = new components.EffectUnit([1, 3]);
+MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
+MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
+MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
+MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
+MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
+MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
+MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
+MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
+MyController.effectUnit.init();
+```
 
 Controllers designed for Serato and Rekordbox often have an encoder
 instead of a dry/wet knob (labeled "Beats" for Serato or "Release FX"
@@ -866,24 +911,26 @@ to the controller's "Tap" button. To use the `dryWetKnob` Pot with an
 encoder, replace its `input` function with a function that can
 appropriately handle the signals sent by your controller. For example:
 
-    MyController.effectUnit = new components.EffectUnit([1, 3]);
-    MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
-    MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
-    MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
-    MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
-    MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
-    MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
-    MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
-    MyController.effectUnit.dryWetKnob.input = function (channel, control, value, status, group) {
-        if (value === 1) {
-           // 0.05 is an example. Adjust that value to whatever works well for your controller.
-           this.inSetParameter(this.inGetParameter() - .05);
-        } else if (value === 127) {
-           this.inSetParameter(this.inGetParameter() + .05);
-        }
-    };
-    MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
-    MyController.effectUnit.init();
+```javascript
+MyController.effectUnit = new components.EffectUnit([1, 3]);
+MyController.effectUnit.enableButtons[1].midi = [0x90, 0x01];
+MyController.effectUnit.enableButtons[2].midi = [0x90, 0x02];
+MyController.effectUnit.enableButtons[3].midi = [0x90, 0x03];
+MyController.effectUnit.knobs[1].midi = [0xB0, 0x01];
+MyController.effectUnit.knobs[2].midi = [0xB0, 0x02];
+MyController.effectUnit.knobs[3].midi = [0xB0, 0x03];
+MyController.effectUnit.dryWetKnob.midi = [0xB0, 0x04];
+MyController.effectUnit.dryWetKnob.input = function (channel, control, value, status, group) {
+    if (value === 1) {
+       // 0.05 is an example. Adjust that value to whatever works well for your controller.
+       this.inSetParameter(this.inGetParameter() - .05);
+    } else if (value === 127) {
+       this.inSetParameter(this.inGetParameter() + .05);
+    }
+};
+MyController.effectUnit.effectFocusButton.midi = [0x90, 0x04];
+MyController.effectUnit.init();
+```
 
 For the shift functionality to work, the shift button of your controller
 must be mapped to a function that calls the `shift`/`unshift` methods of
@@ -899,20 +946,22 @@ like it will for any other ComponentContainer).
 By default an effect can only be focused when the respective GUI unit is
 expanded: when the focus button of a collapsed unit is pressed, the GUI
 counterpart is expanded. Accordingly, units release the effect focus and
-switch back to Meta knob mapping as soon as an unit is collapsed.  
+switch back to Meta knob mapping as soon as an unit is collapsed.
 However, there are situations when the on-screen parameters of a focused
 effect can safely stay hidden while the controller is mapped to the
 parameter knobs. Collapsed units show a focus indicator then. To enable
 this mode instatiate effect units with 'true' added after the effect
 unit numbers array. For example:
 
-    MyController.effectUnit = new components.EffectUnit([1, 3],true);
-    ...
+```javascript
+MyController.effectUnit = new components.EffectUnit([1, 3],true);
+//...
+```
 
 ### Assignment switches
 
 Generally, most controllers should use
-[\#EffectAssignmentButton](#EffectAssignmentButton)s in [\#Deck](#Deck)s
+[EffectAssignmentButton](#EffectAssignmentButton)s in [Deck](#Deck)s
 to enable effect units on decks. If you have a dedicated effects
 controller that does not manipulate decks, the enableOnChannelButtons
 provided by EffectUnit would be more appropriate. You can easily create

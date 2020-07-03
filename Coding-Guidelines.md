@@ -16,18 +16,18 @@ slightly differing styles (mainly variable naming conventions). In order
 to avoid this in the future, it's best for us to have some coding
 guidelines for developers to follow.
 
-**As you change a part of Mixxx, please update it to match this style
+> As you change a part of Mixxx, please update it to match this style
 guide and reformat it with ClangFormat. That way, eventually all of
-Mixxx will be written in this style. 
-Do not send us patches that are purely cosmetic with respect to source changes -- 
-this is a waste of time since it does not benefit users directly.**
+Mixxx will be written in this style.  
+Do not send us patches that are purely cosmetic with respect to source changes -
+this is a waste of time since it does not benefit users directly.
 
 ## Code Formatting
 
 Since 2019-05-09 our code formatting rules are defined by the
 [.clang-format](https://github.com/mixxxdj/mixxx/blob/master/.clang-format)
-configuration file in the project root. 
-**Make use of it by auto-formatting new or modified code segments - but take care not to mass reformat unrelated code\!**
+configuration file in the project root.  
+Make use of it by auto-formatting new or modified code segments - but take care not to mass reformat unrelated code!
 
 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version \>= 4.0 is required.
 On Ubuntu, ClangFormat is in the [official repositories](https://packages.ubuntu.com/search?suite=all&searchon=names&keywords=clang-format). From bionic (18.04) on you can install the plain `clang-format` package, use this on older distros as it is outdated there:
@@ -732,10 +732,9 @@ Escape non ASCII characters:
 const QString kMessage = QStringLiteral("Hello I\u2019ve to go");
 ```
 
-Due to [copy/move
-elision](https://en.cppreference.com/w/cpp/language/copy_elision) in
-C++11 no temporary objects will be created by the assignment. Prefer
-this style for all new code to improve readability.
+Due to [copy/move elision](https://en.cppreference.com/w/cpp/language/copy_elision)
+in C++11 no temporary objects will be created by the assignment.
+Prefer this style for all new code to improve readability.
 
 QChars can be initialized with ASCII characters 16 bit Unicode
 L’\\u00fc' if required. Both are constexpr.
@@ -866,7 +865,7 @@ Use.
 
 ### constexpr
 
-Use.
+Use whenever possible, prefer it over . Use PascalCase for naming variables and prefix with "k", e.g. `kSilenceThreshold`.
 
 ### right angle brackets
 

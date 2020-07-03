@@ -156,9 +156,9 @@ Mixxx participated in GSoC 2010.
 
 The following projects were accepted for Google Summer of Code 2010:
 
-  - [Effects Units](gsoc2010/effects_units) by Bruno Buccolo
-  - [Sampler](gsoc2010/sampler) by Ryan Baker
-  - [DVS Mode](gsoc2010/dvs_mode) by Bill Good
+  - [Effects Units](gsoc2010_effects_units) by Bruno Buccolo
+  - [Sampler](gsoc2010_sampler) by Ryan Baker
+  - [DVS Mode](gsoc2010_dvs_mode) by Bill Good
 
 ### 2009
 
@@ -169,12 +169,12 @@ Due to a lack of core developer time Mixxx did not participate in GSoC
 
 The following projects were accepted for Google Summer of Code 2008:
 
-  - [Waveform Rewrite](gsoc2008/waveform_rewrite) by RJ Ryan
-  - [MIDI Control](gsoc2008/midi_control) by Tom Care
-  - [Internet Broadcasting](gsoc2008/internet_broadcasting) by Wesley
+  - [Waveform Rewrite](gsoc2008_waveform_rewrite) by RJ Ryan
+  - [MIDI Control](gsoc2008_midi_control) by Tom Care
+  - [Internet Broadcasting](gsoc2008_internet_broadcasting) by Wesley
     Stessens
   - [Stability and Crash
-    Recovery](gsoc2008/stability_and_crash_recovery) by Zach Elko
+    Recovery](gsoc2008_stability_and_crash_recovery) by Zach Elko
 
 Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
 

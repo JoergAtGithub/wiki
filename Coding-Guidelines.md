@@ -799,22 +799,19 @@ and we will consider whitelisting it.
 We are limited to what is supported across our 3 supported compilers:
 
   - [Clang \>= 3.4](http://clang.llvm.org/cxx_status.html)
-  - [GCC \>= 5.4 (Ubuntu
-    Xenial)](https://gcc.gnu.org/projects/cxx0x.html)
-  - [Microsoft Visual Studio 2017 (\_MSC\_VER
-    \>= 1910)](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
+  - [GCC \>= 5.4 (Ubuntu Xenial)](https://gcc.gnu.org/projects/cxx0x.html)
+  - [Microsoft Visual Studio 2017 (\_MSC\_VER \>= 1910)](https://msdn.microsoft.com/en-us/library/hh567368.aspx)
 
 In general, Microsoft Visual Studio is the one that prevents us from
 using features.
 
-See also: [C++11 features in
-Qt5](http://woboq.com/blog/cpp11-in-qt5.html).
+See also: [C++11 features in Qt5](http://woboq.com/blog/cpp11-in-qt5.html).
 
 ### initializer lists
 
 <http://en.cppreference.com/w/cpp/language/list_initialization>
 
-Use with caution\!
+Use with caution!
 
 **WARNING** on windows, they are not well supported with QT4. see the
 following links for details
@@ -825,15 +822,15 @@ following links for details
 
 ### static\_assert
 
-Use\!
+Use!
 
 ### nullptr
 
-Yes\! Always prefer to NULL.
+Yes! Always prefer to NULL.
 
 ### unique\_ptr / std::move
 
-Yes\! Prefer over QScopedPointer.
+Yes! Prefer over QScopedPointer.
 
 By including the custom file "util/memory.h" instead of the system
 header \<memory\> you are even able to make use of
@@ -865,17 +862,19 @@ Use.
 
 ### constexpr
 
-Use whenever possible, prefer it over . Use PascalCase for naming variables and prefix with "k", e.g. `kSilenceThreshold`.
+Use whenever possible, prefer it over preprocessing instructions such as `#define`.
+Use PascalCase for naming variables and prefix with "k", e.g. `kSilenceThreshold`.
 
 ### right angle brackets
 
 <http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1757.html>
 
-Yes\!
+Yes!
 
 ### override / final
 
-Use\! Any case where a method intentionally overrides that of a parent
+Use always!
+Any case where a method intentionally overrides that of a parent
 class should use the *override* keyword.
 
 In contrast to the pre-C++11 rules (see above) when using *override* on
@@ -895,21 +894,20 @@ noisy.
 
 ### alignment
 
-Use (support added in VS2015). Some positive reports from [another
-project](https://groups.google.com/forum/#!topic/cryptopp-users/KqODnEPjkbU).
+Use (support added in VS2015). Some positive reports from
+[another project](https://groups.google.com/forum/#!topic/cryptopp-users/KqODnEPjkbU).
 
 ### cstdint
 
-Appears to be supported by MSVC 2013. Use\!
+Appears to be supported by MSVC 2013. Use!
 
 ### range-based for loops
 
-Use them\! Prefer them over Qt's `foreach` macro which has enjoyed
+Use the\! Prefer them over Qt's `foreach` macro which has enjoyed
 widespread usage throughout the Mixxx codebase.
 
-**Be very careful when updating old code from foreach to
-range-based-for. [It is very easy to write a
-bug](https://www.kdab.com/goodbye-q_foreach/).**
+> Be very careful when updating old code from foreach to range-based-for.
+[It is very easy to write a bug](https://www.kdab.com/goodbye-q_foreach/).
 
 ``` cpp-qt
 for (const QString& item : list) {

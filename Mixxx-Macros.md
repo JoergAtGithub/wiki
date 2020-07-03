@@ -147,8 +147,11 @@ Planned Deliverables:
 - Integration with other tools (Serato Flip, Export/Import, Edit Dialog, Auto DJ?)
 
 Tasks:
+- Waveform highlighting for upcoming jumps
+- Record more controls
+- Loop mode
 - Design controls & integrate into a skin
-- Refine UX & Integrate into other Skins
+- Refine UX & integrate into other Skins
 - Enable Import from Serato & explore possibilities for sharing
 
 ## Log
@@ -230,4 +233,4 @@ We: Some clean-up
 
 Th: Work on wiki and start writing tests
 
-Fr:
+Fr: Planning & Refocusing

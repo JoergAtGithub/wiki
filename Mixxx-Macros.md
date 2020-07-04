@@ -233,4 +233,42 @@ We: Some clean-up
 
 Th: Work on wiki and start writing tests
 
-Fr: Planning & Refocusing
+Fr: Planning & Refocusing, Revamp architecture back out of Engine
+
+### CW 28
+
+Mo:
+
+Tu:
+
+We:
+
+Th:
+
+Fr:
+
+### CW 29
+
+Mo:
+
+Tu:
+
+We:
+
+Th:
+
+Fr:
+
+### CW 30
+
+### CW 31
+
+Mo:
+
+Tu:
+
+We:
+
+Th:
+
+Fr:

@@ -11,31 +11,23 @@ C++](start#developer_documentation).
 ## Setting up VScode for C++
 
 Note: Most of this guide will assume that you have a folder named
-\`cbuild\` in the root folder of the locally cloned repository. This is
+`cbuild` in the root folder of the locally cloned repository. This is
 where cmake will put the buildfiles and build the mixxx binary. If you
 want to use a different folder, you need to adapt the paths present in
 the config file templates given.
 
 1.  Check out Mixxx source and build it.
-
-<!-- end list -->
-
-  - If you haven't done this yet, follow the instructions for your
+    - If you haven't done this yet, follow the instructions for your
     operating system [here](start#compile_mixxx_from_source_code).
-
-<!-- end list -->
-
-1.  Install Microsoft C/C++ extension.
-    1.  Open the extensions pane and search for "c++". Click the install
+2.  Install Microsoft C/C++ extension.
+    -  Open the extensions pane and search for "c++". Click the install
         button for the Microsoft extension.
+
         [[/media/code_install_c_etension.png|]]
-2.  Select File -\> Open... and open the mixxx source folder.
-
-<!-- end list -->
-
-  - Visual Studio Code saves it's configuration in a folder named
-    .vscode in the mixxx source folder. Next time you want to work on
-    mixxx you only need to open the mixxx source folder again.
+3.  Select File -\> Open... and open the mixxx source folder.
+    - Visual Studio Code saves it's configuration in a folder named
+      .vscode in the mixxx source folder. Next time you want to work on
+      mixxx you only need to open the mixxx source folder again.
 
 ### Enabling autocompletion
 
@@ -72,7 +64,7 @@ following section.
 
 #### Generating buildfiles and compiling mixxx
 
-Use the following \`tasks.json\` config (located in \`.vscode\`) to be
+Use the following `tasks.json` config (located in `.vscode`) to be
 able to generate buildfiles and compile linux from within VScode:
 
 ``` javascript
@@ -127,7 +119,7 @@ by pressing \[CTLR\]+\[Shift\]+B.
 
 ### Debugging
 
-Add this to your \`launch.json\` file to add debugging capabilities
+Add this to your `launch.json` file to add debugging capabilities
 (based on gdb) to vscode.
 
 ``` javascript
@@ -165,11 +157,8 @@ Add this to your \`launch.json\` file to add debugging capabilities
 ```
 
 You should now be able to launch Mixxx with gdb attached by pressing
-\`F5\`. If you want to know more about debugging, Microsoft has a guide
+F5. If you want to know more about debugging, Microsoft has a guide
 which introduces to into VScodes debugging capabilities:
 <https://code.visualstudio.com/docs/editor/debugging>
 
-\[1\]
-
-1.  [Building your C++ application with Visual Studio
-    Code](https://devblogs.microsoft.com/cppblog/building-your-c-application-with-visual-studio-code/)
+Alse see [Building your C++ application with Visual Studio Code](https://devblogs.microsoft.com/cppblog/building-your-c-application-with-visual-studio-code/).

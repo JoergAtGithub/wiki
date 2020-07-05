@@ -88,7 +88,6 @@ able to generate buildfiles and compile linux from within VScode:
                 // generate debug build
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-DDEBUG_ASSERTIONS_FATAL=ON",
-                "-DOPTIMIZE=native",
                 // generate compile_commands.json
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
                 "${workspaceFolder}"

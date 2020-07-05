@@ -106,7 +106,7 @@ able to generate buildfiles and compile linux from within VScode:
             "options": {
                 "cwd": "cbuild"
             },
-            "problemMatcher": []
+            "problemMatcher": "$gcc"
         }
     ]
 }

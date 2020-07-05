@@ -162,3 +162,14 @@ which introduces to into VScodes debugging capabilities:
 <https://code.visualstudio.com/docs/editor/debugging>
 
 Alse see [Building your C++ application with Visual Studio Code](https://devblogs.microsoft.com/cppblog/building-your-c-application-with-visual-studio-code/).
+
+### Troubleshooting
+
+#### When I try to build the code, VSCode fails with `The terminal shell CWD ".../mixxx/cbuild" does not exist`
+
+the `cbuild` directory is the temporary directory where CMake will generate the files for the buildsystem you are using. Since
+the name of this directory is theoretically up to you, but vscode needs to know about it. To simplify this guide, we assumed this directory will be called `cbuild`. However, it does not exist when you clone the mixxx repository the first time so you need to create it yourself.
+
+#### `#include`s are underlined in orange and the tooltip says something like `#include errors detected. Consider updating your compile_commands.json or includePath. Squiggles are disabled for this translation unit.`
+
+This occurs when you either have an outdated `compile_commands.json` (or its missing entirely). You can fix this by running the "CMake generate buildfiles" and "CMake compile" tasks at least once. Make sure you include `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` when generating the buildfiles (this is already the case if you use the `tasks.json` from above)

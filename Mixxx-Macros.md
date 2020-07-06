@@ -29,10 +29,10 @@ See [Mixxx Macros Requirements](Mixxx%20Macros%20Requirements) and
 
 ## Components
 
-  - database table to store Macros
-  - recording buttons (deck-independent)
-  - send info on cue jumps (but not on scrubbing)
-  - macro list for each deck with name, loop option, enable option
+- database table to store Macros
+- recording buttons (deck-independent)
+- send info on cue jumps (but not on scrubbing)
+- macro list for each deck with name, loop option, enable option
 
 ### Use cases
 
@@ -74,15 +74,15 @@ hotcue or a timestamp, as outlined below.
 
 #### Referencing cues vs timestamps
 
-  - timestamps: used by Serato Flip, persistent, but hardly editable;
+- timestamps: used by Serato Flip, persistent, but hardly editable;
     can break when track offset changes (when music file is swapped out)
-  - cues: can be moved, but that could also [accidentally mess up a flip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197284228)
+- cues: can be moved, but that could also [accidentally mess up a flip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197284228)
     and cues can't currently be shifted; add [confirmation dialog similar to when deleting a track in a playlist](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197283721)
     to avoid breaking things -\> but then cue needs to be aware of the
     Macros it's used in
-  - how relevant is editing afterwards, how can we facilitate it?
-  - Serato Flip ["just works"](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197286852)
-    - Flip is locked after recording, not blocking any hotcues or any
+- how relevant is editing afterwards, how can we facilitate it?
+- Serato Flip ["just works"](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197286852)
+  - Flip is locked after recording, not blocking any hotcues or any
     chance of breakage
 
 ### Name
@@ -105,14 +105,14 @@ routine).
 
 ### Discussion
 
-  - Recording could be implemented using [data emitted from the engine on cue jumps](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197293806)
+- Recording could be implemented using [data emitted from the engine on cue jumps](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197293806)
     (not a signal, realtime\!)
-  - [Use developer window/shortcuts for debugging controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197532422),
+- [Use developer window/shortcuts for debugging controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197532422),
     implement them first and then look at skins.
-  - [Macros are bound to one track - beware of scope creep](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984243)
-  - [Should be usable from a controller - keep number of controls at minimum](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984726)
-  - [Might activate actual loops - user can then disable it](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/198009610)
-  - [Reuse recording controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/199476162)
+- [Macros are bound to one track - beware of scope creep](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984243)
+- [Should be usable from a controller - keep number of controls at minimum](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197984726)
+- [Might activate actual loops - user can then disable it](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/198009610)
+- [Reuse recording controls](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/199476162)
 
 ## Timeline
 
@@ -171,34 +171,33 @@ results into this wiki page when appropriate.
 
 ### CW 21 & 22
 
-  - Work on general PRs:
+- Work on general PRs:
     <https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-05>
-  - Code Style discussions (Zulip & PRs)
-  - Planning & initial Research:
+- Code Style discussions (Zulip & PRs)
+- Planning & initial Research:
     <https://www.notion.so/xerus/Mixxx-Macros-GSoC-Research-5ab430eb8f0a41efafc075c220029560>
 
 ### CW 23
 
-  - revisited & summarized Zulip discussion in wiki page (timeline,
+- revisited & summarized Zulip discussion in wiki page (timeline,
     details)
-  - sifted through [reddi]t(https://www.reddit.com/search?q=serato%20flip) -
+- sifted through [reddi]t(https://www.reddit.com/search?q=serato%20flip) -
     summary for now in Notion
-  - organized community call
+- organized community call
 
 ### CW 24
 
-  - document data format ideas
-  - create & send out [survey](https://forms.gle/oUTHKUCQcczUZtHA8)
-  - finish remaining open PRs
+- document data format ideas
+- create & send out [survey](https://forms.gle/oUTHKUCQcczUZtHA8)
+- finish remaining open PRs
 
 ### CW 25
 
 Mo:
-
-  - Wiki Improvements
-  - [Get more acquainted with code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
-  - Revisit [reddit post](https://www.reddit.com/r/DJs/comments/h8av2o/reimagining_serato_flip)
-  - Start writing [project-related code](https://github.com/mixxxdj/mixxx/pull/2873)
+- Wiki Improvements
+- [Get more acquainted with code](https://github.com/search?q=author%3Axerus2000+user%3Amixxxdj+updated%3A2020-06-15)
+- Revisit [reddit post](https://www.reddit.com/r/DJs/comments/h8av2o/reimagining_serato_flip)
+- Start writing [project-related code](https://github.com/mixxxdj/mixxx/pull/2873)
 
 Tu: Specify required controls & format in [Macros](Macros) page
 
@@ -207,21 +206,19 @@ We: Architecture discussion & add [user stories](Mixxx%20Macros%20Requirements)
 Th: Investigation of Mixxx code
 
 Fr:
-
-  - Playing around with MacroManager
-  - More architecture considerations
-  - Trying to understand Controls, Signals & Slots
+- Playing around with MacroManager
+- More architecture considerations
+- Trying to understand Controls, Signals & Slots
 
 Sa:
-
-  - Connect a control
-  - Factor out RecordingManagerBase
+- Connect a control
+- Factor out RecordingManagerBase
 
 ### CW 26
 
 Mo: Recording Macros works!
 
-Unfortunately I wasn't able to do any further this week due to personal reasons.
+Unfortunately I wasn't able to do any further this week due to an interference.
 
 ### CW 27
 
@@ -238,8 +235,12 @@ Fr: Planning & Refocusing, Revamp architecture back out of Engine
 ### CW 28
 
 Mo:
+- Read about [Protobuf](https://developers.google.com/protocol-buffers/docs/proto) and created [initial Macro proto definition](https://github.com/mixxxdj/mixxx/blob/a30ecaa0b324e99946a0d35b6071e727c30c4879/src/proto/macro.proto)
+- Wrote tests, investigated Mixxx E2E testing and wrote failing E2E test
 
 Tu:
+- Fix E2E test
+- Investigate database integration
 
 We:
 
@@ -260,6 +261,8 @@ Th:
 Fr:
 
 ### CW 30
+
+I likely can't work this week as I'm away.
 
 ### CW 31
 

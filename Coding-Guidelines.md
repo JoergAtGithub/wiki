@@ -443,8 +443,9 @@ in header files. These comments are shown in IDEs associated with the
 symbol.
 
 Add a few sentences to explain the purpose and use of a class to its
-header file for every new class you add. Much of the Mixxx code does not
-have any documentation, so add it whenever you edit a class.
+header file for every new class you add.  Currently, a lot of the 
+Mixxx code is lacking documentation, so please improve that as you 
+work on it.
 
 ### TODO's
 

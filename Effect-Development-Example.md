@@ -1,6 +1,4 @@
-# Mixxx Effect Development Example
-
-\[WIP\] This is a work in progress...
+# [WIP] Mixxx Effect Development Example
 
 This is a practical guide of how to develop a simple native effect for
 mixxx effects framework. In order to demonstrate actual steps needed, a
@@ -58,6 +56,5 @@ should be included and registered in
 src/effects/native/nativebackend.cpp and
 src/test/nativeeffects\_test.cpp
 
-Finally in order for scons to be able to correctly build mixxx with the
-newly created effect files, new files should be added in
-build/depends.py
+Finally, add the new files to `CMakeLists.txt` so they are included in
+the cmake build.

@@ -1,3 +1,3 @@
-The master branch must support the packages in the latest Ubuntu LTS. Therefore, major Mixxx releases (X.Y, like 2.2) support the Ubuntu LTS at the time they are branched from the master branch. Bugfix releases (X.Y.Z, like 2.2.1) will continue supporting the same minimum requirements that the X.Y.0 release did.
+The master branch must support the packages in the latest Ubuntu LTS. Major Mixxx releases (X.Y, like 2.2) support the Ubuntu LTS at the time they are branched from the master branch. Bugfix releases (X.Y.Z, like 2.2.1) will continue supporting the same minimum requirements that the X.Y.0 release did.
 
 No hacks may be committed for backwards compatibility with dependencies older than this minimum requirements policy. Backwards compatibility hacks should be removed from master as soon as possible.

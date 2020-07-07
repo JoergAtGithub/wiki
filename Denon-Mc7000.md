@@ -409,30 +409,15 @@ Platter Ring LEDs are correlated with the VINYL button.
 ### Change Log
 
 **Release for Mixxx 2.3**
-
-  - GIT commit waiting approval yet
   - added Library sort function for Artist, Title, BPM, Key
   - added Softtakeover for Pitch faders
   - some minor code cleaning and improvements
 
 **Release for Mixxx 2.2.4**
-
   - The current version of Mixxx does not yet support sort function in
     library. This will be mapped with Mixxx 2.3
   - all other functions and LEDs are working except PAD mode 2nd and 3rd
     function
-
-**Beta 0.14**
-
-  - code clean up and simplifications
-  - PAD Mode LED improvements
-  - HotCue LED will be triggered on or off when loading and ejecting a
-    track
-  - Sampler LEDs now working on all Decks
-  - CUE LOOP deactivated for now
-  - SLICER mapped as beatjump buttons forward and backward by 1, 2, 4
-    and 8 beats
-  - set default Pitch Fader RANGE to 4, 6, 10, 16, 24 (%)
 
 ### Wish List
 

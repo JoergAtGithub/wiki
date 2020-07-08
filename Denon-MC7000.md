@@ -1,4 +1,3 @@
-# Denon MC7000
 
 [[/media/hardware/denondj-img-mc7000.jpg|]]
 

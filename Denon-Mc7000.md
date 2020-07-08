@@ -1,6 +1,6 @@
 # Denon MC7000
 
-[[/media/hardware/DenonDJ-img-MC7000.jpg|DenonDJ-img-MC7000.jpg]]
+[[/media/hardware/denondj-img-mc7000.jpg|]]
 
 ### Useful Links
 

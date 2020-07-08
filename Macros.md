@@ -33,4 +33,12 @@ Note: uses quantize setting from hotcues
 | macro\_X\_set      | binary             | Save the last recorded Macro to slot X                                                                 |
 | macro\_X\_clear    | binary             | If Macro X is set, delete it and remove it from the Rack                                               |
 
-## Format
+## Storage
+
+A Macro with its Actions is stored in the [protobuf format](https://github.com/xerus2000/mixxx/blob/macros/src/proto/macro.proto).
+
+A table in the mixxxdb will store the binary blob of the Macro along with its name, the corresponding track and whether it is enabled or looped.
+
+Considerations: 
+- Store state(enabled/looped) as one property, since you never want both
+- Should the reference to the track be stored in the macros table or in the tracks table?

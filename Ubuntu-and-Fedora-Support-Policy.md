@@ -15,8 +15,14 @@ Luckily this is not the case for Mixx 2.2.4, the current version at the time of 
 
 For Mixxx 2.3.0 we will drop Ubuntu Xenial support, because of the missing C++17 support. 
 
+# stock version # 
 
+* Xenial 2.0.0
+* Bionic 2.0.0
+* Eoan 2.2.1
+* Focal 2.2.3
 
+# Stats #
 
 Here some download stats:
 

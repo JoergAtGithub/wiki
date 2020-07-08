@@ -243,8 +243,8 @@ Tu:
 - ~Investigate database integration~
 
 We:
-- Reviews
-- Look into database
+- [Reviews](https://github.com/xerus2000/mixxx/pull/5)
+- Look into database schema & [add documentation](https://github.com/mixxxdj/mixxx/pull/2925)
 
 Th:
 

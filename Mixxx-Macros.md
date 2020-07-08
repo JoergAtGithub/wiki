@@ -239,10 +239,12 @@ Mo:
 - Wrote tests, investigated Mixxx E2E testing and wrote failing E2E test
 
 Tu:
-- Fix E2E test
-- Investigate database integration
+- Fix & Expand E2E tests
+- ~Investigate database integration~
 
 We:
+- Reviews
+- Look into database
 
 Th:
 

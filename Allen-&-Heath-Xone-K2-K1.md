@@ -97,27 +97,22 @@ the same time activates supershift mode.
 
 ### Mixxx 2.1 - 2.2
 
-  - Top encoder:
-  - jog
-  - shift: key
-  - supershift: gain
-  - Top encoder press:
-  - sync
-  - shift: reset key
-  - supershift: reset gain
+  - Top encoder: jog
+      - shift: key
+      - supershift: gain
+  - Top encoder press: sync
+      - shift: reset key
+      - supershift: reset gain
   - Knobs: high/mid/low equalizer knobs
-  - Top button 1:
-  - headphones/PFL
-  - shift: reset tempo
-  - supershift: set beatgrid to current position
-  - Top button 2:
-  - cue
-  - shift: go to beginning of track and stop
-  - supershift: keylock
-  - Top button 3:
-  - play
-  - shift: reverse
-  - supershift: quantize
+  - Top button 1: headphones/PFL
+      - shift: reset tempo
+      - supershift: set beatgrid to current position
+  - Top button 2: cue
+      - shift: go to beginning of track and stop
+      - supershift: keylock
+  - Top button 3: play
+      - shift: reverse
+      - supershift: quantize
   - Fader: volume
 
 <!-- end list -->
@@ -153,23 +148,19 @@ the same time activates supershift mode.
   - Top encoder: gain
       - shift: jog
       - supershift: adjust key
-  - Top encoder press:
-  - reset gain
-  - shift: master sync
-  - supershift: reset key
+  - Top encoder press: reset gain
+      - shift: master sync
+      - supershift: reset key
   - Knobs: high/mid/low equalizer knobs
-  - Top button 1:
-  - headphones/PFL
-  - shift: reset tempo
-  - supershift: set beatgrid to current position
-  - Top button 2:
-  - cue
-  - shift: go to beginning of track and stop
-  - supershift: keylock
-  - Top button 3:
-  - play
-  - shift: reverse
-  - supershift: quantize
+  - Top button 1: headphones/PFL
+      - shift: reset tempo
+      - supershift: set beatgrid to current position
+  - Top button 2: cue
+      - shift: go to beginning of track and stop
+      - supershift: keylock
+  - Top button 3: play
+      - shift: reverse
+      - supershift: quantize
   - Fader: volume
 
 <!-- end list -->

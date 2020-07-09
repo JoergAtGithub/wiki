@@ -94,14 +94,15 @@ Suggestions: Spin, Routines, Twist, MicroFlow, Mow
 
 "Routines" sounds nice, is
 [descriptive](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282607)
-and
-[well-received](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197421948)
-- [we don't need to sell it
-either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).
+and [well-received](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197421948) - 
+[we don't need to sell it either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/197282525).
+
 It sounds a little bland though, and doesn't capture the whole idea of
 using it to create non-destructive edits of a track. It also doesn't
 blend well with other terms, such as "Routine Mode" (for recording a
 routine).
+
+I am now [against Routines, but not happy with Macros either](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Macros.2FSaved.20Hotcue.20Routines.2F.22Serato.20Flip.22/near/203376467).
 
 ### Discussion
 

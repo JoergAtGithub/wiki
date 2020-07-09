@@ -114,34 +114,21 @@ the same time activates supershift mode.
       - shift: reverse
       - supershift: quantize
   - Fader: volume
-
-<!-- end list -->
-
   - Bottom buttons (loop layer):
-  - Bottom button 1 (red):
-
-<!-- end list -->
-
-``` 
-    * reloop/disable loop
-    * shift: jump to to beginning of loop, stop playback, and activate loop
-    * supershift: set loop in point. Hold to move loop in point with play position.
-* Bottom button 2 (green):
-    * activate loop of selected size
-    * shift: activate rolling loop of selected size
-    * supershift: set loop out point. Hold to move loop out point with play position.
-* Bottom button 3 (amber):
-    * beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
-    * shift: double loop size
-    * supershift: double beatjump size
-* Bottom button 4 (amber):
-    * beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
-    * shift: halve loop size
-    * supershift: halve beatjump size
-* Bottom buttons (hotcue layer, red):
-* activate hotcues 1-4 or set the hotcue if the is not one set yet
+  - Bottom button 1 (red): reloop/disable loop
+      - shift: jump to to beginning of loop, stop playback, and activate loop
+      - supershift: set loop in point. Hold to move loop in point with play position.
+  - Bottom button 2 (green): activate loop of selected size
+      - shift: activate rolling loop of selected size
+      - supershift: set loop out point. Hold to move loop out point with play position.
+  - Bottom button 3 (amber): beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+      - shift: double loop size
+      - supershift: double beatjump size
+  - Bottom button 4 (amber): beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+      - shift: halve loop size
+      - supershift: halve beatjump size
+  - Bottom buttons (hotcue layer, red): activate hotcues 1-4 or set the hotcue if the is not one set yet
 * shift: delete hotcues 1-4
-```
 
 ### Mixxx 2.3
 
@@ -162,45 +149,31 @@ the same time activates supershift mode.
       - shift: reverse
       - supershift: quantize
   - Fader: volume
-
-<!-- end list -->
-
-  - Bottom buttons (intro/outro cue layer, amber):
-  - Intro/outro cues from top to bottom are ordered:
-
-<!-- end list -->
-
-``` 
-    - Intro start
-    - Intro end
-    - Outro start
-    - Outro end
-* press: jump to that cue or sets it if it is not set
-* shift: seek forward/back. The top two (intro) buttons seek quickly; the bottom two (outro) seek slowly
-* supershift: delete cue
-* Bottom buttons (hotcue layer, red):
-* Hotcues are ordered 1-4 from top to bottom
-* press: jump to that hotcue or sets it if it is not set
-* shift: seek forward/back. The top two buttons seek quickly; the bottom two seek slowly
-* supershift: delete hotcue
-* Bottom buttons (loop layer, green):
-* Bottom button 1 (red):
-    * reloop/disable loop
-    * shift: jump to to beginning of loop, stop playback, and activate loop
-    * supershift: set loop in point. Hold to move loop in point with play position.
-* Bottom button 2 (green):
-    * activate loop of selected size
-    * shift: activate rolling loop of selected size
-    * supershift: set loop out point. Hold to move loop out point with play position.
-* Bottom button 3 (amber):
-    * double loop size
-    * shift: beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
-    * supershift: double beatjump size
-* Bottom button 4 (amber):
-    * halve loop size
-    * shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
-    * supershift: halve beatjump size
-```
+  - Bottom buttons (intro/outro cue layer, amber): Intro/outro cues from top to bottom are ordered:
+          - Intro start
+          - Intro end
+          - Outro start
+          - Outro end
+      - press: jump to that cue or sets it if it is not set
+      - shift: seek forward/back. The top two (intro) buttons seek quickly; the bottom two (outro) seek slowly
+      - supershift: delete cue
+  - Bottom buttons (hotcue layer, red): Hotcues are ordered 1-4 from top to bottom
+      - press: jump to that hotcue or sets it if it is not set
+      - shift: seek forward/back. The top two buttons seek quickly; the bottom two seek slowly
+      - supershift: delete hotcue
+  - Bottom buttons (loop layer, green):
+  - Bottom button 1 (red): reloop/disable loop
+      - shift: jump to to beginning of loop, stop playback, and activate loop
+      - supershift: set loop in point. Hold to move loop in point with play position.
+  - Bottom button 2 (green): activate loop of selected size
+      - shift: activate rolling loop of selected size
+      - supershift: set loop out point. Hold to move loop out point with play position.
+  - Bottom button 3 (amber): double loop size
+      - shift: beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+      - supershift: double beatjump size
+  - Bottom button 4 (amber): halve loop size
+      - shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+      - supershift: halve beatjump size
 
 ## Effects
 

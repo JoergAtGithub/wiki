@@ -1,27 +1,20 @@
-# Creating Skins
-
 Skins can change the look and feel of Mixxx. Some skins merely make the
 program more aesthetically pleasing while others rearrange elements of
-the interface, potentially making the program easier to use.
+the interface to fit different use-cases.
 
 ### Getting started
 
 A skin for Mixxx is basically a folder with various images, a text file
-named skin.xml, other XML template files and a [style.qss
-file](/creating_skins#qss_style). The skin.xml and template files define
-all the elements (widgets) of the skin, what the images are used for and
-and where they are placed on screen.
+named skin.xml, other XML template files and a [style.qss file](/creating_skins#qss_style).
+The skin.xml and template files define all the elements (widgets) of the
+skin, what the images are used for and where they are placed on screen.
 
-Reading this page helps to understand how skins work in Mixxx‚ it will
-save you time eventually.
-
-Start a new skin by navigating to your local [Mixxx resource
-folder](/creating_skins#skin_faq), duplicate the directory of the skin
-you like to work on and rename it. Use the content of the new folder as
-starting point for your first skin. Read this page, understand how
-things were done in the skin you copied and try to work from there. If
-you're familiar with HTML, then you should pretty comfortable editing
-the skin.xml.
+To create a new skin, navigate to your local [Mixxx resource folder](/creating_skins#skin_faq),
+duplicate the directory of the skin you want to base your work on and
+rename it. Use the content of the new folder as starting point for your
+first skin. Read this page, understand how things were done in the skin
+you copied and try to work from there. Familiarity with HTML will have
+you feel at home editing the skin.xml.
 
 **You can download the most recent source files for skins from
 [Github](https://github.com/mixxxdj/mixxx/tree/master/res/skins), our
@@ -58,38 +51,7 @@ element and their attributes defined in the skin.xml can be found
 
 | syntax | Info |
 | ------ | ---- |
-
-|                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<!--Comment-->
-<!DOCTYPE skin>
-<skin>
-<manifest>...</manifest>
-<elementname>
-  <TooltipId>...</TooltipId>
-  <Pos>X,Y</Pos>
-  <Size>W,H</Size>
-  <MinimumSize>W,H</MinimumSize>
-  <MaximumSize>W,H</MaximumSize>
-  <SizePolicy>WPolicy,HPolicy</SizePolicy>
-  <options>values(depends)</options>
-</elementname>
-</skin>
-` | `Optional comments (i.e. skin license or changelog)
-Doctype declaration
-Skin opening tag
-Manifest describing skin properties (author, title, version, etc.)
-Elements opening tag
-Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
-Position on the screen
-Size (depending on the element)
-Minimum Size
-Maximum Size
-Size Policy
-Options(depending on the element)
-Elements closing tag
-Skin closing tag
-` |
+| \<\!--Comment--\><br>\<\!DOCTYPE skin\><br>\<skin\><br>\<manifest\>...\</manifest\><br>\<elementname\><br>\<TooltipId\>...\</TooltipId\><br>\<Pos\>X,Y\</Pos\><br>\<Size\>W,H\</Size\><br>\<MinimumSize\>W,H\</MinimumSize\><br>\<MaximumSize\>W,H\</MaximumSize\><br>\<SizePolicy\>WPolicy,HPolicy\</SizePolicy\><br>\<options\>values(depends)\</options\><br>\</elementname\><br>\</skin\> | Optional comments (i.e. skin license or changelog)<br>Doctype declaration<br>Skin opening tag<br>Manifest describing skin properties (author, title, version, etc.)<br>Elements opening tag<br>Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp<br>Position on the screen<br>Size (depending on the element)<br>Minimum Size<br>Maximum Size<br>Size Policy<br>Options(depending on the element)<br>Elements closing tag<br>Skin closing tag |
 
 ### Skin 101
 

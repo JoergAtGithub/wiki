@@ -150,10 +150,9 @@ the same time activates supershift mode.
 
 ### Mixxx 2.3
 
-  - Top encoder:
-  - gain
-  - shift: jog
-  - supershift: adjust key
+  - Top encoder: gain
+      - shift: jog
+      - supershift: adjust key
   - Top encoder press:
   - reset gain
   - shift: master sync

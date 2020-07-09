@@ -260,9 +260,8 @@ restarting Mixxx).
 
 ## Troubleshooting
 
-If your K2 switches between 3 layers (amber, red, and green) instead of
-2 (amber and red only) and supershift does not work, make sure Latching
-Layers is turned off. Refer to the [Xone K2
+If general functionality or supershift are not working, double check that Latch
+Layers is turned off and MIDI CH is selected. Refer to the [Xone K2
 manual](https://allen-heath.com/media/Xone+K2_UG_AP8509_2.pdf) page 12
 for details.
 

@@ -1,4 +1,3 @@
-\======= Allen & Heath Xone:K2/K1 ======
 ![http://www.allen-heath.com/media/XoneK2\_Front\_Main-463x1024.jpg](http://www.allen-heath.com/media/XoneK2_Front_Main-463x1024.jpg)
 
   - [Manufacturer's product

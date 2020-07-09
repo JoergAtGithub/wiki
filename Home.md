@@ -159,7 +159,7 @@ this wiki, please fix it.
 
 ### Development Topics
 
-  - [Minimum requirements policy]
+  - [Minimum requirements policy](Minimum requirements policy)
   - [Setting-up CI on your own
     fork](Setting-up%20CI%20on%20your%20own%20fork)
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests

@@ -55,6 +55,8 @@ play.setGroup('[Channel3]');
 play.setKey('cue_default');
 ```
 
+The callbacks would be passed the `mixxx.Control` as their first parameter. If access to other context (for example, a surrounding Component from the Components JS library) is required inside the callback, use an arrow function or `Function.prototype.bind` to bind `this` for the callback.
+
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
 ## New jog wheel scratching API

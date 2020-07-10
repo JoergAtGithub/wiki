@@ -1,4 +1,4 @@
-The current controller system is clunky to program with. This wiki page explains plans for building a new controller system where mappings are done entirely in JavaScript modules.
+The current controller system is clunky to program with. Now that we are using QJSEngine ([PR #2682](https://github.com/mixxxdj/mixxx/pull/2682)) which supports ES7 as of Qt 5.12 in master, we can build a whole new controller mapping system that will be nicer to work with and implement features we have wanted for years. This wiki page explains plans for making this new controller mapping system.
 
 ## C++ refactoring
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API

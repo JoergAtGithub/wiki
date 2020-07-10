@@ -70,6 +70,9 @@ https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.2
 ## New JSON metadata format
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
+## Show documentation in the application
+to be discussed
+
 ## Hotplug
 https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Hotplugging
 

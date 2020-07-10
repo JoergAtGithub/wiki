@@ -1,7 +1,6 @@
 The current controller system is clunky to program with. Now that we are using QJSEngine ([PR #2682](https://github.com/mixxxdj/mixxx/pull/2682)) which supports ES7 as of Qt 5.12 in master, we can build a whole new controller mapping system that will be nicer to work with and implement features we have wanted for years. This wiki page explains plans for making this new controller mapping system.
 
 ## C++ refactoring
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
 Currently, the C++ classes that handle controllers are arranged in this inheritance hierarchy:
 ```
@@ -33,8 +32,10 @@ Each ControllerMappingProcessor will be given at least one Controller* pointer u
 
 The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API)
+
 ## New ControlObject JS API
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects
+
 The old `engine.getValue`/`engine.setValue`/`engine.getParameter`/`engine.setParameter` API will be replaced by a new C++ class with a constructor inserted into the JS environment as `mixxx.Control`:
 ```
 const play = new mixxx.Control('[Channel1]', 'play');
@@ -47,10 +48,14 @@ play.setCallback(control => console.log(control.getValue()));
 play.setCallback(null);
 // manually invoke callback
 play.trigger();
-// change group or key -- callback is automatically reconnected to new CO and triggered
+// Change group or key -- callback is automatically reconnected to new CO and triggered.
+// A second boolean parameter can be added to avoid automatically triggering the callback,
+// but most of the time automatically triggering the callback is helpful.
 play.setGroup('[Channel3]');
 play.setKey('cue_default');
 ```
+
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
 ## New jog wheel scratching API
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API

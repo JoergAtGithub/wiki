@@ -88,8 +88,6 @@ used with Mixxx on Linux, macOS, and Windows.
 
 Click the name of the controller for more information.
 
-\<sortable 2=numeric\>
-
 | Device                                                                           | Price (USD) \[1\] | Description                                             | Integrated Sound Card | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
 | -------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------------------- | ---------------- | --------------- | ----------------------------- | -------- |
 | [Hercules DJControl Compact](Hercules%20DJControl%20Compact)                     | $80               | basic 2 deck                                            | no                    | \-               | MIDI            | 2.1                           | 2015     |
@@ -112,8 +110,6 @@ Click the name of the controller for more information.
 | [Stanton SCS.1d](Stanton%20SCS.1d)                                               | discontinued      | 1 turntable \[7\]                                       | no                    | \-               | HSS1394 (MIDI)  | 1.9.1                         | 2009     |
 | [Vestax VCI-400](Vestax%20VCI-400)                                               | discontinued      | 4 deck all-in-one                                       | yes                   | yes              | MIDI            | 1.10.1                        | 2012     |
 
-\</sortable\>
-
 ### Community Supported Mappings
 
 All of these devices have mappings included in Mixxx. There may be other
@@ -126,8 +122,6 @@ In Development](#Mappings%20In%20Development) table and refer to the
 [Contributing Mappings](Contributing%20Mappings) page for instructions
 on how to get it included in Mixxx. When the pull request is merged,
 move your controller to this table.
-
-\<sortable 2=numeric\>
 
 | Device                                                                                             | Price (USD) \[8\] | Description                                                  | Integrated audio interface | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
 | -------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------ | -------------------------- | ---------------- | --------------- | ----------------------------- | -------- |
@@ -215,21 +209,15 @@ move your controller to this table.
 | [Vestax Typhoon](Vestax%20Typhoon)                                                                 | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI            | 1.9                           | 2010     |
 | [Vestax Spin](Vestax%20Spin)                                                                       | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI            | 1.9                           | 2009     |
 
-\</sortable\>
-
 #### Esoteric controllers
 
 These are devices that were not designed for controlling music software
 but have been mapped to Mixxx anyway.
 
-\<sortable 2=numeric\>
-
 | Device                                 | Price (USD) | Description             | Integrated audio interface | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
 | -------------------------------------- | ----------- | ----------------------- | -------------------------- | ---------------- | --------------- | ----------------------------- | -------- |
 | [Nintendo Wiimote](Nintendo%20Wiimote) | $25         | game console controller | no                         | \-               | HID             | 1.11                          | 2006     |
 | [Sony SixxAxis](Sony%20SixxAxis)       | $25         | game console controller | no                         | \-               | HID             | 1.11                          | 2006     |
-
-\</sortable\>
 
 ### Mappings In Development
 
@@ -243,8 +231,6 @@ the controller for more information.
 When a mapping is included in Mixxx, please move it to the [\#Mixxx
 Certified Mappings](#Mixxx%20Certified%20Mappings) or [\#Community
 Supported Mappings](#Community%20Supported%20Mappings) table above.
-
-\<sortable 2=numeric\>
 
 <table>
 <thead>
@@ -497,8 +483,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 </tbody>
 </table>
 
-\</sortable\>
-
 ### Not mapped controllers
 
 There are too many DJ controllers out there to list. Some of these
@@ -633,8 +617,6 @@ generally get the sound quality you pay for with audio interfaces. The
 manual](http://mixxx.org/manual/latest/en/chapters/hardware.html#audio-interface-considerations)
 has more information to help decide on an audio interface to use.
 
-\<sortable 2=numeric\>
-
 | Device                                                                                                                                 | Price (USD) \[36\] | Channels out | Balanced outputs | Channels in | Microphone input with direct monitoring | Phono preamp | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ | ---------------- | ----------- | --------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Generic USB audio interfaces                                                                                                           | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard audio interfaces. [\#Splitter cables](#Splitter%20cables) are another option in this price range.                                                                                                                                                                                                                                    |
@@ -646,8 +628,6 @@ has more information to help decide on an audio interface to use.
 | [Denon DS1](https://www.denondj.com/dvs-audio-interface-for-serato-ds1)                                                                | $300               | 4            | no               | 4           | no                                      | yes          | Higher quality option for vinyl control. Comes with a pair of Serato timecode vinyl that are compatible with Mixxx.                                                                                                                                                                                                                                                                                                                          |
 | [Native Instruments Traktor Scratch Audio 6](https://www.native-instruments.com/en/products/traktor/digital-vinyl/traktor-scratch-a6/) | $300               | 6            | no               | 6           | no                                      | yes          | Higher quality option for vinyl control. Has an extra stereo pair of inputs for recording or broadcasting with an external hardware mixer. The included Traktor Scratch Mk2 timecode vinyl are not compatible with Mixxx;[compatible control vinyl](https://mixxx.org/manual/latest/en/chapters/vinyl_control.html#supported-timecode-media) can be purchased separately.                                                                    |
 | [RME Babyface Pro FS](https://www.rme-audio.com/babyface-pro-fs.html/)                                                                 | $900               | 4            | yes              | 4           | yes                                     | no           | Very high sound quality. Requires a [kernel patch](https://github.com/MrBollie/RME-Babyace-Pro-ALSA-Mixer-Patch) for full control of direct monitor routing on Linux \< 5.8.                                                                                                                                                                                                                                                                 |
-
-\</sortable\>
 
 ### Mixers with audio interfaces
 
@@ -680,7 +660,7 @@ which could be mapped to control Mixxx.
 Most of these have a single USB port, but some have two. Two USB ports
 allows two different DJs to use the mixer's audio interface at the same
 time with their own computer for collaborative DJ sets and easy,
-seamless transitions between DJs. \<sortable 2=numeric\>
+seamless transitions between DJs.
 
 | Device                                                                                                                      | Price (USD) \[37\] | Decks | Phono preamps | USB ports | Analog or digital mixing | Linux         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- | ------------- | --------- | ------------------------ | ------------- |
@@ -701,8 +681,6 @@ seamless transitions between DJs. \<sortable 2=numeric\>
 | [Pioneer DJM-900SRT](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-900SRT)                                           | $2300              | 4     | 2             | 1         | digital                  | ?             |
 | [Pioneer DJM-2000NXS](http://www.pioneerelectronics.com/PUSA/DJ/Mixers/DJM-2000NXS)                                         | $2500              | 4     | 2             | 1         | digital                  | likely \[43\] |
 | [Rane MP2015](http://dj.rane.com/products/mp2015-mixer)                                                                     | $2900              | 4     | 4             | 2         | digital                  | likely \[44\] |
-
-\</sortable\>
 
 1.  Prices listed on this page are the prevailing prices for unused
     devices found from [searching Google

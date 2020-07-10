@@ -2,4 +2,6 @@ The master branch must build with the packages in the latest Ubuntu LTS which ha
 
 Major Mixxx releases (X.Y, like 2.2) have the same minimum requirements as the minimum requirements when they were branched from the master branch. Bugfix releases (X.Y.Z, like 2.2.1) will continue supporting the same minimum requirements that the X.Y.0 release did.
 
+Here are some background info: [Ubuntu and Fedora Support](Ubuntu-and-Fedora-Support-Policy)
+
 This policy was collectively agreed upon in [this Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/minimum.20requirements.20policy/near/203415058).

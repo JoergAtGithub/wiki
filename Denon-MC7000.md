@@ -81,7 +81,7 @@ files so please just right click each of the links and "save link as".
     file](https://github.com/mixxxdj/mixxx/raw/2.2/res/controllers/Denon-MC7000-scripts.js)
 
 Read further [where to place the mapping
-files](https://mixxx.org/wiki/doku.php/controller_mapping_file_locations)
+files](https://github.com/mixxxdj/mixxx/wiki/controller_mapping_file_locations)
 for your system.
 
 **You need to activate the mapping in Preferences -\> Controller -\>

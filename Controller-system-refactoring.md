@@ -6,9 +6,9 @@ PortMidiController Hss1394Controller
 
 
 ```
-                  ControllerMapping
-ModularControllerMapping   LegacyControllerMapping
-                           LegacyMidiControllerMapping
+                  ControllerMappingProcessor
+ModularControllerMappingProcessor   LegacyControllerMappingProcessor
+                           LegacyMidiControllerMappingProcessor
 
                                    Controller
               MidiController  HidController  BulkController

@@ -11,7 +11,7 @@ PortMidiController Hss1394Controller
 ```
 These Controller classes couple hardware I/O with the implementation of the legacy mapping system. Scripting is handled by the ControllerEngine class, which is a private member of Controller. ControllerEngine both runs the JavaScript interpreter (QJSEngine in master, QScriptEngine in Mixxx <= 2.3) and provides the API for scripts to interact with Mixxx via the `engine` object in the JS environment.
 
-In [PR #2868](https://github.com/mixxxdj/mixxx/pull/2868) we have started working towards a new mapping system in which mapping is done entirely by JavaScript modules. Although this worked as a proof-of-concept hack in the legacy controller system, it became apparent that to bringing the new system to its full potential requires major reorganization of the C++ code architecture.
+In [PR #2868](https://github.com/mixxxdj/mixxx/pull/2868) we have started working towards a new mapping system in which mapping is done entirely by JavaScript modules. Although this worked as a proof-of-concept hack in the legacy controller system, it became apparent that bringing the new system to its full potential requires major reorganization of the C++ code architecture.
 
 The first step is to decouple the `engine` API in the script environment from the ControllerEngine class which manages the JS interpreter. This facilitates decoupling the JS handling code for the legacy and new controller systems so we can have a fresh start in the new system with only the code necessary for the new features. This has already been implemented in [PR #2920](https://github.com/mixxxdj/mixxx/pull/2920).
 

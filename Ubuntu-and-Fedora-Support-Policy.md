@@ -1,8 +1,8 @@
 We offer support for Fedora (RPM) and Ubuntu (DEB) with the latest stable Mixxx version.
 
 As Linux distributions only update security fixes of the Mixxx version shipped with the distro, it will soon fall out of our support. Because of this we run:
-* Mixx PPA https://launchpad.net/~mixxx/+archive/mixxx
-* RPM Fusion repository https://admin.rpmfusion.org/pkgdb/package/free/mixxx/
+* [Mixxx PPA](https://launchpad.net/~mixxx/+archive/mixxx)
+* [RPM Fusion repository](https://admin.rpmfusion.org/pkgdb/package/free/mixxx/)
  
 This way users have the choice to subscribe for updates and keep their Mixxx installation supported. 
 

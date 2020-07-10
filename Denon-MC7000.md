@@ -3,8 +3,7 @@
 
 ### Useful Links
 
-  - [Denon MC7000 Mapping thread inside the MIXXX
-    forum](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126)
+  - [Denon MC7000 Mapping thread](https://mixxx.discourse.group/t/denon-mc7000-mapping/18235)
   - [Manufacturer's product
     page](https://www.denondj.com/professional-dj-controller-for-serato-mc7000xus)
   - [User
@@ -92,7 +91,7 @@ This controller is made for Serato DJ and most of the mapping is made
 for MIXXX accordingly. Anyhow, there are several differences for
 functions not matching the Serato mapping. If you have any wishes to
 improve the mapping, then please discuss it in the [Denon MC7000
-Mapping](https://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) thread.
+Mapping](https://mixxx.discourse.group/t/denon-mc7000-mapping/18235) thread.
 
 ### User Variables
 
@@ -431,7 +430,7 @@ All additional wishes will be listed here:
 ## Contact and DJ Web Sites
 
 If you like to contact me then please visit [the
-Forum](http://www.mixxx.org/forums/viewtopic.php?f=7&t=13126) or contact
+Forum](https://mixxx.discourse.group/t/denon-mc7000-mapping/18235) or contact
 me on [Facebook](http://www.facebook.com/OsZ.DJ/).
 
 To check out my performances with this MC7000 using MIXXX please visit

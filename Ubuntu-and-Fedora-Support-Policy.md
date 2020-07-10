@@ -1,19 +1,19 @@
-We explicit offer support for Fedora (RPM) and Ubuntu (DEB) with the latest stable Mixxx version.  
+We offer support for Fedora (RPM) and Ubuntu (DEB) with the latest stable Mixxx version.
 
-As the original package maintainer only update security fixes of the Mixxx version shipped with the distro, it will soon fall out of our support. Because of this we run: 
+As Linux distributions only update security fixes of the Mixxx version shipped with the distro, it will soon fall out of our support. Because of this we run:
 * Mixx PPA https://launchpad.net/~mixxx/+archive/mixxx
 * RPM Fusion repository https://admin.rpmfusion.org/pkgdb/package/free/mixxx/
  
 This way users have the choice to subscribe for updates and keep their Mixxx installation supported. 
 
-Appart from the recommended stable Mixxx version, users have also the choice to follow the beta stream which is a preview for the next stable version or the alpha (nightly) stream which is under active development. This way he can help to find bugs an contribute ideas for upcoming Mixxx versions. 
+In addition to the recommended stable Mixxx version, users have also the choice to follow the beta stream which is a preview for the next stable version or the alpha (nightly) stream which is under active development. This way users can help to find bugs an contribute ideas for upcoming Mixxx versions. 
 
-We aim to provide the current stable version for all active distro versions. Sometimes new Mixxx features require distro facilities that are not available in older distro version. In these cases we can't effort to keep these old version updated and we drop the support. 
-Every user is encouraged to update his distro to go back to the supported state.   
+We aim to provide the current stable version for all active distros versions. Sometimes new Mixxx features require newer dependencies than are available in an older distro version. In these cases don't keep these old versions updated and we drop the support. 
+Every user is encouraged to update their distro to use the latest stable version of Mixxx (of course, don't update right before a gig). For developers, the details of when we drop support are documented on the [Minimum Requirements Policy page](/Minimum%20requirements%20policy).
 
-Luckily this is not the case for Mixx 2.2.4, the current version at the time of writing. 
+Luckily this is not the case for Mixxx 2.2.4, the current version at the time of writing. 
 
-For Mixxx 2.3.0 we will drop Ubuntu Xenial support, because of the missing C++17 support. 
+For Mixxx 2.3.0 we will drop Ubuntu 18.04 Xenial support because it does not support C++17. 
 
 # stock version # 
 

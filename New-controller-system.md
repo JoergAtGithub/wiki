@@ -35,6 +35,22 @@ The Controller objects will be exposed to the JS environment via ControllerJSPro
 
 ## New ControlObject JS API
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects
+The old `engine.getValue`/`engine.setValue`/`engine.getParameter`/`engine.setParameter` API will be replaced by a new C++ class with a constructor inserted into the JS environment as `mixxx.Control`:
+```
+const play = new mixxx.Control('[Channel1]', 'play');
+play.setValue(1);
+play.toggle();
+console.log(play.getValue()); // 0
+// connect callback
+play.setCallback(control => console.log(control.getValue()));
+// disconnect callback
+play.setCallback(null);
+// manually invoke callback
+play.trigger();
+// change group or key -- callback is automatically reconnected to new CO and triggered
+play.setGroup('[Channel3]');
+play.setKey('cue_default');
+```
 
 ## New jog wheel scratching API
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API

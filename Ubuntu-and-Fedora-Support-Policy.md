@@ -9,7 +9,7 @@ This way users have the choice to subscribe for updates and keep their Mixxx ins
 In addition to the recommended stable Mixxx version, users have also the choice to follow the beta stream which is a preview for the next stable version or the alpha (nightly) stream which is under active development. This way users can help to find bugs an contribute ideas for upcoming Mixxx versions. 
 
 We aim to provide the current stable version for all active distros versions. Sometimes new Mixxx features require newer dependencies than are available in an older distro version. In these cases don't keep these old versions updated and we drop the support. 
-Every user is encouraged to update their distro to use the latest stable version of Mixxx (of course, don't update right before a gig). For developers, the details of when we drop support are documented on the [Minimum Requirements Policy page](/Minimum%20requirements%20policy).
+Every user is encouraged to update their distro to use the latest stable version of Mixxx (of course, don't update right before a gig). For developers, the details of when we drop support are documented on the [Minimum Requirements Policy page](Minimum%20requirements%20policy).
 
 Luckily this is not the case for Mixxx 2.2.4, the current version at the time of writing. 
 

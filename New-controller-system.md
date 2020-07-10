@@ -28,9 +28,9 @@ PortMidiController Hss1394Controller
                 ControllerScriptEngine
 ModularControllerScriptEngine LegacyControllerScriptEngine
 ```
-Each ControllerMappingProcessor will be given at least one Controller* pointer upon construction by ControllerManager. From the controller polling thread, ControllerManager will call a `poll` method on each ControllerMappingProcessor. `ControllerMappingProcessor::poll` will call the `poll` method of each Controller* that it is using, then process the polled data as appropriate. For the ModularControllerMappingProcessor, this will simply be passing the polled data to a JS callback from the module as a QByteArray (turned into a Uint8Array in JS) plus a timestamp. LegacyControllerMapping will implement the legacy XML+JS system. Currently MidiController implements handling the XML mappings. This will be moved to LegacyMidiControllerMappingProcessor.
+Each ControllerMappingProcessor will be given at least one Controller* pointer upon construction by ControllerManager. From the controller polling thread, ControllerManager will call a `poll` method on each ControllerMappingProcessor. `ControllerMappingProcessor::poll` will call the `poll` method of each Controller* that it is using, then process the polled data as appropriate. For the ModularControllerMappingProcessor, this will simply be passing the polled data to a JS callback as a QByteArray (turned into a Uint8Array in JS) plus a timestamp. LegacyControllerMapping will implement the legacy XML+JS system. Currently MidiController implements handling the XML mappings. This will be moved to LegacyMidiControllerMappingProcessor.
 
-The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
+The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. The script would be responsible for registering a callback function with each ControllerJSProxy to handle all incoming data from that controller. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API)
 
@@ -58,6 +58,7 @@ play.setKey('cue_default');
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
 ## New jog wheel scratching API
+
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
 ## New JSON metadata format

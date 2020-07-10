@@ -2,7 +2,7 @@ The current controller system is clunky to program with. Now that we are using Q
 
 ## C++ refactoring
 
-Currently, the C++ classes that handle controllers are arranged in this inheritance hierarchy:
+Currently, the C++ classes that handle controllers and controller mappings are arranged in this inheritance hierarchy:
 ```
                            Controller
            MidiController              HidController BulkController

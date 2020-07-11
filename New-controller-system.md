@@ -88,12 +88,22 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
+## Terminology
+
+In an effort to make the communication during discussions of this new system more concise, we are
+standardizing the meaning of certain terms in this glossary:
+
+|     Term     |   Definition   |
+| -----------: | :------------- |
+| Script       | Everything running in Javascript running in a `QJSEngine` |
+| Mapping      | A mapping is a sub-term of script. A script that whose purpose is to translate between messages sent by a controller and the behavior in mixxx is considered a "Mapping". So while a mapping is a script, a script is not necessarily a mapping |°
+
 ## Backburner
 
 This is a list of features that would be nice to have in the long run, but aren't required in the MVP.
 
 ### Reload scripts using keycombo
-Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire mapping manually similar to how we have a keycombo for reloading skins on-the-fly.
+Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire script manually similar to how we have a keycombo for reloading skins on-the-fly.
 
 
 ## Rendering screens with QML

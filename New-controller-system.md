@@ -28,14 +28,40 @@ PortMidiController Hss1394Controller
                 ControllerScriptEngine
 ModularControllerScriptEngine LegacyControllerScriptEngine
 ```
-Each ControllerMappingProcessor will be given at least one Controller* pointer upon construction by ControllerManager. From the controller polling thread, ControllerManager will call a `poll` method on each ControllerMappingProcessor. `ControllerMappingProcessor::poll` will call the `poll` method of each Controller* that it is using, then process the polled data as appropriate. For the ModularControllerMappingProcessor, this will simply be passing the polled data to a JS callback as a QByteArray (turned into a Uint8Array in JS) plus a timestamp. LegacyControllerMapping will implement the legacy XML+JS system. Currently MidiController implements handling the XML mappings. This will be moved to LegacyMidiControllerMappingProcessor.
+Each ControllerMappingProcessor will be given at least one Controller* pointer upon construction by ControllerManager. From the controller polling thread, ControllerManager will call a `poll` method on each ControllerMappingProcessor. `ControllerMappingProcessor::poll` will call the `poll` method of each Controller* that it is using, then process the polled data as appropriate. For the ModularControllerMappingProcessor, this will pass the polled data to a JS callback as a QByteArray (turned into a Uint8Array in JS) plus a timestamp. LegacyControllerMapping will implement the legacy XML+JS system. Currently MidiController implements handling the XML mappings. This will be moved to LegacyMidiControllerMappingProcessor.
 
+## Connecting controllers to JS environment
 The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. The script would be responsible for registering a callback function with each ControllerJSProxy to handle all incoming data from that controller. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
-[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API)
+The JSON metadata file would specify unique identifying information for each controller so Mixxx could automatically load mappings for controllers. Like in [Bitwig Studio](https://zulip-uploads.s3.amazonaws.com/2380/8u3DsrCwnzNLjsJUesBJ1oe6/scripting-guide.pdf?AWSAccessKeyId=AKIAIEVMBCAT2WD3M5KQ&Signature=UbpI%2Fymx8Bd3DY%2FCbrr6iWCMs5A%3D&Expires=1594430101), multiple identifiers can be used to match a controller. This can accommodate for MIDI port name differences between different OSes. It could also be used to match one mapping to multiple controllers, for example the Allen & Heath Xone K2 and K1 can share a mapping, and many Pioneer DDJ controllers share the same MIDI commands. The `manufacturer` and `model` strings would be shown in the controller preferences GUI.
+```
+controllers: {
+  midi: [
+     xoneK2: {
+      midiPort: ["XONE:K2", "XONE:K1"]
+      manufacturer: "Allen & Heath"
+      model: "Xone K2 or K1"
+     },
+     launchpad: {
+      midiPort: ["LAUNCHPAD"],
+      manufacturer: "Novation"
+      model: "Launchpad"
+     }
+  ]
+}
+```
 
-## Controller API in the JS environment
+The JSON object name for the controller would be used as a unique identifier to retrieve the ControllerJSProxy object in the script module:
+```
+export function init() {
+  const xoneK2 = mixxx.getMidiController("xoneK2");
+  xoneK2.registerInputCallback(...);
+  const launchpad = mixxx.getMidiController("launchpad");
+  launchpad.registerInputCallback(...);
+}
+```
 
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/C.2B.2B.20controller.20system.20refactoring)
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment
 
 ## New ControlObject JS API

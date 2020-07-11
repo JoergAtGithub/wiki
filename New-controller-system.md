@@ -63,53 +63,6 @@ export function init() {
 }
 ```
 
-## Rendering screens with QML
-
-The USB bulk endpoints for the screens on Native Instruments controllers could be exposed as JS objects. The C++ code could share this same object in a QML scripting environment to render for the screens. By setting properties on this JS object, the HID controller mapping script could communicate with the QML code. For example, in the JSON metadata file:
-
-```javascript
-// The numbers are just examples.
-controllers: {
-  hid: [
-    kontrols4mk3: {
-      vendor_id: 0x17cc,
-      product_id: 0x1310,
-      usage_page: 0xff01,
-      usage: 0x1,
-      interface_number: 0x4,
-      manufacturer: "Native Instruments",
-      model: "Kontrol S4 Mk3 (HID controller)",
-    }
-  ],
-  bulk: [
-    kontrols4mk3screen: {
-      qml: "screen.qml",
-      vendor_id: 0x17cc,
-      product_id: 0x1310,
-      interface_number: 0x5,
-      endpoint_out: 0x2,
-      manufacturer: "Native Instruments",
-      model: "Kontrol S4 Mk3 (screen)"
-    }
-  ]
-}
-```
-
-By specifying the QML file, Mixxx knows to render that and send it to the specified USB endpoint instead of treating this as a USB Bulk controller and dumping data to the JS module. However, the controller object is still available in the JS environment so state can be communicated between the JS module and QML:
-
-In the JS module:
-```javascript
-export function init() {
-   const controller = mixxx.getHidController("kontrols4mk3");
-   controller.registerInputHandler(...);
-   const screen = mixxx.getBulkController("kontrols4mk3screen");
-   screen.shiftButtonPressed = true;
-   // The QML script could then read the shiftButtonPressed property.
-}
-```
-
-[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment)
-
 ## New ControlObject JS API
 
 The old `engine.getValue`/`engine.setValue`/`engine.getParameter`/`engine.setParameter` API will be replaced by a new C++ class with a constructor inserted into the JS environment as `mixxx.Control`:
@@ -141,6 +94,56 @@ This is a list of features that would be nice to have in the long run, but aren'
 
 ### Reload scripts using keycombo
 Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire mapping manually similar to how we have a keycombo for reloading skins on-the-fly.
+
+
+## Rendering screens with QML
+
+This functionality involves two parts:
+1. Introduction of a dynamic object shared between the `QJSEngine` and the `QQMLEngine`.
+The QJSEngine is then able to change properties on that shared object which cause the associated
+reactive expression bindings in the `QQMLEngine` to be reevaluated.
+2. A `QMLRenderer` Proxy class thats supposed to communicate between the `QQMLEngine` responsible
+for rendering a QML file and the JS environment responsible for sending the render result to the hardware. 
+
+```javascript
+// The numbers are just examples.
+controllers: {
+  hid: [
+    kontrols4mk3: {
+      vendor_id: 0x17cc,
+      product_id: 0x1310,
+      usage_page: 0xff01,
+      usage: 0x1,
+      interface_number: 0x4,
+      manufacturer: "Native Instruments",
+      model: "Kontrol S4 Mk3 (HID controller)",
+    }
+  ],
+  bulk: [
+    kontrols4mk3screen: {
+      vendor_id: 0x17cc,
+      product_id: 0x1310,
+      interface_number: 0x5,
+      endpoint_out: 0x2,
+      manufacturer: "Native Instruments",
+      model: "Kontrol S4 Mk3 (screen)"
+    }
+  ]
+}
+```
+
+In the JS module:
+```javascript
+export function init() {
+   const controller = mixxx.getHidController("kontrols4mk3");
+   controller.registerInputHandler(...);
+   const screen = mixxx.getBulkController("kontrols4mk3screen");
+   const screenRenderer = new mixxx.QMLRenderer("./kontrolsScreen.qml");
+   screenRenderer.setRenderCallback(res => screen.send(res));
+}
+```
+
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment)
 
 
 ## New jog wheel scratching API

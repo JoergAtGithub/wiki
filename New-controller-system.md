@@ -83,7 +83,8 @@ controllers: {
     kontrols4mk3screen: {
       vendor_id: 0x17cc,
       product_id: 0x1310,
-      ep_out: 0x3,
+      interface_number: 0x5,
+      endpoint_out: 0x2,
       manufacturer: "Native Instruments",
       model: "Kontrol S4 Mk3 (screen)"
     }

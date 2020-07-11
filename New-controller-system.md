@@ -30,6 +30,8 @@ ModularControllerScriptEngine LegacyControllerScriptEngine
 ```
 Each ControllerMappingProcessor will be given at least one Controller* pointer upon construction by ControllerManager. From the controller polling thread, ControllerManager will call a `poll` method on each ControllerMappingProcessor. `ControllerMappingProcessor::poll` will call the `poll` method of each Controller* that it is using, then process the polled data as appropriate. For the ModularControllerMappingProcessor, this will pass the polled data to a JS callback as a QByteArray (turned into a Uint8Array in JS) plus a timestamp. LegacyControllerMapping will implement the legacy XML+JS system. Currently MidiController implements handling the XML mappings. This will be moved to LegacyMidiControllerMappingProcessor.
 
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/C.2B.2B.20controller.20system.20refactoring)
+
 ## Connecting controllers to JS environment
 The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. The script would be responsible for registering a callback function with each ControllerJSProxy to handle all incoming data from that controller. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
@@ -61,8 +63,41 @@ export function init() {
 }
 ```
 
-[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/C.2B.2B.20controller.20system.20refactoring)
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment
+The USB bulk endpoints for the screens on Native Instruments controllers could be exposed as JS objects. The C++ code could share this same object in a QML scripting environment to render for the screens. By setting properties on this JS object, the HID controller mapping script could communicate with the QML code. For example, in the JSON metadata file:
+
+```
+// The numbers are just examples.
+controllers: {
+  hid: [
+    kontrols4mk3: {
+      vendor_id: 0x17cc,
+      product_id: 0x1310,
+      usage_page: 0xff01,
+      usage: 0x1,
+      interface_number: 0x4
+    }
+  ],
+  bulk: [
+    kontrols4mk3screen: {
+      vendor_id: 0x17cc,
+      product_id: 0x1310
+      ep_out: 0x3
+    }
+  ]
+```
+
+In the JS module:
+```
+export function init() {
+   controller = mixxx.getHidController("kontrols4mk3");
+   controller.registerInputHandler(...);
+   screen = mixxx.getBulkController("kontrols4mk3screen");
+   screen.shiftButtonPressed = true;
+   // The QML script could then read the shiftButtonPressed property.
+}
+```
+
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment)
 
 ## New ControlObject JS API
 

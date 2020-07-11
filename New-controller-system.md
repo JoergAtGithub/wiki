@@ -84,6 +84,7 @@ controllers: {
       ep_out: 0x3
     }
   ]
+}
 ```
 
 In the JS module:

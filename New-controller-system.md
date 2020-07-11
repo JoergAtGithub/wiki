@@ -95,9 +95,9 @@ controllers: {
 In the JS module:
 ```
 export function init() {
-   controller = mixxx.getHidController("kontrols4mk3");
+   const controller = mixxx.getHidController("kontrols4mk3");
    controller.registerInputHandler(...);
-   screen = mixxx.getBulkController("kontrols4mk3screen");
+   const screen = mixxx.getBulkController("kontrols4mk3screen");
    screen.shiftButtonPressed = true;
    // The QML script could then read the shiftButtonPressed property.
 }

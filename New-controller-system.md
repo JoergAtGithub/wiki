@@ -36,7 +36,7 @@ Each ControllerMappingProcessor will be given at least one Controller* pointer u
 The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. The script would be responsible for registering a callback function with each ControllerJSProxy to handle all incoming data from that controller. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
 The JSON metadata file would specify unique identifying information for each controller so Mixxx could automatically load mappings for controllers. This file would be in the same directory as the JS module and would need a specific name, for example `metadata.json`. Like in [Bitwig Studio](https://zulip-uploads.s3.amazonaws.com/2380/8u3DsrCwnzNLjsJUesBJ1oe6/scripting-guide.pdf?AWSAccessKeyId=AKIAIEVMBCAT2WD3M5KQ&Signature=UbpI%2Fymx8Bd3DY%2FCbrr6iWCMs5A%3D&Expires=1594430101), multiple identifiers can be used to match a controller. This can accommodate for MIDI port name differences between different OSes. It could also be used to match one mapping to multiple controllers, for example the Allen & Heath Xone K2 and K1 can share a mapping, and many Pioneer DDJ controllers share the same MIDI commands. The `manufacturer` and `model` strings would be shown in the controller preferences GUI.
-```
+```javascript
 controllers: {
   midi: [
      xoneK2: {
@@ -54,7 +54,7 @@ controllers: {
 ```
 
 The JSON object name for the controller would be used as a unique identifier to retrieve the ControllerJSProxy object in the script module:
-```
+```javascript
 export function init() {
   const xoneK2 = mixxx.getMidiController("xoneK2");
   xoneK2.registerInputCallback(...);
@@ -65,7 +65,7 @@ export function init() {
 
 The USB bulk endpoints for the screens on Native Instruments controllers could be exposed as JS objects. The C++ code could share this same object in a QML scripting environment to render for the screens. By setting properties on this JS object, the HID controller mapping script could communicate with the QML code. For example, in the JSON metadata file:
 
-```
+```javascript
 // The numbers are just examples.
 controllers: {
   hid: [
@@ -93,7 +93,7 @@ controllers: {
 ```
 
 In the JS module:
-```
+```javascript
 export function init() {
    const controller = mixxx.getHidController("kontrols4mk3");
    controller.registerInputHandler(...);
@@ -108,7 +108,7 @@ export function init() {
 ## New ControlObject JS API
 
 The old `engine.getValue`/`engine.setValue`/`engine.getParameter`/`engine.setParameter` API will be replaced by a new C++ class with a constructor inserted into the JS environment as `mixxx.Control`:
-```
+```javascript
 const play = new mixxx.Control('[Channel1]', 'play');
 play.setValue(1);
 play.toggle();

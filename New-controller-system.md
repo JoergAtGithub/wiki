@@ -63,6 +63,8 @@ export function init() {
 }
 ```
 
+## Rendering screens with QML
+
 The USB bulk endpoints for the screens on Native Instruments controllers could be exposed as JS objects. The C++ code could share this same object in a QML scripting environment to render for the screens. By setting properties on this JS object, the HID controller mapping script could communicate with the QML code. For example, in the JSON metadata file:
 
 ```javascript
@@ -81,6 +83,7 @@ controllers: {
   ],
   bulk: [
     kontrols4mk3screen: {
+      qml: "screen.qml",
       vendor_id: 0x17cc,
       product_id: 0x1310,
       interface_number: 0x5,
@@ -91,6 +94,8 @@ controllers: {
   ]
 }
 ```
+
+By specifying the QML file, Mixxx knows to render that and send it to the specified USB endpoint instead of treating this as a USB Bulk controller and dumping data to the JS module. However, the controller object is still available in the JS environment so state can be communicated between the JS module and QML:
 
 In the JS module:
 ```javascript

@@ -1,5 +1,5 @@
 
-[[/media/hardware/denondj-img-mc7000.jpg|]]
+[[/media/hardware/denondj-img-mc7000.jpg]]
 
 ### Useful Links
 
@@ -109,7 +109,7 @@ Please check the \*.js mapping file for user variables to:
 
 ### Layout and functions
 
-[[/media/denonmc7000-layout.png|]]
+[[/media/denonmc7000-layout.png]]
 
 1\. **Input Selector:** Set this switch to the desired audio source from
 this channel. Channel’s controls will only send MIDI information when

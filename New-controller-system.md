@@ -74,14 +74,18 @@ controllers: {
       product_id: 0x1310,
       usage_page: 0xff01,
       usage: 0x1,
-      interface_number: 0x4
+      interface_number: 0x4,
+      manufacturer: "Native Instruments",
+      model: "Kontrol S4 Mk3 (HID controller)",
     }
   ],
   bulk: [
     kontrols4mk3screen: {
       vendor_id: 0x17cc,
-      product_id: 0x1310
-      ep_out: 0x3
+      product_id: 0x1310,
+      ep_out: 0x3,
+      manufacturer: "Native Instruments",
+      model: "Kontrol S4 Mk3 (screen)"
     }
   ]
 }

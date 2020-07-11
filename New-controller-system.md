@@ -32,10 +32,10 @@ Each ControllerMappingProcessor will be given at least one Controller* pointer u
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/C.2B.2B.20controller.20system.20refactoring)
 
-## Connecting controllers to JS environment
+## Connecting controllers to JS environment / JSON metadata format
 The Controller objects will be exposed to the JS environment via ControllerJSProxy wrappers like is currently done in master. By decoupling hardware I/O from handling the mapping, the new system allows multiple controllers to be mapped within one script. The script would be responsible for registering a callback function with each ControllerJSProxy to handle all incoming data from that controller. This will allow the scripts for different controllers to communicate with each other without requiring manipulating the state of Mixxx. For example, pressing a button on one controller could switch another controller to a different layer.
 
-The JSON metadata file would specify unique identifying information for each controller so Mixxx could automatically load mappings for controllers. Like in [Bitwig Studio](https://zulip-uploads.s3.amazonaws.com/2380/8u3DsrCwnzNLjsJUesBJ1oe6/scripting-guide.pdf?AWSAccessKeyId=AKIAIEVMBCAT2WD3M5KQ&Signature=UbpI%2Fymx8Bd3DY%2FCbrr6iWCMs5A%3D&Expires=1594430101), multiple identifiers can be used to match a controller. This can accommodate for MIDI port name differences between different OSes. It could also be used to match one mapping to multiple controllers, for example the Allen & Heath Xone K2 and K1 can share a mapping, and many Pioneer DDJ controllers share the same MIDI commands. The `manufacturer` and `model` strings would be shown in the controller preferences GUI.
+The JSON metadata file would specify unique identifying information for each controller so Mixxx could automatically load mappings for controllers. This file would be in the same directory as the JS module and would need a specific name, for example `metadata.json`. Like in [Bitwig Studio](https://zulip-uploads.s3.amazonaws.com/2380/8u3DsrCwnzNLjsJUesBJ1oe6/scripting-guide.pdf?AWSAccessKeyId=AKIAIEVMBCAT2WD3M5KQ&Signature=UbpI%2Fymx8Bd3DY%2FCbrr6iWCMs5A%3D&Expires=1594430101), multiple identifiers can be used to match a controller. This can accommodate for MIDI port name differences between different OSes. It could also be used to match one mapping to multiple controllers, for example the Allen & Heath Xone K2 and K1 can share a mapping, and many Pioneer DDJ controllers share the same MIDI commands. The `manufacturer` and `model` strings would be shown in the controller preferences GUI.
 ```
 controllers: {
   midi: [
@@ -132,9 +132,6 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 ## New jog wheel scratching API
 
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
-
-## New JSON metadata format
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
 ## Show documentation in the application

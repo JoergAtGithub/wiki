@@ -1,5 +1,11 @@
 The current controller system is clunky to program with. Now that we are using QJSEngine ([PR #2682](https://github.com/mixxxdj/mixxx/pull/2682)) which supports ES7 as of Qt 5.12 in master, we can build a whole new controller mapping system that will be nicer to work with and implement features we have wanted for years. This wiki page explains plans for making this new controller mapping system.
 
+
+## Terminology
+
+In an effort to make the communication during discussions of this new system more concise, we are
+standardizing the meaning of certain terms in this glossary:
+
 |     Term     |   Definition   |
 | -----------: | :------------- |
 | Script       | Everything running in Javascript running in a `QJSEngine` |
@@ -94,11 +100,6 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
-## Terminology
-
-In an effort to make the communication during discussions of this new system more concise, we are
-standardizing the meaning of certain terms in this glossary:
-
 ## Backburner
 
 This is a list of features that would be nice to have in the long run, but aren't required in the MVP.
@@ -106,6 +107,12 @@ This is a list of features that would be nice to have in the long run, but aren'
 ### Reload scripts using keycombo
 Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire script manually similar to how we have a keycombo for reloading skins on-the-fly.
 
+## New jog wheel scratching API
+
+https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
+
+## New Components JS library
+https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ComponentsJS.20intercomponent.20communication
 
 ## Rendering screens with QML
 
@@ -156,11 +163,6 @@ export function init() {
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/Controller.20objects.20in.20JS.20environment)
 
-
-## New jog wheel scratching API
-
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
-
 ## Show documentation in the application
 to be discussed
 
@@ -169,6 +171,3 @@ https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Hotplugging
 
 ## Persistent state & preferences for mappings
 https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/controller.20preferences.20design/
-
-## New Components JS library
-https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ComponentsJS.20intercomponent.20communication

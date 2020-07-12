@@ -104,6 +104,17 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
+## New Timer API
+
+```javascript
+const timer = new mixxx.Timer(milliseconds /*number*/, oneshot /*boolean*/, callback /*function*/);
+timer.stop();
+console.log(timer.isRunning()); // false
+timer.trigger(); // execute callback now
+timer.restart(); // reset elapsed time
+```
+No arguments are passed to the callback.
+
 ## New Components JS library
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ComponentsJS.20intercomponent.20communication
 

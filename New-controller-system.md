@@ -112,6 +112,7 @@ timer.stop();
 console.log(timer.isRunning()); // false
 timer.trigger(); // execute callback now -- timer does not need to be running
 timer.restart(); // timer runs again
+console.log(timer.isRunning()); // true
 timer.reset(); // reset elapsed time to 0
 ```
 No arguments are passed to the callback.

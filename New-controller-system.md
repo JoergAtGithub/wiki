@@ -1,5 +1,11 @@
 The current controller system is clunky to program with. Now that we are using QJSEngine ([PR #2682](https://github.com/mixxxdj/mixxx/pull/2682)) which supports ES7 as of Qt 5.12 in master, we can build a whole new controller mapping system that will be nicer to work with and implement features we have wanted for years. This wiki page explains plans for making this new controller mapping system.
 
+|     Term     |   Definition   |
+| -----------: | :------------- |
+| Script       | Everything running in Javascript running in a `QJSEngine` |
+| Mapping      | A mapping is a sub-term of script. A script that whose purpose is to translate between messages sent by a controller and the behavior in mixxx is considered a "Mapping". So while a mapping is a script, a script is not necessarily a mapping |°
+
+
 ## C++ refactoring
 
 Currently, the C++ classes that handle controllers and controller mappings are arranged in this inheritance hierarchy:
@@ -92,11 +98,6 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 In an effort to make the communication during discussions of this new system more concise, we are
 standardizing the meaning of certain terms in this glossary:
-
-|     Term     |   Definition   |
-| -----------: | :------------- |
-| Script       | Everything running in Javascript running in a `QJSEngine` |
-| Mapping      | A mapping is a sub-term of script. A script that whose purpose is to translate between messages sent by a controller and the behavior in mixxx is considered a "Mapping". So while a mapping is a script, a script is not necessarily a mapping |°
 
 ## Backburner
 

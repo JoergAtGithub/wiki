@@ -109,10 +109,10 @@ https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.2
 ```javascript
 const timer = new mixxx.Timer(milliseconds /*number*/, oneshot /*boolean*/, callback /*function*/);
 timer.stop();
-console.log(timer.isRunning()); // false
+console.log(timer.isActive()); // false
 timer.trigger(); // execute callback now -- timer does not need to be running
 timer.restart(); // timer runs again
-console.log(timer.isRunning()); // true
+console.log(timer.isActive()); // true
 timer.reset(); // reset elapsed time to 0
 ```
 No arguments are passed to the callback.

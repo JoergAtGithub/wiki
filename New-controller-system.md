@@ -115,6 +115,8 @@ timer.restart(); // reset elapsed time
 ```
 No arguments are passed to the callback.
 
+[Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20timer.20API)
+
 ## New Components JS library
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ComponentsJS.20intercomponent.20communication
 

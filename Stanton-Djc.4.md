@@ -9,7 +9,7 @@
   - [Review by DJ
     TechTools](https://djtechtools.com/2012/08/29/review-stanton-djc-4-controller//)
   - [Forum
-    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=6027)
+    thread](https://mixxx.discourse.group/t/mapping-for-stanton-djc-4/14074)
 
 ## Compatibility
 

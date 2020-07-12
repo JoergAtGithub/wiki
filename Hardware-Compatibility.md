@@ -202,6 +202,7 @@ move your controller to this table.
 | [Reloop Jockey 3 ME](Reloop%20Jockey%203%20ME)                                                     | discontinued      | 2 deck\[24\] all-in-one                                      | yes                        | yes              | MIDI \[25\]     | 2.1                           | 2011     |
 | [Reloop Terminal Mix 2](Reloop%20Terminal%20Mix)                                                   | discontinued      | 2 deck\[26\] all-in-one                                      | yes                        | yes              | MIDI            | 1.11                          | 2012     |
 | [Reloop Terminal Mix 4](Reloop%20Terminal%20Mix)                                                   | discontinued      | 4 deck all-in-one                                            | yes                        | yes              | MIDI            | 1.11                          | 2012     |
+| [Stanton DJC.4](Stanton%20DJC.4)                                                                   | discontinued      | 2 deck\[2\] all-in-one                                            | yes                        | yes              | MIDI            | 2.2.4                          | 2012     |
 | [Tascam US-428](Tascam%20US-428)                                                                   | discontinued      | mixing console                                               | yes                        | no               | MIDI            | 1.6.2                         | 2001     |
 | [Vestax VCI-100MKI](Vestax%20VCI-100)                                                              | discontinued      | 2 deck all-in-one                                            | no                         | \-               | MIDI            | 1.6                           | 2007     |
 | [Vestax VCI-100MKII](Vestax%20VCI-100MKII)                                                         | discontinued      | 2 deck\[27\] all-in-one                                      | yes                        | no               | MIDI            | 2.0                           | 2011     |
@@ -454,15 +455,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2019</td>
 </tr>
 <tr class="even">
-<td><a href="Stanton DJC.4">Stanton DJC.4</a></td>
-<td>Discontinued</td>
-<td>2 deck controller [35] all-in-one</td>
-<td>yes</td>
-<td>yes</td>
-<td>MIDI</td>
-<td>2012</td>
-</tr>
-<tr class="odd">
 <td><a href="Numark DJ2GO2 Touch">Numark DJ2GO2 Touch</a></td>
 <td>$79</td>
 <td>2 deck pocket dj controller with capacitive touch jog wheels</td>
@@ -471,7 +463,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2019</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="Numark iDJ Live II">Numark iDJ Live II</a></td>
 <td>discontinued</td>
 <td>basic 2 deck</td>

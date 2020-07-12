@@ -165,6 +165,9 @@ https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Hotplugging
 ## Persistent state & preferences for mappings
 https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/controller.20preferences.20design/
 
+## Track metadata + waveform APIs
+https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/New.20plugins
+
 ## Backburner
 
 This is a list of features that would be nice to have in the long run, but aren't required in the MVP.

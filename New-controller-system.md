@@ -110,7 +110,7 @@ https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.2
 const timer = new mixxx.Timer(milliseconds /*number*/, oneshot /*boolean*/, callback /*function*/);
 timer.stop();
 console.log(timer.isRunning()); // false
-timer.trigger(); // execute callback now
+timer.trigger(); // execute callback now -- timer does not need to be running
 timer.restart(); // timer runs again
 timer.reset(); // reset elapsed time to 0
 ```

@@ -100,13 +100,6 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 [Zulip discussion](https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/ControlObjects.20as.20JS.20objects)
 
-## Backburner
-
-This is a list of features that would be nice to have in the long run, but aren't required in the MVP.
-
-### Reload scripts using keycombo
-Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire script manually similar to how we have a keycombo for reloading skins on-the-fly.
-
 ## New jog wheel scratching API
 
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
@@ -171,3 +164,10 @@ https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Hotplugging
 
 ## Persistent state & preferences for mappings
 https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/controller.20preferences.20design/
+
+## Backburner
+
+This is a list of features that would be nice to have in the long run, but aren't required in the MVP.
+
+### Reload scripts using keycombo
+Even though we already reload scripts when they are modified, we currently don't have a way to listen for changes in imported modules ([QTBUG-85430](https://bugreports.qt.io/browse/QTBUG-85430)). It would be nice to have a keycombo for reloading the entire script manually similar to how we have a keycombo for reloading skins on-the-fly.

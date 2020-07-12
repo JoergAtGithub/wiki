@@ -111,7 +111,8 @@ const timer = new mixxx.Timer(milliseconds /*number*/, oneshot /*boolean*/, call
 timer.stop();
 console.log(timer.isRunning()); // false
 timer.trigger(); // execute callback now
-timer.restart(); // reset elapsed time
+timer.restart(); // timer runs again
+timer.reset(); // reset elapsed time to 0
 ```
 No arguments are passed to the callback.
 

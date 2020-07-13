@@ -250,13 +250,14 @@ We:
 - Look into database schema & [add documentation](https://github.com/mixxxdj/mixxx/pull/2925)
 - Initial [storage format spec](Macros#storage)
 
-Th:
-
-Fr:
+Th & Fr:
+- Refine Architecture
 
 ### CW 29
 
 Mo:
+- Proto serialization to database working
+- Reviews
 
 Tu:
 

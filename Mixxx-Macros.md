@@ -137,23 +137,25 @@ Result: Basic working recording implementation
 Planned Deliverable: Macros can be recorded, saved and played back
 
 - CW 27: Clean up, test & improve code
-- CW 28: Create database integration
-- CW 29: Playback
+- CW 28: Refine architecture
+- CW 29: Database
 - (CW 30)
+
+Result: Unit & end to end testing, Macros can be saved
 
 **August**
 
-Planned Deliverables:
-- Implemented controls with mapping to a skin and controller, can save macro
-- Integration with other tools (Serato Flip, Export/Import, Edit Dialog, Auto DJ?)
+Planned Deliverables: Controls mapped to a skin and controller, Macros are automatically loaded on track load and can be enabled as well as invoked
+
+- CW 31: Playback
+- CW 32: Design controls & integrate into a skin
 
 Tasks:
+- Loop mode
+- Enable Import from Serato & explore possibilities for sharing
 - Waveform highlighting for upcoming jumps
 - Record more controls
-- Loop mode
-- Design controls & integrate into a skin
-- Refine UX & integrate into other Skins
-- Enable Import from Serato & explore possibilities for sharing
+- Integration with other tools (Serato Flip, Export/Import, Edit Dialog, Auto DJ?)
 
 ## Log
 
@@ -262,11 +264,9 @@ We:
 
 Th:
 
-Fr:
-
 ### CW 30
 
-I likely can't work this week as I'm away.
+Little chance to work as I'm away.
 
 ### CW 31
 

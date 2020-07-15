@@ -147,7 +147,7 @@ distinguish them from logical blocks.
 
 **Good:**
 
-``` cpp-qt
+```cpp
 
 if (long_expression1 ||
         long_expression2 ||
@@ -159,7 +159,7 @@ if (long_expression1 ||
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 if (long_expression1 ||
     long_expression2 ||
     long_expression_with_along_parameter_1(parameter1) {
@@ -189,7 +189,7 @@ Give variables and classes a descriptive but succinct name.
 Local variables should follow either a camelBack case or
 lowercase\_with\_underscores style:
 
-``` cpp-qt
+```cpp
 QString hotcue_name;
 int composerSortOrder;
 ```
@@ -199,7 +199,7 @@ The "\*" should be aligned with the type and **not** the name.
 
 **Examples:**"
 
-``` cpp-qt
+```cpp
 int* pHotcueIndex;
 ```
 
@@ -208,30 +208,27 @@ handy to know at a glance the rough type of an object. For example, for
 a [ControlObject](ControlObject) a common pattern is to prepend "CO" to
 the variable name:
 
-``` cpp-qt
+```cpp
 ControlObject* m_pCOPlayButton;
 ```
 
 ### Classes
 
-  - Class names must be in CamelCase (e.g. "MyName"), with each word
-    capitalized. 
-  - Member functions of classes must be camelBack cased (e.g.
-    "thisFunction") 
-  - Member variables **must** be prefixed with "m\_". It is essential to
-    know the scope of a variable is at the class-member level with a
-    simple glance for easy readability of source files.
-  - Class variables (static class members) **must** be prefixed with
-    "s\_".
+- Class names must be in CamelCase (e.g. `MyName`), with each word capitalized. 
+- Member functions of classes must be camelBack cased (e.g. `thisFunction`).
+- Member variables **must** be prefixed with `m_`. It is essential to
+  know the scope of a variable is at the class-member level with a
+  simple glance for easy readability of source files.
+- Class variables (static class members) **must** be prefixed with `s_`.
 
 ## Braces
 
-Braces should not be given their own newline. They should always be
-separated from surrounding code by a single space.
+Braces should not be given their own newline.
+Always separate them from surrounding code with a single space.
 
 **Good:**
 
-``` cpp-qt
+```cpp
 if (expression) {
   // something
 } else {
@@ -248,12 +245,77 @@ if (long_expression1 ||
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 if (expression)
 {
 }
 else
 {
+}
+```
+
+### Using Braces
+
+Always wrap the body of decision and looping statements (if, else, 
+switch, while, for) in braces to keep the code consistent and readable.
+This was unanimously [settled on Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/coding.20style.3A.20guard.20clauses/near/202839531).
+
+### If Statements
+
+There should be one space following the `if` keyword, and one space
+following the closing parenthesis of the condition before the brace.
+
+**Good:**
+
+```cpp
+if (expression) {
+
+}
+```
+
+Do not add padding inside the conditional or omit a space between the
+`if` keyword and the conditional parenthesis.
+
+**Bad:**
+
+```cpp
+if( expression ){
+
+}
+```
+
+Do not manipulate variables inside conditional expressions.
+Variable assignment should be on its own line.
+
+**Good:**:
+
+```cpp
+++counter;
+if (counter > threshold) {
+
+}
+```
+
+**Bad**:
+
+```cpp
+if (++counter > threshold) {
+
+}
+```
+
+### For Loops
+
+Similarly to `if` statements, there should be a single space of padding
+after the `for` keyword and after the closing conditional parenthesis.
+Additionally, a single-space padding should come after the semicolon
+separators between the initializer, conditional, and increment statements.
+
+**Good:**
+
+```cpp
+for (initializer; conditional; increment) {
+
 }
 ```
 
@@ -264,11 +326,11 @@ section](https://google.github.io/styleguide/cppguide.html#Namespaces).
 
 In new code, please wrap the code in the "mixxx" namespace (avoid making
 a hierarchy of namespaces). Put module-local helper functions in an
-anonymous namespace.
+anonymous namespace in the cpp file.
 
-## In the header file
+### In the header file
 
-``` cpp-qt
+```cpp
 #include <SomeQtHeaderUsedInThisHeader>
 
 #include "some/mixxx/file/used/in/this/header.h"
@@ -288,9 +350,9 @@ bool myFunction();
 } // namespace mixxx
 ```
 
-## In the implementation (.cpp) file
+### In the implementation (.cpp) file
 
-``` cpp-qt
+```cpp
 #include "path/to/myclass.h"
 
 #include <LocallyNeededQtHeader>
@@ -319,78 +381,6 @@ bool myFunction() {
 } // namespace mixxx
 ```
 
-## If Statements
-
-One-line statements following an `if` clause are acceptable, but it is
-preferable to wrap them in braces since someone may add a line at the
-same indentation level, not realizing that there are no braces.
-
-**OK:**
-
-``` cpp-qt
-if (expression)
-    statement
-```
-
-There should be one space following the `if` keyword, and one space
-following the closing parenthesis of the condition before the brace.
-
-**Better:**
-
-``` cpp-qt
-if (expression) {
-
-}
-```
-
-Do not add padding inside the conditional or omit a space between the
-`if` keyword and the conditional parenthesis.
-
-**Bad:**
-
-``` cpp-qt
-if( expression ){
-
-}
-```
-
-Do not manipulate variables inside conditional expressions. Variable
-assignment should be on its own line (except in the opening line of
-`for` loops).
-
-**OK**:
-
-``` cpp-qt
-++counter;
-if (counter > threshold) {
-
-}
-```
-
-**Bad**:
-
-``` cpp-qt
-if (++counter > threshold) {
-
-}
-```
-
-## For Loops
-
-Similarly to `if`-statements, there should be a single-space of padding
-after the `for` keyword and after the closing conditional parenthesis.
-Additionally, a single-space padding should come after the semicolon
-separators between the initializer, conditional, and increment
-statements.
-
-**Good:**
-
-``` cpp-qt
-for (initializer; conditional; increment) {
-
-}
-```
-
 ## Comments
 
 Comments should be complete, descriptive sentences in the present tense.
@@ -400,7 +390,7 @@ year, along with your user name.
 
 **Good:**
 
-``` cpp-qt
+```cpp
 // This is required because we don't have enough foo's in the bar -- rryan 2/2011
 doSomething();
 ```
@@ -412,7 +402,7 @@ Avoid to use C-style comments or Java-style multi-line comments.
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 /*
  * Java-style comment
  */ 
@@ -426,7 +416,7 @@ of what the following lines accomplish.
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 /* init boofar */
 initBoofar();
 ```
@@ -451,14 +441,14 @@ work on it.
 
 If you'd like to leave a `TODO` for yourself, format them like this:
 
-``` cpp-qt
+```cpp
 // TODO(rryan) Make sure to double-check this.
 ```
 
 If you'd like to leave a general `TODO` for the team, use the name
 `XXX`:
 
-``` cpp-qt
+```cpp
 // TODO(XXX) Make this more general
 ```
 
@@ -466,7 +456,7 @@ Remember to actually go back and investigate your `TODO`'s :).
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 // TODO Make this more general
 ```
 
@@ -483,7 +473,7 @@ not insert ASCII art. Do not include a copyright notice, or license
 because the project has a root LICENSE file which covers these
 declarations, and so any file-level declarations would be redundant.
 
-``` cpp-qt
+```cpp
 // filename.h 
 // Created 2/21/2011 by RJ Ryan <email> 
 ```
@@ -493,13 +483,13 @@ declarations, and so any file-level declarations would be redundant.
 For new header files use a \#pragma once directive instead of \#include
 guards:
 
-``` cpp-qt
+```cpp
 #pragma once
 ```
 
 There are many header files with legacy include guards like:
 
-``` cpp-qt
+```cpp
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
@@ -526,7 +516,7 @@ classes other than Mixxx project classes.
 
 **Example:**
 
-``` cpp-qt
+```cpp
 #include <math.h>
 #include <sys/types.h>
 
@@ -582,7 +572,7 @@ A couple guidelines for class declarations:
 
 **Example:**
 
-``` cpp-qt
+```cpp
 // The Library is the manager class for all library functionality. It contains the LibraryFeature's 
 // enabled for use with the library and connects them and their signals to the GUI's library widgets.
 class Library : public QObject { 
@@ -709,7 +699,7 @@ recover gracefully in a release build.
 
 **Good**
 
-``` cpp-qt
+```cpp
 #include <util/assert.h>
 
 ...
@@ -729,7 +719,7 @@ This has a variety of
 
 Escape non ASCII characters:
 
-``` cpp-qt
+```cpp
 const QString kMessage = QStringLiteral("Hello I\u2019ve to go");
 ```
 
@@ -740,7 +730,7 @@ Prefer this style for all new code to improve readability.
 QChars can be initialized with ASCII characters 16 bit Unicode
 L’\\u00fc' if required. Both are constexpr.
 
-``` cpp-qt
+```cpp
 constexpr QChar kc = 'c'
 constexpr QChar kue = L'\u00fc' // for "ü"
 ```
@@ -766,7 +756,7 @@ nested variables is permitted.
 
 **Good:**
 
-``` cpp-qt
+```cpp
 
 T& X::refIObject();
 
@@ -780,7 +770,7 @@ pObject->setValue(5); // The pointer syntax reveals the an external object is wr
 
 **Bad:**
 
-``` cpp-qt
+```cpp
 
 T& X::refIObject();
 
@@ -889,7 +879,7 @@ a *virtual* destructor the destructor of a derived class might not be
 invoked. This applies also for default destructors even if it looks
 noisy.
 
-``` cpp-qt
+```cpp
 ~ClassName() override = default;
 ```
 
@@ -910,7 +900,7 @@ widespread usage throughout the Mixxx codebase.
 > Be very careful when updating old code from foreach to range-based-for.
 [It is very easy to write a bug](https://www.kdab.com/goodbye-q_foreach/).
 
-``` cpp-qt
+```cpp
 for (const QString& item : list) {
   qDebug() << "WOOHOO" << item;
 }
@@ -935,7 +925,7 @@ More details can be found here:
 
 Good:
 
-``` cpp-qt
+```cpp
 void mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) {
   auto bufferSize = 256; // this avoids uninitialised locals
   
@@ -951,7 +941,7 @@ void mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels)
 
 Bad:
 
-``` cpp-qt
+```cpp
 auto mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels) -> bool {
     return true; // need to read the function body 
 }
@@ -959,20 +949,20 @@ auto mixAudio(const QVector<QString>& values, QVector<EngineChannel*>* channels)
 
 Bad:
 
-``` cpp-qt
+```cpp
 auto value getValue(); // because the type is out of sight
 ```
 
 Bad:
 
-``` cpp-qt
+```cpp
 QVector<RowInfo>::iterator it = rowInfo.begin();
 // Explicit type is only clutter and can be easily guessed from the context. 
 ```
 
 Bad:
 
-``` cpp-qt
+```cpp
 QList<int>* pList = new QList<int>(); // do not repeat yourself 
 ```
 
@@ -989,7 +979,7 @@ a new logical block. Always break after "},"
 
 **Good:**
 
-``` cpp-qt
+```cpp
     m_pTrackCollection->callSync(
             [this](TrackCollectionPrivate* pTrackCollectionPrivate) {
                 connect(&pTrackCollectionPrivate->getCrateDAO(),
@@ -1024,7 +1014,7 @@ containers as shown below.
 
 **Good:**
 
-``` cpp-qt
+```cpp
 for (auto&& item : mutableContainer) {
   // read and write item
 } 
@@ -1045,7 +1035,7 @@ written in CamelCase with the first letter capitalized. Do not add new C
 style enums and please replace those with enum classes when you are
 working on code that uses them.
 
-``` cpp-qt
+```cpp
 enum class ChannelLayout {
     Unknown,
     Mono, // 1 channel
@@ -1078,7 +1068,7 @@ Rule of thumb: If a class has non-inline constructors or is more than
 
 **Good:**
 
-``` cpp-qt
+```cpp
 class Helper {
   public:
     Helper() {}
@@ -1097,7 +1087,7 @@ class Helper {
 
 **Avoid:**
 
-``` cpp-qt
+```cpp
 class SomeClass {
   public:
     SomeClass(int baz); // Defined in some other file.

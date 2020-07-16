@@ -97,6 +97,19 @@ Now press "infer right" and the beat detector will snap the measure template to 
 
 Done. 
 
+### Odd measures like 7/8 Tracks ###
+
+[Genesis - Dance on a Volcano](https://www.youtube.com/watch?v=TBcnjx05a1s) 
+
+This track can be counted as :
+```
+1 + 2 + 3 + 4 1 + 2 + 3 + 4 1 ... 
+```
+
+It is detected as a 1/4 Track with a off beats in very second measure. 
+Since it is an 1/8 track, every 1/8 note is maked as beat. 
+TODO ... 
+  
 
 ## supporting data structure ##
 

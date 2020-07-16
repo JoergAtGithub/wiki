@@ -8,7 +8,8 @@ We need to make some assumptions that will help to keep our model simple but pow
 
 * The beat and bar annotation reflects the music like it was written on the musical sheet. Slight jitters typical for live music are ironed out to make the beats usable for looping and beat matching.  
 * The BPM value used in Mixxx is defined as quarter notes per minute. This helps to compare the tempo of different tracks independent from the denominator x/4 x/8 or x/16. 
-  * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 +. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is probably not what we want. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.    
+  * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 +. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is probably not what we want. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.
+  * This also helps to compare a base tempo to double or half time sections within the same track. This happens often in dubstep and drum & bass.
 * We mark all quarter beats, even if there is actually no beat sound.
   * Sometimes beats are committed in a measure or during breaks we annotate the places where beats makes musically sense anyway to allow beat loops and syncing in these regions.   
 * In odd time signatures the emphasized beats are marked as beats. 

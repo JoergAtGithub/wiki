@@ -8,6 +8,12 @@ Mixxx relies on several external libraries for various features.
 
 ### Debian / Ubuntu / Raspbian
 
+First of all install cmake, the tool that we need to build the project, running:
+
+```sh
+sudo apt-get install cmake
+```
+
 If your distribution is Debian 9/10 based (such as Ubuntu 16.04/18.04), you can install
 them by running:
 

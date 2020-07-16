@@ -1,16 +1,19 @@
 # Bear and Bar Edit Workflow
 
-this page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out limitations of the choosen model.  
+This page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out limitations of the chosen model.  
 
 ## Assumptions ##
 
 We need to make some assumptions that will help to keep our model simple but powerful to allow certain DJ tricks while being maintainable. 
 
 * The beat and bar annotation reflects the music like it was written on the musical sheet. Slight jitters typical for live music are ironed out to make the beats usable for looping and beat matching.  
-* The BPM value used in Mixxx is defined as quarter notes per minute. This helps to compare the tempo of different tracks independent from the denominator x/4 x/8 or x/16 ...
-* It does not matter if there is actually a beat at every quarter note.
-* Only quarter notes beats are marked as beats. In odd time signatures the supersized beats are marked as beats.   
-* Every bar (musical measure) has a constant tempo. This is not all the time true, but is close enough to the truth but still allows looping and beat matching, without introduce a yowling pitch at the follower. The follower can change the tempo at the bars which sounds OK. 
+* The BPM value used in Mixxx is defined as quarter notes per minute. This helps to compare the tempo of different tracks independent from the denominator x/4 x/8 or x/16. 
+  * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 1. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is wrong. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.    
+* We mark all quarter beats, even if there is actually no beat sound.
+  * Sometimes beats are committed in a measure or during breaks we annotate the places where beats makes musically sense anyway to allow beat loops and syncing in these regions.   
+* In odd time signatures the supersized beats are marked as beats. 
+  * This reflects the counting of the time signature, and helps finding the right loop in transitions to other time signatures.   
+* Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce a yowling pitch at the follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo fast the user can individually place the beats on a finer beat grid.  
 * The beat and bar detector is optimized to detect constant 4/4 bars. 
 * The beat detector can take a measure template as input to detect other measures.
 * The time signature consists always of a integer nominator the note count and a integer denominator a note length relative to the quarter note BPM value listed in the library.  
@@ -96,6 +99,79 @@ Done.
 
 
 ## supporting data structure ##
+
+### original Mixxx 2.3 ###
+
+```
+enum Source {
+  ANALYZER = 0;
+  FILE_METADATA = 1;
+  USER = 2;
+}
+
+message Beat {
+  optional int32 frame_position = 1;
+  optional bool enabled = 2 [ default = true ];
+  optional Source source = 3 [ default = ANALYZER ];
+}
+
+message Bpm {
+  optional double bpm = 1;
+  optional Source source = 2 [ default = ANALYZER ];
+}
+
+message BeatMap {
+  repeated Beat beat = 1;
+}
+
+message BeatGrid {
+  optional Bpm bpm = 1;
+  optional Beat first_beat = 2;
+}
+```
+
+### backwards compatible ###
+
+```
+enum Source {
+  ANALYZER = 0;
+  FILE_METADATA = 1;
+  USER = 2;
+}
+
+message TimeSignature {
+  optional int32 beats_per_bar = 1 [ default = 4];
+  optional int32 note_value = 2 [ default = 4 ];
+}
+
+message Beat {
+  optional int32 frame_position = 1;
+  optional bool enabled = 2 [ default = true ];
+  optional Source source = 3 [ default = ANALYZER ];
+  optional double frame_position_fractional = 4;
+  optional Type type = 5 [ default = BEAT ];
+  optional TimeSignature signature = 6;
+}
+
+message BeatMap {
+  repeated Beat beat = 1;
+}
+
+message LegacyBpm {
+  optional double bpm = 1;
+  optional Source source = 2 [ default = ANALYZER ];
+}
+
+message LegacyBeatGrid {
+  optional Bpm bpm = 1;
+  optional Beat first_beat = 2;
+}
+```
+
+
+### possible sparse representation for reference only ###
+
+This reflects the info we need for the new model. This is only shown here as reference for an internal data structure, Mixxx can use in the Beat Grid Editor. 
 
 ```
 message Bar {

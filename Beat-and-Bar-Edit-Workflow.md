@@ -12,8 +12,9 @@ We need to make some assumptions that will help to keep our model simple but pow
   * This also helps to compare a base tempo to double or half time sections within the same track. This happens often in dubstep and drum & bass.
 * Time signatures are limited to integers for the top number (beats per bar) and powers of 2 for the denominator (what counts as a beat).
   * What beats are shown on the waveform and used for quantizing is determined by the bottom number of the time signature. This creates a visual indication that an 8/8 section is double time of a 4/4 section but still the same tempo because Mixxx will calculate tempo as 1/4 notes per minute.
-* Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce a yowling pitch at the follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo fast the user can individually place the beats on a finer beat grid.  
-* The beat and bar detector is optimized to detect constant 4/4 bars. 
+* Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce a yowling pitch at the follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo fast the user can individually place the beats on a finer beat grid.
+  * This assumption will be used to help the analyzer produce useful results. However, the protocol buffer format for data storage will not assume this. Every individual beat will be stored in the protobuf.
+* The beat and bar detector is optimized to detect constant 4/ bars. 
 * The beat detector can take a measure template as input to detect other measures.
 * The time signature consists always of a integer nominator the note count and a integer denominator a note length relative to the quarter note BPM value listed in the library.  
 * The signature is used to snap the beats into.  

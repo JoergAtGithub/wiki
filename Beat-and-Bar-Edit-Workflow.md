@@ -168,18 +168,22 @@ message LegacyBeatGrid {
 }
 ```
 
+To maintain either backward compatibility and make the most of the new Type filed and Time signature fields, we must assert the following assumptions: 
+* When adjusting a beat frame_position and frame_position_fractional is written. The first is the fractional value rounded to the nearest integer. 
+* The "note_value" and the following BAR are creating a grid. All beats in between must be exactly on the grid. 
+* The LegacyBeatGrid is migrated by putting all individual beats into the the BeatMap.
 
 ### possible sparse representation for reference only ###
 
-This reflects the info we need for the new model. This is only shown here as reference for an internal data structure, Mixxx can use in the Beat Grid Editor. 
+This reflects the minimum info we need for the new model. This is only shown here as reference for an internal data structure, Mixxx can use in the Beat Grid Editor. 
 
 ```
 message Bar {
   required double frame_position = 1 [ default = 0 ];
   optional Source source = 2 [ default = ANALYZER ];
   // 0 for individual set beats without signature 
-  // -1 REPEAT, for repeating the previous measure until a next beat is set 
-  // -2 END for the last beat 
+  // -1 END for the last Bar  
+  // -2 REPEAT, for repeating the previous measure until a next beat is set 
   optional int signature_nominator = 4 [ default = 0 ];   
   optional int signature_denominator = 5 [ default = 4 ];  
   repeated int quarter_beats = 6; // can be empty for regular 1/4 beats   

@@ -11,7 +11,7 @@ We need to make some assumptions that will help to keep our model simple but pow
   * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 +. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is probably not what we want. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.    
 * We mark all quarter beats, even if there is actually no beat sound.
   * Sometimes beats are committed in a measure or during breaks we annotate the places where beats makes musically sense anyway to allow beat loops and syncing in these regions.   
-* In odd time signatures the supersized beats are marked as beats. 
+* In odd time signatures the emphasized beats are marked as beats. 
   * This reflects the counting of the time signature, and helps finding the right loop in transitions to other time signatures.   
 * Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce a yowling pitch at the follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo fast the user can individually place the beats on a finer beat grid.  
 * The beat and bar detector is optimized to detect constant 4/4 bars. 

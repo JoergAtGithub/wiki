@@ -11,11 +11,10 @@ We need to make some assumptions that will help to keep our model simple but pow
   * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 1. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is probably not what we want. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.
   * This also helps to compare a base tempo to double or half time sections within the same track. This happens often in dubstep and drum & bass.
 * Time signatures are limited to integers for the top number (beats per bar) and powers of 2 for the denominator (what counts as a beat).
-  * What beats are shown on the waveform and used for quantizing is determined by the bottom number of the time signature. This creates a visual indication that an 8/8 section is double time of a 4/4 section but still the same tempo because Mixxx will calculate tempo as 1/4 notes per minute.
   * In case of bars with fractional numbers of beats, both the numerator and denominator can be multiplied to get an integer nominator. For example if a bar in an otherwise 4/4 track is cut 1/2 beat short, that one bar can be marked as 7/8. All the 1/8 notes in that bar will be shown on the waveform which is useful as a visual indicator that one bar is different from the ones around it.
   * [Irrational time signatures](https://en.wikipedia.org/wiki/Time_signature#Irrational_meters) can always be represented as a rational time signature with a different tempo. We will not complicate Mixxx's model of time signatures with such an obscure concept.
 * Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce an unsteady pitch at a synced follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo quickly the user can individually place the beats on a finer beat grid.
-  * This assumption will be used to help the analyzer produce useful results. However, the protocol buffer format for data storage will not assume this. Every individual beat will be stored in the protobuf.
+  * This assumption will be used to help the analyzer produce useful results.
   * The signature is used to snap the beats into.
   * Tempo is calculated from the time signature and bar length. This way the position of the beats within the bar do not matter for the calculation of tempo and they could potentially be adjusted after analysis.
 * The beat and bar detector is optimized to detect constant 4/4 bars. 
@@ -69,25 +68,51 @@ In case the artist only skips a fraction of a beat, you may change the denominat
 |   d   d   d   |   d   d   d |   d   d   d   |  // beats 
 ```
 
-### Odd measures like 7/16 Tracks with shifted beats ###
+### Odd measures like 14/16 Tracks with shifted beats ###
 
 sometimes beats are slight shifted to sound interesting like:  
 [Igorrr - Vegetable Soup](https://www.youtube.com/watch?v=5LN7W3EtRMg)
 
-The beat detector fails with this track. It is detected as a 70 BPM track, because only the downbeats are found and the tempo is shifting heavily. Here the user can manually annotate a first measure. 
-I would say you need a 24/32 grid with beats at 1 / 8 / 14 / 20 @ 840 1/32-BPM = 105 BPM   
+The beat detector fails with this track. It is detected as a 70 BPM track, because only the downbeats are found and the tempo is shifting heavily. Here the user may manually annotate a first measure, which looks like a normal normal 7/8 measure, counted:  
 
-Here is the workflow for a less exotic 7/16 example:  
-
-First he can made up fine 1/16 grid which is counted:
 ```
+1 + 2 + 3 + 4 1 + 2 + 3 + 4 1...
+```
+
+looking more closely beat 4 is shifted 1/16 in front.
+
+```
+1 + 2 + 3 + 4 1 + 2 + 3 + 4 1 ...
+1e+a2e+a3e+4e+1e+a2e+a3e+4e+1...
+```
+
+If we look more closely we see the beat 3 shifted 1/32 to the front  
+So we may switch to a 1/32 denominator if it is worth the work. 
+
+Workflow: 
+
+The user can set a loop and listen unit he is confident to have found a measure. 
+Than he can mark the single beats. 
+When done, Mixxx will use try to find a constant time signature that matches best to the betas but with the smallest denominator that is in the grange of +- 25 ms around the user set beats. 
+The user can now tweak this proposal and accept it. 
+Once accepted the user set beat are adjusted to the const grid. 
+
+Now he can infer left. 
+
+If a user recognizes a beat is always to early or to late, or he has marked the wrong beat he can change the signature. 
+All beats of the whole section are temporary shifted to the nearest beat in the new git. 
+If the user is confident with the decision he can store the new beat grid and is done.    
+
+
+Here is the workflow of a 7/16 example where Mixx has already detected correct 1/4 beats and tempo but fails to detect the signature.   
+
+First the user needs to verify or adjust the down beats. Since they are off the 1/4 grid. The user needs to switch to a 1/16 grid first. 
+
+```
+1   2   3   4   1 
+1e+a2e+a3e+a4e+a1e+a 
+D......D......D  
 1e+a2e+1e+a2e+1e+a2e+1e+a2e+a 
-.............................   
-```
-Now set the downbeats, and adjust the tempo by selecting the number of beats in the measure. in this case 7/16 
-```
-1e+a2e+1e+a2e+1e+a2e1e+a2e+a 
-D......D   
 ```
 Than place the quarter beats. 
 ```
@@ -226,30 +251,44 @@ For a repeated 7/16 measure like above the notation of a whole track looks like 
   signature_nominator = -2; // END
 ]    
 ```
+## Controversial Topic ## 
 
-
-
-
-
-
-
-
-
-  
-
-
-
+* Showing every denominator as beat vs. showing real beats. 
+  * In odd time signatures the emphasized beats are marked as beats. The denominator can be increased to make up a finer grid to palace a beat more exactly.  
+  * What beats are shown on the waveform and used for quantizing is determined by the bottom number of the time signature. This creates a visual indication that an 8/8 section is double time of a 4/4 section but still the same tempo because Mixxx will calculate tempo as 1/4 notes per minute. In a x/8 track all the 1/8 notes in that bar will be shown on the waveform which is useful as a visual indicator that one bar is different from the ones around it.
+* A measure is always constant vs changing speed within a measure. 
+* Individual beats off the denominator grid vs all beats are on the grid.
+  * This assumption will be used to help the analyzer produce useful results. The sorrounding code asserts the assumpition. 
+  * This assumption will be used to help the analyzer produce useful results. However, the protocol buffer format for data storage will not assume this. Every individual beat will be stored in the protobuf. 
+* forward and backward compatible representation
+* sparse representation  
 
  
- 
+## Ideas and Opinions ##
 
+To be integrated: 
 
+###@Be-ing###
+I think showing the notes indicated by the denominator on the waveform would be useful in these cases to be a visual indication of an usual bar.
 
+I do not think marking emphasized beats within the bar is necessary, at least for a minimum viable product. Perhaps we can consider adding it later.
 
+As Swiftb0y and I were saying before, assuming a constant tempo within a bar is a useful generalization for analysis. But there is no need to limit the flexibility of the data storage format with this assumption.
 
+I think it would be worth experimenting to get the analyzer to detect emphasized beats. But IMO this is the lowest priority work to do for the analyzer, so let's save that for after everything else is implemented and working well.
 
+If we only show 1/4 notes on the waveform regardless of time signature, there is no purpose of storing the denominator of the time signature because we could double or half the number of beats to get the same result. But then we would have no indication that the track is double or half time.
 
+###@crisclacerda###
+It just clicked me, actually we dont need the beat positions at all. If we assume that all beats are equidistant inside a measure, like we should, and have the measures boundaries we actually don't need to store beat postions.
+By default we can just assume they are quarter notes, if the user wants he can change that
 
-       
+On a 4/4 grid it relatively common to emphasize the first and the third beat for example.
+The beat spectral difference used by the downbeat detector might be able to detect emphasized beats
 
+###@hacksdump###
 
+The beat grid for a track with 4/4 time signature and BPM = x will be visually the same as 4/8 time signature and BPM = x/2
+
+Whether to mark emphasized beats within the bar:
+If it is just meant to give a visual cue on emphasis, no, because our waveform should be adept enough to provide this kind of visual emphasis. If it is meant for auto DJ and looping, probably yes.

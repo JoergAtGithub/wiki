@@ -130,7 +130,7 @@ message BeatGrid {
 }
 ```
 
-### backwards compatible ###
+### new (backwards compatible) ###
 
 ```
 enum Source {

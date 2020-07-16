@@ -6,7 +6,7 @@ This page is intended to discuss a smooth workflow when editing betas and bars. 
 
 We need to make some assumptions that will help to keep our model simple but powerful to allow certain DJ tricks while being maintainable. 
 
-* The beat and bar annotation reflects the music like it was written on the musical sheet. Slight jitters typical for live music are smoothed out to constant tempos within a bar to make the beats usable for looping and beat matching.  
+* The beat and bar annotation reflects the music like it was written on the musical sheet. Slight jitters typical for live music are smoothed out to a constant tempo within each bar to make the beats usable for looping and beat matching.  
 * The BPM value used in Mixxx is defined as quarter notes per minute. This helps to compare the tempo of different tracks independent from the denominator x/4 x/8 or x/16. 
   * For instance a 7/8 track has three normal 1/4 beats and one 1/8 beat counted 1 + 2 + 3 + 4 +. Let's assume the underlying 1/8 beat grid has 200 BPM, this would make the track sort at the library near to the fast tracks, which is probably not what we want. If we take only the real beats into account we get an average of 114,3 BPM this is also useless because no beat is in the distance of that BPM vale. 100 BPM, the tempo of 2/8 is here the suitable value that help to match track and can be used for looping.
   * This also helps to compare a base tempo to double or half time sections within the same track. This happens often in dubstep and drum & bass.
@@ -17,6 +17,7 @@ We need to make some assumptions that will help to keep our model simple but pow
 * Every bar (musical measure) has a constant tempo. This is not all the time true, but for slowly tempo changing tracks good enough to have no notable double beats, but it still allows looping and beat matching without introduce an unsteady pitch at a synced follower. The follower can change the tempo at the bars which sounds OK. If a leader changes the tempo quickly the user can individually place the beats on a finer beat grid.
   * This assumption will be used to help the analyzer produce useful results. However, the protocol buffer format for data storage will not assume this. Every individual beat will be stored in the protobuf.
   * The signature is used to snap the beats into.
+  * Tempo is calculated from the time signature and bar length. This way the position of the beats within the bar do not matter for the calculation of tempo and they could potentially be adjusted after analysis.
 * The beat and bar detector is optimized to detect constant 4/4 bars. 
 * The beat detector can take a measure template as input to detect other measures. The onsets will be stored as immutable data to facilitate this so expensive computations do not need to be repeated.
 * Mixxx 2.2 beats are imported as individual placed beats.    

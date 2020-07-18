@@ -1,7 +1,7 @@
 # What are tempo, beat, bars and time signatures?
-Tempo is the speed a passage is meant to be played. One important consequence from it's definition is that the it may not have be played or be perceived as it was promised. Another one is that it's an abstract and relative concept. BPM is not the same as tempo!!!
+Tempo is the speed a passage is meant to be played. One important consequence from it's definition is that the it may not have be played or be perceived as it was promised. Another one is that it's an abstract and relative concept. BPM is not the same as tempo.
 
-A beat is a relative unit of time. The beats per minute is a measurement of time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
+A beat is a unit of length. The beats per minute is then one measurement of this speed, as distance over time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
 
 Semibreve - 1 |
 Minims - 1/2 |

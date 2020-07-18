@@ -518,3 +518,25 @@ If we notice closely, some beats had to be converted to downbeats.
 2. Sparse
 
 Only need to change `bpmMarkers[0].bpm = 120`
+
+As a next step, let's change the time signature to 3/4
+
+![change signature](https://i.imgur.com/nFQ2kQt.png)
+
+1. Absolute
+
+No change in beat positions.
+
+Change in beat types is needed.
+
+Earlier:
+
+`D._.B._.B._.B._.D._.B._.B._.B._.D._.B._.B._.B._.D` and so on
+
+After changing time signature to 3/4:
+
+`D._.B._.B._.D._.B._.B._.D._.B._.B._.D._.B._.B._.D` and so on
+
+2. Sparse
+
+Only need to change `timeSignatureMarkers[0].signature = 3/4`

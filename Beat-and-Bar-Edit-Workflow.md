@@ -506,11 +506,11 @@ Adjusting positions is easy but now we also need to check the beat type for each
 
 Earlier:
 
-D._._._.B._._._.B._._._.B._._._.D._._._.B._._._.B._._._.B._._._.D and so on
+D.-.-.-.B.-.-.-.B.-.-.-.B.-.-.-.D.-.-.-.B.-.-.-.B.-.-.-.B.-.-.-.D and so on
 
 BPM x2:
 
-D._.B._.B._.B._.D._.B._.B._.B._.D._.B._.B._.B._.D._.B._.B._.B._.D and so on
+D.-.B.-.B.-.B.-.D.-.B.-.B.-.B.-.D.-.B.-.B.-.B.-.D.-.B.-.B.-.B.-.D and so on
 
 If we notice closely, some beats had to be converted to downbeats.
 

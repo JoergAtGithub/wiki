@@ -23,6 +23,35 @@ The main purpose of the bar is to chop the music in equal lengths so that notes 
 
 A 4/4 measure means that it fits 4 crotchets. The simplest possible melody is to put 4 crotchets. A different melody is to play 1 semibreve. Another more sophisticated can be play 4 1/8 notes, 2 crochets and a minim. Music is also silence, so for every note there is an equally sized rest. So another melody could be 1/2 rest and then 16 dime-semi-quavers. We can put any combination of notes and rest inside a measure as long as we respect that their size must in this case be the same of 4 crotchets. 
 
+# What is a legacy beatgrid?
+
+The beatgrid is an offset measured in frames and tempo measured in BPM.
+With this we can unequivocally determine every beat position, and assign any arbitrary frame to a beat index.
+It is a visual representation of metronome that has a start position and clicks on BPM that is displayed on the waveform.
+It's also the metronome we use for sync
+
+The beatgrid is very good for clicking on time on tracks that were made using a metronome, ie - drum machine.
+
+# What is beatgrid problem?
+
+Two problems affects even tracks made with drum machines: 
+[1] Abrupt changes - the record has a passage in a different tempo.
+[2] Accelerando or rittardando parts. Machines can even make tempo changes inside a measure level.
+
+Tracks that are played by musicians share these problems and add their owns.
+[3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
+[4] The performers does not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music for example the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slowdown the passages inside this range to emphasize particular parts of the melody. A slight faster tempo will make the music more euphoric for example. 
+
+# What is beatmap?
+
+The beatmap is made as series of beats positions measured in frames.
+It's a visual representation of every detect beat in the waveform.
+It's metronome that counts the tempo over 12 beats and is reset every beat for sync.
+
+# What is beatmap problems?
+
+[5] The noise of the analysis is not treated and the tempo value is always fluctuating.
+[6] We can not unequivocally determine any beat position or assign a frame to an arbitrary beat. We have the real distance to the next detected beat and we also have estimated distance from the computed bpm.
 
 
 # Bear and Bar Edit Workflow

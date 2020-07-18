@@ -55,11 +55,11 @@ It's metronome that counts the tempo over 12 beats and is reset every beat for s
 
 # What is the new -beat|rhythm-grid?
 
-It should overcome the problems outlined above. While also introducing bar, phrases and sections markers.
-[1] - This is trivial, we simple reset the metronome, ie -the grid, on a arbitrary frame with a new BPM.
-[2] - If the change happen on a measure level it's also easy. We reset the grid on the measure. If the tempo change happen inside a measure then is not that easy. There is no notation for that in sheet music. Also the analyzer is unable to detect these reliable as it relies on periodicity detection. Finally does this have any use?
-[3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the metronome for this amount of beats in this tempo. We aligning these sequences so they start ideally on a section or a phrase but they should at least always be at least one measure long.
-[5 and 6] - We don't use the sequence of detected beats. We only use our metronomes to compute the distance the any arbitrary beat.
+* It should overcome the problems outlined above. While also introducing bar, phrases and sections markers.
+* [1] - This is trivial, we simple reset the metronome, ie -the grid, on a arbitrary frame with a new BPM.
+* [2] - If the change happen on a measure level it's also easy. We reset the grid on the measure. If the tempo change happen inside a measure then is not that easy. There is no notation for that in sheet music. Also the analyzer is unable to detect these reliable as it relies on periodicity detection. Finally does this have any use?
+* [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the metronome for this amount of beats in this tempo. We aligning these sequences so they start ideally on a section or a phrase but they should at least always be at least one measure long.
+* [5 and 6] - We don't use the sequence of detected beats. We only use our metronomes to compute the distance the any arbitrary beat.
 
 
 

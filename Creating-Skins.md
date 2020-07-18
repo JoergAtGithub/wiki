@@ -2511,26 +2511,23 @@ New in Mixxx 2.00
 
 Remember splitter layout
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                        |      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
-| `<Splitter>
-  <Pos>100,200</Pos>
-  <Size>w,h</Size>
-  <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
-  <SplitSizes>60,60,600</SplitSizes>
-  <Orientation>horizontal</Orientation>
-  <Collapsible>0,0,0</Collapsible>
-  <Children>
-    <WidgetGroup>
-    </WidgetGroup>
-    <WidgetGroup>
-    </WidgetGroup>
-    <WidgetGroup>
-    </WidgetGroup>
-    <!-- as many regular widgets as you like in here -->
-  </Children>
-</Splitter>
-` | `  ` |
+    <Splitter>
+      <Pos>100,200</Pos>
+      <Size>w,h</Size>
+      <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
+      <SplitSizes>60,60,600</SplitSizes>
+      <Orientation>horizontal</Orientation>
+      <Collapsible>0,0,0</Collapsible>
+      <Children>
+        <WidgetGroup>
+        </WidgetGroup>
+        <WidgetGroup>
+        </WidgetGroup>
+        <WidgetGroup>
+        </WidgetGroup>
+        <!-- as many regular widgets as you like in here -->
+      </Children>
+    </Splitter>
 
 `SplitSizes` gives the absolute splits between the children of the
 'Splitter' in pixels. There must be as many split sizes as there are children or else it

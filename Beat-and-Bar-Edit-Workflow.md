@@ -1,3 +1,30 @@
+# What are tempo, beat, bars and time signatures?
+Tempo is the speed a passage is meant to be played. One important consequence from it's definition is that the it may not have be played or be perceived as it was promised. Another one is that it's an abstract and relative concept. BPM is not the same as tempo!!!
+
+A beat is a relative unit of time. The beats per minute is a measurement of time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
+
+Semibreve | 1
+Minims | 1/2
+Crotchets | 1/4
+Quavers | 1/8
+Semi-Quavers | 1/16
+Dime-Semi Quavers | 1/32
+
+Using different note lengths can cause a different BPM values for the same tempo. 
+It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music can be interpreted in different tempos.
+Mathematically BPMs values of 240, 120, or 60 with the respectively note lengths  of 1/8, 1/4 and 1/2 would result in the exact same tempo.
+However the interpretation of musicians and thus the perception of the listener will be different from those. It's usually considered that a piece with a slower BPM will be more serene.
+
+The analyzer will always use a quarter note as the note length to count the tempo.
+
+A measure is a restrict space in which the beats are placed. Since the beat length is defined in relative terms we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organizes the notes on a sheet music.
+
+The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other and make melodies. The upper number of the time signature restrict how many beats are allowed inside each measure. 
+
+A 4/4 measure means that it fits 4 crotchets. The simplest possible melody is to put 4 crotchets. A different melody is to play 1 semibreve. Another more sophisticated can be play 4 1/8 notes, 2 crochets and a minim. Music is also silence, so for every note there is an equally sized rest. So another melody could be 1/2 rest and then 16 dime-semi-quavers. We can put any combination of notes and rest inside a measure as long as we respect that their size must in this case be the same of 4 crotchets. 
+
+
+
 # Bear and Bar Edit Workflow
 
 This page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out limitations of the chosen model.  

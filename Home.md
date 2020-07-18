@@ -76,7 +76,7 @@ this wiki, please fix it.
     website](https://zulipchat.com/apps/) and configured to use the
     server mixxx.zulipchat.com, or use the [web
     app](https://mixxx.zulipchat.com/).
-  - [Forums](http://mixxx.org/forums): Ask for help, listen to and share
+  - [Forums](https://mixxx.discourse.group/): Ask for help, listen to and share
     mixes, download and share controller mappings and skins
   - [mixxx-devel](https://lists.sourceforge.net/lists/listinfo/mixxx-devel)
     email list. Note that most project communication is on Zulip now, so

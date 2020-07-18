@@ -366,7 +366,7 @@ We'll defer phrases and sections for later revisions. We'll describe all possibi
 
 We'll be describing two types of data models.
 
-1. We explicitly store every beat position. BPM is calculated as `60 * sampleRate * (4 / timeSignatureDenominator) / distanceBetweenBars`
+1. We explicitly store every beat position. BPM is calculated as `60 * sampleRate * (4 / timeSignatureDenominator) * distancBetweenBars`
 
 Protobuf definition (pseudocode):
 
@@ -410,13 +410,15 @@ message Beats {
 }
 ```
 
+Problem: How to accurately mark beat positions of bars with accelerating or decelerating tempo?
+
 **What is a marker?**
 
 A marker determines a beat grid value in the right direction until we encounter another marker.
 
 This is how we calculate beatLength
 
-`beatLength = 60 * sampleRate * (4 / timeSignatureDenominator)  / beatsPerMinute`
+`beatLength = 60 * sampleRate * (4 / timeSignatureDenominator) / beatsPerMinute`
 
 Let's start with a simple track (Sample rate = 100Hz). These tracks have constant BPM and only one time-signature.
 

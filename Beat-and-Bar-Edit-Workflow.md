@@ -35,12 +35,12 @@ The beatgrid is very good for clicking on time on tracks that were made using a 
 # What is beatgrid problem?
 
 Two problems affects even tracks made with drum machines: 
-[1] Abrupt changes - the record has a passage in a different tempo.
-[2] Accelerando or rittardando parts. Machines can even make tempo changes inside a measure level.
+* [1] Abrupt changes - the record has a passage in a different tempo.
+* [2] Accelerando or rittardando parts. Machines can even make tempo changes inside a measure level.
 
 Tracks that are played by musicians share these problems and add their owns.
-[3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
-[4] The performers does not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music for example the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slowdown the passages inside this range to emphasize particular parts of the melody. A slight faster tempo will make the music more euphoric for example. 
+* [3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
+* [4] The performers does not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music for example the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slowdown the passages inside this range to emphasize particular parts of the melody. A slight faster tempo will make the music more euphoric for example. 
 
 # What is beatmap?
 
@@ -50,8 +50,8 @@ It's metronome that counts the tempo over 12 beats and is reset every beat for s
 
 # What is beatmap problems?
 
-[5] The noise of the analysis is not treated and the tempo value is always fluctuating.
-[6] We can not unequivocally determine any beat position or assign a frame to an arbitrary beat. We have the real distance to the next detected beat and we also have estimated distance from the computed bpm.
+* [5] The noise of the analysis is not treated and the tempo value is always fluctuating.
+* [6] We can not unequivocally determine any beat position or assign a frame to an arbitrary beat. We have the real distance to the next detected beat and we also have estimated distance from the computed bpm.
 
 
 # Bear and Bar Edit Workflow

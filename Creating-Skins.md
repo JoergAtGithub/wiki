@@ -2517,7 +2517,7 @@ Remember splitter layout
   <Pos>100,200</Pos>
   <Size>w,h</Size>
   <SplitSizesConfigKey>[$skin_name],$config_key</SplitSizesConfigKey>
-  <SplitSizes>1,1,8</SplitSizes>
+  <SplitSizes>60,60,600</SplitSizes>
   <Orientation>horizontal</Orientation>
   <Collapsible>0,0,0</Collapsible>
   <Children>
@@ -2532,11 +2532,11 @@ Remember splitter layout
 </Splitter>
 ` | `  ` |
 
-`SplitSizes` gives the proportional splits between the children of the
-'Splitter'. From the example, the first 2 `WidgetGroup`s will each have
-10% of the splitter size initially and the 3rd `WidgetGroup` will have
-80%. There must be as many split sizes as there are children or else it
+`SplitSizes` gives the absolute splits between the children of the
+'Splitter' in pixels. There must be as many split sizes as there are children or else it
 will be ignored.
+From the example, the first 2 `WidgetGroup`s will each have 60px of the splitter width initially and the 3rd `WidgetGroup` will have
+600px. Any additional/missing space is distributed amongst the widgets according to their size policies.
 
 `Orientation` holds the orientation of the splitter. Default is
 horizontal (i.e. the widgets are laid out side by side). The possible

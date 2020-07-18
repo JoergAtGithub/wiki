@@ -32,6 +32,18 @@ It's also the metronome we use for sync
 
 The beatgrid is very good for clicking on time on tracks that were made using a metronome, ie - drum machine.
 
+# What operations beatgrid support?
+
+Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. Their position and lengths will be different but the relative distance will still the same. This reset the metronome to a different interpretation of the same tempo in the same instant.
+
+Translate - Change the first beat offset. Effectively changes the position of every beat without changing it's length. This reset the metronome in the same tempo in a new instant.
+
+Set BPM - Effectively changes the length of every beat and also the position of every beat but the first. This is a reset the to metronome in a new tempo in the same instant.
+
+BPM around position - Control used for sync. It's the always the same metronome.
+
+Find nearest beat - Used for quantazing when clicking on the waveform and also for cue and looping control. It's computed unequivocally from the first beat offset and the BPM. 
+
 # What is beatgrid problem?
 
 Two problems affects even tracks made with drum machines: 
@@ -47,6 +59,16 @@ Tracks that are played by musicians share these problems and add their owns.
 The beatmap is made as series of beats positions measured in frames.
 It's a visual representation of every detect beat in the waveform.
 It's the metronome that counts the tempo over 12 beats and is reset every beat for sync.
+
+# What operations beatmap support?
+
+Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. This behave odd in beatmap, the global average bpm only is scaled to compute a new beat length that is used to created shift all beats?
+
+Translate - Change all the beats offsets by the a fixed amount. Since the beats do not have the same length and distance in beatmap this effectively changes the position and the length of every beat. This creates a new the metronome for all beats in a new tempo and instant for sync. In the visual representation all beats are shifted.
+
+BPM around position - Control used for sync. It computes the bpm on 12 beats centered in that position.
+
+Find nearest beat - Used for quantazing when clicking on the waveform and also for cue and looping control. Computed either by the real detected beat or from the beat length computed from the bpm around position.
 
 # What is beatmap problems?
 

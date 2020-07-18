@@ -3,12 +3,12 @@ Tempo is the speed a passage is meant to be played. One important consequence fr
 
 A beat is a relative unit of time. The beats per minute is a measurement of time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
 
-Semibreve | 1
-Minims | 1/2
-Crotchets | 1/4
-Quavers | 1/8
-Semi-Quavers | 1/16
-Dime-Semi Quavers | 1/32
+Semibreve - 1 |
+Minims - 1/2 |
+Crotchets - 1/4 |
+Quavers - 1/8 |
+Semi-Quavers - 1/16 |
+Dime-Semi Quavers - 1/32 |
 
 Using different note lengths can cause a different BPM values for the same tempo. 
 It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music can be interpreted in different tempos.

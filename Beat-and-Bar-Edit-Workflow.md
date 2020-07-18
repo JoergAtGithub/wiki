@@ -491,3 +491,22 @@ Beats =>
   ]
 }
 ```
+
+Now, the above track actually has BPM = 120 (it was created with audacity at 120 BPM). So the user might want to double the BPM. Let's see what this operation looks like in both data models.
+
+![double the bpm](https://i.imgur.com/VKJXGbt.png)
+
+1. Absolute
+We need to insert new beats between the old beats.
+New positions will be like:
+[0, 50, 100, 150, 200]
+Adjusting positions is easy but now we also need to check the beat type for each beat. An incoming beat can become a beat or a downbeat and old beats can also change their type.
+
+Earlier:
+D   B   B   B   D   B   B   B   D...
+BPM x2:
+D B B B D B B B D B B B D B B B D...
+If we notice closely, some beats had to be converted to downbeats.
+
+2. Sparse
+Only need to change `bpmMarkers[0].bpm = 120`

@@ -497,6 +497,7 @@ Now, the above track actually has BPM = 120 (it was created with audacity at 120
 ![double the bpm](https://i.imgur.com/VKJXGbt.png)
 
 1. Absolute
+
 We need to insert new beats between the old beats.
 New positions will be like:
 

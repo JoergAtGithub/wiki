@@ -366,7 +366,7 @@ We'll defer phrases and sections for later revisions. We'll describe all possibi
 
 We'll be describing two types of data models.
 
-1. We explicitly store every beat position.
+1. We explicitly store every beat position. BPM is calculated as `60 * sampleRate * (4 / timeSignatureDenominator) / distanceBetweenBars`
 
 Protobuf definition (pseudocode):
 

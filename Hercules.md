@@ -1,13 +1,5 @@
 # Hercules/Guillemot DJ Console Series Controllers
 
-## Mixxx Community Sites
-
-| General                       | Download                                     | Forums                                       | Bugs                                                     | Wiki                                     | IRC                                              | Developer Mailing List                                                               |
-| ----------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| [mixxx.org](http://mixxx.org) | [Get Mixxx\!](http://mixxx.org/download.php) | [mixxx.org/forums](http://mixxx.org/forums/) | [Mixxx launchpad bugs](https://bugs.launchpad.net/mixxx) | [mixxx.org/wiki](http://mixxx.org/wiki/) | [\#mixxx on freenode](irc://freenode.net/#mixxx) | [Mixxx-devel mailing list](https://lists.sourceforge.net/lists/listinfo/mixxx-devel) |
-
-## Intro
-
 Welcome the [Mixxx](http://mixxx.org) page for
 [Hercules](http://www.hercules.com/) devices, Mixxx is the world's best
 free open source DJ software and the only one that runs on Windows, Mac

@@ -23,7 +23,9 @@ The main purpose of the bar is to chop the music in equal lengths so that notes 
 
 A 4/4 measure means that it fits 4 crotchets. The simplest possible melody is to put 4 crotchets. A different melody is to play 1 semibreve. Another more sophisticated can be play 4 1/8 notes, 2 crochets and a minim. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest and then 16 dime-semi-quavers. We can put any combination of notes and rest inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets. 
 
-# What is a legacy beatgrid?
+# Legacy architecture
+
+## BeatGrid
 
 The beatgrid is an offset measured in frames and tempo measured in BPM.
 With this, we can unequivocally determine every beat position, and assign any arbitrary frame to a beat index.
@@ -32,7 +34,7 @@ It's also the metronome we use for sync
 
 The beatgrid is very good for clicking on time on tracks that were made using a metronome, ie - drum machine.
 
-# What operations beatgrid support?
+### BeatGrid operations
 
 Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. Their position and lengths will be different but the relative distance will still the same. This reset the metronome to a different interpretation of the same tempo in the same instant.
 
@@ -44,7 +46,7 @@ BPM around position - Control used for sync. It's the always the same metronome.
 
 Find nearest beat - Used for quantazing when clicking on the waveform and also for cue and looping control. It's computed unequivocally from the first beat offset and the BPM. 
 
-# What is beatgrid problem?
+### BeatGrid limitations
 
 Two problems affects even tracks made with drum machines: 
 * [1] Abrupt changes - the record has a passage in a different tempo.
@@ -54,13 +56,13 @@ Tracks that are played by musicians share these problems and add their owns.
 * [3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
 * [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. A slight faster tempo will make the music more euphoric for example. 
 
-# What is beatmap?
+## BeatMap
 
 The beatmap is made as series of beats positions measured in frames.
 It's a visual representation of every detect beat in the waveform.
 It's the metronome that counts the tempo over 12 beats and is reset every beat for sync.
 
-# What operations beatmap support?
+### BeatMap operations
 
 Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. This behave odd in beatmap, the global average bpm only is scaled to compute a new beat length that is used to created shift all beats?
 
@@ -70,24 +72,18 @@ BPM around position - Control used for sync. It computes the bpm on 12 beats cen
 
 Find nearest beat - Used for quantazing when clicking on the waveform and also for cue and looping control. Computed either by the real detected beat or from the beat length computed from the bpm around position.
 
-# What is beatmap problems?
+### BeatMap limitations
 
 * [5] The noise of the analysis is not treated and the tempo value is always fluctuating.
 * [6] We can not unequivocally determine any beat position or assign a frame to an arbitrary beat. We have the real distance to the next detected beat and we also have estimated distance from the computed bpm.
 
-# What is the new -beat|rhythm-grid?
+# New architecture
 
 * It should overcome the problems outlined above. While also introducing bar, phrases and sections markers.
 * [1] - This is trivial, we simply reset the metronome, ie -the grid, on an arbitrary frame with a new BPM.
 * [2] - If the change happens on the measure level it's also easy. We reset the grid on the measure. If the tempo change happens inside a measure then is not that easy. There is no notation for that in sheet music. Also, the analyzer is unable to detect these reliable as it relies on periodicity detection. Finally, does this have any use?
 * [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the metronome for this amount of beats in this tempo. We aligning these sequences so they start ideally on a section or a phrase but they should at least always be at least one measure long.
 * [5 and 6] - We don't use the sequence of detected beats. We only use our metronomes to compute the distance from any arbitrary beat.
-
-
-
-# Beat and Bar Edit Workflow
-
-This page is intended to discuss a smooth workflow when editing betas and bars. It shall also fix requirements and point out the limitations of the chosen model.  
 
 ## Assumptions ##
 
@@ -338,7 +334,7 @@ For a repeated 7/16 measure like above the notation of a whole track looks like:
   signature_nominator = -2; // END
 ]    
 ```
-## Controversial Topic ## 
+### Controversial Topics
 
 * Showing every denominator as beat vs. showing real beats. 
   * In odd time signatures the emphasized beats are marked as beats. The denominator can be increased to make up a finer grid to palace a beat more exactly.  
@@ -351,7 +347,7 @@ For a repeated 7/16 measure like above the notation of a whole track looks like:
 * sparse representation  
 
  
-## Ideas and Opinions ##
+### Ideas and Opinions
 
 To be integrated: 
 
@@ -382,7 +378,7 @@ The beat grid for a track with 4/4 time signature and BPM = x will be visually t
 Whether to mark emphasized beats within the bar:
 If it is just meant to give a visual cue on emphasis, no, because our waveform should be adept enough to provide this kind of visual emphasis. If it is meant for auto DJ and looping, probably yes.
 
-# UI mockups with data models
+## UI mockups with data models
 
 We'll defer phrases and sections for later revisions. We'll describe all possibilities with BPM and Time Signature here.
 

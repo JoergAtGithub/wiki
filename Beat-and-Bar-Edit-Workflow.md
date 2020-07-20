@@ -42,23 +42,23 @@ Translate - Change the first beat offset. Effectively changes the position of ev
 
 Set BPM - Effectively changes the length of every beat and also the position of every beat but the first. This is a reset the to metronome in a new tempo in the same instant.
 
-BPM around position - Control used for sync. It's the always the same metronome.
+BPM around position - Control used for sync. It's always the same metronome.
 
-Find nearest beat - Used for quantazing when clicking on the waveform and also for cue and looping control. It's computed unequivocally from the first beat offset and the BPM. 
+Find the nearest beat - Used for quantizing when clicking on the waveform and also for cue and looping control. It's computed unequivocally from the first beat offset and the BPM. 
 
 ### BeatGrid limitations
 
-Two problems affects even tracks made with drum machines: 
+Two problems affect even tracks made with drum machines: 
 * [1] Abrupt changes - the record has a passage in a different tempo.
 * [2] Accelerando or ritardando parts. Machines can even make tempo changes inside a measure level.
 
-Tracks that are played by musicians share these problems and add their owns.
+Tracks that are played by musicians share these problems and add theirs owns.
 * [3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
-* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. A slight faster tempo will make the music more euphoric for example. 
+* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. A slightly faster tempo will make the music more euphoric for example. 
 
 ## BeatMap
 
-The beatmap is made as series of beats positions measured in frames.
+The beatmap is the series of all detected beats positions in frames.
 It's a visual representation of every detect beat in the waveform.
 It's the metronome that counts the tempo over 12 beats and is reset every beat for sync.
 
@@ -79,7 +79,9 @@ Find nearest beat - Used for quantazing when clicking on the waveform and also f
 
 # New architecture
 
-* It should overcome the problems outlined above. While also introducing bar, phrases and sections markers.
+The new representation should not be a strict as beatgrid to not allow any tempo change. But it should also not be as loose as beatmap to allow any tempo deviation.
+
+It should also solve the problems outlined above.
 * [1] - This is trivial, we simply reset the metronome, ie -the grid, on an arbitrary frame with a new BPM.
 * [2] - If the change happens on the measure level it's also easy. We reset the grid on the measure. If the tempo change happens inside a measure then is not that easy. There is no notation for that in sheet music. Also, the analyzer is unable to detect these reliable as it relies on periodicity detection. Finally, does this have any use?
 * [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the metronome for this amount of beats in this tempo. We aligning these sequences so they start ideally on a section or a phrase but they should at least always be at least one measure long.

@@ -104,7 +104,7 @@ If this we should be able to solve the problems outlined above by smarting reset
 
 ### Adaptive grid operations
 
-These operations acts on a between the boundaries where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset.
+**These operations acts on a between the boundaries where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset.**
 
 Set resolution - determine what the resolution of our grid. This can be by default quarter notes, but should be able to set on smaller fractions as well as bars.
 
@@ -118,7 +118,7 @@ Set time signature - Effectively changes the length of every measure and the dow
 
 Set downbeat - Effectively shift all downbeat positions in this part of grid.
 
-These operations are used to create or change the coordinates we use to describe our grid and create and edit the boundaries or our fixed grid.
+**These operations are used to create or change the coordinates we use to describe our grid and create and edit the boundaries or our fixed grid.**
 
 Create new grid region - Allows to set a new BPM, time signature and offset. Effectively creates a new segment on our grid that runs until our next definition of coordinates.
 
@@ -127,7 +127,7 @@ Delete grid region - Allows to remove a segment of our grid. Effectively makes t
 
 Update grid region boundaries - Allows to use an already defined set of coordinates to include more beats to the left or right. Effectively this a delete grid region followed by create grid region which will automatically apply the translate operation to the newly included beats.
 
-The operations are used by other features of Mixxx:
+**The operations are used by other features of Mixxx:**
 
 BPM at position - Return the BPM of the grid our beat is currently in.
 

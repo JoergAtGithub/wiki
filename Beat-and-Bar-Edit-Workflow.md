@@ -53,7 +53,7 @@ Two problems affect even tracks made with drum machines:
 
 Tracks that are played by musicians share these problems and add theirs owns.
 * [3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
-* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. A slightly faster tempo will make the music more euphoric for example. 
+* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. This is what happens on symphony where the band is following a human conductor that might deviate from the tempo to add expressiveness rather than a fixed metronome. This also usually happens on rock and pop rocks where the chorus might be played in slightly faster to make it fell for euphoric.
 
 ## BeatMap
 

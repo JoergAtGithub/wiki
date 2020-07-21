@@ -164,6 +164,7 @@ move your controller to this table.
 | [Korg nanoKONTROL](Korg%20nanoKONTROL)                                                             | discontinued      | 2 deck mixer                                                 | no                         | \-               | MIDI            | 1.8.2                         | 2009     |
 | [Hercules DJ Control Air](hercules_dj_control_air)                                                 | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI            | 1.11                          | 2012     |
 | [Hercules DJ Control Instinct](Hercules%20DJ%20Control%20Instinct)                                 | discontinued      | basic 2 deck                                                 | yes                        | no               | MIDI            | 1.10.1                        | 2012     |
+| [Hercules DJ Control Inpulse 300](Hercules%20DJ%20Control%20Inpulse%20300)                                 | 250$      | basic 2 deck                                                 | yes                        | no               | MIDI            | 2.2.4                        | 2018     |
 | [Hercules DJ Console Mac Edition](Hercules%20PC%20DJ%20Console)                                    | discontinued      | 2 deck all-in-one                                            | yes                        | no               | MIDI \[15\]     | 1.7                           | 2004     |
 | [Hercules DJ Console 4-Mx](Hercules%20DJ%20Console%204-Mx)                                         | discontinued      | 4 deck\[16\] all-in-one                                      | yes                        | yes              | USB Bulk \[17\]     | 1.11                          | 2010     |
 | [Hercules DJ Console Mk1](Hercules%20PC%20DJ%20Console)                                            | discontinued      | 2 deck all-in-one                                            | yes                        | no               | HID             | 1.11                          | 2003     |
@@ -400,15 +401,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-<tr class="even">
-<td><a href="Hercules DJControl Inpulse 300">Hercules DJControl Inpulse 300</a></td>
-<td>$250</td>
-<td>2 deck all-in-one controller</td>
-<td>yes</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2018</td>
-</tr>
+
 <tr class="odd">
 <td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>

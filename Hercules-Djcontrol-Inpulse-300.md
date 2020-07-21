@@ -5,14 +5,14 @@ page](https://www.hercules.com/en-us/product/djcontrolinpulse300//)
 \* [Manufacturer's support and downloads
 page](https://support.hercules.com/en/product/djcontrolinpulse300-en//)  
 \* [Forum
-thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12599)  
+thread](https://mixxx.discourse.group/t/hercules-djcontrol-inpulse-300/17854/)  
 
 ## Compatibility
 
 This controller is a class compliant USB MIDI and audio device, so it
 can be used without any special drivers on GNU/Linux, Mac OS X, and
 Windows. However, if you wish to use the [ASIO sound
-API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+API](https://mixxx.org/manual/latest/en/chapters/preferences.html?highlight=asio#windows)
 under Windows, please install the latest driver package available from
 the [Support
 page](https://support.hercules.com/en/product/djcontrolinpulse300-en//).
@@ -67,10 +67,11 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 
 ##### NOTE
 
-: When in FX mode, each pad will send multiple and different Note and CC
-messages. As these could not all be used properly with Mixxx current
-effect framework still in development, the pads have not been assigned
-in the original mapping.  
+\* When using **Firmware v1.71** and earlier, each FX pad will send multiple and different Note and CC messages. As these could not all be used properly with Mixxx current effect framework, the pads have not been assigned in this mapping.
+
+\* However, after applying **Firmware v1.72**, each FX pad now sends a simple Note On/Note Off (as is the case in every other Pad mode). This would make it easier to use the pads to control effect and the mapping might be modified eventually to take advantage of this possibility.
+
+For more details about [updating the Firmware.](https://www.djuced.com/change-your-pad-fx-on-hercules-djcontrol-inpulse-firmware-update-guide) 
 
 **Decks:**
 

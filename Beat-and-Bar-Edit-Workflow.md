@@ -81,11 +81,27 @@ Find nearest beat - Used for quantazing when clicking on the waveform and also f
 
 The new representation should not be a strict as beatgrid to not allow any tempo change. But it should also not be as loose as beatmap to allow any tempo deviation.
 
-It should also solve the problems outlined above.
-* [1] - This is trivial, we simply reset the metronome, ie -the grid, on an arbitrary frame with a new BPM.
-* [2] - If the change happens on the measure level it's also easy. We reset the grid on the measure. If the tempo change happens inside a measure then is not that easy. There is no notation for that in sheet music. Also, the analyzer is unable to detect these reliable as it relies on periodicity detection. Finally, does this have any use?
-* [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the metronome for this amount of beats in this tempo. We aligning these sequences so they start ideally on a section or a phrase but they should at least always be at least one measure long.
-* [5 and 6] - We don't use the sequence of detected beats. We only use our metronomes to compute the distance from any arbitrary beat.
+## What is the adaptaive beatgrid?
+
+A grid is usually defined as horizontal and perpendicular lines, uniformly spaced, used to help you find a particular thing or place, in a map, chart, or any other region by the means of a system of coordinates.
+
+In Mixxx the grid is unidimensional structure of perpendicular uniformly spaced lines that are used to find a particular beat.
+The system of coordinates it's use to unequivocally find any beat is a offset, used to determine it's start position, a BPM value and a time signature that are used to determine the length of our uniformly spaced lines. 
+
+Unlike legacy beatgrid to support tempo changes, during the course of a single track we allow our grid to be described by a different set of coordinates at any arbitrary places. This means that although our grid is made of uniformly spaced perpendicular lines, this is restricted space allowed to change during track.
+
+Mixxx will try to automatic align and describe the played beats by the longest grid (offset, bpm and time signature) that are in phase with the music. 
+
+Having long sequences described by a single set of coordinates makes sync easy by stretching only that region to match the beats of another track.
+
+If a track has a rhythm that Mixxx can not find any particular pattern the grid is defined by a different set of coordinates on every beat, this means that in this extreme case we still allow any beat to happen anywhere and have any length eventually regressing to the beatmap representation rather than grid. One the other extreme case if a track has been detected by drum machine and does not have any tempo change our adaptive grid is pretty much the same of the legacy beat grid.
+
+If this we should be able to solve the problems outlined above by smarting resetting - adapting - the coordinates we use to define the grid.
+
+* [1] - This is trivial, we simply reset the metronome, ie -the grid, on any arbitrary offset with a new BPM.
+* [2] - If the change happens on the measure level we reset the grid on the measure. If the tempo change happens inside a measure we reset the grid on a beat length. That means that inside that measure we are going to have beats described by a different set of coordinates, this means beats and bars will have different lengths and local tempo which adds complexity for syncing them.
+* [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the grid for that offset, tempo and time signature. We try align these sequences so they represent a section, a phrase or at least a measure.
+* [5 and 6] - We don't use the sequence of detected beats. We only use our grid coordinates to compute the position of any arbitrary beat.
 
 ## Assumptions ##
 

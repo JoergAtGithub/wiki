@@ -1,5 +1,5 @@
 # What are tempo, beat, bars and time signatures?
-Tempo is the speed a passage is meant to be played. One important consequence from its definition is that it may not have been played or be perceived as it was promised. Another one is that it's an abstract and relative concept. BPM is not the same as tempo.
+Tempo is the speed a passage is meant to be played. One important consequence from its definition is that it may not have been played or be perceived as it was supposed. Another one is that it's an abstract and relative concept. BPM is not the same as tempo.
 
 A beat is a unit of length. The beats per minute is then one measurement of this speed, as distance over time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
 
@@ -53,7 +53,7 @@ Two problems affect even tracks made with drum machines:
 
 Tracks that are played by musicians share these problems and add theirs owns.
 * [3] The band is unintentionally falling short or running ahead of the beat, but trying to catch up to the metronome.
-* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. This is what happens on symphony where the band is following a human conductor that might deviate from the tempo to add expressiveness rather than a fixed metronome. This also usually happens on rock and pop rocks where the chorus might be played in slightly faster to make it fell for euphoric.
+* [4] The performers do not care about the metronome BPM. Tempo adds a lot of expressiveness to the music. In fact, a lot of musicians such the like of Beethoven would argue that the metronome is a silly thing. In traditional sheet music, for example, the tempo is defined very vague in words that encompassed a range of BPMs, the interpreters can freely speed up and slow down the passages inside this range to emphasize particular parts of the melody. This is what happens on symphony where the band is following a human conductor that might deviate from the tempo to add expressiveness rather than a fixed metronome. This also usually happens on rock and pop records where the chorus might be played in slightly faster to make it fell for euphoric.
 
 ## BeatMap
 
@@ -101,6 +101,37 @@ If this we should be able to solve the problems outlined above by smarting reset
 * [2] - If the change happens on the measure level we reset the grid on the measure. If the tempo change happens inside a measure we reset the grid on a beat length. That means that inside that measure we are going to have beats described by a different set of coordinates, this means beats and bars will have different lengths and local tempo which adds complexity for syncing them.
 * [3 and 4] - We look for the next longest sequence of beats that stays inside a tempo within a 25ms error and reset the grid for that offset, tempo and time signature. We try align these sequences so they represent a section, a phrase or at least a measure.
 * [5 and 6] - We don't use the sequence of detected beats. We only use our grid coordinates to compute the position of any arbitrary beat.
+
+### Adaptive grid operations
+
+These operations acts on a between the boundaries where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset.
+
+Set resolution - determine what the resolution of our grid. This can be by default quarter notes, but should be able to set on smaller fractions as well as bars.
+
+Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. Their position and lengths will be different but the relative distance will still the same. This reset the grid to the same instant in a new bpm that is a ratio of the original bpm.
+
+Translate - Change the offset. Effectively changes the position of every beat without changing it's length. This reset this part of the grid to the same BPM in a new offset.
+
+Set BPM - Effectively changes the length of every beat and also the position of every beat but the first. This is a reset this part of grid to a new BPM in the same offset.
+
+Set time signature - Effectively changes the length of every measure and the downbeat positions. This is a reset to the grid to a new time signature in the same BPM and offset.
+
+Set downbeat - Effectively shift all downbeat positions in this part of grid.
+
+These operations are used to create or change the coordinates we use to describe our grid and create and edit the boundaries or our fixed grid.
+
+Create new grid region - Allows to set a new BPM, time signature and offset. Effectively creates a new segment on our grid that runs until our next definition of coordinates.
+
+
+Delete grid region - Allows to remove a segment of our grid. Effectively makes the grid described by an earlier set of coordinates longer by using it to describe the next region as well.
+
+Update grid region boundaries - Allows to use an already defined set of coordinates to include more beats to the left or right. Effectively this a delete grid region followed by create grid region which will automatically apply the translate operation to the newly included beats.
+
+The operations are used by other features of Mixxx:
+
+BPM at position - Return the BPM of the grid our beat is currently in.
+
+Find nearest beat - Find the closest beat position using the grid coordinates - bpm, time signature and offset, that describes the region we are looking for that beat.
 
 ## Assumptions ##
 

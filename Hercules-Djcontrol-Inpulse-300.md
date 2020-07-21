@@ -49,9 +49,8 @@ in order to learn how to set your levels properly when using Mixxx.
 
 ### Mapping description
 
-Save both MIDI and script files to your [controller mapping file
-locations\#user controller mapping
-folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder),
+Save both MIDI and script files to your [user controller mapping
+folder](https://github.com/mixxxdj/mixxx/wiki/controller%20mapping%20file%20locations#user%20controller%20mapping%20folder),
 then load the preset as described in [the user
 manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using-midi-hid-controllers)
 

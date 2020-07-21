@@ -11,17 +11,15 @@ Semi-Quavers - 1/16 |
 Dime-Semi Quavers - 1/32 |
 
 Using different note lengths can cause a different BPM values for the same tempo. 
-It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music can be interpreted in different tempos.
+It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music in one tempo can be interpreted in different BPMs.
 Mathematically BPMs values of 240, 120, or 60 with the respective note lengths of 1/8, 1/4 and 1/2 would result in the exact same tempo.
-However, the interpretation of musicians and thus the perception of the listener will be different from those. It's usually considered that a piece with a slower BPM will be more serene.
+However, the interpretation of musicians and thus the perception of the listener will be different from those. It's usually considered that a piece with a lower BPM will be perceived as being more serene because a musician is usually more prone to applying legato on longer (faster) notes than on short (slower) notes. 
 
-The analyzer will always use a quarter note as the note length to count the tempo.
+A measure is a restrict space in which the beats are placed. Since the beat length is defined in relative terms we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other and make melodies. 
 
-A measure is a restrict space in which the beats are placed. Since the beat length is defined in relative terms we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organize the notes on sheet music.
+The upper number of the time signature restrict how many beats are allowed inside each measure. This means that with the lower number of the time signature together with the BPM we determine the beat length. Once we have a established beat length we use the upper number of the time signature to determine the bar length. 
 
-The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other and make melodies. The upper number of the time signature restrict how many beats are allowed inside each measure. 
-
-A 4/4 measure means that it fits 4 crotchets. The simplest possible melody is to put 4 crotchets. A different melody is to play 1 semibreve. Another more sophisticated can be play 4 1/8 notes, 2 crochets and a minim. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest and then 16 dime-semi-quavers. We can put any combination of notes and rest inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets. 
+A 4/4 measure means that it fits 4 crotchets. On a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5 long beats in a measure and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated can be play 4 1/8 notes (4 * 0.25 = 1) and 2 crochets (2 * 0.5 = 1) totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest (1 * 1 = 1) and then 8 dime-semi-quavers (16 * 0.125 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets in 120 BPM or 2 seconds. 
 
 # Legacy architecture
 

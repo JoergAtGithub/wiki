@@ -80,7 +80,7 @@ Find nearest beat - Used for quantazing when clicking on the waveform and also f
 
 The new representation should not be a strict as beatgrid to not allow any tempo change. But it should also not be as loose as beatmap to allow any tempo deviation.
 
-## What is the adaptaive beatgrid?
+## What is the adaptive beatgrid?
 
 A grid is usually defined as horizontal and perpendicular lines, uniformly spaced, used to help you find a particular thing or place, in a map, chart, or any other region by the means of a system of coordinates.
 
@@ -104,7 +104,7 @@ If this we should be able to solve the problems outlined above by smarting reset
 
 ### Adaptive grid operations
 
-**These operations acts on a between the boundaries where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset.**
+**These operations acts on a between the boundaries of where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset:**
 
 Set resolution - determine what the resolution of our grid. This can be by default quarter notes, but should be able to set on smaller fractions as well as bars.
 
@@ -114,14 +114,13 @@ Translate - Change the offset. Effectively changes the position of every beat wi
 
 Set BPM - Effectively changes the length of every beat and also the position of every beat but the first. This is a reset this part of grid to a new BPM in the same offset.
 
-Set time signature - Effectively changes the length of every measure and the downbeat positions. This is a reset to the grid to a new time signature in the same BPM and offset.
+Set time signature - Effectively changes the length of every measure (upper number) and the beat length (lower number). A change in the numerator only will change our downbeat indices, without changing their position. A change in the denominator only changes the downbeat positions without changing their indices. Changing both will of course change both. This is a reset to the grid to a new time signature in the same BPM and offset.
 
-Set downbeat - Effectively shift all downbeat positions in this part of grid.
+Set downbeat - Shift all downbeat positions in this part of grid. Effectively changes the positions of all downbeat without changing their indices.
 
-**These operations are used to create or change the coordinates we use to describe our grid and create and edit the boundaries or our fixed grid.**
+**These operations are used to edit the boundaries and coordinates used to describe a particular region of our grid:**
 
 Create new grid region - Allows to set a new BPM, time signature and offset. Effectively creates a new segment on our grid that runs until our next definition of coordinates.
-
 
 Delete grid region - Allows to remove a segment of our grid. Effectively makes the grid described by an earlier set of coordinates longer by using it to describe the next region as well.
 
@@ -129,7 +128,7 @@ Update grid region boundaries - Allows to use an already defined set of coordina
 
 **The operations are used by other features of Mixxx:**
 
-BPM at position - Return the BPM of the grid our beat is currently in.
+BPM at position - Returns the BPM that describes the grid that our beat is currently in.
 
 Find nearest beat - Find the closest beat position using the grid coordinates - bpm, time signature and offset, that describes the region we are looking for that beat.
 

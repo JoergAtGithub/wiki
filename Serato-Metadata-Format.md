@@ -12,7 +12,7 @@ This in an overview of which tags are currently read and parsed by Mixxx:
 | ---------- | ------- | ------- | ------- | ---------- |
 | `Analysis` | No      | No      | No      | No         |
 | `Autotags` | No      | No      | No      | No         |
-| `BeatGrid` | #2958   | No      | No      | No         |
+| `BeatGrid` | [#2958](https://github.com/mixxxdj/mixxx/pull/2958)   | No      | No      | No         |
 | `Markers_` | **Yes** | *n/a*   | **Yes** | No         |
 | `Markers2` | **Yes** | **Yes** | **Yes** | ?          |
 | `Offsets_` | No      | No      | No      | No         |

@@ -5,14 +5,14 @@ page](https://www.hercules.com/en-us/product/djcontrolinpulse200//)
 \* [Manufacturer's support and downloads
 page](https://support.hercules.com/en/product/djcontrolinpulse200-en//)  
 \* [Forum
-thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=12592)  
+thread](https://mixxx.discourse.group/t/hercules-djcontrol-inpulse-200/17849)  
 
 ## Compatibility
 
 This controller is a class compliant USB MIDI and audio device, so it
 can be used without any special drivers on GNU/Linux, Mac OS X, and
 Windows. However, if you wish to use the [ASIO sound
-API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api)
+API](https://mixxx.org/manual/latest/en/chapters/preferences.html?highlight=asio#windows)
 under Windows, please install the latest driver package available from
 the [Support
 page](https://support.hercules.com/en/product/djcontrolinpulse200-en//).
@@ -49,9 +49,8 @@ in order to learn how to set your levels properly when using Mixxx.
 
 ### Mapping description
 
-Save both MIDI and script files to your [controller mapping file
-locations\#user controller mapping
-folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder),
+Save both MIDI and script files to your [user controller mapping
+folder](https://github.com/mixxxdj/mixxx/wiki/controller%20mapping%20file%20locations#user%20controller%20mapping%20folder),
 then load the preset as described in [the user
 manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using-midi-hid-controllers)
 
@@ -88,12 +87,12 @@ Beat Align LED = Track end warning (Make sure **Beatmatch Guide** is
 
 Encoder = Move up/down list  
 Encoder button = Switch focus between List and file view  
-SHIFT + Encoder button = Maximize/Minimize broser view  
+SHIFT + Encoder button = Maximize/Minimize browser view  
 Assistant = AutoDJ On/Off
 
 ##### NOTE
 
-Be sure a playlist was created for AutoDJ before activatig this
+Be sure a playlist was created for AutoDJ before activating this
 function  
   
 **PADS - Hot Cue:**  
@@ -110,14 +109,20 @@ Pad 1-4 = Beatloop 1 / 2 / 4 / 8 beats
 
 ##### NOTE
 
-When in FX mode, each pad will send multiple and different Note and CC
+\* When using **Firmware v1.71 and earlier**, each FX pad will send multiple and different Note and CC
 messages. As these could not all be used properly with Mixxx current
-effect framework still in development, a simplified configuration was
+effect framework, a simplified configuration was
 assigned using the pad in SHIFT mode for convenience.  
   
 SHIFT + Pad 1-3 = FX 1-3 on/off  
 SHIFT + Pad 4 = FX Rack 1/2 On/Off (Deck A/B respectively)  
-  
+
+\* However, after applying **Firmware v1.72**, each FX pad now sends a simple Note On/Note Off (as is the case in every other Pad mode). This makes it easier to use the pads to control effect and the latest mapping take advantage of this possibility by removing the use of the SHIFT button.
+
+Pad 1-3 = FX 1-3 on/off  
+Pad 4 = FX Rack 1/2 On/Off (Deck A/B respectively)
+
+For more details about [updating the Firmware.](https://www.djuced.com/change-your-pad-fx-on-hercules-djcontrol-inpulse-firmware-update-guide) 
 
 **PADS - Sample:**  
   

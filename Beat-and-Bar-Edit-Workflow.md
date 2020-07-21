@@ -104,27 +104,23 @@ If this we should be able to solve the problems outlined above by smarting reset
 
 ### Adaptive grid operations
 
-**These operations acts on a between the boundaries of where the grid is defined by a unique set of coordinates - ie: bpm, time signature and offset:**
+**These operations are used to define an adaptive region of our grid. These create, update and delete the "adaptive grid markers" that let Mixxx know when it should adapt it's grid (offset) and which coordinates (bpm, time signature) to use:**
 
-Set resolution - determine what the resolution of our grid. This can be by default quarter notes, but should be able to set on smaller fractions as well as bars.
+Create new adaptive grid region - Allows to set a new BPM, time signature in a any arbitrary offset. Effectively adapts our grid until our next definition of "adaptive grid markers".
 
-Scale - multiply the bpm by an integer ratio. Multiplying a bpm value does not change the perception of tempo. Effectively this add or remove beats. Their position and lengths will be different but the relative distance will still the same. This reset the grid to the same instant in a new bpm that is a ratio of the original bpm.
+Delete adaptive grid region - Allows to remove a segment of our adaptive grid. Effectively makes the grid described by an earlier "adaptive grid markers" longer by using it to describe the following region as well.
 
-Translate - Change the offset. Effectively changes the position of every beat without changing it's length. This reset this part of the grid to the same BPM in a new offset.
+Update grid region boundaries - Allows to use an already defined "adaptive grid markers" to include more beats to the left or right. Effectively this change the offset of an already defined marker. To add beats to the left we change the previous marker offset, to add beats beats to the right we change the next marker offset. 
 
-Set BPM - Effectively changes the length of every beat and also the position of every beat but the first. This is a reset this part of grid to a new BPM in the same offset.
+**These operations are used to edit the coordinates that are used to find beats and downbeats inside the boundaries of one adaptive grid region without changing the region itself - ie: the BPM, time signature and the first downbeat offset measured in beats:**
 
-Set time signature - Effectively changes the length of every measure (upper number) and the beat length (lower number). A change in the numerator only will change our downbeat indices, without changing their position. A change in the denominator only changes the downbeat positions without changing their indices. Changing both will of course change both. This is a reset to the grid to a new time signature in the same BPM and offset.
+Scale - multiply the BPM by an integer ratio, this does not change the tempo though, as we changed to a new equivalent BPM. Effectively this add or remove beats in a fixed ratio. This will change their positions and length but some beats will stay in the exact same place. This means that our downbeat positions (measured in frames by the beat) and indices (which beats are downbeats) will be changed. If the scale ratio is not divisible by the numerator in the time signature this might add missed downbeats.
 
-Set downbeat - Shift all downbeat positions in this part of grid. Effectively changes the positions of all downbeat without changing their indices.
+Set BPM - This is used for small corrections of the BPM value. Effectively changes the position of every beat but the first.
 
-**These operations are used to edit the boundaries and coordinates used to describe a particular region of our grid:**
+Set time signature - Effectively changes the length of every measure (upper number) and the beat length (lower number). A change in the numerator only will change which the beats that are the downbeats, without changing the beat positions. A change in the denominator only will change all (but the first) beat positions and thus the downbeats positions as well, while keeping the same beats as downbeats. Changing both will change both.
 
-Create new grid region - Allows to set a new BPM, time signature and offset. Effectively creates a new segment on our grid that runs until our next definition of coordinates.
-
-Delete grid region - Allows to remove a segment of our grid. Effectively makes the grid described by an earlier set of coordinates longer by using it to describe the next region as well.
-
-Update grid region boundaries - Allows to use an already defined set of coordinates to include more beats to the left or right. Effectively this a delete grid region followed by create grid region which will automatically apply the translate operation to the newly included beats.
+Set downbeat - Shift all downbeat positions in this part of grid. Effectively this changes which beats are downbeat without changing their positions.
 
 **The operations are used by other features of Mixxx:**
 

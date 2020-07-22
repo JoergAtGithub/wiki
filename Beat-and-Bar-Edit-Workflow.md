@@ -1,5 +1,7 @@
 # What are tempo, beat, bars and time signatures?
-Tempo is the speed a passage of music is meant to be played. It's an abstract and relative concept. A beat is a unit of length. The beats per minute is then a empirical measurement of this speed, as distance (beats) over time (minutes). When we are counting the BPM our result is always relative to the window of beats we are counting. Also the lower number of the time signature determine the relative length of the beat.
+Tempo is the speed a passage of music is meant to be played. It's an abstract and relative concept. A beat is a unit of length, it's the smallest unit that we perceive rhythm, ie: a regular pattern of change, of a music record. The beat is what one would intuitively tap the foot or nod the head. 
+
+Beats per minute is then a empirical measurement of this speed, as distance (beats) over time (minutes). When we are counting the BPM our result is always relative to the window of beats we are counting and to the relative length of the beat, determined by the denominator in a time signature. 
 
 Semibreve - 1 |
 Minims - 1/2 |
@@ -11,6 +13,11 @@ Dime-Semi Quavers - 1/32 |
 Using different note lengths can cause a different BPM values for the same tempo. 
 It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music in one tempo can be interpreted in different BPMs. Mathematically BPMs values of 240, 120, or 60 with the respective note lengths of 1/8, 1/4 and 1/2 will result in the exact same tempo. A piece in 3/4 can be easily rewritten in 3/8 simply by halving the length of the notes and doubling the BPM.
 However, the interpretation of musicians and thus the perception of the listener can be different. It's usually considered that a piece with a lower BPM will be perceived as being more serene because a musician is usually more prone to applying legato on longer (faster) notes than on short (slower) notes. 
+
+Using different window to count the beats can cause the different BPM values for the same tempo. Let's consider that we have counted 12 beats over the course of 6 seconds. To get the BPM we use the formula: (12 * 60) / 6 = 120 BPM. Now let's suppose we use 6 beats to count the tempo in this same 12 beats window but in two discrete steps. We count the first 6 beats on 2 seconds: (6 * 60) / 2 = 180 BPM. The other group of 6 beats take us another 4 seconds to count: (6 * 60) / 4 = 90 BPM. If we try to simply compute the arithmetic mean our BPMs, we got (90 + 180) / 2 = 135. This would be the same of one single window of 6 beats, that skip the first 2 beats and the last 4 beats, in this case we count the first 4 beats in 1.33 seconds and take an additional 1.33 seconds to count the next 2 beats, this gives us: (6 * 60) / 2.66... = 135. 
+Since BPM is a speed measure, if we want to know the total distance we traveled we need to use the harmonic mean: 2/((1/90) + (1/180)) = 120 BPM, which was the original tempo we counted our 12 beats.
+
+What is the true tempo of this passage? One could argue that it is 120 BPM, but that certainly is misleading because it does not consider that there is a tempo change in this region. One could consider only counting the tempo on a 2 beat window to get all tempo changes, but that can be even more misleading since small unintended tempo deviations will be very prominent. There is also no definitive, "correct" answer for this question. 
 
 A measure is the restrict space in which the beats are placed. Since the beat length is defined in relative terms, we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other to make melodies. 
 

@@ -66,7 +66,7 @@ manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using
 
 ##### NOTE
 
-\* When using **Firmware v1.71** and earlier, each FX pad will send multiple and different Note and CC messages. As these could not all be used properly with Mixxx current effect framework, the pads have not been assigned in this mapping.
+\* When using **Firmware v1.68** and earlier, each FX pad will send multiple and different Note and CC messages. As these could not all be used properly with Mixxx current effect framework, the pads have not been assigned in this mapping.
 
 \* However, after applying **Firmware v1.72**, each FX pad now sends a simple Note On/Note Off (as is the case in every other Pad mode). This would make it easier to use the pads to control effect and the mapping might be modified eventually to take advantage of this possibility.
 

@@ -18,7 +18,7 @@ A measure is a restrict space in which the beats are placed. Since the beat leng
 
 The upper number of the time signature restrict how many beats are allowed inside each measure. This means that with the lower number of the time signature together with the BPM we determine the beat length. Once we have a established beat length we use the upper number of the time signature to determine the bar length. 
 
-A 4/4 measure means that it fits 4 crotchets. On a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5 long beats in a measure and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated can be play 4 1/8 notes (4 * 0.25 = 1) and 2 crochets (2 * 0.5 = 1) totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets in 120 BPM or 2 seconds. 
+A 4/4 measure means that it fits 4 crotchets. On a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5s long beats in a measure and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated can be play 4 1/8 notes (4 * 0.25 = 1) and 2 crochets (2 * 0.5 = 1) totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets in 120 BPM or 2 seconds. 
 
 On a 3/4 measure also in 120 BPM, our beats are also 0.5 long, but our measure now is only 1.5 seconds. A 7/8 signature means that our beat is now 0.25 seconds and a measure that fit 7 of these beats are so 1.75 seconds.
 
@@ -87,7 +87,7 @@ A grid is usually defined as horizontal and perpendicular lines, uniformly space
 In Mixxx the grid is unidimensional structure of perpendicular uniformly spaced lines that are used to find a particular beat.
 The system of coordinates it's use to unequivocally find any beat is a offset, used to determine it's start position, a BPM value and a time signature that are used to determine the length of our uniformly spaced lines. 
 
-Unlike legacy beatgrid to support tempo changes, during the course of a single track we allow our grid to be described by a different set of coordinates at any arbitrary places. This means that although our grid is made of uniformly spaced perpendicular lines, this is restricted space allowed to change during track.
+Unlike legacy beatgrid to support tempo changes, during the course of a single track we allow our grid to be described by a different set of coordinates at any arbitrary places. This means that although our grid is made of uniformly spaced perpendicular lines, this restricted, well defined space is allowed to change during track.
 
 Mixxx will try to automatic align and describe the played beats by the longest grid (offset, bpm and time signature) that are in phase with the music. 
 
@@ -106,9 +106,9 @@ If this we should be able to solve the problems outlined above by smarting reset
 
 **These operations are used to define an adaptive region of our grid. These create, update and delete the "adaptive grid markers" that let Mixxx know when it should adapt it's grid (offset) and which coordinates (bpm, time signature) to use:**
 
-Create new adaptive grid region - Allows to set a new BPM, time signature in a any arbitrary offset. Effectively adapts our grid until our next definition of "adaptive grid markers".
+Create new adaptive grid region - Allows to set a new BPM, time signature in a any arbitrary position that becomes the first beat offset. The fact that this creates a beat on an arbitrary position implies that if this is not set on previously defined beat, we are not only setting the coordinates for the next region of our adaptive grid, but we have also changing the previously beat length, and thus change the local tempo for that beat. This also implies that we have added a tempo change inside the previous measure and changed it's length as well. 
 
-Delete adaptive grid region - Allows to remove a segment of our adaptive grid. Effectively makes the grid described by an earlier "adaptive grid markers" longer by using it to describe the following region as well.
+Delete adaptive grid region - Allows to remove a segment of our adaptive grid. Effectively makes the grid described by an earlier "adaptive grid markers" longer by using it to describe the following region as well. 
 
 Update grid region boundaries - Allows to use an already defined "adaptive grid markers" to include more beats to the left or right. Effectively this change the offset of an already defined marker. To add beats to the left we change the previous marker offset, to add beats beats to the right we change the next marker offset. 
 

@@ -106,11 +106,13 @@ If this we should be able to solve the problems outlined above by smarting reset
 
 **These operations are used to define an adaptive region of our grid. These create, update and delete the "adaptive grid markers" that let Mixxx know when it should adapt it's grid (offset) and which coordinates (bpm, time signature) to use:**
 
-Create new adaptive grid region - Allows to set a new BPM, time signature in a any arbitrary position that becomes the first beat offset. The fact that this creates a beat on an arbitrary position implies that if this is not set on previously defined beat, we are not only setting the coordinates for the next region of our adaptive grid, but we have also changing the previously beat length, and thus change the local tempo for that beat. This also implies that we have added a tempo change inside the previous measure and changed it's length as well. 
+Create a new grid region - Allows to set a new BPM and time signature in a any arbitrary position that becomes the first beat offset. The fact that this creates a beat on an arbitrary position implies that if this is not set on previously defined beat, we are not only setting the coordinates for the next region of our adaptive grid, but we have also changing the previously beat length, and thus changing the local tempo for that beat. This also implies that we have added a tempo change inside the previous measure and changed it's length as well. 
 
-Delete adaptive grid region - Allows to remove a segment of our adaptive grid. Effectively makes the grid described by an earlier "adaptive grid markers" longer by using it to describe the following region as well. 
+Create a grid for one measure - Allows to manually create an adaptive grid region of one bar, by defining a time signature together with two downbeats. Mixxx will automatically determine the BPM of this region.
 
-Update grid region boundaries - Allows to use an already defined "adaptive grid markers" to include more beats to the left or right. Effectively this change the offset of an already defined marker. To add beats to the left we change the previous marker offset, to add beats beats to the right we change the next marker offset. 
+Delete grid region - Allows to remove a segment of our adaptive grid. Effectively makes the grid described by an earlier "adaptive grid markers" longer by using it to describe the following region as well. 
+
+Update grid region boundaries - Allows to use an already defined "adaptive grid markers" to include more beats to the left or right. Effectively this change the offset of an already defined marker. To add beats to the left we change the previous marker offset, to add beats beats to the right we change the next marker offset.
 
 **These operations are used to edit the coordinates that are used to find beats and downbeats inside the boundaries of one adaptive grid region without changing the region itself - ie: the BPM, time signature and the first downbeat offset measured in beats:**
 

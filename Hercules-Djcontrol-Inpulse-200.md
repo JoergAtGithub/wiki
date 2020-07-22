@@ -109,7 +109,7 @@ Pad 1-4 = Beatloop 1 / 2 / 4 / 8 beats
 
 ##### NOTE
 
-\* When using **Firmware v1.71 and earlier**, each FX pad will send multiple and different Note and CC
+\* When using **Firmware v1.68 and earlier**, each FX pad will send multiple and different Note and CC
 messages. As these could not all be used properly with Mixxx current
 effect framework, a simplified configuration was
 assigned using the pad in SHIFT mode for convenience.  

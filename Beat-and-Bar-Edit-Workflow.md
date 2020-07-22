@@ -1,7 +1,5 @@
 # What are tempo, beat, bars and time signatures?
-Tempo is the speed a passage is meant to be played. One important consequence from its definition is that it may not have been played or be perceived as it was supposed. Another one is that it's an abstract and relative concept. BPM is not the same as tempo.
-
-A beat is a unit of length. The beats per minute is then one measurement of this speed, as distance over time. When we are counting the tempo our result is always relative to the window of beats we are counting. A beat can have different lengths or duration. This is the lower number of the time signature.
+Tempo is the speed a passage of music is meant to be played. It's an abstract and relative concept. A beat is a unit of length. The beats per minute is then a empirical measurement of this speed, as distance (beats) over time (minutes). When we are counting the BPM our result is always relative to the window of beats we are counting. Also the lower number of the time signature determine the relative length of the beat.
 
 Semibreve - 1 |
 Minims - 1/2 |
@@ -11,16 +9,16 @@ Semi-Quavers - 1/16 |
 Dime-Semi Quavers - 1/32 |
 
 Using different note lengths can cause a different BPM values for the same tempo. 
-It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music in one tempo can be interpreted in different BPMs. Mathematically BPMs values of 240, 120, or 60 with the respective note lengths of 1/8, 1/4 and 1/2 would result in the exact same tempo.A piece in 3/4 can be easily rewritten in 3/8 simply by halving the length of the notes and doubling the BPM.
-However, the interpretation of musicians and thus the perception of the listener will be different from those. It's usually considered that a piece with a lower BPM will be perceived as being more serene because a musician is usually more prone to applying legato on longer (faster) notes than on short (slower) notes. 
+It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music in one tempo can be interpreted in different BPMs. Mathematically BPMs values of 240, 120, or 60 with the respective note lengths of 1/8, 1/4 and 1/2 will result in the exact same tempo. A piece in 3/4 can be easily rewritten in 3/8 simply by halving the length of the notes and doubling the BPM.
+However, the interpretation of musicians and thus the perception of the listener can be different. It's usually considered that a piece with a lower BPM will be perceived as being more serene because a musician is usually more prone to applying legato on longer (faster) notes than on short (slower) notes. 
 
-A measure is a restrict space in which the beats are placed. Since the beat length is defined in relative terms we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other and make melodies. 
+A measure is the restrict space in which the beats are placed. Since the beat length is defined in relative terms, we need a regular space, of a certain duration to place them. Visually it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different relatives beat lengths can balance each other to make melodies. 
 
-The upper number of the time signature restrict how many beats are allowed inside each measure. This means that with the lower number of the time signature together with the BPM we determine the beat length. Once we have a established beat length we use the upper number of the time signature to determine the bar length. 
+The bottom number of the time signature together with the BPM we determine the beat length. The upper number of the time signature restrict how many beats are allowed inside each measure, so after we have computed the beat length we that to determine the bar length. 
 
-A 4/4 measure means that it fits 4 crotchets. On a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5s long beats in a measure and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated can be play 4 1/8 notes (4 * 0.25 = 1) and 2 crochets (2 * 0.5 = 1) totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect that their size must, in this case, be the same of 4 crotchets in 120 BPM or 2 seconds. 
+A 4/4 measure means that it fits 4 crotchets. At a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5s long beats in a bar, and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated melody can be played as 2 1/8 notes (2 * 0.25 = 0.5) and 1 crochets (1 * 0.5 = 0.5) and one minim (1 * 1 = 1), all totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be a 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect the size defined by the time signature, in this case, that is the same of 4 crotchets that at 120 BPM means 2 seconds. 
 
-On a 3/4 measure also in 120 BPM, our beats are also 0.5 long, but our measure now is only 1.5 seconds. A 7/8 signature means that our beat is now 0.25 seconds and a measure that fit 7 of these beats are so 1.75 seconds.
+On a 3/4 measure also in 120 BPM, our beats are still 0.5 seconds long, but our measure is only 1.5 seconds. A 7/8 signature also at 120 BPM means that our beat is 0.25 seconds and that the measure allows 7 of these inside, and thus are 1.75 seconds.
 
 # Legacy architecture
 

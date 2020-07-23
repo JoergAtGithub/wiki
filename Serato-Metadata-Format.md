@@ -8,15 +8,17 @@ Launchpad issue: <https://bugs.launchpad.net/mixxx/+bug/741613>
 
 This in an overview of which tags are currently read and parsed by Mixxx:
 
-|            | ID3     | FLAC    | M4A     | Ogg Vorbis |
-| ---------- | ------- | ------- | ------- | ---------- |
-| `Analysis` | No      | No      | No      | No         |
-| `Autotags` | No      | No      | No      | No         |
-| `BeatGrid` | [#2958](https://github.com/mixxxdj/mixxx/pull/2958)   | No      | No      | No         |
-| `Markers_` | **Yes** | *n/a*   | **Yes** | No         |
-| `Markers2` | **Yes** | **Yes** | **Yes** | ?          |
-| `Offsets_` | No      | No      | No      | No         |
-| `Overview` | No      | No      | No      | No         |
+|              | ID3     | FLAC    | M4A     | Ogg Vorbis | *Description*
+| ------------ | ------- | ------- | ------- | ---------- | ----------
+| `Analysis`   | No      | No      | No      | No         | Serato Analysis version
+| `Autotags`   | No      | No      | No      | No         | BPM and Gain values	
+| `BeatGrid`   | *WIP*   | *WIP*   | *WIP*   | No         | Beatgrid Markers ([#2958](https://github.com/mixxxdj/mixxx/pull/2958))
+| `Markers_`   | **Yes** | *n/a*   | **Yes** | No         | Hotcues, Saved Loops, etc.
+| `Markers2`   | **Yes** | **Yes** | **Yes** | ?          | Hotcues, Saved Loops, etc.
+| `Offsets_`   | No      | No      | No      | No         |
+| `Overview`   | No      | No      | No      | No         | Overview Waveform data
+| `RelVol`     | *n/a*   | No      | No      | *n/a*      |
+| `VideoAssoc` | *n/a*   | No      | No      | *n/a*      |
 
 See the [file format documentation](https://github.com/Holzhaus/serato-tags/blob/master/docs/fileformats.md) for details.
 

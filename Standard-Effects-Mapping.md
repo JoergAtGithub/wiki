@@ -1,4 +1,4 @@
-\======= Standard effects mapping ====== This page describes how to use
+This page describes how to use
 the standard Mixxx mapping for effects sections on controllers with the
 typical layout of 4 knobs (or 3 knobs + 1 encoder) and 4 buttons for
 effects. It allows you to switch between controlling all 3 effects of a

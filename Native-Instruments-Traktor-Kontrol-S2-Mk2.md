@@ -1,1 +1,1 @@
-TODO
+![NI Traktor Kontrol S2 Mk2](https://user-images.githubusercontent.com/9455094/88471094-4ab03900-ceca-11ea-8f86-53205fff7d62.jpg)

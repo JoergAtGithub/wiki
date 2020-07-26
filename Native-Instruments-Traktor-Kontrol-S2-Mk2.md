@@ -45,7 +45,7 @@ When slip mode is implemented in Mixxx in the future, this could be changed so s
   - **Top encoder**: Controls the QuickEffect superknob for the deck. With shift, controls gain. Press to reset the QuickEffect superknob. Press with shift to reset gain. Press and turn to change the effect chain preset loaded to the QuickEffect chain (new in Mixxx 2.4).
   - **FX routing buttons**: Assign the deck to effects units 1 and 2.
   - **EQ knobs**: Adjust the high, middle, and low frequencies.
-  - **Cue button**: Toggle whether the deck is routed to the prefader headphone output.
+  - **Cue button**: Toggle whether the deck is routed to the prefader headphone output. With shift, toggle quantize for the deck.
   - **Fader**: Control the deck volume
 
 ### Center column

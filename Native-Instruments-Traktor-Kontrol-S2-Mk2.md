@@ -66,7 +66,7 @@ The cue volume knob adjusts the volume of the controller's audio interface in ha
 # Technical details
 ## HID protocol
 ```
->usbhid-dump -d17cc:1320 | grep -v : | xxd -r -p | hidrd-convert -o xml
+> usbhid-dump -d17cc:1320 | grep -v : | xxd -r -p | hidrd-convert -o xml
 
 <?xml version="1.0"?>
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
@@ -530,7 +530,7 @@ The cue volume knob adjusts the volume of the controller's audio interface in ha
 
 ## USB descriptors
 ```
-lsusb -vd 17cc:1320
+> lsusb -vd 17cc:1320
 
 Bus 001 Device 010: ID 17cc:1320 Native Instruments 
 Device Descriptor:

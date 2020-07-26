@@ -15,7 +15,7 @@ Touch the top of the jog wheel and turn it to scratch. Move the jog wheel from t
 
 ### Loop section
   - **Left encoder**: Turning jumps forward/backwards by the beatjump size. If a loop is enabled,
-    turning with shift moves the loop by the beatjump size. Push and turn to adjust the beatjump size.
+    turning moves the loop by the beatjump size. Push and turn to adjust the beatjump size.
     Turning with shift adjusts the musical key. Pushing with shift resets the key to the track's default.
   - **Right encoder**: Turning halves/doubles the loop size. Turning shift beatjumps by 1 beat forward/backward, or if a loop is enabled,
     moves the loop 1 beat forward/backward. Pushing (de)activates a loop. Pushing with shift reactivates a disabled loop, or if a loop

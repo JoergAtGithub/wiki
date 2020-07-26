@@ -8,7 +8,7 @@ The Kontrol S2 Mk2 can be distinguished from the Mk1 by the jog wheels. The top 
 The Kontrol S2 Mk2 is a USB audio and HID class compliant device. It is fully compatible with Linux, Windows, and macOS. No proprietary driver is required on Linux or macOS. For Windows, download and install the latest driver from [Native Instruments' website](https://www.native-instruments.com/en/support/downloads/drivers-other-files/).
 
 # Audio routing
-Configure the Kontrol S2 Mk2's output channels 1-2 for Mixxx's main output and channels 3-4 for Mixxx's headphone output. If you want to record and/or broadcast the microphone, configure input channels 1-2 for the Microphone 1 input in Mixxx.
+Configure the Kontrol S2 Mk2's output channels 1-2 for Mixxx's main output and channels 3-4 for Mixxx's headphone output. If you want to record and/or broadcast the microphone, configure input channels 1-2 for the Microphone 1 input in Mixxx. Do *not* configure the Record/Broadcast input in Mixxx.
 
 # Mapping
 ## Decks

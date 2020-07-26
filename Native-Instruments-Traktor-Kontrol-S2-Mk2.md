@@ -52,6 +52,8 @@ Mixxx does not yet have a very useful flux/slip mode, so instead this button tog
   - **Remix buttons**: Toggles the top pad row of the corresponding deck to control samplers. Press when lit to return the pads to controlling hotcues.
   - **Browse encoder**: Scroll through the music library. Push to maximize the library browser on screen.
   - **Load buttons**: Load the track selected in the library to the corresponding deck. Press with shift to unload a track.
+  - **Meters**: The meters show the levels for each deck.
+  - **Crossfader**: Crossfade between the decks.
 
 ## Effects
 The Kontrol S2 Mk2 uses the [standard Mixxx effects mapping](https://github.com/mixxxdj/mixxx/wiki/standard-effects-mapping).

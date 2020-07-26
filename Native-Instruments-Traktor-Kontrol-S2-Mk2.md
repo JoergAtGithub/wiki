@@ -14,7 +14,7 @@ The Kontrol S2 Mk2 is a USB audio and HID class compliant device. It is fully co
 Touch the top of the jog wheel and turn it to scratch. Move the jog wheel from the edge without touching the top to nudge the track. Hold shift and spin the jog wheel to seek quickly.
 
 ### Loop section
-  - **Left encoder**: Turning with shift jumps forward/backwards by the beatjump size. If a loop is enabled,
+  - **Left encoder**: Turning jumps forward/backwards by the beatjump size. If a loop is enabled,
     turning with shift moves the loop by the beatjump size. Push and turn to adjust the beatjump size.
     Turning with shift adjusts the musical key. Pushing with shift resets the key to the track's default.
   - **Right encoder**: Turning halves/doubles the loop size. Turning shift beatjumps by 1 beat forward/backward, or if a loop is enabled,

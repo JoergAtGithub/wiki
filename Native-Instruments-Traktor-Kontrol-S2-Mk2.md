@@ -11,7 +11,7 @@ The Kontrol S2 Mk2 is a USB audio and HID class compliant device. It is fully co
 ## Decks
 
 ### Jog wheels
-Spin the jog wheels to scratch. Move the jog wheels from the edge without touching the top to nudge the track. Hold shift and spin the jog wheel to seek quickly.
+Touch the top of the jog wheel and turn it to scratch. Move the jog wheel from the edge without touching the top to nudge the track. Hold shift and spin the jog wheel to seek quickly.
 
 ### Loop section
   - **Left encoder**: Turning with shift jumps forward/backwards by the beatjump size. If a loop is enabled,

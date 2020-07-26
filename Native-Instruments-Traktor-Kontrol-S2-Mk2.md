@@ -66,6 +66,8 @@ The cue volume knob adjusts the volume of the controller's audio interface in ha
 # Technical details
 ## HID protocol
 ```
+>usbhid-dump -d17cc:1320 | grep -v : | xxd -r -p | hidrd-convert -o xml
+
 <?xml version="1.0"?>
 <descriptor xmlns="http://digimend.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://digimend.sourceforge.net hidrd.xsd">
   <usage_page>FF01<!-- FF01h, vendor-defined --></usage_page>

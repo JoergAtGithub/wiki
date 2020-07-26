@@ -35,7 +35,9 @@ The bottom pad row works as labelled on the controller:
 Adjusts the tempo.
 
 ### Flux button
-Mixxx does not yet have a very useful flux/slip mode, so instead this button toggles the top pad row to the intro/outro cues. Press the button when it is lit to return the top pad row to hotcue mode.
+Mixxx [does not yet have a very useful flux/slip mode](https://bugs.launchpad.net/mixxx/+bug/1475303), so instead this button toggles the top pad row to the intro/outro cues. Press the button when it is lit to return the top pad row to hotcue mode.
+
+When slip mode is implemented in Mixxx in the future, this could be changed so shift + flux button activates intro & outro mode for the pads.
 
 ## Mixer
 

@@ -9,8 +9,6 @@ holding this button pressed, the enable buttons for each effect switch to choosi
 
   - the knobs switch to controlling the first 3 parameters of that effect instead of the metaknobs of each effect in the chain;
   - the buttons switch to controlling the first 3 button parameters of the effect; and
-  - the enable buttons of the effects in the chain can still be accessed by pressing the parameter buttons with shift, although the enable
-    switches will not be shown on the LEDs until the effect is unfocused.
 
 The LED of the focus button indicates whether any effect is focused. When its LED is on, you can hold the button down to see which effect is
 focused without having to look at the computer screen. To unfocus the effect, you can short press the focus button. The focused effect is
@@ -21,5 +19,7 @@ When the focus button is pressed with shift, it toggles the EffectUnit between c
 used to toggle between EffectUnits 1 & 3 or 2 & 4, like deck toggle buttons.
 
 To load different effects, hold shift and turn the knob for an effect.
+
+To load chain presets 1-4, press the buttons with shift (new in Mixxx 2.4).
 
 FIXME: Make a video to demonstrate all this.

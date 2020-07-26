@@ -55,3 +55,6 @@ Mixxx does not yet have a very useful flux/slip mode, so instead this button tog
 
 ## Effects
 The Kontrol S2 Mk2 uses the [standard Mixxx effects mapping](https://github.com/mixxxdj/mixxx/wiki/standard-effects-mapping).
+
+## Front panel
+The cue volume knob adjusts the volume of the controller's audio interface in hardware, so it is not mapped to Mixxx (otherwise the gain would be applied twice). The cue mix knob is mapped to Mixxx. The Mic Engage button toggles talkover for Microphone Input 1 in Mixxx.

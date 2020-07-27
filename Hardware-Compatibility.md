@@ -5,18 +5,15 @@
 Bare minimum equipment for DJing:
 
   - computer (preferably a laptop)
-  - [splitter cable](#splitter-cables) or [audio
-    interface](#audio-interfaces)
+  - [splitter cable](#splitter-cables) or [audio interface](#audio-interfaces)
   - [headphones](DJ%20headphones)
   - speakers
   - audio cables and adapters
 
 Helpful but not strictly necessary:
 
-  - [audio interface](#audio-interfaces) with 4 mono output channels (2
-    stereo pairs)
-  - [controller](#controllers) and/or [turntables with timecode
-    vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
+  - [audio interface](#audio-interfaces) with 4 mono output channels (2 stereo pairs)
+  - [controller](#controllers) and/or [turntables with timecode vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
   - [laptop stand](laptop%20stands)
   - surge protector
   - cases for laptop, controller, and headphones
@@ -34,15 +31,14 @@ resources.
 
 ## Hardware compatibility
 
-Because Mixxx is [free
-software](http://www.gnu.org/philosophy/free-sw.html) — free as in
-artistic freedom, not just price — we strive to make it work with as
-much hardware as we can. Mixxx is collaboratively developed by a
+Because Mixxx is [free software](http://www.gnu.org/philosophy/free-sw.html) — 
+free as in artistic freedom, not just price — we strive to make it work
+with as much hardware as we can. Mixxx is collaboratively developed by a
 community of volunteers and we can only make mappings for controllers
 that we have. If hardware does not work with Mixxx, that does not mean
 it is impossible, it only means that no one has made it work with Mixxx
-yet. Anyone, including you, who has the hardware is welcome to make
-Mixxx work with it.
+yet. Anyone, including you, is welcome to contribute to make Mixxx
+compatible with more hardware.
 
 #### Controllers
 

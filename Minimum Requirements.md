@@ -1,7 +1,7 @@
 Note that you may be able to use Mixxx on older hardware/OSs than what's
 listed here but you will need to build it and its dependencies yourself.
 See [instructions to compile from
-source](start#compile_mixxx_from_source_code).
+source](home#compile_mixxx_from_source_code).
 
 # Mixxx 2.2 (planned)
 

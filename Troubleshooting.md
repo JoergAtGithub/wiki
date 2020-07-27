@@ -189,7 +189,7 @@ controller under the "Controllers" label on the left. Check the
 If Mixxx did not come with a mapping for your controller, [search the
 forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
 made one. If not, you can [map it
-yourself](start#controller%20mapping%20documentation).
+yourself](home#controller%20mapping%20documentation).
 
 If your controller does not show up under "Controllers" on the left side
 of Mixxx's preferences window, Mixxx did not detect your controller.

@@ -13,7 +13,7 @@ qui, la principale exception est la page
 assez autoritaire des plans de l'équipe de développement.
 
 \*\*Mixxx participe au Google Summer of Code 2010: \*\* Voir
-[ci-dessous](start#google_summer_of_code) pour plus d'informations.
+[ci-dessous](home#google_summer_of_code) pour plus d'informations.
 
 ## Documentation
 

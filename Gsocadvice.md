@@ -48,7 +48,7 @@ beginning your application. Here are some ways to get started:
   - [Test and review pull requests](testing). Post comments on GitHub
     pull requests suggesting ways to improve the code more.
   - Look through the [start\#Developer
-    Documentation](start#Developer%20Documentation) and make a small
+    Documentation](home#Developer%20Documentation) and make a small
     code contribution to fix a bug or enhance an existing feature.
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).

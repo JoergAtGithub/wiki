@@ -133,7 +133,7 @@ to switch the code files on your computer to the proposed changes. (If
 you are testing your own pull request, use the name of the [branch you
 created on your computer](#create-a-new-branch) instead of
 `upstream/pr/PULL-REQUEST-NUMBER`.) Now you can [start\#Compile Mixxx
-From Source Code](start#Compile%20Mixxx%20From%20Source%20Code) to test
+From Source Code](home#Compile%20Mixxx%20From%20Source%20Code) to test
 the proposed changes. Give feedback by commenting on the pull request on
 the GitHub website.
 

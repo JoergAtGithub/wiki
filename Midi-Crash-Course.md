@@ -3,7 +3,7 @@
 MIDI (Musical Instrument Digital Interface) is a standard for electronic
 musical devices to communicate. This page is a brief introduction to
 MIDI that should explain what you need to know to [map MIDI controllers
-to Mixxx](start#controller%20mapping%20documentation). Refer to [Reverse
+to Mixxx](home#controller%20mapping%20documentation). Refer to [Reverse
 Engineering](Reverse%20Engineering) for tips to intercept MIDI data from
 a device.
 

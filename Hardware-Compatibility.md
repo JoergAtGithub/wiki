@@ -223,7 +223,7 @@ These controllers have Mixxx mappings under active development. If you
 are considering getting one of these controllers, you are encouraged to
 do so. You can help the development of the mapping by testing it and
 providing feedback to the developer. You can also [edit the mapping
-yourself](start#controller%20mapping%20documentation). Click the name of
+yourself](home#controller%20mapping%20documentation). Click the name of
 the controller for more information.
 
 When a mapping is included in Mixxx, please move it to the [\#Mixxx

@@ -6,7 +6,7 @@ It is a completely different editor than [Visual Studio
 Community](Visual%20Studio%20Community).  
 VSCode is very well suited for [Controller Scripting](midi_scripting) as
 well as [working on Mixxx's core with
-C++](start#developer_documentation).
+C++](home#developer_documentation).
 
 ## Setting up VScode for C++
 
@@ -18,7 +18,7 @@ the config file templates given.
 
 1.  Check out Mixxx source and build it.
     - If you haven't done this yet, follow the instructions for your
-    operating system [here](start#compile_mixxx_from_source_code).
+    operating system [here](home#compile_mixxx_from_source_code).
 2.  Install Microsoft C/C++ extension.
     -  Open the extensions pane and search for "c++". Click the install
         button for the Microsoft extension.

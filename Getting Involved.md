@@ -28,7 +28,7 @@ with an IDE such as KDevelop or Eclipse than a text editor such as Kate
 or GEdit.
 
 Have a look at the [Developer
-Documentation](start#developer_documentation) part in the wiki for
+Documentation](home#developer_documentation) part in the wiki for
 compiling and guidelines. See [Using Git](Using%20Git) for how to get
 your changes included in Mixxx.
 
@@ -48,7 +48,7 @@ do?**
 
 Grab the latest development builds from [our build
 server](http://downloads.mixxx.org/builds/master/release/) or [compile
-the source code from git](start#compile%20mixxx%20from%20source%20code).
+the source code from git](home#compile%20mixxx%20from%20source%20code).
 Suggest improvements and [report bugs](reporting%20bugs).
 
 You can also provide feedback on experimental features before they are

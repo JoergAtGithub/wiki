@@ -10,10 +10,10 @@ to the Mixxx community sites at the top of this page.
 
 Join us if you want to help\!
 
-  - If you can code C++, then [build mixxx](start#build_mixxx), and
-    [send us patches](start#mixxx_community_sites)
+  - If you can code C++, then [build mixxx](home#build_mixxx), and
+    [send us patches](home#mixxx_community_sites)
   - If you can't code, join the [community
-    forums](start#mixxx_community_sites), test Mixxx, help [translating
+    forums](home#mixxx_community_sites), test Mixxx, help [translating
     it](internationalization) or cheer on the Mixxx dev team.
 
 ### What this Page Covers

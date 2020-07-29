@@ -65,7 +65,7 @@ When slip mode is implemented in Mixxx in the future, this could be changed so s
   - **Main volume knob**: Adjust the volume of the main output. This acts on the controller's audio interface output in hardware, so it is not mapped to the main mix gain knob in Mixxx (otherwise the gain would be applied twice).
   - **Remix knob**: Adjusts the gain of samplers 1-8.
   - **Remix buttons**: Toggles the top pad row of the corresponding deck to control samplers. Press when lit to return the pads to controlling hotcues.
-  - **Browse encoder**: Scroll through the music library. Push to maximize the library browser on screen.
+  - **Browse encoder**: Scroll through the music library. Push to maximize the library browser on screen. Turn with shift to scroll 5 rows at a time.
   - **Load buttons**: Load the track selected in the library to the corresponding deck. Press with shift to unload a track.
   - **Meters**: The meters show the levels for each deck.
   - **Crossfader**: Crossfade between the decks.

@@ -3,8 +3,8 @@
 ## General Philosophy
 
 When you're writing code for open source projects, the most important
-rule to follow is this: **Try to make your code blend in with the
-existing code.**
+rule to follow is this:
+**Try to make your code blend in with the existing code.**
 
 When in doubt, use the
 [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). 
@@ -58,29 +58,27 @@ from the command line.
 
 Use it like this to reformat after each commit:
 ``` sh
-git-clang-format HEAD^1
+git-clang-format HEAD~
 git commit -a --amend
 ```
 
 or if the PR is already under review:
 ``` sh
-git-clang-format upstream/master 
-git commit -a -m "apply git-clang-format changes"
+git-clang-format upstream/master
+git commit -a -m "Apply git-clang-format changes"
 ```
 
-Apply *clang-format* to individual source files (only permitted for new
-files):
+Apply *clang-format* to individual source files (only permitted for new files):
 ```sh
 clang-format -i -style=file [<file> ...]
 ```
-*clang-format* will pick up the *.clang-format* file from the current or
-any parent directory of the source file(s).
+*clang-format* will pick up the confguration in the *.clang-format* file from
+the current or any parent directory of the source file(s).
 
 ### Visual Studio Code
 
-Code formatting is available in [Visual Studio
-Code](https://code.visualstudio.com). Install the [C/C++
-Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+Code formatting is available in [Visual Studio Code](https://code.visualstudio.com).
+Install the [C/C++ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 and verify or update the following settings:
 
   - ***C\_Cpp.formatting*** = *Default* (default)
@@ -98,45 +96,43 @@ noise to your pull request.
 
 ### KDevelop
 
-[KDevelop](KDevelop) has a [clang-tidy
-plugin](https://github.com/KDE/kdev-clang-tidy).
+[KDevelop](KDevelop) has a [clang-tidy plugin](https://github.com/KDE/kdev-clang-tidy).
 
 ### Eclipse
 
 If you use Eclipse as IDE, the code style "K\&R" works well with these
 tweaks
 
-  - tab policy = space only 
+  - tab policy = space only
   - new lines = before colon in constructor initializer list
 
 Please note that there are still some exceptions, so do not auto-format
 a whole file.
 
-In addition you can install
-<https://marketplace.eclipse.org/content/cppstyle> to use clang-format
-from the GUI
+In addition you can install <https://marketplace.eclipse.org/content/cppstyle>
+to use clang-format from the GUI.
 
 ### CLion
 
 Make sure the ClangFormat plugin is installed and enable it in the
-Settings under Editor \> Code Style.
+Settings under Editor > Code Style.
 
 ## Tabs vs. Spaces
 
-Mixxx's old developers more or less used the convention that **indents
-are 4 spaces**. Stick to this and do not use tabs, if only for consistency.
+In Mixxx **indents are 4 spaces**.
+Stick to this and do not use tabs, if only for consistency.
 
 ## Line Wrapping
 
 Please set up a max column-width of 80 columns in your editor.
-While it is not a strict requirement, 80-column cleanliness makes it
-easy to tile multiple buffers of code across a screen, which provides 
+While it is not a strict requirement, 80-column cleanliness makes it easier to
+tile multiple buffers of code across a screen, which can provide
 significant efficiency gains to developers.
 
 For Mixxx's clang-format compatibility (ColumnLimit: 0):
 
   - Use double indent (8-spaces) for broken lines (ContinuationIndent: 8).
-  - Break line after binary operators. 
+  - Break line after binary operators.
   - If you break a list of function parameters, put each parameter on a
     single line (BinPackArguments: false & BinPackParameters: false).
 

@@ -49,20 +49,20 @@ analogue (vinyl) and digital sources.
     provide native audio support for this controller. Linux Kernel 5.3.x
     does not support that device and together with 5.5.x reached
     End-Of-Life.
-  - Linux Distributions built upon Ubuntu 18.04 and derivatives, like
+    * Linux Distributions built upon Ubuntu 18.04 and derivatives, like
     Linux Mint, KDE Neon etc. must update the Kernel to one of the
-    mentioned above. For Ubuntu there is an [Kernel update
-    script](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
-    available that helps fetching and installing newer Linux Kernels
-    from the Ubuntu Kernel PPA. I can confirm it works for KDE Neon as
-    well.
-  - Ubuntu 20.04 already comes with Kernel 5.4.x so it supports the
+    mentioned above. As of July 2020 the Kernel 5.4.x is available from 
+    the Ubuntu 18.04 Update repo... Get latest upgrades with "sudo apt dist-upgrade".
+    Alternatively, there is a [Kernel update script](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
+    available that helps fetching and installing different Linux Kernels
+    from the Ubuntu Kernel PPA.
+    * Ubuntu 20.04 already comes with Kernel 5.4.x so it supports the
     MC7000 Audio Interface out-of-the-box. A fresh install is
     recommended but you can read further how to [upgrade Ubuntu 18.04
     to 20.04](https://ubuntu.com/tutorials/tutorial-upgrading-ubuntu-desktop#1-before-you-start).
-  - OpenSUSE Tumbleweed is currently on Kernel 5.6.x supporting the
+    * OpenSUSE Tumbleweed is currently on Kernel 5.6.x supporting the
     MC7000 Audio Interface.
-  - Manjaro Linux 19.0 and 20.0 feature Linux Kernel 5.4.x supporting
+    * Manjaro Linux 19.0 and 20.0 feature Linux Kernel 5.4.x supporting
     the MC7000 Audio Interface.
 
 ## Mapping
